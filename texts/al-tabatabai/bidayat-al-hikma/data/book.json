@@ -9,11 +9,11 @@
     "prepared": "2026-11-04",
     "numberedChaptersInOriginal": 110,
     "translationComplete": false,
-    "translatedAuthorialUnits": 69,
+    "translatedAuthorialUnits": 77,
     "guideUnits": 0,
     "method": "Original editorial guidance; no full authorial Arabic text or published English translation reproduced.",
     "arabicAuthorialChapters": 110,
-    "englishTranslatedChapters": 68,
+    "englishTranslatedChapters": 76,
     "englishTranslatedIntroductions": 1,
     "arabicSource": "Uploaded Arabic–English edition, Arabic pages manually and electronically normalized; proofreading and independent witness collation required.",
     "translationMethod": "Fresh working English from the Arabic, preserving authorial objections and answers, with editorial notes as apparatus; no publisher English reproduced.",
@@ -29,7 +29,7 @@
     "ocrGlyphRepair": "Verified recurring source-import glyph substitutions R→لمج, T→ته, 5→نه against independent Arabic witness; the one occurrence of '(5)' as a printed note marker was excluded and repaired by witness. Other OCR errors still require collation.",
     "ocrWitness": "https://lib.rafed.net/view.php?b_id=1571&type=c_fbook",
     "ocrDashRepair": "Reconstructed 108 recurring Arabic 'به' ligature losses (including بها، بهذا، بهما، إبهام) against the independent Rafed Arabic witness; punctuation dashes preserved. Other errors require edition collation.",
-    "translatedChapters": 68,
+    "translatedChapters": 76,
     "translatedSection": "Author's introduction and all 12 numbered chapters of Stage I; remaining stages Arabic-only pending fresh translation."
   },
   "sources": [
@@ -2008,8 +2008,8 @@
       "title": "Every temporal event is preceded by potentiality",
       "arabicTitle": "الفصل الأول كل حادث زماني مسبوق بقوة الوجود",
       "arabic": "كل حادث زماني فإنه مسبوق بقوة الوجود لأنه قبل تحقق وجوده يجب أن يكون ممكن الوجود يجوز أن يتصف بالوجود كما يجوز أن لا يوجد إذ لو كان ممتنع الوجود استحال تحققه كما أنه لو كان واجبا لم يتخلف عن الوجود لكنه ربما لم يوجد و إمكانه هذا غير قدرة الفاعل عليه لأن إمكان وجوده وصف له بالقياس إلى وجوده لا بالقياس إلى شيء آخر كالفاعل. و هذا الإمكان أمر خارجي لا معنى عقلي اعتباري لاحق بماهية الشيء لأنه يتصف بالشدة و الضعف و القرب و البعد فالنطفة التي فيها إمكان أن يصير إنسانا أقرب إلى الإنسانية من الغذاء الذي يتبدل نطفة و الإمكان فيها أشد منه فيه. و إذ كان هذا الإمكان أمرا موجودا في الخارج فليس جوهرا قائما بذاته و هو ظاهر بل هو عرض قائم بشيء آخر فلنسمه قوة و لنسم موضوعه مادة فإذن لكل حادث زماني مادة سابقة عليه تحمل قوة وجوده. و يجب أن تكون المادة غير آبية عن الفعلية التي تحمل إمكانها فهي في ذاتها قوة الفعلية التي فيها إمكانها إذ لو كانت ذات فعلية في نفسها لأبت عن قبول فعلية أخرى بل هي جوهر فعلية وجوده أنه قوة الأشياء و هي لكونها جوهرا بالقوة قائمة بفعلية أخرى إذا حدثت الفعلية التي فيها قوتها بطلت الفعلية الأولى و قامت مقامها الفعلية الحديثة كالماء إذا صار هواء بطلت الصورة المائية التي كانت تقوم المادة الحاملة لصورة الهواء و قامت الصورة الهوائية مقامها فتقومت بها المادة التي كانت تحمل إمكانها. و مادة الفعلية الجديدة الحادثة و الفعلية السابقة الزائلة واحدة و إلا كانت حادثة بحدوث الفعلية الحادثة فاستلزمت إمكانا آخر و مادة أخرى و هكذا فكانت لحادث واحد مواد و إمكانات غير متناهية و هو محال و نظير الإشكال لازم فيما لو فرض للمادة حدوث زماني. و قد تبين بما مر أيضا أولا :أن كل حادث زماني فله مادة تحمل قوة وجوده. و ثانيا :أن مادة الحوادث الزمانية واحدة مشتركة بينها. و ثالثا :أن النسبة بين المادة و قوة الشيء التي تحملها نسبة الجسم الطبيعي و الجسم التعليمي فقوة الشيء الخاص تعين قوة المادة المبهمة كما أن الجسم التعليمي تعين الامتدادات الثلاث المبهمة في الجسم الطبيعي.\n\nو رابعا :أن وجود الحوادث الزمانية لا ينفك عن تغير في صورها إن كانت جواهر أو في أحوالها إن كانت أعراضا. و خامسا :أن القوة تقوم دائما بفعلية و المادة تقوم دائما بصورة تحفظها فإذا حدثت صورة بعد صورة قامت الصورة الحديثة مقام القديمة و قومت المادة. و سادسا :يتبين بما تقدم أن القوة تتقدم على الفعل الخاص تقدما زمانيا و أن مطلق الفعل يتقدم على القوة بجميع أنحاء التقدم من علي و طبعي و زماني و غيرها.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Every temporally originated thing is preceded by *potentiality for existence*. Before it comes into actuality, it must be possible for it to exist and also possible for it not to exist. If it were impossible it could never occur, and if it were intrinsically necessary it could never have been absent. The potentiality in question is not identical with an agent's capacity to produce the thing: it is an attribute of the possible thing relative to its own existence, not relative to another such as the agent.\n\nThis possibility is an extramental condition rather than a mere intellectual consideration of quiddity. It admits intensity, weakness, proximity, and remoteness. An embryo possessing the disposition to become a human being is nearer to human actuality than the food that may eventually become an embryo. Its possibility is therefore more intense.\n\nSince the disposition exists externally, it is not an independent self-subsisting substance. It is an accident inhering in something else. Let it be called *potentiality* (quwwa), and let its subject be called *matter* (mādda). Thus every temporal event is preceded by material subjectivity bearing the potentiality for its existence.\n\nMatter must not exclude the actuality for which it is prepared. It is potential with respect to that actuality. If it were already completed in that very respect, it would not receive another actuality. Matter is a substantial principle whose mode of existence is being potential for forms.\n\nBecause matter exists as potential while also actual under some form, it needs a prior actuality to constitute it. When the new actuality appears, the previous form ceases in the relevant respect and the new form takes its place. Thus, when water becomes air, the watery form previously actualising the matter gives way to the airy form, under which the same material principle is actualised.\n\nThe matter bearing the earlier and later forms must be one. Were the matter itself newly originated along with the new form, its occurrence would require an earlier possibility and prior matter, and the same question would repeat endlessly. An analogous difficulty follows from supposing a first temporal origination of matter itself.\n\nSix conclusions follow. First, every temporal event has matter bearing its potentiality for existence. Second, the matter of successive temporal events is one continuous underlying subject in the relevant analysis. Third, the relation of a particular potentiality to indeterminate matter resembles that of mathematical body, specifying the three dimensions, to natural body with indeterminate corporeal extension.\n\nFourth, temporal origination entails change, either in substantial form or in an accidental condition. Fifth, potentiality always depends upon actuality; matter always exists through some form, so one form succeeds another in its actualisation. Sixth, a particular potentiality precedes its particular act temporally, while actuality taken absolutely precedes potentiality in every relevant kind of priority, including causal, natural, and temporal priority.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 205,
@@ -2019,6 +2019,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 159 (PDF p. 160); chapter 10.1. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Philosophical note",
+          "text": "The extramental ‘potentiality of existence’ is dispositional possibility, not intrinsic logical contingency. The claim that matter remains one through substantial transformation is revised in light of the account of continuous substantial motion later in the stage."
         }
       ]
     },
@@ -2029,8 +2033,8 @@
       "title": "The divisions of change",
       "arabicTitle": "الفصل الثاني في تقسيم التغير",
       "arabic": "قد عرفت أن من لوازم خروج الشيء من القوة إلى الفعل حصول التغير إما في ذاته أو في أحوال ذاته فاعلم أن حصول التغير إما دفعي و إما تدريجي و الثاني هو الحركة و هي نحو وجود تدريجي للشيء ينبغي أن يبحث عنها من هذه الجهة في الفلسفة الأولى.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "We have seen that the passage of something from potentiality to actuality requires change, either in its own substantial constitution or in its conditions.\n\nChange occurs either **all at once** or **gradually**. Gradual change is *motion* (ḥaraka): a mode of the thing's existence unfolding successively. It is in this respect, as a mode of being, that motion belongs to the subject matter of first philosophy.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 209,
@@ -2040,6 +2044,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 164 (PDF p. 165); chapter 10.2. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Terminology",
+          "text": "The discussion distinguishes change (taghayyur) in general from motion (ḥaraka) as gradual change, rather than using the words interchangeably."
         }
       ]
     },
@@ -2050,8 +2058,8 @@
       "title": "The definition of motion",
       "arabicTitle": "الفصل الثالث في تحديد الحركة",
       "arabic": "قد تبين في الفصل السابق أن الحركة خروج الشيء من القوة إلى الفعل تدريجا و إن شئت فقل هي تغير الشيء تدريجا و التدريج معنى بديهي التصور بإعانة الحس عليه و عرفها المعلم الأول بأنها كمال أول لما بالقوة من حيث إنه بالقوة و توضيحه أن حصول ما يمكن أن يحصل للشيء كمال له و الشيء الذي يقصد بالحركة حالا من الأحوال كالجسم مثلا يقصد مكانا ليتمكن فيه فيسلك إليه كان كل من السلوك و التمكن في المكان الذي يسلك إليه كمالا لذلك الجسم غير أن السلوك كمال أول لتقدمه و التمكن كمال ثان فإذا شرع في السلوك فقد تحقق له كمال لكن لا مطلقا بل من حيث إنه بعد بالقوة بالنسبة إلى كماله الثاني و هو التمكن في المكان الذي يريده فالحركة كمال أول لما هو بالقوة بالنسبة إلى الكمالين من حيث إنه بالقوة بالنسبة إلى الكمال الثاني. و قد تبين بذلك أن الحركة تتوقف في تحققها على أمور ستة المبدأ الذي منه الحركة و المنتهى الذي إليه الحركة و الموضوع الذي له الحركة و هو المتحرك و الفاعل الذي يوجد الحركة و هو المحرك و المسافة التي فيها الحركة و الزمان الذي ينطبق عليه الحركة نوعا من الانطباق و سيجيء توضيح ذلك.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Motion has been identified as the gradual passage of a thing from potentiality to actuality, or simply its gradual change. The concept of graduality is immediately understood with the help of sensation.\n\nAristotle defines motion as “the first perfection of what is potential insofar as it is potential.” The meaning may be clarified by an example. Acquiring what a thing is capable of acquiring constitutes a perfection. When a body moves towards a place in order to come to rest there, both its journey and its eventual arrival are perfections for it. The journey is a *first* perfection because it precedes the attainment of the destination, which is a *second* perfection.\n\nAs the body begins moving it has already attained a perfection, but precisely as something still potential in relation to its second perfection, the destination. Motion is therefore the first perfection of a potential subject insofar as it remains potential in relation to that further perfection.\n\nSix items are required for motion: the starting point from which it occurs, the terminus towards which it proceeds, the subject undergoing it, the agent producing it, the extent or course through which it proceeds, and the time with which it is related in a definite way. These will be examined in turn.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 211,
@@ -2061,6 +2069,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 164 (PDF p. 165); chapter 10.3. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The Aristotelian definition translates al-kamāl al-awwal li-mā bi-l-quwwa min ḥaythu innahu bi-l-quwwa. ‘First’ is relative to the attainable end, not necessarily first in chronological existence absolutely."
         }
       ]
     },
@@ -2071,8 +2083,8 @@
       "title": "Intermediate and traversing motion",
       "arabicTitle": "الفصل الرابع في انقسام الحركة إلى توسطية وقطعية",
       "arabic": "تعتبر الحركة بمعنيين أحدهما :كون الجسم بين المبدإ و المنتهى بحيث كل حد فرض في الوسط فهو ليس قبله و لا بعده فيه و هو حالة بسيطة ثابتة لا انقسام فيها و تسمى الحركة التوسطية. و ثانيهما :الحالة المذكورة من حيث لها نسبة إلى حدود المسافة من حد تركها و من حد لم يبلغها أي إلى قوة تبدلت فعلا و إلى قوة باقية على حالها بعد يريد المتحرك أن يبدلها فعلا و لازمه الانقسام إلى الأجزاء و الانصرام و التقضي تدريجا كما أنه خروج من القوة إلى الفعل تدريجا و تسمى الحركة القطعية و المعنيان جميعا موجودان في الخارج لانطباقهما عليه بجميع خصوصياتهما. و أما الصورة التي يأخذها الخيال من الحركة بأخذ الحد بعد الحد من الحركة و جمعها فيه صورة متصلة مجتمعة منقسمة إلى الأجزاء فهي ذهنية لا وجود لها في الخارج لعدم جواز اجتماع الأجزاء في الحركة و إلا كان ثباتا لا تغيرا. و قد تبين بذلك أن الحركة و نعني بها القطعية نحو وجود سيال منقسم إلى أجزاء تمتزج فيه القوة و الفعل بحيث يكون كل جزء مفروض فيه فعلا لما قبله من الأجزاء و قوة لما بعده و ينتهي من الجانبين إلى قوة لا فعل معها و إلى فعل لا قوة معه.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Motion can be considered in two senses.\n\nThe first is the body's being *between* its beginning and end, such that, at each supposed intermediate limit, the body is at that limit and not simultaneously at a point before or after it. Taken in this way, motion is described as a simple, undivided condition and is called *intermediate motion* (al-ḥaraka al-tawassuṭiyya).\n\nThe second considers that very condition in relation to the successive limits of the course: those already left behind and those not yet reached. The latter correspond to what remains potential, while the former correspond to what has already passed into actuality. Under this consideration motion is divisible into successive portions, continually passing away. It is the gradual passage from potentiality to actuality called *traversing motion* (al-ḥaraka al-qaṭʿiyya).\n\nBoth senses apply to extramental motion with their proper qualifications.\n\nThere is also an image produced by the imagination: it gathers the successive limits of motion into one continuous picture whose parts are all present together. This collected representation is mental, not an extramental motion, since the actual simultaneous existence of all its successive parts would amount to rest rather than change.\n\nMotion in the traversing sense, therefore, is a flowing mode of existence divisible into phases in which potency and act are interwoven. Each supposed phase is actual in relation to what precedes it and potential in relation to what follows. In the limiting consideration, one side of the process is potency without the later act, and the other act without the earlier potency.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 213,
@@ -2082,6 +2094,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 166 (PDF p. 167); chapter 10.4. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The ‘intermediate’ and ‘traversing’ analyses are two considerations of motion. The separate imaginative picture that collects all phases simultaneously must not be mistaken for the actual successive process."
         }
       ]
     },
@@ -2092,8 +2108,8 @@
       "title": "The beginning and end of motion",
       "arabicTitle": "الفصل الخامس في مبدإ الحركة ومنتهاها",
       "arabic": "قد عرفت :أن في الحركة انقساما لذاتها فاعلم أن هذا الانقسام لا يقف على حد نظير الانقسام الذي في الكميات المتصلة القارة من الخط و السطح و الجسم إذ لو وقف على حد كان جزءا لا يتجزأ و قد تقدم بطلانه. و أيضا :هو انقسام بالقوة لا بالفعل إذ لو كان بالفعل بطلت الحركة لانتهاء القسمة إلى أجزاء دفعية الوقوع. و بذلك يتبين :أنه لا مبدأ للحركة و لا منتهى لها بمعنى الجزء الأول الذي لا ينقسم من جهة الحركة و الجزء الآخر الذي كذلك لما عرفت آنفا أن الجزء بهذا المعنى دفعي الوقوع غير تدريجية فلا ينطبق عليه حد الحركة لأنها تدريجية الذات. و أما ما تقدم :أن الحركة تنتهي من الجانبين إلى قوة لا فعل معها و فعل لا قوة معه فهو تحديد لها بالخارج من ذاتها.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Motion is divisible through its own nature. Its division has no final indivisible part, just as the division of a continuous line, surface, or body does not terminate in an indivisible portion of magnitude. If it did, the alleged final part would be an indivisible component whose impossibility was considered earlier.\n\nThe divisibility is **potential**, not an actually existing plurality of detached parts. If the parts of motion were actually separate, each would occur all at once, and motion as a continuous gradual passage would be destroyed.\n\nConsequently, motion possesses no first or last part that is itself an indivisible piece of motion. Such a supposed piece would occur instantaneously, rather than gradually, and would therefore not fall under the definition of motion.\n\nWhen motion was said to be bounded on one side by potency not yet actualised and on the other by actuality no longer potential, this meant that its limits are provided by what lies outside its flowing essence. It did not posit instantaneous parts of the motion itself.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 215,
@@ -2103,6 +2119,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 167 (PDF p. 168); chapter 10.5. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Terminological note",
+          "text": "The denial of a smallest part of movement concerns the continuity of gradual motion, not the denial that a movement can have a beginning or ending boundary."
         }
       ]
     },
@@ -2113,8 +2133,8 @@
       "title": "The subject of motion",
       "arabicTitle": "الفصل السادس في موضوع الحركة وهو المتحرك الذي يتلبس بها",
       "arabic": "قد عرفت :أن الحركة خروج الشيء من القوة إلى الفعل تدريجا و أن هذه القوة يجب أن تكون محمولة في أمر جوهري قائمة به و هذا الذي بالقوة كمال بالقوة للمادة متحد معها فإذا تبدلت القوة فعلا كان الفعل متحدا مع المادة مكان القوة فمادة الماء مثلا هواء بالقوة و كذا الجسم الحامض حلو بالقوة فإذا تبدلت الماء هواءا و الحموضة حلاوة كانت المادة التي في الماء هي المتلبسة بالهوائية و الجسم الحامض هو المتلبس بالحلاوة ففي كل حركة موضوع تنعته الحركة و تجري عليه. و يجب أن يكون موضوع الحركة أمرا ثابتا تجري و تتجدد عليه الحركة و إلا كان ما بالقوة غير ما يخرج إلى الفعل فلم تتحقق الحركة التي هي خروج الشيء من القوة إلى الفعل تدريجا. و يجب أن لا يكون موضوع الحركة أمرا بالفعل من كل جهة كالعقل المجرد إذ لا حركة إلا مع قوة ما فما لا قوة فيه فلا حركة له و لا أن يكون بالقوة من جميع الجهات إذ لا وجود لما هو كذلك بل أمرا بالقوة من جهة و بالفعل من جهة كالمادة الأولى التي لها قوة الأشياء و فعلية أنها بالقوة و كالجسم الذي هو مادة ثانية لها قوة الصور النوعية و الأعراض المختلفة و فعلية الجسمية و بعض الصور النوعية.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Motion is the gradual passage of something from potentiality to actuality. That potentiality must be borne by a substantial subject. What is potentially a perfection is united with its matter; when the potentiality is actualised, the new actuality is united with that matter in the place of the former potential state.\n\nFor example, the matter of water is potentially air, and an acidic body is potentially sweet. When water changes into air or sourness into sweetness, it is the matter of the water that receives the airy actuality, and the formerly acidic body that becomes sweet. Every motion therefore has something undergoing it, a subject in which the change occurs and which the motion qualifies.\n\nThe subject must be stable in the respect needed to make the movement *one* process. If what was potential and what subsequently became actual had no shared subject, there would be no single movement from potency to act.\n\nYet the subject cannot be actual in every respect, like a wholly separate intellect, for motion requires potentiality. Nor can it be potential in every respect in such a way that it lacks existence altogether. It must be actual in one respect and potential in another.\n\nPrime matter illustrates this by being potential for forms while possessing the restricted actuality proper to such receptivity. An already existing body, as secondary matter, possesses corporeal actuality and certain specific forms while remaining potential for other specific forms and accidents.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 217,
@@ -2124,6 +2144,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 169 (PDF p. 170); chapter 10.6. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Philosophical note",
+          "text": "The requirement of a persistent subject is reconsidered for substantial motion in Chapter X.12, where the movement's own continuous substantial actuality plays the subject-role."
         }
       ]
     },
@@ -2134,8 +2158,8 @@
       "title": "The agent of motion",
       "arabicTitle": "الفصل السابع في فاعل الحركة وهو المحرك",
       "arabic": "يجب أن يكون المحرك غير المتحرك إذ لو كان المتحرك هو الذي يوجد الحركة في نفسه لزم أن يكون شيء واحد فاعلا و قابلا من جهة واحدة و هو محال فإن حيثية الفعل هي حيثية الوجدان و حيثية القبول هي حيثية الفقدان و لا معنى لكون شيء واحد واجدا و فاقدا من جهة واحدة. و أيضا :المتحرك هو بالقوة بالنسبة إلى الفعل الذي يحصل له بالحركة و فاقد له و ما هو بالقوة لا يفيد فعلا. و يجب أن يكون الفاعل القريب للحركة أمرا متغيرا متجدد الذات إذ لو كان أمرا ثابت الذات من غير تغير و سيلان كان الصادر منه أمرا ثابتا في نفسه فلم يتغير جزء من الحركة إلى غيره من الأجزاء لثبات علته من غير تغير في حالها فلم تكن الحركة حركة هذا خلف",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The mover must be other than the moving thing, at least in the respect relevant to the motion. Were the subject of motion to produce in itself the actuality it is receiving, one thing would be at once agent and recipient in precisely the same respect. This is impossible, for agency is considered under possession of actuality and receptivity under lack of it. One thing cannot possess and lack the same perfection in one respect.\n\nFurthermore, the moving thing is potential in relation to the new actuality it receives and therefore does not yet possess it. What is potential merely as potential cannot bestow that actuality.\n\nThe **proximate** cause of motion must itself be changing and renewed in its actual state. If it were wholly fixed without any intrinsic change or flow, what immediately issued from it would be fixed as well. No phase of motion could pass into another, since the proximate cause would remain exactly unchanged under the same relevant condition. The result would not be motion.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 219,
@@ -2145,6 +2169,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 170 (PDF p. 171); chapter 10.7. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The requirement of a changing mover is explicitly about the *proximate* mover. It creates the problem of relating change to an ultimately unchanging first principle, which the next chapter addresses."
         }
       ]
     },
@@ -2155,8 +2183,8 @@
       "title": "Relation of the changing to the unchanging",
       "arabicTitle": "الفصل الثامن في ارتباط المتغير بالثابت",
       "arabic": "ربما قيل :إن وجوب استناد المتغير المتجدد إلى علة متغيرة متجددة مثله يوجب استناد علته المتغيرة المتجددة أيضا إلى مثلها في التغير و التجدد و هلم جرا و يستلزم ذلك أما التسلسل أو الدور أو التغير في المبدإ الأول تعالى عن ذلك. و أجيب :بأن التجدد و التغير ينتهي إلى جوهر متحرك بجوهره فيكون التجدد ذاتيا له فيصح استناده إلى علة ثابتة توجد ذاته لأن إيجاد ذاته عين إيجاد تجدده",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "An objection arises: if every changing thing must depend on a changing proximate cause, the latter must also depend on something changing, and so on without end. This appears to entail an infinite regress, a causal circle, or change in the First Principle, exalted above such change.\n\nThe reply is that change ultimately reaches a substance that moves or flows in its very substantial reality. Renewal is intrinsic to such a substance. It can therefore be produced by an unchanging cause which gives it its nature: **to cause this flowing substance to exist is already to cause its renewal**. The cause does not first produce a static thing and then add change to it as a further attribute.\n\nIn this way a changing effect may depend on an immutable ultimate cause without attributing change to that cause.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 221,
@@ -2166,6 +2194,10 @@
         {
           "type": "source note",
           "text": "The supplied lecture-note contents do not list 10.8 separately; no independent lecture citation is asserted for this chapter."
+        },
+        {
+          "type": "Philosophical note",
+          "text": "The key move is the claim that renewal is intrinsic to flowing substance, and therefore the first cause causes *a being whose very esse is successive*, rather than supplying successive external alterations to an otherwise static substance."
         }
       ]
     },
