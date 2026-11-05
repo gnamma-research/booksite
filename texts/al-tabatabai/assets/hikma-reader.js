@@ -415,14 +415,23 @@
     const query = normalise($('glossary-search').value).trim();
     const list = $('glossary-list'); list.replaceChildren();
     const glossary = Array.isArray(state.book.glossary) ? state.book.glossary : [];
-    const entries = glossary.filter(entry => normalise([entry.term, entry.arabic, entry.english, entry.definition].join(' ')).includes(query));
+    const entries = glossary.filter(entry => normalise([entry.term, entry.arabic, entry.english, entry.definition].join(' ')).includes(query)).sort((a,b) => text(a.english || a.term).localeCompare(text(b.english || b.term), 'en'));
     for (const entry of entries) {
       const article = make('article', 'glossary-entry'); const heading = make('h3', '', entry.english || entry.term);
       if (entry.arabic) { const arabic = make('span', '', entry.arabic); arabic.lang = 'ar'; arabic.dir = 'rtl'; heading.append(arabic); }
       article.append(heading);
       if (entry.term && entry.term !== entry.english) article.append(make('p', 'glossary-romanization', entry.term));
       article.append(make('p', '', entry.definition));
-      if (entry.sourceUrl) article.append(link('Further reading ↗', entry.sourceUrl, 'glossary-source'));
+      if (entry.bookLabel) article.append(make('p', 'glossary-book-label', entry.bookLabel));
+      const candidates = [entry.arabic, entry.english, entry.term].map(normalise).filter(value => value && value.length > 2);
+      const part = entry.bookLabel === 'al-Manṭiq' ? 'M' : entry.bookLabel === 'Bidāya' ? 'B' : entry.bookLabel === 'Nihāya' ? 'N' : null;
+      const occurrence = state.units.find(unit => (!part || unit.part === part) && candidates.some(value => unit.searchText.includes(value)));
+      if (occurrence) {
+        const jump = make('button', 'dictionary-jump', 'Read in the text');
+        jump.type = 'button'; jump.addEventListener('click', () => { $('glossary-dialog').close(); navigate({group:occurrence.group,unit:occurrence},true); });
+        article.append(jump);
+      }
+      if (entry.sourceUrl) article.append(link('Source discussion', entry.sourceUrl, 'glossary-source'));
       list.append(article);
     }
     if (!entries.length) list.append(make('p', 'dialog-intro', query ? 'No glossary terms match this search.' : 'A glossary for this edition is being prepared.'));
