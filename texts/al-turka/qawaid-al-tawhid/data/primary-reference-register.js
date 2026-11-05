@@ -12,7 +12,10 @@ window.GNAMMA_QAWAID_REFERENCES = {
       "units": [
         "SH-029"
       ],
-      "status": "full-verse"
+      "status": "full-verse",
+      "inlineAnchors": [
+        "ما رميت إذ رميت"
+      ]
     },
     {
       "id": "q-24-40",
@@ -26,7 +29,10 @@ window.GNAMMA_QAWAID_REFERENCES = {
         "SH-022",
         "SH-060"
       ],
-      "status": "full-verse"
+      "status": "full-verse",
+      "inlineAnchors": [
+        "ومن لم يجعل الله له نورا"
+      ]
     },
     {
       "id": "q-17-44",
@@ -39,7 +45,10 @@ window.GNAMMA_QAWAID_REFERENCES = {
       "units": [
         "SH-029"
       ],
-      "status": "full-verse"
+      "status": "full-verse",
+      "inlineAnchors": [
+        "وإن من شيء إلا يسبح بحمده"
+      ]
     },
     {
       "id": "q-16-40",
@@ -53,7 +62,10 @@ window.GNAMMA_QAWAID_REFERENCES = {
         "SH-033",
         "SH-038"
       ],
-      "status": "full-verse"
+      "status": "full-verse",
+      "inlineAnchors": [
+        "إنما قولنا لشيء إذا أردناه"
+      ]
     },
     {
       "id": "q-112-3-4",
@@ -66,7 +78,10 @@ window.GNAMMA_QAWAID_REFERENCES = {
       "units": [
         "SH-017"
       ],
-      "status": "full-verses"
+      "status": "full-verses",
+      "inlineAnchors": [
+        "لم يلد ولم يولد"
+      ]
     },
     {
       "id": "q-28-30",
@@ -80,7 +95,10 @@ window.GNAMMA_QAWAID_REFERENCES = {
         "SH-029"
       ],
       "status": "full-verse",
-      "note": "The commentary quotes the divine speech heard from the tree; the card presents the complete verse."
+      "note": "The commentary quotes the divine speech heard from the tree; the card presents the complete verse.",
+      "inlineAnchors": [
+        "إني أنا الله"
+      ]
     },
     {
       "id": "tusi-isharat",
@@ -231,7 +249,10 @@ window.GNAMMA_QAWAID_REFERENCES = {
         "SH-028"
       ],
       "status": "full-verse",
-      "note": "The commentator invokes the verse concerning the keys of the unseen when discussing the first divine names; this card displays the whole verse rather than only the quoted clause."
+      "note": "The commentator invokes the verse concerning the keys of the unseen when discussing the first divine names; this card displays the whole verse rather than only the quoted clause.",
+      "inlineAnchors": [
+        "وعنده مفاتح الغيب"
+      ]
     },
     {
       "id": "q-3-117",
@@ -245,7 +266,10 @@ window.GNAMMA_QAWAID_REFERENCES = {
         "SH-INTRO-006"
       ],
       "status": "full-verse",
-      "note": "The author quotes the final clause while criticizing disputed philosophical arguments. The popup displays the entire Qurʾānic verse for context."
+      "note": "The author quotes the final clause while criticizing disputed philosophical arguments. The popup displays the entire Qurʾānic verse for context.",
+      "inlineAnchors": [
+        "وما ظلمهم الله ولكن أنفسهم يظلمون"
+      ]
     },
     {
       "id": "hadith-labid",
@@ -259,7 +283,10 @@ window.GNAMMA_QAWAID_REFERENCES = {
         "SH-031"
       ],
       "status": "verified-hadith-matn",
-      "note": "Ibn Turka quotes Labīd's poetic half-line in SH-031. This card provides the attested hadith praising that line, with its source. The commentator's quotation is not itself presented as a quotation of this entire hadith."
+      "note": "Ibn Turka quotes Labīd's poetic half-line in SH-031. This card provides the attested hadith praising that line, with its source. The commentator's quotation is not itself presented as a quotation of this entire hadith.",
+      "inlineAnchors": [
+        "ألا كل شيء ما خلا الله باطل"
+      ]
     }
   ],
   "sourcePolicy": "Each popup distinguishes verbatim quotations as reproduced in Tamhīd, indirect reports, thematic comparisons, and attributed traditions; no invented complete source quotation."
