@@ -8,7 +8,9 @@ The baseline primary witness is the user-supplied image-only two-volume scan `ta
 
 ## What was actually integrated
 
-The new `stage50-source-checked-working-readings.js` modifies existing book-page records in place rather than counting old guides and new translations as two original pages.
+The source-revision modules `stage48-source-revisions-II035-II044.js` and `stage50-source-checked-working-readings.js` modify existing book-page records in place rather than counting old guides and new translations as two original pages. Stage48 is loaded first, allowing the newer Stage49 marginal interpretations to take precedence.
+
+**Stage 48 corrections now recovered on the public site:** II:35–44 upper readings and selected lower-text excerpts for II:39–44. Crucially, II:41 has been corrected from a misplaced discussion of celestial poles to the printed sphericity argument and the oval, lenticular, and polygonal counterexamples. These are source-inspected working translations, not critical certifications.
 
 **Stage 49 source-checked replacements retained:** II:34–38, lower marginal register (five page-span drafts), and II:45–48, mixed Taftāzānī/Sanandajī upper commentary (four page-span drafts). These nine page positions were already in the local 300-page Stage49 edition. The Stage49 PDF is the extraction source for this website module. The lower text contains independent objections and first-person proposals. It is **UNASSIGNED** to an individual historical writer unless separately authenticated.
 
@@ -31,7 +33,8 @@ Stage 50 adds **1,265 English words** across eight upper/lower register records.
 | Positions represented in the 300-card offline cumulative edition | 300 |
 | Independently critically certified full-source pages | **0** |
 | Existing separate marginal-note units accurately attributable to Wasīm through new Stage50 evidence | **0** |
-| Stage49 register-level records integrated in this module | 9 |
+| Stage48 register-level source-corrected records restored | 16 (10 upper, 6 selected lower) |
+| Stage49 register-level records integrated in the newer module | 9 |
 | Stage50 register-level records integrated in this module | 8 |
 
 The historical **601/615** presence figure on the previous site meant merely “some English guide or selected source phrase,” not translated original-page coverage, and is **not a measure of translation completeness**.
@@ -49,7 +52,7 @@ The historical **601/615** presence figure on the previous site meant merely “
 
 ## UI and data strategy
 
-The site retains stable primary records `P2.034` etc. Revised upper readings replace outdated guides on the same original page position, without double counting; lower excerpts become elements in the reader's independently selectable **Unattributed marginalia** layer. Earlier Git history and separate editorial documents are retained, and the original independent *Tahdhīb* project is not merged.
+The site retains stable primary records `P2.034` etc. **Nineteen unique original-page positions, II:34–52, have newly integrated focused source-checked or source-inspected work on the public reader; this does not mean that all 300 original positions of the separate offline cumulative edition have been imported.** Revised upper readings replace outdated guides on the same original page position, without double counting; lower excerpts become elements in the reader's independently selectable **Unattributed marginalia** layer. Earlier Git history and separate editorial documents are retained, and the original independent *Tahdhīb* project is not merged.
 
 ## Next critical work
 
