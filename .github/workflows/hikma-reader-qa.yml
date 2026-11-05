@@ -1,0 +1,62 @@
+name: Hikma three-book reader and Arabic corpus QA
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'texts/al-tabatabai/**'
+      - '.github/workflows/hikma-reader-qa.yml'
+  pull_request:
+    paths:
+      - 'texts/al-tabatabai/**'
+      - '.github/workflows/hikma-reader-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hikma-reader-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  reader:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify source data, dictionary anchors, and assets
+        run: node texts/al-tabatabai/tools/audit-hikma.mjs
+      - name: Verify JavaScript syntax
+        run: |
+          node --check texts/al-tabatabai/assets/hikma-reader.js
+          node --check texts/al-tabatabai/assets/hikma-combined.js
+          node --check texts/al-tabatabai/assets/hikma-refinements.js
+          node --check texts/al-tabatabai/tools/qa-browser.cjs
+      - name: Install browser engines
+        run: |
+          npm install --no-save --package-lock=false playwright@1.58.0
+          npx playwright install --with-deps chromium webkit
+      - name: Browser regression (desktop, iPhone, navigation, dictionary, notes, A4 PDF)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 8767 --bind 127.0.0.1 >/tmp/hikma-reader-server.log 2>&1 &
+          srv=$!
+          trap 'kill "$srv" || true' EXIT
+          for i in {1..80}; do
+            if curl -fsS http://127.0.0.1:8767/texts/al-tabatabai/ >/dev/null; then break; fi
+            sleep 0.25
+          done
+          HIKMA_QA_OUTPUT=hikma-qa-artifacts node texts/al-tabatabai/tools/qa-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hikma-three-book-browser-and-pdf-smoke
+          path: |
+            hikma-qa-artifacts/
+            /tmp/hikma-reader-server.log
+          if-no-files-found: warn
+          retention-days: 30
