@@ -112,3 +112,8 @@ body[data-book="combined"] .reading-context{white-space:normal}
   .chapter-permalink,.footnote-reference{color:#333!important}
   .loading-state,.empty-state{display:none!important}
 }
+
+.stage-introduction{max-width:780px;margin:14px auto 4px;padding-top:10px;border-top:1px solid var(--line);font:normal 20px/1.95 "Amiri","Noto Naskh Arabic",serif;text-align:right;color:var(--ink);letter-spacing:0;overflow-wrap:anywhere}
+:root[data-language="english"] .stage-introduction{display:none}
+@media(max-width:690px){.stage-introduction{font-size:21px;line-height:1.9;margin-top:10px}}
+@media print{.stage-introduction{font-size:13.5pt!important;line-height:1.75!important;margin:3mm 0 0;padding:2mm 0 0;break-inside:avoid-page}}
