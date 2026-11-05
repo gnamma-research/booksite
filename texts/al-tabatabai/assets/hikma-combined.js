@@ -431,7 +431,7 @@
       if (entry.bookLabel) article.append(make('p', 'glossary-book-label', entry.bookLabel));
       const candidates = [entry.arabic, entry.english, entry.term].map(normalise).filter(value => value && value.length > 2);
       const part = entry.bookLabel === 'al-Manṭiq' ? 'M' : entry.bookLabel === 'Bidāya' ? 'B' : entry.bookLabel === 'Nihāya' ? 'N' : null;
-      const occurrence = state.units.find(unit => (!part || unit.part === part) && candidates.some(value => unit.searchText.includes(value)));
+      const occurrence = (entry.passageId && state.byUnit.get(entry.passageId)) || state.units.find(unit => (!part || unit.part === part) && candidates.some(value => unit.searchText.includes(value)));
       if (occurrence) {
         const jump = make('button', 'dictionary-jump', 'Read in the text');
         jump.type = 'button'; jump.addEventListener('click', () => { $('glossary-dialog').close(); navigate({group:occurrence.group,unit:occurrence},true); });
