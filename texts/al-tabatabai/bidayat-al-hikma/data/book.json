@@ -9,11 +9,11 @@
     "prepared": "2026-11-04",
     "numberedChaptersInOriginal": 110,
     "translationComplete": false,
-    "translatedAuthorialUnits": 0,
+    "translatedAuthorialUnits": 13,
     "guideUnits": 0,
     "method": "Original editorial guidance; no full authorial Arabic text or published English translation reproduced.",
     "arabicAuthorialChapters": 110,
-    "englishTranslatedChapters": 4,
+    "englishTranslatedChapters": 12,
     "englishTranslatedIntroductions": 1,
     "arabicSource": "Uploaded Arabic–English edition, Arabic pages manually and electronically normalized; proofreading and independent witness collation required.",
     "translationMethod": "Fresh English translation from the Arabic; published Qarāʾī English is reference only and is not reproduced.",
@@ -29,7 +29,8 @@
     "ocrGlyphRepair": "Verified recurring source-import glyph substitutions R→لمج, T→ته, 5→نه against independent Arabic witness; the one occurrence of '(5)' as a printed note marker was excluded and repaired by witness. Other OCR errors still require collation.",
     "ocrWitness": "https://lib.rafed.net/view.php?b_id=1571&type=c_fbook",
     "ocrDashRepair": "Reconstructed 108 recurring Arabic 'به' ligature losses (including بها، بهذا، بهما، إبهام) against the independent Rafed Arabic witness; punctuation dashes preserved. Other errors require edition collation.",
-    "translatedChapters": 8
+    "translatedChapters": 12,
+    "translatedSection": "Author's introduction and all 12 numbered chapters of Stage I; remaining stages Arabic-only pending fresh translation."
   },
   "sources": [
     {
@@ -403,8 +404,8 @@
       "title": "Thingness is coextensive with existence",
       "arabicTitle": "الفصل التاسع الشيئية تساوق الوجود",
       "arabic": "الشيئية تساوق الوجود و العدم لا شيئية له إذ هو بطلان محض لا ثبوت له فالثبوت و النفي في معنى الوجود و العدم. و عن المعتزلة أن الثبوت أعم مطلقا من الوجود فبعض المعدوم ثابت عندهم و هو المعدوم الممكن و يكون حينئذ النفي أخص من العدم و لا يشمل إلا المعدوم الممتنع. و عن بعضهم أن بين الوجود و العدم واسطة و يسمونها الحال و هي صفة الموجود التي ليست بموجودة و لا معدومة كالعالمية و القادرية و الوالدية من الصفات الانتزاعية التي لا وجود منحازا لها فلا يقال إنها موجودة و الذات الموجودة تتصف بها فلا يقال إنها معدومة و أما الثبوت و النفي فهما متناقضان لا واسطة بينهما و هذه كلها أوهام يكفي في بطلانها قضاء الفطرة بأن العدم بطلان لا شيئية له.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Thingness (*shayʾiyya*) is coextensive with existence. Non-being has no thingness, for it is sheer nullity without any positive establishment. In this sense, affirmation or establishment stands with existence, negation with non-existence.\n\nA position ascribed to the Muʿtazila makes establishment (*thubūt*) more extensive than existence: some non-existents, specifically possible non-existents, are nevertheless ‘established’. Negation would then be narrower than non-existence, applying only to what is impossible.\n\nOthers propose a middle condition between existence and non-existence called a *state* (*ḥāl*). The examples are being learned, being powerful, and being a parent—intellectually abstracted qualifications that have no separate existence of their own. According to this view, they cannot be called existing things because they possess no distinct existence, yet cannot simply be called non-existent because existing subjects are qualified by them. Establishment and its negation are nevertheless treated as contradictories without a middle.\n\nThe author rejects these views, appealing to the judgment that non-being as such is sheer nullity and has no thingness. One must not turn the absence of an independently existing accident into a third ontological status between existence and non-existence.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 36,
@@ -418,6 +419,14 @@
         {
           "type": "editorial synthesis of lecture notes",
           "text": "The notes introduce the Muʿtazilī discussions of thingness, nonexistents, and aḥwāl. Their polemical simplification should not be substituted for a historically sourced comparison of Muʿtazilī positions. (Krishnan, printed p. 30; attribution to the lecturer as mediated by the note-taker.)"
+        },
+        {
+          "type": "Historical note",
+          "text": "This is Tabāṭabāʾī's compressed account of certain Muʿtazilī doctrines of non-existents and aḥwāl. It should not be generalised to every Muʿtazilī thinker or taken to mean that aḥwāl were necessarily posited as independently subsisting entities."
+        },
+        {
+          "type": "Terminology",
+          "text": "Wujūd, thubūt, shayʾiyya, and ḥāl mean existence, establishment, thingness, and state respectively. The controversy turns precisely on whether they are coextensive."
         }
       ]
     },
@@ -428,8 +437,8 @@
       "title": "No distinction or causality in non-existence",
       "arabicTitle": "الفصل العاشر في أنه لا تمايز ولا علية في العدم",
       "arabic": "أما عدم التمايز فلأنه فرع الثبوت و الشيئية و لا ثبوت و لا شيئية في العدم نعم ربما يتميز عدم من عدم بإضافة الوهم إياه إلى الملكات و أقسام الوجود فيتميز بذلك عدم من عدم كعدم البصر و عدم السمع و عدم زيد و عدم عمرو و أما العدم المطلق فلا تميز فيه. و أما عدم العلية في العدم فلبطلانه و انتفاء شيئيته و قولهم عدم العلة علة لعدم المعلول قول على سبيل التقريب و المجاز فقولهم مثلا لم يكن غيم فلم يكن مطر معناه بالحقيقة أنه لم يتحقق العلية التي بين وجود الغيم و وجود المطر و هذا كما قيل نظير إجراء أحكام القضايا الموجبة في السالبة فيقال سالبة حملية و سالبة شرطية و نحو ذلك و إنما فيها سلب الحمل و سلب الشرط.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Non-existence admits neither distinction nor causal efficacy.\n\nDistinction requires something established or a thing capable of being distinguished, but absolute non-being has neither. One can distinguish an absence of sight from an absence of hearing, or the absence of Zayd from that of ʿAmr, only by mentally referring those absences to their respective positive objects or capacities. Absolute non-existence, considered without reference to what it negates, has no distinctions within it.\n\nNor can non-being properly act as a cause, since it has no reality or thingness. The familiar expression ‘the absence of a cause causes the absence of its effect’ is therefore approximate or figurative. Saying ‘there were no clouds, so there was no rain’ really means that the causal relation between the existence of clouds and the occurrence of rain was not realised.\n\nThis resembles our use of expressions such as ‘negative categorical proposition’ or ‘negative conditional proposition’. Strictly speaking, the negation is of predication or of the conditional connection, rather than a positive entity called a ‘negative relation’.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 38,
@@ -439,6 +448,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 32 (PDF p. 33); chapter 1.10. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "Causal absence is not itself an efficient agent in the author's argument. The example depends on an underlying positive causal relation that does not obtain."
         }
       ]
     },
@@ -449,8 +462,8 @@
       "title": "Absolute non-existence admits no predication",
       "arabicTitle": "الفصل الحادي عشر في أن المعدوم المطلق لا خبر عنه",
       "arabic": "و يتبين ذلك بما تقدم أنه بطلان محض لا شيئية له بوجه و إنما يخبر عن شيء بشيء و أما الشبهة بأن قولهم المعدوم المطلق لا يخبر عنه يناقض نفسه فإنه بعينه إخبار عنه بعدم الإخبار فهي مندفعة بما سيجيء في مباحث الوحدة و الكثرة من أن من الحمل ما هو أولي ذاتي يتحد فيه الموضوع و المحمول مفهوما و يختلفان اعتبارا كقولنا الإنسان إنسان و منه ما هو شائع صناعي يتحدان فيه وجودا و يختلفان مفهوما كقولنا الإنسان ضاحك و المعدوم المطلق معدوم مطلق بالحمل الأولي و لا يخبر عنه و ليس بمعدوم مطلق بل موجود من الموجودات الذهنية بالحمل الشائع و لذا يخبر عنه بعدم الإخبار عنه فلا تناقض. و بهذا التقريب يندفع الشبهة عن عدة قضايا توهم التناقض كقولنا الجزئي جزئي و هو بعينه كلي يصدق على كثيرين و قولنا شريك الباري ممتنع مع أنه معقول في الذهن فيكون موجودا فيه ممكنا و قولنا الشيء إما ثابت في الذهن أو لا ثابت فيه و اللا ثابت في الذهن ثابت فيه لأنه معقول. وجه الاندفاع أن الجزئي جزئي بالحمل الأولي كلي بالشائع و شريك الباري شريك الباري بالحمل الأولي و ممكن مخلوق للباري بالشائع و اللا ثابت في الذهن كذلك بالحمل الأولي و ثابت فيه بالشائع.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Absolute non-existence does not admit predication: it is sheer nullity and has no thingness whatsoever, whereas predication affirms something of something.\n\nAn objection says that the proposition ‘Absolute non-existence cannot be spoken of’ contradicts itself: the statement appears to speak *about* the very thing declared unspeakable. The answer requires the distinction between two modes of predication, taken up later under unity and multiplicity.\n\nIn *primary essential predication* (*al-ḥaml al-awwalī al-dhātī*), subject and predicate are one in meaning and differ only in consideration, as in ‘Human is human’. In *common predication* (*al-ḥaml al-shāʾiʿ al-ṣināʿī*), subject and predicate differ conceptually but coincide in an instance, as in ‘A human is capable of laughter’.\n\nAbsolute non-existence is absolute non-existence by primary predication. Yet the concept *absolute non-existence*, insofar as it is present to the intellect, is itself a mental existent under common predication. It is this mentally existing notion about which we can assert the impossibility of predicating attributes of absolute non-being. No contradiction follows.\n\nThe same distinction dissolves other apparent paradoxes. ‘A particular is particular’ is true by primary predication, whereas the concept ‘particular’ is a universal predicable of many cases by common predication. A supposed partner of the Creator is impossible as a referent, yet the concept of such a partner, as a mental occurrence, is a possible, created mental existent. Similarly, what is conceived as ‘not established in the mind’ is, as an entertained notion, established in the mind. These truths hold under differing modes of predication.\n\nThe point is not that the impossible object becomes possible, but that its intelligible description has a kind of mental existence different from what it signifies.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 40,
@@ -460,6 +473,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 33 (PDF p. 34); chapter 1.11. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Logical note",
+          "text": "The distinction between primary and common predication is indispensable. A contradiction arises only if the predicates are affirmed and denied in the same respect; mental existence of a concept is not the external existence of its impossible referent."
         }
       ]
     },
@@ -470,8 +487,8 @@
       "title": "The impossibility of restoring the very same non-existent",
       "arabicTitle": "الفصل الثاني عشر في امتناع إعادة المعدوم بعينه",
       "arabic": "قالت الحكماء إن إعادة المعدوم بعينه ممتنعة و تبعهم فيه بعض المتكلمين و أكثرهم على الجواز. و قد عد الشيخ امتناع إعادة المعدوم ضروريا و هو من الفطريات لقضاء الفطرة ببطلان شيئية المعدوم فلا يتصف بالإعادة. و القائلون بنظرية المسألة احتجوا عليه بوجوه: منها أنه لو جاز للمعدوم في زمان أن يعاد في زمان آخر بعينه لزم تخلل العدم بين الشيء و نفسه و هو محال لأنه حينئذ يكون موجودا بعينه في زمانين بينهما عدم متخلل. حجة أخرى لو جازت إعادة الشيء بعينه بعد انعدامه جاز إيجاد ما يماثله من جميع الوجوه ابتداء و استئنافا و هو محال أما الملازمة فلأن حكم الأمثال فيما يجوز و فيما لا يجوز واحد و مثل الشيء ابتداء و معاده ثانيا لا فرق بينهما بوجه لأنهما يساويان الشيء المبتدأ من جميع الوجوه و أما استحالة اللازم فلاستلزام اجتماع المثلين في الوجود عدم التميز بينهما و هو وحدة الكثير من حيث هو كثير و هو محال. حجة أخرى إن إعادة المعدوم توجب كون المعاد هو المبتدأ و هو محال لاستلزامه الانقلاب أو الخلف بيان الملازمة أن إعادة المعدوم بعينه يستلزم كون المعاد هو المبتدأ ذاتا و في جميع الخصوصيات المشخصة حتى الزمان فيعود المعاد عين المبتدأ و هو الانقلاب أو الخلف. حجة أخرى لو جازت الإعادة لم يكن عدد العود بالغا معينا يقف عليه إذ لا فرق بين العودة الأولى و الثانية و هكذا إلى ما لا نهاية له كما لم يكن فرق بين المعاد و المبتدإ و تعين العدد من لوازم وجود الشيء المتشخص. احتج المجوزون بأنه لو امتنعت إعادة المعدوم لكان ذلك إما لماهيته و إما للازم ماهيته و لو كان كذلك لم يوجد ابتداء و هو ظاهر و إما لعارض مفارق فيزول الامتناع بزواله. و رد بأن الامتناع لأمر لازم لكن لوجوده و هويته لا لماهيته كما هو ظاهر من الحجج المتقدمة. و عمدة ما دعاهم إلى القول بجواز الإعادة زعمهم أن المعاد و هو مما نطقت به الشرائع الحقة من قبيل إعادة المعدوم. و يرده أن الموت نوع استكمال لا انعدام و زوال.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The philosophers maintain that the numerical restoration of the very same thing after its complete annihilation is impossible. Some theologians agree; most theologians, as reported here, consider it possible. Avicenna regarded its impossibility as evident: since the non-existent has no thingness, there is no subject of restoration while it is non-existent.\n\nThose who argue the matter discursively offer several demonstrations. First, if a thing that disappeared at one time could be restored as numerically identical at another, non-being would intervene between a thing and itself. The supposedly identical individual would occupy separated temporal positions with absolute non-existence between them.\n\nSecond, if such a restoration were possible, it would also be possible to originate anew something indistinguishable from the original in *every* respect. But two alleged individuals without any possible ground of distinction would be a plurality identical as a plurality, which is impossible. The purported restored thing would be no more identifiable as that original than the wholly indistinguishable new production.\n\nThird, complete numerical restoration would require the restored individual to reproduce every individuating characteristic of the first, including its temporal designation. It would therefore have to be the original occurrence even in its time, collapsing the alleged distinction between the original and the return.\n\nFourth, there would be no determinate number of permissible returns. If one return is possible in precisely the same circumstances, so would a second and further returns without limit. Yet, the argument says, determinate number is a concomitant of the existence of an individuated thing.\n\nDefenders of the possibility reply that an impossibility of restoration must follow either from the thing's quiddity, an inseparable concomitant, or a separable accident. It cannot follow from the first two, since that same quiddity was initially capable of existing; and a separable impediment could be removed.\n\nThe author replies that the impossibility pertains to the original thing's *individual existence and identity*, not to its abstract quiddity. Its quiddity's possibility at the outset is therefore irrelevant to the question.\n\nHe finally considers a theological motivation: the belief that bodily resurrection requires bringing back precisely the same thing from sheer annihilation. He rejects that equation, arguing that death is a form of further perfection or transformation, not absolute annihilation. Resurrection therefore does not, merely as such, establish the possibility of restoring an absolutely non-existent individual as numerically the very same.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 42,
@@ -481,6 +498,14 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 34 (PDF p. 35); chapter 1.12. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "Iʿādat al-maʿdūm means numerical re-creation after complete non-existence, not ordinary persistence through change or resurrection understood as transformation. The philosophical demonstrations reported here remain open to independent critical assessment."
+        },
+        {
+          "type": "Historical note",
+          "text": "The theological positions are summarized from the author's perspective. Different kalām schools distinguish the persistence of the soul, bodily reconstruction, and the problem of numerical identity in different ways."
         }
       ]
     },
