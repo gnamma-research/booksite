@@ -2,7 +2,11 @@ name: Qawaid verified PDF release v2
 on:
   push:
     branches: [master]
-    paths: ['.github/workflows/qawaid-pdf-release-v2.yml']
+    paths:
+      - '.github/workflows/qawaid-pdf-release-v2.yml'
+      - 'texts/al-turka/qawaid-al-tawhid/pdf/build_editions.py'
+      - 'texts/al-turka/qawaid-al-tawhid/data/primary-reference-register.js'
+      - 'texts/al-turka/qawaid-al-tawhid/data/linked-lexicon.js'
   workflow_dispatch:
 permissions:
   contents: write
