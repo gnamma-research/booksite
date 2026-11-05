@@ -31,7 +31,7 @@ window.GNAMMA_QAWAID_REFERENCES = {
       ],
       "status": "full-verse",
       "inlineAnchors": [
-        "ومن لم يجعل الله له نورا"
+        "من لم يجعل الله له نورا"
       ]
     },
     {
@@ -47,7 +47,7 @@ window.GNAMMA_QAWAID_REFERENCES = {
       ],
       "status": "full-verse",
       "inlineAnchors": [
-        "وإن من شيء إلا يسبح بحمده"
+        "إن من شيء إلا يسبح"
       ]
     },
     {
@@ -251,7 +251,7 @@ window.GNAMMA_QAWAID_REFERENCES = {
       "status": "full-verse",
       "note": "The commentator invokes the verse concerning the keys of the unseen when discussing the first divine names; this card displays the whole verse rather than only the quoted clause.",
       "inlineAnchors": [
-        "وعنده مفاتح الغيب"
+        "عنده مفاتح الغيب"
       ]
     },
     {
@@ -268,7 +268,7 @@ window.GNAMMA_QAWAID_REFERENCES = {
       "status": "full-verse",
       "note": "The author quotes the final clause while criticizing disputed philosophical arguments. The popup displays the entire Qurʾānic verse for context.",
       "inlineAnchors": [
-        "وما ظلمهم الله ولكن أنفسهم يظلمون"
+        "ما ظلمهم الله"
       ]
     },
     {
