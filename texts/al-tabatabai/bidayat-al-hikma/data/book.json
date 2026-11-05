@@ -9,11 +9,11 @@
     "prepared": "2026-11-04",
     "numberedChaptersInOriginal": 110,
     "translationComplete": false,
-    "translatedAuthorialUnits": 40,
+    "translatedAuthorialUnits": 45,
     "guideUnits": 0,
     "method": "Original editorial guidance; no full authorial Arabic text or published English translation reproduced.",
     "arabicAuthorialChapters": 110,
-    "englishTranslatedChapters": 39,
+    "englishTranslatedChapters": 44,
     "englishTranslatedIntroductions": 1,
     "arabicSource": "Uploaded Arabic–English edition, Arabic pages manually and electronically normalized; proofreading and independent witness collation required.",
     "translationMethod": "Fresh working English from the Arabic, preserving authorial objections and answers, with editorial notes as apparatus; no publisher English reproduced.",
@@ -29,7 +29,7 @@
     "ocrGlyphRepair": "Verified recurring source-import glyph substitutions R→لمج, T→ته, 5→نه against independent Arabic witness; the one occurrence of '(5)' as a printed note marker was excluded and repaired by witness. Other OCR errors still require collation.",
     "ocrWitness": "https://lib.rafed.net/view.php?b_id=1571&type=c_fbook",
     "ocrDashRepair": "Reconstructed 108 recurring Arabic 'به' ligature losses (including بها، بهذا، بهما، إبهام) against the independent Rafed Arabic witness; punctuation dashes preserved. Other errors require edition collation.",
-    "translatedChapters": 39,
+    "translatedChapters": 44,
     "translatedSection": "Author's introduction and all 12 numbered chapters of Stage I; remaining stages Arabic-only pending fresh translation."
   },
   "sources": [
@@ -1259,8 +1259,8 @@
       "title": "The mutual dependence of matter and form",
       "arabicTitle": "الفصل السابع في أن كلا من المادة والصورة محتاجة إلى الأخرى",
       "arabic": "بيان ذلك أما إجمالا :فإن التركيب بين المادة والصورة تركيب حقيقي إتحادي ،ذو وحدة حقيقية ،وقد تقدم أن بعض أجزاء المركب الحقيقي محتاج إلى بعض. وأما تفصيلا :فالصورة محتاجة إلى المادة في تعينها ،فإن الصورة إنما يتعين نوعها باستعداد سابق تحمله المادة ،وهي تقارن صورة سابقة ،وهكذا. وأيضا :هي محتاجة إلى المادة في تشخصها ،أي في وجودها الخاص بها ،من حيث ملازمتها للعوارض المسماة ب ” العوارض المشخصة “ من الشكل والوضع والأين ومتى وغيرها. وأما المادة ،فهي متوقفة الوجود حدوثا وبقاء على صورة ما من الصور الواردة عليها ، تتقوم بها ،وليست الصورة علة تامة ولا علة فاعلية لها ،لحاجتها في تعينها وفي تشخصها إلى المادة ،والعلة الفاعلية إنما تفعل بوجودها الفعلي ،فالفاعل لوجود المادة جوهر مفارق للمادة من جميع الجهات ،فهو عقل مجرد أوجد المادة ،وهو يستحفظها بالصورة بعد الصورة التي يوجدها في المادة. فالصورة جزء للعلة التامة ،وشريكة العلة للمادة ،وشرط لفعلية وجودها .وقد شبهوا استبقاء العقل المجرد المادة بصورة ما بمن يستحفظ سقف بيت بأعمدة متبدلة فلا يزال يزيل عمودا وينصب مكانه آخر. واعترض عليه :بأنهم ذهبوا إلى كون هيولى عالم العناصر واحدة بالعدد ،فكون صورة ما – وهي واحدة بالعموم – شريكة العلة لها يوجب كون الواحد بالعموم علة للواحد بالعدد وهو أقوى وجودا من الواحد بالعموم ،مع أن العلة يجب أن تكون أقوى من معلولها. ولو أغمضنا عن ذلك ،فلا ريب أن تبدل الصور يستوجب بطلان الصورة السابقة وتحقق اللاحقة في محلها ،وإذ فرض أن الصورة جزء العلة التامة للمادة ،فبطلانها يوجب بطلان الكل – أعني العلة التامة – ويبطل بذلك المادة ،فأخذ صورة ما شريكة العلة لوجود المادة يؤدي إلى نفي المادة. والجواب :أنه سيأتي في مرحلة القوة والفعل أن تبدل الصور في الجواهر المادية ليس بالكون والفساد وبطلان صورة وحدوث أخرى ،بل الصور المتبدلة موجودة بوجود واحد سيال يتحرك الجوهر المادي فيه ،وكل واحد منها حد من حدود هذه الحركة الجوهرية ،فهي موجودة متصلة واحدة بالخصوص وإن كانت وحدة مبهمة، تناسب إبهام ذات المادة\n\nالتي هي قوة محضة ،وقولنا “ :إن صورة ما واحدة بالعموم شريكة العلة للمادة “ إنما هو باعتبار ما يطرأ عليها من الكثرة بالانقسام.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Matter and form depend upon one another. This follows generally from their forming a genuinely unified composite, since the constituents of a true composite need one another. More specifically, form needs matter for its *determination as a specific kind*: its occurrence requires a prior disposition borne by matter, which was previously joined to another form, and so on.\n\nForm also needs matter for its *individual actualisation*. Its individual existence is accompanied by the circumstances traditionally called individuating accidents—shape, position, location, time, and the like.\n\nMatter, on the other hand, depends for its existence both in origination and continuance upon some form or another that constitutes it. Yet the form cannot be the complete cause of matter or its independent efficient cause, for form itself needs matter in being determined and individuated. An efficient cause acts through its actuality. Therefore the agent of matter's existence must be a substance wholly separate from matter: an immaterial intellect which produces matter and preserves its existence by means of successive forms actualised in it.\n\nOn this account form is a constituent of the complete cause, a co-principle of the cause of matter, and a condition for the actuality of matter's existence. The philosophers compare the intellect's preserving matter through one form after another to preserving the roof of a house by replacing its supporting pillars: one pillar is withdrawn as another is put in its place.\n\nAn objection is raised. The philosophers maintain that the prime matter of the elemental world is numerically one, whereas the form that plays the role of co-principle of its cause is ‘one in general’ rather than a numerically identical form. How can something one merely in general serve as cause of something numerically one, which seems to have stronger unity of existence than what is only generally one? The cause ought to be more actual than its effect.\n\nA second difficulty remains even apart from that. If successive forms truly perish and are replaced, the destruction of a previous form removes a constituent of matter's complete cause, and the removal of the complete cause would remove matter itself. Treating successive forms as co-principles in matter's causation therefore seems to undermine matter's survival through their succession.\n\nThe reply anticipates the discussion of potency and act. The succession of substantial forms in material beings is not, in truth, sheer corruption of one form followed by the creation of another disconnected form. Rather, the changing forms have one flowing existence: substantial being itself moves through its successive determinations, each form being a limit or phase of this substantial motion.\n\nThe changing forms are therefore continuous and one in their individual process, although the unity is indefinite in a manner appropriate to the indeterminacy of matter, which is pure potency. Saying that ‘some form or another’, one in general, is a co-principle of matter's cause reflects an intellectual consideration of the plurality of determinations produced by dividing this continuous process, not the independent existence of an abstract universal form as efficient cause.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 128,
@@ -1270,6 +1270,14 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 97 (PDF p. 98); chapter 6.7. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "This chapter explicitly uses substantial motion to answer the objection that successive substantial forms would destroy the very matter they are alleged to preserve. The claimed continuity is existential, not numerical identity of several disconnected static forms."
+        },
+        {
+          "type": "Comparative note",
+          "text": "The ‘form as co-principle of matter's complete cause’ and ‘separate intellect as efficient cause’ are specific theses of this metaphysical system and must be distinguished from the form/matter and esse/essence distinctions used in Aquinas."
         }
       ]
     },
@@ -1280,8 +1288,8 @@
       "title": "The existence of soul and intellect",
       "arabicTitle": "الفصل الثامن النفس والعقل موجودان",
       "arabic": "أما النفس – وهي الجوهر المجرد من المادة ذاتا المتعلق بها فعلا – فلما نجد في النفوس الانسانية من خاصة العلم ،وسيأتي في مرحلة العاقل والمعقول أن الصور العلمية مجردة من المادة موجودة للعالم حاضرة عنده ،ولولا تجرد العالم بتنزهه عن القوة ومحوضته في الفعلية ، لم يكن معنى لحضور شئ عنده ،فالنفس الانسانية العاقلة مجردة من المادة ،وهي جوهر لكونها صورة لنوع جوهري ،وصورة الجوهر جوهر على ما تقدم. وأما العقل ،فلما سيأتي أن النفس في مرتبة العقل الهيولاني أمر بالقوة بالنسبة إلى الصور المعقولة لها ،فالذي يفيض عليها الفعلية فيها يمتنع أن يكون نفسها وهي بالقوة ،ولا أي أمر مادي مفروض ،فمفيضها جوهر مجرد منزه عن القوة والإمكان ،وهو العقل. وأيضا ،تقدم أن مفيض الفعلية للأنواع المادية بجعل المادة والصورة واستحفاظ المادة بالصورة ،عقل مجرد ،فالمطلوب ثابت. وعلى وجودهما براهين كثيرة اخر ،ستأتي الإشارة إلى بعضها. خاتمة: من خواص الجوهر أنه لا تضاد فيه ،لأن من شرط التضاد تحقق موضوع يعتوره الضدان ،ولا موضوع للجوهر.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The existence of soul and intellect can also be established.\n\n**The soul** is a substance immaterial in essence while related to matter in its activity. Its existence is indicated by the property of knowledge found in human souls. The later stage on knower and intelligible will argue that intelligible forms are immaterial, present to the knower and existing for it. Without the knower's own freedom from potency and its actuality, the presence of anything to the knower would be unintelligible. The human intellectual soul is therefore immaterial.\n\nIt is a *substance* insofar as it is the form of a substantial natural kind, and the form of a substantial being is substantial in the relevant sense, as explained earlier.\n\n**Intellect** is shown to exist because the soul at the stage of material intellect is potential with respect to intelligible forms. What gives those forms actuality cannot be the soul itself considered precisely in that potential state, nor a material cause. The source of their intellectual actuality must be an immaterial substance free of potentiality and possibility in the relevant respect. Such is the separate intellect.\n\nFurthermore, the prior account of material substances has already treated the principle that gives actuality to their kinds by establishing matter and form, and preserves matter through successive forms, as a separate intellect. This supports the same conclusion.\n\nThere are additional demonstrations of soul and intellect, some of which will be indicated later.\n\nFinally, a special property of substance is that there is no *contrariety* within the category itself. Contrariety requires one subject capable of receiving either of the two contraries, whereas substance as such is not an accident inhering in a further subject in that manner.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 132,
@@ -1291,6 +1299,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 99 (PDF p. 100); chapter 6.8. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The argument from knowledge presupposes the author's theory of immaterial cognition and the intellect's transition from potentiality to actuality. It is not a direct observation of a separate intellect."
         }
       ]
     },
@@ -1301,8 +1313,8 @@
       "title": "Quantity and its divisions",
       "arabicTitle": "الفصل التاسع في الكم وانقساماته وخواصه",
       "arabic": "الكم عرض يقبل القسمة الوهمية بالذات .وقد قسموه قسمة أولية إلى المتصل والمنفصل. والمتصل ما يمكن أن يفرض فيه أجزاء بينها حد مشترك والحد المشترك ما إن اعتبر بداية لأحد الجزئين أمكن أن يعتبر بداية للآخر ،وإن اعتبر نهاية لأحدهما أمكن أن يعتبر نهاية للآخر ،كالنقطة بين جزئي الخط ،والخط بين جزئي السطح ،والسطح بين جزئي الجسم التعليمي ،والآن بين جزئي الزمان. والمنفصل ما كان بخلافه ،كالخمسة مثلا ،فإنها إن قسمت إلى ثلاثة واثنين لم يوجد فيها حد مشترك ،وإلا فإن كان واحدا منها عادت الخمسة أربعة ،وإن كان واحدا من خارج عادت ستة ،هذا خلف. الثاني – أعني المنفصل – هو العدد الحاصل من تكرر الواحد ،وإن كان الواحد نفسه ليس بعدد ،لعدم صدق حد الكم عليه ،وقد عدوا كل واحدة من مراتب العدد نوعا على حدة ،لاختلاف الخواص. والأول – أعني المتصل – ينقسم إلى :قار وغير قار .والقار “ :ما لأجزائه المفروضة اجتماع في الوجود “ كالخط مثلا .وغير القار بخلافه ،وهو الزمان ،فإن كل جزء منه مفروض لا يوجد إلا وقد انصرم السابق عليه ولما يوجد الجزء اللاحق. والمتصل القار على ثلاثة أقسام :جسم تعليمي ،وهو الكمية السارية في الجهات الثلاث من الجسم الطبيعي المنقسمة فيها ،وسطح ،وهو نهاية الجسم التعليمي المنقسمة في جهتين ،وخط ،وهو نهاية السطح المنقسمة في جهة واحدة. وللقائلين بالخلاء – بمعنى الفضاء الخالي من كل موجود شاغل يملؤه – شك في الكم المتصل القار ،لكن الشأن في إثبات الخلاء بهذا المعنى. تتمة: يختص الكم بخواص :الأولى :أنه لا تضاد بين شئ من أنواعه ،لعدم اشتراكها في الموضوع ،والاشتراك في الموضوع من شرط التضاد. الثانية :قبول القسمة الوهمية بالفعل كما تقدم. الثالثة :وجود ما يعده – أي يفنيه بإسقاطه منه مرة بعد مرة – ،فالكم المنفصل – وهو العدد – مبدؤه الواحد ،وهو عاد لجميع أنواعه ،مع أن بعض أنواعه عاد لبعض ، كالاثنين للأربعة ،والثلاثة للتسعة ،والكم المتصل منقسم ذو أجزاء ،فالجزء منه يعد الكل الرابعة :المساواة واللا مساواة ،وهما خاصتان للكم ،وتعرضان غيره بعرضه.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Quantity is an accident admitting division in imagination through itself. It is first divided into **continuous** and **discrete** quantity.\n\nA continuous quantity is one in which parts can be supposed to possess a common boundary. A common boundary is something that may be considered as the beginning of either of two parts or the end of either: the point between two portions of a line, the line between portions of a surface, the surface between portions of a mathematical body, and the instant between portions of time.\n\nA discrete quantity lacks such a common boundary. If the number five is separated into three and two, there is no shared unit between them. If that unit were one of the five, the two portions would add up to four; if an additional unit were introduced, they would add up to six. Both results contradict the original division.\n\nDiscrete quantity is number, arising from the repetition of units, though unity itself is not a number because it does not meet the definition of quantity in this sense. Each numerical rank is regarded as a distinct kind because of its characteristic properties.\n\nContinuous quantity is further divided into **permanent or coexisting** and **non-coexisting**. A permanent continuum has its supposed parts existing together, as in a line. The non-coexisting continuum is time: any present part obtains only after a preceding part has passed and before a succeeding part has arisen.\n\nCoexisting continuous quantity has three kinds. The *mathematical body* is quantity extended in three dimensions and pervading natural body. A *surface* is the boundary of a mathematical body, divisible in two dimensions. A *line* is the boundary of a surface, divisible in one dimension.\n\nThose who posit an empty void—space not occupied by any existent—raise a further question about coexisting continuous quantity. But the existence of such a void remains to be demonstrated.\n\nQuantity also has characteristic properties. First, its species do not stand in the relation of contraries, because they do not occur in one common subject in the way contraries require. Second, it admits division in imagination, as shown. Third, quantity has something by which it can be measured through repeated subtraction or counting. For discrete quantity the unit is the first measure of all numbers, while certain numbers measure others: two measures four, three measures nine. In continuous quantity a part measures the whole. Fourth, equality and inequality belong properly to quantity and are attributed to other things through quantity.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 134,
@@ -1312,6 +1324,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 101 (PDF p. 102); chapter 6.9. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "‘Permanent’ (qārr) here means that the supposed parts of a continuum coexist, not that the body is eternally unchanging. Time is the paradigm of a continuum whose parts do not coexist."
         }
       ]
     },
@@ -1322,8 +1338,8 @@
       "title": "Quality",
       "arabicTitle": "الفصل العاشر في الكيف",
       "arabic": "وهو “ عرض لا يقبل القسمة ولا النسبة لذاته ” .وقد قسموه بالقسمة الأولية إلى أربعة أقسام: أحدها :الكيفيات النفسانية ،كالعلم والإرادة والجبن والشجاعة واليأس والرجاء. وثانيها :الكيفيات المختصة بالكميات ،كالاستقامة والانحناء والشكل مما يختص بالكم المتصل ،وكالزوجية والفردية في الأعداد مما يختص بالكم المنفصل. وثالثها :الكيفيات الاستعدادية ،وتسمى أيضا “ :القوة واللا قوة “ كالاستعداد الشديد نحو الانفعال كاللين ،والاستعداد الشديد نحو اللا انفعال كالصلابة .وينبغي أن يعد منها مطلق الاستعداد القائم بالمادة .ونسبة الاستعداد إلى القوة الجوهرية التي هي المادة نسبة الجسم التعليمي الذي هو فعلية الامتداد في الجهات الثلاث إلى الجسم الطبيعي الذي فيه إمكانه. ورابعها :الكيفيات المحسوسة بالحواس الخمس الظاهرة ،وهي إن كانت سريعة الزوال كحمرة الخجل وصفرة الوجل ،سميت “ :انفعالات “ ،وإن كانت راسخة ،كصفرة الذهب وحلاوة العسل ،سميت “ :انفعاليات” . ولعلماء الطبيعة اليوم تشكيك في كون الكيفيات المحسوسة موجودة في الخارج على ما هي عليه في الحس ،مشروح في كتبهم.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Quality is an accident which, considered in itself, does not admit division or relation. The Peripatetic classification distinguishes four primary kinds.\n\n**First**, psychic qualities, such as knowledge, will, cowardice, courage, despair, and hope.\n\n**Second**, qualities specific to quantities: straightness, curvature, and shape in continuous quantities, and evenness and oddness in discrete numbers.\n\n**Third**, dispositional qualities, called *powers and non-powers*. These include a strong disposition to undergo change, such as softness, and a strong disposition not to undergo it, such as hardness. Disposition inhering in matter generally should also be included here. The relation of disposition to substantial potency, which is matter, resembles the relation of mathematical body—the actuality of three-dimensional magnitude—to natural body, which is receptive to it.\n\n**Fourth**, qualities apprehended through the five external senses. If these pass quickly, like the redness of embarrassment or the pallor of fear, they are called *affections* (infiʿālāt). If relatively stable, like the yellowness of gold and the sweetness of honey, they are called *affective qualities* (infiʿāliyyāt).\n\nThe author notes that investigators of nature have questioned whether sensible qualities exist externally exactly as they appear in sensory experience. Their discussions of this issue are treated in the sciences concerned.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 138,
@@ -1333,6 +1349,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 103 (PDF p. 104); chapter 6.10. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Terminological note",
+          "text": "The contrast between quality and substantial potency is maintained: preparedness or disposition as an accident is not the same as the material principle capable of receiving actualisation."
         }
       ]
     },
@@ -1343,8 +1363,8 @@
       "title": "The relative categories",
       "arabicTitle": "الفصل الحادي عشر في المقولات النسبية",
       "arabic": "وهي :الأين ،ومتى ،والوضع ،والجدة ،والإضافة ،والفعل ،والانفعال. أما الأين :فهو هيئة حاصلة من نسبة الشئ إلى المكان وأما متى :فهو هيئة حاصلة من نسبة الشئ إلى الزمان ،وكونه فيه أعم من كونه في نفس الزمان ،كالحركات ،أو في طرفه ،وهو الآن ،كالموجودات الآنية الوجود ،من الاتصال والانفصال والمماسة ونحوها ،وأعم أيضا من كونه على وجه الانطباق ،كالحركة القطعية ،أو لا على وجهه ،كالحركة التوسطية. وأما الوضع :فهو هيئة حاصلة من نسبة أجزاء الشئ بعضها إلى بعض ،والمجموع إلى الخارج ،كالقيام الذي هو هيئة حاصلة للإنسان من نسبة خاصة بين أعضائه نفسها ، وبينها وبين الخارج ،من كون رأسه إلى فوق وقدميه إلى تحت. وأما الجدة – ويقال لها “ :الملك “ – :فهي هيئة حاصلة من إحاطة شئ بشئ ، بحيث ينتقل المحيط بانتقال المحاط ،سواء كانت الإحاطة إحاطة تامة ،كالتجلبب ،أو إحاطة ناقصة ،كالتقمص والتنعل. وأما الإضافة :فهي هيئة حاصلة من تكرر النسبة بين شيئين ،فإن مجرد النسبة لا يوجب إضافة مقولية ،وإنما تفيدها نسبة الشئ الملحوظ من حيث إنه منتسب إلى شئ هو منتسب إليه لهذا المنتسب ،كالأب المنسوب – من حيث إنه أب لهذا الابن – إليه من حيث إنه ابن له. وتنقسم الإضافة إلى متشابهة الأطراف كالاخوة والاخوة ،ومختلفة الأطراف كالأبوة والبنوة ،والفوقية والتحتية. ومن خواص الإضافة :أن المضافين متكافئان وجودا وعدما ،وفعلا وقوة ،لا يختلفان من حيث الوجود والعدم ،والفعل والقوة. واعلم أن المضاف قد يطلق على نفس الإضافة كالأبوة والبنوة ،ويسمى “ :المضاف الحقيقي “ ،وقد يطلق على معروضها كالأب والإبن ،ويسمى “ :المضاف المشهوري” . وأما الفعل :فهو الهيئة الحاصلة من تأثير المؤثر ما دام يؤثر ،كالهيئة الحاصلة من تسخين المسخن ما دام يسخن. وأما الانفعال :فهو الهيئة الحاصلة من تأثر المتأثر ما دام يتأثر ،كالهيئة الحاصلة من تسخن المتسخن ما دام يتسخن .واعتبار التدرج في تعريف الفعل والانفعال لاخراج الفعل\n\nوالانفعال إلا بداعيين ،كفعل الواجب ) تعالى ( باخراج العقل المجرد من العدم إلى الوجود ،وانفعال العقل بخروجه من العدم إلى الوجود بمجرد إمكانه الذاتي.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The seven relational categories are *where* (place), *when* (time), *position*, *having* or *possession*, *relation*, *acting*, and *being acted upon*.\n\n**Where** is the determination arising from a thing's relation to place.\n\n**When** is the determination arising from a thing's relation to time. Being ‘in time’ includes being extended through time, as movements are, and being at its boundary, the instant, as are instantaneous occurrences such as contact, separation, and connection. It also includes being spread across time in the manner of traversing motion or being related to time without such continuous traversal, as in intermediate motion.\n\n**Position** is the determination arising from relations of a thing's parts to one another and of the whole to the exterior. Standing, for instance, results from a definite ordering of the limbs, with the head above and the feet below.\n\n**Having** (or the category of possession) is the state resulting when one thing surrounds another and the surrounding thing moves when the surrounded thing moves. The enclosure may be complete, as with being wrapped in a cloak, or partial, as with wearing a shirt or shoes.\n\n**Relation** (iḍāfa) is the determination arising from a reciprocal reference between two things. A bare relation in one direction does not yet amount to a categorial relation. Rather, the thing is considered as referred to something that is itself referred back to it—for example, a father considered as father of this child, while the child is considered as child of this father.\n\nRelations divide into those with like terms, as between siblings, and those with unlike terms, as between father and child or above and below. Correlatives are coequal in existence and non-existence, actuality and potentiality: precisely as correlatives they cannot differ under these determinations.\n\nThe term *relative* may refer either to the relation itself, such as fatherhood and sonship, called the *relative in the strict sense*, or to the subject possessing the relation, such as father or child, called the *relative in customary usage*.\n\n**Acting** is the determination arising in an agent through its affecting another while it acts, as the condition of what heats something while the heating is occurring.\n\n**Being acted upon** is the corresponding determination in the recipient as it undergoes the action, as in something being heated while it is becoming hot.\n\nThe gradual or ongoing character included in these definitions excludes an instantaneous act or reception of actuality, such as the Necessary Existent's production of a separate intellect from non-being and the intellect's receiving existence in virtue of its intrinsic possibility. The categories ‘acting’ and ‘being acted upon’, as defined here, concern processes of acting and undergoing rather than every instance of metaphysical causation.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 140,
@@ -1354,6 +1374,14 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 104 (PDF p. 105); chapter 6.11. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Critical textual note",
+          "text": "The printed Rafed witness reads «إلا بداعيين» in the last sentence, which is evidently problematic. Its own printed explanatory note reads «أي لإخراج الفعل والانفعال الدفعي». The English follows the sense of ‘excluding instantaneous acting and being acted upon’; the Arabic reading is retained pending collation with another printed witness."
+        },
+        {
+          "type": "Terminological note",
+          "text": "For iḍāfa, the reciprocal orientation of correlatives is essential. The author distinguishes the categorial relation itself (fatherhood) from the subject termed relative (father), and the categories of acting/undergoing from all causal activity whatsoever."
         }
       ]
     },
