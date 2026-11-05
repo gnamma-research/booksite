@@ -59,16 +59,46 @@
     selectedText='';
   });
 
+  /* Three print editions use native browser printing / Save as PDF. */
   let printState=null;
   const printButton=createHeaderButton('pdf-print','Print / PDF',[
     'M6 9V3h12v6M6 18H4V9h16v9h-2',
     'M6 15h12v6H6z',
     'M16 12h.01'
   ]);
+  const printDialog=document.createElement('dialog');
+  printDialog.id='pdf-layout-dialog';printDialog.className='reader-dialog pdf-layout-dialog';
+  printDialog.innerHTML=[
+    '<div class="dialog-header"><h2 id="pdf-dialog-title">Print or save a PDF</h2>',
+    '<button class="icon-button" type="button" data-pdf-close aria-label="Close PDF options">×</button></div>',
+    '<p class="pdf-dialog-intro">Choose a layout. Use your browser&rsquo;s print dialog to select <strong>Save as PDF</strong>. The current book (or filtered view) is exported.</p>',
+    '<fieldset class="pdf-mode-options"><legend>Edition layout</legend>',
+    '<label><input type="radio" name="pdf-mode" value="reading"><span><strong>Reading</strong><small>English where translated; Arabic otherwise</small></span></label>',
+    '<label><input type="radio" name="pdf-mode" value="study" checked><span><strong>Study</strong><small>Parallel Arabic and English, with passage notes</small></span></label>',
+    '<label><input type="radio" name="pdf-mode" value="reference"><span><strong>Reference</strong><small>Arabic text and source footnotes</small></span></label></fieldset>',
+    '<div class="pdf-dialog-actions"><button type="button" class="pdf-cancel" data-pdf-close>Cancel</button>',
+    '<button type="button" class="primary-button" id="pdf-confirm">Open print dialog</button></div>'
+  ].join('');
+  printDialog.setAttribute('aria-labelledby','pdf-dialog-title');
+  document.body.appendChild(printDialog);
+  printDialog.querySelectorAll('[data-pdf-close]').forEach(button=>button.addEventListener('click',()=>printDialog.close()));
+
+  function printBookTitle(){
+    if(bookId!=='combined')return (document.querySelector('.title-page h1')||{}).textContent||'Book';
+    const active=document.querySelector('#toc a[data-group][aria-current="true"]');
+    const href=active&&active.getAttribute('href')||'';
+    return href.startsWith('#chapter-B-')?'Bidāyat al-Ḥikma'
+      :href.startsWith('#chapter-N-')?'Nihāyat al-Ḥikma'
+      :'al-Manṭiq — Muḥammad Riḍā al-Muẓaffar';
+  }
+
   function restoreAfterPrint(){
     if(!printState)return;
     const saved=printState;printState=null;
     document.body.classList.remove('gnamma-print');
+    delete document.body.dataset.pdfMode;
+    const title=document.querySelector('.title-page h1');
+    if(title)title.removeAttribute('data-print-title');
     for(const node of saved.expanded){if(node.isConnected)node.open=false;}
     const view=$('reading-view');
     if(view&&view.value!==saved.view){
@@ -79,14 +109,24 @@
   }
   if(printButton)printButton.addEventListener('click',()=>{
     if(printState)return;
-    const view=$('reading-view');
-    const expanded=[];
+    if(!printDialog.open)printDialog.showModal();
+    const selected=printDialog.querySelector('input[name="pdf-mode"]:checked');
+    if(selected)selected.focus();
+  });
+  printDialog.querySelector('#pdf-confirm').addEventListener('click',()=>{
+    if(printState)return;
+    const mode=printDialog.querySelector('input[name="pdf-mode"]:checked').value;
+    const view=$('reading-view'),expanded=[];
     printState={view:view?view.value:'continuous',url:location.href,scrollY:window.scrollY,expanded};
     if(view&&view.value!=='continuous'){
       view.value='continuous';view.dispatchEvent(new Event('change',{bubbles:true}));
     }
     document.body.classList.add('gnamma-print');
+    document.body.dataset.pdfMode=mode;
+    const title=document.querySelector('.title-page h1');
+    if(title)title.dataset.printTitle=printBookTitle();
     document.querySelectorAll('.footnote-details:not([open])').forEach(note=>{note.open=true;expanded.push(note);});
+    printDialog.close();
     window.print();
   });
   window.addEventListener('afterprint',restoreAfterPrint);
