@@ -3,13 +3,13 @@
   "title": "al-Manṭiq",
   "arabicTitle": "المنطق",
   "author": "Muḥammad Riḍā al-Muẓaffar",
-  "description": "Selections from Muḥammad Riḍā al-Muẓaffar's Arabic logic, with a fresh working English rendering and numbered source notes.",
+  "description": "Selections from Muḥammad Riḍā al-Muẓaffar's al-Manṭiq, now beginning with the original introduction to knowledge and reasoning, with fresh working English translation.",
   "status": "working-translation",
   "editorialStatus": {
     "translationComplete": false,
-    "translatedSection": "Book III, the four inquiries and the principal investigations of definition (original translation, abridged at some transitions)",
-    "translatedPassages": 14,
-    "sourceBasis": "Muẓaffar's Arabic al-Manṭiq; passage headings and citations follow the published chapter's sequence.",
+    "translatedSection": "Introduction to logic (in progress), and selected portions of Book III on definition; these remain separate authorial sections",
+    "translatedPassages": 18,
+    "sourceBasis": "Original Arabic from Muẓaffar's al-Manṭiq, early printed witness cross-checked against the Dār al-Taʿāruf text hosted by Rafed.",
     "englishComparator": "Carney's 75-page English PDF supplied by the user ends without the complete Book III section on definitions. English here is independently translated from Arabic.",
     "editionNotice": "A fresh working translation; Arabic selection is not a claim that the entire al-Manṭiq has been translated."
   },
@@ -34,6 +34,12 @@
   ],
   "stages": [
     {
+      "id": "0",
+      "number": 0,
+      "title": "Introduction to Logic",
+      "arabicTitle": "المدخل"
+    },
+    {
       "id": "I",
       "number": 1,
       "title": "The Four Questions",
@@ -53,6 +59,94 @@
     }
   ],
   "units": [
+    {
+      "id": "M-P-01",
+      "stage": "0",
+      "chapter": 1,
+      "title": "Why logic is needed",
+      "arabicTitle": "الحاجة إلى المنطق",
+      "arabic": "خلق الله الإنسان مفطوراً على النطق، وجعل اللسان آلة ينطق بها ولكن مع ذلك يحتاج إلى ما يقوم نطقه ويصلحه ليكون كلامه على طبق اللغة التي يتعلمها، من ناحية هيئات الألفاظ وموادها: فيحتاج أولاً إلى المدرب الذي يعوِّده على ممارستها، وثانياً إلى قانون يرجع إليه يعصم لسانه عن الخطأ. وذلك هو النحو والصرف.\n\nوكذلك خلق الله الإنسان مفطوراً على التفكير بما منحه من قوة عاقلة مفكرة، لا كالعجماوات. ولكن مع ذلك نجده كثير الخطأ في أفكاره: فيحسب ما ليس بعلة علة، وما ليس بنتيجة لأفكاره نتيجة، وما ليس ببرهان برهانا، وقد يعتقد بأمر فاسد أو صحيح من مقدمات فاسدة وهكذا. فهو إذن بحاجة إلى ما يصحح أفكاره ويرشده إلى طريق الاستنتاج الصحيح، ويدرِّبه على تنظيم أفكاره وتعديلها.\n\nوقد ذكروا أن (علم المنطق) هو الأداة التي يستعين بها الإنسان على العصمة من الخطأ، وترشده إلى تصحيح أفكاره، فكما أن النحو والصرف لا يعلمان الإنسان النطق وإنما يعلمانه تصحيح النطق، فكذلك علم المنطق لا يعلم الإنسان التفكير، بل يرشده إلى تصحيح التفكير.\n\nإذن فحاجتنا إلى المنطق هي تصحيح أفكارنا. وما أعظمها من حاجة! ولو قلتم: أن الناس يدرسون المنطق ويخطئون في تفكيرهم فلا نفع فيه، قلنا لكم: إن الناس يدرسون علمي النحو والصرف، فيخطئون في نطقهم، وليس ذلك إلا لأن الدارس للعلم لا يحصل على ملكة العلم، أو لا يراعي قواعده عند الحاجة، أو يخطئ في تطبيقها، فيشذ عن الصواب.",
+      "english": "God has made the human being naturally capable of speech and has given him a tongue as its instrument. Yet he still needs something to regulate and correct his speech, so that it accords with the language he learns in both the forms and materials of its expressions. He therefore needs, first, a teacher who habituates him to its use and, second, rules to consult that guard his tongue against error: these are grammar and morphology.\n\nLikewise, God has endowed the human being with an intellective power and an aptitude for thought. Even so, people make many mistakes in thinking: they take something for a cause that is not a cause, regard as a consequence something that does not follow, and mistake what is not a demonstration for a demonstration. One may even hold a true conclusion on the strength of unsound premises. There is therefore a need for something that corrects thought, directs it towards valid inference, and trains it in the proper organisation of its operations.\n\nLogicians describe logic as an instrument by which one can protect oneself against error and correct one's thinking. Grammar does not give one the ability to speak; it guides one to speak correctly. Similarly, logic does not impart the ability to think; it guides thought towards correctness.\n\nOur need for logic, then, is the correction of our thinking—and how great that need is. If someone objects that people learn logic yet still reason badly, we answer that people learn grammar and morphology yet still make mistakes in speech. This happens because they have not acquired a settled mastery of the discipline, have failed to observe its rules when required, or have applied them incorrectly.",
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "The distinction between the possession of a rational faculty and a trained habit (malaka) of correctly exercising it is central here. Logic is an instrumental discipline, not a substitute for intellectual attention."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Arabic text, Dār al-Taʿāruf (1402 AH)",
+        "page": "8–9",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=9&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-02",
+      "stage": "0",
+      "chapter": 2,
+      "title": "Definition and instrumental character of logic",
+      "arabicTitle": "تعريف علم المنطق — المنطق آلة",
+      "arabic": "ولذلك عرفوا علم المنطق بأنه (آلة قانونية تعصم مراعاتها الذهن عن الخطأ في الفكر). فانظر إلى كلمة (مراعاتها)، واعرف السر فيها كما قدمناه، فليس كل من تعلم المنطق عصم عن الخطأ في الفكر، كما أنه ليس كل من تعلم النحو عصم عن الخطأ في اللسان، بل لابد من مراعاة القواعد وملاحظتها عند الحاجة، ليعصم ذهنه أو لسانه.\n\nوانظر إلى كلمة (آلة) في التعريف وتأمل معناها، فتعرف أن المنطق إنما هو من قسم العلوم الآلية التي تستخدم لحصول غاية، هي غير معرفة نفس مسائل العلم، فهو يتكفل ببيان الطرق العامة الصحيحة التي يتوصل بها الفكر إلى الحقائق المجهولة، كما يبحث (علم الجبر) عن طرق حل المعادلات التي بها يتوصل الرياضي إلى المجهولات الحسابية.\n\nوببيان أوضح: علم المنطق يعلمك القواعد العامة للتفكير الصحيح حتى ينتقل ذهنك إلى الأفكار الصحيحة في جميع العلوم، فيعلمك على أية هيئة وترتيب فكري تنتقل من الصور الحاضرة في ذهنك إلى الأمور الغائبة عنك ولذا سموا هذا العلم (الميزان) و(المعيار) من الوزن والعيار، وسموه بأنه (خادم العلوم) حتى علم الجبر الذي شبهنا هذا العلم به، يرتكز حل مسائله وقضاياه عليه.\n\nفلا بد لطالب هذا العلم من استعمال التمرينات لهذه الأداة وإجراء عمليتها في أثناء الدراسة، شأن العلوم الرياضية والطبيعية.",
+      "english": "Logic is accordingly defined as “a rule-governed instrument whose observance safeguards the mind against error in thinking.” Attend especially to the word *observance*. Learning logic does not automatically protect someone from mistakes, just as learning grammar does not automatically prevent errors of speech. The rules must be applied when they are needed.\n\nConsider also the word *instrument*. Logic belongs to the instrumental sciences, which are employed for an end other than simply knowing their own propositions. It sets out the general, correct procedures by which thinking may attain truths not yet known, much as algebra investigates procedures for solving equations and arriving at unknown quantities.\n\nMore precisely, logic teaches general rules of correct reasoning applicable across the sciences. It investigates the structure and arrangement by which the mind moves from the intelligible contents already present to matters as yet unknown. Hence it has been called the *balance*, the *standard*, and the *servant of the sciences*. Even algebra, which served as our comparison, depends upon logical ordering in solving its problems.\n\nA student of logic must therefore work exercises and actually employ its operations during study, as students of mathematics and the natural sciences must do.",
+      "notes": [
+        {
+          "type": "Terminology",
+          "text": "Āla qānūniyya: an instrument governed by rules. The verb rāʿā (‘to observe, heed, apply’) is part of the definition; logic does not promise that mistakes become impossible merely by having studied a textbook."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Arabic text, Dār al-Taʿāruf (1402 AH)",
+        "page": "9–10",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=10&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-03",
+      "stage": "0",
+      "chapter": 3,
+      "title": "From sensation to intellectual knowledge",
+      "arabicTitle": "العلم — تمهيد",
+      "arabic": "قلنا: إن الله تعالى خلق الإنسان مفطوراً على التفكير مستعداً لتحصيل المعارف بما أعطى من قوة عاقلة مفكرة يمتاز بها عن العجماوات. ولا بأس ببيان موطن هذا الامتياز من أقسام العلم الذي نبحث عنه، مقدمة لتعريف العلم ولبيان علاقة المنطق به، فنقول:\n\n١ ـ إذا ولد الإنسان يولد وهو خالي النفس من كل فكرة وعلم فعلي، سوى هذا الاستعداد الفطري. فإذا نشأ وأصبح ينظر ويسمع ويذوق ويشم ويلمس، نراه يحس بما حوله من الأشياء ويتأثر بها التأثر المناسب، فتنفعل نفسه بها، فنعرف أن نفسه التي كانت خالية أصبحت مشغولة بحالة جديدة نسميها (العلم)، وهي العلم الحسي الذي هو ليس إلا حسّ النفس بالأشياء التي تنالها الحواس الخمس: (الباصرة، السامعة، الشامة، الذائقة، اللامسة). وهذا أول درجات العلم، وهو رأس المال لجميع العلوم التي يحصل عليها الإنسان، ويشاركه فيه سائر الحيوانات التي لها جميع هذه الحواس أو بعضها.\n\n٢ ـ ثم تترقى مدارك الطفل فيتصرف ذهنه في صور المحسوسات المحفوظة عنده، فينسب بعضها إلى بعض: هذا أطول من ذاك، وهذا الضوء أنور من الآخر أو مثله، ويؤلف بعضها من بعض تأليفاً قد لا يكون له وجود في الخارج، كتأليفه لصور الأشياء التي يسمع بها ولا يراها، فيتخيل البلدة التي لم يرها، مؤلفة من الصور الذهنية المعروفة عنده من مشاهداته للبلدان. وهذا هو (العلم الخيالي) يحصل عليه الإنسان بقوة (الخيال)، وقد يشاركه فيه بعض الحيوانات.\n\n٣ ـ ثم يتوسع في إدراكه إلى أكثر المحسوسات، فيدرك المعاني الجزئية التي لا مادة لها ولا مقدار: مثل حب أبويه له وعداوة مبغضيه، وخوف الخائف، وحزن الثاكل، وفرح المستبشر. وهذا هو (العلم الوهمي) يحصل عليه الإنسان كغيره من الحيوانات بقوة (الوهم).\n\n٤ ـ ثم يذهب هو ـ الإنسان ـ في طريقه وحده متميزا عن الحيوان بقوة العقل والفكر التي لا حد لها ولا نهاية، فيدير بها دفة مدركاته الحسية والخيالية والوهمية، ويميز الصحيح منها عن الفاسد، وينتزع المعاني الكلية من الجزئيات التي أدركها فيتعقلها، ويقيس بعضها على بعض، وينتقل من معلوم الى آخر، ويستنتج ويحكم، ويتصرف ما شاءت له قدرته العقلية والفكرية.\n\nوهذا (العلم) الذي يحصل للإنسان بهذه القوة هو العلم الأكمل الذي كان به الإنسان إنساناً، ولأجل نموه وتكامله وضعت العلوم وألفت الفنون. وعلم المنطق وضع من بين العلوم، لأجل تنظيم تصرفات هذه القوة خوفاً من تأثير الوهم والخيال عليها، ومن ذهابها في غير الصراط المستقيم لها.",
+      "english": "We said that the human being is naturally disposed towards thinking and is capable of acquiring knowledge through an intellectual faculty that distinguishes him from non-rational animals. To clarify what we mean by knowledge and how logic is related to it, we may distinguish stages of cognitive development.\n\nFirst, the newly born child's soul possesses an innate capacity but no acquired, actual knowledge. As sight, hearing, taste, smell, and touch begin to operate, the soul is affected by the things presented to these senses. This is sensory cognition, the first degree of knowledge and a beginning from which further knowledge develops. Other animals share some or all of these sensory powers.\n\nSecond, the growing child begins to work upon retained sensory forms, comparing one with another—this object is taller, this light is brighter—and combining images into things not encountered externally. A town the child has only heard described may be imagined from previously seen towns. This is imaginative cognition (*ʿilm khayālī*), which some other animals also possess.\n\nThird, cognition extends to particular meanings that are neither material nor measurable: the love shown by parents, the hostility of an enemy, the fear of a frightened person, the grief of someone bereaved, or the joy of a delighted person. This is estimative cognition (*ʿilm wahmī*). It is still not the distinctive perfection of the human intellect.\n\nFourth, the human being exercises intellect and reasoning over sensible, imaginative, and estimative contents. The intellect discriminates the true from the false, abstracts universal notions from particulars, compares these notions, and proceeds from what it knows to further judgments and conclusions. This is intellectual knowledge in its fullest sense.\n\nThe sciences and disciplines aim to cultivate this rational power. Logic, in particular, orders its activity and guards against its being misled by imagination or estimation.",
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "This passage is the author's graduated account of acquired cognition. The distinction between the faculty of estimation (wahm), imagination (khayāl), and intellect (ʿaql) is preserved rather than flattening all three into ‘thinking’."
+        },
+        {
+          "type": "Authorial footnote — source",
+          "text": "In the printed source Muẓaffar explicitly restricts the present discussion to ʿilm ḥuṣūlī (knowledge through an acquired form). Knowledge by presence (ʿilm ḥuḍūrī) differs because the known is present by its very existence, not through an impressed representation. Only the former is here divided into conception and assent."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Arabic text, Dār al-Taʿāruf (1402 AH)",
+        "page": "10–12",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=11&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-04",
+      "stage": "0",
+      "chapter": 4,
+      "title": "Knowledge as the presence of a form",
+      "arabicTitle": "تعريف العلم",
+      "arabic": "وقد تسأل على أي نحو تحصل للإنسان هذه الإدراكات؟ ونحن قد قربنا لك فيما مضى نحو حصول هذه الإدراكات بعض الشيء، ولزيادة التوضيح نكلفك أن تنظر إلى شيء أمامك ثم تنطبق عينيك موجها نفسك نحوه، فستجد في نفسك كأنك لا تزال مفتوح العينين تنظر إليه، وكذلك إذا سمعت دقات الساعة مثلاً ـ ثم سددت أذنيك موجها نفسك نحوها، فستحس من نفسك كأنك لا تزال تسمعها وهكذا في كل حواسك.\n\nإذا جربت مثل هذه الأمور ودققتها جيداً يسهل عليك أن تعرف أن الإدراك أو العلم إنما هو انطباع صور الأشياء في نفسك ولا فرق بين مدركاتك في جميع مراتبها، كما تنطبع صور الأشياء في المرآة. ولذلك عرفوا العلم بأنه: «حضور صورة الشيء عند العقل». أو فقل انطباعها في العقل، لا فرق بين التعبيرين في المقصود.",
+      "english": "One may ask how these acts of cognition arise in a human being. To make the preceding explanation clearer, look at something before you, then close your eyes and direct your attention towards it. You will find something in yourself as though you were still seeing it. Likewise, after hearing a clock ticking, block your ears but turn your attention to the sound; something of the hearing seems to remain. The experiment can be repeated with the other senses.\n\nOn examining these experiences, the author invites us to understand cognition as the reception of the forms of things in the soul, by analogy with the way an image is impressed in a mirror. On this account, knowledge is defined as “the presence of a thing's form to the intellect,” or, equivalently for present purposes, “its being impressed upon the intellect.”",
+      "notes": [
+        {
+          "type": "Interpretive note",
+          "text": "This is Muẓaffar's introductory presentation of representational or acquired knowledge, not a claim that every kind of knowledge is reducible to a material impression. See the preceding author's footnote on the distinct case of knowledge by presence."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Arabic text, Dār al-Taʿāruf (1402 AH)",
+        "page": "12–13",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=13&type=c_fbook"
+      }
+    },
     {
       "id": "M-Q-01",
       "stage": "I",
