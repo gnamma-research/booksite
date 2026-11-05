@@ -9,11 +9,11 @@
     "prepared": "2026-11-04",
     "numberedChaptersInOriginal": 110,
     "translationComplete": false,
-    "translatedAuthorialUnits": 50,
+    "translatedAuthorialUnits": 56,
     "guideUnits": 0,
     "method": "Original editorial guidance; no full authorial Arabic text or published English translation reproduced.",
     "arabicAuthorialChapters": 110,
-    "englishTranslatedChapters": 49,
+    "englishTranslatedChapters": 55,
     "englishTranslatedIntroductions": 1,
     "arabicSource": "Uploaded Arabic–English edition, Arabic pages manually and electronically normalized; proofreading and independent witness collation required.",
     "translationMethod": "Fresh working English from the Arabic, preserving authorial objections and answers, with editorial notes as apparatus; no publisher English reproduced.",
@@ -29,7 +29,7 @@
     "ocrGlyphRepair": "Verified recurring source-import glyph substitutions R→لمج, T→ته, 5→نه against independent Arabic witness; the one occurrence of '(5)' as a printed note marker was excluded and repaired by witness. Other OCR errors still require collation.",
     "ocrWitness": "https://lib.rafed.net/view.php?b_id=1571&type=c_fbook",
     "ocrDashRepair": "Reconstructed 108 recurring Arabic 'به' ligature losses (including بها، بهذا، بهما، إبهام) against the independent Rafed Arabic witness; punctuation dashes preserved. Other errors require edition collation.",
-    "translatedChapters": 49,
+    "translatedChapters": 55,
     "translatedSection": "Author's introduction and all 12 numbered chapters of Stage I; remaining stages Arabic-only pending fresh translation."
   },
   "sources": [
@@ -1517,8 +1517,8 @@
       "title": "The efficient cause and its kinds",
       "arabicTitle": "الفصل السادس العلة الفاعلية وأقسامها",
       "arabic": "العلة الفاعلية و هي التي تفيض وجود المعلول و تفعله على أقسام و قد ذكروا في وجه ضبطها أن الفاعل إما أن يكون له علم بفعله أو لا و الثاني إما أن يلائم فعله طبعه و هو الفاعل بالطبع أو لا يلائم و هو الفاعل بالقسر و الأول و هو الذي له علم بفعله إن لم يكن فعله بإرادته فهو الفاعل بالجبر و إن كان بها فإما أن يكون علمه بفعله في مرتبة فعله بل عين فعله و هو الفاعل بالرضا و إما أن يكون علمه بفعله قبل فعله و حينئذ إما أن يكون علمه مقرونا بداع زائد و هو الفاعل بالقصد و إما أن لا يكون علمه مقرونا بداع زائد بل يكون نفس العلم فعليا منشأ لصدور المعلول و حينئذ فإما أن يكون علمه زائدا على ذاته و هو الفاعل بالعناية أو غير زائد على ذاته و هو الفاعل بالتجلي و الفاعل في ما تقدم إذا نسب إلى فعله من جهة أنه و فعله فعل لفاعل آخر كان فاعلا بالتسخير. فللفاعل أقسام ثمانية: أحدها الفاعل بالطبع و هو الذي لا علم له بفعله مع كون الفعل ملائما لطبعه كالنفس في مرتبة القوى البدنية الطبيعية تفعل أفعالها بالطبع. الثاني الفاعل بالقسر و هو الذي لا علم له بفعله و لا فعله ملائم لطبعه كالنفس في مرتبة القوى عند المرض فإن الأفعال تنحرف فيه عن مجرى الصحة لعوامل قاسرة. الثالث الفاعل بالجبر و هو ما له علم بفعله و ليس بإرادته كالإنسان يكره على فعل ما لا يريده. الرابع الفاعل بالرضا و هو الذي له إرادة و علمه التفصيلي بالفعل عين الفعل و ليس له قبل الفعل إلا علم إجمالي به بعلمه بذاته كالإنسان يفعل الصور الخيالية و علمه التفصيلي بها عينها و له قبلها علم إجمالي بها بعلمه بذاته و كفاعلية الواجب للأشياء عند الإشراقيين. الخامس الفاعل بالقصد و هو الذي له إرادة و علم بفعله قبل الفعل بداع زائد كالإنسان في أفعاله الاختيارية. السادس الفاعل بالعناية و هو الذي له إرادة و علم سابق على الفعل زائد على ذات الفاعل نفس الصورة العلمية منشأ لصدور الفعل من غير داع زائد كالإنسان الواقع على جذع عال فإنه بمجرد توهم السقوط يسقط على الأرض و كالواجب في إيجاده على قول المشائين.\n\nالسابع الفاعل بالتجلي و هو الذي يفعل الفعل و له علم سابق تفصيلي به هو عين علمه الإجمالي بذاته كالنفس الإنسانية المجردة فإنها لما كانت الصورة الأخيرة لنوعها كانت على بساطتها هي المبدأ لجميع كمالاتها و آثارها الواجدة لها في ذاتها و علمها الحضوري بذاتها علم بتفاصيل كمالاتها و إن لم يتميز بعضها من بعض و كالواجب تعالى بناء على ما سيجيء من أن له تعالى علما إجماليا في عين الكشف التفصيلي. الثامن الفاعل بالتسخير و هو الفاعل إذا نسب إليه فعله من جهة أن لنفس الفاعل فاعلا آخر إليه يستند هو و فعله فهو فاعل مسخر في فعله كالقوى الطبيعية و النباتية و الحيوانية المسخرة في أفعالها للنفس الإنسانية و كالفواعل الكونية المسخرة للواجب تعالى في أفعالها. و في كون الفاعل بالجبر و الفاعل بالعناية مباينين للفاعل بالقصد مباينة نوعية على ما يقتضيه التقسيم كلام.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The efficient cause is that which bestows the existence of an effect and brings it into actuality. Philosophers distinguish its kinds by asking first whether the agent knows its action. If not, either the action is suited to its nature—the *natural agent*—or it conflicts with that nature—the *constrained agent*. If the agent knows its action, either it is not voluntary—the *compelled agent*—or it is voluntary.\n\nAmong voluntary agents, the knowledge of the action may be at the very rank of the action, indeed identical with it: this is agency by *satisfaction* or *consent* (riḍā). Otherwise knowledge precedes the action. If prior knowledge is accompanied by a further motive, this is agency by *intention* (qaṣd). If no additional motive is required, knowledge itself issues in the act; and if the knowledge is additional to the agent's essence, this is agency by *providence* or *care* (ʿināya), while if it is identical with the agent's essence, this is agency by *self-manifestation* (tajallī).\n\nThere is a further consideration: when an agent and its action are themselves dependent upon a higher agent, the lower is termed an agent by *subordination* (taskhīr). Thus eight classes are named.\n\n1. **Natural agent (bi-l-ṭabʿ):** it does not know its act, which is in accordance with its nature. An example is the soul insofar as it operates through bodily natural powers.\n\n2. **Constrained agent (bi-l-qasr):** it lacks knowledge of its act, and the act is not suited to its nature. The author illustrates it by bodily powers under pathological conditions, where their operation is diverted from the course of health by constraining factors.\n\n3. **Compelled agent (bi-l-jabr):** it has knowledge of its action but does not will it, as when someone is forced to perform an act against his will.\n\n4. **Agent by satisfaction (bi-l-riḍā):** it has will, but its detailed knowledge of the act is identical with the act itself. Before acting it has only a general knowledge of the act through knowing itself. An example is the soul producing imaginal forms: the detailed cognition of these forms is identical with their presence, while prior to them the soul has an undifferentiated knowledge through itself. Illuminationist thinkers attribute this kind of agency to the Necessary Existent.\n\n5. **Agent by intention (bi-l-qaṣd):** it has will and prior knowledge of its act with an additional motivating purpose, as with human voluntary actions.\n\n6. **Agent by providence (bi-l-ʿināya):** its prior knowledge of its act is distinct from the agent's essence, but that cognition itself directly produces the action without an additional motive. One example offered is a person standing on a narrow height who, by imagining a fall, actually falls. Peripatetic philosophers use this category in their account of the Necessary Existent's producing the world.\n\n7. **Agent by self-manifestation (bi-l-tajallī):** the agent's prior detailed knowledge of its effects is identical with a general knowledge of itself. The immaterial human soul is given as an example: as the ultimate specific form of its kind it is, in its simplicity, the source of its perfections and effects, which it possesses implicitly. Knowledge by presence of its own essence thereby includes its perfections without their separately distinguished presentation. The Necessary Existent's agency is placed here on the author's later account, according to which His general knowledge is at once a detailed disclosure.\n\n8. **Agent by subordination (bi-l-taskhīr):** this is an agent considered as itself dependent, together with its action, upon a higher agent. Natural, vegetative, and animal powers are subordinate to the human soul in their activities; cosmic agents are subordinate to the Necessary Existent.\n\nThe author closes by noting that it is debatable whether compelled agency and agency by providence differ *specifically* from intentional agency as the classification seems to suggest.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 155,
@@ -1528,6 +1528,14 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 116 (PDF p. 117); chapter 7.6. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Terminological note",
+          "text": "The eight classes distinguish knowledge of the act, prior or concurrent cognition, voluntariness, additional motive, and dependence on a higher agent. ‘Agent by tajallī’ must not be silently reduced to an act of external sensory disclosure."
+        },
+        {
+          "type": "Philosophical note",
+          "text": "Attributions of divine agency to the Peripatetics and Illuminationists are reported from the author's classificatory standpoint; the precise original doctrines require examination of their primary texts."
         }
       ]
     },
@@ -1538,8 +1546,8 @@
       "title": "The final cause",
       "arabicTitle": "الفصل السابع في العلة الغائية",
       "arabic": "و هي الكمال الأخير الذي يتوجه إليه الفاعل في فعله. فإن كان لعلم الفاعل دخل في فاعليته كانت الغاية مرادة للفاعل في فعله و إن شئت فقل كان الفعل مرادا له لأجلها و لهذا قيل إن الغاية متقدمة على الفعل تصورا و متأخرة عنه وجودا. و إن لم يكن للعلم دخل في فاعلية الفاعل كانت الغاية ما ينتهي إليه الفعل و ذلك أن لكمال الشيء نسبة ثابتة إليه فهو مقتض لكماله و منعه من مقتضاه دائما أو في أكثر أوقات وجوده قسر دائمي أو أكثري ينافي العناية الإلهية بإيصال كل ممكن إلى كماله الذي أودع فيه استدعاؤه فلكل شيء غاية هي كماله الأخير الذي يقتضيه و أما القسر الأقلي فهو شر قليل يتداركه ما بحذائه من الخير الكثير و إنما يقع فيما يقع في نشأة المادة بمزاحمة الأسباب المختلفة.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The final cause is the ultimate perfection towards which the agent's activity is directed.\n\nWhere the agent's knowledge participates in its agency, the end is something the agent wills through its action; equivalently, the action is willed for the end's sake. In this sense it is said that the end precedes the act in conception while following it in actual existence.\n\nWhere knowledge does not enter the agent's activity, the end is what its operation naturally reaches. For a thing bears a fixed relation to its own perfection, and its nature calls for that perfection. To have its appropriate development blocked always or for most of its existence would amount to perpetual or prevalent constraint. This would conflict with divine providence, under which every possible being is directed towards the perfection for which it possesses a native receptivity.\n\nEach thing therefore has as its end the ultimate perfection that belongs to the order of its nature. Occasional constraint is a limited evil compensated by a greater good. It arises in the material world through the interference and competition of differing causes.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 159,
@@ -1549,6 +1557,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 122 (PDF p. 123); chapter 7.7. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The distinction is between an end that is consciously willed and an end reached by natural agency without deliberation; ‘end’ is not restricted to a consciously imagined future object."
         }
       ]
     },
@@ -1559,8 +1571,8 @@
       "title": "Final causality in apparently purposeless acts",
       "arabicTitle": "الفصل الثامن في إثبات الغاية فيما يعد لعبا أو جزافا أو باطلا",
       "arabic": "غير ذلك ربما يظن أن الفواعل الطبيعية لا غاية لها في أفعالها ظنا أن الغاية يجب أن تكون معلومة مرادة للفاعل لكنك عرفت أن الغاية أعم من ذلك و أن للفواعل الطبيعية غاية في أفعالها هي ما ينتهى إليه حركاتها. و ربما يظن أن كثيرا من الأفعال الاختيارية لا غاية لها كملاعب الصبيان بحركات لا غاية لهم فيها و كاللعب باللحية و كالتنفس و كانتقال المريض النائم من جانب إلى جانب و كوقوف المتحرك إلى غاية عن غايته بعروض مانع يمنعه عن ذلك إلى غير ذلك من الأمثلة. و الحق أن شيئا من هذه الأفاعيل لا يخلو عن غاية توضيح ذلك أن في الأفعال الإرادية مبدأ قريبا للفعل هو القوة العاملة المنبثة في العضلات و مبدأ متوسطا قبله و هو الشوق المستتبع للإرادة و الإجماع و مبدأ بعيدا قبله هو العلم و هو تصور الفعل على وجه جزئي الذي ربما قارن التصديق بأن الفعل خير للفاعل. و لكل من هذه المبادي الثلاثة غاية و ربما تطابقت أكثر من واحد منها في الغاية و ربما لم يتطابق. فإذا كان المبدأ الأول و هو العلم فكريا كان للفعل الإرادي غاية فكرية و إذا كان تخيلا من غير فكر فربما كان تخيلا فقط ثم تعلق به الشوق ثم حركت العاملة نحوه العضلات و يسمى الفعل عندئذ جزافا كما ربما تصور الصبي حركة من الحركات فيشتاق إليها فيأتي بها و ما انتهت إليه الحركة حينئذ غاية للمبادي كلها. و ربما كان تخيلا مع خلق و عادة كالعبث باللحية و يسمى عادة و ربما كان تخيلا مع طبيعة كالتنفس أو تخيلا مع مزاج كحركات المريض و يسمى قصدا ضروريا و في كل من هذه الأفعال لمباديها غاياتها و قد تطابقت في أنها ما انتهت إليه الحرة و أما الغاية الفكرية فليس لها مبدأ فكري حتى تكون له غايته. و كل مبدإ من هذه المبادي إذا لم يوجد غايته لانقطاع الفعل دون البلوغ إلى الغاية بعروض مانع من الموانع سمي الفعل بالنسبة إليه باطلا و انقطاع الفعل بسبب مانع يحول بينه و بين الوصول إلى الغاية غير كون الفاعل لا غاية له في فعله.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "It is sometimes supposed that natural agents have no ends, because a final cause is thought to require conscious knowledge and choice. But we have already seen that final causality is broader: the natural agent's end is the perfection attained through its movement.\n\nIt is also supposed that many voluntary acts lack ends, such as children's seemingly pointless movements, playing with one's beard, breathing, a sleeping sick person's turning from one side to another, or a movement interrupted before it reaches its intended goal. In fact none of these actions is wholly without an end.\n\nThe immediate principle of voluntary motion is the operative power distributed through the muscles. Before it there is an intermediate principle, appetite or desire, leading to will and resolve. Before that comes the more remote principle, knowledge: a particular conception of the action, sometimes accompanied by assent that the action is good for the agent.\n\nEach of these three principles has an end. Their ends may coincide, or they may differ.\n\nIf the primary cognitive principle is deliberate thought, the voluntary action has a consciously considered end. If it is merely imagination without discursive thought, a movement may simply be pictured, desired, and then executed. The action is then called *unconsidered* or spontaneous (jazāf). A child imagines a movement, comes to desire it, and performs it; the resulting motion is the end towards which the immediate principles tend.\n\nIf imagination works together with an acquired character or habit, as in playing with one's beard, the action is habitual. If imagination accompanies a natural impulse, as in breathing, or a bodily temperament, as in the movements of the ill, the act is termed a kind of necessary or compelled intention. In each case the relevant operative principles have ends, even where there is no prior discursive plan or the several principles simply converge on the motion that occurs.\n\nAn action may also be prevented from attaining its end by an intervening obstacle. Relative to that particular end the action is then said to be *vain* or *frustrated*; but an act's failure to reach an end is not the same as the agent's possessing no end in acting.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 161,
@@ -1570,6 +1582,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 123 (PDF p. 124); chapter 7.8. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The example of breathing is used in a classical taxonomy of natural and volitional powers; it should not be read as a contemporary physiological explanation of respiration."
         }
       ]
     },
@@ -1580,8 +1596,8 @@
       "title": "The rejection of chance",
       "arabicTitle": "الفصل التاسع في نفي القول بالاتفاق",
       "arabic": "بين العلل الفاعلية ربما يظن أن من الغايات المترتبة على الأفعال ما هي غير مقصودة لفاعلها و لا مرتبطة به و مثلوا له بمن يحفر بئرا ليصل إلى الماء فيعثر على كنز و العثور على الكنز ليس غاية لحفر البئر مرتبطة به و يسمى هذا النوع من الاتفاق بختا سعيدا و بمن يأوي إلى بيت ليستظل فينهدم عليه فيموت و يسمى هذا النوع من الاتفاق بختا شقيا. و على ذلك بنى بعض علماء الطبيعة كينونة العالم فقال إن عالم الأجسام مركبة من أجزاء صغار ذرية مبثوثة في خلاء غير متناه و هي دائمة الحركة فاتفق أن تصادمت جملة منها فاجتمعت فكانت الأجسام فما صلح للبقاء بقي و ما لم يصلح لذلك فنى سريعا أو بطيئا. و الحق أن لا اتفاق في الوجود و لنقدم لتوضيح ذلك مقدمة هي أن الأمور الكائنة يمكن أن تتصور على وجوه أربعة منها ما هو دائمي الوجود و منها ما هو أكثري الوجود و منها ما يحصل بالتساوي كقيام زيد و قعوده مثلا و منها ما يحصل نادرا و على الأقل كوجود الإصبع الزائد في الإنسان. و الأمر الأكثري الوجود يفارق الدائمي الوجود بوجود معارض يعارضه في بعض الأحيان كعدد أصابع اليد فإنها خمسة على الأغلب و ربما أصابت القوة المصورة للإصبع مادة زائدة صالحة لصورة الإصبع فصورتها إصبعا و من هنا يعلم أن كون الأصابع خمسة مشروط بعدم مادة زائدة و أن الأمر بهذا الشرط دائمي الوجود لا أكثريه و أن الأقلي الوجود مع اشتراط المعارض المذكور أيضا دائمي الوجود لا أقليه و إذا كان الأكثري و الأقلي دائميين بالحقيقة فالأمر في المساوي ظاهر فالأمور كلها دائمية الوجود جارية على نظام ثابت لا يختلف و لا يتخلف. و إذا كان كذلك فلو فرض أمر كمالي مترتب على فعل فاعل ترتبا دائميا لا يختلف و لا يتخلف حكم العقل حكما ضروريا فطريا بوجود رابطة وجودية بين الأمر الكمالي المذكور و بين فعل الفاعل رابطة تقضي بنوع من الاتحاد الوجودي بينهما ينتهي إليه قصد الفاعل لفعله و هذا هو الغاية. و لو جاز لنا أن نرتاب في ارتباط غايات الأفعال بفواعلها مع ما ذكر من دوام الترتب جاز لنا أن نرتاب في ارتباط الأفعال بفواعلها و توقف الحوادث و الأمور على علة فاعلية إذ\n\nليس هناك إلا ملازمة وجودية و ترتب دائمي و من هنا ما أنكر كثير من القائلين بالاتفاق العلة الفاعلية كما أنكر العلة الغائية و حصر العلية في العلة المادية و ستجيء الإشارة إليه. فقد تبين من جميع ما تقدم أن الغايات النادرة الوجود المعدودة من الاتفاق غايات دائمية ذاتية لعللها و إنما تنسب إلى غيرها بالعرض فالحافر لأرض تحتها كنز يعثر على الكنز دائما و هو غاية له بالذات و إنما تنسب إلى الحافر للوصول إلى الماء بالعرض و كذا البيت الذي اجتمعت عليه أسباب الانهدام ينهدم على من فيه دائما و هو غاية للمتوقف فيه بالذات و إنما عدت غاية للمستظل بالعرض فالقول بالاتفاق من الجهل بالسبب.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Some effects of actions seem neither intended by nor connected with the acting agent. The author gives examples of someone digging a well in search of water but discovering treasure, called good fortune, and someone entering a house for shade only to be killed when it collapses, called bad fortune.\n\nSome ancient natural philosophers used a theory of chance to explain the formation of the world. They supposed that bodies consisted of minute atomic particles moving continuously in an infinite void; the particles happened to collide and assemble into composite bodies. Those suitable for survival remained, while others perished sooner or later.\n\nThe author rejects chance as an independent explanation of existence. He begins by dividing events according to frequency: what occurs always, what occurs for the most part, what occurs with approximately equal alternatives, and what occurs only rarely—as with an extra finger on a human hand.\n\nBut what occurs usually, rather than invariably, differs from the invariably occurring through the intervention of counteracting causes. The human hand, for example, generally has five fingers; in a rare case the formative power may encounter additional material suited to the formation of another finger. Under the condition of the absence of such additional material, the ordinary result is invariant; under the presence of the specified interfering condition, the rare result likewise follows. What is common or rare in unqualified observation is thus a determined outcome when the relevant conditions are fully specified. The same, the author argues, applies to cases with equal alternatives.\n\nConsequently, all occurrences follow fixed causal orders when considered with their complete conditions. If a perfection or outcome invariably follows an agent's activity under those conditions, intellect judges that there is an existential connection between the activity and its outcome. That connection provides the intelligible ground for a final cause. To doubt the relation of ends to the activities from which they invariably arise would, the author argues, threaten even the relation of effects to efficient causes, since in each case an invariable order of existence is being appealed to.\n\nThe events commonly attributed to chance can therefore be re-described. Digging at a spot beneath which treasure lies yields the treasure under the relevant complete conditions: the discovery belongs properly to the actual causal complex, though only accidentally to the water-seeker's intention. Likewise, a house with all the conditions for collapse will fall upon someone inside it, regardless of the person's purpose in taking shelter. The eventual harm is associated accidentally with the intention to seek shade, though causally determined by the entire situation.\n\nTo attribute these outcomes to autonomous chance is, on this account, to be ignorant of the causes. ‘Chance’ marks our incomplete knowledge or the accidental relation between distinct lines of causation; it is not an independent producer of being.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 163,
@@ -1591,6 +1607,14 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 125 (PDF p. 126); chapter 7.9. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Critical note",
+          "text": "The author argues from full causal determination to the denial of chance as an independent ontological cause. The further claim that an outcome thereby counts as a final cause is a substantive philosophical thesis, not a conclusion accepted by every account of finality."
+        },
+        {
+          "type": "Historical note",
+          "text": "The ancient atomist picture is presented in the terms of the text. It should not be treated as a report of modern physics or evolutionary explanation."
         }
       ]
     },
@@ -1601,8 +1625,8 @@
       "title": "Formal and material causes",
       "arabicTitle": "الفصل العاشر في العلة الصورية والمادية",
       "arabic": "أما العلة الصورية فهي الصورة بمعنى ما به الشيء هو هو بالفعل بالنسبة إلى النوع المركب منها و من المادة فإن لوجود النوع توقفا عليها بالضرورة و أما بالنسبة إلى المادة فهي صورة و شريكة العلة الفاعلية على ما تقدم و قد تطلق الصورة على معان أخر خارجة من غرضنا. و أما العلة المادية فهي المادة بالنسبة إلى النوع المركب منها و من الصورة فإن لوجود النوع توقفا عليها بالضرورة و أما بالنسبة إلى الصورة فهي مادة قابلة معلولة لها على ما تقدم. و قد حصر قوم من الطبيعيين العلة في المادة و الأصول المتقدمة ترده فإن المادة سواء كانت الأولى أو الثانية حيثيتها القوة و لازمها الفقدان و من الضروري أنه لا يكفي لإعطاء فعلية النوع و إيجادها فلا يبقى للفعلية إلا أن توجد من غير علة و هو محال. و أيضا قد تقدم أن الشيء ما لم يجب لم يوجد و الوجوب الذي هو الضرورة و اللزوم لا مجال لاستناده إلى المادة التي حيثيتها القبول و الإمكان فوراء المادة أمر يوجب الشيء و يوجده و لو انتفت رابطة التلازم التي إنما تتحقق بين العلة و المعلول أو بين معلولي علة ثالثة و ارتفعت من بين الأشياء بطل الحكم باستتباع أي شيء لأي شيء و لم يجز الاستناد إلى حكم ثابت و هو خلاف الضرورة العقلية و للمادة معان أخر غير ما تقدم خارجة من غرضنا.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The *formal cause* is the form through which a composite specific substance, constituted by matter and form, is actually what it is. The species necessarily depends upon that form for its existence. Relative to matter, form also acts as a co-principle with the efficient cause, as discussed earlier. ‘Form’ can have other meanings, but these are not at issue here.\n\nThe *material cause* is matter in relation to the species constituted from matter and form, since the species likewise depends upon its matter for its existence. Relative to form, matter is the receptive subject that is actualised by form, as explained above.\n\nCertain natural philosophers have restricted causality to matter alone. The principles already established refute that restriction. Matter, whether primary or secondary, is potential and receptive; its very character involves lack of the actuality for which it is disposed. It cannot by itself give actuality to a species. If there were no further cause, that actuality would arise without a cause, which is impossible.\n\nMoreover, we established that a contingent thing does not exist until it is necessary. Necessity in the sense of existential determination cannot arise from matter considered merely as receptive possibility. There must therefore be something beyond matter that determines and produces the actual existence of the thing.\n\nIf the necessary connection which obtains between cause and effect, or between effects of a common cause, were altogether denied, then the inference from any one event to any other would collapse. No reliable general judgment could be based upon such relations, contrary to the evident use of reason.\n\nThe term ‘matter’ has other senses besides the material cause here treated, but they lie outside the present discussion.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 167,
@@ -1612,6 +1636,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 128 (PDF p. 129); chapter 7.10. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Terminology",
+          "text": "Matter is the intrinsic receptive cause of a composite, not the complete producer of its actuality. Form is the intrinsic determining cause; ‘co-principle’ and ‘efficient cause’ should not be treated as synonymous."
         }
       ]
     },
@@ -1622,8 +1650,8 @@
       "title": "Bodily causation",
       "arabicTitle": "الفصل الحادي عشر في العلة الجسمانية",
       "arabic": "العلل الجسمانية متناهية أثرا من حيث العدة و المدة و الشدة قالوا لأن الأنواع الجسمانية متحركة بالحركة الجوهرية فالطبائع و القوى التي لها منحلة منقسمة إلى حدود و أبعاض كل منها محفوف بالعدمين محدود ذاتا و أثرا. و أيضا العلل الجسمانية لا تفعل إلا مع وضع خاص بينها و بين المادة قالوا لأنها لما احتاجت في وجودها إلى المادة احتاجت في إيجادها إليها و الحاجة إليها في الإيجاد هي بأن يحصل لها بسببها وضع خاص مع المعلول و لذلك كان للقرب و البعد و الأوضاع الخاصة دخل في تأثير العلل الجسمانية.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Bodily causes have limited effects in three respects: number, duration, and intensity.\n\nThe philosophers explain this by substantial motion. Bodily natural kinds undergo substantial motion, so their natures and powers are distributed across determinate phases and limits of a changing existence. Each phase is bounded by preceding and succeeding non-being in the relevant temporal order and is finite both in itself and in its effect.\n\nFurthermore, bodily causes act only with a particular position relative to matter. Just as they depend upon matter in their existence, their production of effects requires matter under definite positional conditions. This need is fulfilled through a particular arrangement connecting them with the effect. Proximity, distance, and the specific dispositions of the bodies involved therefore play a role in corporeal causation.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 169,
@@ -1633,6 +1661,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 131 (PDF p. 132); chapter 7.11. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The limitation of bodily causality by time, magnitude, and spatial disposition distinguishes it from the operation of an immaterial cause in the author's scheme."
         }
       ]
     },
