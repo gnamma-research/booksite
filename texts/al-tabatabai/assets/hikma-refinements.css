@@ -117,3 +117,43 @@ body[data-book="combined"] .reading-context{white-space:normal}
 :root[data-language="english"] .stage-introduction{display:none}
 @media(max-width:690px){.stage-introduction{font-size:21px;line-height:1.9;margin-top:10px}}
 @media print{.stage-introduction{font-size:13.5pt!important;line-height:1.75!important;margin:3mm 0 0;padding:2mm 0 0;break-inside:avoid-page}}
+
+/* Print-edition chooser: compact and keyboard-accessible. */
+.pdf-layout-dialog{width:min(550px,calc(100vw - 26px))}
+.pdf-dialog-intro{font:13px/1.7 Arial,Helvetica,sans-serif;color:var(--muted);margin:0 0 20px}
+.pdf-mode-options{border:0;padding:0;margin:0}
+.pdf-mode-options legend{font:600 11px/1.6 Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.7px;color:var(--muted);margin-bottom:8px}
+.pdf-mode-options label{display:flex;align-items:center;gap:13px;margin:7px 0;padding:13px 14px;border:1px solid var(--line);border-radius:5px;background:var(--paper-raised);cursor:pointer}
+.pdf-mode-options label:has(input:checked){border-color:var(--accent);background:var(--accent-soft)}
+.pdf-mode-options input{width:18px;height:18px;accent-color:var(--accent);flex:none}
+.pdf-mode-options span{display:flex;flex-direction:column;gap:4px}
+.pdf-mode-options strong{font:600 14px/1.5 Arial,Helvetica,sans-serif;color:var(--ink)}
+.pdf-mode-options small{font:12px/1.5 Arial,Helvetica,sans-serif;color:var(--muted)}
+.pdf-dialog-actions{display:flex;gap:11px;justify-content:flex-end;margin-top:20px;flex-wrap:wrap}
+.pdf-dialog-actions button{min-height:44px;padding:9px 15px;font:12px Arial,Helvetica,sans-serif}
+.pdf-cancel{border:1px solid var(--line);border-radius:3px;background:transparent}
+@media(max-width:600px){.pdf-layout-dialog{padding:18px 17px}.pdf-dialog-actions button{flex:1}}
+@media print{
+  .pdf-layout-dialog{display:none!important}
+  body[data-pdf-mode] .title-page h1[data-print-title]{font-size:0!important;line-height:1.2!important}
+  body[data-pdf-mode] .title-page h1[data-print-title]::after{
+    content:attr(data-print-title);font-size:25pt!important;line-height:1.3;display:block
+  }
+  body[data-pdf-mode="study"] .parallel-text{display:grid!important;grid-template-columns:1fr 1fr!important;gap:7mm!important}
+  body[data-pdf-mode="study"] .parallel-text.is-arabic-only{display:block!important}
+  body[data-pdf-mode="study"] .arabic-panel,
+  body[data-pdf-mode="study"] .english-panel{display:block!important}
+  body[data-pdf-mode="study"] .stage-introduction{display:block!important}
+  body[data-pdf-mode="reading"] .parallel-text,
+  body[data-pdf-mode="reference"] .parallel-text{display:block!important;max-width:none!important}
+  body[data-pdf-mode="reading"] .english-panel{display:block!important;width:100%!important;max-width:none!important}
+  body[data-pdf-mode="reading"] .arabic-panel{display:none!important}
+  body[data-pdf-mode="reading"] .parallel-text.is-arabic-only .arabic-panel{display:block!important;max-width:none!important}
+  body[data-pdf-mode="reading"] .stage-introduction{display:none!important}
+  body[data-pdf-mode="reference"] .arabic-panel{display:block!important;max-width:none!important;width:100%!important}
+  body[data-pdf-mode="reference"] .english-panel{display:none!important}
+  body[data-pdf-mode="reference"] .stage-introduction{display:block!important}
+  body[data-pdf-mode="reference"] .arabic-panel .text-body{font-size:15pt!important;line-height:1.9!important}
+  body[data-pdf-mode="reference"] .footnote-details{margin-top:2.5mm}
+  body[data-pdf-mode] .title-page{display:block!important;break-after:page!important}
+}
