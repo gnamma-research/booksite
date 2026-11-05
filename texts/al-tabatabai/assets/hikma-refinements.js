@@ -81,6 +81,12 @@
   ].join('');
   printDialog.setAttribute('aria-labelledby','pdf-dialog-title');
   document.body.appendChild(printDialog);
+  const editionLibrary = document.createElement('a');
+  editionLibrary.className = 'pdf-library-link';
+  editionLibrary.href = bookId === 'combined' ? './editions/' : '../editions/';
+  editionLibrary.textContent = 'Browse published PDF editions';
+  editionLibrary.setAttribute('aria-label', 'Browse downloadable PDF editions');
+  printDialog.querySelector('.pdf-dialog-actions').prepend(editionLibrary);
   printDialog.querySelectorAll('[data-pdf-close]').forEach(button=>button.addEventListener('click',()=>printDialog.close()));
 
   function printBookTitle(){
