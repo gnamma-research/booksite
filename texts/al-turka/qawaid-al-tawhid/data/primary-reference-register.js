@@ -71,15 +71,16 @@ window.GNAMMA_QAWAID_REFERENCES = {
     {
       "id": "q-28-30",
       "type": "quran",
-      "title": "Qurʾān 28:30 (full verse)",
+      "title": "Qurʾān 28:30 — Moses and the speaking tree",
       "source": "Qurʾān",
       "sourceUrl": "https://quran.com/28/30",
-      "arabic": "فَلَمَّا أَتَاهَا نُودِيَ مِنْ شَاطِئِ الْوَادِ الْأَيْمَنِ فِي الْبُقْعَةِ الْمُبَارَكَةِ مِنَ الشَّجَرَةِ أَنْ يَا مُوسَىٰ إِنِّي أَنَا اللَّهُ رَبُّ الْعَالَمِينَ",
-      "english": "Indeed, I am God, Lord of all worlds.",
+      "arabic": "فَلَمَّا أَتَاهَا نُودِيَ مِن شَاطِئِ الْوَادِ الْأَيْمَنِ فِي الْبُقْعَةِ الْمُبَارَكَةِ مِنَ الشَّجَرَةِ أَن يَا مُوسَىٰ إِنِّي أَنَا اللَّهُ رَبُّ الْعَالَمِينَ",
+      "english": "When he came to it, he was called from the right bank of the valley, in the blessed place, from the tree: 'O Moses, I am God, Lord of the worlds.'",
       "units": [
         "SH-029"
       ],
-      "status": "full-verse"
+      "status": "full-verse",
+      "note": "The commentary quotes the divine speech heard from the tree; the card presents the complete verse."
     },
     {
       "id": "tusi-isharat",
@@ -217,6 +218,48 @@ window.GNAMMA_QAWAID_REFERENCES = {
       ],
       "status": "unverified-attribution",
       "note": "Quoted within the commentary; it should not be presented as an authenticated prophetic ḥadīth without an independently verified chain."
+    },
+    {
+      "id": "q-6-59",
+      "type": "quran",
+      "title": "Qurʾān 6:59 — Keys of the unseen",
+      "source": "Qurʾān, al-Anʿām 6:59",
+      "sourceUrl": "https://quran.com/6/59",
+      "arabic": "وَعِندَهُ مَفَاتِحُ الْغَيْبِ لَا يَعْلَمُهَا إِلَّا هُوَ ۚ وَيَعْلَمُ مَا فِي الْبَرِّ وَالْبَحْرِ ۚ وَمَا تَسْقُطُ مِن وَرَقَةٍ إِلَّا يَعْلَمُهَا وَلَا حَبَّةٍ فِي ظُلُمَاتِ الْأَرْضِ وَلَا رَطْبٍ وَلَا يَابِسٍ إِلَّا فِي كِتَابٍ مُّبِينٍ",
+      "english": "With Him are the keys of the unseen; none knows them but Him. He knows what is on land and at sea. Not a leaf falls without His knowing it, nor a grain in the darkness of the earth, nor anything moist or dry, but it is in a clear Book.",
+      "units": [
+        "SH-028"
+      ],
+      "status": "full-verse",
+      "note": "The commentator invokes the verse concerning the keys of the unseen when discussing the first divine names; this card displays the whole verse rather than only the quoted clause."
+    },
+    {
+      "id": "q-3-117",
+      "type": "quran",
+      "title": "Qurʾān 3:117 — On self-inflicted wrong",
+      "source": "Qurʾān, Āl ʿImrān 3:117",
+      "sourceUrl": "https://quran.com/3/117",
+      "arabic": "مَثَلُ مَا يُنفِقُونَ فِي هَٰذِهِ الْحَيَاةِ الدُّنْيَا كَمَثَلِ رِيحٍ فِيهَا صِرٌّ أَصَابَتْ حَرْثَ قَوْمٍ ظَلَمُوا أَنفُسَهُمْ فَأَهْلَكَتْهُ ۚ وَمَا ظَلَمَهُمُ اللَّهُ وَلَٰكِنْ أَنفُسَهُمْ يَظْلِمُونَ",
+      "english": "The likeness of what they spend in the present life is that of a wind containing bitter cold that strikes the cultivation of a people who wronged themselves and destroys it. God did not wrong them, but they were wronging themselves.",
+      "units": [
+        "SH-INTRO-006"
+      ],
+      "status": "full-verse",
+      "note": "The author quotes the final clause while criticizing disputed philosophical arguments. The popup displays the entire Qurʾānic verse for context."
+    },
+    {
+      "id": "hadith-labid",
+      "type": "hadith",
+      "title": "Bukhārī 3841 / Muslim 2256 — A line of Labīd",
+      "source": "Ṣaḥīḥ al-Bukhārī 3841; Ṣaḥīḥ Muslim 2256, report of Abū Hurayra",
+      "sourceUrl": "https://dorar.net/h/pyB6Pa9g?osoul=1",
+      "arabic": "عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ النَّبِيُّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «أَصْدَقُ كَلِمَةٍ قَالَهَا الشَّاعِرُ كَلِمَةُ لَبِيدٍ: أَلَا كُلُّ شَيْءٍ مَا خَلَا اللَّهَ بَاطِلٌ، وَكَادَ أُمَيَّةُ بْنُ أَبِي الصَّلْتِ أَنْ يُسْلِمَ».",
+      "english": "Abū Hurayra reported that the Prophet said: 'The truest words a poet has spoken are the words of Labīd: Everything other than God is passing away. Umayya b. Abī al-Ṣalt nearly accepted Islam.'",
+      "units": [
+        "SH-031"
+      ],
+      "status": "verified-hadith-matn",
+      "note": "Ibn Turka quotes Labīd's poetic half-line in SH-031. This card provides the attested hadith praising that line, with its source. The commentator's quotation is not itself presented as a quotation of this entire hadith."
     }
   ],
   "sourcePolicy": "Each popup distinguishes verbatim quotations as reproduced in Tamhīd, indirect reports, thematic comparisons, and attributed traditions; no invented complete source quotation."
