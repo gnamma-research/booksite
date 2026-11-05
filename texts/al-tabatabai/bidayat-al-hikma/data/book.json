@@ -9,11 +9,11 @@
     "prepared": "2026-11-04",
     "numberedChaptersInOriginal": 110,
     "translationComplete": false,
-    "translatedAuthorialUnits": 34,
+    "translatedAuthorialUnits": 40,
     "guideUnits": 0,
     "method": "Original editorial guidance; no full authorial Arabic text or published English translation reproduced.",
     "arabicAuthorialChapters": 110,
-    "englishTranslatedChapters": 33,
+    "englishTranslatedChapters": 39,
     "englishTranslatedIntroductions": 1,
     "arabicSource": "Uploaded Arabic–English edition, Arabic pages manually and electronically normalized; proofreading and independent witness collation required.",
     "translationMethod": "Fresh working English from the Arabic, preserving authorial objections and answers, with editorial notes as apparatus; no publisher English reproduced.",
@@ -29,7 +29,7 @@
     "ocrGlyphRepair": "Verified recurring source-import glyph substitutions R→لمج, T→ته, 5→نه against independent Arabic witness; the one occurrence of '(5)' as a printed note marker was excluded and repaired by witness. Other OCR errors still require collation.",
     "ocrWitness": "https://lib.rafed.net/view.php?b_id=1571&type=c_fbook",
     "ocrDashRepair": "Reconstructed 108 recurring Arabic 'به' ligature losses (including بها، بهذا، بهما، إبهام) against the independent Rafed Arabic witness; punctuation dashes preserved. Other errors require edition collation.",
-    "translatedChapters": 33,
+    "translatedChapters": 39,
     "translatedSection": "Author's introduction and all 12 numbered chapters of Stage I; remaining stages Arabic-only pending fresh translation."
   },
   "sources": [
@@ -1097,8 +1097,8 @@
       "title": "Substance, accident, and the ten categories",
       "arabicTitle": "الفصل الأول تعريف الجوهر والعرض عدد المقولات",
       "arabic": "تنقسم الماهية – إنقساما أوليا – إلى جوهر وعرض ،فإنها إما أن تكون بحيث “ إذا وجدت في الخارج وجدت لا في موضوع مستغن عنها في وجوده “ ،سواء وجدت لا في موضوع أصلا كالجواهر العقلية القائمة بنفسها ،أو وجدت في موضوع لا يستغني عنها في وجوده كالصور العنصرية المنطبعة في المادة المتقومة بها ،وإما أن تكون بحيث “ إذا وجدت في الخارج وجدت في موضوع مستغن عنها “ كماهية القرب والبعد بين الأجسام وكالقيام والقعود والاستقبال والاستدبار من الانسان. ووجود القسمين في الجملة ضروري ،فمن أنكر وجود الجوهر لزمه جوهرية الأعراض ، فقال بوجوده من حيث لا يشعر. والأعراض تسعة ،هي المقولات والأجناس العالية ،ومفهوم العرض عرض عام لها ،لا جنس فوقها ،كما أن المفهوم من الماهية عرض عام لجميع المقولات العشر ،وليس بجنس لها . والمقولات التسع العرضية هي :الكم ،والكيف ،والأين ،ومتى ،والوضع ،والجدة ، والإضافة ،وأن يفعل ،وأن ينفعل .هذا ما عليه المشاؤون من عدد المقولات ،ومستندهم فيه الاستقراء. وذهب بعضهم إلى أنها أربع ،بجعل المقولات النسبية – وهي المقولات السبع الأخيرة – واحدة .وذهب شيخ الإشراق إلى أنها خمس ،وزاد على هذه الأربعة الحركة. والأبحاث في هذه المقولات وانقساماتها إلى الأنواع المندرجة تحتها طويلة الذيل جدا ، ونحن نلخص القول على ما هو المشهور من مذهب المشائين ،مع إشارات إلى غيره.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Quiddity is divided at the outset into *substance* and *accident*. A quiddity is substantial if, when existing outside the mind, it exists not in a subject that could subsist independently of it. It may exist without inhering in any subject at all, as a self-subsistent intellectual substance does; or it may exist in something that cannot itself exist without it, as a substantial elemental form exists in matter that is actualised through the form.\n\nAn accidental quiddity, by contrast, is such that, when existing outside the mind, it exists in a subject able to subsist independently of it. Examples include proximity and distance between bodies and postures such as standing, sitting, facing towards, or turning away.\n\nThe existence of both kinds is, in outline, evident. Whoever denies substance must treat accidents themselves as substances, thereby admitting under another name what was denied.\n\nThere are nine accidental categories, considered as highest genera. ‘Accident’, however, is a common predicate of them and not a superior genus encompassing them. Likewise, ‘quiddity’ is common to all ten categories but is not a genus above them.\n\nThe nine accidental categories are quantity, quality, place (*where*), time (*when*), position, possession or having, relation, acting, and being acted upon. This is the traditional Peripatetic enumeration based on induction. Some philosophers reduce the list to four by grouping the final seven relational categories together; the master of Illumination [Suhrawardī] posits five by adding motion to those four.\n\nThe detailed questions about the categories and their subordinate species are extensive. The author will outline the conventional Peripatetic position while noting alternatives.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 114,
@@ -1108,6 +1108,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 89 (PDF p. 90); chapter 6.1. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Terminology",
+          "text": "The distinction is between being-in-a-subject that is independent of the accident and matter's being constituted by a substantial form. Merely saying that a form is ‘in matter’ does not make it a categorial accident."
         }
       ]
     },
@@ -1118,8 +1122,8 @@
       "title": "Divisions of substance",
       "arabicTitle": "الفصل الثاني في أقسام الجوهر",
       "arabic": "قسموا الجوهر – تقسيما أوليا – إلى خمسة أقسام :المادة والصورة والجسم والنفس والعقل .ومستند هذا التقسيم في الحقيقة استقراء ما قام على وجوده البرهان من الجواهر . فالعقل هو “ :الجوهر المجرد عن المادة ذاتا وفعلا “ ،والنفس هي “ :الجوهر المجرد عن المادة ذاتا المتعلق بها فعلا “ ،والمادة هي “ :الجوهر الحامل للقوة “ ،والصورة الجسمية هي “ :الجوهر المفيد لفعلية المادة من حيث الامتدادات الثلاثة “ ،والجسم هو “ : الجوهر الممتد في جهاته الثلاث” . ودخول الصورة الجسمية في التقسيم دخول بالعرض ،لأن الصورة هي الفصل مأخوذا بشرط لا ،وفصول الجواهر غير مندرجة تحت مقولة الجوهر ،وإن صدق عليها الجوهر كما عرفت في بحث الماهية ،ويجري نظير الكلام في النفس",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Substances are conventionally divided into five kinds: matter, form, body, soul, and intellect. This division is based, in reality, on induction from the substantial kinds whose existence has been argued for.\n\n**Intellect** is a substance immaterial both in its essence and in its operations. **Soul** is a substance immaterial in essence but related to matter in its operations. **Matter** is the substantial bearer of potency. **Corporeal form** is the substantial principle actualising matter with respect to extension in three dimensions. **Body** is an extended substance existing in those three dimensions.\n\nThe inclusion of corporeal form under the category of substance is qualified. Form corresponds to differentia considered *with the condition of exclusion from predication* (bi-sharṭ lā); a substantial differentia is not itself contained under the category of substance in the same manner as a complete species, even when the predicate ‘substantial’ may be applied to it. A similar qualification arises concerning soul.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 116,
@@ -1133,6 +1137,10 @@
         {
           "type": "editorial synthesis of lecture notes",
           "text": "Keep the canonical five types of substance distinct: matter, form, body, soul, and intellect. The student notes contain a slip treating genus and differentia as two members of this set. (Krishnan, printed p. 91; attribution to the lecturer as mediated by the note-taker.)"
+        },
+        {
+          "type": "Translator's note",
+          "text": "The fivefold division is inductive, not an a priori proof that all substantial beings belong to one of five demonstrated species. The form/differentia qualification recalls the prior chapter on genus and differentia."
         }
       ]
     },
@@ -1143,8 +1151,8 @@
       "title": "Body",
       "arabicTitle": "الفصل الثالث في الجسم",
       "arabic": "لا ريب أن هناك أجساما مختلفة تشترك في أصل الجسمية التي هي الجوهر الممتد في الجهات الثلاث ،فالجسم بما هو جسم قابل للانقسام في جهاته المفروضة ،وله وحدة اتصالية عند الحس .فهل هو متصل واحد في الحقيقة كما هو عند الحس أو مجموعة أجزاء ذات فواصل على خلاف ما عند الحس ؟ وعلى الأول ،فهل الأقسام التي له بالقوة متناهية ،أو غير متناهية ؟ وعلى الثاني ،فهل الأقسام التي هي بالفعل – وهي التي انتهى التجزي إليها – لا تقبل الانقسام خارجا ،لكن تقبله وهما وعقلا ،لكونها أجساما صغارا ذوات حجم ،أو أنها لا تقبل الانقسام لا خارجا ولا وهما ولا عقلا ،لعدم اشتمالها على حجم ،وإنما تقبل الإشارة الحسية ،وهي متناهية أو غير متناهية ؟ ولكل من الشقوق المذكورة قائل. فالأقوال خمسة. الأول :أن الجسم متصل واحد بحسب الحقيقة ،كما هو عند الحس ،وله أجزاء بالقوة متناهية ،ونسب إلى الشهرستاني. الثاني :أنه متصل حقيقة كما هو متصل حسا ،وهو منقسم انقسامات غير متناهية – بمعنى لا يقف – ،أي إنه يقبل الانقسام الخارجي بقطع أو باختلاف عرضين ونحوه ،حتى إذا لم يعمل الآلات القطاعة في تقسيمه لصغره ،قسمه الوهم ،حتى إذا عجز عن تصوره لصغره البالغ ،حكم العقل كليا بأنه كلما قسم إلى أجزاء كان الجزء الحاصل – لكونه ذا حجم ،له طرف غير طرف – يقبل القسمة من غير وقوف ،فإن ورود القسمة لا يعدم الحجم ،ونسب إلى الحكماء. الثالث :أنه مجموعة أجزاء صغار صلبة لا تخلو من حجم ،تقبل القسمة الوهمية والعقلية ،دون الخارجية ،ونسب إلى ذي مقراطيس. الرابع :أنه مؤلف من أجزاء لا تتجزأ ،لا خارجا ولا وهما ولا عقلا ،وإنما تقبل الإشارة الحسية ،وهي متناهية ذوات فواصل في الجسم ،تمر الآلة القطاعة من مواضع الفصل ، ونسب إلى جمهور المتكلمين. الخامس :تأليف الجسم منها – كما في القول الرابع – إلا أنها غير متناهية .ويدفع القولين الرابع والخامس :أن ما ادعي من الأجزاء التي لا تتجزأ ،إن لم تكن ذوات حجم ، امتنع أن يتحقق من اجتماعها جسم ذو حجم بالضرورة ،وإن كانت ذوات حجم ،لزمها الانقسام الوهمي والعقلي بالضرورة ،وإن فرض عدم انقسامها الخارجي لنهاية صغرها.\n\nعلى أنها لو كانت غير متناهية كان الجسم المتكون من اجتماعها غير متناهي الحجم بالضرورة .وقد أقيمت على بطلان الجزء الذي لا يتجزأ وجوه من البراهين مذكورة في المطولات. ويدفع القول الثاني وهن الوجوه التي أقيمت على كون الجسم البسيط ذا اتصال واحد جوهري من غير فواصل كما هو عند الحس ،وقد تسلم علماء الطبيعة أخيرا بعد تجربات علمية ممتدة أن الأجسام مؤلفة من أجزاء صغار ذرية مؤلفة من أجزاء أخرى ،لا تخلو من نواة مركزية ذات جرم ،وليكن أصلا موضوعا لنا. ويدفع القول الأول :أنه يرد عليه ما يرد على القول الثاني والرابع والخامس ،لجمعه بين القول باتصال الجسم بالفعل ،وبين انقسامه بالقوة إلى أجزاء متناهية تقف القسمة دونها على الإطلاق. فالجسم الذي هو جوهر ذو اتصال يمكن أن يفرض فيه الامتدادات الثلاثة ،ثابت لا ريب فيه ،لكن مصداقه الأجزاء الأولية التي يحدث فيها الامتداد الجرمي وإليها تتجزأ الأجسام النوعية ،دون غيرها على ما تقدمت الإشارة إليه ،وهو قول ذي مقراطيس مع إصلاح ما.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Bodies plainly differ from one another while sharing *corporeality*, the character of a substance extended in three dimensions. A body as body is divisible in its possible dimensions and appears to sense as a connected unity.\n\nBut is it truly one continuum as sensation presents it, or a collection of parts separated by intervals? If it is continuous, are its potential divisions finite or without limit? If it consists of parts actually distinct, do the smallest parts resist external division while remaining divisible in imagination and thought because they retain magnitude? Or are they indivisible even in imagination and intellect, having no magnitude and admitting only sensible indication, with their number either finite or infinite? There are defenders of each option, yielding five principal positions.\n\n**First**, a body is truly continuous as it appears to sense and admits only finitely many potential divisions. This position is attributed to al-Shahrastānī.\n\n**Second**, a body is truly continuous and admits division without any final limit. It can be physically divided by cutting or by differences of accidents; when physical instruments can no longer cut, imaginative division remains; and when imagination can no longer picture the exceedingly small parts, intellect judges that anything with magnitude still has one extremity distinct from another and therefore remains divisible. Division does not destroy magnitude. This is attributed to the philosophers.\n\n**Third**, a body consists of extremely small, hard particles possessing magnitude that cannot be divided physically but can still be divided imaginatively and intellectually. This is attributed to Democritus.\n\n**Fourth**, a body is composed of indivisible parts without magnitude, not divisible externally, imaginatively, or intellectually, and separated by intervals through which a cutting instrument can pass. The number of such parts is finite. This is attributed to most of the theologians.\n\n**Fifth**, the fourth account is retained except that the indivisible parts are held to be infinite in number.\n\nThe author rejects the fourth and fifth views. If the alleged indivisibles lack all magnitude, combining them cannot produce an extended body. If they possess magnitude, they are necessarily divisible at least in imagination and intellect, even if no physical division is possible. He adds that if the parts of the body were infinite in the proposed way, its magnitude would be infinite. Extended demonstrations against the indivisible atom are found elsewhere.\n\nAgainst the second account he argues that the proofs for a body's being one substantial continuum without real intervals, as it seems to sense, are weak. He appeals to developments in natural science, taken as an assumption for his philosophical analysis: bodies are composed of atomic particles, themselves constituted of smaller parts with central nuclei possessing magnitude.\n\nThe first view also fails in his judgment, because it combines complete actual continuity with a finite potential divisibility terminating absolutely.\n\nThe result is that extended corporeal substance is real, but its primary instances are taken to be the first physical parts in which corporeal extension actually occurs and into which more complex bodies are divided. The author describes this as Democritus's position with a qualification.\n\nThe physical premises invoked here reflect the author's scientific setting. The conceptual dispute concerns continuity, magnitude, and divisibility; the particular physical theory cited is not presented here as a result independently established by metaphysics.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 118,
@@ -1154,6 +1162,14 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 92 (PDF p. 93); chapter 6.3. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Historical and scientific note",
+          "text": "The account of atoms, nuclei, and ‘primary extended parts’ represents the author's twentieth-century natural-philosophical assumption. Modern physical theories do not straightforwardly vindicate any single historical theory of ultimate indivisible particles."
+        },
+        {
+          "type": "Translator's note",
+          "text": "‘Divisible in intellect’ differs from actually divisible by cutting. The arguments against a magnitude-less part are metaphysical, but the move from those arguments to a particular microphysical model requires an empirical premise."
         }
       ]
     },
@@ -1164,8 +1180,8 @@
       "title": "Prime matter and corporeal form",
       "arabicTitle": "الفصل الرابع في إثبات المادة الأولى والصورة الجسمية",
       "arabic": "إن الجسم من حيث هو جسم – ونعني به ما يحدث فيه الامتداد الجرمي أولا وبالذات – أمر “ بالفعل “ ،ومن حيث ما يمكن أن يلحق به شئ من الصور النوعية ولواحقها أمر “ بالقوة “ ،وحيثية الفعل غير حيثية القوة ،لأن الفعل متقوم بالوجدان ،والقوة متقومة بالفقدان .ففيه جوهر هو قوة الصور الجسمانية ،بحيث إنه ليس له من الفعلية إلا فعلية أنه قوة محضة ،وهذا نحو وجودها ،والجسمية التي بها الفعلية صورة مقومة لها ،فتبين أن الجسم مؤلف من مادة وصورة جسمية ،والمجموع المركب منهما هو الجسم .تتمة :فهذه هي المادة الشائعة في الموجودات الجسمانية جميعا ،وتسمى “ :المادة الأولى “ و “ الهيولى الأولى “ .ثم هي مع الصورة الجسمية مادة قابلة للصور النوعية اللاحقة ،وتسمى “ :المادة الثانية ”",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Body considered simply as body—that in which corporeal extension first arises in its own right—is actual. Yet insofar as specific substantial forms and their concomitant determinations can come to it, it is potential. The respect of actuality differs from the respect of potentiality: actuality is constituted by possession, while potentiality is constituted by lack or receptivity.\n\nThere is, consequently, in a body a substantial principle that is potential with respect to corporeal forms. It possesses no actuality except the actuality proper to being sheer potency: this is its particular mode of existence.\n\nThe corporeality through which it has actuality is a substantial form constituting it. A body therefore consists of *matter* and *corporeal form*, and the composite of the two is the body.\n\nThis matter, common to corporeal existents as such, is called *prime matter* (al-mādda al-ūlā), or first hylē (*al-hayūlā al-ūlā*). Prime matter together with corporeal form is itself matter capable of receiving further specific substantial forms, and is then called *secondary matter*.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 122,
@@ -1179,6 +1195,10 @@
         {
           "type": "editorial synthesis of lecture notes",
           "text": "Distinguish corporeal form from a specific substantial form and prime matter from an already determinate physical substratum. (Krishnan, printed p. 95; attribution to the lecturer as mediated by the note-taker.)"
+        },
+        {
+          "type": "Terminology",
+          "text": "Prime matter is pure potency in the explanatory analysis and not a free-standing material particle. Corporeal form actualises the dimensions of the material composite; secondary matter is the already corporeal subject receptive to further specific form."
         }
       ]
     },
@@ -1189,8 +1209,8 @@
       "title": "Specific substantial forms",
       "arabicTitle": "الفصل الخامس في إثبات الصور النوعية",
       "arabic": "الأجسام الموجودة في الخارج تختلف اختلافا بينا من حيث الأفعال والآثار ،وهذه الأفعال لها مبدأ جوهري لا محالة ،وليس هو المادة الأولى ،لأن شأنها القبول والانفعال دون الفعل ،ولا الجسمية المشتركة ،لأنها واحدة مشتركة وهذه الأفعال كثيرة مختلفة ،فلها مباد مختلفة ،ولو كانت هذه المبادئ أعراضا مختلفة وجب انتهاؤها إلى جواهر مختلفة ،وليست هي الجسمية ،لما سمعت من اشتراكها بين الجميع ،فهي جواهر منوعة تتنوع بها الأجسام ، تسمى “ :الصور النوعية” . تتمة: أول ما تتنوع الجواهر المادية – بعد الجسمية المشتركة – إنما هو بالصور النوعية التي تتكون بها العناصر ،ثم العناصر مواد لصور أخرى تلحق بها ،وكان القدماء من علماء الطبيعة يعدون العناصر أربعا ،وأخذ الإلهيون ذلك أصلا موضوعا ،وقد أنهاها الباحثون أخيرا إلى ما يقرب من مائة وبضع عنصر.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Bodies found in external reality differ manifestly in their actions and effects. These actions must have substantial principles. Such a principle cannot be prime matter, whose role is receptivity and undergoing rather than acting. Nor can it be corporeality shared by every body, because corporeality is one common feature, while the effects are diverse.\n\nThe different actions therefore require different principles. If these were only distinct accidents, those accidents would ultimately have to depend upon correspondingly distinct substantial realities. The distinct principles cannot simply be corporeality itself, since this is common to all bodies. They are substantial principles through which bodies are constituted as different kinds, called *specific substantial forms* (al-ṣuwar al-nawʿiyya).\n\nAt the first level, material substances are differentiated beyond their common corporeality by the forms constituting the elements. The elements in turn provide matter for other forms that come to them.\n\nEarlier natural philosophers counted four elements, and metaphysicians adopted that count as a premise supplied by natural philosophy. Investigators in the author's own time, by contrast, identified approximately a hundred or somewhat more chemical elements. The author records this change in the empirical basis of the traditional account.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 124,
@@ -1200,6 +1220,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 96 (PDF p. 97); chapter 6.5. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Historical note",
+          "text": "The comparison between four ancient elements and roughly a hundred modern elements belongs to the historical physical context of the text. It does not equate modern chemical elements with the metaphysical principle of prime matter."
         }
       ]
     },
@@ -1210,8 +1234,8 @@
       "title": "The inseparability of matter and form",
       "arabicTitle": "الفصل السادس في تلازم المادة والصورة",
       "arabic": "المادة الأولى والصورة متلازمتان ،لا تنفك إحداهما عن الأخرى. أما أن المادة لا تتعرى عن الصورة ،فلأن المادة الأولى حقيقتها أنها بالقوة من جميع الجهات ،فلا توجد إلا متقومة بفعلية جوهرية متحدة بها ،إذ لا تحقق لموجود إلا بفعلية ، والجوهر الفعلي الذي هذا شأنه هو الصورة ،فإذن المطلوب ثابت. وأما أن الصورة التي من شأنها أن تقارن المادة لا تتجرد عنها ،فلأن شيئا من الأنواع التي ينالها الحس والتجربة لا يخلو من قوة التغير وإمكان الانفعال ،وهذا أصل موضوع مأخوذ من العلوم الطبيعية ،وما فيه القوة والإمكان لا يخلو من مادة ،فإذن المطلوب ثابت.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Prime matter and form necessarily accompany one another; neither is found apart from the other.\n\nPrime matter cannot be stripped of all form, because its nature is to be potential in every respect. It cannot exist except by being constituted through a substantial actuality united with it. Nothing exists without actuality, and the actual substantial principle that fulfils this role is form. Prime matter therefore cannot exist independently of form.\n\nConversely, a form of the kind naturally associated with matter cannot be separated from matter. For none of the kinds encountered by sensation and experiment lacks potentiality for change and the possibility of being acted upon. This is taken as a premise from natural science. Whatever has potency and such possibility does not exist without matter.\n\nHence material form cannot exist in abstraction from matter in the sense relevant to the form of a material natural kind.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 126,
@@ -1221,6 +1245,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 96 (PDF p. 97); chapter 6.6. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The second part concerns forms whose proper nature is to accompany matter. It does not by itself exclude the separately subsisting intellect or rational soul discussed elsewhere."
         }
       ]
     },
