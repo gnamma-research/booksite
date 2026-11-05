@@ -1,0 +1,86 @@
+name: Qawaid verified PDF release v2
+on:
+  push:
+    branches: [master]
+    paths: ['.github/workflows/qawaid-pdf-release-v2.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: gnamma-qawaid-pdf-v2
+  cancel-in-progress: false
+jobs:
+  pdfs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 24
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1}
+      - name: Install rendering dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core libpango-1.0-0 libpangocairo-1.0-0 poppler-utils
+          python -m pip install --quiet weasyprint pypdf
+      - name: Build the five editions with passage-linked indexes
+        run: python texts/al-turka/qawaid-al-tawhid/pdf/build_editions.py
+      - name: Verify pages, source layers and intra-PDF links
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json, hashlib
+          from pypdf import PdfReader
+          base=Path('texts/al-turka/qawaid-al-tawhid/pdf')
+          records=json.loads((base/'manifest.json').read_text())['files']
+          assert len(records)==5
+          for x in records:
+            p=base/x['filename'];r=PdfReader(str(p))
+            assert p.stat().st_size>45000
+            assert len(r.pages)==x['pages'] and x['pages']>90
+            assert hashlib.sha256(p.read_bytes()).hexdigest()==x['sha256']
+            first=''.join((r.pages[i].extract_text() or '') for i in range(min(4,len(r.pages))))
+            assert 'Qawāʿid' in first and 'Tamhīd' in first
+            print(x['title'],x['pages'],'pages,',p.stat().st_size,'bytes')
+          for n in ['qawaid-bilingual-study.pdf','qawaid-bilingual-reference.pdf']:
+            r=PdfReader(str(base/n))
+            ending=''.join((p.extract_text() or '') for p in r.pages[-20:])
+            assert 'Subject index' in ending or 'Cited sources' in ending
+            ann=sum(len(p.get('/Annots',[])) for p in r.pages)
+            assert ann>20,(n,ann)
+            print(n,ann,'PDF link annotations')
+          PY
+      - name: Render selected reading and reference pages for review
+        run: |
+          mkdir -p /tmp/qawaid-pdf-qa
+          pdftoppm -f 3 -l 3 -scale-to 1100 -png -singlefile texts/al-turka/qawaid-al-tawhid/pdf/qawaid-bilingual-reading.pdf /tmp/qawaid-pdf-qa/reading-p3 >/dev/null 2>&1
+          pdftoppm -f 1 -l 1 -scale-to 1100 -png -singlefile texts/al-turka/qawaid-al-tawhid/pdf/qawaid-bilingual-reference.pdf /tmp/qawaid-pdf-qa/reference-cover >/dev/null 2>&1
+          cp texts/al-turka/qawaid-al-tawhid/pdf/manifest.json /tmp/qawaid-pdf-qa/
+      - name: Preserve finished files outside the git checkout before rebasing
+        run: |
+          mkdir -p /tmp/qawaid-pdf-verified
+          cp texts/al-turka/qawaid-al-tawhid/pdf/*.pdf /tmp/qawaid-pdf-verified/
+          cp texts/al-turka/qawaid-al-tawhid/pdf/manifest.json /tmp/qawaid-pdf-verified/
+      - name: Publish on current master with retries (avoid binary rebase conflicts)
+        run: |
+          git config user.name 'gnamma-research'
+          git config user.email '13307564+gnamma-research@users.noreply.github.com'
+          for attempt in 1 2 3 4 5 6 7 8; do
+            echo "Publishing attempt $attempt"
+            git fetch origin master
+            git reset --hard origin/master
+            mkdir -p texts/al-turka/qawaid-al-tawhid/pdf
+            cp /tmp/qawaid-pdf-verified/*.pdf texts/al-turka/qawaid-al-tawhid/pdf/
+            cp /tmp/qawaid-pdf-verified/manifest.json texts/al-turka/qawaid-al-tawhid/pdf/
+            git add texts/al-turka/qawaid-al-tawhid/pdf/*.pdf texts/al-turka/qawaid-al-tawhid/pdf/manifest.json
+            if git diff --cached --quiet; then echo "PDFs already current";exit 0;fi
+            git commit -m 'Publish verified Qawaid Reading Study Reference PDFs with linked indexes'
+            if git push origin HEAD:master;then exit 0;fi
+            sleep 2
+          done
+          echo 'Unable to publish after concurrent updates' >&2
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawaid-pdf-v2-audit
+          path: /tmp/qawaid-pdf-qa/
+          retention-days: 7
