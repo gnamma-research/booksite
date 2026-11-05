@@ -9,8 +9,8 @@
       "group": "reading",
       "language": "both",
       "pages": 299,
-      "size_bytes": 919695,
-      "sha256": "4cb35324475d076f3a249e30c5b69ee42fafaa0682572b4e5c8a10b180c9a36a",
+      "size_bytes": 919698,
+      "sha256": "6a14dd24260b6a7e223527c7df3836c848786b0d8f6084921a4a812031256fd2",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -25,7 +25,7 @@
       "language": "english",
       "pages": 138,
       "size_bytes": 432731,
-      "sha256": "7453352163a0393c0f4ce850f5bd89ab677a13c96a657d4260ded0948d461a9c",
+      "sha256": "e838b30303c42bc54df201d17345f0c6cc8396f4657d76747e0f624a21ead2c2",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -39,8 +39,8 @@
       "group": "reading",
       "language": "arabic",
       "pages": 173,
-      "size_bytes": 521662,
-      "sha256": "490c5552bc80d434b1cba2c8aa1aed41ef605e34e0ff057e3459158ed389c789",
+      "size_bytes": 521657,
+      "sha256": "89b1207ae12892c8b22ff79a4aa6599276e302c476c01a17e84a8053d9784e5b",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -54,8 +54,8 @@
       "group": "study",
       "language": "both",
       "pages": 322,
-      "size_bytes": 1019571,
-      "sha256": "94e5a4fcfcbdb920945c341f41dcd512c877d01e38a79271eabc19a8f0485a88",
+      "size_bytes": 1019575,
+      "sha256": "6a562a89830df430250b6a7fc4f4b92ff3b8a183dd269e1cf97d2d2fbf7293c5",
       "description": "With selected notes and subject guide",
       "content": {
         "matn": 61,
@@ -69,8 +69,8 @@
       "group": "reference",
       "language": "both",
       "pages": 359,
-      "size_bytes": 1172427,
-      "sha256": "18a1083097f76cc105dea5415d2b657e7b7d7ee2fb4f05d745df0d7f6c0ff41b",
+      "size_bytes": 1172425,
+      "sha256": "49cfc6046ce8ad0b7b24b38a4bbdeda34dcba051b2845fb1f451035f239ec372",
       "description": "Complete source notes, glossary, index and references",
       "content": {
         "matn": 61,
