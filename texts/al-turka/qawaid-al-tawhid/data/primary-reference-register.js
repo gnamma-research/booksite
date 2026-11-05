@@ -84,17 +84,20 @@ window.GNAMMA_QAWAID_REFERENCES = {
     {
       "id": "tusi-isharat",
       "type": "primary-quotation",
-      "title": "Naṣīr al-Dīn al-Ṭūsī, Sharḥ al-Ishārāt",
-      "source": "Commentary on Ibn Sīnā’s al-Ishārāt wa-l-Tanbīhāt",
-      "sourceUrl": "https://ablibrary.net/book_content/b/17638/279?lang=ar",
-      "quoteFrom": "SH-015",
-      "quoteIndex": 0,
-      "english": "A form of graded predication of this kind is conceivable for a reality in a fixed subject whose successive states change their specific character; what obtains at an instant is then intermediate in the respect of the gradation between states at two surrounding instants.",
+      "title": "Naṣīr al-Dīn al-Ṭūsī · Sharḥ al-Ishārāt III, 33",
+      "source": "Commentary on Ibn Sīnā's al-Ishārāt wa-l-Tanbīhāt, vol. 3, printed p. 33",
+      "sourceUrl": "https://ablibrary.net/book_content/b/15219/39?lang=ar",
+      "english": "The source of this error is ignorance of predication by gradation. Such a predicate applies to distinct things neither merely through homonymy nor entirely in an equal way, but with one meaning through an ordered difference: precedence and posteriority (as continuous applies to magnitude and to a body possessing magnitude); greater or lesser priority (as one applies to what is indivisible absolutely and to what is indivisible in a particular respect); or intensity and weakness (as white applies to snow and ivory). Existence encompasses these modes: it applies to cause and effect through priority and posteriority, and to substance and accident...",
       "units": [
-        "SH-015"
+        "SH-015",
+        "SH-020",
+        "SH-023",
+        "SH-030"
       ],
-      "status": "full-quotation-as-reproduced-in-Tamhid",
-      "note": "This is al-Ṭūsī’s quoted passage as transmitted in Tamhīd, not a claim to reproduce the whole section of Sharḥ al-Ishārāt. Compare the primary edition before attributing nearby commentary to Ibn Sīnā."
+      "status": "verified-primary-quoted-excerpt",
+      "note": "Quoted from the independently located Arabic text of Sharḥ al-Ishārāt, vol. 3 p.33; compare SH-015, which reports an argument about gradation. The ellipsis marks the source passage's continuation, not an invented full quotation. A copy of the wording is also discussed in later Tajrīd commentary literature.",
+      "arabic": "ومنشأ هذا الغلط هو الجهل بمعنى الوقوع بالتشكيك، فإن الوقوع بالتشكيك على أشياء مختلفة إنما يقع عليها لا بالاشتراك اللفظي، بل بمعنى واحد في الجميع ولكن لا على السواء، بل على الاختلاف: إما بالتقدم والتأخر، وقوع المتصل على المقدار وعلى الجسم ذي المقدار؛ وإما بالأولوية وعدمها، وقوع الواحد على ما لا ينقسم أصلا وعلى ما ينقسم بوجه آخر غير الذي هو به واحد؛ وإما بالشدة والضعف، وقوع الأبيض على الثلج والعاج. والوجود جامع لجميع هذه الاختلافات، فإنه يقع على العلة ومعلولها بالتقدم والتأخر، وعلى الجوهر والعرض...",
+      "quoteScope": "The paragraph directly discussing tashkīk; continuation truncated at printed page boundary, not the entire chapter."
     },
     {
       "id": "ibn-arabi-dawair",
@@ -129,31 +132,39 @@ window.GNAMMA_QAWAID_REFERENCES = {
     {
       "id": "avicenna-shifa",
       "type": "primary-quotation",
-      "title": "Ibn Sīnā, al-Shifāʾ, Ilāhiyyāt I.2",
-      "source": "The Healing, Metaphysics I.2, on the subject of first philosophy",
-      "sourceUrl": "https://ablibrary.net/book_content/b/14534/55?lang=ar",
+      "title": "Ibn Sīnā · al-Shifāʾ, Ilāhiyyāt I.2",
+      "source": "Ibn Sīnā, Metaphysics of the Healing, book I, chapter 2, printed p. 53 (Najaf edition)",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الشفاء-الإلهيات-2/v/1/p/53",
       "units": [
-        "SH-INTRO-011"
+        "SH-INTRO-011",
+        "SH-INTRO-012",
+        "SH-INTRO-013",
+        "SH-015"
       ],
-      "status": "verified-direct-sentence",
-      "arabic": "فالموضوع الأول لهذا العلم هو الموجود بما هو موجود، ومطالبة الأمور التي تلحقه بما هو موجود من غير شرط.",
-      "english": "The first subject of this science is existent insofar as it is existent; its questions concern what belongs to it as existent, without further qualification.",
-      "note": "This is one complete sentence directly verified in a digital edition of Ibn Sīnā’s Ilāhiyyāt I.2. It is not the entire chapter. Ibn Turka’s presentation in SH-INTRO-011 is his own characterization of the Avicennian position, not a verbatim citation of this sentence."
+      "status": "verified-primary-quoted-excerpt",
+      "arabic": "فظاهر لك من هذه الجملة أن الموجود بما هو موجود أمر مشترك لجميع هذه، وأنه يجب أن يجعل الموضوع لهذه الصناعة لما قلنا. ولأنه غني عن تعلم ماهيته وعن إثباته حتى يحتاج إلى أن يتكفل علم غير هذا العلم بإيضاح الحال فيه، لاستحالة أن يكون إثبات الموضوع وتحقيق ماهيته في العلم الذي هو موضوعه، بل تسليم إنيته وماهيته فقط. فالموضوع الأول لهذا العلم هو الموجود بما هو موجود، ومطالبه الأمور التي تلحقه بما هو موجود من غير شرط.",
+      "english": "It is clear from this that the existent insofar as it is existent is common to all these, and that, for the reasons stated, it must be made the subject of this science. It does not need its quiddity to be learned or its existence established by some other science; a discipline cannot itself establish its subject. The first subject of this science is therefore the existent as existent, and its questions concern the things that belong to it as existent without further restriction.",
+      "note": "Direct passage from Ibn Sīnā’s Arabic edition, independent of Ibn Turka’s report in SH-INTRO-011. The two authors' readings of the shared subject are not assumed identical.",
+      "quoteScope": "Continuous excerpt from Ilāhiyyāt I.2, not the entire chapter."
     },
     {
       "id": "tusid-tajrid",
       "type": "cross-reference",
-      "title": "Naṣīr al-Dīn al-Ṭūsī, Tajrīd al-Iʿtiqād",
-      "source": "Tajrīd and commentary tradition",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/research/tajrid/",
+      "title": "Ṭūsī’s Tajrīd · al-Ḥillī’s Kashf al-Murād on existence",
+      "source": "Al-ʿAllāma al-Ḥillī, Kashf al-Murād fī Sharḥ Tajrīd al-Iʿtiqād, discussion of predication by tashkīk",
+      "sourceUrl": "https://usul.ai/ar/t/kashf-al-murad-fi-sharh-tajrid-al-itiqad/54",
       "units": [
-        "SH-007",
-        "SH-038",
-        "SH-058"
+        "SH-015",
+        "SH-020",
+        "SH-023",
+        "SH-025"
       ],
-      "status": "conceptual-cross-reference",
-      "english": "Related issues: possibility and necessity, relations, individuation, knowledge, and the status of existentness.",
-      "note": "A thematic cross-reference, not an identified verbatim quotation. The pop-up does not invent an Arabic text of the Tajrīd."
+      "status": "verified-commentary-quoted-excerpt",
+      "english": "The answer is that existence is not a specific nature, as we have established. Rather, it is predicated by gradation. What is predicated by gradation does not require the same things in each of its instances. One instance of light may enable a weak-sighted person to see, unlike other instances of light. Likewise innate heat is connected with the capacity for life unlike other kinds of heat. The same holds for existence.",
+      "note": "The source distinguishes al-Ḥillī’s explanatory commentary from Ṭūsī’s underlying Tajrīd. This is a direct quotation of the former, not the latter. For the Gnamma Tajrīd reader, open the linked work.",
+      "arabic": "وتقرير الجواب أن الوجود ليس طبيعة نوعية على ما حققناه، بل هو مقول بالتشكيك على ما تقدم، والمقول على أشياء بالتشكيك لا يتساوى اقتضاؤه، فإن النور يقتضي بعض جزئياته إبصار الأعشى بخلاف سائر الأنوار، والحرارة كذلك، فإن الحرارة الغريزية تقتضي استعداد الحياة بخلاف سائر الحرارات، فكذلك الوجود.",
+      "quoteScope": "Al-Ḥillī’s explanatory paragraph on the Tajrīd, not a verbatim quotation of Ṭūsī’s matn.",
+      "relatedReaderUrl": "https://gnamma-research.github.io/booksite/research/tajrid/"
     },
     {
       "id": "ibn-turka-rashidiyya",
