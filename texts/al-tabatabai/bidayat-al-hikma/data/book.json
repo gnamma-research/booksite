@@ -3,34 +3,34 @@
   "title": "Bidāyat al-Ḥikma",
   "arabicTitle": "بداية الحكمة",
   "author": "Sayyid Muḥammad Ḥusayn al-Ṭabāṭabāʾī",
-  "description": "Bidāyat al-Ḥikma",
-  "status": "working-translation",
+  "description": "The complete authorial Arabic sequence of Bidāyat al-Ḥikma, with a fresh working English rendering of the introduction and all 110 chapters; scholarly Arabic collation and independent translation review remain open.",
+  "status": "complete-working-translation-unreviewed",
   "editorialStatus": {
     "prepared": "2026-11-04",
     "numberedChaptersInOriginal": 110,
-    "translationComplete": false,
-    "translatedAuthorialUnits": 105,
+    "translationComplete": true,
+    "translatedAuthorialUnits": 111,
     "guideUnits": 0,
     "method": "Original editorial guidance; no full authorial Arabic text or published English translation reproduced.",
     "arabicAuthorialChapters": 110,
-    "englishTranslatedChapters": 104,
+    "englishTranslatedChapters": 110,
     "englishTranslatedIntroductions": 1,
     "arabicSource": "Uploaded Arabic–English edition, Arabic pages manually and electronically normalized; proofreading and independent witness collation required.",
-    "translationMethod": "Fresh working English from the Arabic, preserving authorial objections and answers, with editorial notes as apparatus; no publisher English reproduced.",
+    "translationMethod": "Original AI-assisted working English of every authorial chapter from the imported Arabic, with authorial argumentative order retained. The publisher's separate English translation is not reproduced. No independent specialist certification or exhaustive manuscript collation is claimed.",
     "collation": "Chapter boundaries and titles located against the supplied edition, Arabic text normalized from source pages; character-level proofing pending.",
     "lectureNoteAttribution": "Student notes recorded by Aanand Krishnan based on lectures by Shaykh Mohammad Ali Shomali; not a verified transcript.",
     "lectureNoteMappedChapters": 109,
     "lectureNoteEditorialSynthesis": 21,
     "lectureNoteApparatus": "../lecture-apparatus.html",
     "visibleEditorialGuides": 0,
-    "readingPresentation": "Primary Arabic and new English only. Explanatory material appears as footnotes, not as guide chapters.",
+    "readingPresentation": "All authorial Arabic and English working translations in a minimal bilingual reader. Editorial and textual explanations are in passage footnotes; prior lecture-note references are separate apparatus, not inserted into the author's prose.",
     "chapterTitleBasis": "Authorial Arabic chapter headings checked against the publicly accessible Rafed Arabic table of contents; English chapter captions are new translations, not published-English reproductions.",
     "chapterTitleSource": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook",
     "ocrGlyphRepair": "Verified recurring source-import glyph substitutions R→لمج, T→ته, 5→نه against independent Arabic witness; the one occurrence of '(5)' as a printed note marker was excluded and repaired by witness. Other OCR errors still require collation.",
     "ocrWitness": "https://lib.rafed.net/view.php?b_id=1571&type=c_fbook",
     "ocrDashRepair": "Reconstructed 108 recurring Arabic 'به' ligature losses (including بها، بهذا، بهما، إبهام) against the independent Rafed Arabic witness; punctuation dashes preserved. Other errors require edition collation.",
-    "translatedChapters": 104,
-    "translatedSection": "Author's introduction and all 12 numbered chapters of Stage I; remaining stages Arabic-only pending fresh translation."
+    "translatedChapters": 110,
+    "translatedSection": "Author's introduction and all 110 numbered chapters in all 12 stages; complete original working English coverage, pending detailed source collation and specialist review."
   },
   "sources": [
     {
@@ -2964,8 +2964,8 @@
       "title": "Divine action and its divisions",
       "arabicTitle": "الفصل التاسع في فعله تعالى وانقساماته",
       "arabic": "لفعله تعالى بمعنى المفعول و هو الوجود الفائض منه انقسامات بحسب ما تحصل من الأبحاث السابقة كانقسامه إلى مجرد و مادي و انقسامه إلى ثابت و سيال و إلى غير ذلك و المراد في هذا الفصل الإشارة إلى ما تقدم سابقا أن العوالم الكلية ثلاثة عالم العقل و عالم المثال و عالم المادة. فعالم العقل مجرد عن المادة و آثارها. و عالم المثال مجرد عن المادة دون آثارها من الأبعاد و الأشكال و الأوضاع و غيرها ففيه أشباح جسمانية متمثلة في صفة الأجسام التي في عالم المادة على نظام يشبه نظامها في عالم المادة غير أن تعقب بعضها لبعض بالترتب الوجودي بينها لا بتغير صورة إلى صورة أو حال إلى حال بالخروج من القوة إلى الفعل من طريق الحركة على ما هو الشأن في عالم المادة فحال الصور المثالية في ترتب بعضها على بعض حال الصور الخيالية من الحركة و التغير و العلم مجرد لا قوة فيه و لا تغير فهو علم بالتغير لا تغير في العلم و عالم المادة بجواهرها و أعراضها مقارن للمادة. و العوالم الثلاثة مترتبة وجودا فعالم العقل قبل عالم المثال و عالم المثال قبل عالم المادة وجودا و ذلك لأن الفعلية المحضة التي لا تشوبها قوة أقوى و أشد وجودا مما هو بالقوة محضا أو تشوبه قوة فالمفارق قبل المقارن للمادة ثم العقل المفارق أقل حدودا و قيودا و أوسع و أبسط وجودا من المثال المجرد و كلما كان الوجود أقوى و أوسع كانت مرتبته في السلسلة المترتبة من حقيقة الوجود المشككة أقدم و من المبدإ الأول الذي هو وجود صرف ليس له حد يحده و لا كمال يفقده أقرب فعالم العقل أقدم وجودا من الجميع و يليه عالم المثال و يليه عالم المادة. و يتبين بما ذكر :أن الترتيب المذكور ترتيب في العلية أي إن عالم العقل علة مفيضة لعالم المثال و عالم المثال علة مفيضة لعالم المادة. و يتبين أيضا بمعونة ما تقدم من أن العلة مشتملة على كمال المعلول بنحو أعلى و أشرف أن العوالم الثلاثة متطابقة متوافقة ففي عالم المثال نظام مثالي يضاهي النظام المادي و هو أشرف منه و في عالم العقل ما يطابقه لكنه موجود بنحو أبسط و أجمل و يطابقه النظام الربوبي الموجود في علم الواجب تعالى.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Divine action, taken to mean the *produced effect*—the existence that proceeds from God—admits the divisions established earlier: immaterial and material, fixed and flowing, and others. The present chapter recalls the three universal worlds: the world of intellect, the imaginal world, and the material world.\n\nThe **intellectual world** is free both from matter and from the effects or characteristics of matter.\n\nThe **imaginal world** is separate from matter but not from its characteristics, including dimensions, figures, and positions. It contains corporeal likenesses represented under forms resembling bodies in the material world, with an order corresponding to the order of material forms. Yet the succession of imaginal forms is an order of existence, not a passage of one material form into another through the actualisation of potency, as occurs in material motion. The succession of imaginal forms resembles the ordered forms of imagination representing movement and change: the cognitive form is immaterial, without potency or alteration in itself. It is *knowledge of change*, not a changing act of knowledge under the same respect.\n\nThe **material world** comprises material substances and the accidents accompanying them.\n\nThese three worlds are ordered in existence. The intellectual world is prior to the imaginal, and the imaginal prior to the material. Pure actuality, unmixed with potency, is more intense in existence than what is potential or mixed with potency, so the separate existent precedes what is conjoined with matter.\n\nMoreover, the separate intellect is less bounded and restricted, more extensive and simpler in being, than the imaginal existent. The stronger and more expansive a degree of existence, the higher its place in the graded order and the closer it is to the First Principle, pure existence without limitation or deficient perfection. Thus intellect has the highest existential rank of the three, followed by the imaginal and then the material.\n\nThis order is also an order of **causality**: the intellectual world is a cause bestowing existence upon the imaginal, and the imaginal upon the material.\n\nSince a cause contains the effect's perfection in a higher and more excellent mode, the worlds correspond to one another. The imaginal world has an order resembling that of the material world but more perfect than it. The intellectual world contains a corresponding order in a simpler, more comprehensive mode. Both correspond ultimately to the providential order present in the Necessary Existent's knowledge.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 311,
@@ -2975,6 +2975,14 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 252 (PDF p. 253); chapter 12.9. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Terminological note",
+          "text": "The order of intellect, imaginal existence, and matter is ontological and causal here; ‘prior’ must not be read simply as earlier in physical time."
+        },
+        {
+          "type": "Philosophical note",
+          "text": "Imaginal representation of change and material change differ in the actual succession of their forms. The author is not denying that material time has genuine motion."
         }
       ]
     },
@@ -2985,8 +2993,8 @@
       "title": "Separate intellect and the problem of multiplicity",
       "arabicTitle": "الفصل العاشر في العقل المفارق وكيفية حصول الكثرة فيه لو كانت فيه كثرة",
       "arabic": "و ليعلم :أن الماهية لا تتكثر تكثرا إفراديا إلا بمقارنة المادة و البرهان عليه إن الكثرة العددية إما أن تكون تمام ذات الماهية أو بعض ذاتها أو خارجة من ذاتها إما لازمة أو مفارقة و الأقسام الثلاثة الأول يستحيل أن يوجد لها فرد إذ كلما وجد لها فرد كان كثيرا و كل كثير مؤلف من آحاد و الواحد منها يجب أن يكون كثيرا لكونه مصداقا للماهية و هذا الكثير أيضا مؤلف من آحاد فيتسلسل و لا ينتهي إلى واحد فلا يتحقق لها واحد فلا يتحقق كثير هذا خلف فلا تكون الكثرة إلا خارجة مفارقة يحتاج لحوقها إلى مادة قابلة فكل ماهية كثيرة الأفراد فهي مادية و ينعكس عكس النقيض إلى أن كل ماهية غير مادية و هي المجردة وجودا لا تتكثر تكثرا إفراديا و هو المطلوب. نعم تمكن الكثرة الأفرادية في العقل المفارق فيما لو استكملت أفراد من نوع مادي كالإنسان بالحركة الجوهرية من مرحلة المادية و الإمكان إلى مرحلة التجرد و الفعلية فتستصحب التميز الفردي الذي كان لها عند كونها مادية. ثم إنه لما استحالت الكثرة الأفرادية في العقل المفارق فلو كانت فيه كثرة فهي الكثرة النوعية بأن توجد منه أنواع متباينة كل نوع منها منحصر في فرد و يتصور ذلك على أحد وجهين إما طولا و إما عرضا و الكثرة طولا أن يوجد هناك عقل ثم عقل إلى عدد معين كل سابق منها علة فاعلة للاحقه مباين له نوعا و الكثرة عرضا أن يوجد هناك أنواع كثيرة متباينة ليس بعضها علة لبعض و لا معلولا و هي جميعا معلولات عقل واحد فوقها.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "A quiddity is multiplied into numerous **individuals of one species** only through an association with matter. The proof considers what numerical plurality could be in relation to the species. It would have to be the entire essence, an essential constituent, an inseparable concomitant, or a separable determination outside the essence.\n\nThe first three possibilities make the existence of even one individual impossible. Whenever an individual of the quiddity occurred, numerical plurality would be required because plurality would belong inseparably to the quiddity. Yet every plurality comprises units; each unit, because it exemplifies the same quiddity, would itself have to be plural, and each of its units likewise. No true unit could ever be reached, and without units no plurality could exist. This is absurd.\n\nIndividual multiplication must therefore arise from an additional, **separable** determination of the species, something whose reception is possible for its individuals. This receptivity requires matter. Hence every species with many individuals is material, and by contraposition a wholly immaterial species cannot possess multiple individuals of that same specific quiddity.\n\nA qualification is necessary. Distinct individual intellective souls can attain complete immateriality if individuals of an originally material species, such as humanity, are perfected through substantial motion from material potency into immaterial actuality. They can preserve the individual distinction acquired while their existence was material. Thus individual plurality can *persist into* immaterial actuality even though it is not first originated as multiplication within a species originally and wholly separate from matter.\n\nIf there is plurality among separate intellects not arising in that way, it must be **specific plurality**: distinct intellectual species, each with a single individual.\n\nSuch a plurality admits two arrangements. In a **vertical order**, one intellect causes another, and this one another, through a determinate series; successive intellects are distinct in species and earlier members are efficient causes of later ones. In a **horizontal order**, several distinct intellectual species are neither causes nor effects of one another, but all proceed from one intellect above them.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 314,
@@ -2996,6 +3004,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 253 (PDF p. 254); chapter 12.10. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The exception for human intellective souls is important. The argument excludes original numerical plurality within one wholly separate species, not the continued individuality of souls whose histories begin in material existence."
         }
       ]
     },
@@ -3006,8 +3018,8 @@
       "title": "Hierarchical intellects and their first effects",
       "arabicTitle": "الفصل الحادي عشر في العقول الطولية وأول ما يصدر منها",
       "arabic": "لما كان الواجب تعالى واحدا بسيطا من جميع الجهات امتنع أن يصدر منه الكثير سواء كان الصادر مجردا كالعقول العرضية أو ماديا كالأنواع المادية لأن الواحد لا يصدر عنه إلا الواحد فأول صادر منه تعالى عقل واحد يحاكي بوجوده الواحد الظلي وجود الواجب تعالى في وحدته. و لما كان معنى أوليته هو تقدمه في الوجود على غيره من الوجودات الممكنة و هو العلية كان علة متوسطة بينه تعالى و بين سائر الصوادر منه فهو الواسطة في صدور ما دونه ما ليس في ذلك تحديد القدرة المطلقة الواجبية التي هي عين الذات المتعالية على ما تقدم البرهان عليها و ذلك لأن صدور الكثير من حيث هو كثير من الواحد من حيث هو واحد ممتنع على ما تقدم و القدرة لا تتعلق إلا بالممكن و أما المحالات الذاتية الباطلة الذوات كسلب الشيء عن نفسه و الجمع بين النقيضين و رفعهما مثلا فلا ذات لها حتى تتعلق بها القدرة فحرمانها من الوجود ليس تحديدا للقدرة و تقييدا لإطلاقها. ثم إن العقل الأول و إن كان واحدا في وجوده بسيطا في صدوره لكنه لمكان إمكانه تلزمه ماهية اعتبارية غير أصيلة لأن موضوع الإمكان هي الماهية و من وجه آخر هو يعقل ذاته و يعقل الواجب تعالى فيتعدد فيه الجهة و يمكن أن يكون لذلك مصدرا لأكثر من معلول واحد. لكن الجهات الموجودة في عالم المثال الذي دون عالم العقل بالغة مبلغا لا تفي بصدورها الجهات القليلة التي في العقل الأول فلا بد من صدور عقل ثان ثم ثالث و هكذا حتى تبلغ جهات الكثرة عددا يفي بصدور العالم الذي يتلوه من المثال. فتبين :أن هناك عقولا طولية كثيرة و إن لم يكن لنا طريق إلى إحصاء عددها.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Since the Necessary Existent is absolutely one and simple in every respect, a multiplicity of effects, precisely as a multiplicity, cannot proceed directly from Him—whether those effects are immaterial, like the horizontally arranged intellects, or material, like material species. The principle is that from the one, insofar as it is one, only one proceeds.\n\nThe first effect proceeding directly from God is therefore **one intellect**, whose single derivative or shadow-like existence reflects, in a dependent mode, the unity of necessary existence.\n\nIts being *first* means that it precedes other contingent existents in the order of existence and causality. It is thus an intermediary cause through which what lies beneath it proceeds from the First Principle.\n\nThis does not limit divine power, which was shown to be identical with the unrestricted necessary essence. The production of multiple disconnected effects *as many* directly from what is purely one *as one* has been argued to be intrinsically impossible. Power concerns what is possible. Intrinsic impossibilities—denying a thing of itself, conjoining contradictories or excluding both—have no possible essence upon which power could operate. Their lack of actuality therefore does not constitute a limitation on divine power.\n\nAlthough the First Intellect is one and its procession is simple, it is contingent. It therefore has a derivative, intellectually considered quiddity, since possibility is considered with reference to quiddity. It also knows itself and knows the Necessary Existent. In these respects there is an intelligible multiplicity of aspects within it, sufficient to make it capable of being the source of more than one effect.\n\nThe imaginal world below the intellectual world, however, contains a multiplicity far exceeding what can issue from the small number of distinguishable aspects in the First Intellect. A **second intellect**, then a **third**, and further intellects must proceed, until the plurality of principles is sufficient for the emergence of the imaginal world beneath them.\n\nThere must accordingly be a vertical multiplicity of separate intellects, although the author acknowledges that we have no means of determining their total number.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 316,
@@ -3017,6 +3029,14 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 256 (PDF p. 257); chapter 12.11. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Philosophical note",
+          "text": "This passage is a metaphysical derivation of a hierarchical procession, not an observation of a specified number of separate intellects. The author expressly leaves their number unknown."
+        },
+        {
+          "type": "Terminology",
+          "text": "‘The one produces only one’ has a restricted causal sense (‘the one qua one’), not an indiscriminate rule against every variety of indirect multiplicity or mediated causation."
         }
       ]
     },
@@ -3027,8 +3047,8 @@
       "title": "Intellects at the same level",
       "arabicTitle": "الفصل الثاني عشر في العقول العرضية",
       "arabic": "أثبت الإشراقيون في الوجود عقولا عرضية لا علية و لا معلولية بينها هي بحذاء الأنواع المادية التي في هذا العالم المادي يدبر كل منها ما يحاذيه من النوع و تسمى أرباب الأنواع و المثل الأفلاطونية لأنه كان يصر على القول بها و أنكرها المشاءون و نسبوا التدابير المنسوبة إليها إلى آخر العقول الطولية الذي يسمونه العقل الفعال. و قد اختلفت أقوال المثبتين في حقيقتها و أصح الأقوال فيها على ما قيل هو أن لكل نوع من هذه الأنواع المادية فردا مجردا في أول الوجود واجدا بالفعل جميع الكمالات الممكنة لذاك النوع يعتني بأفراده المادية فيدبرها بواسطة صورته النوعية فيخرجها من القوة إلى الفعل بتحريكها حركة جوهرية بما يتبعها من الحركات العرضية. و قد احتجوا لإثباتها بوجوه: منها :أن القوى النباتية من الغاذية و النامية و المولدة أعراض حالة في جسم النبات متغيرة بتغيره متحللة بتحلله ليس لها شعور و إدراك فيستحيل أن تكون هي المبادئ الموجدة لهذه التراكيب و الأفاعيل المختلفة و الأشكال و التخاطيط الحسنة الجميلة على ما فيها من نظام دقيق متقن تتحير فيه العقول و الألباب فليس إلا أن هناك جوهرا مجردا عقليا يدبر أمرها و يهديها إلى غايتها فتستكمل بذلك. و فيه :أن من الجائز أن ينسب ما نسبوه إلى رب النوع إلى غيره فإن أفعال كل نوع مستندة إلى صورته النوعية و فوقها العقل الأخير الذي يثبته المشاءون و يسمونه العقل الفعال. و منها :أن الأنواع الواقعة في عالمنا هذا على النظام الجاري في كل منها دائما من غير تبدل و تغير ليست واقعة بالاتفاق فلها و لنظامها الدائمي المستمر علل حقيقية و ليست إلا جواهر مجردة توجد هذه الأنواع و تعتني بتدبير أمرها دون ما يتخرصون به من نسبة الأفاعيل و الآثار إلى الأمزجة و نحوها من غير دليل بل لكل نوع مثال كلي يدبر أمره و ليس معنى كليته جواز صدقه على كثيرين بل إنه لتجرده تستوي نسبته إلى جميع الأفراد. و فيه :أن الأفعال و الآثار المترتبة على كل نوع مستندة إلى صورته النوعية و لو لا ذلك لم تتحقق نوعية لنوع فالأعراض المختصة بكل نوع هي الحجة على أن هناك صورة جوهرية هي المبدأ القريب لها كما أن الأعراض المشتركة دليل على أن هناك موضوعا مشتركا. ففاعل النظام الجاري في النوع هو صورته النوعية و فاعل الصورة النوعية كما تقدم جوهر مجرد يفيضها على المادة المستعدة فتختلف الصور باختلاف الاستعدادات و إما أن هذا\n\nالجوهر المجرد عقل عرضي يخص النوع و يوجده و يدبر أمره أو أنه جوهر عقلي من العقول الطولية إليه ينتهي أمر عامة الأنواع فليست تكفي في إثباته هذه الحجة. و منها :الاحتجاج على إثباتها بقاعدة إمكان الأشرف فإن الممكن الأخس إذا وجد وجب أن يوجد الممكن الأشرف قبله و هي قاعدة مبرهن عليها و لا ريب في أن الإنسان المجرد الذي هو بالفعل في جميع الكمالات الإنسانية مثلا أشرف وجودا من الإنسان المادي الذي هو بالقوة في معظم كمالاته فوجود الإنسان المادي الذي في هذا العالم دليل على وجود مثاله العقلي الذي هو رب نوعه. و فيه :أن جريان قاعدة إمكان الأشرف مشروط بكون الأشرف و الأخس مشتركين في الماهية النوعية حتى يدل وجود الأخس في الخارج على إمكان الأشرف بحسب ماهيته و مجرد صدق مفهوم على شيء لا يستلزم كون المصداق فردا نوعيا له كما أن صدق مفهوم العلم على العلم الحضوري لا يستلزم كونه كيفا نفسانيا فمن الجائز أن يكون مصداق مفهوم الإنسان الكلي الذي نعقله مثلا عقلا كليا من العقول الطولية عنده جميع الكمالات الأولية و الثانوية التي للأنواع المادية فيصدق عليه مفهوم الإنسان مثلا لوجدانه كماله الوجودي لا لكونه فردا من أفراد الإنسان. و بالجملة صدق مفهوم الإنسان مثلا على الإنسان الكلي المجرد الذي نعقله لا يستلزم كون معقولنا فردا للماهية النوعية الإنسانية حتى يكون مثالا عقليا للنوع الإنساني.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The Illuminationists affirm the existence of **horizontal intellects**, neither causes nor effects of one another, corresponding to the material species of our world. Each governs the material species corresponding to it. They are called the **Lords of the Species** (arbāb al-anwāʿ) and **Platonic Forms**, since Plato is said to have defended their existence.\n\nThe Peripatetics reject these horizontal intellects. They attribute the governing operations ascribed to them to the last of the vertically ordered intellects, which they call the **Active Intellect**.\n\nAdvocates of horizontal intellects differ in their accounts of what they are. According to a position regarded as especially sound by some, every material species has an immaterial individual at the first rank of existence, possessing in actuality all the perfections possible for that species. It attends to the material individuals corresponding to it and governs them through their specific substantial forms, bringing their potentialities into actuality by substantial motion and by the associated accidental motions.\n\nSeveral arguments have been offered to establish these Lords of the Species.\n\n**First argument: the ordering of living forms.** The vegetative powers of nutrition, growth, and generation are accidents inhering in the plant's body; they vary as the body varies, and dissolve as it dissolves. They possess no conscious awareness or intellectual knowledge. They cannot therefore, it is argued, be the sufficient principles producing the diverse organised activities, intricate structures, elegant forms, and exact arrangements that inspire astonishment in those examining natural living beings. An immaterial intellectual substance must govern the plant and direct it towards its perfection.\n\n**Reply.** Even if an intellectual cause is needed, there is no reason why the actions attributed to a special Lord of each species could not be assigned to another cause. The actions of each species depend upon its specific form, and above it lies the final intellect acknowledged by the Peripatetics, the Active Intellect. The argument has not demonstrated the existence of an additional distinct horizontal intellect.\n\n**Second argument: the stable order of natural species.** The specific kinds encountered in this world display characteristic orders that persist rather than arising by mere accident. Such enduring order must have real causes. Its explanation cannot simply be deferred to temperament or similar material conditions without proof, the argument maintains. Each species must have a universal exemplar governing its operations. ‘Universal’ here does not mean a concept predicable of many, but a separate principle whose relation to all individuals of its species is equal because it is immaterial.\n\n**Reply.** The distinctive operations and effects of a species are attributed to its specific substantial form; without this form the thing would not constitute that species. Its special accidents are evidence of a substantial principle that is their proximate cause, just as accidents common to material things are evidence of an underlying common subject.\n\nThe agent of the order found in the species is therefore its specific substantial form. The cause of that form is an immaterial substance that bestows it upon prepared matter. Specific forms differ according to the dispositions of the matter prepared for them.\n\nBut whether the immaterial source is a horizontal intellect uniquely devoted to the species, or one of the vertical intellects from which the various material species proceed, is not settled by this argument. The stated observations therefore do not demonstrate a distinct Lord of each species.\n\n**Third argument: the possibility of a nobler being.** According to the principle of the possibility of the nobler (*qāʿidat imkān al-ashraf*), when an inferior possible existent is actual, a nobler possible existent must exist prior to it. The principle is regarded as demonstrable. An immaterial human already actual in every human perfection would be nobler than a material human still potential in many of its perfections. Therefore, the presence of material human beings seems to prove the existence of a separate intellectual exemplar or Lord of the human species.\n\n**Reply.** The principle's use here requires that the nobler and inferior share the *same specific quiddity*. Only then would the actual existence of an inferior individual establish the possibility of a nobler individual of that very species.\n\nBut the fact that a **concept** applies to something does not establish that the thing is a specific individual of the corresponding quiddity. The concept ‘knowledge’, for example, may be applied to knowledge by presence without implying that knowledge by presence is a psychical quality under the ordinary categorial account.\n\nLikewise, it is possible that what fulfils the concept of the universal human understood by the intellect is in fact one of the vertical intellects possessing the existential perfections of material kinds in an elevated mode. The concept ‘human’ would apply to that intellect because it contains human existential perfections, not because it is a separate individual of the human species in the same specific quiddity.\n\nConsequently, the fact that the universal concept ‘human’ applies to a separate intellectual reality does not prove that this reality is an individual of the specific human quiddity, or that a separate Platonic exemplar of human beings exists.\n\nThe author therefore does not regard these three arguments as establishing the particular ontology of horizontal Lords of Species, even where they successfully point to immaterial causes and the intelligibility of natural order.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 318,
@@ -3038,6 +3058,14 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 258 (PDF p. 259); chapter 12.12. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Philosophical note",
+          "text": "The author distinguishes a genus/species claim (‘this entity instantiates the same quiddity’) from an analogical or existential attribution of shared perfection. This distinction is essential to his rejection of the third proof."
+        },
+        {
+          "type": "Historical-critical note",
+          "text": "‘Platonic Forms’, ‘Lords of Species’, ‘Active Intellect’, and the principle of possibility of the nobler are reported within the text's later Illuminationist–Peripatetic debate. They should not be flattened into a claim that Plato and Suhrawardī used identical technical doctrines."
         }
       ]
     },
@@ -3048,8 +3076,8 @@
       "title": "The imaginal realm",
       "arabicTitle": "الفصل الثالث عشر في المثال",
       "arabic": "و يسمى البرزخ لتوسطه بين العقل المجرد و الجوهر المادي و الخيال المنفصل لاستقلاله عن الخيال الحيواني المتصل به. و هو كما تقدم مرتبة من الوجود مفارق للمادة دون آثارها و فيه صور جوهرية جزئية صادرة من آخر العقول الطولية و هو العقل الفعال عند المشاءين أو من العقول العرضية على قول الإشراقيين و هي متكثرة حسب تكثر الجهات في العقل المفيض لها متمثلة لغيرها بهيئات مختلفة من غير أن ينثلم باختلاف الهيئات في كل واحد منها وحدته الشخصية.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The **imaginal world** is called *barzakh*, because it occupies the intermediate rank between separate intellect and material substance. It is also called **separate imagination** (al-khayāl al-munfaṣil), because it is independent of animal imagination, which is connected to the individual soul.\n\nAs explained earlier, it is a rank of existence separated from matter but not from the characteristics of material things, such as extension, figure, and position.\n\nIt contains particular substantial forms proceeding from the last of the vertically ordered intellects—the Active Intellect in the Peripatetic account—or from the horizontal intellects according to the Illuminationists.\n\nThese imaginal forms are multiple according to the plurality of aspects in the intellect that bestows them. They are represented under diverse shapes, without that diversity destroying the one individual identity of each of their relevant substantial grounds.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 322,
@@ -3059,6 +3087,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 261 (PDF p. 262); chapter 12.13. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Terminological note",
+          "text": "The separate imaginal realm (*khayāl munfaṣil*) is ontologically distinguished from a person's connected or psychological imagination (*khayāl muttaṣil*)."
         }
       ]
     },
@@ -3069,8 +3101,8 @@
       "title": "The material world",
       "arabicTitle": "الفصل الرابع عشر في العالم المادي",
       "arabic": "و هو العالم المشهود أنزل مراتب الوجود و أخسها و يتميز من غيره بتعلق الصور الموجودة فيه بالمادة و ارتباطها بالقوة و الاستعداد فما من موجود فيه إلا و عامة كمالاته في أول وجود بالقوة ثم يخرج إلى الفعلية بنوع من التدريج و الحركة و ربما عامة من ذلك عائق فالعالم عالم التزاحم و التمانع. و قد تبين بالأبحاث الطبيعية و الرياضية إلى اليوم شيء كثير من أجزاء هذا العالم و الأوضاع و النسب التي بينها و النظام الحاكم فيها و لعل ما هو مجهول منها أكثر مما هو معلوم. و هذا العالم بما بين أجزائه من الارتباط الوجودي واحد سيال في ذاته متحرك بجوهره و يتبعه أعراضه و على هذه الحركة العامة حركات جوهرية خاصة نباتية و حيوانية و إنسانية و الغاية التي تقف عندها هذه الحركة هي التجرد التام للمتحرك كما تقدم في مرحلة القوة و الفعل. و لما كان هذا العالم متحركا بجوهره سيالا في ذاته كانت ذاته عين التجدد و التغير و بذلك صح استناده إلى العلة الثابتة فالجاعل الثابت جعل المتجدد لا أنه جعل الشيء متجددا حتى يلزم محذور استناد المتغير إلى الثابت و ارتباط الحادث بالقديم. تم الكتاب و الحمد الله و وقع الفراغ من تأليفه في اليوم السابع من شهر رجب من شهور سنة ألف و ثلاث مائة و تسعين قمرية هجرية في العتبة المقدسة الرضوية على صاحبها أفضل السلام و التحية",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The **material world** is the world immediately witnessed through the senses, the lowest and least perfect rank of existence. It differs from the higher realms because its forms are joined to matter and are subject to potency and preparedness.\n\nEvery material existent begins with many of its perfections in potentiality, and attains them through some gradual process of change or motion. Its development may also be obstructed. Thus this world is a domain of interference and mutual impediment among causes and tendencies.\n\nNatural and mathematical investigation has established much about the constituents of this world, their configurations and relationships, and the order governing them. It may nevertheless be that what remains unknown is greater than what is known.\n\nIn virtue of the existential connection of its parts, the material world is **one flowing reality**, moving in its substantial existence with its accidents following upon that movement. Within this general motion there are more specific substantial developments of vegetative, animal, and human forms. As argued in the stage on potentiality and actuality, the terminus towards which such motion tends is the moving being's complete immaterial perfection.\n\nBecause this world moves in substance and flows in its very actuality, its mode of existence is itself renewal and change. This makes its dependence upon a fixed or unchanging cause intelligible. The immutable producer produces **a renewed being**. He does not produce an already separate static thing and then add renewal to it. Hence the supposed difficulty of attributing what changes to an unchanging cause, or linking what is originated to what is beginningless, does not arise in the form alleged.\n\n**The book is complete. Praise belongs to God.** The author records that he finished composing it on the seventh day of Rajab in the lunar Hijrī year 1390, at the sacred sanctuary of al-Riḍā, upon whom be the best peace and greetings.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 324,
@@ -3080,6 +3112,14 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 263 (PDF p. 264); chapter 12.14. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "‘The fixed agent produces the renewed’ is the conclusion of the author's argument concerning substantial motion and the unchanging First Cause. It concerns the actual mode of being produced, not an arbitrary causal addition of motion to a static substance."
+        },
+        {
+          "type": "Colophon",
+          "text": "Authorial colophon: 7 Rajab 1390 AH, at the sanctuary of Imam al-Riḍā. The date follows the Arabic text as transmitted in the present source; no Gregorian conversion is imposed."
         }
       ]
     }
