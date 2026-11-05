@@ -702,7 +702,12 @@ window.GNAMMA_QAWAID_TERMS = {
       "definition": "A predicate proper to the subject of a science in the demonstrative tradition; not merely a casual contingent accident.",
       "aliases": [
         "ʿaraḍ dhātī",
-        "أعراض ذاتية"
+        "أعراض ذاتية",
+        "essential accidents",
+        "proper essential accidents",
+        "الأعراض الذاتية",
+        "أعراضه الذاتية",
+        "العوارض الذاتية"
       ]
     },
     {
