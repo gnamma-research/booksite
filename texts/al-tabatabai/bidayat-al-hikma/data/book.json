@@ -9,11 +9,11 @@
     "prepared": "2026-11-04",
     "numberedChaptersInOriginal": 110,
     "translationComplete": false,
-    "translatedAuthorialUnits": 85,
+    "translatedAuthorialUnits": 91,
     "guideUnits": 0,
     "method": "Original editorial guidance; no full authorial Arabic text or published English translation reproduced.",
     "arabicAuthorialChapters": 110,
-    "englishTranslatedChapters": 84,
+    "englishTranslatedChapters": 90,
     "englishTranslatedIntroductions": 1,
     "arabicSource": "Uploaded Arabic–English edition, Arabic pages manually and electronically normalized; proofreading and independent witness collation required.",
     "translationMethod": "Fresh working English from the Arabic, preserving authorial objections and answers, with editorial notes as apparatus; no publisher English reproduced.",
@@ -29,7 +29,7 @@
     "ocrGlyphRepair": "Verified recurring source-import glyph substitutions R→لمج, T→ته, 5→نه against independent Arabic witness; the one occurrence of '(5)' as a printed note marker was excluded and repaired by witness. Other OCR errors still require collation.",
     "ocrWitness": "https://lib.rafed.net/view.php?b_id=1571&type=c_fbook",
     "ocrDashRepair": "Reconstructed 108 recurring Arabic 'به' ligature losses (including بها، بهذا، بهما، إبهام) against the independent Rafed Arabic witness; punctuation dashes preserved. Other errors require edition collation.",
-    "translatedChapters": 84,
+    "translatedChapters": 90,
     "translatedSection": "Author's introduction and all 12 numbered chapters of Stage I; remaining stages Arabic-only pending fresh translation."
   },
   "sources": [
@@ -2424,8 +2424,8 @@
       "title": "Knowledge: its definition and first division",
       "arabicTitle": "الفصل الأول في تعريف العلم وانقسامه الأولى",
       "arabic": "حصول العلم لنا ضروري و كذلك مفهومه عندنا و إنما نريد في هذا الفصل معرفة ما هو أظهر خواصه لنميز بها مصاديقه و خصوصياتها. فنقول :قد تقدم في بحث الوجود الذهني أن لنا علما بالأمور الخارجة عنا في الجملة بمعنى أنها تحصل لنا و تحضر عندنا بماهياتها لا بوجوداتها الخارجية التي تترتب عليها الآثار فهذا قسم من العلم و يسمى علما حصوليا. و من العلم :علم الواحد منا بذاته التي يشير إليها بأنا فإنه لا يغفل عن نفسه في حال من الأحوال سواء في ذلك الخلاء و الملاء و النوم و اليقظة و أية حال أخرى. و ليس ذلك بحضور ماهية ذاتنا عندنا حضورا مفهوميا و علما حصوليا لأن المفهوم الحاضر في الذهن كيفما فرض لا يأبى الصدق على كثيرين و إنما يتشخص بالوجود الخارجي و هذا الذي نشاهده من أنفسنا و نعبر عنه بأنا أمر شخصي لذاته لا يقبل الشركة و التشخص شأن الوجود فعلمنا بذواتنا إنما هو بحضورها لنا بوجودها الخارجي الذي هو ملاك الشخصية و ترتب الآثار و هذا قسم آخر من العلم و يسمى العلم الحضوري. و هذان قسمان ينقسم إليهما العلم قسمة حاصرة فإن حصول المعلوم للعالم :إما بماهيته أو بوجوده و الأول هو العلم الحصولي و الثاني هو العلم الحضوري. ثم إن كون العلم حاصلا لنا معناه حصول المعلوم لنا لأن العلم عين المعلوم بالذات إذ لا نعني بالعلم إلا حصول المعلوم لنا و حصول الشيء و حضوره ليس إلا وجوده و وجوده نفسه. و لا معنى لحصول المعلوم للعالم إلا اتحاد العالم معه سواء كان معلوما حضوريا أو حصوليا فإن المعلوم الحضوري إن كان جوهرا قائما بنفسه كان وجوده لنفسه و هو مع ذلك للعالم فقد اتحد العالم مع نفسه و إن كان أمرا وجوده لموضوعه و المفروض أن وجوده للعالم فقد اتحد العالم مع موضوعه و العرض أيضا من مراتب وجود موضوعه غير خارج منه فكذلك مع ما اتحد مع موضوعه و كذا المعلوم الحصولي موجود للعالم سواء كان جوهرا موجودا لنفسه أو أمرا موجودا لغيره و لازم كونه موجودا للعالم اتحاد العالم معه. على :أنه سيجيء أن العلم الحصولي علم حضوري في الحقيقة. فحصول العلم للعالم من خواص العلم لكن لا كل حصول كيف كان بل حصول أمر بالفعل فعلية محضة لا قوة فيه لشيء مطلقا فإنا نشاهد بالوجدان أن المعلوم من حيث هو\n\nمعلوم لا يقوى على شيء آخر و لا يقبل التغير عما هو عليه فهو حصول أمر مجرد عن المادة خال من غواشي القوة و نسمي ذلك حضورا. فحضور المعلوم يستدعي كونه أمرا تاما في فعليته من غير تعلق بالمادة و القوة يوجب نقصه و عدم تمامه من حيث كمالاته التي بالقوة. و مقتضى حضور المعلوم أن يكون العالم الذي يحصل له العلم أمرا فعليا تام الفعلية غير ناقص من جهة التعلق بالقوة و هو كون العالم مجردا عن المادة خاليا عن القوة. فقد بان :أن العلم حضور موجود مجرد لموجود مجرد سواء كان الحاصل عين ما حصل له كما في علم الشيء بنفسه أو غيره بوجه كما في علم الشيء بالماهيات الخارجة عنه. و تبين أيضا أولا :أن المعلوم الذي هو متعلق العلم يجب أن يكون أمرا مجردا عن المادة و سيجيء معنى تعلق العلم بالأمور المادية. و ثانيا :أن العالم الذي يقوم به العلم يجب أن يكون مجردا عن المادة أيضا.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "That knowledge occurs in us is immediately evident, as is our general understanding of its meaning. The present inquiry therefore seeks the most characteristic properties of knowledge so that its instances and distinctions may be recognised.\n\nAs established in the discussion of mental existence, we have knowledge of things outside ourselves when their *quiddities* become present to us, not through the extramental existences by which their characteristic effects occur. This is one kind of knowledge, called *acquired knowledge* or knowledge by representation (ʿilm ḥuṣūlī).\n\nAnother kind is a person's knowledge of the very self indicated by ‘I’. One is not wholly unaware of oneself in any circumstance—whether in solitude or company, sleep or wakefulness, or other conditions of life. This knowledge is not the conceptual presence of the quiddity of the self as an acquired mental form. A concept, however determinate, is in itself capable of application to many instances, and becomes a particular only by individual existence. But the self immediately present as ‘I’ is individuated in itself and cannot be shared by many. Individuation is a feature of actuality. Our knowledge of our own selves must therefore be through their own existing actuality, which is the ground of individuality and effects. This is called *knowledge by presence* (ʿilm ḥuḍūrī).\n\nThese two kinds exhaust the modes of knowledge: the known becomes present to the knower either through its quiddity or through its own existence. The former is acquired knowledge, the latter knowledge by presence.\n\nThe occurrence of knowledge for a knower means the occurrence of the *immediately known* for it. For knowledge is identical with the immediately known, since we mean by knowledge nothing but the presence of what is known. A thing's presence is its mode of existence.\n\nThe presence of the known to the knower therefore entails a kind of *union* (ittiḥād) between them. If the known by presence is a self-subsisting substance, then its being for itself is also present for the knower, so that the knower is united with it in the relevant respect. If the known is a form or accident whose existence is for its subject, then its presence to the knower entails a relation of union between the knower and that subject, for an accident's existence is a mode of its subject's existence, not something independently severed from it. The same reasoning extends to acquired knowledge, whether the intelligible content signifies a substance or an accident: the form exists for the knower, and this entails its union with the knower. As will be argued later, acquired knowledge is in reality grounded in knowledge by presence.\n\nNot every occurrence of something in something else is, however, cognitive presence. The known, as known, must be fully actual in the relevant respect, without unrealised potency: experience shows that what is immediately present as an object of knowledge is not, precisely as known, merely the potentiality to become another known object, nor is it changed in its very actuality as that cognitive content.\n\nSuch actuality requires freedom from matter, for matter and potency involve incompleteness with respect to unrealised perfections. The knower too must have sufficient actuality to receive the known's presence without being merely an unrealised material potential.\n\nKnowledge is consequently the *presence of an immaterial existent to an immaterial existent*, whether the known is identical with the knower, as in self-knowledge, or distinct in some respect, as in the knowledge of other quiddities.\n\nTwo consequences follow: the immediately known must be immaterial in the relevant cognitive mode, and the knower receiving it must likewise be immaterial. How we know material things will be explained subsequently.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 248,
@@ -2439,6 +2439,14 @@
         {
           "type": "editorial synthesis of lecture notes",
           "text": "Knowledge by presence (ʿilm ḥuḍūrī) is contrasted with acquired/representational knowledge (ʿilm ḥuṣūlī). ‘Acquired’ does not merely mean learnt in a classroom. (Krishnan, printed p. 194; attribution to the lecturer as mediated by the note-taker.)"
+        },
+        {
+          "type": "Terminology",
+          "text": "The distinction ʿilm ḥuṣūlī / ʿilm ḥuḍūrī is between knowledge through a quiddative form and knowledge through an existent's immediate presence. The text later argues that the former itself presupposes the latter."
+        },
+        {
+          "type": "Philosophical note",
+          "text": "The union of knower and known is an existential thesis within this philosophical tradition; it should not be mistaken for an identity of every knowing person with every extramental object."
         }
       ]
     },
@@ -2449,8 +2457,8 @@
       "title": "Universal and particular acquired knowledge",
       "arabicTitle": "الفصل الثاني ينقسم العلم الحصولي إلى كلي وجزئي",
       "arabic": "و الكلي ما لا يمتنع فرض صدقه على كثيرين كالعلم بماهية الإنسان و يسمى عقلا و تعقلا و الجزئي ما يمتنع فرض صدقه على كثيرين كالعلم بهذا الإنسان بنوع من الاتصال بمادته الحاضرة و يسمى علما إحساسيا و كالعلم بالإنسان الفرد من غير حضور مادته و يسمى علما خياليا و عد هذين القسمين ممتنع الصدق على كثيرين إنما هو من جهة اتصال أدوات الإحساس بالمعلوم الخارجي في العلم الإحساسي و توقف العلم الخيالي على العلم الإحساسي و إلا فالصورة الذهنية كيفما فرضت لا تأبى أن تصدق على كثيرين. و القسمان جميعا مجردان عن المادة لما تقدم :من فعلية الصورة العلمية في ذاتها و عدم قبولها للتغير. و أيضا :الصورة العلمية كيفما فرضت لا تمتنع عن الصدق على كثيرين و كل أمر مادي متشخص ممتنع الصدق على أزيد من شخص واحد. و أيضا :لو كانت الصورة الحسية أو الخيالية مادية منطبعة بنوع من الانطباع في جزء بدني لكانت منقسمة بانقسام محلها و لكان في مكان و زمان و ليس كذلك فالعلم لا يقبل القسمة و لا يشار إليه إشارة وضعية مكانية و لا أنه مقيد بزمان لصحة تصورنا الصورة المحسوسة في وقت بعد أمد بعيد على ما كانت عليه من غير تغير فيها و لو كانت مقيدة بالزمان لتغيرت بتقضيه. و ما يتوهم :من مقارنة حصول العلم للزمان إنما هو مقارنة شرائط حصول الاستعداد له لا نفس العلم. و أما توسط أدوات الحس في حصول الصورة المحسوسة و توقف الصورة الخيالية على ذلك فإنما هو لحصول الاستعداد الخاص للنفس لتقوى به على تمثيل الصورة العلمية و تفصيل القول في علم النفس و مما تقدم يظهر أن قولهم :إن التعقل إنما هو بتقشير المعلوم عن المادة و الأعراض المشخصة له حتى لا يبقى إلا الماهية المعراة عن القشور كالإنسان المجرد عن المادة الجسمية و المشخصات الزمانية و المكانية و الوضعية و غيرها بخلاف الإحساس المشروط بحضور المادة و اكتناف الأعراض و الهيئات الشخصية و الخيال المشروط ببقاء الأعراض و الهيئات المشخصة من دون حضور المادة قول على سبيل التمثيل للتقريب و إلا فالمحسوس صورة مجردة علمية و اشتراط حضور المادة و الاكتناف بالأعراض المشخصة لحصول الاستعداد في النفس للإحساس و كذا اشتراط الاكتناف بالمشخصات للتخيل و\n\nكذا اشتراط التقشير في التعقل للدلالة على اشتراط تخيل أزيد من فرد واحد في حصول استعداد النفس لتعقل الماهية الكلية المعبر عنه بانتزاع الكلي من الأفراد. و تبين مما تقدم أيضا :أن الوجود ينقسم من حيث التجرد عن المادة و عدمه إلى ثلاثة عوالم كلية أحدها عالم المادة و القوة و الثاني عالم التجرد عن المادة دون آثارها من الشكل و المقدار و الوضع و غيرها ففيه الصور الجسمانية و أعراضها و هيئاتها الكمالية من غير مادة تحمل القوة و الانفعال و يسمى عالم المثال و البرزخ بين عالم العقل و عالم المادة و الثالث عالم التجرد عن المادة و آثارها و يسمى عالم العقل. و قد قسموا عالم المثال إلى :المثال الأعظم القائم بذاته و المثال الأصغر القائم بالنفس الذي تتصرف فيه النفس كيف تشاء بحسب الدواعي المختلفة الحقة و الجزافية فتأتي أحيانا بصور حقة صالحة و أحيانا بصور جزافية تعبث بها. و العوالم الثلاثة المذكورة مترتبة طولا :فأعلاها مرتبة و أقواها و أقدمها وجودا و أقربها من المبدإ الأول تعالى عالم العقول المجردة لتمام فعليتها و تنزه ذواتها عن شوب المادة و القوة و يليه عالم المثال المتنزه عن المادة دون آثارها و يليه عالم المادة موطن كل نقص و شر و لا يتعلق بما فيه علم إلا من جهة ما يحاذيه من المثال و العقل.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Acquired knowledge is divided first into *universal* and *particular*.\n\nUniversal knowledge is that whose content does not prevent its application to many, as with knowledge of the quiddity ‘human’. This is called intellection (*taʿaqqul*).\n\nParticular knowledge is that whose content is taken as inapplicable to many. It includes sensory awareness of this human being while the subject is connected through the sense organs with the corresponding material individual, and imaginative knowledge of that individual when the material thing is no longer present. These are sensory and imaginal cognition respectively.\n\nTheir status as particular is due to the connection of the sensory organs with an external object, and to imagination's dependence upon earlier sensory cognition. The mental form considered simply in itself does not, as a form, exclude application to more than one.\n\nBoth particular cognitive forms are immaterial in the relevant sense, for an intelligible form is actual as known and does not itself undergo material alteration. Moreover, mental contents, just insofar as they signify what they signify, admit predication of many, whereas a particular material existent is individuated and cannot be numerically shared.\n\nWere sensory and imaginative forms merely impressed in bodily parts, they would be divisible with their physical substrates, confined to place and time, and altered with them. Yet a cognitive content as such is not divided into bodily segments or pointed to as a located object. The same sensible form may be recalled long afterwards without its content having changed simply because time has passed. The temporal circumstances associated with cognition therefore belong to its preparatory conditions, not to the known form under the aspect of knowledge.\n\nThe sense organs and imagination provide the dispositions by which the soul becomes capable of presenting these forms to itself; the detailed explanation belongs to psychology.\n\nThe customary description that intellection ‘strips’ the object of matter and individuating accidents while sensory knowledge retains both matter and individuating features, and imagination retains individuating features without the material subject, should be understood as a pedagogical illustration. Even the sensed form, as known, has an immaterial mode. Material presence and individuating features prepare the soul for sensation; retained features prepare it for imagination; comparing and retaining several individuals prepares the soul for the universal concept, customarily described as abstracting the universal from particulars.\n\nFrom this there emerges a threefold division of existence with respect to freedom from matter.\n\n**First** is the world of matter and potentiality. **Second** is the *imaginal world* (ʿālam al-mithāl), free from matter as receptive potency but retaining features associated with material reality—figure, magnitude, position, and the like—without a material substrate. This is the intermediate or *barzakh* world between intellect and matter. **Third** is the intellectual world, free both from matter and from the characteristics of material forms.\n\nThe imaginal world is further distinguished into the *greater imaginal realm*, subsisting in its own order, and the *lesser imaginal realm*, associated with the soul and subject to its imaginative activity. The soul may produce true and fitting images or arbitrary and fanciful images according to its motives.\n\nThese three worlds are hierarchically ordered. The highest, strongest in existence and nearest the First Principle, is the world of separate intellects, wholly actual and free from matter and potency. Below it is the imaginal world, free from matter but retaining its formal effects. Below that is the material world, the locus of privation and deficiency. Material things become objects of knowledge through their intelligible or imaginal correspondents.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 252,
@@ -2460,6 +2468,14 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 201 (PDF p. 202); chapter 11.2. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The distinction between sensory and imaginative particular cognition concerns how the object is encountered. The author denies that its immediately known form, precisely as known, is simply a physical imprint."
+        },
+        {
+          "type": "Comparative note",
+          "text": "The ‘greater’ and ‘lesser’ imaginal realms should not be conflated with a psychological image alone. The ontology invoked is wider than a contemporary account of visual imagination."
         }
       ]
     },
@@ -2470,8 +2486,8 @@
       "title": "A second division into universal and particular",
       "arabicTitle": "الفصل الثالث ينقسم العلم انقساما آخر إلى كلي وجزئي",
       "arabic": "و المراد بالكلي ما لا يتغير بتغير المعلوم بالعرض كصورة البناء التي يتصورها البناء في نفسه ليبنى عليها فالصورة عنده على حالها قبل البناء و مع البناء و بعد البناء و إن خرب و انهدم و يسمى علم ما قبل الكثرة و العلوم الحاصلة من طريق العلل كلية من هذا القبيل دائما كعلم المنجم بأن القمر منخسف يوم كذا ساعة كذا إلى مدة كذا يعود فيه الوضع السماوي بحيث يوجب حيلولة الأرض بينه و بين الشمس فعلمه ثابت على حاله قبل الخسوف و معه و بعده. و المراد بالجزئي :ما يتغير بتغير المعلوم بالعرض كما إذا علمنا من طريق الإبصار بحركة زيد ثم إذا وقف عن الحركة تغيرت الصورة العلمية من الحركة إلى السكون و يسمى علم ما بعد الكثرة. فإن قلت :التغير لا يكون إلا بقوة سابقة و حاملها المادة و لازمه كون العلوم الجزئية مادية لا مجردة. قلنا :العلم بالتغير غير تغير العلم و المتغير ثابت في تغيره لا متغير و تعلق العلم به أعني حضوره عند العالم من حيث ثباته لا تغيره و إلا لم يكن حاضرا فلم يكن العلم حضور شيء لشيء هذا خلف.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Another division into universal and particular knowledge is based not on possible predication of many but on whether the cognition changes as the thing known accidentally changes.\n\nHere *universal knowledge* is a form that does not change when the externally known object changes. The architect's conception of a house, for example, may remain the same before the house is built, during construction, after completion, and even after it is demolished. This is knowledge *before multiplicity*. Knowledge reached through causes is universal in this sense: the astronomer's knowledge that an eclipse will occur at a specified time remains unchanged before, during, and after the event, insofar as its causal description is the same.\n\n*Particular knowledge* is knowledge that changes with a change in the object known accidentally. When we see Zayd moving and then he stops, our sensory cognition shifts from motion to rest. This is knowledge *after multiplicity*.\n\nAn objection argues that any such change requires a prior potency borne by matter; therefore particular knowledge would be material rather than immaterial.\n\nThe answer distinguishes *knowledge of change* from *change of knowledge*. What is known as changing is apprehended under the stable aspect through which the changing object is present to the knower. The immediately known content is present as that cognitive actuality. Were it itself absent whenever the object changed, there would be no presence of something to something and thus no knowledge in the sense established.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 256,
@@ -2481,6 +2497,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 206 (PDF p. 207); chapter 11.3. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Terminological note",
+          "text": "The present universal/particular distinction differs from the preceding one. ‘Universal’ here means invariant with respect to a known thing's externally changing phases, not simply predicable of multiple instances."
         }
       ]
     },
@@ -2491,8 +2511,8 @@
       "title": "Types of intellection",
       "arabicTitle": "الفصل الرابع في أنواع التعقل",
       "arabic": "ذكروا أن التعقل على ثلاثة أنواع: أحدها :أن يكون العقل بالقوة أي لا يكون شيئا من المعقولات بالفعل و لا له شيء من المعقولات بالفعل لخلو النفس عن عامة المعقولات. الثاني :أن يعقل معقولا أو معقولات كثيرة بالفعل مميزا لبعضها من بعض مرتبا لها و هو العقل التفصيلي. الثالث :أن يعقل معقولات كثيرة عقلا بالفعل من غير أن يتميز بعضها من بعض و إنما هو عقل بسيط إجمالي فيه كل التفاصيل و مثلوا له بما إذا سألك سائل عن عدة من المسائل التي لك علم بها فحضرك الجواب في الوقت فأنت في أول لحظة تأخذ في الجواب تعلم بها جميعا علما يقينيا بالفعل لكن لا تميز لبعضها من بعض و لا تفصيل و إنما يحصل التميز و التفصيل بالجواب كان ما عندك منبع تنبع و تجري منه التفاصيل و يسمى عقلا إجماليا.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Intellection is distinguished into three kinds.\n\n**First**, intellect may be wholly potential: no intelligible is present in actuality, and the soul lacks acquired intelligibles.\n\n**Second**, intellect may possess one or many intelligibles in actuality and distinguish them from one another in a definite order. This is *detailed intellection* (ʿaql tafṣīlī).\n\n**Third**, intellect may possess many intelligibles in actuality without explicitly distinguishing and arranging each separately. This is a *simple general intellection* in which all the details are included, called *summary intellection* (ʿaql ijmālī).\n\nAn example is offered. Someone asks a series of questions about matters you already know. At the first instant of beginning to answer, you possess the answers together in a certain actual, confident knowledge, though you have not yet distinguished and unfolded each answer individually. The details become explicit through answering, as if flowing from a source that already contained them.\n\nThus a general intellectual actuality can be prior to its articulated, detailed expression without being merely a complete absence of knowledge.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 258,
@@ -2502,6 +2522,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 207 (PDF p. 208); chapter 11.4. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "Ijmālī here does not mean vague ignorance. It is the intellect's actual but not separately articulated possession of the detailed contents."
         }
       ]
     },
@@ -2512,8 +2536,8 @@
       "title": "Degrees of the intellect",
       "arabicTitle": "الفصل الخامس في مراتب العقل",
       "arabic": "ذكروا أن مراتب العقل أربع: إحداها :كونه بالقوة بالنسبة إلى جميع المعقولات و يسمى عقلا هيولانيا لشباهته في خلوه عن المعقولات الهيولى في كونها بالقوة بالنسبة إلى جميع الصور و ثانيتها :العقل بالملكة و هي المرتبة التي تعقل فيها الأمور البديهية من التصورات و التصديقات فإن تعلق العلم بالبديهيات أقدم من تعلقه بالنظريات. و ثالثتها :العقل بالفعل و هو تعلقه النظريات بتوسيط البديهيات و إن كانت مرتبة بعضها على بعض. و رابعتها :عقله لجيمع ما استفاده من المعقولات البديهية و النظرية المطابقة لحقائق العالم العلوى و السفلى باستحضاره الجميع و التفاته إليها بالفعل فيكون عالما علميا مضاهيا للعالم العيني و يسمى العقل المستفاد.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The philosophers enumerate four degrees of intellect.\n\n**First**, the intellect as potential with respect to all intelligibles, called the *material intellect* (ʿaql hayūlānī). The name is an analogy: just as prime matter is potential for substantial forms, the intellect at this rank is not yet actualised by intelligible forms.\n\n**Second**, the *intellect in habitu* or *intellect by disposition* (ʿaql bi-l-malaka). At this rank the intellect possesses the self-evident objects of conception and assent, which precede acquired theoretical judgments.\n\n**Third**, the *actual intellect* (ʿaql bi-l-fiʿl), whose theoretical knowledge is obtained through the mediation of self-evident truths, even when its various demonstrations require further ordering.\n\n**Fourth**, the intellect which actually calls to presence all the intelligibles it has acquired—immediate and discursive—and comprehends, through correct forms, the truths of the higher and lower world. It becomes, as it were, an intelligible world corresponding to the world of external being. This is called the *acquired intellect* (ʿaql mustafād).",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 260,
@@ -2523,6 +2547,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 208 (PDF p. 209); chapter 11.5. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Terminological note",
+          "text": "‘Material intellect’ names an initial receptivity by analogy to hylē, not a claim that intellection is performed by a material organ."
         }
       ]
     },
@@ -2533,8 +2561,8 @@
       "title": "The source of intelligible forms",
       "arabicTitle": "الفصل السادس في مفيض هذه الصور العلمية",
       "arabic": "أما الصور العقلية الكلية فإن مفيضها المخرج للإنسان مثلا من القوة إلى الفعل عقل مفارق للمادة عنده جميع الصور العقلية الكلية و ذلك أنك قد عرفت أن هذه الصور بما أنها علم مجردة عن المادة على أنها كلية تقبل الاشتراك بين كثيرين و كل أمر حال في المادة واحد شخصي لا يقبل الاشتراك فالصورة العقلية مجردة عن المادة ففاعلها المفيض لها أمر مجرد عن المادة لأن الأمر المادي ضعيف الوجود فلا يصدر عنه ما هو أقوى منه وجودا على أن فعل المادة مشروط بالوضع الخاص و لا وضع للمجرد. و ليس هذا المفيض المجرد هو النفس العاقلة لهذه الصور المجردة العلمية لأنها بعد بالقوة بالنسبة إليها و حيثيتها حيثية القبول دون الفعل و من المحال أن يخرج ما بالقوة نفسه من القوة إلى الفعل. فمفيض الصورة العقلية جوهر عقلي مفارق للمادة فيه جميع الصور العقلية الكلية على نحو ما تقدم من العلم الإجمالي العقلي تتحد معه النفس المستعدة للتعقل على قدر استعدادها الخاص فيفيض عليها ما تستعد له من الصور العقلية و هو المطلوب. و بنظير البيان السابق يتبين أن مفيض الصور العليمة الجزئية جوهر مثالي مفارق فيه جميع الصور المثالية الجزئية على نحو العلم الإجمالي تتحد معه النفس على قدر ما لها من الاستعداد.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The source of universal intelligible forms that brings the human intellect from potentiality to actuality is a *separate intellect* free of matter, in which universal intelligibles are present.\n\nThe proof begins from the immateriality of intellectual cognition. These forms are free of matter as forms known, and their universality permits their being predicated of many. Anything inhering materially in a particular subject is an individual and cannot be numerically shared in this way. The intellectual form therefore possesses an immaterial mode of existence.\n\nIts productive cause must accordingly be immaterial. A material existent has a weaker mode of existence and cannot, in the author's account, produce an effect more actual than itself. Moreover, material agency depends upon particular spatial dispositions, whereas an immaterial form as such has no position.\n\nThe cause of these intelligibles cannot be the human soul precisely insofar as it remains potential towards them. In that state its role is receptive, not productive; what is potential cannot by that very potentiality actualise itself.\n\nThe cause is therefore a separate intellectual substance possessing intelligibles in the mode of the summary intellectual knowledge described above. The human soul, as it becomes suitably disposed, is united with that intellect to the degree of its preparedness, receiving the intelligible forms for which it is ready.\n\nAn analogous argument establishes a source for particular imaginal forms: a separate immaterial imaginal substance possessing these forms in an undifferentiated mode, with which the soul is united according to its degree of preparedness.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 262,
@@ -2544,6 +2572,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 209 (PDF p. 210); chapter 11.6. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Philosophical note",
+          "text": "The separate intellect as source of intelligibles and the soul's graded union with it are theses of this post-Avicennian metaphysical psychology, not claims established directly by contemporary cognitive science."
         }
       ]
     },
