@@ -222,7 +222,11 @@
     $('title-page').hidden = !!state.query || state.savedOnly;
     $('filter-notice').hidden = !state.query && !state.savedOnly;
     $('filter-message').textContent = state.query ? `Search results for “${state.query}”${state.savedOnly ? ' in your saved passages' : ''}.` : 'Your saved passages.';
-    const shown = state.preferences.view === 'focus' && !state.query && !state.savedOnly ? matched.filter(unit => unit.group === state.active) : matched;
+    const shown = state.preferences.view === 'focus' && !state.query && !state.savedOnly
+      ? matched.filter(unit => unit.group === state.active)
+      : state.preferences.view === 'continuous' && !state.query && !state.savedOnly
+      ? matched.filter(unit => unit.part === (state.active && state.active.stage[0]))
+      : matched;
     const content = $('reading-content'); content.replaceChildren();
     if (!shown.length) {
       const empty = make('div', 'empty-state');
