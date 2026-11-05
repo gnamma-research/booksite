@@ -130,6 +130,10 @@
     window.print();
   });
   window.addEventListener('afterprint',restoreAfterPrint);
+  if(window.matchMedia){
+    const printMedia=window.matchMedia('print');
+    if(printMedia.addEventListener)printMedia.addEventListener('change',event=>{if(!event.matches)restoreAfterPrint();});
+  }
 
   /* The active three-book tab mirrors the reading location, including scrolling. */
   function updateReadingLocation(){
