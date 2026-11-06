@@ -60,6 +60,15 @@ const groups=isLogic?[
   ['Second-figure productivity conditions','شروط الشكل الثاني',['الشكل الثاني','اختلافهما','كلية الكبرى','الدوام']],
   ['Reducing figures to the first','رد الأشكال إلى الأول',['بالخلف','عكس الكبرى','عكس الصغرى']],
   ['Third-figure shared witness','الشكل الثالث واشتراك الأوسط',['الشكل الثالث','إيجاب الصغرى','كلية إحداهما']],
+  ['Fourth-figure eight moods and correction','أضرب الشكل الرابع الثمانية',['الشكل الرابع','ثمانية','سالبة كلية','في عبارة المصنف تسامح']],
+  ['General productivity criterion','ضابطة شرائط الأشكال',['وضابطة شرائط','عموم موضوعية','منافاة']],
+  ['Yazdī original second-figure argument','تحقيق اليزدي الفريد',['تفردت به','منافاة','المشروطة']],
+  ['Conditional and exceptive inference','الاقتراني الشرطي والاستثنائي',['الاستثنائي','الاقتراني','وضع المقدم','رفع التالي']],
+  ['Induction complete versus incomplete','الاستقراء التام والناقص',['الاستقراء','ناقص','تام','ظن']],
+  ['Causal analogy in legal theory','التمثيل والعلية في أصول الفقه',['التمثيل','العلة','الدوران','السبر','التقسيم']],
+  ['Demonstration of reason and of fact','البرهان اللمي والإني',['البرهان اللمي','البرهان الإني','الواسطة في الثبوت']],
+  ['Scientific subject, principles and questions','موضوع العلم ومبادئه ومسائله',['موضوع العلم','المبادئ','المسائل','الأعراض الذاتية']],
+  ['Eight methodological heads and educational methods','الرؤوس الثمانية والأنحاء التعليمية',['الرؤوس الثمانية','التقسيم','التحليل','التحديد','البرهان']],
   ['Induction and analogy','الاستقراء والتمثيل',['الاستقراء','التمثيل','الدوران','الترديد']],
   ['Analogy, cause and the uṣūl connection','العلة والفرع والأصل',['التمثيل','العلة','الأصل','الفرع','الدوران']],
   ['Five arts and epistemic matter','الصناعات الخمس',['البرهان','الجدل','الخطابة','الشعر','المغالطة','التخييل']],
@@ -168,9 +177,16 @@ function open(trigger){
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q70_73?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q74_80?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q81_84?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
-      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q86_94?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en}))
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q86_94?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q95_97?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q98_101?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q102_104?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q105_108?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q110_113?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q114_118?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q119_123?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en}))
      ];
-     const archive=window.GNAMMA_YAZDI_LAYER.entries.filter(p=>!['L.03','L.04','L.05','L.06','L.07','L.08','L.09','L.10','L.11','L.12','L.13','L.14','L.15'].includes(p.unit)&&!(p.unit==='L.16'&&p.page>=86&&p.page<=94));
+     const archive=window.GNAMMA_YAZDI_LAYER.entries.filter(p=>['L.01','L.02'].includes(p.unit));
      const glosses=[...archive,...extended].filter(p=>
       t.keys.some(k=>norm(k).length>2&&(norm(p.arabic).includes(norm(k))||norm(p.english).includes(norm(k)))));
      if(glosses.length){
