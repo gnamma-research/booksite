@@ -143,3 +143,16 @@ These replace **39** overlapping archival excerpt cards but do not delete the ol
 **CR-22:** Qum Q59 `جزئه/الجزء` and Q65 `الحمار ناهقا/الفرس صاهلا` are printed alternatives without independently established manuscript sigla. No authorial priority has been invented. The full source/translation method and exact locators are in [YAZDI_Q59_69_CRITICAL.md](YAZDI_Q59_69_CRITICAL.md).
 
 **Remain outstanding:** photographic verification of Qum and Gujarat main text; independent manuscript collation; end-to-end editorial philology; continuous translation of the remaining large parts of al-Yazdī's commentary beyond Qum p.69. Hence the work is **a source-transcribed provisional translation**, not a definitive critical edition.
+
+## Qum 70–84 continuous main commentary; contradiction and two conversions
+The working edition now includes three further page-aligned source files: `yazdi-continuous-q70-73-data.js` (four Qum pages, L.13), `yazdi-continuous-q74-80-data.js` (seven pages, L.14), and `yazdi-continuous-q81-84-data.js` (four pages, L.15). See the full [Q70–84 critical dossier](YAZDI_Q70_84_CRITICAL.md) for fifteen source URLs, boundary and attribution checks and detailed arguments.
+
+**CR-23–25:** contradiction is *bivalent opposition* in both directions, not bare positive/negative grammatical contrast; the eight unities protect the reference of the two statements. For compound modal propositions, a negation of the compound is an **inclusive disjunction** of the component negations. In a particular compound the alternatives must be tested **for each subject individual**; distributing a single global disjunction incorrectly over universal quantification changes the meaning.
+
+**CR-26–28:** `ʿaks mustawī` preserves truth under the assumption that the original is true; a positive universal normally converts only to a particular, under appropriate existence commitments. The contrast between the *Farabian possible subject* and *Avicennan actually instantiated subject* determines why no general conversion of the two possibility forms is licensed. Al-Yazdī explicitly challenges using separate component-conversion rules to decide whether a *whole compound* converts.
+
+**CR-29–30:** early contraposition retains quality and negates both terms; later contraposition reverses quality while negating only the predicate term. The exception for special particular forms is proved by hypothesizing a **witness** whose descriptions overlap across specified times, not by merely exchanging words.
+
+**CR-31:** Main `شرح`/post-`هامش` delimitation and short page seams were checked in the searchable Qum transcription; no Qum photographic, Gujarat line, Tehran or independent manuscript collation has yet certified these readings. The source's Q71 Persian mnemonic and the variable printed conditional/modal examples must be checked against page images. Page Q85 is a heading for the next topic, not part of the al-Yazdī translation.
+
+**Progress bookkeeping:** 177 archived selected excerpts, 62 continuous bilingual source blocks from 60 Qum printed positions, **116** visible nonduplicated commentary cards, zero manuscript-certified al-Yazdī divisions. The complete main commentary is still incomplete.
