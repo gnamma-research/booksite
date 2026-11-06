@@ -69,7 +69,7 @@ jobs:
           assert len(gloss['entries'])==177
           assert len([x for x in gloss['entries'] if x.get('witnessComparison')])==9
           assert all(not x.get('witnessComparison',{}).get('scanVerified',True) for x in gloss['entries'] if x.get('witnessComparison'))
-          assert len({x['id'] for x in gloss['entries']})==167
+          assert len({x['id'] for x in gloss['entries']})==177
           assert len({x['unit'] for x in gloss['entries']})==19
           assert all(x.get('arabic') and x.get('english') and x.get('sourceUrl') and x.get('attribution') for x in gloss['entries'])
           assert len({u['id'] for u in kalam['units']})==1044
