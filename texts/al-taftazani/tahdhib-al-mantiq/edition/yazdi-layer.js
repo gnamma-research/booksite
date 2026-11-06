@@ -78,8 +78,9 @@ function make(unit,scope){
   for(const part of newContiguous){
    const item=n('article','gn-yazdi-excerpt gn-yazdi-contiguous-page');
    item.id='gn-yazdi-'+scope+'-'+part.id;
-   item.dataset.yazdiId=part.id;item.dataset.qPage=part.page;item.dataset.qPart=part.part;
-   item.append(n('div','gn-yazdi-locator','al-Yazdī · Qum p. '+part.page+(part.part==='all'?'':' · '+part.part)+' · '+part.title));
+   item.dataset.yazdiId=part.id;item.dataset.qPage=part.page;item.dataset.qPart=part.part||'all';
+   const withinPage=part.part&&part.part!=='all'?' · '+part.part:'';
+   item.append(n('div','gn-yazdi-locator','al-Yazdī · Qum p. '+part.page+withinPage+' · '+part.title));
    const pair=n('div','gn-yazdi-pair');
    const en=n('p','gn-yazdi-en',part.en);en.lang='en';
    const ar=n('p','gn-yazdi-ar',part.ar);ar.lang='ar';ar.dir='rtl';
