@@ -78,7 +78,7 @@ function layersPanel(){open('Reading apparatus & commentary',root=>{
   const copy=el('span');copy.append(el('strong',null,'Mullā ʿAbd Allāh al-Yazdī'));
   copy.append(el('small',null,'Show the available bilingual commentary passages alongside the logic text'));
   label.append(check,copy);root.append(label);
-  root.append(el('p','gn-yazdi-note','The available translations cover L.02–L.09 and L.11. Untranslated divisions have no placeholder commentary.'));
+  root.append(el('p','gn-yazdi-note','The available selected translations cover L.02–L.12, with many passages still untranslated. L.13–L.19 have no translation yet and show no placeholders.'));
   const to=btn('Go to first translated passage','contents',()=>{close();setMode('flow');api.go(2,'u-L-02')});
   to.dataset.yazdiJump='';to.disabled=!check.checked;root.append(to);
  } else {

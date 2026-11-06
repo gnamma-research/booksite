@@ -1,4 +1,4 @@
-/* Bilingual selections from al-Yazdī's commentary; not the modern marginalia. */
+/* Selected bilingual Arabic/English translations; not the complete al-Yazdī book. */
 window.GNAMMA_YAZDI_LAYER={
   "schema": "gnamma-yazdi-translation-layer-v1",
   "work": "Tahdhīb al-Manṭiq",
@@ -7,7 +7,7 @@ window.GNAMMA_YAZDI_LAYER={
   "edition": "Qum, Muʾassasat al-Nashr al-Islāmī; searchable paginated text",
   "editionCatalog": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000566/display?lang=en",
   "sourceIndex": "https://ablibrary.net/book_content/b/12170/1",
-  "coverage": "Translated selections from pp. 14–19, 22–27, 30–37, 46–50 and 59–60, mapped to logic L.02–L.09 and L.11. No commentary is shown for units lacking translated passages, including L.10 and L.12–L.19. This is a selected translation, not a complete translation of al-Yazdī's commentary.",
+  "coverage": "121 selected translations in 11 of 19 logic divisions, from a historical Arabic commentary of about 400 printed pages. Printed source locations include pp. 14–19, 22–27, 30–37, 46–50, 54, 56–68. This does not constitute an unabridged commentary translation. All available Arabic and English are linked to printed source pages; separate هامش notes are excluded.",
   "complete": false,
   "entries": [
     {
@@ -719,6 +719,506 @@ window.GNAMMA_YAZDI_LAYER={
       "english": "If permanence is tied to a descriptive attribute—so that the predicate remains attached only while the subject falls under a given title—the proposition is called customary (ʿurfiyya). Ordinary usage understands many positive and negative predications this way: the claim concerns the subject while it bears the named description.",
       "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
       "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-56.01",
+      "unit": "L.10",
+      "page": 56,
+      "title": "Subject and predicate",
+      "arabic": "قوله « موضوعا » : لأنه وضع وعين ليحكم عليه . قوله « محمولا » : لأنه أمر جعل حملا لموضوعه .",
+      "english": "On ‘subject’: it is so named because it is set out and designated as what judgement concerns. The predicate is what is made to be predicated of that subject.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/56?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-56.02",
+      "unit": "L.10",
+      "page": 56,
+      "title": "The copula indicates predicative relation",
+      "arabic": "قوله « والدال على النسبة » : أي : اللفظ المذكور في القضية الملفوظة الذي يدل على النسبة الحكمية يسمى رابطة تسمية الدال باسم المدلول فإن الرابطة حقيقة هي النسبة الحكمية .",
+      "english": "On ‘what signifies the relation’: in an expressed proposition, the word indicating the predicative relation is called the copula. Strictly speaking, the copula is the predicative relation itself; the name is extended from what is signified to the word that signifies it.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/56?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-56.03",
+      "unit": "L.10",
+      "page": 56,
+      "title": "Why a copula is an instrumental word",
+      "arabic": "وفي قوله : « والدال على النسبة » إشارة إلى أن الرابطة أداة لدلالتها على النسبة التي هي معنى حرفي غير مستقل .",
+      "english": "The phrase ‘what signifies the relation’ indicates that the copula functions as an instrumental word: it expresses a relational meaning that does not signify independently in the way a noun does.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/56?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-56.04",
+      "unit": "L.10",
+      "page": 56,
+      "title": "Dyadic and triadic expressed propositions",
+      "arabic": "واعلم : أن الرابط قد تذكر في القضية الملفوظة وقد تحذف والقضية على الأول تسمى ثلاثية وعلى الثاني ثنائية .",
+      "english": "The copula may be expressed or omitted in the wording of a proposition. A proposition in which it appears explicitly is called triadic; one in which it is omitted is called dyadic. This concerns how the judgement is expressed, not whether predication occurs.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/56?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-56.05",
+      "unit": "L.10",
+      "page": 56,
+      "title": "Temporal and nontemporal copulae",
+      "arabic": "اعلم : أن الرابطة تنقسم إلى زمانية تدل على اقتران النسبة الحكمية بأحد الأزمنة الثلاثة وغير زمانية بخلاف ذلك .",
+      "english": "Know that copulae divide into temporal and nontemporal forms. A temporal copula connects the predicative relation with one of the three times; a nontemporal copula conveys the relation without that temporal determination.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/56?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-56.06",
+      "unit": "L.10",
+      "page": 56,
+      "title": "Why the pronoun huwa functions as a copula",
+      "arabic": "وذكر الفارابي : أن الحكمة الفلسفية لما نقلت من اللغة اليونانية إلى العربية وجد القوم أن الرابطة الزمانية في اللغة العربية هي الأفعال الناقصة ولكن لم يجدوا في تلك اللغة رابطة غير زمانية تقوم مقام « است » في الفارسية و « استين » في اليونانية ، فاستعاروا للرابطة الغير الزمانية لفظة « هو » و « هي » ونحوهما مع كونهما في الأصل أسماء لا أدوات .",
+      "english": "Al-Fārābī relates that, when philosophy was translated from Greek into Arabic, translators found Arabic defective verbs available for the temporal copula. They did not find an equivalent nontemporal copula of the kind represented by Persian ast or the Greek expression he cites. Accordingly, they adopted forms such as huwa (‘he/it’) and hiya (‘she/it’) for this function, although these are originally nouns or pronouns rather than instrumental particles.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/56?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-56.07",
+      "unit": "L.10",
+      "page": 56,
+      "title": "What makes a proposition conditional",
+      "arabic": "قوله « وإلا فشرطية » : أي : وإن لم يكن الحكم بثبوت شيء لشيء أو نفيه عنه فالقضية شرطية سواء كان الحكم بثبوت نسبة على تقدير أخرى أو نفي ذلك الثبوت أو بالمنافاة بين النسبتين أو بسلب تلك المنافاة فالأولى شرطية متصلة والثانية شرطية منفصلة .",
+      "english": "On ‘otherwise it is conditional’: a proposition is conditional if the judgement does not simply affirm or deny a predicate of a subject. It may affirm or deny one predicative relation upon the supposition of another; that is a connected conditional. Or it may affirm or deny incompatibility between two relations; that is a disjunctive conditional.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/56?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-56.08",
+      "unit": "L.10",
+      "page": 56,
+      "title": "A logical division versus one discovered by survey",
+      "arabic": "واعلم : أن حصر القضية في الحملية والشرطية على ما قرره المصنف حصر عقلي دائر بين النفي والإثبات وأما حصر الشرطية في المتصلة والمنفصلة فاستقرائي .",
+      "english": "The author’s division of propositions into categorical and conditional is a rationally exhaustive division, formed by affirmation and its negation. By contrast, the division of conditionals into connected and disjunctive kinds is obtained by survey or induction; it is not claimed to exclude every conceivable third kind by the same demonstrative method.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/56?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-57.01",
+      "unit": "L.10",
+      "page": 57,
+      "title": "Antecedent and consequent are named by their order",
+      "arabic": "قوله « مقدما » : لتقدمه في الذكر . قوله « تاليا » : لتلوه الجزء الأول .",
+      "english": "‘Antecedent’ is so named because it comes first in the expression, and ‘consequent’ because it follows the first component. These labels do not by themselves decide the disputed analysis of the conditional’s logical subject and predicate.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/57?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-57.02",
+      "unit": "L.10",
+      "page": 57,
+      "title": "Four ways categorical propositions divide by their subject",
+      "arabic": "ومحصل التقسيم : أن الموضوع إما جزئي حقيقي كقولنا : « هذا إنسان » أو كلي ، وعلى الثاني فإما أن يكون الحكم على نفس حقيقة هذا الكلي أو على أفراده وعلى الثاني فإما أن يبين كمية الأفراد المحكوم عليها بأن يبين أن الحكم على كلها أو على بعضها أو لا يبين ذلك بل يهمل فالأولى شخصية والثانية طبيعية والثالثة محصورة والرابعة مهملة .",
+      "english": "The subject may be a real particular, as in ‘This is a human’, yielding a singular proposition. Otherwise it is a universal concept. In that case, judgement may concern the nature itself, yielding a natural proposition, or its instances. If the quantity of those instances is expressly indicated, the proposition is quantified; if their quantity is left unstated, it is indefinite. These are four distinct forms, classified by the subject and how it is considered.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/57?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-57.03",
+      "unit": "L.10",
+      "page": 57,
+      "title": "Quantified propositions specify all or some instances",
+      "arabic": "ثم إن المحصورة إن بين فيها أن الحكم على كل أفراد الموضوع فكلية وإن بين أن الحكم على بعض أفراده فجزئية وكل منهما إما موجبة أو سالبة .",
+      "english": "A quantified proposition is universal if the judgement is specified as applying to every instance of the subject and particular if it applies to some. Either kind may be affirmative or negative, giving the familiar four quantified categorical forms.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/57?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-57.04",
+      "unit": "L.10",
+      "page": 57,
+      "title": "Why the quantifier is called a sūr",
+      "arabic": "ولا بد في كل من تلك المحصورات الأربع من أمر يبين كمية أفراد الموضوع يسمى ذلك الأمر ب « السور » إذ كما أن سور البلد محيط به كذلك هذا الأمر محيط بما حكم عليه من أفراد الموضوع .",
+      "english": "Every one of the four quantified proposition types requires an expression fixing the extent of the subject instances to which the judgement applies. It is called a sūr (‘enclosing wall’ or quantifier), by analogy with a city wall enclosing a defined area.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/57?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-57.05",
+      "unit": "L.10",
+      "page": 57,
+      "title": "Universal and particular affirmative quantifiers",
+      "arabic": "فسور الموجبة الكلية هو « كل » ولام الاستغراق وما يفيد معناهما من أي لغة كانت وسور الموجبة الجزئية هو « بعض » وواحد « واحد » وما يفيد مؤداهما .",
+      "english": "The universal affirmative uses ‘every’ (kull), the all-inclusive lām, or an equivalent expression in another language. The particular affirmative uses ‘some’ (baʿḍ), ‘one’, or expressions with the same force. The quantifier fixes the amount of the subject under consideration.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/57?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-57.06",
+      "unit": "L.10",
+      "page": 57,
+      "title": "Quantifiers in negative propositions",
+      "arabic": "وسور السالبة الكلية « لا شيء » و « لا واحد » ونظائرهما وسور السالبة الجزئية « ليس بعض » و « بعض ليس » و « ليس كل » وما يساويها .",
+      "english": "The universal negative is marked by expressions such as ‘no thing’ or ‘not a single one’. The particular negative is marked by ‘some are not’, ‘not some’, ‘not every’, or equivalent constructions. These formulations must be analysed by the scope of negation over subject quantity.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/57?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-58.01",
+      "unit": "L.10",
+      "page": 58,
+      "title": "An indefinite proposition has particular force",
+      "arabic": "وذلك لأن المهملة والجزئية متلازمتان إذ كلما صدق الحكم على أفراد الموضوع في الجملة صدق على بعض أفراده وبالعكس فالمهملة مندرجة تحت الجزئية .",
+      "english": "An indefinite proposition is treated as equivalent in inferential force to a particular proposition: when a predication holds of the subject’s instances in some respect, it holds of some of them, and conversely. This is a rule within the traditional treatment, not a licence to ignore empty-term assumptions in formal logic.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/58?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-58.02",
+      "unit": "L.10",
+      "page": 58,
+      "title": "Why sciences privilege quantified proposition types",
+      "arabic": "والشخصية لا يبحث عنها بخصوصها فإنه لا كمال في معرفة الجزئيات لتغيرها وعدم ثباتها بل إنما يبحث عنها في ضمن المحصورات التي يحكم فيها على الأشخاص إجمالا والطبيعية لا يبحث عنها في العلوم أصلا فإن الطبائع الكلية من حيث نفس مفهومها كما هو موضوع الطبيعية لا من حيث تحققها في ضمن الأشخاص غير موجودة في الخارج .",
+      "english": "Science chiefly investigates quantified propositions. Singular propositions about changing individuals are not its principal aim; individual cases are studied through general quantified judgements. Pure propositions about a nature considered solely as a concept likewise do not by themselves assert the nature’s external instantiation. The underlying methodological restriction must be read within this account of demonstrative science.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/58?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-58.03",
+      "unit": "L.10",
+      "page": 58,
+      "title": "Affirmation requires its subject to be established",
+      "arabic": "قوله « ولا بد في الموجبة » أي : في صدقها وذلك لأن الحكم في الموجبة بثبوت شيء لشيء وثبوت شيء لشيء فرع لثبوت المثبت له أعني : الموضوع .",
+      "english": "On ‘the affirmative requires the existence of its subject’: this refers to the affirmative’s truth. To affirm that something belongs to something presupposes that the subject, to which the predicate is attributed, has the required kind of establishment.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/58?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-58.04",
+      "unit": "L.10",
+      "page": 58,
+      "title": "External propositions concern actual instances",
+      "arabic": "لأن الحكم فيها إما على الموضوع الموجود في الخارج محققا نحو : « كل إنسان حيوان » بمعنى : أن كل إنسان موجود في الخارج حيوان في الخارج .",
+      "english": "An external proposition concerns a subject actually realised outside the mind. ‘Every human is an animal’ then means that every human who exists externally is externally an animal. The range of the claim is actual external instances.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/58?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-58.05",
+      "unit": "L.10",
+      "page": 58,
+      "title": "Ḥaqīqiyya includes possible, not just actual, subjects",
+      "arabic": "وإما على الموضوع الموجود في الخارج مقدرا نحو : « كل إنسان حيوان » بمعنى : أن كل ما لو وجد في الخارج كان إنسانا فهو على تقدير وجوده في الخارج حيوان وهذا الموجود المقدر إنما اعتبروه في الأفراد الممكنة لا الممتنعة .",
+      "english": "A ḥaqīqiyya proposition considers externally possible subjects under the supposition that they exist. ‘Every human is an animal’ means that anything which would be human if it existed externally would, on that supposition, be an animal. The supposed individuals are possible individuals, not impossible ones; this is broader than a claim restricted to actual instances.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/58?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-58.06",
+      "unit": "L.10",
+      "page": 58,
+      "title": "Mental propositions can concern externally impossible subjects",
+      "arabic": "وإما على الموضوع الموجود في الذهن كقولنا : « شريك الباري ممتنع » بمعنى : أن كلما يوجد في العقل ويفرضه العقل شريك الباري فهو موصوف في الذهن بالامتناع في الخارج .",
+      "english": "A mental proposition considers a subject as posited in the intellect. For example, ‘A partner of the Creator is impossible’ concerns whatever the intellect posits as such a partner and predicates external impossibility of it. Its subject need not have a possible instance outside the mind.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/58?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-58.07",
+      "unit": "L.10",
+      "page": 58,
+      "title": "Infinitation may affect subject, predicate, or both",
+      "arabic": "قوله « حرف السلب » : ك « لا » و « ليس » وغيرهما مما يشاركهما في معنى السلب . قوله « من جزء » : إما من الموضوع فقط أو من المحمول فقط أو من كليهما .",
+      "english": "On ‘negative particle’: this includes lā, laysa, and other expressions with a comparable negative function. When negation forms part of a constituent rather than negating the entire predicative relation, it may be attached to the subject, the predicate, or both. This prepares the later distinction between infinitated and non-infinitated propositions.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/58?lang=ar",
+      "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-54.01",
+      "unit": "L.10",
+      "page": 54,
+      "title": "The proposition is a mental or verbal composite",
+      "arabic": "قوله « قول » : القول في عرف هذا الفن يقال للمركب سواء كان مركبا معقولا أو ملفوظا فالتعريف يشتمل على القضية المعقولة والملفوظة .",
+      "english": "On ‘discourse’ (qawl): in this discipline the term applies to a composite, whether intelligible or spoken. Consequently the definition of a proposition includes both the proposition as grasped by the intellect and the proposition as expressed in words.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/54?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), not later margin (هامش)"
+    },
+    {
+      "id": "YZ-54.02",
+      "unit": "L.10",
+      "page": 54,
+      "title": "Truth and falsity are correspondence and noncorrespondence",
+      "arabic": "قوله « الصدق » : هو المطابقة للواقع والكذب هو اللامطابقة للواقع .",
+      "english": "On ‘truth’: it consists in correspondence to what is actually the case. Falsity consists in a failure of such correspondence. The proposition is evaluated against reality, not merely against the hearer’s knowledge of it.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/54?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), not later margin (هامش)"
+    },
+    {
+      "id": "YZ-61.01",
+      "unit": "L.11",
+      "page": 61,
+      "title": "An actual predication need not have modal necessity",
+      "arabic": "قوله « أو بفعليتها » : أي : يتحقق النسبة بالفعل ، فالمطلقة العامة هي التي حكم فيها بكون النسبة متحققة بالفعل ، أي : في أحد الأزمنة الثلاثة وتسميتها « بالمطلقة » ، لأن هذا هو المفهوم من القضية عند إطلاقها وعدم تقييدها بالضرورة أو الدوام أو غير ذلك من الجهات .",
+      "english": "On ‘its actuality’: the predicative relation is realised in fact, at one of the three times. The resulting proposition is generally absolute (muṭlaqa ʿāmma), since an unqualified assertion ordinarily conveys actuality without explicitly imposing necessity, permanence, or another modality.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/61?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-61.02",
+      "unit": "L.11",
+      "page": 61,
+      "title": "General possibility denies the necessity of the contrary",
+      "arabic": "قوله « أو بعدم ضرورة » إلخ : إذا حكم في القضية بأن خلاف النسبة المذكورة فيها ليس ضروريا نحو قولنا : « زيد كاتب بالإمكان » يعني : أن الكتابة غير مستحيلة له بمعنى : أن سلبها عنه ليس ضروريا ، سميت القضية حينئذ « ممكنة » لاشتمالها على الإمكان وهو سلب الضرورة .",
+      "english": "On ‘the absence of necessity’: to say that Zayd can write means that writing is not impossible for him; equivalently, the contrary judgement, that he cannot write, is not necessary. This is general possibility (imkān ʿāmm): a denial of the necessity of the contrary, not yet the stronger claim that neither side is necessary.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/61?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-61.03",
+      "unit": "L.11",
+      "page": 61,
+      "title": "What makes a modal proposition simple",
+      "arabic": "قوله « فهذه بسائط » : أي : القضايا الثمانية المذكورة من جملة الموجهات بسائط . اعلم : أن القضية الموجهة إما بسيطة وهي ما تكون حقيقتها إما إيجابا فقط أو سلبا فقط كما مر في الموجهات الثمان .",
+      "english": "On ‘these are simple forms’: the eight previously identified modal propositions are simple, because each is fundamentally one affirmation or one denial. They must be distinguished from compound modalities, whose content includes an additional proposition of opposite quality.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/61?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-61.04",
+      "unit": "L.11",
+      "page": 61,
+      "title": "A compound modality contains an implicit second judgement",
+      "arabic": "وإما مركبة وهي التي تكون حقيقتها مركبة من الإيجاب والسلب بشرط أن لا يكون الجزء الثاني فيها مذكورا بعبارة مستقلة سواء كان في اللفظ تركيب كقولنا : « كل إنسان ضاحك بالفعل لا دائما » فقولنا : « لا دائما » إشارة إلى حكم سلبي .",
+      "english": "A compound modal proposition combines affirmation and denial, but the second component is not expressed as a separate independent sentence. For example, ‘Every human actually laughs, but not permanently’ contains an affirmative judgement together with an implicit negative judgement indicated by ‘not permanently’.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/61?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-61.05",
+      "unit": "L.11",
+      "page": 61,
+      "title": "A grammatically simple expression can be logically compound",
+      "arabic": "أو لم يكن في اللفظ تركيب كقولنا : « كل إنسان كاتب بالإمكان الخاص » فإنه في المعنى قضيتان ممكنتان عامتان أي : كل إنسان كاتب بالإمكان العام ولا شيء من الإنسان بكاتب بالإمكان العام ، والعبرة بالإيجاب والسلب حينئذ بالجزء الأول الذي هو أصل القضية .",
+      "english": "Even a single grammatical modal expression can be compound in logical content. ‘Every human can write by special possibility’ is analysed as two general-possibility judgements, one concerning writing and one concerning its negation. The overall proposition is classified as affirmative or negative by its first, principal component.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/61?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-62.01",
+      "unit": "L.11",
+      "page": 62,
+      "title": "Nonpermanence is qualified by the subject’s entire existence",
+      "arabic": "قوله « باللادوام الذاتي » : ومعنى اللادوام الذاتي : أن هذه النسبة المذكورة في القضية ليست دائمة ما دام ذات الموضوع موجودة فيكون نقيضها واقعا البتة في زمان من الأزمنة .",
+      "english": "‘Nonpermanence relative to the subject itself’ means that the asserted relation does not hold throughout the subject’s existence. Consequently the opposing relation actually holds at some time. This temporal implication is stronger than merely saying the original relation is not necessary.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/62?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-62.02",
+      "unit": "L.11",
+      "page": 62,
+      "title": "The special conditioned necessity",
+      "arabic": "قوله « المشروطة الخاصة » : هي المشروطة العامة المقيدة باللادوام الذاتي نحو : كل كاتب متحرك الأصابع بالضرورة ما دام كاتبا لا دائما .",
+      "english": "A specially conditioned proposition (mashrūṭa khāṣṣa) combines necessity while the subject bears the relevant description with nonpermanence over the subject’s entire existence. Finger movement may be necessary for someone while writing without being permanently true of that person as such.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/62?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-62.03",
+      "unit": "L.11",
+      "page": 62,
+      "title": "The special customary form",
+      "arabic": "قوله « والعرفية الخاصة » : هي العرفية العامة المقيدة باللادوام الذاتي كقولنا : بالدوام لا شيء من الكاتب بساكن الأصابع ما دام كاتبا لا دائما .",
+      "english": "The special customary proposition (ʿurfiyya khāṣṣa) combines permanence relative to an applicable description with nonpermanence throughout the subject’s life. The commentary uses the example that someone is not still-fingered while writing, although that condition does not define every moment of the person’s existence.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/62?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-62.04",
+      "unit": "L.11",
+      "page": 62,
+      "title": "The special temporal forms",
+      "arabic": "قوله « والوقتية والمنتشرة » : لما قيدت الوقتية المطلقة والمنتشرة المطلقة باللادوام الذاتي حذف من اسميهما لفظ الإطلاق فسميت الأولى وقتية والثانية منتشرة .",
+      "english": "When the absolutely temporal and the absolutely diffuse-temporal modalities are restricted by nonpermanence relative to the subject itself, ‘absolute’ drops from their names. The resulting forms are respectively the temporal (waqtiyya) and the diffuse (muntashira). This is a terminological distinction marking an added modal restriction.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/62?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-62.05",
+      "unit": "L.11",
+      "page": 62,
+      "title": "Nonnecessity permits the opposite",
+      "arabic": "قوله « باللاضرورة الذاتية » : ومعنى اللاضرورة الذاتية : أن هذه النسبة المذكورة في القضية ليست ضرورية ما دام ذات الموضوع موجودة فيكون هذا حكما بإمكان نقيضها لأن الإمكان هو سلب ضرورة الطرف المقابل .",
+      "english": "‘Nonnecessity relative to the subject’ means that the asserted predication is not necessary for as long as the subject exists. This amounts to allowing its negation as possible. Unlike nonpermanence, it does not by itself assert that the opposite actually occurs at some time.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/62?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-63.01",
+      "unit": "L.11",
+      "page": 63,
+      "title": "The existential nonnecessary form",
+      "arabic": "قوله « فتسمى الوجودية اللاضرورية » : لأن معنى المطلقة العامة هي فعلية النسبة ووجودها في وقت من الأوقات ولاشتمالها على اللاضرورة فالوجودية اللاضرورية هي المطلقة العامة المقيدة باللاضرورة الذاتية .",
+      "english": "The existential nonnecessary proposition (wujūdiyya lā-ḍarūriyya) joins actual realisation of the predicative relation at some time with a denial that this relation is necessary throughout the subject’s existence. Its two components are actual predication and the possibility of its contrary.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/63?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-63.02",
+      "unit": "L.11",
+      "page": 63,
+      "title": "Why descriptive nonpermanence cannot modify customary permanence",
+      "arabic": "قوله « أو باللادوام الذاتي » : إنما قيد اللادوام بالذاتي ، لأن تقييد العامتين باللادوام الوصفي غير صحيح ضرورة تنافي اللادوام بحسب الوصف مع الدوام بحسب الوصف .",
+      "english": "Nonpermanence here is specified relative to the subject’s existence, not relative to the description, because customary permanence while the description applies would contradict an assertion that the relation is not permanent while that very description applies. The two qualifications must concern different respects.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/63?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-63.03",
+      "unit": "L.11",
+      "page": 63,
+      "title": "Some logically coherent compounds lack conventional names",
+      "arabic": "فالاحتمالات الحاصلة من ملاحظة كل من تلك القضايا الأربع مع كل من تلك القيود الأربعة ستة عشر ثلاثة منها غير صحيحة وأربعة منها صحيحة معتبرة والتسعة الباقية صحيحة غير معتبرة .",
+      "english": "Combining each of four relevant simple modalities with each of four restrictions gives sixteen theoretical cases. Of these, three are inconsistent, four are accepted as standard modal types, and nine are logically coherent but not conventionally admitted into the established list. Logical consistency is therefore not the same as belonging to the recognised nomenclature.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/63?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-63.04",
+      "unit": "L.11",
+      "page": 63,
+      "title": "Modal composition is not exhausted by the textbook list",
+      "arabic": "وينبغي أن يعلم : أن التركيب لا ينحصر فيما أشرنا إليه بل سيجيء الإشارة إلى بعض آخر ويمكن تركيبات كثيرة أخرى لم يتعرضوا لها لكن المتنبه بعد التنبيه بما ذكروه يتمكن من استخراج أي قدر شاء .",
+      "english": "One must understand that compound modality is not exhausted by the familiar named forms. Further combinations are possible even where the textbook does not enumerate them. Once the principles of composition are understood, the reader can construct additional validly described combinations while separately checking their consistency.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/63?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-64.01",
+      "unit": "L.11",
+      "page": 64,
+      "title": "Special possibility denies necessity on both sides",
+      "arabic": "قوله « أيضا » : أي : كما أنه حكم في الممكنة العامة بلا ضرورة الجانب المخالف ، فقد يحكم فيها بلا ضرورة الجانب الموافق أيضا فتصير القضية مركبة من ممكنتين عامتين .",
+      "english": "‘Also’ means that general possibility initially denies the necessity of the contrary side; the special form adds denial of necessity on the side of the original predication as well. Thus special possibility comprises two general possibilities, one for each contradictory alternative.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/64?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-64.02",
+      "unit": "L.11",
+      "page": 64,
+      "title": "Seven recognised compound modal types",
+      "arabic": "قوله « وهذه مركبات » : أي : هذه القضايا السبع المذكورة وهي : المشروطة الخاصة والعرفية الخاصة والوقتية والمنتشرة والوجودية اللاضرورة والوجودية اللادائمة والممكنة الخاصة .",
+      "english": "‘These are compounds’ refers to seven types: the special conditioned, special customary, temporal, diffuse, existential nonnecessary, existential nonpermanent, and special possible. Each combines a main modal judgement with another qualification that entails an affirmative or negative component.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/64?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-64.03",
+      "unit": "L.11",
+      "page": 64,
+      "title": "Quantity is preserved across a compound proposition",
+      "arabic": "قوله « مخالفتي الكيفية » أي : في الإيجاب والسلب وقد مر بيان ذلك في بيان معنى اللادوام واللاضرورة وأما الموافقة في الكمية أي : الكلية والجزئية ، فلأن الموضوع في القضية المركبة أمر واحد وقد حكم عليه بحكمين مختلفين بالإيجاب والسلب .",
+      "english": "‘Opposed in quality’ means that the two component propositions differ in affirmation versus negation. They nevertheless agree in quantity—universal or particular—because they concern the same subject under the same scope. One cannot change the subject range while claiming to have formed the intended compound modality.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/64?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-65.01",
+      "unit": "L.12",
+      "page": 65,
+      "title": "An affirmative conditional need not have affirmative components",
+      "arabic": "قوله « على تقدير أخرى » : سواء كانت النسبتان ثبوتيتين أو سلبيتين أو مختلفتين فقولنا : « كلما لم يكن زيد حيوانا لم يكن إنسانا » متصلة موجبة .",
+      "english": "On ‘upon the supposition of another relation’: the two component relations may both be affirmative, both negative, or of different quality. ‘Whenever Zayd is not an animal, he is not a human’ is an affirmative connected conditional, even though its two component propositions are negative.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/65?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-65.02",
+      "unit": "L.12",
+      "page": 65,
+      "title": "Affirming or denying the connection is the conditional's quality",
+      "arabic": "فالمتصلة الموجبة ما حكم فيها باتصال النسبتين والسالبة ما حكم فيها بسلب اتصالهما نحو : ليس البتة كلما كانت الشمس طالعة كان الليل موجودا .",
+      "english": "A connected conditional is affirmative when it judges that two propositional relations are connected, and negative when it denies that connection. ‘It is not the case that whenever the sun rises, night exists’ is therefore a negative connected conditional. Its quality is not decided by the polarity of the component clauses.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/65?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-65.03",
+      "unit": "L.12",
+      "page": 65,
+      "title": "Necessary connection versus mere coincidental concomitance",
+      "arabic": "وأما الاتفاقية فهي ما حكم فيها بمجرد الاتصال أو نفيه من غير أن يكون ذلك مستندا إلى العلاقة نحو : كلما كان الإنسان ناطقا فالحمار ناهق .",
+      "english": "A coincidental conditional (ittifāqiyya) merely affirms or denies that two relations accompany one another, without grounding the connection in an explanatory or entailment relation. An accidental conjunction of human speech and a donkey's braying exemplifies the distinction from a necessary conditional (luzūmiyya).",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/65?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-66.01",
+      "unit": "L.12",
+      "page": 66,
+      "title": "A disjunctive proposition affirms or denies incompatibility",
+      "arabic": "قوله « بتنافي النسبتين » : سواء كان النسبتان ثبوتيتين أو سلبيتين أو مختلفتين فإن كان الحكم فيها بتنافيهما فهي منفصلة موجبة وإن كان بسلب تنافيهما فهي منفصلة سالبة .",
+      "english": "On ‘incompatibility between the two relations’: their component propositions may be affirmative, negative, or mixed. If their incompatibility is asserted, the disjunctive proposition is affirmative; if their incompatibility is denied, it is negative. The quality concerns the relation between alternatives.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/66?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-66.02",
+      "unit": "L.12",
+      "page": 66,
+      "title": "Exclusive disjunction concerns both truth and falsity",
+      "arabic": "قوله « وهي الحقيقية » : فالمنفصلة الحقيقية ما حكم فيها بتنافي النسبتين في الصدق والكذب كقولنا : إما أن يكون هذا العدد زوجا وإما أن يكون هذا العدد فردا .",
+      "english": "The genuine or exclusive disjunctive (ḥaqīqiyya) declares two alternatives incompatible both in being true and in being false: a number is either even or odd. They cannot both be true, and they cannot both be false, under the relevant division.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/66?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-67.01",
+      "unit": "L.12",
+      "page": 67,
+      "title": "Exclusive-of-conjunction versus exclusive-of-exhaustion",
+      "arabic": "قوله : « أو صدقا فقط » : أي : لا في الكذب أو مع قطع النظر عن الكذب حتى جاز أن يجتمع النسبتان في الكذب وأن لا يجتمعا ويقال للمعنى الأول مانعة الجمع بالمعنى الأخص وللثاني مانعة الجمع بالمعنى الأعم .",
+      "english": "‘In truth alone’ means that the two alternatives cannot both be true, while their joint falsity may either be permitted or simply left undetermined. This distinguishes the narrower and broader senses of māniʿat al-jamʿ: prohibition of joint truth does not by itself establish that at least one alternative is true.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/67?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-67.02",
+      "unit": "L.12",
+      "page": 67,
+      "title": "Exclusive-of-emptiness",
+      "arabic": "قوله : « أو كذبا فقط » : أي : لا في الصدق ، أو مع قطع النظر عن الصدق ، والأول مانعة الخلو بالمعنى الأخص والثاني بالمعنى الأعم .",
+      "english": "‘In falsity alone’ means the alternatives cannot both be false, while their being simultaneously true may be disallowed or simply left undecided. This is māniʿat al-khulū, a disjunction that excludes both alternatives' being absent; it is distinct from excluding their joint truth.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/67?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-68.01",
+      "unit": "L.12",
+      "page": 68,
+      "title": "Conditionals admit quantity and singularity",
+      "arabic": "قوله « ثم الحكم » إلخ : كما أن الحملية تنقسم إلى محصورة ومهملة وشخصية وطبيعية ، كذلك الشرطية أيضا سواء كانت متصلة أو منفصلة تنقسم إلى المحصورة الكلية والجزئية والمهملة والشخصية ولا يتعقل الطبيعية هاهنا .",
+      "english": "Just as categoricals are classified by quantity and the kind of subject, connected and disjunctive conditionals admit universal, particular, indefinite, and singular forms. The corresponding ‘natural’ form—predicating a property of a universal nature as such—is not applicable here in the same way.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/68?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-68.02",
+      "unit": "L.12",
+      "page": 68,
+      "title": "Quantifiers in conditionals",
+      "arabic": "قوله « فكلية » : وسورها في المتصلة الموجبة « كلما » و « متى » و « مهما » وما في معناها وفي المنفصلة « دائما » و « أبدا » ونحوهما هذا في الموجبة وأما في السالبة مطلقا فسورها « ليس البتة » .",
+      "english": "A universal connected conditional is signalled by expressions such as ‘whenever’, ‘when’, and ‘whatever’; universal disjunctions may be qualified by ‘always’ or ‘ever’. A universal negative conditional can use ‘never’ or ‘it is not at all the case’. The quantifier specifies the range of suppositions rather than merely the individual terms.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/68?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-68.03",
+      "unit": "L.12",
+      "page": 68,
+      "title": "Particular and indefinite conditionals",
+      "arabic": "قوله « فجزئية » : وسورها في الموجبة متصلة كانت أو منفصلة « قد يكون » وفي السالبة كذلك « قد لا يكون » . قوله « فشخصية » : كقولك : إن جئتني اليوم أكرمك . قوله « فمهملة » : نحو : إذا كان الشيء إنسانا كان حيوانا .",
+      "english": "A particular affirmative conditional may be introduced by ‘it may happen that’; the particular negative by ‘it may happen that not’. A singular conditional fixes a particular occasion, such as ‘If you come to me today, I shall honour you’. An indefinite conditional leaves the scope unstated, such as ‘If something is human, it is an animal’.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/68?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
     }
   ]
 };
