@@ -742,8 +742,15 @@ const logicalUniversalsAndPropositions=[
     "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
   }
 ];
-const seen=new Set(prior.terms.map(t=>prior.norm(t.ar)));
+/* Homographs can have distinct technical senses. In particular المعرف without
+ * vowels can be muʿarrif (defining expression) or muʿarraf (definiendum).
+ * Deduplicate by Arabic headword AND English sense, not vowelless Arabic alone. */
+const lemmaKey=t=>prior.norm(t.ar)+' ⟐ '+t.en.toLocaleLowerCase();
+const seen=new Set(prior.terms.map(lemmaKey));
 const terms=prior.terms.slice();
-for(const term of [...extra,...supplementary,...universals,...speciesTerms,...logicalUniversalsAndPropositions]){if(!seen.has(prior.norm(term.ar))){terms.push(term);seen.add(prior.norm(term.ar))}}
+for(const term of [...extra,...supplementary,...universals,...speciesTerms,...logicalUniversalsAndPropositions]){
+ const key=lemmaKey(term);
+ if(!seen.has(key)){terms.push(term);seen.add(key)}
+}
 window.GNAMMA_TAHDHIB_GLOSSARY=Object.freeze({...prior,terms,version:'logic-plus-yazdi-definition-v5',historicallyCollated:false});
 })();
