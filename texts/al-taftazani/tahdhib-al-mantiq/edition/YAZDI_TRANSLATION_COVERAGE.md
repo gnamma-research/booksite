@@ -55,3 +55,20 @@ The 11 previously selected L.03 excerpts remain in the archival bilingual excerp
 **Critical status:** complete transcription/translation of the *searchable Qum main-commentary text* within this page range, *not* certified against the photographic Qum volume, the Gujarat 2013 print, Tehran or a manuscript. The sentence boundary at p.22/23, p.23/24, p.24/25, p.27/28 and p.28/29 is preserved, with open-sentence English page-seam notation. **Q p.24 retains** the problematic reading `ولا لازم ذهني` even though the argument derives implication; it is expressly flagged as a proposed critical locus and is **not silently emended**. Q p.20 is blank and p.21 supplies the source heading for the first maqṣad. Q p.30 begins the next unit.
 
 All source-page blocks have exact Q source URLs and a separate explanatory note field. No whole-work completeness is implied; L.01–L.02 and L.04–L.19 remain predominantly excerpt selections.
+
+
+## 6 November — second consecutive Qum block: pp.30–37 (L.04–L.06)
+A new working main-ḥāshiya document, `yazdi-continuous-universals-data.js`, transcribes and translates **eight consecutive printed Qum pages (30–37)** as **ten nonoverlapping reading segments**. The split is essential: Q31 contains the end of individual/universal classification and the beginning of the four relations (L.04→L.05), while Q35 ends the relation/particularity argument and begins the five predicables (L.05→L.06). The reader preserves print order and source-page locators, and labels the subdivisions **editorial**.
+
+The sequence covers:
+- Q30–31a: concept, meaning, signified; supposition versus intellectual possibility; the various possible instantiation cases (L.04)
+- Q31b–35a: four relations of two universals, quantified reconstructions, complements, counterfactual proofs, partial exclusion, real and relative particularity (L.05)
+- Q35b–37: division of the five predicables and the analysis of proximate versus remote genus (L.06)
+
+**Translation is continuous within the main شرح text delimited by the searchable site; the Q37 print-layout boundary has NOT been resolved.** The website's `هامش` blocks can begin with fragments of an ongoing commentary sentence due to page layout, and nothing below the marked marginal header is attributed as al-Yazdī without photographic proof. Q30's main text is only a short paragraph: the long following note is another author's gloss. These are **single-print searchable transcriptions**, not confirmed diplomatic transcriptions or a definitive critical edition.
+
+The archival selection register remains at **177**. The 10 existing selected quotes from L.04–L.06 are replaced by **10 continuous page/topic segments** in the visible reader, without repetition. Together with the first Q22–29 block, the reader now provides **16 distinct consecutive Qum printed pages across L.03–L.06**. Because 31 and 35 are split, they appear as 18 source segments (8 + 10). The total visible commentary cards remain **174** and are not to be conflated with 177 unique historical selected excerpts.
+
+**Unresolved theoretical apparatus:** al-Yazdī allows uninstantiated universals on Q31, yet Q32 presents four apparently exhaustive extensional relations among two universals. If the terms’ external extensions are empty, extensional equality and disjointness can both hold; these logical conditions are not a four-way exclusive partition without a nonempty or intensional qualification. This is an editor's analytical warning, not an emendation or an assertion that al-Yazdī adopted modern set-theoretic semantics.
+
+**Image verification needed:** Qum pp.30–37, especially Q37 at the شرح/هامش boundary; then Gujarat printed comparison and manuscript readings before critical certification.
