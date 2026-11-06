@@ -2,7 +2,7 @@
 
 **Source edition:** Qum, 400-page print of `al-Ḥāshiya ʿalā Tahdhīb al-Manṭiq`; original page locations are retained. Text index: https://ablibrary.net/book_content/b/12170/1?lang=ar . Independent readable display of selected main-commentary pages: https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/70 .
 
-**Verified deliverable as of 6 November 2026:** **158 individually source-linked bilingual selections spanning all 19 editorial logic divisions**. This does **not** mean 19 full chapters or an entire historical commentary have been translated. The translated portion is a small, noncontinuous sample of the primary *sharḥ*; the printed **هامش** contains separately attributed later glosses, not al-Yazdī's own continuous argument, and is excluded.
+**Verified deliverable as of 6 November 2026:** **167 individually source-linked bilingual selections spanning all 19 editorial logic divisions**. This does **not** mean 19 full chapters or an entire historical commentary have been translated. The translated portion is a small, noncontinuous sample of the primary *sharḥ*; the printed **هامش** contains separately attributed later glosses, not al-Yazdī's own continuous argument, and is excluded.
 
 | Logic division | Source edition pages represented | Translated selections | Certification status |
 |---|---|---:|---|
@@ -23,10 +23,10 @@
 | L.15 | 81 | 3 | Selected excerpts only; full section translation not certified |
 | L.16 | 86, 98 | 4 | Selected excerpts only; full section translation not certified |
 | L.17 | 102, 104 | 9 | Selected excerpts only; full section translation not certified |
-| L.18 | 105, 110 | 6 | Selected excerpts only; full section translation not certified |
-| L.19 | 114 | 3 | Selected excerpts only; full section translation not certified |
+| L.18 | 105, 107, 110 | 14 | Selected excerpts only; full section translation not certified |
+| L.19 | 114 | 4 | Selected excerpts only; full section translation not certified |
 
-**This continuation (37 additions from 13 inspected printed pages):**
+**Earlier continuation (37 additions from 13 inspected printed pages):**
 - L.01: p. 7, author's opening, praise and divine name.
 - L.13: pp. 70 and 72, contradiction, quantifier differences and compound modal negation.
 - L.14: pp. 74 and 76, categorical and conditional conversion, including modal qualification.
@@ -39,3 +39,5 @@
 **Editorial safeguards:** Only the continuous main commentary is credited to al-Yazdī. Each passage preserves Arabic, a distinct English translation, a printed page, source URL and the exact target L-unit. Source-page excerpts are short selections; no invented joining text bridges gaps. Medieval modal entailment is not silently replaced by modern truth-functional logic. The reported variant at L.19 is expressly al-Yazdī's assessment, not an independently collated manuscript verdict. Translated selections are not counted as critically certified pages.
 
 **Remaining work:** full continuous passage-by-passage translation of the main commentary (including the many skipped lines within each represented division), independent review against printed/available manuscript witnesses, careful attribution of any `شرح` versus `هامش` voices, and final critical proofreading. The original Taftāzānī matn, the 1,044 kalām units and canonical PDFs have not been modified by this translation-layer expansion.
+
+**6 November second phase (+9, 167 total):** Source-backed translation extends printed p.105 (the naming of induction), p.107 (form of analogy, three premises, causal premise, concomitance), p.110 (five arts by epistemic/imaginative matter), and p.114 (the originally omitted conciliatory treatment of the reported variant `بالبرهان`). The last printed page now has continuous main-commentary coverage in the searchable print; photographic and independent manuscript collation remain outstanding. The distinct critical-witness source register is [YAZDI_CRITICAL_STATUS.md](YAZDI_CRITICAL_STATUS.md).
