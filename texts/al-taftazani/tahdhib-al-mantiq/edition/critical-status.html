@@ -59,7 +59,15 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
 <p>Five consecutive main-text page positions cover mental and spoken propositions, truth as correspondence, subject/predicate/copula, al-Fārābī’s account of borrowing <i>huwa</i> as a nontemporal copula, conditionals, categorical quantification, and the distinct ways in which the subject of an affirmative proposition is required to exist.</p>
 <p><strong>Authorship qualification:</strong> Qum page 55 contains only a short continuation of al-Yazdī’s page-54 text. The substantial lower marginal note citing al-Sharīf al-Jurjānī is separately attributed to Mīrzā Muḥammad ʿAlī and is not included as al-Yazdī. The main commentary continues beyond p.58 into p.59; no conclusion is invented.</p>
 <div class="table-wrap"><table><thead><tr><th>Qum page</th><th>Editorial topic</th><th>Text status</th></tr></thead><tbody id="continuous-q54-58"><tr><td colspan="3">Loading five-page register…</td></tr></tbody></table></div>
-<p><strong>Continuous reading coverage:</strong> Qum pp.22–37, 39–51 and 54–58. These are <strong>34 distinct printed-page positions</strong> (36 rendered bilingual segments because pp.31 and 35 are divided at subject boundaries), not 34 complete pages of undiluted main commentary. The entire work remains far from finished and is not manuscript-certified.</p>
+<p><strong>Continuous reading coverage:</strong> Qum pp.22–37, 39–51 and 54–69: <strong>45 distinct printed-page positions</strong> and <strong>47 bilingual source-page/topic blocks</strong> (pp.31 and 35 each span two editorial divisions). The historical <strong>177 selected excerpts</strong> remain archived; the public reader displays <strong>114 nonduplicating commentary blocks</strong>. These are not 45 complete pages of undiluted main commentary. The entire work remains far from finished and is not manuscript-certified.</p>
+<h2>Simple and composite modal logic: Qum pp.59–64</h2>
+<p>Six further consecutive main-<i>ḥāshiya</i> page positions cover the distinction between **modal matter and stated modality**, four modalities of necessity, necessity versus permanence, actual and possible predication, and the seven named composite modes. Qum p.63 explicitly examines <strong>16 combinations</strong> of base propositions and modal qualifications: three invalid, four acceptable and conventionally recognized, and nine acceptable without belonging to that conventional list.</p>
+<p>These are translations of the Qum searchable main <span lang="ar" dir="rtl">شرح</span>, not an image-collated Arabic edition. The large printed marginal annotations are not attributed to al-Yazdī.</p>
+<div class="table-wrap"><table><thead><tr><th>Qum page</th><th>Editorial topic</th><th>Textual status</th></tr></thead><tbody id="continuous-q59-64"><tr><td colspan="3">Loading source pages…</td></tr></tbody></table></div>
+<h2>Connected, disjunctive and quantified conditionals: Qum pp.65–69</h2>
+<p>Five further source-page positions distinguish intrinsic, relation-grounded conditionals from accidental concurrence; truth-excluding, falsity-excluding and fully exclusive disjunction; and conditional quantity over suppositions of the antecedent. Qum p.65 begins by completing the prior modal discussion; p.69 ends the conditional section immediately before the next chapter on contradiction at p.70.</p>
+<p><strong>Source attribution:</strong> the extensive separately marked <span lang="ar" dir="rtl">هامش</span> discussions about triple disjunctions and imperatival consequents belong to later commentators, not to al-Yazdī's principal text. Read the <a href="YAZDI_Q59_69_CRITICAL.md">source and critical apparatus register</a> for the exact eleven page references and unresolved readings.</p>
+<div class="table-wrap"><table><thead><tr><th>Qum page</th><th>Editorial topic</th><th>Textual status</th></tr></thead><tbody id="continuous-q65-69"><tr><td colspan="3">Loading source pages…</td></tr></tbody></table></div>
 <h2>Qum and Gujarat: parallel printed readings</h2>
 <p class="small">The table below is generated from nine checked textual comparisons and records only short distinguishing readings. Scanned pages and manuscript witnesses are <strong>not</strong> yet collated. Modern marginalia are excluded.</p>
 <div class="table-wrap"><table><thead><tr><th>Q locator</th><th>I13 page</th><th>Q reading</th><th>I13 reading</th><th>Status</th></tr></thead><tbody id="parallel-witnesses"><tr><td colspan="5">Loading parallels…</td></tr></tbody></table></div>
@@ -75,6 +83,8 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
 <script src="yazdi-continuous-p39-47-data.js?v=20261106-q39-47"></script>
 <script src="yazdi-continuous-q48-51-data.js?v=20261106-q48-51"></script>
 <script src="yazdi-continuous-q54-58-data.js?v=20261106-q54-58"></script>
+<script src="yazdi-continuous-q59-64-data.js?v=20261106-q59-64"></script>
+<script src="yazdi-continuous-q65-69-data.js?v=20261106-q65-69"></script>
 <script>
 (function(){
  const d=window.GNAMMA_YAZDI_LAYER;if(!d)return;
@@ -140,6 +150,8 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
  };
  addRows(window.GNAMMA_YAZDI_CONTIGUOUS_Q48_51?.blocks,'#continuous-q48-51',true);
  addRows(window.GNAMMA_YAZDI_CONTIGUOUS_Q54_58?.sourceBlocks,'#continuous-q54-58',false);
+ addRows(window.GNAMMA_YAZDI_CONTIGUOUS_Q59_64?.blocks,'#continuous-q59-64',false);
+ addRows(window.GNAMMA_YAZDI_CONTIGUOUS_Q65_69?.blocks,'#continuous-q65-69',false);
  const counts=new Map();for(const e of d.entries){if(!counts.has(e.unit))counts.set(e.unit,[]);counts.get(e.unit).push(e)}
  const titles=[
  'Prologue and two sciences','Knowledge and logic','Signification of expressions','Particular and universal','Four relations of universals','Genus','Species, differentia, property, accident','Three kinds of universal','Definition and description','Categorical propositions','Modal propositions','Conditional propositions','Contradiction','Simple conversion','Contraposition','Syllogistic figures','Conditional and exceptive inference','Induction, analogy, five arts','Subject, principles, questions of science'
