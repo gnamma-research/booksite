@@ -132,6 +132,12 @@ function open(trigger){
        link.append(mk('span','gn-subject-source','Sharḥ p. '+p.page+' · '+p.unit));
        link.append(mk('span','gn-subject-excerpt',p.english.slice(0,140)));
        body.append(link);
+       if(window.GnammaYazdiLayer?.goTo){
+        const button=mk('button','gn-subject-locator');button.type='button';
+        button.append(mk('span','gn-subject-source','Read translated '+p.id));
+        button.addEventListener('click',()=>{close();window.GnammaYazdiLayer.goTo(p.id)});
+        body.append(button);
+       }
       }
       if(glosses.length>16)body.append(mk('p','gn-subject-more','Showing 16 of '+glosses.length+' al-Yazdī selections.'));
      }
