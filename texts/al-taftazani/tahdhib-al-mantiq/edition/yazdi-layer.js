@@ -111,7 +111,7 @@ function goTo(id){
  const part=data.entries.find(e=>e.id===id)||(continuous?.sourcePages.find(e=>e.id===id)??null);
  if(!part)return false;
  setEnabled(true);ex.setMode('flow');
- reader.go(Number((part.unit||'L.03').slice(2)),'u-'+part.unit.replace(/[^a-zA-Z0-9-]/g,'-'));
+ reader.go(Number((part.unit||'L.03').slice(2)),'u-'+(part.unit||'L.03').replace(/[^a-zA-Z0-9-]/g,'-'));
  const scroll=()=>{
   const id=(part.unit==='L.03'||part.id.startsWith('YZC-'))?'YZC-'+part.page:part.id.replace(/[^a-zA-Z0-9-]/g,'-');
   const target=document.getElementById('gn-yazdi-flow-'+id);
