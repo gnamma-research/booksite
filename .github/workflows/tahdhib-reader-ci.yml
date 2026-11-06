@@ -65,7 +65,7 @@ jobs:
           assert len(logic['units'])==19 and len(kalam['units'])==1044
           import re
           raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-layer-data.js').read_text(encoding='utf-8')
-          gloss=json.loads(raw.split('=',1)[1].rstrip(';\\n '))
+          gloss=json.loads(raw.split('=',1)[1].strip().removesuffix(';'))
           assert len(gloss['entries'])==167
           assert len({x['id'] for x in gloss['entries']})==167
           assert len({x['unit'] for x in gloss['entries']})==19
