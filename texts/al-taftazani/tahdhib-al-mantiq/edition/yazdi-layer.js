@@ -12,12 +12,13 @@ const groups=new Map();
 for(const part of data.entries){if(!groups.has(part.unit))groups.set(part.unit,[]);groups.get(part.unit).push(part)}
 const idFor=id=>'u-'+id.replace(/[^a-zA-Z0-9-]/g,'-');
 function n(tag,cls,value){const e=document.createElement(tag);if(cls)e.className=cls;if(value!==undefined)e.textContent=value;return e}
-function make(unit){
+function make(unit,scope){
  const entries=groups.get(unit)||[];
  const box=n('section','gn-yazdi-layer');box.dataset.yazdiUnit=unit;box.setAttribute('aria-label','Mullā al-Yazdī commentary for '+unit);
  const head=n('header','gn-yazdi-head');head.append(n('h3',null,'Mullā al-Yazdī · Commentary'),n('small',null,entries.length+' translated passages'));box.append(head);
  for(const part of entries){
   const item=n('article','gn-yazdi-excerpt');item.dataset.yazdiId=part.id;
+  item.id='gn-yazdi-'+scope+'-'+part.id.replace(/[^a-zA-Z0-9-]/g,'-');
   const eyebrow=n('div','gn-yazdi-locator','al-Yazdī · p. '+part.page+' · '+part.title);
   const content=n('div','gn-yazdi-pair');
   const en=n('p','gn-yazdi-en',part.english);en.lang='en';
@@ -35,13 +36,13 @@ function mountFlow(){
   const span=document.getElementById('flow-'+idFor(unit));
   const sec=span?.closest('.gn-flow-section');
   if(!sec||sec.nextElementSibling?.dataset?.yazdiUnit===unit)continue;
-  sec.insertAdjacentElement('afterend',make(unit))
+  sec.insertAdjacentElement('afterend',make(unit,'flow'))
  }
 }
 function mountStudy(){
  for(const unit of groups.keys()){
   const article=document.getElementById(idFor(unit));
-  if(article&&!article.querySelector('.gn-yazdi-layer'))article.append(make(unit))
+  if(article&&!article.querySelector('.gn-yazdi-layer'))article.append(make(unit,'study'))
  }
 }
 function mount(){mountFlow();mountStudy();document.body.dataset.yazdi=state.enabled?'on':'off'}
@@ -50,9 +51,20 @@ function setEnabled(v){
  state.enabled=Boolean(v);try{localStorage.setItem(KEY,state.enabled?'on':'off')}catch{}
  mount();document.dispatchEvent(new CustomEvent('gnamma-tahdhib-yazdi',{detail:{enabled:state.enabled}}));return state.enabled
 }
+function goTo(id){
+ const part=data.entries.find(e=>e.id===id);if(!part)return false;
+ setEnabled(true);ex.setMode('flow');
+ reader.go(Number(part.unit.slice(2)),'u-'+part.unit.replace(/[^a-zA-Z0-9-]/g,'-'));
+ const scroll=()=>{
+  const target=document.getElementById('gn-yazdi-flow-'+part.id.replace(/[^a-zA-Z0-9-]/g,'-'));
+  target?.scrollIntoView({block:'center',behavior:'smooth'});
+ };
+ requestAnimationFrame(()=>requestAnimationFrame(scroll));
+ return true;
+}
 document.addEventListener('gnamma-tahdhib-flow-built',mountFlow);
 document.addEventListener('gnamma-tahdhib-render',mount); // Render has already replaced source cards; mount now to avoid a WebKit frame race.
 document.addEventListener('gnamma-tahdhib-view',mount);
 mount();
-window.GnammaYazdiLayer=Object.freeze({enabled,setEnabled,mount,entryCount:data.entries.length,units:[...groups.keys()],complete:false});
+window.GnammaYazdiLayer=Object.freeze({enabled,setEnabled,mount,goTo,entryCount:data.entries.length,units:[...groups.keys()],complete:false});
 })();
