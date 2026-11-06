@@ -3,7 +3,7 @@ window.GNAMMA_BOOK={
   "title": "Taqrīb al-Marām",
   "arabicTitle": "تقريب المرام في شرح تهذيب الكلام",
   "author": "ʿAbd al-Qādir al-Sanandajī",
-  "status": "Nineteen image-checked commentary selections, including directly checked explanations of knowledge and the beginning of general ontology. The remaining two-volume prose still requires continuous translation.",
+  "status": "Working page drafts: Volume I:2–198 (197 printed positions); Volume II:15–314 (300). This is English presence only, NOT 497 fully translated pages. All-register certified translations: 0 of 615; separate lower marginal commentaries largely unfinished. Latest source-led first-pass batch: I:149–198 (50 original positions).",
   "description": "The commentary translation now begins with Sanandajī’s own preface, before selected philosophical and theological passages. All extracts identify matn, sharḥ and marginal voices where discernible.",
   "units": [
     {
