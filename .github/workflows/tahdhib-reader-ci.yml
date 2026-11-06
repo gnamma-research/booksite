@@ -181,10 +181,10 @@ jobs:
           assert all('التقريب ص' not in x['ar'] and 'ميرزا محمد علي' not in x['ar'] for x in sy)
           assert 'الجزء الصوري' in sy[0]['ar']
           assert 'قياس المساواة' in sy[1]['ar'] and 'مقدمة خارجية' in sy[1]['ar']
-          assert 'الأوسط' in sy[2]['ar']
+          assert 'والمتكرر أوسط' in sy[2]['ar']
           assert 'الشكل الأول' in sy[3]['ar']
-          assert 'فعلية' in sy[3]['ar'] and 'كلية الكبرى' in sy[4]['ar']
-          assert 'قوله السالبتين' in sy[5]['ar'] and len(sy[5]['ar'].split())<30
+          assert 'فعليتها' in sy[3]['ar'] and 'كلية الكبرى' in sy[4]['ar']
+          assert 'السالبتين' in sy[5]['ar'] and len(sy[5]['ar'].split())<30
           assert 'الشكل الثاني' in sy[6]['ar'] and 'اختلاف' in sy[6]['ar']
           assert 'الضروب المنتجة' in sy[7]['ar']
           assert 'عكس الكبرى' in sy[8]['ar'] and 'الشكل الأول' in sy[8]['ar']
