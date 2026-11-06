@@ -2,7 +2,7 @@
 
 **Source edition:** Qum, 400-page print of `al-Ḥāshiya ʿalā Tahdhīb al-Manṭiq`; original page locations are retained. Text index: https://ablibrary.net/book_content/b/12170/1?lang=ar . Independent readable display of selected main-commentary pages: https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/70 .
 
-**Verified deliverable as of 6 November 2026:** **177 individually source-linked bilingual selections spanning all 19 editorial logic divisions**. This does **not** mean 19 full chapters or an entire historical commentary have been translated. The translated portion is a small, noncontinuous sample of the primary *sharḥ*; the printed **هامش** contains separately attributed later glosses, not al-Yazdī's own continuous argument, and is excluded.
+**Recorded working coverage as of 6 November 2026:** **177 individually source-linked bilingual selections spanning all 19 editorial logic divisions**. This does **not** mean 19 full chapters or an entire historical commentary have been translated. The translated portion is a small, noncontinuous sample of the primary *sharḥ*; the printed **هامش** contains separately attributed later glosses, not al-Yazdī's own continuous argument, and is excluded.
 
 | Logic division | Source edition pages represented | Translated selections | Certification status |
 |---|---|---:|---|
