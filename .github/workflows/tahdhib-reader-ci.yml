@@ -98,7 +98,7 @@ jobs:
           assert [x['page'] for x in q]==list(range(39,48))
           assert all(x['ar'] and x['en'] and 'ablibrary.net' in x['sourceUrl'] for x in q)
           assert 'هامش' in l07['interveningPage'] and all(x['page']!=38 for x in q)
-          assert 'الإمام الرازي' in q[4]['ar'] and 'المحقق الطوسي' in q[4]['ar']
+          assert 'الإمام الرازي' in q[4]['ar'] and 'للمحقق الطوسي' in q[4]['ar']
           assert 'لزوم' in q[-1]['ar'] and 'الوجود الذهني' in q[-1]['ar']
           assert all('التقريب ص' not in x['ar'] for x in w)
           assert len({x['unit'] for x in gloss['entries']})==19
