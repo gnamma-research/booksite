@@ -238,8 +238,98 @@ const extra=[
     "sourceLayer": "al-Yazdī working print; not independently manuscript-collated"
   }
 ];
+const supplementary=[
+  {
+    "ar": "الإذعان",
+    "en": "Assent as acceptance",
+    "explanation": "A judgemental accepting of a predicative relation; al-Yazdī distinguishes it from merely conceiving the relation, and reports disagreement over whether its accompanying term-conceptions enter its essence.",
+    "page": 15,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/15?lang=ar",
+    "sourceLayer": "al-Yazdī main commentary in Q; India 2013 printed comparator, no manuscript certification"
+  },
+  {
+    "ar": "النسبة الخبرية",
+    "en": "Assertoric relation",
+    "explanation": "The positive or negative propositional relation treated as the object of judgment by the earlier philosophers in the discussion of the proposition’s three constituents.",
+    "page": 15,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/15?lang=ar",
+    "sourceLayer": "al-Yazdī main commentary in Q; India 2013 printed comparator, no manuscript certification"
+  },
+  {
+    "ar": "النسبة التقييدية",
+    "en": "Restrictive or attributive relation",
+    "explanation": "A subordinate, non-assertoric relation between terms; in the debated later analysis, its occurrence or non-occurrence constitutes a further propositional element.",
+    "page": 15,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/15?lang=ar",
+    "sourceLayer": "al-Yazdī main commentary in Q; India 2013 printed comparator, no manuscript certification"
+  },
+  {
+    "ar": "الاكتساب بالنظر",
+    "en": "Acquisition through inquiry",
+    "explanation": "A conception or assent reached through rational consideration rather than simply present without inquiry.",
+    "page": 15,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/15?lang=ar",
+    "sourceLayer": "al-Yazdī main commentary in Q; India 2013 printed comparator, no manuscript certification"
+  },
+  {
+    "ar": "المعقول",
+    "en": "The intelligible",
+    "explanation": "What is attended to in rational inquiry; al-Yazdī explains why the term is preferred to the potentially ambiguous ‘known’.",
+    "page": 16,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/16?lang=ar",
+    "sourceLayer": "al-Yazdī main commentary in Q; India 2013 printed comparator, no manuscript certification"
+  },
+  {
+    "ar": "القانون",
+    "en": "Canon or general rule",
+    "explanation": "A universal proposition governing applications to particular instances, such as a grammatical rule used to classify individual expressions.",
+    "page": 17,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/17?lang=ar",
+    "sourceLayer": "al-Yazdī main commentary in Q; India 2013 printed comparator, no manuscript certification"
+  },
+  {
+    "ar": "المعلوم التصوري",
+    "en": "Already-conceived item",
+    "explanation": "A conception can serve as a defining account only under the aspect of leading to a previously ungrasped conception.",
+    "page": 19,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/19?lang=ar",
+    "sourceLayer": "al-Yazdī main commentary in Q; India 2013 printed comparator, no manuscript certification"
+  },
+  {
+    "ar": "المعلوم التصديقي",
+    "en": "Already-assented proposition",
+    "explanation": "A known judgment may count as a proof when structured to lead to a new act of assent.",
+    "page": 19,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/19?lang=ar",
+    "sourceLayer": "al-Yazdī main commentary in Q; India 2013 printed comparator, no manuscript certification"
+  },
+  {
+    "ar": "الكناية",
+    "en": "Indirect indication",
+    "explanation": "A mode of expression by which the twofold division is learned through implication from the explicitly stated distribution.",
+    "page": 15,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/15?lang=ar",
+    "sourceLayer": "al-Yazdī main commentary in Q; India 2013 printed comparator, no manuscript certification"
+  },
+  {
+    "ar": "موضوع المنطق",
+    "en": "Subject of logic",
+    "explanation": "What logic investigates under the respect of its role in constructing defining accounts and proofs; not every known item without qualification.",
+    "page": 18,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/18?lang=ar",
+    "sourceLayer": "al-Yazdī main commentary in Q; India 2013 printed comparator, no manuscript certification"
+  },
+  {
+    "ar": "الحجة",
+    "en": "Argument or proof",
+    "explanation": "An arrangement of known propositional items that leads to a previously unknown assent; in one etymological explanation its name relates to prevailing in disputation.",
+    "page": 19,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/19?lang=ar",
+    "sourceLayer": "al-Yazdī main commentary in Q; India 2013 printed comparator, no manuscript certification"
+  }
+];
 const seen=new Set(prior.terms.map(t=>prior.norm(t.ar)));
 const terms=prior.terms.slice();
-for(const term of extra){if(!seen.has(prior.norm(term.ar))){terms.push(term);seen.add(prior.norm(term.ar))}}
+for(const term of [...extra,...supplementary]){if(!seen.has(prior.norm(term.ar))){terms.push(term);seen.add(prior.norm(term.ar))}}
 window.GNAMMA_TAHDHIB_GLOSSARY=Object.freeze({...prior,terms,version:'logic-plus-yazdi-context-v2',historicallyCollated:false});
 })();
