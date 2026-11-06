@@ -86,7 +86,7 @@ function group(root,heading,items){
 function openSheet(mode){
  returnFocus=document.activeElement;sheet.replaceChildren();
  const header=make('header','gn-logic-sheet-head');
- const h=make('h2',null,mode==='layers'?'Text to display':'Tahdhīb al-Manṭiq');
+ const h=make('h2',null,mode==='layers'?'Text to display':mode==='outline'?'Commentary topic guide':'Tahdhīb al-Manṭiq');
  h.id='gn-logic-sheet-title';header.append(h,action('Close','close',closeSheet));sheet.append(header);
  const body=make('div','gn-logic-sheet-body');sheet.append(body);
  if(mode==='layers'){
@@ -101,9 +101,35 @@ function openSheet(mode){
     b.addEventListener('click',()=>{yazdi.setEnabled(key);closeSheet();sync()});body.append(b);
   }
   body.setAttribute('role','radiogroup');body.setAttribute('aria-label','Text layer choices');
+ }else if(mode==='outline'){
+  const outline=window.GNAMMA_YAZDI_I13_OUTLINE;
+  body.append(make('p','gn-logic-layer-explainer','The 2013 Gujarat print subdivides the commentary more finely than the 19 matn divisions. Its headings are modern editorial finding aids, not original authorial section titles. Printed I13 pages do not claim exact Qum alignment.'));
+  if(!outline)body.append(make('p','gn-logic-layer-explainer','The printed outline could not be loaded.'));
+  else{
+   for(const groupInfo of outline.sections){
+    const details=make('details','gn-logic-outline-chapter');
+    details.open=groupInfo.unit==='L.02';
+    const summary=make('summary',null,groupInfo.unit+' · '+groupInfo.heading);
+    details.append(summary);
+    for(const sub of groupInfo.items){
+     const b=make('button','gn-logic-outline-item');b.type='button';
+     const a=make('span',null,sub.en),ar=make('small',null,sub.ar+' · I13 p. '+sub.printedPage);
+     ar.lang='ar';ar.dir='rtl';b.append(a,ar);
+     b.title='Go to the aligned base division; not a precise paragraph locator in the Indian print';
+     b.addEventListener('click',()=>{
+      closeSheet();yazdi.setEnabled(true);setMode('flow');
+      reader.go(Number(groupInfo.unit.slice(2)),'u-'+groupInfo.unit.replace(/[^a-zA-Z0-9-]/g,'-'));
+     });details.append(b);
+    }
+    body.append(details);
+   }
+   const source=make('a','gn-logic-outline-source','Open printed Indian edition · I13');
+   source.href=outline.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';body.append(source);
+  }
  }else{
   group(body,'Navigate',[
    ['Contents','Editorial sections 1–19',()=>legacy('Contents')],
+   ['Commentary topic guide','76 topics from the Indian 2013 printed outline',()=>openSheet('outline')],
    ['Search','Arabic and English matn search',()=>legacy('Search')],
    ['Books','Gnamma · Logic, Kalām, Uṣūl',()=>legacy('Books')]
   ]);

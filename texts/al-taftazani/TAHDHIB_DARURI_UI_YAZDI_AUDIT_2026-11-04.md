@@ -20,7 +20,7 @@ This audit describes actual code and observable feature contracts, not a claim t
 | Reading Desk and saved items | **Partial:** clause bookmarks, highlights, notes, Saved list, recent locations and navigation history | No Darūrī-equivalent unified per-word highlight geometry, recoverable Bin, full cross-book backup/transfer or PDF annotation compositor |
 | Dictionary | **Partial:** independent source-linked glossary and subject index | Darūrī’s historical dictionary breadth, morphology, context popups and Arabic word selection are not all ported |
 | Search | **Partial:** bilingual and diacritic-insensitive literal search | Darūrī proximity, morphology and indexed subject search are not equal |
-| Reader apparatus/layers | **Matched interface contract:** Layers menu in both volumes; al-Yazdī appears only in logic, off by default, user enabled and persisted | **Translation incomplete:** 167 checked selections across L.01–L.19 are available; all divisions remain incomplete as continuous commentary translations |
+| Reader apparatus/layers | **Matched interface contract:** Layers menu in both volumes; al-Yazdī appears only in logic, off by default, user enabled and persisted | **Translation incomplete:** 177 checked selections across L.01–L.19 are available; all divisions remain incomplete as continuous commentary translations |
 | Source attribution for commentary | **Matched principle:** separate bilingual Arabic/English layer, cited original page, no other authors’ lower-register glosses silently ascribed to Yazdī | Edition-wide lemma-by-lemma collation of the c.400-page commentary not yet done |
 | Regular reading footnotes | **Cleaned:** no general list of hyperlinks to other commentators in the main logic sidebar; al-Yazdī only in optional layer | Original Study mode retains necessary textual apparatus |
 | Kalām commentary navigation | **Functional:** Taqrīb al-Marām as a separate existing book from the Layers menu | A fully aligned, translated Sanandajī inline layer is a distinct research project |
@@ -33,7 +33,7 @@ This audit describes actual code and observable feature contracts, not a claim t
 
 Primary selected source: ʿAbd Allāh ibn al-Ḥusayn al-Yazdī, `al-Ḥāshiya ʿalā Tahdhīb al-Manṭiq`, Qum edition, searchable text at `https://ablibrary.net/book_content/b/12170/`; independent bibliographic record and digitized PDF at `https://sites.dlib.nyu.edu/viewer/books/princeton_aco000566/display?lang=en`.
 
-**Verified source-linked selections as of 6 November:** 167 Arabic/English passages, including newly inspected main-commentary pages 7, 70, 72, 74, 76, 81, 86, 98, 102, 104, 105, 110 and 114, now represented by excerpts in all L.01–L.19 divisions. This is not continuous section or book coverage. Main `شرح` text has been separated from `هامش` footnotes, including other writers and quotations from `al-Taqrīb`. In some places the translation deliberately selects coherent sentences rather than every line of the printed page. The layer is therefore **a source-checked partial translation**, not a complete commentary translation, and it must never be identified otherwise.
+**Verified source-linked selections as of 6 November:** 177 Arabic/English passages, including newly inspected main-commentary pages 7, 70, 72, 74, 76, 81, 86, 98, 102, 104, 105, 110 and 114, now represented by excerpts in all L.01–L.19 divisions. This is not continuous section or book coverage. Main `شرح` text has been separated from `هامش` footnotes, including other writers and quotations from `al-Taqrīb`. In some places the translation deliberately selects coherent sentences rather than every line of the printed page. The layer is therefore **a source-checked partial translation**, not a complete commentary translation, and it must never be identified otherwise.
 
 ## Source and presentation controls
 
@@ -48,7 +48,7 @@ Primary selected source: ʿAbd Allāh ibn al-Ḥusayn al-Yazdī, `al-Ḥāshiya 
 
 1. Both public readers retain the full 19 / 1,044 unit counts; all original corpus SHA hashes unchanged.
 2. Toggle al-Yazdī on, off, and on again; verify persistence after reload.
-3. Exactly 167 translated selections appear across L.01–L.19; no selections are fabricated between represented source paragraphs or in the kalām reader.
+3. Exactly 177 translated selections appear across L.01–L.19; no selections are fabricated between represented source paragraphs or in the kalām reader.
 4. In Arabic-only and English-only modes, the corresponding language controls also apply to the commentary.
 5. Study/Read/Immersive, small-screen scrolling, keyboard focus and modal dismissal work with the selected layer.
 6. Book links in the site catalogue, Gnamma bottom menu and reader Books sheet all point to canonical /edition/ pages.
@@ -57,3 +57,6 @@ Primary selected source: ʿAbd Allāh ibn al-Ḥusayn al-Yazdī, `al-Ḥāshiya 
 ## 6 November — logic-only layout migration
 
 The logic reader now has a Darūrī-derived **single 56px top rail** with the *actual shared circular tile*, one compact menu, independent Arabic/English controls, one source-layer button, Search, Focus and Visuals, and the established narrow-number / wide-title / narrow-number bottom dock. Source layers expose **exactly two choices**: *Matn* and *Matn + sharḥ*. The previous thirteen-plus visible toolbar actions were collected into a single grouped menu. All changes are implemented only under `tahdhib-al-mantiq/edition/`; the kalām reader retains its current shell. A bilingual editorial guide now gives all 19 sections explicit Arabic/English titles, but does not insert those titles into the authorial text. A new witness register page is accessible from the main reading menu. Browser/physical-phone QA results must be recorded separately.
+
+## I13 second-print source and subtopic pass (6 November)
+The logic reader retains the exact **two** text-display states, Matn and Matn + sharḥ. Nine short printed Qum/Gujarat comparisons are now available as expandable apparatus under their corresponding al-Yazdī entries, without adding another primary reading mode. Another 10 bilingual main-commentary selections were transcribed and translated, total **177**. The existing main menu now contains a **76-topic I13 source-print guide**, translating/paraphrasing editorial section topics and maintaining the printed I13 page numbers distinct from Qum and matn divisions. The new `critical-status.html` displays short Q/I13 readings and states they are NOT manuscript variants. No independent witness proof or full continuous commentary translation is claimed.

@@ -26,6 +26,7 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
 <tr><td>A?</td><td><a href="https://www.islamarchive.cc/manuscript/186605">Tirana SP 18890 (8-page fragment)</a></td><td>Potential independent witness of the syllogism section, not a complete copy; photographic identification outstanding</td></tr>
 <tr><td>R?</td><td><a href="https://www.molaabdellah.ir/index.php/2maghalat/280-1356">Reported second Arabic Yazdī gloss</a></td><td>May be a distinct work, not to be silently combined with the printed text</td></tr>
 <tr><td>P?</td><td>Persian translation/exposition (attribution contested)</td><td>Reception material only; not an Arabic critical variant witness</td></tr>
+<tr><td>I13</td><td><a href="https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf">Gujarat, Dābhel, 1434/2013</a></td><td>Second printed transcription of al-Yazdī; separate contemporary annotated footnotes; 9 digital parallel loci compared. Not an independently established manuscript branch.</td></tr>
 <tr><td>K</td><td>Cairo 1912 Taftāzānī matn</td><td>Separate source corpus, original logic divisions unchanged</td></tr>
 </tbody></table></div>
 <h2>Translation coverage by division</h2><p class="small">Live counts are calculated from the bilingual translation source loaded by the reader. “Represented” means at least one selection, not whole-division completion.</p>
@@ -37,12 +38,16 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
 <li><strong>Q pp.105–107:</strong> a definition of induction or analogy must distinguish the method/operation from the complete inferential <i>ḥujja</i>. The causal premise of analogy points to jurisprudential argumentation.</li>
 <li><strong>Q p.110:</strong> the five arts are classified by the epistemic or imaginative force of their matter, not merely by modern logical validity.</li>
 </ul>
+<h2>Qum and Gujarat: parallel printed readings</h2>
+<p class="small">The table below is generated from nine checked textual comparisons and records only short distinguishing readings. Scanned pages and manuscript witnesses are <strong>not</strong> yet collated. Modern marginalia are excluded.</p>
+<div class="table-wrap"><table><thead><tr><th>Q locator</th><th>I13 page</th><th>Q reading</th><th>I13 reading</th><th>Status</th></tr></thead><tbody id="parallel-witnesses"><tr><td colspan="5">Loading parallels…</td></tr></tbody></table></div>
+<p><a href="YAZDI_I13_2013_COLLATION.md">Full collation notes, uncertainties and edition identification</a></p>
 <h2>Release standard for a definitive edition</h2>
 <p>The main ḥāshiya must be transcribed continuously, each paragraph translated and lemma-aligned, with photographic proofing, a documented independent manuscript comparison, recorded variants, an explicit emendation policy, consistent technical terminology, and checked source-linked navigation. None of the unfinished divisions is marked certified.</p>
-<p><a href="YAZDI_CRITICAL_STATUS.md">Detailed scholarly register and collation protocol</a> · <a href="YAZDI_TRANSLATION_COVERAGE.md">Translation coverage register</a></p>
+<p><a href="YAZDI_CRITICAL_STATUS.md">Detailed scholarly register and collation protocol</a> · <a href="YAZDI_I13_2013_COLLATION.md">Gujarat–Qum comparisons</a> · <a href="YAZDI_TRANSLATION_COVERAGE.md">Translation coverage register</a></p>
 <div class="footer">These editorial headings are modern finding aids, not newly discovered authorial rubrics. The original source is retained separately in the matn and commentary data. Updated 6 November 2026.</div>
 </main>
-<script src="yazdi-layer-data.js?v=20261106-yazdi7"></script>
+<script src="yazdi-layer-data.js?v=20261106-yazdi8"></script>
 <script>
 (function(){
  const d=window.GNAMMA_YAZDI_LAYER;if(!d)return;
@@ -52,6 +57,19 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
  ];
  document.getElementById('count').textContent=d.entries.length;
  document.getElementById('divisions').textContent=counts.size+'/19';
+ const parallels=document.getElementById('parallel-witnesses');
+ if(parallels){
+  parallels.replaceChildren();
+  for(const entry of d.entries.filter(x=>x.witnessComparison)){
+   const v=entry.witnessComparison, row=document.createElement('tr');
+   for(const value of [entry.id+' · p.'+entry.page, 'p.'+v.printedPage,v.qReading,v.iReading,v.status.replaceAll('-',' ')]){
+    const cell=document.createElement('td');cell.textContent=value;
+    if(value===v.qReading||value===v.iReading){cell.lang='ar';cell.dir='rtl';}
+    row.append(cell);
+   }
+   parallels.append(row);
+  }
+ }
  const tbody=document.getElementById('coverage');tbody.replaceChildren();
  titles.forEach((title,i)=>{
   const id='L.'+String(i+1).padStart(2,'0'),entries=counts.get(id)||[],tr=document.createElement('tr');

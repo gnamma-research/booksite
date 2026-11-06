@@ -66,8 +66,10 @@ jobs:
           import re
           raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-layer-data.js').read_text(encoding='utf-8')
           gloss=json.loads(raw.split('=',1)[1].strip().removesuffix(';'))
-          assert len(gloss['entries'])==167
-          assert len({x['id'] for x in gloss['entries']})==167
+          assert len(gloss['entries'])==177
+          assert len([x for x in gloss['entries'] if x.get('witnessComparison')])==9
+          assert all(not x.get('witnessComparison',{}).get('scanVerified',True) for x in gloss['entries'] if x.get('witnessComparison'))
+          assert len({x['id'] for x in gloss['entries']})==177
           assert len({x['unit'] for x in gloss['entries']})==19
           assert all(x.get('arabic') and x.get('english') and x.get('sourceUrl') and x.get('attribution') for x in gloss['entries'])
           assert len({u['id'] for u in kalam['units']})==1044
@@ -178,6 +180,7 @@ jobs:
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-layer-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-layer.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-daruri-reader.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/indian-2013-outline-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-glossary-extensions.js
           node --check texts/al-taftazani/tahdhib-al-kalam/edition/reader.js
           node --check texts/al-taftazani/tahdhib-al-kalam/edition/experience.js

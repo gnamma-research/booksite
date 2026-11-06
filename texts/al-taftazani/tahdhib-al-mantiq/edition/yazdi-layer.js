@@ -26,7 +26,30 @@ function make(unit,scope){
   content.append(en,ar);
   item.append(eyebrow,content);
   const source=n('a','gn-yazdi-source','Arabic source · p. '+part.page);source.href=part.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';
-  item.append(source);box.append(item)
+  item.append(source);
+  if(part.secondPrint?.sourceUrl){
+   const print=n('a','gn-yazdi-source gn-yazdi-second-print','I13 · printed p. '+part.secondPrint.printedPage);
+   print.href=part.secondPrint.sourceUrl;print.target='_blank';print.rel='noopener noreferrer';
+   print.title='Gujarat 1434/2013 print (main commentary), compared digitally; photographic verification pending';
+   item.append(print);
+  }
+  if(part.witnessComparison){
+   const v=part.witnessComparison;
+   const details=n('details','gn-yazdi-variant');
+   const summary=n('summary',null,'Printed comparison · Q / I13 p. '+v.printedPage+(v.status==='candidate-variant'?' · reading differs':' · agreement'));
+   details.append(summary);
+   const table=n('div','gn-yazdi-variant-readings');
+   for(const [siglum,value] of [['Q · Qum',v.qReading],['I13 · Gujarat',v.iReading]]){
+    const line=n('div','gn-yazdi-variant-row'),lab=n('strong',null,siglum),arabic=n('p',null,value);
+    arabic.lang='ar';arabic.dir='rtl';line.append(lab,arabic);table.append(line);
+   }
+   details.append(table,n('p','gn-yazdi-variant-note',v.note));
+   details.append(n('p','gn-yazdi-variant-status','Comparison of digital printed transcriptions only; neither an independently collated manuscript variant nor proof of authorial priority.'));
+   const iLink=n('a','gn-yazdi-source','Open the I13 printed text');
+   iLink.href=v.sourceUrl;iLink.target='_blank';iLink.rel='noopener noreferrer';details.append(iLink);
+   item.append(details);
+  }
+  box.append(item)
  }
  return box
 }
