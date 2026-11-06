@@ -97,7 +97,7 @@ async function run(engine,browser,kind,viewport){
     const q65=await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="65"] .gn-yazdi-ar').textContent();
     assert(!q65.includes('أقسام الشرطية'),'Printed chapter rubric imported as al-Yazdī prose');
     assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="69"]').count()===1,'Complete conditional section p69 missing');
-    assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="70"]').count()===0,'Following contradiction chapter p70 improperly included');
+    assert(await page.locator('#flow-passages .gn-yazdi-layer[data-contiguous-unit="L.13"] .gn-yazdi-contiguous-page[data-q-page="70"]').count()===1,'Q70 should now begin the translated contradiction chapter exactly once');
     for(const [unit,count] of [['L.08',2],['L.09',2],['L.10',5]]){
      assert(await page.locator('#flow-passages .gn-yazdi-layer[data-contiguous-unit="'+unit+'"] .gn-yazdi-contiguous-page').count()===count,'Unexpected Q48-58 blocks in '+unit);
     }
