@@ -1,4 +1,4 @@
-/* Selected source-attributed passages; the 400-page commentary is not yet translated in full. */
+/* Source-attributed Arabic-English selections, main شرح distinct from later هامش. */
 window.GNAMMA_YAZDI_LAYER={
   "schema": "gnamma-yazdi-translation-layer-v1",
   "work": "Tahdhīb al-Manṭiq",
@@ -7,7 +7,7 @@ window.GNAMMA_YAZDI_LAYER={
   "edition": "Qum, Muʾassasat al-Nashr al-Islāmī; searchable paginated text",
   "editionCatalog": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000566/display?lang=en",
   "sourceIndex": "https://ablibrary.net/book_content/b/12170/1",
-  "coverage": "94 independently identified translated selections, covering source pages 14–19, 22–27, 30–37, 46–50, 54–60, aligned to L.02–L.11 with L.10 completed only for the available portions of pp.56–58. This is NOT a complete translation of the approximately 400-page printed commentary: L.12–L.19 and many portions of earlier chapters remain untranslated.",
+  "coverage": "111 source-identified translated selections from printed commentary pp. 14–19, 22–27, 30–37, 46–50, 54, and 56–64; corresponding to selected Tafṭāzānī logic divisions L.02–L.11. This is not a complete translation. All remaining commentary material from the 400-page printed volume, including other hands’ marginalia, remains outside the translated layer.",
   "complete": false,
   "entries": [
     {
@@ -949,6 +949,176 @@ window.GNAMMA_YAZDI_LAYER={
       "english": "On ‘truth’: it consists in correspondence to what is actually the case. Falsity consists in a failure of such correspondence. The proposition is evaluated against reality, not merely against the hearer’s knowledge of it.",
       "sourceUrl": "https://ablibrary.net/book_content/b/12170/54?lang=ar",
       "attribution": "Yazdī main commentary (شرح), not later margin (هامش)"
+    },
+    {
+      "id": "YZ-61.01",
+      "unit": "L.11",
+      "page": 61,
+      "title": "An actual predication need not have modal necessity",
+      "arabic": "قوله « أو بفعليتها » : أي : يتحقق النسبة بالفعل ، فالمطلقة العامة هي التي حكم فيها بكون النسبة متحققة بالفعل ، أي : في أحد الأزمنة الثلاثة وتسميتها « بالمطلقة » ، لأن هذا هو المفهوم من القضية عند إطلاقها وعدم تقييدها بالضرورة أو الدوام أو غير ذلك من الجهات .",
+      "english": "On ‘its actuality’: the predicative relation is realised in fact, at one of the three times. The resulting proposition is generally absolute (muṭlaqa ʿāmma), since an unqualified assertion ordinarily conveys actuality without explicitly imposing necessity, permanence, or another modality.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/61?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-61.02",
+      "unit": "L.11",
+      "page": 61,
+      "title": "General possibility denies the necessity of the contrary",
+      "arabic": "قوله « أو بعدم ضرورة » إلخ : إذا حكم في القضية بأن خلاف النسبة المذكورة فيها ليس ضروريا نحو قولنا : « زيد كاتب بالإمكان » يعني : أن الكتابة غير مستحيلة له بمعنى : أن سلبها عنه ليس ضروريا ، سميت القضية حينئذ « ممكنة » لاشتمالها على الإمكان وهو سلب الضرورة .",
+      "english": "On ‘the absence of necessity’: to say that Zayd can write means that writing is not impossible for him; equivalently, the contrary judgement, that he cannot write, is not necessary. This is general possibility (imkān ʿāmm): a denial of the necessity of the contrary, not yet the stronger claim that neither side is necessary.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/61?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-61.03",
+      "unit": "L.11",
+      "page": 61,
+      "title": "What makes a modal proposition simple",
+      "arabic": "قوله « فهذه بسائط » : أي : القضايا الثمانية المذكورة من جملة الموجهات بسائط . اعلم : أن القضية الموجهة إما بسيطة وهي ما تكون حقيقتها إما إيجابا فقط أو سلبا فقط كما مر في الموجهات الثمان .",
+      "english": "On ‘these are simple forms’: the eight previously identified modal propositions are simple, because each is fundamentally one affirmation or one denial. They must be distinguished from compound modalities, whose content includes an additional proposition of opposite quality.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/61?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-61.04",
+      "unit": "L.11",
+      "page": 61,
+      "title": "A compound modality contains an implicit second judgement",
+      "arabic": "وإما مركبة وهي التي تكون حقيقتها مركبة من الإيجاب والسلب بشرط أن لا يكون الجزء الثاني فيها مذكورا بعبارة مستقلة سواء كان في اللفظ تركيب كقولنا : « كل إنسان ضاحك بالفعل لا دائما » فقولنا : « لا دائما » إشارة إلى حكم سلبي .",
+      "english": "A compound modal proposition combines affirmation and denial, but the second component is not expressed as a separate independent sentence. For example, ‘Every human actually laughs, but not permanently’ contains an affirmative judgement together with an implicit negative judgement indicated by ‘not permanently’.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/61?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-61.05",
+      "unit": "L.11",
+      "page": 61,
+      "title": "A grammatically simple expression can be logically compound",
+      "arabic": "أو لم يكن في اللفظ تركيب كقولنا : « كل إنسان كاتب بالإمكان الخاص » فإنه في المعنى قضيتان ممكنتان عامتان أي : كل إنسان كاتب بالإمكان العام ولا شيء من الإنسان بكاتب بالإمكان العام ، والعبرة بالإيجاب والسلب حينئذ بالجزء الأول الذي هو أصل القضية .",
+      "english": "Even a single grammatical modal expression can be compound in logical content. ‘Every human can write by special possibility’ is analysed as two general-possibility judgements, one concerning writing and one concerning its negation. The overall proposition is classified as affirmative or negative by its first, principal component.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/61?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-62.01",
+      "unit": "L.11",
+      "page": 62,
+      "title": "Nonpermanence is qualified by the subject’s entire existence",
+      "arabic": "قوله « باللادوام الذاتي » : ومعنى اللادوام الذاتي : أن هذه النسبة المذكورة في القضية ليست دائمة ما دام ذات الموضوع موجودة فيكون نقيضها واقعا البتة في زمان من الأزمنة .",
+      "english": "‘Nonpermanence relative to the subject itself’ means that the asserted relation does not hold throughout the subject’s existence. Consequently the opposing relation actually holds at some time. This temporal implication is stronger than merely saying the original relation is not necessary.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/62?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-62.02",
+      "unit": "L.11",
+      "page": 62,
+      "title": "The special conditioned necessity",
+      "arabic": "قوله « المشروطة الخاصة » : هي المشروطة العامة المقيدة باللادوام الذاتي نحو : كل كاتب متحرك الأصابع بالضرورة ما دام كاتبا لا دائما .",
+      "english": "A specially conditioned proposition (mashrūṭa khāṣṣa) combines necessity while the subject bears the relevant description with nonpermanence over the subject’s entire existence. Finger movement may be necessary for someone while writing without being permanently true of that person as such.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/62?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-62.03",
+      "unit": "L.11",
+      "page": 62,
+      "title": "The special customary form",
+      "arabic": "قوله « والعرفية الخاصة » : هي العرفية العامة المقيدة باللادوام الذاتي كقولنا : بالدوام لا شيء من الكاتب بساكن الأصابع ما دام كاتبا لا دائما .",
+      "english": "The special customary proposition (ʿurfiyya khāṣṣa) combines permanence relative to an applicable description with nonpermanence throughout the subject’s life. The commentary uses the example that someone is not still-fingered while writing, although that condition does not define every moment of the person’s existence.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/62?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-62.04",
+      "unit": "L.11",
+      "page": 62,
+      "title": "The special temporal forms",
+      "arabic": "قوله « والوقتية والمنتشرة » : لما قيدت الوقتية المطلقة والمنتشرة المطلقة باللادوام الذاتي حذف من اسميهما لفظ الإطلاق فسميت الأولى وقتية والثانية منتشرة .",
+      "english": "When the absolutely temporal and the absolutely diffuse-temporal modalities are restricted by nonpermanence relative to the subject itself, ‘absolute’ drops from their names. The resulting forms are respectively the temporal (waqtiyya) and the diffuse (muntashira). This is a terminological distinction marking an added modal restriction.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/62?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-62.05",
+      "unit": "L.11",
+      "page": 62,
+      "title": "Nonnecessity permits the opposite",
+      "arabic": "قوله « باللاضرورة الذاتية » : ومعنى اللاضرورة الذاتية : أن هذه النسبة المذكورة في القضية ليست ضرورية ما دام ذات الموضوع موجودة فيكون هذا حكما بإمكان نقيضها لأن الإمكان هو سلب ضرورة الطرف المقابل .",
+      "english": "‘Nonnecessity relative to the subject’ means that the asserted predication is not necessary for as long as the subject exists. This amounts to allowing its negation as possible. Unlike nonpermanence, it does not by itself assert that the opposite actually occurs at some time.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/62?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-63.01",
+      "unit": "L.11",
+      "page": 63,
+      "title": "The existential nonnecessary form",
+      "arabic": "قوله « فتسمى الوجودية اللاضرورية » : لأن معنى المطلقة العامة هي فعلية النسبة ووجودها في وقت من الأوقات ولاشتمالها على اللاضرورة فالوجودية اللاضرورية هي المطلقة العامة المقيدة باللاضرورة الذاتية .",
+      "english": "The existential nonnecessary proposition (wujūdiyya lā-ḍarūriyya) joins actual realisation of the predicative relation at some time with a denial that this relation is necessary throughout the subject’s existence. Its two components are actual predication and the possibility of its contrary.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/63?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-63.02",
+      "unit": "L.11",
+      "page": 63,
+      "title": "Why descriptive nonpermanence cannot modify customary permanence",
+      "arabic": "قوله « أو باللادوام الذاتي » : إنما قيد اللادوام بالذاتي ، لأن تقييد العامتين باللادوام الوصفي غير صحيح ضرورة تنافي اللادوام بحسب الوصف مع الدوام بحسب الوصف .",
+      "english": "Nonpermanence here is specified relative to the subject’s existence, not relative to the description, because customary permanence while the description applies would contradict an assertion that the relation is not permanent while that very description applies. The two qualifications must concern different respects.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/63?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-63.03",
+      "unit": "L.11",
+      "page": 63,
+      "title": "Some logically coherent compounds lack conventional names",
+      "arabic": "فالاحتمالات الحاصلة من ملاحظة كل من تلك القضايا الأربع مع كل من تلك القيود الأربعة ستة عشر ثلاثة منها غير صحيحة وأربعة منها صحيحة معتبرة والتسعة الباقية صحيحة غير معتبرة .",
+      "english": "Combining each of four relevant simple modalities with each of four restrictions gives sixteen theoretical cases. Of these, three are inconsistent, four are accepted as standard modal types, and nine are logically coherent but not conventionally admitted into the established list. Logical consistency is therefore not the same as belonging to the recognised nomenclature.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/63?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-63.04",
+      "unit": "L.11",
+      "page": 63,
+      "title": "Modal composition is not exhausted by the textbook list",
+      "arabic": "وينبغي أن يعلم : أن التركيب لا ينحصر فيما أشرنا إليه بل سيجيء الإشارة إلى بعض آخر ويمكن تركيبات كثيرة أخرى لم يتعرضوا لها لكن المتنبه بعد التنبيه بما ذكروه يتمكن من استخراج أي قدر شاء .",
+      "english": "One must understand that compound modality is not exhausted by the familiar named forms. Further combinations are possible even where the textbook does not enumerate them. Once the principles of composition are understood, the reader can construct additional validly described combinations while separately checking their consistency.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/63?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-64.01",
+      "unit": "L.11",
+      "page": 64,
+      "title": "Special possibility denies necessity on both sides",
+      "arabic": "قوله « أيضا » : أي : كما أنه حكم في الممكنة العامة بلا ضرورة الجانب المخالف ، فقد يحكم فيها بلا ضرورة الجانب الموافق أيضا فتصير القضية مركبة من ممكنتين عامتين .",
+      "english": "‘Also’ means that general possibility initially denies the necessity of the contrary side; the special form adds denial of necessity on the side of the original predication as well. Thus special possibility comprises two general possibilities, one for each contradictory alternative.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/64?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-64.02",
+      "unit": "L.11",
+      "page": 64,
+      "title": "Seven recognised compound modal types",
+      "arabic": "قوله « وهذه مركبات » : أي : هذه القضايا السبع المذكورة وهي : المشروطة الخاصة والعرفية الخاصة والوقتية والمنتشرة والوجودية اللاضرورة والوجودية اللادائمة والممكنة الخاصة .",
+      "english": "‘These are compounds’ refers to seven types: the special conditioned, special customary, temporal, diffuse, existential nonnecessary, existential nonpermanent, and special possible. Each combines a main modal judgement with another qualification that entails an affirmative or negative component.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/64?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-64.03",
+      "unit": "L.11",
+      "page": 64,
+      "title": "Quantity is preserved across a compound proposition",
+      "arabic": "قوله « مخالفتي الكيفية » أي : في الإيجاب والسلب وقد مر بيان ذلك في بيان معنى اللادوام واللاضرورة وأما الموافقة في الكمية أي : الكلية والجزئية ، فلأن الموضوع في القضية المركبة أمر واحد وقد حكم عليه بحكمين مختلفين بالإيجاب والسلب .",
+      "english": "‘Opposed in quality’ means that the two component propositions differ in affirmation versus negation. They nevertheless agree in quantity—universal or particular—because they concern the same subject under the same scope. One cannot change the subject range while claiming to have formed the intended compound modality.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/64?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
     }
   ]
 };

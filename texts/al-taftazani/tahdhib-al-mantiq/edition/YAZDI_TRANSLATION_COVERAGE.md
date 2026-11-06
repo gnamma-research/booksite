@@ -1,22 +1,20 @@
-# Translation coverage — Mullā ʿAbd Allāh al-Yazdī
+# Mullā al-Yazdī — audited commentary-layer coverage
 
-**Source:** al-Ḥāshiya ʿalā Tahdhīb al-Manṭiq, Qum printed 400-page edition, as segmented in the searchable Arabic library at https://ablibrary.net/book_content/b/12170/1?lang=ar. Main **شرح** only; quoted or added **هامش** notes are not assigned to al-Yazdī.
+The bilingual layer presently has **111 translated, separately identified excerpts**. It is **not a complete translation** of the approximately 400-page printed edition. Arabic passage and English translation are linked to a specific printed page, but large portions remain untranslated. No printed **هامش** notes by other writers have been attributed to al-Yazdī.
 
-**Status:** a selection of **94** separately translated passages, **not** a complete translated commentary. Source page citations refer to that printed edition, not the Cairo 1912 pagination of al-Taftāzānī’s matn. Original Arabic and English are displayed in parallel only when the user explicitly enables the commentary layer.
+| Tahdhīb logic unit | Source pages represented | Translated excerpts | Status |
+|---|---|---:|---|
+| L.02 | 14, 15, 16, 17, 18, 19 | 11 | Selected; full commentary section not certified translated |
+| L.03 | 22, 23, 24, 25, 26, 27 | 11 | Selected; full commentary section not certified translated |
+| L.04 | 30, 31 | 3 | Selected; full commentary section not certified translated |
+| L.05 | 32, 33, 34, 35 | 5 | Selected; full commentary section not certified translated |
+| L.06 | 36, 37 | 2 | Selected; full commentary section not certified translated |
+| L.07 | 46, 47 | 9 | Selected; full commentary section not certified translated |
+| L.08 | 48, 49 | 9 | Selected; full commentary section not certified translated |
+| L.09 | 50 | 9 | Selected; full commentary section not certified translated |
+| L.11 | 59, 60, 61, 62, 63, 64 | 29 | Selected; full commentary section not certified translated |
+| L.10 | 54, 56, 57, 58 | 23 | Selected; full commentary section not certified translated |
 
-| Tahdhīb section | Al-Yazdī source pages with selected English | Translation status |
-|---|---|---|
-| L.02 | 14, 15, 16, 17, 18, 19 | 11 selected passages; source chapter NOT yet certified complete |
-| L.03 | 22, 23, 24, 25, 26, 27 | 11 selected passages; source chapter NOT yet certified complete |
-| L.04 | 30, 31 | 3 selected passages; source chapter NOT yet certified complete |
-| L.05 | 32, 33, 34, 35 | 5 selected passages; source chapter NOT yet certified complete |
-| L.06 | 36, 37 | 2 selected passages; source chapter NOT yet certified complete |
-| L.07 | 46, 47 | 9 selected passages; source chapter NOT yet certified complete |
-| L.08 | 48, 49 | 9 selected passages; source chapter NOT yet certified complete |
-| L.09 | 50 | 9 selected passages; source chapter NOT yet certified complete |
-| L.11 | 59, 60 | 12 selected passages; source chapter NOT yet certified complete |
-| L.10 | 54, 56, 57, 58 | 23 selected passages; source chapter NOT yet certified complete |
+The main **شرح** and the later **هامش** are distinguished in the searchable Arabic witness, https://ablibrary.net/book_content/b/12170/1?lang=ar . No incomplete translation is presented as a fully translated chapter. The underlying Tahdhīb Arabic, translations and canonical PDFs have not been rewritten.
 
-**Untranslated:** L.01, L.12–L.19; substantial intervening passages in previously selected chapters also remain. Finishing the full commentary requires sequential source-page transcription and proofing, including the remaining original printed pages. This register is a safeguard against confusing a bilingual anthology with a complete critical translation.
-
-**Next source segment:** Continue from Qum p.55 (which includes fragmentary commentary and a long separately attributed marginal note), then from after p.60 through the compound modal forms and subsequent logical chapters, maintaining exact lemma order and excluding later hands.
+Next untranslated main source: Qum p.55 has only a short fragment of al-Yazdī’s text alongside later marginal notes; the systematic translation beyond p.64, through conditional propositions, contradiction, conversion, syllogistic figures, demonstration and final sciences remains to be undertaken. Translation completeness must be measured by contiguous source-page coverage, not the number of isolated excerpts.
