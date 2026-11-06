@@ -7,7 +7,7 @@ window.GNAMMA_YAZDI_LAYER={
   "edition": "Qum, Muʾassasat al-Nashr al-Islāmī; searchable paginated text",
   "editionCatalog": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000566/display?lang=en",
   "sourceIndex": "https://ablibrary.net/book_content/b/12170/1",
-  "coverage": "158 source-linked selected Arabic–English translations across 19 of 19 logic divisions; these are NOT continuous/unabridged translations. Newly inspected commentary sections include the preface, contradiction, conversion, contraposition, syllogistic form and conditional inference, induction, the five arts and the parts of science. Printed source pages represented now include 7, 14–19, 22–27, 30–37, 46–50, 54, 56–68, 70, 72, 74, 76, 81, 86, 98, 102, 104, 105, 110 and 114. Other authors’ هامش marginalia excluded; all sections still require continuous source collation.",
+  "coverage": "167 separately source-linked selected bilingual main-commentary passages in all 19 editorial logic divisions. Only printed p. 114 is now represented by continuous selected commentary text in the searchable witness; no division is critically certified and most source paragraphs remain untranslated. The printed 400-page volume contains separate later gloss material and is not 400 pages of al-Yazdī continuous commentary.",
   "complete": false,
   "entries": [
     {
@@ -1531,6 +1531,83 @@ window.GNAMMA_YAZDI_LAYER={
       "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
     },
     {
+      "id": "YZ-105.04",
+      "unit": "L.18",
+      "page": 105,
+      "title": "Why the name 'induction' is transferred",
+      "arabic": "وكأن الباعث على هذه المسامحة هو الإشارة إلى أن تسمية هذا القسم من الحجة بالاستقراء ليس على سبيل الارتجال بل على سبيل النقل وهاهنا وجه آخر يجيء بيانه إن شاء الله الجليل في تحقيق التمثيل.",
+      "english": "Perhaps this looseness was prompted by a wish to show that calling this class of argument 'induction' is not an arbitrary coinage, but a transferred use of an existing word. Another account of this usage will emerge, God willing, in the investigation of analogy.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/105",
+      "attribution": "Al-Yazdī main commentary (as delimited in the Qum searchable print); later marginal glosses excluded",
+      "verification": "Searchable printed text checked; no independent scan/manuscript collation"
+    },
+    {
+      "id": "YZ-107.01",
+      "unit": "L.18",
+      "page": 107,
+      "title": "Analogy from a common explanatory property",
+      "arabic": "أي: ليثبت الحكم في الجزئي الأول وبعبارة أخرى: تشبيه جزئي بجزئي في معنى مشترك بينهما ليثبت في المشبه الحكم الثابت في المشبه به المعلل بذلك المعنى كما يقال: النبيذ حرام لأن الخمر حرام وعلة حرمته الإسكار وهو موجود في النبيذ.",
+      "english": "The point is to establish the ruling for the first particular. In other words, one particular is likened to another by a feature common to both, so that the ruling of the original case, explained by that feature, is established for the compared case. For example: nabīdh is forbidden because wine is forbidden on account of its intoxicating property, which is also found in nabīdh. The example illustrates analogical form, not a new legal ruling by the commentator.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/107",
+      "attribution": "Al-Yazdī main commentary (as delimited in the Qum searchable print); later marginal glosses excluded",
+      "verification": "Searchable printed text checked; no independent scan/manuscript collation"
+    },
+    {
+      "id": "YZ-107.02",
+      "unit": "L.18",
+      "page": 107,
+      "title": "Analogy as operation versus argument",
+      "arabic": "وفي العبارتين تسامح فإن التمثيل هو الحجة التي يقع فيها ذلك البيان والتشبيه وقد عرفت النكتة في التسامح في تعريف الاستقراء ونقول هاهنا: كما أن العكس يطلق على المعنى المصدري أعني: التبديل وعلى القضية الحاصلة بالتبديل كذلك التمثيل يطلق على المعنى المصدري وهو التشبيه والبيان المذكوران وعلى الحجة التي يقع فيها ذلك التشبيه والبيان فما ذكره، تعريف للتمثيل بالمعنى الأول ويعلم المعنى الثاني بالمقايسة وهذا كما عرف المصنف العكس بالتبديل المذكور وقس عليه الحال فيما سبق في الاستقراء هذا.",
+      "english": "Both formulations are somewhat loose, for analogy strictly is the argument within which the comparison and explanation occur. We have already explained the reason for the looseness in defining induction. As 'conversion' can mean both the operation of exchanging terms and the proposition produced by it, 'analogy' can mean both the operation of comparing and explaining, and the argument in which that operation occurs. The author's definition addresses the first meaning, and the second is understood by analogy with it; the same consideration applies to induction.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/107",
+      "attribution": "Al-Yazdī main commentary (as delimited in the Qum searchable print); later marginal glosses excluded",
+      "verification": "Searchable printed text checked; no independent scan/manuscript collation"
+    },
+    {
+      "id": "YZ-107.03",
+      "unit": "L.18",
+      "page": 107,
+      "title": "Does the proposed definition escape equivocation?",
+      "arabic": "ولكن لا يخفى: أن المصنف عدل في تعريفي الاستقراء والتمثيل عن المشهور إلى المذكور، دفعا لهذا التسامح وهل هو إلا كر على ما فر منه؟",
+      "english": "Yet the difficulty should not be missed: the author departed from the familiar definitions of induction and analogy in favour of these formulations precisely to escape that looseness. Has he not returned to the very thing from which he fled?",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/107",
+      "attribution": "Al-Yazdī main commentary (as delimited in the Qum searchable print); later marginal glosses excluded",
+      "verification": "Searchable printed text checked; no independent scan/manuscript collation"
+    },
+    {
+      "id": "YZ-107.04",
+      "unit": "L.18",
+      "page": 107,
+      "title": "The three premises required by analogy",
+      "arabic": "قوله « والعمدة في طريقة الدوران والترديد » : اعلم: أنه لا بد في التمثيل من مقدمات. الأولى: أن الحكم ثابت في الأصل أعني: المشبه به. الثانية: أن علة الحكم في الأصل الوصف الكذائي. الثالثة: أن ذلك الوصف موجود في الفرع أعني: المشبه. فإنه إذا تحقق العلم بهذه المقدمات الثلاث ينتقل الذهن إلى كون الحكم ثابتا في الفرع أيضا وهو المطلوب من التمثيل.",
+      "english": "On the claim that the principal methods are concomitance and elimination: analogical reasoning requires premises. First, the ruling obtains in the original case, the case used for comparison. Second, a specified attribute is the explanatory cause of that ruling in the original. Third, that attribute exists in the new case. Knowing all three moves the mind to affirm the ruling of the new case, which is the conclusion sought by analogy.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/107",
+      "attribution": "Al-Yazdī main commentary (as delimited in the Qum searchable print); later marginal glosses excluded",
+      "verification": "Searchable printed text checked; no independent scan/manuscript collation"
+    },
+    {
+      "id": "YZ-107.05",
+      "unit": "L.18",
+      "page": 107,
+      "title": "The contested premise is causal",
+      "arabic": "ثم المقدمة الأولى والثالثة ظاهرتان في كل تمثيل وإنما الإشكال في الثانية، وبيانها بطرق متعددة فصلوها في كتب « أصول الفقه » والمصنف ذكر ما هو العمدة من بينها وهو طريقان.",
+      "english": "The first and third premises are apparent in every analogy. The problem lies in the second: how is it established that the specified attribute is the cause? The books of legal theory examine several ways of showing this, of which the author names the two principal methods.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/107",
+      "attribution": "Al-Yazdī main commentary (as delimited in the Qum searchable print); later marginal glosses excluded",
+      "verification": "Searchable printed text checked; no independent scan/manuscript collation"
+    },
+    {
+      "id": "YZ-107.06",
+      "unit": "L.18",
+      "page": 107,
+      "title": "Concomitance as an indication of a cause",
+      "arabic": "الأول: الدوران وهو ترتب الحكم على الوصف الذي له صلاحية العلية وجودا وعدما كترتب الحرمة في الخمر على الإسكار فإنه ما دام مسكرا حرام وإذا زال عنه الإسكار زالت عنه الحرمة، قالوا: والدوران علامة كون المدار أعني: الوصف علة للدائر أعني الحكم.",
+      "english": "The first is concomitance (dawarān): a ruling tracks a property capable of being its cause, both in presence and in absence. The example is the prohibition of wine tracking its intoxicating quality: while that quality remains, so does the ruling, and if it ceases, the ruling ceases. The theorists say that such tracking is a sign that the property being tracked is the cause of the ruling that tracks it.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/107",
+      "attribution": "Al-Yazdī main commentary (as delimited in the Qum searchable print); later marginal glosses excluded",
+      "verification": "Searchable printed text checked; no independent scan/manuscript collation"
+    },
+    {
       "id": "YZ-110.01",
       "unit": "L.18",
       "page": 110,
@@ -1561,6 +1638,17 @@ window.GNAMMA_YAZDI_LAYER={
       "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
     },
     {
+      "id": "YZ-110.04",
+      "unit": "L.18",
+      "page": 110,
+      "title": "Epistemic basis of the five arts",
+      "arabic": "لأن مقدماته إما أن تفيد تصديقا أو تأثيرا آخر غير التصديق أعني: « التخييل » والثاني « الشعر » والأول إما أن يفيد ظنا أو جزما فالأول « الخطابة » والثاني إن أفاد جزما يقينيا فهو « البرهان » وإلا فإن اعتبر فيه عموم الاعتراف من العامة أو التسليم من الخصم فهو « الجدل » وإلا ف « المغالطة ».",
+      "english": "Their premises either produce assent or have another effect, namely imaginative presentation. The latter constitutes poetry. Where assent results, it is either conjectural or firm: the former characterises rhetoric. Firm assent, when certain, constitutes demonstration; otherwise, if common admission or the opponent's concession is operative, it is dialectic, and if not, fallacious reasoning.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/110",
+      "attribution": "Al-Yazdī main commentary (as delimited in the Qum searchable print); later marginal glosses excluded",
+      "verification": "Searchable printed text checked; no independent scan/manuscript collation"
+    },
+    {
       "id": "YZ-114.01",
       "unit": "L.19",
       "page": 114,
@@ -1579,6 +1667,17 @@ window.GNAMMA_YAZDI_LAYER={
       "english": "The second element consists of the propositions investigated, the scientific questions. These are generally theoretical, though they may be self-evident matters needing clarification. ‘Sought in the science’ covers both. Al-Yazdī judges the words ‘by demonstration’, which restrict the phrase in some copies, to be a scribal addition.",
       "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/114",
       "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-114.02a",
+      "unit": "L.19",
+      "page": 114,
+      "title": "The possible reconciliation of the disputed reading",
+      "arabic": "على أنه يمكن توجيهه بأنه بناء على الغالب أو بأن المراد بالبرهان ما يشمل التنبيه فتنبه.",
+      "english": "Even so, the disputed wording could be interpreted as referring to the predominant case, or 'demonstration' could be taken broadly enough to include drawing attention to a self-evident truth. Note the distinction.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/114",
+      "attribution": "Al-Yazdī main commentary (as delimited in the Qum searchable print); later marginal glosses excluded",
+      "verification": "Searchable printed text checked; no independent scan/manuscript collation"
     },
     {
       "id": "YZ-114.03",
