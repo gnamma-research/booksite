@@ -1,0 +1,53 @@
+{
+  "schema": "maqasid-matn-reader-page-index-v1",
+  "generated": "2026-11-07",
+  "canonical_matn": "../../sharh-al-maqasid/canonical/MAQASID_MATN_C1_2026-10-30.md",
+  "verification": "Complete English first pass; not globally Arabic-English verified",
+  "sections": {
+    "PREF": {
+      "units": 5,
+      "characters": 3412,
+      "english_words": 437
+    },
+    "I": {
+      "units": 47,
+      "characters": 36628,
+      "english_words": 4492
+    },
+    "II": {
+      "units": 62,
+      "characters": 105952,
+      "english_words": 14966
+    },
+    "III": {
+      "units": 57,
+      "characters": 98351,
+      "english_words": 14394
+    },
+    "IV": {
+      "units": 73,
+      "characters": 135381,
+      "english_words": 19833
+    },
+    "V": {
+      "units": 56,
+      "characters": 102340,
+      "english_words": 14774
+    },
+    "VI": {
+      "units": 79,
+      "characters": 136118,
+      "english_words": 19724
+    }
+  },
+  "file_paths": {
+    "PREF": "texts/al-taftazani/maqasid/reader-data/PREF.json",
+    "I": "texts/al-taftazani/maqasid/reader-data/I.json",
+    "II": "texts/al-taftazani/maqasid/reader-data/II.json",
+    "III": "texts/al-taftazani/maqasid/reader-data/III.json",
+    "IV": "texts/al-taftazani/maqasid/reader-data/IV.json",
+    "V": "texts/al-taftazani/maqasid/reader-data/V.json",
+    "VI": "texts/al-taftazani/maqasid/reader-data/VI.json"
+  },
+  "expected_source_pages": 345
+}
