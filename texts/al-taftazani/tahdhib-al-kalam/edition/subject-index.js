@@ -15,6 +15,9 @@ const groups=isLogic?[
   ['Expression and signification','دلالة الألفاظ',['الدلالة','دلالة اللفظ','مطابقة','تضمن','التزام']],
   ['Terms and composition','المفرد والمركب',['المفرد','المركب','اللفظ']],
   ['Universal and particular','الكلي والجزئي',['الكلي','الجزئي','الكليات']],
+  ['Relations between universals','النسب الأربع',['التباين','التساوي','العموم','الخصوص']],
+  ['Complements and relative inclusion','نقائض الكليات',['النقيض','اللاحيوان','اللاإنسان','العكس']],
+  ['Proximate and remote genus','الجنس القريب والبعيد',['الجنس القريب','الجنس البعيد','الحيوان','الجسم']],
   ['The five universals','الكليات الخمس',['الجنس','النوع','الفصل','الخاصة','العرض العام']],
   ['Definition and description','الحد والرسم',['الحد','الرسم','المعرف']],
  ]},
@@ -122,10 +125,15 @@ function open(trigger){
      body.append(button);
     }
     if(isLogic&&window.GNAMMA_YAZDI_LAYER?.entries?.length){
-     const glosses=window.GNAMMA_YAZDI_LAYER.entries.filter(p=>
+     const extended=[
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_L03?.sourcePages||[]).map(p=>({...p,unit:'L.03',arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en}))
+     ];
+     const archive=window.GNAMMA_YAZDI_LAYER.entries.filter(p=>!['L.03','L.04','L.05','L.06'].includes(p.unit));
+     const glosses=[...archive,...extended].filter(p=>
       t.keys.some(k=>norm(k).length>2&&(norm(p.arabic).includes(norm(k))||norm(p.english).includes(norm(k)))));
      if(glosses.length){
-      body.append(mk('p','gn-subject-more','Al-Yazdī · '+glosses.length+' translated source-linked passages (not complete commentary)'));
+      body.append(mk('p','gn-subject-more','Al-Yazdī · '+glosses.length+' translated source-linked sections (continuous where available; otherwise selected excerpts)'));
       for(const p of glosses.slice(0,16)){
        const link=mk('a','gn-subject-locator');
        link.href=p.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';
