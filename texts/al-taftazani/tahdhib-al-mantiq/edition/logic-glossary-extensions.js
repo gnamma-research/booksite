@@ -1003,12 +1003,174 @@ const modalConditionalTerms=[
     "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
   }
 ];
+const contradictionConversionTerms=[
+  {
+    "ar": "التناقض",
+    "en": "Contradiction",
+    "explanation": "Two propositions stand in contradiction when truth of either necessitates falsity of the other and falsity of either necessitates truth of the other.",
+    "page": 70,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/70?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "الوحدات الثمان",
+    "en": "Eight unities of contradiction",
+    "explanation": "Identity of subject, predicate, place, condition, relation, part/whole, potency/act and time, as quoted in a Persian mnemonic.",
+    "page": 71,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/71?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "نقيض صريح",
+    "en": "Explicit contradictory",
+    "explanation": "Direct removal of the assertion, contrasted with a proposition that only follows from that removal.",
+    "page": 71,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/71?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "نقيض المركبة",
+    "en": "Contradictory of a compound",
+    "explanation": "An inclusive alternative of the negations of its component assertions; for a particular compound the alternatives apply to every instance.",
+    "page": 72,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/72?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "منع الخلو",
+    "en": "Exclusion of joint falsity",
+    "explanation": "At least one of the two propositions must hold, while both may hold; used to negate a compound conjunction.",
+    "page": 72,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/72?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "مرددة المحمول",
+    "en": "Alternated predicate",
+    "explanation": "A categorical proposition whose predicate is disjunctively presented for each individual, relevant to negation of a particular compound.",
+    "page": 73,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/73?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "العكس المستوي",
+    "en": "Simple conversion",
+    "explanation": "Transposition of two terms while preserving inferential truth and affirmative/negative quality, with quantified and modal restrictions.",
+    "page": 74,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/74?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "بقاء الصدق",
+    "en": "Preservation of truth",
+    "explanation": "If the original proposition is supposed true, its converted result must be true; actual truth of both is not required.",
+    "page": 74,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/74?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "الصدق اللازم",
+    "en": "Truth by necessary consequence",
+    "explanation": "Validity of a conversion in virtue of the form, not merely coincidental truth in one subject matter.",
+    "page": 75,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/75?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "دليل الخلف",
+    "en": "Proof by reductio",
+    "explanation": "Assume the proposed conversion false and combine its contradictory with the original to derive a self-negating or impossible conclusion.",
+    "page": 76,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/76?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "الموضوع بالإمكان",
+    "en": "Possibly instantiated subject",
+    "explanation": "On the Farabian interpretation, a subject description can be predicated possibly rather than only of actual instantiations.",
+    "page": 77,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/77?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "الموضوع بالفعل",
+    "en": "Actually instantiated subject",
+    "explanation": "On the Avicennan interpretation, actual applicability of a subject description is required; merely possible predication does not supply an actual converted subject.",
+    "page": 78,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/78?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "انعكاس المجموع",
+    "en": "Conversion of the compound as a whole",
+    "explanation": "Whether a compound proposition converts cannot always be inferred from convertibility of each constituent taken alone; Yazdī adds a reservation.",
+    "page": 79,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/79?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "دليل النقض",
+    "en": "Counterexample",
+    "explanation": "Exhibit a matter in which an original proposition is true but its proposed conversion false, defeating a universally asserted inference.",
+    "page": 80,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/80?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "عكس النقيض",
+    "en": "Contraposition",
+    "explanation": "A transposition involving contradictory terms; older and later treatments differ in how terms and affirmative/negative quality are altered.",
+    "page": 81,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/81?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "طريقة القدماء",
+    "en": "Earlier method of contraposition",
+    "explanation": "Interchange the contradictories of both original terms while preserving affirmative or negative quality.",
+    "page": 81,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/81?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "طريقة المتأخرين",
+    "en": "Later method of contraposition",
+    "explanation": "Bring the contradictory of the second term into first position, retain the first term second and reverse affirmative/negative quality.",
+    "page": 81,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/81?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "دليل الافتراض",
+    "en": "Proof by assumed witness",
+    "explanation": "Introduce a particular individual D and establish both aspects of a special modal conversion by tracking it across different descriptive intervals.",
+    "page": 83,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/83?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "الوصف العنواني",
+    "en": "Description under which the subject is considered",
+    "explanation": "The defining subject-description whose presence may temporally condition a modal judgment.",
+    "page": 83,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/83?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  },
+  {
+    "ar": "لا دوام العكس",
+    "en": "Nonpermanence of the conversion",
+    "explanation": "An additional condition in special modal conversions requiring a counter-time to the original relation.",
+    "page": 83,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/83?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
+  }
+];
 const lemmaKey=t=>prior.norm(t.ar)+' ⟐ '+t.en.toLocaleLowerCase();
 const seen=new Set(prior.terms.map(lemmaKey));
 const terms=prior.terms.slice();
-for(const term of [...extra,...supplementary,...universals,...speciesTerms,...logicalUniversalsAndPropositions,...modalConditionalTerms]){
+for(const term of [...extra,...supplementary,...universals,...speciesTerms,...logicalUniversalsAndPropositions,...modalConditionalTerms,...contradictionConversionTerms]){
  const key=lemmaKey(term);
  if(!seen.has(key)){terms.push(term);seen.add(key)}
 }
-window.GNAMMA_TAHDHIB_GLOSSARY=Object.freeze({...prior,terms,version:'logic-plus-yazdi-modal-conditional-v6',historicallyCollated:false});
+window.GNAMMA_TAHDHIB_GLOSSARY=Object.freeze({...prior,terms,version:'logic-plus-yazdi-conversion-v7',historicallyCollated:false});
 })();
