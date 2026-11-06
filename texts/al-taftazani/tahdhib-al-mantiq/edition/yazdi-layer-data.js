@@ -1,4 +1,4 @@
-/* Selected bilingual Arabic/English translations; not the complete al-Yazdī book. */
+/* Source-linked selected bilingual Arabic/English translations; not the complete al-Yazdī commentary. */
 window.GNAMMA_YAZDI_LAYER={
   "schema": "gnamma-yazdi-translation-layer-v1",
   "work": "Tahdhīb al-Manṭiq",
@@ -7,9 +7,29 @@ window.GNAMMA_YAZDI_LAYER={
   "edition": "Qum, Muʾassasat al-Nashr al-Islāmī; searchable paginated text",
   "editionCatalog": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000566/display?lang=en",
   "sourceIndex": "https://ablibrary.net/book_content/b/12170/1",
-  "coverage": "121 selected translations in 11 of 19 logic divisions, from a historical Arabic commentary of about 400 printed pages. Printed source locations include pp. 14–19, 22–27, 30–37, 46–50, 54, 56–68. This does not constitute an unabridged commentary translation. All available Arabic and English are linked to printed source pages; separate هامش notes are excluded.",
+  "coverage": "158 source-linked selected Arabic–English translations across 19 of 19 logic divisions; these are NOT continuous/unabridged translations. Newly inspected commentary sections include the preface, contradiction, conversion, contraposition, syllogistic form and conditional inference, induction, the five arts and the parts of science. Printed source pages represented now include 7, 14–19, 22–27, 30–37, 46–50, 54, 56–68, 70, 72, 74, 76, 81, 86, 98, 102, 104, 105, 110 and 114. Other authors’ هامش marginalia excluded; all sections still require continuous source collation.",
   "complete": false,
   "entries": [
+    {
+      "id": "YZ-7.01",
+      "unit": "L.01",
+      "page": 7,
+      "title": "Beginning with the basmala and praise",
+      "arabic": "قوله « الحمد لله » افتتح بحمد الله بعد البسملة ابتداء بخير الكلام واقتداء بحديث خير الأنام عليه وآله الصلاة والسلام. فإن قلت : حديث الابتداء مروي في كل من التسمية والتحميد فكيف التوفيق؟ قلت: الابتداء في حديث التسمية محمول على الحقيقي وفي حديث التحميد على الإضافي أو على العرفي أو في كليهما على العرفي.",
+      "english": "On ‘Praise belongs to God’: the author begins with praise after the basmala. If one asks how this accords with reports commending a beginning both with God’s name and with praise, the reply is that ‘beginning’ can be literal in the report about naming God and relative or conventional in that about praise; alternatively, it can be conventional in both.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/7",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-7.02",
+      "unit": "L.01",
+      "page": 7,
+      "title": "Praise and the divine name",
+      "arabic": "والحمد هو الثناء باللسان على الجميل الاختياري نعمة كان أو غيرها والله علم على الأصح للذات الواجب الوجود المستجمع لجميع صفات الكمال.",
+      "english": "Praise is verbal commendation of voluntarily chosen excellence, whether it takes the form of a benefit or not. On the preferred account, ‘God’ is a proper name for the necessarily existent essence possessing all attributes of perfection.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/7",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
     {
       "id": "YZ-14.01",
       "unit": "L.02",
@@ -601,124 +621,24 @@ window.GNAMMA_YAZDI_LAYER={
       "attribution": "Yazdī main commentary; later printed footnotes excluded"
     },
     {
-      "id": "YZ-59.01",
-      "unit": "L.11",
-      "page": 59,
-      "title": "Infinitation belongs inside a term",
-      "arabic": "قوله « معدولة » : لأن حرف السلب موضوع لسلب النسبة فإذا استعمل لا في هذا المعنى كان معدولا عن معناه الأصلي فسميت القضية التي هذا الحرف جزء من جزئها معدولة .",
-      "english": "On ‘infinitated’: the negative particle is ordinarily employed to deny the predicative relation. If it is used instead as a component of one of the proposition’s terms, it has been diverted from that original function. Hence the resulting proposition is called infinitated (maʿdūla).",
-      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+      "id": "YZ-54.01",
+      "unit": "L.10",
+      "page": 54,
+      "title": "The proposition is a mental or verbal composite",
+      "arabic": "قوله « قول » : القول في عرف هذا الفن يقال للمركب سواء كان مركبا معقولا أو ملفوظا فالتعريف يشتمل على القضية المعقولة والملفوظة .",
+      "english": "On ‘discourse’ (qawl): in this discipline the term applies to a composite, whether intelligible or spoken. Consequently the definition of a proposition includes both the proposition as grasped by the intellect and the proposition as expressed in words.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/54?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), not later margin (هامش)"
     },
     {
-      "id": "YZ-59.02",
-      "unit": "L.11",
-      "page": 59,
-      "title": "The non-infinitated alternative",
-      "arabic": "والقضية التي لا يكون حرف السلب جزءا من طرفيها تسمى محصلة .",
-      "english": "A proposition in which the negative particle forms no part of either term is called non-infinitated (muḥaṣṣala). This is distinct from asking whether the whole assertion is affirmative or negative.",
-      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
-    },
-    {
-      "id": "YZ-59.03",
-      "unit": "L.11",
-      "page": 59,
-      "title": "Matter of the proposition is its actual modal character",
-      "arabic": "قوله « بكيفية النسبة » : أي نسبة المحمول إلى الموضوع سواء كانت إيجابية أو سلبية تكون لا محالة مكيفة في نفس الأمر والواقع بكيفية مثل الضرورة أو الدوام أو الامتناع أو غير ذلك فتلك الكيفية الواقعة في نفس الأمر تسمى مادة القضية .",
-      "english": "On ‘the quality of the relation’: the relation of predicate to subject, whether affirmed or denied, necessarily has some character in reality—for example, necessity, permanence, impossibility, or another modal condition. That actual character of the predicative relation is called the matter (mādda) of the proposition.",
-      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
-    },
-    {
-      "id": "YZ-59.04",
-      "unit": "L.11",
-      "page": 59,
-      "title": "Expressing modality is different from possessing it",
-      "arabic": "ثم قد يصرح في القضية بأن تلك النسبة مكيفة في نفس الأمر بكيفية كذا فالقضية حينئذ تسمى موجهة وقد لا يصرح بذلك فتسمى القضية مطلقة .",
-      "english": "A proposition may explicitly state which modal character belongs to its predicative relation; in that case it is a modal proposition (muwajjaha). If the character is not stated, it is an unqualified proposition (muṭlaqa). Lack of an expressed modal qualifier does not mean that the relation lacks a character in reality.",
-      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
-    },
-    {
-      "id": "YZ-59.05",
-      "unit": "L.11",
-      "page": 59,
-      "title": "The modality (jiha) is what indicates the claimed condition",
-      "arabic": "واللفظ الدال عليها في القضية الملفوظة والصورة العقلية الدالة عليها في القضية المعقولة يسمى جهة القضية .",
-      "english": "The word indicating the modal character in a spoken or written proposition—and the corresponding intelligible representation in a mentally grasped proposition—is called its modality (jiha). Thus the expressed modality must be distinguished from the underlying matter.",
-      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
-    },
-    {
-      "id": "YZ-59.06",
-      "unit": "L.11",
-      "page": 59,
-      "title": "Truth requires conformity between expressed modality and matter",
-      "arabic": "فإن طابقت الجهة المادة صدقت القضية كقولنا كل إنسان حيوان بالضرورة وإلا كذبت كقولنا كل إنسان حجر بالضرورة .",
-      "english": "If the asserted modality accords with the actual modal matter, the proposition is true, as in ‘Every human is necessarily an animal.’ If it does not, it is false, as in ‘Every human is necessarily a stone.’ This condition concerns the proposition as modally qualified, not merely the surface presence of a modal word.",
-      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
-    },
-    {
-      "id": "YZ-60.01",
-      "unit": "L.11",
-      "page": 60,
-      "title": "Description-conditioned necessity",
-      "arabic": "الثاني : أنها ضرورية ما دام الوصف العنواني ثابتا لذات الموضوع نحو كل كاتب متحرك الأصابع بالضرورة ما دام كاتبا فتسمى حينئذ مشروطة عامة لاشتراط الضرورة بالوصف العنواني .",
-      "english": "Second, the predication may be necessary only while the subject bears the descriptive title under which it is considered—for instance, ‘Every writer necessarily moves the fingers while writing.’ The resulting proposition is generally conditioned (mashrūṭa ʿāmma) because its necessity depends on that title, not on the entire duration of the subject’s existence.",
-      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
-    },
-    {
-      "id": "YZ-60.02",
-      "unit": "L.11",
-      "page": 60,
-      "title": "Necessity at a specified time",
-      "arabic": "الثالث : أنها ضرورية في وقت معين نحو كل قمر منخسف بالضرورة وقت حيلولة الأرض بينه وبين الشمس فتسمى حينئذ وقتية مطلقة لتقييد الضرورة بالوقت وعدم تقييد القضية باللادوام .",
-      "english": "Third, the relation may be necessary at a specified time, as with a lunar eclipse at the time the Earth intervenes between Moon and Sun. This is an absolutely temporal proposition (waqtiyya muṭlaqa): its necessity is restricted to a determinate time, without a further assertion of nonpermanence.",
-      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
-    },
-    {
-      "id": "YZ-60.03",
-      "unit": "L.11",
-      "page": 60,
-      "title": "Necessity at an unspecified time",
-      "arabic": "الرابع : أنها ضرورية في وقت من الأوقات كقولنا كل إنسان متنفس بالضرورة وقتا ما فتسمى حينئذ منتشرة مطلقة لكون وقت الضرورة فيها منتشرا أي غير معين .",
-      "english": "Fourth, one may judge a relation necessary at some time without identifying when. ‘Every human necessarily breathes at some time’ illustrates the kind of claim intended. It is termed absolutely diffuse (muntashira muṭlaqa), because the time of necessity is left unspecified.",
-      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
-    },
-    {
-      "id": "YZ-60.04",
-      "unit": "L.11",
-      "page": 60,
-      "title": "Permanence does not mean necessity",
-      "arabic": "قوله « فدائمة مطلقة » : والفرق بين الضرورة والدوام أن الضرورة هي استحالة انفكاك شيء عن شيء والدوام عدم انفكاكه عنه وإن لم يكن مستحيلا كدوام الحركة للفلك .",
-      "english": "On ‘absolutely permanent’: the difference is that necessity makes separation impossible, whereas permanence means that separation does not occur, even though it might be possible. The commentary gives the traditional example of perpetual celestial motion; the logical distinction does not depend on accepting that cosmology.",
-      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
-    },
-    {
-      "id": "YZ-60.05",
-      "unit": "L.11",
-      "page": 60,
-      "title": "Duration relative to substance or descriptive condition",
-      "arabic": "ثم الدوام أعني عدم انفكاك النسبة الإيجابية أو السلبية عن الموضوع إما ذاتي أو وصفي فإن كان الحكم في الموجهة بالدوام الذاتي أي بعدم انفكاك النسبة عن الموضوع ما دام ذات الموضوع موجودة سميت القضية دائمة .",
-      "english": "Permanence, that is, continued inseparability of an affirmative or negative predicative relation from its subject, may be tied either to the subject itself or to a description. When judged to last throughout the existence of the subject, the proposition is called permanent (dāʾima).",
-      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
-    },
-    {
-      "id": "YZ-60.06",
-      "unit": "L.11",
-      "page": 60,
-      "title": "Customary permanence while the title applies",
-      "arabic": "وإن كان الحكم بالدوام الوصفي أي بعدم انفكاك النسبة عن ذات الموضوع ما دام الوصف العنواني ثابتا لتلك الذات سميت عرفية لأن أهل العرف يفهمون هذا المعنى من القضية السالبة بل من الموجبة أيضا عند الإطلاق .",
-      "english": "If permanence is tied to a descriptive attribute—so that the predicate remains attached only while the subject falls under a given title—the proposition is called customary (ʿurfiyya). Ordinary usage understands many positive and negative predications this way: the claim concerns the subject while it bears the named description.",
-      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+      "id": "YZ-54.02",
+      "unit": "L.10",
+      "page": 54,
+      "title": "Truth and falsity are correspondence and noncorrespondence",
+      "arabic": "قوله « الصدق » : هو المطابقة للواقع والكذب هو اللامطابقة للواقع .",
+      "english": "On ‘truth’: it consists in correspondence to what is actually the case. Falsity consists in a failure of such correspondence. The proposition is evaluated against reality, not merely against the hearer’s knowledge of it.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/54?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), not later margin (هامش)"
     },
     {
       "id": "YZ-56.01",
@@ -931,24 +851,124 @@ window.GNAMMA_YAZDI_LAYER={
       "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
     },
     {
-      "id": "YZ-54.01",
-      "unit": "L.10",
-      "page": 54,
-      "title": "The proposition is a mental or verbal composite",
-      "arabic": "قوله « قول » : القول في عرف هذا الفن يقال للمركب سواء كان مركبا معقولا أو ملفوظا فالتعريف يشتمل على القضية المعقولة والملفوظة .",
-      "english": "On ‘discourse’ (qawl): in this discipline the term applies to a composite, whether intelligible or spoken. Consequently the definition of a proposition includes both the proposition as grasped by the intellect and the proposition as expressed in words.",
-      "sourceUrl": "https://ablibrary.net/book_content/b/12170/54?lang=ar",
-      "attribution": "Yazdī main commentary (شرح), not later margin (هامش)"
+      "id": "YZ-59.01",
+      "unit": "L.11",
+      "page": 59,
+      "title": "Infinitation belongs inside a term",
+      "arabic": "قوله « معدولة » : لأن حرف السلب موضوع لسلب النسبة فإذا استعمل لا في هذا المعنى كان معدولا عن معناه الأصلي فسميت القضية التي هذا الحرف جزء من جزئها معدولة .",
+      "english": "On ‘infinitated’: the negative particle is ordinarily employed to deny the predicative relation. If it is used instead as a component of one of the proposition’s terms, it has been diverted from that original function. Hence the resulting proposition is called infinitated (maʿdūla).",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
     },
     {
-      "id": "YZ-54.02",
-      "unit": "L.10",
-      "page": 54,
-      "title": "Truth and falsity are correspondence and noncorrespondence",
-      "arabic": "قوله « الصدق » : هو المطابقة للواقع والكذب هو اللامطابقة للواقع .",
-      "english": "On ‘truth’: it consists in correspondence to what is actually the case. Falsity consists in a failure of such correspondence. The proposition is evaluated against reality, not merely against the hearer’s knowledge of it.",
-      "sourceUrl": "https://ablibrary.net/book_content/b/12170/54?lang=ar",
-      "attribution": "Yazdī main commentary (شرح), not later margin (هامش)"
+      "id": "YZ-59.02",
+      "unit": "L.11",
+      "page": 59,
+      "title": "The non-infinitated alternative",
+      "arabic": "والقضية التي لا يكون حرف السلب جزءا من طرفيها تسمى محصلة .",
+      "english": "A proposition in which the negative particle forms no part of either term is called non-infinitated (muḥaṣṣala). This is distinct from asking whether the whole assertion is affirmative or negative.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-59.03",
+      "unit": "L.11",
+      "page": 59,
+      "title": "Matter of the proposition is its actual modal character",
+      "arabic": "قوله « بكيفية النسبة » : أي نسبة المحمول إلى الموضوع سواء كانت إيجابية أو سلبية تكون لا محالة مكيفة في نفس الأمر والواقع بكيفية مثل الضرورة أو الدوام أو الامتناع أو غير ذلك فتلك الكيفية الواقعة في نفس الأمر تسمى مادة القضية .",
+      "english": "On ‘the quality of the relation’: the relation of predicate to subject, whether affirmed or denied, necessarily has some character in reality—for example, necessity, permanence, impossibility, or another modal condition. That actual character of the predicative relation is called the matter (mādda) of the proposition.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-59.04",
+      "unit": "L.11",
+      "page": 59,
+      "title": "Expressing modality is different from possessing it",
+      "arabic": "ثم قد يصرح في القضية بأن تلك النسبة مكيفة في نفس الأمر بكيفية كذا فالقضية حينئذ تسمى موجهة وقد لا يصرح بذلك فتسمى القضية مطلقة .",
+      "english": "A proposition may explicitly state which modal character belongs to its predicative relation; in that case it is a modal proposition (muwajjaha). If the character is not stated, it is an unqualified proposition (muṭlaqa). Lack of an expressed modal qualifier does not mean that the relation lacks a character in reality.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-59.05",
+      "unit": "L.11",
+      "page": 59,
+      "title": "The modality (jiha) is what indicates the claimed condition",
+      "arabic": "واللفظ الدال عليها في القضية الملفوظة والصورة العقلية الدالة عليها في القضية المعقولة يسمى جهة القضية .",
+      "english": "The word indicating the modal character in a spoken or written proposition—and the corresponding intelligible representation in a mentally grasped proposition—is called its modality (jiha). Thus the expressed modality must be distinguished from the underlying matter.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-59.06",
+      "unit": "L.11",
+      "page": 59,
+      "title": "Truth requires conformity between expressed modality and matter",
+      "arabic": "فإن طابقت الجهة المادة صدقت القضية كقولنا كل إنسان حيوان بالضرورة وإلا كذبت كقولنا كل إنسان حجر بالضرورة .",
+      "english": "If the asserted modality accords with the actual modal matter, the proposition is true, as in ‘Every human is necessarily an animal.’ If it does not, it is false, as in ‘Every human is necessarily a stone.’ This condition concerns the proposition as modally qualified, not merely the surface presence of a modal word.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-60.01",
+      "unit": "L.11",
+      "page": 60,
+      "title": "Description-conditioned necessity",
+      "arabic": "الثاني : أنها ضرورية ما دام الوصف العنواني ثابتا لذات الموضوع نحو كل كاتب متحرك الأصابع بالضرورة ما دام كاتبا فتسمى حينئذ مشروطة عامة لاشتراط الضرورة بالوصف العنواني .",
+      "english": "Second, the predication may be necessary only while the subject bears the descriptive title under which it is considered—for instance, ‘Every writer necessarily moves the fingers while writing.’ The resulting proposition is generally conditioned (mashrūṭa ʿāmma) because its necessity depends on that title, not on the entire duration of the subject’s existence.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-60.02",
+      "unit": "L.11",
+      "page": 60,
+      "title": "Necessity at a specified time",
+      "arabic": "الثالث : أنها ضرورية في وقت معين نحو كل قمر منخسف بالضرورة وقت حيلولة الأرض بينه وبين الشمس فتسمى حينئذ وقتية مطلقة لتقييد الضرورة بالوقت وعدم تقييد القضية باللادوام .",
+      "english": "Third, the relation may be necessary at a specified time, as with a lunar eclipse at the time the Earth intervenes between Moon and Sun. This is an absolutely temporal proposition (waqtiyya muṭlaqa): its necessity is restricted to a determinate time, without a further assertion of nonpermanence.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-60.03",
+      "unit": "L.11",
+      "page": 60,
+      "title": "Necessity at an unspecified time",
+      "arabic": "الرابع : أنها ضرورية في وقت من الأوقات كقولنا كل إنسان متنفس بالضرورة وقتا ما فتسمى حينئذ منتشرة مطلقة لكون وقت الضرورة فيها منتشرا أي غير معين .",
+      "english": "Fourth, one may judge a relation necessary at some time without identifying when. ‘Every human necessarily breathes at some time’ illustrates the kind of claim intended. It is termed absolutely diffuse (muntashira muṭlaqa), because the time of necessity is left unspecified.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-60.04",
+      "unit": "L.11",
+      "page": 60,
+      "title": "Permanence does not mean necessity",
+      "arabic": "قوله « فدائمة مطلقة » : والفرق بين الضرورة والدوام أن الضرورة هي استحالة انفكاك شيء عن شيء والدوام عدم انفكاكه عنه وإن لم يكن مستحيلا كدوام الحركة للفلك .",
+      "english": "On ‘absolutely permanent’: the difference is that necessity makes separation impossible, whereas permanence means that separation does not occur, even though it might be possible. The commentary gives the traditional example of perpetual celestial motion; the logical distinction does not depend on accepting that cosmology.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-60.05",
+      "unit": "L.11",
+      "page": 60,
+      "title": "Duration relative to substance or descriptive condition",
+      "arabic": "ثم الدوام أعني عدم انفكاك النسبة الإيجابية أو السلبية عن الموضوع إما ذاتي أو وصفي فإن كان الحكم في الموجهة بالدوام الذاتي أي بعدم انفكاك النسبة عن الموضوع ما دام ذات الموضوع موجودة سميت القضية دائمة .",
+      "english": "Permanence, that is, continued inseparability of an affirmative or negative predicative relation from its subject, may be tied either to the subject itself or to a description. When judged to last throughout the existence of the subject, the proposition is called permanent (dāʾima).",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-60.06",
+      "unit": "L.11",
+      "page": 60,
+      "title": "Customary permanence while the title applies",
+      "arabic": "وإن كان الحكم بالدوام الوصفي أي بعدم انفكاك النسبة عن ذات الموضوع ما دام الوصف العنواني ثابتا لتلك الذات سميت عرفية لأن أهل العرف يفهمون هذا المعنى من القضية السالبة بل من الموجبة أيضا عند الإطلاق .",
+      "english": "If permanence is tied to a descriptive attribute—so that the predicate remains attached only while the subject falls under a given title—the proposition is called customary (ʿurfiyya). Ordinary usage understands many positive and negative predications this way: the claim concerns the subject while it bears the named description.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
     },
     {
       "id": "YZ-61.01",
@@ -1219,6 +1239,356 @@ window.GNAMMA_YAZDI_LAYER={
       "english": "A particular affirmative conditional may be introduced by ‘it may happen that’; the particular negative by ‘it may happen that not’. A singular conditional fixes a particular occasion, such as ‘If you come to me today, I shall honour you’. An indefinite conditional leaves the scope unstated, such as ‘If something is human, it is an animal’.",
       "sourceUrl": "https://ablibrary.net/book_content/b/12170/68?lang=ar",
       "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-70.01",
+      "unit": "L.13",
+      "page": 70,
+      "title": "Contradiction concerns propositions",
+      "arabic": "قوله « اختلاف القضيتين » : قيد بالقضيتين، إما لأن التناقض لا يكون بين المفردات على ما قيل وإما لأن الكلام في تناقض القضايا.",
+      "english": "On ‘difference between two propositions’: the definition specifies propositions, either because, as some say, there is no contradiction between isolated terms or because the present inquiry concerns the contradiction of propositions.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/70",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-70.02",
+      "unit": "L.13",
+      "page": 70,
+      "title": "Why two particulars are not contradictories",
+      "arabic": "قوله « بحيث يلزم لذاته من صدق كل منهما كذب الأخرى » : خرج بهذا القيد الاختلاف الواقع بين الموجبة والسالبة الجزئيتين فإنهما قد تصدقان معا نحو: بعض الحيوان إنسان وبعضه ليس بإنسان فلم يتحقق التناقض بين الجزئيتين.",
+      "english": "The requirement that the truth of either intrinsically entails the falsity of the other excludes an affirmative particular and a negative particular: both can be true. ‘Some animals are human’ and ‘Some animals are not human’ do not contradict each other.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/70",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-70.03",
+      "unit": "L.13",
+      "page": 70,
+      "title": "Why two universals are not contradictories",
+      "arabic": "قوله « وبالعكس » : أي: وكذلك يلزم من كذب كل من القضيتين صدق الأخرى، وخرج بهذا القيد الاختلاف الواقع بين الموجبة والسالبة الكليتين فإنهما قد تكذبان معا نحو: لا شيء من الحيوان بإنسان وكل حيوان إنسان، فلا يتحقق التناقض بين الكليتين أيضا.",
+      "english": "‘And conversely’ requires the falsity of each proposition to entail the truth of the other. This excludes an affirmative universal and a negative universal, which can both be false: neither ‘No animal is human’ nor ‘Every animal is human’ need be true.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/70",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-72.01",
+      "unit": "L.13",
+      "page": 72,
+      "title": "Why some temporal modes are omitted",
+      "arabic": "والمصنف لم يتعرض لبيان نقيضي الوقتية والمنتشرة المطلقتين من البسائط إذ لا يتعلق بذلك غرض فيما سيأتي من مباحث العكوس والأقيسة بخلاف باقي البسائط فتأمل.",
+      "english": "The author does not set out the contradictories of the unrestricted time-specific and scattered propositions among the simple modal forms, since these are not needed for the following treatments of conversion and syllogism in the way that the other simple forms are.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/72",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-72.02",
+      "unit": "L.13",
+      "page": 72,
+      "title": "Negating a compound modal proposition",
+      "arabic": "قوله « وللمركبة » : قد علمت أن نقيض كل شيء رفعه فاعلم: أن رفع المركب إنما يكون برفع أحد جزأيه لا على التعيين بل على سبيل منع الخلو إذ يجوز أن يكون برفع كلا جزأيه فنقيض القضية المركبة نقيض أحد جزأيه على سبيل منع الخلو.",
+      "english": "On ‘and the compound proposition’: negation removes an assertion; a compound assertion is negated by denying at least one of its constituents, without specifying which, since both may be denied. Its contradictory therefore has the form of an inclusive disjunction of the constituent negations, not an exclusive choice.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/72",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-74.01",
+      "unit": "L.14",
+      "page": 74,
+      "title": "Conversion and the two terms",
+      "arabic": "قوله « طرفي القضية » : سواء كان الطرفان هما الموضوع والمحمول أو المقدم والتالي. واعلم: أن العكس كما يطلق على المعنى المصدري المذكور كذلك يطلق على القضية الحاصلة من التبديل وذلك الإطلاق مجازي من قبيل إطلاق اللفظ على الملفوظ والخلق على المخلوق.",
+      "english": "The ‘two terms’ exchanged in conversion may be subject and predicate or antecedent and consequent. ‘Conversion’ names both the act of transposition and, figuratively, the proposition obtained by that act.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/74",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-74.02",
+      "unit": "L.14",
+      "page": 74,
+      "title": "Truth preservation is conditional",
+      "arabic": "قوله « مع بقاء الصدق » : بمعنى أن الأصل لو فرض صدقه لزم من صدقه صدق العكس لا أنه يجب صدقهما في الواقع.",
+      "english": "‘Preserving truth’ means that if the original is supposed true, the converted proposition must also be true; it does not mean that both propositions must actually be true.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/74",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-76.01",
+      "unit": "L.14",
+      "page": 76,
+      "title": "A particular negative need not convert",
+      "arabic": "قوله « عموم الموضوع » : وحينئذ يصح سلب الأخص عن بعض الأعم لكن لا يصح سلب الأعم عن بعض الأخص، مثلا يصدق: بعض الحيوان ليس بإنسان ولا يصدق بعض الإنسان ليس بحيوان.",
+      "english": "Where the subject is more general, the narrower term may be denied of some instances of the broader one, but the broader term cannot be denied of instances of the narrower. Thus ‘Some animals are not human’ is true, while ‘Some humans are not animals’ is not.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/76",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-76.02",
+      "unit": "L.14",
+      "page": 76,
+      "title": "Why conditional direction matters",
+      "arabic": "قوله « أو المقدم » : مثلا يصدق: قد لا يكون إذا كان الشيء حيوانا كان إنسانا ولا يصدق: قد لا يكون إذا كان الشيء إنسانا كان حيوانا.",
+      "english": "The same asymmetry can arise with an antecedent: it may fail to follow that something is human when it is an animal, but it does not thereby fail to follow that it is an animal when it is human.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/76",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-76.03",
+      "unit": "L.14",
+      "page": 76,
+      "title": "Conversion with modal qualification",
+      "arabic": "قوله « وأما بحسب الجهة » : يعني: أن ما ذكرناه هو بيان انعكاس القضايا بحسب الكم والكيف وأما بحسب الجهة إلخ.",
+      "english": "‘As regards the modal qualification’ marks a transition: the preceding account concerned conversion with respect to quantity and quality; the next concerns conversion under modal qualifications.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/76",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-81.01",
+      "unit": "L.15",
+      "page": 81,
+      "title": "Contraposition by negating and exchanging",
+      "arabic": "قوله « تبديل نقيضي الطرفين » : أي: جعل نقيض الجزء الأول من الأصل جزءا ثانيا من العكس ونقيض الجزء الثاني جزءا أولا.",
+      "english": "To ‘exchange the contradictories of the two terms’ is to put the negation of the original first term in second position and the negation of the original second term in first position.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/81",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-81.02",
+      "unit": "L.15",
+      "page": 81,
+      "title": "The older method of contraposition",
+      "arabic": "قوله « مع بقاء الصدق » : أي: إن كان الأصل صادقا كان العكس صادقا ومع بقاء « الكيف » أي: إن كان الأصل موجبا كان العكس موجبا وإن كان سالبا كان العكس سالبا، مثلا قولنا: كل ج، ب ينعكس بعكس النقيض إلى قولنا: كل ما ليس ب ليس ج وهذه طريقة القدماء.",
+      "english": "In the earlier method, truth and quality are retained: an affirmative yields an affirmative, a negative a negative. Thus ‘Every C is B’ converts by contraposition to ‘Every non-B is non-C’. This is the method of the earlier logicians.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/81",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-81.03",
+      "unit": "L.15",
+      "page": 81,
+      "title": "Later contraposition changes quality",
+      "arabic": "وأما المتأخرون فقالوا: عكس النقيض هو: جعل نقيض الجزء الثاني أولا وعين الجزء الأول ثانيا مع مخالفة الكيف أي: إن كان الأصل موجبا كان العكس سالبا وبالعكس ويعتبر بقاء الصدق كما مر.",
+      "english": "Later logicians instead define contraposition by putting the contradictory of the second term first and the unchanged first term second, while reversing quality—affirmative becomes negative and vice versa—and still requiring truth to be preserved.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/81",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-86.01",
+      "unit": "L.16",
+      "page": 86,
+      "title": "A syllogism is more than a collection",
+      "arabic": "قوله « القياس قول » : أي: مركب وهو أعم من المؤلف إذ قد اعتبر في المؤلف المناسبة بين أجزائه لأنه مأخوذ من الألفة.",
+      "english": "On ‘a syllogism is a discourse’: ‘discourse’ here signifies something composite, a broader notion than an ordered composition, since the latter requires a suitable connection between its parts.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/86",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-86.02",
+      "unit": "L.16",
+      "page": 86,
+      "title": "The formal constituent of inference",
+      "arabic": "وفي اعتبار التأليف بعد التركيب إشارة إلى اعتبار الجزء الصوري في الحجة.",
+      "english": "Requiring ordered composition in addition to mere combination signals that the formal constituent of an argument is indispensable.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/86",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-98.01",
+      "unit": "L.16",
+      "page": 98,
+      "title": "Reduction by converting both premises",
+      "arabic": "قوله « أو بعكس المقدمتين » : فيرجع إلى الشكل الأول ولا يجري إلا حيث يكون الصغرى موجبة والكبرى سالبة كلية لينعكس إلى السالبة الكلية كما في الرابع والخامس لا غير.",
+      "english": "On ‘or by converting both premises’: this reduces the inference to the first figure, but works only where the minor premise is affirmative and the major is a universal negative capable of conversion—as in the fourth and fifth moods under discussion.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/98",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-98.02",
+      "unit": "L.16",
+      "page": 98,
+      "title": "A rule for productivity",
+      "arabic": "قوله « وضابطة شرائط الأربعة » : أي: الأمر الذي إذا راعيته في كل قياس اقتراني حملي كان منتجا ومشتملا على الشرائط المذكورة جزما.",
+      "english": "The ‘regulating rule for the four figures’ is a condition which, if observed in every categorical conjunctive syllogism, ensures that it is productive and satisfies the stated requirements.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/98",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-102.01",
+      "unit": "L.17",
+      "page": 102,
+      "title": "Two connected conditionals",
+      "arabic": "قوله « من متصلتين » : كقولنا: كلما كانت الشمس طالعة فالنهار موجود وكلما كان النهار موجودا فالعالم مضيء ينتج: كلما كانت الشمس طالعة فالعالم مضيء.",
+      "english": "From two connected conditionals: ‘Whenever the sun has risen, it is daytime’ and ‘Whenever it is daytime, the world is illuminated’ together yield ‘Whenever the sun has risen, the world is illuminated’.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/102",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-102.02",
+      "unit": "L.17",
+      "page": 102,
+      "title": "Categorical plus connected conditional",
+      "arabic": "قوله « أو حملية ومتصلة » : نحو: هذا الشيء إنسان وكلما كان الشيء إنسانا كان حيوانا ينتج: هذا الشيء حيوان.",
+      "english": "A categorical proposition combined with a connected conditional: ‘This thing is a human’ and ‘Whenever something is human, it is an animal’ yield ‘This thing is an animal’.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/102",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-102.03",
+      "unit": "L.17",
+      "page": 102,
+      "title": "Categorical plus disjunctive proposition",
+      "arabic": "قوله « أو حملية ومنفصلة » : نحو: هذا عدد ودائما إما أن يكون العدد زوجا أو يكون فردا ينتج: فهذا إما أن يكون زوجا أو فردا.",
+      "english": "A categorical proposition combined with a disjunction: ‘This is a number’ and ‘A number is either even or odd’ yield ‘This is either even or odd’.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/102",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-102.04",
+      "unit": "L.17",
+      "page": 102,
+      "title": "Connected conditional plus disjunction",
+      "arabic": "قوله « أو متصلة ومنفصلة » : نحو: كلما كان هذا الشيء ثلاثة فهو عدد ودائما إما أن يكون العدد زوجا أو فردا ينتج: كلما كان هذا الشيء ثلاثة فإما أن يكون زوجا أو فردا.",
+      "english": "A connected conditional combined with a disjunction: ‘If this thing is three, it is a number’ and ‘A number is either even or odd’ yield ‘If this thing is three, it is either even or odd’.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/102",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-104.01",
+      "unit": "L.17",
+      "page": 104,
+      "title": "Disjunction excluding joint truth",
+      "arabic": "قوله « كمانعة الجمع » : نحو: إما أن يكون هذا شجرا أو حجرا لكنه شجر فليس بحجر لكنه حجر فليس بشجر.",
+      "english": "In a disjunction that excludes both alternatives being true together: ‘This is either a tree or a stone’; if it is a tree, it is not a stone, and if it is a stone, it is not a tree.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/104",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-104.02",
+      "unit": "L.17",
+      "page": 104,
+      "title": "Disjunction excluding joint falsity",
+      "arabic": "قوله « كمانعة الخلو » : نحو: هذا إما لا حجر أو لا شجر لكنه ليس بلا شجر فهو لا حجر لكنه ليس بلا حجر فهو لا شجر.",
+      "english": "In a disjunction that excludes both alternatives being false: ‘This is either not a stone or not a tree’; if it is not the case that it is not a tree, then it is not a stone, and conversely if it is not the case that it is not a stone, then it is not a tree.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/104",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-104.03",
+      "unit": "L.17",
+      "page": 104,
+      "title": "Indirect proof proceeds via the contradictory",
+      "arabic": "قد يستدل على إثبات المدعى بأنه لولاه لصدق نقيضه لاستحالة ارتفاع النقيضين لكن نقيضه غير واقع فيكون هذا واقعا كما مر غير مرة في مباحث العكوس والأقيسة.",
+      "english": "One can establish a claim by reasoning that, were it not true, its contradictory would have to be true, since contradictories cannot both fail; but the contradictory does not obtain, so the claim obtains.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/104",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-104.04",
+      "unit": "L.17",
+      "page": 104,
+      "title": "The two stages of reductio",
+      "arabic": "وليس هذا قياسا واحدا بل ينحل إلى قياسين: أحدهما اقتراني شرطي والآخر استثنائي متصل يستثنى فيه نقيض التالي.",
+      "english": "This is not one syllogism: it resolves into two, a conjunctive conditional inference and a connected exceptive inference in which the contradictory of the consequent is asserted.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/104",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-104.05",
+      "unit": "L.17",
+      "page": 104,
+      "title": "A reductio may require further proof",
+      "arabic": "ثم قد يفتقر بيان الشرطية يعني قولنا: كلما ثبت نقيضه ثبت المحال، إلى دليل آخر فتكثر القياسات، كذا قال المصنف في شرح الأصول.",
+      "english": "Establishing the conditional premise—‘Whenever the contradictory obtains, an absurdity follows’—may itself require another argument, increasing the number of syllogisms; the author makes this point in his commentary on al-Uṣūl.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/104",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-105.01",
+      "unit": "L.18",
+      "page": 105,
+      "title": "Three directions of inference",
+      "arabic": "اعلم: أن الحجة على ثلاثة أقسام لأن الاستدلال إما من حال الكلي على حال جزئياته وإما من حال الجزئيات على حال كليها وإما من حال أحد الجزئيين المندرجين تحت كلي، على حال الجزئي الآخر فالأول هو القياس وقد سبق مفصلا والثاني هو الاستقراء والثالث هو التمثيل.",
+      "english": "Arguments divide into three according to the direction of inference: from a universal to its particulars (syllogism), from particulars to their universal (induction), or from one of two particulars falling under a universal to the other (analogy).",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/105",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-105.02",
+      "unit": "L.18",
+      "page": 105,
+      "title": "A more exact account of induction",
+      "arabic": "فالاستقراء هو الحجة التي يستدل فيها من حكم الجزئيات على حكم كليها، هذا تعريفه الصحيح الذي لا غبار عليه.",
+      "english": "Induction, properly defined, is an argument in which a judgment concerning particulars is used to infer a judgment concerning their universal.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/105",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-105.03",
+      "unit": "L.18",
+      "page": 105,
+      "title": "Criticism of defining induction as inspection",
+      "arabic": "وأما ما استنبطه المصنف من كلام الفارابي وحجة الإسلام واختاره أعني: تصفح الجزئيات وتتبعها لإثبات حكم كلي، ففيه تسامح ظاهر فإن هذا التتبع ليس معلوما تصديقيا موصلا إلى مجهول تصديقي فلا يندرج تحت الحجة.",
+      "english": "The author adopts from al-Fārābī and Ḥujjat al-Islām a definition of induction as surveying particulars to establish a universal judgment. Al-Yazdī finds this imprecise: the act of surveying is not itself a known proposition leading to an unknown proposition and so, strictly speaking, does not fit the definition of an argument.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/105",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-110.01",
+      "unit": "L.18",
+      "page": 110,
+      "title": "Five arts distinguished by matter",
+      "arabic": "القياس كما ينقسم باعتبار الهيئة والصورة إلى استثنائي واقتراني بأقسامهما، فكذلك ينقسم باعتبار المادة إلى الصناعات الخمس أعني: « البرهان » و « الجدل » و « الخطابة » و « الشعر » و « المغالطة » وقد تسمى: « سفسطة » أيضا.",
+      "english": "Just as syllogisms are divided by their form into exceptive and conjunctive kinds, they are divided by their matter into five arts: demonstration, dialectic, rhetoric, poetry and fallacious reasoning, the last also called sophistry.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/110",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-110.02",
+      "unit": "L.18",
+      "page": 110,
+      "title": "Sophistry and contentious disputation",
+      "arabic": "واعلم: أن « المغالطة » إن استعملت في مقابلة الحكيم سميت: « سفسطة » وإن استعملت في مقابلة غير الحكيم سميت: « مشاغبة ».",
+      "english": "Fallacious reasoning is called ‘sophistry’ when directed against a philosopher and ‘contentious disputation’ when directed against someone who is not a philosopher.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/110",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-110.03",
+      "unit": "L.18",
+      "page": 110,
+      "title": "Certainty of every demonstrative premise",
+      "arabic": "أنه يعتبر في البرهان أن يكون مقدماته بأسرها يقينية بخلاف غيره من الأقسام مثلا يكفي في كون القياس مغالطة أن يكون إحدى مقدمتيه وهمية وإن كانت الأخرى يقينية.",
+      "english": "Demonstration requires all its premises to be certain. This is not so for the other arts: one merely estimative premise can make a syllogism fallacious even if the other premise is certain.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/110",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-114.01",
+      "unit": "L.19",
+      "page": 114,
+      "title": "Subject and proper attributes of a science",
+      "arabic": "كل علم من العلوم المدونة لا بد فيه من أمور ثلاثة : أحدها: ما يبحث فيه عن خصائصه والآثار المطلوبة منه، أي: يرجع جميع أبحاث العلم إليه وهو الموضوع، وتلك الآثار هي الأعراض الذاتية.",
+      "english": "Every established science requires three elements. The first is that whose distinctive attributes and effects are investigated—the science’s subject, to which all its inquiries are referred; the effects in question are its proper or essential attributes.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/114",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-114.02",
+      "unit": "L.19",
+      "page": 114,
+      "title": "Questions and a disputed restriction to proof",
+      "arabic": "الثاني: القضايا التي يقع فيها هذا البحث وهي المسائل وهي تكون نظرية في الأغلب وقد يكون بديهية محتاجة إلى بينة كما صرحوا به وقوله: تطلب في العلم، يعم القبيلتين وأما ما وجد في بعض النسخ من التخصيص بقوله: بالبرهان فمن زيادة الناسخ.",
+      "english": "The second element consists of the propositions investigated, the scientific questions. These are generally theoretical, though they may be self-evident matters needing clarification. ‘Sought in the science’ covers both. Al-Yazdī judges the words ‘by demonstration’, which restrict the phrase in some copies, to be a scribal addition.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/114",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
+    },
+    {
+      "id": "YZ-114.03",
+      "unit": "L.19",
+      "page": 114,
+      "title": "Conceptual and propositional principles",
+      "arabic": "الثالث: ما يبنى عليه المسائل مما يفيد تصورات أطرافها أو التصديقات بالقضايا المأخوذة في دلائلها فالأولى هي المبادي التصورية والثانية هي المبادي التصديقية.",
+      "english": "The third element is what the questions depend on: material supplying conceptions of their constituent terms or assent to the propositions used in their proofs. The first kind is conceptual principles; the second, propositional principles.",
+      "sourceUrl": "https://najafdesertlibrary.com/book/الحاشيه-على-تهذيب-المنطق-للتفتازاني/v/1/p/114",
+      "attribution": "Yazdī main commentary; separately attributed printed marginalia excluded"
     }
   ]
 };
