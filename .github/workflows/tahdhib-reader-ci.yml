@@ -242,7 +242,7 @@ jobs:
           assert sum(x.get('unit', 'L.03')=='L.13' for x in allblocks)==4
           assert sum(x.get('unit', 'L.03')=='L.14' for x in allblocks)==7
           assert sum(x.get('unit', 'L.03')=='L.15' for x in allblocks)==4
-          assert sum(x.get('unit', 'L.03')=='L.16' for x in allblocks)==9
+          assert sum(x.get('unit', 'L.03')=='L.16' for x in allblocks)==16
           assert sum(x.get('unit', 'L.03')=='L.11' for x in allblocks)==6
           assert sum(x.get('unit', 'L.03')=='L.12' for x in allblocks)==5
           assert all('التقريب ص' not in x['ar'] for x in w)
