@@ -22,9 +22,15 @@ const groups=isLogic?[
   ['Kinds of inseparable concomitants','أقسام اللوازم',['اللازم','لزوم','الماهية','الوجود الذهني','بين']],
   ['The five universals','الكليات الخمس',['الجنس','النوع','الفصل','الخاصة','العرض العام']],
   ['Definition and description','الحد والرسم',['الحد','الرسم','المعرف']],
+  ['Logical, natural and intellectual universals','الكلي المنطقي والطبيعي والعقلي',['الكلي المنطقي','الكلي الطبيعي','الكلي العقلي','المعقولات الثانية']],
+  ['Nature and extramental existence','وجود الكلي الطبيعي',['وجود الطبيعي','الخارج','الأفراد','الماهية']],
+  ['Complete and incomplete definitions','الحد والرسم التام والناقص',['الجنس القريب','الفصل القريب','الحد التام','الرسم الناقص']],
  ]},
  {name:'Judgement and inference · التصديقات والقياس',topics:[
   ['Categorical propositions','القضايا الحملية',['الحملية','الموضوع','المحمول']],
+  ['Copula and predicative relation','الرابطة والنسبة الحكمية',['الرابطة','النسبة','هو','هي','الزمانية']],
+  ['Quantifier and four categorical forms','السور والمحصورات الأربع',['السور','كل','بعض','لا شيء','مهملة']],
+  ['External, suppositional and mental subjects','الخارجية والحقيقية والذهنية',['الخارجية','الحقيقية','الذهنية','وجود الموضوع']],
   ['Conditional propositions','القضايا الشرطية',['الشرطية','المتصلة','المنفصلة']],
   ['Modal judgement','جهات القضايا',['الضرورية','المشروطة','العرفية','الممكنة','الجهة']],
   ['Contradiction and opposition','التناقض',['التناقض','النقيض','التضاد']],
@@ -130,9 +136,11 @@ function open(trigger){
      const extended=[
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_L03?.sourcePages||[]).map(p=>({...p,unit:'L.03',arabic:p.ar,english:p.en})),
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
-      ...(window.GNAMMA_YAZDI_CONTIGUOUS_L07?.sourceBlocks||[]).map(p=>({...p,arabic:p.ar,english:p.en}))
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_L07?.sourceBlocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q48_51?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q54_58?.sourceBlocks||[]).map(p=>({...p,arabic:p.ar,english:p.en}))
      ];
-     const archive=window.GNAMMA_YAZDI_LAYER.entries.filter(p=>!['L.03','L.04','L.05','L.06','L.07'].includes(p.unit));
+     const archive=window.GNAMMA_YAZDI_LAYER.entries.filter(p=>!['L.03','L.04','L.05','L.06','L.07','L.08','L.09','L.10'].includes(p.unit));
      const glosses=[...archive,...extended].filter(p=>
       t.keys.some(k=>norm(k).length>2&&(norm(p.arabic).includes(norm(k))||norm(p.english).includes(norm(k)))));
      if(glosses.length){

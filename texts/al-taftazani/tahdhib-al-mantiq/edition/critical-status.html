@@ -49,8 +49,17 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
 <div class="table-wrap"><table><thead><tr><th>Logic division</th><th>Qum page</th><th>Editorial heading</th><th>Text status</th></tr></thead><tbody id="continuous-universals"><tr><td colspan="4">Loading source blocks…</td></tr></tbody></table></div>
 <h2>Species and differentia: Qum pp.39–47</h2>
 <p>Nine further printed Qum pages of the main <i>ḥāshiya</i> are translated consecutively, beginning at the relative-species distinction and continuing through the analysis of necessary and separable accidents. In the middle, the commentary explains al-Rāzī’s logical objection to the definition of <i>faṣl</i> and al-Ṭūsī’s alternative answer. Qum page 38 is entirely marked <span lang="ar" dir="rtl">هامش</span> and is not counted as al-Yazdī’s main text.</p>
-<p><strong>Current consecutive source coverage:</strong> Qum pp.22–37 and 39–47. These are 25 printed-page positions, not 25 equally full pages of authored commentary; many contain substantial later marginal material, which is excluded. Photographic and manuscript certification remain open.</p>
+<p><strong>Earlier consecutive source coverage:</strong> Qum pp.22–37 and 39–47. The further translated passages on pp.48–51 and 54–58 are described below. Every page position represents the actual printed main شرح text only, which may be short; later هامش is excluded. Photographic and manuscript certification remain open.</p>
 <div class="table-wrap"><table><thead><tr><th>Qum page</th><th>Editorial topic</th><th>Text status</th></tr></thead><tbody id="continuous-l07"><tr><td colspan="3">Loading source-page register…</td></tr></tbody></table></div>
+<h2>Logical universals and definition: Qum pp.48–51</h2>
+<p>Four consecutive printed pages explain the logical, natural and intellectual universal, the controversy over common natures existing in individuals, and the conditions for a proper defining account. Al-Yazdī expressly distinguishes the majority philosophical position, al-Taftāzānī’s preference, and his own reservation <span lang="ar" dir="rtl">وفيه تأمل</span>. He also distinguishes complete/incomplete ḥadd and rasm from mere lexical explanation.</p>
+<p>Qum <strong>page 52 is blank</strong> in the searchable source; page 53 has only the authorial heading introducing assent. Neither is counted as translated al-Yazdī prose.</p>
+<div class="table-wrap"><table><thead><tr><th>Division</th><th>Qum page</th><th>Editorial topic</th><th>Text status</th></tr></thead><tbody id="continuous-q48-51"><tr><td colspan="4">Loading four-page register…</td></tr></tbody></table></div>
+<h2>Propositions and existential import: Qum pp.54–58</h2>
+<p>Five consecutive main-text page positions cover mental and spoken propositions, truth as correspondence, subject/predicate/copula, al-Fārābī’s account of borrowing <i>huwa</i> as a nontemporal copula, conditionals, categorical quantification, and the distinct ways in which the subject of an affirmative proposition is required to exist.</p>
+<p><strong>Authorship qualification:</strong> Qum page 55 contains only a short continuation of al-Yazdī’s page-54 text. The substantial lower marginal note citing al-Sharīf al-Jurjānī is separately attributed to Mīrzā Muḥammad ʿAlī and is not included as al-Yazdī. The main commentary continues beyond p.58 into p.59; no conclusion is invented.</p>
+<div class="table-wrap"><table><thead><tr><th>Qum page</th><th>Editorial topic</th><th>Text status</th></tr></thead><tbody id="continuous-q54-58"><tr><td colspan="3">Loading five-page register…</td></tr></tbody></table></div>
+<p><strong>Continuous reading coverage:</strong> Qum pp.22–37, 39–51 and 54–58. These are <strong>34 distinct printed-page positions</strong> (36 rendered bilingual segments because pp.31 and 35 are divided at subject boundaries), not 34 complete pages of undiluted main commentary. The entire work remains far from finished and is not manuscript-certified.</p>
 <h2>Qum and Gujarat: parallel printed readings</h2>
 <p class="small">The table below is generated from nine checked textual comparisons and records only short distinguishing readings. Scanned pages and manuscript witnesses are <strong>not</strong> yet collated. Modern marginalia are excluded.</p>
 <div class="table-wrap"><table><thead><tr><th>Q locator</th><th>I13 page</th><th>Q reading</th><th>I13 reading</th><th>Status</th></tr></thead><tbody id="parallel-witnesses"><tr><td colspan="5">Loading parallels…</td></tr></tbody></table></div>
@@ -64,6 +73,8 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
 <script src="yazdi-continuous-l03-data.js?v=20261106-l03b"></script>
 <script src="yazdi-continuous-universals-data.js?v=20261106-q30-37"></script>
 <script src="yazdi-continuous-p39-47-data.js?v=20261106-q39-47"></script>
+<script src="yazdi-continuous-q48-51-data.js?v=20261106-q48-51"></script>
+<script src="yazdi-continuous-q54-58-data.js?v=20261106-q54-58"></script>
 <script>
 (function(){
  const d=window.GNAMMA_YAZDI_LAYER;if(!d)return;
@@ -110,6 +121,25 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
    speciesLedger.append(row);
   }
  }
+ const addRows=(source,selector,showUnit)=>{
+  const tbody=document.querySelector(selector);
+  if(!tbody||!source)return;
+  tbody.replaceChildren();
+  for(const b of source){
+   const tr=document.createElement('tr');
+   const refs=showUnit?[b.unit,b.page,b.title,'Searchable main Arabic and English; scan not collated']:[b.page,b.title,b.page===55?'Short main-text seam; lower هامش excluded':'Working main text; photographic collation pending'];
+   refs.forEach((v,i)=>{
+    const td=document.createElement('td');
+    if((showUnit&&i===1)||(!showUnit&&i===0)){
+     const a=document.createElement('a');a.href=b.sourceUrl;a.textContent='p.'+v;td.append(a);
+    }else td.textContent=v;
+    tr.append(td);
+   });
+   tbody.append(tr);
+  }
+ };
+ addRows(window.GNAMMA_YAZDI_CONTIGUOUS_Q48_51?.blocks,'#continuous-q48-51',true);
+ addRows(window.GNAMMA_YAZDI_CONTIGUOUS_Q54_58?.sourceBlocks,'#continuous-q54-58',false);
  const counts=new Map();for(const e of d.entries){if(!counts.has(e.unit))counts.set(e.unit,[]);counts.get(e.unit).push(e)}
  const titles=[
  'Prologue and two sciences','Knowledge and logic','Signification of expressions','Particular and universal','Four relations of universals','Genus','Species, differentia, property, accident','Three kinds of universal','Definition and description','Categorical propositions','Modal propositions','Conditional propositions','Contradiction','Simple conversion','Contraposition','Syllogistic figures','Conditional and exceptive inference','Induction, analogy, five arts','Subject, principles, questions of science'
