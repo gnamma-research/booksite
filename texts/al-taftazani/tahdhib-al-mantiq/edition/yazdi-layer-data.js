@@ -1,4 +1,4 @@
-/* Selected passages from the historical al-Yazdī commentary; not a complete translation. */
+/* Selected source-attributed passages; the 400-page commentary is not yet translated in full. */
 window.GNAMMA_YAZDI_LAYER={
   "schema": "gnamma-yazdi-translation-layer-v1",
   "work": "Tahdhīb al-Manṭiq",
@@ -7,7 +7,7 @@ window.GNAMMA_YAZDI_LAYER={
   "edition": "Qum, Muʾassasat al-Nashr al-Islāmī; searchable paginated text",
   "editionCatalog": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000566/display?lang=en",
   "sourceIndex": "https://ablibrary.net/book_content/b/12170/1",
-  "coverage": "92 independently identified translated selections, covering source pages 14–19, 22–27, 30–37, 46–50, 56–60, aligned to L.02–L.11 with L.10 completed only for the available portions of pp.56–58. This is NOT a complete translation of the approximately 400-page printed commentary: L.12–L.19 and many portions of earlier chapters remain untranslated.",
+  "coverage": "94 independently identified translated selections, covering source pages 14–19, 22–27, 30–37, 46–50, 54–60, aligned to L.02–L.11 with L.10 completed only for the available portions of pp.56–58. This is NOT a complete translation of the approximately 400-page printed commentary: L.12–L.19 and many portions of earlier chapters remain untranslated.",
   "complete": false,
   "entries": [
     {
@@ -929,6 +929,26 @@ window.GNAMMA_YAZDI_LAYER={
       "english": "On ‘negative particle’: this includes lā, laysa, and other expressions with a comparable negative function. When negation forms part of a constituent rather than negating the entire predicative relation, it may be attached to the subject, the predicate, or both. This prepares the later distinction between infinitated and non-infinitated propositions.",
       "sourceUrl": "https://ablibrary.net/book_content/b/12170/58?lang=ar",
       "attribution": "Yazdī main commentary (شرح); later marginal hands (هامش) excluded"
+    },
+    {
+      "id": "YZ-54.01",
+      "unit": "L.10",
+      "page": 54,
+      "title": "The proposition is a mental or verbal composite",
+      "arabic": "قوله « قول » : القول في عرف هذا الفن يقال للمركب سواء كان مركبا معقولا أو ملفوظا فالتعريف يشتمل على القضية المعقولة والملفوظة .",
+      "english": "On ‘discourse’ (qawl): in this discipline the term applies to a composite, whether intelligible or spoken. Consequently the definition of a proposition includes both the proposition as grasped by the intellect and the proposition as expressed in words.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/54?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), not later margin (هامش)"
+    },
+    {
+      "id": "YZ-54.02",
+      "unit": "L.10",
+      "page": 54,
+      "title": "Truth and falsity are correspondence and noncorrespondence",
+      "arabic": "قوله « الصدق » : هو المطابقة للواقع والكذب هو اللامطابقة للواقع .",
+      "english": "On ‘truth’: it consists in correspondence to what is actually the case. Falsity consists in a failure of such correspondence. The proposition is evaluated against reality, not merely against the hearer’s knowledge of it.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/54?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), not later margin (هامش)"
     }
   ]
 };
