@@ -48,7 +48,7 @@ async function run(engine,browser,kind,viewport){
    assert(await page.locator('#flow-passages .gn-yazdi-layer').count()===19,'Not all divisions have represented commentary');
    assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===177,'Available selected commentary passages missing');
    assert(await page.locator('#flow-passages .gn-yazdi-variant').count()===9,'Nine Q/I13 printed comparison dossiers missing');
-   assert(await page.locator('#flow-passages .gn-yazdi-second-print').count()>=19,'I13 printed links missing from translated selections');
+   assert(await page.locator('#flow-passages .gn-yazdi-second-print').count()===17,'I13 printed links must match 17 separately identified passages');
    const v=page.locator('#flow-passages .gn-yazdi-variant').first();
    await v.locator('summary').click();
    assert(await v.locator('.gn-yazdi-variant-row').count()===2,'Compare Q/I13 readings missing');
