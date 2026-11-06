@@ -10,7 +10,18 @@ const norm=lexical.norm;
 const glossary=lexical.terms.slice();
 // Logic glossary also indexes translated al-Yazdī snippets, as a distinct source layer.
 // The original kalām glossary continues to index only its own primary corpus.
-const commentary=()=>isLogicGlossary()?(window.GNAMMA_YAZDI_LAYER?.entries||[]):[];
+const commentary=()=>{
+ if(!isLogicGlossary())return [];
+ const archived=(window.GNAMMA_YAZDI_LAYER?.entries||[]).filter(p=>!['L.03','L.04','L.05','L.06','L.07','L.08','L.09','L.10'].includes(p.unit));
+ const contiguous=[
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_L03?.sourcePages||[]).map(p=>({...p,unit:'L.03'})),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks||[]),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_L07?.sourceBlocks||[]),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q48_51?.blocks||[]),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q54_58?.sourceBlocks||[])
+ ].map(p=>({...p,arabic:p.ar,english:p.en}));
+ return [...archived,...contiguous];
+};
 function isLogicGlossary(){return reader.isDivision===true;}
 const occurrences=glossary.map(term=>{
  const needle=norm(term.ar),ids=[];
@@ -63,7 +74,7 @@ function show(trigger){
       (t.sourceUrl&&Number(t.page)===Number(p.page)&&norm(p.arabic).includes(norm(t.ar).slice(0,3))));
     if(glossHits.length){
       const group=el('div','gn-terms-occurrences');
-      group.append(el('span','gn-terms-occurs-label','al-Yazdī · '+glossHits.length+' translated source selection'+(glossHits.length===1?'':'s')+': '));
+      group.append(el('span','gn-terms-occurs-label','al-Yazdī · '+glossHits.length+' translated source passage'+(glossHits.length===1?'':'s')+': '));
       for(const p of glossHits.slice(0,12)){
        const link=el('a','gn-terms-source-link','p. '+p.page+' · '+p.id);
        link.href=p.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';
