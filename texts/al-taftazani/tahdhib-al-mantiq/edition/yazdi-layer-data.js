@@ -1,4 +1,4 @@
-/* Source-linked selected bilingual Arabic/English translations; not the complete al-Yazdī commentary. */
+/* Selected historic al-Yazdī bilingual source readings, not the complete sharḥ. I13 comparisons are digital-print provisional. */
 window.GNAMMA_YAZDI_LAYER={
   "schema": "gnamma-yazdi-translation-layer-v1",
   "work": "Tahdhīb al-Manṭiq",
@@ -7,7 +7,7 @@ window.GNAMMA_YAZDI_LAYER={
   "edition": "Qum, Muʾassasat al-Nashr al-Islāmī; searchable paginated text",
   "editionCatalog": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000566/display?lang=en",
   "sourceIndex": "https://ablibrary.net/book_content/b/12170/1",
-  "coverage": "167 separately source-linked selected bilingual main-commentary passages in all 19 editorial logic divisions. Only printed p. 114 is now represented by continuous selected commentary text in the searchable witness; no division is critically certified and most source paragraphs remain untranslated. The printed 400-page volume contains separate later gloss material and is not 400 pages of al-Yazdī continuous commentary.",
+  "coverage": "177 bilingual selected passages across all 19 logic divisions, of which 10 were added after comparing main-commentary text of the Gujarat 1434/2013 print with Qum. Nine explicit comparison records identify agreements or *candidate* printed differences. The sharḥ has NOT been translated continuously or critically established. Printed-page I13 locators refer to the 2013 edition, not to Qum pagination; annotations by other writers remain excluded.",
   "complete": false,
   "entries": [
     {
@@ -48,7 +48,24 @@ window.GNAMMA_YAZDI_LAYER={
       "arabic": "قوله «العلم»: هو الصورة الحاصلة من الشيء عند العقل، والمصنف لم يتعرض بتعريفه إما لكفاية التصور بوجه ما في مقام التقسيم، وإما لأن تعريف العلم مشهور مستفيض، وإما لأن العلم بديهي التصور على ما قيل.",
       "english": "On 'knowledge': It is the form of a thing as attained in the intellect. The author has not attempted to define it, either because some conception of it suffices when making this division, or because its definition is already widely known, or because, as some have maintained, the concept of knowledge is self-evident.",
       "sourceUrl": "https://ablibrary.net/book_content/b/12170/14?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+      "attribution": "Yazdī main commentary; later printed footnotes excluded",
+      "witnessComparison": {
+        "siglum": "I13",
+        "printedPage": 28,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "status": "agreement",
+        "qReading": "هو الصورة الحاصلة من الشيء عند العقل",
+        "iReading": "هو الصورة الحاصلة من الشيء عند العقل",
+        "note": "Identical definitional phrase in the two searchable main-commentary transcriptions; not proof of independently related exemplars.",
+        "sourceTypes": "Printed main-text comparison; modern footnotes omitted",
+        "scanVerified": false
+      },
+      "secondPrint": {
+        "siglum": "I13",
+        "printedPage": 28,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "verification": "Digital transcription compared; scans unverified"
+      }
     },
     {
       "id": "YZ-15.01",
@@ -58,7 +75,24 @@ window.GNAMMA_YAZDI_LAYER={
       "arabic": "فقد اختار المصنف مذهب الحكماء حيث جعل التصديق نفس الإذعان والحكم دون المجموع المركب منه ومن تصور الطرفين كما زعمه الإمام الرازي.",
       "english": "The author has therefore chosen the philosophers' position: assent is the very act of acceptance or judgement, not a composite made up of that act together with conceptions of both terms, as Imām al-Rāzī held.",
       "sourceUrl": "https://ablibrary.net/book_content/b/12170/15?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+      "attribution": "Yazdī main commentary; later printed footnotes excluded",
+      "witnessComparison": {
+        "siglum": "I13",
+        "printedPage": 29,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "status": "agreement",
+        "qReading": "حيث جعل التصديق نفس الإذعان والحكم",
+        "iReading": "حيث جعل التصديق نفس الإذعان والحكم",
+        "note": "The core identification of assent with judgment agrees in the two transcriptions.",
+        "sourceTypes": "Printed main-text comparison; modern footnotes omitted",
+        "scanVerified": false
+      },
+      "secondPrint": {
+        "siglum": "I13",
+        "printedPage": 29,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "verification": "Digital transcription compared; scans unverified"
+      }
     },
     {
       "id": "YZ-15.02",
@@ -68,7 +102,24 @@ window.GNAMMA_YAZDI_LAYER={
       "arabic": "قوله «وإلا فتصور»: سواء كان إدراكا لأمر واحد كتصور زيد، أو لأمور متعددة بدون نسبة كتصور زيد وعمرو وبكر، أو مع نسبة غير تامة أي التي لا يصح السكوت عليها كتصور غلام زيد، أو تامة إنشائية كتصور اضرب، أو خبرية مدركة بإدراك غير إذعاني كما في صور التخييل والشك والوهم.",
       "english": "On 'otherwise it is conception': This includes grasping a single thing, such as Zayd; several things without a relation, such as Zayd, ʿAmr and Bakr; or things connected by an incomplete relation, one that does not make a complete assertion, such as 'Zayd's servant'. It also includes grasping a complete nonassertive expression such as 'Strike!', or grasping an assertive relation without assenting to it, as happens in imagining, doubting or entertaining a conjecture.",
       "sourceUrl": "https://ablibrary.net/book_content/b/12170/15?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+      "attribution": "Yazdī main commentary; later printed footnotes excluded",
+      "witnessComparison": {
+        "siglum": "I13",
+        "printedPage": 32,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "status": "candidate-variant",
+        "qReading": "كتصور زيد وعمرو وبكر",
+        "iReading": "كتصور زيد وعمرو",
+        "note": "The Qum text names three imagined individuals where the Indian text names two. Confirm against photographs before treating this as a true printed textual variant.",
+        "sourceTypes": "Printed main-text comparison; modern footnotes omitted",
+        "scanVerified": false
+      },
+      "secondPrint": {
+        "siglum": "I13",
+        "printedPage": 32,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "verification": "Digital transcription compared; scans unverified"
+      }
     },
     {
       "id": "YZ-15.03",
@@ -78,7 +129,78 @@ window.GNAMMA_YAZDI_LAYER={
       "arabic": "قوله «ويقتسمان»: الاقتسام بمعنى القسمة؛ أي يقسم التصور والتصديق كلا من وصفي الضرورة، أي الحصول بلا نظر، والاكتساب، أي الحصول بالنظر؛ فيأخذ التصور قسما من الضرورة فيصير ضروريا وقسما من الاكتساب فيصير كسبيا، وكذا الحال في التصديق.",
       "english": "On 'the two share in a division': Conception and assent each receive the two descriptions: immediacy, meaning attainment without rational inquiry, and acquisition, meaning attainment through inquiry. Thus a conception may be immediate or acquired, and the same is true of assent.",
       "sourceUrl": "https://ablibrary.net/book_content/b/12170/15?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+      "attribution": "Yazdī main commentary; later printed footnotes excluded",
+      "witnessComparison": {
+        "siglum": "I13",
+        "printedPage": 32,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "status": "candidate-variant",
+        "qReading": "الاقتسام بمعنى القسمة على ما في الأساس",
+        "iReading": "الاقتسام بمعنى أخذ القسمة على ما في الأساس",
+        "note": "Indian main text includes أخذ. Qum and Indian textual transcriptions should be compared with photographed print.",
+        "sourceTypes": "Printed main-text comparison; modern footnotes omitted",
+        "scanVerified": false
+      },
+      "secondPrint": {
+        "siglum": "I13",
+        "printedPage": 32,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "verification": "Digital transcription compared; scans unverified"
+      }
+    },
+    {
+      "id": "YZ-15.04",
+      "unit": "L.02",
+      "page": 15,
+      "title": "Three constituents of the proposition",
+      "arabic": "واختار مذهب القدماء أيضا حيث جعل متعلق الإذعان والحكم الذي هو الجزء الأخير للقضية هو النسبة الخبرية الثبوتية أو السلبية لا وقوع النسبة الثبوتية التقييدية أو لا وقوعها، وسيشير المصنف إلى تثليث أجزاء القضية في مباحث القضايا.",
+      "english": "He also adopts the earlier thinkers’ position: the object of assent and judgement—the proposition’s final constituent—is the affirmative or negative assertoric relation itself, not the occurrence or non-occurrence of an affirmative attributive relation. The author will indicate the proposition’s three constituents in his treatment of propositions.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/15?lang=ar",
+      "attribution": "al-Yazdī main commentary, separated from later named annotations",
+      "secondPrint": {
+        "siglum": "I13",
+        "publisher": "Idārat al-Ṣiddīq, Dabhel, Gujarat, 1434/2013",
+        "printedPage": 30,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "verification": "Compared with searchable printed transcription; photographic collation pending"
+      },
+      "editorialStatus": "Working translation; source transcriptions compared, no manuscript certification"
+    },
+    {
+      "id": "YZ-15.05",
+      "unit": "L.02",
+      "page": 15,
+      "title": "Division by explicit wording and implication",
+      "arabic": "فالمذكور في هذه العبارة صريحا هو انقسام الضرورة والاكتساب، ويعلم انقسام كل من التصور والتصديق إلى الضروري والاكتسابي ضمنا وكناية، وهي أبلغ وأحسن من التصريح.",
+      "english": "What the wording explicitly distributes is immediacy and acquisition. The further division of both conception and assent into immediate and acquired cases is grasped implicitly, by indirect indication; this, he maintains, is more expressive and finer than saying it outright.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/15?lang=ar",
+      "attribution": "al-Yazdī main commentary, separated from later named annotations",
+      "secondPrint": {
+        "siglum": "I13",
+        "publisher": "Idārat al-Ṣiddīq, Dabhel, Gujarat, 1434/2013",
+        "printedPage": 32,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "verification": "Compared with searchable printed transcription; photographic collation pending"
+      },
+      "editorialStatus": "Working translation; source transcriptions compared, no manuscript certification"
+    },
+    {
+      "id": "YZ-15.06",
+      "unit": "L.02",
+      "page": 15,
+      "title": "Why the classification requires no demonstration",
+      "arabic": "قوله «بالضرورة»: إشارة إلى أن هذه القسمة بديهية لا تحتاج إلى تجشم الاستدلال كما ارتكبه القوم.",
+      "english": "On the words ‘necessarily’: this signals that the division is self-evident, and need not be established through the laborious demonstration undertaken by others.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/15?lang=ar",
+      "attribution": "al-Yazdī main commentary, separated from later named annotations",
+      "secondPrint": {
+        "siglum": "I13",
+        "publisher": "Idārat al-Ṣiddīq, Dabhel, Gujarat, 1434/2013",
+        "printedPage": 33,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "verification": "Compared with searchable printed transcription; photographic collation pending"
+      },
+      "editorialStatus": "Working translation; source transcriptions compared, no manuscript certification"
     },
     {
       "id": "YZ-16.01",
@@ -88,7 +210,24 @@ window.GNAMMA_YAZDI_LAYER={
       "arabic": "إذا رجعنا إلى وجداننا وجدنا أن من التصورات ما هو حاصل لنا بلا نظر كتصور الحرارة والبرودة، ومنها ما هو حاصل لنا بالنظر والفكر كتصور حقيقة الملك والجن، وكذا من التصديقات ما يحصل لنا بلا نظر كالتصديق بأن الشمس مشرقة والنار محرقة، ومنها ما يحصل لنا بالنظر كالتصديق بأن العالم حادث والصانع موجود.",
       "english": "Consulting our own experience, we find that some conceptions arise without inquiry, such as our conceptions of heat and cold, whereas others require thought, such as conceiving the nature of an angel or a jinn. Likewise, some assents arise without inquiry—for example, that the sun shines and fire burns—while others are reached through inquiry, such as assent that the world originated and that a maker exists.",
       "sourceUrl": "https://ablibrary.net/book_content/b/12170/16?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+      "attribution": "Yazdī main commentary; later printed footnotes excluded",
+      "witnessComparison": {
+        "siglum": "I13",
+        "printedPage": 34,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "status": "agreement",
+        "qReading": "كالتصديق بأن الشمس مشرقة والنار محرقة",
+        "iReading": "كالتصديق بأن الشمس مشرقة والنار محرقة",
+        "note": "Cognitional examples agree in the searchable main text.",
+        "sourceTypes": "Printed main-text comparison; modern footnotes omitted",
+        "scanVerified": false
+      },
+      "secondPrint": {
+        "siglum": "I13",
+        "printedPage": 34,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "verification": "Digital transcription compared; scans unverified"
+      }
     },
     {
       "id": "YZ-16.02",
@@ -98,7 +237,42 @@ window.GNAMMA_YAZDI_LAYER={
       "arabic": "قوله «وهو ملاحظة المعقول»: أي النظر توجه النفس نحو الأمر المعقول، أي المعلوم، لتحصيل أمر غير معلوم.",
       "english": "On 'it is attending to what is intelligible': Rational inquiry is the soul's orientation toward an intelligible—that is, something already known—in order to obtain something not yet known.",
       "sourceUrl": "https://ablibrary.net/book_content/b/12170/16?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+      "attribution": "Yazdī main commentary; later printed footnotes excluded",
+      "witnessComparison": {
+        "siglum": "I13",
+        "printedPage": 34,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "status": "candidate-variant",
+        "qReading": "نحو الأمر المعقول أي المعلوم",
+        "iReading": "نحو الأمر المعلوم",
+        "note": "Indian main text omits المعقول أي; its own marginal annotation suggests that المعقول would better match the matn. This is a provisional printed difference, not a manuscript finding.",
+        "sourceTypes": "Printed main-text comparison; modern footnotes omitted",
+        "scanVerified": false
+      },
+      "secondPrint": {
+        "siglum": "I13",
+        "printedPage": 34,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "verification": "Digital transcription compared; scans unverified"
+      }
+    },
+    {
+      "id": "YZ-16.03",
+      "unit": "L.02",
+      "page": 16,
+      "title": "Why the author chooses the word intelligible",
+      "arabic": "وفي العدول عن لفظ «المعلوم» إلى «المعقول» فوائد، منها: التحرز عن استعمال اللفظ المشترك في التعريف، ومنها: التنبيه على أن الفكر إنما يجري في المعقولات، أي الأمور الكلية الحاصلة في العقل، دون الأمور الجزئية، فإن الجزئي لا يكون كاسبا ولا مكتسبا، ومنها: رعاية السجع.",
+      "english": "Replacing ‘the known’ with ‘the intelligible’ serves several purposes. It avoids using an equivocal term in a definition; it emphasizes that discursive thought concerns intelligibles—universals present in the intellect—rather than particulars, which in this account neither yield nor are acquired by discursive inference; and it preserves the rhymed prose.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/16?lang=ar",
+      "attribution": "al-Yazdī main commentary, separated from later named annotations",
+      "secondPrint": {
+        "siglum": "I13",
+        "publisher": "Idārat al-Ṣiddīq, Dabhel, Gujarat, 1434/2013",
+        "printedPage": 34,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "verification": "Compared with searchable printed transcription; photographic collation pending"
+      },
+      "editorialStatus": "Working translation; source transcriptions compared, no manuscript certification"
     },
     {
       "id": "YZ-17.01",
@@ -111,6 +285,24 @@ window.GNAMMA_YAZDI_LAYER={
       "attribution": "Yazdī main commentary; later printed footnotes excluded"
     },
     {
+      "id": "YZ-17.02",
+      "unit": "L.02",
+      "page": 17,
+      "title": "Divergent conclusions and the need for logical rules",
+      "arabic": "قوله «وقد يقع فيه الخطاء»: بدليل أن الفكر قد ينتهي إلى نتيجة كحدوث العالم وقد ينتهي إلى نقيضها كقدم العالم، فأحد الفكرين خطأ حينئذ لا محالة وإلا لزم اجتماع النقيضين، فلا بد من قاعدة كلية لو روعيت لم يقع الخطأ في الفكر وهي المنطق.",
+      "english": "On ‘error may occur in it’: one course of reasoning may reach the conclusion that the world originated while another reaches its opposing conclusion that it is eternal. One of the two reasonings must be erroneous; otherwise contradictories would obtain together. Thus, the commentator argues, a general rule is needed which, if observed, would prevent error in thought: logic.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/17?lang=ar",
+      "attribution": "al-Yazdī main commentary, separated from later named annotations",
+      "secondPrint": {
+        "siglum": "I13",
+        "publisher": "Idārat al-Ṣiddīq, Dabhel, Gujarat, 1434/2013",
+        "printedPage": 34,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "verification": "Compared with searchable printed transcription; photographic collation pending"
+      },
+      "editorialStatus": "Working translation; source transcriptions compared, no manuscript certification"
+    },
+    {
       "id": "YZ-18.01",
       "unit": "L.02",
       "page": 18,
@@ -118,7 +310,24 @@ window.GNAMMA_YAZDI_LAYER={
       "arabic": "فقد ثبت احتياج الناس إلى المنطق في العصمة عن الخطأ في الفكر بثلاث مقدمات: الأولى أن العلم إما تصور وإما تصديق. والثانية أن كلا منهما إما أن يحصل بلا نظر أو يحصل بالنظر. والثالثة أن النظر قد يقع فيه الخطاء.",
       "english": "The need for logic as a safeguard against error in reasoning has thus been established through three premises. First, knowledge is either conception or assent. Second, either kind may arise without inquiry or through inquiry. Third, inquiry is liable to error.",
       "sourceUrl": "https://ablibrary.net/book_content/b/12170/18?lang=ar",
-      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+      "attribution": "Yazdī main commentary; later printed footnotes excluded",
+      "witnessComparison": {
+        "siglum": "I13",
+        "printedPage": 36,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "status": "agreement",
+        "qReading": "الأولى أن العلم إما تصور وإما تصديق",
+        "iReading": "الأولى أن العلم إما تصور أو تصديق",
+        "note": "The logic of the three-premise argument agrees, with minor conjunctive variation. Exact letter-level reading needs imaging.",
+        "sourceTypes": "Printed main-text comparison; modern footnotes omitted",
+        "scanVerified": false
+      },
+      "secondPrint": {
+        "siglum": "I13",
+        "printedPage": 36,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "verification": "Digital transcription compared; scans unverified"
+      }
     },
     {
       "id": "YZ-18.02",
@@ -131,6 +340,53 @@ window.GNAMMA_YAZDI_LAYER={
       "attribution": "Yazdī main commentary; later printed footnotes excluded"
     },
     {
+      "id": "YZ-18.03",
+      "unit": "L.02",
+      "page": 18,
+      "title": "The definition of logic follows from the three premises",
+      "arabic": "فهذه المقدمات الثلاث تفيد احتياج الناس في التحرز عن الخطاء في الفكر إلى قانون وذلك هو المنطق، وعلم من هذا تعريف المنطق أيضا بأنه: قانون تعصم مراعاتها الذهن عن الخطاء في الفكر.",
+      "english": "The three premises establish that human beings need a canon to avoid error in reasoning, and that canon is logic. The characterization of logic also follows: a canon whose observance safeguards the intellect against error in thought.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/18?lang=ar",
+      "attribution": "al-Yazdī main commentary, separated from later named annotations",
+      "secondPrint": {
+        "siglum": "I13",
+        "publisher": "Idārat al-Ṣiddīq, Dabhel, Gujarat, 1434/2013",
+        "printedPage": 36,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "verification": "Compared with searchable printed transcription; photographic collation pending"
+      },
+      "editorialStatus": "Working translation; source transcriptions compared, no manuscript certification",
+      "witnessComparison": {
+        "siglum": "I13",
+        "printedPage": 36,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "status": "candidate-variant",
+        "qReading": "قانون تعصم مراعاتها الذهن عن الخطاء في الفكر",
+        "iReading": "قانون يعصم مراعاته الذهن عن الخطأ في الفكر",
+        "note": "Qum uses feminine تعصم/مراعاتها while the Indian main transcription uses masculine يعصم/مراعاته. The Qum marginal register itself reports مراعاته in some copies, without identifying a manuscript. This is a printed comparison; neither reading has priority yet.",
+        "sourceTypes": "Printed main-text comparison; modern footnotes omitted",
+        "scanVerified": false
+      }
+    },
+    {
+      "id": "YZ-18.04",
+      "unit": "L.02",
+      "page": 18,
+      "title": "The third task of the introduction",
+      "arabic": "فهاهنا علم أمران من الأمور الثلاثة التي وضعت المقدمة لبيانها، بقي الكلام في الأمر الثالث وهو تحقيق أن موضوع المنطق ماذا؟ فأشار إليه بقوله «وموضوعه» إلخ.",
+      "english": "We have now learned two of the three matters that the introduction was designed to clarify. The third remains: what precisely is the subject of logic? The author signals this by his words, ‘And its subject …’.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/18?lang=ar",
+      "attribution": "al-Yazdī main commentary, separated from later named annotations",
+      "secondPrint": {
+        "siglum": "I13",
+        "publisher": "Idārat al-Ṣiddīq, Dabhel, Gujarat, 1434/2013",
+        "printedPage": 37,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "verification": "Compared with searchable printed transcription; photographic collation pending"
+      },
+      "editorialStatus": "Working translation; source transcriptions compared, no manuscript certification"
+    },
+    {
       "id": "YZ-19.01",
       "unit": "L.02",
       "page": 19,
@@ -139,6 +395,71 @@ window.GNAMMA_YAZDI_LAYER={
       "english": "A proof is something already known by assent, but not considered in every respect: it is a proof insofar as it leads to an assent not previously attained. Thus 'The world changes, and everything that changes originates' leads to 'The world originated.' An isolated statement such as 'Fire is hot', insofar as it does not lead to such a new assent, is not a proof in this technical sense.",
       "sourceUrl": "https://ablibrary.net/book_content/b/12170/19?lang=ar",
       "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-19.02",
+      "unit": "L.02",
+      "page": 19,
+      "title": "What makes a known concept into a defining account",
+      "arabic": "أما المعرف فهو عبارة عن المعلوم التصوري ولكن لا مطلقا بل من حيث إنه يوصل إلى المجهول التصوري، كالحيوان الناطق الموصل إلى تصور الإنسان. وأما المعلوم التصوري الذي لا يوصل إلى المجهول التصوري فلا يسمى معرفا والمنطقي لا يبحث عنه، كالأمور الجزئية المعلومة نحو زيد وعمرو.",
+      "english": "A defining account is something known by conception, but only insofar as it brings us to a conception not yet attained: ‘rational animal’, for example, leads to a conception of the human. Something already conceived that leads to no further conception is not a defining account and does not belong to the logician’s inquiry—such as the merely known particulars Zayd and ʿAmr.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/19?lang=ar",
+      "attribution": "al-Yazdī main commentary, separated from later named annotations",
+      "secondPrint": {
+        "siglum": "I13",
+        "publisher": "Idārat al-Ṣiddīq, Dabhel, Gujarat, 1434/2013",
+        "printedPage": 38,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "verification": "Compared with searchable printed transcription; photographic collation pending"
+      },
+      "editorialStatus": "Working translation; source transcriptions compared, no manuscript certification",
+      "witnessComparison": {
+        "siglum": "I13",
+        "printedPage": 38,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "status": "agreement",
+        "qReading": "كالحيوان الناطق الموصل إلى تصور الإنسان",
+        "iReading": "كالحيوان الناطق الموصل إلى تصور الإنسان",
+        "note": "Both editions share the example linking the defining account to a previously unknown conception.",
+        "sourceTypes": "Printed main-text comparison; modern footnotes omitted",
+        "scanVerified": false
+      }
+    },
+    {
+      "id": "YZ-19.03",
+      "unit": "L.02",
+      "page": 19,
+      "title": "The formal object of logical inquiry",
+      "arabic": "بل يبحث عن المعرف والحجة من حيث إنهما كيف ينبغي أن يترتبا حتى يوصلا إلى المجهول.",
+      "english": "The logician instead investigates defining accounts and proofs under one precise aspect: how they must be arranged so that they lead to what is not yet known.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/19?lang=ar",
+      "attribution": "al-Yazdī main commentary, separated from later named annotations",
+      "secondPrint": {
+        "siglum": "I13",
+        "publisher": "Idārat al-Ṣiddīq, Dabhel, Gujarat, 1434/2013",
+        "printedPage": 38,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "verification": "Compared with searchable printed transcription; photographic collation pending"
+      },
+      "editorialStatus": "Working translation; source transcriptions compared, no manuscript certification"
+    },
+    {
+      "id": "YZ-19.04",
+      "unit": "L.02",
+      "page": 19,
+      "title": "Why a proof is called an argument",
+      "arabic": "قوله «معرفا»: لأنه يعرف ويبين حال المجهول التصوري. قوله «حجة»: لأنها تصير سببا للغلبة على الخصم والحجة في اللغة الغلبة، فهذا من قبيل تسمية السبب باسم المسبب.",
+      "english": "It is called a ‘defining account’ because it makes the as-yet-unknown object of conception known and explains it. A proof is called a ‘ḥujja’ because it can provide the means to prevail over an opponent; since ḥujja is connected here with prevailing or overcoming, the name of the effect is applied to its cause.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/19?lang=ar",
+      "attribution": "al-Yazdī main commentary, separated from later named annotations",
+      "secondPrint": {
+        "siglum": "I13",
+        "publisher": "Idārat al-Ṣiddīq, Dabhel, Gujarat, 1434/2013",
+        "printedPage": 39,
+        "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+        "verification": "Compared with searchable printed transcription; photographic collation pending"
+      },
+      "editorialStatus": "Working translation; source transcriptions compared, no manuscript certification"
     },
     {
       "id": "YZ-22.01",
