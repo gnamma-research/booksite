@@ -17,7 +17,7 @@ function make(unit,scope){
  const contiguous=unit==='L.03'?window.GNAMMA_YAZDI_CONTIGUOUS_L03:null;
  const newContiguous=window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks.filter(block=>block.unit===unit)||[];
  const box=n('section','gn-yazdi-layer');box.dataset.yazdiUnit=unit;box.setAttribute('aria-label','Mullā al-Yazdī commentary for '+unit);
- const head=n('header','gn-yazdi-head');head.append(n('h3',null,'Mullā al-Yazdī · Commentary'),n('small',null,contiguous?'Qum pp.22–29 · continuous searchable main text; scan pending':newContiguous.length?'Qum pp.30–37 · '+newContiguous.length+' consecutive main-text segments; scan pending':entries.length+' translated passages'));box.append(head);
+ const head=n('header','gn-yazdi-head');head.append(n('h3',null,'Mullā al-Yazdī · Commentary'),n('small',null,contiguous?'Qum pp.22–29 · continuous searchable main text; scan pending':newContiguous.length?'Qum pp.'+newContiguous[0].page+'–'+newContiguous.at(-1).page+' · '+newContiguous.length+' consecutive main-text segments; scan pending':entries.length+' translated passages'));box.append(head);
  if(contiguous){
   box.dataset.contiguousUnit=unit;
   const caveat=n('p','gn-yazdi-main-caveat','Full main ḥāshiya reading from the searchable Qum text, pp.22–29, not a diplomatic or manuscript-collated edition. Editorial English page seams preserve source boundaries; separately printed هامش is excluded.');
