@@ -6,7 +6,7 @@ window.GNAMMA_YAZDI_CONTIGUOUS_L03={
   "unit": "L.03",
   "edition": "Qum searchable print (400-page volume), main شرح only",
   "sourceRoot": "https://ablibrary.net/book_content/b/12170/",
-  "coverage": "All main شرح text displayed under Qum printed pages 22–29 in the searchable web transcription, with normalized punctuation and removed numbered footnote calls. This is NOT a diplomatic, scan-collated or manuscript-critical edition.",
+  "coverage": "Consecutive main شرح from searchable Qum pp.22–29. At p.24 the Qum searchable transcript's «ولا لازم ذهني» is compared with two other printed searchable main-commentary readings «له لازم». No reading has been emended in the base; photography and manuscript collation remain pending.",
   "certified": false,
   "sourcePages": [
     {
@@ -45,18 +45,43 @@ window.GNAMMA_YAZDI_CONTIGUOUS_L03={
       "ar": "جزء المسمى ولازمه فرع الدلالة على المسمى، سواء كانت الدلالة على المسمى محققة بأن يطلق اللفظ ويراد به المسمى ويفهم منه الجزء أو اللازم بالتبع، أو مقدرة كما إذا اشتهر اللفظ في الجزء أو اللازم، فالدلالة على الموضوع له وإن لم تتحقق هناك بالفعل إلا أنها واقعة تقديرا، بمعنى أن لهذا اللفظ معنى لو قصد من اللفظ لكانت دلالته عليه مطابقة، وإلى هذا أشار بقوله «ولو تقديرا». قوله «ولا عكس»: إذ يجوز أن يكون للفظ معنى بسيط لا جزء له ولا لازم له فيتحقق حينئذ المطابقة بدون التضمن والالتزام؛ ولو كان له معنى مركب لا لازم له تحقق التضمن بدون الالتزام؛ ولو كان له معنى بسيط ولا لازم ذهني كالشمس تحقق الالتزام بدون التضمن، فالاستلزام غير واقع في شيء من الطرفين. في المفرد والمركب وأقسامهما: قوله «والموضوع»: أي اللفظ الموضوع إن أريد الدلالة بجزء منه على جزء معناه فهو المركب، وإلا فهو المفرد. فالمركب إنما يتحقق بتحقق أمور أربعة: الأول أن يكون للفظه جزء؛ الثاني أن يكون لمعناه جزء؛ الثالث أن يدل جزء لفظه على جزء معناه؛ الرابع أن تكون هذه الدلالة مرادة. فبانتفاء كل من القيود الأربعة يتحقق قسم من المفرد، فالمركب قسم واحد والمفرد",
       "en": "... a part of the thing named or one of its necessary concomitants depends upon signification of the thing named itself. Such signification may be actual—when one utters the expression intending its conventional meaning, and thereby understands its part or concomitant secondarily—or merely potential, as when usage has made the expression familiar for its part or concomitant. Even if it does not actually signify its originally assigned meaning in that use, it does so potentially: it has a meaning which, if intended, would be signified by correspondence. This is what ‘even potentially’ indicates. On ‘but not conversely’: a word may have a simple meaning with neither constituent nor concomitant, so correspondence occurs without inclusion or implication. A compound meaning without a concomitant allows inclusion without implication. The final case is textually problematic in the Qum searchable transcription: it calls a meaning simple and appears to deny a mental concomitant, yet then concludes that implication exists without inclusion. The words must be checked against images and other witnesses before correcting them. Thus neither inclusion nor implication entails the other. On simple and compound expressions: an established expression is compound when a portion of it is intended to signify a portion of its meaning, and otherwise simple. Composition requires four conditions: (1) the verbal expression has a part, (2) its meaning has a part, (3) the verbal part signifies the semantic part, and (4) this signification is intended. By the absence of any of the four conditions, a class of simple expression results. The compound expression is therefore one class, and the simple expression ...",
       "notes": [
+        "A second printed main-text transcription (Gujarat I13) reads «له لازم» in this clause, and another annotated Sharḥ print also has «له لازم». Qum's separately attributed later marginal gloss at p.196 uses «وله لازم ذهني», but that gloss is NOT Yazdī's own textual witness. All printed readings are from searchable versions; original page images remain uncollated.",
         "Textual crux: Q searchable Arabic reads «ولو كان له معنى بسيط ولا لازم ذهني كالشمس تحقق الالتزام بدون التضمن». The denial «ولا لازم» conflicts with the ensuing example of implication. Retained diplomatically in this provisional transcription; do not silently emend to «وله لازم» without image/witness confirmation.",
         "The Q24 printed rubric «في المفرد والمركب وأقسامهما» is treated as a printed structural heading, not a paragraph invented for the translation.",
         "This page continues into Q25 at «أقسام أربعة». Later commentary under «هامش» is not attributed to al-Yazdī."
       ],
       "seam": "continues-to-25",
       "flags": [
-        "textual-crux-Q24"
+        "textual-crux-Q24",
+        "I13-F-support-positive-concomitant"
       ],
       "id": "YZC-24",
       "sourceUrl": "https://ablibrary.net/book_content/b/12170/24?lang=ar",
       "transcriptionStatus": "complete searchable main شرح page text (normalized), photographic control pending",
-      "independentWitnessStatus": "not collated"
+      "independentWitnessStatus": "not collated",
+      "comparisons": [
+        {
+          "siglum": "Q-searchable",
+          "reading": "ولو كان له معنى بسيط ولا لازم ذهني كالشمس تحقق الالتزام بدون التضمن",
+          "sourceUrl": "https://ablibrary.net/book_content/b/12170/24?lang=ar",
+          "basis": "digitally searchable Qum printed main commentary",
+          "scanVerified": false
+        },
+        {
+          "siglum": "I13-searchable",
+          "reading": "ولو كان له معنى بسيط له لازم تحقق الالتزام بدون التضمن",
+          "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+          "basis": "2013 Gujarat main text, searchable PDF lines near the 'mura kk ab' heading",
+          "scanVerified": false
+        },
+        {
+          "siglum": "F-searchable",
+          "reading": "ولو كان له معنى بسيط له لازم تحقق الالتزام بدون التضمن",
+          "sourceUrl": "https://shamela.org/gen/942b61e3710030900f1144b2b97154eb_gen.pdf",
+          "basis": "Karachi Sharḥ with Farah al-Taqrīb, main commentary only; image not independently verified",
+          "scanVerified": false
+        }
+      ]
     },
     {
       "page": 25,
