@@ -78,8 +78,8 @@ function layersPanel(){open('Reading apparatus & commentary',root=>{
   const copy=el('span');copy.append(el('strong',null,'Mullā ʿAbd Allāh al-Yazdī'));
   copy.append(el('small',null,'Show the available bilingual commentary passages alongside the logic text'));
   label.append(check,copy);root.append(label);
-  root.append(el('p','gn-yazdi-note','The available selected translations cover L.02–L.12, with many passages still untranslated. L.13–L.19 have no translation yet and show no placeholders.'));
-  const to=btn('Go to first translated passage','contents',()=>{close();setMode('flow');api.go(2,'u-L-02')});
+  root.append(el('p','gn-yazdi-note','Selected source-linked excerpts now appear in L.01–L.19. This is not a continuous translation of any whole division: most of the original commentary remains untranslated.'));
+  const to=btn('Go to first translated passage','contents',()=>{close();setMode('flow');api.go(1,'u-L-01')});
   to.dataset.yazdiJump='';to.disabled=!check.checked;root.append(to);
  } else {
   root.append(el('p','gn-daruri-description','The separate Sanandajī commentary remains a companion book.'));
