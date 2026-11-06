@@ -45,6 +45,13 @@ const groups=isLogic?[
   ['Constituents of a conditional proposition','طرفا الشرطية',['حمليتان','متصلتان','منفصلتان','التمام']],
   ['Contradiction and opposition','التناقض',['التناقض','النقيض','التضاد']],
   ['Conversion and contraposition','العكس',['العكس المستوي','عكس النقيض','تنعكس']],
+  ['Eight unities and modal contradiction','الوحدات الثمان والتناقض الموجه',['الوحدات','الكم','الجهة','الممكنة العامة']],
+  ['Inclusive negation of compound assertions','نقيض المركبة ومنع الخلو',['المركبة','نقيض أحد جزأيه','منع الخلو','كل فرد']],
+  ['Converse and existential import','عكس الموجبة والوجود',['الموجبة','جزئية','الصدق','عموم المحمول']],
+  ['Farabi versus Ibn Sina on possible subjects','موضوع الممكنة عند الفارابي والشيخ',['الفارابي','الشيخ','بالفعل','بالإمكان']],
+  ['Conversion of a compound as a whole','انعكاس المجموع وأجزائه',['انعكاس المجموع','انعكاس الأجزاء','وفيه تأمل']],
+  ['Earlier and later contraposition','عكس النقيض عند القدماء والمتأخرين',['القدماء','المتأخرون','عكس النقيض','الطرفين']],
+  ['Witness-based proof by supposition','الافتراض في العكوس',['بدليل الافتراض','يفرض ذات الموضوع','بعض ج','د'] ],
   ['Syllogism and figures','القياس والأشكال',['القياس','الشكل الأول','الشكل الثاني','الشكل الثالث','الشكل الرابع']],
   ['Induction and analogy','الاستقراء والتمثيل',['الاستقراء','التمثيل','الدوران','الترديد']],
   ['Analogy, cause and the uṣūl connection','العلة والفرع والأصل',['التمثيل','العلة','الأصل','الفرع','الدوران']],
@@ -150,9 +157,12 @@ function open(trigger){
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q48_51?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q54_58?.sourceBlocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q59_64?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
-      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q65_69?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en}))
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q65_69?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q70_73?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q74_80?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q81_84?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en}))
      ];
-     const archive=window.GNAMMA_YAZDI_LAYER.entries.filter(p=>!['L.03','L.04','L.05','L.06','L.07','L.08','L.09','L.10','L.11','L.12'].includes(p.unit));
+     const archive=window.GNAMMA_YAZDI_LAYER.entries.filter(p=>!['L.03','L.04','L.05','L.06','L.07','L.08','L.09','L.10','L.11','L.12','L.13','L.14','L.15'].includes(p.unit));
      const glosses=[...archive,...extended].filter(p=>
       t.keys.some(k=>norm(k).length>2&&(norm(p.arabic).includes(norm(k))||norm(p.english).includes(norm(k)))));
      if(glosses.length){
