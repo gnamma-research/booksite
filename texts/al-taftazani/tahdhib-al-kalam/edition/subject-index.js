@@ -18,6 +18,8 @@ const groups=isLogic?[
   ['Relations between universals','النسب الأربع',['التباين','التساوي','العموم','الخصوص']],
   ['Complements and relative inclusion','نقائض الكليات',['النقيض','اللاحيوان','اللاإنسان','العكس']],
   ['Proximate and remote genus','الجنس القريب والبعيد',['الجنس القريب','الجنس البعيد','الحيوان','الجسم']],
+  ['Differentia, constitutive and divisive','الفصل المقوم والمقسم',['الفصل','المقوم','المقسم','الناطق','الحساس']],
+  ['Kinds of inseparable concomitants','أقسام اللوازم',['اللازم','لزوم','الماهية','الوجود الذهني','بين']],
   ['The five universals','الكليات الخمس',['الجنس','النوع','الفصل','الخاصة','العرض العام']],
   ['Definition and description','الحد والرسم',['الحد','الرسم','المعرف']],
  ]},
@@ -127,9 +129,10 @@ function open(trigger){
     if(isLogic&&window.GNAMMA_YAZDI_LAYER?.entries?.length){
      const extended=[
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_L03?.sourcePages||[]).map(p=>({...p,unit:'L.03',arabic:p.ar,english:p.en})),
-      ...(window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en}))
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_L07?.sourceBlocks||[]).map(p=>({...p,arabic:p.ar,english:p.en}))
      ];
-     const archive=window.GNAMMA_YAZDI_LAYER.entries.filter(p=>!['L.03','L.04','L.05','L.06'].includes(p.unit));
+     const archive=window.GNAMMA_YAZDI_LAYER.entries.filter(p=>!['L.03','L.04','L.05','L.06','L.07'].includes(p.unit));
      const glosses=[...archive,...extended].filter(p=>
       t.keys.some(k=>norm(k).length>2&&(norm(p.arabic).includes(norm(k))||norm(p.english).includes(norm(k)))));
      if(glosses.length){
