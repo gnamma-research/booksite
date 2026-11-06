@@ -109,3 +109,12 @@ body.gn-logic-parity .gn-yazdi-ar{font:calc(25px * var(--reader-scale))/2.02 var
  body.gn-logic-parity .gn-yazdi-layer{display:block!important}
  body.gn-logic-parity:not([data-yazdi="on"]) .gn-yazdi-layer{display:none!important}
 }
+
+/* Printed I13 fine-grained, explicitly editorial, topic navigation. */
+.gn-logic-outline-chapter{border-bottom:1px solid var(--border);padding:4px 0;margin:0}
+.gn-logic-outline-chapter>summary{font:650 12px/1.45 system-ui;color:var(--ink);padding:9px 4px;cursor:pointer}
+.gn-logic-outline-item{display:flex;flex-flow:row wrap;align-items:center;justify-content:space-between;gap:4px;width:100%;min-height:39px;padding:7px 8px;border:0;border-top:1px solid color-mix(in srgb,var(--border) 60%,transparent);background:transparent;color:var(--ink);text-align:left;cursor:pointer}
+.gn-logic-outline-item:hover,.gn-logic-outline-item:focus-visible{background:var(--wash)}
+.gn-logic-outline-item>span{font:500 12px/1.4 system-ui;flex:1 1 55%}
+.gn-logic-outline-item>small{font:500 13px/1.4 var(--gn-ar-reader,'Amiri',serif);color:var(--muted);flex:1 1 38%;text-align:right}
+.gn-logic-outline-source{display:block;padding:9px 2px;font:600 12px/1.5 system-ui;color:var(--accent-ink);text-decoration:underline}
