@@ -14,8 +14,40 @@ const idFor=id=>'u-'+id.replace(/[^a-zA-Z0-9-]/g,'-');
 function n(tag,cls,value){const e=document.createElement(tag);if(cls)e.className=cls;if(value!==undefined)e.textContent=value;return e}
 function make(unit,scope){
  const entries=groups.get(unit)||[];
+ const contiguous=unit==='L.03'?window.GNAMMA_YAZDI_CONTIGUOUS_L03:null;
  const box=n('section','gn-yazdi-layer');box.dataset.yazdiUnit=unit;box.setAttribute('aria-label','Mullā al-Yazdī commentary for '+unit);
- const head=n('header','gn-yazdi-head');head.append(n('h3',null,'Mullā al-Yazdī · Commentary'),n('small',null,entries.length+' translated passages'));box.append(head);
+ const head=n('header','gn-yazdi-head');head.append(n('h3',null,'Mullā al-Yazdī · Commentary'),n('small',null,contiguous?'Qum pp.22–29 · complete searchable main layer; scan verification pending':entries.length+' translated passages'));box.append(head);
+ if(contiguous){
+  box.dataset.contiguousUnit=unit;
+  const caveat=n('p','gn-yazdi-main-caveat','Full main ḥāshiya reading from the searchable Qum text, pp.22–29, not a diplomatic or manuscript-collated edition. Editorial English page seams preserve source boundaries; separately printed هامش is excluded.');
+  box.append(caveat);
+  for(const part of contiguous.sourcePages){
+   const item=n('article','gn-yazdi-excerpt gn-yazdi-contiguous-page');
+   item.dataset.yazdiId=part.id;item.dataset.qPage=part.page;
+   item.id='gn-yazdi-'+scope+'-'+part.id;
+   item.append(n('div','gn-yazdi-locator','al-Yazdī · Qum p. '+part.page+' · '+part.title));
+   const content=n('div','gn-yazdi-pair');
+   const en=n('p','gn-yazdi-en',part.en);en.lang='en';
+   const ar=n('p','gn-yazdi-ar',part.ar);ar.lang='ar';ar.dir='rtl';
+   content.append(en,ar);item.append(content);
+   const source=n('a','gn-yazdi-source','Source Q · p. '+part.page);
+   source.href=part.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';item.append(source);
+   if(part.flags?.includes('textual-crux-Q24')){
+    const issue=n('details','gn-yazdi-variant gn-yazdi-critical-crux');
+    issue.append(n('summary',null,'Textual problem · Q p.24 · implication without inclusion'));
+    issue.append(n('p','gn-yazdi-variant-note','The digitized line reads «ولا لازم ذهني» while the inference requires a concomitant. The apparent contradiction is preserved pending inspection of printed images and independent witnesses.'));
+    item.append(issue);
+   }
+   if(part.notes?.length){
+    const note=n('details','gn-yazdi-source-notes');note.append(n('summary',null,'Textual and translation notes'));
+    for(const t of part.notes)note.append(n('p',null,t));item.append(note);
+   }
+   box.append(item);
+  }
+  const editorial=n('p','gn-yazdi-main-caveat','Previously translated selected L.03 quotations remain in the source register but are not repeated here. Page-seam boundaries in this reading correspond to Qum printed pages, not to authorial paragraph headings.');
+  box.append(editorial);
+  return box;
+ }
  for(const part of entries){
   const item=n('article','gn-yazdi-excerpt');item.dataset.yazdiId=part.id;
   item.id='gn-yazdi-'+scope+'-'+part.id.replace(/[^a-zA-Z0-9-]/g,'-');
@@ -75,11 +107,14 @@ function setEnabled(v){
  mount();document.dispatchEvent(new CustomEvent('gnamma-tahdhib-yazdi',{detail:{enabled:state.enabled}}));return state.enabled
 }
 function goTo(id){
- const part=data.entries.find(e=>e.id===id);if(!part)return false;
+ const continuous=window.GNAMMA_YAZDI_CONTIGUOUS_L03;
+ const part=data.entries.find(e=>e.id===id)||(continuous?.sourcePages.find(e=>e.id===id)??null);
+ if(!part)return false;
  setEnabled(true);ex.setMode('flow');
- reader.go(Number(part.unit.slice(2)),'u-'+part.unit.replace(/[^a-zA-Z0-9-]/g,'-'));
+ reader.go(Number((part.unit||'L.03').slice(2)),'u-'+part.unit.replace(/[^a-zA-Z0-9-]/g,'-'));
  const scroll=()=>{
-  const target=document.getElementById('gn-yazdi-flow-'+part.id.replace(/[^a-zA-Z0-9-]/g,'-'));
+  const id=(part.unit==='L.03'||part.id.startsWith('YZC-'))?'YZC-'+part.page:part.id.replace(/[^a-zA-Z0-9-]/g,'-');
+  const target=document.getElementById('gn-yazdi-flow-'+id);
   target?.scrollIntoView({block:'center',behavior:'smooth'});
  };
  requestAnimationFrame(()=>requestAnimationFrame(scroll));
@@ -89,5 +124,5 @@ document.addEventListener('gnamma-tahdhib-flow-built',mountFlow);
 document.addEventListener('gnamma-tahdhib-render',mount); // Render has already replaced source cards; mount now to avoid a WebKit frame race.
 document.addEventListener('gnamma-tahdhib-view',mount);
 mount();
-window.GnammaYazdiLayer=Object.freeze({enabled,setEnabled,mount,goTo,entryCount:data.entries.length,units:[...groups.keys()],complete:false});
+window.GnammaYazdiLayer=Object.freeze({enabled,setEnabled,mount,goTo,entryCount:data.entries.length,continuousPages:window.GNAMMA_YAZDI_CONTIGUOUS_L03?.sourcePages.length||0,units:[...groups.keys()],complete:false});
 })();
