@@ -226,7 +226,7 @@ jobs:
           assert 'اليقين' in q110[1]['ar'] and 'البرهان اللمي' in q110[2]['ar']
           assert 'أهملوه' in q110[-1]['ar']
           assert 'بالبرهان' in q114[0]['ar'] and 'لذواتها' in q114[3]['ar']
-          assert 'الرؤوس الثمانية' in q119[0]['ar'] and 'الأنحاء التعليمية' in q119[2]['ar']
+          assert 'قوله «الغرض»' in q119[0]['ar'] and 'الأنحاء التعليمية' in q119[2]['ar']
           assert 'جعلنا الله وإياكم' in q119[-1]['ar'] and 'قد تمت النسخة' not in q119[-1]['ar']
           col=late['yazdi-continuous-q119-123-data.js']['colophon']
           assert 'قد تمت النسخة' in col['text'] and 'Nonauthorial' in col['attribution']
