@@ -78,7 +78,7 @@ async function run(engine,browser,kind,viewport){
      assert(await page.locator('#flow-passages [data-yazdi-id="'+oldId+'"]').count()===0,'Older selected excerpt repeated in place of continuous translation: '+oldId);
     }
     const q63=await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="63"] .gn-yazdi-ar').textContent();
-    assert(q63.includes('ستة عشر')&&q63.includes('التسعة الباقية'),'Modal source's 16/3/4/9 count missing');
+    assert(q63.includes('ستة عشر')&&q63.includes('التسعة الباقية'),"Modal source 16/3/4/9 count missing");
     const q65=await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="65"] .gn-yazdi-ar').textContent();
     assert(!q65.includes('أقسام الشرطية'),'Printed chapter rubric imported as al-Yazdī prose');
     assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="69"]').count()===1,'Complete conditional section p69 missing');
