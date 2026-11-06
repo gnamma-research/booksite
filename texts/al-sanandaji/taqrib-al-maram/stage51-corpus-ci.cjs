@@ -4,7 +4,7 @@ const path=require('node:path');
 const vm=require('node:vm');
 const assert=require('node:assert/strict');
 const dir=__dirname;
-const scripts=['data.js','stage51-cumulative-II015-II054.js','stage51-cumulative-II055-II114.js','stage51-cumulative-II115-II164.js','stage51-cumulative-II165-II214.js','stage51-cumulative-II215-II247.js','stage51-cumulative-II248-II280.js','stage51-cumulative-II281-II297.js','stage51-cumulative-II298-II314.js','stage51-wasim-preface.js','stage48-source-revisions-II035-II044.js','stage50-source-checked-working-readings.js','stage50-mixture-continuation-II053-II054.js','stage52-source-review-II055-II057.js'];
+const scripts=['data.js','stage51-cumulative-II015-II054.js','stage51-cumulative-II055-II114.js','stage51-cumulative-II115-II164.js','stage51-cumulative-II165-II214.js','stage51-cumulative-II215-II247.js','stage51-cumulative-II248-II280.js','stage51-cumulative-II281-II297.js','stage51-cumulative-II298-II314.js','stage51-wasim-preface.js','stage48-source-revisions-II035-II044.js','stage50-source-checked-working-readings.js','stage50-mixture-continuation-II053-II054.js','stage52-source-review-II055-II057.js','stage52-source-review-II058-II062.js'];
 const ctx=vm.createContext({window:{GNAMMA_BOOK:{id:'taqrib',units:[]}}});
 for(const file of scripts){const source=fs.readFileSync(path.join(dir,file),'utf8');vm.runInContext(source,ctx,{filename:file,timeout:10000});}
 const book=ctx.window.GNAMMA_BOOK;
@@ -26,6 +26,11 @@ assert(pages.find(u=>u.page===54).english.includes('relative'),'II:54 newer mixt
 assert(pages.find(u=>u.page===55).english.includes('external'),'II:55 expanded relative balance source reading loaded');
 assert(pages.find(u=>u.page===56).english.includes('fourth clime'),'II:56 clime debate source reading loaded');
 assert(pages.find(u=>u.page===57).english.includes('animal'),'II:57 classification source reading loaded');
+assert(pages.find(u=>u.page===58).english.includes('attractive'),'II:58 nutrition's attractive power');
+assert(pages.find(u=>u.page===59).english.includes('four stages'),'II:59 stages of digestion');
+assert(pages.find(u=>u.page===60).english.includes('three dimensions'),'II:60 proportionate growth');
+assert(pages.find(u=>u.page===61).english.includes('reproductive'),'II:61 generative faculty');
+assert(pages.find(u=>u.page===62).english.includes('formative'),'II:62 formative faculty');
 const firstCount=pages.reduce((n,u)=>n+(u.layers?.margins?.length||0),0);
 for(const file of scripts.slice(1))vm.runInContext(fs.readFileSync(path.join(dir,file),'utf8'),ctx,{filename:file,timeout:10000});
 const after=book.units.filter(u=>u.volume==='II'&&u.page>=15&&u.page<=314&&u.id==='P2.'+String(u.page).padStart(3,'0'));
