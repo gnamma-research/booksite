@@ -29,3 +29,16 @@ body:not([data-yazdi="on"]) .gn-yazdi-layer{display:none!important}
  .gn-yazdi-en{font-size:calc(16px * var(--reader-scale))}
 }
 @media print{.gn-yazdi-layer{display:none!important}}
+
+/* I13 is a separately printed comparison, never a third reading state.
+   Small, user-invoked apparatus maintains Darūrī's unobtrusive reading surface. */
+.gn-yazdi-second-print{margin-left:12px}
+.gn-yazdi-variant{margin:9px 0 3px;border-top:1px dotted var(--border);padding-top:7px}
+.gn-yazdi-variant>summary{font:550 11px/1.5 system-ui;color:var(--accent-ink);cursor:pointer;padding:5px 0}
+.gn-yazdi-variant-readings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:8px 0}
+.gn-yazdi-variant-row{min-width:0;padding:9px 10px;background:var(--bg);border:1px solid var(--border);border-radius:6px}
+.gn-yazdi-variant-row strong{display:block;font:600 11px/1.4 system-ui;color:var(--muted);margin-bottom:5px}
+.gn-yazdi-variant-row p{font:500 calc(19px * var(--reader-scale))/1.8 var(--gn-ar-reader,'Amiri',serif);margin:0;text-align:right;overflow-wrap:break-word}
+.gn-yazdi-variant-note{font:13px/1.65 system-ui;color:var(--ink);margin:5px 0!important}
+.gn-yazdi-variant-status{font:11px/1.6 system-ui;color:var(--muted);margin:5px 0!important}
+@media(max-width:700px){.gn-yazdi-variant-readings{grid-template-columns:1fr;gap:8px}}
