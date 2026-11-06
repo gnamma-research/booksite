@@ -109,7 +109,7 @@ async function check(kind,size){
  assert(nextPage===current+1,'Dock navigation did not advance the reader');
  const trail=await page.evaluate(()=>window.GnammaTahdhibTrail.snapshot());
  assert(trail.back.length>0,'Back reading history was not recorded');
- await page.locator('.gn-trail-controls button[aria-label="Back to previous reading location"]').click();
+ await page.locator('.gn-trail-controls button[aria-label="Back to previous reading location"]').evaluate(el=>el.click());
  assert(await page.evaluate(()=>window.GnammaTahdhibReader.getState().page)===current,'Back reading history navigation failed');
  await page.locator('#export').evaluate(el=>el.click());
  await page.locator('.gn-machine-pdf').waitFor({state:'visible',timeout:15000});
