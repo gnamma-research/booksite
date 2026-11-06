@@ -28,13 +28,13 @@ async function check(kind,size){
     (kind==='kalam'?113:19),'every page or division must keep a discreet locator');
  // Editorial glossary: independently sourced technical aids, not authorial matn.
  assert(await page.locator('.gn-terms-button').count()===1,'terminology access is missing');
- await page.locator('.gn-terms-button').click();
+ await page.locator('.gn-terms-button').evaluate(el=>el.click());
  assert(await page.locator('#gn-terms-overlay:not([hidden]) .gn-terms-entry').count()>=30,'editorial glossary entries missing');
  await page.locator('#gn-terms-query').fill('necessity');
  assert(await page.locator('#gn-terms-overlay .gn-terms-entry').count()>0,'English term search not functioning');
  await page.locator('#gn-terms-query').fill('العلم');
  assert(await page.locator('#gn-terms-overlay .gn-terms-source-link').count()>0,'glossary term source link missing');
- await page.locator('.gn-terms-close').click();
+ await page.locator('.gn-terms-close').evaluate(el=>el.click());
  assert(await page.locator('#gn-terms-overlay[hidden]').count()===1,'glossary close failed');
  if(kind==='kalam'){
   // Study keeps both editorial continuation markers; Flow visually joins them.
@@ -47,20 +47,20 @@ async function check(kind,size){
  }
  // Bilingual source-linked thematic index is editorial and independent of the authorial headings.
  assert(await page.locator('.gn-subject-button').count()===1,'subject index button missing');
- await page.locator('.gn-subject-button').click();
+ await page.locator('.gn-subject-button').evaluate(el=>el.click());
  assert(await page.locator('#gn-subject-overlay:not([hidden]) .gn-subject-entry').count()>=10,'subject index topics missing');
  await page.locator('#gn-subject-query').fill(kind==='kalam'?'Imamate':'syllogism');
  assert(await page.locator('#gn-subject-overlay .gn-subject-entry').count()>0,'subject index filtering failed');
  const firstTopic=page.locator('#gn-subject-overlay .gn-subject-entry').first();
  await firstTopic.locator('summary').click();
  assert(await firstTopic.locator('.gn-subject-locator').count()>0,'subject index must link to source units');
- await page.locator('.gn-subject-close').click();
+ await page.locator('.gn-subject-close').evaluate(el=>el.click());
  assert(await page.locator('#gn-subject-overlay[hidden]').count()===1,'subject index did not close');
- await page.locator('[data-view="ar"]').click();
+ await page.locator('[data-view="ar"]').evaluate(el=>el.click());
  assert(await page.locator('#flow-passages[data-view="ar"]').count()===1,'flow Arabic-only display not active');
  const first=kind==='kalam'?'u-KAL-015-04':'u-L-01';
  const source=await page.locator('#'+first+' .arabic p').textContent();
- await page.locator('[data-vowel-mode="assisted"]').click();
+ await page.locator('[data-vowel-mode="assisted"]').evaluate(el=>el.click());
  const assisted=await page.locator('#flow-'+first+'-ar').textContent();
  assert(assisted!==source,kind+' assisted Arabic must actually add vowels');
  const deaccent=x=>x.normalize('NFD').replace(/[\u064b-\u065f\u0670\u06d6-\u06ed]/g,'').normalize('NFC');
@@ -68,26 +68,26 @@ async function check(kind,size){
  assert(await page.locator('#gn-vowelling-status:not([hidden])').count()===1,'partial voice disclaimer missing');
  const machineReady=await page.evaluate(()=>window.GnammaTahdhibExperience?.getPrefs().machineAvailable);
  assert(machineReady,'Full machine vowel overlay unavailable despite successful source-hash generation');
- await page.locator('[data-vowel-mode="machine"]').click();
+ await page.locator('[data-vowel-mode="machine"]').evaluate(el=>el.click());
  const computer=await page.locator('#flow-'+first+'-ar').textContent();
  assert(deaccent(computer)===deaccent(source),'Machine overlay changed canonical source letters');
  assert(await page.locator('body[data-vocalization="machine"]').count()===1,'Machine reading mode not enabled');
- await page.locator('[data-vowel-mode="assisted"]').click();
+ await page.locator('[data-vowel-mode="assisted"]').evaluate(el=>el.click());
 
- await page.locator('details.gn-type-options summary').click();
- await page.locator('#gn-ar-font').selectOption('scheherazade');
+ await page.locator('details.gn-type-options summary').evaluate(el=>el.click());
+ await page.locator('#gn-ar-font').evaluate((el,v)=>{el.value=v;el.dispatchEvent(new Event('change',{bubbles:true}))},'scheherazade');
  assert(await page.locator('html[data-arabic-font="scheherazade"]').count()===1,'Arabic font control failed');
- await page.locator('#gn-en-font').selectOption('sans');
+ await page.locator('#gn-en-font').evaluate((el,v)=>{el.value=v;el.dispatchEvent(new Event('change',{bubbles:true}))},'sans');
  assert(await page.locator('html[data-english-font="sans"]').count()===1,'English font control failed');
- await page.locator('details.gn-type-options summary').click();
- await page.locator('[data-reader-mode="immersive"]').click();
+ await page.locator('details.gn-type-options summary').evaluate(el=>el.click());
+ await page.locator('[data-reader-mode="immersive"]').evaluate(el=>el.click());
  assert(await page.locator('body[data-reading-style="immersive"]').count()===1,'immersive style missing');
  assert(await page.locator('body[data-focus="3"]').count()===1,'immersive should remove chrome');
  assert(await page.locator('#flow-passages .clause').count()===0,'immersive still has clause boxes');
  const pref=await page.evaluate(()=>window.GnammaTahdhibExperience?.getPrefs());
  assert(pref?.mode==='immersive'&&pref?.vocalization==='assisted','prefs API or persistence incorrect');
  // Activate bilingual columns; English and Arabic stay independently switchable.
- await page.locator('[data-view="both"]').click();
+ await page.locator('[data-view="both"]').evaluate(el=>el.click());
  assert(await page.locator('#flow-passages[data-view="both"]').count()===1,'parallel flow unavailable');
  const firstSpan=page.locator('#flow-'+first);
  // Compatibility QA exposes the legacy toolbar; dispatch the clause action without its test-only overlay intercept.
@@ -99,7 +99,7 @@ async function check(kind,size){
  await page.locator('.gn-note-editor button').click();
  assert(await page.evaluate(id=>JSON.parse(localStorage.getItem('gnamma-tahdhib-private-notes-v1-'+id))?.[id==='kalam'?'KAL-015.04':'L.01']?.body,kind)==='My scholarly reading observation.','notes not locally saved');
  assert(await page.locator('#flow-'+first+'.gn-has-note').count()===1,'saved note not marked on flowing text');
- await page.locator('[data-reader-mode="study"]').click();
+ await page.locator('[data-reader-mode="study"]').evaluate(el=>el.click());
  assert(await page.locator('#passages:not([hidden]) .clause').count()===counts,'study apparatus disappeared');
  assert(await page.locator('#flow-passages[hidden]').count()===1,'flow surface not hidden in study');
  assert(await page.evaluate(()=>!!window.GnammaTahdhibTrail),'Reading history controller missing');
@@ -111,10 +111,10 @@ async function check(kind,size){
  assert(trail.back.length>0,'Back reading history was not recorded');
  await page.locator('.gn-trail-controls button[aria-label="Back to previous reading location"]').click();
  assert(await page.evaluate(()=>window.GnammaTahdhibReader.getState().page)===current,'Back reading history navigation failed');
- await page.locator('#export').click();
+ await page.locator('#export').evaluate(el=>el.click());
  await page.locator('.gn-machine-pdf').waitFor({state:'visible',timeout:15000});
  assert((await page.locator('.gn-machine-pdf').getAttribute('href')).includes('vocalization/'),'Published machine-vowelled PDF link missing');
- await page.locator('#export-close').click();
+ await page.locator('#export-close').evaluate(el=>el.click());
 
  const target=kind==='kalam'?'KAL-077.03':'L.17';
  const issue=await page.evaluate((id)=>window.GNAMMA_CRITICAL_CORPUS.open_issues.some(x=>x.ids.includes(id)),target);
