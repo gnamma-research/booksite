@@ -7,7 +7,7 @@ window.GNAMMA_YAZDI_LAYER={
   "edition": "Qum, Muʾassasat al-Nashr al-Islāmī; searchable paginated text",
   "editionCatalog": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000566/display?lang=en",
   "sourceIndex": "https://ablibrary.net/book_content/b/12170/1",
-  "coverage": "177 bilingual selected passages across all 19 logic divisions, of which 10 were added after comparing main-commentary text of the Gujarat 1434/2013 print with Qum. Nine explicit comparison records identify agreements or *candidate* printed differences. The sharḥ has NOT been translated continuously or critically established. Printed-page I13 locators refer to the 2013 edition, not to Qum pagination; annotations by other writers remain excluded.",
+  "coverage": "177 bilingual selected passages across all 19 logic divisions, of which 10 were added after comparing main-commentary text of the Gujarat 1434/2013 print with Qum. Nine explicit comparison records identify four agreements, one small connective difference, and four candidate printed differences. The sharḥ has NOT been translated continuously or critically established. Printed-page I13 locators refer to the 2013 edition, not to Qum pagination; annotations by other writers remain excluded.",
   "complete": false,
   "entries": [
     {
@@ -315,10 +315,10 @@ window.GNAMMA_YAZDI_LAYER={
         "siglum": "I13",
         "printedPage": 36,
         "sourceUrl": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
-        "status": "agreement",
+        "status": "minor-wording-difference",
         "qReading": "الأولى أن العلم إما تصور وإما تصديق",
         "iReading": "الأولى أن العلم إما تصور أو تصديق",
-        "note": "The logic of the three-premise argument agrees, with minor conjunctive variation. Exact letter-level reading needs imaging.",
+        "note": "The argument is the same, but Qum's ‘إما تصور وإما تصديق’ is transcribed in the Indian print as ‘إما تصور أو تصديق’. This remains a printed-transcription difference, not a critical manuscript variant.",
         "sourceTypes": "Printed main-text comparison; modern footnotes omitted",
         "scanVerified": false
       },
