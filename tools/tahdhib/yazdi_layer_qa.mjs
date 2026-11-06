@@ -56,7 +56,7 @@ async function run(engine,browser,kind,viewport){
    for(const unit of ['L.04','L.05','L.06']){
     assert(await page.locator('#flow-passages .gn-yazdi-layer[data-contiguous-unit="'+unit+'"]').count()===1,'Missing complete searchable main commentary in '+unit);
    }
-   assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page').count()===47,'Expected 8 + 10 + 9 + 4 + 5 + 6 + 5 consecutive blocks');
+   assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page').count()===62,'Expected 47 earlier and 15 new consecutive source blocks');
    assert(await page.locator('#flow-passages [data-yazdi-id="YZ-30.01"]').count()===0,'Qum main pp.30–37 must not repeat archive selections');
    assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="37"] .gn-yazdi-critical-crux').count()===1,'Q37 unresolved source-layout boundary must be visible');
    assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="31"]').count()===2,'Q31 split between L04 and L05 was lost');
@@ -71,6 +71,21 @@ async function run(engine,browser,kind,viewport){
     assert(await page.evaluate(()=>window.GnammaYazdiLayer?.propositionPages)===5,'Q54-58 propositions main text missing');
     assert(await page.evaluate(()=>window.GnammaYazdiLayer?.modalPages)===6,'Q59–64 main commentary modal text incomplete');
     assert(await page.evaluate(()=>window.GnammaYazdiLayer?.conditionalPages)===5,'Q65–69 main commentary on conditionals incomplete');
+    assert(await page.evaluate(()=>window.GnammaYazdiLayer?.contradictionPages)===4,'Q70–73 main al-Yazdī contradiction missing');
+    assert(await page.evaluate(()=>window.GnammaYazdiLayer?.conversionPages)===7,'Q74–80 main al-Yazdī simple conversion missing');
+    assert(await page.evaluate(()=>window.GnammaYazdiLayer?.contrapositionPages)===4,'Q81–84 main al-Yazdī contraposition missing');
+    for(const [unit,count] of [['L.13',4],['L.14',7],['L.15',4]]){
+     assert(await page.locator('#flow-passages .gn-yazdi-layer[data-contiguous-unit="'+unit+'"] .gn-yazdi-contiguous-page').count()===count,'Missing consecutive main commentary in '+unit);
+    }
+    for(const oldId of ['YZ-70.01','YZ-72.01','YZ-74.01','YZ-76.01','YZ-81.01']){
+     assert(await page.locator('#flow-passages [data-yazdi-id="'+oldId+'"]').count()===0,'Duplicated archived source excerpt '+oldId);
+    }
+    assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="73"]').count()===1,'Q73 compound negation continuation missing');
+    assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="79"]').count()===1,'Q79 Yazdī objection missing');
+    assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="84"]').count()===1,'Q84 witness proof completion missing');
+    assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="85"]').count()===0,'Q85 heading must not appear as al-Yazdī commentary');
+    const q81=await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="81"] .gn-yazdi-ar').textContent();
+    assert(q81.includes('القدماء')&&q81.includes('المتأخرون'),'Early versus later contraposition textual distinction missing');
     for(const [unit,n] of [['L.11',6],['L.12',5]]){
      assert(await page.locator('#flow-passages .gn-yazdi-layer[data-contiguous-unit="'+unit+'"] .gn-yazdi-contiguous-page').count()===n,'Missing consecutive commentary for '+unit);
     }
@@ -94,7 +109,7 @@ async function run(engine,browser,kind,viewport){
     const q55ar=await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="55"] .gn-yazdi-ar').textContent();
     assert(q55ar.includes('فلا دور')&&!q55ar.includes('المحقق الشريف'),'Q55 imported later marginalia or missed the main sentence');
    assert(await page.locator('#flow-passages [data-yazdi-id="YZ-46.01"]').count()===0,'Overlapping selected commentary must not repeat p46 full reading');
-   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===114,'Visible main commentary should replace 110 archived excerpt duplicates with 47 continuous blocks');
+   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===116,'Visible main commentary should replace 123 archived samples with 62 continuous blocks');
    assert(await page.locator('#flow-passages .gn-yazdi-variant:not(.gn-yazdi-critical-crux)').count()===9,'Nine Q/I13 printed comparison dossiers missing');
    assert(await page.locator('#flow-passages .gn-yazdi-second-print').count()===17,'I13 printed links must match 17 separately identified passages');
    const v=page.locator('#flow-passages .gn-yazdi-variant').first();
@@ -105,7 +120,7 @@ async function run(engine,browser,kind,viewport){
    assert((await en.textContent()).includes('begins with praise'),'Translated first paragraph does not match source');
    assert((await ar.textContent()).trim().length>10,'Original Arabic missing');
    const links=await page.locator('#flow-passages .gn-yazdi-excerpt > .gn-yazdi-source:not(.gn-yazdi-second-print)').evaluateAll(xs=>xs.map(a=>a.href));
-   assert(links.length===114&&links.every(x=>x.includes('/book_content/b/12170/')||x.includes('najafdesertlibrary.com/book/')),'Commentary pagination broken');
+   assert(links.length===116&&links.every(x=>x.includes('/book_content/b/12170/')||x.includes('najafdesertlibrary.com/book/')),'Commentary pagination broken');
    await rail.locator('[aria-label="English"]').click();
    assert(await page.locator('#flow-passages[data-view="ar"]').count()===1,'Switching English off did not leave Arabic only');
    assert(await en.evaluate(el=>getComputedStyle(el).display)==='none','Arabic-only view leaks English commentary');
@@ -125,10 +140,10 @@ async function run(engine,browser,kind,viewport){
    await page.evaluate(()=>window.GnammaTahdhibReader.go(2));
    assert(await page.locator('#passages:not([hidden]) .gn-yazdi-layer[data-yazdi-unit="L.02"]').count()===1,'Study mode commentary not source aligned');
    await page.evaluate(()=>window.GnammaTahdhibExperience.setMode('flow'));
-   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===114,'Continuous Q22–69 commentary flow lost on restore');
+   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===116,'Continuous Q22–84 commentary flow lost on restore');
    await page.reload({waitUntil:'networkidle'});
    assert(await page.locator('body[data-yazdi="on"]').count()===1,'Selected commentary layer not persisted');
-   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===114,'Continuous Q22–69 commentary missing after refresh');
+   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===116,'Continuous Q22–84 commentary missing after refresh');
    const critical=await ctx.newPage();await critical.goto(new URL(routes.logic+'critical-status.html',base).href,{waitUntil:'networkidle'});
    assert(await critical.locator('#count').textContent()==='177','Edition coverage page out of sync');
    assert(await critical.locator('#divisions').textContent()==='19/19','Division coverage page out of sync');
@@ -141,6 +156,9 @@ async function run(engine,browser,kind,viewport){
     assert(await critical.locator('#continuous-q54-58 tr').count()===5,'Critical dashboard lost Q54-58 source pages');
     assert(await critical.locator('#continuous-q59-64 tr').count()===6,'Critical register must show six modal text pages');
     assert(await critical.locator('#continuous-q65-69 tr').count()===5,'Critical register must show five conditional pages');
+    assert(await critical.locator('#continuous-q70-73 tr').count()===4,'Critical dashboard must list four contradiction source pages');
+    assert(await critical.locator('#continuous-q74-80 tr').count()===7,'Critical dashboard must list seven simple-conversion source pages');
+    assert(await critical.locator('#continuous-q81-84 tr').count()===4,'Critical dashboard must list four contraposition source pages');
    await critical.close();
   }else{
    assert(await page.locator('#gn-logic-rail').count()===0,'Logic-only compact toolbar leaked into kalām');
