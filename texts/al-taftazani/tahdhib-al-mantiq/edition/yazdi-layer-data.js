@@ -1,4 +1,4 @@
-/* Source-attributed Arabic-English selections, main شرح distinct from later هامش. */
+/* Selected bilingual Arabic/English translations; not the complete al-Yazdī book. */
 window.GNAMMA_YAZDI_LAYER={
   "schema": "gnamma-yazdi-translation-layer-v1",
   "work": "Tahdhīb al-Manṭiq",
@@ -7,7 +7,7 @@ window.GNAMMA_YAZDI_LAYER={
   "edition": "Qum, Muʾassasat al-Nashr al-Islāmī; searchable paginated text",
   "editionCatalog": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000566/display?lang=en",
   "sourceIndex": "https://ablibrary.net/book_content/b/12170/1",
-  "coverage": "111 source-identified translated selections from printed commentary pp. 14–19, 22–27, 30–37, 46–50, 54, and 56–64; corresponding to selected Tafṭāzānī logic divisions L.02–L.11. This is not a complete translation. All remaining commentary material from the 400-page printed volume, including other hands’ marginalia, remains outside the translated layer.",
+  "coverage": "121 selected translations in 11 of 19 logic divisions, from a historical Arabic commentary of about 400 printed pages. Printed source locations include pp. 14–19, 22–27, 30–37, 46–50, 54, 56–68. This does not constitute an unabridged commentary translation. All available Arabic and English are linked to printed source pages; separate هامش notes are excluded.",
   "complete": false,
   "entries": [
     {
@@ -1118,6 +1118,106 @@ window.GNAMMA_YAZDI_LAYER={
       "arabic": "قوله « مخالفتي الكيفية » أي : في الإيجاب والسلب وقد مر بيان ذلك في بيان معنى اللادوام واللاضرورة وأما الموافقة في الكمية أي : الكلية والجزئية ، فلأن الموضوع في القضية المركبة أمر واحد وقد حكم عليه بحكمين مختلفين بالإيجاب والسلب .",
       "english": "‘Opposed in quality’ means that the two component propositions differ in affirmation versus negation. They nevertheless agree in quantity—universal or particular—because they concern the same subject under the same scope. One cannot change the subject range while claiming to have formed the intended compound modality.",
       "sourceUrl": "https://ablibrary.net/book_content/b/12170/64?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-65.01",
+      "unit": "L.12",
+      "page": 65,
+      "title": "An affirmative conditional need not have affirmative components",
+      "arabic": "قوله « على تقدير أخرى » : سواء كانت النسبتان ثبوتيتين أو سلبيتين أو مختلفتين فقولنا : « كلما لم يكن زيد حيوانا لم يكن إنسانا » متصلة موجبة .",
+      "english": "On ‘upon the supposition of another relation’: the two component relations may both be affirmative, both negative, or of different quality. ‘Whenever Zayd is not an animal, he is not a human’ is an affirmative connected conditional, even though its two component propositions are negative.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/65?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-65.02",
+      "unit": "L.12",
+      "page": 65,
+      "title": "Affirming or denying the connection is the conditional's quality",
+      "arabic": "فالمتصلة الموجبة ما حكم فيها باتصال النسبتين والسالبة ما حكم فيها بسلب اتصالهما نحو : ليس البتة كلما كانت الشمس طالعة كان الليل موجودا .",
+      "english": "A connected conditional is affirmative when it judges that two propositional relations are connected, and negative when it denies that connection. ‘It is not the case that whenever the sun rises, night exists’ is therefore a negative connected conditional. Its quality is not decided by the polarity of the component clauses.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/65?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-65.03",
+      "unit": "L.12",
+      "page": 65,
+      "title": "Necessary connection versus mere coincidental concomitance",
+      "arabic": "وأما الاتفاقية فهي ما حكم فيها بمجرد الاتصال أو نفيه من غير أن يكون ذلك مستندا إلى العلاقة نحو : كلما كان الإنسان ناطقا فالحمار ناهق .",
+      "english": "A coincidental conditional (ittifāqiyya) merely affirms or denies that two relations accompany one another, without grounding the connection in an explanatory or entailment relation. An accidental conjunction of human speech and a donkey's braying exemplifies the distinction from a necessary conditional (luzūmiyya).",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/65?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-66.01",
+      "unit": "L.12",
+      "page": 66,
+      "title": "A disjunctive proposition affirms or denies incompatibility",
+      "arabic": "قوله « بتنافي النسبتين » : سواء كان النسبتان ثبوتيتين أو سلبيتين أو مختلفتين فإن كان الحكم فيها بتنافيهما فهي منفصلة موجبة وإن كان بسلب تنافيهما فهي منفصلة سالبة .",
+      "english": "On ‘incompatibility between the two relations’: their component propositions may be affirmative, negative, or mixed. If their incompatibility is asserted, the disjunctive proposition is affirmative; if their incompatibility is denied, it is negative. The quality concerns the relation between alternatives.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/66?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-66.02",
+      "unit": "L.12",
+      "page": 66,
+      "title": "Exclusive disjunction concerns both truth and falsity",
+      "arabic": "قوله « وهي الحقيقية » : فالمنفصلة الحقيقية ما حكم فيها بتنافي النسبتين في الصدق والكذب كقولنا : إما أن يكون هذا العدد زوجا وإما أن يكون هذا العدد فردا .",
+      "english": "The genuine or exclusive disjunctive (ḥaqīqiyya) declares two alternatives incompatible both in being true and in being false: a number is either even or odd. They cannot both be true, and they cannot both be false, under the relevant division.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/66?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-67.01",
+      "unit": "L.12",
+      "page": 67,
+      "title": "Exclusive-of-conjunction versus exclusive-of-exhaustion",
+      "arabic": "قوله : « أو صدقا فقط » : أي : لا في الكذب أو مع قطع النظر عن الكذب حتى جاز أن يجتمع النسبتان في الكذب وأن لا يجتمعا ويقال للمعنى الأول مانعة الجمع بالمعنى الأخص وللثاني مانعة الجمع بالمعنى الأعم .",
+      "english": "‘In truth alone’ means that the two alternatives cannot both be true, while their joint falsity may either be permitted or simply left undetermined. This distinguishes the narrower and broader senses of māniʿat al-jamʿ: prohibition of joint truth does not by itself establish that at least one alternative is true.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/67?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-67.02",
+      "unit": "L.12",
+      "page": 67,
+      "title": "Exclusive-of-emptiness",
+      "arabic": "قوله : « أو كذبا فقط » : أي : لا في الصدق ، أو مع قطع النظر عن الصدق ، والأول مانعة الخلو بالمعنى الأخص والثاني بالمعنى الأعم .",
+      "english": "‘In falsity alone’ means the alternatives cannot both be false, while their being simultaneously true may be disallowed or simply left undecided. This is māniʿat al-khulū, a disjunction that excludes both alternatives' being absent; it is distinct from excluding their joint truth.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/67?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-68.01",
+      "unit": "L.12",
+      "page": 68,
+      "title": "Conditionals admit quantity and singularity",
+      "arabic": "قوله « ثم الحكم » إلخ : كما أن الحملية تنقسم إلى محصورة ومهملة وشخصية وطبيعية ، كذلك الشرطية أيضا سواء كانت متصلة أو منفصلة تنقسم إلى المحصورة الكلية والجزئية والمهملة والشخصية ولا يتعقل الطبيعية هاهنا .",
+      "english": "Just as categoricals are classified by quantity and the kind of subject, connected and disjunctive conditionals admit universal, particular, indefinite, and singular forms. The corresponding ‘natural’ form—predicating a property of a universal nature as such—is not applicable here in the same way.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/68?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-68.02",
+      "unit": "L.12",
+      "page": 68,
+      "title": "Quantifiers in conditionals",
+      "arabic": "قوله « فكلية » : وسورها في المتصلة الموجبة « كلما » و « متى » و « مهما » وما في معناها وفي المنفصلة « دائما » و « أبدا » ونحوهما هذا في الموجبة وأما في السالبة مطلقا فسورها « ليس البتة » .",
+      "english": "A universal connected conditional is signalled by expressions such as ‘whenever’, ‘when’, and ‘whatever’; universal disjunctions may be qualified by ‘always’ or ‘ever’. A universal negative conditional can use ‘never’ or ‘it is not at all the case’. The quantifier specifies the range of suppositions rather than merely the individual terms.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/68?lang=ar",
+      "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
+    },
+    {
+      "id": "YZ-68.03",
+      "unit": "L.12",
+      "page": 68,
+      "title": "Particular and indefinite conditionals",
+      "arabic": "قوله « فجزئية » : وسورها في الموجبة متصلة كانت أو منفصلة « قد يكون » وفي السالبة كذلك « قد لا يكون » . قوله « فشخصية » : كقولك : إن جئتني اليوم أكرمك . قوله « فمهملة » : نحو : إذا كان الشيء إنسانا كان حيوانا .",
+      "english": "A particular affirmative conditional may be introduced by ‘it may happen that’; the particular negative by ‘it may happen that not’. A singular conditional fixes a particular occasion, such as ‘If you come to me today, I shall honour you’. An indefinite conditional leaves the scope unstated, such as ‘If something is human, it is an animal’.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/68?lang=ar",
       "attribution": "Yazdī main commentary (شرح), later هامش voices excluded"
     }
   ]

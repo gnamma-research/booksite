@@ -1,20 +1,23 @@
-# Mullā al-Yazdī — audited commentary-layer coverage
+# Mullā al-Yazdī — translation coverage register
 
-The bilingual layer presently has **111 translated, separately identified excerpts**. It is **not a complete translation** of the approximately 400-page printed edition. Arabic passage and English translation are linked to a specific printed page, but large portions remain untranslated. No printed **هامش** notes by other writers have been attributed to al-Yazdī.
+**Source:** Qum 400-page printed `al-Ḥāshiya ʿalā Tahdhīb al-Manṭiq`, with identifiable separate `شرح` and `هامش` layers: https://ablibrary.net/book_content/b/12170/1?lang=ar . Only the main commentary is assigned to al-Yazdī; later glosses by other writers are excluded.
 
-| Tahdhīb logic unit | Source pages represented | Translated excerpts | Status |
+**Current verified deliverable:** 121 bilingual **selected excerpts**, not a complete page-by-page translation. A chapter can have several translated selections without possessing full coverage. The translation status of each division remains incomplete unless the entire Arabic source for that division is continuously translated and checked.
+
+| Logic division | Printed source pages represented | Translated selections | Scope |
 |---|---|---:|---|
-| L.02 | 14, 15, 16, 17, 18, 19 | 11 | Selected; full commentary section not certified translated |
-| L.03 | 22, 23, 24, 25, 26, 27 | 11 | Selected; full commentary section not certified translated |
-| L.04 | 30, 31 | 3 | Selected; full commentary section not certified translated |
-| L.05 | 32, 33, 34, 35 | 5 | Selected; full commentary section not certified translated |
-| L.06 | 36, 37 | 2 | Selected; full commentary section not certified translated |
-| L.07 | 46, 47 | 9 | Selected; full commentary section not certified translated |
-| L.08 | 48, 49 | 9 | Selected; full commentary section not certified translated |
-| L.09 | 50 | 9 | Selected; full commentary section not certified translated |
-| L.11 | 59, 60, 61, 62, 63, 64 | 29 | Selected; full commentary section not certified translated |
-| L.10 | 54, 56, 57, 58 | 23 | Selected; full commentary section not certified translated |
+| L.02 | 14, 15, 16, 17, 18, 19 | 11 | Source-linked excerpts; not complete section |
+| L.03 | 22, 23, 24, 25, 26, 27 | 11 | Source-linked excerpts; not complete section |
+| L.04 | 30, 31 | 3 | Source-linked excerpts; not complete section |
+| L.05 | 32, 33, 34, 35 | 5 | Source-linked excerpts; not complete section |
+| L.06 | 36, 37 | 2 | Source-linked excerpts; not complete section |
+| L.07 | 46, 47 | 9 | Source-linked excerpts; not complete section |
+| L.08 | 48, 49 | 9 | Source-linked excerpts; not complete section |
+| L.09 | 50 | 9 | Source-linked excerpts; not complete section |
+| L.11 | 59, 60, 61, 62, 63, 64 | 29 | Source-linked excerpts; not complete section |
+| L.10 | 54, 56, 57, 58 | 23 | Source-linked excerpts; not complete section |
+| L.12 | 65, 66, 67, 68 | 10 | Source-linked excerpts; not complete section |
 
-The main **شرح** and the later **هامش** are distinguished in the searchable Arabic witness, https://ablibrary.net/book_content/b/12170/1?lang=ar . No incomplete translation is presented as a fully translated chapter. The underlying Tahdhīb Arabic, translations and canonical PDFs have not been rewritten.
+**Untranslated divisions:** L.01 and L.13–L.19; and substantial unselected parts of previously represented divisions, including L.10–L.12. The full historical commentary cannot be called complete until the entire primary شرح is translated and paragraph-aligned. The presence of a 400-page digitized volume does not mean all 400 printed pages belong to al-Yazdī’s main commentary; pages with separately attributed glosses must be excluded from his translation count.
 
-Next untranslated main source: Qum p.55 has only a short fragment of al-Yazdī’s text alongside later marginal notes; the systematic translation beyond p.64, through conditional propositions, contradiction, conversion, syllogistic figures, demonstration and final sciences remains to be undertaken. Translation completeness must be measured by contiguous source-page coverage, not the number of isolated excerpts.
+**Next source sequence for continued work:** the remaining sections of conditional propositions, opposition, conversion, categorical and conditional syllogisms, the five arts, and the final chapters. Keep historical necessity separate from modern nonmodal truth-functional models.
