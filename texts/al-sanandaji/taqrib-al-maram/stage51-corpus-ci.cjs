@@ -4,7 +4,7 @@ const path=require('node:path');
 const vm=require('node:vm');
 const assert=require('node:assert/strict');
 const dir=__dirname;
-const scripts=['data.js','stage51-cumulative-II015-II054.js','stage51-cumulative-II055-II114.js','stage51-cumulative-II115-II164.js','stage51-cumulative-II165-II214.js','stage51-cumulative-II215-II247.js','stage51-cumulative-II248-II280.js','stage51-cumulative-II281-II297.js','stage51-cumulative-II298-II314.js','stage51-wasim-preface.js','stage48-source-revisions-II035-II044.js','stage50-source-checked-working-readings.js','stage50-mixture-continuation-II053-II054.js'];
+const scripts=['data.js','stage51-cumulative-II015-II054.js','stage51-cumulative-II055-II114.js','stage51-cumulative-II115-II164.js','stage51-cumulative-II165-II214.js','stage51-cumulative-II215-II247.js','stage51-cumulative-II248-II280.js','stage51-cumulative-II281-II297.js','stage51-cumulative-II298-II314.js','stage51-wasim-preface.js','stage48-source-revisions-II035-II044.js','stage50-source-checked-working-readings.js','stage50-mixture-continuation-II053-II054.js','stage52-source-review-II055-II057.js'];
 const ctx=vm.createContext({window:{GNAMMA_BOOK:{id:'taqrib',units:[]}}});
 for(const file of scripts){const source=fs.readFileSync(path.join(dir,file),'utf8');vm.runInContext(source,ctx,{filename:file,timeout:10000});}
 const book=ctx.window.GNAMMA_BOOK;
@@ -23,10 +23,13 @@ for(const u of pages){assert.equal(u.pdf,u.page+295,'Printed/physical source off
 assert(pages.find(u=>u.page===41).english.includes('lenticular'),'Corrected sphericity source reading at II:41');
 assert(pages.find(u=>u.page===49).english.includes('mountains'),'II:49 newer source reading loaded');
 assert(pages.find(u=>u.page===54).english.includes('relative'),'II:54 newer mixture passage loaded');
+assert(pages.find(u=>u.page===55).english.includes('external'),'II:55 expanded relative balance source reading loaded');
+assert(pages.find(u=>u.page===56).english.includes('fourth clime'),'II:56 clime debate source reading loaded');
+assert(pages.find(u=>u.page===57).english.includes('animal'),'II:57 classification source reading loaded');
 const firstCount=pages.reduce((n,u)=>n+(u.layers?.margins?.length||0),0);
 for(const file of scripts.slice(1))vm.runInContext(fs.readFileSync(path.join(dir,file),'utf8'),ctx,{filename:file,timeout:10000});
 const after=book.units.filter(u=>u.volume==='II'&&u.page>=15&&u.page<=314&&u.id==='P2.'+String(u.page).padStart(3,'0'));
 assert.equal(after.length,300,'Idempotent source imports');
 assert.equal(after.reduce((n,u)=>n+(u.layers?.margins?.length||0),0),firstCount,'No duplicated glosses after reload');
 for(const f of ['index.html','cumulative.html']){const html=fs.readFileSync(path.join(dir,f),'utf8');const ids=scripts.slice(1).map(x=>html.indexOf('src="'+x+'"'));assert(ids.every((k,i)=>k>=0&&(i===0||k>ids[i-1])),'Correct chronological script order in '+f);}
-console.log('Sanandajī Stage51 PASS: 300 page units, 100 attempted full-span upper drafts, 200 provisional, 66 lower page spans, 97 joined notes, 4 Wasīm preface leaves, no duplicated margins.');
+console.log('Sanandajī Stage51/52 PASS: 300 page units, 100 attempted full-span upper drafts, 200 provisional, 66 lower page spans, 97 joined notes, 4 Wasīm preface leaves, no duplicated margins.');
