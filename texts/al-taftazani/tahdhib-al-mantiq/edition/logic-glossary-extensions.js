@@ -1165,12 +1165,158 @@ const contradictionConversionTerms=[
     "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī Qum pp.70–84 main شرح; digital print transcribed, photos and manuscripts not collated"
   }
 ];
+const syllogismTerms=[
+  {
+    "ar": "القياس",
+    "en": "Syllogism",
+    "explanation": "A structured composite of propositions whose necessary conclusion follows from that arrangement itself, not by adding an external premise.",
+    "page": 86,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/86?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  },
+  {
+    "ar": "القول المؤلف",
+    "en": "Composed discourse",
+    "explanation": "A meaningful ordered arrangement, not simply a plurality of expressions; it points to the formal constituent of an argument.",
+    "page": 86,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/86?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  },
+  {
+    "ar": "الجزء الصوري",
+    "en": "Formal constituent",
+    "explanation": "The inferential arrangement or figure of a proof, as distinct from the propositional matter it organizes.",
+    "page": 86,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/86?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  },
+  {
+    "ar": "لذاته",
+    "en": "Through itself",
+    "explanation": "The result follows by virtue of the premises' own arrangement rather than from an additional principle external to them.",
+    "page": 87,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/87?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  },
+  {
+    "ar": "قياس المساواة",
+    "en": "Syllogism of equality",
+    "explanation": "An inference from A=B and B=C to A=C requiring, in this source analysis, an explicit extra transitivity premise.",
+    "page": 87,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/87?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  },
+  {
+    "ar": "المقدمة الخارجية",
+    "en": "External premise",
+    "explanation": "A principle not included in the displayed premises but required for the conclusion to follow, excluding a strict intrinsic syllogism.",
+    "page": 87,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/87?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  },
+  {
+    "ar": "النتيجة",
+    "en": "Conclusion",
+    "explanation": "The proposition necessarily resulting from a properly organized syllogism.",
+    "page": 87,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/87?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  },
+  {
+    "ar": "الاقتراني",
+    "en": "Conjunctive syllogism",
+    "explanation": "An argument whose consequent material occurs in the premises but not in the complete form of the final conclusion.",
+    "page": 87,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/87?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  },
+  {
+    "ar": "الاستثنائي",
+    "en": "Exceptive syllogism",
+    "explanation": "An argument expressly containing the conclusion or its contradictory in a premise component introduced by an exceptive marker such as lākinn.",
+    "page": 87,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/87?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  },
+  {
+    "ar": "الأصغر",
+    "en": "Minor term",
+    "explanation": "The term that becomes subject of the conclusion in a categorical syllogism; typically narrower in extension.",
+    "page": 88,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/88?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  },
+  {
+    "ar": "الأكبر",
+    "en": "Major term",
+    "explanation": "The term that becomes predicate of the conclusion; typically wider in extension.",
+    "page": 88,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/88?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  },
+  {
+    "ar": "الأوسط",
+    "en": "Middle term",
+    "explanation": "The recurring term through which the two premises are linked and which is absent from the conclusion.",
+    "page": 88,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/88?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  },
+  {
+    "ar": "الشكل الأول",
+    "en": "First syllogistic figure",
+    "explanation": "The figure regarded as directly evident and used to establish productivity of the other figures.",
+    "page": 89,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/89?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  },
+  {
+    "ar": "فعلية الصغرى",
+    "en": "Actuality of the minor premise",
+    "explanation": "The requirement that the minor actually fall under the middle term before the major predicate is transmitted to it.",
+    "page": 90,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/90?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  },
+  {
+    "ar": "كلية الكبرى",
+    "en": "Universality of the major premise",
+    "explanation": "A condition of productive first-figure and second-figure syllogisms, preventing the reasoning from using only an unrelated subset of the middle.",
+    "page": 90,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/90?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  },
+  {
+    "ar": "اختلاف المقدمتين في الكيف",
+    "en": "Opposite premise qualities",
+    "explanation": "In the second figure one premise must affirm and the other deny; same-quality pairs can have conflicting results in different matters.",
+    "page": 92,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/92?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  },
+  {
+    "ar": "رد الشكل الثاني",
+    "en": "Reduction of the second figure",
+    "explanation": "The second figure is validated via reductio, conversion of its major, or conversion of minor and rearrangement, subject to mood restrictions.",
+    "page": 94,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/94?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  },
+  {
+    "ar": "الشكل الثالث",
+    "en": "Third syllogistic figure",
+    "explanation": "A syllogistic figure where an actual affirmative minor and at least one universal premise are required for the shared middle to transmit predicates.",
+    "page": 94,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/94?lang=ar",
+    "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
+  }
+];
 const lemmaKey=t=>prior.norm(t.ar)+' ⟐ '+t.en.toLocaleLowerCase();
 const seen=new Set(prior.terms.map(lemmaKey));
 const terms=prior.terms.slice();
-for(const term of [...extra,...supplementary,...universals,...speciesTerms,...logicalUniversalsAndPropositions,...modalConditionalTerms,...contradictionConversionTerms]){
+for(const term of [...extra,...supplementary,...universals,...speciesTerms,...logicalUniversalsAndPropositions,...modalConditionalTerms,...contradictionConversionTerms,...syllogismTerms]){
  const key=lemmaKey(term);
  if(!seen.has(key)){terms.push(term);seen.add(key)}
 }
-window.GNAMMA_TAHDHIB_GLOSSARY=Object.freeze({...prior,terms,version:'logic-plus-yazdi-conversion-v7',historicallyCollated:false});
+window.GNAMMA_TAHDHIB_GLOSSARY=Object.freeze({...prior,terms,version:'logic-plus-yazdi-syllogism-v8',historicallyCollated:false});
 })();
