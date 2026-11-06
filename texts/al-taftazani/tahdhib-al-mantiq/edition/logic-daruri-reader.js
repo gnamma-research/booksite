@@ -114,7 +114,8 @@ function openSheet(mode){
    ['Text layers','Matn / Matn + sharḥ',()=>openSheet('layers')]
   ]);
   group(body,'References & personal desk',[
-   ['Dictionary','Editorial terminology and linked locations',()=>legacy('Dictionary')],
+   ['Dictionary','Editorial terms and commentary citations',()=>legacy('Dictionary')],
+   ['Critical witnesses & coverage','Sources, variants, publication status',()=>{window.location.href='critical-status.html'}],
    ['Subject index','Source-linked thematic topics',()=>legacy('Subject index')],
    ['Saved & history','Bookmarks and reading positions',()=>legacy('Saved')],
    ['My notes','Private passage annotations',()=>legacy('Notes')],
