@@ -8,6 +8,10 @@ const $=q=>document.querySelector(q);
 const el=(tag,cls,value)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(value!==undefined)x.textContent=value;return x};
 const norm=lexical.norm;
 const glossary=lexical.terms.slice();
+// Logic glossary also indexes translated al-Yazdī snippets, as a distinct source layer.
+// The original kalām glossary continues to index only its own primary corpus.
+const commentary=()=>isLogicGlossary()?(window.GNAMMA_YAZDI_LAYER?.entries||[]):[];
+function isLogicGlossary(){return reader.isDivision===true;}
 const occurrences=glossary.map(term=>{
  const needle=norm(term.ar),ids=[];
  for(const unit of corpus.units){
@@ -38,7 +42,7 @@ function show(trigger){
  const close=el('button','gn-terms-close','×');close.type='button';close.title='Close glossary';
  close.setAttribute('aria-label','Close glossary');close.addEventListener('click',hide);
  head.append(title,close);
- const explanation=el('p','gn-terms-warning','Introductory editorial definitions, not quotations from Taftāzānī or a historically collated technical dictionary. The term locations refer to the current source text.');
+ const explanation=el('p','gn-terms-warning',reader.isDivision?'Editorial definitions with source-linked matn and selected al-Yazdī commentary locators. This is not a critically collated historical dictionary.':'Introductory editorial definitions, not quotations from Taftāzānī or a historically collated technical dictionary. The term locations refer to the current source text.');
  const field=el('label','gn-terms-search');field.append(el('span',null,'Find Arabic or English terminology'));
  const input=el('input');input.type='search';input.id='gn-terms-query';input.autocomplete='off';
  input.placeholder='e.g. ماهية · necessity · syllogism';field.append(input);
@@ -54,6 +58,32 @@ function show(trigger){
    const top=el('div','gn-terms-term-row'),arabic=el('h3','gn-terms-ar',t.ar);arabic.lang='ar';arabic.dir='rtl';
    const english=el('strong','gn-terms-en',t.en);top.append(arabic,english);
    row.append(top,el('p','gn-terms-gloss',t.explanation));
+   if(commentary().length){
+    const glossHits=commentary().filter(p=>norm(p.arabic).includes(norm(t.ar))||
+      (t.sourceUrl&&Number(t.page)===Number(p.page)&&norm(p.arabic).includes(norm(t.ar).slice(0,3))));
+    if(glossHits.length){
+      const group=el('div','gn-terms-occurrences');
+      group.append(el('span','gn-terms-occurs-label','al-Yazdī · '+glossHits.length+' translated source selection'+(glossHits.length===1?'':'s')+': '));
+      for(const p of glossHits.slice(0,12)){
+       const link=el('a','gn-terms-source-link','p. '+p.page+' · '+p.id);
+       link.href=p.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';
+       link.title='View the original printed commentary source';group.append(link);
+       if(window.GnammaYazdiLayer?.goTo){
+        const read=el('button','gn-terms-source-link','Read '+p.id);
+        read.type='button';read.setAttribute('aria-label','Read al-Yazdī passage '+p.id+' in the reader');
+        read.addEventListener('click',()=>{hide();window.GnammaYazdiLayer.goTo(p.id)});
+        group.append(read);
+       }
+      }
+      if(glossHits.length>12)group.append(el('span','gn-terms-more','+'+(glossHits.length-12)+' more'));
+      row.append(group);
+    }
+    if(t.sourceUrl&&!glossHits.length){
+      const source=el('a','gn-terms-source-link','Commentary source · p. '+t.page);
+      source.href=t.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';
+      row.append(source);
+    }
+   }
    if(occurrences[i].length){
     const locations=el('div','gn-terms-occurrences');
     locations.append(el('span','gn-terms-occurs-label',occurrences[i].length+' text location'+(occurrences[i].length===1?'':'s')+': '));

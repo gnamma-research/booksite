@@ -137,6 +137,7 @@ function helpPanel(){open('Reader help',root=>{
  root.append(el('h3',null,'Source integrity'));
  root.append(el('p',null,'Only the source Arabic and editorial English in this Tahdhīb edition are displayed; the reading shell does not change any source consonants, introduce interpolations, or claim manuscript collation.'));
  resource(root,'Current editorial status',isLogic?'LOGIC_AUDIT.md':'EDITORIAL_STATUS.md');
+ if(isLogic)resource(root,'Al-Yazdī · witness and translation register','critical-status.html');
  resource(root,'Reader implementation comparison','../../TAHDHIB_DARURI_READER_PARITY_2026-11-03.md');
  resource(root,'Book overview','../');
  resource(root,'Gnamma Home','../../../../');

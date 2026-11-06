@@ -25,7 +25,9 @@ const groups=isLogic?[
   ['Contradiction and opposition','التناقض',['التناقض','النقيض','التضاد']],
   ['Conversion and contraposition','العكس',['العكس المستوي','عكس النقيض','تنعكس']],
   ['Syllogism and figures','القياس والأشكال',['القياس','الشكل الأول','الشكل الثاني','الشكل الثالث','الشكل الرابع']],
-  ['Induction and analogy','الاستقراء والتمثيل',['الاستقراء','التمثيل']],
+  ['Induction and analogy','الاستقراء والتمثيل',['الاستقراء','التمثيل','الدوران','الترديد']],
+  ['Analogy, cause and the uṣūl connection','العلة والفرع والأصل',['التمثيل','العلة','الأصل','الفرع','الدوران']],
+  ['Five arts and epistemic matter','الصناعات الخمس',['البرهان','الجدل','الخطابة','الشعر','المغالطة','التخييل']],
   ['Demonstration and certainty','البرهان واليقين',['البرهان','اليقين','القطعيات','الضروريات']],
   ['Demonstrative sciences','أجزاء العلوم',['أجزاء العلوم','مبادئ','موضوعات']],
  ]}
@@ -118,6 +120,27 @@ function open(trigger){
      button.append(citation,excerpt);
      button.addEventListener('click',()=>{close();api.go(u.page,'u-'+u.id.replace(/[^a-zA-Z0-9-]/g,'-'))});
      body.append(button);
+    }
+    if(isLogic&&window.GNAMMA_YAZDI_LAYER?.entries?.length){
+     const glosses=window.GNAMMA_YAZDI_LAYER.entries.filter(p=>
+      t.keys.some(k=>norm(k).length>2&&(norm(p.arabic).includes(norm(k))||norm(p.english).includes(norm(k)))));
+     if(glosses.length){
+      body.append(mk('p','gn-subject-more','Al-Yazdī · '+glosses.length+' translated source-linked passages (not complete commentary)'));
+      for(const p of glosses.slice(0,16)){
+       const link=mk('a','gn-subject-locator');
+       link.href=p.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';
+       link.append(mk('span','gn-subject-source','Sharḥ p. '+p.page+' · '+p.unit));
+       link.append(mk('span','gn-subject-excerpt',p.english.slice(0,140)));
+       body.append(link);
+       if(window.GnammaYazdiLayer?.goTo){
+        const button=mk('button','gn-subject-locator');button.type='button';
+        button.append(mk('span','gn-subject-source','Read translated '+p.id));
+        button.addEventListener('click',()=>{close();window.GnammaYazdiLayer.goTo(p.id)});
+        body.append(button);
+       }
+      }
+      if(glosses.length>16)body.append(mk('p','gn-subject-more','Showing 16 of '+glosses.length+' al-Yazdī selections.'));
+     }
     }
     if(t.hits.length>55)body.append(mk('p','gn-subject-more','Showing 55 source-linked matches; use main search for all '+t.hits.length+' clauses.'));
     item.append(body);results.append(item);
