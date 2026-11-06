@@ -580,8 +580,170 @@ const speciesTerms=[
     "sourceLayer": "Main al-Yazdī Qum searchable commentary pp39–47, not photographic or manuscript-collated"
   }
 ];
+const logicalUniversalsAndPropositions=[
+  {
+    "ar": "الكلي المنطقي",
+    "en": "Logical universal",
+    "explanation": "The concept 'applicable to many without contradiction', itself an intellectual second intention; not a common nature existing as an individual object.",
+    "page": 48,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/48?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "الكلي الطبيعي",
+    "en": "Natural universal",
+    "explanation": "The nature considered in itself (such as human qua human) to which universality is attributed in intellect; its external manner of existence is disputed.",
+    "page": 49,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/49?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "الكلي العقلي",
+    "en": "Intellectual universal",
+    "explanation": "The compound of a nature and the attribution of universality, e.g. human-as-universal, present as such in the intellect.",
+    "page": 49,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/49?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "وجود الطبيعي",
+    "en": "Existence of the natural universal",
+    "explanation": "The disputed claim that a common nature exists in individuals, not to be confused with the obviously existing individuals; al-Yazdī adds a reservation.",
+    "page": 49,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/49?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "المعرِّف",
+    "en": "Defining expression",
+    "explanation": "What brings about conception of a definable thing through an essential or distinguishing account; normally should be coextensive and better known.",
+    "page": 50,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/50?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "المعرَّف",
+    "en": "Object to be defined",
+    "explanation": "The definendum whose conception is sought, distinct from the defining expression; the original consonantal writing may be the same.",
+    "page": 50,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/50?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "الحد التام",
+    "en": "Complete essential definition",
+    "explanation": "An essential account employing the proximate genus and appropriate proximate differentia.",
+    "page": 50,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/50?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "الحد الناقص",
+    "en": "Incomplete essential definition",
+    "explanation": "An essential distinguishing account without the proximate genus, e.g. with the differentia alone or a remote genus.",
+    "page": 50,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/50?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "الرسم التام",
+    "en": "Complete descriptive definition",
+    "explanation": "An account employing a property and the proximate genus rather than a strictly essential differentia alone.",
+    "page": 50,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/50?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "الرسم الناقص",
+    "en": "Incomplete descriptive definition",
+    "explanation": "An accidental distinguishing account that does not contain the proximate genus.",
+    "page": 50,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/50?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "التعريف اللفظي",
+    "en": "Lexical explanation",
+    "explanation": "An indication of which already-known meaning a word designates, not scientific acquisition of an entirely unknown essence.",
+    "page": 51,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/51?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "القول المعقول",
+    "en": "Mental proposition / mental composite",
+    "explanation": "The conceptual composite to which the logical definition of proposition applies even without verbal utterance.",
+    "page": 54,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/54?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "الرابطة",
+    "en": "Copula / predicative relation",
+    "explanation": "Strictly the predicative relation; by transferred naming also its verbal signifier in a spoken proposition.",
+    "page": 56,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/56?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "الرابطة الزمانية",
+    "en": "Temporal copula",
+    "explanation": "A copula indicating a predicative relation situated in one of the three times.",
+    "page": 56,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/56?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "الرابطة غير الزمانية",
+    "en": "Nontemporal copula",
+    "explanation": "A copula without time specification; the text reports al-Fārābī's account of Arabic huwa/hiya used for this purpose.",
+    "page": 56,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/56?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "السور",
+    "en": "Quantifier",
+    "explanation": "A word specifying whether a categorical predication concerns every or some instances of the subject.",
+    "page": 57,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/57?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "المهملة",
+    "en": "Indefinite proposition",
+    "explanation": "A categorical judgment without explicit quantity; classical treatment associates it with the particular under assumptions about instances.",
+    "page": 58,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/58?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "القضية الخارجية",
+    "en": "Externally actual categorical proposition",
+    "explanation": "An affirmative categorical predication whose subject is considered among actual external instances.",
+    "page": 58,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/58?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "القضية الحقيقية",
+    "en": "Suppositional categorical proposition",
+    "explanation": "A predication concerning everything that would qualify as a subject if externally existent, restricted in this account to possible individuals.",
+    "page": 58,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/58?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  },
+  {
+    "ar": "القضية الذهنية",
+    "en": "Mental categorical proposition",
+    "explanation": "A predication of a concept as framed in the intellect, as in a judgement about the impossibility of an imagined partner to God.",
+    "page": 58,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/58?lang=ar",
+    "sourceLayer": "Qum printed main al-Yazdī commentary, searchable digital transcription; no independent photo/manuscript collation"
+  }
+];
 const seen=new Set(prior.terms.map(t=>prior.norm(t.ar)));
 const terms=prior.terms.slice();
-for(const term of [...extra,...supplementary,...universals,...speciesTerms]){if(!seen.has(prior.norm(term.ar))){terms.push(term);seen.add(prior.norm(term.ar))}}
-window.GNAMMA_TAHDHIB_GLOSSARY=Object.freeze({...prior,terms,version:'logic-plus-yazdi-species-v4',historicallyCollated:false});
+for(const term of [...extra,...supplementary,...universals,...speciesTerms,...logicalUniversalsAndPropositions]){if(!seen.has(prior.norm(term.ar))){terms.push(term);seen.add(prior.norm(term.ar))}}
+window.GNAMMA_TAHDHIB_GLOSSARY=Object.freeze({...prior,terms,version:'logic-plus-yazdi-definition-v5',historicallyCollated:false});
 })();
