@@ -39,11 +39,11 @@ El-Rouayheb identifies this as a **ḥāshiya** (gloss), rather than a complete 
 - El-Rouayheb 2019: https://schwabe.ch/media/pdf/bc/d5/9c/MEMP2_El-Rouayheb_The-Development-of-Arabic-Logic-el.pdf
 
 ## Actual bilingual coverage
-The website's `yazdi-layer-data.js` contains **177 selected passages** in all 19 logic divisions. **This is not 167 completed pages or 19 complete chapters.** The earliest previous source selections span pp.14–68 and later examples span pp.70–114. Sections are represented by samples, often only a sentence or paragraph per printed page.
+The website's `yazdi-layer-data.js` contains **177 selected passages** in all 19 logic divisions. **This is not 177 completed pages or 19 complete chapters.** The earliest previous source selections span pp.14–68 and later examples span pp.70–114. Sections are represented by samples, often only a sentence or paragraph per printed page.
 
 The additional source-backed work on 2026-11-06 includes continuous treatment of the logical form of analogy, the **three necessary premises**, the contested **causal premise**, and **dawarān** as a proposed indication of a cause (Q p.107); one further passage explaining five arts by their **epistemic material** (Q p.110); the transferred naming of induction (Q p.105); and the previously omitted concluding sentence on a variant in the definition of the questions of a science (Q p.114).
 
-**Printed p.114** is represented as a complete transcribed sequence of main-ḥāshiya comments in the searchable text (three established selection blocks plus the newly added variant qualification). Its translation remains **single-print checked, not critically certified**. Verifying original page boundaries, headings and printed layout against Q⁽¹⁾ and T is still necessary before it can be declared a certified page.
+**Printed p.114** is represented by several consecutive selected passages; the completeness of this page's entire main-commentary content remains to be established against images. The text of main-ḥāshiya comments in the searchable text (three established selection blocks plus the newly added variant qualification). Its translation remains **single-print checked, not critically certified**. Verifying original page boundaries, headings and printed layout against Q⁽¹⁾ and T is still necessary before it can be declared a certified page.
 
 ## Four key apparatus notes for review
 **CR-01 · Matn vs ḥāshiya vs marginalia.** Introductory `فصل`, `خاتمة`, and quoted `قوله` lemmata are not all new prose by Yazdī; a `هوامش` section may quote `التقريب` or a named glossator. Each edited segment must store `speaker` and `source_layer` before publication.
