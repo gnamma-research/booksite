@@ -38,6 +38,10 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
 <li><strong>Q pp.105–107:</strong> a definition of induction or analogy must distinguish the method/operation from the complete inferential <i>ḥujja</i>. The causal premise of analogy points to jurisprudential argumentation.</li>
 <li><strong>Q p.110:</strong> the five arts are classified by the epistemic or imaginative force of their matter, not merely by modern logical validity.</li>
 </ul>
+<h2>Continuous main-ḥāshiya translation</h2>
+<p>One consecutive translated section is available: Qum printed pages <strong>22–29</strong>, the main explanation of signification and kinds of expressions (logic L.03). It replaces eleven overlapping short selections within the reader, without changing the historical count of <strong>177 selected excerpts</strong>. This is a transcription of the source's digitally searchable main <span lang="ar" dir="rtl">شرح</span>, not a manuscript-certified edition. Other writers' <span lang="ar" dir="rtl">هامش</span> material is excluded.</p>
+<p><strong>Open textual problem:</strong> Qum page 24 has the searchable reading <span lang="ar" dir="rtl">ولا لازم ذهني</span> in an argument requiring an implied concomitant. The passage is preserved, flagged and not conjecturally emended. <a href="YAZDI_TRANSLATION_COVERAGE.md">Read the eight-page coverage and critical notes</a>.</p>
+<div class="table-wrap"><table><thead><tr><th>Qum page</th><th>Editorial topic</th><th>Text status</th></tr></thead><tbody id="continuous-l03"><tr><td colspan="3">Reading source page register…</td></tr></tbody></table></div>
 <h2>Qum and Gujarat: parallel printed readings</h2>
 <p class="small">The table below is generated from nine checked textual comparisons and records only short distinguishing readings. Scanned pages and manuscript witnesses are <strong>not</strong> yet collated. Modern marginalia are excluded.</p>
 <div class="table-wrap"><table><thead><tr><th>Q locator</th><th>I13 page</th><th>Q reading</th><th>I13 reading</th><th>Status</th></tr></thead><tbody id="parallel-witnesses"><tr><td colspan="5">Loading parallels…</td></tr></tbody></table></div>
@@ -48,9 +52,23 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
 <div class="footer">These editorial headings are modern finding aids, not newly discovered authorial rubrics. The original source is retained separately in the matn and commentary data. Updated 6 November 2026.</div>
 </main>
 <script src="yazdi-layer-data.js?v=20261106-yazdi8"></script>
+<script src="yazdi-continuous-l03-data.js?v=20261106-l03"></script>
 <script>
 (function(){
  const d=window.GNAMMA_YAZDI_LAYER;if(!d)return;
+ const continuous=window.GNAMMA_YAZDI_CONTIGUOUS_L03;
+ const ledger=document.getElementById('continuous-l03');
+ if(continuous&&ledger){
+  ledger.replaceChildren();
+  for(const part of continuous.sourcePages){
+   const tr=document.createElement('tr');
+   const p=document.createElement('td');
+   const a=document.createElement('a');a.href=part.sourceUrl;a.textContent='p.'+part.page;p.append(a);
+   const title=document.createElement('td');title.textContent=part.title;
+   const state=document.createElement('td');state.textContent=part.flags?.length?'Unverified reading; crux flagged':'Searchable main text translated; scan check pending';
+   tr.append(p,title,state);ledger.append(tr);
+  }
+ }
  const counts=new Map();for(const e of d.entries){if(!counts.has(e.unit))counts.set(e.unit,[]);counts.get(e.unit).push(e)}
  const titles=[
  'Prologue and two sciences','Knowledge and logic','Signification of expressions','Particular and universal','Four relations of universals','Genus','Species, differentia, property, accident','Three kinds of universal','Definition and description','Categorical propositions','Modal propositions','Conditional propositions','Contradiction','Simple conversion','Contraposition','Syllogistic figures','Conditional and exceptive inference','Induction, analogy, five arts','Subject, principles, questions of science'
