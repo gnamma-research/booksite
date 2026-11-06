@@ -328,8 +328,138 @@ const supplementary=[
     "sourceLayer": "al-Yazdī main commentary in Q; India 2013 printed comparator, no manuscript certification"
   }
 ];
+const universals=[
+  {
+    "ar": "المفهوم",
+    "en": "Concept",
+    "explanation": "What is understood from an expression; the same item considered as intended is its maʿnā and as signified its madlūl.",
+    "page": 30,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/30?lang=ar",
+    "sourceLayer": "al-Yazdī main ḥāshiya Q30–37 working searchable text, photograph/manuscript unverified"
+  },
+  {
+    "ar": "المدلول",
+    "en": "Signified",
+    "explanation": "What an expression signifies, considered under its relation to the signifying expression.",
+    "page": 30,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/30?lang=ar",
+    "sourceLayer": "al-Yazdī main ḥāshiya Q30–37 working searchable text, photograph/manuscript unverified"
+  },
+  {
+    "ar": "فرض الصدق",
+    "en": "Conceivable applicability",
+    "explanation": "The intellect's allowance that a predicate could apply to multiple things; not mere imaginative supposition without logical consistency.",
+    "page": 31,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/31?lang=ar",
+    "sourceLayer": "al-Yazdī main ḥāshiya Q30–37 working searchable text, photograph/manuscript unverified"
+  },
+  {
+    "ar": "الجزئي الحقيقي",
+    "en": "Real particular",
+    "explanation": "A concept whose extension cannot coherently be multiplied; distinct from the relatively narrower universal.",
+    "page": 35,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/35?lang=ar",
+    "sourceLayer": "al-Yazdī main ḥāshiya Q30–37 working searchable text, photograph/manuscript unverified"
+  },
+  {
+    "ar": "الجزئي الإضافي",
+    "en": "Relative particular",
+    "explanation": "Something narrower relative to a more comprehensive concept; it may itself be universal, as human is to animal.",
+    "page": 35,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/35?lang=ar",
+    "sourceLayer": "al-Yazdī main ḥāshiya Q30–37 working searchable text, photograph/manuscript unverified"
+  },
+  {
+    "ar": "التباين الكلي",
+    "en": "Complete disjointness",
+    "explanation": "Two concepts with no shared instances under a stipulated extensional interpretation.",
+    "page": 32,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/32?lang=ar",
+    "sourceLayer": "al-Yazdī main ḥāshiya Q30–37 working searchable text, photograph/manuscript unverified"
+  },
+  {
+    "ar": "التباين الجزئي",
+    "en": "Partial exclusion",
+    "explanation": "Two concepts each having some instances outside the other's range; may cover disjointness or partial overlap in al-Yazdī's account.",
+    "page": 34,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/34?lang=ar",
+    "sourceLayer": "al-Yazdī main ḥāshiya Q30–37 working searchable text, photograph/manuscript unverified"
+  },
+  {
+    "ar": "المساواة",
+    "en": "Coextension",
+    "explanation": "Two concepts universal-predicable of exactly the same subjects in both directions.",
+    "page": 32,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/32?lang=ar",
+    "sourceLayer": "al-Yazdī main ḥāshiya Q30–37 working searchable text, photograph/manuscript unverified"
+  },
+  {
+    "ar": "العموم والخصوص مطلقا",
+    "en": "Unrestricted inclusion",
+    "explanation": "One concept is predicated of all instances of a narrower concept but not vice versa, as animal relative to human.",
+    "page": 32,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/32?lang=ar",
+    "sourceLayer": "al-Yazdī main ḥāshiya Q30–37 working searchable text, photograph/manuscript unverified"
+  },
+  {
+    "ar": "العموم والخصوص من وجه",
+    "en": "Partial overlap",
+    "explanation": "Two concepts agree in some instances while each also applies beyond the other.",
+    "page": 32,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/32?lang=ar",
+    "sourceLayer": "al-Yazdī main ḥāshiya Q30–37 working searchable text, photograph/manuscript unverified"
+  },
+  {
+    "ar": "النقيض",
+    "en": "Complement / contradictory",
+    "explanation": "In the discussion of the four universal relations, the complement of a concept (non-human), not merely the opposite truth value of a proposition.",
+    "page": 33,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/33?lang=ar",
+    "sourceLayer": "al-Yazdī main ḥāshiya Q30–37 working searchable text, photograph/manuscript unverified"
+  },
+  {
+    "ar": "الجنس القريب",
+    "en": "Proximate genus",
+    "explanation": "The nearest genus answering the what-it-is question for a species and each nature directly sharing that genus.",
+    "page": 37,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/37?lang=ar",
+    "sourceLayer": "al-Yazdī main ḥāshiya Q30–37 working searchable text, photograph/manuscript unverified"
+  },
+  {
+    "ar": "الجنس البعيد",
+    "en": "Remote genus",
+    "explanation": "A genus more distant than the nearest one; in the main commentary body is the illustrative case.",
+    "page": 37,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/37?lang=ar",
+    "sourceLayer": "al-Yazdī main ḥāshiya Q30–37 working searchable text, photograph/manuscript unverified"
+  },
+  {
+    "ar": "العرض العام",
+    "en": "Common accident",
+    "explanation": "A nonessential predicable not restricted to individuals of one essential nature.",
+    "page": 36,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/36?lang=ar",
+    "sourceLayer": "al-Yazdī main ḥāshiya Q30–37 working searchable text, photograph/manuscript unverified"
+  },
+  {
+    "ar": "الخاصة",
+    "en": "Proper accident / property",
+    "explanation": "A nonessential predicable restricted to one essential nature in the five-predicables classification.",
+    "page": 36,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/36?lang=ar",
+    "sourceLayer": "al-Yazdī main ḥāshiya Q30–37 working searchable text, photograph/manuscript unverified"
+  },
+  {
+    "ar": "الجنس",
+    "en": "Genus",
+    "explanation": "An essential element common to distinct natures and predicable in answer to the what-it-is question.",
+    "page": 36,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/36?lang=ar",
+    "sourceLayer": "al-Yazdī main ḥāshiya Q30–37 working searchable text, photograph/manuscript unverified"
+  }
+];
 const seen=new Set(prior.terms.map(t=>prior.norm(t.ar)));
 const terms=prior.terms.slice();
-for(const term of [...extra,...supplementary]){if(!seen.has(prior.norm(term.ar))){terms.push(term);seen.add(prior.norm(term.ar))}}
-window.GNAMMA_TAHDHIB_GLOSSARY=Object.freeze({...prior,terms,version:'logic-plus-yazdi-context-v2',historicallyCollated:false});
+for(const term of [...extra,...supplementary,...universals]){if(!seen.has(prior.norm(term.ar))){terms.push(term);seen.add(prior.norm(term.ar))}}
+window.GNAMMA_TAHDHIB_GLOSSARY=Object.freeze({...prior,terms,version:'logic-plus-yazdi-universals-v3',historicallyCollated:false});
 })();
