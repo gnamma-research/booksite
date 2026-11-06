@@ -1,0 +1,102 @@
+{
+  "schema": "sharh-maqasid-2026-11-07-close-revision",
+  "stage": "R6-SM40-001-009",
+  "revised_records": 9,
+  "arabic_source_characters": 3486,
+  "entire_sharh_arabic_base_characters": 1663485,
+  "source_percentage_revised": 0.21,
+  "stage_target_10_pct_met": false,
+  "verification_limit": "Reread against recovered electronic Arabic excerpts; no direct newly inspected printed text and no manuscript collation. Existing English unchanged in canonical master.",
+  "changes": [
+    {
+      "id": "SM40-001",
+      "title": "Why imamate is discussed in theology",
+      "location": "V:232–233",
+      "arabic_original_untouched": "قال: الفصل الرابع في الإمامة. لا نزاع في أن مباحث الإمامة بعلم الفروع أليق، لرجوعها إلى أن القيام بالإمامة ونصب الإمام الموصوف بالصفات المخصوصة من فروض الكفايات، وهي أمور كلية تتعلق بها مصالح دينية أو دنيوية لا ينتظم الأمر إلا بحصولها، فيقصد الشارع تحصيلها في الجملة من غير أن يقصد حصولها من كل أحد. ولا خفاء في أن ذلك من الأحكام العملية دون الاعتقادية.",
+      "original_english_preserved_in_v5": true,
+      "revised_english": "He says: The fourth chapter concerns the imamate. There is no dispute that its investigations belong more appropriately to the discipline of derivative rulings (*ʿilm al-furūʿ*). For they return to the proposition that undertaking the imamate and appointing an imam qualified by the stipulated attributes are collective obligations (*furūḍ al-kifāya*). Such obligations concern general affairs on which religious or worldly interests depend and without which affairs cannot be properly ordered. The Lawgiver intends their accomplishment in the community as a whole, but not their performance by every individual. Evidently, therefore, these are practical rulings, not doctrines to be believed.",
+      "editorial_note": "Preserves collective obligation as legal classification; أليق ('more appropriate') does not mean entirely outside theology.",
+      "review_status": "Arabic electronic-witness close revision; printed image collation and specialist review outstanding"
+    },
+    {
+      "id": "SM40-002",
+      "title": "The office and its qualifications",
+      "location": "V:233",
+      "arabic_original_untouched": "وقد ذكر في كتبنا الفقهية أنه لا بد للأمة من إمام يحيي الدين ويقيم السنة وينتصف للمظلومين ويستوفي الحقوق ويضعها مواضعها. ويشترط أن يكون مكلفا، مسلما، عدلا، حرا، ذكرا، مجتهدا، شجاعا، ذا رأي وكفاية، سميعا، بصيرا، ناطقا، قريشيا. فإن لم يوجد من قريش من يستجمع الصفات المعتبرة ولي كناني، فإن لم يوجد فرجل من ولد إسماعيل، فإن لم يوجد فرجل من العجم. ولا يشترط أن يكون هاشميا ولا معصوما ولا أفضل من يولى عليهم.",
+      "original_english_preserved_in_v5": true,
+      "revised_english": "Our books of jurisprudence state that the community must have an imam to revive religion, establish the Sunna, obtain justice for the oppressed, recover rights due and place them with their proper holders. It is stipulated that he be legally responsible, Muslim, just, free, male, qualified for independent juristic reasoning, courageous, possessed of sound judgement and competence, hearing, sight and speech, and descended from Quraysh. If no member of Quraysh possessing all the required attributes exists, a man of Kināna is appointed; failing such a person, someone descended from Ishmael; and failing that, a non-Arab. It is not required that he be Hāshimī, immune from sin and error (*maʿṣūm*), or the most excellent among those he governs.",
+      "editorial_note": "This reports conditions stated by the author from jurisprudential texts; it is not a present endorsement of discriminatory eligibility rules. The descending lineage alternatives must not be dropped.",
+      "review_status": "Arabic electronic-witness close revision; printed image collation and specialist review outstanding"
+    },
+    {
+      "id": "SM40-003",
+      "title": "Election, nomination, and a council",
+      "location": "V:233",
+      "arabic_original_untouched": "وتنعقد الإمامة بطرق: أحدها بيعة أهل الحل والعقد من العلماء والرؤساء ووجوه الناس الذين يتيسر حضورهم، من غير اشتراط عدد ولا اتفاق من في سائر البلاد، بل لو تعلق الحل والعقد بواحد مطاع كفت بيعته. والثاني استخلاف الإمام وعهده، وجعله الأمر شورى بمنزلة الاستخلاف، إلا أن المستخلف غير متعين، فيتشاورون ويتفقون على أحدهم. وإذا خلع الإمام نفسه كان كموته، فينتقل الأمر إلى ولي العهد.",
+      "original_english_preserved_in_v5": true,
+      "revised_english": "The imamate is established by several procedures. First is the oath of allegiance (*bayʿa*) of the people entitled to bind and loose—scholars, leaders and prominent persons whose presence can be secured. Neither a fixed number nor concurrence by persons throughout the other lands is required; indeed, if the authority to bind and loose is concentrated in one person whose orders are obeyed, his allegiance suffices. Second is the serving imam's appointment and designation (*ʿahd*) of a successor. His entrusting the matter to a consultative council is tantamount to appointment, save that the person appointed is not yet individually specified: they consult and agree on one among themselves. If the imam removes himself, it is as though he has died, and the office passes to the designated successor.",
+      "editorial_note": "Distinguishes nomination from open-ended consultation and the conditions attached to the designation.",
+      "review_status": "Arabic electronic-witness close revision; printed image collation and specialist review outstanding"
+    },
+    {
+      "id": "SM40-004",
+      "title": "Acquisition by force and the duty of obedience",
+      "location": "V:233",
+      "arabic_original_untouched": "والثالث القهر والاستيلاء. فإذا مات الإمام وتصدى للإمامة من يستجمع شرائطها من غير بيعة واستخلاف، وقهر الناس بشوكته انعقدت الخلافة له. وكذا إذا كان فاسقا أو جاهلا على الأظهر، إلا أنه يعصي بما فعل. ولا يعتبر الشخص إماما بتفرده بشروط الإمامة. ويجب طاعة الإمام ما لم يخالف حكم الشرع، سواء كان عادلا أو جائرا. ولا يجوز نصب إمامين في وقت واحد على الأظهر. وإذا ثبت الإمام بالقهر والغلبة ثم جاء آخر فقهره انعزل وصار القاهر إماما.",
+      "original_english_preserved_in_v5": true,
+      "revised_english": "Third is coercive ascendancy and possession of authority (*qahr wa-stīlāʾ*). When an imam dies and someone fulfilling the qualifications for the office puts himself forward without allegiance or prior designation, then subdues the people through his coercive strength, the caliphate is established for him. According to the more apparent opinion, this is also so if he is corrupt in conduct or ignorant, although he sins through what he has done. A person does not become imam merely by uniquely possessing the qualifications of the imamate. Obedience to the imam is obligatory as long as he does not violate a ruling of the revealed Law, whether he be just or oppressive. According to the more apparent opinion, it is impermissible to appoint two imams at once. If an imam established through coercion and predominance is subsequently overpowered by another, the first is removed and the one who prevailed becomes imam.",
+      "editorial_note": "Records a juristic claim about effective authority, expressly distinguishing validity from moral justification.",
+      "review_status": "Arabic electronic-witness close revision; printed image collation and specialist review outstanding"
+    },
+    {
+      "id": "SM40-005",
+      "title": "Deposition and the qualification attributed to al-Juwaynī",
+      "location": "V:233–234",
+      "arabic_original_untouched": "ولا يجوز خلع الإمام بلا سبب، ولو خلعوه لم ينفذ. وإن عزل نفسه فإن كان لعجزه عن القيام بالأمر انعزل وإلا فلا. ولا ينعزل الإمام بالفسق والإغماء، وينعزل بالجنون وبالعمى والصمم والخرس وبالمرض الذي ينسيه العلوم. قال إمام الحرمين: وإذا جار والي الوقت فظهر ظلمه وغشمه، ولم يرعو لزاجر عن سوء صنيعه بالقول، فلأهل الحل والعقد التواطؤ على ردعه، ولو بشهر السلاح ونصب الحروب.",
+      "original_english_preserved_in_v5": true,
+      "revised_english": "It is not permissible to depose the imam without cause, and an attempted deposition without cause has no effect. If he dismisses himself, he is removed when his reason is incapacity to perform the duties of office; otherwise not. Moral wrongdoing and fainting do not remove him, whereas insanity, blindness, deafness, muteness or an illness causing loss of learned knowledge do. The Imām al-Ḥaramayn [al-Juwaynī] said: 'When the ruler of the time transgresses, and his oppression and violent excess become manifest, and admonition in words does not restrain his misconduct, the people entitled to bind and loose may concert measures to restrain him, even by drawing weapons and initiating wars.'",
+      "editorial_note": "The final permission is cited as al-Juwaynī's opinion, not silently assimilated to every preceding qualification. The quoted text requires external source attribution before definitive publication.",
+      "review_status": "Arabic electronic-witness close revision; printed image collation and specialist review outstanding"
+    },
+    {
+      "id": "SM40-006",
+      "title": "Why the theologians incorporated the subject",
+      "location": "V:234",
+      "arabic_original_untouched": "هذا، ولكن لما شاعت بين الناس في باب الإمامة اعتقادات فاسدة واختلافات، بل اختلافات باردة، سيما من فرق الروافض والخوارج، ومالت كل فئة إلى تعصبات تكاد تفضي إلى رفض كثير من قواعد الإسلام ونقض عقائد المسلمين والقدح في الخلفاء الراشدين، مع القطع بأنه ليس للبحث عن أحوالهم واستحقاقهم وأفضليتهم كثير تعلق بأفعال المكلفين، ألحق المتكلمون هذا الباب بأبواب الكلام. وربما أدرجوه في تعريفه حيث قالوا: هو العلم الباحث عن أصول الصانع والنبوة والإمامة والمعاد وما يتصل بذلك على قانون الإسلام.",
+      "original_english_preserved_in_v5": true,
+      "revised_english": "Nevertheless, when unsound beliefs and disagreements concerning the imamate became widespread among people—indeed, futile disagreements—especially among the factions called Rāfiḍa and Khawārij, and each party inclined toward partisan zeal that nearly led it to reject many foundations of Islam, overturn Muslim doctrines and impugn the rightly guided caliphs, the theologians annexed this chapter to the chapters of kalām. They did so notwithstanding their conviction that investigating those caliphs' circumstances, entitlement and comparative excellence has little connection with the actions of persons under obligation. Some even incorporated the imamate into their definition of kalām: 'The science that investigates the fundamental matters pertaining to the Maker, prophecy, the imamate, the resurrection, and things connected with them according to the rule of Islam.'",
+      "editorial_note": "Retains author's polemical group labels as reported historical classifications; do not treat as neutral characterizations of entire religious communities.",
+      "review_status": "Arabic electronic-witness close revision; printed image collation and specialist review outstanding"
+    },
+    {
+      "id": "SM40-007",
+      "title": "Definition and exclusions",
+      "location": "V:234",
+      "arabic_original_untouched": "والإمامة رئاسة عامة في أمر الدين والدنيا خلافة عن النبي عليه الصلاة والسلام. وبهذا القيد خرجت النبوة، وبقيد العموم مثل القضاء والرئاسة في بعض النواحي، وكذا رئاسة من جعله الإمام نائبا عنه على الإطلاق فإنها لا تعم الإمامة.",
+      "original_english_preserved_in_v5": true,
+      "revised_english": "The imamate is a general headship over the affairs of religion and the world, in succession to the Prophet, upon him be blessings and peace. The latter qualification excludes prophecy from the definition. The qualification 'general' excludes judgeship and headship over certain particular regions. It also excludes the headship of someone whom the imam appoints as his plenipotentiary deputy: for that headship does not encompass the imamate itself.",
+      "editorial_note": "The logical role of the differentiae—succession and generality—is expressly kept distinct.",
+      "review_status": "Arabic electronic-witness close revision; printed image collation and specialist review outstanding"
+    },
+    {
+      "id": "SM40-008",
+      "title": "Is unity a condition or a constituent of the definition?",
+      "location": "V:234",
+      "arabic_original_untouched": "وقال الإمام الرازي: هي رئاسة عامة في الدين والدنيا لشخص واحد من الأشخاص، وقال: هو احتراز عن كل الأمة إذا عزلوا الإمام لفسقه. وكأنه أراد بكل الأمة أهل الحل والعقد واعتبر رياستهم على من عداهم أو على كل من آحاد الأمة. ومع هذا يرد عليه أن الوحدة من شرائط الإمامة لا من مقوماتها، وفي الشروط كثرة وعلى اشتراطها أدلة. ويمكن أن يقال إنها بالمقومات أشبه، من جهة أنه لا يقال لجميع الأمة حينئذ أئمة، بخلاف الإمام الجاهل أو الفاسق أو نحو ذلك. وعلى هذا ينبغي أن لا يقال لشخصين بايعتهما الأمة إنهما إمامان.",
+      "original_english_preserved_in_v5": true,
+      "revised_english": "Imām al-Rāzī says: 'It is general headship in religion and the world belonging to one individual.' He says that this excludes the entire community in the event that it removes an imam for wrongdoing. It seems that by 'the entire community' he means those entitled to bind and loose, treating their headship as extending either to all others or to every individual member of the community. Yet an objection remains: singleness is a condition of the imamate, not something constitutive of what it is. There are many such conditions, and their being conditions requires proof. One may respond, however, that singleness is closer to a constitutive feature, insofar as in that situation the whole community is not described as 'imams', whereas an ignorant or morally corrupt imam may still be so called. On this view one ought not describe two persons both given allegiance by the community as 'two imams'.",
+      "editorial_note": "The distinction between a constitutive element (muqawwim) of a definition and an external condition (sharṭ) is central; the author presents both sides.",
+      "review_status": "Arabic electronic-witness close revision; printed image collation and specialist review outstanding"
+    },
+    {
+      "id": "SM40-009",
+      "title": "Succession may be mediated",
+      "location": "V:234–235",
+      "arabic_original_untouched": "فإن قيل: الخلافة عن النبي عليه الصلاة والسلام إنما تكون فيمن استخلفه النبي عليه الصلاة والسلام، ولا يصدق التعريف على إمامة البيعة ونحوها، فضلا عن رئاسة النائب العام للإمام. قلنا: لو سلم فالاستخلاف أعم من أن يكون بوسط أو بدونه. قال: وفيه مباحث لبيان وجوب الإمامة وشروطها وطريق ثبوتها ونبذ من أحكامها وتعيين الإمام الحق بعد النبي عليه الصلاة والسلام وإمامة الأئمة الأربعة وترتيبهم في الأفضلية.",
+      "original_english_preserved_in_v5": true,
+      "revised_english": "One might object: succession to the Prophet, upon him be blessings and peace, applies only to someone appointed as successor by the Prophet himself. The definition therefore fails for an imamate established through allegiance and similar means, let alone for the leadership of an imam's plenipotentiary deputy. We reply: even conceding the premise, appointment to succeed may occur either through an intermediary or without one. He says: The chapter contains investigations establishing the imamate's obligatoriness, its conditions, the means by which it is constituted, some of its rulings, the identification of the rightful imam after the Prophet, the imamate of the four caliphs, and the order of their relative excellence.",
+      "editorial_note": "The reply treats indirect succession as possible and keeps the lemma's table of contents distinct from the commentator's argumentative voice.",
+      "review_status": "Arabic electronic-witness close revision; printed image collation and specialist review outstanding"
+    }
+  ]
+}
