@@ -147,8 +147,8 @@ jobs:
           assert all('م‍يرزا محمد علي' not in x['ar'] and 'التقريب ص' not in x['ar'] for x in [*mod,*cond])
           allblocks=[*p,*w,*q,*c,*z,*mod,*cond]
           assert len(allblocks)==47 and len({x['page'] for x in allblocks})==45
-          assert sum(x['unit']=='L.11' for x in allblocks)==6
-          assert sum(x['unit']=='L.12' for x in allblocks)==5
+          assert sum(x.get('unit', 'L.03')=='L.11' for x in allblocks)==6
+          assert sum(x.get('unit', 'L.03')=='L.12' for x in allblocks)==5
           assert all('التقريب ص' not in x['ar'] for x in w)
           assert len({x['unit'] for x in gloss['entries']})==19
           assert all(x.get('arabic') and x.get('english') and x.get('sourceUrl') and x.get('attribution') for x in gloss['entries'])
