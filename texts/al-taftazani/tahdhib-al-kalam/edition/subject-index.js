@@ -53,6 +53,13 @@ const groups=isLogic?[
   ['Earlier and later contraposition','عكس النقيض عند القدماء والمتأخرين',['القدماء','المتأخرون','عكس النقيض','الطرفين']],
   ['Witness-based proof by supposition','الافتراض في العكوس',['بدليل الافتراض','يفرض ذات الموضوع','بعض ج','د'] ],
   ['Syllogism and figures','القياس والأشكال',['القياس','الشكل الأول','الشكل الثاني','الشكل الثالث','الشكل الرابع']],
+  ['Syllogism form and intrinsic entailment','الصورة والتأليف واللزوم الذاتي',['المؤلف','لذاته','القول','المقدمة الخارجية']],
+  ['Syllogism of equality and external premise','قياس المساواة والمقدمة الخارجية',['قياس المساواة','مساوي المساوي','مقدمة خارجية']],
+  ['Conjunctive and exceptive syllogisms','الاقتراني والاستثنائي',['الاقتراني','الاستثنائي','لكن','النتيجة']],
+  ['Actual minor and universal major in the first figure','فعلية الصغرى وكلية الكبرى',['الشكل الأول','فعلية','كلية الكبرى','الأوسط']],
+  ['Second-figure productivity conditions','شروط الشكل الثاني',['الشكل الثاني','اختلافهما','كلية الكبرى','الدوام']],
+  ['Reducing figures to the first','رد الأشكال إلى الأول',['بالخلف','عكس الكبرى','عكس الصغرى']],
+  ['Third-figure shared witness','الشكل الثالث واشتراك الأوسط',['الشكل الثالث','إيجاب الصغرى','كلية إحداهما']],
   ['Induction and analogy','الاستقراء والتمثيل',['الاستقراء','التمثيل','الدوران','الترديد']],
   ['Analogy, cause and the uṣūl connection','العلة والفرع والأصل',['التمثيل','العلة','الأصل','الفرع','الدوران']],
   ['Five arts and epistemic matter','الصناعات الخمس',['البرهان','الجدل','الخطابة','الشعر','المغالطة','التخييل']],
@@ -160,9 +167,10 @@ function open(trigger){
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q65_69?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q70_73?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q74_80?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
-      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q81_84?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en}))
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q81_84?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q86_94?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en}))
      ];
-     const archive=window.GNAMMA_YAZDI_LAYER.entries.filter(p=>!['L.03','L.04','L.05','L.06','L.07','L.08','L.09','L.10','L.11','L.12','L.13','L.14','L.15'].includes(p.unit));
+     const archive=window.GNAMMA_YAZDI_LAYER.entries.filter(p=>!['L.03','L.04','L.05','L.06','L.07','L.08','L.09','L.10','L.11','L.12','L.13','L.14','L.15'].includes(p.unit)&&!(p.unit==='L.16'&&p.page>=86&&p.page<=94));
      const glosses=[...archive,...extended].filter(p=>
       t.keys.some(k=>norm(k).length>2&&(norm(p.arabic).includes(norm(k))||norm(p.english).includes(norm(k)))));
      if(glosses.length){
