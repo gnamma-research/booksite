@@ -33,6 +33,16 @@ const groups=isLogic?[
   ['External, suppositional and mental subjects','الخارجية والحقيقية والذهنية',['الخارجية','الحقيقية','الذهنية','وجود الموضوع']],
   ['Conditional propositions','القضايا الشرطية',['الشرطية','المتصلة','المنفصلة']],
   ['Modal judgement','جهات القضايا',['الضرورية','المشروطة','العرفية','الممكنة','الجهة']],
+  ['Actual modal matter versus asserted modality','مادة القضية وجهتها',['مادة القضية','جهة القضية','موجهة','مطلقة']],
+  ['Necessity and permanence','الضرورة والدوام',['الضرورة','الدوام','الوقتيتان','العرفية','المنتشرة']],
+  ['Intrinsic nonpermanence','اللادوام الذاتي',['اللادوام','دائما','مشروطة خاصة','عرفية خاصة']],
+  ['Intrinsic nonnecessity','اللاضرورة الذاتية',['اللاضرورة','ممكنة خاصة','إمكان']],
+  ['Composite and nonstandard modal forms','الموجهات المركبة غير المعتبرة',['مركبة','ستة عشر','غير معتبرة','المركبات']],
+  ['Connected entailment and accidental connection','اللزومية والاتفاقية',['لزومية','اتفاقية','لعلاقة','اتصال']],
+  ['Three types of disjunction','الحقيقية ومانعة الجمع ومانعة الخلو',['المنفصلة','الحقيقية','مانعة الجمع','مانعة الخلو']],
+  ['Intrinsic or material incompatibility','العنادية والاتفاقية',['عنادية','منافاة','بذاتيهما','مادة']],
+  ['Quantification of antecedent suppositions','تقادير المقدم وسورها',['تقادير المقدم','كلما','قد يكون','مهملة']],
+  ['Constituents of a conditional proposition','طرفا الشرطية',['حمليتان','متصلتان','منفصلتان','التمام']],
   ['Contradiction and opposition','التناقض',['التناقض','النقيض','التضاد']],
   ['Conversion and contraposition','العكس',['العكس المستوي','عكس النقيض','تنعكس']],
   ['Syllogism and figures','القياس والأشكال',['القياس','الشكل الأول','الشكل الثاني','الشكل الثالث','الشكل الرابع']],
@@ -138,9 +148,11 @@ function open(trigger){
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_L07?.sourceBlocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q48_51?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
-      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q54_58?.sourceBlocks||[]).map(p=>({...p,arabic:p.ar,english:p.en}))
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q54_58?.sourceBlocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q59_64?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q65_69?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en}))
      ];
-     const archive=window.GNAMMA_YAZDI_LAYER.entries.filter(p=>!['L.03','L.04','L.05','L.06','L.07','L.08','L.09','L.10'].includes(p.unit));
+     const archive=window.GNAMMA_YAZDI_LAYER.entries.filter(p=>!['L.03','L.04','L.05','L.06','L.07','L.08','L.09','L.10','L.11','L.12'].includes(p.unit));
      const glosses=[...archive,...extended].filter(p=>
       t.keys.some(k=>norm(k).length>2&&(norm(p.arabic).includes(norm(k))||norm(p.english).includes(norm(k)))));
      if(glosses.length){
