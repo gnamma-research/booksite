@@ -77,6 +77,7 @@ jobs:
           assert [x['page'] for x in p]==list(range(22,30))
           assert len(p)==8 and all(x['ar'] and x['en'] and str(x['page']) in x['sourceUrl'] for x in p)
           assert 'ولا لازم ذهني' in p[2]['ar'] and 'textual-crux-Q24' in p[2]['flags']
+          assert len(p[2].get('comparisons',[]))==3 and all(not x['scanVerified'] for x in p[2]['comparisons'])
           assert all('التقريب ص' not in x['ar'] for x in p)
           assert 'المنقول' in p[-1]['ar'] and 'دلالة اللفظ' in p[0]['ar']
           assert len({x['unit'] for x in gloss['entries']})==19
