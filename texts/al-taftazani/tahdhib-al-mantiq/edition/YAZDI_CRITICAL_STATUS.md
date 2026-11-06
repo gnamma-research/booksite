@@ -120,3 +120,26 @@ The reader now carries two source-bounded working translations: `yazdi-continuou
 **CR-15 · Copula, relation and science.** Q56 distinguishes the judgmental **`رابطة`** from its expression in speech and quotes al-Fārābī's explanation of `هو/هي`. The Q57–58 account of quantified, indefinite, singular and natural propositions and of subject existence under `خارجية`, `حقيقية`, `ذهنية` is a technical historical logic, not a blanket adoption of modern first-order logic's domain conventions. The Q58→59 continuation is explicitly open.
 
 Overall the edition has **34 distinct Qum printed-page positions** represented by **36 contiguous bilingual blocks** (including two necessary page-splits), not 34 complete authorial pages and not 177 fully translated pages. **Photographic and independent manuscript collation: still outstanding.**
+
+## Sixth and seventh source-controlled translation runs: Qum pp.59–69
+New full main-ḥāshiya source-page files:
+- `edition/yazdi-continuous-q59-64-data.js` (L.11, six Qum printed-page blocks)
+- `edition/yazdi-continuous-q65-69-data.js` (L.12, five Qum printed-page blocks)
+
+These replace **39** overlapping archival excerpt cards but do not delete the old **177** provenance records. Exactly **11** new consecutive blocks are shown, reaching **47** bilingual continuous page/topic segments from **45** distinct source-page positions. The reader now contains **114** nonduplicating visible commentary blocks; these are source chunks, not an assertion that 114 pages have been completely edited. The Qum print's authorial `شرح` is kept distinct from the later `هامش`, and all embedded numeral note calls are editorial rather than authorial.
+
+**CR-16:** The difference between `مادة القضية` (real condition of predication) and `جهة القضية` (asserted mode) determines modal truth. Negation entering a term must not be mistaken for negation of a complete proposition (Q59).
+
+**CR-17:** Necessity, permanence, intrinsic vs descriptive conditions, and designated vs undesignated times (Q60–62) are distinct. Formalizing ‘not permanent’ as though it contradicted the original at the same instant yields false readings of Q62 examples.
+
+**CR-18:** The author distinguishes **eight simple modal kinds**, **seven accepted composite kinds**, and **sixteen possible combinations of four selected bases with four qualifiers**, of which **three are invalid, four are accepted and nine are valid but not conventional** (Q61–64). Do not invent an explicitly source-certified 16-row truth table unless its individual members have been reconstructed and independently checked.
+
+**CR-19:** `al-sharṭiyya al-luzūmiyya` does not mean a mere truth-functional conditional; relation-grounded following of consequent from antecedent is contrasted with merely concomitant `ittifāqiyya` (Q65).
+
+**CR-20:** `ḥaqīqiyya`, `māniʿat al-jamʿ`, and `māniʿat al-khulū` are distinct; the latter two admit broader or narrower readings (Q66–67). *Intrinsic opposition of terms* is distinct from an opposition that happens to hold in the given matter (Q67–68).
+
+**CR-21:** Quantification of a conditional ranges over `تقادīr al-muqaddam` and must not automatically be equated with categorical quantification over objects. Separate conditional connective from the original categorical/conditional components; what had been a complete assertion is no longer complete in the same form after embedding (Q68–69).
+
+**CR-22:** Qum Q59 `جزئه/الجزء` and Q65 `الحمار ناهقا/الفرس صاهلا` are printed alternatives without independently established manuscript sigla. No authorial priority has been invented. The full source/translation method and exact locators are in [YAZDI_Q59_69_CRITICAL.md](YAZDI_Q59_69_CRITICAL.md).
+
+**Remain outstanding:** photographic verification of Qum and Gujarat main text; independent manuscript collation; end-to-end editorial philology; continuous translation of the remaining large parts of al-Yazdī's commentary beyond Qum p.69. Hence the work is **a source-transcribed provisional translation**, not a definitive critical edition.

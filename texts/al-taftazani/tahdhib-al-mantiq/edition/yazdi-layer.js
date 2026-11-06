@@ -19,7 +19,9 @@ function make(unit,scope){
   ...(window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks||[]),
   ...(window.GNAMMA_YAZDI_CONTIGUOUS_L07?.sourceBlocks||[]),
   ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q48_51?.blocks||[]),
-  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q54_58?.sourceBlocks||[])
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q54_58?.sourceBlocks||[]),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q59_64?.blocks||[]),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q65_69?.blocks||[])
  ];
  const newContiguous=allOtherContinuous.filter(block=>block.unit===unit);
  const box=n('section','gn-yazdi-layer');box.dataset.yazdiUnit=unit;box.setAttribute('aria-label','Mullā al-Yazdī commentary for '+unit);
@@ -73,6 +75,8 @@ function make(unit,scope){
   const note=unit==='L.07'?'Qum page 38 is printed marginalia, excluded from al-Yazdī’s main text.':
     unit==='L.08'||unit==='L.09'?'Qum p.52 is blank and p.53 is a matn heading only; neither contains translated sharḥ.':
     unit==='L.10'?'Qum p.55 has only a short main-text continuation; its longer هامش is another writer’s commentary. The explanation continues onto p.59.':
+    unit==='L.11'?'This section distinguishes necessary, permanent, general possible and composite modalities. The final Q64 sentence crosses the L11/L12 printed boundary. Other authors’ هامش notes are excluded.':
+    unit==='L.12'?'Q65 begins by closing the preceding modal argument, then distinguishes connected and disjunctive conditionals. Q69 completes this main-source section; the separate هامش is excluded.':
     'Printed pages 31 and 35 are split at the editorial subject boundary, without repeating words.';
   box.append(n('p','gn-yazdi-main-caveat','Consecutive Arabic–English main ḥāshiya, Qum printed pp.'+interval+'. '+note+' Normalized searchable text, not yet photographically or manuscript-collated.'));
   for(const part of newContiguous){
@@ -168,7 +172,9 @@ function goTo(id){
  const newer=window.GNAMMA_YAZDI_CONTIGUOUS_L07;
  const concept=window.GNAMMA_YAZDI_CONTIGUOUS_Q48_51;
  const propositions=window.GNAMMA_YAZDI_CONTIGUOUS_Q54_58;
- const all=[...(wider?.blocks||[]),...(newer?.sourceBlocks||[]),...(concept?.blocks||[]),...(propositions?.sourceBlocks||[])];
+ const modal=window.GNAMMA_YAZDI_CONTIGUOUS_Q59_64;
+ const conditional=window.GNAMMA_YAZDI_CONTIGUOUS_Q65_69;
+ const all=[...(wider?.blocks||[]),...(newer?.sourceBlocks||[]),...(concept?.blocks||[]),...(propositions?.sourceBlocks||[]),...(modal?.blocks||[]),...(conditional?.blocks||[])];
  const part=data.entries.find(e=>e.id===id)||(continuous?.sourcePages.find(e=>e.id===id)??null)||all.find(e=>e.id===id)||null;
  if(!part)return false;
  setEnabled(true);ex.setMode('flow');
@@ -176,7 +182,7 @@ function goTo(id){
  const scroll=()=>{
   let targetId=part.id.replace(/[^a-zA-Z0-9-]/g,'-');
   if(part.unit==='L.03'||part.id.startsWith('YZC-'))targetId='YZC-'+part.page;
-  else if(['L.04','L.05','L.06','L.07','L.08','L.09','L.10'].includes(part.unit||'')){
+  else if(['L.04','L.05','L.06','L.07','L.08','L.09','L.10','L.11','L.12'].includes(part.unit||'')){
    // An archival excerpt ID navigates to its source page when that excerpt has been
    // subsumed by a continuous passage. Nothing is silently retranslated twice.
    const target=all.find(b=>b.unit===part.unit&&b.page===part.page);
@@ -192,5 +198,5 @@ document.addEventListener('gnamma-tahdhib-flow-built',mountFlow);
 document.addEventListener('gnamma-tahdhib-render',mount); // Render has already replaced source cards; mount now to avoid a WebKit frame race.
 document.addEventListener('gnamma-tahdhib-view',mount);
 mount();
-window.GnammaYazdiLayer=Object.freeze({enabled,setEnabled,mount,goTo,entryCount:data.entries.length,continuousPages:window.GNAMMA_YAZDI_CONTIGUOUS_L03?.sourcePages.length||0,additionalContinuousPages:[...new Set(window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks.map(b=>b.page)||[])].length,additionalContinuousBlocks:window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks.length||0,speciesContinuousPages:window.GNAMMA_YAZDI_CONTIGUOUS_L07?.sourceBlocks.length||0,logicalUniversalPages:window.GNAMMA_YAZDI_CONTIGUOUS_Q48_51?.blocks.filter(x=>x.unit==='L.08').length||0,definitionPages:window.GNAMMA_YAZDI_CONTIGUOUS_Q48_51?.blocks.filter(x=>x.unit==='L.09').length||0,propositionPages:window.GNAMMA_YAZDI_CONTIGUOUS_Q54_58?.sourceBlocks.length||0,units:[...groups.keys()],complete:false});
+window.GnammaYazdiLayer=Object.freeze({enabled,setEnabled,mount,goTo,entryCount:data.entries.length,continuousPages:window.GNAMMA_YAZDI_CONTIGUOUS_L03?.sourcePages.length||0,additionalContinuousPages:[...new Set(window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks.map(b=>b.page)||[])].length,additionalContinuousBlocks:window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks.length||0,speciesContinuousPages:window.GNAMMA_YAZDI_CONTIGUOUS_L07?.sourceBlocks.length||0,logicalUniversalPages:window.GNAMMA_YAZDI_CONTIGUOUS_Q48_51?.blocks.filter(x=>x.unit==='L.08').length||0,definitionPages:window.GNAMMA_YAZDI_CONTIGUOUS_Q48_51?.blocks.filter(x=>x.unit==='L.09').length||0,propositionPages:window.GNAMMA_YAZDI_CONTIGUOUS_Q54_58?.sourceBlocks.length||0,modalPages:window.GNAMMA_YAZDI_CONTIGUOUS_Q59_64?.blocks.length||0,conditionalPages:window.GNAMMA_YAZDI_CONTIGUOUS_Q65_69?.blocks.length||0,units:[...groups.keys()],complete:false});
 })();

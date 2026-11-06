@@ -12,13 +12,15 @@ const glossary=lexical.terms.slice();
 // The original kalām glossary continues to index only its own primary corpus.
 const commentary=()=>{
  if(!isLogicGlossary())return [];
- const archived=(window.GNAMMA_YAZDI_LAYER?.entries||[]).filter(p=>!['L.03','L.04','L.05','L.06','L.07','L.08','L.09','L.10'].includes(p.unit));
+ const archived=(window.GNAMMA_YAZDI_LAYER?.entries||[]).filter(p=>!['L.03','L.04','L.05','L.06','L.07','L.08','L.09','L.10','L.11','L.12'].includes(p.unit));
  const contiguous=[
   ...(window.GNAMMA_YAZDI_CONTIGUOUS_L03?.sourcePages||[]).map(p=>({...p,unit:'L.03'})),
   ...(window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks||[]),
   ...(window.GNAMMA_YAZDI_CONTIGUOUS_L07?.sourceBlocks||[]),
   ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q48_51?.blocks||[]),
-  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q54_58?.sourceBlocks||[])
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q54_58?.sourceBlocks||[]),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q59_64?.blocks||[]),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q65_69?.blocks||[])
  ].map(p=>({...p,arabic:p.ar,english:p.en}));
  return [...archived,...contiguous];
 };
