@@ -10,6 +10,10 @@
 
 Gnamma takes its name from a natural hollow in rock where water collects. It is a place of encounter: between texts and their contexts, between traditions, and between scholarly interpretation and the world to which it speaks. The project develops connected reading spaces that make sources, concepts, translations, and their wider relationships available for careful investigation.
 
+## Required continuity rule for every translation project
+
+Before any new translation stage or continuation chat, read [Translation Continuity and No-Retranslation Protocol](docs/TRANSLATION_CONTINUITY_PROTOCOL.md), locate the latest canonical full master and handoff, and **do not retranslate already-completed material because a prior chat did not mount it**. Full/cumulative/verified/deployed claims require the documented checks. The recovered 7 November 2026 Maqāṣid and Sharḥ masters are preserved on the `research/taftazani-maqasid-cumulative-20261107` research branch.
+
 ---
 
 # Gnamma Research · multi-book scholarly library
