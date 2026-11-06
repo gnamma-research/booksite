@@ -156,3 +156,15 @@ The working edition now includes three further page-aligned source files: `yazdi
 **CR-31:** Main `شرح`/post-`هامش` delimitation and short page seams were checked in the searchable Qum transcription; no Qum photographic, Gujarat line, Tehran or independent manuscript collation has yet certified these readings. The source's Q71 Persian mnemonic and the variable printed conditional/modal examples must be checked against page images. Page Q85 is a heading for the next topic, not part of the al-Yazdī translation.
 
 **Progress bookkeeping:** 177 archived selected excerpts, 62 continuous bilingual source blocks from 60 Qum printed positions, **116** visible nonduplicated commentary cards, zero manuscript-certified al-Yazdī divisions. The complete main commentary is still incomplete.
+
+
+## Eighth consecutive source stream: Qum pp.86–94 (syllogism and two figure reductions)
+The Qum source's syllogism main `شرح` begins on p86 after p85's heading-only section. The source file `edition/yazdi-continuous-q86-94-data.js` contains nine consecutive bilingual page-aligned blocks in L.16. The Q95–97 prose is still missing; the two old Q98 excerpts are preserved and shown as selected, not consecutive. The two Q86 archival excerpts are retained in the 177-item provenance register but replaced visually by the complete Q86 source page segment. No separate book or third reading mode has been introduced.
+
+**CR-32–34:** `al-qiyās` is not merely a list of propositions. It is a *composition* whose conclusion follows `li-dhātihi`, not via an external premise. Al-Yazdī's equality example invokes the need for an additional transitivity premise; modern equality semantics should not be silently imposed on the historical account. He distinguishes *exceptive* (`istithnāʾī`) and *conjunctive* (`iqtirānī`) by how the conclusion's matter and form appear in premises.
+
+**CR-35–39:** The first figure is epistemically prior as a paradigm for reductions. An *actual minor* and *universal major* are required under the stated subject-domain assumptions. Second-figure productivity demands different premise qualities and universal major, with further nuanced modal conditions. At Q94, al-Yazdī enumerates **three** reductions of its four moods: reductio, conversion of major, and conversion/reordering of minor. The third figure opens with a shared-witness issue illustrated by *some animals human/some animals horse*.
+
+**CR-40:** Q91 is another key authorial boundary: a short main شرح is followed by lengthy marginal material separately attributed to other writers. Its visual size must not inflate the al-Yazdī translation count. Qum/Gujarat/Tehran photographic comparisons and manuscript collation have not been done for the nine-page segment.
+
+Current counts: 177 historical selected source quotes; **71** consecutive bilingual main-commentary segments from **69** Qum printed page positions, with **123** nonduplicated displayed commentary cards. See [YAZDI_Q86_94_CRITICAL.md](YAZDI_Q86_94_CRITICAL.md) for exact page URLs and full scholarly notes. The complete work is not translated; there are no manuscript-certified divisions.
