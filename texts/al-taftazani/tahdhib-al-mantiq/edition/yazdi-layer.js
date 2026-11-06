@@ -35,7 +35,18 @@ function make(unit,scope){
    if(part.flags?.includes('textual-crux-Q24')){
     const issue=n('details','gn-yazdi-variant gn-yazdi-critical-crux');
     issue.append(n('summary',null,'Textual problem · Q p.24 · implication without inclusion'));
-    issue.append(n('p','gn-yazdi-variant-note','The digitized line reads «ولا لازم ذهني» while the inference requires a concomitant. The apparent contradiction is preserved pending inspection of printed images and independent witnesses.'));
+    issue.append(n('p','gn-yazdi-variant-note','The Qum searchable text reads «ولا لازم ذهني» although implication requires a concomitant. Two other searchable printed main-text versions give «له لازم». The base has NOT been silently emended.'));
+    if(part.comparisons?.length){
+     const readings=n('div','gn-yazdi-variant-readings');
+     for(const v of part.comparisons){
+      const row=n('div','gn-yazdi-variant-row'),who=n('strong',null,v.siglum);
+      const t=n('p',null,v.reading);t.lang='ar';t.dir='rtl';row.append(who,t);
+      const a=n('a','gn-yazdi-source','Check source');a.href=v.sourceUrl;a.target='_blank';a.rel='noopener noreferrer';row.append(a);
+      readings.append(row);
+     }
+     issue.append(readings);
+    }
+    issue.append(n('p','gn-yazdi-variant-status','Digital printed-text comparison only. The 2013 Gujarat and Karachi source photographs and independent manuscript readings remain unverified. Other printed marginal voices are not attributed to al-Yazdī.'));
     item.append(issue);
    }
    if(part.notes?.length){
