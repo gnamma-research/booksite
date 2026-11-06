@@ -91,6 +91,15 @@ jobs:
           assert len([x for x in w if x['page']==31])==2 and len([x for x in w if x['page']==35])==2
           assert 'التباين الجزئي' in w[4]['ar'] and 'الجنس' in w[8]['ar']
           assert w[-1]['seam']=='p37-later-continuation-unverified'
+          l07_raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-continuous-p39-47-data.js').read_text(encoding='utf-8')
+          l07=json.loads(l07_raw.split('=',1)[1].strip().removesuffix(';'))
+          q=l07['sourceBlocks']
+          assert l07['unit']=='L.07' and l07['certified'] is False
+          assert [x['page'] for x in q]==list(range(39,48))
+          assert all(x['ar'] and x['en'] and 'ablibrary.net' in x['sourceUrl'] for x in q)
+          assert 'هامش' in l07['interveningPage'] and all(x['page']!=38 for x in q)
+          assert 'الإمام الرازي' in q[4]['ar'] and 'المحقق الطوسي' in q[4]['ar']
+          assert 'لزوم' in q[-1]['ar'] and 'الوجود الذهني' in q[-1]['ar']
           assert all('التقريب ص' not in x['ar'] for x in w)
           assert len({x['unit'] for x in gloss['entries']})==19
           assert all(x.get('arabic') and x.get('english') and x.get('sourceUrl') and x.get('attribution') for x in gloss['entries'])
@@ -203,6 +212,7 @@ jobs:
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-layer.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-l03-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-universals-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-p39-47-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-daruri-reader.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/indian-2013-outline-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-glossary-extensions.js
