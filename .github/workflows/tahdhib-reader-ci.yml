@@ -70,6 +70,16 @@ jobs:
           assert len([x for x in gloss['entries'] if x.get('witnessComparison')])==9
           assert all(not x.get('witnessComparison',{}).get('scanVerified',True) for x in gloss['entries'] if x.get('witnessComparison'))
           assert len({x['id'] for x in gloss['entries']})==177
+          continuous_raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-continuous-l03-data.js').read_text(encoding='utf-8')
+          continuous=json.loads(continuous_raw.split('=',1)[1].strip().removesuffix(';'))
+          p=continuous['sourcePages']
+          assert continuous['unit']=='L.03' and continuous['certified'] is False
+          assert [x['page'] for x in p]==list(range(22,30))
+          assert len(p)==8 and all(x['ar'] and x['en'] and str(x['page']) in x['sourceUrl'] for x in p)
+          assert 'ولا لازم ذهني' in p[2]['ar'] and 'textual-crux-Q24' in p[2]['flags']
+          assert len(p[2].get('comparisons',[]))==3 and all(not x['scanVerified'] for x in p[2]['comparisons'])
+          assert all('التقريب ص' not in x['ar'] for x in p)
+          assert 'المنقول' in p[-1]['ar'] and 'دلالة اللفظ' in p[0]['ar']
           assert len({x['unit'] for x in gloss['entries']})==19
           assert all(x.get('arabic') and x.get('english') and x.get('sourceUrl') and x.get('attribution') for x in gloss['entries'])
           assert len({u['id'] for u in kalam['units']})==1044
@@ -179,6 +189,7 @@ jobs:
           node --check tools/tahdhib/yazdi_layer_qa.mjs
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-layer-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-layer.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-l03-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-daruri-reader.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/indian-2013-outline-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-glossary-extensions.js

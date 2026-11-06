@@ -46,8 +46,13 @@ async function run(engine,browser,kind,viewport){
    await group.locator('[role="radio"]').nth(1).click();
    assert(await page.locator('body[data-yazdi="on"]').count()===1,'Matn + sharh did not enable commentary');
    assert(await page.locator('#flow-passages .gn-yazdi-layer').count()===19,'Not all divisions have represented commentary');
-   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===177,'Available selected commentary passages missing');
-   assert(await page.locator('#flow-passages .gn-yazdi-variant').count()===9,'Nine Q/I13 printed comparison dossiers missing');
+   assert(await page.evaluate(()=>window.GnammaYazdiLayer?.continuousPages)===8,'Continuous L03 source page register must have eight pages');
+   assert(await page.locator('#flow-passages .gn-yazdi-layer[data-contiguous-unit="L.03"]').count()===1,'L03 must render an uninterrupted working main-commentary source');
+   assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page').count()===8,'All Qum p22–29 page blocks must render once');
+   assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="24"] .gn-yazdi-critical-crux').count()===1,'Questionable Qum p24 reading must be flagged');
+   assert(await page.locator('#flow-passages [data-yazdi-id="YZ-23.01"]').count()===0,'Redundant archival selected excerpts must not repeat continuous translation');
+   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===174,'Visible corpus should replace 11 redundant L03 selections with 8 full source page blocks');
+   assert(await page.locator('#flow-passages .gn-yazdi-variant:not(.gn-yazdi-critical-crux)').count()===9,'Nine Q/I13 printed comparison dossiers missing');
    assert(await page.locator('#flow-passages .gn-yazdi-second-print').count()===17,'I13 printed links must match 17 separately identified passages');
    const v=page.locator('#flow-passages .gn-yazdi-variant').first();
    await v.locator('summary').click();
@@ -57,7 +62,7 @@ async function run(engine,browser,kind,viewport){
    assert((await en.textContent()).includes('begins with praise'),'Translated first paragraph does not match source');
    assert((await ar.textContent()).trim().length>10,'Original Arabic missing');
    const links=await page.locator('#flow-passages .gn-yazdi-excerpt > .gn-yazdi-source:not(.gn-yazdi-second-print)').evaluateAll(xs=>xs.map(a=>a.href));
-   assert(links.length===177&&links.every(x=>x.includes('/book_content/b/12170/')||x.includes('najafdesertlibrary.com/book/')),'Commentary pagination broken');
+   assert(links.length===174&&links.every(x=>x.includes('/book_content/b/12170/')||x.includes('najafdesertlibrary.com/book/')),'Commentary pagination broken');
    await rail.locator('[aria-label="English"]').click();
    assert(await page.locator('#flow-passages[data-view="ar"]').count()===1,'Switching English off did not leave Arabic only');
    assert(await en.evaluate(el=>getComputedStyle(el).display)==='none','Arabic-only view leaks English commentary');
@@ -77,15 +82,16 @@ async function run(engine,browser,kind,viewport){
    await page.evaluate(()=>window.GnammaTahdhibReader.go(2));
    assert(await page.locator('#passages:not([hidden]) .gn-yazdi-layer[data-yazdi-unit="L.02"]').count()===1,'Study mode commentary not source aligned');
    await page.evaluate(()=>window.GnammaTahdhibExperience.setMode('flow'));
-   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===177,'Commentary lost on restoring continuous flow');
+   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===174,'Full commentary flow was lost on restore');
    await page.reload({waitUntil:'networkidle'});
    assert(await page.locator('body[data-yazdi="on"]').count()===1,'Selected commentary layer not persisted');
-   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===177,'Translations missing after refresh');
+   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===174,'Continuous source pages missing after refresh');
    const critical=await ctx.newPage();await critical.goto(new URL(routes.logic+'critical-status.html',base).href,{waitUntil:'networkidle'});
    assert(await critical.locator('#count').textContent()==='177','Edition coverage page out of sync');
    assert(await critical.locator('#divisions').textContent()==='19/19','Division coverage page out of sync');
    assert(await critical.locator('#coverage tr').count()===19,'Critical edition register must list 19 divisions');
    assert(await critical.locator('#parallel-witnesses tr').count()===9,'Published critical register must expose nine Q/I13 comparisons');
+   assert(await critical.locator('#continuous-l03 tr').count()===8,'Critical dashboard does not report all continuous Qum source pages');
    await critical.close();
   }else{
    assert(await page.locator('#gn-logic-rail').count()===0,'Logic-only compact toolbar leaked into kalām');
