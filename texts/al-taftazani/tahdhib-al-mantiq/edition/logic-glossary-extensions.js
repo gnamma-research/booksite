@@ -458,8 +458,130 @@ const universals=[
     "sourceLayer": "al-Yazdī main ḥāshiya Q30–37 working searchable text, photograph/manuscript unverified"
   }
 ];
+const speciesTerms=[
+  {
+    "ar": "النوع الحقيقي",
+    "en": "Real species",
+    "explanation": "A universal predicated essentially of several individuals of the same quiddity; unlike relative species, it is individuated by the natures of its instances.",
+    "page": 40,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/40?lang=ar",
+    "sourceLayer": "Main al-Yazdī Qum searchable commentary pp39–47, not photographic or manuscript-collated"
+  },
+  {
+    "ar": "النوع الإضافي",
+    "en": "Relative species",
+    "explanation": "A position subordinate to a higher genus; it may be a real species or a genus with another genus above it.",
+    "page": 40,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/40?lang=ar",
+    "sourceLayer": "Main al-Yazdī Qum searchable commentary pp39–47, not photographic or manuscript-collated"
+  },
+  {
+    "ar": "الفصل القريب",
+    "en": "Proximate differentia",
+    "explanation": "The essential mark distinguishing a species from all others under its proximate genus.",
+    "page": 43,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/43?lang=ar",
+    "sourceLayer": "Main al-Yazdī Qum searchable commentary pp39–47, not photographic or manuscript-collated"
+  },
+  {
+    "ar": "الفصل البعيد",
+    "en": "Remote differentia",
+    "explanation": "A differentiating essential characteristic at a less proximate genus, such as sensitive in the order of growing body.",
+    "page": 43,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/43?lang=ar",
+    "sourceLayer": "Main al-Yazdī Qum searchable commentary pp39–47, not photographic or manuscript-collated"
+  },
+  {
+    "ar": "المقوم",
+    "en": "Constitutive differentia",
+    "explanation": "A differentia considered as a constituent of the essence it determines; a logical essential component, not necessarily a spatial part.",
+    "page": 44,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/44?lang=ar",
+    "sourceLayer": "Main al-Yazdī Qum searchable commentary pp39–47, not photographic or manuscript-collated"
+  },
+  {
+    "ar": "المقسم",
+    "en": "Divisive differentia",
+    "explanation": "A differentia considered in relation to its genus, which it divides into groups with and without the feature.",
+    "page": 44,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/44?lang=ar",
+    "sourceLayer": "Main al-Yazdī Qum searchable commentary pp39–47, not photographic or manuscript-collated"
+  },
+  {
+    "ar": "جنس الأجناس",
+    "en": "Highest genus",
+    "explanation": "The widest term in an ascending essential genus-series, having no higher genus above it, e.g. substance in the source's schema.",
+    "page": 42,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/42?lang=ar",
+    "sourceLayer": "Main al-Yazdī Qum searchable commentary pp39–47, not photographic or manuscript-collated"
+  },
+  {
+    "ar": "نوع الأنواع",
+    "en": "Lowest species",
+    "explanation": "A species with no further species below it in the descending predicable series, e.g. human in the classical schema.",
+    "page": 42,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/42?lang=ar",
+    "sourceLayer": "Main al-Yazdī Qum searchable commentary pp39–47, not photographic or manuscript-collated"
+  },
+  {
+    "ar": "لازم الماهية",
+    "en": "Concomitant of quiddity",
+    "explanation": "A property inseparable from the essential nature regardless of mental or external instantiation; e.g. the evenness of four.",
+    "page": 47,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/47?lang=ar",
+    "sourceLayer": "Main al-Yazdī Qum searchable commentary pp39–47, not photographic or manuscript-collated"
+  },
+  {
+    "ar": "لازم الوجود الخارجي",
+    "en": "Concomitant of external existence",
+    "explanation": "A concomitant tied specifically to the subject's extramental actuality, e.g. the source's association of fire with burning.",
+    "page": 47,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/47?lang=ar",
+    "sourceLayer": "Main al-Yazdī Qum searchable commentary pp39–47, not photographic or manuscript-collated"
+  },
+  {
+    "ar": "لازم الوجود الذهني",
+    "en": "Concomitant of mental existence",
+    "explanation": "A concomitant of the intellectual consideration of a nature, e.g. universality of the concept human.",
+    "page": 47,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/47?lang=ar",
+    "sourceLayer": "Main al-Yazdī Qum searchable commentary pp39–47, not photographic or manuscript-collated"
+  },
+  {
+    "ar": "المعقول الثاني",
+    "en": "Second intelligible",
+    "explanation": "An attribute such as universality considered at the intellectual level; distinguished from the nature considered in itself.",
+    "page": 47,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/47?lang=ar",
+    "sourceLayer": "Main al-Yazdī Qum searchable commentary pp39–47, not photographic or manuscript-collated"
+  },
+  {
+    "ar": "البين بالمعنى الأخص",
+    "en": "Evident in the stricter sense",
+    "explanation": "A concomitant conceived by conceiving the subject alone, as sight is implicated in blindness.",
+    "page": 47,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/47?lang=ar",
+    "sourceLayer": "Main al-Yazdī Qum searchable commentary pp39–47, not photographic or manuscript-collated"
+  },
+  {
+    "ar": "البين بالمعنى الأعم",
+    "en": "Evident in the broader sense",
+    "explanation": "A concomitant whose necessity is assented to upon grasping subject, concomitant and their relation, e.g. the evenness of four.",
+    "page": 47,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/47?lang=ar",
+    "sourceLayer": "Main al-Yazdī Qum searchable commentary pp39–47, not photographic or manuscript-collated"
+  },
+  {
+    "ar": "العرض المفارق",
+    "en": "Separable accident",
+    "explanation": "An accidental property whose separation from its subject is not impossible; it can be long-lasting or transient.",
+    "page": 47,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/47?lang=ar",
+    "sourceLayer": "Main al-Yazdī Qum searchable commentary pp39–47, not photographic or manuscript-collated"
+  }
+];
 const seen=new Set(prior.terms.map(t=>prior.norm(t.ar)));
 const terms=prior.terms.slice();
-for(const term of [...extra,...supplementary,...universals]){if(!seen.has(prior.norm(term.ar))){terms.push(term);seen.add(prior.norm(term.ar))}}
-window.GNAMMA_TAHDHIB_GLOSSARY=Object.freeze({...prior,terms,version:'logic-plus-yazdi-universals-v3',historicallyCollated:false});
+for(const term of [...extra,...supplementary,...universals,...speciesTerms]){if(!seen.has(prior.norm(term.ar))){terms.push(term);seen.add(prior.norm(term.ar))}}
+window.GNAMMA_TAHDHIB_GLOSSARY=Object.freeze({...prior,terms,version:'logic-plus-yazdi-species-v4',historicallyCollated:false});
 })();

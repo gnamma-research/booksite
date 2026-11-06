@@ -47,6 +47,10 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
 <p>Ten consecutive, nonoverlapping editorial segments cover eight printed source pages. Page 31 bridges L.04–L.05 and page 35 bridges L.05–L.06; the splitting preserves the textual order without pretending that the source has three authorial chapter breaks. As with L.03, the separately printed <span lang="ar" dir="rtl">هامش</span> is excluded from al-Yazdī’s principal text. The physical page photographs have not been compared.</p>
 <p><strong>Editorial issue:</strong> al-Yazdī divides all pairs of universals into four relations, while the preceding page permits universals with no extant instances. The resulting extensional classification requires special care with empty classes. This question remains in the analytical apparatus; no philosophical doctrine is silently changed in the translation. Qum page 37 also needs an image check at the <span lang="ar" dir="rtl">شرح / هامش</span> boundary.</p>
 <div class="table-wrap"><table><thead><tr><th>Logic division</th><th>Qum page</th><th>Editorial heading</th><th>Text status</th></tr></thead><tbody id="continuous-universals"><tr><td colspan="4">Loading source blocks…</td></tr></tbody></table></div>
+<h2>Species and differentia: Qum pp.39–47</h2>
+<p>Nine further printed Qum pages of the main <i>ḥāshiya</i> are translated consecutively, beginning at the relative-species distinction and continuing through the analysis of necessary and separable accidents. In the middle, the commentary explains al-Rāzī’s logical objection to the definition of <i>faṣl</i> and al-Ṭūsī’s alternative answer. Qum page 38 is entirely marked <span lang="ar" dir="rtl">هامش</span> and is not counted as al-Yazdī’s main text.</p>
+<p><strong>Current consecutive source coverage:</strong> Qum pp.22–37 and 39–47. These are 25 printed-page positions, not 25 equally full pages of authored commentary; many contain substantial later marginal material, which is excluded. Photographic and manuscript certification remain open.</p>
+<div class="table-wrap"><table><thead><tr><th>Qum page</th><th>Editorial topic</th><th>Text status</th></tr></thead><tbody id="continuous-l07"><tr><td colspan="3">Loading source-page register…</td></tr></tbody></table></div>
 <h2>Qum and Gujarat: parallel printed readings</h2>
 <p class="small">The table below is generated from nine checked textual comparisons and records only short distinguishing readings. Scanned pages and manuscript witnesses are <strong>not</strong> yet collated. Modern marginalia are excluded.</p>
 <div class="table-wrap"><table><thead><tr><th>Q locator</th><th>I13 page</th><th>Q reading</th><th>I13 reading</th><th>Status</th></tr></thead><tbody id="parallel-witnesses"><tr><td colspan="5">Loading parallels…</td></tr></tbody></table></div>
@@ -59,6 +63,7 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
 <script src="yazdi-layer-data.js?v=20261106-yazdi8"></script>
 <script src="yazdi-continuous-l03-data.js?v=20261106-l03b"></script>
 <script src="yazdi-continuous-universals-data.js?v=20261106-q30-37"></script>
+<script src="yazdi-continuous-p39-47-data.js?v=20261106-q39-47"></script>
 <script>
 (function(){
  const d=window.GNAMMA_YAZDI_LAYER;if(!d)return;
@@ -90,6 +95,19 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
     row.append(td);
    }
    universalLedger.append(row);
+  }
+ }
+ const species=window.GNAMMA_YAZDI_CONTIGUOUS_L07;
+ const speciesLedger=document.getElementById('continuous-l07');
+ if(species&&speciesLedger){
+  speciesLedger.replaceChildren();
+  for(const p of species.sourceBlocks){
+   const row=document.createElement('tr');
+   const number=document.createElement('td');const a=document.createElement('a');
+   a.href=p.sourceUrl;a.textContent='p.'+p.page;number.append(a);row.append(number);
+   const topic=document.createElement('td');topic.textContent=p.title;row.append(topic);
+   const status=document.createElement('td');status.textContent='Main searchable text translated; photographic collation pending';row.append(status);
+   speciesLedger.append(row);
   }
  }
  const counts=new Map();for(const e of d.entries){if(!counts.has(e.unit))counts.set(e.unit,[]);counts.get(e.unit).push(e)}

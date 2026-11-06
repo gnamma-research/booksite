@@ -56,11 +56,17 @@ async function run(engine,browser,kind,viewport){
    for(const unit of ['L.04','L.05','L.06']){
     assert(await page.locator('#flow-passages .gn-yazdi-layer[data-contiguous-unit="'+unit+'"]').count()===1,'Missing complete searchable main commentary in '+unit);
    }
-   assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page').count()===18,'Expected 8 + 10 consecutive source blocks');
+   assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page').count()===27,'Expected 8 + 10 + 9 consecutive source blocks');
    assert(await page.locator('#flow-passages [data-yazdi-id="YZ-30.01"]').count()===0,'Qum main pp.30–37 must not repeat archive selections');
    assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="37"] .gn-yazdi-critical-crux').count()===1,'Q37 unresolved source-layout boundary must be visible');
    assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="31"]').count()===2,'Q31 split between L04 and L05 was lost');
    assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="35"]').count()===2,'Q35 split between L05 and L06 was lost');
+   assert(await page.evaluate(()=>window.GnammaYazdiLayer?.speciesContinuousPages)===9,'Qum species/differentia run must contain nine printed main-text pages');
+   assert(await page.locator('#flow-passages .gn-yazdi-layer[data-contiguous-unit="L.07"] .gn-yazdi-contiguous-page').count()===9,'L07 main شرح pages 39–47 not shown exactly once');
+   assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="38"]').count()===0,'Marginal-only Qum p38 must never enter main commentary');
+   assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="39"]').count()===1,'Q39 main commentary missing');
+   assert(await page.locator('#flow-passages .gn-yazdi-contiguous-page[data-q-page="47"]').count()===1,'Q47 close of accident classification missing');
+   assert(await page.locator('#flow-passages [data-yazdi-id="YZ-46.01"]').count()===0,'Overlapping selected commentary must not repeat p46 full reading');
    assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===174,'Visible corpus should replace 11 redundant L03 selections with 8 full source page blocks');
    assert(await page.locator('#flow-passages .gn-yazdi-variant:not(.gn-yazdi-critical-crux)').count()===9,'Nine Q/I13 printed comparison dossiers missing');
    assert(await page.locator('#flow-passages .gn-yazdi-second-print').count()===17,'I13 printed links must match 17 separately identified passages');
@@ -103,6 +109,7 @@ async function run(engine,browser,kind,viewport){
    assert(await critical.locator('#parallel-witnesses tr').count()===9,'Published critical register must expose nine Q/I13 comparisons');
    assert(await critical.locator('#continuous-l03 tr').count()===8,'Critical dashboard does not report all continuous Qum source pages');
    assert(await critical.locator('#continuous-universals tr').count()===10,'Critical register lost the ten Q30–37 source blocks');
+   assert(await critical.locator('#continuous-l07 tr').count()===9,'Critical edition dashboard omitted the nine Q39–47 continuous source pages');
    await critical.close();
   }else{
    assert(await page.locator('#gn-logic-rail').count()===0,'Logic-only compact toolbar leaked into kalām');

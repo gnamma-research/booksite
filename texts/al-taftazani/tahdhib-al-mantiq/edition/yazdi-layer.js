@@ -15,7 +15,7 @@ function n(tag,cls,value){const e=document.createElement(tag);if(cls)e.className
 function make(unit,scope){
  const entries=groups.get(unit)||[];
  const contiguous=unit==='L.03'?window.GNAMMA_YAZDI_CONTIGUOUS_L03:null;
- const newContiguous=window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks.filter(block=>block.unit===unit)||[];
+ const newContiguous=unit==='L.07'?(window.GNAMMA_YAZDI_CONTIGUOUS_L07?.sourceBlocks||[]):(window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks.filter(block=>block.unit===unit)||[]);
  const box=n('section','gn-yazdi-layer');box.dataset.yazdiUnit=unit;box.setAttribute('aria-label','Mullā al-Yazdī commentary for '+unit);
  const head=n('header','gn-yazdi-head');head.append(n('h3',null,'Mullā al-Yazdī · Commentary'),n('small',null,contiguous?'Qum pp.22–29 · continuous searchable main text; scan pending':newContiguous.length?'Qum pp.'+newContiguous[0].page+'–'+newContiguous.at(-1).page+' · '+newContiguous.length+' consecutive main-text segments; scan pending':entries.length+' translated passages'));box.append(head);
  if(contiguous){
@@ -62,8 +62,10 @@ function make(unit,scope){
  }
  if(newContiguous.length){
   box.dataset.contiguousUnit=unit;
-  box.dataset.contiguousWitness='Qum searchable pp.30–37';
-  box.append(n('p','gn-yazdi-main-caveat','Consecutively translated searchable Qum main ḥāshiya, pp.30–37. Printed page 31 and 35 are split where the subject changes. This is provisional, not photographic or manuscript-collated; after the marked هامش, separately attributed later commentary is excluded.'));
+  box.dataset.contiguousWitness='Qum searchable pp.'+newContiguous[0].page+'–'+newContiguous.at(-1).page;
+  box.append(n('p','gn-yazdi-main-caveat',unit==='L.07'
+   ?'Consecutive Arabic–English al-Yazdī main ḥāshiya, Qum pp.39–47. Printed page 38 contains only marginal material. The text is not yet photographically or manuscript-collated.'
+   :'Consecutively translated searchable Qum main ḥāshiya, pp.30–37. Printed pages 31 and 35 are split where the subject changes. This is provisional, not photographic or manuscript-collated; later هامش commentary is excluded.'));
   for(const part of newContiguous){
    const item=n('article','gn-yazdi-excerpt gn-yazdi-contiguous-page');
    item.id='gn-yazdi-'+scope+'-'+part.id;
@@ -89,7 +91,9 @@ function make(unit,scope){
    }
    box.append(item);
   }
-  box.append(n('p','gn-yazdi-main-caveat','Previously selected L.04–L.06 excerpts remain indexed for citation but are not displayed twice. Qum pp.30–37 contain eight distinct source-page numbers and ten topic segments; this does not establish the whole genus chapter as finished.'));
+  box.append(n('p','gn-yazdi-main-caveat',unit==='L.07'
+   ?'Nine printed Qum main-text pages are rendered once instead of nine overlapping archival selections. The source prose is continuous through the end of the accident/concomitant classification, but source-image verification and manuscript collation remain open.'
+   :'Previously selected L.04–L.06 excerpts remain indexed for citation but are not displayed twice. Qum pp.30–37 contain eight distinct source-page numbers and ten topic segments; this does not establish the whole genus chapter as finished.'));
   return box;
  }
  for(const part of entries){
@@ -153,16 +157,18 @@ function setEnabled(v){
 function goTo(id){
  const continuous=window.GNAMMA_YAZDI_CONTIGUOUS_L03;
  const wider=window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS;
- const part=data.entries.find(e=>e.id===id)||(continuous?.sourcePages.find(e=>e.id===id)??null)||(wider?.blocks.find(e=>e.id===id)??null);
+ const newer=window.GNAMMA_YAZDI_CONTIGUOUS_L07;
+ const part=data.entries.find(e=>e.id===id)||(continuous?.sourcePages.find(e=>e.id===id)??null)||(wider?.blocks.find(e=>e.id===id)??null)||(newer?.sourceBlocks.find(e=>e.id===id)??null);
  if(!part)return false;
  setEnabled(true);ex.setMode('flow');
  reader.go(Number((part.unit||'L.03').slice(2)),'u-'+(part.unit||'L.03').replace(/[^a-zA-Z0-9-]/g,'-'));
  const scroll=()=>{
   let targetId=part.id.replace(/[^a-zA-Z0-9-]/g,'-');
   if(part.unit==='L.03'||part.id.startsWith('YZC-'))targetId='YZC-'+part.page;
-  else if(['L.04','L.05','L.06'].includes(part.unit||'')){
-   // Retain source-linked archive IDs after rendering full consecutive source pages.
-   const target=wider?.blocks.find(b=>b.unit===part.unit&&b.page===part.page);
+  else if(['L.04','L.05','L.06','L.07'].includes(part.unit||'')){
+   // Retain archive source IDs when the full Qum text has replaced overlapping excerpt cards.
+   const source=part.unit==='L.07'?newer?.sourceBlocks:wider?.blocks;
+   const target=source?.find(b=>b.unit===part.unit&&b.page===part.page);
    if(target)targetId=target.id;
   }
   const target=document.getElementById('gn-yazdi-flow-'+targetId);
@@ -175,5 +181,5 @@ document.addEventListener('gnamma-tahdhib-flow-built',mountFlow);
 document.addEventListener('gnamma-tahdhib-render',mount); // Render has already replaced source cards; mount now to avoid a WebKit frame race.
 document.addEventListener('gnamma-tahdhib-view',mount);
 mount();
-window.GnammaYazdiLayer=Object.freeze({enabled,setEnabled,mount,goTo,entryCount:data.entries.length,continuousPages:window.GNAMMA_YAZDI_CONTIGUOUS_L03?.sourcePages.length||0,additionalContinuousPages:[...new Set(window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks.map(b=>b.page)||[])].length,additionalContinuousBlocks:window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks.length||0,units:[...groups.keys()],complete:false});
+window.GnammaYazdiLayer=Object.freeze({enabled,setEnabled,mount,goTo,entryCount:data.entries.length,continuousPages:window.GNAMMA_YAZDI_CONTIGUOUS_L03?.sourcePages.length||0,additionalContinuousPages:[...new Set(window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks.map(b=>b.page)||[])].length,additionalContinuousBlocks:window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks.length||0,speciesContinuousPages:window.GNAMMA_YAZDI_CONTIGUOUS_L07?.sourceBlocks.length||0,units:[...groups.keys()],complete:false});
 })();
