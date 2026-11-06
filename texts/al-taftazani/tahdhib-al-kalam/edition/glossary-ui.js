@@ -10,7 +10,7 @@ const norm=lexical.norm;
 const glossary=lexical.terms.slice();
 // Logic glossary also indexes translated al-Yazdī snippets, as a distinct source layer.
 // The original kalām glossary continues to index only its own primary corpus.
-const commentary=isLogicGlossary()?window.GNAMMA_YAZDI_LAYER?.entries||[]:[];
+const commentary=()=>isLogicGlossary()?(window.GNAMMA_YAZDI_LAYER?.entries||[]):[];
 function isLogicGlossary(){return reader.isDivision===true;}
 const occurrences=glossary.map(term=>{
  const needle=norm(term.ar),ids=[];
@@ -58,8 +58,8 @@ function show(trigger){
    const top=el('div','gn-terms-term-row'),arabic=el('h3','gn-terms-ar',t.ar);arabic.lang='ar';arabic.dir='rtl';
    const english=el('strong','gn-terms-en',t.en);top.append(arabic,english);
    row.append(top,el('p','gn-terms-gloss',t.explanation));
-   if(commentary.length){
-    const glossHits=commentary.filter(p=>norm(p.arabic).includes(norm(t.ar))||
+   if(commentary().length){
+    const glossHits=commentary().filter(p=>norm(p.arabic).includes(norm(t.ar))||
       (t.sourceUrl&&Number(t.page)===Number(p.page)&&norm(p.arabic).includes(norm(t.ar).slice(0,3))));
     if(glossHits.length){
       const group=el('div','gn-terms-occurrences');
