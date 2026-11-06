@@ -100,6 +100,26 @@ jobs:
           assert 'هامش' in l07['interveningPage'] and all(x['page']!=38 for x in q)
           assert 'الإمام الرازي' in q[4]['ar'] and 'للمحقق الطوسي' in q[4]['ar']
           assert 'لزوم' in q[-1]['ar'] and 'الوجود الذهني' in q[-1]['ar']
+          q48_raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-continuous-q48-51-data.js').read_text(encoding='utf-8')
+          q48=json.loads(q48_raw.split('=',1)[1].strip().removesuffix(';'))
+          c=q48['blocks']
+          assert q48['certified'] is False and [x['page'] for x in c]==[48,49,50,51]
+          assert [x['unit'] for x in c]==['L.08','L.08','L.09','L.09']
+          assert [x['page'] for x in q48['gaps']]==[52,53]
+          assert 'وفيه تأمل' in c[1]['ar'] and 'حواشي التجريد' in c[1]['ar']
+          assert 'بالفصل القريب حد' in c[2]['ar'] and 'التعريف اللفظي' in c[3]['ar']
+          assert all(x['ar'] and x['en'] and str(x['page']) in x['sourceUrl'] and x['scanVerified'] is False for x in c)
+          q54_raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-continuous-q54-58-data.js').read_text(encoding='utf-8')
+          q54=json.loads(q54_raw.split('=',1)[1].strip().removesuffix(';'))
+          z=q54['sourceBlocks']
+          assert q54['certified'] is False and [x['page'] for x in z]==list(range(54,59))
+          assert all(x['unit']=='L.10' and x['ar'] and x['en'] and x['scanVerified'] is False for x in z)
+          assert z[0]['ar'].endswith('وهذا') and z[1]['ar']=='المعنى لا يتوقف معرفته على معرفة الخبر والقضية فلا دور.'
+          assert 'المحقق الشريف' not in z[1]['ar'] and len(z[1]['ar'].split())<16
+          assert 'الفارابي' in z[2]['ar'] and 'الرابطة' in z[2]['ar']
+          assert 'المحصورات' in z[3]['ar'] and 'الخارج' in z[4]['ar']
+          assert 'كليهما' in z[-1]['ar']
+          assert sum(len(x['sourceBlocks']) if 'sourceBlocks' in x else len(x['blocks']) for x in [q48,q54])==9
           assert all('التقريب ص' not in x['ar'] for x in w)
           assert len({x['unit'] for x in gloss['entries']})==19
           assert all(x.get('arabic') and x.get('english') and x.get('sourceUrl') and x.get('attribution') for x in gloss['entries'])
@@ -213,6 +233,8 @@ jobs:
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-l03-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-universals-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-p39-47-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q48-51-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q54-58-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-daruri-reader.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/indian-2013-outline-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-glossary-extensions.js
