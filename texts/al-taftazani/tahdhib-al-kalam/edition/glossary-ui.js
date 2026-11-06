@@ -68,6 +68,12 @@ function show(trigger){
        const link=el('a','gn-terms-source-link','p. '+p.page+' · '+p.id);
        link.href=p.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';
        link.title='View the original printed commentary source';group.append(link);
+       if(window.GnammaYazdiLayer?.goTo){
+        const read=el('button','gn-terms-source-link','Read '+p.id);
+        read.type='button';read.setAttribute('aria-label','Read al-Yazdī passage '+p.id+' in the reader');
+        read.addEventListener('click',()=>{hide();window.GnammaYazdiLayer.goTo(p.id)});
+        group.append(read);
+       }
       }
       if(glossHits.length>12)group.append(el('span','gn-terms-more','+'+(glossHits.length-12)+' more'));
       row.append(group);
