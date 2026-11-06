@@ -49,10 +49,14 @@ async function run(engine,browser,kind,viewport){
    assert((await ar.textContent()).trim().length>10,'Original Arabic missing');
    const links=await page.locator('#flow-passages .gn-yazdi-source').evaluateAll(xs=>xs.map(a=>a.href));
    assert(links.length===167&&links.every(x=>x.includes('/book_content/b/12170/')||x.includes('najafdesertlibrary.com/book/')),'Commentary pagination broken');
-   await rail.locator('[aria-label="Arabic"]').click();
-   assert(await page.locator('#flow-passages[data-view="ar"]').count()===1,'Arabic choice failed');
+   await rail.locator('[aria-label="English"]').click();
+   assert(await page.locator('#flow-passages[data-view="ar"]').count()===1,'Switching English off did not leave Arabic only');
    assert(await en.evaluate(el=>getComputedStyle(el).display)==='none','Arabic-only view leaks English commentary');
    await rail.locator('[aria-label="English"]').click();
+   assert(await page.locator('#flow-passages[data-view="both"]').count()===1,'Re-enabling English failed');
+   await rail.locator('[aria-label="Arabic"]').click();
+   assert(await page.locator('#flow-passages[data-view="en"]').count()===1,'Switching Arabic off did not leave English only');
+   await rail.locator('[aria-label="Arabic"]').click();
    assert(await page.locator('#flow-passages[data-view="both"]').count()===1,'Bilingual re-enable failed');
    await rail.locator('[aria-label="Text layers: Matn or Matn and commentary"]').click();
    await page.locator('#gn-logic-scrim [role="radio"]').first().click();
