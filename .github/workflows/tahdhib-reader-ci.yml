@@ -145,8 +145,58 @@ jobs:
           assert cond[2]['ar'].endswith('أسود و') and cond[3]['ar'].startswith('غير كاتب')
           assert len({x['id'] for x in [*mod,*cond]})==11
           assert all('م‍يرزا محمد علي' not in x['ar'] and 'التقريب ص' not in x['ar'] for x in [*mod,*cond])
-          allblocks=[*p,*w,*q,*c,*z,*mod,*cond]
-          assert len(allblocks)==47 and len({x['page'] for x in allblocks})==45
+          def source_file(name):
+              raw=(base/'tahdhib-al-mantiq'/'edition'/name).read_text(encoding='utf-8')
+              return json.loads(raw.split('=',1)[1].strip().removesuffix(';'))
+          contrad=source_file('yazdi-continuous-q70-73-data.js')
+          convert=source_file('yazdi-continuous-q74-80-data.js')
+          contrap=source_file('yazdi-continuous-q81-84-data.js')
+          c13=contrad['blocks'];c14=convert['blocks'];c15=contrap['blocks']
+          for data,blocks,unit,start,end in [
+              (contrad,c13,'L.13',70,73),
+              (convert,c14,'L.14',74,80),
+              (contrap,c15,'L.15',81,84)
+          ]:
+              assert data['certified'] is False
+              assert [x['page'] for x in blocks]==list(range(start,end+1))
+              assert all(x['unit']==unit and x['ar'] and x['en'] and x['photoChecked'] is False for x in blocks)
+              assert all(str(x['page']) in x['sourceUrl'] and 'ablibrary.net' in x['sourceUrl'] for x in blocks)
+              assert all('التقريب ص' not in x['ar'] and 'ميرزا محمد علي' not in x['ar'] for x in blocks)
+          assert 'اختلاف القضيتين' in c13[0]['ar'] and 'در تناقض' in c13[1]['ar']
+          assert 'على سبيل منع الخلو' in c13[2]['ar'] and 'كل فرد فرد' in c13[3]['ar']
+          assert 'مع بقاء الصدق' in c14[0]['ar'] and 'الموجبة إنما تنعكس جزئية' in c14[1]['ar']
+          assert 'الفارابي' in c14[3]['ar'] and 'الشيخ' in c14[3]['ar']
+          assert 'وفيه تأمل' in c14[5]['ar'] and 'بعض المنخسف' in c14[6]['ar']
+          assert 'القدماء' in c15[0]['ar'] and 'المتأخرون' in c15[0]['ar']
+          assert 'دليل الافتراض' in c15[2]['ar'] and 'يفرض ذات الموضوع' in c15[3]['ar']
+          assert len({x['id'] for x in [*c13,*c14,*c15]})==15
+          syll=source_file('yazdi-continuous-q86-94-data.js')
+          sy=syll['blocks']
+          assert syll['certified'] is False
+          assert syll['unit']=='L.16'
+          assert [x['page'] for x in sy]==list(range(86,95))
+          assert len({x['id'] for x in sy})==9
+          assert all(x['unit']=='L.16' and x['ar'] and x['en'] and x['photoChecked'] is False for x in sy)
+          assert all(str(x['page']) in x['sourceUrl'] and 'ablibrary.net' in x['sourceUrl'] for x in sy)
+          assert all('التقريب ص' not in x['ar'] and 'ميرزا محمد علي' not in x['ar'] for x in sy)
+          assert 'الجزء الصوري' in sy[0]['ar']
+          assert 'قياس المساواة' in sy[1]['ar'] and 'مقدمة خارجية' in sy[1]['ar']
+          assert 'والمتكرر أوسط' in sy[2]['ar']
+          assert 'الشكل الأول' in sy[3]['ar']
+          assert 'فعليتها' in sy[3]['ar'] and 'كلية الكبرى' in sy[4]['ar']
+          assert 'السالبتين' in sy[5]['ar'] and len(sy[5]['ar'].split())<30
+          assert 'الشكل الثاني' in sy[6]['ar'] and 'اختلاف' in sy[6]['ar']
+          assert 'الضروب المنتجة' in sy[7]['ar']
+          assert 'عكس الكبرى' in sy[8]['ar'] and 'الشكل الأول' in sy[8]['ar']
+          assert [x['page'] for x in gloss['entries'] if x['unit']=='L.16']==[86,86,98,98]
+          allblocks=[*p,*w,*q,*c,*z,*mod,*cond,*c13,*c14,*c15,*sy]
+          assert len(allblocks)==71 and len({x['page'] for x in allblocks})==69
+          assert all(x['page'] not in (38,52,53,85,95,96,97) for x in allblocks)
+          assert 85 not in [x['page'] for x in allblocks]
+          assert sum(x.get('unit', 'L.03')=='L.13' for x in allblocks)==4
+          assert sum(x.get('unit', 'L.03')=='L.14' for x in allblocks)==7
+          assert sum(x.get('unit', 'L.03')=='L.15' for x in allblocks)==4
+          assert sum(x.get('unit', 'L.03')=='L.16' for x in allblocks)==9
           assert sum(x.get('unit', 'L.03')=='L.11' for x in allblocks)==6
           assert sum(x.get('unit', 'L.03')=='L.12' for x in allblocks)==5
           assert all('التقريب ص' not in x['ar'] for x in w)
@@ -266,6 +316,10 @@ jobs:
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q54-58-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q59-64-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q65-69-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q70-73-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q74-80-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q81-84-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q86-94-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-daruri-reader.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/indian-2013-outline-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-glossary-extensions.js
