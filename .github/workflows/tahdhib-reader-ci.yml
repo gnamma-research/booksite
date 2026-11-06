@@ -120,6 +120,35 @@ jobs:
           assert 'المحصورات' in z[3]['ar'] and 'الخارج' in z[4]['ar']
           assert 'كليهما' in z[-1]['ar']
           assert sum(len(x['sourceBlocks']) if 'sourceBlocks' in x else len(x['blocks']) for x in [q48,q54])==9
+          modal_raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-continuous-q59-64-data.js').read_text(encoding='utf-8')
+          modal=json.loads(modal_raw.split('=',1)[1].strip().removesuffix(';'))
+          mod=modal['blocks']
+          assert modal['certified'] is False and [x['page'] for x in mod]==list(range(59,65))
+          assert all(x['unit']=='L.11' and x['ar'] and x['en'] and x['sourceLayer']=='main شرح' and x['sourcePhotographyChecked'] is False for x in mod)
+          assert 'مادة القضية' in mod[0]['ar'] and 'جهة القضية' in mod[0]['ar']
+          assert 'الضرورة' in mod[1]['ar'] and 'الدوام' in mod[1]['ar']
+          assert 'ثمان' in mod[2]['ar'] and 'مركبة' in mod[2]['ar']
+          assert 'ستة عشر' in mod[4]['ar'] and 'ثلاثة' in mod[4]['ar'] and 'التسعة الباقية' in mod[4]['ar']
+          assert 'القضايا السبع' in mod[5]['ar']
+          conditional_raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-continuous-q65-69-data.js').read_text(encoding='utf-8')
+          conditional=json.loads(conditional_raw.split('=',1)[1].strip().removesuffix(';'))
+          cond=conditional['blocks']
+          assert conditional['certified'] is False and [x['page'] for x in cond]==list(range(65,70))
+          assert all(x['unit']=='L.12' and x['ar'] and x['en'] and x['sourceLayer']=='main شرح' and x['sourcePhotographyChecked'] is False for x in cond)
+          assert 'لزومية' in cond[0]['ar'] and 'اتفاقية' in cond[0]['ar']
+          assert 'الحقيقية' in cond[1]['ar'] and 'مانعة الخلو' in cond[2]['ar']
+          assert 'تقادير المقدم' in cond[3]['ar'] and 'عن التمام' in cond[4]['ar']
+          assert 'أقسام الشرطية' not in cond[0]['ar']
+          assert mod[5]['ar'].endswith('على') and cond[0]['ar'].startswith('كلها')
+          assert cond[0]['ar'].endswith('كعلية طلوع') and cond[1]['ar'].startswith('الشمس')
+          assert cond[1]['ar'].endswith('في الصدق فقط') and cond[2]['ar'].startswith('نحو')
+          assert cond[2]['ar'].endswith('أسود و') and cond[3]['ar'].startswith('غير كاتب')
+          assert len({x['id'] for x in [*mod,*cond]})==11
+          assert all('م‍يرزا محمد علي' not in x['ar'] and 'التقريب ص' not in x['ar'] for x in [*mod,*cond])
+          allblocks=[*p,*w,*q,*c,*z,*mod,*cond]
+          assert len(allblocks)==47 and len({x['page'] for x in allblocks})==45
+          assert sum(x['unit']=='L.11' for x in allblocks)==6
+          assert sum(x['unit']=='L.12' for x in allblocks)==5
           assert all('التقريب ص' not in x['ar'] for x in w)
           assert len({x['unit'] for x in gloss['entries']})==19
           assert all(x.get('arabic') and x.get('english') and x.get('sourceUrl') and x.get('attribution') for x in gloss['entries'])
@@ -235,6 +264,8 @@ jobs:
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-p39-47-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q48-51-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q54-58-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q59-64-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q65-69-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-daruri-reader.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/indian-2013-outline-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-glossary-extensions.js
