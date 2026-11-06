@@ -745,12 +745,270 @@ const logicalUniversalsAndPropositions=[
 /* Homographs can have distinct technical senses. In particular المعرف without
  * vowels can be muʿarrif (defining expression) or muʿarraf (definiendum).
  * Deduplicate by Arabic headword AND English sense, not vowelless Arabic alone. */
+const modalConditionalTerms=[
+  {
+    "ar": "معدولة الموضوع",
+    "en": "Infinite-negated subject",
+    "explanation": "Negation incorporated within the subject term, not a denial of the whole predicative relation.",
+    "page": 59,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "معدولة المحمول",
+    "en": "Infinite-negated predicate",
+    "explanation": "Negation incorporated within the predicate term while the quality of the assertion may remain affirmative.",
+    "page": 59,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "محصلة",
+    "en": "Simple-term proposition",
+    "explanation": "A proposition whose subject and predicate do not contain negation as a term component.",
+    "page": 59,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "مادة القضية",
+    "en": "Matter of a proposition",
+    "explanation": "The modal status—necessity, permanence, impossibility, etc.—actually obtaining for the relation independently of how the assertion describes it.",
+    "page": 59,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "جهة القضية",
+    "en": "Stated modality",
+    "explanation": "The spoken or mentally represented characterization of the modal quality of a proposition; it may agree or disagree with its actual matter.",
+    "page": 59,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "الموجهة",
+    "en": "Modalized proposition",
+    "explanation": "A proposition expressly specifying a modality of its affirmative or negative predicative relation.",
+    "page": 59,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "الضرورية المطلقة",
+    "en": "Unrestricted necessary proposition",
+    "explanation": "Necessity of the relation as long as the subject exists as such, not restricted by a descriptive attribute or specified time.",
+    "page": 60,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "المشروطة العامة",
+    "en": "General description-conditioned necessity",
+    "explanation": "Necessary predication while the subject bears a specified title/description; not necessarily throughout the subject's existence.",
+    "page": 60,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "الوقتية المطلقة",
+    "en": "Unrestricted time-specific necessity",
+    "explanation": "Necessity obtaining at a specified time without an additional nonpermanence qualification.",
+    "page": 60,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "المنتشرة المطلقة",
+    "en": "Unrestricted dispersed-time necessity",
+    "explanation": "Necessary predication at an unspecified time, without the additional nonpermanence qualification.",
+    "page": 60,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "الدائمة المطلقة",
+    "en": "Unrestricted permanence",
+    "explanation": "A relation that does not in fact separate from the subject throughout its existence, without a claim that separation is intrinsically impossible.",
+    "page": 60,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "العرفية العامة",
+    "en": "General customary permanence",
+    "explanation": "A relation persisting as long as the subject bears the named description, by ordinary usage.",
+    "page": 60,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "المطلقة العامة",
+    "en": "General actual proposition",
+    "explanation": "An affirmative or negative relation obtaining actually at some time, without express necessity or permanence.",
+    "page": 61,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/61?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "الممكنة العامة",
+    "en": "General possible proposition",
+    "explanation": "The necessity of the opposite relation is denied; this is not necessarily the bilateral openness of special possibility.",
+    "page": 61,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/61?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "القضية المركبة",
+    "en": "Composite modal proposition",
+    "explanation": "One main affirmative or negative judgment qualified by an implicit opposing judgment, commonly using nonpermanence or nonnecessity.",
+    "page": 61,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/61?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "اللادوام الذاتي",
+    "en": "Intrinsic nonpermanence",
+    "explanation": "Denial that the relation lasts for the whole existence of the subject; its contradictory obtains at some time.",
+    "page": 62,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/62?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "المشروطة الخاصة",
+    "en": "Special description-conditioned necessity",
+    "explanation": "Necessity while the named description is present, together with nonpermanence over the subject's existence as such.",
+    "page": 62,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/62?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "العرفية الخاصة",
+    "en": "Special customary permanence",
+    "explanation": "Description-conditioned permanence combined with intrinsic nonpermanence.",
+    "page": 62,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/62?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "اللاضرورة الذاتية",
+    "en": "Intrinsic nonnecessity",
+    "explanation": "Denial that the relation is necessary throughout the subject's existence, implying possibility of its contrary.",
+    "page": 62,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/62?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "الوجودية اللاضرورية",
+    "en": "Existential nonnecessary proposition",
+    "explanation": "General actual predication conjoined with denial of intrinsic necessity.",
+    "page": 63,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/63?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "الوجودية اللادائمة",
+    "en": "Existential nonpermanent proposition",
+    "explanation": "General actual predication conjoined with denial of intrinsic permanence.",
+    "page": 63,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/63?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "الممكنة الخاصة",
+    "en": "Special possible proposition",
+    "explanation": "Both the affirmed relation and its contrary are possible, composed of two differently qualified general-possibility judgments.",
+    "page": 64,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/64?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "المركبات المعتبرة",
+    "en": "Recognized composite modals",
+    "explanation": "Seven named composite propositions accepted by this historical modal taxonomy, distinct from further coherent but unrecognized combinations.",
+    "page": 64,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/64?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "اللزومية",
+    "en": "Relationally necessary conditional",
+    "explanation": "A connected conditional whose link between antecedent and consequent is grounded in a relation, rather than accidental conjunction.",
+    "page": 65,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/65?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "الاتفاقية",
+    "en": "Accidental conditional",
+    "explanation": "A conditional connection or disjunctive opposition treated as dependent on the particular matter rather than a connection intrinsic to the alternatives.",
+    "page": 65,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/65?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "مانعة الجمع",
+    "en": "Truth-excluding disjunction",
+    "explanation": "A disjunction in which the alternatives cannot both be true, though their being false together may be permitted or left unexamined.",
+    "page": 67,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/67?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "مانعة الخلو",
+    "en": "Falsity-excluding disjunction",
+    "explanation": "A disjunction in which the alternatives cannot both be false; their simultaneous truth may be permitted or left unexamined.",
+    "page": 67,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/67?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "المنفصلة الحقيقية",
+    "en": "Genuine disjunction",
+    "explanation": "A disjunction excluding both joint truth and joint falsity, as in the even/odd distinction in its traditional setting.",
+    "page": 66,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/66?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "العنادية",
+    "en": "Intrinsic opposition",
+    "explanation": "The incompatibility of conditional alternatives arising from their meanings rather than the accidental matter of their application.",
+    "page": 67,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/67?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "تقادير المقدم",
+    "en": "Antecedent suppositions",
+    "explanation": "The possible situations or assumptions under which a conditional antecedent is considered when determining the conditional's quantity.",
+    "page": 68,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/68?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "سور الشرطية",
+    "en": "Conditional quantifier",
+    "explanation": "A word such as kullamā, qad yakūn or laysa al-batta that specifies how broadly the conditional connection is asserted or denied.",
+    "page": 68,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/68?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  },
+  {
+    "ar": "طرفا الشرطية",
+    "en": "Components of a conditional",
+    "explanation": "Antecedent and consequent, each originally a categorical or conditional proposition before incorporation under a connective.",
+    "page": 69,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/69?lang=ar",
+    "sourceLayer": "Mullā ʿAbd Allāh al-Yazdī main Qum searchable شرح Q59–69; digital transcription only, page photography/manuscripts uncollated"
+  }
+];
 const lemmaKey=t=>prior.norm(t.ar)+' ⟐ '+t.en.toLocaleLowerCase();
 const seen=new Set(prior.terms.map(lemmaKey));
 const terms=prior.terms.slice();
-for(const term of [...extra,...supplementary,...universals,...speciesTerms,...logicalUniversalsAndPropositions]){
+for(const term of [...extra,...supplementary,...universals,...speciesTerms,...logicalUniversalsAndPropositions,...modalConditionalTerms]){
  const key=lemmaKey(term);
  if(!seen.has(key)){terms.push(term);seen.add(key)}
 }
-window.GNAMMA_TAHDHIB_GLOSSARY=Object.freeze({...prior,terms,version:'logic-plus-yazdi-definition-v5',historicallyCollated:false});
+window.GNAMMA_TAHDHIB_GLOSSARY=Object.freeze({...prior,terms,version:'logic-plus-yazdi-modal-conditional-v6',historicallyCollated:false});
 })();
