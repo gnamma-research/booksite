@@ -171,3 +171,20 @@ Current counts: 177 historical selected source quotes; **71** consecutive biling
 
 ### Boundary correction, 7 November 2026 — **critical for completeness calculations**
 The former project's identification of **Q114** as the final main commentary page was **wrong**. Direct inspection of the Qum searchable text shows al-Yazdī's running `شرح` through Q115–123: e.g. [p115](https://ablibrary.net/book_content/b/12170/115?lang=ar), [p118](https://ablibrary.net/book_content/b/12170/118?lang=ar), and [p123](https://ablibrary.net/book_content/b/12170/123?lang=ar). Page 123 includes the explicit completion formula `قد تمت النسخة المسماة ب « الحاشية في المنطق » من مؤلفات ... ملا عبد الله اليزدي`, after the conclusion's prayer. [Q124](https://ablibrary.net/book_content/b/12170/124?lang=ar) has no searchable main text; [Q125](https://ablibrary.net/book_content/b/12170/125?lang=ar) is headed `حواشي الحاشية` and marks the beginning of the extensive secondary marginal apparatus. **The working printed main-text range ends on Q123, not Q114**, subject to image/witness certification. Do not count Q125–400 as al-Yazdī's principal `شرح` merely because the volume carries his name on all pages. We corrected the edition register as soon as this was established; the previous assertion is superseded, not silently retained.
+
+
+## 7 November — complete ending and 29 further main-text page/topic blocks
+The latest seven source files now cover Qum **95–108, 110–123** as **29 further nonduplicating bilingual source blocks**. Together with all earlier consecutive work this yields **100 bilingual consecutive blocks over 97 distinct Qum printed positions**, from Q22 through the correct last main-text page **Q123**. Only the two introductory divisions L.01–L.02 remain **excerpt-only**, and gaps due to printed rubrics or possible text-column ambiguity must still be investigated by photographs.
+
+The Qum main `شرح` finishes after al-Yazdī's own supplication on Q123. The adjacent `قد تمت النسخة ...` is a **printed copy completion notice**, stored as independently attributed colophon metadata rather than authorial speech. The Qum p125 printed heading is `حواشي الحاشية`: any further gloss material requires a separate layer with its own named sources, not automatic inclusion in the primary Yazdī translation. This corrects the former Q114 ending misconception.
+
+**CR-41**: al-Yazdī criticizes the matn's casual fourth-figure outcome classification on Q97 (the third mood yields *universal negative*).
+**CR-42**: Q101's claimed original second-figure modal incompatibility criterion is an historical claim, to be tested against earlier commentaries.
+**CR-43**: Q103 exceptive inference distinguishes relation-grounded conditional from accidental connection; Q104 reduces reductio to at least two syllogisms.
+**CR-44**: Q107–108 develops the causal premise of analogy and two uṣūl-informed ways to establish it; Q108 contains an unresolved suspicious digital transcription, retained in source.
+**CR-45**: Q112's `wāsiṭa fī al-ithbāt` vs `wāsiṭa fī al-thubūt` separates knowledge and real explanation in demonstration.
+**CR-46**: Q114–118 questions science's separate subject and the restriction to proper accidents, and preserves the status of unnamed reported `بالبرهان` copies.
+**CR-47**: Q119–121 concerns purpose, benefit, classification of logic and the nine-or-ten logical divisions; do not conflate with our nineteen editorial text divisions.
+**CR-48**: Q122–123 gives methods of composing and analyzing proofs, forming definitions and attaining certainty instead of imitation; the closing prayer is authorial and the subsequent completion notice is not.
+
+The new [Q95–123 critical dossier](YAZDI_Q95_123_CRITICAL.md) contains exact printed source locators and explicit gaps. Current reader counts: **100 continuous blocks + 23 excerpt-only cards = 123 visible**; archive 177 preserved. **No manuscript stemma, no complete photographic collation, no final critical edition is asserted**.
