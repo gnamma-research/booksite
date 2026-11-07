@@ -25,9 +25,17 @@ assert all(set(e.get('sources', [])) <= all_source_ids for e in data['edges'])
 
 families = data.get('textual_families', [])
 assert len(families) >= 20
-assert {'najat','uyun','shifa','isharat'} <= {f['id'] for f in families}
+assert {'najat','uyun','shifa','isharat','muhassal'} <= {f['id'] for f in families}
 assert all(f['within_family_relationships'] == sum(e['source'] in f['member_ids'] and e['target'] in f['member_ids'] for e in data['edges']) for f in families)
 assert len({f['id'] for f in families}) == len(families)
+# A work remains a single canonical node even when multiple routes reference it.
+family_by_id = {f['id']: f for f in families}
+assert 'razi_isharat' in family_by_id['isharat']['member_ids']
+assert 'razi_sharh_uyun' in family_by_id['uyun']['member_ids']
+assert family_by_id['muhassal']['root'] == 'razi_muhassal'
+assert set(family_by_id['muhassal']['member_ids']) == {'razi_muhassal','tusi_talkhis','katibi_mufassal'}
+assert {'F_e08','F_e09'} == {e['id'] for e in data['edges'] if e['source'] in family_by_id['muhassal']['member_ids'] and e['target'] in family_by_id['muhassal']['member_ids']}
+
 for f in families:
     members = f['member_ids']
     assert f['root'] in members
@@ -39,6 +47,7 @@ script = (ROOT/'atlas-app.js').read_text(encoding='utf-8')
 assert 'data-text-family' in script
 assert "textualMembers.get(state.textFamily)" in script
 assert 'chooseTextFamily' in script
+assert 'data-family-critical' in script and 'criticalFamilyEdges' in script
 assert 'ia-region-network-v3' in script
 assert 'data-text-route' in script
 assert 'ia-polity-gap' in script
@@ -67,6 +76,7 @@ assert all((not n.get('temporal') or n['temporal'].get('anchor') is None or
 page_file = ROOT/'index.html'
 page = page_file.read_text(encoding='utf-8')
 assert 'id="ia-text-family-v3"' in page
+assert 'ia-razi-shortcut' not in page and 'data-action="razi-responses"' not in page
 pat = r'(<script type="application/json" data-atlas>)(.*?)(</script>)'
 assert len(re.findall(pat, page, re.S)) == 1
 embedded = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
@@ -81,8 +91,8 @@ manifest = {
     'title': 'Texts in Time · Islamic Intellectual Atlas',
     'revision': 'tajrid-critical-links-8-2026-10-31',
     'status': 'working research',
-    'ui_revision': 'tajrid-reader-return-links-8-2026-10-31',
-    'mobile_interface_note': 'Compact phone introduction, search-first controls, disclosed research/filters, inline family shortcuts; chart appears high on first screen.',
+    'ui_revision': 'text-family-critical-links-2026-11-07',
+    'mobile_interface_note': 'Search and text-family selector; critical-links filtering appears contextually within a selected family, not as an author-specific toolbar button.',
     'whole_range_note': 'Drag the six-dot grip from Whole atlas to restore a movable focus window, or tap another time on the overview to seek.',
     'date_marker_note': 'Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.',
     'entries': len(data['nodes']),
@@ -95,7 +105,7 @@ manifest = {
     'scholarly_networks': len(data['history']['networks']),
     'classification_layers': ['intellectual tradition','textual family','regional/historical network'],
     'textual_family_routes': len(families),
-    'textual_family_note': 'Book-centred selective commentary/translation/reception networks; a source work can be in several families without implying doctrinal agreement',
+    'textual_family_note': 'Book-centred, overlapping routes with stable shared work IDs; Muḥaṣṣal and its commentaries are a distinct route, while Rāzī’s Sharḥ al-Ishārāt remains within the Ishārāt family.',
     'tahdhib_added_entries': 26,
     'avicennian_extension_entries': 11,
     'avicennian_new_textual_routes': 2,
