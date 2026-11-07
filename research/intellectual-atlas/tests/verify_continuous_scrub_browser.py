@@ -65,10 +65,12 @@ async def exercise(engine,width,height,mobile=False):
              document.querySelector('[data-chart]')) & Node.DOCUMENT_POSITION_PRECEDING
         })""")
         assert not first_fold['introOpen'] and not first_fold['moreOpen'],first_fold
-        assert first_fold['shortcuts']==3,first_fold
+        assert first_fold['shortcuts']==0,first_fold  # the obsolete always-visible three drawers were removed
         assert first_fold['chartTop']<(680 if height>=600 else 600),first_fold
         await page.screenshot(path=str(OUT/f'atlas_mobile_initial_{engine.name}_{width}x{height}.png'),full_page=False)
-        # Only for the subsequent full-control regression suite, not the public first screen.
+    # Advanced years live in an intentionally collapsed menu on all screen sizes.
+    # Expand it after checking the uncluttered public first-screen rendering.
+    if not await page.locator('.ia-secondary-controls').evaluate('(e)=>e.open'):
         await page.locator('.ia-secondary-controls > summary').click()
     for name,selector in [('overview','.ia-travel-grip'),('diagram','[data-chart]')]:
         await page.evaluate("()=>document.querySelector('#kalam-timeline-app-v3').atlasTest.setRange(1075,1450)")
