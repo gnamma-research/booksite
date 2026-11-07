@@ -45,7 +45,14 @@
     "units": 40,
     "completeReaderFromFirstPage": false,
     "previousSectionsNotImported": "1.1–4.537",
-    "readerUnitCoverageRelativeToFullTranslation": "partial late segment only"
+    "readerUnitCoverageRelativeToFullTranslation": "partial late segment only",
+    "files": [
+      "r10.json",
+      "r11a.json",
+      "r11b.json"
+    ],
+    "expectedSequence": "contiguous",
+    "additionProtocol": "Append one new increment JSON filename here, update units/lastSection and translationProgress; reader discovers it automatically."
   },
   "fileSha": [
     {
