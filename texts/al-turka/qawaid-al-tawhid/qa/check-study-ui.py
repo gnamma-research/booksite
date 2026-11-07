@@ -77,6 +77,14 @@ with sync_playwright() as p:
      'لا يتحقق الإدراك' in page.locator('.gn-source-ar').inner_text()
      and 'not a collated full transcription' in page.locator('#gn-study-content').inner_text())
   page.locator('[data-open-study="references"]').click()
+  page.locator('[data-open-source="ibn-arabi-fusus"]').first.click()
+  ck('Fusus primary-source quote index resolves to the original Arabic',
+     'العالم ظهر في النفس' in page.locator('.gn-source-ar').inner_text())
+  page.locator('[data-open-study="references"]').click()
+  page.locator('[data-open-source="ibn-arabi-dawair"]').first.click()
+  ck('Insha al-Dawair source quote index resolves to the original Arabic',
+     'اعلم أن الوجود والعدم' in page.locator('.gn-source-ar').inner_text())
+  page.locator('[data-open-study="references"]').click()
   page.locator('[data-open-source="q-24-40"]').first.click()
   ck('Quran 24:40 complete verse in card','وَمَنْ لَمْ يَجْعَلِ' in page.locator('.gn-source-ar').inner_text())
   page.locator('[data-open-study="references"]').click()
