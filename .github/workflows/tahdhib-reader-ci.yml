@@ -231,8 +231,32 @@ jobs:
           col=late['yazdi-continuous-q119-123-data.js']['colophon']
           assert 'قد تمت النسخة' in col['text'] and 'Nonauthorial' in col['attribution']
           assert late['yazdi-continuous-q119-123-data.js']['nextLayer']['page']==125
-          allblocks=[*p,*w,*q,*c,*z,*mod,*cond,*c13,*c14,*c15,*sy,*q95,*q98,*q102,*q105,*q110,*q114,*q119]
-          assert len(allblocks)==100 and len({x['page'] for x in allblocks})==97
+          opening=source_file('yazdi-continuous-q7-13-data.js')['blocks']
+          intro=source_file('yazdi-continuous-q14-19-data.js')['blocks']
+          assert [x['page'] for x in opening]==list(range(7,14))
+          assert [x['page'] for x in intro]==list(range(14,20))
+          assert all(x['ar'] and x['en'] and x['photoChecked'] is False for x in [*opening,*intro])
+          allblocks=[*opening,*intro,*p,*w,*q,*c,*z,*mod,*cond,*c13,*c14,*c15,*sy,*q95,*q98,*q102,*q105,*q110,*q114,*q119]
+          assert len(allblocks)==113 and len({x['page'] for x in allblocks})==110
+          assert len({x['id'] for x in allblocks})==113
+          groups=[
+              [x for x in allblocks if 7<=x['page']<=66],
+              [x for x in allblocks if 67<=x['page']<=123]
+          ]
+          assert [len({x['page'] for x in group}) for group in groups]==[55,55]
+          assert [len(group) for group in groups]==[57,56]
+          counts=[(sum(len(x['ar'].split()) for x in group),sum(len(x['en'].split()) for x in group)) for group in groups]
+          assert counts==[(8734,11229),(10589,12662)],counts
+          batch_dir=base/'tahdhib-al-mantiq'/'edition'/'batches'
+          import re
+          for n,(start,end,blocks_count) in enumerate([(7,66,57),(67,123,56)],1):
+              md=(batch_dir/f'yazdi-main-batch-0{n}-q{start}-{end}.md').read_text(encoding='utf-8')
+              assert len(re.findall(r'^## Qum printed page \d+ ',md,re.M))==55
+              assert md.count('**العربية — Original**')==blocks_count
+              assert md.count('**English — Translation**')==blocks_count
+              assert f'## Qum printed page {start} ' in md and f'## Qum printed page {end} ' in md
+              assert (batch_dir/f'batch-0{n}-q{start}-{end}.html').exists()
+          assert (batch_dir/'batch-reader.css').exists() and (batch_dir/'batch-reader.js').exists()
           assert all(x['page'] not in (38,52,53,85,109,124,125) for x in allblocks)
           assert sum(x.get('unit','L.03')=='L.16' for x in allblocks)==16
           assert sum(x.get('unit','L.03')=='L.17' for x in allblocks)==4
@@ -355,6 +379,9 @@ jobs:
           node --check tools/tahdhib/yazdi_layer_qa.mjs
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-layer-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-layer.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q7-13-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q14-19-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/batches/batch-reader.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-l03-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-universals-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-p39-47-data.js
