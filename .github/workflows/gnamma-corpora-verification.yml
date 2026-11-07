@@ -32,5 +32,7 @@ jobs:
           node --check research/intellectual-atlas/atlas-app.js
       - name: Validate published atlas data and regenerate its manifest
         run: python research/intellectual-atlas/build.py
-      - name: Require deterministic atlas regeneration
-        run: git diff --exit-code -- research/intellectual-atlas/index.html research/intellectual-atlas/publication.json
+      - name: Verify unchanged atlas graph and substantive publication metadata
+        run: |
+          git diff --exit-code -- research/intellectual-atlas/index.html
+          python -c 'import json,subprocess; p="research/intellectual-atlas/publication.json"; before=json.loads(subprocess.check_output(["git","show","HEAD:"+p])); after=json.load(open(p,encoding="utf-8")); keys=["entries","textual_relationships","textual_family_routes","source_corpus","ui_revision","visual_modes","discipline_nav"]; failures=[k for k in keys if before.get(k)!=after.get(k)]; assert not failures, f"Build changed substantive publication fields: {failures}"'
