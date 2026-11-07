@@ -526,9 +526,9 @@
       ).join('')+'</div>';
     }
     function plannedList(label,note,examples){
-      return '<div class="ia-explore-planned" role="note"><strong>'+esc(label)+' · corpus not yet imported</strong>'+
+      return '<div class="ia-explore-planned" role="note"><strong>'+esc(label)+' · dedicated atlas relationship map pending</strong>'+
         '<p>'+esc(note)+'</p>'+
-        (examples&&examples.length?'<p class="ia-explore-note">Examples for future source registration, not active atlas nodes:</p><ul>'+examples.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>':'')+'</div>';
+        (examples&&examples.length?'<p class="ia-explore-note">Related titles for this research route; some now have verified digital source files in the separate corpus library, but their commentary networks are not automatically mapped:</p><ul>'+examples.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>':'')+'</div>';
     }
     function renderExplore(){
       const choices=q('[data-science-choices]'),body=q('[data-science-content]');
@@ -603,7 +603,13 @@
         const pair=notes[activeScienceTab]||notes.nahw;
         html+=plannedList('Arabic language sciences',pair[0],pair[1]);
       }
-      if(activeScience!=='all')html+='<p class="ia-explore-note">Selecting a research discipline never invents a mapped collection: only imported, source-audited works can open a network.</p>';
+      // Curated OpenITI versions are available even when their issue-level historical
+      // relationships have not yet entered the canonical 404-node intellectual map.
+      const sourceScience=activeScience==='arabic'&&['nahw','sarf','balagha','lugha'].includes(activeScienceTab)?activeScienceTab:
+        ['all','fiqh','hadith','tafsir','tasawwuf','philosophy'].includes(activeScience)?activeScience:'arabic';
+      const sourceHash='#science='+encodeURIComponent(sourceScience)+(sourceScience==='fiqh'&&activeMadhhab!=='all'?'&madhhab='+encodeURIComponent(activeMadhhab):'');
+      html+='<div class="ia-explore-library"><strong>Arabic source texts are now available</strong><p>28 source-attested OpenITI digital versions; 5 full files mirrored byte-for-byte, 23 pinned for retrieval on demand. Work identity and text-file provenance are checked; critical collation is not finished.</p><a href="corpora/'+sourceHash+'">Open the Arabic Source Library</a></div>';
+      if(activeScience!=='all')html+='<p class="ia-explore-note">The source reader is operational. Source availability is distinct from a verified scholarly commentary, legal-issue or isnād relationship graph.</p>';
       html+='<div class="ia-explore-footer"><button type="button" data-action="show-all-mapped">Return to the mapped atlas</button> <button type="button" data-action="open-about">Research notes &amp; downloads</button> <a href="../../texts/">Published GNAMMA texts</a></div>';
       body.innerHTML=html;
     }
