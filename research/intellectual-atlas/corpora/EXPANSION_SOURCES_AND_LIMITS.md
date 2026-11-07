@@ -1,3 +1,13 @@
+## Subject-first graph interface and early jurists (7 November 2026)
+
+The current atlas now uses the imported bibliography **as graphical nodes**, never as the primary output of a generic list or a period-count heatmap. It has distinct **interactive SVG** networks for each science: school and text-family hubs branch to Arabic-titled individual book nodes; selecting a hub redraws the graph at finer detail, and selecting a book opens its exact source citation in a detail panel.
+
+The four later Sunni madhhabs are not projected into early Islamic history. The additional **Early jurists** and **Other schools** graph routes include differentiated personal juristic circles, individually known jurists, historically named non-four traditions, and early eponyms of later schools. The [16-entry sourced historical register](early-jurists.json) has specific status and historical citation URLs, and books are associated with historical jurists only from author metadata. This does not assert that all early scholars founded lasting doctrinal schools. Historiographical references include Hallaq's *Origins and Evolution of Islamic Law* (Cambridge, chapter 7), plus specialist historical study of al-Thawrī.
+
+The actual source datasets remain the **4,157 linked catalogue entries** and **1,857 pinned-release OpenITI candidates**. No claim of complete Arabic text acquisition, manuscript collation, or cross-catalogue deduplication is implied by drawing book nodes on a graph.
+
+---
+
 ## 7 November 2026 — complete bibliographic categories now integrated into the actual GNAMMA map
 
 The original **714-record prioritised Alreq shortlist** described below has been superseded for map coverage by `manuscript-full.json`, the **complete 4,157-record snapshot** of the eight publicly visible category lists. Its category counts are: four fiqh schools (1,033 / 380 / 782 / 199), uṣūl (501), naḥw (892), ṣarf (109), and balāgha (261). The earlier shortlist is retained as a historical acquisition-priority sample, not the limit of the main map.
