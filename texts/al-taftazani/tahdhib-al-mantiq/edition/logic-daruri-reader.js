@@ -142,6 +142,7 @@ function openSheet(mode){
   group(body,'References & personal desk',[
    ['Dictionary','Editorial terms and commentary citations',()=>legacy('Dictionary')],
    ['Critical witnesses & coverage','Sources, variants, publication status',()=>{window.location.href='critical-status.html'}],
+   ['Later glosses · Q125–154','Separate attributed selected translations; 30 source positions',()=>{window.location.href='hawashi-q125-154.html'}],
    ['Subject index','Source-linked thematic topics',()=>legacy('Subject index')],
    ['Saved & history','Bookmarks and reading positions',()=>legacy('Saved')],
    ['My notes','Private passage annotations',()=>legacy('Notes')],
