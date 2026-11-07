@@ -111,8 +111,8 @@ manifest = {
     'title': 'Texts in Time · Islamic Intellectual Atlas',
     'revision': 'tajrid-critical-links-8-2026-10-31',
     'status': 'working research',
-    'ui_revision': 'unified-explore-with-source-attested-corpora-2026-11-07',
-    'mobile_interface_note': 'Chart-first Explore sheet for philosophy/kalām/logic, fiqh/uṣūl, hadith, tafsīr, taṣawwuf, grammar and balāgha; linked 30-book OpenITI source library with five local byte-matched texts and 25 pinned on-demand sources.',
+    'ui_revision': 'fiqh-source-maps-and-madhhab-routing-2026-11-07',
+    'mobile_interface_note': 'Chart-first Explore menu with functioning madhhab-specific Fiqh source maps, Hadith, Tafsīr and Arabic-sciences source maps; 30 OpenITI versions (five local byte-matched, 25 pinned on demand). These are book authorities, not collation of legal issues or isnāds.',
     'whole_range_note': 'Drag the six-dot grip from Whole atlas to restore a movable focus window, or tap another time on the overview to seek.',
     'date_marker_note': 'Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.',
     'entries': len(data['nodes']),
@@ -124,7 +124,7 @@ manifest = {
     'neoplatonic_new_relationships': 36,
     'scholarly_networks': len(data['history']['networks']),
     'classification_layers': ['intellectual tradition','textual family','regional/historical network','browse discipline','separate source-text witness catalogue'],
-    'visual_modes': ['chronological timeline','source-backed text network','work connections','catalogue','evidence/audit'],
+    'visual_modes': ['chronological timeline','source-backed text network','work connections','catalogue','evidence/audit','source-attested disciplinary work maps'],
     'discipline_nav': ['mapped works','philosophy, kalām and logic','fiqh and uṣūl (source tranche)','hadith (source tranche)','tafsīr (source tranche)','taṣawwuf (selective mapped texts and source tranche)','Arabic language sciences (source tranche)'],
     'textual_family_routes': len(families),
     'source_corpus': {
@@ -153,7 +153,7 @@ manifest = {
     'individual_reign_rows': 0,
     'pdf_pages': {'illustrated_overview_legacy': 15, 'illustrated_reference_legacy': 204,
                   'historical_revision7_register': 84, 'focused_tahdhib_supplement': 9},
-    'pdf_note': ('The live web atlas includes the November 2026 Explore and 30-version source-library integration. '
+    'pdf_note': ('The live web atlas includes a functioning Fiqh/madhhab source map and the 30-version source library; the source map has no inferred legal or isnād edges. '
                  'The revision 8 offline ZIP and earlier PDFs were issued before these updates and contain no new corpus source reader. '
                  'The 30 digital versions are not claimed as independently collated critical editions.'),
     'download_sha256': downloads,
