@@ -488,7 +488,7 @@ function pager(){
    "<button type='button' data-dn-page='1'"+(S.page>=more?" disabled":"")+">Next map page</button></div>";
 }
 function render(args,api){
- argsNow=args;apiNow=api;works=api.records;reader=api.reader;genre=getGenre(args);
+ argsNow=args;apiNow=api;ctx={args,api};works=api.records;reader=api.reader;genre=getGenre(args);
  if(!jurists.length&&!juristRequest&&!juristError)loadJurists();
  const scope=genre+"|"+args.science+"|"+args.tab+"|"+args.school;
  if(!S.scope){readHash();S.scope=scope;}
