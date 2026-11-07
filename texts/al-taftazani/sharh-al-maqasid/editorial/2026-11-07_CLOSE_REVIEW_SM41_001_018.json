@@ -1,0 +1,231 @@
+{
+  "schema": "sharh-maqasid-electronic-close-review-v2",
+  "date": "2026-11-07",
+  "stage": "R7-SM41-001-018",
+  "prior_stage": "R6-SM40-001-009",
+  "corrected_continuation_pointer": "SM40-009 -> SM41-001 (there is no SM40-010 in the recovered 851-record sequence)",
+  "record_count": 18,
+  "arabic_attached_characters_reviewed_this_stage": 9095,
+  "source_total_arabic_characters_in_previous_checkpoint": 1663485,
+  "percent_of_total_source_revisited_this_stage": 0.547,
+  "new_original_untranslated_source_characters_translated": 0,
+  "translation_coverage_note": "All 18 already had full English and Arabic excerpt fields in the inherited R5 reader. This is a source-close electronic re-review, not a claim of 9,095 newly translated Arabic characters; older English is retained in canonical 17-part source, with one local interpretive revision in this overlay.",
+  "grade": "electronic-close-r7",
+  "evidence": "Cumulative R5 source excerpt strings compared with their inherited English; checked page 235 onward against publicly accessible 1981-print HTML transcriptions where indexed. No independent 1981 page-image or medieval manuscript collation, no complete source-page certification.",
+  "stage_target_10_pct_met": false,
+  "remaining": "SM41-019 or actual next present ID; systematic reconciliation of all 487 units without Arabic; full matn image-controlled second pass",
+  "bibliography": [
+    {
+      "title": "Sharḥ al-Maqāṣid, 1981 electronic transcription",
+      "url": "https://lib.rafed.net/view.php?b_id=3517&page=232&type=c_fbook"
+    },
+    {
+      "title": "ʿIzz al-Dīn b. al-Ḥusayn, al-ʿInāya al-tāmma, discussion of Hishām al-Fuwaṭī",
+      "url": "https://usul.ai/ar/t/cinaya-tamma/167"
+    },
+    {
+      "title": "Secondary discussion of the distinct spellings al-Qūṭī/al-Fuwaṭī",
+      "url": "https://www.islamarchive.cc/ketab_content/6589/p-44"
+    }
+  ],
+  "changes": [
+    {
+      "id": "SM41-001",
+      "title": "The competing positions",
+      "location": "V:235–236; chapter range established by the modern contents",
+      "arabic_original_untouched": "قال: المبحث الأول نصب الإمام. بعد انقراض زمن النبوة واجب علينا سمعا عند أهل السنة وعامة المعتزلة، وعقلا عند الجاحظ والخياط والكعبي وأبي الحسين البصري. وقالت الشيعة والسبعية، وهم قوم من الملاحدة سموا بذلك لأن متقدميهم قالوا الأئمة تكون سبعة، وعند السابع وهو محمد بن إسماعيل توقف بعضهم عليه وجاوزه بعضهم وقالوا الأئمة تدور على سبعة سبعة كأيام الأسبوع: هو واجب على الله. فعندهم ليكون معلما في معرفة الله تعالى، وعند بعض الشيعة وهم الإمامية ليكون لطفا في أداء الواجبات العقلية واجتناب المقبحات العقلية، وعند بعضهم وهم الغلاة لتعليم اللغات وأحوال الأغذية والأدوية والسموم والحرف والصناعات والمحافظة عن الآفات والمخافات.",
+      "original_v5_english_preserved": true,
+      "translation_changed": false,
+      "revised_english": "He says: Investigation One, the appointment of an imam. After the age of prophecy has ended, appointing an imam is an obligation upon us established through revelation, according to the Sunnis and the generality of the Muʿtazila; according to al-Jāḥiẓ, al-Khayyāṭ, al-Kaʿbī, and Abū al-Ḥusayn al-Baṣrī, it is established by reason. The Shiʿa and the Sabʿiyya maintain that it is obligatory upon God. The latter are a group of heretics so called because their predecessors held that the imams number seven: some stopped with the seventh, Muḥammad ibn Ismāʿīl, while others went beyond him, holding that the imams follow cycles of seven, like the days of the week. According to them, the purpose is that the imam should be a teacher in the knowledge of God; according to some Shiʿa, namely the Imāmiyya, it is that he should provide assistance conducive to performing rationally obligatory acts and avoiding rationally reprehensible ones; and according to others, namely the extremists, it is for teaching languages, the properties of foods, medicines and poisons, crafts and trades, and for protection against afflictions and dangers.",
+      "editorial_note": "Check speaker boundaries: Sunni majority and most Muʿtazilites derive obligation from revelation; the four named Muʿtazilites derive it from reason; Shiʿa and the Sabʿiyya attribute the obligation to God. The pejorative 'al-malāḥida' is the author's historical designation, not editorial classification. The sevenfold succession is described with alternative subpositions.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    },
+    {
+      "id": "SM41-002",
+      "title": "Those denying or qualifying the obligation",
+      "location": "V:236",
+      "arabic_original_untouched": "وقالت النجدات، قوم من الخوارج أصحاب نجدة بن عويمر، إنه ليس بواجب أصلا. وقال أبو بكر الأصم من المعتزلة: لا يجب عند ظهور العدل والإنصاف لعدم الاحتياج، ويجب عند ظهور الظلم. وقال هشام القوطي منهم بالعكس، أي يجب عند ظهور العدل لإظهار شرائع الشرع لا عند ظهور الظلم، لأن الظلمة ربما لم يطيعوه وصار سببا لزيادة الفتن.",
+      "original_v5_english_preserved": true,
+      "translation_changed": false,
+      "revised_english": "The Najadāt, a Khārijite group following Najda ibn ʿUwaymir, say that it is not obligatory at all. Abū Bakr al-Aṣamm of the Muʿtazila says that it is not obligatory when justice and equity prevail, since it is not needed, but is obligatory when oppression prevails. Hishām al-Fuwaṭī, also of the Muʿtazila, holds the reverse: it is obligatory when justice prevails, to make the ordinances of the Law manifest, but not when oppression prevails, since the oppressors may refuse to obey the imam and he may become a cause of increased disorder.",
+      "editorial_note": "The available Sharḥ Arabic reads هشام القوطي; the received English calls him al-Fuwaṭī. Other premodern discussion identifies هشام الفوطي and gives his reversed condition, so the conventional identification is defensible, but the printed reading القوطي must be preserved in apparatus rather than silently rewritten. Compare 1981 vol V p235–236, and ʿIzz al-Dīn b. al-Ḥusayn, al-ʿInāya al-tāmma, imamate discussion. Name is not treated as manuscript emendation.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    },
+    {
+      "id": "SM41-003",
+      "title": "First proof: the Companions’ consensus",
+      "location": "V:236–237",
+      "arabic_original_untouched": "لنا على الوجوب وجوه. الأول وهو العمدة إجماع الصحابة، حتى جعلوا ذلك أهم الواجبات واشتغلوا به عن دفن الرسول صلى الله عليه وسلم، وكذا عقيب موت كل إمام. روي أنه لما توفي النبي صلى الله عليه وسلم خطب أبو بكر رضي الله عنه فقال: أيها الناس، من كان يعبد محمدا فإن محمدا قد مات، ومن كان يعبد رب محمد فإنه حي لا يموت. لا بد لهذا الأمر ممن يقوم به، فانظروا وهاتوا آراءكم رحمكم الله. فتبادروا من كل جانب وقالوا: صدقت، ولكن ننظر في هذا الأمر. ولم يقل أحد إنه لا حاجة إلى الإمام.",
+      "original_v5_english_preserved": true,
+      "translation_changed": false,
+      "revised_english": "We have several arguments for its obligatory character. The first, and the principal one, is the consensus of the Companions. They treated this as the most important obligation, attending to it before the burial of the Messenger; they acted similarly after the death of each subsequent imam. It is related that when the Prophet died, Abū Bakr addressed the people: “People! Whoever worshipped Muḥammad, Muḥammad has died. Whoever worshipped Muḥammad’s Lord, He lives and does not die. This affair must have someone to undertake it. Consider the matter and give your opinions—may God have mercy upon you.” They hastened from every side and said: “You have spoken truly; let us consider this affair.” No one said that an imam was unnecessary.",
+      "editorial_note": "Author introduces the report with روي (it is related); preserve its status as a report, not a newly authenticated historical event. The argument infers obligatory appointment from the conduct/consensus of the Companions.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    },
+    {
+      "id": "SM41-004",
+      "title": "Second proof: a prerequisite of an unconditional obligation",
+      "location": "Investigation I, V:235–242; individual page division not independently checked",
+      "arabic_original_untouched": "الثاني أن الشارع أمر بإقامة الحدود وسد الثغور وتجهيز الجيوش للجهاد وكثير من الأمور المتعلقة بحفظ النظام وحماية بيضة الإسلام مما لا يتم إلا بالإمام. وما لا يتم الواجب المطلق إلا به وكان مقدورا فهو واجب، على ما مر في صدر الكتاب. لا يقال: الأمر بإقامة الحدود كقطع السارق مثلا إن كان مشروطا بوجود الإمام لم يكن مطلقا فلم يستلزم وجوبه، كالأمر بالزكاة بالنسبة إلى تحصيل النصاب، وإن لم يكن مشروطا به فظاهر. لأنا نقول: فرق بين تقييد الوجوب وتقييد الواجب؛ فههنا الوجوب مطلق، أي لم يقيد ولم يشترط بوجود الإمام، والواجب أعني المأمور به مشروط به وموقوف عليه، كوجوب الصلاة المشروطة بالطهارة. وأما في الزكاة فالوجوب مشروط بحصول النصاب حتى إذا انتفى فلا وجوب.",
+      "original_v5_english_preserved": true,
+      "translation_changed": false,
+      "revised_english": "The second is that the Lawgiver has commanded the implementation of prescribed punishments, the defence of the frontiers, the preparation of armies for warfare, and numerous matters pertaining to the preservation of order and the protection of the Muslim community, which cannot be accomplished without an imam. Whatever lies within one’s power and is indispensable to an unconditional obligation is itself obligatory, as explained at the beginning of the book. One cannot object: “If the command to implement punishments—for example, amputation in theft—is conditional upon the existence of an imam, it is not unconditional and therefore does not entail an obligation to appoint one, just as the command to pay alms does not entail an obligation to acquire the minimum assessable amount. If it is not conditional upon him, the matter is evident.” We reply that restricting the obligation differs from restricting the act that is obligatory. Here the obligation is unconditional: it has not been restricted or made conditional upon the existence of an imam. The obligatory act—the act commanded—is, however, conditional upon him and depends upon him, just as prayer is obligatory although the prayer itself is conditional upon purification. In the case of alms, by contrast, the obligation itself is conditional upon possession of the minimum assessable amount: when that is absent, there is no obligation.",
+      "editorial_note": "Critical pair: تقييد الوجوب versus تقييد الواجب, imposing a condition on the very obligation versus on the performance of the required action. In the prayer analogy purification qualifies validity/performance; in the zakāt analogy the niṣāb conditions liability. Do not confuse with the entirely different ethical argument from harm.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    },
+    {
+      "id": "SM41-005",
+      "title": "Third proof: the benefits of public authority",
+      "location": "Investigation I, V:235–242",
+      "arabic_original_untouched": "الثالث أن في نصب الإمام استجلاب منافع لا تحصى واستدفاع مضار لا تخفى، وكل ما هو كذلك فهو واجب. أما الكبرى فبالإجماع، وأما الصغرى فيكاد يلحق بالضروريات بل المشاهدات ويعد من العيان الذي لا يحتاج إلى البيان. ولهذا اشتهر أن ما يزع السلطان أكثر مما يزع القرآن، وما يلتئم باللسان لا ينتظم بالبرهان. وذلك لأن الاجتماع المؤدي إلى صلاح المعاش والمعاد لا يتم بدون سلطان قاهر يدرأ المفاسد ويحفظ المصالح ويمنع ما تتسارع إليه الطباع وتتنازع عليه الأطماع. وكفاك شاهدا ما يشاهد من استيلاء الفتن والابتلاء بالمحن لمجرد هلاك من يقوم بحماية الحوزة ورعاية البيضة، وإن لم يكن على ما ينبغي من الصلاح والسداد ولم يخل عن شائبة شر وفساد. ولهذا لا ينتظم أمر أدنى اجتماع كرفقة طريق بدون رئيس يصدرون عن رأيه ومقتضى أمره ونهيه. بل ربما يجري مثل هذا فيما بين الحيوانات العجم كالنحل لها عظيم يقوم مقام الرئيس ينتظم أمرها به ما دام فيها، وإذا هلك انتشرت الأفراد انتشار الجراد وشاع فيما بينها الهلاك والفساد.",
+      "original_v5_english_preserved": true,
+      "translation_changed": false,
+      "revised_english": "The third is that appointing an imam brings innumerable benefits and averts manifest harms, and whatever does so is obligatory. The major premise is established by consensus. The minor almost belongs among self-evident truths—indeed, among matters directly witnessed—and may be counted among things seen that require no explanation. Hence the familiar saying that the ruler restrains more than the Qurʾān restrains, and that what is brought into concord by the tongue is not brought into order by demonstration. Social association conducive to well-being in this life and the next cannot be achieved without a coercive authority that repels corruption, preserves interests, and prevents what natural inclinations rush towards and ambitions dispute over. A sufficient witness is the disorder and affliction visibly brought about merely by the death of the person who protects the domain and safeguards the community, even when he lacks the requisite rectitude and soundness and is not wholly free from evil and corruption. Thus even the smallest association, such as a company of travellers, cannot be ordered without a leader whose judgement they follow and whose commands and prohibitions guide them. Something similar may even occur among non-speaking animals: bees have a chief that occupies the position of a leader, through which their affairs remain ordered while it is among them. When it perishes, the individuals scatter like locusts, and destruction and disorder spread among them.",
+      "editorial_note": "The rhetorical maxims about the coercive force of authority and the bee analogy are the author's arguments and observations, not modern political or scientific endorsements. The major premise is alleged consensus, the minor premise alleged near self-evidence.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    },
+    {
+      "id": "SM41-006",
+      "title": "Why general religious as well as worldly leadership?",
+      "location": "Investigation I, V:235–242",
+      "arabic_original_untouched": "لا يقال: فغاية الأمر أنه لا بد في كل اجتماع من رئيس مطاع منوط به النظام والانتظام، لكن من أين يلزم عموم رياسته لجميع الناس وشمولها أمر الدين على ما هو المعتبر في الإمام؟ لأنا نقول: انتظام أمر عموم الناس على وجه يؤدي إلى صلاح الدين والدنيا يفتقر إلى رئاسة عامة فيهما، إذ لو تعدد الرؤساء في الأصقاع والبقاع لأدى إلى منازعات ومخاصمات موجبة لاختلال أمر النظام، ولو اقتصرت رياسته على أمر الدنيا لفات انتظام أمر الدين الذي هو المقصود الأهم والعمدة العظمى.",
+      "original_v5_english_preserved": true,
+      "translation_changed": false,
+      "revised_english": "One cannot object: “At most, this establishes that every association must have an obeyed leader upon whom its order and organisation depend. But how does it follow that his leadership must extend to all people and encompass religious affairs, as is required in an imam?” We reply: ordering the affairs of people generally in a manner conducive to religious and worldly well-being requires general leadership in both. If leaders were multiplied across the regions and territories, this would lead to disputes and conflicts that disrupt order. If his leadership were confined to worldly affairs, religious affairs would lack proper order, although religion is the more important aim and the principal foundation.",
+      "editorial_note": "Second-order objection asks why one political leader should be universal and why the office extends to religion; author asserts disorder from competing regional rulers and prioritises religious order. This is a claim within his argument, not evidence that all multi-polity orders must fail.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    },
+    {
+      "id": "SM41-007",
+      "title": "Public benefit does not by itself settle the theory of obligation",
+      "location": "Investigation I, V:235–242",
+      "arabic_original_untouched": "وأما الكبرى فبالإجماع عندنا وبالضرورة عند القائلين بالوجوب العقلي. واعتراض صاحب تلخيص المحصل بأن بيان الصغرى عقلي من باب القبح والحسن وليس من مذهبكم، والكبرى أوضح من الصغرى فلا حاجة إلى التعرض للإجماع، مدفوع بأن كون الشيء صلاحا أو فسادا ليس في شيء من متنازع الحسن والقبح، وكون دفع الضرر واجبا بمعنى استحقاق تاركه العقاب عند الله تعالى ليس بواضح فضلا عن الأوضح. ولا ينبغي أن يخفى مثل هذا عليه ولا أن يكون الرجل العالم العلمي في هذه الغاية من الشغف بالاعتراض.",
+      "original_v5_english_preserved": true,
+      "translation_changed": false,
+      "revised_english": "As for the major premise, according to us it is established by consensus, whereas those who affirm rational obligation regard it as self-evident. The author of the Abridgement of the Muḥaṣṣal objects that the minor premise is demonstrated rationally and concerns goodness and badness, which is not your doctrine, while the major premise is clearer than the minor and therefore requires no appeal to consensus. This is answered by noting that a thing’s being beneficial or harmful does not belong to the disputed question of goodness and badness. Nor is it evident—let alone more evident—that averting harm is obligatory in the sense that someone who omits it deserves punishment from God. Such a point ought not to escape him, nor should a learned scholar be so excessively enamoured of raising objections.",
+      "editorial_note": "Arabic has awkward الرجل العالم العلمي in the electronic reading and published text transcription; English 'a learned scholar' is an interpretive smoothing, not established emendation. Flag †العلمي† for future facsimile review. Distinguish maslahat/mafsada from normative ḥusn/qubḥ and from deserving punishment for omission; attribution 'author of Talkhīṣ al-Muḥaṣṣal' retained.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    },
+    {
+      "id": "SM41-008",
+      "title": "Objection from the harms of political office",
+      "location": "Investigation I, V:235–242",
+      "arabic_original_untouched": "لا يقال: الإجماع على الوجوب إنما هو إذا لم يتضمن مضرة مثل المضرة المندفعة أو فوقها، وههنا نصب الإمام يتضمن مفاسد لا يضبطها العد والإحصاء لما في الآراء من اختلافات الأهواء وفي الطباع من الاستنكاف عن تسلط الأكفاء. والإنسان قليل البقاء على ما عليه من الاهتداء وصلاح الاقتداء، فتميل النفوس إلى الإباء والاستعصاء ويظهر الفساد ويكثر البغي والعناد ويهلك الحرث والنسل ويذهب الفرع والأصل. وكفاك شاهدا ما تسمع من قصص انقضاء خلافة عثمان رضي الله تعالى عنه إلى ابتداء دولة بني العباس. لأنا نقول: مضاره بالنسبة إلى منافعه ومفاسده بالإضافة إلى مصالحه مما لا يعبأ بكثرته ويلحق بالعدم في قلته.",
+      "original_v5_english_preserved": true,
+      "translation_changed": false,
+      "revised_english": "One cannot object: “Consensus establishes obligation only where the measure does not involve a harm equal to or greater than the harm averted. Here, appointing an imam involves corruptions beyond reckoning: opinions reflect divergent desires, and human dispositions resent being subjected to their equals. People rarely persist in right guidance and conduct worthy of imitation. Souls consequently incline towards refusal and resistance; corruption appears, injustice and obstinacy multiply, crops and offspring are destroyed, and both root and branch disappear. A sufficient witness is what one hears of events from the end of ʿUthmān’s caliphate to the beginning of the Abbasid state.” We reply: compared with its benefits, its harms—and compared with its advantages, its corruptions—are so few that their apparent abundance is disregarded and they are reckoned as nothing.",
+      "editorial_note": "Source-variant problem: recovered Arabic reads أو فوقها (or greater than it), while a published-edition web transcription displays أو فوتها. The argument and English follow فوقها provisionally; the alternative is not silently harmonized or called a manuscript variant. The crop-and-progeny expression evokes Qurʾān 2:205 without the commentary proving a textual quotation.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    },
+    {
+      "id": "SM41-009",
+      "title": "The absence of a fully qualified imam",
+      "location": "Investigation I, V:235–242",
+      "arabic_original_untouched": "فإن قيل: لو وجب نصب الإمام لزم إطباق الأمة في أكثر الأعصار على ترك الواجب لانتفاء الإمام المتصف بما يجب من الصفات، سيما بعد انقضاء الدولة العباسية، ولقوله صلى الله عليه وسلم: الخلافة بعدي ثلاثون سنة ثم تصير ملكا عضوضا. وقد تم ذلك بخلافة علي رضي الله تعالى عنه، فمعاوية ومن بعده ملوك وأمراء لا أئمة ولا خلفاء. واللازم منتف، لأن ترك الواجب معصية وضلالة والأمة لا تجتمع على الضلالة. قلنا: إنما يلزم الضلالة لو تركوه عن قدرة واختيار لا عجز واضطرار. والحديث مع أنه من باب الآحاد يحتمل الصرف إلى الخلافة على وجه الكمال.",
+      "original_v5_english_preserved": true,
+      "translation_changed": false,
+      "revised_english": "An objection may be raised: “If appointing an imam were obligatory, it would follow that in most ages the community unanimously abandoned an obligation, because there was no imam possessing the requisite qualifications—especially after the end of the Abbasid state. Moreover, the Prophet said: ‘The caliphate after me will last thirty years, then it will become a biting kingship.’ Those years were completed with ʿAlī’s caliphate. Muʿāwiya and his successors were therefore kings and rulers, not imams or caliphs. Yet that consequence is inadmissible: abandoning an obligation is sin and error, and the community does not agree upon error.” We reply: error would follow only if they abandoned it while possessing ability and choice, not through inability and necessity. Furthermore, besides being an individually transmitted report, the hadith admits of being understood as referring to the caliphate in its complete form.",
+      "editorial_note": "The thirty-year caliphate saying is transmitted as part of the object's argument; no independent hadith grading is implied. The author's reply distinguishes culpable voluntary neglect from inability and permits 'caliphate' to refer to its perfect form.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    },
+    {
+      "id": "SM41-010",
+      "title": "A nominal imam without effective power",
+      "location": "Investigation I, V:235–242",
+      "arabic_original_untouched": "وههنا بحث آخر، وهو أنه إذا لم يوجد إمام على شرائطه وبايع طائفة من أهل الحل والعقد قرشيا فيه بعض الشرائط من غير نفاذ لأحكامه وطاعة من العامة لأوامره وشوكة بها يتصرف في مصالح العباد ويقتدر على النصب والعزل لمن أراد، هل يكون ذلك إتيانا بالواجب؟ وهل يجب على ذوي الشوكة العظيمة من ملوك الأطراف المتصفين بحسن السياسة والعدل والإنصاف أن يفوضوا الأمر إليه بالكلية ويكونوا لديه كسائر الرعية؟",
+      "original_v5_english_preserved": true,
+      "translation_changed": false,
+      "revised_english": "Another question arises here. Suppose no imam possessing the required qualifications exists, and a group of those empowered to bind and loose pledge allegiance to a Qurashī who possesses some of them, but whose rulings are not effective, whose commands are not obeyed by the public, and who lacks the power to manage people’s interests and appoint or dismiss whom he wishes. Does this constitute performance of the obligation? Must the immensely powerful rulers of the outlying regions, who possess sound government, justice, and equity, hand all authority over to him and stand before him like ordinary subjects?",
+      "editorial_note": "Left as a question without inventing a concluding answer: a nominal Qurashī appointee may lack the power to enforce rulings, command obedience, administer interests, or appoint/remove officeholders. The tension is between formal designation and actual coercive capacity.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    },
+    {
+      "id": "SM41-011",
+      "title": "A further appeal to revealed commands",
+      "location": "Investigation I, V:235–242",
+      "arabic_original_untouched": "وقد يتمسك بمثل قوله تعالى: أطيعوا الله وأطيعوا الرسول وأولي الأمر منكم، وقوله صلى الله عليه وسلم: من مات ولم يعرف إمام زمانه مات ميتة جاهلية. فإن وجوب الطاعة والمعرفة يقتضي وجوب الحصول. وأما أنه لا يجب علينا عقلا ولا على الله أصلا فلما مر من بطلان الأصلين.",
+      "original_v5_english_preserved": true,
+      "translation_changed": false,
+      "revised_english": "An argument may also be based on such texts as God’s words, “Obey God, obey the Messenger, and those vested with authority among you,” and the Prophet’s saying, “Whoever dies without knowing the imam of his time dies a death of the age of ignorance.” The obligation to obey and to recognise him requires that he exist. As for why this is not an obligation upon us established by reason, and not an obligation upon God at all, that follows from the earlier refutation of the two underlying principles.",
+      "editorial_note": "The second cited saying is quoted by the author as an argumentative premise, not independently verified in its exact wording or authority. 'Obligation to know/obey' is used to argue for the existence of its object.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    },
+    {
+      "id": "SM41-012",
+      "title": "The rational-obligation argument",
+      "location": "Investigation I, V:235–242",
+      "arabic_original_untouched": "قال: قالوا. احتج القائلون بوجوبه علينا عقلا بأن فيه دفع الضرر، ودفع الضرر واجب عقلا كاجتناب الطعام المسموم والجدار المشرف على السقوط ولو ظنا. قلنا: نعم بمعنى كونه من مقتضيات العقول والعادات وملائماتها، والكلام في الوجوب بمعنى استحقاق تاركه الذم والعقاب في حكم الله تعالى، وهو ممنوع ههنا. واحتجوا على عدم وجوبه على الله تعالى، مع أن الوجوب على الله في الجملة مذهبهم، بأنه لو وجب على الله تعالى لما خلا زمان من الأزمنة من إمام ظاهر قاهر جامع لشروط الإمامة قاطع لرسوم الضلالة قائم بحماية بيضة الإسلام وإقامة الحدود وتنفيذ الأحكام. واللازم ظاهر الانتفاء.",
+      "original_v5_english_preserved": true,
+      "translation_changed": false,
+      "revised_english": "He says: “They said.” Those who regard it as a rational obligation upon us argue that it averts harm, and averting harm is rationally obligatory, like avoiding poisoned food or a wall about to collapse, even where the danger is merely probable. We reply: yes, in the sense that this accords with what reason and ordinary practice require and find appropriate. But the question concerns obligation in the sense that one who neglects it deserves blame and punishment in God’s judgement; that is not conceded here. They also argue against its being obligatory upon God—even though they generally accept obligations upon God—that, were it obligatory upon Him, no age would be without a manifest and powerful imam possessing all the qualifications for the office, eradicating the practices of error, protecting the Muslim community, implementing prescribed punishments, and enforcing rulings. That consequence is plainly absent.",
+      "editorial_note": "Do not conflate prudential necessity of averting harm, which the author grants, with legal-theological obligation in the sense of divine blame/punishment, which he denies as rationally established. His second argument challenges imposing obligation upon God by appeal to the absence of a manifest, effective universal imam.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    },
+    {
+      "id": "SM41-013",
+      "title": "The argument from divine assistance",
+      "location": "Investigation I, V:235–242",
+      "arabic_original_untouched": "قال: احتج القائلون بوجوب نصب الإمام على الله تعالى بأنه لطف من الله في حق العباد. أما عند الملاحدة فليتمكنوا به من تحصيل المعرفة الواجبة، إذ نظر العقل غير كاف في معرفة الله تعالى. وأما عند الإمامية فلأنه إذا كان لهم رئيس قاهر يمنعهم من المحظورات ويحثهم على الواجبات كانوا معه أقرب إلى الطاعات وأبعد من المعاصي منهم بدونه، واللطف واجب على الله لما سبق. والجواب إجمالا منع المقدمتين والقدح فيما يورد لإثباتهما على ما سبق من حال الكبرى.",
+      "original_v5_english_preserved": true,
+      "translation_changed": true,
+      "revised_english": "He says: Those who maintain that appointing an imam is obligatory upon God argue that it constitutes *luṭf*—divine assistance conducive to obedience—for His servants. According to the group Taftāzānī calls *al-malāḥida*, such an imam enables them to acquire the obligatory knowledge of God, since rational inquiry is not sufficient for it. According to the Imāmiyya, when people have a powerful leader who prevents forbidden acts and urges the performance of obligatory ones, they are nearer to obedience and farther from disobedience than they would be without him; and this *luṭf* is obligatory upon God, as previously argued. The reply in general is to deny both premises and challenge what is offered in their support, as was done earlier in the case of the major premise.",
+      "editorial_note": "Translate luṭf (لطف) as 'divine assistance conducive to obedience' rather than an undefined sentiment. The polemical expression الملاحدة is attributed to Taftāzānī's taxonomy rather than adopted by the translator. Major/minor premise rebuttal must remain explicit.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    },
+    {
+      "id": "SM41-014",
+      "title": "Potential disadvantages and alternative forms of assistance",
+      "location": "Investigation I, V:235–242",
+      "arabic_original_untouched": "وتفصيلا أنه إنما يكون لطفا إذا خلا عن جميع جهات القبح وهو ممنوع، والسند ما مر مع وجوه أخر، مثل أن أداء الواجب وترك القبيح مع عدم الإمام أكثر ثوابا لكونهما أشق وأقرب إلى الإخلاص لاحتمال انتفاء كونهما من خوف الإمام. وأيضا فإنما يجب لو لم يقم لطف آخر مقامه كالعصمة مثلا، فلم لا يجوز أن يكون زمان يكون الناس فيه معصومين مستغنين عن الإمام؟ والقول بأنا نعلم قطعا أن اللطف الذي يحصل بالإمام لا يحصل لغيره مجرد دعوى، ربما تعارض بأنا نعلم قطعا جواز حصوله لغيره. وهذا كدعوى القطع بانتفاء المفاسد في نصب الإمام وكونه مصلحة خالصة.",
+      "original_v5_english_preserved": true,
+      "translation_changed": false,
+      "revised_english": "In detail, it would count as such assistance only if it were free from every aspect of wrongness, and that is not conceded. The grounds are those already mentioned, together with others. For example, performing an obligation and refraining from a reprehensible act in the absence of an imam may merit greater reward, since they are more difficult and closer to sincerity: it is possible that they are not motivated by fear of the imam. Moreover, it would be obligatory only if no other assistance could take its place—immunity from sin, for example. Why should there not be an age in which people are protected from sin and have no need of an imam? The assertion that we know with certainty that the assistance supplied by an imam cannot be supplied otherwise is a mere claim. It may be countered by the assertion that we certainly know it is possible for it to be supplied otherwise. It resembles the claim to certainty that appointing an imam involves no corruptions and is purely beneficial.",
+      "editorial_note": "The counterargument is not that all guidance must be bad, but that no positive necessity is proven without eliminating opposing costs or alternative assistance such as ʿiṣma. Distinguish hypothetical possibility from the author's assertion of actual universal immunity.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    },
+    {
+      "id": "SM41-015",
+      "title": "Existence and effective rule",
+      "location": "Investigation I, V:235–242",
+      "arabic_original_untouched": "وأيضا إنما يكون منفعة ولطفا واجبا إذا كان ظاهرا قاهرا زاجرا عن القبائح قادرا على تنفيذ الأحكام وإعلاء لواء الإسلام، وهذا ليس بلازم عندكم. فالإمام الذي ادعيتم وجوبه ليس بلطف، والذي هو لطف ليس بواجب. وأجاب الشيعة بأن وجود الإمام لطف سواء تصرف أو لم يتصرف، على ما نقل عن علي كرم الله وجهه أنه قال: لا تخلو الأرض من إمام قائم لله بحجة، إما ظاهرا مشهورا أو خائفا مضمورا، لئلا تبطل حجج الله وبيناته. وتصرفه الظاهر لطف آخر، وإنما عدم من جهة العباد وسوء اختيارهم حيث أخافوه وتركوا نصرته ففوتوا اللطف على أنفسهم.",
+      "original_v5_english_preserved": true,
+      "translation_changed": false,
+      "revised_english": "Furthermore, the imam is a benefit and an obligatory assistance only when he is manifest and powerful, restrains reprehensible acts, can enforce rulings, and can raise the banner of Islam. Yet you do not hold that this is necessary. Thus the imam whose necessity you affirm is not the assistance in question, while the imam who would provide that assistance is not held to be necessary. The Shiʿa reply that the imam’s existence is assistance whether or not he exercises authority. They appeal to the saying attributed to ʿAlī: “The earth is never without an imam who upholds God’s proof, whether manifest and well known or fearful and concealed, lest God’s proofs and evidences cease.” His manifest exercise of authority is a further assistance. Its absence is due only to the people and their bad choices: they frightened him and failed to support him, thereby depriving themselves of that assistance.",
+      "editorial_note": "Key double distinction: mere existence of an imam versus exercise of effective authority; and one kind of luṭf versus a further one. The maxim attributed to ʿAlī is reported in the source, not authenticated by this revision.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    },
+    {
+      "id": "SM41-016",
+      "title": "The reply concerning an awaited ruler",
+      "location": "Investigation I, V:235–242",
+      "arabic_original_untouched": "ورد أولا بأنا لا نسلم أن وجوده بدون التصرف لطف. فإن قيل: لأن المكلف إذا اعتقد وجوده كان دائما يخاف ظهوره وتصرفه فيمتنع من القبائح. قلنا: مجرد الحكم بخلقه وإيجاده في وقت ما كاف في هذا المعنى، فإن ساكن القرية إذا انزجر عن القبيح خوفا من حاكم من قبل السلطان مختف في القرية بحيث لا أثر له، كذلك ينزجر خوفا من حاكم علم أن السلطان يرسله إليها البتة متى شاء. وليس هذا خوفا من المعدوم بل من وجود مترقب، كما أن خوف الأول من ظهور مترقب.",
+      "original_v5_english_preserved": true,
+      "translation_changed": false,
+      "revised_english": "The first response is that we do not concede that his existence without the exercise of authority constitutes assistance. If it is said that someone who believes he exists continually fears his appearance and exercise of authority and therefore refrains from reprehensible acts, we reply that merely holding that he will be created and brought into existence at some time suffices for this effect. If a villager is restrained from misconduct by fear of a ruler appointed by the sovereign who is hidden in the village and leaves no trace, he will likewise be restrained by fear of a ruler whom he knows the sovereign will certainly send to the village whenever he wills. This is not fear of a non-existent thing, but of an anticipated existence, just as the first is fear of an anticipated appearance.",
+      "editorial_note": "The analogy contrasts fear of a currently concealed ruler with fear of a ruler expected to be created/sent later. The final contrast is between a *future existence* and a *future appearance*, not fear of nonbeing as such.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    },
+    {
+      "id": "SM41-017",
+      "title": "Appearance to devoted followers",
+      "location": "Investigation I, V:235–242",
+      "arabic_original_untouched": "وثانيا بأنه ينبغي أن يظهر لأوليائه الذين يبذلون الأرواح والأموال على محبته وليس عندهم منه إلا مجرد الاسم. فإن قيل: لعله ظهر لهم وأنتم عنه غافلون. قلنا: عدم ظهوره لهم من العاديات التي لا ارتياب فيها لعاقل، كعدم بحر من المسك وجبل من الياقوت. ولو سلم فالأولياء إذا عرفوا من أنفسهم أنه لم يظهر لهم توجه الإشكال عليهم.",
+      "original_v5_english_preserved": true,
+      "translation_changed": false,
+      "revised_english": "The second response is that he ought to appear to his devoted followers, who expend their lives and wealth out of love for him yet possess no more than his name. If it is said that he may have appeared to them without your knowing, we reply that his not having appeared to them belongs among ordinary facts about which a rational person has no doubt, like the absence of a sea of musk or a mountain of rubies. Even if that is conceded, the difficulty confronts the followers themselves when they know that he has not appeared to them.",
+      "editorial_note": "The sea of musk and mountain of ruby are polemical similes for the author's asserted practical certainty, not scientific or historical claims. The second clause turns the objection upon those followers who themselves lack any appearance.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    },
+    {
+      "id": "SM41-018",
+      "title": "The objection from discord and its reply",
+      "location": "End of Investigation I; next heading begins at V:243",
+      "arabic_original_untouched": "قال: احتجت الخوارج القائلون بعدم وجوب نصب الإمام. احتجوا بأن في نصبه إثارة الفتنة، لأن الأهواء متخالفة والآراء متباينة فيميل كل حزب إلى واحد وتهيج الفتن وتقوم الحروب. وما هذا شأنه لا يجب بل كان ينبغي أن لا يجوز، إلا أن احتمال الاتفاق على الواحد أو تعينه وتفرده باستجماع الشرائط أو ترجحه من بعض الجهات منع الامتناع وأوجب الجواز. والجواب أن اعتبار الترجح، كما قيل يقدم الأعلم ثم الأورع ثم الأسن، أو انعقاد الأمر وانسداد طريق المخالفة بمجرد بيعة البعض ولو واحدا، يدفع الفتنة، مع أن فتنة النزاع في تعيين الإمام بالنسبة إلى مفاسد عدم الإمام ملحقة بالعدم. لا يقال: الاحتجاج المذكور على تقدير تمامه لا ينفي الوجوب على الله ولا على النبي صلى الله عليه وسلم بالنص ولا على الإمام السابق بالاستخلاف. لأنا نقول: المقصود نفي ما يراه الجمهور من الوجوب على العباد إذا لم ينصب النبي صلى الله عليه وسلم ولم يستخلف الإمام السابق.",
+      "original_v5_english_preserved": true,
+      "translation_changed": false,
+      "revised_english": "He says: the Khārijites who deny the obligation to appoint an imam argue as follows. His appointment provokes discord, because desires conflict and opinions diverge. Each party inclines towards a different candidate; disorders flare up and wars break out. Something of this kind cannot be obligatory—indeed, it ought to be impermissible. However, the possibility of agreement upon one person, his being uniquely qualified and alone possessing all the conditions, or his superiority in certain respects prevents a ruling of impermissibility and establishes permissibility. The reply is that consideration of the grounds of preference—for example, giving precedence first to the most learned, then to the most scrupulous, then to the eldest—or the settlement of the matter and closure of the possibility of opposition by the pledge of some electors, even one, averts discord. Furthermore, the discord caused by disagreement over the imam’s identity is negligible compared with the corruptions caused by having no imam. One cannot object that, even if the argument succeeded, it would not negate an obligation upon God, upon the Prophet to designate an imam, or upon the preceding imam to nominate a successor. We reply that its purpose is to deny the obligation upon the people affirmed by the majority when the Prophet has made no appointment and the previous imam has designated no successor.",
+      "editorial_note": "Whole argument preserved, including a concession that appointment is at least possible, the order of qualifications (most learned, most scrupulous, eldest), the permission/obligation distinction, and the final limitation to appointment by the community when no prophetic or predecessor's designation exists.",
+      "review_status": "Arabic/English excerpt checked; still no printed-image certification"
+    }
+  ]
+}
