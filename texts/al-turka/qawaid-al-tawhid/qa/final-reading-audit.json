@@ -284,5 +284,5 @@
   "readabilityCorrection": "SH-061-A: closures -> locks for أقفاله; Arabic unchanged; variant note preserved",
   "stalePilotQueueRemoved": true,
   "singleFileReaderGenerated": true,
-  "singleFileSha256": "4d2c7699e9537bd15e6017c193a30024317e0fa3e813e511e7087b771cca3e48"
+  "singleFileSha256": "81c7995a7711b7531b0bd2c6b77cd630bb391387344723007bba68303d757d43"
 }
