@@ -555,7 +555,19 @@
     try {
       const response = await fetch('./data/book.json', { cache: 'no-cache' });
       if (!response.ok) throw new Error('Edition unavailable');
-      setData(await response.json());
+      const book = await response.json();
+      if (bookId === 'nihayat-al-hikma') {
+        try {
+          const supplementResponse = await fetch('./data/editorial-supplement.json', { cache: 'no-cache' });
+          if (supplementResponse.ok) {
+            const supplement = await supplementResponse.json();
+            const existing = new Set((book.glossary || []).map(item => (item.arabic || item.term || '').normalize('NFKC').replace(/[\u064b-\u065f\u0670\s]/g, '')));
+            book.glossary = [...(book.glossary || []), ...(supplement.glossary || []).filter(item => !existing.has((item.arabic || item.term || '').normalize('NFKC').replace(/[\u064b-\u065f\u0670\s]/g, '')))];
+            book.sources = [...(book.sources || []), ...(supplement.sources || [])];
+          }
+        } catch (_) { /* The authorial reader remains fully available if the optional supplement fails. */ }
+      }
+      setData(book);
     } catch (error) {
       const box = make('div', 'loading-state error-state');
       box.append(make('span', 'loading-mark', ''), make('h2', '', 'The reading text is unavailable'), make('p', '', 'The edition could not be opened. Please try again in a moment.'));
