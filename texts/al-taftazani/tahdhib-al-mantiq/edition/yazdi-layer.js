@@ -113,6 +113,36 @@ function make(unit,scope){
    pair.append(en,ar);item.append(pair);
    const link=n('a','gn-yazdi-source','Source Q · p. '+part.page);
    link.href=part.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';item.append(link);
+   if(unit==='L.02'){
+    // The full Q14–19 text replaces excerpt cards, but their nine genuine Q/I13
+    // printed-text comparison records must remain accessible in the apparatus.
+    const sourceRecords=entries.filter(x=>x.page===part.page);
+    for(const record of sourceRecords.filter(x=>x.witnessComparison)){
+     const v=record.witnessComparison,detail=n('details','gn-yazdi-variant');
+     detail.append(n('summary',null,'Printed comparison · Q p.'+part.page+' / I13 p.'+v.printedPage+(v.status==='candidate-variant'?' · reading differs':' · short reading')));
+     const readings=n('div','gn-yazdi-variant-readings');
+     for(const [siglum,text] of [['Q · Qum',v.qReading],['I13 · Gujarat',v.iReading]]){
+      const row=n('div','gn-yazdi-variant-row'),lab=n('strong',null,siglum),line=n('p',null,text);
+      line.lang='ar';line.dir='rtl';row.append(lab,line);readings.append(row);
+     }
+     detail.append(readings,n('p','gn-yazdi-variant-note',v.note));
+     detail.append(n('p','gn-yazdi-variant-status','Digital printed transcription comparison only. No photographed page or independent manuscript reading is verified.'));
+     const vlink=n('a','gn-yazdi-source','Open I13 printed comparator');
+     vlink.href=v.sourceUrl;vlink.target='_blank';vlink.rel='noopener noreferrer';detail.append(vlink);
+     item.append(detail);
+    }
+    const referenced=sourceRecords.filter(x=>x.secondPrint?.sourceUrl);
+    if(referenced.length){
+     const print=n('details','gn-yazdi-source-notes');
+     print.append(n('summary',null,'Earlier I13 source links ('+referenced.length+')'));
+     for(const record of referenced){
+      const a=n('a','gn-yazdi-source gn-yazdi-second-print','I13 p.'+record.secondPrint.printedPage+' · '+record.id);
+      a.href=record.secondPrint.sourceUrl;a.target='_blank';a.rel='noopener noreferrer';
+      print.append(a,n('span',null,'  '));
+     }
+     item.append(print);
+    }
+   }
    if(part.notes?.length){
     const detail=n('details','gn-yazdi-source-notes');
     detail.append(n('summary',null,'Text and translation notes'));
