@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Later Ḥawāshī · Tahdhīb al-Manṭiq · GNAMMA</title>
+<meta name="description" content="50-plus page source register of attributed later glosses on the al-Yazdī commentary. Selected translated excerpts, not complete pages.">
+<style>
+:root{color-scheme:light;--paper:#fdfcf9;--background:#f4f2ec;--ink:#25312d;--muted:#6a756f;--line:#d9ddd7;--soft:#f4f5f0;--accent:#376653;--accent2:#214d3c;--max:980px}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark;--paper:#252b29;--background:#1a201d;--ink:#e5ece6;--muted:#b5c1b7;--line:#424c45;--soft:#303831;--accent:#aad7bd;--accent2:#ddf6e8}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--background);color:var(--ink);font:15px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:var(--accent)}button,input,select{font:inherit}
+button:focus-visible,input:focus-visible,a:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.top{z-index:10;position:sticky;top:0;height:56px;display:flex;gap:7px;align-items:center;background:var(--paper);border-bottom:1px solid var(--line);padding:0 max(10px,calc((100vw - var(--max))/2));box-shadow:0 1px 5px rgba(0,0,0,.035)}
+.top button{height:36px;min-width:36px;padding:0 9px;border:1px solid var(--line);border-radius:7px;background:transparent;color:var(--ink);cursor:pointer;white-space:nowrap;font-size:13px}
+.top button[aria-pressed="true"]{background:var(--soft);border-color:var(--accent)}
+.top .brand{font:500 17px/1.15 Georgia,serif;text-decoration:none;color:var(--ink);white-space:nowrap;margin:0 7px}
+.top .trail{font-size:12px;white-space:nowrap;color:var(--muted);text-decoration:none}
+.top .wide-space{flex:1}
+.main{max-width:var(--max);margin:auto;background:var(--paper);min-height:calc(100vh - 56px);padding:34px clamp(16px,4vw,45px) 100px}
+.overline{font:600 11px/1.6 system-ui;letter-spacing:.065em;color:var(--accent)}
+h1{font:500 clamp(27px,4vw,42px)/1.25 Georgia,serif;letter-spacing:-.02em;margin:8px 0 13px}
+.lead{font:17px/1.7 Georgia,serif;max-width:800px;margin:0 0 16px}
+.manifest{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;display:flex;gap:15px;align-items:center;flex-wrap:wrap;margin:22px 0}
+.manifest span{font-size:12px;color:var(--muted)}
+.state{display:inline-flex;gap:5px;align-items:center;border:1px solid var(--line);padding:4px 8px;border-radius:5px;font-size:11px;color:var(--ink)}
+.tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:0 0 18px}
+.tools input{flex:1 1 270px;min-width:130px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);padding:8px 11px}
+.tools select{flex:0 1 250px;min-height:37px;background:var(--paper);color:var(--ink);padding:8px 10px;border:1px solid var(--line);border-radius:6px}
+.tools button{border:1px solid var(--line);background:var(--paper);color:var(--ink);min-height:37px;border-radius:6px;cursor:pointer;padding:7px 10px;font-size:12px}
+.section-note{font-size:12px;line-height:1.75;color:var(--muted);margin-bottom:24px}
+.hw-page{border-top:1px solid var(--line);padding:25px 0 31px;scroll-margin-top:90px}
+.hw-page-header{display:flex;gap:16px;align-items:flex-start;justify-content:space-between}
+.hw-heading-wrap{min-width:0}
+.hw-page-number{font:650 11px/1.3 system-ui;color:var(--accent);letter-spacing:.035em}
+.hw-page-title{font:500 clamp(20px,2.5vw,26px)/1.4 Georgia,serif;margin:4px 0 9px}
+.hw-source{font:550 12px/1.3 system-ui;white-space:nowrap;flex-shrink:0;margin-top:8px}
+.hw-author{font-size:11px;color:var(--muted);line-height:1.6;margin:0 0 15px;max-width:870px}
+.hw-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0}
+.hw-pair-cell{border:1px solid var(--line);padding:15px 18px;border-radius:7px;min-width:0;background:var(--paper)}
+.hw-eyebrow{font:650 10px/1.5 system-ui;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
+.hw-arabic{font:500 22px/1.9 "Noto Naskh Arabic","Amiri","Geeza Pro","Times New Roman",serif;text-align:right;margin:0;overflow-wrap:break-word}
+.hw-english{font:17px/1.75 Georgia,serif;margin:0}
+.hw-analysis{padding:13px 18px;background:var(--soft);border-radius:7px}
+.hw-analysis p{margin:0;font:14px/1.75 system-ui}
+.hw-foot{font-size:11px;color:var(--muted);padding:11px 1px 0}
+#reader-menu{position:fixed;z-index:15;top:56px;bottom:0;left:0;width:min(360px,92vw);background:var(--paper);border-right:1px solid var(--line);box-shadow:4px 5px 30px rgba(0,0,0,.13);overflow:auto;padding:17px 16px 26px}
+#reader-menu[hidden]{display:none}
+.nav-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.nav-head strong{font:600 14px/1.4 system-ui}
+.nav-head button{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:6px;padding:5px 8px}
+#toc-pages{display:flex;flex-direction:column;gap:1px}
+.hw-toc-link{text-decoration:none;color:var(--ink);font-size:12px;line-height:1.55;padding:8px 9px;border-bottom:1px solid var(--line);border-radius:3px}
+.hw-toc-link:hover{background:var(--soft)}
+.hw-toc-link:focus-visible{background:var(--soft)}
+.hw-empty{padding:25px;border:1px solid var(--line);border-radius:8px;color:var(--muted)}
+.bottom{position:fixed;bottom:0;left:0;right:0;z-index:9;border-top:1px solid var(--line);padding:max(7px,env(safe-area-inset-bottom)) 15px;background:var(--paper);text-align:center;font-size:11px;color:var(--muted)}
+.bottom a{margin-left:8px;text-decoration:none}
+body[data-languages="en"] .hw-arabic{display:none}
+body[data-languages="en"] .hw-pair-cell:has(.hw-arabic){display:none}
+body[data-languages="ar"] .hw-english{display:none}
+body[data-languages="ar"] .hw-pair-cell:has(.hw-english){display:none}
+body[data-languages="en"] .hw-pair,body[data-languages="ar"] .hw-pair{grid-template-columns:1fr}
+@media(max-width:680px){
+ .main{padding:23px 15px 85px}
+ .top{padding:0 10px;gap:5px}
+ .top .trail{display:none}
+ .top .brand{font-size:14px;margin:0}
+ .top button{min-width:32px;height:34px;padding:0 6px;font-size:12px}
+ .hw-page-header{flex-wrap:wrap;gap:4px}
+ .hw-source{margin:0 0 6px}
+ .hw-pair{grid-template-columns:1fr;gap:9px}
+ .hw-pair-cell{padding:14px 13px}
+ .hw-arabic{font-size:23px}
+ .hw-english{font-size:16px}
+ .manifest{gap:9px}
+}
+</style>
+</head><body data-languages="both">
+<header class="top">
+<button id="toggle-menu" aria-label="Contents and page navigation" aria-expanded="false" title="Contents">☰</button>
+<a class="brand" href="./">GNAMMA · Tahdhīb</a><a class="trail" href="./">Main reader</a>
+<div class="wide-space"></div>
+<button id="toggle-arabic" aria-pressed="true" title="Toggle Arabic excerpt">AR</button>
+<button id="toggle-english" aria-pressed="true" title="Toggle English translation">EN</button>
+</header>
+<aside id="reader-menu" hidden aria-label="Source-page navigation">
+<div class="nav-head"><strong>Later glosses · printed pages</strong><button id="close-menu" type="button" aria-label="Close navigation">✕</button></div>
+<p style="font-size:12px;color:var(--muted)">These are selected passages from glosses on al-Yazdī, attributed per note where possible. They are not the original sharḥ.</p>
+<nav id="toc-pages" aria-label="Source page list"></nav>
+</aside>
+<main class="main">
+<div class="overline">GNAMMA · SOURCE-AWARE COMPANION READER</div>
+<h1>Ḥawāshī on al-Yazdī’s Ḥāshiya</h1>
+<p class="lead"><span lang="ar" dir="rtl">حواشي الحاشية</span> — selected Arabic passages, translations and contextual commentary from the separately attributed marginal tradition.</p>
+<div class="manifest">
+<span class="state">Working excerpt edition · not definitive</span>
+<span id="reader-status">Loading source register…</span>
+</div>
+<p><strong>What this reader contains.</strong> Fifty-two distinct Qum printed-page positions (127–178), each represented by a translated <em>selection</em> and an independent editorial analysis. The printed pages include many additional passages that have <strong>not</strong> been translated here. This does not claim 52 complete-page translations. Page and author boundaries are provisional until printed images and independent manuscripts are collated.</p>
+<p>These are later glosses on the commentary by Mullā ʿAbd Allāh al-Yazdī, not additional writing by al-Yazdī himself. Multiple signatures may occur within one printed page. Each card therefore describes the voices found on the page; it does not certify that all its contents have a single author. <a href="critical-status.html">Main commentary's critical register</a> and <a href="./">the two-state Matn / Matn + sharḥ reader</a> are kept separate.</p>
+<div class="tools">
+<label for="reader-search" style="position:absolute;left:-9999px">Search excerpts</label>
+<input id="reader-search" type="search" placeholder="Search page number, topic, Arabic or English" autocomplete="off">
+<label for="range-select" style="position:absolute;left:-9999px">Filter printed-page range</label>
+<select id="range-select">
+<option value="all">All Qum printed pages 127–178</option>
+<option value="0">127–140 · Preface and praise</option>
+<option value="1">141–155 · Prologue, language and discourse</option>
+<option value="2">156–168 · Introduction and logical canons</option>
+<option value="3">169–178 · Knowledge, assent and demonstration</option>
+</select>
+<button id="clear-search" type="button">Clear</button>
+</div>
+<div class="section-note"><span id="visible-count">Loading...</span> · Every link opens the corresponding original printed source. Arabic is a selected excerpt; English immediately beside it translates that excerpt. The following analysis is editorial explanation of the wider page, not a translation of unquoted passages.</div>
+<section id="reader-pages" aria-label="Bilingual annotated passages"></section>
+</main>
+<footer class="bottom">52 source pages · Selected translations only · 0 full-page manuscript certifications
+<a href="./">Main Tahdhīb reader</a> <a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">Top</a></footer>
+<script src="hawashi-127-140-data.js?v=20261107-a"></script>
+<script src="hawashi-141-163-recovered-data.js?v=20261107-a"></script>
+<script src="hawashi-142-155-data.js?v=20261107-a"></script>
+<script src="hawashi-156-168-data.js?v=20261107-a"></script>
+<script src="hawashi-169-178-data.js?v=20261107-a"></script>
+<script defer src="hawashi-companion.js?v=20261107-a"></script>
+</body></html>
