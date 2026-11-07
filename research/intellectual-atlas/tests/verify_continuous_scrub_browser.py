@@ -71,7 +71,7 @@ async def exercise(engine,width,height,mobile=False):
     # Advanced years live in an intentionally collapsed menu on all screen sizes.
     # Expand it after checking the uncluttered public first-screen rendering.
     if not await page.locator('.ia-secondary-controls').evaluate('(e)=>e.open'):
-        await page.locator('.ia-secondary-controls > summary').click()
+        await page.locator('[data-action="toggle-advanced"]').click()
     for name,selector in [('overview','.ia-travel-grip'),('diagram','[data-chart]')]:
         await page.evaluate("()=>document.querySelector('#kalam-timeline-app-v3').atlasTest.setRange(1075,1450)")
         use_touch=mobile and engine.name=='chromium'
