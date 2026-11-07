@@ -187,7 +187,8 @@ async def exercise(engine,width,height,mobile=False):
             await el.evaluate("(e)=>e.scrollTop=0")
             before=await snapshot(page)
             x=r['x']+r['width']/2
-            y=r['y']+min(95,r['height']/2)
+            # Start low enough that the entire upward swipe remains inside the scrollport.
+            y=r['y']+min(r['height']-35,max(220,r['height']*.72))
             session=await ctx.new_cdp_session(page)
             await session.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':[{'x':x,'y':y,'id':7}]})
             for i in range(1,6):
