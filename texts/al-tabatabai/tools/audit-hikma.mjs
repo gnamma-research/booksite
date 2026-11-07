@@ -87,5 +87,48 @@ for(const name of ['index.html','muzaffar-al-mantiq/index.html','bidayat-al-hikm
 for(const name of ['assets/hikma-reader.js','assets/hikma-combined.js','assets/hikma-refinements.js','assets/hikma-reader.css','assets/hikma-refinements.css']){
  check(existsSync(join(root,name)),'Missing shared asset '+name);
 }
+
+/* Validate full Muẓaffar source map, exact Nihāya glossary locators, and PDF witness audit. */
+const arabicKey=v=>String(v||'').normalize('NFKC').replace(/[\u064b-\u065f\u0670\u0640\s]/g,'').replace(/[أإآٱ]/g,'ا').replace(/ى/g,'ي');
+function readJson(path,label){
+  if(!existsSync(path)){failures.push(label+': missing');return null;}
+  try{return JSON.parse(readFileSync(path,'utf8'));}
+  catch(e){failures.push(label+': invalid JSON '+e.message);return null;}
+}
+const mMap=readJson(join(root,'muzaffar-al-mantiq/data/authorial-map.json'),'Muẓaffar source map');
+const mText=readJson(join(root,'muzaffar-al-mantiq/data/book.json'),'Muẓaffar source text');
+if(mMap&&mText){
+  check(mMap.parts.length===7,'Muẓaffar must map introduction plus six books');
+  check(mMap.parts.reduce((n,x)=>n+x.availableUnits,0)===mText.units.length,'Muẓaffar mapped translation count mismatch');
+  check(mMap.parts.reduce((n,x)=>n+x.topics.length,0)>=60,'Muẓaffar map lost section titles');
+  for(const p of mMap.parts){
+    check(p.start>0&&p.end>=p.start,'Muẓaffar invalid page range for book '+p.book);
+    for(const t of p.topics)if(t.firstPrintedPage){
+      check(t.locatorStatus==='observed in source table of contents','Unverified Muẓaffar page locator '+t.arabic);
+      check(t.firstPrintedPage>=p.start&&t.firstPrintedPage<=p.end,'Muẓaffar locator outside book');
+    }
+  }
+}
+const nText=readJson(join(root,'nihayat-al-hikma/data/book.json'),'Nihāya source text');
+const nExtra=readJson(join(root,'nihayat-al-hikma/data/editorial-supplement.json'),'Nihāya editorial supplement');
+if(nText&&nExtra){
+  check(nExtra.glossary.length===47,'Nihāya supplemental glossary lost entries');
+  const ids=new Map(nText.units.map(u=>[u.id,u]));
+  const known=new Set(nText.glossary.map(x=>arabicKey(x.arabic||x.term)));
+  for(const entry of nExtra.glossary){
+    check(!known.has(arabicKey(entry.arabic||entry.term)),'Duplicated Nihāya glossary lemma '+entry.arabic);
+    known.add(arabicKey(entry.arabic||entry.term));
+    const u=ids.get(entry.passageId);
+    check(!!u,'Invalid Nihāya passage target '+entry.passageId);
+    if(u)check(arabicKey(u.arabic).includes(arabicKey(entry.arabic)),'Nihāya passage does not contain lemma '+entry.arabic);
+    check(/comparative/i.test(entry.editorialOrigin||''),'Unmarked Nihāya comparative glossary entry '+entry.arabic);
+  }
+  check(nExtra.sources.length===2,'Nihāya revised two-volume witness incomplete');
+}
+const bAudit=readJson(join(root,'audits/bidaya-325page-source-parity-2026-11-07.json'),'Bidāya PDF witness audit');
+if(bAudit){
+  check(bAudit.summary.originalUnits===111&&bAudit.summary.sourcePagesRead===325,'Bidāya source witness audit not exhaustive across printed source');
+  check((bAudit.method?.limits||'').includes('NOT an independent edition'),'Bidāya same-source comparison must not be described as independent collation');
+}
 console.log(JSON.stringify({status:failures.length?'failed':'passed',books:report,failures,warnings},null,2));
 process.exitCode=failures.length?1:0;
