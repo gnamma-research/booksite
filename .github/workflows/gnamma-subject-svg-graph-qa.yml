@@ -1,4 +1,4 @@
-name: GNAMMA interactive subject SVG graphs and early legal circles QA
+name: GNAMMA subject graph backward-compatibility: shared timeline and vertical synopsis
 on:
   push:
     branches: [fix/subject-first-interactive-book-graph-20261107]
@@ -25,7 +25,8 @@ jobs:
         with: {python-version: '3.12'}
       - name: Check SVG graphs, historical authorities, inherited bibliographies and unchanged historical atlas
         run: |
-          node --check research/intellectual-atlas/corpora/subject-graph.js
+          node --check research/intellectual-atlas/corpora/discipline-atlas.js
+          node --check research/intellectual-atlas/corpora/canonical-synopsis.js
           node --check research/intellectual-atlas/corpora/bibliography-map.js
           node --check research/intellectual-atlas/atlas-app.js
           python research/intellectual-atlas/build.py
@@ -42,13 +43,13 @@ jobs:
           assert len(m['works'])==4157
           o=json.loads((p/'expanded-bibliography.json').read_text())
           assert len(o['works'])>=1800
-          source=(p/'subject-graph.js').read_text()
-          assert source.count('data-gnv-book')>=2
-          assert 'gnv-canvas' in source and 'gnv-jurist' in source
+          source=(p/'discipline-atlas.js').read_text()
+          assert source.count('data-dn-work')>=2
+          assert 'dn-map' in source and 'dn-scholar' in source
           assert 'gnbib-card' not in source and 'gnbib-results' not in source
           html=Path('research/intellectual-atlas/index.html').read_text()
-          assert 'subject-graph.js' in html
-          print('PASS: source-backed interactive book graph replaces list for every subject')
+          assert 'discipline-atlas.js' in html and 'canonical-synopsis.js' in html
+          print('PASS: every source topic uses same GNAMMA year-axis atlas, with condensed second view')
           PY
   actual-subject-browser:
     runs-on: ubuntu-latest
@@ -68,7 +69,7 @@ jobs:
       - run: |
           python -m pip install -q playwright==1.58.0
           python -m playwright install --with-deps ${{ matrix.engine }}
-      - name: Exercise seven disciplines and work-only SVG with jurist nodes and sources
+      - name: Exercise shared chronological book map and vertical synopsis for every science
         shell: bash
         run: |
           python -m http.server 8123 --bind 127.0.0.1 >/tmp/gnamma-svg-server.log 2>&1 &
@@ -81,7 +82,7 @@ jobs:
         with:
           name: gnamma-svg-subject-${{ matrix.engine }}-${{ matrix.width }}x${{ matrix.height }}
           path: |
-            /tmp/gnamma-svg-subject-qa/*.png
-            /tmp/gnamma-svg-subject-qa/*.json
+            /tmp/gnamma-unified-timeline-qa/*.png
+            /tmp/gnamma-unified-timeline-qa/*.json
             /tmp/gnamma-svg-server.log
           if-no-files-found: ignore
