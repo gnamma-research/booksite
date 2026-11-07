@@ -16,7 +16,7 @@ const groups={
 const labels={hanafi:"Ḥanafī",maliki:"Mālikī",shafii:"Shāfiʿī",hanbali:"Ḥanbalī",other:"Unassigned / comparative","lineage_unmapped":"Not assigned to a researched line"};
 const label=x=>labels[x]||x.replace(/^grammar:/,"Grammar: ").replace(/^balagha:/,"Balāgha: ").replace(/_/g," ");
 const PAGE=32;
-let records=[],ready=false,promise=null,error="",last=null,activeGenre="",state={tier:"all",line:"all",band:"all",period:"all",page:1,selected:""};
+let records=[],ready=false,promise=null,error="",last=null,activeGenre="",activeSchool="",initialExternal=true,state={tier:"all",line:"all",band:"all",period:"all",page:1,selected:""};
 function safe(url,provider){
  try{const u=new URL(url);if(u.protocol!=="https:")return "";
  if(provider==="alreq"&&u.hostname==="app.alreq.com"&&u.pathname.startsWith("/ar/"))return u.href;
@@ -143,9 +143,13 @@ function render(args){
      '<p>Loading source-linked work and manuscript bibliographies…</p>')+'</div>';
    args.onCounts(0,0);if(!promise&&!error)load();return;
  }
- if(activeGenre!==g){
-   activeGenre=g;state.tier="all";state.line="all";state.band="all";state.period="all";state.page=1;state.selected="";
-   readHash();
+ if(initialExternal){
+   initialExternal=false;activeGenre=g;activeSchool=args.school;
+ }else if(activeGenre!==g||activeSchool!==args.school){
+   // Switching legal school or discipline must not retain an incompatible
+   // old bubble/period and falsely show an empty new bibliography.
+   activeGenre=g;activeSchool=args.school;
+   state.line="all";state.band="all";state.period="all";state.page=1;state.selected="";
  }
  const accepted=records.filter(b=>b.genres.includes(g)&&
    (args.school==="all"||!(g==="fiqh"||g==="usul")||b.schools.includes(args.school))&&
