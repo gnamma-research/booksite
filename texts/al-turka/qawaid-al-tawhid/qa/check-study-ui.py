@@ -72,6 +72,11 @@ with sync_playwright() as p:
   page.locator('[data-open-source="tusid-tajrid"]').first.click()
   ck('Tajrid commentary explicitly attributed to al-Hilli','الوجود ليس طبيعة نوعية' in page.locator('.gn-source-ar').inner_text() and 'al-Ḥillī' in page.locator('#gn-study-title').inner_text())
   page.locator('[data-open-study="references"]').click()
+  page.locator('[data-open-source="ibn-turka-rashidiyya"]').first.click()
+  ck('Rashidiyya source quotation delimited without guillemets',
+     'لا يتحقق الإدراك' in page.locator('.gn-source-ar').inner_text()
+     and 'not a collated full transcription' in page.locator('#gn-study-content').inner_text())
+  page.locator('[data-open-study="references"]').click()
   page.locator('[data-open-source="q-24-40"]').first.click()
   ck('Quran 24:40 complete verse in card','وَمَنْ لَمْ يَجْعَلِ' in page.locator('.gn-source-ar').inner_text())
   page.locator('[data-open-study="references"]').click()
