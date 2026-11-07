@@ -1,0 +1,46 @@
+name: Qawaid complete-corpus second-pass audit
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/qawaid-second-pass-corpus-audit.yml'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/second-pass-corpus-audit.mjs'
+      - 'texts/al-turka/qawaid-al-tawhid/data/**'
+      - 'texts/al-turka/qawaid-al-tawhid/sources/**'
+      - 'texts/al-turka/qawaid-al-tawhid/pdf/**'
+      - 'texts/al-turka/qawaid-al-tawhid/commentary.html'
+      - 'texts/al-turka/qawaid-al-tawhid/downloads/Tamhid_Complete_Commentary_Reading_Edition.html'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: qawaid-second-pass-corpus-audit
+  cancel-in-progress: false
+jobs:
+  verify-and-document:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            texts/al-turka/qawaid-al-tawhid
+      - name: Verify all 171 sections and five PDF binaries
+        run: node texts/al-turka/qawaid-al-tawhid/qa/second-pass-corpus-audit.mjs
+      - name: Commit source-check evidence without touching the text
+        run: |
+          git config user.name 'Gnamma editorial audit'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add texts/al-turka/qawaid-al-tawhid/qa/second-pass-corpus-audit.json texts/al-turka/qawaid-al-tawhid/editorial/SECOND_PASS_REVIEW_2026-11-07.md
+          if git diff --cached --quiet; then echo 'No audit-report changes'; exit 0; fi
+          git commit -m 'Record 171-unit source and PDF integrity audit with explicit scholarly limits'
+          git pull --rebase origin master
+          git push origin HEAD:master
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawaid-second-pass-evidence
+          path: |
+            texts/al-turka/qawaid-al-tawhid/qa/second-pass-corpus-audit.json
+            texts/al-turka/qawaid-al-tawhid/editorial/SECOND_PASS_REVIEW_2026-11-07.md
+          retention-days: 14
