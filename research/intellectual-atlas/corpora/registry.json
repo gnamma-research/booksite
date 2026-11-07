@@ -6,7 +6,7 @@
   "license": "CC BY-NC-SA 4.0",
   "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
   "source_documentation": "https://openiti.org/documentation/",
-  "verification_policy": "GitHub OpenITI RELEASE work + version paths exist and version-level metadata inspected. This is provenance verification, NOT manuscript collation, print collation, isnad verification, or critical edition certification. Explicit problems in OpenITI version metadata are retained.",
+  "verification_policy": "28 work/version URI files and corresponding version metadata were located in the OpenITI source repositories and the matching OpenITI/RELEASE snapshot (Feb 9 2026). Five byte-identical local source files were independently compared by Git blob SHA. This is file provenance/integrity verification, NOT completeness of each historical work, manuscript collation, independent page by page printed-edition checking, isnad verification, or a GNAMMA critical edition; source warnings remain visible.",
   "books": [
     {
       "id": "muwatta",
@@ -59,7 +59,7 @@
         "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0180Sibawayhi/KitabSibawayhi/0180Sibawayhi.KitabSibawayhi.Shamela0023018-ara1.yml",
         "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0180Sibawayhi/KitabSibawayhi/0180Sibawayhi.KitabSibawayhi.Shamela0023018-ara1.mARkdown",
         "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0180Sibawayhi/KitabSibawayhi/KitabSibawayhi.yml",
-        "quality_note": "REDUNDANT_PARTS, structure and variant wording noted"
+        "quality_note": "OpenITI reviewer reports redundant lines and mixed-in marginal material, possible PDF page-order issue, and some digitization variants; not independently collated here."
       },
       "local_text": null,
       "verification": {
@@ -89,7 +89,7 @@
         "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0204Shafici/Risala/0204Shafici.Risala.LAL2013020402-ara2.yml",
         "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0204Shafici/Risala/0204Shafici.Risala.LAL2013020402-ara2",
         "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0204Shafici/Risala/Risala.yml",
-        "quality_note": "CLEANED_VERSION; LAL-derived Arabic paragraph locators"
+        "quality_note": "Arabic edition derived from Library of Arabic Literature's Joseph Lowry text, with numbered paragraph locators; OpenITI clean transcription omits paratextual edition apparatus."
       },
       "local_text": "data/shafii_risala.txt",
       "verification": {
@@ -541,7 +541,8 @@
         "version_metadata_reviewed": true,
         "content_collated_against_print": false,
         "critical_edition": false
-      }
+      },
+      "atlas_work_id": "ibnarabi_fusus"
     },
     {
       "id": "ibn_malik_alfiyya",
@@ -593,7 +594,7 @@
         "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0676Nawawi/ArbacunaNawawiyya/0676Nawawi.ArbacunaNawawiyya.Shamela0012836-ara1.yml",
         "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0676Nawawi/ArbacunaNawawiyya/0676Nawawi.ArbacunaNawawiyya.Shamela0012836-ara1.mARkdown",
         "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0676Nawawi/ArbacunaNawawiyya/ArbacunaNawawiyya.yml",
-        "quality_note": "OpenITI annotated text; cross-check individual ḥadīth locators before quotation"
+        "quality_note": "OpenITI edition annotation reports first identification paragraph and the conclusion omitted from this digital witness; distinguish it from a complete printed edition. Source page markers are present."
       },
       "local_text": "data/nawawi_arbain.txt",
       "verification": {
@@ -844,5 +845,16 @@
         "critical_edition": false
       }
     }
-  ]
+  ],
+  "mirror_integrity": {
+    "method": "Git SHA-1 blob identity comparison against pinned OpenITI/RELEASE source version",
+    "byte_matched_ids": [
+      "nawawi_arbain",
+      "ibn_malik_alfiyya",
+      "ibn_arabi_fusus",
+      "shafii_risala",
+      "jurjani_asrar"
+    ],
+    "checked": "2026-11-07"
+  }
 }
