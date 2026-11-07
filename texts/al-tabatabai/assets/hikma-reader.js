@@ -569,6 +569,10 @@
             const existing = new Set((book.glossary || []).map(item => (item.arabic || item.term || '').normalize('NFKC').replace(/[\u064b-\u065f\u0670\s]/g, '')));
             book.glossary = [...(book.glossary || []), ...(supplement.glossary || []).filter(item => !existing.has((item.arabic || item.term || '').normalize('NFKC').replace(/[\u064b-\u065f\u0670\s]/g, '')))];
             book.sources = [...(book.sources || []), ...(supplement.sources || [])];
+            for (const note of supplement.criticalNotes || []) {
+              const unit = book.units.find(item => item.id === note.passageId);
+              if (unit) unit.notes = [...(unit.notes || []), { type: note.type, text: note.text, url: note.url }];
+            }
           }
         } catch (_) { /* The authorial reader remains fully available if the optional supplement fails. */ }
       }
