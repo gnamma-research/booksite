@@ -211,14 +211,84 @@ jobs:
           assert 'الضروب المنتجة' in sy[7]['ar']
           assert 'عكس الكبرى' in sy[8]['ar'] and 'الشكل الأول' in sy[8]['ar']
           assert [x['page'] for x in gloss['entries'] if x['unit']=='L.16']==[86,86,98,98]
-          allblocks=[*p,*w,*q,*c,*z,*mod,*cond,*c13,*c14,*c15,*sy]
-          assert len(allblocks)==71 and len({x['page'] for x in allblocks})==69
-          assert all(x['page'] not in (38,52,53,85,95,96,97) for x in allblocks)
+          late_files=[
+              ('yazdi-continuous-q95-97-data.js','L.16',list(range(95,98)),3),
+              ('yazdi-continuous-q98-101-data.js','L.16',list(range(98,102)),4),
+              ('yazdi-continuous-q102-104-data.js','L.17',[102,103,103,104],4),
+              ('yazdi-continuous-q105-108-data.js','L.18',list(range(105,109)),4),
+              ('yazdi-continuous-q110-113-data.js','L.18',list(range(110,114)),4),
+              ('yazdi-continuous-q114-118-data.js','L.19',list(range(114,119)),5),
+              ('yazdi-continuous-q119-123-data.js','L.19',list(range(119,124)),5),
+          ]
+          late={}
+          for filename,unit,pages,number in late_files:
+              entry=source_file(filename)
+              blocks=entry['blocks']
+              assert entry['certified'] is False
+              assert entry['unit']==unit and len(blocks)==number
+              assert [b['page'] for b in blocks]==pages
+              assert len({b['id'] for b in blocks})==number
+              assert all(b['unit']==unit and b['ar'] and b['en'] and b['photoChecked'] is False for b in blocks)
+              assert all(str(b['page']) in b['sourceUrl'] and 'ablibrary.net' in b['sourceUrl'] for b in blocks)
+              assert all('التقريب ص' not in b['ar'] for b in blocks)
+              late[filename]=entry
+          q95=late['yazdi-continuous-q95-97-data.js']['blocks']
+          q98=late['yazdi-continuous-q98-101-data.js']['blocks']
+          q102=late['yazdi-continuous-q102-104-data.js']['blocks']
+          q105=late['yazdi-continuous-q105-108-data.js']['blocks']
+          q110=late['yazdi-continuous-q110-113-data.js']['blocks']
+          q114=late['yazdi-continuous-q114-118-data.js']['blocks']
+          q119=late['yazdi-continuous-q119-123-data.js']['blocks']
+          assert 'لينتج الموجبتان' in q95[0]['ar'] and 'عبارة المصنف تسامح' in q95[2]['ar']
+          assert 'تفردت به' in q98[-1]['ar']
+          assert 'من متصلتين' in q102[0]['ar'] and 'الاستثنائي' in q102[2]['ar']
+          assert 'ليس هذا قياسا واحدا' in q102[-1]['ar']
+          assert 'الاستقراء' in q105[0]['ar'] and 'السبر والتقسيم' in q105[-1]['ar']
+          assert 'حكم عليه كل كل' in q105[-1]['ar']
+          assert 'اليقين' in q110[1]['ar'] and 'البرهان اللمي' in q110[2]['ar']
+          assert 'أهملوه' in q110[-1]['ar']
+          assert 'بالبرهان' in q114[0]['ar'] and 'لذواتها' in q114[3]['ar']
+          assert 'قوله «الغرض»' in q119[0]['ar'] and 'الأنحاء التعليمية' in q119[2]['ar']
+          assert 'جعلنا الله وإياكم' in q119[-1]['ar'] and 'قد تمت النسخة' not in q119[-1]['ar']
+          col=late['yazdi-continuous-q119-123-data.js']['colophon']
+          assert 'قد تمت النسخة' in col['text'] and 'Nonauthorial' in col['attribution']
+          assert late['yazdi-continuous-q119-123-data.js']['nextLayer']['page']==125
+          opening=source_file('yazdi-continuous-q7-13-data.js')['blocks']
+          intro=source_file('yazdi-continuous-q14-19-data.js')['blocks']
+          assert [x['page'] for x in opening]==list(range(7,14))
+          assert [x['page'] for x in intro]==list(range(14,20))
+          assert all(x['ar'] and x['en'] and x['photoChecked'] is False for x in [*opening,*intro])
+          allblocks=[*opening,*intro,*p,*w,*q,*c,*z,*mod,*cond,*c13,*c14,*c15,*sy,*q95,*q98,*q102,*q105,*q110,*q114,*q119]
+          assert len(allblocks)==113 and len({x['page'] for x in allblocks})==110
+          assert len({x['id'] for x in allblocks})==113
+          groups=[
+              [x for x in allblocks if 7<=x['page']<=66],
+              [x for x in allblocks if 67<=x['page']<=123]
+          ]
+          assert [len({x['page'] for x in group}) for group in groups]==[55,55]
+          assert [len(group) for group in groups]==[57,56]
+          counts=[(sum(len(x['ar'].split()) for x in group),sum(len(x['en'].split()) for x in group)) for group in groups]
+          assert counts==[(8734,11229),(10589,12662)],counts
+          batch_dir=base/'tahdhib-al-mantiq'/'edition'/'batches'
+          import re
+          for n,(start,end,blocks_count) in enumerate([(7,66,57),(67,123,56)],1):
+              md=(batch_dir/f'yazdi-main-batch-0{n}-q{start}-{end}.md').read_text(encoding='utf-8')
+              assert len(re.findall(r'^## Qum printed page \d+ ',md,re.M))==55
+              assert md.count('**العربية — Original**')==blocks_count
+              assert md.count('**English — Translation**')==blocks_count
+              assert f'## Qum printed page {start} ' in md and f'## Qum printed page {end} ' in md
+              assert (batch_dir/f'batch-0{n}-q{start}-{end}.html').exists()
+          assert (batch_dir/'batch-reader.css').exists() and (batch_dir/'batch-reader.js').exists()
+          assert all(x['page'] not in (38,52,53,85,109,124,125) for x in allblocks)
+          assert sum(x.get('unit','L.03')=='L.16' for x in allblocks)==16
+          assert sum(x.get('unit','L.03')=='L.17' for x in allblocks)==4
+          assert sum(x.get('unit','L.03')=='L.18' for x in allblocks)==8
+          assert sum(x.get('unit','L.03')=='L.19' for x in allblocks)==10
           assert 85 not in [x['page'] for x in allblocks]
           assert sum(x.get('unit', 'L.03')=='L.13' for x in allblocks)==4
           assert sum(x.get('unit', 'L.03')=='L.14' for x in allblocks)==7
           assert sum(x.get('unit', 'L.03')=='L.15' for x in allblocks)==4
-          assert sum(x.get('unit', 'L.03')=='L.16' for x in allblocks)==9
+          assert sum(x.get('unit', 'L.03')=='L.16' for x in allblocks)==16
           assert sum(x.get('unit', 'L.03')=='L.11' for x in allblocks)==6
           assert sum(x.get('unit', 'L.03')=='L.12' for x in allblocks)==5
           assert all('التقريب ص' not in x['ar'] for x in w)
@@ -331,6 +401,9 @@ jobs:
           node --check tools/tahdhib/yazdi_layer_qa.mjs
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-layer-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-layer.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q7-13-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q14-19-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/batches/batch-reader.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-l03-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-universals-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-p39-47-data.js
@@ -342,6 +415,13 @@ jobs:
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q74-80-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q81-84-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q86-94-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q95-97-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q98-101-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q102-104-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q105-108-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q110-113-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q114-118-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q119-123-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-q125-139-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-q140-154-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-daruri-reader.js

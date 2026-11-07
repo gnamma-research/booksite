@@ -1311,12 +1311,230 @@ const syllogismTerms=[
     "sourceLayer": "Yazdī main شرح Qum 86–94, printed searchable transcription; not manuscript or photographic verified"
   }
 ];
+const scienceAndMethodTerms=[
+  {
+    "ar": "الضابطة",
+    "en": "General productivity criterion",
+    "explanation": "A rule intended to encompass the conditions under which categorical syllogisms of the various figures produce a conclusion.",
+    "page": 98,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/98?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "عموم موضوعية الأوسط",
+    "en": "Universal subjecthood of the middle",
+    "explanation": "One alternative in the general condition: the middle term serves as subject of a universal premise and is linked actually to the other extreme.",
+    "page": 99,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/99?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "منافاة النسبتين",
+    "en": "Modal incompatibility of two relations",
+    "explanation": "For certain second-figure moods, the modal relations involving the shared middle must be unable to hold together under the same relevant respect.",
+    "page": 100,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/100?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "تفردت به",
+    "en": "Claim of an original investigation",
+    "explanation": "Al-Yazdī describes the new formulation of modal second-figure incompatibility as his own contribution; historical priority remains to be investigated.",
+    "page": 101,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/101?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "القياس الشرطي الاقتراني",
+    "en": "Conditional conjunctive syllogism",
+    "explanation": "A syllogism joining conditional and/or categorical components whose conclusion's form is produced rather than stated in a premise.",
+    "page": 102,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/102?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "القياس الاستثنائي",
+    "en": "Exceptive syllogism",
+    "explanation": "An inference using a conditional or disjunction and a categorical exception that affirms or denies one of its parts.",
+    "page": 103,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/103?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "رفع التالي",
+    "en": "Denying the consequent",
+    "explanation": "A productive exception for relation-grounded connected conditionals, entailing denial of antecedent; unlike affirming consequent.",
+    "page": 103,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/103?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "وضع المقدم",
+    "en": "Affirming the antecedent",
+    "explanation": "A productive exception in connected conditionals, establishing the consequent from the antecedent.",
+    "page": 103,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/103?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "السبر والتقسيم",
+    "en": "Elimination of causal candidates",
+    "explanation": "The legal-theoretic method of listing possible explanatory attributes and excluding alternatives to identify a cause.",
+    "page": 108,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/108?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "الاستقراء التام",
+    "en": "Complete induction",
+    "explanation": "Examination of all relevant particulars, reducible to an exhaustive division and capable of certainty.",
+    "page": 106,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/106?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "الاستقراء الناقص",
+    "en": "Incomplete induction",
+    "explanation": "Examination of some but not all particulars; cannot by itself necessitate an unrestricted universal conclusion.",
+    "page": 106,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/106?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "واسطة في الإثبات",
+    "en": "Middle as a cause of knowing",
+    "explanation": "The syllogistic middle mediating assent to the conclusion, even when not an external cause of the relation known.",
+    "page": 112,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/112?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "واسطة في الثبوت",
+    "en": "Middle as a real cause",
+    "explanation": "The middle that also explains why the predicative relation exists outside thought, central to demonstration of why.",
+    "page": 112,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/112?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "البرهان اللمي",
+    "en": "Demonstration of why",
+    "explanation": "An inference whose middle both mediates knowledge and causes the relation in reality.",
+    "page": 112,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/112?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "البرهان الإني",
+    "en": "Demonstration that",
+    "explanation": "An inference establishing that a fact obtains without identifying in its middle the extramental cause of the fact.",
+    "page": 112,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/112?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "أجزاء العلوم",
+    "en": "Components of a science",
+    "explanation": "The subject, the propositions investigated, and the conceptual/propositional principles upon which investigation depends.",
+    "page": 114,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/114?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "مبادئ تصورية",
+    "en": "Conceptual principles",
+    "explanation": "Definitions or accounts of the terms needed in the questions of a science.",
+    "page": 114,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/114?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "مبادئ تصديقية",
+    "en": "Propositional principles",
+    "explanation": "Truth-claims used as premises of demonstrative syllogisms within a science.",
+    "page": 114,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/114?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "أصول موضوعة",
+    "en": "Postulates granted to a teacher",
+    "explanation": "Premises provisionally accepted on confidence in instruction, as distinguished from the same premises received reluctantly as demanded concessions.",
+    "page": 116,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/116?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "مصادرات",
+    "en": "Premises demanded for argument",
+    "explanation": "Borrowed premises accepted despite doubt or opposition; their status can vary with the student.",
+    "page": 116,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/116?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "الأعراض الذاتية",
+    "en": "Proper accidents",
+    "explanation": "Predicate properties appropriate to the science's subject considered as what it is; their scope and mediation are disputed.",
+    "page": 118,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/118?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "الرؤوس الثمانية",
+    "en": "Eight preliminary headings",
+    "explanation": "A discipline’s purpose, benefit, name, compiler, disciplinary kind, rank, division and educational methods.",
+    "page": 119,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/119?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "الغرض والعلة الغائية",
+    "en": "Intended final cause",
+    "explanation": "A result that motivates an agent’s action, distinguished from benefits that happen to follow without motivating it.",
+    "page": 119,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/119?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "الأنحاء التعليمية",
+    "en": "General educational methods",
+    "explanation": "Methods of dividing, analyzing, defining and demonstrating applicable across scientific disciplines.",
+    "page": 121,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/121?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "التحليل",
+    "en": "Analysis of an inference",
+    "explanation": "Working backward through an existing argument to identify hidden premises, middle terms and syllogistic figure.",
+    "page": 122,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/122?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "التقسيم",
+    "en": "Construction by dividing/searching",
+    "explanation": "Seeking a demonstrative arrangement from a proposed conclusion by discovering suitable middle terms and premiss relations.",
+    "page": 122,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/122?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  },
+  {
+    "ar": "التحديد",
+    "en": "Formulation of a definition",
+    "explanation": "Separating essential from accidental predicates, finding genus/differentia or characteristic property and assembling an adequate defining account.",
+    "page": 123,
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/123?lang=ar",
+    "sourceLayer": "Yazdī main Qum شرح 95–123: working digital transcription; physical photo and manuscript readings not certified"
+  }
+];
 const lemmaKey=t=>prior.norm(t.ar)+' ⟐ '+t.en.toLocaleLowerCase();
 const seen=new Set(prior.terms.map(lemmaKey));
 const terms=prior.terms.slice();
-for(const term of [...extra,...supplementary,...universals,...speciesTerms,...logicalUniversalsAndPropositions,...modalConditionalTerms,...contradictionConversionTerms,...syllogismTerms]){
+for(const term of [...extra,...supplementary,...universals,...speciesTerms,...logicalUniversalsAndPropositions,...modalConditionalTerms,...contradictionConversionTerms,...syllogismTerms,...scienceAndMethodTerms]){
  const key=lemmaKey(term);
  if(!seen.has(key)){terms.push(term);seen.add(key)}
 }
-window.GNAMMA_TAHDHIB_GLOSSARY=Object.freeze({...prior,terms,version:'logic-plus-yazdi-syllogism-v8',historicallyCollated:false});
+window.GNAMMA_TAHDHIB_GLOSSARY=Object.freeze({...prior,terms,version:'logic-plus-yazdi-science-v9',historicallyCollated:false});
 })();
