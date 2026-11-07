@@ -8,6 +8,8 @@
 
 This follows the electronic Arabic as it stands rather than introducing an unacknowledged emendation. It also preserves the causal relationship of hunger and satiety to the disturbances. The Arabic text is **not changed**.
 
+**Internal comparison:** the same commentary uses the distinct Arabic word **السهر** in SH-002 and SH-047, where the English appropriately renders excessive sleeplessness. The author's introductory SH-INTRO-008 uses **السهو** in the sense of oversight. This strengthens the lexical correction for SH-058, without resolving whether the printed A base itself contains an error.
+
 **Remaining question:** inspect the printed page or independent Arabic witness to determine whether the electronic transcription has confused **السهو**, **السهر**, or another reading. Until that is done, report the issue as a possible source-level problem, not a definite scribal correction. The Arabic source fingerprint is preserved; this is an English translation correction only.
 
 **Propagation requirement:** update the English draft, the source JS module and its attached note, the compiled 110-unit JSON, bilingual/English Markdown exports, self-contained HTML and five PDFs. Check all derived versions before claiming the corrected publication is complete.
