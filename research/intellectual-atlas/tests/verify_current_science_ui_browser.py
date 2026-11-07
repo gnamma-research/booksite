@@ -146,6 +146,16 @@ async def run(page):
     await choose_science(page, "tafsir")
     require((await state(page))["sourceCards"] > 0, "Tafsīr sources not drawn")
 
+    # Reverse routes must actually change the main map, not only the Explore overlay.
+    await choose_science(page, "philosophy")
+    require((await state(page))["view"] == "timeline", "Philosophy from Tafsīr did not restore main atlas")
+    await choose_science(page, "tasawwuf")
+    require((await state(page))["view"] == "network" and (await state(page))["family"] == "fusus",
+            "Tasawwuf did not open its already verified Fuṣūṣ text network")
+    await choose_science(page, "fiqh")
+    require((await state(page))["sourceCards"] == 10,
+            "Return to Fiqh from Fuṣūṣ did not show Fiqh books")
+    
     # Return to canonical atlas without mutating its bibliography or date chart.
     await page.locator('[data-main] [data-action="show-all-mapped"]').click()
     s = await state(page)
