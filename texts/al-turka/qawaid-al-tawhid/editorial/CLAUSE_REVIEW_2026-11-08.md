@@ -19,6 +19,14 @@ The counts in the main-commentary rows refer to **32 source units each**, *not* 
 
 Each line in a JSONL map has the original text fragment, an English *candidate* fragment, source-section identifier, and potential logical-marker review cues. **reviewStatus = machine-aligned—semantic equivalence not certified** must not be relabelled as verified until a human has read the corresponding Arabic and English with the source.
 
+## Manual review completed in this pass
+
+**148 / 3,377 candidate groups have been explicitly marked after Arabic–English reading:** 108 matn groups (QT-001–009 and thirteen additional doctrinally important matn lemmata), plus **all 40 concluding commentary groups**. The latter include fifteen manually reallocated literal glosses, with six groups explicitly carrying source-reading or interpretative uncertainty. The first nine matn lemmata include sixteen manually reallocated literal glosses correcting inaccuracies in the *machine alignment*, not independently proven inaccuracies in the already published complete English translation.
+
+**3,229** candidate groups remain to be individually certified against their Arabic and any independent textual witness. The 1,798 machine cue flags should be used for prioritization, never counted as translation errors. The published source Arabic has not been conjecturally rewritten by the clause-index pass.
+
+The manual record is embedded directly in each JSONL row under `manualReviewStatus`, `manualLiteralGloss`, `reviewNote` and `reviewDate`. For reviewed rows, a separate literal gloss may improve clause-level alignment without replacing the smoother published passage-level translation.
+
 ## Clause-level editorial findings from direct comparison
 
 ### 1. QT-058 versus SH-058: do not harmonize two different readings
