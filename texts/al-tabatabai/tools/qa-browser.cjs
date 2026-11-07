@@ -29,6 +29,7 @@ async function run(browserType){
   try{
     const ctx=await browser.newContext({viewport:{width:1365,height:900},reducedMotion:'reduce'});
     const page=await ctx.newPage();
+    await ctx.clearCookies();
     page.on('pageerror',error=>errors.push(error.message));
     await check(browserType.name()+' three-book landing',async()=>{
       await page.goto(base,{waitUntil:'domcontentloaded'});
@@ -43,6 +44,7 @@ async function run(browserType){
       await page.locator('[data-part-jump="passage-B-INTRO"]').click();
       await page.locator('#passage-B-INTRO').waitFor({state:'attached'});
       assert.match(await page.locator('#current-location').textContent(),/Bidāy/);
+      await page.waitForFunction(() => document.querySelector('[data-part-jump="passage-B-INTRO"]')?.getAttribute('aria-current') === 'true');
       assert.equal(await page.locator('[data-part-jump="passage-B-INTRO"]').getAttribute('aria-current'),'true');
       await page.locator('[data-part-jump="passage-N-INTRO"]').click();
       await page.locator('#passage-N-INTRO').waitFor({state:'attached',timeout:35000});
