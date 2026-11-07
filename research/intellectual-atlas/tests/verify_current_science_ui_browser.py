@@ -68,7 +68,10 @@ async def run(page):
     require(initial["noOverflow"], "Page horizontally overflows viewport")
 
     # Existing sourced philosophical network remains accessible.
-    await page.locator('[data-view="network"]').click()
+    if await page.locator('[data-view="network"]').is_visible():
+        await page.locator('[data-view="network"]').click()
+    else:
+        await page.locator('[data-view-picker]').select_option('network')
     require((await state(page))["view"] == "network", "Existing network tab broken")
     await choose_science(page, "fiqh")
     s = await state(page)
@@ -144,7 +147,7 @@ async def run(page):
     require((await state(page))["sourceCards"] > 0, "Tafsīr sources not drawn")
 
     # Return to canonical atlas without mutating its bibliography or date chart.
-    await page.locator('[data-action="show-all-mapped"]').first.click()
+    await page.locator('[data-main] [data-action="show-all-mapped"]').click()
     s = await state(page)
     require(s["view"] == "timeline" and s["nodes"] == 404, "Return to main atlas broken")
     require(s["duplicateIds"] == 0 and s["noOverflow"], "Layout/IDs damaged by view switches")
