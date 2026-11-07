@@ -151,7 +151,8 @@
       const code=stage?stage[1]:null;
       const buttons=document.querySelectorAll('[data-part-jump]');
       buttons.forEach(button=>{
-        const chosen=!!code && button.dataset.partJump.startsWith('chapter-'+code+'-');
+        const buttonPart=/^(?:chapter|passage)-([MBN])(?:-|$)/.exec(button.dataset.partJump || '');
+        const chosen=!!code && !!buttonPart && buttonPart[1] === code;
         if(chosen)button.setAttribute('aria-current','true');
         else button.removeAttribute('aria-current');
       });
