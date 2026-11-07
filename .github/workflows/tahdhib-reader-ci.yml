@@ -63,6 +63,28 @@ jobs:
               return json.loads(data.split('=',1)[1].rstrip(';\n '))
           logic=load('tahdhib-al-mantiq');kalam=load('tahdhib-al-kalam')
           assert len(logic['units'])==19 and len(kalam['units'])==1044
+          supplement=base/'tahdhib-al-mantiq'/'edition'
+          def read_hawashi(name):
+              text=(supplement/name).read_text(encoding='utf-8')
+              return json.loads(text.split('=',1)[1].strip().removesuffix(';'))
+          a=read_hawashi('hawashi-q125-139-data.js')
+          b=read_hawashi('hawashi-q140-154-data.js')
+          positions=a['entries']+b['entries']
+          assert [p['page'] for p in positions]==list(range(125,155))
+          assert len(positions)==30
+          assert positions[0]['type']=='section' and positions[1]['type']=='blank'
+          assert sum(p['type']=='selection' for p in positions)==28
+          assert all(p['sourceUrl']==f"https://ablibrary.net/book_content/b/12170/{p['page']}?lang=ar" for p in positions)
+          assert all(p['fullPageTranslated'] is False and p['photoCollated'] is False for p in positions)
+          assert all('later' in p['authorialStatus'] for p in positions)
+          assert all(p['ar'] and p['en'] and p['voices'] for p in positions if p['type']=='selection')
+          assert len({p['page'] for p in positions})==30
+          index=(supplement/'hawashi-q125-154.html').read_text(encoding='utf-8')
+          assert 'NOT</strong> a thirty-page complete translation' in index
+          assert 'hawashi-q125-139-data.js' in index and 'hawashi-q140-154-data.js' in index
+          menu=(supplement/'logic-daruri-reader.js').read_text(encoding='utf-8')
+          assert 'hawashi-q125-154.html' in menu
+          assert 'Matn / Matn + sharḥ' in menu
           import re
           raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-layer-data.js').read_text(encoding='utf-8')
           gloss=json.loads(raw.split('=',1)[1].strip().removesuffix(';'))
@@ -320,6 +342,8 @@ jobs:
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q74-80-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q81-84-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q86-94-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-q125-139-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-q140-154-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-daruri-reader.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/indian-2013-outline-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-glossary-extensions.js
@@ -336,3 +360,4 @@ jobs:
           node tools/tahdhib/experience_qa.mjs
           node tools/tahdhib/daruri_shell_qa.mjs
           node tools/tahdhib/yazdi_layer_qa.mjs
+          node tools/tahdhib/hawashi_qa.mjs
