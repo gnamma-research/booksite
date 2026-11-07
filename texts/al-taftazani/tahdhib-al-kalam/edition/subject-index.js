@@ -167,6 +167,8 @@ function open(trigger){
     }
     if(isLogic&&window.GNAMMA_YAZDI_LAYER?.entries?.length){
      const extended=[
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q7_13?.blocks||[]).map(p=>({...p,unit:'L.01',arabic:p.ar,english:p.en})),
+      ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q14_19?.blocks||[]).map(p=>({...p,unit:'L.02',arabic:p.ar,english:p.en})),
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_L03?.sourcePages||[]).map(p=>({...p,unit:'L.03',arabic:p.ar,english:p.en})),
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_L07?.sourceBlocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
@@ -186,7 +188,7 @@ function open(trigger){
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q114_118?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en})),
       ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q119_123?.blocks||[]).map(p=>({...p,arabic:p.ar,english:p.en}))
      ];
-     const archive=window.GNAMMA_YAZDI_LAYER.entries.filter(p=>['L.01','L.02'].includes(p.unit));
+     const archive=[]; // All archival excerpt source pages now have a continuous Qum main-text representation.
      const glosses=[...archive,...extended].filter(p=>
       t.keys.some(k=>norm(k).length>2&&(norm(p.arabic).includes(norm(k))||norm(p.english).includes(norm(k)))));
      if(glosses.length){
