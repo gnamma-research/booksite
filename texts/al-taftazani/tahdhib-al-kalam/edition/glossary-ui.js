@@ -12,8 +12,10 @@ const glossary=lexical.terms.slice();
 // The original kalām glossary continues to index only its own primary corpus.
 const commentary=()=>{
  if(!isLogicGlossary())return [];
- const archived=(window.GNAMMA_YAZDI_LAYER?.entries||[]).filter(p=>['L.01','L.02'].includes(p.unit));
+ const archived=[]; // All previously selected source pages now have complete working main-text blocks.
  const contiguous=[
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q7_13?.blocks||[]).map(p=>({...p,unit:'L.01'})),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q14_19?.blocks||[]).map(p=>({...p,unit:'L.02'})),
   ...(window.GNAMMA_YAZDI_CONTIGUOUS_L03?.sourcePages||[]).map(p=>({...p,unit:'L.03'})),
   ...(window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks||[]),
   ...(window.GNAMMA_YAZDI_CONTIGUOUS_L07?.sourceBlocks||[]),
