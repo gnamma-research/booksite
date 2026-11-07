@@ -15,7 +15,7 @@ button:focus-visible,input:focus-visible,a:focus-visible,select:focus-visible{ou
 .top .brand{font:500 17px/1.15 Georgia,serif;text-decoration:none;color:var(--ink);white-space:nowrap;margin:0 7px}
 .top .trail{font-size:12px;white-space:nowrap;color:var(--muted);text-decoration:none}
 .top .wide-space{flex:1}
-.main{max-width:var(--max);margin:auto;background:var(--paper);min-height:calc(100vh - 56px);padding:34px clamp(16px,4vw,45px) 100px}
+.main{max-width:var(--max);min-width:0;width:100%;margin:auto;background:var(--paper);min-height:calc(100vh - 56px);padding:34px clamp(16px,4vw,45px) 100px;overflow-wrap:anywhere}
 .overline{font:600 11px/1.6 system-ui;letter-spacing:.065em;color:var(--accent)}
 h1{font:500 clamp(27px,4vw,42px)/1.25 Georgia,serif;letter-spacing:-.02em;margin:8px 0 13px}
 .lead{font:17px/1.7 Georgia,serif;max-width:800px;margin:0 0 16px}
@@ -24,7 +24,7 @@ h1{font:500 clamp(27px,4vw,42px)/1.25 Georgia,serif;letter-spacing:-.02em;margin
 .state{display:inline-flex;gap:5px;align-items:center;border:1px solid var(--line);padding:4px 8px;border-radius:5px;font-size:11px;color:var(--ink)}
 .tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:0 0 18px}
 .tools input{flex:1 1 270px;min-width:130px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);padding:8px 11px}
-.tools select{flex:0 1 250px;min-height:37px;background:var(--paper);color:var(--ink);padding:8px 10px;border:1px solid var(--line);border-radius:6px}
+.tools select{flex:1 1 220px;min-width:0;max-width:100%;width:min(100%,250px);min-height:37px;background:var(--paper);color:var(--ink);padding:8px 10px;border:1px solid var(--line);border-radius:6px}
 .tools button{border:1px solid var(--line);background:var(--paper);color:var(--ink);min-height:37px;border-radius:6px;cursor:pointer;padding:7px 10px;font-size:12px}
 .section-note{font-size:12px;line-height:1.75;color:var(--muted);margin-bottom:24px}
 .hw-page{border-top:1px solid var(--line);padding:25px 0 31px;scroll-margin-top:90px}
@@ -63,7 +63,7 @@ body[data-languages="en"] .hw-pair,body[data-languages="ar"] .hw-pair{grid-templ
  .main{padding:23px 15px 85px}
  .top{padding:0 10px;gap:5px}
  .top .trail{display:none}
- .top .brand{font-size:14px;margin:0}
+ .top .brand{font-size:14px;margin:0;min-width:0;max-width:calc(100vw - 178px);overflow:hidden;text-overflow:ellipsis}
  .top button{min-width:32px;height:34px;padding:0 6px;font-size:12px}
  .hw-page-header{flex-wrap:wrap;gap:4px}
  .hw-source{margin:0 0 6px}
