@@ -130,5 +130,29 @@ if(bAudit){
   check(bAudit.summary.originalUnits===111&&bAudit.summary.sourcePagesRead===325,'Bidāya source witness audit not exhaustive across printed source');
   check((bAudit.method?.limits||'').includes('NOT an independent edition'),'Bidāya same-source comparison must not be described as independent collation');
 }
+
+/* Guard the cumulative passage-verification register without treating AI translation as certified. */
+const review=readJson(join(root,'audits/cross-book-review-register-2026-11-07.json'),'Cross-book review register');
+if(review){
+  const expected=(mText?.units.length||0)+(nText?.units.length||0)+111;
+  check(review.entries.length===expected,'Cross-book review register no longer covers all local passages');
+  check(new Set(review.entries.map(x=>x.id)).size===review.entries.length,'Duplicate cross-book review record IDs');
+  check(review.summary?.expertReviewedUnitsVerified===0 &&
+    review.summary?.statusLabels?.criticalEdition==='NOT VERIFIED',
+    'Review register must not present non-certified translations as a definitive critical edition');
+  check(review.entries.every(x=>x.translationAssessment?.includes('NOT yet independently checked')),
+    'An unchecked review record is incorrectly marked as certified');
+}
+if(nText&&nExtra){
+  const validIds=new Set(nText.units.map(x=>x.id));
+  const criticalIds=new Set();
+  for(const note of nExtra.criticalNotes||[]){
+    check(!criticalIds.has(note.id),'Duplicate Nihāya critical note '+note.id);
+    criticalIds.add(note.id);
+    check(validIds.has(note.passageId),'Unresolved Nihāya critical note passage '+note.passageId);
+    check(/https:\/\/lib\.rafed\.net\//.test(note.url||''),'Nihāya critical note lacks printed-witness link '+note.id);
+    check(!!note.source,'Nihāya critical note lacks source distinction '+note.id);
+  }
+}
 console.log(JSON.stringify({status:failures.length?'failed':'passed',books:report,failures,warnings},null,2));
 process.exitCode=failures.length?1:0;
