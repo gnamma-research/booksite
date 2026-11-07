@@ -52,7 +52,7 @@ jobs:
           assert all(x['dating_status'].startswith('undated') for x in m['works'])
           assert all(not x['text_acquired'] for x in m['works'])
           h=Path('research/intellectual-atlas/index.html').read_text()
-          assert 'bibliography-map.js' in h and 'full-bibliographic-map' in h
+          assert 'bibliography-map.js' in h and 'discipline-atlas.js' in h and 'common-timeline-20261108' in h
           assert 'GNAtlasBibliography.render' in Path('research/intellectual-atlas/atlas-app.js').read_text()
           print('PASS integrated bibliography data, citations and atlas invariant')
           PY
@@ -75,7 +75,7 @@ jobs:
         run: |
           python -m pip install -q playwright==1.58.0
           python -m playwright install --with-deps ${{ matrix.engine }}
-      - name: Test all work-cluster and source-citation interactions in the actual GNAMMA map
+      - name: Check universal work chronology, summary and source citations in the main GNAMMA map
         shell: bash
         run: |
           python -m http.server 8123 --bind 127.0.0.1 >/tmp/gnbibmap-server.log 2>&1 &
@@ -91,7 +91,7 @@ jobs:
         with:
           name: gnbibmap-${{ matrix.engine }}-${{ matrix.width }}x${{ matrix.height }}
           path: |
-            /tmp/gnamma-full-bibmap-qa/*.json
-            /tmp/gnamma-full-bibmap-qa/*.png
+            /tmp/gnamma-unified-timeline-qa/*.json
+            /tmp/gnamma-unified-timeline-qa/*.png
             /tmp/gnbibmap-server.log
           if-no-files-found: ignore
