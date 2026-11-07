@@ -7,6 +7,12 @@ on:
       - 'texts/al-turka/qawaid-al-tawhid/pdf/build_editions.py'
       - 'texts/al-turka/qawaid-al-tawhid/data/primary-reference-register.js'
       - 'texts/al-turka/qawaid-al-tawhid/data/linked-lexicon.js'
+      - 'texts/al-turka/qawaid-al-tawhid/data/units.js'
+      - 'texts/al-turka/qawaid-al-tawhid/data/commentary.js'
+      - 'texts/al-turka/qawaid-al-tawhid/data/commentary-conclusion.js'
+      - 'texts/al-turka/qawaid-al-tawhid/data/commentary-corpus.json'
+      - 'texts/al-turka/qawaid-al-tawhid/data/commentary-introduction-*.js'
+      - 'texts/al-turka/qawaid-al-tawhid/data/commentary-main-*.js'
   workflow_dispatch:
 permissions:
   contents: write
