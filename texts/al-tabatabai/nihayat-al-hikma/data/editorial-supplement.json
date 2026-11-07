@@ -441,5 +441,35 @@
       "description": "Secondary collation witness only (vol. 2, 336 pp., 4th edition). Its pagination and critical notes differ from the existing Qum 1417 transcription and are not the reader’s current page locators."
     }
   ],
-  "statusNote": "The presence of a corrected editorial witness does not mean the entire authorial Arabic has been collated against it; variants require documented individual decisions."
+  "statusNote": "The presence of a corrected editorial witness does not mean the entire authorial Arabic has been collated against it; variants require documented individual decisions.",
+  "criticalNotes": [
+    {
+      "id": "N1428-I03-01",
+      "passageId": "N-I-03",
+      "type": "Historical correction · later editor",
+      "text": "The 1428 AH editor's long note listing eight positions on the reality of existence (vol. 1, printed p. 34) groups ‘Tomas Akoims’ (Thomas Aquinas) with absolute equivocation between God and creatures. This attribution is inaccurate: Aquinas, Summa theologiae I, q. 13, a. 5, explicitly rejects both univocal and purely equivocal predication in favour of analogy. This correction concerns the later editor's note; it is not a criticism of an assertion in Tabatabai's authorial chapter. Primary reference: https://www.newadvent.org/summa/1013.htm.",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=32&type=c_fbook",
+      "source": "1428 AH Zāriʿī ed., vol. 1 pp. 33–34; Aquinas ST I q13 a5",
+      "status": "Checked against the two cited printed/public primary texts"
+    },
+    {
+      "id": "N1428-I03-02",
+      "passageId": "N-I-03",
+      "type": "Authorial source note · witness identification",
+      "text": "In the corrected 1428 AH witness (vol. 1, printed p. 36) the short footnote on negating a limit is explicitly marked ‘منه رحمه الله’ (‘from the author’). It explains that, because limitation has the character of negation, denying limitation is a negation of negation and therefore affirms the pure actuality of existence. The attribution is authorial; the surrounding longer explanatory footnotes belong to the later editor.",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=32&type=c_fbook",
+      "source": "1428 AH Zāriʿī ed., vol. 1, printed p. 36, note marked منه رحمه الله",
+      "status": "Source attribution verified"
+    },
+    {
+      "id": "N1428-I04-01",
+      "passageId": "N-I-04",
+      "type": "Doxography · later editorial note",
+      "text": "The 1428 AH editor's note on the differentiation of non-existents (vol. 1, printed p. 38) cites Naṣīr al-Dīn al-Ṭūsī's Kashf al-Murād (p. 43) and proposes reconciling the apparent disagreement by distinguishing absolute non-being from absences considered in relation to particular things. This reconciliation is a later editorial gloss, not an authorial assertion to be inserted into Tabāṭabāʾī's matn; its reading of Ṭūsī requires separate verification against Kashf al-Murād.",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=32&type=c_fbook",
+      "source": "1428 AH Zāriʿī ed., vol. 1, printed p. 38, editorial note on Ṭūsī",
+      "status": "Secondary interpretation; primary Ṭūsī text not yet collated"
+    }
+  ],
+  "sourceCriticalPolicy": "Preserve authorial notes explicitly marked منه رحمه الله; distinguish later editor's explanatory notes; challenge historically questionable ascriptions by checking named scholars' own texts. These criticalNotes are distinct from the authorial Arabic and translation."
 }
