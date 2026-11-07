@@ -137,3 +137,22 @@ A scalable split without rewriting the existing atlas:
 6. **Scale across tafsīr and taṣawwuf** with the same source and passage discipline; add editorial comparisons that preserve real methodological differences.
 
 This is a programme for **connected reading and investigation**, not an automated harmonization of fundamentally distinct sciences. The strongest GNAMMA feature would be the ability to start with a single text or disputed proposition and trace all *evidenced* ways it enters the wider Islamic intellectual tradition.
+
+## 10. Arabic language sciences: grammar, morphology, balāgha and lexicography
+
+**Status: navigational scaffold only, no grammar/balāgha text corpus imported into the intellectual atlas as of 7 November 2026.** The interface now groups these under **Arabic Language Sciences** (علوم العربية), separate from fiqh and from Philosophy/Kalām/Logic but not intellectually isolated.
+
+### Within-group views
+- **Naḥw**: grammar, syntactic constructions, governing relationships, variant analyses and competing commentary traditions. Candidate work families include al-Ājurrūmiyya, the Alfiyya of Ibn Mālik and Ibn Hishām’s Mughnī al-Labīb.
+- **Ṣarf**: morphological paradigms, derivation, verbal patterns, inflectional structures and source-specific grammatical analyses. Candidate families include al-Shāfiya and its commentaries.
+- **Balāgha**: ʿilm al-maʿānī (syntactically conditioned expression and communicative appropriateness), ʿilm al-bayān (simile, metaphor, metonymy and their interpretative disputes), and ʿilm al-badīʿ (rhetorical embellishments). Candidate families include al-Sakkākī’s Miftāḥ al-ʿulūm, al-Qazwīnī’s Talkhīṣ al-Miftāḥ and al-Taftāzānī’s al-Muṭawwal. Treat the relationships as *bibliographical leads* until specific editions/passages and chains are verified.
+- **Lugha / lexicography**: source-specific lexical attestations, semantic judgments and consultation of dictionaries, distinguished from derivative rhetorical interpretations.
+
+### Cross-science joins
+A grammatical statement about a Qurʾānic particle may be invoked in a tafsīr passage, a fiqh inference or an uṣūl treatment of the *mafhūm* or minimum denoted by a noun/verb. An analysis of majāz may be taken up in balāgha, kalām and legal hermeneutics. Each link must preserve the particular linguistic phenomenon, source passage, author and scope of the argument; do not create one generic “influence” arrow between entire works simply because the same notion appears.
+
+### Deployed UI versus evidence backlog
+**Deployed:** one compact Explore drawer with the Arabic sciences group and its subdivisions, and a switchable SVG Text Network view for **existing verified families**. All work/edge record IDs, dates and evidence panels are preserved. The intro and downloads are after the diagram.
+
+**Backlog:** import actual Arabic grammar and balāgha work authorities, editions, aligned passages, specialized commentary and objection relationships, and cross-science question IDs; add source-critical evidence before permitting clickable network cards for these prospective families. No placeholder may be counted as an imported work or shown with fabricated reception arrows.
+
