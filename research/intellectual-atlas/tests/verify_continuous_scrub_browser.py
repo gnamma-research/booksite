@@ -189,13 +189,13 @@ async def exercise(engine,width,height,mobile=False):
             x=r['x']+r['width']/2
             # Start low enough that the entire upward swipe remains inside the scrollport.
             y=r['y']+min(r['height']-35,max(220,r['height']*.72))
+            # CDP compositor gesture performs *native* inner-element scrolling;
+            # raw dispatchTouchEvent moves are not equivalent to a scroll gesture.
             session=await ctx.new_cdp_session(page)
-            await session.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':[{'x':x,'y':y,'id':7}]})
-            for i in range(1,6):
-                await session.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':[{'x':x,'y':y-34*i,'id':7}]})
-                await page.wait_for_timeout(55)
-            await session.send('Input.dispatchTouchEvent',{'type':'touchEnd','touchPoints':[]})
-            await page.wait_for_timeout(135)
+            await session.send('Input.synthesizeScrollGesture',
+                               {'x':x,'y':y,'yDistance':-190,'gestureSourceType':'touch',
+                                'speed':400,'preventFling':True})
+            await page.wait_for_timeout(250)
             after=await snapshot(page)
             assert after['scroll']>0 and abs(after['from']-before['from'])<.001,(before,after,metrics)
             report['vertical_touch']='scrolls independently of chronology'
