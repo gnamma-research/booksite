@@ -107,12 +107,19 @@ downloads = {}
 for p in sorted((ROOT/'downloads').iterdir()):
     if p.is_file() and p.suffix in {'.pdf', '.zip', '.json'}:
         downloads[p.name] = hashlib.sha256(p.read_bytes()).hexdigest()
+# Keep the bibliographic layer independent from the 404 verified historical
+# work network, and independent from the 30 pinned reader editions.
+bib_openiti = json.loads((ROOT/'corpora'/'expanded-bibliography.json').read_text(encoding='utf-8'))
+bib_alreq = json.loads((ROOT/'corpora'/'manuscript-full.json').read_text(encoding='utf-8'))
+assert len(bib_openiti['works']) >= 1800
+assert bib_alreq['statistics']['distinct_catalogue_ids'] == 4157
+assert all(not r['text_acquired'] for r in bib_alreq['works'])
 manifest = {
     'title': 'Texts in Time · Islamic Intellectual Atlas',
     'revision': 'tajrid-critical-links-8-2026-10-31',
     'status': 'working research',
-    'ui_revision': 'fiqh-source-maps-and-madhhab-routing-2026-11-07',
-    'mobile_interface_note': 'Chart-first Explore menu with functioning madhhab-specific Fiqh source maps, Hadith, Tafsīr and Arabic-sciences source maps; 30 OpenITI versions (five local byte-matched, 25 pinned on demand). These are book authorities, not collation of legal issues or isnāds.',
+    'ui_revision': 'integrated-source-bibliography-map-2026-11-07',
+    'mobile_interface_note': 'Main source maps display all cited fiqh, usul, nahw, sarf and balagha bibliography records in selectable school/period clusters; work-level source links and undated status shown. Original 30-version reader and 404-entry philosophical timeline remain separate.',
     'whole_range_note': 'Drag the six-dot grip from Whole atlas to restore a movable focus window, or tap another time on the overview to seek.',
     'date_marker_note': 'Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.',
     'entries': len(data['nodes']),
@@ -123,9 +130,9 @@ manifest = {
     'neoplatonic_new_entries': 44,
     'neoplatonic_new_relationships': 36,
     'scholarly_networks': len(data['history']['networks']),
-    'classification_layers': ['intellectual tradition','textual family','regional/historical network','browse discipline','separate source-text witness catalogue'],
-    'visual_modes': ['chronological timeline','source-backed text network','work connections','catalogue','evidence/audit','source-attested disciplinary work maps'],
-    'discipline_nav': ['mapped works','philosophy, kalām and logic','fiqh and uṣūl (source tranche)','hadith (source tranche)','tafsīr (source tranche)','taṣawwuf (selective mapped texts and source tranche)','Arabic language sciences (source tranche)'],
+    'classification_layers': ['intellectual tradition','textual family','regional/historical network','browse discipline','source-linked bibliographic category map','separate source-text witness catalogue'],
+    'visual_modes': ['chronological timeline','source-backed text network','work connections','catalogue','evidence/audit','source-attested disciplinary work maps','full citation-linked work map'],
+    'discipline_nav': ['mapped works','philosophy, kalām and logic','fiqh and uṣūl (integrated cited bibliography)','hadith (source tranche)','tafsīr (source tranche)','taṣawwuf (selective mapped texts and source tranche)','Arabic language sciences (integrated cited bibliography)'],
     'textual_family_routes': len(families),
     'source_corpus': {
         'url': 'corpora/',
@@ -141,7 +148,20 @@ manifest = {
         'complete_corpora_claimed': False,
         'license': corpus_registry['license'],
     },
-    'textual_family_note': 'The established 21 philosophical/kalām textual families retain their canonical work IDs and evidence-qualified connections; the new disciplinary source maps list pinned OpenITI versions separately, with no invented legal-opinion or transmission edges.',
+    'bibliography_map': {
+        'mode': 'source-cited category and author-death period map, undated works unplaced',
+        'openiti_primary_work_candidates': len(bib_openiti['works']),
+        'alreq_source_linked_entries': len(bib_alreq['works']),
+        'alreq_fiqh_by_school': bib_alreq['statistics']['by_school'],
+        'alreq_nahw_entries': bib_alreq['statistics']['by_genre']['nahw'],
+        'alreq_sarf_entries': bib_alreq['statistics']['by_genre']['sarf'],
+        'alreq_balagha_entries': bib_alreq['statistics']['by_genre']['balagha'],
+        'cross_catalogue_conceptual_identity_collated': False,
+        'text_or_manuscript_acquired_from_alreq': False,
+        'historical_influence_edges_generated': 0,
+        'primary_source_registers': ['corpora/expanded-bibliography.json','corpora/manuscript-full.json'],
+    },
+    'textual_family_note': 'The 21 philosophical/kalām families retain canonical IDs and evidence-qualified edges. Fiqh, usul and Arabic source citations now appear inside the main atlas as a distinct bibliographic category/period map; no commentary or legal-opinion edges are inferred.',
     'tahdhib_added_entries': 26,
     'avicennian_extension_entries': 11,
     'avicennian_new_textual_routes': 2,
@@ -153,9 +173,9 @@ manifest = {
     'individual_reign_rows': 0,
     'pdf_pages': {'illustrated_overview_legacy': 15, 'illustrated_reference_legacy': 204,
                   'historical_revision7_register': 84, 'focused_tahdhib_supplement': 9},
-    'pdf_note': ('The live web atlas includes a functioning Fiqh/madhhab source map and the 30-version source library; the source map has no inferred legal or isnād edges. '
-                 'The revision 8 offline ZIP and earlier PDFs were issued before these updates and contain no new corpus source reader. '
-                 'The 30 digital versions are not claimed as independently collated critical editions.'),
+    'pdf_note': ('The live atlas now includes a complete citation-linked bibliographic category/period map for the imported 2025 OpenITI work candidates and public Alreq catalogue entries. '
+                 'The revision 8 offline ZIP and older PDFs predate these additions; they are historical snapshots. '
+                 'Catalogue references are not acquired manuscript scans, verified complete texts or legal-opinion graphs.'),
     'download_sha256': downloads,
     'reader_navigation_revision': 'tajrid-reader-ui-3-2026-10-31',
     'reader_return_links': 'Preserve safe debate views, passage context, filters and comparison selection.',
