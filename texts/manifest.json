@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-library-manifest-v1",
   "project": "Gnamma Research",
-  "updated": "2026-11-04",
+  "updated": "2026-11-08",
   "collections": [
     "texts",
     "essays",
@@ -336,6 +336,40 @@
       ],
       "url": "texts/al-tabatabai/",
       "note": "A unified reading room preserving separate books and section numbering; stage navigation, Arabic/English controls, source notes, glossary, and local bookmarks."
+    },
+    {
+      "id": "fanari-misbah-uns",
+      "title": "Miṣbāḥ al-Uns",
+      "arabic": "مصباح الأنس بين المعقول والمشهود",
+      "author": "Shams al-Dīn al-Fanārī",
+      "author_slug": "al-fanari",
+      "work_slug": "misbah-al-uns",
+      "area": [
+        "taṣawwuf",
+        "ʿirfān naẓarī",
+        "Akbarian metaphysics"
+      ],
+      "status": "source-aligned-working-translation; critical-collation-outstanding; GNAMMA review branch",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "url": "texts/al-fanari/misbah-al-uns/",
+      "progress": {
+        "lastCompletedSourcePage": 445,
+        "totalSourcePages": 720,
+        "completePages": 443,
+        "percent": 61.5278,
+        "completionSection": "4.577",
+        "nextSection": "4.578",
+        "importedReaderPassages": 40,
+        "importedRange": "4.538–4.577",
+        "earlierMasterNotYetImported": true
+      },
+      "handoff_url": "texts/al-fanari/misbah-al-uns/HANDOFF.md",
+      "manifest_url": "texts/al-fanari/misbah-al-uns/MANIFEST.json",
+      "reader_ui_parity": "Daruri-family-compact-toolbar-focus0-3",
+      "important_note": "The earlier source-aligned cumulative master through §4.537 is recovered as a readable library item but has not been losslessly imported into this new staging reader. Actual NAMA not updated."
     }
   ],
   "research": [
