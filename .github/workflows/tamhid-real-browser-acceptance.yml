@@ -6,6 +6,8 @@ on:
       - '.github/workflows/tamhid-real-browser-acceptance.yml'
       - 'texts/al-turka/qawaid-al-tawhid/qa/test-commentary-browser.py'
       - 'texts/al-turka/qawaid-al-tawhid/commentary.html'
+      - 'texts/al-turka/qawaid-al-tawhid/clause-review.html'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/clause-map-*.jsonl'
       - 'texts/al-turka/qawaid-al-tawhid/commentary-reader.js'
       - 'texts/al-turka/qawaid-al-tawhid/reader.css'
       - 'texts/al-turka/qawaid-al-tawhid/downloads/Tamhid_Complete_Commentary_Reading_Edition.html'
@@ -37,5 +39,6 @@ jobs:
             texts/al-turka/qawaid-al-tawhid/qa/commentary-browser-acceptance.json
             texts/al-turka/qawaid-al-tawhid/qa/commentary-mobile-proof.png
             texts/al-turka/qawaid-al-tawhid/qa/commentary-single-file-proof.png
+            texts/al-turka/qawaid-al-tawhid/qa/clause-review-mobile-proof.png
             texts/al-turka/qawaid-al-tawhid/qa/commentary-browser-error.png
           retention-days: 14
