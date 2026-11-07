@@ -75,6 +75,47 @@
         .catch(error=>{sourceLoadError=String(error?.message||error||'Source register unavailable')})
         .finally(()=>{sourceRequest=null;if(state.view==='sources')render()});
     }
+    // Manuscript catalogues are a separate bibliographic layer. One public
+    // shortlist is fetched lazily, without treating any catalogue work as
+    // an acquired edition or a demonstrated commentary edge.
+    let manuscriptShortlist=null,manuscriptRequest=null,manuscriptFailed=false;
+    function ensureManuscriptShortlist(){
+      if(manuscriptShortlist||manuscriptRequest||manuscriptFailed)return;
+      manuscriptRequest=fetch('corpora/manuscript-shortlist.json')
+        .then(r=>r.ok?r.json():Promise.reject(Error('Manuscript bibliography HTTP '+r.status)))
+        .then(d=>{if(!Array.isArray(d.works))throw Error('Invalid manuscript shortlist');manuscriptShortlist=d;})
+        .catch(()=>{manuscriptFailed=true})
+        .finally(()=>{manuscriptRequest=null;if(state.view==='sources')render()});
+    }
+    function sourceResearchExpansion(science,tab,school){
+      const genre=science==='fiqh'?(tab==='method'?'usul':'fiqh'):
+        science==='arabic'?tab:science;
+      const available=genre==='fiqh'||genre==='usul'||genre==='nahw'||genre==='sarf'||genre==='balagha';
+      if(!available)return '';
+      const code=genre==='fiqh'?'fiqh':genre==='usul'?'usul':genre;
+      const query='#science='+encodeURIComponent(code)+
+        ((code==='fiqh'||code==='usul')&&school!=='all'?'&school='+encodeURIComponent(school):'');
+      const href='corpora/expansion.html'+query;
+      if(!manuscriptShortlist){
+        if(!manuscriptFailed)ensureManuscriptShortlist();
+        return '<div class="ia-source-expansion"><strong>Expanded scholarly bibliography</strong>'+
+          '<p>'+ (manuscriptFailed?'Manuscript catalogue unavailable in this view.':'Loading catalogue candidates…')+
+          '</p><a href="'+esc(href)+'">Browse the expanded catalogue</a></div>';
+      }
+      const selected=manuscriptShortlist.works.filter(w=>w.genres?.includes(code)&&
+        (school==='all'||!['fiqh','usul'].includes(code)||w.school===school));
+      const examples=selected.slice(0,12).map(w=>
+        '<a href="'+esc(w.catalogue_url)+'" target="_blank" rel="noopener noreferrer">'+
+          '<span dir="rtl" lang="ar">'+esc(w.title_ar)+'</span>'+
+          '<small>'+esc(truncate(w.author_ar||'',58))+' · manuscript catalogue</small></a>'
+      ).join('');
+      return '<section class="ia-source-expansion"><h3>'+selected.length+
+        ' additional manuscript bibliography records for this selection</h3>'+
+        '<p>Catalogue references only, not readable texts. Scholarly book/issue dependencies are not inferred. '+ 
+        'A separate OpenITI catalogue offers further primary-version candidates.</p>'+
+        '<div class="ia-source-expansion-grid">'+examples+'</div>'+
+        '<a class="ia-expansion-all" href="'+esc(href)+'">Browse all candidate works and source evidence</a></section>';
+    }
     function chooseScienceView(science,tab,madhhab){
       if(!sourceMapTabs[science])return;
       const tabs=sourceMapTabs[science],validTab=tabs.some(([id])=>id===tab)?tab:tabs[0][0];
@@ -505,7 +546,7 @@
       main.innerHTML=intro+tabsMarkup+schoolMarkup+'<p class="ia-explore-note">'+esc(subtitle)+'</p>'+
         '<p class="ia-source-count">'+books.length+' source version'+(books.length===1?'':'s')+' · '+edges.length+' sourced connection'+(edges.length===1?'':'s')+'</p>'+
         (books.length?svg:'<div class="ia-empty"><p>No registered source books for this selection. This is a source-coverage gap, not evidence that this tradition lacks texts.</p></div>')+
-        edgeInfo+inventory+'<p class="ia-source-library-link"><a href="'+esc(url)+'">Open this selection in the searchable Arabic Source Library</a></p>';
+        edgeInfo+inventory+sourceResearchExpansion(science,state.sourceTab,state.sourceMadhhab)+'<p class="ia-source-library-link"><a href="'+esc(url)+'">Open this selection in the searchable Arabic Source Library</a></p>';
       sourceShown=books.length;sourceLinks=edges.length;visibleNodes=[];visibleEdges=[];updateCounts();
     }
 
@@ -728,7 +769,7 @@
       const sourceScience=activeScience==='arabic'&&['nahw','sarf','balagha','lugha'].includes(activeScienceTab)?activeScienceTab:
         ['all','fiqh','hadith','tafsir','tasawwuf','philosophy'].includes(activeScience)?activeScience:'arabic';
       const sourceHash='#science='+encodeURIComponent(sourceScience)+(sourceScience==='fiqh'&&activeMadhhab!=='all'?'&madhhab='+encodeURIComponent(activeMadhhab):'');
-      html+='<div class="ia-explore-library"><strong>Arabic source texts are now available</strong><p>30 source-attested OpenITI Arabic versions; 5 complete source files mirrored byte-for-byte, 25 pinned for on-demand retrieval, and five separately sourced commentary/abridgment links. File identity is checked; manuscript and printed-text collation remain incomplete.</p><a href="corpora/'+sourceHash+'">Open the Arabic Source Library</a></div>';
+      html+='<div class="ia-explore-library"><strong>Expanded Arabic bibliography</strong><p>Browse a large OpenITI work-candidate index and a linked manuscript shortlist for fiqh, uṣūl, grammar and balāgha. Manuscript catalogue entries and metadata-only digital versions are explicitly separate from the existing 30-reader-version library.</p><a href="corpora/expansion.html#science='+encodeURIComponent(sourceScience==='arabic'?'nahw':sourceScience)+'">Expanded bibliography</a> · <a href="corpora/'+sourceHash+'">Read verified/pinned Arabic versions</a></div>';
       if(activeScience!=='all')html+='<p class="ia-explore-note">The source reader is operational. Source availability is distinct from a verified scholarly commentary, legal-issue or isnād relationship graph.</p>';
       html+='<div class="ia-explore-footer"><button type="button" data-action="show-all-mapped">Return to the mapped atlas</button> <button type="button" data-action="open-about">Research notes &amp; downloads</button> <a href="../../texts/">Published GNAMMA texts</a></div>';
       body.innerHTML=html;
