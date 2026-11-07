@@ -59,7 +59,10 @@ jobs:
           html = (p/'index.html').read_text(encoding='utf8')
           embedded = json.loads(re.search(r'<script type="application/json" data-atlas>(.*?)</script>',html,re.S).group(1))
           assert embedded == d
-          assert 'fiqlayout-madhhab' in html
+          assert 'sources-expansion-20261107' in html
+          assert (p/'corpora/expansion.html').is_file()
+          assert (p/'corpora/expanded-bibliography.json').is_file()
+          assert (p/'corpora/manuscript-shortlist.json').is_file()
           archive = p/'downloads/Gnamma_Intellectual_Atlas_Offline_Revision8.zip'
           assert archive.is_file()
           with zipfile.ZipFile(archive) as z:
