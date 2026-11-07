@@ -379,3 +379,11 @@ body #kalam-timeline-app-v3 .ia-source-library-link a{display:inline-block;paddi
   body #kalam-timeline-app-v3 .ia-source-count{margin:7px 0}
   body #kalam-timeline-app-v3 .ia-source-library-link a{display:block;text-align:center}
 }
+
+/* Landscape phones: the nav is hidden for short touch viewports, so do NOT also
+   hide the only display-mode selector at min-width:701px. */
+@media (min-width:701px) and (max-height:550px) and (pointer:coarse){
+  body #kalam-timeline-app-v3 .ia-quick-controls .ia-quick-view{
+    display:flex!important;min-width:0;
+  }
+}
