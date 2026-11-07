@@ -490,6 +490,126 @@
     }
     q('[data-family-filters]').innerHTML=Object.entries(families).map(([key,f])=>`<label class="ia-check"><input type="checkbox" data-family="${key}" checked><span class="ia-swatch" style="--ia-series:light-dark(${f[2]},${f[3]})"></span>${esc(f[0]+' · '+f[1])}</label>`).join('');
     q('[data-relation-filters]').innerHTML=Object.entries(rels).map(([key,r])=>`<label class="ia-check"><input type="checkbox" data-rel="${key}" checked>${esc(r[0]+' · '+r[1])}</label>`).join('');
+
+    // One Explore drawer for disciplines, textual families, author records and planned corpora.
+    // Only the 404 already verified atlas nodes are clickable as mapped works.
+    const scienceChoices=[
+      ['all','All mapped texts'],['philosophy','Philosophy, kalām & logic'],
+      ['fiqh','Fiqh & uṣūl'],['hadith','Hadith'],
+      ['tafsir','Tafsīr & Qurʾānic sciences'],['tasawwuf','Taṣawwuf'],
+      ['arabic','Arabic language sciences']
+    ];
+    const scienceTabs={
+      all:[['families','Text families'],['authors','Authors']],
+      philosophy:[['families','Text families'],['authors','Authors'],['questions','Questions']],
+      fiqh:[['texts','Legal texts'],['issues','Legal questions'],['method','Uṣūl method']],
+      hadith:[['collections','Collections'],['reports','Reports'],['isnads','Isnāds'],['commentaries','Commentaries']],
+      tafsir:[['passages','Passages'],['texts','Text families'],['questions','Questions']],
+      tasawwuf:[['families','Text families'],['questions','Questions']],
+      arabic:[['nahw','Grammar · naḥw'],['sarf','Morphology · ṣarf'],['balagha','Balāgha'],['lugha','Lexicography']]
+    };
+    let activeScience='all',activeScienceTab='families',activeMadhhab='all',exploreReturnFocus=null;
+    function closeExplore(){
+      const dialog=q('[data-explore-overlay]');if(!dialog||dialog.hidden)return;
+      dialog.hidden=true;
+      if(exploreReturnFocus&&document.contains(exploreReturnFocus))exploreReturnFocus.focus();
+    }
+    function openExplore(){
+      const dialog=q('[data-explore-overlay]');if(!dialog)return;
+      exploreReturnFocus=document.activeElement;
+      renderExplore();
+      dialog.hidden=false;
+      q('#ia-explore-panel')?.focus();
+    }
+    function exploreFamilyList(list){
+      if(!list.length)return '<p class="ia-explore-note">No source-verified textual families are yet available in this part of the atlas.</p>';
+      return '<div class="ia-explore-family-list">'+list.map(f=>
+        '<button type="button" data-explore-family="'+esc(f.id)+'"><strong>'+esc(f.label)+'</strong><small>'+
+        f.member_ids.length+' mapped entries · '+esc(f.section)+'</small></button>'
+      ).join('')+'</div>';
+    }
+    function plannedList(label,note,examples){
+      return '<div class="ia-explore-planned" role="note"><strong>'+esc(label)+' · corpus not yet imported</strong>'+
+        '<p>'+esc(note)+'</p>'+
+        (examples&&examples.length?'<p class="ia-explore-note">Examples for future source registration, not active atlas nodes:</p><ul>'+examples.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>':'')+'</div>';
+    }
+    function renderExplore(){
+      const choices=q('[data-science-choices]'),body=q('[data-science-content]');
+      if(!choices||!body)return;
+      choices.innerHTML=scienceChoices.map(([id,name])=>
+        '<button type="button" data-explore-science="'+id+'" aria-pressed="'+String(activeScience===id)+'">'+esc(name)+'</button>'
+      ).join('');
+      const tabs=scienceTabs[activeScience]||scienceTabs.all;
+      if(!tabs.some(([id])=>id===activeScienceTab))activeScienceTab=tabs[0][0];
+      let html='<h3 class="ia-explore-subtitle">Browse '+esc(scienceChoices.find(([id])=>id===activeScience)?.[1]||'')+'</h3>'+
+        '<div class="ia-explore-grid">'+tabs.map(([id,label])=>
+        '<button type="button" data-explore-tab="'+id+'" aria-pressed="'+String(activeScienceTab===id)+'">'+esc(label)+'</button>'
+        ).join('')+'</div>';
+      if(activeScience==='all'||activeScience==='philosophy'||activeScience==='tasawwuf'){
+        if(activeScienceTab==='families'){
+          const list=activeScience==='tasawwuf'?textualFamilies.filter(f=>f.id==='fusus'):
+            activeScience==='philosophy'?textualFamilies.filter(f=>f.id!=='fusus'):textualFamilies;
+          html+='<p class="ia-explore-note">One canonical record per book; works can belong to overlapping textual networks. Select a family to open its diagram.</p>'+exploreFamilyList(list);
+          if(activeScience==='tasawwuf')html+=plannedList('Other taṣawwuf texts','The Fuṣūṣ commentary family is already mapped. Other Sufi source and commentary families need individual source verification before adding graph nodes.',['al-Futūḥāt al-Makkiyya','al-Baḥr al-Madīd']);
+        }else if(activeScienceTab==='authors'){
+          const tally=new Map();
+          for(const n of D.nodes)if(n.author){tally.set(n.author,(tally.get(n.author)||0)+1)}
+          const sorted=[...tally].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]));
+          const special=['Fakhr al-Dīn al-Rāzī','Naṣīr al-Dīn al-Ṭūsī','Ibn Sīnā (Avicenna)'];
+          const entries=[...new Map([...special.filter(x=>tally.has(x)).map(x=>[x,tally.get(x)]),...sorted.slice(0,16)]).entries()];
+          html+='<p class="ia-explore-note">An author can participate in several textual families. Open their canonical catalogue record without duplicating works.</p>'+
+            '<div class="ia-explore-family-list">'+entries.map(([name,count])=>
+            '<button type="button" data-explore-author="'+esc(name)+'"><strong>'+esc(name)+'</strong><small>'+count+' catalogue entries</small></button>'
+            ).join('')+'</div><button type="button" data-action="search-existing">Search all authors and titles</button>';
+        }else html+='<p class="ia-explore-note">Work-level criticism and commentary edges are already source-linked. Detailed proposition-by-proposition argument maps require aligned primary passages and should not be fabricated from bibliographical links.</p>'+
+          exploreFamilyList(textualFamilies.filter(f=>['isharat','muhassal','mawaqif','tajrid'].includes(f.id)));
+      }else if(activeScience==='fiqh'){
+        const schools=[['all','All madhhabs'],['hanafi','Ḥanafī'],['maliki','Mālikī'],['shafii','Shāfiʿī'],['hanbali','Ḥanbalī']];
+        html+='<h4 class="ia-explore-subtitle">Madhhab</h4><div class="ia-explore-grid">'+schools.map(([id,name])=>
+          '<button type="button" data-explore-madhhab="'+id+'" aria-pressed="'+String(activeMadhhab===id)+'">'+esc(name)+'</button>').join('')+'</div>';
+        const samples={
+          all:['School-specific mutūn, shurūḥ and ḥawāshī','Comparative legal questions across madhhabs'],
+          hanafi:['Mukhtaṣar al-Qudūrī','al-Hidāya'],
+          maliki:['al-Muwaṭṭaʾ (also a hadith collection)','al-Mudawwana','Mukhtaṣar Khalīl'],
+          shafii:['al-Umm','Minhāj al-ṭālibīn'],
+          hanbali:['al-Mughnī','Zād al-mustaqniʿ']
+        };
+        const context=activeMadhhab==='all'?'comparative madhhab research':'the selected madhhab';
+        const note=activeScienceTab==='texts'?'Build attested matn–commentary–gloss families for '+context+'. Individual books may also connect to hadith or uṣūl.':
+          activeScienceTab==='issues'?'Index exact legal questions, historically qualified rulings, cited Qurʾān and hadith evidence, and internal disagreements in '+context+'.':
+          'Map dated uṣūl texts, principles of interpretation and their specifically documented legal applications in '+context+'.';
+        html+=plannedList('Fiqh / uṣūl map',note,samples[activeMadhhab]);
+      }else if(activeScience==='hadith'){
+        const notes={
+          collections:['Collection and recension authorities must be distinguished. Numbering is edition-specific.',['al-Muwaṭṭaʾ','Ṣaḥīḥ al-Bukhārī','Ṣaḥīḥ Muslim','Sunan Abī Dāwūd']],
+          reports:['Map exact textual occurrences and variant matns, never collapse materially different wordings into one unqualified quotation.',['Matn concordances','Report clusters','Variant wording records']],
+          isnads:['Create distinct narrator-to-narrator transmission routes, with identification and dating qualifications.',['Ordered isnād chains','Narrator authority records','Attributed critical evaluations']],
+          commentaries:['Link exact report occurrences to their commentaries and dated juristic uses.',['Sharḥ transmission families','Juristic citation dossiers']]
+        };
+        const pair=notes[activeScienceTab]||notes.collections;
+        html+=plannedList('Hadith '+activeScienceTab,pair[0],pair[1]);
+      }else if(activeScience==='tafsir'){
+        const notes={
+          passages:['Navigate by exact sūrah, āyah, reading and grammatical or rhetorical issue.',['Qurʾān 5:6 and legal inference','Qurʾānic particles in tafsīr']],
+          texts:['Build source-verified tafsīr commentary families, preserving their distinct methods.',['al-Ṭabarī’s Jāmiʿ al-bayān','al-Zamakhsharī’s al-Kashshāf','Ibn ʿAjība’s al-Baḥr al-madīd']],
+          questions:['Connect tafsīr, Arabic grammar, balāgha, kalām and fiqh at verified passage loci.',['Lexical and grammatical debates','Doctrinal and legal exegesis']]
+        };
+        const pair=notes[activeScienceTab]||notes.passages;
+        html+=plannedList('Tafsīr '+activeScienceTab,pair[0],pair[1]);
+      }else if(activeScience==='arabic'){
+        const notes={
+          nahw:['Naḥw: syntax, governance, sentence structures, commentary and disagreement. Connect exact constructions to Qurʾānic and uṣūl argumentation.',['al-Ājurrūmiyya','Ibn Mālik’s Alfiyya','Ibn Hishām’s Mughnī al-Labīb']],
+          sarf:['Ṣarf: derived forms, patterns, paradigms and morphology-based interpretation.',['al-Shāfiya','Major morphological commentaries']],
+          balagha:['Balāgha: the distinct disciplines of ʿilm al-maʿānī, al-bayān and al-badīʿ; link rhetoric to tafsīr, kalām and legal interpretation.',['al-Sakkākī’s Miftāḥ al-ʿulūm','Talkhīṣ al-Miftāḥ','al-Taftāzānī’s al-Muṭawwal']],
+          lugha:['Lexicography and semantic usage: historical lexica, meanings, contested terms and source-verified quotations.',['Lisān al-ʿArab','Maqāyīs al-lugha']]
+        };
+        const pair=notes[activeScienceTab]||notes.nahw;
+        html+=plannedList('Arabic language sciences',pair[0],pair[1]);
+      }
+      if(activeScience!=='all')html+='<p class="ia-explore-note">Selecting a research discipline never invents a mapped collection: only imported, source-audited works can open a network.</p>';
+      html+='<button type="button" data-action="show-all-mapped">Return to the mapped atlas</button>';
+      body.innerHTML=html;
+    }
     root.addEventListener('click',event=>{if(suppressNextClick){const onChart=!!event.target.closest('[data-chart]');suppressNextClick=false;if(onChart){event.preventDefault();return}}const el=event.target.closest('button,a');if(!el||!root.contains(el))return;if(el.dataset.traditionRoute){event.preventDefault();state.families=new Set([el.dataset.traditionRoute]);state.view='timeline';state.density='all';state.page=1;render();setHash();announce('Catalogue tradition selected: '+families[el.dataset.traditionRoute][1]);return}
     if(el.dataset.regionRoute){event.preventDefault();state.regionNetwork=el.dataset.regionRoute;state.view='timeline';state.density='all';state.page=1;render();setHash();announce('Regional context selected: '+regionNetworks.find(([id])=>id===el.dataset.regionRoute)?.[1]);return}
     if(el.dataset.textRoute){event.preventDefault();chooseTextFamily(el.dataset.textRoute);return}if(el.dataset.cluster){event.preventDefault();const [a,b]=el.dataset.cluster.split(',').map(Number);const mid=(a+b)/2,target=lastWidth<600?150:340;changeRange(mid-target/2,mid+target/2);return}if(el.dataset.work){event.preventDefault();q('[data-results],#ia-results-v3')?.setAttribute('hidden','');selectNode(el.dataset.work,el.dataset.center==='1');return}if(el.dataset.edge){event.preventDefault();selectEdge(el.dataset.edge);return}if(el.dataset.history){event.preventDefault();selectHistory(el.dataset.history);return}if(el.dataset.source){state.detailType='source';state.detailId=el.dataset.source;renderSheet();setHash();return}if(el.dataset.author){state.detailType='author';state.detailId=el.dataset.author;renderSheet();setHash();return}if(el.dataset.view){state.view=el.dataset.view;state.page=1;render();setHash();return}if(el.dataset.range){const [a,b]=el.dataset.range.split(',').map(Number);state.view='timeline';changeRange(a,b);return}if(el.dataset.auditTab){state.auditTab=el.dataset.auditTab;drawAudit();setHash();return}if(el.dataset.action)runAction(el.dataset.action)});
