@@ -10,7 +10,7 @@
       "language": "both",
       "pages": 299,
       "size_bytes": 919698,
-      "sha256": "ba88b43fda12cd2bc3dfe0a37abd36541b14fbd07088833fb61509e5c78acfce",
+      "sha256": "4310d17c2fa16a166ae9d0bf32f403165c60a13eb09cf7a95ab798cc68eec0c3",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -24,8 +24,8 @@
       "group": "reading",
       "language": "english",
       "pages": 138,
-      "size_bytes": 432731,
-      "sha256": "c4b6c5baa41006450827cbb135f443263baa429f21b4effd7fec0641266714c1",
+      "size_bytes": 432726,
+      "sha256": "651d7cc64eda18f5f573b19c62c12b5b7b6130ff2fe7686488c19d232b6919e3",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -39,8 +39,8 @@
       "group": "reading",
       "language": "arabic",
       "pages": 173,
-      "size_bytes": 521661,
-      "sha256": "0a94301d8a67105239886fb3c727344a3c0efd4b28b7dbde2d4be7f035b98a24",
+      "size_bytes": 521663,
+      "sha256": "8b7313c15497da02d820cc51838abb396678d8b566e3bbdd0ef0ca0da5bf40ba",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -54,8 +54,8 @@
       "group": "study",
       "language": "both",
       "pages": 322,
-      "size_bytes": 1019571,
-      "sha256": "4a13992bf53dc8f47a1a329620f4b3b91fa9d6b578ca42de8da281682dee7c6a",
+      "size_bytes": 1019570,
+      "sha256": "571c9b82750d7283db839e76cef74f2bf94befa5d421669242e5e6ddecbf7c99",
       "description": "With selected notes and subject guide",
       "content": {
         "matn": 61,
@@ -69,8 +69,8 @@
       "group": "reference",
       "language": "both",
       "pages": 359,
-      "size_bytes": 1173608,
-      "sha256": "7f26bb2512be7c47e160c69a8dce7f2b3ca98c5308412e8b0b04614fd4e3c2c6",
+      "size_bytes": 1174040,
+      "sha256": "06e1faeadda6bce4085d9a3e5b7bdccbc6d07a37e98cb04bfcb43bce3f32349f",
       "description": "Complete source notes, glossary, index and references",
       "content": {
         "matn": 61,
