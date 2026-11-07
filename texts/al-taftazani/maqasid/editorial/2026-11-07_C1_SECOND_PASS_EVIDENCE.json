@@ -1,0 +1,33 @@
+{
+  "schema": "maqasid-limited-source-correction-v1",
+  "date": "2026-11-07",
+  "scope_warning": "This is not the requested complete second pass. Source checking done only for the bounded excerpts recorded below, from already recovered Arabic; YEK page-images were not checked in this stage.",
+  "corrections": [
+    {
+      "id": "M-I-01",
+      "source": "Independent Maqāṣid matn, YEK 2019, printed p. 93; recovered excerpt source-checked in 5 Nov matn dossier; image NOT re-inspected in this turn",
+      "arabic": "المقصد الأوّل في المبادئ. وفيه فصول. الفصل الأوّل في المقدّمات. الكلام هو العلم بالعقائد الدينيّة عن الأدلّة اليقينيّة، وموضوعه المعلوم من حيث يتعلّق به إثباتها، ومسائله القضايا النظريّة الشرعيّة الاعتقاديّة، وغايته تحلية الإيمان بالإتقان، ومنفعته الفوز بنظام المعاش ونجاة المعاد، فهو أشرف العلوم.",
+      "english": "The First Principal Division: On the Principles. It comprises chapters. Chapter One: Preliminaries. Kalām is knowledge of religious doctrines obtained on the basis of certain proofs. Its subject matter is the knowable insofar as the establishment of those doctrines is connected with it. Its questions are theoretical propositions concerning religious belief. Its aim is to adorn faith with secure mastery; its benefit is to attain the proper ordering of life in this world and deliverance at the Return. It is therefore the noblest of the sciences.",
+      "revision_note": "Corrected the older C1's 'firm grounding' to 'secure mastery' for بالإتقان; maintained distinction between المعلوم and الموجود; preserved عن الأدلة as evidential derivation, not simply the topic of study. Earlier quotations show alternative بالإيقان, not silently adopted.",
+      "status": "source-checked recovered excerpt; not newly print-image checked; verified only for this single bounded passage"
+    },
+    {
+      "id": "m-vi-p621",
+      "kind": "partial_matn_alignment",
+      "source": "Sharḥ al-Maqāṣid electronic recovered lemma MQ-R2-MATN-001, 1981 print transcription, corresponding to Maqāṣid VI opening 2019 p. 621; NOT a full-page print collation",
+      "arabic": "خص بشريعة وكتاب، والبعثة لمتضمنها مصالح لا تحصى لطف من الله تعالى، ورحمة يختص بها من يشاء من عباده من غير وجوب عليه خلافا للمعتزلة ولا عنه خلافا للحكماء وبعض المتكلمين ذهابا إلى أن مقتضى الحكمة يجب أن يقع لامتناع السفه كالمعلوم وقوعه لامتناع الجهل.",
+      "english": "[A messenger may be restricted to one] distinguished by a revealed law and a book. Since the prophetic mission encompasses benefits beyond counting, its sending is a gracious kindness from God Most High and a mercy with which He singles out whichever servants He wills. It is not obligatory upon Him, as the Muʿtazila hold, nor necessary as an effect proceeding from Him, as the philosophers and certain theologians maintain. The latter argue that what wisdom requires must occur because acting foolishly is impossible, just as what is known to occur must occur because ignorance is impossible.",
+      "revision_note": "The two contrasts — وجوب عليه / ولا عنه — have been distinguished as normative obligation upon God and necessitated issuance from God. This quotation is only part of the page, not a replacement for its complete English. The older C1 is retained.",
+      "status": "partial Arabic-English cross-witness verification; incomplete page; do not override whole-page English"
+    },
+    {
+      "id": "m-vi-p625",
+      "kind": "partial_matn_alignment",
+      "source": "Recovered Sharḥ matn lemma MQ-R2-MATN-008; 1981 commentary transcription, compared with C1's miracle discussion; not independently collated against YEK page image",
+      "arabic": "وأما إمكانها فضروري، وكذا إمكان نقلها إلى الغائبين، وأما وجه دلالتها فهو أنها بمنزلة صريح التصديق، كما إذا ادعى أحد أنه رسول هذا الملك فطولب بالحجة، فقال: أن يخالف الملك عادته ويقوم عن سريره ثلاث مرات، ففعل. وهذا توضيح بالمثال لا استدلال بقياس الغائب على الشاهد.",
+      "english": "As for the miracle's possibility, this is evident of necessity; so too is the possibility of transmitting its occurrence to those absent. Its evidential force is that it has the standing of an explicit confirmation. Suppose someone claims to be the messenger of a particular king and, when proof is demanded, says: 'Let the king depart from his usual practice and rise from his throne three times.' The king then does so. This clarifies the point by means of an example; it is not an argument by analogy from the unseen to the witnessed.",
+      "revision_note": "Evidential 'standing' (بمنزلة) does not mean the king literally spoke; the final sentence denies the argument is qiyās al-ghāʾib ʿalā al-shāhid. This is a bounded passage only.",
+      "status": "partial Arabic-English cross-witness verification; incomplete page"
+    }
+  ]
+}

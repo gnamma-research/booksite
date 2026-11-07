@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-library-manifest-v1",
   "project": "Gnamma Research",
-  "updated": "2026-11-04",
+  "updated": "2026-11-07",
   "collections": [
     "texts",
     "essays",
@@ -336,6 +336,27 @@
       ],
       "url": "texts/al-tabatabai/",
       "note": "A unified reading room preserving separate books and section numbering; stage navigation, Arabic/English controls, source notes, glossary, and local bookmarks."
+    },
+    {
+      "id": "taftazani-maqasid",
+      "title": "Maqāṣid al-Kalām and Sharḥ al-Maqāṣid",
+      "arabic": "المقاصد وشرح المقاصد",
+      "author": "Saʿd al-Dīn al-Taftāzānī",
+      "author_slug": "al-taftazani",
+      "work_slug": "maqasid",
+      "area": [
+        "kalām",
+        "philosophy",
+        "metaphysics"
+      ],
+      "status": "matn-full-first-pass-commentary-mixed-grade-second-pass-pending",
+      "url": "texts/al-taftazani/maqasid/",
+      "note": "Separate complete 30 Oct 2026 matn English first-pass master (5,346 source lines, 379 reader positions) and 851-record Sharh commentary with 235 notes and 81 apparatus records; original Sharh reader preserved losslessly. The English matn is NOT fully Arabic-English verified and Sharh records are of differing quality. Cumulative sources are on the research branch.",
+      "proofreader_status": "full_AE_second_pass_not_complete",
+      "full_critical_verified": false,
+      "matn_data_manifest": "texts/al-taftazani/maqasid/reader-data/MANIFEST.json",
+      "sharh_data_manifest": "texts/al-taftazani/sharh-al-maqasid/canonical/sharh_v5/MANIFEST.json",
+      "continuity_protocol": "docs/TRANSLATION_CONTINUITY_PROTOCOL.md"
     }
   ],
   "research": [

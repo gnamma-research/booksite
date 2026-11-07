@@ -1,0 +1,150 @@
+{
+  "schema": "maqasid-cumulative-source-v1",
+  "created": "2026-11-07",
+  "original_source": "Library cumulative_reader.html (Critical revision 5, 4 November 2026)",
+  "legacy_html_characters": 6300719,
+  "canonical_matn": "../MAQASID_MATN_C1_2026-10-30.md",
+  "commentary_data": {
+    "units": 851,
+    "notes": 235,
+    "apparatus": 81,
+    "glossary": true,
+    "terminal_matn_appendix": true
+  },
+  "unit_parts": [
+    {
+      "path": "units_01.json",
+      "count": 103,
+      "characters": 354727,
+      "first": "MQ-OPEN-001",
+      "last": "MQ-C01-066"
+    },
+    {
+      "path": "units_02.json",
+      "count": 105,
+      "characters": 353464,
+      "first": "MQ-C01-067",
+      "last": "MQ-C02-064"
+    },
+    {
+      "path": "units_03.json",
+      "count": 45,
+      "characters": 351808,
+      "first": "MQ-C02-065",
+      "last": "MQ-C02-109"
+    },
+    {
+      "path": "units_04.json",
+      "count": 12,
+      "characters": 358306,
+      "first": "MQ-C02-110",
+      "last": "MQ-C02-121"
+    },
+    {
+      "path": "units_05.json",
+      "count": 25,
+      "characters": 354387,
+      "first": "MQ-C02-122",
+      "last": "MQ-C03-022"
+    },
+    {
+      "path": "units_06.json",
+      "count": 32,
+      "characters": 354872,
+      "first": "MQ-C03-023",
+      "last": "MQ-C03-054"
+    },
+    {
+      "path": "units_07.json",
+      "count": 24,
+      "characters": 343405,
+      "first": "MQ-C03-055",
+      "last": "MQ-C04-013"
+    },
+    {
+      "path": "units_08.json",
+      "count": 39,
+      "characters": 355021,
+      "first": "MQ-C04-014",
+      "last": "MQ-C04-MN-008"
+    },
+    {
+      "path": "units_09.json",
+      "count": 20,
+      "characters": 352960,
+      "first": "MQ-C04-MN-009",
+      "last": "MQ-C04-SI-010"
+    },
+    {
+      "path": "units_10.json",
+      "count": 15,
+      "characters": 357850,
+      "first": "MQ-C04-SI-011",
+      "last": "MQ-C05-014"
+    },
+    {
+      "path": "units_11.json",
+      "count": 20,
+      "characters": 352918,
+      "first": "MQ-C05-015",
+      "last": "MQ-C05-034"
+    },
+    {
+      "path": "units_12.json",
+      "count": 94,
+      "characters": 357738,
+      "first": "MQ-C05-035",
+      "last": "MQ-R3-PROP-009"
+    },
+    {
+      "path": "units_13.json",
+      "count": 100,
+      "characters": 355065,
+      "first": "MQ-R3-PROP-010",
+      "last": "MQ-R5-022-04"
+    },
+    {
+      "path": "units_14.json",
+      "count": 53,
+      "characters": 359063,
+      "first": "MQ-R5-022-05",
+      "last": "MQ-C06-048"
+    },
+    {
+      "path": "units_15.json",
+      "count": 38,
+      "characters": 356288,
+      "first": "MQ-C06-049",
+      "last": "SM41-011"
+    },
+    {
+      "path": "units_16.json",
+      "count": 76,
+      "characters": 354623,
+      "first": "SM41-012",
+      "last": "SM45-028"
+    },
+    {
+      "path": "units_17.json",
+      "count": 50,
+      "characters": 293801,
+      "first": "SM45-029",
+      "last": "SM49-001"
+    }
+  ],
+  "related_files": [
+    "notes.json",
+    "apparatus.json",
+    "glossary.json",
+    "terminal_matn_appendix.json",
+    "reader_before_data.htmlfrag",
+    "reader_after_data.htmlfrag"
+  ],
+  "reconstruction": "Read parts in numeric order, concatenate arrays, combine with notes/apparatus/glossary/terminal_matn_appendix into {units,notes,apparatus,glossary,terminal_matn_appendix}. Insert JSON.stringify(result) between reader_before_data.htmlfrag and reader_after_data.htmlfrag.",
+  "warnings": [
+    "851 reader entries are mixed-grade: not an independently certified unabridged translation",
+    "487 legacy units have no Arabic text attached in the reader",
+    "538 legacy offsets were found to track English draft positions rather than Arabic source positions",
+    "2019 independent Maqasid matn is a separate complete first-pass file, not the same as 44 isolated matn extracts"
+  ]
+}
