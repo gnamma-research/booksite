@@ -355,3 +355,35 @@ body #kalam-timeline-app-v3 .ia-explore-library strong{display:block;font-size:1
 body #kalam-timeline-app-v3 .ia-explore-library p{margin:4px 0 9px;color:var(--ia-muted);font-size:12px;line-height:1.5}
 body #kalam-timeline-app-v3 .ia-explore-library a{display:inline-block;padding:7px 11px;border:1px solid var(--ia-link);border-radius:8px;color:var(--ia-link);font-size:12px;font-weight:650;text-decoration:none}
 body #kalam-timeline-app-v3 .ia-explore-library a:hover,body #kalam-timeline-app-v3 .ia-explore-library a:focus-visible{background:var(--ia-panel)}
+
+/* Discipline/source map: source-attested bibliographic work views. */
+body #kalam-timeline-app-v3.ia-source-mode .ia-advanced-open,
+body #kalam-timeline-app-v3.ia-source-mode .ia-secondary-controls{display:none}
+body #kalam-timeline-app-v3 .ia-source-select{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0}
+body #kalam-timeline-app-v3 .ia-source-select button{font-size:12px;min-height:35px;padding:6px 10px;border-radius:7px}
+body #kalam-timeline-app-v3 .ia-source-select button[aria-pressed="true"]{background:var(--ia-active);color:var(--ia-onactive);border-color:transparent}
+body #kalam-timeline-app-v3 .ia-source-count{font-size:12px;color:var(--ia-fg);font-weight:650;margin:8px 0}
+body #kalam-timeline-app-v3 .ia-source-lane{fill:var(--ia-fg);font-size:12px;font-weight:650}
+body #kalam-timeline-app-v3 .ia-source-node:focus-visible rect,
+body #kalam-timeline-app-v3 .ia-source-node:hover rect{stroke:var(--ia-link);stroke-width:3}
+body #kalam-timeline-app-v3 .ia-source-edge{fill:none;stroke:var(--ia-link);stroke-width:1.75;stroke-dasharray:5 3}
+body #kalam-timeline-app-v3 .ia-source-inventory{margin:12px 0;border-top:1px solid var(--ia-line);padding-top:10px}
+body #kalam-timeline-app-v3 .ia-source-inventory summary{cursor:pointer;font-size:12px;font-weight:650;color:var(--ia-fg)}
+body #kalam-timeline-app-v3 .ia-source-inventory ul{padding-left:22px;margin:8px 0}
+body #kalam-timeline-app-v3 .ia-source-inventory li{margin:8px 0;font-size:12px;overflow-wrap:anywhere}
+body #kalam-timeline-app-v3 .ia-source-library-link{font-size:12px;margin:14px 0}
+body #kalam-timeline-app-v3 .ia-source-library-link a{display:inline-block;padding:8px 12px;border:1px solid var(--ia-line);border-radius:7px;font-weight:650}
+@media(max-width:700px){
+  body #kalam-timeline-app-v3 .ia-source-select{gap:4px;margin:6px 0}
+  body #kalam-timeline-app-v3 .ia-source-select button{min-height:40px;padding:7px 9px}
+  body #kalam-timeline-app-v3 .ia-source-count{margin:7px 0}
+  body #kalam-timeline-app-v3 .ia-source-library-link a{display:block;text-align:center}
+}
+
+/* Landscape phones: the nav is hidden for short touch viewports, so do NOT also
+   hide the only display-mode selector at min-width:701px. */
+@media (min-width:701px) and (max-height:550px) and (pointer:coarse){
+  body #kalam-timeline-app-v3 .ia-quick-controls .ia-quick-view{
+    display:flex!important;min-width:0;
+  }
+}

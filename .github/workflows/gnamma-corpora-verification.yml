@@ -10,6 +10,10 @@ on:
   pull_request:
     paths:
       - 'research/intellectual-atlas/corpora/**'
+      - 'research/intellectual-atlas/atlas-app.js'
+      - 'research/intellectual-atlas/site.css'
+      - 'research/intellectual-atlas/tests/verify_current_science_ui_browser.py'
+      - 'research/intellectual-atlas/build.py'
       - '.github/workflows/gnamma-corpora-verification.yml'
   workflow_dispatch:
 

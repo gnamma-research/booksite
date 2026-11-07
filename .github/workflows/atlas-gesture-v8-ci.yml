@@ -1,4 +1,4 @@
-name: Gnamma Atlas 7.1 — continuous gestures and date evidence QA
+name: Gnamma Atlas — current source-map, gesture and date evidence QA
 
 on:
   push:
@@ -40,8 +40,8 @@ jobs:
           html=(p/'index.html').read_text()
           embedded=json.loads(re.search(r'<script type="application/json" data-atlas>(.*?)</script>',html,re.S).group(1))
           assert data==embedded
-          assert (len(data['nodes']),len(data['edges']),len(data['sources']),len(data['textual_families']))==(386,362,359,20)
-          assert data['revision']=='avicennian-extensions-7.2-2026-10-30'
+          assert (len(data['nodes']),len(data['edges']),len(data['sources']),len(data['textual_families']))==(404,377,374,21)
+          assert data['revision']=='tajrid-critical-links-8-2026-10-31'
           assert next(n for n in data['nodes'] if n['id']=='iji_mawaqif')['temporal']['kind']=='multiple_stages'
           assert next(n for n in data['nodes'] if n['id']=='plotinus_enneads')['temporal']['kind']=='multiple_stages'
           PY
@@ -59,7 +59,7 @@ jobs:
             if curl --silent --fail http://127.0.0.1:8123/research/intellectual-atlas/ > /dev/null; then break; fi
             sleep .25
           done
-          python research/intellectual-atlas/tests/verify_atlas_browser.py
+          python research/intellectual-atlas/tests/verify_current_science_ui_browser.py --browser webkit --width 390 --height 844
           python research/intellectual-atlas/tests/verify_continuous_scrub_browser.py
       - uses: actions/upload-artifact@v4
         if: always()

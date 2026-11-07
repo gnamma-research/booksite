@@ -2,8 +2,8 @@
   "title": "Texts in Time · Islamic Intellectual Atlas",
   "revision": "tajrid-critical-links-8-2026-10-31",
   "status": "working research",
-  "ui_revision": "unified-explore-with-source-attested-corpora-2026-11-07",
-  "mobile_interface_note": "Chart-first Explore sheet for philosophy/kalām/logic, fiqh/uṣūl, hadith, tafsīr, taṣawwuf, grammar and balāgha; linked 30-version OpenITI source library with 5 local byte-matched texts and 25 pinned on-demand versions.",
+  "ui_revision": "fiqh-source-maps-and-madhhab-routing-2026-11-07",
+  "mobile_interface_note": "Chart-first Explore menu with functioning madhhab-specific Fiqh source maps, Hadith, Tafsīr and Arabic-sciences source maps; 30 OpenITI versions (five local byte-matched, 25 pinned on demand). These are book authorities, not collation of legal issues or isnāds.",
   "whole_range_note": "Drag the six-dot grip from Whole atlas to restore a movable focus window, or tap another time on the overview to seek.",
   "date_marker_note": "Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.",
   "entries": 404,
@@ -21,8 +21,39 @@
     "browse discipline",
     "separate source-text witness catalogue"
   ],
+  "visual_modes": [
+    "chronological timeline",
+    "source-backed text network",
+    "work connections",
+    "catalogue",
+    "evidence/audit",
+    "source-attested disciplinary work maps"
+  ],
+  "discipline_nav": [
+    "mapped works",
+    "philosophy, kalām and logic",
+    "fiqh and uṣūl (source tranche)",
+    "hadith (source tranche)",
+    "tafsīr (source tranche)",
+    "taṣawwuf (selective mapped texts and source tranche)",
+    "Arabic language sciences (source tranche)"
+  ],
   "textual_family_routes": 21,
-  "textual_family_note": "21 distinct source-verified named textual families with shared canonical work IDs. The SVG Text Network shows only existing sourced work-level relations; new fiqh, hadith, tafsir and Arabic language corpora are navigation scaffolds, not imported graph records.",
+  "source_corpus": {
+    "url": "corpora/",
+    "index": "corpora/registry.json",
+    "verification_register": "corpora/CORPUS_VERIFICATION.md",
+    "source_repository": "OpenITI/RELEASE",
+    "pinned_commit": "cfc4157a3cf2054c0888f133970a4eaa3e22e58c",
+    "digital_versions": 30,
+    "mirrored_byte_identical": 5,
+    "on_demand_remote_versions": 25,
+    "bibliography_evidenced_work_relations": 5,
+    "print_manuscript_collations_claimed": 0,
+    "complete_corpora_claimed": false,
+    "license": "CC BY-NC-SA 4.0"
+  },
+  "textual_family_note": "The established 21 philosophical/kalām textual families retain their canonical work IDs and evidence-qualified connections; the new disciplinary source maps list pinned OpenITI versions separately, with no invented legal-opinion or transmission edges.",
   "tahdhib_added_entries": 26,
   "avicennian_extension_entries": 11,
   "avicennian_new_textual_routes": 2,
@@ -38,41 +69,18 @@
     "historical_revision7_register": 84,
     "focused_tahdhib_supplement": 9
   },
-  "pdf_note": "The live web atlas includes the November 2026 Explore and 30-version source-library integration. The revision 8 offline ZIP and earlier PDFs predate these updates and contain no new corpus source reader. The 30 digital versions are not claimed as independently collated critical editions.",
+  "pdf_note": "The live web atlas includes a functioning Fiqh/madhhab source map and the 30-version source library; the source map has no inferred legal or isnād edges. The revision 8 offline ZIP and earlier PDFs were issued before these updates and contain no new corpus source reader. The 30 digital versions are not claimed as independently collated critical editions.",
   "download_sha256": {
+    "Gnamma_Intellectual_Atlas_Offline_Revision7.zip": "50a705efd9814ff291cd317582257ae40f3e8ddb53e366ce30d103635b59a5a6",
     "Gnamma_Intellectual_Atlas_Offline_Revision8.zip": "c3b40b57db522d36e9ac379457aaf209d4be5fd588c6518a0e9860297d000013",
+    "Intellectual_Atlas_Reference_Revision4.pdf": "7d5bf70d9d683bbdeaaba21ce9b6f8bc3b7e112356bd81b50622466964858b24",
+    "Intellectual_Atlas_Reference_Revision7.pdf": "56fdc288c6171980b9313540a10698434185c656b6a2f3909317b8d0ef5920b9",
+    "Islamic_Intellectual_Timeline.pdf": "f75eba18a18b04a3a443a0f6a097ba05013179219ae5eafadcdb5fa5513235ba",
+    "Islamic_Timeline_Overview.pdf": "346e2cf5efcca1943d00361d7fcd8ca4cbf26b6510a24aa1417c0659da4258c8",
+    "Islamic_Timeline_Website_Package.zip": "8673c89ac9b75ba35c5ca8ffbe63eba5345ba1d259d37b74488266b0ffab7352",
+    "Tahdhib_Genealogy_Addendum.pdf": "331d46c9fe8bb2a7e059e18dd214fb117f8d1d8ff5bf5e0fe3d82a8e81db33ab",
     "intellectual-atlas-data.json": "d6136c3cd5cd1d92b45cef20b8fa00c5c2233963d465887ffe46700cfcbf658e"
   },
   "reader_navigation_revision": "tajrid-reader-ui-3-2026-10-31",
-  "reader_return_links": "Preserve safe debate views, passage context, filters and comparison selection.",
-  "visual_modes": [
-    "chronological timeline",
-    "source-backed text network",
-    "work connections",
-    "catalogue",
-    "evidence/audit"
-  ],
-  "discipline_nav": [
-    "mapped works",
-    "philosophy, kalām and logic",
-    "fiqh and uṣūl (source tranche)",
-    "hadith (source tranche)",
-    "tafsīr (source tranche)",
-    "taṣawwuf (selective mapped texts and source tranche)",
-    "Arabic language sciences (source tranche)"
-  ],
-  "source_corpus": {
-    "url": "corpora/",
-    "index": "corpora/registry.json",
-    "verification_register": "corpora/CORPUS_VERIFICATION.md",
-    "source_repository": "OpenITI/RELEASE",
-    "pinned_commit": "cfc4157a3cf2054c0888f133970a4eaa3e22e58c",
-    "digital_versions": 30,
-    "mirrored_byte_identical": 5,
-    "on_demand_remote_versions": 25,
-    "bibliography_evidenced_work_relations": 5,
-    "print_manuscript_collations_claimed": 0,
-    "complete_corpora_claimed": false,
-    "license": "CC BY-NC-SA 4.0"
-  }
+  "reader_return_links": "Preserve safe debate views, passage context, filters and comparison selection."
 }

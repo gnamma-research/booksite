@@ -1,4 +1,4 @@
-name: Gnamma Intellectual Atlas — chronology and browser QA
+name: Gnamma Intellectual Atlas — current chronology and source-map browser QA
 
 on:
   push:
@@ -42,10 +42,10 @@ jobs:
           s=(p/"index.html").read_text()
           h=json.loads(re.search(r'<script type="application/json" data-atlas>(.*?)</script>',s,re.S).group(1))
           assert h==d
-          assert len(d["nodes"])==386 and len(d["edges"])==362
-          assert len(d["sources"])==359 and len(d["history"]["sources"])==72
-          assert len(d["history"]["periods"])==49 and len(d["textual_families"])==20 and len(d["history"]["networks"])==5
-          print("Revision-7.2 canonical data, Neoplatonic relationships and historical-school bands verified")
+          assert len(d["nodes"])==404 and len(d["edges"])==377
+          assert len(d["sources"])==374 and len(d["history"]["sources"])==72
+          assert len(d["history"]["periods"])==49 and len(d["textual_families"])==21 and len(d["history"]["networks"])==5
+          print("Current revision-8 canonical data, Neoplatonic relationships and historical-school bands verified")
           PY
       - name: Install Chromium and Playwright
         run: |
@@ -61,7 +61,7 @@ jobs:
             if curl --silent --fail http://127.0.0.1:8123/research/intellectual-atlas/ > /dev/null; then break; fi
             sleep .25
           done
-          python research/intellectual-atlas/tests/verify_atlas_browser.py
+          python research/intellectual-atlas/tests/verify_current_science_ui_browser.py --browser chromium --width 390 --height 844
           python research/intellectual-atlas/tests/verify_continuous_scrub_browser.py
       - uses: actions/upload-artifact@v4
         if: always()
