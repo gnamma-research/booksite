@@ -124,6 +124,8 @@ manifest = {
     'neoplatonic_new_relationships': 36,
     'scholarly_networks': len(data['history']['networks']),
     'classification_layers': ['intellectual tradition','textual family','regional/historical network','browse discipline','separate source-text witness catalogue'],
+    'visual_modes': ['chronological timeline','source-backed text network','work connections','catalogue','evidence/audit'],
+    'discipline_nav': ['mapped works','philosophy, kalām and logic','fiqh and uṣūl (source tranche)','hadith (source tranche)','tafsīr (source tranche)','taṣawwuf (selective mapped texts and source tranche)','Arabic language sciences (source tranche)'],
     'textual_family_routes': len(families),
     'source_corpus': {
         'url': 'corpora/',
@@ -155,6 +157,8 @@ manifest = {
                  'The revision 8 offline ZIP and earlier PDFs were issued before these updates and contain no new corpus source reader. '
                  'The 30 digital versions are not claimed as independently collated critical editions.'),
     'download_sha256': downloads,
+    'reader_navigation_revision': 'tajrid-reader-ui-3-2026-10-31',
+    'reader_return_links': 'Preserve safe debate views, passage context, filters and comparison selection.',
 }
 (ROOT/'publication.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')
 print(json.dumps({'entries': len(data['nodes']), 'relationships': len(data['edges']),
