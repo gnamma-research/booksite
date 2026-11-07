@@ -2,8 +2,8 @@
   "title": "Texts in Time · Islamic Intellectual Atlas",
   "revision": "tajrid-critical-links-8-2026-10-31",
   "status": "working research",
-  "ui_revision": "unified-explore-and-text-network-2026-11-07",
-  "mobile_interface_note": "Diagram first; one compact Explore sheet and mobile View selector; advanced layers under gear; research notes after chart. Discipline groups include philosophy/kalām/logic, fiqh/uṣūl, hadith, tafsīr, taṣawwuf, Arabic language sciences (grammar, morphology, balāgha, lexicography). Nonimported corpora labelled planned.",
+  "ui_revision": "unified-explore-with-source-attested-corpora-2026-11-07",
+  "mobile_interface_note": "Chart-first Explore sheet for philosophy/kalām/logic, fiqh/uṣūl, hadith, tafsīr, taṣawwuf, grammar and balāgha; linked 30-version OpenITI source library with 5 local byte-matched texts and 25 pinned on-demand versions.",
   "whole_range_note": "Drag the six-dot grip from Whole atlas to restore a movable focus window, or tap another time on the overview to seek.",
   "date_marker_note": "Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.",
   "entries": 404,
@@ -18,7 +18,8 @@
     "intellectual tradition",
     "textual family",
     "regional/historical network",
-    "browse discipline (UI only)"
+    "browse discipline",
+    "separate source-text witness catalogue"
   ],
   "textual_family_routes": 21,
   "textual_family_note": "21 distinct source-verified named textual families with shared canonical work IDs. The SVG Text Network shows only existing sourced work-level relations; new fiqh, hadith, tafsir and Arabic language corpora are navigation scaffolds, not imported graph records.",
@@ -37,7 +38,7 @@
     "historical_revision7_register": 84,
     "focused_tahdhib_supplement": 9
   },
-  "pdf_note": "The live atlas UI has the 7 November 2026 Explore/Network revision and the 21st Muḥaṣṣal family. The revision 8 offline ZIP and earlier PDFs predate these changes, and are intentionally marked historical snapshots; do not claim they contain the latest controls or newly planned corpora.",
+  "pdf_note": "The live web atlas includes the November 2026 Explore and 30-version source-library integration. The revision 8 offline ZIP and earlier PDFs predate these updates and contain no new corpus source reader. The 30 digital versions are not claimed as independently collated critical editions.",
   "download_sha256": {
     "Gnamma_Intellectual_Atlas_Offline_Revision8.zip": "c3b40b57db522d36e9ac379457aaf209d4be5fd588c6518a0e9860297d000013",
     "intellectual-atlas-data.json": "d6136c3cd5cd1d92b45cef20b8fa00c5c2233963d465887ffe46700cfcbf658e"
@@ -59,5 +60,19 @@
     "tafsīr (planned)",
     "taṣawwuf (selective mapped texts)",
     "Arabic language sciences (planned)"
-  ]
+  ],
+  "source_corpus": {
+    "url": "corpora/",
+    "index": "corpora/registry.json",
+    "verification_register": "corpora/CORPUS_VERIFICATION.md",
+    "source_repository": "OpenITI/RELEASE",
+    "pinned_commit": "cfc4157a3cf2054c0888f133970a4eaa3e22e58c",
+    "digital_versions": 30,
+    "mirrored_byte_identical": 5,
+    "on_demand_remote_versions": 25,
+    "bibliography_evidenced_work_relations": 5,
+    "print_manuscript_collations_claimed": 0,
+    "complete_corpora_claimed": false,
+    "license": "CC BY-NC-SA 4.0"
+  }
 }
