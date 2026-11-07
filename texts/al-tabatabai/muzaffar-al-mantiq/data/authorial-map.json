@@ -9,7 +9,7 @@
     "institutionalScan": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000780/1",
     "institutionalScanYear": 1968
   },
-  "status": "Authorial contents located across the full work; the local bilingual edition remains selected passages, not a complete Arabic or English transcription.",
+  "status": "29 authorial sections in the local bilingual reader: 11 introduction, four opening Book I, and 14 selections of Book III. Full six-book Arabic/English integration remains incomplete.",
   "parts": [
     {
       "book": 0,
@@ -153,8 +153,8 @@
           "locatorStatus": "bibliographic topic, exact printed page not checked"
         }
       ],
-      "availableUnits": 0,
-      "note": "No authorial Book I section has yet been transcribed into the local reader or translated; its complete Arabic can be consulted through the cited original.",
+      "availableUnits": 4,
+      "note": "Four opening Book I sections on expressions, signification, and its three kinds now have source-grounded Arabic and working English. All later Book I topics remain in the original linked Arabic source only.",
       "url": "https://lib.rafed.net/m/?b_id=1604&page=29&type=c_fbook"
     },
     {
@@ -515,10 +515,11 @@
   "summary": {
     "totalAuthorialBooks": 6,
     "sourcePagesCoveredByRegister": 455,
-    "localTranslatedUnits": 25,
+    "localTranslatedUnits": 29,
     "localIntroUnits": 11,
     "localBook3Units": 14,
-    "otherAuthorialBooksLocallyTranslated": 0
+    "otherAuthorialBooksLocallyTranslated": 0,
+    "localBook1Units": 4
   },
   "accuracy": "Only book-opening printed-page links and the Book VI demonstration-section start at p. 311 have individually verified locator evidence. Other chapter/section titles are verified against the Rafed contents but their exact internal printed page locators are intentionally withheld until checked."
 }
