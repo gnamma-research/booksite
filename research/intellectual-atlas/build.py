@@ -141,7 +141,7 @@ manifest = {
         'complete_corpora_claimed': False,
         'license': corpus_registry['license'],
     },
-    'textual_family_note': 'Book-centred, overlapping routes with stable shared work IDs; Muḥaṣṣal and its commentaries are a distinct route, while Rāzī’s Sharḥ al-Ishārāt remains within the Ishārāt family.',
+    'textual_family_note': 'The established 21 philosophical/kalām textual families retain their canonical work IDs and evidence-qualified connections; the new disciplinary source maps list pinned OpenITI versions separately, with no invented legal-opinion or transmission edges.',
     'tahdhib_added_entries': 26,
     'avicennian_extension_entries': 11,
     'avicennian_new_textual_routes': 2,
