@@ -110,7 +110,7 @@ function edge(x1,y1,x2,y2,documented=false,u=""){
 function svg(body,w,h,title){
  const defs='<defs><marker id="gnv-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 1 L9 5 L1 9Z"></path></marker></defs>';
  return '<div class="gnv-canvas" data-gnv-canvas role="region" tabindex="0" aria-label="'+esc(title)+'; scroll to navigate">'+
-  '<svg data-gnv-svg role="img" xmlns="http://www.w3.org/2000/svg" width="'+Math.round(w*model.zoom)+
+  '<svg data-gnv-svg role="group" xmlns="http://www.w3.org/2000/svg" width="'+Math.round(w*model.zoom)+
   '" height="'+Math.round(h*model.zoom)+'" viewBox="0 0 '+w+' '+h+'" aria-label="'+esc(title)+'">'+
   defs+body+'</svg></div>';
 }
@@ -251,7 +251,7 @@ function render(args,api){
  genre=gen(args);
  const key=genre+"|"+args.science+"|"+args.tab+"|"+args.school;
  if(!model.scope){readHash();model.scope=key;}
- else if(model.scope!==key){model.scope=key;model.group="";model.author="";model.book="";model.page=1;}
+ else if(model.scope!==key){model.scope=key;model.group="";model.author="";model.book="";model.page=1;model.source="all";}
  if(!authorities.length&&!earlyFetch&&!loadError){
   earlyFetch=fetch("corpora/early-jurists.json").then(r=>{
    if(!r.ok)throw Error("Historical authority source HTTP "+r.status);return r.json();
