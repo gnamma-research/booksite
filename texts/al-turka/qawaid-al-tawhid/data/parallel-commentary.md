@@ -3979,6 +3979,7 @@ This is clear from his correspondence with a leading master of unveiling and wit
 5. Reported electronic apparatus strings, not independent manuscript readings: ( المتحذلقين - خ ); ( حقيقة - خ ); ( الحقيقيَّة - خ ل ); ( الانتقاليَّة - خ ل ); ( كاشتغالها بالإدراكات المجهودة
 
 ( المجهورة - خ ); ( و الأصوات القويمة - خ ); ( عن الباطن - خ ); ( بغواصب - خ ); ( مراسلاته - خ )
+6. At A p.260–262 the retained Arabic transcription reads النوم والسهو, not النوم والسهر. The previous English “sleep and wakefulness” was an unjustified rendering of السهو. This correction follows the extant digital Arabic (sleep and lapses of attention), with hunger and satiety described as possible causes. The printed image and manuscripts have not been independently collated for a possible السهر variant.
 
 ---
 
