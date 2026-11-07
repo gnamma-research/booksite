@@ -192,11 +192,14 @@ window.GNAMMA_QAWAID_REFERENCES = {
       "source": "al-Ḥikma al-Rashīdiyya, quotation in Tamhīd",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/324?lang=ar",
       "quoteFrom": "SH-028",
-      "status": "source-quoted-excerpt-verify-boundaries",
+      "quoteStart": "لا يتحقق الإدراك به مجرد الحصول للأمر المجرد فقط",
+      "quoteEnd": "ثمَّ انّه لو كان مُوجِبا له لذاته",
+      "english": "Cognition is not constituted merely by presence to an immaterial thing, nor by any arbitrary kind of presence falling under the unrestricted term, as already explained. What is required is the presence of a thing to an immaterial being that exerts some kind of influence upon it.",
+      "status": "delimited-excerpt-as-reproduced-in-Tamhid",
       "units": [
         "SH-028"
       ],
-      "note": "A cited separate philosophical work of the ancestor; only a directly delimited passage may be displayed. Do not conflate it with the Qawāʿid matn."
+      "note": "The opening of a longer quotation from the ancestor’s separate philosophical work is delimited using both Arabic anchors in SH-028. The original work itself has not been independently collated. Do not conflate this excerpt with the Qawāʿid matn."
     },
     {
       "id": "ibn-turka-itimad",
