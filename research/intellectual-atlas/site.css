@@ -527,3 +527,85 @@ body #kalam-timeline-app-v3 .gnbib-tabs button[aria-pressed="true"]{background:v
  #kalam-timeline-app-v3 .gnv-pager{gap:6px;font-size:11px}
  #kalam-timeline-app-v3 .gnv-pager button{padding:5px 7px}
 }
+
+/* GNAMMA disciplinary atlas: same chronological date-axis/annotated work cards
+   as the philosophy–kalām atlas; separate vertical principal-texts synopsis. */
+#kalam-timeline-app-v3 .dn-modes,#kalam-timeline-app-v3 .dn-tabs{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+#kalam-timeline-app-v3 .dn-modes button{font-weight:650;font-size:12px;min-height:39px;padding:7px 13px}
+#kalam-timeline-app-v3 .dn-modes button[aria-pressed="true"]{background:var(--ia-active);color:var(--ia-onactive);border-color:transparent}
+#kalam-timeline-app-v3 .dn-tabs button{font-size:11px;min-height:35px;padding:6px 10px}
+#kalam-timeline-app-v3 .dn-tabs button[aria-pressed="true"]{background:var(--ia-active);color:var(--ia-onactive);border-color:transparent}
+#kalam-timeline-app-v3 .dn-filter-line{display:flex;gap:8px;align-items:end;flex-wrap:wrap;margin:8px 0}
+#kalam-timeline-app-v3 .dn-filter-line label{display:grid;font-size:11px;gap:4px;color:var(--ia-muted)}
+#kalam-timeline-app-v3 .dn-filter-line select{font-size:12px;min-height:37px}
+#kalam-timeline-app-v3 .dn-filter-line button{font-size:12px;min-height:37px}
+#kalam-timeline-app-v3 .dn-research{background:var(--ia-panel);border:1px solid var(--ia-line);border-radius:9px;padding:12px;min-width:0}
+#kalam-timeline-app-v3 .dn-caveat{border-left:2px solid var(--ia-line);padding:6px 12px;background:var(--ia-soft);font-size:11px;line-height:1.65;color:var(--ia-muted);margin:2px 0 10px}
+#kalam-timeline-app-v3 .dn-control-line{display:flex;align-items:end;gap:8px;flex-wrap:wrap}
+#kalam-timeline-app-v3 .dn-time-controls{display:grid;gap:10px;margin:10px 0 12px}
+#kalam-timeline-app-v3 .dn-travel{display:flex;gap:8px;align-items:center;font-size:11px;color:var(--ia-muted);font-variant-numeric:tabular-nums}
+#kalam-timeline-app-v3 .dn-travel input{flex:1;min-width:0;accent-color:var(--ia-link);cursor:pointer;min-height:24px}
+#kalam-timeline-app-v3 .dn-time-actions{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+#kalam-timeline-app-v3 .dn-time-actions button{font-size:11px;min-height:34px;padding:6px 9px}
+#kalam-timeline-app-v3 .dn-window{display:flex;align-items:end;gap:8px;flex-wrap:wrap}
+#kalam-timeline-app-v3 .dn-window label{display:grid;gap:3px;font-size:11px;color:var(--ia-muted)}
+#kalam-timeline-app-v3 .dn-window input{width:99px;min-height:34px;padding:6px 8px;font-size:12px;font-variant-numeric:tabular-nums}
+#kalam-timeline-app-v3 .dn-window button{min-height:34px;padding:6px 9px;font-size:11px}
+#kalam-timeline-app-v3 .dn-period-caption{font-size:12px;color:var(--ia-muted);padding-bottom:6px}
+#kalam-timeline-app-v3 .dn-navigational{display:flex;gap:8px;flex-wrap:wrap;margin:5px 0}
+#kalam-timeline-app-v3 .dn-navigational button{font-size:11px;min-height:33px}
+#kalam-timeline-app-v3 .dn-composite{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start;min-width:0}
+#kalam-timeline-app-v3 .dn-map{border:1px solid var(--ia-line);border-radius:8px;background:var(--ia-soft);overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;min-width:0;max-width:100%;min-height:240px;max-height:min(74dvh,830px);touch-action:pan-y}
+#kalam-timeline-app-v3 .dn-map svg{display:block;max-width:none;max-height:none}
+#kalam-timeline-app-v3 .dn-summary-map{max-height:min(74dvh,850px)}
+#kalam-timeline-app-v3 .dn-detail{width:min(330px,31vw);min-width:260px;max-height:min(74dvh,830px);overflow-y:auto;border:1px solid var(--ia-line);border-radius:8px;background:var(--ia-panel);padding:12px;font-size:12px;line-height:1.55}
+#kalam-timeline-app-v3 .dn-detail[hidden]{display:none!important}
+#kalam-timeline-app-v3 .dn-detail-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+#kalam-timeline-app-v3 .dn-detail-head button{padding:2px 8px;min-height:30px;font-size:17px}
+#kalam-timeline-app-v3 .dn-detail h3{margin:9px 0;font-size:18px;line-height:1.5}
+#kalam-timeline-app-v3 .dn-detail p{font-size:12px;line-height:1.55;overflow-wrap:anywhere;margin:8px 0}
+#kalam-timeline-app-v3 .dn-detail dl{display:grid;grid-template-columns:95px minmax(0,1fr);gap:4px 8px;margin:10px 0}
+#kalam-timeline-app-v3 .dn-detail dt{color:var(--ia-muted)}
+#kalam-timeline-app-v3 .dn-detail dd{margin:0;overflow-wrap:anywhere}
+#kalam-timeline-app-v3 .dn-detail .dn-caveat{border-top:1px solid var(--ia-line);border-left:0;padding:7px 0}
+#kalam-timeline-app-v3 .dn-legend{display:flex;flex-wrap:wrap;gap:8px 15px;font-size:10px;color:var(--ia-muted);margin:9px 0}
+#kalam-timeline-app-v3 .dn-brief,#kalam-timeline-app-v3 .dn-source-note{color:var(--ia-muted);font-size:11px;line-height:1.65;margin:8px 0}
+#kalam-timeline-app-v3 .dn-lane-background{fill:light-dark(#f7f8f4,#1e292f);stroke:var(--ia-line);stroke-opacity:.55;stroke-width:.7}
+#kalam-timeline-app-v3 .dn-lane-name{fill:var(--ia-fg);font-size:12px;font-weight:680;cursor:pointer}
+#kalam-timeline-app-v3 [data-dn-lane],#kalam-timeline-app-v3 [data-dn-work],#kalam-timeline-app-v3 [data-dn-scholar],#kalam-timeline-app-v3 [data-dn-cluster],#kalam-timeline-app-v3 [data-dn-undated],#kalam-timeline-app-v3 [data-dn-edge]{cursor:pointer}
+#kalam-timeline-app-v3 [role="button"]:focus-visible{outline:3px solid var(--ia-link);outline-offset:2px}
+#kalam-timeline-app-v3 .dn-work-rect{fill:var(--ia-panel);stroke:var(--ia-line);stroke-width:1.3;filter:drop-shadow(0 1px 1px #0002)}
+#kalam-timeline-app-v3 [data-dn-work]:hover .dn-work-rect,#kalam-timeline-app-v3 .dn-picked .dn-work-rect{stroke:var(--ia-link);stroke-width:3;fill:var(--ia-soft)}
+#kalam-timeline-app-v3 .dn-scholar rect{fill:light-dark(#f2e6d5,#3c3124);stroke:#977542;stroke-width:1.7}
+#kalam-timeline-app-v3 .dn-scholar:hover rect{stroke-width:3}
+#kalam-timeline-app-v3 svg [data-dn-work] text,#kalam-timeline-app-v3 svg [data-dn-scholar] text,#kalam-timeline-app-v3 svg [data-dn-cluster] text{pointer-events:none}
+#kalam-timeline-app-v3 .dn-axis-label{fill:var(--ia-muted);font-size:10px;font-weight:650;letter-spacing:.5px}
+#kalam-timeline-app-v3 .dn-undated-chip{fill:var(--ia-panel);stroke:var(--ia-link);stroke-dasharray:4 3}
+#kalam-timeline-app-v3 .dn-undated-label{fill:var(--ia-link);font-size:11px;font-weight:600}
+#kalam-timeline-app-v3 .dn-undated-root{fill:var(--ia-panel);stroke:var(--ia-link);stroke-width:1.5}
+#kalam-timeline-app-v3 .dn-unplaced-root{fill:var(--ia-panel);stroke:var(--ia-link);stroke-width:2}
+#kalam-timeline-app-v3 .dn-unplaced-title{fill:var(--ia-fg);font-size:14px;font-weight:650}
+#kalam-timeline-app-v3 .dn-unplaced-small{fill:var(--ia-muted);font-size:10px}
+#kalam-timeline-app-v3 .dn-catalogue-branch{fill:none;stroke:var(--ia-muted);stroke-dasharray:4 5;stroke-opacity:.32;stroke-width:1.2}
+#kalam-timeline-app-v3 .dn-documented-arrow,#kalam-timeline-app-v3 .dn-verified-relation{fill:none;stroke:#ad7d27;stroke-width:2.7}
+#kalam-timeline-app-v3 .dn-synopsis-lane{stroke:var(--ia-line);stroke-width:3;stroke-dasharray:4 7}
+#kalam-timeline-app-v3 .dn-synopsis-node{fill:var(--ia-panel);stroke:var(--ia-line);stroke-width:1.5}
+#kalam-timeline-app-v3 [data-dn-work]:hover .dn-synopsis-node,#kalam-timeline-app-v3 .dn-selected{stroke:var(--ia-link);stroke-width:3}
+#kalam-timeline-app-v3 .dn-synopsis-head{fill:var(--ia-fg);font-size:13px;font-weight:670}
+#kalam-timeline-app-v3 .dn-synopsis-sub{fill:var(--ia-muted);font-size:10px}
+#kalam-timeline-app-v3 .dn-synopsis-authority-note{fill:var(--ia-muted);font-size:10px}
+#kalam-timeline-app-v3 .dn-pages{display:flex;align-items:center;justify-content:center;gap:8px;margin:12px 0;font-size:11px}
+#kalam-timeline-app-v3 .dn-pages button{font-size:11px;min-height:34px}
+@media(max-width:700px){
+ #kalam-timeline-app-v3 .dn-research{padding:8px}
+ #kalam-timeline-app-v3 .dn-composite{grid-template-columns:minmax(0,1fr)}
+ #kalam-timeline-app-v3 .dn-map{min-height:260px;max-height:min(65dvh,640px)}
+ #kalam-timeline-app-v3 .dn-detail{width:100%;min-width:0;max-height:40dvh}
+ #kalam-timeline-app-v3 .dn-modes button{flex:1 1 130px;padding:6px 8px}
+ #kalam-timeline-app-v3 .dn-time-actions button{font-size:10px;padding:5px 7px}
+ #kalam-timeline-app-v3 .dn-time-controls{gap:6px}
+ #kalam-timeline-app-v3 .dn-tabs{gap:4px}
+ #kalam-timeline-app-v3 .dn-tabs button{font-size:10px;padding:6px 8px}
+ #kalam-timeline-app-v3 .dn-period-caption{width:100%}
+ #kalam-timeline-app-v3 .dn-window input{width:90px}
+}
