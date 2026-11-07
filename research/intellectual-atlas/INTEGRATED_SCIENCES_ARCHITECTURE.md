@@ -102,7 +102,7 @@ Start from one of the existing response edges to Fakhr al-Dīn al-Rāzī:
 
 Maintain the existing compact GNAMMA/Darūrī-style reader, rather than burying the diagram beneath controls.
 
-**Primary navigation:** Timeline | Text families | Questions | Schools | Hadith transmission | Legal comparison | Argument responses. A compact 'Science' multi-filter can hide irrelevant layers without deleting their records.
+**Navigation (compact, Darūrī-aligned):** retain GNAMMA’s existing global five-icon dock. On the atlas screen expose only **Search**, a compact **Science** multi-filter, and a **Lens** selector. Lens choices (Timeline, text family, question, school, report/isnād, legal comparison, argument response) are context-sensitive; place advanced date, evidence and school filters in one collapsible drawer. On phones, use a single bottom sheet for the selected record, not seven always-visible tabs. Hiding a science or layer never deletes records.
 
 **Search paths:**
 - Open a work → its commentary tree, passages, author, dated witnesses, related questions.
