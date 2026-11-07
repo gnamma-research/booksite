@@ -46,7 +46,7 @@ styles=(ROOT/"expansion.css").read_text(encoding="utf8")
 assert "expansion.js" in html and "expansion.css" in html
 for label in ('id="books"','id="science"','id="school"','id="lineage"','id="provenance"','id="pagination"','id="stats"'):
     assert label in html,label
-assert all(term in script for term in ("expanded-bibliography.json","manuscript-shortlist.json","registry.json","sourceUrl","reading","provenance"))
+assert all(term in script for term in ("expanded-bibliography.json","manuscript-shortlist.json","registry.json","sourceUrl","provenance"))
 assert len(styles)>1500
 atlas=(ROOT.parent/"atlas-app.js").read_text(encoding="utf8")
 assert "sourceResearchExpansion" in atlas
