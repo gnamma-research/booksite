@@ -452,6 +452,7 @@
       if(action==='close-explore'){closeExplore();return}
       if(action==='toggle-advanced'){const d=q('.ia-secondary-controls');if(d){d.open=!d.open;q('[data-action="toggle-advanced"]')?.setAttribute('aria-expanded',String(d.open))}return}
       if(action==='search-existing'){closeExplore();q('#ia-search-v3')?.focus();return}
+      if(action==='open-about'){closeExplore();const d=q('.gn-atlas-introduction');if(d){d.open=true;d.scrollIntoView({block:'start',behavior:'smooth'})}return}
       if(action==='show-all-mapped'){closeExplore();state.view='timeline';state.selected=null;state.detailType=null;state.detailId=null;state.textFamily='';state.familyCriticalOnly=false;state.responseRoute='';state.q='';state.regionNetwork='';state.families=new Set(Object.keys(families));state.rels=new Set(Object.keys(rels));render();setHash();return}
       if(action==='razi-responses'){chooseRaziResponses();return}if(action==='clear-razi-responses'){chooseRaziResponses(false);return}if(action==='show-razi-responses'){state.view='relations';render();setHash();return}if(action==='razi-timeline'){state.view='timeline';render();setHash();return}const span=state.to-state.from,mid=(state.from+state.to)/2;
       if(action==='clear-text-family'){chooseTextFamily('');return}
@@ -603,7 +604,7 @@
         html+=plannedList('Arabic language sciences',pair[0],pair[1]);
       }
       if(activeScience!=='all')html+='<p class="ia-explore-note">Selecting a research discipline never invents a mapped collection: only imported, source-audited works can open a network.</p>';
-      html+='<button type="button" data-action="show-all-mapped">Return to the mapped atlas</button>';
+      html+='<div class="ia-explore-footer"><button type="button" data-action="show-all-mapped">Return to the mapped atlas</button> <button type="button" data-action="open-about">Research notes &amp; downloads</button> <a href="../../texts/">Published GNAMMA texts</a></div>';
       body.innerHTML=html;
     }
     root.addEventListener('click',event=>{if(suppressNextClick){const onChart=!!event.target.closest('[data-chart]');suppressNextClick=false;if(onChart){event.preventDefault();return}}const el=event.target.closest('button,a');if(!el||!root.contains(el))return;
