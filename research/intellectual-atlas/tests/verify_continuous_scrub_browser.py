@@ -137,9 +137,18 @@ async def exercise(engine,width,height,mobile=False):
     assert abs(finish['from']-seq[-1]['from'])<.25,('Lower diagram jumped on release',finish)
     # The explicit earlier/later buttons must not look broken in a full range.
     await page.locator('[data-action="whole-atlas"]').click()
-    await page.locator('[data-action="pan-forward"]').click()
+    # Compact phones intentionally hide the redundant pan-forward button.
+    # Test that visible navigation controls still offer an equivalent seek.
+    if await page.locator('[data-action="pan-forward"]').is_visible():
+        await page.locator('[data-action="pan-forward"]').click()
+    else:
+        rail=page.locator('[data-history-rail]')
+        box=await rail.bounding_box()
+        tx=box['x']+box['width']*.78;ty=box['y']+box['height']/2
+        if mobile: await page.touchscreen.tap(tx,ty)
+        else: await page.mouse.click(tx,ty)
     moved=await snapshot(page)
-    assert moved['to']-moved['from']<710 and moved['from']>-600,('Later from Whole should focus+move',moved)
+    assert moved['to']-moved['from']<710 and moved['from']>-600,('Navigating from Whole should focus+move',moved)
     await page.locator('[data-action="whole-atlas"]').click()
     report['whole_seek_year']=round((sought['from']+sought['to'])/2,1)
     for left,right,id,kind,stages in [
