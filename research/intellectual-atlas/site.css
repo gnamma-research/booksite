@@ -217,3 +217,14 @@ body #kalam-timeline-app-v3 .ia-filter-empty button{font-size:12px;min-height:36
 #kalam-timeline-app-v3.ia-from-reader .gn-atlas-introduction{display:none!important}
 
 .ia-reader-return{position:sticky;top:0;z-index:50;background:var(--ia-panel)}.ia-from-reader .ia-layout{scroll-margin-top:75px}
+
+/* Evidenced directed replies to Fakhr al-Dīn al-Rāzī (not a textual family). */
+body #kalam-timeline-app-v3 .ia-quick-controls .ia-razi-shortcut{font-size:12px;min-height:36px;white-space:nowrap;align-self:center}
+body #kalam-timeline-app-v3 .ia-chart .ia-relation.ia-route-response{stroke-width:2.7;opacity:1}
+body #kalam-timeline-app-v3 .ia-chart .ia-relation.ia-route-context{stroke:var(--ia-muted);stroke-dasharray:4 5;stroke-width:1.2;opacity:.55}
+body #kalam-timeline-app-v3 .ia-response-register{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:12px;margin:12px 0}
+body #kalam-timeline-app-v3 .ia-response-card{border:1px solid var(--ia-line);border-radius:9px;background:var(--ia-panel);padding:14px;display:grid;align-content:start;gap:10px;min-width:0}
+body #kalam-timeline-app-v3 .ia-response-card h3{font-size:14px;font-weight:650}
+body #kalam-timeline-app-v3 .ia-response-card button[data-work]{border:0;background:none;min-height:auto;padding:0;color:var(--ia-link);text-align:left;text-decoration:underline;text-underline-offset:2px}
+body #kalam-timeline-app-v3 .ia-response-card .ia-actions{align-items:center;flex-wrap:wrap}
+@media(max-width:700px){body #kalam-timeline-app-v3 .ia-quick-controls .ia-razi-shortcut{justify-self:start;min-height:32px;padding:5px 11px}body #kalam-timeline-app-v3 .ia-response-register{grid-template-columns:minmax(0,1fr)}}
