@@ -1,0 +1,97 @@
+name: GNAMMA integrated full bibliographic map QA
+on:
+  push:
+    branches: [feature/integrated-source-bibliography-map-20261107]
+    paths:
+      - 'research/intellectual-atlas/**'
+      - '.github/workflows/gnamma-full-bibliographic-map-ci.yml'
+  pull_request:
+    branches: [master]
+    paths:
+      - 'research/intellectual-atlas/**'
+      - '.github/workflows/gnamma-full-bibliographic-map-ci.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Verify full cited public bibliography and original research atlas
+        shell: bash
+        run: |
+          node --check research/intellectual-atlas/corpora/bibliography-map.js
+          node --check research/intellectual-atlas/atlas-app.js
+          python research/intellectual-atlas/corpora/verify.py
+          python research/intellectual-atlas/corpora/verify_expansion.py
+          python research/intellectual-atlas/build.py
+          git diff --exit-code -- research/intellectual-atlas/index.html research/intellectual-atlas/publication.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          b=Path('research/intellectual-atlas/corpora')
+          m=json.loads((b/'manuscript-full.json').read_text(encoding='utf8'))
+          o=json.loads((b/'expanded-bibliography.json').read_text(encoding='utf8'))
+          source=json.loads((b/'registry.json').read_text(encoding='utf8'))
+          assert m['statistics']['distinct_catalogue_ids']==4157
+          assert m['statistics']['public_category_rows']==4157
+          assert m['statistics']['by_genre']['fiqh']==2394
+          assert m['statistics']['by_genre']['usul']==501
+          assert m['statistics']['by_genre']['nahw']==892
+          assert m['statistics']['by_genre']['sarf']==109
+          assert m['statistics']['by_genre']['balagha']==261
+          assert len(o['works'])>=1800 and len(source['books'])==30
+          assert len({r['id'] for r in m['works']})==len(m['works'])
+          assert all(x['catalogue_url'].startswith('https://app.alreq.com/ar/AuthoredBooks/') for x in m['works'])
+          assert all(x['dating_status'].startswith('undated') for x in m['works'])
+          assert all(not x['text_acquired'] for x in m['works'])
+          h=Path('research/intellectual-atlas/index.html').read_text()
+          assert 'bibliography-map.js' in h and 'full-bibliographic-map' in h
+          assert 'GNAtlasBibliography.render' in Path('research/intellectual-atlas/atlas-app.js').read_text()
+          print('PASS integrated bibliography data, citations and atlas invariant')
+          PY
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {engine: chromium, width: 1440, height: 900}
+          - {engine: chromium, width: 390, height: 844}
+          - {engine: chromium, width: 844, height: 390}
+          - {engine: webkit, width: 390, height: 844}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Install Playwright
+        run: |
+          python -m pip install -q playwright==1.58.0
+          python -m playwright install --with-deps ${{ matrix.engine }}
+      - name: Test all work-cluster and source-citation interactions in the actual GNAMMA map
+        shell: bash
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 >/tmp/gnbibmap-server.log 2>&1 &
+          server=$!
+          trap 'kill $server || true' EXIT
+          for i in {1..60}; do
+            curl --silent --fail http://127.0.0.1:8123/research/intellectual-atlas/ >/dev/null && break
+            sleep .25
+          done
+          python research/intellectual-atlas/tests/verify_full_bibliography_map_browser.py --browser ${{ matrix.engine }} --width ${{ matrix.width }} --height ${{ matrix.height }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gnbibmap-${{ matrix.engine }}-${{ matrix.width }}x${{ matrix.height }}
+          path: |
+            /tmp/gnamma-full-bibmap-qa/*.json
+            /tmp/gnamma-full-bibmap-qa/*.png
+            /tmp/gnbibmap-server.log
+          if-no-files-found: ignore
