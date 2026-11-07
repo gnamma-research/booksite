@@ -7,8 +7,19 @@ from pathlib import Path
 import hashlib
 import json
 import re
+import subprocess
+import sys
 
 ROOT = Path(__file__).resolve().parent
+# Corpus-level evidence and byte integrity are validated independently of
+# the historical atlas. A separate OpenITI version is NOT a new atlas node.
+corpus_registry_file = ROOT/'corpora'/'registry.json'
+corpus_registry = json.loads(corpus_registry_file.read_text(encoding='utf-8'))
+subprocess.run([sys.executable, str(ROOT/'corpora'/'verify.py')],
+               check=True, capture_output=True, text=True)
+assert len(corpus_registry['books']) == 30
+assert len(corpus_registry.get('relationships', [])) == 5
+assert sum(bool(b.get('local_text')) for b in corpus_registry['books']) == 5
 data = json.loads((ROOT/'downloads/intellectual-atlas-data.json').read_text(encoding='utf-8'))
 node_ids = {n['id'] for n in data['nodes']}
 edge_ids = {e['id'] for e in data['edges']}
@@ -100,8 +111,8 @@ manifest = {
     'title': 'Texts in Time · Islamic Intellectual Atlas',
     'revision': 'tajrid-critical-links-8-2026-10-31',
     'status': 'working research',
-    'ui_revision': 'unified-explore-and-text-network-2026-11-07',
-    'mobile_interface_note': 'Chart-first Explore bottom sheet; philosophy, kalam and logic together; fiqh madhhab and hadith/tafsir/tasawwuf/Arabic-language scaffolds; interactive source-linked text networks.',
+    'ui_revision': 'unified-explore-with-source-attested-corpora-2026-11-07',
+    'mobile_interface_note': 'Chart-first Explore sheet for philosophy/kalām/logic, fiqh/uṣūl, hadith, tafsīr, taṣawwuf, grammar and balāgha; linked 30-book OpenITI source library with five local byte-matched texts and 25 pinned on-demand sources.',
     'whole_range_note': 'Drag the six-dot grip from Whole atlas to restore a movable focus window, or tap another time on the overview to seek.',
     'date_marker_note': 'Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.',
     'entries': len(data['nodes']),
@@ -112,8 +123,22 @@ manifest = {
     'neoplatonic_new_entries': 44,
     'neoplatonic_new_relationships': 36,
     'scholarly_networks': len(data['history']['networks']),
-    'classification_layers': ['intellectual tradition','textual family','regional/historical network','browse discipline (UI only)'],
+    'classification_layers': ['intellectual tradition','textual family','regional/historical network','browse discipline','separate source-text witness catalogue'],
     'textual_family_routes': len(families),
+    'source_corpus': {
+        'url': 'corpora/',
+        'index': 'corpora/registry.json',
+        'verification_register': 'corpora/CORPUS_VERIFICATION.md',
+        'source_repository': corpus_registry['source_repository'],
+        'pinned_commit': corpus_registry['source_commit'],
+        'digital_versions': len(corpus_registry['books']),
+        'mirrored_byte_identical': sum(bool(b.get('local_text')) for b in corpus_registry['books']),
+        'on_demand_remote_versions': sum(not b.get('local_text') for b in corpus_registry['books']),
+        'bibliography_evidenced_work_relations': len(corpus_registry['relationships']),
+        'print_manuscript_collations_claimed': 0,
+        'complete_corpora_claimed': False,
+        'license': corpus_registry['license'],
+    },
     'textual_family_note': 'Book-centred, overlapping routes with stable shared work IDs; Muḥaṣṣal and its commentaries are a distinct route, while Rāzī’s Sharḥ al-Ishārāt remains within the Ishārāt family.',
     'tahdhib_added_entries': 26,
     'avicennian_extension_entries': 11,
@@ -126,9 +151,9 @@ manifest = {
     'individual_reign_rows': 0,
     'pdf_pages': {'illustrated_overview_legacy': 15, 'illustrated_reference_legacy': 204,
                   'historical_revision7_register': 84, 'focused_tahdhib_supplement': 9},
-    'pdf_note': ('The online map and canonical JSON include the 7 November 2026 Muḥaṣṣal textual-family update. '
-                 'The revision 8 offline ZIP predates this family update; the revision 7 PDF/ZIP and earlier illustrated PDFs are historical snapshots. '
-                 'Offline and PDF contents must not be represented as synchronized with the latest text-family options.'),
+    'pdf_note': ('The live web atlas includes the November 2026 Explore and 30-version source-library integration. '
+                 'The revision 8 offline ZIP and earlier PDFs were issued before these updates and contain no new corpus source reader. '
+                 'The 30 digital versions are not claimed as independently collated critical editions.'),
     'download_sha256': downloads,
 }
 (ROOT/'publication.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')
