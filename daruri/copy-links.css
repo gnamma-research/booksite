@@ -1,0 +1,194 @@
+/* Gnamma Darūrī compact Copy, paragraph links and research export. */
+.gn-copy-wrapper{display:inline-flex;align-items:stretch;gap:0;position:relative;min-width:0}
+.gn-copy-wrapper #readerCopyAction{border-top-right-radius:0!important;border-bottom-right-radius:0!important;min-width:42px}
+.gn-copy-chevron{color:var(--text-soft,var(--muted,#65615b));background:transparent;border:0;border-left:1px solid var(--border,var(--line,#ddd));padding:0 9px;min-width:44px;min-height:44px;cursor:pointer;border-radius:0 7px 7px 0;font:600 20px/1 system-ui;display:inline-flex;justify-content:center;align-items:center}
+.gn-copy-wrapper :is(button:hover,button:focus-visible){background:var(--accent-soft,#f3eee6);color:var(--text,#2f3430)}
+.gn-copy-wrapper :is(button:focus-visible){outline:2px solid var(--accent,#9b6648);outline-offset:2px}
+.gn-copy-menu{position:fixed;z-index:700;width:236px;max-width:calc(100vw - 16px);box-sizing:border-box;border:1px solid var(--border,var(--line,#ddd));background:var(--surface,#fffdf8);color:var(--text,#232c26);box-shadow:0 10px 35px #0003;border-radius:11px;padding:5px;max-height:min(78dvh,500px);overflow:auto;font-family:var(--sans,system-ui,sans-serif)}
+.gn-copy-menu[hidden],.gn-copy-backdrop[hidden]{display:none!important}
+.gn-copy-menu-head{display:flex;align-items:center;justify-content:space-between;padding:7px 11px;color:var(--text-soft,var(--muted,#65615b));font:600 11px/1.3 var(--sans,system-ui);letter-spacing:.02em}
+.gn-copy-menu-head small{font-weight:400;color:var(--muted,#7f807a);font-size:10px}
+.gn-copy-menu button{display:flex;gap:9px;align-items:center;width:100%;padding:0 10px;min-height:42px;text-align:left;border:0;border-radius:7px;background:transparent;color:inherit;font:500 12.5px/1.3 var(--sans,system-ui);cursor:pointer}
+.gn-copy-menu button:hover,.gn-copy-menu button:focus-visible{background:var(--accent-soft,#eee7dd);outline:none}
+/* Keep each menu icon within the same neutral, compact 22px slot.
+   Text uses letters rather than a third almost-identical document glyph. */
+.gn-copy-mini{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;flex:0 0 22px;width:22px;height:22px;font-size:17px;line-height:1;color:var(--text-soft,var(--muted,#7c7a71));text-align:center}
+.gn-copy-symbol{width:21px;height:21px;display:block;flex:none;stroke:currentColor;overflow:visible}
+.gn-copy-type-mark{display:inline-block;font:700 16px/1 Georgia,serif;letter-spacing:-.065em;white-space:nowrap}
+.gn-copy-arrow{margin-left:auto;color:var(--muted,#777);font-size:16px}
+.gn-copy-rule{height:1px;background:var(--border,var(--line,#ddd));margin:5px 1px}
+/* Source-number markers remain visible but are never copy-link controls.
+   In Focus modes the § + ¶ metadata appears together above each passage. */
+#reader .passage-grid{position:relative}
+#reader .gn-paragraph-number{
+ position:absolute;z-index:1;top:6px;left:-42px;
+ min-width:35px;padding:3px 2px;border:0;background:transparent;
+ color:var(--text-soft,var(--muted,#65615b));
+ font:600 12px/1.4 var(--sans,system-ui,sans-serif);
+ text-align:center;font-variant-numeric:tabular-nums;
+ opacity:.88;cursor:default;pointer-events:none;
+ -webkit-user-select:none;user-select:none
+}
+body:is(.focus-level-1,.focus-level-2,.focus-level-3) #reader .gn-paragraph-number{display:none!important}
+#reader .gn-copy-target{outline:2px solid var(--accent,#9c6f4f)!important;outline-offset:7px;background:var(--accent-soft,#f2e9df);transition:background 1.5s}
+@media(max-width:850px){#reader .gn-paragraph-number{left:-33px;min-width:27px;font-size:11px}}
+@media(max-width:600px){#reader .gn-paragraph-number{left:-31px;top:5px;min-width:27px;font-size:11px}}
+.gn-copy-backdrop{position:fixed;inset:0;z-index:720;background:#101b1780;display:flex;justify-content:center;align-items:center;padding:12px;box-sizing:border-box;font-family:var(--sans,system-ui,sans-serif)}
+body.gn-copy-sheet-open{overflow:hidden!important}
+.gn-copy-sheet{width:min(460px,100%);max-height:min(88dvh,760px);display:flex;flex-direction:column;min-height:0;border-radius:15px;overflow:hidden;border:1px solid var(--border,var(--line,#ddd));background:var(--surface,#fffdf8);color:var(--text,#30372f);box-shadow:0 25px 90px #0004}
+.gn-copy-sheet-header{padding:14px 16px 12px;border-bottom:1px solid var(--border,var(--line,#ddd));display:flex;align-items:center;justify-content:space-between;gap:10px}
+.gn-copy-sheet-title{font:600 17px/1.2 var(--serif,Georgia,serif)}
+.gn-copy-dismiss{width:40px;height:40px;border:0;background:transparent;color:inherit;font:23px/1 sans-serif;cursor:pointer;border-radius:7px}
+.gn-copy-dismiss:hover{background:var(--accent-soft,#ede6dd)}
+.gn-copy-sheet-body{padding:12px 16px 16px;overflow-y:auto;overscroll-behavior:contain;min-height:0}
+.gn-copy-group{margin:0 0 14px}
+.gn-copy-label{font:600 11.5px/1.5 var(--sans,system-ui);color:var(--text-soft,var(--muted,#777));margin:0 0 6px}
+.gn-copy-pills{display:flex;flex-wrap:wrap;gap:6px}
+.gn-copy-choice{position:relative;display:flex;min-height:40px;align-items:center;cursor:pointer}
+.gn-copy-choice input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.gn-copy-choice span{display:flex;align-items:center;justify-content:center;border:1px solid var(--border,var(--line,#ddd));border-radius:7px;background:var(--surface-alt,var(--surface,#fff));padding:9px 11px;font:500 12px/1.2 var(--sans,system-ui);color:var(--text,#222)}
+.gn-copy-choice input:checked+span{background:var(--accent-soft,#efe6dd);border-color:var(--accent,#946344);font-weight:700}
+.gn-copy-choice input:focus-visible+span{outline:2px solid var(--accent,#946344);outline-offset:2px}
+.gn-copy-field{display:flex;flex-direction:column;gap:5px;font-size:11px;color:var(--text-soft,var(--muted,#777));margin-top:8px;min-width:0}
+.gn-copy-field select{width:100%;min-width:0;border-radius:7px;background:var(--surface-alt,#fff);color:var(--text,#222);border:1px solid var(--border,#ccc);font:12px/1.3 var(--sans,system-ui);min-height:43px;padding:8px}
+.gn-copy-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9px}
+.gn-copy-check{display:flex;align-items:flex-start;gap:10px;min-height:32px;font:12px/1.48 var(--sans,system-ui);cursor:pointer}
+.gn-copy-check input{accent-color:var(--accent,#9f704f);margin:3px 0 0;flex:none;width:17px;height:17px}
+.gn-copy-more{margin:8px 0;border:1px solid var(--border,var(--line,#ddd));border-radius:8px}
+.gn-copy-more>summary{cursor:pointer;list-style:none;padding:11px 12px;font:550 12px/1.2 var(--sans,system-ui)}
+.gn-copy-more>summary::-webkit-details-marker{display:none}
+.gn-copy-more>summary span{float:right}
+.gn-copy-extras{padding:4px 13px 11px;display:grid;gap:5px}
+.gn-copy-hint{font:11.5px/1.5 var(--sans,system-ui);color:var(--text-soft,var(--muted,#777));margin:9px 1px}
+.gn-copy-preview{border:1px solid var(--border,var(--line,#ddd));border-radius:8px;background:var(--surface-alt,#f7f4ef);margin-top:11px;padding:10px;word-break:break-word}
+.gn-copy-preview output{display:block;font:11px/1.5 var(--sans,system-ui);word-break:break-word;color:var(--text,#262c26)}
+.gn-copy-preview textarea{width:100%;background:var(--surface,#fff);color:inherit;box-sizing:border-box;border:1px solid var(--border,#ddd);border-radius:5px;font-size:12px}
+.gn-copy-error{color:var(--text-soft,var(--muted,#777));font:11px/1.55 var(--sans,system-ui);margin-top:8px}
+.gn-copy-sheet-footer{position:relative;z-index:2;flex-shrink:0;background:var(--surface,#fffdf8);padding:10px 15px 12px;border-top:1px solid var(--border,var(--line,#ddd));display:flex;justify-content:flex-end;gap:9px}
+.gn-copy-sheet-footer button{border-radius:7px;min-height:43px;padding:9px 16px;font:600 12.5px/1.3 var(--sans,system-ui);cursor:pointer}
+.gn-copy-cancel{border:1px solid var(--border,#ccc);color:inherit;background:transparent}
+#gn-copy-submit{border:1px solid var(--accent,#855638);color:var(--surface,#fff);background:var(--accent,#855638)}
+#gn-copy-submit:disabled{opacity:.48;cursor:wait}
+.gn-copy-toast{position:fixed;bottom:calc(75px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);z-index:800;max-width:calc(100vw - 24px);padding:9px 14px;background:var(--text,#253127);color:var(--surface,#fff);box-shadow:0 7px 20px #0003;border-radius:8px;font:12px/1.45 var(--sans,system-ui)}
+@media(max-width:600px){.gn-copy-backdrop{align-items:flex-end;padding:0}.gn-copy-sheet{width:100%;max-height:89dvh;border-radius:14px 14px 0 0;padding-bottom:env(safe-area-inset-bottom)}.gn-copy-sheet-body{padding:10px 14px 12px}.gn-copy-sheet-header{padding:11px 14px 8px}.gn-copy-menu{width:229px}.gn-copy-sheet-title{font-size:16px}}
+@media(prefers-reduced-motion:reduce){#reader .gn-copy-target{transition:none}}
+@media print{.gn-copy-wrapper .gn-copy-chevron,.gn-copy-menu,.gn-copy-backdrop,.gn-copy-toast,#reader .gn-paragraph-number{display:none!important}}
+/* Preserve the entire toolbar on the narrowest iPhones without expanding the
+   document viewport; the controls scroll horizontally inside their own rail. */
+@media(max-width:420px){
+ #readingControls .reading-controls-inner{max-width:100vw!important;box-sizing:border-box;overflow-x:auto;overflow-y:hidden;justify-content:flex-start!important;padding-inline:4px!important;gap:2px!important;scrollbar-width:none;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+ #readingControls .reading-controls-inner::-webkit-scrollbar{display:none}
+}
+
+/* 24 Oct 2026: Copy and its arrow are one split control. Do not let legacy
+   toolbar rules turn the arrow into an independent floating button. */
+@media screen{
+ body.reader-enhanced #readingControls .gn-copy-wrapper{
+   box-sizing:border-box!important;display:inline-flex!important;align-items:stretch!important;
+   gap:0!important;flex:0 0 auto!important;position:relative!important;
+   margin:0!important;padding:0!important;
+   border:1px solid var(--border)!important;border-radius:8px!important;
+   background:var(--surface)!important;overflow:hidden!important
+ }
+ body.reader-enhanced #readingControls .gn-copy-wrapper #readerCopyAction{
+   box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;
+   justify-content:center!important;flex:0 0 44px!important;
+   width:44px!important;min-width:44px!important;max-width:44px!important;
+   height:44px!important;min-height:44px!important;max-height:44px!important;
+   margin:0!important;padding:0!important;gap:0!important;
+   border:0!important;border-radius:0!important;background:transparent!important;
+   box-shadow:none!important
+ }
+ body.reader-enhanced #readingControls .gn-copy-wrapper #readerCopyOptions{
+   box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;
+   justify-content:center!important;flex:0 0 28px!important;
+   width:28px!important;min-width:28px!important;max-width:28px!important;
+   height:44px!important;min-height:44px!important;max-height:44px!important;
+   margin:0!important;padding:0!important;gap:0!important;
+   border:0!important;border-left:1px solid var(--border)!important;
+   border-radius:0!important;background:transparent!important;
+   color:var(--text-soft)!important;font:600 18px/1 var(--sans,system-ui)!important;
+   box-shadow:none!important
+ }
+ body.reader-enhanced #readingControls .gn-copy-wrapper #readerCopyOptions span{
+   display:block!important;line-height:1!important;transform:translateY(-2px)!important
+ }
+ body.reader-enhanced #readingControls .gn-copy-wrapper :is(#readerCopyAction,#readerCopyOptions):hover{
+   background:var(--accent-soft)!important;color:var(--text)!important
+ }
+ body.reader-enhanced #readingControls .gn-copy-wrapper :is(#readerCopyAction,#readerCopyOptions):focus-visible{
+   outline:2px solid var(--accent)!important;outline-offset:-2px!important
+ }
+}
+@media screen and (max-width:620px){
+ body.reader-enhanced.reading-active #readingControls .gn-copy-wrapper{
+   order:4!important;flex:0 0 auto!important;
+   align-self:center!important;min-width:0!important;max-width:none!important;
+   height:44px!important;margin:0!important
+ }
+ body.reader-enhanced.reading-active #readingControls .gn-copy-wrapper #readerCopyAction{
+   order:0!important;flex:0 0 var(--gn-scholar-btn,36px)!important;
+   width:var(--gn-scholar-btn,36px)!important;
+   min-width:var(--gn-scholar-btn,36px)!important;
+   max-width:var(--gn-scholar-btn,36px)!important
+ }
+ body.reader-enhanced.reading-active #readingControls .gn-copy-wrapper #readerCopyOptions{
+   order:1!important;flex:0 0 24px!important;width:24px!important;
+   min-width:24px!important;max-width:24px!important;font-size:16px!important
+ }
+}
+
+/* Keep regular-reading paragraph locators INSIDE the mobile viewport.
+   Their old negative left offsets clipped ¶1/¶2 at the screen edge. */
+@media screen and (max-width:850px) {
+ body:not(.focus-mode) #reader .passage-grid .gn-paragraph-number {
+   left:6px!important;right:auto!important;top:5px!important;
+   min-width:27px!important;max-width:42px!important;
+   text-align:left!important;white-space:nowrap!important;
+ }
+}
+@media screen and (max-width:600px) {
+ body:not(.focus-mode) #reader .passage-grid .gn-paragraph-number {
+   left:8px!important;top:5px!important;
+ }
+}
+
+
+/* The split Copy control must count as one bounded flex item within the
+   eight-action 320px Reading rail; its chevron may shrink, never disappear. */
+@media screen and (max-width:620px) {
+ body.reader-enhanced.reading-active:not(.focus-mode) #readingControls:not([hidden]) .gn-copy-wrapper {
+   box-sizing:border-box!important;display:inline-flex!important;
+   flex:0 0 auto!important;order:4!important;align-items:center!important;
+   min-width:0!important;max-width:none!important;
+   width:auto!important;height:44px!important;margin:0!important;padding:0!important;
+ }
+ body.reader-enhanced.reading-active:not(.focus-mode) #readingControls:not([hidden])
+   .gn-copy-wrapper #readerCopyAction {
+   box-sizing:border-box!important;flex:0 0 var(--gn-quiet-action,30px)!important;
+   width:var(--gn-quiet-action,30px)!important;
+   min-width:var(--gn-quiet-action,30px)!important;
+   max-width:var(--gn-quiet-action,30px)!important;
+   height:44px!important;min-height:44px!important;margin:0!important;padding:0!important;
+ }
+ body.reader-enhanced.reading-active:not(.focus-mode) #readingControls:not([hidden])
+   .gn-copy-wrapper #readerCopyOptions {
+   box-sizing:border-box!important;flex:0 0 var(--gn-quiet-copy-chevron,20px)!important;
+   width:var(--gn-quiet-copy-chevron,20px)!important;
+   min-width:var(--gn-quiet-copy-chevron,20px)!important;
+   max-width:var(--gn-quiet-copy-chevron,20px)!important;
+   height:44px!important;min-height:44px!important;margin:0!important;padding:0!important;
+ }
+}
+
+/* Paragraph markers are metadata, not edge-hanging controls: their entire
+   bounding boxes must stay in the regular Reading viewport on 320px phones. */
+@media screen and (max-width:850px) {
+ body.reader-enhanced.reading-active:not(.focus-mode) #reader .passage-grid > .gn-paragraph-number {
+   box-sizing:border-box!important;position:absolute!important;
+   left:10px!important;right:auto!important;top:5px!important;
+   min-width:27px!important;max-width:42px!important;
+   padding:2px 1px!important;text-align:start!important;
+   white-space:nowrap!important;pointer-events:none!important;
+ }
+}

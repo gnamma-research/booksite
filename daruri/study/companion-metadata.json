@@ -1,11 +1,11 @@
 {
   "title": "Al-Ḍarūrī: A three-level study guide",
   "file": "daruri-study-guide.pdf",
-  "editionDate": "2026-10-20",
-  "generatedAt": "2026-10-20T12:13:33.143644+00:00",
+  "editionDate": "2026-10-24",
+  "generatedAt": "2026-10-24T17:59:08.523907+00:00",
   "pageCount": 85,
-  "sizeBytes": 568637,
-  "sha256": "69f8bd820f1f48ce9c1f168986e4ce36532698030992a715936a806fc000dc80",
+  "sizeBytes": 570027,
+  "sha256": "61e16b3a45ef04cdda445b2732e731f69077bd725d4480e68a0a770d9ae3cd78",
   "units": 8,
   "topics": 28,
   "levelsPerTopic": 3,
@@ -22,7 +22,7 @@
   "sourceFiles": [
     {
       "file": "lessons-01-09.json",
-      "sha256": "b97a74bcb7a81ef8ded91f4e467eb0ceb644ca205adb6552b0f7c1cfe46431cf"
+      "sha256": "da2c57562e54829578cb3ad624691a77d6d7867c4003d84224c42154ace261da"
     },
     {
       "file": "lessons-10-18.json",
@@ -35,28 +35,18 @@
   ],
   "editionData": {
     "file": "edition-r3-20261020.js",
-    "sha256": "6f8847115870df04c057d1d90164f6c5585aa7e40317581892c5167de82d353b"
+    "sha256": "4ac48de895422f2c90c0cda2f9019ed760d797561502a2e21d035a48f58e9ba6"
   },
   "verification": {
     "pageCount": 85,
-    "retainedFieldsChecked": 1132,
+    "retainedFieldsChecked": 1136,
     "lessonLinksChecked": 84,
     "distinctExternalLinks": 298,
     "quranFootnotesChecked": 2,
     "quranFootnotePages": {
       "SG-Q001": 57,
       "SG-Q002": 65
-    },
-    "bookmarksChecked": 123,
-    "topicBookmarksChecked": 28,
-    "levelBookmarksChecked": 84,
-    "textBoundsCheckedPages": 85,
-    "textBoundsViolations": 0,
-    "totalLinksChecked": 948,
-    "invalidInternalLinks": 0,
-    "zeroAreaLinks": 0,
-    "originalTextChangedPages": [],
-    "originalLinksMissingPages": []
+    }
   },
   "unitPages": {
     "1": 5,
@@ -101,7 +91,7 @@
   "levelPages": {
     "purpose/basic": 5,
     "purpose/intermediate": 6,
-    "purpose/advanced": 6,
+    "purpose/advanced": 7,
     "ruling/basic": 8,
     "ruling/intermediate": 9,
     "ruling/advanced": 9,
@@ -185,131 +175,7 @@
     "authority/advanced": 79
   },
   "visualQA": {
-    "status": "passed",
-    "method": "All 85 pages compared with the original companion; all original text, original links and bookmarks preserved. The 83 pages without new source notes are pixel-identical at 72 dpi. Poppler renders of the two changed pages were visually inspected at 1500-pixel height.",
-    "pagesInspected": [
-      57,
-      65
-    ],
-    "checks": [
-      "Superscript numbered calls immediately follow each exact Qur’an quotation",
-      "Both source notes appear at the bottom of their quotation page, with a separator above the note and clear space above the running footer",
-      "Original 85-page pagination and all lesson/concordance content retained",
-      "All original links and all 123 bookmarks preserved; four new valid links added",
-      "No clipping, overlapping note/body/footer text, missing glyphs, invalid internal destinations or zero-area links"
-    ],
-    "comparison": {
-      "previousPdfSha256": "47e5b48860a2829f018342d1ed21145c160563d6a41101e33fff310919d22f0b",
-      "pageCount": 85,
-      "renderComparisonDpi": 72,
-      "originalTextDifferences": 0,
-      "renderDifferences": 2,
-      "renderChangedPages": [
-        57,
-        65
-      ],
-      "originalLinksMissing": 0,
-      "bookmarksIdentical": true
-    }
-  },
-  "generatorSha256": "288a3dc52ac101e15194a2ea4c3c8f917aef1277bb95a5ad75d217c536d5965f",
-  "browserData": {
-    "file": "study-guide-data.js",
-    "sha256": "de51a6266194ea61a9b4cc20703155baba18deeec3ca5d68316bf82761ebbde6"
-  },
-  "citationAudit": {
-    "readPages": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
-      21,
-      22,
-      23,
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35,
-      36,
-      37,
-      38,
-      39,
-      40,
-      41,
-      42,
-      43,
-      44,
-      45,
-      46,
-      47,
-      48,
-      49,
-      50,
-      51,
-      52,
-      53,
-      54,
-      55,
-      56,
-      57,
-      58,
-      59,
-      60,
-      61,
-      62,
-      63,
-      64,
-      65,
-      66,
-      67,
-      68,
-      69,
-      70,
-      71,
-      72,
-      73,
-      74,
-      75,
-      76,
-      77,
-      78,
-      79,
-      80,
-      81,
-      82,
-      83,
-      84,
-      85
-    ],
-    "policy": "Direct Qur’an quotations receive numbered page footnotes; hadith references are not added to this companion.",
-    "quranSourcesAdded": 2,
-    "sourcePages": {
-      "SG-Q001": 57,
-      "SG-Q002": 65
-    }
+    "status": "pending",
+    "method": "Render representative pages after building."
   }
 }

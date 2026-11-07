@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f1e8">
+<title>Downloadable editions · Logic, Bidāya, Nihāya · Gnamma</title>
+<link rel="icon" href="../../../assets/gnamma-mark.svg" type="image/svg+xml">
+<style>
+:root{color-scheme:light;--paper:#f5f1e8;--ink:#2e332d;--muted:#6d776e;--line:#d6d8d0;--accent:#315d55}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark;--paper:#1c2520;--ink:#eaece6;--muted:#bac2b9;--line:#3b4c40;--accent:#b5d6c0}}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 Georgia,serif}
+a{color:var(--accent);text-underline-offset:3px}.site-header{border-bottom:1px solid var(--line);display:flex;gap:16px;align-items:center;padding:18px max(20px,calc((100% - 1050px)/2))}
+.brand{font-size:22px;text-decoration:none;letter-spacing:-1px}.back{font:12px Arial,sans-serif;margin-left:auto}
+main{max-width:960px;margin:0 auto;padding:50px 20px 80px}.eyebrow{font:10px Arial,sans-serif;letter-spacing:2px;color:var(--muted)}
+h1{font:normal clamp(32px,5vw,48px)/1.18 Georgia,serif;margin:12px 0 18px}
+.intro{max-width:740px;color:var(--muted);margin:0 0 32px}
+#status{font:12px Arial,sans-serif;color:var(--muted);margin:0 0 28px}
+.book{border-top:1px solid var(--line);padding:26px 0}.book h2{font:normal 26px/1.3 Georgia,serif;margin:0 0 4px}
+.book .details{font:12px/1.6 Arial,sans-serif;color:var(--muted);margin:0 0 16px}
+.files{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.files li{min-width:0;border:1px solid var(--line);border-radius:5px;padding:15px}
+.files strong{display:block;font:600 13px Arial,sans-serif;color:var(--ink);margin-bottom:6px}
+.files a{font:14px Georgia,serif;overflow-wrap:anywhere}
+.files small{display:block;margin-top:9px;color:var(--muted);font:11px Arial,sans-serif}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font:11px/1.6 Arial,sans-serif}
+@media(max-width:650px){main{padding-top:33px}.files{grid-template-columns:1fr}.site-header{padding:15px 18px}}
+</style>
+</head>
+<body>
+<header class="site-header"><a class="brand" href="../../../">gnamma</a><a class="back" href="../">← Return to reader</a></header>
+<main><span class="eyebrow">THE READING ROOM · A4 EDITIONS</span>
+<h1>Downloadable books</h1>
+<p class="intro">The reading, Arabic–English study, and Arabic reference layouts are typeset from the current source text, with selectable text and numbered passage notes. The English in progress is clearly distinguished from the available Arabic in each book.</p>
+<p id="status" role="status" aria-live="polite">Checking published editions…</p>
+<div id="library"></div>
+<footer>The published file manifest records SHA-256 checksums for each PDF and its source text. These are working textual editions, not independently certified critical editions. For the latest on-screen text, return to the reader.</footer>
+</main>
+<script>
+(async function(){
+ const state=document.getElementById('status'),list=document.getElementById('library');
+ const safe=(x)=>String(x==null?'':x);
+ function el(t,c,txt){let n=document.createElement(t);if(c)n.className=c;if(txt!=null)n.textContent=safe(txt);return n;}
+ const modes=['reading','study','reference'];
+ const names={reading:'Reading',study:'Arabic–English study',reference:'Arabic reference'};
+ try{
+   const response=await fetch('./manifest.json',{cache:'no-store'});
+   if(!response.ok)throw Error('unavailable');
+   const manifest=await response.json();
+   const rows=Array.isArray(manifest.files)?manifest.files:[];
+   if(!rows.length)throw Error('empty');
+   for(const book of ['al-Manṭiq','Bidāyat al-Ḥikma','Nihāyat al-Ḥikma']){
+     const all=rows.filter(x=>x.book===book);if(!all.length)continue;
+     const section=el('section','book'),title=el('h2','',book),details=el('p','details',all[0].arabic_sections+' source passages · '+all[0].english_sections+' with working English');
+     const files=el('ul','files');
+     for(const mode of modes){
+       const r=all.find(x=>x.mode===mode);if(!r)continue;
+       if(!/^[a-z0-9-]+-(reading|study|reference)-A4\.pdf$/.test(r.filename))continue;
+       const li=el('li'),heading=el('strong','',names[mode]),a=el('a','', 'Download PDF'),size=el('small','',Math.round(Number(r.bytes)/1024)+' KB · SHA-256 '+String(r.sha256||'').slice(0,12)+'…');
+       a.href='./'+r.filename;a.download=r.filename;li.append(heading,a,size);files.append(li);
+     }
+     section.append(title,details,files);list.append(section);
+   }
+   state.textContent=rows.length+' PDF editions in the verified release manifest.';
+ }catch(error){
+   state.textContent='Typeset PDF releases are not yet available here. You can still use Print / PDF in the reader to make a PDF of the current book.';
+   list.replaceChildren();
+ }
+})();
+</script>
+</body></html>

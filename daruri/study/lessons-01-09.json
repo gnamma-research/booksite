@@ -23,11 +23,19 @@
       },
       {
         "term": "istiqrāʾ",
-        "definition": "Induction: in §4, establishing universal notions by examining early legal opinions case by case."
+        "definition": "Induction: in §4, validating many universal notions through examination of the early legal opinions case by case; this does not say all principles arose inductively."
       },
       {
         "term": "qānūn",
         "definition": "A rule that guides inquiry and helps protect the mind against error."
+      },
+      {
+        "term": "sibār",
+        "definition": "Method of examination or inquiry (§2), named through an analogy with a physical instrument used to probe or measure. The metaphor does not make legal methodology a natural science."
+      },
+      {
+        "term": "mutakallimūn",
+        "definition": "Practitioners of kalām (rational theology). In §7 Ibn Rushd identifies their established way of organizing uṣūl, rather than referring generically to people discussing the subject."
       }
     ],
     "applications": [],
@@ -45,11 +53,11 @@
         ],
         "explanation": [
           "In §1 Ibn Rushd describes a concise reminder drawn from al-Ghazālī’s al-Mustaṣfā. Its brevity does not make it an elementary textbook. The guide therefore begins with the orientation that §8 says a learner needs: the discipline’s purpose, place among the sciences, name and divisions.",
-          "Section 2 distinguishes knowledge directed towards belief, knowledge directed towards action, and knowledge of the rules that guide inquiry. Sections 3–4 explain why later jurists need those rules stated explicitly, even though earlier jurists could exercise the relevant capacity without a separate formal discipline. Section 5 maps four inquiries: rulings, sources, derivation and the jurist."
+          "Section 2 distinguishes knowledge directed towards belief, knowledge directed towards action, and knowledge of the rules that guide inquiry. Sections 3–4 explain why later jurists need those rules stated explicitly, even though earlier jurists could exercise the relevant capacity without a separate formal discipline. Section 5 maps four inquiries: rulings, sources, derivation and the jurist. Importantly, universal practical knowledge remains directed towards action; only the third class supplies rules for investigating correctly."
         ],
         "example": {
           "title": "A ruler for thought",
-          "text": "Section 2 compares rules of inquiry with a compass and straightedge. Knowing a particular prayer ruling resembles possessing an answer; knowing how evidence supports that ruling concerns the method used to reach it."
+          "text": "Section 2 compares rules of inquiry with a compass and straightedge. Knowing a particular prayer ruling resembles possessing an answer; knowing how evidence supports that ruling concerns the method used to reach it. The earlier image of a physical probe explains the term sibār, but its intellectual use is better rendered 'method of examination'."
         },
         "tasks": [
           "Which of the four parts in §5 examines how a ruling is derived?",
@@ -73,7 +81,7 @@
           148
         ],
         "explanation": [
-          "Section 6 identifies the third part as the discipline’s proper inquiry because it supplies methods of derivation; the other parts concern knowledge directed towards action. Yet §7 retains al-Ghazālī’s fourfold arrangement. Distinguish a claim about the most exact classification of a science from a decision about how to organize this book.",
+          "Section 6 identifies the third part as the discipline’s proper inquiry because it supplies methods of derivation; the other parts concern knowledge directed towards action. Yet §7 retains al-Ghazālī’s fourfold arrangement. Distinguish a claim about the most exact classification of a science from a decision about how to organize this book. The mutakallimūn named in §7 are practitioners of kalām (theology), whose inherited disciplinary arrangement Ibn Rushd retains; they are not simply people speaking about uṣūl.",
           "Ibn Rushd also distinguishes assuming widely accepted principles from explaining how derivation proceeds under different accepted positions. He prefers the latter as more useful to a general method. Section 148 returns to the distinctive inquiry: understanding prophetic meaning through wording and indications. Section 9’s omission of the logical introduction concerns disciplinary order."
         ],
         "example": {
@@ -101,7 +109,7 @@
           148
         ],
         "explanation": [
-          "Read §§2–4 as a connected argument. The classification of knowledge supplies a place for rules of inquiry; historical changes explain the need to articulate them; early legal opinions provide material for establishing some universal notions. The wording of §4 says many such notions, not every principle without exception.",
+          "Read §§2–4 as a connected argument. The classification of knowledge supplies a place for rules of inquiry; historical changes explain the need to articulate them; early legal opinions supply material for validating many universal notions. The wording of §4 says many such notions, not every principle without exception.",
           "A research comparison with logical works or al-Mustaṣfā must test this particular combination of claims. The compass analogy alone does not establish identity with demonstrative syllogistic, and omitting a logical prolegomenon in §9 does not establish hostility to logic. Distinguish the text’s assertions from a proposed reconstruction of its intellectual background."
         ],
         "example": {
@@ -113,7 +121,7 @@
           "Design one source comparison that could test whether §6’s comparative method is already present in al-Mustaṣfā."
         ],
         "feedback": [
-          "A sound reconstruction identifies the objection, the capacity/study distinction, and induction from particular opinions. It must not convert a historical explanation into proof that every inherited opinion is correct.",
+          "A sound reconstruction identifies the objection, the capacity/study distinction, and induction from particular opinions. It must not convert a historical explanation into proof that every inherited opinion is correct. The Arabic verb in §4 points to validating these notions through induction rather than necessarily inventing every one from scratch.",
           "Research criteria: locate an exact parallel, compare the proposed treatment of rival principles, and record agreement and divergence. A thematic resemblance or shared vocabulary is a lead, not a completed demonstration of dependence."
         ]
       }

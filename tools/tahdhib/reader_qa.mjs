@@ -1,0 +1,114 @@
+import { chromium } from 'playwright';
+
+const base = process.env.TAHDHIB_QA_BASE || 'http://127.0.0.1:8765/';
+const browser = await chromium.launch({ headless: true });
+const failures = [];
+const assert = (condition, message) => { if (!condition) throw Error(message); };
+async function check(kind, viewport) {
+  const ctx = await browser.newContext({ viewport, reducedMotion: 'reduce' });
+  await ctx.addInitScript(() => {
+    // This legacy citation/apparatus regression tests scholarly Study mode.
+    // The new independent experience QA tests the default flowing layout.
+    const kind = location.pathname.includes('tahdhib-al-kalam') ? 'kalam' : 'logic';
+    try { localStorage.setItem('gnamma-tahdhib-experience-v1-'+kind, JSON.stringify({mode:'study'})); } catch {}
+  });
+  const page = await ctx.newPage();
+  const errors = [];
+  page.on('pageerror', error => errors.push(String(error)));
+  const route = kind === 'kalam' ?
+    'texts/al-taftazani/tahdhib-al-kalam/edition/?legacy-controls=1' :
+    'texts/al-taftazani/tahdhib-al-mantiq/edition/?legacy-controls=1';
+  await page.goto(new URL(route, base).href, { waitUntil: 'networkidle' });
+  assert(await page.locator('#passages .clause').count() === (kind === 'kalam' ? 6 : 1) ||
+    await page.locator('#passages .clause').count() > 0, kind + ': content missing');
+  assert(await page.locator('[data-view="both"][aria-pressed="true"]').count() === 1, 'bad initial parallel mode');
+  await page.locator('[data-view="ar"]').evaluate(el=>el.click());
+  assert(await page.locator('#passages.view-ar').count() === 1, 'Arabic view not selected');
+  await page.locator('[data-view="en"]').evaluate(el=>el.click());
+  assert(await page.locator('#passages.view-en').count() === 1, 'English view not selected');
+  await page.locator('[data-view="both"]').evaluate(el=>el.click());
+  await page.locator('#theme').evaluate(el=>el.click());
+  assert(await page.locator('html[data-theme="dark"]').count() === 1, 'dark mode failed');
+  await page.locator('#theme').evaluate(el=>el.click());
+  assert(await page.locator('html[data-theme="sepia"]').count() === 1, 'sepia failed');
+  await page.locator('#larger').evaluate(el=>el.click());
+  assert(await page.evaluate(() => Number(getComputedStyle(document.documentElement).getPropertyValue('--reader-scale'))) > 1, 'font scale failed');
+  await page.locator('#focus').evaluate(el=>el.click());
+  assert(await page.locator('body[data-focus="1"]').count() === 1, 'focus 1 failed');
+  await page.locator('#focus').evaluate(el=>el.click());
+  assert(await page.locator('body[data-focus="2"]').count() === 1, 'focus 2 failed');
+  await page.locator('#focus').evaluate(el=>el.click());
+  assert(await page.locator('body[data-focus="3"]').count() === 1, 'focus 3 failed');
+  assert(await page.locator('#passages .clause').count() === (kind === 'kalam' ? 1044 : 19), 'continuous view coverage mismatch');
+  await page.locator('#focus').evaluate(el=>el.click());
+  assert(await page.locator('body[data-focus="0"]').count() === 1, 'normal focus restoration failed');
+  const firstId = kind === 'kalam' ? 'u-KAL-015-01' : 'u-L-01';
+  assert(await page.locator('#' + firstId).count() === 1, 'first cited clause missing');
+  await page.locator('#' + firstId + ' .icon-action').first().evaluate(el=>el.click());
+  assert(await page.locator('#' + firstId + ' .icon-action[aria-pressed="true"]').count() === 1, 'bookmark failed');
+  await page.locator('#export').evaluate(el=>el.click());
+  assert(await page.locator('#export-modal:not([hidden])').count() === 1, 'export modal failed');
+  await page.locator('#export-close').evaluate(el=>el.click());
+  assert(await page.locator('#export-modal[hidden]').count() === 1, 'export close failed');
+  await page.locator('#dock-next').evaluate(el=>el.click());
+  assert(await page.locator('#page-number').textContent() === (kind === 'kalam' ? '16' : '2'), 'dock next failed');
+  await page.locator('#dock-prev').evaluate(el=>el.click());
+  assert(await page.locator('#page-number').textContent() === (kind === 'kalam' ? '15' : '1'), 'dock previous failed');
+  await page.locator('#search').evaluate((el,v)=>{el.value=v;el.dispatchEvent(new Event('input',{bubbles:true}))},kind === 'kalam' ? 'العلم' : 'القياس');
+  assert((await page.locator('.search-hit').count()) > 0, 'Arabic search failed');
+  // Visit source-critical loci via stable reader links; never conflate witnesses.
+  const targetPage = kind === 'kalam' ? 39 : 13;
+  await page.goto(new URL(route + '#page=' + targetPage, base).href, { waitUntil: 'networkidle' });
+  if (kind === 'logic') {
+    assert(await page.locator('.witness-variant').count() > 0, 'L13 independent printed readings panel missing');
+    assert((await page.locator('.witness-variant').first().textContent()).includes('Cairo 1912'), 'variant labels missing');
+    await page.goto(new URL(route + '#page=12', base).href, { waitUntil: 'networkidle' });
+    const l12 = await page.locator('#u-L-12 .arabic').textContent();
+    assert(l12.includes('وكل منها عنادية'), 'L12 shorter Cairo classification must be visible');
+    assert(!l12.includes('وكل منهما عنادية'), 'commentary-print L12 text must not silently replace Cairo main reading');
+    assert(await page.locator('.witness-variant').count() > 0, 'L12 distinct printed reading panel missing');
+    await page.goto(new URL(route + '#page=15', base).href, { waitUntil: 'networkidle' });
+    const l15 = await page.locator('#u-L-15 .arabic').textContent();
+    assert(l15.includes('في العكس المستوي'), 'L15 Cairo complete phrase not visible');
+    assert(l15.includes('وبين انعكاس الخاصتين'), 'L15 Cairo short proof clause not visible');
+    assert(!l15.includes('بالافتراض') && !l15.includes('فتأمل'), 'L15 Cairo matn contaminated by commentary printing');
+    assert(await page.locator('.witness-variant').count() > 0, 'L15 alternate printed source panel missing');
+    await page.goto(new URL(route + '#page=17', base).href, { waitUntil: 'networkidle' });
+    const l17 = await page.locator('#u-L-17 .arabic').textContent();
+    assert(l17.includes('وقد يخص باسم قياس الخلف'), 'L17 Cairo shorter naming rule missing');
+    assert(!l17.includes('وقد يختص باسم قياس الخلف'), 'L17 comparator wording leaked into Cairo');
+    assert(await page.locator('.witness-variant').count() > 0, 'L17 printed comparator panel missing');
+    assert(await page.locator('.source-issue:not(.witness-variant)').count() > 0, 'L17 uncertain connector not visibly flagged');
+    await page.goto(new URL(route + '#page=16', base).href, { waitUntil: 'networkidle' });
+    const l16English = await page.locator('#u-L-16 .english').textContent();
+    assert(l16English.includes('A possible premise is not required'), 'L16 figure-II possibility scope explanation absent');
+    assert(l16English.includes('universal-negative case'), 'L16 fourth-figure negative quantity exception absent');
+    const l16Arabic = await page.locator('#u-L-16 .arabic').textContent();
+    assert(l16Arabic.includes('مع الموجبة الموجبتين، ومع السالبة السالبتين'), 'L16 shorter Cairo wording not preserved');
+    assert(!l16Arabic.includes('مع الموجبة الكلية الموجبتين'), 'L16 Cairo contaminated by comparator reading');
+  } else {
+    const cairo39 = await page.locator('#passages').textContent();
+    assert(cairo39.includes('مقدار طبيعة غير قارة'), 'p39 corrected Cairo طبيعة not visible');
+    assert(cairo39.includes('ولامتناع فنائه لما مر'), 'p39 restored printed linker لما مر not visible');
+    assert(await page.locator('.source-issue').count() === 0, 'p39 should now be single-print visually checked');
+    await page.goto(new URL(route + '#page=77', base).href, { waitUntil: 'networkidle' });
+    assert(await page.locator('.source-issue').count() > 0, 'p77 unresolved witness issue not visible');
+  }
+  const overflow = await page.evaluate(() => ({
+    width: document.documentElement.clientWidth, scrollWidth: document.documentElement.scrollWidth
+  }));
+  assert(overflow.scrollWidth <= overflow.width + 3, 'horizontal overflow ' + JSON.stringify(overflow));
+  assert(errors.length === 0, 'runtime exceptions: ' + errors.join('; '));
+  console.log('PASS', kind, viewport.width + 'x' + viewport.height);
+  await ctx.close();
+}
+try {
+ for (const kind of ['logic', 'kalam']) {
+   for (const viewport of [{width:1440,height:900},{width:390,height:844},{width:844,height:390}]) {
+     try { await check(kind, viewport); }
+     catch (error) { failures.push(kind + ' ' + viewport.width + 'x' + viewport.height + ' ' + error.message); }
+   }
+ }
+} finally { await browser.close(); }
+if (failures.length) { for (const message of failures) console.error('FAIL', message); process.exit(1); }
+console.log('All six reader layout/function test combinations passed');

@@ -1,0 +1,775 @@
+{
+  "id": "muzaffar-al-mantiq",
+  "title": "al-Manṭiq",
+  "arabicTitle": "المنطق",
+  "author": "Muḥammad Riḍā al-Muẓaffar",
+  "description": "Selections from Muḥammad Riḍā al-Muẓaffar's al-Manṭiq, now beginning with the original introduction to knowledge and reasoning, with fresh working English translation.",
+  "status": "working-translation",
+  "editorialStatus": {
+    "translationComplete": false,
+    "translatedSection": "Authorial introduction (11 passages covering pp. 8–25) and Book III selections (14 passages).",
+    "translatedPassages": 25,
+    "sourceBasis": "Original Arabic from Muẓaffar's al-Manṭiq, early printed witness cross-checked against the Dār al-Taʿāruf text hosted by Rafed.",
+    "englishComparator": "Carney's 75-page English PDF supplied by the user ends without the complete Book III section on definitions. English here is independently translated from Arabic.",
+    "editionNotice": "A fresh working translation; Arabic selection is not a claim that the entire al-Manṭiq has been translated."
+  },
+  "sources": [
+    {
+      "id": "muzaffar-original",
+      "title": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, original Arabic",
+      "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000780/1",
+      "description": "Princeton / Arabic Collections Online 1968 edition, identified by NYU as public domain."
+    },
+    {
+      "id": "muzaffar-text",
+      "title": "al-Manṭiq, searchable Arabic text",
+      "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook",
+      "description": "Digital reading text for cross-checking the translated passages."
+    },
+    {
+      "id": "carney",
+      "title": "al-Manṭiq: Logic, English translation by Shaykh ʿAbdul-Ḥakīm Carney",
+      "description": "75-page user-provided comparator, not republished. It does not cover the translated chapter on definition."
+    }
+  ],
+  "stages": [
+    {
+      "id": "0",
+      "number": 0,
+      "title": "Introduction to Logic",
+      "arabicTitle": "المدخل"
+    },
+    {
+      "id": "I",
+      "number": 1,
+      "title": "The Four Questions",
+      "arabicTitle": "مطلب ما وأي وهل ولم"
+    },
+    {
+      "id": "II",
+      "number": 2,
+      "title": "The Defining Account",
+      "arabicTitle": "المعرّف وأقسامه"
+    },
+    {
+      "id": "III",
+      "number": 3,
+      "title": "Conditions of Definition",
+      "arabicTitle": "شروط التعريف"
+    }
+  ],
+  "units": [
+    {
+      "id": "M-P-01",
+      "stage": "0",
+      "chapter": 1,
+      "title": "Why logic is needed",
+      "arabicTitle": "الحاجة إلى المنطق",
+      "arabic": "خلق الله الإنسان مفطوراً على النطق، وجعل اللسان آلة ينطق بها ولكن مع ذلك يحتاج إلى ما يقوم نطقه ويصلحه ليكون كلامه على طبق اللغة التي يتعلمها، من ناحية هيئات الألفاظ وموادها: فيحتاج أولاً إلى المدرب الذي يعوِّده على ممارستها، وثانياً إلى قانون يرجع إليه يعصم لسانه عن الخطأ. وذلك هو النحو والصرف.\n\nوكذلك خلق الله الإنسان مفطوراً على التفكير بما منحه من قوة عاقلة مفكرة، لا كالعجماوات. ولكن مع ذلك نجده كثير الخطأ في أفكاره: فيحسب ما ليس بعلة علة، وما ليس بنتيجة لأفكاره نتيجة، وما ليس ببرهان برهانا، وقد يعتقد بأمر فاسد أو صحيح من مقدمات فاسدة وهكذا. فهو إذن بحاجة إلى ما يصحح أفكاره ويرشده إلى طريق الاستنتاج الصحيح، ويدرِّبه على تنظيم أفكاره وتعديلها.\n\nوقد ذكروا أن (علم المنطق) هو الأداة التي يستعين بها الإنسان على العصمة من الخطأ، وترشده إلى تصحيح أفكاره، فكما أن النحو والصرف لا يعلمان الإنسان النطق وإنما يعلمانه تصحيح النطق، فكذلك علم المنطق لا يعلم الإنسان التفكير، بل يرشده إلى تصحيح التفكير.\n\nإذن فحاجتنا إلى المنطق هي تصحيح أفكارنا. وما أعظمها من حاجة! ولو قلتم: أن الناس يدرسون المنطق ويخطئون في تفكيرهم فلا نفع فيه، قلنا لكم: إن الناس يدرسون علمي النحو والصرف، فيخطئون في نطقهم، وليس ذلك إلا لأن الدارس للعلم لا يحصل على ملكة العلم، أو لا يراعي قواعده عند الحاجة، أو يخطئ في تطبيقها، فيشذ عن الصواب.",
+      "english": "God has made the human being naturally capable of speech and has given him a tongue as its instrument. Yet he still needs something to regulate and correct his speech, so that it accords with the language he learns in both the forms and materials of its expressions. He therefore needs, first, a teacher who habituates him to its use and, second, rules to consult that guard his tongue against error: these are grammar and morphology.\n\nLikewise, God has endowed the human being with an intellective power and an aptitude for thought. Even so, people make many mistakes in thinking: they take something for a cause that is not a cause, regard as a consequence something that does not follow, and mistake what is not a demonstration for a demonstration. One may even hold a true conclusion on the strength of unsound premises. There is therefore a need for something that corrects thought, directs it towards valid inference, and trains it in the proper organisation of its operations.\n\nLogicians describe logic as an instrument by which one can protect oneself against error and correct one's thinking. Grammar does not give one the ability to speak; it guides one to speak correctly. Similarly, logic does not impart the ability to think; it guides thought towards correctness.\n\nOur need for logic, then, is the correction of our thinking—and how great that need is. If someone objects that people learn logic yet still reason badly, we answer that people learn grammar and morphology yet still make mistakes in speech. This happens because they have not acquired a settled mastery of the discipline, have failed to observe its rules when required, or have applied them incorrectly.",
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "The distinction between the possession of a rational faculty and a trained habit (malaka) of correctly exercising it is central here. Logic is an instrumental discipline, not a substitute for intellectual attention."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Arabic text, Dār al-Taʿāruf (1402 AH)",
+        "page": "8–9",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=9&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-02",
+      "stage": "0",
+      "chapter": 2,
+      "title": "Definition and instrumental character of logic",
+      "arabicTitle": "تعريف علم المنطق — المنطق آلة",
+      "arabic": "ولذلك عرفوا علم المنطق بأنه (آلة قانونية تعصم مراعاتها الذهن عن الخطأ في الفكر). فانظر إلى كلمة (مراعاتها)، واعرف السر فيها كما قدمناه، فليس كل من تعلم المنطق عصم عن الخطأ في الفكر، كما أنه ليس كل من تعلم النحو عصم عن الخطأ في اللسان، بل لابد من مراعاة القواعد وملاحظتها عند الحاجة، ليعصم ذهنه أو لسانه.\n\nوانظر إلى كلمة (آلة) في التعريف وتأمل معناها، فتعرف أن المنطق إنما هو من قسم العلوم الآلية التي تستخدم لحصول غاية، هي غير معرفة نفس مسائل العلم، فهو يتكفل ببيان الطرق العامة الصحيحة التي يتوصل بها الفكر إلى الحقائق المجهولة، كما يبحث (علم الجبر) عن طرق حل المعادلات التي بها يتوصل الرياضي إلى المجهولات الحسابية.\n\nوببيان أوضح: علم المنطق يعلمك القواعد العامة للتفكير الصحيح حتى ينتقل ذهنك إلى الأفكار الصحيحة في جميع العلوم، فيعلمك على أية هيئة وترتيب فكري تنتقل من الصور الحاضرة في ذهنك إلى الأمور الغائبة عنك ولذا سموا هذا العلم (الميزان) و(المعيار) من الوزن والعيار، وسموه بأنه (خادم العلوم) حتى علم الجبر الذي شبهنا هذا العلم به، يرتكز حل مسائله وقضاياه عليه.\n\nفلا بد لطالب هذا العلم من استعمال التمرينات لهذه الأداة وإجراء عمليتها في أثناء الدراسة، شأن العلوم الرياضية والطبيعية.",
+      "english": "Logic is accordingly defined as “a rule-governed instrument whose observance safeguards the mind against error in thinking.” Attend especially to the word *observance*. Learning logic does not automatically protect someone from mistakes, just as learning grammar does not automatically prevent errors of speech. The rules must be applied when they are needed.\n\nConsider also the word *instrument*. Logic belongs to the instrumental sciences, which are employed for an end other than simply knowing their own propositions. It sets out the general, correct procedures by which thinking may attain truths not yet known, much as algebra investigates procedures for solving equations and arriving at unknown quantities.\n\nMore precisely, logic teaches general rules of correct reasoning applicable across the sciences. It investigates the structure and arrangement by which the mind moves from the intelligible contents already present to matters as yet unknown. Hence it has been called the *balance*, the *standard*, and the *servant of the sciences*. Even algebra, which served as our comparison, depends upon logical ordering in solving its problems.\n\nA student of logic must therefore work exercises and actually employ its operations during study, as students of mathematics and the natural sciences must do.",
+      "notes": [
+        {
+          "type": "Terminology",
+          "text": "Āla qānūniyya: an instrument governed by rules. The verb rāʿā (‘to observe, heed, apply’) is part of the definition; logic does not promise that mistakes become impossible merely by having studied a textbook."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Arabic text, Dār al-Taʿāruf (1402 AH)",
+        "page": "9–10",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=10&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-03",
+      "stage": "0",
+      "chapter": 3,
+      "title": "From sensation to intellectual knowledge",
+      "arabicTitle": "العلم — تمهيد",
+      "arabic": "قلنا: إن الله تعالى خلق الإنسان مفطوراً على التفكير مستعداً لتحصيل المعارف بما أعطى من قوة عاقلة مفكرة يمتاز بها عن العجماوات. ولا بأس ببيان موطن هذا الامتياز من أقسام العلم الذي نبحث عنه، مقدمة لتعريف العلم ولبيان علاقة المنطق به، فنقول:\n\n١ ـ إذا ولد الإنسان يولد وهو خالي النفس من كل فكرة وعلم فعلي، سوى هذا الاستعداد الفطري. فإذا نشأ وأصبح ينظر ويسمع ويذوق ويشم ويلمس، نراه يحس بما حوله من الأشياء ويتأثر بها التأثر المناسب، فتنفعل نفسه بها، فنعرف أن نفسه التي كانت خالية أصبحت مشغولة بحالة جديدة نسميها (العلم)، وهي العلم الحسي الذي هو ليس إلا حسّ النفس بالأشياء التي تنالها الحواس الخمس: (الباصرة، السامعة، الشامة، الذائقة، اللامسة). وهذا أول درجات العلم، وهو رأس المال لجميع العلوم التي يحصل عليها الإنسان، ويشاركه فيه سائر الحيوانات التي لها جميع هذه الحواس أو بعضها.\n\n٢ ـ ثم تترقى مدارك الطفل فيتصرف ذهنه في صور المحسوسات المحفوظة عنده، فينسب بعضها إلى بعض: هذا أطول من ذاك، وهذا الضوء أنور من الآخر أو مثله، ويؤلف بعضها من بعض تأليفاً قد لا يكون له وجود في الخارج، كتأليفه لصور الأشياء التي يسمع بها ولا يراها، فيتخيل البلدة التي لم يرها، مؤلفة من الصور الذهنية المعروفة عنده من مشاهداته للبلدان. وهذا هو (العلم الخيالي) يحصل عليه الإنسان بقوة (الخيال)، وقد يشاركه فيه بعض الحيوانات.\n\n٣ ـ ثم يتوسع في إدراكه إلى أكثر المحسوسات، فيدرك المعاني الجزئية التي لا مادة لها ولا مقدار: مثل حب أبويه له وعداوة مبغضيه، وخوف الخائف، وحزن الثاكل، وفرح المستبشر. وهذا هو (العلم الوهمي) يحصل عليه الإنسان كغيره من الحيوانات بقوة (الوهم).\n\n٤ ـ ثم يذهب هو ـ الإنسان ـ في طريقه وحده متميزا عن الحيوان بقوة العقل والفكر التي لا حد لها ولا نهاية، فيدير بها دفة مدركاته الحسية والخيالية والوهمية، ويميز الصحيح منها عن الفاسد، وينتزع المعاني الكلية من الجزئيات التي أدركها فيتعقلها، ويقيس بعضها على بعض، وينتقل من معلوم الى آخر، ويستنتج ويحكم، ويتصرف ما شاءت له قدرته العقلية والفكرية.\n\nوهذا (العلم) الذي يحصل للإنسان بهذه القوة هو العلم الأكمل الذي كان به الإنسان إنساناً، ولأجل نموه وتكامله وضعت العلوم وألفت الفنون. وعلم المنطق وضع من بين العلوم، لأجل تنظيم تصرفات هذه القوة خوفاً من تأثير الوهم والخيال عليها، ومن ذهابها في غير الصراط المستقيم لها.",
+      "english": "We said that the human being is naturally disposed towards thinking and is capable of acquiring knowledge through an intellectual faculty that distinguishes him from non-rational animals. To clarify what we mean by knowledge and how logic is related to it, we may distinguish stages of cognitive development.\n\nFirst, the newly born child's soul possesses an innate capacity but no acquired, actual knowledge. As sight, hearing, taste, smell, and touch begin to operate, the soul is affected by the things presented to these senses. This is sensory cognition, the first degree of knowledge and a beginning from which further knowledge develops. Other animals share some or all of these sensory powers.\n\nSecond, the growing child begins to work upon retained sensory forms, comparing one with another—this object is taller, this light is brighter—and combining images into things not encountered externally. A town the child has only heard described may be imagined from previously seen towns. This is imaginative cognition (*ʿilm khayālī*), which some other animals also possess.\n\nThird, cognition extends to particular meanings that are neither material nor measurable: the love shown by parents, the hostility of an enemy, the fear of a frightened person, the grief of someone bereaved, or the joy of a delighted person. This is estimative cognition (*ʿilm wahmī*). It is still not the distinctive perfection of the human intellect.\n\nFourth, the human being exercises intellect and reasoning over sensible, imaginative, and estimative contents. The intellect discriminates the true from the false, abstracts universal notions from particulars, compares these notions, and proceeds from what it knows to further judgments and conclusions. This is intellectual knowledge in its fullest sense.\n\nThe sciences and disciplines aim to cultivate this rational power. Logic, in particular, orders its activity and guards against its being misled by imagination or estimation.",
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "This passage is the author's graduated account of acquired cognition. The distinction between the faculty of estimation (wahm), imagination (khayāl), and intellect (ʿaql) is preserved rather than flattening all three into ‘thinking’."
+        },
+        {
+          "type": "Authorial footnote — source",
+          "text": "In the printed source Muẓaffar explicitly restricts the present discussion to ʿilm ḥuṣūlī (knowledge through an acquired form). Knowledge by presence (ʿilm ḥuḍūrī) differs because the known is present by its very existence, not through an impressed representation. Only the former is here divided into conception and assent."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Arabic text, Dār al-Taʿāruf (1402 AH)",
+        "page": "10–12",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=11&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-04",
+      "stage": "0",
+      "chapter": 4,
+      "title": "Knowledge as the presence of a form",
+      "arabicTitle": "تعريف العلم",
+      "arabic": "وقد تسأل على أي نحو تحصل للإنسان هذه الإدراكات؟ ونحن قد قربنا لك فيما مضى نحو حصول هذه الإدراكات بعض الشيء، ولزيادة التوضيح نكلفك أن تنظر إلى شيء أمامك ثم تنطبق عينيك موجها نفسك نحوه، فستجد في نفسك كأنك لا تزال مفتوح العينين تنظر إليه، وكذلك إذا سمعت دقات الساعة مثلاً ـ ثم سددت أذنيك موجها نفسك نحوها، فستحس من نفسك كأنك لا تزال تسمعها وهكذا في كل حواسك.\n\nإذا جربت مثل هذه الأمور ودققتها جيداً يسهل عليك أن تعرف أن الإدراك أو العلم إنما هو انطباع صور الأشياء في نفسك ولا فرق بين مدركاتك في جميع مراتبها، كما تنطبع صور الأشياء في المرآة. ولذلك عرفوا العلم بأنه: «حضور صورة الشيء عند العقل». أو فقل انطباعها في العقل، لا فرق بين التعبيرين في المقصود.",
+      "english": "One may ask how these acts of cognition arise in a human being. To make the preceding explanation clearer, look at something before you, then close your eyes and direct your attention towards it. You will find something in yourself as though you were still seeing it. Likewise, after hearing a clock ticking, block your ears but turn your attention to the sound; something of the hearing seems to remain. The experiment can be repeated with the other senses.\n\nOn examining these experiences, the author invites us to understand cognition as the reception of the forms of things in the soul, by analogy with the way an image is impressed in a mirror. On this account, knowledge is defined as “the presence of a thing's form to the intellect,” or, equivalently for present purposes, “its being impressed upon the intellect.”",
+      "notes": [
+        {
+          "type": "Interpretive note",
+          "text": "This is Muẓaffar's introductory presentation of representational or acquired knowledge, not a claim that every kind of knowledge is reducible to a material impression. See the preceding author's footnote on the distinct case of knowledge by presence."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Arabic text, Dār al-Taʿāruf (1402 AH)",
+        "page": "12–13",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=13&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-05",
+      "chapter": 5,
+      "title": "Conception and assent",
+      "arabicTitle": "التصور والتصديق",
+      "arabic": "إذا رسمت مثلّثاً تحدث في ذهنك صورة له، هي علمك بهذا المثلث، ويسمى هذا العلم (بالتصور). وهو تصور مجرد لا يستتبع جزما واعتقادا. وإذا تنبهت إلى زوايا المثلث تحدث لها أيضا صورة في ذهنك. وهي أيضاً من (التصور المجرد). وإذا رسمت خطا أفقيا وفوقه خطا عموديا مقاطعا له تحدث زاويتان قائمتان، فتنتقش صورة الخطين والزاويتين في ذهنك. وهي من (التصور المجرد) أيضاً.\n\nوإذا أردت أن تقارن بين القائمتين ومجموع زوايا المثلث، فتسأل في نفسك هل هما متساويان؟ وتشك في تساويهما، تحدث عندك صورة لنسبة التساوي بينهما وهي من (التصور المجرد) أيضا.\n\nفإذا برهنت على تساويهما تحصل لك حالة جديدة مغايرة للحالات السابقة. وهي إدراكك لمطابقة النسبة للواقع المستلزم لحكم النفس وإذعانها وتصديقها بالمطابقة. وهذه الحالة أي (صورة المطابقة للواقع التي تعقلتها وأدركتها) هي التي تسمى (بالتصديق)، لأنها إدراك يستلزم تصديق النفس وإذعانها، تسمية للشيء باسم لازمه الذي لا ينفك عنه.\n\nإذن، إدراك زوايا المثلث، وإدراك الزاويتين القائمتين، وإدراك نسبة التساوي بينهما كلها (تصورات مجردة) لا يتبعها حكم وتصديق. أما إدراك أن هذا التساوي صحيح واقع مطابق للحقيقة في نفس الأمر فهو (تصديق).\n\nوكذلك إذا أدركت أن النسبة في الخبر غير مطابقة للواقع، فهذا الإدراك (تصديق).\n\nتنبيه: إذا لاحظت ما مضى يظهر لك أن التصور والإدراك والعلم كلها ألفاظ لمعنى واحد، وهو: حضور صور الأشياء عند العقل. فالتصديق أيضاً تصور ولكنه تصور يستتبع الحكم وقناعة النفس وتصديقها. وإنما لأجل التمييز بين التصور المجرد أي غير المستتبع للحكم، وبين التصور المستتبع له، سمي الأول (تصورا) لأنه تصور محض ساذج مجرد، وسمي الثاني (تصديقاً) لأنه يستتبع الحكم والتصديق.\n\nأما إذا قيل: (التصور المطلق) فإنما يراد به ما يساوق العلم والإدراك فيعم كلا التصورين: التصور المجرد، والتصور المستتبع للحكم (التصديق).",
+      "english": "Draw a triangle: its form comes to be present in the mind. This cognition is called *conception* (taṣawwur), considered here simply as an apprehension without affirmation or judgment. The same is true when you attend to its angles, or picture a horizontal line intersected by a perpendicular and thereby picture two right angles.\n\nNow compare those two right angles with the sum of the triangle's angles. At first you may ask whether they are equal and remain uncertain. Even apprehending the *relation of equality* between them at this point is still mere conception.\n\nOnce you demonstrate their equality, however, a further cognitive state arises: you apprehend that the relation accords with reality, and this apprehension entails the soul's judgment and assent. This is called *assent* (taṣdīq), the cognition being named by its inseparable concomitant, the act of affirming that the relation obtains.\n\nThus the triangle's angles, the two right angles, and their proposed equality can all be conceived without judging. Assent occurs when the mind apprehends the relation as actually corresponding to reality. Recognising a proposition as *not* corresponding to reality is also a kind of assent—namely, a negative judgment.\n\nNotice the qualification. In the broadest usage, conception, apprehension, and knowledge can all refer to the presence of a form to the intellect. Assent itself presupposes such an apprehension; but in the restricted contrast here, *conception* denotes apprehension without judgment, and *assent* denotes apprehension that entails judgment. Consequently, “conception” in the unrestricted sense may comprehend both.",
+      "notes": [
+        {
+          "type": "Authorial context",
+          "text": "Muẓaffar's accompanying note relates this account of taṣdīq to Avicenna's discussion in the Ishārāt and to Ṣadr al-Dīn al-Shīrāzī's independent treatise on conception and assent. He does not simply identify taṣdīq with an extra pictorial representation."
+        }
+      ],
+      "stage": "0",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf Arabic witness",
+        "page": "13–15",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=14&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-06",
+      "chapter": 6,
+      "title": "What can be conceived, and what can be assented to?",
+      "arabicTitle": "بماذا يتعلق التصديق والتصور؟",
+      "arabic": "ليس للتصديق إلا مورد واحد يتعلق به، وهو النسبة في الجملة الخبرية عند الحكم والإذعان بمطابقتها للواقع أو عدم مطابقتها. وأما التصور فيتعلق بأحد أربعة أمور:\n\n١ ـ (المفرد) من اسم، وفعل «كلمة»، وحرف «أداة».\n\n٢ ـ (النسبة في الخبر) عند الشك فيها أو توهمها، حيث لا تصديق، كتصورنا لنسبة السكنى إلى المريخ ـ مثلا ـ عندما يقال: «المريخ مسكون».\n\n٣ ـ (النسبة في الإنشاء) من أمر ونهي وتمن واستفهام إلى آخر الأمور الإنشائية التي لا واقع لها وراء الكلام، فلا مطابقة فيها للواقع خارج الكلام، فلا تصديق ولا إذعان.\n\n٤ ـ (المركب الناقص)، كالمضاف والمضاف إليه، والشبيه بالمضاف، والموصول وصلته، والصفة والموصوف، وكل واحد من طرفي الجملة الشرطية، إلى آخر المركبات الناقصة التي لا يستتبع تصورها تصديقاً وإذعاناً.\n\nففي قوله تعالى: «وَإِنْ تَعُدُّوا نِعْمَةَ اللَّهِ لاَ تُحْصُوهَا»، الشرط (تعدوا نعمة الله) معلوم تصوري والجزاء (لا تحصوها) معلوم تصوري أيضاً. وإنما كانا معلومين تصوريين لأنهما وقعا كذلك شرطاً وجزاءً في الجملة الشرطية، وإلا ففي أنفسهما لولاها كل منهما معلوم تصديقي. وقوله (نعمة الله) معلوم تصوري مضاف. ومجموع الجملة معلوم تصديقي.",
+      "english": "Assent has only one immediate object: the relation expressed in an assertoric sentence, insofar as the mind judges that relation to correspond—or not correspond—to reality.\n\nConception, by contrast, can concern four things. First, a single expression: a noun, verb, or particle. Second, the relation asserted in a statement when we are uncertain of it or merely entertain it, as when we consider the possibility that Mars is inhabited without affirming it. Third, the relation expressed by an injunction, prohibition, wish, question, or other non-assertoric utterance; as such, these are not descriptions to be affirmed or denied as corresponding to reality. Fourth, an incomplete expression, such as a genitive phrase, a noun and its adjective, a relative clause, or one member of a conditional construction.\n\nTake the Qurʾānic conditional, “If you count God's blessings, you cannot enumerate them.” Each of its components is apprehended as a component of the conditional, rather than as a separately asserted proposition. Likewise, “God's blessings” is an incomplete genitive expression. The conditional statement taken as a whole, however, is something to which assent may be given.\n\nThe logical distinction here concerns the *role in which* an expression is apprehended, not merely whether it contains words capable of forming a statement outside that construction.",
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "Muẓaffar uses ‘maʿlūm taṣawwurī’ for a known content apprehended without assent. The conditional's antecedent and consequent do not become independently asserted merely by occurring within a larger proposition."
+        }
+      ],
+      "stage": "0",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf Arabic witness",
+        "page": "15–16",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=16&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-07",
+      "chapter": 7,
+      "title": "Certainty, opinion, doubt, and counter-opinion",
+      "arabicTitle": "أقسام التصديق",
+      "arabic": "ينقسم التصديق إلى قسمين: يقين وظن، لأن التصديق هو ترجيح أحد طرفي الخبر وهما الوقوع واللاوقوع سواء كان الطرف الآخر محتملاً أو لا. فإن كان هذا الترجيح مع نفي احتمال الطرف الآخر بتاً فهو (اليقين)، وإن كان مع وجود الاحتمال ضعيفاً فهو (الظن).\n\nوتوضيح ذلك: إنك إذا عرضت على نفسك خبراً من الأخبار فأنت لا تخلو عن إحدى حالات أربع: إما أنك لا تجوز إلا طرفاً واحداً منه إما وقوع الخبر أو عدم وقوعه، وإما أن تجوز الطرفين وتحتملهما معاً. والأول هو اليقين. والثاني وهو تجويز الطرفين له ثلاث صور، لأنه لا يخلو إما أن يتساوى الطرفان في الاحتمال أو يترجح أحدهما على الآخر: فإن تساوى الطرفان فهو المسمى (بالشك)، وإن ترجح أحدهما فإن كان الراجح مضمون الخبر ووقوعه فهو (الظن) الذي هو من أقسام التصديق. وإن كان الراجح الطرف الآخر فهو (الوهم) الذي هو من أقسام الجهل وهو عكس الظن. فتكون الحالات أربعاً، ولا خامسة لها:\n\n١ ـ (اليقين) وهو أن تصدق بمضمون الخبر ولا تحتمل كذبه أو تصدق بعدمه ولا تحتمل صدقه، أي أنك تصدق به على نحو الجزم وهو أعلى قسمي التصديق.\n\n٢ ـ (الظن) وهو أن ترجح مضمون الخبر أو عدمه مع تجويز الطرف الآخر، وهو أدنى قسمي التصديق.\n\n٣ ـ (الوهم) وهو أن تحتمل مضمون الخبر أو عدمه مع ترجيح الطرف الآخر.\n\n٤ ـ (الشك) وهو أن يتساوى احتمال الوقوع واحتمال العدم.\n\nتنبيه: يعرف مما تقدم أمران: (الأول) أن الوهم والشك ليسا من أقسام التصديق بل هما من أقسام الجهل، و(الثاني) أن الظن والوهم دائماً يتعاكسان: فإنك إذا توهمت مضمون الخبر فأنت تظن بعدمه، وإذا كنت تتوهم عدمه فإنك تظن بمضمونه، فيكون الظن لأحد الطرفين توهماً للطرف الآخر.",
+      "english": "Assent is divided into *certainty* (yaqīn) and *probable opinion* (ẓann). It consists in preferring one of the two sides of a report—its obtaining or not obtaining. If the mind excludes the alternative altogether, this is certainty; if the alternative remains possible, though less likely, it is opinion.\n\nConsider any report. Either you admit only one possibility, or you regard both alternatives as possible. The first condition is certainty. The second admits three possibilities: the alternatives may be equally balanced, in which case the state is *doubt* (shakk); the content of the report may be preferred, yielding probable opinion (ẓann); or the opposite alternative may be preferred, in which case the report's content is only a weaker apprehension (wahm).\n\nThere are thus four states, not five. (1) **Certainty:** you affirm the report and rule out its falsity, or deny it and rule out its truth. (2) **Opinion:** you favor one side while admitting the other as possible. (3) **Counter-opinion:** you entertain one side while favoring its opposite. (4) **Doubt:** you judge the alternatives equally possible.\n\nTwo consequences follow. In the classificatory sense used here, doubt and the weaker opinion are not themselves assent; and probable opinion about one side is always the weaker opinion concerning the opposing side. The corresponding terms are relational to whichever side of the proposition is being considered.",
+      "notes": [
+        {
+          "type": "Terminology",
+          "text": "Wahm here denotes the weaker side of a propositional assessment; it is not simply the psychological faculty of estimation described earlier. The identical word is used in two technical contexts."
+        },
+        {
+          "type": "Authorial note",
+          "text": "The printed apparatus distinguishes a narrower sense of yaqīn: firm, factually correct assent that is not merely accepted by imitation. The chapter's initial division uses the broader sense of firm conviction."
+        }
+      ],
+      "stage": "0",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf Arabic witness",
+        "page": "16–17",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=17&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-08",
+      "chapter": 8,
+      "title": "Simple and compound ignorance",
+      "arabicTitle": "الجهل وأقسامه",
+      "arabic": "ليس الجهل إلا عدم العلم ممن له الاستعداد للعلم والتمكن منه، فالجمادات والعجماوات لا نسميها جاهلة ولا عالمة، مثل العمى، فإنه عدم البصر فيمن شأنه أن يبصر، فلا يسمى الحجر أعمى. وسيأتي أن مثل هذا يسمى (عدم ملكة) ومقابله وهو العلم أو البصر يسمى (ملكة)، فيقال أن العلم والجهل متقابلان تقابل الملكة وعدمها.\n\nوالجهل على قسمين كما أن العلم على قسمين لأنه يقابل العلم فيبادله في موارده فتارةً يبادل التصور أي يكون في مورده وأخرى يبادل التصديق أي يكون في مورده، فيصح بالمناسبة أن نسمي الأول (الجهل التصوري) والثاني (الجهل التصديقي).\n\nثم أنهم يقولون أن الجهل ينقسم إلى قسمين: بسيط ومركب. وفي الحقيقة أن الجهل التصديقي خاصة هو الذي ينقسم إليهما، أما الجهل التصوري فلا يكون إلا بسيطاً كما سيتضح.\n\n١ ـ (الجهل البسيط) أن يجهل الإنسان شيئاً وهو ملتفت إلى جهله فيعلم أنه لا يعلم، كجهلنا بوجود السكان في المريخ، فإنا نجهل ذلك ونعلم بجهلنا فليس لنا إلا جهل واحد.\n\n٢ ـ (الجهل المركب) أن يجهل شيئا وهو غير ملتفت إلى أنه جاهل به بل يعتقد أنه من أهل العلم به، فلا يعلم أنه لا يعلم. ويسمون هذا مركبا لأنه يتركب من جهلين: الجهل بالواقع والجهل بهذا الجهل. ويختص هذا في مورد التصديق لأنه لا يكون إلا مع الاعتقاد.\n\nليس الجهل المركب من العلم. يزعم بعضهم دخول الجهل المركب في العلم فيجعله من أقسامه، نظراً إلى أنه يتضمن الاعتقاد والجزم وإن خالف الواقع. ولكنا إذا دققنا تعريف العلم نعرف ابتعاد هذا الزعم عن الصواب؛ لأن معنى (حضور صورة الشيء عند العقل) أن تحضر صورة نفس ذلك الشيء، أما إذا حضرت صورة غيره بزعم أنها صورته فلم تحضر الشيء بل صورة شيء آخر زاعماً أنها هي.\n\nوفي الحقيقة أن الجهل المركب يتخيل صاحبه أنه من العلم، ولكنه ليس بعلم. والاعتقاد لا يغير الحقائق، فالشبح من بعيد الذي يعتقده الناظر إنساناً وهو ليس بإنسان لا يصيره الاعتقاد إنساناً على الحقيقة.",
+      "english": "Ignorance is the absence of knowledge in a subject capable of knowing. We do not call a stone blind, because blindness is the lack of sight in something naturally fitted to see. Similarly, knowledge and ignorance are opposites in the manner of a possession and its privation.\n\nSince knowledge is distinguished into conception and assent, one may speak correspondingly of ignorance affecting conception and ignorance affecting assent. The further distinction between *simple* and *compound* ignorance, however, strictly concerns the latter: ignorance in conception can only be simple.\n\nSimple ignorance is not knowing something while recognising that one does not know it. Compound ignorance occurs when a person does not know something yet believes that he does know it. It comprises two deficiencies: ignorance of the thing and ignorance of that ignorance. Because it includes a mistaken conviction, it belongs to the sphere of assent.\n\nCompound ignorance, Muẓaffar argues, should not be counted as genuine knowledge merely because it includes a firm belief. On his definition, knowledge presents the form of the very thing known. Mistaking a different form for it does not make that form the thing itself. A distant silhouette taken for a human being does not become a human being through the observer's conviction.\n\nThe point is about the truth-condition implicit in this account of knowledge, not an assertion that everyone who holds a mistaken belief knows nothing whatever.",
+      "notes": [
+        {
+          "type": "Context",
+          "text": "This passage is useful for distinguishing doxastic firmness from knowledge: a firmly held false conviction remains compound ignorance rather than certainty in the narrower epistemic sense."
+        }
+      ],
+      "stage": "0",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf Arabic witness",
+        "page": "17–18",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=18&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-09",
+      "chapter": 9,
+      "title": "Immediate and acquired knowledge",
+      "arabicTitle": "العلم ضروري ونظري — توضيح في الضروري",
+      "arabic": "ينقسم العلم بكلا قسميه التصور والتصديق إلى قسمين:\n\n١ ـ (الضروري) ويسمى أيضاً (البديهي) وهو ما لا يحتاج في حصوله إلى كسب ونظر وفكر، فيحصل بالاضطرار وبالبداهة التي هي المفاجأة والارتجال من دون توقف، كتصورنا لمفهوم الوجود والعدم ومفهوم الشيء وكتصديقنا بأن الكل أعظم من الجزء وبأن النقيضين لا يجتمعان وبأن الشمس طالعة وأن الواحد نصف الاثنين وهكذا.\n\n٢ ـ (النظري) وهو ما يحتاج حصوله إلى كسب ونظر وفكر، كتصورنا لحقيقة الروح والكهرباء، وكتصديقنا بأن الأرض ساكنة أو متحركة حول نفسها وحول الشمس ويسمى أيضاً (الكسبي).\n\n(توضيح القسمين): أن بعض الأمور يحصل العلم بها من دون إنعام نظر وفكر فيكفي في حصوله أن تتوجه النفس إلى الشيء بأحد أسباب التوجه الآتية من دون توسط عملية فكرية، وهذا هو الذي يسمى (بالضروري أو البديهي) سواء كان تصوراً أم تصديقاً.\n\nوبعضها لا يصل الإنسان إلى العلم بها بسهولة، بل لابد من إنعام النظر وإجراء عمليات عقلية ومعادلات فكرية كالمعادلات الجبرية، فيتوصل بالمعلومات عنده إلى العلم بهذه الأمور (المجهولات)، ولا يستطيع أن يتصل بالعلم بها رأساً من دون توسيط هذه المعلومات وتنظيمها على وجه صحيح.\n\nتوضيح في الضروري: إن الشيء قد يكون بديهياً ولكن يجهله الإنسان، لفقد سبب توجه النفس، فلا يجب أن يكون الإنسان عالماً بجميع البديهيات، ولا يضر ذلك ببداهة البديهي. ويمكن حصر أسباب التوجه في الأمور التالية:\n\n١ ـ (الانتباه) وهذا السبب مطّرد في جميع البديهيات، فالغافل قد يخفى عليه أوضح الواضحات.\n٢ ـ (سلامة الذهن) فإن من كان سقيم الذهن قد يشك في أظهر الأمور أو لا يفهمه.\n٣ ـ (سلامة الحواس) وهذا خاص بالبديهيات المتوقفة على الحواس الخمس.\n٤ ـ (فقدان الشبهة) فقد يؤلف الذهن دليلاً فاسداً يناقض بديهة ويغفل عما فيه من المغالطة.\n٥ ـ (عملية غير عقلية) لكثير من البديهيات، كالاستماع إلى كثيرين يمتنع تواطؤهم على الكذب في المتواترات، وكالتجربة في التجربيات.",
+      "english": "Both conception and assent are divided into two kinds. The first is *immediate* or self-evident (*ḍarūrī*, *badīhī*): it does not require a further process of inquiry or discursive thought. Examples include apprehending the concepts of being and non-being and assenting that the whole is greater than its part or that contradictories cannot both obtain.\n\nThe second is *discursive* or acquired (*naẓarī*, *kasbī*): it requires a process of thought. A conclusion about the movement of the earth, or a conceptual account of an unfamiliar phenomenon, may need prior knowledge to be arranged and used in an inquiry.\n\nFor immediate cognition it is sufficient that the mind attend to the relevant object without an intervening inferential process. For discursive cognition the mind must perform intellectual operations, much as one manipulates the terms of an algebraic problem, moving from what is already known to the initially unknown.\n\nSelf-evident, however, does not mean that every person actually knows every self-evident thing. The disposition of the subject and the conditions of attention matter. Muẓaffar distinguishes five conditions or occasions for the soul's attending to such knowledge: (1) attention rather than distraction, (2) a sound cognitive faculty, (3) functional senses when sense perception is involved, (4) freedom from a misleading sophism, and (5) some non-inferential operation appropriate to the kind of knowledge, such as receiving convergent testimony or undertaking an experiment.\n\nThe classification therefore concerns whether the knowledge depends on an *inferential act of thought*, not simply whether attaining it took time or effort.",
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "Do not translate ḍarūrī in this context as ‘necessary’ in the metaphysical modal sense. The distinction is between epistemic immediacy and discursive acquisition."
+        },
+        {
+          "type": "Translator's note",
+          "text": "Muẓaffar's fourth condition is especially significant for kalām: a specious argument may obscure an otherwise evident principle, such as the impossibility of simultaneous affirmation and denial. He describes this as a sophism in opposition to an evident truth."
+        }
+      ],
+      "stage": "0",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf Arabic witness",
+        "page": "18–20",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=19&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-10",
+      "chapter": 10,
+      "title": "Thought as the intellect's movement between known and unknown",
+      "arabicTitle": "تعريف النظر أو الفكر",
+      "arabic": "نعرف مما سبق أن النظر ـ أو الفكر ـ المقصود منه «إجراء عملية عقلية في المعلومات الحاضرة لأجل الوصول إلى المطلوب» والمطلوب هو العلم بالمجهول الغائب. وبتعبير آخر أدق أن الفكر هو: «حركة العقل بين المعلوم والمجهول».\n\nوتحليل ذلك: أن الإنسان إذا واجه بعقله المشكل (المجهول) وعرف أنه من أي أنواع المجهولات هو، فزع عقله إلى المعلومات الحاضرة عنده المناسبة لنوع المشكل، وعندئذ يبحث فيها ويتردد بينها بتوجيه النظر إليها، ويسعى إلى تنظيمها في الذهن حتى يؤلف المعلومات التي تصلح لحل المشكل، فإذا استطاع ذلك ووجد ما يؤلفه لتحصيل غرضه تحرك عقله حينئذ منها إلى المطلوب، أعني معرفة المجهول وحل المشكل.\n\nفتمر على العقل ـ إذن ـ بهذا التحليل خمسة أدوار:\n١ ـ مواجهة المشكل (المجهول).\n٢ ـ معرفة نوع المشكل، فقد يواجه المشكل ولا يعرف نوعه.\n٣ ـ حركة العقل من المشكل إلى المعلومات المخزونة عنده.\n٤ ـ حركة العقل ـ ثانياً ـ بين المعلومات، للفحص عنها وتأليف ما يناسب المشكل ويصلح لحله.\n٥ ـ حركة العقل ـ ثالثاً ـ من المعلوم الذي استطاع تأليفه مما عنده إلى المطلوب.\n\nوهذه الأدوار الثلاثة الأخيرة أو الحركات الثلاث هي الفكر أو النظر، وهذا معنى حركة العقل بين المعلوم والمجهول. وهذه الأدوار الخمسة قد تمر على الإنسان في تفكيره وهو لا يشعر بها، فإن الفكر يجتازها غالباً بأسرع من لمح البصر.\n\nنعم من له قوة الحدس يستغني عن الحركتين الأوليين، وإنما ينتقل رأساً بحركة واحدة من المعلومات إلى المجهول. وهذا معنى (الحدس)، فلذلك يكون صاحب الحدس القوي أسرع تلقياً للمعارف والعلوم، بل هو من نوع الإلهام وأول درجاته.\n\nولأجل هذا قالوا: إن قضية واحدة قد تكون بديهية عند شخص نظرية عند شخص آخر. وليس ذلك إلا لأن الأول عنده من قوة الحدس ما يستغني به عن النظر والكسب، دون الشخص الثاني فإنه يحتاج إلى هذه الحركات لتحصل العلوم بعد معرفة نوع المشكل.",
+      "english": "By inquiry (*naẓar*) or thinking (*fikr*), Muẓaffar means the performance of an intellectual operation upon what is already present to the mind for the sake of attaining the object sought—knowledge of something previously unknown. More precisely, thought is “the movement of the intellect between the known and the unknown.”\n\nWhen faced with a problem, one first identifies what kind of unknown it is, then turns to the stock of knowledge relevant to that kind of problem. The intellect searches and compares these contents, arranging them until it finds a combination capable of resolving the difficulty. It then moves from this ordered knowledge to the desired conclusion.\n\nThe process may be analysed into five moments: (1) encountering the problem; (2) identifying its type; (3) moving from the problem to stored knowledge; (4) examining and combining that knowledge appropriately; and (5) moving from the assembled premises to the answer. The last three movements, strictly speaking, constitute discursive thought.\n\nThese stages often occur so swiftly that we are not consciously aware of them. In someone gifted with strong *ḥads* (intuitive insight), the first two discursive movements can be bypassed: the relevant knowledge yields the conclusion in a single immediate movement. This helps explain why a proposition may be self-evident for one mind but require discursive inquiry for another.\n\nHere ‘movement’ names the ordered activity of cognition; it should not be confused with physical locomotion.",
+      "notes": [
+        {
+          "type": "Terminology",
+          "text": "Ḥads in this passage signifies an immediate intellectual grasp that dispenses with some intermediate search. It should not be assimilated without qualification to the separate notion of mystical witnessing."
+        }
+      ],
+      "stage": "0",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf Arabic witness",
+        "page": "20–22",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=21&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-11",
+      "chapter": 11,
+      "title": "The six principal divisions of logic",
+      "arabicTitle": "أبحاث المنطق",
+      "arabic": "علم المنطق إنما يحتاج إليه لتحصيل العلوم النظرية، لأنه هو مجموعة قوانين الفكر والبحث. أما الضروريات فهي حاصلة بنفسها، بل هي رأس المال الأصلي لكاسب العلوم يكتسب به ليربح المعلومات النظرية المفقودة عنده. فإذا اكتسب مقداراً من النظريات زاد رأس ماله بزيادة معلوماته، فيستطيع أن يكتسب معلومات أكثر.\n\nوعلم المنطق يبحث عن كيفية تأليف المعلومات المخزونة عنده، ليتوصل بها إلى الربح بتحصيل المجهولات وإضافتها إلى ما عنده من معلومات: فيبحث تارة عن المعلوم التصوري ويسمى (المعرِّف)، للتوصل به إلى العلم بالمجهول التصوري، ويبحث أخرى عن المعلوم التصديقي ويسمى (الحجة) ليتوصل به إلى العلم بالمجهول التصديقي.\n\nوالبحث عن الحجة بنحوين: تارة من ناحية هيئة تأليفها، وأخرى من ناحية مادة قضاياها، وهو بحث الصناعات الخمس. ولكل من البحث عن المعرف والحجة مقدمات. فأبحاث المنطق نضعها في ستة أبواب:\n\nالباب الأول ـ في مباحث الألفاظ.\nالباب الثاني ـ في مباحث الكلي.\nالباب الثالث ـ في المعرِّف وتلحق به القسمة.\nالباب الرابع ـ في القضايا وأحكامها.\nالباب الخامس ـ في الحجة وهيئة تأليفها.\nالباب السادس ـ في الصناعات الخمس.",
+      "english": "Logic is needed above all to acquire discursive knowledge, because it provides the rules governing inquiry and thought. Immediate truths are available without discursive proof and serve as the initial capital from which further knowledge is obtained. As knowledge increases, the stock of what is already known grows, and further investigation becomes possible.\n\nLogic therefore studies how to combine available cognitions so as to gain cognitions not yet possessed. When the unknown is conceptual, the route is through a *defining account* (muʿarrif); when the unknown is a judgment, the route is through an *argument* (ḥujja). The investigation of arguments may concern either the form of their composition or the character of their premises—the latter treated under the five argumentative arts.\n\nThe book is accordingly arranged into six parts: (1) expressions and signification; (2) universals; (3) definition and division; (4) propositions and their properties; (5) arguments and their formal composition; and (6) the five arts.\n\nThe architecture matters: the first three parts concern how to attain a previously unknown conception; the later parts explain how to attain or evaluate previously unknown judgments.",
+      "notes": [
+        {
+          "type": "Source note",
+          "text": "The six-book plan establishes that the present web edition's existing section on definition is Book III, not the whole of Muẓaffar's al-Manṭiq."
+        }
+      ],
+      "stage": "0",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf Arabic witness",
+        "page": "23–25",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=24&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-Q-01",
+      "stage": "I",
+      "chapter": 1,
+      "title": "The first question: explaining a word",
+      "arabicTitle": "المرحلة الأولى: التعريف اللفظي",
+      "arabic": "إذا اعترضتك لفظة من أية لغة كانت، فهنا خمس مراحل متوالية، لا بد لك من اجتيازها لتحصيل المعرفة، في بعضها يطلب العلم التصوري، وفي بعضها الآخر العلم التصديقي.\n\n(المرحلة الأولى): تطلب فيها تصور معنى اللفظ تصوراً إجمالياً، فتسأل عنه سؤالاً لغوياً صرفاً، إذا لم تكن تدري لأي معنى من المعاني قد وضع. والجواب يقع بلفظ آخر يدل على ذلك المعنى، كما إذا سألت عن معنى لفظ (غضنفر) فيجاب: أسد. وعن معنى (سميدع) فيجاب: سيد. وهكذا. ويسمى مثل هذا الجواب (التعريف اللفظي)، وقواميس اللغات هي المتعهدة بالتعاريف اللفظية.",
+      "english": "When an expression from any language confronts you, there are five successive stages through which you must pass to attain knowledge. Some seek knowledge by way of conception, and others knowledge by way of assent.\n\nThe first stage is to seek an initial, general conception of the expression's meaning. If you do not know which meaning the word has been assigned, you ask a purely linguistic question. The answer is another word signifying that meaning. Thus, if you ask what ghaḍanfar means, the answer is lion; or what sumaydaʿ means, the answer is chief. An answer of this kind is called a verbal definition (taʿrīf lafẓī). Providing such definitions is the responsibility of dictionaries.",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Book III (al-Muʿarrif)",
+        "page": "110",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook"
+      },
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "A verbal definition establishes customary signification. It need not yet explain the thing's essential constituents."
+        }
+      ]
+    },
+    {
+      "id": "M-Q-02",
+      "stage": "I",
+      "chapter": 2,
+      "title": "What is it? The explanatory question",
+      "arabicTitle": "المرحلة الثانية: مطلب ما الشارحة",
+      "arabic": "وإذا تصورت معنى اللفظ إجمالاً، فزعت نفسك إلى (المرحلة الثانية)، إذ تطلب تصور ماهية المعنى، أي تطلب تفصيل ما دل عليه الاسم إجمالاً، لتمييزه عن غيره في الذهن تمييزاً تاماً. فتسأل عنه بكلمة (ما)، فتقول: ما هو؟\n\nوهذه (ما) تسمى (الشارحة)، لأنه يسأل بها عن شرح معنى اللفظ. والجواب عنه يسمى (شرح الاسم)، وبتعبير آخر (التعريف الاسمي). والأصل في الجواب أن يقع بجنس المعنى وفصله القريبين معاً، ويسمى (الحد التام الاسمي). ويصح أن يجاب بالفصل وحده، أو بالخاصة وحدها، أو بأحدهما منضماً إلى الجنس البعيد، أو بالخاصة منضمة إلى الجنس القريب. وتسمى هذه الأجوبة تارة بالحد الناقص وأخرى بالرسم الناقص أو التام، ولكنها توصف جميعاً بالاسمي.\n\nولو فرض أن المسؤول أجاب خطأ بالجنس القريب وحده، كما لو قال (شجرة) في جواب (ما النخلة)، فإن السائل لا يقنع بهذا الجواب، وتتوجه نفسه إلى السؤال عن مميزاتها عن غيرها، فيقول: أية شجرة هي في ذاتها؟ أو أية شجرة هي في خاصتها؟ فيقع الجواب عن الأول بالفصل وحده، وعن الثاني بالخاصة. وهذا هو موقع السؤال بكلمة (أي)، وجوابها الفصل أو الخاصة.",
+      "english": "Once you have conceived the word's meaning in a general way, you turn naturally to the second stage: seeking a conception of the meaning's quiddity. That is, you seek an articulation of what the name had indicated only generally, so that the object may be distinguished completely from other objects in the mind. You therefore ask “What is it?” (mā huwa?).\n\nThe interrogative mā here is called explanatory (shāriḥa), because it asks for an explanation of what a word signifies. Its answer is called an explanation of the name (sharḥ al-ism), or nominal definition. The primary form of answer combines the proximate genus with the proximate differentia; this is the complete nominal essential definition. One may also answer with the differentia alone, the proprium alone, either combined with a more remote genus, or the proprium together with the proximate genus. According to the constituents supplied, such accounts are called incomplete essential definitions or complete/incomplete descriptions; but at this stage all remain nominal.\n\nSuppose, however, that a respondent gives only the proximate genus. Asked “What is a date-palm?”, he answers “A tree.” This will not satisfy the questioner, who still wants to know what distinguishes this tree from others. He asks “Which kind of tree is it, essentially?” or “Which kind is it by its distinctive attribute?” The former seeks the differentia; the latter seeks a proprium. This is the proper place of the interrogative “which?” (ayy).",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Book III (al-Muʿarrif)",
+        "page": "110–111",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook"
+      },
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "Muẓaffar's ‘nominal’ does not mean an arbitrary stipulation: the same account can become a real definition once existence has been established."
+        }
+      ]
+    },
+    {
+      "id": "M-Q-03",
+      "stage": "I",
+      "chapter": 3,
+      "title": "Does it exist? Simple and composite hal",
+      "arabicTitle": "المرحلتان الثالثة والرابعة: هل البسيطة وهل المركبة",
+      "arabic": "وإذا حصل لك العلم بشرح المعنى فزعت نفسك إلى (المرحلة الثالثة)، وهي طلب التصديق بوجود الشيء، فتسأل عنه بـ(هل)، وتسمى (هل البسيطة)، فتقول: هل وجد كذا؟ أو هل هو موجود؟\n\nتنبيه: إن هاتين المرحلتين الثانية والثالثة تتعاقبان في التقدم والتأخر، فقد تتقدم الثانية على حسب ما رتبناهما، وهو الترتيب الذي يقتضيه الطبع، وقد تتقدم الثالثة، وذلك عندما يكون السائل من أول الأمر عالماً بوجود الشيء المسؤول عنه. وحينئذ إذا كان عالماً بوجود الشيء قبل العلم بتفصيل ما أجمله اللفظ الدال عليه، ثم سأل عنه بـ(ما)، فإن (ما) هذه تسمى (الحقيقية). والجواب عنها نفس الجواب عن (ما) الشارحة، بلا فرق بينهما إلا من جهة تقدم الشارحة على العلم بوجوده وتأخر الحقيقية عنه. وإنما سميت حقيقية لأن السؤال بها عن الحقيقة الثابتة، والحقيقة باصطلاح المناطقة هي الماهية الموجودة.\n\nوإذا حصلت لك هذه المراحل انتقلت بالطبع إلى (المرحلة الرابعة)، وهي طلب التصديق بثبوت صفة أو حال للشيء، ويسأل عنه بـ(هل) أيضاً، ولكن تسمى هذه (هل المركبة)، لأنه يسأل بها عن ثبوت شيء لشيء بعد فرض وجوده، والبسيطة يسأل بها عن ثبوت الشيء فقط. فيقال للسؤال بالبسيطة مثلاً: هل الله موجود؟ وللسؤال بالمركبة بعد ذلك: هل الله الموجود مريد؟",
+      "english": "After learning what the expression means, you move to the third stage: seeking assent to the thing's existence. You ask with hal, the simple existential question (hal basīṭa): “Does such-and-such exist?” or “Is it existent?”\n\nA qualification is necessary. The second and third stages can occur in either order. Their natural order is the one just given, but the questioner may already know that a thing exists, or may ask about its existence first. If existence is known before the general expression has been explained in detail, a subsequent question “What is it?” is called the real or quiddative ‘what?’ (mā ḥaqīqiyya). Its answer is the same as to the explanatory mā. The only difference is that the explanatory question precedes knowledge of the thing's existence, while the real question follows it. Hence an essential definition can be nominal before the simple existential judgment and real afterwards.\n\nOnce these stages are completed, one naturally passes to the fourth stage, seeking assent that some attribute or condition belongs to the thing. This is again asked by hal, but now it is the composite question (hal murakkaba), because it asks whether one thing is established of another, presupposing the subject's existence. By contrast, simple hal asks only whether the subject exists. “Does God exist?” is a simple existential inquiry; “Is the existent God willing?” is composite.",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Book III (al-Muʿarrif)",
+        "page": "111–113",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook"
+      },
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "‘Simple’ and ‘composite’ distinguish asserting that a subject exists from predicating something further of an existent subject. Neither question by itself provides an essential definition."
+        }
+      ]
+    },
+    {
+      "id": "M-Q-04",
+      "stage": "I",
+      "chapter": 4,
+      "title": "Why? The cause of assent and the cause of being",
+      "arabicTitle": "المرحلة الخامسة: مطلب لم",
+      "arabic": "فإذا أجابك المسؤول عن (هل) البسيطة أو المركبة تنزع نفسك إلى (المرحلة الخامسة)، وهي طلب العلة: إما علة الحكم فقط، أي البرهان على ما حكم به المسؤول في الجواب عن (هل)، أو علة الحكم وعلة الوجود معاً، لتعرف السبب في حصول ذلك الشيء واقعاً. ويسأل لأجل كل من الغرضين بكلمة (لم) الاستفهامية، فتقول لطلب علة الحكم مثلاً: لم كان الله مريداً؟ وتقول لطلب علة الحكم وعلة الوجود معاً: لم كان المغناطيس جاذباً للحديد؟ كما لو كنت قد سألت: هل المغناطيس جاذب للحديد؟ فأجاب المسؤول بنعم، فإن حقك أن تسأل ثانياً عن العلة فتقول: لم؟",
+      "english": "If a respondent has answered either the simple or composite hal, you proceed to the fifth stage: seeking the cause. Sometimes you seek only the ground of the judgment—namely, a demonstration of what the respondent affirmed. At other times you seek both the ground of the judgment and the cause of the fact's existence, so that you know why the thing is actually so.\n\nFor either purpose you ask “Why?” (limā?). To seek the ground of an affirmation, for instance, you may ask, “Why is God willing?” To seek both the reason for the judgment and the real cause, you may ask, “Why does a magnet attract iron?” Once someone has answered “Yes” to whether a magnet attracts iron, you are entitled to ask the further question, “Why?”",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Book III (al-Muʿarrif)",
+        "page": "112–113",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook"
+      },
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "The two senses anticipate the difference between demonstrating that a proposition is true and demonstrating why the fact it reports obtains."
+        }
+      ]
+    },
+    {
+      "id": "M-Q-05",
+      "stage": "I",
+      "chapter": 5,
+      "title": "Summary of the inquiries and their subsidiary forms",
+      "arabicTitle": "تلخيص وتعقيب وفروع المطالب",
+      "arabic": "ظهر مما تقدم أن (ما) لطلب تصور ماهية الشيء، وتنقسم إلى الشارحة والحقيقية. ويشتق منها مصدر صناعي فيقال (مائية)، كما أن (ماهية) مصدر صناعي من (ما هو).\n\nو(أي) لطلب تمييز الشيء عما يشاركه في الجنس تمييزاً ذاتياً أو عرضياً بعد العلم بجنسه.\n\nو(هل) تنقسم إلى بسيطة، ويطلب بها التصديق بوجود الشيء أو عدمه، ومركبة، ويطلب بها التصديق بثبوت شيء لشيء أو عدمه.\n\nو(لم) يطلب بها تارة علة التصديق فقط، وأخرى علة التصديق والوجود معاً.\n\nما تقدم هي أصول المطالب التي يسأل عنها بتلك الأدوات، وهي المطالب الكلية التي يبحث عنها في جميع العلوم. وهناك مطالب أخرى يسأل عنها بكيف وأين ومتى وكم ومن. وهي مطالب جزئية، أي ليست من أمهات المسائل بالقياس إلى المطالب الأولى لعدم عموم فائدتها. فإن ما لا كيفية له لا يسأل عنه بكيف، وما لا مكان له أو زمان لا يسأل عنه بأين ومتى. على أنه يجوز أن يستغنى عنها غالباً بمطلب هل المركبة.",
+      "english": "We may summarise the foregoing as follows. “What?” (mā) seeks a conception of the thing's quiddity; it may be explanatory or real. From this interrogative the technical expressions māʾiyya and māhiyya are formed.\n\n“Which?” (ayy) asks how a thing is distinguished, essentially or accidentally, from others sharing its genus, once that genus is known.\n\n“Whether?” (hal) can be simple, seeking assent to the existence or nonexistence of the thing, or composite, seeking assent that something belongs—or does not belong—to something else.\n\n“Why?” (limā) asks either for the cause of the assent alone, or for both the cause of the assent and the cause of the thing's existence.\n\nThese are the principal inquiries, whose questions have a universal scope across the sciences. Other inquiries employ “how?”, “where?”, “when?”, “how many?”, and “who?”. These are subsidiary, because they are not applicable to every object: what has no spatial location cannot be asked “where?”, and what has no time cannot be asked “when?”. Moreover, many such questions can be recast as composite hal questions.",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Book III (al-Muʿarrif)",
+        "page": "113–114",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook"
+      },
+      "notes": []
+    },
+    {
+      "id": "M-D-01",
+      "stage": "II",
+      "chapter": 1,
+      "title": "What is a defining account?",
+      "arabicTitle": "التعريف وأقسامه",
+      "arabic": "كثيراً ما تقع المنازعات في المسائل العلمية وغيرها لأجل الإجمال في مفاهيم الألفاظ التي يستعملونها، فيضطرب حبل التفاهم لعدم اتفاق المتنازعين على حدود معنى اللفظ.\n\nفمن الواجب على من أراد الاشتغال بالحقائق أن يفرغ مفردات مقاصده في قالب سهل من التحديد والشرح، فيحفظ ما يدور في خلده من المعنى في آنية من الألفاظ وافية به. وعلى هذا الأساس المتين يبنى التفكير السليم.\n\nالتعريف حد ورسم، والحد والرسم تام وناقص. سبق أن ذكرنا التعريف اللفظي، ولا يهمنا البحث عنه في هذا العلم، لأنه لا ينفع إلا لمعرفة وضع اللفظ لمعناه. وإنما غرض المنطقي من التعريف هو المعلوم التصوري الموصل إلى مجهول تصوري، الواقع جواباً عن (ما) الشارحة أو الحقيقية.",
+      "english": "Disputes in scientific and other matters frequently arise because the concepts conveyed by the words used remain indeterminate. Mutual understanding is disturbed when the disputants have not agreed on the boundaries of the words' meanings.\n\nAnyone pursuing realities must therefore express the elements of his thought in language that defines and explains them clearly, preserving the intended meaning without exceeding or falling short of it. Sound thinking is built on this basis.\n\nA defining account may be an essential definition (ḥadd) or a description (rasm); either may be complete or incomplete. We have already mentioned verbal definition. Here we are not primarily concerned with it, since it tells us only the meaning assigned to a word. The logician's subject is the previously known conception by which we arrive at a conception not yet known—the kind of account given in answer to explanatory or real mā.",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Book III (al-Muʿarrif)",
+        "page": "115–116",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook"
+      },
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "The Arabic contrast is between ḥadd (essential definition), rasm (description through distinguishing attributes), and taʿrīf lafẓī (lexical explanation)."
+        }
+      ]
+    },
+    {
+      "id": "M-D-02",
+      "stage": "II",
+      "chapter": 2,
+      "title": "The complete essential definition",
+      "arabicTitle": "الحد التام",
+      "arabic": "وهو التعريف بجميع ذاتيات المعرَّف، ويقع بالجنس والفصل القريبين لاشتمالهما على جميع ذاتيات المعرف. فإذا قيل: ما الإنسان؟ فيجوز أن تجيب أولاً بأنه (حيوان ناطق). وهذا حد تام فيه تفصيل ما أجمله اسم الإنسان، ويشتمل على جميع ذاتياته، لأن مفهوم الحيوان ينطوي فيه الجوهر والجسم النامي والحساس المتحرك بالإرادة.\n\nويجوز أن تجيب ثانياً بأنه (جسم نام حساس متحرك بالإرادة ناطق). وهذا حد تام أيضاً للإنسان، عين الأول في المفهوم إلا أنه أكثر تفصيلاً، لأنك وضعت مكان كلمة حيوان حدها التام. وهذا تطويل لا حاجة إليه إلا إذا كانت ماهية الحيوان مجهولة للسائل.\n\nوهكذا إذا كان الجوهر مجهولاً وضعت مكانه حده التام إن وجد، حتى ينتهي الأمر إلى المفاهيم البديهية الغنية عن التعريف، كمفهوم الموجود والشيء.\n\nفظهر أن الجنس والفصل القريبين تنطوي فيهما جميع ذاتيات المعرَّف؛ وأن الحدود التامة المطولة والمختصرة لا تختلف في المفهوم بل في التفصيل؛ وأن الحد التام يساوي المحدود في المفهوم، ويدل عليه بالمطابقة.",
+      "english": "A complete essential definition states all the essential constituents of what is being defined. It is given through the proximate genus and proximate differentia, because together they encompass all those constituents.\n\nIf one asks, “What is a human being?”, the answer may be “A rational animal.” This is complete: it articulates what the word “human” signified without detail and includes all the essential constituents. For “animal” already implies substance, growing body, sensation, and movement by will.\n\nOne might instead answer, “A growing body that senses, moves voluntarily, and reasons.” This is also a complete definition, identical in meaning to the first but more fully expanded: the defining account of “animal” has been substituted for the word itself. Such expansion is unnecessary unless the questioner does not understand the quiddity of an animal.\n\nLikewise, an unfamiliar genus may be unfolded by its own definition, if one is available, until the explanation reaches primary and self-evident concepts that require no definition—for example being and thing.\n\nHence the proximate genus and proximate differentia encompass every essential constituent without omission. A longer complete definition differs from a shorter one in explicitness, not in its intelligible content. The complete definition is conceptually equivalent to what it defines and signifies it directly, by correspondence (muṭābaqa).",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Book III (al-Muʿarrif)",
+        "page": "117–118",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook"
+      },
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "‘Being’ (mawjūd) is named here as an immediately understood concept, not as a constituent that must be added to the essential definition of each contingent quiddity."
+        }
+      ]
+    },
+    {
+      "id": "M-D-03",
+      "stage": "II",
+      "chapter": 3,
+      "title": "The incomplete essential definition",
+      "arabicTitle": "الحد الناقص",
+      "arabic": "وهو التعريف ببعض ذاتيات المعرَّف، ولا بد أن يشتمل على الفصل القريب على الأقل. ولذا سمي ناقصاً. وهو يقع تارة بالجنس البعيد والفصل القريب، وأخرى بالفصل وحده.\n\nمثال الأول أن تقول لتحديد الإنسان: جسم نام ... ناطق. فقد نقصت من الحد التام صفة (حساس متحرك بالإرادة). ومثال الثاني أن تقول لتحديد الإنسان أيضاً: ناطق، فقد نقصت من الحد التام الجنس القريب كله.\n\nوقد ظهر أن الحد الناقص لا يساوي المحدود في المفهوم، لأنه يشتمل على بعض أجزاء مفهومه، ولكنه يساويه في المصداق؛ وأنه لا يعطي للنفس صورة ذهنية كاملة للمحدود، بل أكثر ما يفيد تمييزه عن جميع ما عداه تمييزاً ذاتياً فحسب؛ وأنه لا يدل عليه بالمطابقة بل بالالتزام، لأنه من باب دلالة الجزء المختص على الكل.",
+      "english": "An incomplete essential definition gives only some of the essential constituents of the thing, but must contain at least its proximate differentia. It therefore may be expressed through a remote genus together with the proximate differentia, or through that differentia alone.\n\nIn the first case, one might define a human being as “a growing body … rational,” omitting the intervening determination “sentient and moving by will.” In the second, one might say simply “rational,” dropping the entire proximate genus. The second is even less complete.\n\nThree points follow. First, the incomplete definition is not conceptually equivalent to what it defines, because it states only part of its essential content, although its extension may coincide with the thing being defined. Second, it does not supply a complete mental conception of the thing's quiddity. At most it distinguishes the thing essentially from everything else. Third, it signifies the whole by necessary implication (iltizām) rather than by direct correspondence, since a distinctive essential part points to the whole.",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Book III (al-Muʿarrif)",
+        "page": "118",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook"
+      },
+      "notes": []
+    },
+    {
+      "id": "M-D-04",
+      "stage": "II",
+      "chapter": 4,
+      "title": "Complete and incomplete descriptions",
+      "arabicTitle": "الرسم التام والرسم الناقص",
+      "arabic": "الرسم التام: وهو التعريف بالجنس والخاصة، كتعريف الإنسان بأنه (حيوان ضاحك)، فاشتمل على الذاتي والعرضي، ولذا سمي تاماً.\n\nالرسم الناقص: وهو التعريف بالخاصة وحدها، كتعريف الإنسان بأنه (ضاحك)، فاشتمل على العرضي فقط، فكان ناقصاً.\n\nوقيل إن التعريف بالجنس البعيد والخاصة معدود من الرسم الناقص، فيختص التام بالمؤلف من الجنس القريب والخاصة فقط.\n\nولا يخفى أن الرسم مطلقاً كالحد الناقص لا يفيد إلا تمييز المعرف عن جميع ما عداه فحسب، إلا أنه يميزه تمييزاً عرضياً. ولا يساويه إلا في المصداق لا في المفهوم، ولا يدل عليه إلا بالالتزام.",
+      "english": "A complete description (rasm tāmm) combines the genus with a proprium (khāṣṣa): for example, “a laughing animal” as an account of the human being. It includes an essential constituent—the genus—and a distinctive but nonessential attribute—the proprium. For this reason it is called complete.\n\nAn incomplete description (rasm nāqiṣ) employs the proprium alone, as when a human being is described as “laughing” or “capable of laughter.” Because it contains only an accidental predicate, it is incomplete.\n\nAccording to another formulation, genus plus proprium counts as complete only when the genus is the proximate one; a remote genus plus proprium remains an incomplete description.\n\nIn either case, a description, like an incomplete essential definition, serves to distinguish its subject from all other things. But it does so through what is extrinsic to the quiddity. It agrees with what it describes in the things to which it applies, not in the meaning it articulates, and points to it by implication rather than by a statement of the complete essence.",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Book III (al-Muʿarrif)",
+        "page": "119",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook"
+      },
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "Here ‘accidental’ (ʿaraḍī) means extrinsic to the quiddity. A proprium need not be temporally separable or contingent in the ordinary English sense."
+        }
+      ]
+    },
+    {
+      "id": "M-D-05",
+      "stage": "II",
+      "chapter": 5,
+      "title": "Why definitions are difficult",
+      "arabicTitle": "إنارة",
+      "arabic": "إن الأصل في التعريف هو الحد التام، لأن المقصود الأصلي من التعريف أمران: الأول تصور المعرَّف بحقيقته لتتكون له في النفس صورة تفصيلية واضحة، والثاني تمييزه في الذهن عن غيره تمييزاً تاماً. ولا يؤدي هذان الأمران إلا الحد التام.\n\nوإذ يتعذر الأمر الأول يكتفى بالثاني، ويتكفل به الحد الناقص والرسم بقسميه. وإذا أمكن تمييزه تمييزاً ذاتياً كان الحد الناقص أولى من الرسم، والرسم التام أولى من الناقص.\n\nإلا أن المعروف عند العلماء أن الاطلاع على حقائق الأشياء وفصولها من الأمور المستحيلة أو المتعذرة. وكل ما يذكر من الفصول فإنما هي خواص لازمة تكشف عن الفصول الحقيقية. فالتعاريف الموجودة بين أيدينا أكثرها أو كلها رسوم تشبه الحدود.\n\nفعلى من أراد التعريف أن يختار الخاصة اللازمة البينة، لأنها أدل على حقيقة المعرف وأشبه بالفصل، وأما التعريف بالخاصة الخفية غير البينة فلا يفيد تعريف الشيء لكل أحد.",
+      "english": "The primary form of definition is the complete essential definition, for the aim of defining is twofold: first, to conceive the thing through its true quiddity, so that a clear and fully articulated representation of it arises in the soul; second, to distinguish it completely from everything else in the mind. Only a complete essential definition achieves both aims.\n\nWhere the first aim is unattainable, one must be content with the second. An incomplete essential definition or either kind of description may provide it. If an essential distinction is available, an incomplete essential definition is preferable to a description; among descriptions, the complete is preferable to the incomplete.\n\nYet scholars acknowledge that grasping things' true essences and differentiæ is extraordinarily difficult and may be unattainable. Many of the differentiæ customarily given are really necessary proprieties that disclose the true differentia without themselves being that differentia. Thus most—or perhaps all—of the definitions available to us are descriptions resembling essential definitions.\n\nAccordingly, one should select an evident and necessary distinctive attribute, one that best reveals the thing's reality and most closely resembles its differentia. An obscure attribute will not serve to explain the thing to an ordinary questioner.",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Book III (al-Muʿarrif)",
+        "page": "120",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook"
+      },
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "The passage itself qualifies the theory of ḥadd: satisfying the formal schema ‘genus + differentia’ does not mean the alleged differentia has actually been shown to be the real one."
+        }
+      ]
+    },
+    {
+      "id": "M-D-06",
+      "stage": "II",
+      "chapter": 6,
+      "title": "Definitions by example and by comparison",
+      "arabicTitle": "التعريف بالمثال والتشبيه",
+      "arabic": "كثيراً ما نجد العلماء، لا سيما علماء الأدب، يستعينون على تعريف الشيء بذكر أحد أفراده ومصاديقه مثالاً له. وهذا ما نسميه التعريف بالمثال، وهو أقرب إلى عقول المبتدئين في فهم الأشياء وتمييزها.\n\nومن نوع التعريف بالمثال الطريقة الاستقرائية، وهي أن يكثر المؤلف أو المدرس قبل بيان التعريف أو القاعدة من ذكر الأمثلة والتمرينات، ليستنبط الطالب بنفسه المفهوم الكلي أو القاعدة، وبعدئذ تعطى له النتيجة بعبارة واضحة.\n\nوالتعريف بالمثال ليس قسماً خامساً للتعريف بل هو من التعريف بالخاصة، فيرجع إلى الرسم الناقص.\n\nومما يلحق بالتعريف بالمثال ويدخل في الرسم الناقص أيضاً التعريف بالتشبيه، وهو أن يشبه الشيء المقصود تعريفه بشيء آخر لجهة شبه بينهما. ومثاله تشبيه الوجود بالنور، وجهة الشبه أن كلاً منهما ظاهر بنفسه مظهر لغيره.",
+      "english": "Scholars, especially those concerned with language and literature, often explain a thing by citing one of its instances as an example. This is definition by example, and it is particularly accessible to beginners seeking to understand and distinguish things.\n\nA related educational procedure is inductive instruction: before stating the definition or general rule, the author or teacher supplies many examples and exercises, allowing the student to infer the common conception or rule independently. Only then is the result expressed clearly, so that the learner can compare the explicit statement with what he has discovered.\n\nDefinition by example is not a fifth fundamental kind of definition. It is subordinate to explaining something through a distinctive feature, and hence falls under incomplete description.\n\nSimilarly, definition by resemblance explains an unfamiliar thing by comparing it with something already known through a relevant likeness. An example is the comparison of existence with light: each is manifest in itself and makes other things manifest.",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Book III (al-Muʿarrif)",
+        "page": "121–122",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook"
+      },
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "The light comparison illustrates a point; it is not itself a proof that existence is literally a species of light."
+        }
+      ]
+    },
+    {
+      "id": "M-D-07",
+      "stage": "III",
+      "chapter": 1,
+      "title": "A definition must be coextensive and clearer",
+      "arabicTitle": "شروط التعريف: الأول والثاني",
+      "arabic": "الغرض من التعريف تفهيم مفهوم المعرَّف وتمييزه عما عداه، ولا يحصل هذا الغرض إلا بشروط خمسة.\n\nالأول: أن يكون المعرِّف مساوياً للمعرَّف في الصدق، أي يجب أن يكون مانعاً جامعاً، أو مطرداً منعكساً. ومعنى مانع أو مطرد أنه لا يشمل إلا أفراد المعرَّف فيمنع من دخول أفراد غيره فيه. ومعنى جامع أو منعكس أنه يشمل جميع أفراد المعرَّف لا يشذ منها فرد واحد.\n\nفلا يجوز التعريف بالأعم، لأنه لا يكون مانعاً، كتعريف الإنسان بأنه حيوان يمشي على رجلين؛ ولا بالأخص، لأنه لا يكون جامعاً، كتعريف الإنسان بأنه حيوان متعلم؛ ولا بالمباين، لأن المتباينين لا يتصادقان.\n\nالثاني: أن يكون المعرِّف أجلى مفهوماً وأعرف عند المخاطب من المعرَّف، وإلا لم يتم الغرض من شرح مفهومه. فلا يجوز التعريف بالمساوي في الظهور والخفاء كتعريف أحد المتضايفين بالآخر، ولا بالأخفى معرفة، كتعريف النور بأنه قوة تشبه الوجود.",
+      "english": "The point of a definition is to make its subject intelligible and distinguish it from everything else. Five conditions are therefore required.\n\nFirst, the defining account must be coextensive with what it defines. It must be both exclusive (māniʿ) and inclusive (jāmiʿ): exclusive because it applies to nothing outside the subject's extension, and inclusive because it applies to every instance of the subject without exception.\n\nAccordingly, an account too broad is invalid: “a two-legged animal” does not exclusively identify the human being, since other animals walk on two legs. An account too narrow is likewise invalid: “an educated animal” excludes many human beings. Nor may a completely disparate description define the subject, because the two do not apply to the same instances.\n\nSecond, the defining expression must be clearer and better known to the addressee than what is being defined. Otherwise it fails to explain. One should not explain an unknown term through something equally obscure—for example by defining one of two correlatives solely through the other when both are equally unfamiliar—nor through something still more obscure, as though explaining light by saying that it is a power resembling existence.",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Book III (al-Muʿarrif)",
+        "page": "123–124",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook"
+      },
+      "notes": []
+    },
+    {
+      "id": "M-D-08",
+      "stage": "III",
+      "chapter": 2,
+      "title": "No self-definition and no circularity",
+      "arabicTitle": "شروط التعريف: الثالث والرابع",
+      "arabic": "الثالث: ألا يكون المعرِّف عين المعرَّف في المفهوم، كتعريف الحركة بالانتقال والإنسان بالبشر تعريفاً حقيقياً غير لفظي، بل يجب تغايرهما إما بالإجمال والتفصيل كما في الحد التام أو بالمفهوم كما في التعريف بغيره. ولو صح التعريف بعين المعرَّف لوجب أن يكون معلوماً قبل أن يكون معلوماً، ولزم أن يتوقف الشيء على نفسه.\n\nالرابع: أن يكون خالياً من الدور. وصورة الدور في التعريف أن يكون المعرِّف مجهولاً في نفسه ولا يعرف إلا بالمعرَّف، فيكون ما يراد تفسيره مفسراً لما يفسر به.\n\nوالدور يقع تارة بمرتبة واحدة ويسمى دوراً مصرحاً، كما في تعريف الشمس بأنها كوكب يطلع في النهار، ثم تعريف النهار بأنه زمان تطلع فيه الشمس.\n\nويقع أخرى بمرتبتين أو أكثر ويسمى دوراً مضمراً، كتعريف الاثنين بالزوج الأول، والزوج بالمنقسم بمتساويين، والمتساويين بالشيئين اللذين يطابق أحدهما الآخر، والشيئين باثنين؛ فينتهي الأمر إلى تعريف الاثنين بالاثنين.",
+      "english": "Third, the defining account must not be identical in meaning with its subject, when a real rather than a merely verbal definition is intended. To explain “motion” by the synonymous “transition,” or “human being” by the synonymous “person,” provides no new intelligible determination. The two expressions must differ either as an implicit content differs from its explicit analysis, as in a complete essential definition, or by a distinct conception which makes the subject known. Otherwise knowledge of the subject would be presupposed in the very attempt to acquire it.\n\nFourth, the account must not be circular. Circularity arises when the expression offered to explain the subject is itself unintelligible except through that subject. The subject then becomes part of its own explanation.\n\nExplicit circularity occurs when the sun is defined as a star that rises during the day, while day is defined as the time during which the sun rises. Knowing the sun presupposes knowing day, which in turn presupposes knowing the sun.\n\nConcealed circularity may involve several mediating steps. Suppose “two” is explained as the first even number, “even” through division into equals, “equals” through two matching things, and “two things” through the number two. The circuit eventually returns to the very notion it was meant to explain.",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Book III (al-Muʿarrif)",
+        "page": "124–126",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook"
+      },
+      "notes": []
+    },
+    {
+      "id": "M-D-09",
+      "stage": "III",
+      "chapter": 3,
+      "title": "Unambiguous language in definitions",
+      "arabicTitle": "شروط التعريف: الخامس",
+      "arabic": "الخامس: أن تكون الألفاظ المستعملة في التعريف ناصعة واضحة لا إبهام فيها، فلا يصح استعمال الألفاظ الوحشية والغريبة، ولا الغامضة، ولا المشتركة والمجازات بدون القرينة. أما مع القرينة فلا بأس، وإن كان يحسن على كل حال اجتناب المجاز في التعاريف والأساليب العلمية.",
+      "english": "Fifth, a definition must be expressed in clear, unambiguous language. One should not employ obscure, rare, or unfamiliar expressions, nor equivocal or figurative terms without an indication fixing the intended sense. Where such an indication is present, the use of these terms is not formally prohibited; nevertheless, scientific definitions and argument should generally avoid metaphor when greater precision is available.",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Book III (al-Muʿarrif)",
+        "page": "126",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook"
+      },
+      "notes": []
+    }
+  ],
+  "glossary": [
+    {
+      "term": "ʿaraḍī",
+      "arabic": "عرضي",
+      "english": "Accidental predicate",
+      "definition": "A predicate outside a thing's constitutive essence, whether or not it happens to be inseparable from that thing."
+    },
+    {
+      "term": "taṣdīq",
+      "arabic": "تصديق",
+      "english": "Assent",
+      "definition": "Cognition involving judgment that a proposition is true."
+    },
+    {
+      "term": "ʿillat al-wujūd",
+      "arabic": "علة الوجود",
+      "english": "Cause of being",
+      "definition": "What explains the thing's existence, distinguished from what merely explains our assent to a proposition about it."
+    },
+    {
+      "term": "dawr",
+      "arabic": "دور",
+      "english": "Circularity",
+      "definition": "A defect in explanation or definition in which knowing the proposed definition already requires knowing what it purports to define."
+    },
+    {
+      "term": "ṭard wa-ʿaks",
+      "arabic": "طرد وعكس",
+      "english": "Coextensiveness",
+      "definition": "The requirement that a defining expression apply to every instance of what is defined and to no other instance; necessary for adequacy, not sufficient for essentiality."
+    },
+    {
+      "term": "ʿaraḍ ʿāmm",
+      "arabic": "عرض عام",
+      "english": "Common accident",
+      "definition": "A nonessential predicate shared by more than one species; it does not by itself provide a distinctive account."
+    },
+    {
+      "term": "rasm tāmm",
+      "arabic": "رسم تام",
+      "english": "Complete descriptive definition",
+      "definition": "A descriptive account combining the proximate genus with a proprium; the proprium does not become part of the essence."
+    },
+    {
+      "term": "ḥadd tāmm",
+      "arabic": "حد تام",
+      "english": "Complete essential definition",
+      "definition": "A definition that gives both proximate genus and proximate differentia."
+    },
+    {
+      "term": "hal murakkaba",
+      "arabic": "هل المركبة",
+      "english": "Composite predicative question",
+      "definition": "Asks whether a predicate belongs to a subject whose existence is presupposed."
+    },
+    {
+      "term": "taṣawwur",
+      "arabic": "تصوّر",
+      "english": "Conception",
+      "definition": "An intelligible content considered without necessarily assenting to a judgment."
+    },
+    {
+      "term": "burhān",
+      "arabic": "برهان",
+      "english": "Demonstration",
+      "definition": "A rigorous inference yielding scientific certainty on the basis of appropriate premises."
+    },
+    {
+      "term": "burhān innī",
+      "arabic": "برهان إنّي",
+      "english": "Demonstration through an effect or sign",
+      "definition": "Reasoning from what is known to the fact concluded without thereby providing the relevant causal explanation of why it is so."
+    },
+    {
+      "term": "burhān limmī",
+      "arabic": "برهان لمّي",
+      "english": "Demonstration through the cause",
+      "definition": "Reasoning that explains the conclusion through a cause appropriate to the fact demonstrated; compare demonstration from a sign or effect."
+    },
+    {
+      "term": "rasm",
+      "arabic": "رسم",
+      "english": "Descriptive definition",
+      "definition": "Description using nonessential but distinctive attributes."
+    },
+    {
+      "term": "faṣl",
+      "arabic": "فصل",
+      "english": "Differentia",
+      "definition": "The essential constituent by which a species is distinguished within a genus; it is not merely any observable distinctive feature."
+    },
+    {
+      "term": "ḥadd",
+      "arabic": "حدّ",
+      "english": "Essential definition",
+      "definition": "A specification of essential constituents; not to be confused with delimitation (ḥadd) in ontology."
+    },
+    {
+      "term": "dhātī",
+      "arabic": "ذاتي",
+      "english": "Essential predicate",
+      "definition": "What enters the essence or its constitutive account in the relevant logical division; not simply something permanently accompanying a subject."
+    },
+    {
+      "term": "sharḥ al-ism",
+      "arabic": "شرح الاسم",
+      "english": "Explanation of the name",
+      "definition": "An account of what a name signifies, prior to determining whether the named thing exists; an account may later function as a real definition."
+    },
+    {
+      "term": "mā shāriḥa wa-ḥaqīqiyya",
+      "arabic": "ما الشارحة والحقيقية",
+      "english": "Explanatory and real 'what'",
+      "definition": "The same formal account may answer 'what?' before existence is established (explanatory) and after it is established (real); the epistemic setting differs."
+    },
+    {
+      "term": "mā shāriḥa",
+      "arabic": "ما الشارحة",
+      "english": "Explanatory what?",
+      "definition": "The question concerning the quiddity before the thing's existence has been established."
+    },
+    {
+      "term": "jins",
+      "arabic": "جنس",
+      "english": "Genus",
+      "definition": "An essential universal predicable of species differing specifically, supplying the common element in an essential account."
+    },
+    {
+      "term": "ʿillat al-taṣdīq",
+      "arabic": "علة التصديق",
+      "english": "Ground of assent",
+      "definition": "What justifies the intellect's assent to a claim, which need not be identical with the cause of the thing's existence."
+    },
+    {
+      "term": "rasm nāqiṣ",
+      "arabic": "رسم ناقص",
+      "english": "Incomplete descriptive definition",
+      "definition": "A description using a proprium without the proximate genus, or pairing it with a more remote genus."
+    },
+    {
+      "term": "ḥadd nāqiṣ",
+      "arabic": "حد ناقص",
+      "english": "Incomplete essential definition",
+      "definition": "An essential account giving less than both proximate genus and proximate differentia, normally by a differentia alone or with a remote genus."
+    },
+    {
+      "term": "khāṣṣa",
+      "arabic": "خاصة",
+      "english": "Proprium",
+      "definition": "An attribute distinctive of a species without entering its essential definition, as opposed to the constitutive differentia."
+    },
+    {
+      "term": "faṣl qarīb",
+      "arabic": "الفصل القريب",
+      "english": "Proximate differentia",
+      "definition": "The immediate essential distinction by which the species is specified."
+    },
+    {
+      "term": "jins qarīb",
+      "arabic": "الجنس القريب",
+      "english": "Proximate genus",
+      "definition": "The nearest genus included in the subject's essential account."
+    },
+    {
+      "term": "māhiyya",
+      "arabic": "ماهية",
+      "english": "Quiddity",
+      "definition": "What a thing is, considered as the answer to the question 'What is it?' This need not itself establish its external existence."
+    },
+    {
+      "term": "mā ḥaqīqiyya",
+      "arabic": "ما الحقيقية",
+      "english": "Real what?",
+      "definition": "The same question of quiddity when existence is already established."
+    },
+    {
+      "term": "jins baʿīd",
+      "arabic": "جنس بعيد",
+      "english": "Remote genus",
+      "definition": "A genus above the proximate genus in a classificatory hierarchy; by itself it leaves more of the specific nature unspecified."
+    },
+    {
+      "term": "hal basīṭa",
+      "arabic": "هل بسيطة",
+      "english": "Simple 'whether'",
+      "definition": "The interrogative asking whether a thing exists at all, rather than whether it possesses some further attribute."
+    },
+    {
+      "term": "hal basīṭa",
+      "arabic": "هل البسيطة",
+      "english": "Simple existential question",
+      "definition": "Asks whether the subject exists."
+    },
+    {
+      "term": "taʿrīf lafẓī",
+      "arabic": "تعريف لفظي",
+      "english": "Verbal definition",
+      "definition": "An explanation of a word through another expression whose customary signification is already understood; it does not yet explain the essence of the thing."
+    }
+  ]
+}

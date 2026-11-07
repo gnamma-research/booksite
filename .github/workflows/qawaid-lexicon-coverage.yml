@@ -1,0 +1,25 @@
+name: Qawaid dictionary coverage
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/qawaid-lexicon-coverage.yml'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/check-lexicon-coverage.mjs'
+      - 'texts/al-turka/qawaid-al-tawhid/data/linked-lexicon.js'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: texts/al-turka/qawaid-al-tawhid
+      - run: node texts/al-turka/qawaid-al-tawhid/qa/check-lexicon-coverage.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawaid-lexicon-coverage
+          path: texts/al-turka/qawaid-al-tawhid/qa/lexicon-coverage-report.json
+          retention-days: 7

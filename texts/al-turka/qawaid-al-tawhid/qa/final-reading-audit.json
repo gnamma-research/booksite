@@ -1,0 +1,288 @@
+{
+  "date": "2026-11-04",
+  "scope": "final source-based reading edition; no newly recovered manuscript text",
+  "commentaryUnits": 110,
+  "matnUnits": 61,
+  "linkedMatnUnits": 61,
+  "introductoryUnits": 40,
+  "mainUnits": 64,
+  "concludingUnits": 6,
+  "englishWords": 48760,
+  "allArabicEnglishExportSectionsPresent": true,
+  "recordedMainSourceHashesReproduced": 64,
+  "sourceHashChecks": [
+    {
+      "unit": "SH-001",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-002",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-003",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-004",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-005",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-006",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-007",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-008",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-009",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-010",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-011",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-012",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-013",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-014",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-015",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-016",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-017",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-018",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-019",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-020",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-021",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-022",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-023",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-024",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-025",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-026",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-027",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-028",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-029",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-030",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-031",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-032",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-033",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-034",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-035",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-035-B",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-036",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-036-B",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-037",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-038",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-039",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-039-B",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-040",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-040-B",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-041",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-042",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-043",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-044",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-045",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-046",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-047",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-048",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-049",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-050",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-051",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-052",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-053",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-054",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-055",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-056",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-057",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-058",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-059",
+      "recordedSourceHashReproduced": true
+    },
+    {
+      "unit": "SH-060",
+      "recordedSourceHashReproduced": true
+    }
+  ],
+  "fourAncestralBridgesSeparatelyAttributed": true,
+  "protectedTextsUnchanged": {
+    "data/units.js": "5e8b19062486059043909e479a856d23e98a74f30313fe950a017ef9e8b236bb",
+    "data/parallel-matn.md": "8297e3ba2cc44bd740d8b03098bf53180eab4a6736cf7ae33884b73676cab7b5",
+    "data/commentary-main-001-019.js": "c30156557b8fd448654952e806f9b3724041fe49a1b324880a54bff1fec42c03",
+    "data/commentary-main-020-060.js": "ec2efd544b3532dd8b6cedee297094c0cf1e7edb23679557289edd6546fadf10"
+  },
+  "qt059OriginalLacuna": "noted and deferred, no reconstruction",
+  "freshSourceWebsiteAccess": "not part of this audit; retained electronic sources used",
+  "independentManuscriptsCollated": 0,
+  "completeAvailableSourceTranslation": true,
+  "manuscriptCriticalEditionComplete": false,
+  "browserInteractionTest": "synthetic DOM suite rerun successfully; no real-device visual claim",
+  "readabilityCorrection": "SH-061-A: closures -> locks for أقفاله; Arabic unchanged; variant note preserved",
+  "stalePilotQueueRemoved": true,
+  "singleFileReaderGenerated": true,
+  "singleFileSha256": "4d2c7699e9537bd15e6017c193a30024317e0fa3e813e511e7087b771cca3e48"
+}

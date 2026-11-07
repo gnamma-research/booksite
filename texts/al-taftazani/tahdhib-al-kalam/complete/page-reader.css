@@ -1,0 +1,16 @@
+.sr-only{position:absolute;left:-9999px}.sr-only:focus{left:12px;top:12px;background:var(--paper);padding:9px;z-index:100}
+.complete-layout{max-width:1510px;grid-template-columns:minmax(190px,285px) minmax(0,1fr)}
+.complete-layout .side{max-height:calc(100svh - 30px)}
+.page-list{list-style:none}.page-list li a{font-size:12px;line-height:1.5;padding:8px 7px;display:block}.page-list li.active a{color:var(--accent);background:var(--soft);font-weight:600}
+.page-list .chapter-heading{position:sticky;top:0;background:var(--bg);z-index:1;margin:16px 0 7px;padding:7px 0 6px;font:600 12px system-ui;color:var(--accent)}
+.full-page-heading{font:400 clamp(23px,3vw,32px)/1.3 Georgia;margin:5px 0}
+.full-reading{display:block}.full-reading .english{padding:23px max(20px,3vw);font-size:18px;line-height:1.82}
+.full-reading p{margin:0 0 17px}.full-reading p:last-child{margin-bottom:0}
+.full-notes{padding:13px max(20px,3vw)}.full-notes h3{margin:2px 0 10px;font:600 14px system-ui;color:var(--accent)}.full-notes p{font:14px/1.7 system-ui;margin:8px 0}
+.full-notes[hidden],#commentary-panel[hidden]{display:none}
+.full-page-unit .xref{display:flex;gap:13px;align-items:center;justify-content:space-between;flex-wrap:wrap}.full-page-unit .xref span{font:11px system-ui;color:var(--muted)}
+.page-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:16px;font:12px system-ui}.page-footer button{background:var(--paper);border:1px solid var(--rule);padding:9px 14px;color:var(--ink);border-radius:6px}.page-footer button:disabled{opacity:.35;cursor:default}
+.page-footer #progress{color:var(--muted)}.mobile-contents{display:none;background:var(--paper);border:1px solid var(--rule);padding:8px 12px;border-radius:5px;color:var(--ink);margin:9px 0}
+#commentary-panel .scholium{padding-top:16px}.scholium-english{font:16px/1.72 Georgia}.scholium-arabic{max-width:100%;overflow-wrap:anywhere}
+@media(max-width:860px){.mobile-contents{display:block}.complete-layout .side{max-height:none}.page-list{display:none;max-height:280px;overflow:auto;border:1px solid var(--rule);border-radius:8px}.page-list.open{display:block}.full-reading .english{font-size:16px;padding:18px}.full-page-heading{font-size:25px}.page-footer button{padding:9px 11px}.complete-layout .topnav{flex-wrap:wrap}}
+@media print{.full-page-unit{border:0}.full-notes,.commentary-extension{display:block!important}.page-list,.page-footer{display:none}}

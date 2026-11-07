@@ -1,0 +1,154 @@
+name: Daruri full dictionary and sinaa scholarly PDF release
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'daruri/dictionary-data.json'
+      - 'daruri/build/data/full-headwords.json'
+      - 'daruri/build/build_editions.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daruri-full-dictionary-release-master
+  cancel-in-progress: false
+
+jobs:
+  verify-and-publish:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check reader syntax and complete-lexicon source parity
+        run: |
+          node --check daruri/full-dictionary-context.js
+          node --check daruri/full-dictionary-data.js
+          node --check daruri/quran-context-ui.js
+          node --check daruri/dictionary-r3-20261020.js
+          node --check daruri/qa/verify-full-dictionary-web.js
+          python daruri/build/export_full_dictionary_web.py --check
+          node daruri/qa/verify-full-dictionary-web.js
+      - name: Install browser QA dependencies
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.58.0
+          python -m playwright install --with-deps chromium
+      - name: Test desktop and mobile dictionary interactions
+        shell: bash
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 > /tmp/gnamma-full-dictionary-http.log 2>&1 &
+          server=$!
+          trap 'kill $server || true' EXIT
+          for i in {1..60}; do
+            if curl --silent --fail http://127.0.0.1:8123/daruri/ > /dev/null; then break; fi
+            sleep 0.25
+          done
+          python daruri/qa/verify_full_dictionary_browser.py
+      - name: Install canonical PDF toolchain
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libpango-1.0-0 libpangocairo-1.0-0 libharfbuzz0b libfribidi0 fonts-dejavu-core
+          python -m pip install -q -r daruri/build/requirements.txt "PyMuPDF==1.26.7" "reportlab>=4,<5" "pypdf>=5,<7"
+      - name: Build the five reading PDFs and complete lexicon companion
+        run: |
+          python daruri/build/build_editions.py --output-dir /tmp/gnamma-full-dictionary-pdfs
+          python daruri/build/verify_structure.py --output-dir /tmp/gnamma-full-dictionary-pdfs
+          python daruri/build/export_lexicon.py --output-dir /tmp/gnamma-full-dictionary-pdfs
+          python - <<'PY'
+          from pathlib import Path
+          import fitz
+          d=Path('/tmp/gnamma-full-dictionary-pdfs')
+          files=['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf',
+                 'daruri-arabic-vowelled.pdf','daruri-historical-lexicon.pdf']
+          for name in files:
+              p=d/name
+              assert p.exists() and p.stat().st_size>30000, name
+              with fitz.open(p) as pdf:
+                  assert len(pdf)>1, name
+                  if name in ('daruri.pdf','daruri-historical-lexicon.pdf'):
+                      words=''.join(''.join(page.get_text().split()) for page in pdf)
+                      assert 'thejuristdoesnotmanufacturetheauthority' in words.lower(),name
+                  print(name,len(pdf),'pages; source commentary checked')
+          PY
+      - name: Synchronize published PDFs, metadata and static links
+        run: |
+          cp /tmp/gnamma-full-dictionary-pdfs/daruri.pdf daruri/
+          cp /tmp/gnamma-full-dictionary-pdfs/daruri-study.pdf daruri/
+          cp /tmp/gnamma-full-dictionary-pdfs/daruri-english.pdf daruri/
+          cp /tmp/gnamma-full-dictionary-pdfs/daruri-arabic.pdf daruri/
+          cp /tmp/gnamma-full-dictionary-pdfs/daruri-arabic-vowelled.pdf daruri/
+          cp /tmp/gnamma-full-dictionary-pdfs/daruri-historical-lexicon.pdf daruri/
+          cp /tmp/gnamma-full-dictionary-pdfs/*.metadata.json daruri/build/release/
+          python daruri/build/update_release.py --rebuilt-dir /tmp/gnamma-full-dictionary-pdfs --revision daruri14-sinaa-full-dictionary-20261025 --edition-date 2026-10-25 --apply | tee daruri/build/release/release-update.json
+          python daruri/build/update_release.py --rebuilt-dir /tmp/gnamma-full-dictionary-pdfs --revision daruri14-sinaa-full-dictionary-20261025 --edition-date 2026-10-25 --check
+      - name: Safely integrate verified PDFs with current master and publish
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "gnamma-research-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # PDFs must match the canonical text and lexicon at checkout.
+          base_reader=$(git rev-parse HEAD:daruri/edition-r3-20261020.js)
+          base_lexicon=$(git rev-parse HEAD:daruri/build/data/full-headwords.json)
+          for attempt in {1..8}; do
+            echo "Publish attempt $attempt: refresh master without overwriting parallel reader edits"
+            git fetch origin master
+            current_reader=$(git rev-parse origin/master:daruri/edition-r3-20261020.js)
+            current_lexicon=$(git rev-parse origin/master:daruri/build/data/full-headwords.json)
+            if [[ "$current_reader" != "$base_reader" || "$current_lexicon" != "$base_lexicon" ]]; then
+              echo "::error::Primary reader text or lexicon changed while PDFs built. Regenerate before release."
+              exit 1
+            fi
+            # Safe on disposable CI runner. Recompute release links from latest
+            # site files rather than rebasing a stale giant HTML/JS patch.
+            git reset --hard origin/master
+            cp /tmp/gnamma-full-dictionary-pdfs/daruri.pdf daruri/
+            cp /tmp/gnamma-full-dictionary-pdfs/daruri-study.pdf daruri/
+            cp /tmp/gnamma-full-dictionary-pdfs/daruri-english.pdf daruri/
+            cp /tmp/gnamma-full-dictionary-pdfs/daruri-arabic.pdf daruri/
+            cp /tmp/gnamma-full-dictionary-pdfs/daruri-arabic-vowelled.pdf daruri/
+            cp /tmp/gnamma-full-dictionary-pdfs/daruri-historical-lexicon.pdf daruri/
+            cp /tmp/gnamma-full-dictionary-pdfs/*.metadata.json daruri/build/release/
+            python daruri/build/update_release.py --rebuilt-dir /tmp/gnamma-full-dictionary-pdfs --revision daruri14-sinaa-full-dictionary-20261025 --edition-date 2026-10-25 --apply > daruri/build/release/release-update.json
+            python daruri/build/update_release.py --rebuilt-dir /tmp/gnamma-full-dictionary-pdfs --revision daruri14-sinaa-full-dictionary-20261025 --edition-date 2026-10-25 --check
+            python daruri/build/export_full_dictionary_web.py --check
+            node daruri/qa/verify-full-dictionary-web.js
+            git add daruri/daruri.pdf daruri/daruri-study.pdf daruri/daruri-english.pdf daruri/daruri-arabic.pdf daruri/daruri-arabic-vowelled.pdf daruri/daruri-historical-lexicon.pdf
+            git add daruri/build/release/*.metadata.json daruri/build/release/release-update.json
+            git add daruri/index.html daruri/edition-r3-20261020.js daruri/pdf-editions-manifest.json daruri/download-bundle.js daruri/sw.js
+            if git diff --cached --quiet; then
+              echo "Canonical PDFs and links already published"; exit 0
+            fi
+            git commit -m "Publish verified Daruri sinaa full lexicon and six PDF editions [skip ci]"
+            if git push origin HEAD:master; then
+              echo "All six PDFs and fresh website links published without force push"
+              exit 0
+            fi
+            echo "Remote changed while publishing; regenerate links on fresh master"
+            sleep 2
+          done
+          echo "::error::Could not publish after eight safe retries"
+          exit 1
+      - name: Preserve browser and PDF QA evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-sinaa-full-dictionary-qa
+          path: |
+            /tmp/gnamma-full-dictionary-browser/*.png
+            /tmp/gnamma-full-dictionary-pdfs/*.metadata.json
+            /tmp/gnamma-full-dictionary-pdfs/structure-verification.json
+            /tmp/gnamma-full-dictionary-http.log
+          if-no-files-found: ignore

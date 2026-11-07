@@ -64,7 +64,10 @@ async function exercise(engine,mobile,width=390){
    assert.ok(target.x>=-1&&target.x+target.width<=width+1,
      name+': saved-items target must fit inside the mobile viewport');
    assert.match(await summary.getAttribute('aria-label'),/7 saved items in section 195/);
-   await summary.click();
+   // Exercise one genuine mobile tap, rather than click()-only activation.
+   const touchTarget=await summary.boundingBox();
+   await page.touchscreen.tap(touchTarget.x+touchTarget.width/2,
+    touchTarget.y+touchTarget.height/2);
    const popup=page.locator('#gn-dock-saved-sheet');
    await popup.waitFor();
    const sheetRect=await popup.boundingBox();
@@ -102,6 +105,11 @@ async function exercise(engine,mobile,width=390){
    await page.keyboard.press('Escape');
    assert.equal(await page.locator('#gn-dock-saved-sheet').count(),0);
    await items.locator('[data-gn-mark="dictionary"]').click();
+   // The compact sheet also opens for one record; select that actual item.
+   const dictionarySheet=page.locator('#gn-dock-saved-sheet');
+   await dictionarySheet.waitFor({state:'visible'});
+   assert.equal(await dictionarySheet.locator('.gn-dock-sheet-item').count(),1);
+   await dictionarySheet.locator('.gn-dock-sheet-item').click();
    await page.locator('#detailTitle').waitFor();
    assert.match(await page.locator('#detailTitle').innerText(),/mafhūm/i);
   }

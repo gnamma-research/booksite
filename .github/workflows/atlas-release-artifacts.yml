@@ -1,0 +1,157 @@
+name: Gnamma Intellectual Atlas — revision-7.2 PDF and offline edition
+
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - 'research/intellectual-atlas/**'
+      - '.github/workflows/atlas-release-artifacts.yml'
+  push:
+    branches: [master]
+    paths:
+      - 'research/intellectual-atlas/build.py'
+      - 'research/intellectual-atlas/build_release.py'
+      - 'research/intellectual-atlas/atlas-app.js'
+      - 'research/intellectual-atlas/site.css'
+      - 'research/intellectual-atlas/index.html'
+      - 'research/intellectual-atlas/README.md'
+      - 'research/intellectual-atlas/neoplatonism/**'
+      - 'research/intellectual-atlas/downloads/intellectual-atlas-data.json'
+      - '.github/workflows/atlas-release-artifacts.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: intellectual-atlas-release-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  critical-pdf-and-offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF and font dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-dejavu-core poppler-utils
+          python -m pip install -q reportlab==4.4.9 pypdf==6.4.1
+      - name: Validate canonical source and synchronize HTML
+        run: python research/intellectual-atlas/build.py
+      - name: Build critical PDF and offline ZIP
+        run: python research/intellectual-atlas/build_release.py
+      - name: Validate ten bilingual chapters, source links and offline reading edition
+        run: python research/intellectual-atlas/tests/verify_summa_edition.py
+      - name: Validate late Persian Indian and post-Tajrid primary editions
+        run: python research/intellectual-atlas/tests/verify_late_commentators_edition.py
+      - name: Rebuild publication checksum manifest
+        run: python research/intellectual-atlas/build.py
+      - name: Verify full reference and portable viewer archive
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, zipfile
+          from pathlib import Path
+          from pypdf import PdfReader
+          b=Path('research/intellectual-atlas')
+          d=json.loads((b/'downloads/intellectual-atlas-data.json').read_text())
+          m=json.loads((b/'publication.json').read_text())
+          assert (len(d['nodes']),len(d['edges']),len(d['sources']),len(d['textual_families']))==(386,362,359,20)
+          assert m['entries']==386 and m['textual_relationships']==362
+          assert m['sources']==359 and m['scholarly_networks']==5
+          assert m['revision']=='avicennian-extensions-7.2-2026-10-30'
+          pdf=b/'downloads/Intellectual_Atlas_Reference_Revision7.pdf'
+          off=b/'downloads/Gnamma_Intellectual_Atlas_Offline_Revision7.zip'
+          reader=PdfReader(str(pdf))
+          assert len(reader.pages)>=65, f'Unusually short register: {len(reader.pages)} pages'
+          first=reader.pages[0].extract_text()
+          assert '386' in first and '362' in first and 'Neoplatonic' in first
+          assert pdf.stat().st_size>55000
+          with zipfile.ZipFile(off) as z:
+              assert z.testzip() is None
+              names=set(z.namelist())
+              root='research/intellectual-atlas/'
+              assert root+'index.html' in names and root+'atlas-app.js' in names
+              assert root+'site.css' in names
+              assert root+'neoplatonism/index.html' in names
+              assert root+'avicennian-summa/index.html' in names
+              assert root+'avicennian-summa/causal-dependence.html' in names
+              assert root+'avicennian-summa/chapters/index.html' in names
+              assert root+'avicennian-summa/chapters/reader.html' in names
+              assert root+'avicennian-summa/primary-translations.html' in names
+              assert root+'avicennian-summa/late-commentators.html' in names
+              assert root+'avicennian-summa/INDIAN_PRIMARY_QUOTATION_01_KHAYRABADI_HEAT.md' in names
+              assert root+'avicennian-summa/LATE_WITNESS_REGISTER_2026_10_31.json' in names
+              assert root+'avicennian-summa/handoffs/STAGE_05_LATE_COMMENTATORS.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_01_LAHIJI_GAWHAR_ACTIVE_INTELLECT.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_02_LAHIJI_GAWHAR_TEMPORAL_CAUSATION.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_03_LAHIJI_GAWHAR_DIVINE_AGENCY.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_04_LAHIJI_GAWHAR_EMANATION_UNITY.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_05_INDIAN_TAHANAWI_MIR_ZAHID_JAL.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_06_TAFTAZANI_MAQASID_MENTAL_EXISTENCE.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_07_MAWAQIF_JURJANI_GLOSSES.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_08_LAHIJI_SARMAYA_IMAN_DEPENDENCE.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_09_POST_TAJRID_QUṢHJI_KHAFRI_KHWANSARI_POWER.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_10_NARAQI_LAMAAT_EXISTENCE_ESSENCE.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_11_NARAQI_SHARH_SHIFA_SECOND_INTENTIONS.md' in names
+              assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_E_AVICENNA_VI1.md' in names
+              assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_B_AVICENNA_VI2.md' in names
+              assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md' in names
+              assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md' in names
+              assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_F_AQUINAS_ST104.md' in names
+              assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_G_AQUINAS_ST104_3_4.md' in names
+              assert root+'avicennian-summa/handoffs/STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md' in names
+              assert root+'avicennian-summa/SYSTEMATIC_FINDINGS_AND_EVIDENCE_AUDIT.md' in names
+              assert root+'avicennian-summa/primary-translation-causation.md' in names
+              assert root+'avicennian-summa/chapters/01-mental-existence-and-quiddity.md' in names
+              assert root+'avicennian-summa/chapters/07-unity-plurality-and-divine-knowledge.md' in names
+              assert root+'avicennian-summa/chapters/09-mawaqif-maqasid-hylomorphism-mental-existence.md' in names
+              assert root+'avicennian-summa/chapters/10-conservation-first-cause-and-secondary-agency.md' in names
+              assert root+'avicennian-summa/HANDOFF_CURRENT.md' in names
+              assert root+'avicennian-summa/handoffs/STAGE_01_CORPUS_AUDIT.md' in names
+              assert root+'avicennian-summa/handoffs/STAGE_02_TEN_CHAPTER_EDITION.md' in names
+              assert root+'avicennian-summa/handoffs/STAGE_03_RELEASE_HANDOFF.md' in names
+              assert root+'avicennian-summa/SOURCE_REGISTER.md' in names
+              assert root+'downloads/intellectual-atlas-data.json' in names
+              assert root+'downloads/Intellectual_Atlas_Reference_Revision7.pdf' in names
+              j=json.loads(z.read(root+'downloads/intellectual-atlas-data.json'))
+              assert len(j['nodes'])==386 and len(j['edges'])==362
+              html=z.read(root+'index.html').decode()
+              assert 'Textual family' in html and 'Greek' in html
+          print(json.dumps({'pdf_pages':len(reader.pages),'pdf_bytes':pdf.stat().st_size,'zip_bytes':off.stat().st_size,'source_counts':[386,362,359,20,5]},indent=2))
+          PY
+          mkdir -p /tmp/atlas-pdf-preview
+          pdftoppm -f 1 -l 2 -r 110 -png research/intellectual-atlas/downloads/Intellectual_Atlas_Reference_Revision7.pdf /tmp/atlas-pdf-preview/page >/dev/null 2>&1
+          test -s /tmp/atlas-pdf-preview/page-001.png
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gnamma-atlas-revision7-2-reference-offline-and-preview
+          path: |
+            research/intellectual-atlas/downloads/Intellectual_Atlas_Reference_Revision7.pdf
+            research/intellectual-atlas/downloads/Gnamma_Intellectual_Atlas_Offline_Revision7.zip
+            research/intellectual-atlas/publication.json
+            /tmp/atlas-pdf-preview/*.png
+          if-no-files-found: ignore
+      - name: Publish rebuilt PDF and offline archive on master
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f research/intellectual-atlas/downloads/Intellectual_Atlas_Reference_Revision7.pdf
+          git add -f research/intellectual-atlas/downloads/Gnamma_Intellectual_Atlas_Offline_Revision7.zip
+          git add research/intellectual-atlas/publication.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Atlas release: rebuild revision-7.2 PDF, portable viewer and checksums"
+            git push origin HEAD:master
+          else
+            echo "No generated changes to publish"
+          fi

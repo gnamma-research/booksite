@@ -1,0 +1,131 @@
+/* Tahdhīb terminology desk — introductory editorial glossary, never source words. */
+(function(){'use strict';
+const lexical=window.GNAMMA_TAHDHIB_GLOSSARY,reader=window.GnammaTahdhibReader;
+const corpus=window.GNAMMA_CRITICAL_CORPUS;
+if(!lexical||!reader||!corpus)return;
+const key='gnamma-tahdhib-glossary-v1-'+(reader.isDivision?'logic':'kalam');
+const $=q=>document.querySelector(q);
+const el=(tag,cls,value)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(value!==undefined)x.textContent=value;return x};
+const norm=lexical.norm;
+const glossary=lexical.terms.slice();
+// Logic glossary also indexes translated al-Yazdī snippets, as a distinct source layer.
+// The original kalām glossary continues to index only its own primary corpus.
+const commentary=()=>{
+ if(!isLogicGlossary())return [];
+ const archived=(window.GNAMMA_YAZDI_LAYER?.entries||[]).filter(p=>!['L.03','L.04','L.05','L.06','L.07','L.08','L.09','L.10','L.11','L.12','L.13','L.14','L.15'].includes(p.unit)&&!(p.unit==='L.16'&&p.page>=86&&p.page<=94));
+ const contiguous=[
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_L03?.sourcePages||[]).map(p=>({...p,unit:'L.03'})),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS?.blocks||[]),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_L07?.sourceBlocks||[]),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q48_51?.blocks||[]),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q54_58?.sourceBlocks||[]),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q59_64?.blocks||[]),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q65_69?.blocks||[]),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q70_73?.blocks||[]),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q74_80?.blocks||[]),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q81_84?.blocks||[]),
+  ...(window.GNAMMA_YAZDI_CONTIGUOUS_Q86_94?.blocks||[])
+ ].map(p=>({...p,arabic:p.ar,english:p.en}));
+ return [...archived,...contiguous];
+};
+function isLogicGlossary(){return reader.isDivision===true;}
+const occurrences=glossary.map(term=>{
+ const needle=norm(term.ar),ids=[];
+ for(const unit of corpus.units){
+  if(norm(unit.ar).includes(needle))ids.push(unit);
+ }
+ return ids;
+});
+let overlay=null,lastTrigger=null;
+function hide(){if(!overlay)return;overlay.hidden=true;lastTrigger?.focus?.();lastTrigger=null;}
+function init(){
+ const toolbar=$('#gn-experience-controls');if(!toolbar)return;
+ const button=el('button','toolbar-icon gn-terms-button','Terms');
+ button.type='button';button.title='Scholarly terminology and source locations';
+ button.setAttribute('aria-label','Open the Tahdhīb terminology desk');
+ button.addEventListener('click',()=>show(button));
+ toolbar.append(button);
+ overlay=el('div','gn-terms-overlay');overlay.id='gn-terms-overlay';overlay.hidden=true;
+ overlay.addEventListener('click',e=>{if(e.target===overlay)hide()});
+ document.body.append(overlay);
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!overlay.hidden)hide()});
+}
+function show(trigger){
+ lastTrigger=trigger||document.activeElement;
+ const panel=el('section','gn-terms-sheet');panel.setAttribute('role','dialog');
+ panel.setAttribute('aria-modal','true');panel.setAttribute('aria-labelledby','gn-terms-title');
+ const head=el('div','gn-terms-head'),title=el('h2',null,'Tahdhīb terminology');
+ title.id='gn-terms-title';
+ const close=el('button','gn-terms-close','×');close.type='button';close.title='Close glossary';
+ close.setAttribute('aria-label','Close glossary');close.addEventListener('click',hide);
+ head.append(title,close);
+ const explanation=el('p','gn-terms-warning',reader.isDivision?'Editorial definitions with source-linked matn and selected al-Yazdī commentary locators. This is not a critically collated historical dictionary.':'Introductory editorial definitions, not quotations from Taftāzānī or a historically collated technical dictionary. The term locations refer to the current source text.');
+ const field=el('label','gn-terms-search');field.append(el('span',null,'Find Arabic or English terminology'));
+ const input=el('input');input.type='search';input.id='gn-terms-query';input.autocomplete='off';
+ input.placeholder='e.g. ماهية · necessity · syllogism';field.append(input);
+ const status=el('p','gn-terms-count'),list=el('div','gn-terms-list');
+ list.setAttribute('aria-label','Terminology entries');
+ function draw(){
+  list.replaceChildren();
+  const q=norm(input.value).trim();
+  const indexes=glossary.map((t,i)=>({t,i})).filter(x=>!q||norm(x.t.ar+' '+x.t.en+' '+x.t.explanation).includes(q));
+  status.textContent=indexes.length+' entries · '+corpus.units.length+' aligned source units searchable';
+  for(const {t,i} of indexes){
+   const row=el('article','gn-terms-entry');
+   const top=el('div','gn-terms-term-row'),arabic=el('h3','gn-terms-ar',t.ar);arabic.lang='ar';arabic.dir='rtl';
+   const english=el('strong','gn-terms-en',t.en);top.append(arabic,english);
+   row.append(top,el('p','gn-terms-gloss',t.explanation));
+   if(commentary().length){
+    const glossHits=commentary().filter(p=>norm(p.arabic).includes(norm(t.ar))||
+      (t.sourceUrl&&Number(t.page)===Number(p.page)&&norm(p.arabic).includes(norm(t.ar).slice(0,3))));
+    if(glossHits.length){
+      const group=el('div','gn-terms-occurrences');
+      group.append(el('span','gn-terms-occurs-label','al-Yazdī · '+glossHits.length+' translated source passage'+(glossHits.length===1?'':'s')+': '));
+      for(const p of glossHits.slice(0,12)){
+       const link=el('a','gn-terms-source-link','p. '+p.page+' · '+p.id);
+       link.href=p.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';
+       link.title='View the original printed commentary source';group.append(link);
+       if(window.GnammaYazdiLayer?.goTo){
+        const read=el('button','gn-terms-source-link','Read '+p.id);
+        read.type='button';read.setAttribute('aria-label','Read al-Yazdī passage '+p.id+' in the reader');
+        read.addEventListener('click',()=>{hide();window.GnammaYazdiLayer.goTo(p.id)});
+        group.append(read);
+       }
+      }
+      if(glossHits.length>12)group.append(el('span','gn-terms-more','+'+(glossHits.length-12)+' more'));
+      row.append(group);
+    }
+    if(t.sourceUrl&&!glossHits.length){
+      const source=el('a','gn-terms-source-link','Commentary source · p. '+t.page);
+      source.href=t.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';
+      row.append(source);
+    }
+   }
+   if(occurrences[i].length){
+    const locations=el('div','gn-terms-occurrences');
+    locations.append(el('span','gn-terms-occurs-label',occurrences[i].length+' text location'+(occurrences[i].length===1?'':'s')+': '));
+    for(const u of occurrences[i].slice(0,14)){
+     const b=el('button','gn-terms-source-link',u.id);
+     b.type='button';b.title='Read '+u.id+' in its original context';
+     b.addEventListener('click',()=>{
+      hide();
+      // Preserve currently selected study, flow, language and vocalization.
+      reader.go(u.page,'u-'+u.id.replace(/[^a-zA-Z0-9-]/g,'-'));
+     });
+     locations.append(b);
+    }
+    if(occurrences[i].length>14)locations.append(el('span','gn-terms-more','+'+(occurrences[i].length-14)+' more · use main search'));
+    row.append(locations);
+   }else row.append(el('p','gn-terms-unseen','No literal match in the current edition (this may be a related technical term).'));
+   list.append(row);
+  }
+  if(!indexes.length)list.append(el('p','gn-terms-empty','No matching entry; try the full Arabic/English text search.'));
+ }
+ input.addEventListener('input',draw);
+ const footer=el('p','gn-terms-footer','Source terms and technical definitions are deliberately separate editorial layers. This glossary is not a critical-edition witness.');
+ panel.append(head,explanation,field,status,list,footer);overlay.replaceChildren(panel);overlay.hidden=false;
+ draw();input.focus();
+}
+init();
+window.GnammaTahdhibTerms={open:show,close:hide,size:glossary.length,coverage:occurrences.filter(a=>a.length).length};
+})();

@@ -966,7 +966,7 @@
     {
       "term": "istiqrāʾ",
       "ar": "اسْتِقْرَاء",
-      "definition": "Induction: discerning a pattern from cases, including the recovery of early jurists’ implicit methods from their decisions.",
+      "definition": "Induction from particular cases. In §4 Ibn Rushd says many universal notions in the discipline were validated through case-by-case examination of early legal opinions; he does not say every rule originated in that way.",
       "sections": [
         4,
         217
@@ -1058,8 +1058,9 @@
     {
       "term": "kalām",
       "ar": "كَلَام",
-      "definition": "Speech; also rational theology. Which sense applies depends on the argument, and the latter is not the whole subject of uṣūl.",
+      "definition": "Speech; also rational theology. In §7 the mutakallimūn are the practitioners of kalām whose established arrangement Ibn Rushd follows, not merely anyone discussing uṣūl. Elsewhere the intended sense depends on context; theology is not identical with uṣūl.",
       "sections": [
+        7,
         9,
         41,
         63,
@@ -2158,7 +2159,7 @@
     {
       "term": "ṣināʿa",
       "ar": "صِنَاعَة",
-      "definition": "Craft or disciplined art: an organized competence governed by methods and standards, not modern industrial production.",
+      "definition": "An intellectual art or disciplined expertise: mastery of reasoned operations according to their proper standards. In the Ḍarūrī, especially the canons and conditions governing valid inference from legal sources (§§2–6), not the manufacture of divine law. Fiqh is directed to action; uṣūl regulates how legal determinations are reached.",
       "sections": [
         1,
         2,
@@ -2230,7 +2231,7 @@
     {
       "term": "sibār",
       "ar": "سِبَار",
-      "definition": "Probe or testing instrument: the opening image for a discipline that guides the mind. It is not the name of a separate metaphysical science.",
+      "definition": "Method of examination or disciplined inquiry in §2, named by analogy with a physical instrument used to probe or measure. Its methodological function is to test reasoning alongside a guiding standard (qānūn); the literal instrument sense belongs in the lexical note.",
       "sections": [
         2
       ],
@@ -4631,7 +4632,7 @@
           "en": "A disposition of the soul from which voluntary actions proceed without deliberation; or, it is said, what concerns the manner of acting."
         }
       ],
-      "note": "",
+      "note": "Editorial comparison (not wording by al-Jurjānī or Ibn Rushd): In al-Ḍarūrī §§2–6, ṣināʿa denotes a disciplined intellectual art whose distinctive subject is the qawānīn and aḥwāl of valid legal inference. Ibn Rushd distinguishes this methodological knowledge from fiqh as knowledge directed towards action (§6); he also recognises that early jurists exercised its capacity before its rules were systematically articulated (§§3–4). In §231, the mujtahid requires the relevant canons and conditions. In §§237–241, Ibn Rushd rejects the idea that personal inclination creates the correctness of a legal ruling: evidence has its own indicative force. Juristic conclusions are formulated through inquiry, but the jurist does not manufacture the authority of revealed law. Later lexicographical accounts of ṣināʿa as acquired malaka or knowledge of how to operate are comparative evidence, not Ibn Rushd’s own explicit definition. Al-Fārābī’s description of logic as an intellectual art, Avicenna’s understanding of rational expertise, and the Scholastic distinction between ars and prudentia are useful philosophical comparisons; no direct borrowing is asserted.",
       "url": "https://www.islamicbook.ws/adab/la/altarifat-001.html",
       "completeness": "complete selected headword article",
       "sha256_ar": "44468832aac794fd7cb441a15066eb9689a3b174215fdba96d1ed2f30685f797"

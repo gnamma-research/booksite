@@ -1,0 +1,38 @@
+name: GNAMMA Arabic source-corpus integrity
+on:
+  push:
+    paths:
+      - 'research/intellectual-atlas/corpora/**'
+      - 'research/intellectual-atlas/build.py'
+      - 'research/intellectual-atlas/atlas-app.js'
+      - 'research/intellectual-atlas/publication.json'
+      - '.github/workflows/gnamma-corpora-verification.yml'
+  pull_request:
+    paths:
+      - 'research/intellectual-atlas/corpora/**'
+      - '.github/workflows/gnamma-corpora-verification.yml'
+  workflow_dispatch:
+
+jobs:
+  verify-corpus:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify recorded OpenITI source identities, byte-matched local mirrors and bibliography-backed edges
+        run: python research/intellectual-atlas/corpora/verify.py
+      - name: Validate JavaScript source reader and atlas parser
+        run: |
+          node --check research/intellectual-atlas/corpora/corpora.js
+          node --check research/intellectual-atlas/atlas-app.js
+      - name: Validate published atlas data and regenerate its manifest
+        run: python research/intellectual-atlas/build.py
+      - name: Verify unchanged atlas graph and substantive publication metadata
+        run: |
+          git diff --exit-code -- research/intellectual-atlas/index.html
+          python -c 'import json,subprocess; p="research/intellectual-atlas/publication.json"; before=json.loads(subprocess.check_output(["git","show","HEAD:"+p])); after=json.load(open(p,encoding="utf-8")); keys=["entries","textual_relationships","textual_family_routes","source_corpus","ui_revision","visual_modes","discipline_nav"]; failures=[k for k in keys if before.get(k)!=after.get(k)]; assert not failures, f"Build changed substantive publication fields: {failures}"'

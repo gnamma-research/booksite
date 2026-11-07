@@ -1,0 +1,46 @@
+/* Two attributed text layers; display only, without altering source text. */
+.layer-switches{display:flex;gap:5px;align-items:center}
+.layer-switch{display:inline-flex;align-items:center;gap:7px;min-height:36px;padding:6px 10px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--muted);font:600 12px ui-sans-serif,system-ui;white-space:nowrap}
+.layer-switch[aria-checked="true"]{color:var(--accent);background:var(--accent-soft);border-color:var(--accent)}
+.switch-track{width:24px;height:14px;padding:2px;background:var(--line);border-radius:20px;display:inline-flex;align-items:center;flex-shrink:0}
+.switch-track::after{content:"";width:10px;height:10px;background:var(--panel);border-radius:50%;transition:transform .15s}
+[aria-checked="true"] .switch-track{background:var(--accent)}
+[aria-checked="true"] .switch-track::after{transform:translateX(10px)}
+.switch-word{font-size:10px;min-width:18px}
+[data-text-layer][hidden]{display:none!important}
+.layered-unit{padding:10px 0 36px;scroll-margin-top:12px;overflow-anchor:none}
+.unit-heading{padding:12px 0 18px}.unit-heading h2{font:500 clamp(23px,3vw,32px)/1.35 var(--font-en);margin:9px 0 0}
+.layer-author{display:flex;gap:10px;flex-wrap:wrap;align-items:center;font:500 11px/1.7 ui-sans-serif,system-ui;color:var(--muted);letter-spacing:.01em;margin-bottom:14px}
+.layer-author b{font-size:12px;font-weight:700;color:var(--accent)}.layer-author [lang="ar"]{font:18px var(--font-ar);margin-inline-start:5px}
+.matn-layer{border-inline-start:3px solid var(--accent);padding:18px 20px 10px;background:var(--panel);border-radius:0 8px 8px 0;margin:0 0 18px}
+.matn-layer .text-pair .ar{font-weight:600}.matn-layer .text-pair .en{font-weight:500}
+.sharh-layer{border:0;border-top:1px solid var(--line);margin:14px 0 22px;padding:0 0 10px}
+.sharh-layer>summary{cursor:pointer;position:relative;padding:15px 30px 13px 0;list-style:none}
+.sharh-layer>summary::-webkit-details-marker{display:none}
+.sharh-layer>summary::after{content:"+";position:absolute;inset-inline-end:3px;top:18px;font:400 22px ui-sans-serif,system-ui;color:var(--accent)}
+.sharh-layer[open]>summary::after{content:"−"}
+.sharh-layer summary .layer-author{margin:0 0 5px}.sharh-heading{display:block;font:500 18px/1.45 var(--font-en);color:var(--ink)}
+.fold-hint{font:10px ui-sans-serif,system-ui;color:var(--muted)}
+.sharh-content{padding:2px 0 0}.sharh-content>.section-meta{margin:0 0 13px}.sharh-content .ar{font-weight:400}
+.text-pair p{margin:0 0 1em;white-space:pre-line}.text-pair p:last-child{margin-bottom:0}
+.bridge-layer{margin-top:26px}.bridge-layer .layer-author{padding-bottom:4px}
+.dock-middle{min-width:0}.dock-middle .dock-center{width:100%;min-height:44px}
+.dock-layer-controls{display:none;justify-content:center;padding:3px 0;gap:6px}
+body[data-focus="2"] .dock-layer-controls,body[data-focus="3"] .dock-layer-controls{display:flex}
+body[data-focus="3"] .matn-layer{background:transparent;padding-inline-start:16px;padding-inline-end:0;border-radius:0}
+body[data-focus="3"] .layered-unit .unit-heading{padding-top:18px}body[data-focus="3"] .layered-unit .unit-heading h2{font-size:23px}
+body[data-focus="3"] .layered-unit{padding-bottom:20px}
+body[data-focus="2"] #reading-dock,body[data-focus="3"] #reading-dock{align-items:center}
+:root{--layer-controls-height:108px}html{scroll-padding-top:var(--layer-controls-height)}
+@media(max-width:720px){
+ #controlbar{flex-wrap:wrap;gap:5px}#controlbar .layer-switch{padding:5px 7px;gap:5px;min-height:36px}
+ .layer-switches{gap:4px}.matn-layer{padding:15px 13px 12px}.layer-author{gap:5px}.sharh-heading{font-size:18px}
+ .text-pair .ar{line-height:1.95}.layered-unit{scroll-margin-top:12px}
+ #controlbar .icon-btn{width:35px;min-width:35px;height:35px}
+ .dock-layer-controls .layer-switch{min-height:32px;font-size:11px;padding:4px 7px}
+ body[data-focus="3"] .reader-stage{padding-bottom:150px}
+ .unit-heading h2{font-size:24px}
+}
+@media(max-width:380px){#controlbar{justify-content:flex-start;padding-inline:8px}#controlbar .lang{margin-inline-end:auto}#controlbar .layer-switches{order:2;width:100%;justify-content:center}.layered-unit{scroll-margin-top:12px}:root{--layer-controls-height:160px}}
+@media(prefers-reduced-motion:reduce){.switch-track::after{transition:none}}
+@media print{[data-text-layer][hidden]{display:none!important}.sharh-layer>summary{list-style:none}.sharh-layer>summary::after,.fold-hint{display:none}.matn-layer{border:1px solid #ccc;background:white}.layer-switches{display:none}.layered-unit{break-inside:auto}}

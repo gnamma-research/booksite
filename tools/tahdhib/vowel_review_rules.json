@@ -1,0 +1,42 @@
+{
+  "schema": "gnamma-tahdhib-local-machine-vowel-corrections-v1",
+  "scope": "Corrections to machine-generated vowel marks in their immediate syntax; these are not authorial vocalizations or manuscript textual variants.",
+  "rules": [
+    {
+      "unit_id": "L.01",
+      "before": "سَوَاءٌ الطَّرِيقُ",
+      "after": "سَوَاءَ الطَّرِيقِ",
+      "reason": "The second complement of هدانا is accusative; الطريق is the genitive complement of سواء."
+    },
+    {
+      "unit_id": "L.01",
+      "before": "لَدَى الْأَفْهَامُ",
+      "after": "لَدَى الْأَفْهَامِ",
+      "reason": "الأفهام is genitive as the complement of لدى."
+    },
+    {
+      "unit_id": "L.01",
+      "before": "وَتَذْكِرَةٌ لِمَنْ",
+      "after": "وَتَذْكِرَةً لِمَنْ",
+      "reason": "Conjoined to تبصرةً in جعلته تبصرةً ... وتذكرةً; both objects are accusative."
+    },
+    {
+      "unit_id": "L.02",
+      "before": "فَتَصَوَّرُ،",
+      "after": "فَتَصَوُّرٌ،",
+      "reason": "This is the noun تصوّر parallel to تصديق, not the imperfect verb تصوّر."
+    },
+    {
+      "unit_id": "L.03",
+      "before": "وَعَلَى جُزْئِهِ تَضْمَنُ",
+      "after": "وَعَلَى جُزْئِهِ تَضَمُّنٌ",
+      "reason": "Noun of signification (تضمّن) parallel to مطابقة and التزام, not a finite verb."
+    },
+    {
+      "unit_id": "L.03",
+      "before": "يُنْسَبُ إِلَى النَّاقِلُ",
+      "after": "يُنْسَبُ إِلَى النَّاقِلِ",
+      "reason": "النّاقل is governed by the preposition إلى."
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "revision": "2026-10-31-post-asfar-scope",
+  "otherProject": {
+    "title": "Tajrīd Comparative Critical Sourcebook",
+    "reader": "https://gnamma-research.github.io/booksite/research/tajrid/",
+    "crosswalk": "research/tajrid/bookmap-crosswalk.json",
+    "distinct_source_records": 224,
+    "inherited_tusi_units": 837,
+    "named_contextual_works": 47,
+    "warning": "The source counts are records and named works, NOT independently collated full Arabic commentaries."
+  },
+  "purpose": "Prevent translation duplication; each project has a different historical question.",
+  "transferRules": [
+    "Tajrīd owns Ṭūsī matn, identical lemma, original objection/reply, Qūshjī/Jurjānī/Ḥillī/Lāhījī gloss critical translation and Dawwānī–Dashtakī exchange.",
+    "Late Avicennism owns the historical aftermath: how ontology, causality, natural philosophy, cognition, soul and divine agency were independently reformulated in later works after Asfār and the Tajrīd commentary tradition.",
+    "Shared overlapping lemmata are pointers into Tajrīd, not another extracted primary translation.",
+    "Do not automatically classify all Tajrīd witnesses as primary checked; preserve project status.",
+    "The current 20 late-reader historical records include texts by earlier authors as backgrounds, not twenty post-Asfar primary sources.",
+    "Identical author ≠ identical work: Lāhījī's Gawhar and Sarmaya are independent from Sharh al-Tajrid; link but do not conflate."
+  ],
+  "records": [
+    {
+      "id": "lah-shaw",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "locus": "I:90–93 · issues 23–24",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": "lahiji_shawariq",
+      "otherProjectAssociatedRecords": 62,
+      "otherProjectRelatedRecords": 1,
+      "otherProjectLink": "https://gnamma-research.github.io/booksite/research/tajrid/#book/lahiji_shawariq",
+      "relation": "Exact *Shawāriq* I:90–91 appears as Tajrīd records NEW05 and NEW06; Late edition additionally treats connected issue 24 and the wider argument.",
+      "handling": "shared-exact-page-partial",
+      "editorialRule": "Do NOT independently recollect/retranslate I:90–91 for Tajrīd. Reuse its textual evidence, cite both projects, and keep the larger I:90–93 discussion in Late reader only as a contextually fuller connected unit.",
+      "otherProjectRecordIds": [
+        "NEW05",
+        "NEW06"
+      ]
+    },
+    {
+      "id": "astar-choice",
+      "author": "Muḥammad Jaʿfar al-Astarābādī (reports Ṭūsī, Qūshjī, al-Khafrī, al-Khwānsārī)",
+      "locus": "vol.II pp.96–99",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": "astarabadi_barahin",
+      "otherProjectAssociatedRecords": 4,
+      "otherProjectRelatedRecords": 0,
+      "otherProjectLink": "https://gnamma-research.github.io/booksite/research/tajrid/#book/astarabadi_barahin",
+      "relation": "Astarābādī *al-Barāhīn*, vol.II pp.96–99 in Late Avicennism; Tajrīd records COLL26–28 and EXT14 are volume I pp.262,281–283.",
+      "handling": "same-work-distinct-locus",
+      "editorialRule": "Same work but demonstrably different loci; preserve the distinct late philosophical question and explicitly cross-reference Tajrīd where relevant.",
+      "otherProjectRecordIds": [
+        "COLL26",
+        "COLL27",
+        "COLL28",
+        "EXT14"
+      ]
+    },
+    {
+      "id": "taft-mental",
+      "author": "Saʿd al-Dīn al-Taftāzānī",
+      "locus": "pp.78–79",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": "taftazani_sharh_maqasid",
+      "otherProjectAssociatedRecords": 9,
+      "otherProjectRelatedRecords": 0,
+      "otherProjectLink": "https://gnamma-research.github.io/booksite/research/tajrid/#book/taftazani_sharh_maqasid",
+      "relation": "Exact *Sharḥ al-Maqāṣid* p.79 appears as Tajrīd SN01 and SN03; both are short extracts with incomplete collation.",
+      "handling": "shared-exact-page-partial",
+      "editorialRule": "Share source witness/page and attribution across projects. Use the longer objections-and-replies context when arguing about later epistemological development, but do not count it as a second independent textual witness.",
+      "otherProjectRecordIds": [
+        "SN01",
+        "SN03"
+      ]
+    },
+    {
+      "id": "jurj-mental",
+      "author": "al-Ījī / al-Jurjānī / unnamed marginal layers",
+      "locus": "vol.VI pp.7–8",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": "jurjani_mawaqif",
+      "otherProjectAssociatedRecords": 5,
+      "otherProjectRelatedRecords": 0,
+      "otherProjectLink": "https://gnamma-research.github.io/booksite/research/tajrid/#book/jurjani_mawaqif",
+      "relation": "Late reading *Sharḥ al-Mawāqif* composite vol.VI pp.7–8; Tajrīd records include a different composite and volumes/pages. Match the printed edition before claiming duplicate pages.",
+      "handling": "same-work-witness-uncertain",
+      "editorialRule": "Do not assume textual identity across editions/volumes. Preserve unattributed marginal voices and require scan-image checks before merging witness records.",
+      "otherProjectRecordIds": [
+        "SN05",
+        "SN09",
+        "NEW13",
+        "NEW14",
+        "NEW15"
+      ]
+    },
+    {
+      "id": "lah-eman",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "locus": "II.3.4 opening pp.290–293",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": "lahiji_shawariq",
+      "otherProjectAssociatedRecords": 62,
+      "otherProjectRelatedRecords": 1,
+      "otherProjectLink": "https://gnamma-research.github.io/booksite/research/tajrid/#book/lahiji_shawariq",
+      "relation": "related author, different work",
+      "handling": "independent-later-work",
+      "editorialRule": "Gawhar-i murad is a separate Persian work not mapped as a Tajrid original; do not treat passages as identical witness."
+    },
+    {
+      "id": "lah-eman-cont",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "locus": "Article II, Book III, Section IV pp.294–297",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": "lahiji_shawariq",
+      "otherProjectAssociatedRecords": 62,
+      "otherProjectRelatedRecords": 1,
+      "otherProjectLink": "https://gnamma-research.github.io/booksite/research/tajrid/#book/lahiji_shawariq",
+      "relation": "related author, different work",
+      "handling": "independent-later-work",
+      "editorialRule": "Gawhar IV conclusion, number of intellects and the Suhrawardi objection are distinct from Tajrid commentary and are the new original contribution."
+    },
+    {
+      "id": "lah-element",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "locus": "Article II, Book III, Section V pp.298–300",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": "lahiji_shawariq",
+      "otherProjectAssociatedRecords": 62,
+      "otherProjectRelatedRecords": 1,
+      "otherProjectLink": "https://gnamma-research.github.io/booksite/research/tajrid/#book/lahiji_shawariq",
+      "relation": "related author, different work",
+      "handling": "independent-later-work",
+      "editorialRule": "Gawhar V is distinct natural-philosophy context; compare with Avicenna Ilahiyyat IX.5, not a generic Tajrid lemma."
+    },
+    {
+      "id": "lah-active",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "locus": "II.3.6 pp.301–303",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": "lahiji_shawariq",
+      "otherProjectAssociatedRecords": 62,
+      "otherProjectRelatedRecords": 1,
+      "otherProjectLink": "https://gnamma-research.github.io/booksite/research/tajrid/#book/lahiji_shawariq",
+      "relation": "related author, different work",
+      "handling": "independent-later-work",
+      "editorialRule": "Gawhar VI is direct Persian preservation of tenth intellect and rational souls; novel topic not duplicate of Tajrid sourcebook."
+    },
+    {
+      "id": "lah-temporal",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "locus": "II.3.7 pp.304–306",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": "lahiji_shawariq",
+      "otherProjectAssociatedRecords": 62,
+      "otherProjectRelatedRecords": 1,
+      "otherProjectLink": "https://gnamma-research.github.io/booksite/research/tajrid/#book/lahiji_shawariq",
+      "relation": "related author, different work",
+      "handling": "independent-later-work",
+      "editorialRule": "Gawhar VII on time of the event vs existential cause is post-Sadrian independent source."
+    },
+    {
+      "id": "lah-divine",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "locus": "II.3.8 pp.307–309",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": "lahiji_shawariq",
+      "otherProjectAssociatedRecords": 62,
+      "otherProjectRelatedRecords": 1,
+      "otherProjectLink": "https://gnamma-research.github.io/booksite/research/tajrid/#book/lahiji_shawariq",
+      "relation": "related author, different work",
+      "handling": "independent-later-work",
+      "editorialRule": "Gawhar VIII on riḍā/qaṣd has a new question and its own preceding natural philosophy context."
+    },
+    {
+      "id": "lah-sarmaya",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "locus": "pp.37–38",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": "lahiji_shawariq",
+      "otherProjectAssociatedRecords": 62,
+      "otherProjectRelatedRecords": 1,
+      "otherProjectLink": "https://gnamma-research.github.io/booksite/research/tajrid/#book/lahiji_shawariq",
+      "relation": "related author, different work",
+      "handling": "independent-later-work",
+      "editorialRule": "Sarmaya-i iman is an independent Persian creed with analogous contingent-dependence arguments, useful for reception."
+    },
+    {
+      "id": "nara-actual",
+      "author": "Muḥammad Mahdī al-Narāqī",
+      "locus": "pp.72 and 82, noncontiguous",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": null,
+      "otherProjectAssociatedRecords": 0,
+      "otherProjectRelatedRecords": 0,
+      "otherProjectLink": null,
+      "relation": "author not represented in 47-work Tajrid inventory",
+      "handling": "primary-distinct",
+      "editorialRule": "Direct Narāqī al-Lamaʿāt arguments on particular existence vs quiddity; unique late Persian comparison with Asfar."
+    },
+    {
+      "id": "nara-second",
+      "author": "Muḥammad Mahdī al-Narāqī",
+      "locus": "vol.I pp.106–107 plus p.110 variant report",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": null,
+      "otherProjectAssociatedRecords": 0,
+      "otherProjectRelatedRecords": 0,
+      "otherProjectLink": null,
+      "relation": "author not represented in 47-work Tajrid inventory",
+      "handling": "primary-distinct",
+      "editorialRule": "Narāqī Sharḥ Ilāhiyyāt al-Shifāʾ and mental second intentions; unique later commentary witness."
+    },
+    {
+      "id": "taha-jal",
+      "author": "Muḥammad ʿAlī al-Tahānawī (reports Mīr Zāhid)",
+      "locus": "vol.I pp.620–621",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": null,
+      "otherProjectAssociatedRecords": 0,
+      "otherProjectRelatedRecords": 0,
+      "otherProjectLink": null,
+      "relation": "Tahānawī lexicon not represented in Tajrid 47-work inventory",
+      "handling": "primary-distinct",
+      "editorialRule": "Keep lexicographical mediation of Mir Zahid distinct from directly collated Tajrid gloss; seek independent original for future."
+    },
+    {
+      "id": "khay-fire",
+      "author": "Faḍl-i Ḥaqq al-Khayrābādī (through modern quotation)",
+      "locus": "Cairo 1904 pp.92–94 as quoted in 2023",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": null,
+      "otherProjectAssociatedRecords": 0,
+      "otherProjectRelatedRecords": 0,
+      "otherProjectLink": null,
+      "relation": "Khayrābādī physics not represented in Tajrid 47-work inventory",
+      "handling": "mediated-distinct",
+      "editorialRule": "Mediated anti-latent-fire arguments; direct original uncollated, not Tajrid translation."
+    },
+    {
+      "id": "av-vi1",
+      "author": "Ibn Sīnā",
+      "locus": "VI.1 · pp. 257–263",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": null,
+      "otherProjectAssociatedRecords": 0,
+      "otherProjectRelatedRecords": 0,
+      "otherProjectLink": null,
+      "relation": "Shifāʾ only named contextual in Tajrid, zero own records",
+      "handling": "background",
+      "editorialRule": "Background Avicennian original; cross-reference instead of duplicating in Tajrid."
+    },
+    {
+      "id": "av-vi2",
+      "author": "Ibn Sīnā",
+      "locus": "VI.2 · pp. 263–267",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": null,
+      "otherProjectAssociatedRecords": 0,
+      "otherProjectRelatedRecords": 0,
+      "otherProjectLink": null,
+      "relation": "Shifāʾ only named contextual in Tajrid",
+      "handling": "background",
+      "editorialRule": "Background Avicennian original; late source development questions are unique."
+    },
+    {
+      "id": "av-ix5",
+      "author": "Ibn Sīnā",
+      "locus": "IX.5 · pp. 409–413",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": null,
+      "otherProjectAssociatedRecords": 0,
+      "otherProjectRelatedRecords": 0,
+      "otherProjectLink": null,
+      "relation": "Shifāʾ only named contextual in Tajrid",
+      "handling": "background",
+      "editorialRule": "Original baseline for form-bestowal; cite directly in later philosophical change analysis."
+    },
+    {
+      "id": "aq-104a",
+      "author": "Thomas Aquinas",
+      "locus": "I q.104 aa.1–2",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": null,
+      "otherProjectAssociatedRecords": 0,
+      "otherProjectRelatedRecords": 0,
+      "otherProjectLink": null,
+      "relation": "Aquinas not a direct work in Tajrid 47-work crosswalk",
+      "handling": "external-comparison",
+      "editorialRule": "Comparative external baseline; not a Tajrid author."
+    },
+    {
+      "id": "aq-104b",
+      "author": "Thomas Aquinas",
+      "locus": "I q.104 aa.3–4",
+      "otherProject": "Tajrid",
+      "otherProjectWorkId": null,
+      "otherProjectAssociatedRecords": 0,
+      "otherProjectRelatedRecords": 0,
+      "otherProjectLink": null,
+      "relation": "Aquinas not a direct work in Tajrid 47-work crosswalk",
+      "handling": "external-comparison",
+      "editorialRule": "External comparative contrast on free creation."
+    }
+  ],
+  "prioritize": [
+    "Gawhar IV–VIII complete consecutive Persian argument sequence pp.290–309 with source boundaries.",
+    "Narāqī Lamaʿāt and Sharḥ Ilāhiyyāt, fill noncontiguous page gap and locate new debate on mental existence.",
+    "Khwānsārī, Jilwa, Sabzawārī/Zunūzī: original commentary on Asfār and Shifāʾ rather than retranslate Tajrīd glosses.",
+    "Ottoman Maybudī–Lārī natural philosophy, original Hidayat lemma and later reply.",
+    "Indian Khayrābādī, Mīr Zāhid, Qāḍī Mubārak and Ṣadrā on Hidāya: original contextual passage and transmission.",
+    "Independent Sadrian Asfār passages only as comparator, not a substitute for later critics."
+  ],
+  "overlapMethod": "Exact overlap requires same work AND edition-equivalent locus and same bounded argument; matching author/work/theme alone is not duplication.",
+  "sharedExactPageRecords": [
+    "lah-shaw",
+    "taft-mental"
+  ],
+  "sameWorkDifferentLocus": [
+    "astar-choice"
+  ],
+  "sameWorkNeedsEditionCollation": [
+    "jurj-mental"
+  ],
+  "sourceCrosswalkVerifiedAt": "research/tajrid/bookmap-crosswalk.json (224 record links, 47 works)"
+}

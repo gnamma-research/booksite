@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "builder": "tools/build-pdfs.cjs",
+  "files": [
+    {
+      "book": "al-Manṭiq",
+      "mode": "reading",
+      "filename": "muzaffar-al-mantiq-reading-A4.pdf",
+      "bytes": 141530,
+      "sha256": "88ad97a08447f173c85025ebc3bf21166950a65167eae5728514caf46aa1cedf",
+      "source_sha256": "586d14c04faed301ad2e7d70ac41cc98e6efec63ccf2e988903f2dbe0cf8c166",
+      "arabic_sections": 25,
+      "english_sections": 25
+    },
+    {
+      "book": "al-Manṭiq",
+      "mode": "study",
+      "filename": "muzaffar-al-mantiq-study-A4.pdf",
+      "bytes": 316991,
+      "sha256": "1746d2b4c44b7eaa16046eda6fe68c164bb7dd083632324077f70fd97dd5e6aa",
+      "source_sha256": "586d14c04faed301ad2e7d70ac41cc98e6efec63ccf2e988903f2dbe0cf8c166",
+      "arabic_sections": 25,
+      "english_sections": 25
+    },
+    {
+      "book": "al-Manṭiq",
+      "mode": "reference",
+      "filename": "muzaffar-al-mantiq-reference-A4.pdf",
+      "bytes": 250773,
+      "sha256": "ad48c9435ba1b1b9e462bd54b4919250e95338a985d4d3034e9e83395dcd8f74",
+      "source_sha256": "586d14c04faed301ad2e7d70ac41cc98e6efec63ccf2e988903f2dbe0cf8c166",
+      "arabic_sections": 25,
+      "english_sections": 25
+    },
+    {
+      "book": "Bidāyat al-Ḥikma",
+      "mode": "reading",
+      "filename": "bidayat-al-hikma-reading-A4.pdf",
+      "bytes": 584573,
+      "sha256": "c15cc82598a7ea256a945b1f20c204f6bfe65a7de575627d415174d391a17942",
+      "source_sha256": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
+      "arabic_sections": 111,
+      "english_sections": 111
+    },
+    {
+      "book": "Bidāyat al-Ḥikma",
+      "mode": "study",
+      "filename": "bidayat-al-hikma-study-A4.pdf",
+      "bytes": 1658757,
+      "sha256": "bcc485478328c9d1b030f53ab81ee494821010f15053fd0e4d117b6b9610ecfe",
+      "source_sha256": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
+      "arabic_sections": 111,
+      "english_sections": 111
+    },
+    {
+      "book": "Bidāyat al-Ḥikma",
+      "mode": "reference",
+      "filename": "bidayat-al-hikma-reference-A4.pdf",
+      "bytes": 1228520,
+      "sha256": "2a63c09b497c7836eee7e9b6eb236785876f25a62495b6ae06181d5188321a2c",
+      "source_sha256": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
+      "arabic_sections": 111,
+      "english_sections": 111
+    },
+    {
+      "book": "Nihāyat al-Ḥikma",
+      "mode": "reading",
+      "filename": "nihayat-al-hikma-reading-A4.pdf",
+      "bytes": 956491,
+      "sha256": "43615de3b65e5bf54a19273b34454539e48d650d5ee3374a32a32fb497f5686c",
+      "source_sha256": "d8dfb38d9ef9ab692aecfb57bd2eab9db385f84709ee37b03b10017a6ec94141",
+      "arabic_sections": 136,
+      "english_sections": 136
+    },
+    {
+      "book": "Nihāyat al-Ḥikma",
+      "mode": "study",
+      "filename": "nihayat-al-hikma-study-A4.pdf",
+      "bytes": 3731864,
+      "sha256": "536f13371bb63b3fbed093711ced694365313ea251371732d6b2be1094a71980",
+      "source_sha256": "d8dfb38d9ef9ab692aecfb57bd2eab9db385f84709ee37b03b10017a6ec94141",
+      "arabic_sections": 136,
+      "english_sections": 136
+    },
+    {
+      "book": "Nihāyat al-Ḥikma",
+      "mode": "reference",
+      "filename": "nihayat-al-hikma-reference-A4.pdf",
+      "bytes": 2745490,
+      "sha256": "e64f2bc3f558004acc3cee8f2c638fe92accf7a0698ce1d55c216806b4b76e4a",
+      "source_sha256": "d8dfb38d9ef9ab692aecfb57bd2eab9db385f84709ee37b03b10017a6ec94141",
+      "arabic_sections": 136,
+      "english_sections": 136
+    }
+  ]
+}
