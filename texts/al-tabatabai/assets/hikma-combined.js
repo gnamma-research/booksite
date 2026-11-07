@@ -483,6 +483,10 @@
     if (!sources.length) list.append(make('li', '', 'Source information will be added with the reading text.'));
     node.append(list);
     node.append(make('h3', '', 'Continue studying'));
+    const allContents = document.createElement('p');
+    allContents.append(link('Muẓaffar: complete authorial contents, six books', './muzaffar-al-mantiq/contents.html'));
+    allContents.append(make('span', 'source-domain', ' Source map, not a complete translation.'));
+    node.append(allContents);
     const guide = make('a', '', 'A guide to studying the two Hikma texts ↗'); guide.href = '../study-guide.html'; node.append(guide);
     node.append(make('p', '', ''));
     const audit = make('a', '', 'Editorial scope and recorded source readings ↗'); audit.href = '../editorial-status.html'; node.append(audit);
