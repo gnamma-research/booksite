@@ -20,6 +20,11 @@ CORPUS=json.loads((ROOT/'data/commentary-corpus.json').read_text(encoding='utf8'
 TERMS=load_js('data/linked-lexicon.js')['terms']
 REFS=load_js('data/primary-reference-register.js')['items']
 assert len(MATN)==61 and len(CORPUS)==110 and len(TERMS)==82
+# Prevent reintroducing the independently identified SH-058 mistranslation.
+SH058=[u for u in CORPUS if u['id']=='SH-058']
+assert len(SH058)==1, 'Missing SH-058 in the compiled commentary'
+assert 'sleep and lapses of attention' in SH058[0]['english'], 'SH-058 correction not propagated into PDF corpus'
+assert 'The same applies to sleep and wakefulness' not in SH058[0]['english'], 'Stale SH-058 translation in PDF corpus'
 INTRO=[x for x in CORPUS if x.get('part')=='introduction']
 OTHERS=[x for x in CORPUS if x.get('part')!='introduction']
 BY_QT=defaultdict(list)
