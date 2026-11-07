@@ -2,8 +2,8 @@
   "title": "Texts in Time · Islamic Intellectual Atlas",
   "revision": "tajrid-critical-links-8-2026-10-31",
   "status": "working research",
-  "ui_revision": "fiqh-source-maps-and-madhhab-routing-2026-11-07",
-  "mobile_interface_note": "Chart-first Explore menu with functioning madhhab-specific Fiqh source maps, Hadith, Tafsīr and Arabic-sciences source maps; 30 OpenITI versions (five local byte-matched, 25 pinned on demand). These are book authorities, not collation of legal issues or isnāds.",
+  "ui_revision": "integrated-source-bibliography-map-2026-11-07",
+  "mobile_interface_note": "Main source maps display all cited fiqh, usul, nahw, sarf and balagha bibliography records in selectable school/period clusters; work-level source links and undated status shown. Original 30-version reader and 404-entry philosophical timeline remain separate.",
   "whole_range_note": "Drag the six-dot grip from Whole atlas to restore a movable focus window, or tap another time on the overview to seek.",
   "date_marker_note": "Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.",
   "entries": 404,
@@ -19,6 +19,7 @@
     "textual family",
     "regional/historical network",
     "browse discipline",
+    "source-linked bibliographic category map",
     "separate source-text witness catalogue"
   ],
   "visual_modes": [
@@ -27,16 +28,17 @@
     "work connections",
     "catalogue",
     "evidence/audit",
-    "source-attested disciplinary work maps"
+    "source-attested disciplinary work maps",
+    "full citation-linked work map"
   ],
   "discipline_nav": [
     "mapped works",
     "philosophy, kalām and logic",
-    "fiqh and uṣūl (source tranche)",
+    "fiqh and uṣūl (integrated cited bibliography)",
     "hadith (source tranche)",
     "tafsīr (source tranche)",
     "taṣawwuf (selective mapped texts and source tranche)",
-    "Arabic language sciences (source tranche)"
+    "Arabic language sciences (integrated cited bibliography)"
   ],
   "textual_family_routes": 21,
   "source_corpus": {
@@ -53,7 +55,40 @@
     "complete_corpora_claimed": false,
     "license": "CC BY-NC-SA 4.0"
   },
-  "textual_family_note": "The established 21 philosophical/kalām textual families retain their canonical work IDs and evidence-qualified connections; the new disciplinary source maps list pinned OpenITI versions separately, with no invented legal-opinion or transmission edges.",
+  "bibliography_map": {
+    "mode": "source-cited category and author-death period map, undated works unplaced",
+    "openiti_primary_work_candidates": 1857,
+    "alreq_source_linked_entries": 4157,
+    "alreq_fiqh_by_school": {
+      "hanafi": {
+        "fiqh": 1033,
+        "usul": 101
+      },
+      "maliki": {
+        "fiqh": 380,
+        "usul": 30
+      },
+      "shafii": {
+        "fiqh": 782,
+        "usul": 119
+      },
+      "hanbali": {
+        "fiqh": 199,
+        "usul": 39
+      }
+    },
+    "alreq_nahw_entries": 892,
+    "alreq_sarf_entries": 109,
+    "alreq_balagha_entries": 261,
+    "cross_catalogue_conceptual_identity_collated": false,
+    "text_or_manuscript_acquired_from_alreq": false,
+    "historical_influence_edges_generated": 0,
+    "primary_source_registers": [
+      "corpora/expanded-bibliography.json",
+      "corpora/manuscript-full.json"
+    ]
+  },
+  "textual_family_note": "The 21 philosophical/kalām families retain canonical IDs and evidence-qualified edges. Fiqh, usul and Arabic source citations now appear inside the main atlas as a distinct bibliographic category/period map; no commentary or legal-opinion edges are inferred.",
   "tahdhib_added_entries": 26,
   "avicennian_extension_entries": 11,
   "avicennian_new_textual_routes": 2,
@@ -69,7 +104,7 @@
     "historical_revision7_register": 84,
     "focused_tahdhib_supplement": 9
   },
-  "pdf_note": "The live web atlas includes a functioning Fiqh/madhhab source map and the 30-version source library; the source map has no inferred legal or isnād edges. The revision 8 offline ZIP and earlier PDFs were issued before these updates and contain no new corpus source reader. The 30 digital versions are not claimed as independently collated critical editions.",
+  "pdf_note": "The live atlas now includes a complete citation-linked bibliographic category/period map for the imported 2025 OpenITI work candidates and public Alreq catalogue entries. The revision 8 offline ZIP and older PDFs predate these additions; they are historical snapshots. Catalogue references are not acquired manuscript scans, verified complete texts or legal-opinion graphs.",
   "download_sha256": {
     "Gnamma_Intellectual_Atlas_Offline_Revision7.zip": "50a705efd9814ff291cd317582257ae40f3e8ddb53e366ce30d103635b59a5a6",
     "Gnamma_Intellectual_Atlas_Offline_Revision8.zip": "c3b40b57db522d36e9ac379457aaf209d4be5fd588c6518a0e9860297d000013",

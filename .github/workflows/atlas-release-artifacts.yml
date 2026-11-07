@@ -51,7 +51,7 @@ jobs:
           assert (len(d['nodes']),len(d['edges']),len(d['sources']),len(d['textual_families'])) == (404,377,374,21)
           assert (m['entries'],m['textual_relationships'],m['sources'],m['textual_family_routes']) == (404,377,374,21)
           assert 'source-attested disciplinary work maps' in m['visual_modes']
-          assert 'fiqh-source-maps-and-madhhab-routing' in m['ui_revision']
+          assert 'integrated-source-bibliography-map' in m['ui_revision']
           assert len(registry['books']) == 30 and len(registry['relationships']) == 5
           fiqh = [b for b in registry['books'] if 'fiqh' in b['disciplines']]
           assert len(fiqh) == 10
@@ -59,10 +59,14 @@ jobs:
           html = (p/'index.html').read_text(encoding='utf8')
           embedded = json.loads(re.search(r'<script type="application/json" data-atlas>(.*?)</script>',html,re.S).group(1))
           assert embedded == d
-          assert 'sources-expansion-20261107' in html
+          assert 'full-bibliographic-map-20261107' in html
           assert (p/'corpora/expansion.html').is_file()
           assert (p/'corpora/expanded-bibliography.json').is_file()
           assert (p/'corpora/manuscript-shortlist.json').is_file()
+          assert (p/'corpora/manuscript-full.json').is_file()
+          assert (p/'corpora/bibliography-map.js').is_file()
+          assert m['bibliography_map']['alreq_source_linked_entries']==4157
+          assert m['bibliography_map']['openiti_primary_work_candidates']>=1800
           archive = p/'downloads/Gnamma_Intellectual_Atlas_Offline_Revision8.zip'
           assert archive.is_file()
           with zipfile.ZipFile(archive) as z:
