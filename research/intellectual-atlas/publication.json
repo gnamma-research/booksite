@@ -2,8 +2,8 @@
   "title": "Texts in Time · Islamic Intellectual Atlas",
   "revision": "tajrid-critical-links-8-2026-10-31",
   "status": "working research",
-  "ui_revision": "tajrid-reader-return-links-8-2026-10-31",
-  "mobile_interface_note": "Compact phone introduction, search-first controls, disclosed research/filters, inline family shortcuts; chart appears high on first screen.",
+  "ui_revision": "text-family-critical-links-2026-11-07",
+  "mobile_interface_note": "Search and text-family selector; critical-links filtering appears contextually within a selected family, not as an author-specific toolbar button.",
   "whole_range_note": "Drag the six-dot grip from Whole atlas to restore a movable focus window, or tap another time on the overview to seek.",
   "date_marker_note": "Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.",
   "entries": 404,
@@ -19,8 +19,8 @@
     "textual family",
     "regional/historical network"
   ],
-  "textual_family_routes": 20,
-  "textual_family_note": "Book-centred selective commentary/translation/reception networks; a source work can be in several families without implying doctrinal agreement",
+  "textual_family_routes": 21,
+  "textual_family_note": "Book-centred, overlapping routes with stable shared work IDs; Muḥaṣṣal and its commentaries are a distinct route, while Rāzī’s Sharḥ al-Ishārāt remains within the Ishārāt family.",
   "tahdhib_added_entries": 26,
   "avicennian_extension_entries": 11,
   "avicennian_new_textual_routes": 2,
@@ -36,10 +36,10 @@
     "historical_revision7_register": 84,
     "focused_tahdhib_supplement": 9
   },
-  "pdf_note": "Revision 8 adds Tajrid critical-reader links. The current data and offline map include these additions; revision 7 PDF/ZIP are historical snapshots. Historical PDFs from revisions 2 and 4 retain earlier scholarship and are marked legacy.",
+  "pdf_note": "The online map and canonical JSON include the 7 November 2026 Muḥaṣṣal textual-family update. The revision 8 offline ZIP predates this family update; revision 7 and earlier illustrated PDFs/ZIPs are historical snapshots. Offline and PDF contents must not be represented as synchronized with the latest text-family options.",
   "download_sha256": {
     "Gnamma_Intellectual_Atlas_Offline_Revision8.zip": "c3b40b57db522d36e9ac379457aaf209d4be5fd588c6518a0e9860297d000013",
-    "intellectual-atlas-data.json": "eb8e8048798766698b219a93deb667edffb2dd192506c54dd23baa1d1ef405f3"
+    "intellectual-atlas-data.json": "d6136c3cd5cd1d92b45cef20b8fa00c5c2233963d465887ffe46700cfcbf658e"
   },
   "reader_navigation_revision": "tajrid-reader-ui-3-2026-10-31",
   "reader_return_links": "Preserve safe debate views, passage context, filters and comparison selection."
