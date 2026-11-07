@@ -103,6 +103,86 @@ function saveHash(){
  }
  const h="#"+p.toString();if(h!==location.hash)try{history.replaceState(null,"",h)}catch{location.hash=h}
 }
+function detailHTML(){
+ const rel=edges().find(e=>e.id===S.edge);
+ if(rel)return "<aside class='dn-detail' role='region' aria-label='Documented textual relation'>"+
+  "<div class='dn-detail-head'><strong>Documented textual relationship</strong><button type='button' data-dn-close aria-label='Close evidence'>×</button></div>"+
+  "<h3>"+esc(rel.label)+"</h3><p>"+esc(rel.description)+"</p>"+
+  "<p><a href='"+esc(rel.url)+"' target='_blank' rel='noopener noreferrer'>Bibliographic evidence</a></p>"+
+  "<p class='dn-caveat'>This arrow records only the independently documented relationship, not general agreement or influence.</p></aside>";
+ const authority=jurists.find(a=>"jurist:"+a.id===S.book);
+ if(authority)return "<aside class='dn-detail' role='region' aria-label='Historical jurist'>"+
+  "<div class='dn-detail-head'><strong>Juristic authority</strong><button type='button' data-dn-close aria-label='Close details'>×</button></div>"+
+  "<h3>"+esc(authority.name)+"</h3><p dir='rtl' lang='ar'>"+esc(authority.arabic)+"</p>"+
+  "<p>"+esc(authority.description)+"</p><p>d. "+authority.death_ah+" AH (approximately "+ce(authority.death_ah)+" CE).</p>"+
+  "<p>Classification: "+esc(authority.status.replaceAll("_"," "))+"</p>"+
+  (authority.evidence_urls||[]).map((u,i)=>validURL(u)?
+    "<p><a href='"+esc(u)+"' target='_blank' rel='noopener noreferrer'>Historical evidence "+(i+1)+"</a></p>":"").join("")+
+  "<p class='dn-caveat'>A jurist, personal following and later doctrinal school are different historical units.</p></aside>";
+ const w=works.find(x=>x.id===S.book);
+ if(!w)return "<aside class='dn-detail' hidden></aside>";
+ return "<aside class='dn-detail' role='region' aria-label='Bibliographic work evidence'>"+
+ "<div class='dn-detail-head'><strong>Work / source evidence</strong><button type='button' data-dn-close aria-label='Close details'>×</button></div>"+
+ "<h3 dir='rtl' lang='ar'>"+esc(w.title)+"</h3><p>"+esc(w.author||"Author not identified")+"</p>"+
+ "<dl><dt>Date</dt><dd>"+esc(period(w)!==null?"Author d. "+w.death+" AH, c. "+period(w)+" CE. Not a composition date.":"Unplaced: no author date in this source.")+"</dd>"+
+ "<dt>Disciplines</dt><dd>"+esc(w.genres.join(", "))+"</dd>"+
+ "<dt>School(s)</dt><dd>"+esc(w.schools.map(groupLabel).join(", ")||"Unassigned")+"</dd>"+
+ "<dt>Classification</dt><dd>"+esc(w.schoolEvidence||"Cataloguer attribution only")+"</dd>"+
+ "<dt>Source tier</dt><dd>"+esc(sourceOf(w))+"</dd></dl>"+
+ (w.sourceNote?"<p>"+esc(w.sourceNote)+"</p>":"")+
+ "<p>"+sourceLink(w)+"</p><p class='dn-caveat'>Classification and proximity on this timeline do not establish a textual or doctrinal relation.</p></aside>";
+}
+function option(id,name,active){
+ return "<option value='"+esc(id)+"'"+(id===active?" selected":"")+">"+esc(name)+"</option>";
+}
+function controls(args){
+ const mode="<div class='dn-modes' role='group' aria-label='Disciplinary map mode'>"+
+  "<button type='button' data-dn-mode='timeline' aria-pressed='"+(S.mode==="timeline")+"'>Full historical atlas</button>"+
+  "<button type='button' data-dn-mode='summary' aria-pressed='"+(S.mode==="summary")+"'>Principal texts · vertical synopsis</button></div>";
+ const tabs="<div class='dn-tabs' role='group' aria-label='Subfield'>"+
+  (args.tabs||[]).map(([id,name])=>"<button type='button' data-source-tab='"+esc(id)+"' aria-pressed='"+(id===args.tab)+"'>"+esc(name)+"</button>").join("")+"</div>";
+ const legalTabs=IS_LEGAL(genre)?"<div class='dn-tabs dn-schools' role='group' aria-label='School or juristic circle'>"+
+  [["all","All"],["hanafi","Ḥanafī"],["maliki","Mālikī"],["shafii","Shāfiʿī"],["hanbali","Ḥanbalī"],
+   ["early","Early jurists"],["named_other","Other schools"],["unassigned","Unassigned"]]
+    .map(([id,title])=>"<button type='button' data-source-madhhab='"+id+"' aria-pressed='"+(args.school===id)+"'>"+title+"</button>").join("")+"</div>":"";
+ const filters="<div class='dn-filter-line'><label>Evidence tier <select data-dn-source>"+
+    SOURCES.map(([id,name])=>option(id,name,S.source)).join("")+"</select></label>"+
+  "<button type='button' data-dn-reset>Show entire subject</button>"+
+  (S.lane?"<button type='button' data-dn-lane=''>All school / lineage lanes</button>":"")+"</div>";
+ return mode+tabs+legalTabs+filters;
+}
+function header(args){
+ return "<div class='ia-main-head'><div><h2>"+esc(TITLES[genre]||args.title)+
+  " · "+(S.mode==="timeline"?"Chronological atlas":"Vertical synopsis of principal texts")+"</h2>"+
+  "<span class='ia-small'>"+filtered.length.toLocaleString()+" source-specific bibliographic records · "+
+  jurists.length+" registered early legal authorities · same evidence rules as the main GNAMMA atlas</span></div>"+
+  "<div class='ia-actions'><button type='button' data-action='open-explore'>Other subjects</button>"+
+  "<button type='button' data-action='show-all-mapped'>Complete philosophical atlas</button></div></div>";
+}
+function recordButton(w,x,y,wide=180,boxH=66){
+ const safeid=esc(w.id),selected=w.id===S.book;
+ const c={hanafi:"#477da2",maliki:"#ac8258",shafii:"#5b9175",hanbali:"#9673a5",
+ early:"#aa7b5c",named_other:"#b8896a",unassigned:"#7f929e"};
+ const key=w.schools.find(x=>c[x])||"unassigned";
+ return "<g role='button' tabindex='0' data-dn-work='"+safeid+"'"+
+  " class='dn-work-anchor"+(selected?" dn-picked":"")+"' aria-label='"+esc(w.title+" by "+w.author+"; "+(w.death?"author d. "+w.death+" AH":"undated"))+"'>"+
+  "<title>"+esc(w.title+" · "+w.author)+"</title>"+
+  "<rect class='ia-work-box dn-work-rect' style='--ia-series:"+c[key]+"' x='"+x+"' y='"+y+"' width='"+wide+"' height='"+boxH+"' rx='5'/>"+
+  "<rect x='"+x+"' y='"+y+"' width='3' height='"+boxH+"' fill='"+c[key]+"'/>"+
+  "<text class='ia-node-title' x='"+(x+8)+"' y='"+(y+19)+"'>"+esc(fit(w.title,wide>180?27:21))+"</text>"+
+  "<text class='ia-node-sub' x='"+(x+8)+"' y='"+(y+36)+"'>"+esc(fit(w.author,wide>180?26:20))+"</text>"+
+  "<text class='ia-node-date' x='"+(x+8)+"' y='"+(y+54)+"'>"+
+  esc(w.death?"Author d. "+w.death+" AH · c. "+period(w)+" CE":"Undated catalogue record")+"</text>"+
+  "</g>";
+}
+function scholarButton(a,x,y,w=180){
+ return "<g class='dn-scholar' role='button' tabindex='0' data-dn-scholar='"+esc(a.id)+
+  "' aria-label='"+esc(a.name+"; early jurist; d. "+a.death_ah+" AH")+"'>"+
+  "<title>"+esc(a.name+" · "+a.status)+"</title>"+
+  "<rect x='"+x+"' y='"+y+"' width='"+w+"' height='52' rx='15'/>"+
+  "<text class='ia-node-title' x='"+(x+8)+"' y='"+(y+20)+"'>"+esc(fit(a.name,w>180?25:20))+"</text>"+
+  "<text class='ia-node-sub' x='"+(x+8)+"' y='"+(y+39)+"'>d. "+a.death_ah+" AH · "+esc(fit(a.status.replaceAll("_"," "),16))+"</text></g>";
+}
 window.GNDisciplineAtlas={render,debug:()=>({genre,mode:S.mode,from:S.from,to:S.to,lane:S.lane,undated:S.undated,
  records:filtered.length,dated:filtered.filter(x=>period(x)!==null).length,
  svg:host.querySelectorAll("[data-sa-map] svg").length,
