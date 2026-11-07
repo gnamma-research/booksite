@@ -130,6 +130,7 @@ function openSheet(mode){
   group(body,'Navigate',[
    ['Contents','Editorial sections 1–19',()=>legacy('Contents')],
    ['Commentary topic guide','76 topics from the Indian 2013 printed outline',()=>openSheet('outline')],
+   ['Later ḥawāshī · companion','52 source-page excerpts, separate attributed glosses',()=>{window.location.href='hawashi-companion.html'}],
    ['Search','Arabic and English matn search',()=>legacy('Search')],
    ['Books','Gnamma · Logic, Kalām, Uṣūl',()=>legacy('Books')]
   ]);

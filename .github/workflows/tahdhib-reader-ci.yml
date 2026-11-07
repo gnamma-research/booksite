@@ -189,14 +189,88 @@ jobs:
           assert 'الضروب المنتجة' in sy[7]['ar']
           assert 'عكس الكبرى' in sy[8]['ar'] and 'الشكل الأول' in sy[8]['ar']
           assert [x['page'] for x in gloss['entries'] if x['unit']=='L.16']==[86,86,98,98]
-          allblocks=[*p,*w,*q,*c,*z,*mod,*cond,*c13,*c14,*c15,*sy]
-          assert len(allblocks)==71 and len({x['page'] for x in allblocks})==69
-          assert all(x['page'] not in (38,52,53,85,95,96,97) for x in allblocks)
+          late_files=[
+              ('yazdi-continuous-q95-97-data.js','L.16',list(range(95,98)),3),
+              ('yazdi-continuous-q98-101-data.js','L.16',list(range(98,102)),4),
+              ('yazdi-continuous-q102-104-data.js','L.17',[102,103,103,104],4),
+              ('yazdi-continuous-q105-108-data.js','L.18',list(range(105,109)),4),
+              ('yazdi-continuous-q110-113-data.js','L.18',list(range(110,114)),4),
+              ('yazdi-continuous-q114-118-data.js','L.19',list(range(114,119)),5),
+              ('yazdi-continuous-q119-123-data.js','L.19',list(range(119,124)),5),
+          ]
+          late={}
+          for filename,unit,pages,number in late_files:
+              entry=source_file(filename)
+              blocks=entry['blocks']
+              assert entry['certified'] is False
+              assert entry['unit']==unit and len(blocks)==number
+              assert [b['page'] for b in blocks]==pages
+              assert len({b['id'] for b in blocks})==number
+              assert all(b['unit']==unit and b['ar'] and b['en'] and b['photoChecked'] is False for b in blocks)
+              assert all(str(b['page']) in b['sourceUrl'] and 'ablibrary.net' in b['sourceUrl'] for b in blocks)
+              assert all('التقريب ص' not in b['ar'] for b in blocks)
+              late[filename]=entry
+          q95=late['yazdi-continuous-q95-97-data.js']['blocks']
+          q98=late['yazdi-continuous-q98-101-data.js']['blocks']
+          q102=late['yazdi-continuous-q102-104-data.js']['blocks']
+          q105=late['yazdi-continuous-q105-108-data.js']['blocks']
+          q110=late['yazdi-continuous-q110-113-data.js']['blocks']
+          q114=late['yazdi-continuous-q114-118-data.js']['blocks']
+          q119=late['yazdi-continuous-q119-123-data.js']['blocks']
+          assert 'لينتج الموجبتان' in q95[0]['ar'] and 'عبارة المصنف تسامح' in q95[2]['ar']
+          assert 'تفردت به' in q98[-1]['ar']
+          assert 'من متصلتين' in q102[0]['ar'] and 'الاستثنائي' in q102[2]['ar']
+          assert 'ليس هذا قياسا واحدا' in q102[-1]['ar']
+          assert 'الاستقراء' in q105[0]['ar'] and 'السبر والتقسيم' in q105[-1]['ar']
+          assert 'حكم عليه كل كل' in q105[-1]['ar']
+          assert 'اليقين' in q110[1]['ar'] and 'البرهان اللمي' in q110[2]['ar']
+          assert 'أهملوه' in q110[-1]['ar']
+          assert 'بالبرهان' in q114[0]['ar'] and 'لذواتها' in q114[3]['ar']
+          assert 'قوله «الغرض»' in q119[0]['ar'] and 'الأنحاء التعليمية' in q119[2]['ar']
+          assert 'جعلنا الله وإياكم' in q119[-1]['ar'] and 'قد تمت النسخة' not in q119[-1]['ar']
+          col=late['yazdi-continuous-q119-123-data.js']['colophon']
+          assert 'قد تمت النسخة' in col['text'] and 'Nonauthorial' in col['attribution']
+          assert late['yazdi-continuous-q119-123-data.js']['nextLayer']['page']==125
+          allblocks=[*p,*w,*q,*c,*z,*mod,*cond,*c13,*c14,*c15,*sy,*q95,*q98,*q102,*q105,*q110,*q114,*q119]
+          assert len(allblocks)==100 and len({x['page'] for x in allblocks})==97
+          # Later hawashi are not al-Yazdi main text: every translated item is
+          # a small selected excerpt, with independent editorial analysis.
+          hawashi_files=[
+              'hawashi-127-140-data.js',
+              'hawashi-141-163-recovered-data.js',
+              'hawashi-142-155-data.js',
+              'hawashi-156-168-data.js',
+              'hawashi-169-178-data.js'
+          ]
+          later=[]
+          for fn in hawashi_files:
+              path=base/'tahdhib-al-mantiq'/'edition'/fn
+              src=path.read_text(encoding='utf-8')
+              data=json.loads(src.split('=',1)[1].strip().removesuffix(';'))
+              assert isinstance(data,list) and data
+              later+=data
+          assert len(later)==52
+          assert sorted(x['page'] for x in later)==list(range(127,179))
+          assert len({x['id'] for x in later})==52
+          assert all(x['id']=='HW-'+str(x['page']) for x in later)
+          assert all(x['sourceUrl'].endswith('/'+str(x['page'])+'?lang=ar') for x in later)
+          assert all(x['arabicExcerpt'] and x['englishExcerpt'] and x['editorialAnalysis'] and x['attribution'] for x in later)
+          assert all(x['isFullPage'] is False and x['scanVerified'] is False for x in later)
+          assert all(x['status']=='selected_passage_translated' for x in later)
+          assert all(x['page']>123 for x in later)
+          assert len([x for x in later if x['page']==141 or x['page']==163])==2
+          print('PASS: 52 source-linked later hawashi excerpt translations, zero complete-page claims')
+
+          assert all(x['page'] not in (38,52,53,85,109,124,125) for x in allblocks)
+          assert sum(x.get('unit','L.03')=='L.16' for x in allblocks)==16
+          assert sum(x.get('unit','L.03')=='L.17' for x in allblocks)==4
+          assert sum(x.get('unit','L.03')=='L.18' for x in allblocks)==8
+          assert sum(x.get('unit','L.03')=='L.19' for x in allblocks)==10
           assert 85 not in [x['page'] for x in allblocks]
           assert sum(x.get('unit', 'L.03')=='L.13' for x in allblocks)==4
           assert sum(x.get('unit', 'L.03')=='L.14' for x in allblocks)==7
           assert sum(x.get('unit', 'L.03')=='L.15' for x in allblocks)==4
-          assert sum(x.get('unit', 'L.03')=='L.16' for x in allblocks)==9
+          assert sum(x.get('unit', 'L.03')=='L.16' for x in allblocks)==16
           assert sum(x.get('unit', 'L.03')=='L.11' for x in allblocks)==6
           assert sum(x.get('unit', 'L.03')=='L.12' for x in allblocks)==5
           assert all('التقريب ص' not in x['ar'] for x in w)
@@ -320,6 +394,19 @@ jobs:
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q74-80-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q81-84-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q86-94-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q95-97-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q98-101-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q102-104-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q105-108-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q110-113-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q114-118-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q119-123-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-127-140-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-141-163-recovered-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-142-155-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-156-168-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-169-178-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-companion.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-daruri-reader.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/indian-2013-outline-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-glossary-extensions.js
@@ -336,3 +423,4 @@ jobs:
           node tools/tahdhib/experience_qa.mjs
           node tools/tahdhib/daruri_shell_qa.mjs
           node tools/tahdhib/yazdi_layer_qa.mjs
+          node tools/tahdhib/hawashi_companion_qa.mjs
