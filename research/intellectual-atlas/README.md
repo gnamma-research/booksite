@@ -1,3 +1,7 @@
+Response-route update — 7 November 2026
+
+The main timeline now includes a compact **Responses to Rāzī** option for **Fakhr al-Dīn al-Rāzī** (not Quṭb al-Dīn al-Rāzī). It draws only sourced, directed critical replies or adjudications from his named works: al-Ṭūsī's response to the objections in the Ishārāt commentary (F_e07), al-Ṭūsī's critical Talkhīṣ/Naqd al-Muḥaṣṣal (F_e08), and Quṭb al-Dīn's Muḥākamāt adjudication (F_e14). Ishārāt base-commentary links (F_e05, F_e06) and the second side of the adjudication (F_e15) appear as lighter contextual paths and **are not counted as Rāzī replies**. The Relations tab provides the full recorded evidence and bibliographic source buttons. Shareable URL hash: `#responses=razi`. This is a selective, source-bounded research view—not an exhaustive history of responses to al-Rāzī, and not a claim that adjudication is rejection.
+
 Tajrīd critical-reader integration — revision 8, 31 October 2026
 
 Current canonical data: 404 nodes, 377 textual relationships, 374 bibliographical sources. Added18 works/installments,15 sources and15 qualified edges; all224 Tajrīd source records and47 named/contextual work records map to stable IDs. This is bibliographical coverage, not complete collation.
