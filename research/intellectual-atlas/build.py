@@ -111,6 +111,8 @@ for p in sorted((ROOT/'downloads').iterdir()):
 # work network, and independent from the 30 pinned reader editions.
 bib_openiti = json.loads((ROOT/'corpora'/'expanded-bibliography.json').read_text(encoding='utf-8'))
 bib_alreq = json.loads((ROOT/'corpora'/'manuscript-full.json').read_text(encoding='utf-8'))
+early_register = json.loads((ROOT/'corpora'/'early-jurists.json').read_text(encoding='utf-8'))
+assert len(early_register['authorities']) >= 16
 assert len(bib_openiti['works']) >= 1800
 assert bib_alreq['statistics']['distinct_catalogue_ids'] == 4157
 assert all(not r['text_acquired'] for r in bib_alreq['works'])
@@ -118,8 +120,8 @@ manifest = {
     'title': 'Texts in Time · Islamic Intellectual Atlas',
     'revision': 'tajrid-critical-links-8-2026-10-31',
     'status': 'working research',
-    'ui_revision': 'integrated-source-bibliography-map-2026-11-07',
-    'mobile_interface_note': 'Main source maps display all cited fiqh, usul, nahw, sarf and balagha bibliography records in selectable school/period clusters; work-level source links and undated status shown. Original 30-version reader and 404-entry philosophical timeline remain separate.',
+    'ui_revision': 'integrated-source-bibliography-map-subject-first-svg-2026-11-07',
+    'mobile_interface_note': 'Every subject opens a real clickable SVG network of work and authority nodes, not a book-list screen; zoom and drill from juristic circles to cited books. Includes early personal circles and named non-four schools, plus grammar/balagha and book-level Hadith/Tafsir. Manuscript-only books are undated unless cited author evidence exists.',
     'whole_range_note': 'Drag the six-dot grip from Whole atlas to restore a movable focus window, or tap another time on the overview to seek.',
     'date_marker_note': 'Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.',
     'entries': len(data['nodes']),
@@ -131,8 +133,8 @@ manifest = {
     'neoplatonic_new_relationships': 36,
     'scholarly_networks': len(data['history']['networks']),
     'classification_layers': ['intellectual tradition','textual family','regional/historical network','browse discipline','source-linked bibliographic category map','separate source-text witness catalogue'],
-    'visual_modes': ['chronological timeline','source-backed text network','work connections','catalogue','evidence/audit','source-attested disciplinary work maps','full citation-linked work map'],
-    'discipline_nav': ['mapped works','philosophy, kalām and logic','fiqh and uṣūl (integrated cited bibliography)','hadith (source tranche)','tafsīr (source tranche)','taṣawwuf (selective mapped texts and source tranche)','Arabic language sciences (integrated cited bibliography)'],
+    'visual_modes': ['chronological timeline','source-backed text network','work connections','catalogue','evidence/audit','source-attested disciplinary work maps','full citation-linked work map','subject-first interactive SVG book-node graph'],
+    'discipline_nav': ['mapped works','philosophy, kalām and logic','fiqh and uṣūl (integrated cited bibliography)','hadith (SVG book authorities)','tafsīr (SVG book authorities)','taṣawwuf (selective mapped texts and source tranche)','Arabic language sciences (integrated cited bibliography)'],
     'textual_family_routes': len(families),
     'source_corpus': {
         'url': 'corpora/',
@@ -152,6 +154,9 @@ manifest = {
         'mode': 'source-cited category and author-death period map, undated works unplaced',
         'openiti_primary_work_candidates': len(bib_openiti['works']),
         'alreq_source_linked_entries': len(bib_alreq['works']),
+        'graph_renderer': 'corpora/subject-graph.js',
+        'graph_interactions': ['SVG work nodes','school and early jurist nodes','named non-four circles','visual drill-down','source citation side panel','zoom and scroll'],
+        'registered_early_historical_authorities': len(early_register['authorities']),
         'alreq_fiqh_by_school': bib_alreq['statistics']['by_school'],
         'alreq_nahw_entries': bib_alreq['statistics']['by_genre']['nahw'],
         'alreq_sarf_entries': bib_alreq['statistics']['by_genre']['sarf'],
@@ -161,7 +166,7 @@ manifest = {
         'historical_influence_edges_generated': 0,
         'primary_source_registers': ['corpora/expanded-bibliography.json','corpora/manuscript-full.json'],
     },
-    'textual_family_note': 'The 21 philosophical/kalām families retain canonical IDs and evidence-qualified edges. Fiqh, usul and Arabic source citations now appear inside the main atlas as a distinct bibliographic category/period map; no commentary or legal-opinion edges are inferred.',
+    'textual_family_note': 'The 21 philosophical/kalām families retain canonical IDs and evidence-qualified edges. Fiqh, usul, Hadith, Tafsir and Arabic source bibliography now uses subject-specific SVG work networks, including qualified pre-school and non-four-school jurists; no fictitious legal-opinion or commentary edges are inferred.',
     'tahdhib_added_entries': 26,
     'avicennian_extension_entries': 11,
     'avicennian_new_textual_routes': 2,
@@ -173,7 +178,7 @@ manifest = {
     'individual_reign_rows': 0,
     'pdf_pages': {'illustrated_overview_legacy': 15, 'illustrated_reference_legacy': 204,
                   'historical_revision7_register': 84, 'focused_tahdhib_supplement': 9},
-    'pdf_note': ('The live atlas now includes a complete citation-linked bibliographic category/period map for the imported 2025 OpenITI work candidates and public Alreq catalogue entries. '
+    'pdf_note': ('The live atlas now includes subject-specific interactive SVG graphs of cited books, jurists and classical legal schools, including 2025 OpenITI work candidates and Alreq source catalogue entries. '
                  'The revision 8 offline ZIP and older PDFs predate these additions; they are historical snapshots. '
                  'Catalogue references are not acquired manuscript scans, verified complete texts or legal-opinion graphs.'),
     'download_sha256': downloads,

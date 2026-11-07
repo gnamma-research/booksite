@@ -1,0 +1,87 @@
+name: GNAMMA interactive subject SVG graphs and early legal circles QA
+on:
+  push:
+    branches: [fix/subject-first-interactive-book-graph-20261107]
+    paths:
+      - 'research/intellectual-atlas/**'
+      - '.github/workflows/gnamma-subject-svg-graph-qa.yml'
+  pull_request:
+    branches: [master]
+    paths:
+      - 'research/intellectual-atlas/**'
+      - '.github/workflows/gnamma-subject-svg-graph-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Check SVG graphs, historical authorities, inherited bibliographies and unchanged historical atlas
+        run: |
+          node --check research/intellectual-atlas/corpora/subject-graph.js
+          node --check research/intellectual-atlas/corpora/bibliography-map.js
+          node --check research/intellectual-atlas/atlas-app.js
+          python research/intellectual-atlas/build.py
+          git diff --exit-code -- research/intellectual-atlas/index.html research/intellectual-atlas/publication.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('research/intellectual-atlas/corpora')
+          e=json.loads((p/'early-jurists.json').read_text())
+          assert len(e['authorities'])>=16
+          assert {'awzai','thawri','layth','abu_thawr','zahiri','jariri','ibn_abi_layla'} <= {x['id'] for x in e['authorities']}
+          assert all(a['evidence_urls'] and a['death_ah'] and a['status'] in e['authority_statuses'] for a in e['authorities'])
+          m=json.loads((p/'manuscript-full.json').read_text())
+          assert len(m['works'])==4157
+          o=json.loads((p/'expanded-bibliography.json').read_text())
+          assert len(o['works'])>=1800
+          source=(p/'subject-graph.js').read_text()
+          assert source.count('data-gnv-book')>=2
+          assert 'gnv-canvas' in source and 'gnv-jurist' in source
+          assert 'gnbib-card' not in source and 'gnbib-results' not in source
+          html=Path('research/intellectual-atlas/index.html').read_text()
+          assert 'subject-graph.js' in html
+          print('PASS: source-backed interactive book graph replaces list for every subject')
+          PY
+  actual-subject-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {engine: chromium, width: 1440, height: 900}
+          - {engine: chromium, width: 390, height: 844}
+          - {engine: chromium, width: 844, height: 390}
+          - {engine: webkit, width: 390, height: 844}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: |
+          python -m pip install -q playwright==1.58.0
+          python -m playwright install --with-deps ${{ matrix.engine }}
+      - name: Exercise seven disciplines and work-only SVG with jurist nodes and sources
+        shell: bash
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 >/tmp/gnamma-svg-server.log 2>&1 &
+          pid=$!
+          trap 'kill $pid || true' EXIT
+          for i in {1..60};do curl --silent --fail http://127.0.0.1:8123/research/intellectual-atlas/ >/dev/null && break;sleep .25;done
+          python research/intellectual-atlas/tests/verify_subject_svg_graph_browser.py --browser ${{ matrix.engine }} --width ${{ matrix.width }} --height ${{ matrix.height }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gnamma-svg-subject-${{ matrix.engine }}-${{ matrix.width }}x${{ matrix.height }}
+          path: |
+            /tmp/gnamma-svg-subject-qa/*.png
+            /tmp/gnamma-svg-subject-qa/*.json
+            /tmp/gnamma-svg-server.log
+          if-no-files-found: ignore

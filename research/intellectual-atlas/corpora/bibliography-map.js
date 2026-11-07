@@ -16,7 +16,7 @@ const groups={
 const labels={hanafi:"Ḥanafī",maliki:"Mālikī",shafii:"Shāfiʿī",hanbali:"Ḥanbalī",other:"Unassigned / comparative","lineage_unmapped":"Not assigned to a researched line"};
 const label=x=>labels[x]||x.replace(/^grammar:/,"Grammar: ").replace(/^balagha:/,"Balāgha: ").replace(/_/g," ");
 const PAGE=32;
-let records=[],ready=false,promise=null,error="",last=null,activeGenre="",activeSchool="",initialExternal=true,state={tier:"all",line:"all",band:"all",period:"all",page:1,selected:""};
+let records=[],sourceReader=null,ready=false,promise=null,error="",last=null,activeGenre="",activeSchool="",initialExternal=true,state={tier:"all",line:"all",band:"all",period:"all",page:1,selected:""};
 function safe(url,provider){
  try{const u=new URL(url);if(u.protocol!=="https:")return "";
  if(provider==="alreq"&&u.hostname==="app.alreq.com"&&u.pathname.startsWith("/ar/"))return u.href;
@@ -33,7 +33,7 @@ function lineages(w,g){
 }
 function getRows(g){return g==="fiqh"||g==="usul"?groups.fiqh:g==="balagha"?groups.balagha:groups.grammar;}
 function mapWork(w,id,sourceType,pinned=false){
- return {id,title:w.title||"",roman:w.roman||"",author:w.author||"",death:w.death||null,genres:w.genres||[],schools:w.schools||[],schoolEvidence:w.schoolEvidence||"",lines:w.lines||[],sourceType,pinned,url:w.url||"",sourceDetail:w.sourceDetail||"",sourceNote:w.sourceNote||"",warnings:w.warnings||"",manuscripts:w.manuscripts||0,search:norm([w.title,w.roman,w.author,id].join(" "))};
+ return {id,title:w.title||"",roman:w.roman||"",author:w.author||"",death:w.death||null,genres:w.genres||[],schools:w.schools||[],schoolEvidence:w.schoolEvidence||"",lines:w.lines||[],sourceType,pinned,url:w.url||"",authorKey:w.authorKey||"",readerId:w.readerId||"",sourceDetail:w.sourceDetail||"",sourceNote:w.sourceNote||"",warnings:w.warnings||"",manuscripts:w.manuscripts||0,search:norm([w.title,w.roman,w.author,id].join(" "))};
 }
 function build(reader,openiti,alreq){
  const pinned=new Map((reader.books||[]).map(b=>[b.openiti?.book_uri,b]).filter(x=>x[0]));
@@ -41,12 +41,12 @@ function build(reader,openiti,alreq){
  for(const w of openiti.works||[]){
   const link=safe(w.source_url,"openiti");if(!link)continue;
   const b=pinned.get(w.book_uri);seen.add(w.book_uri);
-  out.push(mapWork({title:w.title_ar||w.title_lat,roman:w.title_lat,author:w.author_ar||w.author_lat,death:Number(w.death_ah),genres:w.genres,schools:w.school?[w.school]:[],schoolEvidence:w.school_evidence,lines:w.lineages,url:link,sourceDetail:w.version_uri,sourceNote:"OpenITI primary-version metadata; not independently collated by GNAMMA.",warnings:w.ocr_warning?"Possible uncorrected OCR.":""},"oi:"+w.book_uri,"openiti",!!b));
+  out.push(mapWork({title:w.title_ar||w.title_lat,roman:w.title_lat,author:w.author_ar||w.author_lat,death:Number(w.death_ah),genres:[...new Set([...(w.genres||[]),...(b?.disciplines||[])])],schools:w.school?[w.school]:(b?.madhhab&&b.madhhab!=="comparative"?[b.madhhab]:[]),schoolEvidence:w.school_evidence,lines:w.lineages,authorKey:w.book_uri.split(".")[0],readerId:b?.id||"",url:link,sourceDetail:w.version_uri,sourceNote:"OpenITI primary-version metadata; not independently collated by GNAMMA.",warnings:w.ocr_warning?"Possible uncorrected OCR.":""},"oi:"+w.book_uri,"openiti",!!b));
  }
  for(const b of reader.books||[]){
   if(seen.has(b.openiti?.book_uri))continue;
   const link=safe(b.openiti?.source_page,"openiti");if(!link)continue;
-  out.push(mapWork({title:b.title_ar||b.title,roman:b.title,author:b.author,death:Number(b.death_ah),genres:b.disciplines,schools:b.madhhab&&b.madhhab!=="comparative"?[b.madhhab]:[],schoolEvidence:"Pinned GNAMMA classification",url:link,sourceDetail:b.openiti?.version_uri,sourceNote:"Previously pinned GNAMMA source-reader work.",warnings:b.openiti?.quality_note},"read:"+b.id,"reader",true));
+  out.push(mapWork({title:b.title_ar||b.title,roman:b.title,author:b.author,death:Number(b.death_ah),genres:b.disciplines,schools:b.madhhab&&b.madhhab!=="comparative"?[b.madhhab]:[],schoolEvidence:"Pinned GNAMMA classification",authorKey:b.openiti?.book_uri?.split(".")[0]||"",readerId:b.id,url:link,sourceDetail:b.openiti?.version_uri,sourceNote:"Previously pinned GNAMMA source-reader work.",warnings:b.openiti?.quality_note},"read:"+b.id,"reader",true));
  }
  for(const w of alreq.works||[]){
   const link=safe(w.catalogue_url,"alreq");if(!link)continue;
@@ -57,7 +57,7 @@ function build(reader,openiti,alreq){
 function load(){
  if(ready||promise)return;
  promise=Promise.all(["registry.json","expanded-bibliography.json","manuscript-full.json"].map(p=>fetch("corpora/"+p).then(r=>{if(!r.ok)throw Error(p+" HTTP "+r.status);return r.json();})))
- .then(([reader,oi,ms])=>{if(!reader.books||!oi.works||!ms.works)throw Error("Invalid catalogue structure");records=build(reader,oi,ms);ready=true;error="";})
+ .then(([reader,oi,ms])=>{if(!reader.books||!oi.works||!ms.works)throw Error("Invalid catalogue structure");sourceReader=reader;records=build(reader,oi,ms);ready=true;error="";})
  .catch(e=>{error=String(e?.message||e);})
  .finally(()=>{promise=null;if(last&&last.isActive())render(last);});
 }
@@ -143,6 +143,7 @@ function render(args){
      '<p>Loading source-linked work and manuscript bibliographies…</p>')+'</div>';
    args.onCounts(0,0);if(!promise&&!error)load();return;
  }
+ if(window.GNAtlasGraph){return window.GNAtlasGraph.render(args,{records,reader:sourceReader});}
  if(initialExternal){
    initialExternal=false;activeGenre=g;activeSchool=args.school;
  }else if(activeGenre!==g||activeSchool!==args.school){

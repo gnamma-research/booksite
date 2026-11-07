@@ -1,3 +1,27 @@
+## Subject-first interactive SVG graphs — Fiqh, early jurists, grammar and other sciences (7 November 2026)
+
+**Current live-web design on this revision:** selecting **Explore → Fiqh**, **Hadith**, **Tafsīr**, or **Arabic language sciences** replaces the main map with a responsive, clickable **SVG graph of actual book nodes**. The old 32-card bibliography and the category-by-period bubble grid are historical predecessors, **not** the intended interface. Even the subject overview shows individual bibliographic books and authority nodes connected visibly to their subject/lineage hubs. Clicking a school/lineage circle **zooms into another diagram containing individual book nodes**. Clicking an Arabic book node opens its author, edition/source metadata, school-attribution evidence and clickable bibliographic citation in an unobtrusive detail panel while the diagram remains visible. Book nodes remain paginated **within the graph**, never substituted by a scrolling list. Native canvas scrolling, zoom controls, direct links and keyboard-operable SVG nodes work on desktop and mobile.
+
+**Additional Fiqh classifications:** the original four legal school selectors have been supplemented with **Early jurists**, **Other schools**, and **Unassigned**, each opening their own SVG view. A separate **16-person sourced early-juristic register** at [corpora/early-jurists.json](corpora/early-jurists.json) represents:
+- individual early legal specialists before doctrinal madhhabs crystallised;
+- historically attested *personal juristic circles* (including al-Awzāʿī, Sufyān al-Thawrī, al-Layth b. Saʿd, Abū Thawr, Ibn Abī Laylā);
+- distinct named non-four classical traditions (especially Ẓāhirī and Jarīrī);
+- the named early eponyms of the later four madhhabs, **without retrojecting their later institutions back into their lifetimes**.
+
+The jurist authorities keep separate status and historical citations, notably **Wael Hallaq, *The Origins and Evolution of Islamic Law*, chs. 3 and 7** and specialist scholarship on al-Thawrī. Early authorship is linked to a work **only when original source-book author metadata supports the link**; a circle does not acquire fake book nodes or unattested teacher/commentary edges. Other early jurists may still be represented with no independently digitised book. No modern Salafi identity is treated as a fifth classical madhhab.
+
+**Other disciplines:** Grammar, Ṣarf, Balāgha and lexicography now each have their own SVG textual-line graph. Hadith and Tafsīr each show their **source-book node graph** (not claims of collated chains or Qurʾānic interpretations). Selecting Taṣawwuf retains its existing Fuṣūṣ source-linked graphical network; Philosophy selects a filtered graphical historical atlas; All returns to the complete graphical chronology. The genre selection must never silently open the catalogue or old text-reader list.
+
+**Evidence boundary:** source-only dashed branches indicate a work is *catalogued under* a discipline/school or provisional research association. Solid arrows are limited to the pre-existing five individually documented text relationships when both relevant works appear in the same view. The 4,157 Alreq catalogue entries, 1,857 OpenITI work/version candidates, 30 GNAMMA-pinned source versions and 404 canonical historical nodes/377 historical edges keep separate identities and statuses; cross-register conceptual identity remains uncollated.
+
+Implementation: [corpora/subject-graph.js](corpora/subject-graph.js), [corpora/bibliography-map.js](corpora/bibliography-map.js) (normalisation and version provenance), [corpora/early-jurists.json](corpora/early-jurists.json), and [tests/verify_subject_svg_graph_browser.py](tests/verify_subject_svg_graph_browser.py). The browser suite must confirm all subject buttons show SVG node networks with **no visible book list**, four madhhab classifications, Early and Other historical authorities, citation-panel interactions, portrait/landscape mobile navigation, zoom and deep-link preservation.
+
+---
+
+*The earlier dated technical notes below are retained for audit history; their old period-matrix/word-list interface descriptions are superseded by the SVG-first design above.*
+
+---
+
 ## Full bibliographic work map integrated into GNAMMA — 7 November 2026
 
 **Current interface:** the main **Texts in Time** atlas, under **Explore → Fiqh & uṣūl** or **Arabic language sciences → Grammar / Morphology / Balāgha**, now presents an actual **source-cited bibliographic category/period map**. This supersedes the older ten-book-only SVG and twelve-title manuscript previews described in historical notes below. Within the map, switch fiqh/uṣūl subjects, choose legal schools, filter by provenance and (for Arabic sciences) qualified author/text associations, select a category/time cluster, then inspect each individual work record and its original bibliographic link. Book records are paginated inside the atlas; a separate reader or external bibliography page is **not required**.
