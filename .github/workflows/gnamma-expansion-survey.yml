@@ -52,6 +52,35 @@ jobs:
           print('STATUS',collections.Counter(x.get('status','') for x in rows).most_common(12),flush=True)
           with open('/tmp/gnamma-survey.json','w') as f:json.dump({'columns':reader.fieldnames,'count':len(rows),'samples':rows[:20]},f,ensure_ascii=False,indent=2)
           PY
+      - name: Survey public Alreq manuscript catalogue access and row structure
+        run: |
+          python -m pip install -q beautifulsoup4
+          python - <<'PY'
+          import urllib.request
+          from bs4 import BeautifulSoup
+          cats={
+            'fiqh_hanafi':'acd46fee-f542-4f08-6c77-08d67d8a208a',
+            'fiqh_maliki':'74b62fc2-b16b-461c-6c78-08d67d8a208a',
+            'fiqh_shafii':'5922d077-e8d0-4608-6c79-08d67d8a208a',
+            'fiqh_hanbali':'f6d7dc4f-b531-4b53-6c7a-08d67d8a208a',
+            'usul':'e118d410-c0f9-4e8d-6c7c-08d67d8a208a',
+            'nahw':'3b74e894-2e5a-486f-3d43-08d79e7d278b',
+            'sarf':'d0e58c8c-0fce-449b-c34f-08d7a2ae1677',
+            'balagha':'2f18127e-8fed-4355-bfd5-08d68928d1ed'
+          }
+          for name,cat in cats.items():
+            url='https://app.alreq.com/ar/Categories/Category/'+cat
+            try:
+              request=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 GNAMMA bibliographic-research/1.0'})
+              with urllib.request.urlopen(request,timeout=45) as response:
+                body=response.read()
+                status=response.status
+              dom=BeautifulSoup(body,'html.parser')
+              trs=dom.select('table tbody tr')
+              tables=dom.select('table')
+              print('ALREQ',name,'http',status,'bytes',len(body),'tables',len(tables),'rows',len(trs),'example',[(x.get_text(' ',strip=True)[:130],x.select_one('a').get('href') if x.select_one('a') else '') for x in trs[:3]],flush=True)
+            except Exception as ex:print('ALREQ ERROR',name,str(ex)[:180],flush=True)
+          PY
       - uses: actions/upload-artifact@v4
         with:
           name: gnamma-openiti-schema-survey
