@@ -21,6 +21,15 @@ function localStoragePut(key,value){try{localStorage.setItem(key,value)}catch{}}
 function originalCitation(r){
  const u=byId.get(r.quoteFrom)||corpus?.units?.find(x=>x.id===r.quoteFrom);
  if(!u)return {arabic:'',english:'',warning:'Quoted source passage is not loaded.'};
+ // A medieval quotation may follow قال without guillemets. When the
+ // source record has checked boundaries, show only that quoted excerpt.
+ if(r.quoteStart&&r.quoteEnd){
+  const source=String(u.arabic||'');
+  const a=source.indexOf(r.quoteStart);
+  const b=a<0?-1:source.indexOf(r.quoteEnd,a+r.quoteStart.length);
+  if(a<0||b<=a)return {arabic:'',english:'',warning:'Quoted passage boundaries could not be checked against the loaded Arabic; nothing is invented.'};
+  return {arabic:source.slice(a,b).trim(),english:r.english||'',warning:'Delimited quotation as reproduced in Tamhīd; not a collated full transcription of the separate source.'};
+ }
  const q=[...String(u.arabic||'').matchAll(/«([^»]{28,12000})»/g)].map(x=>x[1].trim());
  const text=q[r.quoteIndex]||q.find(x=>x.length>110)||'';
  return {arabic:text,english:r.english||'',warning:text?'Exact Arabic quotation reproduced in Ibn Turka’s commentary; this card is not a claim to reproduce the entire cited treatise.':'The quotation boundaries in this witness are not independently established; open the linked commentary rather than treating this as a complete quotation.'};
