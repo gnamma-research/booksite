@@ -471,7 +471,7 @@
       if(window.GNAtlasBibliography&&(science==='fiqh'||science==='arabic')){
         window.GNAtlasBibliography.render({
           root,title:sourceScienceNames[science]||'Arabic sciences',
-          science,tab:state.sourceTab,school:state.sourceMadhhab,search:state.q,
+          science,tab:state.sourceTab,tabs:sourceMapTabs[science],school:state.sourceMadhhab,search:state.q,
           isActive:()=>state.view==='sources'&&state.sourceScience===science,
           onCounts:(n,e)=>{sourceShown=n;sourceLinks=e;visibleNodes=[];visibleEdges=[];updateCounts();}
         });
