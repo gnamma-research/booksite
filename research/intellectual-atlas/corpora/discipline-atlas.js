@@ -460,6 +460,183 @@ function renderVertical(width){
  last={summary:true,highlights:positions.size,documentedEdges:verified,lanes:keys.length};
  return picture;
 }
+function chronologyControls(){
+ const span=S.to-S.from,center=Math.round((S.to+S.from)/2);
+ const min=Math.round(DATE_MIN+span/2),max=Math.round(DATE_MAX-span/2);
+ return "<div class='dn-time-controls'><div class='dn-travel'>"+
+  "<span>"+DATE_MIN+" CE</span><input type='range' min='"+min+"' max='"+Math.max(min,max)+"' step='5' value='"+
+  Math.max(min,Math.min(max,center))+"' data-dn-scrub aria-label='Move focus period on shared timeline'/>"+
+  "<span>"+DATE_MAX+" CE</span></div>"+
+  "<div class='dn-time-actions' role='group' aria-label='Navigate the subject timeline'>"+
+  "<button type='button' data-dn-pan='-1'>← Earlier</button>"+
+  "<button type='button' data-dn-zoom='0.55'>+ Zoom</button>"+
+  "<button type='button' data-dn-zoom='1.8'>− Zoom</button>"+
+  "<button type='button' data-dn-pan='1'>Later →</button>"+
+  "<button type='button' data-dn-all-years>All years</button></div>"+
+  "<div class='dn-window'>"+
+  "<label>From <input type='number' min='"+DATE_MIN+"' max='"+DATE_MAX+"' data-dn-from value='"+S.from+"'/></label>"+
+  "<label>To <input type='number' min='"+DATE_MIN+"' max='"+DATE_MAX+"' data-dn-to value='"+S.to+"'/></label>"+
+  "<button type='button' data-dn-apply>Apply</button>"+
+  "<span class='dn-period-caption'>"+S.from+"–"+S.to+" CE · "+span+" years in view</span></div></div>";
+}
+function pager(){
+ if(S.mode!=="timeline")return "";
+ const more=last.maxPage||1;
+ if(more<=1)return "";
+ return "<div class='dn-pages'><button type='button' data-dn-page='-1'"+(S.page<=1?" disabled":"")+">Previous dated / undated nodes</button>"+
+   "<span>Visual page "+S.page+" / "+more+"</span>"+
+   "<button type='button' data-dn-page='1'"+(S.page>=more?" disabled":"")+">Next map page</button></div>";
+}
+function render(args,api){
+ argsNow=args;apiNow=api;works=api.records;reader=api.reader;genre=getGenre(args);
+ if(!jurists.length&&!juristRequest&&!juristError)loadJurists();
+ const scope=genre+"|"+args.science+"|"+args.tab+"|"+args.school;
+ if(!S.scope){readHash();S.scope=scope;}
+ else if(S.scope!==scope){
+  const previousScience=S.scope.split("|")[1];S.scope=scope;
+  reset(false);
+  if(previousScience!==args.science)S.source="all";
+  S.from=630;S.to=1920;
+ }
+ filtered=works.filter(w=>{
+  if(!w.genres.includes(genre))return false;
+  if(S.source==="reader"&&!w.pinned)return false;
+  if(!["all","reader"].includes(S.source)&&w.sourceType!==S.source)return false;
+  if(args.search&&!norm(w.search||[w.title,w.author].join(" ")).includes(norm(args.search)))return false;
+  if(IS_LEGAL(genre)&&args.school!=="all")return belongs(w,args.school);
+  return true;
+ });
+ lanes=laneKeys().filter(k=>byLane(k).length||historicAuthorities(k).length);
+ if(S.lane&&!lanes.includes(S.lane))S.lane="";
+ const datedCount=filtered.filter(w=>period(w)!==null).length;
+ const unplacedCount=filtered.length-datedCount;
+ const title="<div class='ia-main-head'><div><h2>"+esc(TITLES[genre]||genre)+
+  " · "+(S.mode==="timeline"?"Historical work atlas":"Principal texts · vertical synopsis")+"</h2>"+
+  "<span class='ia-small'>"+filtered.length.toLocaleString()+" source-specific records · "+datedCount+
+  " dated by author death · "+unplacedCount+" unplaced · "+jurists.length+" early jurists in the historical register</span></div>"+
+  "<div class='ia-actions'><button type='button' data-action='open-explore'>Other subjects</button>"+
+  "<button type='button' data-action='show-all-mapped'>Complete atlas</button></div></div>";
+ const note=IS_LEGAL(genre)?
+  "Individual jurists, personal circles, the four later madhhabs and other classical schools are different historical categories. Modern Salafi identity is not treated as a fifth classical school.":
+  "Linguistic and textual lineage groupings overlap. Mere chronological proximity, membership or title similarity is NOT evidence of textual dependence.";
+ const body="<section class='dn-research' aria-label='Interactive GNAMMA-style disciplinary atlas'>"+
+  "<p class='dn-caveat'>"+esc(note)+" All years are approximate CE equivalents of source-author death years, never the dates when the books were written.</p>"+
+  (S.mode==="timeline"?chronologyControls()+
+   "<div class='dn-navigational'>"+(S.undated?"<button type='button' data-dn-undated-back>← Return to dated historical atlas</button>":"")+
+   (S.lane?"<button type='button' data-dn-lane=''>All school / textual lanes</button>":"")+"</div>":"")+
+  "<div class='dn-composite'>"+
+   "<div class='dn-map ia-chart' data-dn-map role='region' tabindex='0' aria-label='Scroll to explore the "+
+    (S.mode==="timeline"?"common dated historical work atlas":"vertical principal-texts summary")+
+    " diagram'></div>"+detailHTML()+"</div>"+
+  "<p class='dn-legend'><span>◇ Approximate author-death marker</span><span>▤ Source-classified work</span>"+
+  "<span>— Text family / chronology does not establish influence</span>"+
+  "<span>→ Independently documented textual relationship</span></p>"+
+  "<p class='dn-brief'>"+(S.mode==="timeline"?
+    "Select an era cluster to zoom into its individual books. Select a work for its bibliographic citation. Undated manuscripts remain explicitly unplaced, not pushed onto the year axis.":
+    "A selective vertical overview of major authors and texts, arranged from earlier to later within each tradition. Faint vertical tracks mean shared classification; arrows occur only for evidenced relations.")+"</p>"+
+  "<p class='dn-source-note'>The map uses original <a target='_blank' rel='noopener noreferrer' href='https://openiti.org/'>OpenITI</a> and "+
+  "<a target='_blank' rel='noopener noreferrer' href='https://app.alreq.com/ar/Categories'>Alreq</a> bibliographic records. Their cross-catalogue duplicates are not yet reconciled.</p>"+
+  "</section>";
+ const main=args.root.querySelector("[data-main]");
+ main.innerHTML=title+controls(args)+body;
+ const map=main.querySelector("[data-dn-map]");
+ const width=Math.max(320,Math.floor(map.clientWidth||map.getBoundingClientRect().width||850));
+ if(S.mode==="summary"){
+  map.innerHTML=renderVertical(width);map.classList.add("dn-summary-map");map.classList.remove("dn-timeline-map");
+ }else{
+  map.classList.add("dn-timeline-map");map.classList.remove("dn-summary-map");
+  map.innerHTML=S.undated?undatedDiagram(width):svgTimeline(width);
+  if((last.maxPage||1)>1)map.insertAdjacentHTML("afterend",pager());
+ }
+ args.onCounts(filtered.length,edges().filter(e=>filtered.some(x=>x.id===e.from)&&filtered.some(x=>x.id===e.to)).length);
+ saveHash();
+ lastUI={mode:S.mode,genre,lanes:lanes.length,dated:datedCount,unplaced:unplacedCount};
+}
+function refresh(){if(argsNow?.isActive())render(argsNow,apiNow);}
+function selectedWork(id,relation=false){
+ if(relation){S.edge=id;S.work="";}
+ else{S.work=id;S.edge="";}
+ const existing=host.querySelector(".dn-detail");
+ if(!existing)return refresh();
+ const wrapper=document.createElement("div");wrapper.innerHTML=detailHTML();
+ existing.replaceWith(wrapper.firstElementChild);
+ host.querySelectorAll("[data-dn-work]").forEach(el=>el.classList.toggle("dn-picked",el.getAttribute("data-dn-work")===S.work));
+ saveHash();
+ if(S.work&&window.matchMedia?.("(max-width:700px)")?.matches)
+   host.querySelector(".dn-detail")?.scrollIntoView({block:"nearest"});
+}
+function onClick(event){
+ const el=event.target.closest(
+ "[data-dn-work],[data-dn-scholar],[data-dn-edge],[data-dn-cluster],[data-dn-undated],"+
+ "[data-dn-lane],[data-dn-mode],[data-dn-pan],[data-dn-zoom],[data-dn-page],"+
+ "[data-dn-all-years],[data-dn-reset],[data-dn-apply],[data-dn-undated-back],[data-dn-close]");
+ if(!el||!host.contains(el))return;
+ event.preventDefault();
+ if(el.hasAttribute("data-dn-work")){selectedWork(el.getAttribute("data-dn-work"));return;}
+ if(el.hasAttribute("data-dn-scholar")){selectedWork("jurist:"+el.getAttribute("data-dn-scholar"));return;}
+ if(el.hasAttribute("data-dn-edge")){selectedWork(el.getAttribute("data-dn-edge"),true);return;}
+ if(el.hasAttribute("data-dn-close")){selectedWork("");return;}
+ if(el.hasAttribute("data-dn-mode")){S.mode=el.getAttribute("data-dn-mode");S.book="";S.edge="";S.page=1;refresh();return;}
+ if(el.hasAttribute("data-dn-cluster")){
+  const [lane,start,end]=el.getAttribute("data-dn-cluster").split("|");
+  S.lane=lane;years(Number(start)-20,Number(end)+20);refresh();return;
+ }
+ if(el.hasAttribute("data-dn-lane")){
+  S.lane=el.getAttribute("data-dn-lane");S.page=1;S.undated=false;refresh();return;
+ }
+ if(el.hasAttribute("data-dn-undated")){
+  S.lane=el.getAttribute("data-dn-undated");S.undated=true;S.page=1;refresh();return;
+ }
+ if(el.hasAttribute("data-dn-undated-back")){S.undated=false;S.page=1;refresh();return;}
+ if(el.hasAttribute("data-dn-all-years")){S.from=DATE_MIN;S.to=DATE_MAX;S.page=1;refresh();return;}
+ if(el.hasAttribute("data-dn-reset")){reset(false);S.from=630;S.to=1920;refresh();return;}
+ if(el.hasAttribute("data-dn-pan")){shift(Number(el.getAttribute("data-dn-pan"))*.48);refresh();return;}
+ if(el.hasAttribute("data-dn-zoom")){zoom(Number(el.getAttribute("data-dn-zoom")));refresh();return;}
+ if(el.hasAttribute("data-dn-page")){S.page+=Number(el.getAttribute("data-dn-page"));refresh();return;}
+ if(el.hasAttribute("data-dn-apply")){
+  const start=Number(host.querySelector("[data-dn-from]")?.value),end=Number(host.querySelector("[data-dn-to]")?.value);
+  if(Number.isFinite(start)&&Number.isFinite(end)&&end>start){years(start,end);refresh();}
+  return;
+ }
+}
+function onChange(event){
+ if(event.target.matches("[data-dn-source]")){
+  S.source=event.target.value;reset(true);refresh();return;
+ }
+ if(event.target.matches("[data-dn-scrub]")){
+  const c=Number(event.target.value),span=S.to-S.from;years(c-span/2,c+span/2);refresh();
+ }
+}
+let pointer=null;
+function down(event){
+ const chart=event.target.closest(".dn-timeline-map");
+ if(!chart||event.target.closest("[data-dn-work],[data-dn-cluster],[data-dn-undated],[data-dn-scholar],[data-dn-edge],[data-dn-lane]"))return;
+ pointer={x:event.clientX,from:S.from,to:S.to};
+}
+function up(event){
+ if(!pointer)return;
+ const old=pointer;pointer=null;
+ const dx=event.clientX-old.x;
+ if(Math.abs(dx)<30||S.mode!=="timeline"||S.undated)return;
+ const chart=host.querySelector(".dn-timeline-map"),w=chart?.clientWidth||600;
+ const shiftYears=-dx/w*(old.to-old.from);
+ years(old.from+shiftYears,old.to+shiftYears);refresh();
+}
+let resizeTimer;
+host.addEventListener("click",onClick);
+host.addEventListener("change",onChange);
+host.addEventListener("pointerdown",down);
+host.addEventListener("pointerup",up);
+host.addEventListener("keydown",event=>{
+ const el=event.target.closest("[data-dn-work],[data-dn-scholar],[data-dn-edge],[data-dn-cluster],[data-dn-undated],[data-dn-lane]");
+ if(el&&["Enter"," "].includes(event.key)){
+  event.preventDefault();el.dispatchEvent(new MouseEvent("click",{bubbles:true,cancelable:true}));return;
+ }
+ if(event.target.closest(".dn-timeline-map")&&event.key==="ArrowRight"){event.preventDefault();shift(.13);refresh();}
+ if(event.target.closest(".dn-timeline-map")&&event.key==="ArrowLeft"){event.preventDefault();shift(-.13);refresh();}
+});
+window.addEventListener("resize",()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(refresh,220);});
+window.addEventListener("popstate",()=>{readHash();refresh();});
 window.GNDisciplineAtlas={render,debug:()=>({genre,mode:S.mode,from:S.from,to:S.to,lane:S.lane,undated:S.undated,
  records:filtered.length,dated:filtered.filter(x=>period(x)!==null).length,
  svg:host.querySelectorAll("[data-sa-map] svg").length,
