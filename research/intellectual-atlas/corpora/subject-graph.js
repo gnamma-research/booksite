@@ -6,7 +6,7 @@
 "use strict";
 const root=document.getElementById("kalam-timeline-app-v3");
 if(!root)return;
-const esc=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;":"&quot;","'":"&#39;"}[c]));
+const esc=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const norm=x=>String(x??"").normalize("NFKD").replace(/[\u0300-\u036f\u064b-\u065f\u0670\u0640]/g,"").replace(/[أإآ]/g,"ا").toLowerCase();
 const cut=(s,n)=>String(s??"").length>n?String(s).slice(0,n-1)+"…":String(s??"");
 const names={fiqh:"Fiqh",usul:"Uṣūl al-fiqh",nahw:"Grammar / naḥw",sarf:"Morphology / ṣarf",balagha:"Balāgha",lugha:"Lexicography",hadith:"Hadith",tafsir:"Tafsīr"};
