@@ -696,9 +696,9 @@
       ).join('')+'</div>';
     }
     function plannedList(label,note,examples){
-      return '<div class="ia-explore-planned" role="note"><strong>'+esc(label)+' · dedicated atlas relationship map pending</strong>'+
+      return '<div class="ia-explore-planned" role="note"><strong>'+esc(label)+'</strong>'+
         '<p>'+esc(note)+'</p>'+
-        (examples&&examples.length?'<p class="ia-explore-note">Related titles for this research route; some now have verified digital source files in the separate corpus library, but their commentary networks are not automatically mapped:</p><ul>'+examples.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>':'')+'</div>';
+        '<p class="ia-explore-note">The selected science opens as an interactive diagram of book nodes. Genre classifications are not historical commentary arrows; report-, passage- and issue-level relationships need further primary-source alignment.</p></div>';
     }
     function renderExplore(){
       const choices=q('[data-science-choices]'),body=q('[data-science-content]');
@@ -778,8 +778,8 @@
       const sourceScience=activeScience==='arabic'&&['nahw','sarf','balagha','lugha'].includes(activeScienceTab)?activeScienceTab:
         ['all','fiqh','hadith','tafsir','tasawwuf','philosophy'].includes(activeScience)?activeScience:'arabic';
       const sourceHash='#science='+encodeURIComponent(sourceScience)+(sourceScience==='fiqh'&&activeMadhhab!=='all'?'&madhhab='+encodeURIComponent(activeMadhhab):'');
-      html+='<div class="ia-explore-library"><strong>Expanded Arabic bibliography</strong><p>Browse a large OpenITI work-candidate index and a linked manuscript shortlist for fiqh, uṣūl, grammar and balāgha. Manuscript catalogue entries and metadata-only digital versions are explicitly separate from the existing 30-reader-version library.</p><a href="corpora/expansion.html#science='+encodeURIComponent(sourceScience==='arabic'?'nahw':sourceScience)+'">Expanded bibliography</a> · <a href="corpora/'+sourceHash+'">Read verified/pinned Arabic versions</a></div>';
-      if(activeScience!=='all')html+='<p class="ia-explore-note">The source reader is operational. Source availability is distinct from a verified scholarly commentary, legal-issue or isnād relationship graph.</p>';
+      html+='<div class="ia-explore-library"><strong>Subject-first visual book graph</strong><p>Choose a science or branch above: the main map redraws as an interactive SVG of the actual books and historically qualified schools. Click book nodes for citations; a book list or Arabic reader is optional, not the default.</p><button type="button" data-explore-science="'+esc(activeScience)+'">Open selected interactive map</button> <a href="corpora/expansion.html#science='+encodeURIComponent(sourceScience==='arabic'?'nahw':sourceScience)+'">Separate bibliographic register</a></div>';
+      if(activeScience!=='all')html+='<p class="ia-explore-note">A real graphical map is the primary exploration mode; documented textual relationships remain distinct from unverified categorical associations.</p>';
       html+='<div class="ia-explore-footer"><button type="button" data-action="show-all-mapped">Return to the mapped atlas</button> <button type="button" data-action="open-about">Research notes &amp; downloads</button> <a href="../../texts/">Published GNAMMA texts</a></div>';
       body.innerHTML=html;
     }
