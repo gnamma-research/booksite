@@ -147,3 +147,245 @@ function overview(mobile){
  lastGraph={mode:"overview",books:root.querySelectorAll(".gnv-book").length,groups:groups.length,svg:1};
  return svg(strokes+nodes,w,h,"Subject work graph with connected school and book nodes");
 }
+function focus(mobile){
+ const g=model.group||"works",a=model.author?authorities.find(x=>x.id===model.author):null;
+ const pool=a?recordsFor(g).filter(b=>findAuthority(b,a)):recordsFor(g);
+ const ordered=mix(pool,pool.length);
+ const per=mobile?20:32,totalPages=Math.max(1,Math.ceil(pool.length/per));
+ model.page=Math.max(1,Math.min(totalPages,model.page));
+ const shown=ordered.slice((model.page-1)*per,model.page*per);
+ const featured=a?[]:historical(g),cols=mobile?2:4;
+ const headRows=Math.ceil(featured.length/(mobile?2:4));
+ const start=mobile?245+headRows*88:160+headRows*83;
+ const width=mobile?420:1460,height=Math.max(440,start+Math.ceil(shown.length/cols)*(mobile?109:99)+75);
+ const rootX=mobile?210:118,rootY=mobile?52:height/2,hubX=mobile?210:357,hubY=mobile?139:height/2;
+ let paths=edge(rootX,rootY,hubX,hubY);
+ let nodes=node("home","",names[genre]||genre,"Back to subject graph",rootX,rootY,mobile?190:196,67);
+ nodes+=node("group",g,a?.name||category(g),pool.length.toLocaleString()+" cited work records",
+   hubX,hubY,mobile?223:235,78);
+ for(let j=0;j<featured.length;j++){
+  const scholar=featured[j],x=mobile?(j%2?315:105):(255+(j%4)*318);
+  const y=(mobile?242:126)+Math.floor(j/(mobile?2:4))*(mobile?88:83);
+  const n=pool.filter(b=>findAuthority(b,scholar)).length;
+  paths+=edge(hubX,hubY,x,y);
+  nodes+=node("jurist",scholar.id,scholar.name,"d. "+scholar.death_ah+" AH · "+n+" cited records",
+   x,y,mobile?189:234,69);
+ }
+ const pos=new Map();
+ for(let j=0;j<shown.length;j++){
+  const r=shown[j],x=mobile?(j%2?315:105):(570+(j%cols)*265);
+  const y=start+Math.floor(j/cols)*(mobile?109:99);
+  paths+=edge(hubX,hubY,x,y);
+  nodes+=node("book",r.id,r.title,sourceStamp(r),x,y,mobile?189:230,74);
+  if(r.readerId)pos.set(r.readerId,{x,y});
+ }
+ let documented=0;
+ for(const relation of reader?.relationships||[]){
+  const a=pos.get(relation.source),b=pos.get(relation.target);
+  if(!a||!b)continue;
+  paths+=edge(a.x,a.y+18,b.x,b.y-18,true,relation.source_url);documented++;
+ }
+ return {picture:svg(paths+nodes,width,height,"Interactive diagram with individual named books and jurists"),
+   pages:totalPages,count:pool.length,bookNodes:shown.length,jurists:featured.length,documented};
+}
+function citation(r){
+ const u=url(r.url);
+ return u?'<a href="'+esc(u)+'" target="_blank" rel="noopener noreferrer">'+
+   esc(r.sourceType==="alreq"?"Original manuscript catalogue entry":"OpenITI digital-version metadata")+'</a>':
+   'Source URL unavailable';
+}
+function detail(){
+ const b=cached.find(x=>x.id===model.book),a=authorities.find(x=>x.id===model.book);
+ if(!b&&!a)return '<aside class="gnv-detail" data-gnv-detail hidden></aside>';
+ let result="";
+ if(a){
+  const status={
+   individual_jurist:"Individual early jurist; a separate school is not presumed",
+   personal_circle:"Personal circle or historically attributed legal line",
+   historical_nonfour_school:"Named non-four legal tradition",
+   founding_eponym:"Early eponym; later doctrinal school formed after his lifetime"};
+  result='<p class="gnv-type">Historical juristic authority</p><h3>'+esc(a.name)+'</h3>'+
+   '<p dir="rtl" lang="ar">'+esc(a.arabic)+'</p><dl><dt>Death</dt><dd>'+a.death_ah+' AH</dd>'+
+   '<dt>School status</dt><dd>'+esc(status[a.status]||a.status)+'</dd></dl><p>'+esc(a.description)+'</p>'+
+   '<p class="gnv-citation">'+(a.evidence_urls||[]).map((u,i)=>url(u)?
+     '<a href="'+esc(url(u))+'" target="_blank" rel="noopener noreferrer">Historical source '+(i+1)+'</a>':"").join(" · ")+'</p>'+
+   '<p class="gnv-qualification">An individual jurist need not have founded a durable institutional madhhab. No unattested book is inserted.</p>';
+ }else{
+  result='<p class="gnv-type">Individual bibliographic work</p><h3 dir="rtl" lang="ar">'+esc(b.title)+'</h3>'+
+   '<p>'+esc(b.author||"Author unknown")+'</p><dl>'+
+   '<dt>Dating</dt><dd>'+esc(b.death?"Author d. "+b.death+" AH; not date of composition":"Unplaced (author dating unavailable)")+'</dd>'+
+   '<dt>Disciplines</dt><dd>'+esc(b.genres.join(", "))+'</dd>'+
+   '<dt>School(s)</dt><dd>'+esc(b.schools.map(x=>schools[x]||x).join(", ")||"Unassigned")+'</dd>'+
+   '<dt>School evidence</dt><dd>'+esc(b.schoolEvidence||"Not independently established")+'</dd>'+
+   '<dt>Textual routes</dt><dd>'+esc(b.lines.map(category).join(" · ")||"Not established")+'</dd>'+
+   '<dt>Record</dt><dd>'+esc(sourceStamp(b))+'</dd></dl>'+
+   '<p>'+esc(b.sourceNote||"")+'</p>'+
+   (b.manuscripts?'<p>Catalogue reports '+b.manuscripts+' manuscript entries, not independently checked.</p>':"")+
+   '<p class="gnv-citation">'+citation(b)+'</p>'+
+   '<p class="gnv-qualification">Dashed graph branches show bibliographic classification, not a documented teacher, commentary or jurisprudential influence.</p>';
+ }
+ return '<aside class="gnv-detail" data-gnv-detail role="region" aria-label="Book or jurist source evidence">'+
+   '<div class="gnv-detail-head"><strong>Node details &amp; citations</strong>'+
+   '<button type="button" data-gnv-close aria-label="Close details">×</button></div>'+result+'</aside>';
+}
+function saveHash(){
+ const q=new URLSearchParams(location.hash.slice(1));
+ for(const [key,value]of [["gn_group",model.group],["gn_author",model.author],["gn_work",model.book],
+   ["gn_source",model.source],["gn_page",model.page>1?String(model.page):""],
+   ["gn_zoom",model.zoom!==1?String(model.zoom):""]]){
+  if(!value||value==="all")q.delete(key);else q.set(key,value);
+ }
+ const hash="#"+q.toString();
+ if(location.hash!==hash)try{history.replaceState(null,"",hash)}catch{location.hash=hash}
+}
+function readHash(){
+ const p=new URLSearchParams(location.hash.slice(1));
+ model.group=p.get("gn_group")||"";model.author=p.get("gn_author")||"";
+ model.book=p.get("gn_work")||"";
+ model.source=sourceIds.includes(p.get("gn_source"))?p.get("gn_source"):"all";
+ model.page=Math.max(1,Number(p.get("gn_page"))||1);
+ model.zoom=Math.max(.65,Math.min(1.5,Number(p.get("gn_zoom"))||1));
+}
+function render(args,api){
+ cached=api.records;reader=api.reader;
+ genre=gen(args);
+ const key=genre+"|"+args.science+"|"+args.tab+"|"+args.school;
+ if(!model.scope){readHash();model.scope=key;}
+ else if(model.scope!==key){model.scope=key;model.group="";model.author="";model.book="";model.page=1;}
+ if(!authorities.length&&!earlyFetch&&!loadError){
+  earlyFetch=fetch("corpora/early-jurists.json").then(r=>{
+   if(!r.ok)throw Error("Historical authority source HTTP "+r.status);return r.json();
+  }).then(j=>{
+   if(!Array.isArray(j.authorities))throw Error("Bad authority schema");authorities=j.authorities;
+  }).catch(e=>{loadError=String(e)}).finally(()=>{
+   earlyFetch=null;if(context?.args?.isActive())render(context.args,context.api);
+  });
+ }
+ context={args,api};
+ filtered=cached.filter(r=>r.genres.includes(genre)&&
+   (model.source==="all"||model.source==="reader"&&r.pinned||r.sourceType===model.source)&&
+   (!args.search||r.search.includes(norm(args.search)))&&
+   (!["fiqh","usul"].includes(genre)||args.school==="all"||
+     ["hanafi","maliki","shafii","hanbali"].includes(args.school)&&r.schools.includes(args.school)||
+     args.school==="early"&&early(r)||args.school==="named_other"&&other(r)||
+     args.school==="unassigned"&&!r.schools.some(x=>["hanafi","maliki","shafii","hanbali"].includes(x))));
+ groups=buildGroups();
+ if(!model.group&&["fiqh","usul"].includes(genre)&&args.school!=="all")model.group=args.school;
+ if(model.group&&!groups.some(x=>x.key===model.group)&&model.group!=="works"){
+   model.group="";model.author="";model.page=1;
+ }
+ const mobile=window.matchMedia?.("(max-width:700px)")?.matches||false;
+ const visual=model.group?focus(mobile):{picture:overview(mobile),pages:1,bookNodes:0};
+ const title='<div class="ia-main-head"><div><h2>'+esc(names[genre]||genre)+' · Interactive work graph</h2>'+
+   '<span class="ia-small">'+filtered.length.toLocaleString()+' bibliographic records · '+
+   authorities.length+' historically registered early jurists · counted records are not fully deduplicated works</span></div>'+
+   '<div class="ia-actions"><button type="button" data-action="open-explore">Other subjects</button>'+
+   '<button type="button" data-action="show-all-mapped">Historical atlas</button></div></div>';
+ const tabs='<div class="gnv-tabs" role="group" aria-label="Subject subfields">'+
+   (args.tabs||[]).map(([k,v])=>'<button type="button" data-source-tab="'+esc(k)+
+   '" aria-pressed="'+(args.tab===k)+'">'+esc(v)+'</button>').join("")+'</div>';
+ const schoolTabs=["fiqh","usul"].includes(genre)?'<div class="gnv-tabs gnv-schools" role="group" aria-label="Historic madhhab / juristic circles">'+
+   [["all","All"],["hanafi","Ḥanafī"],["maliki","Mālikī"],["shafii","Shāfiʿī"],["hanbali","Ḥanbalī"],
+    ["early","Early jurists"],["named_other","Other schools"],["unassigned","Unassigned"]]
+   .map(([k,v])=>'<button type="button" data-source-madhhab="'+k+
+   '" aria-pressed="'+(args.school===k)+'">'+v+'</button>').join("")+'</div>':"";
+ const evidence='<label class="gnv-evidence-select">Sources <select data-gnv-evidence>'+
+   [["all","All cited records"],["openiti","OpenITI metadata"],["alreq","Manuscript catalogue"],["reader","Pinned GNAMMA"]]
+   .map(([k,v])=>'<option value="'+k+'"'+(model.source===k?" selected":"")+'>'+v+'</option>').join("")+'</select></label>';
+ const zoom='<div class="gnv-zoom" role="group" aria-label="Graph zoom controls">'+
+  '<button type="button" data-gnv-zoom="-1" aria-label="Zoom out">−</button>'+
+  '<span>'+Math.round(model.zoom*100)+'%</span>'+
+  '<button type="button" data-gnv-zoom="1" aria-label="Zoom in">+</button>'+
+  '<button type="button" data-gnv-zoom="0" aria-label="Reset zoom">Fit</button></div>';
+ const back=model.group?'<button type="button" data-gnv-back>‹ '+(model.author?"Back to juristic circles":"Show full subject graph")+'</button>':"";
+ const pager=model.group?'<div class="gnv-pager"><button type="button" data-gnv-page="-1"'+
+  (model.page<=1?" disabled":"")+'>‹ Previous graph</button><span>Page '+model.page+' / '+visual.pages+
+  '</span><button type="button" data-gnv-page="1"'+(model.page>=visual.pages?" disabled":"")+
+  '>Next graph ›</button></div>':"";
+ const caution=["fiqh","usul"].includes(genre)?
+  "Personal legal circles and named non-four schools are distinct from the later four established Sunni madhhabs; no modern Salafi madhhab is inserted.":
+  ["nahw","sarf","balagha"].includes(genre)?
+  "Overlapping grammar and rhetorical branches are provisional, and must not be mistaken for verified commentary or influence relations.":
+  "Only book-authority records are mapped. Report variants, isnāds and passage-level interpretive connections have not been collated.";
+ const image='<section class="gnv-picture" aria-label="Real interactive subject-book SVG graph">'+
+   '<div class="gnv-legend"><span><i class="gnv-key-class"></i>Classification</span>'+
+   '<span><i class="gnv-key-verified"></i>Documented relation</span>'+
+   '<span><i class="gnv-key-jurist"></i>Early jurist / non-four circle</span></div>'+
+   '<p class="gnv-caution">'+esc(caution)+'</p><div class="gnv-layout">'+visual.picture+detail()+'</div>'+
+   '<p class="gnv-hint">Every title shown is a selectable node on the diagram. Select a group to drill into more book nodes; use zoom and swipe or scroll inside the graph. Individual citations open in the side panel, not a book list.</p>'+
+   '<p class="gnv-credit">Source registers: <a href="https://app.alreq.com/ar/Categories" target="_blank" rel="noopener noreferrer">Alreq</a> and <a href="https://openiti.org/" target="_blank" rel="noopener noreferrer">OpenITI</a>. Dashed classification edges are NOT historical transmissions.</p></section>';
+ root.querySelector("[data-main]").innerHTML=title+tabs+schoolTabs+
+   '<div class="gnv-toolbar">'+back+evidence+zoom+'</div>'+pager+image;
+ args.onCounts(filtered.length,0);lastGraph.mode=model.group?"focus":"overview";
+ lastGraph.svg=root.querySelectorAll("[data-gnv-svg]").length;
+ lastGraph.books=root.querySelectorAll(".gnv-book").length;lastGraph.groups=groups.length;
+ saveHash();
+}
+function redraw(){
+ if(!context)return;
+ render(context.args,context.api);
+ const v=root.querySelector("[data-gnv-canvas]");if(v){v.scrollTop=0;v.scrollLeft=0;}
+}
+function selectBook(id){
+ model.book=id;
+ const old=root.querySelector("[data-gnv-detail]");
+ if(old){
+  const shell=document.createElement("div");shell.innerHTML=detail();
+  old.replaceWith(shell.firstElementChild);
+ }
+ root.querySelectorAll(".gnv-picked").forEach(x=>x.classList.remove("gnv-picked"));
+ root.querySelectorAll(".gnv-node").forEach(x=>{
+  if((x.getAttribute("data-gnv-book")||x.getAttribute("data-gnv-jurist"))===id)x.classList.add("gnv-picked");
+ });
+ saveHash();
+ if(model.book&&window.matchMedia?.("(max-width:700px)")?.matches)
+   root.querySelector("[data-gnv-detail]")?.scrollIntoView({block:"nearest"});
+}
+root.addEventListener("click",event=>{
+ const x=event.target.closest("[data-gnv-group],[data-gnv-jurist],[data-gnv-book],[data-gnv-home],[data-gnv-back],[data-gnv-page],[data-gnv-close],[data-gnv-zoom]");
+ if(!x||!root.contains(x))return;
+ event.preventDefault();
+ if(x.hasAttribute("data-gnv-home")){
+   model.group="";model.author="";model.book="";model.page=1;redraw();
+ }else if(x.hasAttribute("data-gnv-group")){
+   model.group=x.getAttribute("data-gnv-group");
+   model.author="";model.book="";model.page=1;redraw();
+ }else if(x.hasAttribute("data-gnv-jurist")){
+   const id=x.getAttribute("data-gnv-jurist");
+   if(model.group==="early"||model.group==="named_other"){
+    model.author=id;model.page=1;model.book=id;redraw();
+   }else selectBook(id);
+ }else if(x.hasAttribute("data-gnv-book"))selectBook(x.getAttribute("data-gnv-book"));
+ else if(x.hasAttribute("data-gnv-close"))selectBook("");
+ else if(x.hasAttribute("data-gnv-back")){
+   if(model.author){model.author="";model.book="";}
+   else{model.group="";model.book="";}
+   model.page=1;redraw();
+ }else if(x.hasAttribute("data-gnv-page")){
+   model.page+=Number(x.getAttribute("data-gnv-page"))||0;model.book="";redraw();
+ }else if(x.hasAttribute("data-gnv-zoom")){
+   const step=Number(x.getAttribute("data-gnv-zoom"))||0;
+   model.zoom=step===0?1:Math.max(.65,Math.min(1.5,Math.round((model.zoom+step*.15)*100)/100));
+   const image=root.querySelector("[data-gnv-svg]");
+   if(image){const b=image.viewBox.baseVal;image.setAttribute("width",Math.round(b.width*model.zoom));
+    image.setAttribute("height",Math.round(b.height*model.zoom));}
+   root.querySelector(".gnv-zoom span").textContent=Math.round(model.zoom*100)+"%";
+   saveHash();
+ }
+});
+root.addEventListener("change",event=>{
+ const x=event.target.closest("[data-gnv-evidence]");
+ if(!x)return;
+ model.source=x.value;model.group="";model.author="";model.book="";model.page=1;redraw();
+});
+root.addEventListener("keydown",event=>{
+ const x=event.target.closest("[data-gnv-group],[data-gnv-jurist],[data-gnv-book],[data-gnv-home]");
+ if(!x||!["Enter"," "].includes(event.key))return;
+ event.preventDefault();x.dispatchEvent(new MouseEvent("click",{bubbles:true,cancelable:true}));
+});
+window.addEventListener("popstate",()=>{readHash();if(context?.args?.isActive())redraw()});
+window.GNAtlasGraph={render,debug:()=>({mode:lastGraph.mode,bookNodes:lastGraph.books,
+ groups:lastGraph.groups,svg:lastGraph.svg,genre,group:model.group,
+ authority:model.author,selected:model.book,records:filtered.length,
+ jurists:authorities.length,page:model.page,zoom:model.zoom,loadError})};
+})();
