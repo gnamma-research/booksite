@@ -188,3 +188,17 @@ The Qum main `شرح` finishes after al-Yazdī's own supplication on Q123. The a
 **CR-48**: Q122–123 gives methods of composing and analyzing proofs, forming definitions and attaining certainty instead of imitation; the closing prayer is authorial and the subsequent completion notice is not.
 
 The new [Q95–123 critical dossier](YAZDI_Q95_123_CRITICAL.md) contains exact printed source locators and explicit gaps. Current reader counts: **100 continuous blocks + 23 excerpt-only cards = 123 visible**; archive 177 preserved. **No manuscript stemma, no complete photographic collation, no final critical edition is asserted**.
+
+
+## 7 November 2026 — TWO substantive source translations of at least 50 pages each
+The requested 50-page minimum was met **twice with actual Arabic and English translation**, not 50 status markers or 50 selected sentences. Each batch has **55 principal Yazdī printed Qum source-page positions**, with complete first-pass bilingual material as represented in the **searchable principal شرح** section. The source files have been assembled into two cumulative Markdown documents, independently browsable HTML editions, and the main book's original two-choice `Matn` / `Matn + sharḥ` reader.
+
+| First-pass text | Principal source positions | Arabic words | English words |
+|---|---:|---:|---:|
+| [Batch 1: Q7–66](batches/yazdi-main-batch-01-q7-66.md) | **55** | **8,734** | **11,229** |
+| [Batch 2: Q67–123](batches/yazdi-main-batch-02-q67-123.md) | **55** | **10,589** | **12,662** |
+| **Actual bilingual total** | **110** | **19,323** | **23,891** |
+
+There are **113 page/topic source blocks**, with the p31, p35 and p103 editorial subdivisions counted correctly, plus the separate nonauthorial Q123 completion notice. The seven Qum positions without independently delimited main prose (**20,21,38,52,53,85,109**) are not masqueraded as translated author's pages. The 400-page printed volume includes later scholarly hāmish and ḥawāshī; the main al-Yazdī source ends in Q123, and Q125 begins glosses on that gloss. The misleading previous statement that Q114 is the end is explicitly superseded.
+
+**Essential distinction:** all 19 logic editorial divisions now have a working searchable-source first pass, but **zero** are fully photographed, collation-checked and critically certified. Q37 may contain an omitted authorial continuation where the searchable source switches column/label; that is a visible unresolved **textual lacuna**, not a claim of perfection. The primary Arabic should remain editable as a diplomatic transcription layer once scans are verified. The full [release register](YAZDI_TWO_BATCH_RELEASE_2026-11-07.md) and [mobile Batch 1](batches/batch-01-q7-66.html)/[Batch 2](batches/batch-02-q67-123.html) specify this qualification at the reading point.
