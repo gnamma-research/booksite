@@ -57,6 +57,38 @@ function copyLink(){const link=location.href;copyText(link)}
 function bind(){$$('[data-panel]').forEach(b=>b.addEventListener('click',()=>openPanel(b.dataset.panel)));$$('[data-lang]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.lang)));$$('[data-tab]').forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.tab)));
 $('#drawer-close').addEventListener('click',closePanel);$('#scrim').addEventListener('click',closePanel);$('#focus').addEventListener('click',()=>setFocus(st.focus+1));$('#bookmark').addEventListener('click',bookmark);$('#copy-link').addEventListener('click',copyLink);$('#prev').addEventListener('click',()=>navigate(-1));$('#next').addEventListener('click',()=>navigate(1));$('#readmode').addEventListener('click',()=>{if(st.focus===3){setFocus(0);notify('Normal reading restored')}else setMode(st.mode==='read'?'study':'read')});window.addEventListener('keydown',ev=>{const active=document.activeElement?.tagName;if(['INPUT','TEXTAREA'].includes(active))return;if(ev.key==='Escape'){if(st.shownPanel)closePanel();else setFocus(0)}else if(!st.shownPanel&&ev.key==='ArrowRight')navigate(-1);else if(!st.shownPanel&&ev.key==='ArrowLeft')navigate(1);else if(!st.shownPanel&&ev.key.toLowerCase()==='f')setFocus(st.focus+1)})}
 function setProgress(){const m=st.meta||{};const start=m.source?.sourceStartPage??3,end=m.translationProgress?.lastCompletePrintedPage??445,total=m.source?.totalSourcePages??720,next=m.translationProgress?.nextSection??'4.578';const count=end-start+1,percent=count/total*100;$('#percentage').textContent=percent.toFixed(2)+'%';$('#progress-fill').style.width=percent+'%';$('.meter').setAttribute('aria-valuenow',String(count));$('#progress-label').textContent=count+' / '+total+' printed pages · through p. '+end+' · next §'+next;$('#import-label').textContent='Reader import: '+st.entries.length+' aligned passages (§'+st.entries[0].id+'–§'+st.entries.at(-1).id+'). Earlier translated sections through §4.537 are not yet imported into this interface.'}
-async function load(){bind();const paths=['r10.json','r11a.json','r11b.json'];try{const files=await Promise.all([...paths,'MANIFEST.json'].map(async p=>{const r=await fetch(p,{cache:'no-store'});if(!r.ok)throw Error('Cannot load '+p+' ('+r.status+')');return r.json()}));const all=files.slice(0,3).flatMap(d=>d.entries);all.sort((a,b)=>a.number-b.number);for(let i=1;i<all.length;i++)if(all[i].number!==all[i-1].number+1)throw Error('Missing section between '+all[i-1].id+' and '+all[i].id);if(all.length!==40||all[0].id!=='4.538'||all.at(-1).id!=='4.577')throw Error('Coverage mismatch: only '+all.length+' entries');st.entries=all;st.meta=files[3];const requested=new URLSearchParams(location.search).get('section');st.section=all.some(e=>e.id===requested)?requested:(all.some(e=>e.id===read('last',''))?read('last',''):all[0].id);setProgress();render()}catch(err){$('#section-name').textContent='Reader data could not load';$('#entry').textContent='Source alignment failed: '+err.message;$('#progress-label').textContent='Progress cannot be verified; consult MANIFEST.json.';console.error(err)}}
+async function load(){
+ bind();
+ try{
+  let meta,groups;
+  if(Array.isArray(window.MISBAH_EMBEDDED) && window.MISBAH_EMBEDDED.length>=2){
+   meta=window.MISBAH_EMBEDDED.at(-1);
+   groups=window.MISBAH_EMBEDDED.slice(0,-1);
+  }else{
+   const readJSON=async p=>{const r=await fetch(p,{cache:'no-store'});if(!r.ok)throw Error('Cannot load '+p+' ('+r.status+')');return r.json()};
+   meta=await readJSON('MANIFEST.json');
+   if(!Array.isArray(meta.readerImport?.files)||!meta.readerImport.files.length)throw Error('Manifest has no reader files');
+   groups=await Promise.all(meta.readerImport.files.map(readJSON));
+  }
+  const all=groups.flatMap(d=>d.entries||[]);
+  all.sort((a,b)=>a.number-b.number);
+  for(let i=1;i<all.length;i++)if(all[i].number!==all[i-1].number+1)throw Error('Missing section between '+all[i-1].id+' and '+all[i].id);
+  const cfg=meta.readerImport||{};
+  if(all.length!==cfg.units||all[0]?.id!==cfg.firstSection||all.at(-1)?.id!==cfg.lastSection)
+   throw Error('Reader manifest mismatch: '+all.length+' sections, final '+all.at(-1)?.id);
+  if(groups.some(g=>g.sourceBlob!=='7dc10e1d6db58ff524d05e820139dc1aa4ef8a07'))
+   throw Error('Arabic source revision mismatch');
+  st.entries=all;st.meta=meta;
+  const requested=new URLSearchParams(location.search).get('section');
+  const prior=read('last','');
+  st.section=all.some(e=>e.id===requested)?requested:(all.some(e=>e.id===prior)?prior:all[0].id);
+  setProgress();render();
+ }catch(err){
+  $('#section-name').textContent='Reader data could not load';
+  $('#entry').textContent='Source alignment failed: '+err.message;
+  $('#progress-label').textContent='Progress cannot be verified; consult MANIFEST.json.';
+  console.error(err);
+ }
+}
 load();
 })();
