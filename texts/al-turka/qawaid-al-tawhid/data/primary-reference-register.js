@@ -131,6 +131,7 @@ window.GNAMMA_QAWAID_REFERENCES = {
         "SH-INTRO-030"
       ],
       "status": "full-quotation-as-reproduced-in-Tamhid",
+      "englishRole": "editorial-summary",
       "note": "The complete quoted Arabic passage preserved in the medieval commentary is shown. It is not an independently collated full chapter of Inshāʾ al-Dawāʾir."
     },
     {
@@ -146,6 +147,7 @@ window.GNAMMA_QAWAID_REFERENCES = {
         "SH-032"
       ],
       "status": "full-quotation-as-reproduced-in-Tamhid",
+      "englishRole": "editorial-summary",
       "note": "This is the directly quoted Arabic excerpt as it appears in Tamhīd, not the entire Fuṣūṣ chapter. Poetry is retained within the quoted excerpt."
     },
     {
@@ -196,6 +198,7 @@ window.GNAMMA_QAWAID_REFERENCES = {
       "quoteEnd": "ثمَّ انّه لو كان مُوجِبا له لذاته",
       "english": "Cognition is not constituted merely by presence to an immaterial thing, nor by any arbitrary kind of presence falling under the unrestricted term, as already explained. What is required is the presence of a thing to an immaterial being that exerts some kind of influence upon it.",
       "status": "delimited-excerpt-as-reproduced-in-Tamhid",
+      "englishRole": "editorial-summary",
       "units": [
         "SH-028"
       ],
@@ -211,6 +214,7 @@ window.GNAMMA_QAWAID_REFERENCES = {
         "SH-015"
       ],
       "status": "reported-summary",
+      "englishRole": "editorial-summary",
       "english": "Ibn Turka summarizes a further refutation of gradation attributed to his ancestor’s al-Iʿtimād al-Kabīr.",
       "note": "A summary in the commentary, not a direct full quotation of al-Iʿtimād al-Kabīr."
     },
@@ -224,6 +228,7 @@ window.GNAMMA_QAWAID_REFERENCES = {
         "SH-INTRO-028"
       ],
       "status": "historical-attribution",
+      "englishRole": "editorial-summary",
       "english": "Ibn Turka reproduces and cites material he attributes to Aristotle's Theology; that historical attribution is not a modern authentication of Aristotelian authorship.",
       "note": "The full original source passage is not independently collated here. The commentary's cited context remains accessible in its own section."
     },
@@ -234,6 +239,7 @@ window.GNAMMA_QAWAID_REFERENCES = {
       "source": "Attributed saying",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/354?lang=ar",
       "arabic": "كنت كنزًا مخفيًّا",
+      "english": "I was a hidden treasure.",
       "units": [
         "SH-035-B"
       ],
