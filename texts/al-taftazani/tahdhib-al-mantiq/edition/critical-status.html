@@ -159,7 +159,7 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
   return a.map(p=>({...p,unit:p.unit||src.unit||u||''}));
  });
  const uniquePages=new Set(principal.map(p=>p.page));
- const countWords=k=>principal.reduce((n,p)=>n+(p[k]?p[k].trim().split(/\\s+/).length:0),0);
+ const countWords=k=>principal.reduce((n,p)=>n+(p[k]?p[k].trim().split(/\s+/).length:0),0);
  document.getElementById('count').textContent=String(uniquePages.size);
  document.getElementById('selected-count').textContent=String(d.entries.length);
  document.getElementById('translation-word-count').textContent=countWords('ar').toLocaleString()+' Arabic words and '+countWords('en').toLocaleString()+' English words across two 55-page bilingual batches, measured from the actual continuous source files. Zero manuscript-certified divisions.';
