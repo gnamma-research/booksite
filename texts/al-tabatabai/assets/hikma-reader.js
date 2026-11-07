@@ -424,6 +424,7 @@
       if (entry.term && entry.term !== entry.english) article.append(make('p', 'glossary-romanization', entry.term));
       article.append(make('p', '', entry.definition));
       if (entry.bookLabel) article.append(make('p', 'glossary-book-label', entry.bookLabel));
+      if (entry.editorialOrigin) article.append(make('p', 'glossary-provenance', 'Comparative editorial entry · not authorial text'));
       const candidates = [entry.arabic, entry.english, entry.term].map(normalise).filter(value => value && value.length > 2);
       const part = entry.bookLabel === 'al-Manṭiq' ? 'M' : entry.bookLabel === 'Bidāya' ? 'B' : entry.bookLabel === 'Nihāya' ? 'N' : null;
       const occurrence = (entry.passageId && state.byUnit.get(entry.passageId)) || state.units.find(unit => (!part || unit.part === part) && candidates.some(value => unit.searchText.includes(value)));
