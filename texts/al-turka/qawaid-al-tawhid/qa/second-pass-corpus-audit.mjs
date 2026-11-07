@@ -73,6 +73,11 @@ chk(commentary.filter(u=>u.sourceTextSha256).length===64,'64 main source hashes 
 for(const r of references){
  for(const id of r.units||[])chk(ids.has(id),'Broken primary reference '+r.id+' -> '+id);
  if(r.quoteFrom)chk(ids.has(r.quoteFrom),'Missing quotation source '+r.id);
+ if(Number.isInteger(r.quoteIndex)){
+  const ar=ids.get(r.quoteFrom)?.arabic||'';
+  const quoted=[...ar.matchAll(/«([^»]{28,12000})»/g)];
+  chk(r.quoteIndex>=0&&r.quoteIndex<quoted.length,'Out-of-range exact Arabic quotation index '+r.id);
+ }
  if(r.quoteStart&&r.quoteEnd){const ar=ids.get(r.quoteFrom)?.arabic||'';chk(ar.indexOf(r.quoteStart)>=0&&ar.indexOf(r.quoteEnd,ar.indexOf(r.quoteStart))>ar.indexOf(r.quoteStart),'Unverified quote anchors '+r.id);}
 }
 chk(pdfManifest.files?.length===5,'Expected five released PDFs');
