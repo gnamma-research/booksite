@@ -154,11 +154,15 @@
     if(push)setHash();
     if(matchMedia("(max-width:790px)").matches)$("reader").scrollIntoView({block:"start"});
   }
-  async function gitBlobHash(text){
-    if(!crypto?.subtle||!window.TextEncoder)throw new Error("In-browser integrity checking unavailable");
-    const encoder=new TextEncoder(),data=encoder.encode(text),prefix=encoder.encode("blob "+data.length+"\u0000"),bytes=new Uint8Array(prefix.length+data.length);
+  async function gitBlobHash(rawBytes){
+    // Hash exact RESPONSE BYTES, not text decoded then re-encoded: a UTF-8 BOM
+    // may be discarded by Response.text(), which would invalidate a true source.
+    if(!window.crypto?.subtle||!window.TextEncoder)throw new Error("In-browser integrity checking unavailable");
+    const data=rawBytes instanceof Uint8Array?rawBytes:new Uint8Array(rawBytes);
+    const prefix=new TextEncoder().encode("blob "+data.length+"\u0000");
+    const bytes=new Uint8Array(prefix.length+data.length);
     bytes.set(prefix);bytes.set(data,prefix.length);
-    const sha=await crypto.subtle.digest("SHA-1",bytes);
+    const sha=await window.crypto.subtle.digest("SHA-1",bytes);
     return [...new Uint8Array(sha)].map(b=>b.toString(16).padStart(2,"0")).join("");
   }
   function parseSource(raw){
@@ -215,11 +219,13 @@
         const target=b.local_text?new URL(b.local_text,location.href).href:b.openiti.source_url;
         const response=await fetch(target,{cache:"force-cache"});
         if(!response.ok)throw new Error("Source could not be retrieved (HTTP "+response.status+")");
-        raw=await response.text();
+        const bytes=new Uint8Array(await response.arrayBuffer());
         if(seq!==loadSerial)return;
+        if(bytes.length!==b.openiti.size_bytes)throw new Error("Source file length differs from registered source version");
+        const sha=await gitBlobHash(bytes);
+        if(sha!==b.openiti.blob_sha)throw new Error("Source integrity check failed: byte-for-byte Git blob identity does not match OpenITI");
+        raw=new TextDecoder("utf-8",{fatal:true}).decode(bytes);
         if(!raw.includes("######OpenITI#")||!/[\u0621-\u064a]/.test(raw))throw new Error("The response is not the expected Arabic OpenITI text");
-        const sha=await gitBlobHash(raw);
-        if(sha!==b.openiti.blob_sha)throw new Error("Source integrity check failed: blob identity does not match the registered OpenITI version");
         cache.set(b.id,raw);if(cache.size>2)cache.delete(cache.keys().next().value);
       }
       if(seq!==loadSerial)return;
