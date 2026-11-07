@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f8f2eb">
+<meta name="description" content="Miṣbāḥ al-uns: source-aligned Arabic–English working reader, progress, notes and scholarly handoff.">
+<title>Miṣbāḥ al-Uns · Tasawwuf · GNAMMA Research</title>
+<link rel="icon" href="../../../assets/gnamma-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../shared/tahdhib-daruri-shell.css">
+<link rel="stylesheet" href="reader.css">
+<script defer src="../../../daruri/bookmark-ui.js"></script>
+<script defer src="reader.js"></script>
+</head>
+<body data-mode="read" data-view="both" data-focus="0">
+<a class="skip" href="#passage">Skip to text</a>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../../" title="Texts"><img src="../../../assets/gnamma-mark.svg" alt="" width="26" height="26"><span>GNAMMA <small>RESEARCH</small></span></a>
+  <nav class="top-actions" aria-label="Reading controls">
+    <button data-panel="contents" title="Contents" aria-label="Contents"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 9h9M4 14h16M4 19h9"/></svg><span>Contents</span></button>
+    <button data-panel="search" title="Search" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Search</span></button>
+    <button data-panel="appearance" title="Appearance" aria-label="Appearance"><strong>Aa</strong><span>Appearance</span></button>
+    <button data-panel="apparatus" title="Reading apparatus" aria-label="Reading apparatus"><svg viewBox="0 0 24 24"><path d="M12 5C9 3 5 3 3 4v15c4-1 7-.7 9 2 3-2.7 6-3 9-2V4c-3-1-6-1-9 1Zm0 0v16"/></svg><span>Apparatus</span></button>
+    <button id="focus" title="Focus 0–3" aria-label="Cycle focus mode"><svg viewBox="0 0 24 24"><path d="M8 3H4v5M16 3h4v5M4 16v5h4M20 16v5h-4"/></svg><span>Focus <b id="focus-level">0</b></span></button>
+    <button data-panel="desk" title="Reading Desk" aria-label="Reading Desk"><svg viewBox="0 0 24 24"><path d="M5 3h14v18H5zM9 8h6M9 12h7M9 16h4"/></svg><span>Desk</span></button>
+    <button data-panel="menu" title="Menu" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span>Menu</span></button>
+  </nav>
+</header>
+<div class="layout">
+  <main class="main" id="passage">
+    <div class="eyebrow">Tasawwuf / ʿIrfān · Bilingual research edition</div>
+    <h1>Miṣbāḥ al-Uns <span lang="ar" dir="rtl">مصباح الأنس</span></h1>
+    <p class="subtitle">Shams al-Dīn al-Fanārī · The Lamp of Intimacy between the Intelligible and the Witnessed</p>
+    <section class="progress" aria-labelledby="progress-title">
+      <div class="progress-head"><h2 id="progress-title">Translation progress</h2><strong id="percentage">61.53%</strong></div>
+      <div class="meter" role="progressbar" aria-label="Complete source pages translated" aria-valuemin="0" aria-valuemax="720" aria-valuenow="443"><div class="fill" id="progress-fill" style="width:61.5278%"></div></div>
+      <p id="progress-label">443 / 720 printed source pages · last complete page 445 · next §4.578</p>
+      <p class="progress-secondary" id="import-label">Reader import: §§4.538–4.577 (40 bilingual passages); earlier translated material through §4.537 remains outside this interface pending lossless recovery.</p>
+    </section>
+    <div class="notice"><strong>Working text, not a critical edition.</strong> The English is a source-aligned first pass; manuscript and printed-witness collation remain outstanding. <a href="HANDOFF.md">Scholarly handoff</a> · <a href="MANIFEST.json">Provenance register</a> · <a href="standalone.html">Portable offline reader</a>.</div>
+    <div class="reader-menu" role="toolbar" aria-label="Reading options">
+      <div class="reading-tabs"><button data-tab="read" class="chosen">Read</button><button data-tab="study">Study</button><button data-tab="research">Research</button></div>
+      <div class="language-tabs" role="group" aria-label="Language"><button data-lang="ar">ع</button><button data-lang="both" class="chosen">ع/EN</button><button data-lang="en">EN</button></div>
+    </div>
+    <div class="entry-heading"><div><span class="source-loc" id="location">Source</span><h2 id="section-name">Loading passages…</h2></div><button class="small-button" id="copy-link">Copy link</button></div>
+    <article class="reader" id="entry" aria-live="polite"></article>
+    <section class="apparatus" id="entry-notes" hidden><h3>Source notes and editorial apparatus</h3><div id="note-body"></div><p class="muted">Witness: Khvājavī / OpenITI fixed revision. Editorial observations are not Fanārī’s words.</p></section>
+    <section class="research-pane" id="research-pane" hidden><h3>Source and continuation</h3><p>Current bilingual import contains forty passages. It is not the whole prior corpus. The original master translates through §4.537; R10 and R11 are source-aligned continuations. Printed witness and critical comparison remain pending.</p><p><a href="HANDOFF.md">Read the complete stage handoff</a> · <a href="https://github.com/OpenITI/0850AH/blob/e2715c62fb458ce3ddc43b962cd55677cdd7bc35/data/0834IbnHamzaFanari/0834IbnHamzaFanari.MisbahUns/0834IbnHamzaFanari.MisbahUns.Shia004692-ara1">Arabic digital witness</a></p></section>
+    <footer class="endnotes"><p>© Reader interface: GNAMMA Research. The underlying premodern Arabic work and a new working English translation are distinguished from the modern editor’s apparatus. No independent verification of manuscript variants is asserted.</p></footer>
+  </main>
+</div>
+<nav class="dock" aria-label="Reading dock">
+ <button id="prev" title="Previous section" aria-label="Previous section"><svg viewBox="0 0 24 24"><path d="m14 5-7 7 7 7"/></svg><small>Previous</small></button>
+ <button data-panel="contents" title="Contents" aria-label="Contents"><svg viewBox="0 0 24 24"><path d="M5 4h14M5 10h14M5 16h14M5 21h14"/></svg><small>Contents</small></button>
+ <button id="readmode" title="Read / study" aria-label="Switch reading mode"><svg viewBox="0 0 24 24"><path d="M12 5C8 3 5 3 3 4v15c4-1 7-.7 9 2 3-2.7 6-3 9-2V4c-3-1-6-1-9 1ZM12 5v16"/></svg><small>Read</small></button>
+ <button id="bookmark" title="Bookmark section" aria-label="Bookmark section" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4V3z"/></svg><small>Bookmark</small></button>
+ <button data-panel="desk" title="Reading Desk" aria-label="Reading Desk"><svg viewBox="0 0 24 24"><path d="M6 4h12v16H6zM9 8h6M9 12h6M9 16h4"/></svg><small>Desk</small></button>
+ <button id="next" title="Next section" aria-label="Next section"><svg viewBox="0 0 24 24"><path d="m10 5 7 7-7 7"/></svg><small>Next</small></button>
+</nav>
+<div id="scrim" class="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Reader controls" aria-hidden="true" hidden>
+ <div class="drawer-head"><h2 id="drawer-title">Contents</h2><button id="drawer-close" title="Close" aria-label="Close panel">×</button></div>
+ <div id="drawer-body"></div>
+</aside>
+</body></html>
