@@ -1,0 +1,848 @@
+{
+  "schema_version": 1,
+  "created": "2026-11-07",
+  "source_repository": "OpenITI/RELEASE",
+  "source_commit": "cfc4157a3cf2054c0888f133970a4eaa3e22e58c",
+  "license": "CC BY-NC-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "source_documentation": "https://openiti.org/documentation/",
+  "verification_policy": "GitHub OpenITI RELEASE work + version paths exist and version-level metadata inspected. This is provenance verification, NOT manuscript collation, print collation, isnad verification, or critical edition certification. Explicit problems in OpenITI version metadata are retained.",
+  "books": [
+    {
+      "id": "muwatta",
+      "title": "al-Muwaṭṭaʾ",
+      "title_ar": "الموطأ",
+      "author": "Mālik ibn Anas",
+      "death_ah": 179,
+      "disciplines": [
+        "hadith",
+        "fiqh"
+      ],
+      "madhhab": "maliki",
+      "openiti": {
+        "book_uri": "Muwatta",
+        "version_uri": "0179MalikIbnAnas.Muwatta.Shamela0001699-ara1.completed",
+        "blob_sha": "a8ce4cf6fe5e2ca05d7e7f933cc197ac6bf596af",
+        "size_bytes": 1397896,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0179MalikIbnAnas/Muwatta/0179MalikIbnAnas.Muwatta.Shamela0001699-ara1.completed",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0179MalikIbnAnas/Muwatta/0179MalikIbnAnas.Muwatta.Shamela0001699-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0179MalikIbnAnas/Muwatta/0179MalikIbnAnas.Muwatta.Shamela0001699-ara1.completed",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0179MalikIbnAnas/Muwatta/Muwatta.yml",
+        "quality_note": "PAGINATION, HTML_TAGS"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "siybawayh",
+      "title": "al-Kitāb",
+      "title_ar": "الكتاب",
+      "author": "Sībawayh",
+      "death_ah": 180,
+      "disciplines": [
+        "arabic",
+        "nahw",
+        "sarf"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "KitabSibawayhi",
+        "version_uri": "0180Sibawayhi.KitabSibawayhi.Shamela0023018-ara1.mARkdown",
+        "blob_sha": "acb4c12204ae661d26b2309f00986938afa796d8",
+        "size_bytes": 2692552,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0180Sibawayhi/KitabSibawayhi/0180Sibawayhi.KitabSibawayhi.Shamela0023018-ara1.mARkdown",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0180Sibawayhi/KitabSibawayhi/0180Sibawayhi.KitabSibawayhi.Shamela0023018-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0180Sibawayhi/KitabSibawayhi/0180Sibawayhi.KitabSibawayhi.Shamela0023018-ara1.mARkdown",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0180Sibawayhi/KitabSibawayhi/KitabSibawayhi.yml",
+        "quality_note": "REDUNDANT_PARTS, structure and variant wording noted"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "shafii_risala",
+      "title": "al-Risāla",
+      "title_ar": "الرسالة",
+      "author": "al-Shāfiʿī",
+      "death_ah": 204,
+      "disciplines": [
+        "fiqh",
+        "usul"
+      ],
+      "madhhab": "shafii",
+      "openiti": {
+        "book_uri": "Risala",
+        "version_uri": "0204Shafici.Risala.LAL2013020402-ara2",
+        "blob_sha": "5d0178016d9d25e4bc767edfc01c724001e7052b",
+        "size_bytes": 460445,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0204Shafici/Risala/0204Shafici.Risala.LAL2013020402-ara2",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0204Shafici/Risala/0204Shafici.Risala.LAL2013020402-ara2.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0204Shafici/Risala/0204Shafici.Risala.LAL2013020402-ara2",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0204Shafici/Risala/Risala.yml",
+        "quality_note": "CLEANED_VERSION; LAL-derived Arabic paragraph locators"
+      },
+      "local_text": "data/shafii_risala.txt",
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "shafii_umm",
+      "title": "al-Umm",
+      "title_ar": "الأم",
+      "author": "al-Shāfiʿī",
+      "death_ah": 204,
+      "disciplines": [
+        "fiqh"
+      ],
+      "madhhab": "shafii",
+      "openiti": {
+        "book_uri": "Umm",
+        "version_uri": "0204Shafici.Umm.JK000147-ara1",
+        "blob_sha": "51242425bb4cb75952d52db1e8d1b886c040a885",
+        "size_bytes": 10828604,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0204Shafici/Umm/0204Shafici.Umm.JK000147-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0204Shafici/Umm/0204Shafici.Umm.JK000147-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0204Shafici/Umm/0204Shafici.Umm.JK000147-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0204Shafici/Umm/Umm.yml",
+        "quality_note": "PRIMARY_VERSION, CLEANED_VERSION"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "bukhari_sahih",
+      "title": "Ṣaḥīḥ al-Bukhārī",
+      "title_ar": "صحيح البخاري",
+      "author": "al-Bukhārī",
+      "death_ah": 256,
+      "disciplines": [
+        "hadith"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "Sahih",
+        "version_uri": "0256Bukhari.Sahih.JK000110-ara1.completed",
+        "blob_sha": "945cd388b14ad8235e429bf66369a84847e56e0c",
+        "size_bytes": 5524762,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0256Bukhari/Sahih/0256Bukhari.Sahih.JK000110-ara1.completed",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0256Bukhari/Sahih/0256Bukhari.Sahih.JK000110-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0256Bukhari/Sahih/0256Bukhari.Sahih.JK000110-ara1.completed",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0256Bukhari/Sahih/Sahih.yml",
+        "quality_note": "RANDOM_CHARS; edition pagination differs"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "muslim_sahih",
+      "title": "Ṣaḥīḥ Muslim",
+      "title_ar": "صحيح مسلم",
+      "author": "Muslim ibn al-Ḥajjāj",
+      "death_ah": 261,
+      "disciplines": [
+        "hadith"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "Sahih",
+        "version_uri": "0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+        "blob_sha": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+        "size_bytes": 4933663,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0261Muslim/Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0261Muslim/Sahih/0261Muslim.Sahih.Shamela0001727-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0261Muslim/Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0261Muslim/Sahih/Sahih.yml",
+        "quality_note": "PAGINATION; repeated page markers"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "tabari_jamic",
+      "title": "Jāmiʿ al-bayān",
+      "title_ar": "جامع البيان",
+      "author": "al-Ṭabarī",
+      "death_ah": 310,
+      "disciplines": [
+        "tafsir"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "JamicBayan",
+        "version_uri": "0310Tabari.JamicBayan.JK000164-ara1",
+        "blob_sha": "b6e75276e484314a87d4a3fc59879f3a8112c453",
+        "size_bytes": 26360746,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0310Tabari/JamicBayan/0310Tabari.JamicBayan.JK000164-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0310Tabari/JamicBayan/0310Tabari.JamicBayan.JK000164-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0310Tabari/JamicBayan/0310Tabari.JamicBayan.JK000164-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0310Tabari/JamicBayan/JamicBayan.yml",
+        "quality_note": "Edition metadata includes placeholder fields; no new collation"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "qushayri_risala",
+      "title": "al-Risāla al-Qushayriyya",
+      "title_ar": "الرسالة القشيرية",
+      "author": "al-Qushayrī",
+      "death_ah": 465,
+      "disciplines": [
+        "tasawwuf"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "RisalaQushayriyya",
+        "version_uri": "0465IbnHawazinQushayri.RisalaQushayriyya.JK009321-ara1",
+        "blob_sha": "6b1d848dbe0329412d6179ed6f5700e6cc6b9289",
+        "size_bytes": 1143025,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0465IbnHawazinQushayri/RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.JK009321-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0465IbnHawazinQushayri/RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.JK009321-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0465IbnHawazinQushayri/RisalaQushayriyya/0465IbnHawazinQushayri.RisalaQushayriyya.JK009321-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0465IbnHawazinQushayri/RisalaQushayriyya/RisalaQushayriyya.yml",
+        "quality_note": "PRIMARY_VERSION, CLEANED_VERSION"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "qushayri_lataif",
+      "title": "Laṭāʾif al-ishārāt",
+      "title_ar": "لطائف الإشارات",
+      "author": "al-Qushayrī",
+      "death_ah": 465,
+      "disciplines": [
+        "tafsir",
+        "tasawwuf"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "LataifIsharat",
+        "version_uri": "0465IbnHawazinQushayri.LataifIsharat.JK009257-ara1",
+        "blob_sha": "c8c994c4ea58095c4888e90ab1c377c9c6c1c68e",
+        "size_bytes": 3259316,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0465IbnHawazinQushayri/LataifIsharat/0465IbnHawazinQushayri.LataifIsharat.JK009257-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0465IbnHawazinQushayri/LataifIsharat/0465IbnHawazinQushayri.LataifIsharat.JK009257-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0465IbnHawazinQushayri/LataifIsharat/0465IbnHawazinQushayri.LataifIsharat.JK009257-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0465IbnHawazinQushayri/LataifIsharat/LataifIsharat.yml",
+        "quality_note": "PRIMARY_VERSION, CLEANED_VERSION"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "jurjani_dalail",
+      "title": "Dalāʾil al-iʿjāz",
+      "title_ar": "دلائل الإعجاز",
+      "author": "ʿAbd al-Qāhir al-Jurjānī",
+      "death_ah": 471,
+      "disciplines": [
+        "arabic",
+        "balagha"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "DalailIcjaz",
+        "version_uri": "0471CabdQahirJurjani.DalailIcjaz.JK001019-ara1",
+        "blob_sha": "1af123716683f8e48e4b7f3a8d67542777838a50",
+        "size_bytes": 914468,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0471CabdQahirJurjani/DalailIcjaz/0471CabdQahirJurjani.DalailIcjaz.JK001019-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0471CabdQahirJurjani/DalailIcjaz/0471CabdQahirJurjani.DalailIcjaz.JK001019-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0471CabdQahirJurjani/DalailIcjaz/0471CabdQahirJurjani.DalailIcjaz.JK001019-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0471CabdQahirJurjani/DalailIcjaz/DalailIcjaz.yml",
+        "quality_note": "PRIMARY_VERSION, CLEANED_VERSION"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "jurjani_asrar",
+      "title": "Asrār al-balāgha",
+      "title_ar": "أسرار البلاغة",
+      "author": "ʿAbd al-Qāhir al-Jurjānī",
+      "death_ah": 471,
+      "disciplines": [
+        "arabic",
+        "balagha"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "AsrarBalagha",
+        "version_uri": "0471CabdQahirJurjani.AsrarBalagha.JK006906-ara1",
+        "blob_sha": "e778c4c28f521798ffe7f66aac75971dcaec9e6b",
+        "size_bytes": 691651,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0471CabdQahirJurjani/AsrarBalagha/0471CabdQahirJurjani.AsrarBalagha.JK006906-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0471CabdQahirJurjani/AsrarBalagha/0471CabdQahirJurjani.AsrarBalagha.JK006906-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0471CabdQahirJurjani/AsrarBalagha/0471CabdQahirJurjani.AsrarBalagha.JK006906-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0471CabdQahirJurjani/AsrarBalagha/AsrarBalagha.yml",
+        "quality_note": "PRIMARY_VERSION, CLEANED_VERSION"
+      },
+      "local_text": "data/jurjani_asrar.txt",
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "sarakhsi_mabsut",
+      "title": "al-Mabsūṭ",
+      "title_ar": "المبسوط",
+      "author": "al-Sarakhsī",
+      "death_ah": 483,
+      "disciplines": [
+        "fiqh"
+      ],
+      "madhhab": "hanafi",
+      "openiti": {
+        "book_uri": "Mabsut",
+        "version_uri": "0483IbnAhmadSarakhsi.Mabsut.JK000266-ara1",
+        "blob_sha": "d79593b2888860cc7415d1d3ab6f9f1fab4fa931",
+        "size_bytes": 23440051,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0483IbnAhmadSarakhsi/Mabsut/0483IbnAhmadSarakhsi.Mabsut.JK000266-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0483IbnAhmadSarakhsi/Mabsut/0483IbnAhmadSarakhsi.Mabsut.JK000266-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0483IbnAhmadSarakhsi/Mabsut/0483IbnAhmadSarakhsi.Mabsut.JK000266-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0483IbnAhmadSarakhsi/Mabsut/Mabsut.yml",
+        "quality_note": "PRIMARY_VERSION, CLEANED_VERSION"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "sarakhsi_usul",
+      "title": "Uṣūl al-Sarakhsī",
+      "title_ar": "أصول السرخسي",
+      "author": "al-Sarakhsī",
+      "death_ah": 483,
+      "disciplines": [
+        "fiqh",
+        "usul"
+      ],
+      "madhhab": "hanafi",
+      "openiti": {
+        "book_uri": "Usul",
+        "version_uri": "0483IbnAhmadSarakhsi.Usul.JK000211-ara1",
+        "blob_sha": "41cc34f9822b2c812b8360f560e0972622779dae",
+        "size_bytes": 2168203,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0483IbnAhmadSarakhsi/Usul/0483IbnAhmadSarakhsi.Usul.JK000211-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0483IbnAhmadSarakhsi/Usul/0483IbnAhmadSarakhsi.Usul.JK000211-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0483IbnAhmadSarakhsi/Usul/0483IbnAhmadSarakhsi.Usul.JK000211-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0483IbnAhmadSarakhsi/Usul/Usul.yml",
+        "quality_note": "PRIMARY_VERSION, CLEANED_VERSION"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "ibn_rushd_bidaya",
+      "title": "Bidāyat al-mujtahid",
+      "title_ar": "بداية المجتهد",
+      "author": "Ibn Rushd al-Ḥafīd",
+      "death_ah": 595,
+      "disciplines": [
+        "fiqh",
+        "usul"
+      ],
+      "madhhab": "comparative",
+      "openiti": {
+        "book_uri": "BidayatMujtahid",
+        "version_uri": "0595IbnRushdHafid.BidayatMujtahid.JK000222-ara1",
+        "blob_sha": "80666a06172978ad31b2c45231acbe49708d3063",
+        "size_bytes": 2899321,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0595IbnRushdHafid/BidayatMujtahid/0595IbnRushdHafid.BidayatMujtahid.JK000222-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0595IbnRushdHafid/BidayatMujtahid/0595IbnRushdHafid.BidayatMujtahid.JK000222-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0595IbnRushdHafid/BidayatMujtahid/0595IbnRushdHafid.BidayatMujtahid.JK000222-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0595IbnRushdHafid/BidayatMujtahid/BidayatMujtahid.yml",
+        "quality_note": "PRIMARY_VERSION, CLEANED_VERSION"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "ibn_qudama_mughni",
+      "title": "al-Mughnī",
+      "title_ar": "المغني",
+      "author": "Ibn Qudāma",
+      "death_ah": 620,
+      "disciplines": [
+        "fiqh"
+      ],
+      "madhhab": "hanbali",
+      "openiti": {
+        "book_uri": "Mughni",
+        "version_uri": "0620IbnQudamaMaqdisi.Mughni.JK000154-ara1",
+        "blob_sha": "75a39460c129b55616b88e37b9ffaa225b4b5ecd",
+        "size_bytes": 16399849,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0620IbnQudamaMaqdisi/Mughni/0620IbnQudamaMaqdisi.Mughni.JK000154-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0620IbnQudamaMaqdisi/Mughni/0620IbnQudamaMaqdisi.Mughni.JK000154-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0620IbnQudamaMaqdisi/Mughni/0620IbnQudamaMaqdisi.Mughni.JK000154-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0620IbnQudamaMaqdisi/Mughni/Mughni.yml",
+        "quality_note": "PRIMARY_VERSION, CLEANED_VERSION"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "ibn_qudama_rawda",
+      "title": "Rawḍat al-nāẓir",
+      "title_ar": "روضة الناظر",
+      "author": "Ibn Qudāma",
+      "death_ah": 620,
+      "disciplines": [
+        "fiqh",
+        "usul"
+      ],
+      "madhhab": "hanbali",
+      "openiti": {
+        "book_uri": "RawdatNazir",
+        "version_uri": "0620IbnQudamaMaqdisi.RawdatNazir.JK000156-ara1",
+        "blob_sha": "c90c038e17c7560b91b2adde74394c9d895be50b",
+        "size_bytes": 685526,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0620IbnQudamaMaqdisi/RawdatNazir/0620IbnQudamaMaqdisi.RawdatNazir.JK000156-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0620IbnQudamaMaqdisi/RawdatNazir/0620IbnQudamaMaqdisi.RawdatNazir.JK000156-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0620IbnQudamaMaqdisi/RawdatNazir/0620IbnQudamaMaqdisi.RawdatNazir.JK000156-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0620IbnQudamaMaqdisi/RawdatNazir/RawdatNazir.yml",
+        "quality_note": "PRIMARY_VERSION, CLEANED_VERSION"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "sakkaki_miftah",
+      "title": "Miftāḥ al-ʿulūm",
+      "title_ar": "مفتاح العلوم",
+      "author": "al-Sakkākī",
+      "death_ah": 626,
+      "disciplines": [
+        "arabic",
+        "balagha",
+        "nahw"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "MiftahCulum",
+        "version_uri": "0626IbnMuhammadKhwarazmiSakkaki.MiftahCulum.JK010081-ara1",
+        "blob_sha": "ac89cd7eb9eecfe0ba3e1a95be42f331ddf9c7d7",
+        "size_bytes": 1320746,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0626IbnMuhammadKhwarazmiSakkaki/MiftahCulum/0626IbnMuhammadKhwarazmiSakkaki.MiftahCulum.JK010081-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0626IbnMuhammadKhwarazmiSakkaki/MiftahCulum/0626IbnMuhammadKhwarazmiSakkaki.MiftahCulum.JK010081-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0626IbnMuhammadKhwarazmiSakkaki/MiftahCulum/0626IbnMuhammadKhwarazmiSakkaki.MiftahCulum.JK010081-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0626IbnMuhammadKhwarazmiSakkaki/MiftahCulum/MiftahCulum.yml",
+        "quality_note": "PRIMARY_VERSION, CLEANED_VERSION"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "ibn_arabi_fusus",
+      "title": "Fuṣūṣ al-ḥikam",
+      "title_ar": "فصوص الحكم",
+      "author": "Ibn ʿArabī",
+      "death_ah": 638,
+      "disciplines": [
+        "tasawwuf",
+        "philosophy"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "FususHikam",
+        "version_uri": "0638IbnCarabi.FususHikam.Kraken21042913-ara1.mARkdown",
+        "blob_sha": "5539d347ca1d02f3ac2235f692940d557dc3f90c",
+        "size_bytes": 397708,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0638IbnCarabi/FususHikam/0638IbnCarabi.FususHikam.Kraken21042913-ara1.mARkdown",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0638IbnCarabi/FususHikam/0638IbnCarabi.FususHikam.Kraken21042913-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0638IbnCarabi/FususHikam/0638IbnCarabi.FususHikam.Kraken21042913-ara1.mARkdown",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0638IbnCarabi/FususHikam/FususHikam.yml",
+        "quality_note": "OCR post-corrected; second proof-reading recommended"
+      },
+      "local_text": "data/ibn_arabi_fusus.txt",
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "ibn_malik_alfiyya",
+      "title": "Alfiyyat Ibn Mālik",
+      "title_ar": "ألفية ابن مالك",
+      "author": "Ibn Mālik",
+      "death_ah": 672,
+      "disciplines": [
+        "arabic",
+        "nahw",
+        "sarf"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "Alfiyya",
+        "version_uri": "0672IbnMalik.Alfiyya.Shamela0008522-ara1",
+        "blob_sha": "6e5b9fb177c8f4b477c0f848a93409578187bb00",
+        "size_bytes": 97798,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0672IbnMalik/Alfiyya/0672IbnMalik.Alfiyya.Shamela0008522-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0672IbnMalik/Alfiyya/0672IbnMalik.Alfiyya.Shamela0008522-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0672IbnMalik/Alfiyya/0672IbnMalik.Alfiyya.Shamela0008522-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0672IbnMalik/Alfiyya/Alfiyya.yml",
+        "quality_note": "PRIMARY_VERSION, CLEANED_VERSION"
+      },
+      "local_text": "data/ibn_malik_alfiyya.txt",
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "nawawi_arbain",
+      "title": "al-Arbaʿūn al-Nawawiyya",
+      "title_ar": "الأربعون النووية",
+      "author": "al-Nawawī",
+      "death_ah": 676,
+      "disciplines": [
+        "hadith"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "ArbacunaNawawiyya",
+        "version_uri": "0676Nawawi.ArbacunaNawawiyya.Shamela0012836-ara1.mARkdown",
+        "blob_sha": "2ac4041cdd0e1c4d43a753c8ecd681b3fa3dcd5f",
+        "size_bytes": 36708,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0676Nawawi/ArbacunaNawawiyya/0676Nawawi.ArbacunaNawawiyya.Shamela0012836-ara1.mARkdown",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0676Nawawi/ArbacunaNawawiyya/0676Nawawi.ArbacunaNawawiyya.Shamela0012836-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0676Nawawi/ArbacunaNawawiyya/0676Nawawi.ArbacunaNawawiyya.Shamela0012836-ara1.mARkdown",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0676Nawawi/ArbacunaNawawiyya/ArbacunaNawawiyya.yml",
+        "quality_note": "OpenITI annotated text; cross-check individual ḥadīth locators before quotation"
+      },
+      "local_text": "data/nawawi_arbain.txt",
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "nawawi_minhaj",
+      "title": "Minhāj al-ṭālibīn",
+      "title_ar": "منهاج الطالبين",
+      "author": "al-Nawawī",
+      "death_ah": 676,
+      "disciplines": [
+        "fiqh"
+      ],
+      "madhhab": "shafii",
+      "openiti": {
+        "book_uri": "MinhajTalibin",
+        "version_uri": "0676Nawawi.MinhajTalibin.JK001168-ara1",
+        "blob_sha": "7434500fc474e9d4a99746b812a936d7d8faabb2",
+        "size_bytes": 725546,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0676Nawawi/MinhajTalibin/0676Nawawi.MinhajTalibin.JK001168-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0676Nawawi/MinhajTalibin/0676Nawawi.MinhajTalibin.JK001168-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0676Nawawi/MinhajTalibin/0676Nawawi.MinhajTalibin.JK001168-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0676Nawawi/MinhajTalibin/MinhajTalibin.yml",
+        "quality_note": "OpenITI digital version; no new print collation"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "qazwini_idah",
+      "title": "al-Īḍāḥ fī ʿulūm al-balāgha",
+      "title_ar": "الإيضاح في علوم البلاغة",
+      "author": "al-Qazwīnī",
+      "death_ah": 739,
+      "disciplines": [
+        "arabic",
+        "balagha"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "IdahFiCulumBalagha",
+        "version_uri": "0739JalalDinQazwini.IdahFiCulumBalagha.JK001001-ara1",
+        "blob_sha": "5b3bc244acaae833621c008eb27d601dad79bf23",
+        "size_bytes": 716100,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0739JalalDinQazwini/IdahFiCulumBalagha/0739JalalDinQazwini.IdahFiCulumBalagha.JK001001-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0739JalalDinQazwini/IdahFiCulumBalagha/0739JalalDinQazwini.IdahFiCulumBalagha.JK001001-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0739JalalDinQazwini/IdahFiCulumBalagha/0739JalalDinQazwini.IdahFiCulumBalagha.JK001001-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0739JalalDinQazwini/IdahFiCulumBalagha/IdahFiCulumBalagha.yml",
+        "quality_note": "OpenITI digital version; no new print collation"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "qazwini_talkhis",
+      "title": "Talkhīṣ al-Miftāḥ",
+      "title_ar": "تلخيص المفتاح",
+      "author": "al-Qazwīnī",
+      "death_ah": 739,
+      "disciplines": [
+        "arabic",
+        "balagha"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "TalkhisMiftah",
+        "version_uri": "0739JalalDinQazwini.TalkhisMiftah.Kraken220201000819-ara1",
+        "blob_sha": "1f94c94eb88865c7ee38571a48c410beb2fdacd2",
+        "size_bytes": 482485,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0739JalalDinQazwini/TalkhisMiftah/0739JalalDinQazwini.TalkhisMiftah.Kraken220201000819-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0739JalalDinQazwini/TalkhisMiftah/0739JalalDinQazwini.TalkhisMiftah.Kraken220201000819-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0739JalalDinQazwini/TalkhisMiftah/0739JalalDinQazwini.TalkhisMiftah.Kraken220201000819-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0739JalalDinQazwini/TalkhisMiftah/TalkhisMiftah.yml",
+        "quality_note": "UNCORRECTED_OCR: do not treat as proofread or cite without source collation"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "ibn_hisham_mughni",
+      "title": "Mughnī al-labīb",
+      "title_ar": "مغني اللبيب",
+      "author": "Ibn Hishām",
+      "death_ah": 761,
+      "disciplines": [
+        "arabic",
+        "nahw"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "MughniLabib",
+        "version_uri": "0761JamalDinIbnHisham.MughniLabib.JK001131-ara1",
+        "blob_sha": "d7197305150bd9861525d6e01db3a977c022cc29",
+        "size_bytes": 1496219,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0761JamalDinIbnHisham/MughniLabib/0761JamalDinIbnHisham.MughniLabib.JK001131-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0761JamalDinIbnHisham/MughniLabib/0761JamalDinIbnHisham.MughniLabib.JK001131-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0761JamalDinIbnHisham/MughniLabib/0761JamalDinIbnHisham.MughniLabib.JK001131-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0761JamalDinIbnHisham/MughniLabib/MughniLabib.yml",
+        "quality_note": "PRIMARY_VERSION, CLEANED_VERSION"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "taftazani_mukhtasar",
+      "title": "Mukhtaṣar al-maʿānī",
+      "title_ar": "مختصر المعاني",
+      "author": "al-Taftāzānī",
+      "death_ah": 792,
+      "disciplines": [
+        "arabic",
+        "balagha"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "MukhtasarMacani",
+        "version_uri": "0792IbnCumarTaftazani.MukhtasarMacani.ShamAY0033799-ara1",
+        "blob_sha": "72163c540b6cce7587ea5af1117bf497c4de472d",
+        "size_bytes": 823231,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0792IbnCumarTaftazani/MukhtasarMacani/0792IbnCumarTaftazani.MukhtasarMacani.ShamAY0033799-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0792IbnCumarTaftazani/MukhtasarMacani/0792IbnCumarTaftazani.MukhtasarMacani.ShamAY0033799-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0792IbnCumarTaftazani/MukhtasarMacani/0792IbnCumarTaftazani.MukhtasarMacani.ShamAY0033799-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0792IbnCumarTaftazani/MukhtasarMacani/MukhtasarMacani.yml",
+        "quality_note": "Metadata fields incomplete; printed collation pending"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "zamakhshari_kashshaf",
+      "title": "al-Kashshāf",
+      "title_ar": "الكشاف",
+      "author": "al-Zamakhsharī",
+      "death_ah": 538,
+      "disciplines": [
+        "tafsir",
+        "arabic",
+        "balagha"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "Kashshaf",
+        "version_uri": "0538JarAllahZamakhshari.Kashshaf.JK001496-ara1",
+        "blob_sha": "81cfdb572e49445a3da753c7b88872b500cbfb09",
+        "size_bytes": 8056993,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0538JarAllahZamakhshari/Kashshaf/0538JarAllahZamakhshari.Kashshaf.JK001496-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0538JarAllahZamakhshari/Kashshaf/0538JarAllahZamakhshari.Kashshaf.JK001496-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0538JarAllahZamakhshari/Kashshaf/0538JarAllahZamakhshari.Kashshaf.JK001496-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0538JarAllahZamakhshari/Kashshaf/Kashshaf.yml",
+        "quality_note": "PRIMARY_VERSION, CLEANED_VERSION"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "zamakhshari_mufassal",
+      "title": "al-Mufaṣṣal fī ṣanʿat al-iʿrāb",
+      "title_ar": "المفصل في صنعة الإعراب",
+      "author": "al-Zamakhsharī",
+      "death_ah": 538,
+      "disciplines": [
+        "arabic",
+        "nahw"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "MufassalFiSuncatIcrab",
+        "version_uri": "0538JarAllahZamakhshari.MufassalFiSuncatIcrab.JK001224-ara1",
+        "blob_sha": "ae741471d5f1d14f50b37c0763d76cc16a2f6808",
+        "size_bytes": 488385,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0538JarAllahZamakhshari/MufassalFiSuncatIcrab/0538JarAllahZamakhshari.MufassalFiSuncatIcrab.JK001224-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0538JarAllahZamakhshari/MufassalFiSuncatIcrab/0538JarAllahZamakhshari.MufassalFiSuncatIcrab.JK001224-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0538JarAllahZamakhshari/MufassalFiSuncatIcrab/0538JarAllahZamakhshari.MufassalFiSuncatIcrab.JK001224-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0538JarAllahZamakhshari/MufassalFiSuncatIcrab/MufassalFiSuncatIcrab.yml",
+        "quality_note": "OpenITI digital version; no new print collation"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "zamakhshari_asas",
+      "title": "Asās al-balāgha",
+      "title_ar": "أساس البلاغة",
+      "author": "al-Zamakhsharī",
+      "death_ah": 538,
+      "disciplines": [
+        "arabic",
+        "lugha",
+        "balagha"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "AsasBalagha",
+        "version_uri": "0538JarAllahZamakhshari.AsasBalagha.JK007032-ara1",
+        "blob_sha": "49b448ad37e077264a443032922c47495fe8b6a2",
+        "size_bytes": 2948245,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0538JarAllahZamakhshari/AsasBalagha/0538JarAllahZamakhshari.AsasBalagha.JK007032-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0538JarAllahZamakhshari/AsasBalagha/0538JarAllahZamakhshari.AsasBalagha.JK007032-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0538JarAllahZamakhshari/AsasBalagha/0538JarAllahZamakhshari.AsasBalagha.JK007032-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0538JarAllahZamakhshari/AsasBalagha/AsasBalagha.yml",
+        "quality_note": "OpenITI digital version; no new print collation"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    }
+  ]
+}
