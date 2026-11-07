@@ -56,9 +56,10 @@ function build(reader,openiti,alreq){
 }
 function load(){
  if(ready||promise)return;
+ const started=performance.now();console.info("GNAMMA_SOURCE_LOAD_BEGIN");
  promise=Promise.all(["registry.json","expanded-bibliography.json","manuscript-full.json"].map(p=>fetch("corpora/"+p).then(r=>{if(!r.ok)throw Error(p+" HTTP "+r.status);return r.json();})))
- .then(([reader,oi,ms])=>{if(!reader.books||!oi.works||!ms.works)throw Error("Invalid catalogue structure");sourceReader=reader;records=build(reader,oi,ms);ready=true;error="";})
- .catch(e=>{error=String(e?.message||e);})
+ .then(([reader,oi,ms])=>{if(!reader.books||!oi.works||!ms.works)throw Error("Invalid catalogue structure");console.info("GNAMMA_SOURCE_JSON_LOADED",performance.now()-started,oi.works.length,ms.works.length);sourceReader=reader;records=build(reader,oi,ms);ready=true;error="";console.info("GNAMMA_SOURCE_NORMALIZED",performance.now()-started,records.length);})
+ .catch(e=>{error=String(e?.message||e);console.error("GNAMMA_SOURCE_LOAD_FAILED",error);})
  .finally(()=>{promise=null;if(last&&last.isActive())render(last);});
 }
 function readHash(){
@@ -219,5 +220,5 @@ root.addEventListener("click",ev=>{
  if(x.hasAttribute("data-gnbib-book"))root.querySelector(".gnbib-detail")?.scrollIntoView({block:"nearest"});
 });
 readHash();
-window.GNAtlasBibliography={render,readHash,debug:()=>({ready,count:records.length,activeGenre,selected:state.selected,band:state.band,period:state.period,tier:state.tier})};
+window.GNAtlasBibliography={render,readHash,debug:()=>({ready,loading:!!promise,error,count:records.length,activeGenre,selected:state.selected,band:state.band,period:state.period,tier:state.tier})};
 })();
