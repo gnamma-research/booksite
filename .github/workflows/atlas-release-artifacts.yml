@@ -51,7 +51,7 @@ jobs:
           assert (len(d['nodes']),len(d['edges']),len(d['sources']),len(d['textual_families'])) == (404,377,374,21)
           assert (m['entries'],m['textual_relationships'],m['sources'],m['textual_family_routes']) == (404,377,374,21)
           assert 'source-attested disciplinary work maps' in m['visual_modes']
-          assert 'integrated-source-bibliography-map' in m['ui_revision']
+          assert 'common-chronological-atlas-vertical-major-texts' in m['ui_revision']
           assert len(registry['books']) == 30 and len(registry['relationships']) == 5
           fiqh = [b for b in registry['books'] if 'fiqh' in b['disciplines']]
           assert len(fiqh) == 10
@@ -59,8 +59,9 @@ jobs:
           html = (p/'index.html').read_text(encoding='utf8')
           embedded = json.loads(re.search(r'<script type="application/json" data-atlas>(.*?)</script>',html,re.S).group(1))
           assert embedded == d
-          assert 'subject-first-svg-20261107' in html
-          assert (p/'corpora/subject-graph.js').is_file()
+          assert 'common-timeline-20261108' in html
+          assert (p/'corpora/discipline-atlas.js').is_file()
+          assert (p/'corpora/canonical-synopsis.js').is_file()
           assert (p/'corpora/early-jurists.json').is_file()
           assert m['bibliography_map']['registered_early_historical_authorities']>=16
           assert (p/'corpora/expansion.html').is_file()
