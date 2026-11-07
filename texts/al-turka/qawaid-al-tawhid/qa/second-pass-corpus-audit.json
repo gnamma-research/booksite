@@ -2853,8 +2853,8 @@
         262
       ],
       "arabicWords": 654,
-      "englishWords": 532,
-      "ratio": 0.813,
+      "englishWords": 543,
+      "ratio": 0.83,
       "arabicSourceStatus": "fixed A digital page transcription",
       "sourceFragmentOverlap": 0.925,
       "sampledFragments": 40,
@@ -3001,31 +3001,31 @@
     {
       "filename": "qawaid-bilingual-reading.pdf",
       "bytes": 919698,
-      "sha256": "ba88b43fda12cd2bc3dfe0a37abd36541b14fbd07088833fb61509e5c78acfce",
+      "sha256": "4310d17c2fa16a166ae9d0bf32f403165c60a13eb09cf7a95ab798cc68eec0c3",
       "hasPdfHeader": true
     },
     {
       "filename": "qawaid-english-reading.pdf",
-      "bytes": 432731,
-      "sha256": "c4b6c5baa41006450827cbb135f443263baa429f21b4effd7fec0641266714c1",
+      "bytes": 432726,
+      "sha256": "651d7cc64eda18f5f573b19c62c12b5b7b6130ff2fe7686488c19d232b6919e3",
       "hasPdfHeader": true
     },
     {
       "filename": "qawaid-arabic-reading.pdf",
-      "bytes": 521661,
-      "sha256": "0a94301d8a67105239886fb3c727344a3c0efd4b28b7dbde2d4be7f035b98a24",
+      "bytes": 521663,
+      "sha256": "8b7313c15497da02d820cc51838abb396678d8b566e3bbdd0ef0ca0da5bf40ba",
       "hasPdfHeader": true
     },
     {
       "filename": "qawaid-bilingual-study.pdf",
-      "bytes": 1019571,
-      "sha256": "4a13992bf53dc8f47a1a329620f4b3b91fa9d6b578ca42de8da281682dee7c6a",
+      "bytes": 1019570,
+      "sha256": "571c9b82750d7283db839e76cef74f2bf94befa5d421669242e5e6ddecbf7c99",
       "hasPdfHeader": true
     },
     {
       "filename": "qawaid-bilingual-reference.pdf",
-      "bytes": 1173608,
-      "sha256": "7f26bb2512be7c47e160c69a8dce7f2b3ca98c5308412e8b0b04614fd4e3c2c6",
+      "bytes": 1174040,
+      "sha256": "06e1faeadda6bce4085d9a3e5b7bdccbc6d07a37e98cb04bfcb43bce3f32349f",
       "hasPdfHeader": true
     }
   ]
