@@ -86,14 +86,14 @@ function group(root,heading,items){
 function openSheet(mode){
  returnFocus=document.activeElement;sheet.replaceChildren();
  const header=make('header','gn-logic-sheet-head');
- const h=make('h2',null,mode==='layers'?'Text to display':mode==='outline'?'Commentary topic guide':'Tahdhīb al-Manṭiq');
+ const h=make('h2',null,mode==='layers'?'Text to display':mode==='outline'?'Commentary topic guide':mode==='batches'?'Two 55-page bilingual batches':'Tahdhīb al-Manṭiq');
  h.id='gn-logic-sheet-title';header.append(h,action('Close','close',closeSheet));sheet.append(header);
  const body=make('div','gn-logic-sheet-body');sheet.append(body);
  if(mode==='layers'){
-  body.append(make('p','gn-logic-layer-explainer','Choose one of two reading states. The second includes only the currently translated, source-linked passages of al-Yazdī; untranslated lines are not silently supplied.'));
+  body.append(make('p','gn-logic-layer-explainer','Exactly two display choices. The second includes a full first-pass translation of the searchable principal Yazdī commentary, Qum pp.7–123, excluding later marginal glosses. This is not yet a photographic or manuscript-critical edition.'));
   for(const [key,label,help] of [
    [false,'Matn','Al-Taftāzānī alone'],
-   [true,'Matn + sharḥ','Al-Taftāzānī and available al-Yazdī gloss selections']]){
+   [true,'Matn + sharḥ','Al-Taftāzānī plus al-Yazdī main ḥāshiya · working translation']]){
     const b=make('button','gn-logic-layer-choice');b.type='button';
     b.setAttribute('role','radio');b.setAttribute('aria-checked',String(yazdi.enabled()===key));
     b.append(make('span','gn-logic-choice-mark',yazdi.enabled()===key?'●':'○'));
@@ -126,6 +126,10 @@ function openSheet(mode){
    const source=make('a','gn-logic-outline-source','Open printed Indian edition · I13');
    source.href=outline.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';body.append(source);
   }
+ }else if(mode==='batches'){
+  body.append(make('p','gn-logic-layer-explainer','Two complete cumulative bilingual text files, each containing the Arabic principal ḥāshiya and its English translation across 55 distinct Qum printed-page positions. Later hāmish and heading-only pages are not counted. Independent manuscript collation remains pending.'));
+  body.append(item('Batch 1 · Qum pp.7–66','55 translated source-page positions · original Arabic + English',()=>{window.location.href='batches/batch-01-q7-66.html'}));
+  body.append(item('Batch 2 · Qum pp.67–123','Next 55 translated positions · through the conclusion',()=>{window.location.href='batches/batch-02-q67-123.html'}));
  }else{
   group(body,'Navigate',[
    ['Contents','Editorial sections 1–19',()=>legacy('Contents')],
@@ -142,6 +146,7 @@ function openSheet(mode){
   group(body,'References & personal desk',[
    ['Dictionary','Editorial terms and commentary citations',()=>legacy('Dictionary')],
    ['Critical witnesses & coverage','Sources, variants, publication status',()=>{window.location.href='critical-status.html'}],
+   ['Full bilingual translation batches','55 pages + 55 pages · Arabic and English',()=>openSheet('batches')],
    ['Subject index','Source-linked thematic topics',()=>legacy('Subject index')],
    ['Saved & history','Bookmarks and reading positions',()=>legacy('Saved')],
    ['My notes','Private passage annotations',()=>legacy('Notes')],
