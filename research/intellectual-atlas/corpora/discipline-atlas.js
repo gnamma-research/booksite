@@ -336,6 +336,130 @@ function undatedDiagram(width){
  last={timeline:true,unplaced:true,bookMarkers:listed.length,undated:relevant.length,maxPage:totalPages,lanes:1};
  return svg;
 }
+const CORE_WORDS={
+ fiqh:["الموطأ","المدونة","الأم","المبسوط","مختصر القدوري","الهداية","بداية المبتدي",
+  "المغني","المهذب","منهاج الطالبين","الكافي","الرسالة","روضة","بدائع الصنائع","التلقين","الاستذكار","الشرح الكبير"],
+ usul:["الرسالة","الأصول","المستصفى","المحصول","البرهان","المعتمد","الإحكام","الورقات",
+  "تقويم الأدلة","روضة الناظر","جمع الجوامع","كشف الأسرار","اللمع","الموافقات","أصول السرخسي","التحرير"],
+ nahw:["الكتاب","المقتضب","المفصل","الألفية","الآجرومية","قطر الندى","المغني","الخصائص",
+  "شرح المفصل","اللمع","الإنصاف","الكافية","أوضح المسالك","تسهيل الفوائد"],
+ sarf:["الشافية","التصريف","المنصف","الممتع","الاشتقاق","الصرف","المقصود"],
+ balagha:["دلائل الإعجاز","أسرار البلاغة","مفتاح العلوم","تلخيص المفتاح","المطول",
+  "مختصر المعاني","الإيضاح","المثل السائر","البديع","البيان والتبيين","الصناعتين"],
+ hadith:["صحيح البخاري","صحيح مسلم","الموطأ","السنن","الترمذي","شرح صحيح مسلم","فتح الباري"],
+ tafsir:["جامع البيان","الكشاف","مفاتيح الغيب","البحر المحيط","التحرير والتنوير",
+  "تفسير القرطبي","المحرر الوجيز","روح المعاني"],
+ tasawwuf:["الفصوص","فصوص الحكم","الفتوحات","الرسالة القشيرية","لطائف الإشارات","إحياء علوم الدين"],
+ lugha:["لسان العرب","مقاييس اللغة","تاج العروس","الصحاح","القاموس المحيط","العين"]
+};
+function majorScore(w){
+ let n=w.sourceType==="openiti"?18:0;
+ if(w.pinned)n+=110;
+ if(period(w)!==null)n+=18;
+ if(w.sourceType==="alreq")n+=w.manuscripts?Math.min(12,Math.log2(w.manuscripts+1)*2):0;
+ const title=norm(w.title),roman=norm(w.roman);
+ for(const key of CORE_WORDS[genre]||[])if(title.includes(norm(key))||roman.includes(norm(key)))n+=65;
+ if(w.readerId&&edges().some(e=>e.from===w.id||e.to===w.id))n+=115;
+ if(w.death&&w.death<500)n+=Math.max(0,25-w.death/35);
+ return n;
+}
+function selectMajor(pool,cap=13){
+ const candidates=pool.slice().sort((a,b)=>majorScore(b)-majorScore(a)||
+  (a.death||99999)-(b.death||99999)||a.title.localeCompare(b.title,"ar"));
+ const result=[],authors=new Map();
+ for(const w of candidates){
+  const key=w.authorKey||norm(w.author),count=authors.get(key)||0;
+  if(count>=3&&!edges().some(e=>e.from===w.id||e.to===w.id))continue;
+  result.push(w);authors.set(key,count+1);
+  if(result.length>=cap)break;
+ }
+ return result.sort((a,b)=>(a.death||99999)-(b.death||99999)||a.title.localeCompare(b.title,"ar"));
+}
+function additionalEdges(){
+ // Recorded only if the actual source work URIs are present in OpenITI
+ // and the book-to-book relation is explicitly described in the cited edition.
+ // Based on al-Marghinani edition analysis; school membership alone never qualifies.
+ const rules=[
+  {id:"FIQH_QUDURI_BIDAYA",from:["Quduri","Mukhtasar"],to:["Marghinani","Bidayat"],
+   label:"Source incorporated in al-Bidāya",url:"https://www.islam.museum/en/work/bidayat-al-mubtadi/"},
+  {id:"FIQH_SHAYBANI_BIDAYA",from:["MuhammadShaybani","JamicSaghir"],to:["Marghinani","Bidayat"],
+   label:"Source incorporated in al-Bidāya",url:"https://www.islam.museum/en/work/bidayat-al-mubtadi/"},
+  {id:"FIQH_BIDAYA_HIDAYA",from:["Marghinani","Bidayat"],to:["Marghinani","Hidaya"],
+   label:"Authorial commentary on al-Bidāya",url:"https://islam.museum/en/work/al-hidayah-marghinani/"}
+ ];
+ const find=parts=>works.find(w=>w.sourceType==="openiti"&&parts.every(p=>
+   norm(w.id).includes(norm(p))||norm(w.title).includes(norm(p))));
+ return rules.map(rule=>{
+  const from=find(rule.from),to=find(rule.to);
+  return from&&to?{id:rule.id,from:from.id,to:to.id,label:rule.label,
+    description:"Documented bibliographical relation described in an edition-based source entry.",url:rule.url,type:"verified bibliographical dependency"}:null;
+ }).filter(Boolean);
+}
+function allVerifiedEdges(){return edges().concat(additionalEdges());}
+function renderVertical(width){
+ const W=Math.max(330,width||900);
+ const keys=lanes.filter(k=>!S.lane||S.lane===k);
+ const colW=248,left=78,hdr=92,nodeH=66,step=94;
+ const totalW=Math.max(W,left+keys.length*colW+26);
+ const selected=new Map(),positions=new Map();
+ let maxRows=0;
+ for(const key of keys){
+  let priority=byLane(key);
+  const chosen=selectMajor(priority,12);
+  selected.set(key,chosen);maxRows=Math.max(maxRows,chosen.length);
+ }
+ const h=Math.max(360,hdr+maxRows*step+85);
+ let lines="",nodes="",headers="";
+ const palette=["#3e7192","#8d673c","#4d7c59","#84688c","#b17f4e","#657d93","#766f88"];
+ keys.forEach((key,col)=>{
+   const x=left+col*colW,axis=x+112,chosen=selected.get(key)||[],color=palette[col%palette.length];
+   headers+="<text class='dn-synopsis-head' x='"+(x+6)+"' y='31'>"+esc(fit(groupLabel(key),27))+"</text>"+
+    "<text class='dn-synopsis-sub' x='"+(x+6)+"' y='48'>"+chosen.length+" highlighted works · source cited</text>";
+   lines+="<line class='dn-synopsis-lane' x1='"+axis+"' x2='"+axis+"' y1='70' y2='"+(h-32)+"'/>";
+   chosen.forEach((w,i)=>{
+     const y=hdr+i*step,workX=x+4,width=220;
+     const sub=w.death?"author d. "+w.death+" AH · c. "+period(w)+" CE":"Undated · no invented date";
+     nodes+="<g role='button' tabindex='0' data-dn-work='"+esc(w.id)+
+       "' aria-label='"+esc(w.title+"; "+sub)+"'><title>"+esc(w.title+" by "+w.author)+"</title>"+
+       "<rect class='dn-synopsis-node"+(w.id===S.book?" dn-selected":"")+"' x='"+workX+"' y='"+y+
+       "' width='"+width+"' height='"+nodeH+"' rx='8' style='--ia-series:"+color+"'/><rect x='"+workX+
+       "' y='"+y+"' width='4' height='"+nodeH+"' fill='"+color+"'/>"+
+       "<text class='ia-node-title' x='"+(workX+10)+"' y='"+(y+21)+"'>"+esc(fit(w.title,27))+"</text>"+
+       "<text class='ia-node-sub' x='"+(workX+10)+"' y='"+(y+39)+"'>"+esc(fit(w.author,25))+"</text>"+
+       "<text class='ia-node-date' x='"+(workX+10)+"' y='"+(y+56)+"'>"+esc(fit(sub,34))+"</text></g>";
+     positions.set(w.id,{x:workX+width*.5,y:y+nodeH*.5});
+   });
+ });
+ // An arrow appears only when BOTH highlighted texts are joined in the
+ // separately attested bibliographic relationship register.
+ let verified=0;
+ for(const rel of allVerifiedEdges()){
+  const a=positions.get(rel.from),b=positions.get(rel.to);if(!a||!b)continue;
+  verified++;
+  const bend=Math.max(12,Math.min(75,Math.abs(b.y-a.y)*.22));
+  const d="M"+a.x+","+(a.y+22)+" C"+(a.x+38)+","+(a.y+38)+" "+(b.x-38)+","+(b.y-bend)+" "+b.x+","+(b.y-22);
+  lines+="<g role='button' tabindex='0' data-dn-edge='"+esc(rel.id)+"' aria-label='"+
+    esc(rel.label)+"'><title>"+esc(rel.label)+" · select the evidentiary source</title>"+
+    "<path class='dn-verified-relation' d='"+d+"' marker-end='url(#dn-arrow)'/></g>";
+ }
+ let scholars="";
+ // Early Fiqh tradition: position the named historical authorities
+ // independently, NOT as fictitious authorial texts.
+ if(IS_LEGAL(genre)&&(keys.includes("early")||keys.includes("named_other"))){
+  const list=jurists.filter(a=>keys.includes("early")&&a.death_ah<=300||
+    keys.includes("named_other")&&["personal_circle","historical_nonfour_school"].includes(a.status)).slice(0,16);
+  // Only names not already recoverable as surviving books are added to the
+  // top region; their undated text record count is not inferred.
+  scholars="<text class='dn-synopsis-authority-note' x='15' y='"+(h-12)+"'>"+
+   esc(list.length+" named early juridical authorities are available in the dated atlas; their followers and works are not invented.")+"</text>";
+ }
+ const defs="<defs><marker id='dn-arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='6' markerHeight='6' orient='auto'><path d='M1 1 L9 5 L1 9 Z' fill='#aa7f2c'/></marker></defs>";
+ const picture="<svg data-dn-summary-svg xmlns='http://www.w3.org/2000/svg' role='group' width='"+totalW+"' height='"+h+
+  "' viewBox='0 0 "+totalW+" "+h+"' aria-label='Principal texts from early to late within each school; only documented textual relations have arrows'>"+
+   defs+headers+lines+nodes+scholars+"</svg>";
+ last={summary:true,highlights:positions.size,documentedEdges:verified,lanes:keys.length};
+ return picture;
+}
 window.GNDisciplineAtlas={render,debug:()=>({genre,mode:S.mode,from:S.from,to:S.to,lane:S.lane,undated:S.undated,
  records:filtered.length,dated:filtered.filter(x=>period(x)!==null).length,
  svg:host.querySelectorAll("[data-sa-map] svg").length,
