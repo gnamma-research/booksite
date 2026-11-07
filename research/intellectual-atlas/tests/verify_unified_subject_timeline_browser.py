@@ -45,9 +45,24 @@ async def state(page):
     }""")
 
 async def wait_subject(page,mode=None):
-    await page.wait_for_function("""() => !!window.GNDisciplineAtlas &&
-      !!document.querySelector('.dn-map svg') &&
-      !!document.querySelector('.dn-modes [data-dn-mode]')""",timeout=65000)
+    try:
+        await page.wait_for_function("""() => !!window.GNDisciplineAtlas &&
+          !!document.querySelector('.dn-map svg') &&
+          !!document.querySelector('.dn-modes [data-dn-mode]')""",timeout=18000)
+    except Exception:
+        diagnostic=await page.evaluate("""() => ({
+          ready:document.readyState,
+          atlasReady:!!document.querySelector('#kalam-timeline-app-v3')?.dataset.ready,
+          atlasState:document.querySelector('#kalam-timeline-app-v3')?.atlasTest?.state?.view,
+          disciplinePresent:!!window.GNDisciplineAtlas,
+          bibliographyPresent:!!window.GNAtlasBibliography,
+          canonicalPresent:!!window.GNCanonicalSynopsis,
+          disciplineState:window.GNDisciplineAtlas?.debug(),
+          mainText:document.querySelector('[data-main]')?.textContent?.slice(0,1300),
+          scripts:[...document.querySelectorAll('script[src]')].map(s=>s.src)
+        })""")
+        print("SUBJECT-ATLAS DIAGNOSTIC:",json.dumps(diagnostic,ensure_ascii=False),flush=True)
+        raise
     result=await state(page)
     check(result["svg"]==1,"Disciplinary view is not rendered as an SVG visual map")
     check(result["overflow"]<=3,"Subject map overflows the document viewport")
