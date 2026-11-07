@@ -4,10 +4,10 @@
 
 ## Scope and evidence of acquisition
 
-- **28** curated canonical work/version records with links to the exact OpenITI source file, version-level metadata and Git blob identity.
+- **30** curated canonical work/version records with links to the exact OpenITI source file, version-level metadata and Git blob identity.
 - The source version is pinned to OpenITI/RELEASE commit `cfc4157a3cf2054c0888f133970a4eaa3e22e58c` (2026-02-09).
 - **Five** Arabic source files have been copied completely (unaltered) into GNAMMA: al-Shāfiʿī's *al-Risāla*, al-Nawawī's *al-Arbaʿūn*, Ibn Mālik's *Alfiyya*, Ibn ʿArabī's *Fuṣūṣ*, and ʿAbd al-Qāhir al-Jurjānī's *Asrār al-balāgha*. Their Git blob SHAs **match** the corresponding OpenITI SHA values.
-- **23** more text versions are not mirrored locally, but have pinned, source-checked files that the GNAMMA browser reader loads **on demand**. The reader performs an independent Git blob identity check after transfer. A source link is also exposed if network fetching is blocked.
+- **25** more text versions are not mirrored locally, but have pinned, source-checked files that the GNAMMA browser reader loads **on demand**. The reader performs an independent Git blob identity check after transfer. A source link is also exposed if network fetching is blocked.
 - Every entry is a **specific digital version**. Its chapter divisions, headings, page markers, spelling, lacunae and published-edition genealogy may be imperfect. File identity is a necessary provenance condition, *not* proof that the historical Arabic text is critically edited or complete.
 
 Original source: [OpenITI initiative](https://openiti.org/documentation/) · [source repository and exact commit](https://github.com/OpenITI/RELEASE/tree/cfc4157a3cf2054c0888f133970a4eaa3e22e58c) · [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Preserve OpenITI attribution and license notices, avoid commercial redistribution, and do not conceal source/edition qualifiers.
@@ -16,11 +16,11 @@ Original source: [OpenITI initiative](https://openiti.org/documentation/) · [so
 
 | Gate | Result | Meaning |
 |---|---|---|
-| Named work, attributed author, specific OpenITI version file exists | **28/28** | Exact GitHub paths and blob SHA verified in OpenITI version repository and RELEASE |
-| Version-level metadata and annotations examined | **28/28** | Catalogued commentary/issue flags, provenance data and edition caveats preserved |
-| Complete source file mirrored byte-for-byte in GNAMMA | **5/28** | Exact Git SHA-1 blob identity comparison against OpenITI |
-| Pinned remote source for on-demand full-file reading | **23/28** | No claim about all future network or browser CORS conditions |
-| Text aligned to a print edition and independently line-by-line collation | **0/28** newly performed | Provider annotations/edition references are not GNAMMA manuscript collation |
+| Named work, attributed author, specific OpenITI version file exists | **30/30** | Exact GitHub paths and blob SHA verified in OpenITI version repository and RELEASE |
+| Version-level metadata and annotations examined | **30/30** | Catalogued commentary/issue flags, provenance data and edition caveats preserved |
+| Complete source file mirrored byte-for-byte in GNAMMA | **5/30** | Exact Git SHA-1 blob identity comparison against OpenITI |
+| Pinned remote source for on-demand full-file reading | **25/30** | No claim about all future network or browser CORS conditions |
+| Text aligned to a print edition and independently line-by-line collation | **0/30** newly performed | Provider annotations/edition references are not GNAMMA manuscript collation |
 | Source-verified isn'tād network, matn variants, legal issue alignments | **not complete** | New textual relationships cannot be inferred merely from source availability |
 | Complete corpus of every science / every madhhab / every commentary | **not complete** | Current registry is a deliberately curated first tranche |
 
@@ -68,11 +68,28 @@ The following inventory identifies every work and its **specific digital textual
 | al-Mufaṣṣal fī ṣanʿat al-iʿrāb — al-Zamakhsharī | arabic, nahw | — | [`0538JarAllahZamakhshari.MufassalFiSuncatIcrab.JK001224-ara1`](https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0538JarAllahZamakhshari/MufassalFiSuncatIcrab/0538JarAllahZamakhshari.MufassalFiSuncatIcrab.JK001224-ara1) | Pinned remote · 0.49 MB |
 | Asās al-balāgha — al-Zamakhsharī | arabic, lugha, balagha | — | [`0538JarAllahZamakhshari.AsasBalagha.JK007032-ara1`](https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0538JarAllahZamakhshari/AsasBalagha/0538JarAllahZamakhshari.AsasBalagha.JK007032-ara1) | Pinned remote · 2.95 MB |
 
+| al-Minhāj fī sharḥ Ṣaḥīḥ Muslim — al-Nawawī | hadith, fiqh | shafii | [`0676Nawawi.MinhajFiSharhMuslim.JK000137-ara1`](https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0676Nawawi/MinhajFiSharhMuslim/0676Nawawi.MinhajFiSharhMuslim.JK000137-ara1) | Pinned remote · 7.32 MB |
+| Sharḥ Ibn ʿAqīl ʿalā l-Alfiyya — Ibn ʿAqīl | arabic, nahw, sarf | — | [`0769IbnCaqilBahaDinMisri.SharhCalaAlfiyya.JK001328-ara1`](https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0769IbnCaqilBahaDinMisri/SharhCalaAlfiyya/0769IbnCaqilBahaDinMisri.SharhCalaAlfiyya.JK001328-ara1) | Pinned remote · 0.97 MB |
+
+## Five evidence-backed commentary and abridgement links
+
+The source library now displays **five documented work-level relations** as a navigable family diagram: one commentary on Ṣaḥīḥ Muslim, Ibn ʿAqīl's commentary on the Alfiyya, and three relations in the al-Sakkākī → al-Qazwīnī → al-Taftāzānī balāgha sequence. Each has its own distinct relation type, evidence, confidence and independent source URL. No individual manuscript witness, passage alignment or particular doctrinal acceptance is inferred from the work-level link.
+
+| Link | Relationship | Independent evidence |
+|---|---|---|
+| `muslim_sahih` → `nawawi_sharh_muslim` | Arabic commentary on Ṣaḥīḥ Muslim | [Citation](https://islam.museum/en/work/al-minhaj-sharh-sahih-muslim/) |
+| `ibn_malik_alfiyya` → `ibn_aqil_sharh_alfiyya` | Commentary on the Alfiyya | [Citation](https://qdl.qa/archive/qnlhc/12960) |
+| `sakkaki_miftah` → `qazwini_talkhis` | Abridgment of the rhetoric section (part III) | [Citation](https://digital-collections.princeton.edu/i/%D8%AA%D9%84%D8%AE%D9%8A%D8%B5-%D8%A7%D9%84%D9%85%D9%81%D8%AA%D8%A7%D8%AD/item/cb53846f-2364-4529-be04-5fa073bff697/viewer/12) |
+| `qazwini_talkhis` → `qazwini_idah` | Author's explanatory expansion | [Citation](https://digital-collections.princeton.edu/i/%D8%A7%D9%84%D8%A7%D9%8A%D8%B6%D8%A7%D8%AD-%D8%A7%D9%84%D8%AE/item/caee4c37-1806-4b1a-b7f3-33f4367cbf99) |
+| `qazwini_talkhis` → `taftazani_mukhtasar` | Short commentary on the Talkhīṣ | [Citation](https://elibrary.ircica.org/Biblio/Detail/865) |
+
+The al-Qazwīnī Talkhīṣ **digitization is specifically marked UNCORRECTED_OCR**; the bibliographical connection is established independently of treating that OCR text as a critically verified edition.
+
 ## Reader and research integration
 
 The **Corpus Library** page at `research/intellectual-atlas/corpora/` provides: discipline and madhhab filters; searching by title, author, Arabic and OpenITI identifiers; separate source-version metadata; a complete-file fetch (locally mirrored or pinned external version); in-browser Git SHA-1 blob integrity checking; paged right-to-left reading; internal search; printable markers where present; and copyable version-level citations.
 
-**No invented stemmas or hadith numbering:** an OpenITI digitization supplies textual material and some page markers, but the source register itself does not establish direct school affiliation of every later commentator, direct citations between works, an authenticated hadith isnād graph or edition-independent hadith number mappings. Nor does it provide automatically reliable Qurʾānic āyah alignment. These remain independent tasks.
+**No invented stemmas or hadith numbering:** an OpenITI digitization supplies textual material and some page markers, but the source register itself does not establish a complete commentary genealogy beyond the five separately evidenced links, direct citations between individual passages, or an authenticated hadith isnād graph or edition-independent hadith number mappings. Nor does it provide automatically reliable Qurʾānic āyah alignment. These remain independent tasks.
 
 **GNAMMA intellectual atlas continuity:** the existing 404 catalog nodes, 377 evidence-qualified edges, and 21 textual families are unchanged. A source is linked to an existing atlas node only after verifying identical work identity (e.g. Ibn ʿArabī's *Fuṣūṣ*). Do not equate one OpenITI version with an entire work or invent a new historical relation because both texts appear in this registry.
 
@@ -84,4 +101,4 @@ The **Corpus Library** page at `research/intellectual-atlas/corpora/` provides: 
 4. For independent textual claims compare the exact passage against the *specified printed edition or manuscript*: verify headings, page and hadith numbering, omissions, editorial insertions, variants and attribution. Record the verification at passage level before claiming a scholarly critical text.
 5. Do not mark a work "fully edited" until the complete collation, editorial apparatus and scholarly review are finished and separately documented.
 
-The 28-book curated index is an acquisition milestone, not completion of the entire fiqh, hadith, tafsīr, taṣawwuf, naḥw or balāgha corpora.
+The 30-book curated index is an acquisition milestone, not completion of the entire fiqh, hadith, tafsīr, taṣawwuf, naḥw or balāgha corpora.
