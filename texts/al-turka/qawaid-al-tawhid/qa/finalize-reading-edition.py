@@ -49,6 +49,10 @@ def main(root):
     for f in protected:
         if digest((root/f).read_bytes())!=before[f]:raise RuntimeError('Protected text changed: '+f)
     page=read('commentary.html');css=read('reader.css').replace('url("../../../assets/gnamma-landscape.webp")','none')
+    # Regression guard: an unterminated <style> makes the rest of the standalone
+    # edition (including its corpus and reader scripts) parse as CSS.
+    if page.count('<style>') != page.count('</style>'):
+        raise RuntimeError('Unbalanced <style> tags in commentary.html source')
     page=page.replace('<link rel="stylesheet" href="reader.css">','<style>'+css+'</style>')
     page=re.sub(r'<link rel="icon"[^>]+>','',page)
     page=re.sub(r'<img src="../../../assets/gnamma-mark.svg"[^>]*>','',page)
@@ -59,6 +63,10 @@ def main(root):
     serial=json.dumps(corpus,ensure_ascii=False).replace('<','\\u003c')
     page=page.replace('</body>','<script>window.GNAMMA_TAMHID_CORPUS = '+serial+';</script>\n<script>'+logic.replace('</script','<\\/script')+'</script>\n</body>')
     page=page.replace('id="reading-status" class="reader-status">Opening commentary…','id="reading-status" class="reader-status">110 sections · single-file edition')
+    if page.count('<style>') != page.count('</style>') or page.count('<script>') != page.count('</script>'):
+        raise RuntimeError('Unbalanced inline style/script tags in standalone reader')
+    if not (page.index('</style>') < page.index('</head>') < page.index('<body') < page.index('GNAMMA_TAMHID_CORPUS')):
+        raise RuntimeError('Standalone reader HTML assembled in invalid order')
     write('downloads/Tamhid_Complete_Commentary_Reading_Edition.html',page)
     report={'date':'2026-11-04','scope':'final source-based reading edition; no newly recovered manuscript text','commentaryUnits':110,'matnUnits':61,'linkedMatnUnits':61,'introductoryUnits':40,'mainUnits':64,'concludingUnits':6,'englishWords':sum(len(u['english'].split()) for u in units),'allArabicEnglishExportSectionsPresent':True,'recordedMainSourceHashesReproduced':len(checks),'sourceHashChecks':checks,'fourAncestralBridgesSeparatelyAttributed':sum(bool(u.get('precedingMatn')) for u in units)==4,'protectedTextsUnchanged':before,'qt059OriginalLacuna':'noted and deferred, no reconstruction','freshSourceWebsiteAccess':'not part of this audit; retained electronic sources used','independentManuscriptsCollated':0,'completeAvailableSourceTranslation':True,'manuscriptCriticalEditionComplete':False,'browserInteractionTest':'synthetic DOM suite rerun successfully; no real-device visual claim','readabilityCorrection':'SH-061-A: closures -> locks for أقفاله; Arabic unchanged; variant note preserved','stalePilotQueueRemoved':True,'singleFileReaderGenerated':True,'singleFileSha256':digest(page.encode())}
     write('qa/final-reading-audit.json',json.dumps(report,ensure_ascii=False,indent=2)+'\n')
