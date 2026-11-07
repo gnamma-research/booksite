@@ -29,7 +29,7 @@ const render=()=>{
  const text=(search?.value||'').toLocaleLowerCase().trim(),range=group?.value||'all';
  // A bare page number is a precise locator, not a broad text search:
  // searching 163 must not also match a note on p164 that mentions p163.
- const exactPage=/^\\d{1,3}$/.test(text)?Number(text):null;
+ const exactPage=/^[0-9]{1,3}$/.test(text)?Number(text):null;
  const filtered=entries.filter(e=>(range==='all'||chunks.some((g,i)=>String(i)===range&&e.page>=g.start&&e.page<=g.end))&&
   (exactPage!==null?e.page===exactPage:
    !text||[e.title,e.englishExcerpt,e.editorialAnalysis,e.arabicExcerpt,e.attribution,String(e.page)].some(x=>String(x).toLocaleLowerCase().includes(text))));
