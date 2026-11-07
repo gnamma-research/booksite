@@ -90,30 +90,33 @@ async def run(page):
     check((await selected(page))['science']=='fiqh',"Reset failed")
     check(not errors, "Browser errors: "+str(errors[:5]))
 
-    # Main atlas must surface the manuscript shortlist within Fiqh source mode,
-    # without changing the pre-existing 30-reader-version backing map.
+    # Separate searchable catalogue remains available as an ancillary research
+    # register. The MAIN atlas must now show the full chronological visual map,
+    # not the old twelve-entry manuscript-list preview.
     r=await page.goto(BASE+"#view=sources&science=fiqh&source_tab=method&madhhab=maliki",wait_until="domcontentloaded")
-    check(r.status==200,"Atlas failed to load")
+    check(r.status==200,"Main atlas cannot load")
     await page.wait_for_function("""() =>
-      document.querySelector('#kalam-timeline-app-v3')?.atlasTest?.state?.view==='sources'&&
-      document.querySelector('.ia-source-expansion-grid a')?.href
-    """,timeout=60000)
+      document.querySelector('#kalam-timeline-app-v3')?.atlasTest?.state?.view==='sources' &&
+      !!document.querySelector('[data-dn-timeline-svg]')""",timeout=60000)
     excerpt=await page.evaluate("""() => ({
-      text:document.querySelector('.ia-source-expansion')?.textContent,
-      previews:document.querySelectorAll('.ia-source-expansion-grid a').length,
-      links:[...document.querySelectorAll('.ia-source-expansion-grid a')].map(a=>a.href),
+      sourceMode:window.GNDisciplineAtlas?.debug()?.mode,
+      discipline:window.GNDisciplineAtlas?.debug()?.genre,
+      workMarkers:document.querySelectorAll('[data-dn-work]').length,
+      svg:document.querySelectorAll('[data-dn-map] svg').length,
+      oldBookPreview:document.querySelectorAll('.ia-source-expansion-grid').length,
       overflow:document.documentElement.scrollWidth-document.documentElement.clientWidth
     })""")
-    check('30 additional manuscript bibliography records' in excerpt['text'],"Mālikī uṣūl 30-title preview missing")
-    check(excerpt["previews"]>0 and excerpt["previews"]<=12,"Wrong preview size")
-    check(all('app.alreq.com' in x for x in excerpt['links']),"Preview links must be manuscript catalogue URLs")
-    check(excerpt['overflow']<=3,"Atlas source preview overflows mobile view")
+    check(excerpt['sourceMode']=='timeline' and excerpt['discipline']=='usul',
+          "Main atlas not in shared uṣūl chronology")
+    check(excerpt['svg']==1 and excerpt['oldBookPreview']==0,
+          "Old small manuscript list shown instead of subject chronology")
+    check(excerpt['overflow']<=3,"Main atlas exceeds mobile viewport")
     await page.screenshot(path=str(OUT/"fiqh-atlas.png"),full_page=False)
-    check(not errors,"Final JS errors: "+str(errors[:5]))
+    check(not errors,"Browser errors: "+str(errors[:5]))
     return {"status":"PASS","browser":page.context.browser.browser_type.name,"viewport":page.viewport_size,
             "fiqh_school_counts":{"hanafi":40,"maliki":40,"shafii":40,"hanbali":40},
             "usul_school_counts":{"hanafi":40,"maliki":30,"shafii":40,"hanbali":39},
-            "source_preview_entries":excerpt["previews"],"console_errors":errors}
+            "main_atlas_visual_mode":excerpt['sourceMode'],"console_errors":errors}
 
 async def main():
     p=argparse.ArgumentParser()
