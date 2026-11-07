@@ -117,8 +117,9 @@ manifest = {
     'individual_reign_rows': 0,
     'pdf_pages': {'illustrated_overview_legacy': 15, 'illustrated_reference_legacy': 204,
                   'historical_revision7_register': 84, 'focused_tahdhib_supplement': 9},
-    'pdf_note': ('Revision 8 adds Tajrid critical-reader links. The current data and offline map include these additions; revision 7 PDF/ZIP are historical snapshots. '
-                 'Historical PDFs from revisions 2 and 4 retain earlier scholarship and are marked legacy.'),
+    'pdf_note': ('The online map and canonical JSON include the 7 November 2026 Muḥaṣṣal textual-family update. '
+                 'The revision 8 offline ZIP predates this family update; the revision 7 PDF/ZIP and earlier illustrated PDFs are historical snapshots. '
+                 'Offline and PDF contents must not be represented as synchronized with the latest text-family options.'),
     'download_sha256': downloads,
 }
 (ROOT/'publication.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')
