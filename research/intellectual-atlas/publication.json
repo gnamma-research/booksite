@@ -2,8 +2,8 @@
   "title": "Texts in Time · Islamic Intellectual Atlas",
   "revision": "tajrid-critical-links-8-2026-10-31",
   "status": "working research",
-  "ui_revision": "integrated-source-bibliography-map-subject-first-svg-2026-11-07",
-  "mobile_interface_note": "Every subject opens a real clickable SVG network of work and authority nodes, not a book-list screen; zoom and drill from juristic circles to cited books. Includes early personal circles and named non-four schools, plus grammar/balagha and book-level Hadith/Tafsir. Manuscript-only books are undated unless cited author evidence exists.",
+  "ui_revision": "common-chronological-atlas-vertical-major-texts-2026-11-08",
+  "mobile_interface_note": "Every selected science displays the same GNAMMA chronological year-axis work atlas as philosophy/kalam, with source-qualified date markers, zoomable era groups, school lanes and a separately selectable vertical synopsis of principal texts. Undated manuscripts stay in unplaced visual maps; scholarly dependencies require individual bibliography evidence.",
   "whole_range_note": "Drag the six-dot grip from Whole atlas to restore a movable focus window, or tap another time on the overview to seek.",
   "date_marker_note": "Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.",
   "entries": 404,
@@ -30,7 +30,8 @@
     "evidence/audit",
     "source-attested disciplinary work maps",
     "full citation-linked work map",
-    "subject-first interactive SVG book-node graph"
+    "common-year-axis disciplinary work timeline",
+    "vertical principal-texts synopsis"
   ],
   "discipline_nav": [
     "mapped works",
@@ -38,7 +39,7 @@
     "fiqh and uṣūl (integrated cited bibliography)",
     "hadith (SVG book authorities)",
     "tafsīr (SVG book authorities)",
-    "taṣawwuf (selective mapped texts and source tranche)",
+    "taṣawwuf (chronological source-work atlas)",
     "Arabic language sciences (integrated cited bibliography)"
   ],
   "textual_family_routes": 21,
@@ -57,17 +58,18 @@
     "license": "CC BY-NC-SA 4.0"
   },
   "bibliography_map": {
-    "mode": "source-cited category and author-death period map, undated works unplaced",
+    "mode": "common chronological CE axis with source-author-death markers, separate undated visual lanes, optional vertical principal-texts synopsis",
     "openiti_primary_work_candidates": 1857,
     "alreq_source_linked_entries": 4157,
-    "graph_renderer": "corpora/subject-graph.js",
+    "graph_renderer": "corpora/discipline-atlas.js",
     "graph_interactions": [
-      "SVG work nodes",
-      "school and early jurist nodes",
-      "named non-four circles",
-      "visual drill-down",
-      "source citation side panel",
-      "zoom and scroll"
+      "shared year axis",
+      "zoom and pan to individual books",
+      "school and early jurist lanes",
+      "unplaced books in separate undated diagram",
+      "bibliography source panel",
+      "vertical principal texts",
+      "independently evidenced reception arrows"
     ],
     "registered_early_historical_authorities": 16,
     "alreq_fiqh_by_school": {
@@ -99,7 +101,7 @@
       "corpora/manuscript-full.json"
     ]
   },
-  "textual_family_note": "The 21 philosophical/kalām families retain canonical IDs and evidence-qualified edges. Fiqh, usul, Hadith, Tafsir and Arabic source bibliography now uses subject-specific SVG work networks, including qualified pre-school and non-four-school jurists; no fictitious legal-opinion or commentary edges are inferred.",
+  "textual_family_note": "The original philosophy/kalām calendar and its 404/377 researched graph remain intact; an optional vertical synopsis reuses those original canonical citations. Fiqh, usul, Hadith, Tafsir, Tasawwuf and Arabic-sciences source records now share the same chronological atlas grammar and optional vertical principal-texts map. No invented influences, legal-opinion arrows or unsupported manuscript dates.",
   "tahdhib_added_entries": 26,
   "avicennian_extension_entries": 11,
   "avicennian_new_textual_routes": 2,
