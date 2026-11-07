@@ -1,0 +1,109 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R11a",
+  "startSection": "4.563",
+  "endSection": "4.572",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.563",
+      "number": 563,
+      "pageStart": 442,
+      "pageEnd": 442,
+      "arabic": "وقال الشيخ مؤيد الدين الجندي عند شرح قول الشيخ الكبير رضي الله عنه في الفص الشيثى: فما في أحد من الله شئ ولا في أحد من سوى نفسه شئ - وان تنوعت عليه الصورة - وما كل أحد يعرف هذا - وان الامر على ذلك - الا آحاد من أهل الله، فإذا رأيت من يعرف ذلك فاعتمد عليه فذلك هو عين صفاء خلاصة خاصة الخاصة من عموم أهل الله تعالى:",
+      "english": "Muʾayyad al-Dīn al-Jandī, explaining the Greatest Shaykh’s words—may God be pleased with him—in the Sethian bezel [of the Fuṣūṣ], says: “There is nothing of God in anyone, nor is there anything in anyone from other than himself—even though the forms presented to him vary. Not everyone knows this, although the matter is so, except certain individuals among the people of God. When you see someone who knows this, rely on him: he is the very purity of the quintessence of the elect of the elect among the people of God at large.” [The boundary between Ibn ʿArabī’s passage and al-Jandī’s commentary requires separate verification.]",
+      "notes": "Layered quotation: Ibn ʿArabī’s Fuṣūṣ, Sethian chapter, as handled by al-Jandī. Verify quotation boundary.",
+      "grade": "new source-aligned first-pass translation; printed/witness collation pending"
+    },
+    {
+      "id": "4.564",
+      "number": 564,
+      "pageStart": 442,
+      "pageEnd": 442,
+      "arabic": "المراد بالآحاد من أهل الله هم الكمل وهم على طبقات وكلهم يرون المواهب من الله بسريان سر: وما بكم من نعمة فمن الله (53 - النحل) وهذا المشهد في ظاهر المفهوم يوهم خلاف هذا وليس ذلك كذلك، لان هؤلاء الطبقات منهم من يرى النعم كلها من الله ولكن بالأسباب التي هي غير الله، ومنهم من لا يرى الأثر للأسباب والوسائط، ومنهم من يراها شروطا لا أسبابا وعللا، ومنهم من يرى النعم من الله بلا واسطة، ومنهم من يرى الأسباب والوسائط أيضا من نعم الله.",
+      "english": "By “certain individuals among the people of God” he means the perfected ones [al-kummal]. They occupy different degrees, but all see gifts as coming from God through the pervasive mystery of “Whatever blessing you have is from God” [Qurʾān 16:53]. This witnessing might, superficially, seem to contradict that statement, but it does not. Some see all blessings as from God, yet through causes other than God. Others recognize no efficacy in causes or intermediaries. Some regard these as conditions, not as causes or explanatory grounds [ʿilal]. Others see the blessings as coming from God without intermediary. Others again regard the causes and intermediaries themselves as gifts of God.",
+      "notes": null,
+      "grade": "new source-aligned first-pass translation; printed/witness collation pending"
+    },
+    {
+      "id": "4.565",
+      "number": 565,
+      "pageStart": 442,
+      "pageEnd": 443,
+      "arabic": "وجميع هؤلاء الأصناف محجوبون في عين الكشف ومشركون في عين التوحيد، لانهم وان وحدوا الله في رؤية النعم كلها منه تعالى، لكنهم أثبتوا الوسائط، والنعم والمنعم عليه والمنعم اعتبارا والحقيقة تأبى الا ان يكون هو الواحد الاحد الظاهر الباطن الواحد الكثير، وهو الوجود الواحد الحق، والأوصاف نسب.",
+      "english": "All these classes are veiled even within unveiling, and affirm association even within their affirmation of oneness [tawḥīd]. Although they affirm that every blessing comes from God, they nevertheless establish intermediaries and distinguish the blessing, the one blessed, and the giver of blessing by conceptual consideration. But Reality admits only that He is the One, the Unique, the Manifest and the Hidden, the One-Many [al-wāḥid al-kathīr]: He is the one true Existence; descriptions are relations [nisab]. [Here the metaphysical classification is reported, not endorsed as a doctrinal judgement on persons.]",
+      "notes": "‘Veiling’ and ‘association’ are terms from the source’s metaphysical rank-classification.",
+      "grade": "new source-aligned first-pass translation; printed/witness collation pending"
+    },
+    {
+      "id": "4.566",
+      "number": 566,
+      "pageStart": 443,
+      "pageEnd": 443,
+      "arabic": "فمن يرى النعم الواصلة من مدرجة عينه الثابتة من حيث إن تلك العين الثابتة عين الحق، فقد شهد أحدية الوجود على ما هي عليه الامر في نفسه، وان النعم كلها من الله تعالى، وان الكل واحد، فكان هو عين صفاء خلاصة خاصة الخاصة، فان العامة يرون التوحيد وهو ستة وثلاثون مقاما كليا، كما نطق به القرآن في مواضع فيها ذكر: لا إله إلا الله.",
+      "english": "Whoever sees the blessings reaching him from the unfolding degree of his fixed entity [ʿayn thābita], insofar as that fixed entity is the very identity of the Real [ʿayn al-Ḥaqq], has witnessed the oneness of Existence as the matter is in itself: all blessings are from God, and all is one. Such a person is the very purity of the quintessence of the elect of the elect. The common people witness tawḥīd, which comprises thirty-six universal stations, as the Qurʾān indicates in passages mentioning “There is no god but God.” [The reading of مدرجة and the number thirty-six need checking against al-Jandī’s printed commentary.]",
+      "notes": "مدرجة is a difficult reading, and the count of thirty-six stages requires source comparison.",
+      "grade": "new source-aligned first-pass translation; printed/witness collation pending"
+    },
+    {
+      "id": "4.567",
+      "number": 567,
+      "pageStart": 443,
+      "pageEnd": 443,
+      "arabic": "واما الخاصة فيرون الوحدة وليس فيها كثرة الموحد والموحد والتوحيد الا عقلا.",
+      "english": "The elect [al-khāṣṣa] witness unity [al-waḥda]; within it, the multiplicity of the one who professes oneness [al-muwaḥḥid], the One professed [al-muwaḥḥad], and the professing of oneness [al-tawḥīd] exists only intellectually, by conceptual consideration [ʿaqlan].",
+      "notes": "The electronic text repeats the unvowelled الموحد. The distinction in the English is interpretive.",
+      "grade": "new source-aligned first-pass translation; printed/witness collation pending"
+    },
+    {
+      "id": "4.568",
+      "number": 568,
+      "pageStart": 443,
+      "pageEnd": 443,
+      "arabic": "واما خاصة الخاصة فيرون الوحدة في الكثرة ولا غيرية بينهما.",
+      "english": "The elect of the elect [khāṣṣat al-khāṣṣa] witness unity in multiplicity, without otherness between them.",
+      "notes": null,
+      "grade": "new source-aligned first-pass translation; printed/witness collation pending"
+    },
+    {
+      "id": "4.569",
+      "number": 569,
+      "pageStart": 443,
+      "pageEnd": 443,
+      "arabic": "وخلاصة خاصة الخاصة يرون الكثرة في الوحدة.",
+      "english": "The quintessence of the elect of the elect [khulāṣat khāṣṣat al-khāṣṣa] witness multiplicity in unity.",
+      "notes": null,
+      "grade": "new source-aligned first-pass translation; printed/witness collation pending"
+    },
+    {
+      "id": "4.570",
+      "number": 570,
+      "pageStart": 443,
+      "pageEnd": 443,
+      "arabic": "وصفاء خلاصة خاصة الخاصة يجمعون بين الشهودين وهم في هذا الشهود الجمعي على طبقات:",
+      "english": "The purity of this quintessence [ṣafāʾ khulāṣat khāṣṣat al-khāṣṣa] combines the two witnessings. Those who possess this comprehensive witnessing themselves occupy different degrees.",
+      "notes": null,
+      "grade": "new source-aligned first-pass translation; printed/witness collation pending"
+    },
+    {
+      "id": "4.571",
+      "number": 571,
+      "pageStart": 443,
+      "pageEnd": 443,
+      "arabic": "فكامل له الجمع، وأكمل منه شهودا ان يرى الكثرة في الوحدة عينها ويرى الوحدة في الكثرة عينها - شهودا جميعا احديا - ويشهدون ان العين الأحدية جامعة بين الشهودين في الشاهد والمشهود.",
+      "english": "A perfected person possesses this conjunction; one still more perfect in witnessing sees multiplicity in unity as its very identity and unity in multiplicity as its very identity, in a single, unitive, all-comprehensive witnessing. They witness that the one Essence [al-ʿayn al-aḥadiyya] comprehends the two witnessings in both the witnesser and what is witnessed.",
+      "notes": null,
+      "grade": "new source-aligned first-pass translation; printed/witness collation pending"
+    },
+    {
+      "id": "4.572",
+      "number": 572,
+      "pageStart": 443,
+      "pageEnd": 443,
+      "arabic": "وأكمل وأعلى ان يشهد العين الجامعة مطلقة عن الوحدة، والكثرة والجمع بينهما، وهؤلاء هم صفوة صفاء خلاصة خاصة الخاصة. جعلنا الله وإياك منهم، انه عليم خبير.",
+      "english": "More perfect and higher still is to witness the comprehensive Essence [al-ʿayn al-jāmiʿa] as unconditioned by unity, multiplicity, or their conjunction. These are the chosen among the purity of the quintessence of the elect of the elect. May God make us and you among them; He is All-Knowing, All-Aware.",
+      "notes": null,
+      "grade": "new source-aligned first-pass translation; printed/witness collation pending"
+    }
+  ]
+}
