@@ -1,3 +1,13 @@
+## 7 November 2026 — complete bibliographic categories now integrated into the actual GNAMMA map
+
+The original **714-record prioritised Alreq shortlist** described below has been superseded for map coverage by `manuscript-full.json`, the **complete 4,157-record snapshot** of the eight publicly visible category lists. Its category counts are: four fiqh schools (1,033 / 380 / 782 / 199), uṣūl (501), naḥw (892), ṣarf (109), and balāgha (261). The earlier shortlist is retained as a historical acquisition-priority sample, not the limit of the main map.
+
+The actual [Texts in Time atlas](../) now renders the OpenITI candidate register and the full Alreq bibliography as separately sourced **bibliographic nodes within category-by-author-death-period clusters**. Clicking a cluster lists its works, and each work opens a citation detail within the atlas. **No text acquisition is necessary for this stage.** OpenITI author death years support limited dated placement; Alreq-only records remain undated. Overlapping school/title associations do not become unverified influence or commentary arrows.
+
+Two sources may describe the same work; **4,157 + 1,857 must never be presented as 6,014 independently established historical works** until author/title/recension identities are reconciled. The count is of source-specific records/candidates, and the 30 pinned source reader items overlap the OpenITI list. Catalogue item/URL citation and the strength of each school label are retained.
+
+---
+
 # GNAMMA — Expanded bibliography of fiqh, uṣūl, grammar and balāgha
 
 *Working source-acquisition and classification register · 7 November 2026*
