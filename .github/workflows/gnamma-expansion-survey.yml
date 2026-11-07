@@ -35,6 +35,20 @@ jobs:
           for term in ['fiqh','usul','nahw','sarf','balagha','grammar','الفروع','النحو','البلاغة','أصول الفقه','حاشية','شرح','حنفي','شافعي']:
               found=[x for x in rows if term.lower() in ' '.join(str(v) for v in x.values()).lower()]
               print('TERM',term,len(found),'SAMPLE',json.dumps(found[:2],ensure_ascii=False)[:1600],flush=True)
+
+          pri={r['book']:r for r in rows if r.get('status','').lower()=='pri' and r.get('language')=='ara'}
+          print('PRI WORKS',len(pri))
+          tag_counter=collections.Counter(t.strip() for x in pri.values() for t in (x.get('tags') or '').split('::') if t.strip())
+          print('TOP GENRE TAGS',[(t,n) for t,n in tag_counter.most_common() if any(k in t.lower() for k in ['fiqh','usul','nahw','sarf','balagha','حنفي','مالكي','شافعي','حنبل','بلاغة','نحو','صرف','اصول','أصول'])][:100],flush=True)
+          for tag in ['_FIQH','_USUL','_NAHW','_SARF','_BALAGHA']:
+              matched=[x for x in pri.values() if tag in [t.strip() for t in x.get('tags','').split('::')]]
+              print('EXACT TAG',tag,len(matched),'SAMPLES',[(x['book'],x['title_ar'][:75],x['author_ar'][:40]) for x in matched[:22]],flush=True)
+          for word in ['الحنفي','المالكي','الشافعي','الحنبلي','الحنفية','المالكية','الشافعية','الحنابلة']:
+              matched=[x for x in pri.values() if word in x.get('tags','')]
+              print('TAG SCHOOL',word,len(matched),'SAMPLES',[(x['book'],x['title_ar'][:50]) for x in matched[:8]],flush=True)
+          for word in ['الفقه','أصول الفقه','النحو','الصرف','البلاغة','البديع','البيان','الاستعارة','التلخيص']:
+              matched=[x for x in pri.values() if word in x.get('title_ar','')]
+              print('TITLE',word,len(matched),'SAMPLES',[(x['book'],x['title_ar'][:80]) for x in matched[:15]],flush=True)
           print('STATUS',collections.Counter(x.get('status','') for x in rows).most_common(12),flush=True)
           with open('/tmp/gnamma-survey.json','w') as f:json.dump({'columns':reader.fieldnames,'count':len(rows),'samples':rows[:20]},f,ensure_ascii=False,indent=2)
           PY
