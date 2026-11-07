@@ -79,9 +79,18 @@ def source_appendix():
         if not quote and r.get('quoteFrom'):
             u=texts.get(r['quoteFrom'])
             if u:
-                candidates=[x.strip() for x in re.findall(r'«([^»]{28,12000})»',u['arabic'])]
-                ix=int(r.get('quoteIndex',0))
-                quote=candidates[ix] if ix<len(candidates) else next((x for x in candidates if len(x)>100),'')
+                if r.get('quoteStart') and r.get('quoteEnd'):
+                    a=u['arabic'].find(r['quoteStart'])
+                    b=u['arabic'].find(r['quoteEnd'],a+len(r['quoteStart'])) if a>=0 else -1
+                    if a<0 or b<=a:
+                        raise ValueError('Unverified printed source quotation boundaries: '+r['id'])
+                    quote=u['arabic'][a:b].strip()
+                else:
+                    candidates=[x.strip() for x in re.findall(r'«([^»]{28,12000})»',u['arabic'])]
+                    ix=int(r.get('quoteIndex',0))
+                    if ix<0 or ix>=len(candidates):
+                        raise ValueError('Invalid Arabic source quotation index: '+r['id'])
+                    quote=candidates[ix]
         if quote:out.append('<blockquote class="ar-text" dir="rtl" lang="ar">'+K(quote)+'</blockquote>')
         if r.get('english'):out.append('<p>'+K(r['english'])+'</p>')
         if r.get('note'):out.append('<p>'+K(r['note'])+'</p>')
