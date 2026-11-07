@@ -233,6 +233,34 @@ jobs:
           assert late['yazdi-continuous-q119-123-data.js']['nextLayer']['page']==125
           allblocks=[*p,*w,*q,*c,*z,*mod,*cond,*c13,*c14,*c15,*sy,*q95,*q98,*q102,*q105,*q110,*q114,*q119]
           assert len(allblocks)==100 and len({x['page'] for x in allblocks})==97
+          # Later hawashi are not al-Yazdi main text: every translated item is
+          # a small selected excerpt, with independent editorial analysis.
+          hawashi_files=[
+              'hawashi-127-140-data.js',
+              'hawashi-141-163-recovered-data.js',
+              'hawashi-142-155-data.js',
+              'hawashi-156-168-data.js',
+              'hawashi-169-178-data.js'
+          ]
+          later=[]
+          for fn in hawashi_files:
+              path=base/'tahdhib-al-mantiq'/'edition'/fn
+              src=path.read_text(encoding='utf-8')
+              data=json.loads(src.split('=',1)[1].strip().removesuffix(';'))
+              assert isinstance(data,list) and data
+              later+=data
+          assert len(later)==52
+          assert sorted(x['page'] for x in later)==list(range(127,179))
+          assert len({x['id'] for x in later})==52
+          assert all(x['id']=='HW-'+str(x['page']) for x in later)
+          assert all(x['sourceUrl'].endswith('/'+str(x['page'])+'?lang=ar') for x in later)
+          assert all(x['arabicExcerpt'] and x['englishExcerpt'] and x['editorialAnalysis'] and x['attribution'] for x in later)
+          assert all(x['isFullPage'] is False and x['scanVerified'] is False for x in later)
+          assert all(x['status']=='selected_passage_translated' for x in later)
+          assert all(x['page']>123 for x in later)
+          assert len([x for x in later if x['page']==141 or x['page']==163])==2
+          print('PASS: 52 source-linked later hawashi excerpt translations, zero complete-page claims')
+
           assert all(x['page'] not in (38,52,53,85,109,124,125) for x in allblocks)
           assert sum(x.get('unit','L.03')=='L.16' for x in allblocks)==16
           assert sum(x.get('unit','L.03')=='L.17' for x in allblocks)==4
@@ -373,6 +401,12 @@ jobs:
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q110-113-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q114-118-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q119-123-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-127-140-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-141-163-recovered-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-142-155-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-156-168-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-169-178-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-companion.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-daruri-reader.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/indian-2013-outline-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-glossary-extensions.js
@@ -389,3 +423,4 @@ jobs:
           node tools/tahdhib/experience_qa.mjs
           node tools/tahdhib/daruri_shell_qa.mjs
           node tools/tahdhib/yazdi_layer_qa.mjs
+          node tools/tahdhib/hawashi_companion_qa.mjs
