@@ -602,6 +602,10 @@
             const existing = new Set((n.glossary || []).map(item => (item.arabic || item.term || '').normalize('NFKC').replace(/[\u064b-\u065f\u0670\s]/g, '')));
             n.glossary = [...(n.glossary || []), ...(extra.glossary || []).filter(item => !existing.has((item.arabic || item.term || '').normalize('NFKC').replace(/[\u064b-\u065f\u0670\s]/g, '')))];
             n.sources = [...(n.sources || []), ...(extra.sources || [])];
+            for (const note of extra.criticalNotes || []) {
+              const unit = n.units.find(item => item.id === note.passageId);
+              if (unit) unit.notes = [...(unit.notes || []), { type: note.type, text: note.text, url: note.url }];
+            }
           }
         } catch (_) { /* Optional critical bibliography must never block the three-book reader. */ }
         setData(combineBooks(m,b,n));
