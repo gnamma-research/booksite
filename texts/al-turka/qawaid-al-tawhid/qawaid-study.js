@@ -31,7 +31,7 @@ function originalCitation(r){
   return {arabic:source.slice(a,b).trim(),english:r.english||'',warning:'Delimited quotation as reproduced in Tamhīd; not a collated full transcription of the separate source.'};
  }
  const q=[...String(u.arabic||'').matchAll(/«([^»]{28,12000})»/g)].map(x=>x[1].trim());
- const text=q[r.quoteIndex]||q.find(x=>x.length>110)||'';
+ const text=Number.isInteger(r.quoteIndex)?(q[r.quoteIndex]||''):(q.find(x=>x.length>110)||q[0]||'');
  return {arabic:text,english:r.english||'',warning:text?'Exact Arabic quotation reproduced in Ibn Turka’s commentary; this card is not a claim to reproduce the entire cited treatise.':'The quotation boundaries in this witness are not independently established; open the linked commentary rather than treating this as a complete quotation.'};
 }
 function unitURL(id){
