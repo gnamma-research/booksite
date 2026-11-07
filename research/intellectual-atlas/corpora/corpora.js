@@ -62,6 +62,60 @@
     $("counts").textContent=visible.length+" of "+registry.books.length+" source-attested versions · "+
       registry.books.filter(b=>b.local_text).length+" complete source files hosted by GNAMMA · no claim of manuscript collation";
   }
+
+  function renderRelationNetwork(b){
+    const relations=registry.relationships||[];
+    const connected=new Set([b.id]);
+    let changed=true;
+    while(changed){changed=false;for(const r of relations)if(connected.has(r.source)||connected.has(r.target)){
+      if(!connected.has(r.source)){connected.add(r.source);changed=true}
+      if(!connected.has(r.target)){connected.add(r.target);changed=true}
+    }}
+    const edges=relations.filter(r=>connected.has(r.source)&&connected.has(r.target));
+    const block=$("related-block");
+    if(!edges.length){block.hidden=true;return}
+    block.hidden=false;
+    const books=[...connected].map(bookById).filter(Boolean);
+    const indegree=new Map(books.map(n=>[n.id,0]));
+    for(const r of edges)indegree.set(r.target,(indegree.get(r.target)||0)+1);
+    const roots=books.filter(n=>indegree.get(n.id)===0),distance=new Map(roots.map(n=>[n.id,0]));
+    const queue=roots.map(n=>n.id);
+    for(let i=0;i<queue.length;i++)for(const r of edges)if(r.source===queue[i]){
+      const next=(distance.get(r.source)||0)+1;
+      if(!distance.has(r.target)||next>distance.get(r.target)){distance.set(r.target,next);if(!queue.includes(r.target))queue.push(r.target)}
+    }
+    const groups=[];
+    for(const n of books){const d=Math.min(5,distance.get(n.id)||0);(groups[d]||(groups[d]=[])).push(n)}
+    for(const group of groups)if(group)group.sort((x,y)=>x.death_ah-y.death_ah||x.id.localeCompare(y.id));
+    const maxRows=Math.max(1,...groups.map(x=>x?.length||0)),nodeW=180,nodeH=70,gapX=64,gapY=16,pad=20;
+    const width=pad*2+groups.length*nodeW+(groups.length-1)*gapX,height=Math.max(175,pad*2+maxRows*(nodeH+gapY));
+    const pos=new Map();groups.forEach((group,d)=>group?.forEach((n,i)=>{
+      pos.set(n.id,{x:pad+d*(nodeW+gapX),y:pad+(maxRows-group.length)*(nodeH+gapY)/2+i*(nodeH+gapY)});
+    }));
+    const xml=safeText=>safe(safeText).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const paths=edges.map(r=>{const a=pos.get(r.source),c=pos.get(r.target);if(!a||!c)return"";
+      const x1=a.x+nodeW,y1=a.y+nodeH/2,x2=c.x,y2=c.y+nodeH/2,half=Math.max(20,(x2-x1)/2);
+      const d="M "+x1+" "+y1+" C "+(x1+half)+" "+y1+", "+(x2-half)+" "+y2+", "+x2+" "+y2;
+      return '<a href="'+xml(r.source_url)+'" target="_blank" rel="noopener noreferrer" aria-label="'+xml(r.label+' · open bibliographical evidence')+'"><title>'+xml(r.evidence)+'</title><path class="cor-connector" d="'+d+'" marker-end="url(#arrow-cor)"/><path d="'+d+'" stroke="transparent" stroke-width="16" fill="none"/></a>';
+    }).join("");
+    const nodes=books.map(n=>{const p=pos.get(n.id),selected=n.id===b.id;
+      return '<a href="#book='+encodeURIComponent(n.id)+'" data-corpus-book="'+xml(n.id)+'" class="cor-node'+(selected?' is-selected':'')+'"><title>'+xml(n.title+' · '+n.author)+'</title>'+
+      '<rect x="'+p.x+'" y="'+p.y+'" width="'+nodeW+'" height="'+nodeH+'" rx="8"/>'+
+      '<text x="'+(p.x+10)+'" y="'+(p.y+20)+'">'+xml(n.title.length>25?n.title.slice(0,24)+'…':n.title)+'</text>'+
+      '<text class="cor-sub" x="'+(p.x+10)+'" y="'+(p.y+38)+'">'+xml(n.author.length>27?n.author.slice(0,26)+'…':n.author)+'</text>'+
+      '<text class="cor-sub" x="'+(p.x+10)+'" y="'+(p.y+56)+'">d. '+n.death_ah+' AH</text></a>';
+    }).join("");
+    $("network-graphic").innerHTML='<svg xmlns="http://www.w3.org/2000/svg" width="'+width+'" height="'+height+'" viewBox="0 0 '+width+' '+height+'" role="group" aria-label="Source-audited textual family diagram"><defs><marker id="arrow-cor" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9Z" fill="var(--link)"/></marker></defs>'+paths+nodes+'</svg>';
+    const evidence=$("network-evidence");evidence.replaceChildren();
+    for(const r of edges){
+      const line=document.createElement("div");line.className="relation-evidence";
+      const name=document.createElement("strong");name.textContent=r.label+" · "+bookById(r.source).title+" → "+bookById(r.target).title;
+      const note=document.createElement("p");note.textContent=r.evidence;
+      const citation=document.createElement("a");citation.textContent="Bibliographical evidence";citation.href=r.source_url;citation.target="_blank";citation.rel="noopener noreferrer";
+      const conf=document.createElement("small");conf.textContent=" · "+r.confidence+" · work-level link, not passage alignment";
+      line.append(name,note,citation,conf);evidence.append(line);
+    }
+  }
   function link(anchor,url){anchor.href=url;anchor.target="_blank";anchor.rel="noopener noreferrer"}
   function selectBook(id,push=true){
     const b=bookById(id);if(!b)return;
@@ -87,6 +141,11 @@
     ];
     for(const [k,value] of items){const div=document.createElement("div");const strong=document.createElement("strong");strong.textContent=k+": ";div.append(strong,document.createTextNode(value));prov.append(div)}
     link($("source"),b.openiti.source_page);link($("metadata"),b.openiti.metadata_url);
+    let atlas=$("atlas-backlink");if(!atlas){atlas=document.createElement("a");atlas.id="atlas-backlink";atlas.textContent="View in intellectual atlas";$("metadata").after(atlas)}
+    atlas.hidden=!b.atlas_work_id;
+    if(b.atlas_work_id)link(atlas,"../#view=network&text_family=fusus&work="+encodeURIComponent(b.atlas_work_id));
+
+    renderRelationNetwork(b);
     $("text-controls").hidden=true;$("arabic-body").replaceChildren();
     $("load").disabled=false;$("load").textContent="Read this full digitized version";
     setStatus((b.openiti.size_bytes>6e6?"Large source ("+size(b.openiti.size_bytes)+"): load only when needed. ":"")+
@@ -203,6 +262,8 @@
     $("search").addEventListener("input",e=>{state.search=e.target.value;renderCatalogue()});
     $("clear").addEventListener("click",()=>{state.search="";state.science="all";state.madhhab="all";$("search").value="";$("science").value="all";$("madhhab").value="all";updateMadhhabVisibility();renderCatalogue();setHash(true)});
     $("books").addEventListener("click",e=>{const b=e.target.closest("[data-book]");if(b)selectBook(b.dataset.book)});
+    $("network-graphic").addEventListener("click",e=>{const b=e.target.closest("[data-corpus-book]");if(b){e.preventDefault();selectBook(b.dataset.corpusBook)}});
+
     $("back").addEventListener("click",()=>{document.body.classList.remove("has-reading");$("catalogue").scrollIntoView({block:"start"})});
     $("load").addEventListener("click",loadText);
     $("previous").addEventListener("click",()=>{if(pageIndex>0){pageIndex--;renderPage();$("arabic-body").scrollIntoView({block:"start"})}});
