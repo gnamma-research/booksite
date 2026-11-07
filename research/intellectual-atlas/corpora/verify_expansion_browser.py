@@ -84,6 +84,8 @@ async def run(page):
     await page.reload(wait_until="domcontentloaded")
     await page.wait_for_function("""() => document.getElementById('stats')?.textContent.includes('matching records')""",timeout=60000)
     check('page=2' in (await selected(page))["hash"],"Deep link lost active page")
+    if not await page.locator('#more').evaluate('(e)=>e.open'):
+        await page.locator('#more > summary').click()
     await page.locator('#clear').click()
     check((await selected(page))['science']=='fiqh',"Reset failed")
     check(not errors, "Browser errors: "+str(errors[:5]))
