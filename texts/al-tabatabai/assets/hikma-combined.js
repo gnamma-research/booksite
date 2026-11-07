@@ -590,6 +590,15 @@
         const responses=await Promise.all(paths.map(path => fetch(path,{cache:'no-cache'})));
         if(responses.some(response => !response.ok))throw new Error('One of the editions is unavailable');
         const [m,b,n]=await Promise.all(responses.map(response=>response.json()));
+        try {
+          const supplementResponse = await fetch('./nihayat-al-hikma/data/editorial-supplement.json', { cache: 'no-cache' });
+          if (supplementResponse.ok) {
+            const extra = await supplementResponse.json();
+            const existing = new Set((n.glossary || []).map(item => (item.arabic || item.term || '').normalize('NFKC').replace(/[\u064b-\u065f\u0670\s]/g, '')));
+            n.glossary = [...(n.glossary || []), ...(extra.glossary || []).filter(item => !existing.has((item.arabic || item.term || '').normalize('NFKC').replace(/[\u064b-\u065f\u0670\s]/g, '')))];
+            n.sources = [...(n.sources || []), ...(extra.sources || [])];
+          }
+        } catch (_) { /* Optional critical bibliography must never block the three-book reader. */ }
         setData(combineBooks(m,b,n));
       } else {
         const response = await fetch('./data/book.json', { cache: 'no-cache' });
