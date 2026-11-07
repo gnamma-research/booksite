@@ -22,67 +22,68 @@
           "arabic": "الحاجة إلى المنطق",
           "english": "The need for logic",
           "firstPrintedPage": 8,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=8&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&page=8&type=c_fbook",
+          "locatorStatus": "observed in source table of contents"
         },
         {
           "arabic": "تعريف علم المنطق",
           "english": "The definition of logic",
-          "firstPrintedPage": 9,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=9&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "العلم وتمهيد",
           "english": "Knowledge: sensory, imaginative, estimative, and intellectual",
-          "firstPrintedPage": 10,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=10&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "تعريف العلم",
           "english": "Definition of knowledge",
-          "firstPrintedPage": 12,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=12&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "التصور والتصديق",
           "english": "Conception and assent",
-          "firstPrintedPage": 13,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=13&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "بماذا يتعلق التصديق والتصور؟",
           "english": "Objects of conception and assent",
-          "firstPrintedPage": 15,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=15&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "أقسام التصديق",
           "english": "Kinds of assent",
-          "firstPrintedPage": 16,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=16&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "الجهل وأقسامه",
           "english": "Kinds of ignorance",
-          "firstPrintedPage": 17,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=17&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "العلم ضروري ونظري",
           "english": "Immediate and discursive knowledge",
-          "firstPrintedPage": 18,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=18&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "تعريف النظر أو الفكر",
           "english": "The meaning of inquiry and thinking",
-          "firstPrintedPage": 20,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=20&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "أبحاث المنطق",
           "english": "The six divisions of logic",
-          "firstPrintedPage": 23,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=23&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         }
       ],
       "availableUnits": 11,
@@ -100,55 +101,56 @@
           "arabic": "الحاجة إلى مباحث الألفاظ",
           "english": "Why logic must analyse expressions",
           "firstPrintedPage": 29,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=29&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&page=29&type=c_fbook",
+          "locatorStatus": "observed in source table of contents"
         },
         {
           "arabic": "الدلالة وأقسامها",
           "english": "Signification: natural, rational and conventional",
-          "firstPrintedPage": 33,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=33&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "أقسام الدلالة الوضعية",
           "english": "Conventional signification",
-          "firstPrintedPage": 34,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=34&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "الدلالة اللفظية: المطابقة والتضمن والالتزام",
           "english": "Verbal signification: total, partial and implicative",
-          "firstPrintedPage": 35,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=35&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "شرط الدلالة الالتزامية",
           "english": "Condition of implicative signification",
-          "firstPrintedPage": 36,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=36&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "المختص والمشترك والمنقول والمرتجل والحقيقة والمجاز",
           "english": "Specific, equivocal, transferred and coined words; literal and figurative meaning",
-          "firstPrintedPage": 38,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=38&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "الترادف والتباين",
           "english": "Synonymy and difference",
-          "firstPrintedPage": 43,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=43&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "المفرد والمركب",
           "english": "Simple and composite expressions",
-          "firstPrintedPage": 49,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=49&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "الخبر والإنشاء",
           "english": "Assertoric and performative expressions",
-          "firstPrintedPage": 51,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=51&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         }
       ],
       "availableUnits": 0,
@@ -166,67 +168,68 @@
           "arabic": "الكلي والجزئي",
           "english": "Universal and particular",
           "firstPrintedPage": 57,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=57&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&page=57&type=c_fbook",
+          "locatorStatus": "observed in source table of contents"
         },
         {
           "arabic": "الجزئي الإضافي",
           "english": "Relative particularity",
-          "firstPrintedPage": 58,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=58&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "المتواطئ والمشكك",
           "english": "Univocal and graduated predication",
-          "firstPrintedPage": 59,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=59&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "المفهوم والمصداق",
           "english": "Concept and instance",
-          "firstPrintedPage": 62,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=62&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "النسب الأربع",
           "english": "Four relations between universals",
-          "firstPrintedPage": 65,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=65&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "الكليات الخمس",
           "english": "The five predicables",
-          "firstPrintedPage": 68,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=68&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "النوع والجنس والفصل",
           "english": "Species, genus and differentia",
-          "firstPrintedPage": 69,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=69&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "الذاتي والعرضي",
           "english": "Essential and accidental predication",
-          "firstPrintedPage": 76,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=76&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "الخاصة والعرض العام",
           "english": "Proprium and common accident",
-          "firstPrintedPage": 79,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=79&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "الحمل وأنواعه",
           "english": "Predication: primary, common, direct and denominative",
-          "firstPrintedPage": 84,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=84&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "الكلي المنطقي والطبيعي والعقلي",
           "english": "Logical, natural and intellectual universals",
-          "firstPrintedPage": 89,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=89&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         }
       ],
       "availableUnits": 0,
@@ -244,61 +247,62 @@
           "arabic": "مطلب ما وأي وهل ولم",
           "english": "The four interrogative inquiries",
           "firstPrintedPage": 91,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=91&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&page=91&type=c_fbook",
+          "locatorStatus": "observed in source table of contents"
         },
         {
           "arabic": "فروع المطالب",
           "english": "Subsidiary questions",
-          "firstPrintedPage": 97,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=97&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "التعريف — تمهيد",
           "english": "The nature and kinds of definition",
-          "firstPrintedPage": 102,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=102&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "أقسام التعريف",
           "english": "Complete and incomplete definition/description",
-          "firstPrintedPage": 109,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=109&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "التعريف بالمثال والتشبيه",
           "english": "Definition through example and comparison",
-          "firstPrintedPage": 113,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=113&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "شروط التعريف",
           "english": "Conditions for an adequate definition",
-          "firstPrintedPage": 116,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=116&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "القسمة: فائدتها وأصولها",
           "english": "Division: its aims and rules",
-          "firstPrintedPage": 119,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=119&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "أنواع القسمة",
           "english": "Division of a whole and of a universal",
-          "firstPrintedPage": 121,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=121&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "أساليب القسمة",
           "english": "Binary and detailed division",
-          "firstPrintedPage": 123,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=123&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "كسب التعريف بالقسمة",
           "english": "Obtaining definitions through division",
-          "firstPrintedPage": 125,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=125&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         }
       ],
       "availableUnits": 14,
@@ -316,67 +320,68 @@
           "arabic": "القضية وأقسامها",
           "english": "The proposition; categorical and conditional",
           "firstPrintedPage": 127,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=127&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&page=127&type=c_fbook",
+          "locatorStatus": "observed in source table of contents"
         },
         {
           "arabic": "الموجبة والسالبة",
           "english": "Affirmative and negative propositions",
-          "firstPrintedPage": 131,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=131&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "أجزاء القضية",
           "english": "Constituents of propositions",
-          "firstPrintedPage": 133,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=133&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "السور وألفاظه",
           "english": "Quantifiers",
-          "firstPrintedPage": 139,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=139&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "الذهنية والخارجية والحقيقية",
           "english": "Mental, external and real categorical propositions",
-          "firstPrintedPage": 144,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=144&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "الموجهات وأنواعها",
           "english": "Modal propositions and their kinds",
-          "firstPrintedPage": 148,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=148&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "تقسيمات الشرطية",
           "english": "Kinds of conditionals and their components",
-          "firstPrintedPage": 157,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=157&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "التناقض وشروطه والوحدات الثمان",
           "english": "Contradiction and the eight conditions of unity",
-          "firstPrintedPage": 166,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=166&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "التداخل والتضاد",
           "english": "Subalternation and contrariety",
-          "firstPrintedPage": 173,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=173&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "العكس المستوي وعكس النقيض",
           "english": "Conversion and contraposition",
-          "firstPrintedPage": 180,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=180&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "نقض المحمول ونقض الموضوع",
           "english": "Predicate and subject negation",
-          "firstPrintedPage": 193,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=193&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         }
       ],
       "availableUnits": 0,
@@ -394,61 +399,62 @@
           "arabic": "طريق الاستدلال",
           "english": "The structure of inference",
           "firstPrintedPage": 199,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=199&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&page=199&type=c_fbook",
+          "locatorStatus": "observed in source table of contents"
         },
         {
           "arabic": "القياس وأقسامه",
           "english": "Syllogism and its divisions",
-          "firstPrintedPage": 201,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=201&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "الاقتراني الحملي",
           "english": "Categorical conjunctive syllogisms",
-          "firstPrintedPage": 206,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=206&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "الأشكال الأربعة",
           "english": "Four syllogistic figures",
-          "firstPrintedPage": 210,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=210&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "الاقتراني الشرطي",
           "english": "Conditional conjunctive syllogisms",
-          "firstPrintedPage": 229,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=229&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "القياس الاستثنائي",
           "english": "Exceptional syllogism",
-          "firstPrintedPage": 244,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=244&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "القياسات المركبة",
           "english": "Compound syllogisms",
-          "firstPrintedPage": 258,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=258&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "قياس الخلف وقياس المساواة",
           "english": "Indirect proof and equality inference",
-          "firstPrintedPage": 267,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=267&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "الاستقراء وشبهته وحلها",
           "english": "Induction: skeptical difficulty and resolution",
-          "firstPrintedPage": 269,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=269&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "التمثيل وأركانه وقيمته",
           "english": "Analogy and its scientific value",
-          "firstPrintedPage": 274,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=274&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         }
       ],
       "availableUnits": 0,
@@ -466,37 +472,39 @@
           "arabic": "مبادئ الأقيسة واليقينيات",
           "english": "Premises: certainties, opinions, common beliefs, estimations and imaginative premises",
           "firstPrintedPage": 277,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=277&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&page=277&type=c_fbook",
+          "locatorStatus": "observed in source table of contents"
         },
         {
           "arabic": "صناعة البرهان",
           "english": "Demonstration: why, because, premises and scientific certainty",
           "firstPrintedPage": 311,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=311&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&page=311&type=c_fbook",
+          "locatorStatus": "observed in source table of contents"
         },
         {
           "arabic": "صناعة الجدل",
           "english": "Dialectic: accepted premises, places of argument and debate",
-          "firstPrintedPage": 338,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=338&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "صناعة الخطابة",
           "english": "Rhetoric: persuasion, audience and argumentative means",
-          "firstPrintedPage": 372,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=372&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "صناعة الشعر",
           "english": "Poetics: imaginative assent and literary influence",
-          "firstPrintedPage": 412,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=412&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         },
         {
           "arabic": "صناعة المغالطة",
           "english": "Sophistical reasoning: verbal and substantive fallacies",
-          "firstPrintedPage": 431,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=431&type=c_fbook"
+          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
+          "locatorStatus": "bibliographic topic, exact printed page not checked"
         }
       ],
       "availableUnits": 0,
@@ -512,5 +520,5 @@
     "localBook3Units": 14,
     "otherAuthorialBooksLocallyTranslated": 0
   },
-  "accuracy": "Page intervals derive from successive starts of these sections in the Rafed printed 455-page edition; intermediate topical first-page locators are approximate and must be checked against selected printed pages before textual citation. A contents map is not a translation."
+  "accuracy": "Only book-opening printed-page links and the Book VI demonstration-section start at p. 311 have individually verified locator evidence. Other chapter/section titles are verified against the Rafed contents but their exact internal printed page locators are intentionally withheld until checked."
 }
