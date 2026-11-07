@@ -143,7 +143,7 @@ function render(args){
      '<p>Loading source-linked work and manuscript bibliographies…</p>')+'</div>';
    args.onCounts(0,0);if(!promise&&!error)load();return;
  }
- if(window.GNAtlasGraph){return window.GNAtlasGraph.render(args,{records,reader:sourceReader});}
+ if(window.GNDisciplineAtlas){return window.GNDisciplineAtlas.render(args,{records,reader:sourceReader});}
  if(initialExternal){
    initialExternal=false;activeGenre=g;activeSchool=args.school;
  }else if(activeGenre!==g||activeSchool!==args.school){
