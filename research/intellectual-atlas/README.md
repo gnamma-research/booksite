@@ -1,3 +1,21 @@
+## Full bibliographic work map integrated into GNAMMA — 7 November 2026
+
+**Current interface:** the main **Texts in Time** atlas, under **Explore → Fiqh & uṣūl** or **Arabic language sciences → Grammar / Morphology / Balāgha**, now presents an actual **source-cited bibliographic category/period map**. This supersedes the older ten-book-only SVG and twelve-title manuscript previews described in historical notes below. Within the map, switch fiqh/uṣūl subjects, choose legal schools, filter by provenance and (for Arabic sciences) qualified author/text associations, select a category/time cluster, then inspect each individual work record and its original bibliographic link. Book records are paginated inside the atlas; a separate reader or external bibliography page is **not required**.
+
+**Complete imported metadata:** [Alreq full category register](corpora/manuscript-full.json) includes **4,157 separately source-linked catalogue IDs** from the eight public fiqh/uṣūl/grammar/balāgha tables: 1,033 Ḥanafī fiqh; 380 Mālikī; 782 Shāfiʿī; 199 Ḥanbalī; 501 uṣūl; 892 naḥw; 109 ṣarf; 261 balāgha. The four uṣūl school associations found by manuscript-author epithets or uniquely cross-indexed authors are Ḥanafī 101, Mālikī 30, Shāfiʿī 119, Ḥanbalī 39; 212 uṣūl entries remain unassigned. These are **provisional catalogue associations**, not verified doctrinal school opinions. The separate [OpenITI pinned primary-version work register](corpora/expanded-bibliography.json) contributes **1,857 metadata candidates**, possibly overlapping the Alreq list. Source URLs are attached to **every displayed book**, rather than being mandatory text-reader links. A work can be known bibliographically without a digital text.
+
+**Historical plotting:** only a work's available *author death year* is plotted in a period band; the text's composition/printing date is not inferred. All undated Alreq records stay in an explicitly **Unplaced** column. Multiple grammar and balāgha research associations can overlap; these are selective author/title classification aids, not established commentary genealogies. No fictitious arrows or forced 40–50-work counts for invented independent grammar schools are introduced.
+
+**Non-conflation:** the **404 historically audited entries / 377 documented relationships** in the established philosophy/kalām atlas remain unchanged. The already pinned **30 GNAMMA reader versions**, five byte-matched local files and five bibliographically documented work-to-work links also remain separate. The new map does not assert that 4,157 manuscripts or 1,857 complete additional Arabic text files have been acquired, that cross-catalogue duplicates have been reconciled, or that legal opinions are passage-aligned. This is the comprehensive **bibliographical-information** stage requested, not critical source-text acquisition.
+
+**Implementation and audit:** `corpora/bibliography-map.js` is loaded before `atlas-app.js`, draws clickable, accessible and mobile-scrollable category/period clusters, and exposes work-specific citation details within the main atlas. `corpora/build_manuscript_full.py` extracts the public category-table metadata with original links, maintaining author-school evidence labels and “undated” status; `corpora/manuscript-full.json` is the reproducible data snapshot. `tests/verify_full_bibliography_map_browser.py` tests all four school counts, full uṣūl and Arabic categories, real map clusters, source-detail deep links, and mobile/desktop layout. The source files should be rechecked when upstream catalogues change.
+
+---
+
+*Previous source-reader and bibliography rollout notes (historical versions) follow; their ten-book map descriptions are superseded by the complete bibliographic work map above.*
+
+---
+
 ## Fiqh UI repair and genuine disciplinary source maps — 7 November 2026
      
 **Fixed:** choosing **Explore → Fiqh & uṣūl** now changes the main map immediately. Before this patch the button only set `activeScience` inside the Explore overlay; no source book data was read and no atlas renderer was called. **Source maps** is a real sixth view, available from navigation and the mobile View selector; its state survives page reload via `#view=sources&science=fiqh&source_tab=...&madhhab=...`.
