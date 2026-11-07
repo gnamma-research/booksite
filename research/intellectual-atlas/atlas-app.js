@@ -120,7 +120,7 @@
       if(!sourceMapTabs[science])return;
       const tabs=sourceMapTabs[science],validTab=tabs.some(([id])=>id===tab)?tab:tabs[0][0];
       state.sourceScience=science;state.sourceTab=validTab;
-      state.sourceMadhhab=['all','hanafi','maliki','shafii','hanbali'].includes(madhhab)?madhhab:'all';
+      state.sourceMadhhab=['all','hanafi','maliki','shafii','hanbali','early','named_other','unassigned'].includes(madhhab)?madhhab:'all';
       activeScience=science;activeScienceTab=validTab;activeMadhhab=state.sourceMadhhab;
       state.view='sources';state.selected=null;state.detailType=null;state.detailId=null;
       state.textFamily='';state.familyCriticalOnly=false;state.responseRoute='';state.q='';
@@ -171,7 +171,7 @@
           else window.location.hash=hash;
         }catch{}
       }}
-    function readHash(){try{const p=new URLSearchParams(location.hash.slice(1));if(!['view','work','edge','history','text_family','critical','responses','region','source','author','section','q','families','rels','from','to','density','links','focus','depth','certain','networks','politics','events','contexts','page','science','source_tab','madhhab'].some(key=>p.has(key)))return;const v=p.get('view');if(['timeline','network','relations','catalogue','audit','sources'].includes(v))state.view=v;if(state.view==='sources'){state.sourceScience=sourceMapTabs[p.get('science')]?p.get('science'):'fiqh';const tabs=sourceMapTabs[state.sourceScience];state.sourceTab=tabs.some(([id])=>id===p.get('source_tab'))?p.get('source_tab'):tabs[0][0];state.sourceMadhhab=['all','hanafi','maliki','shafii','hanbali'].includes(p.get('madhhab'))?p.get('madhhab'):'all';activeScience=state.sourceScience;activeScienceTab=state.sourceTab;activeMadhhab=state.sourceMadhhab;}const a=Number(p.get('from')),b=Number(p.get('to'));
+    function readHash(){try{const p=new URLSearchParams(location.hash.slice(1));if(!['view','work','edge','history','text_family','critical','responses','region','source','author','section','q','families','rels','from','to','density','links','focus','depth','certain','networks','politics','events','contexts','page','science','source_tab','madhhab'].some(key=>p.has(key)))return;const v=p.get('view');if(['timeline','network','relations','catalogue','audit','sources'].includes(v))state.view=v;if(state.view==='sources'){state.sourceScience=sourceMapTabs[p.get('science')]?p.get('science'):'fiqh';const tabs=sourceMapTabs[state.sourceScience];state.sourceTab=tabs.some(([id])=>id===p.get('source_tab'))?p.get('source_tab'):tabs[0][0];state.sourceMadhhab=['all','hanafi','maliki','shafii','hanbali','early','named_other','unassigned'].includes(p.get('madhhab'))?p.get('madhhab'):'all';activeScience=state.sourceScience;activeScienceTab=state.sourceTab;activeMadhhab=state.sourceMadhhab;}const a=Number(p.get('from')),b=Number(p.get('to'));
       if(p.has('from')&&p.has('to')&&Number.isFinite(a)&&Number.isFinite(b)&&b>a){
         // Clamp an entire interval rather than clamping its endpoints
         // independently (which can produce an inverted timeline).
@@ -468,7 +468,7 @@
     // Grouping is bibliographical, not a historical transmission edge.
     function drawSourceMap(){
       const main=q('[data-main]'),science=state.sourceScience,isFiqh=science==='fiqh';
-      if(window.GNAtlasBibliography&&(science==='fiqh'||science==='arabic')){
+      if(window.GNAtlasBibliography&&sourceMapTabs[science]){
         window.GNAtlasBibliography.render({
           root,title:sourceScienceNames[science]||'Arabic sciences',
           science,tab:state.sourceTab,tabs:sourceMapTabs[science],school:state.sourceMadhhab,search:state.q,
@@ -731,7 +731,7 @@
         }else html+='<p class="ia-explore-note">Work-level criticism and commentary edges are already source-linked. Detailed proposition-by-proposition argument maps require aligned primary passages and should not be fabricated from bibliographical links.</p>'+
           exploreFamilyList(textualFamilies.filter(f=>['isharat','muhassal','mawaqif','tajrid'].includes(f.id)));
       }else if(activeScience==='fiqh'){
-        const schools=[['all','All madhhabs'],['hanafi','Ḥanafī'],['maliki','Mālikī'],['shafii','Shāfiʿī'],['hanbali','Ḥanbalī']];
+        const schools=[['all','All madhhabs'],['hanafi','Ḥanafī'],['maliki','Mālikī'],['shafii','Shāfiʿī'],['hanbali','Ḥanbalī'],['early','Early jurists'],['named_other','Other schools'],['unassigned','Unassigned']];
         html+='<h4 class="ia-explore-subtitle">Madhhab</h4><div class="ia-explore-grid">'+schools.map(([id,name])=>
           '<button type="button" data-explore-madhhab="'+id+'" aria-pressed="'+String(activeMadhhab===id)+'">'+esc(name)+'</button>').join('')+'</div>';
         const samples={
@@ -745,7 +745,7 @@
         const note=activeScienceTab==='texts'?'Build attested matn–commentary–gloss families for '+context+'. Individual books may also connect to hadith or uṣūl.':
           activeScienceTab==='issues'?'Index exact legal questions, historically qualified rulings, cited Qurʾān and hadith evidence, and internal disagreements in '+context+'.':
           'Map dated uṣūl texts, principles of interpretation and their specifically documented legal applications in '+context+'.';
-        html+=plannedList('Fiqh legal-issue and commentary graph',note,samples[activeMadhhab]);
+        html+='<p class="ia-explore-note">Selecting any madhhab immediately opens its interactive SVG graph of cited book nodes. The Early jurists and Other schools routes distinguish personal circles from later doctrinal schools. Specific legal-issue commentary arrows remain evidence-qualified.</p>';
       }else if(activeScience==='hadith'){
         const notes={
           collections:['Collection and recension authorities must be distinguished. Numbering is edition-specific.',['al-Muwaṭṭaʾ','Ṣaḥīḥ al-Bukhārī','Ṣaḥīḥ Muslim','Sunan Abī Dāwūd']],
@@ -784,12 +784,12 @@
       body.innerHTML=html;
     }
     root.addEventListener('click',event=>{if(suppressNextClick){const onChart=!!event.target.closest('[data-chart]');suppressNextClick=false;if(onChart){event.preventDefault();return}}const el=event.target.closest('button,a');if(!el||!root.contains(el))return;
-      if(el.dataset.exploreScience){activeScience=el.dataset.exploreScience;activeScienceTab=scienceTabs[activeScience]?.[0]?.[0]||'families';renderExplore();if(sourceMapTabs[activeScience]){chooseScienceView(activeScience,activeScienceTab,activeMadhhab);closeExplore()}else if(activeScience==='tasawwuf'){chooseTextFamily('fusus','network');closeExplore()}else if(activeScience==='philosophy'||activeScience==='all'){runAction('show-all-mapped')}return}
-      if(el.dataset.exploreTab){activeScienceTab=el.dataset.exploreTab;renderExplore();if(sourceMapTabs[activeScience]){chooseScienceView(activeScience,activeScienceTab,activeMadhhab);closeExplore()}return}
+      if(el.dataset.exploreScience){activeScience=el.dataset.exploreScience;activeScienceTab=scienceTabs[activeScience]?.[0]?.[0]||'families';renderExplore();if(sourceMapTabs[activeScience]){chooseScienceView(activeScience,activeScienceTab,activeMadhhab);closeExplore()}else if(activeScience==='tasawwuf'){chooseTextFamily('fusus','network');closeExplore()}else if(activeScience==='philosophy'){state.view='timeline';state.selected=null;state.textFamily='';state.q='';state.families=new Set(['ancient','neoplatonic','translation','falsafa','avicennan','ishraqi','sadrian','critical','christian','jewish']);render();setHash();closeExplore()}else if(activeScience==='all'){runAction('show-all-mapped')}return}
+      if(el.dataset.exploreTab){activeScienceTab=el.dataset.exploreTab;renderExplore();if(sourceMapTabs[activeScience]){chooseScienceView(activeScience,activeScienceTab,activeMadhhab);closeExplore()}else if(activeScience==='tasawwuf'){chooseTextFamily('fusus','network');closeExplore()}else if(activeScience==='philosophy'){state.view='timeline';state.families=new Set(['ancient','neoplatonic','translation','falsafa','avicennan','ishraqi','sadrian','critical','christian','jewish']);state.q='';render();setHash();closeExplore()}return}
       if(el.dataset.exploreMadhhab){activeMadhhab=el.dataset.exploreMadhhab;renderExplore();chooseScienceView('fiqh',activeScienceTab,activeMadhhab);closeExplore();return}
       if(el.dataset.sourceMadhhab){event.preventDefault();chooseScienceView('fiqh',state.sourceTab,el.dataset.sourceMadhhab);return}if(el.dataset.sourceTab){event.preventDefault();chooseScienceView(state.sourceScience,el.dataset.sourceTab,state.sourceMadhhab);return}
        if(el.dataset.exploreFamily){event.preventDefault();chooseTextFamily(el.dataset.exploreFamily,'network');closeExplore();return}
-      if(el.dataset.exploreAuthor){event.preventDefault();const author=el.dataset.exploreAuthor;state.textFamily='';state.familyCriticalOnly=false;state.responseRoute='';state.q=author;state.families=new Set(Object.keys(families));state.view='catalogue';state.detailType='author';state.detailId=author;state.page=1;render();setHash();closeExplore();return}
+      if(el.dataset.exploreAuthor){event.preventDefault();const author=el.dataset.exploreAuthor;state.textFamily='';state.familyCriticalOnly=false;state.responseRoute='';state.q=author;state.families=new Set(Object.keys(families));state.view='timeline';state.detailType='author';state.detailId=author;state.page=1;render();setHash();closeExplore();return}
       if(el.dataset.traditionRoute){event.preventDefault();state.families=new Set([el.dataset.traditionRoute]);state.view='timeline';state.density='all';state.page=1;render();setHash();announce('Catalogue tradition selected: '+families[el.dataset.traditionRoute][1]);return}
     if(el.dataset.regionRoute){event.preventDefault();state.regionNetwork=el.dataset.regionRoute;state.view='timeline';state.density='all';state.page=1;render();setHash();announce('Regional context selected: '+regionNetworks.find(([id])=>id===el.dataset.regionRoute)?.[1]);return}
     if(el.dataset.textRoute){event.preventDefault();chooseTextFamily(el.dataset.textRoute);return}if(el.dataset.cluster){event.preventDefault();const [a,b]=el.dataset.cluster.split(',').map(Number);const mid=(a+b)/2,target=lastWidth<600?150:340;changeRange(mid-target/2,mid+target/2);return}if(el.dataset.work){event.preventDefault();q('[data-results],#ia-results-v3')?.setAttribute('hidden','');selectNode(el.dataset.work,el.dataset.center==='1');return}if(el.dataset.edge){event.preventDefault();selectEdge(el.dataset.edge);return}if(el.dataset.history){event.preventDefault();selectHistory(el.dataset.history);return}if(el.dataset.source){state.detailType='source';state.detailId=el.dataset.source;renderSheet();setHash();return}if(el.dataset.author){state.detailType='author';state.detailId=el.dataset.author;renderSheet();setHash();return}if(el.dataset.view){state.view=el.dataset.view;state.page=1;render();setHash();return}if(el.dataset.range){const [a,b]=el.dataset.range.split(',').map(Number);state.view='timeline';changeRange(a,b);return}if(el.dataset.auditTab){state.auditTab=el.dataset.auditTab;drawAudit();setHash();return}if(el.dataset.action)runAction(el.dataset.action)});
