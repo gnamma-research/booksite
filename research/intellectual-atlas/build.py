@@ -47,6 +47,12 @@ script = (ROOT/'atlas-app.js').read_text(encoding='utf-8')
 assert 'data-text-family' in script
 assert "textualMembers.get(state.textFamily)" in script
 assert 'chooseTextFamily' in script
+assert 'function drawTextNetwork' in script
+assert 'function renderExplore' in script
+assert "'arabic'" in script and "'balagha'" in script and "'nahw'" in script
+assert "['fiqh','Fiqh & uṣūl']" in script and "['hadith','Hadith']" in script
+assert 'data-explore-madhhab' in script and 'data-explore-family' in script
+assert 'ia-explorer-shortcuts' not in script  # no more always-visible 3-drawer construction
 assert 'data-family-critical' in script and 'criticalFamilyEdges' in script
 assert 'ia-region-network-v3' in script
 assert 'data-text-route' in script
@@ -76,6 +82,9 @@ assert all((not n.get('temporal') or n['temporal'].get('anchor') is None or
 page_file = ROOT/'index.html'
 page = page_file.read_text(encoding='utf-8')
 assert 'id="ia-text-family-v3"' in page
+assert 'id="ia-explore-panel"' in page and 'data-action="open-explore"' in page
+assert 'data-view="network"' in page and 'data-view-picker' in page
+assert page.index('class="ia-layout"') < page.index('class="gn-atlas-introduction"')
 assert 'ia-razi-shortcut' not in page and 'data-action="razi-responses"' not in page
 pat = r'(<script type="application/json" data-atlas>)(.*?)(</script>)'
 assert len(re.findall(pat, page, re.S)) == 1
@@ -91,8 +100,8 @@ manifest = {
     'title': 'Texts in Time · Islamic Intellectual Atlas',
     'revision': 'tajrid-critical-links-8-2026-10-31',
     'status': 'working research',
-    'ui_revision': 'text-family-critical-links-2026-11-07',
-    'mobile_interface_note': 'Search and text-family selector; critical-links filtering appears contextually within a selected family, not as an author-specific toolbar button.',
+    'ui_revision': 'unified-explore-and-text-network-2026-11-07',
+    'mobile_interface_note': 'Chart-first Explore bottom sheet; philosophy, kalam and logic together; fiqh madhhab and hadith/tafsir/tasawwuf/Arabic-language scaffolds; interactive source-linked text networks.',
     'whole_range_note': 'Drag the six-dot grip from Whole atlas to restore a movable focus window, or tap another time on the overview to seek.',
     'date_marker_note': 'Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.',
     'entries': len(data['nodes']),
@@ -103,7 +112,7 @@ manifest = {
     'neoplatonic_new_entries': 44,
     'neoplatonic_new_relationships': 36,
     'scholarly_networks': len(data['history']['networks']),
-    'classification_layers': ['intellectual tradition','textual family','regional/historical network'],
+    'classification_layers': ['intellectual tradition','textual family','regional/historical network','browse discipline (UI only)'],
     'textual_family_routes': len(families),
     'textual_family_note': 'Book-centred, overlapping routes with stable shared work IDs; Muḥaṣṣal and its commentaries are a distinct route, while Rāzī’s Sharḥ al-Ishārāt remains within the Ishārāt family.',
     'tahdhib_added_entries': 26,
