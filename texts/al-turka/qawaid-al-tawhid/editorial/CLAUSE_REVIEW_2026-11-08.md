@@ -45,7 +45,7 @@ The available A/N printed-text transcriptions have been read where specified, bu
 - **Matn QT-058:** «وهكذا الكلام في النوم والسهر» — the regulation of sleep and *staying awake / sleeplessness*.
 - **Commentary SH-058:** «وهكذا الكلام في النوم و السهو و ما يوجبهما من الجوع و الشبع» — literally, the same applies to sleep and *inadvertence or lapses of attention*, and to hunger and satiety that can produce them.
 - **Finding:** the previous English of SH-058 rendered **السهو** with the **السهر** sense present in QT-058. The corrected commentary English now follows the displayed A digital reading. Nevertheless QT-058 is strong contextual evidence for **السهر** as a possible source-level alternative, and a different A reading cannot be ruled out until printed or manuscript inspection.
-- **Disposition:** source words in the matn and commentary both retained; no silent Arabic emendation. Record the possible sahr/sahw issue at [SH-058](SH058_LEXICAL_CORRECTION_2026-11-07.md). **Status:** two witnesses/contexts juxtaposed, not independently collated manuscripts.
+- **Disposition:** source words in the matn and commentary both retained; no silent Arabic emendation. Record the possible sahr/sahw issue at [SH-058](SH058_LEXICAL_CORRECTION_2026-11-07.md). **Status:** two related but distinct authorial texts juxtaposed, **not** independent witnesses of the same textual passage; neither wording has been verified against independent manuscript folios.
 
 ### 2. SH-002: a reversal within the transmitted objection
 
