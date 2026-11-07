@@ -1,3 +1,18 @@
+Mobile-first unified atlas navigation — 7 November 2026
+
+The live **Texts in Time** page now places the historical diagram before the long research preface. The quick controls are **Search, Explore, a mobile View selector and an advanced-settings gear**. Desktop keeps direct view tabs. The old three above-map drawers for textual families, intellectual traditions and regional history are removed from the rendered interface; traditions, regions and chronology remain reachable through the advanced filters. The large research notes and downloads are collapsed after the diagram and can also be opened from Explore.
+
+**Explore → Philosophy, kalām & logic** is a single group; existing source-verified textual families and author records are actionable. Choosing a family opens a new **Text Network** layout rather than forcing the dates into a branching genealogical tree. The canonical HTML and JSON still share the 404 nodes, 377 qualified relationships and 21 families. A diagram node opens its existing work record; an edge opens the existing date/relationship confidence and source citations. Timeline, Text Network, Relationships, Catalogue and Evidence remain alternative presentations of the same records; critical replies stay distinguished from commentary and borrowing.
+
+Additional groups are shown without fabricated source data:
+- **Fiqh & uṣūl**, with All / Ḥanafī / Mālikī / Shāfiʿī / Ḥanbalī choice and views for legal texts, questions and methods.
+- **Hadith**, with separate Collections, Reports, Isnād and Commentaries routes.
+- **Tafsīr & Qurʾānic sciences**, with passages, text families and questions.
+- **Taṣawwuf**, with its existing `Fuṣūṣ` route, and separately described future corpora.
+- **Arabic language sciences**, with naḥw, ṣarf, balāgha (maʿānī / bayān / badīʿ) and lexicography. Examples such as the `Alfiyya`, `Mughnī al-Labīb`, `Miftāḥ al-ʿUlūm`, `Talkhīṣ al-Miftāḥ` and `al-Muṭawwal` are explicitly **prospective** family candidates, not published source records.
+
+No fiqh, hadith, tafsīr or Arabic grammar/rhetoric corpus was imported in this interface revision, and no new work-to-work edges are claimed. The earlier downloadable offline ZIP remains a historical snapshot and does not include these interface controls. This revision keeps earlier sharable atlas hashes and the Rāzī source-response evidence. For the implementation roadmap, see [Integrated Sciences Architecture](INTEGRATED_SCIENCES_ARCHITECTURE.md).
+
 Textual-family revision — 7 November 2026
 
 **No author-specific Rāzī button** is displayed in the atlas toolbar. Source-backed commentary/response links belong to the **named base-text families**, not to a special author category. The existing `al-Ishārāt` family retains Fakhr al-Dīn al-Rāzī's `razi_isharat` alongside Avicenna's base work, al-Ṭūsī's reply and Quṭb al-Dīn al-Rāzī al-Taḥtānī's adjudication. The existing `ʿUyūn` family retains Rāzī's `razi_sharh_uyun`. A new **`al-Muḥaṣṣal and its commentaries`** route contains `razi_muhassal`, al-Ṭūsī's critical `tusi_talkhis` and al-Kātibī's `katibi_mufassal`. Independent works that borrow from Rāzī are accessible through their evidence-linked reception records, not misleadingly included as direct commentaries. The same work may appear in multiple legitimate families but always has **one canonical record ID**.
