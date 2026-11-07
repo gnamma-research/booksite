@@ -1,3 +1,5 @@
+> **7 November 2026 second-pass checkpoint.** The [complete 171-unit corpus and five PDF checksum audit](SECOND_PASS_REVIEW_2026-11-07.md) passed with no structural blocking errors. The [direct A 270–274 closing-source review](CONCLUSION_270_274_SOURCE_REVIEW.md) records the six concluding units, difficult readings, and the boundary with Āshtiyānī’s later colophon. The website’s unclosed-stylesheet defect has been corrected, and primary-source quotation cards now use checked boundaries. **Independent manuscript collation and exhaustive manual clause-by-clause certification are not complete.** QT-059 remains deferred.
+
 # Tamhīd al-Qawāʿid — complete available commentary translation
 
 **4 November 2026.** The consulted authorial sequence is now translated throughout: **110 Arabic–English commentary units** (40 introductory, 64 main explanations, and 6 concluding sections). This is a **complete source-based working translation**, not a manuscript-established critical edition or a claim that lost historical wording has been restored.
