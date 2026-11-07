@@ -7,6 +7,7 @@ on:
       - 'texts/al-turka/qawaid-al-tawhid/commentary.html'
       - 'texts/al-turka/qawaid-al-tawhid/qa/finalize-reading-edition.py'
       - 'texts/al-turka/qawaid-al-tawhid/commentary-reader.js'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/apply-verified-second-pass-corrections.py'
   workflow_dispatch:
 permissions:
   contents: write
@@ -21,6 +22,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           sparse-checkout: texts/al-turka/qawaid-al-tawhid
+      - name: Apply reviewed SH-058 correction to draft and source module
+        run: python texts/al-turka/qawaid-al-tawhid/qa/apply-verified-second-pass-corrections.py
       - name: Verify translation coverage, source identity and reading controls
         run: python texts/al-turka/qawaid-al-tawhid/qa/finalize-reading-edition.py
       - name: Validate generated HTML is parseable
@@ -48,7 +51,7 @@ jobs:
         run: |
           git config user.name 'gnamma-research'
           git config user.email '13307564+gnamma-research@users.noreply.github.com'
-          git add texts/al-turka/qawaid-al-tawhid/data/commentary.js texts/al-turka/qawaid-al-tawhid/data/commentary-corpus.json texts/al-turka/qawaid-al-tawhid/data/parallel-commentary.md texts/al-turka/qawaid-al-tawhid/data/commentary-english.md texts/al-turka/qawaid-al-tawhid/reader.js texts/al-turka/qawaid-al-tawhid/commentary-main-bridge.js texts/al-turka/qawaid-al-tawhid/qa/commentary-test-report.json texts/al-turka/qawaid-al-tawhid/qa/commentary-export-report.json texts/al-turka/qawaid-al-tawhid/qa/final-reading-audit.json texts/al-turka/qawaid-al-tawhid/editorial/FINAL_READING_EDITION_CHECK.md texts/al-turka/qawaid-al-tawhid/downloads/Tamhid_Complete_Commentary_Reading_Edition.html
+          git add texts/al-turka/qawaid-al-tawhid/data/main-commentary-056-060.en.json texts/al-turka/qawaid-al-tawhid/data/commentary-main-020-060.js texts/al-turka/qawaid-al-tawhid/data/commentary.js texts/al-turka/qawaid-al-tawhid/data/commentary-corpus.json texts/al-turka/qawaid-al-tawhid/data/parallel-commentary.md texts/al-turka/qawaid-al-tawhid/data/commentary-english.md texts/al-turka/qawaid-al-tawhid/reader.js texts/al-turka/qawaid-al-tawhid/commentary-main-bridge.js texts/al-turka/qawaid-al-tawhid/qa/commentary-test-report.json texts/al-turka/qawaid-al-tawhid/qa/commentary-export-report.json texts/al-turka/qawaid-al-tawhid/qa/final-reading-audit.json texts/al-turka/qawaid-al-tawhid/editorial/FINAL_READING_EDITION_CHECK.md texts/al-turka/qawaid-al-tawhid/downloads/Tamhid_Complete_Commentary_Reading_Edition.html
           if git diff --cached --quiet; then echo 'Already current'; else git commit -m 'Finalize 110-unit Tamhid reading edition and remove obsolete incomplete-status metadata'; git pull --rebase origin master; git push origin HEAD:master; fi
       - name: Retain reviewed deliverables
         if: always()
