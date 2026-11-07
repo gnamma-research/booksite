@@ -73,7 +73,7 @@ async def test(page):
         await page.locator(f'.gnbib-schools [data-source-madhhab="{school}"]').click()
         snap1=await wait_bib(page,'fiqh')
         check(snap1['school']==school,school+" selection did not update atlas state")
-        check(f"{count} cited source records" in await page.locator('[data-main]').inner_text(),
+        check(f"{count} cited source records" in (await page.locator('[data-main]').inner_text()).replace(",", ""),
               school+" full manuscript fiqh category missing")
         check(all(url.startswith('https://app.alreq.com/ar/') for url in snap1['sourceURLs']),
               school+" cards lack exact original bibliographic citations")
@@ -102,7 +102,7 @@ async def test(page):
     for school,count in (('maliki',30),('shafii',119),('hanbali',39)):
         await page.locator(f'.gnbib-schools [data-source-madhhab="{school}"]').click()
         ss=await wait_bib(page,'usul')
-        check(f"{count} cited source records" in await page.locator('[data-main]').inner_text(),
+        check(f"{count} cited source records" in (await page.locator('[data-main]').inner_text()).replace(",", ""),
               school+" uṣūl school association missing")
         if count>=32:check(ss['cards']==32,school+" pagination missing")
 
