@@ -125,7 +125,7 @@ window.GNAMMA_QAWAID_REFERENCES = {
       "source": "Inshāʾ al-Dawāʾir",
       "sourceUrl": "https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/",
       "quoteFrom": "SH-INTRO-030",
-      "quoteIndex": 1,
+      "quoteIndex": 0,
       "english": "Existence and nonexistence are not additional to the existent and the nonexistent. The intellect may imagine them as attributes like a house into which things enter; the author explains instead affirmation or negation of an entity and relational existence or absence.",
       "units": [
         "SH-INTRO-030"
@@ -140,7 +140,7 @@ window.GNAMMA_QAWAID_REFERENCES = {
       "source": "Fuṣūṣ al-Ḥikam",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/338?lang=ar",
       "quoteFrom": "SH-032",
-      "quoteIndex": 1,
+      "quoteIndex": 0,
       "english": "The world appeared within the Breath of the All-Merciful, through which the divine names were relieved of the nonmanifestation of their effects. The quoted text continues with an eight-couplet poem.",
       "units": [
         "SH-032"
