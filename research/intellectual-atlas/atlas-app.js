@@ -608,7 +608,7 @@
       const sourceScience=activeScience==='arabic'&&['nahw','sarf','balagha','lugha'].includes(activeScienceTab)?activeScienceTab:
         ['all','fiqh','hadith','tafsir','tasawwuf','philosophy'].includes(activeScience)?activeScience:'arabic';
       const sourceHash='#science='+encodeURIComponent(sourceScience)+(sourceScience==='fiqh'&&activeMadhhab!=='all'?'&madhhab='+encodeURIComponent(activeMadhhab):'');
-      html+='<div class="ia-explore-library"><strong>Arabic source texts are now available</strong><p>28 source-attested OpenITI digital versions; 5 full files mirrored byte-for-byte, 23 pinned for retrieval on demand. Work identity and text-file provenance are checked; critical collation is not finished.</p><a href="corpora/'+sourceHash+'">Open the Arabic Source Library</a></div>';
+      html+='<div class="ia-explore-library"><strong>Arabic source texts are now available</strong><p>30 source-attested OpenITI Arabic versions; 5 complete source files mirrored byte-for-byte, 25 pinned for on-demand retrieval, and five separately sourced commentary/abridgment links. File identity is checked; manuscript and printed-text collation remain incomplete.</p><a href="corpora/'+sourceHash+'">Open the Arabic Source Library</a></div>';
       if(activeScience!=='all')html+='<p class="ia-explore-note">The source reader is operational. Source availability is distinct from a verified scholarly commentary, legal-issue or isnād relationship graph.</p>';
       html+='<div class="ia-explore-footer"><button type="button" data-action="show-all-mapped">Return to the mapped atlas</button> <button type="button" data-action="open-about">Research notes &amp; downloads</button> <a href="../../texts/">Published GNAMMA texts</a></div>';
       body.innerHTML=html;
