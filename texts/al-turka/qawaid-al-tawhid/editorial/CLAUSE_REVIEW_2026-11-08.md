@@ -21,22 +21,22 @@ Each line in a JSONL map has the original text fragment, an English *candidate* 
 
 ## Clause-by-clause verification checkpoint — 8 November 2026
 
-**797 of 3,377** machine-proposed Arabic–English groups have been individually read at the working-text level and marked with `manualReviewStatus`; **2,580** remain without this level of inspection.
+**1,000 of 3,377** machine-proposed Arabic–English groups have been individually read at the working-text level and marked with `manualReviewStatus`; **2,377** remain without this level of inspection.
 
 | Textual layer | Groups indexed | Groups inspected against Arabic |
 |---|---:|---:|
 | 61 original Qawāʿid matn lemmata | 483 | **108** |
 | 40 introductory commentary sections | 401 | **141** |
-| Main commentary SH-001–032 | 1,219 | **290** |
-| Main commentary SH-033–060 including connecting sections | 1,234 | **218** |
+| Main commentary SH-001–032 | 1,219 | **329** |
+| Main commentary SH-033–060 including connecting sections | 1,234 | **382** |
 | Six closing commentary sections | 40 | **40** |
-| **Total** | **3,377** | **797** |
+| **Total** | **3,377** | **1,000** |
 
-Reviewed main commentary sections include SH-015, 017, 023, 028 and 030 (gradation; two modes of determination; possible existents; four primordial names and cognitive presence; divine knowledge), as well as SH-033, 036-B, 040-B, 054, 058, 059 and 060 (imaginal existence; knowledge of particulars; intellect and unveiling; the two paths of inquiry, their conditions and qualifications). Reviews of selected matn and introduction units are marked in their respective JSONL maps. The entire six-section conclusion has been read in its 40 candidate groups.
+Reviewed main commentary sections include SH-002, 015, 017, 023, 028 and 030 (gradation; two modes of determination; possible existents; four primordial names and cognitive presence; divine knowledge), as well as SH-033–036, 036-B, 040-B, 054, 058, 059 and 060 (imaginal existence; knowledge of particulars; intellect and unveiling; the two paths of inquiry, their conditions and qualifications). Reviews of selected matn and introduction units are marked in their respective JSONL maps. The entire six-section conclusion has been read in its 40 candidate groups.
 
 These records distinguish **approved passage-level meaning**, a more literal **clause-specific gloss**, and **unresolved source variants**. A machine-generated candidate fragment often drifts across adjacent clauses. The fact that a separate gloss is supplied does not, without a further argument, establish a mistranslation in the fluent continuous English. In particular, 1,798 algorithmic warning cues are not 1,798 errors.
 
-The available A/N printed-text transcriptions have been read where specified, but manuscript folios have **not** been collated. None of these 713 is certified as having independent manuscript agreement; QT-059's lost ancestral portion remains deferred. The **2,580** remaining groups should not be called manually verified.
+The available A/N printed-text transcriptions have been read where specified, but manuscript folios have **not** been collated. None of these 713 is certified as having independent manuscript agreement; QT-059's lost ancestral portion remains deferred. The **2,377** remaining groups should not be called manually verified.
 
 ## Clause-level editorial findings from direct comparison
 
