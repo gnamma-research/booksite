@@ -1,3 +1,5 @@
+> **Implementation update, 7 November 2026:** The initial fiqh/uṣūl and Arabic-sciences bibliographic layer is now *actually integrated into the main atlas map*. It loads the full 4,157-record Alreq public catalogue snapshot and the 1,857-candidate OpenITI work metadata register, with category/author-death-period clusters, school and lineage filters, and source citations on individual works. These are bibliographic categories, not the completed legal-question, manuscript-collation, hadith isnād or passage-aligned historical-dependency graphs still described as proposed below. The 404 original historical nodes and 377 evidenced edges remain intact.
+
 # Toward a unified atlas of the Islamic sciences
 Gnamma Research · design specification · 7 November 2026
 
