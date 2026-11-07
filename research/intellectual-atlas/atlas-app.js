@@ -695,7 +695,7 @@
         const note=activeScienceTab==='texts'?'Build attested matn–commentary–gloss families for '+context+'. Individual books may also connect to hadith or uṣūl.':
           activeScienceTab==='issues'?'Index exact legal questions, historically qualified rulings, cited Qurʾān and hadith evidence, and internal disagreements in '+context+'.':
           'Map dated uṣūl texts, principles of interpretation and their specifically documented legal applications in '+context+'.';
-        html+=plannedList('Fiqh / uṣūl map',note,samples[activeMadhhab]);
+        html+=plannedList('Fiqh legal-issue and commentary graph',note,samples[activeMadhhab]);
       }else if(activeScience==='hadith'){
         const notes={
           collections:['Collection and recension authorities must be distinguished. Numbering is edition-specific.',['al-Muwaṭṭaʾ','Ṣaḥīḥ al-Bukhārī','Ṣaḥīḥ Muslim','Sunan Abī Dāwūd']],
@@ -721,7 +721,7 @@
           lugha:['Lexicography and semantic usage: historical lexica, meanings, contested terms and source-verified quotations.',['Lisān al-ʿArab','Maqāyīs al-lugha']]
         };
         const pair=notes[activeScienceTab]||notes.nahw;
-        html+=plannedList('Arabic language sciences',pair[0],pair[1]);
+        html+=plannedList('Passage-level Arabic sciences graph',pair[0],pair[1]);
       }
       // Curated OpenITI versions are available even when their issue-level historical
       // relationships have not yet entered the canonical 404-node intellectual map.
@@ -755,7 +755,7 @@
        }
        render();setHash(true);q('[data-family-critical]')?.focus();return}if(el.hasAttribute('data-view-picker')){if(['timeline','network','relations','catalogue','audit','sources'].includes(el.value)){state.view=el.value;state.page=1;render();setHash()}return}if(el.hasAttribute('data-text-family')){chooseTextFamily(el.value);return}if(el.hasAttribute('data-region-network')){state.regionNetwork=regionNetworks.some(([id])=>id===el.value)?el.value:'';state.page=1;render();setHash(true);return}if(el.dataset.control){const key=el.dataset.control;state[key]=el.type==='checkbox'?el.checked:key==='depth'?+el.value:el.value;state.page=1;render();setHash(true)}if(el.dataset.family){el.checked?state.families.add(el.dataset.family):state.families.delete(el.dataset.family);state.page=1;render();setHash(true)}if(el.dataset.rel){el.checked?state.rels.add(el.dataset.rel):state.rels.delete(el.dataset.rel);render();setHash(true)}});
     q('#ia-search-v3').addEventListener('input',event=>{state.q=event.target.value;state.page=1;if(state.view==='sources'){q('#ia-results-v3').hidden=true;drawSourceMap();setHash(true);return}clearTimeout(searchTimer);searchTimer=setTimeout(()=>{const results=D.nodes.filter(matches).slice(0,8),box=q('#ia-results-v3');box.hidden=!state.q;if(state.q)box.innerHTML=results.map(n=>`<button type="button" data-work="${esc(n.id)}" data-center="1"><span>${esc(n.code+' · '+n.title)}</span><span class="ia-small">${esc(n.author+' · '+n.date_label)}</span></button>`).join('')||'<div class="ia-small" style="padding:10px">No title or author matches.</div>';if(state.view==='timeline')drawTimeline();else if(state.view==='catalogue')drawCatalogue();else if(state.view==='audit')drawAudit();setHash(true)},180)});
-    q('#ia-search-v3').addEventListener('keydown',event=>{if(event.key==='Escape'){q('#ia-results-v3').hidden=true;event.target.blur()}if(event.key==='Enter'){const first=D.nodes.find(matches);if(state.q&&first){q('#ia-results-v3').hidden=true;selectNode(first.id,true)}}});
+    q('#ia-search-v3').addEventListener('keydown',event=>{if(state.view==='sources'){if(event.key==='Escape'){q('#ia-results-v3').hidden=true;event.target.blur()}return}if(event.key==='Escape'){q('#ia-results-v3').hidden=true;event.target.blur()}if(event.key==='Enter'){const first=D.nodes.find(matches);if(state.q&&first){q('#ia-results-v3').hidden=true;selectNode(first.id,true)}}});
     // Continuous scrubbing, with a single authoritative [from,to] state.
     // The rail and viewport are stable capture surfaces even when their children repaint.
     let suppressNextClick=false,drag=null,miniDrag=null,liveFrame=0,pendingFrom=null,wheelPixels=0,wheelFrame=0,wheelCommitTimer=null;
