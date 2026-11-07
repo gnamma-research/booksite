@@ -183,6 +183,159 @@ function scholarButton(a,x,y,w=180){
   "<text class='ia-node-title' x='"+(x+8)+"' y='"+(y+20)+"'>"+esc(fit(a.name,w>180?25:20))+"</text>"+
   "<text class='ia-node-sub' x='"+(x+8)+"' y='"+(y+39)+"'>d. "+a.death_ah+" AH · "+esc(fit(a.status.replaceAll("_"," "),16))+"</text></g>";
 }
+function timeTicks(width){
+ const span=S.to-S.from;
+ const step=[20,25,50,75,100,150,200,250,400,500].find(x=>span/x<=(width<500?6:10))||500;
+ const out=[];for(let y=Math.ceil(S.from/step)*step;y<=S.to;y+=step)out.push(y);
+ return out;
+}
+function overviewCell(lane,first,last,count,x,y,w){
+ return "<g role='button' tabindex='0' data-dn-cluster='"+esc(lane+"|"+first+"|"+last)+"'"+
+  " aria-label='"+esc(count+" dated works in "+groupLabel(lane)+" during approximately "+first+"–"+last+" CE")+
+  "'><title>Zoom to "+count+" works from c. "+first+" to "+last+" CE</title>"+
+  "<rect class='ia-overview-card' x='"+x+"' y='"+y+"' width='"+w+"' height='62' rx='5'/>"+
+  "<text class='ia-cluster-label' x='"+(x+9)+"' y='"+(y+22)+"'>"+count+" source records</text>"+
+  "<text class='ia-cluster-sub' x='"+(x+9)+"' y='"+(y+41)+"'>c. "+first+"–"+last+" CE</text>"+
+  "<text class='ia-cluster-sub' x='"+(x+9)+"' y='"+(y+55)+"'>Select to examine books</text></g>";
+}
+function historicAuthorities(lane){
+ if(!IS_LEGAL(genre))return [];
+ if(lane==="early")return jurists.filter(a=>a.death_ah<=300);
+ if(lane==="named_other")return jurists.filter(a=>["personal_circle","historical_nonfour_school"].includes(a.status));
+ return [];
+}
+function svgTimeline(width){
+ const W=Math.max(310,width||800),left=W<530?16:28,right=W<530?12:20;
+ const plot=Math.max(80,W-left-right),span=S.to-S.from,overview=span>(W<530?225:330);
+ const scale=y=>left+(y-S.from)/span*plot,clip=v=>Math.max(left,Math.min(W-right,v));
+ const keys=lanes.filter(k=>!S.lane||k===S.lane);
+ const ticks=timeTicks(W),tickY=56;
+ const grid=ticks.map(y=>{
+  const x=clip(scale(y));
+  return "<line class='ia-grid' x1='"+x+"' y1='"+tickY+"' x2='"+x+"' y2='DATA_BOTTOM'/>"+
+   "<text class='ia-axis' text-anchor='middle' x='"+x+"' y='35'>"+y+"</text>";
+ }).join("");
+ let y=79,body="",maxPage=1,positions=new Map(),visibleWorks=0,visibleClusters=0,undatedTotal=0;
+ const cardWidth=W<500?148:190,cardHeight=68,bucketYears=Math.max(25,Math.ceil((span/(W<530?5:10))/25)*25);
+ for(const lane of keys){
+  const data=filtered.filter(w=>belongs(w,lane));
+  const dated=data.filter(w=>{
+   const d=period(w);return d!==null&&d>=S.from&&d<=S.to;
+  });
+  const undated=data.filter(w=>period(w)===null);
+  const figures=historicAuthorities(lane).filter(a=>{
+    const d=ce(a.death_ah);return d>=S.from&&d<=S.to;
+  });
+  undatedTotal+=undated.length;
+  if(!dated.length&&!undated.length&&!figures.length)continue;
+  const top=y;
+  let items=[];
+  if(overview){
+   const bins=new Map();
+   for(const r of dated){
+    const b=Math.floor(period(r)/bucketYears)*bucketYears;
+    if(!bins.has(b))bins.set(b,[]);
+    bins.get(b).push(r);
+   }
+   items=[...bins.entries()].map(([start,rows])=>({
+      type:"cluster",start,end:start+bucketYears-1,rows,
+      date:start+bucketYears/2
+    }));
+  }else{
+   const sorted=dated.slice().sort((a,b)=>period(a)-period(b)||a.title.localeCompare(b.title,"ar"));
+   const perPage=W<530?24:38;
+   maxPage=Math.max(maxPage,Math.ceil(sorted.length/perPage));
+   items=sorted.slice((S.page-1)*perPage,S.page*perPage).map(r=>({type:"work",work:r,date:period(r)}));
+  }
+  for(const a of figures)items.push({type:"jurist",authority:a,date:ce(a.death_ah)});
+  items.sort((a,b)=>a.date-b.date||a.type.localeCompare(b.type));
+  const rowEnd=[],placed=[];
+  for(const item of items){
+   const x=clip(scale(item.date));
+   const bx=Math.max(left,Math.min(W-right-cardWidth,x+8));
+   let row=0;while(row<rowEnd.length&&rowEnd[row]+8>bx)row++;
+   rowEnd[row]=bx+cardWidth;
+   placed.push({item,x,bx,row});
+  }
+  const laneHeight=Math.max(102,49+rowEnd.length*83);
+  body+="<rect class='dn-lane-background' x='"+left+"' y='"+top+"' width='"+plot+"' height='"+laneHeight+"' rx='4'/>"+
+    "<g role='button' tabindex='0' data-dn-lane='"+esc(lane)+"' aria-label='Focus "+esc(groupLabel(lane))+" lane'>"+
+    "<text class='dn-lane-name' x='"+(left+5)+"' y='"+(top+20)+"'>"+esc(groupLabel(lane))+
+    " · "+dated.length+" dated</text></g>";
+  for(const z of placed){
+   const {item,x,bx,row}=z,by=top+35+row*83,markerY=by-12;
+   body+="<path class='ia-date-glyph ia-date-open' d='M"+x+","+(markerY-5)+" l5,5 -5,5 -5,-5 Z'/>"+
+    "<line class='ia-date-stem' x1='"+x+"' x2='"+(bx+8)+"' y1='"+markerY+"' y2='"+(by+8)+"'/>";
+   if(item.type==="cluster"){
+    body+=overviewCell(lane,item.start,item.end,item.rows.length,bx,by,cardWidth);
+    visibleClusters++;
+   }else if(item.type==="jurist"){
+    body+=scholarButton(item.authority,bx,by,cardWidth);
+   }else{
+    body+=recordButton(item.work,bx,by,cardWidth,cardHeight);
+    positions.set(item.work.id,{x:bx+cardWidth*.5,y:by+cardHeight*.5});
+    visibleWorks++;
+   }
+  }
+  if(undated.length){
+   body+="<g role='button' tabindex='0' data-dn-undated='"+esc(lane)+"' aria-label='Inspect "+
+       undated.length+" undated catalogue records for "+esc(groupLabel(lane))+"'>"+
+    "<rect class='dn-undated-chip' x='"+(left+4)+"' y='"+(top+laneHeight-31)+"' width='"+Math.min(plot-8,215)+"' height='25' rx='5'/>"+
+    "<text class='dn-undated-label' x='"+(left+11)+"' y='"+(top+laneHeight-14)+"'>"+
+    undated.length+" unplaced records · inspect</text></g>";
+  }
+  y+=laneHeight+13;
+ }
+ if(y<100)y=190;
+ const relationLines=[];
+ for(const edge of edges()){
+  const a=positions.get(edge.from),b=positions.get(edge.to);
+  if(!a||!b)continue;
+  const d="M"+a.x+","+a.y+" Q"+((a.x+b.x)/2)+","+((a.y+b.y)/2-38)+" "+b.x+","+b.y;
+  relationLines.push("<g role='button' tabindex='0' data-dn-edge='"+esc(edge.id)+
+    "' aria-label='Documented relation: "+esc(edge.label)+"'>"+
+    "<title>"+esc(edge.label)+"</title><path class='dn-documented-arrow' d='"+d+
+    "' marker-end='url(#dn-arrow)'/></g>");
+ }
+ const axis="<line class='ia-time-axis' x1='"+left+"' x2='"+(W-right)+"' y1='"+tickY+"' y2='"+tickY+"'/>"+
+  "<text class='dn-axis-label' x='"+left+"' y='13'>COMMON YEAR AXIS · approximately CE</text>";
+ const empty=visibleWorks+visibleClusters===0?
+  "<text class='ia-axis' x='"+(left+10)+"' y='"+(tickY+47)+"'>No dated work markers in this window; inspect the unplaced catalogue.</text>":"";
+ const defs="<defs><marker id='dn-arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='5' markerHeight='5' orient='auto'><path d='M1 1 L9 5 L1 9Z'/></marker></defs>";
+ const totalHeight=Math.max(215,y+12);
+ const svg="<svg data-dn-timeline-svg xmlns='http://www.w3.org/2000/svg' role='group' aria-label='"+
+  esc((TITLES[genre]||genre)+" chronological work atlas with individual book markers and zoomable era clusters")+
+  "' width='"+W+"' height='"+totalHeight+"' viewBox='0 0 "+W+" "+totalHeight+"'>"+
+  defs+grid.replaceAll("DATA_BOTTOM",String(totalHeight-20))+axis+relationLines.join("")+body+empty+"</svg>";
+ last={timeline:true,bookMarkers:visibleWorks,clusters:visibleClusters,lanes:keys.length,undated:undatedTotal,maxPage,
+   view:overview?"era clusters":"individual work markers"};
+ return svg;
+}
+function undatedDiagram(width){
+ const W=Math.max(315,width||600),left=12,right=12;
+ const key=S.lane||lanes.find(k=>filtered.some(w=>belongs(w,k)&&period(w)===null));
+ if(!key)return "<p class='dn-note'>No undated records in this selection.</p>";
+ const relevant=filtered.filter(w=>belongs(w,key)&&period(w)===null);
+ const per=W<520?20:32,totalPages=Math.max(1,Math.ceil(relevant.length/per));
+ S.page=Math.min(Math.max(S.page,1),totalPages);
+ const listed=relevant.slice((S.page-1)*per,S.page*per);
+ const cols=W<520?2:3,cellW=W<520?(W-30)/2:(W-40)/3,stepY=94;
+ const H=Math.max(250,115+Math.ceil(listed.length/cols)*stepY);
+ let paths="",nodes="";
+ const mid=W/2;
+ nodes+="<rect class='dn-unplaced-root' x='"+(mid-100)+"' y='12' width='200' height='56' rx='10'/>"+
+  "<text class='dn-unplaced-title' x='"+mid+"' y='33' text-anchor='middle'>"+esc(groupLabel(key))+"</text>"+
+  "<text class='dn-unplaced-small' x='"+mid+"' y='52' text-anchor='middle'>"+relevant.length+" records without dates</text>";
+ for(let j=0;j<listed.length;j++){
+  const x=left+(j%cols)*(cellW+5),y=102+Math.floor(j/cols)*stepY,rec=listed[j];
+  paths+="<path class='dn-catalogue-branch' d='M"+mid+",68 Q"+(x+cellW/2)+","+(y-24)+" "+(x+cellW/2)+","+y+"'/>";
+  nodes+=recordButton(rec,x,y,cellW,69);
+ }
+ const svg="<svg data-dn-undated-svg xmlns='http://www.w3.org/2000/svg' role='group' aria-label='Unplaced works, no chronological position' width='"+W+"' height='"+H+"' viewBox='0 0 "+W+" "+H+"'>"+
+   paths+nodes+"</svg>";
+ last={timeline:true,unplaced:true,bookMarkers:listed.length,undated:relevant.length,maxPage:totalPages,lanes:1};
+ return svg;
+}
 window.GNDisciplineAtlas={render,debug:()=>({genre,mode:S.mode,from:S.from,to:S.to,lane:S.lane,undated:S.undated,
  records:filtered.length,dated:filtered.filter(x=>period(x)!==null).length,
  svg:host.querySelectorAll("[data-sa-map] svg").length,
