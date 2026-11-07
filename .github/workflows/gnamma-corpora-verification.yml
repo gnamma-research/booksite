@@ -3,6 +3,9 @@ on:
   push:
     paths:
       - 'research/intellectual-atlas/corpora/**'
+      - 'research/intellectual-atlas/build.py'
+      - 'research/intellectual-atlas/atlas-app.js'
+      - 'research/intellectual-atlas/publication.json'
       - '.github/workflows/gnamma-corpora-verification.yml'
   pull_request:
     paths:
@@ -23,3 +26,11 @@ jobs:
           python-version: '3.12'
       - name: Verify recorded OpenITI source identities, byte-matched local mirrors and bibliography-backed edges
         run: python research/intellectual-atlas/corpora/verify.py
+      - name: Validate JavaScript source reader and atlas parser
+        run: |
+          node --check research/intellectual-atlas/corpora/corpora.js
+          node --check research/intellectual-atlas/atlas-app.js
+      - name: Validate published atlas data and regenerate its manifest
+        run: python research/intellectual-atlas/build.py
+      - name: Require deterministic atlas regeneration
+        run: git diff --exit-code -- research/intellectual-atlas/index.html research/intellectual-atlas/publication.json
