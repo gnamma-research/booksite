@@ -21,6 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: master
           sparse-checkout: texts/al-turka/qawaid-al-tawhid
       - name: Apply reviewed SH-058 correction to draft and source module
         run: python texts/al-turka/qawaid-al-tawhid/qa/apply-verified-second-pass-corrections.py
