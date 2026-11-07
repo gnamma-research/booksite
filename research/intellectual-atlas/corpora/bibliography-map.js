@@ -164,6 +164,9 @@ function render(args){
  overall.length.toLocaleString()+' cited source records · '+typeCounts.alreq+' manuscript entries · '+
  typeCounts.openiti+' OpenITI versions · '+typeCounts.pinned+' pinned GNAMMA versions</span></div>'+
  '<div class="ia-actions"><button type="button" data-action="open-explore">Other sciences</button><button type="button" data-action="show-all-mapped">Historical atlas</button></div></div>';
+ const subtabs='<div class="gnbib-tabs" role="group" aria-label="Choose subject within the science">'+
+   (args.tabs||[]).map(([key,desc])=>'<button type="button" data-source-tab="'+esc(key)+
+   '" aria-pressed="'+(args.tab===key)+'">'+esc(desc)+'</button>').join('')+'</div>';
  const buttons=(g==="fiqh"||g==="usul")?'<div class="gnbib-schools" role="group" aria-label="Legal school">'+
  schools.map(([k,v])=>'<button type="button" data-source-madhhab="'+k+'" aria-pressed="'+(args.school===k)+'">'+v+'</button>').join('')+'</div>':'';
  const controls='<div class="gnbib-controls"><label>Citation evidence<select data-gnbib-tier>'+
@@ -180,7 +183,7 @@ function render(args){
  const selected=records.find(x=>x.id===state.selected);
  const pager='<div class="gnbib-pages"><button type="button" data-gnbib-page="-1"'+(state.page<=1?' disabled':'')+'>Previous</button>'+
    '<span>Page '+state.page+' of '+pages+'</span><button type="button" data-gnbib-page="1"'+(state.page>=pages?' disabled':'')+'>Next</button></div>';
- main.innerHTML=head+buttons+controls+(warning?'<p class="gnbib-note">'+esc(warning)+'</p>':'')+
+ main.innerHTML=head+subtabs+buttons+controls+(warning?'<p class="gnbib-note">'+esc(warning)+'</p>':'')+
   focus+chart(overall,g)+detail(selected)+
   '<section class="gnbib-results"><h3>'+listed.length.toLocaleString()+' cited records in this map selection</h3>'+
   '<p class="gnbib-muted">The two catalogues can describe overlapping historical works; cross-catalogue identities are not assumed. Open any title for its individual citation.</p>'+
