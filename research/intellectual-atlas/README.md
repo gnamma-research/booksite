@@ -10,6 +10,11 @@ Every mapped book can open its available reader passages. Reader links carry a v
 
 Run build.py to validate the canonical data and synchronize index.html/publication.json. Revision8 offline ZIP embeds the current map; historical PDFs and revision7 ZIP remain earlier snapshots. The public Tajrīd reading package provides a complete static edition for offline use.
 
+
+## Integrating fiqh, ḥadīth and the wider Islamic sciences
+
+The next expansion should use one evidence-typed, passage-addressable graph rather than append unqualified scholar nodes. See [Integrated Sciences Architecture](INTEGRATED_SCIENCES_ARCHITECTURE.md) for a proposed multi-layer ontology, separate hadith isnād/matn/collection structures, historically qualified madhhab positions, a Qurʾān 5:6 / wuḍūʾ pilot, and the existing Ishārāt–Rāzī–Ṭūsī response chain as a second pilot. **This is a roadmap, not a claim that these corpora have been imported.**
+
 Previous implementation history follows.
 
 # Texts in Time · Islamic Intellectual Atlas
