@@ -348,3 +348,10 @@ body #kalam-timeline-app-v3 .ia-explore-footer a{font-size:12px}
  body #kalam-timeline-app-v3 .ia-quick-controls .ia-quick-view{font-size:0}
  body #kalam-timeline-app-v3 .ia-quick-controls .ia-quick-view select{max-width:117px}
 }
+
+/* Cross-science original-text acquisitions remain separate from verified argument edges. */
+body #kalam-timeline-app-v3 .ia-explore-library{margin:14px 0 11px;padding:12px 13px;border-radius:9px;border:1px solid var(--ia-line);background:var(--ia-soft)}
+body #kalam-timeline-app-v3 .ia-explore-library strong{display:block;font-size:12px}
+body #kalam-timeline-app-v3 .ia-explore-library p{margin:4px 0 9px;color:var(--ia-muted);font-size:12px;line-height:1.5}
+body #kalam-timeline-app-v3 .ia-explore-library a{display:inline-block;padding:7px 11px;border:1px solid var(--ia-link);border-radius:8px;color:var(--ia-link);font-size:12px;font-weight:650;text-decoration:none}
+body #kalam-timeline-app-v3 .ia-explore-library a:hover,body #kalam-timeline-app-v3 .ia-explore-library a:focus-visible{background:var(--ia-panel)}
