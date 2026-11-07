@@ -453,3 +453,7 @@ body #kalam-timeline-app-v3 .gnbib-detail dd{margin:0;overflow-wrap:anywhere}
  body #kalam-timeline-app-v3 .gnbib-cards{grid-template-columns:minmax(0,1fr)}
  body #kalam-timeline-app-v3 .gnbib-detail dl{grid-template-columns:83px minmax(0,1fr)}
 }
+
+body #kalam-timeline-app-v3 .gnbib-tabs{display:flex;flex-wrap:wrap;gap:5px;margin:7px 0 11px}
+body #kalam-timeline-app-v3 .gnbib-tabs button{font-size:12px;padding:6px 11px;min-height:38px}
+body #kalam-timeline-app-v3 .gnbib-tabs button[aria-pressed="true"]{background:var(--ia-active);color:var(--ia-onactive);border-color:transparent}
