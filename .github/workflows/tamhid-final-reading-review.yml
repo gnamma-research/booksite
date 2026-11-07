@@ -6,6 +6,7 @@ on:
       - '.github/workflows/tamhid-final-reading-review.yml'
       - 'texts/al-turka/qawaid-al-tawhid/commentary.html'
       - 'texts/al-turka/qawaid-al-tawhid/qa/finalize-reading-edition.py'
+      - 'texts/al-turka/qawaid-al-tawhid/commentary-reader.js'
   workflow_dispatch:
 permissions:
   contents: write
