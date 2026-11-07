@@ -1,0 +1,41 @@
+name: Tamhid real-browser mobile and standalone QA
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/tamhid-real-browser-acceptance.yml'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/test-commentary-browser.py'
+      - 'texts/al-turka/qawaid-al-tawhid/commentary.html'
+      - 'texts/al-turka/qawaid-al-tawhid/commentary-reader.js'
+      - 'texts/al-turka/qawaid-al-tawhid/reader.css'
+      - 'texts/al-turka/qawaid-al-tawhid/downloads/Tamhid_Complete_Commentary_Reading_Edition.html'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  chromium:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            texts/al-turka/qawaid-al-tawhid
+            assets
+      - name: Install Chromium Playwright
+        run: |
+          python -m pip install --quiet playwright
+          python -m playwright install --with-deps chromium
+      - name: Exercise live and self-contained Arabic-English readers
+        run: python texts/al-turka/qawaid-al-tawhid/qa/test-commentary-browser.py
+      - name: Retain exact mobile screenshot and acceptance evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tamhid-real-browser-proof
+          path: |
+            texts/al-turka/qawaid-al-tawhid/qa/commentary-browser-acceptance.json
+            texts/al-turka/qawaid-al-tawhid/qa/commentary-mobile-proof.png
+            texts/al-turka/qawaid-al-tawhid/qa/commentary-single-file-proof.png
+            texts/al-turka/qawaid-al-tawhid/qa/commentary-browser-error.png
+          retention-days: 14
