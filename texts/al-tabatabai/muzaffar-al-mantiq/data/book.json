@@ -3,12 +3,12 @@
   "title": "al-Manṭiq",
   "arabicTitle": "المنطق",
   "author": "Muḥammad Riḍā al-Muẓaffar",
-  "description": "Selections from Muḥammad Riḍā al-Muẓaffar's al-Manṭiq, now beginning with the original introduction to knowledge and reasoning, with fresh working English translation.",
+  "description": "A carefully delimited selection from al-Muẓaffar's full six-book logic: introduction, opening discussion of signs, and later passages on definition. Original Arabic and fresh working English are paired only for passages actually transcribed.",
   "status": "working-translation",
   "editorialStatus": {
     "translationComplete": false,
-    "translatedSection": "Authorial introduction (11 passages covering pp. 8–25) and Book III selections (14 passages).",
-    "translatedPassages": 25,
+    "translatedSection": "Introduction (11 passages), opening Book I on signification (4 passages), and selected Book III discussions of definition (14 passages).",
+    "translatedPassages": 29,
     "sourceBasis": "Original Arabic from Muẓaffar's al-Manṭiq, early printed witness cross-checked against the Dār al-Taʿāruf text hosted by Rafed.",
     "englishComparator": "Carney's 75-page English PDF supplied by the user ends without the complete Book III section on definitions. English here is independently translated from Arabic.",
     "editionNotice": "A fresh working translation; Arabic selection is not a claim that the entire al-Manṭiq has been translated."
@@ -40,22 +40,32 @@
       "arabicTitle": "المدخل"
     },
     {
+      "id": "L",
+      "number": 1,
+      "bookNumber": 1,
+      "title": "Book I · Expressions and Signification",
+      "arabicTitle": "الباب الأول — مباحث الألفاظ"
+    },
+    {
       "id": "I",
       "number": 1,
       "title": "The Four Questions",
-      "arabicTitle": "مطلب ما وأي وهل ولم"
+      "arabicTitle": "مطلب ما وأي وهل ولم",
+      "bookNumber": 3
     },
     {
       "id": "II",
       "number": 2,
       "title": "The Defining Account",
-      "arabicTitle": "المعرّف وأقسامه"
+      "arabicTitle": "المعرّف وأقسامه",
+      "bookNumber": 3
     },
     {
       "id": "III",
       "number": 3,
       "title": "Conditions of Definition",
-      "arabicTitle": "شروط التعريف"
+      "arabicTitle": "شروط التعريف",
+      "bookNumber": 3
     }
   ],
   "units": [
@@ -300,6 +310,94 @@
         "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf Arabic witness",
         "page": "23–25",
         "url": "https://lib.rafed.net/view.php?b_id=1604&page=24&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-L-01",
+      "stage": "L",
+      "chapter": 1,
+      "title": "Why logic must investigate expressions",
+      "arabicTitle": "الحاجة إلى مباحث الألفاظ",
+      "arabic": "لا شك أن المنطقي لا يتعلق غرضه الأصلي إلا بنفس المعاني ، ولكنه لا يستغني عن البحث عن أحوال الألفاظ توصلاً إلى المعاني ، لأنه من الواضح أن التفاهم مع الناس ونقل الأفكار بينهم لا يكون غالباً إلا بتوسط لغة من اللغات. والألفاظ قد يقع فيها التغيير والخلط فلا يتم التفاهم بها فاحتاج المنطقي إلى أن يبحث عن أحوال اللفظ من جهة عامة ، ومن غير اختصاص بلغة من اللغات ، إتماماً للتفاهم ، ليزن كلامه وكلام غيره بمقياس صحيح.\n\nوقلنا : (من جهة عامة) لأن المنطق علم لا يختص بأهل لغة خاصة ، وإن كان قد يحتاج إلى البحث عما يختص باللغة التي يستعملها المنطقي فيما قل : كالبحث عن دلالة لام التعريف ـ في لغة العرب ـ على الاستغراق ، وعن كان وأخواتها في أنها من الأدوات والحروف ، وعن أدوات العموم والسلب وما إلى ذلك. ولكنه قد يستغني عن إدخالها في المنطق اعتماداً على علوم اللغة.",
+      "english": "The logician's principal concern is with intelligible meanings themselves. Nevertheless, the examination of expressions cannot be dispensed with, because expressions provide a means of reaching those meanings. People ordinarily communicate and exchange thoughts through one language or another, and words can undergo alteration, ambiguity, or confusion in ways that obstruct understanding. Logic therefore considers the conditions of expressions in general, rather than the peculiarities of one language, so that we can assess our own speech and that of others by an appropriate standard.\n\nThe qualification *in general* is important: logic is not a discipline restricted to speakers of a particular language. Sometimes a logical inquiry may require a question belonging to the grammar of the language in which it is expressed—for example, whether the Arabic definite article has a universal or exhaustive import, the logical role of *kāna* and related expressions, or the particles expressing generality and negation. But such matters can often be left to the sciences of language rather than incorporated into logic itself.\n\nThus inquiry into words is instrumental: it safeguards the passage between our linguistic expressions and the meanings that are the proper objects of logical investigation.",
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "The distinction is between the logician's primary object (intelligible meanings) and the necessary instrumental investigation of language. Rules peculiar to Arabic grammar are not automatically universal laws of logic."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Arabic text",
+        "page": "29–32",
+        "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-L-02",
+      "stage": "L",
+      "chapter": 2,
+      "title": "Signification: rational, natural and conventional",
+      "arabicTitle": "تعريف الدلالة وأقسامها",
+      "arabic": "إذا سمعت طرقة بابك ينتقل ذهنك ـ لا شك ـ إلى أن شخصاً على الباب يدعوك. وليس ذلك إلا لأن هذه الطرقة كشفت عن وجود شخص يدعوك. وإن شئت قلت : إنها (دلت) على وجوده.\n\nإذن ، طرقة الباب (دال) ، ووجود الشخص الداعي (مدلول) وهذه الصفة التي حصلت للطرقة (دلالة).\n\nوهكذا ، كل شيء إذا علمت بوجوده ، فينتقل ذهنك منه إلى وجود شيء آخر نسميه (دالاً) ، والشيء الآخر (مدلولاً) ، وهذه الصفة التي حصلت له (دلالة).\n\nفيتضح من ذلك أن الدلالة هي : «كون الشيء بحالة إذا علمت بوجوده انتقل ذهنك إلى وجود شيء آخر».\n\nأقسام الدلالة\n\nلا شك أن انتقال الذهن من شيء إلى شيء لا يكون بلا سبب. وليس السبب إلا رسوخ العلاقة بين الشيئين في الذهن. وهذه العلاقة الذهنية أيضاً لها سبب. وسببها العلم بالملازمة بين الشيئين خارج الذهن. ولاختلاف هذه الملازمة من كونها ذاتية أو طبعية أو بوضع واضع وجعل جاعل قسموا الدلالة إلى أقسام ثلاثة : عقلية وطبعية ووضعية.\n\n١ ـ (الدلالة العقلية) ـ وهي فيما إذا كان بين الدال والمدلول ملازمة ذاتية في وجودهما الخارجي ، كالأثر والمؤثر. فإذا علم الإنسان ـ مثلاً ـ أن ضوء الصباح أثر لطلوع قرص الشمس ، ورأى الضوء على الجدار ينتقل ذهنه إلى طلوع الشمس قطعاً ، فيكون ضوء الصبح دالاً على الشمس دلالة عقلية. ومثله إذا سمعنا صوت متكلم من وراء جدار فعلمنا بوجود متكلم ما.\n\n٢ ـ (الدلالة الطبعية) : وهي فيما إذا كانت الملازمة بين الشيئين ملازمة طبعية ، أعني التي يقتضيها طبع الإنسان ، وقد يتخلّف ويختلف باختلاف طباع الناس ، لا كالأثر بالنسبة إلى المؤثر الذي لا يتخلّف ولا يختلف.\n\nوأمثلة ذلك كثيرة ، فمنها اقتضاء طبع بعض الناس أن يقول : (آخ) عند الحس بالألم ، و(آه) عند التوجع ، و(أف) عند التأسف والتضجر. ومنها اقتضاء طبع البعض أن يفرقع أصابعه أو يتمطى عند الضجر والسأم ، أو يعبث بما يحمل من أشياء أو بلحيته أو بأنفه أو يضع إصبعه بين أعلى أذنه وحاجبه عند التفكير ، أو يتثاءب عند النعاس.\n\nفإذا علم الإنسان بهذه الملازمات فإنه ينتقل ذهنه من أحد المتلازمين إلى الآخر ، فعندما يسمع بكلمة (آخ) ينتقل ذهنه إلى أن متكلمها يحس بالألم. وإذا رأى شخصاً يعبث بمسبحته يعلم بأنه في حالة تفكير وهكذا.\n\n٣ ـ (الدلالة الوضعية) : وهي فيما إذا كانت الملازمة بين الشيئين تنشأ من التواضع والاصطلاح على أن وجود أحدهما يكون دليلاً على وجود الثاني ، كالخطوط التي اصطلح على أن تكون دليلاً على الألفاظ ، وكإشارات الأخرس وإشارات البرق واللاسلكي والرموز الحسابية والهندسية ورموز سائر العلوم الأخرى ، والألفاظ التي جعلت دليلاً على مقاصد النفس.\n\nفإذا علم الإنسان بهذه الملازمة وعلم بوجود الدال ينتقل ذهنه إلى الشيء المدلول.",
+      "english": "When you hear a knock at your door, your mind passes to the thought that someone outside is calling for you. The sound of the knock has disclosed the presence of that person. We say that it *signifies* the person's presence.\n\nThe knocking is the **sign** (*dāll*), the presence of the person is the **signified** (*madlūl*), and the sign's having this property is **signification** (*dalāla*). In general, whenever knowing one thing leads the mind to the existence of another, the first is a sign and the second what is signified. Signification is thus the condition of a thing whereby awareness of it leads the mind to another thing.\n\nThis intellectual transition cannot occur without an explanation. It depends upon a firmly established connection between the two items in the mind, itself grounded in awareness of a connection or concomitance between them. Because the connection can be essential, natural, or instituted by convention, signification is divided into three kinds.\n\n**1. Rational signification (dalāla ʿaqliyya).** The sign and the signified have an intrinsic connection in their external existence, as effect to cause. When one knows that daylight follows the rising sun and sees the morning light on a wall, one infers that the sun has risen. Similarly, hearing a voice behind a wall signifies the presence of someone speaking. The inference rests upon a known causal or existential connection.\n\n**2. Natural signification (dalāla ṭabʿiyya).** The connection arises from a disposition or customary reaction of the human constitution and need not occur invariably in every person. Some utter ‘ouch’ when in pain, ‘ah’ when distressed, or a sound of disapproval when annoyed; others crack their knuckles, stretch, fidget with an object or their beard, make certain gestures while thinking, or yawn when drowsy. One who has learned such patterns may infer a person's pain or mental preoccupation from an utterance or gesture. Unlike the causal concomitance invoked in rational signification, these dispositions can vary across individuals.\n\n**3. Conventional signification (dalāla waḍʿiyya).** Here the connection is established through an agreement or convention that one thing is to serve as a sign of another. Examples include writing as a sign of spoken words, gestures used instead of speech, communication signals, mathematical and geometrical symbols, symbols in other sciences, and words instituted to express intentions. When the convention is known and the sign is apprehended, the mind passes to what it signifies.\n\nThe division therefore distinguishes **the ground of signification**, not merely the physical kind of sign. A sound or gesture may function differently according to whether the relevant link is causal, natural, or conventional.",
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "A ‘natural’ sign (ṭabʿī) is a disposition-dependent cue, potentially varying by person; a ‘rational’ sign (ʿaqlī) is inferred from an intrinsic causal or concomitant relation. This should not be conflated with the modern linguistic contrast between arbitrary and iconic signs."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Arabic text",
+        "page": "32–34",
+        "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-L-03",
+      "stage": "L",
+      "chapter": 3,
+      "title": "Verbal signification: total, partial, and concomitant",
+      "arabicTitle": "أقسام الدلالة اللفظية: المطابقية والتضمنية والالتزامية",
+      "arabic": "وهذه الدلالة الوضعية تنقسم إلى قسمين :\n\nأ ـ (الدلالة اللفظية) : إذا كان الدال الموضوع لفظاً.\n\nب ـ (الدلالة غير اللفظية) : إذا كان الدال الموضوع غير لفظ ، كالإشارات والخطوط ، والنقوش وما يتصل بها من رموز العلوم ، واللوحات المنصوبة في الطرق لتقدير المسافات أو لتعيين اتجاه الطريق إلى محل أو بلدة ونحو ذلك.\n\nالدلالة اللفظيّة\n\nمن البيان السابق نعرف أن السبب في دلالة اللفظ على المعنى هو العلقة الراسخة في الذهن بين اللفظ والمعنى. وتنشأ هذه العلقة ـ كما عرفت ـ من الملازمة الوضعية بينهما عند من يعلم بالملازمة. وعليه يمكننا تعريف الدلالة اللفظية بأنها :\n\n«هي كون اللفظ بحالة ينشأ من العلم بصدوره من المتكلم العلم بالمعنى المقصود به».\n\nأقسامها : المطابقية ، التضمنية ، الالتزامية\n\nيدل اللفظ على المعنى من ثلاثة أوجه متباينة :\n\n(الوجه الأول) ـ المطابقة : بأن يدل اللفظ على تمام معناه الموضوع له ويطابقه ، كدلالة لفظ الكتاب على تمام معناه ، فيدخل فيه جميع أوراقه وما فيه من نقوش وغلاف ، وكدلالة لفظ الإنسان على تمام معناه ، وهو الحيوان الناطق. وتسمى الدلالة حينئذ (المطابقية) أو (التطابقية) ، لتطابق اللفظ والمعنى.\n\nوهي الدلالة الأصلية في الألفاظ التي لأجلها مباشرة وضعت لمعانيها.\n\n(الوجه الثاني) ـ التضمن : بأن يدل اللفظ على جزء معناه الموضوع له الداخل ذلك الجزء في ضمنه ، كدلالة لفظ الكتاب على الورق وحده أو الغلاف. وكدلالة لفظ الإنسان على الحيوان وحده أو الناطق وحده. فلو بعت الكتاب يفهم المشتري دخول الغلاف فيه ، ولو أردت بعد ذلك أن تستثني الغلاف لاحتج عليك بدلالة لفظ الكتاب على دخول الغلاف. وتسمى هذه الدلالة (التضمنية). وهي فرع عن الدلالة المطابقية ، لأن الدلالة على الجزء بعد الدلالة على الكل.\n\n(الوجه الثالث) الالتزام : بأن يدل اللفظ على معنى خارج معناه الموضوع له لازم له يستتبعه استتباع الرفيق اللازم الخارج عن ذاته ، كدلالة لفظ الدواة على القلم. فلو طلب منك أحد أن تأتيه بدواة لم ينص على القلم فجئته بالدواة وحدها لعاتبك على ذلك محتجاً بأن طلب الدواة كاف في الدلالة على طلب القلم. وتسمى هذه الدلالة (الالتزامية).\n\nوهي فرع أيضاً عن الدلالة المطابقية لأن الدلالة على ما هو خارج المعنى بعد الدلالة على نفس المعنى.",
+      "english": "Conventional signification is divided into **verbal** signification, where the instituted sign is an expression or word, and **non-verbal** signification, where the instituted sign is something other than a word—gestures, written marks, scientific symbols, road signs indicating distance or direction, and similar conventions.\n\nThe reason a word signifies a meaning is the established intellectual connection between expression and meaning. That connection arises from convention, insofar as the speakers know the convention. Verbal signification is therefore the condition of an expression through which knowing that the speaker has uttered it gives us knowledge of the meaning intended by the speaker.\n\nA word signifies in three different respects.\n\n**1. Total or complete signification (dalāla muṭābaqiyya).** The word signifies the whole of the meaning for which it was instituted. ‘Book’, for instance, signifies the complete object including its pages, markings and cover. ‘Human’ signifies the whole defining account ‘rational animal’. This is the basic signification for which the expression was instituted.\n\n**2. Inclusive or partial signification (dalāla taḍammuniyya).** The word signifies an essential part included within its full instituted meaning. ‘Book’ signifies its pages or its cover; ‘human’ signifies animality or rationality as a constituent of its definition. A purchaser of a book understands its cover to be included. If the seller later attempted to exclude it, the purchaser could appeal to what was contained in the meaning of ‘book’. Partial signification depends upon total signification because the part is understood through the prior meaning of the whole.\n\n**3. Concomitant or implicative signification (dalāla iltizāmiyya).** The expression leads the mind to a meaning **outside** its instituted meaning that is nevertheless connected to it as a necessary or familiar concomitant. ‘Inkwell’ may imply a pen. If someone requested an inkwell and the respondent brought no pen, the requester might appeal to the understood implication. This implicative signification also depends upon total signification: to infer something associated with a meaning, the mind must first understand the meaning actually signified by the expression.\n\nThe distinctions concern whether the signified content is the **whole**, an **internal constituent**, or an **external concomitant** of the word's instituted meaning. They should not be confused with the speaker's intention to assert some particular content.",
+      "notes": [
+        {
+          "type": "Authorial apparatus · paraphrase",
+          "text": "The author explains why the verbal/non-verbal division is emphasised for conventional signification: although rational and natural signs may themselves involve sounds or words, the distinction has special logical utility for conventional verbal signification and its three forms."
+        },
+        {
+          "type": "Terminological note",
+          "text": "Taḍammun is the signification of a part included within the whole instituted meaning; iltizām is signification of what is outside the instituted meaning yet connected to it. Do not render both simply as implication."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Arabic text",
+        "page": "34–36",
+        "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-L-04",
+      "stage": "L",
+      "chapter": 4,
+      "title": "The condition for implicative signification",
+      "arabicTitle": "شرط الدلالة الالتزامية",
+      "arabic": "يشترط في هذه الدلالة أن يكون التلازم بين معنى اللفظ والمعنى الخارج اللازم تلازماً ذهنياً ، فلا يكفي التلازم في الخارج فقط من دون رسوخه في الذهن وإلا لما حصل انتقال الذهن.\n\nويشترط ـ أيضاً ـ أن يكون التلازم واضحاً بيّناً ، بمعنى أن الذهن إذا تصور معنى اللفظ ينتقل إلى لازمه بدون حاجة إلى توسط شيء آخر.",
+      "english": "Implicative signification requires a **mental** connection between the instituted meaning of the expression and the further meaning that follows from it. A concomitance existing only externally is insufficient if it has not been established in the mind: without that, the mind would not pass from the expression's meaning to the further meaning.\n\nThe connection must also be evident or immediately apparent. On apprehending the meaning of the expression, the intellect must be able to pass to its concomitant **without needing a further mediating step**.\n\nThus a logical or physical association, however strong, does not by itself constitute signification by implication for someone who has never grasped the relation. The necessary condition is an intelligible and evident mental concomitance.",
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "The particle ‘also’ (أيضاً) adds a separate condition: not only must the relation be mental, it must be sufficiently evident to produce the transition without further mediation. In usūl al-fiqh and later logical discussions the precise scope of ‘evident concomitance’ may be further distinguished."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Arabic text",
+        "page": "36",
+        "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook"
       }
     },
     {
@@ -634,6 +732,13 @@
       "definition": "An intelligible content considered without necessarily assenting to a judgment."
     },
     {
+      "term": "dalāla waḍʿiyya",
+      "arabic": "دلالة وضعية",
+      "english": "Conventional signification",
+      "definition": "The link between sign and signified depends upon an instituted or agreed convention.",
+      "passageId": "M-L-02"
+    },
+    {
       "term": "burhān",
       "arabic": "برهان",
       "english": "Demonstration",
@@ -706,6 +811,20 @@
       "definition": "What justifies the intellect's assent to a claim, which need not be identical with the cause of the thing's existence."
     },
     {
+      "term": "dalāla iltizāmiyya",
+      "arabic": "دلالة التزامية",
+      "english": "Implicative signification",
+      "definition": "The verbal sign leads the mind to a concomitant meaning outside the instituted meaning itself.",
+      "passageId": "M-L-03"
+    },
+    {
+      "term": "dalāla taḍammuniyya",
+      "arabic": "دلالة تضمنية",
+      "english": "Inclusive signification",
+      "definition": "The verbal sign signifies a component contained within the whole instituted meaning.",
+      "passageId": "M-L-03"
+    },
+    {
       "term": "rasm nāqiṣ",
       "arabic": "رسم ناقص",
       "english": "Incomplete descriptive definition",
@@ -716,6 +835,13 @@
       "arabic": "حد ناقص",
       "english": "Incomplete essential definition",
       "definition": "An essential account giving less than both proximate genus and proximate differentia, normally by a differentia alone or with a remote genus."
+    },
+    {
+      "term": "dalāla ṭabʿiyya",
+      "arabic": "دلالة طبعية",
+      "english": "Natural signification",
+      "definition": "A sign indicates something through a naturally disposed or customary reaction that may vary among persons.",
+      "passageId": "M-L-02"
     },
     {
       "term": "khāṣṣa",
@@ -742,6 +868,13 @@
       "definition": "What a thing is, considered as the answer to the question 'What is it?' This need not itself establish its external existence."
     },
     {
+      "term": "dalāla ʿaqliyya",
+      "arabic": "دلالة عقلية",
+      "english": "Rational signification",
+      "definition": "Cognition proceeds from sign to signified through an intrinsic causal or existential concomitance.",
+      "passageId": "M-L-02"
+    },
+    {
       "term": "mā ḥaqīqiyya",
       "arabic": "ما الحقيقية",
       "english": "Real what?",
@@ -754,6 +887,27 @@
       "definition": "A genus above the proximate genus in a classificatory hierarchy; by itself it leaves more of the specific nature unspecified."
     },
     {
+      "term": "dāll",
+      "arabic": "دال",
+      "english": "Sign",
+      "definition": "The item whose apprehension leads a knower to something else by reason of a known connection.",
+      "passageId": "M-L-02"
+    },
+    {
+      "term": "dalāla",
+      "arabic": "دلالة",
+      "english": "Signification",
+      "definition": "An expression or other sign has a relation such that awareness of it leads the mind to another intelligible object.",
+      "passageId": "M-L-02"
+    },
+    {
+      "term": "madlūl",
+      "arabic": "مدلول",
+      "english": "Signified",
+      "definition": "What the mind reaches through awareness of a sign and of the relevant connection.",
+      "passageId": "M-L-02"
+    },
+    {
       "term": "hal basīṭa",
       "arabic": "هل بسيطة",
       "english": "Simple 'whether'",
@@ -764,6 +918,13 @@
       "arabic": "هل البسيطة",
       "english": "Simple existential question",
       "definition": "Asks whether the subject exists."
+    },
+    {
+      "term": "dalāla muṭābaqiyya",
+      "arabic": "دلالة مطابقية",
+      "english": "Total signification",
+      "definition": "The verbal sign signifies the entire meaning for which it was instituted.",
+      "passageId": "M-L-03"
     },
     {
       "term": "taʿrīf lafẓī",
