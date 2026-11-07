@@ -14,8 +14,12 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
 <div class="overline">GNAMMA · EDITORIAL SOURCE CONTROL</div><h1>Al-Yazdī’s <i>Ḥāshiya</i></h1>
 <p class="lead">Textual witnesses, translation coverage, and what is—and is not—critically established in this edition of <i>Tahdhīb al-Manṭiq</i>.</p>
 <span class="status">Working edition · not definitive</span>
-<div class="stats"><div><strong id="count">—</strong><span>Source-linked translations</span></div><div><strong id="divisions">—</strong><span>Logic divisions represented / 19</span></div><div><strong>0</strong><span>Manuscript-certified divisions</span></div></div>
-<p class="notice">A selection is not a full paragraph-by-paragraph page translation. The optional commentary never replaces the original matn. The 400-page printed volume has a substantial separately attributed marginal apparatus and must not be counted as 400 continuous pages by al-Yazdī.</p>
+<div class="stats"><div><strong id="count">—</strong><span>Translated principal-text Qum page positions</span></div><div><strong id="selected-count">—</strong><span>Older archived selections; no longer repeated</span></div><div><strong>0</strong><span>Manuscript-certified logic divisions</span></div></div>
+<p class="notice">The edition now contains a first-pass Arabic transcription and English translation for each of the <strong>110 printed positions containing a separately identified principal شرح</strong> between Qum pp.7–123. Pages 20, 21, 38, 52, 53, 85 and 109 have no independently identified running main prose in this searchable source. Main-text attribution remains uncertain at Q37. The <strong>400-page bound volume is NOT 400 pages of al-Yazdī prose</strong>: from p125 it prints later glosses on his gloss. This is a working source transcription, not a critically established manuscript edition.</p>
+<h2>Two complete cumulative Arabic–English text batches</h2>
+<p><a href="batches/batch-01-q7-66.html">Read Batch 1 — 55 translated principal-text pages, Qum 7–66</a> · <a href="batches/yazdi-main-batch-01-q7-66.md">Full editable Markdown</a></p>
+<p><a href="batches/batch-02-q67-123.html">Read Batch 2 — another 55 translated principal-text pages, Qum 67–123</a> · <a href="batches/yazdi-main-batch-02-q67-123.md">Full editable Markdown</a></p>
+<p id="translation-word-count" class="small">Checking Arabic and English word totals in the actual source documents…</p>
 <h2>Critical witnesses</h2>
 <div class="table-wrap"><table><thead><tr><th>Siglum</th><th>Source</th><th>Current evidential status</th></tr></thead><tbody>
 <tr><td>Q</td><td><a href="https://ablibrary.net/book_content/b/12170/1?lang=ar">Qum searchable ḥāshiya</a></td><td>Source for selected transcriptions; photographed verification incomplete</td></tr>
@@ -29,8 +33,8 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
 <tr><td>I13</td><td><a href="https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf">Gujarat, Dābhel, 1434/2013</a></td><td>Second printed transcription of al-Yazdī; separate contemporary annotated footnotes; 9 digital parallel loci compared. Not an independently established manuscript branch.</td></tr>
 <tr><td>K</td><td>Cairo 1912 Taftāzānī matn</td><td>Separate source corpus, original logic divisions unchanged</td></tr>
 </tbody></table></div>
-<h2>Translation coverage by division</h2><p class="small">Live counts are calculated from the bilingual translation source loaded by the reader. “Represented” means at least one selection, not whole-division completion.</p>
-<div class="table-wrap"><table><thead><tr><th>Division</th><th>Title (editorial)</th><th>Selections</th><th>Source pages</th></tr></thead><tbody id="coverage"><tr><td colspan="4">Loading text register…</td></tr></tbody></table></div>
+<h2>Main ḥāshiya translated by division</h2><p class="small">Counts below refer to main ḥāshiya source-page positions that actually contain Arabic text <strong>and its English translation</strong>. Some printed pages cross two editorial divisions; page positions therefore must not be summed across divisions to estimate unique pages. Source images and variants remain uncollated.</p>
+<div class="table-wrap"><table><thead><tr><th>Division</th><th>Editorial title</th><th>Printed-page positions</th><th>Qum source pages represented</th></tr></thead><tbody id="coverage"><tr><td colspan="4">Loading bilingual source register…</td></tr></tbody></table></div>
 <h2>Critical points already identified</h2>
 <ul>
 <li><strong>Authorship:</strong> the work is a <i>ḥāshiya</i> keyed to short lemmata. Distinguish Taftāzānī’s words, al-Yazdī’s discussion, and later writers’ marginal notes before assigning textual authority.</li>
@@ -114,6 +118,8 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
 <div class="footer">These editorial headings are modern finding aids, not newly discovered authorial rubrics. The original source is retained separately in the matn and commentary data. Updated 6 November 2026.</div>
 </main>
 <script src="yazdi-layer-data.js?v=20261106-yazdi8"></script>
+<script src="yazdi-continuous-q7-13-data.js?v=20261107-0713"></script>
+<script src="yazdi-continuous-q14-19-data.js?v=20261107-1419"></script>
 <script src="yazdi-continuous-l03-data.js?v=20261106-l03b"></script>
 <script src="yazdi-continuous-universals-data.js?v=20261106-q30-37"></script>
 <script src="yazdi-continuous-p39-47-data.js?v=20261106-q39-47"></script>
@@ -135,6 +141,29 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
 <script>
 (function(){
  const d=window.GNAMMA_YAZDI_LAYER;if(!d)return;
+ const sources=[
+  [window.GNAMMA_YAZDI_CONTIGUOUS_Q7_13,'L.01'],[window.GNAMMA_YAZDI_CONTIGUOUS_Q14_19,'L.02'],
+  [window.GNAMMA_YAZDI_CONTIGUOUS_L03,'L.03'],[window.GNAMMA_YAZDI_CONTIGUOUS_UNIVERSALS,null],
+  [window.GNAMMA_YAZDI_CONTIGUOUS_L07,'L.07'],[window.GNAMMA_YAZDI_CONTIGUOUS_Q48_51,null],
+  [window.GNAMMA_YAZDI_CONTIGUOUS_Q54_58,'L.10'],[window.GNAMMA_YAZDI_CONTIGUOUS_Q59_64,'L.11'],
+  [window.GNAMMA_YAZDI_CONTIGUOUS_Q65_69,'L.12'],[window.GNAMMA_YAZDI_CONTIGUOUS_Q70_73,'L.13'],
+  [window.GNAMMA_YAZDI_CONTIGUOUS_Q74_80,'L.14'],[window.GNAMMA_YAZDI_CONTIGUOUS_Q81_84,'L.15'],
+  [window.GNAMMA_YAZDI_CONTIGUOUS_Q86_94,'L.16'],[window.GNAMMA_YAZDI_CONTIGUOUS_Q95_97,'L.16'],
+  [window.GNAMMA_YAZDI_CONTIGUOUS_Q98_101,'L.16'],[window.GNAMMA_YAZDI_CONTIGUOUS_Q102_104,'L.17'],
+  [window.GNAMMA_YAZDI_CONTIGUOUS_Q105_108,'L.18'],[window.GNAMMA_YAZDI_CONTIGUOUS_Q110_113,'L.18'],
+  [window.GNAMMA_YAZDI_CONTIGUOUS_Q114_118,'L.19'],[window.GNAMMA_YAZDI_CONTIGUOUS_Q119_123,'L.19']
+ ];
+ const principal=sources.flatMap(([src,u])=>{
+  if(!src)return[];
+  const a=[src.blocks,src.sourcePages,src.sourceBlocks].find(Array.isArray)||[];
+  return a.map(p=>({...p,unit:p.unit||src.unit||u||''}));
+ });
+ const uniquePages=new Set(principal.map(p=>p.page));
+ const countWords=k=>principal.reduce((n,p)=>n+(p[k]?p[k].trim().split(/\\s+/).length:0),0);
+ document.getElementById('count').textContent=String(uniquePages.size);
+ document.getElementById('selected-count').textContent=String(d.entries.length);
+ document.getElementById('translation-word-count').textContent=countWords('ar').toLocaleString()+' Arabic words and '+countWords('en').toLocaleString()+' English words across two 55-page bilingual batches, measured from the actual continuous source files. Zero manuscript-certified divisions.';
+ if(uniquePages.size!==110)document.getElementById('translation-word-count').textContent+=' SOURCE COVERAGE CHECK FAILED: expected 110 printed positions, found '+uniquePages.size+'.';
  const continuous=window.GNAMMA_YAZDI_CONTIGUOUS_L03;
  const ledger=document.getElementById('continuous-l03');
  if(continuous&&ledger){
@@ -209,12 +238,10 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
  addRows(window.GNAMMA_YAZDI_CONTIGUOUS_Q110_113?.blocks,'#continuous-q110-113',false);
  addRows(window.GNAMMA_YAZDI_CONTIGUOUS_Q114_118?.blocks,'#continuous-q114-118',false);
  addRows(window.GNAMMA_YAZDI_CONTIGUOUS_Q119_123?.blocks,'#continuous-q119-123',false);
- const counts=new Map();for(const e of d.entries){if(!counts.has(e.unit))counts.set(e.unit,[]);counts.get(e.unit).push(e)}
+ const counts=new Map();for(const e of principal){if(!counts.has(e.unit))counts.set(e.unit,[]);counts.get(e.unit).push(e)}
  const titles=[
  'Prologue and two sciences','Knowledge and logic','Signification of expressions','Particular and universal','Four relations of universals','Genus','Species, differentia, property, accident','Three kinds of universal','Definition and description','Categorical propositions','Modal propositions','Conditional propositions','Contradiction','Simple conversion','Contraposition','Syllogistic figures','Conditional and exceptive inference','Induction, analogy, five arts','Subject, principles, questions of science'
  ];
- document.getElementById('count').textContent=d.entries.length;
- document.getElementById('divisions').textContent=counts.size+'/19';
  const parallels=document.getElementById('parallel-witnesses');
  if(parallels){
   parallels.replaceChildren();
@@ -232,7 +259,7 @@ header a{text-decoration:none;font-size:13px}a{color:var(--accent)}main{max-widt
  titles.forEach((title,i)=>{
   const id='L.'+String(i+1).padStart(2,'0'),entries=counts.get(id)||[],tr=document.createElement('tr');
   const pages=[...new Set(entries.map(e=>e.page))].sort((a,b)=>a-b);
-  [id,title,String(entries.length),pages.join(', ')||'—'].forEach(s=>{const td=document.createElement('td');td.textContent=s;tr.append(td)});
+  [id,title,String(pages.length),pages.join(', ')||'—'].forEach(s=>{const td=document.createElement('td');td.textContent=s;tr.append(td)});
   tbody.append(tr);
  });
 })();
