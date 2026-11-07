@@ -1,0 +1,73 @@
+{
+  "schema": "maqasid-2019-matn-bounded-second-pass-v2",
+  "date": "2026-11-07",
+  "stage": "C1-MI-02-07",
+  "source": "Prior Stage7 local reading text extracted from YEK 2019, independent Maqāṣid pp.93,95. Reconciled to canonical C1 reading units. This stage did not access photographs or inspect original manuscript leaves.",
+  "reviewed_units": 6,
+  "arabic_excerpt_characters": 1263,
+  "full_page_image_certification": false,
+  "translation_changed": 2,
+  "note": "This aligns a bounded 2019 source-text excerpt with already-complete C1 English. It does not count toward new first-pass coverage or certify both printed pages completely. Earlier C1 wording remains in the canonical master.",
+  "changes": [
+    {
+      "id": "M-I-02",
+      "title": "The earlier account of its subject",
+      "arabic": "والمتقدمون على أن موضوعه الموجود من حيث هو، ويتميز عن الإلهي بكون البحث فيه على قانون الإسلام، أي ما علم قطعاً من الدين، كصدور الكثرة عن الواحد، ونزول الملك من السماء، وكون العالم محفوفاً بالعدم والفناء، إلى غير ذلك مما تجزم به الملة دون الفلسفة؛ لا ما هو الحق ولو ادعاءً لتشاركه الفلسفة ككلام المخالف.",
+      "original_c1_english_preserved": true,
+      "english": "*Source: p. 93.*\n\nThe earlier scholars hold that its subject is the existent insofar as it is existent. It is distinguished from philosophical metaphysics by conducting its inquiries according to the governing principles of Islam (قانون الإسلام): that is, what is known with certainty from religion, such as the proceeding of multiplicity from the One, an angel’s descent from heaven, and the world’s being encompassed by nonexistence and passing away, together with other matters affirmed decisively by revealed religion rather than philosophy. What is meant is not simply what is true—even by claim—for philosophy, like the kalām of an opponent, shares in making that claim.",
+      "change_type": "retain existing English after bounded Arabic comparison",
+      "revision_note": "Earliest authors: formal object is الموجود من حيث هو ('being insofar as it is') but Islamic kalām inquiry is qualified by قانون الإسلام. The three cited examples and the final objection to 'whatever is true, even by claim' cannot be omitted. Stage7 printed-text extraction is a previous reading aid, not newly inspected manuscript or page image.",
+      "status": "recovered source text-layer aligned; no new image collation"
+    },
+    {
+      "id": "M-I-03",
+      "title": "Mental existence and supplementary inquiries",
+      "arabic": "فإن قيل: قد يُبحث ـ مع نفي الوجود الذهني ـ عن أحوال ما لا يعتبر وجوده، كالنظر والدليل، وما لا وجود له، كالمعدوم والحال. قلنا: مبادئ ولواحق، ولو سُلّم فنفي الذهني رأي البعض.",
+      "original_c1_english_preserved": true,
+      "english": "*Source: p. 93.*\n\nIf it is objected that, despite denying mental existence, kalām investigates the states of things whose existence is not taken into account, such as rational investigation and proof, and things that have no existence, such as the nonexistent and a state (حال), we reply: these are principles and supplementary discussions. Even if the objection is granted, the denial of mental existence is only some scholars’ position.",
+      "change_type": "retain existing English after bounded Arabic comparison",
+      "revision_note": "The ontological ḥāl is a disputed state and maʿdūm is the nonexistent; nazar and dalīl are preliminary issues whose external existence is not presupposed. The author replies in two separate moves: ancillary principles; and the denial of mental existence belongs only to some thinkers.",
+      "status": "recovered source text-layer aligned; no new image collation"
+    },
+    {
+      "id": "M-I-04",
+      "title": "God and contingent beings as subject matter",
+      "arabic": "وقيل: موضوعه ذات الله تعالى وحده، أو مع ذات الممكنات من حيث استنادها إليه، لما أنه يبحث عن ذلك؛ ولهذا يعرّف بالعلم الباحث عن أحوال الصانع من صفاته الثبوتية والسلبية وأفعاله المتعلقة بأمر الدنيا والآخرة؛ أو عن أحوال الواجب وأحوال الممكنات في المبدأ والمعاد، على قانون الإسلام.",
+      "original_c1_english_preserved": true,
+      "english": "*Source: p. 95.*\n\nIt is also said that its subject is God Most High’s essence alone, or together with the essences of contingent beings insofar as they depend upon Him, on the ground that these are what it investigates. Thus it is defined as the science investigating the Maker’s states—His affirmative and negative attributes, and His acts relating to this world and the hereafter—or the states of the Necessary Existent and of contingent beings in their beginning and return, according to the governing principles of Islam.",
+      "change_type": "retain existing English after bounded Arabic comparison",
+      "revision_note": "Two alternative subjects: God's essence alone, or jointly with possible essences in their dependence on Him. Both definitions include God and creation in beginning and return; affirmative/negative attributes must be distinguished from divine acts.",
+      "status": "recovered source text-layer aligned; no new image collation"
+    },
+    {
+      "id": "M-I-05",
+      "title": "Preliminary discussions and their purpose",
+      "arabic": "فإن قيل: قد يبحث في الأمور العامة والجواهر والأعراض عن أحوال الممكنات لا على وجه الاستناد. قلنا: على سبيل الاستطراد للتكميل، أو الحكاية للتزييف، أو المبدئية للتحقيق؛ وإلا فهو من فضول الكلام.",
+      "original_c1_english_preserved": true,
+      "english": "*Source: p. 95.*\n\nIf it is objected that discussions of general matters, substances and accidents concern contingent beings without taking account of their dependence upon God, the answer is that these are included as digressions that complete the treatment, as statements of positions brought forward in order to refute them, or as preliminary principles required for establishing the point under investigation. Otherwise they belong among the superfluous discussions of kalām.",
+      "change_type": "local editorial revision",
+      "revision_note": "Three different reasons for including investigations outside the strictly defined formal subject: incidental completion (istiṭrād), citation only in order to refute (ḥikāya li-l-tazyīf), and being a preliminary principle needed for the investigation (mabdaʾiyya li-l-taḥqīq). The correct reading المبدئية had been visually checked in an earlier C1 dossier; not reverified in a new image here.",
+      "status": "recovered source text-layer aligned; no new image collation"
+    },
+    {
+      "id": "M-I-06",
+      "title": "Establishing a science’s principles",
+      "arabic": "فإن قيل: مبادئه يجب أن تكون بيّنة بنفسها؛ إذ ليس فوقه علم شرعي. قلنا: قد تُبيّن مبادئ العلم فيه، أو في علم أدنى، لا على وجه الدور؛ ومبادئ الشرعي في غير الشرعي، كالأصول في العربية.",
+      "original_c1_english_preserved": true,
+      "english": "*Source: p. 95.*\n\nIf it is objected that the principles of kalām must be self-evident, since no religious science stands above it, the reply is that the principles of a science may be established within that science itself, or in a lower science, provided this does not involve circularity. The principles of a religious science may also be established through a nonreligious science, as [some of] the principles of legal theory are established through Arabic.",
+      "change_type": "local editorial revision",
+      "revision_note": "Principles of a science need not all be immediately self-evident or established by a higher religious science. Clarify that al-uṣūl can be legal theory, whose linguistic foundations depend on Arabic; neither all fiqh nor all kalām is proved by grammar.",
+      "status": "recovered source text-layer aligned; no new image collation"
+    },
+    {
+      "id": "M-I-07",
+      "title": "The objection from proving the Maker",
+      "arabic": "واعتُرض بأن إثبات الصانع من أعلى مطالب الكلام، وموضوع العلم لا يُبيَّن فيه بل فيما فوقه، حتى ينتهي إلى ما موضوعه بيّن الوجود، كالموجود من حيث هو.",
+      "original_c1_english_preserved": true,
+      "english": "*Source: p. 95.*\n\nIt has been objected that establishing the Maker is among kalām’s highest inquiries, whereas a science’s subject is not established within it, but within a higher science, until one reaches a science whose subject evidently exists, such as the existent insofar as it is existent.",
+      "change_type": "retain existing English after bounded Arabic comparison",
+      "revision_note": "Ends at an objection: if the Maker's existence is a major conclusion of kalām, how can it be its already-established scientific subject? The independent matn does NOT include a reply in this passage; no new answer is inserted from the Sharḥ.",
+      "status": "recovered source text-layer aligned; no new image collation"
+    }
+  ]
+}
