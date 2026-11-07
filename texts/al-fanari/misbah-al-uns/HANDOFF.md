@@ -78,13 +78,13 @@ Reader implements: compact icon toolbar; Contents, Search, Appearance/Aa, Study/
 1. Obtain the prior DOCX/PDF master *in original bytes* if possible; restore §§1.1–4.537 to a canonical, section-aligned Arabic/English data model, with notes and apparatus **without rewriting or summarising** earlier translations. Carry original source variants with hashes.
 2. Verify the 40 currently imported units against source boundaries and preserve original English from R10 exactly. Review R11 against Khvājavī print and independent early textual witnesses. Never represent first-pass as collated.
 3. Continue **from §4.578 on printed p.446** using the same pinned OpenITI source. Source text begins `وإنما كان أتم لاشتماله على جهة ربط الوحدة بالكثرة...`; the preceding §4.577 ends `كالمفاتيح الأول وسدنتها التي هي أمهات صفات الألوهية.`
-4. At each stage add a new `r12*.json` (etc.), update `MANIFEST.json`, website data loading, *both* progress indicators, and this complete handoff; record translation count and whole-source-page changes.
+4. At each stage add a new `r12*.json` (etc.) and append its filename under `MANIFEST.json` → `readerImport.files`; the modular reader discovers new increments automatically. Rebuild `standalone.html`, update both coverage indicators and this complete handoff; record translation count and whole-source-page changes.
 5. Promote to the **actual NAMA** Tasawwuf library only when the destination repo or editor is available and its Darūrī-compatible components can be compared. Do not silently merge the GNAMMA branch into a different public site.
 6. Every stage should preserve an immutable source/provenance record. Mark any missing previous archive **NOT FULLY CUMULATIVE** until the byte-identical old master is included.
 
 ### Integrity locations
 
-- New reader `index.html`, `reader.css`, `reader.js`.
+- New reader `index.html`, `reader.css`, `reader.js`; standalone offline page `standalone.html` contains all 40 bilingual sections and the full reader client in one HTML file.
 - Newly integrated bilingual sections: `r10.json`, `r11a.json`, `r11b.json`.
 - Source and stage register: `MANIFEST.json`.
 - Earlier originals identified precisely above.
