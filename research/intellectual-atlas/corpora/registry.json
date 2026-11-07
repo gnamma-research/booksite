@@ -6,7 +6,7 @@
   "license": "CC BY-NC-SA 4.0",
   "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
   "source_documentation": "https://openiti.org/documentation/",
-  "verification_policy": "28 work/version URI files and corresponding version metadata were located in the OpenITI source repositories and the matching OpenITI/RELEASE snapshot (Feb 9 2026). Five byte-identical local source files were independently compared by Git blob SHA. This is file provenance/integrity verification, NOT completeness of each historical work, manuscript collation, independent page by page printed-edition checking, isnad verification, or a GNAMMA critical edition; source warnings remain visible.",
+  "verification_policy": "30 exact source versions, version metadata and Git blob SHA values checked against OpenITI/RELEASE pinned commit. Five byte-identical source files mirrored locally, 25 pinned remote. Five distinct bibliography-backed commentary/abridgment relations are attested in external catalogues; no automated scholarly passage comparison, print/manuscript collation, systematic isnad verification or historical whole-corpus completeness is claimed.",
   "books": [
     {
       "id": "muwatta",
@@ -844,6 +844,67 @@
         "content_collated_against_print": false,
         "critical_edition": false
       }
+    },
+    {
+      "id": "nawawi_sharh_muslim",
+      "title": "al-Minhāj fī sharḥ Ṣaḥīḥ Muslim",
+      "title_ar": "المنهاج شرح صحيح مسلم",
+      "author": "al-Nawawī",
+      "death_ah": 676,
+      "disciplines": [
+        "hadith",
+        "fiqh"
+      ],
+      "madhhab": "shafii",
+      "openiti": {
+        "book_uri": "MinhajFiSharhMuslim",
+        "version_uri": "0676Nawawi.MinhajFiSharhMuslim.JK000137-ara1",
+        "blob_sha": "659d75ecfe9493ff3007be1088062048b3a63606",
+        "size_bytes": 7315281,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0676Nawawi/MinhajFiSharhMuslim/0676Nawawi.MinhajFiSharhMuslim.JK000137-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0676Nawawi/MinhajFiSharhMuslim/0676Nawawi.MinhajFiSharhMuslim.JK000137-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0676Nawawi/MinhajFiSharhMuslim/0676Nawawi.MinhajFiSharhMuslim.JK000137-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0676Nawawi/MinhajFiSharhMuslim/MinhajFiSharhMuslim.yml",
+        "quality_note": "PRIMARY_VERSION, CLEANED_VERSION; independent print collation not completed"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
+    },
+    {
+      "id": "ibn_aqil_sharh_alfiyya",
+      "title": "Sharḥ Ibn ʿAqīl ʿalā l-Alfiyya",
+      "title_ar": "شرح ابن عقيل على الألفية",
+      "author": "Ibn ʿAqīl",
+      "death_ah": 769,
+      "disciplines": [
+        "arabic",
+        "nahw",
+        "sarf"
+      ],
+      "madhhab": null,
+      "openiti": {
+        "book_uri": "SharhCalaAlfiyya",
+        "version_uri": "0769IbnCaqilBahaDinMisri.SharhCalaAlfiyya.JK001328-ara1",
+        "blob_sha": "fa0ffe20ef7529a74122fad6de70c063c19879e8",
+        "size_bytes": 971338,
+        "source_url": "https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0769IbnCaqilBahaDinMisri/SharhCalaAlfiyya/0769IbnCaqilBahaDinMisri.SharhCalaAlfiyya.JK001328-ara1",
+        "metadata_url": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0769IbnCaqilBahaDinMisri/SharhCalaAlfiyya/0769IbnCaqilBahaDinMisri.SharhCalaAlfiyya.JK001328-ara1.yml",
+        "source_page": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0769IbnCaqilBahaDinMisri/SharhCalaAlfiyya/0769IbnCaqilBahaDinMisri.SharhCalaAlfiyya.JK001328-ara1",
+        "work_metadata": "https://github.com/OpenITI/RELEASE/blob/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/data/0769IbnCaqilBahaDinMisri/SharhCalaAlfiyya/SharhCalaAlfiyya.yml",
+        "quality_note": "PRIMARY_VERSION, CLEANED_VERSION; printed-edition collation not completed"
+      },
+      "local_text": null,
+      "verification": {
+        "file_exists": true,
+        "version_metadata_reviewed": true,
+        "content_collated_against_print": false,
+        "critical_edition": false
+      }
     }
   ],
   "mirror_integrity": {
@@ -856,5 +917,57 @@
       "jurjani_asrar"
     ],
     "checked": "2026-11-07"
-  }
+  },
+  "relationships": [
+    {
+      "id": "COR_R01",
+      "source": "muslim_sahih",
+      "target": "nawawi_sharh_muslim",
+      "type": "commentary",
+      "confidence": "documented bibliography",
+      "label": "Arabic commentary on Ṣaḥīḥ Muslim",
+      "evidence": "al-Nawawī's al-Minhāj is an explicit commentary on Ṣaḥīḥ Muslim; this does not authenticate every report or align edition-independent numbers.",
+      "source_url": "https://islam.museum/en/work/al-minhaj-sharh-sahih-muslim/"
+    },
+    {
+      "id": "COR_R02",
+      "source": "ibn_malik_alfiyya",
+      "target": "ibn_aqil_sharh_alfiyya",
+      "type": "commentary",
+      "confidence": "documented printed witness",
+      "label": "Commentary on the Alfiyya",
+      "evidence": "The Qatar Digital Library identifies the 1885 printed Sharḥ Ibn ʿAqīl as a commentary on Ibn Mālik's Alfiyya.",
+      "source_url": "https://qdl.qa/archive/qnlhc/12960"
+    },
+    {
+      "id": "COR_R03",
+      "source": "sakkaki_miftah",
+      "target": "qazwini_talkhis",
+      "type": "abridgment",
+      "confidence": "documented manuscript catalogue",
+      "label": "Abridgment of the rhetoric section (part III)",
+      "evidence": "The Princeton manuscript catalogue explicitly identifies al-Qazwīnī's Talkhīṣ as an abridgment of the third part of al-Sakkākī's Miftāḥ, not of the entire work.",
+      "source_url": "https://digital-collections.princeton.edu/i/%D8%AA%D9%84%D8%AE%D9%8A%D8%B5-%D8%A7%D9%84%D9%85%D9%81%D8%AA%D8%A7%D8%AD/item/cb53846f-2364-4529-be04-5fa073bff697/viewer/12"
+    },
+    {
+      "id": "COR_R04",
+      "source": "qazwini_talkhis",
+      "target": "qazwini_idah",
+      "type": "author_expansion",
+      "confidence": "documented manuscript catalogue",
+      "label": "Author's explanatory expansion",
+      "evidence": "Princeton's catalogue identifies al-Īḍāḥ as based on al-Qazwīnī's own Talkhīṣ, in the manner of a commentary, with material from al-Sakkākī and al-Jurjānī.",
+      "source_url": "https://digital-collections.princeton.edu/i/%D8%A7%D9%84%D8%A7%D9%8A%D8%B6%D8%A7%D8%AD-%D8%A7%D9%84%D8%AE/item/caee4c37-1806-4b1a-b7f3-33f4367cbf99"
+    },
+    {
+      "id": "COR_R05",
+      "source": "qazwini_talkhis",
+      "target": "taftazani_mukhtasar",
+      "type": "commentary",
+      "confidence": "documented printed catalogue",
+      "label": "Short commentary on the Talkhīṣ",
+      "evidence": "The IRCICA catalogue identifies Taftāzānī's Mukhtaṣar al-maʿānī as a commentary on al-Qazwīnī's Talkhīṣ al-Miftāḥ.",
+      "source_url": "https://elibrary.ircica.org/Biblio/Detail/865"
+    }
+  ]
 }
