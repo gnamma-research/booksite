@@ -1,0 +1,445 @@
+{
+  "schema": 1,
+  "updated": "2026-11-07",
+  "purpose": "Additional comparative glossary and textual witnesses for the Nihāyat al-Ḥikma reader. Does not modify the authorial Arabic or the translation.",
+  "glossary": [
+    {
+      "term": "ʿaql bi-l-fiʿl",
+      "arabic": "عقل بالفعل",
+      "english": "Actual intellect",
+      "definition": "The intellect in actuality as possessing intelligible contents, distinguished from initial receptivity or mere potentiality.",
+      "passageId": "N-XI-06",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=306&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "dawr",
+      "arabic": "دور",
+      "english": "Causal circularity",
+      "definition": "Dependence of a cause upon its own effect through a reciprocal causal sequence, not merely reciprocal logical implication.",
+      "passageId": "N-VIII-05",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=216&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "bi-sharṭ lā",
+      "arabic": "بشرط لا",
+      "english": "Conditioned by exclusion",
+      "definition": "Quiddity considered excluding an accompanying determination; central to certain discussions of genus, differentia, and form.",
+      "passageId": "N-V-02",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=92&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "bi-sharṭ shayʾ",
+      "arabic": "بشرط شيء",
+      "english": "Conditioned by something",
+      "definition": "Quiddity considered together with a positive determination, such as humanity with the features of an individual.",
+      "passageId": "N-V-02",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=92&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "tanāquḍ",
+      "arabic": "تناقض",
+      "english": "Contradiction",
+      "definition": "The opposition of a proposition and its negation under the same respect, without an intermediate truth value in the classical account.",
+      "passageId": "N-VII-06",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=189&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "taḍādd",
+      "arabic": "تضاد",
+      "english": "Contrariety",
+      "definition": "Opposition between contrary positive characteristics within one field; unlike contradiction, contraries may admit an intermediate.",
+      "passageId": "N-VII-09",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=194&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "ṣūra jismiyya",
+      "arabic": "صورة جسمية",
+      "english": "Corporeal form",
+      "definition": "The substantial form by which a material composite has three-dimensional extension in the author's analysis.",
+      "passageId": "N-VI-06",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=130&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "taḍāyuf",
+      "arabic": "تضايف",
+      "english": "Correlation",
+      "definition": "Opposition between correlative terms such as parent/child or above/below, where the meaning of each includes reference to the other.",
+      "passageId": "N-VII-08",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=193&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "taʿayyun",
+      "arabic": "تعين",
+      "english": "Determination",
+      "definition": "Specification or determination of an existent. In discussions of existence, determination by degree must be distinguished from determination by a quiddity.",
+      "passageId": "N-I-03",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=23&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "faṣl",
+      "arabic": "فصل",
+      "english": "Differentia",
+      "definition": "The essential determination distinguishing a species within a genus; distinguish this from a proprium that merely accompanies it.",
+      "passageId": "N-V-05",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=99&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "tamāyuz",
+      "arabic": "تمايز",
+      "english": "Distinction",
+      "definition": "The determination of one item as other than another; what grounds the distinction depends on whether the discussion concerns concepts, quiddities, or concrete existents.",
+      "passageId": "N-I-02",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=14&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "ʿilla fāʿiliyya",
+      "arabic": "علة فاعلية",
+      "english": "Efficient cause",
+      "definition": "That which brings an effect into existence, with distinctions between complete and incomplete or preparatory forms of agency.",
+      "passageId": "N-VIII-06",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=221&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "thubūt",
+      "arabic": "ثبوت",
+      "english": "Establishment; subsistence",
+      "definition": "A context-sensitive term for a thing's being established or obtaining. It must not automatically be identified with external existence in debates about non-existent things.",
+      "passageId": "N-I-02",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=14&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "wujūd li-ghayrihi",
+      "arabic": "وجود لغيره",
+      "english": "Existence for another",
+      "definition": "An existent whose being, while actualising its own nature, also removes a privation from another, such as an accidental quality informing a subject.",
+      "passageId": "N-II-03",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=40&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "wujūd li-nafsihi",
+      "arabic": "وجود لنفسه",
+      "english": "Existence for itself",
+      "definition": "Existence that actualises its own essence without thereby constituting the accidental perfection of a different subject; not identical to necessary existence.",
+      "passageId": "N-II-03",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=40&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "wujūd khārijī",
+      "arabic": "وجود خارجي",
+      "english": "External existence",
+      "definition": "Existence outside the mind, where a thing's characteristic external effects obtain, contrasted with the existence of its intelligible form in cognition.",
+      "passageId": "N-III-01",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=45&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "ʿilla ghāʾiyya",
+      "arabic": "علة غائية",
+      "english": "Final cause",
+      "definition": "The end for whose sake an operation is undertaken or made intelligible; not restricted to conscious intention in the author's account.",
+      "passageId": "N-VIII-11",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=230&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "al-ʿaql al-awwal",
+      "arabic": "العقل الأول",
+      "english": "First intellect",
+      "definition": "The first separate intellectual effect in the emanative hierarchy of the author's philosophical account; not to be identified uncritically with the Necessary Existent.",
+      "passageId": "N-XII-20",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=380&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "ʿilla ṣūriyya",
+      "arabic": "علة صورية",
+      "english": "Formal cause",
+      "definition": "The determining substantial principle through which a material thing is the kind of thing that it is.",
+      "passageId": "N-VIII-14",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=244&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "jins",
+      "arabic": "جنس",
+      "english": "Genus",
+      "definition": "An essential universal shared by different species. A genus alone does not constitute a full essential definition.",
+      "passageId": "N-V-05",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=99&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "ʿālam al-mithāl",
+      "arabic": "عالم المثال",
+      "english": "Imaginal realm",
+      "definition": "An ontological level of imaginal forms described as distinct both from gross matter and from purely intellectual existence.",
+      "passageId": "N-X-02",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=282&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "wujūd mustaqill",
+      "arabic": "وجود مستقل",
+      "english": "Independent existence",
+      "definition": "Existence intelligible as a subject of predication on its own, in contrast to a linking existence; independence of signification is not unrestricted causal independence.",
+      "passageId": "N-II-01",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=37&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "tashakhkhuṣ",
+      "arabic": "تشخص",
+      "english": "Individuation",
+      "definition": "The actuality whereby something is this individual rather than another. Tabāṭabāʾī connects individuation ultimately with existence, not a mere aggregation of universal predicates.",
+      "passageId": "N-VII-02",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=182&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "tasalsul",
+      "arabic": "تسلسل",
+      "english": "Infinite regress",
+      "definition": "An unending sequence; its impossibility in the relevant demonstration concerns an existentially ordered chain of causes, not every infinite series.",
+      "passageId": "N-VIII-05",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=216&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "maʿqūl",
+      "arabic": "معقول",
+      "english": "Intelligible",
+      "definition": "What is grasped by intellect under an intelligible form; in intellectual self-presence, knower and intelligible are discussed as united.",
+      "passageId": "N-XI-02",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=298&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "imkān bi-l-dhāt",
+      "arabic": "إمكان بالذات",
+      "english": "Intrinsic contingency",
+      "definition": "A quiddity, considered in itself, does not require either its existence or its non-existence; this is not the same as physical dispositional potential.",
+      "passageId": "N-IV-02",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=63&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "ʿilla māddiyya",
+      "arabic": "علة مادية",
+      "english": "Material cause",
+      "definition": "The receptive material principle of a composite substance; not identical with the agent that imparts actuality.",
+      "passageId": "N-VIII-14",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=244&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "al-kullī al-ṭabīʿī",
+      "arabic": "الكلي الطبيعي",
+      "english": "Natural universal",
+      "definition": "The nature considered as a common essence without the mind's extra consideration of its universality as a logical predicate.",
+      "passageId": "N-V-02",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=92&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "wujūb al-wujūd",
+      "arabic": "وجوب الوجود",
+      "english": "Necessity of existence",
+      "definition": "Existence considered necessary rather than merely possible. The author sharply distinguishes necessity through another from intrinsic necessity.",
+      "passageId": "N-IV-03",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=66&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "wujūb bi-l-ghayr",
+      "arabic": "وجوب بالغير",
+      "english": "Necessity through another",
+      "definition": "Necessity following upon a sufficient cause, as distinct from necessary existence through the thing's own reality.",
+      "passageId": "N-IV-02",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=63&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "quwwa",
+      "arabic": "قوة",
+      "english": "Potency",
+      "definition": "A real capacity for an actuality, especially in the analysis of temporal coming-to-be; distinguish from merely conceivable possibility.",
+      "passageId": "N-IX-01",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=250&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "aṣālat al-māhiyya",
+      "arabic": "أصالة الماهية",
+      "english": "Primacy of quiddity",
+      "definition": "The position opposed to the primacy of existence: quiddity, rather than existence, is taken as fundamental in external reality. It must not be confused with the trivial claim that things have quiddities.",
+      "passageId": "N-I-02",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=14&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "hayūlā",
+      "arabic": "هيولى",
+      "english": "Prime matter",
+      "definition": "The purely potential, indeterminate principle in material substance, not a free-standing physical stuff with its own actuality.",
+      "passageId": "N-V-06",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=103&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "kayf",
+      "arabic": "كيف",
+      "english": "Quality",
+      "definition": "An accidental category, including dispositions and qualities; not all uses of the ordinary word 'how' denote the technical category.",
+      "passageId": "N-VI-11",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=144&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "kamm",
+      "arabic": "كم",
+      "english": "Quantity",
+      "definition": "A category concerned with divisible magnitude or number, not to be confused with the relational category of place or position.",
+      "passageId": "N-VI-08",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=137&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "iḍāfa",
+      "arabic": "إضافة",
+      "english": "Relation",
+      "definition": "The accidental category ordered toward another. Distinguish it from the existential dependency that constitutes the effect as related to its cause.",
+      "passageId": "N-VI-16",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=162&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "wujūb bi-l-qiyās",
+      "arabic": "وجوب بالقياس",
+      "english": "Relative necessity",
+      "definition": "Necessity considered in relation to another existent, particularly where correlatives imply one another, not a separate sufficient cause.",
+      "passageId": "N-IV-02",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=63&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "sukūn",
+      "arabic": "سكون",
+      "english": "Rest",
+      "definition": "The absence of motion in a subject capable of moving, rather than absolute immutability without regard to motion.",
+      "passageId": "N-IX-13",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=273&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "iʿādat al-maʿdūm",
+      "arabic": "إعادة المعدوم",
+      "english": "Restoration of a non-existent",
+      "definition": "The disputed possibility that numerically the same thing, after wholly ceasing to exist, could return. This is different from survival or transformation.",
+      "passageId": "N-I-05",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=30&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "nafs",
+      "arabic": "نفس",
+      "english": "Soul",
+      "definition": "An immaterial principle in its essence but connected with the body in its operation; its precise status differs from a wholly separate intellect.",
+      "passageId": "N-XI-01",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=293&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "nawʿ",
+      "arabic": "نوع",
+      "english": "Species",
+      "definition": "A complete specific nature resulting from the appropriate essential determination of a genus.",
+      "passageId": "N-V-07",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=107&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "ḥaraka jawhariyya",
+      "arabic": "حركة جوهرية",
+      "english": "Substantial motion",
+      "definition": "Change in substantial existence itself, not merely in its quantity, quality, or spatial location; central to the Sadrāian framework.",
+      "passageId": "N-IX-08",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=261&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "ḥaqīqat al-wujūd",
+      "arabic": "حقيقة الوجود",
+      "english": "The reality of existence",
+      "definition": "Existence considered as a reality, not merely the common concept signified by the word 'existence'. The distinction is indispensable for interpreting gradation.",
+      "passageId": "N-I-03",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=23&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "shayʾiyya",
+      "arabic": "شيئية",
+      "english": "Thingness",
+      "definition": "The status of being a thing; the author argues that genuine thingness is coextensive with existence, rejecting a positive intermediate status for non-existents.",
+      "passageId": "N-I-04",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=28&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "zamān",
+      "arabic": "زمان",
+      "english": "Time",
+      "definition": "The measure of motion in the author's analysis, linked to the successive renewal and division of material existence.",
+      "passageId": "N-IX-11",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=268&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "waḥda ḥaqqa",
+      "arabic": "وحدة حقة",
+      "english": "True unity",
+      "definition": "The unity ascribed to pure necessary existence: not numerical oneness that admits another member of the same order.",
+      "passageId": "N-VII-02",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=182&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    },
+    {
+      "term": "lā bi-sharṭ",
+      "arabic": "لا بشرط",
+      "english": "Without condition",
+      "definition": "A way of considering quiddity without stipulating either the presence or the absence of a further determination; variants of this consideration must be distinguished.",
+      "passageId": "N-V-02",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=92&type=c_fbook",
+      "editorialOrigin": "Comparative terminology, prepared as an additional gloss from the Bidāya reader; not a statement by the author of Nihāya."
+    }
+  ],
+  "sources": [
+    {
+      "id": "zarai-1428-vol1",
+      "title": "Nihāyat al-Ḥikma, vol. 1 — revised 1428 AH edition, editor ʿAbbās ʿAlī al-Zāriʿī al-Sabzawārī",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&type=c_fbook",
+      "description": "Secondary collation witness only (vol. 1, 283 pp., 4th edition, Islamic Publishing Institution). The editor describes correcting previously overlooked textual errors and adding explanatory and critical notes; those notes are not silently imported into the authorial text."
+    },
+    {
+      "id": "zarai-1428-vol2",
+      "title": "Nihāyat al-Ḥikma, vol. 2 — revised 1428 AH edition, editor ʿAbbās ʿAlī al-Zāriʿī al-Sabzawārī",
+      "url": "https://lib.rafed.net/view.php?b_id=3109&type=c_fbook",
+      "description": "Secondary collation witness only (vol. 2, 336 pp., 4th edition). Its pagination and critical notes differ from the existing Qum 1417 transcription and are not the reader’s current page locators."
+    }
+  ],
+  "statusNote": "The presence of a corrected editorial witness does not mean the entire authorial Arabic has been collated against it; variants require documented individual decisions."
+}
