@@ -316,6 +316,80 @@
         '<div class="ia-response-register">'+cards+'</div><p class="ia-small">The Ishārāt antecedent links to Avicenna and the second input to al-Muḥākamāt are contextual, not additional responses to Fakhr al-Dīn. The register is selective, not an exhaustive list of historical replies.</p>';
       visibleNodes=[...raziRouteMembers].map(id=>N.get(id)).filter(Boolean);visibleEdges=es;updateCounts();
     }
+
+    // A real document-network layout, deliberately independent of chronological geometry.
+    // Nodes and arrows are shared canonical records; opening a link shows its actual sources.
+    function drawTextNetwork(){
+      const route=textualById.get(state.textFamily);
+      const center=state.selected&&N.has(state.selected)?state.selected:null;
+      if(!route&&!center){
+        q('[data-main]').innerHTML='<div class="ia-main-head"><div><h2>Text network</h2><span class="ia-small">Choose a named text family to see its commentary and response graph.</span></div></div>'+
+          '<p class="ia-explore-note">The historical timeline is designed for chronology; this view arranges source-backed textual relationships as a connected diagram. It does not fabricate relations or manuscript dates.</p>'+
+          '<button type="button" data-action="open-explore" class="ia-primary">Explore textual families</button>';
+        visibleNodes=[];visibleEdges=[];updateCounts();return;
+      }
+      const rootId=route?route.root:center;
+      const allIds=route?route.member_ids:[...neighborhood(center,1)];
+      const ids=new Set(allIds.filter(id=>N.has(id)&&(!state.familyCriticalOnly||criticalFamilyMembers.get(state.textFamily)?.has(id))));
+      ids.add(rootId);
+      const nodes=[...ids].map(id=>N.get(id)).filter(Boolean);
+      const edges=D.edges.filter(e=>ids.has(e.source)&&ids.has(e.target)&&allowedEdge(e));
+      const byId=new Map(nodes.map(n=>[n.id,n]));
+      const depth=new Map([[rootId,0]]);
+      const queue=[rootId];
+      for(let i=0;i<queue.length;i++){
+        const current=queue[i],d=depth.get(current);
+        if(d>=6)continue;
+        for(const e of edges)if(e.source===current&&!depth.has(e.target)){depth.set(e.target,d+1);queue.push(e.target)}
+      }
+      // Unconnected or uncertain branches remain visible but are NOT given invented edges.
+      for(const n of nodes)if(!depth.has(n.id))depth.set(n.id,1);
+      const groups=[];
+      for(const n of nodes){const d=depth.get(n.id);(groups[d]||(groups[d]=[])).push(n)}
+      for(const g of groups)if(g)g.sort((a,b)=>(temporal(a).anchor??9999)-(temporal(b).anchor??9999)||a.title.localeCompare(b.title));
+      const maxRows=Math.max(1,...groups.map(g=>(g||[]).length));
+      const mobile=window.matchMedia('(max-width:700px)').matches;
+      const cw=mobile?173:197,ch=mobile?70:72,gapX=mobile?70:90,gapY=mobile?14:17,pad=24;
+      const width=Math.max(320,pad*2+groups.length*cw+(groups.length-1)*gapX);
+      const height=Math.max(220,pad*2+maxRows*(ch+gapY)+18);
+      const positions=new Map();
+      groups.forEach((g,d)=>{if(!g)return;const offset=((maxRows-g.length)*(ch+gapY))/2;g.forEach((n,i)=>positions.set(n.id,{x:pad+d*(cw+gapX),y:pad+offset+i*(ch+gapY)}))});
+      const kinds={commentary:'Commentary',critique:'Critical engagement',gloss:'Gloss',textual_use:'Textual use',translation_adaptation:'Adaptation',reported_source:'Source testimony'};
+      const arrows=edges.map(e=>{
+        const a=positions.get(e.source),b=positions.get(e.target);if(!a||!b)return '';
+        const forward=b.x>a.x,dx=forward?Math.max(35,(b.x-(a.x+cw))/2):35;
+        const sx=a.x+cw,sy=a.y+ch/2,tx=b.x,ty=b.y+ch/2;
+        const d=forward?'M '+sx+' '+sy+' C '+(sx+dx)+' '+sy+', '+(tx-dx)+' '+ty+', '+tx+' '+ty:
+          'M '+(a.x+cw/2)+' '+(a.y+ch)+' C '+(a.x+cw/2)+' '+(a.y+ch+27)+', '+(b.x+cw/2)+' '+(b.y-27)+', '+(b.x+cw/2)+' '+b.y;
+        const weakEdge=weak.has(e.confidence)||e.relation==='hypothesis'||e.relation==='broad_influence';
+        const cls='ia-network-edge'+(e.relation==='critique'?' ia-network-critique':'')+(weakEdge?' ia-network-weak':'');
+        const label=(kinds[e.relation]||e.relation)+' · '+N.get(e.source).title+' → '+N.get(e.target).title+' · '+e.confidence;
+        return '<a href="#edge='+esc(e.id)+'" data-edge="'+esc(e.id)+'" aria-label="'+esc(label)+'"><title>'+esc(label)+'</title>'+
+          '<path class="'+cls+'" d="'+d+'" marker-end="url(#'+(e.relation==='critique'?'ia-nw-critique':'ia-nw-arrow')+')"/><path class="ia-network-edge-hit" d="'+d+'"/></a>';
+      }).join('');
+      const boxes=nodes.map(n=>{
+        const p=positions.get(n.id),root=n.id===rootId,selected=n.id===state.selected;
+        const label=n.title+' · '+n.author+' · '+n.date_label;
+        return '<a href="#work='+esc(n.id)+'" data-work="'+esc(n.id)+'" class="ia-network-node'+(root?' is-root':'')+(selected?' is-selected':'')+'" aria-label="'+esc(label)+'"><title>'+esc(label)+'</title>'+
+          '<rect x="'+p.x+'" y="'+p.y+'" width="'+cw+'" height="'+ch+'" rx="8"/>'+
+          '<text x="'+(p.x+11)+'" y="'+(p.y+19)+'" font-weight="650">'+esc(truncate(n.title,mobile?25:30))+'</text>'+
+          '<text class="ia-network-node-sub" x="'+(p.x+11)+'" y="'+(p.y+38)+'">'+esc(truncate(n.author,mobile?26:31))+'</text>'+
+          '<text class="ia-network-node-sub" x="'+(p.x+11)+'" y="'+(p.y+56)+'">'+esc(truncate(n.date_label||'Undated',mobile?28:33))+'</text></a>';
+      }).join('');
+      const title=route?route.label:N.get(rootId).title;
+      const caption=route?'Named textual family · shared canonical work IDs':'One-work neighborhood · select a family for an extended network';
+      q('[data-main]').innerHTML=
+        '<div class="ia-main-head"><div><h2>'+esc(title)+'</h2><span class="ia-small">'+esc(caption)+'</span></div>'+
+        '<div class="ia-actions"><button type="button" data-view="timeline">Timeline</button><button type="button" data-action="open-explore">Other families</button></div></div>'+
+        '<div class="ia-network-legend"><span><b></b> Textual relation</span><span class="is-critical"><b></b> Critique / adjudication</span><span class="is-uncertain"><b></b> Qualified evidence</span></div>'+
+        '<div class="ia-network-scroll" tabindex="0" role="region" aria-label="Scrollable text and commentary relationship network">'+
+        '<svg xmlns="http://www.w3.org/2000/svg" width="'+width+'" height="'+height+'" viewBox="0 0 '+width+' '+height+'" role="img" aria-label="'+esc(title)+' textual network">'+
+        '<defs><marker id="ia-nw-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9Z" fill="var(--ia-link)"/></marker>'+
+        '<marker id="ia-nw-critique" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9Z" fill="var(--ia-bad)"/></marker></defs>'+
+        arrows+boxes+'</svg></div>'+
+        '<p class="ia-network-help">Swipe or scroll to follow the branches. Tap a work to inspect its record, or an arrow for dated and source-qualified relationship evidence. Layout position shows a textual route, never a composition date. '+(nodes.length-edges.length>1?'Some catalogue works lack a documented connection within this view.':'')+'</p>';
+      visibleNodes=nodes;visibleEdges=edges;updateCounts();
+    }
     function drawRelations(){if(state.responseRoute)return drawRaziRelations();const id=state.selected||'jurjani_mawaqif',n=N.get(id)||D.nodes[0],incoming=D.edges.filter(e=>allowedEdge(e)&&e.target===n.id),outgoing=D.edges.filter(e=>allowedEdge(e)&&e.source===n.id);q('[data-main]').innerHTML=`<div class="ia-main-head"><div><h2>Sources and later reception</h2><span class="ia-small">One textual relationship at a time · ${esc(n.title)}</span></div><div class="ia-actions"><button type="button" data-work="${esc(n.id)}">Open selected record</button><button type="button" data-action="all-relations">All ${D.edges.length} relationships</button></div></div><div class="ia-reception"><section><h3>Sources / antecedents (${incoming.length})</h3>${incoming.map(e=>networkCard(N.get(e.source),e)).join('')||'<p class="ia-small">No incoming relationship is asserted here.</p>'}</section><section><h3>Selected work</h3>${networkCard(n,null,true)}<p class="ia-small">An arrow records the stated relation; it does not establish agreement or a complete genealogy.</p></section><section><h3>Later reception (${outgoing.length})</h3>${outgoing.map(e=>networkCard(N.get(e.target),e)).join('')||'<p class="ia-small">No outgoing relationship is asserted here.</p>'}</section></div>`;visibleNodes=[n,...incoming.map(e=>N.get(e.source)),...outgoing.map(e=>N.get(e.target))];visibleEdges=[...incoming,...outgoing];updateCounts()}
     function drawCatalogue(){const ns=filteredNodes(false).sort((a,b)=>(temporal(a).anchor??9999)-(temporal(b).anchor??9999)||a.code.localeCompare(b.code)),size=35,pages=Math.max(1,Math.ceil(ns.length/size));state.page=Math.min(state.page,pages);const rows=ns.slice((state.page-1)*size,state.page*size);q('[data-main]').innerHTML=`<div class="ia-main-head"><div><h2>Work catalogue</h2><span class="ia-small">${ns.length} matching entries · This view includes entries outside the timeline window.</span></div></div><div class="ia-table-wrap"><table><thead><tr><th>Work and author</th><th>Date as recorded</th><th>Reception family</th><th>Form / region</th></tr></thead><tbody>${rows.map(n=>`<tr><td><button type="button" class="ia-table-title" data-work="${esc(n.id)}">${esc(n.code+' · '+n.title)}</button><div class="ia-table-meta">${esc(n.author)} · ${esc(n.author_dates)}</div>${n.title_ar?`<div class="ia-table-meta" lang="ar">${esc(n.title_ar)}</div>`:''}</td><td>${esc(n.date_label)}<div class="ia-table-meta">${esc(n.date_status)}</div></td><td><span class="ia-swatch" style="--ia-series:${color(n)}"></span> ${esc(family(n)[0])}<div class="ia-table-meta">${esc(family(n)[1])}</div></td><td>${esc(n.kind)}<div class="ia-table-meta">${esc(n.region)}</div></td></tr>`).join('')}</tbody></table></div><div class="ia-pagination"><button type="button" data-action="previous-page" ${state.page===1?'disabled':''}>Previous</button><span>${state.page} / ${pages}</span><button type="button" data-action="next-page" ${state.page===pages?'disabled':''}>Next</button></div>`;visibleNodes=rows;visibleEdges=[];updateCounts()}
     function drawAudit(){let html='';const tab=state.auditTab;const tabs=[['critical','Critical audit'],['notes','Method & notes'],['relations','Relationship register'],['sources','Bibliography'],['history','Historical context'],['prior','Earlier arrows']];if(tab==='critical')html=(D.audit||[]).map(a=>`<article class="ia-audit-item"><h3>${esc(a.title||a.issue)}</h3><span class="ia-small">${esc(a.action||a.verdict||'')}</span><p>${esc(a.text||a.explanation||'')}</p>${sourceButtons(a.sources)}</article>`).join('');if(tab==='notes')html=[...(D.notes||[]),...(history.method_notes||[]).map((n,i)=>typeof n==='string'?{title:'Historical context '+(i+1),text:n}:n)].map(n=>`<article class="ia-audit-item"><h3>${esc(n.title||'Method note')}</h3><p>${esc(n.text||n.note||'')}</p>${sourceButtons(n.sources)}</article>`).join('');if(tab==='notes'&&(D.contextual_relations||[]).length)html+=`<h3 style="margin-top:22px">Author-level and contextual reception notes</h3>`+(D.contextual_relations||[]).map(c=>`<article class="ia-audit-item"><h4>${esc(c.source_author)} → ${esc(N.get(c.target_work)?.title||c.target_work)}</h4><p>${esc(c.evidence)}</p><span class="ia-small">${esc(c.relation)} · ${esc(c.confidence)}</span>${sourceButtons(c.sources)}</article>`).join('');if(tab==='sources')html=sourceHTML(sourceList.filter(s=>!state.q||norm([s.title,s.author,s.id,s.note].join(' ')).includes(norm(state.q))).map(s=>s.id));if(tab==='relations'){const es=D.edges.filter(e=>allowedEdge(e)&&(!state.q||norm([e.id,e.label,e.evidence,N.get(e.source).title,N.get(e.target).title].join(' ')).includes(norm(state.q))));html=`<p class="ia-small" style="margin-top:16px">${es.length} relationships shown; ${D.edges.length} retained in the register. Select an ID for evidence.</p><div class="ia-table-wrap"><table><thead><tr><th>ID / type</th><th>Source</th><th>Recipient</th><th>Evidence status</th></tr></thead><tbody>${es.map(e=>`<tr><td><button type="button" data-edge="${esc(e.id)}">${esc(edgeCode(e))}</button><div class="ia-table-meta">${esc((rels[e.relation]||['',e.relation])[1])}</div></td><td><button type="button" data-work="${esc(e.source)}">${esc(N.get(e.source).title)}</button></td><td><button type="button" data-work="${esc(e.target)}">${esc(N.get(e.target).title)}</button></td><td>${esc(e.confidence)}<div class="ia-table-meta">${esc(e.evidence_kind||'')}</div></td></tr>`).join('')}</tbody></table></div>`}if(tab==='history')html=`<p class="ia-small" style="margin-top:16px">${historical.length} sourced context records. Period overlap is not an influence claim.</p><div class="ia-table-wrap"><table><thead><tr><th>Political period or event</th><th>Dates and scope</th><th>Region / role</th></tr></thead><tbody>${historical.filter(h=>!state.q||norm([h.label,h.region,h.note,h.role].join(' ')).includes(norm(state.q))).map(h=>`<tr><td><button type="button" class="ia-table-title" data-history="${esc(h.id)}">${esc(h.label)}</button><div class="ia-table-meta">${esc(h.kind.replaceAll('_',' '))}</div></td><td>${esc(h.date_label)}<div class="ia-table-meta">${esc(h.confidence||'')}</div></td><td>${esc(h.region||'')}<div class="ia-table-meta">${esc(h.role||'')}</div></td></tr>`).join('')}</tbody></table></div>`;if(tab==='prior')html=(D.prior_edge_audit||[]).map(a=>`<article class="ia-audit-item"><h3>${esc(a.id)}</h3><p>${esc(N.get(a.source)?.title||a.source)} → ${esc(N.get(a.target)?.title||a.target)}</p><p>${esc(a.status)}</p>${E.has(a.id)?`<button type="button" data-edge="${esc(a.id)}">Current evidence</button>`:''}${sourceButtons(a.sources)}</article>`).join('');q('[data-main]').innerHTML=`<div class="ia-main-head"><div><h2>Evidence and editorial decisions</h2><span class="ia-small">Every relationship keeps its evidence, scope, confidence, and source references.</span></div></div><div class="ia-actions">${tabs.map(([key,label])=>`<button type="button" data-audit-tab="${key}" aria-pressed="${tab===key}">${label}</button>`).join('')}</div>${html}`;visibleNodes=[];visibleEdges=[];updateCounts()}
