@@ -339,3 +339,12 @@ body #kalam-timeline-app-v3 .ia-network-scroll a[data-edge]:focus-visible .ia-ne
   body #kalam-timeline-app-v3 .ia-main-head button[data-action="pan-forward"]{display:none}
   body #kalam-timeline-app-v3 .ia-main-head .ia-actions{gap:3px}
 }
+
+body #kalam-timeline-app-v3 .ia-explore-footer{margin-top:17px;padding-top:12px;border-top:1px solid var(--ia-line);display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+body #kalam-timeline-app-v3 .ia-explore-footer button{font-size:12px;min-height:34px}
+body #kalam-timeline-app-v3 .ia-explore-footer a{font-size:12px}
+@media(min-width:701px){body #kalam-timeline-app-v3 .ia-quick-controls .ia-quick-view{display:none}}
+@media(max-width:360px){
+ body #kalam-timeline-app-v3 .ia-quick-controls .ia-quick-view{font-size:0}
+ body #kalam-timeline-app-v3 .ia-quick-controls .ia-quick-view select{max-width:117px}
+}
