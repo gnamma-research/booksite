@@ -1,0 +1,44 @@
+name: GNAMMA OpenITI expansion corpus survey
+on:
+  push:
+    branches: [feature/expanded-fiqh-usul-arabic-bibliography-20261107]
+    paths:
+      - '.github/workflows/gnamma-expansion-survey.yml'
+      - 'research/intellectual-atlas/corpora/build_expansion.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  metadata-survey:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download official pinned OpenITI metadata and inspect schema
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, io, json, urllib.request,collections
+          url='https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/metadata/OpenITI_metadata_2025-1-9.tsv'
+          with urllib.request.urlopen(url,timeout=90) as r:
+              raw=r.read()
+          print('OFFICIAL TSV BYTES',len(raw),flush=True)
+          text=raw.decode('utf-8-sig')
+          reader=csv.DictReader(io.StringIO(text),delimiter='\t')
+          print('COLUMNS',json.dumps(reader.fieldnames,ensure_ascii=False),flush=True)
+          rows=list(reader)
+          print('TOTAL',len(rows),flush=True)
+          for row in rows[:3]:print('ROW',json.dumps(row,ensure_ascii=False)[:1900],flush=True)
+          for term in ['fiqh','usul','nahw','sarf','balagha','grammar','الفروع','النحو','البلاغة','أصول الفقه','حاشية','شرح','حنفي','شافعي']:
+              found=[x for x in rows if term.lower() in ' '.join(str(v) for v in x.values()).lower()]
+              print('TERM',term,len(found),'SAMPLE',json.dumps(found[:2],ensure_ascii=False)[:1600],flush=True)
+          print('STATUS',collections.Counter(x.get('status','') for x in rows).most_common(12),flush=True)
+          with open('/tmp/gnamma-survey.json','w') as f:json.dump({'columns':reader.fieldnames,'count':len(rows),'samples':rows[:20]},f,ensure_ascii=False,indent=2)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gnamma-openiti-schema-survey
+          path: /tmp/gnamma-survey.json
