@@ -19,13 +19,24 @@ The counts in the main-commentary rows refer to **32 source units each**, *not* 
 
 Each line in a JSONL map has the original text fragment, an English *candidate* fragment, source-section identifier, and potential logical-marker review cues. **reviewStatus = machine-aligned—semantic equivalence not certified** must not be relabelled as verified until a human has read the corresponding Arabic and English with the source.
 
-## Manual review completed in this pass
+## Clause-by-clause verification checkpoint — 8 November 2026
 
-**148 / 3,377 candidate groups have been explicitly marked after Arabic–English reading:** 108 matn groups (QT-001–009 and thirteen additional doctrinally important matn lemmata), plus **all 40 concluding commentary groups**. The latter include fifteen manually reallocated literal glosses, with six groups explicitly carrying source-reading or interpretative uncertainty. The first nine matn lemmata include sixteen manually reallocated literal glosses correcting inaccuracies in the *machine alignment*, not independently proven inaccuracies in the already published complete English translation.
+**713 of 3,377** machine-proposed Arabic–English groups have been individually read at the working-text level and marked with `manualReviewStatus`; **2,664** remain without this level of inspection.
 
-**3,229** candidate groups remain to be individually certified against their Arabic and any independent textual witness. The 1,798 machine cue flags should be used for prioritization, never counted as translation errors. The published source Arabic has not been conjecturally rewritten by the clause-index pass.
+| Textual layer | Groups indexed | Groups inspected against Arabic |
+|---|---:|---:|
+| 61 original Qawāʿid matn lemmata | 483 | **108** |
+| 40 introductory commentary sections | 401 | **141** |
+| Main commentary SH-001–032 | 1,219 | **290** |
+| Main commentary SH-033–060 including connecting sections | 1,234 | **134** |
+| Six closing commentary sections | 40 | **40** |
+| **Total** | **3,377** | **713** |
 
-The manual record is embedded directly in each JSONL row under `manualReviewStatus`, `manualLiteralGloss`, `reviewNote` and `reviewDate`. For reviewed rows, a separate literal gloss may improve clause-level alignment without replacing the smoother published passage-level translation.
+Reviewed main commentary sections include SH-015, 017, 023, 028 and 030 (gradation; two modes of determination; possible existents; four primordial names and cognitive presence; divine knowledge), as well as SH-036-B, 040-B, 054, 058, 059 and 060 (imaginal existence; knowledge of particulars; intellect and unveiling; the two paths of inquiry, their conditions and qualifications). Reviews of selected matn and introduction units are marked in their respective JSONL maps. The entire six-section conclusion has been read in its 40 candidate groups.
+
+These records distinguish **approved passage-level meaning**, a more literal **clause-specific gloss**, and **unresolved source variants**. A machine-generated candidate fragment often drifts across adjacent clauses. The fact that a separate gloss is supplied does not, without a further argument, establish a mistranslation in the fluent continuous English. In particular, 1,798 algorithmic warning cues are not 1,798 errors.
+
+The available A/N printed-text transcriptions have been read where specified, but manuscript folios have **not** been collated. None of these 713 is certified as having independent manuscript agreement; QT-059's lost ancestral portion remains deferred. The **2,664** remaining groups should not be called manually verified.
 
 ## Clause-level editorial findings from direct comparison
 
