@@ -330,3 +330,12 @@ body #kalam-timeline-app-v3 .ia-network-legend .is-uncertain b{border-style:dash
   body #kalam-timeline-app-v3 .ia-network-scroll{max-height:min(72dvh,720px)}
   body #kalam-timeline-app-v3 .ia-layout.ia-has-detail .ia-sheet{position:fixed;left:0;right:0;bottom:0;top:auto;z-index:850;max-height:min(77dvh,850px);overflow:auto;border:1px solid var(--ia-line);border-radius:17px 17px 0 0;padding-bottom:env(safe-area-inset-bottom,0px);box-shadow:0 -8px 35px #0005}
 }
+
+body #kalam-timeline-app-v3 .ia-network-node:focus-visible rect,
+body #kalam-timeline-app-v3 .ia-network-node:hover rect{stroke:var(--ia-link);stroke-width:2.5}
+body #kalam-timeline-app-v3 .ia-network-scroll a[data-edge]:focus-visible .ia-network-edge{stroke-width:4}
+@media(max-width:700px), (max-height:550px) and (pointer:coarse){
+  body #kalam-timeline-app-v3 .ia-main-head button[data-action="pan-back"],
+  body #kalam-timeline-app-v3 .ia-main-head button[data-action="pan-forward"]{display:none}
+  body #kalam-timeline-app-v3 .ia-main-head .ia-actions{gap:3px}
+}
