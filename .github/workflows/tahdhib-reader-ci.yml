@@ -360,3 +360,4 @@ jobs:
           node tools/tahdhib/experience_qa.mjs
           node tools/tahdhib/daruri_shell_qa.mjs
           node tools/tahdhib/yazdi_layer_qa.mjs
+          node tools/tahdhib/hawashi_qa.mjs
