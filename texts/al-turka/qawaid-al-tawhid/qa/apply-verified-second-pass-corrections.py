@@ -17,6 +17,14 @@ NOTE=('At A p.260–262 the retained Arabic transcription reads النوم وا�
       'digital Arabic (sleep and lapses of attention), with hunger and satiety '
       'described as possible causes. The printed image and manuscripts have '
       'not been independently collated for a possible السهر variant.')
+OLD_NOTE=('The printed النوم والسهو is contextually related to the surrounding sleep/wakefulness pair; '
+          'the English follows that discussion. الانفعالية has الانتقالية as a reported alternative, '
+          'adopted here for the discursive movement.')
+NEW_NOTE=('The electronic Arabic reads النوم والسهو (sleep and inadvertence/lapses of attention), '
+          'not النوم والسهر (sleep and sleeplessness). The prior wakefulness rendering was erroneous. '
+          'Hunger and satiety are named as causes of these disturbances. الانفعالية / الانتقالية '
+          'is a separate reported variant in the account of discursive movement; it does not '
+          'justify reinterpreting السهو. No independent manuscript reading has been established.')
 def update(u):
     assert u['id']=='SH-058'
     if OLD in u['english']:
@@ -24,6 +32,8 @@ def update(u):
         u['english']=u['english'].replace(OLD,NEW)
     elif NEW not in u['english']:
         raise RuntimeError('Unexpected SH-058 translation — no blind edit')
+    if OLD_NOTE in u.get('notes',[]):
+        u['notes']=[NEW_NOTE if n==OLD_NOTE else n for n in u['notes']]
     if NOTE not in u.get('notes',[]):
         u.setdefault('notes',[]).append(NOTE)
     assert 'النوم و السهو' in u['arabic'] or 'النوم والسهو' in u['arabic'] if 'arabic' in u else True
