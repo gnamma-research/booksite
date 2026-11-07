@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en" data-theme="parchment">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Arabic–English clause comparison for Gnamma Qawaid al-Tawhid and Tamhid al-Qawaid: distinguishes manually reviewed clauses from automatic candidate alignments.">
+<title>Clause review · Qawāʿid / Tamhīd · GNAMMA</title>
+<link rel="icon" href="../../../assets/gnamma-mark.svg" type="image/svg+xml">
+<style>
+:root{color-scheme:light;--bg:#faf9f5;--paper:#fff;--ink:#24343d;--muted:#61747a;--line:#d7dfdf;--accent:#265c66;--highlight:#eef4f2;--good:#336e60}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#171f22;--paper:#222d31;--ink:#e6ecec;--muted:#a8babc;--line:#425258;--accent:#a0c4cf;--highlight:#273c3b;--good:#acd6c0}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Source Sans 3",sans-serif;font-size:14px;line-height:1.55}
+a{color:var(--accent)}button,input,select{font:inherit}button,select{cursor:pointer;color:var(--ink)}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+header.top{position:sticky;top:0;z-index:2;background:var(--bg);border-bottom:1px solid var(--line);padding:10px max(16px,calc((100vw - 1160px)/2));display:flex;align-items:center;justify-content:space-between;gap:12px}
+header.top strong{font-size:14px;letter-spacing:.025em}header.top small{display:block;font-size:11px;color:var(--muted)}.back{color:var(--accent);text-decoration:none;font-size:12px;white-space:nowrap}
+main{max-width:1180px;margin:0 auto;padding:24px 18px 110px}.eyebrow{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700}h1{font-family:Georgia,serif;font-size:clamp(28px,4vw,39px);font-weight:500;margin:5px 0 8px}h2{font-weight:600;font-size:18px;margin:0}p{margin:0 0 14px}.intro{max-width:900px;color:var(--muted)}
+.stats{display:flex;flex-wrap:wrap;gap:10px 24px;border-block:1px solid var(--line);padding:12px 0;margin:14px 0 18px;font-variant-numeric:tabular-nums}.stats strong{color:var(--ink)}.stats span{color:var(--muted)}
+.progress{height:5px;background:var(--line);border-radius:5px;overflow:hidden;margin-top:-11px;margin-bottom:22px}.progress div{height:100%;background:var(--accent);width:0;transition:width .25s}
+.toolbar{display:grid;grid-template-columns:minmax(0,1fr) minmax(140px,190px);gap:8px;padding:10px 0;align-items:center}.toolbar label{display:block;font-size:11px;color:var(--muted);font-weight:600;margin:0 0 4px}.toolbar select,.toolbar input{border:1px solid var(--line);background:var(--paper);border-radius:8px;padding:10px;width:100%;min-height:43px}
+.toolbar .wide{grid-column:1/-1}.toolbar .wide input{width:100%}.subbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:14px 0 12px}.source{color:var(--muted);font-size:12px}.meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.subbar button{border:1px solid var(--line);padding:7px 11px;border-radius:7px;background:var(--paper)}
+.passage{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:10px;scroll-margin-top:96px}
+.passage .arabic{border-right:1px solid var(--line);padding:17px 19px}.passage .english{padding:17px 19px}.arabic p{font:21px/1.9 "Noto Naskh Arabic","Amiri","Traditional Arabic",serif;text-align:right;direction:rtl;overflow-wrap:anywhere;margin:7px 0}.english p{font:16px/1.65 Georgia,serif;margin:7px 0;overflow-wrap:anywhere}
+.clabel{font-size:10px;letter-spacing:.08em;color:var(--muted);font-weight:700;text-transform:uppercase}.clabel a{text-decoration:none}.status{font-size:11px;display:inline-flex;gap:5px;align-items:center;margin:0 0 8px}.status.reviewed{color:var(--good)}.status.pending{color:var(--muted)}.gloss{background:var(--highlight);padding:9px 10px;border-radius:6px;margin-top:10px;font:14px/1.55 Georgia,serif}.gloss strong{font:700 10px system-ui;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:3px}.note{font:12px/1.5 system-ui;margin-top:10px;color:var(--muted);border-top:1px solid var(--line);padding-top:9px}.cues{color:var(--muted);font:11px system-ui;margin-top:10px}.empty{padding:30px;color:var(--muted);text-align:center;border:1px dashed var(--line);border-radius:10px}
+.warning{border-left:3px solid var(--accent);padding:9px 13px;background:var(--highlight);color:var(--ink);margin:18px 0;font-size:12px}.footer{color:var(--muted);font-size:12px;margin:20px 0}.footer a{margin-right:15px}
+@media(max-width:680px){main{padding:18px 12px 90px}.toolbar{grid-template-columns:1fr 1fr}.toolbar .section{grid-column:1/-1}header.top{padding:9px 12px}.passage{grid-template-columns:1fr}.passage .arabic{border-right:none;border-bottom:1px solid var(--line);padding:13px 15px}.passage .english{padding:12px 15px}.arabic p{font-size:20px}.english p{font-size:16px}h1{font-size:27px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.progress div{transition:none}}
+</style>
+</head>
+<body>
+<header class="top"><a href="./" class="back" aria-label="Back to Qawāʿid matn reader">← Matn &amp; Sharḥ</a><div><strong>GNAMMA · CLAUSE REVIEW</strong><small>Qawāʿid al-Tawḥīd / Tamhīd al-Qawāʿid</small></div><a href="commentary.html" class="back">Full commentary</a></header>
+<main>
+<div class="eyebrow">Scholarly editorial workspace · 8 November 2026</div>
+<h1>Arabic–English clause review</h1>
+<p class="intro">Compare each Arabic clause with its proposed English alignment and any independently prepared literal gloss. <strong>Manually reviewed</strong> means comparison against the project's available Arabic transcription; it does not mean manuscript collation. <strong>Not yet individually reviewed</strong> means the English is a machine-aligned candidate, not a missing translation.</p>
+<div class="stats" aria-live="polite"><span><strong id="n-all">—</strong> candidate groups</span><span><strong id="n-reviewed">—</strong> individually inspected</span><span><strong id="n-pending">—</strong> awaiting individual inspection</span><span><strong id="n-units">—</strong> text sections</span></div>
+<div class="progress" aria-label="Manually reviewed proportion"><div id="bar"></div></div>
+<div class="warning">The underlying 61 matn and 110 sharḥ units all have a complete working translation. Machine alignment can attach English words to an adjacent Arabic clause. A separate literal gloss corrects that local alignment but does not automatically imply the fluent translation was wrong. Source variants remain open, notably QT-059 and SH-058.</div>
+<div class="toolbar">
+<div class="section"><label for="unit">Text section</label><select id="unit" aria-label="Choose text section"><option>Loading…</option></select></div>
+<div><label for="filter">Review status</label><select id="filter"><option value="all">All clauses</option><option value="reviewed">Manually reviewed</option><option value="pending">Not yet reviewed</option><option value="gloss">With literal gloss</option><option value="notes">With editorial note</option></select></div>
+<div class="wide"><label for="query">Search within this section (Arabic or English)</label><input type="search" id="query" placeholder="e.g. الوجود، تعين، possibility, intellect…"></div>
+</div>
+<div class="subbar"><div><h2 id="section-title">Loading textual units…</h2><div class="source" id="source-locator"></div></div><div class="meta"><button type="button" id="copy-link">Copy section link</button><span id="visible-count" class="source"></span></div></div>
+<div id="clauses" role="region" aria-label="Arabic and English clause pairs"><div class="empty">Loading review records…</div></div>
+<div class="footer"><a href="editorial/CLAUSE_REVIEW_2026-11-08.md">Editorial methods &amp; findings</a><a href="editorial/COMMENTARY_TRANSLATION.md">Text sources and status</a><a href="qa/clause-map-matn.jsonl">Raw data · matn</a></div>
+</main>
+<script>
+(()=>{'use strict';
+const files=['matn','introduction','main_001_032','main_033_060','conclusion'].map(x=>'qa/clause-map-'+x+'.jsonl');
+const $=id=>document.getElementById(id);
+const all=[],byUnit=new Map();let activeUnit='',rows=[];
+const norm=x=>String(x||'').toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f\u064b-\u065f\u0670]/g,'').replace(/[أإآٱ]/g,'ا').replace(/ى/g,'ي');
+function elt(tag,classes,text){const a=document.createElement(tag);if(classes)a.className=classes;if(text!==undefined)a.textContent=String(text);return a}
+function span(tag,classes,text,parent){const t=elt(tag,classes,text);parent.append(t);return t}
+function description(id){if(id.startsWith('QT-'))return 'Qawāʿid matn · '+id;if(id.startsWith('SH-INTRO'))return 'Tamhīd introduction · '+id;return 'Tamhīd commentary · '+id}
+function displayUnit(){const q=$('unit').value;if(!byUnit.has(q))return;activeUnit=q;rows=byUnit.get(q);
+ $('section-title').textContent=description(q);$('source-locator').textContent=rows[0]?.source||'';
+ const key=location.hash.slice(1);if(key!==q && !key.startsWith(q+'-C'))history.replaceState(null,'','#'+encodeURIComponent(q));
+ render();
+}
+function render(){
+ const filter=$('filter').value,needle=norm($('query').value.trim());
+ const chosen=rows.filter(x=>{
+  if(filter==='reviewed'&&!x.manualReviewStatus)return false;
+  if(filter==='pending'&&x.manualReviewStatus)return false;
+  if(filter==='gloss'&&!x.manualLiteralGloss)return false;
+  if(filter==='notes'&&!x.reviewNote&&!x.unitReviewNote)return false;
+  return !needle||norm(x.arabic+' '+x.englishCandidate+' '+(x.manualLiteralGloss||'')+' '+(x.reviewNote||'')).includes(needle);
+ });
+ $('visible-count').textContent=chosen.length+' / '+rows.length+' clause groups';
+ const box=$('clauses');box.replaceChildren();
+ if(!chosen.length){box.append(elt('div','empty','No clause matches this filter in the selected section.'));return}
+ const fragment=document.createDocumentFragment();
+ for(const r of chosen){
+  const card=elt('article','passage');card.id=r.id;
+  const ar=elt('div','arabic'),en=elt('div','english');
+  const cl=elt('div','clabel');const a=elt('a','',r.id);a.href='#'+r.id;cl.append(a);ar.append(cl);
+  span('p','',r.arabic,ar).setAttribute('dir','rtl');
+  const status=elt('div','status '+(r.manualReviewStatus?'reviewed':'pending'),r.manualReviewStatus?'✓ Manually inspected':'○ Not yet individually reviewed');en.append(status);
+  span('div','clabel','English candidate alignment',en);
+  span('p','',r.englishCandidate,en);
+  if(r.manualLiteralGloss){const g=elt('div','gloss');span('strong','','Closer literal gloss',g);span('div','',r.manualLiteralGloss,g);en.append(g)}
+  if(r.reviewNote||r.unitReviewNote){span('div','note',[r.reviewNote,r.unitReviewNote].filter(Boolean).join(' '),en)}
+  if(r.flags?.length){span('div','cues','Automatic review cues: '+r.flags.join(' · ')+' (not proven errors)',en)}
+  card.append(ar,en);fragment.append(card);
+ }
+ box.append(fragment);
+ const wanted=decodeURIComponent(location.hash.slice(1));if(wanted.startsWith(activeUnit+'-C')){document.getElementById(wanted)?.scrollIntoView({block:'start'})}
+}
+function activateHash(){let wanted='';try{wanted=decodeURIComponent(location.hash.slice(1))}catch{}
+ const unit=byUnit.has(wanted)?wanted:all.find(r=>r.id===wanted)?.unit;
+ if(unit&&unit!==$('unit').value){$('unit').value=unit;displayUnit();return}
+ if(wanted&&wanted!==unit&&document.getElementById(wanted))document.getElementById(wanted).scrollIntoView({block:'start'});
+}
+async function begin(){
+ try{
+  const response=await Promise.all(files.map(async url=>{const r=await fetch(url,{cache:'no-cache'});if(!r.ok)throw Error(url+': HTTP '+r.status);return r.text()}));
+  for(const text of response)for(const line of text.trim().split('\n')){const r=JSON.parse(line);all.push(r);if(!byUnit.has(r.unit))byUnit.set(r.unit,[]);byUnit.get(r.unit).push(r)}
+  const reviewed=all.filter(r=>Boolean(r.manualReviewStatus)).length;
+  $('n-all').textContent=all.length.toLocaleString();$('n-reviewed').textContent=reviewed.toLocaleString();
+  $('n-pending').textContent=(all.length-reviewed).toLocaleString();$('n-units').textContent=byUnit.size;
+  $('bar').style.width=(100*reviewed/all.length).toFixed(1)+'%';
+  const select=$('unit');select.replaceChildren();
+  for(const unit of byUnit.keys()){const opt=elt('option','',description(unit));opt.value=unit;select.append(opt)}
+  select.value='QT-001';activateHash();if(!activeUnit)displayUnit();
+ }catch(error){$('clauses').replaceChildren(elt('div','empty','Unable to load review records: '+error.message+'. See the raw GitHub files linked below.'))}
+}
+$('unit').addEventListener('change',displayUnit);$('filter').addEventListener('change',render);$('query').addEventListener('input',render);window.addEventListener('hashchange',activateHash);
+$('copy-link').addEventListener('click',()=>{const link=location.href.split('#')[0]+'#'+encodeURIComponent(activeUnit);navigator.clipboard?.writeText(link).then(()=>$('copy-link').textContent='Copied',()=>$('copy-link').textContent='Copy unavailable')});
+begin();
+})();
+</script>
+</body></html>
