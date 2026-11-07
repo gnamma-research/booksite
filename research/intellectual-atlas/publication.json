@@ -55,11 +55,11 @@
   "discipline_nav": [
     "mapped works",
     "philosophy, kalām and logic",
-    "fiqh and uṣūl (planned)",
-    "hadith (planned)",
-    "tafsīr (planned)",
-    "taṣawwuf (selective mapped texts)",
-    "Arabic language sciences (planned)"
+    "fiqh and uṣūl (source tranche)",
+    "hadith (source tranche)",
+    "tafsīr (source tranche)",
+    "taṣawwuf (selective mapped texts and source tranche)",
+    "Arabic language sciences (source tranche)"
   ],
   "source_corpus": {
     "url": "corpora/",
