@@ -383,7 +383,7 @@
         '<div class="ia-actions"><button type="button" data-view="timeline">Timeline</button><button type="button" data-action="open-explore">Other families</button></div></div>'+
         '<div class="ia-network-legend"><span><b></b> Textual relation</span><span class="is-critical"><b></b> Critique / adjudication</span><span class="is-uncertain"><b></b> Qualified evidence</span></div>'+
         '<div class="ia-network-scroll" tabindex="0" role="region" aria-label="Scrollable text and commentary relationship network">'+
-        '<svg xmlns="http://www.w3.org/2000/svg" width="'+width+'" height="'+height+'" viewBox="0 0 '+width+' '+height+'" role="img" aria-label="'+esc(title)+' textual network">'+
+        '<svg xmlns="http://www.w3.org/2000/svg" width="'+width+'" height="'+height+'" viewBox="0 0 '+width+' '+height+'" role="group" aria-label="'+esc(title)+' textual network">'+
         '<defs><marker id="ia-nw-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9Z" fill="var(--ia-link)"/></marker>'+
         '<marker id="ia-nw-critique" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9Z" fill="var(--ia-bad)"/></marker></defs>'+
         arrows+boxes+'</svg></div>'+
