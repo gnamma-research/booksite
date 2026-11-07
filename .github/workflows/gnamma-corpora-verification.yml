@@ -1,0 +1,25 @@
+name: GNAMMA Arabic source-corpus integrity
+on:
+  push:
+    paths:
+      - 'research/intellectual-atlas/corpora/**'
+      - '.github/workflows/gnamma-corpora-verification.yml'
+  pull_request:
+    paths:
+      - 'research/intellectual-atlas/corpora/**'
+      - '.github/workflows/gnamma-corpora-verification.yml'
+  workflow_dispatch:
+
+jobs:
+  verify-corpus:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify recorded OpenITI source identities, byte-matched local mirrors and bibliography-backed edges
+        run: python research/intellectual-atlas/corpora/verify.py
