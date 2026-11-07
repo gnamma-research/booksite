@@ -56,6 +56,8 @@ async def wait_subject(page,mode=None):
           atlasState:document.querySelector('#kalam-timeline-app-v3')?.atlasTest?.state?.view,
           disciplinePresent:!!window.GNDisciplineAtlas,
           bibliographyPresent:!!window.GNAtlasBibliography,
+          bibliographyState:window.GNAtlasBibliography?.debug(),
+          resources:performance.getEntriesByType("resource").filter(x=>/bibliography|manuscript|registry|booksite|expanded/.test(x.name)).map(x=>({name:x.name.slice(-120),duration:Math.round(x.duration),transfer:x.transferSize})),
           canonicalPresent:!!window.GNCanonicalSynopsis,
           disciplineState:window.GNDisciplineAtlas?.debug(),
           mainText:document.querySelector('[data-main]')?.textContent?.slice(0,1300),
@@ -80,7 +82,10 @@ async def focus_source(page,source):
 
 async def test(page):
     errors=[]
-    page.on("pageerror",lambda e:errors.append(str(e)))
+    page.on("pageerror",lambda e:(errors.append(str(e)),print("PAGE_ERROR",str(e),flush=True)))
+    page.on("console",lambda m: print("BROWSER_CONSOLE",m.type,m.text[:1200],flush=True) if m.type in ("error","info","warning") and ("GNAMMA" in m.text or m.type=="error") else None)
+    page.on("response",lambda r: print("SOURCE_RESPONSE",r.status,r.url[-130:],flush=True) if "manuscript-full" in r.url or "expanded-bibliography.json" in r.url or "registry.json" in r.url else None)
+    page.on("requestfailed",lambda r: print("REQUEST_FAILED",r.url[-130:],r.failure,flush=True))
     r=await page.goto(ROOT+"#view=sources&science=fiqh&source_tab=texts&madhhab=all",wait_until="domcontentloaded",timeout=60000)
     check(r.status==200,"GNAMMA site cannot load")
     a=await wait_subject(page,"timeline")
