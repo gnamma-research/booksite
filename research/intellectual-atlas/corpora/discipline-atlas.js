@@ -27,7 +27,7 @@ const groupLabel=x=>SCHOOL[x]||GLOSS[x]||(x==="unassigned"?"Unassigned textual l
 const IS_LEGAL=g=>g==="fiqh"||g==="usul";
 const SOURCES=[["all","All cited records"],["openiti","OpenITI versions"],["alreq","Manuscript bibliography"],["reader","Pinned GNAMMA versions"]];
 const S={mode:"timeline",from:630,to:1920,lane:"",undated:false,page:1,book:"",edge:"",source:"all",scope:""};
-let ctx=null,genre="",works=[],reader=null,jurists=[],juristError="",juristRequest=null,lanes=[],filtered=[];
+let ctx=null,argsNow=null,apiNow=null,last={},lastUI={},genre="",works=[],reader=null,jurists=[],juristError="",juristRequest=null,lanes=[],filtered=[];
 function period(work){return work.death&&Number(work.death)>0?ce(work.death):null;}
 function getGenre(a){return a.science==="fiqh"?(a.tab==="method"?"usul":"fiqh"):a.science==="arabic"?a.tab:a.science;}
 function matchedJurist(w,a){
