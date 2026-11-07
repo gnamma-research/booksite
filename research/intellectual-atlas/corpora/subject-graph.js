@@ -251,7 +251,7 @@ function render(args,api){
  genre=gen(args);
  const key=genre+"|"+args.science+"|"+args.tab+"|"+args.school;
  if(!model.scope){readHash();model.scope=key;}
- else if(model.scope!==key){model.scope=key;model.group="";model.author="";model.book="";model.page=1;model.source="all";}
+ else if(model.scope!==key){const before=model.scope.split("|").slice(0,3).join("|"),now=key.split("|").slice(0,3).join("|");model.scope=key;model.group="";model.author="";model.book="";model.page=1;if(before!==now)model.source="all";}
  if(!authorities.length&&!earlyFetch&&!loadError){
   earlyFetch=fetch("corpora/early-jurists.json").then(r=>{
    if(!r.ok)throw Error("Historical authority source HTTP "+r.status);return r.json();
