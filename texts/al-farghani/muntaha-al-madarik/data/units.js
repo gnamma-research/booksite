@@ -300,5 +300,89 @@ window.FARGHANI_UNITS=[
     "compare": "This is a decisive test case against Thomistic participated esse and for the distinction between divine act and finite manifestation.",
     "sourceUrl": "https://ablibrary.net/book_content/b/9606/32?lang=ar",
     "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F026",
+    "page": 32,
+    "title": "The paradox of effective relations without independent existence",
+    "topic": "Existence",
+    "ar": "وهي أمور ونسب عدمية لا وجود لها في الخارج ولا نفسها، فانظر أثرا لمعدوم وإن كان عدميّته بنسبة ووجه ما في عين الوجود وفيما هو موجود من جميع الوجوه ترى العجب العجاب، ومحالا للعقول السليمة والألباب.",
+    "en": "These are privative matters and relations: they possess no existence externally or in themselves. Consider, then, the effect of what is nonexistent—although its nonexistence is only in a particular relation or respect—within existence itself and within that which is existent in every respect. You will behold astonishing wonders, things that seem impossible to sound intellects and minds.",
+    "note": "From the end of the paragraph on p. 32. The privative status belongs to differentiated relations and intelligible loci; it does not straightforwardly deny the reality of the effects. The conceptual distinction demands further collation and commentary.",
+    "compare": "Test how Farghānī accounts for the reality of effects through loci that lack independent external being; this must be compared with Guénonian possibility and Thomist secondary causality.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/32?lang=ar",
+    "scope": "selected clause from Arabic page, not a continuous page translation"
+  },
+  {
+    "id": "F027",
+    "page": 32,
+    "title": "The first determination cannot display differentiated perfection",
+    "topic": "Determination",
+    "ar": "فلا جرم لم تقبل إلا التجلّي الأول وإجمال الكمال الذاتي ووحدته ونفي الكثرة والتميّز والغيرية باندراج نسب الواحدية واعتباراتها فيه، ولم تكن قابلة لتجلّي قابل للكثرة، وإن كانت نسبية ولا لكمال أسمائي لازم لذلك التجلّي الذي هو نهاية المطلب فيه",
+    "en": "Consequently, it can receive only the first self-disclosure: the comprehensiveness and unity of essential perfection, with the exclusion of multiplicity, distinction, and otherness, since the relations and considerations of oneness remain included within it. It cannot receive a self-disclosure that admits multiplicity, even relational multiplicity, nor the name-related perfection that accompanies such a disclosure and constitutes its ultimate aim.",
+    "note": "A selected continuous clause in the paragraph beginning 'ثم اعلم' on p. 32. The incapacity of the first receptivity to exhibit articulated names motivates the subsequent account of the second determination.",
+    "compare": "Which Farghānian rank actually performs the function that Guénon assigns to Being as principle of manifestation? The first determination alone may not suffice.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/32?lang=ar",
+    "scope": "selected clause from Arabic page, not a continuous page translation"
+  },
+  {
+    "id": "F028",
+    "page": 33,
+    "title": "The second determination accommodates unity and plurality",
+    "topic": "Determination",
+    "ar": "وذلك التعيّن هو القابل الثاني الجامع بين طرفي حكم الإجمال والوحدة، ومقابلهما الذي هو التفصيل والكثرة لانتسابه إلى الواحدية ووقوعه في ثاني رتب تعيّناتها، فظهر وتجلّى في هذا التعين.",
+    "en": "That determination is the second receptivity: it comprehends the two sides of undifferentiated comprehensiveness and unity, together with their counterparts, articulation and multiplicity. Because it is related to oneness and occupies the second rank of its determinations, the self-disclosure appears and becomes manifest in this determination.",
+    "note": "Closing clause from the p. 33 paragraph on original love, longing, and the emergence of the second receptivity. The larger argument must be translated continuously before equating its 'necessity' to any Guénonian doctrine.",
+    "compare": "Crucial for differentiating the first principle of inclusive unity from the second rank in which explicit plurality and relational diversity become intelligible.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/33?lang=ar",
+    "scope": "selected clause from Arabic page, not a continuous page translation"
+  },
+  {
+    "id": "F029",
+    "page": 33,
+    "title": "Cosmic essences and divine names at the second rank",
+    "topic": "Possibility",
+    "ar": "وجميع هذه الحقائق الكونية والأسماء الإلهيّة صارت صورا وظلالا للشؤون والاعتبارات المندرجة في الواحدية مجملة وحدانية فيها في المرتبة الأولى، مفصّلة متيّزة في هذا التعين الثاني الذي هو المرتبة الثانية متعيّنة ثابتة فيها بعضها بصورة أصل وجنس، وبعضها بهيئة فرع ونوع أو شخص متفرّع من ذلك الأصل والجنس أو الفرع والنوع",
+    "en": "All these cosmic realities and divine names thus become forms and shadows of the affairs and considerations included in oneness: in the first rank they are comprehended within it undifferentiatedly and as one; in the second determination, which is the second rank, they are articulated, distinguished, determined, and established. Some are in the form of a principle or genus; others are branches, species, or individuals deriving from a principle and genus, or from a subordinate branch and species.",
+    "note": "The following words qualify their differences as obtaining in some respects but not others, while the encompassing divine knowledge remains one. This selected clause is part of a longer paragraph.",
+    "compare": "The appearance of genus/species/individual categories suggests a far more articulated account of known essences than a general appeal to Universal Possibility.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/33?lang=ar",
+    "scope": "selected clause from Arabic page, not a continuous page translation"
+  },
+  {
+    "id": "F030",
+    "page": 34,
+    "title": "The second determination as the rank of divinity",
+    "topic": "Names",
+    "ar": "ثم إن هذا التعيّن الثاني النفسي المذكور سمي بأسماء كثيرة بحسب اعتبارات ثابتة فيه مع توحد عينه، فباعتبار أنّه أصل ظهور التعيّنات ومنشأها ومنشأ جميع الكمالات المضافة إلى كل واحد منها وقبلة توجّهاتها ومرجعها بسبب ذلك، وأن التجلّي الثاني الظاهر به وفيه أيضا أصل جميع الأسماء الإلهيّة وكلها ومرجعها لذلك سمّي بمرتبة الألوهية",
+    "en": "This second determination, described by the analogy of breath, is called by many names according to the considerations established within it, although its reality remains one. Since it is the origin and source of the manifestation of determinations and all the perfections attributed to them, toward which they turn and to which they return—and since the second self-disclosure manifest through and within it is likewise the origin, totality, and return of the divine names—it is called the rank of divinity (ulūhiyya).",
+    "note": "Opening clause of a new section on p. 34. Multiple appellations describe one comprehensive determination according to distinct functions, not many independently existing principles.",
+    "compare": "Directly relevant to whether this rank resembles Guénon's Being or Schuon's principial/divine relativity. Do not simply equate terms.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/34?lang=ar",
+    "scope": "selected clause from Arabic page, not a continuous page translation"
+  },
+  {
+    "id": "F031",
+    "page": 34,
+    "title": "Relational divine plurality and real cosmic plurality",
+    "topic": "Names",
+    "ar": "وباعتبار ارتسام الكثرة النسبية المنسوبة إلى الأسماء الإلهية والكثرة الحقيقية المضافة إلى الكون وحقائقه فيه سمّي بحضرة الارتسام",
+    "en": "Insofar as the relational multiplicity attributed to the divine names and the real multiplicity attributed to the cosmos and its realities are inscribed within it, it is called the Presence of Inscription (ḥaḍrat al-irtisām).",
+    "note": "This sentence sharply contrasts the *relational* multiplicity of names with the *real* multiplicity of cosmic realities; that is an important check against a simplistic assertion that all multiplicity is only conceptual.",
+    "compare": "Can real cosmic plurality be fully explained in a scheme of numerically one wujūd? This is precisely where comparing Farghānī, Guénon and Schuon needs technical work.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/34?lang=ar",
+    "scope": "selected clause from Arabic page, not a continuous page translation"
+  },
+  {
+    "id": "F032",
+    "page": 34,
+    "title": "The rank of possibility between necessity and impossibility",
+    "topic": "Possibility",
+    "ar": "وباعتبار كون المعلومات التي تعلق العلم الأزلي بها ما بين واجب ظهوره وتحقّقه بنفسه، وبين ممتنع ظهوره في نفسه في شيء من المراتب الكلّية والجزئية، وبين متوسّط بينهما نسبته إليهما على السواء سمي المتوسّط مرتبة الإمكان",
+    "en": "Since the objects of eternal knowledge include what must manifest and is realized through itself, what cannot manifest in itself at any universal or particular rank, and what stands between them with an equal relation to both alternatives, this intermediate class is called the rank of possibility.",
+    "note": "One member of the p. 34 classification of the second determination. This is a distinction among what is necessarily manifest, intrinsically impossible to manifest, and merely possible. Do not presume Farghānī's 'intermediate class' is all-encompassing Universal Possibility in Guénon's vocabulary.",
+    "compare": "Guénon's possibilities of non-manifestation are not simply the class of what is impossible in itself; their precise relationship to Farghānī's modal taxonomy must be demonstrated.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/34?lang=ar",
+    "scope": "selected clause from Arabic page, not a continuous page translation"
   }
 ];
