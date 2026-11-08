@@ -104,6 +104,7 @@ async def test(page):
           "Era cluster did not zoom to individual dated book markers")
     await page.locator('[data-dn-work]').first.click()
     b=await state(page)
+    print("DATED_WORK_NODE_CLICK",json.dumps(b,ensure_ascii=False),flush=True)
     check("Bibliographic" in b["selected"] or "Work / source" in b["selected"],
           "Work-marker click must open a source/detail panel")
     check(any(x.startswith("https://github.com/OpenITI/RELEASE/") for x in b["detailLinks"]),
