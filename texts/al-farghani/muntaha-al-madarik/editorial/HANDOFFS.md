@@ -2,9 +2,22 @@
 
 This is the **stable archive index** for the GNAMMA Farghānī source-critical translation project.
 
-## Current canonical stage
+## Current canonical stage — P134 (9 November 2026)
 
-**Stage P84 — 8 November 2026:**
+- [**Full cumulative handoff — P134, including complete working-stage source and apparatus**](FULL_CUMULATIVE_P134.md)
+- [117-page consecutive English working draft](WORKING_TRANSLATION_18_134.md) — modern Beirut B2007 pp.18–134
+- [P134 machine-readable manifest](STAGE_MANIFEST_P134.json)
+- [P134 source-critical handoff and exact restart](STAGE_HANDOFF_P134.md)
+- [GNAMMA public handoff archive page](../handoffs.html)
+
+**New this stage:** B2007 pp.85–134 inclusive (50 pages); **cumulative:** pp.18–134 (117 page-labelled sections), working English draft with original Arabic links, **not** manuscript-verified or a complete Arabic–English critical text. The bilingual excerpt reader still displays only the 32 previously source-linked selections from pp.18–34. The author's fourth foundation continues beyond p.134.
+
+**Next untranslated original:** **B2007 p.135** at `والتقيّد وآثارهما والجامع لكلّيات تلك الخواص والآثار الحبّية ...`, source https://alshrefalm7sy.ahlamontada.com/t3214.
+
+
+## Historical stage — P84 (preserved)
+
+**Stage P84 — 8 November 2026 (historical):**
 
 - [Full cumulative handoff (complete text and apparatus in one Markdown file)](FULL_CUMULATIVE_P84.md)
 - [67-page cumulative working English master](WORKING_TRANSLATION_18_84.md)
@@ -16,7 +29,7 @@ This is the **stable archive index** for the GNAMMA Farghānī source-critical t
 
 **Added in this stage:** 50 modern Beirut (B2007) printed pages, pp.35–84 inclusive, as English *working translation*. **Cumulative:** 67 consecutively numbered source pages, pp.18–84. The bilingual selected-excerpt layer is 32 units from pp.18–34 and is not a full parallel Arabic edition.
 
-**Next untranslated locus:** B2007 p.85, opening `وعالم الغيب والمعاني، ولكن من حيث تفصيل تلك البرزخية لا من حيث إجمالها`, continuing the third aspect of the Footstool. [Primary Arabic p.85](https://ablibrary.net/book_content/b/9606/85?lang=ar). Do not restart or retranslate pp.18–84 except when recording actual corrections.
+**Historical next untranslated locus:** B2007 p.85, opening `وعالم الغيب والمعاني، ولكن من حيث تفصيل تلك البرزخية لا من حيث إجمالها`, continuing the third aspect of the Footstool. [Primary Arabic p.85](https://ablibrary.net/book_content/b/9606/85?lang=ar). Do not restart or retranslate pp.18–84 except when recording actual corrections.
 
 ## Earlier stage (retained)
 
