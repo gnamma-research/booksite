@@ -52,25 +52,21 @@
       "corrected_typography": 1,
       "unresolved_crux": 2
     },
-    "unresolved_digital_cruxes": 12
+    "unresolved_digital_cruxes": 12,
+    "verified_manuscript_variant_count": 0,
+    "cumulative_unresolved_cruxes": 12
   },
   "manuscript_witness_register": {
-    "codex_count": 9,
+    "codex_count": 11,
     "source": "editorial/WITNESS_CENSUS_CRITICAL_004.md",
-    "status": "historical catalogue and published scholarship only, no photographed manuscript collation"
+    "status": "eleven candidate codices from catalogues/scholarship; no independently viewed textual folios"
   },
   "canonical_full_cumulative": "editorial/FULL_CUMULATIVE_CRITICAL_004.md",
   "previous_immutable_archive": "editorial/FULL_CUMULATIVE_CRITICAL_003.md",
   "verification": {
-    "clauses": [
-      37,
-      43,
-      62,
-      56
-    ],
-    "sum": 198,
+    "total": 198,
     "unique_ids": 198,
-    "pages": [
+    "distinct_pages": [
       18,
       19,
       20,
@@ -91,108 +87,107 @@
       35,
       36
     ],
-    "ledger_count": 198,
-    "ledger_page_count": 19,
-    "manuscript_witness_count": 9,
-    "historical_variant_count": 0,
-    "all_pages_selectable": true,
-    "all_scripts": true,
-    "js_data_includes_pass4": true,
-    "archive_preserves_previous": true,
-    "work_scope": "introduction pp18–145, not full poem commentary",
-    "latest_page": 37
+    "page_count": 19,
+    "quality_ledger_records": 198,
+    "codices": 11,
+    "manuscript_variants": 0,
+    "reader_has_all": true,
+    "reader_page_options": true,
+    "old_full_corpus_preserved": true,
+    "next_page": 37,
+    "crux_new": 2,
+    "corrected_new": 1
   },
   "files": [
     {
       "path": "editorial/FULL_CUMULATIVE_CRITICAL_004.md",
-      "sha": "a498daec7b6de69314ad1800d3ef523404625fcd",
-      "length": 972721
+      "sha": "07c0fb4566a9c7b6058e13e43e1e1ae8dce06779",
+      "characters": 975050
     },
     {
       "path": "editorial/FULL_CUMULATIVE_CRITICAL_003.md",
       "sha": "008267a71fce2e7df965ce165501c2be2a8590b8",
-      "length": 803484
+      "characters": 803484
     },
     {
       "path": "editorial/CRITICAL_TRANSLATION_30_36.md",
       "sha": "dd96c3b271728889999fa52e16aeba17c7c71fce",
-      "length": 24257
+      "characters": 24257
     },
     {
       "path": "editorial/WITNESS_CENSUS_CRITICAL_004.md",
-      "sha": "2d22bd50e285070ae151b49a2cc8889a26f4fbc6",
-      "length": 9404
+      "sha": "fa66659064b5940ee2b094962fb69f54bd42a705",
+      "characters": 10612
     },
     {
       "path": "editorial/CRITICAL_LOCUS_REGISTER_004.json",
       "sha": "8632d402fac22b35035098324d42d9751a583b5d",
-      "length": 6738
+      "characters": 6738
     },
     {
       "path": "editorial/STAGE_HANDOFF_CRITICAL_004.md",
-      "sha": "c5548b4e8bcb7ca46761ab367a094535e57b72a6",
-      "length": 4073
+      "sha": "1f53b6523c9f7a4a6b05ee5b3243e3bcf283766d",
+      "characters": 4091
     },
     {
       "path": "editorial/STATUS.md",
-      "sha": "0327618fb37a7932296a6729369add7ee4ea6dad",
-      "length": 24141
+      "sha": "160094530be434b00d9ba61f95b7ad08a8fe3c50",
+      "characters": 24220
     },
     {
       "path": "editorial/HANDOFFS.md",
       "sha": "3b19771b249bc8b673f73992abc37094cb0bfe1a",
-      "length": 10054
+      "characters": 10054
     },
     {
       "path": "editorial/WITNESS_REGISTER.json",
-      "sha": "a255887eba34dbccae3fc15e380a64735af79cc0",
-      "length": 18003
+      "sha": "2352021540f1e7c84ec1ed70c09e62a60e030886",
+      "characters": 19303
     },
     {
       "path": "editorial/CRITICAL_COVERAGE_REGISTER.json",
       "sha": "20c119926cc118f684533cff143686577caf7717",
-      "length": 81289
+      "characters": 81289
     },
     {
       "path": "critical-edition.html",
       "sha": "13fabda20661549cb530b8fad7e1812bff1f13ac",
-      "length": 9179
+      "characters": 9179
     },
     {
       "path": "critical-reader.js",
       "sha": "e4f43d4091fa12c4d011a87dbd4f035cf369af69",
-      "length": 3352
+      "characters": 3352
     },
     {
       "path": "index.html",
-      "sha": "8334f4726de7bf9aea2cecc396db7168ef5976de",
-      "length": 10083
+      "sha": "2e131cd2c83dc40de756a20b83aec2fed7a0f307",
+      "characters": 10096
     },
     {
       "path": "handoffs.html",
-      "sha": "534288852073043b47989ae2abf7c01e96fab3a0",
-      "length": 11537
+      "sha": "22b10dcd9d22fac018ff94b389752aa82ead3ec9",
+      "characters": 11615
     },
     {
       "path": "data/critical-pass-001-p18-20.js",
       "sha": "b3d7bcde5c2e627e80f1f042f58d8c3ac6aa943a",
-      "records": 37
+      "characters": 29733
     },
     {
       "path": "data/critical-pass-002-p21-23.js",
       "sha": "0bea13500cad9c05c1103d868fd21f37464b8a4b",
-      "records": 43
+      "characters": 34332
     },
     {
       "path": "data/critical-pass-003-p24-29.js",
       "sha": "e5f36566112ad78c4713c1d5ec95347976ad4b77",
-      "records": 62
+      "characters": 42332
     },
     {
       "path": "data/critical-pass-004-p30-36.js",
       "sha": "89399b5d9235377481ed81f865fc0d35f15ae352",
-      "records": 56,
-      "length": 35567
+      "characters": 35567
     }
   ]
 }
