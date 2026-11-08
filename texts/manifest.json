@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-library-manifest-v1",
   "project": "Gnamma Research",
-  "updated": "2026-11-04",
+  "updated": "2026-11-08",
   "collections": [
     "texts",
     "essays",
@@ -49,6 +49,37 @@
       "sharh_reader_url": "texts/al-turka/qawaid-al-tawhid/commentary.html",
       "lumbard_commentary_standard_url": "texts/al-turka/qawaid-al-tawhid/editorial/LUMBARD_COMMENTARY_STANDARD.md",
       "sharh_translation_complete_in_consulted_sources": true
+    },
+    {
+      "id": "farghani-muntaha-al-madarik",
+      "title": "Muntahā al-madārik · Metaphysical Introduction",
+      "arabic": "منتهى المدارك في شرح تائية ابن الفارض",
+      "author": "Saʿīd al-Dīn al-Farghānī",
+      "author_slug": "al-farghani",
+      "work_slug": "muntaha-al-madarik",
+      "area": [
+        "ʿirfān naẓarī",
+        "Akbarian metaphysics",
+        "comparative metaphysics"
+      ],
+      "status": "working-25-selected-bilingual-source-extracts-introduction-incomplete",
+      "language": [
+        "ar-selected",
+        "en-selected"
+      ],
+      "url": "texts/al-farghani/muntaha-al-madarik/",
+      "note": "25 fresh, source-linked Arabic–English selected clauses sampled across modern Beirut pp.18–32, with gaps. This is not a translation of all fifteen pages nor the complete 107-page introductory division. Separate optional Guénon–Schuon research layer; exact source notes, glossary and status register. Manuscript and historical print collation pending.",
+      "original_text_status": "selected-arabic-source-clauses-only",
+      "translated_extracts": 25,
+      "sampled_pages": "18–32, not contiguous complete-page coverage",
+      "manuscript_collation_status": "not-begun",
+      "reading_mode": "arabic-english-bilingual-continuous-search-notes-comparative-layer-bookmarks",
+      "editorial_status_url": "texts/al-farghani/muntaha-al-madarik/editorial/STATUS.md",
+      "comparative_dossier_url": "texts/al-farghani/muntaha-al-madarik/editorial/COMPARISON.md",
+      "glossary_url": "texts/al-farghani/muntaha-al-madarik/editorial/GLOSSARY.md",
+      "related_text_ids": [
+        "turka-qawaid-tawhid"
+      ]
     },
     {
       "id": "ghazali-mustasfa",
@@ -424,7 +455,8 @@
       {
         "name": "ʿIrfān and metaphysics",
         "ids": [
-          "turka-qawaid-tawhid"
+          "turka-qawaid-tawhid",
+          "farghani-muntaha-al-madarik"
         ]
       },
       {
