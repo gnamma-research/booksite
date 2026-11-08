@@ -7,15 +7,31 @@
     "notes": "The printed and digital Beirut paginations do not correspond; never copy a number without labelling its witness.",
     "critical_edition_status": "not-yet-constituted",
     "continuous_full_arabic_transcription": false,
-    "continuous_full_english_translation": false,
+    "continuous_full_english_translation": true,
     "consecutive_english_draft": "Beirut B2007 pp.18–34, 17 pages in working translation; not line-by-line proofed or independently collated",
-    "english_draft_authorial_pages": 117,
+    "english_draft_authorial_pages": 128,
     "complete_full_critical_introduction": false,
     "critical_scholarly_editorial_essay": "editorial/CRITICAL_INTRODUCTION.md",
     "cumulative_english_draft": "B2007 pp.18–134 = 117 consecutively numbered English working pages; p85–134 sourced through derivative online re-transcription and not independently collated",
-    "latest_handoff": "editorial/FULL_CUMULATIVE_P134.md",
-    "latest_untranslated_beirut_page": 135,
-    "verified_manuscript_variant_count": 0
+    "latest_handoff": "editorial/FULL_CUMULATIVE_P145.md",
+    "verified_manuscript_variant_count": 0,
+    "current_english_draft": "B2007 pp18–145, 128 page-labelled English working draft, all four foundations and concluding preface; manuscript-critical edition incomplete",
+    "current_scope_boundary": "Fourth foundation ends at B2007 p143; tatimmat al-dibaja pp144–145; poem commentary begins thereafter",
+    "modern_print_clause_review": {
+      "pages": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "count": 80,
+      "source": "direct B2007 digital page HTML",
+      "status": "source-checked English revision, not historical print or manuscript collation"
+    },
+    "next_critical_audit_beirut_page": 24,
+    "definitive_status": "not-achieved"
   },
   "witnesses": [
     {
@@ -56,9 +72,9 @@
         33,
         34
       ],
-      "access": "page HTML directly inspected for selected authorial clauses through p.34; separate working English draft through pp.18–34; full Arabic authorial transcription still incomplete",
+      "access": "Digital page HTML directly examined for first six pages B2007 pp18–23 in 80 clause-level checks; prior source-linked selections through p34, cumulative English draft through p145; full Arabic copy-text remains unconstituted.",
       "accessGrade": "modern-digital-text-examined; no manuscript-equivalent authority",
-      "role": "temporary working transcription only",
+      "role": "modern edited digital reading and first-pass English source checking, not a validated critical copytext",
       "variantsExamined": 0
     },
     {
@@ -110,6 +126,14 @@
       "scope": "Third foundation B2007 pp85–101 and fourth foundation pp102–134 consulted for new English P134 working draft; source pages continue after p134",
       "access": "online text transcription inspected; not a separate medieval or manuscript witness; manuscript copy-text remains uninspected",
       "note": "Do not count as an independent corroborating witness or as a manuscript variant. Printed-page labels may need control against physical Beirut edition; may contain OCR/transcription errors or modern editorial footnotes."
+    },
+    {
+      "siglum": "R-FANARI",
+      "title": "Al-Fanārī's Miṣbāḥ al-uns, reported quotation of Farghānī's p20–21 on determinate divine witnessing",
+      "url": "https://ablibrary.net/book_content/b/4696/183?lang=ar",
+      "access": "Modern digital printed quotation inspected; shows من حيث واحديتها and a commentator's theological qualifications",
+      "role": "Later reception/indirect quotation, not an independently collated Farghānī manuscript",
+      "status": "verified passage quotation at modern print p183; variant claims not made"
     }
   ],
   "readings": [
@@ -151,6 +175,46 @@
       "criticalVariant": false,
       "manuscriptSupport": null,
       "status": "translated without conjectural restoration; compare actual printed and manuscript texts"
+    },
+    {
+      "id": "ED-0005",
+      "location": "B2007 p18, بطون المشتمل",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "awkward printed-digital wording in definition of hidden essential-name treasure",
+      "source_linked_audit_unit": "critical-pass-001 CR001-010",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    },
+    {
+      "id": "ED-0006",
+      "location": "B2007 p19, المطلب الغائبّ",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "awkward digital adjective in sentence on ultimate aim of name-perfection",
+      "source_linked_audit_unit": "critical-pass-001 CR001-014",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    },
+    {
+      "id": "ED-0007",
+      "location": "B2007 p19, عمليّا ووجوديّا vs contextual علميّا ووجوديّا",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "digital B2007 and derivative forum read ʿamaliyyan ('operative/practical'), whereas inherited English flattened it to epistemic and existential; no emendation authorized",
+      "source_linked_audit_unit": "critical-pass-001 CR001-024",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    },
+    {
+      "id": "ED-0008",
+      "location": "B2007 p23, فلم تعلم ولم يحكم بشيء منها إلا بعد تعيّنها",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "substantive doctrinal/semantic issue about knowability of unconcretized essential affairs; explicit modal 'perhaps' must not be erased",
+      "source_linked_audit_unit": "critical-pass-002 CR002-032",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
     }
   ],
   "selectionRule": "Do not create a variant reading or siglum support unless two independent witnesses have actually been inspected in the relevant locus. Orthographic normalization is not a textual variant.",
