@@ -5,7 +5,7 @@
   "scope": {
     "historical_print": "1876 Istanbul volume I, printed pages 1–107 per Scattolin",
     "notes": "The printed and digital Beirut paginations do not correspond; never copy a number without labelling its witness.",
-    "critical_edition_status": "not-yet-constituted",
+    "critical_edition_status": "source-checked working English; Arabic manuscript critical edition NOT constituted",
     "continuous_full_arabic_transcription": false,
     "continuous_full_english_translation": true,
     "consecutive_english_draft": "Beirut B2007 pp.18–34, 17 pages in working translation; not line-by-line proofed or independently collated",
@@ -13,7 +13,7 @@
     "complete_full_critical_introduction": false,
     "critical_scholarly_editorial_essay": "editorial/CRITICAL_INTRODUCTION.md",
     "cumulative_english_draft": "B2007 pp.18–134 = 117 consecutively numbered English working pages; p85–134 sourced through derivative online re-transcription and not independently collated",
-    "latest_handoff": "editorial/FULL_CUMULATIVE_CRITICAL_003.md",
+    "latest_handoff": "editorial/FULL_CUMULATIVE_CRITICAL_004.md",
     "verified_manuscript_variant_count": 0,
     "current_english_draft": "B2007 pp18–145, 128 page-labelled English working draft, all four foundations and concluding preface; manuscript-critical edition incomplete",
     "current_scope_boundary": "Fourth foundation ends at B2007 p143; tatimmat al-dibaja pp144–145; poem commentary begins thereafter",
@@ -30,15 +30,23 @@
         26,
         27,
         28,
-        29
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
       ],
-      "count": 142,
-      "source": "B2007 digital printed Arabic, selected spans",
-      "status": "80 earlier source-clause records p18–23; 62 selected new p24–29 loci; no complete-page verification assertion for the latter; not historical or manuscript collation"
+      "count": 198,
+      "source": "B2007 selected digitized Arabic printed source spans",
+      "status": "80 p18–23, 62 p24–29, 56 p30–36; newer spans selected, not exhaustive; ZERO independent manuscript/1876 readings"
     },
-    "next_critical_audit_beirut_page": 30,
+    "next_critical_audit_beirut_page": 37,
     "definitive_status": "not-achieved",
-    "critical_review_new_stage": "62 selected clause source checks p24–29; total 142 records, ten open digital cruxes"
+    "critical_review_new_stage": "Critical IV: 56 new selective loci p30–36, 198 total on 19 Beirut pages",
+    "historical_print_imprint_question": "NYU catalogue identifies Istanbul 1293/1876; Chittick 2025 describes Bulaq/Cairo 1876. Establish by reading scanned title page."
   },
   "witnesses": [
     {
@@ -117,6 +125,98 @@
       "access": "Digital text examined for verse 545; reads لعبرتي where B2007 Farghani p26 has لعبرة",
       "accessGrade": "digital collateral quotation parallel; not a Farghani manuscript witness",
       "variantsExamined": 0
+    },
+    {
+      "siglum": "F3966",
+      "kind": "manuscript",
+      "title": "Süleymaniye Fatih 3966",
+      "date": "reported 724/1324 in scholarship; colophon uninspected",
+      "extent": "116 folios reported",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Fatih_3966",
+      "access": "catalogue and secondary scholarship only; colophon/foliation unverified",
+      "accessGrade": "catalogue-only",
+      "role": "high-priority historical codex; Konya vs Antalya provenance conflict",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "C1107",
+      "kind": "manuscript",
+      "title": "Süleymaniye Carullah 1107",
+      "date": "copied 741 AH per Chittick",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Carullah_1107",
+      "access": "manuscript not examined here; reportedly used by Chittick 2025 in manuscript-collated textual establishment",
+      "accessGrade": "scholarship-only",
+      "role": "high-priority independent codex; must inspect photographs",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "R670",
+      "kind": "manuscript",
+      "title": "Koca Ragıp Paşa 670",
+      "date": "copied 763 AH per Chittick; recorded reading 766/1365",
+      "extent": "249 folios reported",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Koc_670",
+      "access": "catalogue and Chittick scholarship, no images personally compared",
+      "accessGrade": "catalogue-only",
+      "role": "high-priority MS used by Chittick; actual variant list unavailable",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "K273",
+      "kind": "manuscript",
+      "title": "Süleymaniye Kadızademehmed 273",
+      "date": "not verified",
+      "access": "Chittick 2025 identifies it among his three manuscript witnesses; not personally inspected",
+      "accessGrade": "scholarship-only",
+      "role": "high priority third manuscript; catalogue and images needed",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "R669",
+      "kind": "manuscript",
+      "title": "Koca Ragıp Paşa 669",
+      "date": "15th century per catalogue",
+      "extent": "336 folios reported",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Koc_669",
+      "access": "catalogue-only; not collated",
+      "accessGrade": "catalogue-only",
+      "role": "secondary control, no implied relation to adjacent shelfmark 670",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "C1746",
+      "kind": "manuscript",
+      "title": "Süleymaniye Carullah 1746",
+      "date": "16th century per catalogue, but gift notice 883/1479: resolve chronology",
+      "extent": "194 folios reported",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Carullah_1746%3Ba1",
+      "access": "catalogue only",
+      "accessGrade": "catalogue-only",
+      "role": "secondary control and chronology question",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "SA1347",
+      "kind": "manuscript",
+      "title": "Süleymaniye Şehid Ali Paşa 1347, work 5",
+      "date": "not verified",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Sehid_AP_1347%3Ba5",
+      "access": "catalogue only",
+      "accessGrade": "catalogue-only",
+      "role": "composite-codex control, exact folios needed",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "H236",
+      "kind": "manuscript",
+      "title": "Süleymaniye Halet Efendi 236",
+      "date": "20th century per catalogue",
+      "extent": "Farghani section 1v–78v",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Halet_236",
+      "access": "catalogue only",
+      "accessGrade": "catalogue-only",
+      "role": "late control; confirm whether abridged or extracted",
+      "variantsExamined": 0
     }
   ],
   "relatedNotWitnesses": [
@@ -150,6 +250,20 @@
       "access": "Modern digital printed quotation inspected; shows من حيث واحديتها and a commentator's theological qualifications",
       "role": "Later reception/indirect quotation, not an independently collated Farghānī manuscript",
       "status": "verified passage quotation at modern print p183; variant claims not made"
+    },
+    {
+      "siglum": "CH2025",
+      "title": "William C. Chittick, Farghānī on Waḥdat al-Wujūd in the Four Journeys, Journal of Sufi Studies 14 (2025)",
+      "url": "https://traditionalhikma.com/wp-content/uploads/2025/06/Farghani_on_Wahdat_al_Wujud_in_the_Four.pdf",
+      "access": "Published English based on his manuscript-collated text C1107/R670/K273, but not available as a photographed Arabic witness",
+      "note": "Useful interpretive/indirect secondary text control. No manuscript readings personally attested by this project."
+    },
+    {
+      "siglum": "CH2024",
+      "title": "William C. Chittick, Marātib al-taqwā: Saʿīd al-Dīn Farghānī on the Ontology of Ethics",
+      "url": "https://traditionalhikma.com/wp-content/uploads/2024/03/Maratib_al_Taqwa_Said_al_Din_Farghani_on.pdf",
+      "access": "scholarly secondary",
+      "note": "Reports C1107 741 and R670 763 and published-text errors"
     }
   ],
   "readings": [
