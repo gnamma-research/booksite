@@ -494,7 +494,7 @@ function render(args,api){
  if(!S.scope){readHash();S.scope=scope;}
  else if(S.scope!==scope){
   const previousScience=S.scope.split("|")[1];S.scope=scope;
-  reset(false);
+  reset(true); // Each discipline/subfield must begin in the familiar chronological atlas.
   if(previousScience!==args.science)S.source="all";
   S.from=630;S.to=1920;
  }
