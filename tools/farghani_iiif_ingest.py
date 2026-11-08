@@ -47,7 +47,7 @@ def save_image(index, raw, source_url, canvas_label):
     pil=ImageOps.exif_transpose(pil).convert("RGB")
     maxw=1750
     if pil.width>maxw:
-        pil=pil.resize((maxw,round(pil.height*maxw/pil.width)),Image.Resampling.LANCZOS)
+        pil=pil=pil.resize((maxw,round(pil.height*maxw/pil.width)),Image.Resampling.LANCZOS)
         pil.thumbnail((maxw,4000),Image.Resampling.LANCZOS)
     target=OUT/("scan_%04d.jpg"%index)
     pil.save(target,format="JPEG",quality=78,optimize=True,subsampling=0)
@@ -63,7 +63,7 @@ def acquire_manifest():
     seq=data.get("sequences") or []
     canvases=(seq[0].get("canvases",[]) if seq else data.get("items",[]))
     return data,canvases
-def pdf_fallback(records,errs):
+def pdf_fallback(records, errs):
     path=Path("/tmp/gnamma-farghani-I1876-lo.pdf")
     try:
         import fitz
@@ -71,18 +71,20 @@ def pdf_fallback(records,errs):
         path.write_bytes(data)
         report={"pdf_url":PDF,"source_sha256":hashlib.sha256(data).hexdigest(),"bytes":len(data)}
         doc=fitz.open(str(path))
-        report["pdf_page_count"]=len(doc)
-        for i in INDICES:
-            if i>len(doc):continue
-            page=doc[i-1]
-            pix=page.get_pixmap(matrix=fitz.Matrix(1.7,1.7),colorspace=fitz.csRGB,alpha=False)
-            raw=pix.tobytes("png")
+        report["pages"]=len(doc)
+        # first 65 pages plus a few distant check pages, no automatic textual claims
+        indices=[i for i in INDICES if i<=len(doc)]
+        for i in indices:
+            pg=doc.load_page(i-1)
+            px=pg.get_pixmap(matrix=fitz.Matrix(1.35,1.35),alpha=False)
+            raw=px.tobytes("jpeg",jpg_quality=79)
             records.append(save_image(i,raw,PDF+"#scan="+str(i),"PDF scan "+str(i)))
         doc.close()
         return report
     except Exception as e:
         errs.append("PDF fallback: "+repr(e))
         return {"pdf_url":PDF,"download_or_render":"FAILED"}
+
 def make_contacts(rows):
     good=[r for r in rows if (OUT/("scan_%04d.jpg"%r["scan_index"])).exists()]
     for chunkno,start in enumerate(range(0,len(good),20),start=1):
