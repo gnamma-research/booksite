@@ -18,6 +18,14 @@
 3. For verification, certify only what has been compared Arabic-to-English clause by clause; a continuous English draft does not equal a checked edition.
 4. Production-ready website updates must expose true coverage and grade. Never publish draft as fully verified or claim deployment from a local file or unmerged branch.
 
+## Mandatory publication of the full handoff on GNAMMA (8 November 2026)
+
+At **every new translation stage** for a GNAMMA book, the stage is not closed merely by saving a progress summary. Preserve the **entire cumulative recoverable corpus and available editorial apparatus** in a self-contained, uniquely named file (for example `FULL_CUMULATIVE_P84.md`) together with a machine-readable, revision-pinned stage manifest recording source sigla, per-file blob SHAs and byte counts, new and cumulative coverage, gaps, grade, exact restart words and previous-stage links. Older handoffs remain immutable snapshots.
+
+**The GNAMMA site's book landing page and reader must expose a visible “Full cumulative handoff” link,** with a stable archive index showing the current and historical stages. Update the library catalogue and book manifest, publish the new stage's exact status, and check that linked files are accessible; then verify the Pages deployment independently. A commit or queued build is not a confirmed live deployment.
+
+For the Farghānī edition see `texts/al-farghani/muntaha-al-madarik/handoffs.html` and `editorial/HANDOFFS.md`. At P84 the comprehensive saved archive includes the 67-page English working draft, 32 Arabic–English extracts and all existing apparatus, but **does not constitute the missing continuous Arabic copy-text or a collated critical edition**.
+
 ## Full cumulative handoff at **every** stage
 - Canonical complete matn and sharḥ (all previous source text, English, notes, apparatus, variant history, source registers, glossary and reader source files), not a short status digest with links.
 - Newly completed material plus **unchanged previous** materials, no replacement of old variants.
