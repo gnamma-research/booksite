@@ -38,6 +38,7 @@ header#topbar{position:sticky;top:0;min-height:53px;padding:7px clamp(12px,3vw,2
 .audit-note{margin:6px 0 0;font:12px/1.65 system-ui,sans-serif;color:var(--muted);padding:8px 12px;border-left:2px solid var(--accent);background:var(--wash)}
 .audit-note strong{color:var(--ink)}
 .audit-clause[data-disposition=crux] .audit-flag{border-color:#bc945a}
+.audit-witness{margin:8px 0;padding:10px;border:1px solid var(--line);border-radius:7px;background:var(--panel);font:12px/1.6 system-ui,sans-serif}.audit-witness p.ar{font:21px/1.8 "Amiri","Noto Naskh Arabic",serif;margin:4px 0}.audit-witness p{margin:4px 0}.audit-witness a{color:var(--accent)}
 .data-note{font:12px/1.6 system-ui,sans-serif;color:var(--muted);margin-top:12px}
 [data-show-notes=false] .audit-note{display:none}
 [data-language=ar] .audit-text,[data-language=en] .audit-text{grid-template-columns:1fr}
@@ -63,24 +64,24 @@ footer{font:12px/1.7 system-ui,sans-serif;color:var(--muted);border-top:1px soli
 <section class="page-head">
 <span class="eyebrow">GNAMMA · FARḠĀNĪ · SELECTIVE SOURCE-CRITICAL AUDIT</span>
 <h1>Arabic–English clause review</h1>
-<p>Farghānī's opening foundation: 80 earlier clauses on pp. 18–23, 62 sampled spans on pp. 24–29, and 56 selected source-checked spans on pp. 30–36. Each clause distinguishes source Arabic, revised English, translator decisions, and unresolved text.</p>
-<div class="editorial-alert"><strong>Critical status:</strong> source-checked against one modern digital printed witness (B2007), <strong>not</strong> against the historical 1876 edition or a manuscript. Pages 24–36 have <strong>selected checked spans only</strong>, not complete line-by-line proofreading. The 128-page English working draft remains available.</div>
+<p>Farghānī’s introductory foundation: 198 selected Arabic–English clauses from Beirut pp.18–36. A **directly photographed historical-print layer** now confirms two substantive differences between the 1876 printing and the digitized Beirut Arabic on p.19, with two additional historical-print agreements. The photographed source comprises limited passages on printed pp.5–7, not complete manuscript collation.</p>
+<div class="editorial-alert"><strong>Critical status:</strong> source-checked against one modern digital printed witness (B2007), with four bounded comparisons against the photographed historical 1876 printing, but <strong>not</strong> against any manuscript. Pages 24–36 have <strong>selected checked spans only</strong>, not complete line-by-line proofreading. The 128-page English working draft remains available.</div>
 <div class="audit-status">
 <span><strong id="count">—</strong> clause records</span>
 <span><strong id="pages">19</strong> B2007 pages with selected checks, 18–36</span>
 <span><strong id="cruces">—</strong> unresolved textual issues</span>
-<span><strong>0</strong> manuscript variants verified</span>
+<span><strong>2</strong> I1876/B2007 print differences · <strong>0</strong> manuscript variants verified</span>
 </div>
 </section>
 <nav class="audit-tools" aria-label="Audit controls">
 <label for="page-select">Page</label><select id="page-select"><option value="all">All reviewed pages</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option></select>
-<label for="filter-select">Status</label><select id="filter-select"><option value="all">All clauses</option><option value="crux">Unresolved readings</option><option value="revise">Translation revisions</option><option value="annotate">Source notes</option><option value="corrected">Text corrections</option></select>
+<label for="filter-select">Status</label><select id="filter-select"><option value="all">All clauses</option><option value="crux">Unresolved readings</option><option value="revise">Translation revisions</option><option value="annotate">Source notes</option><option value="corrected">Text corrections</option><option value="print">Inspected 1876 print</option></select>
 <input type="search" id="query" placeholder="Search Arabic or English…" aria-label="Search clauses"/>
 <button id="lang-button" type="button" aria-label="Cycle languages">AR + EN</button>
 <button id="notes-button" type="button" aria-pressed="true">Notes</button>
 </nav>
 <div id="clauses" aria-live="polite"><p>Loading the audited clauses…</p></div><div id="empty">No matching audited clauses in this selection.</div>
-<footer><p><a href="editorial/CRITICAL_AUDIT_STAGE_001.md">Full audit rationale and correction log</a> · <a href="editorial/CRITICAL_TRANSLATION_24_29.md">New 62-locus critical pass</a> · <a href="editorial/CRITICAL_AUDIT_STAGE_002.md">New critical findings</a> · <a href="editorial/WITNESS_REGISTER.json">Textual witnesses</a> · <a href="editorial/CRITICAL_TRANSLATION_30_36.md">New 56-locus critical pass</a> · <a href="editorial/WITNESS_CENSUS_CRITICAL_004.md">New manuscript census</a> · <a href="editorial/FULL_CUMULATIVE_CRITICAL_004.md">Updated full cumulative handoff</a> · <a href="handoffs.html">Stage history</a>.</p><p>Unreviewed portions of the introduction remain accessible in the working English reader but must not be described as critically checked.</p></footer>
+<footer><p><a href="editorial/CRITICAL_AUDIT_STAGE_001.md">Full audit rationale and correction log</a> · <a href="editorial/CRITICAL_TRANSLATION_24_29.md">New 62-locus critical pass</a> · <a href="editorial/CRITICAL_AUDIT_STAGE_002.md">New critical findings</a> · <a href="editorial/WITNESS_REGISTER.json">Textual witnesses</a> · <a href="editorial/I1876_COLLATION_001.md">First photographic 1876 print collation</a> · <a href="editorial/CRITICAL_TRANSLATION_30_36.md">Earlier 56-locus modern source audit</a> · <a href="editorial/WITNESS_CENSUS_CRITICAL_004.md">New manuscript census</a> · <a href="editorial/FULL_CUMULATIVE_CRITICAL_004.md">Updated full cumulative handoff</a> · <a href="handoffs.html">Stage history</a>.</p><p>Unreviewed portions of the introduction remain accessible in the working English reader but must not be described as critically checked.</p></footer>
 </main>
 <script src="data/critical-pass-001-p18-20.js"></script>
 <script src="data/critical-pass-002-p21-23.js"></script>
