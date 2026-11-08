@@ -154,8 +154,8 @@
     },
     {
       "path": "texts/al-farghani/muntaha-al-madarik/editorial/HANDOFFS.md",
-      "blob_sha": "c94081d226e10cc4ba21407312cd0442dbab1cc8",
-      "bytes_utf8": 5980
+      "blob_sha": "77645094e1ce3aed34bbdd3b990006cf9018de5b",
+      "bytes_utf8": 8065
     },
     {
       "path": "texts/al-farghani/muntaha-al-madarik/editorial/OPENING_TRANSLATION_18_23.md",
@@ -324,8 +324,8 @@
     },
     {
       "path": "texts/al-farghani/muntaha-al-madarik/index.html",
-      "blob_sha": "492aad8d1466cfd9da29b100841d54552315ff86",
-      "bytes_utf8": 9959
+      "blob_sha": "1c18f01404c19d761aaccec6ca2af5a41dde1254",
+      "bytes_utf8": 9845
     },
     {
       "path": "texts/al-farghani/muntaha-al-madarik/continuous-translation.html",
@@ -344,8 +344,8 @@
     },
     {
       "path": "texts/al-farghani/muntaha-al-madarik/handoffs.html",
-      "blob_sha": "33cf795fee4959e40e06b57b7f97976629394c66",
-      "bytes_utf8": 10834
+      "blob_sha": "2f44e7ede01ac090f5949721c2d33828f5cc4908",
+      "bytes_utf8": 10847
     },
     {
       "path": "texts/al-farghani/muntaha-al-madarik/critical-introduction.html",
@@ -361,6 +361,21 @@
       "path": "texts/al-farghani/muntaha-al-madarik/reader.js",
       "blob_sha": "aced2e1d612f93034f7a35466c04b849b62dec04",
       "bytes_utf8": 13843
+    },
+    {
+      "path": "texts/index.html",
+      "blob_sha": "962cb4bad91ae38d804e9d026947b644b288699d",
+      "bytes_utf8": 6651
+    },
+    {
+      "path": "texts/manifest.json",
+      "blob_sha": "4af8f0136d82ca6de7e43d93aad8c1cc28a92ff3",
+      "bytes_utf8": 24625
+    },
+    {
+      "path": "docs/TRANSLATION_CONTINUITY_PROTOCOL.md",
+      "blob_sha": "58c7caec17115fcc4abb2d1282bcea4acd7cd7ee",
+      "bytes_utf8": 6220
     }
   ],
   "coverage_register_sha": "3a8c8e0fd5f8dde567f7fd11af0bca6d2b86dfdb",
@@ -372,5 +387,14 @@
     "B2007 p21 من حيث واحديتها restored in F007",
     "B2007 p23 فلم تعلم... difficult semantic issue"
   ],
-  "validation_note": "Numbered page coverage verifies document organization only. It does not certify independent source checking or translation completeness at clause level. No definitive manuscript critical edition established."
+  "validation_note": "Numbered page coverage verifies document organization only. It does not certify independent source checking or translation completeness at clause level. No definitive manuscript critical edition established.",
+  "publication_status": "All P145 project and catalog files committed to repository, site Pages build status separate",
+  "verified_site_links": [
+    "texts/al-farghani/muntaha-al-madarik/continuous-translation.html",
+    "texts/al-farghani/muntaha-al-madarik/critical-edition.html",
+    "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_P145.md",
+    "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_COVERAGE_REGISTER.json",
+    "texts/al-farghani/muntaha-al-madarik/handoffs.html"
+  ],
+  "file_inventory_update_date": "2026-11-09"
 }
