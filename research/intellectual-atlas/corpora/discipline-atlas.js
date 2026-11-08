@@ -405,7 +405,7 @@ function renderVertical(width){
  let maxRows=0;
  for(const key of keys){
   let priority=byLane(key);
-  const chosen=selectMajor(priority,12);
+  const chosen=selectMajor(priority,18);
   selected.set(key,chosen);maxRows=Math.max(maxRows,chosen.length);
  }
  const h=Math.max(360,hdr+maxRows*step+85);
