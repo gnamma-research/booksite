@@ -62,13 +62,13 @@
         "Akbarian metaphysics",
         "comparative metaphysics"
       ],
-      "status": "bilingual-32-selected-extracts-plus-17-page-provisional-continuous-english-introduction-incomplete",
+      "status": "english-working-67-beirut-pages-18-84-plus-32-selected-bilingual-extracts-not-critical-complete",
       "language": [
         "ar-selected",
         "en-selected"
       ],
       "url": "texts/al-farghani/muntaha-al-madarik/",
-      "note": "Muntahā al-madārik first foundation: 32 source-linked Arabic–English selected clauses across B2007 pp.18–34, PLUS 17 pages (B2007 pp.18–34) of a continuous-order English working translation draft, and an original scholarly critical study. Neither the full four-foundation introduction nor complete critical Arabic is finished. No verified historical-manuscript variants; comparison with Guénon and Schuon remains editorial and separate.",
+      "note": "50 NEW consecutive Beirut printed source pages (B2007 pp35–84) in provisional English translation; 67 consecutive pages cumulative with prior pp18–34. The first foundation ends p69, the second runs p70–78, and the third begins p79. The 32 source-linked Arabic–English excerpts remain selected pp18–34 only; full authorial Arabic is NOT continuously imported. No verified manuscript collation or full critical-edition claim.",
       "original_text_status": "selected-arabic-source-clauses-only",
       "translated_extracts": 32,
       "sampled_pages": "18–34, not contiguous complete-page coverage",
@@ -81,18 +81,24 @@
         "turka-qawaid-tawhid"
       ],
       "continuous_english_translation_url": "texts/al-farghani/muntaha-al-madarik/continuous-translation.html",
-      "continuous_english_draft_source_url": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_34.md",
+      "continuous_english_draft_source_url": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_84.md",
       "critical_scholarly_introduction_url": "texts/al-farghani/muntaha-al-madarik/critical-introduction.html",
       "critical_scholarly_introduction_source_url": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_INTRODUCTION.md",
       "witness_register_url": "texts/al-farghani/muntaha-al-madarik/editorial/WITNESS_REGISTER.json",
       "working_english_draft_beirut_pages": [
         18,
-        34
+        84
       ],
-      "working_english_draft_printed_pages_count": 17,
+      "working_english_draft_printed_pages_count": 67,
       "full_arabic_introduction_collated": false,
       "continuous_bilingual_edition_complete": false,
-      "verified_manuscript_variants": 0
+      "verified_manuscript_variants": 0,
+      "new_working_english_pages_this_stage": [
+        35,
+        84
+      ],
+      "new_english_draft_pages_count": 50,
+      "full_authorial_introduction_translation_complete": false
     },
     {
       "id": "ghazali-mustasfa",
