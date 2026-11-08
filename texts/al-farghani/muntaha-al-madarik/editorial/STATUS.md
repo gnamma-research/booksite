@@ -1,5 +1,15 @@
 # Muntahā al-madārik · Editorial and translation register
 
+## Full cumulative handoff and GNAMMA publication (P84)
+
+- **Self-contained current working-stage archive:** [FULL_CUMULATIVE_P84.md](FULL_CUMULATIVE_P84.md) — contains the full 67-page English working draft, all 32 available bilingual Arabic extracts, critical scholarly introduction, Guénon–Schuon comparison, glossary, witness register, corrections, this editorial status, and the prior stage handoff.
+- **Handoff archive index and per-stage preservation rule:** [HANDOFFS.md](HANDOFFS.md); public GNAMMA reading-room entry: [Handoffs and archive](../handoffs.html).
+- **Machine-readable provenance:** [STAGE_MANIFEST_P84.json](STAGE_MANIFEST_P84.json) includes the new archive blob SHA, file inventory and page-integrity checks, and continuation p.85.
+- **Every subsequent stage:** recover the latest complete archive, append newly translated source text without losing older material, produce a new self-contained full cumulative handoff and manifest, expose both from GNAMMA's book landing page and reader, and check the GitHub Pages build independently.
+- **Limits:** The archive is self-contained for what has been produced in the current working stage, but the **full Arabic authorial text**, independent clause-by-clause verification, historic-print/manuscript collation and remaining introduction are not completed. Such missing material is not inside the handoff.
+
+
+
 ## New translation stage — 50 pages added (2026-11-08)
 
 **New work:** Beirut B2007 pp. **35–84 inclusive** = **50 printed source pages in an English *working* translation**. This stage genuinely continues from the existing p. 34 boundary; it does not simply rephrase or reprint those 17 pages. The new English text is preserved in **seven separate source-linked stage files** and in the cumulative master:
