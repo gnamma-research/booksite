@@ -105,6 +105,19 @@ async def test(page):
     await page.locator('[data-dn-work]').first.click()
     b=await state(page)
     print("DATED_WORK_NODE_CLICK",json.dumps(b,ensure_ascii=False),flush=True)
+    if not b["selected"]:
+        probe=await page.evaluate("""() => {
+          const el=document.querySelector('[data-dn-timeline-svg] [data-dn-work]');
+          const name=el?.getAttribute('data-dn-work');
+          const tag=el?.tagName;
+          const rect=el?.getBoundingClientRect();
+          const center=rect?document.elementFromPoint(rect.x+rect.width/2,rect.y+rect.height/2):null;
+          const centerMatch=center?.closest?.('[data-dn-work],[data-dn-lane]');
+          el?.dispatchEvent(new MouseEvent('click',{bubbles:true,cancelable:true}));
+          return {name,tag,centerTag:center?.tagName,centerMatch:centerMatch?.getAttribute('data-dn-work')||centerMatch?.getAttribute('data-dn-lane'),
+             after:window.GNDisciplineAtlas?.debug(),detail:document.querySelector('.dn-detail')?.textContent?.slice(0,240)};
+        }""")
+        print("DATED_WORK_SYNTHETIC_DIAGNOSTIC",json.dumps(probe,ensure_ascii=False),flush=True)
     check("Bibliographic" in b["selected"] or "Work / source" in b["selected"],
           "Work-marker click must open a source/detail panel")
     check(any(x.startswith("https://github.com/OpenITI/RELEASE/") for x in b["detailLinks"]),
