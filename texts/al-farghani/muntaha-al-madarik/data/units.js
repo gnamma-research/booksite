@@ -56,7 +56,7 @@ window.FARGHANI_UNITS=[
     "title": "The undelimited Essence exceeds cognition",
     "topic": "Essence",
     "ar": "ثم اعلم أن كنه الذات الأقدس وغيب الهوية والإطلاق والأزلية المندرج فيه حكم الأبدية لا يشهد ولا يفهم ولا يعلم ولا يدرك من حيث التعيّن أصلا",
-    "en": "Know next that the inner reality of the most holy Essence, the unseen depth of Identity, nondelimitation, and pre-eternity—which also contains the determination of perpetuity—cannot be witnessed, understood, known, or apprehended insofar as they are viewed without any determination.",
+    "en": "Know next that the inner reality of the most holy Essence, the unseen depth of Identity, nondelimitation, and pre-eternity—which also contains the determination of perpetuity—cannot be witnessed, understood, known, or apprehended through determination at all.",
     "note": "The qualification min ḥayth al-taʿayyun is decisive: Farghānī denies comprehension of the absolute Essence in its very undelimitedness, not all knowledge through divine self-disclosure.",
     "compare": "Compare the Absolute/Beyond-Being distinction, without presuming that realized knowledge of a determination exhausts the absolute.",
     "sourceUrl": "https://ablibrary.net/book_content/b/9606/19?lang=ar",
@@ -287,7 +287,7 @@ window.FARGHANI_UNITS=[
     "en": "Existence, then, means and is in reality that by which the form of each determination finds itself and what is like itself as a spiritual, imaginal, or corporeal existent, appearing in each rank according to its own character and rule.",
     "note": "Citation checked against a parallel Arabic transcription of p. 32. The distinctions among ranks govern what can appear in each; they cannot be collapsed into the same homogeneous mode of existence.",
     "compare": "Compare Guénon's formless, subtle, and gross states, carefully separating the criteria governing each taxonomy.",
-    "sourceUrl": "https://alshrefalm7sy.ahlamontada.com/t3203",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/32?lang=ar",
     "scope": "exact selected source clause, not entire printed page"
   },
   {
@@ -299,7 +299,7 @@ window.FARGHANI_UNITS=[
     "en": "On this account, bringing into existence and creating is nothing other than the Creator's—exalted and holy is He—giving cosmic realities that through which they find themselves, by attributing to them a determination from Him.",
     "note": "The remainder of this passage attributes the disclosure of their characteristic effects to such existential bestowal at each rank. The ontological status of created causal power is not established by this sentence alone.",
     "compare": "This is a decisive test case against Thomistic participated esse and for the distinction between divine act and finite manifestation.",
-    "sourceUrl": "https://alshrefalm7sy.ahlamontada.com/t3203",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/32?lang=ar",
     "scope": "exact selected source clause, not entire printed page"
   }
 ];
