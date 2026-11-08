@@ -124,7 +124,9 @@ async def test(page):
           "Dated individual book lacks source citation")
     check(b["timelineSvg"],"Selecting work removed chronological diagram")
 
-    # Vertical condensed companion is not a source list.
+    # Vertical companion shows either the selected school or the whole subject.
+    # Clear the zoomed Ḥanafī lane here to inspect the full multi-school synopsis.
+    await page.locator('[data-dn-lane=""]').first.click()
     await page.locator('[data-dn-mode="summary"]').click()
     a=await wait_subject(page,"summary")
     check(a["summarySvg"] and a["workCount"]>=15,
