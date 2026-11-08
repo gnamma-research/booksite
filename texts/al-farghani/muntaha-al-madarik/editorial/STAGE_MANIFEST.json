@@ -1,0 +1,161 @@
+{
+  "schema": "gnamma-farghani-stage-provenance-v1",
+  "stage": "2026-11-08-first-foundation-working-critical-introduction",
+  "work": "Saʿīd al-Dīn al-Farghānī — Muntahā al-madārik, introductory four uṣūl",
+  "branch": "master",
+  "repository": "gnamma-research/booksite",
+  "status": "NOT FULLY CUMULATIVE: full authorial Arabic and the rest of four-foundation introduction are not yet transcribed, translated, or collated",
+  "new_source_english_draft": {
+    "witness": "B2007",
+    "page_start": 18,
+    "page_end": 34,
+    "printed_pages": 17,
+    "canonical_path": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_34.md",
+    "reader_path": "texts/al-farghani/muntaha-al-madarik/continuous-translation.html",
+    "quality": "consecutive-order English working draft; not independently clause-checked"
+  },
+  "source_linked_bilingual_excerpts": {
+    "count": 32,
+    "beirut_pages_sampled": "18–34",
+    "canonical_path": "texts/al-farghani/muntaha-al-madarik/data/units.js",
+    "quality": "source-linked selections, not continuous full-page bilingual translation"
+  },
+  "scholarly_critical_introduction": {
+    "status": "original complete twelve-section editorial essay, not authorial text",
+    "source": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_INTRODUCTION.md",
+    "reader_path": "texts/al-farghani/muntaha-al-madarik/critical-introduction.html"
+  },
+  "verified_historical_manuscript_variants": 0,
+  "source_text_complete": false,
+  "arabic_full_continuous": false,
+  "english_full_introduction_complete": false,
+  "verified_1876_to_beirut_page_concordance": false,
+  "coverage_percent": null,
+  "unresolved_textual_loci": [
+    {
+      "siglum": "B2007",
+      "page": 21,
+      "locus": "من حيث واحديتها",
+      "status": "F007 digital excerpt restored; historic-print control pending"
+    },
+    {
+      "siglum": "B2007",
+      "page": 33,
+      "locus": "في عون هذا",
+      "status": "uncertain digital reading; no conjectural change"
+    },
+    {
+      "siglum": "B2007",
+      "page": 34,
+      "locus": "الحضرة العملية",
+      "status": "retain digital reading pending collation"
+    }
+  ],
+  "continuation_pointer": {
+    "witness": "B2007",
+    "page": 35,
+    "url": "https://ablibrary.net/book_content/b/9606/35?lang=ar",
+    "last_translated_arabic_page_end": "فسمى جميع هذه الأسماء هذا",
+    "first_untranslated_arabic_page_start": "التعين الثاني النفسي المذكور، ولهذا التعين وما تعين به وفيه من التجلي الثاني"
+  },
+  "files": [
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/index.html",
+      "git_blob_sha": "c4242b269f8a9ee41d69cde88aad70546bac9988",
+      "characters": 8882,
+      "bytes_utf8": 9016
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/reader.css",
+      "git_blob_sha": "15e14af50a2c281252b4b8561df9127453f48466",
+      "characters": 4901,
+      "bytes_utf8": 4905
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/reader.js",
+      "git_blob_sha": "aced2e1d612f93034f7a35466c04b849b62dec04",
+      "characters": 13785,
+      "bytes_utf8": 13843
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/data/units.js",
+      "git_blob_sha": "1f9725df629cd16003083a5ff5002acaf5fb340c",
+      "characters": 33695,
+      "bytes_utf8": 37521
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/critical-introduction.html",
+      "git_blob_sha": "83aa7cc3f032a2fdd0052d3be43c848c82745dea",
+      "characters": 27241,
+      "bytes_utf8": 27502
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/continuous-translation.html",
+      "git_blob_sha": "33ee2057b3c8742ec6dd1dbff4927f0999df7813",
+      "characters": 73508,
+      "bytes_utf8": 74273
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/opening-translation.html",
+      "git_blob_sha": "c1083ff6d195ba76791881d459efbe9eb391205d",
+      "characters": 25676,
+      "bytes_utf8": 25960
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/STATUS.md",
+      "git_blob_sha": "c0f4f6cc5c6b02cc9902e653d7a2fc85a6cc7c50",
+      "characters": 8841,
+      "bytes_utf8": 9021
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_INTRODUCTION.md",
+      "git_blob_sha": "940cb7ab03df02252e7ab34c60dbd48af473e843",
+      "characters": 19619,
+      "bytes_utf8": 19847
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/COMPARISON.md",
+      "git_blob_sha": "ca88320fcbeaebc4494d24bddc3a522832f8d364",
+      "characters": 7606,
+      "bytes_utf8": 7701
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/GLOSSARY.md",
+      "git_blob_sha": "dd67a311d42feb85489da32f7704d80bad264543",
+      "characters": 4260,
+      "bytes_utf8": 4523
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/WITNESS_REGISTER.json",
+      "git_blob_sha": "caa53e3a01d1225a86913291e0b37c5fc6ba9eba",
+      "characters": 6979,
+      "bytes_utf8": 7176
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/OPENING_TRANSLATION_18_23.md",
+      "git_blob_sha": "a4a398e6005a7ff895ebe57dad0064352d0fa440",
+      "characters": 19000,
+      "bytes_utf8": 19229
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/CONTINUATION_TRANSLATION_24_29.md",
+      "git_blob_sha": "ee1e4e283ccd9ba24e39031f1ebc0f4b7f7c1f56",
+      "characters": 21243,
+      "bytes_utf8": 21516
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/CONTINUATION_TRANSLATION_30_34.md",
+      "git_blob_sha": "3dba5013ae74562eb87f9725ae5a8edf7acc16e0",
+      "characters": 21181,
+      "bytes_utf8": 21370
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_34.md",
+      "git_blob_sha": "474c2be3327caafea6e4554b0b2a8858f7261d6b",
+      "characters": 63112,
+      "bytes_utf8": 63807
+    }
+  ],
+  "generated_at_date": "2026-11-08",
+  "note": "Preserved as separate versioned GitHub files, not one standalone all-source ZIP. Source images remain external; no claim of a complete critical edition or verified Pages deployment."
+}
