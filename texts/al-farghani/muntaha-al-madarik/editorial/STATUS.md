@@ -6,7 +6,7 @@
 
 **English–Arabic source checking:** 80 individual loci in Passes I–II (B2007 pp18–23), 62 in Pass III (pp24–29), and **56 new selected loci in Pass IV (pp30–36)**: **198 distinct machine-readable critical records across 19 pages with some checked spans**. All pages after p23 remain incompletely proofread even where selected clauses were examined. This is not an independently constituted critical Arabic copy-text.
 
-**Historical census:** [expanded witness census](WITNESS_CENSUS_CRITICAL_004.md) records Y706, F3966, C1107, R670, K273, R669, C1746, SA1347 and H236; [witness JSON](WITNESS_REGISTER.json). Chittick's 2025 manuscript-based text used Carullah 1107, Ragıp Paşa 670, Kadızademehmed 273; it is **indirect corroborative scholarship**, not manuscript readings observed here.
+**Historical census:** [expanded witness census](WITNESS_CENSUS_CRITICAL_004.md) now records eleven catalogue candidates: Y706, F3966, C1107, R670, K273, R669, C1746, SA1347, H236, H154 (Heidelberg), and G2267 (incomplete Gotha); [witness JSON](WITNESS_REGISTER.json). Chittick's 2025 manuscript-based text used Carullah 1107, Ragıp Paşa 670, Kadızademehmed 273; it is **indirect corroborative scholarship**, not manuscript readings observed here.
 
 **Decision register:** [12-locus editorial decisions](CRITICAL_LOCUS_REGISTER_004.json), particularly B2007 p33 `في عون هذا`, B2007 p34 `الحضرة العملية` vs p36 `الحضرة العمائية`, and p31 missing whitespace in `الماءلون`. No historical text emendation has been made without external manuscript evidence. Independent 1876 or manuscript collation **0 pages**, established independent Farghānī manuscript variants **0**.
 
