@@ -179,14 +179,14 @@
       };
       addToggle("Show source and textual notes","notes",()=>{});
       addToggle("Show separate Guénon–Schuon comparisons","compare",()=>{});
-      addToggle("Continuous scroll through all 25 selected extracts","continuous",()=>{});
+      addToggle("Continuous scroll through all 32 selected extracts","continuous",()=>{});
       const scale=el("div","setting-row");
       scale.append(el("label",null,"Reading size "));
       const range=el("input");range.type="range";range.min=".8";range.max="1.5";range.step=".05";range.value=String(preferences.scale);
       range.addEventListener("input",()=>{preferences.scale=Number(range.value);apply();persist();});
       scale.append(range);form.append(scale);
       const status=el("div","setting-row");
-      status.append(el("strong",null,"Editorial status"),el("p",null,"25 selected translation extracts across p. 18–32, with gaps; introduction not completed; no manuscript collation."));
+      status.append(el("strong",null,"Editorial status"),el("p",null,"32 selected translation extracts across p. 18–32, with gaps; introduction not completed; no manuscript collation."));
       status.append(link("Detailed translation register","editorial/STATUS.md"));
       form.append(status);
       place.append(form);
