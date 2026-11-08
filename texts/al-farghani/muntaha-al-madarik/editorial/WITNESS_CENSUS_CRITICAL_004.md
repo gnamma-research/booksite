@@ -15,7 +15,12 @@
 | SA1347 | Süleymaniye, Şehid Ali Paşa 1347 | *Muntahā* occurs as **Work 5** within a composite codex; extent, relevant folios and copy date require explicit verification. | **Low/conditional** until the exact folios and completeness are identified. |
 | H236 | Süleymaniye, Halet Efendi 236 | St Andrews: **20th-century** copy, 240 total folios; Farghānī's entry at **1v–78v**. | **Low/conditional**: possibly extract/abridgment; determine what text it reproduces. |
 
-**Additional potential sources:** other catalogues and archives remain to be checked for independently transmitted early copies. The above is a prioritized *known* census, not an exhaustive list of all copies worldwide.
+| H154 | Universitätsbibliothek Heidelberg, **Cod. Heid. Orient. 154** | Undated (*o.D.*) digital catalogue, text identified on **fols. 1v–322r**; openly catalogued online. | **High conditional** for remote comparison, but text leaves are presently inaccessible through the site's Anubis guard in this research session. Binding JPEG is accessible but is not textual evidence; date, hands and the introduction's foliation still need inspection. |
+| G2267 | Gotha Research Library, **MS 2267** (*Muntahā al-madārik*) | Giuseppe Scattolin (2001), appendix on Ibn al-Fāriḍ manuscripts, gives **87 folios, incomplete** (citing Pertsch's Gotha catalogue). | **Conditional/low**: identify which sections survive; cannot assume introduction present or read any variant without leaf images. |
+
+**Additional potential sources:** other catalogues and archives remain to be checked for independently transmitted early copies. The above is a prioritized *known* eleven-codex census, not an exhaustive list of all copies worldwide.
+
+**Additional catalogue sources added:** Heidelberg digilib https://digi.ub.uni-heidelberg.de/diglit/codheidorient154/0001 (folio identification 1v–322r, no date reported). Giuseppe Scattolin, “Towards a Critical Edition of Ibn al-Fārid's Dīwān,” *Annales Islamologiques* 35 (2001), p. 537 (Gotha MS 2267, incomplete 87 fols): https://www.ifao.egnet.net/anisl/035/17 . **Neither has been compared textually.**
 
 ## 2. Prints and indirect sources
 
