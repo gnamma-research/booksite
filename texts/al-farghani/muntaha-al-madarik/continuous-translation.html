@@ -39,6 +39,17 @@ article{font-size:17px;padding:3px 17px 90px}article h1{font-size:29px}article h
 .heading{padding:22px 17px 0}.outline{padding-left:17px;padding-right:17px}
 }
 @media print{#topbar,.outline{display:none}article{max-width:none;font-size:11pt;line-height:1.55}article h3{break-after:avoid}}
+
+/* GNAMMA Farghānī compact continuous mode, 9 Nov 2026: no ornamental gaps per printed page. */
+article.b2007,article{line-height:1.67}
+article .b2007-page{padding:5px 0 7px;margin:0;border-bottom:1px solid var(--line)}
+article .b2007-page h3{margin:13px 0 5px!important;padding:0!important;border:0!important;font-size:clamp(19px,2.6vw,22px)!important;line-height:1.3;letter-spacing:-.005em}
+article .b2007-page p{margin:3px 0 9px!important;line-height:1.7}
+article .b2007-page blockquote{margin:6px 0 10px;padding:8px 13px;line-height:1.7}
+article .b2007-page a{font-size:inherit}
+article h1{margin:16px 0 7px}article h2{margin:18px 0 8px}
+@media(max-width:630px){article .b2007-page{padding:3px 0 6px}article .b2007-page h3{margin:9px 0 4px!important;font-size:19px!important}article .b2007-page p{margin:2px 0 7px!important;line-height:1.64}}
+@media print{article .b2007-page{break-inside:auto}article .b2007-page h3{break-after:avoid}}
 </style></head>
 <body><a class="skip-link" href="#document">Skip to translation</a>
 <header id="topbar" aria-label="Gnamma navigation"><div class="left"><a class="brand-link" href="../../../"><img src="../../../assets/gnamma-mark.svg" alt=""><strong>GNAMMA</strong></a></div>
