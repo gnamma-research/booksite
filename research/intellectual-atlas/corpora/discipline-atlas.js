@@ -651,3 +651,4 @@ window.GNDisciplineAtlas={render,debug:()=>({genre,mode:S.mode,from:S.from,to:S.
  page:S.page,svg:host.querySelectorAll("[data-dn-map] svg").length,
  source:S.source,selected:S.book,schools:lanes.length,jurists:jurists.length})};
 })();
+
