@@ -96,7 +96,7 @@
     "start_p135": "والتقيّد وآثارهما والجامع لكلّيات تلك الخواص والآثار الحبّية عبّر عنه بعض المحقّقين بقسم الأحوال"
   },
   "edition_status": "self-contained cumulative working-stage handoff; not completed manuscript-critical bilingual edition",
-  "publication_status": "Committed to default GNAMMA repo; public Pages deployment not yet independently verified",
+  "publication_status": "All P134 GitHub repository files committed and fetched for validation; GitHub Pages deployment requires a successful workflow check",
   "file_inventory": [
     {
       "path": "texts/al-farghani/muntaha-al-madarik/editorial/COMPARISON.md",
@@ -275,8 +275,8 @@
     },
     {
       "path": "texts/al-farghani/muntaha-al-madarik/continuous-translation.html",
-      "blob_sha": "2d4dd5b6326bb98985a6840686a8661845bdfba2",
-      "bytes_utf8": 410096
+      "blob_sha": "f88bb3a62db56749eee2fce1ec73fed8026a08e6",
+      "bytes_utf8": 410129
     },
     {
       "path": "texts/al-farghani/muntaha-al-madarik/critical-introduction.html",
@@ -285,8 +285,8 @@
     },
     {
       "path": "texts/al-farghani/muntaha-al-madarik/handoffs.html",
-      "blob_sha": "68a4da64a831a30e8dc61bef68e1f54b8cd49402",
-      "bytes_utf8": 9952
+      "blob_sha": "33cf795fee4959e40e06b57b7f97976629394c66",
+      "bytes_utf8": 10834
     },
     {
       "path": "texts/al-farghani/muntaha-al-madarik/reader.js",
@@ -297,11 +297,25 @@
       "path": "texts/al-farghani/muntaha-al-madarik/reader.css",
       "blob_sha": "352ecf1252fddcd9b13e0a388cea0417f761dd72",
       "bytes_utf8": 5921
+    },
+    {
+      "path": "texts/index.html",
+      "blob_sha": "496fa3283e839ba50b7916c426a9856d28628e7a",
+      "bytes_utf8": 6645
+    },
+    {
+      "path": "texts/manifest.json",
+      "blob_sha": "f16d18caceab91fbc413c347b7e9e381769a6705",
+      "bytes_utf8": 23662
     }
   ],
   "source_urls_for_print": [
     "https://ablibrary.net/book_content/b/9606/18?lang=ar",
     "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en"
   ],
-  "quality_note": "Sequential page headings, source page links and source-register completeness are structural checks only. English fidelity awaits bilingual clause audit. Online forum transcription is not an independent manuscript witness."
+  "quality_note": "Sequential page headings, source page links and source-register completeness are structural checks only. English fidelity awaits bilingual clause audit. Online forum transcription is not an independent manuscript witness.",
+  "publication_file_revision_check": "2026-11-09",
+  "handoff_archive_page": "texts/al-farghani/muntaha-al-madarik/handoffs.html",
+  "handoff_archive_latest": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_P134.md",
+  "source_text_validation_note": "Source-page headings and source links are complete; textual fidelity remains unverified by independent collator."
 }
