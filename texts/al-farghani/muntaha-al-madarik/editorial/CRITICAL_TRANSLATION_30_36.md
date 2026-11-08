@@ -424,9 +424,9 @@
 
 ### CR004-043 · B2007 p35 · retain
 
-**Arabic:** ولهذا التعيّن وما تعيّن به وفيه من التجلّي الثاني ... وحدة وكثرة وبرزخ فاصل وجامع بينهما
+**Arabic:** وحدة وكثرة وبرزخ فاصل وجامع بينهما
 
-**Verified/revised English:** This determination and its second disclosure possess unity, multiplicity, and an intermediary separating and combining them.
+**Verified/revised English:** These possess unity, multiplicity, and an intermediary both separating and comprehending them.
 
 **Decision:** The threefold structure must not be conflated with three distinct substances.
 
@@ -514,9 +514,9 @@
 
 ### CR004-052 · B2007 p36 · annotate
 
-**Arabic:** وأمّا البرزخ الذي هو على الحقيقة منشىء هذين الطرفين المذكورين ... فإنما هي الحقيقة الإنسانية
+**Arabic:** فإنما هي الحقيقة الإنسانية
 
-**Verified/revised English:** The intermediary giving rise to and comprising those two poles is the human reality.
+**Verified/revised English:** That intermediary is the human reality.
 
 **Decision:** Mixed grammatical gender al-barzakh ... hiya al-ḥaqīqa signals a predicate shift to feminine 'reality', not automatically a corrupt reading.
 
