@@ -7,7 +7,11 @@
     "notes": "The printed and digital Beirut paginations do not correspond; never copy a number without labelling its witness.",
     "critical_edition_status": "not-yet-constituted",
     "continuous_full_arabic_transcription": false,
-    "continuous_full_english_translation": false
+    "continuous_full_english_translation": false,
+    "consecutive_english_draft": "Beirut B2007 pp.18–34, 17 pages in working translation; not line-by-line proofed or independently collated",
+    "english_draft_authorial_pages": 17,
+    "complete_full_critical_introduction": false,
+    "critical_scholarly_editorial_essay": "editorial/CRITICAL_INTRODUCTION.md"
   },
   "witnesses": [
     {
@@ -44,10 +48,12 @@
         29,
         30,
         31,
-        32
+        32,
+        33,
+        34
       ],
-      "access": "page HTML directly inspected (certain pages newly in this review); digital text used in 25 selected-clause units",
-      "accessGrade": "digital-text-transcription-inspected-selectively",
+      "access": "page HTML directly inspected for selected authorial clauses through p.34; separate working English draft through pp.18–34; full Arabic authorial transcription still incomplete",
+      "accessGrade": "modern-digital-text-examined; no manuscript-equivalent authority",
       "role": "temporary working transcription only",
       "variantsExamined": 0
     },
@@ -103,6 +109,24 @@
       "criticalVariant": false,
       "manuscriptSupport": null,
       "status": "corrected-digital-extract; print/manuscript validation pending"
+    },
+    {
+      "id": "ED-0002",
+      "location": "B2007 p.33 second determination, transitional wording near عون هذا",
+      "type": "unresolved-digital-reading",
+      "evidence": "digital Arabic text displays a short syntactically uncertain transition; I1876 and Y706 have not been inspected at this locus",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "no-emendation; retain paraphrastic English flag and check actual witness"
+    },
+    {
+      "id": "ED-0003",
+      "location": "B2007 p.34, الحضرة العملية",
+      "type": "unresolved-digital-reading",
+      "evidence": "the digital print reads al-ḥaḍra al-ʿamaliyya in the second-determination name register; context may suggest a different abstract qualifier, but no second witness has been read",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "no-emendation; literal translation retained with warning"
     }
   ],
   "selectionRule": "Do not create a variant reading or siglum support unless two independent witnesses have actually been inspected in the relevant locus. Orthographic normalization is not a textual variant.",
