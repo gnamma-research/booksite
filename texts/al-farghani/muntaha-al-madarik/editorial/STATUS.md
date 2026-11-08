@@ -6,11 +6,11 @@
 
 ## Actual coverage and quality
 
-- **25 source-matched authorial extracts**, each with Arabic, a new English working translation, exact digital page, and separate editorial explanation.
-- **Pages sampled:** 18–32 of the modern Beirut digitization (`ablibrary.net/book_content/b/9606/{page}`). This is a page *range of sampled text*, **NOT fifteen fully translated pages**. It includes discontinuities and omitted sentences.
+- **32 source-matched authorial extracts**, each with Arabic, a new English working translation, exact digital page, and separate editorial explanation.
+- **Pages sampled:** 18–34 of the modern Beirut digitization (`ablibrary.net/book_content/b/9606/{page}`). This is a page *range of sampled text*, **NOT seventeen fully translated pages**. It includes discontinuities and omitted sentences.
 - **Foundation:** first foundation only. Selected clauses concern hiddenness, unity, self-disclosure, names, degrees of inward comprehension, perfection, knowledge, and existential determination.
 - **Not translated:** the majority of the first foundation, the rest of the approximately 107-page 1876 introductory division, the full later commentary, the Persian *Mashāriq al-darārī*. Nothing omitted is silently represented as translated.
-- **Textual basis:** Arabic text of the modern Beirut printed edition, edited by ʿĀṣim Ibrāhīm al-Kayyālī, as digitized by Ahlulbayt Library. Page 32 is verified directly in the same Beirut digital witness (its page-specific source link now works). Editorial footnotes have **not** been incorporated into Farghānī's authorial text.
+- **Textual basis:** Arabic text of the modern Beirut printed edition, edited by ʿĀṣim Ibrāhīm al-Kayyālī, as digitized by Ahlulbayt Library. Pages 32–34 are verified directly in the same Beirut digital witness (its page-specific source link now works). Editorial footnotes have **not** been incorporated into Farghānī's authorial text.
 - **Collation:** source-anchored transcription only. No manuscript leaf images collated, and no systematic comparison against the 1876 Istanbul print has yet been carried out.
 - **Translation status:** working scholarly translation, not a definitive critical edition. The bilingual data accurately displays selected source clauses only; it does not interpolate missing authorial text.
 - **Comparative layer:** explicitly *modern editorial research*, never Farghānī's Arabic or an attribution of perennialist doctrine to him.
@@ -35,9 +35,11 @@ The Arabic has some unvowelled lexical/typographical uncertainty in the digital 
 | 29 | F018 | One selected clause |
 | 30 | F019–F020 | Two selected clauses |
 | 31 | F021–F023 | Three selected clauses |
-| 32 | F024–F025 | Two selected clauses, directly verified against page-specific Arabic source |
+| 32 | F024–F027 | Four selected clauses, directly verified against page-specific Arabic source |
+| 33 | F028–F029 | Two selected clauses from the second determination discussion |
+| 34 | F030–F032 | Three selected clauses on the names, divinity, and the rank of possibility |
 
-**Total:** 25 passage records; there is *no* claim of complete-page coverage anywhere in this register.
+**Total:** 32 passage records; there is *no* claim of complete-page coverage anywhere in this register.
 
 ## Sources and editions
 
