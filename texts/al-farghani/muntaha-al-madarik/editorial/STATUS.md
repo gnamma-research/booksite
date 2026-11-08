@@ -1,6 +1,30 @@
 # Muntahā al-madārik · Editorial and translation register
 
-## Current stage — 9 November 2026 · 50 more pages · cumulative P134
+## Current milestone — completed English draft of introduction; first critical source pass (9 November 2026)
+
+**Authorial English translation:** All four foundations of the introduction plus the concluding two-page preface now have a continuous **working English draft** from Beirut printed B2007 **pp.18–145 (128 consecutively numbered pages)**. The fourth foundation concludes at p.143; the distinct *tatimmat al-dībāja* occupies pp.144–145. **New final installment:** pp.135–145 (11 pages), separately preserved as `TRANSLATION_135_139.md` and `TRANSLATION_140_145.md`. Cumulative draft: [WORKING_TRANSLATION_18_145.md](WORKING_TRANSLATION_18_145.md); compact [English reader](../continuous-translation.html).
+
+**Arabic–English critical review (BEGINNING, not definitive):** 80 authorial clauses from **B2007 pp.18–23** have been compared with the modern Beirut digital Arabic, individually rendered into revised English, and annotated. Full review: [CRITICAL_TRANSLATION_18_23.md](CRITICAL_TRANSLATION_18_23.md); findings: [CRITICAL_AUDIT_STAGE_001.md](CRITICAL_AUDIT_STAGE_001.md); [interactive paired clause review](../critical-edition.html); machine-readable data: `data/critical-pass-001-p18-20.js` and `data/critical-pass-002-p21-23.js`. **Five clause-level cruxes remain open**. Verified manuscript variants remain **zero**.
+
+**Truthful progress dimensions:**
+
+| Workstream | Actually present | NOT yet present |
+|---|---|---|
+| English authorial translation | 128 sequential printed B2007 page headings, pp18–145, *working draft* | Independent clause-by-clause proofreading across remaining 122 pages, specialist critical sign-off |
+| Source-language alignment | 80 source-checked clauses across six opening pages; 32 previously selected Arabic–English excerpts | Continuous full Arabic authorial copy-text and its alignment for pp18–145 |
+| Historical textual criticism | Witness catalogue, four recorded earlier flags plus new crux register; al-Fanārī reception quotation | Independently collated 1876 historical print or any actual manuscript folio; justified copy-text; established variants |
+| Cumulative preservation | Current `FULL_CUMULATIVE_P145.md` and `STAGE_MANIFEST_P145.json`, historical P134/P84/P34 snapshots preserved | The untranslated verse-by-verse commentary, or full manuscript evidence |
+| GNAMMA presentation | Compact 128-page English draft and new Arabic–English critical clause review | Verified public Pages deployment of latest revision; complete bilingual immersive edition |
+
+**Important:** a page heading and a source link do **not** certify page-level translation fidelity. The entire 128-page English draft is **not** labelled definitively checked. The directly checked modern printed Arabic covers only pp.18–23. Do not calculate a definitive percentage from the 1876 edition's 107-page introduction; its pagination differs. The new English draft coverage of the introduction is **structurally complete**, but the critical Arabic–English edition is **not yet constituted**.
+
+**Next exact critical checking locus:** B2007 **p.24**, authorial opening continuing the discussion of essential affairs (*shuʾūn dhātiyya*); see https://ablibrary.net/book_content/b/9606/24?lang=ar. The verse-by-verse poem commentary follows after the introductory preface but belongs to a separate translation project.
+
+**Five currently tagged crux clauses in the opening audit:** B2007 p.18 `بطون المشتمل`, p.19 `المطلب الغائبّ`, p.19 `عمليّا ووجوديّا` (context may suggest `علميّا` but must not be silently emended), p.23 `إلّا أنه ربما يكون` and p.23 `فلم تعلم ولم يحكم بشيء منها إلا بعد تعيّنها`. The p.21 `من حيث واحديتها` correction is preserved, with late secondary quotation in al-Fanārī's `Miṣbāḥ al-uns` p.183. None of these constitutes a verified independent manuscript variant.
+
+
+
+## Historical P134 stage — 9 November 2026 · 50 pages (superseded by P145 milestone)
 
 **NEW English working translation, B2007 pp.85–134 (50 printed pages), plus inherited pp.18–84: 117 consecutively numbered Beirut pages in one cumulative English working draft.**
 
