@@ -558,11 +558,13 @@ function selectedWork(id,relation=false){
  if(relation){S.edge=id;S.work="";}
  else{S.work=id;S.edge="";}
  const existing=host.querySelector(".dn-detail");
+ console.info("GNAMMA_DN_DETAIL_BEFORE",!!existing,S.book,S.edge,host.querySelectorAll(".dn-detail").length);
  if(!existing)return refresh();
  const wrapper=document.createElement("div");wrapper.innerHTML=detailHTML();
  existing.replaceWith(wrapper.firstElementChild);
  host.querySelectorAll("[data-dn-work]").forEach(el=>el.classList.toggle("dn-picked",el.getAttribute("data-dn-work")===S.work));
  saveHash();
+ console.info("GNAMMA_DN_DETAIL_AFTER",S.book,S.edge,location.hash,host.querySelector(".dn-detail")?.textContent?.slice(0,130));
  if(S.work&&window.matchMedia?.("(max-width:700px)")?.matches)
    host.querySelector(".dn-detail")?.scrollIntoView({block:"nearest"});
 }
