@@ -8,3 +8,7 @@ This is an **explicit, reproducible one-off request** to retrieve images from th
 - Workflow: .github/workflows/farghani-historical-facsimile-ingest.yml
 
 **Evidence policy**: acquisition is not textual collation. Record scan index, canvas label, image URL and SHA. Do not promote image count or OCR output to any “established variant” until inspected at the actual reading. Distinguish I1876 page numbers from PDF/image indexes and from modern B2007 page numbers. If the source is inaccessible, the workflow logs and saved report establish the access failure, not a conjectured reading.
+
+## Retry 2 — PDF fallback rendering fix
+
+The initial source capture verified that the NYU IIIF manifest has 368 canvases and the 37.30 MB PDF was downloadable on the runner, but the runner lacked the previous poppler command. The script now uses PyMuPDF directly to render the downloaded 1876 facsimile. Do not equate image capture with independently verified readings.
