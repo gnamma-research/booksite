@@ -47,7 +47,7 @@ def save_image(index, raw, source_url, canvas_label):
     pil=ImageOps.exif_transpose(pil).convert("RGB")
     maxw=1750
     if pil.width>maxw:
-        pil.resize((maxw,round(pil.height*maxw/pil.width)),Image.Resampling.LANCZOS)
+        pil=pil.resize((maxw,round(pil.height*maxw/pil.width)),Image.Resampling.LANCZOS)
         pil.thumbnail((maxw,4000),Image.Resampling.LANCZOS)
     target=OUT/("scan_%04d.jpg"%index)
     pil.save(target,format="JPEG",quality=78,optimize=True,subsampling=0)
@@ -66,16 +66,19 @@ def acquire_manifest():
 def pdf_fallback(records,errs):
     path=Path("/tmp/gnamma-farghani-I1876-lo.pdf")
     try:
+        import fitz
         data=get_bytes(PDF,timeout=220)
         path.write_bytes(data)
         report={"pdf_url":PDF,"source_sha256":hashlib.sha256(data).hexdigest(),"bytes":len(data)}
-        result=subprocess.run(["pdfinfo",str(path)],capture_output=True,text=True)
-        report["pdfinfo_excerpt"]=result.stdout[:1700]
-        tmp=Path("/tmp/farghani-rendered");tmp.mkdir(exist_ok=True)
-        subprocess.run(["pdftoppm","-f","1","-l","50","-jpeg","-r","110","-jpegopt","quality=75",str(path),str(tmp/"scan")],check=True,timeout=220)
-        names=sorted(tmp.glob("scan-*.jpg"))
-        for i,n in enumerate(names,start=1):
-            records.append(save_image(i,n.read_bytes(),PDF+"#scan="+str(i),"PDF page "+str(i)))
+        doc=fitz.open(str(path))
+        report["pdf_page_count"]=len(doc)
+        for i in INDICES:
+            if i>len(doc):continue
+            page=doc[i-1]
+            pix=page.get_pixmap(matrix=fitz.Matrix(1.7,1.7),colorspace=fitz.csRGB,alpha=False)
+            raw=pix.tobytes("png")
+            records.append(save_image(i,raw,PDF+"#scan="+str(i),"PDF scan "+str(i)))
+        doc.close()
         return report
     except Exception as e:
         errs.append("PDF fallback: "+repr(e))
@@ -97,7 +100,7 @@ def produce():
     started=time.time();records=[];errors=[];catalog={"manifest_url":MANIFEST,"downloaded_at_utc":time.strftime("%Y-%m-%dT%H:%M:%SZ",time.gmtime()),"target_scan_indices":INDICES}
     try:
         manifest,canvases=acquire_manifest()
-        catalog.update({"manifest_id":manifest.get("@id") or manifest.get("id"),"manifest_label":manifest.get("label"),"canvas_count":len(canvases),"access":"readable JSON"})
+        catalog.update({"manifest_id":manifest.get("@id") or manifest.get("id"),"manifest_label":manifest.get("label"),"canvas_count":len(canvases),"first_canvas_keys":list(canvases[0].keys()) if canvases else [],"access":"readable JSON"})
         for index in INDICES:
             if index>len(canvases):continue
             canvas=canvases[index-1];label=canvas.get("label",index)
