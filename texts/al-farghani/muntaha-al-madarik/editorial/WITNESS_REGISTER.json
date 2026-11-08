@@ -1,0 +1,119 @@
+{
+  "schema": "gnamma-farghani-introduction-witness-register-v1",
+  "work": "Saʿīd al-Dīn al-Farghānī, Muntahā al-madārik, introductory four uṣūl",
+  "updated": "2026-11-08",
+  "scope": {
+    "historical_print": "1876 Istanbul volume I, printed pages 1–107 per Scattolin",
+    "notes": "The printed and digital Beirut paginations do not correspond; never copy a number without labelling its witness.",
+    "critical_edition_status": "not-yet-constituted",
+    "continuous_full_arabic_transcription": false,
+    "continuous_full_english_translation": false
+  },
+  "witnesses": [
+    {
+      "siglum": "I1876",
+      "kind": "historical-print",
+      "title": "Muntahā al-madārik, 1293/1876 Istanbul, vol. I",
+      "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en",
+      "pageRange": "1–107: introductory division (Scattolin)",
+      "editor": "Muḥammad Shukrī al-ʿŪfī, reported by Scattolin",
+      "access": "catalogue and public-domain digital facsimile locator verified; individual page images NOT collated",
+      "accessGrade": "catalogued-scan-not-inspected",
+      "role": "intended historical print control; not yet a copy-text",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "B2007",
+      "kind": "modern-edition-digital",
+      "title": "Muntahā al-madārik, ed. ʿĀṣim Ibrāhīm al-Kayyālī, Dār al-Kutub al-ʿIlmiyya",
+      "url": "https://ablibrary.net/book_content/b/9606/18?lang=ar",
+      "printYear": "2007",
+      "pagesSampled": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "access": "page HTML directly inspected (certain pages newly in this review); digital text used in 25 selected-clause units",
+      "accessGrade": "digital-text-transcription-inspected-selectively",
+      "role": "temporary working transcription only",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "Y706",
+      "kind": "manuscript",
+      "title": "Süleymaniye Yazma Eserler Kütüphanesi, Yeni Camii 706",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Yeni_706%3Ba1?hl=Istanbul&hlu=",
+      "date": "14th century (catalogue)",
+      "extent": "291 folios; text catalogued on fols. 1v–131r",
+      "description": "Cataloguer reports an annotation at fol. 131r that the copy was collated against an original; this assertion has not been independently verified by viewing the folio.",
+      "access": "catalogue metadata only; NO manuscript images compared",
+      "accessGrade": "catalogue-only",
+      "role": "high-priority potential witness, not yet proven superior copy-text",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "Q2011",
+      "kind": "modern-edition",
+      "title": "Muntahā al-madārik, ed. Wisām al-Khaṭṭāwī, Qom, Āyat Ishrāq, 1390 SH",
+      "url": "https://ge.nii.ac.jp/ncid/BB1425879X",
+      "date": "2011 or 2012",
+      "extent": "2 volumes, 1116 pages",
+      "access": "bibliographic record only; text not read",
+      "accessGrade": "catalogue-only",
+      "role": "secondary control pending physical/text access",
+      "variantsExamined": 0
+    }
+  ],
+  "relatedNotWitnesses": [
+    {
+      "siglum": "P-Mashariq",
+      "title": "Farghānī, Mashāriq al-darārī (earlier Persian commentary)",
+      "note": "A distinct authorial work rather than an Arabic witness. Its correspondence should be treated as recensional history, not as a simple Arabic variant list.",
+      "access": "known published tradition, no comprehensive collation"
+    },
+    {
+      "siglum": "S2006",
+      "title": "Giuseppe Scattolin, 'The Key Concepts of al-Farghānī’s Commentary'",
+      "url": "https://ibnarabisociety.org/wp-content/uploads/PDFs/Scattolin_The-key-concepts.pdf",
+      "note": "Secondary study providing 1876 pagination and thematic analysis; individual quoted passages should not be treated as independent manuscript witnesses."
+    }
+  ],
+  "readings": [
+    {
+      "id": "ED-0001",
+      "location": "B2007 p.21, old extract F007",
+      "type": "editorial-transcription-correction",
+      "before": "... بذاته الأقدس، لا من حيث إطلاقها وأحديتها",
+      "after": "... بذاته الأقدس تعالى وتقدّس من حيث واحديتها، لا من حيث إطلاقها وأحديتها",
+      "evidence": "direct inspection of B2007 page 21 online; old GNAMMA unit omitted من حيث واحديتها",
+      "effect": "restores explicit opposition of wāḥidiyya and aḥadiyya",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "corrected-digital-extract; print/manuscript validation pending"
+    }
+  ],
+  "selectionRule": "Do not create a variant reading or siglum support unless two independent witnesses have actually been inspected in the relevant locus. Orthographic normalization is not a textual variant.",
+  "todo": [
+    "Inspect actual I1876 page images and identify page-by-page concordance with B2007",
+    "Acquire scan/access to Y706 and verify manuscript collation note fol. 131r",
+    "Establish source hierarchy; record lacunae, possible contamination and substantive variants",
+    "Collate alternative printed Q2011 readings if available, without assuming newer equals better",
+    "Separate authorial hadith citations from modern editor's attribution footnotes",
+    "Complete uninterrupted Arabic transcription and independent English translation",
+    "Review and validate all 25 existing bilingual extracts against at least a historical-print witness",
+    "Publish critical text only after substantial witness collation; until then label working text"
+  ]
+}
