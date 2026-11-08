@@ -2,7 +2,16 @@
 
 This is the **stable archive index** for the GNAMMA Farghānī source-critical translation project.
 
-## Latest canonical stage — source-critical Pass III (9 November 2026)
+## Current canonical stage — Critical Pass IV, 9 November 2026
+
+- [**Complete cumulative source-critical handoff IV**](FULL_CUMULATIVE_CRITICAL_004.md) — preserves all prior English and audit material, adds 56 selected B2007 pp30–36 source-checked loci, full manuscript census, decision register, quality ledger and current handoff.
+- [New 56-locus Arabic–English review](CRITICAL_TRANSLATION_30_36.md), [structured source spans](../data/critical-pass-004-p30-36.js), [198-clause critical reader](../critical-edition.html).
+- [Nine-codex manuscript census and collation priorities](WITNESS_CENSUS_CRITICAL_004.md), [12 decision points](CRITICAL_LOCUS_REGISTER_004.json), [full witness status](WITNESS_REGISTER.json).
+- [Exact resumption instructions](STAGE_HANDOFF_CRITICAL_004.md). Next B2007 p37. **Do not** repeat the complete pp18–145 working translation.
+
+**Status:** 198 **selected** source comparisons on 19 Beirut pages; **0** historical print/manuscript leaves independently collated, **0** Farghānī manuscript variants established. Neither the 128-page translation nor the manuscript-critical Arabic is definitive.
+
+## Historical canonical stage — source-critical Pass III (9 November 2026)
 
 - [**Complete self-contained cumulative archive with P145 preserved plus Pass III**](FULL_CUMULATIVE_CRITICAL_003.md)
 - [62 selected source-checked Arabic–English spans, B2007 pp24–29](CRITICAL_TRANSLATION_24_29.md) and [analytical audit II](CRITICAL_AUDIT_STAGE_002.md)
