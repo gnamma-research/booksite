@@ -12,3 +12,7 @@ This is an **explicit, reproducible one-off request** to retrieve images from th
 ## Retry 2 — PDF fallback rendering fix
 
 The initial source capture verified that the NYU IIIF manifest has 368 canvases and the 37.30 MB PDF was downloadable on the runner, but the runner lacked the previous poppler command. The script now uses PyMuPDF directly to render the downloaded 1876 facsimile. Do not equate image capture with independently verified readings.
+
+## Retry after PDF renderer repair
+
+The first workflow run parsed 368 IIIF canvases but downloaded no individual images because the IIIF response uses an unexpected structure; its PDF fallback successfully fetched the full low-resolution file but failed at `pdfinfo` (not installed). The corrected pipeline now uses PyMuPDF for PDF page rendering. This trigger requests a new **finite** one-off attempt. Any scans are **uncollated** until visually examined; no claim of definitive edition is allowed on download success alone.
