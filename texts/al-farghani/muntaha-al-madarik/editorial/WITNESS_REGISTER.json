@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-farghani-introduction-witness-register-v1",
   "work": "Saʿīd al-Dīn al-Farghānī, Muntahā al-madārik, introductory four uṣūl",
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "scope": {
     "historical_print": "1876 Istanbul volume I, printed pages 1–107 per Scattolin",
     "notes": "The printed and digital Beirut paginations do not correspond; never copy a number without labelling its witness.",
@@ -9,9 +9,13 @@
     "continuous_full_arabic_transcription": false,
     "continuous_full_english_translation": false,
     "consecutive_english_draft": "Beirut B2007 pp.18–34, 17 pages in working translation; not line-by-line proofed or independently collated",
-    "english_draft_authorial_pages": 17,
+    "english_draft_authorial_pages": 117,
     "complete_full_critical_introduction": false,
-    "critical_scholarly_editorial_essay": "editorial/CRITICAL_INTRODUCTION.md"
+    "critical_scholarly_editorial_essay": "editorial/CRITICAL_INTRODUCTION.md",
+    "cumulative_english_draft": "B2007 pp.18–134 = 117 consecutively numbered English working pages; p85–134 sourced through derivative online re-transcription and not independently collated",
+    "latest_handoff": "editorial/FULL_CUMULATIVE_P134.md",
+    "latest_untranslated_beirut_page": 135,
+    "verified_manuscript_variant_count": 0
   },
   "witnesses": [
     {
@@ -95,6 +99,17 @@
       "title": "Giuseppe Scattolin, 'The Key Concepts of al-Farghānī’s Commentary'",
       "url": "https://ibnarabisociety.org/wp-content/uploads/PDFs/Scattolin_The-key-concepts.pdf",
       "note": "Secondary study providing 1876 pagination and thematic analysis; individual quoted passages should not be treated as independent manuscript witnesses."
+    },
+    {
+      "siglum": "R-FORUM",
+      "title": "Forum re-transcription of Beirut 2007 Arabic third and fourth foundations, labelled with B2007 printed pages",
+      "urls": [
+        "https://alshrefalm7sy.ahlamontada.com/t3213",
+        "https://alshrefalm7sy.ahlamontada.com/t3214"
+      ],
+      "scope": "Third foundation B2007 pp85–101 and fourth foundation pp102–134 consulted for new English P134 working draft; source pages continue after p134",
+      "access": "online text transcription inspected; not a separate medieval or manuscript witness; manuscript copy-text remains uninspected",
+      "note": "Do not count as an independent corroborating witness or as a manuscript variant. Printed-page labels may need control against physical Beirut edition; may contain OCR/transcription errors or modern editorial footnotes."
     }
   ],
   "readings": [
@@ -127,6 +142,15 @@
       "criticalVariant": false,
       "manuscriptSupport": null,
       "status": "no-emendation; literal translation retained with warning"
+    },
+    {
+      "id": "ED-0004",
+      "location": "Online B2007-derived forum transcription p.87, transition describing stirring motion of elemental matter",
+      "type": "unclear-transcription",
+      "evidence": "Website text and embedded modern editor note indicate one word in the phrase concerning strong influence/heat is corrupt or unclear; original printed image not yet inspected",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "translated without conjectural restoration; compare actual printed and manuscript texts"
     }
   ],
   "selectionRule": "Do not create a variant reading or siglum support unless two independent witnesses have actually been inspected in the relevant locus. Orthographic normalization is not a textual variant.",
