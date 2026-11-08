@@ -42,7 +42,7 @@
 
 ## 5. Archetypes and fixed entities
 
-Farghānī's first foundation distinguishes included considerations, knowledge of their differentiations, and existential appearance. Subsequent first-foundation paragraphs on `aʿyān thābita` (fixed entities; beyond our 25 extracts) are essential to resolve the question.
+Farghānī's first foundation distinguishes included considerations, knowledge of their differentiations, and existential appearance. Subsequent first-foundation paragraphs on `aʿyān thābita` (fixed entities; beyond our 32 extracts) are essential to resolve the question.
 
 **Research issue:** Guénonian *possibility* is wider than the subset of determinate known forms that may manifest. A formal mapping between Guénon's universal possibility and Akbarian fixed entities requires demonstration and should not assume that the terms are coextensive.
 
