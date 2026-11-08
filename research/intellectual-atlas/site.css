@@ -557,7 +557,7 @@ body #kalam-timeline-app-v3 .gnbib-tabs button[aria-pressed="true"]{background:v
 #kalam-timeline-app-v3 .dn-composite{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start;min-width:0}
 #kalam-timeline-app-v3 .dn-map{border:1px solid var(--ia-line);border-radius:8px;background:var(--ia-soft);overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;min-width:0;max-width:100%;min-height:240px;max-height:min(74dvh,830px);touch-action:pan-y}
 #kalam-timeline-app-v3 .dn-map svg{display:block;max-width:none;max-height:none}
-#kalam-timeline-app-v3 .dn-summary-map{max-height:min(74dvh,850px)}
+#kalam-timeline-app-v3 .dn-summary-map{max-height:min(74dvh,850px);touch-action:pan-x pan-y}
 #kalam-timeline-app-v3 .dn-detail{width:min(330px,31vw);min-width:260px;max-height:min(74dvh,830px);overflow-y:auto;border:1px solid var(--ia-line);border-radius:8px;background:var(--ia-panel);padding:12px;font-size:12px;line-height:1.55}
 #kalam-timeline-app-v3 .dn-detail[hidden]{display:none!important}
 #kalam-timeline-app-v3 .dn-detail-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
