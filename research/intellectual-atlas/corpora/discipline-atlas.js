@@ -578,8 +578,16 @@ function onClick(event){
  if(el.hasAttribute("data-dn-close")){selectedWork("");return;}
  if(el.hasAttribute("data-dn-mode")){S.mode=el.getAttribute("data-dn-mode");S.book="";S.edge="";S.page=1;refresh();return;}
  if(el.hasAttribute("data-dn-cluster")){
-  const [lane,start,end]=el.getAttribute("data-dn-cluster").split("|");
-  S.lane=lane;years(Number(start)-20,Number(end)+20);refresh();return;
+  const [lane,startText,endText]=el.getAttribute("data-dn-cluster").split("|");
+  const start=Number(startText),end=Number(endText);
+  S.lane=lane;
+  // The overview must drill to individual dated books, including on narrow
+  // touch screens where a 250-year cluster would still be 'overview' mode.
+  const members=byLane(lane).filter(w=>period(w)!==null&&period(w)>=start&&period(w)<=end)
+    .sort((a,b)=>period(a)-period(b));
+  const anchor=members.length?period(members[Math.floor((members.length-1)/2)]):(start+end)/2;
+  const target=Math.min(window.innerWidth<530?180:260,Math.max(70,end-start+40));
+  years(anchor-target/2,anchor+target/2);refresh();return;
  }
  if(el.hasAttribute("data-dn-lane")){
   S.lane=el.getAttribute("data-dn-lane");S.page=1;S.undated=false;refresh();return;
