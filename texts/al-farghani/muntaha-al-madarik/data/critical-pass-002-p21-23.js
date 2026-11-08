@@ -63,12 +63,24 @@ window.FARGHANI_CRITICAL_PASS_002={
       "ar": "فعلى كل حال يكون ذلك العلم والشهود والتجلّي والإدراك من حيث تعينه ومشيئته وعلمه المقدّس بذاته الأقدس تعالى وتقدّس من حيث واحديتها ، لا من حيث إطلاقها وأحديتها",
       "en": "In every case, this knowing, witnessing, disclosure and apprehension concern His determination, His will and His sacred knowledge of His most holy Essence—exalted and sanctified is He—under the consideration of its oneness (wāḥidiyya), not under that of its nondelimitation and unicity (aḥadiyya).",
       "disposition": "corrected",
-      "critical_note": "The older F007 excerpt omitted 'من حيث واحديتها'. The corrected B2007 source is confirmed; the phrase also appears in a later quotation in al-Fanārī's Miṣbāḥ al-uns (modern printed text p183), though this is reception testimony not an independent manuscript witness.",
+      "critical_note": "The older F007 excerpt omitted 'من حيث واحديتها'. The corrected B2007 source is confirmed; the phrase also appears in a later quotation in al-Fanārī's Miṣbāḥ al-uns (modern printed text p183), though this is reception testimony not an independent manuscript witness. Direct historical-print check: I1876 p7 (PDF scan 11) also contains من حيث واحديتها. This confirms the correction of the earlier project excerpt; it is not a manuscript variant.",
       "source_siglum": "B2007",
       "source_url": "https://ablibrary.net/book_content/b/9606/21?lang=ar",
       "grade": "printed-digital-Arabic-checked-v1",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "historical_print": {
+        "siglum": "I1876",
+        "printed_page": 7,
+        "scan_index": 11,
+        "reading": "من حيث واحديتها",
+        "status": "agreement",
+        "source_pdf": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
+        "evidence_register": "editorial/I1876_COLLATION_001.json",
+        "note": "I1876 p7 confirms the phrase B2007 has, previously omitted in a GNAMMA excerpt.",
+        "verified_direct_photo": true,
+        "manuscript_verified": false
+      }
     },
     {
       "id": "CR002-006",
