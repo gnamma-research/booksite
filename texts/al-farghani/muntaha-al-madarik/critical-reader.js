@@ -4,7 +4,7 @@
 (() => {
 "use strict";
 const $=id=>document.getElementById(id);
-const sources=[window.FARGHANI_CRITICAL_PASS_001,window.FARGHANI_CRITICAL_PASS_002].filter(Boolean);
+const sources=[window.FARGHANI_CRITICAL_PASS_001,window.FARGHANI_CRITICAL_PASS_002,window.FARGHANI_CRITICAL_PASS_003].filter(Boolean);
 const rows=sources.flatMap(s=>s.records||[]);
 let lang="both",notes=true;
 function el(tag,className,text) {
@@ -22,7 +22,7 @@ function render(){
 const page=$("page-select").value,disp=$("filter-select").value,q=$("query").value.trim().toLocaleLowerCase();
 const filtered=rows.filter(x=>(page==="all"||String(x.page)===page)&&(disp==="all"||x.disposition===disp||disp==="revise"&&x.disposition==="corrected")&&(!q||[x.ar,x.en,x.critical_note,x.id].some(v=>v.toLocaleLowerCase().includes(q))));
 const list=$("clauses");list.replaceChildren();let last=null;let group=null;
-for(const x of filtered){if(last!==x.page){group=el("section","source-section");group.id="p"+x.page;const title=el("h2",null,"Beirut printed page "+x.page);title.append(el("small",null," · checked against one digital printed witness"));group.append(title);list.append(group);last=x.page;}group.append(clause(x))}
+for(const x of filtered){if(last!==x.page){group=el("section","source-section");group.id="p"+x.page;const title=el("h2",null,"Beirut printed page "+x.page);title.append(el("small",null,x.page>=24?" · selected checked spans (not full-page collation)":" · modern printed digital source checked"));group.append(title);list.append(group);last=x.page;}group.append(clause(x))}
 $("empty").style.display=filtered.length?"none":"block";
 document.body.dataset.language=lang;document.body.dataset.showNotes=String(notes);
 $("count").textContent=String(rows.length);$("pages").textContent=String([...new Set(rows.map(x=>x.page))].length);$("cruces").textContent=String(rows.filter(x=>x.disposition==="crux").length);
