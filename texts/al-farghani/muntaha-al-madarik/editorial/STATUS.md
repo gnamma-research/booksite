@@ -1,6 +1,15 @@
 # Muntahā al-madārik · Editorial and translation register
 
-## Current milestone — completed English draft of introduction; first critical source pass (9 November 2026)
+## Latest milestone — Critical Pass III · digital source check extended to B2007 pp.24–29 (9 November 2026)
+
+- The **complete English working introduction remains** B2007 pp.18–145 (128 page-labelled source units): four foundations through p143 and *tatimmat al-dībāja* pp144–145. Do not repeat the English translation.
+- **New source-critical work:** 62 **selected** Arabic–English clause spans checked against B2007 pp24–29; 35 retained, 16 translation revisions, 6 attribution/context annotations, 5 open cruxes. Together with earlier pp18–23, **142 individually audited records** from twelve source pages. This is **not exhaustive full-page proofreading** of pp24–29.
+- New [paired reader](../critical-edition.html), [critical passages](CRITICAL_TRANSLATION_24_29.md), [source audit](CRITICAL_AUDIT_STAGE_002.md), and [full cumulative self-contained handoff](FULL_CUMULATIVE_CRITICAL_003.md).
+- **Collateral poetic discrepancy:** B2007 p26 gives `لعبرة`; the separately transmitted poem in al-Qayṣarī's published commentary and in Wikisource gives `لعبرتي`. This does **not** establish a manuscript variant in Farghānī.
+- **Historical collation remains zero:** 1876 Istanbul is located, not examined at corresponding textual loci; Yeni Camii 706 is catalogued, not inspected; no independently attested Farghānī manuscript variants exist in this stage. Five new crux flags make **ten** combined digital cruxes.
+- **Next unsampled Arabic source:** B2007 p30. Critical-edition priority is independent 1876 + manuscript examination alongside modern English correction, not further introductory translation.
+
+## Preserved earlier milestone — completed English draft of introduction; first critical source pass (9 November 2026)
 
 **Authorial English translation:** All four foundations of the introduction plus the concluding two-page preface now have a continuous **working English draft** from Beirut printed B2007 **pp.18–145 (128 consecutively numbered pages)**. The fourth foundation concludes at p.143; the distinct *tatimmat al-dībāja* occupies pp.144–145. **New final installment:** pp.135–145 (11 pages), separately preserved as `TRANSLATION_135_139.md` and `TRANSLATION_140_145.md`. Cumulative draft: [WORKING_TRANSLATION_18_145.md](WORKING_TRANSLATION_18_145.md); compact [English reader](../continuous-translation.html).
 
