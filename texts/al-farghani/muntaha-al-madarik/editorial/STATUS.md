@@ -1,5 +1,24 @@
 # Muntahā al-madārik · Editorial and translation register
 
+## Current stage — 9 November 2026 · 50 more pages · cumulative P134
+
+**NEW English working translation, B2007 pp.85–134 (50 printed pages), plus inherited pp.18–84: 117 consecutively numbered Beirut pages in one cumulative English working draft.**
+
+- **New authorial content:** seven files, `TRANSLATION_85_92.md` (8 pp.), `TRANSLATION_93_100.md` (8), `TRANSLATION_101_108.md` (8), `TRANSLATION_109_116.md` (8), `TRANSLATION_117_124.md` (8), `TRANSLATION_125_130.md` (6), `TRANSLATION_131_134.md` (4). Source-page section count **50**, zero duplicated or missing numbers.
+- **Cumulative master:** `WORKING_TRANSLATION_18_134.md` with **117** page headings, 18–134 inclusive. HTML mirror `../continuous-translation.html` has 117 anchored source sections and a four-foundation contents list, with **compact paragraph and page gaps** introduced in this stage.
+- **Four foundations:** Foundation I ends p.69; II begins p.70, ends p.78; III begins p.79, ends p.101; IV begins p.102 and is **still continuing after p.134**.
+- **New Arabic witness:** for pp.85–101, forum transcription https://alshrefalm7sy.ahlamontada.com/t3213, and for pp.102–134, forum transcription https://alshrefalm7sy.ahlamontada.com/t3214. These show B2007 printed page labels but are **online re-transcriptions, not independently collated manuscripts**. The individual Ahlulbayt pages were inaccessible during the stage, so the editions must not be treated as independently verified simply on the basis of the transcription.
+- **Original bilingual layer:** the **32 selected Arabic–English excerpts on pp.18–34** remain unchanged; full continuous authorial Arabic for all 117 pages and clause-by-clause alignment are **not** complete.
+- **Critical apparatus:** the early Istanbul 1876 print, the Yeni Camii 706 manuscript, and alternative modern edition are identified but remain **uncollated at this stage**. Verified independent manuscript variants: **zero**.
+- **Unresolved source points:** digital B2007 p.33 and p.34 readings recorded in the witness register; p.87 corrupt/uncertain reading in the third foundation; reported hadith attributions; manuscript examination; all English pages still need source-to-English proofreading.
+- **Next untranslated passage:** **B2007 p.135**, which completes the p.134 sentence concerning the removal of determinations; beginning Arabic `والتقيّد وآثارهما والجامع لكلّيات تلك الخواص والآثار الحبّية ...`. Source: https://alshrefalm7sy.ahlamontada.com/t3214.
+- **Cumulative handoff:** `FULL_CUMULATIVE_P134.md` and `STAGE_MANIFEST_P134.json` are the canonical stage archive for the new work. Old P84 and P34 snapshots remain preserved unchanged.
+- **Interpretive highlight, not proof of agreement:** the newly translated fourth foundation differentiates the two ways of perfection and spiritual ascent, and relates Islam, īmān and iḥsān to bodily soul, spirit and secret. These arguments will later be tested against Guénon and Schuon rather than assumed identical.
+
+**Counting rule:** 50 new pages is a check of sequential page-labelled English **working draft output**, not independently audited translation completeness, not 50 manuscript-collated Arabic pages. The 1876 introduction's 107 printed pages do not provide a denominator for the 2007 Beirut pagination. No accurate full-edition percentage is available.
+
+
+
 ## Full cumulative handoff and GNAMMA publication (P84)
 
 - **Self-contained current working-stage archive:** [FULL_CUMULATIVE_P84.md](FULL_CUMULATIVE_P84.md) — contains the full 67-page English working draft, all 32 available bilingual Arabic extracts, critical scholarly introduction, Guénon–Schuon comparison, glossary, witness register, corrections, this editorial status, and the prior stage handoff.
@@ -10,7 +29,7 @@
 
 
 
-## New translation stage — 50 pages added (2026-11-08)
+## Historical P84 translation stage — 50 pages added (2026-11-08)
 
 **New work:** Beirut B2007 pp. **35–84 inclusive** = **50 printed source pages in an English *working* translation**. This stage genuinely continues from the existing p. 34 boundary; it does not simply rephrase or reprint those 17 pages. The new English text is preserved in **seven separate source-linked stage files** and in the cumulative master:
 
@@ -35,7 +54,7 @@
 **Cumulative master and recovery:** `WORKING_TRANSLATION_18_84.md` and `STAGE_HANDOFF_P84.md`. Work tracker [GitHub #245](https://github.com/gnamma-research/booksite/issues/245).
 
 
-## Full critical introduction programme — progress
+## Historical P34–P84 programme notes (superseded by current P134 report above)
 
 The primary objective is now **a complete, continuous Arabic–English critical edition of the four-foundation introductory division**, not a collection of attractive extracts. The current stages are separate products:
 
