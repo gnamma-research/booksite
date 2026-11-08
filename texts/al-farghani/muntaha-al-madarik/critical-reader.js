@@ -15,12 +15,13 @@ function clause(x){
 const item=el("article","audit-clause");item.id=x.id;item.dataset.disposition=x.disposition;
 const meta=el("h3");meta.append(el("span",null,x.id),el("span","audit-flag",x.disposition==="crux"?"Needs witness":x.disposition==="corrected"?"Recorded correction":x.disposition==="revise"?"Translation revised":x.disposition==="annotate"?"Source note":"Checked source"));meta.append(open(x));item.append(meta);
 const pair=el("div","audit-text"),ar=el("p","ar",x.ar),en=el("p","en",x.en);ar.lang="ar";ar.dir="rtl";pair.append(ar,en);item.append(pair);
+if(x.historical_print){const w=x.historical_print;const hist=el("aside","audit-witness");hist.append(el("strong",null,"Historical print I1876 p."+w.printed_page+" · PDF scan "+w.scan_index+" · "+(w.status==="historical-print-difference"?"Different reading":"Agreement")));const ar=el("p","ar",w.reading);ar.lang="ar";ar.dir="rtl";hist.append(ar,el("p",null,w.note));const link=el("a",null,"Original facsimile PDF");link.href=w.source_pdf;link.target="_blank";link.rel="noopener noreferrer";hist.append(link);item.append(hist);}
 const note=el("aside","audit-note");note.append(el("strong",null,"Editorial decision: "),document.createTextNode(x.critical_note));item.append(note);
 return item;
 }
 function render(){
 const page=$("page-select").value,disp=$("filter-select").value,q=$("query").value.trim().toLocaleLowerCase();
-const filtered=rows.filter(x=>(page==="all"||String(x.page)===page)&&(disp==="all"||x.disposition===disp||disp==="revise"&&x.disposition==="corrected")&&(!q||[x.ar,x.en,x.critical_note,x.id].some(v=>v.toLocaleLowerCase().includes(q))));
+const filtered=rows.filter(x=>(page==="all"||String(x.page)===page)&&(disp==="all"||x.disposition===disp||disp==="revise"&&x.disposition==="corrected"||disp==="print"&&!!x.historical_print)&&(!q||[x.ar,x.en,x.critical_note,x.id].some(v=>v.toLocaleLowerCase().includes(q))));
 const list=$("clauses");list.replaceChildren();let last=null;let group=null;
 for(const x of filtered){if(last!==x.page){group=el("section","source-section");group.id="p"+x.page;const title=el("h2",null,"Beirut printed page "+x.page);title.append(el("small",null,x.page>=24?" · selected checked spans (not full-page collation)":" · modern printed digital source checked"));group.append(title);list.append(group);last=x.page;}group.append(clause(x))}
 $("empty").style.display=filtered.length?"none":"block";
