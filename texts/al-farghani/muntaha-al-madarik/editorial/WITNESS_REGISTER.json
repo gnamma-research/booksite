@@ -46,7 +46,8 @@
     "next_critical_audit_beirut_page": 37,
     "definitive_status": "not-achieved",
     "critical_review_new_stage": "Critical IV: 56 new selective loci p30–36, 198 total on 19 Beirut pages",
-    "historical_print_imprint_question": "NYU catalogue identifies Istanbul 1293/1876; Chittick 2025 describes Bulaq/Cairo 1876. Establish by reading scanned title page."
+    "historical_print_imprint_question": "NYU catalogue identifies Istanbul 1293/1876; Chittick 2025 describes Bulaq/Cairo 1876. Establish by reading scanned title page.",
+    "additional_new_candidates_004": "Heidelberg H154 (undated, textual 1v–322r, viewer gated); Gotha G2267 (87ff incomplete via Scattolin 2001); neither read"
   },
   "witnesses": [
     {
@@ -216,6 +217,30 @@
       "access": "catalogue only",
       "accessGrade": "catalogue-only",
       "role": "late control; confirm whether abridged or extracted",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "H154",
+      "kind": "manuscript",
+      "title": "Universitätsbibliothek Heidelberg, Cod. Heid. Orient. 154",
+      "date": "undated in online catalogue",
+      "extent": "Farghānī text fols 1v–322r",
+      "url": "https://digi.ub.uni-heidelberg.de/diglit/codheidorient154/0001",
+      "access": "Catalogue metadata and binding JPEG seen; the actual Farghānī text folios inaccessible in this session (Anubis access guard)",
+      "accessGrade": "digital-catalogue-only-no-text",
+      "role": "high conditional candidate for photographic online collation",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "G2267",
+      "kind": "manuscript",
+      "title": "Gotha MS 2267, Muntahā al-madārik",
+      "date": "undated in Scattolin appendix",
+      "extent": "87 folios, incomplete",
+      "url": "https://www.ifao.egnet.net/anisl/035/17",
+      "access": "secondary appendix citing manuscript catalogue; actual folios not inspected",
+      "accessGrade": "secondary-catalogue-only",
+      "role": "conditional: determine surviving text and whether introduction included",
       "variantsExamined": 0
     }
   ],
