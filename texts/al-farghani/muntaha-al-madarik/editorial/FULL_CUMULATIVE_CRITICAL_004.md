@@ -1,8 +1,8 @@
-# Farghānī — Complete cumulative source-critical introduction: Pass IV (9 November 2026)
+# Farghānī · Full cumulative source-critical archive — Pass IV (9 November 2026)
 
-**One-file recovery edition.** In Part A, the entire previously assembled P145-to-Pass-III archive is preserved **verbatim**. Pass IV then appends **56 new selected Arabic–English source checks at B2007 pp30–36**, a substantive manuscript census, decision register, current source-quality and witness registers, current status, and exact p37 restart. **Definitive Arabic edition NOT yet achieved:** independent historical I1876 and manuscript photographic collations remain zero; all authorial Arabic checked in this project so far is modern edited B2007. Do not confuse a source-linked English translation with a fully constituted Arabic critical text.
+**Single-file handoff** containing the entire prior P145-through-III translation and editorial archive verbatim, 56 new selected clause records on B2007 pp30–36, eleven catalogued manuscript candidates, crux decisions, the complete updated quality/witness registers and exact restart p37. **Not a definitive Arabic critical edition:** no personally compared I1876 print page or historical MS folio, no manuscript variant independently verified. B2007 source-checking is selective, not exhaustive after p23.
 
-## PART A — Entire preserved cumulative archive from Critical III
+## PART A — Entire preserved previous cumulative archive
 
 # Farghānī · Complete cumulative working-and-critical archive through Pass III
 **Latest state: 9 November 2026.** The entire earlier P145 project is embedded in Part A, followed by Pass III's **62 selected** Arabic–English source checks, analytical notes, witness register, full 128-page quality ledger and authoritative latest handoff. **The 1876 historical print and manuscript folios have not been collated; this is not a definitive Arabic edition.** Earlier progress claims within the historical P145 archive are superseded by Parts B–G for current status.
@@ -9930,7 +9930,7 @@ Continue p30 onward, and prioritize real physical textual collation with the 187
 
 ---
 
-## PART B — Pass IV: 56 Arabic–English modern-source review records
+## PART B — Selected Arabic–English source checks pp30–36 (56 loci)
 
 # Farghānī — Critical Pass IV: B2007 pp. 30–36
 
@@ -10511,7 +10511,7 @@ Next selected English–Arabic audit starts B2007 p37, whose English already exi
 
 ---
 
-## PART C — Expanded manuscript census and editorial witness strategy
+## PART C — Current manuscript census
 
 # Farghānī · *Muntahā al-madārik*: manuscript census and editorial witness policy
 **9 November 2026 — catalogue-and-scholarship audit.** This register is for a proposed edition of the **four-uṣūl Arabic introduction**, not an automatic edition of the entire two-volume verse commentary. **No manuscript images in this register were personally inspected.** Catalogue data about manuscripts and scholarly statements about prior collation are not themselves first-hand variant readings.
@@ -10530,7 +10530,12 @@ Next selected English–Arabic audit starts B2007 p37, whose English already exi
 | SA1347 | Süleymaniye, Şehid Ali Paşa 1347 | *Muntahā* occurs as **Work 5** within a composite codex; extent, relevant folios and copy date require explicit verification. | **Low/conditional** until the exact folios and completeness are identified. |
 | H236 | Süleymaniye, Halet Efendi 236 | St Andrews: **20th-century** copy, 240 total folios; Farghānī's entry at **1v–78v**. | **Low/conditional**: possibly extract/abridgment; determine what text it reproduces. |
 
-**Additional potential sources:** other catalogues and archives remain to be checked for independently transmitted early copies. The above is a prioritized *known* census, not an exhaustive list of all copies worldwide.
+| H154 | Universitätsbibliothek Heidelberg, **Cod. Heid. Orient. 154** | Undated (*o.D.*) digital catalogue, text identified on **fols. 1v–322r**; openly catalogued online. | **High conditional** for remote comparison, but text leaves are presently inaccessible through the site's Anubis guard in this research session. Binding JPEG is accessible but is not textual evidence; date, hands and the introduction's foliation still need inspection. |
+| G2267 | Gotha Research Library, **MS 2267** (*Muntahā al-madārik*) | Giuseppe Scattolin (2001), appendix on Ibn al-Fāriḍ manuscripts, gives **87 folios, incomplete** (citing Pertsch's Gotha catalogue). | **Conditional/low**: identify which sections survive; cannot assume introduction present or read any variant without leaf images. |
+
+**Additional potential sources:** other catalogues and archives remain to be checked for independently transmitted early copies. The above is a prioritized *known* eleven-codex census, not an exhaustive list of all copies worldwide.
+
+**Additional catalogue sources added:** Heidelberg digilib https://digi.ub.uni-heidelberg.de/diglit/codheidorient154/0001 (folio identification 1v–322r, no date reported). Giuseppe Scattolin, “Towards a Critical Edition of Ibn al-Fārid's Dīwān,” *Annales Islamologiques* 35 (2001), p. 537 (Gotha MS 2267, incomplete 87 fols): https://www.ifao.egnet.net/anisl/035/17 . **Neither has been compared textually.**
 
 ## 2. Prints and indirect sources
 
@@ -10573,7 +10578,7 @@ Next selected English–Arabic audit starts B2007 p37, whose English already exi
 
 ---
 
-## PART D — Machine-readable crux and editorial decision register
+## PART D — Exact editorial decision register
 
 ```json
 {
@@ -10763,10 +10768,9 @@ Next selected English–Arabic audit starts B2007 p37, whose English already exi
 
 ```
 
-
 ---
 
-## PART E — Latest editorial status and completion distinctions
+## PART E — Latest status and quality distinctions
 
 # Muntahā al-madārik · Editorial and translation register
 
@@ -10776,7 +10780,7 @@ Next selected English–Arabic audit starts B2007 p37, whose English already exi
 
 **English–Arabic source checking:** 80 individual loci in Passes I–II (B2007 pp18–23), 62 in Pass III (pp24–29), and **56 new selected loci in Pass IV (pp30–36)**: **198 distinct machine-readable critical records across 19 pages with some checked spans**. All pages after p23 remain incompletely proofread even where selected clauses were examined. This is not an independently constituted critical Arabic copy-text.
 
-**Historical census:** [expanded witness census](WITNESS_CENSUS_CRITICAL_004.md) records Y706, F3966, C1107, R670, K273, R669, C1746, SA1347 and H236; [witness JSON](WITNESS_REGISTER.json). Chittick's 2025 manuscript-based text used Carullah 1107, Ragıp Paşa 670, Kadızademehmed 273; it is **indirect corroborative scholarship**, not manuscript readings observed here.
+**Historical census:** [expanded witness census](WITNESS_CENSUS_CRITICAL_004.md) now records eleven catalogue candidates: Y706, F3966, C1107, R670, K273, R669, C1746, SA1347, H236, H154 (Heidelberg), and G2267 (incomplete Gotha); [witness JSON](WITNESS_REGISTER.json). Chittick's 2025 manuscript-based text used Carullah 1107, Ragıp Paşa 670, Kadızademehmed 273; it is **indirect corroborative scholarship**, not manuscript readings observed here.
 
 **Decision register:** [12-locus editorial decisions](CRITICAL_LOCUS_REGISTER_004.json), particularly B2007 p33 `في عون هذا`, B2007 p34 `الحضرة العملية` vs p36 `الحضرة العمائية`, and p31 missing whitespace in `الماءلون`. No historical text emendation has been made without external manuscript evidence. Independent 1876 or manuscript collation **0 pages**, established independent Farghānī manuscript variants **0**.
 
@@ -10967,7 +10971,7 @@ The Arabic has some unvowelled lexical/typographical uncertainty in the digital 
 
 ---
 
-## PART F — Latest cumulative handoff and exact next locus
+## PART F — Latest handoff
 
 # Saʿīd al-Dīn al-Farghānī — Muntahā al-madārik · Critical Pass IV
 ## Cumulative stage handoff (9 November 2026)
@@ -10975,7 +10979,7 @@ The Arabic has some unvowelled lexical/typographical uncertainty in the digital 
 ### Deliverable and its exact limits
 The entire original **working English translation** of the Arabic four-uṣūl introduction and two-page closing preface already exists, B2007 pp18–145 inclusive (128 consecutively page-labelled sections). It was preserved without paraphrastic retranslation. This turn added a substantive *selected Arabic–English modern-printed-source check* of **56 loci on B2007 pp30–36** (9,8,8,8,9,7,7), bringing combined passes I–IV to **198 unique clause records** spanning pp18–36. English–Arabic checks on pp24–36 are selected and must **not** be called exhaustive full-page verification.
 
-A second deliverable is [WITNESS_CENSUS_CRITICAL_004.md](WITNESS_CENSUS_CRITICAL_004.md), distinguishing nine codices including Fatih 3966 (reported 724 AH), Carullah 1107 (741 AH in Chittick), Ragıp Paşa 670 (763 AH in Chittick), Kadızademehmed 273, Yeni Camii 706, Ragıp 669, Carullah 1746, Şehid Ali Paşa 1347 and Halet 236. Separate prints B2007, I1876 and Qom are not treated as independent manuscript variants. Chittick 2025 offers a manuscript-based English control from C1107/R670/K273 **but his English quotations are not inspected manuscript readings**.
+A second deliverable is [WITNESS_CENSUS_CRITICAL_004.md](WITNESS_CENSUS_CRITICAL_004.md), distinguishing eleven known/candidate codices including Fatih 3966 (reported 724 AH), Carullah 1107 (741 AH in Chittick), Ragıp Paşa 670 (763 AH in Chittick), Kadızademehmed 273, Yeni Camii 706, Ragıp 669, Carullah 1746, Şehid Ali Paşa 1347 and Halet 236. Separate prints B2007, I1876 and Qom are not treated as independent manuscript variants. Chittick 2025 offers a manuscript-based English control from C1107/R670/K273 **but his English quotations are not inspected manuscript readings**.
 
 ### Evidence that does NOT exist
 No actual photographed historical printing page (I1876) has been collated at the relevant passages; no manuscript folio images seen; no stemma constructed; 0 authentic Farghānī manuscript variants verified. The NYU catalogue says Istanbul 1876 while Chittick refers to Cairo/Bulaq 1876—settle by reading actual title page. Even the full original Arabic is not in this repository as one continuous proofread bilingual base text. **Therefore the project cannot reasonably be called a definitive Arabic edition** yet.
@@ -11007,7 +11011,7 @@ The previous complete English corpus from P145 and the III cumulative archive ar
 
 ---
 
-## PART G — Complete updated witness register
+## PART G — Updated full witness register
 
 ```json
 {
@@ -11058,7 +11062,8 @@ The previous complete English corpus from P145 and the III cumulative archive ar
     "next_critical_audit_beirut_page": 37,
     "definitive_status": "not-achieved",
     "critical_review_new_stage": "Critical IV: 56 new selective loci p30–36, 198 total on 19 Beirut pages",
-    "historical_print_imprint_question": "NYU catalogue identifies Istanbul 1293/1876; Chittick 2025 describes Bulaq/Cairo 1876. Establish by reading scanned title page."
+    "historical_print_imprint_question": "NYU catalogue identifies Istanbul 1293/1876; Chittick 2025 describes Bulaq/Cairo 1876. Establish by reading scanned title page.",
+    "additional_new_candidates_004": "Heidelberg H154 (undated, textual 1v–322r, viewer gated); Gotha G2267 (87ff incomplete via Scattolin 2001); neither read"
   },
   "witnesses": [
     {
@@ -11229,6 +11234,30 @@ The previous complete English corpus from P145 and the III cumulative archive ar
       "accessGrade": "catalogue-only",
       "role": "late control; confirm whether abridged or extracted",
       "variantsExamined": 0
+    },
+    {
+      "siglum": "H154",
+      "kind": "manuscript",
+      "title": "Universitätsbibliothek Heidelberg, Cod. Heid. Orient. 154",
+      "date": "undated in online catalogue",
+      "extent": "Farghānī text fols 1v–322r",
+      "url": "https://digi.ub.uni-heidelberg.de/diglit/codheidorient154/0001",
+      "access": "Catalogue metadata and binding JPEG seen; the actual Farghānī text folios inaccessible in this session (Anubis access guard)",
+      "accessGrade": "digital-catalogue-only-no-text",
+      "role": "high conditional candidate for photographic online collation",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "G2267",
+      "kind": "manuscript",
+      "title": "Gotha MS 2267, Muntahā al-madārik",
+      "date": "undated in Scattolin appendix",
+      "extent": "87 folios, incomplete",
+      "url": "https://www.ifao.egnet.net/anisl/035/17",
+      "access": "secondary appendix citing manuscript catalogue; actual folios not inspected",
+      "accessGrade": "secondary-catalogue-only",
+      "role": "conditional: determine surviving text and whether introduction included",
+      "variantsExamined": 0
     }
   ],
   "relatedNotWitnesses": [
@@ -11374,10 +11403,9 @@ The previous complete English corpus from P145 and the III cumulative archive ar
 
 ```
 
-
 ---
 
-## PART H — Complete 128-page source quality ledger
+## PART H — 128-page source-quality ledger
 
 ```json
 {
