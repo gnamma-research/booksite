@@ -1,0 +1,376 @@
+{
+  "schema": "gnamma-farghani-critical-stage-v4",
+  "stage_id": "2026-11-09-p145-complete-English-draft-critical-pass-001",
+  "project": "Farghānī Muntahā al-madārik: four foundations plus concluding preface",
+  "repository": "gnamma-research/booksite",
+  "branch": "master",
+  "authorial_introduction_scope": {
+    "beirut_witness": "B2007",
+    "start": 18,
+    "end": 145,
+    "printed_page_headings": 128,
+    "foundation_I_end": 69,
+    "foundation_II_start": 70,
+    "foundation_II_end": 78,
+    "foundation_III_start": 79,
+    "foundation_III_end": 101,
+    "foundation_IV_start": 102,
+    "foundation_IV_end": 143,
+    "concluding_preface_start": 144,
+    "concluding_preface_end": 145,
+    "source_page_heading_integrity": "all 128 unique and consecutive"
+  },
+  "english_working_translation": {
+    "state": "complete-in-scope-working-draft",
+    "canonical_path": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_145.md",
+    "git_blob_sha": "4fba9c14a5a5d1ed99707638ad7d3f8f7b656590",
+    "independently_proofed": false
+  },
+  "critical_arabic_english_first_pass": {
+    "state": "partial",
+    "pages": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "source": "B2007 edited digital Arabic",
+    "clauses": 80,
+    "unresolved_crux_clauses": 5,
+    "source_verified_pages": 6,
+    "full_critical_translation_path": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_TRANSLATION_18_23.md",
+    "audit_report_path": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_AUDIT_STAGE_001.md",
+    "reader_path": "texts/al-farghani/muntaha-al-madarik/critical-edition.html",
+    "data_paths": [
+      "texts/al-farghani/muntaha-al-madarik/data/critical-pass-001-p18-20.js",
+      "texts/al-farghani/muntaha-al-madarik/data/critical-pass-002-p21-23.js"
+    ],
+    "source_grade": "digitized B2007 Arabic checked, no independent historical printing or manuscript"
+  },
+  "previous_selected_bilingual_excerpts": {
+    "count": 32,
+    "path": "texts/al-farghani/muntaha-al-madarik/data/units.js",
+    "source_scope": "selected clauses B2007 pp18–34; not complete Arabic copytext"
+  },
+  "unverified": {
+    "pages_with_no_clausal_arabic_check": 122,
+    "full_original_arabic_source_imported": false,
+    "independent_I1876_print_footnotes_collated": false,
+    "medieval_manuscript_images_inspected": 0,
+    "validated_independent_manuscript_variants": 0,
+    "definitive_text_constituted": false,
+    "full_1876_to_B2007_pagination_crosswalk": false
+  },
+  "full_cumulative_archive": {
+    "path": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_P145.md",
+    "git_blob_sha": "5ed8ba72f288cb3d7dbfd1cdc213b78bec874299",
+    "size_bytes": 664672,
+    "contains": [
+      "full working English introduction",
+      "80 revised Arabic-English clause checks",
+      "32 prior bilingual source extracts",
+      "scholarly critical introduction",
+      "Guénon/Schuon comparative notes",
+      "glossary",
+      "source witness register",
+      "per-page coverage ledger",
+      "quality and handoff status"
+    ]
+  },
+  "previous_stage_archive": {
+    "P134": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_P134.md",
+    "P84": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_P84.md",
+    "P34": "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_HANDOFF.md"
+  },
+  "next_work": {
+    "critical_check_B2007_page": 24,
+    "source_url": "https://ablibrary.net/book_content/b/9606/24?lang=ar",
+    "previous_page_final_arabic": "وصفة بقائها وثباتها اعتبارا لبعض",
+    "next_verse_commentary": "Begins after B2007 concluding preface p145, keep separate from critical editing"
+  },
+  "website": {
+    "english_compact_reader": "texts/al-farghani/muntaha-al-madarik/continuous-translation.html",
+    "critical_reader": "texts/al-farghani/muntaha-al-madarik/critical-edition.html",
+    "archive_page": "texts/al-farghani/muntaha-al-madarik/handoffs.html",
+    "catalog": "texts/manifest.json"
+  },
+  "file_inventory": [
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/COMPARISON.md",
+      "blob_sha": "ca88320fcbeaebc4494d24bddc3a522832f8d364",
+      "bytes_utf8": 7701
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/CONTINUATION_TRANSLATION_24_29.md",
+      "blob_sha": "ee1e4e283ccd9ba24e39031f1ebc0f4b7f7c1f56",
+      "bytes_utf8": 21516
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/CONTINUATION_TRANSLATION_30_34.md",
+      "blob_sha": "3dba5013ae74562eb87f9725ae5a8edf7acc16e0",
+      "bytes_utf8": 21370
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_AUDIT_STAGE_001.md",
+      "blob_sha": "f53efa4f6c3131efbb1c0c17f20c038f729e799c",
+      "bytes_utf8": 11265
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_COVERAGE_REGISTER.json",
+      "blob_sha": "3a8c8e0fd5f8dde567f7fd11af0bca6d2b86dfdb",
+      "bytes_utf8": 78992
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_INTRODUCTION.md",
+      "blob_sha": "940cb7ab03df02252e7ab34c60dbd48af473e843",
+      "bytes_utf8": 19847
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_TRANSLATION_18_23.md",
+      "blob_sha": "81dc3da3d1300e69142e918a6b8f57c9f1b1b12f",
+      "bytes_utf8": 48994
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_P134.md",
+      "blob_sha": "88a341f6c68d509cc95baed948114f336ae570a4",
+      "bytes_utf8": 482503
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_P145.md",
+      "blob_sha": "5ed8ba72f288cb3d7dbfd1cdc213b78bec874299",
+      "bytes_utf8": 664672
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_P84.md",
+      "blob_sha": "32fbaa09125cfcb968e06b5834f79c9cd41a83c6",
+      "bytes_utf8": 323976
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/GLOSSARY.md",
+      "blob_sha": "dd67a311d42feb85489da32f7704d80bad264543",
+      "bytes_utf8": 4523
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/HANDOFFS.md",
+      "blob_sha": "c94081d226e10cc4ba21407312cd0442dbab1cc8",
+      "bytes_utf8": 5980
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/OPENING_TRANSLATION_18_23.md",
+      "blob_sha": "a4a398e6005a7ff895ebe57dad0064352d0fa440",
+      "bytes_utf8": 19229
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_HANDOFF.md",
+      "blob_sha": "53fab6f587f0769f3caf1e312dd0aaa3f9127cba",
+      "bytes_utf8": 6046
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_HANDOFF_P134.md",
+      "blob_sha": "7d03e5949cb2289c25c09ba9c0622aaed1c032a6",
+      "bytes_utf8": 6955
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_HANDOFF_P145.md",
+      "blob_sha": "6d6658ea02054618645e68ef91327e3296e0bfe3",
+      "bytes_utf8": 5730
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_HANDOFF_P84.md",
+      "blob_sha": "7502017cc62f3527d5fffab67129edf45e8b415e",
+      "bytes_utf8": 5480
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_MANIFEST.json",
+      "blob_sha": "511c43db6989a5b43fc5e72a2161f8cefe328025",
+      "bytes_utf8": 6255
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_MANIFEST_P134.json",
+      "blob_sha": "99578483984004f3953f24fbc488c79deb7800b1",
+      "bytes_utf8": 12756
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_MANIFEST_P84.json",
+      "blob_sha": "48abb3b5fbe1632797110cfbaaa93402229f3f40",
+      "bytes_utf8": 12337
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/STATUS.md",
+      "blob_sha": "491692561b5ed5ebffc5d40a3a8ce68b645e719b",
+      "bytes_utf8": 20845
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_101_108.md",
+      "blob_sha": "5ab3ccb634073c482132c7229044820c220bf9c1",
+      "bytes_utf8": 21689
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_109_116.md",
+      "blob_sha": "cf74f64ee1d70f50a88ea37694c2d38ebb0e3d85",
+      "bytes_utf8": 22170
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_117_124.md",
+      "blob_sha": "9f68542343e45b1201950c855a28d8c22e7e2c18",
+      "bytes_utf8": 26137
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_125_130.md",
+      "blob_sha": "9b02ec8b3317aa1f6ffcf80250caf721761f7707",
+      "bytes_utf8": 18739
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_131_134.md",
+      "blob_sha": "d4230647ae4391cf24dbba914a9e1adb3a663b23",
+      "bytes_utf8": 13326
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_135_139.md",
+      "blob_sha": "67ceccccaa0e94c5763e390d2f1cee0943e553d3",
+      "bytes_utf8": 17655
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_140_145.md",
+      "blob_sha": "3d23f9a376dad070dc5c4db30bb9c1543d636fae",
+      "bytes_utf8": 18027
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_35_40.md",
+      "blob_sha": "2cb9ab78ee3d93e651e24c4dabf4824876f22ee9",
+      "bytes_utf8": 19648
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_41_46.md",
+      "blob_sha": "56f1417a45770986216d374e914a28b79db7bed5",
+      "bytes_utf8": 19904
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_47_52.md",
+      "blob_sha": "1bf2d5be9284f32fe48a6997e09e3b58e93567b3",
+      "bytes_utf8": 19682
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_53_60.md",
+      "blob_sha": "df0411d6b54078b39e9e5368a62767653c1a6bca",
+      "bytes_utf8": 25310
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_61_68.md",
+      "blob_sha": "13a351ead1a3e7740c8e9f68458f52615e8ceed8",
+      "bytes_utf8": 25546
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_69_76.md",
+      "blob_sha": "53f9632ceae70eabdc72b495833bf2c3e755767d",
+      "bytes_utf8": 24879
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_77_84.md",
+      "blob_sha": "94e83cffaeae9759959e10b6708078c006a798bc",
+      "bytes_utf8": 26376
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_85_92.md",
+      "blob_sha": "663315f928c6f820c85d207525e38a9e5f951cc3",
+      "bytes_utf8": 23856
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_93_100.md",
+      "blob_sha": "c1e7a6520804f7eb6d88fd3fa056578262f05707",
+      "bytes_utf8": 23740
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/WITNESS_REGISTER.json",
+      "blob_sha": "46926c84b0b96491de9ef30ba6001c5337ba63e4",
+      "bytes_utf8": 12434
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_134.md",
+      "blob_sha": "f748c4323c9f3a33e2eeafed29dcef1990fd8c7d",
+      "bytes_utf8": 375906
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_145.md",
+      "blob_sha": "4fba9c14a5a5d1ed99707638ad7d3f8f7b656590",
+      "bytes_utf8": 412366
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_34.md",
+      "blob_sha": "474c2be3327caafea6e4554b0b2a8858f7261d6b",
+      "bytes_utf8": 63807
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_84.md",
+      "blob_sha": "b9a6f1a3dc3b38c6af45918b6b4f0e115f34e228",
+      "bytes_utf8": 226203
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/data/critical-pass-001-p18-20.js",
+      "blob_sha": "b3d7bcde5c2e627e80f1f042f58d8c3ac6aa943a",
+      "bytes_utf8": 32979
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/data/critical-pass-002-p21-23.js",
+      "blob_sha": "0bea13500cad9c05c1103d868fd21f37464b8a4b",
+      "bytes_utf8": 38793
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/data/units.js",
+      "blob_sha": "1f9725df629cd16003083a5ff5002acaf5fb340c",
+      "bytes_utf8": 37521
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/index.html",
+      "blob_sha": "492aad8d1466cfd9da29b100841d54552315ff86",
+      "bytes_utf8": 9959
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/continuous-translation.html",
+      "blob_sha": "b3fb8446ce84e63f4fd6c007e90a1a4add39eb5c",
+      "bytes_utf8": 450924
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/critical-edition.html",
+      "blob_sha": "2392b4483dbdd45fd505bee64a23ba9b0596a62e",
+      "bytes_utf8": 8318
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/critical-reader.js",
+      "blob_sha": "03149dc0500f69661a3c7d38c5aa85055dc517c5",
+      "bytes_utf8": 3229
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/handoffs.html",
+      "blob_sha": "33cf795fee4959e40e06b57b7f97976629394c66",
+      "bytes_utf8": 10834
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/critical-introduction.html",
+      "blob_sha": "83aa7cc3f032a2fdd0052d3be43c848c82745dea",
+      "bytes_utf8": 27502
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/reader.css",
+      "blob_sha": "352ecf1252fddcd9b13e0a388cea0417f761dd72",
+      "bytes_utf8": 5921
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/reader.js",
+      "blob_sha": "aced2e1d612f93034f7a35466c04b849b62dec04",
+      "bytes_utf8": 13843
+    }
+  ],
+  "coverage_register_sha": "3a8c8e0fd5f8dde567f7fd11af0bca6d2b86dfdb",
+  "critical_translation_sha": "81dc3da3d1300e69142e918a6b8f57c9f1b1b12f",
+  "source_flags": [
+    "B2007 p18 بطون المشتمل",
+    "B2007 p19 المطلب الغائب",
+    "B2007 p19 عمليّا vs contextual علميّا",
+    "B2007 p21 من حيث واحديتها restored in F007",
+    "B2007 p23 فلم تعلم... difficult semantic issue"
+  ],
+  "validation_note": "Numbered page coverage verifies document organization only. It does not certify independent source checking or translation completeness at clause level. No definitive manuscript critical edition established."
+}
