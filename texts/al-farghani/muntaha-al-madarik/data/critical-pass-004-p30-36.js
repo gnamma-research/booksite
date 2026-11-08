@@ -127,7 +127,7 @@ window.FARGHANI_CRITICAL_PASS_004={
       "page": 31,
       "ar": "لون الماءلون إنائه",
       "en": "The color of water is the color of its vessel.",
-      "disposition": "crux",
+      "disposition": "corrected",
       "critical_note": "Digital source concatenates الماءلون without a separator; space 'الماء لون' is a typographic normalization supported by the familiar maxim, NOT a manuscript variant.",
       "source_siglum": "B2007",
       "source_url": "https://ablibrary.net/book_content/b/9606/31?lang=ar",
