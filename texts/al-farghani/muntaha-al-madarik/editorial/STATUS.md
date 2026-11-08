@@ -1,5 +1,23 @@
 # Muntahā al-madārik · Editorial and translation register
 
+## Full critical introduction programme — progress
+
+The primary objective is now **a complete, continuous Arabic–English critical edition of the four-foundation introductory division**, not a collection of attractive extracts. The current stages are separate products:
+
+| Workstream | Verifiable present extent | Remaining |
+|---|---|---|
+| Scholarly critical introduction (editorial essay) | `CRITICAL_INTRODUCTION.md`, twelve substantial sections; readable page `critical-introduction.html` | Additional manuscript- and recension-based historical refinement |
+| English authorial translation, provisional | `WORKING_TRANSLATION_18_34.md` = B2007 printed **pp. 18–34**, a 17-page consecutive-order English draft, also in `continuous-translation.html` | All subsequent original introductory pages, plus independent clause-by-clause proofing and a 1876 ↔ Beirut concordance |
+| Paired bilingual source extracts | **32 individual Arabic–English clauses** sampled across B2007 pp. 18–34, with direct source links | Uninterrupted *full Arabic* text for every paragraph and bilingual alignment |
+| Textual witness register | `WITNESS_REGISTER.json`: historical printing, two modern editions and one early manuscript identified; F007 transcription correction recorded | Read and collate actual manuscript and historic-print page images; **zero** established manuscript variants so far |
+| Perennialist comparison | Distinct `COMPARISON.md` and authorial-extract toggle in the reader | Detailed passage-level comparison only once the authorial text is full |
+
+**Critical caveat:** 17 pages in the modern Beirut edition are **not equivalent to 17 of the 107 pages** identified for the historical Istanbul introductory division. Those are different paginations; neither the total Beirut introduction page count nor a proper page concordance has been verified. These are provisional English translations, not 17 pages of independently validated critical Arabic.
+
+**Specific problems flagged for collation:** an ambiguous phrase in the second determination discussion (B2007 p. 33), and the reading `الحضرة العملية` (B2007 p. 34), which must not be silently replaced by a conjectural alternative. Other changes, such as restoration of `من حيث واحديتها` at F007, remain transcription corrections, not competing-manuscript variants.
+
+
+
 **Project:** GNAMMA Research — ʿIrfān and metaphysics (sibling of `texts/al-turka/qawaid-al-tawhid/`).
 **Work:** Saʿīd al-Dīn al-Farghānī, *Muntahā al-madārik fī sharḥ Tāʾiyyat Ibn al-Fāriḍ* (منتهى المدارك في شرح تائية ابن الفارض).
 **Updated:** 2026-11-08.
@@ -9,10 +27,10 @@
 - **32 source-matched authorial extracts**, each with Arabic, a new English working translation, exact digital page, and separate editorial explanation.
 - **Pages sampled:** 18–34 of the modern Beirut digitization (`ablibrary.net/book_content/b/9606/{page}`). This is a page *range of sampled text*, **NOT seventeen fully translated pages**. It includes discontinuities and omitted sentences.
 - **Foundation:** first foundation only. Selected clauses concern hiddenness, unity, self-disclosure, names, degrees of inward comprehension, perfection, knowledge, and existential determination.
-- **Not translated:** the majority of the first foundation, the rest of the approximately 107-page 1876 introductory division, the full later commentary, the Persian *Mashāriq al-darārī*. Nothing omitted is silently represented as translated.
+- **Not yet fully translated:** most of the four-foundation introduction beyond B2007 p. 34, along with the later commentary and earlier Persian *Mashāriq al-darārī*. The draft pp. 18–34 has not undergone critical proofing, and its Arabic complete-text presentation and bilingual alignment are not yet constituted.
 - **Textual basis:** Arabic text of the modern Beirut printed edition, edited by ʿĀṣim Ibrāhīm al-Kayyālī, as digitized by Ahlulbayt Library. Pages 32–34 are verified directly in the same Beirut digital witness (its page-specific source link now works). Editorial footnotes have **not** been incorporated into Farghānī's authorial text.
 - **Collation:** source-anchored transcription only. No manuscript leaf images collated, and no systematic comparison against the 1876 Istanbul print has yet been carried out.
-- **Translation status:** working scholarly translation, not a definitive critical edition. The bilingual data accurately displays selected source clauses only; it does not interpolate missing authorial text.
+- **Translation status:** working scholarly translation, not a definitive critical edition. The bilingual reader displays 32 selected, source-linked clauses. Separately, an 18–34 **consecutive-page English draft** has been committed without claiming validated completeness or manuscript collation.
 - **Comparative layer:** explicitly *modern editorial research*, never Farghānī's Arabic or an attribution of perennialist doctrine to him.
 
 The Arabic has some unvowelled lexical/typographical uncertainty in the digital witness. Any correction requires printed or manuscript control and must be recorded; words cannot simply be silently improved.
