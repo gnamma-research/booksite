@@ -68,7 +68,7 @@
         "en-selected"
       ],
       "url": "texts/al-farghani/muntaha-al-madarik/",
-      "note": "50 NEW consecutive Beirut printed source pages (B2007 pp35–84) in provisional English translation; 67 consecutive pages cumulative with prior pp18–34. The first foundation ends p69, the second runs p70–78, and the third begins p79. The 32 source-linked Arabic–English excerpts remain selected pp18–34 only; full authorial Arabic is NOT continuously imported. No verified manuscript collation or full critical-edition claim.",
+      "note": "50 new B2007 printed pages 35–84 in provisional English draft, 67 cumulative pp.18–84, with 32 selected Arabic-English extracts (pp.18–34). Full cumulative P84 snapshot and archive directly linked. This is not a complete continuous Arabic text or verified critical edition: zero independently collated manuscript variants. Next untranslated B2007 p.85.",
       "original_text_status": "selected-arabic-source-clauses-only",
       "translated_extracts": 32,
       "sampled_pages": "18–34, not contiguous complete-page coverage",
@@ -98,7 +98,15 @@
         84
       ],
       "new_english_draft_pages_count": 50,
-      "full_authorial_introduction_translation_complete": false
+      "full_authorial_introduction_translation_complete": false,
+      "latest_cumulative_handoff_url": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_P84.md",
+      "handoff_archive_url": "texts/al-farghani/muntaha-al-madarik/handoffs.html",
+      "handoff_index_url": "texts/al-farghani/muntaha-al-madarik/editorial/HANDOFFS.md",
+      "latest_stage_manifest_url": "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_MANIFEST_P84.json",
+      "latest_stage_id": "2026-11-08-p84",
+      "next_untranslated_beirut_page": 85,
+      "cumulative_handoff_contents": "Full current 67-page English working master, 32 bilingual extracts, critical scholarly introduction, commentary, glossary, witness register, correction log, previous handoff",
+      "next_stage_publish_handoff_required": true
     },
     {
       "id": "ghazali-mustasfa",
