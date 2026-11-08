@@ -2,7 +2,17 @@
 
 This is the **stable archive index** for the GNAMMA Farghānī source-critical translation project.
 
-## Latest canonical stage — P145 and critical checking pass 001 (9 November 2026)
+## Latest canonical stage — source-critical Pass III (9 November 2026)
+
+- [**Complete self-contained cumulative archive with P145 preserved plus Pass III**](FULL_CUMULATIVE_CRITICAL_003.md)
+- [62 selected source-checked Arabic–English spans, B2007 pp24–29](CRITICAL_TRANSLATION_24_29.md) and [analytical audit II](CRITICAL_AUDIT_STAGE_002.md)
+- [New complete stage handoff, exact p30 restart](STAGE_HANDOFF_CRITICAL_003.md)
+- [Current 142-clause web reader](../critical-edition.html) and [machine-readable coverage](CRITICAL_COVERAGE_REGISTER.json)
+- [Existing complete working translation B2007 pp18–145](WORKING_TRANSLATION_18_145.md), unchanged in content; [prior P145 archive](FULL_CUMULATIVE_P145.md), preserved.
+
+**Precise limits:** 142 selected Arabic–English clause checks spread over B2007 pp18–29, including 62 **selectively sampled** loci on pp24–29. These are not complete manuscript-collated pages. Verified historical I1876 print or manuscript leaves: **0**; proven Farghānī manuscript variants: **0**. Next new source locus **p30**.
+
+## Preserved prior canonical stage — P145 and critical checking pass 001 (9 November 2026)
 
 - [**Complete current cumulative handoff, P145**](FULL_CUMULATIVE_P145.md): the 128-page English introductory draft; 80 source-checked Arabic–English clauses (B2007 pp18–23); critical audit, historical apparatus, comparison, glossary, witness and correction registers; prior handoffs and exact continuation
 - [Entire authorial introduction + concluding preface — English working draft](WORKING_TRANSLATION_18_145.md), B2007 pp18–145; four foundations end at p143, *tatimmat al-dībāja* follows on pp144–145
