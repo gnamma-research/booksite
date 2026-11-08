@@ -1,0 +1,137 @@
+{
+  "schema": "gnamma-farghani-translation-stage-v2",
+  "stage": "2026-11-08-new-fifty-Beirut-pages-p35-p84",
+  "repository": "gnamma-research/booksite",
+  "branch": "master",
+  "work": "Farghānī, Muntahā al-madārik, four-foundation introduction",
+  "edition": "B2007, modern Beirut Arabic digital witness, not I1876",
+  "inherited": {
+    "path": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_34.md",
+    "git_blob_sha": "474c2be3327caafea6e4554b0b2a8858f7261d6b",
+    "first": 18,
+    "last": 34,
+    "pages": 17
+  },
+  "new_stages": [
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_35_40.md",
+      "first": 35,
+      "last": 40,
+      "pages": 6,
+      "git_blob_sha": "2cb9ab78ee3d93e651e24c4dabf4824876f22ee9"
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_41_46.md",
+      "first": 41,
+      "last": 46,
+      "pages": 6,
+      "git_blob_sha": "56f1417a45770986216d374e914a28b79db7bed5"
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_47_52.md",
+      "first": 47,
+      "last": 52,
+      "pages": 6,
+      "git_blob_sha": "1bf2d5be9284f32fe48a6997e09e3b58e93567b3"
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_53_60.md",
+      "first": 53,
+      "last": 60,
+      "pages": 8,
+      "git_blob_sha": "df0411d6b54078b39e9e5368a62767653c1a6bca"
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_61_68.md",
+      "first": 61,
+      "last": 68,
+      "pages": 8,
+      "git_blob_sha": "13a351ead1a3e7740c8e9f68458f52615e8ceed8"
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_69_76.md",
+      "first": 69,
+      "last": 76,
+      "pages": 8,
+      "git_blob_sha": "53f9632ceae70eabdc72b495833bf2c3e755767d"
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_77_84.md",
+      "first": 77,
+      "last": 84,
+      "pages": 8,
+      "git_blob_sha": "94e83cffaeae9759959e10b6708078c006a798bc"
+    }
+  ],
+  "added_pages": 50,
+  "cumulative_pages": 67,
+  "cumulative_range": "B2007 pp.18–84, 67 consecutive numbered pages",
+  "cumulative_english_draft_path": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_84.md",
+  "cumulative_master_commit": "e2602a88e204a57fd2bc14943f7ae8a98b57cff1",
+  "web_reader_path": "texts/al-farghani/muntaha-al-madarik/continuous-translation.html",
+  "web_reader_commit": "a825ef4e3f0002ead86f878ddfc71f5142143b99",
+  "detailed_status_path": "texts/al-farghani/muntaha-al-madarik/editorial/STATUS.md",
+  "critical_scholarly_introduction": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_INTRODUCTION.md",
+  "parallel_text": {
+    "count": 32,
+    "source_pages": "18–34",
+    "path": "texts/al-farghani/muntaha-al-madarik/data/units.js",
+    "full_arabic_copytext": false
+  },
+  "page_integrity": {
+    "new_page_range": [
+      35,
+      84
+    ],
+    "new_headings": 50,
+    "new_gaps": 0,
+    "new_duplicates": 0,
+    "cumulative_page_range": [
+      18,
+      84
+    ],
+    "cumulative_headings": 67,
+    "cumulative_gaps": 0,
+    "html_page_links": 67
+  },
+  "foundation_boundaries": [
+    {
+      "id": 1,
+      "end": 69
+    },
+    {
+      "id": 2,
+      "start": 70,
+      "end": 78
+    },
+    {
+      "id": 3,
+      "start": 79,
+      "current_end": 84
+    }
+  ],
+  "next_page": {
+    "b2007": 85,
+    "url": "https://ablibrary.net/book_content/b/9606/85?lang=ar",
+    "previous_text": "وهو مما يلي عالمه وعين مرتبته التي هي حصة من الحضرة العمائية التي هي عين البرزخية بين حضرتي الوجوب والإمكان من التعين الثاني",
+    "following_text": "وعالم الغيب والمعاني، ولكن من حيث تفصيل تلك البرزخية لا من حيث إجمالها"
+  },
+  "critical_flags": {
+    "fully_transcribed_arabic": false,
+    "independent_line_by_line_source_translation_proofing": false,
+    "manuscript_collated_variants": 0,
+    "independently_collated_1876_print": false,
+    "complete_authorial_introduction": false,
+    "verified_1876_vs_beirut_pagination": false,
+    "source_character_denominator": null,
+    "percentage_critically_complete": null
+  },
+  "state": "Cumulative working English draft only, not a completed critical bilingual edition",
+  "open_issues": [
+    "B2007 p21 F007 restored wāḥidiyya clause needs independent check",
+    "B2007 p33 ambiguous transition needs print collation",
+    "B2007 p34 ḥaḍra al-ʿamaliyya needs independent witness",
+    "B2007 p73 free divine choice vs necessary manifestation deserves analytical collation",
+    "All p35–84 English sentences need Arabic clause audit"
+  ]
+}
