@@ -1,0 +1,184 @@
+{
+  "schema": "gnamma-farghani-critical-locus-decision-register-v1",
+  "date": "2026-11-09",
+  "method": "No variants from manuscripts/1876 reported unless directly compared with photographed original reading at exact location. All currently examined authorial Arabic is B2007 edited digital text. Chittick published manuscript-based translations are independent scholarly indirect semantic control, NOT literal Arabic witness readings.",
+  "page_system": "B2007 Beirut volume 1 printed page numbers",
+  "loci": [
+    {
+      "id": "FD-001",
+      "page": 19,
+      "lemma": "عمليّا ووجوديّا",
+      "observed": {
+        "B2007": "عمليّا ووجوديّا"
+      },
+      "candidates": [
+        {
+          "reading": "علميّا ووجوديّا",
+          "kind": "unverified contextual conjecture"
+        }
+      ],
+      "decision": "retain B2007 and flag; cannot prefer ilmiyyan without historical/manuscript reading",
+      "witness_readings": [],
+      "status": "open"
+    },
+    {
+      "id": "FD-002",
+      "page": 21,
+      "lemma": "من حيث واحديتها",
+      "observed": {
+        "B2007": "من حيث واحديتها"
+      },
+      "indirect": "Also in al-Fanārī's Miṣbāḥ al-uns later quotation (modern digital edited text p183).",
+      "decision": "restore old GNAMMA omitted wording; this is correction of project transcription, not a manuscript variant",
+      "witness_readings": [],
+      "status": "digital-transcription-fixed"
+    },
+    {
+      "id": "FD-003",
+      "page": 23,
+      "lemma": "فلم تعلم ولم يحكم بشيء منها إلا بعد تعيّنها",
+      "observed": {
+        "B2007": "فلم تعلم ولم يحكم بشيء منها إلا بعد تعيّنها"
+      },
+      "decision": "retain as printed, preserving prior ربما modal and limitation of the referent in translation; theological crux is not a self-evident scribal corruption",
+      "witness_readings": [],
+      "status": "interpretive-open"
+    },
+    {
+      "id": "FD-004",
+      "page": 25,
+      "lemma": "على أنها غايات حكم الغضب عارجا لا نازلا",
+      "observed": {
+        "B2007": "على أنها غايات حكم الغضب عارجا لا نازلا"
+      },
+      "decision": "retain printed words and flag contested syntax/directionality; do not silently re-point",
+      "witness_readings": [],
+      "status": "open"
+    },
+    {
+      "id": "FD-005",
+      "page": 26,
+      "lemma": "ولحظ وكلي فيّ عين لعبرة",
+      "observed": {
+        "B2007": "لعبرة",
+        "separate-taiyya": "لعبرتي"
+      },
+      "decision": "treat as collateral independent POEM-transmission difference only; cannot assert how Farghānī quoted the verse without reading his manuscripts",
+      "witness_readings": [],
+      "status": "poem-parallel-not-farghani-variant"
+    },
+    {
+      "id": "FD-006",
+      "page": 29,
+      "lemma": "والتعيّن الأول المذكورة وقلبه المطهّر",
+      "observed": {
+        "B2007": "المذكورة"
+      },
+      "decision": "apparent agreement/attachment issue; preserve as crux, get manuscript images; cannot assert corrected form",
+      "witness_readings": [],
+      "status": "open"
+    },
+    {
+      "id": "FD-007",
+      "page": 31,
+      "lemma": "لون الماءلون إنائه",
+      "observed": {
+        "B2007": "الماءلون"
+      },
+      "candidates": [
+        {
+          "reading": "الماء لون",
+          "kind": "digital-spacing normalization"
+        }
+      ],
+      "decision": "insert whitespace for reader without making a textual variant or changing word identity",
+      "witness_readings": [],
+      "status": "typographic-correction"
+    },
+    {
+      "id": "FD-008",
+      "page": 33,
+      "lemma": "فعاد ذلك التجلّي ظاهرا معيّنا في عون هذا",
+      "observed": {
+        "B2007": "في عون هذا"
+      },
+      "decision": "retain observed Arabic; do not silently conjecture عين, عون or editorial smoothing. Independent 1876/MS image mandatory",
+      "witness_readings": [],
+      "status": "open"
+    },
+    {
+      "id": "FD-009",
+      "page": 34,
+      "lemma": "سمّي بالحضرة العملية",
+      "observed": {
+        "B2007": "الحضرة العملية",
+        "internal_parallel_B2007_p36": "الحضرة العمائية"
+      },
+      "candidates": [
+        {
+          "reading": "الحضرة العمائية",
+          "kind": "internal-parallel-conjecture, not a verified historical variant"
+        }
+      ],
+      "decision": "retain diplomatic B2007; suggest العمائية in apparatus only. Verify earliest MS and Chittick's collated text if obtainable",
+      "witness_readings": [],
+      "status": "open"
+    },
+    {
+      "id": "FD-010",
+      "page": 36,
+      "lemma": "فمسمى بالحضرة العمائية",
+      "observed": {
+        "B2007": "الحضرة العمائية"
+      },
+      "decision": "retain as printed; internal comparative control for p34, not proof of p34 author's wording",
+      "witness_readings": [],
+      "status": "retained"
+    },
+    {
+      "id": "FD-011",
+      "page": 31,
+      "lemma": "فكان لفظه حينئذ متعدّيا ... بمفعول واحد",
+      "observed": {
+        "B2007": "بمفعول واحد"
+      },
+      "decision": "preserve authorial analogy concerning ʿilm, note its conceptual/grammatical force; no textual emendation warranted",
+      "witness_readings": [],
+      "status": "translation-annotation"
+    },
+    {
+      "id": "FD-012",
+      "page": 30,
+      "lemma": "فحقيقة الكمال الأسمائي ظهور الذات لنفسها ... من حيث مظهر شأن كلّي",
+      "observed": {
+        "B2007": "مظهر شأن كلّي"
+      },
+      "decision": "clarify the perfected human as comprehensive locus under condition, without assimilating it to absolutely unconditioned Essence",
+      "witness_readings": [],
+      "status": "translation-reviewed"
+    }
+  ],
+  "historical_independent_readings_confirmed": 0,
+  "notes": [
+    "Chittick 2025 says modern Beirut/Qom editions reproduce significant errors of 1876, and bases his translation on collated Carullah 1107, Ragip 670, and Kadizademehmed 273.",
+    "Chittick p27–28 uses manuscript-collated English of p21/p31 and agrees in core interpretive opposition aḥadiyya/wāḥidiyya and wujūd/wwijdān; this does not document variant spellings.",
+    "F3966 potentially 724AH, C1107 741AH, R670 763AH; verify original colophons and copyist provenance. K273 date unknown."
+  ],
+  "external_controls": [
+    {
+      "type": "scholarly_manuscript_based_english",
+      "work": "Chittick 2025 Journal of Sufi Studies 14 (2025) 22-49",
+      "url": "https://traditionalhikma.com/wp-content/uploads/2025/06/Farghani_on_Wahdat_al_Wujud_in_the_Four.pdf",
+      "manuscripts": [
+        "Carullah 1107",
+        "Ragip Pasa 670",
+        "Kadizademehmed 273"
+      ]
+    },
+    {
+      "type": "scholarly_manuscript_report",
+      "work": "Chittick Maratib al-taqwa, 2024, note 5",
+      "url": "https://traditionalhikma.com/wp-content/uploads/2024/03/Maratib_al_Taqwa_Said_al_Din_Farghani_on.pdf"
+    }
+  ]
+}
