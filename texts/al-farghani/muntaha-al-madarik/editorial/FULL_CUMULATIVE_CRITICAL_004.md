@@ -10026,7 +10026,7 @@ Continue p30 onward, and prioritize real physical textual collation with the 187
 
 [Arabic source](https://ablibrary.net/book_content/b/9606/30?lang=ar)
 
-### CR004-010 · B2007 p31 · crux
+### CR004-010 · B2007 p31 · corrected
 
 **Arabic:** لون الماءلون إنائه
 
