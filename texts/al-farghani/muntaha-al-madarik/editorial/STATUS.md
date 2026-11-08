@@ -10,7 +10,7 @@
 - **Pages sampled:** 18–32 of the modern Beirut digitization (`ablibrary.net/book_content/b/9606/{page}`). This is a page *range of sampled text*, **NOT fifteen fully translated pages**. It includes discontinuities and omitted sentences.
 - **Foundation:** first foundation only. Selected clauses concern hiddenness, unity, self-disclosure, names, degrees of inward comprehension, perfection, knowledge, and existential determination.
 - **Not translated:** the majority of the first foundation, the rest of the approximately 107-page 1876 introductory division, the full later commentary, the Persian *Mashāriq al-darārī*. Nothing omitted is silently represented as translated.
-- **Textual basis:** Arabic text of the modern Beirut printed edition, edited by ʿĀṣim Ibrāhīm al-Kayyālī, as digitized by Ahlulbayt Library. Page 32 is additionally checked against an independent, visibly parallel web transcription (link below). Editorial footnotes have **not** been incorporated into Farghānī's authorial text.
+- **Textual basis:** Arabic text of the modern Beirut printed edition, edited by ʿĀṣim Ibrāhīm al-Kayyālī, as digitized by Ahlulbayt Library. Page 32 is verified directly in the same Beirut digital witness (its page-specific source link now works). Editorial footnotes have **not** been incorporated into Farghānī's authorial text.
 - **Collation:** source-anchored transcription only. No manuscript leaf images collated, and no systematic comparison against the 1876 Istanbul print has yet been carried out.
 - **Translation status:** working scholarly translation, not a definitive critical edition. The bilingual data accurately displays selected source clauses only; it does not interpolate missing authorial text.
 - **Comparative layer:** explicitly *modern editorial research*, never Farghānī's Arabic or an attribution of perennialist doctrine to him.
@@ -35,14 +35,14 @@ The Arabic has some unvowelled lexical/typographical uncertainty in the digital 
 | 29 | F018 | One selected clause |
 | 30 | F019–F020 | Two selected clauses |
 | 31 | F021–F023 | Three selected clauses |
-| 32 | F024–F025 | Two selected clauses, parallel web transcription |
+| 32 | F024–F025 | Two selected clauses, directly verified against page-specific Arabic source |
 
 **Total:** 25 passage records; there is *no* claim of complete-page coverage anywhere in this register.
 
 ## Sources and editions
 
 1. Beirut digital transcription, *Muntahā al-madārik*, first volume, editor ʿĀṣim Ibrāhīm al-Kayyālī: https://ablibrary.net/book_content/b/9606/18?lang=ar (replace terminal `/18` with the page shown in each unit).
-2. Same Arabic work, parallel transcription of first foundation including p. 32: https://alshrefalm7sy.ahlamontada.com/t3203 (verify actual redirect/path before using as an enduring source).
+2. Direct page 32 Arabic witness: https://ablibrary.net/book_content/b/9606/32?lang=ar (the authorial paragraph and chapter boundary are visible).
 3. Historical printed Arabic witness: Istanbul 1876, Princeton/NYU scan https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en (not yet line-by-line collated).
 4. Earlier Persian *Mashāriq al-darārī*, edited by Sayyid Jalāl al-Dīn Āshtiyānī: https://ablibrary.net/book_content/b/4366/126 — contextual comparative witness, not collated.
 5. Guénon, *Les États multiples de l'être*, chapters II, V: https://oeuvre-de-rene-guenon.org/textes/EME02.php and https://oeuvre-de-rene-guenon.org/textes/EME05.php. This material informs only our optional comparison.
