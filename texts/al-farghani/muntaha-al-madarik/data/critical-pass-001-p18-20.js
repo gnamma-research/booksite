@@ -1,4 +1,3 @@
-/* GNAMMA source-checked clauses; DO NOT mark as a manuscript-critical text. */
 window.FARGHANI_CRITICAL_PASS_001={
   "schema": "gnamma-farghani-critical-pass-clause-v1",
   "date": "2026-11-09",
@@ -134,7 +133,19 @@ window.FARGHANI_CRITICAL_PASS_001={
       "source_siglum": "B2007",
       "grade": "printed-digital-Arabic-checked-v1",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "historical_print": {
+        "siglum": "I1876",
+        "printed_page": 5,
+        "scan_index": 9,
+        "reading": "وبطون المشتمل",
+        "status": "agreement",
+        "source_pdf": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
+        "evidence_register": "editorial/I1876_COLLATION_001.json",
+        "note": "Both historical printed p5 and digitized Beirut show the difficult wording; leave open for manuscript.",
+        "verified_direct_photo": true,
+        "manuscript_verified": false
+      }
     },
     {
       "id": "CR001-011",
@@ -179,14 +190,26 @@ window.FARGHANI_CRITICAL_PASS_001={
       "id": "CR001-014",
       "page": 19,
       "ar": "والمحتوي أيضا على لآلىء أسماء الأفعال العامّ نفعها وأثرها ، والمستفيض حكمها وخبرها في جميع المراتب الكونيّة التي هي محال تمام الكمال الأسمائي والمطلب الغائبّ المعني بقوله : « فخلقت الخلق لأعرف »",
-      "en": "It also contains the pearls of the names of acts, whose benefits and effects are universal, and whose judgments and reports extend throughout the cosmic ranks—the loci in which the perfection through the names is completed, the intended goal referred to by 'I created creation to be known'.",
-      "disposition": "crux",
-      "critical_note": "The digital phrase المطلب الغائبّ appears lexically awkward. A clean print reading is needed before interpreting it as 'hidden' rather than 'intended' goal.",
+      "en": "It also contains the pearls of the names of acts, whose benefits and effects are universal, and whose judgments and reports extend throughout the cosmic ranks—the loci in which the perfection through the names is completed, the ultimate objective referred to by 'I created creation to be known'.",
+      "disposition": "corrected",
+      "critical_note": "**Historical-print correction:** I1876 printed p6 (PDF scan 10) reads المطلب الغائي, while B2007 digital reads المطلب الغائبّ. Prefer ‘ultimate objective’ for the edited text; preserve the B2007 form in apparatus. This is a real print-level difference, not a manuscript variant.",
       "source_url": "https://ablibrary.net/book_content/b/9606/19?lang=ar",
       "source_siglum": "B2007",
       "grade": "printed-digital-Arabic-checked-v1",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "historical_print": {
+        "siglum": "I1876",
+        "printed_page": 6,
+        "scan_index": 10,
+        "reading": "والمطلب الغائي",
+        "status": "historical-print-difference",
+        "source_pdf": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
+        "evidence_register": "editorial/I1876_COLLATION_001.json",
+        "note": "I1876 p6 visibly reads الغائي where B2007 digital reads الغائبّ. Prefer historic print for a purposive objective; no manuscript inferred.",
+        "verified_direct_photo": true,
+        "manuscript_verified": false
+      }
     },
     {
       "id": "CR001-015",
@@ -309,14 +332,26 @@ window.FARGHANI_CRITICAL_PASS_001={
       "id": "CR001-024",
       "page": 19,
       "ar": "ليتحقّق كمال ذلك الظهور مفصّلا متميّزا ويشمل حكمه وأثره المقدّر والمقدّر تعقّبا ذاتيّا لا زمانيّا ، بل عمليّا ووجوديّا أيضا بالنسبة إلى المقدّر العالم الأزلي وعلمه الذاتي والصفاتي الأبدي",
-      "en": "So that the perfection of disclosure may be realized in articulated distinction, and its rule and effect may encompass the determiner and what is determined in essential rather than temporal succession—and also in an operative [text: ʿamaliyyan] and existential order with respect to the eternal Determiner who knows, and His everlasting essential and attributive knowledge.",
-      "disposition": "crux",
-      "critical_note": "Previous English silently read 'in knowledge and existence' at the second occurrence, but B2007 and a derivative transcription read عمليّا, not علميّا. The contextual conjecture 'epistemic' requires an independent witness, not a silent correction. The unvowelled identical المقدّر والمقدّر also requires grammatical control.",
+      "en": "So that the perfection of disclosure may be realized in articulated distinction, and its rule and effect may encompass the determiner and what is determined in essential rather than temporal succession—and also in knowledge and existence with respect to the eternal Determiner who knows, and His everlasting essential and attributive knowledge.",
+      "disposition": "corrected",
+      "critical_note": "**Historical-print correction:** I1876 printed p6, PDF scan 10, reads بل علميا ووجوديا; B2007 digital prints بل عمليّا ووجوديّا. Correct the edited reading to ‘in knowledge and existence’, supported by the immediate wording about the eternal knower and His knowledge. No manuscript readings verified.",
       "source_url": "https://ablibrary.net/book_content/b/9606/19?lang=ar",
       "source_siglum": "B2007",
       "grade": "printed-digital-Arabic-checked-v1",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "historical_print": {
+        "siglum": "I1876",
+        "printed_page": 6,
+        "scan_index": 10,
+        "reading": "بل علميا ووجوديا أيضا",
+        "status": "historical-print-difference",
+        "source_pdf": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
+        "evidence_register": "editorial/I1876_COLLATION_001.json",
+        "note": "I1876 p6 visibly reads علميا where B2007 digital reads عمليا. Retain historical print reading and existing epistemic/existential sense.",
+        "verified_direct_photo": true,
+        "manuscript_verified": false
+      }
     },
     {
       "id": "CR001-025",
