@@ -73,3 +73,13 @@ body[data-focus="2"] .stage-header{padding-top:9px}
   .stage-source{white-space:normal}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Compact continuous-mode inter-unit rhythm; retains readable lines and section boundaries. */
+body[data-continuous="true"] .reading-block{padding:6px 0 10px!important;margin:0;border-bottom:1px solid var(--line)}
+body[data-continuous="true"] .reading-block+.reading-block{padding-top:8px!important}
+body[data-continuous="true"] .reading-block h3{margin:3px 0 6px!important;font-size:19px;line-height:1.3}
+body[data-continuous="true"] .reading-block .text-pair{gap:clamp(10px,2vw,25px)}
+body[data-continuous="true"] .reading-block .text-pair p{margin:3px 0 5px;line-height:1.73}
+body[data-continuous="true"] .research-note,body[data-continuous="true"] .comparison-note{margin:6px 0 3px;padding:7px 10px}
+body[data-continuous="true"] .extract-disclaimer{margin:5px 0 0}
+@media(max-width:760px){body[data-continuous="true"] .reading-block{padding:4px 0 7px!important}body[data-continuous="true"] .reading-block+.reading-block{padding-top:6px!important}body[data-continuous="true"] .reading-block h3{font-size:18px}}
