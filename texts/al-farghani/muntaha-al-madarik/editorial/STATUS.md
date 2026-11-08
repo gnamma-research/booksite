@@ -1,6 +1,18 @@
 # Muntahā al-madārik · Editorial and translation register
 
-## Latest milestone — Critical Pass III · digital source check extended to B2007 pp.24–29 (9 November 2026)
+## Current milestone — Critical Pass IV, witness census and collational controls (9 November 2026)
+
+**Definitive-edition scope:** the full introductory four foundations and concluding preface, B2007 printed pp18–145 (128 page-labelled English working draft). The verse-by-verse commentary is a separate phase. The existing translation is preserved, not restarted.
+
+**English–Arabic source checking:** 80 individual loci in Passes I–II (B2007 pp18–23), 62 in Pass III (pp24–29), and **56 new selected loci in Pass IV (pp30–36)**: **198 distinct machine-readable critical records across 19 pages with some checked spans**. All pages after p23 remain incompletely proofread even where selected clauses were examined. This is not an independently constituted critical Arabic copy-text.
+
+**Historical census:** [expanded witness census](WITNESS_CENSUS_CRITICAL_004.md) records Y706, F3966, C1107, R670, K273, R669, C1746, SA1347 and H236; [witness JSON](WITNESS_REGISTER.json). Chittick's 2025 manuscript-based text used Carullah 1107, Ragıp Paşa 670, Kadızademehmed 273; it is **indirect corroborative scholarship**, not manuscript readings observed here.
+
+**Decision register:** [12-locus editorial decisions](CRITICAL_LOCUS_REGISTER_004.json), particularly B2007 p33 `في عون هذا`, B2007 p34 `الحضرة العملية` vs p36 `الحضرة العمائية`, and p31 missing whitespace in `الماءلون`. No historical text emendation has been made without external manuscript evidence. Independent 1876 or manuscript collation **0 pages**, established independent Farghānī manuscript variants **0**.
+
+**Current Pass IV:** [56 Arabic–English loci](CRITICAL_TRANSLATION_30_36.md), [interactive critical reader](../critical-edition.html), [full cumulative archive](FULL_CUMULATIVE_CRITICAL_004.md), and [handoff](STAGE_HANDOFF_CRITICAL_004.md). The former full archive P145 and later III remain intact. **Next unreviewed source p37**. A truly definitive edition requires photographed manuscript folios, page concordances, variant stemma, complete proof of 128 pages, and scholarly review. Catalogue information is not equivalent to images.
+
+## Historical milestone — Critical Pass III · digital source check extended to B2007 pp.24–29 (9 November 2026)
 
 - The **complete English working introduction remains** B2007 pp.18–145 (128 page-labelled source units): four foundations through p143 and *tatimmat al-dībāja* pp144–145. Do not repeat the English translation.
 - **New source-critical work:** 62 **selected** Arabic–English clause spans checked against B2007 pp24–29; 35 retained, 16 translation revisions, 6 attribution/context annotations, 5 open cruxes. Together with earlier pp18–23, **142 individually audited records** from twelve source pages. This is **not exhaustive full-page proofreading** of pp24–29.
