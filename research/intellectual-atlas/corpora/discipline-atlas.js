@@ -554,6 +554,7 @@ function render(args,api){
 }
 function refresh(){if(argsNow?.isActive())render(argsNow,apiNow);}
 function selectedWork(id,relation=false){
+ console.info("GNAMMA_DN_SELECTED_ENTER",id,relation,S.scope);
  if(relation){S.edge=id;S.work="";}
  else{S.work=id;S.edge="";}
  const existing=host.querySelector(".dn-detail");
@@ -566,11 +567,13 @@ function selectedWork(id,relation=false){
    host.querySelector(".dn-detail")?.scrollIntoView({block:"nearest"});
 }
 function onClick(event){
+ console.info("GNAMMA_DN_ROOT_CLICK",event.target?.tagName,event.target?.closest?.("[data-dn-work]")?.getAttribute("data-dn-work"),event.defaultPrevented);
  const el=event.target.closest(
  "[data-dn-work],[data-dn-scholar],[data-dn-edge],[data-dn-cluster],[data-dn-undated],"+
  "[data-dn-lane],[data-dn-mode],[data-dn-pan],[data-dn-zoom],[data-dn-page],"+
  "[data-dn-all-years],[data-dn-reset],[data-dn-apply],[data-dn-undated-back],[data-dn-close]");
  if(!el||!host.contains(el))return;
+ console.info("GNAMMA_DN_MATCH",el.tagName,el.getAttribute("data-dn-work"),el.getAttribute("data-dn-cluster"));
  event.preventDefault();
  if(el.hasAttribute("data-dn-work")){selectedWork(el.getAttribute("data-dn-work"));return;}
  if(el.hasAttribute("data-dn-scholar")){selectedWork("jurist:"+el.getAttribute("data-dn-scholar"));return;}
