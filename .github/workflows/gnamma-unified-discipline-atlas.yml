@@ -1,0 +1,84 @@
+name: GNAMMA unified chronological disciplinary atlases and vertical-text synopses
+on:
+  push:
+    branches: [feat/unified-disciplinary-atlas-timeline-vertical-synopsis-20261108]
+    paths: ['research/intellectual-atlas/**', '.github/workflows/gnamma-unified-discipline-atlas.yml']
+  pull_request:
+    branches: [master]
+    paths: ['research/intellectual-atlas/**', '.github/workflows/gnamma-unified-discipline-atlas.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate-sources-and-syntax:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Syntax, original research graph, and bibliographic record checks
+        run: |
+          node --check research/intellectual-atlas/corpora/discipline-atlas.js
+          node --check research/intellectual-atlas/corpora/canonical-synopsis.js
+          node --check research/intellectual-atlas/atlas-app.js
+          node --check research/intellectual-atlas/corpora/bibliography-map.js
+          python research/intellectual-atlas/corpora/verify.py
+          python research/intellectual-atlas/corpora/verify_expansion.py
+          python research/intellectual-atlas/build.py
+          git diff --exit-code -- research/intellectual-atlas/index.html research/intellectual-atlas/publication.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('research/intellectual-atlas')
+          manifest=json.loads((p/'publication.json').read_text())
+          assert manifest['entries']==404 and manifest['textual_relationships']==377
+          assert 'common-chronological' in manifest['ui_revision']
+          assert manifest['bibliography_map']['alreq_source_linked_entries']==4157
+          assert len(json.loads((p/'corpora/early-jurists.json').read_text())['authorities'])==16
+          h=(p/'index.html').read_text()
+          assert 'discipline-atlas.js' in h and 'canonical-synopsis.js' in h
+          assert 'subject-graph.js?v=' not in h
+          print('PASS: primary chronology, synopsis, 16 early authorities, and unchanged 404/377 historical corpus')
+          PY
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 27
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {browser: chromium, width: 1440, height: 900}
+          - {browser: chromium, width: 390, height: 844}
+          - {browser: chromium, width: 844, height: 390}
+          - {browser: webkit, width: 390, height: 844}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Install real browser engines
+        run: |
+          python -m pip install -q playwright==1.58.0
+          python -m playwright install --with-deps ${{ matrix.browser }}
+      - name: Navigate each common chronology, drill down, switch to vertical synopsis, and inspect citations
+        shell: bash
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 >/tmp/gnamma-unified-server.log 2>&1 &
+          pid=$!
+          trap 'kill $pid || true' EXIT
+          for i in {1..60}; do
+            curl --silent --fail http://127.0.0.1:8123/research/intellectual-atlas/ >/dev/null && break
+            sleep .25
+          done
+          python research/intellectual-atlas/tests/verify_unified_subject_timeline_browser.py --browser ${{ matrix.browser }} --width ${{ matrix.width }} --height ${{ matrix.height }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gnamma-unified-${{ matrix.browser }}-${{ matrix.width }}x${{ matrix.height }}
+          path: |
+            /tmp/gnamma-unified-timeline-qa/*.json
+            /tmp/gnamma-unified-timeline-qa/*.png
+            /tmp/gnamma-unified-server.log
+          if-no-files-found: ignore
