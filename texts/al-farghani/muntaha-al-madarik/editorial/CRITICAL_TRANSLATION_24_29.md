@@ -168,11 +168,11 @@ The verified Arabic pages are [24](https://ablibrary.net/book_content/b/9606/24?
 
 ### CR003-017 · Beirut p. 25 · revise
 
-**Arabic (B2007):** ليمِيط خمار غلبة حكم جلال الغيب والبطون عن الجمال والظهور
+**Arabic (B2007):** ليميط خمار غلبة حكم جلال الغيب والبطون عن الجمال والظهور
 
 **Revised or confirmed English:** so as to remove the veil of the preponderance of the majesty of the Unseen and hiddenness from beauty and manifestation.
 
-**Editorial decision:** The diacritics in this record are analytical; the digital page writes ليميط. The 'veil' is figurative and must not be literalized.
+**Editorial decision:** The digital source writes ليميط without vocalization; the 'veil' is figurative and must not be literalized.
 
 **Source:** https://ablibrary.net/book_content/b/9606/25?lang=ar
 
@@ -252,7 +252,7 @@ The verified Arabic pages are [24](https://ablibrary.net/book_content/b/9606/24?
 
 **Revised or confirmed English:** My utterance—and my whole being is a tongue speaking through me.
 
-**Editorial decision:** First Ibn al-Fāriḍ hemistich in the Beirut digital print; both vocalization and lineation need comparison with an independently edited Tāʾiyya before a definitive poetic translation.
+**Editorial decision:** First Ibn al-Fāriḍ hemistich in Beirut. Collateral poetic reading: B2007 p26 gives ولحظ ... عين لعبرة, whereas a separate published Tāʾiyya in the Qayṣarī commentary (verse 545) and Wikisource read لعبرتي. These are parallel poem texts, NOT independent Farghānī manuscript witnesses.
 
 **Source:** https://ablibrary.net/book_content/b/9606/26?lang=ar
 
