@@ -211,8 +211,8 @@
     },
     {
       "path": "texts/al-farghani/muntaha-al-madarik/editorial/STATUS.md",
-      "blob_sha": "3a4dbc57f3f7786986f8a2405e1df11772c6abde",
-      "bytes_utf8": 12034
+      "blob_sha": "ff49f33a6199a2e1c8d7474a2d15e94bfefdb5da",
+      "bytes_utf8": 13418
     },
     {
       "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_35_40.md",
@@ -298,9 +298,29 @@
       "path": "texts/al-farghani/muntaha-al-madarik/reader.css",
       "blob_sha": "15e14af50a2c281252b4b8561df9127453f48466",
       "bytes_utf8": 4905
+    },
+    {
+      "path": "texts/manifest.json",
+      "blob_sha": "0440bae208d381e3ac103ce53c222702b4443538",
+      "bytes_utf8": 23262
+    },
+    {
+      "path": "texts/index.html",
+      "blob_sha": "3c1dddcebcca92d73536f5afc8c545cf8dd8af26",
+      "bytes_utf8": 6636
+    },
+    {
+      "path": "docs/TRANSLATION_CONTINUITY_PROTOCOL.md",
+      "blob_sha": "58c7caec17115fcc4abb2d1282bcea4acd7cd7ee",
+      "bytes_utf8": 6220
     }
   ],
   "cumulative_handoff_verified_in_repository": true,
   "github_pages_deployment_verified": false,
-  "source_validation_note": "Page-number coverage and link structure verified. Arabic-to-English fidelity and exact page-to-page clause coverage have NOT been independently checked."
+  "source_validation_note": "Page-number coverage and link structure verified. Arabic-to-English fidelity and exact page-to-page clause coverage have NOT been independently checked.",
+  "archive_policy_status": "Committed; full handoff is a preserved snapshot of the working-stage text and apparatus. Latest stage manifest reflects post-publication files; stage archive contents remain immutable.",
+  "project_issue": "https://github.com/gnamma-research/booksite/issues/245",
+  "site_publication_observation": "GitHub Pages latest observed build queued; no successful deployment of final commit confirmed.",
+  "external_page_load_verified": false,
+  "file_inventory_updated_on": "2026-11-08"
 }
