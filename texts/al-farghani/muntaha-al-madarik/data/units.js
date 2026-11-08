@@ -1,6 +1,5 @@
-// Saʿīd al-Dīn al-Farghānī — verified Arabic anchors + original English working translations.
-// Arabic transcription basis: Beirut print digitized at ablibrary.net/book_content/b/9606/{page}; selected clauses only.
-// This is NOT a continuous translation or a manuscript-collated edition.
+// Arabic source readings are authorial excerpts only; not a complete-page edition.
+// Corrected against Beirut digital pages 18–32 where recorded. Manuscript collation not yet performed.
 window.FARGHANI_UNITS=[
   {
     "id": "F001",
@@ -79,9 +78,9 @@ window.FARGHANI_UNITS=[
     "page": 21,
     "title": "Knowing God under determination, not in absolute nondelimitation",
     "topic": "Realization",
-    "ar": "فعلى كل حال يكون ذلك العلم والشهود والتجلّي والإدراك من حيث تعينه ومشيئته وعلمه المقدّس بذاته الأقدس، لا من حيث إطلاقها وأحديتها",
-    "en": "In every case, such knowing, witnessing, self-disclosure, and apprehension occur with respect to His determination, will, and sacred knowledge of His most holy Essence—not with respect to its nondelimitation and unicity.",
-    "note": "The passage follows a comparison of the journey of love, the journey of being beloved, and their union. Its distinction is between modalities of disclosure and the unqualified Essence.",
+    "ar": "فعلى كل حال يكون ذلك العلم والشهود والتجلّي والإدراك من حيث تعينه ومشيئته وعلمه المقدّس بذاته الأقدس تعالى وتقدّس من حيث واحديتها، لا من حيث إطلاقها وأحديتها",
+    "en": "In every case, this knowing, witnessing, self-disclosure and apprehension concern His determination, will and sacred knowledge of His most holy Essence—exalted and holy is He—under the consideration of its oneness (wāḥidiyya), not under the consideration of its nondelimitation and unicity (aḥadiyya).",
+    "note": "Correction 2026-11-08: the earlier transcription omitted 'من حيث واحديتها' and so concealed an explicit contrast between wāḥidiyya and aḥadiyya. Restored from Beirut digital p. 21. Still requires inspection of the 1876 print and manuscript witnesses.",
     "compare": "Crucial when comparing the final attainment of the Perfect Human and Guénonian realization beyond Being.",
     "sourceUrl": "https://ablibrary.net/book_content/b/9606/21?lang=ar",
     "scope": "exact selected source clause, not entire printed page"
