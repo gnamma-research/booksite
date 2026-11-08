@@ -1,9 +1,7 @@
-# Farghānī · Full cumulative critical archive through Pass III (9 November 2026)
+# Farghānī · Complete cumulative working-and-critical archive through Pass III
+**Latest state: 9 November 2026.** The entire earlier P145 project is embedded in Part A, followed by Pass III's **62 selected** Arabic–English source checks, analytical notes, witness register, full 128-page quality ledger and authoritative latest handoff. **The 1876 historical print and manuscript folios have not been collated; this is not a definitive Arabic edition.** Earlier progress claims within the historical P145 archive are superseded by Parts B–G for current status.
 
-**This single file preserves the complete older P145 English introduction and apparatus, plus the new 62 selected Arabic–English loci and critical audit.** Earlier working-stage records and statements of progress within the inherited P145 text are historical; the newest state at this file's end takes precedence. The Arabic edition is not manuscript-collated or definitive.
-
-## Part A · Preserved complete P145 cumulative archive
-
+## Part A · Preserved complete P145 working archive
 # FULL CUMULATIVE HANDOFF · Farghānī Muntahā al-madārik · P145
 
 **Latest snapshot:** 9 November 2026 · GNAMMA Research, ʿIrfān and metaphysics. This file preserves the full recoverable working-stage English translation of Farghānī's systematic introduction and concluding preface, the newly initiated source-critical Arabic–English checking layer, critical notes, source register, glossary, comparison, and provenance. No older stage master was replaced.
@@ -6813,9 +6811,7 @@ The entire English draft, 80 checked Arabic/English clauses, remaining 32 biling
 
 
 ---
-
-## Part B · New selected critical loci (B2007 pp24–29)
-
+## Part B · Added source-checked selected loci, pp24–29
 # Farghānī — Muntahā al-madārik: Critical pass III, Beirut pp. 24–29
 
 **9 November 2026 · 62 selected authorial Arabic–English clause loci.** This is an audit of bounded source spans; it **does not** constitute full-page exhaustive collation. Arabic readings were checked against the B2007 digital printed text. Original editorial footnotes were excluded from the source clauses, though used to flag attributed sayings. **Zero** independent readings have been established from the 1876 print or any manuscript. All unexamined surrounding text remains in working-draft status. Corrections of English, punctuation and textual cruxes are explicitly distinct from manuscript variants.
@@ -6986,11 +6982,11 @@ The verified Arabic pages are [24](https://ablibrary.net/book_content/b/9606/24?
 
 ### CR003-017 · Beirut p. 25 · revise
 
-**Arabic (B2007):** ليمِيط خمار غلبة حكم جلال الغيب والبطون عن الجمال والظهور
+**Arabic (B2007):** ليميط خمار غلبة حكم جلال الغيب والبطون عن الجمال والظهور
 
 **Revised or confirmed English:** so as to remove the veil of the preponderance of the majesty of the Unseen and hiddenness from beauty and manifestation.
 
-**Editorial decision:** The diacritics in this record are analytical; the digital page writes ليميط. The 'veil' is figurative and must not be literalized.
+**Editorial decision:** The digital source writes ليميط without vocalization; the 'veil' is figurative and must not be literalized.
 
 **Source:** https://ablibrary.net/book_content/b/9606/25?lang=ar
 
@@ -7070,7 +7066,7 @@ The verified Arabic pages are [24](https://ablibrary.net/book_content/b/9606/24?
 
 **Revised or confirmed English:** My utterance—and my whole being is a tongue speaking through me.
 
-**Editorial decision:** First Ibn al-Fāriḍ hemistich in the Beirut digital print; both vocalization and lineation need comparison with an independently edited Tāʾiyya before a definitive poetic translation.
+**Editorial decision:** First Ibn al-Fāriḍ hemistich in Beirut. Collateral poetic reading: B2007 p26 gives ولحظ ... عين لعبرة, whereas a separate published Tāʾiyya in the Qayṣarī commentary (verse 545) and Wikisource read لعبرتي. These are parallel poem texts, NOT independent Farghānī manuscript witnesses.
 
 **Source:** https://ablibrary.net/book_content/b/9606/26?lang=ar
 
@@ -7455,9 +7451,7 @@ The verified Arabic pages are [24](https://ablibrary.net/book_content/b/9606/24?
 
 
 ---
-
-## Part C · New critical audit and collateral poem check
-
+## Part C · New critical audit
 # Critical Audit II — Farghānī, *Muntahā al-madārik*, Beirut pp. 24–29
 **9 November 2026.** Modern printed-digital source checking of **62 selected clauses**. The preceding audit contains 80 clauses, pp.18–23; the combined register now has 142. B2007 source pages 24–29 were read directly. **No independent copy of Farghānī's 1876 Istanbul print or manuscript has been collated; no manuscript variant is established.** Do not call these six pages exhaustively line-proofread.
 
@@ -7497,9 +7491,2410 @@ B2007 p30 is the next **unsampled** page. The next **source-critical** stage sho
 
 
 ---
+## Part D · Full updated witness register (JSON)
+```json
+{
+  "schema": "gnamma-farghani-introduction-witness-register-v1",
+  "work": "Saʿīd al-Dīn al-Farghānī, Muntahā al-madārik, introductory four uṣūl",
+  "updated": "2026-11-09",
+  "scope": {
+    "historical_print": "1876 Istanbul volume I, printed pages 1–107 per Scattolin",
+    "notes": "The printed and digital Beirut paginations do not correspond; never copy a number without labelling its witness.",
+    "critical_edition_status": "not-yet-constituted",
+    "continuous_full_arabic_transcription": false,
+    "continuous_full_english_translation": true,
+    "consecutive_english_draft": "Beirut B2007 pp.18–34, 17 pages in working translation; not line-by-line proofed or independently collated",
+    "english_draft_authorial_pages": 128,
+    "complete_full_critical_introduction": false,
+    "critical_scholarly_editorial_essay": "editorial/CRITICAL_INTRODUCTION.md",
+    "cumulative_english_draft": "B2007 pp.18–134 = 117 consecutively numbered English working pages; p85–134 sourced through derivative online re-transcription and not independently collated",
+    "latest_handoff": "editorial/FULL_CUMULATIVE_CRITICAL_003.md",
+    "verified_manuscript_variant_count": 0,
+    "current_english_draft": "B2007 pp18–145, 128 page-labelled English working draft, all four foundations and concluding preface; manuscript-critical edition incomplete",
+    "current_scope_boundary": "Fourth foundation ends at B2007 p143; tatimmat al-dibaja pp144–145; poem commentary begins thereafter",
+    "modern_print_clause_review": {
+      "pages": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "count": 142,
+      "source": "B2007 digital printed Arabic, selected spans",
+      "status": "80 earlier source-clause records p18–23; 62 selected new p24–29 loci; no complete-page verification assertion for the latter; not historical or manuscript collation"
+    },
+    "next_critical_audit_beirut_page": 30,
+    "definitive_status": "not-achieved",
+    "critical_review_new_stage": "62 selected clause source checks p24–29; total 142 records, ten open digital cruxes"
+  },
+  "witnesses": [
+    {
+      "siglum": "I1876",
+      "kind": "historical-print",
+      "title": "Muntahā al-madārik, 1293/1876 Istanbul, vol. I",
+      "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en",
+      "pageRange": "1–107: introductory division (Scattolin)",
+      "editor": "Muḥammad Shukrī al-ʿŪfī, reported by Scattolin",
+      "access": "catalogue and public-domain digital facsimile locator verified; individual page images NOT collated",
+      "accessGrade": "catalogued-scan-not-inspected",
+      "role": "intended historical print control; not yet a copy-text",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "B2007",
+      "kind": "modern-edition-digital",
+      "title": "Muntahā al-madārik, ed. ʿĀṣim Ibrāhīm al-Kayyālī, Dār al-Kutub al-ʿIlmiyya",
+      "url": "https://ablibrary.net/book_content/b/9606/18?lang=ar",
+      "printYear": "2007",
+      "pagesSampled": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "access": "Digital page HTML directly examined for first six pages B2007 pp18–23 in 80 clause-level checks; prior source-linked selections through p34, cumulative English draft through p145; full Arabic copy-text remains unconstituted.",
+      "accessGrade": "modern-digital-text-examined; no manuscript-equivalent authority",
+      "role": "modern edited digital reading and first-pass English source checking, not a validated critical copytext",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "Y706",
+      "kind": "manuscript",
+      "title": "Süleymaniye Yazma Eserler Kütüphanesi, Yeni Camii 706",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Yeni_706%3Ba1?hl=Istanbul&hlu=",
+      "date": "14th century (catalogue)",
+      "extent": "291 folios; text catalogued on fols. 1v–131r",
+      "description": "Cataloguer reports an annotation at fol. 131r that the copy was collated against an original; this assertion has not been independently verified by viewing the folio.",
+      "access": "catalogue metadata only; NO manuscript images compared",
+      "accessGrade": "catalogue-only",
+      "role": "high-priority potential witness, not yet proven superior copy-text",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "Q2011",
+      "kind": "modern-edition",
+      "title": "Muntahā al-madārik, ed. Wisām al-Khaṭṭāwī, Qom, Āyat Ishrāq, 1390 SH",
+      "url": "https://ge.nii.ac.jp/ncid/BB1425879X",
+      "date": "2011 or 2012",
+      "extent": "2 volumes, 1116 pages",
+      "access": "bibliographic record only; text not read",
+      "accessGrade": "catalogue-only",
+      "role": "secondary control pending physical/text access",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "P-QAYSARI",
+      "kind": "collateral-poetic-print",
+      "title": "Ibn al-Fāriḍ, Tāʾiyya, verse 545, separately printed within Dāwūd al-Qayṣarī commentary",
+      "url": "https://najafdesertlibrary.com/book/%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D9%83%D8%A8%D8%B1%D9%89/v/1/p/1",
+      "access": "Digital text examined for verse 545; reads لعبرتي where B2007 Farghani p26 has لعبرة",
+      "accessGrade": "digital collateral quotation parallel; not a Farghani manuscript witness",
+      "variantsExamined": 0
+    }
+  ],
+  "relatedNotWitnesses": [
+    {
+      "siglum": "P-Mashariq",
+      "title": "Farghānī, Mashāriq al-darārī (earlier Persian commentary)",
+      "note": "A distinct authorial work rather than an Arabic witness. Its correspondence should be treated as recensional history, not as a simple Arabic variant list.",
+      "access": "known published tradition, no comprehensive collation"
+    },
+    {
+      "siglum": "S2006",
+      "title": "Giuseppe Scattolin, 'The Key Concepts of al-Farghānī’s Commentary'",
+      "url": "https://ibnarabisociety.org/wp-content/uploads/PDFs/Scattolin_The-key-concepts.pdf",
+      "note": "Secondary study providing 1876 pagination and thematic analysis; individual quoted passages should not be treated as independent manuscript witnesses."
+    },
+    {
+      "siglum": "R-FORUM",
+      "title": "Forum re-transcription of Beirut 2007 Arabic third and fourth foundations, labelled with B2007 printed pages",
+      "urls": [
+        "https://alshrefalm7sy.ahlamontada.com/t3213",
+        "https://alshrefalm7sy.ahlamontada.com/t3214"
+      ],
+      "scope": "Third foundation B2007 pp85–101 and fourth foundation pp102–134 consulted for new English P134 working draft; source pages continue after p134",
+      "access": "online text transcription inspected; not a separate medieval or manuscript witness; manuscript copy-text remains uninspected",
+      "note": "Do not count as an independent corroborating witness or as a manuscript variant. Printed-page labels may need control against physical Beirut edition; may contain OCR/transcription errors or modern editorial footnotes."
+    },
+    {
+      "siglum": "R-FANARI",
+      "title": "Al-Fanārī's Miṣbāḥ al-uns, reported quotation of Farghānī's p20–21 on determinate divine witnessing",
+      "url": "https://ablibrary.net/book_content/b/4696/183?lang=ar",
+      "access": "Modern digital printed quotation inspected; shows من حيث واحديتها and a commentator's theological qualifications",
+      "role": "Later reception/indirect quotation, not an independently collated Farghānī manuscript",
+      "status": "verified passage quotation at modern print p183; variant claims not made"
+    }
+  ],
+  "readings": [
+    {
+      "id": "ED-0001",
+      "location": "B2007 p.21, old extract F007",
+      "type": "editorial-transcription-correction",
+      "before": "... بذاته الأقدس، لا من حيث إطلاقها وأحديتها",
+      "after": "... بذاته الأقدس تعالى وتقدّس من حيث واحديتها، لا من حيث إطلاقها وأحديتها",
+      "evidence": "direct inspection of B2007 page 21 online; old GNAMMA unit omitted من حيث واحديتها",
+      "effect": "restores explicit opposition of wāḥidiyya and aḥadiyya",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "corrected-digital-extract; print/manuscript validation pending"
+    },
+    {
+      "id": "ED-0002",
+      "location": "B2007 p.33 second determination, transitional wording near عون هذا",
+      "type": "unresolved-digital-reading",
+      "evidence": "digital Arabic text displays a short syntactically uncertain transition; I1876 and Y706 have not been inspected at this locus",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "no-emendation; retain paraphrastic English flag and check actual witness"
+    },
+    {
+      "id": "ED-0003",
+      "location": "B2007 p.34, الحضرة العملية",
+      "type": "unresolved-digital-reading",
+      "evidence": "the digital print reads al-ḥaḍra al-ʿamaliyya in the second-determination name register; context may suggest a different abstract qualifier, but no second witness has been read",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "no-emendation; literal translation retained with warning"
+    },
+    {
+      "id": "ED-0004",
+      "location": "Online B2007-derived forum transcription p.87, transition describing stirring motion of elemental matter",
+      "type": "unclear-transcription",
+      "evidence": "Website text and embedded modern editor note indicate one word in the phrase concerning strong influence/heat is corrupt or unclear; original printed image not yet inspected",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "translated without conjectural restoration; compare actual printed and manuscript texts"
+    },
+    {
+      "id": "ED-0005",
+      "location": "B2007 p18, بطون المشتمل",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "awkward printed-digital wording in definition of hidden essential-name treasure",
+      "source_linked_audit_unit": "critical-pass-001 CR001-010",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    },
+    {
+      "id": "ED-0006",
+      "location": "B2007 p19, المطلب الغائبّ",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "awkward digital adjective in sentence on ultimate aim of name-perfection",
+      "source_linked_audit_unit": "critical-pass-001 CR001-014",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    },
+    {
+      "id": "ED-0007",
+      "location": "B2007 p19, عمليّا ووجوديّا vs contextual علميّا ووجوديّا",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "digital B2007 and derivative forum read ʿamaliyyan ('operative/practical'), whereas inherited English flattened it to epistemic and existential; no emendation authorized",
+      "source_linked_audit_unit": "critical-pass-001 CR001-024",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    },
+    {
+      "id": "ED-0008",
+      "location": "B2007 p23, فلم تعلم ولم يحكم بشيء منها إلا بعد تعيّنها",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "substantive doctrinal/semantic issue about knowability of unconcretized essential affairs; explicit modal 'perhaps' must not be erased",
+      "source_linked_audit_unit": "critical-pass-002 CR002-032",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    }
+  ],
+  "selectionRule": "Do not create a variant reading or siglum support unless two independent witnesses have actually been inspected in the relevant locus. Orthographic normalization is not a textual variant.",
+  "todo": [
+    "Inspect actual I1876 page images and identify page-by-page concordance with B2007",
+    "Acquire scan/access to Y706 and verify manuscript collation note fol. 131r",
+    "Establish source hierarchy; record lacunae, possible contamination and substantive variants",
+    "Collate alternative printed Q2011 readings if available, without assuming newer equals better",
+    "Separate authorial hadith citations from modern editor's attribution footnotes",
+    "Complete uninterrupted Arabic transcription and independent English translation",
+    "Review and validate all 25 existing bilingual extracts against at least a historical-print witness",
+    "Publish critical text only after substantial witness collation; until then label working text"
+  ]
+}
 
-## Part D · Latest handoff and exact restart
+```
 
+---
+## Part E · Full updated 128-page critical quality coverage ledger (JSON)
+```json
+{
+  "schema": "gnamma-farghani-page-critical-audit-v1",
+  "date": "2026-11-09",
+  "language": "Arabic and English",
+  "scope": "Introduction systematic four foundations and concluding preface, modern Beirut B2007 pp18–145",
+  "english_working_draft_page_count": 128,
+  "source_checked_modern_digital_page_count": 12,
+  "clause_record_count": 142,
+  "issues_unresolved_digital": 10,
+  "historical_print_independently_collated_pages": 0,
+  "manuscript_variants": 0,
+  "authorial_introduction_english_draft_complete": true,
+  "authorial_introduction_arabic_critical_edition_complete": false,
+  "definitive_grade": false,
+  "source_witness_grade": "modern edited online printed text for pages18–23; remaining draft not yet checked clause-by-clause; 1876 historical print and Yeni Camii 706 uncollated",
+  "next_critical_audit_page": 30,
+  "next_translation_outside_intro": "B2007 p146 poem commentary (must confirm division against scan)",
+  "pages": [
+    {
+      "b2007_page": 18,
+      "source_url": "https://ablibrary.net/book_content/b/9606/18?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 11,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 19,
+      "source_url": "https://ablibrary.net/book_content/b/9606/19?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 17,
+      "digital_crux_count": 2,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 20,
+      "source_url": "https://ablibrary.net/book_content/b/9606/20?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 9,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 21,
+      "source_url": "https://ablibrary.net/book_content/b/9606/21?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 13,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 22,
+      "source_url": "https://ablibrary.net/book_content/b/9606/22?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 15,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 23,
+      "source_url": "https://ablibrary.net/book_content/b/9606/23?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 15,
+      "digital_crux_count": 2,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 24,
+      "source_url": "https://ablibrary.net/book_content/b/9606/24?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 9,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 25,
+      "source_url": "https://ablibrary.net/book_content/b/9606/25?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 12,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 26,
+      "source_url": "https://ablibrary.net/book_content/b/9606/26?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 9,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 27,
+      "source_url": "https://ablibrary.net/book_content/b/9606/27?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 10,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 28,
+      "source_url": "https://ablibrary.net/book_content/b/9606/28?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 11,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 29,
+      "source_url": "https://ablibrary.net/book_content/b/9606/29?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 11,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 30,
+      "source_url": "https://ablibrary.net/book_content/b/9606/30?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 31,
+      "source_url": "https://ablibrary.net/book_content/b/9606/31?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 32,
+      "source_url": "https://ablibrary.net/book_content/b/9606/32?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 33,
+      "source_url": "https://ablibrary.net/book_content/b/9606/33?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 34,
+      "source_url": "https://ablibrary.net/book_content/b/9606/34?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 35,
+      "source_url": "https://ablibrary.net/book_content/b/9606/35?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 36,
+      "source_url": "https://ablibrary.net/book_content/b/9606/36?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 37,
+      "source_url": "https://ablibrary.net/book_content/b/9606/37?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 38,
+      "source_url": "https://ablibrary.net/book_content/b/9606/38?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 39,
+      "source_url": "https://ablibrary.net/book_content/b/9606/39?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 40,
+      "source_url": "https://ablibrary.net/book_content/b/9606/40?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 41,
+      "source_url": "https://ablibrary.net/book_content/b/9606/41?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 42,
+      "source_url": "https://ablibrary.net/book_content/b/9606/42?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 43,
+      "source_url": "https://ablibrary.net/book_content/b/9606/43?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 44,
+      "source_url": "https://ablibrary.net/book_content/b/9606/44?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 45,
+      "source_url": "https://ablibrary.net/book_content/b/9606/45?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 46,
+      "source_url": "https://ablibrary.net/book_content/b/9606/46?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 47,
+      "source_url": "https://ablibrary.net/book_content/b/9606/47?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 48,
+      "source_url": "https://ablibrary.net/book_content/b/9606/48?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 49,
+      "source_url": "https://ablibrary.net/book_content/b/9606/49?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 50,
+      "source_url": "https://ablibrary.net/book_content/b/9606/50?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 51,
+      "source_url": "https://ablibrary.net/book_content/b/9606/51?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 52,
+      "source_url": "https://ablibrary.net/book_content/b/9606/52?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 53,
+      "source_url": "https://ablibrary.net/book_content/b/9606/53?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 54,
+      "source_url": "https://ablibrary.net/book_content/b/9606/54?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 55,
+      "source_url": "https://ablibrary.net/book_content/b/9606/55?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 56,
+      "source_url": "https://ablibrary.net/book_content/b/9606/56?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 57,
+      "source_url": "https://ablibrary.net/book_content/b/9606/57?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 58,
+      "source_url": "https://ablibrary.net/book_content/b/9606/58?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 59,
+      "source_url": "https://ablibrary.net/book_content/b/9606/59?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 60,
+      "source_url": "https://ablibrary.net/book_content/b/9606/60?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 61,
+      "source_url": "https://ablibrary.net/book_content/b/9606/61?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 62,
+      "source_url": "https://ablibrary.net/book_content/b/9606/62?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 63,
+      "source_url": "https://ablibrary.net/book_content/b/9606/63?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 64,
+      "source_url": "https://ablibrary.net/book_content/b/9606/64?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 65,
+      "source_url": "https://ablibrary.net/book_content/b/9606/65?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 66,
+      "source_url": "https://ablibrary.net/book_content/b/9606/66?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 67,
+      "source_url": "https://ablibrary.net/book_content/b/9606/67?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 68,
+      "source_url": "https://ablibrary.net/book_content/b/9606/68?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 69,
+      "source_url": "https://ablibrary.net/book_content/b/9606/69?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 70,
+      "source_url": "https://ablibrary.net/book_content/b/9606/70?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 71,
+      "source_url": "https://ablibrary.net/book_content/b/9606/71?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 72,
+      "source_url": "https://ablibrary.net/book_content/b/9606/72?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 73,
+      "source_url": "https://ablibrary.net/book_content/b/9606/73?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 74,
+      "source_url": "https://ablibrary.net/book_content/b/9606/74?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 75,
+      "source_url": "https://ablibrary.net/book_content/b/9606/75?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 76,
+      "source_url": "https://ablibrary.net/book_content/b/9606/76?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 77,
+      "source_url": "https://ablibrary.net/book_content/b/9606/77?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 78,
+      "source_url": "https://ablibrary.net/book_content/b/9606/78?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 79,
+      "source_url": "https://ablibrary.net/book_content/b/9606/79?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 80,
+      "source_url": "https://ablibrary.net/book_content/b/9606/80?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 81,
+      "source_url": "https://ablibrary.net/book_content/b/9606/81?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 82,
+      "source_url": "https://ablibrary.net/book_content/b/9606/82?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 83,
+      "source_url": "https://ablibrary.net/book_content/b/9606/83?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 84,
+      "source_url": "https://ablibrary.net/book_content/b/9606/84?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 85,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 86,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 87,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 88,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 89,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 90,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 91,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 92,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 93,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 94,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 95,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 96,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 97,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 98,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 99,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 100,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 101,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 102,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 103,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 104,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 105,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 106,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 107,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 108,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 109,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 110,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 111,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 112,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 113,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 114,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 115,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 116,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 117,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 118,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 119,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 120,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 121,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 122,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 123,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 124,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 125,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 126,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 127,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 128,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 129,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 130,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 131,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 132,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 133,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 134,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 135,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 136,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 137,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 138,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 139,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 140,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 141,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 142,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 143,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation",
+      "editorial_note": "Four foundations conclude"
+    },
+    {
+      "b2007_page": 144,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Concluding preface",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation",
+      "editorial_note": "Concluding preface begins"
+    },
+    {
+      "b2007_page": 145,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Concluding preface",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation",
+      "editorial_note": "Concluding preface ends"
+    }
+  ],
+  "source_pages_with_selected_arabic_english_checks": 12,
+  "check_methodology": "80 previous clause checks pp18–23; 62 selected span checks pp24–29 (NOT all authorial text from these six pages); independent 1876 and manuscript collation 0."
+}
+
+```
+
+---
+## Part F · Latest editorial status and completion distinctions
+# Muntahā al-madārik · Editorial and translation register
+
+## Latest milestone — Critical Pass III · digital source check extended to B2007 pp.24–29 (9 November 2026)
+
+- The **complete English working introduction remains** B2007 pp.18–145 (128 page-labelled source units): four foundations through p143 and *tatimmat al-dībāja* pp144–145. Do not repeat the English translation.
+- **New source-critical work:** 62 **selected** Arabic–English clause spans checked against B2007 pp24–29; 35 retained, 16 translation revisions, 6 attribution/context annotations, 5 open cruxes. Together with earlier pp18–23, **142 individually audited records** from twelve source pages. This is **not exhaustive full-page proofreading** of pp24–29.
+- New [paired reader](../critical-edition.html), [critical passages](CRITICAL_TRANSLATION_24_29.md), [source audit](CRITICAL_AUDIT_STAGE_002.md), and [full cumulative self-contained handoff](FULL_CUMULATIVE_CRITICAL_003.md).
+- **Collateral poetic discrepancy:** B2007 p26 gives `لعبرة`; the separately transmitted poem in al-Qayṣarī's published commentary and in Wikisource gives `لعبرتي`. This does **not** establish a manuscript variant in Farghānī.
+- **Historical collation remains zero:** 1876 Istanbul is located, not examined at corresponding textual loci; Yeni Camii 706 is catalogued, not inspected; no independently attested Farghānī manuscript variants exist in this stage. Five new crux flags make **ten** combined digital cruxes.
+- **Next unsampled Arabic source:** B2007 p30. Critical-edition priority is independent 1876 + manuscript examination alongside modern English correction, not further introductory translation.
+
+## Preserved earlier milestone — completed English draft of introduction; first critical source pass (9 November 2026)
+
+**Authorial English translation:** All four foundations of the introduction plus the concluding two-page preface now have a continuous **working English draft** from Beirut printed B2007 **pp.18–145 (128 consecutively numbered pages)**. The fourth foundation concludes at p.143; the distinct *tatimmat al-dībāja* occupies pp.144–145. **New final installment:** pp.135–145 (11 pages), separately preserved as `TRANSLATION_135_139.md` and `TRANSLATION_140_145.md`. Cumulative draft: [WORKING_TRANSLATION_18_145.md](WORKING_TRANSLATION_18_145.md); compact [English reader](../continuous-translation.html).
+
+**Arabic–English critical review (BEGINNING, not definitive):** 80 authorial clauses from **B2007 pp.18–23** have been compared with the modern Beirut digital Arabic, individually rendered into revised English, and annotated. Full review: [CRITICAL_TRANSLATION_18_23.md](CRITICAL_TRANSLATION_18_23.md); findings: [CRITICAL_AUDIT_STAGE_001.md](CRITICAL_AUDIT_STAGE_001.md); [interactive paired clause review](../critical-edition.html); machine-readable data: `data/critical-pass-001-p18-20.js` and `data/critical-pass-002-p21-23.js`. **Five clause-level cruxes remain open**. Verified manuscript variants remain **zero**.
+
+**Truthful progress dimensions:**
+
+| Workstream | Actually present | NOT yet present |
+|---|---|---|
+| English authorial translation | 128 sequential printed B2007 page headings, pp18–145, *working draft* | Independent clause-by-clause proofreading across remaining 122 pages, specialist critical sign-off |
+| Source-language alignment | 80 source-checked clauses across six opening pages; 32 previously selected Arabic–English excerpts | Continuous full Arabic authorial copy-text and its alignment for pp18–145 |
+| Historical textual criticism | Witness catalogue, four recorded earlier flags plus new crux register; al-Fanārī reception quotation | Independently collated 1876 historical print or any actual manuscript folio; justified copy-text; established variants |
+| Cumulative preservation | Current `FULL_CUMULATIVE_P145.md` and `STAGE_MANIFEST_P145.json`, historical P134/P84/P34 snapshots preserved | The untranslated verse-by-verse commentary, or full manuscript evidence |
+| GNAMMA presentation | Compact 128-page English draft and new Arabic–English critical clause review | Verified public Pages deployment of latest revision; complete bilingual immersive edition |
+
+**Important:** a page heading and a source link do **not** certify page-level translation fidelity. The entire 128-page English draft is **not** labelled definitively checked. The directly checked modern printed Arabic covers only pp.18–23. Do not calculate a definitive percentage from the 1876 edition's 107-page introduction; its pagination differs. The new English draft coverage of the introduction is **structurally complete**, but the critical Arabic–English edition is **not yet constituted**.
+
+**Next exact critical checking locus:** B2007 **p.24**, authorial opening continuing the discussion of essential affairs (*shuʾūn dhātiyya*); see https://ablibrary.net/book_content/b/9606/24?lang=ar. The verse-by-verse poem commentary follows after the introductory preface but belongs to a separate translation project.
+
+**Five currently tagged crux clauses in the opening audit:** B2007 p.18 `بطون المشتمل`, p.19 `المطلب الغائبّ`, p.19 `عمليّا ووجوديّا` (context may suggest `علميّا` but must not be silently emended), p.23 `إلّا أنه ربما يكون` and p.23 `فلم تعلم ولم يحكم بشيء منها إلا بعد تعيّنها`. The p.21 `من حيث واحديتها` correction is preserved, with late secondary quotation in al-Fanārī's `Miṣbāḥ al-uns` p.183. None of these constitutes a verified independent manuscript variant.
+
+
+
+## Historical P134 stage — 9 November 2026 · 50 pages (superseded by P145 milestone)
+
+**NEW English working translation, B2007 pp.85–134 (50 printed pages), plus inherited pp.18–84: 117 consecutively numbered Beirut pages in one cumulative English working draft.**
+
+- **New authorial content:** seven files, `TRANSLATION_85_92.md` (8 pp.), `TRANSLATION_93_100.md` (8), `TRANSLATION_101_108.md` (8), `TRANSLATION_109_116.md` (8), `TRANSLATION_117_124.md` (8), `TRANSLATION_125_130.md` (6), `TRANSLATION_131_134.md` (4). Source-page section count **50**, zero duplicated or missing numbers.
+- **Cumulative master:** `WORKING_TRANSLATION_18_134.md` with **117** page headings, 18–134 inclusive. HTML mirror `../continuous-translation.html` has 117 anchored source sections and a four-foundation contents list, with **compact paragraph and page gaps** introduced in this stage.
+- **Four foundations:** Foundation I ends p.69; II begins p.70, ends p.78; III begins p.79, ends p.101; IV begins p.102 and is **still continuing after p.134**.
+- **New Arabic witness:** for pp.85–101, forum transcription https://alshrefalm7sy.ahlamontada.com/t3213, and for pp.102–134, forum transcription https://alshrefalm7sy.ahlamontada.com/t3214. These show B2007 printed page labels but are **online re-transcriptions, not independently collated manuscripts**. The individual Ahlulbayt pages were inaccessible during the stage, so the editions must not be treated as independently verified simply on the basis of the transcription.
+- **Original bilingual layer:** the **32 selected Arabic–English excerpts on pp.18–34** remain unchanged; full continuous authorial Arabic for all 117 pages and clause-by-clause alignment are **not** complete.
+- **Critical apparatus:** the early Istanbul 1876 print, the Yeni Camii 706 manuscript, and alternative modern edition are identified but remain **uncollated at this stage**. Verified independent manuscript variants: **zero**.
+- **Unresolved source points:** digital B2007 p.33 and p.34 readings recorded in the witness register; p.87 corrupt/uncertain reading in the third foundation; reported hadith attributions; manuscript examination; all English pages still need source-to-English proofreading.
+- **Next untranslated passage:** **B2007 p.135**, which completes the p.134 sentence concerning the removal of determinations; beginning Arabic `والتقيّد وآثارهما والجامع لكلّيات تلك الخواص والآثار الحبّية ...`. Source: https://alshrefalm7sy.ahlamontada.com/t3214.
+- **Cumulative handoff:** `FULL_CUMULATIVE_P134.md` and `STAGE_MANIFEST_P134.json` are the canonical stage archive for the new work. Old P84 and P34 snapshots remain preserved unchanged.
+- **Interpretive highlight, not proof of agreement:** the newly translated fourth foundation differentiates the two ways of perfection and spiritual ascent, and relates Islam, īmān and iḥsān to bodily soul, spirit and secret. These arguments will later be tested against Guénon and Schuon rather than assumed identical.
+
+**Counting rule:** 50 new pages is a check of sequential page-labelled English **working draft output**, not independently audited translation completeness, not 50 manuscript-collated Arabic pages. The 1876 introduction's 107 printed pages do not provide a denominator for the 2007 Beirut pagination. No accurate full-edition percentage is available.
+
+
+
+## Full cumulative handoff and GNAMMA publication (P84)
+
+- **Self-contained current working-stage archive:** [FULL_CUMULATIVE_P84.md](FULL_CUMULATIVE_P84.md) — contains the full 67-page English working draft, all 32 available bilingual Arabic extracts, critical scholarly introduction, Guénon–Schuon comparison, glossary, witness register, corrections, this editorial status, and the prior stage handoff.
+- **Handoff archive index and per-stage preservation rule:** [HANDOFFS.md](HANDOFFS.md); public GNAMMA reading-room entry: [Handoffs and archive](../handoffs.html).
+- **Machine-readable provenance:** [STAGE_MANIFEST_P84.json](STAGE_MANIFEST_P84.json) includes the new archive blob SHA, file inventory and page-integrity checks, and continuation p.85.
+- **Every subsequent stage:** recover the latest complete archive, append newly translated source text without losing older material, produce a new self-contained full cumulative handoff and manifest, expose both from GNAMMA's book landing page and reader, and check the GitHub Pages build independently.
+- **Limits:** The archive is self-contained for what has been produced in the current working stage, but the **full Arabic authorial text**, independent clause-by-clause verification, historic-print/manuscript collation and remaining introduction are not completed. Such missing material is not inside the handoff.
+
+
+
+## Historical P84 translation stage — 50 pages added (2026-11-08)
+
+**New work:** Beirut B2007 pp. **35–84 inclusive** = **50 printed source pages in an English *working* translation**. This stage genuinely continues from the existing p. 34 boundary; it does not simply rephrase or reprint those 17 pages. The new English text is preserved in **seven separate source-linked stage files** and in the cumulative master:
+
+- `TRANSLATION_35_40.md` (6 pages)
+- `TRANSLATION_41_46.md` (6 pages)
+- `TRANSLATION_47_52.md` (6 pages)
+- `TRANSLATION_53_60.md` (8 pages)
+- `TRANSLATION_61_68.md` (8 pages)
+- `TRANSLATION_69_76.md` (8 pages)
+- `TRANSLATION_77_84.md` (8 pages)
+
+**Cumulative English draft:** `WORKING_TRANSLATION_18_84.md`, mirrored at `../continuous-translation.html`, covers **67 consecutive numbered B2007 printed pages (18–84)**. Automated structural validation counted exactly 67 unique, consecutively numbered `B2007 p.` source-page headings, and all 67 source-link targets are represented in the web reader. The number of authorial *Arabic* source characters and the corresponding critically validated percentage are still unknown.
+
+**Precise boundaries:** the **first foundation ends on B2007 p. 69**, the **second begins p. 70 and ends p. 78**, and the **third begins p. 79**; p. 84 ends midway through discussion of the Footstool's third aspect. **Next untranslated page: B2007 p. 85.**
+
+**Not completed:** The full Arabic authorial text is not imported continuously; source-to-translation alignment has not been independently clause-checked; the 1876 printing and manuscript witnesses have not been collated; later introduction beyond p.84 is still unrepresented; the Persian recension remains unchecked. The bilingual extract reader still contains **32 Arabic–English source clauses from pp.18–34**, not a full parallel translation of all 67 pages. There are **zero** verified comparative manuscript variants. This is a working draft, not a definitive critical edition.
+
+**Historical pagination:** The reported 107-page introduction applies to the 1876 Istanbul printing, not to B2007. Do not say “67 of 107 pages completed” or compute a percentage until the edition concordance is established.
+
+**Important arguments added:** p.69 on the double force of `law`; p.73 on *will and choice* rather than necessity at the level of the Essence; p.77–78 on archangelic functions and spiritual manifestations; p.79 first passage of the third foundation; pp.80–84 on the Breath, dust (*habāʾ*), nature, the Throne and Footstool.
+
+**Cumulative master and recovery:** `WORKING_TRANSLATION_18_84.md` and `STAGE_HANDOFF_P84.md`. Work tracker [GitHub #245](https://github.com/gnamma-research/booksite/issues/245).
+
+
+## Historical P34–P84 programme notes (superseded by current P134 report above)
+
+The primary objective is now **a complete, continuous Arabic–English critical edition of the four-foundation introductory division**, not a collection of attractive extracts. The current stages are separate products:
+
+| Workstream | Verifiable present extent | Remaining |
+|---|---|---|
+| Scholarly critical introduction (editorial essay) | `CRITICAL_INTRODUCTION.md`, twelve substantial sections; readable page `critical-introduction.html` | Additional manuscript- and recension-based historical refinement |
+| English authorial translation, provisional | `WORKING_TRANSLATION_18_84.md` = B2007 printed **pp. 18–84**, a 67-page consecutive-order English draft (including 50 new pages 35–84), also in `continuous-translation.html` | Original introduction after B2007 p. 84; full authorial Arabic alignment; independent clause-by-clause proofing; and an I1876 ↔ Beirut concordance |
+| Paired bilingual source extracts | **32 individual Arabic–English clauses** sampled across B2007 pp. 18–34, with direct source links | Uninterrupted *full Arabic* text for every paragraph and bilingual alignment |
+| Textual witness register | `WITNESS_REGISTER.json`: historical printing, two modern editions and one early manuscript identified; F007 transcription correction recorded | Read and collate actual manuscript and historic-print page images; **zero** established manuscript variants so far |
+| Perennialist comparison | Distinct `COMPARISON.md` and authorial-extract toggle in the reader | Detailed passage-level comparison only once the authorial text is full |
+
+**Critical caveat:** 67 pages in the modern Beirut edition are **not equivalent to 67 of the 107 pages** identified for the historical Istanbul introductory division. Those are different paginations; neither the total Beirut introduction page count nor a proper page concordance has been verified. These are provisional English translations, not 67 pages of independently validated critical Arabic.
+
+**Specific problems flagged for collation:** an ambiguous phrase in the second determination discussion (B2007 p. 33), and the reading `الحضرة العملية` (B2007 p. 34), which must not be silently replaced by a conjectural alternative. Other changes, such as restoration of `من حيث واحديتها` at F007, remain transcription corrections, not competing-manuscript variants.
+
+
+
+**Project:** GNAMMA Research — ʿIrfān and metaphysics (sibling of `texts/al-turka/qawaid-al-tawhid/`).
+**Work:** Saʿīd al-Dīn al-Farghānī, *Muntahā al-madārik fī sharḥ Tāʾiyyat Ibn al-Fāriḍ* (منتهى المدارك في شرح تائية ابن الفارض).
+**Updated:** 2026-11-08.
+
+## Actual coverage and quality
+
+- **32 source-matched authorial extracts**, each with Arabic, a new English working translation, exact digital page, and separate editorial explanation.
+- **Pages sampled:** 18–34 of the modern Beirut digitization (`ablibrary.net/book_content/b/9606/{page}`). This is a page *range of sampled text*, **NOT seventeen fully translated pages**. It includes discontinuities and omitted sentences.
+- **Foundation:** first foundation only. Selected clauses concern hiddenness, unity, self-disclosure, names, degrees of inward comprehension, perfection, knowledge, and existential determination.
+- **Not yet fully translated:** the authorial introduction beyond B2007 p. 84, along with the later commentary and earlier Persian *Mashāriq al-darārī*. The draft pp. 18–84 has not undergone critical proofing, and its continuous full Arabic transcription and bilingual alignment are not yet constituted.
+- **Textual basis:** Arabic text of the modern Beirut printed edition, edited by ʿĀṣim Ibrāhīm al-Kayyālī, as digitized by Ahlulbayt Library. Pages 32–34 are verified directly in the same Beirut digital witness (its page-specific source link now works). Editorial footnotes have **not** been incorporated into Farghānī's authorial text.
+- **Collation:** source-anchored transcription only. No manuscript leaf images collated, and no systematic comparison against the 1876 Istanbul print has yet been carried out.
+- **Translation status:** working scholarly translation, not a definitive critical edition. The bilingual extract reader displays 32 selected, source-linked clauses on pp. 18–34. Separately, an 18–84 **consecutive-page English draft** (67 printed pages, including 50 new pages) has been committed without claiming critical verification or manuscript collation.
+- **Comparative layer:** explicitly *modern editorial research*, never Farghānī's Arabic or an attribution of perennialist doctrine to him.
+
+The Arabic has some unvowelled lexical/typographical uncertainty in the digital witness. Any correction requires printed or manuscript control and must be recorded; words cannot simply be silently improved.
+
+## Unit and page register
+
+| Printed page in digital Beirut edition | Verified unit IDs | Coverage |
+|---|---|---|
+| 18 | F001–F002 | Two selected clauses |
+| 19 | F003–F005 | Three selected clauses |
+| 20 | F006 | One selected clause |
+| 21 | F007–F009 | Three selected clauses |
+| 22 | F010 | One selected clause |
+| 23 | F011 | One selected clause |
+| 24 | F012 | One selected clause |
+| 25 | F013 | One selected clause |
+| 26 | F014 | One selected clause |
+| 27 | F015–F016 | Two selected clauses |
+| 28 | F017 | One selected clause |
+| 29 | F018 | One selected clause |
+| 30 | F019–F020 | Two selected clauses |
+| 31 | F021–F023 | Three selected clauses |
+| 32 | F024–F027 | Four selected clauses, directly verified against page-specific Arabic source |
+| 33 | F028–F029 | Two selected clauses from the second determination discussion |
+| 34 | F030–F032 | Three selected clauses on the names, divinity, and the rank of possibility |
+
+**Total:** 32 passage records; there is *no* claim of complete-page coverage anywhere in this register.
+
+## Sources and editions
+
+1. Beirut digital transcription, *Muntahā al-madārik*, first volume, editor ʿĀṣim Ibrāhīm al-Kayyālī: https://ablibrary.net/book_content/b/9606/18?lang=ar (replace terminal `/18` with the page shown in each unit).
+2. Direct page 32 Arabic witness: https://ablibrary.net/book_content/b/9606/32?lang=ar (the authorial paragraph and chapter boundary are visible).
+3. Historical printed Arabic witness: Istanbul 1876, Princeton/NYU scan https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en (not yet line-by-line collated).
+4. Earlier Persian *Mashāriq al-darārī*, edited by Sayyid Jalāl al-Dīn Āshtiyānī: https://ablibrary.net/book_content/b/4366/126 — contextual comparative witness, not collated.
+5. Guénon, *Les États multiples de l'être*, chapters II, V: https://oeuvre-de-rene-guenon.org/textes/EME02.php and https://oeuvre-de-rene-guenon.org/textes/EME05.php. This material informs only our optional comparison.
+6. Schuon, *Survey of Metaphysics and Esoterism*, and *In the Face of the Absolute*: comparison targets, not quoted or reproduced here.
+
+## Scholarly controls
+
+- Authorial text, translation, editorial notes, and Guénon/Schuon parallels are separate fields.
+- The reported divine saying 'I was a hidden treasure' is a Sufi doctrinal starting point **not established as an authenticated prophetic ḥadīth**.
+- `wujūd` must not be glossed indiscriminately as either Guénonian 'Being' or 'Existence'; compare its connection to `wijdān` and each rank.
+- First determination, `aḥadiyya`, and `wāḥidiyya` are distinct considerations in the text; refrain from equating each to a single Guénonian category without an argument.
+- The p. 23 discussion of what has not yet been determined is not by itself a doctrine of Guénonian *possibilities of non-manifestation*.
+- Where a translation excerpt quotes only a clause from a longer paragraph, no English continuation is implied.
+
+## Remaining staged work
+
+1. Preserve and independently proofread the complete first foundation English draft pp. 18–69 against continuous Arabic, with paragraph alignment and a gap audit.
+2. Verify the draft second foundation pp. 70–78; then continue the third foundation from p. 85 and the fourth foundation through its actual end, preserving all original text.
+3. Collate the 1876 original with the Beirut transcription, then inspect available manuscript witnesses and record meaningful variants.
+4. Translate selected long-commentary passages in which Farghānī resolves problems left open in the introduction.
+5. Compare the Persian and Arabic commentaries, maintaining a separate historical-dependence register for Qūnawī.
+6. Only after continuous coverage and collation, issue a print/PDF critical version marked as such.
+
+## Repository locations
+
+- Reader: `texts/al-farghani/muntaha-al-madarik/index.html`
+- Cumulative 67-page English draft: `texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_84.md`
+- Extracts: `data/units.js`
+- Research comparison: `editorial/COMPARISON.md`
+- Technical terms: `editorial/GLOSSARY.md`
+- Library placement: `texts/index.html` and `texts/manifest.json`, collection **ʿIrfān and metaphysics**, beside but separate from Qawāʿid al-Tawḥīd.
+
+
+---
+## Part G · Canonical stage handoff, exact continuation
 # Farghānī · Critical Pass III — complete cumulative stage handoff
 **9 November 2026 — from B2007 p29; next source-audit locus p30.**
 
