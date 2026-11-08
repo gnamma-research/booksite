@@ -13,7 +13,7 @@
     "complete_full_critical_introduction": false,
     "critical_scholarly_editorial_essay": "editorial/CRITICAL_INTRODUCTION.md",
     "cumulative_english_draft": "B2007 pp.18–134 = 117 consecutively numbered English working pages; p85–134 sourced through derivative online re-transcription and not independently collated",
-    "latest_handoff": "editorial/FULL_CUMULATIVE_P145.md",
+    "latest_handoff": "editorial/FULL_CUMULATIVE_CRITICAL_003.md",
     "verified_manuscript_variant_count": 0,
     "current_english_draft": "B2007 pp18–145, 128 page-labelled English working draft, all four foundations and concluding preface; manuscript-critical edition incomplete",
     "current_scope_boundary": "Fourth foundation ends at B2007 p143; tatimmat al-dibaja pp144–145; poem commentary begins thereafter",
@@ -24,14 +24,21 @@
         20,
         21,
         22,
-        23
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
       ],
-      "count": 80,
-      "source": "direct B2007 digital page HTML",
-      "status": "source-checked English revision, not historical print or manuscript collation"
+      "count": 142,
+      "source": "B2007 digital printed Arabic, selected spans",
+      "status": "80 earlier source-clause records p18–23; 62 selected new p24–29 loci; no complete-page verification assertion for the latter; not historical or manuscript collation"
     },
-    "next_critical_audit_beirut_page": 24,
-    "definitive_status": "not-achieved"
+    "next_critical_audit_beirut_page": 30,
+    "definitive_status": "not-achieved",
+    "critical_review_new_stage": "62 selected clause source checks p24–29; total 142 records, ten open digital cruxes"
   },
   "witnesses": [
     {
@@ -100,6 +107,15 @@
       "access": "bibliographic record only; text not read",
       "accessGrade": "catalogue-only",
       "role": "secondary control pending physical/text access",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "P-QAYSARI",
+      "kind": "collateral-poetic-print",
+      "title": "Ibn al-Fāriḍ, Tāʾiyya, verse 545, separately printed within Dāwūd al-Qayṣarī commentary",
+      "url": "https://najafdesertlibrary.com/book/%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D9%83%D8%A8%D8%B1%D9%89/v/1/p/1",
+      "access": "Digital text examined for verse 545; reads لعبرتي where B2007 Farghani p26 has لعبرة",
+      "accessGrade": "digital collateral quotation parallel; not a Farghani manuscript witness",
       "variantsExamined": 0
     }
   ],
