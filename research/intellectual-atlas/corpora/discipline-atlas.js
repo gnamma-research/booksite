@@ -639,6 +639,7 @@ window.addEventListener("resize",()=>{clearTimeout(resizeTimer);resizeTimer=setT
 window.addEventListener("popstate",()=>{readHash();refresh();});
 window.GNDisciplineAtlas={render,debug:()=>({genre,mode:S.mode,from:S.from,to:S.to,lane:S.lane,undated:S.undated,
  records:filtered.length,dated:filtered.filter(x=>period(x)!==null).length,
- svg:host.querySelectorAll("[data-sa-map] svg").length,
+ unplaced:filtered.filter(x=>period(x)===null).length,
+ page:S.page,svg:host.querySelectorAll("[data-dn-map] svg").length,
  source:S.source,selected:S.book,schools:lanes.length,jurists:jurists.length})};
 })();
