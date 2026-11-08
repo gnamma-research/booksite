@@ -554,8 +554,8 @@ window.FARGHANI_CRITICAL_PASS_004={
     {
       "id": "CR004-043",
       "page": 35,
-      "ar": "ولهذا التعيّن وما تعيّن به وفيه من التجلّي الثاني ... وحدة وكثرة وبرزخ فاصل وجامع بينهما",
-      "en": "This determination and its second disclosure possess unity, multiplicity, and an intermediary separating and combining them.",
+      "ar": "وحدة وكثرة وبرزخ فاصل وجامع بينهما",
+      "en": "These possess unity, multiplicity, and an intermediary both separating and comprehending them.",
       "disposition": "retain",
       "critical_note": "The threefold structure must not be conflated with three distinct substances.",
       "source_siglum": "B2007",
@@ -671,8 +671,8 @@ window.FARGHANI_CRITICAL_PASS_004={
     {
       "id": "CR004-052",
       "page": 36,
-      "ar": "وأمّا البرزخ الذي هو على الحقيقة منشىء هذين الطرفين المذكورين ... فإنما هي الحقيقة الإنسانية",
-      "en": "The intermediary giving rise to and comprising those two poles is the human reality.",
+      "ar": "فإنما هي الحقيقة الإنسانية",
+      "en": "That intermediary is the human reality.",
       "disposition": "annotate",
       "critical_note": "Mixed grammatical gender al-barzakh ... hiya al-ḥaqīqa signals a predicate shift to feminine 'reality', not automatically a corrupt reading.",
       "source_siglum": "B2007",
