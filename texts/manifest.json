@@ -62,13 +62,13 @@
         "Akbarian metaphysics",
         "comparative metaphysics"
       ],
-      "status": "provisional-english-working-117-beirut-pages-with-32-selected-bilingual-extracts-critical-incomplete",
+      "status": "intro-working-english-draft-complete-128-beirut-pages-critical-arabic-source-check-6-pages-80-clauses-no-manuscript-collation",
       "language": [
         "ar-selected",
         "en-selected"
       ],
       "url": "texts/al-farghani/muntaha-al-madarik/",
-      "note": "Second batch of 50 new B2007 pp85–134 now in a source-linked English working draft; 117 consecutive numbered pages pp18–134 cumulative. First three foundations in draft; fourth remains unfinished beyond p134. Only 32 selected Arabic–English excerpts (pp18–34), no continuous critical Arabic or independently collated manuscript variants. Compact continuous-mode spacing, new P134 cumulative handoff, stage manifest and witness notes. The new 50 pages use an online parallel Arabic transcription with Beirut page labels, not independently verified manuscript facsimiles.",
+      "note": "Four foundations of Muntahā and concluding preface have a full-in-scope English working draft B2007 pp18–145 (128 printed pages): foundation IV ends p143 and tatimmat al-dibaja spans pp144–145. Critical source pass has begun: 80 revised Arabic–English clauses checked against the Beirut digital edited text on pp18–23, five unresolved textual/semantic crux clauses. The full Arabic copy-text and independent 1876 print/manuscript collation remain outstanding; no definitive edition or manuscript variants claimed.",
       "original_text_status": "selected-arabic-source-clauses-only",
       "translated_extracts": 32,
       "sampled_pages": "18–34, not contiguous complete-page coverage",
@@ -81,15 +81,15 @@
         "turka-qawaid-tawhid"
       ],
       "continuous_english_translation_url": "texts/al-farghani/muntaha-al-madarik/continuous-translation.html",
-      "continuous_english_draft_source_url": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_134.md",
+      "continuous_english_draft_source_url": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_145.md",
       "critical_scholarly_introduction_url": "texts/al-farghani/muntaha-al-madarik/critical-introduction.html",
       "critical_scholarly_introduction_source_url": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_INTRODUCTION.md",
       "witness_register_url": "texts/al-farghani/muntaha-al-madarik/editorial/WITNESS_REGISTER.json",
       "working_english_draft_beirut_pages": [
         18,
-        134
+        145
       ],
-      "working_english_draft_printed_pages_count": 117,
+      "working_english_draft_printed_pages_count": 128,
       "full_arabic_introduction_collated": false,
       "continuous_bilingual_edition_complete": false,
       "verified_manuscript_variants": 0,
@@ -99,15 +99,28 @@
       ],
       "new_english_draft_pages_count": 50,
       "full_authorial_introduction_translation_complete": false,
-      "latest_cumulative_handoff_url": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_P134.md",
+      "latest_cumulative_handoff_url": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_P145.md",
       "handoff_archive_url": "texts/al-farghani/muntaha-al-madarik/handoffs.html",
       "handoff_index_url": "texts/al-farghani/muntaha-al-madarik/editorial/HANDOFFS.md",
-      "latest_stage_manifest_url": "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_MANIFEST_P134.json",
-      "latest_stage_id": "2026-11-09-p134",
-      "next_untranslated_beirut_page": 135,
-      "cumulative_handoff_contents": "117-page English working draft B2007 pp18–134, 32 selected Arabic-English excerpts, critical scholarly introduction, comparison, glossary, witness and corrections register, history of P84 stage",
+      "latest_stage_manifest_url": "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_MANIFEST_P145.json",
+      "latest_stage_id": "2026-11-09-p145-crit-pass-001",
+      "cumulative_handoff_contents": "128-page English working introductory draft, first 80 Arabic-English source-checked clauses on six pages, 32 older extracts, original critical scholarly study, Guenon and Schuon comparison, glossary, witness register, editorial status and stage history",
       "next_stage_publish_handoff_required": true,
-      "last_working_draft_source_witness": "B2007 page-labelled parallel Arabic transcription: alshrefalm7sy forum third and fourth foundations"
+      "last_working_draft_source_witness": "B2007 primary pages18–23 directly consulted in critical pass; forum third/fourth foundation derivative transcriptions through p145; historical print uncollated",
+      "critical_clause_reader_url": "texts/al-farghani/muntaha-al-madarik/critical-edition.html",
+      "critical_translation_url": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_TRANSLATION_18_23.md",
+      "critical_audit_url": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_AUDIT_STAGE_001.md",
+      "critical_coverage_register_url": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_COVERAGE_REGISTER.json",
+      "critical_pass_digital_checked_pages": [
+        18,
+        23
+      ],
+      "critical_pass_source_checked_clause_count": 80,
+      "critical_pass_open_crux_clauses": 5,
+      "english_introduction_working_draft_complete_in_scope": true,
+      "critical_arabic_copytext_complete": false,
+      "next_source_check_beirut_page": 24,
+      "next_untranslated_work": "Verse commentary after B2007 p145 — separate scope; introduction English draft complete"
     },
     {
       "id": "ghazali-mustasfa",
