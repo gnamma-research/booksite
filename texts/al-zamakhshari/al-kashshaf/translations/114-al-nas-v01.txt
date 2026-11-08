@@ -1,0 +1,86 @@
+AL-NĀS (114) — FIRST-PASS TRANSLATION, VERSION 0.1
+Checkpoint: 2026-10-27. Complete draft of the sūrah commentary in both authorial layers; the separate book epilogue remains outside this file.
+
+Sources: K = Kashshāf, Dār al-Kitāb al-ʿArabī, 3rd ed., 1407 AH, IV, 823–824, searchable OpenITI transcription; compared with the base text in T. T = Futūḥ al-Ghayb, Dubai, 1434/2013, XVI, 652–656; file BOOK_15152_9.pdf, PDF pages 651–655. All five printed pages were visually inspected. Turkish comparison: YEK, VI, 1476–1480 (Arabic facing pages through1481), Necdet Çağıl, ed. Murat Sülün (2020). Modern editorial notes are not translated as authorial text. The book epilogue begins after the explicit “sūrah complete” at T XVI657; K IV825 likewise belongs to the book epilogue. It is retained in the full source, marked pending, and not silently counted as translated.
+
+PART K — AL-ZAMAKHSHARĪ'S AL-KASHSHĀF
+
+[K114.01 | T XVI652; K IV823]
+Sūrat al-Nās. There is disagreement about it [whether Meccan or Medinan]; it has six verses.
+In the name of God, the All-Merciful, the Merciful.
+“Say: I seek refuge in the Lord of humankind, the King of humankind, the God of humankind, from the evil of the whisperer who withdraws, who whispers in the breasts of humankind, from among jinn and humankind.” [114:1–6]
+[TEXT VARIANT: The separate four-volume transcription calls it Meccan, also said to be Medinan, adds “revealed after al-Falaq,” and repeats the basmala. Dubai's base heading is translated above.]
+
+[K114.02 | T XVI652; K IV823]
+“Qul aʿūdhu” has been read with the hamza omitted and its vowel transferred to the lām. Comparable is “fa-khudh arbaʿata” [2:260].
+If you ask, “Why say ‘in the Lord of humankind,’ annexing Lord specifically to them?”, I answer: because refuge is sought from the evil of the one who whispers in human breasts. It is as though one had said: I seek refuge from the evil of the one who whispers to people, in their Lord who controls their affairs, who is their God and the one they worship—just as some dependants, when a calamity befalls them, seek help from their master, the one they serve, and the governor of their affairs.
+
+[K114.03 | T XVI653; K IV823]
+If you ask, “What is the relation of ‘King of humankind, God of humankind’ to ‘Lord of humankind’?”, I answer: both are explanatory apposition (ʿaṭf bayān), as in “the conduct of Abū Ḥafṣ, ʿUmar, al-Fārūq.” He is clarified by “King of humankind,” then further clarified by “God of humankind.” For someone other than Him may be called “lord of humankind,” as in “They took their rabbis and monks as lords apart from God” [9:31]; someone may also be called “king of humankind.” But “God of humankind” is exclusive, admitting no partnership, and is therefore made the culmination of the clarification.
+If you ask, “Why not be content with explicitly mentioning the annexed noun ‘humankind’ once?”, I answer: because explanatory apposition serves clarification, making it a suitable place for explicit mention rather than substitution by a pronoun.
+
+[K114.04 | T XVI653–654; K IV823–824]
+Al-waswās is a noun meaning whispering (waswasa), as zalzāl means shaking (zalzala). The verbal noun, however, is wiswās, with kasra, like zilzāl. What is meant is Satan: he is named with the verbal noun as though he were whispering itself, since that is his craft and the occupation to which he constantly devotes himself. Alternatively, “the possessor of whispering” is intended. Waswasa is a faint sound; hence waswās al-ḥuly, the rustling of jewellery.
+Al-khannās is one whose habit is to withdraw. It is a form associating him with khunūs, retreating, like al-ʿawwāj and al-battāt [occupational forms]. For it is related from Saʿīd ibn Jubayr that when a person remembers his Lord, Satan withdraws and turns away; when he is heedless, Satan whispers to him.
+“Alladhī yuwaswisu” [who whispers] may occupy a position corresponding to any of the three case vowels: genitive as a description, or nominative or accusative as an expression of invective. It is fitting for the reciter to stop at al-khannās and begin with alladhī yuwaswisu on either of these two interpretations [nominative or accusative].
+[REVIEW K114-U1: “These two interpretations” naturally refers to nominative/accusative in the base passage. Ṭībī explicitly glosses it as “description and invective” below; the Turkish translation follows that gloss. The disagreement is retained rather than silently resolved.]
+
+[K114.05 | T XVI655; K IV824]
+“From among jinn and humankind” explains “who whispers,” on the basis that Satan is of two kinds, jinn and human, as He says: “devils of humankind and jinn” [6:112]. Abū Dharr—may God be pleased with him—is reported to have asked a man: “Have you sought refuge in God from human Satan?”
+Min may also attach to yuwaswisu, denoting a starting point: that is, he whispers in their breasts from the direction of the jinn and from the direction of human beings.
+It is also said that “from among jinn and humankind” explains al-nās, and that the name al-nās applies to jinn. They adduce nafar [a group] and rijāl [men] in Sūrat al-Jinn as evidence. I do not accept it as established: jinn are called jinn because they are concealed, and people nās because they are manifest, from īnās, seeing, just as they are called bashar. Even if nās applied to both classes, and that were sound and established, it would not suit the Qurʾān's eloquence and its freedom from affectation.
+
+[K114.06 | T XVI656; K IV824]
+Better than that is to understand al-nās as al-nāsī [the forgetful one], like “the day the caller calls” [54:6], and as “from where al-nās departed” [2:199] has been read. It is then explained by “jinn and humankind,” since the two weighty kinds (al-thaqalān) are the two species characterized by forgetting God's due—mighty and majestic is He.
+It is related from the Messenger of God ﷺ: “Two sūrahs have been sent down to me the like of which has never been sent down. You will never recite two sūrahs more beloved or more pleasing to God than these”—meaning the two sūrahs of refuge. The two sūrahs of refuge are also called al-muqashqishatān.
+[TRANSLATOR'S NOTE: The phonological argument is the omission of final yāʾ in al-nāsī, parallel to al-dāʿī/al-dāʿ. No claim that the ordinary reading means “forgetful” is being added.]
+
+PART T — AL-ṬĪBĪ'S ADDITIONAL COMMENTARY
+
+[T114.01 | XVI652 | on K114.02]
+Sūrat al-Nās. Meccan; also said to be Medinan. Six verses.
+In the name of God, the All-Merciful, the Merciful.
+His words, “Why say ‘in the Lord of humankind’?”: that is, He is the Lord of all worlds, so why single out humankind here? He answers: it is humankind alone who seek help from their Lord, owner and object of worship against the affliction that befalls them.
+
+[T114.02 | XVI652–653 | on K114.02]
+His words, “Just as some dependants, when a calamity befalls them, seek help from their master, the one they serve, and the governor of their affairs.” He observes an ascent in the help sought: protection through governance is stronger than through being served, while protection through mastery is weaker than through being served. Likewise, the sense of irresistible dominion in divinity is higher than in ownership, and [that is higher] than in lordship.
+Some commentaries say: “Repelling Satan's evil and whispering is through one of three things: either not enabling him to whisper, inasmuch as He is Lord; or enabling him but forcibly preventing him, inasmuch as He is King; or forbidding him to whisper as a rebuke, yet willing it by choice, inasmuch as He is God.”
+Alternatively, it may be said: the servant seeks refuge in God from Satan, grounding the request in appropriate attributes in ascending order. He first describes Him—mighty and majestic—as Lord, because the first thing the servant knows of his Lord is that He bestows blessings upon his outward and inward being. He then advances to knowing that He governs him and owns him, and then to knowing that He alone is the object of worship without qualification and that there is no final resort except to Him.
+[REVIEW T114-U2: The difficult third alternative reads لكن يريدها اختيارا. “Yet willing it by choice” preserves the wording; the subject and the intended theological distinction between prohibition and willing need checking in the unnamed source. Do not replace it with “the devil chooses it” without evidence.]
+
+[T114.03 | XVI653 | on K114.03]
+His words, “Someone may also be called king of humankind.” Al-Rāghib: “A king is one who directs the populace through command and prohibition. This is peculiar to governing rational beings; hence ‘king of humankind’ is said, but not ‘king of things.’”
+
+[T114.04 | XVI653–654 | on K114.04]
+His words, “The verbal noun, however, is wiswās.” According to one explanation, by waswās he meant the noun which has the meaning of waswasa, itself the verbal noun. The Maghribī grammarians say: the difference between a verbal noun (maṣdar) and a noun of the verbal action (ism al-maṣdar) is this. The meaning expressed by the real act—the origin of the grammatical verb—may be considered together with the agent's engagement in it, its proceeding from him, and its renewed occurrence. The expression assigned to that meaning, restricted by this qualification, is called a maṣdar. If that qualification is not considered, the expression assigned to the meaning without the stated restriction is an ism al-maṣdar.
+His words, “His craft”: another reading is “his livelihood” (ḍayʿatuhu). Al-Nihāya: “A man's ḍayʿa is that from which he earns his living, such as a craft, trade, an industry and so on.”
+His words, “Associated with khunūs”: he says “associated” because withdrawing has been made his habit.
+His words, “When a person remembers his Lord, he withdraws.” We transmitted in Ṣaḥīḥ al-Bukhārī, as a suspended report (taʿlīqan), from Ibn ʿAbbās: the Messenger of God ﷺ said, “Satan crouches upon the heart of the son of Adam. When he remembers God, he withdraws; when he is heedless, he whispers.”
+
+[T114.05 | XVI654–655 | on K114.04]
+His words from “It is fitting for the reciter to stop” to “on either of these two interpretations”: that is, description and invective.
+In al-Kawāshī: “A stop at al-khannās is sufficient if you make [what follows] nominative or accusative in blame; it is not permissible if you make it genitive as a description of al-khannās.”
+I say: its impermissibility is questionable, considering the verse ending. The author of al-Murshid says: “When you have said ‘the All-Merciful, the Merciful,’ the stop is sufficient because it is the end of a verse. It is not a complete stop, because the genitive expression—I mean ‘Master of the Day of Judgment’—is left without its governor, and the epithet is separated from what it qualifies. Likewise a stop at ‘the straight [path]’ is permissible but not a good stop; it is permitted only because it is the end of the verse.”
+[TEXT CORRECTION T114-C1: OpenITI reads وفي عدم الجواز نظرا للفاصلة. The scan p.654 reads وفي عدم الجواز نظر، نظرا للفاصلة: the missing نظر is restored in this translation. “Sufficient,” “complete” and “good” preserve distinct stop categories, not interchangeable praise.]
+
+[T114.06 | XVI655 | on K114.05]
+His words, “From the direction of human beings”: for example, he whispers into a Muslim's heart, concerning astrologers and soothsayers, that they know the unseen; and concerning jinn, that they harm and benefit.
+In al-Muṭṭalaʿ: “According to one explanation, if the phrase is taken as clarification, ‘from among jinn and humankind’ is a circumstantial expression (ḥāl) relating to the pronoun in ‘who whispers.’”
+
+[T114.07 | XVI655 | on K114.05]
+His words, “I do not accept it as established”: that is, I do not establish it, from their saying ḥaqqaqtu al-shayʾa aḥuqquhu, “I established the thing.”
+The Imam says: “It is said that ‘from among jinn and humankind’ gives two divisions included under ‘in the breasts of al-nās.’ It is as though the common element shared by jinn and humans were called insān, while the human being were also called insān; the expression insān would thus apply equivocally to both genus and species. The evidence is the report that a group of jinn came and were asked, ‘Who are you?’ They answered, ‘Nās from among the jinn.’ God has also called them rijāl in ‘There were men of humankind who sought refuge with men of the jinn, and they increased them in distress’ [72:6]. Thus it would be permissible to call them nās here. This strained statement—he does not mean that it is weak—for making insān the name of a genus containing both jinn and humans is remote from the language.”
+[REVIEW T114-U3: The final sentence is problematic in the print itself: وهذا القول المتعسف لا يريد أنه ضعيف. Its wording is retained, even though its denial of weakness conflicts with the following criticism. The phrase لا يريد may be displaced from the next gloss; that is a hypothesis, not an adopted correction. Check the Imam's source before repairing it. Mā in وما أحقه is negative, not an exclamation; the scan, Ṭībī's gloss and Turkish p.1480 agree.]
+
+[T114.08 | XVI656 | on K114.06]
+His words, “Better than that”: that is, better than this strained statement; he does not mean that it is an interpretation possessing merit. It is to take al-nās in “the breasts of al-nās” as “the forgetful one.” It can then be divided into jinn and humans, for they are two classes characterized by forgetting God's due.
+[TEXT NOTE: The scan/transcription has صفتان موصوفان, literally “two attributes described.” The contextual “two classes” follows the preceding discussion and needs verification against another witness.]
+
+[T114.09 | XVI656 | on K114.06]
+His words, “Al-muqashqishatān.” Al-Nihāya: “In the report, the sūrahs ‘Say: O unbelievers’ and ‘Say: He is God, One’ are called al-muqashqishatān: the two that free one from hypocrisy and association of partners with God, as a sick person is freed from his illness. One says taqashqasha al-marīḍ when the sick person recovers and becomes well.”
+[TRANSLATOR'S NOTE: The base text applies the term to al-Falaq and al-Nās; this quotation applies it to al-Kāfirūn and al-Ikhlāṣ. The differing identifications are preserved.]
+The sūrah is complete.
+
+END OF TRANSLATED AUTHORIAL TEXT
+Full first pass; one complete Arabic scan pass and one Turkish base-text comparison. Three principal interpretive/source flags remain, plus the “two classes/attributes” reading. The separate book epilogue is pending and is not part of this completion claim.
+

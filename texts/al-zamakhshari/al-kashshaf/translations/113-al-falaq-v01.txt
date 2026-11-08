@@ -1,0 +1,115 @@
+AL-FALAQ (113) — FIRST-PASS TRANSLATION, VERSION 0.1
+Checkpoint: 2026-10-27. Complete draft of both authorial layers; unresolved readings remain flagged.
+
+Sources: K = Kashshāf, Dār al-Kitāb al-ʿArabī, 3rd ed., 1407 AH, IV, 820–822, searchable OpenITI transcription, compared with the base text in T. T = Futūḥ al-Ghayb, Dubai, 1434/2013, XVI, 644–651, downloaded BOOK_15152_9.pdf, PDF pages 643–650. All eight printed pages were visually inspected. Turkish comparison: YEK, VI, 1468–1475, Necdet Çağıl, ed. Murat Sülün (2020). Modern Turkish and Arabic editorial notes are not translated as authorial text. Raw Arabic and source links are preserved in alignment and metadata.
+
+PART K — AL-ZAMAKHSHARĪ'S AL-KASHSHĀF
+
+[K113.01 | T XVI 644; K IV 820]
+Sūrat al-Falaq. There is disagreement about it [whether Meccan or Medinan]; it has five verses.
+In the name of God, the All-Merciful, the Merciful.
+“Say: I seek refuge in the Lord of daybreak, from the evil of what He created; from the evil of a darkening one when it enters; from the evil of those who blow upon knots; and from the evil of an envier when he envies.” [113:1–5]
+[TEXT VARIANT: The separate four-volume transcription's heading says “Meccan; also said to be Medinan,” adds “revealed after al-Fīl,” and repeats the basmala. Dubai's base heading is translated above.]
+
+[K113.02 | T XVI 644–646; K IV 820]
+Al-falaq and al-faraq mean morning, because night is split and parted away from it: faʿal has the meaning of mafʿūl. The proverb says, “It is clearer than the breaking of morning,” or “than the parting of morning.” Related to this is their expression saṭaʿa al-furqān when dawn rises.
+It is also said to mean everything God splits open: the earth for plants, mountains for springs, clouds for rain, wombs for children, grain and date-stones, and other things. It is also said to be a valley in Hell or a pit within it, from their use of falaq for a depression in the ground; the plural is fulqān.
+It is reported that one of the Companions came to Syria and saw the houses of the protected non-Muslim communities (ahl al-dhimma), their comfortable lives and the worldly plenty granted them. He said, “I do not mind. Is al-falaq not awaiting them?” He was asked, “What is al-falaq?” He answered: “A chamber in Hell which, when opened, makes all the inhabitants of the Fire cry out at the intensity of its heat.”
+
+[K113.03 | T XVI 646; K IV 820]
+“From the evil of what He created”: from the evil of His creation. Their evil consists in the disobedience and sins committed by morally responsible living beings, and the harm they do one another through injustice, aggression, killing, striking, abuse and so forth; in what the non-responsible among living beings do by devouring, tearing with the teeth, stinging and biting, such as predatory animals and creeping creatures; and in the kinds of harm God has placed in inanimate things, such as burning in fire and killing in poison.
+
+[K113.04 | T XVI 646–648; K IV 820–821]
+Al-ghāsiq is night when its darkness becomes dense, from His statement “… until the darkness of night” [17:78]. Related expressions are “the eye ghasaqat”—filled with tears—and “the wound ghasaqat”—filled with blood. Its wuqūb is the entry of its darkness into everything. One says waqabat al-shams when the sun sets. In the report, when he saw that the sun had set, he said, “This is the time when it becomes lawful”—meaning the sunset prayer.
+It is also said to be the moon when full. ʿĀʾisha—may God be pleased with her—reports: the Messenger of God ﷺ took my hand, pointed to the moon, and said, “Seek refuge in God from the evil of this, for it is the darkening one when it enters.” Its wuqūb is its entering eclipse and becoming dark.
+Al-ghāsiq may also mean a black snake; its waqb is its striking and piercing. Waqb means a hole, as in waqbat al-tharīd, the hollow in a dish of bread soaked in broth.
+Refuge is sought from the evil of night because evil spreads more widely in it and is harder to guard against. Hence their sayings, “Night conceals misfortune better,” and “Night has become treacherous.” When it grows dark, treachery increases. Evil is attributed to night because it accompanies it, occurring within it.
+[TEXT VARIANT K113-C1: Dubai p.646 cites the opening of 17:78, “Establish prayer at the sun's decline,” rather than the words containing ghasaq. The independent four-volume transcription and Turkish p.1470 give the relevant latter clause, translated above. Both forms are recorded.]
+
+[K113.05 | T XVI 648–649; K IV 821]
+Al-naffāthāt are women, souls, or groups of female sorcerers who tie knots in threads, blow upon them and recite incantations. Nafth is blowing with saliva. This has no effect—unless, indeed, something harmful is administered as food, drink or something to smell, or the bewitched person is brought into contact with it in some way. But God—mighty and majestic—may perform an act at that moment as a test by which those steadfast upon truth are distinguished from the Ḥashwiyya and the ignorant common people. The Ḥashwiyya and the rabble attribute it to the women and their blowing; those steadfast in the firm word pay it no attention and attach no weight to it.
+If you ask, “What, then, does seeking refuge from their evil mean?”, I answer: there are three interpretations. First, refuge is sought from their activity, the practice of sorcery, and their sin in doing it. Second, refuge is sought from their leading people astray through their sorcery and deceiving them by their false practices. Third, refuge is sought from whatever evil God causes to befall someone at the moment of their blowing.
+[TEXT CORRECTION K113-C2: Both electronic Arabic texts have النفخ من ريق. The Dubai scan p.648 clearly reads النفخ مع ريق, “blowing with saliva”; Turkish p.1470 agrees. The scan governs this translation. Ḥashwiyya is retained as the author's polemical label, not silently converted into a neutral modern school name.]
+
+[K113.06 | T XVI 649–650; K IV 821–822]
+They may also mean scheming women, from His statement “Your scheming is indeed great” [12:28], likening their scheming to sorcery and blowing on knots; or women who tempt men by presenting themselves to them and displaying their attractions, as though bewitching them through that.
+“When he envies”: when his envy becomes manifest and he acts as it dictates, seeking misfortunes for the person envied. If he does not manifest the effect of what he conceals, no harm from him reaches the person he envies. Rather, he harms himself by grieving at another's happiness. ʿUmar ibn ʿAbd al-ʿAzīz is reported to have said: “I have never seen a wrongdoer who more resembles someone wronged than an envier.”
+The envier's evil may also mean his sin and the ugliness of his condition at the time of his envy and his displaying its effect.
+
+[K113.07 | T XVI 650–651; K IV 822]
+If you ask, “‘From the evil of what He created’ includes everything from which refuge is sought. What is the point, then, of subsequently seeking refuge from the darkening one, the women who blow and the envier?”, I answer: their evil is singled out from all evil because its operation is hidden and reaches a person from where he does not know, as though he were treacherously struck by it. They say: “The worst enemy is the one who conceals his hostility and plots against you without your perceiving it.”
+If you ask, “Why are some of those from whom refuge is sought made definite and others indefinite?”, I answer: al-naffāthāt is made definite because every such blower is evil. Ghāsiq is indefinite because evil is not present in every darkening night, but in some and not others. Likewise, not every envier causes harm. There is even praiseworthy envy: envy in good things. Hence his statement—blessings and peace be upon him—“There is no envy except in two cases.”
+Abū Tammām said:
+“One who envies noble accomplishments is no [blameworthy] envier.”
+He also said:
+“Loftiness is such that envy of its like is fair.”
+It is transmitted from the Messenger of God ﷺ: “Whoever recites the two sūrahs of refuge (al-Muʿawwidhatān) is as though he had recited all the books God Most High has sent down.”
+[TEXT VARIANT K113-C3: Dubai p.650 omits شر العداة, “the worst enemy,” before المداجي. It is present in the independent four-volume transcription and the Turkish Arabic/Turkish passage; it is included here and the difference recorded.]
+
+PART T — AL-ṬĪBĪ'S ADDITIONAL COMMENTARY
+
+[T113.01 | XVI 644–645 | on K113.02]
+Sūrat al-Falaq. Meccan; also said to be Medinan. Five verses.
+In the name of God, the All-Merciful, the Merciful.
+His words, “Because night is split away from it”: that is, night splits away from morning and morning emerges. Faʿal has the meaning of mafʿūl: night is what is split away from it.
+His words, “It is also said to mean everything He splits open.” Al-Qāḍī says: “It includes all possible beings, for He split the darkness of nonexistence away from them with the light of bringing into existence—particularly what emerges from an origin, such as springs, rains, plants and children. In conventional use it is especially morning, which is why it was explained that way. Morning is singled out because it changes the condition, replaces the loneliness of night with the joy of light, evokes good through the Day of Resurrection, and signals that the one able to remove the darkness of night from this world can remove from the person seeking refuge what he fears. The word Lord is more fitting here than the other names, because protection from harms is an act of nurture.”
+[REVIEW T113-U1: The scanned quotation at p.645 has difficult wording محاكاة الخير بيوم القيامة and a final word read provisionally as تربية. OpenITI gives قريبة. The contextual rendering of this final clause is provisional and must be checked against al-Qāḍī's source.]
+
+[T113.02 | XVI 645 | on K113.02]
+His words, “I do not mind. Is al-falaq not awaiting them?”: that is, I do not mind the beauty of their houses and the ease of their lives. He then begins a new interrogative sentence to elicit assent: “Is al-falaq not awaiting them?”
+Comparable is what we transmitted from al-Bukhārī, Muslim, Aḥmad, al-Tirmidhī and al-Nasāʾī, from Ibn ʿAbbās in a long report from ʿUmar—may God be pleased with him: “I entered upon the Messenger of God ﷺ and greeted him. He was reclining upon the woven strands of a mat which had left marks upon his side. I sat down and lifted my head to look about the house. By God, I saw nothing there to catch the eye except three hides. I said: ‘Messenger of God, pray that God grant plenty to your community: He has granted plenty to Persia and Rome, although they do not worship God.’ He sat upright and said, ‘Are you in doubt, son of al-Khaṭṭāb? These are people whose good things have been given them in advance in this worldly life.’ I said: ‘Ask forgiveness for me, Messenger of God.’” The report [continues].
+As for interpreting al-falaq as a valley in Hell, Muḥyī al-Sunna transmits one report from Ibn ʿAbbās that al-falaq is a prison in Hell, and from al-Kalbī that it is a valley in Hell.
+[TEXT CORRECTION T113-C4: OpenITI contains nonsensical extra words after “his side.” They are absent from the inspected scan p.645 and are not translated.]
+
+[T113.03 | XVI 646 | on K113.03]
+His words, “Their evil is what morally responsible living beings do.” Perhaps “among living beings” is supplied as an explanation of “the morally responsible” in order to exclude the angels.
+Al-Qāḍī says: “The world of creation is singled out as that from which refuge is sought because evil is confined to it: the world of command is wholly good. Its evil is either voluntary—confined to its agent or extending to others, as in unbelief and injustice—or natural, as in fire's burning and poisons' destruction.”
+
+[T113.04 | XVI 646–647 | on K113.04]
+His words, “When its darkness becomes dense.” Al-Jawharī: “Iʿtakara al-ẓalām: it became intermingled, as though part of it returned upon another because of the slowness of its clearing.”
+His words, “One says waqabat al-shams when it sets.” Al-Rāghib: “Waqb is like a hollow in something; hence waqabat al-shams. Īqāb is its disappearing.”
+His words, “This is the time when it becomes lawful”: ḥīn is nominative; in ḥillihā the ḥāʾ has kasra and the lām is genitive. Al-Nihāya: “In the report: when he saw that the sun had waqabat, he said, ‘This is the time of its lawfulness.’ Waqabat means ‘set’; the time of its lawfulness is the time when its performance becomes lawful, meaning the sunset prayer. Wuqūb means entry into anything.”
+
+[T113.05 | XVI 647 | on K113.04]
+His words, “From ʿĀʾisha—may God be pleased with her.” The report was transmitted by Imam Aḥmad and al-Tirmidhī; it does not contain “he took my hand.”
+The Imam transmits from Ibn Qutayba: “The moon was called ghāsiq because it is eclipsed and darkens: its light departs and it becomes black. Its wuqūb is entering that blackness.” He also says: “It has been established that the moon is not luminous in its own body; it is therefore called ghāsiq. Its wuqūb is the dark moon at the end of the month, when its strength is slight and it is at its lowest condition. For that reason sorcerers then occupy themselves with sorcery that produces illness. This accords with the occasion of revelation of the two sūrahs.” God knows best.
+His words, “Night conceals misfortune better.” Al-Maydānī says: “That is, do what you wish at night, for it conceals your secret better. The first to say this was Sāriya ibn ʿUwaymir ibn ʿAdī al-ʿUqaylī.” Its occasion is mentioned in his book.
+His words, “Night has become treacherous”: it is said to be like aḥṣada al-zarʿ [the crop became ready for harvest], that is, the time of its treachery has arrived; it is also said to mean “it has become possessed of treachery.”
+
+[T113.06 | XVI 648 | on K113.05]
+His words, “By which those steadfast upon truth are distinguished from the Ḥashwiyya.” Al-Intiṣāf: “The Qadariyya deny sorcery, whereas the Book and the Sunna attest its occurrence; the command to seek refuge from it is evidence for it. The Messenger of God ﷺ was bewitched with a comb, combings and the sheath of a male palm's spathe.”
+I say: we transmitted the report from al-Bukhārī, Muslim and Ibn Māja, from ʿĀʾisha—may God be pleased with her:
+“The Messenger of God ﷺ was bewitched, so that he imagined he had done something when he had not. One day, while with me, he prayed to God repeatedly, then said: ‘Have you realized, ʿĀʾisha, that God has given me an answer concerning what I asked Him?’ I said, ‘What is that, Messenger of God?’ He said: ‘Two men came to me. One sat at my head and the other at my feet. One asked his companion: What ails the man? He answered: He has been bewitched. He asked: Who bewitched him? He answered: Labīd ibn al-Aʿṣam, the Jew of Banū Zurayq. He asked: With what? He answered: With a comb, combings and the sheath of a male palm's spathe. He asked: Where is it? He answered: In the well of Dhī Arwān.’” The report [continues].
+[TEXT CORRECTION T113-C5: The scan supplies the question to ʿĀʾisha and her answer, absent from the OpenITI transcription. They are retained here.]
+
+[T113.07 | XVI 648–649 | continuation]
+Al-Rāghib: “The effect of sorcery upon the Prophet ﷺ did not concern him inasmuch as he was a prophet; it concerned his body inasmuch as he was a human being or mortal, just as he ate, excreted, became angry, desired and fell ill, while remaining sound in his prophetic capacity. It would impair prophethood only [if] sorcery were found to affect something pertaining to prophethood. Just so, his being wounded and having his front teeth broken on the day of Uḥud did not impair the protection God guaranteed him in ‘God will protect you from people’ [5:67]. Likewise, the polytheists' gaining control over certain regions within Islam is not taken as invalidating the perfection of Islam stated in ‘Today I have perfected your religion for you’ [5:3].”
+Al-Qāḍī says: “This does not make the unbelievers truthful in calling him bewitched, for they meant that he was mad through sorcery.”
+[REVIEW T113-U2: The scan p.648 reads فيصح من حيث نبي and then أو وجد للسحر تأثير. The first is provisionally read as preservation of prophetic soundness; “[if]” expresses the apparently intended conditional of the second, whose printed أو is problematic. Check al-Rāghib's source before removing the flag. At p.649 the scan has بما يقع, correcting OpenITI's بما لا يقع, which reverses the argument.]
+
+[T113.08 | XVI 649 | continuation]
+Al-Nihāya: “He was bewitched with a comb and combings”: these are the hairs that fall from the head and beard when combed. It is also transmitted as mushāqa: “what breaks off from silk and flax when cleaned and combed. Mashq is pulling something to lengthen it.” “Juff is the casing of the spathe, the covering over it.”
+His words, “The rabble”: immature youths and the base multitude.
+His words, “Scheming women”: he likens their scheming to sorcery. The author of al-Intiṣāf abridged it and then said: “Had anyone other than al-Zamakhsharī offered this interpretation, it would have been counted among the innovations of exegesis.”
+
+[T113.09 | XVI 650–651 | on K113.07]
+His words, “As though he were treacherously struck by it.” Al-Asās: “So-and-so treacherously attacks whoever passes him; he killed him by stealth; I fear his ghāʾila, that is, the eventual consequence of his evil.”
+His words, “There is no envy except in two cases.” We transmitted from al-Bukhārī, from Abū Hurayra, that the Messenger of God ﷺ said: “There is no envy except concerning two: a man to whom God has given the Qurʾān, who recites it at times throughout night and day. His neighbour hears him and says, ‘Would that I had been given what this man was given, so that I might do as he does!’ And a man to whom God has given wealth, who spends it as it should be spent. Someone says, ‘Would that I had been given what this man was given, so that I might do as he does!’”
+Al-Nihāya: “Ḥasad is that a man sees a blessing enjoyed by his brother and wishes it would leave him and become his own instead. Ghabṭ is to wish to have its like without wishing it to leave him. The report means: there is no harmless envy except in two cases.”
+
+[T113.10 | XVI 651 | on K113.07]
+His words, “One who envies …”: its opening is:
+“I am indeed envied, and I excuse my envier.”
+It is also said that its opening is:
+“They envied him his glory—without being blameworthy;
+one who envies noble accomplishments is no [blameworthy] envier.”
+He also said:
+“Excuse your envier for what has been bestowed especially upon you:
+loftiness is such that envy of its like is fair.”
+Mithl [like] here is like what occurs in your saying “[his like] is generous”: that is, loftiness itself is something of which envy is fair.
+[REVIEW T113-U3: The scan's grammatical example is truncated: مثل هاهنا مثل ما في قولك: يجود. The bracketed words supply its apparent point; check the quoted poetic/grammatical context.]
+The sūrah is complete.
+
+END OF TRANSLATED AUTHORIAL TEXT
+Full first pass; one complete Arabic scan pass and one Turkish base-text comparison. Three unresolved readings remain. The dispute about sorcery is preserved as a dispute between the authors and their quoted authorities; it has not been harmonized.
+

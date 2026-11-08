@@ -1,0 +1,74 @@
+{
+  "checkpoint": "C06",
+  "new_surahs": [
+    97,
+    104,
+    95,
+    99,
+    101
+  ],
+  "K_pages": {
+    "95": "IV773–775",
+    "97": "IV780–781",
+    "99": "IV783–785",
+    "101": "IV789–791",
+    "104": "IV794–796"
+  },
+  "T_pages": {
+    "95": "XVI504–508",
+    "97": "XVI522–525",
+    "99": "XVI536–545",
+    "101": "XVI554–557",
+    "104": "XVI568–576"
+  },
+  "Turkish_complete_pass_pages": {
+    "95": [
+      1354,
+      1356,
+      1358
+    ],
+    "97": [
+      1372,
+      1374
+    ],
+    "99": [
+      1382,
+      1384,
+      1386
+    ],
+    "101": [
+      1396,
+      1398
+    ],
+    "104": [
+      1408,
+      1410,
+      1412
+    ]
+  },
+  "scan_checks_physical_equals_printed": [
+    505,
+    524,
+    536,
+    539,
+    545,
+    556,
+    572,
+    574,
+    576
+  ],
+  "corrections": [
+    "T95: الغذاء restored from printed505.",
+    "K97: exclusive agency refers to God; follows Arabic and Tibi rather than apparent Turkish error.",
+    "K99: باللسان follows embedded base against DKA بالنسيان.",
+    "T99: بنصف القرآن restored from545.",
+    "T101: printed556 supports khuzyā."
+  ],
+  "open_flags": [
+    "T99 jizʿāl gloss: printed تطلع retained in note; تظلع provisional.",
+    "T104 phrase وأقر بدء إحراق at574 remains provisional.",
+    "T104 final يلزم at576 has opposite لا يلزم variant; main reading retained with explicit flag.",
+    "All earlier U-flags remain."
+  ],
+  "review_limit": "One Turkish comparison and selective scans, not full scan collation or final scholarly review."
+}
