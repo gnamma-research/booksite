@@ -16,3 +16,7 @@ The initial source capture verified that the NYU IIIF manifest has 368 canvases 
 ## Retry after PDF renderer repair
 
 The first workflow run parsed 368 IIIF canvases but downloaded no individual images because the IIIF response uses an unexpected structure; its PDF fallback successfully fetched the full low-resolution file but failed at `pdfinfo` (not installed). The corrected pipeline now uses PyMuPDF for PDF page rendering. This trigger requests a new **finite** one-off attempt. Any scans are **uncollated** until visually examined; no claim of definitive edition is allowed on download success alone.
+
+## Archival retry after successful image render
+
+The 1876 PDF image rendering was confirmed successful in run 42536981050, yielding 59 scan JPEGs and 3 contact sheets. Its branch push was rejected because other commits arrived during image generation. The revised workflow now rebases and retries. Re-run acquisition once to preserve the photographed witnesses in GNAMMA's canonical repository. Source comparisons I1876 p.5/6/7 are documented in I1876_COLLATION_001.md; no manuscript claims.
