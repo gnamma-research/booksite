@@ -2,7 +2,21 @@
 
 This is the **stable archive index** for the GNAMMA Farghānī source-critical translation project.
 
-## Current canonical stage — P134 (9 November 2026)
+## Latest canonical stage — P145 and critical checking pass 001 (9 November 2026)
+
+- [**Complete current cumulative handoff, P145**](FULL_CUMULATIVE_P145.md): the 128-page English introductory draft; 80 source-checked Arabic–English clauses (B2007 pp18–23); critical audit, historical apparatus, comparison, glossary, witness and correction registers; prior handoffs and exact continuation
+- [Entire authorial introduction + concluding preface — English working draft](WORKING_TRANSLATION_18_145.md), B2007 pp18–145; four foundations end at p143, *tatimmat al-dībāja* follows on pp144–145
+- [New Arabic–English clause-based critical review](CRITICAL_TRANSLATION_18_23.md), 80 source-checked clauses with revised translations and five open cruxes
+- [Critical pass analytical report](CRITICAL_AUDIT_STAGE_001.md) and [128-page source-quality coverage register](CRITICAL_COVERAGE_REGISTER.json)
+- [P145 stage manifest with source file hashes](STAGE_MANIFEST_P145.json), [full handoff](STAGE_HANDOFF_P145.md), [browser clause reader](../critical-edition.html)
+- [Current GNAMMA book page](../) and [public archive](../handoffs.html)
+
+**Exact next authorial checking locus:** Beirut B2007 **p.24** (continuing from the last reviewed words of p23, `وصفة بقائها وثباتها اعتبارا لبعض`). The introductory translation is already drafted through p145; the verse commentary is separate. Every stage must preserve older source text and source-supported corrections, update the full cumulative archive and the GNAMMA site, and distinguish the critical-check grade from the merely translated-draft grade.
+
+**True editorial standing:** English draft **complete in authorial introductory scope**; critical Arabic checking **6 of 128 Beirut pages** (80 clauses) against a single modern digitized edited text; historical print/manuscript collation **0**, manuscript variants **0**, and **no definitive constituted Arabic**. The 1876 printed introduction's 107-page extent is a distinct pagination, not the denominator of a completed percentage.
+
+
+## Historical canonical stage — P134 (9 November 2026; retained)
 
 - [**Full cumulative handoff — P134, including complete working-stage source and apparatus**](FULL_CUMULATIVE_P134.md)
 - [117-page consecutive English working draft](WORKING_TRANSLATION_18_134.md) — modern Beirut B2007 pp.18–134
