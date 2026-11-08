@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-library-manifest-v1",
   "project": "Gnamma Research",
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "collections": [
     "texts",
     "essays",
@@ -62,13 +62,13 @@
         "Akbarian metaphysics",
         "comparative metaphysics"
       ],
-      "status": "english-working-67-beirut-pages-18-84-plus-32-selected-bilingual-extracts-not-critical-complete",
+      "status": "provisional-english-working-117-beirut-pages-with-32-selected-bilingual-extracts-critical-incomplete",
       "language": [
         "ar-selected",
         "en-selected"
       ],
       "url": "texts/al-farghani/muntaha-al-madarik/",
-      "note": "50 new B2007 printed pages 35–84 in provisional English draft, 67 cumulative pp.18–84, with 32 selected Arabic-English extracts (pp.18–34). Full cumulative P84 snapshot and archive directly linked. This is not a complete continuous Arabic text or verified critical edition: zero independently collated manuscript variants. Next untranslated B2007 p.85.",
+      "note": "Second batch of 50 new B2007 pp85–134 now in a source-linked English working draft; 117 consecutive numbered pages pp18–134 cumulative. First three foundations in draft; fourth remains unfinished beyond p134. Only 32 selected Arabic–English excerpts (pp18–34), no continuous critical Arabic or independently collated manuscript variants. Compact continuous-mode spacing, new P134 cumulative handoff, stage manifest and witness notes. The new 50 pages use an online parallel Arabic transcription with Beirut page labels, not independently verified manuscript facsimiles.",
       "original_text_status": "selected-arabic-source-clauses-only",
       "translated_extracts": 32,
       "sampled_pages": "18–34, not contiguous complete-page coverage",
@@ -81,32 +81,33 @@
         "turka-qawaid-tawhid"
       ],
       "continuous_english_translation_url": "texts/al-farghani/muntaha-al-madarik/continuous-translation.html",
-      "continuous_english_draft_source_url": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_84.md",
+      "continuous_english_draft_source_url": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_134.md",
       "critical_scholarly_introduction_url": "texts/al-farghani/muntaha-al-madarik/critical-introduction.html",
       "critical_scholarly_introduction_source_url": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_INTRODUCTION.md",
       "witness_register_url": "texts/al-farghani/muntaha-al-madarik/editorial/WITNESS_REGISTER.json",
       "working_english_draft_beirut_pages": [
         18,
-        84
+        134
       ],
-      "working_english_draft_printed_pages_count": 67,
+      "working_english_draft_printed_pages_count": 117,
       "full_arabic_introduction_collated": false,
       "continuous_bilingual_edition_complete": false,
       "verified_manuscript_variants": 0,
       "new_working_english_pages_this_stage": [
-        35,
-        84
+        85,
+        134
       ],
       "new_english_draft_pages_count": 50,
       "full_authorial_introduction_translation_complete": false,
-      "latest_cumulative_handoff_url": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_P84.md",
+      "latest_cumulative_handoff_url": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_P134.md",
       "handoff_archive_url": "texts/al-farghani/muntaha-al-madarik/handoffs.html",
       "handoff_index_url": "texts/al-farghani/muntaha-al-madarik/editorial/HANDOFFS.md",
-      "latest_stage_manifest_url": "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_MANIFEST_P84.json",
-      "latest_stage_id": "2026-11-08-p84",
-      "next_untranslated_beirut_page": 85,
-      "cumulative_handoff_contents": "Full current 67-page English working master, 32 bilingual extracts, critical scholarly introduction, commentary, glossary, witness register, correction log, previous handoff",
-      "next_stage_publish_handoff_required": true
+      "latest_stage_manifest_url": "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_MANIFEST_P134.json",
+      "latest_stage_id": "2026-11-09-p134",
+      "next_untranslated_beirut_page": 135,
+      "cumulative_handoff_contents": "117-page English working draft B2007 pp18–134, 32 selected Arabic-English excerpts, critical scholarly introduction, comparison, glossary, witness and corrections register, history of P84 stage",
+      "next_stage_publish_handoff_required": true,
+      "last_working_draft_source_witness": "B2007 page-labelled parallel Arabic transcription: alshrefalm7sy forum third and fourth foundations"
     },
     {
       "id": "ghazali-mustasfa",
