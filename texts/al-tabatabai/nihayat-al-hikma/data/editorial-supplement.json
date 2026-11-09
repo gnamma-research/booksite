@@ -493,6 +493,18 @@
       "adoption": "adopted-with-full-apparatus",
       "originalReading": "كان جوهرا أو عرضا موجودا في نفسه رابطا بالنظر إلى علّته",
       "adoptedReading": "كان جوهرا أو عرضا رابطا بالنظر إلى علّته"
+    },
+    {
+      "id": "N1428-VI03-01",
+      "passageId": "N-VI-03",
+      "type": "Textual emendation · later editor",
+      "text": "The 1417 AH reading has «عطف الصور الطبيعيّة» (plural), but the revised 1428 AH edition vol. 1 p. 158 n. 1 explicitly notes that the copies have the plural and prints «عطف الصورة الطبيعيّة» (singular), agreeing with the subsequent singular pronoun and adjective «وهي متأخّرة». The reader adopts the editor's correction, preserves the transmitted plural in a passage note, and does not claim a manuscript source for the singular.",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=158&type=c_fbook",
+      "source": "ʿAbbās ʿAlī al-Zāriʿī, 1428 AH revised edition, vol. 1 p. 158 n. 1; 1417 Qum, Stage VI.3",
+      "status": "Later editor's explicit emendation checked; transmitted plural preserved; manuscript attestation unverified",
+      "adoption": "adopted-with-full-apparatus",
+      "originalReading": "عطف الصور الطبيعيّة",
+      "adoptedReading": "عطف الصورة الطبيعيّة"
     }
   ],
   "sourceCriticalPolicy": "Preserve authorial notes explicitly marked منه رحمه الله; distinguish later editor's explanatory notes; challenge historically questionable ascriptions by checking named scholars' own texts. These criticalNotes are distinct from the authorial Arabic and translation."
