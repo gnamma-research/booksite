@@ -51,6 +51,17 @@ async function run(browserType){
       assert.match(await page.locator('#current-location').textContent(),/Nihāy/);
       await page.goBack();await page.locator('#passage-B-INTRO').waitFor({state:'attached'});
     });
+    await check(browserType.name()+' Muẓaffar Book II universals bilingual coverage',async()=>{
+      await page.locator('[data-part-jump="passage-M-P-01"]').click();
+      for(const id of ['M-K-01','M-K-02','M-K-03','M-K-04']){
+        const passage=page.locator('#passage-'+id);
+        await passage.waitFor({state:'attached',timeout:35000});
+        const text=await passage.textContent();
+        assert.ok(text.includes('الكلّي')||text.includes('الجزئي'),id+' Arabic source absent');
+        assert.ok(text.length>500,id+' bilingual content too short');
+      }
+      assert.match(await page.locator('#passage-M-K-04').textContent(),/gradation|graded|mushakkik/i);
+    });
     await check(browserType.name()+' no duplicated Nihāya emendation footnotes',async()=>{
       await page.locator('[data-part-jump="passage-N-INTRO"]').click();
       for(const id of ['N-I-02','N-II-02','N-VI-03','N-VI-15','N-VI-16']){
