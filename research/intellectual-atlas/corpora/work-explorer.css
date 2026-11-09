@@ -1,0 +1,112 @@
+
+/* GNAMMA Work Explorer — a source-qualified companion to the canonical timeline.
+   Purposefully scoped to .gnx-* and .ia-explorer-mode to preserve old views. */
+#kalam-timeline-app-v3.ia-explorer-mode .ia-controls {display:none}
+#kalam-timeline-app-v3.ia-explorer-mode [data-sheet] {display:none}
+#kalam-timeline-app-v3.ia-explorer-mode .ia-layout {grid-template-columns:minmax(0,1fr)!important}
+#kalam-timeline-app-v3.ia-explorer-mode .ia-main {padding:0;max-width:none;min-width:0}
+#kalam-timeline-app-v3 .gnx-layout {--gnx-border:var(--ia-line);background:var(--ia-bg);color:var(--ia-fg);min-width:0;font-size:13px;line-height:1.55}
+#kalam-timeline-app-v3 .gnx-layout * {box-sizing:border-box}
+#kalam-timeline-app-v3 .gnx-layout h2 {font-size:24px;line-height:1.25}
+#kalam-timeline-app-v3 .gnx-layout h3 {font-size:15px;line-height:1.35}
+#kalam-timeline-app-v3 .gnx-layout h4 {font-size:13px;font-weight:650}
+#kalam-timeline-app-v3 .gnx-layout button,#kalam-timeline-app-v3 .gnx-layout select,
+#kalam-timeline-app-v3 .gnx-layout input {font:inherit}
+#kalam-timeline-app-v3 .gnx-layout button {cursor:pointer}
+#kalam-timeline-app-v3 .gnx-layout button:disabled {opacity:.5;cursor:default}
+#kalam-timeline-app-v3 .gnx-layout button:focus-visible,
+#kalam-timeline-app-v3 .gnx-layout a:focus-visible,
+#kalam-timeline-app-v3 .gnx-layout select:focus-visible,
+#kalam-timeline-app-v3 .gnx-layout input:focus-visible,
+#kalam-timeline-app-v3 .gnx-layout svg [role=button]:focus-visible {outline:3px solid var(--ia-link);outline-offset:3px}
+#kalam-timeline-app-v3 .gnx-header {padding:16px 22px 12px;display:flex;gap:18px;align-items:start;justify-content:space-between;border-bottom:1px solid var(--gnx-border)}
+#kalam-timeline-app-v3 .gnx-header h2 {margin:4px 0 5px}
+#kalam-timeline-app-v3 .gnx-header p {max-width:670px;color:var(--ia-muted)}
+#kalam-timeline-app-v3 .gnx-kicker {font-size:10px;text-transform:uppercase;letter-spacing:1.1px;color:var(--ia-muted);font-weight:700}
+#kalam-timeline-app-v3 .gnx-pulse {font-size:11px;color:var(--ia-muted);text-align:right;max-width:300px;white-space:normal}
+#kalam-timeline-app-v3 .gnx-loading {background:var(--ia-soft);padding:10px 20px;font-size:12px}
+#kalam-timeline-app-v3 .gnx-controls {padding:12px 20px 13px;background:var(--ia-panel);border-bottom:1px solid var(--gnx-border);display:grid;gap:8px}
+#kalam-timeline-app-v3 .gnx-control-row {display:flex;gap:8px;flex-wrap:wrap;align-items:end;min-width:0}
+#kalam-timeline-app-v3 .gnx-control-row label {display:grid;gap:3px;color:var(--ia-muted);font-size:11px;min-width:112px;max-width:100%}
+#kalam-timeline-app-v3 .gnx-control-row label:first-child:has(input[type=search]) {flex:2 1 250px}
+#kalam-timeline-app-v3 .gnx-control-row label:has(select) {flex:1 1 135px}
+#kalam-timeline-app-v3 .gnx-controls input,
+#kalam-timeline-app-v3 .gnx-controls select {display:block;width:100%;min-width:0;height:35px;border-radius:5px;padding:5px 9px;border:1px solid var(--ia-line);background:var(--ia-panel);color:var(--ia-fg)}
+#kalam-timeline-app-v3 .gnx-advanced {border:1px solid var(--ia-line);border-radius:6px;padding:6px 10px}
+#kalam-timeline-app-v3 .gnx-advanced summary {cursor:pointer;font-size:11px;font-weight:650;color:var(--ia-muted)}
+#kalam-timeline-app-v3 .gnx-advanced .gnx-control-row {padding:10px 0 3px}
+#kalam-timeline-app-v3 .gnx-quick button,
+#kalam-timeline-app-v3 .gnx-pagination button,
+#kalam-timeline-app-v3 .gnx-profile-top button,
+#kalam-timeline-app-v3 .gnx-evidence-button {min-height:31px;padding:5px 9px;font-size:11px;border:1px solid var(--ia-line);background:var(--ia-panel);border-radius:5px;color:var(--ia-fg)}
+#kalam-timeline-app-v3 .gnx-quick button[aria-pressed=true] {background:var(--ia-active);color:var(--ia-onactive);border-color:transparent}
+#kalam-timeline-app-v3 .gnx-content {display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,290px);gap:0;align-items:start;min-width:0}
+#kalam-timeline-app-v3 .gnx-main {min-width:0;padding:15px 18px}
+#kalam-timeline-app-v3 .gnx-results {min-width:0;padding:15px 12px;border-left:1px solid var(--ia-line);background:var(--ia-panel)}
+#kalam-timeline-app-v3 .gnx-profile-top {display:flex;gap:10px;justify-content:space-between;align-items:start;flex-wrap:wrap;margin-bottom:9px}
+#kalam-timeline-app-v3 .gnx-small {font-size:11px;line-height:1.55;color:var(--ia-muted);margin:7px 0}
+#kalam-timeline-app-v3 .gnx-caveat {font-size:11px;line-height:1.55;color:var(--ia-muted);padding:8px 13px;border-left:2px solid var(--ia-line);margin:10px 0}
+#kalam-timeline-app-v3 > .gnx-caveat {margin:16px}
+#kalam-timeline-app-v3 .gnx-layout > .gnx-caveat {margin:3px 20px 18px}
+#kalam-timeline-app-v3 .gnx-graph {min-width:0}
+#kalam-timeline-app-v3 .gnx-network-wrap {max-width:100%;min-width:0;overflow-x:auto;overscroll-behavior-x:contain;border:1px solid var(--ia-line);border-radius:7px;background:var(--ia-panel);scrollbar-width:thin}
+#kalam-timeline-app-v3 .gnx-network-wrap svg {display:block;max-width:none;color:var(--ia-fg)}
+#kalam-timeline-app-v3 .gnx-network-wrap svg g[role=button]{cursor:pointer}
+#kalam-timeline-app-v3 .gnx-network-wrap svg g[role=button]:hover rect {stroke:var(--ia-link);stroke-width:2.5}
+#kalam-timeline-app-v3 .gnx-network-wrap svg g[role=button]:hover path {stroke-width:3}
+#kalam-timeline-app-v3 .gnx-profile,
+#kalam-timeline-app-v3 .gnx-evidence {padding:12px 15px;margin:13px 0 10px;background:var(--ia-panel);border:1px solid var(--ia-line);border-radius:7px}
+#kalam-timeline-app-v3 .gnx-profile h3 {font-size:18px}
+#kalam-timeline-app-v3 .gnx-profile p,
+#kalam-timeline-app-v3 .gnx-evidence p {margin:6px 0;font-size:12px}
+#kalam-timeline-app-v3 .gnx-arabic {font-size:17px;line-height:1.65;margin:6px 0;text-align:left}
+#kalam-timeline-app-v3 .gnx-actions {margin-top:10px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-size:11px}
+#kalam-timeline-app-v3 .gnx-actions a {color:var(--ia-link)}
+#kalam-timeline-app-v3 .gnx-sources {flex-basis:100%}
+#kalam-timeline-app-v3 .gnx-evidence {border-left:3px solid var(--ia-link)}
+#kalam-timeline-app-v3 .gnx-evidence dl {display:grid;grid-template-columns:125px minmax(0,1fr);gap:4px 11px;font-size:11px}
+#kalam-timeline-app-v3 .gnx-evidence dt {color:var(--ia-muted)}
+#kalam-timeline-app-v3 .gnx-evidence dd {margin:0;overflow-wrap:anywhere}
+#kalam-timeline-app-v3 .gnx-citations {border-top:1px solid var(--ia-line);padding-top:8px;font-size:11px}
+#kalam-timeline-app-v3 .gnx-relations {display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+#kalam-timeline-app-v3 .gnx-relations section {min-width:0}
+#kalam-timeline-app-v3 .gnx-relations h4 {margin-bottom:7px}
+#kalam-timeline-app-v3 .gnx-relation {border-top:1px solid var(--ia-line);padding:7px 2px;display:flex;gap:6px;flex-wrap:wrap;align-items:center;min-width:0}
+#kalam-timeline-app-v3 .gnx-relation button:not(.gnx-evidence-button) {border:0;padding:0;background:transparent;text-align:left;color:var(--ia-link);flex:1 1 120px;min-width:0;overflow-wrap:anywhere;font-weight:600;font-size:11px}
+#kalam-timeline-app-v3 .gnx-relation small {color:var(--ia-muted);flex:1 1 100%;font-size:10px}
+#kalam-timeline-app-v3 .gnx-result-list {display:grid;gap:4px;max-width:100%}
+#kalam-timeline-app-v3 .gnx-result {display:grid;gap:3px;text-align:left;padding:8px 9px!important;height:auto!important;min-height:51px;border:1px solid transparent!important;border-radius:6px!important;background:transparent!important;white-space:normal;min-width:0}
+#kalam-timeline-app-v3 .gnx-result:hover,#kalam-timeline-app-v3 .gnx-result.is-active {background:var(--ia-soft)!important;border-color:var(--ia-line)!important}
+#kalam-timeline-app-v3 .gnx-result strong {font-size:11px;font-weight:650;overflow-wrap:anywhere}
+#kalam-timeline-app-v3 .gnx-result span {font-size:10px;color:var(--ia-muted);overflow-wrap:anywhere}
+#kalam-timeline-app-v3 .gnx-pagination {display:flex;justify-content:space-between;align-items:center;gap:8px;margin:12px 0 3px;font-size:11px}
+#kalam-timeline-app-v3 .gnx-empty {padding:20px;background:var(--ia-panel);color:var(--ia-muted)}
+#kalam-timeline-app-v3 .gnx-geography h3,#kalam-timeline-app-v3 .gnx-coverage h3{margin:4px 0 9px}
+#kalam-timeline-app-v3 .gnx-place-buttons {display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+#kalam-timeline-app-v3 .gnx-place-buttons button {font-size:11px;border:1px solid var(--ia-line);border-radius:5px;background:var(--ia-panel);padding:5px 8px}
+#kalam-timeline-app-v3 .gnx-place-buttons button.is-active {background:var(--ia-active);color:var(--ia-onactive)}
+#kalam-timeline-app-v3 .gnx-metrics {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:13px 0}
+#kalam-timeline-app-v3 .gnx-metrics div {padding:13px;border:1px solid var(--ia-line);background:var(--ia-panel);border-radius:6px;display:grid;gap:3px}
+#kalam-timeline-app-v3 .gnx-metrics strong {font-size:19px}
+#kalam-timeline-app-v3 .gnx-metrics span {font-size:10px;color:var(--ia-muted)}
+#kalam-timeline-app-v3 .gnx-coverage table {width:100%;border-collapse:collapse;font-size:12px;background:var(--ia-panel)}
+#kalam-timeline-app-v3 .gnx-coverage th,#kalam-timeline-app-v3 .gnx-coverage td {padding:9px 7px;border-bottom:1px solid var(--ia-line);text-align:left}
+#kalam-timeline-app-v3 .gnx-coverage th {color:var(--ia-muted);font-size:11px}
+@media(max-width:900px){
+ #kalam-timeline-app-v3 .gnx-content {grid-template-columns:minmax(0,1fr)}
+ #kalam-timeline-app-v3 .gnx-results {border-left:0;border-top:1px solid var(--ia-line);padding:12px 14px}
+ #kalam-timeline-app-v3 .gnx-result-list {grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:580px) {
+ #kalam-timeline-app-v3 .gnx-header {padding:13px 12px;display:block}
+ #kalam-timeline-app-v3 .gnx-pulse {text-align:left;margin-top:7px}
+ #kalam-timeline-app-v3 .gnx-controls {padding:10px}
+ #kalam-timeline-app-v3 .gnx-control-row label {flex:1 1 135px}
+ #kalam-timeline-app-v3 .gnx-control-row label:first-child:has(input[type=search]) {flex-basis:100%}
+ #kalam-timeline-app-v3 .gnx-main {padding:12px 10px}
+ #kalam-timeline-app-v3 .gnx-result-list {grid-template-columns:1fr}
+ #kalam-timeline-app-v3 .gnx-relations {grid-template-columns:1fr}
+ #kalam-timeline-app-v3 .gnx-metrics {grid-template-columns:1fr 1fr}
+ #kalam-timeline-app-v3 .gnx-quick button {flex:1 1 120px}
+}
+@media(prefers-reduced-motion:reduce){#kalam-timeline-app-v3 .gnx-layout *{scroll-behavior:auto!important}}
