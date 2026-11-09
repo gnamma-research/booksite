@@ -166,7 +166,7 @@ def audit():
     assert combinedMD.count("## Note ")==140
     assert combinedMD.count("## Introduction note ")==82
     assert combinedMD.count("## Signification note ")==20
-    assert combinedMD.count("### Adjacent UNNUMBERED gloss")+combinedMD.count("### Separately attributed UNNUMBERED gloss")+combinedMD.count("### Separately quoted UNNUMBERED later addition")>=9
+    assert sum(line.startswith("### ") and "UNNUMBERED" in line for line in combinedMD.splitlines())==9
     assert len(combinedMD)>400000
     assert all(x in combinedMD for x in ("HWN-001","HWN-INTRO-001","HWN-DALALA-001","HWN-DALALA-020"))
     assert "## Note 141 —" not in combinedMD and "## Introduction note 83 —" not in combinedMD
