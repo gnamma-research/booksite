@@ -46,7 +46,7 @@
 
 ### CR010-005 · B2007 page 104 · revise
 
-**Source Arabic:** وكلّها صور اعتبارات الواحدية صورا معنويّة ظاهرة بالنسبة إلى الحقّ من كونها نسبة
+**Source Arabic:** وهذه كلّها صور اعتبارات الواحدية صورا معنويّة ظاهرة بالنسبة إلى الحقّ من كونها نسبة
 
 **Reviewed English:** All of these are intelligible forms of the considerations of oneness, apparent relative to the Real insofar as they are relations.
 
@@ -76,21 +76,21 @@
 
 ### CR010-008 · B2007 page 105 · annotate
 
-**Source Arabic:** ثم ابتدأ لكل واحد من مظاهر هذه الأئمّة السبعة الأسمائية والصفاتية ... دور سلطنة أخرى لتحقيق كمال الاستجلاء
+**Source Arabic:** ثم ابتدأ لكل واحد من مظاهر هذه الأئمّة السبعة الأسمائية والصفاتية
 
-**Reviewed English:** Then another cycle of governance begins for the manifestations of the seven principal names and attributes, to realize the perfection of self-vision.
+**Reviewed English:** Then for every manifestation of these seven leading names and attributes a further cycle began.
 
-**Editorial note:** Cosmic cyclic language is internal historical metaphysics, not modern astronomy.
+**Editorial note:** The authorial sentence continues at length to specify the cycle and its purpose; this excerpt deliberately stops at the uninterrupted opening clause.
 
 **Source grade:** derivative online authorial Arabic retranscription; [source](https://alshrefalm7sy.ahlamontada.com/t3214). No 1876 print or MS witness verified.
 
 ### CR010-009 · B2007 page 106 · annotate
 
-**Source Arabic:** فاقتضى التجلّي الثاني من حيث الاسم القائل ... إلى تخمير طينة آدم عليه السلام
+**Source Arabic:** فاقتضى التجلّي الثاني من حيث الاسم القائل
 
-**Reviewed English:** The second self-disclosure, considered through the name the Speaker, calls for the preparation of Adam's clay.
+**Reviewed English:** The second self-disclosure, under the aspect of the divine name the Speaker, accordingly required [the preparation of Adam's clay].
 
-**Editorial note:** Further internal evidence that al-Qāʾil rather than al-Qābil appears among seven governing names.
+**Editorial note:** The bounded Arabic span ends before the Adamic clay phrase later in the same sentence. The name al-Qāʾil here is *internal* corroboration for the p38 crux, not an independent manuscript variant.
 
 **Source grade:** derivative online authorial Arabic retranscription; [source](https://alshrefalm7sy.ahlamontada.com/t3214). No 1876 print or MS witness verified.
 
@@ -436,7 +436,7 @@
 
 ### CR010-044 · B2007 page 123 · annotate
 
-**Source Arabic:** فكان مزاج سائر الكمل والخلفاء وأولي العزم من الرسل والأقطاب من الأولياء المحمديين هو صورة البرزخية الثانية
+**Source Arabic:** ومزاج سائر الكمل والخلفاء وأولي العزم من الرسل والأقطاب من الأولياء المحمديين هو صورة البرزخية الثانية
 
 **Reviewed English:** The temperament of the other perfected vicegerents and resolute messengers, and Muhammadan poles, images the second intermediacy.
 
@@ -476,11 +476,10 @@
 
 ### CR010-048 · B2007 page 125 · retain
 
-**Source Arabic:** مالت إما إلى جانب إفراط أو طرف تفريط
+**Source Arabic:** انحرفت أخلاقها وأوصافها بالميل إمّا إلى جانب إفراط أو طرف تفريط
 
 **Reviewed English:** It inclines either to the extreme of excess or to the opposite of deficiency.
 
 **Editorial note:** A virtue-ethical balance model underlies spiritual pathology.
 
 **Source grade:** derivative online authorial Arabic retranscription; [source](https://alshrefalm7sy.ahlamontada.com/t3214). No 1876 print or MS witness verified.
-
