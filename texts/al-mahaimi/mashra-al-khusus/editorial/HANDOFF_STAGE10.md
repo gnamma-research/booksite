@@ -47,3 +47,7 @@ The corpus contains **278 entries**: 221 commentary sections, seven English Qūn
 - Independent Qūnawī corpus https://github.com/gnamma-research/booksite/blob/master/texts/sadr-al-din-al-qunawi/al-nusus/data/parallel.json
 
 **QA status:** Structural invariants were checked before committing the new HTML/JSON. Automated CI test and workflow have been committed, but a successful GitHub Actions run has not been independently observed. Live web deployment has also not been independently verified.
+
+## Post-handoff source-proof addition (same Stage 10)
+
+Qūnawī's **2008 appendix pp.237–238** have now also been transcribed and given complete fresh first-pass page-level English translations in `data/stage10-qunawi-pp237-238.md`, using the digital page-indexed transcription as source. These **two pages are not yet inserted into the main reader's structured corpus** and are not a photographic or manuscript collation. Thus: main reader appendix proofs remain pp.235, 236, 267; across the Stage10 project, page-specific transcription exists for pp.235–238 and 267, leaving pp.239–266 (28 pages) without such separate printed-page proofs. The previous statement that all 30 pages lack page-specific proof applies to the reader corpus only, not the new supplement.
