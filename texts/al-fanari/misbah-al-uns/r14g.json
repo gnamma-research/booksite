@@ -1,0 +1,162 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R14g",
+  "date": "2026-11-09",
+  "startSection": "4.776",
+  "endSection": "4.790",
+  "sourceRepo": "OpenITI/0850AH",
+  "sourceCommit": "e2715c62fb458ce3ddc43b962cd55677cdd7bc35",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.776",
+      "number": 776,
+      "pageStart": 496,
+      "pageEnd": 496,
+      "arabic": "وذلك لان هذا العلم من خصائص الخليفة الذي شرطه ان يكون على صورة مستخلفه، فحيث كانت الملائكة محصورين بحكم عالمهم ونشأتهم لم يهتدوا إلى ما خرج عنها، فاعترفوا بالعجز قائلين بلسان نشأتهم. سبحانك من أن يعلم أحد الا ما علمته، اما بالفطرة أو بالتعليم الكسبي، ومن أن يعارض حكمك وحكمتك، فلما بان عجزهم عاد إلى تكميلهم بوساطة أصلهم وكلهم فقال لادم: أنبئهم بأسماء المسميات الذين هم عين أسمائنا الذاتية والصفاتية والفعلية والحالية والمرتبية المفيضية والمفاضية، فلما أنبأهم آدم بذلك علموا وكلموا به من جهة كلهم وكمل كلهم بكمالهم كمالا آخر من جهة اجزائه.",
+      "english": "This knowledge is proper to the vicegerent, who must be in the image of the One who appoints him. Since the angels were confined by the ruling of their world and their constitution, they could not discover what lay beyond it. They therefore acknowledged their incapacity, saying in the language of their constitution: 'Glory be to You! None knows except what You teach,' whether through primordial disposition or acquired instruction, and no one can oppose Your command and wisdom. When their incapacity had become clear, He returned to perfecting them through their origin and the whole to which they belonged. He said to Adam: 'Tell them the names of the things named, which are the very entities of Our essential, attributive, active, state-related, and rank-related Names—both those that bestow and those that receive.' When Adam informed them, they knew and were addressed through their whole; the perfection of their whole added a further perfection in respect of its parts.",
+      "notes": "The opening modifies Qurʾān 2:32 by paraphrase. The enumerated Names are a technical hierarchy. The whole/part scheme is a particular metaphysical explanation, not a literal assertion of angelic sin.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.777",
+      "number": 777,
+      "pageStart": 496,
+      "pageEnd": 497,
+      "arabic": "وهذا دليل واضح على أن الملائكة لهم الزيادة والترقي، على خلاف ما زعمت الفلاسفة، ثم حقق قوله تعالى: انى اعلم ما لا تعلمون (30 - البقرة) بتكرار قوله تعالى: ألم أقل لكم انى اعلم غيب السماوات والأرض (33 - البقرة) من الأسماء السارية آثارها فيهما بالايجاد بحسب الانات، وهى التي تخلق وتحقق بها آدم عليه السلام، و (اعلم ما تبدون) من احكام وجودكم، و (ما تكتمون) (33 - البقرة) من احكام امكانكم، فعلمتها جميعا آدم وأودعتها في ظاهره وباطنه وقلبه وسره وسر سره بكمال قابليته وجمعه، فجعلته خليفتي في كمال معرفتي إياي وظهوري لنفسي بالكمال الذاتي والاسمائي جمعا وتفصيلا وتصرفي في ملكي وملكي، فانقادوا له وخضعوا خضوع الجزء للكل والفرع للأصل - ما عدا إبليس الذي لم يفهم ما قيل بحكم انحرافه وبعده عن قبول الحق -",
+      "english": "This plainly indicates that the angels can increase and ascend in degree, contrary to the contention of the philosophers. He then realised His saying, 'I know what you do not know' [Qurʾān 2:30], by repeating, 'Did I not tell you that I know the unseen of the heavens and the earth?' [Qurʾān 2:33]—that is, the Names whose effects pervade them in creation at successive instants, by which Adam was created and brought to his full reality. 'I know what you disclose' refers to the rulings of your existence, and 'what you conceal' to the rulings of your possibility [Qurʾān 2:33]. All of these I taught to Adam and deposited in his outward and inward aspects, his heart, his secret, and the secret of his secret, through the perfection of his receptivity and gathering. Thus I made him My vicegerent in the perfection of My knowing Myself and My manifestation to Myself through essential and Name-related perfection, in both comprehensive and differentiated respects, and in the exercise of governance in My dominion [mulk] and spiritual kingdom [malakūt]. The angels yielded to him and submitted as a part to its whole and a branch to its origin—apart from Iblīs, who, because of his deviation and remoteness from accepting the Real, did not understand what was said.",
+      "notes": "The latter first-person interpretation of God's speech is exegetical paraphrase by the cited author, not direct Qurʾānic quotation. Crucial outward/inward/heart/sirr/sirr al-sirr hierarchy.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.778",
+      "number": 778,
+      "pageStart": 497,
+      "pageEnd": 497,
+      "arabic": "فان نشأته نارية مقتضية لغاية الاستكبار ونهاية الترفع، فبين نشأتها ونشأة آدم التي في غاية التنزل والضعة بون بين، فلذلك لم يؤثر فيه الحكمة ونور الهداية فلم ينقد لادم، فاخرج عن دائرته وبعد عن الكمال إلى الخذلان، إذ لم يقتصر على عدم الانقياد حتى بدأ بوصف اللجاج والاحتجاج بحجج وهمية لايقة بنشأته فقال: نشأتي مع جمعها بين الروح والجسد أقدم وارفع والطف، ولا حكمة في خضوع الاعلى للأدنى، فأبعد بحجته ولجاجته في مقابلة الامر المطاع، وكان من الكافرين (34 - البقرة) أي الساترين الامر والمتلبسين الحال على الملائكة قبل ان يؤمروا بسجود آدم حتى وافقوه ورضوا بالاستبعاد، فان ملقى الشبهة بينهم والحامل لهم على ما قالوا كان إبليس، بدليل اعطاء نشأته ذلك دون نشأة الملائكة، لان أحدا لا يظهر شيئا الا بما فيه من ذلك بالقوة أو الفعل، وليس في نشأتهم ما يقتضى الفساد والسفك حتى ينبعث منهم اثر ذلك ويغلب عليه خلافه فينكر. أعاذنا الله من الجهل المبعد والحسبان المشتت، ونفعنا بالعلم والتقوى انه يسمع ويجيب، هذا كله مقتبس من كلام الفرغاني.",
+      "english": "His [Iblīs's] fiery constitution tends toward extreme pride and self-exaltation, whereas Adam's constitution occupies the lowest degree of descent and lowliness. A vast distance therefore separates them. Wisdom and the light of guidance did not act upon Iblīs, and he did not submit to Adam; he was cast outside Adam's circle and distanced from perfection into abandonment. He did not merely refuse to submit but began disputing stubbornly with illusory arguments suited to his constitution: 'My constitution, although it gathers spirit and body, is more ancient, higher, and subtler. There is no wisdom in the higher submitting to the lower.' His argument and obstinacy against the command demanding obedience drove him further away. He 'was among the unbelievers' [Qurʾān 2:34]—that is, those who conceal the command and obscure its meaning for the angels before they were ordered to prostrate before Adam, so that they agreed with him and accepted his objection. Iblīs was the one who introduced this doubt among them and prompted them to say what they said; this is evident, on this account, from the nature of his constitution rather than theirs. Nothing manifests an action except according to a power or actuality within it, and their [the angels'] constitution contains nothing that itself requires corruption and bloodshed, so as to produce that effect and make the opposing view prevail. May God protect us from ignorance that distances and suppositions that divide, and benefit us through knowledge and godfearingness: He hears and answers. All this is drawn from al-Farghānī's words.",
+      "notes": "Explicit source-boundary close «هذا كله مقتبس من كلام الفرغاني», not always verbatim; distinguish his argument from canonical doctrine about angels.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.779",
+      "number": 779,
+      "pageStart": 497,
+      "pageEnd": 498,
+      "arabic": "ثم نقول: فالامر الوجودي الإلهي التكويني المشار إليه في قوله تعالى: يدبر الامر من السماء إلى الأرض... الآية (5 - السجدة) وفي قوله تعالى: يتنزل الامر بينهن (12 - الطلاق) يتنزل في مراتب الاستيداع من حضرة حقيقة الحقائق، أي حضرة الوحدة الجامعة بين الأحدية والواحدية جمعا احديا وهى حضرة الجمع والوجود نزولا غيبيا لا حسيا، إذ لا احساس حيث لا تعدد من مرتبة وسطية قطعية مركزية لوحدتها الحقيقية المستوية النسبة إلى حدود القيود ونهايات اللا نهايات، كنسبة مركز الدائرة إلى محيطها بحركة غيبية معنوية استيداعية لا وجودية انتقالية، إذ لا وجود للغير، أسمائية، لوقوعها في التعينات النورية، ذاتية، إذ لا اتصاف بالتعينات الأسمائية الا للذوات.",
+      "english": "We now say: The divine existential creative Command, indicated in His saying, 'He governs the command from heaven to earth' [Qurʾān 32:5], and in 'The command descends among them' [Qurʾān 65:12], descends through the degrees of entrusted manifestation [marātib al-istīdāʿ] from the Presence of the Reality of realities, that is, the Presence of the Unity gathering Oneness and Unicity in a unity of gathering, the Presence of Gathering and Being. This descent is unseen, not sensory: sensation presupposes multiplicity, whereas this degree of real unity has no multiplicity. It proceeds from an intermediate, decisive, central degree, equally related to all the boundaries of restriction and all the ends of the unending, just as the centre of a circle relates to its circumference. Its motion is unseen, intelligible, and concerned with the entrusting of the command, not an existential passage from place to place, for no 'other' yet exists. It is a motion of the Names because it occurs among luminous determinations, and essential because only essences can bear the determinations of the Names.",
+      "notes": "Key: not locomotion or spatial procession, but non-spatial graded relation and entrusting. Distinguish «أحدية» and «واحدية» and the two apparently conflicting descriptions of motion, resolved next.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.780",
+      "number": 780,
+      "pageStart": 498,
+      "pageEnd": 498,
+      "arabic": "ولا يتوهم منافاة بين هذين الوصفين، لان نسبة الحركة إلى الأسماء باعتبار محلها المعنوي وهو الصفات والمراتب، ونسبتها إلى الذات باعتبار المتصف وصاحب المرتبة وهو التجلي الاحدى، وينكشف حق الانكشاف بتصور ما سلف مرارا ان الحق سبحانه حين الحكم عليه باحكام التعين إحدى غير متعين في نفسه، وذاته احاطية، لان جميع المراتب والاعتبارات والتعينات الأسمائية نسب ذاته الواحد الاحد، فيكون جامعا لها، إلى المرتبة الثانية الإلهية التي النفس الرحماني فيها منعوت بالعماء، لكن من حيث التفصيل، كما هي المرتبة الانسانية الكمالية من حيث الاجمال، والعماء قد ينعت به المرتبة وقد ينعت به النفس الرحماني من حيثها، والأول هو الموافق للفظ الحديث.",
+      "english": "Do not suppose that the two descriptions are incompatible. Motion is ascribed to the Names with regard to its intelligible locus—the attributes and degrees—while it is ascribed to the Essence with regard to the one qualified by them and possessing the degree, namely the unitary self-disclosure. This becomes fully clear if you grasp what has been repeatedly explained: the Real, exalted is He, when described under the rulings of determination, remains unitary and undetermined in Himself, while His Essence is all-encompassing. All degrees, considerations, and determinations of the Names are relations of His one, uniquely one Essence, which gathers them all. The descent reaches the second, divine degree, in which the Breath of the Merciful is qualified as the Cloud [al-ʿamāʾ], but considered in its differentiation, just as the perfected human degree bears its comprehensive aspect. Sometimes 'Cloud' qualifies the degree and sometimes the Breath of the Merciful insofar as it stands in that degree; the former conforms more closely to the wording of the report.",
+      "notes": "The claim is about different iʿtibārāt, not divine intrinsic change. Ambiguity whether ʿamāʾ names the rank or the Breath requires original hadith/source comparison.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.781",
+      "number": 781,
+      "pageStart": 498,
+      "pageEnd": 498,
+      "arabic": "ثم إلى مرتبة القلمية العقلية، وفيه جمع بين الاسمين في الاصطلاحين لمسمى واحد، ولم يذكر عالم التهيم هنا لعدم توسطه في نزول الامر، إذ ليس هو من عالم التدوين والتسطير، أو لأنه من حيث عدم الواسطة بينه وبين موجده يكون في المرتبة القلمية، وان حكم في التفسير بتقدمه باعتبار بساطة العلم فيهم، وهو العلم بموجدهم فقط.",
+      "english": "Next comes the intelligible degree of the Pen, where the two names used by the respective terminologies coincide in a single referent. The World of Bewildered or Enraptured Spirits [ʿālam al-tahayyum] is not mentioned, since it does not mediate in the command's descent and is not part of the world of writing and inscription. Alternatively, because no intermediary separates it from its Originator, it falls under the degree of the Pen—although the commentary on the Qurʾān assigned it priority in the respect that those spirits possess simple knowledge, knowledge solely of their Originator.",
+      "notes": "Two explanations offered explicitly by «أو». Avoid equating al-tahayyum with ordinary mental confusion.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.782",
+      "number": 782,
+      "pageStart": 498,
+      "pageEnd": 498,
+      "arabic": "ثم إلى مرتبة اللوحية النفسية لكونها تفصيل المرتبة القلمية.",
+      "english": "Then the command comes to the psychic degree of the Tablet, since the Tablet differentiates the degree of the Pen.",
+      "notes": "Ḥaḍra al-lawḥ as detail of al-qalam.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.783",
+      "number": 783,
+      "pageStart": 498,
+      "pageEnd": 498,
+      "arabic": "وهكذا ينزل بالحركة الغيبية إلى مرتبة الطبيعة ثم إلى الجسم الكل الظاهر في العرش ثم إلى الكرسي ثم إلى السماوات إلى العناصر إلى المولدات حتى يصل بالانسان.",
+      "english": "Thus the command descends through unseen motion to the degree of Nature, then the Universal Body manifested as the Throne, then the Footstool, then the heavens, the elements, and generated things, until it reaches the human being.",
+      "notes": "A concise formal sequence, not physical navigation. Contrast §§4.785–4.786.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.784",
+      "number": 784,
+      "pageStart": 498,
+      "pageEnd": 498,
+      "arabic": "فان قلت: كان العناصر في ترتيب الايجاد متقدمة على السماوات فكيف تأخرت في ترتيب نزول الامر عنها؟",
+      "english": "If you object: In the order of bringing into existence, the elements preceded the heavens. Why, then, do they follow the heavens in the order of the command's descent?",
+      "notes": "Critical objection distinguishing creation order from descent-of-command order.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.785",
+      "number": 785,
+      "pageStart": 498,
+      "pageEnd": 499,
+      "arabic": "قلنا: لان ترتيب نزول الامر بعد استواء الوجود واستقراره وكون اجزاء العالم مفروغا عنها، ليس بعينه ترتيب الايجاد، فقد قال تعالى: هو الذي خلق لكم ما في الأرض جميعا ثم استوى إلى السماء فسواهن سبع سماوات (29 - البقرة) وقال: ثم استوى إلى السماء وهى دخان... الآية (11 - فصلت) نعم قد دحو الأرض بعد تسوية السماوات كما قال تعالى: رفع سمكها فسواها... إلى أن قال: والأرض بعد ذلك دحاها (28 - 30 - النازعات) فالحاصل - والله أعلم - ان العناصر مرتوقة، ولو متمايزة متناضدة في العنصر الأعظم مقدمة على المادة المرتوقة للسموات، لان الثانية دخان مرتفع من الأولى، والسماوات مقدمة على الأرض في حال فتق الرتق وبعده في نزول الامر.",
+      "english": "We reply: The order of the command's descent, after existence has been established and become stable and the world's components are complete, is not identical to the order of their creation. God said: 'He is the One who created for you all that is on earth, then turned to heaven and fashioned them as seven heavens' [Qurʾān 2:29]; and: 'Then He turned to the heaven while it was smoke...' [Qurʾān 41:11]. It is true that He spread the earth after the heavens had been fashioned, as He said: 'He raised its height and fashioned it...' and thereafter: 'And the earth, after that, He spread out' [Qurʾān 79:28–30]. The conclusion, God knows best, is that the elements were joined together, though already differentiated and arranged in layers within the Greatest Element, before the joined-together matter of the heavens, since the latter was smoke rising from the former. The heavens nevertheless precede earth when their joined state is rent apart, and afterward in the descent of the command.",
+      "notes": "Critical temporal versus hierarchical sequencing. Do not silently harmonise this as present-day cosmology. Preserve all verse references.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.786",
+      "number": 786,
+      "pageStart": 499,
+      "pageEnd": 499,
+      "arabic": "ثم نقول: فإذا انتهى الامر إلى صورة الانسان انعطف من صورته لأهل الكمال في حال الحياة بالعروج التحليلي والانسلاخ عن انصياع المراتب الاستيداعية أو التطورات، إلى الحقيقة الكمالية المختصة به المسماة بحقيقة الحقائق، هكذا عروجا على عكس الدروج دائرة تامة كاملة دائم الحكم إلى حين انتهاء ما كتبه القلم من علم ربه في خلقه، ويقضى الله بعد ذلك وقبله ما شاء، ويحدث من شأنه ما يريد للكل بعد الموت إلى مراكز تعيناتها الأصلية ومباديها الأولية وهى الحقيقة الجامعة والحضرة العلمية، فان الخاتمة عين السابقة مطلقا.",
+      "english": "We further say: When the command reaches the human form, it turns back through that form in persons of perfection during their lives, through an analytic ascent [al-ʿurūj al-taḥlīlī] and the shedding of obedience to the degrees of entrustment or transformation. It ascends toward the particular reality of perfection proper to the human being, called the Reality of realities, reversing the degrees of descent to form a complete, perfected circle. The circle's ruling continues until everything written by the Pen from its Lord's knowledge concerning His creation reaches its end. Before and after that God judges as He wills and renews whatever affair He wishes. After death all return to the centres of their original determinations and their first principles: the comprehensive reality and the Presence of Knowledge. In every respect, the end is identical with the beginning.",
+      "notes": "Two forms of return are distinguished: living analytic ascent of realised people and general return after death. «الخاتمة عين السابقة» does not equate contingent created bodies with God's Essence.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.787",
+      "number": 787,
+      "pageStart": 499,
+      "pageEnd": 499,
+      "arabic": "وقد أشار الشيخ قدس سره في التفسير إلى النزول في مراتب الاستيداع المسمى معراج التركيب الأول وارتقاء الانحدار بقوله: لا يزال الانسان مباشرا في مراتب الاستيداع من حين افراز الإرادة له من عرصة العلم - باعتبار نسبة ظاهريته لا نسبة ثبوته - وتسليمها إياه إلى القدرة، ثم تعينه في القلم الاعلى ثم في المقام اللوحي ثم في مرتبة الطبيعة ثم في العرش ثم في الكرسي ثم في السماوات السبع ثم في العناصر ثم في المولدات الثلاث إلى حين استقراره بصفة صورة الجمع، مباشرة تابعة للمشيئة والعناية - التابعتين للمحبة الذاتية بالايجاب العلمي - فمهتم به ومتساهل في حقه، كما نبه على الامرين بقوله (ص) في جنازة سعد: اهتز عرش الرحمن لموت سعد بن معاذ. وقال في حق طائفة أخرى: لا يبالي الله بهم. فأين من يهتز لموته عرش الرحمن ممن لا يبالي الله بهم؟ فكما هو الامر اخرا، كذا هو أولا، لان الخاتمة عين السابقة. هذا لفظه.",
+      "english": "The Shaykh—may his secret be sanctified—indicated the descent through the degrees of entrustment, called the first ascent of composition [miʿrāj al-tarkīb al-awwal], and the ascent of descent in his commentary: 'The human being continues to pass through the degrees of entrustment from the moment Will brings him forth from the domain of Knowledge—considered through his relation of outward manifestation and not his relation of fixed subsistence—and hands him over to Power; then his determination in the Supreme Pen, the Tablet degree, Nature, Throne, Footstool, the seven heavens, the elements, and the three generated kingdoms, until he is established in the form of comprehensive gathering. This passage follows Will and divine Solicitude, which in turn follow essential Love by the necessity proper to Knowledge. Some are attended to with care, while others are neglected: the Prophet drew attention to both through his words at Saʿd's funeral, \"The Throne of the Merciful shook at the death of Saʿd ibn Muʿādh,\" and his words about another group, \"God does not care about them.\" How far apart is one at whose death the Throne shakes from one whom God does not heed! As it is at the end, so it is at the beginning, for the end is the beginning.' These are his words.",
+      "notes": "Quotation of a Shaykh's tafsīr, not independently authenticated hadith wording. Important outward versus fixed subsistence distinction and early/late circle. Verify which commentator and context.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.788",
+      "number": 788,
+      "pageStart": 499,
+      "pageEnd": 500,
+      "arabic": "وكما قال قدس سره أيضا: وكم بين من باشر الحق تسويته وجمع له بين يديه المقدستين ثم نفخ فيه بنفسه من روحه نفخا استلزم معرفة الأسماء كلها وسجود الملائكة واجلاسه على مرتبة النيابة عنه في الكون، وبين من خلقه بيده الواحدة أو بواسطة ما شاء والذي ينفخ الملك فيه الروح بالاذن؟ كما ورد عنه عليه وآله السلام أنه قال: يجمع الله أحدكم في بطن امه... الحديث؟ لذلك قرع (1) المستكبر المتأبي عن السجود ولعنه. وسيجئ توضح أقسام من لم يؤهل للسلوك من المتمكنين في أسفل سافلين ومن أهل له ولم يتم الدائرة ومن أتمها - إن شاء الله تعالى -",
+      "english": "He also said: 'What a difference there is between the one whom the Real personally fashioned, gathering both His holy hands for him and then breathing of His Spirit into him, a breathing that entailed knowledge of all the Names, the angels' prostration, and his elevation to the station of deputising for Him in the cosmos; and the one whom He created with one hand or through whatever intermediary He willed, into whom an angel breathes the spirit by permission—as is reported from the Prophet, peace be upon him and his family: \"God gathers each of you in the womb of his mother...\" and the rest of the report.' For this reason He rebuked and cursed the proud one who refused to prostrate. With God's permission there will follow a clarification of the kinds of people who are not made fit to journey, those fixed in the lowest of the low, those qualified who do not complete the circle, and those who complete it.",
+      "notes": "The voice switches from quoted statement to expositional statement around «لذلك»; verify quotation boundary. The imagery of divine hands must be explained through source's metaphysics, not bodily literalism.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.789",
+      "number": 789,
+      "pageStart": 500,
+      "pageEnd": 500,
+      "arabic": "واما معراج التحليل لأهل الكمال في اتمام الدائرة فأشار الشيخ قدس سره إلى طريقه مجملا في تفسير الصراط المستقيم، رأينا ان ننقله شفقة على المطالعين المطلعين. قال قدس سره: لا شك ان لك مستندا في وجودك وانه أشرف منك، لان له رتبة الفعل والغنى، فأشرف توجهاتك نحو مستندك من حيث الاحتظاء منه - ان تقصده بقلبك الذي هو أشرف ما فيك - لأنه المتبوع لجملتك بتوجه مطلق جملي لا من حيث نسبه أو اعتبار معين علمي أو شهودي أو اعتقادي بصورة جمع أو فرق بنفي أو إثبات، كالتنزيه والتشبيه أو غيرهما، ما عدا النسبة الواحدة التي لا يصح توجه بدونها - ولو في حق العارف المشاهد البالغ اقصى درجات المعرفة - وهى نسبة تعلقك به وتعلقه بك، أو قل: تعقلك له أو تعقله لك من حيث تعينه في علمك، إذ لا بد من اعتبار مبق للتعدد، والا فلا لسان ولا هداية.",
+      "english": "As for the analytic ascent of the perfected, by which the circle is completed, the Shaykh indicated its way concisely in his commentary on 'the straight path'. We have chosen to transmit it out of compassion for discerning readers. He said: 'There is no doubt that you have a source of support for your existence and that it is nobler than you, since it possesses the rank of agency and self-sufficiency. Your noblest orientation toward that which sustains you—so as to receive from it—is to direct your heart, the noblest part of you, toward it, since the heart is followed by your whole being, in an unrestricted comprehensive orientation. Do not orient yourself through a particular intellectual, contemplative, or doctrinal relation or consideration, whether through an image of gathering or differentiation, denial or affirmation, transcendence or similitude, or anything else, except for the one relation without which orientation is impossible—even for the knower who witnesses and has reached the farthest degrees of knowledge. This is the relation of your attachment to Him and His attachment to you; or, if you prefer, your apprehending Him or His apprehending you insofar as He is determined within your knowledge. Some consideration that preserves a distinction must remain; otherwise neither speech nor guidance is possible.'",
+      "notes": "Central to qualified nonduality: a relation survives as condition of orientation, even at highest witnessing. Beware assuming it is a second independent ontological reality.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.790",
+      "number": 790,
+      "pageStart": 500,
+      "pageEnd": 501,
+      "arabic": "ثم إن العارف قد يرى هذه النسبة بعين الحق لا من حيث نفسه وتعينه - فلا يقدح في تجريد التوحيد - وربما ذهل عنها لقوة سلطنة الشهود أو سطوة التجلي، لكنها باقية في نفس الامر، فاجمع همك وأخلص توجهك إليه من اصباع الظنون والعلوم والمشاهدات وقابل حضرته بالاعراض في باطنك عن تعقل سائر الاعتبارات الوجودية والمرتبة الإلهية والكونية - اعراض حر عن الانقهار بحكم شئ منها والتعشق به - ما عدا تلك النسبة المتعينة من حيث عينك لا من حيث عينه، فيكون متوجها إليه من حيث شرفه عليك وإحاطته بك - توجها هيولاني الوصف - وهو أكمل مراتب علمه بنفسه وأولها، دون حصر في قيد أو اطلاق أو جمع بينهما بقلب ظاهر قابل لأعظم التجليات لتنفى وحدة توجهك سائر متعلقات علمك وارادتك، فلا يتعين لك مراد الا هذا التوجه الكلى، وإذا تعين لك أمر الهى أو كوني كنت بحسبه من حيث هو - لا من حيث أنت - بحيث متى أعرضت عنه عدت إلى حالك الأول من الفراع التام بالصفة الهيولانية كما هو الحق سبحانه، لأنه من حيث ما عدا ما استدعته استعدادات الأعيان وتعين بحسبها، باق على طلبيته الغيبية الذاتية، منزه عن التقيد باسم ورسم، وسل ربك ان تتحقق بذلك لتكون على صورته وظاهرا بصورته، فالمح ما أشرت إليه تعرف غاية الغايات وكيفية المشي على الصراط المستقيم الخصوصي المتصل بأعلى رتب النهايات حيث منبع السعادات ومشرع الأسماء الإلهية والصفات. تم كلامه. الفصل الثاني من باب كشف السر الكلى هو المسمى وصلا وهو في تعين المظاهر الكلية للحقائق الأصلية والأسماء الالية وينجر إلى بيان ما بين نور الشمس ونور القمر وسائر الكواكب وإلى ما بين حركة الشمس وغيرها من حركات الكواكب من المناسبات المظهرية وفيه أصول:",
+      "english": "The knower may then behold this relation through the Real, rather than through himself and his own determination; this does not impair the purity of tawḥīd. At times the force of witnessing or the overwhelming power of self-disclosure may make him heedless of it, though it remains established in reality. Gather your aspiration, then, and purify your orientation toward Him from the colouring of conjectures, acquired knowledge, and witnessed forms. Face His Presence by turning inwardly away from the conceptual grasp of every other existential consideration and every divine or cosmic degree—turning away with the freedom of one who is not overpowered by, or attached in love to, the ruling of any of them—except that single relation determined from your side, not His. Thus you turn toward Him by reason of His superiority over you and His encompassing of you, with an orientation whose characteristic is pure receptivity [hayūlānī al-waṣf]. This is the most perfect and the first degree of your knowledge of Him with respect to yourself: it does not imprison the orientation within restriction, unrestrictedness, or a combination of both. Let the outward heart be ready to receive the greatest self-disclosures. The unity of your orientation will exclude other objects of your knowledge and will; your only aim will be this comprehensive orientation. When a divine or cosmic matter becomes determined for you, conform to it *as it is*, not insofar as it is yours, and when you turn away from it return to your original state of complete emptiness and pure receptivity. In the corresponding sense, the Real—apart from what the readiness of the fixed entities requires and determines—remains upon His own intrinsic unseen absoluteness, transcending delimitation by any name or mark. Ask your Lord to realise this in you so that you may stand in His image and manifest His image. Grasp my indication and you will know the ultimate end of ends and how to follow the particular straight path reaching the highest degrees of consummation, the source of felicities and the watering-place of the divine Names and attributes.' Thus far his words. **Second Chapter of the Section on Unveiling the Universal Mystery:** this is called a 'connection' [waṣl] and treats the determination of the universal loci of manifestation of the original realities and divine instrumental Names; it leads to an explanation of the manifestational correspondences between sunlight, moonlight and the lights of other planets, and between the Sun's movement and other planetary movements. It contains several principles.",
+      "notes": "This extended practical passage is a quotation, closed at «تم كلامه». Preserve «النسبة ... باقية في نفس الأمر», the single irreducible relation. Technical «هيولاني الوصف» means receptive/potential in analogy, not literal matter. The second-chapter heading must be rendered as a separately navigable title, not mistaken for a continuation of the devotional instruction.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    }
+  ]
+}
