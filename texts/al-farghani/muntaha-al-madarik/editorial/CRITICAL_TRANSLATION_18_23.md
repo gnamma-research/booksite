@@ -843,7 +843,7 @@ The lowest among them and the highest are alike with respect to this limit.
 
 **Editorial decision:** The sentence denies no distinction in actual spiritual rank; only the epistemic horizon.
 
-### CR002-031 · crux (unresolved text)
+### CR002-031 · photographed 1876 print connective correction (interpretation still open)
 
 **Arabic** (B2007)
 
@@ -853,7 +853,7 @@ The lowest among them and the highest are alike with respect to this limit.
 
 Yet in the eternal unseen Presence there may perhaps be, regarding these universals and particulars, hidden things and concealed states not yet determined either at the second rank or in the Preserved Tablet.
 
-**Editorial decision:** The modal 'perhaps' and specific rank of determined knowability must be preserved; cannot simply equate with Guénon's nonmanifestable possibilities.
+**Editorial decision:** I1876 printed p8, original-resolution scan12, reads سوى أنه ربما يكون, whereas B2007 printed p23 reads إلّا أنه ربما يكون. Prefer the historically printed connective سوى provisionally, while retaining Beirut's إلا in the apparatus; both express exception. Crucially the modal ربما and specific rank of determined knowability remain, and must not be equated with Guénon's nonmanifestable possibilities or recast as a temporal event in divine knowledge. No manuscript has been examined.
 
 ### CR002-032 · crux (unresolved text)
 
