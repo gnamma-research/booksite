@@ -7,6 +7,7 @@ Serve repo root:
 The test checks the actual Chromium DOM and source graph, not only templates.
 """
 import asyncio
+import json
 import os
 from pathlib import Path
 from playwright.async_api import async_playwright
@@ -14,6 +15,8 @@ from playwright.async_api import async_playwright
 ROOT=os.getenv("GN_ATLAS_URL","http://127.0.0.1:8123/research/intellectual-atlas/")
 OUT=Path("/tmp/gnamma-text-browse-qa")
 OUT.mkdir(parents=True,exist_ok=True)
+CANONICAL=json.loads((Path(__file__).resolve().parents[1]/"corpora"/"canonical-atlas.json").read_text())
+SHIFA_LINKS=sum(e["source"]=="avicenna_shifa" or e["target"]=="avicenna_shifa" for e in CANONICAL["edges"])
 
 def check(cond,message):
     if not cond:raise AssertionError(message)
@@ -48,10 +51,10 @@ async def main():
         a=await state(page)
         check(a["d"]["selected"]=="c:avicenna_shifa","Original focused work lost")
         check(a["graph"]==1 and a["rail"]==1,"Work rail and source graph do not coexist")
-        check(a["networkRecords"]==22,f"Expected all 22 direct relations, found {a['networkRecords']}")
-        check(a["graphNodes"]==23,"Source SVG did not draw all 22 neighbours plus selected work")
+        check(a["networkRecords"]==SHIFA_LINKS,f"Expected all {SHIFA_LINKS} directly recorded relations, found {a['networkRecords']}")
+        check(a["graphNodes"]==SHIFA_LINKS+1,"Source SVG did not draw all recorded neighbours and selected work")
         check(a["showMore"]==0,"Documented links are still hidden behind Show more")
-        check("all 22" in a["allLinksMessage"].lower(),"Graph does not confirm complete recorded links")
+        check(f"all {SHIFA_LINKS}" in a["allLinksMessage"].lower(),"Graph does not confirm complete recorded links")
         check(a["railActive"]=="c:avicenna_shifa","Rail selection does not reflect graph")
         check(a["viewButtons"]==2,"Local timeline/graph switch missing")
         check(a["overflow"]<=4,"Desktop text browser causes document overflow")
