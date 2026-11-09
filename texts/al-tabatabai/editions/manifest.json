@@ -6,38 +6,38 @@
       "book": "al-Manṭiq",
       "mode": "reading",
       "filename": "muzaffar-al-mantiq-reading-A4.pdf",
-      "bytes": 141530,
-      "sha256": "88ad97a08447f173c85025ebc3bf21166950a65167eae5728514caf46aa1cedf",
-      "source_sha256": "586d14c04faed301ad2e7d70ac41cc98e6efec63ccf2e988903f2dbe0cf8c166",
-      "arabic_sections": 25,
-      "english_sections": 25
+      "bytes": 161401,
+      "sha256": "618957d7c77ffa279a55c385038bdd9282ba6a7d91bf686153931dc5fd81a623",
+      "source_sha256": "780709711970768bf77d891316909bd6d2bf04873b84892fb2da4f10fb6f8566",
+      "arabic_sections": 29,
+      "english_sections": 29
     },
     {
       "book": "al-Manṭiq",
       "mode": "study",
       "filename": "muzaffar-al-mantiq-study-A4.pdf",
-      "bytes": 316991,
-      "sha256": "1746d2b4c44b7eaa16046eda6fe68c164bb7dd083632324077f70fd97dd5e6aa",
-      "source_sha256": "586d14c04faed301ad2e7d70ac41cc98e6efec63ccf2e988903f2dbe0cf8c166",
-      "arabic_sections": 25,
-      "english_sections": 25
+      "bytes": 373520,
+      "sha256": "9f94ff7c1d18c04e8b56e3e098b1df038d85883998bdb9e7d576794965e68c26",
+      "source_sha256": "780709711970768bf77d891316909bd6d2bf04873b84892fb2da4f10fb6f8566",
+      "arabic_sections": 29,
+      "english_sections": 29
     },
     {
       "book": "al-Manṭiq",
       "mode": "reference",
       "filename": "muzaffar-al-mantiq-reference-A4.pdf",
-      "bytes": 250773,
-      "sha256": "ad48c9435ba1b1b9e462bd54b4919250e95338a985d4d3034e9e83395dcd8f74",
-      "source_sha256": "586d14c04faed301ad2e7d70ac41cc98e6efec63ccf2e988903f2dbe0cf8c166",
-      "arabic_sections": 25,
-      "english_sections": 25
+      "bytes": 292459,
+      "sha256": "71f61e57f484d66edfd4605b667682f1e651d8720151164c400c41e0fedb3e37",
+      "source_sha256": "780709711970768bf77d891316909bd6d2bf04873b84892fb2da4f10fb6f8566",
+      "arabic_sections": 29,
+      "english_sections": 29
     },
     {
       "book": "Bidāyat al-Ḥikma",
       "mode": "reading",
       "filename": "bidayat-al-hikma-reading-A4.pdf",
       "bytes": 584573,
-      "sha256": "c15cc82598a7ea256a945b1f20c204f6bfe65a7de575627d415174d391a17942",
+      "sha256": "7335591e82c3faf8830c85c37018680edb1bc03c757e0b6ae96e2c0d1431d1c5",
       "source_sha256": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
       "arabic_sections": 111,
       "english_sections": 111
@@ -47,7 +47,7 @@
       "mode": "study",
       "filename": "bidayat-al-hikma-study-A4.pdf",
       "bytes": 1658757,
-      "sha256": "bcc485478328c9d1b030f53ab81ee494821010f15053fd0e4d117b6b9610ecfe",
+      "sha256": "fcd3711fc0e2bde8d5549e829ed7df204435d1ec49c997b248d5fdfaec648d3d",
       "source_sha256": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
       "arabic_sections": 111,
       "english_sections": 111
@@ -57,7 +57,7 @@
       "mode": "reference",
       "filename": "bidayat-al-hikma-reference-A4.pdf",
       "bytes": 1228520,
-      "sha256": "2a63c09b497c7836eee7e9b6eb236785876f25a62495b6ae06181d5188321a2c",
+      "sha256": "c8c52c5ec952ac68add72b95ec43fea7cee3a9f3eed88000c60703a4c769cae5",
       "source_sha256": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
       "arabic_sections": 111,
       "english_sections": 111
@@ -67,7 +67,7 @@
       "mode": "reading",
       "filename": "nihayat-al-hikma-reading-A4.pdf",
       "bytes": 956491,
-      "sha256": "43615de3b65e5bf54a19273b34454539e48d650d5ee3374a32a32fb497f5686c",
+      "sha256": "084fd051596a0d38be57b5bbeae306920545372b4a27012e4522d1708b588cd6",
       "source_sha256": "d8dfb38d9ef9ab692aecfb57bd2eab9db385f84709ee37b03b10017a6ec94141",
       "arabic_sections": 136,
       "english_sections": 136
@@ -77,7 +77,7 @@
       "mode": "study",
       "filename": "nihayat-al-hikma-study-A4.pdf",
       "bytes": 3731864,
-      "sha256": "536f13371bb63b3fbed093711ced694365313ea251371732d6b2be1094a71980",
+      "sha256": "a357c9701ee995c60e14b78020865629dfa75693e374d760ba00e5c448a2a5a7",
       "source_sha256": "d8dfb38d9ef9ab692aecfb57bd2eab9db385f84709ee37b03b10017a6ec94141",
       "arabic_sections": 136,
       "english_sections": 136
@@ -87,7 +87,7 @@
       "mode": "reference",
       "filename": "nihayat-al-hikma-reference-A4.pdf",
       "bytes": 2745490,
-      "sha256": "e64f2bc3f558004acc3cee8f2c638fe92accf7a0698ce1d55c216806b4b76e4a",
+      "sha256": "ca85531a03ec9ad8d44ed4f11e448fd0c80251e7176a4f5a586dc1b592d83bd7",
       "source_sha256": "d8dfb38d9ef9ab692aecfb57bd2eab9db385f84709ee37b03b10017a6ec94141",
       "arabic_sections": 136,
       "english_sections": 136
