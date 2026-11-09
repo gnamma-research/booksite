@@ -2,9 +2,9 @@
   "title": "Texts in Time · Islamic Intellectual Atlas",
   "revision": "tajrid-critical-links-8-2026-10-31",
   "status": "working research",
-  "ui_revision": "common-chronological-atlas-vertical-major-texts-2026-11-08",
-  "mobile_interface_note": "Every selected science displays the same GNAMMA chronological year-axis work atlas as philosophy/kalam, with source-qualified date markers, zoomable era groups, school lanes and a separately selectable vertical synopsis of principal texts. Undated manuscripts stay in unplaced visual maps; scholarly dependencies require individual bibliography evidence.",
-  "whole_range_note": "Drag the six-dot grip from Whole atlas to restore a movable focus window, or tap another time on the overview to seek.",
+  "ui_revision": "unified-hanafi-style-work-atlas-2026-11-09",
+  "mobile_interface_note": "All sciences now share one responsive search, source filter, map renderer and detail panel. Subject changes never switch to a separate map application. The Hanafi-inspired source-reception network records only audited relationships.",
+  "whole_range_note": "Use the shared year controls and zoomable era clusters; switch sciences without changing map interface.",
   "date_marker_note": "Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.",
   "entries": 404,
   "textual_relationships": 377,
@@ -23,15 +23,12 @@
     "separate source-text witness catalogue"
   ],
   "visual_modes": [
-    "chronological timeline",
-    "source-backed text network",
-    "work connections",
-    "catalogue",
-    "evidence/audit",
-    "source-attested disciplinary work maps",
-    "full citation-linked work map",
-    "common-year-axis disciplinary work timeline",
-    "vertical principal-texts synopsis"
+    "shared chronological work atlas",
+    "Hanafi-inspired source and reception network",
+    "vertical principal-texts synopsis",
+    "regional-label evidence index",
+    "source-linked catalogue",
+    "work evidence panel"
   ],
   "discipline_nav": [
     "mapped works",
@@ -58,18 +55,18 @@
     "license": "CC BY-NC-SA 4.0"
   },
   "bibliography_map": {
-    "mode": "common chronological CE axis with source-author-death markers, separate undated visual lanes, optional vertical principal-texts synopsis",
+    "mode": "single shared chronological renderer with source-date qualifications, undated source-record lanes, Hanafi-style bidirectional work-centred networks and optional principal-texts synopses",
     "openiti_primary_work_candidates": 1857,
     "alreq_source_linked_entries": 4157,
-    "graph_renderer": "corpora/discipline-atlas.js",
+    "graph_renderer": "atlas-unified.js",
     "graph_interactions": [
-      "shared year axis",
-      "zoom and pan to individual books",
-      "school and early jurist lanes",
-      "unplaced books in separate undated diagram",
-      "bibliography source panel",
-      "vertical principal texts",
-      "independently evidenced reception arrows"
+      "one shared year axis for all sciences",
+      "zoom and pan to era clusters",
+      "school and historical early-jurist lanes",
+      "unplaced works within same map",
+      "source-evidence work panel",
+      "Hanafi-style bidirectional network",
+      "curated-family and selective principal texts"
     ],
     "registered_early_historical_authorities": 16,
     "alreq_fiqh_by_school": {
@@ -101,7 +98,7 @@
       "corpora/manuscript-full.json"
     ]
   },
-  "textual_family_note": "The original philosophy/kalām calendar and its 404/377 researched graph remain intact; an optional vertical synopsis reuses those original canonical citations. Fiqh, usul, Hadith, Tafsir, Tasawwuf and Arabic-sciences source records now share the same chronological atlas grammar and optional vertical principal-texts map. No invented influences, legal-opinion arrows or unsupported manuscript dates.",
+  "textual_family_note": "The 404/377 audited dataset remains unchanged, externalized as canonical-atlas.json, and the earlier UI is preserved in legacy.html. All subjects share the same historical map and work-centred network shell. No inferred influence or unsupported manuscript dates.",
   "tahdhib_added_entries": 26,
   "avicennian_extension_entries": 11,
   "avicennian_new_textual_routes": 2,
