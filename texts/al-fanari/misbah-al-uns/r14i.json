@@ -1,0 +1,212 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R14i",
+  "date": "2026-11-09",
+  "startSection": "4.801",
+  "endSection": "4.820",
+  "sourceRepo": "OpenITI/0850AH",
+  "sourceCommit": "e2715c62fb458ce3ddc43b962cd55677cdd7bc35",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.801",
+      "number": 801,
+      "pageStart": 504,
+      "pageEnd": 505,
+      "arabic": "واما صورة نسبه المسماة بالأسماء الإلهية والصفات الربوبية: فالقلم الاعلى صورة صفة القدرة، لان له مدخلا في تعيين كل من بعده من عالم التسطير بإذن الخالق القدير وإجراء سنته عليه بدلالة حديث: اكتب ما كان وما سيكون إلى يوم القيامة، وعلى ما نفهم مما قال الشيخ قدس سره في التفسير وغيره في كتبهم: ان الكتابة كناية عن الايجاد، فالكاتب هو الحق، والقلم السبب العادي، والرق المنشور هو التجلي الساري، والكتاب المسطور نقوش الكائنات، والحروف هي الحقائق المتبوعة - إذا اعتبرت منفردة عن توابعها - فإذا اعتبرت معها فكلمات، فمن حيث استعدادها الأصلي لقبول الوجود اسم، ومن حيث قبولها ذلك اثر الطلب الاستعدادي فعل، وجملة منها دالة على كمال كاتبها - كإضافة الحياة أو العلم أو القدرة إليه - آية، وجملة من الآيات اعتبر اجتماعها في مرتبة كلية أو جزئية من المراتب الأسمائية أو الكونية سورة، وجملة من السور المعتبر احاطتها بجميع المراتب السابقة - لكن مندرجة في الرتبة الثانية والبرزخية المضافة إليها - كان كتابا مبينا، فمفصله العالم ومجمل صورته بالفعل آدم وجميع الخلفاء الكاملين وأولوا العزم من الرسل قبل بعث محمد صلى الله عليه وآله.",
+      "english": "As for the form of the relations of Being, called the divine Names and lordly attributes: the Supreme Pen is the image of the attribute of Power, because, by permission of the Creator and All-Powerful and by the customary order He established, it participates in determining everything that follows it in the world of inscription. This is indicated by the report, 'Write what has been and what will be until the Resurrection.' From what the Shaykh said in his commentary, and from the accounts of others, we understand 'writing' as a metaphor for bringing into existence. The Writer is the Real, the Pen is a customary cause, the outspread parchment is the pervading self-disclosure, and the inscribed book consists of the imprints of created beings. The letters are the realities that govern their dependants when considered apart from them; considered together with their dependants, they become words. Insofar as the realities possess an original readiness to receive Being, each is a Name; insofar as they actually receive it in answer to the demand of preparedness, each is an act. A set of them indicates the perfection of their Writer—such as His being characterised by life, knowledge, and power—and is a sign [āya]. Several signs taken together within a universal or particular degree of the divine Names or cosmos constitute a sūra. A collection of sūras whose encompassing of all preceding degrees is considered, while still included within the second degree and the isthmus ascribed to it, forms a Clear Book [kitāb mubīn]. Its differentiated detail is the world, while its comprehensive image in actuality is Adam, the perfected vicegerents, and the resolute messengers before the mission of Muḥammad, may God bless him and his family.",
+      "notes": "Major correspondence between cosmos, writing, Arabic grammar and revelation: ḥurūf/kalimāt/asmāʾ/afʿāl/āyāt/suwar/kitāb. Its 'Clear Book' differs from the specifically Muḥammadan Qurʾān of next section. The hadith of Pen requires authentication.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.802",
+      "number": 802,
+      "pageStart": 505,
+      "pageEnd": 505,
+      "arabic": "اما إذا أفاد ذلك الاجتماع المحيط أحدية جمع مضافة إلى حقيقة الحقائق داخلة فيها الرتبة الأولى والبرزخية الكبرى بحكم سرايتها في جميع المراتب بحيث لم يكن مشهودا الا لشاهد واحد ووارثه الحقيقي، كان ذلك قرآنا ومجمل صورته الا جمع صورة محمد صلى الله عليه وآله.",
+      "english": "But when that all-embracing gathering yields the Oneness of Gathering related to the Reality of realities, encompassing the first degree and the Greatest Isthmus by their pervasion of every degree, so that it is witnessed by only a single Witness and his true inheritor, it becomes a Qurʾān. Its comprehensive image—or rather the most comprehensive image of all—is the form of Muḥammad, may God bless him and his family.",
+      "notes": "The uniqueness of the Muḥammadan form is contextualised within the author's hierarchical ontology, not a statement about the Qurʾān as an ordinary created object.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.803",
+      "number": 803,
+      "pageStart": 505,
+      "pageEnd": 505,
+      "arabic": "فالكتاب كتابان: فعلى وقولي، فالفعلي هذا الكتاب المبين، وقد ذكروا لقولي هو الكتاب الحكيم، أي المحكم ببيان ذلك الكتاب الفعلي المختصر.",
+      "english": "Accordingly the Book is of two kinds, an enacted Book and a spoken Book. The enacted one is the Clear Book just described. As for the spoken one, they refer to it as the Wise Book [al-kitāb al-ḥakīm], that is, a book made firm through its explanation of the condensed enacted Book.",
+      "notes": "The witness «فعلى وقولي» may be a textual problem for «فعلي وقولي»; English reflects evident contrast but needs printed collation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.804",
+      "number": 804,
+      "pageStart": 505,
+      "pageEnd": 505,
+      "arabic": "واعلم أن ذلك الكتاب الحكيم متنوع حسب تنوع الحقائق المشتمل عليها البرزخية الثانية، فللتجلي الثاني من حيث كل واحد منها نزول وله في نزوله مظهر كلي ومن حيث مظهره ذلك دور سلطنة، وله أيضا عروج من نزوله وفي عروجه ذلك مظهر كلي جمعي انساني هو عين كل خليفة كامل ما عدا محمد صلى الله عليه وآله، وله فيه كتاب محكم ببيان كماله مبين له نقطة اعتداله في جميع أحواله وأحوال متابعيه وقومه وآله، كصحف الأنبياء غير نبينا محمد صلى الله عليه وآله.",
+      "english": "Know that this Wise Book varies according to the diversity of realities included within the Second Isthmus. The Second Self-Disclosure descends in respect of each reality and has at its descent a universal locus of manifestation; from that locus it possesses a period of sovereignty. It also has an ascent from its descent, and in that ascent a comprehensive, universal human locus of manifestation: each perfected vicegerent other than Muḥammad, may God bless him and his family. In each such locus it has a Book that firmly explains its perfection and discloses its point of equilibrium in all its states, and in the states of its followers, community, and family—as with the scriptures of the prophets other than our Prophet Muḥammad.",
+      "notes": "Distinguish prophetic scriptures from uniquely comprehensive Qurʾān. The 'period of sovereignty' has temporal-cosmic associations in earlier passages.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.805",
+      "number": 805,
+      "pageStart": 505,
+      "pageEnd": 506,
+      "arabic": "واما القرآن الحكيم فهو الجامع لاحكام تلك الحقائق والأسماء الكلية الأصلية وهى الأئمة السبعة أحدية جمع اعتدالي، النازل ذلك الكتاب على مظهر إحدى جمعي لتلك الأحدية الجمعية، وهو نبينا محمد صلى الله عليه وآله وهو القرآن المحكم ببيان أكمليته والمترجم عن حاق برزخيته واعتداله في جميع أقواله وافعاله وأحواله من صورته الاجمالية لنفسه والتفصلية لمتابعيه وقومه، وإليه الإشارة بقول عائشة: كان خلقه القرآن، إشارة عليم خبير مقتبسة من مشكاة ذلك البشير النذير.",
+      "english": "The Wise Qurʾān, by contrast, gathers the rulings of those original universal realities and Names—the seven leading Names—in a balanced Oneness of Gathering. This Book descended upon the locus of manifestation that gathers their oneness in a unitary fashion: our Prophet Muḥammad, may God bless him and his family. The Qurʾān gives a definitive account of his utmost perfection and expresses the innermost point of his isthmic comprehensiveness and equilibrium in every utterance, deed, and state, in his comprehensive image with respect to himself and its differentiated image with respect to his followers and community. This is indicated by ʿĀʾisha's saying, 'His character was the Qurʾān'—a sign from the All-Knowing and All-Aware, drawn from the lamp-niche of that bearer of glad tidings and warner.",
+      "notes": "Seven leading names (al-aʾimma al-sabʿa) are cosmic Names, not humans. Citation of the report on Prophet's character requires hadith documentation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.806",
+      "number": 806,
+      "pageStart": 506,
+      "pageEnd": 506,
+      "arabic": "فان قلت: إذا أريد بكتابة القلم توسطه في الايجاد، فما معنى قوله: اكتب ما كان، ولم يتقدم عليه كون في قول أو لم يتوسط المهيمة بحسب قول آخر؟",
+      "english": "If you object: If the Pen's writing means its mediation in bringing into existence, how can the command be 'Write what has been,' when no existent thing preceded it—according to one account—or when the enraptured spirits did not mediate, according to another?",
+      "notes": "Questions the tense of the Pen report and the status of the muhāyyamūn.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.807",
+      "number": 807,
+      "pageStart": 506,
+      "pageEnd": 506,
+      "arabic": "قلت: معناه - والله أعلم - ما في رواية أخرى وهو: اكتب علمي في خلقي ما هو كائن إلى يوم القيام، فالمراد بما كان ما في الحضرة العلمية مما سيشم رائحة الوجود، فعطف وما سيكون اما من قبيل: أعجبني زيد وكرمه (1)، أو من قبيل: إلى الملك القرم وابن الهمام.",
+      "english": "I reply: Its meaning, God knows best, is as in another report: 'Write My knowledge concerning My creation, what will occur until the Day of Resurrection.' Thus 'what has been' means what is already present in the Presence of Knowledge and will yet smell the fragrance of existence. The addition 'and what will be' is either like the expression, 'Zayd and his generosity pleased me,' or like the wording, 'To the noble king and the son of the valiant man.'",
+      "notes": "The two Arabic rhetorical examples mark possible constructions of ʿaṭf; source notes (1) and report variants need verification. Preserve the metaphor 'smell existence'.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.808",
+      "number": 808,
+      "pageStart": 506,
+      "pageEnd": 506,
+      "arabic": "هذا بيان كون القلم صورة النسب الأسمائية، واما كونه مظهرا للاسم المدبر، فذلك كما مر من وجهه الثاني الناظر إلى تفصيل ما يأخذه مجملا إلى اللوح المحفوظ، فان التدبير اجماله التأثير بحيث يفيض منه تفصيله، وقد مر أيضا انه بهذا الوجه هو المراد بنفس محمد صلى الله عليه وآله في قوله: والذي نفس محمد بيده، كما أنه بالوجه الأول - وهو الوجه الاخذ عن الحق تعالى بلا واسطة - عقله عليه وآله السلام، وبالوجه الثالث - وهو وجه كونه منسوبا إلى مظهرية التجلي الأول في نفسه - هو حقيقة الروح الأعظم المحمدي.",
+      "english": "This explains how the Pen is a form of the relations of the Names. As for its being a manifestation of the Name al-Mudabbir (the Governor), this comes from its second aspect, which looks to the detailed disclosure in the Preserved Tablet of what the Pen receives comprehensively. Governance is, in its comprehensive form, an efficacy from which its detailed form flows. It was also explained that in this aspect the Pen is what is meant by the soul of Muḥammad, may God bless him and his family, in the expression 'By Him in whose hand is Muḥammad's soul'; in its first aspect—receiving immediately from the Real—it is his intellect; and in its third aspect—its relation to the manifestation of the First Self-Disclosure in itself—it is the reality of the Supreme Muḥammadan Spirit.",
+      "notes": "Three aspects of Pen must be kept distinct: prophetic intellect, soul and Supreme Spirit in differing relations.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.809",
+      "number": 809,
+      "pageStart": 506,
+      "pageEnd": 506,
+      "arabic": "ويناسبه ما ذكره في قوله تعالى: يدبر الامر من السماء إلى الأرض - ان معناه: يدبر الامر باظهاره في اللوح فينزل به الملك - ثم يعرج إليه في يوم كان مقداره الف سنة مما تعدون (5 - السجدة) أي في زمان متطاول، إذ الزمان المذكور مدة كلا النزول والعروج على ما قيل: بين السماء والأرض مسيرة خمس مائة عام، أو المراد يوم القيامة كما قال تعالى: وان يوما عند ربك كالف سنة مما تعدون (47 - الحج) فالتدبير إلى آخر الدنيا والمراد بالعروج إليه العرض عليه، أو معناه: يدبر المأمور به من السماء بالوحي ثم لا يعرج إليه كما يرتضيه الا في مدة متطاولة لقلة المخلص والعمل الخالص.",
+      "english": "This accords with what he said regarding the verse, 'He governs the command from heaven to earth': it means that He governs the command by making it manifest in the Tablet; then the angel descends with it, 'then it ascends to Him in a day whose measure is a thousand years of what you count' [Qurʾān 32:5]—that is, over a long duration. The specified duration covers both descent and ascent, as it has been said that the distance between heaven and earth is a journey of five hundred years. Alternatively the day means the Day of Resurrection, as God says, 'A day with your Lord is like a thousand years of what you count' [Qurʾān 22:47]. Governance in that case extends to the end of the world, and ascent means the presentation of the matter before Him. Or the meaning may be that He governs what is commanded by revelation from heaven, but what is truly pleasing to Him does not ascend until a long time has elapsed, because people of sincerity and sincere deeds are few.",
+      "notes": "The source presents multiple alternatives for the 'thousand years'; do not select one as the sole tafsīr. Distinguish physical-distance analogy from eschatological/ethical readings.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.810",
+      "number": 810,
+      "pageStart": 506,
+      "pageEnd": 507,
+      "arabic": "ثم نقول: واللوح المحفوظ مظهر الاسم المفصل، لأنه النفس الكل وكل نفس تحته رشح منه وشعاع من أشعته، فله تفصيل، كالتدبير برقائق تلك الجزئيات، فالعالم مملو بتفاصيل تدبيرها، اما بصورته الكلية: وهى نفوس الكمل غير نبينا محمد صلى الله عليه وآله، فان نفسه الشريفة وجه تفصيل القلم كما مر، واما بصورته الجزئية: كسائر النفوس المدبرة للجزئيات، إذ شأنه ان يكمل الكلى بصفة كليته والجزئي بصفة جزئيته، ومظهريته هذه كما مر انما هي باعتبار الوجه الرابع من وجوه الستة السالفة التي انتشأت منه الجهات الست للعالم - وسابعها جمعها (1) - وهو وجه تنزله وظهوره بصور الموجودات المفصلة المثالية والحسية إلى انهى دركات الجزئية لتحقيق كمال الجلاء والاستجلاء، وبهذا الاعتبار هو الكتاب المبين الفعلي السالف آنفا، المراد بقوله تعالى: ولا رطب ولا يابس الا في كتاب مبين (59 - الانعام) وتلك آيات القرآن وكتاب مبين (1 - النمل)",
+      "english": "We further say: The Preserved Tablet is the locus of manifestation of the Name al-Mufaṣṣil (the One who Differentiates), because it is the Universal Soul, and every soul beneath it is an overflow or ray from it. It therefore bears differentiation, like governance through the subtle connecting threads of those particulars: the world is filled with the detailed dispositions it governs. Its universal image is the souls of the perfected ones other than our Prophet Muḥammad, may God bless him and his family, since his noble soul corresponds to the Pen's aspect of differentiation, as explained. Its particular image consists of other souls governing particular things. Its nature is to perfect the universal as universal and the particular as particular. This manifestation pertains to the fourth of the six aspects discussed earlier, from which the six directions of the world arose—while the seventh gathers them—the aspect of the Tablet's descent and manifestation in the differentiated imaginal and sensory forms of existents down to the lowest degrees of particularity, realising the perfection of disclosure and self-disclosure-to-itself. In that respect it is the enacted Clear Book mentioned above, intended in the verse, 'Not a moist thing or a dry one but it is in a Clear Book' [Qurʾān 6:59], and in the description 'These are the signs of the Qurʾān and a Clear Book' [Qurʾān 27:1].",
+      "notes": "The quoted Qurʾānic passages are partial. Clear Book as an enacted cosmic book is the author's reading; distinguish from Qurʾānic meanings commonly given by other exegetes.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.811",
+      "number": 811,
+      "pageStart": 507,
+      "pageEnd": 507,
+      "arabic": "ثم نقول: وحقائق الطبيعة التي هي الحقيقة الحاكمة بالكيفيات الأربع لها اعتباران:",
+      "english": "We further say: The realities of Nature, which is the reality governing the four qualities, admit two considerations.",
+      "notes": "Introduction to two modes of the ontology of Nature.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.812",
+      "number": 812,
+      "pageStart": 507,
+      "pageEnd": 507,
+      "arabic": "الأول اعتبار انها اثار توجهات الأرواح العالية بموجب احكام السوابق من الأئمة الأربعة التي هي الحياة والعلم والإرادة والقدرة كما مر، وهى بهذا الاعتبار مجتمع الأرواح المتمثلة بالصور المثالية ومحل لتعين عالم المثال بموجب تلك التوجهات التي من ثمراتها عمار السماوات من الملائكة من حيث أرواحهم - لا من حيث مظاهرهم -",
+      "english": "First, they may be considered as effects of the orientations of the higher spirits, in accordance with the preceding rulings of the four leading Names: Life, Knowledge, Will, and Power. In this consideration Nature is the gathering-place of spirits represented in imaginal forms, and the locus where the World of Images becomes determined through those orientations. One fruit of these orientations is the population of the heavens with angels considered as spirits, not as their particular loci of manifestation.",
+      "notes": "First of two considerations: higher spiritual causes and imaginal manifestation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.813",
+      "number": 813,
+      "pageStart": 507,
+      "pageEnd": 508,
+      "arabic": "الثاني اعتبار ارتباطها بالاجسام من حيث توجهات الأرواح بمظاهرها المتعينة في عالم المثال والمنصبغة بحكمه والمثمرة في مرتبة الجسم الكل عالم الأجسام الحسية البسيطة كالعرش، فللطبيعة هنا درجة اللانوثة، ومرتبة المحلية انما هي للجسم الكل، وفيما (2) مر للطبيعة درجة المحلية ودرجة الأنوثة (3) للنفس الكلية، والثمرة عالم المثال، وهى (4) بهذا الاعتبار إذ أنسبناها إلى الهباء المسمى بالهيولي الكل الذي جاورها في الحضرة العلمية، لأنه (1) محل الكيفيات، مظاهر حقائق حضرة الألوهة وهى الأئمة الأربعة الجامعة التي تستند إليها تأثيرات الأسماء الإلهية في الأعيان الكونية، وإذا نسبناها إلى فتح حضرة الامكان الجامعة لقابليات ماهيات الأعيان لاستناد الآثار الحاصلة في الأجسام إلى هذه الكيفيات صورة - وان استندت إلى الأسماء الظاهرة فيها حقيقة - ومطلق الصورة الجسمية المتعينة بالعرش، أول المظاهر الشهادية للعماء الذي هو النفس الرحماني المتوقف ظهوره على اجتماع الحقائق الأسمائية الأصلية، وذلك بتوجه بعضها إلى بعض - لسر الامر الجامع بينهما - وهو التجلي الاحدى المتوجه وبسر حال اقتضائه الاحدى في ذاته التي لا يتعدد الا بحسب متعلقاته، وذلك الاقتضاء هو المكنى عنه بالحركة الغيبية الإرادية الذاتية الحبية.",
+      "english": "Second, Nature may be considered in its connection to bodies, insofar as the spirits orient themselves through their determinate imaginal loci, become coloured by their rulings, and bear fruit in the degree of the Universal Body—the realm of simple sensory bodies, such as the Throne. Here Nature has the degree of femininity, while the rank of the receptive locus belongs to the Universal Body. In the earlier consideration Nature had the degree of the receptive locus, while the Universal Soul had the feminine degree, with the World of Images as the fruit. In the present consideration, when Nature is related to primordial dust, called universal hylē [al-hayūlā al-kull], which accompanies it in the Presence of Knowledge, that dust is the locus of the qualities and the manifestation of the realities of the Presence of Divinity—the four comprehensive leaders upon whom the influences of the divine Names in cosmic fixed entities depend. When Nature is related to the opening of the Presence of Possibility, which gathers the receptivities of the quiddities of the fixed entities, the effects that occur in bodies depend formally upon those qualities, although in reality they depend upon the Names manifested within the qualities. Unrestricted corporeal form, determined in the Throne, is the first sensory manifestation of the Cloud [al-ʿamāʾ], the Breath of the Merciful. Its manifestation depends upon the gathering of the original realities of the Names, through their reciprocal orientations under the mystery of the command that unites them, which is the unitary self-disclosure that turns toward them. The mystery of its own unitary demand increases in multiplicity only according to its objects; this demand is referred to metaphorically as the unseen, voluntary, essential, loving motion.",
+      "notes": "Difficult witness, especially «فتح حضرة الإمكان», «فيما مر للطبيعة درجة المحلية» and shifting grammatical subjects. The two analyses must not be merged: Nature as receptive imaginal locus vs Nature as feminine in relation to Universal Body. Verify the text independently before treating this as critical.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.814",
+      "number": 814,
+      "pageStart": 508,
+      "pageEnd": 508,
+      "arabic": "ولسريان (2) لطافة الأحدية الكاملة من التجلي واقتضائه بلا انصياع بحكم واسطة غالب الكثرة والتركيب، ظهر ذاته احديا اطلس لا انقسام فيه بالفعل وشكله دوريا، لأنه ابسط الاشكال وصورته من اللطافة بحيث لا يقبل الخرق والالتيام، ومن الاعتدال بحيث يستحق الدوام، وصار (3) مجموع المظاهر الروحانية لأمهات صفات الألوهة التي هي أصول أركان العماء، ومظهر الحياة إسرافيل ومظهر العلم جبرائيل ومظهر الإرادة ميكائيل ومظهر القدرة عزرائيل كما مر حاملة لها اليوم وموكلة لظهور احكامها.",
+      "english": "Because the subtle perfection of Aḥadiyya pervades the self-disclosure and its demand without yielding to an intermediary in which multiplicity and composition predominate, its body appears as a unitary, undifferentiated sphere [aṭlas] without actual division; its shape is circular because this is the simplest of forms. Its form is so subtle that it admits neither rupture nor reunion, and so balanced that it deserves permanence. The spiritual loci of the motherly attributes of Divinity—the sources of the Cloud's elements—were gathered to bear and oversee the manifestation of their rulings: the manifestation of Life is Isrāfīl, of Knowledge Jibrīl, of Will Mīkāʾīl, and of Power ʿAzrāʾīl, as explained above.",
+      "notes": "The Four Angels-to-Four-Names mapping belongs to historical cosmology and esoteric exegesis, not a universally accepted doctrinal enumeration.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.815",
+      "number": 815,
+      "pageStart": 508,
+      "pageEnd": 509,
+      "arabic": "ويفهم منه ان كلا من حقائق الطبيعة وكيفياتها مؤثرة، لا كما زعمت الفلاسفة ان المؤثرة هي الحرارة والبرودة فقط، اما الرطوبة واليبوسة فمتأثرتان (4)، وذلك لأنهما مظهر ان للإرادة والقدرة، وهما بحيث لا يتعين صفة القول والكلام الذي به التأثير الا بمقارعتهما - كما علم - لكن قد سبق وجه ذلك - في الجملة ان غلبة حكم الوحدة والاجمال على الحياة والعلم وغلبة اثر الكثرة والتفصيل على الإرادة والقدرة - لتوقف تعينهما على التميز - كان الفعل منسوبا إلى مظهري الأولين من أركان الهباء، وجعل الانفعال منسوبا إلى مظهري القدرة والإرادة منها - وان لم ينفصل كل عن كل في الطبيعة التي هي نتيجة امتزاجها -",
+      "english": "It follows that each of Nature's realities and qualities is efficacious. This differs from the philosophers' contention that only heat and cold act, whereas moisture and dryness are passive. The reason is that moisture and dryness manifest Will and Power, and they have such a character that Speech and the Word, by which efficacy occurs, cannot be determined except through their encounter. Yet the reason for the other classification has been explained in general: because unity and comprehensiveness predominate in Life and Knowledge, while multiplicity and differentiation predominate in Will and Power, whose determination depends on distinction, action has been ascribed to the manifestations of the first two among the pillars of primordial dust and passivity to the manifestations of Power and Will—although none of these is separated from the others in Nature, which results from their intermixture.",
+      "notes": "The apparent causal/passive reversal is explained by two standpoints: quality-level efficacy versus differential attribution to divine Names. Preserve the author's explicit 'although not separated'.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.816",
+      "number": 816,
+      "pageStart": 509,
+      "pageEnd": 509,
+      "arabic": "ثم نقول: ولما كانت المظهرية تارة بالواسطة واخرى لا بها، جاز ان يعتبر الأجسام مظاهر للأرواح والأسماء، لكن الأسماء إذا نسبت إلى مظاهر الأرواح يسمى اسرارها، لذا قلنا: روح العرش القلم الاعلى، لأنه مظهر القلم بتأثيره العام كما مر، ولوازمه من الإحاطة حسب الاقتضاء، ومن الوحدة والوجوب بالغير والدوام، وسر روح العرش الاسم الرحمن المستوى عليه بمعانيه السابقة، وذلك لأنه اسم الحق تعالى باعتبار الوجود العام المفاض منه وهو المراد بقول الشيخ قدس سره: انه اسم لصورة الوجود الإلهي من حيث ظهوره لنفسه، وهو الرحمة العامة المحيطة التي لا يفوتها موجود، ونسبته إلى العرش وروحه بمظهريته من حيث الإحاطة بالتأثير وغير ذلك مما عددنا، لا من حيث نسبة الوجود إليه فقط.",
+      "english": "We further say: Since a thing can be a locus of manifestation sometimes through an intermediary and sometimes without one, bodies may be considered manifestations of spirits and Names. But when Names are considered in relation to the manifestations of spirits, they are called their secrets [asrār]. Hence we said that the spirit of the Throne is the Supreme Pen, since the Throne manifests the Pen through its universal efficacy and, as explained, through its necessary consequences: all-encompassing scope, unity, necessity through another, and permanence. The secret of the Throne's spirit is the Name al-Raḥmān, the Merciful, established upon it in the senses given earlier. This is because al-Raḥmān is a divine Name considered in relation to the universal Being bestowed by Him. This is intended by the Shaykh's saying that it is the Name of the form of Divine Being insofar as He manifests to Himself: the all-embracing mercy from which no existent is excluded. Its relation to the Throne and its spirit is a manifestation through universal efficacy and the other respects enumerated, not merely through the ascription of existence to it.",
+      "notes": "Three-tier: Throne physical image, Pen spirit, al-Raḥmān secret of spirit. Crucial universal mercy, not equivalent to all individual moral states.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.817",
+      "number": 817,
+      "pageStart": 509,
+      "pageEnd": 509,
+      "arabic": "ثم نقول: وروح الكرسي الكريم النفس الكلية المسماة باللوح، لان تعلق النفس انما هو بالتدبير التفصيلي، وذلك لا يتصور الا لماله تفصيل وكثرة من الأجسام، كالكرسي المشتمل بكواكبه التي لا تحصى جزئياتها والف ومائة واحد وعشرون كلياتها المرصودة على مظهريات الأسماء بحسبها والمشتمل ببروجه، ان اعتبرت أجناس صورها المتوهمة فيه على مظهريات الكلمتين، المعتبرة كل منهما في الخبر والاحكام الخمسة التكليفية.",
+      "english": "We further say: The spirit of the Noble Footstool [al-kursī al-karīm] is the Universal Soul, called the Tablet. For the soul's attachment is to detailed governance, which is conceivable only for bodies bearing multiplicity and differentiation, as with the Footstool, with its uncountable individual planets and its one thousand one hundred and twenty-one observed universals, arranged as loci for the Names according to their qualities. It also includes the zodiacal signs, when their generic forms imagined within it are considered as manifestations of the two words, each being considered in relation to report and the five prescriptive legal rulings.",
+      "notes": "Source's count «ألف ومائة واحد وعشرون» is 1121 in the electronic text and is not verified historically; compare astronomical catalogues and print. «الكلمتين» refers to two words from earlier division, which should be checked rather than freely harmonised.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.818",
+      "number": 818,
+      "pageStart": 509,
+      "pageEnd": 510,
+      "arabic": "فان قلت: قد مر ان البروج تعتبر في العرش أيضا، اما باعتبار ان رتبة الأجسام البسيطة ثالثة نتائج النكاحات الخمسة: نكاح الأسماء ونكاح الحقائق ونكاح الأرواح، واما باعتبار ان العرش أول مظهر لمجموع العوالم الثلاث التي هي عالم المعاني وعالم الأرواح وعالم المثال، إذ عند اعتبار التثليث في حقائق الطبيعة الأربعة يتعين اثنى عشر قسما في العرش، فهلا صح لذلك الاعتبار ان يكون العرش مظهرا للنفس (1)؟",
+      "english": "If you object: The zodiacal signs were also considered in the Throne, either because the rank of simple bodies is the third outcome of five conjunctions—those of Names, realities, and spirits—or because the Throne is the first manifestation of the gathering of the three worlds of meanings, spirits, and images. When threefold differentiation is considered in the four realities of Nature, twelve divisions become determined in the Throne. Why, then, could the Throne not, in that respect, also manifest the Soul?",
+      "notes": "The enumeration is compressed: source states 'third of five marriages' and names only three types here. The distinction between Throne's conceptual divisions and Footstool's actualised divisions is next.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.819",
+      "number": 819,
+      "pageStart": 510,
+      "pageEnd": 510,
+      "arabic": "قلت: لأنها كثرة (2) اعتبارية وهذه كثرة محققة الصور، فشتان ما بينهما، وسر روح الكرسي الاسم الرحيم لاشعاره بخصوصية الوجود في كل موجود، فالمعتبر فيه جهة تفصيل الرحمة وكثرتها - كما في الكرسي -",
+      "english": "I reply: The Throne's multiplicity is one of consideration, while the Footstool's is a multiplicity of actually determined forms: the difference between them is great. The secret of the Footstool's spirit is the Name al-Raḥīm, which indicates the particularity of Being in each existent; what matters here is the differentiation and multiplicity of mercy, as in the Footstool.",
+      "notes": "Contrast «كثرة اعتبارية» and «كثرة محققة الصور», and Rahmān universal vs Rahīm particular mercy.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.820",
+      "number": 820,
+      "pageStart": 510,
+      "pageEnd": 510,
+      "arabic": "واعلم أن الرحمن الرحيم كما يعتبر ان اجمالا وتفصيلا - أعني عموما وخصوصا - في ذات الوجود، يعتبر ان في الصفات والكمالات، لهذا حمل الشيخ قدس سره ما في البسملة على الأول وما في الفاتحة على الثاني ليتحقق الإفادة ويمحق الإعادة ويستوفى وجوه الإرادة، وهيهنا أيضا يمكن حملها على الاعتبارين، لكن الأول أولي كما أخبرنا لأنه أشار الشيخ قدس سره هيهنا.",
+      "english": "Know that al-Raḥmān and al-Raḥīm, just as they may be considered comprehensively and in differentiation—that is, universally and particularly—with respect to Being itself, may also be considered in this way with respect to attributes and perfections. This is why the Shaykh, may his secret be sanctified, interpreted the two Names in the basmala in the first respect and in al-Fātiḥa in the second, so as to convey a new meaning rather than repeat one, and to encompass the intended significations. Here also both interpretations are possible, though the first is preferable, as explained, because it is what the Shaykh has indicated here.",
+      "notes": "Relational, interpretive distinction; compare exact Shaykh's Fātiḥa commentary before final editing.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    }
+  ]
+}
