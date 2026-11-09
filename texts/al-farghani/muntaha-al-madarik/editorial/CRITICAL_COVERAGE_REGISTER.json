@@ -12,8 +12,8 @@
   "authorial_introduction_english_draft_complete": true,
   "authorial_introduction_arabic_critical_edition_complete": false,
   "definitive_grade": false,
-  "source_witness_grade": "283 B2007 edited modern digitized selected checks on pp18–60 (43 page labels); 185 DERIVATIVE modern-forum transcribed selected checks on pp61–101 (41 page labels). No full-page bilingual proof. Historical I1876 photographic comparisons remain only ten bounded loci. No manuscripts collated.",
-  "next_critical_audit_page": 102,
+  "source_witness_grade": "All 128 B2007 printed page labels have only selected reviewed source spans: 283 direct modern edited-digitized spans pp18–60; 276 DERIVATIVE retyped modern Arabic spans pp61–145. ZERO full original Arabic pages independently line collated; only 10 inherited bounded I1876 photographic print comparisons; zero manuscripts.",
+  "next_critical_audit_page": 61,
   "next_translation_outside_intro": "B2007 p146 poem commentary (must confirm division against scan)",
   "pages": [
     {
@@ -1694,8 +1694,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 103,
@@ -1709,8 +1715,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 104,
@@ -1724,8 +1736,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 105,
@@ -1739,8 +1757,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 106,
@@ -1754,8 +1778,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 107,
@@ -1769,8 +1799,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 108,
@@ -1784,8 +1820,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 109,
@@ -1799,8 +1841,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 110,
@@ -1814,8 +1862,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 111,
@@ -1829,8 +1883,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 112,
@@ -1844,8 +1904,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 113,
@@ -1859,8 +1925,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 114,
@@ -1874,8 +1946,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 115,
@@ -1889,8 +1967,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 116,
@@ -1904,8 +1988,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 117,
@@ -1919,8 +2009,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 118,
@@ -1934,8 +2030,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 119,
@@ -1949,8 +2051,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 120,
@@ -1964,8 +2072,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 121,
@@ -1979,8 +2093,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 122,
@@ -1994,8 +2114,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 123,
@@ -2009,8 +2135,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 124,
@@ -2024,8 +2156,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 125,
@@ -2039,8 +2177,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 126,
@@ -2054,8 +2198,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 127,
@@ -2069,8 +2219,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 128,
@@ -2084,8 +2240,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 129,
@@ -2099,8 +2261,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 130,
@@ -2114,8 +2282,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 131,
@@ -2129,8 +2303,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 132,
@@ -2144,8 +2324,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 133,
@@ -2159,8 +2345,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 134,
@@ -2174,8 +2366,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 135,
@@ -2189,8 +2387,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 136,
@@ -2204,8 +2408,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 137,
@@ -2219,8 +2429,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 138,
@@ -2234,8 +2450,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 139,
@@ -2249,8 +2471,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 140,
@@ -2264,8 +2492,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 141,
@@ -2279,8 +2513,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 142,
@@ -2294,8 +2534,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof."
     },
     {
       "b2007_page": 143,
@@ -2309,9 +2555,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation",
-      "editorial_note": "Four foundations conclude"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof.",
+      "secondary_transcription_clause_count": 2,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false
     },
     {
       "b2007_page": 144,
@@ -2325,9 +2576,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation",
-      "editorial_note": "Concluding preface begins"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof.",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false
     },
     {
       "b2007_page": 145,
@@ -2341,13 +2597,18 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-fourth-foundation",
-      "editorial_note": "Concluding preface ends"
+      "source_fidelity_status": "Selected derivative online Arabic authorial excerpts compared to working English; does NOT prove original B2007 print or 1876 source or manuscript; no continuous line collation.",
+      "source_kind": "D-Forum-B2007-derivative",
+      "editorial_note": "Stage XIV: source is derivative retyped online modern Arabic edition. Selected authorial spans only, NOT complete print-page or manuscript proof.",
+      "secondary_transcription_clause_count": 4,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false
     }
   ],
   "source_pages_with_selected_arabic_english_checks": 43,
-  "check_methodology": "Original B2007 direct digitized selected authorial checks: 283 on page labels pp18–60. Derivative retyped Arabic checked against older working English: 57 on pp61–69; 54 on pp70–78; 74 on pp79–101. Totals: 468 selected review loci across 84 page labels, 283 direct modern-digitized + 185 derivative. NOTHING here verifies every word of a printed page or any medieval MS. Historical I1876 print comparisons unchanged ten loci/five differences/five agreements. Next new source p102; next direct modern printed page needing upgrade p61.",
+  "check_methodology": "559 distinct selected bilingual records across B2007 pp18–145, of which 283 reviewed in digital modern B2007 pages18–60 and 276 only via a derivative secondary forum retranscription of modern edited Arabic pages61–145. No full-page independent Arabic transcription or direct manuscript collation is established, and no manuscript variants are attested. Historical printing I1876 10 bounded phrase comparisons (five differences/five agreements) on nine historical original printed pages; zero complete historical pages collated. Next step direct primary-printed-source checking from B2007 p61 and systematic original manuscript collation.",
   "issues_flagged_including_resolved_typographic": 17,
   "historical_print_pages_with_selected_loci_checked": 9,
   "historical_print_variants_verified": 5,
@@ -2360,8 +2621,8 @@
   "independent_manuscript_variants": 0,
   "historical_print_fully_collated_pages": 0,
   "next_direct_modern_print_audit_page": 61,
-  "secondary_transcription_checked_clause_count": 185,
-  "secondary_transcription_reviewed_page_count": 41,
+  "secondary_transcription_checked_clause_count": 276,
+  "secondary_transcription_reviewed_page_count": 85,
   "secondary_transcription_pages": [
     61,
     62,
@@ -2403,10 +2664,55 @@
     98,
     99,
     100,
-    101
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145
   ],
-  "secondary_transcription_unresolved_crux_records": 4,
-  "total_reader_clause_records": 468,
-  "total_distinct_page_labels_with_any_bilingual_check": 84,
-  "total_source_pages_with_mixed_provenance": 84
+  "secondary_transcription_unresolved_crux_records": 5,
+  "total_reader_clause_records": 559,
+  "total_distinct_page_labels_with_any_bilingual_check": 128,
+  "total_source_pages_with_mixed_provenance": 128,
+  "next_new_selected_excerpt_page": null
 }
