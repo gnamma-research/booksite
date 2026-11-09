@@ -1,0 +1,262 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R14e",
+  "date": "2026-11-09",
+  "startSection": "4.726",
+  "endSection": "4.750",
+  "sourceRepo": "OpenITI/0850AH",
+  "sourceCommit": "e2715c62fb458ce3ddc43b962cd55677cdd7bc35",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.726",
+      "number": 726,
+      "pageStart": 480,
+      "pageEnd": 480,
+      "arabic": "فلما سرى حكم الحركة الحبية الأصلية والاجتماعات الأسمائية بحكم الاسم المصور في تلك المادة المرتوقة الدخانية في مرتبة الحس تحركت من حيث نقطة مركزها حركة دورية، وتصورت بصورة سماء أولي من وجه ورابعة من وجه، فصارت مظهرا لصفة الحياة وغلبة الحرارة.",
+      "english": "When the governing effect of original loving motion and of the conjunctions of the Names, under the Name al-Muṣawwir, pervaded that joined-together, smoky material in the sensible degree, the material revolved around its central point. It assumed the form of a heaven that was first in one respect and fourth in another, thereby becoming a locus of manifestation for life and the predominance of heat.",
+      "notes": "The first/fourth descriptions depend on differing enumerations, clarified in §4.728; do not collapse them.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.727",
+      "number": 727,
+      "pageStart": 480,
+      "pageEnd": 480,
+      "arabic": "وعين الاسم المصور بموجب المرسوم الكريم للاسم المتعين بها، وهو الاسم الحي مظهرا نورانيا هو الشمس، فكانت كالنفس المدبرة لهذه الصورة السمائية، ثم عين فوقها ثلاث سماوات وتحتها ثلاثا، وعين لكل نفسا مدبرة هي كوكب يختص بكل سماء.",
+      "english": "The Name al-Muṣawwir, in accordance with the noble command, determined a luminous locus of manifestation for the Name particularised through it: the Name al-Ḥayy (the Living), whose manifestation was the Sun. The Sun was like the governing soul of that celestial form. The Fashioner then determined three heavens above and three beneath it, assigning to each a governing soul, namely a planet specific to that heaven.",
+      "notes": "The Sun as centre of the seven heavens here is a graded cosmological station, not modern heliocentrism.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.728",
+      "number": 728,
+      "pageStart": 480,
+      "pageEnd": 481,
+      "arabic": "فالسماء الرابعة التي هي وسط السماوات مظهر صفة الحياة والشمس مظهر الاسم الحي الجامع وظهور سلطنة سادنه الذي هو المحيى فيه أتم، والثالثة مظهر الإرادة والزهرة مظهر الاسم المريد وظهور حكم سادنه الذي هو المصور من وجه فيه أكثر، والثانية مظهر الأقساط والعدل والعطارد مظهر الاسم المقسط وحكم تابعه الذي هو البارئ من وجه فيه أظهر، والأولى مظهر القول، ولهذا كان بيت العزة الذي هو منزل القرآن في تنزله جملة مختصا بها، والقمر مظهر الاسم القائل، وسلطنة تبعه الذي هو الخالق من وجه فيه أقوى، والخامسة مظهر القدرة والمريخ مظهر الاسم القادر وقوة سادنه الذي هو القاهر فيه أقوى، والسادسة مظهر العلم والمشترى مظهر الاسم العالم وسلطنة تابعه الذي هو الحكيم فيه أظهر، والسابعة مظهر الجود، ولهذا كان إبراهيم عليه السلام موصوفا به وبالقيام بحقوق الضيافة نفسا ومالا، ولذا روئي في السابعة، وزحل مظهر الاسم الجواد وسلطنة الاسم الرب - الذي نسبته إليه أكمل - فيه أقوى.",
+      "english": "The fourth heaven, standing in the middle of the heavens, is the manifestation of the attribute of Life. The Sun manifests the all-comprehensive Name al-Ḥayy, and the sovereignty of its attendant Name al-Muḥyī (the Giver of Life) appears there most perfectly. The third heaven manifests Will; Venus manifests the Name al-Murīd (the Willing), and the ruling of its attendant, al-Muṣawwir (the Fashioner), is more apparent there in one respect. The second manifests justice and equitable shares; Mercury manifests the Name al-Muqsiṭ (the Just), and the ruling of its attendant, al-Bāriʾ (the Originator), is more manifest there in one respect. The first manifests Speech, which is why the House of Might [Bayt al-ʿIzza], where the Qurʾān descended in its entirety, belongs particularly to it. The Moon manifests the Name al-Qāʾil (the Speaker), and the sovereignty of its attendant, al-Khāliq (the Creator), is stronger there in one respect. The fifth manifests Power; Mars manifests the Name al-Qādir, with the force of its attendant, al-Qāhir (the Overpowering), stronger within it. The sixth manifests Knowledge; Jupiter manifests the Name al-ʿĀlim (the Knower), and the sovereignty of its attendant, al-Ḥakīm (the Wise), is more apparent there. The seventh manifests Generosity, which is why Abraham, peace be upon him, was characterised by generosity and fulfilment of the obligations of hospitality, both personally and with his property, and was therefore seen in the seventh heaven. Saturn manifests the Name al-Jawād (the Generous), and the sovereignty of the Name al-Rabb (the Lord), whose relation to it is most perfect, is strongest there.",
+      "notes": "Critical index of seven heavens, planetary loci, dominant Names and attendant Names; Bayt al-ʿIzza must not be omitted. Abraham's seventh-heaven location draws on the Miʿrāj tradition.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.729",
+      "number": 729,
+      "pageStart": 481,
+      "pageEnd": 481,
+      "arabic": "انما صور انظار هذه الكواكب واتصالاتها بسيرها وسياحتها بحكم ظاهر قوله تعالى: وكل في فلك يسبحون (40 - يس) فهي مظاهر احكام هذه الأسماء ونسبها وآثار توابعها وفروع فروعها وهلم جرا.",
+      "english": "The aspects and mutual conjunctions of these planets, in their journeying and wandering, are represented according to the outward meaning of God's words: 'Each swims in an orbit' [Qurʾān 36:40]. They are loci of manifestation for the rulings of these Names and their relations, together with the effects of their attendants and of their further ramifications, and so onward.",
+      "notes": "The Arabic gives verse 36:40; some editions quote 21:33 for identical wording. Keep source locator.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.730",
+      "number": 730,
+      "pageStart": 481,
+      "pageEnd": 481,
+      "arabic": "وهذه المظاهر والأسباب معدات لقبول آثار الأسماء والفعل والتأثير لأعيان الأسماء، وذلك على مقتضى عالم الحكمة واندراج القدرة فيها، كما يرى في الأسباب المحسوسة، والذي يفعل هذه الأسماء تارة بأعيانها لا بواسطة هذه المظاهر بل على خلاف ما يقتضيها ظواهر احكامها، فعلى مقتضى عالم القدرة واندراج الحكمة فيها.",
+      "english": "These loci of manifestation and causes prepare recipients to receive the effects of the Names; action and causal efficacy belong to the very entities of the Names. This accords with the World of Wisdom [ʿālam al-ḥikma], in which Power is included. At other times these Names themselves act directly, without the mediation of the loci, even contrary to what the apparent rulings of those loci would imply. This accords with the World of Power [ʿālam al-qudra], in which Wisdom is included.",
+      "notes": "This is a fundamental differentiation of customary mediated causation from immediate divine efficacy. Do not imply natural causes are independently creative.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.731",
+      "number": 731,
+      "pageStart": 481,
+      "pageEnd": 481,
+      "arabic": "فيظهر في النشأة الدنياوية تارة بواسطة هذه الأسباب غالبا واخرى لا بها أحيانا صور المولدات وأنواعها واشخاصها، الكليات بكلياتها والجزئيات بجزئياتها بموجب قوله تعالى: قل كل يعمل على شاكلته (84 - الاسراء) وكل ذلك بحكم الامر الإلهي الوحداني الساري في المظاهر الفلكية والكوكبية، كما قال تعالى: وأوحى في كل سماء امرها (12 - فصلت) أي الامر المختص المنصبغ بحكمه، وبحسب تفاوتها حيطة وكلية وجزئية يظهر التفاوت فيما تفرع عنها.",
+      "english": "Thus in this earthly constitution the forms of generated things—their kinds and individual instances, universals corresponding to universals and particulars to particulars—appear at some times, usually, through these causes, and at others, occasionally, without them. This is in accordance with God's saying, 'Say: each acts according to its own disposition' [Qurʾān 17:84]. All of it comes under the single divine command pervading celestial and planetary loci, as He says: 'He revealed to each heaven its command' [Qurʾān 41:12], that is, the particular command coloured by that heaven's ruling. Their differing comprehensiveness, universality, and particularity accounts for the difference in what branches forth from them.",
+      "notes": "Preserve general/specific cause structure; Qurʾān 17:84 and 41:12 are partial quotations.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.732",
+      "number": 732,
+      "pageStart": 481,
+      "pageEnd": 481,
+      "arabic": "ثم اعلم أن بعد فتق السماوات والأركان، انفتقت بحكم الحركة الحبية واقتضاء الاجتماعات من حيث مظاهرها الروحانية والمثالية والحسية المادة الترابية المرتوقة، فكانت أرضا وصورها الاسم المصور كرية عقلا ومسطحا ظاهرا، كما قال تعالى: والأرض بعد ذلك دحاها (30 - النازعات)",
+      "english": "Know further that, after the rending apart of the heavens and elemental constituents, the joined-together earthy material was also split open under the ruling of loving motion and the combinations of its spiritual, imaginal, and sensible manifestations. It thus became earth; and the Name al-Muṣawwir fashioned it as a sphere in intelligible consideration but as a spread-out surface in outward appearance, as God says: 'And after that He spread out the earth' [Qurʾān 79:30].",
+      "notes": "Source marker §4.733 occurs mid-line in this electronic witness; section parsing must not drop §§4.732–4.733. Intelligible sphericity and experiential flatness are distinguished explicitly.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.733",
+      "number": 733,
+      "pageStart": 481,
+      "pageEnd": 481,
+      "arabic": "وكما تعين بالحركة العرشية مقدار اليوم المتعارف، تعين بباقي الأفلاك والعناصر والأرض المدحوة انقسام اليوم العرشي إلى الليل والنهار ودوره إلى الأسابيع والشهور والأعوام بتقدير العزيز العليم.",
+      "english": "Just as the movement of the Throne determines the measure of the familiar day, so the remaining spheres, elements, and spread-out earth determine the division of the Throne's day into night and day and its revolution into weeks, months, and years, through the ordaining of the Mighty and All-Knowing.",
+      "notes": "Time divisions follow hierarchy of motions in historical geocentric cosmology.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.734",
+      "number": 734,
+      "pageStart": 481,
+      "pageEnd": 482,
+      "arabic": "وباعتبار ان الزمان مقدار الحركة اليومية المحددية صار محلا لظهور كل ما يبدو من الأجسام والاعراض التي يحتوى المحدد عليهما حتى صارت محكومة للزمان، لما تقرر في القواعد: ان كل صورة ما يحل في محل صوري أو معنوي يكون تحت حكمه ولا يظهر الا بحسبه، والله أعلم واحكم. إلى هنا كلامه.",
+      "english": "And because time is the measure of the daily motion of the sphere that determines directions [al-muḥaddid], it becomes the locus of manifestation of everything appearing among the bodies and accidents contained by that encompassing sphere. Thus they all fall under the ruling of time, for the principles establish that whatever form inheres in a formal or intelligible locus comes under the ruling of that locus and appears only according to it. God knows best and judges most wisely. Thus far al-Farghānī's words.",
+      "notes": "This closes the al-Farghānī quotation at «إلى هنا كلامه». Technical distinction: location in time and ontology of time vs spatial distance.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.735",
+      "number": 735,
+      "pageStart": 482,
+      "pageEnd": 482,
+      "arabic": "قال الشيخ الكبير قدس سره: ومعنى قولنا: خلق الله في هذه الأكر (1) عالم كذا وعمرها بكذا، انه هيأ فيها مراتب خلقها وكون فيها أجسامها النورية واعدها لقبول الأرواح والحيوة، واسرار هذا الاستعداد في الأفلاك الأربعة الثابتة. ولكل من الأفلاك دورة قسرية فصل مكانه من الجسم الكل وظهر الهواء بينه وبين فلك فوقه.",
+      "english": "The Great Shaykh—may his secret be sanctified—said: 'When we say that God created such-and-such a world within these spheres, and populated them with such-and-such beings, we mean that He prepared within them the degrees for the creation of those beings, formed their luminous bodies there, and made them ready to receive spirits and life. The mysteries of this preparedness lie in the four stable spheres. Each sphere has a constrained revolution that differentiates its place in the universal body and causes air to appear between it and the sphere above it.'",
+      "notes": "New explicit quotation attributed to the Great Shaykh (Ibn ʿArabī). The source says «دورة قسرية», constrained/necessitated revolution.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.736",
+      "number": 736,
+      "pageStart": 482,
+      "pageEnd": 482,
+      "arabic": "ثم توجه الحق سبحانه على هذه السماوات والأرض وما بينهما بخلق الأرواح في صورها المعبر عنه بالنفخ، فقبلت الأرواح على قدر استعدادها، فإذا وفت الطبيعة ما في قوتها مما جبلها الله عليه وحصل المنع في الأركان عن القبول، عادت آثارها حركات الأفلاك عليها لما لم تجد ما ينفذ، فتصادمت تصادم الاشخاص فانفظرت ورجعت إلى أصل المبدأ، وجعل الله حركات هذه الأفلاك كلها على طريقة واحدة من الشرق إلى الغرب - كحركات الأفلاك الثابتة - بخلاف ما يقوله أصحاب علم الهيئة، فيجعلون حركاتها (2) من الغرب إلى الشرق لما يرون من تأخرها وليس الامر كذلك، ولكن حركة فلك الكواكب على مقدار يعطيه تركيبه وطبعه من السرعة وبقدر قوته من الوزن المعلوم الذي قدره خالقه، فيظهر تأخر صحيح - كما للقمر - وليس بتأخر حركة ضدية تقابله، ومن قال به فما عنده علم ولم يقع من الحق في شئ.",
+      "english": "Then the Real, exalted is He, turned toward these heavens, the earth, and what lies between them, creating spirits within their forms—an act expressed as 'breathing into' [nafkh]. They received the spirits in accordance with their preparedness. When Nature had fully actualised the powers God planted within it, and the elemental constituents became unable to receive more, the effects of the celestial motions returned upon those constituents, finding no other route of passage, and collided like bodily individuals, breaking apart and returning to their point of origin. God made all these celestial revolutions proceed in the same direction, from east to west, as with the fixed spheres, contrary to what specialists in mathematical astronomy [ʿilm al-hayʾa] say: they posit west-to-east motion because they observe a lag. This is not so, he says; rather, each planet's sphere moves at a speed dictated by its configuration, nature, and its creator-assigned strength and measured weight. The resulting lag is real—as in the Moon—but does not arise from an opposing retrograde motion. Whoever maintains the latter has, he says, no knowledge of the matter and has received none of the Real's truth concerning it.",
+      "notes": "A polemic against established astronomical modelling is part of the historical quotation; distinguish the author's cosmography from modern planetary motion. The apparatus must identify the 'lag' (taʾakhkhur) mechanism in source.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.737",
+      "number": 737,
+      "pageStart": 482,
+      "pageEnd": 484,
+      "arabic": "وقد جعل سبحانه لتوجهات الملكين الكريمين المعبر عنهما بالقلم واللوح مدخلا فيه وسكتنا فيه عن تحقيق الأسباب لئلا يتخيل انا نجعل الفعل لغير الله تعالى أو نجعله لله بمشاركته السبب، فلسنا من أهل هذين المذهبين، بل لأسباب عادية ان شاء جعلها أسبابا وان شاء لا، لكن قد شاء وسبق في علمه ان لا يخلقها الا هكذا كما ذكرناه، هذا كلامه. الأصل السادس عشر في ظهور المولدات بالاستحالات إلى أن ينتهى نزول الامر الإلهي إلى الانسان الكامل فينعطف به إلى الأصل الشامل",
+      "english": "God gave a role in this to the orientations of the two noble angels named the Pen and the Tablet. We have refrained from explaining the causes in detail, lest someone imagine that we ascribe action to other than God, or that we ascribe it to God together with causes as partners. We belong to neither school. Rather, these are customary causes [asbāb ʿādiyya]: if God wills, He makes them causes, and if He wills, He does not. Nevertheless He has willed—and His knowledge has preceded—that He create these things only in the manner we have described.' Thus far his words. Sixteenth Principle: The appearance of generated beings through transformations, until the descent of the divine command reaches the Perfect Human and turns back through him to the all-embracing Origin.",
+      "notes": "New major «الأصل السادس عشر» heading belongs after closing the Great Shaykh's quotation; original spans printed pp.482–484. Preserve the explicit refusal to treat causes as divine partners; juxtapose with earlier Illuminationist efficacy.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.738",
+      "number": 738,
+      "pageStart": 484,
+      "pageEnd": 484,
+      "arabic": "قال الشيخ الكبير رضي الله عنه في عقلة المستوفز: لما كملت الأفلاك والأركان ودارت الأحد عشر فلكا وهى الاباء العلويات، أعطت الحركات في الأركان القوابل الحوامل وهى الأمهات السفليات الحرارة، فسخن العالم وتوجه العقل والنفس اللذان هما القلم واللوح، وتوجه العنصر الأعظم الشريف الذي هو لكرة العالم كالنقطة والقلم كالمحيط - واللوح ما بينهما - وكما أن النقطة تقابل المحيط بذاتها على وحدتها، كذلك هذا العنصر مقابل بذاته جميع وجوه العقل وهى رقائقه، فللعنصر وجه واحد وله التفاتة واحدة، ولهذا كان أشد تحققا بتوحيد خالقه من العقل وأقوى نسبة، وإلى العنصر والعقل الإشارة قوله تعالى: لا كلوا من فوقهم - أي: المواهب والاسرار التي بيد القلم - ومن تحت أرجلهم (66 - المائدة) أي: لطائف العنصر الأعظم المستمدة منه وهو من الله تعالى بذاته.",
+      "english": "The Great Shaykh—may God be pleased with him—said in ʿUqlat al-mustawfiz: 'When the spheres and elements had been completed and the eleven spheres—those upper fathers—revolved, their motion imparted heat to the elements that receive and bear, namely the lower mothers. The world warmed. The Intellect and Soul, which are the Pen and Tablet, turned their attention, and so did the noble Greatest Element, which stands in relation to the sphere of the cosmos as the point, whereas the Pen is like the circumference and the Tablet is what lies between. Just as the point, in its unity, faces the whole circumference with its own essence, so too the Greatest Element faces with its essence all the aspects of the Intellect—its subtle connecting threads [raqāʾiq]. The Element has only one face and one turning of attention; consequently it realises the oneness of its Creator more fully than the Intellect and possesses a stronger relation. The Element and Intellect are indicated in God's words, \"They would have eaten from above them\"—the gifts and mysteries held by the Pen—\"and from beneath their feet\" [Qurʾān 5:66]—the subtleties of the Greatest Element derived from it, which is from God in its essence.'",
+      "notes": "Quotation explicitly names ʿUqlat al-mustawfiz, which should be compared directly; raqāʾiq are subtle relational threads. The point-circumference analogy is structural, not a physical location.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.739",
+      "number": 739,
+      "pageStart": 484,
+      "pageEnd": 485,
+      "arabic": "ولما تسخن العالم ابتدأت الاستحالات في الأركان التي يقع بها التناسل وجعل الاستحالة على حسب ما نظمها العزيز العليم، ومن أعجب صنعه ان جعل أول الأكر - وهى الأرض - وآخر الدوائر السماوية - وهى السابعة - على طبيعة واحدة هي البرودة واليبوسة، وجعل بين الأركان منافرة، اما من كل وجه فلم يتجاورا، كالنار والماء، بل جعل بينهما واسطة تناسب كل منهما من وجه، فاجرى الاستحالة بينهما (1) على ما هو المشهور، وكل ما جوز حده (2) انتقل إلى ضده، والاستحالة بين المنافرين من كل وجه لم يذكروها وهى واقعة نادرة.",
+      "english": "Once the world had heated up, transformations began among the constituents, through which reproduction occurs. He arranged transformation as the Mighty and All-Knowing had ordered it. Among the wonders of His making is that He assigned the first of the spheres—the earth—and the last of the heavenly circles—the seventh—the same nature, cold and dry. He placed antagonisms among the constituents: things opposed in every respect, such as fire and water, were not placed next to one another, but separated by an intermediary resembling each in some respect. Transformation then proceeds through this mediation, according to the familiar doctrine. Everything that exceeds its proper limit passes into its opposite. The philosophers did not describe transformation between things opposed in every respect, but it occurs rarely.",
+      "notes": "The source presents historical four-quality elemental physics; multiple terms («كل ما جوز حده») need print comparison.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.740",
+      "number": 740,
+      "pageStart": 485,
+      "pageEnd": 485,
+      "arabic": "وبهذه الاستحالات حدثت دائرة الزمهرير والجمد في الهواء وجبال البرد والبحر المسجور والماء الذي في جوف كرة الأرض والهواء المظلم الدائر بالصخرة والهواء الذي يلي النار فوق دائرة الزمهرير، فصورتها اليوم صخرة في المركز دار بها - هواء على الهواء ماء على الماء ارض على الأرض ماء على الماء هواء على الهواء جمد على الجمد بحر على البحر هواء على الهواء نار على النار - السماء الدنيا، وهذه الاستحالات أعطاها ما أودعه الله تعالى في الأدوار كلها.",
+      "english": "Through these transformations there arose the circle of intense cold and ice in the air, the mountains of hail, the surging sea, the water within the hollow of the earth's sphere, the dark air rotating about the rock, and the air bordering fire above the circle of extreme cold. Its present configuration consists of a rock at the centre with successive enclosing layers: air upon air, water upon water, earth upon earth, water upon water, air upon air, ice upon ice, sea upon sea, air upon air, and fire upon fire, then the lowest heaven. These transformations were brought forth by what God deposited in all the revolutions.",
+      "notes": "The source has an enigmatic nested list «هواء على الهواء ماء على الماء...»; preserve the exact order; do not replace with a modern geophysical schematic.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.741",
+      "number": 741,
+      "pageStart": 485,
+      "pageEnd": 485,
+      "arabic": "وبأدوار الأفلاك الثابتة خاصة (1) كانت الجنات وعوالمها المخلوقون فيها التي هي أرواح محمولة في أنوار وأجسام شفافة شريفة معدنية تناسب فلكها، وعنها انتشأت الخزنة، والخازن الأكبر رضوان، إذ حالة الرضاء الحالة الكبرى في الجنة كما ذكر في آخر حديث الجنة: بقى ان أعلمكم برضائي عنكم، فلا أسخط عليكم ابدا... الحديث، والمخاطبون به العاملون للجنة.",
+      "english": "Through the revolutions of the stable spheres in particular, the gardens [of Paradise] arose, together with the worlds and beings created within them: spirits borne by lights and noble, translucent mineral bodies proportionate to their spheres. From them came the guardians, whose greatest keeper is Riḍwān. For contentment [riḍā] is Paradise's supreme state, as stated near the conclusion of the report concerning Paradise: 'It remains that I make known to you My contentment with you; I shall never be displeased with you'—and the rest of the report. Those addressed are the people who act for the sake of Paradise.",
+      "notes": "Hadith abbreviated; exact wording and attribution need checking. Do not confuse Riḍwān (keeper) with riḍā (divine approval), though the text relates them.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.742",
+      "number": 742,
+      "pageStart": 485,
+      "pageEnd": 485,
+      "arabic": "واما العارفون فليس لهم في هذا الخطاب مدخل، إذ قد نالوه في الدنيا حال سلوكهم لهم البشرى في الحياة الدنيا وفي الآخرة، فالعارفون مع الله تعالى بالذات وفي الجنة بالعرض، فهم أهل الله وخاصته لا ينسبون إلى الجنة، لكن الجنة ينسب إليهم، وأهل الجنة مع الجنة بالذات ومع الله بالعرض، ولهذا كانت رؤيتهم لله تعالى في أوقات مخصوصة، وكليتهم في الجنان مع الحور والولدان.",
+      "english": "The knowers [al-ʿārifūn], however, do not fall within this address, for they already attained it during their journeying in this world: 'For them are glad tidings in the life of this world and in the Hereafter' [Qurʾān 10:64]. The knowers are with God essentially and in Paradise incidentally: they are God's people and His elect, and are not ascribed to Paradise; rather Paradise is ascribed to them. The inhabitants of Paradise, by contrast, are essentially with Paradise and incidentally with God. Their vision of God therefore occurs at specified times, while their total engagement is in the gardens among the maidens and youths.",
+      "notes": "Crucial distinction «بالذات / بالعرض» describes comparative orientation toward God and Paradise. Source's contrast should be translated faithfully without endorsement of disparagement.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.743",
+      "number": 743,
+      "pageStart": 485,
+      "pageEnd": 486,
+      "arabic": "وكما انتشأ منها عالم الرضوان، كذلك لما سرى النور ظهر مالك وخزنة النار ويسمى رئيسهم مالكا لقهر الظاهر في عالم الشقاء، فان الأرواح من عالم السعة والانفساح بالأصل، فإذا انحصرت في هذا الضيق بما اكتسبته كان الضيق عليها أشد عذابا، وإذا ألقوا منها مكانا ضيقا... الآية (13 - الفرقان) فالثبور الكثير العذاب الغير المتناهى ولا شئ أشد عليهم من السخط السرمدي. قال فيه تعالى: اخسئوا فيها ولا تكلمون (108 - المؤمنون) وجميع هذا الشكل من المركز إلى المحيط شكل القرن أسفله ضيق وأعلاه واسع وهو الصور، أي جامع الصور. فأهل الجنة في سعة المحيط وهو عليون وأهل النار في ضيق السفل وهو السجين، فالنعيم والسرور بقدر السعة والعقاب والهموم والثبور بقدر الضيق، فنسأل الله تعالى ان يجعلنا من أهل الله بعقولنا ومن أهل السعة بنفوسنا. آمين.",
+      "english": "Just as the world of Riḍwān arose from those spheres, so, when the light pervaded, Mālik and the guardians of the Fire appeared. Their chief is called Mālik because overpowering outward manifestation predominates in the world of wretchedness. By origin, spirits belong to a world of spaciousness and expansion; when they become confined in this narrowness by what they have acquired, confinement becomes their severest torment: 'When they are cast into a narrow place therein...' [Qurʾān 25:13]. Repeated cries of destruction correspond to punishment without end; nothing is worse for them than everlasting wrath. God says, 'Remain there in humiliation, and do not speak to Me' [Qurʾān 23:108]. The whole configuration from centre to circumference resembles a horn, narrow at its base and broad above: it is al-ṣūr, the trumpet, the gathering of forms [ṣuwar]. The people of Paradise occupy the breadth of its circumference, the Highest Regions [ʿilliyyūn], and the people of the Fire the constricted lower depth, Sijjīn. Delight and joy correspond to breadth; penalty, distress, and lamentation to narrowness. We ask God to make us among His people in our intellects and among the people of spaciousness in our souls. Amen.",
+      "notes": "The source plays on ṣūr (trumpet) and ṣuwar (forms); distinguish eschatological topology from physical cosmography and preserve the prayer.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.744",
+      "number": 744,
+      "pageStart": 486,
+      "pageEnd": 487,
+      "arabic": "ثم (1) أول ما دارت الأفلاك وأعطت الاستحالات في الأركان وسخن العالم، فأول ركن قبل الأثر ركن النار وهو الأثير، فظهرت الكواكب ذوات الأذناب وهى احتراقات وتكوينات سريعة الاستحالة ونجوم سريعة الفساد، وكانت رجوما عند بعث محمد صلى الله عليه وآله، فما يلي منها العلو أطفأه برد السماء وما يلي السفل اطفأه الزمهرير والبحر المسجور، فانتشأ في هذا الركن عالم الجن بين سعيد وشقى، فمن غلب نور روحانيته على نار طبيعته سعيد ومن بالعكس شيطان ولما فيه من البرودة والرطوبة، لأنه ممتزج الأصل يقبل العذاب بالنار، وانما نسب إلى النار لأنه العنصر الغالب فيه كعنصر التراب فينا، وكان للجن قبل مبعث محمد صلى الله عليه وآله مسالك في كرتهم نحو السماء يسلكون ليستمعوا حديث الملأ الاعلى الفلكي، وكان الحكم من آدم إلى محمد صلى الله عليه وآله على ما رتبه الحق للملك الكريم المخلوق على صورة السنبلة، إذ كانت النشأة الانسانية ترابية، فلم يكن النجوم ذوات الأذناب بتلك الكثرة لغلبة الجمود والسكون الذي يقتضيه البرودة واليبس.",
+      "english": "When the spheres first began to revolve and brought transformations to the elements so that the world became hot, the first constituent to receive their influence was fire, namely aether. Comets then appeared—burnings and formations that transform rapidly, stars that quickly pass away. At the mission of Muḥammad, may God bless him and his family, they became missiles. Their upper reaches are quenched by the cold of the sky, and their lower reaches by the circle of extreme cold and the surging sea. In this constituent arose the world of the jinn, comprising the blessed and the wretched: whoever is governed by the light of their spiritual nature over the fire of their natural nature is blessed, and one in whom the reverse holds is a devil. Their constitution also contains coldness and moisture, being originally mixed, and thus admits punishment by fire; they are ascribed to fire because it predominates within them, as earth predominates in us. Before Muḥammad's mission, the jinn had paths through their sphere toward heaven, which they traversed to overhear the discourse of the upper celestial assembly. From Adam to Muḥammad the governing dispensation was arranged by God for the noble angel fashioned in the form of Virgo, because human constitution was earthy. Comets were therefore less numerous, owing to the predominance of rigidity and rest resulting from cold and dryness.",
+      "notes": "A quoted symbolic/jinn cosmography, not empirical astronomy. The source marks (1) and the Virgo/Libran succession must be verified against Ibn ʿArabī.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.745",
+      "number": 745,
+      "pageStart": 487,
+      "pageEnd": 487,
+      "arabic": "فلما جاء محمد صلى الله عليه وآله ودار الزمان انتقل الحكم إلى الملك الكريم الذي على صورة الميزان وهو العدل واعطى كل ذي حق حقه، وهو ريحي اشتعل الفلك الأثير اشتعالا عظيما، فكثرت النجوم ذوات الأذناب في الأثير فعمرت كل مسلك فيه فضاقت المسالك على الجن الذين يسترقون السمع ولم يعرفوا ما علة ذلك، فقالوا انا لمسنا السماء فوجدناها ملئت حرسا شديدا وشهبا (8 - الجن) فالحرس الملائكة وهم الرصد في الآية الأخرى، والشهب النجوم ذوات الأذناب، ومع هذا كله يسلكون بحكم البخت، فان صادفهم شهاب احرقهم، وجعل بأيديهم عالم الخيال ونصب لرئيسهم عرشا على البحر في مقابلة: وكان عرشه على الماء (7 - هود) وهو عرش التلبيس، وجعل بيده قوة مثال كل شئ في العالم الحقيقي يأتي به في عالم الخيال على صورته في العالم الحقيقي ليضل به أهل الكشف في كشفهم وأهل الفكر في أدلتهم، فبيده مفاتيح الشبه والشكوك.",
+      "english": "When Muḥammad, may God bless him and his family, came and the cycle of time revolved, governance passed to the noble angel in the form of Libra, the Balance—Justice—which gives each possessor of a right their due. Its nature is airy, and the aetheric sphere burned with a great blaze. Comets multiplied in it until they filled every path, narrowing the routes of the jinn who sought to steal a hearing. They did not know the cause, and said: 'We touched the heaven and found it filled with mighty guards and flaming missiles' [Qurʾān 72:8]. The guards are the angels, those who keep watch in the other verse; the missiles are comets. Nevertheless, the jinn still pass according to fortune; if a flaming missile strikes them, it burns them. God placed the World of Imagination [ʿālam al-khayāl] in their hands and appointed for their leader a throne upon the sea, corresponding to 'His Throne was upon the water' [Qurʾān 11:7]. This is the throne of deception. He gave the leader the capacity to reproduce the likeness of everything in the real world within imagination in its corresponding form, thereby misleading possessors of unveiling in their unveilings and thinkers in their proofs. Thus the keys to doubtful likenesses and doubts are in his hands.",
+      "notes": "«عرش التلبيس» is throne of deception, not identity with the Divine Throne. This is a historical spiritual epistemology and not a modern astronomical account.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.746",
+      "number": 746,
+      "pageStart": 487,
+      "pageEnd": 487,
+      "arabic": "ثم أقول: وأوجد الله تعالى هذه الدورة المحمدية في هذا الوقت ونصب فيه هذا الوالي ليكون اسراره مكتومة ومقاماته مستورة، ويكون الطمس على الأفكار بقوة ناريتها وعدم ثبوتها، فلا يستقر كما استقر أفكار القدماء قبل استدارة الزمان، فكانت الحيرة في أهل الأذواق منا أكثر من غيرنا من الأمم، ومن تعب في الفكر منا وقف حيث تعب، فكثر الاختلاف في الإلهيات لاشتغال الخواطر وغلبة الحرارة عليها.",
+      "english": "I further say: God brought forth this Muḥammadan cycle at this time and appointed this governor within it so that its mysteries might remain concealed and its stations hidden, and so that thought would be obscured through the fieriness of its constitution and its lack of stability. Thus reflection no longer remains stable in the way the ancients' thinking did before the cycle of time revolved. Bewilderment among our people of spiritual taste has become greater than among other nations; whoever among us labours in reflective thought stops where his strength fails. Disagreement concerning divine things has consequently multiplied because thoughts are preoccupied and their heat predominates.",
+      "notes": "The internal «ثم أقول» may be a change of voice within quotation or Fanārī's insertion; do not definitively assign until ʿUqlat source checked.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.747",
+      "number": 747,
+      "pageStart": 487,
+      "pageEnd": 488,
+      "arabic": "فأكثر الخلق في هذه الأمة مجبولون على الأمور التي لم يكن أحد من غابر الأمم يصل إليها الا بعد الرياضات والخلوات والأفكار الرائضة بنفوسهم، واشتعلت أيضا قلوب أهل الاذكار والاجتهادات في العبادات وهم الصادقون من الصوفية، فنالوا المراتب العلية في العلوم الإلهية وكان علماء هذه الأمة كأنبياء سائر الأمم، وفتح في بواطنهم ما كان يظهر في بني إسرائيل من العجائب وهم لا يعرفون قدره، فانكتمت سرائرهم لتحققها بالحق سبحانه، فليس لهم ظهور الا حيث يظهر الحق، وذلك في الدار الآخرة، ولذلك أيضا كثر نطق الجمادات والنباتات وحياتها في هذه الأمة، كسلام الحجر عليه صلى الله عليه وآله وتسبيح الحصى في كفه وحب الجبل له وحنين الجذع وكلمه الذراع المسمومة حتى قال عليه وآله السلام: لا تقوم الساعة حتى تكلم الرجل عذبة (1) سوطه وتحدثه فخذه بما عمل أهله وتقول الشجرة: يا مسلم هذا يهودي خلفي فاقتله، ويخرج الدابة التي تكلم الناس، ولهذا جعل شهورهم قمرية لا شمسية، لان آية القمر ممحوة، قال تعالى: فمحونا آية الليل وجعلنا آية النهار مبصرة (12 - الاسراء) فكان ذلك تقوية لكتم ايمانهم (2).",
+      "english": "Most people of this community are predisposed to attain states which no member of former nations reached except after spiritual disciplines, retreats, and exercises of thought that trained their souls. The hearts of the people of invocation and strenuous devotion—the truthful Sufis—were also set aflame, and they attained exalted degrees of divine knowledge. The learned of this community were as prophets of other nations, and wonders were opened in their inward beings corresponding to what used to appear among the Children of Israel, though they did not know the value of these gifts. Their secrets were concealed by their realisation in the Real, and they had no outward appearance except where the Real appears, which is in the Hereafter. This is also why speech and life manifested among inanimate things and plants so often within this community: the stone greeting the Prophet, the pebbles glorifying God in his palm, the mountain's love for him, the tree-trunk's yearning, and the poisoned foreleg speaking. He is also reported to have said that the Hour will not come until a person's whip speaks to him and his thigh recounts what his household did, and a tree says, 'O Muslim, here is a Jew behind me; kill him,' and the Beast will come out to speak to humankind. For this reason God made their months lunar rather than solar, for the sign of the Moon is effaced: 'We effaced the sign of night and made the sign of day illuminating' [Qurʾān 17:12]. This strengthened the concealment of their faith.",
+      "notes": "Reports of miracles and eschatological violent imagery are cited by the historical author; translation does not endorse hostility to Jews or establish hadith authenticity. The chain and status of «علماء هذه الأمة كأنبياء سائر الأمم» and other reports need verification; pronoun assignment of source voice remains open.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.748",
+      "number": 748,
+      "pageStart": 488,
+      "pageEnd": 488,
+      "arabic": "ثم إن الله خلق الدواب التي تعمر البحر الذي بين السماء والأرض ثم جبال الثلج والبرد الذي دون البحر مما يلي الأرض، كون فيها حيتان بيضاء صغار قد يصل إليها (3) بعض الطيور فيصيد منها، ثم ما زال التكوين يتنزل إلى أن نزل إلى الأرض فتكونت المعادن ثم النباتات ثم الحيوانات ثم الانسان، وجعل اخر هذه أول التي يليها، وكان آخر المعادن وأول النبات الكماة (4) وآخر النبات وأول الحيوانات النخلة وآخر الحيوان وأول الانسان القردة، فلنذكر نشأة الانسان، هذا كلامه.",
+      "english": "Then God created the creatures that populate the sea between heaven and earth, followed by the mountains of snow and hail beneath the sea on the earthly side. He brought into existence small white fish there; certain birds may reach them and catch them. Formation continued to descend until it reached the earth. First minerals were formed, then plants, then animals, then the human being. He made the last degree of each realm the first of the next: the last of minerals and beginning of plants is the truffle; the last of plants and beginning of animals is the date-palm; the last of animals and beginning of the human realm is the ape. Let us now discuss the origin of the human being.' Thus far his words.",
+      "notes": "Traditional scale of degrees (minerals→plants→animals→human), not a modern evolutionary mechanism. The source explicitly closes its extended quotation «هذا كلامه».",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.749",
+      "number": 749,
+      "pageStart": 488,
+      "pageEnd": 488,
+      "arabic": "وقال الفرغاني: لما ظهر بما تكرر ان أول ما تعين من غيب الغيب النفس الرحماني وحدانيا مندرجا فيه الفعل والانفعال، بل الأسماء والصفات والافعال، حتى كان العالم والعلم والمعلوم والفاعل والقابل واحدا في المرتبة الأولى التي هي الوحدة الحقيقية الجامعة بين الأحدية والواحدية بالنسبة السوية.",
+      "english": "Al-Farghānī said: As the foregoing has repeatedly shown, the first thing determined from the Unseen of the Unseen was the Breath of the Merciful, in a unitary mode which included both acting and being acted upon—indeed, Names, attributes, and acts—such that knower, knowing, known, agent, and recipient were one in the first degree. This is true Unity [al-waḥda al-ḥaqīqiyya], which gathers Aḥadiyya (oneness) and Wāḥidiyya (unitary multiplicity) in a balanced relation.",
+      "notes": "A new Farghānī quotation begins; crucial distinction of first degree unity and the two divine considerations. This is the text's own ontology, not a report of psychological experience.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.750",
+      "number": 750,
+      "pageStart": 488,
+      "pageEnd": 489,
+      "arabic": "ثم عين من عينها عين النفس الرحماني في المرتبة الثانية التي هي اعتباره المشتمل بحكم وأحديته على تفاصيل غير متناهية متعلقة بأبديته.",
+      "english": "From its own entity, the entity of the Breath of the Merciful was then determined in the second degree—considered in the aspect which, by the ruling of its oneness, contains endless differentiated details belonging to its everlastingness.",
+      "notes": "Short second-stage definition continues in §4.751; no completion credit for p.489 if further sections begin there.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    }
+  ]
+}
