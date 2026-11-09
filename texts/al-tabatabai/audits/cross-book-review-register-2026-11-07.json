@@ -3,14 +3,15 @@
   "title": "Cross-book source and English review register",
   "summary": {
     "date": "2026-11-09",
-    "totalReaderUnits": 293,
+    "totalReaderUnits": 300,
     "M": {
-      "localReading": 46,
-      "localTranslated": 46,
+      "localReading": 53,
+      "localTranslated": 53,
       "fullAuthorialBooks": 6,
       "completeLocalBookContent": false,
-      "mappedAuthorialTopics": 74,
-      "status": "46 locally paired working units; 17 Book II readings including one explicitly normalized section. Complete six-book al-Manṭiq remains not imported or translated."
+      "mappedAuthorialTopics": 77,
+      "status": "53 working Arabic–English selections (11 introduction, 11 Book I, 17 Book II, 14 Book III); full al-Manṭiq remains untranslated; 1968 Arabic printed collation pending.",
+      "localBook1Units": 11
     },
     "B": {
       "localReading": 111,
@@ -29,10 +30,10 @@
       "adoptedPrintedEditorialEmendations": 8,
       "supplementaryCriticalNotes": 8,
       "englishAutomatedStructureScreened": 136,
-      "englishLocalBilingualRead": 28,
+      "englishLocalBilingualRead": 68,
       "englishIndependentlyCollated": 0,
       "englishTriageRegister": "nihaya-english-collation-triage-2026-11-09.json",
-      "secondEditionDigitalSpotChecks": 4
+      "secondEditionDigitalSpotChecks": 5
     },
     "expertReviewedUnitsVerified": 0,
     "expertReviewedUnitStatus": "Not documented; zero units are claimed to have passed independent specialist review",
@@ -414,6 +415,174 @@
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "selected authorial opening on linguistic signification; full logic corpus not yet included",
       "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+    },
+    {
+      "id": "M-L-05",
+      "book": "M",
+      "stage": "L",
+      "chapter": 5,
+      "title": "Five kinds of single expressions: specific, equivocal, transferred, coined, literal and figurative",
+      "source": {
+        "page": "38–41",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable Arabic text (normalized punctuation; printed 1968 witness uncollated)",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=38&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2937,
+      "englishCharacters": 3571,
+      "sourceEditionReviewed": "Dār al-Taʿāruf 1402 AH searchable Arabic text only; early 1968 printed scan independently not yet collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "Working English newly rendered; NOT yet independently checked clause-by-clause against a second reliable Arabic witness",
+      "sourceAssessment": "Only selected authorial Book I passages imported; full 455-page six-book text not locally transcribed",
+      "nextReview": "Check printed p. 38–41 against 1968 original, preserving all exercises, remarks, exceptions, and rhetorical particles before independently certifying."
+    },
+    {
+      "id": "M-L-06",
+      "book": "M",
+      "stage": "L",
+      "chapter": 6,
+      "title": "Synonymy and difference: words and conceptual meanings",
+      "source": {
+        "page": "42–43",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable Arabic text (normalized punctuation; printed 1968 witness uncollated)",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=42&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 902,
+      "englishCharacters": 1234,
+      "sourceEditionReviewed": "Dār al-Taʿāruf 1402 AH searchable Arabic text only; early 1968 printed scan independently not yet collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "Working English newly rendered; NOT yet independently checked clause-by-clause against a second reliable Arabic witness",
+      "sourceAssessment": "Only selected authorial Book I passages imported; full 455-page six-book text not locally transcribed",
+      "nextReview": "Check printed p. 42–43 against 1968 original, preserving all exercises, remarks, exceptions, and rhetorical particles before independently certifying."
+    },
+    {
+      "id": "M-L-07",
+      "book": "M",
+      "stage": "L",
+      "chapter": 7,
+      "title": "Three relations of distinct concepts: similarity, difference, and opposition",
+      "source": {
+        "page": "43–45",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable Arabic text (normalized punctuation; printed 1968 witness uncollated)",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=43&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 3263,
+      "englishCharacters": 2735,
+      "sourceEditionReviewed": "Dār al-Taʿāruf 1402 AH searchable Arabic text only; early 1968 printed scan independently not yet collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "Working English newly rendered; NOT yet independently checked clause-by-clause against a second reliable Arabic witness",
+      "sourceAssessment": "Only selected authorial Book I passages imported; full 455-page six-book text not locally transcribed",
+      "nextReview": "Check printed p. 43–45 against 1968 original, preserving all exercises, remarks, exceptions, and rhetorical particles before independently certifying."
+    },
+    {
+      "id": "M-L-08",
+      "book": "M",
+      "stage": "L",
+      "chapter": 8,
+      "title": "The four kinds of opposition",
+      "source": {
+        "page": "45–47",
+        "edition": "al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable Arabic; punctuation normalized, 1968 printed witness not yet fully collated",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=45&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2460,
+      "englishCharacters": 2710,
+      "sourceEditionReviewed": "Dār al-Taʿāruf 1402 AH searchable Arabic text only; early 1968 printed scan independently not yet collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "Working English newly rendered; NOT yet independently checked clause-by-clause against a second reliable Arabic witness",
+      "sourceAssessment": "Only selected authorial Book I passages imported; full 455-page six-book text not locally transcribed",
+      "nextReview": "Check printed p. 45–47 against 1968 original, preserving all exercises, remarks, exceptions, and rhetorical particles before independently certifying."
+    },
+    {
+      "id": "M-L-09",
+      "book": "M",
+      "stage": "L",
+      "chapter": 9,
+      "title": "Simple and compound expressions, complete and incomplete compounds",
+      "source": {
+        "page": "49–50",
+        "edition": "al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable Arabic; punctuation normalized, 1968 printed witness not yet fully collated",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=49&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1968,
+      "englishCharacters": 2432,
+      "sourceEditionReviewed": "Dār al-Taʿāruf 1402 AH searchable Arabic text only; early 1968 printed scan independently not yet collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "Working English newly rendered; NOT yet independently checked clause-by-clause against a second reliable Arabic witness",
+      "sourceAssessment": "Only selected authorial Book I passages imported; full 455-page six-book text not locally transcribed",
+      "nextReview": "Check printed p. 49–50 against 1968 original, preserving all exercises, remarks, exceptions, and rhetorical particles before independently certifying."
+    },
+    {
+      "id": "M-L-10",
+      "book": "M",
+      "stage": "L",
+      "chapter": 10,
+      "title": "Assertion and performance: what can be true or false",
+      "source": {
+        "page": "50–51",
+        "edition": "al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable Arabic; punctuation normalized, 1968 printed witness not yet fully collated",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=50&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1459,
+      "englishCharacters": 2201,
+      "sourceEditionReviewed": "Dār al-Taʿāruf 1402 AH searchable Arabic text only; early 1968 printed scan independently not yet collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "Working English newly rendered; NOT yet independently checked clause-by-clause against a second reliable Arabic witness",
+      "sourceAssessment": "Only selected authorial Book I passages imported; full 455-page six-book text not locally transcribed",
+      "nextReview": "Check printed p. 50–51 against 1968 original, preserving all exercises, remarks, exceptions, and rhetorical particles before independently certifying."
+    },
+    {
+      "id": "M-L-11",
+      "book": "M",
+      "stage": "L",
+      "chapter": 11,
+      "title": "The three kinds of simple expression: verb, noun, and particle",
+      "source": {
+        "page": "51–53",
+        "edition": "al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable Arabic; punctuation normalized, 1968 printed witness not yet fully collated",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=51&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2150,
+      "englishCharacters": 2676,
+      "sourceEditionReviewed": "Dār al-Taʿāruf 1402 AH searchable Arabic text only; early 1968 printed scan independently not yet collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "Working English newly rendered; NOT yet independently checked clause-by-clause against a second reliable Arabic witness",
+      "sourceAssessment": "Only selected authorial Book I passages imported; full 455-page six-book text not locally transcribed",
+      "nextReview": "Check printed p. 51–53 against 1968 original, preserving all exercises, remarks, exceptions, and rhetorical particles before independently certifying."
     },
     {
       "id": "M-K-01",
@@ -4059,7 +4228,7 @@
         "arabicParagraphs": 16,
         "englishParagraphs": 16,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -4194,7 +4363,7 @@
         "reviewHints": [
           "paragraph-reflow"
         ],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -4430,7 +4599,7 @@
         "arabicParagraphs": 3,
         "englishParagraphs": 3,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -4726,7 +4895,7 @@
         "reviewHints": [
           "lexical-spot-check"
         ],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -4828,7 +4997,7 @@
         "arabicParagraphs": 8,
         "englishParagraphs": 6,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -5202,7 +5371,7 @@
         "reviewHints": [
           "paragraph-reflow"
         ],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -5342,7 +5511,7 @@
         "arabicParagraphs": 9,
         "englishParagraphs": 7,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -5360,10 +5529,10 @@
       "arabicPresent": true,
       "englishPresent": true,
       "arabicCharacters": 1342,
-      "englishCharacters": 2264,
+      "englishCharacters": 2256,
       "sourceEditionReviewed": "additional 1428 two-volume witness identified, NOT yet exhaustively collated",
       "sourceParityPercent": null,
-      "editorialNotes": 0,
+      "editorialNotes": 1,
       "supplementalCriticalNoteIds": [],
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
@@ -5374,7 +5543,7 @@
         "arabicParagraphs": 12,
         "englishParagraphs": 11,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -5406,7 +5575,7 @@
         "arabicParagraphs": 7,
         "englishParagraphs": 5,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -5438,7 +5607,7 @@
         "arabicParagraphs": 14,
         "englishParagraphs": 12,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -5470,7 +5639,7 @@
         "arabicParagraphs": 13,
         "englishParagraphs": 13,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -5764,7 +5933,7 @@
         "reviewHints": [
           "paragraph-reflow"
         ],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -5798,7 +5967,7 @@
         "reviewHints": [
           "paragraph-reflow"
         ],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -5930,7 +6099,7 @@
         "reviewHints": [
           "lexical-spot-check"
         ],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -5996,7 +6165,7 @@
         "arabicParagraphs": 4,
         "englishParagraphs": 3,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -6028,7 +6197,7 @@
         "arabicParagraphs": 7,
         "englishParagraphs": 6,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -6045,11 +6214,11 @@
       },
       "arabicPresent": true,
       "englishPresent": true,
-      "arabicCharacters": 2597,
+      "arabicCharacters": 2596,
       "englishCharacters": 4256,
       "sourceEditionReviewed": "additional 1428 two-volume witness identified, NOT yet exhaustively collated",
       "sourceParityPercent": null,
-      "editorialNotes": 0,
+      "editorialNotes": 1,
       "supplementalCriticalNoteIds": [],
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
@@ -6060,7 +6229,7 @@
         "arabicParagraphs": 15,
         "englishParagraphs": 13,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -6228,7 +6397,7 @@
         "reviewHints": [
           "lexical-spot-check"
         ],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -6262,7 +6431,7 @@
         "reviewHints": [
           "lexical-spot-check"
         ],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -6294,7 +6463,7 @@
         "arabicParagraphs": 12,
         "englishParagraphs": 10,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -6394,7 +6563,7 @@
         "reviewHints": [
           "paragraph-reflow"
         ],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -6426,7 +6595,7 @@
         "arabicParagraphs": 7,
         "englishParagraphs": 6,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -6458,7 +6627,7 @@
         "arabicParagraphs": 7,
         "englishParagraphs": 7,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -6492,7 +6661,7 @@
         "reviewHints": [
           "paragraph-reflow"
         ],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -6690,7 +6859,7 @@
         "arabicParagraphs": 4,
         "englishParagraphs": 4,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -6886,7 +7055,7 @@
         "arabicParagraphs": 10,
         "englishParagraphs": 10,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -6918,7 +7087,7 @@
         "arabicParagraphs": 8,
         "englishParagraphs": 6,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -6950,7 +7119,7 @@
         "arabicParagraphs": 3,
         "englishParagraphs": 3,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -6982,7 +7151,7 @@
         "arabicParagraphs": 4,
         "englishParagraphs": 4,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -7000,10 +7169,10 @@
       "arabicPresent": true,
       "englishPresent": true,
       "arabicCharacters": 109,
-      "englishCharacters": 178,
+      "englishCharacters": 161,
       "sourceEditionReviewed": "additional 1428 two-volume witness identified, NOT yet exhaustively collated",
       "sourceParityPercent": null,
-      "editorialNotes": 0,
+      "editorialNotes": 1,
       "supplementalCriticalNoteIds": [],
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
@@ -7016,7 +7185,7 @@
         "reviewHints": [
           "lexical-spot-check"
         ],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -7146,7 +7315,7 @@
         "arabicParagraphs": 9,
         "englishParagraphs": 9,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -7178,7 +7347,7 @@
         "arabicParagraphs": 8,
         "englishParagraphs": 7,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -7210,7 +7379,7 @@
         "arabicParagraphs": 7,
         "englishParagraphs": 5,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -7372,7 +7541,7 @@
         "arabicParagraphs": 3,
         "englishParagraphs": 3,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -7468,7 +7637,7 @@
         "arabicParagraphs": 6,
         "englishParagraphs": 6,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -7535,7 +7704,7 @@
           "paragraph-reflow",
           "lexical-spot-check"
         ],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -7633,7 +7802,7 @@
         "arabicParagraphs": 7,
         "englishParagraphs": 6,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -7699,7 +7868,7 @@
         "arabicParagraphs": 10,
         "englishParagraphs": 8,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -7765,7 +7934,7 @@
         "arabicParagraphs": 5,
         "englishParagraphs": 5,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -8165,7 +8334,7 @@
         "reviewHints": [
           "paragraph-reflow"
         ],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },

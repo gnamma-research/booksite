@@ -9,7 +9,7 @@
     "institutionalScan": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000780/1",
     "institutionalScanYear": 1968
   },
-  "status": "46 locally paired working units: 11 introduction, four Book I, 17 Book II, 14 Book III. The original six books are not completely transcribed or translated; some English and one normalized Arabic need specialist philological review.",
+  "status": "53 original Arabic–English working reading units: introduction 11, Book I 11, Book II 17, Book III 14. Remaining parts of Books I–III and all Books IV–VI are absent from the local bilingual edition; the linked full source is not a completed translation.",
   "parts": [
     {
       "book": 0,
@@ -131,30 +131,55 @@
         {
           "arabic": "المختص والمشترك والمنقول والمرتجل والحقيقة والمجاز",
           "english": "Specific, equivocal, transferred and coined words; literal and figurative meaning",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=38&type=c_fbook",
+          "locatorStatus": "observed in 1402 AH searchable source page; early 1968 printed witness pending visual collation",
+          "firstPrintedPage": 38
         },
         {
           "arabic": "الترادف والتباين",
           "english": "Synonymy and difference",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=42&type=c_fbook",
+          "locatorStatus": "observed in 1402 AH searchable source page; early 1968 printed witness pending visual collation",
+          "firstPrintedPage": 42
         },
         {
           "arabic": "المفرد والمركب",
           "english": "Simple and composite expressions",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=49&type=c_fbook",
+          "locatorStatus": "observed in 1402 AH searchable source page; early 1968 printed witness pending visual collation",
+          "firstPrintedPage": 49
         },
         {
           "arabic": "الخبر والإنشاء",
           "english": "Assertoric and performative expressions",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=50&type=c_fbook",
+          "locatorStatus": "observed in 1402 AH searchable source page; early 1968 printed witness pending visual collation",
+          "firstPrintedPage": 50
+        },
+        {
+          "arabic": "قسمة الألفاظ المتباينة",
+          "english": "Similarity, difference, and opposition (mutaqābilān)",
+          "firstPrintedPage": 43,
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=43&type=c_fbook",
+          "locatorStatus": "observed in 1402 AH searchable source page; early 1968 printed witness pending visual collation"
+        },
+        {
+          "arabic": "أقسام التقابل",
+          "english": "Four kinds of logical opposition",
+          "firstPrintedPage": 45,
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=45&type=c_fbook",
+          "locatorStatus": "observed in 1402 AH searchable source page; early 1968 printed witness pending visual collation"
+        },
+        {
+          "arabic": "أقسام المفرد",
+          "english": "Verb, noun, particle, and dependent meanings",
+          "firstPrintedPage": 51,
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=51&type=c_fbook",
+          "locatorStatus": "observed in 1402 AH searchable source page; early 1968 printed witness pending visual collation"
         }
       ],
-      "availableUnits": 4,
-      "note": "Four opening Book I sections on expressions, signification, and its three kinds now have source-grounded Arabic and working English. All later Book I topics remain in the original linked Arabic source only.",
+      "availableUnits": 11,
+      "note": "Eleven working bilingual sections of Book I are now in the local reader, pp. 29–53; textbook exercises and some further authorial remarks/illustrations still require collation and import. Individual source pages registered against searchable 1402 AH edition; not a complete diplomatic 1968 printed transcription.",
       "url": "https://lib.rafed.net/m/?b_id=1604&page=29&type=c_fbook"
     },
     {
@@ -567,12 +592,12 @@
   "summary": {
     "totalAuthorialBooks": 6,
     "sourcePagesCoveredByRegister": 455,
-    "localTranslatedUnits": 46,
+    "localTranslatedUnits": 53,
     "localIntroUnits": 11,
     "localBook3Units": 14,
     "otherAuthorialBooksLocallyTranslated": 1,
-    "localBook1Units": 4,
+    "localBook1Units": 11,
     "localBook2Units": 17
   },
-  "accuracy": "Book II passage locators p. 56–86 come from Rafed searchable Arabic. The proof at p. 67 contains a source inconsistency also seen in another digital witness; the 1968 ACO scanned print has not been independently collated. Headings not verified to a printed page retain their generic source links."
+  "accuracy": "The new Book I source pages 38–53 have been inspected in the searchable 1402 AH Arabic; normalised punctuation and potential printed variants still need independent 1968 visual collation. Book II's known 1402/1421 symbolic proof inconsistency remains recorded without unsupported manuscript attestation."
 }
