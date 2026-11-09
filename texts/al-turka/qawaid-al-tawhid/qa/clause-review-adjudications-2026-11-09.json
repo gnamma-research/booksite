@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-human-clause-review-v1",
   "date": "2026-11-09",
-  "reviewScope": "Manual comparison of 702 punctuation-delimited Arabic candidates in 21 selected commentary sections (not a complete certification); remaining passages are only inventoried.",
+  "reviewScope": "817 source-anchored Arabic punctuation-clause candidates in 23 commentary units, manually compared to the working English translation; 4,703 other candidates only inventoried and not certified.",
   "sourceBasis": "Current repository JS matn/commentary modules, retained edition N introduction and edition A main/conclusion",
   "method": "Source clause numbers are computed from Arabic punctuation. English ranges are manually matched, not proportional autoalignment. All segments in these eleven sections must be covered exactly once; unresolved readings remain explicit.",
   "units": [
@@ -1037,9 +1037,163 @@
           "note": "Closing injunction to reflect and prayer correctly attributed to the author."
         }
       ]
+    },
+    {
+      "id": "SH-017",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 4,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Initial exclusion of the second case and meaning of the Necessary's determination being itself are retained."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 11,
+          "enStart": 3,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Self-distinction is not differentiation through a separately added external quality; the dependence reductio follows."
+        },
+        {
+          "arStart": 12,
+          "arEnd": 24,
+          "enStart": 5,
+          "enEnd": 10,
+          "status": "checked",
+          "note": "Mere external thisness is rejected as the Necessary's essence because such an aggregate of relational accidents does not intellect itself or others."
+        },
+        {
+          "arStart": 25,
+          "arEnd": 28,
+          "enStart": 11,
+          "enEnd": 11,
+          "status": "checked",
+          "note": "Self-determination gives the Necessary what individual thisness gives a particular without identifying God with a heap of accidents."
+        },
+        {
+          "arStart": 29,
+          "arEnd": 34,
+          "enStart": 12,
+          "enEnd": 16,
+          "status": "checked",
+          "note": "Two-horned objection—non-exhaustiveness of fourfold division or common predication—is fully retained as adversary's objection."
+        },
+        {
+          "arStart": 35,
+          "arEnd": 40,
+          "enStart": 17,
+          "enEnd": 21,
+          "status": "checked",
+          "note": "Reply disambiguates shared meaning from commonality opposed to self-distinction and denies a separate counterpart."
+        },
+        {
+          "arStart": 41,
+          "arEnd": 51,
+          "enStart": 22,
+          "enEnd": 27,
+          "status": "checked",
+          "note": "Two kinds of determination—opposition versus comprehensiveness—distinguished by positive contradictory attributes versus a feature lacking in the other."
+        },
+        {
+          "arStart": 52,
+          "arEnd": 55,
+          "enStart": 28,
+          "enEnd": 31,
+          "status": "checked-with-note",
+          "note": "Marks of opposition are extrinsic relations; marks of comprehensiveness are intrinsic to being the whole/general, as an analogy not identification of the Necessary with a physical aggregate."
+        },
+        {
+          "arStart": 56,
+          "arEnd": 65,
+          "enStart": 32,
+          "enEnd": 35,
+          "status": "checked-with-note",
+          "note": "Comprehensive form's unity of gathering and Qurʾān 112:3–4 retained; the terse two positive opposition-kinds are not overexplained."
+        },
+        {
+          "arStart": 66,
+          "arEnd": 70,
+          "enStart": 36,
+          "enEnd": 37,
+          "status": "checked",
+          "note": "Concluding recurrence of individuality analogy and exhortation is present."
+        }
+      ]
+    },
+    {
+      "id": "SH-032",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 8,
+          "enStart": 1,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Undifferentiated first determination gathers aḥadiyya and wāḥidiyya; no real difference of names is being asserted at that initial register."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 14,
+          "enStart": 4,
+          "enEnd": 6,
+          "status": "checked",
+          "note": "Hidden levels and letters still unarticulated within breath preserve the causal analogy; there is no premature physical creation claim."
+        },
+        {
+          "arStart": 15,
+          "arEnd": 19,
+          "enStart": 7,
+          "enEnd": 7,
+          "status": "checked",
+          "note": "Manifestation is predicated through its relations and affairs, expressly not the unconditioned essence qua essence."
+        },
+        {
+          "arStart": 20,
+          "arEnd": 26,
+          "enStart": 8,
+          "enEnd": 10,
+          "status": "checked-with-note",
+          "note": "Movement of love, volitional inclination and a second disclosure translated with source's syntactic variants around بحسبه تجلى noted."
+        },
+        {
+          "arStart": 27,
+          "arEnd": 34,
+          "enStart": 11,
+          "enEnd": 14,
+          "status": "checked",
+          "note": "Two grounds for calling it the Breath of the All-Merciful distinguished: formal articulation and relief of distress."
+        },
+        {
+          "arStart": 35,
+          "arEnd": 41,
+          "enStart": 15,
+          "enEnd": 18,
+          "status": "checked-with-note",
+          "note": "Ibn ʿArabī's quote reproduced as a quotation within the grandson's commentary; not an independently collated entire source."
+        },
+        {
+          "arStart": 42,
+          "arEnd": 44,
+          "enStart": 19,
+          "enEnd": 26,
+          "status": "checked-with-note",
+          "note": "All eight couplets retained; ellipses and uncertain images remain literal or bracketed, not rewritten as modern paraphrase."
+        },
+        {
+          "arStart": 45,
+          "arEnd": 45,
+          "enStart": 27,
+          "enEnd": 27,
+          "status": "checked",
+          "note": "Final author's explanatory remark and imperative to reflect are distinguished from the preceding Ibn ʿArabī verse."
+        }
+      ]
     }
   ],
-  "claimedManuallyComparedArabicClauses": 702,
+  "claimedManuallyComparedArabicClauses": 817,
   "issues": "Three passages corrected; one passage contains two connected technical-semantic corrections; additional textual cruxes flagged without conjectural emendation.",
   "noWitnessesCollated": true
 }
