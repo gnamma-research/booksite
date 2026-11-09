@@ -182,7 +182,7 @@ The verified Arabic pages are [24](https://ablibrary.net/book_content/b/9606/24?
 
 **Revised or confirmed English:** through the preponderance and precedence of mercy, in contrast to the furthest limit of the judgment called anger, upward rather than downward.
 
-**Editorial decision:** The syntactic force of على أنها غايات حكم الغضب عارجا لا نازلا is not settled; previous working English over-smoothed it. Requires 1876/early-witness comparison before fixing an English lemma.
+**Editorial decision:** The photographed I1876 p10 (scan14) agrees at the bounded phrase حكم الغضب عارجا لا نازلا. The wider syntactic force of على أنها غايات remains unsettled; do not smooth the sentence or invent an emendation on this basis.
 
 **Source:** https://ablibrary.net/book_content/b/9606/25?lang=ar
 
@@ -586,13 +586,13 @@ The verified Arabic pages are [24](https://ablibrary.net/book_content/b/9606/24?
 
 **Source:** https://ablibrary.net/book_content/b/9606/29?lang=ar
 
-### CR003-059 · Beirut p. 29 · crux
+### CR003-059 · Beirut p. 29 · corrected from photographed I1876 print
 
 **Arabic (B2007):** والتعيّن الأول المذكورة وقلبه المطهّر التقي النقي صورة هذا التعين والبرزخية
 
-**Revised or confirmed English:** and the first determination just mentioned—and his pure, godfearing heart—[are described as] the image of this determination and intermediacy.
+**Revised or confirmed English:** The first determination just mentioned, and his pure and God-fearing heart, are described in relation to this determination and intermediacy [coordination remains compressed].
 
-**Editorial decision:** Modern digital Arabic has an apparent agreement/syntactic problem (المذكورة and adjacent clauses). The earlier smooth English reading suppressed this. Preserve as a textual crux pending 1876 and manuscript images.
+**Editorial decision:** **I1876 printed p.13 (PDF scan17)** visibly reads masculine **المذكور**, agreeing with **التعيّن**; B2007 p.29 instead has **المذكورة**. Prefer I1876 provisionally in the edited lemma: **والتعيّن الأول المذكور**; preserve the Beirut reading in the apparatus. This is a HISTORICAL PRINT difference, not a manuscript variant. Coordination after the adjective still requires closer grammatical and manuscript study.
 
 **Source:** https://ablibrary.net/book_content/b/9606/29?lang=ar
 
