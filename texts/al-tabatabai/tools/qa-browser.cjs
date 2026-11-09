@@ -53,11 +53,15 @@ async function run(browserType){
     });
     await check(browserType.name()+' Muẓaffar Book II universals bilingual coverage',async()=>{
       await page.locator('[data-part-jump="passage-M-P-01"]').click();
+      const expectedArabic={
+        'M-K-01':'الجزئي','M-K-02':'الجزئي','M-K-03':'الجزئي',
+        'M-K-04':'المشكك','M-K-05':'المفهوم','M-K-06':'الحمل','M-K-07':'النسب الأربع'
+      };
       for(const id of ['M-K-01','M-K-02','M-K-03','M-K-04','M-K-05','M-K-06','M-K-07']){
         const passage=page.locator('#passage-'+id);
         await passage.waitFor({state:'attached',timeout:35000});
         const text=await passage.textContent();
-        assert.ok(text.includes('الكلّي')||text.includes('الجزئي'),id+' Arabic source absent');
+        assert.ok(text.includes(expectedArabic[id]),id+' expected original Arabic wording not rendered');
         assert.ok(text.length>500,id+' bilingual content too short');
       }
       assert.match(await page.locator('#passage-M-K-04').textContent(),/gradation|graded|mushakkik/i);
