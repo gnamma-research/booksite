@@ -11,7 +11,7 @@
       "author": "Ṣadr al-Dīn al-Qūnawī",
       "type": "primary-matn",
       "content_status": "Online-witness translation begun; no manuscript collation",
-      "entry_count": 25,
+      "entry_count": 35,
       "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
     },
     {
@@ -1010,6 +1010,195 @@
         }
       ],
       "commentary_alignment": "Source lemma with contiguous contextual commentary in al-Mahāʾimī's first-pass English edition; no claim of doctrinal agreement."
+    },
+    {
+      "id": "QUN-NU-012-A",
+      "order": 9.1,
+      "section": "Text Twelve: the fullest knowledge and the union of knower and known",
+      "locator": "online transcription printed pp. 249–250, lines 465–469",
+      "arabic": "نصّ شريف: اعلم أن أعلى درجات العلم بالشيء أي شيء كان، وبالنسبة إلى أي عالم كان، وسواء كان المعلوم شيئا واحدا أو أشياء، إنما تحصل بالاتحاد بالمعلوم وعدم مغايرة العالم له؛ لأن سبب الجهل بالشيء المانع من كمال إدراكه ليس غير غلبة حكم ما به يمتاز كل واحد منهما عن الآخر، فإن ذلك بعد معنوي، والبعد حيث كان مانع من كمال إدراك العبد البعيد، وتفاوت درجات العلم بالشيء بمقدار تفاوت غلبة حكم ما به يتّحد العالم بالمعلوم، وإنه القرب الحقيقي الرافع للفصل الذي هو البعد الحقيقي المشار إليه بأحكام ما به المباينة والامتياز. وإذا شهدت هذا الأمر وذقته بكشف محقق علمت أن سبب كمال علم الحق بالأشياء إنما هو من أجل استجلائه إيّاها في نفسه، واستهلاك كثرتها وغيريتها في وحدته، فإن كينونية كل شيء في أي شيء كان، سواء كان المحل معنويّا أو صوريّا، إنما يكون ويظهر بحسب ما تعين وظهر فيها. ولهذا نقول: الحق علم نفسه بنفسه، وعلم الأشياء في نفسه بعين علمه بنفسه، ولما ورد الإخبار الإلهي بأن اللّه تعالى: «كان ولم يكن معه شيء»، انتفت غيرية الأشياء بالنسبة إلى الوحدة التي هي محلها العيني، وثبتت أولية الحق من حيث الوحدة. وبامتياز كثرة الأشياء المتعقلة ثانيا، الكامنة من قبل في ضمن الوحدة، والجمع بينهما وبين الوحدة بالفعل، ظهر الكمال المستجن في الوحدة أولا، فانفتح بذلك باب كمال الجلاء والاستجلاء الذي هو المطلوب الحقيقي، وظهرت أحكام الوحدة في الكثرة،",
+      "english": "A noble text. The highest degree of knowledge of anything, for any knower, whether one object or many, is attained through union with the known and the absence of otherness between knower and known. The source of ignorance that obstructs perfect apprehension is the predominance of what distinguishes each from the other: a distance that is intelligible rather than spatial. Such distance hinders complete apprehension. Degrees of knowledge vary with the extent to which the principle of unity between knower and known predominates; this is true proximity, overcoming the separation constituted by difference and distinction. If you witness and taste this through verified unveiling, you will recognise why the Real's knowledge of things is perfect: He beholds them within Himself, and their multiplicity and otherness are effaced in His unity. The presence of anything within another, whether the locus is intelligible or formal, takes the character appropriate to its manner of determination and appearance there. Thus we say that the Real knows Himself through Himself, and things within Himself through that very knowledge of Himself. The report that God 'was, and nothing was with Him' negates the otherness of things relative to the unity that is their intrinsic locus and establishes His priority in unity. When the intelligible multiplicity formerly contained within unity becomes distinct, and that multiplicity is combined with unity in actuality, the perfection latent within unity comes to appearance. The way is thereby opened to the fuller manifestation and beholding which is the intended end, and the rulings of unity appear in multiplicity—",
+      "notes": "This record ends in an authorial sentence continued immediately in 012-B; the final dash explicitly marks continuity. 'Union' is not to be taken as the numerical identity of distinct material substances. The saying 'God was...' requires a separate textual source check.",
+      "tags": [
+        "ilm",
+        "ittihad",
+        "wahda",
+        "jam",
+        "kashf"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-012-B",
+      "order": 9.11,
+      "section": "Text Twelve: unity in multiplicity, degrees of joy and the one decree",
+      "locator": "online transcription printed p. 250, lines 474–477",
+      "arabic": "والكثرة في الوحدة، فوحّدت الوحدة الكثرة؛ لكونها صارت قدرا مشتركا بين المتكثرات المتميزة بالذات بعضها عن بعض، فوصلت فصولها؛ لأنها جمعت بذاتها كما ذكرنا، وعددت المتكثرات الواحد من حيث التعينات التي هي سبب تنوعات ظهور الواحد بالصبغ والإصباغ، والكيفيات المختلفة التي اقتضتها اختلافات استعدادات المتكثرات القابلة للتجلّي الواحد فيها، فتجدّدت معرفة أنواع الظهورات والأحكام اللازمة لها التي هي عبارة عن تأثير بعضها في البعض بالإبرام والنقض، ظاهرا وباطنا، علوّا وسفلا، مؤقتا وغير مؤقت، مناسبا وغير مناسب، كل ذلك بالاتصال الحاصل بينها بالتجلّي الوجودي الوحداني الجامع شملها كما ذكرنا. فالعلم والنعيم والسعادة على اختلاف ضروب الجميع إنما هو بحسب المناسبة، والجهل والعذاب والشقاء بحسب قوة أحكام المباينة والامتياز، وأما امتزاج أحكام ما به الاتحاد وأحكام ما به الامتياز فأيدي السلطنة، ومحتد كل جملة من تلك الأحكام بضروب ما من المناسبة ومرجعها من حيث الإضافة ومستندها هو المسمّى بالمرتبة فافهم. ولما شرعت في كتابة هذا النص قيل لي في باطني في أثناء الكتابة: الأحكام المضافة إلى الوحدة والواحد الحق، والمعبر عنها بأحكام الوجوب أصلها من حيث الوحدة حكم واحد هو حقيقة القضاء، والمقادير أثر تعددات المعلومات لذلك الحكم الواحد، وظهور الوجود الواحد بموجب تلك التعديدات تأثيرا أولا، وتأثيرا ثانيا في المعدودات بإعادة أثرها عليها، فاعلم ذلك وتدبّر غريب ما نبّهت عليه تفز بالعلم العزيز، واللّه المرشد.",
+      "english": "—and multiplicity in unity. Unity thereby unifies multiplicity by becoming the common measure among the many, whose members remain distinct in themselves; it joins their differentiating features because it gathers them through itself. Conversely, the many differentiate the one by the determinations responsible for its various appearances, colourings and qualities in accordance with the diverse preparedness of recipients of the one disclosure. This yields knowledge of the varieties of manifestation and their concomitant rulings, including what is called their mutual effect—affirmation and negation, outwardly and inwardly, above and below, with or without temporal limitation, congenial or uncongenial. All this occurs through the linkage established among them by the one existential self-disclosure encompassing them. Knowledge, delight and felicity, in their many kinds, follow from correspondence; ignorance, pain and wretchedness follow from the strength of separation and difference. Where the principles of union and distinction are mingled, their various rulings obtain, and each complex of these rulings has its origin and relational reference in what is called a rank. When I began writing this text, I was inwardly told: the judgements attributed to unity and the one Real, called the rulings of necessity, have in unity one fundamental judgement, the reality of decree (*qaḍāʾ*). Particular measures (*maqādīr*) arise from the multiplicity of known things in relation to that one judgement, and the one existence is manifested according to those enumerations, first in the primary bringing into effect and then in its corresponding effects upon the enumerated things. Contemplate this unusual indication and you will attain a precious knowledge. God guides.",
+      "notes": "The passage identifies logical/relational distinctions without positing independent divine existents. Qūnawī reports an inward locution; its status is autobiographical, not externally verified.",
+      "tags": [
+        "wahda",
+        "kathra",
+        "qada",
+        "taayyun",
+        "saada"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-013-A",
+      "order": 9.12,
+      "section": "Text Thirteen: how to know created realities in divine knowledge",
+      "locator": "online transcription printed pp. 250–251, lines 478–485",
+      "arabic": "نصّ شريف يوضح بقية أسرار هذا النص: اعلم أن أعلى درجات العلم بالشيء أي شيء كان ما عدا الحق هو أن تعلمه بعلم يكون نتيجة رؤيتك إيّاه في علم الحق تماما، ولهذا العلم آيتان: أحدهما استغناؤك بما حصل لك من العلم به عن معاودة النظر فيه وتكراره طلبا لمزيد معرفة به، فإن تجدّد العلم بالشيء بطريق الازدياد، بعد دعوى معرفة سابقة به إنما موجبه نقصان العلم به أولا، فلو كمل العلم به أولا لاستغنى عن الازدياد كما هو شأن الحق، وذلك موقوف على كمال الإحاطة العلمية بالمعلوم. والآية الأخرى التي يستدل بها على حصول هذا العلم وصحّته، هو أن ينسحب حكم علمه على الشيء حتى يتجاوز تقيده، فينتهي إلى أن يرى آخره متّصلا بإطلاق الحق. والعلم بالحق ليس كذلك، فإنه إنما يتعلق به من حيث تعينه سبحانه في مرتبة أو مظهر أو حال أو حيثية أو اعتبار، وكلما انضبط للعالم به بتعينه من إحدى الوجوه المذكورة، يظهر علمه ويتعين له من مطلق الذات بحسب حال المتجلي له؛ إذ ذاك ما لم يسبق تعينه قبل ذلك. فكما لا ينتهي أحوال الإنسان إلى غاية تقف عندها فكذلك لا تتناهى تعينات الحق وتنوعات ظهوراته للإنسان، بحسب أحواله التي هي تعيّنات مطلق ذات الحق وتنوعات ظهوراته، وقد سبق التنبيه في غير هذا الموضع على أن الأسماء أسماء أحوال، وعلى أن الأعيان يتقلب عليها الأحوال بخلاف الحق؛ فإنه يتقلب في الأحوال، كما أخبر سبحانه عن ذلك بقوله: ﴿كُلَّ يَوْمٍ هُوَ فِي شَأْنٍ﴾ [الرحمن: 29]. فافهم، ولا تتأول بل اجتهد أن تعاين أولا، فأمن واسلم تسلم، واللّه الموفق.",
+      "english": "A noble text clarifying the remaining secrets of the preceding one. The highest way of knowing anything other than the Real is to know it through a complete vision of it within the Real's knowledge. This knowledge has two signs. First, once it is attained, you have no need to repeat examination of the thing in search of additional knowledge. Growth in knowledge after claiming to know it already reveals that the earlier knowledge was incomplete; a completely encompassing knowledge would not require such increase, as is the case with the Real's knowledge. Second, authentic knowledge of a thing extends beyond its limiting qualification until one sees its furthest reach connected with the absoluteness of the Real. Knowledge of the Real, however, is not like this. It relates to Him only under some determination: a rank, locus of manifestation, state, aspect or conceptual consideration. Whenever the knower confines his apprehension to such a determination, a further knowledge is disclosed from the absolute Essence in accordance with the recipient's state, one that had not previously become determinate for him. Just as human states do not come to a final terminus, neither do the determinations of the Real and the varieties of His manifestation to the human being. These correspond to the human states, themselves considered determinations and varieties of disclosure of the unqualified Essence. I have elsewhere said that names are the names of states, and that states vary over fixed entities, whereas the Real is disclosed in the states. God says: 'Each day He is upon an affair' [Q 55:29]. Understand: do not settle for an interpretive paraphrase; strive first for direct witnessing, then affirm and submit. God grants success.",
+      "notes": "This is especially important for conditional meanings of metaphysical terms: a fresh disclosure to a recipient does not signify newly acquired divine knowledge. ‘The Real is disclosed in states’ should not be read as physical alteration of the Essence.",
+      "tags": [
+        "ilm",
+        "ayan-thabita",
+        "hal",
+        "perspective",
+        "tajalli"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-014-A",
+      "order": 9.13,
+      "section": "Text Fourteen: every named unrestrictedness has a restricted aspect",
+      "locator": "online transcription printed p. 251, line 486",
+      "arabic": "نصّ جليل: اعلم أن ليس في الوجود موجود يوصف بالإطلاق إلا وله وجه التقييد، ولو من حيث تعينه في تعقل متعقل ما أو متعقلين، وكذلك ليس في الوجود موجود محكوم عليه بالتقييد إلا وله وجه إلى الإطلاق، ولكن لا يعرف ذلك إلا من عرف الأشياء معرفة تامة بعد معرفة الحق، ومعرفة كل ما يعرفه به، ومن لم يشهد هذا المشهد ذوقا لم يتحقق بمعرفة الحق والخلق.",
+      "english": "A sublime text. Know that there is no existent described as unrestricted without some aspect of restriction, if only through its determination in the conception of one or more intellects. Likewise, there is no existent judged restricted that lacks an aspect oriented toward unrestrictedness. This is known only to one who knows things completely after knowing the Real, and after knowing all that by which they are known. Anyone who has not witnessed this station through direct tasting has not realised the knowledge of the Real and creation.",
+      "notes": "Do not equate the Unconditioned in the first text with an already determinate object called ‘unrestricted’; a concept of unrestrictedness can itself be restricted in the knower.",
+      "tags": [
+        "itlaq",
+        "taqyid",
+        "perspective"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-015-A",
+      "order": 9.14,
+      "section": "Text Fifteen: essential perfection and perfection through the divine Names",
+      "locator": "online transcription printed pp. 251–252, lines 487–492",
+      "arabic": "نصّ في بيان سر الكمال والأكملية: اعلم أن للحق كمالا ذاتيّا وكمالا أسمائيّا يتوقف ظهوره على إيجاد العالم، والكمالان معا من حيث التعين أسمائيان؛ لأن الحكم من كل حاكم على كل أمر ما مسبوق بتعين المحكوم عليه في تعقل الحاكم، فلو لا تعقّل ذات الحق قبل إضافة الأسماء إليه وامتيازه بغناه في ثبوت وجوده له عما سواه لما حكم بأن له كمالا ذاتيّا. ولا شكّ أن كل تعين يتعقل للحق هو اسم له، فإن الأسماء ليست عند المحققين إلا تعينات الحق، فإذن كل كمال يوصف به الحق فإنه يصدق عليه أنه كمال أسمائي من هذا الوجه، وأما من حيث أن انتشاء أسماء الحق من حضرة وحدته هو من مقتضى ذاته فإن جميع الكمالات التي يوصف بها كمالات ذاتية. وإذا تقرّر هذا فنقول: ما كان له هذا الكمال من ذاته، فإنه لا ينقص بالعوارض واللوازم الخارجية في بعض المراتب، بمعنى أنها تقدح في كماله، ولا جائز أن يتوهم في كماله نقص أيضا بحيث يكمل بها، بل قد يظهر بالعوارض واللوازم في بعض المراتب وصف أكمليّته، ومن جملتها معرفة أن هذا شأنه.",
+      "english": "A text explaining the secret of perfection and greater perfection. Know that the Real possesses essential perfection and a perfection pertaining to the Names, whose manifestation depends upon bringing the world into existence. Yet considered under determination, both sorts are name-related, since every judgement presupposes a determination of its subject in the judge's conception. Had the Essence of the Real not been conceived prior to the addition of Names to Him, and distinguished by its independence in existing from all else, no judgement that He possesses essential perfection could have been formulated. Every determination conceived with reference to the Real is a Name, for in the terminology of the realised knowers the Names are none other than His determinations. Thus every perfection predicated of the Real may be called a name-related perfection from this standpoint. Conversely, because the issuing of divine Names from the Presence of His unity belongs to what His Essence entails, every perfection attributed to Him is essential from that standpoint. It follows that a perfection which is His intrinsically cannot be diminished by external properties or concomitants in particular ranks. Nor may one suppose that He lacks such perfection and acquires it through them. Rather, certain external concomitants may reveal His greater perfection in some ranks, including the knowledge that this is how the matter stands.",
+      "notes": "The two characterisations ‘essential’ and ‘name-related’ are not competing descriptions under a single aspect. The distinction is explicitly indexed to standpoint and to the manifestation of Names.",
+      "tags": [
+        "kamal",
+        "asma",
+        "dhat",
+        "taayyun",
+        "perspective"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-016-A",
+      "order": 9.15,
+      "section": "Text Sixteen: the Real's self-knowledge and the creature's essential poverty",
+      "locator": "online transcription printed p. 252, lines 493–494",
+      "arabic": "نصّ شريف جدّا: حقيقة الحق عبارة عن صورة علمه بنفسه من حيث تعينه في تعقله نفسه باعتبار يوحد العلم والعالم والمعلوم، وصفته الذاتية التي لا تغاير ذاته أحدية جمع لا يتعقل وراءها جمعية، ولا نسبة، ولا اعتبار، والتحقق بشهود هذه الصفة ومعرفتها تماما إنما يكون بمعرفة أن الحق في كل متعين قابل للحكم عليه بأنه متعين بحسب الأمر المقتضي إدراك الحق فيه، متعينا مع العلم بأنه غير محصور في التعين، وأنه من حيث هو هو غير متعين، وهذا هو صورة علمه بنفسه، فيعرف ذاته متعيّنة بالنسبة إلى ظهوره في المتعينات بحسبها، وبالنسبة إلى من لم يشهده إلا في مظهر، ويعرف سبحانه أنه من حيث هو هو غير متعين أيضا حال الحكم عليه بالتعين؛ لقصور إدراك من لم يدركه إلا في مظهر، وسواء اعتبر المظهر عين الظاهر أو غيره. وحقيقة الخلق عبارة عن صورة علم ربهم بهم، وصفتهم الذاتية الفقر المثمر لمطلق الغناء ليس كل فقر فافهم.",
+      "english": "A very noble text. The reality of the Real may be described as the form of His knowledge of Himself under the determination of His self-conception, considered in a respect that unites knowledge, knower and known. His essential attribute, in no way other than His Essence, is the unicity of a gathering beyond which no further gathering, relation or consideration can be conceived. To realise the witnessing and complete knowledge of this attribute requires knowing that in every determinate locus the Real may be judged determinate insofar as that locus permits His apprehension, while knowing that He is not confined to the determination and is, in Himself, undetermined. This is the form of His self-knowledge. His Essence is known as determined relative to His manifestations in determinate things and to those who witness Him only through a locus; yet He remains in Himself undetermined even when judged determinate, because of the limited apprehension of the person who sees Him only in such a manifestation. This holds whether the manifestation is regarded as identical with what is manifest or distinct from it. The reality of created beings, by contrast, is the form of their Lord's knowledge of them; their essential attribute is poverty or dependence that yields an unrestricted richness—but not every kind of poverty does so. Understand.",
+      "notes": "The phrasing ‘form of His self-knowledge’ is restricted by 'under the determination of His self-conception'. It must not reify a mental form in the divine Essence. The last qualification about poverty resists a simplistic equation of all deficiency with perfection.",
+      "tags": [
+        "huwiyya",
+        "ilm",
+        "faqir",
+        "taayyun",
+        "dhat"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-017-A",
+      "order": 9.16,
+      "section": "Text Seventeen: rational, scriptural and unveiled transcendence",
+      "locator": "online transcription printed pp. 252–253, lines 495–500",
+      "arabic": "نصّ شريف جدّا: اعلم أن ثمرة التنزيه العقلي هو تميز الحق عمّا يسمّى سواه بالصفات السلبية؛ حذرا من نقائص مفروضة في الأذهان، غير واقعة في الوجود، والتنزيهات الشرعية ثمرتها نفي التعدد الوجودي، والاشتراك في المرتبة الألوهية، وهي ثابتة أيضا شرعا مع تقرير الاشتراك مع الحق في الصفات الثبوتية؛ لنفي المشابهة والمساواة. وإليه الإشارة بقوله تعالى: ﴿وَاللَّهُ خَيْرُ الرَّازِقِينَ﴾ [الجمعة: 11]، و﴿خَيْرُ الْغَافِرِينَ﴾ [الأعراف: 156]، و﴿أَحْسَنُ الْخَالِقِينَ﴾ [المؤمنون: 14]، و﴿أَرْحَمُ الرَّاحِمِينَ﴾ [يوسف: 92]، و﴿اللَّهُ أَكْبَرُ﴾ ونحو ذلك. وأما تنزيه أهل الكشف فهو بإثبات الجمعية للحق مع عدم الحصر، وتمييز أحكام الأسماء بعضها عن بعض، فإنه ليس كل حكم يصح إضافته إلى كل اسم، بل من الأسماء ما يستحيل إضافة بعض الأحكام إليها، وإن كانت ثابتة لأسماء أخر، وهذا الأمر في الصفات، ومن ثمرات التنزيه الكشفي نفي السوى مع بقاء الحكم العددي، دون فرض نقص يسلب أو تعقل كمال يضاف إلى الحق بإثبات مثبت والسلام.",
+      "english": "A very noble text. The outcome of rational transcendence (*tanzīh*) is to distinguish the Real from what is called other than Him by negating attributes of deficiency, in avoidance of imperfections imagined by minds rather than actually realised in existence. The outcome of scriptural transcendence is to deny multiple independent existents and any sharing of the rank of divinity, while at the same time affirming, through revelation, a common usage of positive attributes that excludes genuine likeness or equality. Scriptural indications include ‘God is the best of providers,’ ‘the best of forgivers,’ ‘the best of creators,’ ‘the most merciful of those who show mercy,’ and ‘God is greater’. The transcendence practiced by the people of unveiling, however, consists in affirming comprehensive gathering to the Real without limitation and in distinguishing the respective rulings of the Names. Not every ruling can be related to every Name: some Names cannot receive rulings applicable to others, and the same holds of attributes. Among the effects of unveiled transcendence is the negation of independent otherness while the numerical judgement remains, without inventing some defect to be negated or some extra perfection that another agent would have to establish for the Real.",
+      "notes": "The Qurʾānic reference labels and some quoted forms in the online transcript are not reliable; notably ‘wa-llāhu khayru l-rāziqīn’ appears at Q 62:11, but 'khayru l-ghāfirīn' is Q 7:155 rather than 7:156 and 'arḥamu l-rāḥimīn' appears in Q 12:64 and 12:92. References require editorial verse-by-verse checking before a critical edition. The three epistemic levels must not be conflated.",
+      "tags": [
+        "tanzih",
+        "aql",
+        "shar",
+        "kashf",
+        "asma"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-018-A",
+      "order": 9.17,
+      "section": "Text Eighteen: presence in divine knowledge and the two perspectives on time",
+      "locator": "online transcription printed p. 253, line 501",
+      "arabic": "نصّ شريف: كينونة كل شيء في شيء إنما يكون بحسب المحل، وسواء كان المحل معنويّا أو صوريّا، ولهذا وصفت المعلومات الممكنة من حيث ثبوت تعيّنها في علم الحق، وارتسامها فيه بالقدم، كما أن كل متعين في علم الحق من وجه آخر لا يخلو عن حكم الحدوث؛ لأن وجود العالم وعلوم أهله حادثان منفعلان، بخلاف وجود الحق وعلمه، فاعلم ذلك ترشد إن شاء اللّه.",
+      "english": "A noble text. A thing's manner of being within another follows the character of the locus in which it is considered, whether the locus is intelligible or formal. Thus the possible objects of knowledge, inasmuch as their determinations are established within the Real's knowledge, may be described as eternal in their inscription therein. Yet each determination in divine knowledge also admits a judgement of origination under another consideration, for the existence of the world and the knowledge possessed by its inhabitants are originated and receptive, unlike the Real's own existence and knowledge. Understand this and, God willing, you will be rightly guided.",
+      "notes": "A particularly economical distinction between eternity *as divinely known* and temporal creation *as instantiated/known in creatures*. The terms 'locus' and 'inscription' do not imply that God is a physical receptacle.",
+      "tags": [
+        "ilm",
+        "azal",
+        "huduth",
+        "mahiyya",
+        "perspective"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-019-A",
+      "order": 9.18,
+      "section": "Text Nineteen: the Essence, first determination and the mirror of knowledge",
+      "locator": "online transcription printed pp. 253–254, lines 502–512",
+      "arabic": "نصّ شريف من أشرف النصوص وأجلّها وأجمعها لكليات أصول المعرفة الإلهية والكونية: اعلم أن إطلاق اسم الذات لا يصدق على الحق إلا باعتبار تعيّنه، التعيّن الذي يلي في تعقل الخلق غير الكمل الإطلاق المجهول النعت العديم الاسم، وأنه وصف سلبيّ للذات، فإنه مفروض الامتياز عن كل تعين، وإنما الأمر الثبوتي الواقع هو التعيّن الأول، وأنه بالذات مشتمل على الأسماء الذاتية التي هي مفاتيح الغيب، ومسمّى الذات لا يغاير أسماؤها بوجه ما. وأما الأسماء فتتغاير ويضاد بعضها بعضا، ويتحد أيضا بعضها مع البعض من حيث الذات الشاملة لجميعها. والأحدية وصف التعين لا وصف المطلق المعين؛ إذ لا اسم للمطلق ولا وصف. ومن حيثية هذه الأسماء باعتبار عدم مغايرة الذات لها نقول: إن الحق مؤثر بالذات فافهم. وللذات لازم واحد فحسب، لا يغايرها إلا مغايرة نسبية، وذلك اللازم هو العلم. والوحدانية ثابتة للحق من حيث العلم، فإن فيه وبه يتعيّن مرتبة الإلهية وغيرها من المراتب والمعلومات؛ لارتسام الجميع فيه، وهو مرآة الذات من حيث اشتمالها على الأسماء الذاتية التي لا يغايرها الذات بوجه ما، كما مرّ، وهو أعني العلم محتد الكثرة المعنوية ومشرعها، وإنما قلت أن العلم كالمرآة للمعلومات وللذات أيضا مع أسمائها الذاتية من أجل أنه باعتبار امتياز العلم عن الذات الامتياز الاعتباري، تعقل تعين الحق في تعقله نفسه في نفسه، فعلمه الذاتي كالمرآة له. ولهذا قلنا في غير هذا الموضع أن حقيقة الحق عبارة عن صورة علمه بنفسه، ونبّهنا أيضا على أن كل ظاهر في مظهر، فإنه يغاير المظهر من وجه أو وجوه إلا الحق، فإن له أن يكون عين الظاهر وعين المظهر فتذكّر.",
+      "english": "A noble text, among the most exalted and comprehensive concerning the general principles of divine and cosmic knowledge. The very designation 'Essence' applies to the Real only under a consideration of determination: the determination which, for creatures other than the perfected, is considered to follow the unnamed, indescribable absoluteness. That absoluteness is a negative description of the Essence, conceived as distinct from every determination. The first positive reality considered is the first determination, which intrinsically includes the essential Names that are the keys of the unseen; the One designated by 'Essence' does not differ in any respect from these intrinsic Names. The Names can differ from, oppose or coincide with one another, yet they are unified under the Essence that includes them all. Essential unicity (*aḥadiyya*) is a description of determination, not a predicate enclosing the absolutely unrestricted, for the latter has neither name nor attribute. We say that the Real acts essentially under the consideration of these Names insofar as they are not other than the Essence. There is one intrinsic concomitant of the Essence, distinct from it only relationally: knowledge. Unicity is attributed to the Real with respect to knowledge, for within and by that knowledge are determined the rank of divinity, the other ranks and the things known, all of which are inscribed therein. Knowledge is the mirror of the Essence insofar as it contains the intrinsic Names without distinction from the Essence, and it is the source and origin of intelligible multiplicity. I call knowledge a mirror both of things known and of the Essence with its Names because the determination of the Real in His self-intellection is conceived by considering knowledge notionally distinguished from the Essence. His essential knowledge is thus like a mirror for Him. This is why I elsewhere identified the reality of the Real with the form of His self-knowledge, and explained that what appears in a manifestation differs in some respect from the manifestation—except the Real, who may be regarded as both the manifest and the manifestation. Remember.",
+      "notes": "Critical ontological passage. It speaks of a single essential concomitant, *ʿilm*, as relationally rather than really distinguished from the Essence; beware importing a separate substance called the 'first determination'. The first online sentence contains multiple nested relations and needs manuscript collation.",
+      "tags": [
+        "dhat",
+        "aḥadiyya",
+        "ilm",
+        "asma",
+        "taayyun",
+        "miftah"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-019-B",
+      "order": 9.19,
+      "section": "Text Nineteen: ranks, causal relations and divine Names",
+      "locator": "online transcription printed pp. 254–255, lines 513–519",
+      "arabic": "وأما المراتب فعبارة عن تعيّنات كلية، يشتمل عليها اللازم الواحد الذاتي الذي هو العلم، وهو كالمحال لما يمر عليها من مطلق فيض الصادر عن الذات، باعتبار عدم مغايرة الفيض للمفيض، كما سبق التنبيه عليه في شأن مظهرية الحق وظاهريته، ولها مدخل في حقيقة التأثير لا مطلقا، بل من حيث ما قلت أنها كالمحال. فكل مرتبة مجلى معنوي لجملة من أحكام الوجوب والإمكان المتفرعة من الأسماء الذاتية وأمهات الأسماء الإلهية، وما يليها من الأسماء التالية، ولها أعني للمراتب أعيان ثابتة في عرصة العلم والتعقل، ولا أثر لها على سبيل الاستقلال بل بالوجود، وهكذا شأن الوجود مع المراتب، فإنها مؤثرة ظاهرة الحكم في كل ما يتصل بها، ويتعيّن لديها بتكيفات مطلق الفيض الواصل إليها والمار عليها. وإنها كالنهايات النسبية باعتبار سير الفيض الذاتي والتجلّي الوجودي في المنازل والدرجات المتعينة بين الأزل والأبد، لا إلى غاية ولا إلى قرار، فقد استبان بما ذكرته أن المراتب مجمع جمل الأحكام المستقرة لديها من حضرة الوجوب والإمكان، وهي المظهرة لنتائج تلك الاجتماعات، لكن بحسبها لا بحسب الأحكام، ولا بحسب مطلق الفيض، فحكمها حكم الأشكال والقوالب مع كل متشكل ومتقولب يتصل بها ويحل فيها، فهذا أثرها، فهي ثابتة العين، وإليها يستند نتائج الأحكام وينضاف آخرا؛ لأنها المشرع والمرجع فافهم. ثم اعلم أن المراتب متعقلة الانتشاء بعضها من بعض، وكذلك الأسماء، فالألوهية بأسمائها الكلية التي هي (الحي، العالم، المريد، القادر) ظلّ للذات من حيث اشتمالها بذاتها على مفاتيح الغيب، لكن بين الألوهية والذات في ذلك فرق دقيق في ذوق الكمّل، وهو أن الألوهية تتعقّل ممتازة عن أمهات أسمائها المذكورة، والذات لا يعقل تميزها عن أسمائها الذاتية إلا المحجوبون عن التجلّي الذاتي، وأما أهل التجلّي الذاتي فلا يعقلون هذا النوع من التميز، ولا يشهدونه إلا باعتبار علمهم بعلم المحجوبين، وأما التميز عندهم في ذلك فهو بما أشرت إليه من أن الذات غير مغايرة لأسمائها الذاتية بوجه ما، وهي تغاير بعضها بعضا مع أنه لا انفكاك، ومع أن درجات المفاتيح متفاوتة، فإن بعضها تابع للبعض، كما نبّهت عليه في أسماء الألوهية من تبعية اسم: الخالق، والبارئ، والمصور، أمثالها فتذكّر.",
+      "english": "The ranks (*marātib*) are universal determinations contained within the one essential concomitant, knowledge. They function like loci through which the unqualified effusion from the Essence passes—considered without a real separation between the effusion and its source. The ranks enter into the account of causal efficacy only under this restricted consideration, as loci. Each rank is an intelligible manifestation for a collection of judgements of necessity and possibility deriving from the essential Names, the foundational divine Names and those subsequent to them. The ranks have their fixed determinations in the domain of knowledge and intellection but do not act independently; their effects obtain through existence. The one effusion is qualified in various ways as it reaches or passes through the ranks, and each rank manifests the relevant rulings. Thus the ranks are like relative termini along the considered passage of essential effusion and existential self-disclosure through degrees lying between pre-eternity and endlessness, without a final halt. They gather collections of rulings belonging to necessity and possibility and make their combined results manifest according to the nature of the rank, not according to the unqualified effusion considered in itself. Their relation to what receives determination resembles that of forms and moulds to things taking shape in them: that is their effect. The ranks are themselves intelligibly fixed, and the outcomes of determinations are attributed to them as their points of emergence and reference. Ranks, like Names, are conceived as issuing in order one from another. The degree of divinity, with its comprehensive Names—the Living, Knowing, Willing and Powerful—is a shadow of the Essence inasmuch as the Essence intrinsically contains the keys of the unseen. Yet the perfected distinguish divinity from the Essence in a subtle way: divinity may be conceived as distinct from its foundational Names, while the Essence is not distinguished from its essential Names except by those veiled from essential disclosure. Those who experience that disclosure do not see such a separation, unless they take account of the understanding of the veiled. Their own distinction is between an Essence inseparable from its intrinsic Names and the Names differentiated from one another without separation. Even among these keys there are graded dependences, as when the Names Creator, Originator and Fashioner depend on a more primary divine order. Remember.",
+      "notes": "Terms such as 'passes through' are metaphors for ontological and intelligible ordering; the Absolute is not literally travelling through a spatial chain. Under Qūnawī's *iʿtibārāt* the same principle can be described differently without multiplying separate Essences.",
+      "tags": [
+        "maratib",
+        "asma",
+        "ilm",
+        "fayd",
+        "perspective"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
     },
     {
       "id": "QUN-NU-020-A",
