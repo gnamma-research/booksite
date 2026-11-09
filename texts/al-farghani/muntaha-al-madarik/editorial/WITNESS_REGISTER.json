@@ -13,7 +13,7 @@
     "complete_full_critical_introduction": false,
     "critical_scholarly_editorial_essay": "editorial/CRITICAL_INTRODUCTION.md",
     "cumulative_english_draft": "B2007 pp.18–134 = 117 consecutively numbered English working pages; p85–134 sourced through derivative online re-transcription and not independently collated",
-    "latest_handoff": "editorial/FULL_CUMULATIVE_CRITICAL_004.md",
+    "latest_handoff": "editorial/FULL_CUMULATIVE_CRITICAL_005.md",
     "verified_manuscript_variant_count": 0,
     "current_english_draft": "B2007 pp18–145, 128 page-labelled English working draft, all four foundations and concluding preface; manuscript-critical edition incomplete",
     "current_scope_boundary": "Fourth foundation ends at B2007 p143; tatimmat al-dibaja pp144–145; poem commentary begins thereafter",
@@ -44,12 +44,21 @@
       "status": "80 p18–23, 62 p24–29, 56 p30–36; newer spans selected, not exhaustive; ZERO independent manuscript/1876 readings"
     },
     "next_critical_audit_beirut_page": 37,
-    "definitive_status": "not-achieved",
+    "definitive_status": "not-achieved; photographed historical printing selectively collated; manuscripts all outstanding",
     "critical_review_new_stage": "Critical IV: 56 new selective loci p30–36, 198 total on 19 Beirut pages",
     "historical_print_imprint_question": "NYU catalogue identifies Istanbul 1293/1876; Chittick 2025 describes Bulaq/Cairo 1876. Establish by reading scanned title page.",
     "additional_new_candidates_004": "Heidelberg H154 (undated, textual 1v–322r, viewer gated); Gotha G2267 (87ff incomplete via Scattolin 2001); neither read",
     "historical_print_collated_loci": 1,
-    "independent_print_variant_count": 1
+    "independent_print_variant_count": 1,
+    "historical_print_directly_examined": true,
+    "historical_print_selected_checked_loci": 4,
+    "historical_print_printed_pages_sampled": [
+      5,
+      6,
+      7
+    ],
+    "historical_print_to_b2007_differences": 2,
+    "next_historical_print_target": "I1876 printed p8 onward (PDF scan 12), matched by exact authorial quotations to B2007"
   },
   "witnesses": [
     {
@@ -59,10 +68,10 @@
       "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en",
       "pageRange": "1–107: introductory division (Scattolin)",
       "editor": "Muḥammad Shukrī al-ʿŪfī, reported by Scattolin",
-      "access": "1876 vol I official facsimile acquired; scan22 corresponding to printed p18 directly visually examined and collated for one lexeme at Beirut B2007 p34. Other scan pages retrieved but not text-proofed.",
-      "accessGrade": "historical-print-one-locus-visual-collation",
-      "role": "intended historical print control; not yet a copy-text",
-      "variantsExamined": 1,
+      "access": "**DIRECT PHOTO CHECK NOW MADE:** Princeton/NYU 1876 volume I, printed pp5,6,7 (PDF scans 9,10,11), 4 selected loci against B2007 pp18,19,21; exact scans and SHA manifest I1876_COLLATION_001.json. Other I1876 pages and all MSS remain uncollated.",
+      "accessGrade": "photographed-historical-print-selected-loci-p5-p7; not full-page",
+      "role": "Direct historical PRINT control for four exact introductory loci; no manuscript evidence.",
+      "variantsExamined": 4,
       "photoEvidence": [
         {
           "siglum": "I1876",
@@ -80,6 +89,18 @@
           "manuscript": false,
           "full_page_proof": false
         }
+      ],
+      "printDifferencesObserved": 2,
+      "printAgreementsObserved": 2,
+      "pagesInspected": [
+        5,
+        6,
+        7
+      ],
+      "pdfScanIndices": [
+        9,
+        10,
+        11
       ]
     },
     {
@@ -402,6 +423,60 @@
       "criticalVariant": true,
       "manuscriptSupport": null,
       "status": "historic_print_verified_2026-11-09"
+    },
+    {
+      "id": "ED-0101",
+      "location": "B2007 p19/I1876 p6, CR001-014",
+      "type": "historically-witnessed-PRINT-difference",
+      "readings": {
+        "B2007": "المطلب الغائبّ",
+        "I1876": "المطلب الغائي"
+      },
+      "evidence": "photograph of original printed page 6, Princeton PDF scan 10, source hash in I1876_COLLATION_001.json",
+      "editorialReading": "المطلب الغائي",
+      "criticalVariant": true,
+      "manuscriptSupport": null,
+      "status": "historical-print-corrected; early manuscript control pending"
+    },
+    {
+      "id": "ED-0102",
+      "location": "B2007 p19/I1876 p6, CR001-024",
+      "type": "historically-witnessed-PRINT-difference",
+      "readings": {
+        "B2007": "عمليا ووجوديا",
+        "I1876": "علميا ووجوديا"
+      },
+      "evidence": "photograph of original printed p6, Princeton PDF scan 10",
+      "editorialReading": "علميا ووجوديا",
+      "criticalVariant": true,
+      "manuscriptSupport": null,
+      "status": "historical-print-corrected; early manuscript control pending"
+    },
+    {
+      "id": "ED-0103",
+      "location": "B2007 p18/I1876 p5, CR001-010",
+      "type": "historically-witnessed-PRINT-agreement",
+      "readings": {
+        "B2007": "بطون المشتمل",
+        "I1876": "بطون المشتمل"
+      },
+      "editorialReading": "بطون المشتمل",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "printed agreements; crux remains for manuscripts"
+    },
+    {
+      "id": "ED-0104",
+      "location": "B2007 p21/I1876 p7, CR002-005",
+      "type": "historically-witnessed-PRINT-agreement",
+      "readings": {
+        "B2007": "من حيث واحديتها",
+        "I1876": "من حيث واحديتها"
+      },
+      "editorialReading": "من حيث واحديتها",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "corroborates correction of old GNAMMA excerpt"
     }
   ],
   "selectionRule": "Do not create a variant reading or siglum support unless two independent witnesses have actually been inspected in the relevant locus. Orthographic normalization is not a textual variant.",
