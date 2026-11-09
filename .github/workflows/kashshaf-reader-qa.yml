@@ -1,7 +1,7 @@
 name: Kashshaf and Tibi reader QA
 on:
   push:
-    branches: [master]
+    branches: [master, codex/kashshaf-c07]
     paths:
       - 'texts/al-zamakhshari/al-kashshaf/**'
       - 'tests/kashshaf/**'

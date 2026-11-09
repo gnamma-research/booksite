@@ -1,0 +1,74 @@
+[
+  {
+    "surah": 95,
+    "author": "T",
+    "before": "وعند الغداء",
+    "after": "وعند الغذاء",
+    "occurrences": 1,
+    "basis": "C06: printed XVI:505"
+  },
+  {
+    "surah": 99,
+    "author": "K",
+    "before": "بالنسيان",
+    "after": "باللسان",
+    "occurrences": 1,
+    "basis": "C06: embedded Kashshaf reading"
+  },
+  {
+    "surah": 99,
+    "author": "T",
+    "before": "بنف القرآن",
+    "after": "بنصف القرآن",
+    "occurrences": 1,
+    "basis": "C06: printed XVI:545"
+  },
+  {
+    "surah": 103,
+    "author": "T",
+    "before": "أوض واصية",
+    "after": "أرض واصية",
+    "occurrences": 1,
+    "basis": "C05: printed XVI:566"
+  },
+  {
+    "surah": 109,
+    "author": "T",
+    "before": "كان المبعث متعبدا",
+    "after": "كان قبل المبعث متعبدا",
+    "occurrences": 1,
+    "basis": "C05: printed XVI:608"
+  },
+  {
+    "surah": 108,
+    "author": "K",
+    "before": "إنا أعطيناك، بالنون",
+    "after": "إنا أنطيناك، بالنون",
+    "occurrences": 1,
+    "basis": "C05: variant expressly identified as nun; embedded base XVI:600"
+  },
+  {
+    "surah": 108,
+    "author": "T",
+    "before": "أتكسر ثنية الربيع؟ لا، فرضي",
+    "after": "أتكسر ثنية الربيع؟ لا، والذي بعثك بالحق لا تكسر ثنيتها. فقال رسول الله -صلى الله عليه وسلم-: يا أنس، أليس كتاب الله القصاص؟ فرضي",
+    "occurrences": 1,
+    "basis": "C07: verified against printed XVI:603; restores dialogue already present in the C06 English"
+  },
+  {
+    "surah": 108,
+    "author": "T",
+    "before": "إن من عبا الله",
+    "after": "إن من عباد الله",
+    "occurrences": 1,
+    "basis": "C07: verified against printed XVI:603"
+  },
+  {
+    "surah": 110,
+    "author": "T",
+    "before": "{} [الجمعة: 2]",
+    "after": "{ويعلمهم الكتاب والحكمة} [الجمعة: 2]",
+    "occurrences": 1,
+    "basis": "C07: verified against printed XVI:615 (PDF page 614); restores the quotation already present in the C06 English"
+  }
+]
