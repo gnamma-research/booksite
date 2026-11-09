@@ -270,8 +270,8 @@
   ],
   "fourAncestralBridgesSeparatelyAttributed": true,
   "protectedTextsUnchanged": {
-    "data/units.js": "09cfa394d48653ba8736504b620234084bf78feb8c08c9da9148322c6ce1cee8",
-    "data/parallel-matn.md": "6a86793fa4cdded0bff101787d6926bb54e0dd72f99a4a5efe2696489f3ae4d7",
+    "data/units.js": "f41af2df56902f7b3f04535c3927f075c2f8dfb436cb92e4b11801cc1d3dfe77",
+    "data/parallel-matn.md": "295a13e18027ea10ff11fd94c47c8c012648a25e4ad843ae7d76e5427cb2e659",
     "data/commentary-main-001-019.js": "904e2b4662bc330868d550dc357678ce753189902039b1eb96f704565a2f47f4",
     "data/commentary-main-020-060.js": "0a223fbe6bea2060783713fe667532a6ab87d2a85f5b6c4f06d9313806f4c1e9"
   },

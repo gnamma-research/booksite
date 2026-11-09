@@ -11206,7 +11206,7 @@
       "sourceLocator": "A pp. 252–253–254–255",
       "sourceUrl": null,
       "arabicSha256": "7e287482cfe77ed43ec4bcf3aab6e63fab7142666bd8bf974eea4a208e8f6d1e",
-      "englishSha256": "34641b55a6b59cd686a335ebb96a118bfb7ffccff01fd2d059f8193a0cc301f6",
+      "englishSha256": "7251c17a9bae9d8d4fac276175936b674fe07f1dd2589399e60777c998692e67",
       "arabicClauses": [
         {
           "n": 1,
@@ -11669,7 +11669,7 @@
             "englishSentenceEnd": 13,
             "note": "Restored historically disparaging references to effeminate men and women; literal content is attributed, not endorsed."
           },
-          "englishCorrespondence": "Voluntary pain, hardship and relinquishment of comfort are justified only as a corrective for someone habituated to luxury and bodily ease, whose temperament is ruled by appetites and what the author disparagingly describes as the habits of effeminate men and women.",
+          "englishCorrespondence": "Voluntary suffering, hardships, and relinquishment of comforts are not permissible except for someone seeking perfection who is habituated to luxury and bodily ease, whose temperament is dominated by sensual appetites and the traits of effeminate men and women.",
           "riskMarkers": [
             "exception_or_exclusivity"
           ]
@@ -11685,7 +11685,7 @@
             "englishSentenceEnd": 13,
             "note": "Restored historically disparaging references to effeminate men and women; literal content is attributed, not endorsed."
           },
-          "englishCorrespondence": "Voluntary pain, hardship and relinquishment of comfort are justified only as a corrective for someone habituated to luxury and bodily ease, whose temperament is ruled by appetites and what the author disparagingly describes as the habits of effeminate men and women.",
+          "englishCorrespondence": "Voluntary suffering, hardships, and relinquishment of comforts are not permissible except for someone seeking perfection who is habituated to luxury and bodily ease, whose temperament is dominated by sensual appetites and the traits of effeminate men and women.",
           "riskMarkers": []
         },
         {
@@ -11713,7 +11713,7 @@
             "englishSentenceEnd": 15,
             "note": "The transmitted «فلا يجوز» before anger/pride apparently conflicts with therapy by contraries; no conjectural emendation."
           },
-          "englishCorrespondence": "As for dispositions of humility, restrained assertiveness and lowliness, the transmitted clause concerning those dominated by anger, vanity, pride, coerciveness, and love of status is syntactically and philosophically problematic [see the textual note below].",
+          "englishCorrespondence": "As for acquiring dispositions that produce abasement, diminished zeal, meekness, and the like, this is not permissible for practitioners whose temperaments are dominated by intense anger, conceit, pride, coercion, forcefulness, love of rank, and similar traits.",
           "riskMarkers": []
         },
         {
@@ -11727,7 +11727,7 @@
             "englishSentenceEnd": 15,
             "note": "The transmitted «فلا يجوز» before anger/pride apparently conflicts with therapy by contraries; no conjectural emendation."
           },
-          "englishCorrespondence": "As for dispositions of humility, restrained assertiveness and lowliness, the transmitted clause concerning those dominated by anger, vanity, pride, coerciveness, and love of status is syntactically and philosophically problematic [see the textual note below].",
+          "englishCorrespondence": "As for acquiring dispositions that produce abasement, diminished zeal, meekness, and the like, this is not permissible for practitioners whose temperaments are dominated by intense anger, conceit, pride, coercion, forcefulness, love of rank, and similar traits.",
           "riskMarkers": []
         },
         {
@@ -12088,96 +12088,96 @@
         {
           "n": 13,
           "startChar": 1953,
-          "endChar": 2219,
-          "text": "Voluntary pain, hardship and relinquishment of comfort are justified only as a corrective for someone habituated to luxury and bodily ease, whose temperament is ruled by appetites and what the author disparagingly describes as the habits of effeminate men and women."
+          "endChar": 2214,
+          "text": "Voluntary suffering, hardships, and relinquishment of comforts are not permissible except for someone seeking perfection who is habituated to luxury and bodily ease, whose temperament is dominated by sensual appetites and the traits of effeminate men and women."
         },
         {
           "n": 14,
-          "startChar": 2220,
-          "endChar": 2315,
+          "startChar": 2215,
+          "endChar": 2310,
           "text": "The same qualified principle applies to cultivating dispositions of sorrow, concern, and tears."
         },
         {
           "n": 15,
-          "startChar": 2316,
-          "endChar": 2575,
-          "text": "As for dispositions of humility, restrained assertiveness and lowliness, the transmitted clause concerning those dominated by anger, vanity, pride, coerciveness, and love of status is syntactically and philosophically problematic [see the textual note below]."
+          "startChar": 2311,
+          "endChar": 2572,
+          "text": "As for acquiring dispositions that produce abasement, diminished zeal, meekness, and the like, this is not permissible for practitioners whose temperaments are dominated by intense anger, conceit, pride, coercion, forcefulness, love of rank, and similar traits."
         },
         {
           "n": 16,
-          "startChar": 2576,
-          "endChar": 2705,
+          "startChar": 2573,
+          "endChar": 2702,
           "text": "Yet the explicit principle that follows is that destructive habits can only be cured through praiseworthy habits opposed to them."
         },
         {
           "n": 17,
-          "startChar": 2706,
-          "endChar": 2810,
+          "startChar": 2703,
+          "endChar": 2807,
           "text": "As the force of one contrary is broken by the force of its opposite, a condition nearer the mean arises."
         },
         {
           "n": 18,
-          "startChar": 2811,
-          "endChar": 2905,
+          "startChar": 2808,
+          "endChar": 2902,
           "text": "Where appetite predominates, an opposing disposition draws the temperament toward equilibrium;"
         },
         {
           "n": 19,
-          "startChar": 2906,
-          "endChar": 3025,
+          "startChar": 2903,
+          "endChar": 3022,
           "text": "where violence and anger predominate, the appropriate contrary does likewise, even if complete balance is not attained."
         },
         {
           "n": 20,
-          "startChar": 3026,
-          "endChar": 3207,
+          "startChar": 3023,
+          "endChar": 3204,
           "text": "Restoring a disordered constitution toward equilibrium under the principles of medicine and practical wisdom is not making the soul and body ill, but healing and strengthening them."
         },
         {
           "n": 21,
-          "startChar": 3208,
-          "endChar": 3316,
+          "startChar": 3205,
+          "endChar": 3313,
           "text": "One must not imagine that a remedy suited to one disorder in one patient at one moment cures every disorder."
         },
         {
           "n": 22,
-          "startChar": 3317,
-          "endChar": 3394,
+          "startChar": 3314,
+          "endChar": 3391,
           "text": "Some psychological disorders arise through excess, others through deficiency;"
         },
         {
           "n": 23,
-          "startChar": 3395,
-          "endChar": 3463,
+          "startChar": 3392,
+          "endChar": 3460,
           "text": "remedies vary according to persons, times, circumstances and habits."
         },
         {
           "n": 24,
-          "startChar": 3464,
-          "endChar": 3480,
+          "startChar": 3461,
+          "endChar": 3477,
           "text": "Reflect on this."
         },
         {
           "n": 25,
-          "startChar": 3481,
-          "endChar": 3627,
+          "startChar": 3478,
+          "endChar": 3624,
           "text": "Finally, 'opposing the lower soul', understood in the sense of the gnostics, is as necessary in teaching and rational inquiry as in Sufi practice."
         },
         {
           "n": 26,
-          "startChar": 3628,
-          "endChar": 3699,
+          "startChar": 3625,
+          "endChar": 3696,
           "text": "We have explained this elsewhere, so need not prolong the account here."
         },
         {
           "n": 27,
-          "startChar": 3700,
-          "endChar": 3716,
+          "startChar": 3697,
+          "endChar": 3713,
           "text": "Understand this."
         }
       ],
       "manualComparativeReview": true,
-      "sourceWarnings": 1
+      "sourceWarnings": 2
     },
     {
       "id": "QT-057",
