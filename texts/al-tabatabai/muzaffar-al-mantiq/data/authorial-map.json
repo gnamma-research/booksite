@@ -9,7 +9,7 @@
     "institutionalScan": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000780/1",
     "institutionalScanYear": 1968
   },
-  "status": "44 locally paired readings: 11 introduction, four Book I, fifteen Book II (one editorially normalized/abridged), and 14 Book III. The full six-book original remains incomplete locally.",
+  "status": "46 locally paired working units: 11 introduction, four Book I, 17 Book II, 14 Book III. The original six books are not completely transcribed or translated; some English and one normalized Arabic need specialist philological review.",
   "parts": [
     {
       "book": 0,
@@ -268,10 +268,24 @@
           "firstPrintedPage": 77,
           "url": "https://lib.rafed.net/view.php?b_id=1604&page=77&type=c_fbook",
           "locatorStatus": "observed in searchable source page; early scan pending collation"
+        },
+        {
+          "arabic": "العروض معناه الحمل",
+          "english": "Attribution as predication, distinguished from inherence",
+          "firstPrintedPage": 82,
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=82&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation"
+        },
+        {
+          "arabic": "تقسيمات العرضي: لازم ومفارق",
+          "english": "Necessary vs separable accidents and grades of evidential necessity",
+          "firstPrintedPage": 83,
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=83&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation"
         }
       ],
-      "availableUnits": 15,
-      "note": "Fifteen bilingual readings from printed pp. 56–86 introduce universals, predication, complements, predicables, logical hierarchy and three modes of universality. One passage (M-K-14) contains an explicitly labeled normalized explanatory transcription and is not a diplomatic authorial text. The final Book II sections, examples, exercises and printed-edition verification are not yet complete.",
+      "availableUnits": 17,
+      "note": "Seventeen working bilingual selections now include the Book II exposition on predicate/accident senses and necessary/separable accidental attributes, pp. 56–86. There are omitted exercises, ancillary examples and one marked normalized explanatory transcription (M-K-14), so this is not a diplomatic full text of Book II; 1968 printed scan collation remains pending.",
       "url": "https://lib.rafed.net/m/?b_id=1604&page=57&type=c_fbook"
     },
     {
@@ -553,12 +567,12 @@
   "summary": {
     "totalAuthorialBooks": 6,
     "sourcePagesCoveredByRegister": 455,
-    "localTranslatedUnits": 44,
+    "localTranslatedUnits": 46,
     "localIntroUnits": 11,
     "localBook3Units": 14,
     "otherAuthorialBooksLocallyTranslated": 1,
     "localBook1Units": 4,
-    "localBook2Units": 15
+    "localBook2Units": 17
   },
   "accuracy": "Book II passage locators p. 56–86 come from Rafed searchable Arabic. The proof at p. 67 contains a source inconsistency also seen in another digital witness; the 1968 ACO scanned print has not been independently collated. Headings not verified to a printed page retain their generic source links."
 }
