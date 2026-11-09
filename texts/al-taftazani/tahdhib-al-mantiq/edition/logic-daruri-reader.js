@@ -147,7 +147,7 @@ function openSheet(mode){
    ['Dictionary','Editorial terms and commentary citations',()=>legacy('Dictionary')],
    ['Critical witnesses & coverage','Sources, variants, publication status',()=>{window.location.href='critical-status.html'}],
    ['Full bilingual translation batches','Working primary translation · Qum pp.7–123',()=>openSheet('batches')],
-   ['Later glosses · Q125–154','Separately attributed selected translations',()=>{window.location.href='hawashi-q125-154.html'}],
+   ['Later glosses · Q125–178','Separately attributed selected translations',()=>{window.location.href='hawashi-q125-178.html'}],
    ['Subject index','Source-linked thematic topics',()=>legacy('Subject index')],
    ['Saved & history','Bookmarks and reading positions',()=>legacy('Saved')],
    ['My notes','Private passage annotations',()=>legacy('Notes')],
