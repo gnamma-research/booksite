@@ -26,23 +26,24 @@ h1{font:500 clamp(28px,4vw,43px)/1.23 Georgia,serif;margin:9px 0}.overline{font:
 .ar{white-space:pre-wrap;overflow-wrap:anywhere;font:23px/1.9 "Amiri","Noto Naskh Arabic","Geeza Pro",serif;direction:rtl;text-align:right;margin:8px 0}
 .en{font:16px/1.82 Georgia,serif;white-space:pre-line;margin:8px 0}
 .meta{color:var(--muted);font-size:12px}.meta a{margin-right:12px}.source-notice{background:var(--bg);border-radius:5px;padding:9px 12px;font-size:12px;color:var(--muted)}
-small{color:var(--muted)}footer{border-top:1px solid var(--rule);font-size:12px;color:var(--muted);padding:20px 0}
+.section-title{font:500 clamp(22px,3vw,29px)/1.35 Georgia,serif;margin:25px 0 16px;padding-top:10px;border-top:2px solid var(--rule);scroll-margin-top:80px}small{color:var(--muted)}footer{border-top:1px solid var(--rule);font-size:12px;color:var(--muted);padding:20px 0}
 @media(max-width:700px){nav{flex-wrap:wrap;height:auto;min-height:58px;padding:7px 10px}.grid{grid-template-columns:1fr;gap:3px}.ar{font-size:20px}.en{font-size:15px}.note{padding:17px 0}.heading h2{font-size:21px}}
 </style></head><body>
 <nav aria-label="Reading controls"><a class="brand" href="./">‹ Tahdhīb</a>
 <a href="progress.html">Progress & handoff</a><span class="spacer"></span>
 <input id="search" type="search" placeholder="Search notes" aria-label="Search note translations">
+<select id="section-select" aria-label="Choose source section"><option value="all">Both sections</option><option value="H-PREFACE">Preface glosses</option><option value="H-INTRO">Introduction to Logic</option></select>
 <select id="filter" aria-label="Translation status">
 <option value="all">All numbered notes</option><option value="complete_searchable_note">Translated first-pass</option><option value="partial_translation">Partial translation</option>
 </select></nav>
 <main>
-<div class="overline">GNAMMA · Cumulative edition · Stage 109</div>
+<div class="overline">GNAMMA · Cumulative edition · Stage 110</div>
 <h1>Ḥawāshī — numbered glosses</h1>
 <p class="lead">The complete note, not the page of the printed volume, is the unit of translation. The English translations below are distinct from the much shorter preliminary Q125–178 selections.</p>
-<div class="notice">Stage 109 covers the <strong>140 numbered later-PREFACE glosses</strong>, Qum pp.127–164. <strong>136 have first-pass English; four are partial</strong> (1, 25, 82, 90). There are 54 digitally searchable full Arabic working transcriptions and 86 Arabic locator lemmata, with six unnumbered glosses separate. <strong>IMPORTANT: Qum p.165 begins a NEW section (Glosses on the Introduction to Logic) and RESTARTS local notes at 1</strong>. It must receive a new ID namespace, not note141. No printed page or manuscript witness is independently certified.</div>
-<div class="stats"><span id="count">Loading…</span><span>0 fully translated printed pages certified</span><span>136 working complete notes · 4 partial</span></div>
+<div class="notice">Two independently numbered source sections: <strong>H-PREFACE</strong> Qum pp.127–164, 140 notes (136 first-pass English complete, four partial, 54 digitally searchable full Arabic notes), and <strong>H-INTRO</strong> Qum pp.165–178, which <strong>RESTARTS at local note 1</strong> and now contains 49 notes (41 first-pass English complete, eight partial, <strong>zero full Arabic transcriptions</strong>). These are <strong>189 different stable IDs, not one continuous historical sequence</strong>. Eight separately attributed unnumbered glosses remain outside both numbered totals. No entire printed page or independent manuscript witness is certified.</div>
+<div class="stats"><span id="count">Loading…</span><span>0 fully translated printed pages certified</span><span>H-PREFACE 136/140 English · H-INTRO 41/49 English</span></div>
 <div id="notes"></div>
-<footer><a href="batches/hawashi-preface-numbered-cumulative-hwn001-140.md">Cumulative Arabic–English Markdown (preface notes 1–140)</a> · <a href="progress.html">Cumulative status, full handoff and stage logs</a> · <a href="hawashi-q125-178.html">52 earlier page selections</a>. Attribution remains provisional until individual signatures are checked against print photographs.</footer>
+<footer><a href="batches/hawashi-all-sections-cumulative-stage110.md">Both sections · complete cumulative Markdown</a> · <a href="batches/hawashi-preface-numbered-cumulative-hwn001-140.md">Preface notes 1–140</a> · <a href="batches/hawashi-introduction-numbered-cumulative-intro001-049.md">Introduction notes 1–49</a> · <a href="progress.html">Cumulative status, full handoff and stage logs</a> · <a href="hawashi-q125-178.html">52 earlier page selections</a>. Attribution remains provisional until individual signatures are checked against print photographs.</footer>
 </main>
 <script src="hawashi-numbered-notes-stage104.js?v=20261109-104"></script>
 <script src="hawashi-numbered-notes-stage105.js?v=20261109-105"></script>
@@ -59,6 +60,10 @@ small{color:var(--muted)}footer{border-top:1px solid var(--rule);font-size:12px;
 <script src="hawashi-numbered-notes-stage108a.js?v=20261109-108"></script>
 <script src="hawashi-numbered-notes-stage108b.js?v=20261109-108"></script>
 <script src="hawashi-numbered-notes-stage109a.js?v=20261109-109"></script>
+<script src="hawashi-introduction-notes-stage110a.js?v=20261109-110"></script>
+<script src="hawashi-introduction-notes-stage110b.js?v=20261109-110"></script>
+<script src="hawashi-introduction-notes-stage110c.js?v=20261109-110"></script>
+<script src="hawashi-introduction-notes-stage110d.js?v=20261109-110"></script>
 <script>
 (function(){'use strict';
 const base=window.GNAMMA_TAHDHIB_HAWASHI_NOTES;
@@ -108,14 +113,37 @@ for(const n of stage109.notes){
  if(n.sectionId!=='H-PREFACE')throw Error('Expected H-PREFACE section for '+n.id);
  byId.set(n.id,n);
 }
-const entries=[...byId.values()].sort((a,b)=>a.noteNumber-b.noteNumber),$=id=>document.getElementById(id);
+const stage110=[
+ window.GNAMMA_HAWASHI_INTRO_STAGE110A,
+ window.GNAMMA_HAWASHI_INTRO_STAGE110B,
+ window.GNAMMA_HAWASHI_INTRO_STAGE110C,
+ window.GNAMMA_HAWASHI_INTRO_STAGE110D
+];
+if(stage110.some(b=>!b||b.sectionId!=='H-INTRO'||!Array.isArray(b.records))){document.getElementById('notes').textContent='Stage110 introduction files unavailable';return}
+for(const batch of stage110){for(const n of batch.records){
+ if(n.sectionId!=='H-INTRO'||!n.id.startsWith('HWN-INTRO-'))throw Error('Invalid intro section id '+n.id);
+ if(byId.has(n.id))throw Error('Duplicate cross-section note '+n.id);
+ byId.set(n.id,n);
+}}
+const entries=[...byId.values()].sort((a,b)=>{
+ const group=x=>(x.sectionId||'H-PREFACE')==='H-PREFACE'?0:1;
+ return group(a)-group(b)||(a.noteNumber??a.localNoteNumber)-(b.noteNumber??b.localNoteNumber);
+}),$=id=>document.getElementById(id);
 const mk=(tag,cls,txt)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(txt!==undefined)x.textContent=txt;return x};
 function render(){
- const q=$('search').value.trim().toLocaleLowerCase(),filter=$('filter').value,holder=$('notes');holder.replaceChildren();
- const shown=entries.filter(e=>(filter==='all'||e.status===filter) && (!q||[e.id,e.speaker,e.english,e.arabicLemma,e.arabicFullText,e.editorial,e.unnumberedFollowing?.english,String(e.noteNumber)].some(x=>String(x).toLocaleLowerCase().includes(q))));
+ const q=$('search').value.trim().toLocaleLowerCase(),filter=$('filter').value,chosen=$('section-select').value,holder=$('notes');holder.replaceChildren();
+ const shown=entries.filter(e=>(chosen==='all'||(e.sectionId||'H-PREFACE')===chosen) &&
+ (filter==='all'||e.status===filter) && (!q||[e.id,e.speaker,e.english,e.arabicLemma,e.arabicFullText,e.editorial,e.unnumberedFollowing?.english,String(e.noteNumber??e.localNoteNumber)].some(x=>String(x).toLocaleLowerCase().includes(q))));
+let lastSection=null;
  for(const e of shown){
+  const sectionId=e.sectionId||'H-PREFACE';
+  if(sectionId!==lastSection){
+   lastSection=sectionId;
+   const head=mk('h2','section-title',sectionId==='H-PREFACE'?'Preface glosses · Qum 127–164':'Glosses on the Introduction to Logic · Qum 165 onward (NEW local numbering from 1)');
+   head.id=sectionId;holder.append(head);
+  }
   const section=mk('section','note');section.id=e.id;
-  const head=mk('div','heading'),h=mk('h2',null,'Note '+e.noteNumber),status=mk('span','note-label',e.status==='complete_searchable_note'?'First-pass translated':'Partial / unfinished');
+  const head=mk('div','heading'),h=mk('h2',null,(sectionId==='H-INTRO'?'Introduction note ':'Preface note ')+(e.noteNumber??e.localNoteNumber)),status=mk('span','note-label',e.status==='complete_searchable_note'?'First-pass translated':'Partial / unfinished');
   const pag=mk('span','page-ref','Qum pp. '+e.pages.join('–'));head.append(h,status,pag);section.append(head);
   section.append(mk('div','meta','Attributed page voice: '+e.speaker+'. Printed-page signature pending photographic verification.'));
   const grid=mk('div','grid'),left=mk('div'),right=mk('div');
@@ -138,6 +166,10 @@ function render(){
  }
  $('count').textContent=shown.length+' of '+entries.length+' numbered notes displayed';
 }
-$('search').addEventListener('input',render);$('filter').addEventListener('change',render);render();
+$('search').addEventListener('input',render);$('filter').addEventListener('change',render);$('section-select').addEventListener('change',render);
+render();
+const hash=location.hash.slice(1);if(hash && (hash.startsWith('HWN-')||hash==='H-PREFACE'||hash==='H-INTRO')){
+ requestAnimationFrame(()=>document.getElementById(hash)?.scrollIntoView({block:'start'}));
+}
 })();
 </script></body></html>
