@@ -56,7 +56,7 @@
       "observed": {
         "B2007": "فلم تعلم ولم يحكم بشيء منها إلا بعد تعيّنها"
       },
-      "decision": "I1876 p8–9 scans12–13 agrees at the bound لم تعلم ولم يحكم: retain hard claim, do not interpolate eternal known particulars or remove modal ربما. MS readings and interpretation remain open.",
+      "decision": "Photographed I1876 p8 scan12 uses سوى أنه ربما يكون where B2007 p23 reads إلّا أنه ربما يكون. Adopt older printed connective provisionally; preserve original Beirut form. Modal ربما, knowledge/indeterminate-rank argument remain philosophically unresolved. Still no medieval MS reading.",
       "witness_readings": [
         {
           "id": "I1876-L07",
@@ -96,9 +96,33 @@
               "proof_grade": "visually inspected historical print, selected locus only"
             }
           ]
+        },
+        {
+          "id": "I1876-L09",
+          "b2007_page": 23,
+          "i1876_printed_page": 8,
+          "pdf_scan_index": 12,
+          "source_record": "CR002-031",
+          "beirut_digital": "إلّا أنه ربما يكون",
+          "i1876_reading": "سوى أنه ربما يكون",
+          "relationship": "historical-print-difference",
+          "editorial_decision": "Prefer historically photographed I1876 سوى أنه rather than Beirut إلّا أنه as the provisional edited connective; both express an exception with negligible doctrinal impact. Preserve Beirut form in apparatus; no medieval MS examined.",
+          "verified_historical_print": true,
+          "verified_manuscript": false,
+          "high_resolution_photo": {
+            "printed_page": 8,
+            "scan_index": 12,
+            "source_url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000264/12/full/2200,/0/default.jpg",
+            "url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876-hires/images/scan_0012.jpg",
+            "sha256_archived_jpg": "75a6b2d3009cfeb15654d93c237a516a18ea0ff5ecb382e7ab12efcea1b67701",
+            "sha256_original_iiif_response": "1cd1769afc3bfff5d3bda29d483d4d0d46a0d89dfa10fb56e2dae68eef450f9a",
+            "pixel_width": 2200,
+            "grade": "directly visually inspected historical print image; NOT manuscript"
+          }
         }
       ],
-      "status": "historical-print-agreement-interpretation-open"
+      "status": "printed-connective-difference-knowledge-interpretation-open",
+      "edited_connective": "سوى أنه ربما يكون"
     },
     {
       "id": "FD-004",
@@ -201,7 +225,8 @@
       ],
       "decision": "insert whitespace for reader without making a textual variant or changing word identity",
       "witness_readings": [],
-      "status": "typographic-correction"
+      "status": "digital-word-spacing-normalized",
+      "typographic_print_control": "I1876 printed p14 scan18: لون الماء لون إنائه versus merged B2007 digital الماءلون; not counted as a substantive variant."
     },
     {
       "id": "FD-008",
@@ -210,9 +235,33 @@
       "observed": {
         "B2007": "في عون هذا"
       },
-      "decision": "retain observed Arabic; do not silently conjecture عين, عون or editorial smoothing. Independent 1876/MS image mandatory",
-      "witness_readings": [],
-      "status": "open"
+      "decision": "Hi-res 1876 printed p16 scan20 agrees with B2007 p33 at في عون هذا. Retain عون, not unattested conjectural عين. Grammatical reference and earlier manuscript reading remain unresolved.",
+      "witness_readings": [
+        {
+          "id": "I1876-L10",
+          "b2007_page": 33,
+          "i1876_printed_page": 16,
+          "pdf_scan_index": 20,
+          "source_record": "CR004-029",
+          "beirut_digital": "في عون هذا",
+          "i1876_reading": "في عون هذا",
+          "relationship": "historic-print-agreement",
+          "editorial_decision": "The photographed high-resolution I1876 p16 supports عون, not an unsupported conjectural عين. Retain diplomatic words in working copy-text; grammatical interpretation and medieval MS reading remain unsettled.",
+          "verified_historical_print": true,
+          "verified_manuscript": false,
+          "high_resolution_photo": {
+            "printed_page": 16,
+            "scan_index": 20,
+            "source_url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000264/20/full/2200,/0/default.jpg",
+            "url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876-hires/images/scan_0020.jpg",
+            "sha256_archived_jpg": "72ede56aebac41e52beb0219000031154affdb3ec170e46d4463edf5cb7e87c0",
+            "sha256_original_iiif_response": "5e3a8f25da291ea8a3f1d98573c0f396cb07e418c26442eccde4628a7c00f43d",
+            "pixel_width": 2200,
+            "grade": "directly visually inspected historical print image; NOT manuscript"
+          }
+        }
+      ],
+      "status": "historic-print-agreement-syntax-open"
     },
     {
       "id": "FD-009",
@@ -286,7 +335,7 @@
       "status": "translation-reviewed"
     }
   ],
-  "historical_independent_readings_confirmed": 4,
+  "historical_independent_readings_confirmed": 5,
   "notes": [
     "Chittick 2025 says modern Beirut/Qom editions reproduce significant errors of 1876, and bases his translation on collated Carullah 1107, Ragip 670, and Kadizademehmed 273.",
     "Chittick p27–28 uses manuscript-collated English of p21/p31 and agrees in core interpretive opposition aḥadiyya/wāḥidiyya and wujūd/wwijdān; this does not document variant spellings.",
@@ -310,7 +359,7 @@
     }
   ],
   "source_grade_update": "C005-01 photographed printed evidence I1876 printed p18 scan22; no medieval MS photographs examined",
-  "historical_independent_print_loci_verified": 8,
+  "historical_independent_print_loci_verified": 10,
   "independent_manuscript_loci_verified": 0,
-  "latest_cumulative_print_register": "I1876_COLLATION_CUMULATIVE_003.json"
+  "latest_cumulative_print_register": "I1876_COLLATION_CUMULATIVE_004.json"
 }
