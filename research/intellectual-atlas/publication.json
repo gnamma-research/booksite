@@ -2,8 +2,8 @@
   "title": "Texts in Time · Islamic Intellectual Atlas",
   "revision": "tajrid-critical-links-8-2026-10-31",
   "status": "working research",
-  "ui_revision": "unified-hanafi-style-work-atlas-2026-11-09",
-  "mobile_interface_note": "All sciences now share one responsive search, source filter, map renderer and detail panel. Subject changes never switch to a separate map application. The Hanafi-inspired source-reception network records only audited relationships.",
+  "ui_revision": "hanafi-geography-map-and-source-network-2026-11-09",
+  "mobile_interface_note": "The main UI has Hanafi-inspired tabs By century, By region and Source network, with one subject selector and search. A georeferenced coastal map shows separately documented author and work events, and unplaced source records remain counted. Source network and book timeline remain available across sciences.",
   "whole_range_note": "Use the shared year controls and zoomable era clusters; switch sciences without changing map interface.",
   "date_marker_note": "Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.",
   "entries": 404,
@@ -23,12 +23,14 @@
     "separate source-text witness catalogue"
   ],
   "visual_modes": [
-    "shared chronological work atlas",
-    "Hanafi-inspired source and reception network",
-    "vertical principal-texts synopsis",
-    "regional-label evidence index",
-    "source-linked catalogue",
-    "work evidence panel"
+    "Hanafi-inspired By century map",
+    "By region interactive geography",
+    "source-backed author events",
+    "documented work composition and recension pins",
+    "source and reception network",
+    "shared historical book timeline",
+    "principal texts",
+    "bibliographic catalogue"
   ],
   "discipline_nav": [
     "mapped works",
@@ -53,6 +55,14 @@
     "print_manuscript_collations_claimed": 0,
     "complete_corpora_claimed": false,
     "license": "CC BY-NC-SA 4.0"
+  },
+  "geography": {
+    "data_url": "corpora/geo-events.json",
+    "geocoded_events": 41,
+    "author_events": 30,
+    "work_events": 11,
+    "registered_places": 28,
+    "unplaced_research_caveat": "No automatic geolocation from an author nisba, text title or manuscript catalogue association."
   },
   "bibliography_map": {
     "mode": "single shared chronological renderer with source-date qualifications, undated source-record lanes, Hanafi-style bidirectional work-centred networks and optional principal-texts synopses",
@@ -98,7 +108,7 @@
       "corpora/manuscript-full.json"
     ]
   },
-  "textual_family_note": "The 404/377 audited dataset remains unchanged, externalized as canonical-atlas.json, and the earlier UI is preserved in legacy.html. All subjects share the same historical map and work-centred network shell. No inferred influence or unsupported manuscript dates.",
+  "textual_family_note": "The 404/377 audited dataset remains unchanged and the earlier UI is archived. The geographic map has a small cited event sample (author biography vs text composition); it is not a complete geocoding of Alreq or OpenITI. No invented influence or manuscript dates.",
   "tahdhib_added_entries": 26,
   "avicennian_extension_entries": 11,
   "avicennian_new_textual_routes": 2,
