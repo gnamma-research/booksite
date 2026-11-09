@@ -1,0 +1,44 @@
+name: GNAMMA atlas work explorer smoke
+
+on:
+  pull_request:
+    paths:
+      - 'research/intellectual-atlas/**'
+      - '.github/workflows/atlas-work-explorer.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: Serve GNAMMA
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 >/tmp/gnamma-atlas-http.log 2>&1 &
+          sleep 2
+          curl --fail --silent --show-error http://127.0.0.1:8123/research/intellectual-atlas/ >/dev/null
+      - name: New integrated work explorer
+        run: python research/intellectual-atlas/tests/verify_work_explorer_browser.py
+      - name: Original subject timeline regression
+        run: python research/intellectual-atlas/tests/verify_unified_subject_timeline_browser.py
+      - name: Upload browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: atlas-browser-screenshots
+          path: |
+            /tmp/gnamma-work-explorer-qa/
+            /tmp/gnamma-unified-timeline-qa/
+          if-no-files-found: ignore
