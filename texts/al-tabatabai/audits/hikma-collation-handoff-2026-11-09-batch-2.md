@@ -1,3 +1,5 @@
+> **Newer cumulative stage:** [Third batch, 9 November 2026](hikma-collation-handoff-2026-11-09-batch-3.md) supersedes the totals below: 53 Muẓaffar selected passages, 68 of 136 Nihāya direct bilingual readings and three additional textual corrections. This batch-2 snapshot remains for provenance.
+
 # Hikma critical edition — cumulative handoff, second 9 November 2026 batch
 
 Repository: [gnamma-research/booksite](https://github.com/gnamma-research/booksite). Source branch: `hikma-complete-next-batch-20261109`. Preserve this handoff alongside [the first-round handoff](hikma-collation-handoff-2026-11-09.md).
