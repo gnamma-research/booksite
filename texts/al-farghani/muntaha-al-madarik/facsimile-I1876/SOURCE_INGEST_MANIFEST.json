@@ -1,6 +1,6 @@
 {
   "manifest_url": "https://sites.dlib.nyu.edu/viewer/api/presentation/books/princeton_aco000264/manifest.json",
-  "downloaded_at_utc": "2026-11-08T23:47:02Z",
+  "downloaded_at_utc": "2026-11-09T00:02:03Z",
   "target_scan_indices": [
     1,
     2,
@@ -72,15 +72,969 @@
     ]
   },
   "canvas_count": 368,
+  "first_canvas_keys": [
+    "id",
+    "type",
+    "label",
+    "width",
+    "height",
+    "thumbnail",
+    "items"
+  ],
   "access": "readable JSON",
   "pdf_fallback": {
     "pdf_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
-    "download_or_render": "FAILED"
+    "source_sha256": "d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87",
+    "bytes": 37299689,
+    "pages": 368
   },
-  "successful_image_count": 0,
-  "images": [],
-  "errors": [
-    "PDF fallback: FileNotFoundError(2, 'No such file or directory')"
+  "successful_image_count": 59,
+  "images": [
+    {
+      "scan_index": 1,
+      "canvas_label": "PDF scan 1",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=1",
+      "sha256_source": "93dace4f69162fe4a9b8ea22bbd1d1633e9406bcef4619c28a6745981874be14",
+      "sha256_derived": "39998b68fd86d6dea3c6a9d9e107393a332a80ebdb15df2382d9b0fa721bcd78",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0001.jpg",
+      "image_size_pixels": [
+        654,
+        956
+      ],
+      "source_bytes": 138628,
+      "derived_bytes": 140873,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 2,
+      "canvas_label": "PDF scan 2",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=2",
+      "sha256_source": "c0a4456720c2aa6c9e73ceeda4153ed647150342a624a4b158d739302ad27efe",
+      "sha256_derived": "3aa318bc459078bcce4a1a0ef9bda13b92587efe1fd8ed8d2b02e9c27d4570f5",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0002.jpg",
+      "image_size_pixels": [
+        632,
+        960
+      ],
+      "source_bytes": 68344,
+      "derived_bytes": 67635,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 3,
+      "canvas_label": "PDF scan 3",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=3",
+      "sha256_source": "e2e38e0bd1396db24edf3d99c35e0edb2f4059870b3e3c5241212ea3a23be3e9",
+      "sha256_derived": "5337dd16139aef04118320b9d0f85b5df16e7ef61207c62fbbe6912a23f892a4",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0003.jpg",
+      "image_size_pixels": [
+        625,
+        923
+      ],
+      "source_bytes": 56121,
+      "derived_bytes": 55910,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 4,
+      "canvas_label": "PDF scan 4",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=4",
+      "sha256_source": "a706b1039fe16739d6a4f29b31120fad889507e370a4dbeb4debd5cddb16c168",
+      "sha256_derived": "9433e0c30550098e21a1f71ba72427107de5587beb6f5ff8dce93d8e640520bf",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0004.jpg",
+      "image_size_pixels": [
+        586,
+        922
+      ],
+      "source_bytes": 45367,
+      "derived_bytes": 45132,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 5,
+      "canvas_label": "PDF scan 5",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=5",
+      "sha256_source": "54e516724d37db2fcb65ebefd7329a05cef2a16e3e65c0eced737c07cfad7a21",
+      "sha256_derived": "56f505524df96a5c98324747eb14204de0c2e85be1b532d23acd4d45401bcc8c",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0005.jpg",
+      "image_size_pixels": [
+        591,
+        924
+      ],
+      "source_bytes": 60782,
+      "derived_bytes": 61401,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 6,
+      "canvas_label": "PDF scan 6",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=6",
+      "sha256_source": "f025ede57a78b140e17b6891d674cfbec8daf5513278a4a897eaeae03890a47c",
+      "sha256_derived": "2961e1ad5a680f61920f036583842e80cb702bb97503f75c185985fa3cb91492",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0006.jpg",
+      "image_size_pixels": [
+        612,
+        921
+      ],
+      "source_bytes": 124088,
+      "derived_bytes": 127428,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 7,
+      "canvas_label": "PDF scan 7",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=7",
+      "sha256_source": "4e59493946cb41b117306bd80a6af702b626a0980f6603307524ed0bcfbfe369",
+      "sha256_derived": "5e338d5eace7eac8d919b02af0f33d7ce495d8c9f125dc5549e8ba35d4a5ddb6",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0007.jpg",
+      "image_size_pixels": [
+        617,
+        925
+      ],
+      "source_bytes": 122994,
+      "derived_bytes": 126332,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 8,
+      "canvas_label": "PDF scan 8",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=8",
+      "sha256_source": "c7c7ccc8829e4b72ee9bbbf52cadba722e6fd1e98f0610c02dcd6a47fd5c4952",
+      "sha256_derived": "a8de62212cc0043c39d72f422d32d63abe3788526386f5c1e5990ef83b0d9015",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0008.jpg",
+      "image_size_pixels": [
+        619,
+        923
+      ],
+      "source_bytes": 128046,
+      "derived_bytes": 132254,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 9,
+      "canvas_label": "PDF scan 9",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=9",
+      "sha256_source": "ecb34e1f7ccf68c2e088fa5563c7fc8becc04d815e25b0f2484a7953dfda7393",
+      "sha256_derived": "dd1059e8fe8df6a97695cdffdb04b249c8f2bb28d9192607ac064b1cda5e543e",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0009.jpg",
+      "image_size_pixels": [
+        621,
+        925
+      ],
+      "source_bytes": 121804,
+      "derived_bytes": 125241,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 10,
+      "canvas_label": "PDF scan 10",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=10",
+      "sha256_source": "4e90c914fe5d6c2daa88a1010582897d867cba4051b7de3a10ceb27a394d48e2",
+      "sha256_derived": "77aedd3ff6c02c7c171258b98474ed318afc7e564772084706794e70e64ed5cc",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0010.jpg",
+      "image_size_pixels": [
+        620,
+        922
+      ],
+      "source_bytes": 121982,
+      "derived_bytes": 125439,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 11,
+      "canvas_label": "PDF scan 11",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=11",
+      "sha256_source": "f33da10617350c27a6daccab9670ee25b1dc15f138d33f34f1727076d487fe9a",
+      "sha256_derived": "b201a8728ee1f67c082ba3e798a67af4bce0f1517e32d1b824f19be2ee2cdf81",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0011.jpg",
+      "image_size_pixels": [
+        616,
+        924
+      ],
+      "source_bytes": 122160,
+      "derived_bytes": 125595,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 12,
+      "canvas_label": "PDF scan 12",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=12",
+      "sha256_source": "7881749016a5403e7fe9ca3c6ee5acb58fc9e1f45b93f2d5f97ac8f813aac453",
+      "sha256_derived": "a31c5a7440503516cf85d3d064cef267ce2a5c2024897ddee18045f62ada79cf",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0012.jpg",
+      "image_size_pixels": [
+        607,
+        923
+      ],
+      "source_bytes": 122014,
+      "derived_bytes": 125515,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 13,
+      "canvas_label": "PDF scan 13",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=13",
+      "sha256_source": "0976ea538dce15d0635cc76a8c1061e13148c56f3874587b3a64952587c5f0a1",
+      "sha256_derived": "967828e7aef40e2e9f025128bcf6abbe3788f177edd2e8f0977896f149165f87",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0013.jpg",
+      "image_size_pixels": [
+        609,
+        918
+      ],
+      "source_bytes": 124199,
+      "derived_bytes": 128201,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 14,
+      "canvas_label": "PDF scan 14",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=14",
+      "sha256_source": "c591107fbfcf2b70b544fea4789a879522a63ab28574ee6074f378a34407680e",
+      "sha256_derived": "7e82a01a9399b67c38386ea2e7e34cb67591b5dff36a3269a40954da0ba1dbc5",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0014.jpg",
+      "image_size_pixels": [
+        618,
+        918
+      ],
+      "source_bytes": 125831,
+      "derived_bytes": 129546,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 15,
+      "canvas_label": "PDF scan 15",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=15",
+      "sha256_source": "98c1bdf8e66a6a3d809807b9ce8a74c0f2078ba525fcd7b355f65b7318553295",
+      "sha256_derived": "8d709f9f0cba85bf02d6de9de2acaf7da21d442a0c42ce6cec2d4aa2fdf3e22e",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0015.jpg",
+      "image_size_pixels": [
+        617,
+        925
+      ],
+      "source_bytes": 124961,
+      "derived_bytes": 128980,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 16,
+      "canvas_label": "PDF scan 16",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=16",
+      "sha256_source": "e983a945fbbcb1a11b01c49a34135d263177603a5fc3917785a376f2c7252824",
+      "sha256_derived": "ac4a878ccf8c3512e1358a730572e942618db880a192ab5596b81f30cc6f6e54",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0016.jpg",
+      "image_size_pixels": [
+        621,
+        922
+      ],
+      "source_bytes": 127989,
+      "derived_bytes": 131855,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 17,
+      "canvas_label": "PDF scan 17",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=17",
+      "sha256_source": "f45daf5fb449260c7fd2fd6a3605e42c36a686760a03a8360c0c13565f824b22",
+      "sha256_derived": "5a42dc3b5c366b958e466b3a837e2ead99eacdbd66100341a2aeb99d68e6bce7",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0017.jpg",
+      "image_size_pixels": [
+        622,
+        925
+      ],
+      "source_bytes": 123563,
+      "derived_bytes": 126913,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 18,
+      "canvas_label": "PDF scan 18",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=18",
+      "sha256_source": "794efeb1ea3d9e0daba2895d3e0842914796ddb1fc435466d2c5aad131e664ec",
+      "sha256_derived": "941ed1e5f090853059e0e49f7b1b680ef190f05719dd0be70877f55bc5bb6ed5",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0018.jpg",
+      "image_size_pixels": [
+        613,
+        923
+      ],
+      "source_bytes": 122480,
+      "derived_bytes": 125879,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 19,
+      "canvas_label": "PDF scan 19",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=19",
+      "sha256_source": "4cca021846e102e93fbf06431ff050f08b89f244fab1136eafca58dbff8b884f",
+      "sha256_derived": "943c60093b079fd2cb96380c5e255268d00b936d28fb99453e04cd4a31608be2",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0019.jpg",
+      "image_size_pixels": [
+        615,
+        923
+      ],
+      "source_bytes": 121305,
+      "derived_bytes": 124641,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 20,
+      "canvas_label": "PDF scan 20",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=20",
+      "sha256_source": "5a93b8aae32d407a87cbf29cd882874256114e91f96e6c6d0da8ae5d1f883be7",
+      "sha256_derived": "0926c81f2f128d3ce8277db77ecb28a3cfcba67848af98d7d2293add60e3e472",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0020.jpg",
+      "image_size_pixels": [
+        604,
+        920
+      ],
+      "source_bytes": 121232,
+      "derived_bytes": 124832,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 21,
+      "canvas_label": "PDF scan 21",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=21",
+      "sha256_source": "7681232001798d0e75a0148a14d8a6e4e2149651a46f16c6ad4612f174602fd7",
+      "sha256_derived": "051161cec83f1db63aea9a195262fca6aff1cfd6df5494ee312e9f9480e1cbdf",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0021.jpg",
+      "image_size_pixels": [
+        613,
+        928
+      ],
+      "source_bytes": 132331,
+      "derived_bytes": 137534,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 22,
+      "canvas_label": "PDF scan 22",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=22",
+      "sha256_source": "6de8c662a049662964dfa3bb56c5049e321a98e796edda8c8258f4f276c42d4e",
+      "sha256_derived": "1af26b3548faf7ca294717550a036a7866a646122381f5386789485982b6068f",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0022.jpg",
+      "image_size_pixels": [
+        607,
+        926
+      ],
+      "source_bytes": 124386,
+      "derived_bytes": 128108,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 23,
+      "canvas_label": "PDF scan 23",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=23",
+      "sha256_source": "dd1aaf7a64cd33d613c5192d02f74c7719edb6606a662753627a2e156a54e132",
+      "sha256_derived": "b8d78e235aa64a09bc50b2ed6c02f1974a465fd28cc0eb37ced79f7c1522cec7",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0023.jpg",
+      "image_size_pixels": [
+        609,
+        929
+      ],
+      "source_bytes": 121861,
+      "derived_bytes": 125454,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 24,
+      "canvas_label": "PDF scan 24",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=24",
+      "sha256_source": "f617f78c4183fc9e2be47595e3cf9e195e89636fbf4b4704684ef60446d202d7",
+      "sha256_derived": "077d0f5292ac134193ad9d781a20e4d31639e8f7e4dcecf692bc87985362fe0a",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0024.jpg",
+      "image_size_pixels": [
+        604,
+        926
+      ],
+      "source_bytes": 129982,
+      "derived_bytes": 134592,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 25,
+      "canvas_label": "PDF scan 25",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=25",
+      "sha256_source": "1d7e67849819e631071586fa0601d75ca7f447fe8a895691b8e7ebb5b2d4046f",
+      "sha256_derived": "10018248cd69661406e23a467b30adc0f87b062322f3d5dafe3debb88c2e3989",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0025.jpg",
+      "image_size_pixels": [
+        610,
+        928
+      ],
+      "source_bytes": 132751,
+      "derived_bytes": 137261,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 26,
+      "canvas_label": "PDF scan 26",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=26",
+      "sha256_source": "f7ecf6c41eef2c3473083ffaa50a670989dab1668820d583625669b40f619c63",
+      "sha256_derived": "5a260dcc2c84d5bdab98f0798c1a8be209bbcf063475fb7afbfc0e69a2bfa06d",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0026.jpg",
+      "image_size_pixels": [
+        602,
+        926
+      ],
+      "source_bytes": 122575,
+      "derived_bytes": 125921,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 27,
+      "canvas_label": "PDF scan 27",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=27",
+      "sha256_source": "b24d84f35cb9b09d4a57b853ad6690120effa3d0ec06d4371df64d6d61cfd812",
+      "sha256_derived": "ea4a678008454dce5d2010b9ecc413ead2df83ae2bb3fe75d6afbece2a8d2dd6",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0027.jpg",
+      "image_size_pixels": [
+        607,
+        930
+      ],
+      "source_bytes": 125171,
+      "derived_bytes": 129065,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 28,
+      "canvas_label": "PDF scan 28",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=28",
+      "sha256_source": "f84fddae92ea5a1932f22e3ff3448e98dd8715a5e65585b765cb41531e02bc5a",
+      "sha256_derived": "ec43fa502ccf1d4c2ff126ce8816840219ecf879707ac7a22749e72f342f7290",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0028.jpg",
+      "image_size_pixels": [
+        599,
+        926
+      ],
+      "source_bytes": 131319,
+      "derived_bytes": 136152,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 29,
+      "canvas_label": "PDF scan 29",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=29",
+      "sha256_source": "1c58d14a3034da9bfaa35ae863e87c7fda9ac8b84abc01742f1bd575a0a63cc0",
+      "sha256_derived": "69c3018b00b86d9c2055265be02e7a3b2489d4ad9d720a3befb9f2be22e0fea9",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0029.jpg",
+      "image_size_pixels": [
+        605,
+        925
+      ],
+      "source_bytes": 130657,
+      "derived_bytes": 134803,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 30,
+      "canvas_label": "PDF scan 30",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=30",
+      "sha256_source": "2c877d93de75df5a1d2666565fc1ed71f345ca165aa063a08cf79532f7e98305",
+      "sha256_derived": "fa90b2d0b4757d5adc9a3a43563da27e7b247278dae2276ad64ba1ddabc78107",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0030.jpg",
+      "image_size_pixels": [
+        602,
+        924
+      ],
+      "source_bytes": 130316,
+      "derived_bytes": 134781,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 31,
+      "canvas_label": "PDF scan 31",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=31",
+      "sha256_source": "7a95d1925d1719e415fc79fe8e1116c9e001084ab53a59d87083dc83c5d8b7ae",
+      "sha256_derived": "6b0417154b3f2f9b22a1a53fd71ba7e05f9f301847e055a59d2b6f84deecf380",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0031.jpg",
+      "image_size_pixels": [
+        609,
+        925
+      ],
+      "source_bytes": 130978,
+      "derived_bytes": 135132,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 32,
+      "canvas_label": "PDF scan 32",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=32",
+      "sha256_source": "8b78b5367bd542e96863fbda3e2120530f1430ee9de69f20d674d48b14cda438",
+      "sha256_derived": "321763a64385ef3cdc50d5ab867f50eccee3cbcd87a442d3f207d25b3fa7b591",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0032.jpg",
+      "image_size_pixels": [
+        611,
+        923
+      ],
+      "source_bytes": 127271,
+      "derived_bytes": 131290,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 33,
+      "canvas_label": "PDF scan 33",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=33",
+      "sha256_source": "9eb31482e5a5d7401bc1710a5592a8fe1d1aae5d7c1566dd09158d656a690f31",
+      "sha256_derived": "c58633887fdc0f87e97ab2f10c1348ca17c5ef07c571a142a353fcbf9ed7da85",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0033.jpg",
+      "image_size_pixels": [
+        610,
+        925
+      ],
+      "source_bytes": 130087,
+      "derived_bytes": 134615,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 34,
+      "canvas_label": "PDF scan 34",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=34",
+      "sha256_source": "8a4d4ed4c08cd08df1dd5fd14229ca417cb69026d260433495dac82e89994a4a",
+      "sha256_derived": "3cc70aabdcbe20e1d59220df2d172dc6df59aa04db786f6c4da1372a1777ec25",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0034.jpg",
+      "image_size_pixels": [
+        609,
+        923
+      ],
+      "source_bytes": 125786,
+      "derived_bytes": 129177,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 35,
+      "canvas_label": "PDF scan 35",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=35",
+      "sha256_source": "82bacf3f4e45e113bedaf605ff15216887c6ab5d7edea8fe0c50d413cb42bda7",
+      "sha256_derived": "9da33b094dab501ec02b0ea08f9abe6b861c86a8327f87dc607334773b9f79a0",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0035.jpg",
+      "image_size_pixels": [
+        613,
+        926
+      ],
+      "source_bytes": 124392,
+      "derived_bytes": 128059,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 36,
+      "canvas_label": "PDF scan 36",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=36",
+      "sha256_source": "4dc7b33229ad8a72ae1094dbbf8a3dc29650ebb97881d42c34fc9d3e9eb61668",
+      "sha256_derived": "65a8b877709b7e255a9818a02a0cb613b3c40732bcb80d06ed7160f04a042932",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0036.jpg",
+      "image_size_pixels": [
+        603,
+        923
+      ],
+      "source_bytes": 130132,
+      "derived_bytes": 134404,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 37,
+      "canvas_label": "PDF scan 37",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=37",
+      "sha256_source": "6a88b8b1bbf85cb5248679a3693246e73e16a12d7ac757acacb76022378cafad",
+      "sha256_derived": "d23ae8fd5164fd2b6f209e6258919ab354e279cddf449659b1a3094f98ed8de6",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0037.jpg",
+      "image_size_pixels": [
+        603,
+        929
+      ],
+      "source_bytes": 140502,
+      "derived_bytes": 145063,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 38,
+      "canvas_label": "PDF scan 38",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=38",
+      "sha256_source": "becdf45100997fbb441066629d9451acb469b6297d33c6299ce15db91607e27a",
+      "sha256_derived": "12c348438a857c4cd456d523ccafa2f108e01dd6fdefd901c872915e52c15544",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0038.jpg",
+      "image_size_pixels": [
+        597,
+        925
+      ],
+      "source_bytes": 135058,
+      "derived_bytes": 139816,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 39,
+      "canvas_label": "PDF scan 39",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=39",
+      "sha256_source": "322a84f4f7c147e795211daec434c7a94ee1f2a59fab8aba9b5046be9eb84fbe",
+      "sha256_derived": "73b19fa1f8f546f8960c5ce9292c9ccbca2ded990d0d02403203ce2c67e7b39d",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0039.jpg",
+      "image_size_pixels": [
+        608,
+        928
+      ],
+      "source_bytes": 136636,
+      "derived_bytes": 141553,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 40,
+      "canvas_label": "PDF scan 40",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=40",
+      "sha256_source": "84b66e5506368a5208bc2bbc8e7a04afd0a926fcc3a1e86293e4dd2f32372a7d",
+      "sha256_derived": "665e0fc1dfd791d8ceba1e9e3680c2618418d85a5ed0b6d11b107b5df7e21933",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0040.jpg",
+      "image_size_pixels": [
+        597,
+        926
+      ],
+      "source_bytes": 136839,
+      "derived_bytes": 141397,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 41,
+      "canvas_label": "PDF scan 41",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=41",
+      "sha256_source": "8dee3793b8a7b67936dadfeb23c7077f989fe7a03d109bc48f404ebdc328c3f4",
+      "sha256_derived": "5044def6fc9a4d866935c32bbcf7027dbfc064682c8c7273940bc84046cf4b51",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0041.jpg",
+      "image_size_pixels": [
+        599,
+        928
+      ],
+      "source_bytes": 137907,
+      "derived_bytes": 142619,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 42,
+      "canvas_label": "PDF scan 42",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=42",
+      "sha256_source": "1591f0e6293b20567b0e5498a19da4faab5d2b631b98c37831ef9448615c2c23",
+      "sha256_derived": "186c53ddf7e1467e3e6b392c80edbae0467e057c6a6de6546a501887e388c610",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0042.jpg",
+      "image_size_pixels": [
+        596,
+        927
+      ],
+      "source_bytes": 137308,
+      "derived_bytes": 142054,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 43,
+      "canvas_label": "PDF scan 43",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=43",
+      "sha256_source": "96d0ec47d18c9bf7d53a48eebb5db07dce5939126301068fbcdfbc425c77fd1e",
+      "sha256_derived": "80239f210667b2e425f617761f1796e2ae095e6565ed3c058c302a3706305e05",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0043.jpg",
+      "image_size_pixels": [
+        602,
+        930
+      ],
+      "source_bytes": 137579,
+      "derived_bytes": 142261,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 44,
+      "canvas_label": "PDF scan 44",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=44",
+      "sha256_source": "28c7cc485c3505d30787e382cbf2153d073871d1c0fc9b7b9763a244a297febc",
+      "sha256_derived": "b574f4625c4bb63e84a369eb05a02e819727cdf0c41d97f3fb4cc4134e5330b9",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0044.jpg",
+      "image_size_pixels": [
+        602,
+        926
+      ],
+      "source_bytes": 136813,
+      "derived_bytes": 141257,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 45,
+      "canvas_label": "PDF scan 45",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=45",
+      "sha256_source": "986b5f504c180c75b8614c9d8c5af6ea74825d0d59f92c4d70a469ed239e3310",
+      "sha256_derived": "7728052227db15db789338481860a244d19af621db02ba77fe1a299ac51b0d81",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0045.jpg",
+      "image_size_pixels": [
+        603,
+        930
+      ],
+      "source_bytes": 130320,
+      "derived_bytes": 134591,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 46,
+      "canvas_label": "PDF scan 46",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=46",
+      "sha256_source": "f8d5c254d555cfea930830058b4565fa509efba8c599fdf18a6d0b8fdacf9c64",
+      "sha256_derived": "76000ca7c58d05bcb8a8acaa17ebbc7707fc8c4603b413f3d4fd175eaab746a4",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0046.jpg",
+      "image_size_pixels": [
+        597,
+        927
+      ],
+      "source_bytes": 122655,
+      "derived_bytes": 126408,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 47,
+      "canvas_label": "PDF scan 47",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=47",
+      "sha256_source": "9b47eaf430755d49b0afbca66342c5198e473256cad7ea0f67b36889dd1cdc08",
+      "sha256_derived": "10b1ca40cab4f09c737a4edf8ea57861843da4f072c794195f6ba3cc0a141a45",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0047.jpg",
+      "image_size_pixels": [
+        602,
+        928
+      ],
+      "source_bytes": 121793,
+      "derived_bytes": 125382,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 48,
+      "canvas_label": "PDF scan 48",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=48",
+      "sha256_source": "7e3aa2fed3bc9f70b9f454603f765d86860e6e02d5be9526b00c43acc5f257d2",
+      "sha256_derived": "334de8fa2495b522db578bdd8e6500fc3143fc7c90ed6a9a872a2b8616b3008c",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0048.jpg",
+      "image_size_pixels": [
+        600,
+        927
+      ],
+      "source_bytes": 126000,
+      "derived_bytes": 130315,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 49,
+      "canvas_label": "PDF scan 49",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=49",
+      "sha256_source": "f2ece31575c685379a5ea34b1366d8f56b45a2afbaf17e95b64f2ca72d53dc33",
+      "sha256_derived": "0708e0887c532ac31739dfb9b553a94decd50c21764942a2da8adabd6f6d1372",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0049.jpg",
+      "image_size_pixels": [
+        603,
+        929
+      ],
+      "source_bytes": 114810,
+      "derived_bytes": 117531,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 50,
+      "canvas_label": "PDF scan 50",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=50",
+      "sha256_source": "2ebd861dada28fb4119830be229495a5f16ad2984c176ce1416e418c38b2303a",
+      "sha256_derived": "405ae79f3383c2f8ad1ff04fc83b3ed6c3f8543468acbdbcf51798922e0edb3f",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0050.jpg",
+      "image_size_pixels": [
+        594,
+        926
+      ],
+      "source_bytes": 108510,
+      "derived_bytes": 111223,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 55,
+      "canvas_label": "PDF scan 55",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=55",
+      "sha256_source": "f22bdfbfe690b3677781c788ad594b7c5ce4720e1707553c1a38778d3e394b17",
+      "sha256_derived": "4932ab992a7722a69f29934ae92f047a367e3664661b9c51d913d907c529fbb6",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0055.jpg",
+      "image_size_pixels": [
+        600,
+        930
+      ],
+      "source_bytes": 126679,
+      "derived_bytes": 130789,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 60,
+      "canvas_label": "PDF scan 60",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=60",
+      "sha256_source": "b981ba2deee6efce01a23cc7352eeb09f7453fcc14282fe9ffce48474587b670",
+      "sha256_derived": "46b12ed4ca4d2c6b438e6f36fe71b8917ce0a09849c0853552fbb44b753d5e39",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0060.jpg",
+      "image_size_pixels": [
+        602,
+        927
+      ],
+      "source_bytes": 127834,
+      "derived_bytes": 131830,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 65,
+      "canvas_label": "PDF scan 65",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=65",
+      "sha256_source": "56910d6b921597cf2cc8fc18e3ea525f69157e1bfc69e62c20386626316495cd",
+      "sha256_derived": "276915db19f274097bc487352135e1f353abfe4513a97368f69c22872fab9ba3",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0065.jpg",
+      "image_size_pixels": [
+        603,
+        930
+      ],
+      "source_bytes": 131866,
+      "derived_bytes": 136141,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 70,
+      "canvas_label": "PDF scan 70",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=70",
+      "sha256_source": "4892656413bc39a5e25d1e2fb043253ae453b8a612f42db8a9f22c14352264ef",
+      "sha256_derived": "b431a70dc258287102a5e1fe61cb191a28c8f5949dd9fa1d9d85d3c07ae4afed",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0070.jpg",
+      "image_size_pixels": [
+        595,
+        927
+      ],
+      "source_bytes": 130647,
+      "derived_bytes": 135103,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 80,
+      "canvas_label": "PDF scan 80",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=80",
+      "sha256_source": "a7a8c858c83053056d9104d706a463b3379429798ad6b52fe40c6d11a967332e",
+      "sha256_derived": "5a9b31cce2ebdec683cffec9be7fc049d6fa3d719bc3b998c6fea49e7c450c49",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0080.jpg",
+      "image_size_pixels": [
+        593,
+        927
+      ],
+      "source_bytes": 128073,
+      "derived_bytes": 132258,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 90,
+      "canvas_label": "PDF scan 90",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=90",
+      "sha256_source": "1bbd1765fc9d89ea2847410a3c253aafe7092de3bcdba79680766f47040959ef",
+      "sha256_derived": "116d629ddde206f2e1a0435fe413e15f436a6fae8e9adffede060e8ecf671c38",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0090.jpg",
+      "image_size_pixels": [
+        597,
+        927
+      ],
+      "source_bytes": 125796,
+      "derived_bytes": 130078,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 100,
+      "canvas_label": "PDF scan 100",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=100",
+      "sha256_source": "6a61970bf6e35beeebf630d79bb3fa0b963406396d607efa60b2f766b6f6e2da",
+      "sha256_derived": "0e859cd8860769769ee41c142c1e9f421953e60d22f32580e9c3401ef2a59440",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0100.jpg",
+      "image_size_pixels": [
+        595,
+        927
+      ],
+      "source_bytes": 125752,
+      "derived_bytes": 129832,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 110,
+      "canvas_label": "PDF scan 110",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=110",
+      "sha256_source": "1f06f2b898525a7473bc8228109b8c659c69fc325dfc4130ddf722fbdfa008e9",
+      "sha256_derived": "b7edfc45a65cf16183c075fb5d38c13cdde62cb336562018705f4beb9f0fea19",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0110.jpg",
+      "image_size_pixels": [
+        594,
+        927
+      ],
+      "source_bytes": 126270,
+      "derived_bytes": 130347,
+      "historical_print_identified": true,
+      "reading_verified": false
+    },
+    {
+      "scan_index": 125,
+      "canvas_label": "PDF scan 125",
+      "source_image_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf#scan=125",
+      "sha256_source": "5858515be6fdc18eced4ab8cc823f97c969a0c7b47c714f6d649f7007fb304f3",
+      "sha256_derived": "bf9ecd67d21af7f6a051dfc6c3ee0cde93914024f5e4240331d503707b184fe8",
+      "local_image": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0125.jpg",
+      "image_size_pixels": [
+        604,
+        928
+      ],
+      "source_bytes": 124075,
+      "derived_bytes": 127765,
+      "historical_print_identified": true,
+      "reading_verified": false
+    }
   ],
-  "elapsed_seconds": 2.6
+  "errors": [],
+  "elapsed_seconds": 4.8
 }
