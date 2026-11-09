@@ -1,0 +1,28 @@
+name: Mahaimi Stage10 critical-edition coverage and concordance
+on:
+  push:
+    paths:
+      - 'texts/al-mahaimi/mashra-al-khusus/**'
+      - 'texts/manifest.json'
+      - 'tests/test_mahaimi_stage10.py'
+      - '.github/workflows/mahaimi-stage10-integrity.yml'
+  pull_request:
+    paths:
+      - 'texts/al-mahaimi/mashra-al-khusus/**'
+      - 'texts/manifest.json'
+      - 'tests/test_mahaimi_stage10.py'
+      - '.github/workflows/mahaimi-stage10-integrity.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify the cumulative matn/sharh corpus, links, and source-status register
+        run: python tests/test_mahaimi_stage10.py
