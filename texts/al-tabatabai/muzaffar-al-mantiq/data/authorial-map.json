@@ -9,7 +9,7 @@
     "institutionalScan": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000780/1",
     "institutionalScanYear": 1968
   },
-  "status": "29 authorial sections in the local bilingual reader: 11 introduction, four opening Book I, and 14 selections of Book III. Full six-book Arabic/English integration remains incomplete.",
+  "status": "33 locally paired authorial passages: 11 introduction, four Book I, four opening Book II, and 14 Book III. Remainder of six-book Arabic and English still requires transcription and translation.",
   "parts": [
     {
       "book": 0,
@@ -174,14 +174,16 @@
         {
           "arabic": "الجزئي الإضافي",
           "english": "Relative particularity",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=58&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation",
+          "firstPrintedPage": 58
         },
         {
           "arabic": "المتواطئ والمشكك",
           "english": "Univocal and graduated predication",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=59&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation",
+          "firstPrintedPage": 59
         },
         {
           "arabic": "المفهوم والمصداق",
@@ -232,8 +234,8 @@
           "locatorStatus": "bibliographic topic, exact printed page not checked"
         }
       ],
-      "availableUnits": 0,
-      "note": "No authorial Book II section has yet been transcribed or translated in the local reader.",
+      "availableUnits": 4,
+      "note": "Four local bilingual reading units now cover the complete source exposition of the universal and particular, hypothetical extension, relative particularity, and univocal/graded universals (printed pp. 56–59); remaining Book II sections and exercises are not yet translated.",
       "url": "https://lib.rafed.net/m/?b_id=1604&page=57&type=c_fbook"
     },
     {
@@ -515,11 +517,12 @@
   "summary": {
     "totalAuthorialBooks": 6,
     "sourcePagesCoveredByRegister": 455,
-    "localTranslatedUnits": 29,
+    "localTranslatedUnits": 33,
     "localIntroUnits": 11,
     "localBook3Units": 14,
-    "otherAuthorialBooksLocallyTranslated": 0,
-    "localBook1Units": 4
+    "otherAuthorialBooksLocallyTranslated": 1,
+    "localBook1Units": 4,
+    "localBook2Units": 4
   },
-  "accuracy": "Only book-opening printed-page links and the Book VI demonstration-section start at p. 311 have individually verified locator evidence. Other chapter/section titles are verified against the Rafed contents but their exact internal printed page locators are intentionally withheld until checked."
+  "accuracy": "Authorial book-opening page locators and the first three Book II headings (pp. 57–59) checked in the searchable source. Other internal printed page locators are not claimed unless explicitly checked; 1968 NYU public-domain scan remains an independent pagination/typographic witness to inspect."
 }
