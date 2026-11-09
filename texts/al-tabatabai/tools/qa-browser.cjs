@@ -76,7 +76,7 @@ async function run(browserType){
         assert.ok(await passage.locator('[lang="ar"]').count()>0,'new Book II Arabic missing: '+id);
       }
       assert.match(await page.locator('#passage-M-K-08').textContent(),/conjectur|not logically consistent/i);
-      assert.match(await page.locator('#passage-M-K-14').textContent(),/not a diplomatic/i);
+      assert.match(await page.locator('#passage-M-K-14').textContent(),/normalized explanatory transcription/i);
     });
     await check(browserType.name()+' no duplicated Nihāya emendation footnotes',async()=>{
       await page.locator('[data-part-jump="passage-N-INTRO"]').click();
