@@ -4,7 +4,7 @@
 (() => {
 "use strict";
 const $=id=>document.getElementById(id);
-const sources=[window.FARGHANI_CRITICAL_PASS_001,window.FARGHANI_CRITICAL_PASS_002,window.FARGHANI_CRITICAL_PASS_003,window.FARGHANI_CRITICAL_PASS_004].filter(Boolean);
+const sources=[window.FARGHANI_CRITICAL_PASS_001,window.FARGHANI_CRITICAL_PASS_002,window.FARGHANI_CRITICAL_PASS_003,window.FARGHANI_CRITICAL_PASS_004,window.FARGHANI_CRITICAL_PASS_005].filter(Boolean);
 const rows=sources.flatMap(s=>s.records||[]);
 let lang="both",notes=true;
 function el(tag,className,text) {
