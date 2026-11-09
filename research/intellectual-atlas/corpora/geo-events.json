@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "created": "2026-11-09",
   "basis": "Curated specific work-composition and author-biographical events; NOT a geolocation of all 6,000 catalogue records.",
-  "cartographic_method": "Modern city reference coordinates, not exact medieval building sites. Approximate historical sites and contextual events are explicitly marked. No locations derived solely from a nisba or from an inferred source edge.",
+  "cartographic_method": "WGS84 modern city reference coordinates; base coastline geometry is the GSHHS coarse-resolution coastline through the Basemap dataset, simplified for SVG. Not historical boundaries or exact medieval buildings. Approximate locations and sources are flagged.",
   "places": [
     {
       "id": "murcia",
@@ -245,13 +245,13 @@
       "place": "Mecca",
       "lat": 21.422,
       "lon": 39.826,
-      "time_ah": 599,
+      "time_ah": 598,
       "precision": "city_reference_point",
       "kind": "begun",
       "title": "Ibn ʿArabī · al-Futūḥāt, begun",
       "work_id": "c:ibnarabi_futuhat",
-      "citation_url": "https://ibnarabisociety.org/the-paradox-of-the-kaaba-michel-chodkiewicz/",
-      "note": "Work began at Mecca, around 598–599 AH; Mecca is not the composition location of every chapter.",
+      "citation_url": "https://www.futmak.com/english/introduction/chapter-02/index.php",
+      "note": "Began composition in Mecca in 598 AH according to research on the two authorial recensions. Dating is approximate to the outset rather than the completion of every chapter.",
       "status": "documented"
     },
     {
@@ -266,7 +266,7 @@
       "kind": "completed",
       "title": "Ibn ʿArabī · al-Futūḥāt, first recension",
       "work_id": "c:ibnarabi_futuhat",
-      "citation_url": "https://ibnarabisociety.org/the-paradox-of-the-kaaba-michel-chodkiewicz/",
+      "citation_url": "https://www.futmak.com/english/introduction/chapter-02/index.php",
       "note": "First authorial version completed in Damascus, 629 AH; a subsequent recension followed.",
       "status": "documented"
     },
@@ -282,7 +282,7 @@
       "kind": "recension",
       "title": "Ibn ʿArabī · al-Futūḥāt, revised recension",
       "work_id": "c:ibnarabi_futuhat",
-      "citation_url": "https://ibnarabisociety.org/the-paradox-of-the-kaaba-michel-chodkiewicz/",
+      "citation_url": "https://www.futmak.com/english/introduction/chapter-02/index.php",
       "note": "Second autographic version completed in 636 AH; the location reflects the Damascus final phase, not copying locations of all surviving witnesses.",
       "status": "documented"
     },
@@ -800,7 +800,7 @@
       "reader_ids": [
         "muwatta"
       ],
-      "citation_url": "https://www.britannica.com/biography/Malik-ibn-Anas",
+      "citation_url": "https://www.islam.museum/ar/person/malik-ibn-anas/",
       "note": "Medinan scholar and founder eponym; date represents his death, not the date of al-Muwaṭṭaʾ.",
       "status": "documented"
     },
@@ -915,8 +915,62 @@
         "shafii_risala",
         "shafii_umm"
       ],
-      "citation_url": "https://www.britannica.com/biography/al-Shafii",
+      "citation_url": "https://www.islam.museum/en/person/al-shafii/",
       "note": "Died in Egypt in 204 AH; Cairo pin stands for greater Fustat/Cairo historical area and is an approximate reference point.",
+      "status": "qualified"
+    },
+    {
+      "id": "W-ZAM-KASH",
+      "entity": "work",
+      "place_id": "mecca",
+      "place": "Mecca",
+      "lat": 21.422,
+      "lon": 39.826,
+      "time_ah": 528,
+      "precision": "modern_city_reference_point",
+      "kind": "completed",
+      "title": "al-Zamakhsharī · al-Kashshāf",
+      "reader_ids": [
+        "zamakhshari_kashshaf"
+      ],
+      "citation_url": "https://www.islam.museum/ar/event/al-zamakhshari-kashshaf-528/",
+      "note": "Completed in Mecca in 528 AH, with source testimony referring to the author's dating of the work; this does not locate every stage of its composition.",
+      "status": "source_attested"
+    },
+    {
+      "id": "W-NAW-MIN",
+      "entity": "work",
+      "place_id": "damascus",
+      "place": "Damascus",
+      "lat": 33.513,
+      "lon": 36.291,
+      "time_ah": 669,
+      "precision": "modern_city_reference_point",
+      "kind": "completed",
+      "title": "al-Nawawī · Minhāj al-ṭālibīn",
+      "reader_ids": [
+        "nawawi_minhaj"
+      ],
+      "citation_url": "https://www.islam.museum/en/event/al-nawawi-minhaj-rawda-669/",
+      "note": "Completion of al-Nawawī's Minhāj and Rawḍa is dated 669 AH; event records Damascus as his teaching and writing setting. Does not prove an exact building or manuscript witness.",
+      "status": "source_attested"
+    },
+    {
+      "id": "W-MAL-MUW",
+      "entity": "work",
+      "place_id": "medina",
+      "place": "Medina",
+      "lat": 24.467,
+      "lon": 39.612,
+      "time_ah": null,
+      "precision": "modern_city_reference_point",
+      "kind": "composition_context",
+      "title": "Mālik · al-Muwaṭṭaʾ, Medinan compilation",
+      "reader_ids": [
+        "muwatta"
+      ],
+      "citation_url": "https://www.islam.museum/en/exhibits/path-muwatta/",
+      "note": "Al-Muwaṭṭaʾ reflects a Medinan scholarly setting. No precise year or particular building is assigned; this work event remains undated and its compiler's biography is separate.",
       "status": "qualified"
     }
   ],
@@ -1029,6 +1083,11 @@
     {
       "id": "ibn_rushd",
       "url": "https://www.islam.museum/en/person/ibn-rushd/",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "GSHHS_Basemap",
+      "url": "https://matplotlib.org/basemap/stable/",
       "accessed": "2026-11-09"
     }
   ],
