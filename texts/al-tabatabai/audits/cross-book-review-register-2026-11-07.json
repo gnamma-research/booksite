@@ -25,7 +25,9 @@
       "numberedChapters": 130,
       "additionalWitnesses": 2,
       "additionalGlossaryTerms": 47,
-      "independentArabicCollation": false
+      "independentArabicCollation": false,
+      "adoptedPrintedEditorialEmendations": 1,
+      "supplementaryCriticalNotes": 4
     },
     "expertReviewedUnitsVerified": 0,
     "expertReviewedUnitStatus": "Not documented; zero units are claimed to have passed independent specialist review",
@@ -42,7 +44,8 @@
     "BidayaParitySha": "206e9ea60af9108b614441cd8e049742098cd339",
     "NihayaSupplementSha": "65f3e068b0d44eec4c96ff13b05c45a57bac4c4a",
     "MuzaffarMapSha": "6cae1741a3f59039fe2764178a3ad3140d16530a",
-    "maintenanceNote": "2026-11-09: appended four new al-Manṭiq language/signification passages; all remain working translations with no documented independent specialist verification."
+    "maintenanceNote": "2026-11-09: appended four new al-Manṭiq language/signification passages; all remain working translations with no documented independent specialist verification.",
+    "latestTextualDecision": "N-I-02: adopted explicit 1428 editor's corrected pronoun/verb reading, preserved 1417 reading in critical apparatus."
   },
   "method": "One row per locally stored authorial passage. Presence of Arabic or English is a technical coverage flag, not a scholarly judgment. Same-source normalised PDF comparison has known limitations. Historical attribution issues are isolated in critical notes.",
   "sourceStatus": "Full original Muzaffar Arabic and English remain absent from the local corpus outside the 25 selected passages.",
@@ -3468,16 +3471,19 @@
       },
       "arabicPresent": true,
       "englishPresent": true,
-      "arabicCharacters": 11841,
+      "arabicCharacters": 11837,
       "englishCharacters": 18554,
       "sourceEditionReviewed": "additional 1428 two-volume witness identified, NOT yet exhaustively collated",
       "sourceParityPercent": null,
-      "editorialNotes": 1,
-      "supplementalCriticalNoteIds": [],
-      "flag": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [
+        "N1428-I02-01"
+      ],
+      "flag": "One grammatical emendation of the 1417 base adopted after explicit correction in 1428 printed editor; original preserved; specialist review pending",
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Independently collate autograph/early Arabic manuscript if obtainable, check context and Arabic syntax with a specialist, and verify that 1428 editorial correction is preferable.",
+      "textualLocusAssessment": "Explicit later editorial emendation verified and cited (1428 ed., vol.1 p.18 n.1); not evidence of manuscript attestation."
     },
     {
       "id": "N-I-03",
