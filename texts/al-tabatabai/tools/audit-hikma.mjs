@@ -153,6 +153,29 @@ if(nText&&nExtra){
     check(/https:\/\/lib\.rafed\.net\//.test(note.url||''),'Nihāya critical note lacks printed-witness link '+note.id);
     check(!!note.source,'Nihāya critical note lacks source distinction '+note.id);
   }
+  /* 1428 AH printed-editor emendations: not independently manuscript-attested. */
+  const adoptedReadings=[
+    ['N-I-02','ولو كانت عين الوجود لم يجز أن تسلب عن نفسها','ولو كانت عين الوجود لم يجز أن يسلب عنها','N1428-I02-01'],
+    ['N-II-02','كان جوهراً أو عرضاً ـ موجوداً في نفسه رابطاً','كان جوهراً أو عرضاً ـ رابطاً','N1428-II02-01'],
+    ['N-VI-03','عطف الصور الطبيعيّة','عطف الصورة الطبيعيّة','N1428-VI03-01'],
+    ['N-VI-15','بما أنّها كمالاتها الثانية','بما أنّها كمالاته الثانية','N1428-VI15-01'],
+    ['N-VI-15','يتمّيز به الكمال من غيره','يميّز به الكمال من غيره','N1428-VI15-01'],
+    ['N-VI-16','المضاف إلى\n\nالابن ـ مثلا ـ','المضاف إلى\n\nالأب ـ مثلا ـ','N1428-VI16-01'],
+    ['N-VI-16','ينتزع من الموضوعين الواجدين','ينتزع لكلّ من الموضوعين الواجدين','N1428-VI16-01'],
+    ['N-VI-16','وصفاً ناعتاً لهما انتزاعاً','وصفاً ناعتاً له انتزاعاً','N1428-VI16-01']
+  ];
+  for(const [passageId,earlier,adopted,noteId] of adoptedReadings){
+    const unit=nText.units.find(u=>u.id===passageId);
+    check(!!unit,'Missing emended Nihāya passage '+passageId);
+    if(!unit)continue;
+    check(unit.arabic.includes(adopted),'Adopted reading reverted: '+passageId+' '+adopted);
+    check(!unit.arabic.includes(earlier),'Earlier base reading reintroduced: '+passageId);
+    check(criticalIds.has(noteId),'Missing printed-editor critical note '+noteId);
+    const entry=review?.entries?.find(x=>x.id===passageId);
+    check(entry?.supplementalCriticalNoteIds?.includes(noteId),'Review register missing '+noteId);
+  }
+  check(review?.summary?.N?.adoptedPrintedEditorialEmendations>=adoptedReadings.length,
+    'Review register understates source-recorded Nihāya emendations');
 }
 console.log(JSON.stringify({status:failures.length?'failed':'passed',books:report,failures,warnings},null,2));
 process.exitCode=failures.length?1:0;
