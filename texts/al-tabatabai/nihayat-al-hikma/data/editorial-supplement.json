@@ -505,6 +505,36 @@
       "adoption": "adopted-with-full-apparatus",
       "originalReading": "عطف الصور الطبيعيّة",
       "adoptedReading": "عطف الصورة الطبيعيّة"
+    },
+    {
+      "id": "N1428-VI15-01",
+      "passageId": "N-VI-15",
+      "type": "Textual emendation · later editor",
+      "text": "In vol. 1 p. 209 nn. 3–4 the 1428 revised editor states that the copies give «كمالاتها الثانية» at the second occurrence and «يتميّز به» for the act of discriminating by knowledge. He prints «كمالاته الثانية» to refer the perfections to the human being and «يميّز به» so that the agent distinguishes by knowledge. The earlier «من كمالاتها الثانية» referring to the soul remains correct and was not altered. Two explicit editorial conjectures are accepted with earlier readings preserved in N-VI-15 apparatus.",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=205&type=c_fbook",
+      "source": "Nihāyat al-Ḥikma 1428 revised edition, vol. 1 p. 209 nn. 3–4; compare 1417 base",
+      "status": "Later-editor textual decisions; not manuscript-attested readings",
+      "adoption": "adopted-with-full-apparatus",
+      "originalReadings": [
+        "بما أنّها كمالاتها الثانية",
+        "يتمّيز به الكمال من غيره"
+      ],
+      "adoptedReadings": [
+        "بما أنّها كمالاته الثانية",
+        "يميّز به الكمال من غيره"
+      ]
+    },
+    {
+      "id": "N1428-VI16-01",
+      "passageId": "N-VI-16",
+      "type": "Textual emendation · later editor",
+      "text": "The 1417 base says «ينتزع من الموضوعين الواجدين للنسبة المتكرّرة المتلازمة وصفاً ناعتاً لهما». In vol. 1 p. 218 n. 4 the 1428 editor prints «ينتزع لكلّ من الموضوعين ... وصفاً ناعتاً له» and explicitly records the earlier copy reading. The correction changes the analysis from one common property attributed jointly to both relata to one relational predicate of each term, dependent on their reciprocal relation. Both Arabic and English were corrected; old wording remains in the authorial passage note. The nearby «لوقوعها» was already correct in the 1417 reader.",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=207&type=c_fbook",
+      "source": "Nihāyat al-Ḥikma 1428 revised edition, vol. 1 p. 218 n. 4; compare 1417 base",
+      "status": "Later-editor textual decision; manuscript attestation unverified",
+      "adoption": "adopted-with-full-apparatus",
+      "originalReading": "ينتزع من الموضوعين ... وصفاً ناعتاً لهما",
+      "adoptedReading": "ينتزع لكلّ من الموضوعين ... وصفاً ناعتاً له"
     }
   ],
   "sourceCriticalPolicy": "Preserve authorial notes explicitly marked منه رحمه الله; distinguish later editor's explanatory notes; challenge historically questionable ascriptions by checking named scholars' own texts. These criticalNotes are distinct from the authorial Arabic and translation."
