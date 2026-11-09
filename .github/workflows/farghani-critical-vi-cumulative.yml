@@ -1,0 +1,56 @@
+name: Farghani Critical VI cumulative archive build
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_006_BUILD_TRIGGER.md"
+
+permissions:
+  contents: write
+concurrency:
+  group: farghani-cumulative-vi-build
+  cancel-in-progress: false
+
+jobs:
+  construct-preserved-critical-edition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify old corpus, eight print loci, 128 draft pages and 198 source clauses
+        run: python tools/farghani_build_cumulative_006.py
+      - name: Preserve cumulative archive and evidence manifest without overwriting prior milestones
+        run: |
+          git config user.name "GNAMMA critical text editor"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_CRITICAL_006.md
+          git add texts/al-farghani/muntaha-al-madarik/editorial/STAGE_MANIFEST_CRITICAL_006.json
+          if git diff --cached --quiet; then
+            echo "Archive already identical"
+            exit 0
+          fi
+          git commit -m "Farghani Stage VI: 128-page translation and all earlier evidence preserved with 8 printed loci"
+          for attempt in 1 2 3 4; do
+            git fetch origin master
+            git rebase origin/master
+            if git push origin HEAD:master; then
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "Could not fast-forward commit: artifact holds exact cumulative result" >&2
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: farghani-critical-vi-complete-archive
+          path: |
+            texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_CRITICAL_006.md
+            texts/al-farghani/muntaha-al-madarik/editorial/STAGE_MANIFEST_CRITICAL_006.json
+          if-no-files-found: warn
+          retention-days: 30
