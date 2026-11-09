@@ -1,0 +1,182 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R14a",
+  "date": "2026-11-09",
+  "startSection": "4.649",
+  "endSection": "4.665",
+  "sourceRepo": "OpenITI/0850AH",
+  "sourceCommit": "e2715c62fb458ce3ddc43b962cd55677cdd7bc35",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.649",
+      "number": 649,
+      "pageStart": 463,
+      "pageEnd": 463,
+      "arabic": "القاعدة الثانية: ان قوة التأثير بحسب كمال المؤثر وجودا أو ذاتا أو بالوجوب أو نورية أو صفة أزلية على الاصطلاحات، فالتأثيرات الإلهية ومقدوراته لا تتناهى من كل وجه ولا يتسلط عليها بالإحاطة شئ، اما تأثيرات العقول التي هي الأنوار القاهرة فمتناهية، بمعنى ان ورائه ما هو أتم منه، وان من جملة التأثيرات ما لا يسعها وسعهم كأنفسهم، وغير متناهية، بمعنى انقطاع اثارهم بالكلية، فان لها صلوح ان يحصل منها اثار غير متناهية، لقيام البرهان على دوام العقول والنفوس والأفلاك الأربعة بما يلزمها من الحركات الدورية والمدد الزمانية بما مر في الأصول: ان الأثر إذا لم يتوقف على غير المؤثر يدوم بدوامه، وإذا توقف على شرط يدوم حسب دوام الشرط.",
+      "english": "Second principle: The strength of an effect depends on the perfection of its agent in existence or essence, or in necessity, luminosity, or an eternal attribute, according to the differing terminologies. Divine acts of influence and the things within divine power are in no respect bounded, and nothing can encompass them exhaustively. The effects of the intellects—which are the dominating lights—are bounded insofar as something more perfect lies beyond them, and some effects, including their own selves, exceed their capacity. Yet they are also unbounded insofar as they are capable of producing effects without numerical limit, given the demonstration of the permanence of the intellects, souls, and four spheres, together with their recurring motions and temporal durations. The principle established earlier is that an effect which depends on nothing besides its agent persists as long as the agent does; if it depends on a condition, it persists for as long as that condition endures.",
+      "notes": "The witness reads «وغير متناهية، بمعنى انقطاع آثارهم بالكلية», literally suggesting 'non-finite ... in the sense of the complete cessation of their effects', which conflicts with the following explanation of indefinite production. The translation interprets the argument's evident direction without silently emending the Arabic; check Khvājavī print and other witnesses.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.650",
+      "number": 650,
+      "pageStart": 463,
+      "pageEnd": 464,
+      "arabic": "فالعقل الأول لا يتوقف على غير الحق، إذ لا غير عند عدم جميع ما سوى الحق من وقت وغيره، ولا ترجح لوجود الممكن في العدم المحض، لان الفاعل بدون القابل مقدمة واحدة لا تنتج، فلا يمكن ان يقال للمختار ان يختار الفعل في أي وقت شاء، ولو ترجح بشئ ننقل الكلام إليه ويتسلسل، اما تسلسل الدوائم وهو محال، واما تسلسل الحوادث المتعاقبة فذاك، وكذا كل عقل لعدم توقف وجود العقول الا على وجود العقل، وكذا النفس الكل لدوام العرش والكرسي، إذ الحادث لا بد ان يتوقف وجوده على حدوث شئ من شروط وجوده، والا كان أزليا لما مر، فلا بد من تخلل هيئة لا يتصور دوامها، وكل هيئة لا يتصور دوامها هي الحركة أو ما محله الحركة وهو الزمان الذي هو مقدار الحركة من حيث لا يجتمع اجزائه الفرضية معا، وقيد الحيثية احتراز عن المسافة، فإنها مقدار الحركة لكن من حيث يجتمع اجزائها، وإذا دامت الحركة دام المتحرك.",
+      "english": "The First Intellect depends on nothing other than the Real. For, when everything other than the Real is absent—including time and all else—there is no additional existent thing; and the existence of a possible being cannot be preferentially determined within sheer nonexistence. An agent without a recipient is a single premise and yields no conclusion. Thus one cannot answer that the voluntary agent chooses to act at whatever time He wills: if one thing supplies the preference, the question recurs regarding that thing, producing a regress—either of things that endure, which is impossible [on the argument's assumptions], or of successively occurring events, which is precisely what is at issue. The same applies to each intellect, since the existence of the intellects depends only upon the existence of intellect; and it applies to the Universal Soul in view of the permanence of the Throne and Footstool. A temporally originated thing must depend upon the origination of some condition of its existence; otherwise it would have been eternal, as already explained. There must therefore intervene a configuration incapable of remaining permanently the same. Every configuration of that sort is either movement or something whose substratum is movement—namely time, the measure of movement insofar as its conceptually distinguished parts do not coexist. This qualification excludes distance, which is likewise a measure of movement but one whose parts coexist. If the movement persists, so too does that which moves.",
+      "notes": "The proof invokes the medieval eternity-of-motion controversy. «النفس الكل» may stand for «النفس الكلية»; retain witness. Distinguish time from distance by non-coexisting vs coexisting parts.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.651",
+      "number": 651,
+      "pageStart": 464,
+      "pageEnd": 464,
+      "arabic": "وانما يتصور في الحركة المستديرة لحكايتها أحدية موجدها، ولان المستقيمة تنقطع لتناهى الابعاد أو عند حصول مقصودها، وكذا كليات العناصر، لان دوام التأثير يستدعى دوام قابل الأثر، لذا قال الاشراقيون: نور الأنوار والأنوار القاهرة وظلالها وأضوائها المجردة دائمة أزلية، فمرادهم بالظلال الأفلاك وكليات العناصر وبالأضواء المجردة النفوس، وعندنا الدوائم العقول والنفوس الكلية لا الجزئية التي هي نسبها وأشعتها كما مر والهباء والعرش والكرسي وكليات العناصر، اما الأفلاك الاخر فلها طبيعة عنصرية من شأنها ان تتبدل صفاتها أو آخر ان معها لا أصلها - قاله الجندي في شرحه (1) -",
+      "english": "Such permanence can be conceived only in circular motion, since it represents the oneness of its originator; rectilinear motion comes to an end, either because spatial dimensions are finite or when its aim is reached. The same applies to the elemental universals, for the permanence of efficacy requires the permanence of what receives its effect. Hence the Illuminationists say that the Light of Lights, the dominating lights, their shadows, and their immaterial lights are permanently eternal: by 'shadows' they mean the spheres and elemental universals, and by 'immaterial lights' the souls. According to us, the enduring things are the intellects, the universal—but not the particular—souls, the latter being the relations and rays of the former as explained; also the primordial dust [al-habāʾ], the Throne, the Footstool, and the elemental universals. The other spheres, however, have elemental natures whose properties, or other things accompanying them rather than their foundations, may change. This was stated by al-Jandī in his commentary.",
+      "notes": "The final Arabic «أو آخر ان معها لا أصلها» is doubtful; interpret only provisionally. End contains a source-note marker (1) to check in print. The cosmological eternity claimed is historical source doctrine.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.652",
+      "number": 652,
+      "pageStart": 464,
+      "pageEnd": 464,
+      "arabic": "قال المتكلمون: دوام الشئ مع الشئ يقتضى مساواتهما وعدم أولوية أحدهما بالعلية.",
+      "english": "The theologians [al-mutakallimūn] say: If one thing endures alongside another, this entails their equality and gives neither any priority over the other as a cause.",
+      "notes": "Reports a kalām objection; do not conflate eternal concurrence with identity.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.653",
+      "number": 653,
+      "pageStart": 464,
+      "pageEnd": 464,
+      "arabic": "قلنا: ليس كذلك، فان الشعاع المحسوس من النير لا النير منه، وهو معه ويدوم بدوامه، وكذا حركة الخاتم مع حركة الإصبع، فلان يدوم اثر أقوى المؤثرات وماله كل التأثير في الحقيقة كان أولي، والخلو عن التأثير يسمى تعطيلا.",
+      "english": "Our reply is that this does not follow. A perceptible ray issues from its source of light, not the light-source from the ray, although the two coexist and the ray endures as long as its source endures. Likewise the movement of a ring accompanies the movement of the finger. It is therefore all the more fitting that the effect of the strongest of agents—the One to whom all efficacy truly belongs—should endure. To remove all efficacy from Him is called taʿṭīl, the denial or suspension of [divine] activity.",
+      "notes": "The ray and ring examples distinguish concomitance from causal symmetry; 'taʿṭīl' is a technical polemical term.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.654",
+      "number": 654,
+      "pageStart": 464,
+      "pageEnd": 464,
+      "arabic": "فان قلت: لو كانت الحركات الفلكية دائمة أزلية لزم ان يكون كل حادث منها متوقفا على حصول ما لا يتناهى، فلا يحصل.",
+      "english": "If you object: Were the motions of the celestial spheres perpetual and beginningless, each event arising from them would depend on the completion of an infinite number of things, and so could never occur—",
+      "notes": "Introduces an objection; its resolution is in the next numbered unit.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.655",
+      "number": 655,
+      "pageStart": 464,
+      "pageEnd": 465,
+      "arabic": "قلت: الممتنع هو المتوقف على غير المتناهى الذي سيحصل، اما إذا كان ماضيا ويكون الحادث واقعا بعده، فهو المتنازع فيه.",
+      "english": "I reply: What is impossible is dependence upon an infinity that still has to come about. But where the infinity lies in what has passed, and an event occurs after it, the possibility of this is precisely the point under dispute.",
+      "notes": "The reply distinguishes an incomplete future infinite series from an allegedly completed past succession; it does not independently demonstrate its thesis.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.656",
+      "number": 656,
+      "pageStart": 465,
+      "pageEnd": 465,
+      "arabic": "القاعدة الثالثة: ان قوة التأثير في غير الحق بسبب ابتهاجه به وبحسب قربه منه - لعدم الواسطة أو لقلتها - وذلك مراعى في كل من المرتبة العقلية والنفسية والمثالية والجسمية، وكما أن القلم الاعلى واسطة للكل، فالنفس الكلية واسطة لما تحتها، وكذا العرش بالنسبة إلى عالم الأجسام وحركته لحركتها. لذا قال في الاشراق: فالبرازخ السافلة خاضعة للبرازخ العالية متأثرة عنها طبعا.",
+      "english": "Third principle: The strength of efficacy in anything other than the Real arises from its delight in Him, and varies with its proximity to Him—whether because there is no intermediary or because the intermediaries are few. This holds at the intelligible, psychic, imaginal, and bodily degrees alike. Just as the Supreme Pen mediates for everything, the Universal Soul mediates for what lies below it; similarly the Throne mediates for the world of bodies and its movement for their movements. Thus it is stated in the Illuminationist work: the lower isthmuses or bodies [barāzikh] are naturally subject to the higher isthmuses and affected by them.",
+      "notes": "«البرازخ» in Suhrawardian terminology often refers to dark or corporeal barriers/bodies, rather than exclusively Akbarian imaginal intermediaries.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.657",
+      "number": 657,
+      "pageStart": 465,
+      "pageEnd": 465,
+      "arabic": "فان قلت: فينبغي ان يكون الابعد أقوى تأثيرا من الأقرب لتضاعف آثار التجليات فيه تارة من الحق بالوجه الخاص واخرى من كل واسطة من الوسائط؟",
+      "english": "If you object: Should not what is further away be stronger in its efficacy than what is nearer, since the effects of self-disclosures are multiplied within it—at one moment coming from the Real through the particular face, and at another from each intervening intermediary?",
+      "notes": "The objection is a paradox concerning accumulated mediation versus ontological rank.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.658",
+      "number": 658,
+      "pageStart": 465,
+      "pageEnd": 465,
+      "arabic": "قلنا: أجاب عنه في الاشراق بان كثرة الأنوار الفائضة والاشراقات العارضة لا تعادل قوة كمال الجوهر، فهي مع قلة الأنوار العارضة أشرف وأقوى من نقصانه مع كثرتها، فالنور الأخس ما عنده الظلمات، فالأقرب إلى الظلمات أبعد عن الكمالات النورية.",
+      "english": "We reply: The Illuminationist work answers that the abundance of emanating lights and adventitious illuminations does not equal the intrinsic strength of the substance's perfection. A more perfect substance, though receiving fewer superadded lights, is nobler and stronger than a deficient substance receiving many. The baser light is that which is in proximity to darkness; the nearer it is to darkness, the further it is from luminous perfections.",
+      "notes": "Distinguish intrinsic degree of the substance from the number of accidental or received illuminations.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.659",
+      "number": 659,
+      "pageStart": 465,
+      "pageEnd": 465,
+      "arabic": "القاعدة الرابعة: في كيفية انبعاث حركة الأفلاك عما ينال نفوسها بالاشراقات والأشعة القدسية المدبرة، أعني التجليات الإلهية الأسمائية كانت بلا واسطة أو بواسطة المظاهر المتسلسلة.",
+      "english": "Fourth principle: On how the motion of the spheres proceeds from what their souls receive through illuminations and governing holy rays—that is, through the divine self-disclosures of the Names, whether immediately or through a succession of loci of manifestation.",
+      "notes": "The following extended analogy is attributed to al-Ishrāq and its commentary.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.660",
+      "number": 660,
+      "pageStart": 465,
+      "pageEnd": 466,
+      "arabic": "قال في الاشراق وشرحه: كحال الانسان في انفعال بدنه بالحركة عما يحصل في نفسه من الهيئات، كالمناجى مع نفسه بأمور عقلية تحرك لشئ من أعضائه بحسب ما يتفكر فيه، دلت التجربة عليه، ولهذا ما يؤدى طرب النفس إلى تصفيق ورقص وحركات متناسبة، فكذا نفس الفلك إذا انفعلت باللذات القدسية ينفعل بدنها بالحركات الدورية المناسبة للاشراقات النورية، كما يدوم اضطراب البدن لأهل المواجيد بدوام البارقات الإلهية الواردة على نفوسهم، كذلك يدوم مواجيد نفوس الأفلاك بدوام الاشراقات النورية على نفوسهم، فالتحريكات معدة للاشراقات والاشراقات موجبة للحركات الاخر - فلا دور - وجميع اعداد الحركات والاشراقات مضبوطة بعشق مستمر وشوق دائم وحركات متوالية توالى الأنوار السانحة على نسق واحد (1).",
+      "english": "It is said in the Illuminationist work and its commentary: This resembles the human being, whose body is moved through the states that arise in the soul. A person privately contemplating intelligible matters moves one of his limbs in accordance with what he is thinking; experience bears witness to this. Hence delight of the soul gives rise to clapping, dancing, and corresponding movements. Similarly, when the soul of a celestial sphere is affected by sacred delights, its body responds through circular movements appropriate to luminous illuminations. Just as bodily agitation endures among those experiencing spiritual ecstasy for as long as divine flashes keep arriving upon their souls, so the ecstatic states of the celestial souls continue so long as luminous illuminations arrive upon them. Movements thus prepare the way for illuminations, and those illuminations necessitate further movements—so there is no vicious circle. All the numbers of movements and illuminations are regulated by an abiding love, a continual longing, and motions that succeed one another in the same sequence as the arriving lights.",
+      "notes": "The key anti-circularity distinction is between earlier motions that prepare a disclosure and subsequent motions resulting from it. Footnote marker (1) requires verification against the Illuminationist base and commentary.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.661",
+      "number": 661,
+      "pageStart": 466,
+      "pageEnd": 466,
+      "arabic": "لان فاعلها الحقيقي إحدى مستحيل التغير والوسائط متشابهة الافعال لغلبة نوريتها. والقابل بسيط، أي ليس فيه اختلاف القوى والطبائع - عكس المركب من العناصر -",
+      "english": "For their real agent is unitary and incapable of change; the intermediaries perform similar acts because their luminosity predominates; and the recipient is simple—that is, it contains no diversity of powers and elemental natures, unlike a body compounded of elements.",
+      "notes": "§4.661 continues the quoted explanation and provides three grounds of regularity.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.662",
+      "number": 662,
+      "pageStart": 466,
+      "pageEnd": 466,
+      "arabic": "وأقول: التحقيق في ذلك ما سيتضح ان الحرارة في العنصريات كالافلاك السبعة السيارة تحدث الحركة ثم الحركة تحدث الحرارة، فالمقتضى للحركة القدسية الأصلية حرارة التجلي الحبى المنتشئ من التجلي الكمالي الذاتي، لان التجلي الحبى منبع الكمال الأسمائي الذي أصله وأوله الحياة التي لها الحرارة كما مر.",
+      "english": "I say: The deeper explanation will become clear from the fact that, among elemental things—as in the seven wandering spheres—heat gives rise to motion and motion in turn gives rise to heat. What requires the primordial sacred movement is the heat of the loving self-disclosure [al-tajallī al-ḥubbī], arising from the self-disclosure of essential perfection [al-tajallī al-kamālī al-dhātī]. For the loving self-disclosure is the source of perfection of the Names, whose foundation and first principle is life, to which heat belongs, as stated above.",
+      "notes": "Fanārī explicitly resumes his own account with «وأقول»; 'heat' operates both in its cosmological analogy and in the language of loving divine manifestation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.663",
+      "number": 663,
+      "pageStart": 466,
+      "pageEnd": 466,
+      "arabic": "فطلب الظهور الأسمائي مبنى على حياة التجلي للحرارة النورية السارية في كل مظهر قابل حسب قابليته لحرارته.",
+      "english": "The Names' seeking to become manifest is therefore grounded in the life of self-disclosure, through the luminous heat that permeates every receptive locus of manifestation in accordance with its capacity to receive that heat.",
+      "notes": "The gradation depends on the particular locus's receptivity.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.664",
+      "number": 664,
+      "pageStart": 466,
+      "pageEnd": 466,
+      "arabic": "فكلما الحت التجليات الأسمائية بأشعتها القدسية أحدثت بحرارتها الحركات والتوجهات الأسمائية ثم الروحانية ثم المثالية حتى ظهرت في الحس في أول الأجسام المحسوسة بخاصية الحركات القدسية من حيث الانتظام والتناسب والدوام - كالعرش - ثم أحدثت حركاتها من حيث هي حركات وبما تضمن من الحاح التجليات السابقة حرارات تجليات أخرى أحدثت حركات اخر متنازلة متناسبة بحسب سراياتها وحال قوابلها مستديرة تارة ومستقيمة أخرى، إلى أن يتعين أنواع العناصر بكلياتها ثم بحسب المعدات بجزئياتها، فالمؤثر في الكل حقيقة التجلي الحبى - وان اختلفت بحسب المراتب والمظاهر -",
+      "english": "Whenever the self-disclosures of the Names persistently press their holy rays upon [receptive loci], their heat gives rise first to movements and orientations at the level of the Names, then to spiritual movements, then to imaginal movements, until these appear in the sensory world in the first perceptible body, whose sacred movements are characterised by order, proportion, and permanence—namely the Throne. Its movements, both as movements and through the pressure of the preceding disclosures which they contain, then give rise to the heats of other self-disclosures. These in turn give rise to further, descending, proportionate movements according to the ways the disclosures pervade their recipients and the states of those recipients: sometimes circular, sometimes rectilinear, until elemental kinds become determined in their universal forms and, according to the preparatory conditions, in their particulars. In all cases the true agent is the reality of the loving self-disclosure, although it differs according to degrees and loci of manifestation.",
+      "notes": "Maintain the sequence names → spirits → imaginal forms → sensory Throne → lower elemental kinds; do not take 'heat' throughout as modern thermal energy.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.665",
+      "number": 665,
+      "pageStart": 466,
+      "pageEnd": 467,
+      "arabic": "وبما مر من المقدمات يتضح ان المؤثر في حركة الكرسي حركة العرش الظاهرة - لا مطلق الحركة - لان اسناد الأثر إلى ما يناسبه والحركة فيما تقدم على تعين العرش كانت غيبية أسمائية أو روحانية عقلية أو مثالية ذهنية، وتمت مراتبها بالحركة الحسية في العرش، فتربعت وتمت مراتب الظهور وأصول الاشكال، فبذلك حصل الاستواء الرحماني الذي لا يخفى سره. ثم إن تمام الظهور واستيلاء جميع مراتب الوجود واستقرار حركة سر الوجود انما هو باستيفاء مرتبة الحس التي هي آخر المراتب وفيها يحصل كمال الجلاء والاستجلاء، ومبنى كل ذلك على أن الموجودات الممكنة كلها صورة التجليات الإلهية والنسب الأسمائية.",
+      "english": "The foregoing premises show that what acts upon the movement of the Footstool is the manifest movement of the Throne—not movement absolutely considered. For an effect must be ascribed to that which corresponds to it. Before the determination of the Throne, motion was either unseen and pertaining to the Names, or spiritual and intelligible, or imaginal and mental. Its degrees were completed through sensory motion in the Throne; they became fourfold, and the degrees of manifestation and the principles of the forms were completed. Thereupon the Merciful's istiwāʾ took place, whose mystery is evident to one who understands. The completion of manifestation, its command over all degrees of existence, and the stabilisation of the movement of the mystery of being are achieved only when the sensory degree—the last of the degrees—is fully realised. At that degree the perfection of disclosure and of self-witnessing [al-jalāʾ wa-l-istijlāʾ] is attained. All this rests upon the principle that every possible existent is a form of divine self-disclosures and of the relations of the Names.",
+      "notes": "Do not flatten istiwāʾ into literal bodily enthronement; preserve the fourfold manifestation and the technical pairing jalāʾ/istijlāʾ. Qurʾānic allusions should be annotated in later collation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    }
+  ]
+}
