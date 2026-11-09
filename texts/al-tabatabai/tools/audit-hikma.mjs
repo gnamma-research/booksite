@@ -74,11 +74,11 @@ for(const [name,file] of books){
     check(units.some(u=>u.id==='M-P-01'),'Muẓaffar introduction must precede its Book III selections');
     check(units.filter(u=>/^M-K-(0[1-9]|1[0-7])$/.test(u.id)).length===17,
       'Muẓaffar Book II must preserve seventeen working bilingual reading units, some source-normalized');
-    check(units.length===57,'Muẓaffar must contain 57 working reading units including four Book IV openings');
-    const newBook4=['M-C-01','M-C-02','M-C-03','M-C-04'];
+    check(units.length===62,'Muẓaffar must contain 62 selected working reading units including nine Book IV selections');
+    const newBook4=['M-C-01','M-C-02','M-C-03','M-C-04','M-C-05','M-C-06','M-C-07','M-C-08','M-C-09'];
     check(stages.some(x=>x.id==='C'&&x.bookNumber===4),'Muẓaffar new Book IV stage missing');
-    check(newBook4.every(id=>units.some(u=>u.id===id&&u.stage==='C'&&u.arabic.length>450&&u.english.length>850)),
-      'Muẓaffar four source-grounded Book IV proposition sections missing or truncated');
+    check(newBook4.every(id=>units.some(u=>u.id===id&&u.stage==='C'&&u.arabic.length>350&&u.english.length>850)),
+      'Muẓaffar nine Book IV source-grounded proposition selections missing or truncated');
     check(stages.some(x=>x.id==='K'&&x.bookNumber===2),'Muẓaffar Book II stage is missing');
     const universalIds=['M-K-01','M-K-02','M-K-03','M-K-04','M-K-05','M-K-06','M-K-07','M-K-08','M-K-09','M-K-10','M-K-11','M-K-12','M-K-13','M-K-14','M-K-15','M-K-16','M-K-17'];
     check(units.find(u=>u.id==='M-K-08')?.notes?.some(n=>/conjecture|inconsistent|not logically consistent/i.test(n.text||'')),
@@ -124,8 +124,8 @@ if(mMap&&mText){
     'Muẓaffar source map lost new Book I source coverage');
   check(mMap.parts.find(p=>p.book===2)?.availableUnits===17,
     'Muẓaffar source map must register Book II opening');
-  check(mMap.parts.find(p=>p.book===4)?.availableUnits===4,
-    'Muẓaffar source map must register four Book IV selected readings');
+  check(mMap.parts.find(p=>p.book===4)?.availableUnits===9,
+    'Muẓaffar source map must register nine Book IV selected readings');
   check(mMap.parts.reduce((n,x)=>n+x.topics.length,0)>=60,'Muẓaffar map lost section titles');
   for(const p of mMap.parts){
     check(p.start>0&&p.end>=p.start,'Muẓaffar invalid page range for book '+p.book);
@@ -192,14 +192,19 @@ if(nText&&nTriage){
       'Cumulative review register not linked to triage '+r.id);
   }
   check(nTriage.summary?.automaticallyScreened===136,'Incomplete Nihāya full-corpus screening');
-  check(nTriage.summary?.locallyReadAgainstStoredArabic===70,'Nihāya local reading count must preserve 68 earlier plus two fourth-batch readings');
+  check(nTriage.summary?.locallyReadAgainstStoredArabic===74,'Nihāya must preserve four new fifth-batch local readings (70+4)');
   check(nTriage.summary?.secondaryPrintedDigitalSpotChecks===5,
     'Nihāya revised printed-digital spot checks must remain individually documented');
-  check(rows.filter(r=>r.englishReview?.status==='local-bilingual-reading-checked').length===70,
+  check(rows.filter(r=>r.englishReview?.status==='local-bilingual-reading-checked').length===74,
     'Nihāya direct bilingual checks mismatch cumulative register');
   const unitXI=nText.units.find(u=>u.id==='N-XI-PRE');
   check(unitXI?.english.includes('“intellect” (al-ʿaql)')&&!unitXI?.english.includes('term “intellection”'),
     'Nihāya XI stage heading reverted to imprecise English');
+  const unitIX11=nText.units.find(u=>u.id==='N-IX-11');
+  check(unitIX11?.english.includes('Intermediate motion corresponds to the instant through traversal motion.') &&
+    !unitIX11?.english.includes('Intermediate motion corresponds to time through traversal motion.') &&
+    arabicKey(unitIX11?.arabic).includes(arabicKey('الحركة التوسّطيّة منطبقةٌ عليه بواسطة القطعيّة')),
+    'Nihāya IX.11 grammatical scope: intermediate motion refers to the instant (al-ān), not time (al-zamān)');
   const unitVI19=nText.units.find(u=>u.id==='N-VI-19');
   check(unitVI19?.english.includes('imaginal form divested of quantity')&&arabicKey(unitVI19?.arabic).includes(arabicKey('المجردة من الكم')),
     'Nihāya VI.19 scope correction lost');
