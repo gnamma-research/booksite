@@ -1,3 +1,17 @@
+## Latest milestone — Stage XV: four additional direct 1876 print-photo loci (9 November 2026)
+
+**New primary evidence:** Original 1876 photographed printed **p20 scan24** reads `القابل`, confirming the controversial B2007 p38 digitized reading rather than the earlier conjectural `القائل`. I1876 printed **p28 scan32** reads `بالاستتار بسبحات أعيانها وأسرارها وأنوارها`, where the B2007 digital text has `بسبحاب`. Provisional English is now *concealed within the splendours of their realities, mysteries, and lights*, not 'clouds'. I1876 printed **p38 scan42** verifies the three initial gifts of existence, continuance and life under al-Jawād (core clause; initial conjunction differs in derivative copy). I1876 printed **p39 scan43** verifies `الغفار` under generality (`تعميما`) versus `الغفور` under multiplicity (`تعديدا`).
+
+**Photographic apparatus totals: fourteen selected loci, six differences between I1876 and the later modern digitized/derivative witness, eight bounded agreements, across thirteen historical printed pages.** This is NOT 13 complete pages proofread and NOT manuscript collation. Source is the photo-verified historical **printing**, not medieval manuscripts; modern physical Beirut pages have not yet been inspected at new loci. A low-resolution print p32 scan36 may distinguish `الحكم` from B2007 digital `الحكيم`, but this possible substantive name difference is **UNVERIFIED and excluded from counts** pending 2200px original.
+
+**Existing corpus unchanged in count:** 559 selected bilingual records touching all 128 B2007 introductory printed page labels; 283 earlier modern-digitized checks and 276 secondary-retyped checks. The completed 128-page-labelled English is still a *working draft*. The p48 translation and the machine-readable clause have been corrected, with both original and edited lemmata retained.
+
+**New evidence:** [Stage XV photographed printed report](I1876_COLLATION_STAGE_015.md) · [14-locus cumulative photo apparatus](I1876_COLLATION_CUMULATIVE_005.json) · [Stage XV restart](STAGE_HANDOFF_CRITICAL_015.md) · [Updated working English](WORKING_TRANSLATION_18_145.md) · [Updated 559-locus bilingual apparatus](CUMULATIVE_SELECTED_BILINGUAL_015.md).
+
+**Next:** obtain true photographic B2007 printed pages 38,48,52,61–62; original-resolution I1876 scan36 p32 to resolve `الحكم/الحكيم`, followed by C1107/R670/K273/F3966/Y706 manuscript images. Continue original full-line primary print collation starting at B2007 p61; do not substitute derivative retranscription or selected checks.
+
+---
+
 ## Latest milestone — Stage XIV, Foundation IV and concluding preface, B2007 pp102–145 (9 November 2026)
 
 **Completed in this stage:** 91 new *selected Arabic–English excerpt comparisons* in a **secondary derivative online transcription** of the modern edited Arabic: 48 on pp102–125 and 43 on pp126–145. Earlier 468 records remain intact, giving **559 selected bilingual records** over all 128 printed page labels of the four foundations and prefatory supplement B2007 pp18–145. **DO NOT REPRESENT THIS AS 128 FULLY PROOFREAD ARABIC PAGES OR A DEFINITIVE CRITICAL EDITION.** Only 283 selected excerpt checks on pp18–60 used the directly reviewed digitized modern edited Arabic; 276 excerpts on pp61–145 used a derivative retyped version. Earlier complete English translation remains working draft.
