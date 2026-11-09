@@ -117,6 +117,33 @@ window.GNAMMA_TAHDHIB_PROGRESS={
   },
   "stages": [
     {
+      "id": "102",
+      "date": "2026-11-09",
+      "title": "Recovered 24 older partial gloss selections Q155–178",
+      "sourcePages": "155–178",
+      "fullNoteCount": 0,
+      "partialNoteCount": 24,
+      "certifiedPages": 0,
+      "report": "STAGE102_HAWASHI_RECOVERY_AND_INSTRUMENTALITY.md",
+      "files": [
+        "hawashi-q155-178-data.js",
+        "hawashi-q125-178.html"
+      ]
+    },
+    {
+      "id": "103",
+      "date": "2026-11-09",
+      "title": "Independent Y manuscript candidate census, no collation",
+      "sourcePages": "not applicable",
+      "fullNoteCount": 0,
+      "partialNoteCount": 0,
+      "certifiedPages": 0,
+      "report": "STAGE103_WITNESS_CANDIDATES_AND_LAYER_IDENTITIES.md",
+      "files": [
+        "STAGE103_WITNESS_CANDIDATES_AND_LAYER_IDENTITIES.md"
+      ]
+    },
+    {
       "id": "104",
       "date": "2026-11-09",
       "title": "Source-checked opening notes, cumulative progress architecture",
