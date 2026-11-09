@@ -522,12 +522,21 @@ window.FARGHANI_CRITICAL_PASS_004={
       "source_siglum": "B2007",
       "source_url": "https://ablibrary.net/book_content/b/9606/34?lang=ar",
       "grade": "modern-printed-digital-selected-locus-checked",
-      "historical_print_verified": false,
+      "historical_print_verified": true,
       "manuscript_verified": false,
       "edited_ar": "سمّي بالحضرة العمائية",
       "i1876_ar": "سمّي بالحضرة العمائية",
       "print_locus": "I1876 printed p18, scan 22",
-      "evidence_note": "I1876 p18/scan22 directly inspected: الحضرة العمائية; B2007 p34 printed الرقمية: الحضرة العملية. Adopt historical print lemma, record B2007 in apparatus; no manuscript variant verified."
+      "evidence_note": "I1876 p18/scan22 directly inspected: الحضرة العمائية; B2007 p34 printed الرقمية: الحضرة العملية. Adopt historical print lemma, record B2007 in apparatus; no manuscript variant verified.",
+      "historical_print": {
+        "siglum": "I1876",
+        "printed_page": 18,
+        "scan_index": 22,
+        "reading": "سمّي بالحضرة العمائية",
+        "status": "historical-print-difference",
+        "source_pdf": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
+        "note": "Photographed 1876 printing p18 reads العمائية; Beirut B2007 p34 has العملية. Adopt 'Cloud-like Presence'. This is not a manuscript variant."
+      }
     },
     {
       "id": "CR004-041",
