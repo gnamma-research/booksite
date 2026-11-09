@@ -11,3 +11,13 @@ main{min-width:0;max-width:100%;padding:0 clamp(17px,3vw,45px) 125px}.hero{paddi
 body[data-lang=ar] .en{display:none}body[data-lang=en] .ar{display:none}body[data-lang=ar] .pair,body[data-lang=en] .pair{grid-template-columns:minmax(0,1fr)}body[data-notes=false] .note{display:none}
 #toast{position:fixed;bottom:70px;right:20px;z-index:80;background:var(--ink);color:var(--bg);border-radius:8px;padding:9px 15px;font:12px system-ui,sans-serif;opacity:0;pointer-events:none;transition:opacity .15s}#toast.show{opacity:1}.mobile-dock{display:none}
 @media(max-width:1120px){.frame{grid-template-columns:205px minmax(0,1fr)}.context{display:none}}@media(max-width:740px){.topname small{display:none}.back,#edition-status{display:none}.toolbar{top:55px}.frame{display:block}.shelf{position:fixed;z-index:40;top:105px;left:0;bottom:0;width:min(84vw,305px);max-height:none;background:var(--surface);box-shadow:6px 0 28px var(--shadow);transform:translateX(-105%);transition:transform .2s;overflow:auto}.shelf.open{transform:none}main{padding:0 17px 110px}.hero{padding:31px 0 19px}.pair{grid-template-columns:1fr;gap:16px}.ar{font-size:23px}.en{font-size:17px}.pair .ar{border-bottom:1px dashed var(--hair);padding-bottom:15px}body[data-lang=en] .pair .ar{display:none}body[data-lang=ar] .pair .en{display:none}.mobile-dock{display:flex;position:fixed;z-index:25;bottom:0;left:0;right:0;height:55px;background:var(--surface);border-top:1px solid var(--hair);justify-content:space-around;align-items:center;padding-bottom:env(safe-area-inset-bottom)}.mobile-dock button{padding:7px 18px;font:13px system-ui,sans-serif}.sourcebar{gap:7px}.topbar{padding:7px 10px}.topname{font-size:14px}.topactions{gap:0}}
+
+/* Source-aligned links into the already published al-Mahāʾimī commentary */
+.commentary-parallels{margin:15px 0 2px;border:1px solid var(--hair);border-radius:10px;background:var(--soft);padding:11px 14px;font:12px/1.6 system-ui,sans-serif}
+.commentary-parallels summary{cursor:pointer;font-weight:650;color:var(--accent)}
+.commentary-parallels p{color:var(--muted);margin:10px 0}
+.commentary-list{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.commentary-link{display:flex;flex-direction:column;gap:3px;padding:9px 11px;text-decoration:none;border:1px solid var(--hair);background:var(--surface);border-radius:8px}
+.commentary-link span:first-child{font:650 10px/1.3 system-ui,sans-serif;color:var(--muted)}
+.commentary-link span:last-child{font:12px/1.45 system-ui,sans-serif;color:var(--accent)}
+@media(max-width:740px){.commentary-list{grid-template-columns:1fr}}
