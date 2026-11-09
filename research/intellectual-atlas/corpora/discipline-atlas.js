@@ -130,7 +130,7 @@ function detailHTML(){
  "<dt>Classification</dt><dd>"+esc(w.schoolEvidence||"Cataloguer attribution only")+"</dd>"+
  "<dt>Source tier</dt><dd>"+esc(sourceOf(w))+"</dd></dl>"+
  (w.sourceNote?"<p>"+esc(w.sourceNote)+"</p>":"")+
- "<p>"+sourceLink(w)+"</p><p class='dn-caveat'>Classification and proximity on this timeline do not establish a textual or doctrinal relation.</p></aside>";
+ "<p>"+sourceLink(w)+"</p><button type='button' data-action='explore-source-selected'>Open work-centred sources &amp; reception</button><p class='dn-caveat'>Classification and proximity on this timeline do not establish a textual or doctrinal relation.</p></aside>";
 }
 function option(id,name,active){
  return "<option value='"+esc(id)+"'"+(id===active?" selected":"")+">"+esc(name)+"</option>";
