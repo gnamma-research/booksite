@@ -10,7 +10,7 @@
       "language": "both",
       "pages": 299,
       "size_bytes": 919721,
-      "sha256": "787e820b303358807ed8089e2e44a2dff28e592b3cc1d0dfecab85ac5f441ce8",
+      "sha256": "cfbd3b024bf0d6c030409fb9e562e4298ac9058973d50f5eedbe1edbcfcf74e1",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -24,8 +24,8 @@
       "group": "reading",
       "language": "english",
       "pages": 138,
-      "size_bytes": 432753,
-      "sha256": "7c5338c570fb43449d7d7c43ac1e4bd77b72807531fb1d550cdd823f49459ccf",
+      "size_bytes": 432757,
+      "sha256": "5931507b14ebce658a3e63621cef22f956ca96e58a86081dad83e44a4ace8dc8",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -40,7 +40,7 @@
       "language": "arabic",
       "pages": 173,
       "size_bytes": 521661,
-      "sha256": "bfbadf64abada936f8b7e8e9f218535b1150eed31f8e2fd57ca31c40fad72be7",
+      "sha256": "542279e780459f285fbc6dc5d828e34e2c972503fd10d6d7ff76c346a172430e",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -54,8 +54,8 @@
       "group": "study",
       "language": "both",
       "pages": 322,
-      "size_bytes": 1019601,
-      "sha256": "9a0ca9b6aaf78cfde04a96c28d111124dae4ec15d9168f2ad6b072caf98fb8b1",
+      "size_bytes": 1019599,
+      "sha256": "cc2ab72f808d2661e1f4ab1c9ca4169f431177e5804782ddf53f6209f7cdbe19",
       "description": "With selected notes and subject guide",
       "content": {
         "matn": 61,
@@ -69,8 +69,8 @@
       "group": "reference",
       "language": "both",
       "pages": 359,
-      "size_bytes": 1174425,
-      "sha256": "519e324f6e6bb5d7448aa31310078276c5d7ede6583f38eb8b2fe685937a0cb8",
+      "size_bytes": 1174426,
+      "sha256": "4d9e380604ecb154c3c7e4f5291255bd6acef521530c7980e37ef005cc4bca05",
       "description": "Complete source notes, glossary, index and references",
       "content": {
         "matn": 61,
