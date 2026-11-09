@@ -1,6 +1,6 @@
 # Qawāʿid / Tamhīd — clause-level comparative review, pass 1
 
-**9 November 2026.** This work inventories 5520 Arabic punctuation-clause candidates and 2853 English sentence candidates across **all 171 bilingual units**. Only **817 Arabic clauses in 23 units** have been individually compared with their English in this pass. The remaining **4703 are not certified**.
+**9 November 2026.** This work inventories 5520 Arabic punctuation-clause candidates and 2853 English sentence candidates across **all 171 bilingual units**. Only **1075 Arabic clauses in 25 units** have been individually compared with their English in this pass. The remaining **4445 are not certified**.
 
 All clauses, offsets, corresponding English for reviewed passages, and source fingerprints are in the [complete clause ledger](../qa/clause-ledger.json). Automatic enumeration is **not** evidence of an accurate translation. The original Arabic and the reported QT-059 lacuna remain unchanged.
 
@@ -254,6 +254,32 @@ All clauses, offsets, corresponding English for reviewed passages, and source fi
 | 35–41 | 15–18 | **checked-with-note** | كما قال الشيخ « رضى اللَّه عنه » في فصوص الحكم : « العالم ظهر في النفس الرحمانى الذي نفّس اللَّه به ، عن الأسماء الإلهي… — Ibn ʿArabī's quote reproduced as a quotation within the grandson's commentary; not an independently collated entire source. |
 | 42–44 | 19–26 | **checked-with-note** | شعر : الكل في عين النفس * - كالضوء في ذات الغلس - و العلم بالبرهان في * - سلخ النهار لمن نعس - فيرى الذي قد قلته * - رؤ… — All eight couplets retained; ellipses and uncertain images remain literal or bracketed, not rewritten as modern paraphrase. |
 | 45–45 | 27–27 | **checked** | فتأمل . — Final author's explanatory remark and imperative to reflect are distinguished from the preceding Ibn ʿArabī verse. |
+
+### SH-028 — A, printed pp. 121–130
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–5 | 1–12 | **corrected** | أقول : هذا شروع في بيان تفريع التفصيل الاسمائى على الإجمال الذاتي و كيفية انتشاء تلك الأسماء باجناسها و أنواعها و أصناف… — Opening differentiates names by proper domain and levels; tawqīfī now retained as authoritatively fixed, not a distinct act of disclosure. Technical vocabulary used as controlled correspondence with reflective investigators. |
+| 6–17 | 13–23 | **checked-with-note** | إذا عرفت هذا فاعلم ان الذات باعتبار اللاتعيُّن المسمّاة بغيب الغيب ، تارة و الهويَّة المطلقة اخرى ، يمتنع ان يعتبر فيها… — One intrinsic unrestricted unity distinguished from relational numerical unity; the electronic Arabic duplicates one unit about unrestricted identity and the whole—not a different doctrinal proposition. |
+| 18–34 | 24–38 | **checked** | ثمَّ ان هاهنا نكتة تتضمّن فوائد لا بدَّ من الوقوف عليها ، و هي انَّ للوحدة المعتبرة هاهنا اعتبارين . أحدهما متعلّقة طرف… — Aḥad and wāḥid distinguished as absence/affirmation of relations under considerations; numerical one illustrates naming, without a real duality in absolute essence. |
+| 35–55 | 39–56 | **checked** | [ في بيان كيفية تأثير المفاتيح الغيب ] ثمَّ ان الذات باعتبار اتّصافها بالوحدة الحقيقيَّة يقتضي تعيُّنا يسمّى باصطلاح ال… — First determination via encompassing rather than opposition, Muḥammadan Reality, four names علم/وجود/نور/شهود, and order of wordplay ẓuhūr/wijdān/iẓhār/ḥuḍūr preserved. |
+| 56–61 | 57–63 | **checked** | ثمَّ انّ هاهنا مقدمة اخرى لا بدّ من الوقوف عليها و هي ان الظهور المذكور لمّا كان مستلزماً للشعور بسائر الشئون و الأحوال… — Essential perfection and perfection of the names are distinct by reference to hiddenness and manifestation, not two separate divine essences. |
+| 62–76 | 64–70 | **checked** | إذا عرفت هذا ، فاعلم ، انّه لا مغايرة بالاعتبار الأول بين الذات و كلُّ واحد من الأسماء الأربعة ، كما انّه لا مغايرة بين… — Existence and knowledge differ relationally in their objects at the manifest side, not by a separated essential subject. |
+| 77–95 | 71–79 | **checked** | لا يقال : عبارة المصنِّف هاهنا لا يطابق ما مهَّده قبل هذا بالبرهان من إثبات التوحيد الذاتي المطلق ، و رفع التعيُّن الخا… — Objection from the Peripatetic terminology of cognitive ḥuṣūl and causation retained; reply states equivalence of intended meaning after technical clarification. |
+| 96–115 | 80–86 | **checked-with-note** | و ذلك لأنّه قال في الهيات ذلك الكتاب : لا يتحقق الإدراك به مجرد الحصول للأمر المجرد فقط ، و لا بأى حصول اتفق من الأنواع… — A long distinct quotation from the ancestor's al-Ḥikma al-Rashīdiyya, with conditional alternatives about efficient influence and contact as an accident in a subject, preserved as quotation; no full independent source collation is claimed. |
+| 116–135 | 87–96 | **unresolved-reading** | و لا يخفى على الفطن المستيقظ ، ان ملخّص هذا الكلام ، هو ان الحقيقة الادراكيَّة ، أي الإدراك العقلي ، المنسوب إلى المجرد… — Strength of linkage varies with efficacy/mediating instruments; final الفرضية versus العرضية variant materially changes 'suppositional' versus 'accidental' conjunction. |
+| 136–148 | 97–102 | **checked-with-note** | فعلم من هذا ، ان لفظى الحصول و الإيجاب ، مع عدم استدعائهما ما ذكر من التدافع و عدم التطابق ، يفيد ما يستفاد من لفظى الب… — Conclusion concerns lineage of sages as Ibn Turka's historical attribution, not established genealogical history; quotations of Hermes/Idrīs and Agathodaimon/Shīth are kept as attributed claims. |
+
+### SH-030 — A, printed pp. 133–137
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–13 | 1–14 | **checked-with-note** | أقول : لمّا بيَّن الحقيقة الواحدة بالوحدة الحقيقيَّة و لوَّح على كيفية انتشاء الكثرة الاعتبارية منها على النظام المحكم … — Order in self-knowledge is contrasted with a Peripatetic account whose effects are understood as existentially other; the critique is attributed to Ibn Turka and not treated as exhaustive Avicennan doctrine. |
+| 14–44 | 15–19 | **checked** | و الا احديَّتها . فهذا هو الموجب بالعلم بالنظام الوجودي ، لا ما ذهب إليه المشّاءون ، من ان العلم بالعلَّة ، يوجب العلم … — Seeming inconsistency between knowing entities and denying their separate existence is dissolved by two different considerations—intelligibility and created/caused otherness. |
+| 45–76 | 20–30 | **checked-with-note** | و اما بيان ان معقولية الماهيّات ، انّما هو باعتبار كونها غير مغايرة للذات العاقلة ، فهو انَّها من حيث المغايرة لا وجود … — Two kinds of mental presence, receptive impression and active knowledge, are distinguished; possible printed المعقولية / المعلولية variant remains noted without conjectural emendation. |
+| 77–90 | 31–36 | **checked** | و ممّا يؤيِّد هذا ما ذكره بعض المحقِّقين من اهل الذوق : انّ العلم بالشيء اىّ علم كان ، بالذَّوق الصحيح و الكشف الصريح ،… — Attributed experiential account distinguishes knower-known identity from relational differentiation and withholds a further necessary concomitant; quotation is not identified as definitely by a particular author. |
+| 91–98 | 37–41 | **unresolved-reading** | و إذا تقرّر ان الماهيّات و الأعيان باعتبار مغايرتها للذات ، ليس لها حصَّة من الوجود أصلًا ، فلا يمكن اضافة الوجود إليها… — The closing argument has الفرضي / العرضي alternatives determining whether 'suppositional' or 'accidental' existence carries the dependence. English marks the base reading and variant rather than resolving it. |
+| 99–110 | 42–45 | **checked** | و ملخَّص هذا الكلام ، ان الماهيّات و الأعيان ، لو أخذت مع اعتبار المغايرة ، فهي معدومة ضرورة لا يصلح لأن يوصف بالمجعولي… — Conclusion distinguishes quiddities insofar as other—nonexistent—from quiddities without such otherness, which bear the intrinsic Necessary's real existence; the specific target of the making/causation critique is not broadened. |
 
 ## Editorial status and next passages
 
