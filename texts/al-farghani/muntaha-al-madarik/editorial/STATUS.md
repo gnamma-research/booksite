@@ -1,5 +1,12 @@
 # Muntahā al-madārik · Editorial and translation register
 
+## Latest source-critical milestone — I1876 historic printing, five direct comparisons (9 November 2026)
+
+The original Princeton/NYU 1876 volume I facsimile has been visually checked at **five bounded textual loci** across printed pages **5, 6, 7, 18** (PDF scans 9, 10, 11, 22). **Three historic-print differences vs modern B2007 and two agreements**, recorded with printed-page concordance and SHA-256 evidence in [cumulative photographic collation II](I1876_COLLATION_CUMULATIVE_002.md) / [structured data](I1876_COLLATION_CUMULATIVE_002.json). The new third difference is **I1876 printed p18 `الحضرة العمائية`**, versus B2007 printed p34 `الحضرة العملية`. Adopt `العمائية` as the provisional edited reading (“Cloud-like Presence”); B2007 p36 independently supplies the same wording as an *internal parallel*, not a separate codex. Earlier two corrections are `المطلب الغائي` and `علميّا ووجوديّا` at I1876 p6 versus B2007 p19.
+
+The 128-page working English introduction remains preserved. The modern digital Arabic–English audit remains **198 selected clauses** (B2007 pp18–36), not 198 manuscript comparisons. **Zero medieval manuscript folios have been examined; zero manuscript variants verified. No entire printed page was exhaustively collated.** The reading edition remains source-critically corrected but **not definitive**.
+
+
 ## New source-critical milestone — first directly photographed I1876 collation (9 November 2026)
 
 **The physical scan was recovered, inspected, and archived in GNAMMA (59 source images plus contact sheets), not merely catalogued.** Princeton/NYU original I1876 printing, vol.I, PDF scans 9–11 = printed pp5–7, read directly on four bounded loci corresponding to Beirut B2007 pp18,19,21. The [evidence register](I1876_COLLATION_001.json) preserves original PDF source hash, scan numbers, historical printed page numbers, diplomatic readings, adoption grounds, and the explicit distinction between print and manuscript.
