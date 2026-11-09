@@ -32,18 +32,18 @@ h1{font:500 clamp(28px,4vw,43px)/1.23 Georgia,serif;margin:9px 0}.overline{font:
 <nav aria-label="Reading controls"><a class="brand" href="./">‹ Tahdhīb</a>
 <a href="progress.html">Progress & handoff</a><span class="spacer"></span>
 <input id="search" type="search" placeholder="Search notes" aria-label="Search note translations">
-<select id="section-select" aria-label="Choose source section"><option value="all">Both sections</option><option value="H-PREFACE">Preface glosses</option><option value="H-INTRO">Introduction to Logic</option></select>
+<select id="section-select" aria-label="Choose source section"><option value="all">All three sections</option><option value="H-PREFACE">Preface glosses</option><option value="H-INTRO">Introduction to Logic</option><option value="H-DALALA">Conception · Signification</option></select>
 <select id="filter" aria-label="Translation status">
 <option value="all">All numbered notes</option><option value="complete_searchable_note">Translated first-pass</option><option value="partial_translation">Partial translation</option>
 </select></nav>
 <main>
-<div class="overline">GNAMMA · Cumulative edition · Stage 110</div>
+<div class="overline">GNAMMA · Cumulative edition · Stage 111</div>
 <h1>Ḥawāshī — numbered glosses</h1>
 <p class="lead">The complete note, not the page of the printed volume, is the unit of translation. The English translations below are distinct from the much shorter preliminary Q125–178 selections.</p>
-<div class="notice">Two independently numbered source sections: <strong>H-PREFACE</strong> Qum pp.127–164, 140 notes (136 first-pass English complete, four partial, 54 digitally searchable full Arabic notes), and <strong>H-INTRO</strong> Qum pp.165–178, which <strong>RESTARTS at local note 1</strong> and now contains 49 notes (41 first-pass English complete, eight partial, <strong>zero full Arabic transcriptions</strong>). These are <strong>189 different stable IDs, not one continuous historical sequence</strong>. Eight separately attributed unnumbered glosses remain outside both numbered totals. No entire printed page or independent manuscript witness is certified.</div>
-<div class="stats"><span id="count">Loading…</span><span>0 fully translated printed pages certified</span><span>H-PREFACE 136/140 English · H-INTRO 41/49 English</span></div>
+<div class="notice">Three independently numbered H sections: <strong>Preface</strong>, Qum pp.127–164: 140 notes, 136 complete first-pass English; <strong>Introduction to Logic</strong>, pp.165–187: 82 local notes, 66 complete first-pass English; <strong>Conception / Signification</strong>, pp.188–191: 20 local notes, 14 complete first-pass English. Each new historical section RESTARTS numbering at 1, with distinct source IDs. Total <strong>242 different numbered records</strong>, 216 complete English first passes and 26 partial. Only the original Preface section has 54 full searchable Arabic transcriptions; the other 188 records contain short Arabic locators only. Nine separate unnumbered glosses are not included in these totals. <strong>0 whole printed pages independently collated or certified.</strong></div>
+<div class="stats"><span id="count">Loading…</span><span>0 fully translated printed pages certified</span><span>H-PREFACE 136/140 · H-INTRO 66/82 · H-DALALA 14/20 English</span></div>
 <div id="notes"></div>
-<footer><a href="batches/hawashi-all-sections-cumulative-stage110.md">Both sections · complete cumulative Markdown</a> · <a href="batches/hawashi-preface-numbered-cumulative-hwn001-140.md">Preface notes 1–140</a> · <a href="batches/hawashi-introduction-numbered-cumulative-intro001-049.md">Introduction notes 1–49</a> · <a href="progress.html">Cumulative status, full handoff and stage logs</a> · <a href="hawashi-q125-178.html">52 earlier page selections</a>. Attribution remains provisional until individual signatures are checked against print photographs.</footer>
+<footer><a href="batches/hawashi-all-sections-cumulative-stage111.md">All three sections · full cumulative Markdown</a> · <a href="batches/hawashi-preface-numbered-cumulative-hwn001-140.md">Preface notes 1–140</a> · <a href="batches/hawashi-introduction-numbered-cumulative-intro001-082.md">Introduction notes 1–82</a> · <a href="batches/hawashi-signification-numbered-cumulative-dal001-020.md">Signification notes 1–20</a> · <a href="progress.html">Cumulative status, full handoff and stage logs</a> · <a href="hawashi-q125-178.html">52 earlier page selections</a>. Attribution remains provisional until individual signatures are checked against print photographs.</footer>
 </main>
 <script src="hawashi-numbered-notes-stage104.js?v=20261109-104"></script>
 <script src="hawashi-numbered-notes-stage105.js?v=20261109-105"></script>
@@ -64,6 +64,9 @@ h1{font:500 clamp(28px,4vw,43px)/1.23 Georgia,serif;margin:9px 0}.overline{font:
 <script src="hawashi-introduction-notes-stage110b.js?v=20261109-110"></script>
 <script src="hawashi-introduction-notes-stage110c.js?v=20261109-110"></script>
 <script src="hawashi-introduction-notes-stage110d.js?v=20261109-110"></script>
+<script src="hawashi-introduction-notes-stage111a.js?v=20261109-111"></script>
+<script src="hawashi-introduction-notes-stage111b.js?v=20261109-111"></script>
+<script src="hawashi-signification-notes-stage111a.js?v=20261109-111"></script>
 <script>
 (function(){'use strict';
 const base=window.GNAMMA_TAHDHIB_HAWASHI_NOTES;
@@ -125,8 +128,23 @@ for(const batch of stage110){for(const n of batch.records){
  if(byId.has(n.id))throw Error('Duplicate cross-section note '+n.id);
  byId.set(n.id,n);
 }}
+const stage111=[
+ window.GNAMMA_HAWASHI_INTRO_STAGE111A,
+ window.GNAMMA_HAWASHI_INTRO_STAGE111B,
+ window.GNAMMA_HAWASHI_DALALA_STAGE111A
+];
+const validSection=['H-INTRO','H-INTRO','H-DALALA'];
+for(const [i,batch] of stage111.entries()){
+ if(!batch||batch.sectionId!==validSection[i]||!Array.isArray(batch.records)){
+  document.getElementById('notes').textContent='Stage111 source files unavailable or misattributed';return;
+ }
+ for(const n of batch.records){
+  if(n.sectionId!==batch.sectionId||byId.has(n.id))throw Error('Stage111 duplicate/incorrect section '+n.id);
+  byId.set(n.id,n);
+ }
+}
 const entries=[...byId.values()].sort((a,b)=>{
- const group=x=>(x.sectionId||'H-PREFACE')==='H-PREFACE'?0:1;
+ const group=x=>({ 'H-PREFACE':0,'H-INTRO':1,'H-DALALA':2 })[x.sectionId||'H-PREFACE'] ?? 9;
  return group(a)-group(b)||(a.noteNumber??a.localNoteNumber)-(b.noteNumber??b.localNoteNumber);
 }),$=id=>document.getElementById(id);
 const mk=(tag,cls,txt)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(txt!==undefined)x.textContent=txt;return x};
@@ -139,11 +157,11 @@ let lastSection=null;
   const sectionId=e.sectionId||'H-PREFACE';
   if(sectionId!==lastSection){
    lastSection=sectionId;
-   const head=mk('h2','section-title',sectionId==='H-PREFACE'?'Preface glosses · Qum 127–164':'Glosses on the Introduction to Logic · Qum 165 onward (NEW local numbering from 1)');
+   const head=mk('h2','section-title',sectionId==='H-PREFACE'?'Preface glosses · Qum 127–164':sectionId==='H-INTRO'?'Introduction to Logic · Qum 165–187 (local 1–82)':'Conception: Signification · Qum 188 onward (NEW local 1–20)');
    head.id=sectionId;holder.append(head);
   }
   const section=mk('section','note');section.id=e.id;
-  const head=mk('div','heading'),h=mk('h2',null,(sectionId==='H-INTRO'?'Introduction note ':'Preface note ')+(e.noteNumber??e.localNoteNumber)),status=mk('span','note-label',e.status==='complete_searchable_note'?'First-pass translated':'Partial / unfinished');
+  const head=mk('div','heading'),h=mk('h2',null,(sectionId==='H-INTRO'?'Introduction note ':sectionId==='H-DALALA'?'Signification note ':'Preface note ')+(e.noteNumber??e.localNoteNumber)),status=mk('span','note-label',e.status==='complete_searchable_note'?'First-pass translated':'Partial / unfinished');
   const pag=mk('span','page-ref','Qum pp. '+e.pages.join('–'));head.append(h,status,pag);section.append(head);
   section.append(mk('div','meta','Attributed page voice: '+e.speaker+'. Printed-page signature pending photographic verification.'));
   const grid=mk('div','grid'),left=mk('div'),right=mk('div');
@@ -168,7 +186,7 @@ let lastSection=null;
 }
 $('search').addEventListener('input',render);$('filter').addEventListener('change',render);$('section-select').addEventListener('change',render);
 render();
-const hash=location.hash.slice(1);if(hash && (hash.startsWith('HWN-')||hash==='H-PREFACE'||hash==='H-INTRO')){
+const hash=location.hash.slice(1);if(hash && (hash.startsWith('HWN-')||hash==='H-PREFACE'||hash==='H-INTRO'||hash==='H-DALALA')){
  requestAnimationFrame(()=>document.getElementById(hash)?.scrollIntoView({block:'start'}));
 }
 })();
