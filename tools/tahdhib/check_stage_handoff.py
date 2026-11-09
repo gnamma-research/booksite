@@ -121,7 +121,7 @@ def check():
     assert len(combined)>320000 and combined.count("## Introduction note ")==49
     assert combined.count("## Note ")==140
     assert "HWN-INTRO-001" in combined and "HWN-001" in combined
-    assert "HWN-141" not in combined
+    assert "## Note 141 —" not in combined and '<a id="hwn-141"' not in combined  # textual warnings about bad ID are allowed
     handoff=(ROOT/"HANDOFF_LATEST.md").read_text(encoding="utf-8")
     for token in ("Stage110","Stage111","136/140","54/140","41/49","0/49","0/274","0/110","HWN-INTRO-050"):
         assert token in handoff,token
