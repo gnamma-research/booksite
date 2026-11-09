@@ -33,7 +33,7 @@ assert witness["scope"]["verified_manuscript_variant_count"]==0
 assert quality["clause_record_count"]==198
 # Verify 128 complete previous draft source-page section markers rather than inferring from a title.
 master=(E/"WORKING_TRANSLATION_18_145.md").read_text(encoding="utf-8")
-pages=[int(m.group(1)) for m in re.finditer(r"^#{2,4}\\s*B2007\\s*p\\.\\s*(\\d+)\\b",master,re.M)]
+pages=[int(m.group(1)) for m in re.finditer(r"^#{2,4}\s*B2007\s*p\.\s*(\d+)\b",master,re.M)]
 if sorted(set(pages))!=list(range(18,146)):
     raise SystemExit("Working 128-page master did not pass page integrity: "+repr((len(pages),pages[:4],pages[-4:])))
 # Count source-checked clauses without confusing modern source checks with early manuscripts.
@@ -45,20 +45,20 @@ for i,span in [(1,"18-20"),(2,"21-23"),(3,"24-29"),(4,"30-36")]:
 if len(all_records)!=198 or len({r["id"] for r in all_records})!=198:
     raise SystemExit("Clause record integrity failed: "+str(len(all_records)))
 # Stage VI is append-only: original large V content begins at a stable boundary.
-preamble=("# Farghānī · Complete cumulative Arabic–English working and source-critical archive VI\\n\\n"
+preamble=("# Farghānī · Complete cumulative Arabic–English working and source-critical archive VI\n\n"
 "**9 November 2026.** Complete inherited Stage V corpus preserved verbatim below. "
 "This new stage adds eight visually compared *printed* source loci in all, four differences and four agreements, "
-"with no medieval manuscript variants verified. Current quality is **working evidence-corrected**, NOT definitive.\\n\\n"
-"**Do not read inherited older stage statuses as current; the latest report and register are appended at the end.**\\n\\n"
-"## Part A · Entire preserved prior full cumulative archive V\\n\\n")
+"with no medieval manuscript variants verified. Current quality is **working evidence-corrected**, NOT definitive.\n\n"
+"**Do not read inherited older stage statuses as current; the latest report and register are appended at the end.**\n\n"
+"## Part A · Entire preserved prior full cumulative archive V\n\n")
 chunks=[preamble,base_text]
 for f in review_files:
     src=f.read_text(encoding="utf-8")
-    label=f"\\n\\n---\\n\\n## Stage VI addendum · {f.name}\\n\\n"
+    label=f"\n\n---\n\n## Stage VI addendum · {f.name}\n\n"
     if f.suffix.lower()==".json":
-        src="\\x60\\x60\\x60json\\n"+src+"\\n\\x60\\x60\\x60"
+        src="\x60\x60\x60json\n"+src+"\n\x60\x60\x60"
     elif f.suffix.lower()==".csv":
-        src="\\x60\\x60\\x60csv\\n"+src+"\\n\\x60\\x60\\x60"
+        src="\x60\x60\x60csv\n"+src+"\n\x60\x60\x60"
     chunks.extend([label,src])
 body="".join(chunks)
 new=E/"FULL_CUMULATIVE_CRITICAL_006.md"
@@ -87,5 +87,5 @@ manifest={
  "artifacts":[{"path":str(f),"sha256":sha(f),"bytes":f.stat().st_size} for f in review_files]
 }
 mf=E/"STAGE_MANIFEST_CRITICAL_006.json"
-mf.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+mf.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print(json.dumps({"new_bytes":manifest["new_archive_utf8_bytes"],"previous_bytes":previous.stat().st_size,"full_page_headings":len(pages),"modern_clauses":len(all_records),"print_compared":8,"differences":4,"agreements":4,"manuscript_variants":0},ensure_ascii=False))
