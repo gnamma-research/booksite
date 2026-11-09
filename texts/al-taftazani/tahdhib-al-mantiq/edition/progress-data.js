@@ -1,8 +1,8 @@
-/* Canonical, append-only-derived progress data. Do not count excerpts as full pages. */
+/* Canonical, source-graded cumulative Tahdhīb progress. Never count excerpts as whole pages. */
 window.GNAMMA_TAHDHIB_PROGRESS={
   "schema": "gnamma-tahdhib-cumulative-progress-v1",
   "updated": "2026-11-09",
-  "stage": "105",
+  "stage": "106",
   "baseline": {
     "logicMatnDivisions": 19,
     "kalamClauses": 1044,
@@ -57,11 +57,19 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     },
     {
       "id": "opening-notes",
-      "label": "Opening glosses · numbered-note first pass (Q127–135)",
-      "current": 22,
-      "total": 23,
+      "label": "Later-gloss numbered notes · working English (Q127–144)",
+      "current": 53,
+      "total": 55,
       "unit": "numbered notes",
-      "note": "Notes 1–23: 22 complete first-pass notes, 1 partial. This bounded cohort is NOT the entire H corpus."
+      "note": "Local cohort only: notes 1–55, 53 first-pass complete, note1 and note25 partial. This is NOT the entire 274-page H corpus."
+    },
+    {
+      "id": "numbered-arabic",
+      "label": "Later-gloss numbered notes · searchable Arabic transcription",
+      "current": 32,
+      "total": 55,
+      "unit": "notes",
+      "note": "Notes 24–55 include full digitally searchable Arabic as currently available (one corrupted abbreviation remains). Notes 1–23 contain locator snippets only; no photograph or independent witness certified."
     },
     {
       "id": "historical-classes",
@@ -81,7 +89,7 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     }
   ],
   "noteLedger": {
-    "range": "HWN-001–HWN-023",
+    "range": "HWN-001–HWN-055",
     "fullyTranslatedFirstPass": [
       2,
       3,
@@ -104,21 +112,92 @@ window.GNAMMA_TAHDHIB_PROGRESS={
       20,
       21,
       22,
-      23
+      23,
+      24,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55
     ],
     "partiallyTranslated": [
-      1
+      1,
+      25
     ],
-    "currentChapter": "Later glosses: prologue and guidance (Qum pp.127–135)",
+    "currentChapter": "Later glosses: guidance, kināya, prologue and prophethood (Qum pp.127–144)",
     "sourcePhotographed": false,
-    "sourceArabicTranscribedCompletely": false
+    "sourceArabicTranscribedCompletely": false,
+    "arabicFullSearchableNotes": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55
+    ],
+    "unnumberedFollowingRendered": [
+      47,
+      48
+    ]
   },
   "currentRelease": {
     "mainReader": "index.html",
     "notesReader": "hawashi-numbered-notes.html",
     "sampleReader": "hawashi-q125-178.html",
     "criticalDashboard": "critical-status.html",
-    "latestHandoff": "HANDOFF_LATEST.md"
+    "latestHandoff": "HANDOFF_LATEST.md",
+    "cumulativeMarkdown": "batches/hawashi-numbered-cumulative-hwn001-055.md"
   },
   "stages": [
     {
@@ -182,6 +261,29 @@ window.GNAMMA_TAHDHIB_PROGRESS={
         "progress-data.js",
         "HANDOFF_LATEST.md",
         "stages/STAGE105_COMPLETION_AND_GUIDANCE.md"
+      ]
+    },
+    {
+      "id": "106",
+      "date": "2026-11-09",
+      "title": "32 source-aligned numbered glosses 24–55; cumulative bilingual corpus and 9 progress bars",
+      "sourcePages": "127–144",
+      "noteRange": "1–55",
+      "fullNoteCount": 53,
+      "partialNoteCount": 2,
+      "arabicNoteCount": 32,
+      "certifiedPages": 0,
+      "report": "stages/STAGE106_NUMBERED_TRANSLATION.md",
+      "files": [
+        "hawashi-numbered-notes-stage106a.js",
+        "hawashi-numbered-notes-stage106b.js",
+        "hawashi-numbered-notes-stage106c.js",
+        "hawashi-numbered-notes-stage106d.js",
+        "batches/hawashi-numbered-cumulative-hwn001-055.md",
+        "hawashi-numbered-notes.html",
+        "progress-data.js",
+        "HANDOFF_LATEST.md",
+        "stages/STAGE106_NUMBERED_TRANSLATION.md"
       ]
     }
   ]

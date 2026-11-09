@@ -23,7 +23,7 @@ h1{font:500 clamp(28px,4vw,43px)/1.23 Georgia,serif;margin:9px 0}.overline{font:
 .page-ref{font-size:12px;font-weight:600;color:var(--muted)}
 .note-label{font:700 10px system-ui;text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
 .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.7fr);gap:22px;margin:12px 0}
-.ar{font:23px/1.9 "Amiri","Noto Naskh Arabic","Geeza Pro",serif;direction:rtl;text-align:right;margin:8px 0}
+.ar{white-space:pre-wrap;overflow-wrap:anywhere;font:23px/1.9 "Amiri","Noto Naskh Arabic","Geeza Pro",serif;direction:rtl;text-align:right;margin:8px 0}
 .en{font:16px/1.82 Georgia,serif;white-space:pre-line;margin:8px 0}
 .meta{color:var(--muted);font-size:12px}.meta a{margin-right:12px}.source-notice{background:var(--bg);border-radius:5px;padding:9px 12px;font-size:12px;color:var(--muted)}
 small{color:var(--muted)}footer{border-top:1px solid var(--rule);font-size:12px;color:var(--muted);padding:20px 0}
@@ -36,16 +36,20 @@ small{color:var(--muted)}footer{border-top:1px solid var(--rule);font-size:12px;
 <option value="all">All numbered notes</option><option value="complete_searchable_note">Translated first-pass</option><option value="partial_translation">Partial translation</option>
 </select></nav>
 <main>
-<div class="overline">GNAMMA · Cumulative edition · Stage 105</div>
+<div class="overline">GNAMMA · Cumulative edition · Stage 106</div>
 <h1>Ḥawāshī — numbered glosses</h1>
 <p class="lead">The complete note, not the page of the printed volume, is the unit of translation. The English translations below are distinct from the much shorter preliminary Q125–178 selections.</p>
-<div class="notice">Stage 105 covers numbered notes 1–23 in Qum printed pp.127–135. Twenty-two notes have complete first-pass English translations; note 1 remains <strong>partial</strong> pending separate handling of later material. Previous notes are preserved as source history. Modern quotations inserted into the Qum print do not become part of an earlier glossator’s note. No page or note is independently photographically collated. Arabic shown is a short locator lemma, <strong>not a full Arabic transcription</strong>.</div>
-<div class="stats"><span id="count">Loading…</span><span>0 fully translated printed pages certified</span><span>22 working complete notes · 1 partial</span></div>
+<div class="notice">Stage 106 covers numbered notes <strong>1–55</strong>, Qum pp.127–144. <strong>53 have first-pass complete English, 2 remain partial</strong> (nos.1 and 25). For notes 24–55 the Arabic working transcription is displayed; notes 1–23 still have short Arabic locator lemmata only. Two separately attributed unnumbered glosses are shown without inventing new numbered-note IDs. No Arabic has been photographically or independently manuscript-collated.</div>
+<div class="stats"><span id="count">Loading…</span><span>0 fully translated printed pages certified</span><span>53 working complete notes · 2 partial</span></div>
 <div id="notes"></div>
-<footer><a href="progress.html">Cumulative status, full handoff and stage logs</a> · <a href="hawashi-q125-178.html">52 earlier page selections</a>. Attribution remains provisional until individual signatures are checked against print photographs.</footer>
+<footer><a href="batches/hawashi-numbered-cumulative-hwn001-055.md">Cumulative Arabic–English Markdown (notes 1–55)</a> · <a href="progress.html">Cumulative status, full handoff and stage logs</a> · <a href="hawashi-q125-178.html">52 earlier page selections</a>. Attribution remains provisional until individual signatures are checked against print photographs.</footer>
 </main>
 <script src="hawashi-numbered-notes-stage104.js?v=20261109-104"></script>
 <script src="hawashi-numbered-notes-stage105.js?v=20261109-105"></script>
+<script src="hawashi-numbered-notes-stage106a.js?v=20261109-106"></script>
+<script src="hawashi-numbered-notes-stage106b.js?v=20261109-106"></script>
+<script src="hawashi-numbered-notes-stage106c.js?v=20261109-106"></script>
+<script src="hawashi-numbered-notes-stage106d.js?v=20261109-106"></script>
 <script>
 (function(){'use strict';
 const base=window.GNAMMA_TAHDHIB_HAWASHI_NOTES;
@@ -55,22 +59,40 @@ if(!patch){document.getElementById('notes').textContent='Stage105 data missing; 
 const byId=new Map((base.entries||[]).map(e=>[e.id,e]));
 for(const n of patch.overrides||[]){if(!byId.has(n.id))throw Error('Unknown earlier note '+n.id);byId.set(n.id,n)}
 for(const n of patch.appends||[]){if(byId.has(n.id))throw Error('Duplicate appended note '+n.id);byId.set(n.id,n)}
+const stage106=[
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE106A,
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE106B,
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE106C,
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE106D
+];
+if(stage106.some(x=>!x||!Array.isArray(x.notes))){document.getElementById('notes').textContent='Stage106 source files unavailable';return}
+for(const batch of stage106){for(const n of batch.notes){
+ if(byId.has(n.id))throw Error('Stage106 duplicate note '+n.id);
+ byId.set(n.id,n);
+}}
 const entries=[...byId.values()].sort((a,b)=>a.noteNumber-b.noteNumber),$=id=>document.getElementById(id);
 const mk=(tag,cls,txt)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(txt!==undefined)x.textContent=txt;return x};
 function render(){
  const q=$('search').value.trim().toLocaleLowerCase(),filter=$('filter').value,holder=$('notes');holder.replaceChildren();
- const shown=entries.filter(e=>(filter==='all'||e.status===filter) && (!q||[e.id,e.speaker,e.english,e.arabicLemma,e.editorial,String(e.noteNumber)].some(x=>String(x).toLocaleLowerCase().includes(q))));
+ const shown=entries.filter(e=>(filter==='all'||e.status===filter) && (!q||[e.id,e.speaker,e.english,e.arabicLemma,e.arabicFullText,e.editorial,e.unnumberedFollowing?.english,String(e.noteNumber)].some(x=>String(x).toLocaleLowerCase().includes(q))));
  for(const e of shown){
   const section=mk('section','note');section.id=e.id;
   const head=mk('div','heading'),h=mk('h2',null,'Note '+e.noteNumber),status=mk('span','note-label',e.status==='complete_searchable_note'?'First-pass translated':'Partial / unfinished');
   const pag=mk('span','page-ref','Qum pp. '+e.pages.join('–'));head.append(h,status,pag);section.append(head);
   section.append(mk('div','meta','Attributed page voice: '+e.speaker+'. Printed-page signature pending photographic verification.'));
   const grid=mk('div','grid'),left=mk('div'),right=mk('div');
-  left.append(mk('div','note-label','Arabic locator lemma · not full source text'));
-  const ar=mk('p','ar',e.arabicLemma);ar.lang='ar';ar.dir='rtl';left.append(ar);
+  left.append(mk('div','note-label',e.arabicFullText?'Arabic working transcription · NOT photographically collated':'Arabic locator lemma · full source not yet transcribed'));
+  const ar=mk('p','ar',e.arabicFullText||e.arabicLemma);ar.lang='ar';ar.dir='rtl';left.append(ar);
   right.append(mk('div','note-label','Working English '+(e.status==='partial_translation'?'partial rendering':'translation')));
   right.append(mk('p','en',e.english));grid.append(left,right);section.append(grid);
   section.append(mk('p','source-notice',e.editorial));
+  if(e.unnumberedFollowing){
+   const u=e.unnumberedFollowing,sup=mk('aside','source-notice');
+   sup.append(mk('div','note-label','UNNUMBERED adjacent gloss · NOT an additional numbered note'));
+   sup.append(mk('div','meta','Voice: '+u.speaker));
+   const ua=mk('p','ar',u.ar);ua.lang='ar';ua.dir='rtl';sup.append(ua);
+   sup.append(mk('p','en',u.en));section.append(sup);
+  }
   const links=mk('div','meta');for(const [i,url] of e.sourceUrls.entries()){
    const a=mk('a',null,'Original Qum p.'+e.pages[i]);a.href=url;a.rel='noopener noreferrer';a.target='_blank';links.append(a);
   }
