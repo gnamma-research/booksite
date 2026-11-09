@@ -47,6 +47,7 @@ jobs:
       - name: Check non-modal inference reconstructions and source-corpus integrity
         run: |
           python tools/tahdhib/verify_logic_core.py
+          python tools/tahdhib/check_stage_handoff.py
           python tools/tahdhib/verify_fourth_figure_scope.py
           python tools/tahdhib/verify_special_modal_temporal_shadow.py
           python tools/tahdhib/verify_special_modal_witness_scope.py
@@ -435,6 +436,9 @@ jobs:
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-q125-139-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-q140-154-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-q155-178-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage104.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/progress-data.js
+          node --check tools/tahdhib/handoff_reader_qa.mjs
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-daruri-reader.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/indian-2013-outline-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-glossary-extensions.js
@@ -453,3 +457,4 @@ jobs:
           node tools/tahdhib/yazdi_layer_qa.mjs
           node tools/tahdhib/hawashi_qa.mjs
           node tools/tahdhib/hawashi_extended_qa.mjs
+          node tools/tahdhib/handoff_reader_qa.mjs
