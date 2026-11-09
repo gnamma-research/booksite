@@ -1,3 +1,17 @@
+## Latest milestone — Stage XIII, Foundation III, pp79–101 (9 November 2026)
+
+**New:** 74 selected bilingual authorial Arabic–English review records from a **DERIVATIVE online transcription of the Beirut edition**, across all 23 Foundation III printed page labels, pp79–101. Total critical reader **468 selected loci over 84 consecutive printed page labels 18–101**, with **283 directly reviewed modern digitized Arabic excerpts on pp18–60** and **185 lower-grade derivative retranscription excerpts on pp61–101**. The historical witness/Arabic full-page limits have not changed: **zero** complete pages line-proofed, **ten** bounded photographed I1876 print comparisons (five differences/five agreements), **zero** medieval manuscript leaves and **zero** genuine manuscript variants.
+
+**Textual and doctrinal results:** p89 **الاسم القائل** provides further *internal* support for conjectural p38 **القائل** versus digital **القابل**; p90 **معدّات لقبول أثر** distinguishes preparatory causes from the ultimate effects of the names, including direct exceptional action; p83 **مفروضة لا محسوسة** marks twelve imaginary divisions rather than sensed quantities; p90 distinguishes spherical intellectual Earth and flat sensory appearance; p98–99 contrasts unknowability of Divine Essence with knowledge of the names and their verbal **أسماء الأسماء**; p101 explicitly asserts **الملائكة والأرواح والعقول لهم الترقّي والزيادة** contrary to 'the philosophers'. p87 derivative copy includes a modern editor's unresolved word **محضة**; do not invent a manuscript variant.
+
+**Source quality control:** Five Stage XIII excerpts were revised to remove overly compressed or reconstructed Arabic quotations; corrected data and editorial records are canonical. All 74 remain *selected bounded phrases from a derivative transcription*, not an independently photographed Beirut original, not continuous Arabic copy-text and not any MS folio.
+
+**New assets:** [Exact Stage XIII handoff](STAGE_HANDOFF_CRITICAL_013.md) · [74 individual reviewed excerpts](CRITICAL_TRANSLATION_79_101_DERIVATIVE.md) · [machine-readable data](../data/critical-pass-009-p79-101.js) · [grade-aware source register](SOURCE_PROVENANCE_CRITICAL_013.json) · [128-page coverage](CRITICAL_COVERAGE_REGISTER.json) · [interactive reader](../critical-edition.html).
+
+**Next:** Beirut printed **p102** (Fourth Foundation, pp102–143) and p144–145 closing preface; separately upgrade every p61–101 selected check against actual photographed modern print, then historical printing and original manuscript witnesses before calling edition definitive.
+
+---
+
 ## Latest consolidated milestone — Stage XII (9 November 2026)
 
 **Foundation I and II selected source review now extends through Beirut printed p78.** In Stages X–XI, 111 new bounded Arabic–English comparisons were made from a **derivative modern Arabic forum transcription** (57 on pp61–69; 54 on pp70–78). The prior **283 selected modern edited-digitized B2007 checks** on pp18–60 remain preserved separately. The critical reader now has **394 total records on 61 consecutive page labels** but only **283 records** are from the previously examined digitized modern printed Arabic. The 111 newly examined records do NOT constitute a new independent witness or direct collation of an 1876 or medieval codex.
