@@ -824,8 +824,8 @@
         225
       ],
       "arabicWords": 234,
-      "englishWords": 261,
-      "ratio": 1.115,
+      "englishWords": 254,
+      "ratio": 1.085,
       "arabicSourceStatus": "fixed A digital page transcription",
       "sourceFragmentOverlap": 0.878,
       "sampledFragments": 41,
@@ -2207,8 +2207,8 @@
         130
       ],
       "arabicWords": 1909,
-      "englishWords": 1986,
-      "ratio": 1.04,
+      "englishWords": 1978,
+      "ratio": 1.036,
       "arabicSourceStatus": "fixed A digital page transcription",
       "sourceFragmentOverlap": 0.976,
       "sampledFragments": 41,
@@ -3000,32 +3000,32 @@
   "pdfAudit": [
     {
       "filename": "qawaid-bilingual-reading.pdf",
-      "bytes": 919787,
-      "sha256": "6b271628aac416a007048b51259dcdcf1d680f6df1a84dc0263d8bcc68e10d2f",
+      "bytes": 919820,
+      "sha256": "da84c7da50eb38471ace005fb20a4a30e4b022a4b4048520f6b8882cb6dfe42f",
       "hasPdfHeader": true
     },
     {
       "filename": "qawaid-english-reading.pdf",
-      "bytes": 432829,
-      "sha256": "f77f4c5f09c73ebd34b9d765b01e598678d16068eaa12e2530bce51598157ea4",
+      "bytes": 432827,
+      "sha256": "5e3a5a34f50094b4ee12f5ca0d8c67c419b89e970469898d710989e5b5c34d9f",
       "hasPdfHeader": true
     },
     {
       "filename": "qawaid-arabic-reading.pdf",
-      "bytes": 521657,
-      "sha256": "8c890552242bc12c0c606502b48f0e125e0b437802df1809986f6db7166fe982",
+      "bytes": 521656,
+      "sha256": "b77cef882c6799c7b62f53e40dc6f112ae2015266d0fadee4d9a2b142bccb96a",
       "hasPdfHeader": true
     },
     {
       "filename": "qawaid-bilingual-study.pdf",
-      "bytes": 1020053,
-      "sha256": "75e8594c87e9c9b27efb66e7cd7cdc1e10c30e496065fd8da7beedb32c14cbe6",
+      "bytes": 1020162,
+      "sha256": "58442f7d95d4cbf73fb2cdb1e003ef0bc972cf8ec312ca8f461449b59e4ac315",
       "hasPdfHeader": true
     },
     {
       "filename": "qawaid-bilingual-reference.pdf",
-      "bytes": 1176113,
-      "sha256": "adcdcf070a1ef30aa5799be53305868ad74d9d2f8b989659f63fef752bc56fcc",
+      "bytes": 1176521,
+      "sha256": "44521e88dd34b6a0b572b9a5c265dd4c61c1d71ae29e03ddbe46b9ad85de535a",
       "hasPdfHeader": true
     }
   ]
