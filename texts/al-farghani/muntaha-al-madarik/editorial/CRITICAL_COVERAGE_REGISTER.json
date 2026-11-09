@@ -12,7 +12,7 @@
   "authorial_introduction_english_draft_complete": true,
   "authorial_introduction_arabic_critical_edition_complete": false,
   "definitive_grade": false,
-  "source_witness_grade": "All 128 B2007 printed page labels have only selected reviewed source spans: 283 direct modern edited-digitized spans pp18–60; 276 DERIVATIVE retyped modern Arabic spans pp61–145. ZERO full original Arabic pages independently line collated; only 10 inherited bounded I1876 photographic print comparisons; zero manuscripts.",
+  "source_witness_grade": "All 128 B2007 printed page labels have only selected reviewed source spans: 283 direct modern edited-digitized spans pp18–60; 276 DERIVATIVE retyped modern Arabic spans pp61–145. ZERO full original Arabic pages independently line collated; only 10 inherited bounded I1876 photographic print comparisons; zero manuscripts. Stage XV adds four I1876 source-image comparisons, including p48 substantive correction بسبحات; does not upgrade secondary B2007 proof to actual printed-page verification.",
   "next_critical_audit_page": 61,
   "next_translation_outside_intro": "B2007 p146 poem commentary (must confirm division against scan)",
   "pages": [
@@ -427,7 +427,7 @@
       "english_clause_checked_B2007": false,
       "digital_clause_check_count": 4,
       "digital_crux_count": 1,
-      "actual_historical_print_inspected": false,
+      "actual_historical_print_inspected": true,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
@@ -435,7 +435,16 @@
       "source_kind": "B2007-main-site-printed-digital",
       "selected_arabic_english_checked_B2007": true,
       "page_has_selected_clause_checks": true,
-      "editorial_note": "Stage VIII selected loci only, no 1876 or MS readings newly verified"
+      "editorial_note": "Stage VIII selected loci only, no 1876 or MS readings newly verified STAGE XV: I1876 p20 scan24 directly corroborates القابل; internal conjecture القائل is unverified and must not be silently adopted.",
+      "historical_print_printed_page": 20,
+      "historical_print_loci_verified": 1,
+      "historical_print_loci_status": "One new bounded original 1876 printed-photo check, not complete page, modern B2007 physical print uninspected",
+      "historical_print_reference": {
+        "printed_page": 20,
+        "scan_index": 24,
+        "verified_photo": true,
+        "new_locus_id": "I1876-L11"
+      }
     },
     {
       "b2007_page": 39,
@@ -607,15 +616,24 @@
       "english_clause_checked_B2007": false,
       "digital_clause_check_count": 4,
       "digital_crux_count": 1,
-      "actual_historical_print_inspected": false,
+      "actual_historical_print_inspected": true,
       "actual_manuscript_inspected": false,
-      "independently_collated_variants": 0,
+      "independently_collated_variants": 1,
       "full_arabic_page_in_repo": false,
       "source_fidelity_status": "selected B2007 printed-digital source spans checked; other page lines not exhaustively reviewed",
       "source_kind": "B2007-main-site-printed-digital",
-      "editorial_note": "Stage VIII source inaccessible: do not count as independently checked; Stage IX selected authorial spans; no independently examined historical print or MS evidence for these readings",
+      "editorial_note": "Stage VIII source inaccessible: do not count as independently checked; Stage IX selected authorial spans; no independently examined historical print or MS evidence for these readings STAGE XV: I1876 p28 scan32 has بسبحات vs later digitized بسبحاب; provisional edited lemma and English corrected from clouds to splendours. B2007 physical page and MSS not seen.",
       "page_has_selected_clause_checks": true,
-      "selected_arabic_english_checked_B2007": true
+      "selected_arabic_english_checked_B2007": true,
+      "historical_print_printed_page": 28,
+      "historical_print_loci_verified": 1,
+      "historical_print_loci_status": "One new bounded original 1876 printed-photo check, not complete page, modern B2007 physical print uninspected",
+      "historical_print_reference": {
+        "printed_page": 28,
+        "scan_index": 32,
+        "verified_photo": true,
+        "new_locus_id": "I1876-L12"
+      }
     },
     {
       "b2007_page": 49,
@@ -841,7 +859,7 @@
       "english_clause_checked_B2007": false,
       "digital_clause_check_count": 0,
       "digital_crux_count": 0,
-      "actual_historical_print_inspected": false,
+      "actual_historical_print_inspected": true,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
@@ -852,7 +870,16 @@
       "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3203-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%B1%D8%AA%D8%A8-%D8%A7%D9%84%D8%B0%D8%A7%D8%AA-%D9%88%D8%AA%D8%B9%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%B3%D9%85%D8%A7%D8%A1-%D9%85%D9%86%D9%87%D8%A7-%D9%88%D8%A7%D9%84%D8%B5%D9%81%D8%A7%D8%AA-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
       "page_has_selected_clause_checks": true,
       "selected_arabic_english_checked_B2007": false,
-      "editorial_note": "Stage X–XI: selected Arabic excerpt comparison from modern secondary forum; NOT direct independent B2007 edition photograph and not MS collation"
+      "editorial_note": "Stage X–XI: selected Arabic excerpt comparison from modern secondary forum; NOT direct independent B2007 edition photograph and not MS collation STAGE XV: I1876 p38 scan42 corroborates core existence-continuance-life enumerative phrase; modern forum writes differing initial connective.",
+      "historical_print_printed_page": 38,
+      "historical_print_loci_verified": 1,
+      "historical_print_loci_status": "One new bounded original 1876 printed-photo check, not complete page, modern B2007 physical print uninspected",
+      "historical_print_reference": {
+        "printed_page": 38,
+        "scan_index": 42,
+        "verified_photo": true,
+        "new_locus_id": "I1876-L13"
+      }
     },
     {
       "b2007_page": 62,
@@ -862,7 +889,7 @@
       "english_clause_checked_B2007": false,
       "digital_clause_check_count": 0,
       "digital_crux_count": 0,
-      "actual_historical_print_inspected": false,
+      "actual_historical_print_inspected": true,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
@@ -873,7 +900,16 @@
       "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3203-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%B1%D8%AA%D8%A8-%D8%A7%D9%84%D8%B0%D8%A7%D8%AA-%D9%88%D8%AA%D8%B9%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%B3%D9%85%D8%A7%D8%A1-%D9%85%D9%86%D9%87%D8%A7-%D9%88%D8%A7%D9%84%D8%B5%D9%81%D8%A7%D8%AA-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
       "page_has_selected_clause_checks": true,
       "selected_arabic_english_checked_B2007": false,
-      "editorial_note": "Stage X–XI: selected Arabic excerpt comparison from modern secondary forum; NOT direct independent B2007 edition photograph and not MS collation"
+      "editorial_note": "Stage X–XI: selected Arabic excerpt comparison from modern secondary forum; NOT direct independent B2007 edition photograph and not MS collation STAGE XV: I1876 p39 scan43 confirms al-Ghaffār taʿmīm vs al-Ghafūr taʿdīd in modern secondary transcription.",
+      "historical_print_printed_page": 39,
+      "historical_print_loci_verified": 1,
+      "historical_print_loci_status": "One new bounded original 1876 printed-photo check, not complete page, modern B2007 physical print uninspected",
+      "historical_print_reference": {
+        "printed_page": 39,
+        "scan_index": 43,
+        "verified_photo": true,
+        "new_locus_id": "I1876-L14"
+      }
     },
     {
       "b2007_page": 63,
@@ -2622,14 +2658,14 @@
   "source_pages_with_selected_arabic_english_checks": 43,
   "check_methodology": "559 distinct selected bilingual records across B2007 pp18–145, of which 283 reviewed in digital modern B2007 pages18–60 and 276 only via a derivative secondary forum retranscription of modern edited Arabic pages61–145. No full-page independent Arabic transcription or direct manuscript collation is established, and no manuscript variants are attested. Historical printing I1876 10 bounded phrase comparisons (five differences/five agreements) on nine historical original printed pages; zero complete historical pages collated. Next step direct primary-printed-source checking from B2007 p61 and systematic original manuscript collation.",
   "issues_flagged_including_resolved_typographic": 17,
-  "historical_print_pages_with_selected_loci_checked": 9,
-  "historical_print_variants_verified": 5,
-  "historical_print_collation_scope": "10 selected exact text loci on nine I1876 printed pages 5,6,7,8,9,10,13,16,18. FIVE differences and FIVE agreements. ZERO complete printed pages independently collated, ZERO medieval manuscript leaves.",
-  "historical_print_pages_with_selected_loci": 9,
-  "historical_print_compared_clause_records": 10,
-  "historical_print_differences": 5,
-  "historical_print_agreements": 5,
-  "historical_print_source": "Princeton/NYU 1876 PDF SHA256 d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87; selected 2200px IIIF originals in facsimile-I1876-hires; cumulative historical evidence editorial/I1876_COLLATION_CUMULATIVE_004.json",
+  "historical_print_pages_with_selected_loci_checked": 13,
+  "historical_print_variants_verified": 6,
+  "historical_print_collation_scope": "14 selected I1876 photographed-print loci on 13 printed historical page numbers, 6 differences against modern online edited/digitized/retyped Arabic and 8 agreements. NO complete printed pages independently proofed; 0 MSS.",
+  "historical_print_pages_with_selected_loci": 13,
+  "historical_print_compared_clause_records": 14,
+  "historical_print_differences": 6,
+  "historical_print_agreements": 8,
+  "historical_print_source": "Princeton/NYU 1876 PDF SHA256 d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87; selected 2200px IIIF originals in facsimile-I1876-hires; cumulative historical evidence editorial/I1876_COLLATION_CUMULATIVE_004.json; four new corroborations 2026-11-09 in editorial/I1876_COLLATION_CUMULATIVE_005.json (GitHub Actions source-ingest artifact 13639926426 original archive SHA256 ca2846...).",
   "independent_manuscript_variants": 0,
   "historical_print_fully_collated_pages": 0,
   "next_direct_modern_print_audit_page": 61,
