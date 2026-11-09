@@ -1,0 +1,310 @@
+{
+  "dataset": "nama-qunawi-commentarial-corpus",
+  "schema_version": "0.2.0",
+  "date": "2026-11-09",
+  "editorial_status": "source-located, independently drafted translations; NOT a critical edition",
+  "source_policy": "Textual reading taken from online Arabic transcription and limited clauses inspected in 2023 published edition; all pending comprehensive independent manuscript collation",
+  "works": [
+    {
+      "id": "QUN-NU",
+      "title": "al-Nuṣūṣ fī taḥqīq al-ṭawr al-makhṣūṣ",
+      "author": "Ṣadr al-Dīn al-Qūnawī",
+      "type": "primary-matn",
+      "content_status": "Online-witness translation begun; no manuscript collation",
+      "entry_count": 11,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "IZN-RIS",
+      "title": "Risāla fī sharḥ Subḥānaka mā ʿarafnāka ḥaqqa maʿrifatika",
+      "author": "Quṭb al-Dīn-zāda al-Iznīqī",
+      "type": "short-treatise",
+      "content_status": "2023 Arabic edition available; selected bilingual excerpts and prior 7 argument English drafts; incomplete",
+      "entry_count": 2,
+      "source_url": "https://dergipark.org.tr/en/download/article-file/3074106"
+    },
+    {
+      "id": "KHU-ZUB",
+      "title": "Zubdat al-taḥqīq wa-nuzhat al-tawfīq",
+      "author": "Pīr Muḥammad al-Khūyī? (attribution disputed)",
+      "type": "commentary",
+      "content_status": "Manuscript identified; no direct folio transcription acquired",
+      "entry_count": 0,
+      "source_url": "https://dpul.princeton.edu/Garrettcollections/catalog/r494vk24f"
+    },
+    {
+      "id": "KHU-QA",
+      "title": "Risālat al-asʾila wa-l-ajwiba",
+      "author": "Pīr Muḥammad al-Khūyī",
+      "type": "questions-and-answers",
+      "content_status": "Ayasofya 4805, folios 1a–13b reported; not acquired",
+      "entry_count": 0,
+      "source_url": "https://isamveri.org/pdfdrg/D226920/2014/2014_BARDAKCIMN.pdf"
+    },
+    {
+      "id": "SHI-ASR",
+      "title": "Asrār al-surūr bi-l-wuṣūl ilā ʿayn al-nūr",
+      "author": "al-Shīrāzī / al-Tabrīzī / al-Sayrūzī? (needs attribution check)",
+      "type": "commentary",
+      "content_status": "Bursa Hüseyin Çelebi 479 and Ragıp Paşa 1469 reported; no full facsimile read",
+      "entry_count": 0,
+      "source_url": "https://portal.yek.gov.tr/works/detail/31549"
+    },
+    {
+      "id": "MAH-MAS",
+      "title": "Mashraʿ al-khuṣūṣ ilā maʿānī al-nuṣūṣ",
+      "author": "ʿAlāʾ al-Dīn al-Mahāʾimī",
+      "type": "commentary",
+      "content_status": "Existing separate Nama bilingual reader; import alignment only",
+      "entry_count": 0,
+      "source_url": "../../al-mahaimi/mashra-al-khusus/"
+    },
+    {
+      "id": "KHU-OTHER",
+      "title": "Later readings (al-Mashriqī and Nūr al-Dīn-zāda)",
+      "author": "Multiple commentators",
+      "type": "commentary",
+      "content_status": "Source acquisition and identification outstanding",
+      "entry_count": 0,
+      "source_url": "https://ibnarabisociety.org/sadr-al-din-al-qunawi-al-nusus-hulya-kucuk/"
+    }
+  ],
+  "entries": [
+    {
+      "id": "QUN-NU-001-A",
+      "work": "QUN-NU",
+      "section": "The first text: Absolute nondetermination",
+      "order": 1,
+      "locator": "transcription printed p. 236; forum lines 281, 284",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "status": "translated-online-witness",
+      "arabic": "نصّ شريف هو أول النصوص الواجب تقديمه: اعلم أن الحق من حيث إطلاقه الذاتي لا يصح أن يحكم عليه بحكم، أو يعرّف بوصف، أو يضاف إليه نسبة ما من وحدة، أو وجوب وجود، أو مبدئية، أو اقتضاء إيجاد، أو صدور أثر، أو تعلق علم منه بنفسه أو غيره؛ لأن كل ذلك يقضي بالتعين والتقيد، ولا ريب في أن تعقل كل تعين يقضي بسبق اللاتعين، فكل ما ذكرناه ينافي الإطلاق، بل تصور إطلاق الحق يشترط فيه أن يتعقل بمعنى أنه وصف سلبيّ، لا بمعنى أنه إطلاق ضد التقييد، بل هو إطلاق عن الوحدة والكثرة المعلومتين، وعن الحصر أيضا في الإطلاق والتقييد، وفي الجمع بين كل ذلك والتنزه عنه، فيصح في حقه كل ذلك حال تنزّهه عن الجميع، فنسبة كل ذلك إليه وغيره وسلبه عنه على السواء، ليس أحد الأمرين بأولى من الآخر، وإذا وضح هذا علم أن نسبة الوحدة إلى الحق والمبدئية والتأثير والفعل الإيجادي ونحو ذلك إنما يصح وينضاف إلى الحق باعتبار التعين.",
+      "english": "A noble text, the first of the texts that must be placed at the beginning. Know that, with respect to His essential nondelimitation, the Real cannot be subjected to a judgement, defined by an attribute, or assigned any relation whatsoever: whether unity, necessity of existence, principiality, the requirement of bringing something into existence, the issuing of an effect, or the relation of His knowledge to Himself or another. Each of these entails determination and restriction; indeed, conceiving any determination presupposes nondetermination. Everything just named therefore conflicts with the intended sense of absoluteness. To conceive the Real’s absoluteness one must understand it negatively, not as an absoluteness opposed to restriction. It is free of the familiar unity and multiplicity, free even of being confined to absoluteness, restriction, their conjunction, or transcendence of both. The Real is not enclosed by any of these alternatives: in this consideration neither predication nor its denial takes precedence. It follows that unity, principiality, causal efficacy, and the act of bringing into being are rightly attributed to the Real only under a consideration of determination.",
+      "tags": [
+        "itlaq",
+        "taayyun",
+        "wujud"
+      ],
+      "notes": "The page's repeated pairing of attribution and negation is standpoint-sensitive: this is not a denial of theological truth or of all divine naming."
+    },
+    {
+      "id": "QUN-NU-001-B",
+      "work": "QUN-NU",
+      "section": "The first text: knowledge and first determination",
+      "order": 2,
+      "locator": "transcription printed p. 236; forum lines 285–286",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "status": "translated-online-witness",
+      "arabic": "وأول التعينات المتعلقة: النسبة العلمية الذاتية، لكن باعتبار تميزها عن الذات بالامتياز النسبي لا الحقيقي، وبواسطة النسبة العلمية الذاتية يتعقل وحدة الحق ووجوب وجوده ومبدئيته، وسيما من حيث أن علمه بنفسه في نفسه في نفسه، وأن عين علمه بنفسه سبب لعلمه بكل شيء، وأن الأشياء عبارة عن تعيّنات تعقلاته الكلية والتفصيلية، وأن الماهيات عبارة عن التعقلات، وأنها تعقلات منتشئة التعقل بعضها من بعض، لا بمعنى أنها تحدث في تعقل الحق تعالى، تعالى اللّه عما لا يليق به. بل تعقل البعض من متأخر الرتبة عن البعض، وكلها تعقلات أزلية أبدية على وتيرة واحدة، تتعقل في العلم ويتعلق بها بحسب ما تقتضيه حقائقها.",
+      "english": "The first of the relevant determinations is the essential relation of knowledge. Its distinction from the Essence is relational, not real. Through this essential relation of knowledge, the Real's unity, necessary existence, and principiality become intelligible, especially insofar as His knowledge of Himself is itself the ground of His knowledge of everything. Things are the determinations of His universal and detailed intellections; quiddities are these intellections, understood as proceeding one from another—not in the sense that new intellections arise in the Real (exalted is He above anything unworthy of Him), but in the sense that some are understood as posterior to others in rank. All are everlasting intellections, constant in their manner; in knowledge they are intelligible, and knowledge relates to them according to the demands of their realities.",
+      "tags": [
+        "ilm",
+        "taayyun",
+        "mahiyya",
+        "wujud"
+      ],
+      "notes": "Online transcription repeats «في نفسه»; treat as a possible transmissional/editorial error, not a secure authorial repetition. Verify against Āshtiyānī and manuscript witnesses."
+    },
+    {
+      "id": "QUN-NU-001-C",
+      "work": "QUN-NU",
+      "section": "The first text: two ways of considering the known",
+      "order": 3,
+      "locator": "transcription printed pp. 236–237; forum lines 287–292",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "status": "translated-online-witness",
+      "arabic": "ومقتضى حقائقها على نحوين: أحدهما: تعقلها من حيث استهلاك كثرتها في وحدة الحق، وهو تعقل المفصل في المجمل، كمشاهدة العالم العاقل بعين العلم في النواة الواحدة ما فيها بالقوة من الأغصان والأوراق والثمر، والذي في كل فرد من أفراد ذلك الثمر مثل ما في النواة الأولى، وهكذا إلى غير النهاية. والنحو الآخر: تعقّل أحكام الوحدة جملة بعد جملة، فيتعقل كل جملة بما تشتمل عليه من الماهيات التي هي صورة تلك التعقّلات المتكثرة المعددة للوجود الواحد، وهكذا عكس الاستهلاك الأول المشار إليه؛ فإن ذلك عبارة عن استهلاك الكثرة في الوحدة، وهذا هو استهلاك الوحدة في الكثرة فليعلم ذلك.",
+      "english": "The demands of their realities may be considered in two ways. First, they are apprehended insofar as their multiplicity is absorbed in the Real's unity: the detailed within the undifferentiated, as when a knowing observer sees in a single seed, through knowledge, the branches, leaves, and fruit potentially contained within it—and in every individual fruit a counterpart of what the original seed contained, without end. The second way is to apprehend the determinations of unity, group after group, each group with the quiddities comprised in it, which are the forms of those manifold intellections by which the one existence is considered in multiplicity. This is the reverse of the former absorption: there multiplicity was absorbed in unity; here unity is absorbed in multiplicity. Understand this.",
+      "tags": [
+        "wahda",
+        "kathra",
+        "mahiyya"
+      ],
+      "notes": "The expressions ‘absorption’ and ‘multiplicity’ articulate different relations of consideration; they should not be equated with physical division of the divine Essence."
+    },
+    {
+      "id": "QUN-NU-002-A",
+      "work": "QUN-NU",
+      "section": "The next text: predication and three grades of entailment",
+      "order": 4,
+      "locator": "transcription printed p. 237; forum lines 293–299",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "status": "translated-online-witness",
+      "arabic": "اعلم أن الحق من حيث إطلاقه وإحاطته لا يسمّى باسم، ولا يضاف إليه حكم، ولا يتعيّن بوصف ولا رسم، ليس نسبة الاقتضاء إليه بأولى من نسبة اللا اقتضاء، فإن الاقتضاء المتعقل إذ ذاك أو المنفي هو حكم متعين ووصف مقيّد. ثم لتعلم أن الاقتضاء وإن كان ذاتيّا فإن له ثلاث مراتب: حكمه من حيث المرتبة الأولى هو أنه لا يتوقف على شرط، ولا موجب يكون سببا لتعيّنه. وحكمه من حيث المرتبة الثانية هو أن يتوقف تعيّنه على شرط واحد فحسب. وحكمه من حيث المرتبة الثالثة هو أن ظهور أحكامه يتوقف على شروط وأسباب ووسائط. فحكم الاقتضاء الأول هو الفيض الذاتي لا لموجب، ولا يتعقل في مقابلة قابل أو استعداده، وحكم الاقتضاء الثاني التوقف على شرط واحد وجوديّ فحسب، وذلك الشرط الوجودي هو العقل الأول الذي هو واسطة بين الحق وبين ما قدّر وجوده من الممكنات إلى يوم القيامة، وأما حكم الاقتضاء من حيث المرتبة الثالثة فإن ظهور أثره وحكمه موقوف على شروط شتى كباقي الموجودات. ولست أعني بهذا أن ثمة اقتضاءات ثلاثة مختلفة الحقائق، بل هو اقتضاء واحد وله ثلاث مراتب، يظهر ويتعين به من حيثية كل مرتبة منها أثر أو آثار فافهم.",
+      "english": "Know that in His absoluteness and encompassingness the Real receives no name or judgement, and is determined by no description or distinguishing mark. To ascribe exigency or entailment to Him has no greater priority than to negate it, because either the entailment affirmed or the entailment denied would be a determinate judgement and a restricted description. Yet understand that this entailment, although essential, has three degrees. In the first it depends on no condition or necessitating factor for its determination. In the second its determination depends on one condition alone. In the third, the disclosure of its effects depends on conditions, causes, and intermediaries. The first is the essential effusion, without a necessitating factor and without being understood in opposition to a recipient or its preparedness. The second is conditioned by a single existent condition: the First Intellect, intermediary between the Real and those possibles whose existence is decreed until the Resurrection. In the third, the appearance of its effect depends on many conditions, as with other existents. I do not mean that there are three exigencies different in their realities. There is one exigency with three degrees, through each of which one or more effects become apparent and determined. Understand.",
+      "tags": [
+        "iqtida",
+        "fayd",
+        "aql-awwal",
+        "taayyun"
+      ],
+      "notes": "Complete online-transcription unit from the second incipit to the next heading, pending witness collation. ‘Entailment’ translates iqtida here, not a logically demonstrated compulsion on God."
+    },
+    {
+      "id": "QUN-NU-003-A",
+      "work": "QUN-NU",
+      "section": "Divine knowledge and its objects",
+      "order": 5,
+      "locator": "transcription printed p. 237; forum line 300",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "status": "translated-online-witness",
+      "arabic": "ومن النصوص الإلهية: إن العلم الوحداني الذاتي يضاف إليه التعدّد من حيث تعلّقه بالمعلومات، ولا يتحقق بإدراكها إلا من تعيّناته وتعلّقاته، وتعلقه بكل معلوم تابع للمعلوم بحسب ما هو المعلوم عليه في نفسه، بسيطا كان المعلوم أو مركبا، زمانيّا أو مكانيّا، أو غير زماني ولا مكاني، موقت القبول، متناهي الحكم والوصف، أو غير موقت ولا متناه فيما ذكرنا، فاعلم ذلك.",
+      "english": "Among the divine texts is this: Multiplicity may be attributed to the one essential knowledge insofar as it relates to things known; its apprehension of them is realised only through its determinations and relations. Its relation to each object of knowledge follows that object according to what it is in itself, whether simple or composite, temporal or spatial, neither temporal nor spatial, of limited receptivity, finite in judgement and description, or unbounded in the respects mentioned. Understand this.",
+      "tags": [
+        "ilm",
+        "taalluq",
+        "wahda",
+        "kathra"
+      ],
+      "notes": "A complete short source unit in the online transcription; cross-witness collation remains outstanding."
+    },
+    {
+      "id": "QUN-NU-008-A",
+      "work": "QUN-NU",
+      "section": "The mirror does not modify the reality reflected",
+      "order": 6,
+      "locator": "transcription printed pp. 241–242; forum lines 343–345",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "status": "translated-online-witness",
+      "arabic": "فإن لها، أي لتلك المرآة، أثرا في المنطبع فيها، لردها صورة المنطبع إليها، وظهور صورة المنطبع فيها بحسبها. وهذا صحيح من وجه ليس مطلقا؛ فإن الأثر للمرآة في المنطبع إنما كان يصح أن لو أثرت في حقيقته من حيث هو، وذلك غير واقع، وإنما يثبت الأثر للمرآة في المنطبع من حيث إدراك من لم يعرف حقيقة المنطبع ولم يدركه إلا في المرآة، وليست المرآة بمحل لحقيقة المنطبع، بل هي مجلى لمثاله وبعض ظهوراته، والظهر نسبة تضاف إلى المنطبع من حيث انطباع صورته في المرآة ليس عين حقيقة المنطبع. ومرادي من قولي ببعض ظهوراته التنبيه على أن التجليات الذاتية الاختصاصية لا تكون في مظهر ولا في مرآة، ولا بحسب مرتبة ما، فإن من أدرك الحق من حيث هذه التجليات فقد شهد الحقيقة خارج المرآة من حيث هي لا بحسب مظهر ولا مرتبة كما قلنا، ولا اسم ولا صفة ولا حال معين ولا غير ذلك، وهو يعلم ذوقا أن المرآة لا أثر لها في الحقيقة.",
+      "english": "It is claimed that the mirror affects what is reflected in it, since it returns the reflected thing’s image to it and the form appears in the mirror according to the mirror’s character. This is true in one respect, but not without qualification. The mirror would affect the reflected thing properly only if it acted upon the reality of that thing as such, which does not happen. The mirror’s supposed effect holds only from the standpoint of someone who knows the reflected thing solely by perceiving it in the mirror. The mirror is not the locus of the reflected reality; it is a site in which its likeness and some of its appearances become manifest. Appearance is a relation attributed to the reflected thing insofar as its form is reflected, not the reflected reality itself. By saying ‘some of its appearances’ I intend to indicate that the special essential self-disclosures are not in a manifestation, mirror, or determinate rank. The one who apprehends the Real through these disclosures witnesses Reality beyond the mirror, not according to a manifestation, rank, name, attribute, particular state, or anything else. By direct tasting he knows that the mirror does not affect Reality.",
+      "tags": [
+        "tajalli",
+        "mirat",
+        "zuhur",
+        "dhati"
+      ],
+      "notes": "This paragraph belongs to the larger source text beginning ‘A noble universal text containing remarkable secrets’. The unit before it has not yet been fully translated; do not treat this excerpt as a whole nuṣṣ."
+    },
+    {
+      "id": "QUN-NU-008-B",
+      "work": "QUN-NU",
+      "section": "Lightning-like essential disclosure",
+      "order": 7,
+      "locator": "transcription printed p. 242; forum lines 348–349",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "status": "translated-online-witness",
+      "arabic": "وكان شيخنا الإمام قدّس اللّه روحه يسمّي هذه التجليات: «التجليات الذاتية البرقية»، وما كنت أعرف يومئذ سبب هذه التسمية، ولا مراد الشيخ منها. ثم إن هذه التجليات الذاتية البرقية لا تحصل إلا لذي فراغ تام من سائر الأوصاف والأحوال والأحكام الوجوبية الأسمائية والإمكانية، وهذا الفراغ فراغ مطلق، لا يغاير إطلاق الحق، غير أنه لا مكث له أكثر من نفس واحد، ولهذا شبّه بالبرق.",
+      "english": "Our master, the Imam—may God sanctify his spirit—used to call these disclosures ‘the lightning-like essential self-disclosures’. At that time I did not know the reason for this designation or what he intended by it. These lightning-like essential disclosures occur only for one who is entirely emptied of all attributes, states, and the rulings of necessity associated with the divine Names and of possibility. This emptiness is unqualified, not other than the absoluteness of the Real; yet it does not endure longer than a single breath. That is why it is compared to lightning.",
+      "tags": [
+        "tajalli",
+        "barq",
+        "nafas",
+        "itlaq",
+        "hal"
+      ],
+      "notes": "The grammatical referent of the nonendurance and its relation to the receptive state should be analysed against the following paragraph; do not identify a 'single breath' with the duration of the divine Essence."
+    },
+    {
+      "id": "QUN-NU-008-C",
+      "work": "QUN-NU",
+      "section": "Why the disclosure ceases and what remains",
+      "order": 8,
+      "locator": "transcription printed p. 242; forum line 350",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "status": "translated-online-witness",
+      "arabic": "وسبب عدم دوامه حكم جمعية الحقيقة الإنسانية، وكما أن هذه الجمعية لا تقتضي دوامه، كذلك لو لم يتضمن الجمعية الإنسانية هذا الوصف من الفراغ والإطلاق المستجلب لهذه التجليات، لم تكن الجمعية الإنسانية مستوعبة كل وصف وحال، فحكم الجمعية يثبته وينفي دوامه، ووجدت لهذا التجلّي لما منحنيه اللّه أحكاما غريبة في باطني وظاهري، من جملتها أنه مع عدم مكثه نفسين، يبقى في المحل من الأوصاف والعلوم ما لا يحصره إلا اللّه، وعرفت في ليلة كتابتي هذا الوارد أنه من لم يذق هذا المشهد لم يكن محلّا للورثة، ولم يعرف سر قوله صلى اللّه عليه وسلم: «لي مع اللّه وقت لا يسعني فيه غير ربي».",
+      "english": "The reason for its failure to continue is the governing character of the comprehensiveness of human reality. Just as this comprehensiveness does not require its continuance, so too, were human comprehensiveness not to include the condition of emptiness and absoluteness that draws forth these disclosures, it would not encompass every attribute and state. Thus the governing character of comprehensiveness both establishes this disclosure and negates its continuance. When God granted me this disclosure, I found that it had extraordinary effects inwardly and outwardly. One was that, although it does not last for two breaths, it leaves within the receptive locus attributes and kinds of knowledge beyond anyone’s counting except God’s. On the night I wrote of this incoming experience I realised that someone who has not tasted this witnessing is not a locus for inheritance and does not know the secret of the saying ascribed to the Prophet: ‘I have a time with God in which none but my Lord can contain me.’",
+      "tags": [
+        "tajalli",
+        "jamiyya",
+        "nafas",
+        "hal",
+        "ilm"
+      ],
+      "notes": "This is an author's reported experience and interpretation. The cited prophetic saying requires separate hadith authentication; quotation here does not certify its attribution."
+    },
+    {
+      "id": "QUN-NU-008-D",
+      "work": "QUN-NU",
+      "section": "Fixed entities, causes and conditions",
+      "order": 9,
+      "locator": "transcription printed pp. 242–243; forum lines 351–355, 361–362",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "status": "translated-online-witness",
+      "arabic": "ولا سر قوله عليه السلام: «كان اللّه ولا شيء معه». ولا سر قوله تعالى: ﴿وَمَا أَمْرُنَا إِلَّا وَاحِدَةٌ كَلَمْحٍ بِالْبَصَرِ﴾ [القمر: 50]، ولا يعرف سر مبدئية الإيجاد لا في زمان موجود، كما أنه من ذاق هذا المشهد وقد كان علم أن الأعيان الثابتة هي حقائق الموجودات، وأنها غير مجعولة، وحقيقة الحق منزّهة عن الجعل والتأثير، وما ثم أمر ثالث غير الحق والأعيان، فإنه يجب أن يعلم إن صح له ما ذكرنا أن لا أثر لشيء في شيء، وأن الأشياء هي المؤثرة في أنفسها، وأن المسمّاة عللا وأسبابا مؤثرة هي شروط في ظهور آثار الأشياء في أنفسها، لا أن ثمة حقيقة تؤثر في حقيقة غيرها وهكذا، فلتعرف الأمر في المدد، فليس ثمة شيء يمد شيئا غيره، بل المدد يصل من باطن الشيء إلى الظاهر، والتجلّي النوري الوجودي يظهر ذلك، فليس الإظهار بتأثير في حقيقة ما أظهره، فالنسب هي المؤثرة بعضها في البعض، بمعنى أن بعضها سبب لانتشاء البعض، وظهور حكمه في الحقيقة التي هي محتدها. ومن جملة ما يعرفه ذائق هذا التجلّي أن لا أثر للأعيان الثابتة من كونها مرائي في التجلّي الوجودي الإلهي، إلا من حيث ظهور التعدد الكامن في غيب ذلك التجلّي، فهو أثر في نسبة الظهور الذي هو شرط في الإظهار، والحق يتعالى عن أن يكون متأثرا من غيره، وتتعالى حقائق الكائنات أن تكون من حيث هي حقائقها متأثرة، فإنها من هذا الوجه في ذوق الكمال عين شؤون الحق، فلا جائز أن يؤثر فيها غيرها، فلا أثر لمرآة ما من حيث هي مرآة في حقيقته المنطبع فيها لما مرّ بيانه.",
+      "english": "Nor does he know the secret of the saying, ‘God was, and there was nothing with Him,’ or of God's words, ‘Our command is but one, like the blink of an eye’ [Q 54:50]. He does not know the secret of origination's principiality outside an existent time. Likewise, one who tastes this witnessing, having already known that the fixed entities are the realities of existents, that they are not made, that the reality of the Real is beyond being made or being affected, and that there is no third thing beyond the Real and the fixed entities, must understand—if the preceding insight is sound—that no thing acts upon another thing's reality. Things disclose their own effects, whereas what are called efficient causes are conditions for those effects to become apparent within them, not realities that transform the inner reality of another. Assistance does not reach a thing from an independently acting other; it arrives from its inward aspect to its outward. The luminous, existential disclosure reveals this. Making manifest is not an operation upon the reality of what is manifested. Relations affect one another insofar as one relation is the occasion for another’s emergence and for the appearance of its judgement within the reality that is its source. One who tastes this disclosure also knows that fixed entities considered as mirrors have no effect on the divine existential disclosure except with respect to the appearance of the multiplicity hidden within that disclosure. This is an effect in the relation of manifestation, which is a condition of making manifest; the Real is above being affected by another, and the realities of created things, as realities, are above being affected—for from this standpoint and in the taste of perfection they are among the affairs of the Real. A mirror as mirror does not act upon the reality of what it reflects.",
+      "tags": [
+        "ayan-thabita",
+        "asbab",
+        "tajalli",
+        "zuhur",
+        "barq"
+      ],
+      "notes": "The excerpt joins adjacent source sentences across a printed page break. It is not a general denial of empirical causal regularity; it contests the metaphysical attribution of independent production and alteration to distinct realities."
+    },
+    {
+      "id": "QUN-NU-020-A",
+      "work": "QUN-NU",
+      "section": "One wujūd: unity without a numerical opposite",
+      "order": 10,
+      "locator": "transcription printed pp. 260–261; forum lines 601–603",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "status": "translated-online-witness",
+      "arabic": "نصّ شريف جدّا: اعلم أن الحق هو الوجود المحض لا اختلاف فيه، وأنه واحد وحدة حقيقية، لا يتعقل في مقابلة كثرة، ولا يتوقف تحققها في نفسها، ولا تصورها في العلم الصحيح المحقق على تصور ضد لها، بل هي لنفسها ثابتة مثبتة لا مثبتة. وقولنا: وحدة للتنزيه والتفهيم لا للدلالة على مفهوم الوحدة على نحو ما هو متصور في الأذهان المحجوبة. وإذا عرفت هذا فنقول: إنه سبحانه من حيث اعتبار وحدته المنبه عليها، وتجرده عن المظاهر، وعن الأوصاف المضافة إليه من حيث المظاهر، وظهوره فيها لا يدرك، ولا يحاط به، ولا يعرف، ولا ينعت، ولا يوصف.",
+      "english": "An especially noble text. Know that the Real is pure wujūd, in which there is no difference, and that He is one with a real unity that is not conceived as the opposite of multiplicity. Neither its reality in itself nor its conception in sound, realised knowledge depends upon conceiving an opposite. Rather, it is self-subsisting and makes other things evident, without requiring another to establish it. Our word ‘unity’ is employed for transcendence and instruction, not to indicate the concept of unity as entertained by veiled minds. Once this is understood, we say: insofar as one considers the unity just described, His freedom from loci of manifestation and from the attributes related to Him through them, and His manifestation within them, He is not apprehended, encompassed, known, qualified or described.",
+      "tags": [
+        "wujud",
+        "wahda",
+        "tanzih",
+        "mazahir"
+      ],
+      "notes": "Important textual variant: «ثابتة مثبتة لا مثبتة» is grammatically difficult in the online witness; the tentative translation follows a possible vocalisation, not a verified reading. Requires collation. This is only the opening of the long 'one wujūd' text."
+    },
+    {
+      "id": "QUN-NU-020-B",
+      "work": "QUN-NU",
+      "section": "Fixed entity, quiddity and general effusion",
+      "order": 11,
+      "locator": "transcription printed pp. 261–262; forum lines 615–616",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "status": "translated-online-witness",
+      "arabic": "الوجود في حق الحق عين ذاته فيما عداه أمر زائد على حقيقته، وحقيقة كل موجود عبارة عن نسبة تعينه في علم ربه أزلا، ويسمّى باصطلاح المحققين من أهل اللّه تعالى عينا ثابتة، وباصطلاح غيرهم: ماهية، والمعلوم المعدوم والشيء الثابت ونحو ذلك. والحق سبحانه من حيث وحدة وجوده لم يصدر عنه إلا واحد؛ لاستحالة إظهار الواحد وإيجاده من حيث كونه واحدا، ما هو أكثر من واحد، لكن ذلك الواحد عندنا هو الوجود العام المفاض على أعيان المكونات، ما وجد منها وما لم يوجد مما سبق العلم بوجوده، وهذا الوجود مشترك بين القلم الأعلى الذي هو أول موجود، المسمّى أيضا بالعقل الأول، وبين سائر الموجودات ليس كما ذكره أهل النظر من الفلاسفة.",
+      "english": "In the Real, wujūd is identical with His Essence; in what is other than Him, it is additional to that thing's reality. The reality of every existent is the relation of its eternal determination in its Lord's knowledge. In the terminology of the realised people of God this is called a fixed entity; in other terminology it is a quiddity, a known nonentity, an established thing, and the like. The Real, in respect of the unity of His wujūd, gives rise to only one, for what is one precisely as one cannot bring forth a multiplicity as such. But for us this one is the general wujūd effused upon the entities of things that come to be—both those that have appeared and those whose future existence is already known. This wujūd is shared by the Highest Pen, which is the first existent and also called the First Intellect, and by all other existents, though not in the manner described by the speculative philosophers.",
+      "tags": [
+        "wujud",
+        "ayan-thabita",
+        "mahiyya",
+        "fayd",
+        "aql-awwal"
+      ],
+      "notes": "This is an excerpt, not the end of the long text. Do not equate ‘shared’ here with univocal instantiation without examining the surrounding qualifications."
+    },
+    {
+      "id": "IZN-RIS-002-05",
+      "work": "IZN-RIS",
+      "section": "Argument five: time, place and the limit of negation",
+      "order": 12,
+      "locator": "Balaban–Çalışkan (2023), printed p. 836, PDF page index 22",
+      "source_url": "https://dergipark.org.tr/en/download/article-file/3074106",
+      "status": "translated-edition-excerpt",
+      "arabic": "الخامس: العقل لا يتصرف إلا فيما يكون في زمان ومكان، لأن كل ما يدركه فإنه يدركه إما في الماضي أو في المستقبل أو في الحال، وكل ذلك تحت الزمان، وكل ما يتصوره، فإنه إنما يتصوره إما ههنا أو هناك، وكل ذلك تحت المكان، وإذا قلت: الحق بخلاف ذلك فمعروفك في هذه المعرفة نفي غير الحق عنه، ونفي غير الحق لا يكون هو عين وجدان الحق.",
+      "english": "Fifth: Intellect operates only upon what lies within time and place. Whatever it apprehends, it apprehends as past, future, or present, all of which fall under time; and whatever it conceives, it conceives as here or there, all of which fall under place. If you say that the Real is unlike this, what you have known in this knowledge is the negation from Him of what is other than the Real. But negating what is other than the Real is not itself the very finding of the Real.",
+      "tags": [
+        "aql",
+        "zaman",
+        "makan",
+        "wijdan"
+      ],
+      "notes": "Independently checked on the rendered 2023 Arabic source page. This describes the discursive intellect considered here; it does not establish that every possible intellect is spatial."
+    },
+    {
+      "id": "IZN-RIS-004-A",
+      "work": "IZN-RIS",
+      "section": "The Essence beyond delimitation and non-delimitation",
+      "order": 13,
+      "locator": "Balaban–Çalışkan (2023), printed p. 839, PDF page index 25",
+      "source_url": "https://dergipark.org.tr/en/download/article-file/3074106",
+      "status": "translated-edition-excerpt",
+      "arabic": "ولا يتقيد بقيد بل هو منزّه عن التقيّد واللّاتقيّد، لكونه حقيقة الوجود من حيث هو وجود، فليس غيره إلا العدم المطلق الذي ليس في الذهن ولا في الخارج.",
+      "english": "It is not restricted by any restriction. Indeed, it transcends both restriction and nonrestriction, for it is the reality of wujūd insofar as it is wujūd. Apart from it there is only absolute nonexistence, which is found neither in the intellect nor in the external world.",
+      "tags": [
+        "itlaq",
+        "taqyid",
+        "wujud",
+        "dhati"
+      ],
+      "notes": "Selected consecutive clause from chapter four, not a substitute for the complete chapter. Manuscript collation and reproduction rights of the 2023 apparatus require separate review."
+    }
+  ]
+}
