@@ -1,16 +1,17 @@
 # Miṣbāḥ al-Uns — cumulative translation / reader stage handoff (9 November 2026)
 
-**Integrity statement: NOT FULLY CUMULATIVE.** The connected Files service can read the prior cumulative manuscript but does not currently authorize recovery of its original DOCX/PDF bytes. No earlier passages have been replaced. This stage preserves the exact prior-file identifiers, a complete newly imported section range, source/provenance registers and continuation boundary. Do **not** claim a complete restored §§1.1–4.648 reader or a critical edition.
+**Integrity statement: NOT FULLY CUMULATIVE.** The connected Files service can read the prior cumulative manuscript but does not currently authorize recovery of its original DOCX/PDF bytes. No earlier passages have been replaced. This stage preserves the exact prior-file identifiers, a complete newly imported section range, source/provenance registers and continuation boundary. Do **not** claim a complete restored §§1.1–4.700 reader or a critical edition.
 
 ## 1. What was actually done
 
 - Created the review branch `research/misbah-tasawwuf-reader-20261108` within `gnamma-research/booksite`.
 - Recovered the previously packaged **R10, §§4.538–4.562 (25 sections)** verbatim from `Misbah_R10_Continuation_4.538-4.562_2026-10-25.md`, restoring parallel Arabic from the pinned OpenITI witness. Stored as `r10.json`.
 - Newly translated **R11, §§4.563–4.577 (15 sections)** directly from the same witness. Stored in `r11a.json` (563–572) and `r11b.json` (573–577). These are complete numbered first-pass passages, not summaries.
-- Constructed and extended the responsive bilingual reader with Darūrī-family compact controls; link `index.html`, `reader.css`, `reader.js`. Imported R10+R11+R12+R13 = **111 consecutive complete Arabic/English entries**.
+- Constructed and extended the responsive bilingual reader with Darūrī-family compact controls; link `index.html`, `reader.css`, `reader.js`. Imported R10–R14 = **163 consecutive first-pass Arabic/English entries (§§4.538–4.700)**.
 - Added and updated `MANIFEST.json`: full source identifiers, exact page math, per-unit checksums, source loci, prior recovery pointers, and critical-grade flags.
 - **R12 (9 Nov 2026):** translated §§4.578–4.610 (33 new first-pass bilingual units) directly from the pinned witness, in `r12a.json` and `r12b.json`; added `R12_EDITORIAL_APPARATUS.md`; regenerated the modular and portable readers. Pages 446–452 are now complete; p.453 has only §4.610 so far.
 - **R13 (9 Nov 2026):** translated §§4.611–4.648 (38 additional bilingual first-pass units) in `r13a.json` and `r13b.json`; registered the sections and regenerated both modular and portable readers. Source pages **453–462 are completely covered**; §4.648 ends on p.463, but §4.649 also begins on p.463. Added `R13_EDITORIAL_APPARATUS.md`.
+- **R14 (9 Nov 2026):** translated **52 further first-pass bilingual units, §§4.649–4.700**, in `r14a.json` (17), `r14b.json` (17), `r14c.json` (18), straight from the pinned OpenITI source. Added `R14_EDITORIAL_APPARATUS.md`; updated `MANIFEST.json`, modular reader progress/metadata and self-contained `standalone.html`. Pages **463–473** are newly fully covered, **p.474 is incomplete**, and the next passage is §4.701. Current total is **471 / 720 full translated pages = 65.4167%** and **163 imported units**, still without the older §§1.1–4.537 in this web reader.
 - Added this handoff; catalog integration should be reviewed in the same branch.
 
 ## 2. Exact source / working edition
@@ -34,6 +35,7 @@ Do not confuse modern editor notes with Fanārī, Fanārī’s quotations of Qū
 4. **R11 new in this branch:** `r11a.json` and `r11b.json`, sections 4.563–4.577, end with complete printed p.445. They are first-pass English translations with original Arabic beside them; no claim of printed/manuscript verification.
 5. **R12 continuation:** `r12a.json` and `r12b.json` cover §§4.578–4.610, pp.446–453. Original R10/R11 JSON was preserved.
 6. **R13 continuation:** `r13a.json` and `r13b.json` cover §§4.611–4.648. Last wholly translated page is **462**; §4.648 is on p.463 but §4.649 also begins there. All earlier incremental JSON files were preserved.
+7. **R14 continuation:** `r14a.json`–`r14c.json` cover §§4.649–4.700, with §4.700 ending on p.474. Last wholly translated page **473**; §§4.538–4.700 now form 163 consecutive bilingual passages in the modular and portable readers. Earlier files remain intact.
 
 Files 1–3 are in the user's Project/Library environment. Sources 4–6 and all seven reader JSON files are in the GitHub review branch. The modern medieval Latin dictionary uploaded in the current chat is unrelated and must not be treated as a source for this Arabic work.
 
@@ -41,17 +43,17 @@ Files 1–3 are in the user's Project/Library environment. Sources 4–6 and all
 
 | Measurement | Value |
 |---|---|
-| Last consecutive translated passage | **§4.648** |
-| Last fully translated printed source page | **p.462** (p.463 partly translated) |
-| Completed pages, inclusive pp.3–462 | **460** |
+| Last consecutive translated passage | **§4.700** |
+| Last fully translated printed source page | **p.473** (p.474 partly translated) |
+| Completed pages, inclusive pp.3–473 | **471** |
 | Total original pages, inclusive pp.3–722 | **720** |
-| Translation draft coverage | **63.8889%** |
-| Imported bilingual units into *this* reader | **111 (4.538–4.648)** |
+| Translation draft coverage | **65.4167%** |
+| Imported bilingual units into *this* reader | **163 (4.538–4.700)** |
 | Earlier full working master in reader | **NO**, remains to be losslessly imported |
 | Claimed prior 75% recovery package | Not recovered; no additional completion credited |
-| Exact next section | **§4.649**, Khvājavī p.463 |
+| Exact next section | **§4.701**, Khvājavī p.474 |
 | 75% threshold | **540 complete pages**, i.e. through printed p.542 |
-| More pages to 75% from current confirmed baseline | **80** |
+| More pages to 75% from current confirmed baseline | **69** |
 
 Do not confuse a displayed percentage of source pages translated with the fraction of passages currently imported into a site. Reader import is a late segment, not a complete online edition.
 
@@ -80,17 +82,17 @@ Reader implements: compact icon toolbar; Contents, Search, Appearance/Aa, Study/
 ## 7. Continuation instructions
 
 1. Obtain the prior DOCX/PDF master *in original bytes* if possible; restore §§1.1–4.537 to a canonical, section-aligned Arabic/English data model, with notes and apparatus **without rewriting or summarising** earlier translations. Carry original source variants with hashes.
-2. Verify the 111 currently imported units against source boundaries and preserve original English from R10 exactly. Review R11/R12/R13 against Khvājavī print and independent early textual witnesses. Never represent first-pass as collated.
-3. Continue **from §4.649 on printed p.463** using the same pinned OpenITI source. Source begins `القاعدة الثانية: ان قوة التأثير بحسب كمال المؤثر وجودا أو ذاتا ...`. §4.649 continues a sequence of Illuminationist principles; retain Fanārī's framing and quotation attribution.
-4. At each stage add a new `r14*.json` (etc.) and append its filename under `MANIFEST.json` → `readerImport.files`; the modular reader discovers new increments automatically. Rebuild `standalone.html`, update both coverage indicators and this complete handoff; record translation count and whole-source-page changes.
+2. Verify all 163 imported units against source boundaries and preserve original English from R10 exactly. Review R11–R14 against Khvājavī print and independent earlier textual witnesses. Never represent first-pass as collated.
+3. Continue **from §4.701 on printed p.474** using the same pinned OpenITI source. Source begins `وأدار كرة الأرض وكانت هذه الحركة من هذا الملك بطالع السرطان ...` and continues the Great Shaykh's discussion of the earth and heavens. Retain quotation attribution, and do not treat the cosmological descriptions as validated contemporary science.
+4. At each stage add a new `r15*.json` (etc.) and append its filename under `MANIFEST.json` → `readerImport.files`; the modular reader discovers new increments automatically. Rebuild `standalone.html`, update both coverage indicators and this complete handoff; record translation count and whole-source-page changes.
 5. Promote to the **actual NAMA** Tasawwuf library only when the destination repo or editor is available and its Darūrī-compatible components can be compared. Do not silently merge the GNAMMA branch into a different public site.
 6. Every stage should preserve an immutable source/provenance record. Mark any missing previous archive **NOT FULLY CUMULATIVE** until the byte-identical old master is included.
 
 ### Integrity locations
 
-- New reader `index.html`, `reader.css`, `reader.js`; standalone offline page `standalone.html` contains all 111 bilingual sections and the full reader client in one HTML file.
-- Newly integrated bilingual sections: `r10.json`, `r11a.json`, `r11b.json`, `r12a.json`, `r12b.json`, `r13a.json`, `r13b.json`.
-- Source and stage register: `MANIFEST.json`, with stage problem registers: `R12_EDITORIAL_APPARATUS.md`, `R13_EDITORIAL_APPARATUS.md`.
+- New reader `index.html`, `reader.css`, `reader.js`; standalone offline page `standalone.html` contains all 163 bilingual sections and the full reader client in one HTML file.
+- Newly integrated bilingual sections: `r10.json`, `r11a.json`, `r11b.json`, `r12a.json`, `r12b.json`, `r13a.json`, `r13b.json`, `r14a.json`, `r14b.json`, `r14c.json`.
+- Source and stage register: `MANIFEST.json`, with stage problem registers: `R12_EDITORIAL_APPARATUS.md`, `R13_EDITORIAL_APPARATUS.md`, `R14_EDITORIAL_APPARATUS.md`.
 - Earlier originals identified precisely above.
 - Project governing protocol: `docs/TRANSLATION_CONTINUITY_PROTOCOL.md`.
 
@@ -104,7 +106,7 @@ Reader implements: compact icon toolbar; Contents, Search, Appearance/Aa, Study/
 - The long cosmological quotation (§§4.584–4.606) must be checked against Ibn ʿArabī's `ʿUqlat al-mustawfiz`; the embedded `ابن مسرة الجيلي` and numerical/phonetic claims remain unverified witness readings.
 - Fanārī's reply (§§4.607–4.609) proposes an imaginal/bodily reconciliation of Qūnawī's two celestial spheres and Ibn ʿArabī's four, drawing upon al-Farghānī. Independent collation of al-Farghānī and al-Jandī is required.
 - Reader and standalone versions have been expanded and their manifests updated: **73 units**, **450/720 completely covered source pages**, **62.50%**. This count refers to translation draft *page reach*, not final editorial certification.
-- **R12's former next boundary:** §4.611, p.453. Superseded by R13; current boundary is §4.649, p.463. A new passage should end on a section boundary and only credit a printed page after all sections beginning on it are translated.
+- **R12's former next boundary:** §4.611, p.453. Superseded first by R13, then R14; the current boundary is §4.701, p.474. A new passage should end on a section boundary and only credit a printed page after all sections beginning on it are translated.
 
 
 ## 9. R13 cumulative checkpoint and verified continuation boundary (9 November 2026)
@@ -114,4 +116,15 @@ Reader implements: compact icon toolbar; Contents, Search, Appearance/Aa, Study/
 - Editorial issues in `R13_EDITORIAL_APPARATUS.md`, notably uncertain `أصل لخبان` (§4.630), problematic `وبعد الرب قصد` (§4.612), compressed count in §4.615, distinction of the three paradisal faces, and source identification for the Shīrāzī commentary quoted at §4.648.
 - Translation draft reach: **460 fully completed printed pages (pp.3–462) out of 720 = 63.8889%**; §4.648 carries into p.463, but §4.649 is also on p.463, so p.463 is not credited. Imported reader: **111 bilingual sections (§§4.538–4.648)**; prior §§1.1–4.537 not yet losslessly imported.
 - Modular reader, standalone offline reader, provenance manifest and handoff updated on branch `research/misbah-tasawwuf-reader-20261108`. No public NAMA deployment or promotion to the master branch is asserted.
-- **Next:** §4.649 on p.463, `القاعدة الثانية: ان قوة التأثير بحسب كمال المؤثر وجودا أو ذاتا ...`; it continues the Illuminationist principles. Preserve `MANIFEST.json` and append future increments rather than replacing the prior translation.
+- **R13's next boundary (now superseded):** §4.649 on p.463, `القاعدة الثانية: ان قوة التأثير بحسب كمال المؤثر وجودا أو ذاتا ...`. R14 has now covered it. Preserve `MANIFEST.json` and append future increments rather than replacing the prior translation.
+
+
+## 10. R14 cumulative checkpoint and interpretation guide (9 November 2026)
+
+**New source-aligned first-pass translation:** §§4.649–4.700 (52 complete sections, 3 increments), Arabic and English side by side. **Last fully covered printed page:** 473 (471 of 720 = 65.4167%); §4.700 ends on p.474, but §4.701 begins there and is not yet translated. **Next:** §4.701, Khvājavī p.474. R10–R14 reader now has 163 entries (§§4.538–4.700), but is still NOT FULLY CUMULATIVE because §§1.1–4.537 remain in the separately identified master and have not been imported losslessly.
+
+**Doctrinal stages:** §§4.649–4.658 distinguish divine efficacy from the finite rank yet indefinite continued effects of the intellects, and examine the mutakallimūn objection to perpetual effect. §§4.659–4.665 move from an Illuminationist analogy of ecstatic motion to Fanārī's own account of love, heat and layered manifestation. §§4.666–4.685 develop principles of correspondences between causes and recipients using historical elemental/alchemical analogies. §§4.686–4.696 introduce the Perfect Human as effect in form but agent in reality, explain al-Ḥallāj's maternal paradox, and require the qualification **'under different considerations'** for apparent opposites. The heading *Fifteenth Principle* occurs inside §4.696 in the electronic transcription. §§4.697–4.700 begin the Great Shaykh's cosmological quotation; distinguish creation **at** intermediary orientation from creation **by** an independent intermediary.
+
+**Outstanding issues:** The detailed 18-point R14 register in `R14_EDITORIAL_APPARATUS.md` includes unresolved `انقطاع اثارهم بالكلية` (§4.649), `أو آخر ان معها لا أصلها` (§4.651), ambiguous metal terms (§4.677), the limmī/innī demonstrations (§4.680), source identification of §4.694's Fātiḥa commentary, and original quotation boundaries and provenance for §4.697 onwards. The OpenITI witness was checked for complete Arabic numbered sections and page-boundaries, **not** against printed-page images or manuscripts. Do not declare a definitive critical text.
+
+**Branch/site status:** all R14 files, manifest, reader HTML and regenerated portable reader are on `research/misbah-tasawwuf-reader-20261108` of `gnamma-research/booksite`. This is not a verified deployment to either NAMA or GNAMMA's public master. Keep the branch reviewable; do not silently promote it.
