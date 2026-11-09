@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-human-clause-review-v1",
   "date": "2026-11-09",
-  "reviewScope": "Manual comparative review of 1,306 Arabic punctuation-clause candidates: original matn QT001–030 (30 units) and 25 descendant commentary units, with unresolved readings noted; remaining 4,214 inventoried only.",
+  "reviewScope": "1,427 Arabic punctuation-clause candidates in 65 bilingual units (QT001–040 and 25 selected sharḥ units), with specific errors and source variants tracked; remaining 4,093 only inventoried.",
   "sourceBasis": "Current repository JS matn/commentary modules, retained edition N introduction and edition A main/conclusion",
   "method": "Source clause numbers are computed from Arabic punctuation. English ranges are manually matched, not proportional autoalignment. All segments in these eleven sections must be covered exactly once; unresolved readings remain explicit.",
   "units": [
@@ -2023,9 +2023,307 @@
           "note": "الوجودين غير الفرضيين is retained as non-suppositional modes with a distinct printed العرضي alternative in the commentary; no categorical emendation."
         }
       ]
+    },
+    {
+      "id": "QT-031",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Correlative knowing/known objection and self-knowledge counterexample are stated, with the first reply explicitly dialectical."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 8,
+          "enStart": 3,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Difference of quiddities is conceptual/relational under genuine unity, and no externally independent instance follows in this register."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 10,
+          "enStart": 6,
+          "enEnd": 6,
+          "status": "checked",
+          "note": "Self-presence qua identical with absolute identity is distinguished from being other."
+        }
+      ]
+    },
+    {
+      "id": "QT-032",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Emergence from unseen to witnessing and actuality of differentiated determinations are maintained as claims about manifestation, not as an extra self-subsisting essence."
+        }
+      ]
+    },
+    {
+      "id": "QT-033",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 4,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked-with-note",
+          "note": "Successive worlds of spirits, imaginal and bodies correctly ordered, while first heavenly body and cosmic Throne reflect the source's own cosmology."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 10,
+          "enStart": 2,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "The cosmic Throne as bodily terminus and ordering of world-level ranks preserved; attribution remains medieval, not modern physics."
+        },
+        {
+          "arStart": 11,
+          "arEnd": 13,
+          "enStart": 3,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "The author refers details of proofs to separate philosophical works without importing those other books' contents."
+        }
+      ]
+    },
+    {
+      "id": "QT-034",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 6,
+          "enStart": 1,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "The six-part objection begins with modality/necessity and denial that quiddities and relations are made, as an opponent's claim."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 11,
+          "enStart": 4,
+          "enEnd": 7,
+          "status": "checked",
+          "note": "Second objection attacks manifestation and any reification of either a whole or its components, including mental and external being."
+        },
+        {
+          "arStart": 12,
+          "arEnd": 17,
+          "enStart": 8,
+          "enEnd": 10,
+          "status": "checked",
+          "note": "Objection further denies possible differences between world of meanings and world of witnessing."
+        },
+        {
+          "arStart": 18,
+          "arEnd": 23,
+          "enStart": 11,
+          "enEnd": 12,
+          "status": "checked",
+          "note": "Objection alleges names/essences differ only relative to subjects and disallows summary/detail distinction."
+        },
+        {
+          "arStart": 24,
+          "arEnd": 28,
+          "enStart": 13,
+          "enEnd": 15,
+          "status": "checked-with-note",
+          "note": "Imaginal world is denied by the reported Peripatetic opponents, not by the author's ultimate doctrine."
+        },
+        {
+          "arStart": 29,
+          "arEnd": 33,
+          "enStart": 16,
+          "enEnd": 18,
+          "status": "checked",
+          "note": "Final horn rejects greater manifestation at lowest level and argues higher unchanging levels would be more complete; the response follows in QT-035."
+        }
+      ]
+    },
+    {
+      "id": "QT-035",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 5,
+          "enStart": 1,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Reply makes determinations the subject of possibility, while allowing incidental existence to quiddities, relations and name-aspects."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 11,
+          "enStart": 5,
+          "enEnd": 9,
+          "status": "checked",
+          "note": "Existing quiddities can be produced because their being-existent comes through conjunction with existence which is other than quiddity."
+        },
+        {
+          "arStart": 12,
+          "arEnd": 14,
+          "enStart": 10,
+          "enEnd": 12,
+          "status": "checked",
+          "note": "Being existent by accident versus self-subsisting being, and derivative conceptual existential predication, are kept distinct."
+        },
+        {
+          "arStart": 15,
+          "arEnd": 19,
+          "enStart": 13,
+          "enEnd": 15,
+          "status": "checked",
+          "note": "Conclusion warns against confusing intellectual predication of existence with the underlying reality of unrestricted existence."
+        }
+      ]
+    },
+    {
+      "id": "QT-036",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 7,
+          "enStart": 1,
+          "enEnd": 4,
+          "status": "checked-with-note",
+          "note": "The printed original repeats an assertion about less-than-complete external forms. English acknowledges the repeated statement instead of disguising it as new substantive content."
+        },
+        {
+          "arStart": 8,
+          "arEnd": 10,
+          "enStart": 5,
+          "enEnd": 6,
+          "status": "checked",
+          "note": "Higher and immediately lower manifestations are distinct; the two-world comparison is rhetorical, not independently established."
+        },
+        {
+          "arStart": 11,
+          "arEnd": 12,
+          "enStart": 7,
+          "enEnd": 8,
+          "status": "checked",
+          "note": "Author cites a separate al-Ḥikma al-Manīʿa for expanded argument without inserting external content."
+        }
+      ]
+    },
+    {
+      "id": "QT-037",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Charitable 'perhaps they meant' interpretation of greater perfection at final sensory level preserved rather than unconditional superiority."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 7,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Higher completeness as comprehensiveness of cognitive modes and activity preserved."
+        },
+        {
+          "arStart": 8,
+          "arEnd": 8,
+          "enStart": 3,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Concluding exhortation retained."
+        }
+      ]
+    },
+    {
+      "id": "QT-038",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 2,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Acquired malakāt and sensory apprehension as non-obstructive of the soul's other forms of cognition preserved."
+        },
+        {
+          "arStart": 3,
+          "arEnd": 5,
+          "enStart": 3,
+          "enEnd": 4,
+          "status": "checked-with-note",
+          "note": "Death as completion and preservation of perfected soul's capacities is the text's metaphysical assertion, not contemporary empirical evidence."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 6,
+          "enStart": 5,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Longer proof explicitly deferred by author."
+        }
+      ]
+    },
+    {
+      "id": "QT-039",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 5,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "From predominance of unity through dispersed multiplicity to will for a comprehensive locus is a single complex conditional movement, not three disconnected beings."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 8,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Comprehensive locus gathers luminous/shadow, hidden/open, inward/outward without equating the Real with a physical aggregate."
+        }
+      ]
+    },
+    {
+      "id": "QT-040",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Perfect Human as encompassing appearance of the essence and divine names, attributes and acts retained."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 7,
+          "enStart": 3,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Necessary/possible and unity/differentiation as relationally gathered human correspondences preserved."
+        },
+        {
+          "arStart": 8,
+          "arEnd": 9,
+          "enStart": 4,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "The divine self-apprehension claim remains attributed to the author and grounded in the comprehensive manifestation."
+        }
+      ]
     }
   ],
-  "claimedManuallyComparedArabicClauses": 1306,
+  "claimedManuallyComparedArabicClauses": 1427,
   "issues": "Three passages corrected; one passage contains two connected technical-semantic corrections; additional textual cruxes flagged without conjectural emendation.",
   "noWitnessesCollated": true
 }
