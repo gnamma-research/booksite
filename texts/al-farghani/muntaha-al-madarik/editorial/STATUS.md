@@ -1,3 +1,17 @@
+## Latest consolidated milestone — Stage XII (9 November 2026)
+
+**Foundation I and II selected source review now extends through Beirut printed p78.** In Stages X–XI, 111 new bounded Arabic–English comparisons were made from a **derivative modern Arabic forum transcription** (57 on pp61–69; 54 on pp70–78). The prior **283 selected modern edited-digitized B2007 checks** on pp18–60 remain preserved separately. The critical reader now has **394 total records on 61 consecutive page labels** but only **283 records** are from the previously examined digitized modern printed Arabic. The 111 newly examined records do NOT constitute a new independent witness or direct collation of an 1876 or medieval codex.
+
+**New results:** p64 `الغنى` shifts affiliation by `اعتبار` (under `الجواد` as bestowable richness; among negative essential names as absence of need). p72 explicitly distinguishes `الاسم القائل` from `عين القابل`, strengthening but NOT proving a conjectural emendation to B2007 p38. p73 `رجوع الوجود كل آن إلى أصله` and `لكونه عرضا على الحقيقة وقيام بدل مثله مكانه في الخلق الجديد` call for precise analysis of continuously substituted contingent being; the analogy itself is qualified by `من بعض الوجوه لا كلّها`. p76 states speech is principal in bringing forth spirits but power is principal for bodies, confirming that the name relations depend on the respect considered.
+
+**Current evidence ceiling:** ten inherited bounded **photographed 1876 print-to-print** comparisons (five differences/five agreements); **zero manuscript folios compared, zero manuscript readings independently established, and zero complete original Arabic pages line-proofread**. The continuous English pp18–145 is a working draft, not a final critical edition. Investigate p38 `القابل/القائل`, p63 `مشيمة`, and p73 pronoun/`عرض` against actual printed photographs and manuscripts before adopting conjectural edits.
+
+**Stable assets:** [Stage XII cumulative handoff](STAGE_HANDOFF_CRITICAL_012.md) · [evidence-grade registry](SOURCE_PROVENANCE_CRITICAL_012.json) · [Stage X source checks](CRITICAL_TRANSLATION_61_69_DERIVATIVE.md) · [Stage XI source checks](CRITICAL_TRANSLATION_70_78_DERIVATIVE.md) · [source coverage ledger](CRITICAL_COVERAGE_REGISTER.json) · [interactive bilingual critical reader](../critical-edition.html).
+
+**Next source-page restart:** B2007 p79 (beginning Foundation III), with priority to direct B2007 scanning from p61 and actual early manuscript collation before labeling work definitive.
+
+---
+
 ## Latest milestone — Stage IX gap recovery and direct checks through B2007 p60 (9 November 2026)
 
 **New:** 40 selected bilingual Arabic–English loci on previously inaccessible modern pages 48–49 and further pages 51–60. Combined with 198 old and 45 Stage VIII checks: **283 selected clause records across 43 consecutive printed page labels (18–60)**. These are not 43 fully collated pages; full source transcription, exhaustive sentence-level checking, and manuscripts remain outstanding.
