@@ -232,12 +232,21 @@ window.FARGHANI_CRITICAL_PASS_003={
       "ar": "بتغليب الرحمة وسبقها على أنها غايات حكم الغضب عارجا لا نازلا",
       "en": "through the preponderance and precedence of mercy, in contrast to the furthest limit of the judgment called anger, upward rather than downward.",
       "disposition": "crux",
-      "critical_note": "The syntactic force of على أنها غايات حكم الغضب عارجا لا نازلا is not settled; previous working English over-smoothed it. Requires 1876/early-witness comparison before fixing an English lemma.",
+      "critical_note": "I1876 p10 / scan14 now confirms the bounded concluding phrase حكم الغضب عارجا لا نازلا. This historic PRINT agreement does not decide the syntactic attachment of على أنها غايات and does not justify smoothing the whole sentence.",
       "source_siglum": "B2007",
       "source_url": "https://ablibrary.net/book_content/b/9606/25?lang=ar",
       "grade": "modern-printed-digital-selected-span-checked-v1",
-      "historical_print_verified": false,
-      "manuscript_verified": false
+      "historical_print_verified": true,
+      "manuscript_verified": false,
+      "historical_print": {
+        "siglum": "I1876",
+        "printed_page": 10,
+        "scan_index": 14,
+        "reading": "حكم الغضب عارجا لا نازلا",
+        "status": "agreement",
+        "source_pdf": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
+        "note": "Narrow ending contrast is photographed in I1876 p10/scan14 and B2007 p25. Earlier على أنها غايات remains syntactically unsettled."
+      }
     },
     {
       "id": "CR003-019",
@@ -763,14 +772,24 @@ window.FARGHANI_CRITICAL_PASS_003={
       "id": "CR003-059",
       "page": 29,
       "ar": "والتعيّن الأول المذكورة وقلبه المطهّر التقي النقي صورة هذا التعين والبرزخية",
-      "en": "and the first determination just mentioned—and his pure, godfearing heart—[are described as] the image of this determination and intermediacy.",
-      "disposition": "crux",
-      "critical_note": "Modern digital Arabic has an apparent agreement/syntactic problem (المذكورة and adjacent clauses). The earlier smooth English reading suppressed this. Preserve as a textual crux pending 1876 and manuscript images.",
+      "en": "The first determination just mentioned, and his pure and God-fearing heart, are described in relation to this determination and intermediacy [the coordination remains compressed].",
+      "disposition": "corrected",
+      "critical_note": "CORRECTED against directly photographed I1876 p13 / scan17: first determination is modified by masculine المذكور, not B2007 feminine المذكورة. Adopt I1876 for edited Arabic, preserve Beirut reading in apparatus. Coordination after the adjective is not independently manuscript-proofed.",
       "source_siglum": "B2007",
       "source_url": "https://ablibrary.net/book_content/b/9606/29?lang=ar",
       "grade": "modern-printed-digital-selected-span-checked-v1",
-      "historical_print_verified": false,
-      "manuscript_verified": false
+      "historical_print_verified": true,
+      "manuscript_verified": false,
+      "historical_print": {
+        "siglum": "I1876",
+        "printed_page": 13,
+        "scan_index": 17,
+        "reading": "والتعيّن الأول المذكور وقلبه المطهّر",
+        "status": "historical-print-difference",
+        "source_pdf": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
+        "note": "I1876 printed p13/scan17 visibly reads masculine المذكور where B2007 p29 has feminine المذكورة. Adopt masculine as provisional edited reading; no photographed MS variants."
+      },
+      "edited_ar": "والتعيّن الأول المذكور وقلبه المطهّر التقي النقي صورة هذا التعين والبرزخية"
     },
     {
       "id": "CR003-060",
