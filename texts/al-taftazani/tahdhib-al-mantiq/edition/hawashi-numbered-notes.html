@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Numbered Ḥawāshī · Tahdhīb al-Manṭiq · GNAMMA</title>
+<meta name="description" content="Source-linked cumulative numbered-note translations; distinguish complete first-pass note coverage from abbreviated or uncollated text.">
+<style>
+:root{--paper:#fffefa;--bg:#f5f4ee;--ink:#253631;--muted:#65736d;--rule:#d9e0da;--accent:#3c6c59;color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--paper:#252e2a;--bg:#19211e;--ink:#e8f0eb;--muted:#adbbb2;--rule:#43544c;--accent:#a0ccb3;color-scheme:dark}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.66 system-ui,-apple-system,sans-serif}
+a{color:var(--accent);text-underline-offset:3px}a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent)}
+nav{position:sticky;top:0;z-index:4;height:58px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--rule);background:var(--paper);padding:0 max(12px,calc((100vw - 1010px)/2))}
+nav .brand{font:500 16px Georgia,serif;white-space:nowrap;text-decoration:none;color:var(--ink)}
+nav a:not(.brand){font-size:12px;white-space:nowrap}nav .spacer{flex:1}
+nav input{border:1px solid var(--rule);background:transparent;border-radius:6px;min-width:0;width:170px;max-width:28vw;padding:8px;color:var(--ink);font:13px system-ui}
+nav select{border:1px solid var(--rule);border-radius:6px;background:transparent;color:var(--ink);font:12px system-ui;padding:7px;max-width:26vw}
+main{max-width:1010px;min-height:90vh;margin:0 auto;padding:28px clamp(16px,4vw,46px) 80px;background:var(--paper);overflow-wrap:anywhere}
+h1{font:500 clamp(28px,4vw,43px)/1.23 Georgia,serif;margin:9px 0}.overline{font:700 11px system-ui;letter-spacing:.07em;color:var(--muted);text-transform:uppercase}
+.lead{max-width:800px;font:16px/1.72 Georgia,serif}
+.notice{border-left:3px solid var(--accent);padding:11px 16px;background:var(--bg);font:13px/1.7 system-ui;margin:20px 0}
+.stats{display:flex;gap:10px 15px;flex-wrap:wrap;margin:15px 0}.stats span{font-size:12px;color:var(--muted)}
+.note{border-top:1px solid var(--rule);padding:23px 0 26px;scroll-margin-top:90px}
+.heading{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}.heading h2{font:500 24px Georgia,serif;margin:0;flex:1}
+.page-ref{font-size:12px;font-weight:600;color:var(--muted)}
+.note-label{font:700 10px system-ui;text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.7fr);gap:22px;margin:12px 0}
+.ar{font:23px/1.9 "Amiri","Noto Naskh Arabic","Geeza Pro",serif;direction:rtl;text-align:right;margin:8px 0}
+.en{font:16px/1.82 Georgia,serif;white-space:pre-line;margin:8px 0}
+.meta{color:var(--muted);font-size:12px}.meta a{margin-right:12px}.source-notice{background:var(--bg);border-radius:5px;padding:9px 12px;font-size:12px;color:var(--muted)}
+small{color:var(--muted)}footer{border-top:1px solid var(--rule);font-size:12px;color:var(--muted);padding:20px 0}
+@media(max-width:700px){nav{flex-wrap:wrap;height:auto;min-height:58px;padding:7px 10px}.grid{grid-template-columns:1fr;gap:3px}.ar{font-size:20px}.en{font-size:15px}.note{padding:17px 0}.heading h2{font-size:21px}}
+</style></head><body>
+<nav aria-label="Reading controls"><a class="brand" href="./">‹ Tahdhīb</a>
+<a href="progress.html">Progress & handoff</a><span class="spacer"></span>
+<input id="search" type="search" placeholder="Search notes" aria-label="Search note translations">
+<select id="filter" aria-label="Translation status">
+<option value="all">All 18 notes</option><option value="complete_searchable_note">Translated first-pass</option><option value="partial_translation">Partial translation</option>
+</select></nav>
+<main>
+<div class="overline">GNAMMA · Cumulative edition · Stage 104</div>
+<h1>Ḥawāshī — numbered glosses</h1>
+<p class="lead">The complete note, not the page of the printed volume, is the unit of translation. The English translations below are distinct from the much shorter preliminary Q125–178 selections.</p>
+<div class="notice">Stage 104 covers numbered notes 1–18 in Qum printed pp.127–134. Twelve notes have first-pass translations covering the digitally visible note; six longer notes remain <strong>partial</strong>. Modern quotations inserted into the Qum print do not become part of an earlier glossator’s note. No page or note is independently photographically collated. Arabic shown is a short locator lemma, <strong>not a full Arabic transcription</strong>.</div>
+<div class="stats"><span id="count">Loading…</span><span>0 fully translated printed pages certified</span><span>12 working complete notes · 6 partial</span></div>
+<div id="notes"></div>
+<footer><a href="progress.html">Cumulative status, full handoff and stage logs</a> · <a href="hawashi-q125-178.html">52 earlier page selections</a>. Attribution remains provisional until individual signatures are checked against print photographs.</footer>
+</main>
+<script src="hawashi-numbered-notes-stage104.js?v=20261109-104"></script>
+<script>
+(function(){'use strict';
+const base=window.GNAMMA_TAHDHIB_HAWASHI_NOTES;
+if(!base){document.getElementById('notes').textContent='Note data unavailable; inspect the stage handoff.';return}
+const entries=base.entries||[],$=id=>document.getElementById(id);
+const mk=(tag,cls,txt)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(txt!==undefined)x.textContent=txt;return x};
+function render(){
+ const q=$('search').value.trim().toLocaleLowerCase(),filter=$('filter').value,holder=$('notes');holder.replaceChildren();
+ const shown=entries.filter(e=>(filter==='all'||e.status===filter) && (!q||[e.id,e.speaker,e.english,e.arabicLemma,e.editorial,String(e.noteNumber)].some(x=>String(x).toLocaleLowerCase().includes(q))));
+ for(const e of shown){
+  const section=mk('section','note');section.id=e.id;
+  const head=mk('div','heading'),h=mk('h2',null,'Note '+e.noteNumber),status=mk('span','note-label',e.status==='complete_searchable_note'?'First-pass translated':'Partial / unfinished');
+  const pag=mk('span','page-ref','Qum pp. '+e.pages.join('–'));head.append(h,status,pag);section.append(head);
+  section.append(mk('div','meta','Attributed page voice: '+e.speaker+'. Printed-page signature pending photographic verification.'));
+  const grid=mk('div','grid'),left=mk('div'),right=mk('div');
+  left.append(mk('div','note-label','Arabic locator lemma · not full source text'));
+  const ar=mk('p','ar',e.arabicLemma);ar.lang='ar';ar.dir='rtl';left.append(ar);
+  right.append(mk('div','note-label','Working English '+(e.status==='partial_translation'?'partial rendering':'translation')));
+  right.append(mk('p','en',e.english));grid.append(left,right);section.append(grid);
+  section.append(mk('p','source-notice',e.editorial));
+  const links=mk('div','meta');for(const [i,url] of e.sourceUrls.entries()){
+   const a=mk('a',null,'Original Qum p.'+e.pages[i]);a.href=url;a.rel='noopener noreferrer';a.target='_blank';links.append(a);
+  }
+  section.append(links);holder.append(section);
+ }
+ $('count').textContent=shown.length+' of '+entries.length+' numbered notes displayed';
+}
+$('search').addEventListener('input',render);$('filter').addEventListener('change',render);render();
+})();
+</script></body></html>
