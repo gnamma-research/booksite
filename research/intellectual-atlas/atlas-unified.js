@@ -29,9 +29,9 @@ textual_use:"Textual use",author_reference:"Author reference",critique:"Critical
 reported_source:"Source testimony",exchange:"Scholarly exchange",broad_influence:"Qualified connection",hypothesis:"Hypothesis",
 claimed_lineage:"Claimed lineage",abridgement:"Abridgement",translation:"Translation",other:"Relationship"};
 const state={subject:"all",view:"geography",school:"all",search:"",source:"all",family:"",edgeType:"all",certainty:"all",
-from:-600,to:2026,selected:"",evidence:"",cluster:"",clusterPage:1,bookPage:1,depth:1,browseMode:"linked",region:"",searchOpen:false,advancedOpen:false};
+from:-600,to:2026,selected:"",evidence:"",cluster:"",clusterPage:1,clusterSearch:"",bookPage:1,depth:1,browseMode:"linked",region:"",searchOpen:false,advancedOpen:false};
 const data={all:[],byId:new Map(),edges:[],in:new Map(),out:new Map(),families:[],sources:new Map(),history:[],
-errors:[],counts:{audited:0,openiti:0,alreq:0,pinned:0,relations:0},licences:[],loadReady:false};
+errors:[],counts:{audited:0,openiti:0,alreq:0,pinned:0,relations:0,alreqAuthorDated:0,unplaced:0},chronology:new Map(),authorWorks:new Map(),licences:[],loadReady:false};
 const renderCache={clusters:new Map(),workMap:new Map(),current:[],filtered:[],lanes:[],network:null};
 const safe=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const normal=x=>String(x??"").normalize("NFKD").replace(/[\u0300-\u036f\u064b-\u065f\u0670\u0640]/g,"").replace(/[أإآٱ]/g,"ا").replace(/ى/g,"ي").replace(/[ʿʾ’'`]/g,"").toLowerCase();
@@ -74,7 +74,9 @@ function loadCanonical(d){
   evidence:e.evidence||"",evidenceKind:e.evidence_kind||"Bibliographical research",sourceIds:e.sources||[],origin:"canonical"});
 }
 function addEdge(e){if(!data.byId.has(e.from)||!data.byId.has(e.to))return;data.edges.push(e)}
-function loadMetadata(oi,ms,registry,early){
+function loadMetadata(oi,ms,registry,early,chronology){
+ data.chronology=new Map((chronology?.entries||[]).filter(a=>a.author_url&&a.death_ah&&a.status!=="unverified").map(a=>[a.author_url,a]));
+
  const pinned=new Map((registry?.books||[]).filter(b=>b.openiti?.book_uri).map(b=>[b.openiti.book_uri,b]));
  const readerIndex=new Map(),bookURIs=new Set();
  const works=oi?.works||[];
@@ -112,16 +114,22 @@ function loadMetadata(oi,ms,registry,early){
  data.counts.pinned=registry?.books?.length||0;
  const msw=ms?.works||[];
  for(const w of msw){
+  const anchor=data.chronology.get(w.author_url);
+  const year=anchor?ahce(anchor.death_ah):null;
   addWork({id:"alreq:"+w.id,sourceId:w.id,title:w.title_ar||w.id,arabic:w.title_ar||"",roman:"",
-   author:w.author_ar||"",authorDates:"",subjects:w.genres||[],schools:w.madhhabs||[],
-   year:null,yearKind:"unplaced",dateLabel:"Unplaced in time",dateNote:"Catalogue metadata does not establish a date.",
+   author:w.author_ar||"",authorDates:anchor?"d. "+anchor.death_ah+" AH":"",subjects:w.genres||[],schools:w.madhhabs||[],
+   year,yearKind:anchor?"verified_author_death_proxy":"unplaced",
+   dateLabel:anchor?"Author d. "+anchor.death_ah+" AH · not composition date":"Date not established",
+   dateNote:anchor?"The linked Alreq author biography records death in "+anchor.death_ah+" AH. This marker dates the PERSON, not the composition, manuscript or edition. "+anchor.note:
+   "The public category listing omits the author death and composition date. The source work remains searchable, but is not placed on an unsupported century.",
    kind:"work",tradition:"",family:"",region:"",provenance:"Alreq manuscript catalogue",
-   layer:"bibliographic",pinned:false,sourceURL:w.catalogue_url||"",
+   layer:"bibliographic",pinned:false,sourceURL:w.catalogue_url||"",authorURL:w.author_url||"",dateEvidenceURL:anchor?.source_url||"",dateStatus:anchor?.status||"unknown",
    lines:w.lineages||[],schoolEvidence:(w.school_evidence||[]).map(z=>[z.basis,z.school].filter(Boolean).join(" · ")).join("; "),
    manuscripts:Number(w.reported_manuscripts)||0,version:(w.categories||[]).join("; "),
    note:"Catalogue entry, not an acquired or collated manuscript; identity with other catalogue records remains unresolved."});
  }
  data.counts.alreq=msw.length;
+ data.counts.alreqAuthorDated=msw.filter(w=>data.chronology.has(w.author_url)).length;
  for(const rel of registry?.relationships||[]){
   const from=readerIndex.get(rel.source),to=readerIndex.get(rel.target);
   if(!from||!to||!validURL(rel.source_url))continue;
@@ -148,17 +156,21 @@ function prepare(){
   if(!data.out.has(e.from))data.out.set(e.from,[]);
   data.in.get(e.to).push(e);data.out.get(e.from).push(e);
  }
- for(const n of data.all)n.degree=(data.in.get(n.id)?.length||0)+(data.out.get(n.id)?.length||0);
+ for(const n of data.all){
+  n.degree=(data.in.get(n.id)?.length||0)+(data.out.get(n.id)?.length||0);
+  if(n.authorURL){if(!data.authorWorks.has(n.authorURL))data.authorWorks.set(n.authorURL,[]);data.authorWorks.get(n.authorURL).push(n);}
+ }
+ data.counts.unplaced=data.all.filter(n=>n.year===null&&n.kind==="work").length;
  data.counts.relations=data.edges.length;
  data.loadReady=true;
 }
 async function load(){
- const tasks=["embedded canonical atlas","corpora/expanded-bibliography.json","corpora/manuscript-full.json","corpora/registry.json","corpora/early-jurists.json","corpora/geo-events.json"];
+ const tasks=["embedded canonical atlas","corpora/expanded-bibliography.json","corpora/manuscript-full.json","corpora/registry.json","corpora/early-jurists.json","corpora/geo-events.json","corpora/author-chronology.json"];
  const r=await Promise.allSettled(tasks.map((p,i)=>i===0?Promise.resolve().then(()=>JSON.parse(document.querySelector("script[data-atlas]").textContent)):
  fetch(p).then(resp=>{if(!resp.ok)throw Error(p+" "+resp.status);return resp.json()})));
  if(r[0].status!=="fulfilled"){ROOT.innerHTML='<section class="loading"><h1>Atlas sources unavailable</h1><p>The audited historical dataset could not be loaded. <a href="corpora/">Open the bibliography</a> or reload the atlas.</p></section>';return;}
  const o=r.map((x,i)=>{if(x.status==="fulfilled")return x.value;data.errors.push(tasks[i]+": "+String(x.reason?.message||x.reason));return null;});
- loadCanonical(o[0]);loadMetadata(o[1],o[2],o[3],o[4]);prepare();window.GNAMMAGeography?.setData(o[5]||{events:[],places:[]});
+ loadCanonical(o[0]);loadMetadata(o[1],o[2],o[3],o[4],o[6]);prepare();window.GNAMMAGeography?.setData(o[5]||{events:[],places:[]});
  window.GNAMMAGeography?.init(ROOT,{refresh:()=>{writeHash();render();},select:id=>chooseWork(id,true)});
  readHash();
  if(!data.byId.has(state.selected))selectFeatured(false);
@@ -168,7 +180,7 @@ function initialSubject(subject){
  if(!NAMES[subject])return;
  state.subject=subject;
  state.school="all";state.family="";state.cluster="";state.region="";
- state.bookPage=1;state.clusterPage=1;state.search="";
+ state.bookPage=1;state.clusterPage=1;state.clusterSearch="";state.search="";
  window.GNAMMAGeography?.resetScope?.();
  if(subject==="intellectual"){state.from=-600;state.to=2026}
  else {state.from=630;state.to=1920}
@@ -204,7 +216,7 @@ function readHash(){
  state.edgeType=["all","commentary","critique","textual_use","translation"].includes(p.get("edge_type"))?p.get("edge_type"):"all";
  state.certainty=p.get("certain")==="1"?"verified":"all";
  state.region=p.get("place")||"";
- state.cluster="";state.clusterPage=1;state.bookPage=1;state.quickLimit=8;state.evidence="";
+ state.cluster=p.get("shelf")||"";state.clusterSearch=(p.get("shelf_q")||"").slice(0,120);state.clusterPage=1;state.bookPage=1;state.quickLimit=8;state.evidence="";
  if(!state.selected)selectFeatured(false);
  window.GNAMMAGeography?.readHash();
 }
@@ -215,6 +227,8 @@ function writeHash(push=false){
  if(state.school!=="all")p.set("school",state.school);
  if(state.search)p.set("q",state.search);
  if(state.browseMode==="all")p.set("browse","all");
+ if(state.cluster&&state.view==="timeline")p.set("shelf",state.cluster);
+ if(state.clusterSearch&&state.view==="timeline")p.set("shelf_q",state.clusterSearch);
  if(state.family)p.set("family",state.family);
  if(state.source!=="all")p.set("source_tier",state.source);
  if(state.edgeType!=="all")p.set("edge_type",state.edgeType);
