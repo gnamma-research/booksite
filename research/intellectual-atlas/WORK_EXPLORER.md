@@ -1,3 +1,17 @@
+# Hanafi-style geographical atlas: authors and textual events (9 November 2026)
+
+The live atlas now opens with **By century**, **By region**, and **Source network** in a restrained editorial interface, inspired by Hanafi Atlas's navigational hierarchy. A single science selector and search serves all intellectual sciences; the original chronological book diagram, principal-texts synopsis and catalogue remain in the same interface as secondary views.
+
+The map is an **actual geographically projected SVG basemap** with simplified GSHHS-derived coastline geometry and modern WGS84 city reference points, not a cartesian dot plot. Distinct author and work symbols and a type selector allow readers to examine either the life/study/death places of scholars or independently attested text composition and recension events.
+
+The source register `corpora/geo-events.json` contains **41 curated, citation-linked location events** (30 author events and 11 text events) across 28 cities. Examples include *al-Futūḥāt* begun at Mecca and recensed in Damascus, *Fuṣūṣ al-ḥikam* at Damascus, al-Kashshāf finished at Mecca, al-Nawawī's *Minhāj* at Damascus, Ibn Sīnā's *Shifāʾ* completed at Isfahan, and Ṣadrā's *al-Asfār* begun at Kahak and completed at Shiraz. Some reports provide an approximate city or scholarly context only; each is explicitly labelled, and selecting a city opens its source dossier.
+
+**An author is not a text.** An author's birthplace or study city does not become a text's composition location; manuscript holdings require independently sourced witness records and are not inferred. Alreq's 4,157 undated catalogue records and OpenITI metadata remain available through search and the original book timeline, with an explicit **unplaced** count on the map. The map coverage is a researched first tranche, not complete geocoding of the full corpus.
+
+Implementation files: `atlas-geo.js`, `atlas-hanafi.css`, `atlas-unified.js`, `corpora/geo-events.json`; browser test: `tests/verify_unified_v3_browser.py`. Each event has citation and evidence status. URL state includes selected geographical century, region, type and city.
+
+---
+
 # GNAMMA Atlas — unified historical and textual maps
 **Release candidate:** 9 November 2026  
 **Main entry:** `research/intellectual-atlas/index.html`  
