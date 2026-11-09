@@ -472,6 +472,7 @@ function inWindow(n){return n.year!==null&&n.year>=state.from&&n.year<=state.to}
 function viewTimeline(){
  const nodes=filtered();renderCache.filtered=nodes;
  const lanes=lanesFor(nodes);renderCache.lanes=lanes;renderCache.clusters=new Map();
+ renderCache.clusters.set("undated:all",nodes.filter(n=>n.year===null&&n.kind==="work"));
  const W=1140,left=172,right=132,top=66,plotW=W-left-right;
  const stepYears=state.to-state.from;
  const scale=y=>left+(y-state.from)/stepYears*plotW;
@@ -526,10 +527,10 @@ function viewTimeline(){
   if(undated.length){
     const key="undated:"+lane.id;renderCache.clusters.set(key,undated);
     if(undated.some(n=>n.id===state.selected))focusedCluster=key;
-    body+='<g role="button" tabindex="0" data-unplaced="'+safe(key)+'" aria-label="'+undated.length+' undated records in '+safe(lane.label)+'">'+
+    body+='<g role="button" tabindex="0" data-unplaced="'+safe(key)+'" aria-label="Open '+undated.length+' undated source records in '+safe(lane.label)+'">'+
     '<rect x="'+(W-right+13)+'" y="'+(y+22)+'" width="'+(right-27)+'" height="32" rx="5" fill="var(--soft)" stroke="var(--muted)" stroke-dasharray="3 3" stroke-opacity=".6"/>'+
     '<text x="'+(W-right+18)+'" y="'+(y+35)+'" fill="var(--ink)" font-size="10" font-weight="650">'+fnum(undated.length)+' unplaced</text>'+
-    '<text x="'+(W-right+18)+'" y="'+(y+47)+'" fill="var(--muted)" font-size="8.7">Browse records</text></g>';
+    '<text x="'+(W-right+18)+'" y="'+(y+47)+'" fill="var(--muted)" font-size="8.7">Open sources ↗</text></g>';
   }
   y+=height;
  }
@@ -552,23 +553,69 @@ function viewTimeline(){
    .findIndex(n=>n.id===state.selected);
   if(index>=0)state.clusterPage=Math.floor(index/24)+1;
  }
- const active=displayCluster&&renderCache.clusters.has(displayCluster)?renderClusterList(renderCache.clusters.get(displayCluster)):"";
+ const active=state.cluster&&renderCache.clusters.has(state.cluster)?renderClusterList(renderCache.clusters.get(state.cluster)):"";
  const countIn=nodes.filter(inWindow).length;
+ const unresolved=nodes.filter(n=>n.year===null&&n.kind==="work").length;
+ const sourced=nodes.filter(n=>n.yearKind==="verified_author_death_proxy").length;
+ const totals='<div class="atlas-chronology-coverage" aria-label="Date evidence coverage">'+
+  '<span><strong>'+fnum(countIn)+'</strong> dated records within the time window</span>'+
+  '<span><strong>'+fnum(sourced)+'</strong> records positioned by cited author death</span>'+
+  '<span><strong>'+fnum(unresolved)+'</strong> genuinely unplaced works</span>'+
+  (unresolved?'<button type="button" data-open-unplaced-all>Explore all undated records</button>':"")+
+  '</div>';
  const note='<div class="plot-note"><span class="legend"><i class="swatch date"></i> Dated work or jurist</span>'+
  '<span class="legend"><i class="swatch"></i> Time cluster: select to zoom / inspect</span>'+
  '<span class="legend"><i class="swatch undated"></i> Undated source records</span>'+
  '<span>Dates are explicitly qualified: author death ≠ composition.</span></div>';
- return {html:svg+active+note,title:"Historical map · "+sceneTitle(),sub:fnum(countIn)+" dated records in view · "+fnum(nodes.length-countIn)+" other source records · "+lanes.length+" historical lanes",shown:totalShown};
+ return {html:totals+active+svg+note,title:"Historical map · "+sceneTitle(),sub:fnum(countIn)+" dated within range · "+fnum(unresolved)+" still undated · "+lanes.length+" historical lanes",shown:totalShown};
+}
+
+function shelfCard(n){
+ const active=n.id===state.selected;
+ return '<button class="atlas-shelf-work'+(active?' is-selected':'')+'" type="button" aria-current="'+active+
+ '" data-cluster-work="'+safe(n.id)+'"><strong>'+safe(truncate(n.title,80))+'</strong>'+
+ '<small>'+safe(truncate(n.author,65))+'</small>'+
+ '<span class="atlas-shelf-meta">'+safe(n.dateLabel||"No attested date")+
+ ' · '+safe(n.provenance)+'</span></button>';
+}
+function shelfInlineInspector(n){
+ if(!n)return "";
+ const source=validURL(n.sourceURL),author=validURL(n.authorURL),date=validURL(n.dateEvidenceURL);
+ const sibs=(data.authorWorks.get(n.authorURL)||[]).filter(a=>a.id!==n.id);
+ return '<div class="atlas-shelf-inspector" data-shelf-inspector aria-label="Selected source record">'+
+ '<div class="atlas-shelf-inspector-header"><strong>Selected source · '+safe(n.title)+'</strong>'+
+ '<span>'+safe(n.yearKind==="verified_author_death_proxy"?"Author-date anchor":"No source date")+'</span></div>'+
+ '<p>'+safe(n.author||"Author not specified")+' · '+safe(n.dateLabel)+'</p>'+
+ '<p>'+safe(n.dateNote||"The source has no reliable date.")+'</p>'+
+ '<div class="atlas-shelf-links">'+
+ (source?'<a href="'+safe(source)+'" target="_blank" rel="noopener noreferrer">Original catalogue record</a>':"")+
+ (author?'<a href="'+safe(author)+'" target="_blank" rel="noopener noreferrer">Author biography</a>':"")+
+ (date&&date!==author?'<a href="'+safe(date)+'" target="_blank" rel="noopener noreferrer">Death-date source</a>':"")+
+ '<button type="button" data-show-network="'+safe(n.id)+'">Open work profile</button></div>'+
+ (sibs.length?'<p>'+sibs.length+' other catalogue entries assigned to this author (not necessarily textual dependencies).</p>'+
+ '<div class="atlas-shelf-siblings">'+sibs.slice(0,8).map(w=>'<button type="button" data-cluster-work="'+safe(w.id)+'">'+safe(truncate(w.title,42))+'</button>').join("")+'</div>':"")+
+ '</div>';
 }
 function renderClusterList(arr){
- const rows=arr.slice().sort((a,b)=>(a.year??99999)-(b.year??99999)||a.title.localeCompare(b.title));
- const page=Math.max(1,Math.min(state.clusterPage,Math.ceil(rows.length/24)));
- const dataPart=rows.slice((page-1)*24,page*24);
- return '<section aria-label="Records in the selected map cluster"><h3 class="unplaced-title">'+
- safe(state.cluster.startsWith("undated:")?"Undated work records":"Texts in the selected era")+' · '+fnum(rows.length)+'</h3>'+
- '<p class="source-summary">Browse source-linked works without losing the chronological map. Selecting one opens its historical and textual context.</p>'+
- '<div class="browse-grid">'+dataPart.map(bookButton).join("")+'</div>'+
- pagination(page,Math.ceil(rows.length/24),"cluster")+'</section>';
+ const undated=state.cluster.startsWith("undated:");
+ const q=normal(state.clusterSearch);
+ const rows=arr.slice().filter(n=>!q||n.searchText.includes(q)).sort((a,b)=>
+   (a.year??99999)-(b.year??99999)||a.title.localeCompare(b.title,"ar"));
+ const perPage=20,page=Math.max(1,Math.min(state.clusterPage,Math.max(1,Math.ceil(rows.length/perPage))));
+ state.clusterPage=page;
+ const selected=rows.find(x=>x.id===state.selected);
+ return '<section data-time-workbench class="atlas-evidence-shelf" tabindex="-1" role="region" aria-label="Interactive source-record workbench">'+
+ '<div class="atlas-shelf-head"><div><span class="eyebrow">'+(undated?'UNDATED SOURCE RECORDS':'WORKS WITH DATED EVIDENCE')+'</span>'+
+ '<h3>'+(undated?'Browse works without an attested date':'Examine sources in this chronological group')+
+ ' <small>'+fnum(rows.length)+' / '+fnum(arr.length)+'</small></h3>'+
+ '<p>'+(undated?'These catalogue records cannot be assigned a year on current evidence. Open any book or author biography, or search this group without leaving the historical map.':
+ 'Author-death anchors and composition dates are different kinds of evidence. Open a record to inspect the date and its source.')+'</p></div>'+
+ '<button type="button" data-close-shelf>Close</button></div>'+
+ '<label class="atlas-shelf-search">Search this source group<input data-shelf-search type="search" autocomplete="off" placeholder="Title, author, Arabic name…" value="'+safe(state.clusterSearch)+'"/></label>'+
+ (selected?shelfInlineInspector(selected):"")+
+ '<div class="atlas-shelf-grid">'+rows.slice((page-1)*perPage,page*perPage).map(shelfCard).join("")+
+ (rows.length?'':'<p class="source-summary">No title or author matches this source-group search.</p>')+'</div>'+
+ pagination(page,Math.ceil(rows.length/perPage),"cluster")+'</section>';
 }
 function bookButton(n){
  return '<button class="browse-card" type="button" aria-current="'+(n.id===state.selected)+'" data-select="'+safe(n.id)+'">'+
