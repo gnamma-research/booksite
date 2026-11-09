@@ -70,7 +70,10 @@ assert 'function loadMetadata' in script and 'function loadCanonical' in script
 page = (ROOT/'index.html').read_text(encoding='utf-8')
 assert 'id="gn-atlas"' in page
 assert 'atlas-unified.js' in page and 'atlas-unified.css' in page
-assert 'atlas-app.js' not in page and 'data-atlas' not in page
+assert 'atlas-app.js' not in page
+embedded_match = re.search(r'<script type="application/json" data-atlas>(.*?)</script>', page, re.S)
+assert embedded_match, "Published page must expose the immutable audited research records"
+assert json.loads(embedded_match.group(1)) == data
 assert (ROOT/'legacy.html').exists()
 legacy = (ROOT/'legacy.html').read_text(encoding='utf-8')
 pat=r'<script type="application/json" data-atlas>(.*?)</script>'
