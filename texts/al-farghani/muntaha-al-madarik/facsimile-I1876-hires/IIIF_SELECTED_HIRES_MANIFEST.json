@@ -1,0 +1,190 @@
+{
+  "source": "Princeton/NYU ACO IIIF",
+  "manifest": "https://sites.dlib.nyu.edu/viewer/api/presentation/books/princeton_aco000264/manifest.json",
+  "manifest_sha256": "936c093c0681fdb4a3c813b002a2f9eb167ce5d84bc0696044cef564289e39ee",
+  "canvas_count": 368,
+  "date_utc": "2026-11-09T03:56:08Z",
+  "records": [
+    {
+      "scan_index": 12,
+      "printed_page": 8,
+      "tried": [],
+      "succeeded": true,
+      "canvas_id": "https://sites.dlib.nyu.edu/viewer/api/presentation/books/princeton_aco000264/canvas/12",
+      "canvas_label": {
+        "en": [
+          "12"
+        ]
+      },
+      "body_fields": [
+        "id",
+        "type",
+        "format",
+        "service",
+        "height",
+        "width"
+      ],
+      "candidate_count": 4,
+      "source_image_url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000264/12/full/2200,/0/default.jpg",
+      "original_image_sha256": "1cd1769afc3bfff5d3bda29d483d4d0d46a0d89dfa10fb56e2dae68eef450f9a",
+      "stored_image_sha256": "75a6b2d3009cfeb15654d93c237a516a18ea0ff5ecb382e7ab12efcea1b67701",
+      "pixel_size": [
+        2200,
+        3348
+      ],
+      "bytes": 1690636,
+      "path": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876-hires/images/scan_0012.jpg"
+    },
+    {
+      "scan_index": 13,
+      "printed_page": 9,
+      "tried": [],
+      "succeeded": true,
+      "canvas_id": "https://sites.dlib.nyu.edu/viewer/api/presentation/books/princeton_aco000264/canvas/13",
+      "canvas_label": {
+        "en": [
+          "13"
+        ]
+      },
+      "body_fields": [
+        "id",
+        "type",
+        "format",
+        "service",
+        "height",
+        "width"
+      ],
+      "candidate_count": 4,
+      "source_image_url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000264/13/full/2200,/0/default.jpg",
+      "original_image_sha256": "786ccdd3e4b82f8e09c4021e0c1ad0dd955329a57e27516269599dad47908b0f",
+      "stored_image_sha256": "064bcef1eb666221cef6d4ae379b48a9c3c8bf60301d3909e61255c959dd3b9a",
+      "pixel_size": [
+        2200,
+        3317
+      ],
+      "bytes": 1716578,
+      "path": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876-hires/images/scan_0013.jpg"
+    },
+    {
+      "scan_index": 14,
+      "printed_page": 10,
+      "tried": [],
+      "succeeded": true,
+      "canvas_id": "https://sites.dlib.nyu.edu/viewer/api/presentation/books/princeton_aco000264/canvas/14",
+      "canvas_label": {
+        "en": [
+          "14"
+        ]
+      },
+      "body_fields": [
+        "id",
+        "type",
+        "format",
+        "service",
+        "height",
+        "width"
+      ],
+      "candidate_count": 4,
+      "source_image_url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000264/14/full/2200,/0/default.jpg",
+      "original_image_sha256": "0c6247d257eddbb524de484841f89025c99f1969dcf6e59bbfaa6f3cddcf1c76",
+      "stored_image_sha256": "36d364cfdef73d457428663c7b9c7144299894607b906b09d916f3335607c395",
+      "pixel_size": [
+        2200,
+        3268
+      ],
+      "bytes": 1739700,
+      "path": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876-hires/images/scan_0014.jpg"
+    },
+    {
+      "scan_index": 17,
+      "printed_page": 13,
+      "tried": [],
+      "succeeded": true,
+      "canvas_id": "https://sites.dlib.nyu.edu/viewer/api/presentation/books/princeton_aco000264/canvas/17",
+      "canvas_label": {
+        "en": [
+          "17"
+        ]
+      },
+      "body_fields": [
+        "id",
+        "type",
+        "format",
+        "service",
+        "height",
+        "width"
+      ],
+      "candidate_count": 4,
+      "source_image_url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000264/17/full/2200,/0/default.jpg",
+      "original_image_sha256": "917c90b5476a7e01c2515ea9228d542e4f57513903e208dbdc25725a27baaab3",
+      "stored_image_sha256": "0fc658e676b90c2eeb08b75533a8691f8ef5c6c4b6179ca49db7c8820127f500",
+      "pixel_size": [
+        2200,
+        3273
+      ],
+      "bytes": 1674925,
+      "path": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876-hires/images/scan_0017.jpg"
+    },
+    {
+      "scan_index": 20,
+      "printed_page": 16,
+      "tried": [],
+      "succeeded": true,
+      "canvas_id": "https://sites.dlib.nyu.edu/viewer/api/presentation/books/princeton_aco000264/canvas/20",
+      "canvas_label": {
+        "en": [
+          "20"
+        ]
+      },
+      "body_fields": [
+        "id",
+        "type",
+        "format",
+        "service",
+        "height",
+        "width"
+      ],
+      "candidate_count": 4,
+      "source_image_url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000264/20/full/2200,/0/default.jpg",
+      "original_image_sha256": "5e3a8f25da291ea8a3f1d98573c0f396cb07e418c26442eccde4628a7c00f43d",
+      "stored_image_sha256": "72ede56aebac41e52beb0219000031154affdb3ec170e46d4463edf5cb7e87c0",
+      "pixel_size": [
+        2200,
+        3354
+      ],
+      "bytes": 1771175,
+      "path": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876-hires/images/scan_0020.jpg"
+    },
+    {
+      "scan_index": 22,
+      "printed_page": 18,
+      "tried": [],
+      "succeeded": true,
+      "canvas_id": "https://sites.dlib.nyu.edu/viewer/api/presentation/books/princeton_aco000264/canvas/22",
+      "canvas_label": {
+        "en": [
+          "22"
+        ]
+      },
+      "body_fields": [
+        "id",
+        "type",
+        "format",
+        "service",
+        "height",
+        "width"
+      ],
+      "candidate_count": 4,
+      "source_image_url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000264/22/full/2200,/0/default.jpg",
+      "original_image_sha256": "f8ce10dc2558b53da2273802dae0d762b395c6a10941c57d51e5b0a8732cd8d1",
+      "stored_image_sha256": "2779af3023ca4f569c943dd47bbd39077fa747995b3a50248af07391dfac0d5f",
+      "pixel_size": [
+        2200,
+        3359
+      ],
+      "bytes": 1763844,
+      "path": "texts/al-farghani/muntaha-al-madarik/facsimile-I1876-hires/images/scan_0022.jpg"
+    }
+  ],
+  "succeeded": 6
+}
