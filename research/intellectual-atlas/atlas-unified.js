@@ -605,8 +605,10 @@ function networkSvg(n,prior,later){
 }
 function viewNetwork(){
  const n=data.byId.get(state.selected)||filtered(false)[0];if(!n)return {html:'<div class="warning">No work is available in this selection.</div>',title:"Sources and reception",sub:"No recorded sources"};
- const prior=relevantEdges(n.id,"prior"),later=relevantEdges(n.id,"later"),limit=state.quickLimit;
- const first=prior.slice(0,limit),second=later.slice(0,limit);
+ const prior=relevantEdges(n.id,"prior"),later=relevantEdges(n.id,"later");
+ // Every recorded direct relation appears immediately in the graph and list;
+ // no eight-item cap, hidden batch or manual Show further action.
+ const first=prior,second=later;
  const labels=(edge,up)=>{const item=data.byId.get(up?edge.from:edge.to);return item?.title||"Unknown text"};
  const cards=(list,up)=>{
   if(!list.length)return '<div class="network-none">No documented '+(up?"antecedent":"later reception")+' in the current source register. This does not mean none existed.</div>';
@@ -615,7 +617,7 @@ function viewNetwork(){
    return '<div class="net-card" role="group"><button class="event-button" data-select="'+safe(other.id)+'"><strong>'+safe(other.title)+'</strong><small>'+safe(other.author+' · '+other.dateLabel)+'</small></button>'+
    '<span class="relation-label">'+safe(e.label||TYPENAMES[e.type]||"Recorded link")+'</span>'+
    '<button class="small-btn" type="button" data-evidence="'+safe(e.id)+'">Evidence</button></div>';
-  }).join("")+'</div>'+((up?prior:later).length>limit?'<button class="network-more" data-more>Show further connected works ('+((up?prior:later).length-limit)+')</button>':"");
+  }).join("")+'</div>';
  };
  const graph=networkSvg(n,first,second);
  const extended='<div class="network-cols"><section class="network-col"><h3>Rests on · sources</h3>'+cards(first,true)+'</section>'+
@@ -625,10 +627,11 @@ function viewNetwork(){
  '<div class="relation-path"><span>'+prior.length+' incoming</span><span>'+later.length+' outgoing</span><span>'+safe(n.kind)+'</span></div></div>'+
  '<p class="source-summary">Only evidenced relationships are shown. A missing arrow records an evidentiary gap, not historical isolation.</p></section>'+
  '<section class="network-col"><h3>Carried on by · reception</h3>'+cards(second,false)+'</section></div>';
- return {html:quickPicks()+'<div class="network-wrap">'+graph+'</div>'+extended+
+ return {html:'<p class="text-network-complete" role="status">All '+(prior.length+later.length)+' recorded direct relationships are drawn and listed below; no additional clicks are needed.</p>'+
+  quickPicks()+'<div class="network-wrap">'+graph+'</div>'+extended+
   (state.evidence?evidencePanel(data.edges.find(x=>x.id===state.evidence)):"")+
   '<p class="net-cites">Select any book to recenter the graph. Each “Evidence” control identifies the source, relationship type and its qualifications; mere membership in a school creates no arrow.</p>',
-  title:"Source network · "+truncate(n.title,50),sub:fnum(prior.length)+" antecedents · "+fnum(later.length)+" later relationships, drawn from documented records"};
+  title:"Source network · "+truncate(n.title,50),sub:fnum(prior.length)+" antecedents · "+fnum(later.length)+" later relationships · complete documented direct neighbourhood"};
 }
 function topWorks(list,count=14){
  return list.slice().sort((a,b)=>{
