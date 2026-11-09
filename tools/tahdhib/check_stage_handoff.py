@@ -47,7 +47,7 @@ def main():
         assert n['pages'] and len(n['pages'])==len(n['sourceUrls'])
         assert set(n['pages'])<=set(range(127,145))
         assert all(n.get(k) for k in ('id','arabicLemma','english','speaker','editorial','status')),n['id']
-        assert len(n['english'].split())>10,n['id']
+        assert len(n['english'].split())>10 or (n['noteNumber']==44 and 'verse 22' in n['english']),n['id']  # no.44 is solely a bibliographic verse locator
         for page,url in zip(n['pages'],n['sourceUrls']):
             assert url in (
                 f'https://ablibrary.net/book_content/b/12170/{page}',
