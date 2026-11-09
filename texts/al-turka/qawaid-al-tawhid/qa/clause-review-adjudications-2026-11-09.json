@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-human-clause-review-v1",
   "date": "2026-11-09",
-  "reviewScope": "Manual comparison of bounded Arabic punctuation clauses and corresponding English sentences in 11 sections of the source-based corpus; not independent manuscript collation, not a claim to certify other units.",
+  "reviewScope": "Manual Arabic–English comparative review in 16 selected source units; all remaining units are only inventoried.",
   "sourceBasis": "Current repository JS matn/commentary modules, retained edition N introduction and edition A main/conclusion",
   "method": "Source clause numbers are computed from Arabic punctuation. English ranges are manually matched, not proportional autoalignment. All segments in these eleven sections must be covered exactly once; unresolved readings remain explicit.",
   "units": [
@@ -363,9 +363,370 @@
           "note": "Demonstration as ordering certain principles to a judgment, and its analogue in this science, retained."
         }
       ]
+    },
+    {
+      "id": "SH-015",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 12,
+          "enStart": 1,
+          "enEnd": 8,
+          "status": "checked",
+          "note": "Two distinct argumentative responses identified: premise-denial and positive counterargument."
+        },
+        {
+          "arStart": 13,
+          "arEnd": 21,
+          "enStart": 9,
+          "enEnd": 14,
+          "status": "checked",
+          "note": "Necessity of unrestricted existence and ensuing multiplicity objection retained."
+        },
+        {
+          "arStart": 22,
+          "arEnd": 30,
+          "enStart": 15,
+          "enEnd": 19,
+          "status": "checked",
+          "note": "Counterclaim of external identity and reply based on independent existence distinguished."
+        },
+        {
+          "arStart": 31,
+          "arEnd": 37,
+          "enStart": 20,
+          "enEnd": 24,
+          "status": "checked",
+          "note": "The sanad as support for a denial is refuted only insofar as it is coextensive with the denial."
+        },
+        {
+          "arStart": 38,
+          "arEnd": 48,
+          "enStart": 25,
+          "enEnd": 32,
+          "status": "checked",
+          "note": "Priority, intensity, and perfection introduce the rival proof; inferential circularity is explained."
+        },
+        {
+          "arStart": 49,
+          "arEnd": 52,
+          "enStart": 33,
+          "enEnd": 34,
+          "status": "corrected",
+          "note": "عرضية means accidental inherence, not mere extrinsicity; change of accidents' individuals or species is distinguished."
+        },
+        {
+          "arStart": 53,
+          "arEnd": 57,
+          "enStart": 35,
+          "enEnd": 36,
+          "status": "checked-with-note",
+          "note": "The al-Ṭūsī passage is a quotation within Tamhīd; not separately manuscript-collated."
+        },
+        {
+          "arStart": 58,
+          "arEnd": 69,
+          "enStart": 37,
+          "enEnd": 42,
+          "status": "checked-with-note",
+          "note": "Concessive reasoning, individuation, and historical celestial/elemental corporeality retained."
+        }
+      ]
+    },
+    {
+      "id": "SH-020",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 6,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Opening sweeping objection remains attributed to the opponent."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 19,
+          "enStart": 3,
+          "enEnd": 7,
+          "status": "checked",
+          "note": "Intelligible instances and possibility/necessity dilemma correctly ordered."
+        },
+        {
+          "arStart": 20,
+          "arEnd": 26,
+          "enStart": 8,
+          "enEnd": 10,
+          "status": "checked",
+          "note": "Unity of a specific nature and its essential entailments retained."
+        },
+        {
+          "arStart": 27,
+          "arEnd": 33,
+          "enStart": 11,
+          "enEnd": 13,
+          "status": "unresolved-reading",
+          "note": "لو لم يقتض is inconsistent with the inferential role; displayed فلو اقتضى alternative remains source-disputed."
+        },
+        {
+          "arStart": 34,
+          "arEnd": 39,
+          "enStart": 13,
+          "enEnd": 15,
+          "status": "checked",
+          "note": "Second horn separates equivocity and necessary qualification of possible instances."
+        },
+        {
+          "arStart": 40,
+          "arEnd": 49,
+          "enStart": 16,
+          "enEnd": 20,
+          "status": "checked-with-note",
+          "note": "Reply restricts objection to determinate Necessary; به عين حقيقته remains a syntactic crux."
+        },
+        {
+          "arStart": 50,
+          "arEnd": 57,
+          "enStart": 21,
+          "enEnd": 24,
+          "status": "checked",
+          "note": "Unrestricted comprehensive existence contrasted with a determinate nature."
+        },
+        {
+          "arStart": 58,
+          "arEnd": 61,
+          "enStart": 25,
+          "enEnd": 26,
+          "status": "checked",
+          "note": "Challenge about possible entities and possibility in the Necessary preserved."
+        },
+        {
+          "arStart": 62,
+          "arEnd": 71,
+          "enStart": 27,
+          "enEnd": 30,
+          "status": "checked",
+          "note": "Crucial split: unconditional negation of possibility rejected; possibility of existence qua existence denied."
+        },
+        {
+          "arStart": 72,
+          "arEnd": 74,
+          "enStart": 31,
+          "enEnd": 33,
+          "status": "checked",
+          "note": "Polemical conclusion and Qurʾān 24:40 preserved."
+        }
+      ]
+    },
+    {
+      "id": "SH-021",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 1,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Polemical description of disputants remains the author's, not the translator's."
+        },
+        {
+          "arStart": 2,
+          "arEnd": 8,
+          "enStart": 3,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Absence of added qualification sets up the objection about intrinsic necessity."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 18,
+          "enStart": 6,
+          "enEnd": 10,
+          "status": "checked",
+          "note": "Reductio on necessity as an allegedly added restriction retained."
+        },
+        {
+          "arStart": 19,
+          "arEnd": 25,
+          "enStart": 11,
+          "enEnd": 12,
+          "status": "checked",
+          "note": "External qualifiers distinguished from necessary intrinsic judgments."
+        },
+        {
+          "arStart": 26,
+          "arEnd": 30,
+          "enStart": 13,
+          "enEnd": 14,
+          "status": "checked",
+          "note": "Intellectual considerations do not become extramental determiners."
+        },
+        {
+          "arStart": 31,
+          "arEnd": 35,
+          "enStart": 15,
+          "enEnd": 15,
+          "status": "checked",
+          "note": "Objection about all distinct concepts retained."
+        },
+        {
+          "arStart": 36,
+          "arEnd": 41,
+          "enStart": 16,
+          "enEnd": 18,
+          "status": "checked",
+          "note": "Response derives predication from intrinsic source rather than foreign determination."
+        },
+        {
+          "arStart": 42,
+          "arEnd": 42,
+          "enStart": 19,
+          "enEnd": 19,
+          "status": "checked",
+          "note": "Divine and cosmic names distinguished."
+        }
+      ]
+    },
+    {
+      "id": "SH-023",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 10,
+          "enStart": 1,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Bare self-evidence denial rejected as merely dialectical."
+        },
+        {
+          "arStart": 11,
+          "arEnd": 21,
+          "enStart": 4,
+          "enEnd": 10,
+          "status": "checked",
+          "note": "Four alternatives for particular existence are enumerated in order."
+        },
+        {
+          "arStart": 22,
+          "arEnd": 32,
+          "enStart": 11,
+          "enEnd": 16,
+          "status": "checked",
+          "note": "First (bare subject) versus second (accident alone) distinguished."
+        },
+        {
+          "arStart": 33,
+          "arEnd": 40,
+          "enStart": 17,
+          "enEnd": 20,
+          "status": "checked",
+          "note": "Third (composite of parts) rejected without smuggling in a modern ontology."
+        },
+        {
+          "arStart": 41,
+          "arEnd": 46,
+          "enStart": 21,
+          "enEnd": 23,
+          "status": "checked",
+          "note": "Objection limited to external impossibility answered."
+        },
+        {
+          "arStart": 47,
+          "arEnd": 54,
+          "enStart": 24,
+          "enEnd": 30,
+          "status": "checked",
+          "note": "Fourth (subject under accidental qualification) and intrinsic/relative unity preserved."
+        },
+        {
+          "arStart": 55,
+          "arEnd": 61,
+          "enStart": 31,
+          "enEnd": 33,
+          "status": "checked",
+          "note": "Possibility as manifestation of knowledge and necessity as manifestation of existence distinguished."
+        },
+        {
+          "arStart": 62,
+          "arEnd": 66,
+          "enStart": 34,
+          "enEnd": 35,
+          "status": "checked",
+          "note": "Closure objects to independently diverse existential instances."
+        }
+      ]
+    },
+    {
+      "id": "SH-024",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 11,
+          "enStart": 1,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Mental existence objection to equal modal status stated as opponent's."
+        },
+        {
+          "arStart": 12,
+          "arEnd": 17,
+          "enStart": 6,
+          "enEnd": 8,
+          "status": "checked",
+          "note": "Intelligible form's status as external accident contrasted with being-in-mind."
+        },
+        {
+          "arStart": 18,
+          "arEnd": 22,
+          "enStart": 8,
+          "enEnd": 10,
+          "status": "unresolved-reading",
+          "note": "ما تكوّنت فيها and عند ملاحظته لما are problematic readings; translation provisional."
+        },
+        {
+          "arStart": 23,
+          "arEnd": 32,
+          "enStart": 11,
+          "enEnd": 16,
+          "status": "checked",
+          "note": "Unity in intrinsic being and diversity of consideration maintained."
+        },
+        {
+          "arStart": 33,
+          "arEnd": 43,
+          "enStart": 17,
+          "enEnd": 23,
+          "status": "checked",
+          "note": "Names/fixed entities and sequence spirits–imaginal–sensible retained."
+        },
+        {
+          "arStart": 44,
+          "arEnd": 57,
+          "enStart": 24,
+          "enEnd": 31,
+          "status": "checked",
+          "note": "Priority in reality versus final manifestation kept distinct."
+        },
+        {
+          "arStart": 58,
+          "arEnd": 63,
+          "enStart": 32,
+          "enEnd": 35,
+          "status": "checked-with-note",
+          "note": "بالفرض versus بالعرض remains an alternative at the final lemma."
+        },
+        {
+          "arStart": 64,
+          "arEnd": 67,
+          "enStart": 36,
+          "enEnd": 38,
+          "status": "checked",
+          "note": "Excluded merely conceptual sense and self-subsisting Necessary retained."
+        }
+      ]
     }
   ],
-  "claimedManuallyComparedArabicClauses": 130,
+  "claimedManuallyComparedArabicClauses": 448,
   "issues": "Three passages corrected; one passage contains two connected technical-semantic corrections; additional textual cruxes flagged without conjectural emendation.",
   "noWitnessesCollated": true
 }
