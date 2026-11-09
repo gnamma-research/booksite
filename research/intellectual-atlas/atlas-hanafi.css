@@ -231,3 +231,26 @@ body .footer{font-size:11px}
 #gn-atlas svg [data-unplaced]:hover rect,#gn-atlas svg [data-unplaced]:focus-visible rect{stroke:var(--accent);stroke-width:2.4;fill:var(--accentbg)}
 @media(max-width:800px){#gn-atlas .atlas-shelf-grid{grid-template-columns:1fr}#gn-atlas .atlas-chronology-coverage{gap:7px 14px}#gn-atlas .atlas-evidence-shelf{padding:12px 10px}}
 @media(max-width:550px){#gn-atlas .atlas-chronology-coverage{padding:10px}#gn-atlas .atlas-chronology-coverage span{flex-basis:46%;display:grid;gap:0}#gn-atlas .atlas-chronology-coverage button{flex-basis:100%}#gn-atlas .atlas-shelf-head h3{font-size:20px}#gn-atlas .atlas-shelf-head{gap:8px}#gn-atlas .atlas-shelf-head>button{padding:5px 8px}}
+
+
+/* Interactive geographical research gaps — every unlocated count opens original sources. */
+#gn-atlas .geo-stats button[data-geo-unplaced]{display:grid;gap:2px;text-align:right;background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:5px;padding:6px 10px;min-height:48px;font:inherit}
+#gn-atlas .geo-stats button[data-geo-unplaced] strong{font-size:18px;font-weight:700;line-height:1.2;font-variant-numeric:tabular-nums}
+#gn-atlas .geo-stats button[data-geo-unplaced] small{font-size:10px;color:var(--accent)}
+#gn-atlas .geo-stats button[data-geo-unplaced]:hover{border-color:var(--accent);background:var(--accentbg)}
+#gn-atlas .geo-unplaced-panel{background:var(--panel);border:1px solid var(--accent);border-radius:7px;margin:10px 0 13px;padding:13px;scroll-margin-top:12px}
+#gn-atlas .geo-unplaced-panel header{display:flex;justify-content:space-between;gap:14px;align-items:start;margin-bottom:9px}
+#gn-atlas .geo-unplaced-panel h3{font:normal 22px/1.4 "Iowan Old Style",Georgia,serif;margin:4px 0}
+#gn-atlas .geo-unplaced-panel header p{font-size:11px;line-height:1.65;color:var(--muted);margin:4px 0;max-width:780px}
+#gn-atlas .geo-unplaced-panel header>button{font-size:11px;border:1px solid var(--line);border-radius:5px;background:var(--panel);padding:6px 9px;color:var(--ink)}
+#gn-atlas .geo-unplaced-panel label{display:grid;gap:5px;font-size:11px;font-weight:650;color:var(--muted);max-width:650px}
+#gn-atlas .geo-unplaced-panel input{min-height:38px;width:100%;border:1px solid var(--line);border-radius:5px;background:var(--panel);color:var(--ink);padding:8px 11px}
+#gn-atlas .geo-unplaced-results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:10px}
+#gn-atlas .geo-unplaced-card{border:1px solid var(--line);border-radius:5px;padding:9px 10px;background:var(--panel);overflow-wrap:anywhere}
+#gn-atlas .geo-unplaced-card strong{display:block;font-size:12px;color:var(--ink)}
+#gn-atlas .geo-unplaced-card p{font-size:10px;line-height:1.5;color:var(--muted);margin:4px 0}
+#gn-atlas .geo-unplaced-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}
+#gn-atlas .geo-unplaced-actions a,#gn-atlas .geo-unplaced-actions button{background:var(--soft);border:1px solid var(--line);border-radius:4px;color:var(--accent);font-size:10px;text-decoration:none;padding:5px 8px}
+#gn-atlas .geo-unplaced-actions a:hover,#gn-atlas .geo-unplaced-actions button:hover{border-color:var(--accent)}
+@media(max-width:800px){#gn-atlas .geo-unplaced-results{grid-template-columns:1fr}#gn-atlas .geo-stats button[data-geo-unplaced]{text-align:left}}
+@media(max-width:530px){#gn-atlas .geo-unplaced-panel{padding:11px}#gn-atlas .geo-unplaced-panel header{gap:8px}#gn-atlas .geo-unplaced-panel h3{font-size:20px}#gn-atlas .geo-unplaced-panel header>button{padding:6px 7px}}
