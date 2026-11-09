@@ -2999,7 +2999,7 @@ From this it is clear that instants cannot follow immediately upon one another. 
 
 Fourth, things differ in their correspondence to time. Traversal motion corresponds to time immediately, and the parts of this motion are characterized by priority, posteriority, and the like consequently upon the parts of time being so characterized.
 
-Every event existing in an instant, such as arrival, departure, contact, and separation, corresponds to an instant. Intermediate motion corresponds to time through traversal motion.
+Every event existing in an instant, such as arrival, departure, contact, and separation, corresponds to an instant. Intermediate motion corresponds to the instant through traversal motion.
 
 It is also clear that imagining an intermediate counterpart in time—the so-called flowing instant that traces temporal extension—is an imaginative, figurative conception. How could it be otherwise, when time is a quantity divisible in itself?
 
@@ -3019,7 +3019,7 @@ It is said in the Asfār: “Existents that are neither motion nor in motion are
 
 [translation note] Dahr and sarmad are retained as technical terms for atemporal modes of coexistence; translating both simply as “eternity” would obscure the distinction made here.
 
-[translation note] In the sentence on intermediate motion, the pronoun in “corresponds to it” is understood as referring back to time. The following discussion explicitly rejects treating the “flowing instant” as an independently real constituent of time.
+[translation note] In «والحركة التوسّطيّة منطبقةٌ عليه بواسطة القطعيّة», the pronoun «عليه» most naturally refers to the immediately preceding «الآن» (instant), not «الزمان» (time). This is a translation correction against the 1417 AH Arabic, not an independently attested textual variant. The subsequent argument rejects treating a “flowing instant” as an independently real constituent of time.
 
 N-IX-12 · The Meaning of Speed and Slowness
 Source: Arabic transcription · Qum 1417 AH, p. 271–273

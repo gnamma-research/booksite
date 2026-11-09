@@ -3,17 +3,17 @@
   "title": "Nihāyat al-Ḥikma — cumulative English text collation triage",
   "updated": "2026-11-09",
   "source": "nihayat-al-hikma/data/book.json",
-  "scope": "136/136 automatic structural screens; 70/136 separately documented local Arabic-English readings (68 inherited + two new stage-IV same-base printed digital checks). Five historical 1428 printed-digital checks, not complete independent witness collation; no expert certification.",
+  "scope": "136/136 automatic structural screens; 74/136 individually documented local Arabic–English full-unit readings (70 inherited + four new IX.2/IX.8/IX.11/IX.14); 0 complete independent second-witness collations; 0 specialist certifications. Previously documented 1428 checks remain limited spot checks.",
   "standard": "No AI-only structural scan is a full semantic English collation or professional critical edition. Local bilingual reading is not an independent Arabic witness. Neither a flagged nor an unflagged row establishes textual accuracy.",
   "summary": {
     "units": 136,
     "arabicCharacters": 422650,
-    "englishCharacters": 671630,
+    "englishCharacters": 671637,
     "unitsWithParagraphReflow": 111,
     "unitsWithThreeOrMoreParagraphDifference": 63,
     "unitsWithAnyHint": 70,
     "automaticallyScreened": 136,
-    "locallyReadAgainstStoredArabic": 70,
+    "locallyReadAgainstStoredArabic": 74,
     "independentlyReconciledAgainstCompleteSecondWitness": 0,
     "expertVerified": 0,
     "hintCounts": {
@@ -25,7 +25,9 @@
     "englishCorrectionsThisBatch": 1,
     "reviewedNewThirdBatch": 40,
     "englishCorrectionsThirdBatch": 2,
-    "reviewedNewFourthBatch": 2
+    "reviewedNewFourthBatch": 2,
+    "reviewedNewFifthBatch": 4,
+    "englishCorrectionsFifthBatch": 1
   },
   "rows": [
     {
@@ -1824,7 +1826,9 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct full local Arabic-English reading of pp.251–253: determinable recipient and determinate received form, varying nearness/remoteness, weak potential vs intense actual existence, gradation in single continuous existence, indefinite divisibility, definition of movement as first perfection of the potential qua potential, matter and accidental motion. No new English correction; later 1404/1428 independent witness comparison remains open.",
+        "sourceGrade": "direct local bilingual full-unit reading against 1417 printed-digital Arabic (same working-base source); not second independent witness",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1964,7 +1968,9 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct full local Arabic-English reading of pp.261–264: argument from accidental flow to changing proximate substantial cause, objection from extrinsic occasions, reply that accidental being exists for its substantial subject, independent argument of accident as degree of substance, one substantial flowing form through successive species, first/second movements, motion-within-motion and its instantaneous-parts objection, illustrative layered inherence and universal substrate. The old note already records difficult 'instantaneous parts' wording at pp.263–264; preserve rather than cosmetically fixing. No new English change; no independent complete second-witness collation.",
+        "sourceGrade": "direct local bilingual full-unit reading against 1417 printed-digital Arabic (same working-base source); not second independent witness",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2019,10 +2025,10 @@
       "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=268&type=c_fbook",
       "sourcePages": "268–271",
       "arabicChars": 4307,
-      "englishChars": 6329,
+      "englishChars": 6336,
       "arabicParagraphs": 29,
       "englishParagraphs": 19,
-      "englishToArabicCharRatio": 1.469,
+      "englishToArabicCharRatio": 1.471,
       "hints": [
         {
           "type": "paragraph-reflow",
@@ -2032,7 +2038,9 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct complete local Arabic-English reading of pp.268–271: prior/later noncoexistence, time as continuous nonstable magnitude of movement, individuated measured motions, instants as shared privative limits, traversal versus intermediate motion, refusal of flowing instant, seven consequences, dahr/sarmad, Asfār citation. EXACT ENGLISH CORRECTION from 'corresponds to time through traversal motion' to 'corresponds to the instant through traversal motion': Arabic «والحركة التوسّطيّة منطبقةٌ عليه بواسطة القطعيّة» follows the immediate antecedent «الآن». No Arabic wording changed and no 1404/1428 secondary witness claim.",
+        "sourceGrade": "direct local bilingual full-unit reading against 1417 printed-digital Arabic (same working-base source); not second independent witness",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2105,7 +2113,9 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct complete local Arabic-English reading of pp.273–276: all six factors dividing motion (two termini plus category, subject, time, agent), proximate nature and inclination, quwwa vs qudra, knowledge and will, full/incomplete agency, affirmation of divine power without an external compeller, impossibility of time before time, and debate on power antecedent to act. No English change adopted; printed editor's historical ascriptions remain unverified independently.",
+        "sourceGrade": "direct local bilingual full-unit reading against 1417 printed-digital Arabic (same working-base source); not second independent witness",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }

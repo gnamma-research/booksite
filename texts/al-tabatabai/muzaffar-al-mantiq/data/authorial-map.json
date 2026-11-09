@@ -9,7 +9,7 @@
     "institutionalScan": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000780/1",
     "institutionalScanYear": 1968
   },
-  "status": "57 Arabic–English working selected units: introduction 11, Book I 11, Book II 17, Book III 14, Book IV 4. Remaining parts of Books I–IV and all of Books V–VI are absent from the local bilingual reader; full Arabic witness externally linked. No definitive textual collation or expert review claimed.",
+  "status": "62 bilingual original Arabic-working English selected reading units: introduction 11, Book I 11, Book II 17, Book III 14, Book IV 9; many original passages of Books I–IV and ALL of Books V–VI remain outside the reader. The authorial map is bibliographic and does not imply translated coverage.",
   "parts": [
     {
       "book": 0,
@@ -461,8 +461,8 @@
           "locatorStatus": "bibliographic topic, exact printed page not checked"
         }
       ],
-      "availableUnits": 4,
-      "note": "Four consecutive bilingual authorial passage selections entered from the 1402 AH searchable Arabic at printed pp.125–130: definition of proposition, categorical/conditional, connected/disjunctive positive/negative, and three components. These are working translations, not a complete Book IV. The 1968 ACO print has not undergone line-by-line collation.",
+      "availableUnits": 9,
+      "note": "Nine selected original Arabic-English working reading passages cover the authorial opening pp.125–137 through quantified categorical and conditional propositions; the remainder of Book IV is absent. No full exercises copied; 1968 print and editorial notes not independently collated.",
       "url": "https://lib.rafed.net/m/?b_id=1604&page=127&type=c_fbook"
     },
     {
@@ -592,13 +592,13 @@
   "summary": {
     "totalAuthorialBooks": 6,
     "sourcePagesCoveredByRegister": 455,
-    "localTranslatedUnits": 57,
+    "localTranslatedUnits": 62,
     "localIntroUnits": 11,
     "localBook3Units": 14,
     "otherAuthorialBooksLocallyTranslated": 1,
     "localBook1Units": 11,
     "localBook2Units": 17,
-    "localBook4Units": 4
+    "localBook4Units": 9
   },
   "accuracy": "The new Book I source pages 38–53 have been inspected in the searchable 1402 AH Arabic; normalised punctuation and potential printed variants still need independent 1968 visual collation. Book II's known 1402/1421 symbolic proof inconsistency remains recorded without unsupported manuscript attestation."
 }
