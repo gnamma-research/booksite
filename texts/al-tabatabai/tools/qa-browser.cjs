@@ -67,7 +67,7 @@ async function run(browserType){
       assert.match(await page.locator('#passage-M-K-04').textContent(),/gradation|graded|mushakkik/i);
       assert.match(await page.locator('#passage-M-K-06').textContent(),/primary predication/i);
       assert.match(await page.locator('#passage-M-K-07').textContent(),/coextensiveness/i);
-      for(let i=8;i<=17;i++{
+      for(let i=8;i<=17;i++){
         const id='M-K-'+String(i).padStart(2,'0');
         const passage=page.locator('#passage-'+id);
         await passage.waitFor({state:'attached',timeout:35000});
