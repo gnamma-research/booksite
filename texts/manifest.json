@@ -62,29 +62,29 @@
         "Akbarian metaphysics",
         "Qūnawī commentary"
       ],
-      "status": "first-pass-consecutive-Arabic-English-p11-138-not-manuscript-collated",
+      "status": "first-pass-consecutive-Arabic-English-p11-149-not-manuscript-collated",
       "language": [
         "ar",
         "en"
       ],
       "url": "texts/al-mahaimi/mashra-al-khusus/",
-      "note": "Consecutive Arabic–English first-pass working text of printed pp11–138 (128 pages) of al-Mazīdī 2008 volume; stage04 adds 50 new pages pp89–138. 127 editor-defined sections and 426 bilingual pairs; 34 pages paragraph-aligned and 16 page-aligned in stage04. No independent manuscript or physical printed-edition collation.",
+      "note": "Working consecutive bilingual translation printed pp11–149 (139 pages of the 272-page 2008 al-Mazīdī volume). The latest stage adds 11 fully translated consecutive pages pp139–149 against a requested 70-page batch pp139–208; 59 pages of that target remain. Online transcriptions consulted, neither photographic printed-page verification nor manuscript collation performed.",
       "copytext": "al-Mazīdī 2008 online page-indexed transcription",
       "source_status": "online-2008-transcription-not-photographically-collated",
       "cumulative_coverage_printed_pages": [
         11,
-        138
+        149
       ],
-      "cumulative_printed_pages_count": 128,
+      "cumulative_printed_pages_count": 139,
       "new_batch_printed_pages": [
-        89,
-        138
+        139,
+        149
       ],
-      "new_batch_printed_pages_count": 50,
+      "new_batch_printed_pages_count": 11,
       "manuscript_collation_completed_pages": 0,
       "reader_url": "texts/al-mahaimi/mashra-al-khusus/",
       "cumulative_bilingual_markdown_url": "texts/al-mahaimi/mashra-al-khusus/data/parallel.md",
-      "new_batch_markdown_url": "texts/al-mahaimi/mashra-al-khusus/data/stage-89-138.md",
+      "new_batch_markdown_url": "texts/al-mahaimi/mashra-al-khusus/data/stage-139-149.md",
       "register_url": "texts/al-mahaimi/mashra-al-khusus/editorial/REGISTER.md",
       "glossary_url": "texts/al-mahaimi/mashra-al-khusus/editorial/GLOSSARY.md",
       "apparatus_url": "texts/al-mahaimi/mashra-al-khusus/editorial/APPARATUS.md",
@@ -97,7 +97,8 @@
       "register_entries": 104,
       "section_count": 127,
       "bilingual_pairs": 426,
-      "next_untranslated_printed_page": 139
+      "next_untranslated_printed_page": 139,
+      "stage05_register_url": "texts/al-mahaimi/mashra-al-khusus/editorial/REGISTER_STAGE05.md"
     },
     {
       "id": "farghani-muntaha-al-madarik",
