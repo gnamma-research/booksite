@@ -51,6 +51,47 @@
       "sharh_translation_complete_in_consulted_sources": true
     },
     {
+      "id": "mahaimi-mashra-khusus",
+      "title": "Mashraʿ al-khuṣūṣ ilā maʿānī al-nuṣūṣ",
+      "arabic": "مشرع الخصوص إلى معاني النصوص",
+      "author": "ʿAlāʾ al-Dīn ʿAlī al-Mahāʾimī",
+      "author_slug": "al-mahaimi",
+      "work_slug": "mashra-al-khusus",
+      "area": [
+        "ʿirfān naẓarī",
+        "Akbarian metaphysics",
+        "Qūnawī commentary"
+      ],
+      "status": "first-pass-consecutive-Arabic-English-p11-88-not-manuscript-collated",
+      "language": [
+        "ar",
+        "en"
+      ],
+      "url": "texts/al-mahaimi/mashra-al-khusus/",
+      "note": "Working consecutive bilingual edition of printed pp11–88 (78 pages of the 272-page 2008 al-Mazīdī volume). The latest stage adds 50 full printed pages pp39–88. The reader differentiates Qūnawī's quoted text, al-Mahāʾimī's commentary, and modern editorial notes. Neither print/manuscript comparison nor definitive critical certification has been performed.",
+      "copytext": "al-Mazīdī 2008 online page-indexed transcription",
+      "source_status": "online-2008-transcription-not-photographically-collated",
+      "cumulative_coverage_printed_pages": [
+        11,
+        88
+      ],
+      "cumulative_printed_pages_count": 78,
+      "new_batch_printed_pages": [
+        39,
+        88
+      ],
+      "new_batch_printed_pages_count": 50,
+      "manuscript_collation_completed_pages": 0,
+      "reader_url": "texts/al-mahaimi/mashra-al-khusus/",
+      "cumulative_bilingual_markdown_url": "texts/al-mahaimi/mashra-al-khusus/data/parallel.md",
+      "new_batch_markdown_url": "texts/al-mahaimi/mashra-al-khusus/data/stage-39-88.md",
+      "register_url": "texts/al-mahaimi/mashra-al-khusus/editorial/REGISTER.md",
+      "glossary_url": "texts/al-mahaimi/mashra-al-khusus/editorial/GLOSSARY.md",
+      "apparatus_url": "texts/al-mahaimi/mashra-al-khusus/editorial/APPARATUS.md",
+      "inventory_concordance_url": "texts/al-mahaimi/mashra-al-khusus/editorial/INVENTORY_AND_CONCORDANCE.md",
+      "handoff_url": "texts/al-mahaimi/mashra-al-khusus/editorial/HANDOFF.md"
+    },
+    {
       "id": "farghani-muntaha-al-madarik",
       "title": "Muntahā al-madārik · Metaphysical Introduction",
       "arabic": "منتهى المدارك في شرح تائية ابن الفارض",
