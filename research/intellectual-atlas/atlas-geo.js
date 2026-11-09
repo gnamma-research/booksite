@@ -231,7 +231,7 @@ function svgMap(groups,view){
    '<text x="13" y="'+(Y-4)+'" class="geo-coordinate">'+lat+'°N</text>');
  }
  let label="";
- const cities=groups.map(gr=>{
+ const cities=groups.slice().sort((a,b)=>a.events.length-b.events.length).map(gr=>{
   const p=gr.place,[px,py]=position(p);
   const n=gr.events.length,types=[...new Set(gr.events.map(e=>e.entity))];
   const onlyWork=types.length===1&&types[0]==="work";
