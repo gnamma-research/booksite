@@ -68,7 +68,7 @@
         "en"
       ],
       "url": "texts/al-mahaimi/mashra-al-khusus/",
-      "note": "Consecutive Arabic–English first-pass working text of printed pp11–138 (128 pages) of al-Mazīdī 2008 volume; stage04 adds 50 new pages pp89–138. 127 editor-defined sections and 426 bilingual pairs; 34 pages paragraph-aligned and 16 page-aligned in stage04. No independent manuscript or physical printed-edition collation.",
+      "note": "Working consecutive bilingual edition of printed pp11–138 (128 pages of the 272-page 2008 al-Mazīdī volume). Latest stage adds 50 consecutive pages 89–138. 169 new bilingual alignment units; 34 new pages paragraph-aligned, 16 page-aligned pending finer segmentation. No independent photographic or manuscript collation.",
       "copytext": "al-Mazīdī 2008 online page-indexed transcription",
       "source_status": "online-2008-transcription-not-photographically-collated",
       "cumulative_coverage_printed_pages": [
@@ -97,7 +97,9 @@
       "register_entries": 104,
       "section_count": 127,
       "bilingual_pairs": 426,
-      "next_untranslated_printed_page": 139
+      "next_untranslated_printed_page": 139,
+      "next_printed_page": 139,
+      "comparative_findings_url": "texts/al-mahaimi/mashra-al-khusus/editorial/COMPARATIVE_FINDINGS_STAGE04.md"
     },
     {
       "id": "farghani-muntaha-al-madarik",
