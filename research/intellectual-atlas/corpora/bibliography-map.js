@@ -220,5 +220,5 @@ root.addEventListener("click",ev=>{
  if(x.hasAttribute("data-gnbib-book"))root.querySelector(".gnbib-detail")?.scrollIntoView({block:"nearest"});
 });
 readHash();
-window.GNAtlasBibliography={render,readHash,debug:()=>({ready,loading:!!promise,error,count:records.length,activeGenre,selected:state.selected,band:state.band,period:state.period,tier:state.tier})};
+window.GNAtlasBibliography={render,readHash,getData:()=>({ready,records,reader:sourceReader,error}),ensureLoad:()=>{if(!ready&&!error)load();return promise||Promise.resolve();},debug:()=>({ready,loading:!!promise,error,count:records.length,activeGenre,selected:state.selected,band:state.band,period:state.period,tier:state.tier})};
 })();
