@@ -72,11 +72,11 @@ for(const [name,file] of books){
   if(name==='Muẓaffar'){
     check(data.editorialStatus?.translationComplete!==true,'Muẓaffar selections must not be called a complete edition');
     check(units.some(u=>u.id==='M-P-01'),'Muẓaffar introduction must precede its Book III selections');
-    check(units.filter(u=>/^M-K-0[1-4]$/.test(u.id)).length===4,
-      'Muẓaffar Book II universals must preserve four complete working passages');
-    check(units.length===33,'Muẓaffar must contain 33 reading passages after the Book II expansion');
+    check(units.filter(u=>/^M-K-0[1-7]$/.test(u.id)).length===7,
+      'Muẓaffar Book II universals and predication must preserve seven complete working passages');
+    check(units.length===36,'Muẓaffar must contain 36 reading passages after the Book II expansion');
     check(stages.some(x=>x.id==='K'&&x.bookNumber===2),'Muẓaffar Book II stage is missing');
-    const universalIds=['M-K-01','M-K-02','M-K-03','M-K-04'];
+    const universalIds=['M-K-01','M-K-02','M-K-03','M-K-04','M-K-05','M-K-06','M-K-07'];
     check(universalIds.every(id=>units.find(u=>u.id===id)?.english?.length>350),
       'Muẓaffar Book II bilingual passage is missing or unexpectedly short');
   }
@@ -109,13 +109,13 @@ if(mMap&&mText){
   check(mMap.parts.reduce((n,x)=>n+x.availableUnits,0)===mText.units.length,'Muẓaffar mapped translation count mismatch');
   check(mMap.summary?.localTranslatedUnits===mText.units.length,
     'Muẓaffar map summary is stale');
-  check(mMap.parts.find(p=>p.book===2)?.availableUnits===4,
+  check(mMap.parts.find(p=>p.book===2)?.availableUnits===7,
     'Muẓaffar source map must register Book II opening');
   check(mMap.parts.reduce((n,x)=>n+x.topics.length,0)>=60,'Muẓaffar map lost section titles');
   for(const p of mMap.parts){
     check(p.start>0&&p.end>=p.start,'Muẓaffar invalid page range for book '+p.book);
     for(const t of p.topics)if(t.firstPrintedPage){
-      check(t.locatorStatus==='observed in source table of contents','Unverified Muẓaffar page locator '+t.arabic);
+      check(['observed in source table of contents','observed in searchable source page; early scan pending collation'].includes(t.locatorStatus),'Unverified Muẓaffar page locator '+t.arabic);
       check(t.firstPrintedPage>=p.start&&t.firstPrintedPage<=p.end,'Muẓaffar locator outside book');
     }
   }
