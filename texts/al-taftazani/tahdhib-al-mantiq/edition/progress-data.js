@@ -2,7 +2,7 @@
 window.GNAMMA_TAHDHIB_PROGRESS={
   "schema": "gnamma-tahdhib-cumulative-progress-v1",
   "updated": "2026-11-09",
-  "stage": "104",
+  "stage": "105",
   "baseline": {
     "logicMatnDivisions": 19,
     "kalamClauses": 1044,
@@ -57,11 +57,11 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     },
     {
       "id": "opening-notes",
-      "label": "Opening glosses · numbered-note first pass (Q127–134)",
-      "current": 12,
-      "total": 18,
+      "label": "Opening glosses · numbered-note first pass (Q127–135)",
+      "current": 22,
+      "total": 23,
       "unit": "numbered notes",
-      "note": "Only notes 1–18, Q127–134. This local denominator must not be applied to all later ḥawāshī; 6 notes are partial."
+      "note": "Notes 1–23: 22 complete first-pass notes, 1 partial. This bounded cohort is NOT the entire H corpus."
     },
     {
       "id": "historical-classes",
@@ -81,30 +81,35 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     }
   ],
   "noteLedger": {
-    "range": "HWN-001–HWN-018",
+    "range": "HWN-001–HWN-023",
     "fullyTranslatedFirstPass": [
+      2,
       3,
       4,
       5,
       6,
       7,
-      10,
-      11,
-      13,
-      14,
-      16,
-      17,
-      18
-    ],
-    "partiallyTranslated": [
-      1,
-      2,
       8,
       9,
+      10,
+      11,
       12,
-      15
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
     ],
-    "currentChapter": "Later glosses: prologue (Qum pp.127–134)",
+    "partiallyTranslated": [
+      1
+    ],
+    "currentChapter": "Later glosses: prologue and guidance (Qum pp.127–135)",
     "sourcePhotographed": false,
     "sourceArabicTranscribedCompletely": false
   },
@@ -159,6 +164,24 @@ window.GNAMMA_TAHDHIB_PROGRESS={
         "progress-data.js",
         "HANDOFF_LATEST.md",
         "stages/STAGE104_TRANSLATION_AND_PROGRESS.md"
+      ]
+    },
+    {
+      "id": "105",
+      "date": "2026-11-09",
+      "title": "Complete five long opening gloss notes and add notes 19–23",
+      "sourcePages": "127–135",
+      "fullNoteCount": 22,
+      "partialNoteCount": 1,
+      "certifiedPages": 0,
+      "report": "stages/STAGE105_COMPLETION_AND_GUIDANCE.md",
+      "files": [
+        "hawashi-numbered-notes-stage105.js",
+        "hawashi-numbered-notes.html",
+        "progress.html",
+        "progress-data.js",
+        "HANDOFF_LATEST.md",
+        "stages/STAGE105_COMPLETION_AND_GUIDANCE.md"
       ]
     }
   ]
