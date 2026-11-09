@@ -352,7 +352,8 @@ function geographyUndatedPanel(works,subject,events){
  const query=norm(S.unplacedQuery);
  const all=works.filter(n=>n.kind==="work"&&(subject==="all"||n.subjects.includes(subject))&&!linked.has(n.id));
  const list=all.filter(n=>!query||norm([n.title,n.arabic,n.author,n.id].join(" ")).includes(query));
- list.sort((a,b)=>(a.year??99999)-(b.year??99999)||String(a.title).localeCompare(String(b.title),"ar"));
+ list.sort((a,b)=>Number(Boolean(b.sourceURL||b.authorURL))-Number(Boolean(a.sourceURL||a.authorURL))||
+  (a.year??99999)-(b.year??99999)||String(a.title).localeCompare(String(b.title),"ar"));
  const page=Math.max(1,Math.min(S.unplacedPage,Math.max(1,Math.ceil(list.length/20))));
  S.unplacedPage=page;
  const cards=list.slice((page-1)*20,page*20).map(n=>{
