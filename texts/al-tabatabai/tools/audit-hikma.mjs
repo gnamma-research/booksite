@@ -72,6 +72,13 @@ for(const [name,file] of books){
   if(name==='Muẓaffar'){
     check(data.editorialStatus?.translationComplete!==true,'Muẓaffar selections must not be called a complete edition');
     check(units.some(u=>u.id==='M-P-01'),'Muẓaffar introduction must precede its Book III selections');
+    check(units.filter(u=>/^M-K-0[1-4]$/.test(u.id)).length===4,
+      'Muẓaffar Book II universals must preserve four complete working passages');
+    check(units.length===33,'Muẓaffar must contain 33 reading passages after the Book II expansion');
+    check(stages.some(x=>x.id==='K'&&x.bookNumber===2),'Muẓaffar Book II stage is missing');
+    const universalIds=['M-K-01','M-K-02','M-K-03','M-K-04'];
+    check(universalIds.every(id=>units.find(u=>u.id===id)?.english?.length>350),
+      'Muẓaffar Book II bilingual passage is missing or unexpectedly short');
   }
   warn(arabic>0,name+': Arabic source missing');
   warn(translated===units.length,name+': English is incomplete ('+translated+'/'+units.length+')');
@@ -100,6 +107,10 @@ const mText=readJson(join(root,'muzaffar-al-mantiq/data/book.json'),'Muẓaffar 
 if(mMap&&mText){
   check(mMap.parts.length===7,'Muẓaffar must map introduction plus six books');
   check(mMap.parts.reduce((n,x)=>n+x.availableUnits,0)===mText.units.length,'Muẓaffar mapped translation count mismatch');
+  check(mMap.summary?.localTranslatedUnits===mText.units.length,
+    'Muẓaffar map summary is stale');
+  check(mMap.parts.find(p=>p.book===2)?.availableUnits===4,
+    'Muẓaffar source map must register Book II opening');
   check(mMap.parts.reduce((n,x)=>n+x.topics.length,0)>=60,'Muẓaffar map lost section titles');
   for(const p of mMap.parts){
     check(p.start>0&&p.end>=p.start,'Muẓaffar invalid page range for book '+p.book);
@@ -143,6 +154,34 @@ if(review){
   check(review.entries.every(x=>x.translationAssessment?.includes('NOT yet independently checked')),
     'An unchecked review record is incorrectly marked as certified');
 }
+
+/* Translation-to-source triage is distinct from independent scholarly collation. */
+const nTriage=readJson(join(root,'audits/nihaya-english-collation-triage-2026-11-09.json'),
+  'Nihāya English collation triage');
+if(nText&&nTriage){
+  const rows=Array.isArray(nTriage.rows)?nTriage.rows:[];
+  check(rows.length===nText.units.length,'Nihāya English triage must cover all 136 units');
+  check(new Set(rows.map(x=>x.id)).size===rows.length,'Nihāya duplicate triage identifier');
+  const original=new Map(nText.units.map(x=>[x.id,x]));
+  for(const r of rows){
+    const u=original.get(r.id);
+    check(!!u,'Nihāya triage unknown passage '+r.id);
+    if(!u)continue;
+    check(r.arabicChars===u.arabic.length&&r.englishChars===u.english.length,
+      'Nihāya English triage stale source/translation content at '+r.id);
+    check(r.englishReview?.independentWitnessCollation===false&&
+      r.englishReview?.externalExpertCertification===false,
+      'Nihāya English screen claims unverified independent certification at '+r.id);
+    const register=review?.entries?.find(x=>x.id===r.id);
+    check(register?.englishCollation?.structuralScreen==='checked-automatically',
+      'Cumulative review register not linked to triage '+r.id);
+  }
+  check(nTriage.summary?.automaticallyScreened===136,'Incomplete Nihāya full-corpus screening');
+  check(nTriage.summary?.locallyReadAgainstStoredArabic===6,'Nihāya local checked sample changed unexpectedly');
+  check(nTriage.summary?.independentlyReconciledAgainstCompleteSecondWitness===0,
+    'Nihāya screen incorrectly described as independent witness collation');
+}
+
 if(nText&&nExtra){
   const validIds=new Set(nText.units.map(x=>x.id));
   const criticalIds=new Set();
