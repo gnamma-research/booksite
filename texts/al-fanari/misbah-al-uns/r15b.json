@@ -1,0 +1,312 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R15b",
+  "date": "2026-11-09",
+  "startSection": "4.846",
+  "endSection": "4.875",
+  "sourceRepo": "OpenITI/0850AH",
+  "sourceCommit": "e2715c62fb458ce3ddc43b962cd55677cdd7bc35",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.846",
+      "number": 846,
+      "pageStart": 516,
+      "pageEnd": 516,
+      "arabic": "ثم نقول: واما العناصر: فكما كانت من وجه مظاهر الأسماء المختصة بالعماء، من الأمهات الأربع لصفات الألوهية، كذلك هي مظاهر الطبيعة من وجه اخر - لكن لا مطلقا - إذ الطبيعة من حيث هي آثار توجهات الأرواح العالية النورانية محل تعين عالم المثال كما مر، بل من حيث ظهور حكمها في الأجسام، فان ظهور حكم الطبيعة في الأجسام في العرش بنوع وفيما تحت اللوح المحفوظ الذي هو روح الكرسي بنوع آخر، وذلك لان الطبيعة كما مر في كلام الشيخ الجندي هي القوة الفعالة للصورة الطبيعية، والطبيعة الكلية هي الحقيقة المؤثرة الفعالة للصور كلها في المادة العمائية وهى منها وفيها، والطبيعة ظاهرة الإلهية، والإلهية التي هي أحدية جمع الحقائق الفعلية الوجوبية باطنها وهويتها، والله هو الفاعل للأفعال كلها، فأول صورة وجدت في المادة العمائية الكونية طبيعة واحدة جامعة للقوى الفعالة والمواد المنفعلة في أحدية جمعها الذاتية وهى حقيقة الجسم الكلى المسمى بالدرة في الحديث على وجه. هذا كلامه.",
+      "english": "We further say: As the elements, in one respect, manifest the Names specific to the Cloud—the four motherly attributes of Divinity—so in another respect they manifest Nature, though not without qualification. For Nature, considered as the effects of the orientations of the higher luminous spirits, is the locus of the World of Images, as explained. Rather, the present consideration is Nature's ruling as manifested in bodies. Its manifestation in the Throne is of one kind, while beneath the Preserved Tablet—which is the spirit of the Footstool—it is of another. As al-Jandī said, Nature is the active power of natural form; Universal Nature is the effective reality acting upon all forms in the Cloud-like material, arising from and existing within it. Nature is Divinity's outward aspect, while Divinity—the Oneness of Gathering of the necessary, active realities—is its inward reality and identity. God alone is the Agent of all acts. The first form in the Cloud-like cosmic material was a single Nature gathering active powers and receptive materials in the oneness of its essential gathering: it is the reality of the Universal Body, referred to as 'the Pearl' in one interpretation of a report. Thus far al-Jandī's words.",
+      "notes": "Close al-Jandī quotation at «هذا كلامه»; historical report of 'Pearl' not independently authenticated. «Nature outward, Divinity inward» is within the source's philosophical exposition, not evidence of physical identity with God.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.847",
+      "number": 847,
+      "pageStart": 516,
+      "pageEnd": 517,
+      "arabic": "فالطبيعة من حيث ظهور حكمها في الأجسام إذا اقتضت ظهور الحكم من حيث اجتماع الأرواح النورية، لا يولد الا عالم المثال كما مر، واما إذا اقتضت الظهور (1) من حيث اجتماع الأرواح المثالية، كانت صورها كالعرش والكرسي أو مع فلكين آخرين (2) لغاية قربها من مرتبة الأرواح ثابتة على الدوام وللطافة كليتها لا يقبل الخرق والالتيام، وان اقتضت ظهور حكمها من حيث اجتماع هذه البسائط كانت الصورة الحاصلة انزل وأكثف منها وادخل في الجزئية، وهى المرتبة العنصرية، إذ لا مرتبة بعدها الا هي، وكان ظهور حكم الطبيعة في العرش ونحوه باعتبار وفيما تحت الكرسي باعتبار آخر.",
+      "english": "Nature, considered as the appearance of its ruling in bodies, produces only the World of Images when the ruling requires manifestation through the conjunction of luminous spirits, as explained. When it requires manifestation through the conjunction of imaginal spirits, the resulting forms—such as the Throne and Footstool, or two additional spheres—remain permanently stable because of their extreme proximity to the degree of spirits; their universality is so subtle that they admit neither rupture nor reunion. But when the ruling becomes manifest through the conjunction of these simple bodies, its resultant form is lower, denser, and more deeply particularised: the elemental degree, for no degree lies beyond it except this one. Thus the ruling of Nature appears in one consideration in the Throne and comparable bodies, and in another below the Footstool.",
+      "notes": "The complex descriptions of spirit → imaginal → elemental degrees need comparison with R12/R13's two/four sphere reconciliation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.848",
+      "number": 848,
+      "pageStart": 517,
+      "pageEnd": 517,
+      "arabic": "فإلى النوعين الأولين الإشارة بما قال في بحث النكاحات وبمرتبة الطبيعة من حيث ارتباطها وظهور حكمها في الأجسام، وذلك في الهباء الأول المسمى بالهيولي الكل تنتهى إحدى مراتب النكاح من وجه، ومن العرش إلى مقعر الفلك المكوكب الذي هو إحدى وجهي الأعراف الذي ينتهى جهنم ينتهى حكم النكاح الثاني من وجه، وذلك لان مراده بالنكاح الأول اجتماع الحقائق المولد لصور الأرواح نورية أو مثالية، وبالنكاح الثاني اجتماع الأرواح المولد لصور الأجسام البسيطة وهى العرش والكرسي، وانما قال من وجه لان هذين النكاحين ثان وثالث، ان اعتبر اجتماع الأسماء الذاتية لتوليد مطلق الصور الوجودية كما مر.",
+      "english": "The first two forms are indicated by what he said in the discussion of the 'marriages' [nikāḥāt]: in the degree of Nature, insofar as it connects with bodies and its ruling appears in the first primordial dust, called universal hylē, one of the degrees of conjunction ends in one respect; from the Throne to the inner concavity of the star-bearing sphere, one of the two faces of the Heights [al-Aʿrāf] where Hell terminates, the ruling of a second conjunction ends in one respect. By the first conjunction he meant the gathering of realities that generates luminous or imaginal forms of spirits; by the second he meant the gathering of spirits that generates simple bodily forms—the Throne and Footstool. He added 'in one respect' because these two conjunctions become the second and third when one first counts the conjunction of essential Names that generates the unrestricted forms of existence.",
+      "notes": "Do not force numeration of marriages; its dependence on whether first essential-Name conjunction is counted is explicit.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.849",
+      "number": 849,
+      "pageStart": 517,
+      "pageEnd": 518,
+      "arabic": "وإلى النوعين الأخيرين الإشارة بما قال الشيخ قدس سره أيضا في الفك العيسوي: لما كان مقام جبرئيل بالسدرة المنتهى وهى مقام برزخي متوسط بين عالم الطبيعة العنصرية وبين عالم الطبيعة الكلية الثابتة المختصة بعالم المثال، والعرش والكرسي وما اشتملوا عليه كانت صورة جبرئيل التي جاء بها مشتملة على خواص ما فوق السدرة وما تحتها، فاحياء عيسى عليه السلام بغلبة السر الروحي المتعجن فيه، وخلقه صورته من النسبة الحاصلة من الصورة الجبرئيلية، ومن علم أن جبرئيل عليه السلام هو روح طبيعة عالم العناصر وما ظهر عنها من السماوات السبعة والمولدات، علم أن عيسى عليه السلام من وجه هو صورة روحانية جبرئيل ومظهر مقامه البرزخي، كما أن مريم صورة الطبيعة العنصرية الكبرى. هذا كلامه.",
+      "english": "The last two forms are indicated by the Shaykh's words in the commentary on the Jesus chapter: 'Gabriel's station is at the Lote Tree of the Furthest Boundary [Sidrat al-Muntahā], a mediating isthmic station between the world of elemental Nature and that of enduring Universal Nature proper to the World of Images, the Throne, the Footstool, and what they contain. The form Gabriel assumed in coming thus possessed properties of what lies both above and below the Lote Tree. Jesus, peace be upon him, brought life through the predominance of the spiritual secret blended within him, and his form was produced through the relation arising from the Gabrielic form. Whoever knows that Gabriel, peace be upon him, is the spirit of the Nature of the elemental world and of what becomes manifest from it—the seven heavens and generated beings—knows that Jesus, in one respect, is a spiritual image of Gabriel and a manifestation of his mediating station, while Mary is the image of greater elemental Nature.' Thus far his words.",
+      "notes": "Identify Qūnawī's `Fakk al-faṣṣ al-ʿĪsawī`; this is a metaphysical account of Jesus' formation, not a biological mechanism.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.850",
+      "number": 850,
+      "pageStart": 518,
+      "pageEnd": 518,
+      "arabic": "فقولنا: وتحت مرتبة اللوح المحفوظ باعتبار، أي ما تحت مرتبة العرش والكرسي أو الفلكين الآخرين معهما، فان ذكرهما كذكر هذين.",
+      "english": "Thus by our phrase 'beneath the degree of the Preserved Tablet in one consideration' we mean beneath the degree of the Throne and Footstool, or the two other spheres counted alongside them, for mentioning the latter pair has the same import as mentioning the former two.",
+      "notes": "A clarifying restriction on 'beneath' and celestial levels.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.851",
+      "number": 851,
+      "pageStart": 518,
+      "pageEnd": 518,
+      "arabic": "ثم نقول: وكما أن ما تحت العناصر يشتمل في عالم الشهادة والأجسام من حيث صورتها الحاصلة بالتركيب على أربع مراتب: مرتبة المعدن ثم النبات ثم الحيوان ثم الانسان، كذلك أمر الوجود من حيث المعنى فوق العناصر من حيث حقائقها الأربع المعلومة المذكورة فيما سبق يشتمل على أربع مراتب على عدد تلك الحقائق: مرتبة اللوح المحفوظ والقلم الاعلى والنفس الرحماني - أعني العماء - وغيب الذات المنعوت بحضرة أحدية الجمع والوجود وبمقام الجمع الاحدى الذي إليه يستند الألوهة ويعرف ذاتا للألوهة، وإلى اسمه يعزى وينسب النفس فيما يسمى رحمانيا، كان معنى الرحمن ذو الرحمة العامة وهى الوجود العام، ولا شك ان حقيقة الحقائق السابقة على كلها المشار إليها بمقام الجمع الاحدى مترددة، أي سارية بالحركة الغيبية العلمية الإرادية المنبه على سرايتها من قبل في مراتبها الأربع الأسمائية الذاتية.",
+      "english": "We further say: Just as the region beneath the elements in the world of witnessing and bodies, considered in respect of the forms produced by combination, comprises four degrees—mineral, plant, animal, and human—so too the command of Being, considered in meaning above the elements, comprises four degrees in respect of the four established realities already described: the Preserved Tablet, Supreme Pen, Breath of the Merciful (the Cloud), and the Unseen of the Essence. The last is qualified as the Presence of the Oneness of Gathering and Being and the station of unitary comprehensiveness, to which Divinity relates and which is known as the essence belonging to Divinity. To its Name is related the Breath insofar as it is called Merciful, for al-Raḥmān means the possessor of universal mercy, namely universal existence. The Reality of realities which precedes them all, indicated as the station of unitary gathering, passes through—or pervades—by unseen, knowing, voluntary motion its four essential, Name-related degrees, as previously explained.",
+      "notes": "Four higher metaphysical degrees vs four lower generated degrees; distinguish penetrating relation from bodily passage.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.852",
+      "number": 852,
+      "pageStart": 518,
+      "pageEnd": 518,
+      "arabic": "اما سرايتها: فلما ذكر ان الحقيقة الجامعة كالوجود المطلق وحضرة الامكان كل منهما سار إلى كل موجود ممكن.",
+      "english": "As for its pervasion, this is because it has been stated that the all-comprehensive Reality, like absolute Being and the Presence of Possibility, pervades every possible existent.",
+      "notes": "A short premise linking universal reality, Being, possibility, and every existent.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.853",
+      "number": 853,
+      "pageStart": 518,
+      "pageEnd": 519,
+      "arabic": "واما المراتب الأربع الأسمائية الذاتية، فالمراد بها (1) - والله أعلم - مراتب نكاحاتها بعد تفصيلها، فمعناه (2) حينئذ انها (3) مع جمعها للأسماء الذاتية الأربعة على أحديتها سارية أولا في التعين الثاني، ومحصلة في مادة النفس الرحماني المسمى بالعماء بالتفصيل والتركيب للأسماء الإلهية الأصلية الأربعة التي هي أمهات أسماء الألوهة وظلالات الأسماء الذاتية.",
+      "english": "As for the four essential, Name-related degrees, what is intended by them—God knows best—is the degrees of their 'marriages' once they have been differentiated. Their meaning, then, is that while they gather the four essential Names in their oneness, they first pervade the Second Determination, bringing about within the material of the Breath of the Merciful, called the Cloud, the detailed composition of the four original divine Names—the mothers of the Names of Divinity and shadows of the essential Names.",
+      "notes": "The Arabic has uncertain punctuation and several editorial footnotes (1)–(3). The passage introduces the fourfold progression that continues §§854–857.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.854",
+      "number": 854,
+      "pageStart": 519,
+      "pageEnd": 519,
+      "arabic": "الأول (1) عالم الأرواح الذي هو نتيجة النكاح الأول الكوني.",
+      "english": "The first is the world of spirits, the result of the first cosmic conjunction.",
+      "notes": "Brief first-item identification, attached to preceding paragraph.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.855",
+      "number": 855,
+      "pageStart": 519,
+      "pageEnd": 519,
+      "arabic": "وثانيا سارية في عالم الأرواح ومحصلة في المادة الهبائية بالتفصيل والتركيب للحقائق الأربعة الطبيعية الكلية عالم المثال والعرش والكرسي الذي هو نتيجة النكاح الثاني الكوني.",
+      "english": "Second, it pervades the world of spirits and brings about within the dust-like material the differentiation and composition of the four realities of Universal Nature: the World of Images, the Throne, and the Footstool, the result of the second cosmic conjunction.",
+      "notes": "Preserve the technical enumeration even though the World of Images and its celestial manifestations overlap.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.856",
+      "number": 856,
+      "pageStart": 519,
+      "pageEnd": 519,
+      "arabic": "وثالثا سارية في الأجسام البسيطة ومحصلة فيها بالتفصيل والتركيب للعناصر الأربعة عالم الأجسام المركبة، كالسماوات والمولدات التي هي نتيجة النكاح الثالث الكوني.",
+      "english": "Third, it pervades simple bodies, bringing about within them, through differentiation and composition of the four elements, the world of composite bodies, such as the heavens and generated things, the result of the third cosmic conjunction.",
+      "notes": "Third product of cosmic nikāḥ.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.857",
+      "number": 857,
+      "pageStart": 519,
+      "pageEnd": 519,
+      "arabic": "ورابعا سارية في الأجسام المركبة ومحصلة فيها بالتفصيل والتركيب للاخلاط الأربعة عالم الانسان، المقصود الذي هو نتيجة النكاح الرابع الكوني، فمعنى سرايتها جمعها في كل مرتبة من المراتب الأربع مظاهر أسمائها الأربعة.",
+      "english": "Fourth, it pervades composite bodies and brings about within them, through differentiation and combination of the four humours, the world of the human being, the intended goal and result of the fourth cosmic conjunction. Its pervasion means that in each of those four degrees it gathers the loci of manifestation of its four Names.",
+      "notes": "Four humours is a premodern physiological scheme, not contemporary medical explanation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.858",
+      "number": 858,
+      "pageStart": 519,
+      "pageEnd": 519,
+      "arabic": "أو نقول: معناه: ان مقام الجمع الاحدى المتضمن للأسماء الذاتية الأربعة على أحديتها فيه لما سرى في التعين الثاني، ظهرت الأمهات الأربع لأسماء الألوهة التي هي أصول عالم الأرواح، وسرى في عالم الأرواح فظهر الحقائق الأربعة للطبيعة الكلية وهى صور الأسماء الإلهية وأصول عالم المثال والبسائط، وسرى في عالم البسائط من العرش والكرسي فظهرت العناصر الأربعة التي هي أصول عالم الأجسام المركبة العنصرية من السماوات والمولدات، وسرى في الأجسام المركبة من السماوات والمولدات فظهرت الاخلاط الأربعة التي هي أصول الانسان.",
+      "english": "Or we may say: The station of unitary gathering, which contains the four essential Names in their oneness, passes into the Second Determination, where the four motherly divine Names become manifest as the origins of the world of spirits. It then pervades the world of spirits, where the four realities of Universal Nature emerge as the forms of the divine Names and the origins of the World of Images and simple bodies. It pervades the world of simple bodies, namely the Throne and Footstool, and the four elements emerge as origins of the composite elemental world of heavens and generated beings. It pervades those composite bodies, and the four humours emerge as origins of the human being.",
+      "notes": "Source explicitly introduces alternate explanation with «أو نقول» rather than a separate, contradictory system.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.859",
+      "number": 859,
+      "pageStart": 519,
+      "pageEnd": 520,
+      "arabic": "والحاصل من سراية الجمع الجامع بين الأربعة في أربعة مظاهر وعوالم ست عشر مرتبة بضرب الأربعة في الأربعة.",
+      "english": "The result of this comprehensive pervasion of a gathering of four in four loci and worlds is sixteen degrees, obtained by multiplying four by four.",
+      "notes": "Explicit arithmetic 4×4=16.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.860",
+      "number": 860,
+      "pageStart": 520,
+      "pageEnd": 520,
+      "arabic": "ثم إن الفردية لما كانت شرطا في صحة الانتاج وتمامية صورته، غاب الحقائق الأسمائية الأصلية المفصلة في التعين الثاني في صور مراتب أنفسها، لتحصل الفردية في تمام الصور، فكأنها لم تحصل في التعين الثاني ولم يسر في الوجود، فبقى من الستة عشر اثنا عشر، كأنها هي الساري الحكم في الوجود، فتقدرت في العرش المحيط صورتها، وكان اثنى عشر برجا اقساما معقولة يحملها اليوم أربعة املاك ينظر إليهم الحقائق الأربعة الأسمائية الإلهية المذكورة وينفذ بتلك الحملة اثار تلك الحقائق فيمن هو محل لها.",
+      "english": "Because oddness [fardiyya] is a condition of valid generation and of the perfection of a produced form, the original Names differentiated in the Second Determination remain concealed within the images of their own degrees, in order for oddness to be realised in the completed forms. It is as if they had not arisen in the Second Determination or pervaded Being. Thus twelve of the sixteen remain as the degrees whose rulings apparently pass through existence, and their forms are measured out within the encompassing Throne. These are twelve zodiacal signs as intelligible divisions, borne today by four angels whom the four previously mentioned divine Names regard, through whose bearing the effects of those realities reach their proper recipients.",
+      "notes": "The 'oddness' condition is technical and may not be captured by parity alone; this passage's 16−4=12 zodiacal structure needs comparison with primary cosmological source.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.861",
+      "number": 861,
+      "pageStart": 520,
+      "pageEnd": 520,
+      "arabic": "فظهر سر الستة عشر الساري الحكم في الوجود الخافية عن أكثر المدارك المحجوبة عن ادراك الحقائق - لا سيما الإلهية - فيظنون ان ليس كل ما يحويه العرش بحيث فيه كل شئ، فإذا جاء الموطن المجسد للمعاني المجردة في القوالب التناسبية وهو عالم المثال الذي فيه الحشر وسائر مواعيد النبوة، وقامت الحقائق الأسمائية الإلهية الحاملة للحملة صورا كارواحها ومظاهرها، ظهر حينئذ سر العرش الشامل وحكمه العالم الكامل، وحملته الثمانية التي بهم تنفذ اثارها المنبه لك السر على مرتبة خالقها الذي له الحكم في الموجودات والعوالم كلها، لأنه إذا ظهر ان العرش بتلك الحيثية من نسبته العامة إلى كل ما يحويه بالحكم، فخالقه بالطريق الأولى تبارك الله رب العالمين.",
+      "english": "The mystery of the sixteen degrees whose ruling pervades existence thereby becomes manifest, though hidden from most perceptions veiled from the realities, especially divine realities. Those so veiled imagine that not everything within the Throne is such that everything is present in it. But when the dwelling of the embodiment of immaterial meanings in corresponding forms arrives—the World of Images, where the Resurrection and other prophetic promises are fulfilled—and the divine Name-realities that support the carriers assume forms as spirits and loci, the mystery and ruling of the all-encompassing Throne, the perfected world, will appear. Its eight bearers enact their effects, alerting you to the rank of its Creator, whose governance extends to every existent and world. For if the Throne thus possesses a universal relation of governance over all it contains, its Creator is all the more deserving of it. Blessed is God, Lord of the worlds.",
+      "notes": "The present four bearers and resurrection eight must remain distinct; Qurʾān 69:17 is likely alluded to but not verbatim quoted.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.862",
+      "number": 862,
+      "pageStart": 520,
+      "pageEnd": 520,
+      "arabic": "واما حملته الأربعة اليوم: فقد مر ان الشيخ الكبير رضي الله عنه قال: إن الواحد على صورة إسرافيل والثاني على صورة ميكائيل والثالث على صورة جبرائيل والرابع على صورة رضوان، وانها صور مقاماتهم لانشاءاتهم. وفي شرح الفرغاني ان الرابع عزرائيل.",
+      "english": "As for its four present bearers, the Great Shaykh, may God be pleased with him, has already said that the first is in the form of Isrāfīl, the second Mīkāʾīl, the third Jibrīl, and the fourth Riḍwān: they are images of their respective stations in the forms through which they appear. In al-Farghānī's commentary the fourth is instead ʿAzrāʾīl.",
+      "notes": "Preserve **two competing enumerations** (Riḍwān vs ʿAzrāʾīl), never harmonise without evidence.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.863",
+      "number": 863,
+      "pageStart": 520,
+      "pageEnd": 521,
+      "arabic": "واما الأربعة المضافة إليها يوم القيامة: فإلى إسرافيل آدم عليه السلام للصور، وإلى ميكائيل إبراهيم عليه السلام للارزاق، وإلى جبرائيل محمد صلى الله عليه وآله للأرواح، وإلى رضوان مالك للوعد والوعيد، كذا نقله الشيخ الكبير رضي الله عنه عن ابن مسرة الجبلي وقد مر غير مرة.",
+      "english": "The four added to them on the Day of Resurrection are, corresponding to Isrāfīl, Adam, peace be upon him, for forms; corresponding to Mīkāʾīl, Abraham, peace be upon him, for provisions; corresponding to Jibrīl, Muḥammad, may God bless him and his family, for spirits; and corresponding to Riḍwān, Mālik, for promise and threat. So the Great Shaykh, may God be pleased with him, transmitted from Ibn Masarra al-Jabalī, as has been mentioned more than once.",
+      "notes": "Source naming Ibn Masarra al-Jabalī requires verification; earlier sections reportedly have dubious Ibn Masarra al-Jīlī. Compare manuscript and quotation source. Exact ordering of eschatological associations is source doctrine.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.864",
+      "number": 864,
+      "pageStart": 521,
+      "pageEnd": 521,
+      "arabic": "فتعرف بهذه الأصول عند التدبر نسبة كل صورة كلية إلى روحها والاسم الرباني الذي هو له مظهر وهو سرها، وان نسبة حقيقة الحقائق إلى الانسان الكامل نسبة حقيقة كل موجود - وهى كيفية تعينه في علم الله تعالى - إلى صورته، وانما وقع الاختصار على ذكر الشمس والقمر دون سائر الكواكب، لكلية سرهما وجلالة احكام مظهريتهما. الفصل الثالث من فصول الباب هو تتمة شريفة لبيان بقية أنواع المظاهر ولها مقدمات ومقصود:",
+      "english": "Reflection on these principles allows one to recognise the relation of each universal form to its spirit and the divine Name which it manifests and which constitutes its secret. It also shows that the relation of the Reality of realities to the Perfect Human is like the relation of each existent's reality—namely the way it is determined in God's Knowledge—to its form. We have confined the discussion to the Sun and Moon rather than all planets because of their universal mystery and the dignity of their manifestational rulings. **Third Chapter of this Section:** a noble continuation explaining the remaining kinds of loci of manifestation; it contains introductory premises and an intended conclusion.",
+      "notes": "A fresh chapter begins at end of §4.864; preserve structural heading separately from summary of preceding chapter.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.865",
+      "number": 865,
+      "pageStart": 521,
+      "pageEnd": 521,
+      "arabic": "فالمقدمات: منها: ما سلف ان استناد العالم إلى الحق سبحانه من حيث المرتبة المسماة ألوهة، وان لها حقائق كلية هي جامعتها مسماة في اصطلاح أهل الظاهر حياة وعلما وإرادة وقدرة، وعندنا هي مكنى بها عن الأسماء الذاتية الإلهية، فالألوهة مرتبة للذات المقدسة نسبتها إليها نسبة السلطنة إلى السلطان وغيرها، فالتميز بين المرتبة وصاحبها ظاهر لكن معقول، إذ المرتبة ليس لها في الخارج صورة زائدة على صورة صاحبها، ولكن يشهد اثرها ممن ظهر بها ما دام لها الحكم بسببه وله بالمرتبة، ومتى انتهى حكمها بقى صاحبها كمن ليست له هي.",
+      "english": "Among its premises is what has already been established: the world relates to the Exalted Real through the rank called Divinity [ulūhiyya], and Divinity has universal realities gathered within it, called Life, Knowledge, Will, and Power in the terminology of outward scholars. In our terminology these signify the essential divine Names. Divinity is a rank belonging to the Holy Essence, related to it as kingship is to the king, and similarly with other offices. The distinction between a rank and its possessor is clear but intelligible, for the rank has no extra image in external existence besides the image of its possessor. Nevertheless its effect is witnessed in the one through whom it becomes manifest for as long as the rank's ruling obtains, and ceases with that ruling while its possessor remains, as though he did not hold it.",
+      "notes": "An instructive ontological analogy of king and kingship—do not treat divine Essence as losing divinity; rank/image analogy is under a specific consideration.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.866",
+      "number": 866,
+      "pageStart": 521,
+      "pageEnd": 521,
+      "arabic": "ومنها: ان الحق سبحانه من جهة انه مسمى بالرحمن هو الوجود الواحد البحت.",
+      "english": "Another premise is that the Exalted Real, insofar as He is named al-Raḥmān, is pure, one Being.",
+      "notes": "Named aspect explicitly qualifies the predicate; not an unqualified definition of the Divine Essence.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.867",
+      "number": 867,
+      "pageStart": 521,
+      "pageEnd": 521,
+      "arabic": "ومنها: ان كونه نورا صورة مطلق الوجود، وصور الموجودات كلها مظاهر الاعتبارات التي هي حقائق الأسماء الإلهية، وان الذات من حيث هي جامعة للأسماء لا نسبة بينها وبين شئ ولا حكم أصلا.",
+      "english": "Another is that His being Light is the form of unrestricted Being, and the forms of all existents are loci of manifestation for the considerations that are the realities of the divine Names. The Essence, insofar as it gathers the Names, has no relation to anything and no ruling whatsoever.",
+      "notes": "Source's final apophatic clause must be read from its 'insofar as' qualification; compare §§4.797–4.800.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.868",
+      "number": 868,
+      "pageStart": 521,
+      "pageEnd": 522,
+      "arabic": "إذا عرفت هذه فاعلم أن أتم مظاهر النور في الموجودات الحسية الشمس، فحقيقة الصورة الشمسية النور لا حقيقة روحها أو سرها، إذ هي (1) كما مر مظهر الألوهية ممدة لمظاهر الأسماء التي تحت حيطتها من حيثية النسبة المسماة بالمحيي.",
+      "english": "With these premises, know that the Sun is the most complete manifestation of light in sensory existents. The reality of its solar form is light, not the reality of its spirit or secret. The Sun is, as explained, a manifestation of Divinity that supports the manifestations of the Names contained in its compass, by the relation called al-Muḥyī (the Life-Giver).",
+      "notes": "Distinguishes physical solar form, spirit, secret, and name-relation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.869",
+      "number": 869,
+      "pageStart": 522,
+      "pageEnd": 522,
+      "arabic": "فان قلت: النور من حيث هو لا يقتضى الشكل - كما في الأرواح النورية وغيرها (1) -.",
+      "english": "If you object: Light as such does not require a shape, as we see in luminous spirits and similar things—",
+      "notes": "Objection to identifying the Sun's form as light.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.870",
+      "number": 870,
+      "pageStart": 522,
+      "pageEnd": 522,
+      "arabic": "قلنا: الشكل أمر عارض للنور لحقه لموجبات لا تخفى مما سبق، فكون نورها مما يدرك كما يدرك به، لانقلابه ضياء باختلاطه ظلمة الجسمية كما قال تعالى: هو الذي جعل الشمس ضياء (5 - يونس) واستدارة شكله بتبعية شكل محله، لأنه شكل إحدى لا يعرض لما غلب فيه الوحدة وجهة البساطة الا هو، كما قلنا في الأفلاك، وقوة ضيائه بحسب صفاء جوهره وقابليته للتنور بنور التجليات الأسمائية الملحة، ثم لنورها أنواع من الحركة كل منها مظهر لنوع من التوجه الإلهي الأسمائي وهى ستة: ثلاثة مختصة بها و ثلاثة عامة، فالمختصة بصورتها: على انها اما سريعة أو بطيئة، في الجملة اما مستمرة أو لا، والمستمرة اما تامة أو غير تامة، فالسريعة المستمرة التامة الحركة اليومية التابعة للدورة الكبرى العرشية، والبطيئة المستمرة الغير التامة قطعها في كل يوم جزء واحدا الا دقيقة من ثلاثين جزء من برج وهى غير تامة، والمراد (2) قطعها بالتخلف عن السريعة لا بالقهقري، ولذا لم يصفها بالقهقري كما وصفها في غير المستمرة.",
+      "english": "We reply: Shape is an accident that comes to light through the causes already described. Sunlight is both apprehended and that by which apprehension occurs, because it becomes radiance [ḍiyāʾ] by mingling with the darkness of corporeality, as God says: 'He is the One who made the Sun radiant' [Qurʾān 10:5]. Its shape is circular in following the shape of its locus, for this is the simplest form fitting what is dominated by unity and simplicity, as explained of the spheres. Its radiant strength corresponds to the purity of its substance and its receptivity to illumination through persistent self-disclosures of the Names. Its light, furthermore, possesses six kinds of motion, each a manifestation of a type of orientation of a divine Name: three distinctive to the Sun and three shared with other lights. Its three particular motions may be rapid or slow, persistent or interrupted, and the persistent either complete or incomplete. The rapid, persistent, complete motion is its daily movement following the great revolution of the Throne. The slow, persistent but incomplete motion traverses each day one degree minus one minute out of the thirty degrees of a zodiacal sign. It is incomplete because this movement is counted as a lag behind the faster movement, not as backward motion; thus he did not describe it as retrograde, as he did the non-persistent motion.",
+      "notes": "This preserves **source's** historical geocentric solar kinematics, not modern astronomy. The precise rate 'degree less a minute' requires print and source examination.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.871",
+      "number": 871,
+      "pageStart": 522,
+      "pageEnd": 522,
+      "arabic": "ولما مر ان حركات الكواكب المستمرة كلها من المشرق إلى المغرب و يستروح ذلك من قولنا وهى غير تامة، والا فلا حاجة إلى ذلك، والحركة الثالثة الغير المستمرة حركتها بالقهقري كطلوعها من مغربها - على ما في التعريف الصحيح الإلهي النبوي -",
+      "english": "As already explained, on this account the continuous motions of all planets are from east to west. This is implied by the phrase 'incomplete'; otherwise the qualifier would be unnecessary. The third, non-persistent movement is the Sun's retrograde motion, exemplified by its rising from the west—as stated in what the author regards as sound divine, prophetic disclosure.",
+      "notes": "The Sun's rising in the west is an eschatological sign; not a claim it is a presently observed astronomical movement.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.872",
+      "number": 872,
+      "pageStart": 522,
+      "pageEnd": 523,
+      "arabic": "واما الحركات العامة الغير المختصة بصورتها: فهي أيضا على انها لا تخلو من السريعة أو البطيئة ثلاثة أقسام: لأنها اما يدوم حكمها، فهي خاصة الإضافة إليها وعامة، أو لا يدوم حكمها، فالسريعة الخاصة الإضافة والدائم الحكم هي المضافة إلى نورها المنطبع في جرم القمر، اما الثانية العامة الإضافة الدائم الحكم. فمنها سريعة وهى الحركة العرشية الشاملة سائر الأفلاك والكواكب. ومنها مختلفة في البطؤ، وهى ما يضاف إلى سائر الكواكب، والثالثة ما لا يدوم حكمها وهى حركة رجوع الكواكب الخمسة الخنس المتحيرة، فإنها من بعض أحوال النور من حيث ظهوره في اجرامها، وهذا من قبيل انقسام العرض بانقسام محله.",
+      "english": "As for the general motions not distinctive to the Sun's form, these likewise divide into three classes, fast or slow. Their rulings may endure—in which case they are either specially related to it or general—or they may cease. The rapid, enduring motion specially ascribed to the Sun is that related to its light impressed upon the Moon's body. The second, generally ascribed and enduring, has a rapid kind, the Throne's motion encompassing all other spheres and planets, and slower kinds variously ascribed to the remaining planets. The third has a ruling that does not persist: the returning motion of the five wandering planets [al-khunnas al-mutaḥayyira], which is among the states of solar light in its appearance within their bodies, like an accident being divided through division of its locus.",
+      "notes": "Difficult six-motion taxonomy: three particular + three general, with subdivisions. Do not conflate the motions with direct optical light-speed.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.873",
+      "number": 873,
+      "pageStart": 523,
+      "pageEnd": 523,
+      "arabic": "فان قلت: أنوار سائر الكواكب غير القمر ليست من نور الشمس فكيف عد حركاتها من أقسامها (1)؟",
+      "english": "If you object: The lights of the planets other than the Moon are not derived from sunlight; how can their motions be counted among its divisions?",
+      "notes": "Objection challenges premise of solar light as general cause.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.874",
+      "number": 874,
+      "pageStart": 523,
+      "pageEnd": 523,
+      "arabic": "قلنا: في ذلك قولان: أحدهما ان الكواكب بأسرها لا نور لها وانما تستفيد النور من الشمس، وثانيهما ان الكواكب لها نوعان من النور: مستفاد من الشمس وغير مستفاد منها، فبأن ان النور الشمسي يضاف إليه أنواع من الحركة من وجوه سائر الكواكب.",
+      "english": "We reply: Two positions exist. According to the first, none of the planets has any light of its own; all receive light from the Sun. According to the second, planets have two kinds of light, one received from the Sun and one not so received. In either case it becomes clear that different kinds of movement can be ascribed to sunlight from the differing aspects of the other planets.",
+      "notes": "Source reports two medieval opinions about planetary light; no correction based on modern optical science is inserted.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.875",
+      "number": 875,
+      "pageStart": 523,
+      "pageEnd": 523,
+      "arabic": "إذا عرفت أقسام حركة نور الشمس فاعلم أن الحركة المختصة بصورة الشمس الغير المستمرة كطلوعها من مغربها نظير احتجاب نور التجلي الرباني الذي به بقاء العالم، وحياته بعوده معنى إلى المقام الجمع الاحدى الذاتي الغيبي، وبذلك الاحتجاب فناء هذا العالم الذي يأتي بعده الحشر، ويسميه بعض الفضلاء: دولة الستر والفترة المقابلة لدولة العز والكشف، ولم يعلم سر ذلك، لأنه مبنى على القول بجمع اصباع الكمالات الأسمائية، لا كالخفاء الاطلاقي الأول الذي كانت تلك الكمالات مستهلكة في أحديته. هذا ما عندي والله أعلم بمراد الكمل.",
+      "english": "Once you know the kinds of movement belonging to sunlight, understand that the movement distinctive to the Sun's form that is not continuous—its rising from the west—resembles the veiling of the light of lordly self-disclosure through which the world remains in existence and life, by its returning in meaning to the Unseen, essential station of unitary gathering. The world perishes through that veiling, and Resurrection follows. Some learned persons call this the regime of concealment and interval, opposed to the regime of splendour and unveiling; they have not grasped its mystery, for it depends upon the gathering of the colourings of the perfections of the Names, not on the first absolute concealment in which those perfections were absorbed within His Oneness. This is how I understand it; God knows best what the perfected knowers intended.",
+      "notes": "Distinguish the *second* concealment after differentiated manifestation from the first absolute nonmanifestation. Fanārī explicitly marks the conclusion as his interpretation («هذا ما عندي»).",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    }
+  ]
+}
