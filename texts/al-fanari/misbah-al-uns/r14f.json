@@ -1,0 +1,262 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R14f",
+  "date": "2026-11-09",
+  "startSection": "4.751",
+  "endSection": "4.775",
+  "sourceRepo": "OpenITI/0850AH",
+  "sourceCommit": "e2715c62fb458ce3ddc43b962cd55677cdd7bc35",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.751",
+      "number": 751,
+      "pageStart": 489,
+      "pageEnd": 489,
+      "arabic": "ثم تعين منه في هذه الرتبة الثانية من حقائقه حضرة الوجود المسمى حضرة الوجوب - تسمية الشئ باسم لازمه - ومن شأنها الوحدة الحقيقة والكثرة النسبية، فلانتساب الوحدة الحقيقية إليها اختص بما ينسب إليه الفعل والتأثير، فانتسب جميع الأسماء الإلهية إليها.",
+      "english": "Then, at this second degree, from among its realities there became determined the Presence of Being [ḥaḍrat al-wujūd], called the Presence of Necessity [ḥaḍrat al-wujūb]—naming something by one of its concomitants. Its property is real unity together with relational multiplicity. Because real unity pertains to it, action and causal efficacy are particularly ascribed to it, and all the divine Names are accordingly related to this Presence.",
+      "notes": "The two Presences in §§751–753 are distinct considerations within the second degree of the Breath of the Merciful; avoid treating them as independent physical substances.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.752",
+      "number": 752,
+      "pageStart": 489,
+      "pageEnd": 489,
+      "arabic": "ثم تميز في مقابلتها في هذه المرتبة الثانية حضرة العلم المسماة حضرة الامكان - تسمية بوصف ما فيها - ومن شأنها من حيث احتوائها على الحقائق، الكثرة الحقيقية والوحدة النسبية المجموعية، ولشدة نسبة الكثرة إليها كان متعلقاتها مختصة بالقبول والانفعال، ولما في حضرة الوجوب من الكثرة النسبية وفي حضرة المعلومات من الوحدة النسبية، كان للأولى ضرب من القبول والانفعال، وللثانية نوع من التأثير والفعل، وذلك من حيث الطلب الاستعدادي والسؤال والإسعاف بما سأل.",
+      "english": "Opposite it, within the same second degree, the Presence of Knowledge [ḥaḍrat al-ʿilm] became distinguished, called the Presence of Possibility [ḥaḍrat al-imkān] after the characteristic of what it contains. Insofar as it encompasses the realities, its character is real multiplicity and a collective, relational unity. Because multiplicity is more strongly associated with it, its objects are especially related to reception and being acted upon. Yet since the Presence of Necessity includes a relational multiplicity, while the Presence of the things known includes a relational unity, the former possesses a kind of receptivity and being acted upon, and the latter a kind of efficacy and action. This occurs through the demand made by readiness [al-ṭalab al-istiʿdādī], through asking, and through the response that grants what was requested.",
+      "notes": "The apparent reversal of active and receptive aspects is explicitly qualified by «ضرب من» and «نوع من». The reality of knowledge does not become an independent efficient creator.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.753",
+      "number": 753,
+      "pageStart": 489,
+      "pageEnd": 489,
+      "arabic": "واما الحضرة البرزخية الاجمالية الانسانية والتفصيلية العمائية، فهي جامعة بينهما من وجه، حاملة لهذا التجلي النفسي الجامع بين الصفات الإلهية والحقائق الكونية، فحضرة الوجوب إحدى يديه الباسطة بالرحمة، ولاختصاصها بالذين ينفقون ويؤتون الزكاة كانت اليمنى، فحضرة المعلومات والامكان يده الأخرى، ومن جهة ان بركة جميع الكمالات الأسمائية متعلقة بهما جميعا، كانت كلتا يديه يمينا مباركة - نظرا إلى الكمال الحقيقي لا النسبي -",
+      "english": "The comprehensive human isthmus [al-ḥaḍra al-barzakhiyya al-ijmāliyya al-insāniyya], which is differentiated in the Cloud-like mode [al-tafṣīliyya al-ʿamāʾiyya], gathers the two Presences in one respect and bears the Breath-like self-disclosure that gathers divine attributes and cosmic realities. The Presence of Necessity is one of the two hands extended in mercy; because it is particularly associated with those who give and pay the alms-due, it is the right hand. The Presence of the things known and of Possibility is His other hand. But since the blessing of all the perfections of the Names pertains to both hands together, both of His hands are blessed right hands—considered in reference to real rather than merely relational perfection.",
+      "notes": "God's 'two hands' are treated through ontological correlates, not construed as limbs. Verify scriptural and hadith allusions to both hands being right.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.754",
+      "number": 754,
+      "pageStart": 489,
+      "pageEnd": 490,
+      "arabic": "فكل ما كان من المظاهر الروحانية والجسمانية حكم الوحدة والبساطة فيه أظهر - كالسماوات كانت نسبته إلى مظهرية حضرة الوجوب - وتأثيرها أقوى واضافته إلى اليمين أولي، وكل ما كان حكم الكثرة والكثافة أبين - كالأرض - كانت نسبته إلى مظهرية حضرة الامكان وحكم الانفعال أولي، وإضافة مطلق اليد تأدبا إليه انسب، كما قال تعالى: والأرض جميعا قبضته... الآية (67 - الزمر) فمعنى الأصابع العالمية والمريدية والقادرية، والجوادية بمعنى الإجادة في الصنع والمقسطية، واما الحي فهو بمنزلة القبضة واليد.",
+      "english": "All spiritual and bodily loci of manifestation in which unity and simplicity are more apparent—as in the heavens—are more properly related to the manifestation of the Presence of Necessity; their efficacy is stronger, and their ascription to the right hand more fitting. Everything in which multiplicity and density are more evident—as in the earth—is more properly related to the manifestation of the Presence of Possibility and the ruling of receptivity; in deference, the unrestricted ascription of 'hand' is more appropriate, as in the words of God, 'The earth altogether will be in His grasp...' [Qurʾān 39:67]. The fingers signify the qualities of knowing, willing, exercising power, generosity in the sense of excellence in making, and equitable justice; the Living [al-Ḥayy] is in the position of the grasp and the hand.",
+      "notes": "Maintain conceptual ascriptions of 'hands' and 'fingers', not anthropomorphism. The Arabic lists ʿālimiyya, murīdiyya, qādiriyya, jawādiyya and muqsiṭiyya.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.755",
+      "number": 755,
+      "pageStart": 490,
+      "pageEnd": 490,
+      "arabic": "إذا عرفت هذا فاعلم أنه لما ظهر اثر النفس الرحماني بصورة العنصر الأعظم وفتق رتق الطبيعة البسيطة من وجه على سبعة أقسام - كما قرر - انقسم كثيفة المركب أيضا على سبعة: أربعة هي الأركان وثلاثة مركبة، منها هي المولدات، وحيث لم يظهر شئ أصلا الا في محل قابل، تعين من حضرة الاسم المقسط للمولدات ثلاث مراتب اعتد إليه من حضرة البرزخية العمائية يكون ظهور كل مزاج حاصلا في مرتبة منها وبحسبها وحكمها، واصل كل مزاج ركن معين وبقية الأركان واردة عليه بحسب سراية اثر المحبة الأصلية في العنصر.",
+      "english": "Once you have grasped this, know that when the effect of the Breath of the Merciful appeared in the form of the Greatest Element and the joined unity of simple Nature was split in one respect into seven portions, as explained, dense composite reality likewise divided into seven: four are the elemental pillars, while three are compounds arising from them—the generated kingdoms. Since nothing whatever becomes manifest except in a receptive locus, three degrees of equilibrium for generated things became determined from the Presence of the Name al-Muqsiṭ, in accordance with the Presence of the Cloud-like isthmus. Every temperament [mizāj] becomes manifest in one of these degrees, according to its characteristics and ruling. Each temperament is based on one principal element, and the other elements join it in consequence of the pervasion of original love through the elemental substrate.",
+      "notes": "Three generated kingdoms are mineral, vegetal and animal; the human is the comprehensive culmination, developed later. The source phrase around «اعتد إليه» is problematic; rendering is contextual and requires collation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.756",
+      "number": 756,
+      "pageStart": 490,
+      "pageEnd": 490,
+      "arabic": "فأول ما تعين الاعتدال المعدني. لأنه أتم مشاكلة لأمهاته من البقاء وقلة القوى وقلة احتياجه إلى الحفظ وبعده عن التغير والفساد، والجزء الأصلي في مزاجه الجزء الناري لمناسبة القرب من البسائط وقوة حكم البساطة فيها، فإذا وردت الأركان الاخر عليه فحصل المزاج، قبل من حضرة الاسم المصور صورة معدنية، ومن الاسم الحي اثر يحفظ تركيبه من الانحلال ويوصله إلى الكمال، اما في مبدأ تمام الصورة فاحتاج في ظهور تمام صورته إلى عمل وعلاج كثير - كالفضة والحديد ونحوهما - واما في وسطه فلم يحتج الا إلى قليل معالجة كالذهب، واما في انتهائه فلم يحتج إلى شئ من المعالجة والعمل - كالياقوت واللعل والمرجان - اما قبل ورود باقي الأركان على الجزء الناري تركبت معه اجزاء اخر نارية فصارت صورا وأمزجة نارية في هذه المرتبة وتعلقت بها أرواح جنية مستورة من غير نوع صورتهم وإبليس مبدئهم وهم صنفان: صنف غلب على مادتهم الاجزاء المظلمة الدخانية فكانت مردة، وصنف غلب عليهم نورية النار فقبلوا به نور الايمان.",
+      "english": "First, the mineral equilibrium became determined. It most resembles its elemental mothers in permanence, the small number of its powers, its lesser need for preservation, and its remoteness from change and corruption. The principal constituent of its mixture is fire, owing to its nearness to simple realities and to the strength of simplicity within it. When the other elements join the fiery constituent and the mixture is formed, it receives a mineral form from the Presence of the Name al-Muṣawwir and an effect from the Name al-Ḥayy that preserves its composition against dissolution and brings it to its perfection. At the beginning of this perfection, a mineral requires much work and treatment before its completed form appears, as with silver and iron. At the middle degree it requires only a little treatment, as with gold. At its highest degree it needs no treatment or work, as with ruby, garnet, and coral. Before the other constituents joined the principal fiery one, however, other fiery parts combined with it and became fiery forms and temperaments of this degree. Hidden jinn spirits, belonging to another kind than the outward forms, became attached to them; Iblīs is their origin. They are of two classes: those whose material is dominated by dark, smoky parts, becoming rebellious ones, and those in whom the luminosity of fire predominates, enabling them to receive the light of faith.",
+      "notes": "Premodern metallurgy and jinn cosmology. «غير نوع صورتهم» is obscure; the nature of jinn spirits and mineral forms should be checked in al-Farghānī's original.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.757",
+      "number": 757,
+      "pageStart": 490,
+      "pageEnd": 491,
+      "arabic": "ثم اعلم أنه يحصل في المركب المعدني خواص ومنافع لم يكن ذلك في أمهاته التي هي الأركان، كاللون والطعم والتفريح والتقوية والتغذية والزينة وكونه آلة القضاء الحوائج بالذات أو بالعرض ونحو ذلك، وكل ما غلب عليه الجزء الترابي صار مطرحا كالتراب.",
+      "english": "Know also that the mineral compound acquires properties and uses absent from its elemental mothers: colour, taste, delighting, strengthening, nourishing, ornament, and usefulness as an instrument for meeting needs either in itself or incidentally, and other such properties. Whatever is dominated by its earthy constituent becomes discarded like ordinary soil.",
+      "notes": "The last clause reflects a hierarchical valuation within premodern mineral science.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.758",
+      "number": 758,
+      "pageStart": 491,
+      "pageEnd": 491,
+      "arabic": "الثاني مما تعين رتبة الاعتدال النباتي والجزء الأصلي في تركبه الجزء الهوائي فيرد باقي الأركان عليه ويقبل الممتزج صورة نباتية ويستدعى من الاسم الحي روحا نباتيا يحفظها حتى يصل إلى كمالها المناسب، فيظهر بحكم روحها ما لم يكن في أمهاتها ولا في المعادن، كالقوة الغاذية والمنمية والمولدة والجاذبة والدافعة والماسكة والهاضمة، ولها ثلاث درجات: أدناها ما يقل نفعها، ووسطها ما يعم نفعها ذوقا وشما ودواء ونحو ذلك، وأعلاها ما كان مع ما فيه من فوائد النباتات والمعدنيات مشابها للحيوان - كالنخلة مثلا -",
+      "english": "Second, the equilibrium of the vegetal degree becomes determined. The primary constituent of its composition is air; the other elements join it, and the blended substrate receives a plant-form. From the Name al-Ḥayy it calls forth a vegetal spirit that preserves it until it reaches its corresponding perfection. Through the ruling of its spirit there appear powers absent from its constituent mothers and from minerals: nourishment, growth, reproduction, attraction, expulsion, retention, and digestion. Plants have three degrees. The lowest provides little benefit; the intermediate provides widespread benefit through taste, fragrance, medicine, and similar things; and the highest combines the advantages of plants and minerals with a resemblance to animals—as in the date-palm.",
+      "notes": "Plant faculties are part of medieval natural philosophy; distinguish vegetal 'spirit' from an immortal rational soul.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.759",
+      "number": 759,
+      "pageStart": 491,
+      "pageEnd": 491,
+      "arabic": "الثالث ما ينزل الامر الإلهي بحكم الحركة الحبية الأصلية بعدهما إلى مرتبة التركيب الاعتدالي الحيواني، والجزء الأصلي فيه الجزء المائي، قال تعالى: وجعلنا من الماء كل شئ حي (30 - الأنبياء) ويرد باقي الأركان عليه فيقبل الممتزج من الاسم المصور صورة حيوانية أفقية واستدعى من الاسم الحي القيوم روحا حيوانيا يدبره ويحفظه بقواها التي أصلها الشهوية والغضبية، وزاد على ما في النباتات بالحواس الظاهر والحركة الإرادية حركة أفقية، فمنه ما يستدعى في مزاجه حكمي جزئين من أركانه: حكم الترابي بجذبه إلى الأرض والتصاقه بها، وحكم المائي يحمله على الحركة من مكان إلى مكان فيمشى على بطنه، ومنه ما يقتضى غلبة حكمي جزئي المائي والترابي فيتحرك برجلين، كالانسان، أو غلبة حكمي جزئي المائي والهوائي فيطير بجناحيه كالطير، ومنه من يكون فيه اقتضاء جميع الأربعة الأركان فيقوم ويمشى على أربع، ومنه ما يكون اقتضاء الحركة فيه بقوى كثيرة من الأركان والمولدات فيقوم على قوائم أكثر، لذا قال تعالى بعد عد الأصناف الثلاثة بقوله: فمنهم من يمشى على بطنه ومنهم من يمشى على رجلين ومنهم من يمشى على أربع يخلق الله ما يشاء (45 - النور) هذا كلامه.",
+      "english": "Third, the divine command descends through original loving motion, after those two degrees, to the equilibrium of animal composition. The principal constituent is water, as God says: 'We made from water every living thing' [Qurʾān 21:30]. The other elements join it, and the mixture receives an appropriate animal form from the Name al-Muṣawwir, calling forth from the Name al-Ḥayy al-Qayyūm an animal spirit that governs and preserves it through its powers, founded principally on appetite and anger. Besides the powers found in plants, it acquires the external senses and voluntary, outward motion. Some animals' temperaments require the ruling of two constituents: earth attracts and attaches them to the ground, while water carries them from place to place, so that they move on their bellies. Others, owing to a predominance of the watery and earthy rulings, move upon two legs, as humans do; or owing to the watery and airy rulings, fly with wings, like birds. Others are moved by all four constituent rulings, standing and walking on four legs; and still others require numerous powers from the elements and generated compounds and stand on more limbs. Hence God's words, after identifying three classes: 'Some crawl upon their bellies, some walk upon two legs, and some walk upon four; God creates what He wills' [Qurʾān 24:45]. Thus far al-Farghānī's words.",
+      "notes": "Source's schema is premodern elemental physiology, not a contemporary zoological explanation. Note explicit closure «هذا كلامه» at §4.759.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.760",
+      "number": 760,
+      "pageStart": 491,
+      "pageEnd": 492,
+      "arabic": "ثم نقول: والانسان منتهى تلك الآثار ومجتمعها، أي منتهى نزول الامر الإلهي واثار النفس الرحماني من كونه مفاضا.",
+      "english": "We further say: The human being is the culmination and gathering-place of all those effects—that is, the endpoint of the descent of the divine command and of the effects of the Breath of the Merciful insofar as it is bestowed.",
+      "notes": "Fanārī resumes his voice with «ثم نقول». The next paragraph quotes al-Farghānī.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.761",
+      "number": 761,
+      "pageStart": 492,
+      "pageEnd": 492,
+      "arabic": "قال الفرغاني: لان الركن الترابي والمزاج الذي أصل اجزائه منه والباقي (1) وارد عليه يكون جامعا جميع مراتب الأمزجة السابقة عليه، لمرور الامر عليه وانصباغه باحكامها، ولان الامر دوري فآخره عين أوله، لا جرم تعين في عين هذا المنتهى الترابي بظهور التركيب المتمم للدور رتبة اعتدال شاملة لجميع الرتب الاعتدالية الثلاثة المذكورة، بل جميع المراتب البرزخية العلوية والسفلية، وهذه الرتبة الشاملة صورة البرزخ الأول والثاني اللذين هما ابطن بواطن الحقيقة الانسانية وميزان جميع المراتب الاعتدالية، ولكن صورة معقولة، والمزاج التام الاعتدال صورة لهما محسوسة، والروح الإلهي المنفوخ فيه صورة التجلي النفسي الرحماني (2) الظاهري.",
+      "english": "Al-Farghānī said: The earthy constituent, and the temperament whose parts are principally derived from it while the remaining constituents join it, gather all the degrees of temperament that came before. For the command has passed through them and been coloured by their rulings. And because the command is circular, its end coincides with its beginning. Thus at the very endpoint in earth there becomes determined, through the manifestation of the composition that completes the circle, an all-embracing degree of equilibrium containing the three preceding degrees—and indeed all higher and lower isthmic degrees. This comprehensive rank is the form of the first and second isthmuses, which are the innermost realities of human reality and the measure of all degrees of equilibrium; but this form is intelligible. The temperament in which equilibrium is complete is their sensory form, while the divine spirit breathed into it is the image of the manifest Breath-of-the-Merciful self-disclosure.",
+      "notes": "Important formal distinction: intelligible form of the two barzakhs, sensible balanced temperament, and breathed spirit as manifestation of the Breath. Footnotes (1) and (2) omitted from text but flagged.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.762",
+      "number": 762,
+      "pageStart": 492,
+      "pageEnd": 492,
+      "arabic": "فكما ان البرزخ الثاني الجامع بين الوجود والعلم المتعلق بجميع المعلومات صورة وظل للبرزخ الأول الجامع بين الأحدية والواحدية والتجلي (3) الثاني الظاهري النفسي وللتجلي الأول الغيبي الباطني، كذلك هذه الرتبة الاعتدالية والمزاج الإنساني بعد حصول النفخ صورة ذلك التجلي والبرزخ بما اشتملا عليه من الأسماء والحقائق الظاهرة والباطنة، لذا قال صلى الله عليه وآله: ان الله خلق آدم على صورته - أو على صورة الرحمن - فكان آدم عليه السلام بحقيقته جامعا كل ما جمعه البرزخ والتجلي الثاني، كما أن محمدا صلى الله عليه وآله جامع بحقيقته وصورته كل ما جمعه البرزخ الأول من مفاتيح الغيب والأحدية، والواحدية جمعية أحدية بحيث لا يغلب حكم شئ شيئا أصلا. إشارة شريفة خفية إلى سر المطارحة الملكوتية من الملائكة تارة ومن إبليس أخرى ففيها تنبيه على كمال آدم الذي به كان بالخلافة أحرى ولها مقدمات:",
+      "english": "Just as the second isthmus, which gathers Being and Knowledge related to all things known, is the image and shadow of the first isthmus—which gathers Oneness and Unity—and of both the second outward Breath-like self-disclosure and the first inward Unseen self-disclosure, so too this degree of equilibrium and the human temperament, once insufflation occurs, are the image of that self-disclosure and isthmus, encompassing their outward and inward Names and realities. Hence the Prophet, may God bless him and his family, said: 'God created Adam in His image'—or, 'in the image of the Merciful.' Adam, peace be upon him, by his reality gathered all that the isthmus and the second self-disclosure gathered, while Muḥammad, may God bless him and his family, by his reality and form gathered all that the first isthmus contained of the Keys of the Unseen, Oneness, and Unity, as a gathering of oneness in which no ruling predominates over another. A subtle and noble indication here concerns the mystery of the angelic dispute, first from the angels and then from Iblīs; it points to Adam's perfection and the reason he was most deserving of vicegerency. Several premises follow.",
+      "notes": "The two variants of the image hadith require separate source and authenticity checks; do not assert equal soundness. Distinguish Adam's comprehensive reality from the particular Muḥammadan rank in the paragraph.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.763",
+      "number": 763,
+      "pageStart": 492,
+      "pageEnd": 493,
+      "arabic": "الأولى: ان الملائكة من جملة قوى اليد المضافة إلى الصورة الرحمانية التي حذى آدم عليها، بل هي عين صورة تلك الصورة، فلذلك كانت الملائكة مظاهر أوصاف حقيقته واجزاء صورة جمعيته.",
+      "english": "First: The angels are among the powers of the Hand ascribed to the Merciful form after whose pattern Adam was fashioned. Indeed they are the very form of that form; therefore the angels are manifestations of the attributes of his reality and parts of the form of his comprehensiveness.",
+      "notes": "This is the source's symbolic exegesis; no physical image of God is implied by the translator.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.764",
+      "number": 764,
+      "pageStart": 493,
+      "pageEnd": 493,
+      "arabic": "الثانية: ان كمال كل كل انما يظهر من جهتين: إحداهما من جهة كليته وجمعية اجزائه - وإن كان كل جزء منه بمفرده ناقصا - وثانيهما من جهة إضافة الكمال إلى كل جزء جزء من اجزائه بإزالة النقصان عنه.",
+      "english": "Second: The perfection of every whole appears in two ways: first, through its wholeness and the gathering of its parts, even when each part considered separately remains deficient; and second, through perfection being conferred upon each individual part by removing its deficiency.",
+      "notes": "Formal whole–part distinction, used below for Adam and angelic development.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.765",
+      "number": 765,
+      "pageStart": 493,
+      "pageEnd": 493,
+      "arabic": "الثالثة: ان للملائكة جمعيات ثلاث وإن كانت لا تكفى لصلوح الخلافة. اما الجمعيات: فمن جهة حقيقة الحقائق السارية في كل جزئي وبكليتها، ومن جهة سريان الوجود المطلق المشتمل على كمالاته، ومن جهة الامكان القابل كل صورة وحكم، واما عدم الكفاية: فلان للخلافة شروطا أخرى عدمتها الملائكة:",
+      "english": "Third: The angels possess three forms of gathering, although these are insufficient to qualify them for vicegerency. Their gatherings arise, first, from the Reality of realities pervading each particular and doing so in its universality; second, from the pervasion of Absolute Being, inclusive of its perfections; and third, from Possibility, receptive to every form and ruling. These are insufficient because vicegerency has other conditions which the angels lack.",
+      "notes": "Do not treat 'lacking conditions for vicegerency' as denial of their intrinsic holiness. Four missing conditions follow.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.766",
+      "number": 766,
+      "pageStart": 493,
+      "pageEnd": 493,
+      "arabic": "الأول ظهور هذه الجمعيات الثلاث بالفعل على سبيل العدل بلا غلبة بينها، ونشأتهم تعطى غلبة احكام الوجوب والبساطة.",
+      "english": "The first condition is that those three gatherings appear together in actuality under the ruling of balance and justice, with none prevailing over the others; but the angels' constitution gives predominance to the rulings of necessity and simplicity.",
+      "notes": "First of four required qualifications for comprehensive vicegerency.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.767",
+      "number": 767,
+      "pageStart": 493,
+      "pageEnd": 493,
+      "arabic": "الثاني التلبس باحكام جميع المراتب الروحية والمثالية والحسية لاعطاء كل ذي حق حقه، وهم محصورون في مرتبة واحدة حتى قالوا: وما منا الا له مقام معلوم (164 - الصافات)",
+      "english": "The second is to be clothed in the rulings of every spiritual, imaginal, and sensory degree, so as to give each possessor of a right their due. But the angels are confined to a single degree, as they say: 'There is none of us except that he has an appointed station' [Qurʾān 37:164].",
+      "notes": "The quote is placed in the mouths of angels and used for limitation of station, not as a general moral condemnation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.768",
+      "number": 768,
+      "pageStart": 493,
+      "pageEnd": 493,
+      "arabic": "الثالث: الارتباط بجميع احكام الأسماء - تعلقا أو تخلقا - وليس لهم من التعلق بالتواب والعفو والغفور وأمثال ذلك نصيب.",
+      "english": "The third is to be connected with all the rulings of the divine Names, whether through relation [taʿalluq] or acquisition of their characteristics [takhalluq]. But the angels have no share in a relation to Names such as the Accepter of Repentance [al-Tawwāb], the Pardoner [al-ʿAfūw], the All-Forgiving [al-Ghafūr], and their like.",
+      "notes": "Crucial taʿalluq/takhalluq distinction is explicit in source.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.769",
+      "number": 769,
+      "pageStart": 493,
+      "pageEnd": 493,
+      "arabic": "الرابع أعظم شروط الخلافة هو العلم بجميع المراتب وباهليها وحقوقهم واحكامهم، لان الخلافة توسط يقتضى الاخذ من المستخلف واعطاء المستخلف عليهم، فمهما لم يعلمهم لم يعط الخلافة حقها، وليس للملائكة ذلك بالفعل - كما سنبين -",
+      "english": "The fourth—and greatest—condition of vicegerency is knowledge of all degrees, their inhabitants, their rights, and their rulings. Vicegerency is an intermediary station requiring one to receive from the One who appoints the vicegerent and give to those over whom the vicegerent is appointed. Unless one knows them, one cannot discharge the rights of vicegerency. The angels do not possess that knowledge in actuality, as we shall explain.",
+      "notes": "A distinctive definition of khalīfa as mediation and the obligation of appropriate knowledge.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.770",
+      "number": 770,
+      "pageStart": 493,
+      "pageEnd": 494,
+      "arabic": "إذا تقررت هذه فنقول: لما أراد الحق تعالى تكميل ادم ومن شاء من خواص نبيه من كلتي الجهتين المذكورتين، بدأ بتكميل اجزائه، فخاطب الملائكة الذين هم أشرف اجزائه الكونية على سبيل المشورة بقوله تعالى: انى جاعل في الأرض خليفة (30 - البقرة) حتى يظهر فيهم ما كان كامنا من النقصان الحاصل من وجوه الامكان، وذلك ثماني عشرة خصلة ذميمية كامنة فيهم وهم غافلون عنها:",
+      "english": "With these premises established, we say: When the Real wished to perfect Adam and whichever of the elect of His Prophet He willed in both of the senses mentioned above, He began by perfecting Adam's component parts. He addressed the angels—his noblest cosmic components—as though consulting them, saying: 'I am placing a vicegerent on the earth' [Qurʾān 2:30]. He thereby brought into the open deficiencies latent in them on account of the aspects of possibility: eighteen blameworthy traits of which they were unaware.",
+      "notes": "The eighteen-item critique of angels is the author's highly distinctive allegorical interpretation; flag for theological/source scrutiny. Not a neutral theological consensus.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.771",
+      "number": 771,
+      "pageStart": 494,
+      "pageEnd": 494,
+      "arabic": "الأولى طعنهم في آدم عليه السلام. الثانية رميهم ببهتان الهتك والسفك بدون مشاهدة. الثالثة قذف المحصن. الرابعة الشهادة عند الحاكم قبل الاستشهاد. الخامسة سوء ظن فيه. السادسة التفحص عن معايبه. السابعة اظهار ذلك بالقول. الثامنة كون ذلك (1) عن استدلال عقلي بآلة الفعل، وهى الشهوة والغضب على فعل الفساد وسفك الدم. التاسعة الاعراض في ذلك عن الاستبصار في طلب اليقين. العاشرة اغتيابهم لآدم في حضرة الحق. الحادية عشرة حسدهم على فضيلته وصلاحيته للخلافة. الثانية عشرة حرصهم على جاه الخلافة. الثالثة عشرة ظنهم الغير المطابق انهم يصلحون للخلافة، نظرا إلى الجمعيات الثلاث، فما أحقهم بان يقال: حفظت شيئا وغابت عنك أشياء. الرابعة عشرة الاعجاب بنفوسهم. الخامسة عشرة رؤية عملهم وطاعتهم. السادسة عشرة إضافة فعل التقديس إلى أنفسهم لا إلى حول ربهم وقوته وتوفيقه وعصمته. السابعة عشرة تعرضهم للاعتراض على ربهم. الثامنة عشرة تزكية أنفسهم بالنزاهة عن النقائص.",
+      "english": "First, their disparagement of Adam, peace be upon him. Second, imputing corruption and bloodshed to him without having witnessed them. Third, defaming someone of protected honour. Fourth, giving testimony before the judge without being summoned to do so. Fifth, harbouring an unfounded bad opinion of him. Sixth, searching for his faults. Seventh, voicing those faults publicly. Eighth, drawing that judgement by rational inference from the instruments of action—appetite and anger—toward corruption and the shedding of blood. Ninth, turning away from seeking insight so as to attain certainty. Tenth, backbiting Adam in the Presence of the Real. Eleventh, envying his excellence and eligibility for vicegerency. Twelfth, coveting the dignity of vicegerency. Thirteenth, wrongly supposing themselves eligible for vicegerency because of their three forms of gathering; they merit the saying, 'You have remembered one thing while many others escaped you.' Fourteenth, self-admiration. Fifteenth, regarding their own works and obedience [as belonging to themselves]. Sixteenth, attributing their act of glorification to themselves rather than to their Lord's power, strength, enabling grace, and protection. Seventeenth, exposing themselves to objecting to their Lord. Eighteenth, declaring themselves free of all defects.",
+      "notes": "Exactly eighteen numbered items from a historically contested Akbarian reading of Qurʾān 2:30. Do not turn these into established literal sins of all angels, and compare original Farghānī text and Sunni angelic impeccability doctrine.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.772",
+      "number": 772,
+      "pageStart": 494,
+      "pageEnd": 495,
+      "arabic": "ولما ظهرت منهم هذه الخصال الذميمة الكامنة فيهم وكان إبليس حاملهم على ظهورها، أراد الحق تعالى تطهيرهم وتكميلهم بإزالة هذه النقائص عنهم، لكونهم اجزاء من أراد تكميله ليتوجهوا إلى ابراز صورته التي هي أتم مظاهر الكمال عن بينة وتعرض لقبول الطهارة عن كل النقائص، وكان توجههم إلى ايجاد سائر صور العالم من العرش إلى الفرش ومن المولدات في ضمن التوجهات الأسمائية قبل انشاء صورة آدم منصبغا بانصياع تلك الأحكام الكامنة فيهم، فلما حصل لهم قابلية الطهارة عن الواثها من هذا التنبيه، ظهر اثر حركة المحبة الأصلية لتحقيق كمال الاستجلاء، فتوجهوا في ضمن التوجهات الأسمائية من حيث أعيانهم ومن حيث مظاهرها المثالية والحسية الفلكية والكوكبية باتصالاتها وتشكلاتها المسعودة بعد تحققها في سلطنتها الدورية، إلى تسوية هذا المزاج الإنساني والصورة العنصرية الآدمية وبعد التطورات بالأطوار الأربعة الترابية ثم الطينية بورود الماء وظهور خصائصه فيه، ثم الحمأ المسنون باتصال الهواء ثم الصلصالية بظهور اثر النار.",
+      "english": "When those blameworthy traits hidden in them came to light—Iblīs having been the one who prompted their appearance—the Real willed to purify and perfect them by removing these defects, for they were parts of the one He willed to perfect. In that way they could turn toward bringing forth Adam's form, the most complete manifestation of perfection, in clear awareness and with receptivity to purification from all shortcomings. Before Adam's form had been brought forth, their orientations toward the remaining forms of the cosmos, from Throne to earth and through generated beings, within the orientations of the Names, had been coloured by their yielding to the rulings hidden within them. When they became receptive to purification through this reminder, the movement of original love appeared so as to realise the perfection of self-disclosure-to-itself. They turned, within the orientations of the Names, both through their own entities and through their imaginal and sensible celestial and planetary loci, their auspicious conjunctions and configurations, after these had been established in their cyclical rulings, toward the balancing of this human temperament and Adam's elemental form. This passed through four transformations: the earthy condition; then the clayey condition through the arrival of water and its distinctive properties; then moulded dark clay through contact with air; and then ringing clay through the manifestation of fire's effect.",
+      "notes": "Four stages «ترابية، طينية، حمأ مسنون، صلصالية» require Qurʾānic cross-reference and printed source checks. The celestial causal story is historical cosmology, not human embryology or modern chemistry.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.773",
+      "number": 773,
+      "pageStart": 495,
+      "pageEnd": 495,
+      "arabic": "فإذا تمت التسوية باستعمال إحدى يديه المقدسة المتعلقة بها ظهور حكمته، أنشأ النشأة الأخرى بيمينه المقدسة التي يتعلق بها ظهور آثار قدرته، فنفخ فيه من روحه الأعظم وهو توجه وجه ظهوره الكلى لتدبير هذا المزاج المسوى الكلى واستعمال الملائكة الذين هم كالقوى والاجزاء لهذه اليد اليمنى من غير قصد وحضور معين منهم وتوجه خاص مضاف إليهم، لذا قال: ونفخت فيه من روحي (29 - الحجر) لا كما قال: فنفخنا فيها من روحنا (91 - الأنبياء)",
+      "english": "When the balancing had been completed through the use of one of His holy hands, to which the appearance of Wisdom's ruling pertains, He brought forth the other constitution through His holy right hand, to which the manifestation of the effects of Power belongs. He breathed into Adam of His Supreme Spirit: this was the orientation of the face of His universal manifestation toward governing the fully balanced universal temperament and employing the angels, who are like the powers and components of that right hand, without any specifically designated aim, attendance, or particular orientation ascribed to them. Thus He said: 'And I breathed into him of My Spirit' [Qurʾān 15:29], not as He said: 'Then We breathed into her of Our Spirit' [Qurʾān 21:91].",
+      "notes": "The Qurʾānic wording and grammatical agents are key; interpret the hands as distinct causal considerations in the source rather than embodied parts of God.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.774",
+      "number": 774,
+      "pageStart": 495,
+      "pageEnd": 496,
+      "arabic": "ولما تمت صورة آدم ومعناه وصار روحا لنشأة جميع العالم ومجلى كاملا لظهور صورة الحق وجميع أسمائه الحسنى، اخذ الحق جل جلاله في تكميله وقدم على اجزائه تكميل صورة جمعيته بعلم الأسماء، لان علم كنه الذات ممتنع كما قال: وعلم آدم الأسماء كلها (31 - البقرة) والأسماء على الحقيقة انما هي تعينات نور الوجود، المتحققة بحكم المعاني والحقائق - مفيضا كان أو مفاضا - والألفاظ أسماء الأسماء، فيتأكد قوله تعالى (كلها) دخلت الأسماء اللفظية والرقمية في الأسماء المراد بها التعينات الوجودية مطلقا، ولذا ذكرت بصيغة مختصة بالذوات العاقلة، كلفظة (هم) و (هؤلاء) كأنه تعالى علم آدم حقيقة ذات آدم وما اشتملت عليه حقيقته ووجوده من الأسماء والصفات والحقائق الحقية والخلقية الثابتة في المرتبة الثانية متمايزة - لا الأسماء الذاتية الثابتة في الرتبة الأولى - فإنها مسميات تلك الأسماء المتعلق بها وجود العالم، فعرف به نفسه وبها (1) ربه وكملت ذاته من جهة جمعيته.",
+      "english": "When Adam's form and meaning were complete and he had become the spirit of the whole world's constitution and a perfect place of disclosure for the image of the Real and all His Most Beautiful Names, the Real—majestic is His glory—began to perfect him. He placed the completion of Adam's comprehensive form through knowledge of the Names before perfecting his component parts, because knowledge of the innermost essence of the Divine Essence is impossible. God says, 'He taught Adam all the Names' [Qurʾān 2:31]. In truth the Names are determinations of the light of Being, realised through meanings and realities, whether bestowed or bestowing; words are names of the Names. Thus the emphasis 'all' is confirmed: the verbal and numerical Names are included among the Names understood as existential determinations without restriction. For this reason the verse uses pronouns normally associated with intelligent entities, such as 'them' [hum] and 'these' [hāʾulāʾ]. It is as though God taught Adam the reality of Adam's own essence and all that his reality and existence encompass of Names, attributes, and divine and creaturely realities distinguished within the second degree—not the essential Names established in the first degree, since these are the things named by the Names to which the world's existence is related. Through the Names Adam came to know himself and, through them, his Lord; his essence attained perfection in its comprehensive aspect.",
+      "notes": "Source distinguishes linguistic/graphic names from ontological determinations. «الأسماء الذاتية الثابتة في الرتبة الأولى» vs rank-two determinations is a critical distinction. Some interpretation of 'hum/hāʾulāʾ' depends on Arabic grammar.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.775",
+      "number": 775,
+      "pageStart": 496,
+      "pageEnd": 496,
+      "arabic": "ثم شرع في تكميله من جهة أخص اجزائه الذين هم الملائكة، فعرض كل ما علم آدم مما اشتمل عليه ذاته حقا وخلقا على الملائكة فقال: أنبئوني بأسماء هؤلاء ان كنتم صادقين (31 - البقرة) أي في ظن اهليتكم للخلافة، فاخبروني بأسماء ما في بواطنكم من الاحكام الامكانية التي اقتضت فيكم ما أبديتم من العصبية والقدح وسائر النقائص السابقة، وبأسماء ما في ظواهركم من الوجود وما أفيضت منه في عوالمكم من ملكوت كل شئ، وبأسماء ما اشتملت عليه ذات آدم من خصائص حقية وخواص خلقية.",
+      "english": "He then began to perfect Adam through his most particular components, the angels. He presented to them everything that He had taught Adam and everything contained within Adam's essence, both pertaining to the Real and to creation, saying: 'Tell Me the names of these, if you are truthful' [Qurʾān 2:31]—that is, truthful in assuming yourselves qualified for vicegerency. Tell Me the names of the rulings of possibility hidden in your inward realities which occasioned the partisanship, disparagement, and other shortcomings you have displayed; the names of what appears outwardly in you of existence and what flows from it into your worlds of the dominion [malakūt] of everything; and the Names of the divine properties and creaturely characteristics encompassed by Adam's essence.",
+      "notes": "Part of the author's rereading of the angels' question in Qurʾān 2:30–31; retain theological problem flag and direct exegetical significance.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    }
+  ]
+}
