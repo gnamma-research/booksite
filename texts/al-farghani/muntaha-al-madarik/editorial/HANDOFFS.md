@@ -1,6 +1,17 @@
 # Farghānī · Muntahā al-madārik — cumulative handoff archive
 
-## Latest witnessed-print collation — five loci, three differences (9 November 2026)
+## Current stage VI — eight historical-print comparisons, four differences (9 November 2026)
+
+- [Full Stage VI handoff and exact p37 restart](STAGE_HANDOFF_CRITICAL_006.md); [photographic critical report](I1876_COLLATION_STAGE_006.md).
+- [Cumulative eight-locus reading and source locator register](I1876_COLLATION_CUMULATIVE_003.json) (I1876 printed pp5–10, 13, 18; scanned pages 9–14, 17, 22). Four printed differences and four agreements, **zero manuscript variants**.
+- **New p29 print correction:** `المذكور` in I1876 p13/scan17 replaces the grammatically discordant Beirut `المذكورة`. Earlier p19 and p34 print corrections remain adopted provisionally.
+- **Two new bounded agreements:** p23 knowledge determination and p25 mercy/anger directionality still require substantive interpretation.
+- [Preserved full prior cumulative translation and critical apparatus V](FULL_CUMULATIVE_CRITICAL_005.md); new cumulative archive VI is to append this stage without deleting any earlier text. [198-record bilingual reader](../critical-edition.html) includes links to the actual scanned pages.
+
+**Editorial grade:** 128 page-labelled English working draft; 198 selected modern-source clauses; eight photographed 1876 phrase comparisons; **zero** manuscript folios examined. Not a final manuscript-critical Arabic edition.
+
+
+## Preserved previous stage — five loci, three differences (9 November 2026)
 
 - [Combined photographed 1876-vs-Beirut apparatus](I1876_COLLATION_CUMULATIVE_002.md) and [machine-readable source register](I1876_COLLATION_CUMULATIVE_002.json).
 - Newly corrected Beirut B2007 p34: I1876 printed p18, PDF scan22 **`الحضرة العمائية`**, not B2007 **`الحضرة العملية`**; working translation “Cloud-like Presence.”
