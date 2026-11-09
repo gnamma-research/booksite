@@ -3,14 +3,14 @@
   "title": "Cross-book source and English review register",
   "summary": {
     "date": "2026-11-09",
-    "totalReaderUnits": 291,
+    "totalReaderUnits": 293,
     "M": {
-      "localReading": 44,
-      "localTranslated": 44,
+      "localReading": 46,
+      "localTranslated": 46,
       "fullAuthorialBooks": 6,
       "completeLocalBookContent": false,
-      "mappedAuthorialTopics": 72,
-      "status": "44 bilingual working passages from introduction, Book I, fifteen Book II and select Book III; Book II contains one editorially normalized rather than diplomatic section, and Books IV–VI remain absent from local bilingual reader."
+      "mappedAuthorialTopics": 74,
+      "status": "46 locally paired working units; 17 Book II readings including one explicitly normalized section. Complete six-book al-Manṭiq remains not imported or translated."
     },
     "B": {
       "localReading": 111,
@@ -750,6 +750,54 @@
       "translationAssessment": "Working English only; NOT independently checked clause-by-clause against a separate printed witness; M-K-14 specifically marked as normalized authorial exposition, not a diplomatic copy",
       "sourceAssessment": "Selected Book II original passages; entire six-book al-Manṭiq not yet locally transcribed and translated",
       "nextReview": "Collate against early 1968 printed witness. Resolve the conjectural negation steps in M-K-08 and replace normalized M-K-14 with exact Arabic before certification."
+    },
+    {
+      "id": "M-K-16",
+      "book": "M",
+      "stage": "K",
+      "chapter": 16,
+      "title": "Accidental attribution means predication, not mere inherence",
+      "source": {
+        "page": "82–83",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable transcription; 1968 ACO scan not yet independently collated",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=82&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 912,
+      "englishCharacters": 1431,
+      "sourceEditionReviewed": "Rafed Dār 1402 AH searchable Arabic transcription, 1968 ACO page check pending",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working bilingual translation, NOT independent Arabic witness or expert-certified collation",
+      "sourceAssessment": "source excerpt from Book II; surrounding exercises and remaining books absent",
+      "nextReview": "Verify exact printed Arabic paragraph-by-paragraph, quotations, particles, and scientific illustrations"
+    },
+    {
+      "id": "M-K-17",
+      "book": "M",
+      "stage": "K",
+      "chapter": 17,
+      "title": "Divisions of accidental predicates: necessary, evident, demonstrable, and separable",
+      "source": {
+        "page": "83–84",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable transcription; 1968 ACO scan not yet independently collated",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=83&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2320,
+      "englishCharacters": 3133,
+      "sourceEditionReviewed": "Rafed Dār 1402 AH searchable Arabic transcription, 1968 ACO page check pending",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working bilingual translation, NOT independent Arabic witness or expert-certified collation",
+      "sourceAssessment": "source excerpt from Book II; surrounding exercises and remaining books absent",
+      "nextReview": "Verify exact printed Arabic paragraph-by-paragraph, quotations, particles, and scientific illustrations"
     },
     {
       "id": "M-K-15",
