@@ -571,7 +571,18 @@
             book.sources = [...(book.sources || []), ...(supplement.sources || [])];
             for (const note of supplement.criticalNotes || []) {
               const unit = book.units.find(item => item.id === note.passageId);
-              if (unit) unit.notes = [...(unit.notes || []), { type: note.type, text: note.text, url: note.url }];
+              if (unit) {
+                 // Some critical readings are already recorded in the authorial
+                 // book.json for inclusion in the standalone printed editions.
+                 // Avoid showing the same emendation a second time from supplement.
+                 const existingNotes = unit.notes || [];
+                 const duplicate = existingNotes.some(item =>
+                   (item.id && item.id === note.id) ||
+                   (item.url && item.url === note.url &&
+                    /^Textual emendation/i.test(item.type || '') &&
+                    /^Textual emendation/i.test(note.type || '')));
+                 if (!duplicate) unit.notes = [...existingNotes, { id: note.id, type: note.type, text: note.text, url: note.url }];
+               }
             }
           }
         } catch (_) { /* The authorial reader remains fully available if the optional supplement fails. */ }
