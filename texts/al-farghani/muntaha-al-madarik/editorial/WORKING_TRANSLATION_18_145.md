@@ -768,7 +768,7 @@ Insofar as the Knowing encompasses everything appearing to Him, so that His capa
 
 From His encompassing what is outward and inward in what appears to Him, and what belongs to it, so completely that He cannot lose it, there arises **the Finder** (*al-Wājid*). From the appearance to Him of the inward aspect of everything through its all-pervading character, there arises **the Subtle** (*al-Laṭīf*). From the Knowing's unveiling of that which should remain hidden from others among the inner judgments of what appears to Him, there arises **the Light** (*al-Nūr*).
 
-From the full manifestation to Him of every thing, and of its defects, together with the care to safeguard it against those defects, arises **the Watchful** (*al-Raqīb*). By securing the foundation on which what appears to Him becomes manifest, strengthening its manifestation, there branches **the Wise** (*al-Ḥakīm*). From the appearance to Him of a thing and what opposes it, while the consequences and predominance of the opposing thing are warded off, arises **the Preserver** (*al-Ḥafīẓ*).
+From the full manifestation to Him of every thing, and of its defects, together with the care to safeguard it against those defects, arises **the Watchful** (*al-Raqīb*). By securing the foundation on which what appears to Him becomes manifest, strengthening its manifestation, there branches **the Judge** (*al-Ḥakam*). From the appearance to Him of a thing and what opposes it, while the consequences and predominance of the opposing thing are warded off, arises **the Preserver** (*al-Ḥafīẓ*).
 
 Inasmuch as what appears to the Knowing is manifest to Him outwardly and inwardly, so that no hidden aspect of a thing's identity nor any outward sign remains concealed, and His witnessing and testimony are complete knowledge, there arises **the Guardian-Witness** (*al-Muhaymin*). Inasmuch as the appearance of what is known gives it security against hiddenness and ignorance and the injuries they bring, there arises **the Giver of Security** (*al-Muʾmin*).
 
@@ -777,6 +777,8 @@ These are **fourteen names** whose relationship and derivation belong specifical
 As for **the Willing**, it seeks and inclines toward specifying a thing through existence or nonexistence, through precedence or posteriority, or any meaning and judgment, while what is sought is manifest to it in all the requirements of its reality, such as receptivity, preparedness, beginning and end—
 
 *Page boundary: the attribution of other names to will continues on p. 53.*
+
+**Stage XVI source correction (actual original-resolution I1876 photograph):** On historical printed p. 32, scan 36, the 1876 edition reads «تفرّع ( اسم الحكم ) منه», whereas B2007's online digital transcription reads «تفرّع ( سم الحكيم ) منه». The above English follows the photographed **al-Ḥakam** (“the Judge”) provisionally. The 2007 physical printed leaf and handwritten manuscripts have not been examined; this is a **historical-print vs modern-digital** reading, not an established manuscript variant. [View the archived 2200-pixel scan](../facsimile-I1876-hires/images/scan_0036.jpg) · [Stage XVI apparatus](I1876_COLLATION_STAGE_016.md).
 
 ---
 
