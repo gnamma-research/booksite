@@ -19,6 +19,10 @@ const pointX=lon=>(lon+14)*8,pointY=lat=>(56-lat)*8;
 const link=u=>{try{if(!u)return "";const v=new URL(u,location.href);return /^https?:$/.test(v.protocol)?v.href:""}catch{return ""}};
 let atlas=null,records={events:[],places:[]},attached=false,root=null,expose={};
 function setData(d){records={events:d?.events||[],places:d?.places||[]};}
+function resetScope(){
+ S.layer="both";S.century="all";S.region="all";S.quality="all";
+ S.city="";S.selectedEvent="";S.zoom=1;S.cx=504;S.cy=236;S.showContext=false;
+}
 function readHash(){
  const p=new URLSearchParams(location.hash.slice(1));
  S.layer=["both","author","work"].includes(p.get("geo_layer"))?p.get("geo_layer"):"both";
@@ -49,7 +53,7 @@ function init(target,api){root=target;expose=api||{};if(attached)return;attached
    const [x,y]=t.getAttribute("data-geo-pan").split(",").map(Number);
    S.cx=Math.max(0,Math.min(1008,S.cx+x*1008/S.zoom*.15));S.cy=Math.max(0,Math.min(472,S.cy+y*472/S.zoom*.15));
   }
-  else if(t.hasAttribute("data-geo-clear")){S.city="";S.selectedEvent="";S.zoom=1;S.cx=504;S.cy=236;S.century="all";S.region="all";}
+  else if(t.hasAttribute("data-geo-clear")){resetScope();}
   else if(t.hasAttribute("data-geo-context"))S.showContext=!S.showContext;
   else if(t.hasAttribute("data-geo-work")){const id=t.getAttribute("data-geo-work");expose.select?.(id);return;}
   if(S.city){const p=records.places.find(p=>p.id===S.city);if(p&&S.zoom>1){S.cx=pointX(p.lon);S.cy=pointY(p.lat);}}
@@ -277,5 +281,5 @@ function render(works,subject,view){
  '<div class="geo-main-grid">'+svgMap(groups,view)+detailPanel(visible,works)+'</div>'+legend+narrative+
  '<p class="geo-method">Map evidence policy: an author’s birthplace, residence or death is <em>not</em> automatically the place of composition of that author’s books. The registered work events specify beginnings, completions and recensions separately. City coordinates locate modern reference points, not ancient buildings. The wider OpenITI and Alreq catalogues are not silently geocoded from titles or personal nisbas.</p></div>';
 }
-window.GNAMMAGeography={setData,init,render,readHash,urlState,debug:()=>({events:records.events.length,places:records.places.length,layer:S.layer,century:S.century,region:S.region,quality:S.quality,city:S.city,zoom:S.zoom,context:S.showContext})};
+window.GNAMMAGeography={setData,init,render,readHash,urlState,resetScope,debug:()=>({events:records.events.length,places:records.places.length,layer:S.layer,century:S.century,region:S.region,quality:S.quality,city:S.city,zoom:S.zoom,context:S.showContext})};
 })();
