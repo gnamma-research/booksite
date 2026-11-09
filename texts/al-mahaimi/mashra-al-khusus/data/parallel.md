@@ -5100,3 +5100,297 @@
 
 ---
 
+
+## MSH-P139 — [Editorial] Text Eleven — perfect human, will and knowledge (printed p. 139)
+
+**Arabic — p. 139 — medieval running text, including quotations from Qūnawī**
+
+> ( وقد عاينت ) أي : علمت علما يشبه العيان من الشيخ الكامل المكمل محيي الدين بن عربي قدس اللّه روحه ، أنه رأى النبي صلى اللّه عليه وسلم في بعض وقائعه ، أي كشوفه أو مناجاته ، وأنه صلى اللّه عليه وسلم بشره بقوله : « اللّه أسرع إليك بالإجابة منك » أي : من سرعتك إليه بالدعاء إذ يجيبك بمجرد الإرادة قبل الدعاء ، أورد هذه العبارة الطويلة ، ولما رأى النبي صلى اللّه عليه وسلم يبشره بأن اللّه أسرع إليك . . .
+> إلى آخره ؛ ليشعر أولا أنه رأى من تكون رؤيته رؤية الحق ، ثم ليمدح رؤياه بأنه بشرى من النبي صلى اللّه عليه وسلم ، ثم بيّن ما أجمله مع رعاية عبارة النبي صلى اللّه عليه وسلم . قال رضي اللّه عنه : [ وهذا المقام فوق مقام إجابة الأدعية ، وإنه من خصائص كمال المطاوعة ، ومقامه فوق مقام المطاوعة ، فإن مقام المطاوعة يختص بما سبقت الإشارة إليه من المبادرة إلى امتثال الأوامر ، وتتبع مراضي الحق ، والقيام بحقوقه بقدر الاستطاعة .
+> كما أشار النبي صلى اللّه عليه وسلم في جواب عمه أبي طالب حين قال له : « ما أسرع ربك إلى هواك يا محمد » ، لما رأى من سرعة إجابة الحق له فيما يدعوه فيه . وجاء في رواية أخرى أنه قال له : « ما أطوع ربك لك » ، فقال له النبي صلى اللّه عليه وسلم : « وأنت يا عم إن أطعته أطاعك » .
+> وهذا المقام الذي قلت إنه فوق هذا ، راجع إلى كمال موافاة العبد من حيث حقيقته لما يريده الحق منه بالإرادة الأولى الكلية المتعلقة بحصول كمال الجلاء والاستجلاء ، فإنه الموجب لإيجاد العالم ، والإنسان الكامل الذي هو العين المقصودة للّه على التعيين ، وكل ما سواه فمقصود بطريق التبعية له وبسببه من جهة أن ما لا يوصل إلى المطلوب إلا به ، فهو مطلوب ، فهذا هو المراد من قولي « فمقصود بطريق التبعية ] .
+> أي : ومقام إجابة الإرادة فوق مقام إجابة الأدعية باللسان لما أنه يحتاج زيادة الإخراج إلى اللسان لما يتأخر إجابته إلى ذلك الإخراج ، وأن مقام إجابة الإرادة من خصائص كمال المطاوعة من العبد الموجبة للمطاوعة الإرادة الإلهية ؛ لإرادته قبل التلفظ . ومقام كمال المطاوعة فوق مقام مطلق المطاوعة الموجبة للمطاوعة الإلهية بعد السؤال باللسان ؛ لأن مقام مطلق المطاوعة يختص بما سبقت الإشارة إليه من المبادرة إلى
+
+**English — p. 139 — first-pass translation**
+
+**Al-Mahāʾimī:** In explaining “I witnessed,” he means that he gained from the perfected, perfecting master Muḥyī al-Dīn ibn ʿArabī—may God sanctify his spirit—knowledge resembling direct vision: Ibn ʿArabī had seen the Prophet, blessings and peace upon him, in one of his spiritual occurrences, that is, his unveilings or intimate conversations. The Prophet gave him the good news: “God is quicker in answering you than you are [in turning to Him].” That is, God responds through the mere will, before supplication is uttered. Qūnawī sets out the long expression about the vision, first to indicate whom Ibn ʿArabī saw, and then to extol it as prophetic glad tidings; he subsequently expounds what was compressed in the report while retaining its wording.
+
+**Qūnawī:** “This station is above the station in which prayers are answered. It is among the distinctive characteristics of perfect responsiveness (*kamāl al-muṭāwaʿa*), whose station is above ordinary responsiveness. Ordinary responsiveness is confined to what was indicated previously: promptly carrying out commands, pursuing what pleases the Real, and fulfilling His rights to the extent of one's ability. The Prophet alluded to this when his uncle Abū Ṭālib, seeing how quickly God answered his appeals, said, ‘How swiftly your Lord comes to what you desire, Muḥammad!’ Another report says, ‘How responsive your Lord is to you!’ The Prophet answered, ‘And you, uncle—if you obey Him, He will respond to you.’ The station I called higher than this concerns the servant's complete conformity, in virtue of his reality, to what the Real desires of him through the first, universal will, related to the attainment of complete *jalāʾ* and *istijlāʾ*. That is what calls forth the world's existentiation, together with the Perfect Human who is the intended entity in particular. Everything besides him is intended derivatively, for his sake and by reason of him: whatever is indispensable to attaining the intended end is itself intended. This is what I mean by ‘intended derivatively.’”
+
+**Al-Mahāʾimī:** The station at which mere willing is answered is higher than the station of verbally expressed prayers, since the latter requires the additional act of giving voice to the request before the answer. Response to willing is a characteristic of the servant's perfected responsiveness, through which the divine will responds to his will before he speaks. Perfect responsiveness is thus higher than simple responsiveness, wherein the divine response follows verbal petition. Ordinary responsiveness, as previously described, consists in hastening to [the duties whose detailed account continues on p. 140].
+
+**Editorial textual note:** The editor reports that he could not locate sources for the two Abū Ṭālib reports; their verification remains unresolved. Page ends in the middle of al-Mahāʾimī’s sentence.
+
+**Source:** https://ablibrary.net/book_content/b/9637/139?lang=ar
+
+---
+
+
+## MSH-P140 — [Editorial] Text Eleven — perfect human, will and knowledge (printed p. 140)
+
+**Arabic — p. 140 — medieval running text, including quotations from Qūnawī**
+
+> امتثال أوامر الحق من الواجبات ، وتتبع مراضي الحق من المندوبات ، والقيام بحقوق الحق من واجب الاعتقاد الصحيح فيه ، ومن الإخلاص في العمل بترك طلب العوض والغرض ، فهو بقدر الاستطاعة قيد به ؛ لأن الإتيان بذلك على وجه الكمال إنما هو مقام كمال المطاوعة .
+> وإنما أعاد هذا مع أنه سبقت الإشارة إليه ؛ لأن السابق يوهم أنه هو كمال المطاوعة ، وليس كذلك ، بل هو مطلق المطاوعة ، ثم استدل على استلزام مطلق المطاوعة للمطاوعة الإلهية في إجابة سؤاله صلى اللّه عليه وسلم : « وأنت يا عمّ إن أطعته » ، أي إنما سارع ربي إلى هواي وأطاعني ، لمطاوعتي إياه جزاء عليه ، وليس يختص بي بل هو عام لكل مطيع له ، فدل على أن مطلق الإطاعة من العبد يستوجب إجابة الحق سؤاله ، وقول أبي طالب : « ما أسرع ربك إلى هواك » ، أي إلى ما تحبه فتسأله فيجيبك أسرع من إجابته غيرك .
+> ومعنى ما في الرواية الأخرى : « ما أطوع ربك إليك » أي : أسرع إجابة إلى دعائك ؛ فعلى الرواية الأولى يكون عليه كلامه عليه من قبيل المشاكلة باعتبار أول كلامه عليه السلام السلام فقط ، وعلى الرواية الثانية من قبيل المشاكلة باعتبار قول أبي طالب أيضا ، وإنما أورد الروايتين ؛ لأن الأولى تدل على سرعة الإجابة دون الثانية ؛ لأنها تدل على مطلق الإجابة ، إذ هي المرادة من الإطاعة الإلهية ، والثانية تدل على أن هذا الاطلاع شائع في الجاهلية والإسلام من غير منع .
+> فهذا مقام مطلق المطاوعة ، وأما كمال المطاوعة ، فهو المشار إليه بقوله : وهذا المقام الذي أنه فوق هذا أي : فوق قوته مطلق الكمال راجع إلى كمال مواطآت العبد ، لا من حيث حقيقته الذي هو الوجود المطلق لكن باعتبار تعينه به ، ولهذا لو ورد لفظ المواتاة لما يريده الحق فيه بالإرادة الأولى ، أي : المتعلقة بما هو مراد بالذات ، لكونه أكمل البريات ، وهي الإرادة الكلية التي أريد بها ظهور كمال يمكن ظهوره ، وهي المتعلقة بحصول كمال الجلاء والاستجلاء .
+> فالجلاء ظهور الذات المقدسة لذاته في ذاته ، والاستجلاء ظهور
+
+**English — p. 140 — first-pass translation**
+
+**Al-Mahāʾimī:** [The ordinary station entails] carrying out the Real's obligatory commands, pursuing His pleasure through recommended works, and observing His rights by holding correct belief concerning Him and acting sincerely, without seeking payment or self-interested advantage. Qūnawī restricts these activities to what lies within one's capacity, because their perfect accomplishment properly belongs to the station of perfected responsiveness.
+
+He repeats the point, though it has already been mentioned, lest the previous discussion be taken to concern *perfected* responsiveness when it concerned responsiveness without that qualification. Then he argues that the servant's responsiveness entails a divine response to his request, using the reported words, “Uncle, if you obey Him ...” The intended sense is: my Lord hastened to answer what I desired, in recompense for my compliance with Him. This principle, in the report's terms, is not peculiar to the Prophet but applies to anyone who obeys God. Thus the servant's obedience entails that the Real responds to his request. Abū Ṭālib's “How swiftly your Lord comes to your desire” means that He responds to what you love and ask for more swiftly than to others.
+
+In the other transmitted version, “How responsive your Lord is to you” means how promptly He answers your supplication. On the first reading, the Prophet's own rejoinder employs the rhetorical figure of *mushākala*, matching the expression of the earlier statement; on the second, Abū Ṭālib's own expression also belongs to this figure. The two versions are included because the first emphasizes the speed of response, whereas the second indicates response simply—this being the meaning intended by calling God “responsive.” The second also suggests that this way of speaking is found both before and after Islam, without being prohibited.
+
+Such is the station of responsiveness in general. The superior station of perfected responsiveness is what Qūnawī calls the servant's complete accord with what the Real desires through the first will, namely the will whose object is intended intrinsically, because the Perfect Human is the most complete of creatures. This universal will is directed toward the manifestation of every perfection capable of manifestation and toward the full realization of *jalāʾ* and *istijlāʾ*. *Jalāʾ* means the holy Essence's manifestation to itself within itself, while *istijlāʾ* means [the corresponding manifestation expounded on p. 141].
+
+**Editorial textual note:** Several awkward expressions in the transcription of the fourth paragraph require comparison with print. Modern marginal notes reporting that the editor could not locate the prophetic reports are excluded.
+
+**Source:** https://ablibrary.net/book_content/b/9637/140?lang=ar
+
+---
+
+
+## MSH-P141 — [Editorial] Text Eleven — perfect human, will and knowledge (printed p. 141)
+
+**Arabic — p. 141 — medieval running text, including quotations from Qūnawī**
+
+> الذات للذات في التعينات ، وكمال الأولى أن يظهر أيضا في مراتب الأسماء والصفات ، وكمال الثانية أن يجتمع بتلك التعينات إجمالا وتفصيلا في التعين الجامع للتعينات في المرتبة الجامعية الإنسانية ، فإنه أي طلب كمال الجلاء والاستجلاء ، هو الموجب لإيجاد العالم الذي به تتفصل الكمالات المجملة في الذات ، والإنسان الكامل الذي تصير به الكمالات مجملة بعد التفصيل ، فهو الجامع للكمالات الإجمالية والتفصيلية جميعا ؛ فلهذا كان الإنسان الكامل عينا مقصودة للّه تعالى على التعين ، أي من حيث تلك الإرادة ، وإلا فهو سبحانه وتعالى غني عن العالمين ، وكل ما سواه كان إنسانا غير كامل أو غير إنسان ، فمقصود بطريق للإنسان الكامل ، لكونه كالمقدمات والمتممات له .
+> ولهذا قال رضي اللّه عنه : ( وبسببه ) أي : بسبب الإنسان انتسب إلى إرادة الحق ظهوره على الكمال ، وليس المظهر كامل من حيث أن ما لا يوصل إلى المطلوب إلا به ، فهو مطلوب ؛ فالمطلوب الأول مراد بالذات ، والثاني مطلوب بتبعية طلب الأول ؛ ولذا قال : فهذا هو المراد من قولي بطريق التبعية . والحاصل عن هذا الكامل لما كان مرادا بالذات ؛ لكونه مظهرا كاملا له مراتب ، يشكل ما يريده بالإرادة الأولى الكلية ، كان مجيبا لإرادته من غير توقف على السؤال باللسان ، بخلاف المطيع الأول ، فافهم .
+> قال رضي اللّه عنه : [ وإنما كان الإنسان الكامل هو المراد بعينه دون غيره من أجل أنه مجلى تام للحق يظهر الحق به من حيث ذاته وجميع أسمائه وصفاته وأحكامه واعتباراته على نحو ما يعلم نفسه بنفسه في نفسه ، وما ينطوي عليه من أسمائه وصفاته وسائر ما أشرت إليه من الأحكام والاعتبارات وحقائق معلوماته التي في أعيان مكوناته دون تغيير يوجبه نقص القبول وخلل في مرآتيته يفضي بعدم ظهور ما ينطبع فيه على خلاف ما هو عليه في نفسه ] .
+> إشارة إلى سبب كون الإنسان الكامل من الأقطاب والأفراد مرادا للحق دون غيره ، كالعقول والنفوس والأجسام وغيرها ، وهو أن الإنسان الكامل إنما كان مرادا للحق من أجل مجلى تام للحق ، إجمالا وتفصيلا من غير نقص وخلل في مظهريته ؛ وذلك أنه يظهر به الحق من حيث ذاته ، لكنه متصف بالوجود ، وجميع أسمائه وصفاته ؛ لأنه حيّ ، عالم ، قادر ، مريد ، سميع ، بصير ، متكلم ، وفيه الحياة والعلم والقدرة والإرادة والسمع
+
+**English — p. 141 — first-pass translation**
+
+**Al-Mahāʾimī:** [*Istijlāʾ* is] the Essence's manifestation to itself within determinations. The perfection of the first [*jalāʾ*] includes appearing in the ranks of names and attributes; the perfection of the second is that these determinations, both in their undifferentiated and differentiated aspects, be gathered together within the determination comprising all determinations, namely the comprehensive human rank. The pursuit of the perfection of *jalāʾ* and *istijlāʾ* occasions the existentiation of the cosmos, in which perfections folded together in the Essence become differentiated, and of the Perfect Human, in whom those perfections are again brought together after differentiation. He therefore comprises both the undifferentiated and the differentiated perfections. Thus the Perfect Human is specifically intended by God **under this consideration of the will**; otherwise God, exalted is He, is independent of all worlds. Everything other than the Perfect Human—whether a human being who is not perfect or another kind of being—is intended in a subordinate way, as an antecedent or completion relative to him.
+
+Qūnawī therefore adds “and because of him”: through the human being the complete manifestation of the Real is connected with the divine will. The principle is that whatever is indispensable to an end is also intended, but the first object is desired for its own sake, whereas the second is desired derivatively. Because the Perfect Human, as complete locus of manifestation, is intrinsically intended under this relation, and because his ranks express what is intended by the first universal will, his willing is answered without the further condition of verbal petition. Such is not the case with the merely obedient servant.
+
+**Qūnawī:** “The Perfect Human, rather than any other, is specifically intended because he is a complete place of manifestation of the Real. Through him the Real manifests in respect of His Essence and all His names, attributes, rulings, and considerations, as He knows Himself through Himself within Himself, including what His names, attributes, and other rulings and considerations contain, together with the realities of what He knows in the entities of His creatures. This takes place without distortion caused by a deficiency of receptivity or an imperfection in the mirror, which would otherwise cause the reflected thing to appear differently from what it is in itself.”
+
+**Al-Mahāʾimī:** This explains why, among poles and singular saints, the Perfect Human is intended by the Real rather than the separate intellects, souls, bodies, or others. He is a complete locus of manifestation in both comprehensive and detailed respects, without defect or distortion in that manifestation. Through him the Real manifests in respect of the Essence, while the human being is nevertheless qualified by existence and displays the names and attributes: he lives, knows, possesses power and will, hears, sees, and speaks; within him are life, knowledge, power, will, hearing [continued on p. 142].
+
+**Editorial textual note:** The copy-text reads «فمقصود بطريق للإنسان الكامل» and «ليس المظهر كامل» in awkward constructions; retain the witnessed reading and flag for collation.
+
+**Source:** https://ablibrary.net/book_content/b/9637/141?lang=ar
+
+---
+
+
+## MSH-P142 — [Editorial] Text Eleven — perfect human, will and knowledge (printed p. 142)
+
+**Arabic — p. 142 — medieval running text, including quotations from Qūnawī**
+
+> والبصر والكلام وأحكامه المتعلقة بذاته وصفاته ؛ لكونه واجبا به ، ممكنا بنفسه واعتباراته من حيث الإطلاق والتقييد وسائر النسب ، مع ظهور كل منها فيه على الكمال ، فإنه يظهر فيه الذات على نحو ما يعلم نفسه بنفسه لا بعلم زائد ، ولا باعتبار ما يعلم نفسه في المظاهر التي سواه ؛ وذلك عن كونه فانيا فيه ، ويظهر أسماءه وصفاته على نحو علمه بما ينطوي عليه ذاته من أسمائه وصفاته وسائر ما أشرت إليه من الأحكام والاعتبارات ، وذلك عند كونه باقيا به ، ويظهر فيه أيضا حقائق معلوماته التي هي الأعيان الثابتة لمكوناته ، لكونه مختصرا من العالم الكبير ، فهو جامع لنسختي الحق والخلق على ظهور كل منها فيه على الكمال دون تغيير من الظهورين ، سببه نقص قبول المظهر وذلك النقص بخلل في مرآتية المظهر يقتضي ذلك الخلل ظهور ما ينطبع فيه على خلاف ما هو عليه في نفسه ، كما هو شأن المرايا المحسوسة إذا كانت معوجة أو مستطيلة يظهر ذلك الاعوجاج والاستطالة فيما انطبع فيها من الصور .
+> وإنما كان قبول الإنسان كاملا غير مختل بحسب المرآتية ؛ لأنه مظهر كامل لذاته وأسمائه وصفاته وسائر اعتباراته ، بخلاف سائر العوام ، فافهم . قال رضي اللّه عنه : [ فإنّ من كان هذا شأنه ، لا يكون له إرادة ممتازة عن إرادة الحق ، بل هو مرآة إرادة ربه وغيرها من الصفات ؛ وحينئذ يستهلك دعاءه في إرادته التي لا تغاير إرادة ربه ، فيقع ما يريده كما قال اللّه تعالى : فَعَّالٌ لِما يُرِيدُ [ هود : 107 ] .
+> ومن تحقق بما ذكرنا ، فإنه إن دعا ، إنما يدعو بألسنة العالمين ومراتبهم من كونه مرآة لجميعهم ؛ كما أنه متى ترك الدعاء ، إنما يتركه من حيث كونه مجلى للحق باعتبار أحد وجهيه الذي يلي الجناب الإلهي ، ولا يغايره من كونه : فَعَّالٌ لِما يُرِيدُ [ هود : 107 ] .
+> تعليل لقوله : وإنه من خصائص كمال المطاوعة ، أورد بعد بيان معناه ، والفرق بينه
+
+**English — p. 142 — first-pass translation**
+
+**Al-Mahāʾimī:** [The qualities previously mentioned continue with] sight, speech, and the rulings attaching to the Essence and attributes. The Perfect Human is necessary *through Him*, while possible *in himself*, and displays the relevant considerations of unrestrictedness, restriction, and other relations in their completeness. The Essence manifests in him according to the manner in which God knows Himself by Himself, not by an added knowledge nor under the consideration of how He knows Himself in other loci. This is the human being's *fanāʾ* in Him. The names and attributes also manifest in the manner of God's knowledge of what His Essence comprises of names, attributes, rulings, and considerations: this is the servant's *baqāʾ* through Him. There manifest in him, too, the realities of God's known things—the fixed entities of His creatures—because he is a microcosm of the greater world. Thus he gathers both the divine and created copies, each manifest in him completely and without a distortion arising from deficient receptivity. Such distortion would mean a defect in the mirror's functioning, as with a physical mirror that is bent or elongated and consequently alters the reflected shapes.
+
+The human being's reception is perfect in respect of its mirroring because he is the complete locus of manifestation for Essence, names, attributes, and the remaining considerations, unlike ordinary people.
+
+**Qūnawī:** “One who is of this kind has no will distinguished from the will of the Real. He is, rather, a mirror of his Lord's will and other attributes. Accordingly, his supplication is absorbed into his will, which does not differ from his Lord's will, and what he wills comes about, as God has said: ‘Effecting whatever He wills’ (Q 11:107). Whoever realizes what we have described, if he supplicates, supplicates with the tongues and through the ranks of all the worlds, being a mirror of them all. If he refrains from supplication, he does so as a locus of manifestation of the Real under one of his two aspects—the aspect facing the divine presence; in that respect he does not differ from Him insofar as He is ‘the One effecting whatever He wills.’”
+
+**Al-Mahāʾimī:** This supplies the explanation of the phrase “among the distinctive characteristics of perfect responsiveness,” after the meaning of that station and its difference from simple responsiveness have been expounded [the sentence continues on p. 143].
+
+**Editorial textual note:** A long quotation attributed to Ibn ʿArabī in the modern editor’s footnote (from an answer numbered 108) has been excluded from the translated running text. The phrase “necessary through Him, possible in himself” must not be confused with unqualified creaturely necessity.
+
+**Source:** https://ablibrary.net/book_content/b/9637/142?lang=ar
+
+---
+
+
+## MSH-P143 — [Editorial] Text Eleven — perfect human, will and knowledge (printed p. 143)
+
+**Arabic — p. 143 — medieval running text, including quotations from Qūnawī**
+
+> وبين مطلق المطاوعة ، أي إنما إجابة مجرد الإرادة من خصائص كمال المطاوعة ؛ لأن العبد المتصف بها لما كان مرآة من حيث حقيقته لما يريده الحق منه بالإرادة الأولى الكلية المتعلقة بحصول كمال الجلاء والاستجلاء ، لا يكون له إرادة ممتازة عن إرادة الحق ، بل هذا العبد مرآة إرادة ربه ، ومرآة غيرها من الصفات ، وإرادته ظل إرادته عزّ وجل ، بل عينها بحسب الحقيقة ، فلا يحتاج إلى الدعاء ؛ لأنه حينئذ يستهلك دعاءه في إرادته ، وإرادته لا تغاير إرادة ربه ، فيقع ما يريد الرب الذي هو فعال لما يريد ، لا يختلف عن إرادته مراد ما بوجه من الوجوه ، إذ الوجود العام مطيع له بالطبع ، إطاعة أعضاء الإنسان له عند صحته وكمال قواه ، فهكذا ما هو مرآته لتنورها بنوره ، فيؤثر فيما يقابله تنوير الماء المتنور بالشمس ما يقابله من الحائط ، فيكون فعال لما يريد بربه لا بنفسه ، ثم ذكر ما هو أعلى منه ، وهو من تحقق بما ذكرناه من كمال الجلاء والاستجلاء ، وكان في مقام البقاء ، فلا يستهلك دعاءه ، فإنه يستجاب دعاؤه وإرادته جميعا ؛ لأنه إنما يدعو بألسنة العالمين الظاهرة وبمراتبهم التي هي أسئلة معنوية من سؤال الحال والاستعداد وغيرها ، وكل هذا ناشئ من كونه مرآة لجميعهم ، ودعاء الكل مقبول لا محالة ، وإن ترك الدعاء تجاب إرادته ؛ لأنه إنما يتركه من حيث كونه مجلى للحق ، والحق لا يكون داعيا ، فإنه من شأن العبد ، وهو تعالى أعلى من أن يصير عبدا ، كما أن العبد أخس من أن يصير ربّا ، وكونه مجلى للحق باعتبار أحد وجهيه ، وهو أن كل مقيد له وجه إلى وجه الإطلاق ، وقد كمل هذا الوجه في حق هذا العبد إذ كان مظهرا كاملا ، فلا يغايره من جهة كونه فعالا لما يريد ؛ لأن إرادته مرآة إرادة الحق ، فيكون مجاب الإرادة لا محالة .
+> فافهم . قال : [ وليس وراء هذا المقام مرمى لرام ، ولا مرقى إلى مرتبة ولا مقام ، ودونه المتوجه إلى الحق بمعرفة تامة وتصور صحيح المقصود بخطاب : ادْعُونِي أَسْتَجِبْ لَكُمْ ، وخبر الحق صدق ، وقد تيسر ذلك لهذا العبد المشار إليه ، فلزمت النتيجة التي هي الإجابة ، ولا بدّ بخلاف غيره من المتوجهين المذكور شأنهم . فاعلم ذلك تفز بأسرار عزيزة وعلوم غريبة لم تنساق إليها الأفكار والأفهام ولا رقمتها الأنامل بالأقلام واللّه المرشد ] . أي : وليس وراء مقام التحقيق بما ذكرنا من كمال المطاوعة التي هي مرآة للعبد من
+
+**English — p. 143 — first-pass translation**
+
+**Al-Mahāʾimī:** [The explanation concerns] the distinction from responsiveness in general. Answering a mere act of willing is a mark of perfected responsiveness because the servant of this qualification mirrors, in his very reality, what the Real desires of him in the first universal will directed toward complete *jalāʾ* and *istijlāʾ*. Consequently, he has no will distinct from the Real's will: he mirrors his Lord's will and the other divine attributes. His will is the shadow of the divine will—indeed, under the consideration of reality, its very counterpart. He therefore does not need to supplicate, because his petition is absorbed into willing, and his willing does not stand apart from the will of his Lord. What occurs is whatever the Lord wills, since the Real effects what He wills and no intended thing fails to conform to that will. Universal existence responds to Him by nature, like the limbs of a healthy human being under his perfected faculties. A mirror lit by His light conveys the illumination to what faces it, as water lit by the sun lights up an opposing wall. Therefore **he effects what he wills through his Lord, not through himself**.
+
+Qūnawī then describes one who has attained a still higher realization of *jalāʾ* and *istijlāʾ* and abides in *baqāʾ*. Such a person does not dissolve his petition into willing; rather, both his petition and his willing are answered. If he prays, he does so through the outward tongues of all worlds and through their ranks—which express implicit requests through states, receptivities, and other conditions—because he mirrors them all. Their petitions are, on this account, answered. If he does not pray, his will is answered because his omission of petition proceeds from his being a locus of manifestation of the Real. The Real does not supplicate, for supplication belongs to the servant; **God is too exalted to become a servant, just as a servant is too lowly to become a Lord**. Every restricted thing has an aspect facing unrestrictedness; in this servant that aspect is perfected because he is a complete locus of manifestation. Consequently his will mirrors the will of the One who effects what He wills.
+
+**Qūnawī:** “Beyond this station there is no further target for the aspirant, no ladder to another rank or station. Beneath it stands one who turns to the Real with complete knowledge and correct conception, the one meant by the address, ‘Call upon Me and I shall answer you.’ The Real's report is true. As that servant has succeeded in doing what has been described, the conclusion necessarily follows: he must be answered—unlike the other kinds of people turning toward Him whose states we have discussed. Know this and you will attain precious secrets and unfamiliar sciences which neither thoughts nor understandings have reached and which fingers have not inscribed with pens. God is the guide.”
+
+**Al-Mahāʾimī:** That is, there is no object of aspiration beyond this actualization of perfect responsiveness, through which the servant becomes a mirror of [the explanation continues on p. 144].
+
+**Editorial textual note:** The text gives strong identity-language concerning willing but immediately qualifies the causal agency as “through his Lord, not through himself”; do not cite the former without the latter.
+
+**Source:** https://ablibrary.net/book_content/b/9637/143?lang=ar
+
+---
+
+
+## MSH-P144 — [Editorial] Text Eleven concludes; Text Twelve begins (printed p. 144)
+
+**Arabic — p. 144 — medieval running text, including quotations from Qūnawī**
+
+> حيث حقيقته لما يريده الحق منه بالإرادة الأولى الكلية المتعلقة بكمال الجلاء والاستجلاء والتحقيق به في مقام البقاء مرمى لرام ترقى إليه همته فيقصده ، ولا مرقى إلى المرتبة ؛ لأنها أجمع للمراتب ولا مقام ، لأنه فوق المقامات كلها ، فيكون مستجاب الدعوة والإرادة جميعا ، ودون هذا الكامل المتوجه إلى الحق بمعرفة تامة وتصور صحيح ، وهو الذي لا يناقض الحق بوجه من الوجوه بلوغه غاية ما يمكن الوصول إليه إلا ما يحيط بكنه حقيقته ، إذ هو محال ، وهذا هو الذي يجيب إجابته بمقتضى : ادْعُونِي أَسْتَجِبْ لَكُمْ [ غافر : 60 ] ، لا إرادته ، وهو المقصود بخطاب ادعوني إذ من يجاب إرادته لا يحتاج إلى الدعاء إلا لتحقيق مقام العبودية وكونه مرآة العالم .
+> ثم ذكر أنه وإن كان دون الأول ، لا يجوز ترك إجابته ؛ لأن خبر الحق صدق ، وقد أخبر بالإجابة عند دعوته ، وقد تيسر ذلك الدعاء لهذا العبد بالمعرفة التامة والتصور الصحيح ، فلزمت نتيجة الوعد المذكور التي هي الإجابة . شبهت نتيجة القياس في اللزوم ثم ألزم بقوله : « ولا بدّ » بخلاف غيره من المتوجهين المذكور شأنهم في التوسط أو الحجاب الذي يتوجه إلى صورة مختلفة ، فإن إجابتهم جائزة لا واجبة .
+> وإنما أوردهم إشعارا بأنه لو لم يجب إجابة العارف التام المعرفة ؛ لكان مثل هؤلاء في جواز ترك الإجابة ، لكن الحكمة الإلهية تأبى ذلك ، ولم يدخلوا في : ادْعُونِي أَسْتَجِبْ لَكُمْ [ غافر : 60 ] ؛ لأنهم لم يدعوه مستحضرين له بالتصور الصحيح .
+> فاعلم هذه القاعدة تفز بأسرار عزيزة من لزوم إجابة الدعوة أو الإرادة أو عدم لزوم أحدهما ، وعلم غريبه من معرفة الكامل ، وغير الكامل على وجه خاص كلي حاضر لم يتسابق إليها الأفكار ، التي لا تحيط بهذه الأمور الكشفية بل ، والأفهام الذوقية ولا رقمتها الأنامل بالأقلام ؛ إذ هي فرع الفكر والفهم ، وإنما أورده ؛ لأنه ما يتوهم « يعلمون ما يسطرون » ، واللّه المرشد إلى مثل هذه الأسرار والعلوم بتجلياته الذاتية لا غير ، فافهم .
+> النص الثاني عشر : قال رضي اللّه عنه : [ نص شريف ] لما ذكر في النص السابق : الأتم معرفته تكون الإجابة إليه أسرع ، شرع في بيان كمال المعرفة ، وبيّن فيها أيضا كمال الإنسان أن يكون مظهر الحق على
+
+**English — p. 144 — first-pass translation**
+
+**Al-Mahāʾimī:** [The preceding section closes:] There is no further object at which aspiration can aim beyond the actualization of the servant as a mirror, in his own reality, of what the Real desires through the first universal will relating to the perfection of *jalāʾ* and *istijlāʾ*, together with that realization in the station of *baqāʾ*. There is no ascent to a further rank, because this rank comprises all ranks, and no higher station, for it is beyond the stations. Both the prayer and the willing of such a person are answered.
+
+Below this complete one is the person turning to the Real with complete knowledge and a correct conception which does not contradict the Real in any respect, who has attained the highest degree accessible short of encompassing the very *quiddity* of the divine Reality—something impossible. This person receives an answer according to “Call upon Me; I will answer you” (Q 40:60), but does not receive the same kind of immediate fulfillment of mere willing. He is addressed by “Call upon Me” precisely because someone whose willing is already answered has no need of petition except to realize servanthood and the task of mirroring the world.
+
+Although this knowledgeable servant is below the first, the response to his prayer cannot be withheld: the Real's report is true, and He has promised an answer where supplication occurs. The servant's complete knowledge and correct conception make the relevant supplication possible, so the promised conclusion—response—follows necessarily, like a conclusion in an argument. Qūnawī adds “inevitably” to underscore the necessity, unlike the middle and veiled people described before, who direct themselves toward a different conceived image; answering them remains possible rather than necessary.
+
+These other cases are mentioned to show the difference: if the person of complete knowledge could be left unanswered, he would be like the others, but divine wisdom does not permit this. Their supplication does not fall under the promise in the same way because they have not invoked God while apprehending Him under a correct conception. To understand this principle is to attain secrets concerning the necessity—or otherwise—of answers to petitions and willing, and an uncommon understanding of the complete and incomplete knower. These disclosures outrun independent thought and discursive understanding; guidance here comes through essential self-disclosures.
+
+**[Editorial] Text Twelve begins. Al-Mahāʾimī:** Qūnawī calls it a “noble text” because the previous text argued that those with the fullest knowledge receive the quickest answer. He now explains the perfection of knowledge, and also the perfection of the human being as a locus of manifestation of the Real, in the manner [continued on p. 145].
+
+**Editorial textual note:** At least two expressions in the middle paragraph appear syntactically defective in the online transcription. Translate provisionally pending printed collation.
+
+**Source:** https://ablibrary.net/book_content/b/9637/144?lang=ar
+
+---
+
+
+## MSH-P145 — [Editorial] Text Twelve — highest degree of knowledge (printed p. 145)
+
+**Arabic — p. 145 — medieval running text, including quotations from Qūnawī**
+
+> نحو ما يعلم نفسه بنفسه في نفسه ، وأنه يكون مرآة لما يريد الحق بالإرادة الأولى الكلية ، وما يترتب على ذلك مع بيان كيفيتها ، وهي أمور عظيمة ، فلهذا عبر عنه بأنه نص شريف .
+> قال رضي اللّه عنه : [ اعلم أن أعلى درجات العلم بالشيء أي شيء كان وبالنسبة إلى أي عالم كان ، وسواء كان المعلوم شيئا واحدا أو أشياء ، إنما تحصل بالاتحاد بالمعلوم وعدم مغايرة العالم له ؛ لأن سبب الجهل بالشيء المانع من كمال إدراكه ، ليس غير غلبة حكم ما به يمتاز كل واحد منهما عن الآخر ، فإن ذلك بعد معنوي والبعد حيث كان مانع من كمال إدراك العبد البعيد وتفاوت درجات العلم بالشيء بمقدار تفاوت غلبة حكم ما به يتحد العالم بالمعلوم ، وأنه القرب الحقيقي الرافع للفصل الذي هو البعد الحقيقي المشار إليه بأحكام ما به المباينة والامتياز ] .
+> الفرق بين هذا ، وبين ما تقدم في التفريع الثالث من تفاريع النصوص الأول ، أن المذكور ثمة بيان كمال الإحاطة بالشيء وأنه محال ، وهنا بيان سبب العلم ، وكيف تحصيله إلى حد ليس فوقه إمكان إدراك .
+> أي إنما يحصل أعلى درجات العلم بالشيء حتى لو كان المعلوم به تعالى ؛ لأجاب من توجه إليه في دعوته ، لكنه أي : شيء كان من الحق أو الخلق ، وبالنسبة إلى أي عالم من الحق أو الخلق ، وسواء كان شيئا واحدا بالذات كالبسائط أو بالعرض كالمركبات أو أشياء كثيرة من حيث هي كثيرة ، فهذه ثمانية أقسام : أن يعلم الحق نفسه وحدها ، أو مع العالم ، أو شخصا من العالم وحده . أن مع غيره من العالم . أو يعلم أحد من الخلق الحق وحده ، أو مع العالم ، أو نفسه وحدها . أو مع آخر من العالم بالاتحاد بالمعلوم وعدم مغايرة العالم له .
+> وهذا في الأول والسابع ظاهر ، وأما في بقية الأقسام ؛ فلأن المعلوم لا بدّ وأن يحصل للعالم مثاله وينتقش في مرآة علمه صورة بحيث لا يتميز غير المرآة في رأي العين ، وهذا هو المراد بالاتحاد ، على أن كل شيء متحد بالكل من حيث الإطلاق ، وهو الغاية في التجرد كمال علمه ، إذ لا مغايرة في مقام الإطلاق .
+> ثم استدل على ذلك بأن سبب الجهل إنما احتاج إلى السبب ؛ لأنه عارض بالنسبة إلى الوجود ؛ لأنه يستلزم صفة العلم على ما مر ، فلهذا فسره بالمانع من كمال الإدراك ، ولم يجعله مانعا من نفس الإدراك ؛ لأن كل شيء مدرك بوجه من الوجوه كالشيئية والوجودية ، وذلك من آثار الاتحاد في الإطلاق الأصلي ، وليس ذلك السبب غير غلبة
+
+**English — p. 145 — first-pass translation**
+
+**Al-Mahāʾimī:** [The Perfect Human is a manifestation of the Real] in the way He knows Himself through Himself within Himself, and a mirror for what the Real intends by the first universal will, together with the consequences and manner of this mirroring. These are weighty matters, hence the description “a noble text.”
+
+**Qūnawī:** “Know that the highest degrees of knowledge of anything, for any knower whatever, whether the object of knowledge be one thing or many things, arise only through union with the known and the absence of otherness between the knower and it. The cause of ignorance of a thing, preventing full apprehension of it, is nothing other than the predominance of the ruling of that by which the knower and known are each distinguished from the other. This is a non-spatial distance; distance, wherever it occurs, obstructs complete apprehension of what is distant. Degrees of knowing a thing vary according to the extent to which the ruling of that by which the knower and known are united prevails. This is true nearness, which removes the separation that constitutes true remoteness, indicated by the rulings of difference and distinction.”
+
+**Al-Mahāʾimī:** The difference between this discussion and the third derivative proposition of the earlier texts is that the latter dealt with perfect encompassing of a thing and showed that such encompassing is impossible. The present discussion concerns the cause of knowledge and how it can attain the highest possible degree of apprehension.
+
+The highest degree of knowledge is considered whether its object is the Real or creation, and whether its knower belongs to the order of the Real or of creatures. The object may be one intrinsically, like a simple thing; one accidentally, like a composite; or plural as plural. Al-Mahāʾimī schematically divides the cases into eight: the Real knowing Himself alone, Himself with the world, one creature alone, or that creature with the rest of the world; and a creature knowing the Real alone, the Real with the world, itself alone, or itself with another creature. Each case is approached through the union of knower and known and the exclusion of otherness.
+
+In the first and seventh cases this is evident. In the others, the known must have a likeness present to the knower, with its image impressed in the mirror of knowledge so that, to vision, it is not distinguished from the mirror. **This** is what “union” signifies in the explanatory analogy. Moreover, each thing is united with all things in the consideration of unrestrictedness, where abstraction reaches its highest limit and otherness is absent.
+
+He then explains why ignorance requires a cause: it is adventitious relative to existence, which entails knowledge in the sense already discussed. For this reason, ignorance is defined as an obstacle to the **perfection** of apprehension, not to every apprehension whatsoever: each thing is apprehended under some aspect, such as its thingness or existence. That is an effect of the original unity under unrestrictedness. The obstructing factor is the predominance of [the distinguishing ruling, continued on p. 146].
+
+**Editorial textual note:** The transcription appears awkward in its enumeration of eight cases; the eightfold scheme follows the intended contrasts but its precise syntax needs collation. The mirror analogy is not evidence for the literal numerical identity of created knower and known.
+
+**Source:** https://ablibrary.net/book_content/b/9637/145?lang=ar
+
+---
+
+
+## MSH-P146 — [Editorial] Text Eleven — perfect human, will and knowledge (printed p. 146)
+
+**Arabic — p. 146 — medieval running text, including quotations from Qūnawī**
+
+> حكم ما به يمتاز كل واحد من العالم والمعلوم عن الآخر . ولما أوهم هذا النوع مصادرة على المطلوب ، نية بأنه بعد معنوي ، فيوجب الجهل ؛ لأن البعد حيث كان أي : سواء كان في الأمور الحسية أو المعنوية مانع من كمال إدراك البعيد ؛ إذ لا يعرف معه جميع عوارضه من الكيفيات والمقادير .
+> هذا في البعد الحسي ظاهر ، وأما في المعنوي ، فبطريق القياس المسمى بالتمثيل في الظاهر وبطريق التحقيق في الحقيقة ، أن البعد المعنوي موجب لعدم حصول أمثال المعلوم للعالم على الكمال ، كما أن البعد الحسي مانع من تمثيل المرئي في حاسة الرائي على الكمال ، وإذا علم أن البعد سبب الجهل ، فالقرب سبب العلم . ولما كانا أمرين إضافيين غير متحدين بل مختلفين اختلافا غير منضبط ، فلهما درجات تفاوت درجات العلم بالشيء والجهل به من حيث الإحاطة بمقدار تفاوت غلبة حكم ما به يتحد العالم بالمعلوم .
+> وسمي رضي اللّه عنه حكم ما به الاتحاد بالقرب الحقيقي ؛ لأن القرب في المسافة والزمان والصفات قرب بالواسطة ، وهنا لا واسطة وإذا كان قربا حقيقيّا ، كان رافعا للفصل ، أي الفرق والمباينة الذي هو البعد الحقيقي أعم من الحسي والمعنوي ، والبعد الحقيقي هو المشار إليه بأحكام ما به المباينة والامتياز ، وقد أوهم كلامه الأول اختصاصه بالمعنوي ، لكن ذلك الوهم مرتفع بأنه رضي اللّه عنه قصد أولا ، أن البعد المعنوي مانع من كمال الإدراك بالقياس على الحسي ، ثم بيّن بالدليل على أن البعد حسيّا أو معنويّا ، مانع فسمي جميع أحكام المباينة والامتياز بالبعد الحقيقي ، بمعنى أن فيه حقيقة البعد ، فافهم .
+> قال رضي اللّه عنه : [ وإذا شهدت هذا الأمر وذقته بكشف محقق علمت أن سبب كمال علم الحق بالأشياء إنما هو من أجل استجلائه إياها في نفسه ، واستهلاك كثرتها وغيريتها في وحدته ، فإن كينونية كل شيء في أي شيء كان ، سواء كان المحل صوريّا أو معنويّا ، إنما يكون ويظهر بحسب ما تعين وظهر فيه ، ولهذا نقول : الحق علم نفسه بنفسه ، وعلم الأشياء في نفسه بعين علمه بنفسه ] .
+> أي : إذا شهدت بالبصيرة الباطنة المفيدة للوجدان الذي هو ذوق ، بكشف محقق الذي يجعله بديهيّا أن أعلى درجات العلم للشيء بالنسبة إلى كل عالم ، إنما هو بالاتحاد بالمعلوم .
+
+**English — p. 146 — first-pass translation**
+
+**Al-Mahāʾimī:** [Ignorance arises from the dominance of] the factor by which knower and known are distinguished from one another. This could seem to assume what requires proof, so Qūnawī describes it as non-spatial distance, which impedes knowledge. Distance—whether sensible or intellectual—prevents a complete grasp of the remote object, since not all its accidental characteristics, qualities, and measures can then be known.
+
+The point is apparent in sensory distance. In the non-sensory case, an analogy is used—called *tamthīl* as a procedure of exposition, though a direct insight according to realization: non-sensory distance prevents the likeness of the known from being fully present in the knower, just as physical distance impairs the complete presentation of what is seen to the faculty of sight. If distance produces ignorance, nearness produces knowledge. Distance and nearness are relational, however, and their degrees are neither simply identical nor precisely measurable. Consequently, degrees of comprehensive knowing and ignorance vary with the prevalence of that aspect through which knower and known are united.
+
+Qūnawī calls the ruling of the unifying factor “true nearness,” since nearness in space, time, or qualities is mediated, whereas this nearness has no intermediary. True nearness removes separation, difference, and otherness, which comprise true remoteness, whether sensory or intellectual. His initial statement could suggest that remoteness is exclusively non-sensory. The intention, however, was first to explain intellectual distance by analogy with sensible distance, then to establish the obstructive character of both. All rulings of otherness and distinctness are thus gathered under the description “true remoteness” because they possess the relevant character of distance.
+
+**Qūnawī:** “When you witness this and taste it through verified unveiling, you will know that the reason for the perfection of the Real's knowledge of things is that He beholds them in Himself and that their multiplicity and otherness are absorbed in His unity. The being of anything in anything—whether its locus be formal or nonformal—occurs and appears according to the determination and manifestation of that in which it occurs. Thus we say: the Real knows Himself through Himself, and He knows things within Himself by the very knowledge through which He knows Himself.”
+
+**Al-Mahāʾimī:** This means that the proposition is witnessed through inward vision that gives rise to immediate finding (*wijdān*, hence *dhawq*), by a verified unveiling which renders evident that the highest degree of knowledge for every knower is attained through union with what is known.
+
+**Editorial textual note:** The copy-text reads «نية» where a verb meaning “he indicated/clarified” appears intended; it is not emended. Distinguish the analogical proof from the author’s claimed epistemic verification through unveiling.
+
+**Source:** https://ablibrary.net/book_content/b/9637/146?lang=ar
+
+---
+
+
+## MSH-P147 — [Editorial] Text Eleven — perfect human, will and knowledge (printed p. 147)
+
+**Arabic — p. 147 — medieval running text, including quotations from Qūnawī**
+
+> قيد حصوله بالشهود المذكور ؛ لأن الدليل السابق إنما يدل على اعتبار القرب في الجملة ؛ لأن القرب الحقيقي ، إنما يوجد بالكشف والذوق ، وقيد الكشف بالمحقق ؛ لأن الصورة لا تدل على ذلك ، إذ لا صورة بهذا القرب حتى يكون لها مثال ، بل هذا القرب يكون وراء طور العقل علمت أن سبب كمال علم الحق بالأشياء مع أنها كثيرة ممكنة وعلمه واحد واجب ، إنما هو من أجل استجلائه إياه ، أي : إظهاره في نفسه بحسب تعيناته بحيث مرآتها ، والمرآة متحدة بالمرئي ، وإذا اتحدت بمرآته استهلاك كثرتها وغيريتها في وحدته الوجودية ، فصارت واحدة واجبة .
+> ولهذا قيل : الوحدة تساوق الوجود ، وكل ممكن محفوف بوجوبين : سابق ولا حق ، وإنما استهلك كثرتها وغيريتها في وحدة الحق إذا أتت في علمه مع أن حقائقها على الكثرة ، والإمكان الموجب للغير ؛ لأن كون كل شيء في شيء بحسب محله لا بحسب نفسه ، سواء كان المحل معنويّا كالعلم أو صوريّا ، كالمرايا المتعارفة يكون تعينه وظهوره بحسب المحل الذي تعين فيه فظهر فيه . فالأشياء لما ظهرت في علم الحق ، كان ظهوره على الوحدة والوجوب .
+> ولما ظهر الوجود في الحقائق ، كان ظهوره على الكثرة والإمكان ، وإنما كانت الأشياء على الوحدة والوجوب في علم الحق ؛ لكونه في غاية الوحدة حتى اتحد فيه المعلوم والعالم والعلم . ولهذا القول علم الحق نفسه بنفسه بعلم نفسه ، لا بمثال زائد ، ولا بمغايرة العالم للمعلوم ، وذلك كمال علمه بالأشياء باعتبار علمه بنفسه باستجلائه إياها فيه ، فافهم .
+> قال رضي اللّه عنه : [ ولما ورد الإخبار الإلهي بأن اللّه تعالى : كان ولم يكن معه شيء انتفت غيرية الأشياء بالنسبة إلى الوحدة التي هي محلها العيني ، وثبتت أولية الحق من حيث الوحدة ] . استدلال على وجوب الأشياء ، وعدم غيريتها للحق باعتبار انتقاشها في العلم الأزلي بالإخبار النبوي الذي هو وجود إلهي لقوله تعالى : إِنْ هُوَ إِلَّا وَحْيٌ يُوحى [ النجم : 4 ] ، لكنه وحى خفي ب : إن اللّه كان ولم يكن معه شيء مع أن حقائق الأشياء كانت في علمه بالإجماع ، فلا بد من تأويله بأنه ، لم يكن معه شيء يغايره ، فانتفت غيرية
+
+**English — p. 147 — first-pass translation**
+
+**Al-Mahāʾimī:** Qūnawī makes the attainment of this knowledge depend on the witnessing he has just described. The preceding argument only establishes, generally, the importance of nearness; true nearness itself is realized through unveiling and tasting. He therefore qualifies the unveiling as verified, since a mental image cannot attest this reality: this nearness has no corresponding form that could represent it and lies beyond the sphere of discursive reason. One then understands how the Real's knowledge is complete even though its objects are many and possible while His knowledge is one and necessary. The explanation is His *istijlāʾ* of things: their appearing within Himself according to their determinations, as in a mirror. The mirror and the reflected object are united under the relevant consideration, and multiplicity and otherness are absorbed into His existential unity, where they are considered one and necessary.
+
+Hence it is said that unity is coextensive with being, and that every possible thing is surrounded by two necessities, antecedent and subsequent. The multiplicity and otherness of the objects are absorbed in the Real's unity **as they occur within divine knowledge**, even though their distinct realities retain plurality and possibility, which involves dependence on another. The way a thing exists in a locus is determined by that locus, not simply by the thing considered in itself. Whether the locus is nonformal, as knowledge is, or formal, as with an ordinary mirror, determination and manifestation follow the character of the receiving locus. Things, accordingly, appear under unity and necessity within the Real's knowledge.
+
+When being appears in the distinct realities, by contrast, it appears under the rulings of plurality and possibility. The things are one and necessary in divine knowledge because there the unity is such that knower, known, and knowledge are united. The Real therefore knows Himself through Himself, without an additional representation or a separation of knower and known. His knowledge of things is perfect insofar as it consists in His knowledge of Himself and in His beholding them within Himself.
+
+**Qūnawī:** “When the divine report came that God was, and nothing was with Him, the otherness of things was denied in relation to the unity that is their intrinsic locus, and the Real's priority was established from the standpoint of unity.”
+
+**Al-Mahāʾimī:** He adduces the prophetic report—understood as revelatory communication—to explain both the necessary aspect of things and the absence of their otherness to the Real **as inscribed in eternal knowledge**. Since their realities are nevertheless in His knowledge, the report “God was and nothing was with Him” must be understood as saying that nothing was with Him as an independently other existent. Thus the otherness of [things is denied under the relevant consideration; the argument continues on p. 148].
+
+**Editorial textual note:** The transmitted report “God was and there was nothing with Him” requires a separate ḥadīth-critical dossier; translation alone does not establish its variants or authenticity. Crucially distinguish the modality “within divine knowledge” from manifested plurality.
+
+**Source:** https://ablibrary.net/book_content/b/9637/147?lang=ar
+
+---
+
+
+## MSH-P148 — [Editorial] Text Eleven — perfect human, will and knowledge (printed p. 148)
+
+**Arabic — p. 148 — medieval running text, including quotations from Qūnawī**
+
+> الأشياء بالنسبة إلى الوحدة التي هي ، أو هو محل لكون الأشياء بالنسبة إلى الوحدة التي هي أو هو محل ؛ لكون الأشياء عين الحق والنسبة العلمية متعلقة به . ومن هنا ثبتت أولية الحق للأشياء ، بمعنى أنها كانت حقّا أولا ، وأن الحق أولها من حيث الوحدة التي للأشياء ، وإلا فمن حيث كثرة حقائقها لم تكن حقّا ، ولا الحق أولها ، وهي كثيرة مع وحدته ، لما يذكر بعد من أن الواحد لا يصدر عنه إلا الواحد ، لكن الأشياء من حيث الوجود العام واحد ، فالحق أولها ، فافهم .
+> قال رضي اللّه عنه : [ وبامتياز كثرة الأشياء المتعلقة ثانيا الكامنة من قبل في ضمن الوحدة والجمع بينهما وبين الوحدة بالفعل ، ظهر الكمال المستجن في الوحدة أولا ، فانفتح بذلك باب كمال الجلاء والاستجلاء الذي هو المطلوب الحقيقي ، وظهرت أحكام الوحدة في الكثرة ، والكثرة في الوحدة ] .
+> بيان كمال علمه تعالى التفصيلي بالأشياء الكثيرة ، أي لما كانت الأشياء كامنة في ضمن الوحدة المذكورة التي هي التعين الأول ، ولها كثرة اعتبارية من حيث تعلق العلم الذاتي بها ، صارت متعلقة ثانيا من حيث الكثرة ، والتعقل بهذه الحيثية يقتضي امتياز تلك الأشياء بعضها من بعض ، فاجتمع هذا الامتياز مع الوحدة الحقيقية في العلم الذاتي بالفعل ، فبهذا الجمع ظهر الكمال الذي كان للوجود مستجنّا في الوحدة ، وهو الكمال الأسمائي ، ولا يظهر إلا في المظاهر ، فانفتح بذلك الجمع باب كمال الجلاء ، وهو ظهور الذات المقدسة لذاته في ذاته ، وكمال الاستجلاء ظهورها لذاته في تعيناته ، أي اجتمع له الظهوران معا ، والجمع بين الظهورين مطلوب حقيقي للذات ؛ إذ قال : « كنت كنزا مخفيّا فأحببت أن أعرف » ، وظهرت عند ذلك أحكام من الصفات الوجوبية في الكثرة ، أو صارت بالفعل ، فاتصفت بالوجود بالفعل لا يكون بلا وجوبين ، سابق ولا حق على ما تقرر في الحكمة وظهرت أحكام الكثرة من الصفات الإمكانية في الوحدة ؛ لأنها لما تعلقت بالكثرة ، فظهرت في مراياها انصبغت بصبغتها ، فاتصفت الوحدة بصفاتها ، فيما يلوح للناظرين ، وهي في الواقع صفات الكثرة ، وكانت أيضا في الوحدة من حيث اشتمالها على الكثرة .
+
+**English — p. 148 — first-pass translation**
+
+**Al-Mahāʾimī:** [Continuing the preceding explanation:] The otherness of things is denied in relation to the unity serving as their locus, for they are considered identical with the Real **under the relation of knowledge**. Here the Real's priority to things is established: they are first considered in the Real, and He is their first principle, insofar as their unity is in view. Considered in respect of their many distinct realities, however, they are not simply the Real, nor is the Real “first” in that same sense. Their plurality coexists with His unity; the ensuing discussion will invoke the principle that only one proceeds from what is one. Things are nevertheless one insofar as universal being is in view, and it is in that respect that the Real is their first principle.
+
+**Qūnawī:** “When the multitude of things related [to knowledge] in a secondary way—which had previously been concealed within unity—became distinguished, and the multitude together with unity was actually gathered, the perfection initially hidden in unity became manifest. Thus the door opened to the perfection of *jalāʾ* and *istijlāʾ*, the true object of aspiration, and the rulings of unity appeared in multiplicity and those of multiplicity in unity.”
+
+**Al-Mahāʾimī:** This explains the perfection of God's differentiated knowledge of many things. The things were hidden within the unity identified with the **first determination**, possessing a conceptual multiplicity insofar as essential knowledge relates to them. They then came to be related under the consideration of plurality. Intellectually regarding them under that aspect requires that they be distinguished from one another; this distinction and real unity are combined in essential knowledge. Through that combination the perfection latent in existence under unity became manifest—namely the perfection of the divine names, which manifests in loci. Thus the perfection of *jalāʾ*, the holy Essence's manifestation to itself within itself, and of *istijlāʾ*, its manifestation to itself within its determinations, is opened: the two modes of manifestation are joined.
+
+This joining is described as the true object of the Essence's willing, for the transmitted saying states, “I was a hidden treasure and loved to be known.” At this point rulings of necessity become manifest within the plurality: the things are qualified by actual being, which, as the philosophical account states, is not without antecedent and subsequent necessities. Conversely, the rulings of plurality, through the properties of possibility, appear within unity, because when unity relates to plurality and is displayed in its mirrors it appears coloured by their characteristics. To an observer those characteristics seem to qualify unity, although in reality they belong to plurality; unity also comprises them insofar as it contains that plurality.
+
+**Editorial textual note:** The opening line is syntactically corrupt or duplicated in the online transcription; first paragraph is provisional. The phrase “hidden treasure” is cited, not certified as a sound ḥadīth. Keep first determination, conceptual distinction, and manifested plurality separate.
+
+**Source:** https://ablibrary.net/book_content/b/9637/148?lang=ar
+
+---
+
+
+## MSH-P149 — [Editorial] Text Twelve — unity and plurality in knowledge (printed p. 149)
+
+**Arabic — p. 149 — medieval running text, including quotations from Qūnawī**
+
+> قال رضي اللّه عنه : [ فوحدت الوحدة الكثرة ؛ لكونها صارت قدرا مشتركا بين المتكثرات المتميزة بالذات بعضها عن بعض ، فوصلت فصولها ؛ لأنها جمعت بذاتها كما ذكرنا ، وعددت المتكثرات الواحد من حيث التعينات التي هي سبب تنوعات ظهور الواحد بالصبغ والإصباغ ، والكيفيات المختلفة التي اقتضتها اختلافات استعدادات المتكثرات القابلة للتجلي الواحد فيها ] . أي : لما ظهرت أحكام الوحدة في الكثرة ، جعلت الوحدة الكثرة أيضا واحدة ، لشمول الوحدة جميع أفرادها شمول الكلي على جزئياته .
+> ففي كلّ شيء له آية * تدلّ على أنّه واحد
+> وذلك لكون الوحدة صارت عند اتصاف أفراد الكثرة بها قدرا مشتركا بين المتكثرات التي هي أفراد الكثرة ، فلا تتميز من حيث الوحدة ، بل إنما يتميز بعضها عن بعض بذواتها وماهياتها ويتميز ذواتها أيضا ، وتميز ذواتها ليست بمجرد أنها ذوات ، لجواز تشاركها ، بل بفصول مميز لها عرضت لأجناسها ، وهي وجودية لتقويمها الأجناس ، فهي من حيث الحقيقة عين الوحدة التي هي الوجود ، فوصلت الوحدة فصول الكثرة ؛ لأن الوحدة جامعة بذاتها ذوات الكثرة ؛ لأنها شؤون الوحدة ، كما ذكرنا .
+> فالعلم بالكثرة الفعلية كمال من حيث تعلق أحكام الوحدة بها ، وأما من جهة الكثرة نفسها فلا ؛ لأنه لما ظهرت أحكام الكثرة في الوحدة ، جعلت المتكثرات الوحدة الظاهرة فيها متعددة بحسب تعينات عرضت للوحدة بالنسبة إلى ظهورها في الكثرة ، فصارت التعينات سبب تنوعات ظهور الواحد بحسب الظاهر بصبغ للمظهر الظاهر بلون أحكام الإمكان ، وانصباغ الظاهر يظهر بلون أحكام الوجوب ، فحصلت كيفيات مختلفة بحسب اختلاف استعدادات في ماهيات المتكثرات التي كلها قابلة للتجلي الواحد الذاتي ، فتكثر الواحد بحسب هذه الاختلافات منصبغا بصبغها تكثر صور الوجه الواحد في المرايا المختلفة ، وانصباغ الزجاجات المختلفة الألوان بنور الشمس ، وانصباغ نوره المنعكس في ذاتها بألوانها ، فيعلم هذه الصور من حيث أنها متحدة بصورة في الحقيقة ، مخالفة لها بهيئات بحسب استعدادات المظاهر ، فهاهنا يتجدد نسبة لعلمه إلى تلك الهيئات لا تجددا زمنيّا ، بل بحسب الرتبة من حيث أن هذه الصور تابعة لصورته الأصلية المعلومة
+
+**English — p. 149 — first-pass translation**
+
+**Qūnawī:** “Unity makes multiplicity one, because unity becomes a common measure among the many things which are distinguished intrinsically from one another. It thus joins their differentiating features, since it gathers them in itself, as we have said. The many, in turn, make the One appear as many under the determinations responsible for the differentiated appearances of the One: the colouring and being-coloured and the varied qualities required by the differing receptivities of the many things capable of receiving that one self-disclosure.”
+
+**Al-Mahāʾimī:** When the rulings of unity appear in multiplicity, unity makes that multiplicity one by extending to each of its members, in a way compared with a universal extending to its particulars. Hence the saying: “In everything there is a sign / indicating that He is One.” Unity becomes the shared element in the many insofar as they are qualified by it; **under the consideration of unity** they are not distinguished. Their distinction arises instead from their individual realities and quiddities. These are themselves distinct not simply because they are realities—since realities can resemble one another—but through specific differentiating characteristics attached to their genera. These differentiations are existential inasmuch as they constitute the relevant natures; under the standpoint of reality they are related to unity, which is being. Unity joins the differentiations of multiplicity because it gathers the many realities in itself, those realities being its *shuʾūn* (affairs or modalities), as already explained.
+
+Knowledge of actual multiplicity is a perfection insofar as the rulings of unity relate to it, but multiplicity as such is not that perfection. Conversely, when the rulings of plurality appear in unity, the manifold realities cause the unity manifested in them to appear multiple in accordance with the determinations that accompany its manifestation. These determinations produce diverse appearances of the One: the locus is coloured by the rulings of possibility, and what appears is displayed under the aspect of necessity. Differences in receptivity belonging to the quiddities of the many things produce different qualities, though all receive a single essential disclosure. The One therefore appears multiple according to these differences, as one face has multiple appearances in different mirrors or as sunlight is modified by coloured glass and the reflected light bears the glass's colour. The resulting appearances are one with their source-image under one consideration and diverse in their configurations according to the readiness of the loci. Accordingly, an additional relation of knowledge to these configurations is posited—not as a **temporal renewal**, but as an **order of rank**, since the appearances are dependent on the original known image [the sentence continues on p. 150].
+
+**Editorial textual note:** The exact predicational force of “a common measure” must not be transferred uncritically into a theory of generic being or a literally shared genus. The page explicitly excludes temporal renewal.
+
+**Source:** https://ablibrary.net/book_content/b/9637/149?lang=ar
+
+---
