@@ -426,12 +426,21 @@ window.FARGHANI_CRITICAL_PASS_002={
       "ar": "فلم تعلم ولم يحكم بشيء منها إلّا بعد تعيّنها ووقوعها في المراتب الوجودية بالتدريج مع الآنات",
       "en": "Accordingly they are not known or judged until their determination and occurrence in existential ranks, progressively with successive instants.",
       "disposition": "crux",
-      "critical_note": "Strong apparent temporal epistemic claim. Do not silently reformulate as though they were eternally differentiated in divine knowledge; further surrounding context and manuscript comparison required.",
+      "critical_note": "Historical print agreement now established at I1876 pp8–9 (scans12–13): the source really has فلم تعلم ولم يحكم بشيء منها إلا بعد تعينها. Preserve the claim exactly; it remains a difficult question about determinacy and knowledge, not evidence for an invented manuscript emendation.",
       "source_siglum": "B2007",
       "source_url": "https://ablibrary.net/book_content/b/9606/23?lang=ar",
       "grade": "printed-digital-Arabic-checked-v1",
-      "historical_print_verified": false,
-      "manuscript_verified": false
+      "historical_print_verified": true,
+      "manuscript_verified": false,
+      "historical_print": {
+        "siglum": "I1876",
+        "printed_page": "8–9",
+        "scan_index": "12–13",
+        "reading": "فلم تعلم ولم يحكم بشيء منها إلا بعد تعينها",
+        "status": "agreement",
+        "source_pdf": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
+        "note": "Historic 1876 printing p8 end and p9 beginning preserve the difficult expression. This is a bounded print agreement; theological interpretation and manuscript text remain unresolved."
+      }
     },
     {
       "id": "CR002-033",
