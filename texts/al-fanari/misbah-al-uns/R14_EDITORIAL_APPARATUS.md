@@ -78,3 +78,36 @@ The new source-aligned bilingual increments are `r14d.json` (701–725, 25 units
 ### Recovery and next action
 
 Reader should contain **213 consecutive Arabic/English entries (§§4.538–4.750)** after `MANIFEST.json` is updated. Earlier §§1.1–4.537 are preserved in separately identified working masters but are not in this online reader; therefore **NOT FULLY CUMULATIVE** and **NOT A CRITICAL EDITION** remain mandatory. The GNAMMA review branch is **not** a verified NAMA or public site deployment. The next exact source boundary is **§4.751 at printed p.489**; do not credit p.489 until all sections on that page have been translated.
+
+
+## R14f–i extension, §§4.751–4.820 (9 November 2026)
+
+Four further contiguous increment files have been added: `r14f.json` (§§4.751–4.775, 25 units), `r14g.json` (§§4.776–4.790, 15), `r14h.json` (§§4.791–4.800, 10), and `r14i.json` (§§4.801–4.820, 20). Together with R14a–e they cover **172 source-aligned paragraphs §§4.649–4.820**. The last complete printed source page is **509**; §4.820 is on p.510, but §4.821 also begins on p.510. Complete translated pages pp.3–509 = **507/720 = 70.4167%**. Reader import §§4.538–4.820 = **283 bilingual passages**. **Next: §4.821, p.510**. Still a first-pass electronic-source translation, not a manuscript-collected critical edition.
+
+### Major doctrinal and source divisions
+
+- **§§4.751–4.754:** al-Farghānī's contrasting Presences of Being/Necessity and Knowledge/Possibility; the human comprehensive isthmus; divine 'hands' and 'fingers' understood in the text through graded relations. Preserve «كلتا يديه يمينا» and its qualifying considerations; do **not** convert divine hand-language to bodily anatomy.
+- **§§4.755–4.759:** mineral, vegetal and animal degrees as generated kingdoms; standard medieval four-element physics, alchemical and angelological claims; al-Farghānī's speech closes «هذا كلامه» §4.759.
+- **§§4.760–4.762:** Fanārī resumes («ثم نقول») and quotes al-Farghānī anew; human equilibrium as the sensible form of the two isthmuses; physical temperament, intelligible comprehensive rank, and divine Spirit are distinct.
+- **§§4.763–4.775:** premises for Adam's vicegerency, four conditions of divine representation, and an **eighteen-item list in §4.771** ascribing latent blameworthy traits to the angels' reactions in Qurʾān 2:30. This is a distinctive and potentially controversial exegetical argument, **not** neutral Sunni theological consensus about angelic impeccability; source verification and commentary required. «تعلق أو تخلق» §4.768 remains two technical modes, not synonyms.
+- **§§4.776–4.778:** the angels' acquisition of knowledge through Adam, Iblīs' arguments, and explicit close «هذا كله مقتبس من كلام الفرغاني» at §4.778. The author indicates his account is drawn from al-Farghānī; whether verbatim must be checked.
+- **§§4.779–4.786:** the creative Command descends without spatial translation, through degrees of entrustment; explicit distinction between chronological **order of creation** and hierarchical **order of descent** in §§4.784–4.785. The Perfect Human completes a circle of ascent in life; after death another universal return is described.
+- **§§4.787–4.790:** long commentary quotations distinguishing **miʿrāj al-tarkīb** (compositional descent) and **miʿrāj al-taḥlīl** (analytic ascent). Especially §4.789–4.790: one irreducible relation of attachment/recognition remains even when the knower no longer witnesses it; «باقية في نفس الأمر». The contemplative direction avoids **both** particular acts of negation and affirmation; this is not a thesis of creaturely essence becoming God. **Second Chapter** heading occurs after «تم كلامه» in §4.790.
+- **§§4.791–4.800:** images of the realities and degrees; ontological distinction between Being absolutely considered and Being in relation or conjunction. §4.800 gives **two grammatical parses** (rafʿ and jarr) of «وحكمه», an important example of conceptual perspective and the need for Arabic alignment.
+- **§§4.801–4.810:** active/spoken Book, Pen, Tablet, revelation and differentiated forms; world as `kitāb mubīn` in one consideration and Qurʾān as the unique Muḥammadan comprehensive Book in another. §4.803 reads «فعلى وقولي» (probably intended `فعلي وقولي`), but Arabic must remain unchanged pending collation.
+- **§§4.811–4.820:** two considerations of Nature, four qualities and four leading Names, four angelic manifestations, and differentiation of Throne/Pen/Name al-Raḥmān from Footstool/Universal Soul/Name al-Raḥīm. §4.817 reads **«ألف ومائة واحد وعشرون»** observed stellar universals, provisionally **1121**, which demands comparison with printed source and astronomical catalogues.
+
+### Required textual checks before release
+
+1. The reports `خلق آدم على صورته` / `على صورة الرحمن` in §4.762 differ in isnād/wording and must be independently assessed, not treated as equally authenticated. The academic distinction between image/representation and bodily anthropomorphism remains essential.
+2. §4.771's **exactly eighteen** alleged angelic deficiencies and §4.778's argument that Iblīs induced the reaction must be collated with al-Farghānī and compared to Sunnī kalām, not presented as established doctrine without attribution.
+3. §4.773 contrasts `نفخت فيه من روحي` (Qurʾān 15:29) and `فنفخنا فيها من روحنا` (21:91); preserve both forms.
+4. §4.774 distinguishes real ontological Names from **names of Names**, including verbal and numerical forms; the first vs second determination issue must not be inverted.
+5. §4.787's Saʿd ibn Muʿādh report, and §4.788's womb/insufflation report, need source-specific checking rather than general apologetic paraphrase.
+6. §4.790 `توجه هيولاني الوصف` means an orientation analogised to pure receptivity, **not** material substratum in the Divine Essence; «نسبة» remains though it may escape witnessing.
+7. §4.796's `فك الفص المحمدي` should be identified precisely in Qūnawī's writings. The end of Muḥammadan knowing is **not** equated simply with the First Determination; preserve the exception for Muḥammad and perfected inheritors.
+8. §4.798 has a versified `النفحات` citation whose punctuation/attribution are unverified; avoid inventing the missing metrical text.
+9. §4.803 textual `فعلى وقولي`, §4.807 doubled rhetorical examples, and §4.813 shifting anaphora/possible errors all require printed witness comparison.
+10. §4.817's number 1121, `الكلمتين`, §4.818's five 'marriages' with only three here enumerated, and §4.820's basmala/Fātiḥa interpretive distinction need comparison against earlier commentary and witnesses.
+
+**Integrity:** Source-aligned working English from one fixed electronic witness; printed edition page tags retained, **zero independent manuscript witnesses collated**. Some Arabic readings may be corrupt. Review branch is GNAMMA, **not** proof of public NAMA deployment. Original binary master §§1.1–4.537 still not losslessly imported. Next exact source: **§4.821 on p.510**.
