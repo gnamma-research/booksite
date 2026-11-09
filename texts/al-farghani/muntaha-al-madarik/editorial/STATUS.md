@@ -1,3 +1,15 @@
+## Latest milestone — Stage IX gap recovery and direct checks through B2007 p60 (9 November 2026)
+
+**New:** 40 selected bilingual Arabic–English loci on previously inaccessible modern pages 48–49 and further pages 51–60. Combined with 198 old and 45 Stage VIII checks: **283 selected clause records across 43 consecutive printed page labels (18–60)**. These are not 43 fully collated pages; full source transcription, exhaustive sentence-level checking, and manuscripts remain outstanding.
+
+**Important textual development:** Internal B2007 evidence on pp52,55,56 uses `القائل`, and p56 explicitly enumerates seven principal names including it. This strongly strengthens a **conjectural correction** of p38 digital `القابل`; no historical print or medieval manuscript reading has yet been established for that locus. Additional probable printed/digital errors are p48 `بسبحاب` and p52 `سم الحكيم`, awaiting actual page photography.
+
+**Stable sources:** [Stage IX 40-locus bilingual record](CRITICAL_TRANSLATION_48_49_51_60.md) · [data](../data/critical-pass-006-p48-49-51-60.js) · [exact restart Stage IX](STAGE_HANDOFF_CRITICAL_009.md) · [source-quality coverage](CRITICAL_COVERAGE_REGISTER.json) · [interactive critical reader](../critical-edition.html).
+
+**Next:** B2007 p61 onward, and start comprehensive *every-line* source checking; compare full Arabic against printed I1876 and multiple real manuscripts before claiming critical completeness. Historical print comparison unchanged: 10 bounded loci, five differences and five agreements. ZERO manuscript folios compared; ZERO manuscript variants verified.
+
+---
+
 ## Latest milestone — Stage VIII bilingual source audit (9 November 2026)
 
 **New result:** 45 selected printed-Arabic/English checks on B2007 pp37–47 and p50. Cumulative **243 selected clauses on 31 modern printed pages**, **not 31 exhaustively proofread pages**. Beirut pp48–49 source readings were inaccessible during this stage, although both have working English drafts, so no direct source check is claimed for them. Other unreviewed clauses remain throughout.
