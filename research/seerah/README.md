@@ -1,8 +1,8 @@
 # Sīrah and the Making of Islamic Civilization · Gnamma Research
 
-Public URL: `/research/seerah/` · source edition 1.4 · 46 matns + 46 shurūḥ.
+Public URL: `/research/seerah/` · source edition 1.4, prose revision 1.4.1 · 46 matns + 46 shurūḥ.
 
-The Research landing, reader, visual atlas and dossiers are four separate presentations of one work. **The canonical content is `data/chapters.json` and `data/dossiers.json`**, based on the preserved `editorial/source-edition-1.4.md`. This is a working *research edition*, not a completed critical collation of original Sīrah manuscripts.
+The Research landing, reader, visual atlas and dossiers are four separate presentations of one work. **The canonical content is `data/chapters.json` and `data/dossiers.json`**, based on the preserved `editorial/source-edition-1.4.md`; the current fully synchronized manuscript is `editorial/current-edition-1.4.1.md`. This is a working *research edition*, not a completed critical collation of original Sīrah manuscripts.
 
 ## Reader contract
 
@@ -18,6 +18,10 @@ The Research landing, reader, visual atlas and dossiers are four separate presen
 Run `node research/seerah/tests/verify.mjs` from repository root (Node 20+). Verify on a 320px and 390px mobile viewport, and desktop, that the navigation drawer closes, every chapter has the expected sharḥ, text modes preserve the selected chapter, and the seven SVG diagrams remain readable.
 
 The figure routes are schematic; they are not reconstructed seventh-century travel paths. Reassess chronology, locations and source links before upgrading their editorial status.
+
+## Writing policy
+
+Use `editorial/STYLE_RULES.md`: speak directly about agents, practices and causes, not about what the narrative "shows" or what a reader "should" understand. Revisions must keep the structured source, static reader and complete current manuscript aligned.
 
 ## Next scholarly work
 
