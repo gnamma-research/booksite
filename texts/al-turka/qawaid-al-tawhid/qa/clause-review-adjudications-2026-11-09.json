@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-human-clause-review-v1",
   "date": "2026-11-09",
-  "reviewScope": "1,142 punctuation-delimited Arabic candidates compared in 35 bilingual source units (25 commentary, 10 original matn), with unresolved readings marked; remainder not certified.",
+  "reviewScope": "1,219 Arabic punctuation-delimited source candidates compared with corresponding English in 45 units: QT001–020 original matn and 25 commentary units; 4,301 remaining not certified.",
   "sourceBasis": "Current repository JS matn/commentary modules, retained edition N introduction and edition A main/conclusion",
   "method": "Source clause numbers are computed from Arabic punctuation. English ranges are manually matched, not proportional autoalignment. All segments in these eleven sections must be covered exactly once; unresolved readings remain explicit.",
   "units": [
@@ -1539,9 +1539,243 @@
           "note": "External sameness and intellectually additional predication preserved under different considerations."
         }
       ]
+    },
+    {
+      "id": "QT-011",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "If necessary nature had mental individuals, some could exist and others be impossible; the author infers possibility per se for the class."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 6,
+          "enStart": 3,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Modality per aliud versus per se and final axiom that what is intrinsic cannot be removed externally preserved."
+        }
+      ]
+    },
+    {
+      "id": "QT-012",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 2,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "First two reasons: determination identical with the reality, or necessarily required by the reality itself."
+        },
+        {
+          "arStart": 3,
+          "arEnd": 4,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Third: intrinsic determination makes the nature unintelligible as one among many possible subjects."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 8,
+          "enStart": 3,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Fourth: no association with another; intellectual or mental plurality thereby excluded."
+        }
+      ]
+    },
+    {
+      "id": "QT-013",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 4,
+          "enStart": 1,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Distinct real quiddity versus extramental existence produces mere verbal homonymy, not shared meaning."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 8,
+          "enStart": 4,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Alternative non-distinction forces either denial of shared predicates or making possible instances bear necessary reality."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 12,
+          "enStart": 6,
+          "enEnd": 8,
+          "status": "checked",
+          "note": "No intrinsic possible aspect or receptivity belongs to what is claimed necessary through itself."
+        }
+      ]
+    },
+    {
+      "id": "QT-014",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 4,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Similars without a differentiating reason cannot be assigned mutually incompatible roles of accident inhering and subject as locus."
+        }
+      ]
+    },
+    {
+      "id": "QT-015",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 5,
+          "enStart": 1,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Dual-stage refutation: existential reality refuses both existence and nonexistence, hence intrinsically necessary; plurality would follow from a second intrinsically necessary existent."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 12,
+          "enStart": 5,
+          "enEnd": 7,
+          "status": "checked",
+          "note": "Priority, perfection, intensity and completeness are introduced as an opponent's proposed ground; proving the entity thereby is circular."
+        }
+      ]
+    },
+    {
+      "id": "QT-016",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Nature and determinate qualification distinguished, including external/mental subjects and privative/positive accidents."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 6,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Hypothesis that necessary nature is the underlying subject of absolute determination by gradation or equivocation remains an objection."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 8,
+          "enStart": 3,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Reply preserves one intelligible concept of determination, varying with relational subjects; knowledge of the relation does not imply comprehension of the relata's intrinsic nature."
+        }
+      ]
+    },
+    {
+      "id": "QT-017",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked-with-note",
+          "note": "Intrinsic determination distinguished from an externally added predicate and mere individual thisness; unusual Arabic gender agreement preserved."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 5,
+          "enStart": 3,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Necessary's self-distinction is analogous to individuality without equating Necessary with it."
+        }
+      ]
+    },
+    {
+      "id": "QT-018",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 2,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Necessary as knower, known and intellect in itself, with three terms preserved."
+        },
+        {
+          "arStart": 3,
+          "arEnd": 4,
+          "enStart": 3,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Relational intelligibility to every intellect distinguished from exhaustive comprehension of its essential reality."
+        }
+      ]
+    },
+    {
+      "id": "QT-019",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 2,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Association is excluded only if the other is an incompatible opposite; not every mode of relation is denied."
+        },
+        {
+          "arStart": 3,
+          "arEnd": 4,
+          "enStart": 2,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Two directions/modes of association between the Necessary and considered relations preserved."
+        }
+      ]
+    },
+    {
+      "id": "QT-020",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 5,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Opposing speaker applies fourfold dilemma against unrestricted existence; existential plurality of mental instances is made hypothetical."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 11,
+          "enStart": 3,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Second horn is equivocation versus necessitation of contingent instances, not an unconditional affirmation of either."
+        },
+        {
+          "arStart": 12,
+          "arEnd": 14,
+          "enStart": 4,
+          "enEnd": 5,
+          "status": "unresolved-reading",
+          "note": "Printed conclusion به عين حقيقة and ملزومه retain textual/grammatical strain; the English follows commentary as provisional rather than establishing a manuscript reading."
+        }
+      ]
     }
   ],
-  "claimedManuallyComparedArabicClauses": 1142,
+  "claimedManuallyComparedArabicClauses": 1219,
   "issues": "Three passages corrected; one passage contains two connected technical-semantic corrections; additional textual cruxes flagged without conjectural emendation.",
   "noWitnessesCollated": true
 }
