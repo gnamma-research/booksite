@@ -46,3 +46,35 @@
 All 52 units have English, Arabic, section IDs, and printed-page markers. Arabic was mechanically extracted without modern conjectural emendation, with whitespace and page tags normalised. **Zero manuscript witnesses and zero independent printed-image comparisons were checked in R14.** Source quotation chains, footnotes, variants, and interpretation still require audit.
 
 **R15 begins §4.701, printed p.474.** The coming passage continues the origin of the Earth and the seven heavens. Preserve the inherited R10–R14 data, handoff, source revision and problem registers. Integrate §§1.1–4.537 only from the authentic earlier cumulative master; no paraphrase reconstruction.
+
+
+## R14d–e extension, §§4.701–4.750 (9 November 2026)
+
+The new source-aligned bilingual increments are `r14d.json` (701–725, 25 units) and `r14e.json` (726–750, 25 units), continuing the R14a–c increments (649–700, 52 units). The **current R14 aggregate is 102 passages, §§4.649–4.750**; the last fully covered printed page is **p.488** (pp.3–488 = 486/720 = 67.50%). **Next: §4.751, p.489**. No printed-image or independent manuscript collation is claimed.
+
+### Source and quotation boundaries
+
+- **§§4.701–4.709:** Great Shaykh visionary cosmography, a central rock, Qāf and a surrounding serpent, elemental waters, and creation of mountains.
+- **§4.710:** a critique of ancient astronomers precedes the explicit introduction of **al-Jandī** with `وقال الجندي`.
+- **§§4.711–4.719:** fourfold elemental differentiation, seven planetary heavens, each with its own governing divine Name. The speech closes `ثم كلامه` in the witness at §4.719, which may require print verification.
+- **§4.720:** **al-Farghānī** is explicitly introduced. His quotation continues through §4.734, where `إلى هنا كلامه` closes it. The account distinguishes the unitive Cloud (`العماء`), the Breath (`النفس الرحماني`), the Great Element (`العنصر الأعظم`), and the joining/separating (`رتق/فتق`) of the heavens and earth.
+- **§4.735:** new **Great Shaykh** quotation, explicitly closing in §4.737 with `هذا كلامه`. **Sixteenth Principle** heading also occurs at §4.737.
+- **§4.738:** Great Shaykh quotation from **`عقلة المستوفز`**, explicitly closing §4.748; it must be compared against the original text.
+- **§4.749:** **al-Farghānī** resumes with the gradation of the Breath of the Merciful; second degree begins §4.750 and continues beyond.
+
+### Critical text and interpretation flags
+
+1. **§4.708:** OpenITI reads `فقال بها عليها` concerning mountains. The form is obscure; English tentatively renders fastening or stabilising the mountains, without conjectural Arabic alteration.
+2. **§4.709:** `الناشرات`, an angelic group, needs identification from the Arabic witnesses. Qāf, the earth-encircling serpent, dark ocean and rock belong to the source's visionary cosmography and should not be represented as verified geography.
+3. **§4.710:** distinguish quoted words from Fanārī's framing and al-Jandī. The reported cosmology and criticism of the ancients should not be converted into modern science or attributed to a single writer without source comparison.
+4. **§§4.719–4.720:** witness's `ثم كلامه` may be `تم كلامه`; check print. Al-Farghānī explicitly begins §4.720.
+5. **§§4.723–4.725:** `الأئمة السبعة` refers in context to seven leading Names/principles, not a lineage of human imams. `طوعا أو كرها` is explained from different ontological considerations of voluntary reception and necessary subjection.
+6. **§§4.732–4.733:** **critical parsing trap**: the Arabic marker `733 - 4` is embedded after Qurʾān 79:30 on the same physical line and continues after a `~~` line continuation. A heading-only parser omits these sections. R14e explicitly records two separate bilingual units.
+7. **§§4.734–4.737:** distinguish time, as measured celestial motion, from the dispositions of the bodies measured; establish the categorical shift to `الأصل السادس عشر`. In §4.737 the Shaykh rejects **both independent efficacy of causes and God acting in partnership with them**, describing customary causes (`أسباب عادية`). Verify the anti-astronomer polemic in §4.736 independently.
+8. **§§4.738–4.748:** compare the cited `عقلة المستوفز` passage; distinguish inner states, transmitted sayings, cosmological models and historical commentary. The eschatological hostile quotation about Jews in §4.747 is a historically cited report, translated for textual completeness **without endorsement**. Authenticity and variant wordings need separate hadith criticism.
+9. **§4.748:** the chain minerals → truffle → date palm → animals → ape → human is a medieval graded hierarchy, **not by itself a Darwinian theory of biological evolution**.
+10. **§§4.749–4.750:** keep `الأحدية` and `الواحدية` distinct within the stated first degree of `النفس الرحماني`; the second degree and its infinity of detail are still unfolding at §4.751.
+
+### Recovery and next action
+
+Reader should contain **213 consecutive Arabic/English entries (§§4.538–4.750)** after `MANIFEST.json` is updated. Earlier §§1.1–4.537 are preserved in separately identified working masters but are not in this online reader; therefore **NOT FULLY CUMULATIVE** and **NOT A CRITICAL EDITION** remain mandatory. The GNAMMA review branch is **not** a verified NAMA or public site deployment. The next exact source boundary is **§4.751 at printed p.489**; do not credit p.489 until all sections on that page have been translated.
