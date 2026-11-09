@@ -2052,8 +2052,15 @@
         "page": "291–291"
       },
       "title": "Introduction to Stage XI: Intellection, the Intellect, and the Intelligible",
-      "english": "Although the heading employs the term “intellection,” which in technical usage refers to universal apprehension rather than particular apprehension, the discussion embraces both.",
-      "notes": [],
+      "english": "Although the heading uses “intellect” (al-ʿaql)—a term conventionally applied to universal rather than particular apprehension—the investigation extends to both.",
+      "notes": [
+        {
+          "type": "English collation · literal technical term",
+          "text": "The Arabic has «العقل الذي يطلق اصطلاحاً على الإدراك الكلّي دون الجزئي». The prior English substituted 'intellection' for the subject noun «العقل». Revised to 'intellect' (al-ʿaql) while retaining the point that the investigation extends beyond universal cognition. Verified directly against the stored Arabic, not independently against a manuscript.",
+          "source": "Qum 1417 AH transcription, Stage XI preface",
+          "url": "https://lib.rafed.net/view.php?b_id=1642&page=291&type=c_fbook"
+        }
+      ],
       "status": "source-based-working-translation"
     },
     {
