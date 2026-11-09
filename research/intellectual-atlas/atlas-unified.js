@@ -266,7 +266,7 @@ function relevantEdges(id,direction){
 }
 function chooseWork(id,moveToNetwork=false){
  if(!data.byId.has(id))return;
- state.selected=id;state.evidence="";state.searchOpen=false;state.cluster="";
+ state.selected=id;state.evidence="";state.searchOpen=false;state.cluster="";state.search="";
  if(moveToNetwork)state.view="network";
  const n=data.byId.get(id);
  if(state.subject!=="all"&&!n.subjects.includes(state.subject)){
@@ -306,9 +306,9 @@ function toolsUI(){
  '<button data-zoom="0.60" aria-label="Zoom in years" '+(!yearsEnabled?"disabled":"")+'>＋</button>'+
  '<button data-zoom="1.65" aria-label="Zoom out years" '+(!yearsEnabled?"disabled":"")+'>－</button>'+
  '<button data-pan="1" aria-label="Later years" title="Later years" '+(!yearsEnabled?"disabled":"")+'>→</button>'+
- '<label class="filteritem">From (CE)<input data-year-from type="number" step="1" value="'+Math.round(state.from)+'" '+(!yearsEnabled?"disabled":"")+'></label>'+
+ '<label class="filteritem">From (−BCE / CE)<input data-year-from type="number" step="1" value="'+Math.round(state.from)+'" '+(!yearsEnabled?"disabled":"")+'></label>'+
  '<span class="years-between">–</span>'+
- '<label class="filteritem">To (CE)<input data-year-to type="number" step="1" value="'+Math.round(state.to)+'" '+(!yearsEnabled?"disabled":"")+'></label>'+
+ '<label class="filteritem">To (−BCE / CE)<input data-year-to type="number" step="1" value="'+Math.round(state.to)+'" '+(!yearsEnabled?"disabled":"")+'></label>'+
  '<button data-apply-years '+(!yearsEnabled?"disabled":"")+'>Apply</button><button data-reset-years '+(!yearsEnabled?"disabled":"")+'>All years</button></div>'+
  '</div>';
  return '<section class="control-shell" aria-label="Unified atlas controls"><div class="primary-controls">'+
