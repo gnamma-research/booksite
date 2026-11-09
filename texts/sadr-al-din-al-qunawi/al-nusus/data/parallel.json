@@ -24,11 +24,20 @@
       "source_url": "https://dergipark.org.tr/en/download/article-file/3074106"
     },
     {
-      "id": "KHU-ZUB",
-      "title": "Zubdat al-taḥqīq wa-nuzhat al-tawfīq",
-      "author": "Pīr Muḥammad al-Khūyī? (attribution disputed)",
+      "id": "IZN-ZUB",
+      "title": "Zubdat al-taḥqīq wa-nuzhat al-tawfīq (attribution to al-Iznīqī)",
+      "author": "Muḥammad b. Muḥammad Quṭb al-Dīn-zāda al-Iznīqī (Kātib Çelebi's attribution; manuscript witness not yet collated)",
       "type": "commentary",
-      "content_status": "Manuscript identified; no direct folio transcription acquired",
+      "content_status": "Distinct commentary listed in Kashf al-ẓunūn in two divisions; relationship to Khūyī's separately listed Sharḥ and modern Zubdat-labelled records unresolved; 0 authenticated folios transcribed.",
+      "entry_count": 0,
+      "source_url": "https://books.islam-db.com/book/كشف_الظنون_عن_اسامي_الكتب_والفنون/14067"
+    },
+    {
+      "id": "KHU-ZUB",
+      "title": "Sharḥ al-Nuṣūṣ (Princeton catalogue alternative: Zubdat al-taḥqīq wa-nuzhat al-tawfīq)",
+      "author": "Pīr Muḥammad b. Quṭb al-Dīn al-Khūyī (per Princeton manuscript catalogue)",
+      "type": "commentary",
+      "content_status": "Princeton Garrett 4037Y (144-leaf codex) catalogued under Khūyī; a Zubdat alternative title is reported, but relationship to the distinct Iznīqī work remains uncollated. No manuscript leaves translated.",
       "entry_count": 0,
       "source_url": "https://dpul.princeton.edu/Garrettcollections/catalog/r494vk24f"
     },
@@ -1750,6 +1759,7 @@
   ],
   "concordance_status": "23 Qūnawī source-located bilingual passages link to 64 real al-Mahāʾimī section anchors, in the separate 127-section / 426-pair first-pass reader (through printed p. 138). No retranslations or unsupported manuscripts are claimed.",
   "source_cautions": [
-    "Printed source p. 260/261 describes the long ‘pure wujūd’ text as a naṣṣ mulḥaq (appended text) in its exemplar; the entire QUN-NU-020 range is only provisionally attributed until manuscript comparison."
+    "Printed source p. 260/261 describes the long ‘pure wujūd’ text as a naṣṣ mulḥaq (appended text) in its exemplar; the entire QUN-NU-020 range is only provisionally attributed until manuscript comparison.",
+    "Bibliographical split: Kātib Çelebi assigns a two-part Zubdat al-taḥqīq to al-Iznīqī, then separately lists Pīr Muḥammad al-Khūyī’s commentary (incipit al-ḥamdu lillāh kāshif al-qulūb wa-l-abṣār). Princeton Garrett 4037Y catalogues the latter with Zubdat as an alternative title. These must not be silently identified. An attribution-critical incipit/explicit witness collation is mandatory."
   ]
 }
