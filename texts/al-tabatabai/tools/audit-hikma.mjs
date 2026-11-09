@@ -74,7 +74,11 @@ for(const [name,file] of books){
     check(units.some(u=>u.id==='M-P-01'),'Muẓaffar introduction must precede its Book III selections');
     check(units.filter(u=>/^M-K-(0[1-9]|1[0-7])$/.test(u.id)).length===17,
       'Muẓaffar Book II must preserve seventeen working bilingual reading units, some source-normalized');
-    check(units.length===53,'Muẓaffar must contain 53 working reading units with eleven Book I passages');
+    check(units.length===57,'Muẓaffar must contain 57 working reading units including four Book IV openings');
+    const newBook4=['M-C-01','M-C-02','M-C-03','M-C-04'];
+    check(stages.some(x=>x.id==='C'&&x.bookNumber===4),'Muẓaffar new Book IV stage missing');
+    check(newBook4.every(id=>units.some(u=>u.id===id&&u.stage==='C'&&u.arabic.length>450&&u.english.length>850)),
+      'Muẓaffar four source-grounded Book IV proposition sections missing or truncated');
     check(stages.some(x=>x.id==='K'&&x.bookNumber===2),'Muẓaffar Book II stage is missing');
     const universalIds=['M-K-01','M-K-02','M-K-03','M-K-04','M-K-05','M-K-06','M-K-07','M-K-08','M-K-09','M-K-10','M-K-11','M-K-12','M-K-13','M-K-14','M-K-15','M-K-16','M-K-17'];
     check(units.find(u=>u.id==='M-K-08')?.notes?.some(n=>/conjecture|inconsistent|not logically consistent/i.test(n.text||'')),
@@ -120,6 +124,8 @@ if(mMap&&mText){
     'Muẓaffar source map lost new Book I source coverage');
   check(mMap.parts.find(p=>p.book===2)?.availableUnits===17,
     'Muẓaffar source map must register Book II opening');
+  check(mMap.parts.find(p=>p.book===4)?.availableUnits===4,
+    'Muẓaffar source map must register four Book IV selected readings');
   check(mMap.parts.reduce((n,x)=>n+x.topics.length,0)>=60,'Muẓaffar map lost section titles');
   for(const p of mMap.parts){
     check(p.start>0&&p.end>=p.start,'Muẓaffar invalid page range for book '+p.book);
