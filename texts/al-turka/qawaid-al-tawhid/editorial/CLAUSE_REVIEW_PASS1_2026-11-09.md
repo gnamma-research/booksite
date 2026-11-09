@@ -1,6 +1,6 @@
 # Qawāʿid / Tamhīd — clause-level comparative review, pass 1
 
-**9 November 2026.** This work inventories 5520 Arabic punctuation-clause candidates and 2853 English sentence candidates across **all 171 bilingual units**. Only **130 Arabic clauses in 11 units** have been individually compared with their English in this pass. The remaining **5390 are not certified**.
+**9 November 2026.** This work inventories 5520 Arabic punctuation-clause candidates and 2853 English sentence candidates across **all 171 bilingual units**. Only **448 Arabic clauses in 16 units** have been individually compared with their English in this pass. The remaining **5072 are not certified**.
 
 All clauses, offsets, corresponding English for reviewed passages, and source fingerprints are in the [complete clause ledger](../qa/clause-ledger.json). Automatic enumeration is **not** evidence of an accurate translation. The original Arabic and the reported QT-059 lacuna remain unchanged.
 
@@ -98,6 +98,73 @@ All clauses, offsets, corresponding English for reviewed passages, and source fi
 | 6–6 | 1–1 | **checked** | وبيان تفاصيل أحكامها ونسبها المختصة بكل منها. — Properties and special relations are included in the initial exposition; English reorders within the opening sentence. |
 | 7–8 | 4–5 | **checked** | فإن قلت: المسألة في كل علم إنما تطلق على ما يبرهن عليه في ذلك العلم، فحيث لا برهان كيف يتصور المسألة؟ — Question in science requires demonstration in the relevant technical sense. |
 | 9–13 | 6–8 | **checked** | قلت: البرهان إنما هو تأليف المبادي اليقينية من البينة أو المسلمة، بحيث ينساق إلى الحكم المطلوب المسمى ب«المسألة»، وإذ ق… — Demonstration as ordering certain principles to a judgment, and its analogue in this science, retained. |
+
+### SH-015 — A, printed pp. 83–87
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–12 | 1–8 | **checked** | أقول : هذا دليل على بطلان القول بالتشكيك الذي هو مبنى قواعد المشّاءين في هذه المسألة ، و عمدة عقائدهم ، و لمّا التزم ال… — Two distinct argumentative responses identified: premise-denial and positive counterargument. |
+| 13–21 | 9–14 | **checked** | تعرَّض له بقوله : ان الوجود المطلق بمعنى لا به شرط الحاصل للماهيّات و الطبايع المتخالفة ، قد بيَّن في موضعه انّه لا يقب… — Necessity of unrestricted existence and ensuing multiplicity objection retained. |
+| 22–30 | 15–19 | **checked** | لا يقال : انّما يلزم تعدّد الواجب لو لم يكن الطبيعة الملزومة موجودة بالوجود المطلق متحده معه في الوجود ، و اما إذا كان … — Counterclaim of external identity and reply based on independent existence distinguished. |
+| 31–37 | 20–24 | **checked** | هذا إذا ذهب القائل بالتشكيك مذهب التجويز و الاحتمال العقلي ، بان يقول : انما يلزم - ما لزم - التعدّد لو لم يكن قول مطلق… — The sanad as support for a denial is refuted only insofar as it is coextensive with the denial. |
+| 38–48 | 25–32 | **checked** | و اما إذا ذهب مذهب المعارضة و الاستدلال و يُدَّعى وجوب القول بالتشكيك و ثبوته بالضرورة و تمسَّك في بيان ذلك بإثبات الأو… — Priority, intensity, and perfection introduce the rival proof; inferential circularity is explained. |
+| 49–52 | 33–34 | **corrected** | و قد حقّق - أيضاً - إبطال ذلك في الاعتماد الكبير بما ملخَّصه ، ان عروض التشكيك الذي يوجب تقرُّر عرضية معروضه لموضوعاته … — عرضية means accidental inherence, not mere extrinsicity; change of accidents' individuals or species is distinguished. |
+| 53–57 | 35–36 | **checked-with-note** | و يعلم تفصيل ذلك ممّا بيَّن الفاصل الطوسي في شرحه للاشارات حيث قال : « ذلك انما يتصور في حقيقة يمكن ان تجعل نازلة في مح… — The al-Ṭūsī passage is a quotation within Tamhīd; not separately manuscript-collated. |
+| 58–69 | 37–42 | **checked-with-note** | إذا تقرَّر هذا فنقول ، صحة تبدُّل الوجودات المتخالفة بالنوع أو الشخص على الماهيَّة المتعينة الحقيقيَّة ظاهر البطلان ، ف… — Concessive reasoning, individuation, and historical celestial/elemental corporeality retained. |
+
+### SH-020 — A, printed pp. 95–98
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–6 | 1–2 | **checked** | أقول : هذه صورة نقض اجمالى على الدليل المذكور ، و تقريره ، ان ما ذكرتموه في بيان ان الواجب لذاته لا يجوز ان تكون تلك ال… — Opening sweeping objection remains attributed to the opponent. |
+| 7–19 | 3–7 | **checked** | و بيان ذلك ان الواجب لا يمكن ان يكون نفس الوجود المطلق ، لأنَّ حقيقته لو كانت ذات افراد عقليَّة ، فلا بُدَّ و ان يوجد م… — Intelligible instances and possibility/necessity dilemma correctly ordered. |
+| 20–26 | 8–10 | **checked** | و بيان ذلك ان الطبيعة الواجبة ، لا بدَّ و ان تكون طبيعة نوعيَّة ، و الا لزم ان تكون افرادها مختلفة الحقائق ، فيلزم التر… — Unity of a specific nature and its essential entailments retained. |
+| 27–33 | 11–13 | **unresolved-reading** | فلو لم يقتض بعض افرادها الوجوب و البعض الآخر الامتناع ، لزم ان لا يكون ذلك الاقتضاء بالذات ، بل ، بالغير ، فيلزم ان يكو… — لو لم يقتض is inconsistent with the inferential role; displayed فلو اقتضى alternative remains source-disputed. |
+| 34–39 | 13–15 | **checked** | فان كانت تلك الحقيقة المطلقة مغايرة لحقيقة الوجودات العينيَّة الخاصَّة المسمّاة بالوجودات الممكنة ، كان اطلاق لفظ الوجو… — Second horn separates equivocity and necessary qualification of possible instances. |
+| 40–49 | 16–20 | **checked-with-note** | فأجاب بان هذا النقض انّما يرد على - مَن - جعل الطبيعة الواجبة متعيّنة مقابلًا لسائر المتعيِّنات ، فيكون مغايراً للوجود … — Reply restricts objection to determinate Necessary; به عين حقيقته remains a syntactic crux. |
+| 50–57 | 21–24 | **checked** | و الحاصل انّهم لمّا ذهبوا إلى ان الواجب هي الطبيعة الخاصة المتعيِّنة ، مثل ساير المتعيِّنات ، لزم من قولهم : ان يكون مغ… — Unrestricted comprehensive existence contrasted with a determinate nature. |
+| 58–61 | 25–26 | **checked** | فان قيل : يلزم عليهم ايضاً احد الأمرين ، اما انتفاء القول بالإمكان و الممكنات و ساير الماهيّات ، و اما ان يكون في الواج… — Challenge about possible entities and possibility in the Necessary preserved. |
+| 62–71 | 27–30 | **checked** | قلنا ان أريد بانتفاء الإمكان ، انتفاؤه مطلقا ، فلزومه ممنوع ، و ان أريد انتفاؤه عن الوجود من حيث انه وجود ، فلزومه مسلّ… — Crucial split: unconditional negation of possibility rejected; possibility of existence qua existence denied. |
+| 72–74 | 31–33 | **checked** | و اعلم انَّ امثال هذه الأبحاث عند الأزكياء من ارباب الذوق من اجلى البديهيات ، و اما عند غيرهم من الفضلاء المتقيّدين بقل… — Polemical conclusion and Qurʾān 24:40 preserved. |
+
+### SH-021 — A, printed pp. 98–99
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–1 | 1–2 | **checked** | أقول : هذا شروع فيما يرد على ظاهر مذهب المحققين و دفعه من الإيرادات الموهمة للناظرين المجادلين من ارباب العقول الضعيفة … — Polemical description of disputants remains the author's, not the translator's. |
+| 2–8 | 3–5 | **checked** | من جملتها ان الطبيعة المطلقة التي هي الواجب عندهم ، انّما هو باعتبار عدم اعتبار القيود و النسب مطلقا ، حتى عن هذا الاعت… — Absence of added qualification sets up the objection about intrinsic necessity. |
+| 9–18 | 6–10 | **checked** | و بيان ذلك انّه لو كانت واجبة لذاتها و كان الوجوب مقتضى ذاتها ، لامتنع انفكاكه عنها ، و ذلك يستلزم ان لا يكون مطلقة ، ح… — Reductio on necessity as an allegedly added restriction retained. |
+| 19–25 | 11–12 | **checked** | فأجاب ، بانَّ الطبيعة المطلقة من حيث هي مطلقة ، قد تكون لها احكام ضرورى لا يخرجها عن حدِّ الإطلاق ، فانَّ الأحكام انّما… — External qualifiers distinguished from necessary intrinsic judgments. |
+| 26–30 | 13–14 | **checked** | أما إذا كانت من الاعتبارات العقليَّة الحاصلة لها بالقياس إلى نفسها بدون اعتبار معنى زائد ، يشوب صرافة الإطلاق به ، و لا… — Intellectual considerations do not become extramental determiners. |
+| 31–35 | 15–15 | **checked** | لا يقال : كلُّ - ما تغاير الطبيعة المطلقة من المفهومات ، سواء كانت اعتباريَّة عقليَّة حاصلة لها لذاتها ، أو محصّلة لاحق… — Objection about all distinct concepts retained. |
+| 36–41 | 16–18 | **checked** | لانّا نقول : انّما تكون مخرجة لها ، ان لو كانت اموراً زائدة عليها في الأعيان منضمّة معها فيها ، أو كان مبدأ عروضها و من… — Response derives predication from intrinsic source rather than foreign determination. |
+| 42–42 | 19–19 | **checked** | و من هاهنا تعرف منشأ التفرقة بين الأسماء الإلهيَّة و الكونيَّة . — Divine and cosmic names distinguished. |
+
+### SH-023 — A, printed pp. 106–109
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–10 | 1–3 | **checked** | أقول : هذا إشارة إلى الجواب الثاني من الايرادين المذكورين ، لمّا كان السائل ادعى الضرورة في المتنازع فيه ، يمكن دفعه ، … — Bare self-evidence denial rejected as merely dialectical. |
+| 11–21 | 4–10 | **checked** | فالجواب الحاسم لمادة الشبهة ان يقال ، انَّ الوجود الخاصّ الممكن الذي هو عبارة عن الوجودات المخصوصة بالتعيُّنات و الإضاف… — Four alternatives for particular existence are enumerated in order. |
+| 22–32 | 11–16 | **checked** | و ذلك لأنه لو أريد بها معروض شيء من هذه التعيُّنات و الصفات و الأحوال ، بدون اعتبارها معه الذي هو القسم الأول من الأقسا… — First (bare subject) versus second (accident alone) distinguished. |
+| 33–40 | 17–20 | **checked** | و لو أريد بها مجموع الأمرين ، أي المركَّب من العارض و المعروض الذي هو القسم الثالث من الأقسام ، فلا نسلَّم امكان وجود م… — Third (composite of parts) rejected without smuggling in a modern ontology. |
+| 41–46 | 21–23 | **checked** | فان قلت : انّما يلزم المحال لو كان ممتنعاً مطلقاً ، اما إذا كان ممتنعاً في الخارج فقط ، فلا نسلَّم استحالته . قلت : ما … — Objection limited to external impossibility answered. |
+| 47–54 | 24–30 | **checked** | و لو أريد بها معروض شيء من تلك العوارض من حيث هو معروضه - أي مع - اعتبار هذا العارض معه من حيث هو عارض على ما هو الموجو… — Fourth (subject under accidental qualification) and intrinsic/relative unity preserved. |
+| 55–61 | 31–33 | **checked** | فيقرَّر من هذا التحقيق انّه لا يمكن للوجود المطلق من حيث انَّه وجود مطلق ، افراد ذاتيَّة مختلفة بحسب الوجوب و الإمكان و… — Possibility as manifestation of knowledge and necessity as manifestation of existence distinguished. |
+| 62–66 | 34–35 | **checked** | و اما القول بالمنافاة بين الممكن و الواجب ، فمبنىٌّ على تعدُّد افراد الوجود ، و اختصاص فرد منه بالوجوب دون غيره ، و قد … — Closure objects to independently diverse existential instances. |
+
+### SH-024 — A, printed pp. 109–111
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–11 | 1–5 | **checked** | أقول : هذا ايراد بعض على ما برهن عليه ، من امتناع اختلاف افراد الوجود المطلق في الوجوب و الإمكان و الامتناع ، و تقريره … — Mental existence objection to equal modal status stated as opponent's. |
+| 12–17 | 6–8 | **checked** | لا يقال : الذي يمتنع ان يوجد في الخارج ، الكائن في الذهن من حيث انّه كائن في الذهن ، لا الكون الذهني الذي هو من قبيل ال… — Intelligible form's status as external accident contrasted with being-in-mind. |
+| 18–22 | 8–10 | **unresolved-reading** | و اما ما تكوَّنت فيها ، فامر آخر غير نفس الصورة انّما اعتبره العقل عند ملاحظته لما ملاحظة تكوُّنها فيه ، و لا شك ان ذلك… — ما تكوّنت فيها and عند ملاحظته لما are problematic readings; translation provisional. |
+| 23–32 | 11–16 | **checked** | و جوابه ان الكون الذهني هو الكون العيني بالذات ، و ان كان مغايراً له بالاعتبار ، و تحقيق هذا الكلام موقوف على تمهيد مقد… — Unity in intrinsic being and diversity of consideration maintained. |
+| 33–43 | 17–23 | **checked** | و تلك الشئون المسماة في مرتبة اخرى بالأعيان الثابتة ، و باعتبار آخر بالأسماء ، مختلفة بحسب الحيطة و القرب الذاتي ، بعضه… — Names/fixed entities and sequence spirits–imaginal–sensible retained. |
+| 44–57 | 24–31 | **checked** | و إذا عرفت هذا و قد ظهر لك مما سبق من الأبحاث ، ان تلك الأحوال و ما يتبعها من الأحكام المخصصة للوجود سواء كانت من الأحو… — Priority in reality versus final manifestation kept distinct. |
+| 58–63 | 32–35 | **checked-with-note** | قوله : و لا اعتبار هاهنا في الموجوديَّة بالفرض ، دفع لما يمكن ان يورد هاهنا ، من ان الشبهة باقية بحالها ، فان المعنى ال… — بالفرض versus بالعرض remains an alternative at the final lemma. |
+| 64–67 | 36–38 | **checked** | و بيان دفعه ، انَّ ذلك المعنى الاعتباري منه خارج عن المبحث ، لأن الكلام هاهنا أي في هذه الرسالة انّما هو في الوجود المو… — Excluded merely conceptual sense and self-subsisting Necessary retained. |
 
 ## Editorial status and next passages
 
