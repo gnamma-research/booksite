@@ -1,0 +1,371 @@
+{
+  "schema": "gnamma-human-clause-review-v1",
+  "date": "2026-11-09",
+  "reviewScope": "Manual comparison of bounded Arabic punctuation clauses and corresponding English sentences in 11 sections of the source-based corpus; not independent manuscript collation, not a claim to certify other units.",
+  "sourceBasis": "Current repository JS matn/commentary modules, retained edition N introduction and edition A main/conclusion",
+  "method": "Source clause numbers are computed from Arabic punctuation. English ranges are manually matched, not proportional autoalignment. All segments in these eleven sections must be covered exactly once; unresolved readings remain explicit.",
+  "units": [
+    {
+      "id": "SH-061-C",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 2,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Correctly gives the ancestor's completed objectives before introducing the closing problem."
+        },
+        {
+          "arStart": 3,
+          "arEnd": 5,
+          "enStart": 2,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "The insufficiency of a brief treatise and the short indication are not conflated."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 7,
+          "enStart": 5,
+          "enEnd": 7,
+          "status": "checked",
+          "note": "Instrumental science, discrimination between sound and unsound reasoning, and grounds of truth/falsity retained."
+        },
+        {
+          "arStart": 8,
+          "arEnd": 8,
+          "enStart": 8,
+          "enEnd": 8,
+          "status": "checked",
+          "note": "The opponent's assertion about spiritual wayfarers is stated as an apparent problem, not authorial verdict."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 10,
+          "enStart": 9,
+          "enEnd": 10,
+          "status": "checked",
+          "note": "The apparent advantage of rational inquiry is reported as an inference to be addressed."
+        }
+      ]
+    },
+    {
+      "id": "SH-061-D",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked-with-note",
+          "note": "The experience-as-necessary-knowledge objection is retained. The base قانون يتبين الطريق حصولها is syntactically unstable."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 5,
+          "enStart": 3,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Reply makes universal shared certainty a necessary condition; not all private experiences qualify."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 7,
+          "enStart": 4,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Experienced contradictions and mutual denial are retained without denying all unveiling."
+        }
+      ]
+    },
+    {
+      "id": "SH-061-E",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 2,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "The weaker traveller's conviction and halt are attributed to a difference in preparedness."
+        },
+        {
+          "arStart": 3,
+          "arEnd": 6,
+          "enStart": 3,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "The stronger traveller criticizes confinement to an attained object, not the object as such."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 9,
+          "enStart": 5,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Concessive فرض التسليم and counterfactual instrument of discrimination are retained."
+        },
+        {
+          "arStart": 10,
+          "arEnd": 12,
+          "enStart": 6,
+          "enEnd": 7,
+          "status": "corrected-with-source-crux",
+          "note": "English now retains distinguishing some contents from others. Final Arabic البعض/النقص apparatus remains unresolved."
+        }
+      ]
+    },
+    {
+      "id": "SH-061-F",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 2,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Purification and acquisition of theoretical knowledge are sequentially coupled, not made alternatives."
+        },
+        {
+          "arStart": 3,
+          "arEnd": 3,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "unresolved-reading",
+          "note": "يصيرى and الغير المنسقة المنتظمة remain transcription cruxes. English is an expressly provisional construction."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 6,
+          "enStart": 3,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Acquired malaka, certainty discrimination, and musical/metre analogies preserved."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 7,
+          "enStart": 5,
+          "enEnd": 5,
+          "status": "unresolved-reading",
+          "note": "الملوك is a problematic base form; travelling reads conjecturally as السلوك, without manuscript confirmation."
+        },
+        {
+          "arStart": 8,
+          "arEnd": 9,
+          "enStart": 5,
+          "enEnd": 6,
+          "status": "checked",
+          "note": "The malaka helps acquire and justify knowledge, and final comparative perfection is not omitted."
+        }
+      ]
+    },
+    {
+      "id": "SH-061-A",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "unresolved-reading",
+          "note": "أقفاله/إقباله/أفعاله variants materially affect metaphor; the principal displayed reading is followed."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 7,
+          "enStart": 2,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "With a perfected guide present, station, time, preparedness, sciences and measures are individually related."
+        }
+      ]
+    },
+    {
+      "id": "SH-061-B",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 2,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Length of further investigations and inadequacy of this concise commentary retained."
+        },
+        {
+          "arStart": 3,
+          "arEnd": 4,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Author's devotional ending distinguished from the later editor's colophon."
+        }
+      ]
+    },
+    {
+      "id": "SH-014",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 10,
+          "enStart": 1,
+          "enEnd": 8,
+          "status": "checked",
+          "note": "Attribute/subject and necessary/possible are kept as incompatible predications of indistinguishables."
+        },
+        {
+          "arStart": 11,
+          "arEnd": 16,
+          "enStart": 9,
+          "enEnd": 10,
+          "status": "checked",
+          "note": "The possibility of graded predication is voiced in the opponent's objection, not decided as settled."
+        },
+        {
+          "arStart": 17,
+          "arEnd": 19,
+          "enStart": 11,
+          "enEnd": 11,
+          "status": "corrected",
+          "note": "Accidental/essential (عارضة/ذاتية) and species-level predication (قولاً نوعياً) corrected; earlier extrinsic/intrinsic and 'specific manner' blurred the logical claim."
+        },
+        {
+          "arStart": 20,
+          "arEnd": 38,
+          "enStart": 12,
+          "enEnd": 20,
+          "status": "checked",
+          "note": "Fourfold dilemma, a-fortiori necessity and final denial of an entailing particular nature preserved."
+        }
+      ]
+    },
+    {
+      "id": "SH-INTRO-018",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 4,
+          "enStart": 1,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Conceptual principles, essence-names, attributes, acts and relational names retained in order."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 6,
+          "enStart": 4,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Assertoric principles are judgments of thubūt, not external physical existence."
+        }
+      ]
+    },
+    {
+      "id": "SH-INTRO-019",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 6,
+          "enStart": 1,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Self-evident or higher-science principles and objection of the highest science retained."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 11,
+          "enStart": 4,
+          "enEnd": 6,
+          "status": "checked",
+          "note": "First answer preserves effects, sense, reason, ḥads and kashf as distinguishable modes."
+        },
+        {
+          "arStart": 12,
+          "arEnd": 14,
+          "enStart": 7,
+          "enEnd": 8,
+          "status": "checked",
+          "note": "Second answer preserves reception from a more consummate unveiling as an analogue of higher science."
+        }
+      ]
+    },
+    {
+      "id": "SH-INTRO-020",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 4,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "The objection requires a criterion and rejects merely imitative reception."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 7,
+          "enStart": 3,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Double-negation reply denies that a discriminating measure is absent; person/time specificity retained."
+        },
+        {
+          "arStart": 8,
+          "arEnd": 10,
+          "enStart": 5,
+          "enEnd": 6,
+          "status": "checked",
+          "note": "Selective disclosure and the contrast of divine communication with satanic suggestion retained."
+        }
+      ]
+    },
+    {
+      "id": "SH-INTRO-021",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 4,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Domains of divine names are specified before the separate question of tawqīf."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 5,
+          "enStart": 3,
+          "enEnd": 3,
+          "status": "corrected",
+          "note": "The term tawqīfiyya is explicitly preserved as authoritative fixity; previous act-of-disclosure paraphrase exceeded the immediate wording."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 6,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Properties and special relations are included in the initial exposition; English reorders within the opening sentence."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 8,
+          "enStart": 4,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Question in science requires demonstration in the relevant technical sense."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 13,
+          "enStart": 6,
+          "enEnd": 8,
+          "status": "checked",
+          "note": "Demonstration as ordering certain principles to a judgment, and its analogue in this science, retained."
+        }
+      ]
+    }
+  ],
+  "claimedManuallyComparedArabicClauses": 130,
+  "issues": "Three passages corrected; one passage contains two connected technical-semantic corrections; additional textual cruxes flagged without conjectural emendation.",
+  "noWitnessesCollated": true
+}
