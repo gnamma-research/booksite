@@ -1,5 +1,15 @@
 # Farghānī · Muntahā al-madārik — cumulative handoff archive
 
+
+## Latest critical VII source-evidence stage — 10 photographic print comparisons
+
+- [Original-resolution 1876 print audit VII](I1876_COLLATION_STAGE_007.md) · [machine-readable cumulative ten-locus printed evidence](I1876_COLLATION_CUMULATIVE_004.json).
+- New photographed print difference: I1876 p8 **سوى أنه ربما يكون** vs B2007 p23 **إلّا أنه ربما يكون**. New printed agreement: I1876 p16 **في عون هذا** matches B2007 p33. Record both as *print* evidence; manuscript readings remain unknown.
+- Total historical I1876/B2007: **10 selected comparisons, 5 differences, 5 agreements, no complete page collation**, **0 MS variants**.
+- [Stage VII handoff](STAGE_HANDOFF_CRITICAL_007.md) · [previous complete cumulative archive VI](FULL_CUMULATIVE_CRITICAL_006.md). The next archive VII appends this evidence to the prior corpus without destroying earlier stages.
+- [Modern Arabic–English clause reader](../critical-edition.html), still 198 selected source-checked records; original working translation B2007 pp18–145 remains 128 page-labelled units.
+
+
 ## Current stage VI — eight historical-print comparisons, four differences (9 November 2026)
 
 - [Full Stage VI handoff and exact p37 restart](STAGE_HANDOFF_CRITICAL_006.md); [photographic critical report](I1876_COLLATION_STAGE_006.md).
