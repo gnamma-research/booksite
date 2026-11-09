@@ -63,6 +63,7 @@ async def test_desktop(page):
     await page.locator("[data-gnx-close-edge]").click()
 
     # Family is a curated subset, not an edge invented from school membership.
+    await page.locator(".gnx-advanced summary").click()
     await page.locator("[data-gnx-family]").select_option("fusus")
     d = await info(page)
     check(d["d"]["selected"] == "c:ibnarabi_fusus", "Text family did not focus its actual root")
