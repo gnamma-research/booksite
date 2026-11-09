@@ -41,4 +41,14 @@ for(const e of book.entries){
   }}
 }
 for(const work of book.works){assert(work.entry_count===book.entries.filter(e=>e.work===work.id).length,'Count mismatch: '+work.id)}
+
+const ledger=read(path.join(base,'editorial/COVERAGE_LEDGER.csv')).trimEnd().split(/\r?\n/);
+const ledgerIds=ledger.slice(1).map(line=>{const m=line.match(/^"[^"]*","([^"]*)",/);assert(m,'Malformed CSV row');return m[1]}).filter(Boolean);
+assert.equal(ledgerIds.length,book.entries.length,'Coverage CSV stale: expected one row per bilingual record');
+assert.equal(new Set(ledgerIds).size,book.entries.length,'Duplicated source ledger IDs');
+for(const id of ids)assert(ledgerIds.includes(id),'Missing record in coverage CSV: '+id);
+for(const e of book.entries.filter(e=>e.id.startsWith('QUN-NU-020-'))){
+ assert.equal(e.status,'attribution-provisional-appended-text','Text 20 must remain explicitly provisional until witnessed');
+}
+
 console.log(JSON.stringify({status:'PASS',passages:book.entries.length,arabic:ar,english:en,linked_entries:linkedEntries,mahaimi_links:linkCount,targets:mahIds.size},null,2));
