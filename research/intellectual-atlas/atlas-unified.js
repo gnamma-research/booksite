@@ -29,7 +29,7 @@ textual_use:"Textual use",author_reference:"Author reference",critique:"Critical
 reported_source:"Source testimony",exchange:"Scholarly exchange",broad_influence:"Qualified connection",hypothesis:"Hypothesis",
 claimed_lineage:"Claimed lineage",abridgement:"Abridgement",translation:"Translation",other:"Relationship"};
 const state={subject:"all",view:"geography",school:"all",search:"",source:"all",family:"",edgeType:"all",certainty:"all",
-from:-600,to:2026,selected:"",evidence:"",cluster:"",clusterPage:1,bookPage:1,depth:1,quickLimit:8,region:"",searchOpen:false,advancedOpen:false};
+from:-600,to:2026,selected:"",evidence:"",cluster:"",clusterPage:1,bookPage:1,depth:1,browseMode:"linked",region:"",searchOpen:false,advancedOpen:false};
 const data={all:[],byId:new Map(),edges:[],in:new Map(),out:new Map(),families:[],sources:new Map(),history:[],
 errors:[],counts:{audited:0,openiti:0,alreq:0,pinned:0,relations:0},licences:[],loadReady:false};
 const renderCache={clusters:new Map(),workMap:new Map(),current:[],filtered:[],lanes:[],network:null};
@@ -194,6 +194,7 @@ function readHash(){
  state.school=Object.hasOwn(SCHOOLS,p.get("school"))?p.get("school"):
   Object.hasOwn(SCHOOLS,p.get("madhhab"))?p.get("madhhab"):"all";
  state.search=(p.get("q")||p.get("gnx_q")||"").slice(0,140);
+ state.browseMode=p.get("browse")==="all"?"all":"linked";
  state.source=["all","audited","OpenITI","Alreq manuscript catalogue","pinned"].includes(p.get("source_tier"))?p.get("source_tier"):"all";
  const from=Number(p.get("from")),to=Number(p.get("to"));
  if(p.has("from")&&p.has("to")&&Number.isFinite(from)&&Number.isFinite(to)&&to>from+9){
@@ -213,6 +214,7 @@ function writeHash(push=false){
  if(state.selected)p.set("work_id",state.selected);
  if(state.school!=="all")p.set("school",state.school);
  if(state.search)p.set("q",state.search);
+ if(state.browseMode==="all")p.set("browse","all");
  if(state.family)p.set("family",state.family);
  if(state.source!=="all")p.set("source_tier",state.source);
  if(state.edgeType!=="all")p.set("edge_type",state.edgeType);
@@ -269,6 +271,15 @@ function relevantEdges(id,direction){
    return true;
  });
 }
+function timelineFollow(n){
+ if(!n||n.year==null||state.view!=="timeline")return;
+ const span=state.to-state.from;
+ const margin=Math.min(35,span*.12);
+ if(n.year<state.from+margin||n.year>state.to-margin){
+  state.from=clip(n.year-span/2,PERIOD_MIN,PERIOD_MAX-span);
+  state.to=state.from+span;
+ }
+}
 function chooseWork(id,moveToNetwork=false){
  if(!data.byId.has(id))return;
  state.selected=id;state.evidence="";state.searchOpen=false;state.cluster="";state.search="";
@@ -278,8 +289,69 @@ function chooseWork(id,moveToNetwork=false){
   state.subject=n.subjects[0]||"all";state.school="all";state.family="";
  }
  if(state.school!=="all"&&!n.schools.includes(state.school))state.school="all";
+ timelineFollow(n);
  writeHash(true);render();
 }
+
+// Navigate the same dated or undated works in both visualization modes.
+// Browsing defaults to works with actual documented edges; all catalogue
+// records remain available with an explicit All catalogued selector.
+function browseWorks(){
+ const works=filtered(false).filter(n=>n.kind==="work");
+ const selected=data.byId.get(state.selected);
+ const chosen=works.filter(n=>state.browseMode==="all"||n.degree>0||n.id===state.selected);
+ if(selected&&selected.kind!=="work"&&!chosen.some(n=>n.id===selected.id))chosen.push(selected);
+ chosen.sort((a,b)=>(a.year??Infinity)-(b.year??Infinity)||
+   a.title.localeCompare(b.title,"en")||a.id.localeCompare(b.id));
+ return chosen;
+}
+function browseStep(delta){
+ const works=browseWorks();
+ if(!works.length)return;
+ const current=works.findIndex(n=>n.id===state.selected);
+ const oldIndex=current<0?0:current;
+ const newIndex=clip(oldIndex+delta,0,works.length-1);
+ if(newIndex!==oldIndex)chooseWork(works[newIndex].id);
+}
+function browseBar(){
+ const works=browseWorks();
+ const index=works.findIndex(n=>n.id===state.selected);
+ const current=index>=0?index:0;
+ const left=Math.max(0,current-9),right=Math.min(works.length,current+10);
+ const neighboring=works.slice(left,right).map((n,i)=>{
+  const selected=n.id===state.selected;
+  return '<button class="text-rail-card" type="button" data-browse-work="'+safe(n.id)+'" data-browse-index="'+(left+i)+
+   '" aria-current="'+(selected?'true':'false')+'" title="'+safe(n.title+" — "+n.author+" — "+n.dateLabel)+'">'+
+   '<span class="text-rail-kicker">'+safe(n.year!=null?yearLabel(n.year):"Undated")+
+   ' · '+(n.degree?n.degree+" recorded links":"No recorded links")+'</span>'+
+   '<strong>'+safe(truncate(n.title,48))+'</strong>'+
+   '<small>'+safe(truncate(n.author,38))+'</small></button>';
+ }).join("");
+ const item=works[current]||data.byId.get(state.selected);
+ return '<section class="text-browser" aria-label="Browse texts horizontally with scroll, swipe or keyboard arrows">'+
+ '<div class="text-browser-heading"><div><span class="text-browser-eyebrow">BROWSE TEXTS · '+(works.length?fnum(current+1)+" / "+fnum(works.length):"No matches")+'</span>'+
+ '<h3>'+safe(item?.title||"Select a work")+'</h3><p>Browse left or right. The selected timeline or source graph updates automatically, with every recorded direct relation visible.</p></div>'+
+ '<div class="text-browser-actions"><button type="button" data-browse-step="-1" aria-label="Previous text"'+(current<=0?' disabled':'')+'>← <span>Previous</span></button>'+
+ '<button type="button" data-browse-step="1" aria-label="Next text"'+(current>=works.length-1?' disabled':'')+'><span>Next</span> →</button></div></div>'+
+ '<div class="text-browser-modes"><div class="text-browser-views" role="group" aria-label="Choose text visualization">'+
+ '<button type="button" data-text-mode="timeline" aria-pressed="'+(state.view==="timeline")+'">Timeline</button>'+
+ '<button type="button" data-text-mode="network" aria-pressed="'+(state.view==="network")+'">Source &amp; reception graph</button></div>'+
+ '<div class="text-browser-scopes" role="group" aria-label="Choose works to browse">'+
+ '<button type="button" data-browse-mode="linked" aria-pressed="'+(state.browseMode==="linked")+'">Source-linked</button>'+
+ '<button type="button" data-browse-mode="all" aria-pressed="'+(state.browseMode==="all")+'">All catalogued</button></div></div>'+
+ '<div class="text-rail" data-text-rail tabindex="0" aria-label="Scroll or swipe horizontally through works; the visualization updates as the focused card changes">'+neighboring+'</div>'+
+ '<p class="text-browse-caveat">Order uses recorded dates or approximate author-death dates. Texts shown next to one another are not necessarily historically dependent.</p></section>';
+}
+function centerBrowseRail(){
+ const rail=ROOT.querySelector("[data-text-rail]");
+ if(!rail)return;
+ const selected=rail.querySelector('[data-browse-work][aria-current="true"]');
+ if(!selected)return;
+ rail.dataset.ready="0";
+ rail.scrollLeft=Math.max(0,selected.offsetLeft-rail.clientWidth/2+selected.offsetWidth/2);
+ requestAnimationFrame(()=>{if(rail.isConnected)rail.dataset.ready="1"});
+}
+
 function sceneTitle(){
  return state.subject==="all"?"The whole corpus":NAMES[state.subject]||"Historical texts";
 }
