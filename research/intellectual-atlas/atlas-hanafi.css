@@ -194,3 +194,40 @@ body .footer{font-size:11px}
 #gn-atlas .geo-marker{cursor:pointer}
 #gn-atlas .geo-map-scroll{overscroll-behavior:contain}
 #gn-atlas .geo-century-card{align-content:start}
+
+
+/* Timeline source workbench: undated catalogue records must never be dead-end markers. */
+#gn-atlas .atlas-chronology-coverage{display:flex;flex-wrap:wrap;align-items:center;gap:9px 18px;padding:12px 15px;margin-bottom:11px;background:var(--panel);border:1px solid var(--line);border-radius:7px;font-size:11px;color:var(--muted);line-height:1.5}
+#gn-atlas .atlas-chronology-coverage span{display:inline-flex;gap:4px;align-items:baseline}
+#gn-atlas .atlas-chronology-coverage strong{font-size:16px;font-weight:750;color:var(--ink);font-variant-numeric:tabular-nums}
+#gn-atlas .atlas-chronology-coverage button{border:1px solid var(--accent);color:var(--accent);background:var(--accentbg);border-radius:5px;padding:7px 11px;font-weight:700;font-size:11px}
+#gn-atlas .atlas-chronology-coverage button:hover{filter:brightness(.96)}
+#gn-atlas .atlas-evidence-shelf{background:var(--panel);border:1px solid var(--accent);border-radius:8px;box-shadow:0 6px 18px #00000010;margin:8px 0 14px;padding:14px 15px 13px;scroll-margin-top:10px}
+#gn-atlas .atlas-shelf-head{display:flex;justify-content:space-between;gap:15px;align-items:start}
+#gn-atlas .atlas-shelf-head h3{font:normal 22px/1.35 "Iowan Old Style",Georgia,serif;margin:3px 0 4px;color:var(--ink)}
+#gn-atlas .atlas-shelf-head h3 small{font:11px system-ui;color:var(--muted);margin-left:5px}
+#gn-atlas .atlas-shelf-head p{font-size:11px;line-height:1.65;color:var(--muted);max-width:760px;margin:3px 0 10px}
+#gn-atlas .atlas-shelf-head>button{flex:0 0 auto;border:1px solid var(--line);color:var(--ink);background:var(--panel);border-radius:5px;min-height:32px;padding:6px 11px;font-size:11px}
+#gn-atlas .atlas-shelf-search{display:grid;gap:4px;font-size:11px;color:var(--muted);max-width:600px;font-weight:650;margin:1px 0 12px}
+#gn-atlas .atlas-shelf-search input{width:100%;min-height:38px;padding:8px 11px;border:1px solid var(--line);border-radius:5px;color:var(--ink);background:var(--panel)}
+#gn-atlas .atlas-shelf-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+#gn-atlas .atlas-shelf-work{width:100%;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:9px 11px;text-align:left;display:grid;gap:3px;min-height:69px}
+#gn-atlas .atlas-shelf-work:hover,#gn-atlas .atlas-shelf-work.is-selected{border-color:var(--accent);background:var(--accentbg)}
+#gn-atlas .atlas-shelf-work strong{font-size:11px;overflow-wrap:anywhere;line-height:1.4}
+#gn-atlas .atlas-shelf-work small,#gn-atlas .atlas-shelf-meta{font-size:10px;color:var(--muted);line-height:1.45;overflow-wrap:anywhere}
+#gn-atlas .atlas-shelf-meta{font-variant-numeric:tabular-nums}
+#gn-atlas .atlas-shelf-inspector{background:var(--accentbg);border:1px solid var(--line);border-radius:6px;padding:11px 12px;margin:8px 0 12px}
+#gn-atlas .atlas-shelf-inspector-header{display:flex;align-items:start;justify-content:space-between;gap:10px;flex-wrap:wrap}
+#gn-atlas .atlas-shelf-inspector-header strong{font-size:13px;color:var(--ink);line-height:1.4}
+#gn-atlas .atlas-shelf-inspector-header span{font-size:10px;color:var(--accent);font-weight:650}
+#gn-atlas .atlas-shelf-inspector p{font-size:11px;line-height:1.6;margin:5px 0;color:var(--muted)}
+#gn-atlas .atlas-shelf-links{display:flex;gap:7px;flex-wrap:wrap;margin:9px 0}
+#gn-atlas .atlas-shelf-links button,#gn-atlas .atlas-shelf-links a{background:var(--panel);color:var(--accent);border:1px solid var(--line);border-radius:4px;padding:6px 9px;font-size:11px;text-decoration:none}
+#gn-atlas .atlas-shelf-links a:hover,#gn-atlas .atlas-shelf-links button:hover{border-color:var(--accent)}
+#gn-atlas .atlas-shelf-siblings{display:flex;flex-wrap:wrap;gap:6px;margin-top:5px}
+#gn-atlas .atlas-shelf-siblings button{border:1px solid var(--line);background:var(--panel);color:var(--accent);border-radius:4px;font-size:10px;padding:5px 8px;text-align:left;overflow-wrap:anywhere}
+#gn-atlas .atlas-evidence-shelf .pagination{padding-left:0;padding-right:0}
+#gn-atlas svg [data-unplaced]{cursor:pointer}
+#gn-atlas svg [data-unplaced]:hover rect,#gn-atlas svg [data-unplaced]:focus-visible rect{stroke:var(--accent);stroke-width:2.4;fill:var(--accentbg)}
+@media(max-width:800px){#gn-atlas .atlas-shelf-grid{grid-template-columns:1fr}#gn-atlas .atlas-chronology-coverage{gap:7px 14px}#gn-atlas .atlas-evidence-shelf{padding:12px 10px}}
+@media(max-width:550px){#gn-atlas .atlas-chronology-coverage{padding:10px}#gn-atlas .atlas-chronology-coverage span{flex-basis:46%;display:grid;gap:0}#gn-atlas .atlas-chronology-coverage button{flex-basis:100%}#gn-atlas .atlas-shelf-head h3{font-size:20px}#gn-atlas .atlas-shelf-head{gap:8px}#gn-atlas .atlas-shelf-head>button{padding:5px 8px}}
