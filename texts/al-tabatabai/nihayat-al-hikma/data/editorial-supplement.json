@@ -441,7 +441,7 @@
       "description": "Secondary collation witness only (vol. 2, 336 pp., 4th edition). Its pagination and critical notes differ from the existing Qum 1417 transcription and are not the reader’s current page locators."
     }
   ],
-  "statusNote": "Supplementary apparatus includes inherited later-editor notes and one NEW unresolved IX.9 internal-reference conjecture. Only documented text witnesses support 'attested' labels; no critical specialist certification is implied.",
+  "statusNote": "The presence of a corrected editorial witness does not mean the entire authorial Arabic has been collated against it; variants require documented individual decisions. This fourth-batch supplement additionally registers one unresolved IX.9 internal-reference conjecture; it is NOT an adopted variant and has not been independently witnessed. No specialist certification is implied.",
   "criticalNotes": [
     {
       "id": "N1428-I02-01",
