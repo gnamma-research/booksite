@@ -29,7 +29,7 @@
       "adoptedPrintedEditorialEmendations": 8,
       "supplementaryCriticalNotes": 8,
       "englishAutomatedStructureScreened": 136,
-      "englishLocalBilingualRead": 6,
+      "englishLocalBilingualRead": 16,
       "englishIndependentlyCollated": 0,
       "englishTriageRegister": "nihaya-english-collation-triage-2026-11-09.json"
     },
@@ -3885,7 +3885,7 @@
         "arabicParagraphs": 9,
         "englishParagraphs": 8,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -5623,7 +5623,7 @@
         "arabicParagraphs": 16,
         "englishParagraphs": 14,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -6119,7 +6119,7 @@
         "arabicParagraphs": 5,
         "englishParagraphs": 3,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -7195,7 +7195,7 @@
         "arabicParagraphs": 7,
         "englishParagraphs": 7,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -7558,7 +7558,7 @@
         "reviewHints": [
           "lexical-spot-check"
         ],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -7624,7 +7624,7 @@
         "arabicParagraphs": 5,
         "englishParagraphs": 5,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -7824,7 +7824,7 @@
         "arabicParagraphs": 9,
         "englishParagraphs": 9,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -7976,10 +7976,10 @@
       "arabicPresent": true,
       "englishPresent": true,
       "arabicCharacters": 953,
-      "englishCharacters": 1531,
+      "englishCharacters": 1541,
       "sourceEditionReviewed": "additional 1428 two-volume witness identified, NOT yet exhaustively collated",
       "sourceParityPercent": null,
-      "editorialNotes": 0,
+      "editorialNotes": 1,
       "supplementalCriticalNoteIds": [],
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
@@ -7990,7 +7990,7 @@
         "arabicParagraphs": 5,
         "englishParagraphs": 4,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -8022,7 +8022,7 @@
         "arabicParagraphs": 6,
         "englishParagraphs": 5,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -8090,7 +8090,7 @@
         "reviewHints": [
           "lexical-spot-check"
         ],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     }
