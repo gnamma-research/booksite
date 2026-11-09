@@ -1623,6 +1623,24 @@
       ]
     },
     {
+      "id": "IZN-RIS-002-05",
+      "work": "IZN-RIS",
+      "section": "Rational argument V: time, place and the limit of negation",
+      "order": 11.25,
+      "locator": "Balaban–Çalışkan (2023), printed p. 836, PDF page index 22",
+      "source_url": "https://dergipark.org.tr/en/download/article-file/3074106",
+      "status": "translated-edition-excerpt",
+      "arabic": "الخامس: العقل لا يتصرف إلا فيما يكون في زمان ومكان، لأن كل ما يدركه فإنه يدركه إما في الماضي أو في المستقبل أو في الحال، وكل ذلك تحت الزمان، وكل ما يتصوره، فإنه إنما يتصوره إما ههنا أو هناك، وكل ذلك تحت المكان، وإذا قلت: الحق بخلاف ذلك فمعروفك في هذه المعرفة نفي غير الحق عنه، ونفي غير الحق لا يكون هو عين وجدان الحق.",
+      "english": "Fifth: Intellect operates only upon what lies within time and place. Whatever it apprehends, it apprehends as past, future, or present, all of which fall under time; and whatever it conceives, it conceives as here or there, all of which fall under place. If you say that the Real is unlike this, what you have known in this knowledge is the negation from Him of what is other than the Real. But negating what is other than the Real is not itself the very finding of the Real.",
+      "tags": [
+        "aql",
+        "zaman",
+        "makan",
+        "wijdan"
+      ],
+      "notes": "Independently checked on the rendered 2023 Arabic source page. This describes the discursive intellect considered here; it does not establish that every possible intellect is spatial."
+    },
+    {
       "id": "IZN-RIS-002-06",
       "order": 11.26,
       "section": "Rational argument VI: judging perfection presupposes adequate comprehension",
@@ -1645,7 +1663,7 @@
       "section": "Rational argument VII: genuine knowledge of non-encompassment",
       "locator": "Balaban–Çalışkan (2023), printed p. 836, PDF index 22, argument 7",
       "status": "translated-edition-paragraph",
-      "arabic": "السابع: الإدراك إنما يكون بالعقل، والعقل لا يدرك إلا متعينًا مثله، فلا يهتدي إلى التوحيد لإثباته الرسوم، والتوحيد لا يكون إلا بفنائها واستهلاك الكل في عين الأحدية، وانتفاء الحدوث في القدم كما قال الله تعالى: ﴿كُلُّ شَيْءٍ هَالِكٌ إِلَّا وَجْهَهُ﴾ [القصص: 88]، وهو أمر يعجز عنه العقل. نعم، إذا أطلع الله العبد على عجز العقل عن ذلك، وأيس من الوقوف بالتفكر، وعلم عظمة الحق عن إدراك العقل وبلوغه إلى جنابه الأقدس، أقر بالعجز واعترف بالجهل، وهو غاية العلم به، لأن العقل لا يعترف بالقصور ما لم يصل إلى الدقائق والرقائق والحقائق التي لا يحيط بها، ولا يضبطها لغموضها وخفائها أو لكثرتها وخروجها عن الحصر والعد، فإذا التقاعد والتقاصر عن إدراك ما من شأنه أن لا يحاط إدراكًا غاية الإدراك، بمعنى أن العلم بما لا يعلم بأنه لا يعلم علم، وأن العلم بعدم إحاطة العلم بما لا يحاط به علمًا علم حقيقي، كما قال أبو بكر الصديق رضي الله عنه: «العجز عن درك الإدراك إدراك».",
+      "arabic": "السابع: الإدراك إنما يكون بالعقل، والعقل لا يدرك إلا متعينًا مثله، فلا يهتدي إلى التوحيد لإثباته الرسوم، والتوحيد لا يكون إلا بفنائها واستهلاك الكل في عين الأحدية، وانتفاء الحدوث في القدم كما قال الله تعالى: ﴿كُلُّ شَيْءٍ هَالِكٌ إِلَّا وَجْهَهُ﴾ [القصص: 88]، وهو أمر يعجز عنه العقل. نعم، إذا أطلع الله العبد على عجز العقل عن ذلك، وأيس من الوقوف بالتفكر، وعلم عظمة الحق عن إدراك العقل وبلوغه إلى جنابه الأقدس، أقر بالعجز واعترف بالجهل، وهو غاية العلم به، لأن العقل لا يعترف بالقصور ما لم يصل إلى الدقائق والرقائق والحقائق التي لا يحيط بها، ولا يضبطها لغموضها وخفائها أو لكثرتها وخروجها عن الحصر والعد، فإذًا التقاعد والتقاصر عن إدراك ما من شأنه أن لا يحاط إدراكًا غاية الإدراك، بمعنى أن العلم بما لا يعلم بأنه لا يعلم علم، وأن العلم بعدم إحاطة العلم بما لا يحاط به علمًا علم حقيقي، كما قال أبو بكر الصديق رضي الله عنه: «العجز عن درك الإدراك إدراك».",
       "english": "Seventh: In its ordinary operation apprehension belongs to intellect, yet intellect apprehends only what is determinate like itself. It cannot reach the unification intended here because it establishes distinguishing forms, whereas this unification requires their effacement: the absorption of plurality into the source of unicity and the disappearance of origination before the beginningless. God says, 'Everything is perishing except His Face' [Q 28:88]. Intellect cannot accomplish this by its own resources. If, however, God makes the servant aware of intellect's inability, and the servant ceases to expect that discursive thought can wholly attain the goal, he acknowledges his incapacity and confesses his ignorance. This is the furthest point of such knowledge: intellect cannot encompass subtleties and realities whose hiddenness or inexhaustible multiplicity defeat it. Yet its recognition that what cannot be encompassed remains beyond its grasp is itself a genuine kind of knowledge. As Abū Bakr al-Ṣiddīq is reported to have said: 'Inability to comprehend comprehension is itself a comprehension.'",
       "notes": "The saying attributed to Abū Bakr requires authentication. This negative cognition of non-encompassment is not presented as identical with the positive plenitude of mystical realization. The end of the Arabic has been normalized from rendered PDF and extracted text; manuscript collation remains outstanding.",
       "work": "IZN-RIS",
@@ -1655,24 +1673,6 @@
         "aql",
         "apophatic"
       ]
-    },
-    {
-      "id": "IZN-RIS-002-05",
-      "work": "IZN-RIS",
-      "section": "Argument five: time, place and the limit of negation",
-      "order": 12,
-      "locator": "Balaban–Çalışkan (2023), printed p. 836, PDF page index 22",
-      "source_url": "https://dergipark.org.tr/en/download/article-file/3074106",
-      "status": "translated-edition-excerpt",
-      "arabic": "الخامس: العقل لا يتصرف إلا فيما يكون في زمان ومكان، لأن كل ما يدركه فإنه يدركه إما في الماضي أو في المستقبل أو في الحال، وكل ذلك تحت الزمان، وكل ما يتصوره، فإنه إنما يتصوره إما ههنا أو هناك، وكل ذلك تحت المكان، وإذا قلت: الحق بخلاف ذلك فمعروفك في هذه المعرفة نفي غير الحق عنه، ونفي غير الحق لا يكون هو عين وجدان الحق.",
-      "english": "Fifth: Intellect operates only upon what lies within time and place. Whatever it apprehends, it apprehends as past, future, or present, all of which fall under time; and whatever it conceives, it conceives as here or there, all of which fall under place. If you say that the Real is unlike this, what you have known in this knowledge is the negation from Him of what is other than the Real. But negating what is other than the Real is not itself the very finding of the Real.",
-      "tags": [
-        "aql",
-        "zaman",
-        "makan",
-        "wijdan"
-      ],
-      "notes": "Independently checked on the rendered 2023 Arabic source page. This describes the discursive intellect considered here; it does not establish that every possible intellect is spatial."
     },
     {
       "id": "IZN-RIS-004-A",
