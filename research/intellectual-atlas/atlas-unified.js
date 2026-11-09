@@ -289,6 +289,10 @@ function chooseWork(id,moveToNetwork=false){
   state.subject=n.subjects[0]||"all";state.school="all";state.family="";
  }
  if(state.school!=="all"&&!n.schools.includes(state.school))state.school="all";
+ if(state.family){
+  const f=data.families.find(f=>f.id===state.family);
+  if(f&&!f.member_ids.includes(n.sourceId))state.family="";
+ }
  timelineFollow(n);
  writeHash(true);render();
 }
@@ -311,7 +315,10 @@ function browseStep(delta){
  const current=works.findIndex(n=>n.id===state.selected);
  const oldIndex=current<0?0:current;
  const newIndex=clip(oldIndex+delta,0,works.length-1);
- if(newIndex!==oldIndex)chooseWork(works[newIndex].id);
+ if(newIndex!==oldIndex){
+  chooseWork(works[newIndex].id);
+  ROOT.querySelector("[data-text-rail]")?.focus({preventScroll:true});
+ }
 }
 function browseBar(){
  const works=browseWorks();
