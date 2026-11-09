@@ -2,7 +2,7 @@
   "dataset": "nama-qunawi-commentarial-corpus",
   "schema_version": "0.2.0",
   "date": "2026-11-09",
-  "editorial_status": "Expanded source-located working edition; two printed Arabic editions checked at three loci; manuscript collation outstanding",
+  "editorial_status": "Source-located Arabic–English working edition, with 2023 printed-edition excerpts newly checked for al-Iznīqī; full books and manuscript collation outstanding.",
   "source_policy": "Textual reading taken from online Arabic transcription and limited clauses inspected in 2023 published edition; all pending comprehensive independent manuscript collation",
   "works": [
     {
@@ -20,7 +20,7 @@
       "author": "Quṭb al-Dīn-zāda al-Iznīqī",
       "type": "short-treatise",
       "content_status": "2023 Arabic edition available; selected bilingual excerpts and prior 7 argument English drafts; incomplete",
-      "entry_count": 2,
+      "entry_count": 7,
       "source_url": "https://dergipark.org.tr/en/download/article-file/3074106"
     },
     {
@@ -1460,6 +1460,99 @@
       "work": "QUN-NU",
       "status": "attribution-provisional-appended-text",
       "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "IZN-RIS-000-01",
+      "work": "IZN-RIS",
+      "order": 11.1,
+      "section": "Author's purpose: the disputed confession of imperfect divine knowledge",
+      "locator": "Balaban–Çalışkan (2023), printed p. 831 (PDF page index 17), preface; selected uninterrupted sentences",
+      "source_url": "https://dergipark.org.tr/en/download/article-file/3074106",
+      "status": "translated-edition-excerpt",
+      "arabic": "وبعد؛ فالباعث لإملاء هذه الرسالة وتسطيرها، والحامل لتسويد هذه المجلّة وتحريرها، أنه وقع في أوراد المشايخ الكبار الثقات، وأرباب القبول والالتفات: «سبحانك ما عرفناك حق معرفتك»، فبعض من الناس نسب قائله إلى الخطأ والخطل، وبعض إلى الكفر والزلل، نعوذ بالله من لفظتهم الشنعاء، ومن مقالتهم النكراء، عفا الله عنهم ما زلوا وهفوا، وما آذوا أهل الملة البيضاء وجفوا.",
+      "english": "The reason for dictating and setting down this treatise, and for composing and editing these pages, is that among the devotional invocations of trustworthy, eminent spiritual masters one finds the saying: ‘Glory be to You! We have not known You as You ought to be known.’ Some people attribute its utterance to error and misjudgement, others to unbelief and grave deviation. We seek God's protection against their offensive expressions and reprehensible assertions. May God pardon their slips and failings, and their offence against members of the community of faith.",
+      "tags": [
+        "maarefa",
+        "takfir",
+        "interpretation"
+      ],
+      "notes": "This is the opening argumentative motive, not a complete translation of the invocatory preface. The medieval words about denunciation are the author's own, not a finding that every historical critic made an accusation of unbelief. Full incipit before this is still pending."
+    },
+    {
+      "id": "IZN-RIS-001-01",
+      "work": "IZN-RIS",
+      "order": 11.11,
+      "section": "One term, several technical meanings: ʿilm and maʿrifa",
+      "locator": "Balaban–Çalışkan (2023), printed p. 832 (PDF page index 18), closing technical remark; full consecutive paragraph",
+      "source_url": "https://dergipark.org.tr/en/download/article-file/3074106",
+      "status": "translated-edition-paragraph",
+      "arabic": "تذنيب: المعرفة والعلم بمعنى واحد في اللغة، وما نُقل في أول فصول النجاة من «أن كل معرفة وعلم إما تصور وإما تصديق» يدل على أنهما يُستعملان مترادفين، وقد يُستعمل العلم في التصديقات، والمعرفة في التصورات، وهو مناسب لما عند أهل اللغة من أن العلم يقتضي المفعولين، والمعرفة واحدًا، وقد يُستعمل العلم في المركّبات سواء كان باعتبار التصوّر أو التصديق، والمعرفة في إدراك البسائط تصورًا أو تصديقًا، ومن ثمة يقال: عرفت الله، دون علمته، وقد يُستعمل العلم في الكليات مفهومًا كليًّا أو قاعدة كليّة، والمعرفة في الجزئيات، وقد تُستعمل المعرفة في الإدراك الذي بعد الجهل، أو في الإدراك الأخير من إدراكين لشيء واحد يتخلّل بينهما عدم، ولا يُعتبر من هذين القيدين في العلم، ولهذا لا يوصف الباري تعالى بالعارف، ويوصف بالعالم.",
+      "english": "A supplementary observation. In ordinary language, *maʿrifa* and *ʿilm* can have one and the same meaning. The statement at the beginning of the chapters of *al-Najāt* that every knowing is either conception (*taṣawwur*) or assent (*taṣdīq*) indicates that the two are sometimes used synonymously. At other times *ʿilm* is reserved for assent and *maʿrifa* for conception. This is consistent with the grammarians' observation that the verb 'to know' (*ʿalima*) may govern two objects, while the verb 'to recognise' (*ʿarafa*) governs one. In another usage *ʿilm* concerns complex objects, whether as conceived or affirmed, and *maʿrifa* the apprehension of simples, whether in conception or assent; hence one says *ʿaraftu Allāh* rather than *ʿalimtuhu*. Alternatively, *ʿilm* is used of universals—whether universal concepts or rules—and *maʿrifa* of particulars. Finally, *maʿrifa* may mean an apprehension preceded by ignorance, or the later of two apprehensions of one thing separated by a period of non-apprehension. Neither of these latter qualifications is required for *ʿilm*. This is why the Creator is called *ʿālim* (knowing), but not *ʿārif* (one who comes to recognition).",
+      "tags": [
+        "ilm",
+        "maarefa",
+        "tasawwur",
+        "tasdiq",
+        "semantics"
+      ],
+      "notes": "This is one complete consecutive medieval paragraph, not a full printed page. Technical distinctions are presented as alternative conventions, not as universal fixed definitions. Check the exact citation to *al-Najāt* in a critical apparatus."
+    },
+    {
+      "id": "IZN-RIS-001-02",
+      "work": "IZN-RIS",
+      "order": 11.12,
+      "section": "Why Sufi utterances must be interpreted in their technical vocabulary",
+      "locator": "Balaban–Çalışkan (2023), printed pp. 832–833 (PDF page indices 18–19); concluding sentence across page break",
+      "source_url": "https://dergipark.org.tr/en/download/article-file/3074106",
+      "status": "translated-edition-excerpt",
+      "arabic": "أقول: كما أن لكل قوم من العلماء ألفاظًا مصطلحًا عليها لا بدّ من الرجوع إليهم في معانيها، فكذا للصوفية مصطلحات ينبغي أن يرجع إليهم في معاني حقائقها كلفظ البقاء والفناء، والمقام والحال، والجمع والتفرقة، والفقر والغنى، والإثبات والمحو، والعلم والمعرفة، فالحكم عليهم قبل الاستفسار عن المراد بالزندقة والإلحاد رمي في عماية.",
+      "english": "I say: just as each community of scholars has its own technical vocabulary, whose meaning must be sought from those who employ it, so the Sufis have technical expressions whose intended meanings must be recovered from them: subsistence and annihilation, station and passing state, gathering and differentiation, poverty and richness, affirmation and effacement, knowledge and recognition. To judge them guilty of heresy or unbelief before asking what they mean is to cast an accusation blindly.",
+      "tags": [
+        "taawil",
+        "terminology",
+        "fana",
+        "baqa",
+        "takfir"
+      ],
+      "notes": "The decisive sentence ends a technical discussion that began on p. 832. These pairs of terms are deliberately contrasted; translating them into theological categories without recovering the Sufi register is the very error under criticism."
+    },
+    {
+      "id": "IZN-RIS-001-03",
+      "work": "IZN-RIS",
+      "order": 11.13,
+      "section": "Can the very reality of God be known? Different disciplinary answers",
+      "locator": "Balaban–Çalışkan (2023), printed p. 833 (PDF page index 19), introduction, second inquiry; initial complete paragraph",
+      "source_url": "https://dergipark.org.tr/en/download/article-file/3074106",
+      "status": "translated-edition-paragraph",
+      "arabic": "البحث الثاني: في بيان أن العلم بحقيقة الله، هل يقع أم لا، وكذا هل يجوز أم لا؟ قال بعض المتصوفة، وبعض أصحاب الشافعي كالغزالي وإمام الحرمين، وجمهور المحققين، وكذا الفلاسفة: إن حقيقة الله تعالى غير معلومة للبشر، وقد خالف فيه كثير من المتكلمين، ودلائل الفريقين مذكورة في الكتب الكلامية مستوفاة طويناها مخافة الإملال.",
+      "english": "Second inquiry: Can knowledge of God's very reality actually occur, and is it even possible? Some Sufis, some adherents of al-Shāfiʿī—such as al-Ghazālī and the Imām of the Two Sanctuaries—the majority of the verifying scholars, and also the philosophers hold that the divine Reality is not known to human beings. Many theologians have disagreed. The arguments of both parties have been set out extensively in books of theology; we leave them aside here to avoid prolixity.",
+      "tags": [
+        "kunh",
+        "ilm",
+        "kalam",
+        "philosophy"
+      ],
+      "notes": "Note the distinct questions: actual attainment (*wuqūʿ*) versus possibility (*jawāz*). 'Not known' here concerns the ultimate *ḥaqīqa* or *kunh*, not all revealed or inferential knowledge of divine attributes."
+    },
+    {
+      "id": "IZN-RIS-001-04",
+      "work": "IZN-RIS",
+      "order": 11.14,
+      "section": "The philosophers’ argument and the reply from possible divine bestowal",
+      "locator": "Balaban–Çalışkan (2023), printed p. 833 (PDF page index 19), second inquiry after disciplinary overview",
+      "source_url": "https://dergipark.org.tr/en/download/article-file/3074106",
+      "status": "translated-edition-paragraph",
+      "arabic": "أما في جواز العلم بحقيقة الله ففيه خلاف الفلاسفة، وهم لا يجوزون؛ لأن المعقول إما بالبديهة وليست ببديهية، وإما بالنظر، والنظر إما في الرسم ولا يفيد الحقيقة، وإما في الحد، ولا يمكن تحديدها لعدم التركيب. الجواب: منع حصر المدرك بالكنه في البديهة والحدّ لجواز خلق الله تعالى علمًا متعلقًا بما ليس ضروريًا في شخص بلا سابقة نظر، إما بالإلهام والوحي، أو بتصفية الباطن، أو بقلب النظري ضروريًا، وأيضًا فالرسم وإن لم يجب أن يفيد الحقيقة فلا يمتنع أن يفيد. ومن المحققين من توقف كالقاضي أبي بكر، وضرار بن عمرو من المتقدمين، وروي عن ضرار أنه يزعم أن الله تعالى ماهية لا نعرفها الآن، لكن في قدرته أن يخلق حاسة سادسة ندرك بها خاصة ذاته تعالى.",
+      "english": "As to the *possibility* of knowing God's Reality, the philosophers disagree and deny it. They argue that something intelligible is known either immediately or by discursive consideration. Divine Reality is not self-evident; consideration proceeds either by a descriptive account, which does not disclose the essence, or by a definition, which is impossible here since a definition of that kind presupposes composition. The answer is to reject the claim that apprehension of a thing's ultimate reality must be confined to immediate knowledge or definition: God may create in a person knowledge of what was not previously self-evident, without any prior discursive inquiry, whether through inspiration and revelation, purification of the inward faculty, or conversion of what was previously discursive into immediate knowledge. Moreover, although a descriptive account need not reveal the reality, it is not impossible that it should do so. Some verifying scholars have suspended judgement, including Qāḍī Abū Bakr and the early thinker Ḍirār b. ʿAmr. It is reported from Ḍirār that God has a reality unknown to us at present, but that He can create a sixth sense by which His own particular Reality might be apprehended.",
+      "tags": [
+        "kunh",
+        "ilm",
+        "wahy",
+        "ilhām",
+        "aql",
+        "epistemology"
+      ],
+      "notes": "The reply is a modal counterargument against the impossibility proof; it does not assert that a specific human actually attains unrestricted essential knowledge. The report of Ḍirār's sixth-sense thesis is attributed and requires independent historical verification."
     },
     {
       "id": "IZN-RIS-002-05",
