@@ -1,0 +1,103 @@
+{
+  "project": "al-mahaimi-mashra-al-khusus",
+  "stage": "10",
+  "date": "2026-11-09",
+  "edition_reference": "al-Mazidi, Beirut 2008, pp.11–232 commentary; separately printed Qunawi appendix pp.235–267",
+  "translation": {
+    "commentary_printed_range": [
+      11,
+      232
+    ],
+    "commentary_first_pass_pages": 222,
+    "source_checked_translation_status": "first pass, not independent critical review"
+  },
+  "arabic": {
+    "commentary_imported": 142,
+    "commentary_imported_ranges": [
+      [
+        11,
+        149
+      ],
+      [
+        230,
+        232
+      ]
+    ],
+    "commentary_unimported": 80,
+    "commentary_missing_range": [
+      150,
+      229
+    ],
+    "qunawi_2008_online_page_proofs": [
+      235,
+      236,
+      267
+    ],
+    "qunawi_2008_unimported_range": [
+      237,
+      266
+    ],
+    "qunawi_2008_unimported_pages": 30,
+    "qunawi_independent_online_passages": 47,
+    "qunawi_online_passages_source": "independent online transcription; not checked against printed appendix"
+  },
+  "concordance": {
+    "ar_en_qunawi_passages": 47,
+    "ar_en_qunawi_words_approx": 8147,
+    "contextual_links": 64,
+    "distinct_commentary_targets": 61,
+    "linked_online_text_groups": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ],
+    "unlinked_online_text_groups": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "numbering_discrepancy_note": "online text 19-C describes affinities, while the Mahaimi working commentary calls affinity material Text Twenty; no automatic ordinal concordance"
+  },
+  "edition": {
+    "printer_facsimiles_checked": 0,
+    "manuscripts_collated": 0,
+    "ashtiyani_edition": "bibliographic record confirmed; copy not acquired",
+    "editorial_apparatus": "nine intra-edition final-text differences plus independent supporting quotations (stage09)",
+    "p232": "terminal text syntactically incomplete in online transcription; printed editor says آخره; do not infer missing authorial conclusion"
+  },
+  "status": {
+    "reader_corpus_entries": 278,
+    "reader_language_modes": [
+      "ar",
+      "en",
+      "both"
+    ],
+    "work_layers": [
+      "matn",
+      "sharh",
+      "all"
+    ],
+    "backlinks": true,
+    "source_confidence_banners": true,
+    "live_deployment_independently_verified": false
+  },
+  "files": {
+    "reader": "texts/al-mahaimi/mashra-al-khusus/index.html",
+    "data": "texts/al-mahaimi/mashra-al-khusus/data/parallel.json",
+    "apparatus": "texts/al-mahaimi/mashra-al-khusus/editorial/APPARATUS_STAGE09.md",
+    "concordance": "texts/al-mahaimi/mashra-al-khusus/editorial/CONCORDANCE_STAGE10.md",
+    "integrity_test": "tests/test_mahaimi_stage10.py"
+  }
+}
