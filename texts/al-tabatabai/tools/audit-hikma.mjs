@@ -242,6 +242,12 @@ if(nText&&nExtra){
   }
   check(review?.summary?.N?.adoptedPrintedEditorialEmendations>=adoptedReadings.length,
     'Review register understates source-recorded Nihāya emendations');
+  const ix9=nExtra.criticalNotes?.find(n=>n.id==='N1417-IX09-REFERENCE-01');
+  check(ix9?.passageId==='N-IX-09'&&ix9?.adoption==='not-adopted' &&
+    ix9?.originalReading==='كما في القسم الأول'&&ix9?.proposedReading==='كما في القسم الثاني',
+    'Nihāya IX.9 internal crux must remain an explicitly unadopted conjecture');
+  check(review?.entries?.find(r=>r.id==='N-IX-09')?.supplementalCriticalNoteIds?.includes('N1417-IX09-REFERENCE-01'),
+    'Nihāya IX.9 public critical apparatus lost cumulative review register backlink');
 }
 console.log(JSON.stringify({status:failures.length?'failed':'passed',books:report,failures,warnings},null,2));
 process.exitCode=failures.length?1:0;
