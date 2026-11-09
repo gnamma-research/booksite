@@ -7,7 +7,7 @@
       "mode": "reading",
       "filename": "muzaffar-al-mantiq-reading-A4.pdf",
       "bytes": 161401,
-      "sha256": "618957d7c77ffa279a55c385038bdd9282ba6a7d91bf686153931dc5fd81a623",
+      "sha256": "627588021838f365a430f96faffe652a0863f9f78d18b893f6da52c663fbb5b7",
       "source_sha256": "780709711970768bf77d891316909bd6d2bf04873b84892fb2da4f10fb6f8566",
       "arabic_sections": 29,
       "english_sections": 29
@@ -17,7 +17,7 @@
       "mode": "study",
       "filename": "muzaffar-al-mantiq-study-A4.pdf",
       "bytes": 373520,
-      "sha256": "9f94ff7c1d18c04e8b56e3e098b1df038d85883998bdb9e7d576794965e68c26",
+      "sha256": "50ba20c9b449f5bd0f7aa70872ca66820969d626074969f363d6af271641384f",
       "source_sha256": "780709711970768bf77d891316909bd6d2bf04873b84892fb2da4f10fb6f8566",
       "arabic_sections": 29,
       "english_sections": 29
@@ -27,7 +27,7 @@
       "mode": "reference",
       "filename": "muzaffar-al-mantiq-reference-A4.pdf",
       "bytes": 292459,
-      "sha256": "71f61e57f484d66edfd4605b667682f1e651d8720151164c400c41e0fedb3e37",
+      "sha256": "175069516c4be8fb5404a6577aa8fe0ddcc9c4749311ef3ac4640a1b00949fa0",
       "source_sha256": "780709711970768bf77d891316909bd6d2bf04873b84892fb2da4f10fb6f8566",
       "arabic_sections": 29,
       "english_sections": 29
@@ -37,7 +37,7 @@
       "mode": "reading",
       "filename": "bidayat-al-hikma-reading-A4.pdf",
       "bytes": 584573,
-      "sha256": "7335591e82c3faf8830c85c37018680edb1bc03c757e0b6ae96e2c0d1431d1c5",
+      "sha256": "d4fc3f13dc2b203b3a3a8007e9ca577d6e291f9ca899404356ae2a664af2f817",
       "source_sha256": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
       "arabic_sections": 111,
       "english_sections": 111
@@ -47,7 +47,7 @@
       "mode": "study",
       "filename": "bidayat-al-hikma-study-A4.pdf",
       "bytes": 1658757,
-      "sha256": "fcd3711fc0e2bde8d5549e829ed7df204435d1ec49c997b248d5fdfaec648d3d",
+      "sha256": "e70a1f77a94a3ccd4b4721eacd66a45f4a106645f4a1c491ec3d5f7da88a6603",
       "source_sha256": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
       "arabic_sections": 111,
       "english_sections": 111
@@ -57,7 +57,7 @@
       "mode": "reference",
       "filename": "bidayat-al-hikma-reference-A4.pdf",
       "bytes": 1228520,
-      "sha256": "c8c52c5ec952ac68add72b95ec43fea7cee3a9f3eed88000c60703a4c769cae5",
+      "sha256": "22439306f25e6d4dad1655ff1529b497178ff3c6db0b1ebb6e636fbfd2ffe661",
       "source_sha256": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
       "arabic_sections": 111,
       "english_sections": 111
@@ -66,9 +66,9 @@
       "book": "Nihāyat al-Ḥikma",
       "mode": "reading",
       "filename": "nihayat-al-hikma-reading-A4.pdf",
-      "bytes": 956491,
-      "sha256": "084fd051596a0d38be57b5bbeae306920545372b4a27012e4522d1708b588cd6",
-      "source_sha256": "d8dfb38d9ef9ab692aecfb57bd2eab9db385f84709ee37b03b10017a6ec94141",
+      "bytes": 960033,
+      "sha256": "71b7e354c3cb3e38c363e7451660a6470e0eb79c397fc1c8b56d6ecca2cc6859",
+      "source_sha256": "667e72257806f4c0b538e776168a8f9c62f867d5a4cb580bd86e37cac74513e2",
       "arabic_sections": 136,
       "english_sections": 136
     },
@@ -76,9 +76,9 @@
       "book": "Nihāyat al-Ḥikma",
       "mode": "study",
       "filename": "nihayat-al-hikma-study-A4.pdf",
-      "bytes": 3731864,
-      "sha256": "a357c9701ee995c60e14b78020865629dfa75693e374d760ba00e5c448a2a5a7",
-      "source_sha256": "d8dfb38d9ef9ab692aecfb57bd2eab9db385f84709ee37b03b10017a6ec94141",
+      "bytes": 3734182,
+      "sha256": "bba4cff01efa4dd799e56cd5496251866dbff3ebdf3ddcba06df239dee3dd0f2",
+      "source_sha256": "667e72257806f4c0b538e776168a8f9c62f867d5a4cb580bd86e37cac74513e2",
       "arabic_sections": 136,
       "english_sections": 136
     },
@@ -86,9 +86,9 @@
       "book": "Nihāyat al-Ḥikma",
       "mode": "reference",
       "filename": "nihayat-al-hikma-reference-A4.pdf",
-      "bytes": 2745490,
-      "sha256": "ca85531a03ec9ad8d44ed4f11e448fd0c80251e7176a4f5a586dc1b592d83bd7",
-      "source_sha256": "d8dfb38d9ef9ab692aecfb57bd2eab9db385f84709ee37b03b10017a6ec94141",
+      "bytes": 2748106,
+      "sha256": "0b69b92bed80ab68fad3be996b24cb7248ada7a5c1f4eb070288fbc9ab072c3f",
+      "source_sha256": "667e72257806f4c0b538e776168a8f9c62f867d5a4cb580bd86e37cac74513e2",
       "arabic_sections": 136,
       "english_sections": 136
     }
