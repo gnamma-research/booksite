@@ -185,6 +185,9 @@ function readHash(){
  const selected=p.get("work_id")||p.get("gnx_work")||p.get("work")||"";
  state.selected=selected&&data.byId.has(selected)?selected:data.byId.has("c:"+selected)?"c:"+selected:"";
  state.family=p.get("family")||p.get("text_family")||p.get("gnx_family")||"";
+ if(state.family){state.subject="intellectual";
+   if(!state.selected){const f=data.families.find(f=>f.id===state.family);if(f&&data.byId.has("c:"+f.root))state.selected="c:"+f.root}
+ }
  state.school=Object.hasOwn(SCHOOLS,p.get("school"))?p.get("school"):
   Object.hasOwn(SCHOOLS,p.get("madhhab"))?p.get("madhhab"):"all";
  state.search=(p.get("q")||p.get("gnx_q")||"").slice(0,140);
@@ -397,7 +400,7 @@ function viewTimeline(){
       '<rect x="'+(x-wide/2)+'" y="'+yy+'" width="'+wide+'" height="31" rx="5" fill="var(--panel)" stroke="var(--line)" />'+
       '<circle cx="'+(x-wide/2+7)+'" cy="'+(yy+16)+'" r="2.8" fill="var(--accent)"/>'+
       '<text x="'+(x-wide/2+14)+'" y="'+(yy+12)+'" fill="currentColor" font-size="10" font-weight="600">'+safe(truncate(n.title,15))+'</text>'+
-      '<text x="'+(x-wide/2+14)+'" y="'+(yy+24)+'" fill="var(--muted)" font-size="8.7">'+safe(type+n.year+" CE · "+(n.layer==="audited"?"text":"catalogue"))+'</text></g>';
+      '<text x="'+(x-wide/2+14)+'" y="'+(yy+24)+'" fill="var(--muted)" font-size="8.7">'+safe(type+yearLabel(n.year)+" · "+(n.layer==="audited"?"text":"catalogue"))+'</text></g>';
    }else{
     const key=lane.id+"@"+start;
     renderCache.clusters.set(key,items);
@@ -786,9 +789,8 @@ function onChange(e){
   if(key==="school"&&t.value!=="all"&&state.selected&&!data.byId.get(state.selected)?.schools.includes(t.value))selectFeatured(false);
   writeHash();render();return;
  }
- if(t.id==="gn-search"){
-  state.search=t.value.slice(0,140);state.bookPage=1;state.cluster="";state.searchOpen=false;writeHash();render();return;
- }
+ // Do not rebuild the DOM on blur from a search-result click:
+ // the resulting 'change' event precedes the suggestion's 'click' event.
 }
 let pendingSearch=null;
 function onInput(e){
