@@ -2,7 +2,7 @@
   "dataset": "nama-qunawi-commentarial-corpus",
   "schema_version": "0.2.0",
   "date": "2026-11-09",
-  "editorial_status": "source-located, independently drafted translations; NOT a critical edition",
+  "editorial_status": "Expanded source-located working edition; two printed Arabic editions checked at three loci; manuscript collation outstanding",
   "source_policy": "Textual reading taken from online Arabic transcription and limited clauses inspected in 2023 published edition; all pending comprehensive independent manuscript collation",
   "works": [
     {
@@ -11,7 +11,7 @@
       "author": "Ṣadr al-Dīn al-Qūnawī",
       "type": "primary-matn",
       "content_status": "Online-witness translation begun; no manuscript collation",
-      "entry_count": 11,
+      "entry_count": 16,
       "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
     },
     {
@@ -157,6 +157,102 @@
         "kathra"
       ],
       "notes": "A complete short source unit in the online transcription; cross-witness collation remains outstanding."
+    },
+    {
+      "id": "QUN-NU-003-B",
+      "work": "QUN-NU",
+      "section": "Judgements vary with the judge and what is judged",
+      "order": 5.1,
+      "locator": "online Arabic transcription pp. 237–238, lines 301–304; printed Yāsīn edition p. 43 (PDF index 38)",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "status": "translated-two-printed-witnesses-not-manuscripts",
+      "arabic": "ومن تفاريع ما ذكرنا من النصوص أيضا أن الحكم من كل حاكم على كل محكوم عليه تابع لحال الحاكم حين الحكم، وتابع لحال المحكوم عليه حال حكم الحاكم عليه، فإن كان المحكوم عليه ما من شأنه التنقل في الأحوال تنوعت أحكام الحاكم عليه في كل حال، واختلفت بحسب تلبّسه بتلك الأحوال، وإن كان المحكوم عليه من شأنه الثبات على وتيرة واحدة ثبت حكم الحاكم عليه بحسب التعلق المعين بحكم الحاكم عليه ومقتضاه، وبقي الأمر بحسب حال الحاكم حين الحكم، فإن كان الحاكم من مقتضى ذاته التقلّب في الأحوال بحسبها، أو مقتضى ذاته أنه ثابت والأحوال تنقلب فيكون تبعية حكم الحاكم بحسب أحد الأمرين الحاصرين لمراتب حكم كل حاكم وكل محكوم عليه؛ إذ لا يخرج عما ذكرته حكم حاكم ولا محكوم عليه.",
+      "english": "Another consequence of the texts just stated is that every judgement made by a judge concerning anything judged depends upon the judge’s condition at the moment of judgement, and also upon the condition of the subject as the judgement is made. If the subject is such as to pass from one state into another, the judgements concerning it will vary with each state and differ in accordance with the states it assumes. But if the subject remains in one unvarying condition, the judge’s judgement concerning it remains fixed with respect to its particular relation and what that judgement entails; the remaining question concerns the judge’s condition when judging. For the judge may be one whose own nature entails variation with states, or one who remains constant while states vary. The dependence of judgement accordingly falls under one of these two alternatives, which encompass the degrees of every judge and everything judged: no judgement or subject of judgement falls outside what I have described.",
+      "tags": [
+        "hukm",
+        "hal",
+        "perspective",
+        "taayyun"
+      ],
+      "notes": "Important direct articulation of standpoint-dependence. An independently inspected printed edition p. 43 exhibits variants in opening and formulation: it begins «ومن تفاريع ما ذكرنا نصّ آخر ...», and has «تابع لحال المحكوم عليه حين الحكم عليه» with a corrected reading. This digital Arabic follows the separate online transcription; the printed edition's differences are not silently conflated."
+    },
+    {
+      "id": "QUN-NU-003-C",
+      "work": "QUN-NU",
+      "section": "Knowledge follows wujūd and the capacity of its recipient",
+      "order": 5.2,
+      "locator": "online transcription p. 238, lines 305–306; printed Yāsīn edition p. 44 (PDF index 39)",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "status": "translated-two-printed-witnesses-not-manuscripts",
+      "arabic": "ومن تفاريع ما ذكرنا من النصوص أيضا أن العلم يتبع الوجود، بمعنى أنه حيث يكون الوجود يكون العلم دون انفكاك. وتفاوت العلم بحسب تفاوت قبول الماهية الوجود تماما ونقصانا، فالقابل للوجود على وجه أتم يكون العلم هناك أتم، وينقص العلم بقدر القبول الناقص، وغلبة أحكام الإمكان على أحكام الوجوب عكس ما ذكرنا أولا، فاعلم ذلك.",
+      "english": "Another consequence of the texts we have mentioned is that knowledge follows existence (*wujūd*): wherever existence is found, knowledge is found without separation. The differentiation of knowledge corresponds to differences in the quiddity’s reception of existence, whether complete or deficient. Where the reception of existence is more complete, knowledge too is more complete; and knowledge decreases in proportion to deficient reception. As the determining features of possibility prevail over those of necessity, the converse of what was initially stated obtains. Understand this.",
+      "tags": [
+        "wujud",
+        "ilm",
+        "mahiyya",
+        "imkan",
+        "wujub"
+      ],
+      "notes": "The inspected 155-page printed PDF, p. 44, shows a different reading: «وعليه أحكام الإمكان على أحكام الوجوب» rather than online «وغلبة أحكام الإمكان على أحكام الوجوب». The translation’s final sentence is provisional pending manuscript collation; the disagreement affects the precise causal claim."
+    },
+    {
+      "id": "QUN-NU-004-A",
+      "work": "QUN-NU",
+      "section": "Why this book speaks from the all-comprehensive station",
+      "order": 5.3,
+      "locator": "online transcription pp. 238–239, lines 307–309; printed Yāsīn edition p. 45 (PDF index 40) begins this unit",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "status": "translated-online-witness-printed-crosschecked",
+      "arabic": "ومن تفاريع ما ذكرنا من النصوص المحققة أيضا، وإن كنت قد ألمعت بطرف منه في بعض المواضع من كتبي في ضمن أمر آخر وبلسانه، لكن لما أفردت هذا الكتاب لذكر النصوص من الأذواق المختصّة بخصوص مقام الكمال، دون لسان عمومه من الأذواق المقيّدة الحاصلة لأرباب المقامات المخصوصة والمستندة من حيث الأصالة إلى حضرة اسم أو صفة من الصفات، والأسماء الإلهية التي هي محتد ذلك الذوق الخاص ومنبعه، وجب عليّ أن أفرد وأميز ما يختص بذوق المقام الأكمل الأجمع، وصحة ثبوته ومطابقته لما يعلمه اللّه تعالى في أعلى درجات علمه وأتمها وأكملها من ذلك الأمر المترجم عنه، دون تقرير صحته وثبوته بالنسبة والإضافة إلى مقام دون مقام، وباعتبار حال ووقت دون غيرهما من الأوقات والأحوال وما ذكر. فنقول بعد تمهيد هذه المقدمة الكلية في بيان هذا النص الذي قصدنا إيضاحه:",
+      "english": "A further implication of the verified texts—something I have already intimated in places in my books, though within another discussion and in its own language—should be set out independently. For I have devoted this book to articulating texts derived from the particular spiritual tastings that belong to the station of perfection, rather than speaking in the general idiom of restricted tastings received by those who occupy particular stations. Such stations refer primarily to the Presence of some divine Name or attribute, from which that particular tasting proceeds. I must therefore distinguish what belongs specifically to the tasting of the most perfect, most comprehensive station: its validity, its reality and its correspondence with what God knows of the matter being expressed at the highest and most complete degree of knowledge. The purpose is not merely to establish that a proposition is valid relatively—true from one station rather than another, or in one condition or moment rather than others. Having set down this general preliminary statement, I now explain the text in question.",
+      "tags": [
+        "maqam",
+        "dhawq",
+        "asma",
+        "jamiyya",
+        "perspective"
+      ],
+      "notes": "This is among the clearest author's methodological statements on differences between station-relative truth and the comprehensive standpoint. The printed Yāsīn text contains variant wording and notes at this point; word-for-word manuscript collation remains required."
+    },
+    {
+      "id": "QUN-NU-004-B",
+      "work": "QUN-NU",
+      "section": "A knower must distinguish the limits of cognition",
+      "order": 5.4,
+      "locator": "online transcription p. 239, lines 310–315; printed Yāsīn edition p. 45 continuing p. 46",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "status": "translated-online-witness",
+      "arabic": "إن كل معلوم أدركه الإنسان بنظره أو كشفه أو حسه أو خياله جمعا وفرادى، ولم ينته نظره أو كشفه لذلك الأمر، أو إدراكه إيّاه حسّا وخيالا إلى إدراك ما وراءه بعد معرفة ذاتياته ولوازمه الكلية، فإنه لم يدرك ذلك الأمر حق الإدراك تماما، ولم يعرفه حق المعرفة. وسواء كان متعلق إدراكه ومعرفته العالم من حيث معانيه وأرواحه، أو من حيث صوره وأعراضه، أو كان متعلق معرفته الحق، فإنه متى كشف له عن جلية الأمر وصورة تعين كل معلوم في علم الحق وجد الأمر كذلك، فإنه ما لم ينته معرفته بالحق إلى إطلاقه وصرافة وحدة ذاته الحقيقية، التي لا اسم يعيّنها ولا وصف ولا حكم ولا رسم، ولا تنضبط بشهود، ولا تعقل، ولا تنحصر في أمر معين، لم يعرف أن ليس وراء اللّه مرمى، وأن الإحاطة به علما وشهودا محال، وأن ليس بعد الوجود الحق المطلق إلا العدم المتوهم، هذا وإن كان لمعرفة تعذّر العلم باللّه على نحو ما يعلم نفسه طريق آخر أعلى وأتم وأكشف، عرفناه ذوقا وشهودا بحمد اللّه ومنّه، لكن ذلك مما يحرم بيانه وتسطيره وغاية البيان عنه هذا الإلماع المذكور. هذا وإن كان الذوق والمعرفة الحاصلة لصاحبه والشهود من حيث استناد ذلك الذوق، والمقام إلى حضرة اسم من الأسماء الإلهية الذي هو قبلة ذلك المقام، وغاية معرفته من الحق نهايته، سيما من الوجه الذي يقضي بأن الاسم عين المسمّى، كما أوضحناه في مواضع من كلامنا، لكن تلك غايات نسبية، فإن المبادئ والغايات أعلام الكمالات النسبية، والأمر من حيث الكمال الحقيقي بخلاف ذلك.",
+      "english": "Whenever a person apprehends something known—through inquiry, unveiling, the senses, or imagination, separately or together—yet does not proceed, after discerning its essential features and universal concomitants, to apprehend what lies beyond that thing, he has not apprehended it fully as it should be apprehended or known it as it should be known. This holds whether the object is the world in its meanings and spirits, the world in its forms and accidents, or the Real Himself. Once the intrinsic character of the affair and the mode in which each known thing is determined in divine knowledge are unveiled to him, he finds this to be so. Unless his knowledge of the Real reaches the consideration of His absoluteness and the pure unity of His true Essence—determined by no name, attribute, judgement, or distinguishing description, neither confined by vision nor conceived and bounded in some specific matter—he will not understand that there is no goal beyond God, that encompassing Him in knowledge or witnessing is impossible, and that beyond absolute true existence lies only imagined nonexistence. There is, moreover, another path, higher, fuller and more revealing, to knowing the impossibility of knowing God in the way that He knows Himself. Through God's bounty we have known it by direct tasting and witnessing, but its articulation and transcription are prohibited; the utmost permissible indication is the allusion just given. Nonetheless, the tasting, knowledge, and witnessing available to a person through a spiritual station may derive from the Presence of one of the divine Names, which is the orientation and limit of that station. Even when the Name is considered identical with the Named, as I have explained elsewhere, such termini remain relative. Beginnings and ends mark relative perfections; the affair viewed from the standpoint of true perfection is otherwise.",
+      "tags": [
+        "ilm",
+        "kashf",
+        "dhawq",
+        "maqam",
+        "itlaq",
+        "haqiqa"
+      ],
+      "notes": "Treat Qūnawī's allusive reference to another higher path as his own claim, not as a demonstrable description of that path. The distinction between relative limits and unqualified perfection is explicit."
+    },
+    {
+      "id": "QUN-NU-005-A",
+      "work": "QUN-NU",
+      "section": "The hidden Identity and the relative point of principiality",
+      "order": 5.5,
+      "locator": "online transcription printed pp. 240–241, lines 331–340 (omitting editorial footnote lines); printed Yāsīn edition later in volume",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "status": "translated-online-witness",
+      "arabic": "نصّ شريف عزيز المنال: غيب هوية الحق إشارة إلى إطلاقه باعتبار اللاتعين. ووحدته الحقيقية الماحية لجميع الاعتبارات والأسماء والصفات. والنسب والإضافات هي عبارة عن تعقل الحق نفسه، وإدراكه لها من حيث تعيّنه، وهذا التعقل والإدراك التعيّني وإن كان يلي الإطلاق المشار إليه فإنه بالنسبة إلى تعين الحق في تعقل كل متعقل في كل تجلّ تعين مطلق، وإن أوسع التعينات، وهو شهود الكمّل، وهو التجلّي الذاتي، وله مقام التوحيد الأعلى. ومبدئية الحق تلي هذا التعين، والمبدئية هي محتد الاعتبارات، ومنبع النسب والإضافات الظاهرة في الوجود، والباطنة في عرصة التعقلات والأذهان. والمقول فيه أنه وجود مطلق واحد واجب، فهو عبارة عن تعين الوجود في النسبة العلمية الذاتية الإلهية، والحق من حيث هذه النسبة يسمّى عند المحقق بالمبدأ، لا من حيث نسبة غيرها، فافهم هذا وتدبّر، فقد أدرجت لك هذا النص أصل أصول المعارف الإلهية، واللّه المرشد.",
+      "english": "A noble text, difficult of attainment. The unseen of the Real's Identity points to His absoluteness considered as nondetermination, and to His true unity, which effaces every consideration, name, and attribute. Relations and attributions concern the Real's apprehension of Himself and of them under the consideration of determination. Although this determinate understanding and apprehension immediately follows the absoluteness mentioned, relative to the Real's determination in any knower's conception and in each self-disclosure, it is an unrestricted determination—the most extensive of determinations. This is the witnessing of the perfected, the essential self-disclosure, and it belongs to the highest station of tawḥīd. The principiality of the Real comes next after this determination. Principiality is the origin of considerations and the source of relations and attributions, manifest in existence and concealed in the domain of intellections and minds. The expression 'one, absolute, necessary existence' concerns the determination of existence in the divine essential relation of knowledge. From the standpoint of this relation, the Real is called the Principle by the realised knower, not from every standpoint whatsoever. Understand and reflect, for I have included here a root of the roots of divine knowledge. God is the Guide.",
+      "tags": [
+        "huwiyya",
+        "taayyun",
+        "wujud",
+        "mabdaiyya",
+        "ilm",
+        "tawhid"
+      ],
+      "notes": "The order is logical/considerative rather than a physical succession of entities. Arabic online transcription includes an editorial page break and footnote at pp. 240–241, removed from the medieval running text here."
     },
     {
       "id": "QUN-NU-008-A",
