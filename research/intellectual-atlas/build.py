@@ -54,54 +54,30 @@ for f in families:
     assert set(members) <= node_ids
     assert f['record_count'] == len(members)
 
-script = (ROOT/'atlas-app.js').read_text(encoding='utf-8')
-assert 'data-text-family' in script
-assert "textualMembers.get(state.textFamily)" in script
-assert 'chooseTextFamily' in script
-assert 'function drawTextNetwork' in script
-assert 'function renderExplore' in script
-assert "'arabic'" in script and "'balagha'" in script and "'nahw'" in script
-assert "['fiqh','Fiqh & uṣūl']" in script and "['hadith','Hadith']" in script
-assert 'data-explore-madhhab' in script and 'data-explore-family' in script
-assert 'ia-explorer-shortcuts' not in script  # no more always-visible 3-drawer construction
-assert 'data-family-critical' in script and 'criticalFamilyEdges' in script
-assert 'ia-region-network-v3' in script
-assert 'data-text-route' in script
-assert 'ia-polity-gap' in script
-assert "if(!event.shiftKey&&!horizontal" in script
-mughal=next(p for p in data['history']['periods'] if p['id']=='HL_P13')
-assert mughal['segments']==[[1526,1540],[1555,1858]]
-assert {n['id'] for n in data['nodes']} >= {'pythagoras_anchor','parmenides_poem','early_stoa_corpus','sextus_outlines'}
-assert data['revision']=='tajrid-critical-links-8-2026-10-31'
-assert len(data['history'].get('networks',[])) == 5
-assert len(data['history'].get('periods',[])) == 49
-assert len(data['history'].get('events',[])) == 36
-assert len(source_ids)==374 and len(node_ids)==404 and len(edge_ids)==377
-assert {'plotinus_transmission','proclus_elements','aristotle_metaphysics','aristotle_physics','plato_timaeus','aristotle_categories'} <= {f['id'] for f in families}
-palette={'ancient','neoplatonic','ashari','maturidi','translation','christian','jewish','falsafa','avicennan','ishraqi','akbarian','mutazili','sunni','imami','sadrian','critical','context'}
-assert all(n.get('tradition') in palette for n in data['nodes'])
-assert all(set(n.get('intellectual_traditions',[]))<=palette for n in data['nodes'])
-assert all(set(c.get('sources',[]))<=all_source_ids for n in data['nodes'] for c in n.get('classification_evidence',[]))
-assert all(n.get('temporal',{}).get('anchor') is None for n in data['nodes'] if n['id']=='arabic_proclus_timaeus')
-for n in data['history']['networks']:
-    assert n['start']<n['end'] and set(n.get('sources',[])) <= all_source_ids
-for e in data['edges']:
-    assert e.get('evidence') and e.get('sources') and set(e['sources'])<=all_source_ids
-assert all((not n.get('temporal') or n['temporal'].get('anchor') is None or
-            (n['temporal'].get('start') is None or n['temporal']['anchor']>=n['temporal']['start']) and
-            (n['temporal'].get('end') is None or n['temporal']['anchor']<=n['temporal']['end'])) for n in data['nodes'])
-page_file = ROOT/'index.html'
-page = page_file.read_text(encoding='utf-8')
-assert 'id="ia-text-family-v3"' in page
-assert 'id="ia-explore-panel"' in page and 'data-action="open-explore"' in page
-assert 'data-view="network"' in page and 'data-view-picker' in page
-assert page.index('class="ia-layout"') < page.index('class="gn-atlas-introduction"')
-assert 'ia-razi-shortcut' not in page and 'data-action="razi-responses"' not in page
-pat = r'(<script type="application/json" data-atlas>)(.*?)(</script>)'
-assert len(re.findall(pat, page, re.S)) == 1
-embedded = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
-page = re.sub(pat, lambda m: m.group(1) + embedded + m.group(3), page, count=1, flags=re.S)
-page_file.write_text(page, encoding='utf-8')
+# The new atlas uses an external, byte-for-byte canonical dataset; no UI builder
+# may silently overwrite the live page with a previous HTML shell.
+unified_source = ROOT/'corpora'/'canonical-atlas.json'
+assert unified_source.exists()
+external = json.loads(unified_source.read_text(encoding='utf-8'))
+assert external == data, "Published canonical graph must match the audited source JSON"
+script = (ROOT/'atlas-unified.js').read_text(encoding='utf-8')
+assert 'GNAMMAUnifiedAtlas' in script
+assert all(k in script for k in ('function viewTimeline','function viewNetwork',
+                                'function viewPrincipal','function viewGeography',
+                                'function viewCatalogue','function evidencePanel'))
+assert 'function initialSubject' in script and 'function subjectControls' in script
+assert 'function loadMetadata' in script and 'function loadCanonical' in script
+page = (ROOT/'index.html').read_text(encoding='utf-8')
+assert 'id="gn-atlas"' in page
+assert 'atlas-unified.js' in page and 'atlas-unified.css' in page
+assert 'atlas-app.js' not in page and 'data-atlas' not in page
+assert (ROOT/'legacy.html').exists()
+legacy = (ROOT/'legacy.html').read_text(encoding='utf-8')
+pat=r'<script type="application/json" data-atlas>(.*?)</script>'
+legacy_match = re.search(pat,legacy,re.S)
+assert legacy_match, "The previous audited reader must remain reproducible"
+assert json.loads(legacy_match.group(1)) == data
+# The old standalone UI is a historical archive, not the default atlas.
 
 downloads = {}
 for p in sorted((ROOT/'downloads').iterdir()):
@@ -120,9 +96,9 @@ manifest = {
     'title': 'Texts in Time · Islamic Intellectual Atlas',
     'revision': 'tajrid-critical-links-8-2026-10-31',
     'status': 'working research',
-    'ui_revision': 'common-chronological-atlas-vertical-major-texts-2026-11-08',
-    'mobile_interface_note': 'Every selected science displays the same GNAMMA chronological year-axis work atlas as philosophy/kalam, with source-qualified date markers, zoomable era groups, school lanes and a separately selectable vertical synopsis of principal texts. Undated manuscripts stay in unplaced visual maps; scholarly dependencies require individual bibliography evidence.',
-    'whole_range_note': 'Drag the six-dot grip from Whole atlas to restore a movable focus window, or tap another time on the overview to seek.',
+    'ui_revision': 'unified-hanafi-style-work-atlas-2026-11-09',
+    'mobile_interface_note': 'All sciences now share one responsive search, source filter, map renderer and detail panel. Subject changes never switch to a separate map application. The Hanafi-inspired source-reception network records only audited relationships.',
+    'whole_range_note': 'Use the shared year controls and zoomable era clusters; switch sciences without changing map interface.',
     'date_marker_note': 'Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.',
     'entries': len(data['nodes']),
     'textual_relationships': len(data['edges']),
@@ -133,7 +109,7 @@ manifest = {
     'neoplatonic_new_relationships': 36,
     'scholarly_networks': len(data['history']['networks']),
     'classification_layers': ['intellectual tradition','textual family','regional/historical network','browse discipline','source-linked bibliographic category map','separate source-text witness catalogue'],
-    'visual_modes': ['chronological timeline','source-backed text network','work connections','catalogue','evidence/audit','source-attested disciplinary work maps','full citation-linked work map','common-year-axis disciplinary work timeline','vertical principal-texts synopsis'],
+    'visual_modes': ['shared chronological work atlas','Hanafi-inspired source and reception network','vertical principal-texts synopsis','regional-label evidence index','source-linked catalogue','work evidence panel'],
     'discipline_nav': ['mapped works','philosophy, kalām and logic','fiqh and uṣūl (integrated cited bibliography)','hadith (SVG book authorities)','tafsīr (SVG book authorities)','taṣawwuf (chronological source-work atlas)','Arabic language sciences (integrated cited bibliography)'],
     'textual_family_routes': len(families),
     'source_corpus': {
@@ -151,11 +127,11 @@ manifest = {
         'license': corpus_registry['license'],
     },
     'bibliography_map': {
-        'mode': 'common chronological CE axis with source-author-death markers, separate undated visual lanes, optional vertical principal-texts synopsis',
+        'mode': 'single shared chronological renderer with source-date qualifications, undated source-record lanes, Hanafi-style bidirectional work-centred networks and optional principal-texts synopses',
         'openiti_primary_work_candidates': len(bib_openiti['works']),
         'alreq_source_linked_entries': len(bib_alreq['works']),
-        'graph_renderer': 'corpora/discipline-atlas.js',
-        'graph_interactions': ['shared year axis','zoom and pan to individual books','school and early jurist lanes','unplaced books in separate undated diagram','bibliography source panel','vertical principal texts','independently evidenced reception arrows'],
+        'graph_renderer': 'atlas-unified.js',
+        'graph_interactions': ['one shared year axis for all sciences','zoom and pan to era clusters','school and historical early-jurist lanes','unplaced works within same map','source-evidence work panel','Hanafi-style bidirectional network','curated-family and selective principal texts'],
         'registered_early_historical_authorities': len(early_register['authorities']),
         'alreq_fiqh_by_school': bib_alreq['statistics']['by_school'],
         'alreq_nahw_entries': bib_alreq['statistics']['by_genre']['nahw'],
@@ -166,7 +142,7 @@ manifest = {
         'historical_influence_edges_generated': 0,
         'primary_source_registers': ['corpora/expanded-bibliography.json','corpora/manuscript-full.json'],
     },
-    'textual_family_note': 'The original philosophy/kalām calendar and its 404/377 researched graph remain intact; an optional vertical synopsis reuses those original canonical citations. Fiqh, usul, Hadith, Tafsir, Tasawwuf and Arabic-sciences source records now share the same chronological atlas grammar and optional vertical principal-texts map. No invented influences, legal-opinion arrows or unsupported manuscript dates.',
+    'textual_family_note': 'The 404/377 audited dataset remains unchanged, externalized as canonical-atlas.json, and the earlier UI is preserved in legacy.html. All subjects share the same historical map and work-centred network shell. No inferred influence or unsupported manuscript dates.',
     'tahdhib_added_entries': 26,
     'avicennian_extension_entries': 11,
     'avicennian_new_textual_routes': 2,
