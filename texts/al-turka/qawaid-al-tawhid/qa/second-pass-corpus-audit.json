@@ -1377,8 +1377,8 @@
         32
       ],
       "arabicWords": 108,
-      "englishWords": 154,
-      "ratio": 1.426,
+      "englishWords": 156,
+      "ratio": 1.444,
       "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
       "sourceFragmentOverlap": null,
       "sampledFragments": null,
@@ -1941,8 +1941,8 @@
         82
       ],
       "arabicWords": 316,
-      "englishWords": 362,
-      "ratio": 1.146,
+      "englishWords": 364,
+      "ratio": 1.152,
       "arabicSourceStatus": "fixed A digital page transcription",
       "sourceFragmentOverlap": 0.975,
       "sampledFragments": 40,
@@ -2939,8 +2939,8 @@
         272
       ],
       "arabicWords": 134,
-      "englishWords": 169,
-      "ratio": 1.261,
+      "englishWords": 172,
+      "ratio": 1.284,
       "arabicSourceStatus": "A pp.270–274: independent closing-page source check; complete retained page snapshot not included",
       "sourceFragmentOverlap": null,
       "sampledFragments": null,
@@ -3000,32 +3000,32 @@
   "pdfAudit": [
     {
       "filename": "qawaid-bilingual-reading.pdf",
-      "bytes": 919723,
-      "sha256": "698be8a2d1bfa0d03bc05c014bd9697f8d619625df6722f4951a8d91b3914235",
+      "bytes": 919721,
+      "sha256": "cfbd3b024bf0d6c030409fb9e562e4298ac9058973d50f5eedbe1edbcfcf74e1",
       "hasPdfHeader": true
     },
     {
       "filename": "qawaid-english-reading.pdf",
-      "bytes": 432752,
-      "sha256": "b5a919242a54a2d436f36ada2b68eb813f46c778e35c2928f28c9a6a7f71459d",
+      "bytes": 432757,
+      "sha256": "5931507b14ebce658a3e63621cef22f956ca96e58a86081dad83e44a4ace8dc8",
       "hasPdfHeader": true
     },
     {
       "filename": "qawaid-arabic-reading.pdf",
       "bytes": 521661,
-      "sha256": "f4c25d8fb84bc17ec949ffb9b08068851eeecc56d944f0cab08c1db22808e9fa",
+      "sha256": "542279e780459f285fbc6dc5d828e34e2c972503fd10d6d7ff76c346a172430e",
       "hasPdfHeader": true
     },
     {
       "filename": "qawaid-bilingual-study.pdf",
       "bytes": 1019599,
-      "sha256": "ea2d52fc622f2d6a077516872a7700fddf53068dd1ed1a72ebf396405e95db36",
+      "sha256": "cc2ab72f808d2661e1f4ab1c9ca4169f431177e5804782ddf53f6209f7cdbe19",
       "hasPdfHeader": true
     },
     {
       "filename": "qawaid-bilingual-reference.pdf",
-      "bytes": 1174196,
-      "sha256": "8837f1a771df95b9eec1058663316f357085510fcfcb9f0dac3c1212a9793b34",
+      "bytes": 1174426,
+      "sha256": "4d9e380604ecb154c3c7e4f5291255bd6acef521530c7980e37ef005cc4bca05",
       "hasPdfHeader": true
     }
   ]
