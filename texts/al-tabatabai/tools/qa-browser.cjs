@@ -122,7 +122,7 @@ async function run(browserType){
       const position=page.locator('#passage-N-VI-19');
       assert.match(await position.textContent(),/imaginal form divested of quantity/i);
       const agent=page.locator('#passage-N-VIII-10');
-      const rendered=await agent.textContent();
+      const rendered=await agent.locator('.arabic-panel .text-body').textContent();
       assert.ok(rendered.includes('المشهور'),'Missing corrected Arabic');
       assert.ok(!rendered.includes('االمشهور'),'Duplicated alif returned');
     });
