@@ -7,7 +7,7 @@
   "source_checked_modern_digital_page_count": 19,
   "clause_record_count": 198,
   "issues_unresolved_digital": 11,
-  "historical_print_independently_collated_pages": 1,
+  "historical_print_independently_collated_pages": 4,
   "manuscript_variants": 0,
   "authorial_introduction_english_draft_complete": true,
   "authorial_introduction_arabic_critical_edition_complete": false,
@@ -32,7 +32,9 @@
       "source_kind": "B2007-main-site-printed-digital",
       "historical_print_selected_loci": 1,
       "historical_print_printed_page": 5,
-      "historical_print_status": "bounded photographed 1876 printed Arabic check, not full-page or MS"
+      "historical_print_status": "bounded photographed 1876 printed Arabic check, not full-page or MS",
+      "historical_print_loci_verified": 1,
+      "historical_print_loci_status": "selected photographed print readings only, not complete historic-page proof"
     },
     {
       "b2007_page": 19,
@@ -44,13 +46,15 @@
       "digital_crux_count": 0,
       "actual_historical_print_inspected": true,
       "actual_manuscript_inspected": false,
-      "independently_collated_variants": 0,
+      "independently_collated_variants": 2,
       "full_arabic_page_in_repo": false,
       "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
       "source_kind": "B2007-main-site-printed-digital",
       "historical_print_selected_loci": 2,
       "historical_print_printed_page": 6,
-      "historical_print_status": "bounded photographed 1876 printed Arabic check, not full-page or MS"
+      "historical_print_status": "bounded photographed 1876 printed Arabic check, not full-page or MS",
+      "historical_print_loci_verified": 2,
+      "historical_print_loci_status": "selected photographed print readings only, not complete historic-page proof"
     },
     {
       "b2007_page": 20,
@@ -83,7 +87,9 @@
       "source_kind": "B2007-main-site-printed-digital",
       "historical_print_selected_loci": 1,
       "historical_print_printed_page": 7,
-      "historical_print_status": "bounded photographed 1876 printed Arabic check, not full-page or MS"
+      "historical_print_status": "bounded photographed 1876 printed Arabic check, not full-page or MS",
+      "historical_print_loci_verified": 1,
+      "historical_print_loci_status": "selected photographed print readings only, not complete historic-page proof"
     },
     {
       "b2007_page": 22,
@@ -309,7 +315,8 @@
         "lemma": "الحضرة العمائية",
         "B2007": "الحضرة العملية",
         "evidence": "editorial/CRITICAL_PRINT_I1876_COLLATION_005.md"
-      }
+      },
+      "historical_print_loci_status": "selected photographed print readings only, not complete historic-page proof"
     },
     {
       "b2007_page": 35,
@@ -1987,13 +1994,14 @@
   "source_pages_with_selected_arabic_english_checks": 19,
   "check_methodology": "80 earlier digital clause checks pp18–23; 62 selected source spans pp24–29; 56 selected source spans pp30–36 (198 total). Neither printed page nor manuscript has been exhaustively collated. Thirteen cumulative flagged crux records include a resolved p31 digital-spacing typo; no variant from 1876 or MSS is established.",
   "issues_flagged_including_resolved_typographic": 13,
-  "historical_print_pages_with_selected_loci_checked": 1,
-  "historical_print_variants_verified": 1,
-  "historical_print_collation_scope": "ONE word/phrase on printed I1876 p18, PDF scan22 ↔ B2007 p34; NOT whole-page collation",
-  "historical_print_pages_with_selected_loci": 3,
-  "historical_print_compared_clause_records": 4,
-  "historical_print_differences": 2,
+  "historical_print_pages_with_selected_loci_checked": 4,
+  "historical_print_variants_verified": 3,
+  "historical_print_collation_scope": "Five bounded textual loci across I1876 pp5,6,7,18 (scans9,10,11,22) corresponding to B2007 pp18,19,21,34. Printed differences 3, agreements 2. No page exhaustively collated and no manuscript folio inspected.",
+  "historical_print_pages_with_selected_loci": 4,
+  "historical_print_compared_clause_records": 5,
+  "historical_print_differences": 3,
   "historical_print_agreements": 2,
-  "historical_print_source": "I1876 printed pp5-7, Princeton PDF scans 9-11, directly photographed; selected spans only",
-  "independent_manuscript_variants": 0
+  "historical_print_source": "I1876 source PDF SHA256 d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87; combined evidence in editorial/I1876_COLLATION_CUMULATIVE_002.json",
+  "independent_manuscript_variants": 0,
+  "historical_print_fully_collated_pages": 0
 }
