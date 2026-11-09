@@ -3,14 +3,14 @@
   "title": "Cross-book source and English review register",
   "summary": {
     "date": "2026-11-09",
-    "totalReaderUnits": 280,
+    "totalReaderUnits": 283,
     "M": {
-      "localReading": 33,
-      "localTranslated": 33,
+      "localReading": 36,
+      "localTranslated": 36,
       "fullAuthorialBooks": 6,
       "completeLocalBookContent": false,
-      "mappedAuthorialTopics": 68,
-      "status": "Includes four new complete opening Book II readings on universals; six-book Muẓaffar source still incompletely transcribed and translated"
+      "mappedAuthorialTopics": 69,
+      "status": "Selected introduction, Book I, seven Book II passages and Book III definition passages; complete original six-book corpus remains substantially untranslated."
     },
     "B": {
       "localReading": 111,
@@ -509,6 +509,78 @@
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "only the opening Book II sections currently imported; full Book II and other authorial books remain incomplete",
       "nextReview": "Collate against the 1968 printed pages, verify precise individual phrases and exercises, then continue the missing sections."
+    },
+    {
+      "id": "M-K-05",
+      "book": "M",
+      "stage": "K",
+      "chapter": 4,
+      "title": "Concept and instance",
+      "source": {
+        "page": "61",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf, 1402 AH, searchable Arabic transcription; 1968 NYU ACO scan registered for separate printed collation",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=61&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 705,
+      "englishCharacters": 1037,
+      "sourceEditionReviewed": "Rafed 1402 AH searchable transcription (local translation, not independently verified against 1968 printed Arabic)",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
+      "sourceAssessment": "selected Book II original sections; source complete only in external Arabic witness",
+      "nextReview": "Verify 1968 printed Arabic and trace quotations/particles before specialist certification"
+    },
+    {
+      "id": "M-K-06",
+      "book": "M",
+      "stage": "K",
+      "chapter": 5,
+      "title": "Concept as title, its referent, and two modes of predication",
+      "source": {
+        "page": "61–62",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf, 1402 AH, searchable Arabic transcription; 1968 NYU ACO scan registered for separate printed collation",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=61&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1824,
+      "englishCharacters": 2376,
+      "sourceEditionReviewed": "Rafed 1402 AH searchable transcription (local translation, not independently verified against 1968 printed Arabic)",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
+      "sourceAssessment": "selected Book II original sections; source complete only in external Arabic witness",
+      "nextReview": "Verify 1968 printed Arabic and trace quotations/particles before specialist certification"
+    },
+    {
+      "id": "M-K-07",
+      "book": "M",
+      "stage": "K",
+      "chapter": 6,
+      "title": "The four relations between universal concepts",
+      "source": {
+        "page": "63–65",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf, 1402 AH, searchable Arabic transcription; 1968 NYU ACO scan registered for separate printed collation",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=63&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2687,
+      "englishCharacters": 2351,
+      "sourceEditionReviewed": "Rafed 1402 AH searchable transcription (local translation, not independently verified against 1968 printed Arabic)",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
+      "sourceAssessment": "selected Book II original sections; source complete only in external Arabic witness",
+      "nextReview": "Verify 1968 printed Arabic and trace quotations/particles before specialist certification"
     },
     {
       "id": "M-Q-01",
