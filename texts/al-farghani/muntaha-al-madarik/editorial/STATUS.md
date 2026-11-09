@@ -1,6 +1,17 @@
 # Muntahā al-madārik · Editorial and translation register
 
-## Latest source-critical milestone — I1876 historic printing, five direct comparisons (9 November 2026)
+## Current milestone — photographed 1876 collation VI: eight exact loci (9 November 2026)
+
+The original Princeton/NYU historical printing I1876 (vol.I) has now been directly compared with the Beirut B2007 source at **eight bounded loci** across I1876 printed pages **5, 6, 7, 8, 9, 10, 13, 18** (PDF scans 9,10,11,12,13,14,17,22). There are **four real print differences** and **four narrow agreements**, registered with exact page/scan concordances and source hashes in [cumulative register v3](I1876_COLLATION_CUMULATIVE_003.json) and [Stage VI textual report](I1876_COLLATION_STAGE_006.md).
+
+**New correction:** I1876 p13 `والتعيّن الأول المذكور` (masculine) ↔ B2007 p29 `والتعيّن الأول المذكورة` (feminine). Adopt the printed historical reading provisionally; retain Beirut in textual notes. Two photographed phrase agreements preserve B2007 p23's difficult `فلم تعلم ولم يحكم` and B2007 p25's `حكم الغضب عارجا لا نازلا` without resolving their philosophical and syntactical questions. Earlier three corrected print readings remain: `الغائي`, `علميا`, `العمائية`.
+
+The **complete 128-page working English introduction** and **198 selected B2007 Arabic–English clause checks** remain preserved. The eight historical print comparisons are **not** eight fully collated pages. **Zero actual medieval manuscript folios** have been examined or compared; a definitive authorial Arabic edition is not established. Next full Arabic–English audit starts B2007 **p37**, while p33 `في عون هذا` awaits higher-resolution historical print and medieval witness comparison.
+
+[Exact critical handoff VI](STAGE_HANDOFF_CRITICAL_006.md) · [GNAMMA critical reader](../critical-edition.html) · [witness register](WITNESS_REGISTER.json) · [manuscript census](WITNESS_CENSUS_CRITICAL_004.md).
+
+
+## Prior milestone — I1876 historic printing, five direct comparisons (9 November 2026)
 
 The original Princeton/NYU 1876 volume I facsimile has been visually checked at **five bounded textual loci** across printed pages **5, 6, 7, 18** (PDF scans 9, 10, 11, 22). **Three historic-print differences vs modern B2007 and two agreements**, recorded with printed-page concordance and SHA-256 evidence in [cumulative photographic collation II](I1876_COLLATION_CUMULATIVE_002.md) / [structured data](I1876_COLLATION_CUMULATIVE_002.json). The new third difference is **I1876 printed p18 `الحضرة العمائية`**, versus B2007 printed p34 `الحضرة العملية`. Adopt `العمائية` as the provisional edited reading (“Cloud-like Presence”); B2007 p36 independently supplies the same wording as an *internal parallel*, not a separate codex. Earlier two corrections are `المطلب الغائي` and `علميّا ووجوديّا` at I1876 p6 versus B2007 p19.
 
