@@ -7,11 +7,11 @@
   "status": "working-translation",
   "editorialStatus": {
     "translationComplete": false,
-    "translatedSection": "Introduction (11), Book I (4), Book II universals (11), selected Book III definition (14).",
-    "translatedPassages": 40,
+    "translatedSection": "Introduction 11, Book I 4, Book II up to three universals 15, selected Book III definition 14",
+    "translatedPassages": 44,
     "sourceBasis": "Original Arabic from Muẓaffar's al-Manṭiq, early printed witness cross-checked against the Dār al-Taʿāruf text hosted by Rafed.",
     "englishComparator": "Carney's 75-page English PDF supplied by the user ends without the complete Book III section on definitions. English here is independently translated from Arabic.",
-    "editionNotice": "40 local Arabic–English working units, still incomplete across the six-book al-Manṭiq."
+    "editionNotice": "44 working bilingual units, no claim of complete al-Manṭiq"
   },
   "sources": [
     {
@@ -637,6 +637,90 @@
         "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf (1402 AH) searchable transcription; 1968 al-Nuʿmān printed scan still requires checking",
         "page": "73–75",
         "url": "https://lib.rafed.net/view.php?b_id=1604&page=73&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-K-12",
+      "stage": "K",
+      "chapter": 12,
+      "title": "Essential and accidental predicates; proprium and common accident",
+      "arabicTitle": "الذاتي والعرضي؛ الخاصة والعرض العام",
+      "arabic": "للذاتي والعرضي اصطلاحات في المنطق تختلف معانيها. ولا يهمنا الآن إلا اصطلاحهم في هذا الباب الذي يسمونه بكتاب «إيساغوجي»، أي كتاب الكليات الخمس. وإنما قدمنا شرح الكليات الثلاثة لتوضيح معناه.\n\n١ ـ (الذاتي): هو المحمول الذي تتقوم ذات الموضوع به، غير خارج عنها. والمراد بما تتقوم به ذاته أن ماهية الموضوع لا تتحقق إلا به، سواء كان هو نفس الماهية كالإنسان المحمول على زيد وعمرو، أو كان جزءاً منها كالحيوان والناطق المحمولين على الإنسان. فالذاتي يعم النوع والجنس والفصل: النوع هو نفس ماهية الأفراد، والجنس والفصل جزءان منها.\n\n٢ ـ (العرضي): المحمول الخارج عن ذات الموضوع، اللاحق له بعد تقومه بجميع ذاتياته، كالضاحك اللاحق للإنسان والماشي اللاحق للحيوان.\n\nوالعرضي قسمان: (الخاصة والعرض العام). إما أن يختص المحمول بموضوعه، فلا يعرض لغيره، فيكون (الخاصة)، سواء ساوى جميع أفراد الموضوع كالضاحك للإنسان، أم اختص ببعضها كالشاعر والخطيب والمجتهد لبعض الناس. وسواء كان خاصة لنوع حقيقي أو لجنس متوسط، كالمتحيز للجسم والماشي للحيوان، أو لجنس الأجناس، كالموجود لا في موضوع للجوهر.\n\nوإما أن يعرض لغير موضوعه أيضاً، فيكون (العرض العام)، كالماشي بالقياس إلى الإنسان، والطائر بالقياس إلى الغراب، والمتحيز بالقياس إلى الحيوان والجسم النامي.\n\nفيكون تعريف الخاصة: «الكلي الخارج المحمول الخاص بموضوعه»، وتعريف العرض العام: «الكلي الخارج المحمول على موضوعه وغيره».",
+      "english": "The terms **essential** (*dhātī*) and **accidental** (*ʿaraḍī*) have different technical uses in logic. Here they are taken in the sense employed in the *Isagoge*, the account of the five predicables. The three essential predicables were introduced first in order to make the distinction clear.\n\n**1. Essential predicate.** This belongs to the constitution of a subject's essence and is not extrinsic to it: the subject's quiddity cannot be constituted without it. The essential predicate may be the whole quiddity, as *human being* is predicated of Zayd or ʿAmr, or an essential part, as *animal* and *rational* are predicated of human being. Thus the species, genus, and differentia are essential: the species is the complete quiddity of its individuals, while genus and differentia enter into the quiddity as parts.\n\n**2. Accidental predicate.** This is extrinsic to the subject's essence and attaches to it after all its essential constituents are given. Being capable of laughter in relation to human being and walking in relation to animal provide examples.\n\nAccidental predicates divide into **proprium** (*khāṣṣa*) and **common accident** (*ʿaraḍ ʿāmm*). A proprium belongs exclusively to its subject in the relevant comparison. It may be coextensive with the entire subject, as *laughing* is traditionally said to be with human being, or occur only in some of its individuals, as poet, orator, or legal expert do among humans. It may characterize a real species or a genus—such as occupying a place with respect to body, walking with respect to animal, or existing not-in-a-subject with respect to substance as the highest genus.\n\nA **common accident** applies both to the subject under consideration and to something else, as walking does in relation to human being, being a bird in relation to crow, or spatial extension in relation to animal and growing body.\n\nAccordingly, a proprium is **an extrinsic universal predicate peculiar to its subject**; a common accident is **an extrinsic universal predicate shared by the subject and something else**.",
+      "notes": [
+        {
+          "type": "Historical example",
+          "text": "The proprium 'capable of laughter' does not imply that every human actually laughs at each instant; it is the inherited example of a natural aptitude belonging to a species in Porphyrian predication."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "al-Muẓaffar, al-Manṭiq, searchable Dār al-Taʿāruf 1402 AH text (preliminary collation, not 1968 printed-scan verified)",
+        "page": "75–77",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=75&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-K-13",
+      "stage": "K",
+      "chapter": 13,
+      "title": "Relative predication, compound properties, and subspecies",
+      "arabicTitle": "تنبيهات وتوضيحات؛ الصنف",
+      "arabic": "تنبيهات وتوضيحات:\n١ ـ قد يكون الشيء الواحد خاصة بالقياس إلى موضوع وعرضاً عاماً بالقياس إلى آخر، كالماشي فإنه خاصة للحيوان وعرض عام للإنسان، ومثله الموجود لا في موضوع والمتحيز مما يعرض الأجناس.\n٢ ـ وقد يكون الشيء الواحد عرضياً بالقياس إلى موضوع وذاتياً بالقياس إلى آخر، كالملون فإنه عرضي بالقياس إلى الجسم مع أنه جنس للأبيض والأسود، ومثله مفرق البصر عرضي للجسم مع أنه فصل للأبيض، لأن الأبيض «ملون مفرق البصر».\n٣ ـ كل من الخاصة والفصل قد يكون مفرداً أو مركباً. مثال المفرد الضاحك والناطق، ومثال المركب من الخاصة في الإنسان «منتصب القامة بادي البشرة»، ومن الفصل للحيوان «حساس متحرك بالإرادة».\n\n٤ ـ الصنف: تقدم أن الفصل يقوم النوع ويميزه من الأنواع في جنسه، فهو يقسم الجنس. أما الخاصة فلا تقوم الكلي الذي تختص به ولكنها تميزه عن غيره، فتقسم ما فوق ذلك الكلي؛ فقد تقسم الجنس والعرض العام، كالموجود لا في موضوع الذي يقسم الموجود إلى جوهر وغير جوهر. وقد تقسم النوع عندما تختص ببعض أفراده، كالشاعر الذي يقسم الإنسان. ويسمى هذا التقسيم للنوع «تصنيفاً» وكل قسم منه «صنفاً».\n\nفالصنف كل كلي أخص من النوع، يشترك مع سائر الأصناف في تمام حقيقة النوع، ويمتاز بأمر عارض خارج عن الحقيقة. والتصنيف كالتنويع، غير أن التنويع للجنس باعتبار الفصول الداخلة في حقيقة الأقسام، والتصنيف للنوع باعتبار الخواص الخارجة عنها، كتصنيف الإنسان إلى شرقي وغربي، وعالم وجاهل، وذكر وأنثى؛ والفرس إلى أصيل وهجين؛ والنخل إلى أصناف شتى.",
+      "english": "Four clarifications concern the five predicables.\n\n**First**, a single property may be a proprium in relation to one subject and a common accident in relation to another. Thus walking is taken as peculiar to animal but common with respect to human being. The same applies to existence not-in-a-subject, spatial extension, and comparable properties attributed to genera.\n\n**Second**, a characteristic may be accidental in relation to one subject but essential in relation to another. *Coloured* is accidental with respect to body but is a genus of white and black. Likewise, dispersing vision is accidental with respect to body but serves as the differentia of white, since white is traditionally defined as “colour that disperses vision.”\n\n**Third**, a proprium or differentia may consist of a simple or a compound expression. *Laughing* and *rational* are examples of simple expressions; *upright in stature and manifest in skin* is given as a compound proprium of human being, and *sentient and moving by volition* as a compound differentia of animal.\n\n**Fourth: the subclass (*ṣinf*).** A differentia constitutes a species and separates it from other species of its genus: it **divides the genus**. A proprium does not constitute the essential nature that it characterizes, but it distinguishes that nature from others, and hence divides a more general universal. A proprium can divide a genus, or even a common accident—for example, existence in no subject divides beings into substance and non-substance. When a proprium differentiates some members *within a species*, as poet does among humans, the division is called **classification** (*taṣnīf*) and its members **subclasses** (*aṣnāf*).\n\nA subclass is any universal narrower than a species whose members share the entire essential nature of that species but differ by an extrinsic feature. Division into species (*tanwīʿ*) is by differentiae intrinsic to a genus's subkinds; classification into subclasses is by accidents outside the shared essence. Examples include humans categorized as Eastern or Western, learned or unlearned, male or female; horses of different breeding; and varieties of palm tree.\n\nThese logical examples express the author's historical theory of classification; whether a given characteristic is genuinely essential, accidental, or a valid modern taxonomic criterion is a separate question.",
+      "notes": [
+        {
+          "type": "Conceptual note",
+          "text": "Do not confuse relative subclass (ṣinf) with differentia-defined species (nawʿ). The distinctions here are logical and depend on a historical conception of essence, not modern genetic taxonomy."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "al-Muẓaffar, al-Manṭiq, searchable Dār al-Taʿāruf 1402 AH text (preliminary collation, not 1968 printed-scan verified)",
+        "page": "77–78",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=77&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-K-14",
+      "stage": "K",
+      "chapter": 14,
+      "title": "The three distinctions of predication",
+      "arabicTitle": "الحمل وأنواعه: الطبيعي والوضعي، الأولي والشائع، المواطاة والاشتقاق",
+      "arabic": "وصفنا كلاً من الكليات الخمس بالمحمول، وأشرنا إلى أن الكلي المحمول ينقسم إلى الذاتي والعرضي، ويحتاج هذا إلى توضيح. فقد يسأل سائل: النوع قد يحمل على الجنس، فيقال الحيوان إنسان وفرس وجمل، وليس الإنسان ذاتياً للحيوان ولا عرضياً عليه. وقد يسأل: الحد التام يحمل على الماهية، كقولنا الإنسان حيوان ناطق، فهو تمام حقيقتها وليس نوعاً ولا جنساً ولا فصلاً. وقد يسأل: الضحك خاصة الإنسان والمشي عرض عام له، مع أن الإنسان ليس هو الضحك أو المشي. والجواب يظهر بمعرفة ثلاثة تقسيمات للحمل.\n\n١ ـ الحمل الطبيعي والوضعي: كل محمول كلي حقيقي، لأن الجزئي الحقيقي بما هو جزئي لا يحمل على غيره. وكل كلي أعم بحسب المفهوم فهو محمول بالطبع على الأخص منه، كالحيوان على الإنسان، والإنسان على محمد، والناطق على الإنسان، ويسمى «حملاً طبيعياً». أما حمل الأخص مفهوماً على الأعم فبالوضع والجعل، ويسمى «حملاً وضعياً». والعموم بحسب المفهوم غير العموم بحسب المصداق؛ فالناطق أعم بحسب المفهوم من الإنسان وإن ساواه في الوجود، لأن مفهومه «شيء له النطق» من غير اشتراط أن يكون إنساناً. وكذلك المشتقات كالضاحك والصاهل والماشي. فالمراد من المحمول في الكليات الخمس المحمول بالطبع، لا مطلق الحمل.\n\n٢ ـ الحمل الذاتي الأولي والشائع الصناعي: الحمل اتحاد بين شيئين من جهة، مع مغايرتهما من جهة أخرى، وإلا لم تصح نسبة هذا إلى ذاك. فإن كان الاتحاد في المفهوم والمعنى والاختلاف في جهة الاعتبار كان حملاً ذاتياً أولياً كقولنا «الإنسان حيوان ناطق»، أو «الإنسان إنسان». وإن كان الاتحاد في الوجود والمصداق مع التغاير في المفهوم كان حملاً شائعاً صناعياً كقولنا «الإنسان ضاحك». فالحد التام يساوي المحدود مفهوماً ويصدق عليه بالحمل الأولي.\n\n٣ ـ حمل المواطاة والاشتقاق: إذا قلنا «الإنسان ضاحك» فالحمل بالمواطاة أو «هوهو»، ومعناه أن ذات الموضوع نفس المحمول: هذا ذاك. وتحمل الكليات الخمس بهذا الحمل. وهناك حمل الاشتقاق أو «ذوهو»، كحمل الضحك على الإنسان، فلا يقال «الإنسان ضحك» بل «ضاحك» أو «ذو ضحك». فالمحمول بالاشتقاق كالضحك والمشي والحس لا يدخل في الكليات الخمس، بخلاف الضاحك والماشي والحساس. والتعبير أحياناً بالمصدر وإرادة المشتق تسامح قد يوقع المبتدئ في الالتباس.",
+      "english": "Calling all five predicables **predicates** raises three objections. A species can apparently be predicated of its genus—“an animal is a human being, horse or camel”—without thereby being essential or accidental to the wider genus. A complete definition can be predicated of its subject—“a human being is a rational animal”—although the entire definition is neither a further species, genus, nor differentia of what it defines. Finally, we say that laughter is a proprium of humanity and walking a common accident, but cannot properly say “a human being is laughter” or “a human being is walking” when using those words as abstract nouns. These difficulties are resolved through three distinctions.\n\n**1. Natural and stipulated predication.** A genuine particular, as particular, is not predicated of something else; what is predicated is universal. A universal concept broader in signification is naturally predicated of a concept narrower in signification: animal of human being, human being of Muḥammad, rational of human being. This is **natural predication** (*ḥaml ṭabīʿī*). Reversing the relation and predicating the narrower concept of the wider requires an artificial stipulation, **stipulated predication** (*ḥaml waḍʿī*).\n\nBreadth of concept is not always breadth of extension. *Rational* signifies “something possessing rationality” without explicitly specifying *human being*, so is broader **in concept** even if it is coextensive with human being **in instances**. Similar remarks concern derivative words such as laughing, neighing, and walking. The essential/accidental distinction in the five predicables refers to predicates naturally applicable to their subjects, not every imaginable predication.\n\n**2. Primary essential and commonly used predication.** Predication requires identity in one respect and difference in another; otherwise there are not two conceptions to relate. **Primary essential predication** (*ḥaml dhātī awwalī*) rests on unity of concept or meaning, with difference only in the mode of consideration, as in “human being is rational animal,” or “human being is human being.” **Common predication** (*ḥaml shāʾiʿ ṣināʿī*) rests on unity in existence or instance despite distinct concepts, as in “human being is capable of laughter.” Thus a complete essential definition has the same conceptual content as its definiendum under primary predication, without constituting a fourth essential predicable.\n\n**3. Predication by identity and predication by derivation.** “Human being is laughing” (in the sense of having the capacity) uses **predication by identity** (*ḥaml muwāṭāh*, or *huwa huwa*): the subject is the very thing picked out by the predicate. All five predicables are predicated in this manner. In contrast, “human being has laughter” expresses **predication by derivation** (*ḥaml ishtiqāq*, or *dhū huwa*). We cannot strictly predicate the abstract noun *laughter* directly of a human being without deriving the adjective *laughing* or adding “possessing.” Thus the five predicables include *laughing* and *sentient*, not the abstract nouns *laughter* and *sensation*. The occasional use of an abstract noun where a derived adjective is meant is loose language that may confuse beginners.",
+      "notes": [
+        {
+          "type": "Editorial source warning",
+          "text": "The full searchable source elaboration of primary and common predication begins on printed p. 80; its continuation is not fully available in this transcription excerpt. The corresponding Arabic and English paragraphs in this unit are a working condensed reconstruction of the argument, not a diplomatic complete passage. Treat this unit as provisional until the entire p. 80–81 wording is independently copied and checked."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "al-Muẓaffar, al-Manṭiq, searchable Dār al-Taʿāruf 1402 AH text (preliminary collation, not 1968 printed-scan verified)",
+        "page": "78–81",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=78&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-K-15",
+      "stage": "K",
+      "chapter": 15,
+      "title": "Logical, natural, and intellectual universals",
+      "arabicTitle": "الكلي المنطقي والطبيعي والعقلي",
+      "arabic": "إذا قيل «الإنسان كلي» فهنا ثلاثة أشياء: ذات الإنسان بما هو إنسان؛ ومفهوم الكلي بما هو كلي من غير التفات إلى كونه إنساناً أو غير إنسان؛ والإنسان بوصف كونه كلياً. أو قل: ذات الموصوف مجردة، ومفهوم الوصف مجرداً، والمجموع من الموصوف والوصف.\n\n١ ـ فإن لاحظ العقل ذات الموصوف بالكلي مع قطع النظر عن الوصف، كالإنسان بما هو إنسان من غير التفات إلى كونه كلياً أو غير كلي، وذلك عند الحكم عليه بأنه «حيوان ناطق»، سمي «الكلي الطبيعي»، والمقصود طبيعة الشيء بما هي. والكلي الطبيعي موجود في الخارج بوجود أفراده.\n\n٢ ـ وإن لاحظ العقل مفهوم الوصف بالكلي وحده، أي مفهوم «ما لا يمتنع فرض صدقه على كثيرين» مجرداً من كل مادة كإنسان وحيوان وحجر، سمي «الكلي المنطقي». ولا وجود له إلا في العقل، فهو من المعاني الذهنية الخالصة.\n\n٣ ـ وإن لاحظ العقل المجموع من الوصف والموصوف، كالإنسان بما هو كلي لا يمتنع صدقه على الكثير، سمي «الكلي العقلي»، لأنه لا وجود له إلا في العقل لاتصافه بوصف عقلي، فإن كل موجود في الخارج جزئي حقيقي.\n\nونشبّه هذه الاعتبارات بما إذا قيل «السطح فوق». فإذا لاحظت ذات السطح من آجر وخشب ونحوهما ولم تلتفت إلى كونه فوق أو تحت، فهو شبيه بالكلي الطبيعي؛ وإذا لاحظت مفهوم الفوق وحده مجرداً عن كل شيء، فهو شبيه بالكلي المنطقي؛ وإذا لاحظت السطح بوصف كونه فوق، فهو شبيه بالكلي العقلي.",
+      "english": "When we say “the human being is universal,” there are three distinct things to consider: (1) humanity as such; (2) the concept **universal**, considered without attending to which nature it characterizes; and (3) humanity **as characterized by universality**. In other words, we can attend to the subject alone, the attribute alone, or subject and attribute together.\n\n**1. The natural universal (*al-kullī al-ṭabīʿī*).** The intellect considers the thing's nature without attending to universality as an additional description. Thus it considers human being *as human being*, as when it predicates “rational animal” of it. The natural universal is the nature itself taken in this manner; it exists outside the mind in and through the existence of its individual instances.\n\n**2. The logical universal (*al-kullī al-manṭiqī*).** The intellect considers the abstract characteristic of being a universal—“that which may be supposed to apply to many”—without attaching it to any particular nature, such as human, animal, or stone. It exists only in the intellect, for it is a purely mental concept formed by abstraction.\n\n**3. The intellectual universal (*al-kullī al-ʿaqlī*).** The intellect considers the nature *precisely as characterized by universality*: human being as a concept capable of application to many. This composite of a nature and a mental attribute exists only in the intellect, since anything existing externally is in fact an individual particular.\n\nConsider the proposition “the surface is above.” One can attend to the surface itself, with its bricks or timber, disregarding whether it is above or below—analogous to the natural universal. One can attend to *aboveness* abstractly and without any particular thing above—analogous to the logical universal. Or one can attend to the surface as *above*—analogous to the intellectual universal.\n\nThe distinction separates the nature, the logical property of universality, and the nature insofar as the property is predicated of it. This is essential when comparing the later Ḥikma discussion of *quiddity considered in itself* and its mental predication.",
+      "notes": [
+        {
+          "type": "Cross-book reference",
+          "text": "The later Ṭabāṭabāʾī reader discusses the external reality of natural quiddity in Nihāya stage V, but that should not be equated uncritically with every ontological implication of al-Muẓaffar's introductory logical terminology."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "al-Muẓaffar, al-Manṭiq, searchable Dār al-Taʿāruf 1402 AH text (preliminary collation, not 1968 printed-scan verified)",
+        "page": "84–85",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=84&type=c_fbook"
       }
     },
     {
