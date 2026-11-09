@@ -1,0 +1,226 @@
+{
+  "schema": "gnamma-farghani-historical-print-collation-v3",
+  "date": "2026-11-09",
+  "source": {
+    "siglum": "I1876",
+    "type": "historical_print",
+    "title": "Muntaha al-madarik volume I Istanbul 1293/1876 (Princeton scan)",
+    "official_pdf": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
+    "official_viewer": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en",
+    "source_pdf_sha256": "d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87",
+    "pdf_pages": 368,
+    "material": "Direct inspection of rendered 1876 print page photographs, not manuscripts",
+    "capture_artifact": "GitHub Actions run 42536981050, artifact 13639926426, source manifest scan metadata",
+    "photographed_pages": [
+      {
+        "printed": 5,
+        "pdf_scan_index": 9,
+        "sha256_jpeg": "5b763cfdd440f55b5c08df541c4578ef837f21313e990ae4f0109e9261b02076"
+      },
+      {
+        "printed": 6,
+        "pdf_scan_index": 10,
+        "sha256_jpeg": "fc282d18cfc93c9a1ff1f466adf817f2d43a403705ea79eb6781eb4ea608e7f1"
+      },
+      {
+        "printed": 7,
+        "pdf_scan_index": 11,
+        "sha256_jpeg": "5b3cda3c7b58635ebc27f609322895f017cd30efd34a03a82592a8b98dad2865"
+      },
+      {
+        "printed": 18,
+        "pdf_scan_index": 22,
+        "sha256_jpeg": "5dafe2aaa9561e85c128f22b07c5642a64cbac96fbf79b3aad8ef1941d1d10bf"
+      },
+      {
+        "printed": 8,
+        "pdf_scan_index": 12,
+        "sha256_jpeg": "3126e43af8493b65f254111626a25162404bc9b658f43cd97c36c439dd4c1690"
+      },
+      {
+        "printed": 9,
+        "pdf_scan_index": 13,
+        "sha256_jpeg": "683380b034daf230712523f3a475ccc3120d4b310c6dccd9d7d0734bdd12648f"
+      },
+      {
+        "printed": 10,
+        "pdf_scan_index": 14,
+        "sha256_jpeg": "3be37a1d06b1e2970b8c4135a51941412f71a46796c23f1d2cde64f3007a1bb9"
+      },
+      {
+        "printed": 13,
+        "pdf_scan_index": 17,
+        "sha256_jpeg": "b9a24fb7e82aee8a62492d550ee2ddcda75b3ec25188deff21b9741808083aca"
+      }
+    ]
+  },
+  "scope": "Eight selected source loci on 1876 printed pp5,6,7,8–9,10,13,18; NOT full-page or manuscript collation",
+  "comparisons": [
+    {
+      "id": "I1876-L01",
+      "b2007_page": 18,
+      "i1876_printed_page": 5,
+      "pdf_scan_index": 9,
+      "source_record": "CR001-010",
+      "beirut_digital": "وبطون المشتمل",
+      "i1876_reading": "وبطون المشتمل",
+      "relationship": "historic-print-agreement",
+      "editorial_decision": "Retain witnessed awkward reading in the copy-text with sic apparatus note; do not emend without manuscript images.",
+      "verified_historical_print": true,
+      "verified_manuscript": false
+    },
+    {
+      "id": "I1876-L02",
+      "b2007_page": 19,
+      "i1876_printed_page": 6,
+      "pdf_scan_index": 10,
+      "source_record": "CR001-014",
+      "beirut_digital": "والمطلب الغائبّ",
+      "i1876_reading": "والمطلب الغائي",
+      "relationship": "historical-print-difference",
+      "editorial_decision": "Prefer I1876 الغائي as the edited reading: 'ultimate/purposive objective'; preserve B2007 الغائب in apparatus. Witnessed PRINT comparison only, not an independently attested manuscript variant.",
+      "verified_historical_print": true,
+      "verified_manuscript": false
+    },
+    {
+      "id": "I1876-L03",
+      "b2007_page": 19,
+      "i1876_printed_page": 6,
+      "pdf_scan_index": 10,
+      "source_record": "CR001-024",
+      "beirut_digital": "بل عمليّا ووجوديّا أيضا",
+      "i1876_reading": "بل علميّا ووجوديّا أيضا",
+      "relationship": "historical-print-difference",
+      "editorial_decision": "Prefer I1876 علميا because directly read and supported by close context concerning العلم الذاتي والصفاتي; modern printed digital عمليّا is recorded, not silently changed; this is a PRINT-level correction, not manuscript evidence.",
+      "verified_historical_print": true,
+      "verified_manuscript": false
+    },
+    {
+      "id": "I1876-L04",
+      "b2007_page": 21,
+      "i1876_printed_page": 7,
+      "pdf_scan_index": 11,
+      "source_record": "CR002-005",
+      "beirut_digital": "من حيث واحديتها",
+      "i1876_reading": "من حيث واحديتها",
+      "relationship": "historic-print-agreement",
+      "editorial_decision": "Corroborates the words omitted in older GNAMMA excerpt. Keep earlier correction and distinguish source transcription error from actual copy variation.",
+      "verified_historical_print": true,
+      "verified_manuscript": false
+    },
+    {
+      "id": "I1876-L05",
+      "b2007_page": 34,
+      "i1876_printed_page": 18,
+      "pdf_scan_index": 22,
+      "source_record": "CR004-040",
+      "beirut_digital": "الحضرة العملية",
+      "i1876_reading": "الحضرة العمائية",
+      "relationship": "historical-print-difference",
+      "editorial_decision": "Adopt historic printed العمائية, the Cloud-like Presence, based on visually inspected I1876 printed p18 scan22; retain Beirut العملية in apparatus. Internal B2007 p36 also reads العمائية. Manuscript folios not checked.",
+      "verified_historical_print": true,
+      "verified_manuscript": false
+    },
+    {
+      "id": "I1876-L06",
+      "b2007_page": 29,
+      "i1876_printed_page": 13,
+      "pdf_scan_index": 17,
+      "source_record": "CR003-059",
+      "beirut_digital": "والتعيّن الأول المذكورة وقلبه المطهّر",
+      "i1876_reading": "والتعيّن الأول المذكور وقلبه المطهّر",
+      "relationship": "historical-print-difference",
+      "editorial_decision": "Adopt historically attested masculine المذكور, agreeing with التعيّن; preserve feminine المذكورة of B2007 in apparatus. Subsequent coordination/syntax still requires manuscript scrutiny.",
+      "verified_historical_print": true,
+      "verified_manuscript": false,
+      "evidence": {
+        "siglum": "I1876",
+        "i1876_printed_page": 13,
+        "pdf_scan_index": 17,
+        "reading": "والتعيّن الأول المذكور",
+        "printed_photo_url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0017.jpg",
+        "source_pdf_sha256": "d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87",
+        "derived_jpeg_sha256": "b9a24fb7e82aee8a62492d550ee2ddcda75b3ec25188deff21b9741808083aca",
+        "manuscript": false,
+        "proof_grade": "visually inspected historical print, selected locus only"
+      }
+    },
+    {
+      "id": "I1876-L07",
+      "b2007_page": 23,
+      "i1876_printed_page": 8,
+      "pdf_scan_index": 12,
+      "second_printed_page": 9,
+      "second_scan_index": 13,
+      "source_record": "CR002-032",
+      "beirut_digital": "فلم تعلم ولم يحكم بشيء منها إلّا بعد تعيّنها",
+      "i1876_reading": "فلم تعلم ولم يحكم بشيء منها إلا بعد تعينها",
+      "relationship": "historic-print-agreement",
+      "editorial_decision": "The problematic claim stands across I1876 p8/9 page break (scan12 last line and scan13 first line); retain wording. No inference about divine omniscience or authorial revisions from printed agreement.",
+      "verified_historical_print": true,
+      "verified_manuscript": false,
+      "evidence": [
+        {
+          "siglum": "I1876",
+          "i1876_printed_page": 8,
+          "pdf_scan_index": 12,
+          "reading": "فلم",
+          "printed_photo_url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0012.jpg",
+          "source_pdf_sha256": "d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87",
+          "derived_jpeg_sha256": "3126e43af8493b65f254111626a25162404bc9b658f43cd97c36c439dd4c1690",
+          "manuscript": false,
+          "proof_grade": "visually inspected historical print, selected locus only"
+        },
+        {
+          "siglum": "I1876",
+          "i1876_printed_page": 9,
+          "pdf_scan_index": 13,
+          "reading": "تعلم ولم يحكم بشيء منها إلا بعد تعينها",
+          "printed_photo_url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0013.jpg",
+          "source_pdf_sha256": "d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87",
+          "derived_jpeg_sha256": "683380b034daf230712523f3a475ccc3120d4b310c6dccd9d7d0734bdd12648f",
+          "manuscript": false,
+          "proof_grade": "visually inspected historical print, selected locus only"
+        }
+      ]
+    },
+    {
+      "id": "I1876-L08",
+      "b2007_page": 25,
+      "i1876_printed_page": 10,
+      "pdf_scan_index": 14,
+      "source_record": "CR003-018",
+      "beirut_digital": "حكم الغضب عارجا لا نازلا",
+      "i1876_reading": "حكم الغضب عارجا لا نازلا",
+      "relationship": "historic-print-agreement",
+      "editorial_decision": "The concluding contrast ascending/not descending appears in both prints; this narrow agreement does not resolve syntactic attachment of preceding على أنها غايات or validate a smooth English paraphrase.",
+      "verified_historical_print": true,
+      "verified_manuscript": false,
+      "evidence": {
+        "siglum": "I1876",
+        "i1876_printed_page": 10,
+        "pdf_scan_index": 14,
+        "reading": "حكم الغضب عارجا لا نازلا",
+        "printed_photo_url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0014.jpg",
+        "source_pdf_sha256": "d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87",
+        "derived_jpeg_sha256": "3be37a1d06b1e2970b8c4135a51941412f71a46796c23f1d2cde64f3007a1bb9",
+        "manuscript": false,
+        "proof_grade": "visually inspected historical print, selected locus only"
+      }
+    }
+  ],
+  "printed_pages_with_bounded_comparisons": 8,
+  "historical_print_selected_loci": 8,
+  "historical_print_differences": 4,
+  "farghani_manuscript_readings_compared": 0,
+  "verified_manuscript_variants": 0,
+  "editorial_status": "Three historical print-to-Beirut differences and two agreements verified at bounded loci; no manuscript readings examined.",
+  "witness_rules": "I1876 is an earlier PRINT, not an independent manuscript. Its readings do not establish Farghani's autograph, and image-pair differences should not be labelled manuscript variants.",
+  "historical_print_agreements": 4,
+  "provenance_note": "Original Princeton/NYU 1876 low-res PDF, SHA-256 d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87. Scan indices PDF 1-indexed; I1876 printed-page labels distinct from modern B2007",
+  "next_pending": [
+    "I1876 p16 ↔ B2007 p33 في عون هذا: do not decide without high-res reinspection",
+    "Full introduction Arabic copytext and at least two early medieval manuscript witnesses",
+    "Remaining unresolved syntactic crux in p25 mercy/anger passage"
+  ]
+}
