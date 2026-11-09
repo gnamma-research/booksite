@@ -1,54 +1,54 @@
-/* Stage106 cumulative bilingual notes + nine source-graded progress bars.
- * Chromium & WebKit, desktop + iPhone width. No inference of page completion. */
-import { chromium, webkit } from 'playwright';
+/* Tahdhīb Stage107 browser verification: 110 numbered H glosses and nine independent progress bars.
+ * Chromium/WebKit desktop/iPhone, no manuscript-or-page completion inflation. */
+import {chromium,webkit} from 'playwright';
 const base=process.env.TAHDHIB_QA_BASE||'http://127.0.0.1:8765/';
-const dir='texts/al-taftazani/tahdhib-al-mantiq/edition/';
-const errors=[],expect=(x,msg)=>{if(!x)throw Error(msg)};
-for(const [engine,type] of [['chromium',chromium],['webkit',webkit]]){
- const browser=await type.launch({headless:true});
+const prefix='texts/al-taftazani/tahdhib-al-mantiq/edition/';
+const errors=[],require=(x,msg)=>{if(!x)throw Error(msg)};
+for(const [engine,browserType] of [['chromium',chromium],['webkit',webkit]]){
+ const browser=await browserType.launch({headless:true});
  try{
   for(const viewport of [{width:1280,height:850},{width:390,height:844}]){
-   const context=await browser.newContext({viewport,reducedMotion:'reduce'});
-   const page=await context.newPage(),exceptions=[];
+   const ctx=await browser.newContext({viewport,reducedMotion:'reduce'});
+   const page=await ctx.newPage(),exceptions=[];
    page.on('pageerror',e=>exceptions.push(e.message));
    try{
-    await page.goto(new URL(dir+'progress.html',base).href,{waitUntil:'networkidle',timeout:60000});
-    expect((await page.locator('#metrics progress').count())===9,'Expected nine distinct progress bars');
-    const values=await page.locator('#metrics progress').evaluateAll(nodes=>nodes.map(x=>[Number(x.value),Number(x.max)]));
-    const expected=[[19,19],[110,110],[0,110],[52,274],[0,274],[53,55],[32,55],[46,46],[0,46]];
-    expect(JSON.stringify(values)===JSON.stringify(expected),'Inaccurate research progress '+JSON.stringify(values));
-    expect((await page.locator('#stages .stage').count())===5,'Need historical Stages 102–106');
-    const noteStatus=await page.locator('#note-state').textContent();
-    expect(noteStatus.includes('Partial notes: 1, 25.'),'Unresolved notes omitted from dashboard: '+noteStatus);
-    expect((await page.locator('a[href*="hwn001-055.md"]').count())>=1,'Cumulative Markdown not discoverable');
-    await page.goto(new URL(dir+'hawashi-numbered-notes.html',base).href,{waitUntil:'networkidle',timeout:60000});
-    expect((await page.locator('#notes .note').count())===55,'Not 55 consecutive numbered notes');
-    expect((await page.locator('#notes .grid .ar').count())===55,'Missing Arabic source/locator fields');
-    expect((await page.locator('#notes .grid .en').count())===55,'Missing English text fields');
-    expect((await page.locator('#notes a[href*="/12170/"]').count())>=55,'Missing original Qum source links');
-    expect((await page.locator('#notes .source-notice .ar').count())===2,'Two unnumbered Arabic glosses not rendered');
-    expect((await page.locator('#notes .source-notice .en').count())===2,'Two unnumbered English glosses not rendered');
-    const arabic55=await page.locator('#HWN-055 .grid .ar').textContent();
-    expect(arabic55.length>700,'Note55 full Arabic working transcription not loaded');
-    const arabic1=await page.locator('#HWN-001 .grid .ar').textContent();
-    expect(arabic1.length<arabic55.length/2,'Note1 should remain Arabic locator only');
+    await page.goto(new URL(prefix+'progress.html',base).href,{waitUntil:'networkidle',timeout:60000});
+    require(await page.locator('#metrics progress').count()===9,'Expected exactly 9 differently scoped progress bars');
+    const vals=await page.locator('#metrics progress').evaluateAll(nodes=>nodes.map(p=>[Number(p.value),Number(p.max)]));
+    const want=[[19,19],[110,110],[0,110],[52,274],[0,274],[106,110],[52,110],[46,46],[0,46]];
+    require(JSON.stringify(vals)===JSON.stringify(want),'Wrong research bar counts '+JSON.stringify(vals));
+    require(await page.locator('#stages .stage').count()===6,'Missing Stage102–107 history');
+    const state=await page.locator('#note-state').textContent();
+    require(state.includes('Partial notes: 1, 25, 82, 90.'),'Incomplete notes hidden from dashboard: '+state);
+    require(await page.locator('a[href*="hwn001-110.md"]').count()>=1,'Cumulative 110-note Markdown link missing');
+    require(exceptions.length===0,'Dashboard errors '+exceptions.join('|'));
+    await page.goto(new URL(prefix+'hawashi-numbered-notes.html',base).href,{waitUntil:'networkidle',timeout:60000});
+    require(await page.locator('#notes .note').count()===110,'Expected 110 unique numbered notes');
+    require(await page.locator('#notes .grid .ar').count()===110,'Missing Arabic fields or locators');
+    require(await page.locator('#notes .grid .en').count()===110,'Missing English note renderings');
+    require(await page.locator('#notes a[href*="/12170/"]').count()>=110,'Original page source links omitted');
+    require(await page.locator('#notes .source-notice .ar').count()===5,'Unnumbered Arabic separately attributed passages not displayed');
+    require(await page.locator('#notes .source-notice .en').count()===5,'Unnumbered English passages not displayed');
+    const ar75=await page.locator('#HWN-075 .grid .ar').textContent();
+    const ar110=await page.locator('#HWN-110 .grid .ar').textContent();
+    require(ar75.length>100 && ar110.length<ar75.length,'Full searchable Arabic and locator-only Arabic confused');
     await page.locator('#filter').selectOption('complete_searchable_note');
-    expect((await page.locator('#notes .note').count())===53,'Expected 53 complete first-pass notes');
+    require(await page.locator('#notes .note').count()===106,'Wrong completed numbered-note count');
     await page.locator('#filter').selectOption('partial_translation');
-    expect((await page.locator('#notes .note').count())===2,'Expected exactly two incomplete numbered notes');
+    require(await page.locator('#notes .note').count()===4,'Four unresolved notes must remain visible');
     await page.locator('#filter').selectOption('all');
-    await page.locator('#search').fill('HWN-055');
-    expect((await page.locator('#notes .note').count())===1,'Search by exact id failed');
+    await page.locator('#search').fill('HWN-110');
+    require(await page.locator('#notes .note').count()===1,'Search note110 failed');
     await page.locator('#search').fill('');
-    expect((await page.locator('#notes .note').count())===55,'Clear search did not restore notes');
-    const widths=await page.evaluate(()=>({actual:document.documentElement.scrollWidth,visible:document.documentElement.clientWidth}));
-    expect(widths.actual<=widths.visible+3,'Horizontal overflow '+JSON.stringify(widths));
-    expect(exceptions.length===0,'JavaScript errors '+exceptions.join(' | '));
-    console.log('PASS',engine,viewport.width,'55 bilingual notes; 53/2; 32 Arabic source transcriptions; 2 unnumbered glosses; 9 progress bars');
-   }catch(e){errors.push(engine+' '+viewport.width+' '+e.message);console.error('FAIL',errors.at(-1))}
-   finally{await context.close()}
+    require(await page.locator('#notes .note').count()===110,'Search reset lost previous notes');
+    const widths=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,view:document.documentElement.clientWidth}));
+    require(widths.scroll<=widths.view+3,'Horizontal overflow: '+JSON.stringify(widths));
+    require(exceptions.length===0,'Browser exceptions: '+exceptions.join(' | '));
+    console.log('PASS',engine,viewport.width,'110 unique H notes, 106 complete English, 4 partial; 52 full searchable Arabic; 5 unnumbered; 9 bars');
+   }catch(e){errors.push(engine+' '+viewport.width+': '+e.message);console.error('FAIL',errors.at(-1))}
+   finally{await ctx.close()}
   }
  }finally{await browser.close()}
 }
 if(errors.length)process.exit(1);
-console.log('PASS Stage106 cumulative research and bilingual reader QA');
+console.log('PASS Stage107 cumulative bilingual reader and progress QA');
