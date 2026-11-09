@@ -123,7 +123,7 @@ def inspect():
     assert all((ROOT/f).is_file() for f in rels)
     combined=(ROOT/"batches/hawashi-all-sections-cumulative-stage111.md").read_text(encoding="utf-8")
     assert len(combined)>405000
-    assert combined.count("## Note ")==140
+    assert sum(line.startswith("## Note ") and line.removeprefix("## Note ").split(" ",1)[0].isdigit() for line in combined.splitlines())==140  # exclude two "Note index" headings
     assert combined.count("## Introduction note ")==82
     assert combined.count("## Signification note ")==20
     assert "HWN-INTRO-001" in combined and "HWN-DALALA-001" in combined
