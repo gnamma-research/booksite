@@ -1,0 +1,83 @@
+name: Farghani Stage XVI complete text and original-photo evidence archive
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "texts/al-farghani/muntaha-al-madarik/editorial/ARCHIVE_016_TRIGGER.md"
+permissions:
+  contents: read
+concurrency:
+  group: farghani-stage-xvi-complete-archive
+  cancel-in-progress: false
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate all bilingual records, preserve every original witness photo, create ZIP
+        shell: bash
+        run: |
+          python - <<'PY'
+          import pathlib,json,hashlib,zipfile
+          b=pathlib.Path("texts/al-farghani/muntaha-al-madarik")
+          editorial=[
+            "editorial/FULL_CUMULATIVE_CRITICAL_007.md",
+            "editorial/WORKING_TRANSLATION_18_145.md",
+            "editorial/CUMULATIVE_SELECTED_BILINGUAL_016.md",
+            "editorial/I1876_COLLATION_CUMULATIVE_006.json",
+            "editorial/I1876_COLLATION_STAGE_016.md",
+            "editorial/I1876_COLLATION_STAGE_015.md",
+            "editorial/I1876_P32_NAME_SEQUENCE_016.md",
+            "editorial/CRITICAL_COVERAGE_REGISTER.json",
+            "editorial/SOURCE_PROVENANCE_CRITICAL_016.json",
+            "editorial/STAGE_HANDOFF_CRITICAL_016.md",
+            "editorial/STAGE_HANDOFF_CRITICAL_015.md",
+            "editorial/STAGE_HANDOFF_CRITICAL_014.md",
+            "critical-edition.html",
+            "critical-reader.js",
+            "index.html",
+          ]
+          files=[b/x for x in editorial]
+          files+=sorted((b/"data").glob("critical-pass-0*.js"))
+          files+=sorted((b/"facsimile-I1876-hires").rglob("*"))
+          files=[p for p in files if p.is_file()]
+          missing=[x for x in editorial if not (b/x).is_file()]
+          assert not missing, f"Missing files {missing}"
+          chunks=sorted((b/"data").glob("critical-pass-0*.js"))
+          assert len(chunks)>=11, f"Need 11 files, got {len(chunks)}"
+          records=[]
+          for p in chunks:
+            s=p.read_text()
+            items=json.loads(s.split("=",1)[1].strip().removesuffix(";"))
+            records+=items["records"]
+          assert len(records)==559, len(records)
+          assert len(set(x["id"] for x in records))==559
+          assert set(x["page"] for x in records)==set(range(18,146))
+          derived=sum(str(x.get("source_grade","")).startswith("secondary-") for x in records)
+          assert derived==276, derived
+          reg=json.loads((b/"editorial/I1876_COLLATION_CUMULATIVE_006.json").read_text())
+          assert len(reg["comparisons"])==15
+          assert reg["historical_print_differences"]==7
+          assert reg["historical_print_agreements"]==8
+          assert reg["verified_manuscript_variants"]==0
+          photos=sorted((b/"facsimile-I1876-hires/images").glob("scan_*.jpg"))
+          assert len(photos)>=11, len(photos)
+          h=hashlib.sha256((b/"facsimile-I1876-hires/images/scan_0036.jpg").read_bytes()).hexdigest()
+          assert h=="8a5f2a25fb93cc6560442dd7c0b9f8e9499f833df7b5c33153e12ea4c0463950"
+          pathlib.Path("release").mkdir(exist_ok=True)
+          out=pathlib.Path("release/Farghani_STAGE_XVI_COMPLETE_SOURCE_ARCHIVE.zip")
+          manifest={"schema":"gnamma-farghani-stage16-offline-archive","records":559,"digitized":283,"derivative":276,"original_1876_print_loci":15,"printed_differences":7,"printed_agreements":8,"manuscript_variants":0,"highres_photos":len(photos),"files":{}}
+          with zipfile.ZipFile(out,"w",compression=zipfile.ZIP_DEFLATED,compresslevel=5) as z:
+            for p in files:
+              manifest["files"][str(p.relative_to(b))]={"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size}
+              z.write(p,arcname="Farghani_Stage_XVI/"+str(p.relative_to(b)))
+            z.writestr("Farghani_Stage_XVI/ARCHIVE_INTEGRITY.json",json.dumps(manifest,indent=2,ensure_ascii=False)+"\n")
+          print(json.dumps({"archive":str(out),"archive_bytes":out.stat().st_size,"record_count":len(records),"image_count":len(photos),"file_count":len(files),"archive_sha256":hashlib.sha256(out.read_bytes()).hexdigest()}))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Farghani-Stage-XVI-complete-evidence
+          path: release/Farghani_STAGE_XVI_COMPLETE_SOURCE_ARCHIVE.zip
+          retention-days: 30
+          if-no-files-found: error
