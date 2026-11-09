@@ -7,11 +7,11 @@
   "status": "working-translation",
   "editorialStatus": {
     "translationComplete": false,
-    "translatedSection": "Introduction (11), Book I on signification (4), opening Book II on universals (4), and selected Book III discussions of definition (14).",
-    "translatedPassages": 33,
+    "translatedSection": "Introduction (11), Book I (4), Book II universals/predication (7), selected Book III definition (14).",
+    "translatedPassages": 36,
     "sourceBasis": "Original Arabic from Muẓaffar's al-Manṭiq, early printed witness cross-checked against the Dār al-Taʿāruf text hosted by Rafed.",
     "englishComparator": "Carney's 75-page English PDF supplied by the user ends without the complete Book III section on definitions. English here is independently translated from Arabic.",
-    "editionNotice": "33 local Arabic–English reading passages; remaining sections of the original six-book al-Manṭiq are not yet transcribed and translated. The linked public-domain Arabic scan covers the full work."
+    "editionNotice": "36 local Arabic–English reading units; only selected sections of al-Manṭiq's six original books are present."
   },
   "sources": [
     {
@@ -490,6 +490,69 @@
         "page": "59–59",
         "url": "https://lib.rafed.net/view.php?b_id=1604&page=59&type=c_fbook"
       }
+    },
+    {
+      "id": "M-K-05",
+      "stage": "K",
+      "chapter": 4,
+      "title": "Concept and instance",
+      "arabicTitle": "المفهوم والمصداق",
+      "arabic": "(المفهوم): نفس المعنى بما هو، أي نفس الصورة الذهنية المنتزعة من حقائق الأشياء.\n\nو(المصداق): ما ينطبق عليه المفهوم، أو حقيقة الشيء الذي تنتزع منه الصورة الذهنية (المفهوم).\n\nفالصورة الذهنية لمسمّى (محمد) مفهوم جزئي، والشخص الخارجي الحقيقي مصداقه. والصورة الذهنية لمعنى (الحيوان) مفهوم كلّي، وأفراده الموجودة وما يدخل تحته من الكلّيات كالإنسان والفرس والطير مصاديقه. والصورة الذهنية لمعنى (العدم) مفهوم كلّي، وما ينطبق عليه وهو العدم الحقيقي مصداقه ... وهكذا.\n\n(لفت نظر): يعرف من المثال الأوّل أنّ المفهوم قد يكون جزئيّاً حقيقيّاً وإضافيّاً. ويعرف من الثالث أنّ المصداق لا يجب أن يكون من الأمور الموجودة والحقائق العينيّة، بل المصداق هو كلّ ما ينطبق عليه المفهوم وإن كان أمراً عدميّاً لا تحقّق له في الأعيان.",
+      "english": "A **concept** (*mafhūm*) is the meaning itself considered as such: the mental form abstracted from the realities of things.\n\nAn **instance** (*miṣdāq*) is whatever the concept applies to, or the reality of the thing from which the mental form—the concept—is abstracted.\n\nThus the mental form signified by “Muḥammad” is a particular concept, whereas the actual person outside the mind is its instance. The mental form signified by “animal” is a universal concept, whose instances include existing individual animals and such universals falling under it as human being, horse and bird. The mental form signified by “non-existence” is a universal concept; what it applies to—non-existence itself—is its instance, and so on.\n\n**A point to notice:** the first example shows that a concept can be both a real and a relative particular. The third shows that an instance need not be a real, existing extramental thing. An instance is whatever a concept applies to, even if that is a privative or non-existent matter with no concrete realization.",
+      "notes": [
+        {
+          "type": "Conceptual note",
+          "text": "Miṣdāq is logical instantiation or what falls under a concept; it is not in every case an independently existing extra-mental object. Muẓaffar explicitly uses ʿadam as an example."
+        }
+      ],
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf, 1402 AH, searchable Arabic transcription; 1968 NYU ACO scan registered for separate printed collation",
+        "page": "61",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=61&type=c_fbook"
+      },
+      "status": "working-translation"
+    },
+    {
+      "id": "M-K-06",
+      "stage": "K",
+      "chapter": 5,
+      "title": "Concept as title, its referent, and two modes of predication",
+      "arabicTitle": "العنوان والمعنون أو دلالة المفهوم على مصداقه",
+      "arabic": "إذا حكمت على شيء بحكم قد يكون نظرك في الحكم مقصوراً على المفهوم وحده، بأن يكون هو المقصود في الحكم، كما تقول: (الإنسان: حيوان ناطق)، فيقال للإنسان حينئذ: الإنسان بالحمل الأوّلي.\n\nوقد يتعدّى نظرك في الحكم إلى أبعد من ذلك، فتنظر إلى ما وراء المفهوم، بأن تلاحظ المفهوم لتجعله حاكياً عن مصداقه ودليلاً عليه، كما تقول: (الإنسان ضاحك) أو (الإنسان في خسر)، فتشير بمفهوم الإنسان إلى أشخاص أفراده وهي المقصودة في الحكم، وليس ملاحظة المفهوم في الحكم وجعله موضوعاً إلا للتوصّل إلى الحكم على الأفراد. فيسمّى المفهوم حينئذ (عنواناً)، والمصداق (معنوناً). ويقال لهذا الإنسان: الإنسان بالحمل الشائع.\n\nولأجل التفرقة بين النظرين نلاحظ الأمثلة الآتية:\n\n١ ـ إذا قال النحاة: «الفعل لا يخبر عنه»، فقد يعترض عليهم في بادئ الرأي، فيقال لهم: هذا القول منكم إخبار عن الفعل، فكيف تقولون لا يخبر عنه؟\n\nوالجواب: إنّ الذي وقع في القضيّة مخبراً عنه وموضوعاً في القضيّة هو مفهوم الفعل، ولكن ليس الحكم له بما هو مفهوم، بل جعل عنواناً وحاكياً عن مصاديقه وآلة لملاحظتها، والحكم في الحقيقة راجع للمصاديق نحو «ضرب» و«يضرب». فالفعل الذي له هذا الحكم حقيقة هو الفعل بالحمل الشائع.\n\n٢ ـ وإذا قال المنطقي: «الجزئي يمتنع صدقه على كثيرين»، فقد يعترض فيقال له: الجزئي يصدق على كثيرين، لأنّ هذا الكتاب جزئي ومحمد جزئي وعلي جزئي ومكة جزئي، فكيف قلتم يمتنع صدقه على كثيرين؟\n\nوالجواب: مفهوم الجزئي، أي الجزئي بالحمل الأوّلي، كلّي لا جزئي، فيصدق على كثيرين؛ ولكن مصداقه، أي حقيقة الجزئي، يمتنع صدقه على الكثير، فهذا الحكم بالامتناع للجزئي بالحمل الشائع، لا للجزئي بالحمل الأوّلي الذي هو كلّي.\n\n٣ ـ وإذا قال الأصولي: «اللفظ المجمل: ما كان غير ظاهر المعنى»، فقد يعترض في بادئ الرأي فيقال له: إذا كان المجمل غير ظاهر المعنى فكيف جاز تعريفه، والتعريف لا يكون إلا لما كان ظاهراً معناه؟\n\nوالجواب: مفهوم المجمل، أي المجمل بالحمل الأوّلي، مبيّن ظاهر المعنى، لكن مصداقه، أي المجمل بالحمل الشائع، كاللفظ المشترك المجرّد عن القرينة، غير ظاهر المعنى. وهذا التعريف للمجمل بالحمل الشائع.",
+      "english": "When predicating something of a subject, one may have in view only its concept, making the concept itself what the judgment concerns. Thus, when one says, “A human being is a rational animal,” the expression “human being” is taken by **primary predication** (*al-ḥaml al-awwalī*).\n\nOne may instead look beyond the concept to what it represents. In saying “The human being laughs” or “The human being is in loss,” the concept of humanity points to individual humans, who are the real subjects intended by the judgment. The concept is introduced into the proposition only to enable a judgment about those individuals. In this use the concept is termed a **title** (*ʿunwān*) and its instance the **thing entitled** (*muʿanwan*); the predication is **commonly accepted or common predication** (*al-ḥaml al-shāʾiʿ*).\n\nThree examples make the distinction clearer.\n\n**1.** Grammarians say, “One cannot predicate something of a verb.” An objector may reply: “But you have just predicated something of the verb!” The answer is that although the concept *verb* appears as the grammatical subject of the proposition, the judgment concerns not the concept as such but the individual verbs it signifies, such as *ḍaraba* (“he struck”) and *yaḍribu* (“he strikes”). It is a verb under common predication that has the property in question.\n\n**2.** A logician says, “A particular cannot apply to many.” An objector replies that the term “particular” applies to this book, Muḥammad, ʿAlī and Mecca. The reply is that the *concept of particularity*, particular under primary predication, is itself universal, and so applies to many things. But an *instance* of the particular is incapable of applying to many. The impossibility concerns the particular under common predication, not the universal concept of particularity under primary predication.\n\n**3.** A theorist of legal principles says that an ambiguous expression (*mujmal*) is one whose meaning is not clear. An objection arises: how could we define something whose meaning is unclear, since definition presupposes a clear meaning? The concept “ambiguous expression,” considered under primary predication, is itself clear and intelligible. What is obscure is an instance under common predication, such as a homonymous expression given without any contextual indicator selecting its intended meaning. The definition concerns the latter.",
+      "notes": [
+        {
+          "type": "Translation note",
+          "text": "The authorial source presents three numbered objections and replies; all three are preserved. The passage distinguishes first/primary predication from common predication and should not be flattened into a generic distinction between mental and physical objects."
+        }
+      ],
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf, 1402 AH, searchable Arabic transcription; 1968 NYU ACO scan registered for separate printed collation",
+        "page": "61–62",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=61&type=c_fbook"
+      },
+      "status": "working-translation"
+    },
+    {
+      "id": "M-K-07",
+      "stage": "K",
+      "chapter": 6,
+      "title": "The four relations between universal concepts",
+      "arabicTitle": "النسب الأربع",
+      "arabic": "تقدّم في الباب الأوّل انقسام الألفاظ إلى مترادفة ومتباينة. والمقصود بالتباين هناك التباين بحسب المفهوم، أي إنّ معانيها متغايرة. وهنا سنذكر أنّ من جملة النسب التباين، والمقصود به التباين بحسب المصداق.\n\nفما كنّا نصطلح عليه هناك بالمتباينة، هنا نقسم النسبة بينها إلى أربعة أقسام، وقسم منها المتباينة، لاختلاف الجهة المقصودة في البحثين؛ فإنّا كنّا نتكلّم هناك عن تقسيم الألفاظ بالقياس إلى تعدّد المعنى واتّحاده. أمّا هنا فالكلام عن النسبة بين المعاني باعتبار اجتماعها في المصداق وعدمه. ولا يتصوّر هذا البحث إلا بين المعاني المتغايرة، أي المعاني المتباينة بحسب المفهوم، إذ لا يتصوّر فرض النسبة بين المفهوم ونفسه.\n\nفنقول: كلّ معنى إذا نسب إلى معنى آخر يغايره ويباينه مفهوماً، فإمّا أن يشارك كلّ منهما الآخر في تمام أفرادهما وهما المتساويان، وإمّا أن يشارك كلّ منهما الآخر في بعض أفراده وهما اللذان بينهما نسبة العموم والخصوص من وجه، وإمّا أن يشارك أحدهما الآخر في جميع أفراده دون العكس وهما اللذان بينهما نسبة العموم والخصوص مطلقاً، وإمّا أن لا يشارك أحدهما الآخر أبداً وهما المتباينان. فالنسب بين المفاهيم أربع: التساوي، والعموم والخصوص مطلقاً، والعموم والخصوص من وجه، والتباين.\n\n١ ـ (نسبة التساوي): وتكون بين المفهومين اللذين يشتركان في تمام أفرادهما، كالإنسان والضاحك، فإنّ كلّ إنسان ضاحك وكلّ ضاحك إنسان. ونقرّبهما إلى الفهم بتشبيههما بالخطّين المتساويين اللذين ينطبق أحدهما على الآخر تمام الانطباق. ويمكن وضع نسبة التساوي على هذه الصورة: ب = جـ. فهذه العلامة (=) علامة على التساوي كما في العلوم الرياضيّة، والطرفان (ب، جـ) رمزان للمفهومين المتساويين.\n\n٢ ـ (نسبة العموم والخصوص مطلقاً): وتكون بين المفهومين اللذين يصدق أحدهما على جميع ما يصدق عليه الآخر وعلى غيره؛ ويقال للأوّل (الأعمّ مطلقاً) وللثاني (الأخصّ مطلقاً)، كالحيوان والإنسان والمعدن والفضّة؛ فكلّ ما صدق عليه الإنسان يصدق عليه الحيوان ولا عكس. ونقرّبهما إلى الفهم بتشبيههما بالخطّين غير المتساويين فينطبق الأكبر على تمام الأصغر ويزيد عليه. ويمكن وضع النسبة: ب > جـ، أي «ب أعمّ مطلقاً من جـ»، ويصحّ قلبها: جـ < ب، أي «جـ أخصّ مطلقاً من ب».\n\n٣ ـ (نسبة العموم والخصوص من وجه): وتكون بين المفهومين اللذين يجتمعان في بعض مصاديقهما ويفترق كلّ منهما عن الآخر في مصاديق تخصّه، كالطير والأسود؛ فإنّهما يجتمعان في الغراب لأنّه طير وأسود، ويفترق الطير عن الأسود في الحمام مثلاً، والأسود عن الطير في الصوف الأسود مثلاً. ويقال لكلّ منهما أعمّ من وجه وأخصّ من وجه. ونقرّبهما إلى الفهم بتشبيههما بالخطّين المتقاطعين يلتقيان في نقطة مشتركة ويفترق كلّ منهما في نقاط تخصّه، ويمكن وضع النسبة: ب * جـ، أي بينهما عموم وخصوص من وجه.\n\n٤ ـ (نسبة التباين): وتكون بين المفهومين اللذين لا يجتمع أحدهما مع الآخر في فرد من الأفراد أبداً. وأمثلته جميع المعاني المتقابلة التي تقدّمت في بحث التقابل، وكذا بعض المعاني المتخالفة مثل الحجر والحيوان. ونشبّهها بالخطّين المتوازيين اللذين لا يلتقيان أبداً مهما امتدّا؛ ويمكن وضع التباين: ب // جـ، أي إنّ ب يباين جـ.",
+      "english": "Book I distinguished synonymous expressions from expressions with different meanings. There, difference (*tabāyun*) was **difference in concept**: the meanings of the terms were distinct. Here, difference is one of the four relations, but it concerns **difference in extension or instances**.\n\nConceptually distinct terms may therefore have any of four relations according to whether they apply to the same instances. This examination makes sense only for concepts already different in meaning: one cannot posit a relation between a concept and itself. The four relations are **coextensiveness** (*tasāwī*), **absolute generality and specificity**, **generality and specificity in some respects**, and **complete disjointness** (*tabāyun*).\n\n**1. Coextensiveness:** Two concepts apply to precisely the same individuals. “Human being” and “capable of laughter” are the author's example: all human beings laugh in the relevant predicable sense, and all beings characterized as laughing are human. They resemble equal, coincident lines. Symbolically, *B = J*.\n\n**2. Absolute generality and specificity:** All instances of one concept fall under the other, but not conversely. Thus *animal* is absolutely more general than *human*, and *mineral* more general than *silver*. As a geometrical analogy, a longer line covers the whole shorter line and extends beyond it. Thus *B > J* reads “B is absolutely more general than J”; conversely *J < B* reads “J is absolutely more specific than B.”\n\n**3. Generality and specificity in some respects:** The two concepts overlap in some instances while each also has instances excluded from the other. *Bird* and *black* coincide in a crow; a pigeon is a bird but not black, while black wool is black but not a bird. Each concept is broader in one respect and narrower in another. They are like intersecting lines, meeting at a common point but diverging elsewhere. The author's notation is *B * J*.\n\n**4. Complete disjointness:** The concepts do not share even one instance. This includes opposed meanings treated earlier, and also some different concepts such as *stone* and *animal*. They resemble parallel lines that never meet, however far extended. The author's notation is *B // J*.\n\nThe classification is about the extension of different concepts, not just the spelling or semantic difference of their terms.",
+      "notes": [
+        {
+          "type": "Editorial symbols",
+          "text": "The symbols =, >, <, *, and // retain the author's conventional notation but are not used in place of his prose. The example 'human being / laughing' is a traditional logical proprium, not a claim about manifest laughter at every moment."
+        }
+      ],
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf, 1402 AH, searchable Arabic transcription; 1968 NYU ACO scan registered for separate printed collation",
+        "page": "63–65",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=63&type=c_fbook"
+      },
+      "status": "working-translation"
     },
     {
       "id": "M-Q-01",
