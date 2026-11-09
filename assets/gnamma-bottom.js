@@ -30,7 +30,9 @@ essays:[{items:[
 research:[{items:[
  {name:"Bidāyat al-Mujtahid · Edition I: Law and Legal Reasoning",href:"research/bidaya/law/"},
  {name:"Texts in Time · Islamic Intellectual Atlas",href:"research/intellectual-atlas/"},
- {name:"Tajrīd · Comparative Critical Sourcebook",href:"research/tajrid/"}
+ {name:"Tajrīd · Comparative Critical Sourcebook",href:"research/tajrid/"},
+ {name:"Late Avicennism · After Asfār — Contextual Source Reader",href:"research/avicennism/"},
+ {name:"Sīrah and the Making of Islamic Civilization · Illustrated Matn and Sharḥ",href:"research/seerah/"}
 ]}],
 about:[{items:[
  {name:"Purpose & approach",href:"about/purpose/"},
