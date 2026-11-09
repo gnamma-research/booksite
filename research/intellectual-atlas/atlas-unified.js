@@ -28,8 +28,8 @@ const TYPENAMES={commentary:"Commentary",gloss:"Gloss",component:"Constituent se
 textual_use:"Textual use",author_reference:"Author reference",critique:"Critical engagement",reported_doctrine:"Reported teaching",
 reported_source:"Source testimony",exchange:"Scholarly exchange",broad_influence:"Qualified connection",hypothesis:"Hypothesis",
 claimed_lineage:"Claimed lineage",abridgement:"Abridgement",translation:"Translation",other:"Relationship"};
-const state={subject:"all",view:"timeline",school:"all",search:"",source:"all",family:"",edgeType:"all",certainty:"all",
-from:-600,to:2026,selected:"",evidence:"",cluster:"",clusterPage:1,bookPage:1,depth:1,quickLimit:8,region:"",searchOpen:false};
+const state={subject:"all",view:"geography",school:"all",search:"",source:"all",family:"",edgeType:"all",certainty:"all",
+from:-600,to:2026,selected:"",evidence:"",cluster:"",clusterPage:1,bookPage:1,depth:1,quickLimit:8,region:"",searchOpen:false,advancedOpen:false};
 const data={all:[],byId:new Map(),edges:[],in:new Map(),out:new Map(),families:[],sources:new Map(),history:[],
 errors:[],counts:{audited:0,openiti:0,alreq:0,pinned:0,relations:0},licences:[],loadReady:false};
 const renderCache={clusters:new Map(),workMap:new Map(),current:[],filtered:[],lanes:[],network:null};
@@ -153,12 +153,13 @@ function prepare(){
  data.loadReady=true;
 }
 async function load(){
- const tasks=["embedded canonical atlas","corpora/expanded-bibliography.json","corpora/manuscript-full.json","corpora/registry.json","corpora/early-jurists.json"];
+ const tasks=["embedded canonical atlas","corpora/expanded-bibliography.json","corpora/manuscript-full.json","corpora/registry.json","corpora/early-jurists.json","corpora/geo-events.json"];
  const r=await Promise.allSettled(tasks.map((p,i)=>i===0?Promise.resolve().then(()=>JSON.parse(document.querySelector("script[data-atlas]").textContent)):
  fetch(p).then(resp=>{if(!resp.ok)throw Error(p+" "+resp.status);return resp.json()})));
  if(r[0].status!=="fulfilled"){ROOT.innerHTML='<section class="loading"><h1>Atlas sources unavailable</h1><p>The audited historical dataset could not be loaded. <a href="corpora/">Open the bibliography</a> or reload the atlas.</p></section>';return;}
  const o=r.map((x,i)=>{if(x.status==="fulfilled")return x.value;data.errors.push(tasks[i]+": "+String(x.reason?.message||x.reason));return null;});
- loadCanonical(o[0]);loadMetadata(o[1],o[2],o[3],o[4]);prepare();
+ loadCanonical(o[0]);loadMetadata(o[1],o[2],o[3],o[4]);prepare();window.GNAMMAGeography?.setData(o[5]||{events:[],places:[]});
+ window.GNAMMAGeography?.init(ROOT,{refresh:()=>{writeHash();render();},select:id=>chooseWork(id,true)});
  readHash();
  if(!data.byId.has(state.selected))selectFeatured(false);
  render(true);
@@ -168,6 +169,7 @@ function initialSubject(subject){
  state.subject=subject;
  state.school="all";state.family="";state.cluster="";state.region="";
  state.bookPage=1;state.clusterPage=1;state.search="";
+ window.GNAMMAGeography?.resetScope?.();
  if(subject==="intellectual"){state.from=-600;state.to=2026}
  else {state.from=630;state.to=1920}
  selectFeatured(false);
@@ -180,9 +182,9 @@ function readHash(){
  if(subject==="fiqh"&&p.get("source_tab")==="method")subject="usul";
  if(subject==="philosophy"||subject==="kalam")subject="intellectual";
  if(NAMES[subject])state.subject=subject;
- const view=p.get("mode")||legacy||"timeline";
+ const view=p.get("mode")||legacy||"geography";
  state.view=({sources:"timeline",explorer:"network",relations:"network",audit:"catalogue",network:"network",
-  principal:"principal",summary:"principal",map:"timeline",chronology:"timeline",geography:"geography",catalogue:"catalogue"})[view]||"timeline";
+  principal:"principal",summary:"principal",map:"geography",chronology:"timeline",geography:"geography",regions:"regions",catalogue:"catalogue"})[view]||"geography";
  const selected=p.get("work_id")||p.get("gnx_work")||p.get("work")||"";
  state.selected=selected&&data.byId.has(selected)?selected:data.byId.has("c:"+selected)?"c:"+selected:"";
  state.family=p.get("family")||p.get("text_family")||p.get("gnx_family")||"";
@@ -203,6 +205,7 @@ function readHash(){
  state.region=p.get("place")||"";
  state.cluster="";state.clusterPage=1;state.bookPage=1;state.quickLimit=8;state.evidence="";
  if(!state.selected)selectFeatured(false);
+ window.GNAMMAGeography?.readHash();
 }
 function writeHash(push=false){
  const p=new URLSearchParams();
@@ -216,6 +219,8 @@ function writeHash(push=false){
  if(state.certainty!=="all")p.set("certain","1");
  if(state.region)p.set("place",state.region);
  if(state.from!==-600||state.to!==2026){p.set("from",String(Math.round(state.from)));p.set("to",String(Math.round(state.to)))}
+ const geo=window.GNAMMAGeography?.urlState?.()||{};
+ for(const [k,v] of Object.entries(geo))if(v&&v!=="all"&&v!=="both"&&v!=="0")p.set(k,v);
  const hash="#"+p.toString();
  if(location.hash!==hash)try{history[push?"pushState":"replaceState"](null,"",hash)}catch{location.hash=hash}
 }
@@ -279,12 +284,12 @@ function sceneTitle(){
  return state.subject==="all"?"The whole corpus":NAMES[state.subject]||"Historical texts";
 }
 function subjectControls(){
- return '<div class="subjects" role="group" aria-label="Select intellectual science">'+
- SUBJECTS.map(([id,label])=>'<button type="button" data-subject="'+id+'" aria-pressed="'+(id===state.subject)+'">'+safe(label)+'</button>').join("")+'</div>';
+ return '<label class="hanafi-science"><span>Explore science</span><select data-science aria-label="Choose a scholarly science">'+
+ opts(SUBJECTS,state.subject)+'</select></label>';
 }
 function viewControls(){
- const names=[["timeline","Historical map"],["network","Source network"],["principal","Principal texts"],["geography","Regions"],["catalogue","Catalogue"]];
- return '<div class="viewtabs" role="tablist" aria-label="Explore view">'+names.map(([v,title])=>
+ const names=[["geography","By century"],["regions","By region"],["network","Source network"],["timeline","Book timeline"],["principal","Principal texts"],["catalogue","Catalogue"]];
+ return '<div class="viewtabs hanafi-tabs" role="tablist" aria-label="Explore historical sources">'+names.map(([v,title])=>
  '<button role="tab" type="button" data-view="'+v+'" aria-selected="'+(state.view===v)+'">'+title+'</button>').join("")+'</div>';
 }
 function opts(entries,current){
@@ -292,39 +297,42 @@ function opts(entries,current){
 }
 function toolsUI(){
  const yearsEnabled=state.view==="timeline"||state.view==="principal";
- const selectors='<div class="subcontrols"><label class="filteritem">School / historical circle'+
+ const filters='<div class="subcontrols"><label class="filteritem">School / historical circle'+
  '<select data-school '+(!["fiqh","usul"].includes(state.subject)?"disabled":"")+'>'+
  opts(Object.entries(SCHOOLS),state.school)+'</select></label>'+
  '<label class="filteritem">Source register<select data-source>'+
- opts([["all","All source records"],["audited","Audited history"],["OpenITI","OpenITI metadata"],["Alreq manuscript catalogue","Manuscript catalogue"],["pinned","Pinned sources"]],state.source)+
- '</select></label>'+
+ opts([["all","All source records"],["audited","Audited history"],["OpenITI","OpenITI metadata"],["Alreq manuscript catalogue","Manuscript catalogue"],["pinned","Pinned sources"]],state.source)+'</select></label>'+
  '<label class="filteritem">Textual family<select data-family '+(state.subject!=="intellectual"?"disabled":"")+'>'+
  opts([["","All research families"],...data.families.map(f=>[f.id,f.label])],state.family)+'</select></label>'+
  '<label class="filteritem">Relationship<select data-edge-type>'+
- opts([["all","All documented"],["commentary","Commentary / gloss"],["critique","Criticism"],["textual_use","Textual use"],["translation","Translation"]],state.edgeType)+
- '</select></label>'+
+ opts([["all","All documented"],["commentary","Commentary / gloss"],["critique","Criticism"],["textual_use","Textual use"],["translation","Translation"]],state.edgeType)+'</select></label>'+
  '<label class="filteritem">Evidence<select data-certainty>'+opts([["all","Include qualified"],["verified","Hide provisional"]],state.certainty)+'</select></label>'+
- '<div class="year-controls"><button data-pan="-1" aria-label="Earlier years" title="Earlier years" '+(!yearsEnabled?"disabled":"")+'>←</button>'+
+ '<div class="year-controls"><button data-pan="-1" aria-label="Earlier years" '+(!yearsEnabled?"disabled":"")+'>←</button>'+
  '<button data-zoom="0.60" aria-label="Zoom in years" '+(!yearsEnabled?"disabled":"")+'>＋</button>'+
  '<button data-zoom="1.65" aria-label="Zoom out years" '+(!yearsEnabled?"disabled":"")+'>－</button>'+
- '<button data-pan="1" aria-label="Later years" title="Later years" '+(!yearsEnabled?"disabled":"")+'>→</button>'+
+ '<button data-pan="1" aria-label="Later years" '+(!yearsEnabled?"disabled":"")+'>→</button>'+
  '<label class="filteritem">From (−BCE / CE)<input data-year-from type="number" step="1" value="'+Math.round(state.from)+'" '+(!yearsEnabled?"disabled":"")+'></label>'+
- '<span class="years-between">–</span>'+
  '<label class="filteritem">To (−BCE / CE)<input data-year-to type="number" step="1" value="'+Math.round(state.to)+'" '+(!yearsEnabled?"disabled":"")+'></label>'+
- '<button data-apply-years '+(!yearsEnabled?"disabled":"")+'>Apply</button><button data-reset-years '+(!yearsEnabled?"disabled":"")+'>All years</button></div>'+
- '</div>';
- return '<section class="control-shell" aria-label="Unified atlas controls"><div class="primary-controls">'+
- '<div class="search-holder"><label for="gn-search">Find any work or scholar · Arabic or Latin</label><input id="gn-search" type="search" autocomplete="off" placeholder="e.g. al-Ishārāt, الهداية, Ibn ʿArabī…" value="'+safe(state.search)+'" aria-controls="gn-search-pop" aria-expanded="'+state.searchOpen+'">'+
- '<div class="search-pop" id="gn-search-pop" '+(!state.searchOpen?"hidden":"")+'>*</div></div>'+viewControls()+'</div>'+
- selectors+'<p class="filter-explanation"><strong>'+safe(sceneTitle())+'</strong> · All sciences use this same map and controls. Dated OpenITI records are positioned by the author’s death; unplaced manuscripts are retained without invented dates.</p></section>';
+ '<button data-apply-years '+(!yearsEnabled?"disabled":"")+'>Apply</button><button data-reset-years '+(!yearsEnabled?"disabled":"")+'>All years</button></div></div>';
+ const input='<div class="search-holder"><label for="gn-search">Find a work or scholar · Latin or Arabic</label>'+
+ '<input id="gn-search" type="search" autocomplete="off" placeholder="Search title, author, or Arabic script…" value="'+safe(state.search)+'" aria-controls="gn-search-pop" aria-expanded="'+state.searchOpen+'">'+
+ '<div class="search-pop" id="gn-search-pop" '+(!state.searchOpen?"hidden":"")+'>*</div></div>';
+ return '<section class="control-shell hanafi-toolbar" aria-label="Atlas navigation">'+
+ '<div class="primary-controls">'+subjectControls()+input+'</div>'+
+ viewControls()+
+ '<details class="atlas-advanced"'+(state.advancedOpen?' open':'')+'><summary>Advanced filters, evidence and date range</summary>'+
+ filters+'<p class="filter-explanation">All sciences share these controls. Catalogue entries lacking dates or verified locations are never silently placed.</p></details>'+
+ '</section>';
 }
 function hero(){
- return '<section class="hero"><div class="hero-top"><div><div class="eyebrow">GNAMMA RESEARCH · HISTORICAL KNOWLEDGE ATLAS</div>'+
- '<h1>Texts in Time</h1><p class="hero-desc">Follow a text through its sources, commentaries and reception. Move from the history of a science to a single work, with each asserted relationship open to scrutiny.</p></div>'+
+ const count=window.GNAMMAGeography?.debug?.()||{};
+ return '<section class="hero hanafi-hero"><div class="eyebrow">MAP <span lang="ar" dir="rtl">الخريطة</span> · GNAMMA RESEARCH</div>'+
+ '<h1>Where scholarship took shape</h1>'+
+ '<p class="hero-desc">Explore authors, texts, places and centuries across the Islamic sciences. Follow a source to its commentary and examine the evidence behind every connection.</p>'+
  '<div class="hero-metrics"><span><strong>'+fnum(data.counts.audited)+'</strong><small>audited entries</small></span>'+
- '<span><strong>'+fnum(data.counts.openiti+data.counts.alreq)+'</strong><small>bibliographic records</small></span>'+
- '<span><strong>'+fnum(data.counts.relations)+'</strong><small>recorded links</small></span></div></div>'+
- '<div class="hero-link">The same historical map now covers every science. <a href="WORK_EXPLORER.md">Read the editorial method</a>.</div></section>';
+ '<span><strong>'+fnum(data.counts.openiti+data.counts.alreq)+'</strong><small>source catalogue records</small></span>'+
+ '<span><strong>'+fnum(count.events||0)+'</strong><small>researched place events</small></span></div>'+
+ '</section>';
 }
 function lanesFor(nodes){
  if(state.subject==="all")return SUBJECTS.filter(x=>x[0]!=="all").map(([id,label])=>({id,label,nodes:nodes.filter(n=>n.subjects.includes(id))})).filter(l=>l.nodes.length);
@@ -688,17 +696,21 @@ function evidencePanel(e){
  '<p class="source-summary">An arrow never implies complete doctrinal agreement or an unverified transmission chain.</p></section>';
 }
 function plotView(){
+ if(state.view==="geography"||state.view==="regions"){
+  const markup=window.GNAMMAGeography?.render(filtered(false),state.subject,state.view)||
+    '<div class="warning">Geographical evidence module unavailable; consult the documented source catalogue.</div>';
+  return '<section class="plot plot-geography" aria-label="Geographical atlas of authors and texts">'+markup+'</section>';
+ }
  let v;
  if(state.view==="timeline")v=viewTimeline();
  else if(state.view==="network")v=viewNetwork();
  else if(state.view==="principal")v=viewPrincipal();
- else if(state.view==="geography")v=viewGeography();
  else v=viewCatalogue();
- return '<section class="plot" aria-label="Atlas map and scholarly networks"><header class="plot-head"><div><h2>'+safe(v.title)+'</h2>'+
+ return '<section class="plot" aria-label="Maps and textual networks"><header class="plot-head"><div><h2>'+safe(v.title)+'</h2>'+
  '<p>'+safe(v.sub||"")+'</p></div><div class="plot-actions">'+
  (state.family?'<button data-clear-family>Clear textual family</button>':"")+
  '<button data-reset>Reset subject filters</button></div></header>'+v.html+
- (data.errors.length?'<p class="warning">Some source registers are unavailable: '+safe(data.errors.join("; "))+'. Existing recorded works remain accessible.</p>':"")+'</section>';
+ (data.errors.length?'<p class="warning">A source register is unavailable: '+safe(data.errors.join("; "))+'. The audited records remain accessible.</p>':"")+'</section>';
 }
 function searchResults(q){
  const words=normal(q);if(!words)return [];
@@ -721,10 +733,11 @@ function fillSearch(){
 function render(first=false){
  if(!data.loadReady)return;
  if(!data.byId.has(state.selected))selectFeatured(false);
- ROOT.innerHTML=hero()+subjectControls()+toolsUI()+
- '<div class="workplace">'+plotView()+
- '<aside class="sidebar" aria-label="Work and evidence details"><div class="side-head"><h2>Selected work · evidence</h2>'+
- '<button type="button" data-close-side>Clear focus</button></div><div class="side-content">'+recordPanel()+'</div></aside></div>';
+ const geographic=state.view==="geography"||state.view==="regions";
+ ROOT.innerHTML=hero()+toolsUI()+
+ '<div class="workplace'+(geographic?' geo-mode':'')+'">'+plotView()+
+ (geographic?'':'<aside class="sidebar" aria-label="Work and evidence details"><div class="side-head"><h2>Selected work · evidence</h2>'+
+ '<button type="button" data-close-side>Clear focus</button></div><div class="side-content">'+recordPanel()+'</div></aside>')+'</div>';
  fillSearch();
  if(first)writeHash(false);
 }
@@ -737,8 +750,9 @@ function changeRange(a,b){
 }
 function onClick(e){
  const el=e.target.closest("button,[role=button]");if(!el||!ROOT.contains(el))return;
+ const summary=e.target.closest(".atlas-advanced summary");if(summary){state.advancedOpen=!state.advancedOpen;return;}
  if(el.hasAttribute("data-subject")){
-  initialSubject(el.getAttribute("data-subject"));state.view="timeline";writeHash(true);render();return;
+  initialSubject(el.getAttribute("data-subject"));writeHash(true);render();return;
  }
  if(el.hasAttribute("data-view")){
   state.view=el.getAttribute("data-view");state.cluster="";state.evidence="";
@@ -786,6 +800,7 @@ function onClick(e){
 }
 function onChange(e){
  const t=e.target;if(!ROOT.contains(t))return;
+ if(t.hasAttribute("data-science")){initialSubject(t.value);writeHash(true);render();return}
  const mapped={"data-school":"school","data-source":"source","data-family":"family","data-edge-type":"edgeType","data-certainty":"certainty"};
  for(const [attr,key] of Object.entries(mapped))if(t.hasAttribute(attr)){
   state[key]=t.value;state.cluster="";state.bookPage=1;state.clusterPage=1;
@@ -812,7 +827,7 @@ ROOT.addEventListener("change",onChange);
 ROOT.addEventListener("input",onInput);
 ROOT.addEventListener("keydown",e=>{
  const el=e.target.closest("[role=button]");
- if(el&&["Enter"," "].includes(e.key)){e.preventDefault();el.click();}
+ if(el&&["Enter"," "].includes(e.key)){e.preventDefault();if(typeof el.click==="function")el.click();else el.dispatchEvent(new MouseEvent("click",{bubbles:true,cancelable:true}));}
  if(e.key==="Escape"){state.searchOpen=false;fillSearch()}
  if(e.key==="Enter"&&e.target?.id==="gn-search"&&state.search.trim()){
   const results=searchResults(state.search);

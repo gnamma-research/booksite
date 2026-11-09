@@ -1,0 +1,1095 @@
+{
+  "schema_version": "1.0.0",
+  "created": "2026-11-09",
+  "basis": "Curated specific work-composition and author-biographical events; NOT a geolocation of all 6,000 catalogue records.",
+  "cartographic_method": "WGS84 modern city reference coordinates; base coastline geometry is the GSHHS coarse-resolution coastline through the Basemap dataset, simplified for SVG. Not historical boundaries or exact medieval buildings. Approximate locations and sources are flagged.",
+  "places": [
+    {
+      "id": "murcia",
+      "label": "Murcia",
+      "lat": 37.987,
+      "lon": -1.13,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "cordoba",
+      "label": "Córdoba",
+      "lat": 37.889,
+      "lon": -4.779,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "marrakesh",
+      "label": "Marrakesh",
+      "lat": 31.63,
+      "lon": -8.006,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "jaen",
+      "label": "Jaén",
+      "lat": 37.77,
+      "lon": -3.79,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "medina",
+      "label": "Medina",
+      "lat": 24.467,
+      "lon": 39.612,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "mecca",
+      "label": "Mecca",
+      "lat": 21.422,
+      "lon": 39.826,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "baghdad",
+      "label": "Baghdad",
+      "lat": 33.315,
+      "lon": 44.366,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "basra",
+      "label": "Basra",
+      "lat": 30.508,
+      "lon": 47.782,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "kufa",
+      "label": "Kufa",
+      "lat": 32.031,
+      "lon": 44.403,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "damascus",
+      "label": "Damascus",
+      "lat": 33.513,
+      "lon": 36.291,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "aleppo",
+      "label": "Aleppo",
+      "lat": 36.202,
+      "lon": 37.161,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "nawa",
+      "label": "Nawā",
+      "lat": 32.892,
+      "lon": 36.04,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "cairo",
+      "label": "Cairo",
+      "lat": 30.044,
+      "lon": 31.236,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "tus",
+      "label": "Ṭūs",
+      "lat": 36.487,
+      "lon": 59.596,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "nishapur",
+      "label": "Nishapur",
+      "lat": 36.214,
+      "lon": 58.797,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "bukhara",
+      "label": "Bukhara (Afshana vicinity)",
+      "lat": 39.768,
+      "lon": 64.422,
+      "coordinate_status": "approximate_site_or_vicinity"
+    },
+    {
+      "id": "rayy",
+      "label": "Rayy",
+      "lat": 35.603,
+      "lon": 51.442,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "isfahan",
+      "label": "Isfahan",
+      "lat": 32.653,
+      "lon": 51.668,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "hamadan",
+      "label": "Hamadan",
+      "lat": 34.798,
+      "lon": 48.515,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "herat",
+      "label": "Herat",
+      "lat": 34.349,
+      "lon": 62.203,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "konya",
+      "label": "Konya",
+      "lat": 37.874,
+      "lon": 32.494,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "shiraz",
+      "label": "Shiraz",
+      "lat": 29.61,
+      "lon": 52.531,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "kahak",
+      "label": "Kahak (near Qom)",
+      "lat": 34.38,
+      "lon": 50.87,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "qom",
+      "label": "Qom",
+      "lat": 34.641,
+      "lon": 50.876,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "gorgan",
+      "label": "Gorgan (Jurjān)",
+      "lat": 36.845,
+      "lon": 54.44,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "jurjaniyya",
+      "label": "Jurjāniyya / Gurgānj (approx.)",
+      "lat": 42.32,
+      "lon": 59.15,
+      "coordinate_status": "approximate_site_or_vicinity"
+    },
+    {
+      "id": "samarkand",
+      "label": "Samarqand",
+      "lat": 39.654,
+      "lon": 66.959,
+      "coordinate_status": "modern_city_reference_point"
+    },
+    {
+      "id": "amol",
+      "label": "Āmul (Ṭabaristān)",
+      "lat": 36.471,
+      "lon": 52.355,
+      "coordinate_status": "modern_city_reference_point"
+    }
+  ],
+  "events": [
+    {
+      "id": "W-AV-SHIFA",
+      "entity": "work",
+      "place_id": "isfahan",
+      "place": "Isfahan",
+      "lat": 32.653,
+      "lon": 51.668,
+      "time_ah": null,
+      "precision": "city_reference_point",
+      "kind": "completed",
+      "time_status": "before",
+      "title": "Ibn Sīnā · al-Shifāʾ",
+      "work_id": "c:avicenna_shifa",
+      "citation_url": "https://plato.stanford.edu/entries/ibn-sina/",
+      "note": "Completed in Isfahan, as described in the Stanford Encyclopedia of Philosophy. The exact completion year is not fixed in this map; it must not be replaced by the author's death date (428 AH).",
+      "status": "source_attested"
+    },
+    {
+      "id": "W-AR-FUSUS",
+      "entity": "work",
+      "place_id": "damascus",
+      "place": "Damascus",
+      "lat": 33.513,
+      "lon": 36.291,
+      "time_ah": 627,
+      "precision": "city_reference_point",
+      "kind": "composition",
+      "title": "Ibn ʿArabī · Fuṣūṣ al-ḥikam",
+      "work_id": "c:ibnarabi_fusus",
+      "reader_ids": [
+        "ibn_arabi_fusus"
+      ],
+      "citation_url": "https://mail.ibnalarabi.com/english/works/?id=207",
+      "note": "The catalogue records composition in Damascus in 627 AH on the testimony of the work's introduction; this remains a source-reported date and place.",
+      "status": "source_attested"
+    },
+    {
+      "id": "W-AR-FUT1",
+      "entity": "work",
+      "place_id": "mecca",
+      "place": "Mecca",
+      "lat": 21.422,
+      "lon": 39.826,
+      "time_ah": 598,
+      "precision": "city_reference_point",
+      "kind": "begun",
+      "title": "Ibn ʿArabī · al-Futūḥāt, begun",
+      "work_id": "c:ibnarabi_futuhat",
+      "citation_url": "https://www.futmak.com/english/introduction/chapter-02/index.php",
+      "note": "Began composition in Mecca in 598 AH according to research on the two authorial recensions. Dating is approximate to the outset rather than the completion of every chapter.",
+      "status": "documented"
+    },
+    {
+      "id": "W-AR-FUT2",
+      "entity": "work",
+      "place_id": "damascus",
+      "place": "Damascus",
+      "lat": 33.513,
+      "lon": 36.291,
+      "time_ah": 629,
+      "precision": "city_reference_point",
+      "kind": "completed",
+      "title": "Ibn ʿArabī · al-Futūḥāt, first recension",
+      "work_id": "c:ibnarabi_futuhat",
+      "citation_url": "https://www.futmak.com/english/introduction/chapter-02/index.php",
+      "note": "First authorial version completed in Damascus, 629 AH; a subsequent recension followed.",
+      "status": "documented"
+    },
+    {
+      "id": "W-AR-FUT3",
+      "entity": "work",
+      "place_id": "damascus",
+      "place": "Damascus",
+      "lat": 33.513,
+      "lon": 36.291,
+      "time_ah": 636,
+      "precision": "city_reference_point",
+      "kind": "recension",
+      "title": "Ibn ʿArabī · al-Futūḥāt, revised recension",
+      "work_id": "c:ibnarabi_futuhat",
+      "citation_url": "https://www.futmak.com/english/introduction/chapter-02/index.php",
+      "note": "Second autographic version completed in 636 AH; the location reflects the Damascus final phase, not copying locations of all surviving witnesses.",
+      "status": "documented"
+    },
+    {
+      "id": "W-SAD-AS1",
+      "entity": "work",
+      "place_id": "kahak",
+      "place": "Kahak (near Qom)",
+      "lat": 34.38,
+      "lon": 50.87,
+      "time_ah": 1015,
+      "precision": "city_reference_point",
+      "kind": "begun",
+      "title": "Mullā Ṣadrā · al-Asfār, begun",
+      "work_id": "c:sadra_asfar",
+      "citation_url": "https://www.iranicaonline.org/articles/molla-sadra-sirazi/",
+      "note": "Encyclopaedia Iranica records the beginning of composition in Kahak in 1015 AH.",
+      "status": "documented"
+    },
+    {
+      "id": "W-SAD-AS2",
+      "entity": "work",
+      "place_id": "shiraz",
+      "place": "Shiraz",
+      "lat": 29.61,
+      "lon": 52.531,
+      "time_ah": 1038,
+      "precision": "city_reference_point",
+      "kind": "completed",
+      "title": "Mullā Ṣadrā · al-Asfār, completed",
+      "work_id": "c:sadra_asfar",
+      "citation_url": "https://www.iranicaonline.org/articles/molla-sadra-sirazi/",
+      "note": "Completion in Shiraz given as 1038 AH in Iranica. Its printed Gregorian equivalent is inconsistent in the source, so the AH date is retained.",
+      "status": "source_attested"
+    },
+    {
+      "id": "W-GHA-TAH",
+      "entity": "work",
+      "place_id": "baghdad",
+      "place": "Baghdad",
+      "lat": 33.315,
+      "lon": 44.366,
+      "time_ah": 488,
+      "precision": "city_reference_point",
+      "kind": "probable_composition_setting",
+      "title": "al-Ghazālī · Tahāfut, Baghdad period",
+      "work_id": "c:ghazali_tahafut",
+      "citation_url": "https://plato.stanford.edu/entries/al-ghazali/",
+      "note": "Ghazālī worked on the Tahāfut during his Baghdad scholarly career; this pins the documented professional context, not a precisely attested composition address.",
+      "status": "qualified"
+    },
+    {
+      "id": "A-AVI-B",
+      "entity": "author",
+      "place_id": "bukhara",
+      "place": "Bukhara (Afshana vicinity)",
+      "lat": 39.768,
+      "lon": 64.422,
+      "time_ah": 370,
+      "precision": "city_reference_point",
+      "kind": "birth_vicinity",
+      "title": "Ibn Sīnā",
+      "canonical_authors": [
+        "Ibn Sīnā (Avicenna)"
+      ],
+      "reader_ids": [],
+      "citation_url": "https://plato.stanford.edu/entries/ibn-sina/",
+      "note": "Born in Afshana, near Bukhara. Pin is the Bukhara vicinity, not an exact archaeological birthsite.",
+      "status": "qualified"
+    },
+    {
+      "id": "A-AVI-I",
+      "entity": "author",
+      "place_id": "isfahan",
+      "place": "Isfahan",
+      "lat": 32.653,
+      "lon": 51.668,
+      "time_ah": 415,
+      "precision": "city_reference_point",
+      "kind": "scholarly_activity",
+      "title": "Ibn Sīnā",
+      "canonical_authors": [
+        "Ibn Sīnā (Avicenna)"
+      ],
+      "reader_ids": [],
+      "citation_url": "https://plato.stanford.edu/entries/ibn-sina/",
+      "note": "Avicenna was attached to the Isfahan court in the later phase of his career, approximately from the 410s AH; the map uses 415 AH as a rough period marker, not a documented exact arrival date or the date of every composition.",
+      "status": "qualified"
+    },
+    {
+      "id": "A-AVI-H",
+      "entity": "author",
+      "place_id": "hamadan",
+      "place": "Hamadan",
+      "lat": 34.798,
+      "lon": 48.515,
+      "time_ah": 428,
+      "precision": "city_reference_point",
+      "kind": "death",
+      "title": "Ibn Sīnā",
+      "canonical_authors": [
+        "Ibn Sīnā (Avicenna)"
+      ],
+      "reader_ids": [],
+      "citation_url": "https://plato.stanford.edu/entries/ibn-sina/",
+      "note": "Died in Hamadan, 1037 CE.",
+      "status": "documented"
+    },
+    {
+      "id": "A-GHA-T",
+      "entity": "author",
+      "place_id": "tus",
+      "place": "Ṭūs",
+      "lat": 36.487,
+      "lon": 59.596,
+      "time_ah": 450,
+      "precision": "city_reference_point",
+      "kind": "birth",
+      "title": "al-Ghazālī",
+      "canonical_authors": [
+        "Abū Ḥāmid al-Ghazālī"
+      ],
+      "reader_ids": [],
+      "citation_url": "https://www.iranicaonline.org/articles/gazali/gazali-i-biography/",
+      "note": "Born in Ṭūs in 450 AH.",
+      "status": "documented"
+    },
+    {
+      "id": "A-GHA-B",
+      "entity": "author",
+      "place_id": "baghdad",
+      "place": "Baghdad",
+      "lat": 33.315,
+      "lon": 44.366,
+      "time_ah": 484,
+      "precision": "city_reference_point",
+      "kind": "teaching",
+      "title": "al-Ghazālī",
+      "canonical_authors": [
+        "Abū Ḥāmid al-Ghazālī"
+      ],
+      "reader_ids": [],
+      "citation_url": "https://plato.stanford.edu/entries/al-ghazali/",
+      "note": "Taught at the Baghdad Niẓāmiyya and studied the philosophical disciplines; not a pin for each composition.",
+      "status": "documented"
+    },
+    {
+      "id": "A-GHA-N",
+      "entity": "author",
+      "place_id": "nishapur",
+      "place": "Nishapur",
+      "lat": 36.214,
+      "lon": 58.797,
+      "time_ah": 499,
+      "precision": "city_reference_point",
+      "kind": "teaching",
+      "title": "al-Ghazālī",
+      "canonical_authors": [
+        "Abū Ḥāmid al-Ghazālī"
+      ],
+      "reader_ids": [],
+      "citation_url": "https://www.iranicaonline.org/articles/gazali/gazali-i-biography/",
+      "note": "Resumed teaching in Nishapur in 499 AH.",
+      "status": "documented"
+    },
+    {
+      "id": "A-RAZ-R",
+      "entity": "author",
+      "place_id": "rayy",
+      "place": "Rayy",
+      "lat": 35.603,
+      "lon": 51.442,
+      "time_ah": 544,
+      "precision": "city_reference_point",
+      "kind": "birth",
+      "title": "Fakhr al-Dīn al-Rāzī",
+      "canonical_authors": [
+        "Fakhr al-Dīn al-Rāzī"
+      ],
+      "reader_ids": [],
+      "citation_url": "https://plato.stanford.edu/entries/al-din-al-razi/",
+      "note": "Born in Rayy, 544 AH/1149 CE; distinguish from Quṭb al-Dīn al-Rāzī.",
+      "status": "documented"
+    },
+    {
+      "id": "A-RAZ-H",
+      "entity": "author",
+      "place_id": "herat",
+      "place": "Herat",
+      "lat": 34.349,
+      "lon": 62.203,
+      "time_ah": 606,
+      "precision": "city_reference_point",
+      "kind": "death",
+      "title": "Fakhr al-Dīn al-Rāzī",
+      "canonical_authors": [
+        "Fakhr al-Dīn al-Rāzī"
+      ],
+      "reader_ids": [],
+      "citation_url": "https://plato.stanford.edu/entries/al-din-al-razi/",
+      "note": "Final years and death in Herat. No unique location is inferred for all his works.",
+      "status": "documented"
+    },
+    {
+      "id": "A-TUS-T",
+      "entity": "author",
+      "place_id": "tus",
+      "place": "Ṭūs",
+      "lat": 36.487,
+      "lon": 59.596,
+      "time_ah": 597,
+      "precision": "city_reference_point",
+      "kind": "birth",
+      "title": "Naṣīr al-Dīn al-Ṭūsī",
+      "canonical_authors": [
+        "Naṣīr al-Dīn al-Ṭūsī"
+      ],
+      "reader_ids": [],
+      "citation_url": "https://www.iranicaonline.org/articles/tusi-nasir-al-din-bio/",
+      "note": "Born in Ṭūs, 597 AH.",
+      "status": "documented"
+    },
+    {
+      "id": "A-TUS-B",
+      "entity": "author",
+      "place_id": "baghdad",
+      "place": "Baghdad",
+      "lat": 33.315,
+      "lon": 44.366,
+      "time_ah": 672,
+      "precision": "city_reference_point",
+      "kind": "death",
+      "title": "Naṣīr al-Dīn al-Ṭūsī",
+      "canonical_authors": [
+        "Naṣīr al-Dīn al-Ṭūsī"
+      ],
+      "reader_ids": [],
+      "citation_url": "https://www.iranicaonline.org/articles/tusi-nasir-al-din-bio/",
+      "note": "Died in Baghdad, 672 AH/1274 CE; his earlier scholarly activity was distributed across several centres.",
+      "status": "documented"
+    },
+    {
+      "id": "A-AR-M",
+      "entity": "author",
+      "place_id": "murcia",
+      "place": "Murcia",
+      "lat": 37.987,
+      "lon": -1.13,
+      "time_ah": 560,
+      "precision": "city_reference_point",
+      "kind": "birth",
+      "title": "Ibn ʿArabī",
+      "canonical_authors": [
+        "Muḥyī al-Dīn Ibn ʿArabī"
+      ],
+      "reader_ids": [
+        "ibn_arabi_fusus"
+      ],
+      "citation_url": "https://www.iranicaonline.org/articles/ebn-al-arabi/",
+      "note": "Born in Murcia; 560 AH/1165 CE.",
+      "status": "documented"
+    },
+    {
+      "id": "A-AR-D",
+      "entity": "author",
+      "place_id": "damascus",
+      "place": "Damascus",
+      "lat": 33.513,
+      "lon": 36.291,
+      "time_ah": 638,
+      "precision": "city_reference_point",
+      "kind": "death",
+      "title": "Ibn ʿArabī",
+      "canonical_authors": [
+        "Muḥyī al-Dīn Ibn ʿArabī"
+      ],
+      "reader_ids": [
+        "ibn_arabi_fusus"
+      ],
+      "citation_url": "https://www.iranicaonline.org/articles/ebn-al-arabi/",
+      "note": "Final residence and death in Damascus, 638 AH.",
+      "status": "documented"
+    },
+    {
+      "id": "A-QUN-K",
+      "entity": "author",
+      "place_id": "konya",
+      "place": "Konya",
+      "lat": 37.874,
+      "lon": 32.494,
+      "time_ah": 649,
+      "precision": "city_reference_point",
+      "kind": "scholarly_activity",
+      "title": "Ṣadr al-Dīn al-Qūnawī",
+      "canonical_authors": [
+        "Ṣadr al-Dīn al-Qūnawī"
+      ],
+      "reader_ids": [],
+      "citation_url": "https://ibnarabisociety.org/sadr-al-din-al-qunawi-jane-clark/",
+      "note": "Return to Konya by about 649 AH, where he taught and transmitted Ibn ʿArabī's writings. Not proof that every work was composed there.",
+      "status": "documented"
+    },
+    {
+      "id": "A-SAD-S",
+      "entity": "author",
+      "place_id": "shiraz",
+      "place": "Shiraz",
+      "lat": 29.61,
+      "lon": 52.531,
+      "time_ah": 979,
+      "precision": "city_reference_point",
+      "kind": "birth",
+      "title": "Mullā Ṣadrā",
+      "canonical_authors": [
+        "Mullā Ṣadrā",
+        "Ṣadr al-Dīn al-Shīrāzī (Mullā Ṣadrā)"
+      ],
+      "reader_ids": [],
+      "citation_url": "https://plato.stanford.edu/entries/mulla-sadra/",
+      "note": "Born in Shiraz about 979 AH.",
+      "status": "documented"
+    },
+    {
+      "id": "A-SAD-I",
+      "entity": "author",
+      "place_id": "isfahan",
+      "place": "Isfahan",
+      "lat": 32.653,
+      "lon": 51.668,
+      "time_ah": 1006,
+      "precision": "city_reference_point",
+      "kind": "study",
+      "title": "Mullā Ṣadrā",
+      "canonical_authors": [
+        "Mullā Ṣadrā",
+        "Ṣadr al-Dīn al-Shīrāzī (Mullā Ṣadrā)"
+      ],
+      "reader_ids": [],
+      "citation_url": "https://plato.stanford.edu/entries/mulla-sadra/",
+      "note": "Studied in Isfahan after the Safavid court moved there, around 1006 AH.",
+      "status": "documented"
+    },
+    {
+      "id": "A-SIB-B",
+      "entity": "author",
+      "place_id": "basra",
+      "place": "Basra",
+      "lat": 30.508,
+      "lon": 47.782,
+      "time_ah": 145,
+      "precision": "city_reference_point",
+      "kind": "study",
+      "title": "Sībawayh",
+      "canonical_authors": [],
+      "reader_ids": [
+        "siybawayh"
+      ],
+      "citation_url": "https://www.cambridge.org/core/journals/bulletin-of-the-school-of-oriental-and-african-studies/article/greek-death-of-sibawayhi-and-the-origins-of-arabic-grammar/C8835A0E868FCC1CC496978766678CF2",
+      "note": "Studied in Basra around the middle of the 2nd century AH. His birthplace and death narratives require separate criticism.",
+      "status": "source_attested"
+    },
+    {
+      "id": "A-JUR-G",
+      "entity": "author",
+      "place_id": "gorgan",
+      "place": "Gorgan (Jurjān)",
+      "lat": 36.845,
+      "lon": 54.44,
+      "time_ah": 471,
+      "precision": "city_reference_point",
+      "kind": "lifelong_residence",
+      "title": "ʿAbd al-Qāhir al-Jurjānī",
+      "canonical_authors": [],
+      "reader_ids": [
+        "jurjani_dalail",
+        "jurjani_asrar"
+      ],
+      "citation_url": "https://escholarship.org/uc/item/2nq5n550",
+      "note": "Biographical study identifies Gorgan as the scholar's hometown and principal place of residence; this is not a dated composition site.",
+      "status": "documented"
+    },
+    {
+      "id": "A-TAB-B",
+      "entity": "author",
+      "place_id": "baghdad",
+      "place": "Baghdad",
+      "lat": 33.315,
+      "lon": 44.366,
+      "time_ah": 258,
+      "precision": "city_reference_point",
+      "kind": "scholarly_activity",
+      "title": "al-Ṭabarī",
+      "canonical_authors": [],
+      "reader_ids": [
+        "tabari_jamic"
+      ],
+      "citation_url": "https://www.iranicaonline.org/articles/tabari-abu-jafar/",
+      "note": "Resident largely in Baghdad after 258 AH; distinct from his birthplace in Ṭabaristān.",
+      "status": "documented"
+    },
+    {
+      "id": "A-MUS-N",
+      "entity": "author",
+      "place_id": "nishapur",
+      "place": "Nishapur",
+      "lat": 36.214,
+      "lon": 58.797,
+      "time_ah": 261,
+      "precision": "city_reference_point",
+      "kind": "death",
+      "title": "Muslim ibn al-Ḥajjāj",
+      "canonical_authors": [],
+      "reader_ids": [
+        "muslim_sahih"
+      ],
+      "citation_url": "https://islam.museum/en/person/muslim-ibn-al-hajjaj/",
+      "note": "Died near Nishapur, 261 AH; the original tradition records study journeys elsewhere.",
+      "status": "documented"
+    },
+    {
+      "id": "A-NAW-N",
+      "entity": "author",
+      "place_id": "nawa",
+      "place": "Nawā",
+      "lat": 32.892,
+      "lon": 36.04,
+      "time_ah": 631,
+      "precision": "city_reference_point",
+      "kind": "birth",
+      "title": "al-Nawawī",
+      "canonical_authors": [],
+      "reader_ids": [
+        "nawawi_arbain",
+        "nawawi_minhaj",
+        "nawawi_sharh_muslim"
+      ],
+      "citation_url": "https://www.islam.museum/en/person/al-nawawi/",
+      "note": "Born at Nawā, 631 AH.",
+      "status": "documented"
+    },
+    {
+      "id": "A-NAW-D",
+      "entity": "author",
+      "place_id": "damascus",
+      "place": "Damascus",
+      "lat": 33.513,
+      "lon": 36.291,
+      "time_ah": 649,
+      "precision": "city_reference_point",
+      "kind": "teaching",
+      "title": "al-Nawawī",
+      "canonical_authors": [],
+      "reader_ids": [
+        "nawawi_arbain",
+        "nawawi_minhaj",
+        "nawawi_sharh_muslim"
+      ],
+      "citation_url": "https://www.islam.museum/en/person/al-nawawi/",
+      "note": "Began study and later teaching in Damascus from 649 AH; book-specific composition is not implied.",
+      "status": "documented"
+    },
+    {
+      "id": "A-ZAM-J",
+      "entity": "author",
+      "place_id": "jurjaniyya",
+      "place": "Jurjāniyya / Gurgānj (approx.)",
+      "lat": 42.32,
+      "lon": 59.15,
+      "time_ah": 538,
+      "precision": "city_reference_point",
+      "kind": "death",
+      "title": "al-Zamakhsharī",
+      "canonical_authors": [],
+      "reader_ids": [
+        "zamakhshari_kashshaf",
+        "zamakhshari_mufassal",
+        "zamakhshari_asas"
+      ],
+      "citation_url": "https://www.hanafiatlas.com/scholars/al-zamakhshari.html",
+      "note": "Died in Jurjāniyya in 538 AH; the site is plotted approximately as historical Gurgānj.",
+      "status": "source_attested"
+    },
+    {
+      "id": "A-QUSh-N",
+      "entity": "author",
+      "place_id": "nishapur",
+      "place": "Nishapur",
+      "lat": 36.214,
+      "lon": 58.797,
+      "time_ah": 400,
+      "precision": "city_reference_point",
+      "kind": "study",
+      "title": "al-Qushayrī",
+      "canonical_authors": [],
+      "reader_ids": [
+        "qushayri_risala",
+        "qushayri_lataif"
+      ],
+      "citation_url": "https://www.islam.museum/en/event/qushayri-daqqaq-circle-400/",
+      "note": "Entered al-Daqqāq's circle in Nishapur at approximately 400 AH.",
+      "status": "qualified"
+    },
+    {
+      "id": "A-MAL-M",
+      "entity": "author",
+      "place_id": "medina",
+      "place": "Medina",
+      "lat": 24.467,
+      "lon": 39.612,
+      "time_ah": 179,
+      "precision": "city_reference_point",
+      "kind": "scholarly_context",
+      "title": "Mālik ibn Anas",
+      "canonical_authors": [],
+      "reader_ids": [
+        "muwatta"
+      ],
+      "citation_url": "https://www.islam.museum/ar/person/malik-ibn-anas/",
+      "note": "Medinan scholar and founder eponym; date represents his death, not the date of al-Muwaṭṭaʾ.",
+      "status": "documented"
+    },
+    {
+      "id": "A-IBMR-C",
+      "entity": "author",
+      "place_id": "cordoba",
+      "place": "Córdoba",
+      "lat": 37.889,
+      "lon": -4.779,
+      "time_ah": 595,
+      "precision": "city_reference_point",
+      "kind": "scholarly_context",
+      "title": "Ibn Rushd",
+      "canonical_authors": [],
+      "reader_ids": [
+        "ibn_rushd_bidaya"
+      ],
+      "citation_url": "https://www.islam.museum/en/person/ibn-rushd/",
+      "note": "Cordoba was the Andalusian scholar's home; marker is author context, not a proven composition site of Bidāyat al-mujtahid.",
+      "status": "source_attested"
+    },
+    {
+      "id": "A-IBMR-M",
+      "entity": "author",
+      "place_id": "marrakesh",
+      "place": "Marrakesh",
+      "lat": 31.63,
+      "lon": -8.006,
+      "time_ah": 595,
+      "precision": "city_reference_point",
+      "kind": "death",
+      "title": "Ibn Rushd",
+      "canonical_authors": [],
+      "reader_ids": [
+        "ibn_rushd_bidaya"
+      ],
+      "citation_url": "https://www.islam.museum/en/person/ibn-rushd/",
+      "note": "Died in Marrakesh in 595 AH; this does not establish manuscript circulation.",
+      "status": "source_attested"
+    },
+    {
+      "id": "A-IBM-D",
+      "entity": "author",
+      "place_id": "damascus",
+      "place": "Damascus",
+      "lat": 33.513,
+      "lon": 36.291,
+      "time_ah": 672,
+      "precision": "city_reference_point",
+      "kind": "death",
+      "title": "Ibn Mālik",
+      "canonical_authors": [],
+      "reader_ids": [
+        "ibn_malik_alfiyya"
+      ],
+      "citation_url": "https://www.loc.gov/resource/gdcwdl.wdl_12960/?st=list",
+      "note": "The author of the Alfiyya settled in Syria and died in Damascus; exact composition place of the poem is not asserted.",
+      "status": "source_attested"
+    },
+    {
+      "id": "A-IBH-C",
+      "entity": "author",
+      "place_id": "cairo",
+      "place": "Cairo",
+      "lat": 30.044,
+      "lon": 31.236,
+      "time_ah": 708,
+      "precision": "city_reference_point",
+      "kind": "birth",
+      "title": "Ibn Hishām al-Anṣārī",
+      "canonical_authors": [],
+      "reader_ids": [
+        "ibn_hisham_mughni"
+      ],
+      "citation_url": "https://islamansiklopedisi.org.tr/ibn-hisam-en-nahvi",
+      "note": "Born in Cairo, 708 AH, and studied there; distinct from other authors called Ibn Hishām.",
+      "status": "documented"
+    },
+    {
+      "id": "A-IBM-J",
+      "entity": "author",
+      "place_id": "jaen",
+      "place": "Jaén",
+      "lat": 37.77,
+      "lon": -3.79,
+      "time_ah": 600,
+      "precision": "city_reference_point",
+      "kind": "birth",
+      "title": "Ibn Mālik",
+      "canonical_authors": [],
+      "reader_ids": [
+        "ibn_malik_alfiyya"
+      ],
+      "citation_url": "https://www.loc.gov/resource/gdcwdl.wdl_12960/?st=list",
+      "note": "Born in Jaén (Jayyān) in al-Andalus around 600 AH.",
+      "status": "qualified"
+    },
+    {
+      "id": "A-SHA-C",
+      "entity": "author",
+      "place_id": "cairo",
+      "place": "Cairo",
+      "lat": 30.044,
+      "lon": 31.236,
+      "time_ah": 204,
+      "precision": "city_reference_point",
+      "kind": "death",
+      "title": "al-Shāfiʿī",
+      "canonical_authors": [],
+      "reader_ids": [
+        "shafii_risala",
+        "shafii_umm"
+      ],
+      "citation_url": "https://www.islam.museum/en/person/al-shafii/",
+      "note": "Died in Egypt in 204 AH; Cairo pin stands for greater Fustat/Cairo historical area and is an approximate reference point.",
+      "status": "qualified"
+    },
+    {
+      "id": "W-ZAM-KASH",
+      "entity": "work",
+      "place_id": "mecca",
+      "place": "Mecca",
+      "lat": 21.422,
+      "lon": 39.826,
+      "time_ah": 528,
+      "precision": "modern_city_reference_point",
+      "kind": "completed",
+      "title": "al-Zamakhsharī · al-Kashshāf",
+      "reader_ids": [
+        "zamakhshari_kashshaf"
+      ],
+      "citation_url": "https://www.islam.museum/ar/event/al-zamakhshari-kashshaf-528/",
+      "note": "Completed in Mecca in 528 AH, with source testimony referring to the author's dating of the work; this does not locate every stage of its composition.",
+      "status": "source_attested"
+    },
+    {
+      "id": "W-NAW-MIN",
+      "entity": "work",
+      "place_id": "damascus",
+      "place": "Damascus",
+      "lat": 33.513,
+      "lon": 36.291,
+      "time_ah": 669,
+      "precision": "modern_city_reference_point",
+      "kind": "completed",
+      "title": "al-Nawawī · Minhāj al-ṭālibīn",
+      "reader_ids": [
+        "nawawi_minhaj"
+      ],
+      "citation_url": "https://www.islam.museum/en/event/al-nawawi-minhaj-rawda-669/",
+      "note": "Completion of al-Nawawī's Minhāj and Rawḍa is dated 669 AH; event records Damascus as his teaching and writing setting. Does not prove an exact building or manuscript witness.",
+      "status": "source_attested"
+    },
+    {
+      "id": "W-MAL-MUW",
+      "entity": "work",
+      "place_id": "medina",
+      "place": "Medina",
+      "lat": 24.467,
+      "lon": 39.612,
+      "time_ah": null,
+      "precision": "modern_city_reference_point",
+      "kind": "composition_context",
+      "title": "Mālik · al-Muwaṭṭaʾ, Medinan compilation",
+      "reader_ids": [
+        "muwatta"
+      ],
+      "citation_url": "https://www.islam.museum/en/exhibits/path-muwatta/",
+      "note": "Al-Muwaṭṭaʾ reflects a Medinan scholarly setting. No precise year or particular building is assigned; this work event remains undated and its compiler's biography is separate.",
+      "status": "qualified"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sep_avicenna",
+      "url": "https://plato.stanford.edu/entries/ibn-sina/",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "sep_ghazali",
+      "url": "https://plato.stanford.edu/entries/al-ghazali/",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "iranica_ghazali",
+      "url": "https://www.iranicaonline.org/articles/gazali/gazali-i-biography/",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "sep_razi",
+      "url": "https://plato.stanford.edu/entries/al-din-al-razi/",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "iranica_tusi",
+      "url": "https://www.iranicaonline.org/articles/tusi-nasir-al-din-bio/",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "iranica_arabi",
+      "url": "https://www.iranicaonline.org/articles/ebn-al-arabi/",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "catalog_fusus",
+      "url": "https://mail.ibnalarabi.com/english/works/?id=207",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "arabi_futuhat",
+      "url": "https://ibnarabisociety.org/the-paradox-of-the-kaaba-michel-chodkiewicz/",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "iranica_sadra",
+      "url": "https://www.iranicaonline.org/articles/molla-sadra-sirazi/",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "sep_sadra",
+      "url": "https://plato.stanford.edu/entries/mulla-sadra/",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "qunawi",
+      "url": "https://ibnarabisociety.org/sadr-al-din-al-qunawi-jane-clark/",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "iranica_konya",
+      "url": "https://www.iranicaonline.org/articles/konya/konya-i-history-and-persian-culture-in-the-islamic-period/",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "iranica_tabari",
+      "url": "https://www.iranicaonline.org/articles/tabari-abu-jafar/",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "cambridge_sibawayh",
+      "url": "https://www.cambridge.org/core/journals/bulletin-of-the-school-of-oriental-and-african-studies/article/greek-death-of-sibawayhi-and-the-origins-of-arabic-grammar/C8835A0E868FCC1CC496978766678CF2",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "jurjani",
+      "url": "https://escholarship.org/uc/item/2nq5n550",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "ibn_malik",
+      "url": "https://www.loc.gov/resource/gdcwdl.wdl_12960/?st=list",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "ibn_hisham",
+      "url": "https://islamansiklopedisi.org.tr/ibn-hisam-en-nahvi",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "nawa",
+      "url": "https://www.islam.museum/en/person/al-nawawi/",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "muslim",
+      "url": "https://islam.museum/en/person/muslim-ibn-al-hajjaj/",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "qushayri",
+      "url": "https://www.islam.museum/en/event/qushayri-daqqaq-circle-400/",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "zamakh",
+      "url": "https://www.hanafiatlas.com/scholars/al-zamakhshari.html",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "ibn_rushd",
+      "url": "https://www.islam.museum/en/person/ibn-rushd/",
+      "accessed": "2026-11-09"
+    },
+    {
+      "id": "GSHHS_Basemap",
+      "url": "https://matplotlib.org/basemap/stable/",
+      "accessed": "2026-11-09"
+    }
+  ],
+  "excluded": "Unlocated OpenITI and Alreq records remain unplaced. Author's birth/death/teaching places are not treated as places of composition."
+}

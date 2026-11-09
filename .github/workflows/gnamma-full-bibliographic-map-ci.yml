@@ -52,9 +52,9 @@ jobs:
           assert all(x['dating_status'].startswith('undated') for x in m['works'])
           assert all(not x['text_acquired'] for x in m['works'])
           h=Path('research/intellectual-atlas/index.html').read_text()
-          assert 'bibliography-map.js' in h and 'discipline-atlas.js' in h and 'common-timeline-20261108' in h
-          assert 'GNAtlasBibliography.render' in Path('research/intellectual-atlas/atlas-app.js').read_text()
-          print('PASS integrated bibliography data, citations and atlas invariant')
+          assert 'atlas-unified.js' in h and 'atlas-geo.js' in h and 'atlas-hanafi.css' in h
+          assert 'function loadMetadata' in Path('research/intellectual-atlas/atlas-unified.js').read_text()
+          print('PASS original source bibliography, 404/377 audit, and one new geographical atlas interface')
           PY
   browser:
     runs-on: ubuntu-latest

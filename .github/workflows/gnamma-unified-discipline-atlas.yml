@@ -35,13 +35,14 @@ jobs:
           p=Path('research/intellectual-atlas')
           manifest=json.loads((p/'publication.json').read_text())
           assert manifest['entries']==404 and manifest['textual_relationships']==377
-          assert 'common-chronological' in manifest['ui_revision']
+          assert 'hanafi-geography-map-and-source-network' in manifest['ui_revision']
           assert manifest['bibliography_map']['alreq_source_linked_entries']==4157
           assert len(json.loads((p/'corpora/early-jurists.json').read_text())['authorities'])==16
           h=(p/'index.html').read_text()
-          assert 'discipline-atlas.js' in h and 'canonical-synopsis.js' in h
+          assert 'atlas-unified.js' in h and 'atlas-geo.js' in h and 'atlas-hanafi.css' in h
           assert 'subject-graph.js?v=' not in h
-          print('PASS: primary chronology, synopsis, 16 early authorities, and unchanged 404/377 historical corpus')
+          assert manifest['geography']['geocoded_events']>=41
+          print('PASS: current Hanafi-style geography, source network, original 404/377 corpus, bibliography and 16 early authorities')
           PY
   browser:
     runs-on: ubuntu-latest
