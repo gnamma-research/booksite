@@ -3,15 +3,15 @@
   "title": "al-Manṭiq",
   "arabicTitle": "المنطق",
   "author": "Muḥammad Riḍā al-Muẓaffar",
-  "description": "A carefully delimited selection from al-Muẓaffar's full six-book logic: introduction, opening discussion of signs, and later passages on definition. Original Arabic and fresh working English are paired only for passages actually transcribed.",
+  "description": "An Arabic–English working reader of selected authorial passages from Muẓaffar's six-book logic, now including the opening of Book II on universals. Passages not yet transcribed and translated remain available through the linked full Arabic witness.",
   "status": "working-translation",
   "editorialStatus": {
     "translationComplete": false,
-    "translatedSection": "Introduction (11 passages), opening Book I on signification (4 passages), and selected Book III discussions of definition (14 passages).",
-    "translatedPassages": 29,
+    "translatedSection": "Introduction (11), Book I on signification (4), opening Book II on universals (4), and selected Book III discussions of definition (14).",
+    "translatedPassages": 33,
     "sourceBasis": "Original Arabic from Muẓaffar's al-Manṭiq, early printed witness cross-checked against the Dār al-Taʿāruf text hosted by Rafed.",
     "englishComparator": "Carney's 75-page English PDF supplied by the user ends without the complete Book III section on definitions. English here is independently translated from Arabic.",
-    "editionNotice": "A fresh working translation; Arabic selection is not a claim that the entire al-Manṭiq has been translated."
+    "editionNotice": "33 local Arabic–English reading passages; remaining sections of the original six-book al-Manṭiq are not yet transcribed and translated. The linked public-domain Arabic scan covers the full work."
   },
   "sources": [
     {
@@ -45,6 +45,13 @@
       "bookNumber": 1,
       "title": "Book I · Expressions and Signification",
       "arabicTitle": "الباب الأول — مباحث الألفاظ"
+    },
+    {
+      "id": "K",
+      "number": 2,
+      "bookNumber": 2,
+      "title": "Book II · Universals and Their Predication",
+      "arabicTitle": "الباب الثاني — مباحث الكلي"
     },
     {
       "id": "I",
@@ -398,6 +405,90 @@
         "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Arabic text",
         "page": "36",
         "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-K-01",
+      "stage": "K",
+      "chapter": 1,
+      "title": "The universal and the particular",
+      "arabicTitle": "الكلّي والجزئي",
+      "arabic": "يدرك الإنسان مفهوم الموجودات التي يحسّ بها، مثل: محمد، هذا الكتاب، هذا القلم، هذه الوردة، بغداد، النجف. وإذا تأمّلها يجد كلّ واحد منها لا ينطبق على فرد آخر، ولا يصدق إلا على ذلك الموجود وحده. وهذا هو المفهوم (الجزئي). ويصحّ تعريفه بأنّه: «المفهوم الذي يمتنع صدقه على أكثر من واحد».\n\nثم إنّ الإنسان إذا رأى جزئيات متعدّدة، وقاس بعضها إلى بعض، فوجدها تشترك في صفة واحدة، انتزع منها صورة مفهوم شامل ينطبق على كلّ واحد منها. وهذا المفهوم الشامل، أو (الصورة المنتزعة)، هو المفهوم (الكلّي). ويصحّ تعريفه بأنّه: «المفهوم الذي لا يمتنع صدقه على أكثر من واحد».\n\nمثل مفهوم: إنسان، حيوان، معدن، أبيض، تفاحة، حجر، عالم، جاهل، جالس في الدار، معترف بذنبه.",
+      "english": "A human being apprehends concepts of the individual things he perceives: Muḥammad, this book, this pen, this rose, Baghdad, Najaf, and so forth. On considering them, he finds that each applies to no other individual and is true only of that particular existent. This is a *particular concept* (juzʾī), which may be defined as a concept incapable of applying to more than one individual.\n\nWhen a person observes several particulars and compares them, however, he may discover a feature shared by them. He then abstracts a conceptual form that embraces all of them and applies to each. Such an encompassing concept, or abstracted form, is a *universal concept* (kullī): a concept whose application to more than one individual is not impossible.\n\nExamples include human being, animal, mineral, white, apple, stone, learned, ignorant, sitting in the house, and confessing one's wrongdoing.",
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "The distinction concerns a concept's aptitude to be predicated of multiple individuals, not the number of instances presently existing."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf (1402 AH), checked against the digitized searchable text; early al-Nuʿmān edition catalogued by Arabic Collections Online as public domain",
+        "page": "56–57",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=56&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-K-02",
+      "stage": "K",
+      "chapter": 1,
+      "title": "Universality does not require actual instances",
+      "arabicTitle": "تكملة تعريف الجزئي والكلّي",
+      "arabic": "لا يجب أن تكون أفراد الكلّي موجودة فعلاً؛ فقد يتصوّر العقل مفهوماً كلّياً صالحاً للانطباق على أكثر من واحد من دون أن ينتزعه من جزئيات موجودة بالفعل، وإنّما يفرض له جزئيات يصحّ صدقه عليها. بل قد يمتنع وجود حتى فرد واحد له، مثل مفهوم «شريك الباري» ومفهوم «اجتماع النقيضين»، ولا يضرّ ذلك في كلّيّته.\n\nوقد لا يوجد له إلا فرد واحد ويمتنع وجود غيره، مثل مفهوم «واجب الوجود»، لقيام البرهان على ذلك. ولكنّ العقل لا يمنع من فرض أفراد لو وُجدت لصدق عليها هذا المفهوم. ولو كان مفهوم «واجب الوجود» جزئيّاً، لما كانت حاجة إلى البرهان على التوحيد، وكفى نفس تصوّر مفهومه لنفي وقوع الشركة فيه. وعليه فهذا الانحصار في فرد واحد إنّما جاء من قبل أمر خارج عن نفس المفهوم، لا أنّ نفس المفهوم يمتنع صدقه على أفراد كثيرة.\n\nإذن، بمقتضى هذا البيان لا بدّ من إضافة قيد «ولو بالفرض» في تعريفي الجزئي والكلّي: فالجزئي «مفهوم يمتنع صدقه على كثير ولو بالفرض»، والكلّي «لا يمتنع صدقه على كثير ولو بالفرض».\n\nتنبيه: مدلولات الأدوات كلّها مفاهيم جزئيّة، والكلمات، أي الأفعال، بهيئاتها تدلّ على مفاهيم جزئيّة وبموادّها على مفاهيم كلّيّة. أمّا الأسماء فمدلولاتها تختلف؛ فقد تكون كلّيّة كأسماء الأجناس، وقد تكون جزئيّة كأسماء الأعلام وأسماء الإشارة والضمائر ونحوها.",
+      "english": "A universal need not have individuals that actually exist. The intellect may form a universal concept capable of applying to more than one individual without abstracting it from presently existing particulars; it may instead suppose individuals of which it would be true. Indeed, even a single actual instance may be impossible, as with the concepts of a partner to the Creator or the conjunction of contradictories. This does not impair the universality of the concepts.\n\nConversely, a universal may have only one existent instance, with any second instance being impossible. The *Necessary Existent* is an example, since its uniqueness is established by demonstration. Yet the intellect can consider supposed individuals of which this concept would be predicated *if they existed*. Were the concept of the Necessary Existent intrinsically particular, there would be no need for a demonstration of divine unity: apprehending the concept itself would suffice to exclude multiplicity. Its restriction to one existent instance therefore follows from something other than the concept considered just as a concept; the concept's own signification does not prevent its supposition of multiple instances.\n\nConsequently, both definitions must include the qualification **“even by supposition.”** A particular is a concept that cannot be true of many, even hypothetically; a universal is one for which such application is not impossible, even hypothetically.\n\nNote that what particles signify is particular. Verbs signify particular meanings through their morphological forms, but universal meanings through their lexical materials. Nouns differ: common nouns may signify universals, whereas proper names, demonstratives and pronouns may signify particulars.",
+      "notes": [
+        {
+          "type": "Translation and argument",
+          "text": "The impossibility of a second Necessary Existent is a metaphysical result of demonstration, not the same as the logical incapacity of a deictic or singular concept to apply to more than one. The distinction anticipates the discussions of existence in the Ḥikma books."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf (1402 AH), checked against the digitized searchable text; early al-Nuʿmān edition catalogued by Arabic Collections Online as public domain",
+        "page": "57–57",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=57&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-K-03",
+      "stage": "K",
+      "chapter": 2,
+      "title": "The relative particular",
+      "arabicTitle": "الجزئي الإضافي",
+      "arabic": "الجزئي الذي تقدّم البحث عنه يسمّى (الجزئي الحقيقي). وهنا اصطلاح آخر للجزئي يقال له (الجزئي الإضافي)، لإضافته إلى ما فوقه، ومع ذلك قد يكون كلّيّاً إذا كان أضيق دائرة من كلّي آخر أوسع منه.\n\nتوضيحه: أنّك تجد أنّ (الخط المستقيم) مفهوم كلّي منتزع من عدّة أفراد كثيرة، وتجد أنّ (الخط المنحني) أيضاً مفهوم كلّي منتزع من مجموعة أفراد أخرى. فإذا ضممنا إحدى المجموعتين إلى الأخرى وألغينا ما بينهما من الفروق انتزعنا مفهوماً كلّيّاً أكثر سعة من المفهومين الأوّلين يصدق على جميع أفرادهما، وهو مفهوم (الخط).\n\nفهذا المفهوم الثالث الكبير نسبته إلى المفهومين الصغيرين كنسبة كلّ منهما إلى أفراد نفسه. فكما كان الفرد من الصغير بالإضافة إلى الصغير نفسه جزئيّاً، فالكلّي الصغير أيضاً بالإضافة إلى الكلّي الكبير كالجزئي من جهة النسبة، فيسمّى (جزئيّاً إضافيّاً) لا بالحقيقة، لأنّه في نفسه كلّي حقيقة.\n\nوكذا الجزئي الحقيقي من جهة إضافته إلى الكلّي الذي فوقه يسمّى جزئيّاً إضافيّاً.\n\nوهكذا كلّ مفهوم بالإضافة إلى مفهوم أوسع منه دائرة يسمّى (جزئيّاً إضافيّاً). فزيد مثلاً جزئي حقيقي في نفسه وجزئي إضافي بالقياس إلى الحيوان، وكذا الحيوان بالقياس إلى الجسم النامي، والجسم النامي بالقياس إلى مطلق الجسم.\n\nإذن يمكن تعريف الجزئي الإضافي بأنّه (الأخصّ من شيء)، أو «المفهوم المضاف إلى ما هو أوسع منه دائرة».",
+      "english": "The particular previously discussed is called a **real particular** (al-juzʾī al-ḥaqīqī). There is another use of “particular”: the **relative particular** (al-juzʾī al-iḍāfī). It is so called in relation to something more general than itself. Although narrower in extension than a wider universal, it may itself be genuinely universal.\n\nFor clarification, straight line is a universal concept abstracted from numerous individuals, and curved line is likewise a universal abstracted from others. When we bring the two groups together and disregard their differences, we obtain a more comprehensive universal, applying to the members of both: the concept *line*.\n\nThe relation of this wider, third concept to the two narrower concepts resembles the relation of either narrower universal to its own individuals. Just as an individual is particular relative to its narrower universal, the narrower universal is as a particular relative to the wider one. It is thus called a relative particular, not a real particular, for considered in itself it remains genuinely universal.\n\nA real particular is likewise a relative particular when considered with reference to the universal above it.\n\nAny concept, then, when taken in relation to a concept wider in extension, is a relative particular. Zayd, for instance, is a real particular in himself and a relative particular with respect to animal. Animal is relatively particular with respect to growing body, and growing body with respect to body without qualification.\n\nA relative particular may therefore be defined as **what is narrower than something else**, or as a concept considered in relation to one of wider extension.",
+      "notes": [
+        {
+          "type": "Source normalisation",
+          "text": "The searchable Rafed witness appears to read «فزي مثلا» in the illustrative example. The present working transcription reads «فزيد مثلا», supplying the expected name Zayd; this should be checked against the 1968 printed witness before certification."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf (1402 AH), checked against the digitized searchable text; early al-Nuʿmān edition catalogued by Arabic Collections Online as public domain",
+        "page": "58–58",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=58&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-K-04",
+      "stage": "K",
+      "chapter": 3,
+      "title": "Univocal and graduated universals",
+      "arabicTitle": "المتواطئ والمشكّك",
+      "arabic": "ينقسم الكلّي إلى المتواطئ والمشكّك، لأنّه:\n\nأوّلاً: إذا لاحظت كلّيّاً مثل الإنسان والحيوان والذهب والفضّة، وطبّقته على أفراده، فإنّك لا تجد تفاوتاً بين الأفراد في نفس صدق المفهوم عليها. فزيد وعمرو وخالد إلى آخر أفراد الإنسان من ناحية الإنسانيّة سواء، من دون أن تكون إنسانيّة أحدهم أولى من إنسانيّة الآخر ولا أشدّ ولا أكثر، ولا أيّ تفاوت آخر في هذه الناحية. وإذا كانوا متفاوتين ففي نواحٍ أخرى غير الإنسانيّة، كالتفاوت بالطول واللون والقوّة والصحّة والإخلاص وحسن التفكير، وما إلى ذلك.\n\nوكذا أفراد الحيوان والذهب ونحوهما. ومثل هذا الكلّي المتوافقة أفراده في مفهومه يسمّى (الكلّي المتواطئ)، أي المتوافقة أفراده فيه، والتواطؤ هو التوافق والتساوي.\n\nثانياً: إذا لاحظت كلّيّاً مثل مفهوم البياض والعدد والوجود، وطبّقته على أفراده، تجد على العكس من النوع السابق تفاوتاً بين الأفراد في صدق المفهوم عليها، بالاشتداد أو الكثرة أو الأولويّة أو التقدّم. فنرى بياض الثلج أشدّ بياضاً من بياض القرطاس، وكلّ منهما بياض؛ وعدد الألف أكثر من عدد المائة، وكلّ منهما عدد. ووجود الخالق أولى من وجود المخلوق، ووجود العلّة متقدّم على وجود المعلول بنفس وجوده لا بشيء آخر، وكلّ منهما وجود.\n\nوهكذا الكلّي المتفاوتة أفراده في صدق مفهومه عليها يسمّى (الكلّي المشكّك)، والتفاوت يسمّى (تشكيكاً).",
+      "english": "A universal is divided into the *mutawāṭiʾ* (univocal or uniformly predicated) and the *mushakkik* (graded or analogically predicated).\n\nFirst, consider a universal such as human being, animal, gold or silver, and apply it to its individuals. There is no variation among those individuals in the very truth of the concept as predicated of them. Zayd, ʿAmr and Khālid, and every other human being, are on an equal footing with respect to their humanity. The humanity of one is not more properly human, more intense or greater than that of another. If the individuals differ, it is in other respects—height, colour, strength, health, sincerity, soundness of thought and the like.\n\nThe same applies to individual animals and pieces of gold, and similar cases. A universal whose instances agree equally in the concept predicated of them is called *mutawāṭiʾ*: its instances concur in that respect, for *tawāṭuʾ* denotes agreement or equality.\n\nSecond, consider a universal such as whiteness, number or existence. When applied to its instances, unlike the previous type it admits variation in the mode of predication: through intensity, multitude, priority or precedence. The whiteness of snow is more intense than the whiteness of paper, yet both are white; a thousand exceeds a hundred, yet both are numbers. The Creator has priority in existence over the creature, and the cause is prior to its effect by its very existence, not by an additional thing; yet each is said to exist.\n\nA universal whose instances thus vary in the way its concept applies to them is called *mushakkik*, and the variation is called *tashkīk*.",
+      "notes": [
+        {
+          "type": "Terminology",
+          "text": "The Arabic distinction is tawāṭuʾ/tashkīk. 'Univocal' and 'graded' are contextual equivalents, not an unqualified identification with every Western account of univocity or analogy. The phrase 'by its very existence' is essential to the causal-priority example."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf (1402 AH), checked against the digitized searchable text; early al-Nuʿmān edition catalogued by Arabic Collections Online as public domain",
+        "page": "59–59",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=59&type=c_fbook"
       }
     },
     {
