@@ -36,13 +36,13 @@ small{color:var(--muted)}footer{border-top:1px solid var(--rule);font-size:12px;
 <option value="all">All numbered notes</option><option value="complete_searchable_note">Translated first-pass</option><option value="partial_translation">Partial translation</option>
 </select></nav>
 <main>
-<div class="overline">GNAMMA · Cumulative edition · Stage 106</div>
+<div class="overline">GNAMMA · Cumulative edition · Stage 107</div>
 <h1>Ḥawāshī — numbered glosses</h1>
 <p class="lead">The complete note, not the page of the printed volume, is the unit of translation. The English translations below are distinct from the much shorter preliminary Q125–178 selections.</p>
-<div class="notice">Stage 106 covers numbered notes <strong>1–55</strong>, Qum pp.127–144. <strong>53 have first-pass complete English, 2 remain partial</strong> (nos.1 and 25). For notes 24–55 the Arabic working transcription is displayed; notes 1–23 still have short Arabic locator lemmata only. Two separately attributed unnumbered glosses are shown without inventing new numbered-note IDs. No Arabic has been photographically or independently manuscript-collated.</div>
-<div class="stats"><span id="count">Loading…</span><span>0 fully translated printed pages certified</span><span>53 working complete notes · 2 partial</span></div>
+<div class="notice">Stage 107 covers <strong>110 numbered notes</strong>, Qum pp.127–156. <strong>106 have complete first-pass English; four remain partial</strong> (1, 25, 82, 90). Notes 24–75 have full digitally searchable Arabic working transcriptions; all other notes retain Arabic locator lemmata. Five adjacent unnumbered glosses are separately attributed. This is NOT a photographed or manuscript-collated edition and no printed page is certified complete.</div>
+<div class="stats"><span id="count">Loading…</span><span>0 fully translated printed pages certified</span><span>106 working complete notes · 4 partial</span></div>
 <div id="notes"></div>
-<footer><a href="batches/hawashi-numbered-cumulative-hwn001-055.md">Cumulative Arabic–English Markdown (notes 1–55)</a> · <a href="progress.html">Cumulative status, full handoff and stage logs</a> · <a href="hawashi-q125-178.html">52 earlier page selections</a>. Attribution remains provisional until individual signatures are checked against print photographs.</footer>
+<footer><a href="batches/hawashi-numbered-cumulative-hwn001-110.md">Cumulative Arabic–English Markdown (notes 1–110)</a> · <a href="progress.html">Cumulative status, full handoff and stage logs</a> · <a href="hawashi-q125-178.html">52 earlier page selections</a>. Attribution remains provisional until individual signatures are checked against print photographs.</footer>
 </main>
 <script src="hawashi-numbered-notes-stage104.js?v=20261109-104"></script>
 <script src="hawashi-numbered-notes-stage105.js?v=20261109-105"></script>
@@ -50,6 +50,12 @@ small{color:var(--muted)}footer{border-top:1px solid var(--rule);font-size:12px;
 <script src="hawashi-numbered-notes-stage106b.js?v=20261109-106"></script>
 <script src="hawashi-numbered-notes-stage106c.js?v=20261109-106"></script>
 <script src="hawashi-numbered-notes-stage106d.js?v=20261109-106"></script>
+<script src="hawashi-numbered-notes-stage107a.js?v=20261109-107"></script>
+<script src="hawashi-numbered-notes-stage107b.js?v=20261109-107"></script>
+<script src="hawashi-numbered-notes-stage107c.js?v=20261109-107"></script>
+<script src="hawashi-numbered-notes-stage107d.js?v=20261109-107"></script>
+<script src="hawashi-numbered-notes-stage107e.js?v=20261109-107"></script>
+<script src="hawashi-numbered-notes-stage107f.js?v=20261109-107"></script>
 <script>
 (function(){'use strict';
 const base=window.GNAMMA_TAHDHIB_HAWASHI_NOTES;
@@ -68,6 +74,19 @@ const stage106=[
 if(stage106.some(x=>!x||!Array.isArray(x.notes))){document.getElementById('notes').textContent='Stage106 source files unavailable';return}
 for(const batch of stage106){for(const n of batch.notes){
  if(byId.has(n.id))throw Error('Stage106 duplicate note '+n.id);
+ byId.set(n.id,n);
+}}
+const stage107=[
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE107A,
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE107B,
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE107C,
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE107D,
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE107E,
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE107F
+];
+if(stage107.some(x=>!x||!Array.isArray(x.notes))){document.getElementById('notes').textContent='Stage107 source files unavailable';return}
+for(const batch of stage107){for(const n of batch.notes){
+ if(byId.has(n.id))throw Error('Stage107 duplicate note '+n.id);
  byId.set(n.id,n);
 }}
 const entries=[...byId.values()].sort((a,b)=>a.noteNumber-b.noteNumber),$=id=>document.getElementById(id);
