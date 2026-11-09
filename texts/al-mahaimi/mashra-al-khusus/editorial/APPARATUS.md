@@ -1,4 +1,6 @@
-# GNAMMA | al-Mahāʾimī textual and attribution apparatus — stage 2
+> **LATEST COVERAGE (supersedes earlier milestone headings):** Consecutive source-transcribed pp. **11–138**; online working copy-text only. Earlier entries are retained as historical stage-level observations. No manuscript/printed-facsimile variants verified.
+
+# GNAMMA | al-Mahāʾimī textual and attribution apparatus — cumulative through stage 04
 **Copy-text:** printed page-indexed online transcription of al-Mazīdī, ed., *Mashraʿ al-khuṣūṣ*, Dār al-Kutub al-ʿIlmiyya, 2008, pp.11–72, `https://ablibrary.net/book_content/b/9637/{PAGE}?lang=ar`.  
 **Highest status attained:** first-pass transcription and translation. **No manuscript comparison, no photographic check of this print edition, and no collation with Āshtiyānī (1421 AH).** All instances below marked “suspect” mean a textual question, **not** an attested manuscript variant.
 
@@ -164,3 +166,52 @@ The following are **working-text uncertainties**, not manuscript readings. Stage
 | All | Original Arabic transcribed through web text, not inspected against physical printed page, Āshtiyānī edition, or manuscripts | **No manuscript variants verified. No definitive text established.** |
 
 Printed page reference is an edition locator, not proof of manuscript agreement. Suspicious received spellings are not emended without a witness.
+
+
+## Stage 04: first-pass textual and editorial flags (pp.89–138)
+
+All flags below refer to the **2008 online page transcription** only. “Suspect” means in need of source checking, **not** an attested variant.
+
+| No. | Print p. | Reading / attribution question | Current disposition |
+|---|---:|---|---|
+| MSH4-T01 | 89 | Stage starts mid-sentence from p88. The combination of restricted tastes and comprehensively validated propositions must be checked against Qūnawī independently. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T02 | 91 | The text says a higher mode of knowledge may not be recorded in writing; retain ellipsis at the printed page boundary and investigate a later continuation. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T03 | 97 | Causal and ontological terms need comparison with independent Qūnawī text; no automatic identity between first *taʿayyun* and other Akbarian systems. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T04 | 102 | Distinction between pure negative unrestrictedness and descriptions under a determinate intellectual relation is decisive; do not transfer predicates univocally. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T05 | 108 | A lightning-like essential disclosure is not necessarily physical time; compare word *nafas* and *barqī* across witnesses. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T06 | 109 | Important negative clause: withdrawal of attention does NOT mean actual nonexistence of soul/spirit/body; verify printed punctuation. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T07 | 110 | The duration of special disclosure and separate states may vary; exact temporal semantics require source edition comparison. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T08 | 111 | Quotations of sayings about intimacy with God and “God was, and nothing with Him” have not been authenticated; speaker Qūnawī versus commentator to be checked. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T09 | 114 | Modern footnote beginning «أي التجلي البرقي» is excluded; do not present its explanation as medieval author. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T10 | 115 | Possible transcription ambiguity in first-person/pronoun relations in discussion of mirrors and fixed entities; consult A21. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T11 | 116 | Text Nine begins here; the repeated claim that apparently contrary views are “relatively true” requires station-specific qualification. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T12 | 118 | Author admits «ولست منهم»: hidden interpretation is **his conjecture**, not his attained unveiling. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T13 | 119 | Modern footnote explaining «شاكلة» and its moral-psychological senses is excluded from main text. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T14 | 120 | Argument against infinitely repeated disclosure is an analogical metaphysical argument, not empirical claim about chronological events. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T15 | 121 | Modern footnote citing al-Kāshānī’s *Laṭāʾif al-aʿlām* is excluded. Al-Mahāʾimī labels part of the argument *iqnāʿī*. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T16 | 122 | Do not collapse *ḥaml al-muwāṭaʾa* and *ḥaml al-ishtiqāq*. Distinction of absolute from first principial determination is explicit. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T17 | 123 | Claims attributed to Ashʿarī and Ḥanafīs require verification in independent kalām sources. Distinguish *ḥudūth dhātī* from temporal coming-to-be. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T18 | 124 | Received web text repeats «فإن غلبت نسبتها إلى حضرة الأسماء والصفات ... فإن غلبت نسبتها إلى الأسماء والصفات»; possible duplication. Retain unaltered. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T19 | 125 | Eschatological statement about the end of punishment attributed to Ibn ʿArabī is not independently collated. Avoid presenting as a consensus position. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T20 | 126 | Editorial notes cite al-Tirmidhī, Ibn Mājah and Aḥmad on the seventy-thousand report; excluded from authorial Arabic. Hadith variant and status unchecked. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T21 | 127 | Terminology of receptive petition—*ḥāl*, *istiʿdād*, *martaba*, spirit, temperament—needs ordering against Qūnawī independent witness. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T22 | 128 | One **very extensive modern printed note** quoting al-Shaʿrānī and an abridgment of *Futūḥāt* is not al-Mahāʾimī; omitted. Condition vs cause explicit in authorial text. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T23 | 129 | First intelligible effusion should not be conflated with sensory effects; the scholastic accident argument is the commentator’s own explanatory step. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T24 | 130 | Discourse on identity of mediators and determinations is *perspectival*; linguistic failure at the level of tasted unity does not imply that all predication is false. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T25 | 131 | The phrase divine *muṭāwaʿa* is explicitly marked as metaphor. Not literal submission of God to creature. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T26 | 132 | Strict distinction of exact answer vs generic answer. *Taṣawwur* not a bounded mental image of the Essence. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T27 | 133 | Modern printed marginal note about special times of prayer excluded. The inference from Q 40:60 is a specific exegetical claim. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T28 | 134 | The online main text becomes entangled with a *long modern editorial footnote*. The long moralizing note starting «يسأل عنه...» is omitted; Qūnawī lemma resumes on p135. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T29 | 135 | The reference after «والله بما تعملون بصير» is given as Q 60:3; citation location and interpretive usage to cross-check against Qurʾān. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T30 | 137 | Essential *barqī* unveiling endures as complete **knowledge after the flash**, not a perpetual identical flash; compare pp108–110 and p137. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+| MSH4-T31 | 138 | Received «إيراداتهم» rather than «إراداتهم» in one occurrence; do NOT silently emend. The modern footnote identifying the master as Ibn ʿArabī is not an independently collated medieval witness. Quoted visionary report is Qūnawī’s, not the commentator’s autobiographical experience. | Preserve online reading; check printed image, Āshtiyānī, and independent source where relevant |
+
+### Attribution layers in the new batch
+
+- **Q:** bracketed lemmata following «قال رضي الله عنه» generally reproduce **Qūnawī**, and should not automatically be entered as al-Mahāʾimī's independent doctrine.
+- **M:** the prose introducing, explaining and occasionally criticizing the lemma is **al-Mahāʾimī**, including conjectural qualifications like «ولست منهم» (p.118).
+- **D:** quoted Qurʾānic verses, sayings and earlier authors require source identification and where relevant hadith verification. A quotation is evidence of the commentator's use of it, not proof of its authenticity.
+- **E:** the modern print editor's notes are **excluded** from the authorial main text at pp.119, 121, 126, 128, 133, 134, 138 and elsewhere. This is an editorial exclusion, not a lacuna in the medieval prose.
+- **P:** at page breaks, the original often ends in the middle of a sentence. Continuations are present on the next page. Preserve all original page boundaries without inventing connectors.
+
+**Unattained standards:** independently photographed 2008 collation; Āshtiyānī (1421 AH) collation; manuscript witness variants; paleographical confirmation; full quotation source checking; expert review of metaphysical terminology.

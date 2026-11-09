@@ -1,3 +1,5 @@
+> **STAGE 04 SUPERCEDING STATUS:** The current contiguous bilingual corpus covers **printed pp.11–138 (128 pages)**; new batch **pp.89–138 (50 pages)**. The earlier incremental milestones and "next page" statements retained below document historical progress only. Next untranslated page is **139**. No source edition or manuscript collation.
+
 # GNAMMA | al-Mahāʾimī corpus inventory and Nuṣūṣ concordance — working dossier
 **Audit date:** 9 November 2026  
 **Evidence codes:** A = edition or page-indexed witness inspected digitally; B = independent bibliographical record; C = secondary attribution requiring direct witness; U = unresolved. These codes rate **source identification**, not the historical authenticity of a work or the correctness of its medieval attribution.
@@ -6,7 +8,7 @@
 
 | Priority | Work / attribution | Evidence and exact source currently known | Acquisition | Actual bilingual first-pass | Collation | Main unresolved issue |
 |---|---|---|---|---|---|---|
-| 1 | **مشرع الخصوص إلى معاني النصوص** — *Mashraʿ al-khuṣūṣ*, attributed to ʿAlī al-Mahāʾimī (d. 835/1432) | **A:** Aḥmad Farīd al-Mazīdī, ed., Beirut: Dār al-Kutub al-ʿIlmiyya, 2008, 272 numbered pages; online page transcription `https://ablibrary.net/book_content/b/9637/{PAGE}?lang=ar`. **B:** Sayyid Jalāl al-Dīn Āshtiyānī, ed., Qom: Markaz Intishārāt Daftar Tablīghāt Islāmī, 1421 AH [2000–01], 335pp, ISBN 964424804X (NII NCID BA64748920). | Page-indexed 2008 text located; 2000/01 volume bibliographically identified but not obtained in this run | **62 consecutive printed pages, 11–72 inclusive; pp.26–72 produced across continuation installments** | **No comparison with print facsimile or manuscript yet** | Manuscript witness stemma; differences between editions; attribution of internal quotations |
+| 1 | **مشرع الخصوص إلى معاني النصوص** — *Mashraʿ al-khuṣūṣ*, attributed to ʿAlī al-Mahāʾimī (d. 835/1432) | **A:** Aḥmad Farīd al-Mazīdī, ed., Beirut: Dār al-Kutub al-ʿIlmiyya, 2008, 272 numbered pages; online page transcription `https://ablibrary.net/book_content/b/9637/{PAGE}?lang=ar`. **B:** Sayyid Jalāl al-Dīn Āshtiyānī, ed., Qom: Markaz Intishārāt Daftar Tablīghāt Islāmī, 1421 AH [2000–01], 335pp, ISBN 964424804X (NII NCID BA64748920). | Page-indexed 2008 text located; 2000/01 volume bibliographically identified but not obtained in this run | **128 consecutive printed pages, 11–138 inclusive; latest stage newly translated pp.89–138** | **No comparison with print facsimile or manuscript yet** | Manuscript witness stemma; differences between editions; attribution of internal quotations |
 | 2 | **خصوص النعم في شرح فصوص الحكم** — *Khuṣūṣ al-niʿam*, commentary on 27 Fuṣūṣ chapters | **A:** al-Mazīdī, ed., Beirut: Dār al-Kutub al-ʿIlmiyya, 2007, ISBN 9782745158086, **728 printed pages**; `https://ablibrary.net/book_content/b/9638/{PAGE}?lang=ar`; first Fuṣūṣ commentary section begins **printed p.69**, after editorial/preliminary material | Digital page-indexed Arabic available | **0 continuous pages** (individual diagnostic passages at pp.189–90, 197 were consulted, but NOT counted as translated) | None | Need compare text against Ibn ʿArabī's own Fuṣūṣ copy-text and other commentaries; different technical use of ḥaythiyya and name |
 | 3 | **مرآة الحقائق** — *Mirʾāt al-ḥaqāʾiq*, perhaps connected with Persian *Jām-i Jahān-numā* | C/U: bibliographic mentions; no original Persian or secure Arabic text inspected | Not acquired | **0** | None | Establish author, original language, relation to Jām-i Jahān-numā; distinguish work from later commentary |
 | 4 | **إراءة الدقائق في شرح مرآة الحقائق** — *Irāʾat al-daqāʾiq* (title to verify) | **C/U:** an attribution to Ṣibghat Allāh al-Barūjī appears in bibliographical listings; other notices associate an analogous title with al-Mahāʾimī | Not acquired | **0** | None | Potential separate similarly titled works and confused attributions; do not normalize title or author yet |
@@ -95,3 +97,18 @@ Do not infer from “fixed entities themselves never appear” the stronger clai
 **Concordance limit:** These anchors establish the numbering of the first five units in the *2008 commentary*. Their correspondence to the originally numbered twenty units of Qūnawī, manuscript 21-chapter inventories, or later 22-unit arrangements remains to be determined by full incipit/explicit collation. Do not infer the other 17 numbering matches.
 
 **Stage progress:** 50 newly translated printed pages (39–88); previous 28 printed pages (11–38) kept intact; 78 / 272 nominal-volume pages (28.68%) now translated consecutively. Print pp.1–10 remain untranslated preliminary pages. This is a first-pass working edition only, and the remaining 184 printed pages are a nominal page count, not a count of solely medieval authorial text.
+
+
+## Stage 04 newly verified numbered-text opening anchors
+
+| Unit in the **al-Mazīdī 2008 commentary** | Original Arabic incipit or excerpt | Opening printed p. | Status |
+|---|---|---:|---|
+| Fifth, النص الخامس | «ومن تفاريع ما ذكرنا من النصوص المحققة أيضا» | 88, continues p.89 | Fully translated through its conclusion in the current batch; exact endpoint needs revised editorial segmentation |
+| Sixth, النص السادس | Essential disclosure and the *taʿayyunāt* discussion; see p.101–110 | Within pp.89–114 | **Provisional** unit boundary: inspect explicit rubric in original 2008 print before locking exact opening |
+| Seventh, النص السابع | Discussion of distinctions and means of disclosure; see pp.103ff | Within pp.89–114 | **Provisional** boundary: lemma quoted in working Arabic; verify printed heading |
+| Eighth, النص الثامن | Essential *barqī* witnessing, fixed realities, mirrors, and effects | Within pp.89–116 | **Provisional** boundary; the end is printed **p.116**, prior to Text Nine |
+| Ninth, النص التاسع | «ومن النصوص الكلية نصوص ذكرتها في كتاب مفتاح غيب الجمع وتفصيله» | **116** | Exact numbered rubric **النص التاسع** inspected in digital transcription |
+| Tenth, النص العاشر | «اعلم أن الحق لما لم يكن أن ينسب إليه من حيث إطلاقه صفة أو اسم...» | **121** | Exact numbered rubric **النص العاشر** inspected |
+| Eleventh, النص الحادي عشر | «نص جلي وضابط كلي يفيد معرفة المطاوعة والإجابة الإلهيتين وإباء هما» | **131** | Exact numbered rubric **النص الحادي عشر** inspected; continues beyond p.138 |
+
+**Warning:** This table is an expanded **internal 2008 commentary index**. The problem whether Qūnawī's original twenty, manuscript twenty-one and edited twenty-two divisions align remains unresolved. The sixth through eighth printed opening page anchors must be verified against an image before they can be called definitive. Chittick's English translation cannot substitute for this operation.
