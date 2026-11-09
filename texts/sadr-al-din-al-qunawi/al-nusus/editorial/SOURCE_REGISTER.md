@@ -8,7 +8,7 @@ The counts below concern passages supplied in the working reader, not complete p
 
 | Work | Available source status | Bilingual paragraph records | Entire text translated? | Early manuscript collation | Publication status |
 |---|---|---:|---|---|---|
-| QUN-NU, Qūnawī, *al-Nuṣūṣ* | A complete publicly accessible online Arabic transcription; a separate 155-page printed Arabic PDF inspected at relevant pages (42–45) | 16 | **No**: complete opening incipits and selected later passages only | 0 folios independently collated | Working source-located page; not critical |
+| QUN-NU, Qūnawī, *al-Nuṣūṣ* | An accessible but **partial** online Arabic transcript, through printed p. 266; separate 155-page printed Arabic PDF inspected at relevant pages | 25 | **No**: complete opening incipits and selected later passages only | 0 folios independently collated | Working source-located page; not critical |
 | IZN-RIS, al-Iznīqī, short *Risāla* | Arabic edition by Balaban/Çalışkan (2023), pp. 831–850+ of Arabic text | 2 | **No**: two directly checked bilingual excerpts; seven arguments previously translated in English draft | 0 folios collated | Working source-located page; not critical |
 | KHU-ZUB, *Zubdat al-taḥqīq* | Bibliographical source and manuscript study; one Princeton catalogue record identified | 0 | No | 0 | Registry only |
 | KHU-QA, 22 questions | Ayasofya 4805 fols. 1a–13b reported in scholarly study | 0 | No | 0 | Registry only |
@@ -17,6 +17,9 @@ The counts below concern passages supplied in the working reader, not complete p
 | Later commentators | Survey reports al-Mashriqī, Nūr al-Dīn-zāda | 0 | No | 0 | Registry only |
 
 **Never convert** "identified", "read online", "translated", "checked against a manuscript", "committed to a website repository", and "verified live" into the same completion event.
+
+
+**Source coverage correction (9 November):** The forum witness at `alshrefalm7sy.ahlamontada.com/t3169-...` reproduces *al-Nuṣūṣ* through approximately printed p. **266**; it is **not** a complete Arabic transcription. The printed Yāsīn edition and additional independent copies are therefore needed for the rest. An indexed electronic text at [Ibn al-ʿArabī site](https://www.ibnalarabi.com/qunawi/nusus.php) lists separate texts, but direct retrieval returned a gateway error and has not yet been treated as an acquired complete witness. The catalog record alone cannot establish full access.
 
 ## Primary evidence / finding aids
 - Qūnawī online transcription with printed-page labels beginning at p. 236: [forum text](https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي). A public-domain medieval work, but the web transcription is **not proof of editorial accuracy**.
@@ -41,7 +44,7 @@ The counts below concern passages supplied in the working reader, not complete p
 - QUN-NU-003-C, the statement that knowledge follows existence, has been translated in full and checked against the separate printed edition (printed p. 44, PDF index 39). The final sentence has a materially different wording in the two accessible witnesses. **The English corresponding to the online reading is marked provisional.**
 - QUN-NU-004-A and 004-B now translate Qūnawī's explicit distinction between special, name-conditioned stations and the most comprehensive station. This primary passage should be the baseline for the planned study of how metaphysical terminology shifts with perspective.
 - QUN-NU-005-A gives a source-located full translation of the passage on the unseen of divine Identity, the most comprehensive determination, and principiality under the essential relation of knowledge.
-- **Current bilingual working records: 18** (Qūnawī 16; al-Iznīqī 2). No complete medieval book has been translated and no actual manuscript leaf has yet been collated.
+- **Current bilingual working records: 27** (Qūnawī 25; al-Iznīqī 2). No complete medieval book has been translated and no actual manuscript leaf has yet been collated.
 
 ## Primary translation priorities (not merely thematic notes)
 **1. Complete al-Iznīqī.** Finish printed 831–850+ in Arabic–English paired units: preface; introductory discussions of `ʿilm` and `maʿrifa`; all four chapters; Qurʾān and hadith citations; Persian poetry; conclusion. The existing Stage 2 English draft translated seven consecutive rational arguments on pp. 835–836 plus selected later passages, but the Arabic transcript and many paragraphs are missing. No coverage of a page is awarded merely because one sentence was read.
@@ -52,7 +55,7 @@ The counts below concern passages supplied in the working reader, not complete p
 
 ## Parallel commentary concordance — independently checked
 - Existing first-pass al-Mahāʾimī corpus: **127 sections / 426 paragraph pairs**, `texts/al-mahaimi/mashra-al-khusus/data/parallel.json`, printed pp. 11–138.
-- **14 Qūnawī Arabic source passages** have been aligned to **40 existing commentary section anchors** under `MSH-060` to `MSH-P115`, primarily by direct source lemma and corroborating printed page title/sequence. No commentary translation has been duplicated or represented as complete after p. 138.
+- **23 Qūnawī Arabic source passages** have been aligned to **64 existing commentary section anchors** under `MSH-060` to `MSH-P115`, primarily by direct source lemma and corroborating printed page title/sequence. No commentary translation has been duplicated or represented as complete after p. 138.
 - Each bilingual Qūnawī passage now links directly to one or more sections in the existing al-Mahāʾimī reader, and that reader links back to the Qūnawī base text. Deep-link fragment scrolling is explicitly supported after dynamic section insertion.
 - A link means **textual correspondence**, not doctrinal agreement. A section may quote the lemma and continue into interpretation, so the mapping is not always one lemma to one commentary paragraph.
 - The coverage ledger is at [COVERAGE_LEDGER.csv](COVERAGE_LEDGER.csv), and all earlier original translations and attribution cautions are preserved in [PREVIOUS_STAGES_1-2.md](PREVIOUS_STAGES_1-2.md). Check each new release with `node tests/qunawi_reader_qa.js` and `node --check texts/sadr-al-din-al-qunawi/al-nusus/reader.js`.
