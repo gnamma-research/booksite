@@ -33436,7 +33436,7 @@
       "sourceLocator": "A, printed pp. 83–87",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/279?lang=ar",
       "arabicSha256": "68d84fe666fe540ed9aee639e417b231581362a269e62d9fdd260786f5b36a22",
-      "englishSha256": "22e415360c8c51b1b7901e49fd631359a55f3aed9062c1f0a99445be9d645d3a",
+      "englishSha256": "3ef29d5bbdf9941badc5588e8b582c4983d02687b0ec5d0f3cebb6275cff41f5",
       "arabicClauses": [
         {
           "n": 1,
@@ -34427,55 +34427,55 @@
         {
           "n": 34,
           "startChar": 4040,
-          "endChar": 4309,
-          "text": "Graded predication, when used to establish that its bearer is extrinsic to its subjects, requires either successive changes among individual instances of the attached concomitant in relation to a fixed subject, or successive changes among the kinds of that concomitant."
+          "endChar": 4340,
+          "text": "The occurrence of graded predication, insofar as it would establish that what bears it is accidental to its subjects, can arise only through successive changes either in the individual instances of that accompanying accident relative to a fixed locus, or in the kinds of that accident relative to it."
         },
         {
           "n": 35,
-          "startChar": 4310,
-          "endChar": 4611,
+          "startChar": 4341,
+          "endChar": 4642,
           "text": "The detail can be understood from the eminent al-Ṭūsī's commentary on the Ishārāt: ‘This is conceivable only in a reality that can be treated as occupying a fixed subject for a non-enduring state whose specific character changes when what occurs at one instant is compared with what occurs at another."
         },
         {
           "n": 36,
-          "startChar": 4612,
-          "endChar": 4804,
+          "startChar": 4643,
+          "endChar": 4835,
           "text": "What occurs at each instant is thus found to be intermediate, in the respect according to which the gradation obtains, between what occurs at two instants enclosing it.’ Here ends his wording."
         },
         {
           "n": 37,
-          "startChar": 4806,
-          "endChar": 4980,
+          "startChar": 4837,
+          "endChar": 5011,
           "text": "Once this is established, we argue that successive replacement of existences differing in species or individuality upon one determinate real quiddity is plainly inadmissible."
         },
         {
           "n": 38,
-          "startChar": 4981,
-          "endChar": 5106,
+          "startChar": 5012,
+          "endChar": 5137,
           "text": "Without the condition of existence, that quiddity cannot remain numerically the same while passing from one state to another."
         },
         {
           "n": 39,
-          "startChar": 5107,
-          "endChar": 5292,
+          "startChar": 5138,
+          "endChar": 5323,
           "text": "Even if this is conceded, we do not grant that successive individual existences occur in relation to a specific quiddity precisely as one specific quiddity, if that is what is intended."
         },
         {
           "n": 40,
-          "startChar": 5293,
-          "endChar": 5393,
+          "startChar": 5324,
+          "endChar": 5424,
           "text": "If something else is intended, we do not grant that the quiddity cannot be constituted by existence."
         },
         {
           "n": 41,
-          "startChar": 5394,
-          "endChar": 5563,
+          "startChar": 5425,
+          "endChar": 5594,
           "text": "A common factor may have one instance stronger in relation to one quiddity and another weaker in relation to a different quiddity, yet still constitute those quiddities."
         },
         {
           "n": 42,
-          "startChar": 5564,
-          "endChar": 5757,
+          "startChar": 5595,
+          "endChar": 5788,
           "text": "For the Peripatetics regard corporeality as constitutive of the species of bodies, although its instance in the celestial spheres is stronger and more intense than its instance in the elements."
         }
       ],
