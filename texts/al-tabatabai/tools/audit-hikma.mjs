@@ -192,10 +192,10 @@ if(nText&&nTriage){
       'Cumulative review register not linked to triage '+r.id);
   }
   check(nTriage.summary?.automaticallyScreened===136,'Incomplete Nihāya full-corpus screening');
-  check(nTriage.summary?.locallyReadAgainstStoredArabic===68,'Nihāya local checked sample changed unexpectedly');
+  check(nTriage.summary?.locallyReadAgainstStoredArabic===70,'Nihāya local reading count must preserve 68 earlier plus two fourth-batch readings');
   check(nTriage.summary?.secondaryPrintedDigitalSpotChecks===5,
     'Nihāya revised printed-digital spot checks must remain individually documented');
-  check(rows.filter(r=>r.englishReview?.status==='local-bilingual-reading-checked').length===68,
+  check(rows.filter(r=>r.englishReview?.status==='local-bilingual-reading-checked').length===70,
     'Nihāya direct bilingual checks mismatch cumulative register');
   const unitXI=nText.units.find(u=>u.id==='N-XI-PRE');
   check(unitXI?.english.includes('“intellect” (al-ʿaql)')&&!unitXI?.english.includes('term “intellection”'),
