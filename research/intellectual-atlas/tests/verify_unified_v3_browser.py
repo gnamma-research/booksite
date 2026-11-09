@@ -1,5 +1,6 @@
 """Unified GNAMMA historical atlas: actual browser tests for one shell across sciences."""
 import os
+import argparse
 import asyncio
 from pathlib import Path
 from playwright.async_api import async_playwright
@@ -44,8 +45,14 @@ async def check_science(page,subject):
     return a
 
 async def main():
+    parser=argparse.ArgumentParser(description="GNAMMA unified atlas E2E")
+    parser.add_argument("--browser",choices=("chromium","webkit","firefox"),default="chromium")
+    parser.add_argument("--width",type=int,default=1335)
+    parser.add_argument("--height",type=int,default=890)
+    parser.add_argument("--full",action="store_true")
+    args,_=parser.parse_known_args()
     async with async_playwright() as p:
-        browser=await p.chromium.launch(headless=True)
+        browser=await getattr(p,args.browser).launch(headless=True)
         desktop=await browser.new_page(viewport={"width":1335,"height":890},accept_downloads=True)
         errors=[]
         desktop.on("pageerror",lambda e:errors.append(str(e)))
