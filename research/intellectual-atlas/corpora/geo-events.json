@@ -209,15 +209,15 @@
       "place": "Isfahan",
       "lat": 32.653,
       "lon": 51.668,
-      "time_ah": 428,
+      "time_ah": null,
       "precision": "city_reference_point",
       "kind": "completed",
       "time_status": "before",
       "title": "Ibn Sīnā · al-Shifāʾ",
       "work_id": "c:avicenna_shifa",
       "citation_url": "https://plato.stanford.edu/entries/ibn-sina/",
-      "note": "The Stanford Encyclopedia identifies Isfahan as where Avicenna completed al-Shifāʾ. 428 AH is the author's death terminus, not an attested completion date.",
-      "status": "documented"
+      "note": "Completed in Isfahan, as described in the Stanford Encyclopedia of Philosophy. The exact completion year is not fixed in this map; it must not be replaced by the author's death date (428 AH).",
+      "status": "source_attested"
     },
     {
       "id": "W-AR-FUSUS",
@@ -360,7 +360,7 @@
       "place": "Isfahan",
       "lat": 32.653,
       "lon": 51.668,
-      "time_ah": 412,
+      "time_ah": 415,
       "precision": "city_reference_point",
       "kind": "scholarly_activity",
       "title": "Ibn Sīnā",
@@ -369,8 +369,8 @@
       ],
       "reader_ids": [],
       "citation_url": "https://plato.stanford.edu/entries/ibn-sina/",
-      "note": "Spent his last years at the Isfahan court, completing major summae; mapped as an author's activity, not the composition site of each work.",
-      "status": "documented"
+      "note": "Avicenna was attached to the Isfahan court in the later phase of his career, approximately from the 410s AH; the map uses 415 AH as a rough period marker, not a documented exact arrival date or the date of every composition.",
+      "status": "qualified"
     },
     {
       "id": "A-AVI-H",
