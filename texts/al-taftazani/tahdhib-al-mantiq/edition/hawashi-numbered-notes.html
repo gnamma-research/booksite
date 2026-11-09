@@ -33,23 +33,29 @@ small{color:var(--muted)}footer{border-top:1px solid var(--rule);font-size:12px;
 <a href="progress.html">Progress & handoff</a><span class="spacer"></span>
 <input id="search" type="search" placeholder="Search notes" aria-label="Search note translations">
 <select id="filter" aria-label="Translation status">
-<option value="all">All 18 notes</option><option value="complete_searchable_note">Translated first-pass</option><option value="partial_translation">Partial translation</option>
+<option value="all">All numbered notes</option><option value="complete_searchable_note">Translated first-pass</option><option value="partial_translation">Partial translation</option>
 </select></nav>
 <main>
-<div class="overline">GNAMMA · Cumulative edition · Stage 104</div>
+<div class="overline">GNAMMA · Cumulative edition · Stage 105</div>
 <h1>Ḥawāshī — numbered glosses</h1>
 <p class="lead">The complete note, not the page of the printed volume, is the unit of translation. The English translations below are distinct from the much shorter preliminary Q125–178 selections.</p>
-<div class="notice">Stage 104 covers numbered notes 1–18 in Qum printed pp.127–134. Twelve notes have first-pass translations covering the digitally visible note; six longer notes remain <strong>partial</strong>. Modern quotations inserted into the Qum print do not become part of an earlier glossator’s note. No page or note is independently photographically collated. Arabic shown is a short locator lemma, <strong>not a full Arabic transcription</strong>.</div>
-<div class="stats"><span id="count">Loading…</span><span>0 fully translated printed pages certified</span><span>12 working complete notes · 6 partial</span></div>
+<div class="notice">Stage 105 covers numbered notes 1–23 in Qum printed pp.127–135. Twenty-two notes have complete first-pass English translations; note 1 remains <strong>partial</strong> pending separate handling of later material. Previous notes are preserved as source history. Modern quotations inserted into the Qum print do not become part of an earlier glossator’s note. No page or note is independently photographically collated. Arabic shown is a short locator lemma, <strong>not a full Arabic transcription</strong>.</div>
+<div class="stats"><span id="count">Loading…</span><span>0 fully translated printed pages certified</span><span>22 working complete notes · 1 partial</span></div>
 <div id="notes"></div>
 <footer><a href="progress.html">Cumulative status, full handoff and stage logs</a> · <a href="hawashi-q125-178.html">52 earlier page selections</a>. Attribution remains provisional until individual signatures are checked against print photographs.</footer>
 </main>
 <script src="hawashi-numbered-notes-stage104.js?v=20261109-104"></script>
+<script src="hawashi-numbered-notes-stage105.js?v=20261109-105"></script>
 <script>
 (function(){'use strict';
 const base=window.GNAMMA_TAHDHIB_HAWASHI_NOTES;
 if(!base){document.getElementById('notes').textContent='Note data unavailable; inspect the stage handoff.';return}
-const entries=base.entries||[],$=id=>document.getElementById(id);
+const patch=window.GNAMMA_TAHDHIB_HAWASHI_NOTES_STAGE105;
+if(!patch){document.getElementById('notes').textContent='Stage105 data missing; see HANDOFF_LATEST.md.';return}
+const byId=new Map((base.entries||[]).map(e=>[e.id,e]));
+for(const n of patch.overrides||[]){if(!byId.has(n.id))throw Error('Unknown earlier note '+n.id);byId.set(n.id,n)}
+for(const n of patch.appends||[]){if(byId.has(n.id))throw Error('Duplicate appended note '+n.id);byId.set(n.id,n)}
+const entries=[...byId.values()].sort((a,b)=>a.noteNumber-b.noteNumber),$=id=>document.getElementById(id);
 const mk=(tag,cls,txt)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(txt!==undefined)x.textContent=txt;return x};
 function render(){
  const q=$('search').value.trim().toLocaleLowerCase(),filter=$('filter').value,holder=$('notes');holder.replaceChildren();
