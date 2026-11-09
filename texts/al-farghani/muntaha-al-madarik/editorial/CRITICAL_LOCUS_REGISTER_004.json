@@ -17,9 +17,25 @@
           "kind": "unverified contextual conjecture"
         }
       ],
-      "decision": "retain B2007 and flag; cannot prefer ilmiyyan without historical/manuscript reading",
-      "witness_readings": [],
-      "status": "open"
+      "decision": "Photographed I1876 p6 scan10 reads علميّا ووجوديّا while digital B2007 p19 has عمليّا ووجوديّا; adopt I1876 provisionally as already established in I1876-L03. No manuscript collated.",
+      "witness_readings": [
+        {
+          "id": "I1876-L03",
+          "b2007_page": 19,
+          "i1876_printed_page": 6,
+          "pdf_scan_index": 10,
+          "source_record": "CR001-024",
+          "beirut_digital": "بل عمليّا ووجوديّا أيضا",
+          "i1876_reading": "بل علميّا ووجوديّا أيضا",
+          "relationship": "historical-print-difference",
+          "editorial_decision": "Prefer I1876 علميا because directly read and supported by close context concerning العلم الذاتي والصفاتي; modern printed digital عمليّا is recorded, not silently changed; this is a PRINT-level correction, not manuscript evidence.",
+          "verified_historical_print": true,
+          "verified_manuscript": false
+        }
+      ],
+      "status": "historical-print-variant-adopted-MS-unchecked",
+      "edited_lemma": "علميّا ووجوديّا",
+      "historical_print_variant_verified": true
     },
     {
       "id": "FD-002",
@@ -40,9 +56,49 @@
       "observed": {
         "B2007": "فلم تعلم ولم يحكم بشيء منها إلا بعد تعيّنها"
       },
-      "decision": "retain as printed, preserving prior ربما modal and limitation of the referent in translation; theological crux is not a self-evident scribal corruption",
-      "witness_readings": [],
-      "status": "interpretive-open"
+      "decision": "I1876 p8–9 scans12–13 agrees at the bound لم تعلم ولم يحكم: retain hard claim, do not interpolate eternal known particulars or remove modal ربما. MS readings and interpretation remain open.",
+      "witness_readings": [
+        {
+          "id": "I1876-L07",
+          "b2007_page": 23,
+          "i1876_printed_page": 8,
+          "pdf_scan_index": 12,
+          "second_printed_page": 9,
+          "second_scan_index": 13,
+          "source_record": "CR002-032",
+          "beirut_digital": "فلم تعلم ولم يحكم بشيء منها إلّا بعد تعيّنها",
+          "i1876_reading": "فلم تعلم ولم يحكم بشيء منها إلا بعد تعينها",
+          "relationship": "historic-print-agreement",
+          "editorial_decision": "The problematic claim stands across I1876 p8/9 page break (scan12 last line and scan13 first line); retain wording. No inference about divine omniscience or authorial revisions from printed agreement.",
+          "verified_historical_print": true,
+          "verified_manuscript": false,
+          "evidence": [
+            {
+              "siglum": "I1876",
+              "i1876_printed_page": 8,
+              "pdf_scan_index": 12,
+              "reading": "فلم",
+              "printed_photo_url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0012.jpg",
+              "source_pdf_sha256": "d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87",
+              "derived_jpeg_sha256": "3126e43af8493b65f254111626a25162404bc9b658f43cd97c36c439dd4c1690",
+              "manuscript": false,
+              "proof_grade": "visually inspected historical print, selected locus only"
+            },
+            {
+              "siglum": "I1876",
+              "i1876_printed_page": 9,
+              "pdf_scan_index": 13,
+              "reading": "تعلم ولم يحكم بشيء منها إلا بعد تعينها",
+              "printed_photo_url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0013.jpg",
+              "source_pdf_sha256": "d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87",
+              "derived_jpeg_sha256": "683380b034daf230712523f3a475ccc3120d4b310c6dccd9d7d0734bdd12648f",
+              "manuscript": false,
+              "proof_grade": "visually inspected historical print, selected locus only"
+            }
+          ]
+        }
+      ],
+      "status": "historical-print-agreement-interpretation-open"
     },
     {
       "id": "FD-004",
@@ -51,9 +107,34 @@
       "observed": {
         "B2007": "على أنها غايات حكم الغضب عارجا لا نازلا"
       },
-      "decision": "retain printed words and flag contested syntax/directionality; do not silently re-point",
-      "witness_readings": [],
-      "status": "open"
+      "decision": "I1876 p10 confirms narrow phrase حكم الغضب عارجا لا نازلا, but syntax of على أنها غايات still disputed. Keep printed words and no conjectural punctuation resolution.",
+      "witness_readings": [
+        {
+          "id": "I1876-L08",
+          "b2007_page": 25,
+          "i1876_printed_page": 10,
+          "pdf_scan_index": 14,
+          "source_record": "CR003-018",
+          "beirut_digital": "حكم الغضب عارجا لا نازلا",
+          "i1876_reading": "حكم الغضب عارجا لا نازلا",
+          "relationship": "historic-print-agreement",
+          "editorial_decision": "The concluding contrast ascending/not descending appears in both prints; this narrow agreement does not resolve syntactic attachment of preceding على أنها غايات or validate a smooth English paraphrase.",
+          "verified_historical_print": true,
+          "verified_manuscript": false,
+          "evidence": {
+            "siglum": "I1876",
+            "i1876_printed_page": 10,
+            "pdf_scan_index": 14,
+            "reading": "حكم الغضب عارجا لا نازلا",
+            "printed_photo_url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0014.jpg",
+            "source_pdf_sha256": "d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87",
+            "derived_jpeg_sha256": "3be37a1d06b1e2970b8c4135a51941412f71a46796c23f1d2cde64f3007a1bb9",
+            "manuscript": false,
+            "proof_grade": "visually inspected historical print, selected locus only"
+          }
+        }
+      ],
+      "status": "historical-print-narrow-agreement-syntax-open"
     },
     {
       "id": "FD-005",
@@ -74,9 +155,36 @@
       "observed": {
         "B2007": "المذكورة"
       },
-      "decision": "apparent agreement/attachment issue; preserve as crux, get manuscript images; cannot assert corrected form",
-      "witness_readings": [],
-      "status": "open"
+      "decision": "Adopt I1876 printed p13 (scan17) masculine المذكور, against B2007 p29 feminine المذكورة. Agreement with التعيّن is a grammatical reason; retain original B2007 in apparatus. More remote syntactic coordination awaits manuscript scrutiny.",
+      "witness_readings": [
+        {
+          "id": "I1876-L06",
+          "b2007_page": 29,
+          "i1876_printed_page": 13,
+          "pdf_scan_index": 17,
+          "source_record": "CR003-059",
+          "beirut_digital": "والتعيّن الأول المذكورة وقلبه المطهّر",
+          "i1876_reading": "والتعيّن الأول المذكور وقلبه المطهّر",
+          "relationship": "historical-print-difference",
+          "editorial_decision": "Adopt historically attested masculine المذكور, agreeing with التعيّن; preserve feminine المذكورة of B2007 in apparatus. Subsequent coordination/syntax still requires manuscript scrutiny.",
+          "verified_historical_print": true,
+          "verified_manuscript": false,
+          "evidence": {
+            "siglum": "I1876",
+            "i1876_printed_page": 13,
+            "pdf_scan_index": 17,
+            "reading": "والتعيّن الأول المذكور",
+            "printed_photo_url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0017.jpg",
+            "source_pdf_sha256": "d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87",
+            "derived_jpeg_sha256": "b9a24fb7e82aee8a62492d550ee2ddcda75b3ec25188deff21b9741808083aca",
+            "manuscript": false,
+            "proof_grade": "visually inspected historical print, selected locus only"
+          }
+        }
+      ],
+      "status": "photographed-1876-printed-variant-adopted-MS-unchecked",
+      "edited_lemma": "والتعيّن الأول المذكور وقلبه المطهّر",
+      "historical_print_variant_verified": true
     },
     {
       "id": "FD-007",
@@ -178,7 +286,7 @@
       "status": "translation-reviewed"
     }
   ],
-  "historical_independent_readings_confirmed": 1,
+  "historical_independent_readings_confirmed": 4,
   "notes": [
     "Chittick 2025 says modern Beirut/Qom editions reproduce significant errors of 1876, and bases his translation on collated Carullah 1107, Ragip 670, and Kadizademehmed 273.",
     "Chittick p27–28 uses manuscript-collated English of p21/p31 and agrees in core interpretive opposition aḥadiyya/wāḥidiyya and wujūd/wwijdān; this does not document variant spellings.",
@@ -202,6 +310,7 @@
     }
   ],
   "source_grade_update": "C005-01 photographed printed evidence I1876 printed p18 scan22; no medieval MS photographs examined",
-  "historical_independent_print_loci_verified": 1,
-  "independent_manuscript_loci_verified": 0
+  "historical_independent_print_loci_verified": 8,
+  "independent_manuscript_loci_verified": 0,
+  "latest_cumulative_print_register": "I1876_COLLATION_CUMULATIVE_003.json"
 }
