@@ -50,6 +50,13 @@ The counts below concern passages supplied in the working reader, not complete p
 **4. Acquire *Asrār al-surūr*.** Prioritise Bursa Hüseyin Çelebi 479, then Ragıp Paşa 1469. Transcribe complete folios with quotations clearly separated from commentarial analysis; compare incipits and colophons before determining author.
 **5. Import the already-running Mahāʾimī reader's validated units** without retranslating them; build the cross-work alignment table from Qūnawī incipits rather than arbitrary numbers.
 
+## Parallel commentary concordance — independently checked
+- Existing first-pass al-Mahāʾimī corpus: **127 sections / 426 paragraph pairs**, `texts/al-mahaimi/mashra-al-khusus/data/parallel.json`, printed pp. 11–138.
+- **14 Qūnawī Arabic source passages** have been aligned to **40 existing commentary section anchors** under `MSH-060` to `MSH-P115`, primarily by direct source lemma and corroborating printed page title/sequence. No commentary translation has been duplicated or represented as complete after p. 138.
+- Each bilingual Qūnawī passage now links directly to one or more sections in the existing al-Mahāʾimī reader, and that reader links back to the Qūnawī base text. Deep-link fragment scrolling is explicitly supported after dynamic section insertion.
+- A link means **textual correspondence**, not doctrinal agreement. A section may quote the lemma and continue into interpretation, so the mapping is not always one lemma to one commentary paragraph.
+- The coverage ledger is at [COVERAGE_LEDGER.csv](COVERAGE_LEDGER.csv), and all earlier original translations and attribution cautions are preserved in [PREVIOUS_STAGES_1-2.md](PREVIOUS_STAGES_1-2.md). Check each new release with `node tests/qunawi_reader_qa.js` and `node --check texts/sadr-al-din-al-qunawi/al-nusus/reader.js`.
+
 ## Website implementation
 Reader: `texts/sadr-al-din-al-qunawi/al-nusus/`, JSON source `data/parallel.json`, styles and script under the same directory. Supports Arabic / English / both, 7-work corpus shelf, paragraph selection, cross-work links, search, editorial note toggle, themes, reader bookmarks, copyable source anchors, direct JSON export and responsive mobile layout. Pages with no Arabic source are explicitly empty. This is the initial implementation, not a claim of complete reader parity with the Darūrī application's full research features.
 
