@@ -1,3 +1,5 @@
+> **Latest cumulative scope:** pp.11–138 first-pass. Earlier internal stage headings below are historical milestones, not the current coverage limit.
+
 # GNAMMA | Akbarī technical glossary — al-Mahāʾimī, stage 3
 **Status:** context-sensitive working lexicon. “Attested” means that a term or its explicit construction occurs in the **consulted working text**, *Mashraʿ*, ed. al-Mazīdī, pp.11–72, unless a different source is named. It does not imply an exhaustive count. **Prospective** entries are not retroactively ascribed to pp.11–72. Exact lexical usage and authorial ownership (cited earlier authority vs al-Mahāʾimī) matter.
 
@@ -141,3 +143,45 @@ Existing repository draft: `https://github.com/gnamma-research/booksite/blob/mas
 | غلبة أحكام الإمكان / الوجوب | *ghalabat aḥkām al-imkān / al-wujūb* | dominance of rulings of possibility / necessity | **p.88**: character of manifestation in contingent recipients, **not** independent necessity belonging to minerals, plants or animals |
 
 The glossary is cumulative and context-indexed: the same transliteration may require different English in another ontological or epistemic register. Existing terms remain subject to collation.
+
+
+## D. Stage 04 lexicon — source-anchored, perspective-conditioned senses (pp.89–138)
+
+| Arabic term | Transliteration | Local meaning | Printed page(s) | Distinction / caveat |
+|---|---|---|---|---|
+| إطلاق سلبي / إطلاق ذاتي | *iṭlāq salbī / iṭlāq dhātī* | negative / essential unrestrictedness | pp.102,121–122 | Pure absence of predicates under a specific negative respect; not a temporal or spatial emptiness. |
+| التعين الأول | *al-taʿayyun al-awwal* | first principial determination | pp.98–103,121–122 | Principle of intelligible ordering; not the pure unrestricted Essence nor an independent material thing. |
+| التعين الثاني | *al-taʿayyun al-thānī* | second determination | pp.101–103 | Aspect under which necessary, one existence is predicated in a knowable relation. |
+| الحيثية | *al-ḥaythiyya* | aspect or respect | pp.89–103,136–137 | Controls truth of a proposition and scope of cognition; not identical to a separate existent. |
+| الاعتبار | *al-iʿtibār* | consideration | pp.89,102,115,129,137 | A warranted explanatory angle, possibly grounded in determinations, not merely a subjective fiction. |
+| الحقيقة / العين الثابتة | *al-ḥaqīqa / al-ʿayn al-thābita* | reality / fixed entity | pp.112–115,130 | Fixed intelligible form versus its appearance/effects; do not equate its fixity with extramental actuality. |
+| الشأن / الشؤون | *al-shaʾn / al-shuʾūn* | divine affair(s) | pp.115,130 | Relates fixed entities to inward divine affairs under the commentator’s exposition. |
+| الأثر / التأثير | *al-athar / al-taʾthīr* | effect / exerting influence | pp.112–120 | Denied as extrinsic change in intrinsic reality in specific context; conditional and relational differences remain. |
+| المرآة / المرائي | *al-mirʾāh / al-marāyā* | mirror / mirrors | pp.114–116 | A locus through which previously nonmanifest plurality is reflected; does not modify the intrinsic reality of the reflected. |
+| النسبة / النسب | *al-nisba / al-nisab* | relation / relations | pp.115–116,129 | Relations of outward attribution may multiply without multiplication of the unrestricted source. |
+| التجلي الذاتي البرقي | *al-tajallī al-dhātī al-barqī* | lightning-like essential disclosure | pp.108–111,136–137 | Brief distinctive witnessing of essential reality, not equivalent to the permanent understanding it subsequently produces. |
+| الفراغ | *al-farāgh* | emptied awareness, disengagement | pp.108–109 | Withdrawal of attention from body/soul/attributes; expressly not the nonexistence of faculties. |
+| الجمعية | *al-jamʿiyya* | comprehensiveness | pp.108–110,137 | Human synthetic completeness which both permits essential disclosure and requires a return to other faculties. |
+| الحق النسبي | *al-ḥaqq al-nisbī* | relative / perspective-qualified truth | p.116 | What is correct according to one attribution but not exhaustive of the comprehensive station. |
+| من حيث هو هو | *min ḥaythu huwa huwa* | in respect of what it is in itself | pp.117–119 | Key restricted causal consideration; excludes extrinsic conditions that alter outcomes. |
+| الشرط / السبب | *al-sharṭ / al-sabab* | condition / cause | pp.118–119,128–129 | Condition: depends on it without efficacy. Cause: depends on it with efficacy (under this commentary’s definition). |
+| المؤثر / المنفعل | *al-muʾaththir / al-munfaʿil* | agent / recipient | pp.118–120 | Subject of explanatory causal analogy, conditioned by appropriate relation or additional factor. |
+| عدم التكرار في التجلي | *ʿadam al-tikrār fī al-tajallī* | nonrepetition of self-disclosure | pp.120–121 | No two identical appearances in all respects; argument classified as persuasive by the commentator. |
+| برهان التطبيق | *burhān al-taṭbīq* | proof by correspondence / matching | pp.120–121 | Scholastic argument against endless regress; not to be mistaken for empirical infinity of chronological events. |
+| حمل المواطأة / الاشتقاق | *ḥaml al-muwāṭaʾa / al-ishtiqāq* | direct predication / derivative predication | p.122 | Distinct logical forms of attributing names or properties, neither directly applied to pure negative unrestrictedness. |
+| الحدوث الذاتي | *al-ḥudūth al-dhātī* | essential posteriority / dependent origination | p.123 | Hierarchy of dependence without temporal beginning; historical controversy with kalām remains. |
+| العطاء الذاتي / الأسمائي | *al-ʿaṭāʾ al-dhātī / al-asmāʾī* | essential / name-related divine gift | pp.123–126 | Different predominant reference aspects, not literally gifts removed from all relations. |
+| السؤال الاستعدادي / الحالي | *al-suʾāl al-istiʿdādī / al-ḥālī* | petition through preparedness / condition | p.127 | Nonverbal mode of asking through receptivity or spiritual state. |
+| الفيض الأقدس | *al-fayḍ al-aqdas* | Most Holy Effusion | p.127 | Ground of receptive preparedness in the eternal intelligible order; not yet an extramental event. |
+| الفيض المعنوي الأول | *al-fayḍ al-maʿnawī al-awwal* | first intelligible effusion | pp.128–130 | Unitary principial effusion, which becomes distinct under receptivities without superadded contingent rule. |
+| القوابل | *al-qawābil* | recipients / receptive loci | pp.128–130 | Rulings of the Outward that correspond to fixed entities, according to context; not separate primordial creators. |
+| الظاهر / الباطن | *al-Ẓāhir / al-Bāṭin* | Outward / Inward (divine names) | p.130 | Names or aspects of disclosure; unity of inwardness is not opposed to plurality under outward manifestation. |
+| المطاوعة الإلهية | *al-muṭāwaʿa al-ilāhiyya* | divine responsive accommodation | pp.131–132 | Expressly called metaphorical; never divine subordination to a human command. |
+| تصور / معرفة / شهود | *taṣawwur / maʿrifa / shuhūd* | apprehension / knowledge / direct witnessing | pp.131–137 | Correct representation of divine aspects must not confine the Real in an image; stations alter epistemic scope. |
+| المعية الإلهية | *al-maʿiyya al-ilāhiyya* | divine accompaniment, withness | pp.134–135 | Relation of names/attributes to creation, not corporeal occupancy or identity of unrestricted Essence. |
+| المضطر / الاضطرار | *al-muḍṭarr / al-iḍṭirār* | distressed petitioner / existential necessity | pp.133–135 | An immediate receptive state that may produce response without elaborate intellectual representation. |
+| لوح محفوظ / مقام قلمي | *lawḥ maḥfūẓ / maqām qalamī* | Preserved Tablet / Pen-rank | pp.137–138 | Rank-relative knowing of divine determination, interpreted through Universal Soul / First Intellect. |
+| المقدّر الجازم / المعلّق | *al-muqaddar al-jāzim / al-muʿallaq* | definitive / conditional decree | p.138 | Distinguishes what is fixed from what occurs under appointed conditions, including prayer or aspiration. |
+| الاستحالة بالعلم | *al-istiḥāla bi-l-ʿilm* | impossibility relative to divine knowledge | p.138 | Not necessarily an intrinsic contradiction; cannot happen contrary to veridical antecedent divine knowledge. |
+
+**Lexical qualification:** the definitions above are local to the cited printed passages and not asserted as univocal meanings across Qūnawī, Ibn ʿArabī, al-Farghānī and Ibn Turka. Manuscripts have not been inspected.
