@@ -4,16 +4,16 @@
   "language": "Arabic and English",
   "scope": "Introduction systematic four foundations and concluding preface, modern Beirut B2007 pp18–145",
   "english_working_draft_page_count": 128,
-  "source_checked_modern_digital_page_count": 19,
-  "clause_record_count": 198,
-  "issues_unresolved_digital": 11,
-  "historical_print_independently_collated_pages": 9,
+  "source_checked_modern_digital_page_count": 31,
+  "clause_record_count": 243,
+  "issues_unresolved_digital": 13,
+  "historical_print_independently_collated_pages": 0,
   "manuscript_variants": 0,
   "authorial_introduction_english_draft_complete": true,
   "authorial_introduction_arabic_critical_edition_complete": false,
   "definitive_grade": false,
-  "source_witness_grade": "modern edited online printed text for pages18–23; remaining draft not yet checked clause-by-clause; 1876 historical print and Yeni Camii 706 uncollated",
-  "next_critical_audit_page": 37,
+  "source_witness_grade": "B2007 online modern edited authorial text selectively checked: pp18–47 and p50 (243 bounded loci, NOT full-page proof). Beirut pp48–49 not checked; independent I1876 comparisons only 10 inherited loci; no manuscript images.",
+  "next_critical_audit_page": 48,
   "next_translation_outside_intro": "B2007 p146 poem commentary (must confirm division against scan)",
   "pages": [
     {
@@ -395,14 +395,17 @@
       "authorial_section": "Foundation I",
       "english_working_draft": true,
       "english_clause_checked_B2007": false,
-      "digital_clause_check_count": 0,
+      "digital_clause_check_count": 4,
       "digital_crux_count": 0,
       "actual_historical_print_inspected": false,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "selected digital authorial clauses checked; other page lines NOT fully proofread",
+      "source_kind": "B2007-main-site-printed-digital",
+      "selected_arabic_english_checked_B2007": true,
+      "page_has_selected_clause_checks": true,
+      "editorial_note": "Stage VIII selected loci only, no 1876 or MS readings newly verified"
     },
     {
       "b2007_page": 38,
@@ -410,14 +413,17 @@
       "authorial_section": "Foundation I",
       "english_working_draft": true,
       "english_clause_checked_B2007": false,
-      "digital_clause_check_count": 0,
-      "digital_crux_count": 0,
+      "digital_clause_check_count": 4,
+      "digital_crux_count": 1,
       "actual_historical_print_inspected": false,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "selected digital authorial clauses checked; other page lines NOT fully proofread",
+      "source_kind": "B2007-main-site-printed-digital",
+      "selected_arabic_english_checked_B2007": true,
+      "page_has_selected_clause_checks": true,
+      "editorial_note": "Stage VIII selected loci only, no 1876 or MS readings newly verified"
     },
     {
       "b2007_page": 39,
@@ -425,14 +431,17 @@
       "authorial_section": "Foundation I",
       "english_working_draft": true,
       "english_clause_checked_B2007": false,
-      "digital_clause_check_count": 0,
+      "digital_clause_check_count": 4,
       "digital_crux_count": 0,
       "actual_historical_print_inspected": false,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "selected digital authorial clauses checked; other page lines NOT fully proofread",
+      "source_kind": "B2007-main-site-printed-digital",
+      "selected_arabic_english_checked_B2007": true,
+      "page_has_selected_clause_checks": true,
+      "editorial_note": "Stage VIII selected loci only, no 1876 or MS readings newly verified"
     },
     {
       "b2007_page": 40,
@@ -440,14 +449,17 @@
       "authorial_section": "Foundation I",
       "english_working_draft": true,
       "english_clause_checked_B2007": false,
-      "digital_clause_check_count": 0,
+      "digital_clause_check_count": 4,
       "digital_crux_count": 0,
       "actual_historical_print_inspected": false,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "selected digital authorial clauses checked; other page lines NOT fully proofread",
+      "source_kind": "B2007-main-site-printed-digital",
+      "selected_arabic_english_checked_B2007": true,
+      "page_has_selected_clause_checks": true,
+      "editorial_note": "Stage VIII selected loci only, no 1876 or MS readings newly verified"
     },
     {
       "b2007_page": 41,
@@ -455,14 +467,17 @@
       "authorial_section": "Foundation I",
       "english_working_draft": true,
       "english_clause_checked_B2007": false,
-      "digital_clause_check_count": 0,
-      "digital_crux_count": 0,
+      "digital_clause_check_count": 3,
+      "digital_crux_count": 1,
       "actual_historical_print_inspected": false,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "selected digital authorial clauses checked; other page lines NOT fully proofread",
+      "source_kind": "B2007-main-site-printed-digital",
+      "selected_arabic_english_checked_B2007": true,
+      "page_has_selected_clause_checks": true,
+      "editorial_note": "Stage VIII selected loci only, no 1876 or MS readings newly verified"
     },
     {
       "b2007_page": 42,
@@ -470,14 +485,17 @@
       "authorial_section": "Foundation I",
       "english_working_draft": true,
       "english_clause_checked_B2007": false,
-      "digital_clause_check_count": 0,
+      "digital_clause_check_count": 4,
       "digital_crux_count": 0,
       "actual_historical_print_inspected": false,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "selected digital authorial clauses checked; other page lines NOT fully proofread",
+      "source_kind": "B2007-main-site-printed-digital",
+      "selected_arabic_english_checked_B2007": true,
+      "page_has_selected_clause_checks": true,
+      "editorial_note": "Stage VIII selected loci only, no 1876 or MS readings newly verified"
     },
     {
       "b2007_page": 43,
@@ -485,14 +503,17 @@
       "authorial_section": "Foundation I",
       "english_working_draft": true,
       "english_clause_checked_B2007": false,
-      "digital_clause_check_count": 0,
+      "digital_clause_check_count": 3,
       "digital_crux_count": 0,
       "actual_historical_print_inspected": false,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "selected digital authorial clauses checked; other page lines NOT fully proofread",
+      "source_kind": "B2007-main-site-printed-digital",
+      "selected_arabic_english_checked_B2007": true,
+      "page_has_selected_clause_checks": true,
+      "editorial_note": "Stage VIII selected loci only, no 1876 or MS readings newly verified"
     },
     {
       "b2007_page": 44,
@@ -500,14 +521,17 @@
       "authorial_section": "Foundation I",
       "english_working_draft": true,
       "english_clause_checked_B2007": false,
-      "digital_clause_check_count": 0,
+      "digital_clause_check_count": 3,
       "digital_crux_count": 0,
       "actual_historical_print_inspected": false,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "selected digital authorial clauses checked; other page lines NOT fully proofread",
+      "source_kind": "B2007-main-site-printed-digital",
+      "selected_arabic_english_checked_B2007": true,
+      "page_has_selected_clause_checks": true,
+      "editorial_note": "Stage VIII selected loci only, no 1876 or MS readings newly verified"
     },
     {
       "b2007_page": 45,
@@ -515,14 +539,17 @@
       "authorial_section": "Foundation I",
       "english_working_draft": true,
       "english_clause_checked_B2007": false,
-      "digital_clause_check_count": 0,
+      "digital_clause_check_count": 3,
       "digital_crux_count": 0,
       "actual_historical_print_inspected": false,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "selected digital authorial clauses checked; other page lines NOT fully proofread",
+      "source_kind": "B2007-main-site-printed-digital",
+      "selected_arabic_english_checked_B2007": true,
+      "page_has_selected_clause_checks": true,
+      "editorial_note": "Stage VIII selected loci only, no 1876 or MS readings newly verified"
     },
     {
       "b2007_page": 46,
@@ -530,14 +557,17 @@
       "authorial_section": "Foundation I",
       "english_working_draft": true,
       "english_clause_checked_B2007": false,
-      "digital_clause_check_count": 0,
+      "digital_clause_check_count": 4,
       "digital_crux_count": 0,
       "actual_historical_print_inspected": false,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "selected digital authorial clauses checked; other page lines NOT fully proofread",
+      "source_kind": "B2007-main-site-printed-digital",
+      "selected_arabic_english_checked_B2007": true,
+      "page_has_selected_clause_checks": true,
+      "editorial_note": "Stage VIII selected loci only, no 1876 or MS readings newly verified"
     },
     {
       "b2007_page": 47,
@@ -545,14 +575,17 @@
       "authorial_section": "Foundation I",
       "english_working_draft": true,
       "english_clause_checked_B2007": false,
-      "digital_clause_check_count": 0,
+      "digital_clause_check_count": 4,
       "digital_crux_count": 0,
       "actual_historical_print_inspected": false,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "selected digital authorial clauses checked; other page lines NOT fully proofread",
+      "source_kind": "B2007-main-site-printed-digital",
+      "selected_arabic_english_checked_B2007": true,
+      "page_has_selected_clause_checks": true,
+      "editorial_note": "Stage VIII selected loci only, no 1876 or MS readings newly verified"
     },
     {
       "b2007_page": 48,
@@ -567,7 +600,8 @@
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
       "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_kind": "B2007-main-site-printed-digital",
+      "editorial_note": "Stage VIII source inaccessible: do not count as independently checked"
     },
     {
       "b2007_page": 49,
@@ -582,7 +616,8 @@
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
       "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_kind": "B2007-main-site-printed-digital",
+      "editorial_note": "Stage VIII source inaccessible: do not count as independently checked"
     },
     {
       "b2007_page": 50,
@@ -590,14 +625,17 @@
       "authorial_section": "Foundation I",
       "english_working_draft": true,
       "english_clause_checked_B2007": false,
-      "digital_clause_check_count": 0,
+      "digital_clause_check_count": 5,
       "digital_crux_count": 0,
       "actual_historical_print_inspected": false,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "selected digital authorial clauses checked; other page lines NOT fully proofread",
+      "source_kind": "B2007-main-site-printed-digital",
+      "selected_arabic_english_checked_B2007": true,
+      "page_has_selected_clause_checks": true,
+      "editorial_note": "Stage VIII selected loci only, no 1876 or MS readings newly verified"
     },
     {
       "b2007_page": 51,
@@ -2028,9 +2066,9 @@
       "editorial_note": "Concluding preface ends"
     }
   ],
-  "source_pages_with_selected_arabic_english_checks": 19,
-  "check_methodology": "80 earlier digital clause checks pp18–23; 62 selected source spans pp24–29; 56 selected source spans pp30–36 (198 total). Neither printed page nor manuscript has been exhaustively collated. Thirteen cumulative flagged crux records include a resolved p31 digital-spacing typo; no variant from 1876 or MSS is established.",
-  "issues_flagged_including_resolved_typographic": 13,
+  "source_pages_with_selected_arabic_english_checks": 31,
+  "check_methodology": "80 checks pp18–23; 62 selected pp24–29; 56 selected pp30–36; 45 selected pp37–47 and p50. 243 selected clauses across 31 printed B2007 pages, 0 fully proofread Arabic pages established. pp48–49 still lack modern source checks. 10 photographed print-to-print comparisons from Stage VII; zero manuscript variants.",
+  "issues_flagged_including_resolved_typographic": 15,
   "historical_print_pages_with_selected_loci_checked": 9,
   "historical_print_variants_verified": 5,
   "historical_print_collation_scope": "10 selected exact text loci on nine I1876 printed pages 5,6,7,8,9,10,13,16,18. FIVE differences and FIVE agreements. ZERO complete printed pages independently collated, ZERO medieval manuscript leaves.",
