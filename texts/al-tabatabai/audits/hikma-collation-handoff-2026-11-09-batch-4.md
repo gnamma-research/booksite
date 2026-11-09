@@ -68,3 +68,7 @@ Reader QA workflow: `.github/workflows/hikma-reader-qa.yml`; run `node texts/al-
 5. When merging, confirm green browser/source CI and source-hash synchronized **nine new PDFs** before reporting public editions as current. Do not mislabel checked working English as a definitive scholarly critical edition.
 
 **Publication honesty:** 304 paired working units; **70/136** Nihāya local reads, **0/136** complete independent Nihāya witness collations, **0 specialist certified**, **57 incomplete Muẓaffar selected translations**. No manuscript stemma or definitive critical edition is claimed.
+
+## Publication follow-up: visible IX.9 apparatus
+
+On a follow-up branch `hikma-nihaya-ix9-apparatus-20261109`, the unresolved internal reference is now registered as `N1417-IX09-REFERENCE-01` in `nihayat-al-hikma/data/editorial-supplement.json` (rather than living only in the private collation ledger). Both the standalone `hikma-reader.js` and combined-reader `hikma-combined.js` load that supplement and attach its note to `N-IX-09`; the PDF-builder includes supplement notes for all three Nihāya A4 modes. The apparent substitution `القسم الأول` → `القسم الثاني` remains explicitly **NOT ADOPTED** and has NO witness attestation beyond internal contextual reasoning. Review ledger cross-reference and audit regression guard `N1417-IX09-REFERENCE-01` are synchronized. When merged, regenerate all nine source-hash-matched A4 PDFs before treating the catalog as up to date.
