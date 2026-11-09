@@ -3,15 +3,15 @@
   "title": "al-Manṭiq",
   "arabicTitle": "المنطق",
   "author": "Muḥammad Riḍā al-Muẓaffar",
-  "description": "Arabic–English working reader of selected authorial passages from Muẓaffar's six-book al-Manṭiq. Book IV now begins with four consecutive discussions of propositions; the rest of the book and substantial parts of the other five books are not yet locally translated.",
+  "description": "Working, selected Arabic–English authorial reading passages from Muẓaffar's six-book logic; Book IV now includes propositions, quantity, quality and conditionals, but most of the authorial books remain untranslated.",
   "status": "working-translation",
   "editorialStatus": {
     "translationComplete": false,
-    "translatedSection": "Introduction 11, Book I 11, Book II 17, Book III 14, Book IV 4; selective source-grounded original Arabic and working English only.",
-    "translatedPassages": 57,
+    "translatedSection": "Introduction 11, Book I 11, Book II 17, Book III 14, Book IV 9; source-grounded working passages only, not a complete six-book edition.",
+    "translatedPassages": 62,
     "sourceBasis": "1402 AH Dār al-Taʿāruf Rafed searchable Arabic; the separately identified 1968 institutional scan remains to be independently collated.",
     "englishComparator": "Carney's 75-page English PDF supplied by the user ends without the complete Book III section on definitions. English here is independently translated from Arabic.",
-    "editionNotice": "57 bilingual working selections including Book IV opening, NOT a full six-book edition. Source punctuation/kāf normalized; independent early printed and manuscript collation pending."
+    "editionNotice": "62 selected bilingual readings; pp.125–137 of Book IV represented by sections, digital Arabic normalized, original 1968 independent printed collation outstanding."
   },
   "sources": [
     {
@@ -1292,6 +1292,131 @@
         "url": "https://lib.rafed.net/view.php?b_id=1604&page=131&type=c_fbook"
       },
       "status": "working-translation"
+    },
+    {
+      "id": "M-C-05",
+      "stage": "C",
+      "chapter": 5,
+      "title": "Categoricals by subject: singular, natural, indefinite, quantified",
+      "arabicTitle": "أقسام القضية باعتبار الموضوع",
+      "arabic": "أقسام القضية باعتبار الموضوع\nالحملية: شخصية وطبيعية ومهملة ومحصورة\nالمحصورة: كلية وجزئية\n\nنبتدئ بالتقسيم باعتبار الموضوع للحملية، ثم نتبعه بتقسيم الشرطية فنقول: تنقسم الحملية باعتبار الموضوع إلى الأقسام الأربعة المذكورة في العنوان، لأن الموضوع إما أن يكون جزئياً حقيقياً أو كلياً:\n\nأ ـ فإن كان جزئياً سميت القضية (شخصية) و(مخصوصة)، مثل: محمد رسول الله. الشيخ المفيد مجدد القرن الرابع. بغداد عاصمة العراق. أنت عالم. هو ليس بشاعر. هذا العصر لا يبشر بخير.\n\nب ـ وإن كان كلياً ففيه ثلاث حالات تسمى في كل حالة القضية المشتملة عليه باسم مخصوص، فإنه:\n\n١ ـ إما أن يكون الحكم في القضية على نفس الموضوع الكلي بما هو كلي مع غض النظر عن أفراده، على وجه لا يصح تقدير رجوع الحكم إلى الأفراد، فالقضية تسمى (طبيعية)، لأن الحكم فيها على نفس الطبيعة من حيث هي كلية، مثل: الإنسان نوع. الناطق فصل. الحيوان جنس. الضاحك خاصة. وهكذا فإنك ترى أن الحكم في هذه الأمثلة لا يصح إرجاعه إلى أفراد الموضوع، لأن الفرد ليس نوعاً ولا فصلاً ولا جنساً ولا خاصة.\n\n٢ ـ وإما أن يكون الحكم فيها على الكلي بملاحظة أفراده، بأن يكون الحكم في الحقيقة راجعاً إلى الأفراد، والكلي جعل عنواناً ومرآة لها، إلا أنه لم يبين فيه كمية الأفراد، لا جميعها ولا بعضها، فالقضية تسمى (مهملة) لإهمال بيان كمية أفراد الموضوع، مثل: الإنسان في خسر. رئيس القوم خادمهم. ليس من العدل سرعة العذل. المؤمن لا يكذب. فإنه ليس في هذه الأمثلة دلالة على أن الحكم عام لجميع ما تحت الموضوع أو غير عام.\n\n(تنبيه) قال الشيخ الرئيس في الإشارات بعد بيان المهملة: «فإن كان إدخال الألف واللام يوجب تعميماً وشركة وإدخال التنوين يوجب تخصيصاً فلا مهملة في لغة العرب وليطلب ذلك في لغة أخرى. وأما الحق في ذلك فلصناعة النحو ولا نخالطها بغيرها ...». والحق وجود المهملة في لغة العرب إذا كانت اللام للحقيقة، فيشار بها إلى نفس الطبيعة من حيث وجودها في مصاديقها من دون دلالة على إرادة الجميع أو البعض. نعم إذا كانت للجنس فإنها تفيد العموم، ويفهم ذلك من قرائن الأحوال. وهذا أمر يرجع فيه إلى كتب النحو وعلوم البلاغة.\n\n٣ ـ وإما أن يكون الحكم فيها على الكلي بملاحظة أفراده كالسابقة ولكن كمية أفراده مبينة في القضية، إما جميعاً أو بعضاً، فالقضية تسمى (محصورة) وتسمى (مسوّرة) أيضاً. وهي تنقسم بملاحظة كمية الأفراد إلى:\n\nأ ـ (كلية): إذا كان الحكم على جميع الأفراد، مثل: كل إمام معصوم. كل ماء طاهر. كل ربا محرم. لا شيء من الجهل بنافع. ما في الدار ديار.\n\nب ـ (جزئية): إذا كان الحكم على بعض الأفراد، مثل: بعض الناس يكذبون. قليل من عبادي الشكور. وما أكثر الناس ولو حرصت بمؤمنين. ليس كل إنسان عالماً. رب أكلة منعت أكلات.",
+      "english": "We begin by classifying categorical propositions according to their subjects, then turn to an analogous classification of conditionals. A categorical subject is either a true particular or a universal. The resulting four types are personal (or singular), natural, indefinite, and quantified.\n\n**A. Personal (shakhṣiyya, makhṣūṣa).** If the subject is a true particular, the proposition is singular: “Muḥammad is God's messenger”; “Shaykh al-Mufīd was the renewer of the fourth century”; “Baghdad is Iraq's capital”; “You are learned”; “He is not a poet”; and “This age offers little promise.”\n\n**B. Universal subject.** When the subject is universal, three different modes of judgment are possible.\n\n**1. Natural (ṭabīʿiyya).** The judgment attaches to the universal subject itself *as universal*, without regarding individual instances. It cannot correctly be redistributed to those individuals. Thus “human is a species,” “rational is a differentia,” “animal is a genus,” and “capable of laughter is a proprium.” An individual human is not itself a species, just as an individual is not a genus, differentia, or proprium in these predicational senses.\n\n**2. Indefinite (muhmala).** The judgment concerns individual instances through the universal as their title or mirror, but leaves their quantity unspecified: neither “all” nor “some” is stated. Examples are “Man is in loss,” “The leader of a people is their servant,” “Swift reproach is not justice,” and “A believer does not lie.” These expressions alone do not determine whether the judgment extends to every member of the subject class.\n\n**Observation.** The Chief Master, Avicenna, argues in the *Ishārāt* that, if the definite article universally quantifies and indefiniteness particularizes, Arabic would contain no indefinite propositions; this would have to be investigated in another language, and in any event the grammatical question belongs to grammar. Muẓaffar replies that Arabic does allow indefinite propositions: the article may designate the nature as instantiated without specifying all or some. If instead it denotes the genus in a generalizing use, the judgment has universal force. Context supplies the distinction; grammatical and rhetorical scholarship must settle its linguistic conditions.\n\n**3. Quantified (maḥṣūra, musawwara).** Here the judgment concerns instances under the universal, *and* specifies whether all or only some are intended. A **universal** affirmative or negative concerns all: “Every imam is protected from error,” “Every water is pure,” “All usury is prohibited,” “No ignorance is beneficial,” and “There is nobody at home.” A **particular** affirmative or negative concerns some: “Some people lie,” “Few of My servants are grateful,” “Most people, however eager you are, will not believe,” “Not every human being is learned,” and “Many a single meal has prevented later meals.” The doctrinal illustrations express the examples of the original text, not editorial endorsements of their universal truth.",
+      "notes": [
+        {
+          "type": "Source",
+          "text": "The Arabic follows the 1402 AH digitally transcribed reading with normalized hamza/kāf, punctuation and paragraph divisions; it is NOT a diplomatic transcription. Independent 1968 scanned-page collation and exercise checks pending."
+        },
+        {
+          "type": "Citation caution",
+          "text": "The quotation attributed to Avicenna is preserved within Muẓaffar’s argument but has NOT yet been independently checked word-for-word against the Ishārāt; doctrinal and Qurʾānic examples are source examples, not the translator's independent claims."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH Arabic digital transcription; compare 1968 Najaf ACO scan pending",
+        "page": "130–132",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=130&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-C-06",
+      "stage": "C",
+      "chapter": 6,
+      "title": "Why logic privileges quantified propositions",
+      "arabicTitle": "لا اعتبار إلا بالمحصورات",
+      "arabic": "لا اعتبار إلا بالمحصورات\n\nالقضايا المعتبرة التي يبحث عنها المنطقي ويعتد بها هي المحصورات دون غيرها من باقي الأقسام، وهذا ما يحتاج إلى البيان.\n\nأما (الشخصية) فلأن مسائل المنطق قوانين عامة فلا شأن لها في القضايا الشخصية التي لا عموم فيها.\n\nوأما (الطبيعية) فهي بحكم الشخصية لأن الحكم فيها ليس فيه تقنين قاعدة عامة، وإنما الحكم كما قلنا على نفس المفهوم بما هو من غير أن يكون له مساس بأفراده. وهو بهذا الاعتبار كالمعنى الشخصي لا عموم فيه، فإن الإنسان في مثال (الإنسان نوع) لا عموم فيه، لأن كلا من أفراده ليس بنوع.\n\nوأما (المهملة) فهي في قوة الجزئية، وذلك لأن الحكم فيها يجوز أن يرجع إلى جميع الأفراد ويجوز أن يرجع إلى بعضها دون البعض الآخر، كما تقول: (رئيس القوم خادمهم)، فإنه إذا لم يبين في هذه القضية كمية الأفراد فإنك تحتمل أن كل رئيس قوم يجب أن يكون كخادم لقومه، وربما كان هذا الحكم من القائل غير عام لكل من يصدق عليه رئيس قوم، فقد يكون رئيس مستغنياً عن قومه إذ لا تكون قوته مستمدة منهم.\n\nوعلى كلا التقديرين يصدق (بعض الرؤساء لقومهم كخدم لهم)، لأن الحكم إذا كان في الواقع للكل فإن البعض له هذا الحكم قطعاً، أما البعض الآخر فهو مسكوت عنه. وإذا كان في الواقع للبعض فقد حكم على البعض.\n\nإذن الجزئية صادقة على كلا التقديرين قطعاً. ولا نعني بالجزئية إلا ما حكم فيها على بعض الأفراد من دون نظر إلى البعض الباقي بنفي ولا إثبات. فإنك إذا قلت (بعض الإنسان حيوان) فهي صادقة لأنها ساكتة عن البعض الآخر فلا تدل على أن الحكم لا يعمه. ولا شك أن بعض الإنسان حيوان وإن كان البعض الباقي في الواقع أيضاً حيواناً، ولكنه مسكوت عنه في القضية.\n\nوإذا كانت القضايا المعتبرة هي المحصورات خاصة سواء كانت كلية أو جزئية فإذا روعي مع (كمّ) القضية كيفها ارتقت القضايا المعتبرة إلى أربعة أنواع: الموجبة الكلية، السالبة الكلية، الموجبة الجزئية، السالبة الجزئية.\n\n(١) كلية القضية وجزئيتها يسمى (كمّ القضية) بتشديد الميم مأخوذة من كم الاستفهامية التي يسأل بها عن المقدار. والمصدر (كمية) بتشديد الميم.",
+      "english": "The propositions upon which logicians principally rely are quantified propositions, to the exclusion of the other divisions. The reason requires explanation.\n\nA personal proposition lacks the generality appropriate to the general laws studied by logic. A natural proposition has the same standing for this purpose: its predicate belongs to the universal concept as such, not to its extension. “Human is a species” does not state a general rule about human individuals; none of them is itself a species.\n\nAn indefinite proposition, however, has the logical *force* of a particular proposition. The judgment might concern all the individuals or only some, without specifying which. “The leader of a people is their servant” could intend every leader, but it could also admit leaders whose authority does not depend upon the people. In either case the weaker statement, “Some leaders serve their people,” follows: if every leader does, then certainly some do; if only some do, it is true directly. The rest are simply not addressed.\n\nThus a particular proposition makes a judgment of some instances without deciding anything, affirmatively or negatively, about the remainder. “Some humans are animals” is true and remains true even when every human is in fact an animal. Its form does not imply that the other humans are not animals.\n\nOnce quantified propositions are recognized as the proper objects of logical analysis, combining their **quantity** (universal or particular) with their **quality** (affirmative or negative) yields the four classical forms: universal affirmative, universal negative, particular affirmative, and particular negative.\n\nThe author's note defines the *quantity of the proposition* (kamm al-qaḍiyya, with a doubled mīm) by reference to the interrogative “how many?” (kam); the abstract noun is *kammiyya*.",
+      "notes": [
+        {
+          "type": "Source",
+          "text": "The Arabic follows the 1402 AH digitally transcribed reading with normalized hamza/kāf, punctuation and paragraph divisions; it is NOT a diplomatic transcription. Independent 1968 scanned-page collation and exercise checks pending."
+        },
+        {
+          "type": "Logic",
+          "text": "Muẓaffar says muhmal is 'in the force of the particular,' not that the speaker explicitly intended exactly some rather than all; a particular proposition does not assert anything concerning unmentioned cases. The analysis presupposes a nonempty subject extension in its ordinary Aristotelian setting."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH Arabic digital transcription; compare 1968 Najaf ACO scan pending",
+        "page": "132–133",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=132&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-C-07",
+      "stage": "C",
+      "chapter": 7,
+      "title": "Quantifier expressions and symbols of four categorical forms",
+      "arabicTitle": "السور وألفاظه",
+      "arabic": "السور وألفاظه\n\nيسمى اللفظ الدال على كمية أفراد الموضوع (سور القضية) تشبيهاً له بسور البلد الذي يحدها ويحصرها، ولذا سميت هذه القضايا (محصورة) و(مسوّرة). ولكل من المحصورات الأربع سور خاص بها:\n\n١ ـ (سور الموجبة الكلية): كل، جميع، عامة، كافة، لام الاستغراق، إلى غيرها من الألفاظ التي تدل على ثبوت المحمول لجميع أفراد الموضوع.\n\n٢ ـ (سور السالبة الكلية): لا شيء، لا واحد، النكرة في سياق النفي، إلى غيرها من الألفاظ الدالة على سلب المحمول عن جميع أفراد الموضوع.\n\n٣ ـ (سور الموجبة الجزئية): بعض، واحد، كثير، قليل، ربما، قلما، إلى غيرها مما يدل على ثبوت المحمول لبعض أفراد الموضوع.\n\n٤ ـ (سور السالبة الجزئية): ليس بعض، بعض ... ليس، ليس كل، ما كل، أو غيرها مما يدل على سلب المحمول عن بعض أفراد الموضوع.\n\nوطلباً للاختصار نرمز لسور كل قضية برمز خاص كما يلي:\n(كل): للموجبة الكلية.\n(لا): للسالبة الكلية.\n(ع): للموجبة الجزئية.\n(س): للسالبة الجزئية.\n\nوإذ رمزنا دائماً للموضوع بحرف (ب) وللمحمول بحرف (حـ) فتكون رموز المحصورات الأربع كما يلي:\nكل ب حـ — الموجبة الكلية.\nلا ب حـ — السالبة الكلية.\nع ب حـ — الموجبة الجزئية.\nس ب حـ — السالبة الجزئية.",
+      "english": "The word indicating the quantity of a categorical subject's instances is called the proposition's **quantifier** (sūr al-qaḍiyya). The expression compares the quantifier to a city's encircling wall (sūr), which delimits and encompasses it. Hence these propositions are called *maḥṣūra* and *musawwara*.\n\nThe universal affirmative uses terms such as “every,” “all,” “general,” “without exception,” and the Arabic lām of unrestricted inclusion: these attribute the predicate to every instance of the subject.\n\nThe universal negative uses “nothing,” “not one,” an indefinite noun under negation, and equivalent expressions: these deny the predicate of every subject instance.\n\nThe particular affirmative uses “some,” “one,” “many,” “few,” “sometimes,” “rarely,” and other forms attributing the predicate to at least some subject instances.\n\nThe particular negative uses “not some,” “some ... not,” “not every,” “not all,” and other forms denying the predicate of some subject instances.\n\nTo abbreviate, Muẓaffar writes **كل** for the universal affirmative, **لا** for the universal negative, **ع** for the particular affirmative, and **س** for the particular negative. With **ب** standing for the subject and **حـ** for the predicate, the four schemata are: **كل ب حـ**, **لا ب حـ**, **ع ب حـ**, and **س ب حـ**, respectively.",
+      "notes": [
+        {
+          "type": "Source",
+          "text": "The Arabic follows the 1402 AH digitally transcribed reading with normalized hamza/kāf, punctuation and paragraph divisions; it is NOT a diplomatic transcription. Independent 1968 scanned-page collation and exercise checks pending."
+        },
+        {
+          "type": "Logic",
+          "text": "The Arabic labels ع and س are the author's chosen abbreviations; do not silently replace them with the later Western A/E/I/O schema. “ليس كل” differs from “كل ... ليس”: keep negation scope explicit."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH Arabic digital transcription; compare 1968 Najaf ACO scan pending",
+        "page": "133–134",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=133&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-C-08",
+      "stage": "C",
+      "chapter": 8,
+      "title": "Personal, indefinite and quantified conditionals",
+      "arabicTitle": "تقسيم الشرطية إلى شخصية ومهملة ومحصورة",
+      "arabic": "تقسيم الشرطية إلى شخصية ومهملة ومحصورة\n\nلاحظنا أن الحملية تنقسم إلى الأقسام الأربعة السابقة باعتبار موضوعها. وللشرطية تقسيم يشبه ذلك التقسيم ولكن لا باعتبار الموضوع إذ لا موضوع لها، بل باعتبار الأحوال والأزمان التي يقع فيها التلازم أو العناد.\n\nفتنقسم الشرطية بهذا الاعتبار إلى ثلاثة أقسام فقط: شخصية، مهملة، محصورة. وليس من أقسامها الطبيعية التي لا تكون إلا باعتبار الموضوع بما هو مفهوم موجود في الذهن.\n\n١ ـ (الشخصية): وهي ما حكم فيها بالاتصال أو التنافي أو نفيهما في زمن معين شخصي أو حال معين كذلك.\n\nمثال المتصلة: إن جاء علي غاضباً فلا أسلم عليه. إذا مطرت السماء اليوم فلا أخرج من الدار. ليس إذا كان المدرس حاضراً الآن فإنه مشغول بالدرس.\n\nمثال المنفصلة: إما أن تكون الساعة الآن الواحدة أو الثانية. وإما أن يكون زيد وهو في البيت نائماً أو مستيقظاً. ليس إما أن يكون الطالب وهو في المدرسة واقفاً أو في الدرس.\n\n٢ ـ (المهملة): وهي ما حكم فيها بالاتصال أو التنافي أو رفعهما في حال أو زمان ما من دون نظر إلى عموم الأحوال والأزمان أو خصوصهما.\n\nمثال المتصلة: إذا بلغ الماء كراً فلا ينفعل بملاقاة النجاسة. ليس إذا كان الإنسان كاذباً كان محموداً.\n\nمثال المنفصلة: القضية إما أن تكون موجبة أو سالبة. ليس إما أن يكون الشيء معدناً أو ذهباً.\n\n٣ ـ (المحصورة): وهي ما بين فيها كمية أحوال الحكم وأوقاته كلاً أو بعضاً، وهي على قسمين كالحملية:\n\nأ ـ (الكلية): وهي إذا كان إثبات الحكم أو رفعه فيها يشمل جميع الأحوال أو الأوقات.\n\nمثال المتصلة: كلما كانت الأمة حريصة على الفضيلة كانت سالكة سبيل السعادة. ليس أبداً أو ليس البتة إذا كان الإنسان صبوراً على الشدائد كان غير موفق في أعماله.\n\nمثال المنفصلة: دائماً إما أن يكون العدد الصحيح زوجاً أو فرداً. ليس أبداً أو ليس البتة إما أن يكون العدد الصحيح زوجاً أو قابلاً للقسمة على اثنين.\n\nب ـ (الجزئية): إذا كان إثبات الحكم أو رفعه فيها يختص ببعض غير معين من الأحوال والأوقات.\n\nمثال المتصلة: قد يكون إذا كان الإنسان عالماً كان سعيداً. وليس كلما كان الإنسان حازماً كان ناجحاً في أعماله.\n\nمثال المنفصلة: قد يكون إما أن يكون الإنسان مستلقياً أو جالساً (وذلك عندما يكون في السيارة مثلاً إذ لا يمكنه الوقوف). قد لا يكون إما أن يكون الإنسان مستلقياً أو جالساً (وذلك عندما يمكنه الوقوف منتصباً).",
+      "english": "Categorical propositions were classified by their subjects, but conditionals do not have a subject in the categorical sense. Their corresponding classification instead concerns the **states and times** at which a connection or incompatibility obtains. Thus they divide into personal, indefinite, and quantified conditionals—not natural propositions, since a natural proposition judges a universal concept as present in the intellect.\n\n**1. Personal (shakhṣiyya).** A conditional affirms or denies a connection or disjunction at one determinate time or in one determinate state. Examples of connected conditionals are: “If ʿAlī comes while angry, I will not greet him”; “If it rains today, I will not leave home”; and “It is not the case that, if the teacher is present now, he is occupied with teaching.” Examples of disjunctives are: “The hour now is either one or two”; “Zayd, while at home, is either asleep or awake”; and “It is not the case that the student, while at school, is either standing or in the lesson.”\n\n**2. Indefinite (muhmala).** The conditional affirms or denies the connection or incompatibility in a state or time without specifying whether this covers all states/times or only some. Connected examples: “If water reaches the measure of a kurr, it does not become impure by contact with an impurity”; “It is not the case that, if a human being lies, he is praised.” Disjunctive examples: “A proposition is either affirmative or negative”; and “It is not the case that a thing is either a metal or gold.” These are the author's original examples, not modernized replacements.\n\n**3. Quantified (maḥṣūra).** This specifies whether the judgment holds in all relevant states/times or some of them. **Universal** conditionals affirm or deny the relation across every state/time: “Whenever a community cares for virtue, it walks the path of happiness”; “Never is it the case that someone patient amid hardship is thereby unsuccessful in his actions.” For disjunctions: “An integer is always either even or odd”; and “It is never the case that an integer is either even or divisible by two” (a denied exclusive disjunction between equivalent conditions).\n\n**Particular** conditionals affirm or deny the relation in some unspecified states/times: “It can happen that, if someone is learned, he is happy”; “Not whenever someone acts prudently is he successful.” For disjunctions: “It may happen that a person is either lying down or sitting,” as in a vehicle where standing is impossible; and “It may fail to be the case that a person is either lying down or sitting,” as when standing is possible.",
+      "notes": [
+        {
+          "type": "Source",
+          "text": "The Arabic follows the 1402 AH digitally transcribed reading with normalized hamza/kāf, punctuation and paragraph divisions; it is NOT a diplomatic transcription. Independent 1968 scanned-page collation and exercise checks pending."
+        },
+        {
+          "type": "Scope of negation",
+          "text": "‘ليس أبداً’ applies negation to the connection/disjunction over all relevant states, while ‘ليس كلما’ denies universality without denying every instance. The example involving evenness and divisibility is a denial of exclusive disjunction, not a claim that neither property holds."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH Arabic digital transcription; compare 1968 Najaf ACO scan pending",
+        "page": "134–136",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=134&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-C-09",
+      "stage": "C",
+      "chapter": 9,
+      "title": "Quantifying connected and disjunctive propositions",
+      "arabicTitle": "السور في الشرطية",
+      "arabic": "السور في الشرطية\n\nالسور في الحملية يدل على كمية أفراد الموضوع. أما في الشرطية فدلالته على عموم الأحوال والأزمان أو خصوصها. ولكل من المحصورات الأربع سور يختص بها كالحملية:\n\n١ ـ (سور الموجبة الكلية): كلما، مهما، متى، ونحوها في المتصلة. ودائماً في المنفصلة.\n\n٢ ـ (سور السالبة الكلية): ليس أبداً، ليس البتة، في المتصلة والمنفصلة.\n\n٣ ـ (سور الموجبة الجزئية): قد يكون فيهما.\n\n٤ ـ (سور السالبة الجزئية): قد لا يكون فيهما. وليس كلما في المتصلة خاصة.",
+      "english": "In a categorical proposition, the quantifier specifies how many of the subject's instances are included. In a conditional, it instead specifies whether the connection or disjunction holds across **all** relevant conditions and times or only **some**. Each of the four combinations of quantity and quality has its appropriate expressions.\n\nThe **universal affirmative** uses “whenever” (*kullamā*), “whatever” (*mahmā*), “when” (*matā*), and similar expressions for connected conditionals, and “always” (*dāʾiman*) for disjunctions.\n\nThe **universal negative** uses “never” (*laysa abadan*) or “not at all / under no circumstances” (*laysa al-batta*) in either kind of conditional.\n\nThe **particular affirmative** uses “it may happen” (*qad yakūn*) in both kinds.\n\nThe **particular negative** uses “it may not happen” (*qad lā yakūn*) in both, and “not whenever” (*laysa kullamā*) specifically with connected conditionals. The latter denies an unrestricted connection; it does not assert the connection's universal failure.",
+      "notes": [
+        {
+          "type": "Source",
+          "text": "The Arabic follows the 1402 AH digitally transcribed reading with normalized hamza/kāf, punctuation and paragraph divisions; it is NOT a diplomatic transcription. Independent 1968 scanned-page collation and exercise checks pending."
+        },
+        {
+          "type": "Logic",
+          "text": "The occurrence of ‘ليس كلما’ constitutes a quantifier-scope distinction, not merely a negative consequent. Keep this in later contradiction/conversion rules."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH Arabic digital transcription; compare 1968 Najaf ACO scan pending",
+        "page": "136–137",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=136&type=c_fbook"
+      }
     }
   ],
   "glossary": [
