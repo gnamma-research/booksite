@@ -22,6 +22,9 @@ h1{font:normal clamp(32px,5vw,48px)/1.18 Georgia,serif;margin:12px 0 18px}
 .files strong{display:block;font:600 13px Arial,sans-serif;color:var(--ink);margin-bottom:6px}
 .files a{font:14px Georgia,serif;overflow-wrap:anywhere}
 .files small{display:block;margin-top:9px;color:var(--muted);font:11px Arial,sans-serif}
+.revision-state{font:12px/1.5 Arial,sans-serif;color:var(--muted);margin:0 0 15px}
+.revision-state[data-release-freshness="earlier"]{font-weight:700;color:var(--ink)}
+.revision-state[data-release-freshness="current"]{color:var(--accent)}
 footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font:11px/1.6 Arial,sans-serif}
 @media(max-width:650px){main{padding-top:33px}.files{grid-template-columns:1fr}.site-header{padding:15px 18px}}
 </style>
@@ -30,7 +33,7 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font:1
 <header class="site-header"><a class="brand" href="../../../">gnamma</a><a class="back" href="../">← Return to reader</a></header>
 <main><span class="eyebrow">THE READING ROOM · A4 EDITIONS</span>
 <h1>Downloadable books</h1>
-<p class="intro">The reading, Arabic–English study, and Arabic reference layouts are typeset from the current source text, with selectable text and numbered passage notes. The English in progress is clearly distinguished from the available Arabic in each book.</p>
+<p class="intro">The reading, Arabic–English study, and Arabic reference layouts are typeset from a recorded source revision, with selectable text and numbered passage notes. Each book is checked against the current online text before its release is labelled current. The English in progress is clearly distinguished from the available Arabic in each book.</p>
 <p id="status" role="status" aria-live="polite">Checking published editions…</p>
 <div id="library"></div>
 <footer>The published file manifest records SHA-256 checksums for each PDF and its source text. These are working textual editions, not independently certified critical editions. For the latest on-screen text, return to the reader.</footer>
@@ -42,25 +45,58 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font:1
  function el(t,c,txt){let n=document.createElement(t);if(c)n.className=c;if(txt!=null)n.textContent=safe(txt);return n;}
  const modes=['reading','study','reference'];
  const names={reading:'Reading',study:'Arabic–English study',reference:'Arabic reference'};
+ const sourcePaths={
+   'al-Manṭiq':'../muzaffar-al-mantiq/data/book.json',
+   'Bidāyat al-Ḥikma':'../bidayat-al-hikma/data/book.json',
+   'Nihāyat al-Ḥikma':'../nihayat-al-hikma/data/book.json'
+ };
+ async function sourceFreshness(book,rows){
+   // A manifest is a release record, not proof that the live text has not changed.
+   // Hash the original bytes, never a re-serialized JSON object.
+   const digest=rows[0]?.source_sha256;
+   if(!/^[0-9a-f]{64}$/.test(digest||'')||!globalThis.crypto?.subtle)return 'unverified';
+   if(rows.some(row=>row.source_sha256!==digest))return 'unverified';
+   try{
+     const response=await fetch(sourcePaths[book],{cache:'no-store'});
+     if(!response.ok)throw Error('source not available');
+     const bytes=await response.arrayBuffer();
+     const hash=await crypto.subtle.digest('SHA-256',bytes);
+     const actual=Array.from(new Uint8Array(hash),v=>v.toString(16).padStart(2,'0')).join('');
+     return actual===digest?'current':'earlier';
+   }catch(_){return 'unverified'}
+ }
  try{
    const response=await fetch('./manifest.json',{cache:'no-store'});
    if(!response.ok)throw Error('unavailable');
    const manifest=await response.json();
    const rows=Array.isArray(manifest.files)?manifest.files:[];
    if(!rows.length)throw Error('empty');
+   const freshness=await Promise.all(['al-Manṭiq','Bidāyat al-Ḥikma','Nihāyat al-Ḥikma'].map(async book=>{
+     const items=rows.filter(x=>x.book===book);
+     return [book,items.length?await sourceFreshness(book,items):'unverified'];
+   }));
+   const freshMap=Object.fromEntries(freshness);
    for(const book of ['al-Manṭiq','Bidāyat al-Ḥikma','Nihāyat al-Ḥikma']){
      const all=rows.filter(x=>x.book===book);if(!all.length)continue;
      const section=el('section','book'),title=el('h2','',book),details=el('p','details',all[0].arabic_sections+' source passages · '+all[0].english_sections+' with working English');
+     const freshnessText=freshMap[book]==='current'?'Matches the current online text':
+       freshMap[book]==='earlier'?'Previous release — the online text has been revised':'Source revision could not be checked';
+     const revision=el('p','revision-state',freshnessText);
+     revision.dataset.releaseFreshness=freshMap[book];
      const files=el('ul','files');
      for(const mode of modes){
        const r=all.find(x=>x.mode===mode);if(!r)continue;
        if(!/^[a-z0-9-]+-(reading|study|reference)-A4\.pdf$/.test(r.filename))continue;
        const li=el('li'),heading=el('strong','',names[mode]),a=el('a','', 'Download PDF'),size=el('small','',Math.round(Number(r.bytes)/1024)+' KB · SHA-256 '+String(r.sha256||'').slice(0,12)+'…');
-       a.href='./'+r.filename;a.download=r.filename;li.append(heading,a,size);files.append(li);
+       a.href='./'+r.filename;a.download=r.filename;
+       if(freshMap[book]!=='current')a.textContent='Download recorded PDF';
+       li.append(heading,a,size);files.append(li);
      }
-     section.append(title,details,files);list.append(section);
+     section.append(title,details,revision,files);list.append(section);
    }
-   state.textContent=rows.length+' PDF editions in the verified release manifest.';
+   const stale=freshness.filter(([_,status])=>status==='earlier').length;
+   const unknown=freshness.filter(([_,status])=>status==='unverified').length;
+   state.textContent=rows.length+' PDF editions recorded. '+(stale?stale+' book(s) have newer online text. ':'')+(unknown?unknown+' book(s) could not be source-checked. ':'')+(stale||unknown?'See the status shown below.':'All three book sources match the released files.');
  }catch(error){
    state.textContent='Typeset PDF releases are not yet available here. You can still use Print / PDF in the reader to make a PDF of the current book.';
    list.replaceChildren();
