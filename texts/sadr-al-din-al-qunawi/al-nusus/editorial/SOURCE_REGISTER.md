@@ -8,7 +8,7 @@ The counts below concern passages supplied in the working reader, not complete p
 
 | Work | Available source status | Bilingual paragraph records | Entire text translated? | Early manuscript collation | Publication status |
 |---|---|---:|---|---|---|
-| QUN-NU, Qūnawī, *al-Nuṣūṣ* | A complete publicly accessible online Arabic transcription; 155-page printed Arabic PDF identified and inspected selectively | 11 | **No**: complete opening incipits and selected later passages only | 0 folios independently collated | Working source-located page; not critical |
+| QUN-NU, Qūnawī, *al-Nuṣūṣ* | A complete publicly accessible online Arabic transcription; a separate 155-page printed Arabic PDF inspected at relevant pages (42–45) | 16 | **No**: complete opening incipits and selected later passages only | 0 folios independently collated | Working source-located page; not critical |
 | IZN-RIS, al-Iznīqī, short *Risāla* | Arabic edition by Balaban/Çalışkan (2023), pp. 831–850+ of Arabic text | 2 | **No**: two directly checked bilingual excerpts; seven arguments previously translated in English draft | 0 folios collated | Working source-located page; not critical |
 | KHU-ZUB, *Zubdat al-taḥqīq* | Bibliographical source and manuscript study; one Princeton catalogue record identified | 0 | No | 0 | Registry only |
 | KHU-QA, 22 questions | Ayasofya 4805 fols. 1a–13b reported in scholarly study | 0 | No | 0 | Registry only |
@@ -35,6 +35,13 @@ The counts below concern passages supplied in the working reader, not complete p
 5. QUN-NU-001-A: negative predication under essential absoluteness must not be confused with the denial of divine names at the level of determination.
 6. Hadiths and spiritual sayings cited in the base texts need independent isnād/source checking; editorial inclusion is not authentication.
 7. *Zubdat* and *Asrār* authorial attributions are **unresolved**. Do not automatically conflate authors because editions and catalogues share overlapping titles.
+
+## Further source comparison — added this stage
+- QUN-NU-003-B, the statement that judgement depends on the state of judge and judged, has been translated in full in the bilingual record. The publicly accessible Arabic transcription and the printed Ibrāhīm Muḥammad Yāsīn edition (printed p. 43, PDF index 38) show significant differences in the opening and in the relation of judgement to the time of judging. **No preferred authorial lemma is imposed without manuscript collation.**
+- QUN-NU-003-C, the statement that knowledge follows existence, has been translated in full and checked against the separate printed edition (printed p. 44, PDF index 39). The final sentence has a materially different wording in the two accessible witnesses. **The English corresponding to the online reading is marked provisional.**
+- QUN-NU-004-A and 004-B now translate Qūnawī's explicit distinction between special, name-conditioned stations and the most comprehensive station. This primary passage should be the baseline for the planned study of how metaphysical terminology shifts with perspective.
+- QUN-NU-005-A gives a source-located full translation of the passage on the unseen of divine Identity, the most comprehensive determination, and principiality under the essential relation of knowledge.
+- **Current bilingual working records: 18** (Qūnawī 16; al-Iznīqī 2). No complete medieval book has been translated and no actual manuscript leaf has yet been collated.
 
 ## Primary translation priorities (not merely thematic notes)
 **1. Complete al-Iznīqī.** Finish printed 831–850+ in Arabic–English paired units: preface; introductory discussions of `ʿilm` and `maʿrifa`; all four chapters; Qurʾān and hadith citations; Persian poetry; conclusion. The existing Stage 2 English draft translated seven consecutive rational arguments on pp. 835–836 plus selected later passages, but the Arabic transcript and many paragraphs are missing. No coverage of a page is awarded merely because one sentence was read.
