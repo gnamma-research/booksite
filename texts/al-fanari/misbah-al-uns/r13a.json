@@ -1,0 +1,192 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R13a",
+  "date": "2026-11-09",
+  "startSection": "4.611",
+  "endSection": "4.628",
+  "sourceRepo": "OpenITI/0850AH",
+  "sourceCommit": "e2715c62fb458ce3ddc43b962cd55677cdd7bc35",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.611",
+      "number": 611,
+      "pageStart": 453,
+      "pageEnd": 453,
+      "arabic": "اما كلام الشيخ الجندي: فهو ان الطبيعة التي هي القوة الفعالة للصورة الطبيعية، ظاهرية الإلهية والإلهية باطنيتها وهويتها، وهى أحدية الجمع الحقائق الفعلية الوجوبية، والله هو الفاعل للأفعال كلها، فأول صورة وجدت في المادة العمائية الكونية كانت طبيعة واحدة جامعة للقوى الفعالة والمواد المنفعلة في أحدية جمعها الذاتية، وإليه الإشارة بقوله: أول ما خلق الله الدرة وهى حقيقة الجسم الكلى على أحد معنييها، فطرحت التجليات الأسمائية والأنوار الربانية أشعتها عليها فحللتها فذابت حياء وانحلت ماء، فاستوى عليه عرش الحياة، فألحت (1) عليه حرارة التجليات المتوالية فتبخر جوهر الماء على صورة الهواء، فصعد بخار عمائي احاطي إحدى جمعي، فاتصل بنور التجلي البسيط والمتجلى المحيط، فصار فلكا محيطا وحدانيا بسيطا وجذب نور الرحمن المستوى عليه بالرحمة والجود، فتكون منه الفلك الأعظم وفيه فلك العرش في أعاليه ويسمى فلك الأفلاك وهو اطلس وحداني وجوهر أبدى ومستوى رحماني على طبيعة أحدية جمعية بين حقائق أربع هي خامستها، وذلك قبل وجود التنافر والتنافي، وإحاطته من إحاطة المستوى عليه وهو نفس الرحمان، فالكلمة في العرش من نفس الرحمن واحدة هي الامر الإلهي لإيجاد الكائنات.",
+      "english": "As for the words of Shaykh al-Jandī, they are as follows. Nature, which is the active power of the natural form, is the outward aspect of Divinity; Divinity is its inwardness and its identity, being the unicity that gathers together the realities of necessary activity. God is the agent of all actions. The first form to arise within cosmic Cloud-matter [al-mādda al-ʿamāʾiyya al-kawniyya] was one nature, gathering active powers and receptive materials in its essential unitive comprehensiveness. This is alluded to in the saying, “The first thing God created was the Pearl,” which, in one of its meanings, is the reality of Universal Body. The self-disclosures of the Names and lordly lights cast their rays upon it; they dissolved it, and it melted out of modesty, becoming water. The Throne of Life was established over that water. The heat of successive self-disclosures pressed upon it until the substance of the water evaporated into the form of air; a comprehensive, unitive, cloudlike vapour rose, joined to the light of simple self-disclosure and the encompassing Self-Discloser, and became a simple, unitary, encompassing celestial sphere. The light of the All-Merciful, established over it through mercy and generosity, drew it onward. From it emerged the greatest sphere, within which is the sphere of the Throne in its uppermost reaches, called the Sphere of Spheres. It is without stars [aṭlas], unitary, an everlasting substance and a locus where the All-Merciful is established upon a comprehensive unitive nature among four realities of which this nature is the fifth. All this is before antagonism and opposition arise. Its encompassing quality derives from the encompassment of the One established over it, the Breath of the All-Merciful. The Word in the Throne, from that Breath, is one: the divine Command for the origination of beings.",
+      "notes": "Al-Jandī quotation. “Pearl” report, order of the cosmological derivation, and identity of “the fifth” require comparison with al-Jandī and the print witness; not authenticated as prophetic hadith.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.612",
+      "number": 612,
+      "pageStart": 453,
+      "pageEnd": 454,
+      "arabic": "ثم قال: وفي جوف فلك العرش فلك الكرسي كحلقة ملقاة في ارض فلاة، # # ومن هذا الكرسي ينقسم الكلمة إلى حكم وخبر، وهو للقدمين الواردين في الخبر، كالعرش لاستواء الرحمن. وله ملائكة قائمون به لا يعرفون الا الرب تعالى، وبعد الرب قصد توجه الاسم الغنى بتجليه فوجد فلك الأفلاك وهو الأطلس، ومحدبه تحت مقعر فلك الكرسي والطبيعة، ولتماثل اجزائه لا يعرف لحركته بداية ولا نهاية - ولوجوده حدثت الأزمان -",
+      "english": "Then he says: Within the sphere of the Throne is the sphere of the Footstool, like a ring thrown into a vast plain. In the Footstool the Word divides into a ruling [ḥukm] and a communication [khabar]; this is related to the Two Feet mentioned in the report, just as the Throne is related to the All-Merciful’s establishment. Angels stand in attendance upon it who know none but the Lord Most High. After the Lord’s purpose was directed [toward creation], the Name al-Ghanī [the Self-Sufficient] directed its self-disclosure, and the Sphere of Spheres, the starless sphere, appeared. Its convex surface lies beneath the concave surface of the sphere of the Footstool and Nature. Because its parts are alike, no beginning or end of its motion can be discerned; through its existence temporal durations came into being.",
+      "notes": "The electronic phrase وبعد الرب قصد توجه الاسم الغنى is syntactically difficult; “After the Lord's purpose was directed” is provisional. The Two Feet is a transmitted symbol, not a literal anatomy.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.613",
+      "number": 613,
+      "pageStart": 454,
+      "pageEnd": 454,
+      "arabic": "ثم توجه الاسم المقدر لإيجاد فلك البروج، وذلك أنه لما دار فلك العرش بما في جوفه من الكرسي وفلك الأفلاك جوهرا وحدانيا نورانيا، الحت (1) التجليات على باقي الجوهر المستحيل المائي، فصعدته خالصا نوريا كالأول، فصعد من ذلك فلك كلي محيط وحداني وفيه كل شئ وحقيقة من الحقائق الكونية المندمجة في الجوهر الأصلي الذي هو الجسم الكل من المناسبات وغيرها.",
+      "english": "Next the Name al-Muqaddir [the One Who determines measures] directed itself toward bringing forth the sphere of the zodiacal signs. When the sphere of the Throne had revolved with the Footstool and Sphere of Spheres within it, as one luminous, unitive substance, the self-disclosures pressed upon the remainder of the substance that had been transformed into water. They raised it, pure and luminous like the first, and from it rose a universal, encompassing, unitive sphere. It contained every thing and every cosmic reality enfolded in the original substance, which is Universal Body, together with their correspondences and other relations.",
+      "notes": "",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.614",
+      "number": 614,
+      "pageStart": 454,
+      "pageEnd": 455,
+      "arabic": "فلما اخذ الصاعد الرابع مكانه تحت مقعر فلك الأفلاك تكون فلكا محاطا بما فوقه، محيطا بما في جوفه حول المركز المنحل، وكانت التجليات المفصلة لهذا الجوهر المجمل الذي هو مفتاح الباب المقفل، مقتضية لتفصيل ما فيها من الحقائق، فتقدرت بالمقدر منازل النازل من الأنوار التي هي منازل اسرار الأسماء الإلهية، فتعينت البروج بحقائقها ومنازل الأنوار بدقائقها، وخرجت أصول جواهر الأنوار العلوية الكلية الجسمية لطبيعتها العلية الفعلية - خروجا طبيعيا وحدانيا نوريا - فأخذت الأرواح والانفاس المشرقة من هذا الفلك مظاهرها وتعينت الوجوه التي للعقل الأول - وهى ثلاث مائة وستون وجها - من مقعر المحيط الأطلس في هذا الفلك، والأطلس واحد وحدة كلية وبسيط بساطة نسبية شاكلة لجوهر روحه وهو العقل الأول، وتجلت أنوار الرحمة من سبحات وجه الرحمن من عين العقل الأول من حضرة الاسم المدبر. # .",
+      "english": "When this fourth ascending substance took its place beneath the concave surface of the Sphere of Spheres, it formed a sphere encompassed by what was above it, itself encompassing all that lay within around the dissolved centre. The self-disclosures that differentiate this undifferentiated substance—the key to the locked door—required the detailing of the realities comprised within it. Through the Name that determines measures, the stations through which the descending lights pass were measured out; these are stations of the secrets of the divine Names. Thus the zodiacal divisions were determined according to their realities, and the stations of the lights according to their subtleties. The elemental principles of the universal, bodily, supernal substances of light came forth according to their high, active nature, in a natural, unitive, luminous emergence. The spirits and breaths shining from this sphere assumed their loci of manifestation. The faces of the First Intellect, three hundred and sixty in number, were determined from the concavity of the encompassing starless sphere in this celestial sphere. The starless sphere has a universal unity and a relative simplicity corresponding to the substance of its spirit, the First Intellect. The lights of mercy shone forth from the splendours of the All-Merciful’s Face, from the source of the First Intellect, in the Presence of the Name al-Mudabbir [the Governor].",
+      "notes": "The source has an isolated “# .” after this numbered section; do not insert it in the English. The 360 “faces” are a historically transmitted symbolic enumeration.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.615",
+      "number": 615,
+      "pageStart": 455,
+      "pageEnd": 455,
+      "arabic": "ولما انقسمت الكلمة الواحدة العرشية في الكرسي بتدلي القدمين إلى كلمتين: # وهما الخبر والحكم الذي هو خمسة أقسام، لأنه ينقسم إلى أمر ونهى، وهما إلى خمسة: وجوب وحظر وإباحة وندب وكراهة، فإذا ضربت الاثنين اللذين للقدمين في الستة كان المجموع اثنى عشر، ستة الهية وستة كونية، فانقسم هذا الفلك على اثنى عشر برجا، كالكلمة الإلهية في قلب العرش وهو الشرع.",
+      "english": "When the single Throne-Word was divided in the Footstool by the descent of the Two Feet into two words—namely communication [khabar] and ruling [ḥukm]—the ruling had five divisions. For it divides into command and prohibition, and these in turn correspond to five categories: obligation [wujūb], prohibition [ḥaẓr], permissibility [ibāḥa], recommendation [nadb], and reprehensibility [karāha]. When the two associated with the Feet are multiplied by six, the result is twelve: six divine and six cosmic. This sphere was therefore apportioned into twelve zodiacal signs, corresponding to the divine Word at the heart of the Throne, which is the revealed Law [al-sharʿ].",
+      "notes": "The account compresses 2×6 with the five legal categories; preserve the source enumeration and flag its missing intermediate step rather than inventing a sixth category.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.616",
+      "number": 616,
+      "pageStart": 455,
+      "pageEnd": 455,
+      "arabic": "ولما كان الكرسي موضع القدمين لم يعط في الآخرة الا دارين: وهما الجنة والنار، فإنه اعطى للعباد بالقدمين مطلقا دارين: وهما الدنيا والآخرة، واعطى فلكين: فلك البروج وفلك المنازل الذي هو ارض الجنة، والمنازل مقادير التقاسيم التي في فلك البروج وهى ثمانية وعشرون من أجل حروف النفس الرحماني، وهى مقسومة على اثنى عشر برجا ليكون لكل برج في العدد الصحيح، والكسر حظ حتى يعم حكمه في العالم، فكان لكل برج منزلتان وثلث، وهذه الأفلاك الأربعة وان وجدت من طبيعة أحدية جميعة، لكن ظهر حكم الطبيعة فيها ظهورا تركيبيا وحدانيا منقسما إلى أربع - كما يفصل في العناصر - فجعلت اقساما ثلاثة لكل ثلاث تلك الأربع، وفي ذلك ظهور التثليث والتربيع الأصلي، وإذا ضربت الثلاثة في الأربعة كان المجموع اثنى عشر.",
+      "english": "Since the Footstool is the locus of the Two Feet, it yields in the hereafter only two abodes: Paradise and Hell. More generally the Two Feet give servants two abodes, this world and the next; and two spheres, the sphere of the zodiacal signs and the sphere of the lunar mansions, which is the earth of Paradise. These mansions are measures of the divisions in the zodiacal sphere, twenty-eight in number on account of the letters of the Breath of the All-Merciful. They are distributed among twelve signs so that each sign receives a share both in whole numbers and in fractions, allowing its ruling to extend throughout the world. Thus each sign receives two mansions and one third. Although these four spheres arose from one all-comprehensive unitive Nature, Nature’s ruling appeared in them as a composed, unitary manifestation divided into four, just as it is differentiated in the elements. It made three divisions for each of the four, thereby displaying the primordial triplicity and quadruplicity. Three multiplied by four gives twelve.",
+      "notes": "The numerical relationships (28/12=2⅓, 3×4=12) are arithmetical features of the reported symbolic cosmology, not contemporary astronomical evidence.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.617",
+      "number": 617,
+      "pageStart": 455,
+      "pageEnd": 455,
+      "arabic": "وظهرت في هذا الفلك الأنفاس الرحمانية أرواحا للكواكب الثابتة لما حصلت فيه أمزجة شريفة جوهرية قابلة للاشتعال بنور التجلي النفسي الرحماني، وتعينت فيها أرواح الكواكب اجراما نورية جامعة لغرائب الطبائع، وتكونت الكوائن فيه على وجه لا يقبل الفساد. إلى هنا كلام الشيخ الجندي.",
+      "english": "In this sphere, the Breaths of the All-Merciful appeared as the spirits of the fixed stars, when noble substantial temperaments arose therein capable of being ignited by the light of the self-disclosure of the Merciful Breath. The spirits of the stars were determined therein as luminous bodies combining the wondrous properties of natures, and beings formed there in a fashion that does not admit of corruption. Here end the words of Shaykh al-Jandī.",
+      "notes": "Explicit end of al-Jandī's quoted account. Note the possible variation between التجلي النفسي and “Breath-related” disclosure; check print.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.618",
+      "number": 618,
+      "pageStart": 455,
+      "pageEnd": 456,
+      "arabic": "واما كلام الشارح الفرغاني فهو: ان الطبيعة بحكم محلها الذي هو عالم المثال لما انبسطت انبساطا تاما وحدانيا وتصورت بأقرب صورة إلى الوحدة والبساطة - وهو هيئة الاستدارة - عين البارئ لها صورة مستديرة هي العرش المحيط بجميع عالم الصور، ولان هذا الكون الهبائي مظهر للوجه الرابع من اللوح، وكان لهذا الوجه ثلاثة احكام:",
+      "english": "As for the words of the commentator al-Farghānī, they are these. Nature, by virtue of its locus—the world of similitudes [ʿālam al-mithāl]—expanded in a completely unitive way and assumed the form nearest to unity and simplicity, namely circularity. The Name al-Bāriʾ [the Fashioner] determined for it a round form: the Throne, encompassing the whole world of forms. Since this primordial dust-like formation [al-kawn al-habāʾī] is the locus of manifestation of the Tablet’s fourth aspect, and this aspect has three rulings, [these are as follows].",
+      "notes": "Opening of al-Farghānī quotation. Bracketed transition supplied for readability; preserve image/world of similitudes separate from physical astronomy.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.619",
+      "number": 619,
+      "pageStart": 456,
+      "pageEnd": 456,
+      "arabic": "الأول حكم النزول إلى انهى مرتبة الحس ثبت به الطول في الجسم.",
+      "english": "First, the ruling of descent to the furthest degree of sense-perception: through this length was established in body.",
+      "notes": "",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.620",
+      "number": 620,
+      "pageStart": 456,
+      "pageEnd": 456,
+      "arabic": "والثاني حكم التفصيل والتركيب الصوري ظهر العرض به فيه.",
+      "english": "Second, the ruling of differentiation and formal composition: through this breadth appeared within it.",
+      "notes": "",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.621",
+      "number": 621,
+      "pageStart": 456,
+      "pageEnd": 456,
+      "arabic": "والثالث حكم التدبير لبقاء هذه الصور المفصلة ودوامها، به تحقق العمق في الجسم.",
+      "english": "Third, the ruling of governance for the preservation and persistence of these differentiated forms: through this depth was realised in body.",
+      "notes": "",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.622",
+      "number": 622,
+      "pageStart": 456,
+      "pageEnd": 456,
+      "arabic": "رأى بعض المكاشفين صورة العرش على هيئة مثلث، ولأجل تعينه من عين الأركان الطبيعية رآه بعضهم على هيئة مربع. ولأجل تحققه من بين هذه الأركان الأربعة في هذه المعاني الثلاثة انقسمت صورة العرش على اثنى عشر قسما مفروضة - لا محسوسة -",
+      "english": "Some recipients of unveiling saw the form of the Throne in the shape of a triangle; because of its determination from the very reality of the natural elements, others saw it in the form of a square. Because it becomes actual among these four elements through the three meanings just mentioned, the form of the Throne is divided into twelve divisions—not sensed physically, but posited or understood.",
+      "notes": "Explicitly source describes the twelve divisions as hypothetical/intelligible rather than sensed. “Elemental principles” are al-arkān al-ṭabīʿiyya.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.623",
+      "number": 623,
+      "pageStart": 456,
+      "pageEnd": 456,
+      "arabic": "وكانت حقيقة هذه النسبة العرشية بحكم المرتبة التي ظهرت فيها مثالية، ثم عين الاسم لها هيئة أخرى دورية بحسب الحكم النزولي، وتلك الهيئة الجسمانية تسمى العرش باعتبارها فلك الأفلاك والأطلس وفلك البروج والمحدد، وهذه الهيئة الثابتة هي حقيقة الجسم الكل، ولان تعين هذا العرش في حصة من الحضرة العمائية التي هي مستوى الرب، الشامل حكمه جميع الخلق، وذلك مختص بالاسم الرحمن كان هذا العرش مستوى الاسم الرحمن على جميع معاني الاستواء، وهى الاستقرار والتمكن أو الاستيلاء أو التمام والبلوع إلى الغاية، نحو: استوى الرجل، انتهى شبابه، أو القصد والتوجه، نحو: استوى إلى السماء، أي قصد خلقها أو الاعتدال.",
+      "english": "The reality of this relation to the Throne, by the ruling of the degree in which it appears, is imaginal. Then the Name determined for it another, circular configuration in accordance with the ruling of descent. That bodily configuration is called the Throne insofar as it is the Sphere of Spheres, the starless sphere, the sphere of the zodiacal signs, and the determining sphere. This stable configuration is the reality of Universal Body. Since the determination of this Throne occurs in a portion of the Cloud-Presence—which is the Lord’s place of establishment and whose ruling encompasses all creation—and since that pertains especially to the Name al-Raḥmān, this Throne became the locus of establishment of the Name al-Raḥmān in every meaning of istiwāʾ: settledness and firmly occupying a place; dominance; completion and attaining the end, as in saying “the man has reached his full maturity”; direction and turning toward, as in “He turned to the heaven,” meaning that He intended its creation; or equilibrium.",
+      "notes": "Critical theological note: this reports a polysemy of istiwāʾ without requiring physical sitting. “Portion of the Cloud-Presence” renders حصة من الحضرة العمائية; verify literal scope.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.624",
+      "number": 624,
+      "pageStart": 456,
+      "pageEnd": 457,
+      "arabic": "وذلك لان أمر الوجود استقر بالتمكن من ايجاد أجناس صور العالم وأنواعها، فاستولى به على جميع مراتب مملكته بحسب تركيب جواهره، كيف ويعطى مادته أي صورة شاء ومتى شاء، فان هذا العرش هو أصل صور الزمان بحركته الدورية، فتم ظهور أمر الوجود من حيث أصول مراتب ظهوره التي هي المعنى والروح والصورة # واصل الزمان والمكان، فبلغ الغاية وقصد وتوجه إلى تركيب الجواهر وتفصيل الصور، فاعتدل بين كمال الظهور وكمال البطون وبين الاجمال والتفصيل، وكما أن نسبة القلم إلى التجلي الأول بالظهور المعنوي الإلهي الاجمالي للنفس الرحماني ونسبة اللوح إليه بالظهور الروحاني التفصيلي له كانت أتم، فكذلك عند تعين هذا الكون الهبائي تعينت منه الصورة العرشية الاجمالية المثالية وفي ضمنها صورتها الجسمانية، فكانت نسبته إلى مظهرية القلم أشد.",
+      "english": "This is because the affair of existence became established through the capacity to bring forth the genera and species of the world’s forms, and thereby exercised dominion over all the degrees of its kingdom according to the composition of their substances. Indeed, it can impart to its matter whatever form it wills and whenever it wills. For this Throne, through its circular movement, is the origin of the forms of time. Thus the affair of existence was fully manifested according to the fundamental degrees of its appearing: meaning, spirit, form, and the origins of time and place. It reached its goal and directed itself toward the composition of substances and differentiation of forms, reaching equilibrium between the perfection of outward manifestation and of inward concealment, between undifferentiated comprehensiveness and differentiation. Just as the Pen relates more fully to the First Self-Disclosure in respect of the divine, intelligible, comprehensive manifestation of the Breath of the All-Merciful, while the Tablet relates more fully to that disclosure in respect of its detailed spiritual manifestation, so too, when this primordial dust-like formation was determined, the comprehensive imaginal form of the Throne was determined from it, including its bodily form within it. Its relation to the manifestation of the Pen was therefore stronger.",
+      "notes": "Note alternation in attribution: Pen = comprehensive intelligible aspect; Tablet = differentiated spiritual aspect. The last possessive refers to the Throne.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.625",
+      "number": 625,
+      "pageStart": 457,
+      "pageEnd": 457,
+      "arabic": "ثم اقتضت الحقيقة الحبية بالتوجهات والاجتماعات الأسمائية ومظاهرها الروحانية ان يتعين من هذا الكون الهبائي صورة طبيعية قابلة للتفصيل، تكون مظهرا للوح المحفوظ وتفصيله وتكون نسبته إليه أتم.",
+      "english": "Then the reality of love, through the orientations and conjunctions of the Names and their spiritual loci of manifestation, required that a natural form susceptible of differentiation be determined from this dust-like formation; it would be a locus of manifestation for the Preserved Tablet and for its articulation, and its relation to the Tablet would be more complete.",
+      "notes": "",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.626",
+      "number": 626,
+      "pageStart": 457,
+      "pageEnd": 457,
+      "arabic": "ثم عين الاسم البارئ لها صورة مستديرة تكون قابلة لظهور تفصيل الصور المعنوية والروحانية والحسية اللطيفة والكثيفة المسماة بالكرسي الكريم، فباعتبار حكم تثليث وساطته له ثلاثة أوجه:",
+      "english": "Then the Name al-Bāriʾ determined for it a circular form susceptible to the manifestation of differentiated intelligible, spiritual, and sensory forms, both subtle and dense. This is called the Noble Footstool [al-kursī al-karīm]. Owing to the threefold ruling of its intermediary function, it has three aspects.",
+      "notes": "The triplicity is the threefold mediation by the Footstool, NOT three unrelated physical stools.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.627",
+      "number": 627,
+      "pageStart": 457,
+      "pageEnd": 457,
+      "arabic": "الأول ما له بحكم الاجمال والوحدة والبساطة مما يلي حضرة الوجوب التي هي أحد وجهي الحضرة العمائية وهى مرتبة الأرواح، وهذا الوجه صار مرآة لظهور كل صورة روحانية فيها وتصورها بصور مثالية أكثف من الروحانية والطف من العنصرية الجسمانية.",
+      "english": "The first is its aspect of comprehensive undifferentiation, unity, and simplicity, facing the Presence of Necessity—one of the two faces of the Cloud-Presence, corresponding to the rank of spirits. This face became a mirror for the manifestation of every spiritual form within it and for its assuming imaginal forms denser than spiritual forms but subtler than elemental, corporeal ones.",
+      "notes": "",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.628",
+      "number": 628,
+      "pageStart": 457,
+      "pageEnd": 458,
+      "arabic": "الثاني ماله بحكم ظهور التفصيل والتركيب من الأعيان الطبيعية مما يلي حضرة الامكان التي هي الوجه الاخر من الحضرة العمائية، وهذه الحضرة هي المسماة بمرتبة الحس والشهادة وهذا الوجه صار مرآة قابلة لظهور كل صورة عنصرية مركبة وما ينتشئ منها من الافعال والأقوال والأحوال، وهى صورة الطف من الصور التي في عالم الشهادة. وانما يتعين هذه الصور في هذا الوجه بعد تعين تلك الصور في عالم الشهادة، ولان في # ضمن صورة الكرسي المثالية من حيث هذا الوجه كانت له صورة جسمانية على نحو ما ذكرناه في الصورة العرشية سمى الكرسي من حيثها بفلك الكواكب والمنازل، وبالحركة المضافة إلى الهيئة العرشية بحسب نقطة ومركز، ومن هيئته الكرسي مضافا إليها تعين المقدار اليومي من الزمان، وبنفس الحركة تعين نفس الزمان.",
+      "english": "The second is its aspect of the manifestation of differentiation and composition from natural entities, facing the Presence of Possibility—the other face of the Cloud-Presence, called the degree of sense and witnessing. This face became a mirror receptive to the manifestation of every composite elemental form, and of the acts, utterances, and states that arise from it; its image is subtler than forms in the world of witnessing. Yet such forms become determined in this aspect only after their determination in the world of witnessing. Because a bodily form was comprised within the imaginal form of the Footstool under this aspect, in the way described concerning the Throne, the Footstool in this respect was named the Sphere of the Stars and Mansions. Through the motion attributed to the Throne’s configuration in relation to a point and centre, together with the configuration of the Footstool as added to it, the daily measure of time became determined; through the motion itself time as such was determined.",
+      "notes": "Al-Farghānī distinguishes the preceding spiritual-imaginal face from this sensory-facing face, and distinguishes measured daily duration from time's underlying actuality.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    }
+  ]
+}
