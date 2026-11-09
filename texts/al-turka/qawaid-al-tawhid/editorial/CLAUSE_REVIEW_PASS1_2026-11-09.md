@@ -63,8 +63,8 @@ All clauses, offsets, corresponding English for reviewed passages, and source fi
 |---|---|---|---|
 | 1–10 | 1–8 | **checked** | أقول : هذا دليل آخر بالاستقلال على إبطال الشَّق الثاني من الترديد ، و ذلك لأنَّه إذا كانت الحقيقة الواجبة غير مغايرة با… — Attribute/subject and necessary/possible are kept as incompatible predications of indistinguishables. |
 | 11–16 | 9–10 | **checked** | لا يقال : مع بقاء احتمال القول بالتشكيك خالياً عن الدافع ، كيف يتمُّ الجزم بالتماثل ، فلأنَّ اللازم من الترديد المذكور … — The possibility of graded predication is voiced in the opponent's objection, not decided as settled. |
-| 17–19 | 11–11 | **corrected** | إذ ساير الطبايع الكلّية مشكِّكاً أو متواطياً . عارضة أو ذاتيَّة - فان لها افراداً خاصَّة اعتباريَّة يكون قولها عليها قو… — Accidental/essential (عارضة/ذاتية) and species-level predication (قولاً نوعياً) corrected; earlier extrinsic/intrinsic and 'specific manner' blurred the logical claim. |
-| 20–38 | 12–20 | **checked** | لأنَّا نقول : سنشير آنفاً إلى دفع ذلك الاحتمال بالاستقلال ، و تلخيص هذا البرهان ان يقال ، ان الوجود الخاص الواجبى الملز… — Fourfold dilemma, a-fortiori necessity and final denial of an entailing particular nature preserved. |
+| 17–19 | 11–12 | **corrected** | إذ ساير الطبايع الكلّية مشكِّكاً أو متواطياً . عارضة أو ذاتيَّة - فان لها افراداً خاصَّة اعتباريَّة يكون قولها عليها قو… — Accidental/essential (عارضة/ذاتية) and species-level predication (قولاً نوعياً) corrected; earlier extrinsic/intrinsic and 'specific manner' blurred the logical claim. |
+| 20–38 | 13–21 | **checked** | لأنَّا نقول : سنشير آنفاً إلى دفع ذلك الاحتمال بالاستقلال ، و تلخيص هذا البرهان ان يقال ، ان الوجود الخاص الواجبى الملز… — Fourfold dilemma, a-fortiori necessity and final denial of an entailing particular nature preserved. |
 
 ### SH-INTRO-018 — N, printed pp. 30–31
 
