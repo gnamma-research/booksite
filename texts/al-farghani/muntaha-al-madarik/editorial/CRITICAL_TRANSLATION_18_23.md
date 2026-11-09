@@ -865,7 +865,7 @@ Yet in the eternal unseen Presence there may perhaps be, regarding these univers
 
 Accordingly they are not known or judged until their determination and occurrence in existential ranks, progressively with successive instants.
 
-**Editorial decision:** Strong apparent temporal epistemic claim. Do not silently reformulate as though they were eternally differentiated in divine knowledge; further surrounding context and manuscript comparison required.
+**Editorial decision:** Historic-print check: I1876 printed pp8–9 (PDF scans12–13) preserves the difficult phrase across the page break. The apparent temporal epistemic claim therefore is not merely an error of the Beirut digital transcription; do not silently harmonize it with eternally differentiated knowledge. Manuscript witnesses remain unchecked.
 
 ### CR002-033 · retain
 
