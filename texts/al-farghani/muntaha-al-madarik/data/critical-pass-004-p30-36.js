@@ -516,14 +516,18 @@ window.FARGHANI_CRITICAL_PASS_004={
       "id": "CR004-040",
       "page": 34,
       "ar": "سمّي بالحضرة العملية",
-      "en": "It is called the 'operative/practical Presence' [printed reading; unresolved].",
-      "disposition": "crux",
-      "critical_note": "B2007 p34 unequivocally has العملية in the digital transcript; B2007 p36 has العمائية for the same second-rank Cloud-like Presence. Strong internal pressure for العمائية, but NO independent Farghānī witness has been inspected. Report as conjecture only.",
+      "en": "It is called the Cloud-like Presence (al-ḥaḍra al-ʿamāʾiyya).",
+      "disposition": "corrected",
+      "critical_note": "CORRECTED PRINT-TO-PRINT 9 Nov 2026: historical I1876 p18 (scan22) visibly reads الحضرة العمائية where B2007 p34 has الحضرة العملية. B2007 p36 agrees with I1876 in wording. Adopt Cloud-like Presence; manuscripts still uncollated.",
       "source_siglum": "B2007",
       "source_url": "https://ablibrary.net/book_content/b/9606/34?lang=ar",
       "grade": "modern-printed-digital-selected-locus-checked",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "edited_ar": "سمّي بالحضرة العمائية",
+      "i1876_ar": "سمّي بالحضرة العمائية",
+      "print_locus": "I1876 printed p18, scan 22",
+      "evidence_note": "I1876 p18/scan22 directly inspected: الحضرة العمائية; B2007 p34 printed الرقمية: الحضرة العملية. Adopt historical print lemma, record B2007 in apparatus; no manuscript variant verified."
     },
     {
       "id": "CR004-041",
