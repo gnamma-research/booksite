@@ -396,9 +396,9 @@
 
 **Arabic:** سمّي بالحضرة العملية
 
-**Verified/revised English:** It is called the 'operative/practical Presence' [printed reading; unresolved].
+**Verified/revised English:** It is called the Cloud-like Presence [edited after I1876 p18; B2007 p34 reads operative/practical].
 
-**Decision:** B2007 p34 unequivocally has العملية in the digital transcript; B2007 p36 has العمائية for the same second-rank Cloud-like Presence. Strong internal pressure for العمائية, but NO independent Farghānī witness has been inspected. Report as conjecture only.
+**Decision:** B2007 p34 has العملية; I1876 printed p18/scan22 now independently visually confirms العمائية. Adopt العمائية (Cloud-like Presence), keep B2007 reading in apparatus. No manuscript images yet inspected.
 
 [Arabic source](https://ablibrary.net/book_content/b/9606/34?lang=ar)
 
