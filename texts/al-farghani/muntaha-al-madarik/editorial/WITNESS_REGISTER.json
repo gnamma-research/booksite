@@ -41,27 +41,31 @@
       ],
       "count": 198,
       "source": "B2007 selected digitized Arabic printed source spans",
-      "status": "198 selected Arabic-English digital B2007 spans; historical printing I1876 independently compared at 5 bounded loci, manuscript witnesses not checked."
+      "status": "198 B2007 selected clauses; eight exact 1876 printed-photograph comparisons, four differences, four agreements. No medieval manuscript readings."
     },
     "next_critical_audit_beirut_page": 37,
     "definitive_status": "not-achieved; photographed historical printing selectively collated; manuscripts all outstanding",
     "critical_review_new_stage": "Critical IV: 56 new selective loci p30–36, 198 total on 19 Beirut pages",
     "historical_print_imprint_question": "NYU catalogue identifies Istanbul 1293/1876; Chittick 2025 describes Bulaq/Cairo 1876. Establish by reading scanned title page.",
     "additional_new_candidates_004": "Heidelberg H154 (undated, textual 1v–322r, viewer gated); Gotha G2267 (87ff incomplete via Scattolin 2001); neither read",
-    "historical_print_collated_loci": 5,
-    "independent_print_variant_count": 3,
+    "historical_print_collated_loci": 8,
+    "independent_print_variant_count": 4,
     "historical_print_directly_examined": true,
-    "historical_print_selected_checked_loci": 5,
+    "historical_print_selected_checked_loci": 8,
     "historical_print_printed_pages_sampled": [
       5,
       6,
       7,
+      8,
+      9,
+      10,
+      13,
       18
     ],
-    "historical_print_to_b2007_differences": 3,
+    "historical_print_to_b2007_differences": 4,
     "next_historical_print_target": "Find I1876 correspondences to remaining B2007 cruxes, including p33 'في عون هذا', then independent manuscript collation",
-    "latest_print_register": "editorial/I1876_COLLATION_CUMULATIVE_002.json",
-    "latest_print_critical_summary": "editorial/I1876_COLLATION_CUMULATIVE_002.md"
+    "latest_print_register": "editorial/I1876_COLLATION_CUMULATIVE_003.json",
+    "latest_print_critical_summary": "editorial/I1876_COLLATION_STAGE_006.md"
   },
   "witnesses": [
     {
@@ -71,10 +75,10 @@
       "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en",
       "pageRange": "1–107: introductory division (Scattolin)",
       "editor": "Muḥammad Shukrī al-ʿŪfī, reported by Scattolin",
-      "access": "Direct visual inspection of five bounded printed-text loci (four photographed I1876 printed pages 5,6,7,18, PDF scans 9,10,11,22), verified against B2007. Three print differences and two agreements; no manuscript folios checked.",
-      "accessGrade": "photographed-historical-print-five-bounded-loci-on-4-pages",
+      "access": "Princeton facsimile directly viewed at eight printed pages 5,6,7,8,9,10,13,18, scans 9,10,11,12,13,14,17,22, eight bounded comparisons against B2007. Four PRINT differences, four agreements, zero manuscript folios.",
+      "accessGrade": "photographed-historical-print-eight-bounded-comparisons-on-eight-printed-pages",
       "role": "Historical PRINT control only, five selected textual comparisons. It is not a manuscript.",
-      "variantsExamined": 5,
+      "variantsExamined": 8,
       "photoEvidence": [
         {
           "siglum": "I1876",
@@ -91,20 +95,98 @@
           "inspection": "direct_visual_print_photo_2026-11-09",
           "manuscript": false,
           "full_page_proof": false
+        },
+        {
+          "printed_page": 13,
+          "scan_index": 17,
+          "modern_page": 29,
+          "modern_reading": "والتعيّن الأول المذكورة وقلبه المطهّر",
+          "historical_reading": "والتعيّن الأول المذكور وقلبه المطهّر",
+          "relationship": "historical-print-difference",
+          "evidence": {
+            "siglum": "I1876",
+            "i1876_printed_page": 13,
+            "pdf_scan_index": 17,
+            "reading": "والتعيّن الأول المذكور",
+            "printed_photo_url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0017.jpg",
+            "source_pdf_sha256": "d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87",
+            "derived_jpeg_sha256": "b9a24fb7e82aee8a62492d550ee2ddcda75b3ec25188deff21b9741808083aca",
+            "manuscript": false,
+            "proof_grade": "visually inspected historical print, selected locus only"
+          }
+        },
+        {
+          "printed_page": 8,
+          "scan_index": 12,
+          "modern_page": 23,
+          "modern_reading": "فلم تعلم ولم يحكم بشيء منها إلّا بعد تعيّنها",
+          "historical_reading": "فلم تعلم ولم يحكم بشيء منها إلا بعد تعينها",
+          "relationship": "historic-print-agreement",
+          "evidence": [
+            {
+              "siglum": "I1876",
+              "i1876_printed_page": 8,
+              "pdf_scan_index": 12,
+              "reading": "فلم",
+              "printed_photo_url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0012.jpg",
+              "source_pdf_sha256": "d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87",
+              "derived_jpeg_sha256": "3126e43af8493b65f254111626a25162404bc9b658f43cd97c36c439dd4c1690",
+              "manuscript": false,
+              "proof_grade": "visually inspected historical print, selected locus only"
+            },
+            {
+              "siglum": "I1876",
+              "i1876_printed_page": 9,
+              "pdf_scan_index": 13,
+              "reading": "تعلم ولم يحكم بشيء منها إلا بعد تعينها",
+              "printed_photo_url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0013.jpg",
+              "source_pdf_sha256": "d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87",
+              "derived_jpeg_sha256": "683380b034daf230712523f3a475ccc3120d4b310c6dccd9d7d0734bdd12648f",
+              "manuscript": false,
+              "proof_grade": "visually inspected historical print, selected locus only"
+            }
+          ]
+        },
+        {
+          "printed_page": 10,
+          "scan_index": 14,
+          "modern_page": 25,
+          "modern_reading": "حكم الغضب عارجا لا نازلا",
+          "historical_reading": "حكم الغضب عارجا لا نازلا",
+          "relationship": "historic-print-agreement",
+          "evidence": {
+            "siglum": "I1876",
+            "i1876_printed_page": 10,
+            "pdf_scan_index": 14,
+            "reading": "حكم الغضب عارجا لا نازلا",
+            "printed_photo_url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0014.jpg",
+            "source_pdf_sha256": "d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87",
+            "derived_jpeg_sha256": "3be37a1d06b1e2970b8c4135a51941412f71a46796c23f1d2cde64f3007a1bb9",
+            "manuscript": false,
+            "proof_grade": "visually inspected historical print, selected locus only"
+          }
         }
       ],
-      "printDifferencesObserved": 3,
-      "printAgreementsObserved": 2,
+      "printDifferencesObserved": 4,
+      "printAgreementsObserved": 4,
       "pagesInspected": [
         5,
         6,
         7,
+        8,
+        9,
+        10,
+        13,
         18
       ],
       "pdfScanIndices": [
         9,
         10,
         11,
+        12,
+        13,
+        14,
+        17,
         22
       ]
     },
@@ -482,6 +564,18 @@
       "criticalVariant": false,
       "manuscriptSupport": null,
       "status": "corroborates correction of old GNAMMA excerpt"
+    },
+    {
+      "id": "ED-0010",
+      "location": "B2007 p29 ↔ I1876 p13, PDF scan17",
+      "type": "historical-print-masculine-adjective-difference",
+      "B2007": "والتعيّن الأول المذكورة",
+      "I1876": "والتعيّن الأول المذكور",
+      "adopted": "المذكور",
+      "proof_source": "editorial/I1876_COLLATION_STAGE_006.md",
+      "criticalVariant": true,
+      "manuscriptSupport": null,
+      "status": "historic_print_verified_2026-11-09"
     }
   ],
   "selectionRule": "Do not create a variant reading or siglum support unless two independent witnesses have actually been inspected in the relevant locus. Orthographic normalization is not a textual variant.",
