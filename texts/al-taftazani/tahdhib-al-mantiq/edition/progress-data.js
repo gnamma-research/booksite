@@ -1,8 +1,8 @@
-/* Canonical, source-graded cumulative Tahdhīb progress. Never count excerpts as whole pages. */
+/* Stage107 canonical, source-graded progress: nine independent denominators, not nine completed editions. */
 window.GNAMMA_TAHDHIB_PROGRESS={
   "schema": "gnamma-tahdhib-cumulative-progress-v1",
   "updated": "2026-11-09",
-  "stage": "106",
+  "stage": "107",
   "baseline": {
     "logicMatnDivisions": 19,
     "kalamClauses": 1044,
@@ -57,19 +57,19 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     },
     {
       "id": "opening-notes",
-      "label": "Later-gloss numbered notes · working English (Q127–144)",
-      "current": 53,
-      "total": 55,
+      "label": "Later-gloss numbered notes · working English, Q127–156",
+      "current": 106,
+      "total": 110,
       "unit": "numbered notes",
-      "note": "Local cohort only: notes 1–55, 53 first-pass complete, note1 and note25 partial. This is NOT the entire 274-page H corpus."
+      "note": "Bounded translated-note cohort, NOT the full H volume. Four incomplete: 1,25,82,90. Notes may cross page boundaries and include separately labelled unnumbered material."
     },
     {
       "id": "numbered-arabic",
-      "label": "Later-gloss numbered notes · searchable Arabic transcription",
-      "current": 32,
-      "total": 55,
+      "label": "Later-gloss numbered notes · complete searchable-Arabic transcription",
+      "current": 52,
+      "total": 110,
       "unit": "notes",
-      "note": "Notes 24–55 include full digitally searchable Arabic as currently available (one corrupted abbreviation remains). Notes 1–23 contain locator snippets only; no photograph or independent witness certified."
+      "note": "Working digital-source Arabic for numbered notes24–75 only; 58 others retain short locator lemmata. Zero independent facsimile manuscript certifications."
     },
     {
       "id": "historical-classes",
@@ -89,7 +89,7 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     }
   ],
   "noteLedger": {
-    "range": "HWN-001–HWN-055",
+    "range": "HWN-001–HWN-110",
     "fullyTranslatedFirstPass": [
       2,
       3,
@@ -143,13 +143,68 @@ window.GNAMMA_TAHDHIB_PROGRESS={
       52,
       53,
       54,
-      55
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
     ],
     "partiallyTranslated": [
       1,
-      25
+      25,
+      82,
+      90
     ],
-    "currentChapter": "Later glosses: guidance, kināya, prologue and prophethood (Qum pp.127–144)",
+    "currentChapter": "Later H glosses: prologue, logic definition and kalām criterion (Qum pp127–156)",
     "sourcePhotographed": false,
     "sourceArabicTranscribedCompletely": false,
     "arabicFullSearchableNotes": [
@@ -184,11 +239,34 @@ window.GNAMMA_TAHDHIB_PROGRESS={
       52,
       53,
       54,
-      55
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75
     ],
     "unnumberedFollowingRendered": [
       47,
-      48
+      48,
+      71,
+      86,
+      90
     ]
   },
   "currentRelease": {
@@ -197,7 +275,7 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     "sampleReader": "hawashi-q125-178.html",
     "criticalDashboard": "critical-status.html",
     "latestHandoff": "HANDOFF_LATEST.md",
-    "cumulativeMarkdown": "batches/hawashi-numbered-cumulative-hwn001-055.md"
+    "cumulativeMarkdown": "batches/hawashi-numbered-cumulative-hwn001-110.md"
   },
   "stages": [
     {
@@ -284,6 +362,32 @@ window.GNAMMA_TAHDHIB_PROGRESS={
         "progress-data.js",
         "HANDOFF_LATEST.md",
         "stages/STAGE106_NUMBERED_TRANSLATION.md"
+      ]
+    },
+    {
+      "id": "107",
+      "date": "2026-11-09",
+      "title": "55 further H notes 56–110; 106/110 working English, 52 Arabic transcriptions",
+      "sourcePages": "127–156",
+      "noteRange": "1–110",
+      "fullNoteCount": 106,
+      "partialNoteCount": 4,
+      "arabicNoteCount": 52,
+      "certifiedPages": 0,
+      "report": "stages/STAGE107_NOTES_056_110.md",
+      "files": [
+        "hawashi-numbered-notes-stage107a.js",
+        "hawashi-numbered-notes-stage107b.js",
+        "hawashi-numbered-notes-stage107c.js",
+        "hawashi-numbered-notes-stage107d.js",
+        "hawashi-numbered-notes-stage107e.js",
+        "hawashi-numbered-notes-stage107f.js",
+        "batches/hawashi-numbered-cumulative-hwn001-110.md",
+        "hawashi-numbered-notes.html",
+        "progress.html",
+        "progress-data.js",
+        "HANDOFF_LATEST.md",
+        "stages/STAGE107_NOTES_056_110.md"
       ]
     }
   ]
