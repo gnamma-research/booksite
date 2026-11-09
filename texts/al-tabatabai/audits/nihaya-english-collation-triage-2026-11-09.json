@@ -3,7 +3,7 @@
   "title": "Nihāyat al-Ḥikma — cumulative English text collation triage",
   "updated": "2026-11-09",
   "source": "nihayat-al-hikma/data/book.json",
-  "scope": "All 136 reading units mechanically screened; 16 complete passages directly compared against the local Arabic; all 136 still await full independent printed-witness and specialist collation.",
+  "scope": "136/136 units structurally screened. 28 local Arabic–English bilingual readings in the cumulative log; four of the new reviews also checked against the revised 1428 digitally transcribed printed edition at selected pages. This is NOT independent manuscript collation, a full Arabic source critical edition, or expert certification.",
   "standard": "No AI-only structural scan is a full semantic English collation or professional critical edition. Local bilingual reading is not an independent Arabic witness. Neither a flagged nor an unflagged row establishes textual accuracy.",
   "summary": {
     "units": 136,
@@ -13,13 +13,16 @@
     "unitsWithThreeOrMoreParagraphDifference": 63,
     "unitsWithAnyHint": 70,
     "automaticallyScreened": 136,
-    "locallyReadAgainstStoredArabic": 16,
+    "locallyReadAgainstStoredArabic": 28,
     "independentlyReconciledAgainstCompleteSecondWitness": 0,
     "expertVerified": 0,
     "hintCounts": {
       "paragraph-reflow": 63,
       "lexical-spot-check": 8
-    }
+    },
+    "newReviewedThisBatch": 12,
+    "secondaryPrintedDigitalSpotChecks": 4,
+    "englishCorrectionsThisBatch": 1
   },
   "rows": [
     {
@@ -484,9 +487,16 @@
       "englishToArabicCharRatio": 1.572,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct local Arabic–English reading completed: quiddity qua quiddity, primary versus common predication, no-excluded-middle at a qualified conceptual level, scope of negation versus qualified negation, parity illustration. Compared with the 1428 AH revised printed transcription p. 119–121; no substantive English correction needed.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
+      },
+      "secondaryPrintedTranscription": {
+        "type": "later-edition-digital-transcription-spot-check",
+        "edition": "al-Zāriʿī 1428 AH, v.1, pp.119–121",
+        "url": "https://lib.rafed.net/view.php?b_id=3108&page=119&type=c_fbook",
+        "status": "read, not a full diplomatic witness collation"
       }
     },
     {
@@ -503,9 +513,16 @@
       "englishToArabicCharRatio": 1.72,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct local Arabic–English reading completed: bi-sharṭ shayʾ, bi-sharṭ lā (two ways), lā bi-sharṭ, distinctions of natural universal and individual instances. Checked against revised 1428 printed transcription p. 122–124. Its editor’s criticism of the external existence of the dividendum is later commentary, preserved separately, not interpolated into the author's translation.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
+      },
+      "secondaryPrintedTranscription": {
+        "type": "later-edition-digital-transcription-spot-check",
+        "edition": "al-Zāriʿī 1428 AH, v.1, pp.122–124",
+        "url": "https://lib.rafed.net/view.php?b_id=3108&page=122&type=c_fbook",
+        "status": "read, later editor’s note distinguished from author"
       }
     },
     {
@@ -548,7 +565,8 @@
       "englishToArabicCharRatio": 1.892,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct local Arabic–English reading completed: essential versus accidental predication, maḥmūl bi-l-ḍamīma versus al-khārij al-maḥmūl, necessary inherence and need for causes, primary predication of genus/differentia, resolution of parts/whole priority. No change needed; printed witness collation pending.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -619,7 +637,8 @@
       "englishToArabicCharRatio": 1.587,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct local Arabic–English reading completed: true and relative species, union of genus/differentia in extramental existence, material compositional unity, individual immaterial species, regress argument, inversion by contraposition. No change needed; other printed witnesses pending.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -845,7 +864,8 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct local Arabic–English reading completed: definition of quantity, highest genera, attribution to al-Fārābī and Ibn Sīnā, quantity as countable, divisibility and equality objections. Translation follows source; attribution to original philosophers not separately verified.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -923,7 +943,8 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct local Arabic–English reading completed: quality as non-divisible non-relational accident; Ṣadrā’s quoted critique of highest genus definitions; four classes of quality and induction. Translation tracks local Arabic; Ṣadrā primary quotation not independently checked.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1232,7 +1253,8 @@
       "englishToArabicCharRatio": 1.878,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct local Arabic–English reading completed: huwa huwa versus dhū huwa predication, assertoric versus hypothetically instantiated subject, simple versus compound existential propositions, the principle of presupposition, replies to causal regress. Working translation follows Arabic.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1251,7 +1273,8 @@
       "englishToArabicCharRatio": 1.663,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct local Arabic–English reading completed: essential versus nonessential otherness, opposition definition and conditions, apparent counterexamples and the fourfold exhaustive division of opposition. All argument branches are represented.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1296,9 +1319,16 @@
       "englishToArabicCharRatio": 1.596,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct local Arabic–English reading completed: privation/possession, personal/species/generic capacities, scorpion and beardlessness examples, real versus commonly recognized privation with time restriction. The 1428 editor notes that the inherited scorpion illustration is zoologically suspect; retained as later editorial caution only.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
+      },
+      "secondaryPrintedTranscription": {
+        "type": "later-edition-digital-transcription-spot-check",
+        "edition": "al-Zāriʿī 1428 AH, v.1, pp.257–258",
+        "url": "https://lib.rafed.net/view.php?b_id=3108&page=257&type=c_fbook",
+        "status": "read, editor's scorpion footnote"
       }
     },
     {
@@ -1309,15 +1339,22 @@
       "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=193&type=c_fbook",
       "sourcePages": "193–194",
       "arabicChars": 1024,
-      "englishChars": 1755,
+      "englishChars": 1778,
       "arabicParagraphs": 6,
       "englishParagraphs": 4,
-      "englishToArabicCharRatio": 1.714,
+      "englishToArabicCharRatio": 1.736,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct local Arabic–English reading completed: correlatives as reciprocally conceived, the objection that opposition is itself a correlative, concept-versus-instance reply, their matching modalities. Corrected ‘coextensive’ to ‘correspond necessarily’ for «متكافئان», checked with 1428 revised text p. 259; manuscript collation not claimed.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
+      },
+      "secondaryPrintedTranscription": {
+        "type": "later-edition-digital-transcription-spot-check",
+        "edition": "al-Zāriʿī 1428 AH, v.1, p.259",
+        "url": "https://lib.rafed.net/view.php?b_id=3108&page=257&type=c_fbook",
+        "status": "source «متكافئان» cross-checked; no manuscript collation"
       }
     },
     {
@@ -2094,7 +2131,8 @@
       "englishToArabicCharRatio": 1.479,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct local Arabic–English reading completed: coexistence as absence of precedence in a shared relevant order; arguments from privation, examples across time, rank, causation, order, and dahr. No change needed.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2113,7 +2151,8 @@
       "englishToArabicCharRatio": 1.622,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct local Arabic–English reading completed: ordinary old/recent versus philosophical beginninglessness/origination; temporal, causal, dahr and existential-reality senses. All four explicitly translated; no correction needed.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
