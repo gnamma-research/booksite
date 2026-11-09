@@ -3,15 +3,16 @@
   "title": "Cross-book source and English review register",
   "summary": {
     "date": "2026-11-09",
-    "totalReaderUnits": 300,
+    "totalReaderUnits": 304,
     "M": {
-      "localReading": 53,
-      "localTranslated": 53,
+      "localReading": 57,
+      "localTranslated": 57,
       "fullAuthorialBooks": 6,
       "completeLocalBookContent": false,
       "mappedAuthorialTopics": 77,
-      "status": "53 working Arabic–English selections (11 introduction, 11 Book I, 17 Book II, 14 Book III); full al-Manṭiq remains untranslated; 1968 Arabic printed collation pending.",
-      "localBook1Units": 11
+      "status": "57 bilingual selections (11 introduction, 11 Book I, 17 Book II, 14 Book III, four Book IV). Book IV introductory original passages source-paired; remaining majority of al-Manṭiq untranslated, separate 1968 scan not collated.",
+      "localBook1Units": 11,
+      "localBook4Units": 4
     },
     "B": {
       "localReading": 111,
@@ -30,10 +31,11 @@
       "adoptedPrintedEditorialEmendations": 8,
       "supplementaryCriticalNotes": 8,
       "englishAutomatedStructureScreened": 136,
-      "englishLocalBilingualRead": 68,
+      "englishLocalBilingualRead": 70,
       "englishIndependentlyCollated": 0,
       "englishTriageRegister": "nihaya-english-collation-triage-2026-11-09.json",
-      "secondEditionDigitalSpotChecks": 5
+      "secondEditionDigitalSpotChecks": 5,
+      "localReviewedFourthBatch": 2
     },
     "expertReviewedUnitsVerified": 0,
     "expertReviewedUnitStatus": "Not documented; zero units are claimed to have passed independent specialist review",
@@ -44,17 +46,17 @@
     }
   },
   "provenance": {
-    "MuzaffarSourceSha": "1b582852592e0e0d109b655f8d564e7d64e2506a",
+    "MuzaffarSourceSha": "3d0f7f95ce4ba533ab3ff9dcd7aa75129dc4b256",
     "BidayaSourceSha": "77c694c1a6eb2b3cf6a0dd1745586c2feafd2b79",
     "NihayaSourceSha": "52107500a82264b1e578fb4bcad2806f42634aed",
     "BidayaParitySha": "206e9ea60af9108b614441cd8e049742098cd339",
     "NihayaSupplementSha": "65f3e068b0d44eec4c96ff13b05c45a57bac4c4a",
-    "MuzaffarMapSha": "6cae1741a3f59039fe2764178a3ad3140d16530a",
-    "maintenanceNote": "2026-11-09: appended four new al-Manṭiq language/signification passages; all remain working translations with no documented independent specialist verification.",
-    "latestTextualDecision": "N-VI-16: adopted 'المضاف إلى الأب' (1428 vol.1 p.218 n.1) over prior 'الابن', supplementing previously adopted p.218 n.4 changes."
+    "MuzaffarMapSha": "c832345cf796c52d6f8c23db9329c0c7ac0f42c3",
+    "maintenanceNote": "2026-11-09: fourth research batch added four primary Book IV bilingual units and documented Nihāya IX.9/IX.10 local readings and suspected internal cross-reference; nothing independently witness-collated.",
+    "latestTextualDecision": "N-IX-09: printed 'القسم الأول' in longitudinal-motion comparison is internally inconsistent; suspected 'الثاني' is conjectural, not adopted, independent early/later witness check open."
   },
   "method": "One row per locally stored authorial passage. Presence of Arabic or English is a technical coverage flag, not a scholarly judgment. Same-source normalised PDF comparison has known limitations. Historical attribution issues are isolated in critical notes.",
-  "sourceStatus": "Full original Muzaffar Arabic and English remain absent from the local corpus outside the 25 selected passages.",
+  "sourceStatus": "Muẓaffar: 57 source-grounded selected Arabic-English units, NOT all six books, original exercises and much of Books I–IV plus Books V–VI untranslated. Nihāya: 136 working pairs, 70 same-base locally reviewed, 0 independently complete witness-collated.",
   "entries": [
     {
       "id": "M-P-01",
@@ -1327,6 +1329,102 @@
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "only selected passages imported; rest of authorial book still absent",
       "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+    },
+    {
+      "id": "M-C-01",
+      "book": "M",
+      "stage": "C",
+      "chapter": 1,
+      "title": "A proposition is intrinsically apt for truth or falsity",
+      "source": {
+        "page": "125–127",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable Arabic, Book IV; 1968 ACO scan not yet independently collated",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=127&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1511,
+      "englishCharacters": 2125,
+      "sourceEditionReviewed": "1402 AH Rafed Dār al-Taʿāruf searchable digital Arabic; 1968 ACO independent printed scan NOT collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; Arabic punctuation/kāf normalized, not diplomatic.",
+      "sourceAssessment": "consecutive Book IV original source excerpt from pp.125–130; full Book IV and other books untranslated",
+      "nextReview": "Independently compare every clause and original exercises with the 1968 print and a second witness; retain differences in apparatus."
+    },
+    {
+      "id": "M-C-02",
+      "book": "M",
+      "stage": "C",
+      "chapter": 2,
+      "title": "Categorical and conditional propositions",
+      "source": {
+        "page": "127–128",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable Arabic, Book IV; 1968 ACO scan not yet independently collated",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=129&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1235,
+      "englishCharacters": 1784,
+      "sourceEditionReviewed": "1402 AH Rafed Dār al-Taʿāruf searchable digital Arabic; 1968 ACO independent printed scan NOT collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; Arabic punctuation/kāf normalized, not diplomatic.",
+      "sourceAssessment": "consecutive Book IV original source excerpt from pp.125–130; full Book IV and other books untranslated",
+      "nextReview": "Independently compare every clause and original exercises with the 1968 print and a second witness; retain differences in apparatus."
+    },
+    {
+      "id": "M-C-03",
+      "book": "M",
+      "stage": "C",
+      "chapter": 3,
+      "title": "Connected and disjunctive; affirmative and negative",
+      "source": {
+        "page": "128–129",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable Arabic, Book IV; 1968 ACO scan not yet independently collated",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=129&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 915,
+      "englishCharacters": 1314,
+      "sourceEditionReviewed": "1402 AH Rafed Dār al-Taʿāruf searchable digital Arabic; 1968 ACO independent printed scan NOT collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; Arabic punctuation/kāf normalized, not diplomatic.",
+      "sourceAssessment": "consecutive Book IV original source excerpt from pp.125–130; full Book IV and other books untranslated",
+      "nextReview": "Independently compare every clause and original exercises with the 1968 print and a second witness; retain differences in apparatus."
+    },
+    {
+      "id": "M-C-04",
+      "book": "M",
+      "stage": "C",
+      "chapter": 4,
+      "title": "Parts of categorical and conditional propositions",
+      "source": {
+        "page": "129–130",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable Arabic, Book IV; 1968 ACO scan not yet independently collated",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=131&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 584,
+      "englishCharacters": 993,
+      "sourceEditionReviewed": "1402 AH Rafed Dār al-Taʿāruf searchable digital Arabic; 1968 ACO independent printed scan NOT collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; Arabic punctuation/kāf normalized, not diplomatic.",
+      "sourceAssessment": "consecutive Book IV original source excerpt from pp.125–130; full Book IV and other books untranslated",
+      "nextReview": "Independently compare every clause and original exercises with the 1968 print and a second witness; retain differences in apparatus."
     },
     {
       "id": "B-INTRO",
@@ -6718,17 +6816,19 @@
       "sourceParityPercent": null,
       "editorialNotes": 1,
       "supplementalCriticalNoteIds": [],
-      "flag": null,
+      "flag": "Unresolved internal Arabic first/second-kind cross-reference; not a verified variant",
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "nextReview": "Check the 1404 AH scan and 1428 printed edition at exact phrase; record whichever reading each witness supports; then decide whether to emend and precisely retranslate.",
       "englishCollation": {
         "structuralScreen": "checked-automatically",
         "arabicParagraphs": 15,
         "englishParagraphs": 14,
         "reviewHints": [],
-        "localBilingualRead": false,
-        "independentlyCollated": false
+        "localBilingualRead": true,
+        "independentlyCollated": false,
+        "sourceGrade": "direct internal bilingual reading against base 1417 printed-digital transcription, not an independent witness",
+        "finding": "First/second kind cross-reference in printed Arabic is internally inconsistent; «القسم الأول» near 'khalʿ wa-lubs' likely should be «القسم الثاني», **editorial conjecture only**. Retain transmitted Arabic; translation's 'former case' remains ambiguous until corrected in source edition, not certified."
       }
     },
     {
@@ -6759,8 +6859,10 @@
         "arabicParagraphs": 9,
         "englishParagraphs": 9,
         "reviewHints": [],
-        "localBilingualRead": false,
-        "independentlyCollated": false
+        "localBilingualRead": true,
+        "independentlyCollated": false,
+        "sourceGrade": "direct internal bilingual reading against base 1417 printed-digital transcription, not an independent witness",
+        "finding": "Local direct comparison covers substantial/accidental motion, separate agent, natural/forced motion, substrate, form and soul; no corrective reading adopted."
       }
     },
     {

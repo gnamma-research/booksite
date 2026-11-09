@@ -3,15 +3,15 @@
   "title": "al-Manṭiq",
   "arabicTitle": "المنطق",
   "author": "Muḥammad Riḍā al-Muẓaffar",
-  "description": "An Arabic–English working reader of selected authorial passages from Muẓaffar's six-book logic, now including the opening of Book II on universals. Passages not yet transcribed and translated remain available through the linked full Arabic witness.",
+  "description": "Arabic–English working reader of selected authorial passages from Muẓaffar's six-book al-Manṭiq. Book IV now begins with four consecutive discussions of propositions; the rest of the book and substantial parts of the other five books are not yet locally translated.",
   "status": "working-translation",
   "editorialStatus": {
     "translationComplete": false,
-    "translatedSection": "Introduction 11, Book I 11, Book II 17, Book III 14; selective original Arabic working English only",
-    "translatedPassages": 53,
-    "sourceBasis": "Original Arabic from Muẓaffar's al-Manṭiq, early printed witness cross-checked against the Dār al-Taʿāruf text hosted by Rafed.",
+    "translatedSection": "Introduction 11, Book I 11, Book II 17, Book III 14, Book IV 4; selective source-grounded original Arabic and working English only.",
+    "translatedPassages": 57,
+    "sourceBasis": "1402 AH Dār al-Taʿāruf Rafed searchable Arabic; the separately identified 1968 institutional scan remains to be independently collated.",
     "englishComparator": "Carney's 75-page English PDF supplied by the user ends without the complete Book III section on definitions. English here is independently translated from Arabic.",
-    "editionNotice": "Working bilingual excerpts, not a full six-book al-Manṭiq. Source normalized against 1402 Arabic transcription; 1968 printed collation pending."
+    "editionNotice": "57 bilingual working selections including Book IV opening, NOT a full six-book edition. Source punctuation/kāf normalized; independent early printed and manuscript collation pending."
   },
   "sources": [
     {
@@ -73,6 +73,13 @@
       "title": "Conditions of Definition",
       "arabicTitle": "شروط التعريف",
       "bookNumber": 3
+    },
+    {
+      "id": "C",
+      "number": 4,
+      "bookNumber": 4,
+      "title": "Book IV · Propositions and Their Properties",
+      "arabicTitle": "الباب الرابع — القضايا وأحكامها"
     }
   ],
   "units": [
@@ -1185,6 +1192,106 @@
         "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook"
       },
       "notes": []
+    },
+    {
+      "id": "M-C-01",
+      "stage": "C",
+      "chapter": 1,
+      "title": "A proposition is intrinsically apt for truth or falsity",
+      "arabicTitle": "القضية — الصدق والكذب لذاته",
+      "arabic": "تقدم في الباب الأول أن الخبر هو القضية، وعرفنا الخبر أو القضية بأنه (المركب التام الذي يصح أن نصفه بالصدق أو الكذب).\n\nوقولنا: المركب التام هو (جنس قريب) يشمل نوعي التام: الخبر والإنشاء، وباقي التعريف (خاصة) يخرج بها الإنشاء، لأن الوصف بالصدق أو الكذب من عوارض الخبر المختصة به كما فصلناه هناك. فهذا التعريف تعريف بالرسم التام.\n\nولأجل أن يكون التعريف دقيقا نزيد عليه كلمة (لذاته) فنقول: القضية هي المركب التام الذي يصح أن نصفه بالصدق أو الكذب لذاته.\n\nوكذا ينبغي زيادة كلمة (لذاته) في تعريف الإنشاء. ولهذا القيد فائدة، فإنه قد يتوهم غافل فيظن أن التعريف الأول للخبر يشمل بعض الإنشاءات فلا يكون مانعا، ويخرج هذا البعض من تعريف الإنشاء فلا يكون جامعا.\n\nوسبب هذا الظن أن بعض الإنشاءات قد توصف بالصدق والكذب، كما لو استفهم شخص عن شيء يعلمه أو سأل الغني سؤال الفقير أو تمنى إنسان شيئا هو واجد له، فإن هؤلاء نرميهم بالكذب، وفي عين الوقت نقول للمستفهم الجاهل والسائل الفقير والمتمني الفاقد اليائس إنهم صادقون. ومن المعلوم أن الاستفهام والطلب بالسؤال والتمني من أقسام الإنشاء.\n\nولكنّا إذا دققنا هذه الأمثلة وأشباهها يرتفع هذا الظن، لأننا نجد أن الاستفهام الحقيقي لا يكون إلا عن جهل، والسؤال لا يكون إلا عن حاجة، والتمني لا يكون إلا عن فقدان ويأس. فهذه الإنشاءات تدل بالدلالة الالتزامية على الإخبار عن الجهل أو الحاجة أو اليأس، فيكون الخبر المدلول عليه بالالتزام هو الموصوف بالصدق أو الكذب، لا ذات الإنشاء.\n\nفالتعريف الأول للخبر في حد نفسه لا يشمل هذه الإنشاءات، ولكن لأجل التصريح بذلك دفعا للالتباس نضيف كلمة (لذاته)، لأن هذه الإنشاءات المذكورة لئن اتصفت بالصدق أو الكذب فليس هذا الوصف لذاتها بل لأجل مداليلها الالتزامية.",
+      "english": "It was established in Book I that an assertoric statement (khabar) is a proposition (qaḍiyya), defined as a complete expression capable of being described as true or false.\n\n“Complete expression” is the proximate genus embracing the two kinds of complete expression: assertion and non-assertoric utterance (inshāʾ). The remainder of the definition is a property (khāṣṣa) distinguishing the former, since being describable as true or false is peculiar to assertions, as explained earlier. The definition is therefore a complete descriptive account (rasm tāmm), not a complete essential definition.\n\nFor precision we add “in itself” (li-dhātihi): a proposition is a complete expression that is, in itself, capable of being described as true or false. The corresponding qualification should also enter the definition of non-assertoric utterance. Without it, someone may suppose that the definition of assertion includes certain non-assertoric expressions, so that it does not exclude everything else, and that the definition of non-assertoric expression excludes those cases, so that it is not comprehensive.\n\nThe mistaken impression arises because we sometimes call certain non-assertoric acts truthful or false: for instance, asking about what one already knows, requesting help in the manner of a poor person when one is rich, or wishing for something already in one's possession. Conversely, an uninformed questioner, needy petitioner, or deprived and despairing person may be described as truthful. Questions, requests, and wishes nevertheless belong to non-assertoric expression.\n\nOn examination, genuine questioning proceeds from ignorance, genuine petition from need, and genuine wishing from deprivation and despair. Such acts consequently signify, by implication (dalāla iltizāmiyya), a report of ignorance, need, or despair. It is this implicitly signified *report*, not the act of questioning, requesting, or wishing in itself, that can properly be called true or false. Thus even the shorter definition does not intrinsically include those utterances; “in itself” makes the boundary explicit and prevents confusion.",
+      "notes": [
+        {
+          "type": "Textual status",
+          "text": "Consecutive authorial Book IV passage, digitally transcribed with normalized punctuation and Arabic kāf. Printed pp.125–127 in the searchable 1402 AH copy, whose web page locator begins at page=127. Independent 1968 scan collation and exercise verification are pending."
+        },
+        {
+          "type": "Terminology",
+          "text": "The contrast is truth-aptness li-dhātihi versus truth/falsity attributable only to an implicated khabar. Here rasm tāmm is a definition through proximate genus and proprium, not a ḥadd."
+        }
+      ],
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable Arabic, Book IV; 1968 ACO scan not yet independently collated",
+        "page": "125–127",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=127&type=c_fbook"
+      },
+      "status": "working-translation"
+    },
+    {
+      "id": "M-C-02",
+      "stage": "C",
+      "chapter": 2,
+      "title": "Categorical and conditional propositions",
+      "arabicTitle": "القضية حملية وشرطية",
+      "arabic": "أقسام القضية\n\nالقضية: حملية وشرطية.\n\n١ ـ (الحملية) مثل: الحديد معدن، الربا محرم، الصدق ممدوح، الكاذب ليس بمؤتمن، البخيل لا يسود.\n\nوبتدقيق هذه الأمثلة نجد أن كل قضية منها لها طرفان ونسبة بينهما، ومعنى هذه النسبة اتحاد الطرفين وثبوت الثاني للأول، أو نفي الاتحاد والثبوت. وبالاختصار نقول: معناها أن (هذا ذاك) أو (هذا ليس ذاك)، فيصح تعريف الحملية بأنها: ما حكم فيها بثبوت شيء لشيء أو نفيه عنه.\n\n٢ ـ (الشرطية) مثل: إذا أشرقت الشمس فالنهار موجود. وليس إذا كان الإنسان نماما كان أمينا. ومثل: اللفظ إما أن يكون مفردا أو مركبا. وليس الإنسان إما أن يكون كاتبا أو شاعرا.\n\nوعند ملاحظة هذه القضايا نجد أن كل قضية منها لها طرفان، وهما قضيتان بالأصل. ففي المثال الأول لولا (إذا) و(فاء الجزاء) لكان قولنا (أشرقت الشمس) خبرا بنفسه وكذا (النهار موجود). وهكذا باقي الأمثلة، ولكن لما جمع المتكلم بين الخبرين ونسب أحدهما إلى الآخر جعلهما قضية واحدة وأخرجهما عما كانا عليه من كون كل منهما خبرا يصح السكوت عليه، فإنه لو قال (أشرقت الشمس...) وسكت فإنه يعد مركبا ناقصا كما تقدم في بحث المركب.\n\nوأما هذه النسبة بين الخبرين بالأصل فليست هي نسبة الثبوت والاتحاد كالحملية، لأن لا اتحاد بين القضايا، بل هي إما نسبة الاتصال والتصاحب والتعليق، أي تعليق الثاني على الأول أو نفي ذلك كالمثالين الأولين، وإما نسبة التعاند والانفصال والتباين أو نفي ذلك كالمثالين الأخيرين.",
+      "english": "Propositions divide into categorical (ḥamliyya) and conditional (sharṭiyya).\n\nExamples of categorical propositions are: “Iron is a metal”; “Usury is forbidden”; “Truthfulness is praised”; “A liar is not trustworthy”; and “The miser does not attain pre-eminence.” Each has two terms and a relation between them: the union of the terms, expressed as the second being affirmed of the first, or the denial of such union and affirmation. In short, a categorical proposition says either “this is that” or “this is not that.” It may therefore be defined as a proposition in which something is judged to be affirmed of, or denied of, something else.\n\nExamples of conditional propositions are: “If the sun rises, it is daytime”; “It is not the case that if a person spreads malicious gossip, he is trustworthy”; “An expression is either simple or composite”; and “It is not the case that a human is either a writer or a poet.” Each contains two sides that were originally propositions in their own right. In the first example, without “if” and the consequential *fa*, “the sun rose” and “daytime exists” would each be a complete assertoric statement. By combining them and relating the one to the other, the speaker makes a single proposition: stopping after “If the sun rose ...” leaves an incomplete expression, as previously explained.\n\nThe relation between these originally separate propositions is not the categorical relation of predication or union; two propositions are not united as subject and predicate are. It is instead either a relation of connection, accompaniment, and dependence—making the second dependent on the first, or denying that dependence—as in the first two examples; or a relation of mutual exclusion, disjunction, and separation, or its denial, as in the last two.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Book IV opening; consecutive Arabic selected from printed pp.127–128, punctuation and kāf normalized, not independently collated against the 1968 printed witness."
+        },
+        {
+          "type": "Logic",
+          "text": "The negative examples negate an entire connection or disjunction; do not mistake them for a positive conditional with a negative consequent."
+        }
+      ],
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable Arabic, Book IV; 1968 ACO scan not yet independently collated",
+        "page": "127–128",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=129&type=c_fbook"
+      },
+      "status": "working-translation"
+    },
+    {
+      "id": "M-C-03",
+      "stage": "C",
+      "chapter": 3,
+      "title": "Connected and disjunctive; affirmative and negative",
+      "arabicTitle": "المتصلة والمنفصلة والموجبة والسالبة",
+      "arabic": "ومن جميع ما تقدم نستطيع أن نستنتج عدة أمور:\n\n(الأول): تعريف القضية الشرطية بأنها (ما حكم فيها بوجود نسبة بين قضية وأخرى أو لا وجودها).\n\nالشرطية: متصلة ومنفصلة.\n\n(الثاني): أن الشرطية تنقسم إلى متصلة ومنفصلة، لأن النسبة:\n\n١ ـ إن كانت هي الاتصال بين القضيتين وتعليق إحداهما على الأخرى أو نفي ذلك كالمثالين الأولين، فهي المسماة (بالمتصلة).\n\n٢ ـ وإن كانت هي الانفصال والعناد بينهما أو نفي ذلك كالمثالين الأخيرين، فهي المسماة (بالمنفصلة).\n\nالموجبة والسالبة.\n\n(الثالث): أن القضية بجميع أقسامها، سواء كانت حملية أو متصلة أو منفصلة، تنقسم إلى موجبة وسالبة، لأن الحكم فيها:\n\n١ ـ إن كان بنسبة الحمل أو الاتصال أو الانفصال فهي (موجبة).\n\n٢ ـ وإن كان بسلب الحمل أو الاتصال أو الانفصال فهي (سالبة).\n\nوعلى هذا فليس من حق السالبة أن تسمى حملية أو متصلة أو منفصلة، لأنها سلب الحمل أو سلب الاتصال أو سلب الانفصال، ولكن تشبيها لها بالموجبة سميت باسمها.\n\nويسمى الإيجاب والسلب (كيف القضية)، لأنه يسأل بـ(كيف) الاستفهامية عن الثبوت وعدمه.",
+      "english": "Several conclusions follow.\n\nFirst, a conditional proposition is one in which one judges that a relation exists between one proposition and another—or that such a relation does not exist.\n\nSecond, conditionals divide into connected (muttaṣila) and disjunctive (munfaṣila). If the relation is connection and the dependence of one proposition on the other, or the denial of that connection, it is called connected, as in the first pair of examples. If the relation is exclusion, disjunction, or separation between the propositions, or its denial, it is called disjunctive, as in the second pair.\n\nThird, all three kinds—categorical, connected conditional, and disjunctive conditional—divide into affirmative and negative. Affirmation (ījāb) judges that predication, connection, or disjunction obtains; negation (salb) denies predication, connection, or disjunction. Strictly speaking, it is improper to call the negative proposition categorical, connected, or disjunctive in the same unqualified sense as the affirmative, since it denies precisely the relation in question. These names are nevertheless extended to negatives by analogy with the affirmatives.\n\nAffirmation and negation together are called the *quality* (kayf) of a proposition: one asks “how?” to determine whether the relation is affirmed or denied.",
+      "notes": [
+        {
+          "type": "Terminology",
+          "text": "Kayf al-qaḍiyya is affirmative/negative quality, distinct from the category of qualitative accidents. A negative connected conditional denies the connection, not necessarily its antecedent or consequent."
+        },
+        {
+          "type": "Textual status",
+          "text": "Arabic digitally transcribed from the 1402 AH searchable text; pp.128–129. No early print witness checked yet."
+        }
+      ],
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable Arabic, Book IV; 1968 ACO scan not yet independently collated",
+        "page": "128–129",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=129&type=c_fbook"
+      },
+      "status": "working-translation"
+    },
+    {
+      "id": "M-C-04",
+      "stage": "C",
+      "chapter": 4,
+      "title": "Parts of categorical and conditional propositions",
+      "arabicTitle": "أجزاء القضية: الموضوع والمحمول والمقدم والتالي",
+      "arabic": "أجزاء القضية\n\nقلنا إن كل قضية لها طرفان ونسبة، وعليه ففي كل قضية ثلاثة أجزاء. ففي الحملية:\n\nالطرف الأول: المحكوم عليه ويسمى (موضوعا).\n\nالطرف الثاني: المحكوم به ويسمى (محمولا).\n\nالنسبة: والدال عليها يسمى (رابطة).\n\nوفي الشرطية:\n\nالطرف الأول: يسمى (مقدما).\n\nوالطرف الثاني: يسمى (تاليا).\n\nوالدال على النسبة: يسمى (رابطة).\n\nوليس من حق أطراف المنفصلة أن تسمى مقدما وتاليا، لأنها غير متميزة بالطبع كالمتصلة، فإن لك أن تجعل أيّا شئت منها مقدما وتاليا ولا يتفاوت المعنى فيها، ولكن إنما سميت بذلك على نحو العطف على المتصلة تبعا لها، كما سميت السالبة باسم الموجبة الحملية أو المتصلة أو المنفصلة.",
+      "english": "Every proposition has two terms or sides and a relation between them, and therefore three components.\n\nIn a categorical proposition, the first term—what the judgment concerns—is the *subject* (mawḍūʿ); the second—what is affirmed or denied of it—is the *predicate* (maḥmūl); and the expression indicating the relation is the *copula* (rābiṭa).\n\nIn a conditional proposition, the first side is the *antecedent* (muqaddam), the second the *consequent* (tālī), and the expression that signifies the relation is again the connective (rābiṭa).\n\nStrictly, the sides of a disjunctive proposition do not deserve the names “antecedent” and “consequent,” because unlike a connected conditional they possess no inherent order. Either side can be placed first without changing the meaning. The labels are applied to disjunctions only by assimilation to connected conditionals, just as negative propositions inherit the conventional names of affirmative categorical, connected, or disjunctive propositions.",
+      "notes": [
+        {
+          "type": "Terminology",
+          "text": "Rābiṭa is relational sign, not always the grammatical verb 'is'; muqaddam and tālī in disjunction are order labels by convention, not asymmetric logical positions."
+        },
+        {
+          "type": "Textual status",
+          "text": "Consecutive Book IV source selection, printed pp.129–130 in 1402 AH transcription; 1968 ACO scan still awaiting independent visual comparison."
+        }
+      ],
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable Arabic, Book IV; 1968 ACO scan not yet independently collated",
+        "page": "129–130",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=131&type=c_fbook"
+      },
+      "status": "working-translation"
     }
   ],
   "glossary": [
