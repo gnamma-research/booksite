@@ -24,6 +24,8 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install playwright==1.56.0
           python -m playwright install --with-deps chromium
+      - name: Identity-matching and graph-schema unit tests
+        run: node --test research/intellectual-atlas/tests/test_identity_candidates.cjs
       - name: Serve GNAMMA
         run: |
           python -m http.server 8123 --bind 127.0.0.1 >/tmp/gnamma-atlas-http.log 2>&1 &
