@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-human-clause-review-v1",
   "date": "2026-11-09",
-  "reviewScope": "1,219 Arabic punctuation-delimited source candidates compared with corresponding English in 45 units: QT001–020 original matn and 25 commentary units; 4,301 remaining not certified.",
+  "reviewScope": "Manual comparative review of 1,306 Arabic punctuation-clause candidates: original matn QT001–030 (30 units) and 25 descendant commentary units, with unresolved readings noted; remaining 4,214 inventoried only.",
   "sourceBasis": "Current repository JS matn/commentary modules, retained edition N introduction and edition A main/conclusion",
   "method": "Source clause numbers are computed from Arabic punctuation. English ranges are manually matched, not proportional autoalignment. All segments in these eleven sections must be covered exactly once; unresolved readings remain explicit.",
   "units": [
@@ -1773,9 +1773,259 @@
           "note": "Printed conclusion به عين حقيقة and ملزومه retain textual/grammatical strain; the English follows commentary as provisional rather than establishing a manuscript reading."
         }
       ]
+    },
+    {
+      "id": "QT-021",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "The objection that intrinsic necessity restricts unrestricted reality is quoted as an objection, and the reply distinguishes necessary judgments from additional external qualifications."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 6,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "No extramental restriction arises merely from a necessary predicate; the absolute/qualified distinction remains intact."
+        }
+      ]
+    },
+    {
+      "id": "QT-022",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 9,
+          "enStart": 1,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "The pedagogical objection argues that answering a refuted hypothesis wastes proof and gives adversaries unnecessary openings; both claims retained."
+        },
+        {
+          "arStart": 10,
+          "arEnd": 14,
+          "enStart": 4,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "The comparison between objective being and common quiddities grounds a distinction for the intuitive thinker, not simply a dismissal of opponents as unintelligent."
+        },
+        {
+          "arStart": 15,
+          "arEnd": 19,
+          "enStart": 6,
+          "enEnd": 8,
+          "status": "checked",
+          "note": "Difficulties of common imaginative assumptions and the benefit of rebutting doubts in training seekers preserved."
+        }
+      ]
+    },
+    {
+      "id": "QT-023",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 2,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "A controversial claim of self-evidence is rejected in the context of the dispute."
+        },
+        {
+          "arStart": 3,
+          "arEnd": 5,
+          "enStart": 2,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "First two alternatives: bearer with no accident versus accident without existence considered."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 9,
+          "enStart": 4,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Third alternative: aggregate of accident and subject; its supposed external impossibility is argued."
+        },
+        {
+          "arStart": 10,
+          "arEnd": 15,
+          "enStart": 6,
+          "enEnd": 7,
+          "status": "checked",
+          "note": "Fourth alternative: qualified bearer; the intrinsic/accidental distinction does not become a plurality of essential existents."
+        },
+        {
+          "arStart": 16,
+          "arEnd": 17,
+          "enStart": 8,
+          "enEnd": 8,
+          "status": "checked",
+          "note": "Alleged incompatibility is denied by appeal to the earlier proof."
+        }
+      ]
+    },
+    {
+      "id": "QT-024",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Mental existence used in objection; reply asserts intrinsic identity of mental and external being under different considerations."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 7,
+          "enStart": 3,
+          "enEnd": 4,
+          "status": "unresolved-reading",
+          "note": "بالفرض / بالعرض would change suppositional to incidental predication, and the translation explicitly follows the displayed electronic base."
+        }
+      ]
+    },
+    {
+      "id": "QT-025",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 6,
+          "enStart": 1,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "First principle as a specific species-like entity is argued incompatible with both complete external unrelatedness and subsumption under common predicates."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 9,
+          "enStart": 5,
+          "enEnd": 6,
+          "status": "checked",
+          "note": "The admonition appeals to insight/intellect/discernment rather than asserting established manuscript history."
+        },
+        {
+          "arStart": 10,
+          "arEnd": 12,
+          "enStart": 7,
+          "enEnd": 8,
+          "status": "unresolved-reading",
+          "note": "Final كون عينيّ تكون طبيعته عن تلك الأكوان is syntactically unstable; English reports a contextual unity rather than an independently attested emendation."
+        }
+      ]
+    },
+    {
+      "id": "QT-026",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 2,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "More fitting and more necessary maintains the author's graded rhetorical assertion while distinguishing absolute objective being and considered determinations."
+        }
+      ]
+    },
+    {
+      "id": "QT-027",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 4,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "No real names/qualities are predicated of the unrestricted essence in this particular consideration."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 8,
+          "enStart": 3,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Negative predication as a notional determination is distinguished from adding a genuine external qualification."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 9,
+          "enStart": 6,
+          "enEnd": 6,
+          "status": "checked",
+          "note": "Exhortation to contemplate follows the attributed argument."
+        }
+      ]
+    },
+    {
+      "id": "QT-028",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 1,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "First knowledge relation is self-presence of the unrestricted identity, not a representation of external objects."
+        },
+        {
+          "arStart": 2,
+          "arEnd": 2,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Four consequences (necessity, necessitation, effusion, and other attributes) are not conflated into independent divine substances."
+        }
+      ]
+    },
+    {
+      "id": "QT-029",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Knowing itself entails knowledge of attributes and consequences both collectively and severally; no multiple independently knowing divine essences are introduced."
+        }
+      ]
+    },
+    {
+      "id": "QT-030",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Comprehensive non-detailed order in divine knowledge retained, explicitly rejecting the Peripatetic causal argument for separately existent effects."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 8,
+          "enStart": 3,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Quiddities/known entities qua not other are intelligible; qua distinct they are not separately actual here, with both receptive and efficient forms of presence rejected in the specified context."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 10,
+          "enStart": 6,
+          "enEnd": 6,
+          "status": "unresolved-reading",
+          "note": "الوجودين غير الفرضيين is retained as non-suppositional modes with a distinct printed العرضي alternative in the commentary; no categorical emendation."
+        }
+      ]
     }
   ],
-  "claimedManuallyComparedArabicClauses": 1219,
+  "claimedManuallyComparedArabicClauses": 1306,
   "issues": "Three passages corrected; one passage contains two connected technical-semantic corrections; additional textual cruxes flagged without conjectural emendation.",
   "noWitnessesCollated": true
 }
