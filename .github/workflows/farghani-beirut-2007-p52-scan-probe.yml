@@ -1,0 +1,83 @@
+name: Farghani Beirut 2007 p52 scholarly print comparison
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "texts/al-farghani/muntaha-al-madarik/editorial/BEIRUT_2007_P52_TRIGGER.md"
+permissions:
+  contents: read
+jobs:
+  inspect-one-location:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Fetch public catalogued print and render limited scholarly comparison previews
+        shell: bash
+        run: |
+          python -m pip install --quiet pymupdf Pillow requests
+          python - <<'PY'
+          import pathlib,hashlib,requests,fitz,io,json,math
+          from PIL import Image,ImageDraw,ImageFont
+          out=pathlib.Path('farghani-p52-audit');out.mkdir(exist_ok=True)
+          urls=[
+            'https://archive.org/download/lis_q115/lisanarb.com_q1508.pdf',
+            'https://archive.org/download/lis_q115/lisanarb.com_q1508.pdf?download=1',
+            'https://dn760106.eu.archive.org/0/items/lis_q115/lisanarb.com_q1508.pdf',
+          ]
+          errors=[];payload=None;chosen=None
+          for url in urls:
+            try:
+              req=requests.get(url,timeout=80,headers={'User-Agent':'Mozilla/5.0 (scholarly textual criticism)','Accept':'application/pdf,*/*'})
+              req.raise_for_status()
+              if not req.content.startswith(b'%PDF'):raise ValueError(f'Invalid PDF response: {req.content[:100]!r}')
+              payload=req.content;chosen=req.url;break
+            except Exception as e:errors.append({'url':url,'error':str(e)[:300]})
+          if payload is None:
+             (out/'RETRIEVAL_FAILURE.json').write_text(json.dumps({'requested':urls,'errors':errors},indent=2)+'\n')
+             raise SystemExit('No photo of 2007 printed edition accessible. No reading asserted.')
+          sourcehash=hashlib.sha256(payload).hexdigest()
+          doc=fitz.open(stream=payload,filetype='pdf')
+          n=len(doc)
+          probe={'citation':'Farghani 2007 Dar al-Kutub al-Ilmiyya, al-Kayyali vol1; Internet Archive lis_q115/lisanarb.com_q1508.pdf','url':chosen,'sha256':sourcehash,'bytes':len(payload),'num_pages':n,'classification':'UNVERIFIED until visual title and pagination examined','potential_pages_rendered':[],'errors':errors}
+          targets=list(range(0,min(5,n)))+list(range(46,min(91,n)))
+          pages=[]
+          for k in targets:
+            pg=doc[k]
+            pix=pg.get_pixmap(matrix=fitz.Matrix(.74,.74),alpha=False)
+            im=Image.open(io.BytesIO(pix.tobytes('png'))).convert('RGB')
+            if im.width>650:
+               im.thumbnail((650,950))
+            pages.append((k,im))
+            probe['potential_pages_rendered'].append(k)
+          # Contact sheets only, excluding full modern-edition redistribution
+          for start in range(0,len(pages),12):
+            chunk=pages[start:start+12]
+            cellw=420;cellh=620;cols=3;rows=math.ceil(len(chunk)/cols)
+            sheet=Image.new('RGB',(cols*cellw,rows*cellh),'white')
+            draw=ImageDraw.Draw(sheet)
+            for j,(k,im) in enumerate(chunk):
+              x=(j%cols)*cellw;y=(j//cols)*cellh
+              im.thumbnail((cellw-10,cellh-40),Image.Resampling.LANCZOS)
+              sheet.paste(im,(x+(cellw-im.width)//2,y+24))
+              draw.text((x+8,y+4),f'PDF index {k} / page {k+1}',fill='black')
+            sheet.save(out/f'contact_{start//12+1:02d}.jpg',quality=78,optimize=True)
+          # Working crop only: near expected location, no whole 2007 edition archived
+          for k in range(51,min(70,n)):
+            pg=doc[k]
+            txt=pg.get_text()
+            if 'الحكم' in txt or 'الحكيم' in txt:
+               probe.setdefault('text_search_hits',[]).append({'pdf_index':k,'excerpt':txt[max(0,txt.find('الحك'))-50:txt.find('الحك')+90]})
+          (out/'SOURCE_PROVENANCE.json').write_text(json.dumps(probe,indent=2,ensure_ascii=False)+'\n')
+          print(json.dumps({'retrieved':True,'num_pages':n,'size':len(payload),'sha256':sourcehash,'screenshots':len(pages),'text_hits':probe.get('text_search_hits',[]),'contact_sheets':list(str(x) for x in out.glob('contact*.jpg'))},ensure_ascii=False))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: farghani-beirut-2007-p52-scholarly-comparison
+          path: farghani-p52-audit/
+          retention-days: 7
+          if-no-files-found: warn
