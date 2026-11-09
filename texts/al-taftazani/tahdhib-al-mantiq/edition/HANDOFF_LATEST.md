@@ -1,93 +1,74 @@
-# GNAMMA Tahdhīb al-Manṭiq — LATEST CUMULATIVE HANDOFF
+# GNAMMA Tahdhīb — LATEST CUMULATIVE HANDOFF
 
-**Current stage 107 · 9 November 2026 · authoritative restart point for failed / truncated chats.**
+**Stage 108 · 9 November 2026 · definitive restart document for a truncated/failed chat, NOT a definitive manuscript edition.**
 
-**Canonical GitHub repository:** [gnamma-research/booksite](https://github.com/gnamma-research/booksite), default `master`. **Project root:** `texts/al-taftazani/tahdhib-al-mantiq/edition/`. Stage106 merged in [PR #261](https://github.com/gnamma-research/booksite/pull/261), commit `e94baf08772afb80c3553fcd798255a7a9072c44`. Stage107 resides on `tahdhib-cumulative-stage107-20261109` pending verified PR merge. Check the actual branch and latest merge before declaring files published.
+**Repo:** [gnamma-research/booksite](https://github.com/gnamma-research/booksite), default `master`. **Project root:** `texts/al-taftazani/tahdhib-al-mantiq/edition/`. **Stage107 was MERGED** as [PR #262](https://github.com/gnamma-research/booksite/pull/262), commit `7805a519287f967a8c211a49e94103569ddabb44` after Tahdhīb logical-core and Chromium/WebKit tests passed. Stage108 changes are on `tahdhib-cumulative-stage108-20261109` until their own PR is merged; confirm master/branch before claiming deployment.
 
-**Stage policy:** This `HANDOFF_LATEST.md` is fully rewritten for each stage, while previous `stages/STAGE###` reports, underlying source batches, revisions and cumulative snapshots remain intact. Never regenerate from a chat summary alone; reconstruct from repository data.
+**Durability contract:** this file is **fully rewritten and cumulative**, but older `stages/STAGE###` reports, source-JS batches and cumulative Markdown snapshots remain immutable. Do not use a chat summary as the source of truth when source files are present.
 
-## THE FIRST FILES TO READ in the next conversation
+## Read in this precise order after a conversation failure
 
-1. **This file `HANDOFF_LATEST.md`** — complete current state, next note, unresolved cruxes and verification recipe.
-2. [`progress-data.js`](progress-data.js), machine-readable **NINE** source-graded metrics and immutable stage ledger **102–107**. The web [`progress.html`](progress.html) renders actual bars and status labels, not estimates.
-3. [`stages/STAGE107_NOTES_056_110.md`](stages/STAGE107_NOTES_056_110.md), exact source-based report for the 55 new numbered glosses, their Arabic status, English and attribution cruxes.
-4. [`batches/hawashi-numbered-cumulative-hwn001-110.md`](batches/hawashi-numbered-cumulative-hwn001-110.md), a self-contained **222K-character** cumulative annotated Arabic–English working Markdown for **ALL numbered notes 1–110**. 106 have complete first-pass English arguments; **1, 25, 82, 90** remain partial. Fifty-two numbered notes have full searchable-Arabic text; the other 58 have only short Arabic locator lemmas. FIVE attached unnumbered texts are separately displayed.
-5. [`hawashi-numbered-notes.html`](hawashi-numbered-notes.html), searchable bilingual note reader; automatically aggregates stable note IDs from Stage104, Stage105, Stage106a–d and Stage107a–f without duplication. [`hawashi-q125-178.html`](hawashi-q125-178.html) is an OLDER **52-page short excerpt/analysis** reader, not proof of complete translation.
-6. Previous immutable reports: [Stage104](stages/STAGE104_TRANSLATION_AND_PROGRESS.md), [Stage105](stages/STAGE105_COMPLETION_AND_GUIDANCE.md), [Stage106](stages/STAGE106_NUMBERED_TRANSLATION.md), plus [Stage103 witness candidate census](STAGE103_WITNESS_CANDIDATES_AND_LAYER_IDENTITIES.md), [Stage101 independent modal theorem boundary](STAGE101_DOMAIN_INDEPENDENT_PROOF_BOUNDARIES.md), and [complete first-pass principal Y commentary batch register](YAZDI_TWO_BATCH_RELEASE_2026-11-07.md).
+1. This `HANDOFF_LATEST.md`.
+2. [`progress-data.js`](progress-data.js) (canonical machine-readable **nine separate progress bars** and stage ledger 102–108); [`progress.html`](progress.html) (live web dashboard).
+3. [`stages/STAGE108_NOTES_111_126.md`](stages/STAGE108_NOTES_111_126.md) (immutable source-critical report, note-specific actual work and next steps).
+4. [`batches/hawashi-numbered-cumulative-hwn001-126.md`](batches/hawashi-numbered-cumulative-hwn001-126.md): **latest complete cumulative Markdown** for 126 consecutively numbered later-gloss H notes. About 20,457 English words in the current note fields, 122 first-pass complete English and four partial; 54 full digitally searchable Arabic note transcriptions and 72 short Arabic locator phrases; six unnumbered separately attributed glosses. It is not a complete photographic Arabic–English edition.
+5. To reconstruct actual data instead of retyping: [Stage104 base notes](hawashi-numbered-notes-stage104.js); [Stage105 override/appends](hawashi-numbered-notes-stage105.js); Stage106 [a](hawashi-numbered-notes-stage106a.js), [b](hawashi-numbered-notes-stage106b.js), [c](hawashi-numbered-notes-stage106c.js), [d](hawashi-numbered-notes-stage106d.js); Stage107 [a](hawashi-numbered-notes-stage107a.js), [b](hawashi-numbered-notes-stage107b.js), [c](hawashi-numbered-notes-stage107c.js), [d](hawashi-numbered-notes-stage107d.js), [e](hawashi-numbered-notes-stage107e.js), [f](hawashi-numbered-notes-stage107f.js); Stage108 [a](hawashi-numbered-notes-stage108a.js), [b](hawashi-numbered-notes-stage108b.js). Stable IDs `HWN-001`…`HWN-126` must be unique. Stage105 versions must override older English rather than count as new notes.
+6. [`hawashi-numbered-notes.html`](hawashi-numbered-notes.html) is the mobile, searchable bilingual working reader. [`hawashi-q125-178.html`](hawashi-q125-178.html) is the earlier shorter excerpt-only companion and does NOT represent 52 full pages translated.
+7. Critical dependencies: [Stage103 witness inventory](STAGE103_WITNESS_CANDIDATES_AND_LAYER_IDENTITIES.md), [Stage101 proof boundary](STAGE101_DOMAIN_INDEPENDENT_PROOF_BOUNDARIES.md), [principal Y two-batch working translation register](YAZDI_TWO_BATCH_RELEASE_2026-11-07.md), prior [Stage107 report](stages/STAGE107_NOTES_056_110.md).
 
-## Textual families (DO NOT CONFLATE)
+## Three different textual families — never mix
 
-- **T**: Saʿd al-Dīn al-Taftāzānī's *Tahdhīb al-Manṭiq wa-l-Kalām* original matn, including **19 editorial logic divisions** and a separate **1,044-clause kalām** reader. All are working bilingual, not independently manuscript-certified here.
-- **Y**: Mullā ʿAbd Allāh al-Yazdī's principal Arabic `ḥāshiya` on the logic text, Qum printed **Q7–Q123**. The printed p123 authorial prayer is distinct from a later completion notice. **110/110 substantive printed source positions** have working Arabic–English in two cumulative Markdown batches and HTML readers, **0/110 independently photographic/manuscript-certified**; seven other positions Q20,21,38,52,53,85,109 have no independently delineated authorial main text. Check Q24, Q37, Q95–101, Q108, Q114, Q117, Q123, and actual independent witness identity before any emendation.
-- **H**: later ***ḥawāshī al-ḥāshiya***, separate mixed-author annotations after p123, starting with heading **Q125**, blank **Q126** and actual note prose **Q127**. The Qum edition has **274 later prose printed positions Q127–Q400**, including numbered notes, unnumbered notes, quotations and even modern editorial interpolations. Contributors include Mīrzā Muḥammad ʿAlī, Shaykh ʿAbd al-Raḥīm, quoted `al-Taqrīb`, al-Dawwānī, al-Rāghib and others. **Book-level catalogue naming Yazdī does NOT make him the author of H notes.** Manuscripts of T are not automatically independent Y or H witnesses.
+- **T = Saʿd al-Dīn al-Taftāzānī original *Tahdhīb al-Manṭiq wa-l-Kalām***. Logic reader has **19** editorial units translated; separate kalām has **1,044** stable translated clauses. Not independently manuscript-certified in this H continuation.
+- **Y = Mullā ʿAbd Allāh al-Yazdī principal `Ḥāshiya/Sharḥ`** of the logic portion. In the Qum volume its principal author's discourse is Q7–123, with separate nonauthorial completion notice. **110/110 substantive Qum printed positions (113 bilingual blocks) complete in SEARCHABLE-PRINT FIRST PASS**, but **0/110** independently photo/manuscript collated. Missing/structural main-text positions Q20/21/38/52/53/85/109. Correct core cruxes Q24, Q37 (possible missing continuation), Q95–101, Q108 (`حكم عليه كل كل`), Q114, Q117 and Q123 only with actual second witnesses. Do NOT use manuscripts of T as automatic Y variants.
+- **H = LATER `ḥawāshī al-ḥāshiya`**, introduced at Q125, blank Q126, substance Q127 onward. **Q127–400 inclusive = 274 later printed positions.** Multiple separately signed voices—Mīrzā Muḥammad ʿAlī, Shaykh ʿAbd al-Raḥīm, other historians and quotations of `al-Taqrīb`, Dawwānī, al-Rāghib, etc. This entire Stage104–108 numbered-note corpus is H, not Y. Printed volume’s catalogue label listing Yazdī as author is not passage-specific attribution. Some additional quotations are modern and must be clearly distinguished.
 
-## EXACT nine concurrent progress metrics as of Stage107
+## EXACT Stage108 cumulative progress — nine independent denominators
 
-| Distinct goal | Current / scoped total | Scholarly qualification |
+| Objective | Current | What the bar actually certifies |
 |---|---:|---|
-| Original logic T matn, first-pass bilingual divisions | **19/19** | Translation; not definitive manuscript collation |
-| Principal Y commentary, first-pass source Qum substantive pages | **110/110** | 113 working bilingual blocks, seven structural positions excluded |
-| Principal Y photo/manuscript-certified pages | **0/110** | Manuscript leads identified but not independently collated |
-| Later H print positions with short selected lemma excerpts/analyses | **52/274** | Older Q127–178 source-page *samples*, not complete pages |
-| Later H FULL translated and photo-verified printed pages | **0/274** | Multiple numbered/unnumbered texts per page; no page can yet be certified complete |
-| Later H *numbered notes* with full first-pass English in indexed opening cohort | **106/110** | Four incomplete numbers **1, 25, 82, 90**; total H note population beyond 110 unknown; NOT whole-work percent |
-| Later H *numbered notes* with complete DIGITALLY SEARCHABLE Arabic transcription | **52/110** | Only notes24–75; 58 others have locators; ZERO photo-collated |
-| Historical exceptional fourth-figure modal combinations source-classified | **46/46** | Historical taxonomy, NOT full independently derived modal proofs |
-| Classical modal consequence types independently proved in full source semantics | **0/46** | Stage101 establishes weaker conditional temporal-shadows only |
+| Taftāzānī T logic matn, bilingual editorial units | **19/19** | Working first-pass source |
+| Main al-Yazdī Y principal commentary, substantive Qum page positions translated | **110/110** | Working source-English, 113 nonoverlapping blocks |
+| Main Y principal positions independently manuscript/photo certified | **0/110** | Candidate witnesses are not certified readings |
+| H printed page positions with earlier short excerpt/analytic sample | **52/274** | Q127–178 *selected excerpts*, not whole page translation |
+| H entire printed pages completely translated **and** photographically collated | **0/274** | No false note→page inference |
+| H consecutively numbered opening notes Q127–160 with complete first-pass English | **122/126** | Partial: **HWN-001, HWN-025, HWN-082, HWN-090**; scoped local note cohort, NOT all H notes |
+| H numbered notes with full *digitally searchable* Arabic note text | **54/126** | Full working Arabic for **24–75 and 114–115**, **72** locator-only; **zero photograph certified** |
+| 4th-figure exceptional modal types historically classified | **46/46** | Historically source typed, not independently derived |
+| 4th-figure complete medieval modal theorems independently proved | **0/46** | Stage101 proved limited temporal consequences conditional on explicit assumptions |
 
-**Stable unresolved note IDs:** `HWN-001` (modern insertion boundary), `HWN-025` (doubtful source reading), `HWN-082` (uncertain word), `HWN-090` (cross-page source attribution). None is to be marked complete without a documented resolution.
+**These numbers use different units.** A first-pass translated numbered note does not render any whole printed page complete. A digitized searchable source is not a photographed manuscript witness. 122/126 expresses only **our now-enumerated opening cohort** and must not become “97% of all H.” Pages Q161–400 remain to be systematically processed.
 
-**These are incomparable denominators and may never be added or conflated.** Zero of 274 later pages is fully certified even though 106 notes carry first-pass English. The original main Y may be 100% working-translated but remains 0% multi-witness certified. On H, Stage107 adds **55 new consecutive numbered notes, 53 marked complete first-pass, two partial**, not 55 complete Arabic facing pages or photographed pages.
+## Stage108 actually completed vs unresolved
 
-## Translation/source data and exact aggregation
+- **16 new notes HWN-111…126** on Qum pp156–160, split into immutable [108a](hawashi-numbered-notes-stage108a.js) (111–116, 6 notes) and [108b](hawashi-numbered-notes-stage108b.js) (117–126, 10 notes). All sixteen contain first-pass English renderings, totalling about **2,815 additional English words**. Full searchable-Arabic working transcriptions were added for notes **114 and 115** only; the other 14 have short Arabic locators.
+- **One new UNNUMBERED quoted essay** after note112 Q157–158: explicitly ascribed to Mīrzā Muḥammad ʿAlī, distinguishes outward Islam from inward faith and quotes an Imāmī report. It is *not* secretly added as note113 or a teaching of Y/T, and its isnād has not been authenticated. **Six unnumbered** passage records now appear after notes **47,48,71,86,90,112**.
+- **111** uses the four relations of universals to classify grammatical iḍāfa and contests the reading of “the beliefs of Islam” as `bayānī` rather than `lāmī`; **112** distinguishes heart's assent and spoken profession; **113** treats the lexical root j-n-n with printed speaker siglum M–B **not identified**; **114–115** show real vs component and rhetorical attribution; **116–119** treat omitted governors, teacher/student and `taḍmīn`; **120–123** treat `lā siyamā` and three grammatical cases; **124–126** instrumental form, `ʿiṣām` and `sajʿ` vs Qurʾānic `fawāṣil`.
+- No new manuscript photographs, no independently collated Y variant, no completed full H printed page, no new full-classical modal proof. The four incomplete HWN IDs **001/025/082/090** remain unresolved intentionally.
 
-For reproducibility, load these files **in this order**:
-1. `hawashi-numbered-notes-stage104.js`: original notes 1–18, some partial.
-2. `hawashi-numbered-notes-stage105.js`: **overrides** for 2,8,9,12,15 and **appends** 19–23. Old versions retained in Stage104.
-3. `hawashi-numbered-notes-stage106a.js` … `stage106d.js`: new 24–55; Arabic working transcription all 32, English. Stage106 25 partial due `به` / `وق.`.
-4. `hawashi-numbered-notes-stage107a.js` … `stage107f.js`: new **56–110**. Batches a/b (56–75) contain 20 digitally searchable full Arabic working note transcriptions, and c/d/e/f (76–110) contain **35 Arabic locator lemmata only** with English. Notes **82** and **90** partial because the source reading and speaker boundaries respectively are uncertain.
-5. The full source-aligned cumulative result is published to `batches/hawashi-numbered-cumulative-hwn001-110.md`, while the earlier 001–055 snapshot remains for audit/reversion.
+## SOURCE GRADE, ASSESSMENT AND PUBLICATION RULES
 
-**Arabic source representation is graded:** `arabicFullText` means *digitally searchable Qum source text, working transcription*, **not photographed facsimile**; `arabicLemma` alone means short locator, NOT a full Arabic edition. `scanCertified:false` stays on every record. In the reader, Arabic full vs locator is labelled immediately above the passage; English whole-note vs partial is separately labelled. This is one dedicated H companion: primary T+Y reader retains exactly the two *Matn* and *Matn + sharḥ* states.
+- Every note record must include stable `HWN-###` ID, exact printed Qum source-page URL(s), reported speaker/voice, English whole/partial status, short Arabic lemma or full digital Arabic, `scanCertified:false` unless independent scan/folio/line actually verified.
+- `arabicFullText` is **not** a photograph; it is the searchable print's working text. `arabicLemma` alone is a locator, not full historical Arabic. NEVER imply all 126 notes are bilingual transcription-complete. English completion and Arabic transcription need distinct progress bars.
+- A printed page may have **several numbered notes, unnumbered quoted passages and modern insertions**. No printed page counts as translated until each substantive layer is accounted for and photographed. Current completely translated/collated H-page count remains **0/274**.
+- Alternative interpretations and controversial transmitted reports (including faith vs Islam among different madhhabs, lexicon of jinn, prophet/messenger status) stay attributed to the historical speaker, not endorsed as authenticated.
+- Primary T+Y main reader retains only **two text states: Matn and Matn + sharḥ**; H stays a separate compact companion accessible through References. No third principal text mode.
+- PDF/print exports should be regenerated only after real text checking; if derived from current source they must bear **WORKING UNCOLLATED** warnings.
+- Independent Y witness work: obtain genuine manuscripts/catalogue-confirmed identities from Stage103, line-by-line compare substantive cruxes; do not call an independent print a manuscript or make up variants.
+- Historical modal proof status: 46 typed cases, full Avicennan modality (life/subject-descriptor/world/time/ʿadam al-dawām and quantifiers) unproved. Do not infer a medieval theorem merely from no counterexamples in finite models.
 
-**Five UNNUMBERED texts following notes 47,48,71,86,90** are separately attributed and counted outside all numbered denominators. Modern quotations in older pp127/132/134 require independent editorial attribution, not automatic incorporation.
+## NEXT Stage109 — precise order, sources, and deliverables
 
-## New substantive arguments studied in Stage107
+**Start at HWN-127** on [Qum p161](https://ablibrary.net/book_content/b/12170/161?lang=ar), not Q179 simply because an earlier excerpt companion reached Q178.
 
-- **56–65:** grammatical causal-accusative and circumstances; abstract `hudā/nūr` as participle or intensive predication; the prepositional phrase attached to following the Prophet, not his receiving an additional honour.
-- **66–75:** `ikhtiṣāṣ` vs `ḥaṣr` (some authorities distinguish specification from exclusion), real vs relative restriction; etymology and meanings of `āl/ahl`; sources on Companions; distinct senses of `ṣidq/ḥaqq` and direction of correspondence.
-- **76–78:** problem of defining a `qaḍiyya` as a report that admits `ṣidq/kadhib` without circularly defining “proposition” by “true/false report.” Distinguish report, correspondence relation and conventional use. 
-- **79–85:** causative `bāʾ`, plural construct supposedly expressing universality, long competing definitions of `ẓarf laghw` (expressed governor) vs `ẓarf mustaqarr` (omitted governor) and general/specific predicate. **82** partial: `ويحتمل الاستقراء` suspected textual/context crux, independently inspect image.
-- **86–95:** `ghāyāt` adverbs with removed complements; three statuses of omission; demonstrative “this” indicating what is mentally ordered rather than simply a physical book, with an **unresolved separate al-Taqrīb quotation** in **90**; seven book referent candidates and acceptability of `sawāʾ ... aw/am`. 
-- **96–103:** mental vs verbal speech, *book titles as names of kinds*, abstract “refinement” predicated of concrete book by emphatic metaphor or suppressed predicate; `majāz al-ḥadhf` vs addition.
-- **104:** full first-pass account of logic as `āla qānūniyya`; logical rules must be **observed** to prevent error; definition is `rasm` (relational instrumental end), not `ḥadd` (essence).
-- **105–110:** bodily `maʿād`, distinction between philosophical method *not formally requiring Islamic conformity* and method *requiring disagreement* (the latter does not follow); coordination and `min` of genus vs part.
+- **127–128:** *tawakkul* as refraining from efforts outside human power, using permitted causes, refusing to regard oneself as creator of their effects; distinction between spiritual prescription and lexical relying on someone. The quoted “tie your camel and trust God” requires independent hadith checking.
+- **129–130:** `lammā` as causal/time connective, difference between “being when” and “because,” prior implicit identification of the logic/kalām two divisions, definiteness of “the first division” vs the introduction, and whether the explanatory `fa-` and past-tense clauses are appropriate.
+- Continue **131+** in sequence on Q162 and after; never skip hard notes, hide unnumbered notes or assign one page's speaker to every note. Complete note111's printed-page signature review and Q157 unnumbered quotation if better facsimiles become available.
+- Independently revisit four partial HWN IDs: 1 (modern interpolations), 25 (unclear `به`/`وق.`), 82 (`ويحتمل الاستقراء` reading), 90 (Q151–152 al-Taqrīb attribution seam).
+- Parallel full Arabic for the 72 locator-only notes; independently verify Y manuscript readings.
+- Add `hawashi-numbered-notes-stage109a.js` etc as **new immutable files**, regenerate new complete `batches/hawashi-numbered-cumulative-hwn001-NEWEST.md` without deleting old snapshots; add `stages/STAGE109_*.md` with source links/word count/deltas/gaps; update all nine bars in `progress-data.js`, the responsive reader and **entire** `HANDOFF_LATEST.md`, and run complete Python+Chromium/WebKit QA. Merge only on green Tahdhīb checks and state the actual PR/commit.
 
-## Mandatory outstanding scholarly tasks
+### Minimal prompt after future chat failure
 
-**A. H complete work.** Next source-numbered note **111**, Qum **p156–157**, extensive grammatical logic of genitive construction and relative extensions of `ʿaqāʾid al-Islām`. Continue **112** p157 on `islām` vs `īmān`, then note113 onward p158. One particularly long **unnumbered reported Imāmī excursus** follows note112 and must be separately labelled, not assigned falsely to author Y or counted as note113.
+> Continue GNAMMA Tahdhīb **Stage109** from latest merged `master` at `gnamma-research/booksite`. First read `texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md`, `progress-data.js`, `stages/STAGE108_NOTES_111_126.md`, `batches/hawashi-numbered-cumulative-hwn001-126.md`, and Stage104/105/106a-d/107a-f/108a-b JS data. Actual numbered H corpus: **126 unique notes Q127–160; 122 first-pass English complete, four partial (1,25,82,90), 54 with full digitally searchable Arabic, 72 Arabic locators, six separately attributed unnumbered glosses. ZERO of 274 H printed positions fully collated, ZERO of 110 principal Y positions independently manuscript-certified, 46 modal source types but ZERO fully independently proved.** Start numbered note127 Q161 and proceed consecutively, with distinct speakers, unnumbered notes and source pages. At each stage add immutable translations/report, regenerate cumulative Markdown, update nine independent progress bars and full handoff, pass QA and merge only after verified success.
 
-**B. Resolve previous gaps without invented text.** Notes **1** (Q127 modern inserted source boundary), **25** (Q135 `به`/terminal `وق`), **82** (Q149 doubtful `استقراء` construction) and **90** (Q151→152 separate al-Taqrīb quotation and demonstrative reference) remain partial. Obtain actual printed-page photographs and align Arabic source, not merely guess plausible wordings.
-
-**C. Full Arabic for 58 notes** (1–23 and 76–110) currently have locator only. When images are available, transcribe independent full Arabic and align each English clause. Do not count digital full-text transcription as independent photographic manuscript collation.
-
-**D. Y critical edition.** Q7–123 first pass is already complete—do NOT translate the same 110 pages repeatedly. Secure genuine independent Y witnesses from Stage103, verify incipit/explicit/family, collate problematic loci Q24/37/95–101/108/114/117/123, record actual variants by image and line. Kalām original T source with 1,044 clauses is a distinct project.
-
-**E. Historical logic:** work from Stage101's weak temporal theorems and 46 historically source-classified modal combinations. Full modal truth conditions (life, times, worlds, subject description, same-individual `lā-dawām`, quantifier scope) and independent proofs remain unsatisfied. A zero-counterexample test is not automatically a nonvacuous theorem.
-
-**F. Publication:** Keep compact Darūrī style and two primary states; H companion supports Arabic (full/locator), English and source/witness notes. Export final PDFs only after photographic collation and peer proofreading. Update the GNAMMA site itself via verified merges; a staging PR is not a deployed site.
-
-## EVERY STAGE: mandatory cumulative, immutable and tested deliverables
-
-1. New **immutable** `hawashi-numbered-notes-stage108a.js` etc with exact note IDs, page URLs, speaker, full/locator Arabic grade, English whole/partial grade, and separate unnumbered addenda.
-2. New **immutable** `stages/STAGE108_<topic>.md` with per-note source ranges, real word counts, source and textual problems, actual delta and next note.
-3. Regenerate entire `batches/hawashi-numbered-cumulative-hwn001-NEWEST.md`; retain old snapshots. Do not overwrite past translations or forget stage overlays.
-4. Update `progress-data.js` **all nine metric denominators** (especially bounded cohort 106/110 and Arabic 52/110); `progress.html`, main H reader, and **entire** `HANDOFF_LATEST.md` with exact restart. Never call a translated *note* a translated *printed page*.
-5. Run `python tools/tahdhib/check_stage_handoff.py`, `python tools/tahdhib/verify_logic_core.py`, and Chromium/WebKit Playwright checks `node tools/tahdhib/handoff_reader_qa.mjs` and established Tahdhīb reader QA. Merge only after green CI.
-6. Give exact PR URL and commit if merged; never promise to continue asynchronously or falsely infer server deployment.
-
-## Copy-paste minimal starter after another chat failure
-
-> Continue Tahdhīb **Stage108** from the latest merged GitHub `master` of `gnamma-research/booksite`. FIRST read `texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md`, `progress-data.js`, `stages/STAGE107_NOTES_056_110.md`, `batches/hawashi-numbered-cumulative-hwn001-110.md`, and the Stage104/105/106a-d/107a-f note source files. Current working corpus: **110 consecutively numbered later H glosses Q127–156, 106 complete first-pass English, four partial (1,25,82,90); 52 full searchable Arabic notes24–75, 58 locator-only; FIVE separate unnumbered excerpts; 0/274 entire H printed pages fully translated/collated; 0/110 Y principal pages manuscript-certified; 46 modal classes sourced but 0 full classical proofs.** Continue complete source-numbered note111 across Q156→157, note112 and later; preserve separately attributed Shiʿi excursion on faith; update cumulative Markdown, nine progress bars, entire handoff and rigorous CI; merge only upon success.
-
-**Last rule: this is a working digital-text edition with transparent evidence grades, not a definitive manuscript-collated edition.**
+**The work is preserved. This handoff is a precise current-state register, not a promise of asynchronous future processing.**
