@@ -72,6 +72,6 @@ report["succeeded"]=sum(bool(x["succeeded"]) for x in report["records"])
 (ROOT/"IIIF_SELECTED_HIRES_MANIFEST.json").write_text(json.dumps(report,indent=2,ensure_ascii=False)+"\n")
 print(json.dumps({"succeeded":report["succeeded"],"canvas_count":report["canvas_count"],
                   "records":[{"index":r["scan_index"],"ok":r["succeeded"],"candidates":r.get("candidate_count",0),
-                  "reason":r.get("tried",[{}])[0].get("error")} for r in report["records"]]},ensure_ascii=False))
+                  "reason":(r.get("tried") or [{}])[0].get("error")} for r in report["records"]]},ensure_ascii=False))
 if not report["succeeded"]:
     raise SystemExit("No high-res IIIF selected images could be retrieved; provenance log saved")
