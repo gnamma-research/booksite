@@ -1,0 +1,56 @@
+name: GNAMMA unified atlas v3 — common-science UI and source network
+
+on:
+  pull_request:
+    paths:
+      - 'research/intellectual-atlas/**'
+      - '.github/workflows/atlas-unified-v3.yml'
+  push:
+    branches: [master]
+    paths:
+      - 'research/intellectual-atlas/**'
+      - '.github/workflows/atlas-unified-v3.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  atlas-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: Verify canonical source integrity
+        run: |
+          node --check research/intellectual-atlas/atlas-unified.js
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('research/intellectual-atlas/corpora/canonical-atlas.json').read_text())
+          assert len(d['nodes'])==404, len(d['nodes'])
+          assert len(d['edges'])==377, len(d['edges'])
+          assert len(d['textual_families'])>=20
+          print('CANONICAL_DATA_INTACT')
+          PY
+      - name: Serve the atlas
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 >/tmp/atlas-http.log 2>&1 &
+          sleep 2
+          curl -fsS http://127.0.0.1:8123/research/intellectual-atlas/ > /dev/null
+      - name: End-to-end unified atlas
+        run: python research/intellectual-atlas/tests/verify_unified_v3_browser.py
+      - name: Browser screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unified-atlas-v3
+          path: /tmp/gnamma-atlas-v3/
+          if-no-files-found: ignore
