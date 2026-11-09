@@ -481,6 +481,18 @@
       "url": "https://lib.rafed.net/view.php?b_id=3108&page=32&type=c_fbook",
       "source": "1428 AH Zāriʿī ed., vol. 1, printed p. 38, editorial note on Ṭūsī",
       "status": "Secondary interpretation; primary Ṭūsī text not yet collated"
+    },
+    {
+      "id": "N1428-II02-01",
+      "passageId": "N-II-02",
+      "type": "Textual emendation · later editor",
+      "text": "In the 1428 AH revised edition vol. 1 p. 52 n. 6, al-Zāriʿī says that all copies read «كان جوهرا أو عرضا موجودا في نفسه رابطا بالنظر إلى علّته» but deletes «موجودا في نفسه» as superfluous and, without the subsequent restriction ‘considered in itself’, misleading. The reading edition adopts the explicit editorial deletion in Arabic and English. The phrase from the 1417 AH base and the editor's rationale remain in the passage note; manuscript evidence for the omission has not been claimed.",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=52&type=c_fbook",
+      "source": "Nihāyat al-Ḥikma, edited 1428 AH vol. 1 p. 52 n. 6; prior 1417 AH Qum text, II.2",
+      "status": "Explicit editorial deletion from copies, checked against printed note; no manuscript attestation of omission",
+      "adoption": "adopted-with-full-apparatus",
+      "originalReading": "كان جوهرا أو عرضا موجودا في نفسه رابطا بالنظر إلى علّته",
+      "adoptedReading": "كان جوهرا أو عرضا رابطا بالنظر إلى علّته"
     }
   ],
   "sourceCriticalPolicy": "Preserve authorial notes explicitly marked منه رحمه الله; distinguish later editor's explanatory notes; challenge historically questionable ascriptions by checking named scholars' own texts. These criticalNotes are distinct from the authorial Arabic and translation."
