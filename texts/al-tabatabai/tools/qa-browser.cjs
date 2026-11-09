@@ -55,7 +55,7 @@ async function run(browserType){
       await page.locator('[data-part-jump="passage-M-P-01"]').click();
       const expectedArabic={
         'M-K-01':'الجزئي','M-K-02':'الجزئي','M-K-03':'الجزئي',
-        'M-K-04':'المشكك','M-K-05':'المفهوم','M-K-06':'الحمل','M-K-07':'النسب الأربع'
+        'M-K-04':'المتواطئ','M-K-05':'المفهوم','M-K-06':'الحمل','M-K-07':'نسبة التباين'
       };
       for(const id of ['M-K-01','M-K-02','M-K-03','M-K-04','M-K-05','M-K-06','M-K-07']){
         const passage=page.locator('#passage-'+id);
