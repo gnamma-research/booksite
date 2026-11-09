@@ -85,7 +85,31 @@
         "taayyun",
         "wujud"
       ],
-      "notes": "The page's repeated pairing of attribution and negation is standpoint-sensitive: this is not a denial of theological truth or of all divine naming."
+      "notes": "The page's repeated pairing of attribution and negation is standpoint-sensitive: this is not a denial of theological truth or of all divine naming.",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-060",
+          "printed_page": 72,
+          "label": "First naṣṣ: the Absolute as the subject of metaphysical knowledge",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-060"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-061",
+          "printed_page": 73,
+          "label": "The Absolute, nonpredication, and the apparent self-referential paradox",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-061"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-062",
+          "printed_page": 74,
+          "label": "An absoluteness beyond the binary of absolute and conditioned",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-062"
+        }
+      ],
+      "commentary_alignment": "Correspondence checked against al-Mahāʾimī's source-transcription lemmata and printed section headings; alignment is not proof of doctrinal agreement."
     },
     {
       "id": "QUN-NU-001-B",
@@ -103,7 +127,31 @@
         "mahiyya",
         "wujud"
       ],
-      "notes": "Online transcription repeats «في نفسه»; treat as a possible transmissional/editorial error, not a secure authorial repetition. Verify against Āshtiyānī and manuscript witnesses."
+      "notes": "Online transcription repeats «في نفسه»; treat as a possible transmissional/editorial error, not a secure authorial repetition. Verify against Āshtiyānī and manuscript witnesses.",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-063",
+          "printed_page": 75,
+          "label": "First determination as intrinsic knowledge-relation, not real division",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-063"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-064",
+          "printed_page": 76,
+          "label": "The ordering of essential relations through self-knowledge",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-064"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-065",
+          "printed_page": 77,
+          "label": "Fixed entities as cognitions, without temporal emergence of divine knowledge",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-065"
+        }
+      ],
+      "commentary_alignment": "Correspondence checked against al-Mahāʾimī's source-transcription lemmata and printed section headings; alignment is not proof of doctrinal agreement."
     },
     {
       "id": "QUN-NU-001-C",
@@ -120,7 +168,24 @@
         "kathra",
         "mahiyya"
       ],
-      "notes": "The expressions ‘absorption’ and ‘multiplicity’ articulate different relations of consideration; they should not be equated with physical division of the divine Essence."
+      "notes": "The expressions ‘absorption’ and ‘multiplicity’ articulate different relations of consideration; they should not be equated with physical division of the divine Essence.",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-066",
+          "printed_page": 78,
+          "label": "Eternal cognition, temporal relations, and the differentiated within the undifferentiated",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-066"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-067",
+          "printed_page": 79,
+          "label": "Reciprocal intelligibility: multiplicity in unity and unity in multiplicity",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-067"
+        }
+      ],
+      "commentary_alignment": "Correspondence checked against al-Mahāʾimī's source-transcription lemmata and printed section headings; alignment is not proof of doctrinal agreement."
     },
     {
       "id": "QUN-NU-002-A",
@@ -138,7 +203,31 @@
         "aql-awwal",
         "taayyun"
       ],
-      "notes": "Complete online-transcription unit from the second incipit to the next heading, pending witness collation. ‘Entailment’ translates iqtida here, not a logically demonstrated compulsion on God."
+      "notes": "Complete online-transcription unit from the second incipit to the next heading, pending witness collation. ‘Entailment’ translates iqtida here, not a logically demonstrated compulsion on God.",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-068",
+          "printed_page": 80,
+          "label": "Text Two: three modes of intrinsic demand/effusion",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-068"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-069",
+          "printed_page": 81,
+          "label": "Effusion without mediation, one mediation, and many conditions",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-069"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-070",
+          "printed_page": 82,
+          "label": "The Most Holy Effusion and nonexistence of unrealized possibilities",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-070"
+        }
+      ],
+      "commentary_alignment": "Correspondence checked against al-Mahāʾimī's source-transcription lemmata and printed section headings; alignment is not proof of doctrinal agreement."
     },
     {
       "id": "QUN-NU-003-A",
@@ -156,7 +245,24 @@
         "wahda",
         "kathra"
       ],
-      "notes": "A complete short source unit in the online transcription; cross-witness collation remains outstanding."
+      "notes": "A complete short source unit in the online transcription; cross-witness collation remains outstanding.",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-071",
+          "printed_page": 83,
+          "label": "The single effusion and Text Three on knowledge as one reality with many relations",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-071"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-072",
+          "printed_page": 84,
+          "label": "Immutable knowledge and changing relations; a general rule for judging",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-072"
+        }
+      ],
+      "commentary_alignment": "Correspondence checked against al-Mahāʾimī's source-transcription lemmata and printed section headings; alignment is not proof of doctrinal agreement."
     },
     {
       "id": "QUN-NU-003-B",
@@ -174,7 +280,24 @@
         "perspective",
         "taayyun"
       ],
-      "notes": "Important direct articulation of standpoint-dependence. An independently inspected printed edition p. 43 exhibits variants in opening and formulation: it begins «ومن تفاريع ما ذكرنا نصّ آخر ...», and has «تابع لحال المحكوم عليه حين الحكم عليه» with a corrected reading. This digital Arabic follows the separate online transcription; the printed edition's differences are not silently conflated."
+      "notes": "Important direct articulation of standpoint-dependence. An independently inspected printed edition p. 43 exhibits variants in opening and formulation: it begins «ومن تفاريع ما ذكرنا نصّ آخر ...», and has «تابع لحال المحكوم عليه حين الحكم عليه» with a corrected reading. This digital Arabic follows the separate online transcription; the printed edition's differences are not silently conflated.",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-073",
+          "printed_page": 85,
+          "label": "Judgements vary with the states of judge and recipient",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-073"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-074",
+          "printed_page": 86,
+          "label": "Four combinations of change and fixity; Text Four on the inseparability of knowledge from existence",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-074"
+        }
+      ],
+      "commentary_alignment": "Correspondence checked against al-Mahāʾimī's source-transcription lemmata and printed section headings; alignment is not proof of doctrinal agreement."
     },
     {
       "id": "QUN-NU-003-C",
@@ -193,7 +316,31 @@
         "imkan",
         "wujub"
       ],
-      "notes": "The inspected 155-page printed PDF, p. 44, shows a different reading: «وعليه أحكام الإمكان على أحكام الوجوب» rather than online «وغلبة أحكام الإمكان على أحكام الوجوب». The translation’s final sentence is provisional pending manuscript collation; the disagreement affects the precise causal claim."
+      "notes": "The inspected 155-page printed PDF, p. 44, shows a different reading: «وعليه أحكام الإمكان على أحكام الوجوب» rather than online «وغلبة أحكام الإمكان على أحكام الوجوب». The translation’s final sentence is provisional pending manuscript collation; the disagreement affects the precise causal claim.",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-074",
+          "printed_page": 86,
+          "label": "Four combinations of change and fixity; Text Four on the inseparability of knowledge from existence",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-074"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-075",
+          "printed_page": 87,
+          "label": "All existence entails knowledge; differences of manifestation and preparedness",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-075"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-076",
+          "printed_page": 88,
+          "label": "Degrees of cognitive manifestation and opening of Text Five",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-076"
+        }
+      ],
+      "commentary_alignment": "Correspondence checked against al-Mahāʾimī's source-transcription lemmata and printed section headings; alignment is not proof of doctrinal agreement."
     },
     {
       "id": "QUN-NU-004-A",
@@ -212,7 +359,24 @@
         "jamiyya",
         "perspective"
       ],
-      "notes": "This is among the clearest author's methodological statements on differences between station-relative truth and the comprehensive standpoint. The printed Yāsīn text contains variant wording and notes at this point; word-for-word manuscript collation remains required."
+      "notes": "This is among the clearest author's methodological statements on differences between station-relative truth and the comprehensive standpoint. The printed Yāsīn text contains variant wording and notes at this point; word-for-word manuscript collation remains required.",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-076",
+          "printed_page": 88,
+          "label": "Degrees of cognitive manifestation and opening of Text Five",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-076"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P089",
+          "printed_page": 89,
+          "label": "Text Five: the criterion of the comprehensive station",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P089"
+        }
+      ],
+      "commentary_alignment": "Correspondence checked against al-Mahāʾimī's source-transcription lemmata and printed section headings; alignment is not proof of doctrinal agreement."
     },
     {
       "id": "QUN-NU-004-B",
@@ -232,7 +396,45 @@
         "itlaq",
         "haqiqa"
       ],
-      "notes": "Treat Qūnawī's allusive reference to another higher path as his own claim, not as a demonstrable description of that path. The distinction between relative limits and unqualified perfection is explicit."
+      "notes": "Treat Qūnawī's allusive reference to another higher path as his own claim, not as a demonstrable description of that path. The distinction between relative limits and unqualified perfection is explicit.",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P090",
+          "printed_page": 90,
+          "label": "Text Five: cognition and what lies beyond its object",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P090"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P091",
+          "printed_page": 91,
+          "label": "Text Five: complete knowledge, the fixed entities, and the unknowable Essence",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P091"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P092",
+          "printed_page": 92,
+          "label": "Text Five: knowing the limits of knowing",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P092"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P093",
+          "printed_page": 93,
+          "label": "Text Five: the name as qibla of a station",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P093"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P094",
+          "printed_page": 94,
+          "label": "Text Five: station-relative attainment is not absolute knowledge",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P094"
+        }
+      ],
+      "commentary_alignment": "Correspondence checked against al-Mahāʾimī's source-transcription lemmata and printed section headings; alignment is not proof of doctrinal agreement."
     },
     {
       "id": "QUN-NU-005-A",
@@ -252,7 +454,31 @@
         "ilm",
         "tawhid"
       ],
-      "notes": "The order is logical/considerative rather than a physical succession of entities. Arabic online transcription includes an editorial page break and footnote at pp. 240–241, removed from the medieval running text here."
+      "notes": "The order is logical/considerative rather than a physical succession of entities. Arabic online transcription includes an editorial page break and footnote at pp. 240–241, removed from the medieval running text here.",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P100",
+          "printed_page": 100,
+          "label": "Text Six: nondetermination, identity and true unity",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P100"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P101",
+          "printed_page": 101,
+          "label": "Text Six: the first determination and the distinction between ontological and conceptual priority",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P101"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P102",
+          "printed_page": 102,
+          "label": "Text Six: second determination, necessary existence, and principiality",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P102"
+        }
+      ],
+      "commentary_alignment": "Correspondence checked against al-Mahāʾimī's source-transcription lemmata and printed section headings; alignment is not proof of doctrinal agreement."
     },
     {
       "id": "QUN-NU-008-A",
@@ -270,7 +496,38 @@
         "zuhur",
         "dhati"
       ],
-      "notes": "This paragraph belongs to the larger source text beginning ‘A noble universal text containing remarkable secrets’. The unit before it has not yet been fully translated; do not treat this excerpt as a whole nuṣṣ."
+      "notes": "This paragraph belongs to the larger source text beginning ‘A noble universal text containing remarkable secrets’. The unit before it has not yet been fully translated; do not treat this excerpt as a whole nuṣṣ.",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P104",
+          "printed_page": 104,
+          "label": "Text Eight: the criterion of causal efficacy and essential reality",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P104"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P105",
+          "printed_page": 105,
+          "label": "Text Eight: causal qualification and the mirror argument",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P105"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P106",
+          "printed_page": 106,
+          "label": "Text Eight: the mirror does not contain the Reality",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P106"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P107",
+          "printed_page": 107,
+          "label": "Text Eight: essential self-disclosure beyond the mirror",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P107"
+        }
+      ],
+      "commentary_alignment": "Correspondence checked against al-Mahāʾimī's source-transcription lemmata and printed section headings; alignment is not proof of doctrinal agreement."
     },
     {
       "id": "QUN-NU-008-B",
@@ -289,7 +546,17 @@
         "itlaq",
         "hal"
       ],
-      "notes": "The grammatical referent of the nonendurance and its relation to the receptive state should be analysed against the following paragraph; do not identify a 'single breath' with the duration of the divine Essence."
+      "notes": "The grammatical referent of the nonendurance and its relation to the receptive state should be analysed against the following paragraph; do not identify a 'single breath' with the duration of the divine Essence.",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P108",
+          "printed_page": 108,
+          "label": "Text Eight: al-tajalliyāt al-dhātiyya al-barqiyya",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P108"
+        }
+      ],
+      "commentary_alignment": "Correspondence checked against al-Mahāʾimī's source-transcription lemmata and printed section headings; alignment is not proof of doctrinal agreement."
     },
     {
       "id": "QUN-NU-008-C",
@@ -308,7 +575,31 @@
         "hal",
         "ilm"
       ],
-      "notes": "This is an author's reported experience and interpretation. The cited prophetic saying requires separate hadith authentication; quotation here does not certify its attribution."
+      "notes": "This is an author's reported experience and interpretation. The cited prophetic saying requires separate hadith authentication; quotation here does not certify its attribution.",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P109",
+          "printed_page": 109,
+          "label": "Text Eight: why lightning-like essential disclosure cannot endure",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P109"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P110",
+          "printed_page": 110,
+          "label": "Text Eight: enduring effects of a momentary disclosure",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P110"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P111",
+          "printed_page": 111,
+          "label": "Text Eight: the prophetic inheritance and language of “nothing with Him”",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P111"
+        }
+      ],
+      "commentary_alignment": "Correspondence checked against al-Mahāʾimī's source-transcription lemmata and printed section headings; alignment is not proof of doctrinal agreement."
     },
     {
       "id": "QUN-NU-008-D",
@@ -327,7 +618,38 @@
         "zuhur",
         "barq"
       ],
-      "notes": "The excerpt joins adjacent source sentences across a printed page break. It is not a general denial of empirical causal regularity; it contests the metaphysical attribution of independent production and alteration to distinct realities."
+      "notes": "The excerpt joins adjacent source sentences across a printed page break. It is not a general denial of empirical causal regularity; it contests the metaphysical attribution of independent production and alteration to distinct realities.",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P112",
+          "printed_page": 112,
+          "label": "Text Eight: fixed entities, causality and principiality outside time",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P112"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P113",
+          "printed_page": 113,
+          "label": "Text Eight: a precise nonstandard account of causality",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P113"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P114",
+          "printed_page": 114,
+          "label": "Text Eight: existential influx and causal relations",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P114"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P115",
+          "printed_page": 115,
+          "label": "Text Eight: neither mirrors nor appearances alter the relevant intrinsic realities",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P115"
+        }
+      ],
+      "commentary_alignment": "Correspondence checked against al-Mahāʾimī's source-transcription lemmata and printed section headings; alignment is not proof of doctrinal agreement."
     },
     {
       "id": "QUN-NU-020-A",
@@ -402,5 +724,6 @@
       ],
       "notes": "Selected consecutive clause from chapter four, not a substitute for the complete chapter. Manuscript collation and reproduction rights of the 2023 apparatus require separate review."
     }
-  ]
+  ],
+  "concordance_status": "Fourteen Qūnawī passages linked to 41 verified existing section anchors in separate Mahāʾimī first-pass bilingual reader; no retranslations. Mapping links include contiguous commentary paragraphs and context, not exclusively direct quotations."
 }
