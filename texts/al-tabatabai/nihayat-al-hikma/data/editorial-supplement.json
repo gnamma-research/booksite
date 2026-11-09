@@ -528,13 +528,15 @@
       "id": "N1428-VI16-01",
       "passageId": "N-VI-16",
       "type": "Textual emendation · later editor",
-      "text": "The 1417 base says «ينتزع من الموضوعين الواجدين للنسبة المتكرّرة المتلازمة وصفاً ناعتاً لهما». In vol. 1 p. 218 n. 4 the 1428 editor prints «ينتزع لكلّ من الموضوعين ... وصفاً ناعتاً له» and explicitly records the earlier copy reading. The correction changes the analysis from one common property attributed jointly to both relata to one relational predicate of each term, dependent on their reciprocal relation. Both Arabic and English were corrected; old wording remains in the authorial passage note. The nearby «لوقوعها» was already correct in the 1417 reader.",
+      "text": "The 1417 base says «ينتزع من الموضوعين الواجدين للنسبة المتكرّرة المتلازمة وصفاً ناعتاً لهما». In vol. 1 p. 218 n. 4 the 1428 editor prints «ينتزع لكلّ من الموضوعين ... وصفاً ناعتاً له» and explicitly records the earlier copy reading. The correction changes the analysis from one common property attributed jointly to both relata to one relational predicate of each term, dependent on their reciprocal relation. Both Arabic and English were corrected; old wording remains in the authorial passage note. The nearby «لوقوعها» was already correct in the 1417 reader. In the same chapter (vol. 1 p. 218 n. 1) he also corrects «المضاف إلى الابن» to «المضاف إلى الأب», since the subject bearing sonship is related to a father. The reader adopts this correction in both Arabic and English and retains the prior wording as a documented copy reading.",
       "url": "https://lib.rafed.net/view.php?b_id=3108&page=207&type=c_fbook",
-      "source": "Nihāyat al-Ḥikma 1428 revised edition, vol. 1 p. 218 n. 4; compare 1417 base",
+      "source": "Nihāyat al-Ḥikma 1428 revised edition, vol. 1 p. 218 nn. 1 and 4; compare 1417 base",
       "status": "Later-editor textual decision; manuscript attestation unverified",
       "adoption": "adopted-with-full-apparatus",
       "originalReading": "ينتزع من الموضوعين ... وصفاً ناعتاً لهما",
-      "adoptedReading": "ينتزع لكلّ من الموضوعين ... وصفاً ناعتاً له"
+      "adoptedReading": "ينتزع لكلّ من الموضوعين ... وصفاً ناعتاً له",
+      "additionalOriginalReading": "المضاف إلى الابن",
+      "additionalAdoptedReading": "المضاف إلى الأب"
     }
   ],
   "sourceCriticalPolicy": "Preserve authorial notes explicitly marked منه رحمه الله; distinguish later editor's explanatory notes; challenge historically questionable ascriptions by checking named scholars' own texts. These criticalNotes are distinct from the authorial Arabic and translation."
