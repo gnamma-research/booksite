@@ -79,11 +79,21 @@ jobs:
           assert all('later' in p['authorialStatus'] for p in positions)
           assert all(p['ar'] and p['en'] and p['voices'] for p in positions if p['type']=='selection')
           assert len({p['page'] for p in positions})==30
+          extra=read_hawashi('hawashi-q155-178-data.js')['entries']
+          assert [p['page'] for p in extra]==list(range(155,179)) and len(extra)==24
+          assert [p['page'] for p in positions+extra]==list(range(125,179))
+          assert sum(p['type']=='selection' for p in positions+extra)==52
+          assert all(p['fullPageTranslated'] is False and p['photoCollated'] is False for p in extra)
+          assert all(p['ar'] and p['en'] and p['analysis'] and p['voices'] for p in extra)
+          assert all(p['sourceUrl']==f"https://ablibrary.net/book_content/b/12170/{p['page']}?lang=ar" for p in extra)
+          extended=(supplement/'hawashi-q125-178.html').read_text(encoding='utf-8')
+          assert 'NOT</strong> a complete translation of the later glosses' in extended
+          assert 'hawashi-q155-178-data.js' in extended and 'Math.min(178' in extended
           index=(supplement/'hawashi-q125-154.html').read_text(encoding='utf-8')
           assert 'NOT</strong> a thirty-page complete translation' in index
           assert 'hawashi-q125-139-data.js' in index and 'hawashi-q140-154-data.js' in index
           menu=(supplement/'logic-daruri-reader.js').read_text(encoding='utf-8')
-          assert 'hawashi-q125-154.html' in menu
+          assert 'hawashi-q125-178.html' in menu
           assert 'Matn / Matn + sharḥ' in menu
           import re
           raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-layer-data.js').read_text(encoding='utf-8')
@@ -424,6 +434,7 @@ jobs:
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q119-123-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-q125-139-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-q140-154-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-q155-178-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-daruri-reader.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/indian-2013-outline-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-glossary-extensions.js
@@ -441,3 +452,4 @@ jobs:
           node tools/tahdhib/daruri_shell_qa.mjs
           node tools/tahdhib/yazdi_layer_qa.mjs
           node tools/tahdhib/hawashi_qa.mjs
+          node tools/tahdhib/hawashi_extended_qa.mjs
