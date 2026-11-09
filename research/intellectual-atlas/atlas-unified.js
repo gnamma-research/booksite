@@ -455,7 +455,7 @@ function viewTimeline(){
  const stepYears=state.to-state.from;
  const scale=y=>left+(y-state.from)/stepYears*plotW;
  const binYears=stepYears>1600?240:stepYears>950?125:stepYears>500?70:stepYears>250?40:stepYears>120?20:stepYears>50?10:5;
- let body="",totalShown=0,y=top,gridEnd=0;
+ let body="",totalShown=0,y=top,gridEnd=0,focusedCluster="";
  const ticks=periodTicks(state.from,state.to,W<900?6:9);
  for(const lane of lanes){
   const dated=lane.nodes.filter(inWindow);
@@ -476,9 +476,10 @@ function viewTimeline(){
    if(row>=4)row=3;
    ends[row]=Math.max(ends[row]||0,x+wide/2);
    const yy=y+25+row*38;totalShown++;
+   const hasSelected=items.some(n=>n.id===state.selected);
    if(items.length===1){
     const n=items[0],type=n.kind==="person"?"◈":"";
-    shapes+='<g role="button" tabindex="0" data-select="'+safe(n.id)+'" aria-label="'+safe(n.title+'; '+n.dateLabel)+'">'+
+    shapes+='<g role="button" tabindex="0" data-select="'+safe(n.id)+'" class="'+(hasSelected?'text-timeline-selected':'')+'" aria-label="'+safe(n.title+'; '+n.dateLabel)+'">'+
       '<title>'+safe(n.title+" — "+n.author+" — "+n.dateLabel)+'</title>'+
       '<rect x="'+(x-wide/2)+'" y="'+yy+'" width="'+wide+'" height="31" rx="5" fill="var(--panel)" stroke="var(--line)" />'+
       '<circle cx="'+(x-wide/2+7)+'" cy="'+(yy+16)+'" r="2.8" fill="var(--accent)"/>'+
@@ -487,7 +488,8 @@ function viewTimeline(){
    }else{
     const key=lane.id+"@"+start;
     renderCache.clusters.set(key,items);
-    shapes+='<g role="button" tabindex="0" data-cluster="'+safe(key)+'" aria-label="'+safe(items.length+' works around '+yearLabel(start)+' in '+lane.label)+'">'+
+    if(hasSelected)focusedCluster=key;
+    shapes+='<g role="button" tabindex="0" class="'+(hasSelected?'text-timeline-selected':'')+'" data-cluster="'+safe(key)+'" aria-label="'+safe(items.length+' works around '+yearLabel(start)+' in '+lane.label)+'">'+
       '<title>'+safe(items.length+' dated records · '+lane.label+' · '+yearLabel(start)+' to '+yearLabel(start+binYears-1))+'</title>'+
       '<rect x="'+(x-wide/2)+'" y="'+yy+'" width="'+wide+'" height="31" rx="7" fill="var(--accentbg)" stroke="var(--accent)" stroke-opacity=".65"/>'+
       '<text x="'+x+'" y="'+(yy+14)+'" font-size="11" font-weight="650" text-anchor="middle" fill="var(--ink)">'+items.length+' texts</text>'+
@@ -502,6 +504,7 @@ function viewTimeline(){
   shapes;
   if(undated.length){
     const key="undated:"+lane.id;renderCache.clusters.set(key,undated);
+    if(undated.some(n=>n.id===state.selected))focusedCluster=key;
     body+='<g role="button" tabindex="0" data-unplaced="'+safe(key)+'" aria-label="'+undated.length+' undated records in '+safe(lane.label)+'">'+
     '<rect x="'+(W-right+13)+'" y="'+(y+22)+'" width="'+(right-27)+'" height="32" rx="5" fill="var(--soft)" stroke="var(--muted)" stroke-dasharray="3 3" stroke-opacity=".6"/>'+
     '<text x="'+(W-right+18)+'" y="'+(y+35)+'" fill="var(--ink)" font-size="10" font-weight="650">'+fnum(undated.length)+' unplaced</text>'+
@@ -521,7 +524,14 @@ function viewTimeline(){
  const svg='<div class="canvas-outer"><div class="canvas-scroll" role="region" tabindex="0" aria-label="Historical book map; scroll horizontally on small screens">'+
  '<svg data-unified-timeline width="'+W+'" height="'+gridEnd+'" viewBox="0 0 '+W+' '+gridEnd+'" role="group" aria-label="'+safe(sceneTitle())+' chronology with source record nodes">'+
  grid+body+'</svg></div></div>';
- const active=state.cluster&&renderCache.clusters.has(state.cluster)?renderClusterList(renderCache.clusters.get(state.cluster)):"";
+ const displayCluster=state.cluster&&renderCache.clusters.has(state.cluster)?state.cluster:focusedCluster;
+ if(displayCluster&&displayCluster===focusedCluster && !state.cluster){
+  const records=renderCache.clusters.get(displayCluster)||[];
+  const index=records.slice().sort((a,b)=>(a.year??99999)-(b.year??99999)||a.title.localeCompare(b.title,"ar"))
+   .findIndex(n=>n.id===state.selected);
+  if(index>=0)state.clusterPage=Math.floor(index/24)+1;
+ }
+ const active=displayCluster&&renderCache.clusters.has(displayCluster)?renderClusterList(renderCache.clusters.get(displayCluster)):"";
  const countIn=nodes.filter(inWindow).length;
  const note='<div class="plot-note"><span class="legend"><i class="swatch date"></i> Dated work or jurist</span>'+
  '<span class="legend"><i class="swatch"></i> Time cluster: select to zoom / inspect</span>'+
@@ -540,7 +550,7 @@ function renderClusterList(arr){
  pagination(page,Math.ceil(rows.length/24),"cluster")+'</section>';
 }
 function bookButton(n){
- return '<button class="browse-card" type="button" data-select="'+safe(n.id)+'">'+
+ return '<button class="browse-card" type="button" aria-current="'+(n.id===state.selected)+'" data-select="'+safe(n.id)+'">'+
  '<strong>'+safe(truncate(n.title,65))+'</strong><small>'+safe(truncate(n.author,60))+' · '+safe(n.dateLabel||"Unknown date")+'</small></button>';
 }
 function pagination(page,max,type){
