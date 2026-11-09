@@ -7,11 +7,11 @@
   "status": "working-translation",
   "editorialStatus": {
     "translationComplete": false,
-    "translatedSection": "Introduction 11, Book I 4, Book II up to three universals 15, selected Book III definition 14",
-    "translatedPassages": 44,
+    "translatedSection": "Introduction 11, Book I 4, Book II universals 17, selected Book III 14",
+    "translatedPassages": 46,
     "sourceBasis": "Original Arabic from Muẓaffar's al-Manṭiq, early printed witness cross-checked against the Dār al-Taʿāruf text hosted by Rafed.",
     "englishComparator": "Carney's 75-page English PDF supplied by the user ends without the complete Book III section on definitions. English here is independently translated from Arabic.",
-    "editionNotice": "44 working bilingual units, no claim of complete al-Manṭiq"
+    "editionNotice": "46 working bilingual units, including one explicitly normalized Book II paraphrase. Six-book al-Manṭiq incomplete."
   },
   "sources": [
     {
@@ -700,6 +700,48 @@
         "edition": "al-Muẓaffar, al-Manṭiq, searchable Dār al-Taʿāruf 1402 AH text (preliminary collation, not 1968 printed-scan verified)",
         "page": "78–81",
         "url": "https://lib.rafed.net/view.php?b_id=1604&page=78&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-K-16",
+      "stage": "K",
+      "chapter": 16,
+      "title": "Accidental attribution means predication, not mere inherence",
+      "arabicTitle": "العروض معناه الحمل",
+      "arabic": "٦ ـ ثم لا يشتبه عليك الأمر فتقول: إنكم قلتم الكلي الخارج إن عرض على موضوعه فقط فهو الخاصة، وإلا فهو العرض العام. والضحك لا شك يعرض على الإنسان ومختص به، فإذن يجب أن يكون خاصة. فإنّا نرفع هذا الاشتباه ببيان العروض المقصود به في الباب، فإنّ المراد منه هو الحمل حملاً عرضياً لا ذاتياً. وعليه فالضحك لا يعرض على الإنسان بهذا المعنى. وإذا قيل يعرض على الإنسان فبمعنى آخر للعروض، وهو الوجود فيه.\n\nوعندهم تعبير آخر يسبب الاشتباه، وهو قولهم الكلي الخارج عرض خاص وعرض عام، فيطلقون العرض على الكلي الخارج ثم يقولون لمثل الضحك إنه عرض.\n\nوالمقصود بالعرض في التعبير الأول هو العرضي مقابل الذاتي، والمقصود بالعرض في الثاني هو الموجود في الموضوع مقابل الجوهر الموجود لا في موضوع.\n\nومثل اللون يسمى عرضاً بالمعنى الثاني لأنه موجود في موضوع، ولكن لا يصح أن يسمى عرضاً بالمعنى الأول أبداً، لأنه بالقياس إلى الجسم لا يحمل عليه حمل مواطاة، وبالقياس إلى ما تحته من الأنواع كالسواد والبياض هو جنس لها، كما تقدم، فهو حينئذ ذاتي لا عرضي.",
+      "english": "A further confusion must be avoided. You might object: “You said that an extrinsic universal predicated of its subject alone is a proprium, and otherwise a common accident. Laughter belongs only to human beings, so it must be a proprium.” The answer depends upon the intended meaning of *ʿurūḍ* (“occurrence” or “attribution”) in this discussion: it means **being predicated accidentally rather than essentially**. In this technical sense, the abstract noun *laughter* is not predicated of the human being. When we say that laughter occurs in the human being, “occurs” means something else: that it **exists in the subject**.\n\nA second ambiguity arises because logicians call an extrinsic universal a special or common *ʿaraḍ*, and then also call such a thing as laughter an *ʿaraḍ*. In the first usage, the term means an **accidental predicate**, in contrast to an essential predicate. In the second, it means an **accident inhering in a subject**, in contrast to a substance that does not inhere in a subject.\n\nColour, for example, is an accident in the latter sense because it exists in a subject. It is not an accidental predicate of body in the first sense, because the abstract term colour is not predicated of body by direct identity predication (*ḥaml muwāṭāh*). Considered instead in relation to the kinds below it, such as blackness and whiteness, colour is their genus, so it is essential to them rather than accidental.",
+      "notes": [
+        {
+          "type": "Technical distinction",
+          "text": "The author here distinguishes (1) ʿaraḍī as an extrinsic *predicable* and (2) ʿaraḍ as an ontological accident inhering in a subject. This distinction is critical to avoiding confusion between Avicennian category theory and Porphyrian predicables."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable transcription; 1968 ACO scan not yet independently collated",
+        "page": "82–83",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=82&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-K-17",
+      "stage": "K",
+      "chapter": 17,
+      "title": "Divisions of accidental predicates: necessary, evident, demonstrable, and separable",
+      "arabicTitle": "تقسيمات العرضي: لازم ومفارق، بيّن وغير بيّن",
+      "arabic": "تقسيمات العرضي\n\nالعرضي: لازم ومفارق.\n\n١ ـ (اللازم): ما يمتنع انفكاكه عقلاً عن موضوعه، كوصف الفرد للثلاثة والزوج للأربعة والحارّة للنار.\n\n٢ ـ (المفارق): ما لا يمتنع انفكاكه عقلاً عن موضوعه، كأوصاف الإنسان المشتقة من أفعاله وأحواله مثل قائم وقاعد ونائم وصحيح وسقيم وما إلى ذلك، وإن كان لا ينفك أبداً. فإنك ترى أن وصف العين بالزرقاء لا ينفك عن وجود العين، ولكنه مع ذلك يعد عرضياً مفارقاً، لأنه لو أمكنت حيلة لإزالة الزرقة لما امتنع ذلك وتبقى العين عيناً. وهذا لا يشبه اللازم، فلو قدرت حيلة لسلخ وصف الفرد عن الثلاثة لما أمكن أن تبقى الثلاثة ثلاثة، ولو قدر سلخ وصف الحرارة عن النار لبطل وجود النار. وهذا معنى امتناع الانفكاك عقلاً.\n\nاللازم: بيّن وغير بيّن.\n\nالبيّن: بيّن بالمعنى الأخص وبيّن بالمعنى الأعم.\n\n١ ـ (البيّن بالمعنى الأخص): ما يلزم من تصور ملزومه تصوره بلا حاجة إلى توسط شيء آخر.\n\n٢ ـ (البيّن بالمعنى الأعم): ما يلزم من تصوره وتصور الملزوم وتصور النسبة بينهما الجزم بالملازمة، مثل: الاثنان نصف الأربعة أو ربع الثمانية. فإنك إذا تصورت الاثنين قد تغفل عن أنها نصف الأربعة أو ربع الثمانية، ولكن إذا تصورت أيضاً الثمانية مثلاً وتصورت النسبة بينهما تجزم أنها ربعها. وكذا إذا تصورت الأربعة والنسبة بينهما تجزم أنها نصفها، وهكذا في نسبة الأعداد بعضها إلى بعض.\n\nومن هذا الباب لزوم وجوب المقدمة لوجوب ذي المقدمة، فإنك إذا تصورت وجوب الصلاة وتصورت الوضوء وتصورت النسبة بينه وبين الصلاة وهي توقف الصلاة الواجبة عليه حكمت بالملازمة بين وجوب الصلاة ووجوبه.\n\nوإنما كان هذا القسم من البيّن أعم لأنه لا يفرق فيه بين أن يكون تصور الملزوم كافياً في تصور اللازم وانتقال الذهن إليه، وبين ألا يكون كافياً، بل لا بد من تصور اللازم وتصور النسبة للحكم بالملازمة. وإنما يكون تصور الملزوم كافياً في تصور اللازم عندما يألف الذهن الملازمة بين الشيئين على وجه يتداعى عنده المتلازمان، فإذا وجد أحدهما في الذهن وجد الآخر تبعاً له، فتكون الملازمة حينئذ ذهنية.\n\n٣ ـ (غير البيّن): وهو ما يقابل البيّن مطلقاً، بأن يكون التصديق والجزم بالملازمة لا يكفي فيه تصور الطرفين والنسبة بينهما، بل يحتاج إثبات الملازمة إلى إقامة الدليل عليه، مثل الحكم بأن المثلث زواياه تساوي قائمتين، فإن الجزم بهذه الملازمة يتوقف على البرهان الهندسي، ولا يكفي تصور زوايا المثلث وتصور القائمتين وتصور النسبة للحكم بالتساوي.\n\nوالخلاصة: معنى البيّن مطلقاً ما كان لزومه بديهياً، وغير البيّن ما كان لزومه نظرياً.\n\nالمفارق: دائم وسريع الزوال وبطيء الزوال. (الدائم): كوصف الشمس بالمتحركة ووصف العين بالزرقاء. (سريع الزوال): كحمرة الخجل وصفرة الخوف. (بطيء الزوال): كالشباب للإنسان.",
+      "english": "Accidental predicates fall primarily into two divisions: **necessary** (*lāzim*) and **separable** (*mufāriq*).\n\n**1. A necessary accident** is one that cannot rationally be separated from its subject, such as oddness from three, evenness from four, or—in the author’s traditional natural-philosophical example—heat from fire.\n\n**2. A separable accident** is one whose separation from the subject is not rationally impossible, as with descriptions of a person as standing, sitting, sleeping, healthy, or ill. The feature may in practice never disappear: an eye may remain blue throughout its existence, yet blueness is still separable, since one can intelligibly suppose its removal without the eye ceasing to be an eye. This contrasts with oddness and three: a three stripped of oddness could no longer remain three. Likewise, by the author's historical example, remove heat from fire and fire ceases to be fire. Such examples explain **rational inseparability**, not merely constant empirical association.\n\nNecessary accidents may be **evident** (*bayyin*) or **non-evident** (*ghayr bayyin*). An evident necessary accident is either evident in the narrower or broader sense.\n\n**Evident in the narrow sense** (*bayyin bi-l-maʿnā al-akhaṣṣ*) means that simply conceiving the underlying subject brings with it conception of what necessarily belongs to it, without a mediating consideration.\n\n**Evident in the broad sense** (*bayyin bi-l-maʿnā al-aʿamm*) means that conceiving the two terms and their relation is sufficient to establish their necessary connection. For example, two is half of four and a quarter of eight. Someone might conceive two but not spontaneously think of its relation to eight. Once eight and the appropriate numerical relation are brought to mind, the conclusion becomes evident. Similarly, considering the obligation of prayer, ritual ablution, and the dependence of an obligatory prayer upon it leads to acknowledgment of the obligation of its prerequisite.\n\nThis broader evidential class includes both what follows upon conceiving the subject alone and what becomes evident only when the other term and their relation are conceived. Repeated familiarity can make the consequence spring to mind immediately whenever the underlying subject is conceived.\n\n**Non-evident necessity** requires a demonstration beyond conceiving the two terms and their relation. The familiar example is the proposition that the angles of a triangle equal two right angles: assent to this relation depends upon geometrical demonstration, not merely forming the three concepts. In short, evident necessity is immediate, whereas non-evident necessity is discursively established.\n\nSeparable accidents are further classified as **permanent in practice**, **quickly passing**, or **slowly passing**. Historical examples include the motion attributed to the sun, a persistently blue eye, blushing with embarrassment, pallor from fear, and the passing stage of youth.\n\nThese classifications concern the *logical mode of attribution*, not a guarantee that every traditional natural-scientific example survives modern empirical scrutiny.",
+      "notes": [
+        {
+          "type": "Historical example",
+          "text": "The author uses fire's heat, apparent motion of the Sun, and blue eyes as examples within traditional pedagogy. Their empirical status must not be promoted into timeless demonstrations of physical necessity."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable transcription; 1968 ACO scan not yet independently collated",
+        "page": "83–84",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=83&type=c_fbook"
       }
     },
     {
