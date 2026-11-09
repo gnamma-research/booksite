@@ -1,3 +1,5 @@
+> **Stage XV correction:** The original Stage IX p48 excerpt below used **بسبحاب** and translated 'clouds'. Photographed I1876 printed p28 scan32 instead reads **بسبحات** ('splendours'), which is now the **provisional edited Arabic and corrected English** in the live bilingual reader and working English. See [new apparatus](I1876_COLLATION_CUMULATIVE_005.json); do not repeat the earlier conjecture **بسحاب** as witnessed.
+
 # Farghānī · Critical Pass VI — Beirut B2007 pp48–49 and 51–60
 
 **9 November 2026 · Stage IX.** 40 newly source-checked bounded Arabic–English loci across 12 printed modern pages, filling the Stage VIII gap 48–49 and advancing through p60. The reviewed modern page coverage is now *continuous by page label* from B2007 pp18 to 60. This does **not** mean all Arabic words or lines on those pages are critically proofread. No new I1876 photographic or manuscript variants were obtained.
