@@ -1,0 +1,103 @@
+{
+  "schema": "gnamma-farghani-critical-evidence-grades-v1",
+  "date": "2026-11-09",
+  "scope": "B2007 four-uṣūl introduction pp18–145",
+  "totals": {
+    "english_working_pages": 128,
+    "modern_edited_digital_selected_loci": 283,
+    "modern_edited_digital_page_labels": 43,
+    "derivative_transcription_loci": 111,
+    "derivative_transcription_page_labels": 18,
+    "bilingual_selected_loci": 394,
+    "page_labels_with_any_selected_checks": 61,
+    "fully_print_page_collated_count": 0,
+    "historical_print_selected_loci": 10,
+    "historical_print_differences": 5,
+    "historical_print_agreements": 5,
+    "independently_examined_manuscript_folios": 0,
+    "manuscript_variants": 0
+  },
+  "records": [
+    {
+      "grade": "B2007-digital",
+      "pages": [
+        18,
+        60
+      ],
+      "counts": 283,
+      "source": "Printed modern edition's digital Arabic page transcriptions inspected in earlier stages; selected bounded excerpts",
+      "independent_historical": false
+    },
+    {
+      "grade": "D-Forum-B2007-derivative",
+      "pages": [
+        61,
+        69
+      ],
+      "counts": 57,
+      "file": "data/critical-pass-007-p61-69.js",
+      "source": "Modern web-forum retranscription of authorial Arabic, itself derived from B2007",
+      "independent_historical": false
+    },
+    {
+      "grade": "D-Forum-B2007-derivative",
+      "pages": [
+        70,
+        78
+      ],
+      "counts": 54,
+      "file": "data/critical-pass-008-p70-78.js",
+      "source": "Modern web-forum retranscription of authorial Arabic, itself derived from B2007",
+      "independent_historical": false
+    },
+    {
+      "grade": "I1876-photographic-print",
+      "counts": 10,
+      "source": "Photographs of 1876 printed source, only ten bounded phrase loci from earlier work",
+      "is_manuscript": false
+    },
+    {
+      "grade": "early-manuscript-codices",
+      "counts": 0,
+      "source": "Only bibliographic census of C1107,R670,K273,F3966,Y706 etc",
+      "is_manuscript": true
+    }
+  ],
+  "unresolved": [
+    {
+      "beirut_page": 38,
+      "b2007_digital": "القابل",
+      "conjecture": "القائل",
+      "status": "internal contextual corroboration B2007 pages 52,55,56 and derivative p72; no independent I1876 or manuscript reading"
+    },
+    {
+      "beirut_page": 41,
+      "issue": "ʿamāʾ report ḥadīth syntax",
+      "status": "unresolved interpretive and textual transmission"
+    },
+    {
+      "beirut_page": 48,
+      "digital": "بسبحاب",
+      "candidate": "بسحاب",
+      "status": "conjectural typo, no photographed B2007/MSS"
+    },
+    {
+      "beirut_page": 52,
+      "digital": "سم الحكيم",
+      "candidate": "اسم الحكيم",
+      "status": "conjectural typo, no photographed B2007/MSS"
+    },
+    {
+      "beirut_page": 63,
+      "digital": "مشيمة",
+      "status": "lexical and historical embryology ambiguity"
+    },
+    {
+      "beirut_page": 73,
+      "digital": "لكونه عرضا على الحقيقة وقيام بدل مثله مكانه في الخلق الجديد",
+      "status": "referent and doctrine of renewed created being unresolved"
+    }
+  ],
+  "next_source_page": 79,
+  "critical_edition_complete": false
+}
