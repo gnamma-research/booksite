@@ -20,7 +20,7 @@
       "author": "Quṭb al-Dīn-zāda al-Iznīqī",
       "type": "short-treatise",
       "content_status": "2023 Arabic edition available; selected bilingual excerpts and prior 7 argument English drafts; incomplete",
-      "entry_count": 7,
+      "entry_count": 13,
       "source_url": "https://dergipark.org.tr/en/download/article-file/3074106"
     },
     {
@@ -1553,6 +1553,108 @@
         "epistemology"
       ],
       "notes": "The reply is a modal counterargument against the impossibility proof; it does not assert that a specific human actually attains unrestricted essential knowledge. The report of Ḍirār's sixth-sense thesis is attributed and requires independent historical verification."
+    },
+    {
+      "id": "IZN-RIS-002-01",
+      "order": 11.21,
+      "section": "Rational argument I: the infinite is not exhausted by finite concepts",
+      "locator": "Balaban–Çalışkan (2023), Arabic edition printed p. 835, PDF index 21, argument 1",
+      "status": "translated-edition-paragraph",
+      "arabic": "الأول: إنّ الله تعالى غير متناه في الذات والصفات، والعقل متناه في الذات والصفات، والمتناهي لا سبيل له إلى إدراك غير المتناهي استحضارًا على سبيل التفصيل، ومثلاً: العقل عاجز عن معرفة كونه تعالى قديمًا أزليًّا؛ لأن كل مقدار من مقادير الأزمنة يصل إليه العقل والخيال، فالحق ليس قديمًا باعتبار أنه كان فيه، بل باعتبار وجوده فيما وراءه، وقس على ذلك معرفة كونه دائمًا أبديًّا على سبيل التفصيل والكمال. وقال شيخنا الأكمل زين الدين الخافي: «أزليته فوق ما يدركه العقول من معنى الأزل، وأبديته أقصى ما يفهمه الأفهام من معنى الأبد».",
+      "english": "First: God, exalted is He, is without limit in Essence and attributes, whereas the intellect is limited in its own essence and properties. What is finite cannot bring the infinite fully before itself in detailed apprehension. For example, intellect is incapable of comprehending God's beginninglessness as such: whatever expanse of earlier time intellect or imagination reaches, the Real is not beginningless because He existed within that expanse, but because His existence is beyond it. The same applies to an exhaustive knowledge of His endless continuance. Our perfected master Zayn al-Dīn al-Khāfī says that His pre-eternity surpasses what intellects grasp through the notion of pre-eternity, and His endlessness exceeds what understandings grasp through the notion of endless duration.",
+      "notes": "Complete prose argument according to printed p. 835, with quotation attributed by the author to Zayn al-Dīn al-Khāfī; attribution requires separate historical checking.",
+      "work": "IZN-RIS",
+      "source_url": "https://dergipark.org.tr/en/download/article-file/3074106",
+      "tags": [
+        "maarefa",
+        "aql",
+        "apophatic"
+      ]
+    },
+    {
+      "id": "IZN-RIS-002-02",
+      "order": 11.22,
+      "section": "Rational argument II: the knower cannot encompass even the self",
+      "locator": "Balaban–Çalışkan (2023), printed p. 835, PDF index 21, argument 2, prose through al-Khāfī quotation; poems excluded",
+      "status": "translated-edition-excerpt",
+      "arabic": "الثاني: إنّ الإنسان عاجز عن معرفة نفسه المشار إليه بقوله: أنا، كما قال تعالى: ﴿وَيَسْأَلُونَكَ عَنِ الرُّوحِ قُلِ الرُّوحُ مِنْ أَمْرِ رَبِّي وَمَا أُوتِيتُمْ مِنَ الْعِلْمِ إِلَّا قَلِيلًا﴾ [الإسراء: 85]، فإذا كان الحال في أظهر الأشياء عنده كذلك، فكيف يكون الحال في معرفة أبعد الأشياء مناسبة عن علائق العقول وروابط الخيالات؟ مثلًا: العقل كالشمع، ولا شك أن كل ما كان أقرب إلى الشمع كان ضوؤه أكثر مما بعد عنه، وأقرب الأشياء إلى الشيء نفسه. فإذا كان نور العقل في الضعف إلى حيث لم يصر به ذاته مضيئًا، فحضرة الجلال مع بعده بغير نهاية كيف يصير مضيئًا به؟ ولهذا قال سيدنا الأكمل زين الدين الخافي: «كلما يشاهد الإنسان ببصيرته، أو يتعلق بمعرفته، فالحق سبحانه أعلى من ذلك».",
+      "english": "Second: A human being cannot fully know his own self, the self designated by the word 'I'. God says, 'They ask you about the spirit. Say: the spirit belongs to my Lord's command, and you have been given little knowledge' [Q 17:85]. If this is true of what is most immediately evident to a person, how much more of the Reality furthest beyond the connections of intellect and imagination? Intellect resembles a candle: what is nearest to the flame is ordinarily the most illuminated, and nothing is nearer to something than itself. If the light of intellect is too weak to illuminate its own reality fully, how could it illuminate the divine Presence of Majesty, immeasurably beyond it? Zayn al-Dīn al-Khāfī therefore says that whatever a person witnesses through insight or grasps through knowledge, the Real is above it.",
+      "notes": "The printed argument continues with Arabic and Persian verse and further observations about the senses and the nature of time and space. Those have not been translated in this record; the passage is therefore an excerpt, not the complete argument.",
+      "work": "IZN-RIS",
+      "source_url": "https://dergipark.org.tr/en/download/article-file/3074106",
+      "tags": [
+        "maarefa",
+        "aql",
+        "apophatic"
+      ]
+    },
+    {
+      "id": "IZN-RIS-002-03",
+      "order": 11.23,
+      "section": "Rational argument III: the lamp and the sun",
+      "locator": "Balaban–Çalışkan (2023), printed p. 836, PDF index 22, argument 3",
+      "status": "translated-edition-paragraph",
+      "arabic": "الثالث: قد ثبت في العلوم الحقيقية أنّه سبحانه وتعالى هو النور المطلق، وهو نور الأنوار، وكما أنّ من وضع السراج في مقابلة قرص الشمس لم يظهر له أثر، فكذلك ضوء العقل في مقابلة نور جلال الله يتلاشى ويفنى ويضمحل. ولذلك قالوا إن العقل يدور على المكوّنات، فإذا وصل إلى حضرة مكوّن الأكوان ذاب. وكذا العقل كالقطرة إذا وقعت في البحر يضمحل تعيّنها، بل لا نسبة لأحد البابين بالآخر؛ لأن القطرة والسراج متناهيان، والبحر والشمس متناهيان، ونسبة هذا الباب نسبة المتناهي إلى المتناهي، أما نور العقل فهو قليل قاصر متناه، ونور جلال الله في غاية العظمة وعدم التناهي، فكيف يعقل بقاء نور العقل في حضور نور جلاله، وشروق أعلام كبريائه؟",
+      "english": "Third: It is established in the sciences of reality that God is absolute Light, the Light of lights. Just as a lamp has no visible effect when placed before the disc of the sun, the light of intellect diminishes, perishes and disappears before the light of divine Majesty. Hence it is said that intellect ranges among created things, but when it reaches the Presence of their Creator it melts away. Intellect is also compared to a drop disappearing into the sea. Yet these illustrations must not be mistaken for exact comparisons: both the lamp and the sun, the drop and the sea, are finite, whereas the actual contrast is between the limited light of intellect and the immeasurable majesty of God. How, then, could intellect's distinct light remain before the radiance of His Majesty?",
+      "notes": "The edition says that the lamp/sun and drop/sea comparisons are finite-to-finite analogies; the ultimate epistemic relation is not reducible to quantitative size. Earlier English draft was less precise here; this replaces its paraphrase.",
+      "work": "IZN-RIS",
+      "source_url": "https://dergipark.org.tr/en/download/article-file/3074106",
+      "tags": [
+        "maarefa",
+        "aql",
+        "apophatic"
+      ]
+    },
+    {
+      "id": "IZN-RIS-002-04",
+      "order": 11.24,
+      "section": "Rational argument IV: the Most Manifest and the Hidden",
+      "locator": "Balaban–Çalışkan (2023), printed p. 836, PDF index 22, argument 4",
+      "status": "translated-edition-paragraph",
+      "arabic": "الرابع: إنّ نسبة نور العقل إلى مفيض الأنوار الروحانية كنسبة نور البصر إلى أنور الأنوار الجسمانية، وكما أن الشمس أظهر الأشياء للبصر من وجه وأخفاها من وجه آخر، فكذا نور الأنوار بالنسبة إلى عين البصيرة أظهر الأشياء من وجه وأخفاها من وجه آخر. مصداقه: هو الظاهر هو الباطن.",
+      "english": "Fourth: The light of intellect stands in relation to the source of spiritual lights as the light of bodily sight stands to the brightest of corporeal lights. The sun is, in one respect, the most evident thing to vision and, in another respect, the most hidden. So the Light of lights, in relation to the eye of insight, is in one respect the most evident of all and in another the most hidden. The corroborating names are: He is the Manifest; He is the Hidden.",
+      "notes": "Manifestness and hiddenness are predicated under different aspects, not as formal contradictories in the same respect.",
+      "work": "IZN-RIS",
+      "source_url": "https://dergipark.org.tr/en/download/article-file/3074106",
+      "tags": [
+        "maarefa",
+        "aql",
+        "apophatic"
+      ]
+    },
+    {
+      "id": "IZN-RIS-002-06",
+      "order": 11.26,
+      "section": "Rational argument VI: judging perfection presupposes adequate comprehension",
+      "locator": "Balaban–Çalışkan (2023), printed p. 836, PDF index 22, argument 6",
+      "status": "translated-edition-paragraph",
+      "arabic": "السادس: اشتُهر بين الخلق قولهم: «لا يقدر على التمييز بين فلان العالم الكامل وبين فلان النحرير الفاضل إلا من كان أعلم منهما؛ لأنه لا بد أن يحيط مقدار معلوماتهما ومزاياهما الفاضلة حتى يتيسر الحكم والتميّز بينهما بالمساواة وبالتفاوت»، فكيف يتيسر للعقول الناقصة الإحاطة بكمال جلاله وبنعوت جماله؟",
+      "english": "Sixth: People commonly say that none can discriminate between one accomplished scholar and another outstanding expert except someone more learned than both. To judge whether the two are equal or differ in excellence, the judge would have to comprehend the extent of their knowledge and their respective merits. How, then, can deficient intellects encompass the perfection of God's Majesty and the attributes of His Beauty?",
+      "notes": "This argument challenges the claim of an exhaustive appraisal of divine perfection. It does not, by itself, rule out every true predication about divine attributes.",
+      "work": "IZN-RIS",
+      "source_url": "https://dergipark.org.tr/en/download/article-file/3074106",
+      "tags": [
+        "maarefa",
+        "aql",
+        "apophatic"
+      ]
+    },
+    {
+      "id": "IZN-RIS-002-07",
+      "order": 11.27,
+      "section": "Rational argument VII: genuine knowledge of non-encompassment",
+      "locator": "Balaban–Çalışkan (2023), printed p. 836, PDF index 22, argument 7",
+      "status": "translated-edition-paragraph",
+      "arabic": "السابع: الإدراك إنما يكون بالعقل، والعقل لا يدرك إلا متعينًا مثله، فلا يهتدي إلى التوحيد لإثباته الرسوم، والتوحيد لا يكون إلا بفنائها واستهلاك الكل في عين الأحدية، وانتفاء الحدوث في القدم كما قال الله تعالى: ﴿كُلُّ شَيْءٍ هَالِكٌ إِلَّا وَجْهَهُ﴾ [القصص: 88]، وهو أمر يعجز عنه العقل. نعم، إذا أطلع الله العبد على عجز العقل عن ذلك، وأيس من الوقوف بالتفكر، وعلم عظمة الحق عن إدراك العقل وبلوغه إلى جنابه الأقدس، أقر بالعجز واعترف بالجهل، وهو غاية العلم به، لأن العقل لا يعترف بالقصور ما لم يصل إلى الدقائق والرقائق والحقائق التي لا يحيط بها، ولا يضبطها لغموضها وخفائها أو لكثرتها وخروجها عن الحصر والعد، فإذا التقاعد والتقاصر عن إدراك ما من شأنه أن لا يحاط إدراكًا غاية الإدراك، بمعنى أن العلم بما لا يعلم بأنه لا يعلم علم، وأن العلم بعدم إحاطة العلم بما لا يحاط به علمًا علم حقيقي، كما قال أبو بكر الصديق رضي الله عنه: «العجز عن درك الإدراك إدراك».",
+      "english": "Seventh: In its ordinary operation apprehension belongs to intellect, yet intellect apprehends only what is determinate like itself. It cannot reach the unification intended here because it establishes distinguishing forms, whereas this unification requires their effacement: the absorption of plurality into the source of unicity and the disappearance of origination before the beginningless. God says, 'Everything is perishing except His Face' [Q 28:88]. Intellect cannot accomplish this by its own resources. If, however, God makes the servant aware of intellect's inability, and the servant ceases to expect that discursive thought can wholly attain the goal, he acknowledges his incapacity and confesses his ignorance. This is the furthest point of such knowledge: intellect cannot encompass subtleties and realities whose hiddenness or inexhaustible multiplicity defeat it. Yet its recognition that what cannot be encompassed remains beyond its grasp is itself a genuine kind of knowledge. As Abū Bakr al-Ṣiddīq is reported to have said: 'Inability to comprehend comprehension is itself a comprehension.'",
+      "notes": "The saying attributed to Abū Bakr requires authentication. This negative cognition of non-encompassment is not presented as identical with the positive plenitude of mystical realization. The end of the Arabic has been normalized from rendered PDF and extracted text; manuscript collation remains outstanding.",
+      "work": "IZN-RIS",
+      "source_url": "https://dergipark.org.tr/en/download/article-file/3074106",
+      "tags": [
+        "maarefa",
+        "aql",
+        "apophatic"
+      ]
     },
     {
       "id": "IZN-RIS-002-05",
