@@ -1,3 +1,5 @@
+> **Latest cumulative update:** [Batch 2, 9 November 2026](hikma-collation-handoff-2026-11-09-batch-2.md): 46 Muẓaffar bilingual selections; 28 of 136 Nihāya passages directly checked against local Arabic; four 1428 editorial digital spot checks; one substantive English precision correction. The following is the *prior batch* snapshot and is preserved for audit continuity.
+
 # Hikma critical edition — cumulative handoff (9 November 2026)
 
 ## Ground truth
