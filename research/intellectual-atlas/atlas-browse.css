@@ -50,6 +50,9 @@
  scrollbar-width:thin;overscroll-behavior-inline:contain;
  touch-action:pan-y;-webkit-overflow-scrolling:touch;
 }
+#gn-atlas .text-rail::before,#gn-atlas .text-rail::after{
+ content:"";flex:0 0 max(0px,calc(50% - 108px));min-width:0;pointer-events:none;
+}
 #gn-atlas .text-rail-card{
  flex:0 0 198px;min-width:0;height:89px;
  display:flex;flex-direction:column;gap:3px;align-items:start;
