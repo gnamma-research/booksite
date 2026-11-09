@@ -61,4 +61,15 @@ for(let i=1;i<=46;i++){
   for(const pattern of forbidden)assert.ok(!pattern.test(ch[layer]),'Self-referential prose: '+id+' '+layer+': '+pattern);
  }
 }
+// Additional style checks: methodological instructions belong in the critical apparatus,
+// not in the continuous narrative or explanatory commentary.
+const editorialCommands=[
+ /\b(?:should be (?:compared|studied|examined|read|distinguished|understood|set)|must be (?:examined|compared|traced))\b/i,
+ /\b(?:This is the sort|This history makes|This is where|the deeper mechanism was)\b/i
+];
+for(const chapter of data.chapters){
+ for(const layer of ['matn','sharh']){
+  for(const pattern of editorialCommands)assert.ok(!pattern.test(chapter[layer]),'Editorial instruction in '+chapter.id+' '+layer+': '+pattern);
+ }
+}
 console.log('PASS: 46 aligned matns/shurūḥ, 9 dossiers, 7 figures, source parity and direct-prose rules');
