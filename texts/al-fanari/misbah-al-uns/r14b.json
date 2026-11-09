@@ -1,0 +1,182 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R14b",
+  "date": "2026-11-09",
+  "startSection": "4.666",
+  "endSection": "4.682",
+  "sourceRepo": "OpenITI/0850AH",
+  "sourceCommit": "e2715c62fb458ce3ddc43b962cd55677cdd7bc35",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.666",
+      "number": 666,
+      "pageStart": 467,
+      "pageEnd": 467,
+      "arabic": "فان قلت: في المسألة وجوه من الاشكال:",
+      "english": "If you object: There are several difficulties concerning this question—",
+      "notes": "Heading introduces three objections.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.667",
+      "number": 667,
+      "pageStart": 467,
+      "pageEnd": 467,
+      "arabic": "الأول ان الدوائم من الأسماء والعقول والمثل كيف اثرت في الحركات الحادثة، وقد سبق في الأصول ان الشئ لا يؤثر في ضده؟",
+      "english": "First: How can things that endure—the Names, intellects, and exemplars—produce originated motions, when it was previously established among the principles that one thing cannot act upon its opposite?",
+      "notes": "The problem concerns enduring causes and transient effects, not simply physical opposition.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.668",
+      "number": 668,
+      "pageStart": 467,
+      "pageEnd": 467,
+      "arabic": "الثاني كيف تؤثر الحركة المستديرة العرشية الدائمة في الحركات العنصرية المستقيمة المنقطعة وبينهما تضاد من وجوه؟",
+      "english": "Second: How can the Throne's perpetual circular motion influence finite, rectilinear elemental motions when there is opposition between them in several respects?",
+      "notes": "Distinguish circular motion of the encompassing sphere from elemental rectilinear motions.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.669",
+      "number": 669,
+      "pageStart": 467,
+      "pageEnd": 467,
+      "arabic": "الثالث كيف اثرت الحركات في سكون العناصر لا سيما الأرض حين كانت في مراكزها الطبيعية، وهل لهذه المسائل المستبعدة أصول تحررها وأمثلة تنورها؟",
+      "english": "Third: How can movement give rise to the rest of the elements, especially the earth when the elements occupy their natural centres? Are there principles that can resolve these seemingly far-fetched matters, and examples that can make them clear?",
+      "notes": "The following principles and alchemical analogies attempt to reconcile this opposition.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.670",
+      "number": 670,
+      "pageStart": 467,
+      "pageEnd": 467,
+      "arabic": "قلنا: نعم قد اما أصولها: فمنها ان تناسب الأسماء المؤثرة كما هو معتبر في جمعية التجلي الساري، كذلك تناسب القوابل الممكنة معتبر في أحدية جمعية القوابل، والجمعية شرط كل تأثير وظهور، وحكم التنافر بالعكس من ذلك.",
+      "english": "We reply: Yes. As for the principles, one of them is that just as the mutual correspondence of the effective Names is taken into account in the collective unity of the pervading self-disclosure, so the correspondence of possible recipients is taken into account within the unitary gathering of recipients. Gathering [jamʿiyya] is a condition of every act of efficacy and manifestation; the ruling of mutual incompatibility is the opposite.",
+      "notes": "The claim is of a proportional gathering on both the active and receptive sides.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.671",
+      "number": 671,
+      "pageStart": 467,
+      "pageEnd": 467,
+      "arabic": "ومنها ان جمعية التركيب كلما كان أقرب إلى الاعتدال كان حكمه ابسط وللمتنافرات اضبط وإلى الأحدية انسب وحكم البساطة فيه أغلب.",
+      "english": "Another principle is that the nearer a composite gathering is to equilibrium, the simpler its governing character, the more firmly it regulates its mutually discordant constituents, the more suited it is to oneness, and the more the ruling of simplicity predominates within it.",
+      "notes": "Iʿtidāl means balance or equilibrium of constitutive qualities in a historical natural-philosophical framework.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.672",
+      "number": 672,
+      "pageStart": 467,
+      "pageEnd": 467,
+      "arabic": "ومنها ان حكم البساطة والاعتدال المبنى على التناسب الأصلي أو العارضي، الجمع والتوفيق، وعكسه الفرق والتفريق.",
+      "english": "Another is that the ruling of simplicity and equilibrium, grounded in an original or acquired correspondence, is conjunction and harmonisation; its opposite is separation and differentiation.",
+      "notes": "Original versus adventitious proportion must remain distinct.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.673",
+      "number": 673,
+      "pageStart": 467,
+      "pageEnd": 467,
+      "arabic": "ومنها ان الميل الإرادي الذاتي لاحدى الحقائق إلى الظهور جامع بقوة الحقيقة الجامعة لسائرها، ليظهر التجلي الإلهي الاحدى بصورة الكل.",
+      "english": "Another is that the essential voluntary inclination of any one reality towards manifestation gathers all the other realities by virtue of the all-comprehensive reality, so that the unitary divine self-disclosure may become manifest in the form of the whole.",
+      "notes": "Do not make this individual inclination into an independent agent separate from the comprehensive reality.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.674",
+      "number": 674,
+      "pageStart": 467,
+      "pageEnd": 468,
+      "arabic": "واما أمثلتها:",
+      "english": "As for the examples:",
+      "notes": "Transition from principles to physical and alchemical analogies.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.675",
+      "number": 675,
+      "pageStart": 468,
+      "pageEnd": 468,
+      "arabic": "فمنها ان المركب العنصري الشديد الالتحام القريب من الاعتدال بين اللطافة والكثافة، شأنه عدم التفرق وحفظ الأحدية، حتى إذا اثرت الحرارة فيه تأثيرا قويا أحدثت حركة دورية كالذهب، فالجمعية القابلية فيه لا تقبل الا ذلك، فلا يظهر اثر الفاعل الاحدى فيه الا حسب ما يقبله، فهذا مثال العرش والكرسي لالتحامهما الاحدى الدائمي الذي هو في ذلك أعلى من الياقوت الأحمر، وذلك لتجاذب الجوهر النوري اللطيف الوجوبي والظلمة العدمية الامكانية الكثيفة، كتجاذب جزئي الذهب اللطيف والكثيف، ومقتضى التجاذب في المركب ان يدور وانما لا يدور الياقوت الأحمر عند الالقاء في النار لعدم تأثير الحرارة في اجزائه تأثيرا يبلغ ذلك الحد، والأفلاك الاخر مثلهما، لكن ليس الالتحام بين اجزائها في قوة التحام اجزائهما لطبائعها العنصرية التي ليست في الأحدية الجمعية مثلهما، مع أنها أعلى مرتبة وأقوى أحدية من تركيب المولدات، ففارقتها بدوامها وعدمه فيها على ما نطق به النص من انشقاقها واندكاكها وكونها وردة كالدهان حين يغلب طوفان النار على سائر العناصر.",
+      "english": "One example is an elemental compound whose parts cohere very firmly and which approaches a balance between subtlety and density. Its character is to resist disintegration and preserve oneness, so that, when heat acts upon it strongly, it produces a circular movement, as in gold. Its receptivity, considered as a gathering, admits only that; hence the efficacy of the unitary agent appears within it only to the extent of its receptivity. This provides an example of the Throne and the Footstool, whose enduring, unitary cohesion is in this respect superior even to that of red ruby. It arises from the reciprocal attraction between the subtle, luminous, necessary substance and the dense, dark, privative substance of possibility, just as the subtle and dense parts of gold attract one another. Such attraction within a compound tends to make it revolve. Red ruby, however, does not revolve when placed in fire because heat does not act on its parts strongly enough to reach that point. The other spheres resemble these two, but their components are less firmly joined, because of their elemental natures, which do not possess the same unity of gathering. Nevertheless their rank and oneness are higher and stronger than those of generated compounds; they therefore differ from the generated things in their endurance, while the latter lack that endurance. The revealed text speaks of the spheres' rending and crushing, and of the sky becoming like a rose-coloured oil when the flood of fire prevails over the other elements.",
+      "notes": "Premodern alchemical cosmology; no present-day physical endorsement. The sky becoming «وردة كالدهان» alludes to Qurʾān 55:37. Interpretation of دوام in relation to eventual cosmic rupture requires contextual checking.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.676",
+      "number": 676,
+      "pageStart": 468,
+      "pageEnd": 468,
+      "arabic": "ومنها ان لا يكون اللطيف والكثيف في المركب قريبين من الاعتدال، لكن غلب اللطيف فيصعد ويستصحب الكثيف معه، كالزيبق والكبريت والنوشادر وغيرها مما يسميه أهل الكيميا أرواحا، فهذا مثال الدخان والعنصري الناري الذي يحدث فيه الشهب والنيازك وأمثالهما، ومثله العنصر الهوائي المتصاعد من الهباء المستصحب للبخار والغبار معه إلى سمك سبعة عشر فرسخا على ما قالوا.",
+      "english": "A further example is a compound in which the subtle and dense components are not approximately balanced, but the subtle predominates. It therefore rises and carries the dense with it, as with mercury, sulphur, sal ammoniac, and other substances that practitioners of alchemy call 'spirits'. This exemplifies smoke and the fiery element, within which shooting stars, meteors, and similar phenomena occur. The same applies to the airy element rising from the primordial dust and taking vapour and particles with it to a height of seventeen farsakhs, according to their account.",
+      "notes": "The seventeen-farsakh altitude is attributed to a premodern account («على ما قالوا»), not asserted as a modern measurement. Alchemical 'spirits' means volatile substances.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.677",
+      "number": 677,
+      "pageStart": 468,
+      "pageEnd": 468,
+      "arabic": "ومنها ان لا يغلب اللطيف فيما لا يقرب من الاعتدال ولم يكن الكثيف أيضا غالبا جدا فيؤثر في تسييله القوى، كالفضة والرصاص والأسرب وغيرها، أو في تسييله الضعيف كتليين الحديد، فهذا مثال العنصر المائي حيث اثر حرارة التجليات في تسييله من الهباء لا في تصعيده بغلبة البرودة - لكن مع الرطوبة -",
+      "english": "Another example is a compound that is not near equilibrium in which the subtle does not predominate, but neither does the dense predominate to a very great extent. Strong heat acts to liquefy it, as with silver, raṣāṣ and usrub, and other substances; or weakly, as in softening iron. This exemplifies the watery element: the heat of the self-disclosures caused it to become liquid from the primordial dust, but not to rise, since cold predominates in it—though together with moisture.",
+      "notes": "«الرصاص والأسرب» may reflect overlapping or differentiated historical metal names, both associated with lead. Preserve terms provisionally; compare alchemical lexica before specifying metals.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.678",
+      "number": 678,
+      "pageStart": 468,
+      "pageEnd": 469,
+      "arabic": "ومنها ان يغلب الكثيف جدا فضلا عن الاعتدال، كما في الاحجار القوية، فلم يقو النار على تليينه فضلا عن تسييله، وهذا مثال العنصر الأرضي الباقي في المركب - لعدم قابلية الصعود - لا لان حرارة التجلي تقتضى ذلك.",
+      "english": "A further example is a body in which density greatly predominates, far from equilibrium, as with hard stones. Fire then lacks the power even to soften, much less melt, it. This exemplifies the earthy element that remains within the compound because it is not receptive to rising, not because the heat of self-disclosure itself demands that it remain.",
+      "notes": "The explanatory mechanism belongs to historical elemental theory. This section spans the printed p.468–469 boundary.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.679",
+      "number": 679,
+      "pageStart": 469,
+      "pageEnd": 469,
+      "arabic": "فان قلت: كيف يعمل النار في الماء ويؤثر في تسييله، وفي الأرض بلا اثر ظاهر وليس فيهما الا البرودة؟",
+      "english": "If you object: How does fire act upon water and bring about its liquidity, while having no visible effect upon earth, given that both possess nothing but coldness?",
+      "notes": "A challenge to the proposed analogy; preserve its premise as source doctrine.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.680",
+      "number": 680,
+      "pageStart": 469,
+      "pageEnd": 469,
+      "arabic": "قلت: ذلك ممنوع لما ثبت: ان كل شئ فيه كل شئ، لكن قد يظهر اثره وقد لا يظهر، ومما يدل على أن كل عنصر فيه كل كيفية، دلالة لمية ان الطبيعة الملزومة لكل منها قائمة، ودلالة انية جريان الكون والفساد بالتلطيف والتكثيف بين العناصر كلها بوسط أو غير وسط، وكذا الاستحالة، إذ لولا القابلية لما تحققتا، والقابلية الوجودية اثر قابلية الماهيات وذلك أزلي غير مجعول، فبالنظر إلى الحقيقة الغيبية الالية الأصلية، كل منهما جامع للاضداد وفيه قول الخراز انه عرف الله بجمعه بين الضدين.",
+      "english": "I reply: The premise is denied, for it has been established that everything is in everything, although its effect may be manifest or remain hidden. That every element contains every quality is shown both by a demonstration from cause [dalīl limmī], because the nature that necessarily accompanies each element is present, and by a demonstration from effect [dalīl innī], because generation and corruption occur among all the elements through rarefaction and condensation, whether through an intermediary or without one. The same applies to qualitative alteration: without a receptivity for these changes, neither would be realised. Existential receptivity is the effect of the receptivity of the quiddities; the latter is eternal and unmade. Thus, considered from the original hidden instrumental reality, each element gathers opposites. This bears upon al-Kharrāz's saying that he recognised God through His gathering together of the two opposites.",
+      "notes": "Important technical distinction: limmī/innī demonstrative paths. The expression «الحقيقة الغيبية الالية الأصلية» is textually delicate and 'original hidden instrumental reality' provisional. Do not equate the uncreated receptivity of quiddities with created existential receptivity.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.681",
+      "number": 681,
+      "pageStart": 469,
+      "pageEnd": 469,
+      "arabic": "فنقول: من المقام الذي هذا لسانه تطلع على أشياء:",
+      "english": "Thus we say: From the station expressed in this discourse, a number of things become apparent:",
+      "notes": "Introduces a numbered synthesis. The language of a spiritual 'station' is part of Fanārī's framing.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.682",
+      "number": 682,
+      "pageStart": 469,
+      "pageEnd": 470,
+      "arabic": "الأول: على علة دوران الأفلاك، وهى الحاح التجليات الأسمائية واشراقات العقول العالية على نفوسها الكلية بأشعتها القدسية في القابل البسيط الجمعي الاحدى في أعلى مراتب الالتحام واللطافة في الأفلاك الأربعة أو الاثنين وفي أقرب مرتبة منه في الأفلاك السبعة التي تحتها، لان طبيعتها عنصرية تفصيلية - بخلاف الأربعة - غير أنها من أخلص العناصر واصفاها واعدلها وأقواها، لا ان كلا من عنصر واحد، فذلك لا يمكن، لان تخلل الهباء إحدى جمعي، لكن الغالب واحد منها والثلاثة بحسبه والتركيب وحداني جمعي، ولذا لا يتسلط عليها الحقائق المتباينة والمتضادة بالافساد بحسب دوامها بالانخرام، بل سيطرأ الفساد من حيث اعراضها الصورية وكيفياتها النورية العرضية إذا قامت القيامة وطاف طوفان العنصر الناري فكانت السماء وردة كالدهان، وتغيرت بالطي صور نضد طبقاتها وأنوارها، لأنها لا يقوى قوة الأفلاك الأربعة، ثم دوام ذلك الدوران لدوام الالحاح المبنى على دوام الالتحام، ثم هذا الدوران إرادي بالنظر إلى نفوسها وقسري بالنظر إلى أنه حكم الجمع الاحدى الإلهي أو إرادي وقسري بالنظر الثاني، لكن إرادي إرادة ذاتية من حيث إنه حكم الجمع الإلهي، وقسري من حيث إنه اثره اللازم، وذلك لان القوة المحركة وقابلها في كل إحدى لا يتخلف - كما لا يختلف - بخلاف نفوس الحيوانات وطبائع العنصريات المفصلة.",
+      "english": "First: The cause of the spheres' revolution is the persistent pressure of the self-disclosures of the Names and of the illuminations of higher intellects upon their universal souls, through their holy rays, in a simple, gathered, unitary recipient. This receptivity reaches its highest degree of cohesion and subtlety in the four—or two—higher spheres, and the closest degree beneath that in the seven spheres below. For the nature of these seven is elemental and differentiated, unlike the four higher spheres, though composed of the purest, most refined, most balanced, and strongest of the elements. They are not each made from a single element: that would be impossible, because the interpenetrating primordial dust is gathered in unitary fashion. Rather, one element predominates in each and the other three are proportioned to it, while the composition is itself a unitary gathering. Thus contrary and mutually opposed realities do not overpower them by corruption during their ordered endurance. Corruption will, however, touch their formal accidents and adventitious luminous qualities when the Resurrection takes place and the flood of the fiery element overwhelms them, so that the heaven becomes like a rose-coloured oil [Qurʾān 55:37], and the ordered shapes of its layers and lights change when folded away. Their strength is not that of the four higher spheres. The continued revolution itself results from the continued pressure of disclosure, which rests on the continuation of their cohesion. Such revolution is voluntary relative to the spheres' souls, yet compulsory relative to its being a ruling of the unitary divine gathering. On another consideration it is both voluntary and compulsory: voluntary as an essential willing, insofar as it is a ruling of the divine gathering; compulsory insofar as it is its necessary effect. This is because, in each, the moving power and its receptive counterpart are united and do not fail or diverge, unlike the differentiated souls of animals and elemental natures.",
+      "notes": "Premodern spherical cosmology and apocalyptic Qurʾānic allusion; clarify four versus two higher spheres in earlier Qūnawī/Farghānī discussion. The simultaneous voluntary/compulsory predicates refer to different standpoints, not a formal contradiction.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    }
+  ]
+}
