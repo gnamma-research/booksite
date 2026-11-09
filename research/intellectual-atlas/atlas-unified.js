@@ -645,7 +645,7 @@ function viewNetwork(){
  '<p class="source-summary">Only evidenced relationships are shown. A missing arrow records an evidentiary gap, not historical isolation.</p></section>'+
  '<section class="network-col"><h3>Carried on by · reception</h3>'+cards(second,false)+'</section></div>';
  return {html:'<p class="text-network-complete" role="status">All '+(prior.length+later.length)+' recorded direct relationships are drawn and listed below; no additional clicks are needed.</p>'+
-  quickPicks()+'<div class="network-wrap">'+graph+'</div>'+extended+
+  '<div class="network-wrap">'+graph+'</div>'+extended+
   (state.evidence?evidencePanel(data.edges.find(x=>x.id===state.evidence)):"")+
   '<p class="net-cites">Select any book to recenter the graph. Each “Evidence” control identifies the source, relationship type and its qualifications; mere membership in a school creates no arrow.</p>',
   title:"Source network · "+truncate(n.title,50),sub:fnum(prior.length)+" antecedents · "+fnum(later.length)+" later relationships · complete documented direct neighbourhood"};
