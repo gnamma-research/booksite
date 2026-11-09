@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-human-clause-review-v1",
   "date": "2026-11-09",
-  "reviewScope": "1,075 punctuation-delimited Arabic segments in 25 commentary units compared against the source-based English; 4,445 segments still not individually reviewed.",
+  "reviewScope": "1,142 punctuation-delimited Arabic candidates compared in 35 bilingual source units (25 commentary, 10 original matn), with unresolved readings marked; remainder not certified.",
   "sourceBasis": "Current repository JS matn/commentary modules, retained edition N introduction and edition A main/conclusion",
   "method": "Source clause numbers are computed from Arabic punctuation. English ranges are manually matched, not proportional autoalignment. All segments in these eleven sections must be covered exactly once; unresolved readings remain explicit.",
   "units": [
@@ -1329,9 +1329,219 @@
           "note": "Conclusion distinguishes quiddities insofar as other—nonexistent—from quiddities without such otherness, which bear the intrinsic Necessary's real existence; the specific target of the making/causation critique is not broadened."
         }
       ]
+    },
+    {
+      "id": "QT-001",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 1,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked-with-note",
+          "note": "Opening الحمد لله رب العالمين is explicitly editorial adopted from catalogue incipit, not the A commentary's الحمد لوليّه; no codex collation claimed."
+        },
+        {
+          "arStart": 2,
+          "arEnd": 7,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "The subject is the difficult account of tawḥīd as the gnostics go to it and realized scholars indicate; disputants and reflective investigators distinguished without imposing commentator's identities on matn."
+        }
+      ]
+    },
+    {
+      "id": "QT-002",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 4,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked-with-note",
+          "note": "Opponents' old humoral diagnosis of bodily substrates, burning of healthy materials and black bile is reported, not endorsed as modern science."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 8,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Certainty in invalidation of rational/sensory/innate/natural judgments follows arbitrary asceticism as an opponent's causal claim; subsequent बीमारी is the adversary's diagnosis."
+        }
+      ]
+    },
+    {
+      "id": "QT-003",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 2,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked-with-note",
+          "note": "The adversarial objection is reversed, and the ellipsis marks a printed interruption before QT-004, not a conjectured restored authorial clause."
+        }
+      ]
+    },
+    {
+      "id": "QT-004",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 8,
+          "enStart": 1,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Aradtu to aradnā person change remains; ḥads is intellectual intuition, and the aim is proof in dialectical form rather than mere personal witnessing."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 10,
+          "enStart": 4,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Author's prayer for salvation and avoidance of error retained."
+        },
+        {
+          "arStart": 11,
+          "arEnd": 15,
+          "enStart": 5,
+          "enEnd": 6,
+          "status": "checked",
+          "note": "Exhortation to seekers to acquire perfection and enduring life before necessary passing and natural death is complete."
+        },
+        {
+          "arStart": 16,
+          "arEnd": 19,
+          "enStart": 7,
+          "enEnd": 7,
+          "status": "checked",
+          "note": "Seek help and rely on God under the conditional believer qualification retained."
+        }
+      ]
+    },
+    {
+      "id": "QT-005",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Existence common by meaning, not by word alone, kept distinct from the later stronger thesis of a numerically one external existent."
+        }
+      ]
+    },
+    {
+      "id": "QT-006",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked-with-note",
+          "note": "Proof uses contradiction of existence/nonexistence, not simply the assertion that existence is necessary; printed masculine لا يقبل after feminine حقيقته noted."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 5,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Necessity follows only after intrinsic impossibility of nonexistence; that inferential step is preserved."
+        }
+      ]
+    },
+    {
+      "id": "QT-007",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Unrestricted Necessary is neither a concept qualified by generality nor privatively delimited."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 8,
+          "enStart": 3,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Positive specifying qualifier is tested as form (composition) or accident (would not be intrinsic; otherwise no specification)."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 12,
+          "enStart": 6,
+          "enEnd": 7,
+          "status": "checked-with-note",
+          "note": "Dependence reductio and regress concern terms ordered between two present bounds, not an absolute mathematical denial of every infinity."
+        }
+      ]
+    },
+    {
+      "id": "QT-008",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 1,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "unresolved-reading",
+          "note": "The objection is preserved. Malzūmāt is syntactically and philosophically difficult, and the English remains provisional until comparison with the separate ancestral manuscripts."
+        }
+      ]
+    },
+    {
+      "id": "QT-009",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked-with-note",
+          "note": "Later Peripatetic objection is reconstructed; māhiyya without conditioning by existence and extramental/mental distinction are kept within its dialectical role."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 6,
+          "enStart": 3,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "The claim of gradational predication of one existence upon particular existences is the opponent's position, not the ancestor's settled conclusion."
+        }
+      ]
+    },
+    {
+      "id": "QT-010",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 2,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "The double-existence charge and the distinction between the nature and what is shared in existence kept as opponent's reply."
+        },
+        {
+          "arStart": 3,
+          "arEnd": 4,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "External sameness and intellectually additional predication preserved under different considerations."
+        }
+      ]
     }
   ],
-  "claimedManuallyComparedArabicClauses": 1075,
+  "claimedManuallyComparedArabicClauses": 1142,
   "issues": "Three passages corrected; one passage contains two connected technical-semantic corrections; additional textual cruxes flagged without conjectural emendation.",
   "noWitnessesCollated": true
 }
