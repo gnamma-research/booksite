@@ -20,7 +20,7 @@ for(const [engine,browserType] of [['chromium',chromium],['webkit',webkit]]){
     require(await page.locator('#pages section.page[data-page="126"]').count()===1,'Blank page omitted');
     require(await page.locator('#pages section.page .arabic').count()===52,'Wrong number of source excerpt translations');
     require(await page.locator('#pages section.page .english').count()===52,'Wrong number of English selections');
-    require(await page.locator('#chooser option').count()===30,'Source page navigation missing');
+    require(await page.locator('#chooser option').count()===54,'Source page navigation missing');
     const hrefs=await page.locator('#pages section.page .meta a').evaluateAll(a=>a.map(x=>x.href));
     require(hrefs.length===54&&hrefs.every((url,i)=>url.includes('/12170/'+(i+125))),'Source page links not accurate');
     require((await page.locator('main').textContent()).includes('NOT a complete translation of the later glosses'),'Partial translation disclaimer missing');
