@@ -1,6 +1,6 @@
 # GNAMMA Atlas: unified work explorer and critical data architecture
 
-**Revision:** 9 November 2026 — feature branch \`feature/unified-work-explorer-20261109\`  
+**Revision:** 9 November 2026 — feature branch `feature/unified-work-explorer-20261109`  
 **Status:** implementation of the first connected work-explorer layer, with a formally specified next-stage ontology. The repository does **not** claim complete source reconciliation, passage collation, geospatial research or definitive coverage.
 
 ## User-facing experience
@@ -26,20 +26,20 @@ The explorer is not a replacement for the common-axis chronological map or the m
 | Layer | Existing register | Meaning |
 |---|---|---|
 | Audited philosophy/kalām | Embedded atlas data: 404 entries / 377 relations | Historical items and relations of various types; work explorer restricts nodes to work-type records |
-| OpenITI | \`corpora/expanded-bibliography.json\` | Work/version metadata and often approximate placement by **author death** |
-| Alreq | \`corpora/manuscript-full.json\` | Manuscript-category records, normally unplaced in time |
-| GNAMMA pinned | \`corpora/registry.json\` | 30 independently pinned source versions, with five explicitly documented bibliographical links |
-| Scholarly identities | \`corpora/knowledge-graph-schema.json\` | **Target schema**, not a claim that historical entities have already been reconciled |
+| OpenITI | `corpora/expanded-bibliography.json` | Work/version metadata and often approximate placement by **author death** |
+| Alreq | `corpora/manuscript-full.json` | Manuscript-category records, normally unplaced in time |
+| GNAMMA pinned | `corpora/registry.json` | 30 independently pinned source versions, with five explicitly documented bibliographical links |
+| Scholarly identities | `corpora/knowledge-graph-schema.json` | **Target schema**, not a claim that historical entities have already been reconciled |
 
-The browser uses the existing \`GNAtlasBibliography\` loader rather than fetching or normalizing the large registers twice. Its \`getData()\` adapter exposes the source objects already used by the chronological discipline maps. The current normalized book IDs remain \`oi:...\`, \`alreq:...\` or \`read:...\`; the explorer namespaces them as \`b:...\`, while historical canonical work IDs are namespaced \`c:...\`.
+The browser uses the existing `GNAtlasBibliography` loader rather than fetching or normalizing the large registers twice. Its `getData()` adapter exposes the source objects already used by the chronological discipline maps. The current normalized book IDs remain `oi:...`, `alreq:...` or `read:...`; the explorer namespaces them as `b:...`, while historical canonical work IDs are namespaced `c:...`.
 
-The mere existence of the same title and author in two registers is *not* an identity assertion. Reconciliation candidates are generated offline by \`scripts/identity-candidates.cjs\`. All generated matches remain \`unreviewed_candidate\` and require evaluation of cataloguing history, source authorship, textual scope, recensions and external bibliographical evidence.
+The mere existence of the same title and author in two registers is *not* an identity assertion. Reconciliation candidates are generated offline by `scripts/identity-candidates.cjs`. All generated matches remain `unreviewed_candidate` and require evaluation of cataloguing history, source authorship, textual scope, recensions and external bibliographical evidence.
 
 ### Relation semantics
 
 Historical arrows are based solely on the 377-record canonical edge register (restricted to work-work endpoints) and the five pinned source registry links. The source graph may contain fewer visible relationships because some canonical relationships involve context items, some are outside the active family, some are provisional, and some lie outside the selected neighbourhood.
 
-* \`commentary\`, \`gloss\`, \`critique\`, \`textual_use\`, \`translation_adaptation\` and other historical relation codes are preserved.
+* `commentary`, `gloss`, `critique`, `textual_use`, `translation_adaptation` and other historical relation codes are preserved.
 * The UI maps codes to broad **filter classes** but does not change the source claim.
 * The direction is **source text → later text / dependent treatment** when that direction is established in the underlying register.
 * No teacher/student, school membership, regional proximity, approximate date or title resemblance generates a work-work relationship.
@@ -48,7 +48,7 @@ Historical arrows are based solely on the 377-record canonical edge register (re
 
 ## Canonical graph model
 
-\`corpora/knowledge-graph-schema.json\` is a JSON Schema 2020-12 target that distinguishes people, compositions, work parts, recensions, manuscript witnesses, printed editions, digital versions, translations, passages, propositions and arguments, institutions, schools, places, and bibliographic records.
+`corpora/knowledge-graph-schema.json` is a JSON Schema 2020-12 target that distinguishes people, compositions, work parts, recensions, manuscript witnesses, printed editions, digital versions, translations, passages, propositions and arguments, institutions, schools, places, and bibliographic records.
 
 An **assertion** is distinct from both its subject/object entities and its evidence. It has a typed predicate, a source locator, verification status, epistemic strength and editorial scope. Identity itself is an assertion and is never merged automatically. A scholar's region and the provenance of a manuscript are different kinds of places, just as a composition date and the author's death are different time events.
 
@@ -58,11 +58,11 @@ The present browser adapter intentionally uses a smaller, read-only work-focused
 
 From repository root:
 
-\`\`\`bash
+```bash
 node research/intellectual-atlas/scripts/identity-candidates.cjs
-\`\`\`
+```
 
-The generator reads the existing Alreq and OpenITI metadata and writes \`research/intellectual-atlas/corpora/identity-review-candidates.json\` locally. This file contains title+author match **candidates** only, not certified same-work identities. Reviewers must enter evidence and separately approve each identity before it can change canonical work IDs.
+The generator reads the existing Alreq and OpenITI metadata and writes `research/intellectual-atlas/corpora/identity-review-candidates.json` locally. This file contains title+author match **candidates** only, not certified same-work identities. Reviewers must enter evidence and separately approve each identity before it can change canonical work IDs.
 
 Optional input and output paths can be supplied as the first three positional arguments for testing.
 
@@ -70,9 +70,9 @@ Optional input and output paths can be supplied as the first three positional ar
 
 Open the atlas at:
 
-\`https://gnamma-research.github.io/booksite/research/intellectual-atlas/#view=explorer\`
+`https://gnamma-research.github.io/booksite/research/intellectual-atlas/#view=explorer`
 
-Explorer state lives under \`gnx_*\` URL parameters to avoid colliding with the older \`view\`, \`work\`, \`source_tab\`, \`sa_*\` and \`bib_*\` parameters. The new route preserves the selected canonical \`c:\` identity or bibliographical \`b:\` source identity, graph depth, direction, relation type, provenance, text family, school, science and current display.
+Explorer state lives under `gnx_*` URL parameters to avoid colliding with the older `view`, `work`, `source_tab`, `sa_*` and `bib_*` parameters. The new route preserves the selected canonical `c:` identity or bibliographical `b:` source identity, graph depth, direction, relation type, provenance, text family, school, science and current display.
 
 Existing historical-atlas and disciplinary-subject routes continue to render their original maps.
 
@@ -100,13 +100,13 @@ These deficits are tracked explicitly because ungrounded completion claims would
 
 ## Verification
 
-Serve the project root through an HTTP server (relative bibliographical fetches require HTTP, not \`file://\`). Run:
+Serve the project root through an HTTP server (relative bibliographical fetches require HTTP, not `file://`). Run:
 
-\`\`\`bash
+```bash
 python -m http.server 8123
 python research/intellectual-atlas/tests/verify_work_explorer_browser.py
 python research/intellectual-atlas/tests/verify_unified_subject_timeline_browser.py
-\`\`\`
+```
 
 The new Playwright test checks graph rendering, directed canonical relationships, 5 pinned source relations, the large Alreq bibliography, non-invention of Alreq edges, source links, evidence details, family selection, geographic qualifications, JSON export, cross-view identity, deep-link reload and mobile overflow.
 
