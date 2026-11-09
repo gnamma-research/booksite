@@ -1,0 +1,262 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R15e",
+  "date": "2026-11-09",
+  "startSection": "4.926",
+  "endSection": "4.950",
+  "sourceRepo": "OpenITI/0850AH",
+  "sourceCommit": "e2715c62fb458ce3ddc43b962cd55677cdd7bc35",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.926",
+      "number": 926,
+      "pageStart": 537,
+      "pageEnd": 537,
+      "arabic": "وقال قدس سره (3): كل نبي وولى ما عدا الكمل فإنه مظهر حقيقة كلية من حقائق العالم والأسماء الإلهية الخصيصة بها وارواحها الذين هم الملأ الاعلى على اختلاف مراتبهم، ولذا نسب عليه وآله السلام رؤية الأنبياء ليلة المعراج إلى السماء مع عدم تحيز أرواحهم، تنبيها على قوة نسبهم من حيث مراتبهم ومراتب أممهم وعلومهم وأحوالهم إلى تلك السماء، لما كانت أحوالهم هنا صور احكام مراتب تلك السماوات.",
+      "english": "The Shaykh—may his secret be sanctified—also said: Every prophet and saint other than the perfected ones manifests one universal reality among the realities of the world, the divine Names particular to it, and their spirits, who are the Highest Assembly, according to their respective degrees. This is why the Prophet, may God bless him and his family, ascribed his vision of the prophets on the night of the Ascension to particular heavens, although their spirits are not confined to spatial positions. He thus indicated their powerful relations, according to their own degrees and those of their communities, sciences and states, to those heavens, since their states here are forms of the rulings of those heavenly degrees.",
+      "notes": "The author explicitly denies spatial confinement of prophetic spirits while discussing the Miʿrāj; identify the quoted Qūnawī passage before final collation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.927",
+      "number": 927,
+      "pageStart": 537,
+      "pageEnd": 538,
+      "arabic": "وقال قدس سره في شرح حديث ابن عباس أنه قال صلى الله عليه وآله: اتانى الليلة آت... الحديث. هذا التجلي من حضرة الاسم الرب وعنها يصدر التشريع والتكليف، ومقامه برزخي بين السماء السابعة والكرسي، متوسط بين المقام الجبرئيلي والميكائيلي، فمعقولية مرتبة الاسم الرب في الوسط، بين ما يقبل الكون والفساد من الصور الطبيعية - كالسماوات وما تحتها - وبين ما ليس كذلك، وان لم يخل عن الطبيعة الكلية.",
+      "english": "In commenting upon the report transmitted from Ibn ʿAbbās, in which the Prophet said, 'A visitor came to me tonight...' and so on, the Shaykh said: This self-disclosure proceeds from the Presence of the Name al-Rabb; from that Presence come legislation and obligation. Its station is an isthmus between the seventh heaven and the Footstool, mediating between Gabriel's and Michael's stations. The intelligible rank of the Name al-Rabb thus occupies the middle between natural forms subject to generation and corruption—such as the heavens and what lies below them—and what is not subject to this, although the latter is not devoid of Universal Nature.",
+      "notes": "Report «أتاني الليلة آت» and commentary on legislation require identification; avoid conflating angelic stations with actual spatial coordinates.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.928",
+      "number": 928,
+      "pageStart": 538,
+      "pageEnd": 538,
+      "arabic": "والأعراف المسمى بالسور وهو نفس الكرسي مظهر هذا البرزخ الذي هو مقام الاسم الرب وتعينه وعالم النوم وعالم البرزخ، والصور المرئية فيه مظاهر للحقائق المجردة وحجب عليها، والصورة الانسانية نسخة متحصلة من الحضرة الإلهية المشتملة على جميع الأسماء والصفات ومن مرتبة الامكان المشتملة على جميع الممكنات، وشريعة محمد صلى الله عليه وآله صورة جميع الشرائع، فتناسب صورة الربوبية المسرعة تماما.",
+      "english": "The Heights [al-Aʿrāf], also called the Wall [al-sūr], which is the Footstool itself, manifest this isthmus: the station and determination of the Name al-Rabb, the world of sleep, and the world of the intermediate state [barzakh]. Forms seen there are manifestations of immaterial realities and at the same time veils upon them. The human form is a complete copy combining the Divine Presence—which includes all Names and attributes—and the degree of Possibility—which encompasses all possibles. Muḥammad's revealed law, peace be upon him and his family, is the form comprehending all revealed laws, and so fully corresponds to this image of Lordship.",
+      "notes": "Aʿrāf, sur, kursī, dreams and barzakh are equated within the quoted theological cosmography; not a standard geographical claim.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.929",
+      "number": 929,
+      "pageStart": 538,
+      "pageEnd": 538,
+      "arabic": "والسرير مثال مظهر الحضرة ومرتبتها.",
+      "english": "The throne or couch [al-sarīr] is an exemplar of the manifestation of that Presence and its degree.",
+      "notes": "Interpretation of furniture from the vision; «السرير» differs from «العرش».",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.930",
+      "number": 930,
+      "pageStart": 538,
+      "pageEnd": 538,
+      "arabic": "والتاج مظهر شرف سلطنة هذه الربوبية.",
+      "english": "The crown manifests the honour of the sovereignty of that Lordship.",
+      "notes": "Iconographic interpretation in the transmitted dream or vision.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.931",
+      "number": 931,
+      "pageStart": 538,
+      "pageEnd": 538,
+      "arabic": "والنعلان مظهر أوامره ونواهيه.",
+      "english": "The two sandals manifest His commands and prohibitions.",
+      "notes": "Symbolic interpretation; verify source report before treating the footwear as a literal divine attribute.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.932",
+      "number": 932,
+      "pageStart": 538,
+      "pageEnd": 538,
+      "arabic": "والظهر بين الكتفين مظهر عالم الغيب والتأثير من قبله.",
+      "english": "The back between the shoulders manifests the unseen world and the efficacy that proceeds from it.",
+      "notes": "Symbolic back/shoulders imagery in report; distinguish the image of a prophetic vision from anthropomorphic description of God.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.933",
+      "number": 933,
+      "pageStart": 538,
+      "pageEnd": 538,
+      "arabic": "والا نأمل مظاهر حقائق أمهات الأسماء التي هي المفاتيح الغيبية للأحكام المشروعة، وهى الحضرات الخمس المبتنى عليها أركان الاسلام والايمان والاحكام التكليفية والصلوات الخمس، وفوقها المفاتيح الثواني التي يتوقف عليها الايجاد، وهى الأسماء الألوهية الخمسة التي هي الحياة والعلم والإرادة والقدرة والقول. والمفاتيح الأول هي مفاتيح غيب الذات، وهى أسماء الحق من حيث ذاته التي لا يعرفها الا الكمل.",
+      "english": "The [following are] manifestations of the realities of the motherly Names, the unseen keys to the rulings of revealed prescriptions. These are the five Presences upon which the pillars of Islam and faith, the prescriptive legal rulings, and the five prayers are founded. Above them stand the second keys upon which creation depends: the five divine Names of Life, Knowledge, Will, Power and Speech. The first keys are the keys of the Unseen of the Essence—the Names of the Real insofar as they belong to His Essence—which none but the perfected ones knows.",
+      "notes": "Witness starts «والا نأمل», which does not give a stable grammatical referent; English opening is bracketed and provisional. Do not silently repair Arabic. The 'first' and 'second' keys are not standard legal categories.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.934",
+      "number": 934,
+      "pageStart": 538,
+      "pageEnd": 539,
+      "arabic": "واليد مظهر القدرة، فالمقبوض بالقبضة المسماة بالشمال عالم العناصر، ونشأة الانسان العنصرية وما هو خارج عنها - أعني روحانيته ومظاهره في باقي العالم - مضافة إلى عين الحق، وما ورد: كلتا يديه يمين مباركة، فصحيح أدبا وتحقيقا من حيث اضافتهما إليه - لا من حيث اثرهما -",
+      "english": "The hand is a manifestation of Power. What the grasp called the left hand holds is the elemental world; the human being's elemental constitution and what lies beyond it—namely his spiritual reality and its loci in the remaining world—are related to the very entity of the Real. As for the report 'Both His hands are blessed right hands', it is correct in reverential expression and in realisation insofar as both are related to Him, not in respect of their respective effects.",
+      "notes": "Careful anthropomorphic distinction: source speaks of hands and grasps in an interpreted vision and qualifies right/left through ascription vs effects. Wording around «نشأة الانسان العنصرية وما هو خارج عنها» deserves print review.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.935",
+      "number": 935,
+      "pageStart": 539,
+      "pageEnd": 539,
+      "arabic": "والسجين العالم السفلى، والعليون العالم العلوي، ولهاتين اليدين فصول وأصول. كذا قال، وسنستوفي نقل تمامها إن شاء الله تعالى",
+      "english": "Sijjīn is the lower world and ʿIlliyyūn the higher world. These two hands have branches and foundations. Thus he said; with God's permission we shall eventually transmit the rest of his discussion.",
+      "notes": "Source closes or summarises prior reported commentary; do not import full remainder without witness.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.936",
+      "number": 936,
+      "pageStart": 539,
+      "pageEnd": 539,
+      "arabic": "ثم نقول: اعلم أن لهذه الأصول السابقة تتمات يتعذر افشائها الا لمن رسخ قدمه في مقامات التحقيق، خوفا من أمور مضرة كالفتور عن التعبد وتعظيم المراتب الوجودية أو الانقطاع عنهما بالكلية، للنظر إلى الوجود بعين الأحدية والجهة الخاصة، قولا بان لا تعدد في الذات فلا عبادة، لاستدعائها العابد والمعبود، فمن المكلف؟ والعدم لا يؤمر ولا يتعبد ولا يصدر منه شئ، فكل فعل من حركة وسكون فللحق بوجهه الخاص الشامل، فيزول عنه احكام الحدود والرسوم والأجناس والفصول، لكونها نسبا اعتبارية يختلف باختلاف الاعتبار، لا أمورا ذاتية لا تختلف، كما ذكر المنطقيون ان اللون يحتمل ان يكون كل واحد من الكليات الخمس بالنسب والاعتبارات، وان الجنس الواحد طبيعي ومنطقي وعقلي باعتبارات، وان العالي سافل باعتبار، مثلا كون التجلي الاحدى انسانا انما هو بالنسبة إلى مرتبته التي هي نسبة معقولة، وكل ما كان مترتبا على أمر نسى اعتباري يتبدل بتبدل الاعتبار، فجاز ان لا يعتبر انسانا، فلا يلزم خواص احكامه الشرعية أو العقلية، وكذا النبوة والإمامة والامارة وسائر المراتب الشرعية والعقلية.",
+      "english": "We now say: These preceding principles have further consequences that cannot be disclosed except to someone firmly established in the stations of realisation, lest harmful results follow—for example slackening in worship and in reverence for the degrees of existence, or abandoning them altogether because one regards Being through the eye of absolute Oneness and the particular face. Such a person might argue: Since there is no multiplicity in the Essence, there is no worship, for worship presupposes worshipper and Worshipped. Who, then, is under obligation? Nonexistence is neither commanded nor a worshipper, nor can anything proceed from it. Every act, motion and rest therefore belongs to the Real through His all-comprehensive particular face. On this reasoning the rulings of definitions, descriptions, genera and differentiae would be removed, since they are relations of conceptual consideration that vary with the consideration, not intrinsic things incapable of variation. The logicians have said, for instance, that colour may fall under each of the five predicables under different relations and considerations; that one genus can be natural, logical or intellectual in different respects; and that what is higher may be lower in another respect. Similarly, for the unitary self-disclosure to be called 'human' is relative to its degree, itself an intelligible relation. What depends on a merely relational consideration changes when that consideration changes. It might then cease to be considered human, and the specific legal and rational rulings of humanity would cease to apply—likewise prophethood, imamate, governance and all other revealed or intellectual degrees.",
+      "notes": "This is explicitly a warning about **antinomian misuse** of nondual metaphysics, not Fanārī's prescription to abandon duties. «لون» in five predicables is technical; verify the relevant logic source. Preserve distinction between degrees of predication and legal obligation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.937",
+      "number": 937,
+      "pageStart": 539,
+      "pageEnd": 539,
+      "arabic": "ولنشر إلى بعض ما ينتجه هذه الأصول المقتضية لأحدية الذات الفاعلة للكل باختياره الجازم بعد الإشارة إلى أصولها إشارة خفية، ليستدل به المستبصر على عموم حكمها وغرائب ثمراتها بحسب الأحوال والمراتب والمواطن.",
+      "english": "Let us nevertheless indicate subtly some of the consequences of these principles, which affirm the Oneness of the Essence acting in all things through its decisive will, first intimating their foundations, so that one endowed with insight may infer the generality of their ruling and the strange fruits they bear according to states, degrees and stations.",
+      "notes": "The argument is deliberately cautious following antinomian warning.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.938",
+      "number": 938,
+      "pageStart": 539,
+      "pageEnd": 540,
+      "arabic": "اما الأصول: فمنها ما مر ان لا وجود في الحقيقة للصور، لأنها صور النسب العدمية، ومعنى موجوديتها انتساب الوجود إليها، فلا وجود الا للذات الأحدية والباقي نسبه وأحواله.",
+      "english": "Among these foundations is what was explained earlier: forms have no independent existence in reality because they are images of privative relations. Their 'being existent' means only the relation of Being to them. Thus there is no Being apart from the uniquely One Essence, and the remainder consists of its relations and states.",
+      "notes": "Distinguish negation of independent subsistence from denial of empirically occurring phenomena; relates to §4.942.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.939",
+      "number": 939,
+      "pageStart": 540,
+      "pageEnd": 540,
+      "arabic": "ومنها ان كلا من التجلي الاحدى وحقائق الممكنات التي هي كيفيات ثبوتها في علم الحق قديمة، ولاقتران نسبة معقولة فلا وجود يحدث.",
+      "english": "Another is that both the unitary self-disclosure and the realities of possibles—the ways in which they are fixed in the Real's Knowledge—are eternal. Their conjunction is an intelligible relation; therefore no new existent Being is produced [by their conjunction].",
+      "notes": "The claim concerns fixed knowledge-relations and disclosure, not eternity of individual empirical created bodies. Source language «لا وجود يحدث» is ontologically technical.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.940",
+      "number": 940,
+      "pageStart": 540,
+      "pageEnd": 540,
+      "arabic": "ومنها ان كل شئ متعين في العماء ولا حادث الا ظهوره كما مر، والظهور نسبة للوجود لا أمر محقق.",
+      "english": "Another is that everything is determined in the Cloud [al-ʿamāʾ]; what originates is only its manifestation, as already explained. Manifestation is a relation of Being, not a separately established entity.",
+      "notes": "Precise distinction of ḥudūth al-ẓuhūr versus emergence of a second independent reality.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.941",
+      "number": 941,
+      "pageStart": 540,
+      "pageEnd": 540,
+      "arabic": "فان قلت: فوجود ما سوى الحق إذا لم يكن بطريق الحقيقة، كما هو مقتضى هذه الأصول، كان مجازا وكل مجاز صح نفى الحقيقة عنه، وكل ما صح نفى الحقيقة عنه كان باطلا - كما في قول لبيد: الا كل شئ ما خلا الله باطل. وصدقه الرسول صلى الله عليه وآله وارتضاه، فكيف قالوا: لا باطل في الوجود؟ على أنهم صرحوا أيضا بان لا مجاز في الوجود ذكره الشيخ قدس سره في النفحات.",
+      "english": "If you object: If the existence of everything besides the Real is not existence in the strict, true sense, as these principles demand, then it is metaphorical. Every metaphor allows the denial of the strict reality, and whatever lacks that reality is invalid or vain—as in Labīd's verse, 'Everything except God is vain.' The Messenger, peace be upon him and his family, affirmed and approved the statement. How, then, do they say that there is nothing vain in Being? Moreover they explicitly deny that there is any metaphor in Being at all, as the Shaykh, may his secret be sanctified, says in *al-Nafaḥāt*.",
+      "notes": "Do not conflate baṭil as ontological lack of independent reality with moral worthlessness. The Labīd verse and its prophetic approval need exact hadith documentation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.942",
+      "number": 942,
+      "pageStart": 540,
+      "pageEnd": 540,
+      "arabic": "قلت: هذا هو مطرح العقول ومتصادم الأصول، وتحقيق حقيقته ليس الا بمحض لطف الحق وسعة عطيته، فالذي هو وسع فهمي ان القول ببطلان وجودات الممكنات مبنى على أن حقائقها لولا توجه التجلي الإلهي إليها تقتضى العدم كما مر تحقيقه، والحاصل لها من التجلي الإلهي الاحدى توجهه لمكنى عنه بالاقتران، وهو نسبة عدمية غير محققة، والقول بان لا باطل في الوجود بل ولا مجاز، مبنى على أن كل تعين حصل (1) فهو حال من أحوال ذات الحق وحكم من احكام اسمه الظاهر انتسب (2) إلى الوجود والوجود إليه في كل محل بحسب قابلية ذلك المحل، والموجودية بمعنى هذا الانتساب صادقة (3) حقيقة لا مجازا وليست بباطلة - وإن كانت في نفسها نسبة غير محققة في الخارج -",
+      "english": "I reply: Here intellects find their place of collapse and principles collide. True realisation of this question depends solely upon the Real's pure subtle grace and the breadth of His gift. What falls within the capacity of my understanding is this: saying that the existences of possibles are vain rests upon the fact that their realities, without the divine self-disclosure's orientation toward them, demand nonexistence, as previously demonstrated. What they receive from the unitary divine self-disclosure is its orientation, referred to as 'conjunction' [iqtirān], which is a privative relation and not a separately actualised thing. But saying that nothing in Being is vain, and indeed that nothing in it is metaphorical, rests upon the fact that every determination that comes to be is a state among the states of the Essence of the Real and a ruling of His Name al-Ẓāhir (the Manifest). It is related to Being, and Being to it, in every locus according to that locus's receptivity. 'Existence' [mawjūdiyya] in the sense of this relation is truthfully and literally predicated, not metaphorically or falsely, even if that relation, considered in itself, is not a separately actualised external entity.",
+      "notes": "Crucial resolution: contrast independent existing substance with true relational predication; source itself specifies the author’s limited understanding. «حال من أحوال ذات الحق» requires perspective qualification, avoiding literal identity of contingent limitation with Essence as such.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.943",
+      "number": 943,
+      "pageStart": 540,
+      "pageEnd": 541,
+      "arabic": "وقد تقرر في القواعد العقلية: ان صدق الحمل الخارجي وتحققه لا يقتضى تحقق مبدأ المحمول في الخارج، فالموجودية بهذا المعنى ونسبتها إلى كل حقيقة تعينت وظهرت في الخارج حقيقتان، وكون الشئ حقيقة غير كونه محققة، فقد حصل بينهما التوفيق ووصل التحقيق، غير أن الشيخ قدس سره قال في النفحات - بعد الإشارة إلى ما ذكرنا -: وان كان مشهد هذا الضعيف ومشربه في هذا الوقت هو ان لا حقيقة في الوجود حتى يعقل في مقابلتها مجاز أصلا، فهذا الحكم شامل جزء وكلا، فليس الا نسبة وإضافة، متى أدركتها حق الادراك وجدتها أحوال ذات الامر وأوصافه، والتفاصيل في العلم عقلا وكشفا بموجب الاسم والرسم ذاتا ووصفا لا غير. ووراء ذلك ولا أشير لأنه * * سر لسان النطق عنه أخرس أمر به وله ومنه تعينت * * أعياننا ووجوده المتلبس",
+      "english": "The principles of rational inquiry establish that a true and realised external predication does not require the independently existing actuality of the principle from which the predicate is derived. Hence existentness in this sense, and its ascription to every reality determined and manifested externally, are truths. Being a truth [ḥaqīqa] is different from being independently actualised [muḥaqqaqa]. So reconciliation is achieved and realisation reaches its goal. Yet the Shaykh, may his secret be sanctified, after indicating what we have explained, said in *al-Nafaḥāt*: 'What this poor one's present witnessing and spiritual taste disclose is that there is no independently opposed \"strict reality\" [ḥaqīqa] in Being against which a \"metaphor\" [majāz] could be conceived at all. This ruling embraces both part and whole. There is nothing but relation and ascription. When you grasp them as they deserve to be grasped, you find them to be states and attributes of the Reality of the matter itself. Details are differentiated in Knowledge, both rationally and through unveiling, according to Name and description, essence and attribute, and nothing besides. Beyond this I do not point, for it is a mystery before which the tongue of speech falls silent. By it, for it and from it, our fixed entities were determined, and its Being became clothed [in their forms].'",
+      "notes": "The verse quoted at the end also occurred at §4.798, so carry its uncertain attribution/punctuation forward. Contrast ḥaqīqa vs muḥaqqaqa is the philosophical crux. Source uses «لا حقيقة في الوجود» in a strict paired real/metaphor framework, not necessarily to deny truth.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.944",
+      "number": 944,
+      "pageStart": 541,
+      "pageEnd": 541,
+      "arabic": "ثم قال: مع أن أعياننا ليست بشئ زائد على أحوال ذات عرية عن الأوصاف يتعين في كل حال منها بحسبه من حيث تعين ذلك الحال أو امتيازه بتعينه وتعيينه لذي الحال من اطلاقه، هذا كلامه.",
+      "english": "He continued: 'Yet our fixed entities are nothing added to the states of an Essence free of attributes, which becomes determined in each of those states according to that state, insofar as the state is determined or distinguished by its determination, and insofar as it thereby determines the possessor of that state from His absoluteness.' Thus far his words.",
+      "notes": "Quotation continuing §4.943. The Arabic «ذات عرية عن الأوصاف» is delicate; maintain Essence qua absoluteness vs its states and the difference between determination and delimitation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.945",
+      "number": 945,
+      "pageStart": 541,
+      "pageEnd": 541,
+      "arabic": "ومن تلك الأصول: ان كل تعين وكل لازم له، وان سفل هو مقتضى اسم من أسماء الحق متعين بالحقيقة الغير المجعولة بحسب المرتبة المعقولة، فأي اختيار في الوجود الممكن في حاله اللازم للحقيقة الأزلية - وإن كان بحسب مراتبها الصورية؟ - وذلك لان كل ما يقتضيه حقيقة أو مرتبة ما، سواء كان للأرواح العالية أو النفوس السماوية أو الأرضية أو الطبائع الكلية أو الجزئية أو العنصرية أو المولدات، فهو في الحقيقة مضافة إلى الحقيقة الجامعة السارية بأحديتها في الكل، والكل آثارها اللازمة بحسب توجهاتها الأسمائية وتنزلاتها الصفاتية وسريانها المعنوي الاحدى في مراتبها الكلية أو الجزئية.",
+      "english": "Another foundation is that every determination and every concomitant of it, however low its rank, is required by one of the Real's Names, determined through the unmade reality according to an intelligible degree. What scope is there for choice in the possible existent concerning a state that necessarily accompanies eternal reality—even though that state is described through its formal degrees? For whatever a reality or degree requires, whether among higher spirits, heavenly or earthly souls, universal or particular natures, elements, or generated things, belongs in reality to the all-comprehensive Reality that pervades everything through its Oneness. All these are its necessary effects according to the orientations of the Names, the descents of attributes, and the unitary intelligible pervasion through its universal or particular degrees.",
+      "notes": "Presented as a metaphysical challenge to free choice. Fanārī later rejects outright fatalism and argues differentiated choice/kasb in §4.954.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.946",
+      "number": 946,
+      "pageStart": 541,
+      "pageEnd": 541,
+      "arabic": "ومن تلك الأصول: ان كل ما يعد حسنا باعتبار يمكن ان يعد قبيحا باعتبار آخر وبالعكس، لما ان كل شئ صورة نسبة، وتعين النسبة لا يكون الا بتعين المنتسبين، فلذا نقول: لا قبح في نسبة ايجاد موجود ما إلى الله تعالى من حيث ايجاده، بخلاف ما تهذى به المعتزلة، حتى قال في الفتوحات: والشيخ الأشعري يوافقنا في أصولنا.",
+      "english": "Another foundation is that anything deemed good from one consideration may be deemed bad from another, and conversely. Every thing is the image of a relation, and a relation becomes determined only through determination of its two relata. Thus we say there is nothing blameworthy about ascribing the creation of any existent to God insofar as He creates it, contrary to what the Muʿtazila have asserted in their dispute. The *Futūḥāt* even says, 'The Ashʿarī Shaykh agrees with us in our principles.'",
+      "notes": "The source's polemical «تهذى به المعتزلة» should not be amplified into a generic refutation of Muʿtazilism; distinguish divine creation of an act from the ethical status of creaturely performance.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.947",
+      "number": 947,
+      "pageStart": 541,
+      "pageEnd": 542,
+      "arabic": "أقول: وذلك كقوله: بان وجود كل موجود عين ذاته، فإنه كما عندنا: ان لا ذات لشئ الا ذات الحق والباقي أحواله، وكقوله: كل فعل وإن كان اختياريا فمسند إلى الحق بلا واسطة، فيكون واقعا بايجاده وقدرته واراداته المخصصة لاحد المقدورين، ولا شك انه كقولنا: كل حكم مظهري يلحق الحق، مع أنه حال ما لحقه حكم التعين غير معين في نفسه، وكقوله: بعدم تأثير قدرة العبد أصلا في أفعاله الاختيارية، فإنه كقولنا: احكام الامكان آثار احكام الوجوب وهو معنى قولنا: لا حول ولا قوة الا بالله، غير أن المحقق لا يقطع نسبة الأفعال الاختيارية عن المظاهر بالكلية - كما سيتضح عن قريب إن شاء الله تعالى -",
+      "english": "I say: This agreement resembles his [al-Ashʿarī's] statement that the existence of every existent is identical with its essence. Within our view, this resembles saying that no thing has an essence except the Essence of the Real, the remainder being His states. It also resembles his statement that every act, even when voluntary, is ascribed to the Real without intermediary and occurs through His bringing it into existence, power, and will particularising one of two possibles. This corresponds to our saying that every ruling of a locus of manifestation is ascribed to the Real, although He remains undetermined in Himself when a ruling of determination applies. It likewise resembles his denial that the servant's power has any efficacy at all in voluntary acts. This corresponds to our saying that the rulings of possibility are effects of the rulings of necessity, which is the meaning of 'There is no power or strength except through God.' Yet the realised knower does not sever the attribution of voluntary acts to their loci of manifestation altogether, as will shortly be explained, God willing.",
+      "notes": "Crucial nuance: comparison to al-Ashʿarī is followed by qualification that voluntary action is not wholly disassociated from recipients. The subsequent treatment of *Māturīdī Ḥanafī kasb* is especially significant.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.948",
+      "number": 948,
+      "pageStart": 542,
+      "pageEnd": 542,
+      "arabic": "واما النتائج والثمرات: فمجملها ما أشار إليه الشيخ الكبير رضي الله عنه في ديباجة الفتوحات حيث قال: احمده حمد من علم أنه سبحانه علا في صفاته وعلى، وجل في ذاته وجلى، وان حجاب العزة دون سبحانه مسدل، وباب الوقوف على معرفة ذاته مقفل، ان خاطب عبده فهو المستمع السميع، وان فعل ما أمر بفعله فهو المطاع المطيع، ولما حيرتني هذه الحقيقة أنشدت على حكم الطريقة للخليقة: الرب حق والعبد حق * * يا ليت شعري من المكلف؟ ان قلت عبد، فذاك ميت * * أو قلت رب انى يكلف؟",
+      "english": "As for the results and fruits of these principles, their general meaning is expressed by the Great Shaykh, may God be pleased with him, in the introduction to the *Futūḥāt*, where he said: 'I praise Him with the praise of one who knows that He—transcendent is He—rises high in His attributes and is exalted; that His Essence is majestic and manifests; that the veil of might is drawn before Him, and the door to knowing His very Essence is shut. If He addresses His servant, He is the One who hears and listens; and if the servant performs what He has commanded, He is the One obeyed and the one who obeys. When this reality bewildered me, I composed verses according to the way of the Path for created beings: \"The Lord is real, and the servant is real; would that I knew who is charged with duty! If you say the servant—he is dead; if you say the Lord—how could He be made subject to duty?\"'",
+      "notes": "Poem explicitly belongs to Ibn ʿArabī's *Futūḥāt* introduction and poses a paradox about agency/obligation, not a declaration that law is void. Verify exact rhyme and text before poetic polishing.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.949",
+      "number": 949,
+      "pageStart": 542,
+      "pageEnd": 542,
+      "arabic": "فهو سبحانه يطبع نفسه إذا شاء بخلقه ويتصف نفسه مما تعين عليه من واجب حقه، فليس الا أشباح خالية على عروشها خاوية، وفي ترجيح الصدى سر ما أشرنا إليه لمن اهتدى.",
+      "english": "Thus He—exalted is He—impresses Himself through His creation when He wills, and describes Himself with what becomes determined for Him of His rightful due. There are only empty figures over desolate thrones; in the echo's returning sound lies the secret of what we have indicated for one who finds guidance.",
+      "notes": "The Arabic «يطبع نفسه» and «في ترجيح الصدى» may contain wordplay; this close of the Futūḥāt quotation is philologically provisional.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.950",
+      "number": 950,
+      "pageStart": 542,
+      "pageEnd": 543,
+      "arabic": "هذا كلامه، غير أنه مبنى على النظر في الوجود (1) بعين الأحدية وإلى الوجه الخاص والحقيقة الجامعة الواحدة بالوحدة الحقيقية التي هي عين كل كثرة ووحدة تقابلها، كما يقتضى بواحديتها اعتبار وجه الوسائط من المظاهر الأسمائية والمراتب الوجودية باحكامها.",
+      "english": "Thus far his words. But the argument rests upon viewing Being with the eye of Oneness, with regard to the particular face and the single comprehensive Reality, whose real unity is identical with every multiplicity and with the unity opposed to it. In respect of Wāḥidiyya [the Unity which comprehends determinations], the intermediate perspective must also be taken into account: the loci of manifestation of the Names and the degrees of Being with their rulings.",
+      "notes": "Fanārī explicitly prevents an antinomian or fatalistic conclusion by restoring the Wāḥidiyya consideration beside Aḥadiyya. Section crosses p542–543; do not credit p543 until next units complete.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    }
+  ]
+}
