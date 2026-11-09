@@ -78,6 +78,22 @@ async function run(browserType){
       assert.match(await page.locator('#passage-M-K-08').textContent(),/conjectur|not logically consistent/i);
       assert.match(await page.locator('#passage-M-K-14').textContent(),/normalized explanatory transcription/i);
     });
+    await check(browserType.name()+' Muẓaffar added Book I original sequence',async()=>{
+      await page.locator('[data-part-jump="passage-M-P-01"]').click();
+      const labels={
+        'M-L-05':'المشترك','M-L-06':'الترادف','M-L-07':'المتقابلان',
+        'M-L-08':'النقيضين','M-L-09':'المفرد','M-L-10':'الإنشاء',
+        'M-L-11':'الكلمة'
+      };
+      for(const [id,term] of Object.entries(labels)){
+        const passage=page.locator('#passage-'+id);
+        await passage.waitFor({state:'attached',timeout:35000});
+        const content=await passage.textContent();
+        assert.ok(content.includes(term),id+' original Arabic absent');
+        assert.ok(content.length>700,id+' original bilingual section absent');
+      }
+      assert.match(await page.locator('#passage-M-L-11').textContent(),/particle|adāh/i);
+    });
     await check(browserType.name()+' no duplicated Nihāya emendation footnotes',async()=>{
       await page.locator('[data-part-jump="passage-N-INTRO"]').click();
       for(const id of ['N-I-02','N-II-02','N-VI-03','N-VI-15','N-VI-16']){
@@ -97,6 +113,18 @@ async function run(browserType){
       assert.match(await note.textContent(),/correspond necessarily/i);
       const scorpion=page.locator('#passage-N-VII-07');
       assert.match(await scorpion.textContent(),/scorpion.*sight|scorpion.*blindness/i);
+    });
+    await check(browserType.name()+' Nihāya XI and VI term-scope corrections',async()=>{
+      await page.locator('[data-part-jump="passage-N-INTRO"]').click();
+      const intellect=page.locator('#passage-N-XI-PRE');
+      await intellect.waitFor({state:'attached',timeout:35000});
+      assert.match(await intellect.textContent(),/“intellect” \(al-ʿaql\)/);
+      const position=page.locator('#passage-N-VI-19');
+      assert.match(await position.textContent(),/imaginal form divested of quantity/i);
+      const agent=page.locator('#passage-N-VIII-10');
+      const rendered=await agent.textContent();
+      assert.ok(rendered.includes('المشهور'),'Missing corrected Arabic');
+      assert.ok(!rendered.includes('االمشهور'),'Duplicated alif returned');
     });
     await check(browserType.name()+' bilingual control, focus and chapter navigation',async()=>{
       await page.locator('button[data-language="english"]').click();
