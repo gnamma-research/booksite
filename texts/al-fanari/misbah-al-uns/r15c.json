@@ -1,0 +1,262 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R15c",
+  "date": "2026-11-09",
+  "startSection": "4.876",
+  "endSection": "4.900",
+  "sourceRepo": "OpenITI/0850AH",
+  "sourceCommit": "e2715c62fb458ce3ddc43b962cd55677cdd7bc35",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.876",
+      "number": 876,
+      "pageStart": 523,
+      "pageEnd": 524,
+      "arabic": "واما حركة رجوع الخمسة الخنس فنظير رجوع احكام أمهات أسماء الألوهية الأربعة المكنى عنها عند أهل الحجاب بالحياة والعلم والإرادة والقدرة مع خامس الأربعة الذي هو حكم المرتبة الجامعة لها إلى الذات المقدسة بستر، وإليه يرجع الامر كله (123 - هود) فيظهر حكم الحالة الحجابية بعود التجلي نحو العالم الذي يلحقه الفناء إلى حضرة غيب الذات، فان تلك الحقائق الأربعة فروع لمقام الجمع الاحدى المكنى عنه أحيانا بحضرة الذات وتبع لها.",
+      "english": "The retrograde return of the five wandering planets, meanwhile, resembles the return—with concealment—of the rulings of the four motherly Names of Divinity, called by those behind the veil Life, Knowledge, Will and Power, together with the fifth that gathers the four, the ruling of their comprehensive rank, toward the Holy Essence: 'To Him returns the whole affair' [Qurʾān 11:123]. In this way the ruling of concealment appears when self-disclosure directed toward a world destined to perish returns to the Presence of the Unseen of the Essence. Those four realities branch from the station of unitary gathering, sometimes called the Presence of the Essence, and follow it.",
+      "notes": "Source analogises planetary return with concealment and return of name-rulings; do not confuse the four motherly Names with an intrinsically changing God.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.877",
+      "number": 877,
+      "pageStart": 524,
+      "pageEnd": 524,
+      "arabic": "واعلم انا انما لم نتعرض لمظهرية الأقسام الأخر للحركات لظهور ذلك، مما مر ان الحركة المستمرة أو الدائم الحكم انما هي صورة التوجه الإلهي الأسمائي لإيجاد ما به ظهور كمالات الأسماء والحقائق، وتفاوتها مما سيلوح به انه مبنى على تفاوت قوة الأسماء التي مظاهرها تلك الكواكب وحيطتها وكثرة عدد رقائقها وتناسبها، معتبرا فيها تفاوت المراتب التي صورها ومظاهرها أفلاكها، فيفهم ان العرش والطبيعة الكلية لما كانتا مظهرين للإلهية الدائم الحكم، داما بدوامها وقويا بقوتها، بخلاف العنصريات من الفلكيات والمولدات.",
+      "english": "Know that we did not discuss the other forms of motion as loci of manifestation because their meaning follows clearly from what has preceded. Persistent motion, or motion whose ruling endures, is the image of the orientation of the divine Names toward bringing forth what makes manifest the perfections of the Names and realities. Their differences, as will become clearer, depend on the relative strength of the Names manifested by the planets, their scope, the number and correspondence of their subtle connections, and the differing degrees manifested by their spheres. Hence the Throne and Universal Nature, as loci of Divinity whose ruling endures, persist through its enduring rule and are powerful through its power, unlike elemental celestial bodies and generated things.",
+      "notes": "Historical ontology of endurance as mediated by universal Name and degree, not empirical orbital mechanics.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.878",
+      "number": 878,
+      "pageStart": 524,
+      "pageEnd": 524,
+      "arabic": "وقد قلنا: لما كان العرش محل الاستواء الرحماني ومستقر احتواء الوجود العام والمظهر الأول لتمامية الظهور، كانت صورته مثال مطلق حقيقة الألوهة، فاما قواها الأربعة الطبيعية الكلية التي لبروجه الاثني عشر وهى الكيفيات المنسوبة إليها، وأرواح بروجه من الملائكة السالفة، مثل ونظائر لحقائق الألوهة وهى الأسماء الأربعة التي بها يتمكن الملائكة الحملة من الحمل. بل تلك الأسماء الأربعة التي هي الحياة والعلم والقدرة والإرادة حملة للحملة الأربعة التي هي إسرافيل وميكائيل وجبرائيل وعزرائيل أو رضوان.",
+      "english": "We have said: Since the Throne is the locus of the Merciful's istiwāʾ, the abiding place of the comprehensive scope of universal Being, and the first manifestation of the completed degrees of outward appearance, its form is an image of the unrestricted reality of Divinity. Its four universal natural powers, associated with its twelve zodiacal signs and the qualities related to them, and the angelic spirits of those signs, are images and counterparts of the four realities of Divinity: the Names by which the angelic bearers are enabled to bear the Throne. Indeed the four Names—Life, Knowledge, Power, Will—are themselves the bearers of the four bearers, namely Isrāfīl, Mīkāʾīl, Jibrīl, and ʿAzrāʾīl or Riḍwān.",
+      "notes": "Preserve variant fourth bearer ʿAzrāʾīl/Riḍwān and nested level 'Names bear the bearers'.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.879",
+      "number": 879,
+      "pageStart": 524,
+      "pageEnd": 524,
+      "arabic": "ثم نقول: واما رقيقة امداد الحق للعالم التي من حيثها وبها يصل من الحق سبحانه إلى الصورة العرشية المحيطة وما تحويه تلك الصورة، ما به بقاء الجميع وبقاء احكام قوى الصورة العرشية وقوى محوياتها، فمثال لنسبة التعلق الذاتي للحق بمرتبة الألوهة الذي قد يعبر عن ذلك التعلق بالتوجه الذاتي الامرى الاحدى، وذلك التعلق الذاتي لما عم حكمه حقائق الأسماء الأول الأربعة المذكورة، ظهر للحركة القدسية بعدد حقائق تلك الأسماء أربع مراتب، لكل حقيقة مرتبة - وان لم يخل كل عن كل -.",
+      "english": "We further say: The subtle connection through which the Real sustains the world, and through which all that maintains the surrounding form of the Throne, everything it contains, and the rulings of its powers reaches that form from the Exalted Real, is an image of the relation of the Real's essential attachment to the degree of Divinity. This attachment may be described as the unitary, essential, commanding orientation. Since its ruling comprehends the realities of the four first Names just mentioned, sacred motion appears in four degrees, one for each Name, although each remains inseparable from the others.",
+      "notes": "Fourfold unity-in-differentiation of divine-name motions.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.880",
+      "number": 880,
+      "pageStart": 524,
+      "pageEnd": 525,
+      "arabic": "أو لها الحركة الغيبية التي بها حصل السريان الوجودي، أي التجلي الساري الذي هو النفس الرحماني والوجود العام، وذلك بالباعث الحبى من الحضرة الناطقة ب‍ (أحببت ان اعرف) وهو مقام الجمع الاحدى المسمى بالتعين الأول.",
+      "english": "The first is unseen motion, by which existential pervasion takes place: the pervading self-disclosure called the Breath of the Merciful and universal Being. Its impulse is love, proceeding from the Presence that declares 'I loved to be known', the station of unitary gathering known as the First Determination.",
+      "notes": "The 'hidden treasure' report is cited by fragment but not authenticated; the sequence is metaphysical rather than temporal bodily motion.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.881",
+      "number": 881,
+      "pageStart": 525,
+      "pageEnd": 525,
+      "arabic": "وثانيها حركة الأسماء والحقائق التي بها حصل القلم وسائر الأرواح العالية، وذلك من الحضرة العلمية الألوهية الفياضية.",
+      "english": "The second is motion of the Names and realities, by which the Pen and the other higher spirits come into being, from the divine Presence of Knowledge and Effusion.",
+      "notes": "Second of four stages.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.882",
+      "number": 882,
+      "pageStart": 525,
+      "pageEnd": 525,
+      "arabic": "وثالثها حركة الأرواح النورية التي بها حصل عمار السماوات ونفوسها وملائكتها في المرتبة اللوحية النفسية بالصورة المثالية، وكلتا هاتين الحركتين من حضرة الجبروت إلى عالم الملكوت الاعلى والأسفل.",
+      "english": "The third is movement of luminous spirits, through which the celestial inhabitants, their souls and angels take on imaginal form in the psychic degree of the Tablet. These two movements arise from the Presence of Jabarūt toward the higher and lower degrees of Malakūt.",
+      "notes": "The dual «كلتا هاتين» refers to second and third movements. Source's jabarūt/malakūt hierarchy requires comparing terminology earlier.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.883",
+      "number": 883,
+      "pageStart": 525,
+      "pageEnd": 525,
+      "arabic": "ورابعها حركة الملكوت من حيث مظاهرها المثالية التي بها حصل عالم الحس والأجسام البسيطة التي أولها العرش، ففي العرش انتهت رتب الحركة القدسية الأسمائية التي للتوجه الذاتي الامرى الاحدى وتمت، ثم ظهر حكم الحركات الأربع وخفيت أصولها الأسمائية، وانما خفيت لتحقيق سر الفردية التي يتوقف ظهور النتيجة على ذلك السر.",
+      "english": "The fourth is the movement of the spiritual dominion [malakūt] through its imaginal loci, producing the sensory world and simple bodies, beginning with the Throne. At the Throne the ranks of the sacred motions of the Names, pertaining to the unitary essential commanding orientation, reach their end and completeness. The rulings of the four motions then become manifest while their foundations in the Names are concealed, so that the mystery of oddness [fardiyya], upon which the appearance of the result depends, may be realised.",
+      "notes": "Explicit four-stage movement from unseen to sensible, not spatial travel. Fardiyya as generative condition still requires exegesis.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.884",
+      "number": 884,
+      "pageStart": 525,
+      "pageEnd": 526,
+      "arabic": "وعن هذا قلنا: إن لا اثر في ظاهر الا لباطن فيه، ومنه يفهم أصل التربيع المتضمن للتثليث في البروج، حيث اشتملت على أربعة أقسام لأربع طبائع كل منها ثلاثة: منقلب وثابت وذو جسدين - أي جهتين - كالحدود الثلاثة للقياس، واشتمل احكامها على أربعة فصول لكل منها بداية ونهاية ووسط، وحقائقها على أربع كالعناصر الأربعة. ويفهم سر استواء حقائق الألوهة في العرش بتمام ظهور احكامها من العرش، وسر خفاء الحقائق وظهور حكمها في صورة العرش وما حواه، ليتحقق الفردية الحاكية والمماثلة لأصل التوجه إلى ظهور الكمال الأسمائي، وان الأثر لباطن الأسماء العلمية في ظاهر الأعيان الصورية الكونية، وسر الحمل العرشي والحملة، ان الحمل هو التوجه الأسمائي الإلهي الذي تم (1) ظاهره في العرش، والحملة في المطلع (2) نفس الأسماء الأربعة الإلهية وفي الباطن صورها النورانية الملكية وفي الظاهر القوى الطبيعية الكلية وليعمم هذا الاعتبار فيما يحويه العرش. الفصل الرابع من فصول الباب خاتمة التتمة السابقة",
+      "english": "This is why we said that no inward reality acts upon an outward form except the inward reality within it. From this one understands the principle of fourfoldness which contains threefoldness in the zodiac: the signs comprise four divisions corresponding to four natures, each containing three kinds—cardinal, fixed, and double-bodied, that is, having two aspects—like the three terms of a syllogism. Their rulings comprise four seasons, each with beginning, middle, and end, and their realities correspond to the four elements. One also understands the mystery of the realities of Divinity's istiwāʾ in the Throne when their rulings become fully manifested from it, and the concealment of the realities themselves while their ruling appears in the Throne and everything it contains. This realises the representative, corresponding oddness rooted in the original orientation toward manifesting Name-related perfection: effects belong to the inward Names of Knowledge through the outward forms of cosmic entities. The mystery of the Throne's bearing and its bearers is that bearing is the divine Name-related orientation perfected outwardly in the Throne; the bearers, at the first point of emergence, are the four divine Names themselves, inwardly their luminous angelic forms, and outwardly the universal powers of Nature. Extend this consideration to all the Throne contains. **Fourth Chapter of this section: Conclusion to the preceding supplement.**",
+      "notes": "Important navigable heading at end of source unit. The three zodiac signs per elemental triplicity are cardinal/fixed/mutable (double-bodied). The syllogism analogy is three terms, not three logical premisses.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.885",
+      "number": 885,
+      "pageStart": 526,
+      "pageEnd": 526,
+      "arabic": "وهى نكتة شريفة في أمر الدور، ولبيانه مقدمات ذكرها الشيخ قدس سره في تفسير قوله تعالى: مالك يوم الدين:",
+      "english": "This is a noble insight into the matter of cyclic return [al-dawr]. Its exposition requires premises cited by the Shaykh in commenting on God's words 'Master of the Day of Judgment' [Qurʾān 1:4].",
+      "notes": "Heading links cyclic cosmology to the Fātiḥa and the Name al-Dahr.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.886",
+      "number": 886,
+      "pageStart": 526,
+      "pageEnd": 526,
+      "arabic": "الأولى أصل الزمان الاسم الدهر وهو نسبة معقولة كسائر النسب الأسمائية وهو من أمهات الأسماء وروحها - أي كلياتها -",
+      "english": "First: The origin of time [zamān] is the Name al-Dahr, the Aeon, an intelligible relation like the other relations of the Names; it belongs to the motherly Names and is their spirit, that is, their universal root.",
+      "notes": "Treat Dahr as a Name/ascription in the source, not a separate deity or independently subsisting time.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.887",
+      "number": 887,
+      "pageStart": 526,
+      "pageEnd": 526,
+      "arabic": "الثانية ان احكامه (1) في كل عالم بحسب التقديرات المفروضة المتعينة بأحوال الأعيان الممكنة في ذلك العالم وباحكامها وبحسب آثار الأسماء ومظاهرها السماوية والكوكبية، فاقتضى ان يكون محل (2) نفوذ احكام كل اسم ومعينات احكامه أعيانا مخصوصة من الممكنات هي محل ربوبيته، فإذا انتهت احكامه المختصة به من الوجه الذي يقتضى الانتهاء كانت السلطنة (3) لاسم آخر في أعيان اخر، ويبقى احكام الاسم الأول اما خفية في حكم التبعية لمن له السلطنة، واما ان يرتفع احكامه بالكلية ويندرج هو في الغيب أو في اسم اخر أتم حيطة منه، هكذا الامر على الدوام في كل عالم ودار وموطن، ولهذا اختلفت الشرائع والالقاءات والتجليات، ونسخ وقهر بعضها بعضا مع صحة الجميع واحدية الأصل.",
+      "english": "Second: The rulings of this Name vary in every world according to the hypothetical measures determined by the states of possible entities in that world, their own rulings, and the effects of the Names and their celestial and planetary manifestations. This requires that each Name's ruling and its particular effects should operate in determinate possible entities that are the objects of its lordship. When the rulings particular to that Name reach their limit in a respect admitting termination, sovereignty passes to another Name among other entities. The first Name's rulings either remain concealed as subordinate to the one now sovereign, or their rulings cease altogether and the Name becomes included within the Unseen or another Name of greater scope. This continues in every world, abode, and station; accordingly religious laws, inspirations, and divine self-disclosures vary, some superseding and overpowering others, although all have their validity and a unitary origin.",
+      "notes": "Strong qualification: varying 'rulings' and regimes of Names do not mean God's Essence undergoes change; 'all valid' refers to laws/revelations within their appointed domain and context, not indiscriminate legal interchangeability.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.888",
+      "number": 888,
+      "pageStart": 526,
+      "pageEnd": 527,
+      "arabic": "الثالثة لا يكون السلطنة في كل مرتبة وموطن وجنس ونوع وعالم الا لاسم واحد في مظهر واحد، والباقي في حكم التبعية، لان السلطان لله وحده، والألوهة واحدة وأمرها واحد، وإلى هذا يستند القائلون بالطوالع فيجعلون الحكم مضافا إلى أول ظاهر من الأفق حين الولادة أو الشروع في أمر ما أو الانتهاء إليه. وقد عرفت ان الحق سبحانه هو الأول والظاهر.",
+      "english": "Third: At every rank, place, genus, species and world, sovereignty belongs to only one Name in one locus of manifestation, while the rest are subordinate. For sovereignty belongs to God alone, Divinity is one, and its command is one. This is the basis invoked by those who speak of astral ascendants: they ascribe rulership to the first body appearing above the horizon at birth or at the commencement or completion of an affair. But you know that the Exalted Real is the First and the Manifest.",
+      "notes": "The source explains the rationale used by astrologers; it does not authenticate astrological predictions.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.889",
+      "number": 889,
+      "pageStart": 527,
+      "pageEnd": 527,
+      "arabic": "الرابعة ما مر ان العرش والكرسي والأفلاك والكواكب مظاهر الحقائق والمراتب والأسماء الحاكمة ومعينات لأحكامها.",
+      "english": "Fourth: As already stated, the Throne, Footstool, celestial spheres, and planets manifest the governing realities, degrees and Names, and prepare the way for their rulings.",
+      "notes": "Causal summary of earlier principles.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.890",
+      "number": 890,
+      "pageStart": 527,
+      "pageEnd": 527,
+      "arabic": "إذا عرفت هذا فنقول: عدد ادوار الكواكب والأفلاك وأنواعها التفصيلية من الكبرى والوسطى والعظمى والصغرى المعلومات المقادير في مداخل النجوم، هي على عدد رقائق الأسماء التي تلك الكواكب والأفلاك صورها (1) ومظاهر مراتبها وعلى عدد احكامها ونسب احكامها وحيطتها وتوافقها وتناسبها فيما بينها وتباينها، فما هو الأتم حيطة يكون أكثر حكما وأطول مدة.",
+      "english": "With this understood, we say: The number and differentiated kinds of revolutions of the planets and spheres—great, intermediate, greatest and lesser cycles whose magnitudes are specified in the tables of stellar ingress—correspond to the number of subtle connections of the Names which those planets and spheres image, their degree-manifestations, the number and relations of their rulings, their compass, concordance, correspondence and mutual difference. The more encompassing something is, the more rulings it bears and the longer its duration.",
+      "notes": "Terms for cycles should be checked against astronomy and astrology manuals; don't infer present-day numerical ephemerides.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.891",
+      "number": 891,
+      "pageStart": 527,
+      "pageEnd": 527,
+      "arabic": "قال في التفسير: فبالادوار يظهر احكامها (2) الكلية المحيطة الشاملة وبالآنات يظهر احكامها الذاتية من حيث دلالتها - أعني الأسماء على المسمى - وعدم مغايرتها له، وما بينهما (3) من الأيام والساعات والشهور والسنين يتعين باعتبار ما بينهما (4) من الاحكام المتداخلة، وهذا كالأمر في الوحدة التي هي نعت الوجود البحت وفي الكثرة التي هي من لوازم الامكان وفيما بينهما من الموجودات الناتجة عنهما، فانظر اندراج جميع الصور الفلكية في العرش (5) الذي روحه القلم وسره الألوهية كما مر وانه كيف يتقدر بحركته السريعة الشاملة الأيام؟ وأرق منه إلى الاسم الدهر من حيث دلالته على الذات وعدم المغايرة، حتى تعلم أن الزمان المتعين بالعرش صورته.",
+      "english": "He said in the commentary: Through revolutions the universal, encompassing rulings of the Names appear, while through instants their essential rulings become manifest insofar as the Names signify the Named and are not different from Him. The intermediate divisions—days, hours, months and years—become determined by the interpenetrating rulings that lie between those two extremes. This resembles the relation between unity, an attribute of pure Being, and multiplicity, a concomitant of possibility, with the existents that result from the two lying between. Consider, then, how all the celestial images are included in the Throne, whose spirit is the Pen and whose secret is Divinity, and how its rapid, comprehensive movement measures the days. Ascend in thought from it to the Name al-Dahr insofar as it signifies the Essence without difference, and you will understand how the time determined through the Throne is its image.",
+      "notes": "Dahr is viewed both as undivided Name and cosmic temporal measure; source itself distinguishes perspectives.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.892",
+      "number": 892,
+      "pageStart": 527,
+      "pageEnd": 528,
+      "arabic": "لذا روى قوله عليه وآله السلام: يا دهر يا ديهور يا ديهار، وقال (ص): لا تسبوا الدهر فان الدهر هو الله، فاعتبر الان الذي هو الزمن (6) الغير المنقسم فإنه الموجود الحقيقي لاعتبار الصفة عين الموصوف، وما سواه معدوم فرض - ماضيا أو مستقبلا - والموجود الان، وللدور حكم الكثرة والامكان، ولمعقولية الحركة التعلق الذي بين الوجود الحق وبين الأعيان، فبين الان (1) والدوران وبين الوجود (2) والامكان تظهر الألوان والأكوان ويتفصل احكام الدهر والزمان، فمستند الأدوار: اكتب علمي في خلقي إلى يوم القيامة، ومستند الان: كان الله ولا شئ معه، و: هو معكم أينما كنتم (4 - الحديد) هذا كلامه.",
+      "english": "Hence he transmitted the words of the Prophet, peace be upon him and his family, 'O Dahr, O Dayhūr, O Dayhār,' and his saying, 'Do not curse Time, for Time is God.' Consider the instant [al-ān], the time that is not divided: this is what truly exists under the consideration that the attribute is the very one described. Everything other than the present instant, past or future, is non-existent as an imagined determination. The revolution [dawr], by contrast, carries the ruling of multiplicity and possibility, while motion as intelligible consideration is the relation of attachment between true Being and fixed entities. Between instant and revolution, as between Being and possibility, colours and cosmic realities appear and the rulings of Aeon and time are differentiated. Cycles rest on the command 'Write My Knowledge concerning My creation until Resurrection'; the instant rests on 'God was and nothing was with Him,' and 'He is with you wherever you are' [Qurʾān 57:4]. Thus far his words.",
+      "notes": "Critical theological warning: hadith 'God is Time' does not straightforwardly equate Creator with temporal duration; distinguish al-Dahr as Name and the created metric of motion. The unusual triple invocation requires authenticity check.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.893",
+      "number": 893,
+      "pageStart": 528,
+      "pageEnd": 529,
+      "arabic": "ثم نقول: إذا عرفت ما ذكر تعرف سر العدد اليومي (3) انه بتبعية عدد رقائق الاسم المستوى على العرش، كالرحمن والمحيط والمدبر، وسر الأسبوع: انه بتبعية الهيئة الجمعية الحاصلة من اندراج رقائق الأسماء المستوية على أفلاك الكواكب المتحيرة في رقائق الاسم المستوى على العرش، وسر الشهر: انه بتبعية الهيئة الجمعية الأسمائية الحاصلة من اندراج رقيقة الدور الواحد القمري في الهيئة السابقة، فان روحانية القمر كما مر محل اجتماع اثار تلك الأسماء ثم محل افتراقها إلى عالم العناصر والمولدات، وسر العام المضاف إلى ذلك كله: انه بتبعية الهيئة الاجتماعية الاسمية الحاصلة من اندراج رقيقة الدور الواحد الشمسي أو رقائق الأدوار القمرية بعدد البروج الاثني عشر في الهيئة التي قبيل هذا، وعلى هذا قياس أعوام سائر الكواكب والأدوار الأربعة المشار إليها، ويعرف أيضا سر إحاطة العرش بصورته وحركته وروحه (4) وسره (5) واندراج (6) سائر الصور في صورته والحركات في حركته والاحكام في احكام صورته، وان الاسم الدهر روح الزمان وان الدور العرشي مظهر الزمان، لذلك (7) اشتمل كأسمائه الأصلية (8) والملائكة الحملة (9) وحقائق طبيعته (1) الكلية على أربع مراتب كلية: أيام وساعات ودرج ودقائق، اما اليوم فهو مدة واحدة من حيث إنها مستكملة للجمع بين مظهر الظهور والبطون.",
+      "english": "We further say: From these principles the secret of the number belonging to the day becomes clear: it follows the number of subtle relations of the Name established over the Throne, such as al-Raḥmān, al-Muḥīṭ and al-Mudabbir. The secret of the week follows the collective configuration arising from the inclusion of the subtle relations of the Names governing the wandering planetary spheres within those of the Name established over the Throne. The secret of the month follows the collective configuration of the Names produced by the inclusion of one lunar revolution within the preceding configuration: as explained, the Moon's spiritual principle is the meeting-place of the effects of these Names and then their point of distribution to the elements and generated things. The secret of the year follows the collective configuration of the Names arising from the inclusion of one solar revolution—or twelve lunar revolutions corresponding to the zodiacal signs—within the preceding configuration. The same applies to the years of other planets and the four kinds of cycle already indicated. One thereby knows the mystery of how the Throne encompasses by its form, motion, spirit and secret, and how all other forms enter into its form, motions into its movement, and rulings into the rulings of its form. The Name al-Dahr is the spirit of time, and the Throne's revolution is time's locus of manifestation. Thus, like its original Names, angelic bearers and fourfold realities of Universal Nature, time has four universal degrees: days, hours, degrees, and minutes. A day is one duration insofar as it completes the gathering of the manifest and hidden aspects.",
+      "notes": "Complex analogical progression day/week/month/year and day/hour/degree/minute. The Arabic notes (3)–(9) are not reproduced without collation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.894",
+      "number": 894,
+      "pageStart": 529,
+      "pageEnd": 529,
+      "arabic": "وقال في التفسير: الليل مظهر الغيب المطلق الممحوة آيته والنهار مظهر الشهادة المبصرة علاماته، وانما نسب إلى الحق اليوم الشامل، لان الامرين له سبحانه، وفي العالم ما هو يقتضى قبول الحكمين.",
+      "english": "He said in the commentary: Night manifests the Absolute Unseen, whose sign has been effaced, whereas day manifests the witnessed world, whose marks are visible. The comprehensive day is ascribed to the Real because both belong to Him; within the world, there is that which is receptive to both rulings.",
+      "notes": "Night/day present unseen/witnessed as exegetical symbolism.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.895",
+      "number": 895,
+      "pageStart": 529,
+      "pageEnd": 529,
+      "arabic": "وما عدا اليوم ان اعتبر متزائدا فهو تكرار في الأسبوع سبعة أيام، وعلى هذا وان اعتبر متنازلا فتجزئة وتفصيل حتى ينتهى القسمة إلى الان الذي لا ينقسم، مع أنه أصل كل ما انقسم من الصور الزمانية، إذ بالان يتقدر الدقائق وبالدقائق يتقدر الدرج وبالدرج يتقدر الساعات وبالساعات يتقدر اليوم وتم الامر - أي أمر الوجود - تقديرا بهذا الحكم الرباعي وبالسر الجامع (2) بينها الذي هو الدهر، وكلما تمت هذه المراتب الأربعة الزمانية عاد التكرار المثلى - لا العيني - إذ المعدوم لا يعاد بعينه، والا لكان للزمان زمان فتداخلا، وكذا الحركتان والمسافتان أو انقطع الحركة العرشية، والكل محال.",
+      "english": "All measures other than the day, considered as increasing, are repetitions—the week comprising seven days. Considered as decreasing, they are division and differentiation down to the indivisible instant, the origin of every temporal image subject to division. The instant measures minutes; minutes measure degrees; degrees measure hours; hours measure the day. With this fourfold ruling and the secret gathering them, namely the Aeon, the determination of the command—that is, of Being—is complete. Whenever the four temporal degrees complete their cycle, an analogous repetition takes place, not the return of numerically the same instant: what has ceased does not return as the very same entity, or else time would need another time and the two would interpenetrate; the same problem would affect two movements or distances, or the Throne's revolution would be interrupted. All these conclusions are impossible on the argument's principles.",
+      "notes": "Distinguish sameness in kind from numerical identity of temporal phases; the argument is historical metaphysics of time.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.896",
+      "number": 896,
+      "pageStart": 529,
+      "pageEnd": 529,
+      "arabic": "قال في الباب التاسع والخمسين من الفتوحات: اعلم أن نسبة الأزل إلى الله تعالى نسبة الزمان إلينا، ونسبة الأزل نعت سلبى لا عين له، فكذا الزمان نسبة متوهم الوجود، إذ لو كان موجودا وكل موجود صح السؤال عنه بمتى فيكون للزمان زمان، ولذا اطلقه الحق تعالى على نفسه بقوله: وكان الله بكل شئ عليما (40 - الأحزاب) و: لله الامر من قبل ومن بعد (5 - الروم) فلو كان وجوديا لكان قيدا له، فما صح اطلاقه عن التقييد به.",
+      "english": "The Great Shaykh said in chapter 59 of the *Futūḥāt*: 'The relation of pre-eternity [azal] to God is like that of time to us. Pre-eternity is a negative attribute without an independent entity; similarly time is a relation whose existence is imagined. For if it were an existent, and every existent permitted the question \"when?\", time itself would have a time. For this reason the Real uses temporal expressions about Himself, saying \"God has ever been knowing of everything\" [Qurʾān 33:40] and \"To God belongs the command before and after\" [Qurʾān 30:4]. If time were a positive existent, it would impose restriction upon Him; therefore the language could not properly be used without subjecting Him to restriction.'",
+      "notes": "Compare this quotation directly with *Futūḥāt*, ch. 59; the argument is anti-reification of time, not rejection of all temporal measurement.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.897",
+      "number": 897,
+      "pageStart": 529,
+      "pageEnd": 530,
+      "arabic": "ثم إن الناس اختلفوا في معقوليته (3)، فقال بعض الحكماء: مدة متوهمة يقطعها حركات الأفلاك. وقال المتكلمون: هو مقارنة حادث بحادث يسأل عنه بمتى، والعرب يريد به الليل والنهار وهو مطلوبنا هيهنا، وقد أظهره وجود الحركة الكبرى، وما في الوجود العيني الا وجود المتحرك، فالزمان أمر متوهم لا حقيقة له، وبهذا اليوم (1) يقدر سائر الأيام (2) من الف سنة وخمسين الف سنة وفي أيام الدجال يوم كسنة ويوم كشهر ويوم كأسبوع، فقد يكون هذا لشدة الهول لكن رفع الاشكال تمام الحديث في قول عائشة: فكيف يفعل في الصلاة في ذلك اليوم؟ فقال صلى الله عليه وآله: يقدر لها، فلو لا ان الامر في حركات الأفلاك (3) على ما هو عليه باق ما صح ان يقدر بالساعات المعلومة (4) بآلاتها، بل يكون في أول خروج الدجال يكثر الغيوم وتتوالى بحيث يستوى في المرائي وجود الليل والنهار، وهو من الحوادث الغريبة في آخر الزمان، فالأيام كثيرة، أصغرها الزمن الفرد (5) وعليه يخرج كل يوم هو في شأن (29 - الرحمن) لان الشأن يحدث فيه ولا حد لأكبرها، وبينهما أيام متوسطة أولها اليوم المعلوم باقسامه والباقي يتقدر به، هذا كلامه.",
+      "english": "People have differed in conceiving time. Some philosophers say it is an imagined duration traversed by the motions of the spheres. The theologians say it is the conjunction of one event with another, about which one asks 'when?' The Arabs mean night and day, and that is our concern here. The great celestial movement brings these into appearance; what exists externally is only the moving thing, whereas time is an imagined relation without its own independent reality. Through the ordinary day other days are measured, such as those reckoned as a thousand years and fifty thousand years, and the days of the Antichrist [al-Dajjāl], one of which is like a year, another like a month, and another like a week. This may be due to the severity of terror, yet the complete report resolves the question through ʿĀʾisha's words: 'How shall prayer be performed on that day?' The Prophet replied, 'Calculate its measure.' If celestial motions did not persist according to their usual order, it would not be possible to determine the hours through the familiar instruments. Rather, at the first appearance of the Dajjāl clouds would multiply and follow one another until night and day appeared indistinguishable. Such is one of the strange events at the end of time. There are many sorts of days; their smallest is the individual instant, to which applies 'Every day He is upon an affair' [Qurʾān 55:29], for the affair occurs in that instant, while no limit is imposed on the largest. Between them are intermediate days, the first of which is the familiar day with its divisions, and the rest are measured by reference to it. Thus far his words.",
+      "notes": "Source interprets Dajjāl-day report through persistent measured hours/cloud-cover; verify report and precise speaker/quotation boundaries. This is not a present-day meteorological forecast.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.898",
+      "number": 898,
+      "pageStart": 530,
+      "pageEnd": 530,
+      "arabic": "ثم نقول: ومن هذا الذوق وهو ان عدد الأدوار بعدد رقائق الأسماء، يعرف ان اختلاف الأيام وتفاوتها كاليوم الذي نعده وهو الدورة الواحدة العرشية والأيام الإلهية التي هي كالف سنة مما نعده كما قال: وان يوما عند ربك كالف سنة مما تعدون (47 - الحج) ومن خمسين الف سنة وهى أيام ذي المعارج المذكورة في سورة المعارج (6)، انما هو من اختلاف حيطة حكم الاسم أو المرتبة التي ينضاف إليه اليوم أو الحركة المعينة لذلك اليوم، فكل اسم من الأسماء الإلهية يستند إلى حكمه أو حكم مرتبته كوكب وفلك له دور مخصوص، فمدة الدورة الواحدة يوم واحد لذلك الاسم مثلا ثمانية وعشرون يوما مما نعده يوم واحد للاسم الذي يستند إليه روحانية القمر وعلى هذا القياس.",
+      "english": "From this taste or insight—that the number of revolutions corresponds to the number of subtle Name-relations—we recognise that the difference in the magnitude of days, such as the day we count by a single Throne revolution, the divine days equal to a thousand years by our reckoning ('A day with your Lord is like a thousand years that you count' [Qurʾān 22:47]), and days equal to fifty thousand years (the days of the Lord of the Ascending Ways mentioned in Sūrat al-Maʿārij), derives from the differing scope of the ruling of the Name or degree to which the day or its defining motion is attached. Each divine Name governs some planet and sphere with a particular revolution. Thus a single revolution constitutes one day for the Name concerned; for example, twenty-eight of our days constitute one day for the Name governing the Moon's spiritual principle, and similarly for other spheres.",
+      "notes": "Not a scientific conversion between physical clocks: historical cosmology distinguishes days by named ruling and its degree.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.899",
+      "number": 899,
+      "pageStart": 530,
+      "pageEnd": 531,
+      "arabic": "ولايضاح هذا الموضع بتمامه نقلنا ما قال الشيخ الكبير رضي الله عنه في الفتوحات في الباب السابع في بدء الجسوم الانسانية وهو قوله: اعلم أيدك الله سبحانه انه لما مضى من عمر العالم الطبيعي المقيد بالزمان المحصور بالمكان إحدى وسبعون الف سنة من السنين المعروفة في الدنيا، وهذه المدة أحد عشر يوما من أيام غير هذا الاسم ومن أيام ذي المعارج يوما وخمسا يوم، وفي هذه الأيام يقع التفاصيل بخمسين الف سنة وبألف سنة، فأصغر الأيام هي التي يعدها حركة الفلك المحيط، وذلك لحكمه على ما في جوفه من الأفلاك، إذ حركتها (1) قسرية ولكل فلك حركة طبيعية مع تلك القسرية (2) في وقت واحد، ولكل حركة طبيعية في كل فلك يوم مخصوص نعد مقداره بأيام الفلك المحيط، فأصغر أيام الكواكب هو ثمانية وعشرون يوما مما تعدون مقدار قطع حركة القمر، وكذا لكل كوكب يوم مقدر يتفاوت على قدر سرعة حركاتها (3) أو أصغر أفلاكها، وانتهى (4) أمر الايجاد (5) إلى خلق المولدات من الجماد والنبات والحيوان بانتهاء إحدى وسبعين الف سنة مما نعد، لم يجعل (6) سبحانه لشئ مما خلقه من أول موجود إلى آخر مولود - وهو الحيوان - بين يديه الا للانسان، وهو هذه النشأة البدنية، بل خلق كل ما سواه اما عن أمر الهى وهو أمر كن، واما عن يد واحدة، وهو ما روى في الخبر: ان الله سبحانه خلق جنة عدن بيده وكتب التوراة بيده وغرس شجرة طوبى بيده وخلق آدم بيديه.",
+      "english": "To clarify this fully we quote the Great Shaykh's words in chapter seven of the *Futūḥāt*, on the beginning of human bodies: 'Know—may God support you—that when seventy-one thousand years, as reckoned in this world, had elapsed in the life of the natural world, bounded by time and confined by space, this duration amounted to eleven days of another Name's days, and to one and a fifth days of the days of the Lord of the Ascending Ways. Within these days differences are reckoned in units of fifty thousand or one thousand years. The smallest days are those measured by the movement of the encompassing sphere, because it governs the spheres within it, whose movements are compelled, though each sphere has its own natural motion concurrent with the compelled motion. Each natural motion in each sphere possesses its own particular day, measured by the days of the encompassing sphere. The shortest planetary day is twenty-eight of our days, the time of the Moon's revolution. Every planet likewise has a determinate day differing with the speed of its motion or the size of its sphere. When seventy-one thousand of our years had ended, the bringing into existence of mineral, plant, and animal generated things was complete. Of everything God had created, from the first existent to the last generated creature—the animal—He had made nothing directly with both His hands except the human being, this bodily constitution. Everything else He created either through the divine command 'Be!' or through one hand, as reported: \"God created the Garden of Eden with His hand, wrote the Torah with His hand, planted the Tree of Ṭūbā with His hand, and created Adam with both His hands.\" '",
+      "notes": "Quantities transcribed faithfully as 71,000 years, eleven days, 1⅕ of 50,000-year day; these ratios may not be arithmetically self-evident because the 'other Name' is unnamed. Check Futūḥāt ch. 7 and hadith sources. 'Two hands' is source's metaphysical distinction, not an anatomical account.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.900",
+      "number": 900,
+      "pageStart": 531,
+      "pageEnd": 532,
+      "arabic": "ولما انتهى من حركات الفلك الأول ومدته أربع وخمسون الف سنة مما تعدون، خلق الله تعالى الدار الدنيا وجعل لها أمدا معلوما ينتهى إليه وينقضى صورتها إلى أن تبدل الأرض غير الأرض والسماوات.",
+      "english": "When fifty-four thousand of our years had elapsed in the movements of the first celestial sphere, God created the present worldly abode and appointed for it a fixed term at which its form will pass away, until earth is replaced by another earth, and the heavens likewise.",
+      "notes": "Continuation of the Futūḥāt quotation; why 54,000 and 71,000 differ requires context. Qurʾān 14:48 alluded to.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    }
+  ]
+}
