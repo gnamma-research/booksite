@@ -1,5 +1,13 @@
 # Farghānī · Muntahā al-madārik — cumulative handoff archive
 
+## Latest witnessed-print collation — five loci, three differences (9 November 2026)
+
+- [Combined photographed 1876-vs-Beirut apparatus](I1876_COLLATION_CUMULATIVE_002.md) and [machine-readable source register](I1876_COLLATION_CUMULATIVE_002.json).
+- Newly corrected Beirut B2007 p34: I1876 printed p18, PDF scan22 **`الحضرة العمائية`**, not B2007 **`الحضرة العملية`**; working translation “Cloud-like Presence.”
+- Earlier two print corrections at Beirut p19 and two print agreements remain in [stage-one collation](I1876_COLLATION_001.md).
+- [Full prior cumulative working intro + apparatus](FULL_CUMULATIVE_CRITICAL_005.md). The **128-page working English** and **198 selected B2007 Arabic-English checks** are preserved. **No medieval manuscript text has been collated, so edition is not definitive.**
+
+
 ## Latest source-critical stage — photographed 1876 printed witness (9 November 2026)
 
 - [Complete cumulative edition archive through print-collation Stage V](FULL_CUMULATIVE_CRITICAL_005.md), preserving the original translated introduction and all prior critical passes.
