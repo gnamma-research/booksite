@@ -195,7 +195,7 @@ function readHash(){
  if(subject==="philosophy"||subject==="kalam")subject="intellectual";
  if(NAMES[subject])state.subject=subject;
  const view=p.get("mode")||legacy||"geography";
- state.view=({sources:"timeline",explorer:"network",relations:"network",audit:"catalogue",network:"network",
+ state.view=({timeline:"timeline",sources:"timeline",explorer:"network",relations:"network",audit:"catalogue",network:"network",
   principal:"principal",summary:"principal",map:"geography",chronology:"timeline",geography:"geography",regions:"regions",catalogue:"catalogue"})[view]||"geography";
  const selected=p.get("work_id")||p.get("gnx_work")||p.get("work")||"";
  state.selected=selected&&data.byId.has(selected)?selected:data.byId.has("c:"+selected)?"c:"+selected:"";
