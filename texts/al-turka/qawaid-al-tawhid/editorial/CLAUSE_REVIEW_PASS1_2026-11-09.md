@@ -1,6 +1,6 @@
 # Qawāʿid / Tamhīd — clause-level comparative review, pass 1
 
-**9 November 2026.** This work inventories 5520 Arabic punctuation-clause candidates and 2853 English sentence candidates across **all 171 bilingual units**. Only **448 Arabic clauses in 16 units** have been individually compared with their English in this pass. The remaining **5072 are not certified**.
+**9 November 2026.** This work inventories 5520 Arabic punctuation-clause candidates and 2853 English sentence candidates across **all 171 bilingual units**. Only **584 Arabic clauses in 19 units** have been individually compared with their English in this pass. The remaining **4936 are not certified**.
 
 All clauses, offsets, corresponding English for reviewed passages, and source fingerprints are in the [complete clause ledger](../qa/clause-ledger.json). Automatic enumeration is **not** evidence of an accurate translation. The original Arabic and the reported QT-059 lacuna remain unchanged.
 
@@ -165,6 +165,40 @@ All clauses, offsets, corresponding English for reviewed passages, and source fi
 | 44–57 | 24–31 | **checked** | و إذا عرفت هذا و قد ظهر لك مما سبق من الأبحاث ، ان تلك الأحوال و ما يتبعها من الأحكام المخصصة للوجود سواء كانت من الأحو… — Priority in reality versus final manifestation kept distinct. |
 | 58–63 | 32–35 | **checked-with-note** | قوله : و لا اعتبار هاهنا في الموجوديَّة بالفرض ، دفع لما يمكن ان يورد هاهنا ، من ان الشبهة باقية بحالها ، فان المعنى ال… — بالفرض versus بالعرض remains an alternative at the final lemma. |
 | 64–67 | 36–38 | **checked** | و بيان دفعه ، انَّ ذلك المعنى الاعتباري منه خارج عن المبحث ، لأن الكلام هاهنا أي في هذه الرسالة انّما هو في الوجود المو… — Excluded merely conceptual sense and self-subsisting Necessary retained. |
+
+### SH-025 — A, printed pp. 112–114
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–9 | 1–6 | **checked-with-note** | أقول : لمّا فرغ عن بيان ما هو المطلب الأول هاهنا على طريقة النظر و الاستدلال و دفع ما يرد عليه من وجوه الاحتمال و إبطال… — Introductory tanbīh and its supposed self-evidence reported; displayed ابيّة remains a lexical source crux. |
+| 10–19 | 7–11 | **checked** | و بيان ذلك ، انهم يعتقدون في الواجب انّه انيِّة خاصة نوعية ، أي كون عينى خاص مخالف بالذات لسائر الأكوان العينيَّة و مع … — Particular Necessary as wholly unlike its effects is set beside its shared general and existential predicates. |
+| 20–29 | 12–15 | **checked** | و لا شكّ ان اعتقاد المبدئيَّة التي هي نفس النِّسبة ، و كذا الأولية للشيء ، تنافي اعتقادهم عدم المناسبة بينها و بين شيء … — The argument is a purported inconsistency between absolute dissimilarity, causality, priority and shared universals. |
+| 30–40 | 16–21 | **checked** | فلئن قيل : الاشتراك اللّازم في هذه الصُّور انّما هو الاشتراك في العوارض الخارجيَّة ، إذا الكون المطلق عندهم عارض للانيّ… — Objection limits commonality to accidental and intellectual predicates; relation versus extramental affinity preserved. |
+| 41–49 | 22–26 | **checked** | قلنا : قد ظهر من المباحث السابقة و ممَّا سيجيء من المنبهات الذوقيَّة و البراهين العقليَّة ، ان الوجود لا يمكن ان يكون ذ… — Reply rejects genuinely distinct existential instances but retains relational differences. |
+| 50–51 | 27–27 | **checked** | و كان قوله فتأمّل إلى آخره ، إشارة دفع هذين الايرادين . — The closing invitation to reflect is linked to the two foregoing replies. |
+
+### SH-026 — A, printed pp. 114–117
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–11 | 1–12 | **checked-with-note** | أقول : بعد فراغه من إثبات المسألة على ما هو المطلوب و ردّ بعض المذاهب الموهمة للمستبصر الطالب بحيث يتفطّن لبطلانه بانّه… — First argument: intrinsic comprehensiveness and contrast of gathering/distinction; al-Ṣādiq maxim is attributed in source, not independently authenticated. |
+| 12–13 | 13–13 | **checked** | لا يقال : لفظ الأولويَّة هاهنا لا يناسب المقصود ، فان مفهومها انما هو رجحان احد الطرفين على الآخر و المقصود غير هذا . — Objection to rhetorical 'more fitting' is retained. |
+| 14–19 | 14–17 | **checked-with-note** | لانّا نقول : اختيار لفظ الأولويَّة بعد إبطال ما ذهب إليه المخالف من جعل التعيُّنات و الماهيات ، حقايق عينيَّة دون ما تك… — Author's irony/rhetorical purpose preserved despite source's uncertain التغيير reading. |
+| 20–25 | 18–21 | **checked-with-note** | و هذا في النظائر المحسوسة ، كمن زعم في المثال المذكور لقصور قوَّته الباصرة في الإدراك ، انّ الظاهر بنفسه عند الحس في ال… — Light/color analogy preserves partial perceptual report and source's difficult ophthalmic metaphor. |
+| 26–30 | 22–24 | **checked** | شعر إذا لم تكن للمرء عين صحيحة * فلا غرو ان يرتاب ، و الصبح مسفر و لمّا كان ذلك ايضاً مرتبة من مراتب ظهور الحق بحسب مشا… — First Arabic poem and concession to standpoint-dependent manifestation retained. |
+| 31–33 | 25–26 | **unresolved-reading** | شعر كلُّ من في حماك ، يهواك لكن * انا وحدي ، لكلّ مَن في حماكا — Closing elliptical verse has no explicit predicate; English marks [am] rather than falsely completing it. |
+
+### SH-027 — A, printed pp. 118–121
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–8 | 1–4 | **checked** | أقول : متى تقرَّر ان الكون الحقيقي العيني القائم بنفسه القيُّوم لغيره ، هو الكون المطلق ، و لا شكَّ انّه هو الواحد الحق… — Genuine unity and the notion of the first designation are attributed to Ibn Turka. |
+| 9–15 | 5–7 | **checked** | و ذلك لأن التكثُّر و الاختلاف انّما يعقل فيما يصحُّ ان يشعر فيه الاثنينيَّة و التعدُّد ، و حيث يختص بعضه به حكم دون الآ… — Multiplicity belongs to levels and names, not to unrestricted identity itself. |
+| 16–26 | 8–16 | **checked** | و امّا حضرة الإطلاق الذاتي المعبَّر عنه عند القوم بغيب الهويَّة و اللاتعيُّن فلا مجال للاعتبارات فيه أصلًا ، حتى عن هذا… — No real name or definition applies in the unqualified register; the terms are explained through conceptual consideration. |
+| 27–38 | 17–23 | **checked-with-note** | الا ان هذا الاعتبار لمّا اعتبر حصل للذات باعتباره اسم ، لكنَّه ليس من الأسماء الحقيقيَّة ، إذ ليس حصوله باعتبار معنى مع… — Name arising through negation is not a real name; descriptive definition via properties is excluded. |
+| 39–43 | 24–32 | **checked** | و اما قوله : « و سلب ما عدا الإطلاق عنه » فهو جواب دخل مقدَّر ، و تقرير ذلك ان القاعدة القائلة بان اعتبار المعاني و الأ… — The apparent self-reference reductio and response by negative/non-real determination are distinguished. |
+| 44–47 | 33–41 | **checked** | فان قلت : التعيُّنات مطلقا على ما ذهبتم إليه لا يكون اموراً حقيقيَّة بل اعتباريَّة عدميَّة سواء كان مبدأ للاحكام الوجود… — Difference between non-real and real name-producing considerations retained without making determinations new substances. |
+| 48–52 | 42–47 | **checked-with-note** | لا يقال : فلا يبقى مع هذا الاعتبار حينئذ على إطلاقه الصرف ، فانَّ للعقل ان يجرّد عنه مع عروضه له ، إذ في وسع العقل ان ي… — Intellect's ability to abstract its own act and the gathering-of-opposites analogy remain, with unresolved تضايق/تعانق variants. |
 
 ## Editorial status and next passages
 
