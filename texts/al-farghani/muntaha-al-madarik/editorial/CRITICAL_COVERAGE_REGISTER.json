@@ -7,7 +7,7 @@
   "source_checked_modern_digital_page_count": 19,
   "clause_record_count": 198,
   "issues_unresolved_digital": 12,
-  "historical_print_independently_collated_pages": 0,
+  "historical_print_independently_collated_pages": 1,
   "manuscript_variants": 0,
   "authorial_introduction_english_draft_complete": true,
   "authorial_introduction_arabic_critical_edition_complete": false,
@@ -284,14 +284,23 @@
       "english_clause_checked_B2007": false,
       "digital_clause_check_count": 9,
       "digital_crux_count": 1,
-      "actual_historical_print_inspected": false,
+      "actual_historical_print_inspected": true,
       "actual_manuscript_inspected": false,
-      "independently_collated_variants": 0,
+      "independently_collated_variants": 1,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "selected digital source clauses checked; other portions unproofed working draft",
+      "source_fidelity_status": "selected B2007 clause audits + one independently collated I1876 printed difference; rest of source page not fully proofed",
       "source_kind": "B2007-main-site-printed-digital",
       "page_has_selected_clause_checks": true,
-      "selected_arabic_english_checked_B2007": true
+      "selected_arabic_english_checked_B2007": true,
+      "historical_print_loci_verified": 1,
+      "historical_print_reference": {
+        "siglum": "I1876",
+        "printed_page": 18,
+        "pdf_scan_index": 22,
+        "lemma": "الحضرة العمائية",
+        "B2007": "الحضرة العملية",
+        "evidence": "editorial/CRITICAL_PRINT_I1876_COLLATION_005.md"
+      }
     },
     {
       "b2007_page": 35,
@@ -1968,5 +1977,8 @@
   ],
   "source_pages_with_selected_arabic_english_checks": 19,
   "check_methodology": "80 earlier digital clause checks pp18–23; 62 selected source spans pp24–29; 56 selected source spans pp30–36 (198 total). Neither printed page nor manuscript has been exhaustively collated. Thirteen cumulative flagged crux records include a resolved p31 digital-spacing typo; no variant from 1876 or MSS is established.",
-  "issues_flagged_including_resolved_typographic": 13
+  "issues_flagged_including_resolved_typographic": 13,
+  "historical_print_pages_with_selected_loci_checked": 1,
+  "historical_print_variants_verified": 1,
+  "historical_print_collation_scope": "ONE word/phrase on printed I1876 p18, PDF scan22 ↔ B2007 p34; NOT whole-page collation"
 }
