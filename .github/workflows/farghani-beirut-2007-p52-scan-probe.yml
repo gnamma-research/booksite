@@ -24,9 +24,9 @@ jobs:
           from PIL import Image,ImageDraw,ImageFont
           out=pathlib.Path('farghani-p52-audit');out.mkdir(exist_ok=True)
           urls=[
-            'https://archive.org/download/lis_q115/lisanarb.com_q1508.pdf',
-            'https://archive.org/download/lis_q115/lisanarb.com_q1508.pdf?download=1',
-            'https://dn760106.eu.archive.org/0/items/lis_q115/lisanarb.com_q1508.pdf',
+            'https://archive.org/download/lis02029/01.pdf',
+            'https://archive.org/download/lis02029/01.pdf?download=1',
+            'https://ia801504.us.archive.org/0/items/lis02029/01.pdf',
           ]
           errors=[];payload=None;chosen=None
           for url in urls:
@@ -42,7 +42,7 @@ jobs:
           sourcehash=hashlib.sha256(payload).hexdigest()
           doc=fitz.open(stream=payload,filetype='pdf')
           n=len(doc)
-          probe={'citation':'Farghani 2007 Dar al-Kutub al-Ilmiyya, al-Kayyali vol1; Internet Archive lis_q115/lisanarb.com_q1508.pdf','url':chosen,'sha256':sourcehash,'bytes':len(payload),'num_pages':n,'classification':'UNVERIFIED until visual title and pagination examined','potential_pages_rendered':[],'errors':errors}
+          probe={'citation':'Farghani 2007 Dar al-Kutub al-Ilmiyya, al-Kayyali vol1; Internet Archive lis02029/01.pdf','url':chosen,'sha256':sourcehash,'bytes':len(payload),'num_pages':n,'classification':'UNVERIFIED until visual title and pagination examined','potential_pages_rendered':[],'errors':errors}
           targets=list(range(0,min(5,n)))+list(range(46,min(91,n)))
           pages=[]
           for k in targets:
