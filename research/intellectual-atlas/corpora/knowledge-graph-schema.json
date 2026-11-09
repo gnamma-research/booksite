@@ -1,0 +1,485 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gnamma-research.github.io/booksite/research/intellectual-atlas/corpora/knowledge-graph-schema.json",
+  "title": "GNAMMA canonical scholarly graph assertion schema v1",
+  "description": "Target exchange model. Does not claim that historical catalogues are identity-reconciled or passage-collated.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "entities",
+    "assertions",
+    "sources"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "revision": {
+      "type": "string"
+    },
+    "source_licenses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source",
+          "license"
+        ],
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "license": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entity"
+      }
+    },
+    "assertions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/assertion"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    }
+  },
+  "$defs": {
+    "nonempty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "entity": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "names",
+        "provenance_status"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "type": {
+          "enum": [
+            "person",
+            "work",
+            "work_part",
+            "recension",
+            "manuscript_witness",
+            "printed_edition",
+            "digital_version",
+            "translation",
+            "text_passage",
+            "proposition",
+            "argument",
+            "tradition",
+            "school",
+            "institution",
+            "place",
+            "historical_event",
+            "bibliographic_record"
+          ]
+        },
+        "names": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "text"
+            ],
+            "properties": {
+              "text": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "language": {
+                "type": "string"
+              },
+              "script": {
+                "type": "string"
+              },
+              "role": {
+                "enum": [
+                  "preferred",
+                  "alternate",
+                  "original",
+                  "catalogue_transcription",
+                  "uncertain"
+                ]
+              }
+            }
+          }
+        },
+        "external_ids": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "authority",
+              "identifier"
+            ],
+            "properties": {
+              "authority": {
+                "type": "string"
+              },
+              "identifier": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "provenance_status": {
+          "enum": [
+            "audited",
+            "bibliographic",
+            "provisional",
+            "identity_candidate",
+            "contested",
+            "unverified"
+          ]
+        },
+        "dates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/dateEvent"
+          }
+        },
+        "locations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "place_id",
+              "context"
+            ],
+            "properties": {
+              "place_id": {
+                "type": "string"
+              },
+              "context": {
+                "enum": [
+                  "birth",
+                  "death",
+                  "activity",
+                  "composition",
+                  "copying",
+                  "teaching",
+                  "printing",
+                  "repository",
+                  "catalogue_regional_label"
+                ]
+              },
+              "source_assertion_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "notes": {
+          "type": "string"
+        },
+        "rights": {
+          "type": "string"
+        },
+        "catalogue_record_id": {
+          "type": "string"
+        }
+      }
+    },
+    "dateEvent": {
+      "type": "object",
+      "required": [
+        "event_type",
+        "date_status"
+      ],
+      "properties": {
+        "event_type": {
+          "enum": [
+            "birth",
+            "death",
+            "composition",
+            "revision",
+            "copying",
+            "teaching",
+            "publication",
+            "reception",
+            "unknown_event"
+          ]
+        },
+        "date_status": {
+          "enum": [
+            "attested",
+            "approximate",
+            "inferred",
+            "range",
+            "unknown",
+            "disputed"
+          ]
+        },
+        "calendar": {
+          "enum": [
+            "AH",
+            "CE",
+            "BCE",
+            "other"
+          ]
+        },
+        "start": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "end": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "precision": {
+          "enum": [
+            "day",
+            "year",
+            "decade",
+            "century",
+            "range",
+            "unknown"
+          ]
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "kind"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "title": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "kind": {
+          "enum": [
+            "primary_text",
+            "manuscript",
+            "catalogue",
+            "edition",
+            "scholarship",
+            "repository_metadata",
+            "editorial_note"
+          ]
+        },
+        "url": {
+          "type": "string"
+        },
+        "license": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "locator_system": {
+          "type": "string"
+        },
+        "rights_status": {
+          "type": "string"
+        },
+        "checked_at": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "citation": {
+      "type": "object",
+      "required": [
+        "source_id",
+        "locator",
+        "evidence_kind",
+        "verification_status"
+      ],
+      "properties": {
+        "source_id": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "locator": {
+          "type": "string"
+        },
+        "evidence_kind": {
+          "enum": [
+            "explicit_text",
+            "colophon",
+            "bibliography",
+            "catalogue_statement",
+            "editorial_introduction",
+            "scholarly_analysis",
+            "machine_suggestion"
+          ]
+        },
+        "verification_status": {
+          "enum": [
+            "checked_primary",
+            "checked_secondary",
+            "metadata_only",
+            "proposed",
+            "disputed",
+            "withdrawn"
+          ]
+        },
+        "quoted_excerpt": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "assertion": {
+      "type": "object",
+      "required": [
+        "id",
+        "subject_id",
+        "predicate",
+        "object_id",
+        "evidence",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "subject_id": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "predicate": {
+          "enum": [
+            "authored_by",
+            "student_of",
+            "teacher_of",
+            "copied_from",
+            "translated_from",
+            "commentary_on",
+            "gloss_on",
+            "abridgement_of",
+            "adaptation_of",
+            "quotes",
+            "uses",
+            "criticizes",
+            "replies_to",
+            "adjudicates",
+            "defends",
+            "recension_of",
+            "edition_of",
+            "translation_of",
+            "contains",
+            "affiliated_with",
+            "located_at",
+            "agrees_on_claim",
+            "disagrees_on_claim",
+            "modern_comparison_only",
+            "same_work_identity",
+            "possible_same_work",
+            "source_asserts"
+          ]
+        },
+        "object_id": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "passage_subject_id": {
+          "type": "string"
+        },
+        "passage_object_id": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/citation"
+          }
+        },
+        "status": {
+          "enum": [
+            "verified",
+            "bibliographically_attested",
+            "proposed",
+            "contested",
+            "withdrawn",
+            "comparison_only"
+          ]
+        },
+        "confidence": {
+          "enum": [
+            "high",
+            "moderate",
+            "low",
+            "undetermined"
+          ]
+        },
+        "applies_to": {
+          "type": "string"
+        },
+        "limitations": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "string"
+        },
+        "editorial_review": {
+          "type": "object",
+          "properties": {
+            "reviewer": {
+              "type": "string"
+            },
+            "reviewed_at": {
+              "type": "string"
+            },
+            "method": {
+              "type": "string"
+            },
+            "revision": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
