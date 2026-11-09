@@ -163,7 +163,7 @@ def audit():
     assert preMD.count("## Note ")==140
     assert introMD.count("## Introduction note ")==82
     assert dalMD.count("## Signification note ")==20
-    assert combinedMD.count("## Note ")==140
+    assert sum(line.startswith("## Note ") and line.removeprefix("## Note ").split(" ",1)[0].isdigit() for line in combinedMD.splitlines())==140
     assert combinedMD.count("## Introduction note ")==82
     assert combinedMD.count("## Signification note ")==20
     assert sum(line.startswith("### ") and "UNNUMBERED" in line for line in combinedMD.splitlines())==9
