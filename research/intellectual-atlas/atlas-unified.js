@@ -37,7 +37,7 @@ const safe=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"
 const normal=x=>String(x??"").normalize("NFKD").replace(/[\u0300-\u036f\u064b-\u065f\u0670\u0640]/g,"").replace(/[أإآٱ]/g,"ا").replace(/ى/g,"ي").replace(/[ʿʾ’'`]/g,"").toLowerCase();
 const truncate=(x,n=30)=>Array.from(String(x??"")).length>n?Array.from(String(x??"")).slice(0,n-1).join("")+"…":String(x??"");
 const ahce=y=>Number.isFinite(+y)&&+y>0?Math.round(622+(+y-1)*0.970224):null;
-const validURL=x=>{try{const u=new URL(String(x),location.href);return ["http:","https:"].includes(u.protocol)?u.href:""}catch{return ""}};
+const validURL=x=>{if(!x||!String(x).trim())return "";try{const u=new URL(String(x),location.href);return ["http:","https:"].includes(u.protocol)?u.href:""}catch{return ""}};
 const uniq=arr=>[...new Set((arr||[]).filter(Boolean))];
 const fnum=n=>Number(n||0).toLocaleString();
 function addWork(x){
