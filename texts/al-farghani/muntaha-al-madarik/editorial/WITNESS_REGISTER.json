@@ -41,24 +41,27 @@
       ],
       "count": 198,
       "source": "B2007 selected digitized Arabic printed source spans",
-      "status": "80 p18–23, 62 p24–29, 56 p30–36; newer spans selected, not exhaustive; ZERO independent manuscript/1876 readings"
+      "status": "198 selected Arabic-English digital B2007 spans; historical printing I1876 independently compared at 5 bounded loci, manuscript witnesses not checked."
     },
     "next_critical_audit_beirut_page": 37,
     "definitive_status": "not-achieved; photographed historical printing selectively collated; manuscripts all outstanding",
     "critical_review_new_stage": "Critical IV: 56 new selective loci p30–36, 198 total on 19 Beirut pages",
     "historical_print_imprint_question": "NYU catalogue identifies Istanbul 1293/1876; Chittick 2025 describes Bulaq/Cairo 1876. Establish by reading scanned title page.",
     "additional_new_candidates_004": "Heidelberg H154 (undated, textual 1v–322r, viewer gated); Gotha G2267 (87ff incomplete via Scattolin 2001); neither read",
-    "historical_print_collated_loci": 1,
-    "independent_print_variant_count": 1,
+    "historical_print_collated_loci": 5,
+    "independent_print_variant_count": 3,
     "historical_print_directly_examined": true,
-    "historical_print_selected_checked_loci": 4,
+    "historical_print_selected_checked_loci": 5,
     "historical_print_printed_pages_sampled": [
       5,
       6,
-      7
+      7,
+      18
     ],
-    "historical_print_to_b2007_differences": 2,
-    "next_historical_print_target": "I1876 printed p8 onward (PDF scan 12), matched by exact authorial quotations to B2007"
+    "historical_print_to_b2007_differences": 3,
+    "next_historical_print_target": "Find I1876 correspondences to remaining B2007 cruxes, including p33 'في عون هذا', then independent manuscript collation",
+    "latest_print_register": "editorial/I1876_COLLATION_CUMULATIVE_002.json",
+    "latest_print_critical_summary": "editorial/I1876_COLLATION_CUMULATIVE_002.md"
   },
   "witnesses": [
     {
@@ -68,10 +71,10 @@
       "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en",
       "pageRange": "1–107: introductory division (Scattolin)",
       "editor": "Muḥammad Shukrī al-ʿŪfī, reported by Scattolin",
-      "access": "**DIRECT PHOTO CHECK NOW MADE:** Princeton/NYU 1876 volume I, printed pp5,6,7 (PDF scans 9,10,11), 4 selected loci against B2007 pp18,19,21; exact scans and SHA manifest I1876_COLLATION_001.json. Other I1876 pages and all MSS remain uncollated.",
-      "accessGrade": "photographed-historical-print-selected-loci-p5-p7; not full-page",
-      "role": "Direct historical PRINT control for four exact introductory loci; no manuscript evidence.",
-      "variantsExamined": 4,
+      "access": "Direct visual inspection of five bounded printed-text loci (four photographed I1876 printed pages 5,6,7,18, PDF scans 9,10,11,22), verified against B2007. Three print differences and two agreements; no manuscript folios checked.",
+      "accessGrade": "photographed-historical-print-five-bounded-loci-on-4-pages",
+      "role": "Historical PRINT control only, five selected textual comparisons. It is not a manuscript.",
+      "variantsExamined": 5,
       "photoEvidence": [
         {
           "siglum": "I1876",
@@ -90,17 +93,19 @@
           "full_page_proof": false
         }
       ],
-      "printDifferencesObserved": 2,
+      "printDifferencesObserved": 3,
       "printAgreementsObserved": 2,
       "pagesInspected": [
         5,
         6,
-        7
+        7,
+        18
       ],
       "pdfScanIndices": [
         9,
         10,
-        11
+        11,
+        22
       ]
     },
     {
