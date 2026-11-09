@@ -23,12 +23,12 @@ window.GNAMMA_TAMHID_SHARH = {
       "kind": "sharh",
       "ArabicSourceStatus": "directly-cited-digitized-printed-page",
       "arabic": "هذا كلّه إذا لم يكن له شيخ مسلك يرشده، وإمام مكمّل يقتدى به، وبيده مقاليد أقفاله وأحواله. وأمّا إذا كان له ذلك، فلكل منزل ومقام بحسب كلّ وقت واستعداد، علوم وميزان يخصّه، ينبّه السالك بحسب تفرّسه مراقي استعداده على تلك العلوم بموازينها.",
-      "english": "All of this applies when the seeker has no master of the path to direct him, no perfected guide to follow, who holds in his hands the keys to his locks and states. If, however, he does have such a guide, then every stage and station has sciences and a measure proper to it, according to the time and the seeker's capacity. The guide, discerning the successive degrees of that capacity, draws the traveller's attention to those sciences and their appropriate measures.",
+      "english": "All of this applies when the seeker has no master of the path to direct him, no guide who brings others to perfection to follow, who holds in his hands the keys to his locks and states. If, however, he does have such a guide, then every stage and station has sciences and a measure proper to it, according to the time and the seeker's capacity. The guide, discerning the successive degrees of that capacity, draws the traveller's attention to those sciences and their appropriate measures.",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/470?lang=ar",
       "notes": [
         "This is the descendant's commentary continuing after QT-061, not the grandfather's matn. Arabic sourced to printed p.274 in the online transcription.",
         "Printed alternatives: أقفاله وأحواله / إقباله وأحواله / أفعاله وأحواله. “Locks and states” preserves the displayed metaphor of keys and locks; it does not decide between the reported alternatives. No independent manuscript has been collated.",
-        "The guide's discernment (تفرّس) is presented as enabling guidance appropriate to each station, time, and capacity; it does not eliminate the matn's concern with tests of knowledge."
+        "The guide's discernment (تفرّس) is presented as enabling guidance appropriate to each station, time, and capacity; it does not eliminate the matn's concern with tests of knowledge. The active participle «مكمّل» signifies a guide who brings others toward perfection; it is not the passive «مكمَّل»."
       ],
       "variants": [
         {
