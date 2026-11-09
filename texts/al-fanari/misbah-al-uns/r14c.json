@@ -1,0 +1,192 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R14c",
+  "date": "2026-11-09",
+  "startSection": "4.683",
+  "endSection": "4.700",
+  "sourceRepo": "OpenITI/0850AH",
+  "sourceCommit": "e2715c62fb458ce3ddc43b962cd55677cdd7bc35",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.683",
+      "number": 683,
+      "arabic": "الثاني: على علة تأثير الكواكب باتصالاها وحركاتها المختلفة وتلاقى أشعتها، لأن هذه الحالات أسباب تركيب القوى السماوية الطبيعية عنصرية كانت - كما في السبع - أو غيرها - كما في الأربع الفوقانية - فمن السبع ما طبيعته بارد يابس والمستولى عليه الجواد كزحل. ومنها ما طبيعته حار رطب والمستولى عليه العلام كالمشتري وستستوفى، فعند الاتصالات يختلط هذه الأسباب ويمتزج امتزاجا روحانيا للقوى، مؤثرا في الامتزاج الجسماني.",
+      "pageStart": 470,
+      "pageEnd": 470,
+      "english": "Second: The reason for the influence of the planets through their conjunctions, varying motions, and the meeting of their rays. These conditions bring together heavenly natural powers, whether elemental—as in the seven spheres—or otherwise, as in the four higher spheres. Among the seven, some have a cold and dry nature with al-Jawād [the Generous] predominating, as in Saturn; others have a hot and moist nature with al-ʿAllām [the All-Knowing] predominating, as in Jupiter, as will be explained fully. When conjunctions occur, these causes mingle and undergo a spiritual blending of their powers that influences corporeal mixture.",
+      "notes": "Historical astral causality and correspondences of divine Names; the text's assignment of cold/dry and hot/moist is not modern planetary science. Verify «الجواد» in Khvājavī print.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.684",
+      "number": 684,
+      "arabic": "الثالث: على سبب اختلاف تأثيرها، وذلك لاختلاف الامتزاجات بينها بسبب الاجتماع والافتراق وتناسب المتصلات وتنافرها، وبالجملة يندرج تحت اختلاف التركيبات والنكاحات المقتضى لاختلاف النتائج والثمرات.",
+      "pageStart": 470,
+      "pageEnd": 470,
+      "english": "Third: The reason their influences differ is the difference of the mixtures among them, owing to conjunction and separation and to the correspondence or discordance of things that meet. In short, this falls under the variety of compositions and 'marriages', which brings about diverse results and fruits.",
+      "notes": "Nikāḥāt is a technical metaphor for combinations and generative conjunctions; it need not mean literal marriage.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.685",
+      "number": 685,
+      "arabic": "الرابع: على علة تأثير الحركة في الحركة والحرارة في الحرارة، وهى ان الحركة تحدث الحرارة والحرارة تحدث حركة أخرى، وكذا تلك الحركة حرارة أخرى أعم من حرارة التجلي الذي تلك الحركة شرط لها، أو من حرارة جرم الفلك بالحركة، فبذلك تترادف الحركات وتتضاعف التجليات وتدوم إلى ما شاء الله.",
+      "pageStart": 470,
+      "pageEnd": 470,
+      "english": "Fourth: The reason motion influences motion, and heat influences heat, is that motion produces heat and heat produces another motion; that further motion produces another heat, whether it be the heat of a self-disclosure for which the motion is a condition or the heat of a celestial body produced by movement. Thus movements occur in succession, self-disclosures are multiplied, and they continue for as long as God wills.",
+      "notes": "The reciprocal causal sequence is successive, not the same event causing itself. Premodern natural-philosophical account.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.686",
+      "number": 686,
+      "arabic": "الخامس: على سر ابراز الأفلاك والكواكب بالحركات والقوى والأرواح والأحوال والأشعة والنسب والمراتب والخواص اخرا صورة ما كان سببا في وجودها وظهورها أولا.",
+      "pageStart": 470,
+      "pageEnd": 470,
+      "english": "Fifth: The mystery by which the spheres and planets, through their motions, powers, spirits, states, rays, relations, degrees, and properties, ultimately bring forth the image of that which was at first the cause of their existence and manifestation.",
+      "notes": "Announces the doctrine of the final manifestation reproducing its originating reality.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.687",
+      "number": 687,
+      "arabic": "وذلك لما مر في الأصول ان لا تأثير الا لباطن في ظاهر، بل لا تأثير لشئ الا في نفسه، فاثره عين صورته - وان ظهر صورته - لكن لكونه عين ظهور حقائقه المستجنة وكمالاتها الغيبية غاية توجهه ومقصد تجليه، وان كل تأثير مسبوق بالتأثر، فالسر يحتمل إرادة ان الأفلاك انما تعينت بالطبيعة والجسمية الهبائية ثم اثرت في تعين طبائع العناصر وأجسام المولدات، ومبناها تأثير الحرارة في الحركة ثم الحركة في الحرارة، ويحتمل إرادة ان العقول العالية اثرت في تعين الطبيعة الهبائية ثم هي اثرت في تعين النفوس المطمئنة، لو ساعدتها العناية الإلهية فصارت عقولا، ويحتمل إرادة ان حقيقة الحقائق التي هي حضرة أحدية الجمع أظهرت على قضية الحب الأصلي بالتجلي الاجمالي الكمالي الأسمائي صور حقائقها المفصلة بظهور الفرق والتفصيل وبطون الجمع والاجمال في العالم الكبير، ثم بظهور الجمع بين الاجمال والتفصيل في الانسان من حيث ظهور آثار الكل في كل انسان وظهور كل آثار في الانسان الكامل، فحصل به كمال الجلاء والاستجلاء الذي هو كل المراد والمراد من الكل، فصار الانسان الكامل كامل سورة حضرة أحدية الجمع واستحق بذلك خلافته، فالانسان الكامل اثر ونتيجة بصورته ومؤثر ومنتج بحقيقته ومعناه ومرتبته.",
+      "pageStart": 470,
+      "pageEnd": 471,
+      "english": "The explanation lies in principles established above: there is no efficacy except that of an inward reality upon an outward form; indeed, nothing acts except upon itself, and its effect is the very image of itself, even though its image becomes outwardly manifest. This is because the aim of its orientation and the purpose of its self-disclosure are the manifestation of its concealed realities and unseen perfections. Every act of influencing is preceded by a being-influenced. This mystery may therefore mean that the spheres first became determined through nature and dust-like corporeality, then influenced the determination of the elemental natures and the bodies of generated beings: the basis is heat's effect upon motion and motion's effect upon heat. It may instead mean that the higher intellects influenced the determination of dust-like nature, which in turn influenced the determination of souls at peace; if divine solicitude assisted these souls, they became intellects. Or it may mean that the Reality of realities—the Presence of the Oneness of Gathering [ḥaḍrat aḥadiyyat al-jamʿ]—by virtue of original love made manifest, through comprehensive, perfect self-disclosure of the Names, the forms of its differentiated realities: distinction and differentiation becoming outward, while gathering and comprehensiveness remain inward in the macrocosm. In the human being, by contrast, gathering between the comprehensive and the differentiated appears, since the effects of the whole are manifest in each person, whereas all the effects are manifest in the Perfect Human. Through him the perfection of disclosure and self-disclosure-to-itself [jalāʾ and istijlāʾ] is attained—this being the purpose of everything and the purpose sought through the whole. The Perfect Human thus becomes the complete form of the Presence of the Oneness of Gathering and thereby deserves its vicegerency. In form the Perfect Human is an effect and result; in reality, meaning, and rank, he is an agent and producer.",
+      "notes": "Three interpretations are introduced by «ويحتمل»; do not collapse them into one literal efficient-causal theory. The crucial final contrast is «بصورته» versus «بحقيقته ومعناه ومرتبته». The 'agent' claim is hierarchical and metaphysical, not an assertion of independent divinity.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.688",
+      "number": 688,
+      "arabic": "فتحقق ان كل مؤثر في الشئ تأثيرا ظاهرا حال كونه مشاهدا بنفس تأثيره في ذلك الشئ لمن كشف له الغطاء عن بصيرته، فتأثيره ذلك في صورة غايته وثمرته مسبوق بتأثره عن معناه وحقيقته، سواء درى ذلك أو لم يدر، لكن من جهتي الصورة والمعنى فلا دور، ويتحقق سر قوله تعالى: وسخر لكم ما في السماوات والأرض جميعا (13 - الجاثية) وفهم منه ان ذلك لكون الانسان الكامل غاية الكل ويتحقق جهة ظهور آدم بالصورة الإلهية، لأنه صورة الحقيقة الجامعة التي هي حضرة أحدية الجمع، والإلهية صفتها وجهة الخلافة التي ظهر آدم ومن بعده من الكمل بها، لان الخليفة يقوم مقام المستخلف، فلا بد من الاتصاف بجمعيته، ويتحقق أيضا حقيقة قول الحلاج: ولدت أمي أباها ان ذا من اعجبات وانا طفل صغير في حجور المرضعات",
+      "pageStart": 471,
+      "pageEnd": 471,
+      "english": "It is thereby established that every agent influencing a thing outwardly is witnessed, through that very influence in the thing, by one whose inner sight has had its veil removed. The agent's effect in the form of its aim and fruit is preceded by its own reception of an influence from its meaning and reality, whether it is aware of this or not. Yet these belong to the distinct considerations of form and meaning, so no vicious circle follows. The mystery of God's words becomes clear: 'He has subjected to you all that is in the heavens and all that is on earth' [Qurʾān 45:13]. From this it is understood that the Perfect Human is the goal of the whole; the reason for Adam's appearance in the divine form also becomes clear. Adam is the image of the comprehensive reality, which is the Presence of the Oneness of Gathering; divinity is its attribute, and vicegerency is the aspect through which Adam and the perfected ones after him appear. The vicegerent stands in the place of the One who appoints him, and thus must be qualified by comprehensiveness. The reality of al-Ḥallāj's saying is also understood: 'My mother gave birth to her father—truly a wondrous thing!—while I was a little child in the laps of wet-nurses.'",
+      "notes": "The verse of al-Ḥallāj is cited as an ontological paradox, not a biological claim. Preserve the Arabic original and distinguish Qurʾānic citation from poetic citation in the critical edition.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.689",
+      "number": 689,
+      "arabic": "كيف يصير بعد توهم استحالته عندك بديهيا أوليا؟ فيحتمل ان مراده بالام الطبيعة، لما ان لها مرتبة الأنوثة في نكاح اجتماع الأرواح من حيث مظاهرها المثالية لتوليد الأجسام البسيطة، وللأرواح مرتبة الذكورة، مع أن تعين الطبيعة الهبائية من الأرواح النورية - كالقلم واللوح كما مر -",
+      "pageStart": 471,
+      "pageEnd": 472,
+      "english": "How can what you first imagined impossible become manifestly self-evident? One possibility is that by 'mother' he meant Nature: Nature possesses the feminine rank in the conjunction or 'marriage' of gathered spirits through their imaginal manifestations, by which simple bodies are generated; the spirits, meanwhile, possess the masculine rank. Yet dust-like Nature itself becomes determined through luminous spirits, such as the Pen and Tablet, as already explained.",
+      "notes": "First of several interpretive possibilities explaining al-Ḥallāj's mother/father paradox.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.690",
+      "number": 690,
+      "arabic": "فأولا لما مر انها تعينت من الوجه الرابع من اللوح المحفوظ.",
+      "pageStart": 472,
+      "pageEnd": 472,
+      "english": "This is so, first, because Nature was determined from the fourth face of the Preserved Tablet, as stated above.",
+      "notes": "Part of a numbered defence of Nature as 'mother'.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.691",
+      "number": 691,
+      "arabic": "وثانيا لان الطبيعة أول صورة وجدت في المادة العمائية الكونية كما سلف.",
+      "pageStart": 472,
+      "pageEnd": 472,
+      "english": "Second, because Nature was the first form to come into existence within the cosmic Cloud-like material [al-mādda al-ʿamāʾiyya al-kawniyya], as already mentioned.",
+      "notes": "The wording identifies an early ontological determination, not an assertion of temporal priority over divine reality.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.692",
+      "number": 692,
+      "arabic": "وثالثا لأنها صورة الإلهية في مرتبة الجسمية الكلية والإلهية باطنها، وحين اثرت الطبيعة في تسوية المحل الاعتدالي القابل لأكمل الأرواح والنفوس فقد ولدت أباها، ثم إن حصة من التجلي الاحدى الإلهي إذا شرعت في التدلي انصبغ بحكم كل قوة من القوى السماوية الروحانية والأرضية الطبيعية إلى أن يصير انسانا، فما دام متنزلا كان في حجور مرضعات تلك القوى، إذ هي المربيات إلى أن يتم الدائرة.",
+      "pageStart": 472,
+      "pageEnd": 472,
+      "english": "Third, because Nature is the image of Divinity at the level of universal corporeality, while Divinity is its inward reality. When Nature acted to bring the balanced locus into a condition receptive to the most perfect of spirits and souls, it had, in this sense, given birth to its own father. Furthermore, when a portion of the unitary divine self-disclosure begins its descent, it takes on the ruling of each heavenly spiritual and earthly natural power until it becomes human. Throughout its descent it remains in the laps of the 'wet-nurses' of those powers: they are its nurturers until the circle is complete.",
+      "notes": "The mother/father and nurses relationships are reciprocal ontological descriptions, not literal divine generation; the descent is graded through powers and loci.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.693",
+      "number": 693,
+      "arabic": "ويحتمل ان يريد بأمه أم الكتاب الأكبر والخزانة الجامعة لمواد الأسماء الإلهية والحقائق الكونية، وهى العماء الشامل لها، وهو مع ذلك منزل تدلى الحق من حضرة غيبه وأول تعينه إليه ومحل نفوذ اقتداره فيه، لأنه حقيقة الحقائق ومادة المواد والنون الأكبر الذي هو مجتمع مواد مدات الحضرات الإلهية والكونية.",
+      "pageStart": 472,
+      "pageEnd": 472,
+      "english": "Alternatively, by 'mother' he may have meant the greater Mother of the Book [umm al-kitāb al-akbar] and the all-embracing treasury containing the materials of the divine Names and cosmic realities: the Cloud [al-ʿamāʾ], which encompasses them all. Yet this is also the station to which the Real descends from the Presence of His Unseen and the locus of His first determination, where the effectiveness of His power becomes manifest. For it is the Reality of realities, the matter of all matters, and the Greater Nūn, the meeting-place of the materials by which the divine and cosmic presences are extended.",
+      "notes": "Technical interpretation of Greater Nūn and Cloud must be checked against Fanārī/Qūnawī usage; not equivalent to a physical substance.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.694",
+      "number": 694,
+      "arabic": "قال الشيخ قدس سره في تفسير ولا الضالين: والسر في تقدم حكم ضلالة الانسان على هدايته هو تقدم الشأن المطلق الإلهي من حيث هويته على نفس التعين، كتقدم الوحدة والاجمال والعجمة على الكثرة والتفصيل والاعراب، وتذكر تقدم مقام: كان الله ولا شئ معه، ولا اسم ولا حكم على التعين الأول المختص بحضرة أحدية الجمع وهو المعبر بمفاتيح الغيب، وكذا تقدم حضرة أحدية الجمع على الكونية العمائية النفسية الرحمانية الثابتة في الشرع، والتحقيق المقول بلسانها: كنت كنزا مخفيا... الحديث، وتقدم السر النوني على الامر القلمي، هذا كلامه.",
+      "pageStart": 472,
+      "pageEnd": 472,
+      "english": "The Shaykh—may his secret be sanctified—said while commenting upon 'nor those who go astray' [Qurʾān 1:7]: 'The secret of the ruling of human misguidance preceding guidance is that the absolute divine concern, in its very identity, precedes determination itself, just as unity, comprehensiveness, and unarticulated speech precede multiplicity, differentiation, and articulation. Recall the priority of the station \"God was, and nothing was with Him\"—without Name or ruling—over the First Determination proper to the Presence of the Oneness of Gathering, expressed as the Keys of the Unseen. Recall likewise the priority of the Presence of the Oneness of Gathering over the cosmic Cloud-like, Breath-of-the-Merciful Presence, established in the transmitted Law, and the realisation voiced in its saying: \"I was a hidden treasure...\" as the report continues; and the priority of the secret of Nūn over the command of the Pen.' Thus far his words.",
+      "notes": "Explicit quotation of 'the Shaykh' closes «هذا كلامه». The 'hidden treasure' statement is given as a report by the source, not independently authenticated. Identify the source of the tafsīr in later apparatus.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.695",
+      "number": 695,
+      "arabic": "فالكونية العمائية مع أنها من جملة المراتب والمفاتيح، تعينها التعين الأول والتجلي الأول الذاتي الذي فيه، فمع انها أم الكتاب الأكبر، حصلت من حضرة أحدية الجمع وانتشأت منه، وتعين منها الانسان الذي هو اخر مولود منه، فإنه صورة حضرة أحدية الجمع لما سيجئ: ان الامر النازل ينعطف من صورة الانسان إلى الحقيقة الكمالية المختصة المسماة بحقيقة الحقائق دائرة تامة، والمرضعات مراتب استيداعه من حين افراز الإرادة له من عرصة العلم باعتبار نسبة ظاهريته - لا نسبة ثبوتيته - وتسليمها إياه إلى القدرة، ثم تعينه في القلم الاعلى ثم في المقام اللوحي ثم في مرتبة الطبيعة ثم في العرش ثم في الكرسي ثم في السماوات السبع ثم في العناصر ثم في المولدات إلى حين استقراره بصفة صورة الجمع كما سيجئ.",
+      "pageStart": 472,
+      "pageEnd": 473,
+      "english": "Although the Cloud-like cosmic degree is itself among the degrees and keys, it is determined by the First Determination and by the first essential self-disclosure within that determination. Hence, even though it is the greater Mother of the Book, it arose from and was brought forth by the Presence of the Oneness of Gathering. From it the human being became determined, as its last offspring, for the human is the form of that Presence. As will be explained, the descending command turns back, from the human form to the reality of its distinctive perfection called the Reality of realities, completing a full circle. The 'wet-nurses' are the degrees in which the human reality is successively entrusted: when Will brings it forth from the domain of Knowledge, considered through its relation of outward manifestation and not through its relation of fixed subsistence, and delivers it to Power; then its determination in the Supreme Pen, the station of the Tablet, Nature, Throne, Footstool, the seven heavens, the elements, and generated things, until it is established as a form bearing the attribute of comprehensive gathering, as will be explained.",
+      "notes": "Carefully distinguish «نسبة ظاهريته» from «نسبة ثبوتيته»; the passage describes a progressive order of manifestation and circular completion.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.696",
+      "number": 696,
+      "arabic": "ثم نقول: وههنا اسرار كثيرة، منها ما لا يمكن التصريح به أصلا، لضيق نطاق العبارة والإشارة عنه، أو لا يمكن شرعا، لافضائه إلى التساهل به وعدم تعظيم المراتب والتقيد بوظائف العبادات - كافشاء سر القدر - ومنها ما إن شاء الله تعالى فتح عليك مقفله ان فهمت ما ضمن في هذه الالماعات، كما أنه لما تحقق ان الحضرات والموجودات كلها صور التجليات التي هي في ذاتها تجل واحد ينسب بالظهور والبطون إلى كل قابل بحسب قابليته، فهو الذي يقبل جميع الأحكام في المراتب مع تنزهه عنها في ذاته، كالوالدية والمولودية والأبوة والأمومة والمرضعية والمرضعية، ولا يقدح في نزاهته على ما مر انه مع قبوله حكم كل متعين غير متعين في ذاته، فمن لوازمه ان تصدق عليه المتقابلات والمتضادات وكل نفى وإثبات - لكن بالاعتبارات -. الأصل الخامس عشر في ظهور صور العناصر الأربعة ثم السماوات السبع",
+      "pageStart": 473,
+      "pageEnd": 473,
+      "english": "We further say: There are many mysteries here. Some cannot be stated at all, because words and indications are too narrow to contain them. Others cannot be made explicit according to the Revealed Law, because doing so would encourage laxity about them, a failure to honour the degrees, and neglect of prescribed acts of worship—as with disclosure of the mystery of decree. Others, God willing, will have their locks opened to you if you understand what these illuminations contain. Once it is realised that all presences and existents are forms of self-disclosures which, in themselves, are one self-disclosure attributed to manifestation or concealment within each recipient according to its receptivity, that same reality receives the rulings of all the degrees while, in itself, transcending them: such as the rulings of being parent and child, father and mother, nursing and being nursed. Its transcendence is not impaired by receiving the ruling of each determination, since it is not determined in itself. Consequently, opposites and contraries, negation and affirmation, can truly be predicated of it—but under different considerations. Fifteenth Principle: On the manifestation of the forms of the four elements and then the seven heavens.",
+      "notes": "IMPORTANT section heading «الأصل الخامس عشر» appears at end of §4.696 in electronic text; display as a section boundary/heading in reader (not mistakenly as part of an assertive proposition). The final qualifying phrase «لكن بالاعتبارات» is essential to prevent contradiction or literal identity.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.697",
+      "number": 697,
+      "arabic": "قال الشيخ الكبير رضي الله عنه: فلما أكمل سبحانه أفلاك الثبات والبقاء وصارت الكلمة أربعة بوجود هذا الرابع، أراد سبحانه ايجاد عالم الدنيا من الأركان والسماوات والمولدات التي مآل تراكيبها إلى فساد وانتقال، وما من فلك أوجده الحق تعالى الا وقد جعل سبحانه للملكين الكريمين: القلم واللوح توجها إليه يخلق عند التوجه ما شاء ان يخلقه مما شاء ان يتوجه إليه - لا بالتوجه - لأنه يتعالى عن المعين والاحكام والأسباب، إذ هو الناصب والخالق لها، وهو كخلق الله تعالى أعمالنا المرادة لنا بخلق الإرادة فينا ثم بخلق التوجه والعمل عند ارادتنا، فلا خالق الا هو، هو الذي أعطاه دليلي وكشفي، وعليه اعتقادي واسأل الله تعالى الثبات عليه ولا قديم الا هو.",
+      "pageStart": 473,
+      "pageEnd": 474,
+      "english": "The Great Shaykh—may God be pleased with him—said: 'When God, exalted is He, had completed the spheres of stability and permanence, and the Word had become four through the existence of this fourth, He willed to bring into existence the world of this life from the elements, heavens, and generated beings whose composites ultimately undergo corruption and change. Whenever the Real brings a sphere into existence, He gives the two noble angels—the Pen and the Tablet—an orientation towards it, and at the occurrence of that orientation He creates whatever He wills to create from that towards which He wills them to turn. He does not create by means of the orientation, for He transcends the determinate beings, rulings, and causes, since He is their establisher and creator. This is like God's creation of our voluntary acts by creating volition within us and then creating orientation and action when we will. Thus there is no creator but He. This is what both my proof and my unveiling have disclosed to me, and this is my belief; I ask God to make me steadfast in it. Nothing is without beginning except Him.'",
+      "notes": "Likely a quotation of Ibn ʿArabī, introduced as al-Shaykh al-Kabīr. The pivotal distinction is «عند التوجه ... لا بالتوجه» (at orientation, not by its causal power). Verify source quotation boundaries and original work.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.698",
+      "number": 698,
+      "arabic": "فجعل للنفس الكلية توجها من حيث ايجاد الاجرام النورية وغيرها، حتى إذا حصل الاستعدادات بحسب مراتبهم المقدرة توجه العقل الذي هو القلم عن إدارة الواحد بوجه النفخ، فاوجد الله تعالى الأرواح الفلكية في الاشخاص الفلكية، فقامت حية ناطقة بالثناء.",
+      "pageStart": 474,
+      "pageEnd": 474,
+      "english": "He then gave the Universal Soul an orientation towards bringing luminous bodies and other things into existence. When their receptivities were established according to their ordained degrees, the Intellect—which is the Pen—turned, by command of the One, in the mode of breathing forth. God then created the celestial spirits within the celestial individual bodies, which arose alive and articulate in praise.",
+      "notes": "Still within the Great Shaykh quotation. The breathing/insufflation metaphor is defined next.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.699",
+      "number": 699,
+      "arabic": "وفرق بين النفخ والدعاء، فان النفخ ايجاد مخصوص يجرى في البدء والإعادة، كما قال تعالى في عيسى: فتنفخ فيها فتكون طيرا بإذني (110 - المائدة) وليس الدعاء الا إعادة فساد التركيب مع بقاء الاجزاء، كما قال تعالى في إبراهيم: ثم ادعهن يأتينك سعيا (260 - البقرة)",
+      "pageStart": 474,
+      "pageEnd": 474,
+      "english": "A distinction is made between breathing into and calling forth. Breathing into [nafkh] is a particular mode of bringing into existence that occurs at the initial creation and at restoration, as God says concerning Jesus: 'You breathe into it, and it becomes a bird by My permission' [Qurʾān 5:110]. Calling [duʿāʾ], by contrast, is only the restoration of a composition after its disintegration while its components remain, as God says concerning Abraham: 'Then call them; they will come to you swiftly' [Qurʾān 2:260].",
+      "notes": "Two scriptural references are part of the author's causal taxonomy; citations quote the relevant sense rather than presenting full verse translations.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.700",
+      "number": 700,
+      "arabic": "ثم انصرف التوجه الإلهي فاوحى إلى النفس الذي هو اللوح ان ينحدر بالتدبير في عمق الجسم إلى أقصاه وهو المركز، وهو محل نظر العنصر الأعظم الذي خلق العقل من التفاتته وانحدر إليه فوجد نظر العنصر الأعظم إليه، وان أمر الكون المدبر كله منه صدر وإليه يعود حكمة بالغة.",
+      "pageStart": 474,
+      "pageEnd": 474,
+      "english": "Then the divine orientation withdrew, and He revealed to the Soul—which is the Tablet—that it should descend in its governance into the body's depths as far as its very centre. This was where the greatest Element directed its gaze. The Intellect, created through the Element's turning of attention, descended to that place and found the greatest Element gazing towards it; and from that Element the whole governance of the cosmos proceeds and to it returns—a consummate wisdom.",
+      "notes": "The identity and causal status of «العنصر الأعظم» must be reconciled against the source work; do not presume a modern 'chemical element'.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    }
+  ]
+}
