@@ -36,13 +36,13 @@ small{color:var(--muted)}footer{border-top:1px solid var(--rule);font-size:12px;
 <option value="all">All numbered notes</option><option value="complete_searchable_note">Translated first-pass</option><option value="partial_translation">Partial translation</option>
 </select></nav>
 <main>
-<div class="overline">GNAMMA · Cumulative edition · Stage 108</div>
+<div class="overline">GNAMMA · Cumulative edition · Stage 109</div>
 <h1>Ḥawāshī — numbered glosses</h1>
 <p class="lead">The complete note, not the page of the printed volume, is the unit of translation. The English translations below are distinct from the much shorter preliminary Q125–178 selections.</p>
-<div class="notice">Stage 108 covers <strong>126 numbered notes</strong>, Qum pp.127–160. <strong>122 have complete first-pass English; four remain partial</strong> (1, 25, 82, 90). Notes 24–75 and 114–115 contain digitally searchable Arabic working transcriptions; all others have Arabic locator lemmata. Six adjacent unnumbered glosses are separately attributed. No printed page or manuscript witness is photographically certified.</div>
-<div class="stats"><span id="count">Loading…</span><span>0 fully translated printed pages certified</span><span>122 working complete notes · 4 partial</span></div>
+<div class="notice">Stage 109 covers the <strong>140 numbered later-PREFACE glosses</strong>, Qum pp.127–164. <strong>136 have first-pass English; four are partial</strong> (1, 25, 82, 90). There are 54 digitally searchable full Arabic working transcriptions and 86 Arabic locator lemmata, with six unnumbered glosses separate. <strong>IMPORTANT: Qum p.165 begins a NEW section (Glosses on the Introduction to Logic) and RESTARTS local notes at 1</strong>. It must receive a new ID namespace, not note141. No printed page or manuscript witness is independently certified.</div>
+<div class="stats"><span id="count">Loading…</span><span>0 fully translated printed pages certified</span><span>136 working complete notes · 4 partial</span></div>
 <div id="notes"></div>
-<footer><a href="batches/hawashi-numbered-cumulative-hwn001-126.md">Cumulative Arabic–English Markdown (notes 1–126)</a> · <a href="progress.html">Cumulative status, full handoff and stage logs</a> · <a href="hawashi-q125-178.html">52 earlier page selections</a>. Attribution remains provisional until individual signatures are checked against print photographs.</footer>
+<footer><a href="batches/hawashi-preface-numbered-cumulative-hwn001-140.md">Cumulative Arabic–English Markdown (preface notes 1–140)</a> · <a href="progress.html">Cumulative status, full handoff and stage logs</a> · <a href="hawashi-q125-178.html">52 earlier page selections</a>. Attribution remains provisional until individual signatures are checked against print photographs.</footer>
 </main>
 <script src="hawashi-numbered-notes-stage104.js?v=20261109-104"></script>
 <script src="hawashi-numbered-notes-stage105.js?v=20261109-105"></script>
@@ -58,6 +58,7 @@ small{color:var(--muted)}footer{border-top:1px solid var(--rule);font-size:12px;
 <script src="hawashi-numbered-notes-stage107f.js?v=20261109-107"></script>
 <script src="hawashi-numbered-notes-stage108a.js?v=20261109-108"></script>
 <script src="hawashi-numbered-notes-stage108b.js?v=20261109-108"></script>
+<script src="hawashi-numbered-notes-stage109a.js?v=20261109-109"></script>
 <script>
 (function(){'use strict';
 const base=window.GNAMMA_TAHDHIB_HAWASHI_NOTES;
@@ -100,6 +101,13 @@ for(const batch of stage108){for(const n of batch.notes){
  if(byId.has(n.id))throw Error('Stage108 duplicate note '+n.id);
  byId.set(n.id,n);
 }}
+const stage109=window.GNAMMA_TAHDHIB_HAWASHI_STAGE109A;
+if(!stage109||!Array.isArray(stage109.notes)){document.getElementById('notes').textContent='Stage109 source data unavailable';return}
+for(const n of stage109.notes){
+ if(byId.has(n.id))throw Error('Stage109 duplicate note '+n.id);
+ if(n.sectionId!=='H-PREFACE')throw Error('Expected H-PREFACE section for '+n.id);
+ byId.set(n.id,n);
+}
 const entries=[...byId.values()].sort((a,b)=>a.noteNumber-b.noteNumber),$=id=>document.getElementById(id);
 const mk=(tag,cls,txt)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(txt!==undefined)x.textContent=txt;return x};
 function render(){
