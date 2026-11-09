@@ -74,13 +74,16 @@ for(const [name,file] of books){
     check(units.some(u=>u.id==='M-P-01'),'Muẓaffar introduction must precede its Book III selections');
     check(units.filter(u=>/^M-K-(0[1-9]|1[0-7])$/.test(u.id)).length===17,
       'Muẓaffar Book II must preserve seventeen working bilingual reading units, some source-normalized');
-    check(units.length===46,'Muẓaffar must contain 46 working reading units after Book II expansion');
+    check(units.length===53,'Muẓaffar must contain 53 working reading units with eleven Book I passages');
     check(stages.some(x=>x.id==='K'&&x.bookNumber===2),'Muẓaffar Book II stage is missing');
     const universalIds=['M-K-01','M-K-02','M-K-03','M-K-04','M-K-05','M-K-06','M-K-07','M-K-08','M-K-09','M-K-10','M-K-11','M-K-12','M-K-13','M-K-14','M-K-15','M-K-16','M-K-17'];
     check(units.find(u=>u.id==='M-K-08')?.notes?.some(n=>/conjecture|inconsistent|not logically consistent/i.test(n.text||'')),
       'Source-critical conjecture in M-K-08 must remain explicit');
     check(units.find(u=>u.id==='M-K-14')?.notes?.some(n=>/not a diplomatic|normalized/i.test(n.text||'')),
       'Normalized M-K-14 must not masquerade as exact diplomatic Arabic');
+    const newBook1=['M-L-05','M-L-06','M-L-07','M-L-08','M-L-09','M-L-10','M-L-11'];
+    check(newBook1.every(id=>units.some(u=>u.id===id&&u.stage==='L'&&u.arabic.length>500&&u.english.length>500)),
+      'Missing new original Muẓaffar Book I source and working translation');
     check(universalIds.every(id=>units.find(u=>u.id===id)?.english?.length>350),
       'Muẓaffar Book II bilingual passage is missing or unexpectedly short');
   }
@@ -113,13 +116,15 @@ if(mMap&&mText){
   check(mMap.parts.reduce((n,x)=>n+x.availableUnits,0)===mText.units.length,'Muẓaffar mapped translation count mismatch');
   check(mMap.summary?.localTranslatedUnits===mText.units.length,
     'Muẓaffar map summary is stale');
+  check(mMap.parts.find(p=>p.book===1)?.availableUnits===11,
+    'Muẓaffar source map lost new Book I source coverage');
   check(mMap.parts.find(p=>p.book===2)?.availableUnits===17,
     'Muẓaffar source map must register Book II opening');
   check(mMap.parts.reduce((n,x)=>n+x.topics.length,0)>=60,'Muẓaffar map lost section titles');
   for(const p of mMap.parts){
     check(p.start>0&&p.end>=p.start,'Muẓaffar invalid page range for book '+p.book);
     for(const t of p.topics)if(t.firstPrintedPage){
-      check(['observed in source table of contents','observed in searchable source page; early scan pending collation'].includes(t.locatorStatus),'Unverified Muẓaffar page locator '+t.arabic);
+      check(['observed in source table of contents','observed in searchable source page; early scan pending collation','observed in 1402 AH searchable source page; early 1968 printed witness pending visual collation'].includes(t.locatorStatus),'Unverified Muẓaffar page locator '+t.arabic);
       check(t.firstPrintedPage>=p.start&&t.firstPrintedPage<=p.end,'Muẓaffar locator outside book');
     }
   }
@@ -181,10 +186,20 @@ if(nText&&nTriage){
       'Cumulative review register not linked to triage '+r.id);
   }
   check(nTriage.summary?.automaticallyScreened===136,'Incomplete Nihāya full-corpus screening');
-  check(nTriage.summary?.locallyReadAgainstStoredArabic===28,'Nihāya local checked sample changed unexpectedly');
-  check(nTriage.summary?.secondaryPrintedDigitalSpotChecks===4,
+  check(nTriage.summary?.locallyReadAgainstStoredArabic===68,'Nihāya local checked sample changed unexpectedly');
+  check(nTriage.summary?.secondaryPrintedDigitalSpotChecks===5,
     'Nihāya revised printed-digital spot checks must remain individually documented');
-  check(nTriage.summary?.independentlyReconciledAgainstCompleteSecondWitness===0,
+  check(rows.filter(r=>r.englishReview?.status==='local-bilingual-reading-checked').length===68,
+    'Nihāya direct bilingual checks mismatch cumulative register');
+  const unitXI=nText.units.find(u=>u.id==='N-XI-PRE');
+  check(unitXI?.english.includes('“intellect” (al-ʿaql)')&&!unitXI?.english.includes('term “intellection”'),
+    'Nihāya XI stage heading reverted to imprecise English');
+  const unitVI19=nText.units.find(u=>u.id==='N-VI-19');
+  check(unitVI19?.english.includes('imaginal form divested of quantity')&&unitVI19?.arabic.includes('المجرّدة من الكم'),
+    'Nihāya VI.19 scope correction lost');
+  check(nText.units.find(u=>u.id==='N-VIII-10')?.arabic.startsWith('المشهور'),
+    'Nihāya VIII.10 double-alif transcription corruption returned');
+    check(nTriage.summary?.independentlyReconciledAgainstCompleteSecondWitness===0,
     'Nihāya screen incorrectly described as independent witness collation');
 }
 
