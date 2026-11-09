@@ -8,8 +8,8 @@ The counts below concern passages supplied in the working reader, not complete p
 
 | Work | Available source status | Bilingual paragraph records | Entire text translated? | Early manuscript collation | Publication status |
 |---|---|---:|---|---|---|
-| QUN-NU, Qūnawī, *al-Nuṣūṣ* | An accessible but **partial** online Arabic transcript, through printed p. 266; separate 155-page printed Arabic PDF inspected at relevant pages | 25 | **No**: complete opening incipits and selected later passages only | 0 folios independently collated | Working source-located page; not critical |
-| IZN-RIS, al-Iznīqī, short *Risāla* | Arabic edition by Balaban/Çalışkan (2023), pp. 831–850+ of Arabic text | 2 | **No**: two directly checked bilingual excerpts; seven arguments previously translated in English draft | 0 folios collated | Working source-located page; not critical |
+| QUN-NU, Qūnawī, *al-Nuṣūṣ* | An accessible but **partial** online Arabic transcript, through printed p. 266; separate 155-page printed Arabic PDF inspected at relevant pages | 47 | **No**: complete opening incipits and selected later passages only | 0 folios independently collated | Working source-located page; not critical |
+| IZN-RIS, al-Iznīqī, short *Risāla* | Arabic edition by Balaban/Çalışkan (2023), pp. 831–850+ of Arabic text | 7 | **No**: two directly checked bilingual excerpts; seven arguments previously translated in English draft | 0 folios collated | Working source-located page; not critical |
 | KHU-ZUB, *Zubdat al-taḥqīq* | Bibliographical source and manuscript study; one Princeton catalogue record identified | 0 | No | 0 | Registry only |
 | KHU-QA, 22 questions | Ayasofya 4805 fols. 1a–13b reported in scholarly study | 0 | No | 0 | Registry only |
 | SHI-ASR, *Asrār al-surūr* | Bursa Hüseyin Çelebi 479 and Ragıp Paşa 1469 reported, no full manuscript obtained | 0 | No | 0 | Registry only |
@@ -44,7 +44,7 @@ The counts below concern passages supplied in the working reader, not complete p
 - QUN-NU-003-C, the statement that knowledge follows existence, has been translated in full and checked against the separate printed edition (printed p. 44, PDF index 39). The final sentence has a materially different wording in the two accessible witnesses. **The English corresponding to the online reading is marked provisional.**
 - QUN-NU-004-A and 004-B now translate Qūnawī's explicit distinction between special, name-conditioned stations and the most comprehensive station. This primary passage should be the baseline for the planned study of how metaphysical terminology shifts with perspective.
 - QUN-NU-005-A gives a source-located full translation of the passage on the unseen of divine Identity, the most comprehensive determination, and principiality under the essential relation of knowledge.
-- **Current bilingual working records: 27** (Qūnawī 25; al-Iznīqī 2). No complete medieval book has been translated and no actual manuscript leaf has yet been collated.
+- **Current bilingual working records: 54** (Qūnawī 47; al-Iznīqī 7). No complete medieval book has been translated and no actual manuscript leaf has yet been collated.
 
 ## Primary translation priorities (not merely thematic notes)
 **1. Complete al-Iznīqī.** Finish printed 831–850+ in Arabic–English paired units: preface; introductory discussions of `ʿilm` and `maʿrifa`; all four chapters; Qurʾān and hadith citations; Persian poetry; conclusion. The existing Stage 2 English draft translated seven consecutive rational arguments on pp. 835–836 plus selected later passages, but the Arabic transcript and many paragraphs are missing. No coverage of a page is awarded merely because one sentence was read.
@@ -59,6 +59,13 @@ The counts below concern passages supplied in the working reader, not complete p
 - Each bilingual Qūnawī passage now links directly to one or more sections in the existing al-Mahāʾimī reader, and that reader links back to the Qūnawī base text. Deep-link fragment scrolling is explicitly supported after dynamic section insertion.
 - A link means **textual correspondence**, not doctrinal agreement. A section may quote the lemma and continue into interpretation, so the mapping is not always one lemma to one commentary paragraph.
 - The coverage ledger is at [COVERAGE_LEDGER.csv](COVERAGE_LEDGER.csv), and all earlier original translations and attribution cautions are preserved in [PREVIOUS_STAGES_1-2.md](PREVIOUS_STAGES_1-2.md). Check each new release with `node tests/qunawi_reader_qa.js` and `node --check texts/sadr-al-din-al-qunawi/al-nusus/reader.js`.
+
+## Retry checkpoint — 9 November 2026
+This register now reflects **54** bilingual records as identifiable excerpts (Qūnawī 47, al-Iznīqī 7). The earlier 2023 edition of al-Iznīqī has been inspected in PDF page images. Five additional bilingual source-located records cover his preface and discussion of technical knowledge, ʿilm/maʿrifa, heresy accusations, possibility and occurrence of essential knowledge, and the philosophical arguments. **Their presence does not amount to full translation of pp. 831–833 or of the treatise.** The earlier English-only renderings of all seven rational arguments remain in the preserved cumulative dossier.
+
+The appendix-like Text 20 was marked *naṣṣ mulḥaq* explicitly by the source's editorial note at its source p. 261, which reads `وقع في الأصل: ومن كلامه قدس روحه وهو نص ملحق ولكن هكذا وجدت النسخة التي كتبت منها وهي بخط بعض الأفاضل`. Therefore all *QUN-NU-020-* clauses remain `attribution-provisional-appended-text`, not manuscript-secure additions to the authorial matn.
+
+GitHub Actions 'Qūnawī bilingual source-reader and concordance QA' and GitHub Pages build both succeeded for commit `6ae8d76` before subsequent content additions. The new commit still requires its own CI and deployment check; inability to fetch the live site independently is not the same as evidence of non-deployment.
 
 ## Website implementation
 Reader: `texts/sadr-al-din-al-qunawi/al-nusus/`, JSON source `data/parallel.json`, styles and script under the same directory. Supports Arabic / English / both, 7-work corpus shelf, paragraph selection, cross-work links, search, editorial note toggle, themes, reader bookmarks, copyable source anchors, direct JSON export and responsive mobile layout. Pages with no Arabic source are explicitly empty. This is the initial implementation, not a claim of complete reader parity with the Darūrī application's full research features.
