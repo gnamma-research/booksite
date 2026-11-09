@@ -1,0 +1,112 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R14h",
+  "date": "2026-11-09",
+  "startSection": "4.791",
+  "endSection": "4.800",
+  "sourceRepo": "OpenITI/0850AH",
+  "sourceCommit": "e2715c62fb458ce3ddc43b962cd55677cdd7bc35",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.791",
+      "number": 791,
+      "pageStart": 501,
+      "pageEnd": 502,
+      "arabic": "الأصل الأول. في أن جميع الصور المدركة في العالم عقلية روحانية كانت أو مثالية وخيالية أو حسية، هي صور الحقائق الأسمائية والمراتب الإلهية والكونية وصور لوازم الحقائق والمراتب من النسب المتفصلة إلى الصفات - ان لم ينفك عنها ما دامت هي - وإلى العوارض - ان لزمتها بشرط أو شروط فيتوقف على ذلك - وهذه كالأحوال المتحولة وغيرها من الاحكام التي هي الآثار المترتبة، ولكون المراتب هي الحقائق الكلية المعتبر فيها لحوق لواحقها اللازمة أو العارضة كانت أخص من الحقائق. ولوضوح هذا الأصل مقدمات تنبيهية:",
+      "english": "First Principle: All forms apprehended in the world, whether intelligible and spiritual, imaginal and imaginative, or sensory, are images of the realities of the Names and of divine and cosmic degrees. They are also images of what follows upon those realities and degrees: relations that are differentiated into attributes if they never cease to accompany the realities so long as they remain what they are; and into accidents if they accompany them under one or more conditions, and therefore depend on those conditions. Such accidents include changeable states and other rulings that arise as consequences. Since the degrees are universal realities considered together with the attachment to them of their necessary or accidental concomitants, degrees are more specific than realities considered simply. Several introductory premises make this principle clear.",
+      "notes": "New Second Chapter's First Principle begins here. Fundamental distinctions: ḥaqīqa vs martaba, necessary concomitant vs conditioned ʿāriḍ, representation across intelligible, imaginal and sensory degrees.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.792",
+      "number": 792,
+      "pageStart": 502,
+      "pageEnd": 502,
+      "arabic": "المقدمة الأولى: ان أصول أصول العوالم واعم عمومها في العقلية اللوح والقلم، وفي المثالية الطبيعة الكلية التي هي محل عالم المثال معتبرة في الهباء الذي هو محل كيفياتها، وفي الحسية الطبيعة الجزئية العنصرية، ففي الجوهرية العرش والكرسي والأفلاك والكواكب والشمس والقمر والعناصر المطلقة، وفي العرضية أنوار الكواكب وحركات الأفلاك.",
+      "english": "First premise: The most universal foundations of the worlds, at the intelligible degree, are the Tablet and the Pen. At the imaginal degree the corresponding foundation is Universal Nature, which is the locus of the World of Images insofar as it is considered within the primordial dust [al-habāʾ], the bearer of its qualities. At the sensory degree it is particular, elemental Nature. In regard to substances, its manifestations include the Throne, Footstool, spheres, planets, Sun, Moon and the unrestricted elements; in regard to accidents, they include planetary lights and the motions of the spheres.",
+      "notes": "The distinctions intelligible/imaginal/sensible and substantial/accidental are preserved. No claim that natural philosophy corresponds to modern physics.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.793",
+      "number": 793,
+      "pageStart": 502,
+      "pageEnd": 502,
+      "arabic": "قال الشيخ قدس سره في الفلك السليماني: وبعالم الحس الذي أوله صورة العرش المحيط بجميع المحسوسات المحدد للجهات انتهى السير المعنوي الوجودي الصادر من غيب الهوية في مراتبه الكلية للظهور، لان ما بعد العرش انما هو تفصيل وتركيب، لهذا صدق سر الاستواء الرحماني عليه بمعنى التمامية في درجات السير المعنوي لتكميل مراتب ظهورات الوجود وبمعنى الاستيلاء الحكمي المنبث من العرش ومما فوقه في السماوات والأرض وما بينهما، ولم يزل الامر يتدرج في السير حتى انتهى إلى النوع الإنساني فكان هدفا لجميع القوى الطبيعية والسماوية والتوجهات الملكية والآثار الفلكية. تم كلامه.",
+      "english": "The Shaykh—may his secret be sanctified—said in al-Falak al-Sulaymānī: 'The sensible world begins with the form of the Throne, which encompasses all perceptible things and determines directions. Here the intelligible, existential journey proceeding from the Unseen Identity reaches its end in the universal degrees of manifestation, because everything beneath the Throne is differentiation and composition. Thus the mystery of the Merciful's istiwāʾ is truly predicated of it: as completeness in the degrees of the intelligible journey, perfecting the degrees in which existence becomes manifest, and as the ruling of sovereignty proceeding from the Throne and what lies above it through the heavens, earth, and all between them. The command continued to descend stage by stage until it reached the human species, which was the goal of every natural and heavenly power, angelic orientation, and celestial effect.' Thus far his words.",
+      "notes": "The book title «الفلك السليماني» requires bibliographical verification. The two senses of istiwāʾ are completeness and ruling sovereignty, not bodily enthronement.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.794",
+      "number": 794,
+      "pageStart": 502,
+      "pageEnd": 503,
+      "arabic": "المقدمة الثانية: ان المظهر كما يكون للأسماء مطلقا، فقد يترتب المظهرية بحسب المراتب وينتهى إلى الانسان وإلى انهى دركات الجزئية الحسية ويبتدئ من التعين الأول، فالمحسوسات مظاهر المثاليات والروحانيات، والأشباح مظاهر الأرواح ثم الأرواح مظاهر المعاني والحقاق وهى مظاهر النسب الأسمائية والعلمية المشتمل على كلها تفصيل التعين الثاني ورتبة الواحدية، وهى مظهر التعين الأول والوحدة الحقيقية المطلقة الجامعة للواحدية والأحدية، وهو أول مظهر للغيب الإلهي المطلق، لذا سماه الشيخ قدس سره في التفسير. أول مراتب الشهادة نزولا وتركيبا وآخرها عروجا وتحليلا.",
+      "english": "Second premise: Just as a locus may manifest the Names considered without restriction, manifestation may also be ordered according to the degrees. It reaches the human being and the lowest depths of sensory particularity, while beginning from the First Determination. Sensibles are loci of manifestation for imaginal forms and spirits, bodily figures are loci for spirits, spirits are loci for intelligible meanings and realities, and these are loci for the relations of the Names and Knowledge. Their entirety is included in the differentiation of the Second Determination and the degree of Wāḥidiyya. That degree manifests the First Determination and absolute Real Unity, which gathers Wāḥidiyya and Aḥadiyya and is the first locus of manifestation of the Absolute Divine Unseen. For that reason the Shaykh, may his secret be sanctified, called it in his commentary the first degree of witnessing in descent and composition and the last degree of witnessing in ascent and analysis.",
+      "notes": "The two directions are crucial: first witnessing descending, last ascending. Distinguish first and second determinations.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.795",
+      "number": 795,
+      "pageStart": 503,
+      "pageEnd": 503,
+      "arabic": "المقدمة الثالثة: ان المظاهر الكلية للحقائق الكلية الأصلية والجزئية للجزئية، وبالجملة فالمظاهر حاكية للظواهر بما هي عليه حتى قلنا: هي عينها ذاتا وحقيقة وغيرها بنسبة الظهور والتعين الرتبي.",
+      "english": "Third premise: Universal loci of manifestation correspond to original universal realities, and particular loci to particular realities. In general, loci reproduce the realities manifested in their actual character; thus we have said that they are identical to them in essence and reality but other than them by the relation of manifestation and ranked determination.",
+      "notes": "This is a viewpoint-qualified ontological identity, not unqualified numerical identity between all separate entities.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.796",
+      "number": 796,
+      "pageStart": 503,
+      "pageEnd": 503,
+      "arabic": "قال الشيخ قدس سره في فك الفص المحمدي: اعلم أن كل نبي مظهر من مظاهر الحق تعالى، لكن من حيثية مخصوصة يتعين للحق من حيثها اسم من شأنه لا يستند ذلك الموجود إلى الحق الا من تلك الحيثية، وهكذا شأن كل موجود، غير أن الأنبياء والأكابر مظاهر الأسماء الكلية التي نسبتها إلى أسماء بقية الموجودات وعموم الناس نسبة الأجناس والأنواع إلى الاشخاص، بهذا حصل بين الأنبياء والأولياء تفاوت في الحيطة وإليه أشار صلى الله عليه وآله في حديث القيامة: انه يجيئ النبي ومعه الرهط والنبي ومعه رجلان والنبي ومعه الواحد والنبي وحده وليس معه أحد، وقصارى أمر الأكابر من أهل الله ان ينتهى ارتباطهم بالحق صعدا إلى التعين الأول التالي للأحدية الذاتية الجامع للتعينات كلها، غير أن شأن نبينا صلى الله عليه وآله والكمل من ورثته مع التعين الأول مخالف لشأن غيرهم من الأنبياء والأولياء وغيرهم، بان هذا التعين ليس غايتهم من كل وجه في معرفة الحق واستنادهم إليه، بل هم متفردون بحال يخصهم لا يعرفه بعد الحق سواهم، ولا يذكره الكامل المكمل الا لمن اطلع على أنه لا بد ان يصير كاملا تربية له. تم كلامه.",
+      "english": "The Shaykh—may his secret be sanctified—said in the commentary on the Muḥammadan chapter of the *Fuṣūṣ*: 'Know that every prophet is a locus of manifestation of the Real, but in a particular respect through which a Name becomes determined for the Real; that existent is related to the Real only from that respect. Such is the case with every existent. Prophets and the great ones, however, manifest universal Names; the relation of these Names to those of the remaining beings and ordinary people is like that of genera and species to individuals. This accounts for the different degrees of comprehensiveness among prophets and saints. The Prophet, may God bless him and his family, alluded to this in the report of the Resurrection: a prophet will come accompanied by a company, another by two men, another by one person, and yet another alone with nobody. The highest extent of the great ones among the people of God is that their ascending connection to the Real reaches the First Determination immediately following the Essential Aḥadiyya and comprehending every determination. But the station of our Prophet, may God bless him and his family, and of the perfected ones among his inheritors toward the First Determination differs from that of other prophets, saints, and people. This determination is not in every respect the end of their knowledge of the Real or their relation to Him: they are uniquely distinguished by a state that none after the Real knows except themselves. The perfected guide does not mention it except to someone whom he knows must become perfected, to nurture that person's development.' Thus far his words.",
+      "notes": "Crucial for comparison of muḥammadan reality vs first determination: the first is not simply equated with the ultimate limit of the Prophet's rank. Identify the exact text `فك الفص المحمدي` of Qūnawī and compare report wording.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.797",
+      "number": 797,
+      "pageStart": 503,
+      "pageEnd": 503,
+      "arabic": "إذا عرفت هذه المقدمات فنقول: صورة الوجود المطلق وحكمه من حيث هو محال ان يوجد، إذ لا تعلق ولا نسبة له من تلك الحيثية بشئ أصلا ولا عمل الا بحسب المقتضى، وكذا من حيث أحديته الذاتية، لأنها سلب الاعتبارات، فعدم التأثير من حيثها أولي.",
+      "english": "With these premises understood, we say: It is impossible for absolute Being, considered simply as itself, to have a manifest form or effective ruling, for in that respect it has no attachment or relation to anything whatsoever, and there is no action except according to some determining exigency. The same holds of its Essential Aḥadiyya, since that negates every consideration; still more decisively is efficacy denied from that respect.",
+      "notes": "Strong apophatic distinction: no determination/effect qua absolute Being or qua Essential Oneness; the following objection tests the claim.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.798",
+      "number": 798,
+      "pageStart": 503,
+      "pageEnd": 504,
+      "arabic": "فان قلت: قد وصف الشيخ قدس سره في النفحات الحقيقة المطلقة للوجود، بما أنشده بقوله: ووراء ذلك لا أشير لأنه * * سر لسان النطق عنه أخرس أمر به وله ومنه تعينت * * أعيناننا ووجوده المتلبس",
+      "english": "If you object: The Shaykh, may his secret be sanctified, described the absolute reality of Being in al-Nafaḥāt by quoting the verses: 'Beyond this I offer no indication, for it is a mystery before which speech is mute. By it, for it, and from it our fixed entities were determined, and its Being became clothed [in their forms].'",
+      "notes": "The embedded verses have uncertain punctuation and metrically incomplete witness line; the English is provisional and the poet/variant should be independently checked. The user-supplied Arabic is preserved without conjectural completion.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.799",
+      "number": 799,
+      "pageStart": 504,
+      "pageEnd": 504,
+      "arabic": "ففيه ان تعين الأعيان من المطلق، فالأعيان صوره وكذا وجوده المتلبس بأعياننا تعين منه.",
+      "english": "The verses suggest that the fixed entities are determined from the Absolute, so that they are its forms; and likewise Being as clothed in our fixed entities becomes determined from it.",
+      "notes": "Completes the objection based on the lines in al-Nafaḥāt.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.800",
+      "number": 800,
+      "pageStart": 504,
+      "pageEnd": 504,
+      "arabic": "قلت: نعم قد لكن لا من حيث هو هو وما نفينا الا ذلك، بل من الحيثية الثانية الآتية الاقترانية وهى قولنا: اما من حيث عروضه، أي اقترانه النزيه المقدس بما ظهر من الحقائق المستجنة فيه أزلا والمستهلكة في رتبة الأحدية، فصورته وحكمه واثره مطلق ظاهر النور الذي به الادراك الحسى، والمناسبة ظاهرة، فكما يوجد الأشياء بالوجود وتعلقه وبه وجدان الشئ نفسه وغيره، كذلك يدرك بالنور وتعلقه وبه ظهور الشئ، وإلى هذه المناسبة الإشارة بوصف النور بما به الادراك الحسى، وانما وصفناه بالحسي دلالة على أن سببية النور للظهور بالغة حد النهاية حتى إلى انهى مراتب الادراك، والا فنورية الأرواح التي هي مظاهر الأسماء الإلهية - كما سيجئ - مندرجة تحت هذا الأصل، فقولنا (وحكمه) بعد قولنا (صورة الوجود المطلق) يحتمل ان يكون مرفوعا بيانا، لان صورة الشئ اثره وحكمه الثابت به، وأن يكون مجرورا بيانا، لان النور كما هو صورة الوجود المقترن، فتنويره صورة اقترانه المسمى بالموجودية التي هي حكم الوجود، أي حاله ونسبته، والتوجيه الأول هو هو.",
+      "english": "I reply: Yes, but not insofar as it is itself, and that is all we denied. Rather it is in the second, conjunctional respect to be mentioned next. We say: insofar as it 'comes to be attached'—that is, becomes joined without compromise of its transcendent purity to what appears of the realities eternally concealed within it and subsumed at the degree of Aḥadiyya—its form, ruling and effect are the unrestricted manifestation of light, by which sensory apprehension occurs. The analogy is plain: just as things exist through Being and its attachment, and through that attachment a thing finds itself and other things, so also apprehension arises through light and its attachment, whereby things become manifest. This correspondence is indicated by the description of light as that by which sensory apprehension takes place. 'Sensory' is specified to show that light's role in manifestation extends to the final limit of apprehension; for the luminosity of spirits, which are the loci of the divine Names, also falls under this principle, as will be explained. The phrase 'and its ruling', following 'the form of absolute Being', admits two grammatical readings: in the nominative, as an explanatory restatement, since the form of something is its effect and ruling established through it; or in the genitive, as explanatory of 'Being', since just as light is the form of Being in conjunction, its illumination is the form of the conjunction called 'existentness' [mawjūdiyya], which is the ruling of Being, that is, its state and relation. The first interpretation is the preferred one.",
+      "notes": "Distinctly translate ontological attachment from intrinsic determination. Nominative/genitive parsing of «وحكمه» is explicit grammatical reasoning in source, not editorial invention.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    }
+  ]
+}
