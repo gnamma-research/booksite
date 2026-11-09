@@ -1,0 +1,212 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R12a",
+  "date": "2026-11-09",
+  "startSection": "4.578",
+  "endSection": "4.597",
+  "sourceRepo": "OpenITI/0850AH",
+  "sourceCommit": "e2715c62fb458ce3ddc43b962cd55677cdd7bc35",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.578",
+      "number": 578,
+      "pageStart": 446,
+      "pageEnd": 446,
+      "arabic": "وانما كان أتم لاشتماله على جهة ربط الوحدة بالكثرة وعلى اعتباري الوجوب والامكان والبطون والظهور.",
+      "english": "This third consideration is more complete because it embraces the aspect that joins unity to multiplicity, together with the two considerations of necessity and possibility, and of inward concealment and outward manifestation.",
+      "notes": "The referent of “more complete” is the third perspective in §4.577.",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.579",
+      "number": 579,
+      "pageStart": 446,
+      "pageEnd": 446,
+      "arabic": "ومن وجه رابع أدق من الوجوه الثلاثة السالفة وأحق باعتبار جلاله، انها احكام وحدته التي هي عين التعين الأول وأحواله مستجنة في غيب ذاته المعتلى حكمها على الأسماء والصفات وعلى كل كثرة وتعين وظهور وتجل، وانما كان أدق لأنه اعتبار الكثرة في محل استهلاكه واستجنانه، فهو أحق أيضا باعتبار جلاله، لكن ظهرت تلك الحقائق من باطنه سبحانه لظاهره، لان ترى أعيان الحق أنفسها كلا ويرى بعضها بعضا، إذ لا يرى كل أحد كلها، بل الحاصل من الوجود العيني ظهور كل حقيقة لنفسه وبعض الحقائق لبعضها.",
+      "english": "From a fourth perspective, subtler than the preceding three and more appropriate to the consideration of His majesty, these realities are the rulings of His unity—which is identical with the first determination—and its states, concealed within the unseen depth of His Essence, whose sovereignty transcends the Names and attributes and every multiplicity, determination, manifestation, and self-disclosure. This perspective is subtler because it considers multiplicity at the very locus where it is effaced and concealed; for that reason it is also more befitting His majesty. Yet these realities appeared from His inwardness to His outwardness so that the concrete realities of the Real might each behold themselves as a whole and that some might behold others. Not each sees all of them. What is attained through concrete existence is the manifestation of each reality to itself and of some realities to others.",
+      "notes": "The phrase “the concrete realities of the Real” translates أعيان الحق; do not collapse these into independently existing substances.",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.580",
+      "number": 580,
+      "pageStart": 446,
+      "pageEnd": 446,
+      "arabic": "فاما ظهورها للحق بدون ظهورها لشئ من أنفسها، فحاصل في الحضرة العلمية قبل الوجود العيني، وذلك الظهور مشتمل على نفس الظهور وعلى خصوصيته، فنفس الظهور بحسب حكم الحق من حيث استعداداتها، وخصوصيات الظهور بحسب احكام تعيناتها، ففي كل وجود عيني خلق تعينه العيني الوجودي صورة تعينه العلمي النسبي، بل صورة التجلي الاحدى حسب استعداد التعين العلمي، وحق بلا حلول واتحاد وانقسام، بل بأحدية حقيقية دائمة ثابتة - ولو حال لحوق الاحكام - وفيه تميز غير ما عقل من التميز الحسى أو الخيالي أو المثالي لثبوته، ولو فرضنا عدم حس أو ذهن أو خيال وهو التمييز بين الشئ من حيث نفس ذاته وبينه من حيث صور نسبه وصفاته.",
+      "english": "Their manifestation to the Real, without their appearing to any of themselves, takes place in the Presence of Knowledge before concrete existence. That manifestation comprises both manifestation as such and its particularity. Manifestation as such is according to the ruling of the Real in relation to their preparednesses; its particular features are according to the rulings of their determinations. Thus, in every concrete existence, the creaturely aspect—its concrete existential determination—is an image of its relational determination in knowledge, indeed an image of the unitive self-disclosure according to the preparedness of its determination in knowledge. The Real is present without indwelling, union, or division, but through an actual, enduring, stable unicity, even when rulings become attached. There is here a distinction unlike the sensory, imaginary, or imaginal distinctions usually conceived: it remains established even if one supposes that there is no sense, intellect, or imagination. It is the distinction between a thing considered in respect of its own essence and that same thing considered in respect of the forms of its relations and attributes.",
+      "notes": "Key distinction: “creature” and “Real” as considerations of a single concrete manifestation, not ḥulūl or ittiḥād. Syntax of خلق … وحق should be checked against print.",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.581",
+      "number": 581,
+      "pageStart": 446,
+      "pageEnd": 447,
+      "arabic": "وفيه وحدة غير ما فهم من الوحدة العددية الجنسية أو النوعية أو الشخصية أو الوصفية أو الذاتية المنطقية أو العرضية أو غيرها، وفيه كثرة غير الكثرة المقابلة لها، فوحدته الاطلاقية التي هي انها هي التي ليست هي بمقتضية للوحدة العددية ولا بمنافية للكثرة المقابلة لها، بل باقية على حالها مع كل تعين وتميز وكثرة ووحدة، فافهم نسبة ما بين المطلق ومقيداته والباطن وصوره الظاهرة، ولا تحصر أمر الحق فيما بلغك انه مباين للخلق، # ولا فيما يرى أنه منحصر في البعض، كحصر النصارى في المسيح القائلين: ان الله هو المسيح بن مريم، فهذا البيان غريب، بعيد لمن تعدى حدا من حدود اطلاق الحق أو اتخذ عند الرحمن وجها معهودا محصورا، قريب لمن لم يتعد حدا ولم يتخذ عند الرحمن عهدا، بل كان بالذات والحقيقة سيدا، وبالفعل والشريعة والحال والطريقة عبدا.",
+      "english": "In this there is a unity other than what is understood by numerical, generic, specific, personal, descriptive, logical-essential, accidental unity, or any other such unity; and there is a multiplicity other than the multiplicity opposed to these. For His absolute unity is precisely what it is: it neither entails numerical unity nor excludes the multiplicity opposed to numerical unity, but remains what it is alongside every determination, distinction, multiplicity, and unity. Understand, then, the relation of the Absolute to its restrictions, and of the inward to its outward forms. Do not confine the affair of the Real to what has reached you concerning His being distinct from creation, nor to what is thought to restrict Him to a particular part—as Christians restrict Him to Christ when they say, “God is the Messiah, son of Mary.” This exposition is strange and remote to anyone who transgresses one of the limits of the Real's absoluteness or adopts a familiar, circumscribed face toward the All-Merciful. It is near to one who neither transgresses a limit nor presumes a fixed pact before the All-Merciful, but is essentially and in reality a master, and in action, revealed law, state, and path a servant.",
+      "notes": "The contrast is between unrestricted divine reality and restriction to a determinate locus; avoid reading “master” as an assertion of a second deity. Biblical/Qurʾānic polemic is translated, not editorial endorsement.",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.582",
+      "number": 582,
+      "pageStart": 447,
+      "pageEnd": 447,
+      "arabic": "الأصل الرابع عشر في تعين صورة الكرسي بعد تعين صورة العرش. فنقول: ثم ظهر عن الحق لأنه مبدأ كل ظهور وبه، أي بتجليه الاحدى الساري في المراتب وبواسطة ما ذكر سابقا من المراتب الإلهية والمظاهر الكونية، مضافا إلى المجموع تأثير حركة العرش الظاهرة، لأنها صورة حركة التجلي الحبى دورية نزيهة طالبة لقوابل سائلة بالسنة استعداداتها ما به يظهر كمالاتها الممكنة، فظهر في صورتها خاصيتها ثم اثر صورته في صورة الكرسي، وكذا ظهر من روحه - وهو القلم - روح الكرسي وهو النفس الكل التي هي اللوح المحفوظ، وكذا من حركته، حركته الدورية لبساطته مثله.",
+      "english": "[Fourteenth principle: On the determination of the form of the Footstool (al-kursī) after the determination of the form of the Throne (al-ʿarsh).] We say, then: there appeared from the Real—because He is the beginning of every manifestation, and by Him, that is, by His unitive self-disclosure pervading the degrees and through the divine degrees and cosmic loci of manifestation already mentioned—a further effect added to their totality: the effect of the manifest movement of the Throne. For this movement is the form of the circular, transcendent movement of loving self-disclosure, seeking receptive subjects that ask, through the tongues of their preparednesses, for that by which their possible perfections might appear. Its distinctive property thus appeared in the Throne's form, and the latter's form then affected the form of the Footstool. Likewise, from its spirit—the Pen—there appeared the spirit of the Footstool: the Universal Soul, which is the Preserved Tablet; and from its movement appeared the Footstool's circular movement, given its simplicity like the Throne.",
+      "notes": "Heading supplied from the source immediately before §4.582. “Movement” denotes an Akbarian cosmological account, not a verified physical phenomenon.",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.583",
+      "number": 583,
+      "pageStart": 447,
+      "pageEnd": 447,
+      "arabic": "قال في التفسير: ظهر العرش الذي هو مظهر الوجود المطلق ونظير القلم وصورة الاسم المحيط ومستقر الاسم الرحمن وكامل مظهر المدبر، ثم الكرسي الذي هو مظهر الوجودات المتعينة من حيث ما هي متعينة ونظير اللوح المحفوظ ومستقر الاسم الرحيم وكامل مظهر المفصل.",
+      "english": "He says in the Commentary: The Throne appeared as the locus of manifestation of absolute existence, the counterpart of the Pen, the form of the all-encompassing Name, the seat of the Name al-Raḥmān, and the complete locus of manifestation of the One Who governs. Then the Footstool appeared as the locus of manifestation of determinate existences insofar as they are determinate, the counterpart of the Preserved Tablet, the seat of the Name al-Raḥīm, and the complete locus of manifestation of the One Who differentiates in detail.",
+      "notes": "The source marks this as a citation from Qūnawī's Tafsīr; distinguish it from Fanārī's connective exposition.",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.584",
+      "number": 584,
+      "pageStart": 447,
+      "pageEnd": 448,
+      "arabic": "وقال الشيخ الكبير رضي الله عنه في عقلة المستوفز: أول صورة قبل الهباء صورة الجسم المطلق وهو الطول والعرض والعمق، طوله من العقل وعرضه من النفس وعمقه الخلاء إلى المركز وهو الجسم الكل، وأول شكل قبله الشكل الكرى وكان الفلك فسماه العرش واستوى عليه بالاسم الرحمن، الاستواء الذي يليق به من غير تشبيه # وتكيف، وهو أول عالم التركيب وكان استوائه عليه من العماء وهو عرش الحياة وهو عرش نسبى ليس له وجود الا بالنسبة وجعل له سبحانه حملة ثمانية يحملونه يوم القيامة - واما اليوم فيحمله منهم أربعة -",
+      "english": "The Great Master—may God be pleased with him—says in ʿUqlat al-mustawfiz: The first form prior to primeval dust (al-habāʾ) is the form of absolute body, constituted by length, breadth, and depth. Its length comes from Intellect, its breadth from Soul, and its depth from the void extending to the centre; this is the Universal Body. The first shape it received was the spherical shape, and it became a celestial sphere. He called it the Throne, and the All-Merciful established Himself over it by the Name al-Raḥmān, with an establishing befitting Him, without likeness or specification of modality. It is the first world of composition; His establishing over it is from the Cloud (al-ʿamāʾ). It is the Throne of Life, a relational throne with no existence except through relation. God—glory be to Him—appointed eight bearers to bear it on Resurrection Day, whereas today four of them bear it.",
+      "notes": "Attributed quotation from Ibn ʿArabī's ʿUqlat al-mustawfiz. Must check quotation and ʿamāʾ/Throne terminological distinctions against his own text.",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.585",
+      "number": 585,
+      "pageStart": 448,
+      "pageEnd": 448,
+      "arabic": "الأول على صورة إسرافيل والثاني على صورة جبرائيل والثالث على صورة ميكائيل والرابع على صورة رضوان والخامس على صورة مالك والسادس على صورة آدم والسابع على صورة إبراهيم والثامن على صورة محمد عليه وآله وعليهم السلام، وهذه صور مقاماتهم لا صور نشئاتهم.",
+      "english": "The first [bearer] has the form of Isrāfīl, the second the form of Gabriel, the third the form of Michael, the fourth the form of Riḍwān, the fifth the form of Mālik, the sixth the form of Adam, the seventh the form of Abraham, and the eighth the form of Muḥammad—peace be upon him, his family, and all of them. These are the forms of their stations, not the forms of their bodily constitutions.",
+      "notes": "This is a report about symbolic stations, not a claim that the named individuals are literally angels with interchangeable bodies.",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.586",
+      "number": 586,
+      "pageStart": 448,
+      "pageEnd": 448,
+      "arabic": "قال ابن مسرة الجيلي: فإسرافيل وآدم للصور وجبرئيل ومحمد للأرواح وميكائيل وإبراهيم للارزاق ورضوان ومالك للوعد والوعيد، وعمر سبحانه هذا الفلك بالملائكة الحافين وهم الواهبات، وهنا مقام إسرافيل وهم فم القرن ومن هنا سمع الرسول صلى الله عليه وآله صريف الأقلام وهنا نزل الوقوف، ومن هنا غلبت عليه حال الفناء وتجرد عن عالم التركيب ونودي بصوت علي بن أبي طالب عليه السلام: # قف قد ان ربك يصلى، ثم تلا عليه: هو الذي يصلى عليك (عليكم) وملائكته (43 - الأحزاب) وهو أحد الحجب الثلاثة تلقى بين أهل الجنة وبين الحق إذا جمعوا للرؤية، والفلكان بعده.",
+      "english": "Ibn Masarra al-Jīlī says: Isrāfīl and Adam pertain to forms; Gabriel and Muḥammad to spirits; Michael and Abraham to provisions; and Riḍwān and Mālik to promise and threat. God inhabited this sphere with the angels ranged around it, the bestowers, and here is Isrāfīl's station, at the mouth of the Horn. From here the Messenger—peace be upon him and his family—heard the scratching of the pens; here the standing-still descended. From here the state of annihilation overcame him and he became detached from the world of composition, and a voice in the voice of ʿAlī ibn Abī Ṭālib—peace be upon him—called out: “Stop, for your Lord prays [blesses].” He then recited to him: “He it is Who bestows blessings upon you, and His angels” (Qurʾān 33:43). This is one of the three veils interposed between the inhabitants of Paradise and the Real when they are assembled for the Vision; the two spheres following it are the others.",
+      "notes": "Electronic witness reads ابن مسرة الجيلي, requires verification of name and quotation. Recital/station report not authenticated. In §33:43 Arabic is هُوَ الَّذِي يُصَلِّي عَلَيْكُمْ وَمَلَائِكَتُهُ; printed text shows عليك (عليكم).",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.587",
+      "number": 587,
+      "pageStart": 448,
+      "pageEnd": 449,
+      "arabic": "قال: ثم أدار الفلك الاخر وسماه الكرسي وهو في جو العرش كحلقة ملقاة في فلاة، وخلق بين هذين الفلكين عالم الهباء وعمر الكرسي بالملائكة والمدبرات وأسكنه ميكائيل، وتدلت عليه القدمان، فالكلمة واحدة في العرش، لأنه أول عالم التركيب وظهر لها في الكرسي نسبتان، لأنه الفلك الثاني، فعبر عنهما في الوجود بالقدمين، وعن هذين الفلكين تحدث الاشكال الغريبة في عالم الأركان، وعنهما يكون خرق العادات # ويظهر في عالمين: عالم الخيال كقوله تعالى: يخيل إليه من سحرهم انها تسعى (66 - طه) وفي عالم الحقيقة: مثل المعجزات والكرامات، ومنهما كانت الخواص للأشياء التي تفعل بالخاصية.",
+      "english": "He says: He then set another sphere in revolution and named it the Footstool. Within the atmosphere of the Throne it is like a ring cast into a vast open plain. Between these two spheres He created the world of primeval dust, and He inhabited the Footstool with the angels and governing agents, settling Michael in it. The Two Feet descended upon it. The Word is one in the Throne, for it is the first world of composition; in the Footstool, the Word acquired two relations, for this is the second sphere. These two relations are expressed in existence as the Two Feet. From these two spheres arise extraordinary configurations in the elemental world, and by them occur breaches of customary order. These appear in two worlds: in the world of imagination, as in the divine words, “It appeared to him, by their magic, that they were moving” (Qurʾān 20:66); and in the world of actuality, as with prophetic miracles and saintly marvels. From them also come those special properties of things which operate through their particular properties.",
+      "notes": "Preserve the explicit distinction between imagined magical appearances and actual miracles. The Two Feet is a traditional symbolic expression, not an anatomical assertion.",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.588",
+      "number": 588,
+      "pageStart": 449,
+      "pageEnd": 449,
+      "arabic": "قال: ثم أدار سبحانه في جوف الكرسي الفلك الأطلس، ونسبته إلى الكرسي نسبة الكرسي إلى العرش كحلقة في فلاة، وبينهما عالم الرفرف، وهى المعارج العلى، وفيه خلق عالم المثل الانسانية وتسبيحهم: سبحان من أظهر الجميل وستر القبيح. وهم عالم الحجب وفيه مقام جبرائيل وفيه الملائكة المقسمات وإليه ينتهى علم علماء الرصد ولا كوكب فيه والبروج فيه تقديرات، فهو يقسم على اثنى عشر قسما جعل في كل قسم ملكا من الملائكة وهو رئيس ذلك القسم تحف به ملائكة من المقسمات وسموا بأسماء صورهم في عالمنا.",
+      "english": "He says: God then made the starless sphere (al-falak al-aṭlas) revolve within the Footstool. Its ratio to the Footstool is like that of the Footstool to the Throne: a ring in a plain. Between them is the world of al-rafraf, the sublime ascents. Within it He created the world of human similitudes, whose glorification is: “Glory be to the One Who manifests beauty and conceals ugliness.” They are the world of veils. Here is Gabriel's station; here are the angels who apportion. To this point the knowledge of astronomical observers reaches. No star is in it: its zodiacal signs are determinations. Thus it is divided into twelve parts. In each part He placed an angel, the chief of that division, surrounded by angels of the apportioners; they were named after their forms in our world.",
+      "notes": "Al-rafraf and celestial divisions are left in their historical cosmological framework; not modern observational astronomy.",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.589",
+      "number": 589,
+      "pageStart": 449,
+      "pageEnd": 449,
+      "arabic": "فالملك الأول على صورة الميزان وطبيعة قسمه حار رطب، وولاه الحكم في عالم التكوين ستة آلاف سنة، وهو أول فلك دار بالزمان وفيه حدثت الأيام دون الليل والنهار، وكانت أول حركته بالزمان بهذا الملك، وقد استدار في زمان رسول الله صلى الله عليه وآله، قال عليه وآله السلام: ان الزمان قد استدار كهيئته يوم خلق، وجعل بيد هذا الملك مفتاح خلق الأحوال والتغيرات والزمان الذي خلق الله فيه السماوات والأرض وهو متحرك.",
+      "english": "The first angel is in the form of the Balance [Libra], and the temperament of his division is hot and moist. He was entrusted with governing the world of generation for six thousand years. This was the first sphere to revolve in time, in which days arose without night and day. Its first temporal revolution was under this angel; its revolution was completed in the age of the Messenger of God—peace be upon him and his family—who said: “Time has come round to the form it had on the day it was created.” In the angel's hand God placed the key to the creation of states, changes, and the time in which He created the heavens and earth. This angel is in motion.",
+      "notes": "Six thousand years belongs to the quoted symbolic chronology. Avoid treating it as a historical dating of the cosmos.",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.590",
+      "number": 590,
+      "pageStart": 449,
+      "pageEnd": 449,
+      "arabic": "والملك الثاني على صورة العقرب وطبيعة بيته بارد رطب، وولاه خمسة آلاف سنة، وبيده مفتاح خلق البارد وهو ساكن.",
+      "english": "The second is in the form of the Scorpion [Scorpio]. The nature of his house is cold and moist. He was given five thousand years; in his hand is the key to the creation of cold things, and he is at rest.",
+      "notes": "Preserve the witness's distribution of temperaments and periods even where at odds with other astrological systems.",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.591",
+      "number": 591,
+      "pageStart": 449,
+      "pageEnd": 449,
+      "arabic": "والثالث على صورة القوس وطبيعة بيته حار يابس، وولاه أربعة آلاف سنة، بيده أزمة الأجساد النورية والظلمانية ومفتاح خلق النبات.",
+      "english": "The third is in the form of the Archer [Sagittarius]. The nature of his house is hot and dry. He was given four thousand years; in his hand are the reins of luminous and dark bodies and the key to the creation of plants.",
+      "notes": "",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.592",
+      "number": 592,
+      "pageStart": 449,
+      "pageEnd": 450,
+      "arabic": "والرابع على صورة الجدي وطبيعة بيته بارد يابس، وولاه ثلاثة آلاف سنة، وهو متحرك، وبيده مفتاح الليل والنهار.",
+      "english": "The fourth is in the form of the Goat [Capricorn]. The nature of his house is cold and dry. He was entrusted with three thousand years and is in motion; in his hand is the key to night and day.",
+      "notes": "",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.593",
+      "number": 593,
+      "pageStart": 450,
+      "pageEnd": 450,
+      "arabic": "والخامس على صورة الدلو وطبيعة بيته حار رطب، وولاه الفى سنة، عليه سكون ووقار وبيده مفتاح الأرواح.",
+      "english": "The fifth is in the form of the Water-Bearer [Aquarius]. The nature of his house is hot and moist. He was entrusted with two thousand years; repose and dignity are upon him, and in his hand is the key to spirits.",
+      "notes": "",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.594",
+      "number": 594,
+      "pageStart": 450,
+      "pageEnd": 450,
+      "arabic": "والسادس على صورة الحوت وقسمه بارد يابس، ودولته الف سنة، وله اشتراك مع تلك الأجسام النورية والظلمانية، وبيده مفتاح خلق الحيوان.",
+      "english": "The sixth is in the form of the Fish [Pisces]. His division is cold and dry, his dominion is a thousand years, and he shares in the operations of those luminous and dark bodies. In his hand is the key to the creation of animals.",
+      "notes": "Source gives Pisces “cold and dry”; it has not been silently corrected to a standard elemental attribution.",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.595",
+      "number": 595,
+      "pageStart": 450,
+      "pageEnd": 450,
+      "arabic": "والسابع على صورة الكبش وقسمه حار يابس، وجعل دولته اثنى عشر الف سنة، وهو متحرك بيده مفتاح خلق الاعراض والصفات.",
+      "english": "The seventh is in the form of the Ram [Aries]. His division is hot and dry, and his dominion is made twelve thousand years. He is in motion; in his hand is the key to the creation of accidents and attributes.",
+      "notes": "",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.596",
+      "number": 596,
+      "pageStart": 450,
+      "pageEnd": 450,
+      "arabic": "والثامن على صورة الثور وقسمه بارد يابس، ودولته إحدى عشر الف سنة، ملك عليه وقار وتنبه، وعليه عمل السامري العجل، وبيده مفتاح خلق الجنة.",
+      "english": "The eighth is in the form of the Bull [Taurus]. His division is cold and dry and his dominion eleven thousand years. He is an angel marked by dignity and alertness; upon him the Sāmirī based his making of the calf. In his hand is the key to the creation of Paradise.",
+      "notes": "وعليه عمل السامري العجل syntactically compressed; “based his making” is provisional.",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    },
+    {
+      "id": "4.597",
+      "number": 597,
+      "pageStart": 450,
+      "pageEnd": 450,
+      "arabic": "التاسع على صورة التوأمين، قسمه حار رطب ودولته عشرة آلاف سنة، وله اشتراك مع فلك الأجسام وبيده مفتاح خلق المعادن.",
+      "english": "The ninth is in the form of the Twins [Gemini]. His division is hot and moist, his dominion ten thousand years, and he shares in the sphere of bodies. In his hand is the key to the creation of minerals.",
+      "notes": "",
+      "grade": "source-aligned first-pass; manuscript and printed-image collation pending"
+    }
+  ]
+}
