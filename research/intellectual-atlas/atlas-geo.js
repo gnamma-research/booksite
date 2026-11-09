@@ -19,6 +19,16 @@ const pointX=lon=>(lon+14)*8,pointY=lat=>(56-lat)*8;
 const link=u=>{try{if(!u)return "";const v=new URL(u,location.href);return /^https?:$/.test(v.protocol)?v.href:""}catch{return ""}};
 let atlas=null,records={events:[],places:[]},attached=false,root=null,expose={};
 function setData(d){records={events:d?.events||[],places:d?.places||[]};}
+function readHash(){
+ const p=new URLSearchParams(location.hash.slice(1));
+ S.layer=["both","author","work"].includes(p.get("geo_layer"))?p.get("geo_layer"):"both";
+ S.century=/^[1-9][0-9]?$/.test(p.get("geo_century")||"")?p.get("geo_century"):"all";
+ S.region=regions.includes(p.get("geo_region"))?p.get("geo_region"):"all";
+ S.quality=p.get("geo_quality")==="confirmed"?"confirmed":"all";
+ S.showContext=p.get("geo_context")==="1";
+ S.city=records.places.some(x=>x.id===p.get("geo_city"))?p.get("geo_city"):"";
+}
+function urlState(){return {geo_layer:S.layer,geo_century:S.century,geo_region:S.region,geo_quality:S.quality,geo_context:S.showContext?"1":"0",geo_city:S.city};}
 function init(target,api){root=target;expose=api||{};if(attached)return;attached=true;
  root.addEventListener("click",event=>{
   const t=event.target.closest("[data-geo-layer],[data-geo-century],[data-geo-region],[data-geo-quality],[data-geo-city],[data-geo-event],[data-geo-zoom],[data-geo-pan],[data-geo-clear],[data-geo-context],[data-geo-work]");
@@ -267,5 +277,5 @@ function render(works,subject,view){
  '<div class="geo-main-grid">'+svgMap(groups,view)+detailPanel(visible,works)+'</div>'+legend+narrative+
  '<p class="geo-method">Map evidence policy: an author’s birthplace, residence or death is <em>not</em> automatically the place of composition of that author’s books. The registered work events specify beginnings, completions and recensions separately. City coordinates locate modern reference points, not ancient buildings. The wider OpenITI and Alreq catalogues are not silently geocoded from titles or personal nisbas.</p></div>';
 }
-window.GNAMMAGeography={setData,init,render,debug:()=>({events:records.events.length,places:records.places.length,layer:S.layer,century:S.century,region:S.region,quality:S.quality,city:S.city,zoom:S.zoom,context:S.showContext})};
+window.GNAMMAGeography={setData,init,render,readHash,urlState,debug:()=>({events:records.events.length,places:records.places.length,layer:S.layer,century:S.century,region:S.region,quality:S.quality,city:S.city,zoom:S.zoom,context:S.showContext})};
 })();
