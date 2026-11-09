@@ -1,0 +1,262 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R15d",
+  "date": "2026-11-09",
+  "startSection": "4.901",
+  "endSection": "4.925",
+  "sourceRepo": "OpenITI/0850AH",
+  "sourceCommit": "e2715c62fb458ce3ddc43b962cd55677cdd7bc35",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.901",
+      "number": 901,
+      "pageStart": 532,
+      "pageEnd": 532,
+      "arabic": "ولما انقضى من مدة حركة هذا الفلك (1) ثلاث وستون الف سنة مما تعدون، خلق الله تعالى الدار الآخرة الجنة والنار اللتين أعدهما لعباده السعداء والأشقياء، وكان بين خلق الدنيا وخلق الآخرة تسعة آلاف سنة مما تعدون، ولتأخر خلقها (2) سميت آخرة والأولى دنيا (3)، ولم يجعل للآخرة منتهى، فلها البقاء الدائم، وجعل سقف الجنة هذا الفلك وهو العرش، والقصد الثاني من الكل وجود الانسان والقصد الأول معرفة الحق وعبادته التي لها خلق العالم كلها، فما من شئ الا وهو يسبح بحمده. ولما وصل الوقت المعين في علمه لإيجاد هذه الخليفة بعد ان مضى من عمر الدنيا سبع عشر الف سنة ومن عمر الآخرة الذي لا نهاية له في الدوام ثمان آلاف سنة، أمر الله تعالى بعض ملائكته ان يأتيه بقبضة من كل أجناس تربة الأرض - كما علم في الحديث - فاتاه بها وخمرها الله بيديه وجمع فيه الأضداد، وذلك في دولة السنبلة.",
+      "english": "When sixty-three thousand years of the movements of this sphere had elapsed by our reckoning, God created the abode of the Hereafter, Paradise and the Fire, prepared for His blessed and wretched servants. Nine thousand of our years separated the creation of the worldly abode and the creation of the other abode. Since the latter was created later, it was called the Hereafter [ākhira] and the former the nearer world [dunyā]. The Hereafter was given no terminal limit and therefore endures permanently, while the sphere of the Throne was made Paradise's roof. The secondary goal of all was the existence of the human being; the primary goal was knowing and worshipping the Real, for which the whole world was created, since nothing exists except that it glorifies Him with praise. When the time appointed in His Knowledge arrived to bring this vicegerent into existence—after seventeen thousand years of the present world's age and eight thousand of the never-ending Hereafter's age—God commanded one of His angels to bring a handful of each kind of earth, as is known from the report. The angel brought it, God worked it with His two hands, and He gathered opposites within it, during the dominion of Virgo.",
+      "notes": "Historical visionary chronology, not a modern dating of cosmological events; the 54k+9k+8k and 71k figures are explained by Fanārī in §§905–907. Verify linked report of earth collected by angel.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.902",
+      "number": 902,
+      "pageStart": 532,
+      "pageEnd": 533,
+      "arabic": "ثم الجسوم الانسانية التي هي أربعة أنواع: جسم آدم وجسم حواء وجسم عيسى وأجسام بني آدم، اختلفت في المبدأ مع الاجتماع في الصورة الانسانية والروحانية، لئلا يتوهم الضعيف العقل ان القدرة الإلهية أو الحقائق لا تعطى هذه النشأة الانسانية الا عن سبب واحد، ليعلم ان الله على كل شئ قدير، وقد جمع الله تعالى الأربعة في قوله: يا أيها الناس انا خلقناكم من ذكر - يريد حواء - وأنثى (13 - الحجرات) يريد عيسى، ومن مجموع الذكر والأنثى يريد بني آدم بطريق النكاح والتوالد، فهذه الآية من جوامع الكلم. فليس ذلك لذات السبب، بل راجع إلى فاعل مختار يفعل ما يشاء كيف يشاء من غير تحجير، فتبارك الله أحسن الخالقين (14 - المؤمنون).",
+      "english": "Human bodies are of four kinds—Adam's body, Eve's, Jesus', and the bodies of Adam's descendants—differing in their beginnings while sharing human and spiritual form. This prevents those of weak understanding from thinking that divine Power or the realities yield this human constitution by only one cause. It shows that God is powerful over everything. He brought the four together in the words, 'O humankind, We created you from a male'—meaning Eve—'and a female' [Qurʾān 49:13]—meaning Jesus—and from male and female together, meaning Adam's descendants through marriage and generation. This verse is among the most comprehensive expressions. Thus the result does not belong to the cause in itself, but returns to a willing Agent who acts however and in whatever manner He chooses, without restriction. 'Blessed is God, the best of creators' [Qurʾān 23:14].",
+      "notes": "The mapping of 'male' to Eve and 'female' to Jesus is a very unusual esoteric gloss and **not** the conventional exegesis of Qurʾān 49:13. Verify Arabic and source boundaries carefully before publishing as authorial doctrine.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.903",
+      "number": 903,
+      "pageStart": 533,
+      "pageEnd": 533,
+      "arabic": "وقال رضي الله عنه في الباب الستين من الفتوحات: لما انتهى الحكم إلى السنبلة ظهرت النشأة الانسانية بتقدير العزيز العليم، فأنشأ الله الانسان من حيث جسمه خلقا سويا وجعل له من الولاية في العالم العنصري سبعة آلاف سنة، وينتقل الحكم إلى الميزان وهو زمان القيامة وفيه يضع الله الموازين القسط ليوم القيامة فلا تظلم نفس شيئا، لان القيامة محل سلطان الميزان.",
+      "english": "He—may God be pleased with him—said in chapter sixty of the *Futūḥāt*: 'When the ruling passed to Virgo, the human constitution appeared through the determination of the Mighty and All-Knowing. God fashioned the human being in bodily form as an upright creation, granting it seven thousand years of governorship in the elemental world. The ruling then passes to Libra, which is the time of Resurrection, when God sets up just balances for the Day of Resurrection and no soul is wronged, for Resurrection is the domain of Libra's sovereignty.'",
+      "notes": "The 7000-year cycle is a transmitted esoteric cosmology, not independently established future chronology. Verify chapter 60 citation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.904",
+      "number": 904,
+      "pageStart": 533,
+      "pageEnd": 533,
+      "arabic": "ولما كان للعذراء السبعة من الاعداد كانت له السبعة والسبعون والسبع مائة في تضاعيف الأجور وضرب الأمثال في الصدقات، فقال تعالى: كمثل حبة أنبتت سبع سنابل... الآية (261 - البقرة) ويدخل الناس الجنة والنار في أول الحادية عشرة درجة من الجوزاء ويستقر كل طائفة في دارها، ولا يبقى في النار من يخرج بشفاعة أو عناية الهية، ويذبح الموت بين الجنة والنار وبالأمر الإلهي الذي أودع الله في حركات الفلك الأقصى يقع التكوين في الجنة بحسب ما تعطيه نشأة الدار الآخرة، فان الحكم ابدا في القوابل، فان الحركة واحدة وآثارها تختلف بحسب القوابل، وكذا حكم أهل النار بحسب ما أودع الله في حركات الفلك الأقصى وفي الكواكب الثابتة وفي سباحة الدراري السبعة المطموسة الأنوار، فهي كواكب ليست بثواقب، والحكم في النار خلاف الحكم في الجنة، بل يقرب من حكم الدنيا، فليس بعذاب خالص ولا بنعيم خالص، لذا قال تعالى: ثم لا يموت فيها ولا يحيى (13 - الاعلى) هذا كلامه.",
+      "english": "Because Virgo governs the number seven, it also has seventy, seven hundred, and repeated sevenfold rewards and parables of almsgiving. God says: 'Like a seed that grows seven ears...' [Qurʾān 2:261]. People enter Paradise and the Fire at the beginning of the eleventh degree of Gemini; each group settles in its abode, and no one remains in the Fire who is destined to leave by intercession or divine solicitude. Death is slaughtered between Paradise and the Fire. Through the divine command deposited in the motions of the outermost sphere, becoming occurs in Paradise in accordance with the constitution of the other abode, for the ruling always depends upon the recipients: one motion has differing effects according to their readiness. The ruling over the people of the Fire likewise follows what God deposited in the motions of the outermost sphere, the fixed stars, and the journey of the seven wandering celestial bodies whose lights have been effaced: they are stars but not piercing lights. The Fire's ruling differs from Paradise's and is nearer the ruling of this world: it is neither pure torment nor pure bliss, as the verse says, 'Then he will neither die therein nor live' [Qurʾān 87:13]. Thus far his words.",
+      "notes": "Source's unusual claim that Fire is not 'pure torment' is an attributed interpretation of post-Resurrection punishment; do not present as uncontroversial creed. 'Eleventh degree of Gemini' and fixed-star symbolism require source collation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.905",
+      "number": 905,
+      "pageStart": 533,
+      "pageEnd": 534,
+      "arabic": "فأقول: المفهوم منه انا لما أسلفنا فيما نقلنا عن عقلة المستوفز: ان أول حركة العرش بالزمان بملك الميزان وبيده مفتاح خلق التغيرات والزمان الذي خلق الله في السماوات والأرض، علم أن ابتداء عمر العالم منه، وحين عين في ذلك النقل مدة تولية كل ملك من ملائكة البروج، فإذا حاسبنا تلك المدد من أول برج الميزان إلى أول برج السرطان الذي حكم فيه ان مفتاح خلق الدنيا بيده، بلغت أربعا وخمسين الف سنة كما عينه الشيخ قدس سره هنا، وإذا ضم إليها مدة السرطان التي فيها خلق الدنيا وهى تسعة آلاف سنة، بلغت إلى أول الأسد الذي حكم فيه ان مفتاح خلق الآخرة بيده ثلاثا وستين الف سنة كما عينه، وإذا ضم إليها مدة التي خلق فيها الآخرة وهى ثمانية آلاف إلى أول السنبلة التي حكم فيها بان لها اختصاصا بالاجسام الانسانية.",
+      "english": "I say: From this we understand the following. In our earlier quotation from *ʿUqlat al-mustawfiz* the first motion of the Throne in time was assigned to the angel of Libra, who held the key to the creation of changes and time in heaven and earth. The world's age therefore begins with him. The earlier account specifies the duration of each angel of the zodiacal signs. Adding the durations from Libra to Cancer, whose angel holds the key to creating the present world, gives fifty-four thousand years, just as the Shaykh states here. Adding Cancer's nine thousand years, during which the present world was created, brings us to the beginning of Leo, whose angel holds the key to the creation of the Hereafter: sixty-three thousand years, as he states. Adding the eight thousand years during which the Hereafter was created brings us to the beginning of Virgo, to which the human body is specially related.",
+      "notes": "Arithmetic reconstruction of esoteric zodiacal cycles: Libra → Cancer 54k, Cancer → Leo +9k =63k, Leo → Virgo +8k =71k. Do not assert these as observed cosmic dates.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.906",
+      "number": 906,
+      "pageStart": 534,
+      "pageEnd": 534,
+      "arabic": "فان قال هيهنا ان النشأة الانسانية وقعت فيها بلغت المدد السالفة إحدى وسبعين الف سنة كما عينه، وبلغ من عمر الدنيا إلى بدء الانسان سبع عشرة الف سنة كما عينه، وحين تم ولاية الانسان بتمام مدة حكم ملك السنبلة وهى سبعة آلاف سنة وابتدأ من الميزان حكم القيامة وانتهى أمر الحشر والنشر حتى استقر أهل الدارين في منزلهما إلى بعض برج الجوزاء، كان مدة ما بينهما بذلك الحساب (1) خمسين الف سنة وهو يوم ذي المعارج.",
+      "english": "Since he says the human constitution appeared in Virgo, the preceding durations amount to seventy-one thousand years, as he expressly determined; and seventeen thousand years elapsed in the present world's age before the human being began. When the human dominion reached completion at the end of the seven-thousand-year reign of Virgo's angel, and the rule of Libra concerning Resurrection began, the affair of gathering and resurrection proceeded until the people of the two abodes settled in their homes at a certain degree of Gemini. By the same calculation the interval is fifty thousand years: the Day of the Lord of Ascending Ways [dhī al-maʿārij].",
+      "notes": "The 50,000-year calculation is presented as Fanārī's internal reconciliation; verify start/end points before critical edition.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.907",
+      "number": 907,
+      "pageStart": 534,
+      "pageEnd": 534,
+      "arabic": "وسره - والله أعلم - ان يوم القيامة يوم تجسد النسب والأعمال والأحوال، ولا شك ان في كل الف سنة من مدة خلق الانسان في الدنيا التي هي سبعة آلاف سنة، حكما لكل من الأئمة السبعة الأسمائية التي بسران حكمها وفنون تجليها يؤثر الأرواح والطبائع التي في الكواكب السبعة وغيرها، فرقائق السبعة الأسماء في كل من السبعة الآلاف تصورت بألف سنة، فبلغت من ضرب السبع في السبع تسعة وأربعين على عدد أولي العزم السبعة من الرسل والخلفاء السبعة لكل منهم كما سيجئ، وإذا تصورت جميعة الكل بيوم خاتم بلغت خمسين الف سنة، ولما كان عده مدة جمعية الاحكام المنسوبة إلى كل اسم من الأسماء الإلهية يوما كان كل الف سنة باعتبار نسبتها إلى كل اسم مرب يوما، لأنه مجموع مدة تربيته بتلك الرقيقة، لذا صار يوم الرب الف سنة كما قال تعالى: وان يوما عند ربك كالف سنة مما تعدون (47 - الحج) هذا مبلغ فهمي - والله أعلم -.",
+      "english": "Its mystery—God knows best—is that the Day of Resurrection is the day when relations, deeds and states become embodied. Within each thousand years of the seven-thousand-year span of human creation in this world, a ruling belongs to each of the seven leading Names whose effects and modes of self-disclosure act upon spirits and the natures of the seven planets and others. The subtle relations of the seven Names, within each of the seven millennia, take form as a thousand years. Multiplying seven by seven yields forty-nine, corresponding to the seven resolute messengers and seven vicegerents assigned to each, as will be explained. When the comprehensive gathering of the whole assumes the form of a final day, the total becomes fifty thousand years. Since each thousand years is called a day when the collective rulings are attributed to each divine Name, each millennium becomes one day in relation to each nurturing Name: the whole duration of its nurture through that subtle relation. Thus a day of the Lord is a thousand years, as God says, 'A day with your Lord is like a thousand years of what you count' [Qurʾān 22:47]. This is the extent of my understanding; God knows best.",
+      "notes": "Source says seven ulū al-ʿazm, contrary to several common enumerations of five; retain the number with attribution and verify. The 7×7+1 interpretation is explicit and speculative («هذا مبلغ فهمي»).",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.908",
+      "number": 908,
+      "pageStart": 534,
+      "pageEnd": 535,
+      "arabic": "وحين تم هنا ذكر المظاهر الكلية التي ذكرها الشيخ قدس سره في المفتاح رأينا ان نذكر من بعض المظاهر التي ذكرها في سائر كتبه - لإفادتها قواعد منهمة وازاحتها معاقد مدلهمة -",
+      "english": "Now that we have finished mentioning the universal loci of manifestation which the Shaykh described in the *Miftāḥ*, we have thought it fitting to include some of the loci he discusses in his other works, since they supply important principles and resolve obscure difficulties.",
+      "notes": "Fanārī's editorial transition to other Qūnawī writings.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.909",
+      "number": 909,
+      "pageStart": 535,
+      "pageEnd": 535,
+      "arabic": "قال قدس سره في أول الفكوك: كل مسمى بكلمة مظهر وحصة من الحقيقة الانسانية الكمالية، وللجامعين لحصصها ثلاث مراتب:",
+      "english": "He—may his secret be sanctified—said at the beginning of the *Fukūk*: 'Everything called a Word [kalima] is a locus of manifestation and a portion of the reality of human perfection. Those who gather its portions fall into three degrees.'",
+      "notes": "Kalima refers to comprehensive prophethood/existence in Fuṣūṣ/Fukūk usage, not merely grammatical word.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.910",
+      "number": 910,
+      "pageStart": 535,
+      "pageEnd": 535,
+      "arabic": "الأولى جامع الغالب في جمعيته احكام ظاهر الانسانية وهو مظهر احكام الوجوب في مرتبة الامكان - لكن بحسب الامكان -",
+      "english": "First, one whose gathering is dominated by the rulings of the outward aspect of human reality: a locus of manifestation for the rulings of necessity at the degree of possibility—but according to the character of possibility.",
+      "notes": "First of three categories. Distinguish domination of outwardness from ontological necessity.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.911",
+      "number": 911,
+      "pageStart": 535,
+      "pageEnd": 535,
+      "arabic": "الثانية جامع الغالب على جمعيته احكام باطنها وهو مظهر احكام الامكان في حضرة الوجوب - لكن بحسب الوجوب -",
+      "english": "Second, one whose gathering is dominated by the rulings of its inward aspect: a locus for the rulings of possibility within the Presence of Necessity—but according to the character of necessity.",
+      "notes": "The inverse from §910 is intentional and viewpoint-qualified.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.912",
+      "number": 912,
+      "pageStart": 535,
+      "pageEnd": 535,
+      "arabic": "الثالثة جامع بين الظهور والبطون في درجة اعتدالهما، وله المقام البرزخي والنقطة الوسطية التي بها يتعين الطرفان والظهور بكل منهما، وثمة من لا رتبة له على التعيين، كالذات من حيث اطلاقها منه وبه يتعين الطرفان والوسط الجامع ولا يتقيد بمرتبة ونسبة واسم ووصف، ولا ينتفى عنه شئ منها أيضا، وفيه يستهلك المراتب وأربابها - كما به يظهر -",
+      "english": "Third, one who gathers outwardness and inwardness in an equilibrium between them, occupying the isthmic station and middle point through which both extremes and the manifestation of each are determined. Beyond this stands one who has no determinate degree, analogous to the Essence in its absoluteness. Through and by this one both extremes and their gathering centre become determined; he is confined by no degree, relation, Name or description, while none of these is negated of him either. All degrees and their possessors are absorbed within him, just as they become manifest through him.",
+      "notes": "Do not equate the human rank with the unqualified divine Essence; the 'one without rank' is likened to absolute consideration, requiring source comparison.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.913",
+      "number": 913,
+      "pageStart": 535,
+      "pageEnd": 535,
+      "arabic": "وقال (1): الأفلاك مظهر العقول والنفوس من حيث الإحاطة ودورها مظهر توجهما، ولذا تفاوتهما بكثرة الوسائط وقلتها الموجبة لكثرة احكام الامكان، وقلتها اثر في تفاوت الأفلاك شرفا وإحاطة، فأقربها نسبة إلى أشرف العقول أتمها إحاطة وبالعكس.",
+      "english": "He also said: The spheres manifest intellects and souls through their encompassing character, while their revolutions manifest the orientations of those intellects and souls. Their differences in the number of intermediaries—more or fewer, bringing more or fewer rulings of possibility—account for the differences among spheres in excellence and comprehensiveness. The sphere closest in relation to the noblest intellect encompasses most fully, and conversely.",
+      "notes": "Premodern ranked cosmology; «تفاوتهما» subject pronoun uncertain in digital witness.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.914",
+      "number": 914,
+      "pageStart": 535,
+      "pageEnd": 535,
+      "arabic": "وقال: الخليل عليه السلام أول مظهر للتخلق (2) بالصفات الألوهية الثبوتية، لذا كان أول من يكسى يوم القيامة، وهو مظهر ظاهر البرزخية الأولى الذي هو البرزخية الثانية، وكلماته التي أتمهن مظاهر احكام الوجوب في مرتبة امكانه، لذا أعقبت بالإمامة على الناس.",
+      "english": "He said: Abraham, the Friend [al-Khalīl], peace be upon him, was the first locus of acquiring the characteristics [takhalluq] of the positive divine attributes. Therefore he will be the first clothed on the Day of Resurrection. He manifests the outward aspect of the First Isthmus, namely the Second Isthmus; the Words which he fulfilled manifest the rulings of necessity within the degree of his possibility. Hence their completion was followed by his appointment as an imam for humankind.",
+      "notes": "Connect Qurʾān 2:124 and reported first clothing on Resurrection; check independent hadith. First/second isthmus distinction may appear counterintuitive and needs original Fukūk.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.915",
+      "number": 915,
+      "pageStart": 535,
+      "pageEnd": 536,
+      "arabic": "وقال قدس سره: صورة العالم - بل صورة كل شئ - مظهر الاسم الظاهر وروحه مظهر الاسم الباطن من وجه، ونسبة عالم المثال إلى صورة العالم نسبة خيال الانسان وذهنه إلى صورته.",
+      "english": "He—may his secret be sanctified—said: The world's form—indeed the form of each thing—manifests the Name al-Ẓāhir (the Outward), while its spirit manifests al-Bāṭin (the Inward) in one respect. The World of Images relates to the form of the world as a human's imagination and mind relate to his bodily form.",
+      "notes": "Do not homogenise imaginal and psychological imagination; simile uses mind/image vs bodily form.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.916",
+      "number": 916,
+      "pageStart": 536,
+      "pageEnd": 536,
+      "arabic": "وقال (1): الخليل عليه السلام من وجه مظهر العقل الأول الذي هو أول الأسباب الوجودية والشرط في إقامة بيت الوجود المتأسس على مرتبة الامكان.",
+      "english": "He said: Abraham, peace be upon him, in one respect manifests the First Intellect, the first of the existential causes and the condition for erecting the House of Being founded upon the degree of possibility.",
+      "notes": "First Intellect/Abraham analogy is perspectival.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.917",
+      "number": 917,
+      "pageStart": 536,
+      "pageEnd": 536,
+      "arabic": "وإسماعيل عليه السلام مظهر النفس الكلية التي هي اللوح من حيث إنه محل الكتابة الايجادية، ولذا كان معاونا له في إقامة البيت.",
+      "english": "Ishmael, peace be upon him, manifests the Universal Soul, namely the Tablet insofar as it is the locus of creative writing. Therefore he assisted Abraham in raising the House.",
+      "notes": "Qurʾān 2:127 allusion; Ishmael's soul correspondence to Universal Tablet is symbolic.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.918",
+      "number": 918,
+      "pageStart": 536,
+      "pageEnd": 536,
+      "arabic": "ويعقوب نظير الفلك الأول المسمى بالعرش، لذا تعين له المعقولية البروج الاثني عشر ولدا.",
+      "english": "Jacob resembles the First Sphere, called the Throne, and accordingly twelve sons became determined for him, corresponding to the intelligible zodiacal signs.",
+      "notes": "Twelve Jacobite tribes/sons symbolised as zodiacal signs; not biological astrological determinism.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.919",
+      "number": 919,
+      "pageStart": 536,
+      "pageEnd": 536,
+      "arabic": "وهاجر مظهر اللوح القابل من وجه ومملوكة، لان اللوح محكوم للقلم بتمليك الحق إياه ومحل تصرفه بالتأثير.",
+      "english": "Hagar manifests the receptive Tablet in one respect, and was a servant, since the Tablet is governed by the Pen through God's granting the Pen authority over it, and serves as the locus of the Pen's effective disposal.",
+      "notes": "Historically grounded biblical/Qurʾānic narrative interwoven with symbolic metaphysics; preserve authorial voice.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.920",
+      "number": 920,
+      "pageStart": 536,
+      "pageEnd": 536,
+      "arabic": "وماء زمزم الذي هو أول ماء تعين عند محل الكعبة مظهر العلم الذي هو أول لازم لذات الحق من حيث امتيازه النسبي، لذا قال صلى الله عليه وآله: ماء زمزم لما شرب له، لان أكثر علوم الناس ظنون ليست علوما محققة، وقد قال تعالى: انا عند ظن عبدي بي، فليظن بي ما شاء. واما قوله عليه وآله السلام: هو طعام طعم وشفاء سقم، فهو في حق من اطلع على سر القدر وتحقق بمعرفة تبعية العلم للمعلوم وانه واجب الوقوع، فيفرج بوقوع الملائم ويريح نفسه من انتظار ما يعلم أنه لم يقدر وقوعه ولا يحزن من الواقع.",
+      "english": "The water of Zamzam, the first water that became determined at the site of the Kaʿba, manifests Knowledge, the first concomitant of the Essence of the Real in respect of relative distinction. Hence the Prophet, may God bless him, said: 'Zamzam water is for that for which it is drunk.' For much of what people call knowledge consists of suppositions, not verified knowledge; God says in a sacred report: 'I am according to My servant's expectation of Me, so let him expect of Me what he wills.' As for the words, 'It is nourishing food and a cure for illness,' they apply to one who grasps the mystery of decree, realises that knowledge follows what is known, and that what is known must occur. Such a person rejoices when something suitable occurs, relieves himself of awaiting what he knows was not decreed to occur, and does not grieve over what happens.",
+      "notes": "The sayings about Zamzam and ḥadīth qudsī are used to distinguish supposition from verified maʿrifa. The clause 'knowledge follows the known' is an Akbarian doctrine needing careful comparison.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.921",
+      "number": 921,
+      "pageStart": 536,
+      "pageEnd": 536,
+      "arabic": "والكعبة التي هي أول بيت وضع للناس مظهر لحقيقة العالم، القابلة للايجاد الأول من حيث صفة الاقتدار التي العقل الأول صورتها.",
+      "english": "The Kaʿba, the first House established for humankind, manifests the reality of the world, receptive to the first bringing-into-existence through the attribute of power, whose image is the First Intellect.",
+      "notes": "Qurʾān 3:96 allusion; analogical correspondence Kaʿba–cosmos.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.922",
+      "number": 922,
+      "pageStart": 536,
+      "pageEnd": 537,
+      "arabic": "والأرض (2) صورة حضرة الجمع ومحل الخلافة والكعبة مركزه، لذا جاء: ان الأرض دحيت من تحت الكعبة.",
+      "english": "Earth is the form of the Presence of Gathering and locus of vicegerency, with the Kaʿba at its centre. Hence the report that earth was spread out from beneath the Kaʿba.",
+      "notes": "The report is presented by the source but needs hadith verification; symbolic geography, not modern geology.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.923",
+      "number": 923,
+      "pageStart": 537,
+      "pageEnd": 537,
+      "arabic": "هذا بلسان الباطن، واما بلسان المطلع (1): فالكعبة بيت صفة الربوبية وإليه الإشارة بقوله تعالى: فليعبدوا رب هذا البيت (3 - قريش) لذا صار مقام نفس بانيه الخليل عليه السلام السماء السابعة وأخبر النبي انه مسند ظهره إلى البيت المعمور وانه للبيت بابان وانه يدخله كل يوم سبعون الف ملك من باب ويخرجون من باب آخر لا يعودون إليه ابدا.",
+      "english": "This is spoken in the language of the inward [bāṭin]. In the language of the higher point of insight [muṭṭalaʿ], however, the Kaʿba is the House of the attribute of Lordship, alluded to in 'Let them worship the Lord of this House' [Qurʾān 106:3]. Accordingly the station of the soul of its builder, Abraham, peace be upon him, is the seventh heaven. The Prophet reported seeing him leaning against the Frequented House [al-Bayt al-Maʿmūr], which has two doors: every day seventy thousand angels enter through one and leave through the other, never returning to it.",
+      "notes": "Distinguish bāṭin and muṭṭalaʿ levels of exegesis. 70,000 angels report requires hadith referencing.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.924",
+      "number": 924,
+      "pageStart": 537,
+      "pageEnd": 537,
+      "arabic": "فنظير البيت المعمور من الانسان قلبه والملائكة أنفاسه يدخلونه لعبودية القلب ا لحقيقي وترويح مظهره الذي هو القلب الصنوبري، فالبيت المعمور محل نظر الحق ومستوى الاسم الرب.",
+      "english": "The human counterpart of the Frequented House is the heart, whose angels are the breaths that enter it for the worship of the true Heart and to refresh its bodily locus, the pinecone-shaped heart. The Frequented House is the locus of the Real's gaze and of the Name al-Rabb's istiwāʾ.",
+      "notes": "Differentiate physical heart and higher true Heart; 'pinecone-shaped' reflects medieval physiology. Istiwaʾ not corporeal enthronement.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.925",
+      "number": 925,
+      "pageStart": 537,
+      "pageEnd": 537,
+      "arabic": "وقال قدس سره (2): نوح عليه السلام مظهر صفة التنزيه، لأنه عليه السلام أول المرسلين وأول احكام الرسالة مطالبة الرسول للأمة بتوحيد الحق وتنزيهه عن الشريك والمثل والمنازع، ونوح أول مطالب للخلق بذلك، لذا غلب عليه حال الغيرة والغضب على قومة حتى دعا عليهم بالهلاك، كغيرة الملائكة المسبحة في حق آدم حيث ذموه ووصفوه بالنقائص.",
+      "english": "He—may his secret be sanctified—said: Noah, peace be upon him, manifests the attribute of transcendence [tanzīh], for he was the first of the messengers. The first requirement of messengership is to summon one's people to the Real's oneness and to affirm His transcendence beyond partner, likeness, and opponent. Noah was the first to call creation to this in that capacity. Therefore zeal and anger toward his people predominated in him until he prayed for their destruction, like the zeal of the angels glorifying God in their response to Adam, when they censured him and attributed defects to him.",
+      "notes": "An esoteric comparison of Noah/angels. Standard accounts of first messenger and the angels' reaction differ; retain attribution and compare Qurʾān 71:26–27.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    }
+  ]
+}
