@@ -7,14 +7,14 @@
     "commentaryUnits": 110,
     "totalArabicPunctuationClauses": 5520,
     "totalEnglishSentenceCandidates": 2853,
-    "individuallyComparedArabicPunctuationClauses": 1075,
-    "individuallyComparedUnits": 25,
-    "NOTIndividuallyComparedArabicClauses": 4445,
+    "individuallyComparedArabicPunctuationClauses": 1219,
+    "individuallyComparedUnits": 45,
+    "NOTIndividuallyComparedArabicClauses": 4301,
     "statuses": {
-      "checked": 788,
+      "checked-with-note": 240,
+      "checked": 908,
+      "unresolved-reading": 55,
       "corrected": 13,
-      "checked-with-note": 220,
-      "unresolved-reading": 51,
       "corrected-with-source-crux": 3
     },
     "editorialLimit": "Punctuation-derived segments do not always equal syntactic clauses. Only individually compared units have manually associated English ranges. No manuscript witnesses were collated."
@@ -35,72 +35,100 @@
           "startChar": 0,
           "endChar": 22,
           "text": "الحمد لله رب العالمين،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Opening الحمد لله رب العالمين is explicitly editorial adopted from catalogue incipit, not the A commentary's الحمد لوليّه; no codex collation claimed."
+          },
+          "englishCorrespondence": "Praise belongs to God, Lord of the worlds, and blessings upon His Prophet Muḥammad and his family.",
+          "riskMarkers": []
         },
         {
           "n": 2,
           "startChar": 23,
           "endChar": 51,
           "text": "والصلاة على نبيّه محمد وآله.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "The subject is the difficult account of tawḥīd as the gnostics go to it and realized scholars indicate; disputants and reflective investigators distinguished without imposing commentator's identities on matn."
+          },
+          "englishCorrespondence": "To proceed: setting forth the question of divine unity (tawḥīd) in the manner adopted by those who possess gnosis (ʿārifūn) and indicated by those who have attained realization (muḥaqqiqūn) is among the difficult questions that the thoughts of disputatious speculative scholars cannot reach, nor the minds of learned philosophical investigators grasp.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 52,
           "endChar": 57,
           "text": "وبعد،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "The subject is the difficult account of tawḥīd as the gnostics go to it and realized scholars indicate; disputants and reflective investigators distinguished without imposing commentator's identities on matn."
+          },
+          "englishCorrespondence": "To proceed: setting forth the question of divine unity (tawḥīd) in the manner adopted by those who possess gnosis (ʿārifūn) and indicated by those who have attained realization (muḥaqqiqūn) is among the difficult questions that the thoughts of disputatious speculative scholars cannot reach, nor the minds of learned philosophical investigators grasp.",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 58,
           "endChar": 115,
           "text": "فإن تقرير مسألة التوحيد على النحو الذي ذهب إليه العارفون،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "The subject is the difficult account of tawḥīd as the gnostics go to it and realized scholars indicate; disputants and reflective investigators distinguished without imposing commentator's identities on matn."
+          },
+          "englishCorrespondence": "To proceed: setting forth the question of divine unity (tawḥīd) in the manner adopted by those who possess gnosis (ʿārifūn) and indicated by those who have attained realization (muḥaqqiqūn) is among the difficult questions that the thoughts of disputatious speculative scholars cannot reach, nor the minds of learned philosophical investigators grasp.",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 116,
           "endChar": 137,
           "text": "وأشار إليه المحقّقون،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "The subject is the difficult account of tawḥīd as the gnostics go to it and realized scholars indicate; disputants and reflective investigators distinguished without imposing commentator's identities on matn."
+          },
+          "englishCorrespondence": "To proceed: setting forth the question of divine unity (tawḥīd) in the manner adopted by those who possess gnosis (ʿārifūn) and indicated by those who have attained realization (muḥaqqiqūn) is among the difficult questions that the thoughts of disputatious speculative scholars cannot reach, nor the minds of learned philosophical investigators grasp.",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 138,
           "endChar": 206,
           "text": "من المسائل الغامضة التي لا يصل إليها أفكار علماء الناظرين المجادلين،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "The subject is the difficult account of tawḥīd as the gnostics go to it and realized scholars indicate; disputants and reflective investigators distinguished without imposing commentator's identities on matn."
+          },
+          "englishCorrespondence": "To proceed: setting forth the question of divine unity (tawḥīd) in the manner adopted by those who possess gnosis (ʿārifūn) and indicated by those who have attained realization (muḥaqqiqūn) is among the difficult questions that the thoughts of disputatious speculative scholars cannot reach, nor the minds of learned philosophical investigators grasp.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 207,
           "endChar": 253,
           "text": "ولا يدركها أذهان الفضلاء الباحثين من الناظرين.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "The subject is the difficult account of tawḥīd as the gnostics go to it and realized scholars indicate; disputants and reflective investigators distinguished without imposing commentator's identities on matn."
+          },
+          "englishCorrespondence": "To proceed: setting forth the question of divine unity (tawḥīd) in the manner adopted by those who possess gnosis (ʿārifūn) and indicated by those who have attained realization (muḥaqqiqūn) is among the difficult questions that the thoughts of disputatious speculative scholars cannot reach, nor the minds of learned philosophical investigators grasp.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -117,7 +145,7 @@
           "text": "To proceed: setting forth the question of divine unity (tawḥīd) in the manner adopted by those who possess gnosis (ʿārifūn) and indicated by those who have attained realization (muḥaqqiqūn) is among the difficult questions that the thoughts of disputatious speculative scholars cannot reach, nor the minds of learned philosophical investigators grasp."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 2
     },
     {
@@ -135,85 +163,117 @@
           "startChar": 0,
           "endChar": 93,
           "text": "فإن الأكثرين منهم يزعمون أن القطع بها يدلّ على استحكام سوء المزاج في موضوعات القوى النفسانية،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Opponents' old humoral diagnosis of bodily substrates, burning of healthy materials and black bile is reported, not endorsed as modern science."
+          },
+          "englishCorrespondence": "For most of them suppose that certainty about it points to a firmly established disturbance of temperament in the bodily substrates of the faculties of the soul, the burning up of sound bodily materials, and the domination of black bile over the noble primary organs.",
+          "riskMarkers": []
         },
         {
           "n": 2,
           "startChar": 94,
           "endChar": 130,
           "text": "وعلى احتراق الموادّ الصالحة البدنية،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Opponents' old humoral diagnosis of bodily substrates, burning of healthy materials and black bile is reported, not endorsed as modern science."
+          },
+          "englishCorrespondence": "For most of them suppose that certainty about it points to a firmly established disturbance of temperament in the bodily substrates of the faculties of the soul, the burning up of sound bodily materials, and the domination of black bile over the noble primary organs.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 131,
           "endChar": 183,
           "text": "واستيلاء المرّة السوداء على الأعضاء الشريفة الأصلية،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Opponents' old humoral diagnosis of bodily substrates, burning of healthy materials and black bile is reported, not endorsed as modern science."
+          },
+          "englishCorrespondence": "For most of them suppose that certainty about it points to a firmly established disturbance of temperament in the bodily substrates of the faculties of the soul, the burning up of sound bodily materials, and the domination of black bile over the noble primary organs.",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 184,
           "endChar": 249,
           "text": "إذ القطع ببطلان جميع الأحكام العقلية والحسّية والفطرية والغريزية،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Opponents' old humoral diagnosis of bodily substrates, burning of healthy materials and black bile is reported, not endorsed as modern science."
+          },
+          "englishCorrespondence": "For most of them suppose that certainty about it points to a firmly established disturbance of temperament in the bodily substrates of the faculties of the soul, the burning up of sound bodily materials, and the domination of black bile over the noble primary organs.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 5,
           "startChar": 250,
           "endChar": 291,
           "text": "عقيب ارتكاب المجاهدات والرياضات الجزافية،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Certainty in invalidation of rational/sensory/innate/natural judgments follows arbitrary asceticism as an opponent's causal claim; subsequent बीमारी is the adversary's diagnosis."
+          },
+          "englishCorrespondence": "For, they maintain, no one could become convinced that every rational, sensory, innate, and instinctive judgement is invalid—after undertaking arbitrary exertions and spiritual disciplines arising from imaginary obsessions—unless that newly arising cause had supervened and he had been afflicted by the malignant illness just described.",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 292,
           "endChar": 320,
           "text": "الصادرة عن الوساوس الخيالية،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Certainty in invalidation of rational/sensory/innate/natural judgments follows arbitrary asceticism as an opponent's causal claim; subsequent बीमारी is the adversary's diagnosis."
+          },
+          "englishCorrespondence": "For, they maintain, no one could become convinced that every rational, sensory, innate, and instinctive judgement is invalid—after undertaking arbitrary exertions and spiritual disciplines arising from imaginary obsessions—unless that newly arising cause had supervened and he had been afflicted by the malignant illness just described.",
+          "riskMarkers": []
         },
         {
           "n": 7,
           "startChar": 321,
           "endChar": 364,
           "text": "لا يمكن لأحد إلا عند عروض ذلك السبب الحديث،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Certainty in invalidation of rational/sensory/innate/natural judgments follows arbitrary asceticism as an opponent's causal claim; subsequent बीमारी is the adversary's diagnosis."
+          },
+          "englishCorrespondence": "For, they maintain, no one could become convinced that every rational, sensory, innate, and instinctive judgement is invalid—after undertaking arbitrary exertions and spiritual disciplines arising from imaginary obsessions—unless that newly arising cause had supervened and he had been afflicted by the malignant illness just described.",
           "riskMarkers": [
             "negation",
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 8,
           "startChar": 365,
           "endChar": 400,
           "text": "وابتلائه بما ذكرنا من المرض الخبيث.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Certainty in invalidation of rational/sensory/innate/natural judgments follows arbitrary asceticism as an opponent's causal claim; subsequent बीमारी is the adversary's diagnosis."
+          },
+          "englishCorrespondence": "For, they maintain, no one could become convinced that every rational, sensory, innate, and instinctive judgement is invalid—after undertaking arbitrary exertions and spiritual disciplines arising from imaginary obsessions—unless that newly arising cause had supervened and he had been afflicted by the malignant illness just described.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -230,7 +290,7 @@
           "text": "For, they maintain, no one could become convinced that every rational, sensory, innate, and instinctive judgement is invalid—after undertaking arbitrary exertions and spiritual disciplines arising from imaginary obsessions—unless that newly arising cause had supervened and he had been afflicted by the malignant illness just described."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 0
     },
     {
@@ -248,20 +308,28 @@
           "startChar": 0,
           "endChar": 37,
           "text": "لكن لمّا كان الأمر على خلاف ما ظنّوه،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "The adversarial objection is reversed, and the ellipsis marks a printed interruption before QT-004, not a conjectured restored authorial clause."
+          },
+          "englishCorrespondence": "But since the matter was contrary to what they supposed—indeed, the reverse of what they imagined—…",
+          "riskMarkers": []
         },
         {
           "n": 2,
           "startChar": 38,
           "endChar": 60,
           "text": "بل على عكس ما تخيّلوه…",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "The adversarial objection is reversed, and the ellipsis marks a printed interruption before QT-004, not a conjectured restored authorial clause."
+          },
+          "englishCorrespondence": "But since the matter was contrary to what they supposed—indeed, the reverse of what they imagined—…",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -272,7 +340,7 @@
           "text": "But since the matter was contrary to what they supposed—indeed, the reverse of what they imagined—…"
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 1
     },
     {
@@ -290,192 +358,268 @@
           "startChar": 0,
           "endChar": 19,
           "text": "أردت أن أكتب رسالة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Aradtu to aradnā person change remains; ḥads is intellectual intuition, and the aim is proof in dialectical form rather than mere personal witnessing."
+          },
+          "englishCorrespondence": "I wished to write a treatise in which I would make clear the truth of the doctrine of those who possess gnosis and the falsity of the claim made by its detractors and deniers. It would contain the choicest of what became evident to me through intuitive insight (ḥads) concerning this question, and the distilled outcome of what my reflection reached in that controversy. We resolved to set forth the question according to the method of disputation, to engage the detractors in debate, and to establish it by powerful proofs with which to repel the deniers’ objections and strengthen the seekers’ desire.",
+          "riskMarkers": []
         },
         {
           "n": 2,
           "startChar": 20,
           "endChar": 50,
           "text": "أوضح فيها حقّية مذهب العارفين،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Aradtu to aradnā person change remains; ḥads is intellectual intuition, and the aim is proof in dialectical form rather than mere personal witnessing."
+          },
+          "englishCorrespondence": "I wished to write a treatise in which I would make clear the truth of the doctrine of those who possess gnosis and the falsity of the claim made by its detractors and deniers. It would contain the choicest of what became evident to me through intuitive insight (ḥads) concerning this question, and the distilled outcome of what my reflection reached in that controversy. We resolved to set forth the question according to the method of disputation, to engage the detractors in debate, and to establish it by powerful proofs with which to repel the deniers’ objections and strengthen the seekers’ desire.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 51,
           "endChar": 83,
           "text": "وبطلان قول الطاعنين من المنكرين،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Aradtu to aradnā person change remains; ḥads is intellectual intuition, and the aim is proof in dialectical form rather than mere personal witnessing."
+          },
+          "englishCorrespondence": "I wished to write a treatise in which I would make clear the truth of the doctrine of those who possess gnosis and the falsity of the claim made by its detractors and deniers. It would contain the choicest of what became evident to me through intuitive insight (ḥads) concerning this question, and the distilled outcome of what my reflection reached in that controversy. We resolved to set forth the question according to the method of disputation, to engage the detractors in debate, and to establish it by powerful proofs with which to repel the deniers’ objections and strengthen the seekers’ desire.",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 84,
           "endChar": 134,
           "text": "مشتملة على صفوة ما ظهر لي من الحدس في هذه المسألة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Aradtu to aradnā person change remains; ḥads is intellectual intuition, and the aim is proof in dialectical form rather than mere personal witnessing."
+          },
+          "englishCorrespondence": "I wished to write a treatise in which I would make clear the truth of the doctrine of those who possess gnosis and the falsity of the claim made by its detractors and deniers. It would contain the choicest of what became evident to me through intuitive insight (ḥads) concerning this question, and the distilled outcome of what my reflection reached in that controversy. We resolved to set forth the question according to the method of disputation, to engage the detractors in debate, and to establish it by powerful proofs with which to repel the deniers’ objections and strengthen the seekers’ desire.",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 135,
           "endChar": 186,
           "text": "ومحتوية على زبدة ما انتهى إليه نظري في تلك المعركة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Aradtu to aradnā person change remains; ḥads is intellectual intuition, and the aim is proof in dialectical form rather than mere personal witnessing."
+          },
+          "englishCorrespondence": "I wished to write a treatise in which I would make clear the truth of the doctrine of those who possess gnosis and the falsity of the claim made by its detractors and deniers. It would contain the choicest of what became evident to me through intuitive insight (ḥads) concerning this question, and the distilled outcome of what my reflection reached in that controversy. We resolved to set forth the question according to the method of disputation, to engage the detractors in debate, and to establish it by powerful proofs with which to repel the deniers’ objections and strengthen the seekers’ desire.",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 187,
           "endChar": 234,
           "text": "وأردنا أن نقرّر تلك المسألة على طريق المناظرين،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Aradtu to aradnā person change remains; ḥads is intellectual intuition, and the aim is proof in dialectical form rather than mere personal witnessing."
+          },
+          "englishCorrespondence": "I wished to write a treatise in which I would make clear the truth of the doctrine of those who possess gnosis and the falsity of the claim made by its detractors and deniers. It would contain the choicest of what became evident to me through intuitive insight (ḥads) concerning this question, and the distilled outcome of what my reflection reached in that controversy. We resolved to set forth the question according to the method of disputation, to engage the detractors in debate, and to establish it by powerful proofs with which to repel the deniers’ objections and strengthen the seekers’ desire.",
+          "riskMarkers": []
         },
         {
           "n": 7,
           "startChar": 235,
           "endChar": 270,
           "text": "وأن نسلك مسلك المناظرة مع الطاعنين،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Aradtu to aradnā person change remains; ḥads is intellectual intuition, and the aim is proof in dialectical form rather than mere personal witnessing."
+          },
+          "englishCorrespondence": "I wished to write a treatise in which I would make clear the truth of the doctrine of those who possess gnosis and the falsity of the claim made by its detractors and deniers. It would contain the choicest of what became evident to me through intuitive insight (ḥads) concerning this question, and the distilled outcome of what my reflection reached in that controversy. We resolved to set forth the question according to the method of disputation, to engage the detractors in debate, and to establish it by powerful proofs with which to repel the deniers’ objections and strengthen the seekers’ desire.",
+          "riskMarkers": []
         },
         {
           "n": 8,
           "startChar": 271,
           "endChar": 316,
           "text": "ونثبتها بحجج قوية ندفع بها عنها طعن المنكرين،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Aradtu to aradnā person change remains; ḥads is intellectual intuition, and the aim is proof in dialectical form rather than mere personal witnessing."
+          },
+          "englishCorrespondence": "I wished to write a treatise in which I would make clear the truth of the doctrine of those who possess gnosis and the falsity of the claim made by its detractors and deniers. It would contain the choicest of what became evident to me through intuitive insight (ḥads) concerning this question, and the distilled outcome of what my reflection reached in that controversy. We resolved to set forth the question according to the method of disputation, to engage the detractors in debate, and to establish it by powerful proofs with which to repel the deniers’ objections and strengthen the seekers’ desire.",
+          "riskMarkers": []
         },
         {
           "n": 9,
           "startChar": 317,
           "endChar": 341,
           "text": "ونشدّ بها رغبة الطالبين.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Author's prayer for salvation and avoidance of error retained."
+          },
+          "englishCorrespondence": "O God, place us among those who are saved and victorious, not among the misguided and rejected.",
+          "riskMarkers": []
         },
         {
           "n": 10,
           "startChar": 342,
           "endChar": 403,
           "text": "اللهم اجعلنا من زمرة الناجين الفائزين دون الضالّين المردودين.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Author's prayer for salvation and avoidance of error retained."
+          },
+          "englishCorrespondence": "O God, place us among those who are saved and victorious, not among the misguided and rejected.",
+          "riskMarkers": []
         },
         {
           "n": 11,
           "startChar": 404,
           "endChar": 421,
           "text": "يا إخوان التحصيل،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 6,
+            "note": "Exhortation to seekers to acquire perfection and enduring life before necessary passing and natural death is complete."
+          },
+          "englishCorrespondence": "Brothers who seek attainment: hasten to acquire true perfection and everlasting abiding before inevitable dissolution and bodily passing overtake you. Make haste during your life, before natural death comes upon you.",
+          "riskMarkers": []
         },
         {
           "n": 12,
           "startChar": 422,
           "endChar": 454,
           "text": "سارعوا إلى تحصيل الكمال الحقيقي،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 6,
+            "note": "Exhortation to seekers to acquire perfection and enduring life before necessary passing and natural death is complete."
+          },
+          "englishCorrespondence": "Brothers who seek attainment: hasten to acquire true perfection and everlasting abiding before inevitable dissolution and bodily passing overtake you. Make haste during your life, before natural death comes upon you.",
+          "riskMarkers": []
         },
         {
           "n": 13,
           "startChar": 455,
           "endChar": 470,
           "text": "والبقاء الأبدي،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 6,
+            "note": "Exhortation to seekers to acquire perfection and enduring life before necessary passing and natural death is complete."
+          },
+          "englishCorrespondence": "Brothers who seek attainment: hasten to acquire true perfection and everlasting abiding before inevitable dissolution and bodily passing overtake you. Make haste during your life, before natural death comes upon you.",
+          "riskMarkers": []
         },
         {
           "n": 14,
           "startChar": 471,
           "endChar": 506,
           "text": "قبل أن يتسارع إليكم الفناء الضروري،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 6,
+            "note": "Exhortation to seekers to acquire perfection and enduring life before necessary passing and natural death is complete."
+          },
+          "englishCorrespondence": "Brothers who seek attainment: hasten to acquire true perfection and everlasting abiding before inevitable dissolution and bodily passing overtake you. Make haste during your life, before natural death comes upon you.",
+          "riskMarkers": []
         },
         {
           "n": 15,
           "startChar": 507,
           "endChar": 521,
           "text": "والفوت البدني،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 6,
+            "note": "Exhortation to seekers to acquire perfection and enduring life before necessary passing and natural death is complete."
+          },
+          "englishCorrespondence": "Brothers who seek attainment: hasten to acquire true perfection and everlasting abiding before inevitable dissolution and bodily passing overtake you. Make haste during your life, before natural death comes upon you.",
+          "riskMarkers": []
         },
         {
           "n": 16,
           "startChar": 522,
           "endChar": 574,
           "text": "وبادروا في حياتكم قبل أن يتبادر إليكم الموت الطبيعي،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 7,
+            "note": "Seek help and rely on God under the conditional believer qualification retained."
+          },
+          "englishCorrespondence": "Seek His help in every affair and place your trust in Him, if you are believers.",
+          "riskMarkers": []
         },
         {
           "n": 17,
           "startChar": 575,
           "endChar": 601,
           "text": "واستعينوا به في كل الأمور،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 7,
+            "note": "Seek help and rely on God under the conditional believer qualification retained."
+          },
+          "englishCorrespondence": "Seek His help in every affair and place your trust in Him, if you are believers.",
+          "riskMarkers": []
         },
         {
           "n": 18,
           "startChar": 602,
           "endChar": 616,
           "text": "وتوكّلوا عليه،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 7,
+            "note": "Seek help and rely on God under the conditional believer qualification retained."
+          },
+          "englishCorrespondence": "Seek His help in every affair and place your trust in Him, if you are believers.",
+          "riskMarkers": []
         },
         {
           "n": 19,
           "startChar": 617,
           "endChar": 632,
           "text": "إن كنتم مؤمنين.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 7,
+            "note": "Seek help and rely on God under the conditional believer qualification retained."
+          },
+          "englishCorrespondence": "Seek His help in every affair and place your trust in Him, if you are believers.",
           "riskMarkers": [
             "conditional"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         }
       ],
       "englishSentences": [
@@ -522,7 +666,7 @@
           "text": "Seek His help in every affair and place your trust in Him, if you are believers."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 1
     },
     {
@@ -540,33 +684,45 @@
           "startChar": 0,
           "endChar": 62,
           "text": "اعلم أن الوجود مشترك بين الوجودات الخاصّة كلّها لا بحسب اللفظ،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Existence common by meaning, not by word alone, kept distinct from the later stronger thesis of a numerically one external existent."
+          },
+          "englishCorrespondence": "Know that existence (wujūd) is common to all particular existences—not in respect of the word alone, but in respect of the meaning—as we have explained in our other writings.",
           "riskMarkers": [
             "negation",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 63,
           "endChar": 78,
           "text": "بل بحسب المعنى،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Existence common by meaning, not by word alone, kept distinct from the later stronger thesis of a numerically one external existent."
+          },
+          "englishCorrespondence": "Know that existence (wujūd) is common to all particular existences—not in respect of the word alone, but in respect of the meaning—as we have explained in our other writings.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 79,
           "endChar": 105,
           "text": "كما بيّنّاه في سائر كتبنا.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Existence common by meaning, not by word alone, kept distinct from the later stronger thesis of a numerically one external existent."
+          },
+          "englishCorrespondence": "Know that existence (wujūd) is common to all particular existences—not in respect of the word alone, but in respect of the meaning—as we have explained in our other writings.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -577,7 +733,7 @@
           "text": "Know that existence (wujūd) is common to all particular existences—not in respect of the word alone, but in respect of the meaning—as we have explained in our other writings."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 0
     },
     {
@@ -595,52 +751,72 @@
           "startChar": 0,
           "endChar": 55,
           "text": "ومن البيّن أن حقيقته من حيث هي هي لا يقبل العدم لذاتها،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Proof uses contradiction of existence/nonexistence, not simply the assertion that existence is necessary; printed masculine لا يقبل after feminine حقيقته noted."
+          },
+          "englishCorrespondence": "It is evident that the reality of existence, considered just as it is in itself, does not intrinsically admit nonexistence: for one of two contradictories cannot be qualified by the other, nor can one nature turn into the nature of its contradictory.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 56,
           "endChar": 91,
           "text": "لامتناع اتّصاف أحد النقيضين بالآخر،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Proof uses contradiction of existence/nonexistence, not simply the assertion that existence is necessary; printed masculine لا يقبل after feminine حقيقته noted."
+          },
+          "englishCorrespondence": "It is evident that the reality of existence, considered just as it is in itself, does not intrinsically admit nonexistence: for one of two contradictories cannot be qualified by the other, nor can one nature turn into the nature of its contradictory.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 92,
           "endChar": 129,
           "text": "وامتناع انقلاب طبيعة إلى طبيعة الآخر،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Proof uses contradiction of existence/nonexistence, not simply the assertion that existence is necessary; printed masculine لا يقبل after feminine حقيقته noted."
+          },
+          "englishCorrespondence": "It is evident that the reality of existence, considered just as it is in itself, does not intrinsically admit nonexistence: for one of two contradictories cannot be qualified by the other, nor can one nature turn into the nature of its contradictory.",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 130,
           "endChar": 160,
           "text": "ومتى امتنع العدم عليها لذاتها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Necessity follows only after intrinsic impossibility of nonexistence; that inferential step is preserved."
+          },
+          "englishCorrespondence": "And whenever nonexistence is intrinsically impossible for a reality, that reality is necessary through itself.",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 161,
           "endChar": 179,
           "text": "كانت واجبة لذاتها.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Necessity follows only after intrinsic impossibility of nonexistence; that inferential step is preserved."
+          },
+          "englishCorrespondence": "And whenever nonexistence is intrinsically impossible for a reality, that reality is necessary through itself.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -657,7 +833,7 @@
           "text": "And whenever nonexistence is intrinsically impossible for a reality, that reality is necessary through itself."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 2
     },
     {
@@ -675,139 +851,187 @@
           "startChar": 0,
           "endChar": 53,
           "text": "وتلك الحقيقة الواجبة لذاتها غير المأخوذة بقيد العموم،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Unrestricted Necessary is neither a concept qualified by generality nor privatively delimited."
+          },
+          "englishCorrespondence": "That reality which is necessary through itself is not taken under the qualification of generality, since the general as general has no extramental realization. Nor is it taken under a specifying qualification belonging to privative conceptual considerations, for the reason already given;",
           "riskMarkers": [
             "negation",
             "modality",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 54,
           "endChar": 102,
           "text": "إذ لا تحقّق للأمر العام من حيث هو عام في الخارج،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Unrestricted Necessary is neither a concept qualified by generality nor privatively delimited."
+          },
+          "englishCorrespondence": "That reality which is necessary through itself is not taken under the qualification of generality, since the general as general has no extramental realization. Nor is it taken under a specifying qualification belonging to privative conceptual considerations, for the reason already given;",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 103,
           "endChar": 165,
           "text": "وغير المأخوذة بقيد مخصّص من القيود الاعتبارية العدمية لما مرّ،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Unrestricted Necessary is neither a concept qualified by generality nor privatively delimited."
+          },
+          "englishCorrespondence": "That reality which is necessary through itself is not taken under the qualification of generality, since the general as general has no extramental realization. Nor is it taken under a specifying qualification belonging to privative conceptual considerations, for the reason already given;",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 4,
           "startChar": 166,
           "endChar": 200,
           "text": "ولا بقيد مخصّص من القيود الوجودية؛",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 5,
+            "note": "Positive specifying qualifier is tested as form (composition) or accident (would not be intrinsic; otherwise no specification)."
+          },
+          "englishCorrespondence": "nor under a specifying qualification belonging to positive, existential determinations. For if that specifying qualification stood to it as form does, what is necessary through itself would be composed of two parts, or of diverse parts, and that is impossible. If instead it stood to that reality as an accident, it would not follow from the reality’s very nature;",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 5,
           "startChar": 201,
           "endChar": 252,
           "text": "لأن هذا القيد المخصّص لو كان كالصورة بالنسبة إليها،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 5,
+            "note": "Positive specifying qualifier is tested as form (composition) or accident (would not be intrinsic; otherwise no specification)."
+          },
+          "englishCorrespondence": "nor under a specifying qualification belonging to positive, existential determinations. For if that specifying qualification stood to it as form does, what is necessary through itself would be composed of two parts, or of diverse parts, and that is impossible. If instead it stood to that reality as an accident, it would not follow from the reality’s very nature;",
           "riskMarkers": [
             "conditional"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 6,
           "startChar": 253,
           "endChar": 298,
           "text": "لتركّب الواجب لذاته من جزئين أو أجزاء مختلفة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 5,
+            "note": "Positive specifying qualifier is tested as form (composition) or accident (would not be intrinsic; otherwise no specification)."
+          },
+          "englishCorrespondence": "nor under a specifying qualification belonging to positive, existential determinations. For if that specifying qualification stood to it as form does, what is necessary through itself would be composed of two parts, or of diverse parts, and that is impossible. If instead it stood to that reality as an accident, it would not follow from the reality’s very nature;",
           "riskMarkers": [
             "modality"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 299,
           "endChar": 308,
           "text": "هذا محال.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 5,
+            "note": "Positive specifying qualifier is tested as form (composition) or accident (would not be intrinsic; otherwise no specification)."
+          },
+          "englishCorrespondence": "nor under a specifying qualification belonging to positive, existential determinations. For if that specifying qualification stood to it as form does, what is necessary through itself would be composed of two parts, or of diverse parts, and that is impossible. If instead it stood to that reality as an accident, it would not follow from the reality’s very nature;",
+          "riskMarkers": []
         },
         {
           "n": 8,
           "startChar": 309,
           "endChar": 345,
           "text": "ولو كان كالأمر العرضي بالنسبة إليها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 5,
+            "note": "Positive specifying qualifier is tested as form (composition) or accident (would not be intrinsic; otherwise no specification)."
+          },
+          "englishCorrespondence": "nor under a specifying qualification belonging to positive, existential determinations. For if that specifying qualification stood to it as form does, what is necessary through itself would be composed of two parts, or of diverse parts, and that is impossible. If instead it stood to that reality as an accident, it would not follow from the reality’s very nature;",
+          "riskMarkers": []
         },
         {
           "n": 9,
           "startChar": 346,
           "endChar": 375,
           "text": "فلا يكون لازماً لنفس طبيعتها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "Dependence reductio and regress concern terms ordered between two present bounds, not an absolute mathematical denial of every infinity."
+          },
+          "englishCorrespondence": "otherwise it could not be a specifying qualification. The intrinsically necessary reality would then depend for its intrinsic necessity on something distinct from itself, since an infinite regress among ordered terms situated between two present endpoints is impossible.",
+          "riskMarkers": []
         },
         {
           "n": 10,
           "startChar": 376,
           "endChar": 411,
           "text": "وإلا لاستحال أن يكون قيداً مخصّصاً،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "Dependence reductio and regress concern terms ordered between two present bounds, not an absolute mathematical denial of every infinity."
+          },
+          "englishCorrespondence": "otherwise it could not be a specifying qualification. The intrinsically necessary reality would then depend for its intrinsic necessity on something distinct from itself, since an infinite regress among ordered terms situated between two present endpoints is impossible.",
           "riskMarkers": [
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 11,
           "startChar": 412,
           "endChar": 481,
           "text": "وحينئذ افتقرت الحقيقة الواجبة في وجوبها الذاتي إلى غيرها المباين لها،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "Dependence reductio and regress concern terms ordered between two present bounds, not an absolute mathematical denial of every infinity."
+          },
+          "englishCorrespondence": "otherwise it could not be a specifying qualification. The intrinsically necessary reality would then depend for its intrinsic necessity on something distinct from itself, since an infinite regress among ordered terms situated between two present endpoints is impossible.",
           "riskMarkers": [
             "modality",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 12,
           "startChar": 482,
           "endChar": 548,
           "text": "لامتناع وقوع التسلسل في الأمور المترتّبة الواقعة بين طرفين حاضرين.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "Dependence reductio and regress concern terms ordered between two present bounds, not an absolute mathematical denial of every infinity."
+          },
+          "englishCorrespondence": "otherwise it could not be a specifying qualification. The intrinsically necessary reality would then depend for its intrinsic necessity on something distinct from itself, since an infinite regress among ordered terms situated between two present endpoints is impossible.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -854,7 +1078,7 @@
           "text": "The intrinsically necessary reality would then depend for its intrinsic necessity on something distinct from itself, since an infinite regress among ordered terms situated between two present endpoints is impossible."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 0
     },
     {
@@ -872,15 +1096,19 @@
           "startChar": 0,
           "endChar": 114,
           "text": "فلئن قيل: إن الحقيقة الواجبة هي الطبيعة التي هي من ملزومات ما ذُكر من الوجود الذي يشترك فيه جميع الوجودات الخاصّة.",
+          "review": {
+            "status": "unresolved-reading",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "The objection is preserved. Malzūmāt is syntactically and philosophically difficult, and the English remains provisional until comparison with the separate ancestral manuscripts."
+          },
+          "englishCorrespondence": "If it is objected: 'The necessary reality is the nature that is among the necessary correlates of that existence, already mentioned, which is common to all particular existences.'",
           "riskMarkers": [
             "objection",
             "conditional",
             "modality",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         }
       ],
       "englishSentences": [
@@ -891,7 +1119,7 @@
           "text": "If it is objected: 'The necessary reality is the nature that is among the necessary correlates of that existence, already mentioned, which is common to all particular existences.'"
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 0
     },
     {
@@ -909,73 +1137,97 @@
           "startChar": 0,
           "endChar": 65,
           "text": "ولا يلزم من هذا أن تكون تلك الحقيقة من الماهيّات المغايرة للوجود،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Later Peripatetic objection is reconstructed; māhiyya without conditioning by existence and extramental/mental distinction are kept within its dialectical role."
+          },
+          "englishCorrespondence": "Nor would it follow from this that that reality is a quiddity distinct from existence, such that it produces existence without being conditioned by existence. For that reality is existence itself, and does not differ from existence.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 66,
           "endChar": 101,
           "text": "فيكون مؤثّرة للوجود لا بشرط الوجود،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Later Peripatetic objection is reconstructed; māhiyya without conditioning by existence and extramental/mental distinction are kept within its dialectical role."
+          },
+          "englishCorrespondence": "Nor would it follow from this that that reality is a quiddity distinct from existence, such that it produces existence without being conditioned by existence. For that reality is existence itself, and does not differ from existence.",
           "riskMarkers": [
             "negation",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 102,
           "endChar": 146,
           "text": "لأن تلك الحقيقة نفس الوجود ولا تغاير الوجود،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Later Peripatetic objection is reconstructed; māhiyya without conditioning by existence and extramental/mental distinction are kept within its dialectical role."
+          },
+          "englishCorrespondence": "Nor would it follow from this that that reality is a quiddity distinct from existence, such that it produces existence without being conditioned by existence. For that reality is existence itself, and does not differ from existence.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 4,
           "startChar": 147,
           "endChar": 189,
           "text": "ويكون قول الوجود على تلك الحقيقة الملزومة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "The claim of gradational predication of one existence upon particular existences is the opponent's position, not the ancestor's settled conclusion."
+          },
+          "englishCorrespondence": "Accordingly, predicating 'existence' of that underlying reality and of the remaining existences regarded as its corresponding underlying subjects would be by way of gradation (tashkīk).",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 5,
           "startChar": 190,
           "endChar": 239,
           "text": "وعلى سائر الوجودات الباقية الملزومة بالنسبة إليه،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "The claim of gradational predication of one existence upon particular existences is the opponent's position, not the ancestor's settled conclusion."
+          },
+          "englishCorrespondence": "Accordingly, predicating 'existence' of that underlying reality and of the remaining existences regarded as its corresponding underlying subjects would be by way of gradation (tashkīk).",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 6,
           "startChar": 240,
           "endChar": 257,
           "text": "على سبيل التشكيك.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "The claim of gradational predication of one existence upon particular existences is the opponent's position, not the ancestor's settled conclusion."
+          },
+          "englishCorrespondence": "Accordingly, predicating 'existence' of that underlying reality and of the remaining existences regarded as its corresponding underlying subjects would be by way of gradation (tashkīk).",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         }
       ],
       "englishSentences": [
@@ -998,7 +1250,7 @@
           "text": "Accordingly, predicating 'existence' of that underlying reality and of the remaining existences regarded as its corresponding underlying subjects would be by way of gradation (tashkīk)."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 0
     },
     {
@@ -1016,46 +1268,62 @@
           "startChar": 0,
           "endChar": 43,
           "text": "ولا يلزم أن تكون تلك الحقيقة موجودة مرّتين،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "The double-existence charge and the distinction between the nature and what is shared in existence kept as opponent's reply."
+          },
+          "englishCorrespondence": "Nor would it follow that that reality is existent twice, as the remaining existences might be said to be;",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 44,
           "endChar": 67,
           "text": "كسائر الوجودات الباقية،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "The double-existence charge and the distinction between the nature and what is shared in existence kept as opponent's reply."
+          },
+          "englishCorrespondence": "Nor would it follow that that reality is existent twice, as the remaining existences might be said to be;",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 68,
           "endChar": 150,
           "text": "فإن الموجودية المشتركة بينها وبين الموجودات الباقية هي نفس تلك الحقيقة في الأعيان،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "External sameness and intellectually additional predication preserved under different considerations."
+          },
+          "englishCorrespondence": "for the existentness common to it and the other existences is identical with that reality in external things, even though it is among the attributes additional to it from the standpoint of intellects and minds.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 4,
           "startChar": 151,
           "endChar": 206,
           "text": "وإن كانت من العوارض الزائدة عليها بحسب العقول والأذهان.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "External sameness and intellectually additional predication preserved under different considerations."
+          },
+          "englishCorrespondence": "for the existentness common to it and the other existences is identical with that reality in external things, even though it is among the attributes additional to it from the standpoint of intellects and minds.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -1072,7 +1340,7 @@
           "text": "for the existentness common to it and the other existences is identical with that reality in external things, even though it is among the attributes additional to it from the standpoint of intellects and minds."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 0
     },
     {
@@ -1090,67 +1358,91 @@
           "startChar": 0,
           "endChar": 87,
           "text": "قلنا: إن الطبيعة الواجبة الملزومة لمطلق الوجود إن صحّ أن تكون ذات أفراد ذهنية أو عقلية،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "If necessary nature had mental individuals, some could exist and others be impossible; the author infers possibility per se for the class."
+          },
+          "englishCorrespondence": "We reply: If the necessary nature to which absolute existence is necessarily concomitant could have mental or intellectual instances, then suppose one of its instances existed while the rest were impossible. All the instances would be possible in themselves.",
           "riskMarkers": [
             "reply",
             "conditional",
             "modality",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 88,
           "endChar": 130,
           "text": "فلو وُجد منها فرد وامتنعت الأفراد الباقية،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "If necessary nature had mental individuals, some could exist and others be impossible; the author infers possibility per se for the class."
+          },
+          "englishCorrespondence": "We reply: If the necessary nature to which absolute existence is necessarily concomitant could have mental or intellectual instances, then suppose one of its instances existed while the rest were impossible. All the instances would be possible in themselves.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 131,
           "endChar": 167,
           "text": "كانت الأفراد كلّها ممكنة بحسب ذاتها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "If necessary nature had mental individuals, some could exist and others be impossible; the author infers possibility per se for the class."
+          },
+          "englishCorrespondence": "We reply: If the necessary nature to which absolute existence is necessarily concomitant could have mental or intellectual instances, then suppose one of its instances existed while the rest were impossible. All the instances would be possible in themselves.",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 168,
           "endChar": 198,
           "text": "فلو امتنع البعض لامتنع بالغير،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 4,
+            "note": "Modality per aliud versus per se and final axiom that what is intrinsic cannot be removed externally preserved."
+          },
+          "englishCorrespondence": "Thus, if some were impossible, they would be impossible through another, and if some were necessary, they would be necessary through another; for what belongs to a thing in itself cannot be removed by another.",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 199,
           "endChar": 225,
           "text": "ولو وجب البعض لوجب بالغير،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 4,
+            "note": "Modality per aliud versus per se and final axiom that what is intrinsic cannot be removed externally preserved."
+          },
+          "englishCorrespondence": "Thus, if some were impossible, they would be impossible through another, and if some were necessary, they would be necessary through another; for what belongs to a thing in itself cannot be removed by another.",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 226,
           "endChar": 256,
           "text": "فإنّ ما بالذات لا يزول بالغير.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 4,
+            "note": "Modality per aliud versus per se and final axiom that what is intrinsic cannot be removed externally preserved."
+          },
+          "englishCorrespondence": "Thus, if some were impossible, they would be impossible through another, and if some were necessary, they would be necessary through another; for what belongs to a thing in itself cannot be removed by another.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         }
       ],
       "englishSentences": [
@@ -1179,7 +1471,7 @@
           "text": "for what belongs to a thing in itself cannot be removed by another."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 0
     },
     {
@@ -1197,82 +1489,114 @@
           "startChar": 0,
           "endChar": 45,
           "text": "وإن لم يمكن أن تكون ذات أفراد ذهنية أو عقلية،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "First two reasons: determination identical with the reality, or necessarily required by the reality itself."
+          },
+          "englishCorrespondence": "If, however, it cannot have individual instances in the mind or in intellection, this is either because its determination is identical with its reality in external existence;",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 46,
           "endChar": 85,
           "text": "إمّا لأن تعيّنها نفس حقيقتها في الخارج،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "First two reasons: determination identical with the reality, or necessarily required by the reality itself."
+          },
+          "englishCorrespondence": "If, however, it cannot have individual instances in the mind or in intellection, this is either because its determination is identical with its reality in external existence;",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 86,
           "endChar": 116,
           "text": "أو لأنها اقتضت تعيّنها لذاتها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Third: intrinsic determination makes the nature unintelligible as one among many possible subjects."
+          },
+          "englishCorrespondence": "or because it entails its own determination in virtue of itself, so that the remaining purported existing instances are impossible in themselves as well;",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 117,
           "endChar": 163,
           "text": "فامتنعت الأفراد الباقية الموجودة لذاتها أيضاً،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Third: intrinsic determination makes the nature unintelligible as one among many possible subjects."
+          },
+          "englishCorrespondence": "or because it entails its own determination in virtue of itself, so that the remaining purported existing instances are impossible in themselves as well;",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 164,
           "endChar": 241,
           "text": "أو لأن تلك الطبيعة المتعيّنة بالذات لما استحال أن تكون معقولة لشيء من العقول،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 4,
+            "note": "Fourth: no association with another; intellectual or mental plurality thereby excluded."
+          },
+          "englishCorrespondence": "or because a nature determined in itself cannot become an intelligible object for any intellect, and so cannot possess a plurality of instances; or because such a nature cannot be joined to anything else, nor anything else to it, and so cannot have intellectual or mental instances.",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 242,
           "endChar": 274,
           "text": "فاستحال أن تكون ذات أفراد كثيرة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 4,
+            "note": "Fourth: no association with another; intellectual or mental plurality thereby excluded."
+          },
+          "englishCorrespondence": "or because a nature determined in itself cannot become an intelligible object for any intellect, and so cannot possess a plurality of instances; or because such a nature cannot be joined to anything else, nor anything else to it, and so cannot have intellectual or mental instances.",
+          "riskMarkers": []
         },
         {
           "n": 7,
           "startChar": 275,
           "endChar": 338,
           "text": "أو لأن تلك الطبيعة لما امتنع اقترانها بالغير واقتران الغير بها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 4,
+            "note": "Fourth: no association with another; intellectual or mental plurality thereby excluded."
+          },
+          "englishCorrespondence": "or because a nature determined in itself cannot become an intelligible object for any intellect, and so cannot possess a plurality of instances; or because such a nature cannot be joined to anything else, nor anything else to it, and so cannot have intellectual or mental instances.",
+          "riskMarkers": []
         },
         {
           "n": 8,
           "startChar": 339,
           "endChar": 380,
           "text": "فاستحال أن تكون ذات أفراد عقلية أو ذهنية.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 4,
+            "note": "Fourth: no association with another; intellectual or mental plurality thereby excluded."
+          },
+          "englishCorrespondence": "or because a nature determined in itself cannot become an intelligible object for any intellect, and so cannot possess a plurality of instances; or because such a nature cannot be joined to anything else, nor anything else to it, and so cannot have intellectual or mental instances.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -1301,7 +1625,7 @@
           "text": "or because such a nature cannot be joined to anything else, nor anything else to it, and so cannot have intellectual or mental instances."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 0
     },
     {
@@ -1319,142 +1643,190 @@
           "startChar": 0,
           "endChar": 140,
           "text": "فإن كانت حقيقته من حيث هي مغايرة لحقيقة الوجود الخارجي والكون العيني الذي تتكون به الماهيات [الحقيقية] المختلفة بمقارنتها في الأعيان بالذات،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Distinct real quiddity versus extramental existence produces mere verbal homonymy, not shared meaning."
+          },
+          "englishCorrespondence": "If its reality, considered in itself, is different from the reality of external existence and objective being—through whose conjunction with different real quiddities those quiddities come to be in external reality—then applying the expression ‘existence’ to the two realities would involve verbal homonymy rather than a common meaning. Moreover, that supposed nature could not itself contain objective being, since it must be simple. It would consequently have to be either one of the real quiddities or something belonging to intellectual considerations;",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 141,
           "endChar": 205,
           "text": "كان إطلاق لفظ الوجود على الحقيقتين بالاشتراك اللفظي دون المعنوي،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Distinct real quiddity versus extramental existence produces mere verbal homonymy, not shared meaning."
+          },
+          "englishCorrespondence": "If its reality, considered in itself, is different from the reality of external existence and objective being—through whose conjunction with different real quiddities those quiddities come to be in external reality—then applying the expression ‘existence’ to the two realities would involve verbal homonymy rather than a common meaning. Moreover, that supposed nature could not itself contain objective being, since it must be simple. It would consequently have to be either one of the real quiddities or something belonging to intellectual considerations;",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 206,
           "endChar": 265,
           "text": "على أن تلك الطبيعة لا بد وأن لا يكون في نفسها الكون العيني،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Distinct real quiddity versus extramental existence produces mere verbal homonymy, not shared meaning."
+          },
+          "englishCorrespondence": "If its reality, considered in itself, is different from the reality of external existence and objective being—through whose conjunction with different real quiddities those quiddities come to be in external reality—then applying the expression ‘existence’ to the two realities would involve verbal homonymy rather than a common meaning. Moreover, that supposed nature could not itself contain objective being, since it must be simple. It would consequently have to be either one of the real quiddities or something belonging to intellectual considerations;",
           "riskMarkers": [
             "negation",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 4,
           "startChar": 266,
           "endChar": 280,
           "text": "لوجوب بساطتها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Distinct real quiddity versus extramental existence produces mere verbal homonymy, not shared meaning."
+          },
+          "englishCorrespondence": "If its reality, considered in itself, is different from the reality of external existence and objective being—through whose conjunction with different real quiddities those quiddities come to be in external reality—then applying the expression ‘existence’ to the two realities would involve verbal homonymy rather than a common meaning. Moreover, that supposed nature could not itself contain objective being, since it must be simple. It would consequently have to be either one of the real quiddities or something belonging to intellectual considerations;",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 281,
           "endChar": 327,
           "text": "وحينئذ إما أن يكون شيئاً من الماهيات الحقيقية،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Alternative non-distinction forces either denial of shared predicates or making possible instances bear necessary reality."
+          },
+          "englishCorrespondence": "numerous impossibilities would follow. If, however, it is not distinct from that reality, then either the particular possible existences in external reality cannot entail the reality of absolute existence, share in it, or receive its true predication;",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 328,
           "endChar": 355,
           "text": "أو أمراً من الأمور العقلية،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Alternative non-distinction forces either denial of shared predicates or making possible instances bear necessary reality."
+          },
+          "englishCorrespondence": "numerous impossibilities would follow. If, however, it is not distinct from that reality, then either the particular possible existences in external reality cannot entail the reality of absolute existence, share in it, or receive its true predication;",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 356,
           "endChar": 383,
           "text": "ويلزم من ذلك كثير المحالات.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Alternative non-distinction forces either denial of shared predicates or making possible instances bear necessary reality."
+          },
+          "englishCorrespondence": "numerous impossibilities would follow. If, however, it is not distinct from that reality, then either the particular possible existences in external reality cannot entail the reality of absolute existence, share in it, or receive its true predication;",
+          "riskMarkers": []
         },
         {
           "n": 8,
           "startChar": 384,
           "endChar": 408,
           "text": "وإن لم تكن مغايرة [لها]،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Alternative non-distinction forces either denial of shared predicates or making possible instances bear necessary reality."
+          },
+          "englishCorrespondence": "numerous impossibilities would follow. If, however, it is not distinct from that reality, then either the particular possible existences in external reality cannot entail the reality of absolute existence, share in it, or receive its true predication;",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 9,
           "startChar": 409,
           "endChar": 518,
           "text": "فإما امتنع استلزام الوجودات الخاصة العينية الممكنة لحقيقة الوجود المطلق واشتراكها فيه وصدق تلك الحقيقة عليها،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 8,
+            "note": "No intrinsic possible aspect or receptivity belongs to what is claimed necessary through itself."
+          },
+          "englishCorrespondence": "or they must entail, share in, and be truly predicated of by the necessary reality. But it is impossible for particular possible existences to be intrinsic underlying terms to which the necessary reality belongs as a concomitant. For we have demonstrated in our philosophical writings that such a nature cannot contain a purely possible aspect or any receptivity for a real existential attribute.",
           "riskMarkers": [
             "modality",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 10,
           "startChar": 519,
           "endChar": 590,
           "text": "أو وجب استلزامها للحقيقة الواجبة واشتراكها فيها وصدق تلك الحقيقة عليها،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 8,
+            "note": "No intrinsic possible aspect or receptivity belongs to what is claimed necessary through itself."
+          },
+          "englishCorrespondence": "or they must entail, share in, and be truly predicated of by the necessary reality. But it is impossible for particular possible existences to be intrinsic underlying terms to which the necessary reality belongs as a concomitant. For we have demonstrated in our philosophical writings that such a nature cannot contain a purely possible aspect or any receptivity for a real existential attribute.",
           "riskMarkers": [
             "modality",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 11,
           "startChar": 591,
           "endChar": 669,
           "text": "ومن الممتنع أن تكون الوجودات الخاصة الممكنة ملزومة للحقيقة الواجبة بحسب الذات،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 8,
+            "note": "No intrinsic possible aspect or receptivity belongs to what is claimed necessary through itself."
+          },
+          "englishCorrespondence": "or they must entail, share in, and be truly predicated of by the necessary reality. But it is impossible for particular possible existences to be intrinsic underlying terms to which the necessary reality belongs as a concomitant. For we have demonstrated in our philosophical writings that such a nature cannot contain a purely possible aspect or any receptivity for a real existential attribute.",
           "riskMarkers": [
             "modality",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 12,
           "startChar": 670,
           "endChar": 797,
           "text": "فإنّا قد برهنا في كتبنا الحكمية أن تلك الطبيعة يمتنع أن يكون فيها جهة إمكانيّة محضة وقابليّة لشيء من الأوصاف الوجودية الحقيقية.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 8,
+            "note": "No intrinsic possible aspect or receptivity belongs to what is claimed necessary through itself."
+          },
+          "englishCorrespondence": "or they must entail, share in, and be truly predicated of by the necessary reality. But it is impossible for particular possible existences to be intrinsic underlying terms to which the necessary reality belongs as a concomitant. For we have demonstrated in our philosophical writings that such a nature cannot contain a purely possible aspect or any receptivity for a real existential attribute.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         }
       ],
       "englishSentences": [
@@ -1507,7 +1879,7 @@
           "text": "For we have demonstrated in our philosophical writings that such a nature cannot contain a purely possible aspect or any receptivity for a real existential attribute."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 1
     },
     {
@@ -1525,42 +1897,58 @@
           "startChar": 0,
           "endChar": 72,
           "text": "على أن اجتماع الأمثال واختصاص أحد المتماثلين بالحالّية والآخر بالمحلّية،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Similars without a differentiating reason cannot be assigned mutually incompatible roles of accident inhering and subject as locus."
+          },
+          "englishCorrespondence": "Moreover, the coming together of things exactly alike, with one of the two assigned the status of what inheres and the other the status of a locus in which something inheres, and with one possessing a qualification that the other lacks despite there being no differentiating factor—these are among the judgments and states intrinsically impossible.",
+          "riskMarkers": []
         },
         {
           "n": 2,
           "startChar": 73,
           "endChar": 102,
           "text": "واتصاف أحدهما بصفة دون الآخر،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Similars without a differentiating reason cannot be assigned mutually incompatible roles of accident inhering and subject as locus."
+          },
+          "englishCorrespondence": "Moreover, the coming together of things exactly alike, with one of the two assigned the status of what inheres and the other the status of a locus in which something inheres, and with one possessing a qualification that the other lacks despite there being no differentiating factor—these are among the judgments and states intrinsically impossible.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 103,
           "endChar": 128,
           "text": "من غير أن يكون هناك فارق،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Similars without a differentiating reason cannot be assigned mutually incompatible roles of accident inhering and subject as locus."
+          },
+          "englishCorrespondence": "Moreover, the coming together of things exactly alike, with one of the two assigned the status of what inheres and the other the status of a locus in which something inheres, and with one possessing a qualification that the other lacks despite there being no differentiating factor—these are among the judgments and states intrinsically impossible.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 4,
           "startChar": 129,
           "endChar": 166,
           "text": "من الأحكام والأحوال المستحيلة بالذات.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Similars without a differentiating reason cannot be assigned mutually incompatible roles of accident inhering and subject as locus."
+          },
+          "englishCorrespondence": "Moreover, the coming together of things exactly alike, with one of the two assigned the status of what inheres and the other the status of a locus in which something inheres, and with one possessing a qualification that the other lacks despite there being no differentiating factor—these are among the judgments and states intrinsically impossible.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -1571,7 +1959,7 @@
           "text": "Moreover, the coming together of things exactly alike, with one of the two assigned the status of what inheres and the other the status of a locus in which something inheres, and with one possessing a qualification that the other lacks despite there being no differentiating factor—these are among the judgments and states intrinsically impossible."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 0
     },
     {
@@ -1589,139 +1977,187 @@
           "startChar": 0,
           "endChar": 108,
           "text": "ثم إن الوجود الحاصل للماهيات المختلفة والطبائع المتخالفة لا يقبل الوجود والعدم لذاته لما أشير إليه في موضعه،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 4,
+            "note": "Dual-stage refutation: existential reality refuses both existence and nonexistence, hence intrinsically necessary; plurality would follow from a second intrinsically necessary existent."
+          },
+          "englishCorrespondence": "Furthermore, the existence that obtains for differing quiddities and divergent natures does not, in virtue of itself, admit existence and nonexistence, as indicated in the appropriate place. It must therefore be necessary through itself. If some other existent distinct from it were found, that which is necessary through itself would be multiplied—a consequence the defender of gradation rejects utterly. This addresses the case in which the advocate of gradation advances no more than a rational possibility or supposition.",
           "riskMarkers": [
             "negation",
             "conditional",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 109,
           "endChar": 135,
           "text": "فيجب أن يكون واجباً لذاته،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 4,
+            "note": "Dual-stage refutation: existential reality refuses both existence and nonexistence, hence intrinsically necessary; plurality would follow from a second intrinsically necessary existent."
+          },
+          "englishCorrespondence": "Furthermore, the existence that obtains for differing quiddities and divergent natures does not, in virtue of itself, admit existence and nonexistence, as indicated in the appropriate place. It must therefore be necessary through itself. If some other existent distinct from it were found, that which is necessary through itself would be multiplied—a consequence the defender of gradation rejects utterly. This addresses the case in which the advocate of gradation advances no more than a rational possibility or supposition.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 136,
           "endChar": 174,
           "text": "وحينئذ لو وجد هناك موجود آخر مغاير له،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 4,
+            "note": "Dual-stage refutation: existential reality refuses both existence and nonexistence, hence intrinsically necessary; plurality would follow from a second intrinsically necessary existent."
+          },
+          "englishCorrespondence": "Furthermore, the existence that obtains for differing quiddities and divergent natures does not, in virtue of itself, admit existence and nonexistence, as indicated in the appropriate place. It must therefore be necessary through itself. If some other existent distinct from it were found, that which is necessary through itself would be multiplied—a consequence the defender of gradation rejects utterly. This addresses the case in which the advocate of gradation advances no more than a rational possibility or supposition.",
           "riskMarkers": [
             "conditional"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 4,
           "startChar": 175,
           "endChar": 195,
           "text": "لتعدّد الواجب لذاته،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 4,
+            "note": "Dual-stage refutation: existential reality refuses both existence and nonexistence, hence intrinsically necessary; plurality would follow from a second intrinsically necessary existent."
+          },
+          "englishCorrespondence": "Furthermore, the existence that obtains for differing quiddities and divergent natures does not, in virtue of itself, admit existence and nonexistence, as indicated in the appropriate place. It must therefore be necessary through itself. If some other existent distinct from it were found, that which is necessary through itself would be multiplied—a consequence the defender of gradation rejects utterly. This addresses the case in which the advocate of gradation advances no more than a rational possibility or supposition.",
           "riskMarkers": [
             "modality"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 5,
           "startChar": 196,
           "endChar": 230,
           "text": "والقائل بالتشكيك ينكره كل الإنكار.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 4,
+            "note": "Dual-stage refutation: existential reality refuses both existence and nonexistence, hence intrinsically necessary; plurality would follow from a second intrinsically necessary existent."
+          },
+          "englishCorrespondence": "Furthermore, the existence that obtains for differing quiddities and divergent natures does not, in virtue of itself, admit existence and nonexistence, as indicated in the appropriate place. It must therefore be necessary through itself. If some other existent distinct from it were found, that which is necessary through itself would be multiplied—a consequence the defender of gradation rejects utterly. This addresses the case in which the advocate of gradation advances no more than a rational possibility or supposition.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 6,
           "startChar": 231,
           "endChar": 296,
           "text": "هذا إذا ذهب القائل بالتشكيك مذهب التجويز والاحتمال العقلي لا غير،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 7,
+            "note": "Priority, perfection, intensity and completeness are introduced as an opponent's proposed ground; proving the entity thereby is circular."
+          },
+          "englishCorrespondence": "If instead he claims that gradation is necessary and established with certainty, and appeals to priority, precedence, greater intensity, greater perfection, greater completeness, and similar qualifications on the part of the necessary nature underlying absolute external being, together with their opposites on the part of the other underlying terms, we deny this. For the obtaining of these relative conditions in the former as compared with the latter presupposes that the supposed underlying nature is established in reality in exactly the manner you allege. To demonstrate its establishment by these very conditions would beg the question.",
           "riskMarkers": [
             "negation",
             "conditional",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 297,
           "endChar": 338,
           "text": "وأما إذا ذهب مذهب الوجوب والثبوت الضروري،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 7,
+            "note": "Priority, perfection, intensity and completeness are introduced as an opponent's proposed ground; proving the entity thereby is circular."
+          },
+          "englishCorrespondence": "If instead he claims that gradation is necessary and established with certainty, and appeals to priority, precedence, greater intensity, greater perfection, greater completeness, and similar qualifications on the part of the necessary nature underlying absolute external being, together with their opposites on the part of the other underlying terms, we deny this. For the obtaining of these relative conditions in the former as compared with the latter presupposes that the supposed underlying nature is established in reality in exactly the manner you allege. To demonstrate its establishment by these very conditions would beg the question.",
           "riskMarkers": [
             "conditional",
             "modality"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 8,
           "startChar": 339,
           "endChar": 527,
           "text": "تمسّك في بيانه بإثبات الأولويّة والأقدميّة والأشدّيّة والأكمليّة والأتمّيّة وشبهها بالنسبة إلى الطبيعة الواجبة الملزومة للكون العيني المطلق ومقابلاتها بالنسبة إلى الملزومات الأُخر الباقية،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 7,
+            "note": "Priority, perfection, intensity and completeness are introduced as an opponent's proposed ground; proving the entity thereby is circular."
+          },
+          "englishCorrespondence": "If instead he claims that gradation is necessary and established with certainty, and appeals to priority, precedence, greater intensity, greater perfection, greater completeness, and similar qualifications on the part of the necessary nature underlying absolute external being, together with their opposites on the part of the other underlying terms, we deny this. For the obtaining of these relative conditions in the former as compared with the latter presupposes that the supposed underlying nature is established in reality in exactly the manner you allege. To demonstrate its establishment by these very conditions would beg the question.",
           "riskMarkers": [
             "modality"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 9,
           "startChar": 528,
           "endChar": 538,
           "text": "منعنا ذلك؛",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 7,
+            "note": "Priority, perfection, intensity and completeness are introduced as an opponent's proposed ground; proving the entity thereby is circular."
+          },
+          "englishCorrespondence": "If instead he claims that gradation is necessary and established with certainty, and appeals to priority, precedence, greater intensity, greater perfection, greater completeness, and similar qualifications on the part of the necessary nature underlying absolute external being, together with their opposites on the part of the other underlying terms, we deny this. For the obtaining of these relative conditions in the former as compared with the latter presupposes that the supposed underlying nature is established in reality in exactly the manner you allege. To demonstrate its establishment by these very conditions would beg the question.",
+          "riskMarkers": []
         },
         {
           "n": 10,
           "startChar": 539,
           "endChar": 642,
           "text": "فإن ثبوت تلك الأحوال لها بالقياس إليها مبنيّ على ثبوت تلك الطبيعة الملزومة في نفس الأمر على ما ذكرتموه،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 7,
+            "note": "Priority, perfection, intensity and completeness are introduced as an opponent's proposed ground; proving the entity thereby is circular."
+          },
+          "englishCorrespondence": "If instead he claims that gradation is necessary and established with certainty, and appeals to priority, precedence, greater intensity, greater perfection, greater completeness, and similar qualifications on the part of the necessary nature underlying absolute external being, together with their opposites on the part of the other underlying terms, we deny this. For the obtaining of these relative conditions in the former as compared with the latter presupposes that the supposed underlying nature is established in reality in exactly the manner you allege. To demonstrate its establishment by these very conditions would beg the question.",
+          "riskMarkers": []
         },
         {
           "n": 11,
           "startChar": 643,
           "endChar": 665,
           "text": "فلو بُيّن ثبوتها بذلك،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 7,
+            "note": "Priority, perfection, intensity and completeness are introduced as an opponent's proposed ground; proving the entity thereby is circular."
+          },
+          "englishCorrespondence": "If instead he claims that gradation is necessary and established with certainty, and appeals to priority, precedence, greater intensity, greater perfection, greater completeness, and similar qualifications on the part of the necessary nature underlying absolute external being, together with their opposites on the part of the other underlying terms, we deny this. For the obtaining of these relative conditions in the former as compared with the latter presupposes that the supposed underlying nature is established in reality in exactly the manner you allege. To demonstrate its establishment by these very conditions would beg the question.",
+          "riskMarkers": []
         },
         {
           "n": 12,
           "startChar": 666,
           "endChar": 691,
           "text": "لزم المصادرة على المطلوب.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 7,
+            "note": "Priority, perfection, intensity and completeness are introduced as an opponent's proposed ground; proving the entity thereby is circular."
+          },
+          "englishCorrespondence": "If instead he claims that gradation is necessary and established with certainty, and appeals to priority, precedence, greater intensity, greater perfection, greater completeness, and similar qualifications on the part of the necessary nature underlying absolute external being, together with their opposites on the part of the other underlying terms, we deny this. For the obtaining of these relative conditions in the former as compared with the latter presupposes that the supposed underlying nature is established in reality in exactly the manner you allege. To demonstrate its establishment by these very conditions would beg the question.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -1768,7 +2204,7 @@
           "text": "To demonstrate its establishment by these very conditions would beg the question."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 3
     },
     {
@@ -1786,102 +2222,134 @@
           "startChar": 0,
           "endChar": 141,
           "text": "ثم إنا نقول: إن مفهوم تلك الطبيعة غير مفهوم شيء من التعيّنات التي هي من العوارض المستدعية لتحقّق موضوعات تتعلّق بها في الوجود العيني والعقلي،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Nature and determinate qualification distinguished, including external/mental subjects and privative/positive accidents."
+          },
+          "englishCorrespondence": "We further maintain that the concept of that nature is distinct from the concept of every determination that is an accident requiring the realization of a subject to which it attaches, whether in external or intellectual existence, and whether that determination is positive or privative.",
           "riskMarkers": [
             "negation",
             "conditional",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 142,
           "endChar": 172,
           "text": "وجودية كانت أو عدمية بالضرورة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Nature and determinate qualification distinguished, including external/mental subjects and privative/positive accidents."
+          },
+          "englishCorrespondence": "We further maintain that the concept of that nature is distinct from the concept of every determination that is an accident requiring the realization of a subject to which it attaches, whether in external or intellectual existence, and whether that determination is positive or privative.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 173,
           "endChar": 260,
           "text": "فلئن قيل: إن تعيّنها الذي هو نفس تلك الطبيعة في الأعيان جاز أن يكون ملزوم مطلق التعيّن،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Nature and determinate qualification distinguished, including external/mental subjects and privative/positive accidents."
+          },
+          "englishCorrespondence": "We further maintain that the concept of that nature is distinct from the concept of every determination that is an accident requiring the realization of a subject to which it attaches, whether in external or intellectual existence, and whether that determination is positive or privative.",
           "riskMarkers": [
             "objection",
             "conditional",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 4,
           "startChar": 261,
           "endChar": 385,
           "text": "ويكون قول التعيّن المطلق عليه وعلى غيره من التعيّنات الباقية إما على سبيل التشكيك وإما على سبيل الاشتراك اللفظي دون المعنوي،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Hypothesis that necessary nature is the underlying subject of absolute determination by gradation or equivocation remains an objection."
+          },
+          "englishCorrespondence": "If it is objected that its determination, which is identical with that nature in external reality, may be the underlying term for determination absolutely, and that ‘determination’ is predicated of it and of the other determinations either by gradation or by mere verbal homonymy rather than a shared meaning, it could then be neither intelligible nor in need of an underlying subject under either supposition.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 5,
           "startChar": 386,
           "endChar": 499,
           "text": "وحينئذ جاز أن لا يكون تعيّنها معقولاً ولا مستدعياً لتحقّق موضوعات يتعلّق بها في الوجود على شيء من هذين التقديرين.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Hypothesis that necessary nature is the underlying subject of absolute determination by gradation or equivocation remains an objection."
+          },
+          "englishCorrespondence": "If it is objected that its determination, which is identical with that nature in external reality, may be the underlying term for determination absolutely, and that ‘determination’ is predicated of it and of the other determinations either by gradation or by mere verbal homonymy rather than a shared meaning, it could then be neither intelligible nor in need of an underlying subject under either supposition.",
           "riskMarkers": [
             "negation",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 6,
           "startChar": 500,
           "endChar": 574,
           "text": "قلنا: قد بيّنّا في كتبنا الحكمية أن مفهوم التعيّن ومعناه مفهوم واحد ضروري،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Hypothesis that necessary nature is the underlying subject of absolute determination by gradation or equivocation remains an objection."
+          },
+          "englishCorrespondence": "If it is objected that its determination, which is identical with that nature in external reality, may be the underlying term for determination absolutely, and that ‘determination’ is predicated of it and of the other determinations either by gradation or by mere verbal homonymy rather than a shared meaning, it could then be neither intelligible nor in need of an underlying subject under either supposition.",
           "riskMarkers": [
             "reply",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 575,
           "endChar": 619,
           "text": "لا يختلف إلا باختلاف الإضافات إلى الموضوعات؛",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 4,
+            "note": "Reply preserves one intelligible concept of determination, varying with relational subjects; knowledge of the relation does not imply comprehension of the relata's intrinsic nature."
+          },
+          "englishCorrespondence": "We reply: in our philosophical writings we have established that the concept and meaning of determination are one self-evident concept, varying only with differences in relations to subjects. It is evident that understanding a relation does not require comprehending the intrinsic reality of the term to which it relates.",
           "riskMarkers": [
             "negation",
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 8,
           "startChar": 620,
           "endChar": 689,
           "text": "ومن البيّن أن تعقّل الإضافة لا يستدعي تعقّل المضاف إليه بكنه الحقيقة.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 4,
+            "note": "Reply preserves one intelligible concept of determination, varying with relational subjects; knowledge of the relation does not imply comprehension of the relata's intrinsic nature."
+          },
+          "englishCorrespondence": "We reply: in our philosophical writings we have established that the concept and meaning of determination are one self-evident concept, varying only with differences in relations to subjects. It is evident that understanding a relation does not require comprehending the intrinsic reality of the term to which it relates.",
           "riskMarkers": [
             "negation",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         }
       ],
       "englishSentences": [
@@ -1910,7 +2378,7 @@
           "text": "It is evident that understanding a relation does not require comprehending the intrinsic reality of the term to which it relates."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 1
     },
     {
@@ -1928,56 +2396,76 @@
           "startChar": 0,
           "endChar": 40,
           "text": "ثم إن معنى كون تعيّنها نفسها في الأعيان،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Intrinsic determination distinguished from an externally added predicate and mere individual thisness; unusual Arabic gender agreement preserved."
+          },
+          "englishCorrespondence": "The meaning of its determination being identical with itself in external reality is that it is distinguished from everything other than itself through itself, not through a quality externally additional to it. This does not entail that its very reality is identical with sheer individuality (shakhṣiyya);",
           "riskMarkers": [
             "conditional"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 41,
           "endChar": 104,
           "text": "هو أنها يمتاز عمّا عداها بنفسها لا بصفة زائدة عليها في الأعيان،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Intrinsic determination distinguished from an externally added predicate and mere individual thisness; unusual Arabic gender agreement preserved."
+          },
+          "englishCorrespondence": "The meaning of its determination being identical with itself in external reality is that it is distinguished from everything other than itself through itself, not through a quality externally additional to it. This does not entail that its very reality is identical with sheer individuality (shakhṣiyya);",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 105,
           "endChar": 154,
           "text": "ولا يلزم من هذا أن يكون نفسها هي الشخصيّة بعينها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Intrinsic determination distinguished from an externally added predicate and mere individual thisness; unusual Arabic gender agreement preserved."
+          },
+          "englishCorrespondence": "The meaning of its determination being identical with itself in external reality is that it is distinguished from everything other than itself through itself, not through a quality externally additional to it. This does not entail that its very reality is identical with sheer individuality (shakhṣiyya);",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 155,
           "endChar": 196,
           "text": "وإلا امتنع أن يكون عاقلاً لنفسها ولغيرها.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 4,
+            "note": "Necessary's self-distinction is analogous to individuality without equating Necessary with it."
+          },
+          "englishCorrespondence": "otherwise it could not intellectually apprehend itself and other things. Rather, through itself it provides for itself what the individuality of an individual provides to that individual in relation to other individuals of the same species.",
           "riskMarkers": [
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 5,
           "startChar": 197,
           "endChar": 293,
           "text": "ثم إنها بنفسها يفيد لنفسها ما تفيد شخصيّة الشخص له بالنسبة إلى غيره من الأشخاص الباقية من النوع.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 4,
+            "note": "Necessary's self-distinction is analogous to individuality without equating Necessary with it."
+          },
+          "englishCorrespondence": "otherwise it could not intellectually apprehend itself and other things. Rather, through itself it provides for itself what the individuality of an individual provides to that individual in relation to other individuals of the same species.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -2006,7 +2494,7 @@
           "text": "Rather, through itself it provides for itself what the individuality of an individual provides to that individual in relation to other individuals of the same species."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 1
     },
     {
@@ -2024,44 +2512,60 @@
           "startChar": 0,
           "endChar": 41,
           "text": "ولا نسلّم أنها غير معقولة لشيء من العقول،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Necessary as knower, known and intellect in itself, with three terms preserved."
+          },
+          "englishCorrespondence": "We do not concede that it cannot be intelligible to any intellect. We have demonstrated in our other philosophical works that in virtue of itself it is an intellective knower, an intelligible object, and intellect.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 42,
           "endChar": 111,
           "text": "فإنّا قد برهنّا في سائر كتبنا الحكمية أنها عاقلة ومعقولة وعقل لذاتها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Necessary as knower, known and intellect in itself, with three terms preserved."
+          },
+          "englishCorrespondence": "We do not concede that it cannot be intelligible to any intellect. We have demonstrated in our other philosophical works that in virtue of itself it is an intellective knower, an intelligible object, and intellect.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 112,
           "endChar": 188,
           "text": "ثم إنها معقولة بالنسبة إلى كل العقول بحسب اعتبارات وإضافات ونسب زائدة عليها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "Relational intelligibility to every intellect distinguished from exhaustive comprehension of its essential reality."
+          },
+          "englishCorrespondence": "Moreover, it is intelligible to all intellects by virtue of considerations, relations, and relational aspects additional to it, even if most intellects do not grasp its intrinsic reality in its very essence.",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 189,
           "endChar": 233,
           "text": "وإن لم تكن معقولة لأكثر العقول بكنه حقيقتها.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "Relational intelligibility to every intellect distinguished from exhaustive comprehension of its essential reality."
+          },
+          "englishCorrespondence": "Moreover, it is intelligible to all intellects by virtue of considerations, relations, and relational aspects additional to it, even if most intellects do not grasp its intrinsic reality in its very essence.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         }
       ],
       "englishSentences": [
@@ -2084,7 +2588,7 @@
           "text": "Moreover, it is intelligible to all intellects by virtue of considerations, relations, and relational aspects additional to it, even if most intellects do not grasp its intrinsic reality in its very essence."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 0
     },
     {
@@ -2102,48 +2606,64 @@
           "startChar": 0,
           "endChar": 91,
           "text": "ولا نسلّم أنه يمتنع اقترانها بالغير واقتران الغير بها لو لم يُرد بالغير المنافي أو المقابل،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Association is excluded only if the other is an incompatible opposite; not every mode of relation is denied."
+          },
+          "englishCorrespondence": "Nor do we concede that it is impossible for it to be conjoined in some manner with another or for another to be conjoined with it, unless ‘another’ means something incompatible with it or opposed to it.",
           "riskMarkers": [
             "negation",
             "conditional"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 92,
           "endChar": 185,
           "text": "لما ستعرفه أن النسب والإضافات والأحوال السلبية والوجودية إنما يقترن بها ضرباً ما من المقارنة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Association is excluded only if the other is an incompatible opposite; not every mode of relation is denied."
+          },
+          "englishCorrespondence": "Nor do we concede that it is impossible for it to be conjoined in some manner with another or for another to be conjoined with it, unless ‘another’ means something incompatible with it or opposed to it.",
           "riskMarkers": [
             "exception_or_exclusivity",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 186,
           "endChar": 228,
           "text": "وهي إنما تقارن ضرباً آخر من ضروب المقارنة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 3,
+            "note": "Two directions/modes of association between the Necessary and considered relations preserved."
+          },
+          "englishCorrespondence": "For, as will become clear, relations, relational connections, and privative and positive conditions are associated with it in one manner of association, while it is associated with them in another. Consider this carefully.",
           "riskMarkers": [
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 4,
           "startChar": 229,
           "endChar": 240,
           "text": "فتأمّل ذلك.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 3,
+            "note": "Two directions/modes of association between the Necessary and considered relations preserved."
+          },
+          "englishCorrespondence": "For, as will become clear, relations, relational connections, and privative and positive conditions are associated with it in one manner of association, while it is associated with them in another. Consider this carefully.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -2166,7 +2686,7 @@
           "text": "Consider this carefully."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 0
     },
     {
@@ -2184,174 +2704,230 @@
           "startChar": 0,
           "endChar": 103,
           "text": "فلئن قيل: لو صحّ ما ذكرتموه في بيان أن الواجب لذاته لا يجوز أن يكون تلك الطبيعة الملزومة للوجود المطلق،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Opposing speaker applies fourfold dilemma against unrestricted existence; existential plurality of mental instances is made hypothetical."
+          },
+          "englishCorrespondence": "If it is objected: ‘If your arguments are sound in showing that what is necessary through itself cannot be the nature to which absolute existence is a necessary concomitant, the same arguments could be used to show that it cannot be absolute existence itself. For if the reality of absolute existence admitted intellectual instances, one instance would have to exist, while the remaining instances would be impossible: neither could all of them exist nor could none exist.",
           "riskMarkers": [
             "objection",
             "negation",
             "conditional",
             "modality"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 104,
           "endChar": 172,
           "text": "لصحّ أن يقال: إنه لا يجوز أن يكون نفس الوجود المطلق بمثل ما ذكرتموه؛",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Opposing speaker applies fourfold dilemma against unrestricted existence; existential plurality of mental instances is made hypothetical."
+          },
+          "englishCorrespondence": "If it is objected: ‘If your arguments are sound in showing that what is necessary through itself cannot be the nature to which absolute existence is a necessary concomitant, the same arguments could be used to show that it cannot be absolute existence itself. For if the reality of absolute existence admitted intellectual instances, one instance would have to exist, while the remaining instances would be impossible: neither could all of them exist nor could none exist.",
           "riskMarkers": [
             "negation",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 173,
           "endChar": 233,
           "text": "فإن حقيقته لو كانت ذات أفراد عقلية فلا بدّ وأن يوجد منه فرد،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Opposing speaker applies fourfold dilemma against unrestricted existence; existential plurality of mental instances is made hypothetical."
+          },
+          "englishCorrespondence": "If it is objected: ‘If your arguments are sound in showing that what is necessary through itself cannot be the nature to which absolute existence is a necessary concomitant, the same arguments could be used to show that it cannot be absolute existence itself. For if the reality of absolute existence admitted intellectual instances, one instance would have to exist, while the remaining instances would be impossible: neither could all of them exist nor could none exist.",
           "riskMarkers": [
             "conditional"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 4,
           "startChar": 234,
           "endChar": 258,
           "text": "فامتنعت الأفراد الباقية،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Opposing speaker applies fourfold dilemma against unrestricted existence; existential plurality of mental instances is made hypothetical."
+          },
+          "englishCorrespondence": "If it is objected: ‘If your arguments are sound in showing that what is necessary through itself cannot be the nature to which absolute existence is a necessary concomitant, the same arguments could be used to show that it cannot be absolute existence itself. For if the reality of absolute existence admitted intellectual instances, one instance would have to exist, while the remaining instances would be impossible: neither could all of them exist nor could none exist.",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 259,
           "endChar": 303,
           "text": "لاستحالة أن يوجد كلّها وأن لا يوجد شيء منها،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Opposing speaker applies fourfold dilemma against unrestricted existence; existential plurality of mental instances is made hypothetical."
+          },
+          "englishCorrespondence": "If it is objected: ‘If your arguments are sound in showing that what is necessary through itself cannot be the nature to which absolute existence is a necessary concomitant, the same arguments could be used to show that it cannot be absolute existence itself. For if the reality of absolute existence admitted intellectual instances, one instance would have to exist, while the remaining instances would be impossible: neither could all of them exist nor could none exist.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 6,
           "startChar": 304,
           "endChar": 359,
           "text": "وحينئذ كان وجوب بعضها وامتناع ما عداه بالغير لا بالذات.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "Second horn is equivocation versus necessitation of contingent instances, not an unconditional affirmation of either."
+          },
+          "englishCorrespondence": "Then the necessity of some and the impossibility of the others would be due to another rather than to themselves.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 360,
           "endChar": 410,
           "text": "وإن لم تكن ذات أفراد عقلية لشيء مما ذكر من الوجوه،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "Second horn is equivocation versus necessitation of contingent instances, not an unconditional affirmation of either."
+          },
+          "englishCorrespondence": "Then the necessity of some and the impossibility of the others would be due to another rather than to themselves.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 8,
           "startChar": 411,
           "endChar": 474,
           "text": "فإن كانت حقيقته مغايرة لحقيقة الوجودات العينية الخاصّة الممكنة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "Second horn is equivocation versus necessitation of contingent instances, not an unconditional affirmation of either."
+          },
+          "englishCorrespondence": "Then the necessity of some and the impossibility of the others would be due to another rather than to themselves.",
           "riskMarkers": [
             "modality",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 9,
           "startChar": 475,
           "endChar": 552,
           "text": "كان إطلاق لفظ الوجود عليه وعلى الوجودات الممكنة بالاشتراك اللفظي دون المعنوي،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "Second horn is equivocation versus necessitation of contingent instances, not an unconditional affirmation of either."
+          },
+          "englishCorrespondence": "Then the necessity of some and the impossibility of the others would be due to another rather than to themselves.",
           "riskMarkers": [
             "modality",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 10,
           "startChar": 553,
           "endChar": 575,
           "text": "وإن لم تكن مغايرة لها،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "Second horn is equivocation versus necessitation of contingent instances, not an unconditional affirmation of either."
+          },
+          "englishCorrespondence": "Then the necessity of some and the impossibility of the others would be due to another rather than to themselves.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 11,
           "startChar": 576,
           "endChar": 618,
           "text": "لزم اتصاف الوجودات الممكنة بالوجوب الذاتي.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "Second horn is equivocation versus necessitation of contingent instances, not an unconditional affirmation of either."
+          },
+          "englishCorrespondence": "Then the necessity of some and the impossibility of the others would be due to another rather than to themselves.",
           "riskMarkers": [
             "modality",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 12,
           "startChar": 619,
           "endChar": 685,
           "text": "قلنا: إن تلك الطبيعة لا بدّ وأن يكون مغايرة للوجود العيني وملزومه،",
+          "review": {
+            "status": "unresolved-reading",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Printed conclusion به عين حقيقة and ملزومه retain textual/grammatical strain; the English follows commentary as provisional rather than establishing a manuscript reading."
+          },
+          "englishCorrespondence": "If it admits no intellectual instances for any of the reasons given, then either its reality differs from the realities of the particular possible existences in external reality—in which case the term “existence” would apply to them only equivocally—or it does not differ from them, in which case the possible existences themselves would possess intrinsic necessity.’ We reply: the supposed underlying necessary nature must, for the reasons already given, differ from external existence and what underlies it. That does not apply to existence necessary through itself, subsisting through itself, and distinguished from everything else by its very reality.",
           "riskMarkers": [
             "reply",
             "negation",
             "conditional"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 13,
           "startChar": 686,
           "endChar": 696,
           "text": "لما ذكرنا،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "unresolved-reading",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Printed conclusion به عين حقيقة and ملزومه retain textual/grammatical strain; the English follows commentary as provisional rather than establishing a manuscript reading."
+          },
+          "englishCorrespondence": "If it admits no intellectual instances for any of the reasons given, then either its reality differs from the realities of the particular possible existences in external reality—in which case the term “existence” would apply to them only equivocally—or it does not differ from them, in which case the possible existences themselves would possess intrinsic necessity.’ We reply: the supposed underlying necessary nature must, for the reasons already given, differ from external existence and what underlies it. That does not apply to existence necessary through itself, subsisting through itself, and distinguished from everything else by its very reality.",
+          "riskMarkers": []
         },
         {
           "n": 14,
           "startChar": 697,
           "endChar": 765,
           "text": "دون الوجود الواجب لذاته القائم بنفسه الممتاز عمّا عداه به عين حقيقة.",
+          "review": {
+            "status": "unresolved-reading",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Printed conclusion به عين حقيقة and ملزومه retain textual/grammatical strain; the English follows commentary as provisional rather than establishing a manuscript reading."
+          },
+          "englishCorrespondence": "If it admits no intellectual instances for any of the reasons given, then either its reality differs from the realities of the particular possible existences in external reality—in which case the term “existence” would apply to them only equivocally—or it does not differ from them, in which case the possible existences themselves would possess intrinsic necessity.’ We reply: the supposed underlying necessary nature must, for the reasons already given, differ from external existence and what underlies it. That does not apply to existence necessary through itself, subsisting through itself, and distinguished from everything else by its very reality.",
           "riskMarkers": [
             "modality",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         }
       ],
       "englishSentences": [
@@ -2386,7 +2962,7 @@
           "text": "That does not apply to existence necessary through itself, subsisting through itself, and distinguished from everything else by its very reality."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 1
     },
     {

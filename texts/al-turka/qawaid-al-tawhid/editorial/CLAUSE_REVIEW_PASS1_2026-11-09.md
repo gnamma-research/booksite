@@ -1,6 +1,6 @@
 # Qawāʿid / Tamhīd — clause-level comparative review, pass 1
 
-**9 November 2026.** This work inventories 5520 Arabic punctuation-clause candidates and 2853 English sentence candidates across **all 171 bilingual units**. Only **1075 Arabic clauses in 25 units** have been individually compared with their English in this pass. The remaining **4445 are not certified**.
+**9 November 2026.** This work inventories 5520 Arabic punctuation-clause candidates and 2853 English sentence candidates across **all 171 bilingual units**. Only **1219 Arabic clauses in 45 units** have been individually compared with their English in this pass. The remaining **4301 are not certified**.
 
 All clauses, offsets, corresponding English for reviewed passages, and source fingerprints are in the [complete clause ledger](../qa/clause-ledger.json). Automatic enumeration is **not** evidence of an accurate translation. The original Arabic and the reported QT-059 lacuna remain unchanged.
 
@@ -280,6 +280,149 @@ All clauses, offsets, corresponding English for reviewed passages, and source fi
 | 77–90 | 31–36 | **checked** | و ممّا يؤيِّد هذا ما ذكره بعض المحقِّقين من اهل الذوق : انّ العلم بالشيء اىّ علم كان ، بالذَّوق الصحيح و الكشف الصريح ،… — Attributed experiential account distinguishes knower-known identity from relational differentiation and withholds a further necessary concomitant; quotation is not identified as definitely by a particular author. |
 | 91–98 | 37–41 | **unresolved-reading** | و إذا تقرّر ان الماهيّات و الأعيان باعتبار مغايرتها للذات ، ليس لها حصَّة من الوجود أصلًا ، فلا يمكن اضافة الوجود إليها… — The closing argument has الفرضي / العرضي alternatives determining whether 'suppositional' or 'accidental' existence carries the dependence. English marks the base reading and variant rather than resolving it. |
 | 99–110 | 42–45 | **checked** | و ملخَّص هذا الكلام ، ان الماهيّات و الأعيان ، لو أخذت مع اعتبار المغايرة ، فهي معدومة ضرورة لا يصلح لأن يوصف بالمجعولي… — Conclusion distinguishes quiddities insofar as other—nonexistent—from quiddities without such otherness, which bear the intrinsic Necessary's real existence; the specific target of the making/causation critique is not broadened. |
+
+### QT-001 — A pp. 48
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–1 | 1–1 | **checked-with-note** | الحمد لله رب العالمين، — Opening الحمد لله رب العالمين is explicitly editorial adopted from catalogue incipit, not the A commentary's الحمد لوليّه; no codex collation claimed. |
+| 2–7 | 2–2 | **checked** | والصلاة على نبيّه محمد وآله. وبعد، فإن تقرير مسألة التوحيد على النحو الذي ذهب إليه العارفون، وأشار إليه المحقّقون، من ا… — The subject is the difficult account of tawḥīd as the gnostics go to it and realized scholars indicate; disputants and reflective investigators distinguished without imposing commentator's identities on matn. |
+
+### QT-002 — A pp. 49
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–4 | 1–1 | **checked-with-note** | فإن الأكثرين منهم يزعمون أن القطع بها يدلّ على استحكام سوء المزاج في موضوعات القوى النفسانية، وعلى احتراق الموادّ الصال… — Opponents' old humoral diagnosis of bodily substrates, burning of healthy materials and black bile is reported, not endorsed as modern science. |
+| 5–8 | 2–2 | **checked** | عقيب ارتكاب المجاهدات والرياضات الجزافية، الصادرة عن الوساوس الخيالية، لا يمكن لأحد إلا عند عروض ذلك السبب الحديث، وابت… — Certainty in invalidation of rational/sensory/innate/natural judgments follows arbitrary asceticism as an opponent's causal claim; subsequent बीमारी is the adversary's diagnosis. |
+
+### QT-003 — A pp. 52
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–2 | 1–1 | **checked-with-note** | لكن لمّا كان الأمر على خلاف ما ظنّوه، بل على عكس ما تخيّلوه… — The adversarial objection is reversed, and the ellipsis marks a printed interruption before QT-004, not a conjectured restored authorial clause. |
+
+### QT-004 — A pp. 53–54
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–8 | 1–3 | **checked** | أردت أن أكتب رسالة، أوضح فيها حقّية مذهب العارفين، وبطلان قول الطاعنين من المنكرين، مشتملة على صفوة ما ظهر لي من الحدس … — Aradtu to aradnā person change remains; ḥads is intellectual intuition, and the aim is proof in dialectical form rather than mere personal witnessing. |
+| 9–10 | 4–4 | **checked** | ونشدّ بها رغبة الطالبين. اللهم اجعلنا من زمرة الناجين الفائزين دون الضالّين المردودين. — Author's prayer for salvation and avoidance of error retained. |
+| 11–15 | 5–6 | **checked** | يا إخوان التحصيل، سارعوا إلى تحصيل الكمال الحقيقي، والبقاء الأبدي، قبل أن يتسارع إليكم الفناء الضروري، والفوت البدني، — Exhortation to seekers to acquire perfection and enduring life before necessary passing and natural death is complete. |
+| 16–19 | 7–7 | **checked** | وبادروا في حياتكم قبل أن يتبادر إليكم الموت الطبيعي، واستعينوا به في كل الأمور، وتوكّلوا عليه، إن كنتم مؤمنين. — Seek help and rely on God under the conditional believer qualification retained. |
+
+### QT-005 — A pp. 55
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–1 | **checked** | اعلم أن الوجود مشترك بين الوجودات الخاصّة كلّها لا بحسب اللفظ، بل بحسب المعنى، كما بيّنّاه في سائر كتبنا. — Existence common by meaning, not by word alone, kept distinct from the later stronger thesis of a numerically one external existent. |
+
+### QT-006 — A pp. 59–60
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–1 | **checked-with-note** | ومن البيّن أن حقيقته من حيث هي هي لا يقبل العدم لذاتها، لامتناع اتّصاف أحد النقيضين بالآخر، وامتناع انقلاب طبيعة إلى طب… — Proof uses contradiction of existence/nonexistence, not simply the assertion that existence is necessary; printed masculine لا يقبل after feminine حقيقته noted. |
+| 4–5 | 2–2 | **checked** | ومتى امتنع العدم عليها لذاتها، كانت واجبة لذاتها. — Necessity follows only after intrinsic impossibility of nonexistence; that inferential step is preserved. |
+
+### QT-007 — A pp. 63–64
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–2 | **checked** | وتلك الحقيقة الواجبة لذاتها غير المأخوذة بقيد العموم، إذ لا تحقّق للأمر العام من حيث هو عام في الخارج، وغير المأخوذة بق… — Unrestricted Necessary is neither a concept qualified by generality nor privatively delimited. |
+| 4–8 | 3–5 | **checked** | ولا بقيد مخصّص من القيود الوجودية؛ لأن هذا القيد المخصّص لو كان كالصورة بالنسبة إليها، لتركّب الواجب لذاته من جزئين أو … — Positive specifying qualifier is tested as form (composition) or accident (would not be intrinsic; otherwise no specification). |
+| 9–12 | 6–7 | **checked-with-note** | فلا يكون لازماً لنفس طبيعتها، وإلا لاستحال أن يكون قيداً مخصّصاً، وحينئذ افتقرت الحقيقة الواجبة في وجوبها الذاتي إلى غي… — Dependence reductio and regress concern terms ordered between two present bounds, not an absolute mathematical denial of every infinity. |
+
+### QT-008 — A pp. 67
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–1 | 1–1 | **unresolved-reading** | فلئن قيل: إن الحقيقة الواجبة هي الطبيعة التي هي من ملزومات ما ذُكر من الوجود الذي يشترك فيه جميع الوجودات الخاصّة. — The objection is preserved. Malzūmāt is syntactically and philosophically difficult, and the English remains provisional until comparison with the separate ancestral manuscripts. |
+
+### QT-009 — A pp. 68
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–2 | **checked-with-note** | ولا يلزم من هذا أن تكون تلك الحقيقة من الماهيّات المغايرة للوجود، فيكون مؤثّرة للوجود لا بشرط الوجود، لأن تلك الحقيقة ن… — Later Peripatetic objection is reconstructed; māhiyya without conditioning by existence and extramental/mental distinction are kept within its dialectical role. |
+| 4–6 | 3–3 | **checked** | ويكون قول الوجود على تلك الحقيقة الملزومة، وعلى سائر الوجودات الباقية الملزومة بالنسبة إليه، على سبيل التشكيك. — The claim of gradational predication of one existence upon particular existences is the opponent's position, not the ancestor's settled conclusion. |
+
+### QT-010 — A pp. 71
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–2 | 1–1 | **checked** | ولا يلزم أن تكون تلك الحقيقة موجودة مرّتين، كسائر الوجودات الباقية، — The double-existence charge and the distinction between the nature and what is shared in existence kept as opponent's reply. |
+| 3–4 | 2–2 | **checked** | فإن الموجودية المشتركة بينها وبين الموجودات الباقية هي نفس تلك الحقيقة في الأعيان، وإن كانت من العوارض الزائدة عليها بح… — External sameness and intellectually additional predication preserved under different considerations. |
+
+### QT-011 — A pp. 72
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–2 | **checked** | قلنا: إن الطبيعة الواجبة الملزومة لمطلق الوجود إن صحّ أن تكون ذات أفراد ذهنية أو عقلية، فلو وُجد منها فرد وامتنعت الأفر… — If necessary nature had mental individuals, some could exist and others be impossible; the author infers possibility per se for the class. |
+| 4–6 | 3–4 | **checked** | فلو امتنع البعض لامتنع بالغير، ولو وجب البعض لوجب بالغير، فإنّ ما بالذات لا يزول بالغير. — Modality per aliud versus per se and final axiom that what is intrinsic cannot be removed externally preserved. |
+
+### QT-012 — A pp. 74
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–2 | 1–1 | **checked** | وإن لم يمكن أن تكون ذات أفراد ذهنية أو عقلية، إمّا لأن تعيّنها نفس حقيقتها في الخارج، — First two reasons: determination identical with the reality, or necessarily required by the reality itself. |
+| 3–4 | 2–2 | **checked** | أو لأنها اقتضت تعيّنها لذاتها، فامتنعت الأفراد الباقية الموجودة لذاتها أيضاً، — Third: intrinsic determination makes the nature unintelligible as one among many possible subjects. |
+| 5–8 | 3–4 | **checked** | أو لأن تلك الطبيعة المتعيّنة بالذات لما استحال أن تكون معقولة لشيء من العقول، فاستحال أن تكون ذات أفراد كثيرة، أو لأن ت… — Fourth: no association with another; intellectual or mental plurality thereby excluded. |
+
+### QT-013 — A pp. 78
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–4 | 1–3 | **checked** | فإن كانت حقيقته من حيث هي مغايرة لحقيقة الوجود الخارجي والكون العيني الذي تتكون به الماهيات [الحقيقية] المختلفة بمقارنت… — Distinct real quiddity versus extramental existence produces mere verbal homonymy, not shared meaning. |
+| 5–8 | 4–5 | **checked** | وحينئذ إما أن يكون شيئاً من الماهيات الحقيقية، أو أمراً من الأمور العقلية، ويلزم من ذلك كثير المحالات. وإن لم تكن مغاير… — Alternative non-distinction forces either denial of shared predicates or making possible instances bear necessary reality. |
+| 9–12 | 6–8 | **checked** | فإما امتنع استلزام الوجودات الخاصة العينية الممكنة لحقيقة الوجود المطلق واشتراكها فيه وصدق تلك الحقيقة عليها، أو وجب اس… — No intrinsic possible aspect or receptivity belongs to what is claimed necessary through itself. |
+
+### QT-014 — A pp. 81
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–4 | 1–1 | **checked** | على أن اجتماع الأمثال واختصاص أحد المتماثلين بالحالّية والآخر بالمحلّية، واتصاف أحدهما بصفة دون الآخر، من غير أن يكون ه… — Similars without a differentiating reason cannot be assigned mutually incompatible roles of accident inhering and subject as locus. |
+
+### QT-015 — A pp. 82–83
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–5 | 1–4 | **checked** | ثم إن الوجود الحاصل للماهيات المختلفة والطبائع المتخالفة لا يقبل الوجود والعدم لذاته لما أشير إليه في موضعه، فيجب أن يك… — Dual-stage refutation: existential reality refuses both existence and nonexistence, hence intrinsically necessary; plurality would follow from a second intrinsically necessary existent. |
+| 6–12 | 5–7 | **checked** | هذا إذا ذهب القائل بالتشكيك مذهب التجويز والاحتمال العقلي لا غير، وأما إذا ذهب مذهب الوجوب والثبوت الضروري، تمسّك في بي… — Priority, perfection, intensity and completeness are introduced as an opponent's proposed ground; proving the entity thereby is circular. |
+
+### QT-016 — A pp. 87
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–1 | **checked** | ثم إنا نقول: إن مفهوم تلك الطبيعة غير مفهوم شيء من التعيّنات التي هي من العوارض المستدعية لتحقّق موضوعات تتعلّق بها في … — Nature and determinate qualification distinguished, including external/mental subjects and privative/positive accidents. |
+| 4–6 | 2–2 | **checked** | ويكون قول التعيّن المطلق عليه وعلى غيره من التعيّنات الباقية إما على سبيل التشكيك وإما على سبيل الاشتراك اللفظي دون الم… — Hypothesis that necessary nature is the underlying subject of absolute determination by gradation or equivocation remains an objection. |
+| 7–8 | 3–4 | **checked** | لا يختلف إلا باختلاف الإضافات إلى الموضوعات؛ ومن البيّن أن تعقّل الإضافة لا يستدعي تعقّل المضاف إليه بكنه الحقيقة. — Reply preserves one intelligible concept of determination, varying with relational subjects; knowledge of the relation does not imply comprehension of the relata's intrinsic nature. |
+
+### QT-017 — A pp. 89–90
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–2 | **checked-with-note** | ثم إن معنى كون تعيّنها نفسها في الأعيان، هو أنها يمتاز عمّا عداها بنفسها لا بصفة زائدة عليها في الأعيان، ولا يلزم من هذ… — Intrinsic determination distinguished from an externally added predicate and mere individual thisness; unusual Arabic gender agreement preserved. |
+| 4–5 | 3–4 | **checked** | وإلا امتنع أن يكون عاقلاً لنفسها ولغيرها. ثم إنها بنفسها يفيد لنفسها ما تفيد شخصيّة الشخص له بالنسبة إلى غيره من الأشخا… — Necessary's self-distinction is analogous to individuality without equating Necessary with it. |
+
+### QT-018 — A pp. 93
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–2 | 1–2 | **checked** | ولا نسلّم أنها غير معقولة لشيء من العقول، فإنّا قد برهنّا في سائر كتبنا الحكمية أنها عاقلة ومعقولة وعقل لذاتها، — Necessary as knower, known and intellect in itself, with three terms preserved. |
+| 3–4 | 3–3 | **checked** | ثم إنها معقولة بالنسبة إلى كل العقول بحسب اعتبارات وإضافات ونسب زائدة عليها، وإن لم تكن معقولة لأكثر العقول بكنه حقيقته… — Relational intelligibility to every intellect distinguished from exhaustive comprehension of its essential reality. |
+
+### QT-019 — A pp. 94
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–2 | 1–1 | **checked** | ولا نسلّم أنه يمتنع اقترانها بالغير واقتران الغير بها لو لم يُرد بالغير المنافي أو المقابل، لما ستعرفه أن النسب والإضاف… — Association is excluded only if the other is an incompatible opposite; not every mode of relation is denied. |
+| 3–4 | 2–3 | **checked** | وهي إنما تقارن ضرباً آخر من ضروب المقارنة، فتأمّل ذلك. — Two directions/modes of association between the Necessary and considered relations preserved. |
+
+### QT-020 — A pp. 95
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–5 | 1–2 | **checked** | فلئن قيل: لو صحّ ما ذكرتموه في بيان أن الواجب لذاته لا يجوز أن يكون تلك الطبيعة الملزومة للوجود المطلق، لصحّ أن يقال: إ… — Opposing speaker applies fourfold dilemma against unrestricted existence; existential plurality of mental instances is made hypothetical. |
+| 6–11 | 3–3 | **checked** | وحينئذ كان وجوب بعضها وامتناع ما عداه بالغير لا بالذات. وإن لم تكن ذات أفراد عقلية لشيء مما ذكر من الوجوه، فإن كانت حقي… — Second horn is equivocation versus necessitation of contingent instances, not an unconditional affirmation of either. |
+| 12–14 | 4–5 | **unresolved-reading** | قلنا: إن تلك الطبيعة لا بدّ وأن يكون مغايرة للوجود العيني وملزومه، لما ذكرنا، دون الوجود الواجب لذاته القائم بنفسه المم… — Printed conclusion به عين حقيقة and ملزومه retain textual/grammatical strain; the English follows commentary as provisional rather than establishing a manuscript reading. |
 
 ## Editorial status and next passages
 
