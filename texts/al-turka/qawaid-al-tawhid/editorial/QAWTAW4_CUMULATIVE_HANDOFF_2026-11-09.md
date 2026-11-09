@@ -29,6 +29,8 @@
 4. **SH-061-A, A p.274:** the parallel `إمام مكمّل` is now translated as a perfecting guide, with an explanatory note, in the closing commentary source module. Unresolved `أقفاله / إقباله / أفعاله` remain recorded.
 5. Corrected the *parallel matn* bibliography's outdated statement that the examined Arabic transcription ended at printed p.207: quotations extend **48–270** (source-scoped, not proof that an independent ancestral manuscript is complete).
 
+The literal negative `فلا يجوز` in QT-056 is rendered explicitly as “not permissible”, despite its apparent conflict with the following therapy-of-opposites argument; editorial doubts belong in the note, not in place of the source's prose. The source's gendered polemic likewise appears in the translation without an intrusive translator aside, with historical qualification kept in the notes.
+
 ## Human alignment and textual cruxes
 
 All 187 punctuation-derived Arabic clauses of **QT-051–QT-061** now have manual English-range decisions stored as append-only new `units` records in `qa/clause-review-adjudications-2026-11-09.json`. Each clause number occurs exactly once. Many Arabic clauses may properly point to the same English sentence. The machine alignment in `qa/clause-map-matn.jsonl` is **not** used to certify equivalence.
