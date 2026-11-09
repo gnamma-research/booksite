@@ -29,7 +29,7 @@ textual_use:"Textual use",author_reference:"Author reference",critique:"Critical
 reported_source:"Source testimony",exchange:"Scholarly exchange",broad_influence:"Qualified connection",hypothesis:"Hypothesis",
 claimed_lineage:"Claimed lineage",abridgement:"Abridgement",translation:"Translation",other:"Relationship"};
 const state={subject:"all",view:"geography",school:"all",search:"",source:"all",family:"",edgeType:"all",certainty:"all",
-from:-600,to:2026,selected:"",evidence:"",cluster:"",clusterPage:1,bookPage:1,depth:1,quickLimit:8,region:"",searchOpen:false,advancedOpen:false};
+from:-600,to:2026,selected:"",evidence:"",cluster:"",clusterPage:1,bookPage:1,depth:1,browseMode:"linked",region:"",searchOpen:false,advancedOpen:false};
 const data={all:[],byId:new Map(),edges:[],in:new Map(),out:new Map(),families:[],sources:new Map(),history:[],
 errors:[],counts:{audited:0,openiti:0,alreq:0,pinned:0,relations:0},licences:[],loadReady:false};
 const renderCache={clusters:new Map(),workMap:new Map(),current:[],filtered:[],lanes:[],network:null};
@@ -194,6 +194,7 @@ function readHash(){
  state.school=Object.hasOwn(SCHOOLS,p.get("school"))?p.get("school"):
   Object.hasOwn(SCHOOLS,p.get("madhhab"))?p.get("madhhab"):"all";
  state.search=(p.get("q")||p.get("gnx_q")||"").slice(0,140);
+ state.browseMode=p.get("browse")==="all"?"all":"linked";
  state.source=["all","audited","OpenITI","Alreq manuscript catalogue","pinned"].includes(p.get("source_tier"))?p.get("source_tier"):"all";
  const from=Number(p.get("from")),to=Number(p.get("to"));
  if(p.has("from")&&p.has("to")&&Number.isFinite(from)&&Number.isFinite(to)&&to>from+9){
@@ -213,6 +214,7 @@ function writeHash(push=false){
  if(state.selected)p.set("work_id",state.selected);
  if(state.school!=="all")p.set("school",state.school);
  if(state.search)p.set("q",state.search);
+ if(state.browseMode==="all")p.set("browse","all");
  if(state.family)p.set("family",state.family);
  if(state.source!=="all")p.set("source_tier",state.source);
  if(state.edgeType!=="all")p.set("edge_type",state.edgeType);
@@ -269,6 +271,15 @@ function relevantEdges(id,direction){
    return true;
  });
 }
+function timelineFollow(n){
+ if(!n||n.year==null||state.view!=="timeline")return;
+ const span=state.to-state.from;
+ const margin=Math.min(35,span*.12);
+ if(n.year<state.from+margin||n.year>state.to-margin){
+  state.from=clip(n.year-span/2,PERIOD_MIN,PERIOD_MAX-span);
+  state.to=state.from+span;
+ }
+}
 function chooseWork(id,moveToNetwork=false){
  if(!data.byId.has(id))return;
  state.selected=id;state.evidence="";state.searchOpen=false;state.cluster="";state.search="";
@@ -278,8 +289,76 @@ function chooseWork(id,moveToNetwork=false){
   state.subject=n.subjects[0]||"all";state.school="all";state.family="";
  }
  if(state.school!=="all"&&!n.schools.includes(state.school))state.school="all";
+ if(state.family){
+  const f=data.families.find(f=>f.id===state.family);
+  if(f&&!f.member_ids.includes(n.sourceId))state.family="";
+ }
+ timelineFollow(n);
  writeHash(true);render();
 }
+
+// Navigate the same dated or undated works in both visualization modes.
+// Browsing defaults to works with actual documented edges; all catalogue
+// records remain available with an explicit All catalogued selector.
+function browseWorks(){
+ const works=filtered(false).filter(n=>n.kind==="work");
+ const selected=data.byId.get(state.selected);
+ const chosen=works.filter(n=>state.browseMode==="all"||n.degree>0||n.id===state.selected);
+ if(selected&&selected.kind!=="work"&&!chosen.some(n=>n.id===selected.id))chosen.push(selected);
+ chosen.sort((a,b)=>(a.year??Infinity)-(b.year??Infinity)||
+   a.title.localeCompare(b.title,"en")||a.id.localeCompare(b.id));
+ return chosen;
+}
+function browseStep(delta){
+ const works=browseWorks();
+ if(!works.length)return;
+ const current=works.findIndex(n=>n.id===state.selected);
+ const oldIndex=current<0?0:current;
+ const newIndex=clip(oldIndex+delta,0,works.length-1);
+ if(newIndex!==oldIndex){
+  chooseWork(works[newIndex].id);
+  ROOT.querySelector("[data-text-rail]")?.focus({preventScroll:true});
+ }
+}
+function browseBar(){
+ const works=browseWorks();
+ const index=works.findIndex(n=>n.id===state.selected);
+ const current=index>=0?index:0;
+ const left=Math.max(0,current-9),right=Math.min(works.length,current+10);
+ const neighboring=works.slice(left,right).map((n,i)=>{
+  const selected=n.id===state.selected;
+  return '<button class="text-rail-card" type="button" data-browse-work="'+safe(n.id)+'" data-browse-index="'+(left+i)+
+   '" aria-current="'+(selected?'true':'false')+'" title="'+safe(n.title+" — "+n.author+" — "+n.dateLabel)+'">'+
+   '<span class="text-rail-kicker">'+safe(n.year!=null?yearLabel(n.year):"Undated")+
+   ' · '+(n.degree?n.degree+" recorded links":"No recorded links")+'</span>'+
+   '<strong>'+safe(truncate(n.title,48))+'</strong>'+
+   '<small>'+safe(truncate(n.author,38))+'</small></button>';
+ }).join("");
+ const item=works[current]||data.byId.get(state.selected);
+ return '<section class="text-browser" aria-label="Browse texts horizontally with scroll, swipe or keyboard arrows">'+
+ '<div class="text-browser-heading"><div><span class="text-browser-eyebrow">BROWSE TEXTS · '+(works.length?fnum(current+1)+" / "+fnum(works.length):"No matches")+'</span>'+
+ '<h3>'+safe(item?.title||"Select a work")+'</h3><p>Browse left or right. The selected timeline or source graph updates automatically, with every recorded direct relation visible.</p></div>'+
+ '<div class="text-browser-actions"><button type="button" data-browse-step="-1" aria-label="Previous text"'+(current<=0?' disabled':'')+'>← <span>Previous</span></button>'+
+ '<button type="button" data-browse-step="1" aria-label="Next text"'+(current>=works.length-1?' disabled':'')+'><span>Next</span> →</button></div></div>'+
+ '<div class="text-browser-modes"><div class="text-browser-views" role="group" aria-label="Choose text visualization">'+
+ '<button type="button" data-text-mode="timeline" aria-pressed="'+(state.view==="timeline")+'">Timeline</button>'+
+ '<button type="button" data-text-mode="network" aria-pressed="'+(state.view==="network")+'">Source &amp; reception graph</button></div>'+
+ '<div class="text-browser-scopes" role="group" aria-label="Choose works to browse">'+
+ '<button type="button" data-browse-mode="linked" aria-pressed="'+(state.browseMode==="linked")+'">Source-linked</button>'+
+ '<button type="button" data-browse-mode="all" aria-pressed="'+(state.browseMode==="all")+'">All catalogued</button></div></div>'+
+ '<div class="text-rail" data-text-rail tabindex="0" aria-label="Scroll or swipe horizontally through works; the visualization updates as the focused card changes">'+neighboring+'</div>'+
+ '<p class="text-browse-caveat">Order uses recorded dates or approximate author-death dates. Texts shown next to one another are not necessarily historically dependent.</p></section>';
+}
+function centerBrowseRail(){
+ const rail=ROOT.querySelector("[data-text-rail]");
+ if(!rail)return;
+ const selected=rail.querySelector('[data-browse-work][aria-current="true"]');
+ if(!selected)return;
+ rail.dataset.ready="0";
+ rail.scrollLeft=Math.max(0,selected.offsetLeft-rail.clientWidth/2+selected.offsetWidth/2);
+ requestAnimationFrame(()=>{if(rail.isConnected)rail.dataset.ready="1"});
+}
+
 function sceneTitle(){
  return state.subject==="all"?"The whole corpus":NAMES[state.subject]||"Historical texts";
 }
@@ -383,7 +462,7 @@ function viewTimeline(){
  const stepYears=state.to-state.from;
  const scale=y=>left+(y-state.from)/stepYears*plotW;
  const binYears=stepYears>1600?240:stepYears>950?125:stepYears>500?70:stepYears>250?40:stepYears>120?20:stepYears>50?10:5;
- let body="",totalShown=0,y=top,gridEnd=0;
+ let body="",totalShown=0,y=top,gridEnd=0,focusedCluster="";
  const ticks=periodTicks(state.from,state.to,W<900?6:9);
  for(const lane of lanes){
   const dated=lane.nodes.filter(inWindow);
@@ -404,9 +483,10 @@ function viewTimeline(){
    if(row>=4)row=3;
    ends[row]=Math.max(ends[row]||0,x+wide/2);
    const yy=y+25+row*38;totalShown++;
+   const hasSelected=items.some(n=>n.id===state.selected);
    if(items.length===1){
     const n=items[0],type=n.kind==="person"?"◈":"";
-    shapes+='<g role="button" tabindex="0" data-select="'+safe(n.id)+'" aria-label="'+safe(n.title+'; '+n.dateLabel)+'">'+
+    shapes+='<g role="button" tabindex="0" data-select="'+safe(n.id)+'" class="'+(hasSelected?'text-timeline-selected':'')+'" aria-label="'+safe(n.title+'; '+n.dateLabel)+'">'+
       '<title>'+safe(n.title+" — "+n.author+" — "+n.dateLabel)+'</title>'+
       '<rect x="'+(x-wide/2)+'" y="'+yy+'" width="'+wide+'" height="31" rx="5" fill="var(--panel)" stroke="var(--line)" />'+
       '<circle cx="'+(x-wide/2+7)+'" cy="'+(yy+16)+'" r="2.8" fill="var(--accent)"/>'+
@@ -415,7 +495,8 @@ function viewTimeline(){
    }else{
     const key=lane.id+"@"+start;
     renderCache.clusters.set(key,items);
-    shapes+='<g role="button" tabindex="0" data-cluster="'+safe(key)+'" aria-label="'+safe(items.length+' works around '+yearLabel(start)+' in '+lane.label)+'">'+
+    if(hasSelected)focusedCluster=key;
+    shapes+='<g role="button" tabindex="0" class="'+(hasSelected?'text-timeline-selected':'')+'" data-cluster="'+safe(key)+'" aria-label="'+safe(items.length+' works around '+yearLabel(start)+' in '+lane.label)+'">'+
       '<title>'+safe(items.length+' dated records · '+lane.label+' · '+yearLabel(start)+' to '+yearLabel(start+binYears-1))+'</title>'+
       '<rect x="'+(x-wide/2)+'" y="'+yy+'" width="'+wide+'" height="31" rx="7" fill="var(--accentbg)" stroke="var(--accent)" stroke-opacity=".65"/>'+
       '<text x="'+x+'" y="'+(yy+14)+'" font-size="11" font-weight="650" text-anchor="middle" fill="var(--ink)">'+items.length+' texts</text>'+
@@ -430,6 +511,7 @@ function viewTimeline(){
   shapes;
   if(undated.length){
     const key="undated:"+lane.id;renderCache.clusters.set(key,undated);
+    if(undated.some(n=>n.id===state.selected))focusedCluster=key;
     body+='<g role="button" tabindex="0" data-unplaced="'+safe(key)+'" aria-label="'+undated.length+' undated records in '+safe(lane.label)+'">'+
     '<rect x="'+(W-right+13)+'" y="'+(y+22)+'" width="'+(right-27)+'" height="32" rx="5" fill="var(--soft)" stroke="var(--muted)" stroke-dasharray="3 3" stroke-opacity=".6"/>'+
     '<text x="'+(W-right+18)+'" y="'+(y+35)+'" fill="var(--ink)" font-size="10" font-weight="650">'+fnum(undated.length)+' unplaced</text>'+
@@ -449,7 +531,14 @@ function viewTimeline(){
  const svg='<div class="canvas-outer"><div class="canvas-scroll" role="region" tabindex="0" aria-label="Historical book map; scroll horizontally on small screens">'+
  '<svg data-unified-timeline width="'+W+'" height="'+gridEnd+'" viewBox="0 0 '+W+' '+gridEnd+'" role="group" aria-label="'+safe(sceneTitle())+' chronology with source record nodes">'+
  grid+body+'</svg></div></div>';
- const active=state.cluster&&renderCache.clusters.has(state.cluster)?renderClusterList(renderCache.clusters.get(state.cluster)):"";
+ const displayCluster=state.cluster&&renderCache.clusters.has(state.cluster)?state.cluster:focusedCluster;
+ if(displayCluster&&displayCluster===focusedCluster && !state.cluster){
+  const records=renderCache.clusters.get(displayCluster)||[];
+  const index=records.slice().sort((a,b)=>(a.year??99999)-(b.year??99999)||a.title.localeCompare(b.title,"ar"))
+   .findIndex(n=>n.id===state.selected);
+  if(index>=0)state.clusterPage=Math.floor(index/24)+1;
+ }
+ const active=displayCluster&&renderCache.clusters.has(displayCluster)?renderClusterList(renderCache.clusters.get(displayCluster)):"";
  const countIn=nodes.filter(inWindow).length;
  const note='<div class="plot-note"><span class="legend"><i class="swatch date"></i> Dated work or jurist</span>'+
  '<span class="legend"><i class="swatch"></i> Time cluster: select to zoom / inspect</span>'+
@@ -468,7 +557,7 @@ function renderClusterList(arr){
  pagination(page,Math.ceil(rows.length/24),"cluster")+'</section>';
 }
 function bookButton(n){
- return '<button class="browse-card" type="button" data-select="'+safe(n.id)+'">'+
+ return '<button class="browse-card" type="button" aria-current="'+(n.id===state.selected)+'" data-select="'+safe(n.id)+'">'+
  '<strong>'+safe(truncate(n.title,65))+'</strong><small>'+safe(truncate(n.author,60))+' · '+safe(n.dateLabel||"Unknown date")+'</small></button>';
 }
 function pagination(page,max,type){
@@ -533,8 +622,10 @@ function networkSvg(n,prior,later){
 }
 function viewNetwork(){
  const n=data.byId.get(state.selected)||filtered(false)[0];if(!n)return {html:'<div class="warning">No work is available in this selection.</div>',title:"Sources and reception",sub:"No recorded sources"};
- const prior=relevantEdges(n.id,"prior"),later=relevantEdges(n.id,"later"),limit=state.quickLimit;
- const first=prior.slice(0,limit),second=later.slice(0,limit);
+ const prior=relevantEdges(n.id,"prior"),later=relevantEdges(n.id,"later");
+ // Every recorded direct relation appears immediately in the graph and list;
+ // no eight-item cap, hidden batch or manual Show further action.
+ const first=prior,second=later;
  const labels=(edge,up)=>{const item=data.byId.get(up?edge.from:edge.to);return item?.title||"Unknown text"};
  const cards=(list,up)=>{
   if(!list.length)return '<div class="network-none">No documented '+(up?"antecedent":"later reception")+' in the current source register. This does not mean none existed.</div>';
@@ -543,7 +634,7 @@ function viewNetwork(){
    return '<div class="net-card" role="group"><button class="event-button" data-select="'+safe(other.id)+'"><strong>'+safe(other.title)+'</strong><small>'+safe(other.author+' · '+other.dateLabel)+'</small></button>'+
    '<span class="relation-label">'+safe(e.label||TYPENAMES[e.type]||"Recorded link")+'</span>'+
    '<button class="small-btn" type="button" data-evidence="'+safe(e.id)+'">Evidence</button></div>';
-  }).join("")+'</div>'+((up?prior:later).length>limit?'<button class="network-more" data-more>Show further connected works ('+((up?prior:later).length-limit)+')</button>':"");
+  }).join("")+'</div>';
  };
  const graph=networkSvg(n,first,second);
  const extended='<div class="network-cols"><section class="network-col"><h3>Rests on · sources</h3>'+cards(first,true)+'</section>'+
@@ -553,10 +644,11 @@ function viewNetwork(){
  '<div class="relation-path"><span>'+prior.length+' incoming</span><span>'+later.length+' outgoing</span><span>'+safe(n.kind)+'</span></div></div>'+
  '<p class="source-summary">Only evidenced relationships are shown. A missing arrow records an evidentiary gap, not historical isolation.</p></section>'+
  '<section class="network-col"><h3>Carried on by · reception</h3>'+cards(second,false)+'</section></div>';
- return {html:quickPicks()+'<div class="network-wrap">'+graph+'</div>'+extended+
+ return {html:'<p class="text-network-complete" role="status">All '+(prior.length+later.length)+' recorded direct relationships are drawn and listed below; no additional clicks are needed.</p>'+
+  '<div class="network-wrap">'+graph+'</div>'+extended+
   (state.evidence?evidencePanel(data.edges.find(x=>x.id===state.evidence)):"")+
   '<p class="net-cites">Select any book to recenter the graph. Each “Evidence” control identifies the source, relationship type and its qualifications; mere membership in a school creates no arrow.</p>',
-  title:"Source network · "+truncate(n.title,50),sub:fnum(prior.length)+" antecedents · "+fnum(later.length)+" later relationships, drawn from documented records"};
+  title:"Source network · "+truncate(n.title,50),sub:fnum(prior.length)+" antecedents · "+fnum(later.length)+" later relationships · complete documented direct neighbourhood"};
 }
 function topWorks(list,count=14){
  return list.slice().sort((a,b)=>{
@@ -709,7 +801,8 @@ function plotView(){
  return '<section class="plot" aria-label="Maps and textual networks"><header class="plot-head"><div><h2>'+safe(v.title)+'</h2>'+
  '<p>'+safe(v.sub||"")+'</p></div><div class="plot-actions">'+
  (state.family?'<button data-clear-family>Clear textual family</button>':"")+
- '<button data-reset>Reset subject filters</button></div></header>'+v.html+
+ '<button data-reset>Reset subject filters</button></div></header>'+
+ ((state.view==="network"||state.view==="timeline")?browseBar():"")+v.html+
  (data.errors.length?'<p class="warning">A source register is unavailable: '+safe(data.errors.join("; "))+'. The audited records remain accessible.</p>':"")+'</section>';
 }
 function searchResults(q){
@@ -739,6 +832,7 @@ function render(first=false){
  (geographic?'':'<aside class="sidebar" aria-label="Work and evidence details"><div class="side-head"><h2>Selected work · evidence</h2>'+
  '<button type="button" data-close-side>Clear focus</button></div><div class="side-content">'+recordPanel()+'</div></aside>')+'</div>';
  fillSearch();
+ if(state.view==="network"||state.view==="timeline")centerBrowseRail();
  if(first)writeHash(false);
 }
 function changeRange(a,b){
@@ -756,6 +850,18 @@ function onClick(e){
  }
  if(el.hasAttribute("data-view")){
   state.view=el.getAttribute("data-view");state.cluster="";state.evidence="";
+  writeHash(true);render();return;
+ }
+ if(el.hasAttribute("data-browse-step")){browseStep(Number(el.getAttribute("data-browse-step"))||0);return;}
+ if(el.hasAttribute("data-browse-work")){chooseWork(el.getAttribute("data-browse-work"));return;}
+ if(el.hasAttribute("data-browse-mode")){
+  state.browseMode=el.getAttribute("data-browse-mode")==="all"?"all":"linked";
+  writeHash();render();return;
+ }
+ if(el.hasAttribute("data-text-mode")){
+  state.view=el.getAttribute("data-text-mode")==="timeline"?"timeline":"network";
+  state.cluster="";state.evidence="";
+  timelineFollow(data.byId.get(state.selected));
   writeHash(true);render();return;
  }
  if(el.hasAttribute("data-select")||el.hasAttribute("data-search-select")){
@@ -793,7 +899,6 @@ function onClick(e){
  if(el.hasAttribute("data-reset")){state.school="all";state.family="";state.source="all";state.edgeType="all";state.certainty="all";state.search="";state.region="";state.cluster="";state.bookPage=1;writeHash();render();return}
  if(el.hasAttribute("data-evidence")){state.evidence=el.getAttribute("data-evidence");render();return}
  if(el.hasAttribute("data-close-evidence")){state.evidence="";render();return}
- if(el.hasAttribute("data-more")){state.quickLimit+=8;render();return}
  if(el.hasAttribute("data-place")){state.region=el.getAttribute("data-place");state.view="catalogue";state.bookPage=1;writeHash();render();return}
  if(el.hasAttribute("data-copy")){writeHash();if(navigator.clipboard?.writeText)navigator.clipboard.writeText(location.href);return}
  if(el.hasAttribute("data-close-side")){state.selected="";state.evidence="";writeHash();render();return}
@@ -825,7 +930,47 @@ function onInput(e){
 ROOT.addEventListener("click",onClick);
 ROOT.addEventListener("change",onChange);
 ROOT.addEventListener("input",onInput);
+let railTimer=null;
+// Native horizontal scrolling changes focus after it settles; no card click is required.
+ROOT.addEventListener("scroll",event=>{
+ const rail=event.target;
+ if(!rail.matches?.("[data-text-rail]")||rail.dataset.ready!=="1")return;
+ clearTimeout(railTimer);
+ railTimer=setTimeout(()=>{
+  if(!rail.isConnected||rail.dataset.ready!=="1")return;
+  const center=rail.scrollLeft+rail.clientWidth/2;
+  const cards=[...rail.querySelectorAll("[data-browse-work]")];
+  let nearest=null,dist=Infinity;
+  for(const card of cards){
+   const gap=Math.abs(card.offsetLeft+card.offsetWidth/2-center);
+   if(gap<dist){nearest=card;dist=gap;}
+  }
+  const next=nearest?.getAttribute("data-browse-work");
+  if(next&&next!==state.selected)chooseWork(next);
+ },175);
+},true);
+let railSwipe=null;
+ROOT.addEventListener("touchstart",e=>{
+ if((state.view!=="timeline"&&state.view!=="network")||
+    !e.target.closest?.("[data-text-rail]")||e.touches.length!==1)return;
+ railSwipe={x:e.touches[0].clientX,y:e.touches[0].clientY};
+},{passive:true});
+ROOT.addEventListener("touchend",e=>{
+ if(!railSwipe||e.changedTouches.length!==1)return;
+ const dx=e.changedTouches[0].clientX-railSwipe.x;
+ const dy=e.changedTouches[0].clientY-railSwipe.y;
+ railSwipe=null;
+ if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.3)browseStep(dx<0?1:-1);
+},{passive:true});
 ROOT.addEventListener("keydown",e=>{
+ if((e.key==="ArrowLeft"||e.key==="ArrowRight")&&
+    (state.view==="network"||state.view==="timeline")&&
+    !e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&
+    !e.target.closest?.("input,textarea,select,[contenteditable=true]")){
+  e.preventDefault();
+  browseStep(e.key==="ArrowRight"?1:-1);
+  return;
+ }
  const el=e.target.closest("[role=button]");
  if(el&&["Enter"," "].includes(e.key)){e.preventDefault();if(typeof el.click==="function")el.click();else el.dispatchEvent(new MouseEvent("click",{bubbles:true,cancelable:true}));}
  if(e.key==="Escape"){state.searchOpen=false;fillSearch()}
@@ -837,6 +982,7 @@ ROOT.addEventListener("keydown",e=>{
 window.addEventListener("popstate",()=>{if(!data.loadReady)return;readHash();render()});
 window.addEventListener("hashchange",()=>{if(!data.loadReady)return;readHash();render()});
 window.GNAtlasUnified={debug:()=>({ready:data.loadReady,subject:state.subject,view:state.view,selected:state.selected,
+ browseMode:state.browseMode,browseLength:(state.view==="network"||state.view==="timeline")?browseWorks().length:null,
  total:data.all.length,edges:data.edges.length,counts:data.counts,lanes:renderCache.lanes.length,
  currentMatches:filtered().length,errors:data.errors.slice()}),
  select:id=>chooseWork(id,true)};
