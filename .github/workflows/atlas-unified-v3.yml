@@ -47,10 +47,14 @@ jobs:
           curl -fsS http://127.0.0.1:8123/research/intellectual-atlas/ > /dev/null
       - name: End-to-end unified atlas
         run: python research/intellectual-atlas/tests/verify_unified_v3_browser.py
+      - name: Automatic left-right text browsing, full network, timeline and mobile swipe
+        run: python research/intellectual-atlas/tests/verify_text_browsing_browser.py
       - name: Browser screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: unified-atlas-v3
-          path: /tmp/gnamma-atlas-v3/
+          path: |
+            /tmp/gnamma-atlas-v3/
+            /tmp/gnamma-text-browse-qa/
           if-no-files-found: ignore
