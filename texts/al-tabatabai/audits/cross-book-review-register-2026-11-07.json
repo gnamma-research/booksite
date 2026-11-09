@@ -2,14 +2,15 @@
   "schema": 1,
   "title": "Cross-book source and English review register",
   "summary": {
-    "date": "2026-11-07",
-    "totalReaderUnits": 272,
+    "date": "2026-11-09",
+    "totalReaderUnits": 276,
     "M": {
-      "localReading": 25,
-      "localTranslated": 25,
+      "localReading": 29,
+      "localTranslated": 29,
       "fullAuthorialBooks": 6,
       "completeLocalBookContent": false,
-      "mappedAuthorialTopics": 68
+      "mappedAuthorialTopics": 68,
+      "status": "Selected introductory passages and Books I and III selections only; full authorial corpus incomplete"
     },
     "B": {
       "localReading": 111,
@@ -40,7 +41,8 @@
     "NihayaSourceSha": "52107500a82264b1e578fb4bcad2806f42634aed",
     "BidayaParitySha": "206e9ea60af9108b614441cd8e049742098cd339",
     "NihayaSupplementSha": "65f3e068b0d44eec4c96ff13b05c45a57bac4c4a",
-    "MuzaffarMapSha": "6cae1741a3f59039fe2764178a3ad3140d16530a"
+    "MuzaffarMapSha": "6cae1741a3f59039fe2764178a3ad3140d16530a",
+    "maintenanceNote": "2026-11-09: appended four new al-Manṭiq language/signification passages; all remain working translations with no documented independent specialist verification."
   },
   "method": "One row per locally stored authorial passage. Presence of Arabic or English is a technical coverage flag, not a scholarly judgment. Same-source normalised PDF comparison has known limitations. Historical attribution issues are isolated in critical notes.",
   "sourceStatus": "Full original Muzaffar Arabic and English remain absent from the local corpus outside the 25 selected passages.",
@@ -307,6 +309,102 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "only selected passages imported; rest of authorial book still absent",
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+    },
+    {
+      "id": "M-L-01",
+      "book": "M",
+      "stage": "L",
+      "chapter": 1,
+      "title": "Why logic must investigate expressions",
+      "source": {
+        "page": "29–32",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Arabic text",
+        "locator": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 753,
+      "englishCharacters": 1299,
+      "sourceEditionReviewed": "authorial selection from cited 1402 AH text; independent reading comparison pending",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
+      "sourceAssessment": "selected authorial opening on linguistic signification; full logic corpus not yet included",
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+    },
+    {
+      "id": "M-L-02",
+      "book": "M",
+      "stage": "L",
+      "chapter": 2,
+      "title": "Signification: rational, natural and conventional",
+      "source": {
+        "page": "32–34",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Arabic text",
+        "locator": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2261,
+      "englishCharacters": 2770,
+      "sourceEditionReviewed": "authorial selection from cited 1402 AH text; independent reading comparison pending",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
+      "sourceAssessment": "selected authorial opening on linguistic signification; full logic corpus not yet included",
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+    },
+    {
+      "id": "M-L-03",
+      "book": "M",
+      "stage": "L",
+      "chapter": 3,
+      "title": "Verbal signification: total, partial, and concomitant",
+      "source": {
+        "page": "34–36",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Arabic text",
+        "locator": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1914,
+      "englishCharacters": 2524,
+      "sourceEditionReviewed": "authorial selection from cited 1402 AH text; independent reading comparison pending",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
+      "sourceAssessment": "selected authorial opening on linguistic signification; full logic corpus not yet included",
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+    },
+    {
+      "id": "M-L-04",
+      "book": "M",
+      "stage": "L",
+      "chapter": 4,
+      "title": "The condition for implicative signification",
+      "source": {
+        "page": "36",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Arabic text",
+        "locator": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 299,
+      "englishCharacters": 794,
+      "sourceEditionReviewed": "authorial selection from cited 1402 AH text; independent reading comparison pending",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
+      "sourceAssessment": "selected authorial opening on linguistic signification; full logic corpus not yet included",
       "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
     },
     {
