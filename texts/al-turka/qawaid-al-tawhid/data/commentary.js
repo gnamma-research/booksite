@@ -23,7 +23,7 @@ window.GNAMMA_TAMHID_SHARH = {
       "kind": "sharh",
       "ArabicSourceStatus": "directly-cited-digitized-printed-page",
       "arabic": "هذا كلّه إذا لم يكن له شيخ مسلك يرشده، وإمام مكمّل يقتدى به، وبيده مقاليد أقفاله وأحواله. وأمّا إذا كان له ذلك، فلكل منزل ومقام بحسب كلّ وقت واستعداد، علوم وميزان يخصّه، ينبّه السالك بحسب تفرّسه مراقي استعداده على تلك العلوم بموازينها.",
-      "english": "All of this applies when the seeker has no master of the path to direct him, no guide who brings others to perfection to follow, who holds in his hands the keys to his locks and states. If, however, he does have such a guide, then every stage and station has sciences and a measure proper to it, according to the time and the seeker's capacity. The guide, discerning the successive degrees of that capacity, draws the traveller's attention to those sciences and their appropriate measures.",
+      "english": "All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his locks and states. If, however, he does have such a guide, then every stage and station has sciences and a measure proper to it, according to the time and the seeker's capacity. The guide, discerning the successive degrees of that capacity, draws the traveller's attention to those sciences and their appropriate measures.",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/470?lang=ar",
       "notes": [
         "This is the descendant's commentary continuing after QT-061, not the grandfather's matn. Arabic sourced to printed p.274 in the online transcription.",
