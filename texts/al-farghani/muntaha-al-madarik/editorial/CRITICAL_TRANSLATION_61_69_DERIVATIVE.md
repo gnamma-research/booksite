@@ -1,3 +1,5 @@
+> **Stage XV photographic confirmation:** Two selected clauses below now have independent 1876-print support: p61 gifts in I1876 p38 scan42 (shared core; initial connective disputed), and p62 **تعميما/تعديدا** in I1876 p39 scan43. This does NOT upgrade the modern Beirut source from derivative to primary; original Stage X text retained below. See [new apparatus](I1876_COLLATION_CUMULATIVE_005.json).
+
 # Farghānī · Stage X · Foundation I, B2007 printed pp61–69
 
 **9 November 2026.** 57 selected authorial-language/working-English comparisons on nine page labels. Source is a **later online transcription of the modern printed Arabic**, not an independently collated historical or manuscript witness. Original direct B2007 page links were unavailable through the browser; do not call this 'direct B2007 verification' or 'full Arabic critical edition'. Existing 128-page English working master and Stage IX 283 direct modern-Arabic checks preserved.
