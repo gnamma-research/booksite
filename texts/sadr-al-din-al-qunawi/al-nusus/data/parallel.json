@@ -11,7 +11,7 @@
       "author": "Ṣadr al-Dīn al-Qūnawī",
       "type": "primary-matn",
       "content_status": "Online-witness translation begun; no manuscript collation",
-      "entry_count": 16,
+      "entry_count": 25,
       "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
     },
     {
@@ -650,6 +650,171 @@
         }
       ],
       "commentary_alignment": "Correspondence checked against al-Mahāʾimī's source-transcription lemmata and printed section headings; alignment is not proof of doctrinal agreement."
+    },
+    {
+      "id": "QUN-NU-008-E",
+      "order": 9.01,
+      "section": "The eighth text concludes: differences in relative truth",
+      "locator": "online transcription p. 243, line 363",
+      "arabic": "فافهم هذا النص وتدبّره، فقد أدرجت فيه من نفائس العلوم والأسرار ما لا يقدر قدره إلا اللّه، وهذا هو الحق اليقين، والنص المبين، وكل ما تسمعه مما يخالف هذا فإنه وإن كان صوابا فإنه صواب نسبيّ، وهذا هو الحق الصريح الذي لا مرية فيه، واللّه المرشد والهادي.",
+      "english": "Understand this text and contemplate it. Within it I have included precious forms of knowledge and mysteries whose value none can estimate but God. This is certain truth and a clear exposition. Whatever you hear that differs from it, even if correct, is correct only relatively; here is the explicit truth of which there is no doubt. God guides and leads aright.",
+      "notes": "Qūnawī expressly distinguishes the claim of his all-comprehensive standpoint from truths valid only relatively to a limited station. This is his self-description; editorial analysis must not silently endorse his epistemic rank.",
+      "tags": [
+        "perspective",
+        "jamiyya",
+        "nisbi"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-009-A",
+      "order": 9.02,
+      "section": "Text Nine: causes and the conditions of differentiation",
+      "locator": "online transcription pp. 243–244, lines 364–370",
+      "arabic": "ومن النصوص الكلية نصوص ذكرتها في كتاب مفتاح غيب الجمع وتفصيله، وفي غيره من الكتب التي أنشأتها لا بكلام أحد من الناس، فإن ذلك ليس من دأبي؛ إذ قد عصمني اللّه من ذلك، وأغناني بهباته الخالصة العلية عن العواري الخارجية السفلية، غير أنه لما اختصّ هذا الكتاب بذكر هذه النصوص وجب ذكر تلك النصوص أيضا هنا. فأقول من جملتها أن كل ما هو سبب في وجود كثرة وكثير، فإنه من حيث هو كذلك لا يمكن أن يتعين بظهور، ولا يبدو لناظر إلّا في منظوره. ومنها أن الشيء لا يصدر عنه، ولا ينمي ما يضاده، ولا ما يباينه على اختلاف ضروب الإثمار وأنواعه المعنوية والروحانية والمثالية والخيالية والحسية والطبيعية، وهذا عام في كل ما يسمّى مصدرا لشيء أو أشياء، أو أصلا مثمرا، لكن إنما يكون له هذا الوصف باعتبار تعقله من حيث هو هو، وباعتبار آخر خفي لا يطّلع عليه إلا الندر من المحققين. ومتى توهم وقوع خلاف ما ذكرنا فليس ذلك إلا بشرط خارج عن ذات الشيء، أو شروط وبحسبها وبحسب الهيئة المتعقلة الحاصلة من تلك الجمعية، أعني جمعية الحقيقة الموصوفة بالمصدرية مع الشروط والاعتبارات الخارجية، وأحكام المرتبة التي يتعيّن فيها ذلك الاجتماع.",
+      "english": "Among the universal texts are some I have set forth in the *Key to the Unseen of Gathering and Its Differentiation*, and in other books composed not by borrowing anyone's discourse. God, I say, has spared me such borrowing and enriched me with His higher, unalloyed gifts. But since this book is devoted to these texts, I must include those statements here as well. One is that anything which is a cause of the existence of a multiplicity, insofar as it is that cause, cannot itself become determinate through its appearance; it appears to an observer only within what the observer beholds. Another is that a thing does not issue forth, or bring to fruition, what is opposite to it or wholly alien to it, whatever the kind of fruition—intelligible, spiritual, imaginal, imaginative, sensible, or natural. This principle covers every purported source or fruitful root, but it applies when the thing is apprehended in its own identity and under another, more hidden consideration known only to rare realised knowers. If something contrary appears to occur, it must be due to one or more conditions extrinsic to the thing, and to the constituted configuration produced by bringing together the source-reality, those external conditions and considerations, and the determinations of the rank in which they are combined.",
+      "notes": "This is a discussion of causal grammar and rank-dependent effects, not an empirical proof that natural causes do nothing. Qūnawī's self-ascribed independence from other authors is a first-person claim.",
+      "tags": [
+        "sabab",
+        "fayd",
+        "taayyun",
+        "ranks"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-009-B",
+      "order": 9.03,
+      "section": "Text Nine: the unique disclosure and the impossibility of repetition",
+      "locator": "online transcription p. 244, lines 371–374",
+      "arabic": "قال تعالى: ﴿كُلٌّ يَعْمَلُ عَلَى شَاكِلَتِهِ﴾ [الإسراء: 84]. ولا يثمر شيء، ولا يظهر عنه أيضا عينه ولا ما يشابهه مشابهة تامة، فإنه يلزم من ذلك أن يكون الوجود قد حصل مرتين، وظهر في حقيقة واحدة ومرتبة واحدة على وجه ونسق واحد، وذلك تحصيل للحاصل، وأنه محال لخلوه عن الفائدة، وكونه من قبيل العبث، ويتعالى الفاعل الحق الحكيم العليم من فعل العبث، فلا بدّ من اختلاف ما بين الأصول وثمراتها، فالممكنات غير متناهية، والفيض من الحق الذي هو أصل الأصول واحد، فلا تكرار في الوجود عند من عرف ما ذكرنا فافهم. ولهذا قال المحققون: إن الحق سبحانه وتعالى ما تجلّى في صورة واحدة لشخص واحد مرتين، ولا لشخصين أيضا في صورة، فلا بدّ من فارق واختلاف من وجه أو وجوه، كما أشرت إليه من قبل، فافهم واللّه المرشد.",
+      "english": "God says: ‘Each acts according to its own disposition’ [Q 17:84]. Nothing brings forth, as its own fruit or appearance, the very same thing or something absolutely identical to it; otherwise existence would have occurred twice in the very same reality and rank in one and the same manner. This would be the production of what is already produced, devoid of purpose and amounting to futility; the Real, wise and knowing Agent is exalted above such futility. There must therefore be some difference between roots and their fruits. The possibles are without end, while the effusion from the Real, the Root of roots, is one. For one who understands this there is no repetition in existence. Hence the realised knowers say that the Real never discloses Himself twice in exactly one form to a single person, nor in a wholly identical form to two persons. There must be difference in one respect or another. Understand, and God guides.",
+      "notes": "The rule against identical repetition concerns numerically distinct disclosures under some distinguishing respect; it does not imply that the One changes in Essence.",
+      "tags": [
+        "tajalli",
+        "fayd",
+        "possibility",
+        "repetition"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-010-A",
+      "order": 9.04,
+      "section": "Text Ten: divine Names belong to determinations, not sheer absoluteness",
+      "locator": "online transcription pp. 244–245, lines 375–380",
+      "arabic": "نصّ شريف: اعلم أن الحق لما لم يكن أن ينسب إليه من حيث إطلاقه صفة ولا اسم، أو يحكم عليه بحكم ما سلبيّا كان أو إيجابيّا، علم أن الصفات والأسماء والأحكام لا يطلق عليه ولا ينسب إليه إلا من حيث التعينات. ولما استبان أن كل كثرة وجودية أو متعقلة يجب أن تكون مسبوقة بوحدة، لزم أن تكون التعينات التي من حيث ما تضاف الأسماء والصفات والأحكام إلى الحق مسبوقة بتعين هو مبدأ جميع التعينات ومحدتها، بمعنى أن ليس وراءه إلا الإطلاق الصرف، وأنه أمر سلبيّ يستلزم سلب الأوصاف والأحكام والتعينات والاعتبارات عن كنه ذاته سبحانه، وعدم التقيد والحصر في وصف أو اسم أو تعين، أو غير ذلك مما عدّدنا أو أجملنا ذكره. ثم إن لذوي العقول السليمة وإن عدموا الكشف الصحيح أن يعتبروا الصفات والأسماء التالية، فإن تعذّر عليهم تعقل أسماء وصفات وراء ما تصورت وانتهت إليه ادراكاتهم العقلية، فتلك أسماء الذات بالنسبة إليهم، ويستدل بحقائقها في طور العقل النظري حال الحجاب؛ لشمول حكمها، وتبعية غيرها من الصفات والأسماء لها، وتوقف تعين ما بعدها عليها، فالعطايا الإلهية الذاتية والأسمائية تعرف من هذه القاعدة، بمعنى أن كل عطاء وخير يصل من الحق إلى الخلق، إما أن يكون عطاء ذاتيّا أو أسمائيّا، أو أن يكون مجموعا من الذات والأسماء.",
+      "english": "A noble text. Since no attribute or name can be related to the Real with respect to His sheer absoluteness, and no judgement, negative or affirmative, may be passed upon Him in that regard, it follows that attributes, Names and judgements are ascribed to Him only under determinations. Since every multiplicity, whether existent or conceived, must be preceded by a unity, the determinations by virtue of which these predicates apply must themselves be preceded by a determination serving as the principle and source of all determinations. Beyond that determination lies nothing but sheer absoluteness, understood negatively: it excludes attributing qualities, judgements, determinations, and conceptual considerations to the ultimate reality of His Essence, or confining it to any name or qualification. Those of sound intellect, even without authentic unveiling, can consider the next succeeding names and attributes. If they cannot conceive names or attributes beyond the point their rational apprehensions reach, those will count for them as Names of the Essence. In the veiled state of speculative reason, they infer their reality from the comprehensive reach of these names, the subordination of the remaining names and attributes, and the dependence of later determinations upon them. This rule enables one to distinguish divine gifts: every gift or good that reaches creation from the Real may be essential, name-related, or a conjunction of Essence and Names.",
+      "notes": "Distinguishes sheer absoluteness as a negation of determination from the first positive determination. The label 'Names of the Essence' can itself be relative to the knower's cognitive horizon.",
+      "tags": [
+        "itlaq",
+        "taayyun",
+        "asma",
+        "fayd"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-010-B",
+      "order": 9.05,
+      "section": "Text Ten: gifts of Essence and gifts of the Names",
+      "locator": "online transcription pp. 245–246, lines 381–389 (excluding modern footnote)",
+      "arabic": "فأما العطايا الذاتية فلا حساب عليها، ولا تنضبط تعيناتها بعدد ولا تنحصر فيه، وأما العطايا الأسمائية والمنسوبة إلى الذات والأسماء جميعا فلا يخلو إما أن تكون نسبتها إلى حضرة الذات أقوى وأتم من نسبتها إلى حضرة الأسماء والصفات، أو بالعكس، فإن غلبت نسبتها إلى الأسماء والصفات على نسبتها إلى الذات وقع الحساب عليها، إما عسيرا أو يسيرا، بحسب الغلبة والمغلوبية الواقعة هناك. وهنا سرّ كبير لا يمكن إفشاؤه، وإن كانت نتيجة الغلبة والمغلوبية قوة نسبة تلك العطايا إلى حضرة الذات، فذلك الذي لا حساب عليه؛ لأن العطايا الذاتية وما قويت نسبتها إليها لا يصدر ولا يقبل إلا بمناسبة ذاتية، فلا موجب لها غير تلك المناسبة. ومن لم يعرف هذا الأصل لم يعلم حقيقة قوله تعالى: ﴿وَتَرْزُقُ مَنْ تَشَاءُ بِغَيْرِ حِسَابٍ﴾ [آل عمران: 27]، ولا سر قوله تعالى: ﴿وَاللَّهُ يَرْزُقُ مَنْ يَشَاءُ بِغَيْرِ حِسَابٍ﴾ [النور: 38]، ولا سر قوله تعالى: ﴿هَذَا عَطَاؤُنَا فَامْنُنْ أَوْ أَمْسِكْ بِغَيْرِ حِسَابٍ﴾ [ص: 39]، ونحو ذلك مما تكرّر ذكره في الكتاب العزيز. وفي الأحاديث النبوية أيضا مثل قوله عليه السلام: «إنه يدخل الجنة من أمته سبعون ألفا بغير حساب ومع كل ألف سبعون ألفا». هؤلاء أصحاب العطايا الأسمائية، غير أن نسبتهم إلى حضرة الذات أقوى من نسبتهم إلى حضرة الأسماء والصفات، ولهذا اتبعوا أصحاب المناسبة الذاتية، وشاركوهم في أحوالهم، فاعلم ذلك.",
+      "english": "Gifts belonging to the Essence are not subject to reckoning, and their determinations cannot be confined within a numerical count. Name-related gifts, and those attributed jointly to Essence and Names, are otherwise graded: their relation to the Presence of the Essence may be stronger and more complete than their relation to the Presence of Names and attributes, or the reverse. Where the latter relation prevails, reckoning attends the gift, whether difficult or easy according to the balance of those relations. Here lies a great secret that cannot be disclosed. When the stronger relation is to the Essential Presence, no reckoning applies, since essential gifts and those predominantly related to it issue forth and are received only through an essential correspondence, without some separate necessitating condition. Whoever fails to grasp this foundation will not fully understand the scriptural expressions ‘You provide for whom You will without reckoning’ [Q 3:27], ‘God provides for whom He wills without reckoning’ [Q 24:38], and ‘This is Our gift; bestow or withhold without reckoning’ [Q 38:39]. The prophetic reports similarly speak of seventy thousand members of the community entering Paradise without reckoning, with seventy thousand accompanying each thousand. In Qūnawī's classification these recipients belong to the gifts of the Names but have a stronger relation to the Essential Presence, and thus follow and participate in the states of those whose correspondence is essential.",
+      "notes": "Qurʾānic citations preserved as Qurʾān; the prophetic report is quoted as it appears in the text and independently requires hadith authentication. Scriptural interpretation belongs to Qūnawī, not an editorial assertion.",
+      "tags": [
+        "asma",
+        "dhat",
+        "ata",
+        "quran",
+        "reckoning"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-010-C",
+      "order": 9.06,
+      "section": "Text Ten: preparedness and the real function of intermediaries",
+      "locator": "online transcription p. 246, lines 394–397",
+      "arabic": "وإذ قد ذكرنا أقسام العطايا وأحكامها فلنذكر أقسام القابلين لها، فإنهم في أخذهم على طبقات يتعدد بحسب سؤالاتهم الاستعدادية، أو الحالية، أو المرتبية، أو الروحانية، أو الطبيعية المزاجية، أو الطبيعية العرضية التي يترجم عنها لسان الطالب القابل. وعلى الجملة فأعلى مراتب القابلين في قبولهم لما يرد عليهم من فيض الحق وعطاياه رؤية وجه الحق في الشروط والأسباب المسمّاه بالوسائط وسلسلة الترتيب، بحيث يعلم الآخذ، ويشهد أن الوسائط السببية ليست غير تعينات الحق في المراتب الإلهية والكونية على اختلاف ضروبها، بمعنى أنه ليس بين فيض الحق المقبول وبين القابل إلا نفس تعين الفيض بالقابلية المقيّدة دون انضمام حكم إمكاني يقتضيه ويوجبه أثر مرور الفيض على مراتب الوسائط، والانصباغ بأحكام إمكاناتها، ويرى الفيض أنه تجل من تجليات باطن الحق، فإن التعددات والتعينات التي لحقته هي أحكام الاسم الظاهر من حيث أن ظاهر الحق مجلى لباطنه، فأحكام الظهور تعدّد مطلق وحدة البطون، وتلك الأحكام هي المسمّاة بالقوابل، وهي صور الشؤون ليس غيرها فافهم. واللّه يقول الحق وهو يهدي من يشاء إلى صراط مستقيم.",
+      "english": "Having discussed the classes of gifts and their governing characteristics, let us consider the classes of their recipients. Their reception varies according to the several forms of asking expressed by the recipient: requests of preparedness, of present state, of rank, of spiritual constitution, of natural temperament, and of accidental natural disposition. In general, the highest recipients behold the Face of the Real in what are called the conditions, causes, mediators and ordered series through which His gifts arrive. They know and witness that these causal mediations are none other than the Real's determinations within divine and cosmic ranks. Between the received effusion and its recipient there is nothing beyond the very determination of the effusion through the recipient's restricted receptivity—no added, independent effect imposed by the effusion's passage through intermediaries and their contingent characteristics. Such a knower witnesses the effusion as a self-disclosure of the inwardness of the Real. The many determinations it exhibits are the rulings of the Name the Manifest, for the outward aspect of the Real is a locus of disclosure for the inward. The judgements of manifestation express the multiplicity of what, inwardly, is an absolute unity. These are what are called recipients: forms of the Real's affairs, not something in addition. Understand, and God speaks truth and guides whom He wills to a straight path.",
+      "notes": "The text distinguishes causal order as differentiated appearances of a single effusion from independent separate creators. Its metaphysical claim does not establish that empirical conditions can be dispensed with.",
+      "tags": [
+        "istidad",
+        "qabul",
+        "wasait",
+        "zuhur",
+        "batin"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-011-A",
+      "order": 9.07,
+      "section": "Text Eleven: authentic cognition, obedience and the answer to prayer",
+      "locator": "online transcription p. 246, lines 398–401",
+      "arabic": "نصّ جليّ وضابط كليّ يفيد معرفة المطاوعة والإجابة الإلهيين وإبائهما: اعلم أن الميزان التام الصريح والبرهان الذوقي المحقق الصحيح في معرفة متى يكون العبد من المطيعين لربه، ومتى تسرع إليه الإجابة الإلهية في عين ما يسأله فيه دون تعويض ولا تأخير، هو صحة المعرفة وكمال المطاوعة، فالأصح معرفة بالحق والأصح تصورا له تكون الإجابة إليه في عين ما سأل فيه أسرع، والأتم مراقبة لأوامر الحق ومبادرة إليها بكمال المطاوعة يكون مطاوعة الحق له أيضا أتم من مطاوعته سبحانه لغيره من العبيد، ولهذا كان مقتضى حال الأكابر من أهل اللّه أن أكثر أدعيتهم مستجابة؛ لكمال المطاوعة، وصحة المعرفة باللّه والتصور له، وإليه الإشارة بقوله سبحانه: ﴿ادْعُونِي أَسْتَجِبْ لَكُمْ﴾ [غافر: 60].",
+      "english": "A clear text and a general criterion for understanding compliance and the divine response or its withholding. Know that the explicit measure and the sound proof given in realised tasting for discerning when a servant truly obeys his Lord, and when a response comes promptly to the very thing he asks without substitution or delay, are the correctness of knowledge and the perfection of obedience. The more accurate one's knowledge and conception of the Real, the readier the response to the precise petition; and the more complete one's vigilance over divine commands and immediate compliance with them, the more complete is the corresponding responsiveness of the Real to such a servant, compared with other servants. Hence the eminent friends of God are described as having most of their supplications answered: their obedience and knowledge of God are perfected. It is in this connection that God says, ‘Call upon Me and I shall answer you’ [Q 40:60].",
+      "notes": "This is Qūnawī's spiritually conditioned account of supplication and response, not an independently tested guarantee that requests will be granted.",
+      "tags": [
+        "dua",
+        "ilm",
+        "maarefa",
+        "itāa"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-011-B",
+      "order": 9.08,
+      "section": "Text Eleven: mental image, genuine knowledge and the comprehensive recipient",
+      "locator": "online transcription pp. 246–247, lines 440–446",
+      "arabic": "فالعديم المعرفة الصحيحة الشهودية النسبي التصور، ليس بداع للحق الذي ضمن له الإجابة بقوله له: ﴿ادْعُونِي أَسْتَجِبْ لَكُمْ﴾، وإنما هو متوجه في دعائه إلى الصورة الشخصية في ذهنه، الناتجة من نظره وخياله، أو خيال غيره ونظره، أو المتحصلة من المجموع المشار إليه، فلهذا يحرم من هذا شأنه الإجابة في عين ما سأل فيه، أو يتأخر عنه، أعني الإجابة. ومتى أجيب مثل هذا فإنما سببه سر المعية الإلهية المقتضية عدم خلو شيء عن الحق، أو الجمعية التامة الحاصلة للمضطرين، الموعود لهم بالإجابة للاستدعاء الاضطراري، والاستعداد الحاصل به: أي بالاضطرار. وحال من هذا وصفه مخالف لحال ذي التصور الصحيح والمعرفة المحققة، فإنه مستحضر الحق، ومتوجّه إليه استحضارا وتوجها محققا، وإن لم يكن ذلك من جميع الوجوه لكن يكفيه كونه متصورا ومستحضرا للحقّ في توجهه، ولو في بعض المراتب، ومن حيثية بعض الأسماء والصفات، وهذا حال المتوسطين من أهل اللّه، والحال إلى المقدّم ذكره حال المحجوبين. وأما الكمّل والأفراد فإن توجّههم إلى الحق تابع للتجلّي الذاتي المشار إليه، الحاصل لهم، والموقوف تحققهم بمقام الكمال على الفوز به، فإنه مثمر لهم معرفة تامة جامعة لحيثيات جميع الأسماء والصفات والمراتب والاعتبارات، مع صحة تصور الحق من حيث تجليه الذاتي المشار إليه، الحاصل لهم بالشهود الأتم، فلهذا لا يتأخر عنهم الإجابة.",
+      "english": "Someone who lacks sound, witnessed knowledge and has only an inadequate conception does not, in the intended sense, address the Real who promises, ‘Call upon Me and I shall answer you.’ In petition he addresses instead a particular image within his mind, formed from his own thought and imagination, someone else's, or their combination. Thus he may be denied the response to exactly what he requested, or the response may be delayed. When such a person does receive an answer, it follows either from the mystery of divine accompanying-presence, by which nothing is wholly devoid of the Real, or from the concentrated comprehensiveness attained by those in dire need, to whom a response is promised through their compelling need and the readiness it produces. This is different from the condition of someone whose conception is sound and whose knowledge is realised. Such a person holds the Real present and turns truly toward Him, even if not from every possible standpoint; it suffices that the Real is apprehended in a certain rank and through certain Names and attributes. This is the condition of those at intermediate stages of the way, in contrast with the veiled condition just described. But the perfected and certain singular individuals turn toward the Real under the essential self-disclosure discussed earlier; attainment of that disclosure constitutes their verification in the station of perfection. It yields a comprehensive recognition gathering the considerations of all Names, attributes, degrees and relations, alongside a true conception of the Real under the essential disclosure witnessed in the fullest way. For this reason, Qūnawī says, the response to them is not delayed.",
+      "notes": "The contrast between praying to the divine Reality and praying toward a mental object is epistemological. The absolute claims about perfect recipients require the broader theological and practical context of the passage.",
+      "tags": [
+        "dua",
+        "tasawwur",
+        "tajalli",
+        "maqam",
+        "nafs"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-011-C",
+      "order": 9.09,
+      "section": "Text Eleven: foreknowledge, the First Pen and petition according to decree",
+      "locator": "online transcription pp. 247–248, lines 447–448",
+      "arabic": "وأيضا فإنهم أعني الكمّل ومن شاء اللّه من الأفراد أهل الاطّلاع على اللوح المحفوظ، بل وعلى المقام القلمي، بل وعلى حضرة العلم الإلهي، فيشعرون بالمقدّر كونه لسبق العلم بوقوعه، ولا بدّ فيسألون لا في مستحيل غير مقدر الوجود، ولا تنبعث هممهم إلى طلب ذلك والإرادة له. وإنما قلت: (والإرادة له) من أجل أن ثمة من يتوقف وقوع الأشياء على إرادته، وإن لم يدع ولم يسأل الحق في حصوله، وقد عاينت ذلك من شيخنا قدّس اللّه روحه سنين كثيرة في أمور لا أحصيها، وأخبرني رضي اللّه عنه أنه رأى النبي صلى اللّه عليه وسلم في بعض وقائعه، وأنه بشّره وقال له: اللّه أسرع إليك بالإجابة منك إليه بالدعاء.",
+      "english": "The perfected, together with those singular individuals whom God chooses, are also said to have access to the Preserved Tablet, the rank of the Pen, and even the Presence of divine knowledge. Thus they perceive what has been decreed to happen through God's foreknowledge of its occurrence, and they do not request what is impossible in the sense that its existence has not been decreed; nor do their aspirations turn toward seeking or willing it. I expressly mention willing because, for certain persons, the occurrence of a matter depends upon their will even without spoken prayer or petition. Over many years I witnessed such matters concerning our master—may God sanctify his spirit—more often than I can enumerate. He told me that in a visionary event he saw the Prophet, who gave him the good tidings: ‘God is quicker to answer you than you are to make supplication to Him.’",
+      "notes": "A report of the author's experiences and their metaphysical interpretation, not corroboration of the vision or the reported prophetic words. The distinction between essential and conditioned impossibility matters.",
+      "tags": [
+        "qadar",
+        "lawh",
+        "qalam",
+        "irāda",
+        "dua"
+      ],
+      "work": "QUN-NU",
+      "status": "translated-online-witness",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
     },
     {
       "id": "QUN-NU-020-A",
