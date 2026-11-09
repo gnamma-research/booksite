@@ -666,7 +666,17 @@
       ],
       "work": "QUN-NU",
       "status": "translated-online-witness",
-      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P116",
+          "printed_page": 116,
+          "label": "Text Eight concludes; Text Nine begins with general rules about manifestation",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P116"
+        }
+      ],
+      "commentary_alignment": "Source lemma with contiguous contextual commentary in al-Mahāʾimī's first-pass English edition; no claim of doctrinal agreement."
     },
     {
       "id": "QUN-NU-009-A",
@@ -684,7 +694,31 @@
       ],
       "work": "QUN-NU",
       "status": "translated-online-witness",
-      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P116",
+          "printed_page": 116,
+          "label": "Text Eight concludes; Text Nine begins with general rules about manifestation",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P116"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P117",
+          "printed_page": 117,
+          "label": "Text Nine: causality of multiplicity becomes manifest only in a viewed locus",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P117"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P118",
+          "printed_page": 118,
+          "label": "Text Nine: intrinsic production, extrinsic conditions, and modes of causality",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P118"
+        }
+      ],
+      "commentary_alignment": "Source lemma with contiguous contextual commentary in al-Mahāʾimī's first-pass English edition; no claim of doctrinal agreement."
     },
     {
       "id": "QUN-NU-009-B",
@@ -702,7 +736,24 @@
       ],
       "work": "QUN-NU",
       "status": "translated-online-witness",
-      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P119",
+          "printed_page": 119,
+          "label": "Text Nine: conditional causal wholes and the impossibility of perfect reproduction",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P119"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P120",
+          "printed_page": 120,
+          "label": "Text Nine: a single effusion, inexhaustible possibilities, no identical repeated disclosure",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P120"
+        }
+      ],
+      "commentary_alignment": "Source lemma with contiguous contextual commentary in al-Mahāʾimī's first-pass English edition; no claim of doctrinal agreement."
     },
     {
       "id": "QUN-NU-010-A",
@@ -720,7 +771,31 @@
       ],
       "work": "QUN-NU",
       "status": "translated-online-witness",
-      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P121",
+          "printed_page": 121,
+          "label": "Text Ten begins: negative unrestrictedness and the first principle of determinations",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P121"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P122",
+          "printed_page": 122,
+          "label": "Text Ten: unrestricted Essence versus the first determinate basis of names",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P122"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P123",
+          "printed_page": 123,
+          "label": "Text Ten: rational order of divine names, non-temporal priority, and divine gifts",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P123"
+        }
+      ],
+      "commentary_alignment": "Source lemma with contiguous contextual commentary in al-Mahāʾimī's first-pass English edition; no claim of doctrinal agreement."
     },
     {
       "id": "QUN-NU-010-B",
@@ -739,7 +814,31 @@
       ],
       "work": "QUN-NU",
       "status": "translated-online-witness",
-      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P124",
+          "printed_page": 124,
+          "label": "Text Ten: essential, nominal and mixed gifts; unreckoned and reckoned bestowal",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P124"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P125",
+          "printed_page": 125,
+          "label": "Text Ten: reckoning, essential correspondence, mercy and scriptural proofs",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P125"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P126",
+          "printed_page": 126,
+          "label": "Text Ten: the two classes of unreckoned divine giving",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P126"
+        }
+      ],
+      "commentary_alignment": "Source lemma with contiguous contextual commentary in al-Mahāʾimī's first-pass English edition; no claim of doctrinal agreement."
     },
     {
       "id": "QUN-NU-010-C",
@@ -758,7 +857,38 @@
       ],
       "work": "QUN-NU",
       "status": "translated-online-witness",
-      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P127",
+          "printed_page": 127,
+          "label": "Text Ten: recipients and their six modes of request, including unspoken receptivity",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P127"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P128",
+          "printed_page": 128,
+          "label": "Text Ten: highest recipients behold a single effusion under differentiated conditions",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P128"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P129",
+          "printed_page": 129,
+          "label": "Text Ten: conditions, causes, and determination of one intelligible effusion",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P129"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P130",
+          "printed_page": 130,
+          "label": "Text Ten: al-Ẓāhir, al-Bāṭin, receptivity and the limits of verbal unity",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P130"
+        }
+      ],
+      "commentary_alignment": "Source lemma with contiguous contextual commentary in al-Mahāʾimī's first-pass English edition; no claim of doctrinal agreement."
     },
     {
       "id": "QUN-NU-011-A",
@@ -776,7 +906,24 @@
       ],
       "work": "QUN-NU",
       "status": "translated-online-witness",
-      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P131",
+          "printed_page": 131,
+          "label": "Text Eleven: divine response, knowledge and spiritual obedience",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P131"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P132",
+          "printed_page": 132,
+          "label": "Text Eleven: exact answer versus response, and seeing God without ḥulūl or ittiḥād",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P132"
+        }
+      ],
+      "commentary_alignment": "Source lemma with contiguous contextual commentary in al-Mahāʾimī's first-pass English edition; no claim of doctrinal agreement."
     },
     {
       "id": "QUN-NU-011-B",
@@ -795,7 +942,45 @@
       ],
       "work": "QUN-NU",
       "status": "translated-online-witness",
-      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P133",
+          "printed_page": 133,
+          "label": "Text Eleven: petition directed to the Real versus a mental representation",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P133"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P134",
+          "printed_page": 134,
+          "label": "Text Eleven: incomplete mental images and the distinct promise to the distressed",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P134"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P135",
+          "printed_page": 135,
+          "label": "Text Eleven: two grounds for response to imperfect petition—maʿiyya and existential necessity",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P135"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P136",
+          "printed_page": 136,
+          "label": "Text Eleven: the intermediate station versus comprehensive realization through essential disclosure",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P136"
+        },
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P137",
+          "printed_page": 137,
+          "label": "Text Eleven: the lightning disclosure ends, but its comprehensive knowing remains",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P137"
+        }
+      ],
+      "commentary_alignment": "Source lemma with contiguous contextual commentary in al-Mahāʾimī's first-pass English edition; no claim of doctrinal agreement."
     },
     {
       "id": "QUN-NU-011-C",
@@ -814,7 +999,17 @@
       ],
       "work": "QUN-NU",
       "status": "translated-online-witness",
-      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
+      "commentary_links": [
+        {
+          "work": "MAH-MAS",
+          "section_id": "MSH-P138",
+          "printed_page": 138,
+          "label": "Text Eleven: divine foreknowledge, the Preserved Tablet and conditioned decrees",
+          "link_url": "../../al-mahaimi/mashra-al-khusus/#MSH-P138"
+        }
+      ],
+      "commentary_alignment": "Source lemma with contiguous contextual commentary in al-Mahāʾimī's first-pass English edition; no claim of doctrinal agreement."
     },
     {
       "id": "QUN-NU-020-A",
@@ -890,5 +1085,5 @@
       "notes": "Selected consecutive clause from chapter four, not a substitute for the complete chapter. Manuscript collation and reproduction rights of the 2023 apparatus require separate review."
     }
   ],
-  "concordance_status": "Fourteen Qūnawī passages linked to 40 actual sections in the existing al-Mahāʾimī first-pass bilingual reader; no retranslations. Links cover quotations and surrounding explanation, not claims of doctrinal agreement."
+  "concordance_status": "23 Qūnawī source-located bilingual passages link to 64 real al-Mahāʾimī section anchors, in the separate 127-section / 426-pair first-pass reader (through printed p. 138). No retranslations or unsupported manuscripts are claimed."
 }
