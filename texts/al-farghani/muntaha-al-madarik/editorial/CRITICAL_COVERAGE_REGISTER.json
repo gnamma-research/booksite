@@ -34,7 +34,9 @@
       "historical_print_printed_page": 5,
       "historical_print_status": "bounded photographed 1876 printed Arabic check, not full-page or MS",
       "historical_print_loci_verified": 1,
-      "historical_print_loci_status": "selected photographed print readings only, not complete historic-page proof"
+      "historical_print_loci_status": "selected photographed print readings only, not complete historic-page proof",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
     },
     {
       "b2007_page": 19,
@@ -54,7 +56,9 @@
       "historical_print_printed_page": 6,
       "historical_print_status": "bounded photographed 1876 printed Arabic check, not full-page or MS",
       "historical_print_loci_verified": 2,
-      "historical_print_loci_status": "selected photographed print readings only, not complete historic-page proof"
+      "historical_print_loci_status": "selected photographed print readings only, not complete historic-page proof",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
     },
     {
       "b2007_page": 20,
@@ -69,7 +73,9 @@
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
       "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
     },
     {
       "b2007_page": 21,
@@ -89,7 +95,9 @@
       "historical_print_printed_page": 7,
       "historical_print_status": "bounded photographed 1876 printed Arabic check, not full-page or MS",
       "historical_print_loci_verified": 1,
-      "historical_print_loci_status": "selected photographed print readings only, not complete historic-page proof"
+      "historical_print_loci_status": "selected photographed print readings only, not complete historic-page proof",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
     },
     {
       "b2007_page": 22,
@@ -104,7 +112,9 @@
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
       "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
     },
     {
       "b2007_page": 23,
@@ -129,7 +139,9 @@
         "beirut": "إلّا أنه ربما يكون",
         "historical": "سوى أنه ربما يكون",
         "reading_grade": "photographed-print-variant-not-MS"
-      }
+      },
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
     },
     {
       "b2007_page": 24,
@@ -2714,5 +2726,14 @@
   "total_reader_clause_records": 559,
   "total_distinct_page_labels_with_any_bilingual_check": 128,
   "total_source_pages_with_mixed_provenance": 128,
-  "next_new_selected_excerpt_page": null
+  "next_new_selected_excerpt_page": null,
+  "quality_assertion": {
+    "all_pages_have_selected_excerpts": true,
+    "all_pages_fully_proofread": false,
+    "page_count": 128,
+    "pages_with_selected_excerpts": 128,
+    "primary_direct_digitized_pages": 43,
+    "secondary_derived_pages": 85,
+    "description": "All 128 B2007 page labels have one or more selected passages; none is certified complete line-by-line Arabic collation, and no manuscript images collated."
+  }
 }
