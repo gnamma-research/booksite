@@ -3,7 +3,7 @@
   "title": "Nihāyat al-Ḥikma — cumulative English text collation triage",
   "updated": "2026-11-09",
   "source": "nihayat-al-hikma/data/book.json",
-  "scope": "All 136 working Nihāya reading units automatically screened; 68/136 complete local Arabic–English bilingual readings documented (28 prior + 40 this stage). Five selected revised 1428 AH printed-digital spot checks, not a complete independent witness collation. No external specialist certification claimed.",
+  "scope": "136/136 automatic structural screens; 70/136 separately documented local Arabic-English readings (68 inherited + two new stage-IV same-base printed digital checks). Five historical 1428 printed-digital checks, not complete independent witness collation; no expert certification.",
   "standard": "No AI-only structural scan is a full semantic English collation or professional critical edition. Local bilingual reading is not an independent Arabic witness. Neither a flagged nor an unflagged row establishes textual accuracy.",
   "summary": {
     "units": 136,
@@ -13,7 +13,7 @@
     "unitsWithThreeOrMoreParagraphDifference": 63,
     "unitsWithAnyHint": 70,
     "automaticallyScreened": 136,
-    "locallyReadAgainstStoredArabic": 68,
+    "locallyReadAgainstStoredArabic": 70,
     "independentlyReconciledAgainstCompleteSecondWitness": 0,
     "expertVerified": 0,
     "hintCounts": {
@@ -24,7 +24,8 @@
     "secondaryPrintedDigitalSpotChecks": 5,
     "englishCorrectionsThisBatch": 1,
     "reviewedNewThirdBatch": 40,
-    "englishCorrectionsThirdBatch": 2
+    "englishCorrectionsThirdBatch": 2,
+    "reviewedNewFourthBatch": 2
   },
   "rows": [
     {
@@ -1982,7 +1983,9 @@
       "englishToArabicCharRatio": 1.504,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct local bilingual reading against the digitally presented 1417 Arabic, printed pp.265–266, checks the two types of substantial motion, repeated forms, substrate, intensification and three inferences. **Unresolved internal cross-reference:** Arabic has «لا بطريق الخلع واللبس كما في القسم الأول، بل بطريق اللبس بعد اللبس» immediately within a description of the FIRST (longitudinal) kind, even though stripping/donning was assigned to the SECOND (parallel) kind. Conjectural reference «القسم الثاني» for «القسم الأول»; NO second witness supports this yet. Retain recorded Arabic and current English (which ambiguously says 'former case'), document instead of silently emending.",
+        "sourceGrade": "same-base-digitally-presented-1417-Arabic; NOT second-witness-attested",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2001,7 +2004,9 @@
       "englishToArabicCharRatio": 1.509,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Direct local bilingual reading against the digitally presented 1417 Arabic, printed pp.266–268, confirms distinction between substantial movement and in-separable/separable accidents, separate substance as ultimate efficient agent, material causes' positional dependence, nature/soul and natural/coerced movement. The phrase «الطبيعة المقسورة» is correctly represented by 'nature under compulsion'. No independent collation against the 1404 early scan performed.",
+        "sourceGrade": "same-base-digitally-presented-1417-Arabic; NOT second-witness-attested",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
