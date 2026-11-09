@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-human-clause-review-v1",
   "date": "2026-11-09",
-  "reviewScope": "Manual Arabic–English comparative review in 16 selected source units; all remaining units are only inventoried.",
+  "reviewScope": "Manual comparison of 584 Arabic punctuation clauses in 19 source units; unresolved readings and all remaining unreviewed clauses remain explicitly identified.",
   "sourceBasis": "Current repository JS matn/commentary modules, retained edition N introduction and edition A main/conclusion",
   "method": "Source clause numbers are computed from Arabic punctuation. English ranges are manually matched, not proportional autoalignment. All segments in these eleven sections must be covered exactly once; unresolved readings remain explicit.",
   "units": [
@@ -724,9 +724,176 @@
           "note": "Excluded merely conceptual sense and self-subsisting Necessary retained."
         }
       ]
+    },
+    {
+      "id": "SH-025",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 9,
+          "enStart": 1,
+          "enEnd": 6,
+          "status": "checked-with-note",
+          "note": "Introductory tanbīh and its supposed self-evidence reported; displayed ابيّة remains a lexical source crux."
+        },
+        {
+          "arStart": 10,
+          "arEnd": 19,
+          "enStart": 7,
+          "enEnd": 11,
+          "status": "checked",
+          "note": "Particular Necessary as wholly unlike its effects is set beside its shared general and existential predicates."
+        },
+        {
+          "arStart": 20,
+          "arEnd": 29,
+          "enStart": 12,
+          "enEnd": 15,
+          "status": "checked",
+          "note": "The argument is a purported inconsistency between absolute dissimilarity, causality, priority and shared universals."
+        },
+        {
+          "arStart": 30,
+          "arEnd": 40,
+          "enStart": 16,
+          "enEnd": 21,
+          "status": "checked",
+          "note": "Objection limits commonality to accidental and intellectual predicates; relation versus extramental affinity preserved."
+        },
+        {
+          "arStart": 41,
+          "arEnd": 49,
+          "enStart": 22,
+          "enEnd": 26,
+          "status": "checked",
+          "note": "Reply rejects genuinely distinct existential instances but retains relational differences."
+        },
+        {
+          "arStart": 50,
+          "arEnd": 51,
+          "enStart": 27,
+          "enEnd": 27,
+          "status": "checked",
+          "note": "The closing invitation to reflect is linked to the two foregoing replies."
+        }
+      ]
+    },
+    {
+      "id": "SH-026",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 11,
+          "enStart": 1,
+          "enEnd": 12,
+          "status": "checked-with-note",
+          "note": "First argument: intrinsic comprehensiveness and contrast of gathering/distinction; al-Ṣādiq maxim is attributed in source, not independently authenticated."
+        },
+        {
+          "arStart": 12,
+          "arEnd": 13,
+          "enStart": 13,
+          "enEnd": 13,
+          "status": "checked",
+          "note": "Objection to rhetorical 'more fitting' is retained."
+        },
+        {
+          "arStart": 14,
+          "arEnd": 19,
+          "enStart": 14,
+          "enEnd": 17,
+          "status": "checked-with-note",
+          "note": "Author's irony/rhetorical purpose preserved despite source's uncertain التغيير reading."
+        },
+        {
+          "arStart": 20,
+          "arEnd": 25,
+          "enStart": 18,
+          "enEnd": 21,
+          "status": "checked-with-note",
+          "note": "Light/color analogy preserves partial perceptual report and source's difficult ophthalmic metaphor."
+        },
+        {
+          "arStart": 26,
+          "arEnd": 30,
+          "enStart": 22,
+          "enEnd": 24,
+          "status": "checked",
+          "note": "First Arabic poem and concession to standpoint-dependent manifestation retained."
+        },
+        {
+          "arStart": 31,
+          "arEnd": 33,
+          "enStart": 25,
+          "enEnd": 26,
+          "status": "unresolved-reading",
+          "note": "Closing elliptical verse has no explicit predicate; English marks [am] rather than falsely completing it."
+        }
+      ]
+    },
+    {
+      "id": "SH-027",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 8,
+          "enStart": 1,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Genuine unity and the notion of the first designation are attributed to Ibn Turka."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 15,
+          "enStart": 5,
+          "enEnd": 7,
+          "status": "checked",
+          "note": "Multiplicity belongs to levels and names, not to unrestricted identity itself."
+        },
+        {
+          "arStart": 16,
+          "arEnd": 26,
+          "enStart": 8,
+          "enEnd": 16,
+          "status": "checked",
+          "note": "No real name or definition applies in the unqualified register; the terms are explained through conceptual consideration."
+        },
+        {
+          "arStart": 27,
+          "arEnd": 38,
+          "enStart": 17,
+          "enEnd": 23,
+          "status": "checked-with-note",
+          "note": "Name arising through negation is not a real name; descriptive definition via properties is excluded."
+        },
+        {
+          "arStart": 39,
+          "arEnd": 43,
+          "enStart": 24,
+          "enEnd": 32,
+          "status": "checked",
+          "note": "The apparent self-reference reductio and response by negative/non-real determination are distinguished."
+        },
+        {
+          "arStart": 44,
+          "arEnd": 47,
+          "enStart": 33,
+          "enEnd": 41,
+          "status": "checked",
+          "note": "Difference between non-real and real name-producing considerations retained without making determinations new substances."
+        },
+        {
+          "arStart": 48,
+          "arEnd": 52,
+          "enStart": 42,
+          "enEnd": 47,
+          "status": "checked-with-note",
+          "note": "Intellect's ability to abstract its own act and the gathering-of-opposites analogy remain, with unresolved تضايق/تعانق variants."
+        }
+      ]
     }
   ],
-  "claimedManuallyComparedArabicClauses": 448,
+  "claimedManuallyComparedArabicClauses": 584,
   "issues": "Three passages corrected; one passage contains two connected technical-semantic corrections; additional textual cruxes flagged without conjectural emendation.",
   "noWitnessesCollated": true
 }
