@@ -35,14 +35,24 @@ window.FARGHANI_CRITICAL_PASS_007={
       "ar": "فذلك الإيثار يكون بالوجود أولا ، ثم بالبقاء ثانيا ، ثم بنفخ الروح والحياة ثالثا",
       "en": "That bestowal occurs first as existence, second as continuance, and third as the breathing of spirit and life.",
       "disposition": "retain",
-      "critical_note": "Three fundamental gifts precede the particular modes of spiritual, psychic and bodily sustenance.",
+      "critical_note": "Three fundamental gifts precede the particular modes of spiritual, psychic and bodily sustenance. STAGE XV: The substantive sequence after الإيثار is directly confirmed on I1876 printed p38 scan42; that PHOTO has preceding conjunction وذلك while the derivative modern text writes فذلك. Only the shared bounded sequence is an agreement; the initial particle remains an unverified difference pending actual B2007 print.",
       "source_siglum": "D-Forum-B2007-derivative",
       "source_url": "https://alshrefalm7sy.ahlamontada.com/t3203-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%B1%D8%AA%D8%A8-%D8%A7%D9%84%D8%B0%D8%A7%D8%AA-%D9%88%D8%AA%D8%B9%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%B3%D9%85%D8%A7%D8%A1-%D9%85%D9%86%D9%87%D8%A7-%D9%88%D8%A7%D9%84%D8%B5%D9%81%D8%A7%D8%AA-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
       "source_page_marker": "61",
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
-      "historical_print_verified": false,
-      "manuscript_verified": false
+      "historical_print_verified": true,
+      "manuscript_verified": false,
+      "historical_print": {
+        "printed_page": 38,
+        "scan_index": 42,
+        "status": "historic-print-agreement",
+        "reading": "الإيثار يكون بالوجود أولا ثم بالبقاء ثانيا ثم بنفخ الروح والحياة ثالثا",
+        "note": "Core enumeration corroborated. Printed connective وذلك contrasts with derivative modern فذلك, requires B2007 photograph; source remains derivative for B2007.",
+        "source_pdf": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
+        "original_image_url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000264/42/full/2200,/0/default.jpg",
+        "archived_scan_sha256": "f001ab717201e457a9a79e44909c9fb8c4fe7388c345ead125bdc05185e969fb"
+      }
     },
     {
       "id": "CR007-002",
@@ -170,14 +180,24 @@ window.FARGHANI_CRITICAL_PASS_007={
       "ar": "فلهذا أكثر ما ورد في هذا المعنى بصيغة المبالغة تعميما ، وهو ( الاسم الغفار ) وتعديدا وهو الاسم الغفور",
       "en": "Hence this meaning occurs most often in intensive forms: al-Ghaffār indicating generality and al-Ghafūr multiplicity.",
       "disposition": "revise",
-      "critical_note": "Older English 'universality of repeated covering' for al-Ghaffār risks collapsing تعميما (generality) into تعديدا (multiplicity).",
+      "critical_note": "Older English 'universality of repeated covering' for al-Ghaffār risks collapsing تعميما (generality) into تعديدا (multiplicity). STAGE XV: I1876 printed p39 scan43 independently confirms this exact substantive تعميما / تعديدا distinction; B2007 modern text here remains SECONDARY/DERIVATIVE rather than independently photographed.",
       "source_siglum": "D-Forum-B2007-derivative",
       "source_url": "https://alshrefalm7sy.ahlamontada.com/t3203-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%B1%D8%AA%D8%A8-%D8%A7%D9%84%D8%B0%D8%A7%D8%AA-%D9%88%D8%AA%D8%B9%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%B3%D9%85%D8%A7%D8%A1-%D9%85%D9%86%D9%87%D8%A7-%D9%88%D8%A7%D9%84%D8%B5%D9%81%D8%A7%D8%AA-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
       "source_page_marker": "62",
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
-      "historical_print_verified": false,
-      "manuscript_verified": false
+      "historical_print_verified": true,
+      "manuscript_verified": false,
+      "historical_print": {
+        "printed_page": 39,
+        "scan_index": 43,
+        "status": "historic-print-agreement",
+        "reading": "بصيغة المبالغة تعميما وهو الاسم الغفار وتعديدا وهو الاسم الغفور",
+        "note": "Confirms semantics of the two divine names. Comparison to derivative modern Arabic, not direct photographic B2007 or manuscript collation.",
+        "source_pdf": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
+        "original_image_url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000264/43/full/2200,/0/default.jpg",
+        "archived_scan_sha256": "c48280f62d2ea3ed36ffe307b0f05e056f2c4df36e47bf9bccb51968a2ac723e"
+      }
     },
     {
       "id": "CR007-011",
