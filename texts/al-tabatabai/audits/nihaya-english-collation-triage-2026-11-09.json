@@ -3,17 +3,17 @@
   "title": "Nihāyat al-Ḥikma — cumulative English text collation triage",
   "updated": "2026-11-09",
   "source": "nihayat-al-hikma/data/book.json",
-  "scope": "136/136 units structurally screened. 28 local Arabic–English bilingual readings in the cumulative log; four of the new reviews also checked against the revised 1428 digitally transcribed printed edition at selected pages. This is NOT independent manuscript collation, a full Arabic source critical edition, or expert certification.",
+  "scope": "All 136 working Nihāya reading units automatically screened; 68/136 complete local Arabic–English bilingual readings documented (28 prior + 40 this stage). Five selected revised 1428 AH printed-digital spot checks, not a complete independent witness collation. No external specialist certification claimed.",
   "standard": "No AI-only structural scan is a full semantic English collation or professional critical edition. Local bilingual reading is not an independent Arabic witness. Neither a flagged nor an unflagged row establishes textual accuracy.",
   "summary": {
     "units": 136,
-    "arabicCharacters": 422651,
-    "englishCharacters": 671622,
+    "arabicCharacters": 422650,
+    "englishCharacters": 671630,
     "unitsWithParagraphReflow": 111,
     "unitsWithThreeOrMoreParagraphDifference": 63,
     "unitsWithAnyHint": 70,
     "automaticallyScreened": 136,
-    "locallyReadAgainstStoredArabic": 28,
+    "locallyReadAgainstStoredArabic": 68,
     "independentlyReconciledAgainstCompleteSecondWitness": 0,
     "expertVerified": 0,
     "hintCounts": {
@@ -21,8 +21,10 @@
       "lexical-spot-check": 8
     },
     "newReviewedThisBatch": 12,
-    "secondaryPrintedDigitalSpotChecks": 4,
-    "englishCorrectionsThisBatch": 1
+    "secondaryPrintedDigitalSpotChecks": 5,
+    "englishCorrectionsThisBatch": 1,
+    "reviewedNewThirdBatch": 40,
+    "englishCorrectionsThirdBatch": 2
   },
   "rows": [
     {
@@ -182,7 +184,8 @@
       "englishToArabicCharRatio": 1.565,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed contrast between self-standing and linking existence, linking-relation regress 3→5→9, dependence on relata, and five consequences including rejection of linking nonbeing.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -274,7 +277,8 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed three modalities and stated priority of necessary/possible over impossible; English omits no proposition in the short Arabic preface.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -449,7 +453,8 @@
       "englishToArabicCharRatio": 1.648,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed two proofs of a contingent being's continuing need for its cause: quiddative equal openness and existential poverty/relational dependence, explicitly distinguished in closing.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -663,7 +668,8 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed entire stage-preface clause: ten categories are the highest genera reached by analytic resolution of quiddities; English corresponds to Arabic.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -734,7 +740,8 @@
       "englishToArabicCharRatio": 1.333,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed five substances and qualification that the traditional division is not exhaustive by pure negation; Ṣadrā's revised division and caveat about natural versus corporeal form preserved.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1022,7 +1029,8 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed active versus passive ‘capacities’ among dispositional qualities, two species of receptivity/resistance, alternative third and lengthy Ṣadrā quotation; external Asfār source not yet checked.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1119,7 +1127,8 @@
       "englishToArabicCharRatio": 1.461,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed temporal category ‘when’: particular and general times, instantaneous versus gradual events, intrinsic/incidental readings, and qualification of last distinction by substantial motion.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1132,15 +1141,22 @@
       "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=172&type=c_fbook",
       "sourcePages": "172–173",
       "arabicChars": 1342,
-      "englishChars": 2264,
+      "englishChars": 2256,
       "arabicParagraphs": 12,
       "englishParagraphs": 11,
-      "englishToArabicCharRatio": 1.687,
+      "englishToArabicCharRatio": 1.681,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed category of position and alternative meanings of sensible indication. Corrected erroneous ‘imaginal form of quantity’ to ‘imaginal form divested of quantity’ for «المجرّدة من الكمّ». Specific revised 1428 vol.1 printed p.228 digital witness clause checked; not manuscript collated.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
+      },
+      "secondaryPrintedTranscription": {
+        "type": "corrected-digital-printed-edition-single-clause",
+        "edition": "Zāriʿī 1428 AH vol. 1 printed p. 228",
+        "url": "https://lib.rafed.net/view.php?b_id=3108&page=237&type=c_fbook",
+        "status": "Specific Arabic phrase checked; not exhaustive chapter or manuscript collation"
       }
     },
     {
@@ -1157,7 +1173,8 @@
       "englishToArabicCharRatio": 1.799,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed ‘having’ category as enclosing configuration versus ontological possession; preserves the quote from Asfār and authorial disagreement distinguishing real/extrinsically instituted ownership.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1176,7 +1193,8 @@
       "englishToArabicCharRatio": 1.686,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed acting/being-acted-upon as transient categorical configurations versus gradual movement itself, long Asfār quotation, and potential infinite-regress challenge/reply.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1195,7 +1213,8 @@
       "englishToArabicCharRatio": 1.546,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed self-evidence of one/many, circularity of verbal definitions, compatibility of unity coextensive with being and analogical division, and unity avoiding regress of own unity.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1404,7 +1423,8 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed cause/effect as link between real existences, not quiddities or a separate becoming; three alternatives exhausted, four inferences including effect as need itself.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1430,7 +1450,8 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed definitions and consequences of complete/incomplete causes, one/many and simple/composite, internal matter/form and external efficient/final, and preparatory causes.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1520,7 +1541,8 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed action/reception analogy, mutually exclusive possession versus lack, efficient versus material causes, and extension of efficient causality to immaterial contingent beings.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1565,7 +1587,8 @@
       "englishToArabicCharRatio": 1.692,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed first-principle argument: universal dependence, God as alone absolutely self-subsisting efficient and complete cause, and qualified efficacy of proximate agents under different considerations.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1584,7 +1607,8 @@
       "englishToArabicCharRatio": 1.644,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed causal preeminence of fully active agent, prior-to-act argument, and composite matter/form objection with the distinction between parts severally and totality as whole.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1596,14 +1620,15 @@
       "title": "A simple thing cannot be both agent and recipient",
       "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=228&type=c_fbook",
       "sourcePages": "228–230",
-      "arabicChars": 2597,
+      "arabicChars": 2596,
       "englishChars": 4256,
       "arabicParagraphs": 15,
       "englishParagraphs": 13,
       "englishToArabicCharRatio": 1.639,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed receipt/action distinction, opposing absence and possession, criticisms of two blanket impossibility arguments, and necessary concomitant example. Fixed doubled alif in source opening «االمشهور» to «المشهور».",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1725,7 +1750,8 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed material-cause chapter: bounded effects in number, duration and strength, material change, and quoted need for spatial disposition in action; distinction between author and quoted argument retained.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1750,7 +1776,8 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed technical origin of quwwa as strenuous efficacy, progressive extensions to receptivity, formal distinction of potency and act, and the traditional embryological illustration and chapter count.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1769,7 +1796,8 @@
       "englishToArabicCharRatio": 1.593,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed prior external potentiality, its intensity and location in matter, replacement of substantial form, one common matter and infinite-regress objection, plus three final deductions.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1841,7 +1869,8 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed gradual and instantaneous change, intermediate (tawassuṭī) versus traversing (qaṭʿī) motion, and distinction between external movement and imaginatively assembled continuous image.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1860,7 +1889,8 @@
       "englishToArabicCharRatio": 1.512,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed potential—not actual—divisibility of flowing motion; denies intrinsic instantaneous starting/end parts and instead identifies extrinsic endpoints of substantial and accidental motions.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1879,7 +1909,8 @@
       "englishToArabicCharRatio": 1.495,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed the category-as-course account: quiddity is not what moves, change belongs to qualifying existence, and intermediate instant-by-instant different species is defended without changing essential category.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1905,7 +1936,8 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed four traditionally accepted categories of movement, objections to growth and the other six categories, and author's objections including substantial motion and motion-within-motion.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2041,7 +2073,8 @@
       "englishToArabicCharRatio": 1.504,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed rest as privation of motion in motion-capable beings, rejection of simple contradictory opposition, no absolute substantial rest given substantial motion, possibility of relative categorical rest.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2171,7 +2204,8 @@
       "englishToArabicCharRatio": 1.454,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed temporal origination and beginninglessness, why time itself lacks a second time, qualified origination of segments of time, Aristotle quotation and distinction between universal and particular times.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2190,7 +2224,8 @@
       "englishToArabicCharRatio": 1.653,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed intrinsic origination argument with necessary nonexistence objection, reply distinguishing simple denial from negative predicate, and second proof via existence/quiddity distinction.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2209,7 +2244,8 @@
       "englishToArabicCharRatio": 1.724,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed existential origination-by-reality: precedence of cause’s existence over effect's existence rather than quiddity, strict dependency as relational existence, not a temporal-before claim.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2228,7 +2264,8 @@
       "englishToArabicCharRatio": 1.679,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed dahr-origination as a delimited effect's absence in the degree of its cause, while causal existence contains the perfection of effect; reservation concerning non-coexistent priority faithfully retained.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2241,10 +2278,10 @@
       "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=291&type=c_fbook",
       "sourcePages": "291–291",
       "arabicChars": 109,
-      "englishChars": 178,
+      "englishChars": 161,
       "arabicParagraphs": 1,
       "englishParagraphs": 1,
-      "englishToArabicCharRatio": 1.633,
+      "englishToArabicCharRatio": 1.477,
       "hints": [
         {
           "type": "lexical-spot-check",
@@ -2253,7 +2290,8 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed whole introductory restriction: title names ʿaql (intellect), conventionally universal apprehension, but the discussion includes particular cognition. Corrected English noun from ‘intellection’ to ‘intellect’ and annotated.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2336,7 +2374,8 @@
       "englishToArabicCharRatio": 1.68,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed universal knowledge before multiplicity and particular knowledge after multiplicity, astronomer/eclipses illustration, rebuttal distinguishing change-known from change-in-knowledge, and presential extension.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2355,7 +2394,8 @@
       "englishToArabicCharRatio": 1.494,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed three senses of intellection: potential, differentiated actual, and simple comprehensive actual intellect. The illustration of multiple answers and required extension to knowledge-by-presence are both translated.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2374,7 +2414,8 @@
       "englishToArabicCharRatio": 1.507,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed four grades of intellect: material, habitual possession of first principles, actual deduction, and acquired intellect as all intellectual contents present without material distraction.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2476,7 +2517,8 @@
       "englishToArabicCharRatio": 1.752,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed immaterial self-presence, dispute over whether presentational knowledge extends to cause/effect, relational dependence argument, and final common-cause case; translator does not collapse causal knowledge into representation.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2535,7 +2577,8 @@
       "englishToArabicCharRatio": 1.703,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed objection to soul's innate actually present knowledge, the problem of bodily governance as soul's own defining activity, Plato ascription, and rejoinder using soul's origination; Plato attribution still needs source check.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2585,7 +2628,8 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed stage heading and rationale: necessary-existent inquiries belong to necessity/possibility but are separated by importance and subject's nobility; English retains both motivations.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2649,7 +2693,8 @@
       "englishToArabicCharRatio": 1.583,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed two arguments that Necessary Existent has no quiddity, self-causation rebuttal against receptivity example, and category/substance/differentia argument.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2694,7 +2739,8 @@
       "englishToArabicCharRatio": 1.712,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed four arguments for divine oneness and the Ibn Kammūna objection with attribution to Suhrawardī; primary historical ascriptions and quoted sources remain unverified.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2739,7 +2785,8 @@
       "englishToArabicCharRatio": 1.612,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed no real shared individuating nature with pure necessary existence, categorical and existential differentiations, reductive distinction of relational attributes, and final allowance of one shared conceptual meaning.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -3026,7 +3073,8 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Reviewed three levels of ontological reality, imagery ordering versus actual motion, four conclusions about existential priority, causal hierarchy, correspondence, and signs.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
