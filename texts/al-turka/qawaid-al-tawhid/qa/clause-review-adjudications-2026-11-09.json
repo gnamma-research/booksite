@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-human-clause-review-v1",
   "date": "2026-11-09",
-  "reviewScope": "Manual comparison of 584 Arabic punctuation clauses in 19 source units; unresolved readings and all remaining unreviewed clauses remain explicitly identified.",
+  "reviewScope": "Manual comparison of 702 punctuation-delimited Arabic candidates in 21 selected commentary sections (not a complete certification); remaining passages are only inventoried.",
   "sourceBasis": "Current repository JS matn/commentary modules, retained edition N introduction and edition A main/conclusion",
   "method": "Source clause numbers are computed from Arabic punctuation. English ranges are manually matched, not proportional autoalignment. All segments in these eleven sections must be covered exactly once; unresolved readings remain explicit.",
   "units": [
@@ -891,9 +891,155 @@
           "note": "Intellect's ability to abstract its own act and the gathering-of-opposites analogy remain, with unresolved تضايق/تعانق variants."
         }
       ]
+    },
+    {
+      "id": "SH-029",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 5,
+          "enStart": 1,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "First tajallī is construed as a relation of knowledge; attributes are identical with essence under one determination yet accompanying under another. The English preserves this relativity rather than asserting an unqualified identity."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 9,
+          "enStart": 4,
+          "enEnd": 8,
+          "status": "checked-with-note",
+          "note": "Arabic poetic quotation أنا أنت / أنت نحن / نحن هو and the encompassing presence are retained; original punctuation creates several short verse fragments."
+        },
+        {
+          "arStart": 10,
+          "arEnd": 13,
+          "enStart": 9,
+          "enEnd": 12,
+          "status": "checked",
+          "note": "Distinguishes essential from nominal perfection, most holy effusion and istijlāʾ; the fourfold division is an explicit exhaustive claim."
+        },
+        {
+          "arStart": 14,
+          "arEnd": 24,
+          "enStart": 13,
+          "enEnd": 17,
+          "status": "checked",
+          "note": "The first main division is according to the manifest (ẓāhir), requiring a wholly comprehensive Perfect Human locus, not an abstract genus."
+        },
+        {
+          "arStart": 25,
+          "arEnd": 30,
+          "enStart": 18,
+          "enEnd": 18,
+          "status": "checked",
+          "note": "Two subcases of manifestation from the manifest side: universality and particulars; Qurʾān 8:17 and Moses's speaking tree are retained as scriptural examples."
+        },
+        {
+          "arStart": 31,
+          "arEnd": 38,
+          "enStart": 18,
+          "enEnd": 21,
+          "status": "checked",
+          "note": "The second division is according to manifestation loci and subdivides self-manifestation of each individual and relational manifestation to another."
+        },
+        {
+          "arStart": 39,
+          "arEnd": 42,
+          "enStart": 22,
+          "enEnd": 22,
+          "status": "checked-with-note",
+          "note": "The final 'collectively and individually' excerpt is preserved; punctuation-splitting treats its printed ellipsis as four candidates, not four actual grammatical propositions."
+        }
+      ]
+    },
+    {
+      "id": "SH-031",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 9,
+          "enStart": 1,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "The objection hinges on intellect/known as correlative opposites and alleges two existentially separate subjects; it is not Ibn Turka's endorsed conclusion."
+        },
+        {
+          "arStart": 10,
+          "arEnd": 14,
+          "enStart": 5,
+          "enEnd": 8,
+          "status": "checked",
+          "note": "The first reply is expressly dialectical, reducing the rival premise by appeal to self-knowledge of the Necessary and immaterial angels."
+        },
+        {
+          "arStart": 15,
+          "arEnd": 23,
+          "enStart": 9,
+          "enEnd": 14,
+          "status": "checked",
+          "note": "The dialectical reply is judged insufficient; the second answer distinguishes notional opposition from real existential distinction and uses iʿtibār as determining consideration."
+        },
+        {
+          "arStart": 24,
+          "arEnd": 29,
+          "enStart": 15,
+          "enEnd": 17,
+          "status": "checked-with-note",
+          "note": "Quiddities qua distinct are determining relations, in a register where no other exists outside absolute being. Labīd's quoted hemistich is distinguished from an independent prophetic utterance."
+        },
+        {
+          "arStart": 30,
+          "arEnd": 40,
+          "enStart": 17,
+          "enEnd": 23,
+          "status": "checked",
+          "note": "Degrees of appearance differ in clarity relative to our cognitive faculties, explicitly not as differences intrinsic to the undetermined reality."
+        },
+        {
+          "arStart": 41,
+          "arEnd": 51,
+          "enStart": 24,
+          "enEnd": 27,
+          "status": "checked",
+          "note": "Light and colored-glass analogy: colors belong to the mediating glass, not to light intrinsically. This is the commentator's analogy rather than an optical experiment."
+        },
+        {
+          "arStart": 52,
+          "arEnd": 54,
+          "enStart": 28,
+          "enEnd": 28,
+          "status": "unresolved-reading",
+          "note": "The electronic Arabic للزجاج بدا شعاعة is syntactically disturbed; English 'radiance appears through the glass' is contextual, not a manuscript-established emendation."
+        },
+        {
+          "arStart": 55,
+          "arEnd": 66,
+          "enStart": 29,
+          "enEnd": 32,
+          "status": "checked",
+          "note": "No extramental distinction is asserted specifically 'at this level' for the quiddities insofar as distinct, not a categorical denial of worldly differences."
+        },
+        {
+          "arStart": 67,
+          "arEnd": 73,
+          "enStart": 33,
+          "enEnd": 35,
+          "status": "checked",
+          "note": "Identity in external being under a specified respect is distinguished from relative considered existence; the closing relation is not converted into an independent substance."
+        },
+        {
+          "arStart": 74,
+          "arEnd": 76,
+          "enStart": 36,
+          "enEnd": 37,
+          "status": "checked",
+          "note": "Closing injunction to reflect and prayer correctly attributed to the author."
+        }
+      ]
     }
   ],
-  "claimedManuallyComparedArabicClauses": 584,
+  "claimedManuallyComparedArabicClauses": 702,
   "issues": "Three passages corrected; one passage contains two connected technical-semantic corrections; additional textual cruxes flagged without conjectural emendation.",
   "noWitnessesCollated": true
 }
