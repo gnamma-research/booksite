@@ -66,6 +66,7 @@ function canonical(D) {
 function bibliographic(payload) {
  if(model.catalogueBuilt || !payload?.ready)return;
  const records=payload.records||[], reader=payload.reader||{books:[],relationships:[]};
+ model.sourceLicense={registry_license:reader.license||"Unspecified",registry_license_url:reader.license_url||"",registry_commit:reader.source_commit||""};
  const mapped=records.map(w=>({
   id:"b:"+w.id,originId:w.id,layer:"bibliographic",title:w.roman||w.title,arabic:/[\u0600-\u06ff]/.test(w.title)?w.title:"",
   author:w.author||"",authorDates:w.death?"d. "+w.death+" AH":"",dateLabel:w.death?"Author d. "+w.death+" AH; c. "+years(w.death)+" CE":"Undated bibliography",
@@ -408,6 +409,7 @@ function exportJSON(){
  const net=selectNetwork();
  const data={schema:"gnamma.work-network/1",created:new Date().toISOString(),scope:"Selected-work subgraph, not entire historical corpus",
   disclaimer:"Recorded bibliographical relations only. Catalogue matches are not reconciled work identities.",
+  pinned_registry_metadata:model.sourceLicense||{},
   focus:state.work,nodes:[...net.allIds].map(id=>{const v=model.nodes.get(id);return {id:v.id,title:v.title,arabic:v.arabic,author:v.author,dateLabel:v.dateLabel,dateStatus:v.dateStatus,provenance:v.provenance,originId:v.originId,sourceUrl:v.sourceUrl}}),
   edges:net.edges.map(e=>({id:e.id,from:e.from,to:e.to,type:e.type,label:e.label,confidence:e.confidence,evidence:e.evidence,sources:sourcesFor(e)})),
   inputRevisions:{auditedDataset:"embedded current GNAMMA historical data",bibliography:"Source registers as published on this site"}};
@@ -427,8 +429,8 @@ function updateControl(t){
  else if(k==="search")state.search=t.value.slice(0,140);
  else if(k==="kind")state.kind=t.value;
  else if(k==="scope"){state.scope=t.value;state.school="all";state.family="";}
- else if(k==="provenance")state.provenance=t.value;
- else if(k==="family"){state.family=t.value;state.scope=t.value?"audited":state.scope;
+ else if(k==="provenance"){state.provenance=t.value;if(t.value!=="audited")state.family="";if(state.scope==="audited"&&t.value!=="audited")state.scope="all";}
+ else if(k==="family"){state.family=t.value;state.scope=t.value?"audited":state.scope;state.school="all";state.place="";if(t.value)state.provenance="audited";
    const f=model.families.find(f=>f.id===t.value);if(f)state.work="c:"+f.root;}
  else if(k==="school")state.school=t.value;
  else if(k==="direction")state.direction=t.value;
@@ -463,7 +465,13 @@ host.addEventListener("click",e=>{
  else if(t.hasAttribute("data-gnx-export")){exportJSON();return;}
  else if(t.hasAttribute("data-gnx-close-edge")){state.edge="";writeHash();}
  else if(t.hasAttribute("data-gnx-clear")){state.scope="all";state.school="all";state.provenance="all";state.family="";state.search="";state.kind="all";state.direction="both";state.quality="all";state.hops=1;state.page=1;state.place="";state.edge="";state.mode="network";writeHash();}
- else if(t.hasAttribute("data-gnx-retry")){model.error="";ensureCatalogue();return;}
+ else if(t.hasAttribute("data-gnx-retry")){
+  model.error="";model.loading=true;
+  Promise.resolve(window.GNAtlasBibliography?.ensureLoad(true))
+   .catch(err=>model.error=String(err?.message||err))
+   .finally(()=>{model.loading=false;ensureCatalogue();if(lastArgs?.isActive())render(lastArgs)});
+  return;
+ }
  render(lastArgs);
 });
 host.addEventListener("keydown",e=>{
