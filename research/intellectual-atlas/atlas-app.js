@@ -627,6 +627,7 @@
     function runAction(action){
       if(action==='open-explore'){openExplore();return}
       if(action==='explore-selected'&&state.selected){state.view='explorer';window.GNWorkExplorer?.focus(state.selected);render();setHash();return}
+      if(action==='explore-source-selected'){const id=window.GNDisciplineAtlas?.debug()?.selected;if(id&&!id.startsWith('jurist:')){state.view='explorer';window.GNWorkExplorer?.focus('b:'+id);render();setHash()}return}
       if(action==='canonical-summary'){window.GNCanonicalSynopsis?.toggle(true);render();setHash();return}
       if(action==='canonical-timeline'){window.GNCanonicalSynopsis?.toggle(false);render();setHash();return}
       if(action==='retry-source-map'){sourceLoadError='';sourceRequest=null;drawSourceMap();return}
