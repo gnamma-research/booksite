@@ -3000,32 +3000,32 @@
   "pdfAudit": [
     {
       "filename": "qawaid-bilingual-reading.pdf",
-      "bytes": 919698,
-      "sha256": "4310d17c2fa16a166ae9d0bf32f403165c60a13eb09cf7a95ab798cc68eec0c3",
+      "bytes": 919723,
+      "sha256": "698be8a2d1bfa0d03bc05c014bd9697f8d619625df6722f4951a8d91b3914235",
       "hasPdfHeader": true
     },
     {
       "filename": "qawaid-english-reading.pdf",
-      "bytes": 432726,
-      "sha256": "651d7cc64eda18f5f573b19c62c12b5b7b6130ff2fe7686488c19d232b6919e3",
+      "bytes": 432752,
+      "sha256": "b5a919242a54a2d436f36ada2b68eb813f46c778e35c2928f28c9a6a7f71459d",
       "hasPdfHeader": true
     },
     {
       "filename": "qawaid-arabic-reading.pdf",
-      "bytes": 521663,
-      "sha256": "8b7313c15497da02d820cc51838abb396678d8b566e3bbdd0ef0ca0da5bf40ba",
+      "bytes": 521661,
+      "sha256": "f4c25d8fb84bc17ec949ffb9b08068851eeecc56d944f0cab08c1db22808e9fa",
       "hasPdfHeader": true
     },
     {
       "filename": "qawaid-bilingual-study.pdf",
-      "bytes": 1019570,
-      "sha256": "571c9b82750d7283db839e76cef74f2bf94befa5d421669242e5e6ddecbf7c99",
+      "bytes": 1019599,
+      "sha256": "ea2d52fc622f2d6a077516872a7700fddf53068dd1ed1a72ebf396405e95db36",
       "hasPdfHeader": true
     },
     {
       "filename": "qawaid-bilingual-reference.pdf",
-      "bytes": 1174040,
-      "sha256": "06e1faeadda6bce4085d9a3e5b7bdccbc6d07a37e98cb04bfcb43bce3f32349f",
+      "bytes": 1174196,
+      "sha256": "8837f1a771df95b9eec1058663316f357085510fcfcb9f0dac3c1212a9793b34",
       "hasPdfHeader": true
     }
   ]
