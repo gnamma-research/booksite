@@ -177,7 +177,7 @@ if(nText&&nTriage){
       'Cumulative review register not linked to triage '+r.id);
   }
   check(nTriage.summary?.automaticallyScreened===136,'Incomplete Nihāya full-corpus screening');
-  check(nTriage.summary?.locallyReadAgainstStoredArabic===6,'Nihāya local checked sample changed unexpectedly');
+  check(nTriage.summary?.locallyReadAgainstStoredArabic===16,'Nihāya local checked sample changed unexpectedly');
   check(nTriage.summary?.independentlyReconciledAgainstCompleteSecondWitness===0,
     'Nihāya screen incorrectly described as independent witness collation');
 }
