@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stage VIII exact cumulative build: preserve existing canonical corpus, append verified evidence."""
+"""Stage VII exact cumulative build: preserve existing canonical corpus, append verified evidence."""
 from __future__ import annotations
 import hashlib, json, re, datetime
 from pathlib import Path
@@ -44,17 +44,17 @@ for i,span in [(1,"18-20"),(2,"21-23"),(3,"24-29"),(4,"30-36")]:
     all_records.extend(obj["records"])
 if len(all_records)!=198 or len({r["id"] for r in all_records})!=198:
     raise SystemExit("Clause record integrity failed: "+str(len(all_records)))
-# Stage VII is append-only: original large V content begins at a stable boundary.
-preamble=("# Farghānī · Complete cumulative Arabic–English working and source-critical archive VI\n\n"
-"**9 November 2026.** Complete inherited Stage V corpus preserved verbatim below. "
+# Stage VII is append-only: original large VI content begins at a stable boundary.
+preamble=("# Farghānī · Complete cumulative Arabic–English working and source-critical archive VII\n\n"
+"**9 November 2026.** Complete inherited Stage VI corpus preserved verbatim below. "
 "This new stage adds ten visually compared *printed* source loci in all, five differences and five agreements, "
 "with no medieval manuscript variants verified. Current quality is **working evidence-corrected**, NOT definitive.\n\n"
 "**Do not read inherited older stage statuses as current; the latest report and register are appended at the end.**\n\n"
-"## Part A · Entire preserved prior full cumulative archive V\n\n")
+"## Part A · Entire preserved prior full cumulative archive VI\n\n")
 chunks=[preamble,base_text]
 for f in review_files:
     src=f.read_text(encoding="utf-8")
-    label=f"\n\n---\n\n## Stage VIII addendum · {f.name}\n\n"
+    label=f"\n\n---\n\n## Stage VII addendum · {f.name}\n\n"
     if f.suffix.lower()==".json":
         src="\x60\x60\x60json\n"+src+"\n\x60\x60\x60"
     elif f.suffix.lower()==".csv":
