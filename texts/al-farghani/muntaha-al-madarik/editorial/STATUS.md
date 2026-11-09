@@ -1,5 +1,17 @@
 # Muntahā al-madārik · Editorial and translation register
 
+## New source-critical milestone — first directly photographed I1876 collation (9 November 2026)
+
+**The physical scan was recovered, not merely catalogued.** Princeton/NYU original I1876 printing, vol.I, PDF scans 9–11 = printed pp5–7, read directly on four bounded loci corresponding to Beirut B2007 pp18,19,21. The [evidence register](I1876_COLLATION_001.json) preserves original PDF source hash, scan numbers, historical printed page numbers, diplomatic readings, adoption grounds, and the explicit distinction between print and manuscript.
+
+**Two real historical PRINT differences:** I1876 p6 `المطلب الغائي` against B2007 p19 `المطلب الغائبّ`; I1876 p6 `علميا ووجوديا` against B2007 p19 `عمليا ووجوديا`. Adopt the historically attested readings provisionally in the corrected Arabic reading text and in the English. **Two agreements:** `بطون المشتمل` remains in I1876 p5 and B2007 p18 (awkwardness unresolved); `من حيث واحديتها` in I1876 p7 and B2007 p21 confirms correction of the older GNAMMA excerpt. This is **4 selected print checks across 3 printed pages**, not full-page inspection and not any manuscript variant.
+
+**Earlier complete 128-page English introduction preserved and corrected at p19.** Existing **198 unique selected modern digital-source clauses** across B2007 pp18–36 remain, with two formerly unresolved p19 cruxes now print-corrected. No early manuscript folio has yet been photographed for the edition; **0 independently verified manuscript variants**. Consequently label the text **critically corrected working edition**, not “definitive”.
+
+New [historical-print collation report](I1876_COLLATION_001.md), [machine-readable print differences](I1876_COLLATION_001.json), [updated 198-clause critical reader](../critical-edition.html), and [latest cumulative archive](FULL_CUMULATIVE_CRITICAL_005.md).
+
+
+
 ## Current milestone — Critical Pass IV, witness census and collational controls (9 November 2026)
 
 **Definitive-edition scope:** the full introductory four foundations and concluding preface, B2007 printed pp18–145 (128 page-labelled English working draft). The verse-by-verse commentary is a separate phase. The existing translation is preserved, not restarted.
