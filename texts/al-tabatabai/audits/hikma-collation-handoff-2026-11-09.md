@@ -8,7 +8,7 @@ There are **three** different states, not one conflated "translated" state:
 
 1. **Local original Arabic imported and paired with working English.** Nihāya 136/136 units; Bidāya 111/111; Muẓaffar **36** local selections out of a six-book Arabic work, not a complete imported text.
 2. **Automatic source-to-translation structural triage.** Nihāya 136/136 mechanically screened; 111 Arabic/English paragraph counts differ (not evidence of omission), 63 by three or more, and eight lexical-spot-check signals; see `nihaya-english-collation-triage-2026-11-09.json`.
-3. **Independent, checked, defensible critical bilingual edition.** NOT COMPLETE. Six selected Nihāya passages were read directly against the local Arabic (N-I-01, N-II-02, N-VII-02, N-IX-12, N-XI-12, N-XII-15) without an independent line-by-line printed-witness collation or external expert certification; the remainder have not yet undergone an equivalent local reading in this stage. Do not call the 136-screen "full English collation".
+3. **Independent, checked, defensible critical bilingual edition.** NOT COMPLETE. Sixteen selected Nihāya passages were read directly against the local Arabic (N-I-01, N-II-02, N-II-03, N-VII-02, N-VIII-04, N-IX-03, N-IX-12, N-XI-12, N-XI-13, N-XII-08, N-XII-10, N-XII-15, N-XII-16, N-XII-21, N-XII-22, N-XII-24) without an independent line-by-line printed-witness collation or external expert certification; the remainder have not yet undergone an equivalent local reading in this stage. Do not call the 136-screen "full English collation".
 
 ## Added Muẓaffar authorial Book II reading passages (the whole original book remains incomplete)
 
@@ -42,12 +42,12 @@ Book II has further chapters on complementary relations, five predicables, speci
 - Data integrity: `node texts/al-tabatabai/tools/audit-hikma.mjs`
 - Browser: `node texts/al-tabatabai/tools/qa-browser.cjs` with Playwright and local HTTP server.
 - PDFs (all nine): `node texts/al-tabatabai/tools/build-pdfs.cjs` with Playwright Chromium; publishing workflow is `.github/workflows/hikma-a4-pdf-release.yml`.
-- No manuscript-expert certification or completion claims should appear on the public reader. The intended next step is real collation, not manufacturing "verified" statuses by algorithm.
+- Nihāya XII.21: in the first English sentence, restored the explicit technical term *barzakh* alongside 'intermediate realm'; see its authorial text and new translator note. No manuscript-expert certification or completion claims should appear on the public reader. The intended next step is real collation, not manufacturing "verified" statuses by algorithm.
 
 ### Progress (this branch)
 - Muẓaffar bilingual source entries: **36**; seven additions in Book II.
 - Nihāya 136 working English entries: **136** (unchanged).
 - Automated structural review: **136 / 136**.
-- Local bilingual rereading documented in this stage: **6 / 136**.
+- Local bilingual rereading documented in this stage: **16 / 136**.
 - Fully independent collations completed in this stage: **0 / 136**.
 - New reader PDFs: **not claimed until source-hash workflow regeneration and verification**.
