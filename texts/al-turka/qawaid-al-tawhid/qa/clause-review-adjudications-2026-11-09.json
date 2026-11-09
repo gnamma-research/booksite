@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-human-clause-review-v1",
   "date": "2026-11-09",
-  "reviewScope": "817 source-anchored Arabic punctuation-clause candidates in 23 commentary units, manually compared to the working English translation; 4,703 other candidates only inventoried and not certified.",
+  "reviewScope": "1,075 punctuation-delimited Arabic segments in 25 commentary units compared against the source-based English; 4,445 segments still not individually reviewed.",
   "sourceBasis": "Current repository JS matn/commentary modules, retained edition N introduction and edition A main/conclusion",
   "method": "Source clause numbers are computed from Arabic punctuation. English ranges are manually matched, not proportional autoalignment. All segments in these eleven sections must be covered exactly once; unresolved readings remain explicit.",
   "units": [
@@ -1191,9 +1191,147 @@
           "note": "Final author's explanatory remark and imperative to reflect are distinguished from the preceding Ibn ʿArabī verse."
         }
       ]
+    },
+    {
+      "id": "SH-028",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 5,
+          "enStart": 1,
+          "enEnd": 12,
+          "status": "corrected",
+          "note": "Opening differentiates names by proper domain and levels; tawqīfī now retained as authoritatively fixed, not a distinct act of disclosure. Technical vocabulary used as controlled correspondence with reflective investigators."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 17,
+          "enStart": 13,
+          "enEnd": 23,
+          "status": "checked-with-note",
+          "note": "One intrinsic unrestricted unity distinguished from relational numerical unity; the electronic Arabic duplicates one unit about unrestricted identity and the whole—not a different doctrinal proposition."
+        },
+        {
+          "arStart": 18,
+          "arEnd": 34,
+          "enStart": 24,
+          "enEnd": 38,
+          "status": "checked",
+          "note": "Aḥad and wāḥid distinguished as absence/affirmation of relations under considerations; numerical one illustrates naming, without a real duality in absolute essence."
+        },
+        {
+          "arStart": 35,
+          "arEnd": 55,
+          "enStart": 39,
+          "enEnd": 56,
+          "status": "checked",
+          "note": "First determination via encompassing rather than opposition, Muḥammadan Reality, four names علم/وجود/نور/شهود, and order of wordplay ẓuhūr/wijdān/iẓhār/ḥuḍūr preserved."
+        },
+        {
+          "arStart": 56,
+          "arEnd": 61,
+          "enStart": 57,
+          "enEnd": 63,
+          "status": "checked",
+          "note": "Essential perfection and perfection of the names are distinct by reference to hiddenness and manifestation, not two separate divine essences."
+        },
+        {
+          "arStart": 62,
+          "arEnd": 76,
+          "enStart": 64,
+          "enEnd": 70,
+          "status": "checked",
+          "note": "Existence and knowledge differ relationally in their objects at the manifest side, not by a separated essential subject."
+        },
+        {
+          "arStart": 77,
+          "arEnd": 95,
+          "enStart": 71,
+          "enEnd": 79,
+          "status": "checked",
+          "note": "Objection from the Peripatetic terminology of cognitive ḥuṣūl and causation retained; reply states equivalence of intended meaning after technical clarification."
+        },
+        {
+          "arStart": 96,
+          "arEnd": 115,
+          "enStart": 80,
+          "enEnd": 86,
+          "status": "checked-with-note",
+          "note": "A long distinct quotation from the ancestor's al-Ḥikma al-Rashīdiyya, with conditional alternatives about efficient influence and contact as an accident in a subject, preserved as quotation; no full independent source collation is claimed."
+        },
+        {
+          "arStart": 116,
+          "arEnd": 135,
+          "enStart": 87,
+          "enEnd": 96,
+          "status": "unresolved-reading",
+          "note": "Strength of linkage varies with efficacy/mediating instruments; final الفرضية versus العرضية variant materially changes 'suppositional' versus 'accidental' conjunction."
+        },
+        {
+          "arStart": 136,
+          "arEnd": 148,
+          "enStart": 97,
+          "enEnd": 102,
+          "status": "checked-with-note",
+          "note": "Conclusion concerns lineage of sages as Ibn Turka's historical attribution, not established genealogical history; quotations of Hermes/Idrīs and Agathodaimon/Shīth are kept as attributed claims."
+        }
+      ]
+    },
+    {
+      "id": "SH-030",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 13,
+          "enStart": 1,
+          "enEnd": 14,
+          "status": "checked-with-note",
+          "note": "Order in self-knowledge is contrasted with a Peripatetic account whose effects are understood as existentially other; the critique is attributed to Ibn Turka and not treated as exhaustive Avicennan doctrine."
+        },
+        {
+          "arStart": 14,
+          "arEnd": 44,
+          "enStart": 15,
+          "enEnd": 19,
+          "status": "checked",
+          "note": "Seeming inconsistency between knowing entities and denying their separate existence is dissolved by two different considerations—intelligibility and created/caused otherness."
+        },
+        {
+          "arStart": 45,
+          "arEnd": 76,
+          "enStart": 20,
+          "enEnd": 30,
+          "status": "checked-with-note",
+          "note": "Two kinds of mental presence, receptive impression and active knowledge, are distinguished; possible printed المعقولية / المعلولية variant remains noted without conjectural emendation."
+        },
+        {
+          "arStart": 77,
+          "arEnd": 90,
+          "enStart": 31,
+          "enEnd": 36,
+          "status": "checked",
+          "note": "Attributed experiential account distinguishes knower-known identity from relational differentiation and withholds a further necessary concomitant; quotation is not identified as definitely by a particular author."
+        },
+        {
+          "arStart": 91,
+          "arEnd": 98,
+          "enStart": 37,
+          "enEnd": 41,
+          "status": "unresolved-reading",
+          "note": "The closing argument has الفرضي / العرضي alternatives determining whether 'suppositional' or 'accidental' existence carries the dependence. English marks the base reading and variant rather than resolving it."
+        },
+        {
+          "arStart": 99,
+          "arEnd": 110,
+          "enStart": 42,
+          "enEnd": 45,
+          "status": "checked",
+          "note": "Conclusion distinguishes quiddities insofar as other—nonexistent—from quiddities without such otherness, which bear the intrinsic Necessary's real existence; the specific target of the making/causation critique is not broadened."
+        }
+      ]
     }
   ],
-  "claimedManuallyComparedArabicClauses": 817,
+  "claimedManuallyComparedArabicClauses": 1075,
   "issues": "Three passages corrected; one passage contains two connected technical-semantic corrections; additional textual cruxes flagged without conjectural emendation.",
   "noWitnessesCollated": true
 }
