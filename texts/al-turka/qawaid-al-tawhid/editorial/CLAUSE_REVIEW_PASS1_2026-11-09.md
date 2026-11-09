@@ -1,6 +1,6 @@
 # Qawāʿid / Tamhīd — clause-level comparative review, pass 1
 
-**9 November 2026.** This work inventories 5520 Arabic punctuation-clause candidates and 2853 English sentence candidates across **all 171 bilingual units**. Only **1219 Arabic clauses in 45 units** have been individually compared with their English in this pass. The remaining **4301 are not certified**.
+**9 November 2026.** This work inventories 5520 Arabic punctuation-clause candidates and 2851 English sentence candidates across **all 171 bilingual units**. Only **1427 Arabic clauses in 65 units** have been individually compared with their English in this pass. The remaining **4093 are not certified**.
 
 All clauses, offsets, corresponding English for reviewed passages, and source fingerprints are in the [complete clause ledger](../qa/clause-ledger.json). Automatic enumeration is **not** evidence of an accurate translation. The original Arabic and the reported QT-059 lacuna remain unchanged.
 
@@ -423,6 +423,162 @@ All clauses, offsets, corresponding English for reviewed passages, and source fi
 | 1–5 | 1–2 | **checked** | فلئن قيل: لو صحّ ما ذكرتموه في بيان أن الواجب لذاته لا يجوز أن يكون تلك الطبيعة الملزومة للوجود المطلق، لصحّ أن يقال: إ… — Opposing speaker applies fourfold dilemma against unrestricted existence; existential plurality of mental instances is made hypothetical. |
 | 6–11 | 3–3 | **checked** | وحينئذ كان وجوب بعضها وامتناع ما عداه بالغير لا بالذات. وإن لم تكن ذات أفراد عقلية لشيء مما ذكر من الوجوه، فإن كانت حقي… — Second horn is equivocation versus necessitation of contingent instances, not an unconditional affirmation of either. |
 | 12–14 | 4–5 | **unresolved-reading** | قلنا: إن تلك الطبيعة لا بدّ وأن يكون مغايرة للوجود العيني وملزومه، لما ذكرنا، دون الوجود الواجب لذاته القائم بنفسه المم… — Printed conclusion به عين حقيقة and ملزومه retain textual/grammatical strain; the English follows commentary as provisional rather than establishing a manuscript reading. |
+
+### QT-021 — A pp. 98
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–1 | **checked** | فلئن قيل: إن الحقيقة المطلقة لو كانت واجبة لذاتها قائمة بنفسها، لما كانت مطلقة، بل كانت مقيّدة بالوجوب الذاتي. — The objection that intrinsic necessity restricts unrestricted reality is quoted as an objection, and the reply distinguishes necessary judgments from additional external qualifications. |
+| 4–6 | 1–1 | **checked** | قلنا: إن الحقيقة المطلقة من حيث هي مطلقة، قد تكون لها أحكام ضرورية لا يخرجها عن حدّ الإطلاق، ولا يوجب تقيّدها بشيء منها… — No extramental restriction arises merely from a necessary predicate; the absolute/qualified distinction remains intact. |
+
+### QT-022 — A pp. 100–101
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–9 | 1–3 | **checked** | فلئن قيل: لو صحّ أن تكون حقيقته المطلقة من حيث هي مطلقة قائمة بنفسها بحسب الوجود في الأعيان، من غير أن تفتقر إلى اقتران… — The pedagogical objection argues that answering a refuted hypothesis wastes proof and gives adversaries unnecessary openings; both claims retained. |
+| 10–14 | 4–5 | **checked** | كما أنّا نعلم بالضرورة أن الوجود الواجب بالذات المنافي لكل واحد من الوجودات الممكنة الخاصّة من جملة أفراده. قلنا: إن ال… — The comparison between objective being and common quiddities grounds a distinction for the intuitive thinker, not simply a dismissal of opponents as unintelligent. |
+| 15–19 | 6–8 | **checked** | وحينئذ كان إبطال هذا الاحتمال بعد تسليم كون الإيراد موجّهاً، ودفع سائر الشبه المانعة لحصول اليقين والقطع العقلي في المح… — Difficulties of common imaginative assumptions and the benefit of rebutting doubts in training seekers preserved. |
+
+### QT-023 — A pp. 106
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–2 | 1–1 | **checked** | ومن الضروري أن دعوى الضرورة في محلّ النزاع غير مسموعة. على أن الوجود الخاصّ الممكن الذي ذُكر، — A controversial claim of self-evidence is rejected in the context of the dispute. |
+| 3–5 | 2–3 | **checked** | لو أريد به معروض شيء من هذه التعيّنات والصفات والأحوال من غير اعتبارها معه، فهو بالحقيقة محض الوجود الواجب بالذات. ولو … — First two alternatives: bearer with no accident versus accident without existence considered. |
+| 6–9 | 4–5 | **checked** | من غير اعتبار الوجود الموجود بالذات، فلا نسلّم أنه فرد من أفراد الوجود المطلق. ولو أريد به مجموع الأمرين، فلا نسلّم إمك… — Third alternative: aggregate of accident and subject; its supposed external impossibility is argued. |
+| 10–15 | 6–7 | **checked** | وحينئذ كان امتناع الأفراد الذهنية هاهنا في الأعيان بالذات. ولو أريد به معروض شيء من تلك العوارض من حيث هو معروضه، أي مع… — Fourth alternative: qualified bearer; the intrinsic/accidental distinction does not become a plurality of essential existents. |
+| 16–17 | 8–8 | **checked** | وأما القول بالمنافاة التي ذهب إليها، فلا طائل تحته لما سبق تقريره من قبل. — Alleged incompatibility is denied by appeal to the earlier proof. |
+
+### QT-024 — A pp. 109
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–2 | **checked** | فلئن قيل: إن الوجود الذهني الذي يمتنع أن يوجد في الأعيان فرد من أفراد الوجود المطلق الذي يكون من جملة أفراده الفرد العي… — Mental existence used in objection; reply asserts intrinsic identity of mental and external being under different considerations. |
+| 4–7 | 3–4 | **unresolved-reading** | أو بشرط اتصافه بصفات أُخر عارضة له. ولا اعتبار هاهنا بالموجودية بالفرض التي تعرض المعاني العقلية، مثل عروضها لسائر الما… — بالفرض / بالعرض would change suppositional to incidental predication, and the translation explicitly follows the displayed electronic base. |
+
+### QT-025 — A pp. 111–112
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–6 | 1–4 | **checked** | تنبيه: اعلم أن اعتقاد كون المبدأ الأول الواجب بذاته أنيّة خاصّة نوعيّة، يلزم من فرضها على ما يقولون به رفع ما يعتقدون ف… — First principle as a specific species-like entity is argued incompatible with both complete external unrelatedness and subsumption under common predicates. |
+| 7–9 | 5–6 | **checked** | مثل اندراجها تحت جميع الكلّيات والأمور العامّة وكثير من الكلّيات الباقية ممّا عداها، فهو بعيد عن الحدس المبين والعقل ال… — The admonition appeals to insight/intellect/discernment rather than asserting established manuscript history. |
+| 10–12 | 7–8 | **unresolved-reading** | على أنّا نقول: إنّا نعلم بالضرورة أنّ الكون الذي يشترك فيه الأكوان العينيّة، كون عينيّ تكون طبيعته عن تلك الأكوان في ال… — Final كون عينيّ تكون طبيعته عن تلك الأكوان is syntactically unstable; English reports a contextual unity rather than an independently attested emendation. |
+
+### QT-026 — A pp. 114
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–2 | 1–1 | **checked** | ومتى عرفت هذا فنقول: إنّ من الأولى الأوجب أن نجعل الكون الحقيقيّ العينيّ الكون المطلق الذي يحيط بسائر المتعيّنات، وأن ن… — More fitting and more necessary maintains the author's graded rhetorical assertion while distinguishing absolute objective being and considered determinations. |
+
+### QT-027 — A pp. 118
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–4 | 1–2 | **checked** | ومتى تقرّر هذا عرفت أنّ الحقّ هو الوجود المطلق الذي لا اختلاف فيه ولا تكثّر، بل هو محض الوجود بحيث لا يمازجه غيره ولا ي… — No real names/qualities are predicated of the unrestricted essence in this particular consideration. |
+| 5–8 | 3–5 | **checked** | بل لا نعت له ولا وصف؛ فإنّ الصفات والأسماء والأحكام لا تُنسب إلى الذات المطلق من غير اعتبار التعيّنات ووجوه التخصيصات، … — Negative predication as a notional determination is distinguished from adding a genuine external qualification. |
+| 9–9 | 6–6 | **checked** | فتأمّل ذلك. — Exhortation to contemplate follows the attributed argument. |
+
+### QT-028 — A pp. 121
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–1 | 1–1 | **checked** | واعلم أنّ تلك الهويّة المطلقة الواحدة بالوحدة الحقيقيّة تلزمها النسبة العلميّة أولاً بحصول نفسها في نفسها لنفسها، — First knowledge relation is self-presence of the unrestricted identity, not a representation of external objects. |
+| 2–2 | 2–2 | **checked** | وتلزمها بتوسّط هذا اللازم الواجبيّة بالذات والموجبيّة والمفيضيّة وغيرها من الصفات المترتّبة وغير المترتّبة اللازمة لذات… — Four consequences (necessity, necessitation, effusion, and other attributes) are not conflated into independent divine substances. |
+
+### QT-029 — A pp. 130–131
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–1 | **checked** | ثم إن إدراكها لذاتها يتضمّن إدراك سائر الصفات التي تلزمها، لكونها عين ذاتها، وإدراك جميع ما تستلزمه تلك الصفات جمعاً وف… — Knowing itself entails knowledge of attributes and consequences both collectively and severally; no multiple independently knowing divine essences are introduced. |
+
+### QT-030 — A pp. 133
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–2 | **checked** | ويوجبه أيضاً على النسق المنتظم في الوجود الخارجي علماً إجمالياً جمعياً لا تفصيلياً، لا لما قيل: إن العلم بالعلّة يوجب ا… — Comprehensive non-detailed order in divine knowledge retained, explicitly rejecting the Peripatetic causal argument for separately existent effects. |
+| 4–8 | 3–5 | **checked** | فإن الماهيّات والأعيان الثابتة غير مجعولة ولا معلولة بالذات، واعتبار كونها معقولة إنما هو باعتبار كونها غير مغايرة للذا… — Quiddities/known entities qua not other are intelligible; qua distinct they are not separately actual here, with both receptive and efficient forms of presence rejected in the specified context. |
+| 9–10 | 6–6 | **unresolved-reading** | أو حاصلاً للعلّة الفاعليّة الموجبة المباينة له، فلا يصحّ أن يقال إنها مفتقرة إليها بحسب أحد الوجودين غير الفرضيّين. — الوجودين غير الفرضيين is retained as non-suppositional modes with a distinct printed العرضي alternative in the commentary; no categorical emendation. |
+
+### QT-031 — A pp. 137–138
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–2 | **checked** | فإن قيل: العاقليّة يقابل المعقوليّة، فعند انتفاء المغايرة فلا عاقليّة ولا معقوليّة. قلنا: لو صحّ ما ذكرتموه مطلقاً، — Correlative knowing/known objection and self-knowledge counterexample are stated, with the first reply explicitly dialectical. |
+| 4–8 | 3–5 | **checked** | لوجب أن لا يكون الواجب لذاته ولا شيء من الملائكة المجرّدة عاقلاً لنفسه. ثم إن تلك المغايرة هاهنا إنما حصل بالاعتبار فقط… — Difference of quiddities is conceptual/relational under genuine unity, and no externally independent instance follows in this register. |
+| 9–10 | 6–6 | **checked** | فلا يصحّ أن يقال إن شيئاً منها بتلك الحيثيّة موجود بشيء من الوجودين في هذا الموضع. نعم إنها باعتبار كونها عين تلك الهوي… — Self-presence qua identical with absolute identity is distinguished from being other. |
+
+### QT-032 — A pp. 141
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–1 | **checked** | ثم إنها اقتضت الظهور والبروز من حدّ الغيب إلى حدّ الشهادة، وحصول تلك الصفات والتعيّنات متمايزة في الأعيان بالفعل، وتعقّ… — Emergence from unseen to witnessing and actuality of differentiated determinations are maintained as claims about manifestation, not as an extra self-subsisting essence. |
+
+### QT-033 — A pp. 143–144
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–4 | 1–1 | **checked-with-note** | فأوجدت عالم الأرواح، أي عالم العقول والنفوس، فإن ظهور الجود فيه أتمّ من عالم المعاني، ثم عالم المثال، — Successive worlds of spirits, imaginal and bodies correctly ordered, while first heavenly body and cosmic Throne reflect the source's own cosmology. |
+| 5–10 | 2–3 | **checked** | ثم عالم الأجسام. وفي هذا العالم تمّ ظهور الوجود، فإن ظهور التجلّي الوجودي كمل وتمّ عند إيجاد الجرم الأوّل، أعني محدِّد … — The cosmic Throne as bodily terminus and ordering of world-level ranks preserved; attribution remains medieval, not modern physics. |
+| 11–13 | 3–5 | **checked** | وتفصيل المراتب المحصورة فيها، وملخّص الحجج والبراهين في كل موضع موضع من هذه المواضع، قد أشبعنا القول فيها في كتبنا المع… — The author refers details of proofs to separate philosophical works without importing those other books' contents. |
+
+### QT-034 — A pp. 148–149
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–6 | 1–3 | **checked** | فلئن قيل: فعلى هذا لا سبيل إلى القول بالإمكان، لكون الوجود واجباً بالذات، وكون الماهيّات والنسب والإضافات من الصفات غير… — The six-part objection begins with modality/necessity and denial that quiddities and relations are made, as an opponent's claim. |
+| 7–11 | 4–7 | **checked** | بل بالإيجاب والاقتضاء، وهذا بيّن لا حاجة بنا إلى التطويل والإطناب، ولا سبيل أيضاً إلى القول بالظهور، لأنه لو أريد به ال… — Second objection attacks manifestation and any reification of either a whole or its components, including mental and external being. |
+| 12–17 | 8–10 | **checked** | فمن البيّن أن شيئاً من جزئيه لا يقبل الجعل والتأثير، لما أشير إليه من قبل؛ وهكذا الكلام في المجموع من حيث هو مجموع، فإن… — Objection further denies possible differences between world of meanings and world of witnessing. |
+| 18–23 | 11–12 | **checked** | وهذا الكلام في المجموع العقلي فلا وجه للإعادة. ولو أريد به شيء من الماهيّات أو النسب والإضافات فقد عرفت ما فيه فلا حاجة… — Objection alleges names/essences differ only relative to subjects and disallows summary/detail distinction. |
+| 24–28 | 13–15 | **checked-with-note** | فلا اختلاف في شيء منها إلا بحسب الموضوع والمحل، ولا بحسب المفهوم ولا بشيء من العوارض. وأما القول بالإجمال والتفصيل فلا … — Imaginal world is denied by the reported Peripatetic opponents, not by the author's ultimate doctrine. |
+| 29–33 | 16–18 | **checked** | وكيف لا وقد ذهب إلى نفيه جمهور المشّائين واحتجّوا على ذلك بحجج قويّة قاطعة قد أنبتوها في كتبهم. وأما القول بأن ما يكون … — Final horn rejects greater manifestation at lowest level and argues higher unchanging levels would be more complete; the response follows in QT-035. |
+
+### QT-035 — A pp. 154
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–5 | 1–4 | **checked** | قلنا: إن موضوعات الإمكان ومتعلّقاته بالطبع هي التعيّنات، ولا نسلّم أن الماهيّات والنسب والإضافات غير قابلة للوجود، فإنه… — Reply makes determinations the subject of possibility, while allowing incidental existence to quiddities, relations and name-aspects. |
+| 6–11 | 5–9 | **checked** | ومنها ما يكون موضوعها بالطبع الوجود المطلق. نعم إنها غير موجودة بوجود يكون نفسها أو مقوّماً من مقوّماتها؛ ولو كانت الما… — Existing quiddities can be produced because their being-existent comes through conjunction with existence which is other than quiddity. |
+| 12–14 | 10–12 | **checked** | فإن من الموجودات ما يكون موجوداً بالعرض. فتأمّل ذلك. وهذه الموجوديّة من الاعتبارات العقليّة، — Being existent by accident versus self-subsisting being, and derivative conceptual existential predication, are kept distinct. |
+| 15–19 | 13–15 | **checked** | ولهذا قد تعرض الصفات السلبيّة والعوارض الذهنيّة. ومن جعل الوجود المطلق من الاعتبارات العقليّة فلعلّه لم يفرّق بينه وبين… — Conclusion warns against confusing intellectual predication of existence with the underlying reality of unrestricted existence. |
+
+### QT-036 — A pp. 160–161
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–7 | 1–4 | **checked-with-note** | وأما الطبيعة النوعيّة التي يشمل النوع العيني والعقلي، لمّا اقتضت الظهور العيني تعيّنت بالتعيّن العيني، فلزمتها الصفات ا… — The printed original repeats an assertion about less-than-complete external forms. English acknowledges the repeated statement instead of disguising it as new substantive content. |
+| 8–10 | 5–6 | **checked** | فتأمّل هذه النكتة ليظهر لك الفرق بين الصورتين، ويظهر لك الفرق بين العالمين، فإن حصول الشيء في الكون المطلق من حيث هو كو… — Higher and immediately lower manifestations are distinct; the two-world comparison is rhetorical, not independently established. |
+| 11–12 | 7–8 | **checked** | على أنّا نقول: إن تحقيق القول في هذا الموضع إنما يحتاج إلى كلام مبسوط لا يحتمله هذا المختصر، فعليك بمطالعة كتابنا المسم… — Author cites a separate al-Ḥikma al-Manīʿa for expanded argument without inserting external content. |
+
+### QT-037 — A pp. 164
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–1 | **checked** | وأما حديث الأكمليّة بحسب ظهور الوجود في المرتبة الأخيرة، فلعلّهم أرادوا بها أن ما يكون مدركاً على سبيل الإجمال، ومعقولا… — Charitable 'perhaps they meant' interpretation of greater perfection at final sensory level preserved rather than unconditional superiority. |
+| 4–7 | 2–2 | **checked** | ومخيّلاً وموهوماً ومحسوساً بالحواس الظاهرة، فإن خواصّ الوجود وآثاره فيه تكون أكثر وأكمل مما لا يدرك بجميع هذه الوجوه، ع… — Higher completeness as comprehensiveness of cognitive modes and activity preserved. |
+| 8–8 | 3–3 | **checked** | فتأمّل ذلك. — Concluding exhortation retained. |
+
+### QT-038 — A pp. 167
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–2 | 1–2 | **checked** | والإنسان المستكمل لا يكون كماله إلا بأن تحصل له ملكات هذه الإدراكات في مراتبها، ولا يكون الإدراك الحسّي وما يلزمه من ال… — Acquired malakāt and sensory apprehension as non-obstructive of the soul's other forms of cognition preserved. |
+| 3–5 | 3–4 | **checked-with-note** | ولا يكون الموت بالحقيقة تنقيصاً للنفس، بل تكميلاً لها، فإن النفوس الكاملة إنما يتمكّنون بعد الموت على جميع ما يتمكّنون … — Death as completion and preservation of perfected soul's capacities is the text's metaphysical assertion, not contemporary empirical evidence. |
+| 6–6 | 5–5 | **checked** | وتحقيق هذا البحث والتفصيل المعتبر فيه إنما يحتاج إلى بسط كلام لا يحتمله هذا المختصر. — Longer proof explicitly deferred by author. |
+
+### QT-039 — A pp. 172–173
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–5 | 1–1 | **checked** | وإذا عرفت هذا فنقول: إن تلك الهويّة الواحدة بالوحدة الحقيقيّة لما غلب فيها أحكام الوحدة على أحكام الكثرة، بل انمحى الكث… — From predominance of unity through dispersed multiplicity to will for a comprehensive locus is a single complex conditional movement, not three disconnected beings. |
+| 6–8 | 2–2 | **checked** | أراد أن يظهر ذاته في مظهر كامل يتضمّن سائر المظاهر النورانيّة والحقائق الظلّيّة، ويشتمل على جميع الحقائق السرّيّة والجه… — Comprehensive locus gathers luminous/shadow, hidden/open, inward/outward without equating the Real with a physical aggregate. |
+
+### QT-040 — A pp. 180
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–2 | **checked** | فانبعث انبعاثاً إراديّاً إلى المظهر الكلّي والكون الجامع الحاصر للأمر الإلهي، وهو الإنسان الكامل؛ فإنه الجامع بين مظهري… — Perfect Human as encompassing appearance of the essence and divine names, attributes and acts retained. |
+| 4–7 | 3–3 | **checked** | وبما في مظهريّته من السعة والكمال، وهو الجامع أيضاً بين الحقائق الوجوبيّة ونسب الأسماء الإلهيّة وبين الحقائق الإمكانيّة… — Necessary/possible and unity/differentiation as relationally gathered human correspondences preserved. |
+| 8–9 | 4–4 | **checked** | ليظهر فيه بحسبه، ويدرك ذاته حسبما ذكرنا من الحيثيّة الجامعة والجهة الكاملة. — The divine self-apprehension claim remains attributed to the author and grounded in the comprehensive manifestation. |
 
 ## Editorial status and next passages
 
