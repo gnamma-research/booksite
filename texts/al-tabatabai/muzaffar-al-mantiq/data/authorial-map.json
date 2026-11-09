@@ -9,7 +9,7 @@
     "institutionalScan": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000780/1",
     "institutionalScanYear": 1968
   },
-  "status": "36 bilingual original reading sections (11 intro, four Book I, seven Book II, 14 Book III); complete source has six books, most of which are not yet in this local reader.",
+  "status": "44 locally paired readings: 11 introduction, four Book I, fifteen Book II (one editorially normalized/abridged), and 14 Book III. The full six-book original remains incomplete locally.",
   "parts": [
     {
       "book": 0,
@@ -209,42 +209,69 @@
         {
           "arabic": "الكليات الخمس",
           "english": "The five predicables",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=70&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation",
+          "firstPrintedPage": 70
         },
         {
           "arabic": "النوع والجنس والفصل",
           "english": "Species, genus and differentia",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=70&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation",
+          "firstPrintedPage": 70
         },
         {
           "arabic": "الذاتي والعرضي",
           "english": "Essential and accidental predication",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=75&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation",
+          "firstPrintedPage": 75
         },
         {
           "arabic": "الخاصة والعرض العام",
           "english": "Proprium and common accident",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=76&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation",
+          "firstPrintedPage": 76
         },
         {
           "arabic": "الحمل وأنواعه",
           "english": "Predication: primary, common, direct and denominative",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=78&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation",
+          "firstPrintedPage": 78
         },
         {
           "arabic": "الكلي المنطقي والطبيعي والعقلي",
           "english": "Logical, natural and intellectual universals",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=84&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation",
+          "firstPrintedPage": 84
+        },
+        {
+          "arabic": "النسب بين نقيضي الكليين",
+          "english": "Relations between complements of universals; source proof flagged",
+          "firstPrintedPage": 65,
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=65&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation"
+        },
+        {
+          "arabic": "تقسيمات النوع والجنس والفصل",
+          "english": "Relative species and proximate/remote genus and differentia",
+          "firstPrintedPage": 73,
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=73&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation"
+        },
+        {
+          "arabic": "تنبيهات وتوضيحات؛ الصنف",
+          "english": "Cross-cutting predicates and subclass",
+          "firstPrintedPage": 77,
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=77&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation"
         }
       ],
-      "availableUnits": 7,
-      "note": "Seven bilingual reading passages cover the introductory sections of Book II (pp. 56–65): universals and particulars; actual and hypothetical instances; relative particular; univocal and graded universals; concept and instance; predication; and the four extensional relations. Further Book II topics and exercises remain untranslated.",
+      "availableUnits": 15,
+      "note": "Fifteen bilingual readings from printed pp. 56–86 introduce universals, predication, complements, predicables, logical hierarchy and three modes of universality. One passage (M-K-14) contains an explicitly labeled normalized explanatory transcription and is not a diplomatic authorial text. The final Book II sections, examples, exercises and printed-edition verification are not yet complete.",
       "url": "https://lib.rafed.net/m/?b_id=1604&page=57&type=c_fbook"
     },
     {
@@ -526,12 +553,12 @@
   "summary": {
     "totalAuthorialBooks": 6,
     "sourcePagesCoveredByRegister": 455,
-    "localTranslatedUnits": 36,
+    "localTranslatedUnits": 44,
     "localIntroUnits": 11,
     "localBook3Units": 14,
     "otherAuthorialBooksLocallyTranslated": 1,
     "localBook1Units": 4,
-    "localBook2Units": 7
+    "localBook2Units": 15
   },
-  "accuracy": "Authorial book-opening page locators and the first three Book II headings (pp. 57–59) checked in the searchable source. Other internal printed page locators are not claimed unless explicitly checked; 1968 NYU public-domain scan remains an independent pagination/typographic witness to inspect."
+  "accuracy": "Book II passage locators p. 56–86 come from Rafed searchable Arabic. The proof at p. 67 contains a source inconsistency also seen in another digital witness; the 1968 ACO scanned print has not been independently collated. Headings not verified to a printed page retain their generic source links."
 }
