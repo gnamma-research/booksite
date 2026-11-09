@@ -195,7 +195,7 @@ if(nText&&nTriage){
   check(unitXI?.english.includes('“intellect” (al-ʿaql)')&&!unitXI?.english.includes('term “intellection”'),
     'Nihāya XI stage heading reverted to imprecise English');
   const unitVI19=nText.units.find(u=>u.id==='N-VI-19');
-  check(unitVI19?.english.includes('imaginal form divested of quantity')&&unitVI19?.arabic.includes('المجرّدة من الكم'),
+  check(unitVI19?.english.includes('imaginal form divested of quantity')&&arabicKey(unitVI19?.arabic).includes(arabicKey('المجردة من الكم')),
     'Nihāya VI.19 scope correction lost');
   check(nText.units.find(u=>u.id==='N-VIII-10')?.arabic.startsWith('المشهور'),
     'Nihāya VIII.10 double-alif transcription corruption returned');
