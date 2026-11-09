@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" data-theme="paper">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#faf8f3"><meta name="description" content="Gnamma working bilingual source reader: Qūnawī’s al-Nuṣūṣ and later commentarial witnesses.">
+<title>Al-Nuṣūṣ · Qūnawī and Commentaries · GNAMMA</title>
+<link rel="icon" href="../../../assets/gnamma-mark.svg" type="image/svg+xml"><link rel="stylesheet" href="reader.css"></head>
+<body data-lang="both" data-notes="true">
+<a class="skip" href="#passages">Skip to the text</a>
+<header class="topbar"><div class="brandline">
+<button type="button" class="icobtn" id="menu-button" aria-label="Toggle contents" aria-expanded="false">☰</button>
+<a class="brand" href="../../../"><img src="../../../assets/gnamma-mark.svg" alt="" width="27" height="27"> GNAMMA</a>
+<a class="back" href="../../">Texts</a></div>
+<div class="topname">al-Nuṣūṣ <small>Qūnawī · linked commentarial corpus</small></div>
+<div class="topactions"><button type="button" class="icobtn" id="search-button" aria-label="Search text" title="Search">⌕</button>
+<button type="button" class="icobtn" id="notes-button" aria-pressed="true" title="Toggle editorial notes">☷</button>
+<button type="button" class="icobtn" id="theme-button" aria-label="Change theme">◐</button></div></header>
+<nav class="toolbar" aria-label="Reader display">
+<div class="segments" role="group" aria-label="Language"><button data-lang-choice="ar">عربي</button><button data-lang-choice="en">EN</button><button data-lang-choice="both">Both</button></div>
+<span id="edition-status">WORKING READER · NOT A CRITICAL EDITION</span>
+<div class="toolbar-right"><button id="sources-button" aria-expanded="false" type="button">Sources</button><button id="download-button" type="button">Export</button></div>
+</nav>
+<section id="searchbox" class="searchbox" hidden><label for="search-input">Find in Arabic, English or subject tags</label><div><input id="search-input" type="search" placeholder="e.g. wujūd, mirror, absolute, برق"><button type="button" id="clear-search">Clear</button></div></section>
+<div class="frame">
+<aside class="shelf" id="shelf" aria-label="Work and text navigation"><p class="sidehead">Corpus</p><div id="worklist">Loading…</div><hr><p class="sidehead">Passages</p><nav id="toc"></nav><p class="shelf-foot"><a href="../../../texts/al-mahaimi/mashra-al-khusus/">Al-Mahāʾimī reader</a></p></aside>
+<main id="passages" tabindex="-1">
+<section class="hero"><p class="kicker">GNAMMA · SOURCE-BASED READING EDITION</p><h1 id="hero-title">Al-Nuṣūṣ</h1><p class="arabic-title" dir="rtl">النصوص في تحقيق الطور المخصوص</p><p class="deck" id="hero-detail">Original Arabic with an independently drafted English translation, grounded in identifiable witnesses.</p><div id="hero-stats" class="summaryline"></div></section>
+<details class="source-details" id="sources"><summary>Textual witnesses and editorial method</summary><p>The reading text comes from an openly accessible online Arabic transcription of Qūnawī's <i>al-Nuṣūṣ</i>; the al-Iznīqī extracts are checked against Balaban and Çalışkan's 2023 printed edition. Neither is yet a critical transcription compared against the early manuscript witnesses. No unexamined manuscript folios are represented as translated.</p><p>For Qūnawī, compare <a href="https://sufism.ir/library-files/ghonyavi/ar/alnosus-fi-tahqiqe-toorel-makhsous-gonyavi-ar.pdf" target="_blank" rel="noopener">Arabic printed edition PDF</a> and the <a href="https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Resid_490" target="_blank" rel="noopener">manuscript survey</a>. For al-Iznīqī, see the <a href="https://dergipark.org.tr/en/download/article-file/3074106" target="_blank" rel="noopener">2023 Arabic edition</a>. A <a href="https://sufism.ir/library-files/ghonyavi/ar/sharho-nosoos-azniqi-ar.pdf" target="_blank" rel="noopener">large manuscript PDF catalogued as al-Iznīqī's commentary</a> has been identified but not inspected; its attribution must be checked before publication.</p><p><a href="./editorial/SOURCE_REGISTER.md">Source and progress register</a> · <a href="./data/parallel.json">Download source-aligned JSON</a></p></details>
+<div id="filterline" class="filterline" aria-live="polite"></div><section id="entrylist" aria-live="polite"><p>Opening text…</p></section>
+<footer class="pagefoot">GNAMMA · Original translations and critical evidence. <a href="../../../docs/source-and-licenses.html">Editorial and source policy</a>.</footer>
+</main>
+<aside class="context" aria-label="Parallel commentarial navigation"><h2>Commentarial reading</h2><p>The base text is an alignment spine, not an assertion that the later commentators agree.</p><div id="context-body"></div></aside>
+</div>
+<div class="mobile-dock"><button type="button" id="dock-prev" aria-label="Previous passage">←</button><button type="button" id="dock-contents">Contents</button><button type="button" id="dock-next" aria-label="Next passage">→</button></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript><p style="padding:2rem">The dynamic parallel reader requires JavaScript. <a href="./data/parallel.json">The underlying source-aligned JSON is accessible directly.</a></p></noscript>
+<script defer src="reader.js"></script></body></html>
