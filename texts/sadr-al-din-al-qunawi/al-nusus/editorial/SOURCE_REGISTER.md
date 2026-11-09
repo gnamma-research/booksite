@@ -10,7 +10,8 @@ The counts below concern passages supplied in the working reader, not complete p
 |---|---|---:|---|---|---|
 | QUN-NU, Qūnawī, *al-Nuṣūṣ* | An accessible but **partial** online Arabic transcript, through printed p. 266; separate 155-page printed Arabic PDF inspected at relevant pages | 47 | **No**: complete opening incipits and selected later passages only | 0 folios independently collated | Working source-located page; not critical |
 | IZN-RIS, al-Iznīqī, short *Risāla* | Arabic edition by Balaban/Çalışkan (2023), pp. 831–850+ of Arabic text | 16 | **No**: sixteen bilingual records; all ten numbered rational arguments represented, with poetry and some connecting prose omitted | 0 folios collated | Working source-located page; not critical |
-| KHU-ZUB, *Zubdat al-taḥqīq* | Bibliographical source and manuscript study; one Princeton catalogue record identified | 0 | No | 0 | Registry only |
+| IZN-ZUB, *Zubdat al-taḥqīq* attributed to al-Iznīqī | Listed by Kātib Çelebi as a commentary in two parts; primary manuscript incipit/explicit not collated | 0 | No | 0 | Registry only |
+| KHU-ZUB, *Sharḥ al-Nuṣūṣ* attributed to al-Khūyī | Princeton Garrett 4037Y (144 folios, alt. catalogue title *Zubdat*); primary manuscript not yet read | 0 | No | 0 | Registry only |
 | KHU-QA, 22 questions | Ayasofya 4805 fols. 1a–13b reported in scholarly study | 0 | No | 0 | Registry only |
 | SHI-ASR, *Asrār al-surūr* | Bursa Hüseyin Çelebi 479 and Ragıp Paşa 1469 reported, no full manuscript obtained | 0 | No | 0 | Registry only |
 | MAH-MAS, al-Mahāʾimī | Separate reader is already in GNAMMA | 0 imported to this dataset | Separate project | Separate audit needed | Cross-linked only |
@@ -46,10 +47,17 @@ The counts below concern passages supplied in the working reader, not complete p
 - QUN-NU-005-A gives a source-located full translation of the passage on the unseen of divine Identity, the most comprehensive determination, and principiality under the essential relation of knowledge.
 - **Current bilingual working records: 63** (Qūnawī 47; al-Iznīqī 16). No complete medieval book has been translated and no actual manuscript leaf has yet been collated.
 
+## Attribution-critical correction: two commentaries, not one
+Kātib Çelebi, *Kashf al-ẓunūn*, under `al-Nuṣūṣ`, lists a *Zubdat al-taḥqīq wa-nuzhat al-tawfīq* by Muḥammad b. Quṭb al-Dīn al-Iznīqī and explicitly places a different commentary by Pīr Muḥammad b. Quṭb al-Dīn al-Khūyī after it. The latter opens `الحمد لله كاشف القلوب والأبصار`, and the catalogue dates its composition to Rajab–Shaʿbān 856 AH. Princeton manuscript Garrett 4037Y is catalogued under Khūyī, while listing *Zubdat al-taḥqīq* as an **alternative title**. The earlier Bardakçı manuscript study reports an al-Khūyī attribution inside another codex catalogued under al-Iznīqī. Consequently:
+- `IZN-ZUB` tracks the **al-Iznīqī commentary as a distinct bibliographical work**.
+- `KHU-ZUB` remains a stable machine ID for the **Princeton al-Khūyī manuscript**, but its display title is now `Sharḥ al-Nuṣūṣ` with the alternative-title caveat.
+- Neither source's 0-folio status is changed. Only a comparison of actual manuscript incipits, explicit endings, author names, and colophons can establish whether copies/attributions are duplicated, exchanged, or distinct.
+Sources: [Kashf al-ẓunūn listing](https://books.islam-db.com/book/كشف_الظنون_عن_اسامي_الكتب_والفنون/14067), [Princeton Garrett 4037Y](https://dpul.princeton.edu/Garrettcollections/catalog/r494vk24f), [Bardakçı (2014)](https://isamveri.org/pdfdrg/D226920/2014/2014_BARDAKCIMN.pdf).
+
 ## Primary translation priorities (not merely thematic notes)
 **1. Complete al-Iznīqī.** Finish printed 831–850+ in Arabic–English paired units: preface; introductory discussions of `ʿilm` and `maʿrifa`; all four chapters; Qurʾān and hadith citations; Persian poetry; conclusion. The existing Stage 2 English draft translated seven consecutive rational arguments on pp. 835–836 plus selected later passages, but the Arabic transcript and many paragraphs are missing. No coverage of a page is awarded merely because one sentence was read.
 **2. Establish a critical Qūnawī base.** Finish the full continuous matn, reading and translating each text; align each on *incipit* and statement-level anchors; reconcile 21/22 numbering against witnesses. Collate opening text, the mirror/lightning passage, and the long One-Wujūd text as the initial critical checkpoints.
-**3. Acquire al-Khūyī's Ayasofya 4805.** First fols. 1a–13b: 22 questions; then the commentary incipit/explicit, especially fol. 29b, 35a, 95a, 98b–106a reported in secondary study. Check Ali Emiri 980 and Princeton 4037Y in parallel.
+**3. Acquire the distinct al-Iznīqī *Zubdat*, then al-Khūyī's Ayasofya 4805.** First fols. 1a–13b: 22 questions; then the commentary incipit/explicit, especially fol. 29b, 35a, 95a, 98b–106a reported in secondary study. Check Ali Emiri 980 and Princeton 4037Y in parallel.
 **4. Acquire *Asrār al-surūr*.** Prioritise Bursa Hüseyin Çelebi 479, then Ragıp Paşa 1469. Transcribe complete folios with quotations clearly separated from commentarial analysis; compare incipits and colophons before determining author.
 **5. Import the already-running Mahāʾimī reader's validated units** without retranslating them; build the cross-work alignment table from Qūnawī incipits rather than arbitrary numbers.
 
