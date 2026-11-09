@@ -45,7 +45,7 @@ function canonical(D) {
  sourceRecords.forEach(s=>model.sources.set(s.id,s));
  const nodes=(D.nodes||[]).filter(n=>(n.node_type||"work")==="work"&&!n.not_a_work&&n.title).map(n=>({
   id:"c:"+n.id,originId:n.id,layer:"audited",title:n.title,arabic:n.title_ar||"",author:n.author||"",authorDates:n.author_dates||"",
-  dateLabel:n.date_label||"Chronology not established",dateStatus:n.date_status||"",year:Number.isFinite(+n.temporal?.anchor)?+n.temporal.anchor:null,
+  dateLabel:n.date_label||"Chronology not established",dateStatus:n.date_status||"",year:n.temporal?.anchor!=null&&Number.isFinite(+n.temporal.anchor)?+n.temporal.anchor:null,
   region:n.region||"",schools:[],genres:["audited"],provenance:"audited",sourceIds:n.sources||[],sourceUrl:"",
   description:n.note||n.summary||"",status:n.kind||"work",family:n.family||"",readerId:"",search:norm([n.id,n.title,n.title_ar,n.author,n.region,n.family].join(" "))
  }));
@@ -58,7 +58,7 @@ function canonical(D) {
  }));
  model.all.push(...nodes);model.edges.push(...edges);model.stats.canonical=nodes.length;model.stats.auditedEdges=edges.length;
  model.canonicalBuilt=true;resetIndexes();
- if(!state.work || !model.nodes.has(state.work)) {
+ if(!state.work || !model.nodes.has(state.work) && !state.work.startsWith("b:")) {
   const preferred=["c:ibnarabi_fusus","c:tusi_tajrid","c:avicenna_isharat","c:taftazani_tahdhib"];
   state.work=preferred.find(id=>model.nodes.has(id))||nodes.find(n=>n.degree>0)?.id||nodes[0]?.id||"";
  }
@@ -365,12 +365,12 @@ function controls(){
  '<label>Science<select data-gnx-scope>'+opts(FIELDS,state.scope)+'</select></label>'+
  '<label>School<select data-gnx-school>'+opts({all:"All schools",...SCHOOLS},state.school)+'</select></label>'+
  '<label>Provenance<select data-gnx-provenance>'+opts({all:"All records",audited:"Audited history",openiti:"OpenITI metadata",alreq:"Manuscript bibliography",reader:"GNAMMA pinned"},state.provenance)+'</select></label></div>'+
- '<div class="gnx-control-row">'+
+ '<details class="gnx-advanced"><summary>Refine relationships, family and traversal depth</summary><div class="gnx-control-row">'+
  '<label>Textual family<select data-gnx-family>'+opts(fam,state.family)+'</select></label>'+
  '<label>Connections<select data-gnx-kind>'+opts({all:"All verified types",commentary:"Commentary & gloss",critique:"Criticism & response",translation:"Translation & adaptation",use:"Textual use & sources",other:"Other recorded"},state.kind)+'</select></label>'+
  '<label>Direction<select data-gnx-direction>'+opts({both:"Before and after",prior:"Sources only",later:"Reception only"},state.direction)+'</select></label>'+
  '<label>Depth<select data-gnx-hops>'+opts({"1":"One step","2":"Two steps"},String(state.hops))+'</select></label>'+
- '<label>Evidence<select data-gnx-quality>'+opts({all:"Include qualified",strong:"Hide provisional links"},state.quality)+'</select></label></div>'+
+ '<label>Evidence<select data-gnx-quality>'+opts({all:"Include qualified",strong:"Hide provisional links"},state.quality)+'</select></label></div></details>'+
  '<div class="gnx-control-row gnx-quick"><button type="button" data-gnx-mode="network" aria-pressed="'+(state.mode==="network")+'">Work network</button>'+
  '<button type="button" data-gnx-mode="geography" aria-pressed="'+(state.mode==="geography")+'">Regional index</button>'+
  '<button type="button" data-gnx-mode="coverage" aria-pressed="'+(state.mode==="coverage")+'">Coverage & limits</button>'+
@@ -380,7 +380,7 @@ function render(args){
  lastArgs=args;if(!initHash){readHash();initHash=true;}
  canonical(args.data||{nodes:[],edges:[]});ensureCatalogue();
  if(!model.nodes.has(state.work)&&args.selected&&model.nodes.has("c:"+args.selected))state.work="c:"+args.selected;
- if(!model.nodes.has(state.work))state.work=model.all.find(n=>n.degree>0)?.id||model.all[0]?.id||"";
+ if(!model.nodes.has(state.work) && !(state.work.startsWith("b:")&&!model.catalogueBuilt))state.work=model.all.find(n=>n.degree>0)?.id||model.all[0]?.id||"";
  // A selected family always has a canonical root. No artificial edges to a family membership.
  const main=args.root.querySelector("[data-main]");if(!main)return;
  const list=results(),center=model.nodes.get(state.work);
@@ -422,7 +422,7 @@ function copyLink() {
  else window.prompt("Copy permanent link:",url);
 }
 function updateControl(t){
- const k=t.getAttribute("data-gnx-").slice(4);
+ const k=t.getAttributeNames().find(name=>name.startsWith("data-gnx-"))?.slice(9)||"";
  if(k==="hops")state.hops=t.value==="2"?2:1;
  else if(k==="search")state.search=t.value.slice(0,140);
  else if(k==="kind")state.kind=t.value;
@@ -473,7 +473,7 @@ host.addEventListener("keydown",e=>{
 window.addEventListener("popstate",()=>{
  if(!lastArgs?.isActive())return;readHash();render(lastArgs);
 });
-window.GNWorkExplorer={render,readHash,debug:()=>({ready:model.catalogueBuilt,loading:model.loading,error:model.error,
+window.GNWorkExplorer={render,readHash,focus:(id)=>{state.work=String(id).startsWith("c:")||String(id).startsWith("b:")?String(id):"c:"+id;state.edge="";state.mode="network";state.search="";state.scope="all";state.family="";writeHash();},debug:()=>({ready:model.catalogueBuilt,loading:model.loading,error:model.error,
   canonical:model.stats.canonical,bibliographic:model.stats.bibliographic,auditedEdges:model.stats.auditedEdges,
   sourceEdges:model.stats.sourceEdges,totalNodes:model.all.length,totalEdges:model.edges.length,selected:state.work,
   mode:state.mode,scope:state.scope,matched:lastResults,graphNodes:shownNodes.length,graphEdges:shownEdges.length})};
