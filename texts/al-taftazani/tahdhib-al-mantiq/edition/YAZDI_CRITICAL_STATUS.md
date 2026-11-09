@@ -1,4 +1,6 @@
 # Al-Yazdī’s Ḥāshiya on Tahdhīb al-Manṭiq — critical-edition register
+
+> **Stage 103 (9 November 2026):** Independent [witness-candidate census and layer-identity controls](STAGE103_WITNESS_CANDIDATES_AND_LAYER_IDENTITIES.md) now distinguish Taftāzānī's matn, al-Yazdī's principal Arabic commentary, later mixed glosses, a Persian translation, printed comparators, and unphotographed manuscript leads. No new manuscript collation is certified.
 **Version:** 2026-11-06 · **Status:** incomplete, source-transcribed working edition, not definitive
 
 ## Object of the edition
