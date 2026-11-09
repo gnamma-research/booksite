@@ -51,6 +51,18 @@ async function run(browserType){
       assert.match(await page.locator('#current-location').textContent(),/Nihāy/);
       await page.goBack();await page.locator('#passage-B-INTRO').waitFor({state:'attached'});
     });
+    await check(browserType.name()+' no duplicated Nihāya emendation footnotes',async()=>{
+      await page.locator('[data-part-jump="passage-N-INTRO"]').click();
+      for(const id of ['N-I-02','N-II-02','N-VI-03']){
+        const passage=page.locator('#passage-'+id);
+        await passage.waitFor({state:'attached',timeout:35000});
+        const texts=await passage.locator('.footnote').allTextContents();
+        const copies=texts.filter(text=>/1428 AH/i.test(text));
+        assert.equal(copies.length,1,id+' should carry its emendation once in the combined reader');
+      }
+      await page.locator('[data-part-jump="passage-B-INTRO"]').click();
+      await page.locator('#passage-B-INTRO').waitFor({state:'attached'});
+    });
     await check(browserType.name()+' bilingual control, focus and chapter navigation',async()=>{
       await page.locator('button[data-language="english"]').click();
       assert.equal(await page.evaluate(()=>document.documentElement.dataset.language),'english');
