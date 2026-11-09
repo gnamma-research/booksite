@@ -67,6 +67,16 @@ async function run(browserType){
       assert.match(await page.locator('#passage-M-K-04').textContent(),/gradation|graded|mushakkik/i);
       assert.match(await page.locator('#passage-M-K-06').textContent(),/primary predication/i);
       assert.match(await page.locator('#passage-M-K-07').textContent(),/coextensiveness/i);
+      for(let i=8;i<=15;i++){
+        const id='M-K-'+String(i).padStart(2,'0');
+        const passage=page.locator('#passage-'+id);
+        await passage.waitFor({state:'attached',timeout:35000});
+        const content=await passage.textContent();
+        assert.ok(content.length>700,'new Book II unit unexpectedly short: '+id);
+        assert.ok(await passage.locator('[lang="ar"]').count()>0,'new Book II Arabic missing: '+id);
+      }
+      assert.match(await page.locator('#passage-M-K-08').textContent(),/conjectur|not logically consistent/i);
+      assert.match(await page.locator('#passage-M-K-14').textContent(),/not a diplomatic/i);
     });
     await check(browserType.name()+' no duplicated Nihāya emendation footnotes',async()=>{
       await page.locator('[data-part-jump="passage-N-INTRO"]').click();
@@ -79,6 +89,14 @@ async function run(browserType){
       }
       await page.locator('[data-part-jump="passage-B-INTRO"]').click();
       await page.locator('#passage-B-INTRO').waitFor({state:'attached'});
+    });
+    await check(browserType.name()+' Nihāya corrected VII.8 terminology and editorial apparatus',async()=>{
+      await page.locator('[data-part-jump="passage-N-INTRO"]').click();
+      const note=page.locator('#passage-N-VII-08');
+      await note.waitFor({state:'attached',timeout:35000});
+      assert.match(await note.textContent(),/correspond necessarily/i);
+      const scorpion=page.locator('#passage-N-VII-07');
+      assert.match(await scorpion.textContent(),/scorpion.*sight|scorpion.*blindness/i);
     });
     await check(browserType.name()+' bilingual control, focus and chapter navigation',async()=>{
       await page.locator('button[data-language="english"]').click();
