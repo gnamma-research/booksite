@@ -1,8 +1,8 @@
-/* Canonical Stage109 progress: nine evidence-graded goals, independent section IDs at Q165 reset. */
+/* Tahdhīb Stage110: 11 independent evidence-graded goals and two locally numbered H sections. */
 window.GNAMMA_TAHDHIB_PROGRESS={
   "schema": "gnamma-tahdhib-cumulative-progress-v1",
   "updated": "2026-11-09",
-  "stage": "109",
+  "stage": "110",
   "baseline": {
     "logicMatnDivisions": 19,
     "kalamClauses": 1044,
@@ -70,6 +70,22 @@ window.GNAMMA_TAHDHIB_PROGRESS={
       "total": 140,
       "unit": "notes",
       "note": "Full working digital Arabic for 24–75 and 114–115, locator-only for 86 notes; zero independent photographed manuscript checks. New Q165 section tracked separately."
+    },
+    {
+      "id": "intro-notes",
+      "label": "H-INTRO (Q165–178) · numbered gloss first-pass English",
+      "current": 41,
+      "total": 49,
+      "unit": "locally numbered notes",
+      "note": "Fresh local note series 1–49 after Qum p165 reset. Incomplete notes: 2,7,10,19,20,23,30,42. This is NOT a proportion of all the later H volume."
+    },
+    {
+      "id": "intro-arabic",
+      "label": "H-INTRO (Q165–178) · complete searchable-Arabic note transcriptions",
+      "current": 0,
+      "total": 49,
+      "unit": "locally numbered notes",
+      "note": "All 49 records currently have SHORT locator lemmata only; no full Arabic note has been transcribed or independently photo/manuscript certified."
     },
     {
       "id": "historical-classes",
@@ -308,9 +324,13 @@ window.GNAMMA_TAHDHIB_PROGRESS={
       "printedStartPage": 165,
       "localFirstNote": 1,
       "stableFirstId": "HWN-INTRO-001",
-      "notesTranslated": 0,
+      "notesTranslated": 41,
       "notesArabicTranscribed": 0,
-      "fullPageCertified": 0
+      "fullPageCertified": 0,
+      "notesIndexed": 49,
+      "notesPartial": 8,
+      "lastProcessedQumPage": 178,
+      "nextLocalNote": 50
     }
   },
   "currentRelease": {
@@ -319,7 +339,10 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     "sampleReader": "hawashi-q125-178.html",
     "criticalDashboard": "critical-status.html",
     "latestHandoff": "HANDOFF_LATEST.md",
-    "cumulativeMarkdown": "batches/hawashi-preface-numbered-cumulative-hwn001-140.md"
+    "cumulativeMarkdown": "batches/hawashi-preface-numbered-cumulative-hwn001-140.md",
+    "introductionReader": "hawashi-numbered-notes.html",
+    "introductionCumulativeMarkdown": "batches/hawashi-introduction-numbered-cumulative-intro001-049.md",
+    "allSectionsCumulativeMarkdown": "batches/hawashi-all-sections-cumulative-stage110.md"
   },
   "stages": [
     {
@@ -476,6 +499,102 @@ window.GNAMMA_TAHDHIB_PROGRESS={
         "HANDOFF_LATEST.md",
         "stages/STAGE109_PREFACE_COMPLETION_AND_RESET.md"
       ]
+    },
+    {
+      "id": "110",
+      "date": "2026-11-09",
+      "title": "Begin H-INTRO new local numbering; 49 source-linked notes, 41 first-pass complete, 8 partial",
+      "sourcePages": "165–178",
+      "noteRange": "H-INTRO 1–49",
+      "fullNoteCount": 41,
+      "partialNoteCount": 8,
+      "arabicNoteCount": 0,
+      "certifiedPages": 0,
+      "report": "stages/STAGE110_INTRODUCTION_NUMBERING_AND_NOTES.md",
+      "files": [
+        "hawashi-introduction-notes-stage110a.js",
+        "hawashi-introduction-notes-stage110b.js",
+        "hawashi-introduction-notes-stage110c.js",
+        "hawashi-introduction-notes-stage110d.js",
+        "batches/hawashi-introduction-numbered-cumulative-intro001-049.md",
+        "batches/hawashi-all-sections-cumulative-stage110.md",
+        "hawashi-numbered-notes.html",
+        "progress-data.js",
+        "progress.html",
+        "HANDOFF_LATEST.md",
+        "stages/STAGE110_INTRODUCTION_NUMBERING_AND_NOTES.md"
+      ]
     }
-  ]
+  ],
+  "introLedger": {
+    "sectionId": "H-INTRO",
+    "titleArabic": "حواشي مقدمة علم المنطق",
+    "firstQumPrintedPage": 165,
+    "lastProcessedQumPrintedPage": 178,
+    "noteIdPrefix": "HWN-INTRO-",
+    "indexedNotes": 49,
+    "completedEnglish": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      21,
+      22,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "partiallyTranslated": [
+      2,
+      7,
+      10,
+      19,
+      20,
+      23,
+      30,
+      42
+    ],
+    "fullDigitizedArabicNotes": [],
+    "unnumberedFollowingRendered": [
+      18,
+      29
+    ],
+    "sourcePhotographed": false,
+    "fullPrintedPagesCertified": 0,
+    "nextLocalNote": 50,
+    "nextSourcePage": 178,
+    "needNextPage": 179
+  }
 };
