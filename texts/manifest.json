@@ -62,34 +62,34 @@
         "Akbarian metaphysics",
         "Qūnawī commentary"
       ],
-      "status": "first-pass-consecutive-Arabic-English-p11-149-not-manuscript-collated",
+      "status": "working-commentary-english-complete-arabic-partial-qunawi-matn-linked-not-critical",
       "language": [
         "ar",
         "en"
       ],
       "url": "texts/al-mahaimi/mashra-al-khusus/",
-      "note": "Working consecutive bilingual translation printed pp11–149 (139 pages of the 272-page 2008 al-Mazīdī volume). The latest stage adds 11 fully translated consecutive pages pp139–149 against a requested 70-page batch pp139–208; 59 pages of that target remain. Online transcriptions consulted, neither photographic printed-page verification nor manuscript collation performed.",
+      "note": "Al-Mahāʾimī commentary pp.11–232: consecutive FIRST-PASS English for 222 printed pages. Arabic present in 142 of those pages (11–149 and 230–232), absent in 80 (150–229). Separate Qūnawī: seven English draft sections, three page-specific online Arabic–English proofs (235,236,267), plus 47 Arabic–English excerpts from a separate online witness with 64 contextual links to 61 commentary pages. Standpoint/attribution labels and nine final-text variants are documented. No physical-page photograph or manuscript collation; Āshtiyānī edition only identified bibliographically.",
       "copytext": "al-Mazīdī 2008 online page-indexed transcription",
       "source_status": "online-2008-transcription-not-photographically-collated",
       "cumulative_coverage_printed_pages": [
         11,
-        149
+        232
       ],
-      "cumulative_printed_pages_count": 139,
+      "cumulative_printed_pages_count": 222,
       "new_batch_printed_pages": [
-        139,
-        149
+        209,
+        232
       ],
-      "new_batch_printed_pages_count": 11,
+      "new_batch_printed_pages_count": 24,
       "manuscript_collation_completed_pages": 0,
       "reader_url": "texts/al-mahaimi/mashra-al-khusus/",
       "cumulative_bilingual_markdown_url": "texts/al-mahaimi/mashra-al-khusus/data/parallel.md",
-      "new_batch_markdown_url": "texts/al-mahaimi/mashra-al-khusus/data/stage-139-149.md",
+      "new_batch_markdown_url": null,
       "register_url": "texts/al-mahaimi/mashra-al-khusus/editorial/REGISTER.md",
       "glossary_url": "texts/al-mahaimi/mashra-al-khusus/editorial/GLOSSARY.md",
-      "apparatus_url": "texts/al-mahaimi/mashra-al-khusus/editorial/APPARATUS.md",
+      "apparatus_url": "texts/al-mahaimi/mashra-al-khusus/editorial/APPARATUS_STAGE09.md",
       "inventory_concordance_url": "texts/al-mahaimi/mashra-al-khusus/editorial/INVENTORY_AND_CONCORDANCE.md",
-      "handoff_url": "texts/al-mahaimi/mashra-al-khusus/editorial/HANDOFF.md",
+      "handoff_url": "texts/al-mahaimi/mashra-al-khusus/editorial/HANDOFF_STAGE09.md",
       "structured_corpus_url": "texts/al-mahaimi/mashra-al-khusus/data/parallel.json",
       "page_coverage_manifest_url": "texts/al-mahaimi/mashra-al-khusus/data/stage04-page-coverage.json",
       "comparative_analysis_url": "texts/al-mahaimi/mashra-al-khusus/editorial/COMPARATIVE_FINDINGS_STAGE04.md",
@@ -97,8 +97,28 @@
       "register_entries": 104,
       "section_count": 127,
       "bilingual_pairs": 426,
-      "next_untranslated_printed_page": 139,
-      "stage05_register_url": "texts/al-mahaimi/mashra-al-khusus/editorial/REGISTER_STAGE05.md"
+      "next_untranslated_printed_page": null,
+      "stage05_register_url": "texts/al-mahaimi/mashra-al-khusus/editorial/REGISTER_STAGE05.md",
+      "commentary_english_coverage_pages": 222,
+      "commentary_arabic_imported_pages": 142,
+      "commentary_arabic_pending_printed_pages": [
+        150,
+        229
+      ],
+      "original_qn_online_excerpt_count": 47,
+      "original_2008_online_proof_pages": [
+        235,
+        236,
+        267
+      ],
+      "contextual_concordance_link_count": 64,
+      "contextual_concordance_commentary_pages": 61,
+      "next_arabic_unimported_printed_page": 150,
+      "critical_collation_status": "not-begun",
+      "legacy_bilingual_markdown_coverage_printed_pages": [
+        11,
+        149
+      ]
     },
     {
       "id": "farghani-muntaha-al-madarik",
