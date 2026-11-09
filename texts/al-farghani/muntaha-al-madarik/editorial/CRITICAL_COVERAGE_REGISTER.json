@@ -12,7 +12,7 @@
   "authorial_introduction_english_draft_complete": true,
   "authorial_introduction_arabic_critical_edition_complete": false,
   "definitive_grade": false,
-  "source_witness_grade": "All 128 B2007 printed page labels have only selected reviewed source spans: 283 direct modern edited-digitized spans pp18–60; 276 DERIVATIVE retyped modern Arabic spans pp61–145. ZERO full original Arabic pages independently line collated; only 10 inherited bounded I1876 photographic print comparisons; zero manuscripts. Stage XV adds four I1876 source-image comparisons, including p48 substantive correction بسبحات; does not upgrade secondary B2007 proof to actual printed-page verification.",
+  "source_witness_grade": "All 128 B2007 printed page labels have only selected reviewed source spans: 283 direct modern edited-digitized spans pp18–60; 276 DERIVATIVE retyped modern Arabic spans pp61–145. ZERO full original Arabic pages independently line collated; only 10 inherited bounded I1876 photographic print comparisons; zero manuscripts. Stage XV adds four I1876 source-image comparisons, including p48 substantive correction بسبحات; does not upgrade secondary B2007 proof to actual printed-page verification. Stage XVI confirmed additional old-print-vs-digitized B2007 difference at p52 الحكم/الحكيم; physical modern printed p52 and manuscript witnesses unexamined.",
   "next_critical_audit_page": 61,
   "next_translation_outside_intro": "B2007 p146 poem commentary (must confirm division against scan)",
   "pages": [
@@ -697,7 +697,7 @@
       "english_clause_checked_B2007": false,
       "digital_clause_check_count": 4,
       "digital_crux_count": 1,
-      "actual_historical_print_inspected": false,
+      "actual_historical_print_inspected": true,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
@@ -705,7 +705,26 @@
       "source_kind": "B2007-main-site-printed-digital",
       "page_has_selected_clause_checks": true,
       "selected_arabic_english_checked_B2007": true,
-      "editorial_note": "Stage IX selected authorial spans; no independently examined historical print or MS evidence for these readings"
+      "editorial_note": "Stage IX selected authorial spans; no independently examined historical print or MS evidence for these readings STAGE XVI PHOTOGRAPHIC RESOLUTION: 1876 printed page32 scan36 shows تفرّع (اسم الحكم) منه (the Judge), while B2007 digital has تفرّع (سم الحكيم) منه (the Wise). Edited English corrected provisionally; actual printed B2007/MS unchecked.",
+      "historical_print_loci_verified": 1,
+      "historical_print_printed_page": 32,
+      "historical_print_difference_count": 1,
+      "historical_print_loci_status": "One bounded actual original-resolution I1876 printed p32 scan36 check, NOT whole printed page and NOT any manuscript",
+      "historical_print_reference": {
+        "id": "I1876-L15",
+        "printed_page": 32,
+        "scan_index": 36,
+        "status": "verified older print versus modern digital difference",
+        "recorded_older_print": "اسم الحكم",
+        "recorded_modern_digital": "سم الحكيم",
+        "image": "facsimile-I1876-hires/images/scan_0036.jpg",
+        "sha256": "8a5f2a25fb93cc6560442dd7c0b9f8e9499f833df7b5c33153e12ea4c0463950",
+        "original_pixel_dimensions": [
+          2200,
+          3370
+        ],
+        "medieval_manuscript_verified": false
+      }
     },
     {
       "b2007_page": 53,
@@ -2658,14 +2677,14 @@
   "source_pages_with_selected_arabic_english_checks": 43,
   "check_methodology": "559 distinct selected bilingual records across B2007 pp18–145, of which 283 reviewed in digital modern B2007 pages18–60 and 276 only via a derivative secondary forum retranscription of modern edited Arabic pages61–145. No full-page independent Arabic transcription or direct manuscript collation is established, and no manuscript variants are attested. Historical printing I1876 10 bounded phrase comparisons (five differences/five agreements) on nine historical original printed pages; zero complete historical pages collated. Next step direct primary-printed-source checking from B2007 p61 and systematic original manuscript collation.",
   "issues_flagged_including_resolved_typographic": 17,
-  "historical_print_pages_with_selected_loci_checked": 13,
-  "historical_print_variants_verified": 6,
-  "historical_print_collation_scope": "14 selected I1876 photographed-print loci on 13 printed historical page numbers, 6 differences against modern online edited/digitized/retyped Arabic and 8 agreements. NO complete printed pages independently proofed; 0 MSS.",
-  "historical_print_pages_with_selected_loci": 13,
-  "historical_print_compared_clause_records": 14,
-  "historical_print_differences": 6,
+  "historical_print_pages_with_selected_loci_checked": 14,
+  "historical_print_variants_verified": 7,
+  "historical_print_collation_scope": "15 bounded original I1876 photographic printed comparisons on 14 different historic printed pages, 7 old-print-versus-modern-digital/derivative differences and 8 bounded agreements. ZERO complete historical pages exhaustively line proofed. ZERO medieval manuscripts examined.",
+  "historical_print_pages_with_selected_loci": 14,
+  "historical_print_compared_clause_records": 15,
+  "historical_print_differences": 7,
   "historical_print_agreements": 8,
-  "historical_print_source": "Princeton/NYU 1876 PDF SHA256 d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87; selected 2200px IIIF originals in facsimile-I1876-hires; cumulative historical evidence editorial/I1876_COLLATION_CUMULATIVE_004.json; four new corroborations 2026-11-09 in editorial/I1876_COLLATION_CUMULATIVE_005.json (GitHub Actions source-ingest artifact 13639926426 original archive SHA256 ca2846...).",
+  "historical_print_source": "Princeton/NYU 1876 PDF SHA256 d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87; selected 2200px IIIF originals in facsimile-I1876-hires; cumulative historical evidence editorial/I1876_COLLATION_CUMULATIVE_004.json; four new corroborations 2026-11-09 in editorial/I1876_COLLATION_CUMULATIVE_005.json (GitHub Actions source-ingest artifact 13639926426 original archive SHA256 ca2846...).; Stage XVI high-res scan36 and related 11-photo manifest facsimile-I1876-hires/IIIF_SELECTED_HIRES_MANIFEST.json; latest apparatus editorial/I1876_COLLATION_CUMULATIVE_006.json.",
   "independent_manuscript_variants": 0,
   "historical_print_fully_collated_pages": 0,
   "next_direct_modern_print_audit_page": 61,
@@ -2770,6 +2789,8 @@
     "pages_with_selected_excerpts": 128,
     "primary_direct_digitized_pages": 43,
     "secondary_derived_pages": 85,
-    "description": "All 128 B2007 page labels have one or more selected passages; none is certified complete line-by-line Arabic collation, and no manuscript images collated."
+    "description": "All 128 B2007 page labels have one or more selected passages; none is certified complete line-by-line Arabic collation, and no manuscript images collated.",
+    "full_1876_print_pages_line_collated": 0,
+    "manuscript_folios_collated": 0
   }
 }
