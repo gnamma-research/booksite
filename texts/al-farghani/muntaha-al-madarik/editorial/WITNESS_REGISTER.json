@@ -41,17 +41,17 @@
       ],
       "count": 198,
       "source": "B2007 selected digitized Arabic printed source spans",
-      "status": "198 B2007 selected clauses; eight exact 1876 printed-photograph comparisons, four differences, four agreements. No medieval manuscript readings."
+      "status": "198 modern Beirut selected digital text checks; 10 exact photographed I1876-to-Beirut comparisons (5 differences,5 agreements); no medieval manuscript reading."
     },
     "next_critical_audit_beirut_page": 37,
     "definitive_status": "not-achieved; photographed historical printing selectively collated; manuscripts all outstanding",
     "critical_review_new_stage": "Critical IV: 56 new selective loci p30–36, 198 total on 19 Beirut pages",
     "historical_print_imprint_question": "NYU catalogue identifies Istanbul 1293/1876; Chittick 2025 describes Bulaq/Cairo 1876. Establish by reading scanned title page.",
     "additional_new_candidates_004": "Heidelberg H154 (undated, textual 1v–322r, viewer gated); Gotha G2267 (87ff incomplete via Scattolin 2001); neither read",
-    "historical_print_collated_loci": 8,
-    "independent_print_variant_count": 4,
+    "historical_print_collated_loci": 10,
+    "independent_print_variant_count": 5,
     "historical_print_directly_examined": true,
-    "historical_print_selected_checked_loci": 8,
+    "historical_print_selected_checked_loci": 10,
     "historical_print_printed_pages_sampled": [
       5,
       6,
@@ -60,12 +60,14 @@
       9,
       10,
       13,
+      16,
       18
     ],
-    "historical_print_to_b2007_differences": 4,
+    "historical_print_to_b2007_differences": 5,
     "next_historical_print_target": "Find I1876 correspondences to remaining B2007 cruxes, including p33 'في عون هذا', then independent manuscript collation",
-    "latest_print_register": "editorial/I1876_COLLATION_CUMULATIVE_003.json",
-    "latest_print_critical_summary": "editorial/I1876_COLLATION_STAGE_006.md"
+    "latest_print_register": "editorial/I1876_COLLATION_CUMULATIVE_004.json",
+    "latest_print_critical_summary": "editorial/I1876_COLLATION_STAGE_007.md",
+    "historical_print_hires_source": "facsimile-I1876-hires/IIIF_SELECTED_HIRES_MANIFEST.json"
   },
   "witnesses": [
     {
@@ -75,10 +77,10 @@
       "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en",
       "pageRange": "1–107: introductory division (Scattolin)",
       "editor": "Muḥammad Shukrī al-ʿŪfī, reported by Scattolin",
-      "access": "Princeton facsimile directly viewed at eight printed pages 5,6,7,8,9,10,13,18, scans 9,10,11,12,13,14,17,22, eight bounded comparisons against B2007. Four PRINT differences, four agreements, zero manuscript folios.",
-      "accessGrade": "photographed-historical-print-eight-bounded-comparisons-on-eight-printed-pages",
+      "access": "Directly inspected 10 bounded photographed printed-text loci across I1876 printed pages 5,6,7,8,9,10,13,16,18, with original high-resolution IIIF pages 8,9,10,13,16,18. Five differences, five agreements against digital B2007; zero medieval MS folios.",
+      "accessGrade": "historical-print-ten-verified-loci-six-hires-pages",
       "role": "Historical PRINT control only, five selected textual comparisons. It is not a manuscript.",
-      "variantsExamined": 8,
+      "variantsExamined": 10,
       "photoEvidence": [
         {
           "siglum": "I1876",
@@ -165,10 +167,48 @@
             "manuscript": false,
             "proof_grade": "visually inspected historical print, selected locus only"
           }
+        },
+        {
+          "id": "I1876-L09",
+          "printed_page": 8,
+          "scan_index": 12,
+          "corresponding_B2007_printed_page": 23,
+          "reading": "سوى أنه ربما يكون",
+          "modern_print_reading": "إلّا أنه ربما يكون",
+          "relationship": "historical-print-difference",
+          "hires": {
+            "printed_page": 8,
+            "scan_index": 12,
+            "source_url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000264/12/full/2200,/0/default.jpg",
+            "url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876-hires/images/scan_0012.jpg",
+            "sha256_archived_jpg": "75a6b2d3009cfeb15654d93c237a516a18ea0ff5ecb382e7ab12efcea1b67701",
+            "sha256_original_iiif_response": "1cd1769afc3bfff5d3bda29d483d4d0d46a0d89dfa10fb56e2dae68eef450f9a",
+            "pixel_width": 2200,
+            "grade": "directly visually inspected historical print image; NOT manuscript"
+          }
+        },
+        {
+          "id": "I1876-L10",
+          "printed_page": 16,
+          "scan_index": 20,
+          "corresponding_B2007_printed_page": 33,
+          "reading": "في عون هذا",
+          "modern_print_reading": "في عون هذا",
+          "relationship": "historic-print-agreement",
+          "hires": {
+            "printed_page": 16,
+            "scan_index": 20,
+            "source_url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000264/20/full/2200,/0/default.jpg",
+            "url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876-hires/images/scan_0020.jpg",
+            "sha256_archived_jpg": "72ede56aebac41e52beb0219000031154affdb3ec170e46d4463edf5cb7e87c0",
+            "sha256_original_iiif_response": "5e3a8f25da291ea8a3f1d98573c0f396cb07e418c26442eccde4628a7c00f43d",
+            "pixel_width": 2200,
+            "grade": "directly visually inspected historical print image; NOT manuscript"
+          }
         }
       ],
-      "printDifferencesObserved": 4,
-      "printAgreementsObserved": 4,
+      "printDifferencesObserved": 5,
+      "printAgreementsObserved": 5,
       "pagesInspected": [
         5,
         6,
@@ -177,6 +217,7 @@
         9,
         10,
         13,
+        16,
         18
       ],
       "pdfScanIndices": [
@@ -187,6 +228,7 @@
         13,
         14,
         17,
+        20,
         22
       ]
     },
@@ -576,6 +618,30 @@
       "criticalVariant": true,
       "manuscriptSupport": null,
       "status": "historic_print_verified_2026-11-09"
+    },
+    {
+      "id": "ED-0011",
+      "location": "B2007 p23 ↔ I1876 p8, original IIIF scan12",
+      "type": "historical-print-connective-difference",
+      "B2007": "إلّا أنه ربما يكون",
+      "I1876": "سوى أنه ربما يكون",
+      "adopted": "سوى أنه ربما يكون",
+      "proof_source": "editorial/I1876_COLLATION_STAGE_007.md",
+      "criticalVariant": true,
+      "manuscriptSupport": null,
+      "status": "historic-print-verified_2026-11-09"
+    },
+    {
+      "id": "ED-0012",
+      "location": "B2007 p33 ↔ I1876 p16, original IIIF scan20",
+      "type": "historic-print-agreement-with-unresolved-grammar",
+      "B2007": "في عون هذا",
+      "I1876": "في عون هذا",
+      "adopted": "في عون هذا",
+      "proof_source": "editorial/I1876_COLLATION_STAGE_007.md",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "printed-agreement-verified-interpretation-open"
     }
   ],
   "selectionRule": "Do not create a variant reading or siglum support unless two independent witnesses have actually been inspected in the relevant locus. Orthographic normalization is not a textual variant.",
