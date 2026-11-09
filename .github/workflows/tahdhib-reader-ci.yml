@@ -458,6 +458,11 @@ jobs:
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage111a.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage111b.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-signification-notes-stage111a.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-signification-notes-stage112a.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-signification-notes-stage112b.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-signification-notes-stage112c.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-signification-notes-stage112d.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-concepts-notes-stage112a.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage111a.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage111b.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-signification-notes-stage111a.js
