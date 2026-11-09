@@ -19,4 +19,22 @@ assert.ok(reader.includes('assets/figures.js')&&reader.includes('assets/site.js'
 assert.ok(source.includes('Dossier 9')&&source.includes('46 matns and 46 shurūḥ'));
 assert.ok(landing.includes('read.html')&&landing.includes('atlas.html'));
 assert.ok(!/<img[^>]+src=""|href=""/.test(reader),'Empty asset/link attributes');
+// Editorial style regression: the prose should describe history, not its own rhetorical work.
+const forbidden=[
+ /those differences prepare the reader/i,
+ /the reader (?:should|must|needs to)/i,
+ /the (?:chapter|matn|commentary|narrative) (?:should|must|now|thus)/i,
+ /the point is (?:to understand|to see)/i,
+ /we (?:must|should|need to) (?:see|understand|imagine|preserve|follow)/i
+];
+for(const chapter of data.chapters){
+ for(const layer of ['matn','sharh']){
+  for(const expression of forbidden){
+   assert.ok(!expression.test(chapter[layer]),'Self-referential prose in chapter '+chapter.id+' '+layer+': '+expression);
+  }
+ }
+}
+assert.ok(reader.includes('Research edition 1.4.1 · under review'),'Reader version mismatch');
+assert.ok(read('editorial/current-edition-1.4.1.md').includes('## 46.'),'Revised manuscript missing final chapter');
+
 console.log('PASS: 46 chapters, 9 dossiers, 7 figures, two reading modes and linked static documents');
