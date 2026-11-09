@@ -1,3 +1,11 @@
+## 9 November 2026 — date evidence and undated-record workbenches
+
+The catalogue is now interactive even when chronology or geography is unknown. Nineteen Alreq authors' individually sourced death dates anchor 764 works; they indicate author death, never date of composition or manuscript. A further 3,393 Alreq records remain undated on current evidence. Both historical and geographical maps provide visible searchable workbenches with source and author links for unplaced records, pagination and work-profile navigation. The timeline workbench is shareable by `shelf` and `shelf_q` URL parameters. The geographical unlocated catalogue is likewise shareable through `geo_unplaced`. Same author URL only means catalogue siblings, not an established text-to-text influence. The original Alreq source metadata remains unchanged, and the maps show unplaced research gaps instead of inventing dates or coordinates.
+
+Evidence: `corpora/author-chronology.json`. Tests: `tests/verify_unplaced_workbench_browser.py`.
+
+---
+
 ## Continuous book traversal: timeline and complete source graph — 9 November 2026
 
 The two **text-facing modes**—**Book timeline** and **Source network**—now share a persistent horizontal **Browse texts** rail. The selected book remains in focus while browsing:

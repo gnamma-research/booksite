@@ -1,7 +1,7 @@
 (function GNAMMAGeoModule() {
 "use strict";
 const coast = "M992,286L980,273L959,289L988,347L964,372L950,378L953,368L912,342L906,374L937,405L940,438L898,382L894,315L887,308L866,320L865,293L844,266L816,270L754,323L751,366L732,383L700,320L695,270L679,282L663,270L676,264L652,257L644,243L606,248L571,242L565,230L542,234L503,205L494,213L518,250L525,241L522,254L545,255L564,237L565,252L590,270L552,312L460,347L454,314L389,223L392,212L386,226L373,209L370,198L386,197L400,172L401,153L331,155L339,152L321,132L379,112L443,117L443,106L405,86L426,70L393,76L392,85L405,85L384,93L372,85L381,79L353,77L330,109L344,120L293,124L292,137L305,143L294,148L298,157L286,153L283,142L298,143L281,141L269,114L220,82L209,85L211,94L260,127L247,125L241,145L237,128L182,93L139,102L95,154L67,160L57,150L40,152L38,104L99,101L103,77L74,60L101,59L96,50L112,53L159,21L191,20L180,0 M193,0L193,13L229,19L267,14L282,8L281,0 M229,0L213,0 M367,196L411,297L430,327L459,348L452,356L469,365L522,353L496,412L439,464 M187,464L192,423L183,410L160,414L143,395L52,413L12,389L0,368 M0,236L30,214L38,188L68,161L96,167L190,149L200,151L194,178L264,206L286,184L345,201L367,196 M992,459L983,439L992,435 M919,464L874,403L892,406L942,446L948,464 M112,42L66,48L93,34L69,33L91,21L88,8L71,9L76,0 M71,0L69,0 M89,0L126,28L112,42 M48,33L29,33L42,27L32,28L41,22L31,14L63,6L61,30L48,33 M754,400L754,369L767,392L754,400 M984,301L992,288 M992,301L984,301 M232,154L212,144L237,142L232,154 M180,136L177,120L186,118L189,134L180,136 M953,464L961,464 M507,133L515,125L486,91L506,75L535,72L538,85L514,93L534,106L535,120L541,111L550,120L534,126L544,153L506,147L507,133 M365,464L379,444L391,450L378,464 M604,90L590,101L577,89L606,74L604,90 M988,2L984,21L942,35L988,2 M706,77L746,75L716,75L705,88L706,77 M233,344L224,348L218,337L233,344 M309,443L291,431L266,436L243,464 M242,464L258,429L254,451L274,432L309,443 M959,368L948,348L952,355L960,349L958,329L938,301L959,328L959,368 M829,256L837,238L829,256 M669,222L655,232L653,257L655,232L669,222 M163,379L184,385L166,386L164,405L163,379 M498,0L505,4L497,0 M10,327L0,318 M0,316L10,327 M815,248L826,257L815,248 M464,175L487,192L464,175 M54,343L76,334L54,343 M87,315L102,312L87,315 M149,373L161,378L149,373 M42,355L50,346L42,355 M964,286L955,278L964,286 M491,72L496,77L491,72";
-const S={layer:"both",century:"all",region:"all",quality:"all",city:"",selectedEvent:"",zoom:1,cx:504,cy:236,storyPage:0,showContext:false};
+const S={layer:"both",century:"all",region:"all",quality:"all",city:"",selectedEvent:"",zoom:1,cx:504,cy:236,storyPage:0,showContext:false,showUnplaced:false,unplacedPage:1,unplacedQuery:""};
 const names={work:"Work composition",author:"Author biography",context:"Regional association"};
 const placeRegion={
  murcia:"al-Andalus",cordoba:"al-Andalus",marrakesh:"Maghrib",jaen:"al-Andalus",
@@ -21,7 +21,7 @@ let atlas=null,records={events:[],places:[]},attached=false,root=null,expose={};
 function setData(d){records={events:d?.events||[],places:d?.places||[]};}
 function resetScope(){
  S.layer="both";S.century="all";S.region="all";S.quality="all";
- S.city="";S.selectedEvent="";S.zoom=1;S.cx=504;S.cy=236;S.showContext=false;
+ S.city="";S.selectedEvent="";S.zoom=1;S.cx=504;S.cy=236;S.showContext=false;S.showUnplaced=false;S.unplacedPage=1;S.unplacedQuery="";
 }
 function readHash(){
  const p=new URLSearchParams(location.hash.slice(1));
@@ -31,11 +31,12 @@ function readHash(){
  S.quality=p.get("geo_quality")==="confirmed"?"confirmed":"all";
  S.showContext=p.get("geo_context")==="1";
  S.city=records.places.some(x=>x.id===p.get("geo_city"))?p.get("geo_city"):"";
+ S.showUnplaced=p.get("geo_unplaced")==="1";S.unplacedQuery=(p.get("geo_unplaced_q")||"").slice(0,120);
 }
-function urlState(){return {geo_layer:S.layer,geo_century:S.century,geo_region:S.region,geo_quality:S.quality,geo_context:S.showContext?"1":"0",geo_city:S.city};}
+function urlState(){return {geo_layer:S.layer,geo_century:S.century,geo_region:S.region,geo_quality:S.quality,geo_context:S.showContext?"1":"0",geo_city:S.city,geo_unplaced:S.showUnplaced?"1":"0",geo_unplaced_q:S.unplacedQuery};}
 function init(target,api){root=target;expose=api||{};if(attached)return;attached=true;
  root.addEventListener("click",event=>{
-  const t=event.target.closest("[data-geo-layer],[data-geo-century],[data-geo-region],[data-geo-quality],[data-geo-city],[data-geo-event],[data-geo-zoom],[data-geo-pan],[data-geo-clear],[data-geo-context],[data-geo-work]");
+  const t=event.target.closest("[data-geo-layer],[data-geo-century],[data-geo-region],[data-geo-quality],[data-geo-city],[data-geo-event],[data-geo-zoom],[data-geo-pan],[data-geo-clear],[data-geo-context],[data-geo-work],[data-geo-unplaced],[data-geo-unplaced-page],[data-geo-unplaced-work]");
   if(!t||!root.contains(t))return;
   event.preventDefault();
   if(t.hasAttribute("data-geo-layer"))S.layer=t.getAttribute("data-geo-layer");
@@ -55,9 +56,32 @@ function init(target,api){root=target;expose=api||{};if(attached)return;attached
   }
   else if(t.hasAttribute("data-geo-clear")){resetScope();}
   else if(t.hasAttribute("data-geo-context"))S.showContext=!S.showContext;
+  else if(t.hasAttribute("data-geo-unplaced")){
+   S.showUnplaced=!S.showUnplaced;S.unplacedPage=1;S.unplacedQuery="";
+  }else if(t.hasAttribute("data-geo-unplaced-page")){
+   S.unplacedPage=Math.max(1,S.unplacedPage+Number(t.getAttribute("data-geo-unplaced-page")));
+  }else if(t.hasAttribute("data-geo-unplaced-work")){
+   expose.select?.(t.getAttribute("data-geo-unplaced-work"));return;
+  }
   else if(t.hasAttribute("data-geo-work")){const id=t.getAttribute("data-geo-work");expose.select?.(id);return;}
   if(S.city){const p=records.places.find(p=>p.id===S.city);if(p&&S.zoom>1){S.cx=pointX(p.lon);S.cy=pointY(p.lat);}}
   expose.refresh?.();
+  if(t.hasAttribute("data-geo-unplaced")||t.hasAttribute("data-geo-unplaced-page")){
+   requestAnimationFrame(()=>root.querySelector("[data-geo-unplaced-panel]")?.scrollIntoView({block:"start",behavior:"auto"}));
+  }
+ });
+ let filterTimer=null;
+ root.addEventListener("input",event=>{
+  const input=event.target.closest?.("[data-geo-unplaced-search]");
+  if(!input||!root.contains(input))return;
+  const value=input.value.slice(0,120),cursor=input.selectionStart;
+  clearTimeout(filterTimer);
+  filterTimer=setTimeout(()=>{
+   if(!input.isConnected)return;
+   S.unplacedQuery=value;S.unplacedPage=1;expose.refresh?.();
+   const next=root.querySelector("[data-geo-unplaced-search]");
+   if(next){next.focus({preventScroll:true});try{next.setSelectionRange(cursor,cursor)}catch{}}
+  },160);
  });
  root.addEventListener("change",event=>{
   const t=event.target.closest("[data-geo-century-select],[data-geo-layer-select],[data-geo-region-select]");
@@ -320,6 +344,36 @@ function regionalNarrative(all){
    '<strong>'+q(region)+'</strong><span>'+items.length+' evidenced place events</span>'+
    '<small>'+q([...new Set(items.map(x=>x.place))].slice(0,4).join(" · "))+'</small></button>').join("")+'</div></section>';
 }
+
+function geographyUndatedPanel(works,subject,events){
+ if(!S.showUnplaced)return "";
+ const linked=new Set(events.flatMap(e=>e.related_ids));
+ const norm=x=>String(x||"").normalize("NFKD").replace(/[\u064b-\u065f\u0670\u0640]/g,"").replace(/[أإآ]/g,"ا").replace(/ى/g,"ي").toLowerCase();
+ const query=norm(S.unplacedQuery);
+ const all=works.filter(n=>n.kind==="work"&&(subject==="all"||n.subjects.includes(subject))&&!linked.has(n.id));
+ const list=all.filter(n=>!query||norm([n.title,n.arabic,n.author,n.id].join(" ")).includes(query));
+ list.sort((a,b)=>Number(Boolean(b.sourceURL||b.authorURL))-Number(Boolean(a.sourceURL||a.authorURL))||
+  (a.year??99999)-(b.year??99999)||String(a.title).localeCompare(String(b.title),"ar"));
+ const page=Math.max(1,Math.min(S.unplacedPage,Math.max(1,Math.ceil(list.length/20))));
+ S.unplacedPage=page;
+ const cards=list.slice((page-1)*20,page*20).map(n=>{
+   const source=link(n.sourceURL),author=link(n.authorURL);
+   return '<article class="geo-unplaced-card"><strong>'+q(n.title)+'</strong>'+
+   '<p>'+q(n.author||"Unknown author")+' · '+q(n.dateLabel||"No reliable date")+' · '+q(n.provenance)+'</p>'+
+   '<div class="geo-unplaced-actions"><button type="button" data-geo-unplaced-work="'+q(n.id)+'">Open work profile</button>'+
+   (source?'<a href="'+q(source)+'" target="_blank" rel="noopener noreferrer">Catalogue record</a>':"")+
+   (author?'<a href="'+q(author)+'" target="_blank" rel="noopener noreferrer">Author biography</a>':"")+'</div></article>';
+ }).join("");
+ return '<section data-geo-unplaced-panel class="geo-unplaced-panel" tabindex="-1" aria-label="Works without researched geographical evidence">'+
+ '<header><div><span class="geo-small-title">UNLOCATED WORKS · RESEARCH REGISTER</span><h3>Browse '+all.length.toLocaleString()+' works lacking a source-backed location</h3>'+
+ '<p>These works may have dated authors, but a date does not prove where the text was composed, taught, copied or preserved. They remain fully searchable and linked to the original source.</p></div>'+
+ '<button type="button" data-geo-unplaced>Close</button></header>'+
+ '<label>Search unlocated titles and authors<input data-geo-unplaced-search type="search" placeholder="Arabic name, title or author" value="'+q(S.unplacedQuery)+'" autocomplete="off"/></label>'+
+ '<div class="geo-unplaced-results">'+(cards||'<p>No matching record in this discipline.</p>')+'</div>'+
+ '<div class="pagination"><button type="button" data-geo-unplaced-page="-1"'+(page===1?' disabled':'')+'>Previous</button>'+
+ '<span>'+list.length.toLocaleString()+' matches · '+page+' / '+Math.max(1,Math.ceil(list.length/20))+'</span>'+
+ '<button type="button" data-geo-unplaced-page="1"'+(page>=Math.ceil(list.length/20)?' disabled':'')+'>Next</button></div></section>';
+}
 function render(works,subject,view){
  const all=eventsFor(works,subject);
  const visible=eligible(works,subject);
@@ -331,15 +385,15 @@ function render(works,subject,view){
  '<h2>'+title+'</h2><p>Follow where texts were composed and scholars lived, taught or died—only where those locations are independently documented.</p></div>'+
  '<div class="geo-stats"><span><strong>'+coverage.workEvents+'</strong> textual events</span>'+
  '<span><strong>'+coverage.authorNames+'</strong> mapped authors</span>'+
- '<span><strong>'+coverage.unmapped.toLocaleString()+'</strong> works unplaced</span></div></div>';
+ '<button type="button" data-geo-unplaced title="Open unlocated works with original sources"><strong>'+coverage.unmapped.toLocaleString()+'</strong> works unlocated <small>Explore records</small></button></div></div>';
  const legend='<div class="geo-legend"><span><i class="geo-symbol author"></i> Author life / study</span>'+
  '<span><i class="geo-symbol work"></i> Text composition / revision</span>'+
  (S.showContext?'<span><i class="geo-symbol context"></i> Qualified regional label</span>':"")+
  '<span>Only '+coverage.associatedWorks+' source records have at least one associated geographical event; many bibliographic records remain unplaced.</span></div>';
  const narrative=view==="regions"?regionalNarrative(all):centuryNarrative(visible,all,works);
- return '<div class="geo-layout">'+headline+controls(all,view)+
+ return '<div class="geo-layout">'+headline+geographyUndatedPanel(works,subject,all)+controls(all,view)+
  '<div class="geo-main-grid">'+svgMap(groups,view)+detailPanel(visible,works)+'</div>'+legend+narrative+
  '<p class="geo-method">Map evidence policy: an author’s birthplace, residence or death is <em>not</em> automatically the place of composition of that author’s books. The registered work events specify beginnings, completions and recensions separately. City coordinates locate modern reference points, not ancient buildings. The wider OpenITI and Alreq catalogues are not silently geocoded from titles or personal nisbas.</p></div>';
 }
-window.GNAMMAGeography={setData,init,render,readHash,urlState,resetScope,debug:()=>({events:records.events.length,places:records.places.length,layer:S.layer,century:S.century,region:S.region,quality:S.quality,city:S.city,zoom:S.zoom,context:S.showContext})};
+window.GNAMMAGeography={setData,init,render,readHash,urlState,resetScope,debug:()=>({events:records.events.length,places:records.places.length,layer:S.layer,century:S.century,region:S.region,quality:S.quality,city:S.city,zoom:S.zoom,context:S.showContext,unplacedPanel:S.showUnplaced,unplacedSearch:S.unplacedQuery})};
 })();

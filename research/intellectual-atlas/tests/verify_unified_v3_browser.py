@@ -94,10 +94,17 @@ async def main():
         s=await snap(page)
         check(s["geo"]["layer"]=="author" and s["mapMarkers"]>0,"Author biography layer failed")
         await page.locator('[data-geo-layer="both"]').click()
-        await page.locator('[data-geo-century="7"]').first.click()
+        # On narrow screens the century chips are correctly replaced by a visible select.
+        if args.width<=530:
+            await page.locator('[data-geo-century-select]').select_option('7')
+        else:
+            await page.locator('[data-geo-century="7"]').first.click()
         s=await snap(page)
         check(s["geo"]["century"]=="7" and s["map"]==1 and s["mapMarkers"]>0,"Chronological AH century filter failed")
-        await page.locator('[data-geo-century="all"]').first.click()
+        if args.width<=530:
+            await page.locator('[data-geo-century-select]').select_option('all')
+        else:
+            await page.locator('[data-geo-century="all"]').first.click()
 
         # Same map and controls across law, language, theology, Sufism, Qur'anic and hadith subjects.
         for subject in ["fiqh","usul","nahw","sarf","balagha","lugha","hadith","tafsir","tasawwuf","intellectual"]:

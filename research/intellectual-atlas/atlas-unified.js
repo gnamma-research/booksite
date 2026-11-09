@@ -29,9 +29,9 @@ textual_use:"Textual use",author_reference:"Author reference",critique:"Critical
 reported_source:"Source testimony",exchange:"Scholarly exchange",broad_influence:"Qualified connection",hypothesis:"Hypothesis",
 claimed_lineage:"Claimed lineage",abridgement:"Abridgement",translation:"Translation",other:"Relationship"};
 const state={subject:"all",view:"geography",school:"all",search:"",source:"all",family:"",edgeType:"all",certainty:"all",
-from:-600,to:2026,selected:"",evidence:"",cluster:"",clusterPage:1,bookPage:1,depth:1,browseMode:"linked",region:"",searchOpen:false,advancedOpen:false};
+from:-600,to:2026,selected:"",evidence:"",cluster:"",clusterPage:1,clusterSearch:"",bookPage:1,depth:1,browseMode:"linked",region:"",searchOpen:false,advancedOpen:false};
 const data={all:[],byId:new Map(),edges:[],in:new Map(),out:new Map(),families:[],sources:new Map(),history:[],
-errors:[],counts:{audited:0,openiti:0,alreq:0,pinned:0,relations:0},licences:[],loadReady:false};
+errors:[],counts:{audited:0,openiti:0,alreq:0,pinned:0,relations:0,alreqAuthorDated:0,unplaced:0},chronology:new Map(),authorWorks:new Map(),licences:[],loadReady:false};
 const renderCache={clusters:new Map(),workMap:new Map(),current:[],filtered:[],lanes:[],network:null};
 const safe=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const normal=x=>String(x??"").normalize("NFKD").replace(/[\u0300-\u036f\u064b-\u065f\u0670\u0640]/g,"").replace(/[أإآٱ]/g,"ا").replace(/ى/g,"ي").replace(/[ʿʾ’'`]/g,"").toLowerCase();
@@ -74,7 +74,9 @@ function loadCanonical(d){
   evidence:e.evidence||"",evidenceKind:e.evidence_kind||"Bibliographical research",sourceIds:e.sources||[],origin:"canonical"});
 }
 function addEdge(e){if(!data.byId.has(e.from)||!data.byId.has(e.to))return;data.edges.push(e)}
-function loadMetadata(oi,ms,registry,early){
+function loadMetadata(oi,ms,registry,early,chronology){
+ data.chronology=new Map((chronology?.entries||[]).filter(a=>a.author_url&&a.death_ah&&a.status!=="unverified").map(a=>[a.author_url,a]));
+
  const pinned=new Map((registry?.books||[]).filter(b=>b.openiti?.book_uri).map(b=>[b.openiti.book_uri,b]));
  const readerIndex=new Map(),bookURIs=new Set();
  const works=oi?.works||[];
@@ -112,16 +114,22 @@ function loadMetadata(oi,ms,registry,early){
  data.counts.pinned=registry?.books?.length||0;
  const msw=ms?.works||[];
  for(const w of msw){
+  const anchor=data.chronology.get(w.author_url);
+  const year=anchor?ahce(anchor.death_ah):null;
   addWork({id:"alreq:"+w.id,sourceId:w.id,title:w.title_ar||w.id,arabic:w.title_ar||"",roman:"",
-   author:w.author_ar||"",authorDates:"",subjects:w.genres||[],schools:w.madhhabs||[],
-   year:null,yearKind:"unplaced",dateLabel:"Unplaced in time",dateNote:"Catalogue metadata does not establish a date.",
+   author:w.author_ar||"",authorDates:anchor?"d. "+anchor.death_ah+" AH":"",subjects:w.genres||[],schools:w.madhhabs||[],
+   year,yearKind:anchor?"verified_author_death_proxy":"unplaced",
+   dateLabel:anchor?"Author d. "+anchor.death_ah+" AH · not composition date":"Date not established",
+   dateNote:anchor?"The linked Alreq author biography records death in "+anchor.death_ah+" AH. This marker dates the PERSON, not the composition, manuscript or edition. "+anchor.note:
+   "The public category listing omits the author death and composition date. The source work remains searchable, but is not placed on an unsupported century.",
    kind:"work",tradition:"",family:"",region:"",provenance:"Alreq manuscript catalogue",
-   layer:"bibliographic",pinned:false,sourceURL:w.catalogue_url||"",
+   layer:"bibliographic",pinned:false,sourceURL:w.catalogue_url||"",authorURL:w.author_url||"",dateEvidenceURL:anchor?.source_url||"",dateStatus:anchor?.status||"unknown",
    lines:w.lineages||[],schoolEvidence:(w.school_evidence||[]).map(z=>[z.basis,z.school].filter(Boolean).join(" · ")).join("; "),
    manuscripts:Number(w.reported_manuscripts)||0,version:(w.categories||[]).join("; "),
    note:"Catalogue entry, not an acquired or collated manuscript; identity with other catalogue records remains unresolved."});
  }
  data.counts.alreq=msw.length;
+ data.counts.alreqAuthorDated=msw.filter(w=>data.chronology.has(w.author_url)).length;
  for(const rel of registry?.relationships||[]){
   const from=readerIndex.get(rel.source),to=readerIndex.get(rel.target);
   if(!from||!to||!validURL(rel.source_url))continue;
@@ -148,17 +156,21 @@ function prepare(){
   if(!data.out.has(e.from))data.out.set(e.from,[]);
   data.in.get(e.to).push(e);data.out.get(e.from).push(e);
  }
- for(const n of data.all)n.degree=(data.in.get(n.id)?.length||0)+(data.out.get(n.id)?.length||0);
+ for(const n of data.all){
+  n.degree=(data.in.get(n.id)?.length||0)+(data.out.get(n.id)?.length||0);
+  if(n.authorURL){if(!data.authorWorks.has(n.authorURL))data.authorWorks.set(n.authorURL,[]);data.authorWorks.get(n.authorURL).push(n);}
+ }
+ data.counts.unplaced=data.all.filter(n=>n.year===null&&n.kind==="work").length;
  data.counts.relations=data.edges.length;
  data.loadReady=true;
 }
 async function load(){
- const tasks=["embedded canonical atlas","corpora/expanded-bibliography.json","corpora/manuscript-full.json","corpora/registry.json","corpora/early-jurists.json","corpora/geo-events.json"];
+ const tasks=["embedded canonical atlas","corpora/expanded-bibliography.json","corpora/manuscript-full.json","corpora/registry.json","corpora/early-jurists.json","corpora/geo-events.json","corpora/author-chronology.json"];
  const r=await Promise.allSettled(tasks.map((p,i)=>i===0?Promise.resolve().then(()=>JSON.parse(document.querySelector("script[data-atlas]").textContent)):
  fetch(p).then(resp=>{if(!resp.ok)throw Error(p+" "+resp.status);return resp.json()})));
  if(r[0].status!=="fulfilled"){ROOT.innerHTML='<section class="loading"><h1>Atlas sources unavailable</h1><p>The audited historical dataset could not be loaded. <a href="corpora/">Open the bibliography</a> or reload the atlas.</p></section>';return;}
  const o=r.map((x,i)=>{if(x.status==="fulfilled")return x.value;data.errors.push(tasks[i]+": "+String(x.reason?.message||x.reason));return null;});
- loadCanonical(o[0]);loadMetadata(o[1],o[2],o[3],o[4]);prepare();window.GNAMMAGeography?.setData(o[5]||{events:[],places:[]});
+ loadCanonical(o[0]);loadMetadata(o[1],o[2],o[3],o[4],o[6]);prepare();window.GNAMMAGeography?.setData(o[5]||{events:[],places:[]});
  window.GNAMMAGeography?.init(ROOT,{refresh:()=>{writeHash();render();},select:id=>chooseWork(id,true)});
  readHash();
  if(!data.byId.has(state.selected))selectFeatured(false);
@@ -168,7 +180,7 @@ function initialSubject(subject){
  if(!NAMES[subject])return;
  state.subject=subject;
  state.school="all";state.family="";state.cluster="";state.region="";
- state.bookPage=1;state.clusterPage=1;state.search="";
+ state.bookPage=1;state.clusterPage=1;state.clusterSearch="";state.search="";
  window.GNAMMAGeography?.resetScope?.();
  if(subject==="intellectual"){state.from=-600;state.to=2026}
  else {state.from=630;state.to=1920}
@@ -183,7 +195,7 @@ function readHash(){
  if(subject==="philosophy"||subject==="kalam")subject="intellectual";
  if(NAMES[subject])state.subject=subject;
  const view=p.get("mode")||legacy||"geography";
- state.view=({sources:"timeline",explorer:"network",relations:"network",audit:"catalogue",network:"network",
+ state.view=({timeline:"timeline",sources:"timeline",explorer:"network",relations:"network",audit:"catalogue",network:"network",
   principal:"principal",summary:"principal",map:"geography",chronology:"timeline",geography:"geography",regions:"regions",catalogue:"catalogue"})[view]||"geography";
  const selected=p.get("work_id")||p.get("gnx_work")||p.get("work")||"";
  state.selected=selected&&data.byId.has(selected)?selected:data.byId.has("c:"+selected)?"c:"+selected:"";
@@ -204,7 +216,7 @@ function readHash(){
  state.edgeType=["all","commentary","critique","textual_use","translation"].includes(p.get("edge_type"))?p.get("edge_type"):"all";
  state.certainty=p.get("certain")==="1"?"verified":"all";
  state.region=p.get("place")||"";
- state.cluster="";state.clusterPage=1;state.bookPage=1;state.quickLimit=8;state.evidence="";
+ state.cluster=p.get("shelf")||"";state.clusterSearch=(p.get("shelf_q")||"").slice(0,120);state.clusterPage=1;state.bookPage=1;state.quickLimit=8;state.evidence="";
  if(!state.selected)selectFeatured(false);
  window.GNAMMAGeography?.readHash();
 }
@@ -215,6 +227,8 @@ function writeHash(push=false){
  if(state.school!=="all")p.set("school",state.school);
  if(state.search)p.set("q",state.search);
  if(state.browseMode==="all")p.set("browse","all");
+ if(state.cluster&&state.view==="timeline")p.set("shelf",state.cluster);
+ if(state.clusterSearch&&state.view==="timeline")p.set("shelf_q",state.clusterSearch);
  if(state.family)p.set("family",state.family);
  if(state.source!=="all")p.set("source_tier",state.source);
  if(state.edgeType!=="all")p.set("edge_type",state.edgeType);
@@ -458,6 +472,7 @@ function inWindow(n){return n.year!==null&&n.year>=state.from&&n.year<=state.to}
 function viewTimeline(){
  const nodes=filtered();renderCache.filtered=nodes;
  const lanes=lanesFor(nodes);renderCache.lanes=lanes;renderCache.clusters=new Map();
+ renderCache.clusters.set("undated:all",nodes.filter(n=>n.year===null&&n.kind==="work"));
  const W=1140,left=172,right=132,top=66,plotW=W-left-right;
  const stepYears=state.to-state.from;
  const scale=y=>left+(y-state.from)/stepYears*plotW;
@@ -512,10 +527,10 @@ function viewTimeline(){
   if(undated.length){
     const key="undated:"+lane.id;renderCache.clusters.set(key,undated);
     if(undated.some(n=>n.id===state.selected))focusedCluster=key;
-    body+='<g role="button" tabindex="0" data-unplaced="'+safe(key)+'" aria-label="'+undated.length+' undated records in '+safe(lane.label)+'">'+
+    body+='<g role="button" tabindex="0" data-unplaced="'+safe(key)+'" aria-label="Open '+undated.length+' undated source records in '+safe(lane.label)+'">'+
     '<rect x="'+(W-right+13)+'" y="'+(y+22)+'" width="'+(right-27)+'" height="32" rx="5" fill="var(--soft)" stroke="var(--muted)" stroke-dasharray="3 3" stroke-opacity=".6"/>'+
     '<text x="'+(W-right+18)+'" y="'+(y+35)+'" fill="var(--ink)" font-size="10" font-weight="650">'+fnum(undated.length)+' unplaced</text>'+
-    '<text x="'+(W-right+18)+'" y="'+(y+47)+'" fill="var(--muted)" font-size="8.7">Browse records</text></g>';
+    '<text x="'+(W-right+18)+'" y="'+(y+47)+'" fill="var(--muted)" font-size="8.7">Open sources ↗</text></g>';
   }
   y+=height;
  }
@@ -538,23 +553,69 @@ function viewTimeline(){
    .findIndex(n=>n.id===state.selected);
   if(index>=0)state.clusterPage=Math.floor(index/24)+1;
  }
- const active=displayCluster&&renderCache.clusters.has(displayCluster)?renderClusterList(renderCache.clusters.get(displayCluster)):"";
+ const active=state.cluster&&renderCache.clusters.has(state.cluster)?renderClusterList(renderCache.clusters.get(state.cluster)):"";
  const countIn=nodes.filter(inWindow).length;
+ const unresolved=nodes.filter(n=>n.year===null&&n.kind==="work").length;
+ const sourced=nodes.filter(n=>n.yearKind==="verified_author_death_proxy").length;
+ const totals='<div class="atlas-chronology-coverage" aria-label="Date evidence coverage">'+
+  '<span><strong>'+fnum(countIn)+'</strong> dated records within the time window</span>'+
+  '<span><strong>'+fnum(sourced)+'</strong> records positioned by cited author death</span>'+
+  '<span><strong>'+fnum(unresolved)+'</strong> genuinely unplaced works</span>'+
+  (unresolved?'<button type="button" data-open-unplaced-all>Explore all undated records</button>':"")+
+  '</div>';
  const note='<div class="plot-note"><span class="legend"><i class="swatch date"></i> Dated work or jurist</span>'+
  '<span class="legend"><i class="swatch"></i> Time cluster: select to zoom / inspect</span>'+
  '<span class="legend"><i class="swatch undated"></i> Undated source records</span>'+
  '<span>Dates are explicitly qualified: author death ≠ composition.</span></div>';
- return {html:svg+active+note,title:"Historical map · "+sceneTitle(),sub:fnum(countIn)+" dated records in view · "+fnum(nodes.length-countIn)+" other source records · "+lanes.length+" historical lanes",shown:totalShown};
+ return {html:totals+active+svg+note,title:"Historical map · "+sceneTitle(),sub:fnum(countIn)+" dated within range · "+fnum(unresolved)+" still undated · "+lanes.length+" historical lanes",shown:totalShown};
+}
+
+function shelfCard(n){
+ const active=n.id===state.selected;
+ return '<button class="atlas-shelf-work'+(active?' is-selected':'')+'" type="button" aria-current="'+active+
+ '" data-cluster-work="'+safe(n.id)+'"><strong>'+safe(truncate(n.title,80))+'</strong>'+
+ '<small>'+safe(truncate(n.author,65))+'</small>'+
+ '<span class="atlas-shelf-meta">'+safe(n.dateLabel||"No attested date")+
+ ' · '+safe(n.provenance)+'</span></button>';
+}
+function shelfInlineInspector(n){
+ if(!n)return "";
+ const source=validURL(n.sourceURL),author=validURL(n.authorURL),date=validURL(n.dateEvidenceURL);
+ const sibs=(data.authorWorks.get(n.authorURL)||[]).filter(a=>a.id!==n.id);
+ return '<div class="atlas-shelf-inspector" data-shelf-inspector aria-label="Selected source record">'+
+ '<div class="atlas-shelf-inspector-header"><strong>Selected source · '+safe(n.title)+'</strong>'+
+ '<span>'+safe(n.yearKind==="verified_author_death_proxy"?"Author-date anchor":"No source date")+'</span></div>'+
+ '<p>'+safe(n.author||"Author not specified")+' · '+safe(n.dateLabel)+'</p>'+
+ '<p>'+safe(n.dateNote||"The source has no reliable date.")+'</p>'+
+ '<div class="atlas-shelf-links">'+
+ (source?'<a href="'+safe(source)+'" target="_blank" rel="noopener noreferrer">Original catalogue record</a>':"")+
+ (author?'<a href="'+safe(author)+'" target="_blank" rel="noopener noreferrer">Author biography</a>':"")+
+ (date&&date!==author?'<a href="'+safe(date)+'" target="_blank" rel="noopener noreferrer">Death-date source</a>':"")+
+ '<button type="button" data-show-network="'+safe(n.id)+'">Open work profile</button></div>'+
+ (sibs.length?'<p>'+sibs.length+' other catalogue entries assigned to this author (not necessarily textual dependencies).</p>'+
+ '<div class="atlas-shelf-siblings">'+sibs.slice(0,8).map(w=>'<button type="button" data-cluster-work="'+safe(w.id)+'">'+safe(truncate(w.title,42))+'</button>').join("")+'</div>':"")+
+ '</div>';
 }
 function renderClusterList(arr){
- const rows=arr.slice().sort((a,b)=>(a.year??99999)-(b.year??99999)||a.title.localeCompare(b.title));
- const page=Math.max(1,Math.min(state.clusterPage,Math.ceil(rows.length/24)));
- const dataPart=rows.slice((page-1)*24,page*24);
- return '<section aria-label="Records in the selected map cluster"><h3 class="unplaced-title">'+
- safe(state.cluster.startsWith("undated:")?"Undated work records":"Texts in the selected era")+' · '+fnum(rows.length)+'</h3>'+
- '<p class="source-summary">Browse source-linked works without losing the chronological map. Selecting one opens its historical and textual context.</p>'+
- '<div class="browse-grid">'+dataPart.map(bookButton).join("")+'</div>'+
- pagination(page,Math.ceil(rows.length/24),"cluster")+'</section>';
+ const undated=state.cluster.startsWith("undated:");
+ const q=normal(state.clusterSearch);
+ const rows=arr.slice().filter(n=>!q||n.searchText.includes(q)).sort((a,b)=>
+   (a.year??99999)-(b.year??99999)||a.title.localeCompare(b.title,"ar"));
+ const perPage=20,page=Math.max(1,Math.min(state.clusterPage,Math.max(1,Math.ceil(rows.length/perPage))));
+ state.clusterPage=page;
+ const selected=rows.find(x=>x.id===state.selected);
+ return '<section data-time-workbench class="atlas-evidence-shelf" tabindex="-1" role="region" aria-label="Interactive source-record workbench">'+
+ '<div class="atlas-shelf-head"><div><span class="eyebrow">'+(undated?'UNDATED SOURCE RECORDS':'WORKS WITH DATED EVIDENCE')+'</span>'+
+ '<h3>'+(undated?'Browse works without an attested date':'Examine sources in this chronological group')+
+ ' <small>'+fnum(rows.length)+' / '+fnum(arr.length)+'</small></h3>'+
+ '<p>'+(undated?'These catalogue records cannot be assigned a year on current evidence. Open any book or author biography, or search this group without leaving the historical map.':
+ 'Author-death anchors and composition dates are different kinds of evidence. Open a record to inspect the date and its source.')+'</p></div>'+
+ '<button type="button" data-close-shelf>Close</button></div>'+
+ '<label class="atlas-shelf-search">Search this source group<input data-shelf-search type="search" autocomplete="off" placeholder="Title, author, Arabic name…" value="'+safe(state.clusterSearch)+'"/></label>'+
+ (selected?shelfInlineInspector(selected):"")+
+ '<div class="atlas-shelf-grid">'+rows.slice((page-1)*perPage,page*perPage).map(shelfCard).join("")+
+ (rows.length?'':'<p class="source-summary">No title or author matches this source-group search.</p>')+'</div>'+
+ pagination(page,Math.ceil(rows.length/perPage),"cluster")+'</section>';
 }
 function bookButton(n){
  return '<button class="browse-card" type="button" aria-current="'+(n.id===state.selected)+'" data-select="'+safe(n.id)+'">'+
@@ -735,7 +796,9 @@ function sourceCards(n){
  const anchors=evid.map(s=>(validURL(s.url)?'<a class="citation-link" href="'+safe(validURL(s.url))+'" target="_blank" rel="noopener noreferrer">'+safe(s.title||s.id)+'</a>':'<p>'+safe(s.title||s.id)+'</p>')+
   (s.locator?'<p class="source-summary">'+safe(s.locator)+'</p>':"")).join("");
  const own=validURL(n.sourceURL)?'<a class="citation-link" href="'+safe(validURL(n.sourceURL))+'" target="_blank" rel="noopener noreferrer">Open original '+safe(n.provenance)+' record</a>':"";
- return anchors+own||'<p class="source-summary">No clickable source record is available in this selection.</p>';
+ const biography=validURL(n.authorURL)?'<a class="citation-link" href="'+safe(validURL(n.authorURL))+'" target="_blank" rel="noopener noreferrer">Original author biography'+(n.yearKind==="verified_author_death_proxy"?" · source of death date":" · check for missing dates")+'</a>':"";
+ const date=validURL(n.dateEvidenceURL)&&n.dateEvidenceURL!==n.authorURL?'<a class="citation-link" href="'+safe(validURL(n.dateEvidenceURL))+'" target="_blank" rel="noopener noreferrer">Date evidence</a>':"";
+ return anchors+own+biography+date||'<p class="source-summary">No clickable source record is available in this selection.</p>';
 }
 function recordPanel(){
  const n=data.byId.get(state.selected);
@@ -760,6 +823,11 @@ function recordPanel(){
  (n.note?'<p class="record-text">'+safe(n.note)+'</p>':"")+
  (n.warning?'<p class="caution">'+safe(n.warning)+'</p>':"")+
  (n.manuscripts?'<p class="record-text">Catalogue mentions '+n.manuscripts+' manuscript records; not individually verified by this atlas.</p>':"")+
+ (n.yearKind==="verified_author_death_proxy"?'<p class="record-text"><strong>Cited author-death anchor:</strong> '+safe(n.authorDates)+'. The work is not claimed to have been composed in that year. See the linked author biography below.</p>':"")+
+ (n.authorURL&&data.authorWorks.get(n.authorURL)?.length>1?
+ '<details class="side-details"><summary>Other catalogue entries assigned to this author ('+(data.authorWorks.get(n.authorURL).length-1)+')</summary>'+
+ data.authorWorks.get(n.authorURL).filter(x=>x.id!==n.id).slice(0,30).map(x=>'<article><button type="button" data-select="'+safe(x.id)+'">'+safe(x.title)+'</button><p>Same catalogue author ID; not an asserted commentary or influence relation.</p></article>').join("")+
+ '</details>':"")+
  '<p class="caution">'+safe(caution)+'</p>'+
  '<div class="record-actions"><button type="button" data-show-network="'+safe(n.id)+'">View sources &amp; reception</button>'+
  '<button type="button" data-copy>Copy link</button>'+
@@ -832,7 +900,7 @@ function render(first=false){
  (geographic?'':'<aside class="sidebar" aria-label="Work and evidence details"><div class="side-head"><h2>Selected work · evidence</h2>'+
  '<button type="button" data-close-side>Clear focus</button></div><div class="side-content">'+recordPanel()+'</div></aside>')+'</div>';
  fillSearch();
- if(state.view==="network"||state.view==="timeline")centerBrowseRail();
+ if((state.view==="network"||state.view==="timeline")&&!state.cluster)centerBrowseRail();
  if(first)writeHash(false);
 }
 function changeRange(a,b){
@@ -842,6 +910,9 @@ function changeRange(a,b){
  state.cluster="";state.clusterPage=1;
  writeHash();render();
 }
+function focusWorkbench(){
+ requestAnimationFrame(()=>{const panel=ROOT.querySelector("[data-time-workbench]");if(panel){panel.scrollIntoView({block:"start",behavior:"auto"});panel.focus({preventScroll:true});}});
+}
 function onClick(e){
  const el=e.target.closest("button,[role=button]");if(!el||!ROOT.contains(el))return;
  const summary=e.target.closest(".atlas-advanced summary");if(summary){state.advancedOpen=!state.advancedOpen;return;}
@@ -849,7 +920,7 @@ function onClick(e){
   initialSubject(el.getAttribute("data-subject"));writeHash(true);render();return;
  }
  if(el.hasAttribute("data-view")){
-  state.view=el.getAttribute("data-view");state.cluster="";state.evidence="";
+  state.view=el.getAttribute("data-view");state.cluster="";state.clusterSearch="";state.evidence="";
   writeHash(true);render();return;
  }
  if(el.hasAttribute("data-browse-step")){browseStep(Number(el.getAttribute("data-browse-step"))||0);return;}
@@ -864,6 +935,12 @@ function onClick(e){
   timelineFollow(data.byId.get(state.selected));
   writeHash(true);render();return;
  }
+ if(el.hasAttribute("data-cluster-work")){
+  const id=el.getAttribute("data-cluster-work"),n=data.byId.get(id);
+  if(!n)return;
+  state.selected=id;state.evidence="";state.search="";
+  writeHash(true);render();focusWorkbench();return;
+ }
  if(el.hasAttribute("data-select")||el.hasAttribute("data-search-select")){
   chooseWork(el.getAttribute("data-select")||el.getAttribute("data-search-select"),el.hasAttribute("data-search-select"));return;
  }
@@ -873,14 +950,25 @@ function onClick(e){
   const items=renderCache.clusters.get(key);if(!items?.length)return;
   const a=Math.min(...items.map(x=>x.year)),b=Math.max(...items.map(x=>x.year));
   if(state.to-state.from>130){changeRange(a-45,b+45);return}
-  state.cluster=key;state.clusterPage=1;render();return;
+  state.cluster=key;state.clusterSearch="";state.clusterPage=1;writeHash(true);render();focusWorkbench();return;
  }
- if(el.hasAttribute("data-unplaced")){state.cluster=el.getAttribute("data-unplaced");state.clusterPage=1;render();return}
+ if(el.hasAttribute("data-open-unplaced-all")){
+  state.cluster="undated:all";state.clusterSearch="";state.clusterPage=1;
+  writeHash(true);render();focusWorkbench();return;
+ }
+ if(el.hasAttribute("data-unplaced")){
+  state.cluster=el.getAttribute("data-unplaced");state.clusterSearch="";state.clusterPage=1;
+  writeHash(true);render();focusWorkbench();return;
+ }
+ if(el.hasAttribute("data-close-shelf")){
+  state.cluster="";state.clusterSearch="";state.clusterPage=1;
+  writeHash();render();return;
+ }
  if(el.hasAttribute("data-page")){
   const [kind,delta]=el.getAttribute("data-page").split(":");
   if(kind==="catalogue")state.bookPage=Math.max(1,state.bookPage+Number(delta));
   else state.clusterPage=Math.max(1,state.clusterPage+Number(delta));
-  render();return;
+  render();if(kind==="cluster")focusWorkbench();return;
  }
  if(el.hasAttribute("data-zoom")){
   const fac=Number(el.getAttribute("data-zoom")),mid=(state.from+state.to)/2,span=(state.to-state.from)*fac;
@@ -896,12 +984,12 @@ function onClick(e){
   if(b>a+9)changeRange(a,b);else ROOT.querySelector("[data-year-to]")?.setCustomValidity("End year must be at least ten years after the start");return;
  }
  if(el.hasAttribute("data-clear-family")){state.family="";writeHash();render();return}
- if(el.hasAttribute("data-reset")){state.school="all";state.family="";state.source="all";state.edgeType="all";state.certainty="all";state.search="";state.region="";state.cluster="";state.bookPage=1;writeHash();render();return}
+ if(el.hasAttribute("data-reset")){state.school="all";state.family="";state.source="all";state.edgeType="all";state.certainty="all";state.search="";state.region="";state.cluster="";state.clusterSearch="";state.bookPage=1;writeHash();render();return}
  if(el.hasAttribute("data-evidence")){state.evidence=el.getAttribute("data-evidence");render();return}
  if(el.hasAttribute("data-close-evidence")){state.evidence="";render();return}
  if(el.hasAttribute("data-place")){state.region=el.getAttribute("data-place");state.view="catalogue";state.bookPage=1;writeHash();render();return}
  if(el.hasAttribute("data-copy")){writeHash();if(navigator.clipboard?.writeText)navigator.clipboard.writeText(location.href);return}
- if(el.hasAttribute("data-close-side")){state.selected="";state.evidence="";writeHash();render();return}
+ if(el.hasAttribute("data-close-side")){state.selected="";state.evidence="";state.cluster="";writeHash();render();return}
 }
 function onChange(e){
  const t=e.target;if(!ROOT.contains(t))return;
@@ -918,7 +1006,19 @@ function onChange(e){
 }
 let pendingSearch=null;
 function onInput(e){
- const t=e.target;if(t.id!=="gn-search")return;
+ const t=e.target;
+ if(t.hasAttribute?.("data-shelf-search")){
+  const q=t.value.slice(0,120),cursor=t.selectionStart;
+  clearTimeout(pendingSearch);
+  pendingSearch=setTimeout(()=>{
+   if(!t.isConnected)return;
+   state.clusterSearch=q;state.clusterPage=1;writeHash();render();
+   const next=ROOT.querySelector("[data-shelf-search]");
+   if(next){next.focus({preventScroll:true});try{next.setSelectionRange(cursor,cursor);}catch{}}
+  },150);
+  return;
+ }
+ if(t.id!=="gn-search")return;
  const value=t.value.slice(0,140);state.search=value;state.searchOpen=!!value.trim();
  clearTimeout(pendingSearch);
  pendingSearch=setTimeout(()=>{

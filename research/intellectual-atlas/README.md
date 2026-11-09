@@ -1,3 +1,16 @@
+## 9 November 2026: No dead-end “unplaced” sources
+
+The historical timeline and geographical map now distinguish what can be defensibly placed from what cannot:
+
+* **764 Alreq catalogue records** receive a qualified chronological anchor from **19 individually identified author biographies** in `corpora/author-chronology.json`. The underlying Alreq records are unchanged. A date in the timeline means **author died in that year**, never that a specific book was composed, printed, copied or transmitted then. The original author biography is one click away.
+* **3,393 Alreq entries still lack a sourced author death** in the mapped source register; additional undated contextual items from the canonical atlas remain separately counted. No date has been generated from the title, nisba, school label or another work with a similar name.
+* Every timeline “unplaced” label now opens an **immediately visible, searchable bibliographic workbench above the map**, not a hidden/static card or an invisible list below a tall SVG. It has Arabic/Latin title and author search, pagination, direct work profiles, catalogue citation links and author biography links. Selecting a record displays its evidence in place. The workbench can be shared by URL and remains open after reload.
+* The geographical map’s formerly passive “works unlocated” count now also opens a searchable catalogue with source links. Author lifetimes do **not** supply unsupported locations or work composition sites.
+* Records assigned to the same author page are displayed as **catalogue siblings**, never as automatically inferred commentary, teacher/student or influence relationships. Such arrows still require independent evidence.
+
+This behavior applies across fiqh, uṣūl, naḥw, ṣarf, balāgha, and all other sciences in the same atlas UI. New QA: `tests/verify_unplaced_workbench_browser.py`; source-integrity and browser CI: `.github/workflows/atlas-undated-workbench.yml`. Only independently researched dates/places may be added to the underlying registers.
+
+---
 ## Continuous book traversal: timeline and complete source graph — 9 November 2026
 
 The two **text-facing modes**—**Book timeline** and **Source network**—now share a persistent horizontal **Browse texts** rail. The selected book remains in focus while browsing:

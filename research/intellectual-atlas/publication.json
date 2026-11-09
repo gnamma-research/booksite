@@ -2,7 +2,7 @@
   "title": "Texts in Time · Islamic Intellectual Atlas",
   "revision": "tajrid-critical-links-8-2026-10-31",
   "status": "working research",
-  "ui_revision": "hanafi-geography-map-and-source-network-2026-11-09",
+  "ui_revision": "evidence-dated-undated-source-workbench-2026-11-09",
   "mobile_interface_note": "The main UI has Hanafi-inspired tabs By century, By region and Source network, with one subject selector and search. A georeferenced coastal map shows separately documented author and work events, and unplaced source records remain counted. Source network and book timeline remain available across sciences.",
   "whole_range_note": "Use the shared year controls and zoomable era clusters; switch sciences without changing map interface.",
   "date_marker_note": "Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.",
@@ -56,6 +56,15 @@
     "complete_corpora_claimed": false,
     "license": "CC BY-NC-SA 4.0"
   },
+  "chronology_enrichment": {
+    "source": "corpora/author-chronology.json",
+    "alreq_author_biographies_checked": 19,
+    "alreq_records_with_sourced_author_death_anchor": 764,
+    "alreq_records_still_without_author_death_anchor": 3393,
+    "event_type": "author death, not book composition or manuscript copying",
+    "unplaced_workflow": "Immediate searchable source workbench in both chronology and geographic views",
+    "automatic_same_title_merges": 0
+  },
   "geography": {
     "data_url": "corpora/geo-events.json",
     "geocoded_events": 41,
@@ -72,11 +81,14 @@
     "graph_interactions": [
       "one shared year axis for all sciences",
       "zoom and pan to era clusters",
-      "school and historical early-jurist lanes",
-      "unplaced works within same map",
+      "sourced author-death timeline anchors",
+      "visible undated workbench and Arabic title/author search",
+      "author/source identity and citations",
+      "school and early-jurist lanes",
+      "unplaced geography catalogue",
       "source-evidence work panel",
-      "Hanafi-style bidirectional network",
-      "curated-family and selective principal texts"
+      "bidirectional text network",
+      "principal texts"
     ],
     "registered_early_historical_authorities": 16,
     "alreq_fiqh_by_school": {
