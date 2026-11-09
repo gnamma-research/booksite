@@ -6,7 +6,7 @@
   "english_working_draft_page_count": 128,
   "source_checked_modern_digital_page_count": 19,
   "clause_record_count": 198,
-  "issues_unresolved_digital": 12,
+  "issues_unresolved_digital": 11,
   "historical_print_independently_collated_pages": 1,
   "manuscript_variants": 0,
   "authorial_introduction_english_draft_complete": true,
@@ -24,12 +24,15 @@
       "english_clause_checked_B2007": true,
       "digital_clause_check_count": 11,
       "digital_crux_count": 1,
-      "actual_historical_print_inspected": false,
+      "actual_historical_print_inspected": true,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
       "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_kind": "B2007-main-site-printed-digital",
+      "historical_print_selected_loci": 1,
+      "historical_print_printed_page": 5,
+      "historical_print_status": "bounded photographed 1876 printed Arabic check, not full-page or MS"
     },
     {
       "b2007_page": 19,
@@ -38,13 +41,16 @@
       "english_working_draft": true,
       "english_clause_checked_B2007": true,
       "digital_clause_check_count": 17,
-      "digital_crux_count": 2,
-      "actual_historical_print_inspected": false,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": true,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
       "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_kind": "B2007-main-site-printed-digital",
+      "historical_print_selected_loci": 2,
+      "historical_print_printed_page": 6,
+      "historical_print_status": "bounded photographed 1876 printed Arabic check, not full-page or MS"
     },
     {
       "b2007_page": 20,
@@ -69,12 +75,15 @@
       "english_clause_checked_B2007": true,
       "digital_clause_check_count": 13,
       "digital_crux_count": 0,
-      "actual_historical_print_inspected": false,
+      "actual_historical_print_inspected": true,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
       "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_kind": "B2007-main-site-printed-digital",
+      "historical_print_selected_loci": 1,
+      "historical_print_printed_page": 7,
+      "historical_print_status": "bounded photographed 1876 printed Arabic check, not full-page or MS"
     },
     {
       "b2007_page": 22,
@@ -1980,5 +1989,11 @@
   "issues_flagged_including_resolved_typographic": 13,
   "historical_print_pages_with_selected_loci_checked": 1,
   "historical_print_variants_verified": 1,
-  "historical_print_collation_scope": "ONE word/phrase on printed I1876 p18, PDF scan22 ↔ B2007 p34; NOT whole-page collation"
+  "historical_print_collation_scope": "ONE word/phrase on printed I1876 p18, PDF scan22 ↔ B2007 p34; NOT whole-page collation",
+  "historical_print_pages_with_selected_loci": 3,
+  "historical_print_compared_clause_records": 4,
+  "historical_print_differences": 2,
+  "historical_print_agreements": 2,
+  "historical_print_source": "I1876 printed pp5-7, Princeton PDF scans 9-11, directly photographed; selected spans only",
+  "independent_manuscript_variants": 0
 }
