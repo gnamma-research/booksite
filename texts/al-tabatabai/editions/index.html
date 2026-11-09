@@ -56,13 +56,22 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font:1
    const digest=rows[0]?.source_sha256;
    if(!/^[0-9a-f]{64}$/.test(digest||'')||!globalThis.crypto?.subtle)return 'unverified';
    if(rows.some(row=>row.source_sha256!==digest))return 'unverified';
-   try{
-     const response=await fetch(sourcePaths[book],{cache:'no-store'});
+   async function shaOf(url){
+     const response=await fetch(url,{cache:'no-store'});
      if(!response.ok)throw Error('source not available');
      const bytes=await response.arrayBuffer();
      const hash=await crypto.subtle.digest('SHA-256',bytes);
-     const actual=Array.from(new Uint8Array(hash),v=>v.toString(16).padStart(2,'0')).join('');
-     return actual===digest?'current':'earlier';
+     return Array.from(new Uint8Array(hash),v=>v.toString(16).padStart(2,'0')).join('');
+   }
+   try{
+     if(await shaOf(sourcePaths[book])!==digest)return 'earlier';
+     if(book==='Nihāyat al-Ḥikma'){
+       const supplement=rows[0]?.supplement_sha256;
+       if(!/^[0-9a-f]{64}$/.test(supplement||''))return 'earlier';
+       if(rows.some(row=>row.supplement_sha256!==supplement))return 'unverified';
+       if(await shaOf('../nihayat-al-hikma/data/editorial-supplement.json')!==supplement)return 'earlier';
+     }
+     return 'current';
    }catch(_){return 'unverified'}
  }
  try{
