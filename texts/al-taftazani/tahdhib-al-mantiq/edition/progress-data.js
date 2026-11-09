@@ -1,8 +1,8 @@
-/* Canonical Tahdhīb nine source-graded goals. No page-count inflation from excerpts/notes. */
+/* Canonical Stage109 progress: nine evidence-graded goals, independent section IDs at Q165 reset. */
 window.GNAMMA_TAHDHIB_PROGRESS={
   "schema": "gnamma-tahdhib-cumulative-progress-v1",
   "updated": "2026-11-09",
-  "stage": "108",
+  "stage": "109",
   "baseline": {
     "logicMatnDivisions": 19,
     "kalamClauses": 1044,
@@ -57,19 +57,19 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     },
     {
       "id": "opening-notes",
-      "label": "Later-gloss numbered notes · working English Q127–160",
-      "current": 122,
-      "total": 126,
+      "label": "LATER PREFACE H notes · English first pass (Q127–164)",
+      "current": 136,
+      "total": 140,
       "unit": "numbered notes",
-      "note": "Local indexed-note cohort only (not entire H); four incomplete notes 1,25,82,90. A finished note is not a finished Qum printed page."
+      "note": "Whole local prefatory numbered sequence 1–140; four still incomplete 1,25,82,90. Q165 begins NEW section and numbering restarts at 1, not 141."
     },
     {
       "id": "numbered-arabic",
-      "label": "Later-gloss notes · full searchable-Arabic working transcription",
+      "label": "LATER PREFACE H notes · full searchable Arabic transcription",
       "current": 54,
-      "total": 126,
+      "total": 140,
       "unit": "notes",
-      "note": "Full digital Arabic on notes24–75 and114–115; 72 others have Arabic locators only. None independently photographed or manuscript-certified."
+      "note": "Full working digital Arabic for 24–75 and 114–115, locator-only for 86 notes; zero independent photographed manuscript checks. New Q165 section tracked separately."
     },
     {
       "id": "historical-classes",
@@ -89,7 +89,7 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     }
   ],
   "noteLedger": {
-    "range": "HWN-001–HWN-126",
+    "range": "H-PREFACE: HWN-001–HWN-140",
     "fullyTranslatedFirstPass": [
       2,
       3,
@@ -212,7 +212,21 @@ window.GNAMMA_TAHDHIB_PROGRESS={
       123,
       124,
       125,
-      126
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140
     ],
     "partiallyTranslated": [
       1,
@@ -220,7 +234,7 @@ window.GNAMMA_TAHDHIB_PROGRESS={
       82,
       90
     ],
-    "currentChapter": "Later H glosses: logic, genitive constructions, īmān, rhetorical figures (Qum pp127–160)",
+    "currentChapter": "Later prefatory H glosses Q127–164; Q165 starts NEW H-INTRO section, local numbering resets",
     "sourcePhotographed": false,
     "sourceArabicTranscribedCompletely": false,
     "arabicFullSearchableNotes": [
@@ -286,7 +300,18 @@ window.GNAMMA_TAHDHIB_PROGRESS={
       86,
       90,
       112
-    ]
+    ],
+    "prefaceSectionClosedAtPrintedPage": 164,
+    "nextSection": {
+      "id": "H-INTRO",
+      "titleArabic": "حواشي مقدمة علم المنطق",
+      "printedStartPage": 165,
+      "localFirstNote": 1,
+      "stableFirstId": "HWN-INTRO-001",
+      "notesTranslated": 0,
+      "notesArabicTranscribed": 0,
+      "fullPageCertified": 0
+    }
   },
   "currentRelease": {
     "mainReader": "index.html",
@@ -294,7 +319,7 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     "sampleReader": "hawashi-q125-178.html",
     "criticalDashboard": "critical-status.html",
     "latestHandoff": "HANDOFF_LATEST.md",
-    "cumulativeMarkdown": "batches/hawashi-numbered-cumulative-hwn001-126.md"
+    "cumulativeMarkdown": "batches/hawashi-preface-numbered-cumulative-hwn001-140.md"
   },
   "stages": [
     {
@@ -429,6 +454,27 @@ window.GNAMMA_TAHDHIB_PROGRESS={
         "progress-data.js",
         "HANDOFF_LATEST.md",
         "stages/STAGE108_NOTES_111_126.md"
+      ]
+    },
+    {
+      "id": "109",
+      "date": "2026-11-09",
+      "title": "14 final prefatory H glosses127–140; Q165 starts separate note1 section",
+      "sourcePages": "127–164",
+      "noteRange": "H-PREFACE 1–140",
+      "fullNoteCount": 136,
+      "partialNoteCount": 4,
+      "arabicNoteCount": 54,
+      "certifiedPages": 0,
+      "report": "stages/STAGE109_PREFACE_COMPLETION_AND_RESET.md",
+      "files": [
+        "hawashi-numbered-notes-stage109a.js",
+        "batches/hawashi-preface-numbered-cumulative-hwn001-140.md",
+        "hawashi-numbered-notes.html",
+        "progress-data.js",
+        "progress.html",
+        "HANDOFF_LATEST.md",
+        "stages/STAGE109_PREFACE_COMPLETION_AND_RESET.md"
       ]
     }
   ]
