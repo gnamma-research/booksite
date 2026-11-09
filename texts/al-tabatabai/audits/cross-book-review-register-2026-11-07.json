@@ -3,14 +3,14 @@
   "title": "Cross-book source and English review register",
   "summary": {
     "date": "2026-11-09",
-    "totalReaderUnits": 276,
+    "totalReaderUnits": 280,
     "M": {
-      "localReading": 29,
-      "localTranslated": 29,
+      "localReading": 33,
+      "localTranslated": 33,
       "fullAuthorialBooks": 6,
       "completeLocalBookContent": false,
       "mappedAuthorialTopics": 68,
-      "status": "Selected introductory passages and Books I and III selections only; full authorial corpus incomplete"
+      "status": "Includes four new complete opening Book II readings on universals; six-book Muẓaffar source still incompletely transcribed and translated"
     },
     "B": {
       "localReading": 111,
@@ -27,7 +27,11 @@
       "additionalGlossaryTerms": 47,
       "independentArabicCollation": false,
       "adoptedPrintedEditorialEmendations": 8,
-      "supplementaryCriticalNotes": 8
+      "supplementaryCriticalNotes": 8,
+      "englishAutomatedStructureScreened": 136,
+      "englishLocalBilingualRead": 6,
+      "englishIndependentlyCollated": 0,
+      "englishTriageRegister": "nihaya-english-collation-triage-2026-11-09.json"
     },
     "expertReviewedUnitsVerified": 0,
     "expertReviewedUnitStatus": "Not documented; zero units are claimed to have passed independent specialist review",
@@ -409,6 +413,102 @@
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "selected authorial opening on linguistic signification; full logic corpus not yet included",
       "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+    },
+    {
+      "id": "M-K-01",
+      "book": "M",
+      "stage": "K",
+      "chapter": 1,
+      "title": "The universal and the particular",
+      "source": {
+        "page": "56–57",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf (1402 AH), checked against the digitized searchable text; early al-Nuʿmān edition catalogued by Arabic Collections Online as public domain",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=56&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 641,
+      "englishCharacters": 885,
+      "sourceEditionReviewed": "Rafed 1402 AH searchable transcription; early 1968 NYU public-domain scan registered but individual wording not yet visually collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
+      "sourceAssessment": "only the opening Book II sections currently imported; full Book II and other authorial books remain incomplete",
+      "nextReview": "Collate against the 1968 printed pages, verify precise individual phrases and exercises, then continue the missing sections."
+    },
+    {
+      "id": "M-K-02",
+      "book": "M",
+      "stage": "K",
+      "chapter": 1,
+      "title": "Universality does not require actual instances",
+      "source": {
+        "page": "57–57",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf (1402 AH), checked against the digitized searchable text; early al-Nuʿmān edition catalogued by Arabic Collections Online as public domain",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=57&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1128,
+      "englishCharacters": 1750,
+      "sourceEditionReviewed": "Rafed 1402 AH searchable transcription; early 1968 NYU public-domain scan registered but individual wording not yet visually collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
+      "sourceAssessment": "only the opening Book II sections currently imported; full Book II and other authorial books remain incomplete",
+      "nextReview": "Collate against the 1968 printed pages, verify precise individual phrases and exercises, then continue the missing sections."
+    },
+    {
+      "id": "M-K-03",
+      "book": "M",
+      "stage": "K",
+      "chapter": 2,
+      "title": "The relative particular",
+      "source": {
+        "page": "58–58",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf (1402 AH), checked against the digitized searchable text; early al-Nuʿmān edition catalogued by Arabic Collections Online as public domain",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=58&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1175,
+      "englishCharacters": 1668,
+      "sourceEditionReviewed": "Rafed 1402 AH searchable transcription; early 1968 NYU public-domain scan registered but individual wording not yet visually collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
+      "sourceAssessment": "only the opening Book II sections currently imported; full Book II and other authorial books remain incomplete",
+      "nextReview": "Collate against the 1968 printed pages, verify precise individual phrases and exercises, then continue the missing sections."
+    },
+    {
+      "id": "M-K-04",
+      "book": "M",
+      "stage": "K",
+      "chapter": 3,
+      "title": "Univocal and graduated universals",
+      "source": {
+        "page": "59–59",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf (1402 AH), checked against the digitized searchable text; early al-Nuʿmān edition catalogued by Arabic Collections Online as public domain",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=59&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1161,
+      "englishCharacters": 1617,
+      "sourceEditionReviewed": "Rafed 1402 AH searchable transcription; early 1968 NYU public-domain scan registered but individual wording not yet visually collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
+      "sourceAssessment": "only the opening Book II sections currently imported; full Book II and other authorial books remain incomplete",
+      "nextReview": "Collate against the 1968 printed pages, verify precise individual phrases and exercises, then continue the missing sections."
     },
     {
       "id": "M-Q-01",
@@ -3432,7 +3532,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 32,
+        "englishParagraphs": 29,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-I-01",
@@ -3456,7 +3566,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 10,
+        "englishParagraphs": 10,
+        "reviewHints": [],
+        "localBilingualRead": true,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-I-02",
@@ -3483,7 +3601,17 @@
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
       "nextReview": "Independently collate autograph/early Arabic manuscript if obtainable, check context and Arabic syntax with a specialist, and verify that 1428 editorial correction is preferable.",
-      "textualLocusAssessment": "Explicit later editorial emendation verified and cited (1428 ed., vol.1 p.18 n.1); not evidence of manuscript attestation."
+      "textualLocusAssessment": "Explicit later editorial emendation verified and cited (1428 ed., vol.1 p.18 n.1); not evidence of manuscript attestation.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 67,
+        "englishParagraphs": 59,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-I-03",
@@ -3510,7 +3638,17 @@
       "flag": "1428 editor's historical ascription to Aquinas contradicted by Aquinas ST I q13 a5",
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 22,
+        "englishParagraphs": 19,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-I-04",
@@ -3536,7 +3674,15 @@
       "flag": "1428 editorial gloss on Tusi's doctrine; primary Tusi source not collated",
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 14,
+        "englishParagraphs": 12,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-I-05",
@@ -3560,7 +3706,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 26,
+        "englishParagraphs": 22,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-II-01",
@@ -3584,7 +3740,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 16,
+        "englishParagraphs": 16,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-II-02",
@@ -3611,7 +3775,15 @@
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
       "nextReview": "Collate further printed and manuscript witnesses for the deletion and evaluate the metaphysical force of the phrase with commentaries on linking existence.",
-      "textualLocusAssessment": "Explicit later editorial conjecture adopted in both language panels with full critical note; not yet independently approved by a manuscript editor."
+      "textualLocusAssessment": "Explicit later editorial conjecture adopted in both language panels with full critical note; not yet independently approved by a manuscript editor.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 7,
+        "englishParagraphs": 6,
+        "reviewHints": [],
+        "localBilingualRead": true,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-II-03",
@@ -3635,7 +3807,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 9,
+        "englishParagraphs": 8,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-III-01",
@@ -3659,7 +3839,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 47,
+        "englishParagraphs": 32,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IV-PRE",
@@ -3683,7 +3873,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 5,
+        "englishParagraphs": 1,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IV-01",
@@ -3707,7 +3907,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 62,
+        "englishParagraphs": 38,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IV-02",
@@ -3731,7 +3941,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 22,
+        "englishParagraphs": 18,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IV-03",
@@ -3755,7 +3975,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 28,
+        "englishParagraphs": 25,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IV-04",
@@ -3779,7 +4009,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 24,
+        "englishParagraphs": 21,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IV-05",
@@ -3803,7 +4043,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 28,
+        "englishParagraphs": 25,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IV-06",
@@ -3827,7 +4077,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 30,
+        "englishParagraphs": 22,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IV-07",
@@ -3851,7 +4111,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 3,
+        "englishParagraphs": 3,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IV-08",
@@ -3875,7 +4143,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 36,
+        "englishParagraphs": 34,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-V-01",
@@ -3899,7 +4175,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 5,
+        "englishParagraphs": 4,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-V-02",
@@ -3923,7 +4207,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 12,
+        "englishParagraphs": 10,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-V-03",
@@ -3947,7 +4239,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 21,
+        "englishParagraphs": 15,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-V-04",
@@ -3971,7 +4273,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 9,
+        "englishParagraphs": 9,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-V-05",
@@ -3995,7 +4305,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 29,
+        "englishParagraphs": 26,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-V-06",
@@ -4019,7 +4339,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 27,
+        "englishParagraphs": 22,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-V-07",
@@ -4043,7 +4373,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 10,
+        "englishParagraphs": 11,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-PRE",
@@ -4067,7 +4405,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 1,
+        "englishParagraphs": 1,
+        "reviewHints": [
+          "lexical-spot-check"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-01",
@@ -4091,7 +4439,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 19,
+        "englishParagraphs": 13,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-02",
@@ -4115,7 +4473,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 15,
+        "englishParagraphs": 10,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-03",
@@ -4141,7 +4509,15 @@
       "flag": "Edited plural to singular (1428 editor vol 1 p158 n1); base 'الصور الطبيعية' retained in footnote; manuscript witness for singular not verified.",
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Seek an independently collated Arabic witness to decide if the plural is merely an original slip or a genuine alternative authorial reading."
+      "nextReview": "Seek an independently collated Arabic witness to decide if the plural is merely an original slip or a genuine alternative authorial reading.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 8,
+        "englishParagraphs": 6,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-04",
@@ -4165,7 +4541,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 43,
+        "englishParagraphs": 27,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-05",
@@ -4189,7 +4575,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 27,
+        "englishParagraphs": 19,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-06",
@@ -4213,7 +4609,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 24,
+        "englishParagraphs": 20,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-07",
@@ -4237,7 +4643,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 21,
+        "englishParagraphs": 17,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-08",
@@ -4261,7 +4677,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 8,
+        "englishParagraphs": 5,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-09",
@@ -4285,7 +4711,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 18,
+        "englishParagraphs": 8,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-10",
@@ -4309,7 +4745,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 18,
+        "englishParagraphs": 10,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-11",
@@ -4333,7 +4779,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 7,
+        "englishParagraphs": 4,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-12",
@@ -4357,7 +4813,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 18,
+        "englishParagraphs": 9,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-13",
@@ -4381,7 +4847,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 28,
+        "englishParagraphs": 20,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-14",
@@ -4405,7 +4881,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 12,
+        "englishParagraphs": 9,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-15",
@@ -4432,7 +4918,17 @@
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
       "nextReview": "Compare the edited reading against independently collated early witnesses and the argument in later commentaries.",
-      "textualLocusAssessment": "Editorial conjecture explicitly identified in the revised 1428 printed edition; prior 1417 reading preserved; not independently certified by manuscripts."
+      "textualLocusAssessment": "Editorial conjecture explicitly identified in the revised 1428 printed edition; prior 1417 reading preserved; not independently certified by manuscripts.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 48,
+        "englishParagraphs": 26,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-16",
@@ -4459,7 +4955,17 @@
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
       "nextReview": "Compare the edited reading against independently collated early witnesses and the argument in later commentaries.",
-      "textualLocusAssessment": "Editorial conjecture explicitly identified in the revised 1428 printed edition; prior 1417 reading preserved; not independently certified by manuscripts."
+      "textualLocusAssessment": "Editorial conjecture explicitly identified in the revised 1428 printed edition; prior 1417 reading preserved; not independently certified by manuscripts.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 32,
+        "englishParagraphs": 27,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-17",
@@ -4483,7 +4989,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 24,
+        "englishParagraphs": 18,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-18",
@@ -4507,7 +5023,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 9,
+        "englishParagraphs": 7,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-19",
@@ -4531,7 +5055,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 12,
+        "englishParagraphs": 11,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-20",
@@ -4555,7 +5087,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 7,
+        "englishParagraphs": 5,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VI-21",
@@ -4579,7 +5119,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 14,
+        "englishParagraphs": 12,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VII-01",
@@ -4603,7 +5151,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 13,
+        "englishParagraphs": 13,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VII-02",
@@ -4627,7 +5183,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 13,
+        "englishParagraphs": 12,
+        "reviewHints": [],
+        "localBilingualRead": true,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VII-03",
@@ -4651,7 +5215,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 15,
+        "englishParagraphs": 14,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VII-04",
@@ -4675,7 +5247,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 14,
+        "englishParagraphs": 13,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VII-05",
@@ -4699,7 +5279,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 11,
+        "englishParagraphs": 9,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VII-06",
@@ -4723,7 +5311,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 25,
+        "englishParagraphs": 10,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VII-07",
@@ -4747,7 +5345,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 5,
+        "englishParagraphs": 4,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VII-08",
@@ -4771,7 +5377,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 6,
+        "englishParagraphs": 4,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VII-09",
@@ -4795,7 +5409,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 27,
+        "englishParagraphs": 23,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VIII-01",
@@ -4819,7 +5443,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 11,
+        "englishParagraphs": 7,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VIII-02",
@@ -4843,7 +5477,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 13,
+        "englishParagraphs": 7,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VIII-03",
@@ -4867,7 +5511,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 62,
+        "englishParagraphs": 51,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VIII-04",
@@ -4891,7 +5545,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 16,
+        "englishParagraphs": 14,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VIII-05",
@@ -4915,7 +5577,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 33,
+        "englishParagraphs": 32,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VIII-06",
@@ -4939,7 +5609,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 7,
+        "englishParagraphs": 7,
+        "reviewHints": [
+          "lexical-spot-check"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VIII-07",
@@ -4963,7 +5643,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 21,
+        "englishParagraphs": 18,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VIII-08",
@@ -4987,7 +5677,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 4,
+        "englishParagraphs": 3,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VIII-09",
@@ -5011,7 +5709,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 7,
+        "englishParagraphs": 6,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VIII-10",
@@ -5035,7 +5741,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 15,
+        "englishParagraphs": 13,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VIII-11",
@@ -5059,7 +5773,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 50,
+        "englishParagraphs": 36,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VIII-12",
@@ -5083,7 +5807,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 25,
+        "englishParagraphs": 21,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VIII-13",
@@ -5107,7 +5841,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 31,
+        "englishParagraphs": 22,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VIII-14",
@@ -5131,7 +5875,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 13,
+        "englishParagraphs": 11,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-VIII-15",
@@ -5155,7 +5907,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 5,
+        "englishParagraphs": 4,
+        "reviewHints": [
+          "lexical-spot-check"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IX-PRE",
@@ -5179,7 +5941,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 6,
+        "englishParagraphs": 5,
+        "reviewHints": [
+          "lexical-spot-check"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IX-01",
@@ -5203,7 +5975,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 12,
+        "englishParagraphs": 10,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IX-02",
@@ -5227,7 +6007,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 24,
+        "englishParagraphs": 16,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IX-03",
@@ -5251,7 +6041,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 5,
+        "englishParagraphs": 3,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IX-04",
@@ -5275,7 +6073,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 9,
+        "englishParagraphs": 6,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IX-05",
@@ -5299,7 +6107,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 7,
+        "englishParagraphs": 6,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IX-06",
@@ -5323,7 +6139,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 7,
+        "englishParagraphs": 7,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IX-07",
@@ -5347,7 +6171,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 20,
+        "englishParagraphs": 17,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IX-08",
@@ -5371,7 +6205,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 27,
+        "englishParagraphs": 20,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IX-09",
@@ -5395,7 +6239,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 15,
+        "englishParagraphs": 14,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IX-10",
@@ -5419,7 +6271,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 9,
+        "englishParagraphs": 9,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IX-11",
@@ -5443,7 +6303,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 29,
+        "englishParagraphs": 19,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IX-12",
@@ -5467,7 +6337,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 10,
+        "englishParagraphs": 7,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": true,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IX-13",
@@ -5491,7 +6371,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 4,
+        "englishParagraphs": 4,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-IX-14",
@@ -5515,7 +6403,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 17,
+        "englishParagraphs": 14,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-X-01",
@@ -5539,7 +6437,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 18,
+        "englishParagraphs": 16,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-X-02",
@@ -5563,7 +6469,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 18,
+        "englishParagraphs": 15,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-X-03",
@@ -5587,7 +6503,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 8,
+        "englishParagraphs": 8,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-X-04",
@@ -5611,7 +6535,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 6,
+        "englishParagraphs": 5,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-X-05",
@@ -5635,7 +6567,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 10,
+        "englishParagraphs": 10,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-X-06",
@@ -5659,7 +6599,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 8,
+        "englishParagraphs": 6,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-X-07",
@@ -5683,7 +6631,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 3,
+        "englishParagraphs": 3,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-X-08",
@@ -5707,7 +6663,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 4,
+        "englishParagraphs": 4,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XI-PRE",
@@ -5731,7 +6695,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 1,
+        "englishParagraphs": 1,
+        "reviewHints": [
+          "lexical-spot-check"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XI-01",
@@ -5755,7 +6729,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 28,
+        "englishParagraphs": 25,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XI-02",
@@ -5779,7 +6763,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 17,
+        "englishParagraphs": 15,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XI-03",
@@ -5803,7 +6795,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 20,
+        "englishParagraphs": 18,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XI-04",
@@ -5827,7 +6827,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 9,
+        "englishParagraphs": 9,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XI-05",
@@ -5851,7 +6859,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 8,
+        "englishParagraphs": 7,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XI-06",
@@ -5875,7 +6891,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 7,
+        "englishParagraphs": 5,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XI-07",
@@ -5899,7 +6923,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 6,
+        "englishParagraphs": 6,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XI-08",
@@ -5923,7 +6955,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 10,
+        "englishParagraphs": 8,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XI-09",
@@ -5947,7 +6987,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 30,
+        "englishParagraphs": 27,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XI-10",
@@ -5971,7 +7021,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 23,
+        "englishParagraphs": 22,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XI-11",
@@ -5995,7 +7053,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 3,
+        "englishParagraphs": 3,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XI-12",
@@ -6019,7 +7085,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 7,
+        "englishParagraphs": 6,
+        "reviewHints": [],
+        "localBilingualRead": true,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XI-13",
@@ -6043,7 +7117,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 7,
+        "englishParagraphs": 7,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XI-14",
@@ -6067,7 +7149,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 6,
+        "englishParagraphs": 6,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XI-15",
@@ -6091,7 +7181,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 6,
+        "englishParagraphs": 7,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-PRE",
@@ -6115,7 +7213,18 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 4,
+        "englishParagraphs": 1,
+        "reviewHints": [
+          "paragraph-reflow",
+          "lexical-spot-check"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-01",
@@ -6139,7 +7248,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 11,
+        "englishParagraphs": 10,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-02",
@@ -6163,7 +7280,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 18,
+        "englishParagraphs": 15,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-03",
@@ -6187,7 +7314,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 7,
+        "englishParagraphs": 6,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-04",
@@ -6211,7 +7346,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 17,
+        "englishParagraphs": 14,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-05",
@@ -6235,7 +7380,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 10,
+        "englishParagraphs": 8,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-06",
@@ -6259,7 +7412,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 15,
+        "englishParagraphs": 11,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-07",
@@ -6283,7 +7446,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 5,
+        "englishParagraphs": 5,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-08",
@@ -6307,7 +7478,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 4,
+        "englishParagraphs": 4,
+        "reviewHints": [
+          "lexical-spot-check"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-09",
@@ -6331,7 +7512,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 22,
+        "englishParagraphs": 17,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-10",
@@ -6355,7 +7546,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 5,
+        "englishParagraphs": 5,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-11",
@@ -6379,7 +7578,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 38,
+        "englishParagraphs": 33,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-12",
@@ -6403,7 +7612,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 24,
+        "englishParagraphs": 21,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-13",
@@ -6427,7 +7646,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 20,
+        "englishParagraphs": 16,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-14",
@@ -6451,7 +7680,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 31,
+        "englishParagraphs": 23,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-15",
@@ -6475,7 +7714,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 4,
+        "englishParagraphs": 4,
+        "reviewHints": [],
+        "localBilingualRead": true,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-16",
@@ -6499,7 +7746,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 9,
+        "englishParagraphs": 9,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-17",
@@ -6523,7 +7778,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 10,
+        "englishParagraphs": 9,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-18",
@@ -6547,7 +7810,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 20,
+        "englishParagraphs": 17,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-19",
@@ -6571,7 +7844,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 12,
+        "englishParagraphs": 8,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-20",
@@ -6595,7 +7878,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 31,
+        "englishParagraphs": 25,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-21",
@@ -6619,7 +7912,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 5,
+        "englishParagraphs": 4,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-22",
@@ -6643,7 +7944,15 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 6,
+        "englishParagraphs": 5,
+        "reviewHints": [],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-23",
@@ -6667,7 +7976,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 17,
+        "englishParagraphs": 14,
+        "reviewHints": [
+          "paragraph-reflow"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     },
     {
       "id": "N-XII-24",
@@ -6691,7 +8010,17 @@
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "englishCollation": {
+        "structuralScreen": "checked-automatically",
+        "arabicParagraphs": 7,
+        "englishParagraphs": 6,
+        "reviewHints": [
+          "lexical-spot-check"
+        ],
+        "localBilingualRead": false,
+        "independentlyCollated": false
+      }
     }
   ]
 }
