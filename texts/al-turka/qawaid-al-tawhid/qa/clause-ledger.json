@@ -7,14 +7,14 @@
     "commentaryUnits": 110,
     "totalArabicPunctuationClauses": 5520,
     "totalEnglishSentenceCandidates": 2851,
-    "individuallyComparedArabicPunctuationClauses": 1427,
-    "individuallyComparedUnits": 65,
-    "NOTIndividuallyComparedArabicClauses": 4093,
+    "individuallyComparedArabicPunctuationClauses": 1574,
+    "individuallyComparedUnits": 75,
+    "NOTIndividuallyComparedArabicClauses": 3946,
     "statuses": {
-      "checked-with-note": 259,
-      "checked": 1088,
+      "checked-with-note": 281,
+      "checked": 1205,
       "unresolved-reading": 64,
-      "corrected": 13,
+      "corrected": 21,
       "corrected-with-source-crux": 3
     },
     "editorialLimit": "Punctuation-derived segments do not always equal syntactic clauses. Only individually compared units have manually associated English ranges. No manuscript witnesses were collated."
@@ -7167,157 +7167,213 @@
           "startChar": 0,
           "endChar": 83,
           "text": "وما قيل: «إن رؤية الشيء نفسه بنفسه ما هي مثل رؤيته نفسه في أمر آخر يكون له كالمرآة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "The embedded mirror quotation (closely related to Fuṣūṣ) is explicitly examined critically; nested quotation not attributed as the ancestor's original formulation."
+          },
+          "englishCorrespondence": "As for the saying, ‘A thing's seeing itself by itself is not like its seeing itself in something else that functions as a mirror: in the latter, it appears to itself in a form supplied by the locus in which it looks, a form that would not have appeared without that locus and its disclosure to it,’ this requires scrutiny.",
+          "riskMarkers": []
         },
         {
           "n": 2,
           "startChar": 84,
           "endChar": 196,
           "text": "فإنه يظهر له في نفسه في صورة يعطيها المحلّ المنظور فيه مما لم يكن يظهر له من غير وجود هذا المحلّ ولا تجلّيه له»،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "The embedded mirror quotation (closely related to Fuṣūṣ) is explicitly examined critically; nested quotation not attributed as the ancestor's original formulation."
+          },
+          "englishCorrespondence": "As for the saying, ‘A thing's seeing itself by itself is not like its seeing itself in something else that functions as a mirror: in the latter, it appears to itself in a form supplied by the locus in which it looks, a form that would not have appeared without that locus and its disclosure to it,’ this requires scrutiny.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 197,
           "endChar": 206,
           "text": "ففيه نظر؛",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "The embedded mirror quotation (closely related to Fuṣūṣ) is explicitly examined critically; nested quotation not attributed as the ancestor's original formulation."
+          },
+          "englishCorrespondence": "As for the saying, ‘A thing's seeing itself by itself is not like its seeing itself in something else that functions as a mirror: in the latter, it appears to itself in a form supplied by the locus in which it looks, a form that would not have appeared without that locus and its disclosure to it,’ this requires scrutiny.",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 207,
           "endChar": 262,
           "text": "فإنه لو أريد بالرؤية هاهنا الإدراك المنسوب إلى البصيرة،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "The embedded mirror quotation (closely related to Fuṣūṣ) is explicitly examined critically; nested quotation not attributed as the ancestor's original formulation."
+          },
+          "englishCorrespondence": "As for the saying, ‘A thing's seeing itself by itself is not like its seeing itself in something else that functions as a mirror: in the latter, it appears to itself in a form supplied by the locus in which it looks, a form that would not have appeared without that locus and its disclosure to it,’ this requires scrutiny.",
           "riskMarkers": [
             "conditional"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 5,
           "startChar": 263,
           "endChar": 282,
           "text": "وهو الإدراك العقلي،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 3,
+            "note": "Intellectual vision contrasted with sensory sight and First Intellect as possible mirror."
+          },
+          "englishCorrespondence": "If ‘seeing’ here means perception by inner vision—that is, intellectual cognition—then the thing that could serve as a mirror for its self-perception is the First Intellect, one of its effects. If, however, it means the perception belonging to eyesight—that is, particular sensory cognition—it is evident that the Necessary Existent cannot be a sensory particular;",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 6,
           "startChar": 283,
           "endChar": 361,
           "text": "فالأمر الذي يصحّ أن يكون مرآة لرؤية نفسه فيه هو العقل الأوّل من جملة معلولاته.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 3,
+            "note": "Intellectual vision contrasted with sensory sight and First Intellect as possible mirror."
+          },
+          "englishCorrespondence": "If ‘seeing’ here means perception by inner vision—that is, intellectual cognition—then the thing that could serve as a mirror for its self-perception is the First Intellect, one of its effects. If, however, it means the perception belonging to eyesight—that is, particular sensory cognition—it is evident that the Necessary Existent cannot be a sensory particular;",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 362,
           "endChar": 403,
           "text": "ولو أريد بها الإدراك المنسوب إلى الباصرة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 3,
+            "note": "Intellectual vision contrasted with sensory sight and First Intellect as possible mirror."
+          },
+          "englishCorrespondence": "If ‘seeing’ here means perception by inner vision—that is, intellectual cognition—then the thing that could serve as a mirror for its self-perception is the First Intellect, one of its effects. If, however, it means the perception belonging to eyesight—that is, particular sensory cognition—it is evident that the Necessary Existent cannot be a sensory particular;",
+          "riskMarkers": []
         },
         {
           "n": 8,
           "startChar": 404,
           "endChar": 423,
           "text": "وهو الإدراك الجزئي،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 3,
+            "note": "Intellectual vision contrasted with sensory sight and First Intellect as possible mirror."
+          },
+          "englishCorrespondence": "If ‘seeing’ here means perception by inner vision—that is, intellectual cognition—then the thing that could serve as a mirror for its self-perception is the First Intellect, one of its effects. If, however, it means the perception belonging to eyesight—that is, particular sensory cognition—it is evident that the Necessary Existent cannot be a sensory particular;",
+          "riskMarkers": []
         },
         {
           "n": 9,
           "startChar": 424,
           "endChar": 467,
           "text": "فمن البيّن أن الواجب لذاته لا يكون جزئيّاً،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 3,
+            "note": "Intellectual vision contrasted with sensory sight and First Intellect as possible mirror."
+          },
+          "englishCorrespondence": "If ‘seeing’ here means perception by inner vision—that is, intellectual cognition—then the thing that could serve as a mirror for its self-perception is the First Intellect, one of its effects. If, however, it means the perception belonging to eyesight—that is, particular sensory cognition—it is evident that the Necessary Existent cannot be a sensory particular;",
           "riskMarkers": [
             "negation",
             "modality"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 10,
           "startChar": 468,
           "endChar": 516,
           "text": "لما عرفت أن كل جزئي لا بدّ أن يكون ممكناً لذاته؛",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Sensory object as corporeal accident versus derivative sight of matter underlines the argument, without mistaking it for modern scientific observation."
+          },
+          "englishCorrespondence": "for, as already explained, every particular must be possible through itself. Indeed, everything seen directly by eyesight must be a corporeal accident, and whatever is seen by eyesight in a derivative manner must be material, whether a body or something corporeal.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 11,
           "startChar": 517,
           "endChar": 525,
           "text": "وكيف لا،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Sensory object as corporeal accident versus derivative sight of matter underlines the argument, without mistaking it for modern scientific observation."
+          },
+          "englishCorrespondence": "for, as already explained, every particular must be possible through itself. Indeed, everything seen directly by eyesight must be a corporeal accident, and whatever is seen by eyesight in a derivative manner must be material, whether a body or something corporeal.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 12,
           "startChar": 526,
           "endChar": 591,
           "text": "وإن كل مرئيّ بالذات برؤية الباصرة لا بدّ أن يكون عرضاً جسمانيّاً،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Sensory object as corporeal accident versus derivative sight of matter underlines the argument, without mistaking it for modern scientific observation."
+          },
+          "englishCorrespondence": "for, as already explained, every particular must be possible through itself. Indeed, everything seen directly by eyesight must be a corporeal accident, and whatever is seen by eyesight in a derivative manner must be material, whether a body or something corporeal.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 13,
           "startChar": 592,
           "endChar": 646,
           "text": "وكل ما هو مرئيّ بالذات بالعرض برؤية الباصرة فهو مادّي،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Sensory object as corporeal accident versus derivative sight of matter underlines the argument, without mistaking it for modern scientific observation."
+          },
+          "englishCorrespondence": "for, as already explained, every particular must be possible through itself. Indeed, everything seen directly by eyesight must be a corporeal accident, and whatever is seen by eyesight in a derivative manner must be material, whether a body or something corporeal.",
+          "riskMarkers": []
         },
         {
           "n": 14,
           "startChar": 647,
           "endChar": 670,
           "text": "جسماً كان أو جسمانيّاً.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Sensory object as corporeal accident versus derivative sight of matter underlines the argument, without mistaking it for modern scientific observation."
+          },
+          "englishCorrespondence": "for, as already explained, every particular must be possible through itself. Indeed, everything seen directly by eyesight must be a corporeal accident, and whatever is seen by eyesight in a derivative manner must be material, whether a body or something corporeal.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -7352,7 +7408,7 @@
           "text": "Indeed, everything seen directly by eyesight must be a corporeal accident, and whatever is seen by eyesight in a derivative manner must be material, whether a body or something corporeal."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 1
     },
     {
@@ -7370,122 +7426,162 @@
           "startChar": 0,
           "endChar": 97,
           "text": "فإن قيل: العقل الأوّل لا يصلح لمرآتيّة صورته الجامعة لسائر صفاته الكماليّة والتعيّنات الأسمائيّة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Objection claims only comprehensive Perfect Human preserves all divine names and forms, not the First Intellect."
+          },
+          "englishCorrespondence": "If it is objected: ‘The First Intellect cannot serve as the mirror of the comprehensive image embracing all the divine attributes of perfection and the determinations of the names. Only comprehensive being can serve as the mirror of that image, since every name, attribute, and determination appears through it, and in its manifestation it preserves their representation from distortion or alteration. For there is no receptive locus receiving the holy effusion in a particular manner, nor any locus in which the divine forms appear through a given determination, without a more complete analogue of it in the Perfect Human.’ We reply: the reality pervading every manifestation in its true unity is not apprehended across all the levels present in comprehensive being;",
           "riskMarkers": [
             "objection",
             "negation",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 98,
           "endChar": 189,
           "text": "بل إنما يصلح لمرآتيّة تلك الصورة الكون الجامع الذي يظهر به سائر الأسماء والصفات والتعيّنات،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Objection claims only comprehensive Perfect Human preserves all divine names and forms, not the First Intellect."
+          },
+          "englishCorrespondence": "If it is objected: ‘The First Intellect cannot serve as the mirror of the comprehensive image embracing all the divine attributes of perfection and the determinations of the names. Only comprehensive being can serve as the mirror of that image, since every name, attribute, and determination appears through it, and in its manifestation it preserves their representation from distortion or alteration. For there is no receptive locus receiving the holy effusion in a particular manner, nor any locus in which the divine forms appear through a given determination, without a more complete analogue of it in the Perfect Human.’ We reply: the reality pervading every manifestation in its true unity is not apprehended across all the levels present in comprehensive being;",
           "riskMarkers": [
             "exception_or_exclusivity",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 190,
           "endChar": 237,
           "text": "وهو في مظهريّته موقياً لها عن التحريف والتغيير،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Objection claims only comprehensive Perfect Human preserves all divine names and forms, not the First Intellect."
+          },
+          "englishCorrespondence": "If it is objected: ‘The First Intellect cannot serve as the mirror of the comprehensive image embracing all the divine attributes of perfection and the determinations of the names. Only comprehensive being can serve as the mirror of that image, since every name, attribute, and determination appears through it, and in its manifestation it preserves their representation from distortion or alteration. For there is no receptive locus receiving the holy effusion in a particular manner, nor any locus in which the divine forms appear through a given determination, without a more complete analogue of it in the Perfect Human.’ We reply: the reality pervading every manifestation in its true unity is not apprehended across all the levels present in comprehensive being;",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 238,
           "endChar": 300,
           "text": "إذ ما من قابل من القوابل يقبل الفيض المقدّس على نحو من القبول،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Objection claims only comprehensive Perfect Human preserves all divine names and forms, not the First Intellect."
+          },
+          "englishCorrespondence": "If it is objected: ‘The First Intellect cannot serve as the mirror of the comprehensive image embracing all the divine attributes of perfection and the determinations of the names. Only comprehensive being can serve as the mirror of that image, since every name, attribute, and determination appears through it, and in its manifestation it preserves their representation from distortion or alteration. For there is no receptive locus receiving the holy effusion in a particular manner, nor any locus in which the divine forms appear through a given determination, without a more complete analogue of it in the Perfect Human.’ We reply: the reality pervading every manifestation in its true unity is not apprehended across all the levels present in comprehensive being;",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 301,
           "endChar": 347,
           "text": "أو يظهر فيه الصور الإلهيّة على ضرب من التعيّن،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Objection claims only comprehensive Perfect Human preserves all divine names and forms, not the First Intellect."
+          },
+          "englishCorrespondence": "If it is objected: ‘The First Intellect cannot serve as the mirror of the comprehensive image embracing all the divine attributes of perfection and the determinations of the names. Only comprehensive being can serve as the mirror of that image, since every name, attribute, and determination appears through it, and in its manifestation it preserves their representation from distortion or alteration. For there is no receptive locus receiving the holy effusion in a particular manner, nor any locus in which the divine forms appear through a given determination, without a more complete analogue of it in the Perfect Human.’ We reply: the reality pervading every manifestation in its true unity is not apprehended across all the levels present in comprehensive being;",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 6,
           "startChar": 348,
           "endChar": 397,
           "text": "إلا وفي الإنسان الكامل مثال ذلك على الوجه الأكمل.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Objection claims only comprehensive Perfect Human preserves all divine names and forms, not the First Intellect."
+          },
+          "englishCorrespondence": "If it is objected: ‘The First Intellect cannot serve as the mirror of the comprehensive image embracing all the divine attributes of perfection and the determinations of the names. Only comprehensive being can serve as the mirror of that image, since every name, attribute, and determination appears through it, and in its manifestation it preserves their representation from distortion or alteration. For there is no receptive locus receiving the holy effusion in a particular manner, nor any locus in which the divine forms appear through a given determination, without a more complete analogue of it in the Perfect Human.’ We reply: the reality pervading every manifestation in its true unity is not apprehended across all the levels present in comprehensive being;",
           "riskMarkers": [
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 398,
           "endChar": 511,
           "text": "قلنا: إن حقيقته السارية في كلّ المظاهر هاهنا بوحدتها الحقيقيّة غير مدركة في كلّ المراتب الموجودة في الكون الجامع،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Reply denies that the whole identity is directly apprehended in every level; some forms remain intellectually unseen."
+          },
+          "englishCorrespondence": "rather, only some of its levels disclose its image here, so that certain images of the names remain known solely through intellectual apprehension of the unseen. Once this is recognized, it is evident that the comprehensive world cannot serve as the mirror of that reality's entire image.",
           "riskMarkers": [
             "reply",
             "negation",
             "conditional",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 8,
           "startChar": 512,
           "endChar": 553,
           "text": "بل إنما يدرك صورتها هاهنا في بعض المراتب،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Reply denies that the whole identity is directly apprehended in every level; some forms remain intellectually unseen."
+          },
+          "englishCorrespondence": "rather, only some of its levels disclose its image here, so that certain images of the names remain known solely through intellectual apprehension of the unseen. Once this is recognized, it is evident that the comprehensive world cannot serve as the mirror of that reality's entire image.",
           "riskMarkers": [
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 9,
           "startChar": 554,
           "endChar": 607,
           "text": "فيكون إدراك بعض صور الأسماء تعقّليّاً غيبيّاً لا غير.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Reply denies that the whole identity is directly apprehended in every level; some forms remain intellectually unseen."
+          },
+          "englishCorrespondence": "rather, only some of its levels disclose its image here, so that certain images of the names remain known solely through intellectual apprehension of the unseen. Once this is recognized, it is evident that the comprehensive world cannot serve as the mirror of that reality's entire image.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 10,
           "startChar": 608,
           "endChar": 677,
           "text": "ومتى تحقّق هذا فمن البيّن حينئذ أن مرآتيّة الكون الجامع ليست لصورتها.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Reply denies that the whole identity is directly apprehended in every level; some forms remain intellectually unseen."
+          },
+          "englishCorrespondence": "rather, only some of its levels disclose its image here, so that certain images of the names remain known solely through intellectual apprehension of the unseen. Once this is recognized, it is evident that the comprehensive world cannot serve as the mirror of that reality's entire image.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         }
       ],
       "englishSentences": [
@@ -7520,7 +7616,7 @@
           "text": "Once this is recognized, it is evident that the comprehensive world cannot serve as the mirror of that reality's entire image."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 2
     },
     {
@@ -7538,239 +7634,323 @@
           "startChar": 0,
           "endChar": 79,
           "text": "على أنّا نقول: إن حقيقة الحق وصورته الحقيقيّة لو كانت نفس حقيقة الإنسان وصورته،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Three alternatives—identity with human, unrestricted being, or composite of determinations—are distinguished."
+          },
+          "englishCorrespondence": "We further maintain that if the reality of the Real and its true image were identical with the reality and image of the human being, there would remain no difference between what manifests and its locus of manifestation, or between a mirror and what appears in it. If it were something other than the human reality, then, supposing it were the reality of unrestricted existence itself, something besides the Perfect Human—such as a separate intellect—could also serve as its place of disclosure and manifestation. But if the reality in question were existence as determined by all these determinations, attributes and relations, the entire great cosmos could serve as its manifestation.",
           "riskMarkers": [
             "conditional"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 80,
           "endChar": 126,
           "text": "لم يبق فرق بين الظاهر والمظهر والمرآة والمرئي.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Three alternatives—identity with human, unrestricted being, or composite of determinations—are distinguished."
+          },
+          "englishCorrespondence": "We further maintain that if the reality of the Real and its true image were identical with the reality and image of the human being, there would remain no difference between what manifests and its locus of manifestation, or between a mirror and what appears in it. If it were something other than the human reality, then, supposing it were the reality of unrestricted existence itself, something besides the Perfect Human—such as a separate intellect—could also serve as its place of disclosure and manifestation. But if the reality in question were existence as determined by all these determinations, attributes and relations, the entire great cosmos could serve as its manifestation.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 127,
           "endChar": 142,
           "text": "ولو كانت غيرها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Three alternatives—identity with human, unrestricted being, or composite of determinations—are distinguished."
+          },
+          "englishCorrespondence": "We further maintain that if the reality of the Real and its true image were identical with the reality and image of the human being, there would remain no difference between what manifests and its locus of manifestation, or between a mirror and what appears in it. If it were something other than the human reality, then, supposing it were the reality of unrestricted existence itself, something besides the Perfect Human—such as a separate intellect—could also serve as its place of disclosure and manifestation. But if the reality in question were existence as determined by all these determinations, attributes and relations, the entire great cosmos could serve as its manifestation.",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 143,
           "endChar": 176,
           "text": "فلو كانت نفس حقيقة الوجود المطلق،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Three alternatives—identity with human, unrestricted being, or composite of determinations—are distinguished."
+          },
+          "englishCorrespondence": "We further maintain that if the reality of the Real and its true image were identical with the reality and image of the human being, there would remain no difference between what manifests and its locus of manifestation, or between a mirror and what appears in it. If it were something other than the human reality, then, supposing it were the reality of unrestricted existence itself, something besides the Perfect Human—such as a separate intellect—could also serve as its place of disclosure and manifestation. But if the reality in question were existence as determined by all these determinations, attributes and relations, the entire great cosmos could serve as its manifestation.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 5,
           "startChar": 177,
           "endChar": 200,
           "text": "كان غير الإنسان الكامل،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Three alternatives—identity with human, unrestricted being, or composite of determinations—are distinguished."
+          },
+          "englishCorrespondence": "We further maintain that if the reality of the Real and its true image were identical with the reality and image of the human being, there would remain no difference between what manifests and its locus of manifestation, or between a mirror and what appears in it. If it were something other than the human reality, then, supposing it were the reality of unrestricted existence itself, something besides the Perfect Human—such as a separate intellect—could also serve as its place of disclosure and manifestation. But if the reality in question were existence as determined by all these determinations, attributes and relations, the entire great cosmos could serve as its manifestation.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 6,
           "startChar": 201,
           "endChar": 216,
           "text": "كالعقل المجرّد،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Three alternatives—identity with human, unrestricted being, or composite of determinations—are distinguished."
+          },
+          "englishCorrespondence": "We further maintain that if the reality of the Real and its true image were identical with the reality and image of the human being, there would remain no difference between what manifests and its locus of manifestation, or between a mirror and what appears in it. If it were something other than the human reality, then, supposing it were the reality of unrestricted existence itself, something besides the Perfect Human—such as a separate intellect—could also serve as its place of disclosure and manifestation. But if the reality in question were existence as determined by all these determinations, attributes and relations, the entire great cosmos could serve as its manifestation.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 217,
           "endChar": 248,
           "text": "يصحّ أن يكون مجلىً ومظهراً لها.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 6,
+            "note": "Macrocosm analogy to a human formal whole treated as proposed hypothesis, not proved natural unity."
+          },
+          "englishCorrespondence": "For the totality of the parts of the great cosmos, united in subject and in its collective formal configuration, is comparable to the totality constituting a human being: separate soul, intellectual and sensory faculty, and material body. If one may posit true unity and a specific natural form here, one could also posit such unity and form in the cosmos as a whole, governing and coordinating all its parts and apprehending them together, as the interlocutors maintain. Moreover, among the cosmos's parts are indefinitely many kinds: some existed in earlier times and have entirely passed away;",
+          "riskMarkers": []
         },
         {
           "n": 8,
           "startChar": 249,
           "endChar": 320,
           "text": "ولو كانت هي الوجود المتعيّن بجميع هذه التعيّنات وسائر الصفات والإضافات،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 6,
+            "note": "Macrocosm analogy to a human formal whole treated as proposed hypothesis, not proved natural unity."
+          },
+          "englishCorrespondence": "For the totality of the parts of the great cosmos, united in subject and in its collective formal configuration, is comparable to the totality constituting a human being: separate soul, intellectual and sensory faculty, and material body. If one may posit true unity and a specific natural form here, one could also posit such unity and form in the cosmos as a whole, governing and coordinating all its parts and apprehending them together, as the interlocutors maintain. Moreover, among the cosmos's parts are indefinitely many kinds: some existed in earlier times and have entirely passed away;",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 9,
           "startChar": 321,
           "endChar": 361,
           "text": "لصحّ أن يكون مظهرها مجموع العالم الكبير،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 6,
+            "note": "Macrocosm analogy to a human formal whole treated as proposed hypothesis, not proved natural unity."
+          },
+          "englishCorrespondence": "For the totality of the parts of the great cosmos, united in subject and in its collective formal configuration, is comparable to the totality constituting a human being: separate soul, intellectual and sensory faculty, and material body. If one may posit true unity and a specific natural form here, one could also posit such unity and form in the cosmos as a whole, governing and coordinating all its parts and apprehending them together, as the interlocutors maintain. Moreover, among the cosmos's parts are indefinitely many kinds: some existed in earlier times and have entirely passed away;",
+          "riskMarkers": []
         },
         {
           "n": 10,
           "startChar": 362,
           "endChar": 533,
           "text": "فإن مجموع أجزاء العالم الكبير الواحد بالموضوع وبالهيئة الصوريّة الاجتماعيّة مثل مجموع الإنسان المتألّفة من النفس المجرّدة والقوّة العاقلة والحاسّة والبدن المادّي الإنساني.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 6,
+            "note": "Macrocosm analogy to a human formal whole treated as proposed hypothesis, not proved natural unity."
+          },
+          "englishCorrespondence": "For the totality of the parts of the great cosmos, united in subject and in its collective formal configuration, is comparable to the totality constituting a human being: separate soul, intellectual and sensory faculty, and material body. If one may posit true unity and a specific natural form here, one could also posit such unity and form in the cosmos as a whole, governing and coordinating all its parts and apprehending them together, as the interlocutors maintain. Moreover, among the cosmos's parts are indefinitely many kinds: some existed in earlier times and have entirely passed away;",
+          "riskMarkers": []
         },
         {
           "n": 11,
           "startChar": 534,
           "endChar": 736,
           "text": "فلو صحّ أن يقال إنّ هاهنا وحدة حقيقيّة وصورة طبيعيّة نوعيّة لصحّ أن يقال إنّ هناك أيضاً وحدة حقيقيّة وصورة طبيعيّة نوعيّة هي المدبّرة المتصرّفة الموحّدة لجميع أجزائه المدركة لها جميعاً على ما يقولون به.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 6,
+            "note": "Macrocosm analogy to a human formal whole treated as proposed hypothesis, not proved natural unity."
+          },
+          "englishCorrespondence": "For the totality of the parts of the great cosmos, united in subject and in its collective formal configuration, is comparable to the totality constituting a human being: separate soul, intellectual and sensory faculty, and material body. If one may posit true unity and a specific natural form here, one could also posit such unity and form in the cosmos as a whole, governing and coordinating all its parts and apprehending them together, as the interlocutors maintain. Moreover, among the cosmos's parts are indefinitely many kinds: some existed in earlier times and have entirely passed away;",
+          "riskMarkers": []
         },
         {
           "n": 12,
           "startChar": 737,
           "endChar": 785,
           "text": "على أن من جملة أجزاء العالم أنواعاً غير متناهية،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 6,
+            "note": "Macrocosm analogy to a human formal whole treated as proposed hypothesis, not proved natural unity."
+          },
+          "englishCorrespondence": "For the totality of the parts of the great cosmos, united in subject and in its collective formal configuration, is comparable to the totality constituting a human being: separate soul, intellectual and sensory faculty, and material body. If one may posit true unity and a specific natural form here, one could also posit such unity and form in the cosmos as a whole, governing and coordinating all its parts and apprehending them together, as the interlocutors maintain. Moreover, among the cosmos's parts are indefinitely many kinds: some existed in earlier times and have entirely passed away;",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 13,
           "startChar": 786,
           "endChar": 835,
           "text": "وجد بعضها في الأزمنة الماضية ثمّ انقرض بالكلّيّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "Temporal heterogeneity of cosmic species and innumerable perfections prevent any one embodied individual from exhausting the universal image."
+          },
+          "englishCorrespondence": "others exist now but will disappear in future times; still others will appear only in times to come and will ultimately pass away too. Nor could every possible perfection of the human species belong to any one of its perfected individuals: individuals differ in their capacities across unbounded times.",
+          "riskMarkers": []
         },
         {
           "n": 14,
           "startChar": 836,
           "endChar": 913,
           "text": "ووجد بعضها في الأزمنة الحاضرة ثمّ إنّها تنقرض بالكلّيّة في الأزمنة المستقبلة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "Temporal heterogeneity of cosmic species and innumerable perfections prevent any one embodied individual from exhausting the universal image."
+          },
+          "englishCorrespondence": "others exist now but will disappear in future times; still others will appear only in times to come and will ultimately pass away too. Nor could every possible perfection of the human species belong to any one of its perfected individuals: individuals differ in their capacities across unbounded times.",
+          "riskMarkers": []
         },
         {
           "n": 15,
           "startChar": 914,
           "endChar": 999,
           "text": "ووجد البعض الباقي منها في الأزمنة الآتية مع أنّه لم يوجد في الأزمنة الماضية والحاضرة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "Temporal heterogeneity of cosmic species and innumerable perfections prevent any one embodied individual from exhausting the universal image."
+          },
+          "englishCorrespondence": "others exist now but will disappear in future times; still others will appear only in times to come and will ultimately pass away too. Nor could every possible perfection of the human species belong to any one of its perfected individuals: individuals differ in their capacities across unbounded times.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 16,
           "startChar": 1000,
           "endChar": 1044,
           "text": "لكنّه إنّما يصير منقرضاً بعد زمان بالكلّيّة.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "Temporal heterogeneity of cosmic species and innumerable perfections prevent any one embodied individual from exhausting the universal image."
+          },
+          "englishCorrespondence": "others exist now but will disappear in future times; still others will appear only in times to come and will ultimately pass away too. Nor could every possible perfection of the human species belong to any one of its perfected individuals: individuals differ in their capacities across unbounded times.",
           "riskMarkers": [
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 17,
           "startChar": 1045,
           "endChar": 1222,
           "text": "ثمّ إنّ جميع الكمالات الممكنة للنوع الإنساني لا يمكن حصولها لشخص واحد من الأشخاص الكاملين من ذلك النوع المختلفين بحسب الاستعدادات غير المتناهية الموجودة في الأزمنة غير المحدودة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "Temporal heterogeneity of cosmic species and innumerable perfections prevent any one embodied individual from exhausting the universal image."
+          },
+          "englishCorrespondence": "others exist now but will disappear in future times; still others will appear only in times to come and will ultimately pass away too. Nor could every possible perfection of the human species belong to any one of its perfected individuals: individuals differ in their capacities across unbounded times.",
           "riskMarkers": [
             "negation",
             "modality"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 18,
           "startChar": 1223,
           "endChar": 1305,
           "text": "فلا يمكن أن يجعل فرد منهم من المظاهر التامّة الكاملة بالنسبة إلى صورة تلك الحقيقة.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "Temporal heterogeneity of cosmic species and innumerable perfections prevent any one embodied individual from exhausting the universal image."
+          },
+          "englishCorrespondence": "others exist now but will disappear in future times; still others will appear only in times to come and will ultimately pass away too. Nor could every possible perfection of the human species belong to any one of its perfected individuals: individuals differ in their capacities across unbounded times.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 19,
           "startChar": 1306,
           "endChar": 1314,
           "text": "وكيف لا،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 11,
+            "note": "Seal of Prophets and Seal of Saints perfections are discussed as the author's dialectical constraints."
+          },
+          "englishCorrespondence": "None of them, therefore, could serve as a completely exhaustive manifestation of that reality's image. Indeed, the perfection belonging to the Seal of the Prophets could not belong to another prophet, nor, in their account, could the perfection of the Seal of the Saints belong to any other saint.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 20,
           "startChar": 1315,
           "endChar": 1376,
           "text": "فإنّ الكمال الذي يكون لخاتم الأنبياء لا يمكن حصوله لنبيّ آخر،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 11,
+            "note": "Seal of Prophets and Seal of Saints perfections are discussed as the author's dialectical constraints."
+          },
+          "englishCorrespondence": "None of them, therefore, could serve as a completely exhaustive manifestation of that reality's image. Indeed, the perfection belonging to the Seal of the Prophets could not belong to another prophet, nor, in their account, could the perfection of the Seal of the Saints belong to any other saint.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 21,
           "startChar": 1377,
           "endChar": 1447,
           "text": "والكمال الذي لخاتم الأولياء عندهم لا يمكن حصوله لوليّ آخر من الأولياء.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 11,
+            "note": "Seal of Prophets and Seal of Saints perfections are discussed as the author's dialectical constraints."
+          },
+          "englishCorrespondence": "None of them, therefore, could serve as a completely exhaustive manifestation of that reality's image. Indeed, the perfection belonging to the Seal of the Prophets could not belong to another prophet, nor, in their account, could the perfection of the Seal of the Saints belong to any other saint.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         }
       ],
       "englishSentences": [
@@ -7841,7 +8021,7 @@
           "text": "Indeed, the perfection belonging to the Seal of the Prophets could not belong to another prophet, nor, in their account, could the perfection of the Seal of the Saints belong to any other saint."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 2
     },
     {
@@ -7859,120 +8039,160 @@
           "startChar": 0,
           "endChar": 86,
           "text": "وحينئذ لو صحّ أن يجعل ذلك المظهر جميع أجزاء العالم الذي يكون من جملته الإنسان وأشخاصه،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Dilemma: if perfected self-knowledge not a perfection, it cannot be final cause; if real perfection, dependence follows."
+          },
+          "englishCorrespondence": "If, then, that locus of manifestation were taken to be all the parts of the cosmos, including human beings and their individual members, we would face the following dilemma. Suppose that the reality's apprehension of itself as embracing all perfections in the manner described is not itself a real, efficacious perfection sought for its own sake. Then it could not be the final cause of the world's creation, as you maintain, nor could a particularizing divine will and essential love be directed toward it.",
           "riskMarkers": [
             "conditional"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 87,
           "endChar": 225,
           "text": "ثمّ إنّ إدراك ذاتها من حيث هي جامعة لجميع الكمالات على النسق المذكور لو لم يكن من الكمالات الحقيقيّة المؤثّرة المرغوب فيها المطلوب لذاتها،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Dilemma: if perfected self-knowledge not a perfection, it cannot be final cause; if real perfection, dependence follows."
+          },
+          "englishCorrespondence": "If, then, that locus of manifestation were taken to be all the parts of the cosmos, including human beings and their individual members, we would face the following dilemma. Suppose that the reality's apprehension of itself as embracing all perfections in the manner described is not itself a real, efficacious perfection sought for its own sake. Then it could not be the final cause of the world's creation, as you maintain, nor could a particularizing divine will and essential love be directed toward it.",
           "riskMarkers": [
             "negation",
             "conditional"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 226,
           "endChar": 287,
           "text": "لم يصلح أن يكون علّة غائيّة لإيجاد العوالم على ما ذهبتم إليه،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Dilemma: if perfected self-knowledge not a perfection, it cannot be final cause; if real perfection, dependence follows."
+          },
+          "englishCorrespondence": "If, then, that locus of manifestation were taken to be all the parts of the cosmos, including human beings and their individual members, we would face the following dilemma. Suppose that the reality's apprehension of itself as embracing all perfections in the manner described is not itself a real, efficacious perfection sought for its own sake. Then it could not be the final cause of the world's creation, as you maintain, nor could a particularizing divine will and essential love be directed toward it.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 4,
           "startChar": 288,
           "endChar": 347,
           "text": "ولا ينبعث نحوه الإرادة المخصّصة والمحبّة الذاتيّة الإلهيّة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Dilemma: if perfected self-knowledge not a perfection, it cannot be final cause; if real perfection, dependence follows."
+          },
+          "englishCorrespondence": "If, then, that locus of manifestation were taken to be all the parts of the cosmos, including human beings and their individual members, we would face the following dilemma. Suppose that the reality's apprehension of itself as embracing all perfections in the manner described is not itself a real, efficacious perfection sought for its own sake. Then it could not be the final cause of the world's creation, as you maintain, nor could a particularizing divine will and essential love be directed toward it.",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 348,
           "endChar": 374,
           "text": "ولو وجب أن يكون من جملتها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Dependence on a contingent originated composite would negate necessity in every respect."
+          },
+          "englishCorrespondence": "But if such self-apprehension is necessarily one of those perfections, the Necessary Existent would depend, with respect to one of its real perfections, upon something other than itself—a being possible in itself and originated in its particular constitution. It would therefore no longer be necessary in every respect.",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 375,
           "endChar": 469,
           "text": "لتوقّف الواجب لذاته في شيء من كمالاته الحقيقيّة على غيره الممكن بحسب ذاته الحادث من جهة نشأته،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Dependence on a contingent originated composite would negate necessity in every respect."
+          },
+          "englishCorrespondence": "But if such self-apprehension is necessarily one of those perfections, the Necessary Existent would depend, with respect to one of its real perfections, upon something other than itself—a being possible in itself and originated in its particular constitution. It would therefore no longer be necessary in every respect.",
           "riskMarkers": [
             "modality"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 470,
           "endChar": 512,
           "text": "فلم يكن الواجب لذاته واجباً من جميع جهاته.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Dependence on a contingent originated composite would negate necessity in every respect."
+          },
+          "englishCorrespondence": "But if such self-apprehension is necessarily one of those perfections, the Necessary Existent would depend, with respect to one of its real perfections, upon something other than itself—a being possible in itself and originated in its particular constitution. It would therefore no longer be necessary in every respect.",
           "riskMarkers": [
             "modality"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 8,
           "startChar": 513,
           "endChar": 595,
           "text": "فلئن قيل: إن توقّفه في ذلك على الكون الجامع لا يمكن أن يكون من حيث هو مغاير إيّاه،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "Reply to being 'other' clarifies dependence precisely on receptive plurality and conjunction."
+          },
+          "englishCorrespondence": "If someone objects that the relevant dependence upon comprehensive being cannot be dependence upon it insofar as it is other than the Real, we reply that the dependence is upon it precisely because it encompasses all receptive subjects and loci of manifestation, their mutual conjunction, and similar relations. Considered in that way, comprehensive being is unquestionably distinct from the Real.",
           "riskMarkers": [
             "objection",
             "negation",
             "conditional",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 9,
           "startChar": 596,
           "endChar": 691,
           "text": "قلنا: إنّ توقّفه عليه من جهة اشتماله على جميع القوابل والمظاهر وانضمام بعضها إلى بعض وما يشبهه،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "Reply to being 'other' clarifies dependence precisely on receptive plurality and conjunction."
+          },
+          "englishCorrespondence": "If someone objects that the relevant dependence upon comprehensive being cannot be dependence upon it insofar as it is other than the Real, we reply that the dependence is upon it precisely because it encompasses all receptive subjects and loci of manifestation, their mutual conjunction, and similar relations. Considered in that way, comprehensive being is unquestionably distinct from the Real.",
           "riskMarkers": [
             "reply"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 10,
           "startChar": 692,
           "endChar": 739,
           "text": "ولا شكّ أنّ الكون الجامع من هذه الجهة مغاير له.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "Reply to being 'other' clarifies dependence precisely on receptive plurality and conjunction."
+          },
+          "englishCorrespondence": "If someone objects that the relevant dependence upon comprehensive being cannot be dependence upon it insofar as it is other than the Real, we reply that the dependence is upon it precisely because it encompasses all receptive subjects and loci of manifestation, their mutual conjunction, and similar relations. Considered in that way, comprehensive being is unquestionably distinct from the Real.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         }
       ],
       "englishSentences": [
@@ -8019,7 +8239,7 @@
           "text": "Considered in that way, comprehensive being is unquestionably distinct from the Real."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 1
     },
     {
@@ -8037,156 +8257,212 @@
           "startChar": 0,
           "endChar": 151,
           "text": "ثمّ إنّهم قد اتّفقوا على أنّ وصول الإنسان إلى حدّ الكمال الحقيقي لا يمكن إلّا بانحلال العقد والتخلّص عن القيود وبحصول الانطلاق والوصول إلى حدّ الإطلاق،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Objection: stripping restraints and suspending bodily faculties appears incompatible with comprehensive manifestation."
+          },
+          "englishCorrespondence": "Furthermore, they have agreed that a human being cannot attain true perfection except by untying the knots, casting off restrictions, becoming released, and reaching the level of unrestrictedness. On their view, neither true perfection nor an objective apprehension of reality is attained by travellers of the path until they reach that level. The apprehension and knowledge they call perfection is what becomes disclosed when they arrive there: the bodily faculties responsible for cognition and assisting it cease to act or be affected;",
           "riskMarkers": [
             "negation",
             "exception_or_exclusivity",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 152,
           "endChar": 250,
           "text": "فيكون الكمال الحقيقي والإدراك الحقيقي العيني لا يحصل عندهم للسالكين ما لم يصلوا إلى مرتبة الإطلاق.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Objection: stripping restraints and suspending bodily faculties appears incompatible with comprehensive manifestation."
+          },
+          "englishCorrespondence": "Furthermore, they have agreed that a human being cannot attain true perfection except by untying the knots, casting off restrictions, becoming released, and reaching the level of unrestrictedness. On their view, neither true perfection nor an objective apprehension of reality is attained by travellers of the path until they reach that level. The apprehension and knowledge they call perfection is what becomes disclosed when they arrive there: the bodily faculties responsible for cognition and assisting it cease to act or be affected;",
           "riskMarkers": [
             "negation",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 251,
           "endChar": 408,
           "text": "فالإدراك والعلم الذي هو الكمال عندهم ما ينكشف لهم عند الوصول إلى هذه المرتبة وسقوط سائر القوى الجسمانيّة المدركة والمعيّنة على الإدراك عن التأثّر والفاعليّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Objection: stripping restraints and suspending bodily faculties appears incompatible with comprehensive manifestation."
+          },
+          "englishCorrespondence": "Furthermore, they have agreed that a human being cannot attain true perfection except by untying the knots, casting off restrictions, becoming released, and reaching the level of unrestrictedness. On their view, neither true perfection nor an objective apprehension of reality is attained by travellers of the path until they reach that level. The apprehension and knowledge they call perfection is what becomes disclosed when they arrive there: the bodily faculties responsible for cognition and assisting it cease to act or be affected;",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 409,
           "endChar": 510,
           "text": "وتوجّه القوى القدسيّة والعاقلة بالكلّيّة نحو القدس وانخراطها في سلك الملإ الأعلى من الأرواح المجرّدة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Objection: stripping restraints and suspending bodily faculties appears incompatible with comprehensive manifestation."
+          },
+          "englishCorrespondence": "Furthermore, they have agreed that a human being cannot attain true perfection except by untying the knots, casting off restrictions, becoming released, and reaching the level of unrestrictedness. On their view, neither true perfection nor an objective apprehension of reality is attained by travellers of the path until they reach that level. The apprehension and knowledge they call perfection is what becomes disclosed when they arrive there: the bodily faculties responsible for cognition and assisting it cease to act or be affected;",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 511,
           "endChar": 570,
           "text": "وكونها بمعزل في تلك الحالة عن استعمال تلك القوى الجسمانيّة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 6,
+            "note": "The opponents' description of ascetic training and cognitive faculties is accurately framed as reported argument."
+          },
+          "englishCorrespondence": "the holy and intellective faculties turn wholly toward holiness and enter the company of the higher assembly of separate spirits; and the traveller ceases, in that state, to employ the bodily faculties. Accordingly, sensory, imaginative, estimative, and discursive cognition carry no weight for them;",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 571,
           "endChar": 654,
           "text": "وحينئذ فلا اعتبار عندهم بمثل هذه الإدراكات الحسّيّة والخياليّة والوهميّة والفكريّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 6,
+            "note": "The opponents' description of ascetic training and cognitive faculties is accurately framed as reported argument."
+          },
+          "englishCorrespondence": "the holy and intellective faculties turn wholly toward holiness and enter the company of the higher assembly of separate spirits; and the traveller ceases, in that state, to employ the bodily faculties. Accordingly, sensory, imaginative, estimative, and discursive cognition carry no weight for them;",
+          "riskMarkers": []
         },
         {
           "n": 7,
           "startChar": 655,
           "endChar": 717,
           "text": "بل هذه الإدراكات عندهم مانعة لحصول ما هو الكمال الحقيقي عندهم،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 6,
+            "note": "The opponents' description of ascetic training and cognitive faculties is accurately framed as reported argument."
+          },
+          "englishCorrespondence": "the holy and intellective faculties turn wholly toward holiness and enter the company of the higher assembly of separate spirits; and the traveller ceases, in that state, to employ the bodily faculties. Accordingly, sensory, imaginative, estimative, and discursive cognition carry no weight for them;",
+          "riskMarkers": []
         },
         {
           "n": 8,
           "startChar": 718,
           "endChar": 853,
           "text": "لاتّفاقهم على أنّ حصوله لا يمكن إلّا بقهر القوى الطبيعيّة وتقوية القوى القدسيّة وتبديل الأخلاق السيّئة بالحسنة وملازمة الأفعال الجميلة.",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 6,
+            "note": "The opponents' description of ascetic training and cognitive faculties is accurately framed as reported argument."
+          },
+          "englishCorrespondence": "the holy and intellective faculties turn wholly toward holiness and enter the company of the higher assembly of separate spirits; and the traveller ceases, in that state, to employ the bodily faculties. Accordingly, sensory, imaginative, estimative, and discursive cognition carry no weight for them;",
           "riskMarkers": [
             "negation",
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 9,
           "startChar": 854,
           "endChar": 924,
           "text": "وحينئذ كان الإنسان الكامل هو المشارك للعقول المجرّدة والأرواح الكاملة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "Absent analogues to rebellious spirits and beasts listed as an objection, not an endorsement of their literal absence."
+          },
+          "englishCorrespondence": "indeed, they regard these as impediments to true perfection. For they hold that perfection requires subduing the natural faculties, strengthening the holy faculties, exchanging bad dispositions for good, and consistently undertaking noble actions. On this account, the Perfect Human becomes one who shares in the qualities of separate intellects and perfected spirits.",
+          "riskMarkers": []
         },
         {
           "n": 10,
           "startChar": 925,
           "endChar": 963,
           "text": "فلا يمكن أن يقال إنّه هو الكون الجامع،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "Absent analogues to rebellious spirits and beasts listed as an objection, not an endorsement of their literal absence."
+          },
+          "englishCorrespondence": "indeed, they regard these as impediments to true perfection. For they hold that perfection requires subduing the natural faculties, strengthening the holy faculties, exchanging bad dispositions for good, and consistently undertaking noble actions. On this account, the Perfect Human becomes one who shares in the qualities of separate intellects and perfected spirits.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 11,
           "startChar": 964,
           "endChar": 1006,
           "text": "إذ لا يوجد فيه ما هو مثل العفاريت والمردة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "Absent analogues to rebellious spirits and beasts listed as an objection, not an endorsement of their literal absence."
+          },
+          "englishCorrespondence": "indeed, they regard these as impediments to true perfection. For they hold that perfection requires subduing the natural faculties, strengthening the holy faculties, exchanging bad dispositions for good, and consistently undertaking noble actions. On this account, the Perfect Human becomes one who shares in the qualities of separate intellects and perfected spirits.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 12,
           "startChar": 1007,
           "endChar": 1061,
           "text": "ولا ما يماثل السباع والوحوش والبهائم والحشرات المؤذية.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "Absent analogues to rebellious spirits and beasts listed as an objection, not an endorsement of their literal absence."
+          },
+          "englishCorrespondence": "indeed, they regard these as impediments to true perfection. For they hold that perfection requires subduing the natural faculties, strengthening the holy faculties, exchanging bad dispositions for good, and consistently undertaking noble actions. On this account, the Perfect Human becomes one who shares in the qualities of separate intellects and perfected spirits.",
+          "riskMarkers": []
         },
         {
           "n": 13,
           "startChar": 1062,
           "endChar": 1181,
           "text": "ومن البيّن أنّه لا يوجد فيه ما يماثل الأفلاك والكواكب غير القابلة للخرق والالتيام المتحرّكة على سبيل الاستمرار والدوام،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 11,
+            "note": "Celestial spheres' supposed incorruptibility is source's inherited cosmology, explicitly labelled as such."
+          },
+          "englishCorrespondence": "But then one cannot call such a human the comprehensive cosmos: there are no counterparts within this human of powerful rebellious spirits, predatory or wild animals, beasts, or harmful insects. Equally, nothing within the human corresponds to the celestial spheres and stars which, on the inherited cosmological account, do not admit rupture or rejoining and move continually without interruption.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 14,
           "startChar": 1182,
           "endChar": 1203,
           "text": "مع عدم عروض الانقطاع.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 11,
+            "note": "Celestial spheres' supposed incorruptibility is source's inherited cosmology, explicitly labelled as such."
+          },
+          "englishCorrespondence": "But then one cannot call such a human the comprehensive cosmos: there are no counterparts within this human of powerful rebellious spirits, predatory or wild animals, beasts, or harmful insects. Equally, nothing within the human corresponds to the celestial spheres and stars which, on the inherited cosmological account, do not admit rupture or rejoining and move continually without interruption.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -8257,7 +8533,7 @@
           "text": "Equally, nothing within the human corresponds to the celestial spheres and stars which, on the inherited cosmological account, do not admit rupture or rejoining and move continually without interruption."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 1
     },
     {
@@ -8275,133 +8551,181 @@
           "startChar": 0,
           "endChar": 59,
           "text": "ثمّ إنّ من البيّن أنّ الكمال الذي يقولون به كالأمر الممتنع،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 4,
+            "note": "Objection to suprarational perfection treats its alleged ineffability and unavailability to bodily powers as a difficulty for the opponents."
+          },
+          "englishCorrespondence": "It is also evident, the objection continues, that the perfection of which they speak appears to be something impossible. For were a traveller to attain and apprehend it, the traveller could not grasp it through the intellectual faculty: they themselves agree that the intellect cannot apprehend it, since it belongs to a mode beyond intellect. Consequently the intellect cannot reach it, and neither could any bodily faculty involved in retention, sensation, imagination, or representation take it as an object. This is clear without further elaboration;",
+          "riskMarkers": []
         },
         {
           "n": 2,
           "startChar": 60,
           "endChar": 92,
           "text": "لأنّه لو وصل إليه السالك وأدركه،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 4,
+            "note": "Objection to suprarational perfection treats its alleged ineffability and unavailability to bodily powers as a difficulty for the opponents."
+          },
+          "englishCorrespondence": "It is also evident, the objection continues, that the perfection of which they speak appears to be something impossible. For were a traveller to attain and apprehend it, the traveller could not grasp it through the intellectual faculty: they themselves agree that the intellect cannot apprehend it, since it belongs to a mode beyond intellect. Consequently the intellect cannot reach it, and neither could any bodily faculty involved in retention, sensation, imagination, or representation take it as an object. This is clear without further elaboration;",
           "riskMarkers": [
             "conditional"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 93,
           "endChar": 128,
           "text": "لما أمكنه أن يعقله بالقوّة العاقلة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 4,
+            "note": "Objection to suprarational perfection treats its alleged ineffability and unavailability to bodily powers as a difficulty for the opponents."
+          },
+          "englishCorrespondence": "It is also evident, the objection continues, that the perfection of which they speak appears to be something impossible. For were a traveller to attain and apprehend it, the traveller could not grasp it through the intellectual faculty: they themselves agree that the intellect cannot apprehend it, since it belongs to a mode beyond intellect. Consequently the intellect cannot reach it, and neither could any bodily faculty involved in retention, sensation, imagination, or representation take it as an object. This is clear without further elaboration;",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 129,
           "endChar": 201,
           "text": "لاتّفاقهم على أنّ العقل يستحيل أن يدركه لكونه من الأطوار التي فوق العقل،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 4,
+            "note": "Objection to suprarational perfection treats its alleged ineffability and unavailability to bodily powers as a difficulty for the opponents."
+          },
+          "englishCorrespondence": "It is also evident, the objection continues, that the perfection of which they speak appears to be something impossible. For were a traveller to attain and apprehend it, the traveller could not grasp it through the intellectual faculty: they themselves agree that the intellect cannot apprehend it, since it belongs to a mode beyond intellect. Consequently the intellect cannot reach it, and neither could any bodily faculty involved in retention, sensation, imagination, or representation take it as an object. This is clear without further elaboration;",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 5,
           "startChar": 202,
           "endChar": 236,
           "text": "فامتنع أن يصل إليه القوّة العاقلة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 4,
+            "note": "Objection to suprarational perfection treats its alleged ineffability and unavailability to bodily powers as a difficulty for the opponents."
+          },
+          "englishCorrespondence": "It is also evident, the objection continues, that the perfection of which they speak appears to be something impossible. For were a traveller to attain and apprehend it, the traveller could not grasp it through the intellectual faculty: they themselves agree that the intellect cannot apprehend it, since it belongs to a mode beyond intellect. Consequently the intellect cannot reach it, and neither could any bodily faculty involved in retention, sensation, imagination, or representation take it as an object. This is clear without further elaboration;",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 237,
           "endChar": 324,
           "text": "فامتنع أن يتعلّق به شيء من القوى الجسمانيّة المدركة بالحفظ والإحساس والتخيّل والمحاكاة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 6,
+            "note": "Death versus voluntary attention as proposed condition for complete detachment distinguished."
+          },
+          "englishCorrespondence": "accordingly it could not be expressed in words. Furthermore, the complete release of the holy rational faculty from its natural restrictions is realized only at death, not by merely turning away from those restrictions and withholding attention from them and from their demands, activities, and ends.",
+          "riskMarkers": []
         },
         {
           "n": 7,
           "startChar": 325,
           "endChar": 358,
           "text": "وهذا بيّن لا يحتاج إلى بيان زائد،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 6,
+            "note": "Death versus voluntary attention as proposed condition for complete detachment distinguished."
+          },
+          "englishCorrespondence": "accordingly it could not be expressed in words. Furthermore, the complete release of the holy rational faculty from its natural restrictions is realized only at death, not by merely turning away from those restrictions and withholding attention from them and from their demands, activities, and ends.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 8,
           "startChar": 359,
           "endChar": 396,
           "text": "فامتنع أن يعبّر عنه بشيء من العبارات.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 6,
+            "note": "Death versus voluntary attention as proposed condition for complete detachment distinguished."
+          },
+          "englishCorrespondence": "accordingly it could not be expressed in words. Furthermore, the complete release of the holy rational faculty from its natural restrictions is realized only at death, not by merely turning away from those restrictions and withholding attention from them and from their demands, activities, and ends.",
+          "riskMarkers": []
         },
         {
           "n": 9,
           "startChar": 397,
           "endChar": 477,
           "text": "على أنّ تجرّد القوّة الناطقة القدسيّة عن القيود الطبيعيّة لا يتحقّق إلّا بالموت،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 6,
+            "note": "Death versus voluntary attention as proposed condition for complete detachment distinguished."
+          },
+          "englishCorrespondence": "accordingly it could not be expressed in words. Furthermore, the complete release of the holy rational faculty from its natural restrictions is realized only at death, not by merely turning away from those restrictions and withholding attention from them and from their demands, activities, and ends.",
           "riskMarkers": [
             "negation",
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 10,
           "startChar": 478,
           "endChar": 555,
           "text": "ولا يتحقّق بالإعراض عنها بعدم التفاتها إليها وإلى مقتضياتها وأفعالها وغايتها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 8,
+            "note": "Natural limitations allegedly remaining even after death are included, not suppressed."
+          },
+          "englishCorrespondence": "Concentrating thought upon what is absolute, even continually, does not thereby remove the natural restrictions or reduce them to nonexistence. Nor, even at death, does the rational spirit shed many restrictions that are necessary concomitants of it and stand to it as though they were its parts.",
+          "riskMarkers": []
         },
         {
           "n": 11,
           "startChar": 556,
           "endChar": 650,
           "text": "وبيّن أنّ انحصار النظر في الأمر المطلق ودوام الملاحظة له لا يوجب رفعها وصيرورتها في حكم العدم.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 8,
+            "note": "Natural limitations allegedly remaining even after death are included, not suppressed."
+          },
+          "englishCorrespondence": "Concentrating thought upon what is absolute, even continually, does not thereby remove the natural restrictions or reduce them to nonexistence. Nor, even at death, does the rational spirit shed many restrictions that are necessary concomitants of it and stand to it as though they were its parts.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 12,
           "startChar": 651,
           "endChar": 751,
           "text": "ثمّ إنّ الروح الناطقة لا تتجرّد بالموت عن كثير من القيود التي هي من لوازمها وكالأجزاء بالنسبة إليها.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 8,
+            "note": "Natural limitations allegedly remaining even after death are included, not suppressed."
+          },
+          "englishCorrespondence": "Concentrating thought upon what is absolute, even continually, does not thereby remove the natural restrictions or reduce them to nonexistence. Nor, even at death, does the rational spirit shed many restrictions that are necessary concomitants of it and stand to it as though they were its parts.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         }
       ],
       "englishSentences": [
@@ -8454,7 +8778,7 @@
           "text": "Nor, even at death, does the rational spirit shed many restrictions that are necessary concomitants of it and stand to it as though they were its parts."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 1
     },
     {
@@ -8472,204 +8796,280 @@
           "startChar": 0,
           "endChar": 82,
           "text": "على أنّا نقول: إنّ الكمالات الفعليّة المستندة إلى الحجج القويّة والبراهين القاطعة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Humoral counter-accusation is analogical/dialectical, not endorsed as medical diagnosis or universal criticism of Sufi practice."
+          },
+          "englishCorrespondence": "Moreover, we say: if it were legitimate to describe the actual perfections grounded in powerful arguments and decisive demonstrations—attained by the rational soul through sound thinking while the temperaments of the body, its organs, and its animal, psychic, and natural faculties remain in balance—as deficiencies, false imaginings, and veils barring true perfection, then it would likewise be legitimate to classify perceptions brought about by repeatedly uttering particular phrases in powerful voices, which dissipate the psychic spirits and overwhelm the senses, among the perceptions of those suffering from melancholy or disorders of the humours. This charge would seem especially pertinent when such recitation is accompanied by withdrawal from others, remaining in dark places, consuming unsuitable foods that produce corrupted humours at harmful times, and pursuing what is called 'opposition to the soul'. Those afflicted by such disorders judge what lacks external reality to exist and perceive forms and sounds that do not exist outside themselves, owing to defective suppositions, disordered thought, and imbalance of their constitutions.",
+          "riskMarkers": []
         },
         {
           "n": 2,
           "startChar": 83,
           "endChar": 212,
           "text": "الحاصلة للنفس الناطقة بالأفكار الصحيحة عند اعتدال مزاج البدن واعتدال أمزجة سائر الأعضاء والقوى الحيوانيّة والنفسانيّة والطبيعيّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Humoral counter-accusation is analogical/dialectical, not endorsed as medical diagnosis or universal criticism of Sufi practice."
+          },
+          "englishCorrespondence": "Moreover, we say: if it were legitimate to describe the actual perfections grounded in powerful arguments and decisive demonstrations—attained by the rational soul through sound thinking while the temperaments of the body, its organs, and its animal, psychic, and natural faculties remain in balance—as deficiencies, false imaginings, and veils barring true perfection, then it would likewise be legitimate to classify perceptions brought about by repeatedly uttering particular phrases in powerful voices, which dissipate the psychic spirits and overwhelm the senses, among the perceptions of those suffering from melancholy or disorders of the humours. This charge would seem especially pertinent when such recitation is accompanied by withdrawal from others, remaining in dark places, consuming unsuitable foods that produce corrupted humours at harmful times, and pursuing what is called 'opposition to the soul'. Those afflicted by such disorders judge what lacks external reality to exist and perceive forms and sounds that do not exist outside themselves, owing to defective suppositions, disordered thought, and imbalance of their constitutions.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 213,
           "endChar": 308,
           "text": "لو صحّ أن يقال إنّها من المناقض والخيالات الفاسدة والحجب المانعة للوصول إلى الكمالات الحقيقيّة،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Humoral counter-accusation is analogical/dialectical, not endorsed as medical diagnosis or universal criticism of Sufi practice."
+          },
+          "englishCorrespondence": "Moreover, we say: if it were legitimate to describe the actual perfections grounded in powerful arguments and decisive demonstrations—attained by the rational soul through sound thinking while the temperaments of the body, its organs, and its animal, psychic, and natural faculties remain in balance—as deficiencies, false imaginings, and veils barring true perfection, then it would likewise be legitimate to classify perceptions brought about by repeatedly uttering particular phrases in powerful voices, which dissipate the psychic spirits and overwhelm the senses, among the perceptions of those suffering from melancholy or disorders of the humours. This charge would seem especially pertinent when such recitation is accompanied by withdrawal from others, remaining in dark places, consuming unsuitable foods that produce corrupted humours at harmful times, and pursuing what is called 'opposition to the soul'. Those afflicted by such disorders judge what lacks external reality to exist and perceive forms and sounds that do not exist outside themselves, owing to defective suppositions, disordered thought, and imbalance of their constitutions.",
           "riskMarkers": [
             "conditional"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 4,
           "startChar": 309,
           "endChar": 419,
           "text": "لصحّ أن يقال إنّ الإدراكات الحاصلة من تكرار بعض الألفاظ المعيّنة بالأصوات القويّة المحلّلة للأرواح النفسانيّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Humoral counter-accusation is analogical/dialectical, not endorsed as medical diagnosis or universal criticism of Sufi practice."
+          },
+          "englishCorrespondence": "Moreover, we say: if it were legitimate to describe the actual perfections grounded in powerful arguments and decisive demonstrations—attained by the rational soul through sound thinking while the temperaments of the body, its organs, and its animal, psychic, and natural faculties remain in balance—as deficiencies, false imaginings, and veils barring true perfection, then it would likewise be legitimate to classify perceptions brought about by repeatedly uttering particular phrases in powerful voices, which dissipate the psychic spirits and overwhelm the senses, among the perceptions of those suffering from melancholy or disorders of the humours. This charge would seem especially pertinent when such recitation is accompanied by withdrawal from others, remaining in dark places, consuming unsuitable foods that produce corrupted humours at harmful times, and pursuing what is called 'opposition to the soul'. Those afflicted by such disorders judge what lacks external reality to exist and perceive forms and sounds that do not exist outside themselves, owing to defective suppositions, disordered thought, and imbalance of their constitutions.",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 420,
           "endChar": 445,
           "text": "المدهشة للحواسّ البشريّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Humoral counter-accusation is analogical/dialectical, not endorsed as medical diagnosis or universal criticism of Sufi practice."
+          },
+          "englishCorrespondence": "Moreover, we say: if it were legitimate to describe the actual perfections grounded in powerful arguments and decisive demonstrations—attained by the rational soul through sound thinking while the temperaments of the body, its organs, and its animal, psychic, and natural faculties remain in balance—as deficiencies, false imaginings, and veils barring true perfection, then it would likewise be legitimate to classify perceptions brought about by repeatedly uttering particular phrases in powerful voices, which dissipate the psychic spirits and overwhelm the senses, among the perceptions of those suffering from melancholy or disorders of the humours. This charge would seem especially pertinent when such recitation is accompanied by withdrawal from others, remaining in dark places, consuming unsuitable foods that produce corrupted humours at harmful times, and pursuing what is called 'opposition to the soul'. Those afflicted by such disorders judge what lacks external reality to exist and perceive forms and sounds that do not exist outside themselves, owing to defective suppositions, disordered thought, and imbalance of their constitutions.",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 446,
           "endChar": 619,
           "text": "لا سيّما عند التخلّي عن الخلائق والسكون في المواضع المظلمة وتناول الأغذية الرديّة المولّدة للكيموسات الفاسدة في الأوقات المضرّة وملازمة الطريقة المسمّاة عندهم بمخالفة النفس،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Humoral counter-accusation is analogical/dialectical, not endorsed as medical diagnosis or universal criticism of Sufi practice."
+          },
+          "englishCorrespondence": "Moreover, we say: if it were legitimate to describe the actual perfections grounded in powerful arguments and decisive demonstrations—attained by the rational soul through sound thinking while the temperaments of the body, its organs, and its animal, psychic, and natural faculties remain in balance—as deficiencies, false imaginings, and veils barring true perfection, then it would likewise be legitimate to classify perceptions brought about by repeatedly uttering particular phrases in powerful voices, which dissipate the psychic spirits and overwhelm the senses, among the perceptions of those suffering from melancholy or disorders of the humours. This charge would seem especially pertinent when such recitation is accompanied by withdrawal from others, remaining in dark places, consuming unsuitable foods that produce corrupted humours at harmful times, and pursuing what is called 'opposition to the soul'. Those afflicted by such disorders judge what lacks external reality to exist and perceive forms and sounds that do not exist outside themselves, owing to defective suppositions, disordered thought, and imbalance of their constitutions.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 620,
           "endChar": 748,
           "text": "من جملة الإدراكات الحاصلة لأرباب الماليخولياء والممرورين الذين يحكمون بثبوت ما لا تحقّق له في الأعيان لسوء ظنونهم وفساد أفكارهم،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Humoral counter-accusation is analogical/dialectical, not endorsed as medical diagnosis or universal criticism of Sufi practice."
+          },
+          "englishCorrespondence": "Moreover, we say: if it were legitimate to describe the actual perfections grounded in powerful arguments and decisive demonstrations—attained by the rational soul through sound thinking while the temperaments of the body, its organs, and its animal, psychic, and natural faculties remain in balance—as deficiencies, false imaginings, and veils barring true perfection, then it would likewise be legitimate to classify perceptions brought about by repeatedly uttering particular phrases in powerful voices, which dissipate the psychic spirits and overwhelm the senses, among the perceptions of those suffering from melancholy or disorders of the humours. This charge would seem especially pertinent when such recitation is accompanied by withdrawal from others, remaining in dark places, consuming unsuitable foods that produce corrupted humours at harmful times, and pursuing what is called 'opposition to the soul'. Those afflicted by such disorders judge what lacks external reality to exist and perceive forms and sounds that do not exist outside themselves, owing to defective suppositions, disordered thought, and imbalance of their constitutions.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 8,
           "startChar": 749,
           "endChar": 801,
           "text": "ويشاهدون صوراً وأصواتاً لا وجود لها في الخارج أصلاً،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Humoral counter-accusation is analogical/dialectical, not endorsed as medical diagnosis or universal criticism of Sufi practice."
+          },
+          "englishCorrespondence": "Moreover, we say: if it were legitimate to describe the actual perfections grounded in powerful arguments and decisive demonstrations—attained by the rational soul through sound thinking while the temperaments of the body, its organs, and its animal, psychic, and natural faculties remain in balance—as deficiencies, false imaginings, and veils barring true perfection, then it would likewise be legitimate to classify perceptions brought about by repeatedly uttering particular phrases in powerful voices, which dissipate the psychic spirits and overwhelm the senses, among the perceptions of those suffering from melancholy or disorders of the humours. This charge would seem especially pertinent when such recitation is accompanied by withdrawal from others, remaining in dark places, consuming unsuitable foods that produce corrupted humours at harmful times, and pursuing what is called 'opposition to the soul'. Those afflicted by such disorders judge what lacks external reality to exist and perceive forms and sounds that do not exist outside themselves, owing to defective suppositions, disordered thought, and imbalance of their constitutions.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 9,
           "startChar": 802,
           "endChar": 831,
           "text": "لانحراف أمزجتهم وفساد بنيتهم.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Excessive hunger and sleeplessness rendered accurately for السهر here, unlike corrected SH-058 السهو."
+          },
+          "englishCorrespondence": "As for what is called 'opposition to the soul', it entails inflicting pain on the spirit and exhausting the body by excessive hunger and sleeplessness, which dry out the brain and disturb the equilibrium of the organs, psychic spirits, and body. Voluntary hardship and deprivation produce a strained psychic habit marked by sorrow, tears, anxiety, fear, abasement, loss of vigour and aspiration, destitution and misery, while extinguishing the joy and temperamental equilibrium conducive to bodily and spiritual pleasure.",
+          "riskMarkers": []
         },
         {
           "n": 10,
           "startChar": 832,
           "endChar": 873,
           "text": "أمّا الحالة المسمّاة عندهم بمخالفة النفس،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Excessive hunger and sleeplessness rendered accurately for السهر here, unlike corrected SH-058 السهو."
+          },
+          "englishCorrespondence": "As for what is called 'opposition to the soul', it entails inflicting pain on the spirit and exhausting the body by excessive hunger and sleeplessness, which dry out the brain and disturb the equilibrium of the organs, psychic spirits, and body. Voluntary hardship and deprivation produce a strained psychic habit marked by sorrow, tears, anxiety, fear, abasement, loss of vigour and aspiration, destitution and misery, while extinguishing the joy and temperamental equilibrium conducive to bodily and spiritual pleasure.",
+          "riskMarkers": []
         },
         {
           "n": 11,
           "startChar": 874,
           "endChar": 1012,
           "text": "فهي بالحقيقة إيلام للروح وإتعاب للبدن بالجوع والسهر المفرطين المجفّفين للدماغ وأجزائه المخرجين لأمزجة الأعضاء والأرواح والبدن عن الاعتدال،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Excessive hunger and sleeplessness rendered accurately for السهر here, unlike corrected SH-058 السهو."
+          },
+          "englishCorrespondence": "As for what is called 'opposition to the soul', it entails inflicting pain on the spirit and exhausting the body by excessive hunger and sleeplessness, which dry out the brain and disturb the equilibrium of the organs, psychic spirits, and body. Voluntary hardship and deprivation produce a strained psychic habit marked by sorrow, tears, anxiety, fear, abasement, loss of vigour and aspiration, destitution and misery, while extinguishing the joy and temperamental equilibrium conducive to bodily and spiritual pleasure.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 12,
           "startChar": 1013,
           "endChar": 1229,
           "text": "وبارتكاب الآلام والمشقّات وترك الراحات بالاختيار وتعذيب النفس به تحصيل ملكة نفسانيّة تكليفيّة — تكلّفيّة — يفيد الحزن والبكاء والهمّ والخوف والتقوّس والذلّة وقلّة الحميّة والفقر والمسكنة وسقوط الهمّة والتفرّس والبؤس،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Excessive hunger and sleeplessness rendered accurately for السهر here, unlike corrected SH-058 السهو."
+          },
+          "englishCorrespondence": "As for what is called 'opposition to the soul', it entails inflicting pain on the spirit and exhausting the body by excessive hunger and sleeplessness, which dry out the brain and disturb the equilibrium of the organs, psychic spirits, and body. Voluntary hardship and deprivation produce a strained psychic habit marked by sorrow, tears, anxiety, fear, abasement, loss of vigour and aspiration, destitution and misery, while extinguishing the joy and temperamental equilibrium conducive to bodily and spiritual pleasure.",
+          "riskMarkers": []
         },
         {
           "n": 13,
           "startChar": 1230,
           "endChar": 1299,
           "text": "وينفي السرور والفرح واعتدال المزاج الموجب للذّة البدنيّة والروحانيّة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Excessive hunger and sleeplessness rendered accurately for السهر here, unlike corrected SH-058 السهو."
+          },
+          "englishCorrespondence": "As for what is called 'opposition to the soul', it entails inflicting pain on the spirit and exhausting the body by excessive hunger and sleeplessness, which dry out the brain and disturb the equilibrium of the organs, psychic spirits, and body. Voluntary hardship and deprivation produce a strained psychic habit marked by sorrow, tears, anxiety, fear, abasement, loss of vigour and aspiration, destitution and misery, while extinguishing the joy and temperamental equilibrium conducive to bodily and spiritual pleasure.",
+          "riskMarkers": []
         },
         {
           "n": 14,
           "startChar": 1300,
           "endChar": 1339,
           "text": "فهذه الحالة لا شكّ أنّها مسقطة للطبيعة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Excessive hunger and sleeplessness rendered accurately for السهر here, unlike corrected SH-058 السهو."
+          },
+          "englishCorrespondence": "As for what is called 'opposition to the soul', it entails inflicting pain on the spirit and exhausting the body by excessive hunger and sleeplessness, which dry out the brain and disturb the equilibrium of the organs, psychic spirits, and body. Voluntary hardship and deprivation produce a strained psychic habit marked by sorrow, tears, anxiety, fear, abasement, loss of vigour and aspiration, destitution and misery, while extinguishing the joy and temperamental equilibrium conducive to bodily and spiritual pleasure.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 15,
           "startChar": 1340,
           "endChar": 1354,
           "text": "مضعّفة للقوّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Excessive hunger and sleeplessness rendered accurately for السهر here, unlike corrected SH-058 السهو."
+          },
+          "englishCorrespondence": "As for what is called 'opposition to the soul', it entails inflicting pain on the spirit and exhausting the body by excessive hunger and sleeplessness, which dry out the brain and disturb the equilibrium of the organs, psychic spirits, and body. Voluntary hardship and deprivation produce a strained psychic habit marked by sorrow, tears, anxiety, fear, abasement, loss of vigour and aspiration, destitution and misery, while extinguishing the joy and temperamental equilibrium conducive to bodily and spiritual pleasure.",
+          "riskMarkers": []
         },
         {
           "n": 16,
           "startChar": 1355,
           "endChar": 1410,
           "text": "موجبة لانحراف الأمزجة الإنسانيّة عن الحالة الاعتداليّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 5,
+            "note": "Excessive hunger and sleeplessness rendered accurately for السهر here, unlike corrected SH-058 السهو."
+          },
+          "englishCorrespondence": "As for what is called 'opposition to the soul', it entails inflicting pain on the spirit and exhausting the body by excessive hunger and sleeplessness, which dry out the brain and disturb the equilibrium of the organs, psychic spirits, and body. Voluntary hardship and deprivation produce a strained psychic habit marked by sorrow, tears, anxiety, fear, abasement, loss of vigour and aspiration, destitution and misery, while extinguishing the joy and temperamental equilibrium conducive to bodily and spiritual pleasure.",
+          "riskMarkers": []
         },
         {
           "n": 17,
           "startChar": 1411,
           "endChar": 1459,
           "text": "مفيدة لأمراض كثيرة بعضها بدنيّة وبعضها نفسانيّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "Weakening of constitution and supposed cognitive defects are presented as opponent's claims."
+          },
+          "englishCorrespondence": "Such a condition weakens the constitution, disturbs the human temperaments, and produces bodily and psychological illnesses that hasten death and diminish strength. Perceptions arising from this procedure would therefore be classified as corrupt perceptions.",
+          "riskMarkers": []
         },
         {
           "n": 18,
           "startChar": 1460,
           "endChar": 1499,
           "text": "معدّة لقرب الموت وزوال القوّة بالضرورة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "Weakening of constitution and supposed cognitive defects are presented as opponent's claims."
+          },
+          "englishCorrespondence": "Such a condition weakens the constitution, disturbs the human temperaments, and produces bodily and psychological illnesses that hasten death and diminish strength. Perceptions arising from this procedure would therefore be classified as corrupt perceptions.",
+          "riskMarkers": []
         },
         {
           "n": 19,
           "startChar": 1500,
           "endChar": 1576,
           "text": "فالإدراكات المتفرّعة على هذه الطريقة لا شكّ أنّها من جملة الإدراكات الفاسدة.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "Weakening of constitution and supposed cognitive defects are presented as opponent's claims."
+          },
+          "englishCorrespondence": "Such a condition weakens the constitution, disturbs the human temperaments, and produces bodily and psychological illnesses that hasten death and diminish strength. Perceptions arising from this procedure would therefore be classified as corrupt perceptions.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         }
       ],
       "englishSentences": [
@@ -8716,7 +9116,7 @@
           "text": "Perceptions arising from this procedure would therefore be classified as corrupt perceptions."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 3
     },
     {
@@ -8734,211 +9134,287 @@
           "startChar": 0,
           "endChar": 90,
           "text": "قلنا: إنّ المظهر الكامل هو الكون الجامع الحاصر لجميع المظاهر في سائر المراتب الموجودة فيه،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 6,
+            "note": "Four degrees of comprehensiveness and differentiated knowledge presented in sequence."
+          },
+          "englishCorrespondence": "We reply: the complete locus of manifestation is the comprehensive being that embraces every locus of manifestation in all the levels contained within it. At the first level there is knowledge of the essences, attributes, determinations, and quiddities, an unseen and undifferentiated knowledge, not yet detailed. At the second there is knowledge of the totality that is objective, unseen, and differentiated in detail. At the third those meanings possess differentiated objective existence, and the whole is apprehended through several kinds of cognition. At the fourth, everything present in the preceding levels is present because this level embraces them, together with a real and perfectional unity-in-comprehensiveness, beyond which no further completeness or perfection can be conceived. Thus the most complete form disclosed through all these loci cannot appear as such except within this locus of manifestation.",
           "riskMarkers": [
             "reply",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 91,
           "endChar": 206,
           "text": "فإنّ المرتبة الأولى يوجد فيها العلم بالذوات وسائر الصفات والتعيّنات والماهيّات علماً غيبيّاً إجماليّاً غير تفصيليّ،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 6,
+            "note": "Four degrees of comprehensiveness and differentiated knowledge presented in sequence."
+          },
+          "englishCorrespondence": "We reply: the complete locus of manifestation is the comprehensive being that embraces every locus of manifestation in all the levels contained within it. At the first level there is knowledge of the essences, attributes, determinations, and quiddities, an unseen and undifferentiated knowledge, not yet detailed. At the second there is knowledge of the totality that is objective, unseen, and differentiated in detail. At the third those meanings possess differentiated objective existence, and the whole is apprehended through several kinds of cognition. At the fourth, everything present in the preceding levels is present because this level embraces them, together with a real and perfectional unity-in-comprehensiveness, beyond which no further completeness or perfection can be conceived. Thus the most complete form disclosed through all these loci cannot appear as such except within this locus of manifestation.",
           "riskMarkers": [
             "negation",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 207,
           "endChar": 283,
           "text": "وفي المرتبة الثانية يوجد فيها العلم بالجميع علماً عينيّاً غيبيّاً تفصيليّاً،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 6,
+            "note": "Four degrees of comprehensiveness and differentiated knowledge presented in sequence."
+          },
+          "englishCorrespondence": "We reply: the complete locus of manifestation is the comprehensive being that embraces every locus of manifestation in all the levels contained within it. At the first level there is knowledge of the essences, attributes, determinations, and quiddities, an unseen and undifferentiated knowledge, not yet detailed. At the second there is knowledge of the totality that is objective, unseen, and differentiated in detail. At the third those meanings possess differentiated objective existence, and the whole is apprehended through several kinds of cognition. At the fourth, everything present in the preceding levels is present because this level embraces them, together with a real and perfectional unity-in-comprehensiveness, beyond which no further completeness or perfection can be conceived. Thus the most complete form disclosed through all these loci cannot appear as such except within this locus of manifestation.",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 284,
           "endChar": 346,
           "text": "وفي المرتبة الثالثة يوجد تلك المعاني وجوداً عينيّاً تفصيليّاً،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 6,
+            "note": "Four degrees of comprehensiveness and differentiated knowledge presented in sequence."
+          },
+          "englishCorrespondence": "We reply: the complete locus of manifestation is the comprehensive being that embraces every locus of manifestation in all the levels contained within it. At the first level there is knowledge of the essences, attributes, determinations, and quiddities, an unseen and undifferentiated knowledge, not yet detailed. At the second there is knowledge of the totality that is objective, unseen, and differentiated in detail. At the third those meanings possess differentiated objective existence, and the whole is apprehended through several kinds of cognition. At the fourth, everything present in the preceding levels is present because this level embraces them, together with a real and perfectional unity-in-comprehensiveness, beyond which no further completeness or perfection can be conceived. Thus the most complete form disclosed through all these loci cannot appear as such except within this locus of manifestation.",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 347,
           "endChar": 390,
           "text": "ويدرك فيها الجمع بعدّة ضروب من نوع الإدراك،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 6,
+            "note": "Four degrees of comprehensiveness and differentiated knowledge presented in sequence."
+          },
+          "englishCorrespondence": "We reply: the complete locus of manifestation is the comprehensive being that embraces every locus of manifestation in all the levels contained within it. At the first level there is knowledge of the essences, attributes, determinations, and quiddities, an unseen and undifferentiated knowledge, not yet detailed. At the second there is knowledge of the totality that is objective, unseen, and differentiated in detail. At the third those meanings possess differentiated objective existence, and the whole is apprehended through several kinds of cognition. At the fourth, everything present in the preceding levels is present because this level embraces them, together with a real and perfectional unity-in-comprehensiveness, beyond which no further completeness or perfection can be conceived. Thus the most complete form disclosed through all these loci cannot appear as such except within this locus of manifestation.",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 391,
           "endChar": 444,
           "text": "وفي المرتبة الرابعة يوجد فيها جميع ما في هذه المراتب،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 6,
+            "note": "Four degrees of comprehensiveness and differentiated knowledge presented in sequence."
+          },
+          "englishCorrespondence": "We reply: the complete locus of manifestation is the comprehensive being that embraces every locus of manifestation in all the levels contained within it. At the first level there is knowledge of the essences, attributes, determinations, and quiddities, an unseen and undifferentiated knowledge, not yet detailed. At the second there is knowledge of the totality that is objective, unseen, and differentiated in detail. At the third those meanings possess differentiated objective existence, and the whole is apprehended through several kinds of cognition. At the fourth, everything present in the preceding levels is present because this level embraces them, together with a real and perfectional unity-in-comprehensiveness, beyond which no further completeness or perfection can be conceived. Thus the most complete form disclosed through all these loci cannot appear as such except within this locus of manifestation.",
+          "riskMarkers": []
         },
         {
           "n": 7,
           "startChar": 445,
           "endChar": 461,
           "text": "لاشتمالها عليها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "Reply to 'only intellectual' explicitly cites all levels, including complete self-apprehension and source-page interleaved Persian marginalia excluded."
+          },
+          "englishCorrespondence": "Consider this carefully. As for the claim that apprehension of certain forms and names would be only intellectual and unseen, it must be rejected. The reality pervading all things knows itself by itself, as well as what belongs to it as its necessary concomitants, with an unseen, comprehensive knowledge in the Perfect Human, the comprehensive being encompassing all these levels.",
+          "riskMarkers": []
         },
         {
           "n": 8,
           "startChar": 462,
           "endChar": 572,
           "text": "مع اشتمالها على معنى الأحديّة الجمعيّة الحقيقيّة الكماليّة التي لا يتصوّر الزيادة عليها من جهة التمام والكمال.",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "Reply to 'only intellectual' explicitly cites all levels, including complete self-apprehension and source-page interleaved Persian marginalia excluded."
+          },
+          "englishCorrespondence": "Consider this carefully. As for the claim that apprehension of certain forms and names would be only intellectual and unseen, it must be rejected. The reality pervading all things knows itself by itself, as well as what belongs to it as its necessary concomitants, with an unseen, comprehensive knowledge in the Perfect Human, the comprehensive being encompassing all these levels.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 9,
           "startChar": 573,
           "endChar": 678,
           "text": "فظهر أنّ الصورة الأكمليّة الظاهرة بحسب جميع هذه المظاهر لا يمكن ظهورها من حيث هي كذلك إلّا في هذا المظهر،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "Reply to 'only intellectual' explicitly cites all levels, including complete self-apprehension and source-page interleaved Persian marginalia excluded."
+          },
+          "englishCorrespondence": "Consider this carefully. As for the claim that apprehension of certain forms and names would be only intellectual and unseen, it must be rejected. The reality pervading all things knows itself by itself, as well as what belongs to it as its necessary concomitants, with an unseen, comprehensive knowledge in the Perfect Human, the comprehensive being encompassing all these levels.",
           "riskMarkers": [
             "negation",
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 10,
           "startChar": 679,
           "endChar": 690,
           "text": "فتأمّل ذلك.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "Reply to 'only intellectual' explicitly cites all levels, including complete self-apprehension and source-page interleaved Persian marginalia excluded."
+          },
+          "englishCorrespondence": "Consider this carefully. As for the claim that apprehension of certain forms and names would be only intellectual and unseen, it must be rejected. The reality pervading all things knows itself by itself, as well as what belongs to it as its necessary concomitants, with an unseen, comprehensive knowledge in the Perfect Human, the comprehensive being encompassing all these levels.",
+          "riskMarkers": []
         },
         {
           "n": 11,
           "startChar": 691,
           "endChar": 746,
           "text": "قوله: فيكون إدراك بعض الصور والأسماء تعقّليّاً غيبيّاً،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "Reply to 'only intellectual' explicitly cites all levels, including complete self-apprehension and source-page interleaved Persian marginalia excluded."
+          },
+          "englishCorrespondence": "Consider this carefully. As for the claim that apprehension of certain forms and names would be only intellectual and unseen, it must be rejected. The reality pervading all things knows itself by itself, as well as what belongs to it as its necessary concomitants, with an unseen, comprehensive knowledge in the Perfect Human, the comprehensive being encompassing all these levels.",
+          "riskMarkers": []
         },
         {
           "n": 12,
           "startChar": 747,
           "endChar": 753,
           "text": "مردود؛",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "Reply to 'only intellectual' explicitly cites all levels, including complete self-apprehension and source-page interleaved Persian marginalia excluded."
+          },
+          "englishCorrespondence": "Consider this carefully. As for the claim that apprehension of certain forms and names would be only intellectual and unseen, it must be rejected. The reality pervading all things knows itself by itself, as well as what belongs to it as its necessary concomitants, with an unseen, comprehensive knowledge in the Perfect Human, the comprehensive being encompassing all these levels.",
+          "riskMarkers": []
         },
         {
           "n": 13,
           "startChar": 754,
           "endChar": 909,
           "text": "لأنّ الحقيقة السارية في الكلّ يدرك بذاتها ذاتها وما عدا ذاتها من لوازم ذاتها علماً غيبيّاً إجماليّاً في الإنسان الكامل والكون الجمع المتضمّن بسائر المظاهر،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 14,
+            "note": "Intellectual, estimative, imaginative and sensory modes gathered together with corresponding receptivities."
+          },
+          "englishCorrespondence": "Through certain divine names and determinations and their corresponding receptivities it apprehends both aspects in differentiated intellectual cognition; through others it apprehends them in estimative and imaginative cognition; and through still others it acquires sensory perceptions according to their corresponding receptivities. Thus it apprehends the whole by means of the whole, in virtue of all that it contains: a complete apprehension to which nothing can be added. Reflect on this.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 14,
           "startChar": 910,
           "endChar": 947,
           "text": "المشتمل على جملة ما ذكرنا من المراتب.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 14,
+            "note": "Intellectual, estimative, imaginative and sensory modes gathered together with corresponding receptivities."
+          },
+          "englishCorrespondence": "Through certain divine names and determinations and their corresponding receptivities it apprehends both aspects in differentiated intellectual cognition; through others it apprehends them in estimative and imaginative cognition; and through still others it acquires sensory perceptions according to their corresponding receptivities. Thus it apprehends the whole by means of the whole, in virtue of all that it contains: a complete apprehension to which nothing can be added. Reflect on this.",
+          "riskMarkers": []
         },
         {
           "n": 15,
           "startChar": 948,
           "endChar": 1068,
           "text": "وإنّما يدرك الأمرين جميعاً فيه ببعض التعيّنات والأسماء الإلهيّة إدراكاً عقليّاً تفصيليّاً على حسب بعض ما فيه من القوابل،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 14,
+            "note": "Intellectual, estimative, imaginative and sensory modes gathered together with corresponding receptivities."
+          },
+          "englishCorrespondence": "Through certain divine names and determinations and their corresponding receptivities it apprehends both aspects in differentiated intellectual cognition; through others it apprehends them in estimative and imaginative cognition; and through still others it acquires sensory perceptions according to their corresponding receptivities. Thus it apprehends the whole by means of the whole, in virtue of all that it contains: a complete apprehension to which nothing can be added. Reflect on this.",
           "riskMarkers": [
             "exception_or_exclusivity",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 16,
           "startChar": 1069,
           "endChar": 1167,
           "text": "ويدركهما أيضاً ببعض تعيّنات وأسماء أخر إدراكاً وهميّاً وتخيّليّاً على حسب بعض ما فيه من قوابل أخر،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 14,
+            "note": "Intellectual, estimative, imaginative and sensory modes gathered together with corresponding receptivities."
+          },
+          "englishCorrespondence": "Through certain divine names and determinations and their corresponding receptivities it apprehends both aspects in differentiated intellectual cognition; through others it apprehends them in estimative and imaginative cognition; and through still others it acquires sensory perceptions according to their corresponding receptivities. Thus it apprehends the whole by means of the whole, in virtue of all that it contains: a complete apprehension to which nothing can be added. Reflect on this.",
+          "riskMarkers": []
         },
         {
           "n": 17,
           "startChar": 1168,
           "endChar": 1268,
           "text": "ويدرك أيضاً بتعيّنات وأسماء أخر إدراكات حسّيّة على حسب ما فيه من القوابل التي تتعلّق بتلك التعيّنات،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 14,
+            "note": "Intellectual, estimative, imaginative and sensory modes gathered together with corresponding receptivities."
+          },
+          "englishCorrespondence": "Through certain divine names and determinations and their corresponding receptivities it apprehends both aspects in differentiated intellectual cognition; through others it apprehends them in estimative and imaginative cognition; and through still others it acquires sensory perceptions according to their corresponding receptivities. Thus it apprehends the whole by means of the whole, in virtue of all that it contains: a complete apprehension to which nothing can be added. Reflect on this.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 18,
           "startChar": 1269,
           "endChar": 1347,
           "text": "فهي إنّما تدرك الكلّ بالكلّ بحسب ما فيها من الكلّ إدراكاً تامّاً لا مزيد عليه،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 14,
+            "note": "Intellectual, estimative, imaginative and sensory modes gathered together with corresponding receptivities."
+          },
+          "englishCorrespondence": "Through certain divine names and determinations and their corresponding receptivities it apprehends both aspects in differentiated intellectual cognition; through others it apprehends them in estimative and imaginative cognition; and through still others it acquires sensory perceptions according to their corresponding receptivities. Thus it apprehends the whole by means of the whole, in virtue of all that it contains: a complete apprehension to which nothing can be added. Reflect on this.",
           "riskMarkers": [
             "negation",
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 19,
           "startChar": 1348,
           "endChar": 1359,
           "text": "فتأمّل ذلك.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 14,
+            "note": "Intellectual, estimative, imaginative and sensory modes gathered together with corresponding receptivities."
+          },
+          "englishCorrespondence": "Through certain divine names and determinations and their corresponding receptivities it apprehends both aspects in differentiated intellectual cognition; through others it apprehends them in estimative and imaginative cognition; and through still others it acquires sensory perceptions according to their corresponding receptivities. Thus it apprehends the whole by means of the whole, in virtue of all that it contains: a complete apprehension to which nothing can be added. Reflect on this.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -9027,7 +9503,7 @@
           "text": "Reflect on this."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 1
     },
     {
@@ -9045,212 +9521,284 @@
           "startChar": 0,
           "endChar": 135,
           "text": "ولا بدّ أن يراد بحقيقة الكلّ وصورته الوجود المتعيّن بسائر التعيّنات التي بها يكون مصدراً لجميع الأفعال الكماليّة وجملة الآثار الفعليّة.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Form of whole characterized through active determinations and human receptivities."
+          },
+          "englishCorrespondence": "By the reality and form of the whole one must mean existence as determined by all the determinations through which it becomes the source of every perfection-producing action and the entire range of actual effects. Human beings, precisely insofar as they gather every higher and lower receptivity—spiritual, imaginal, natural, and corporeal—through genuine combination, composition, and intermixture, can in this respect become the locus in which that form is manifested.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 136,
           "endChar": 291,
           "text": "ولا شكّ أنّ الإنسان من حيث هو حاصر لجميع القوابل العلويّة والسفليّة والروحانيّة والمثاليّة والطبيعيّة الجسمانيّة على سبيل الجمع والتركيب والامتزاج الحقيقي،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Form of whole characterized through active determinations and human receptivities."
+          },
+          "englishCorrespondence": "By the reality and form of the whole one must mean existence as determined by all the determinations through which it becomes the source of every perfection-producing action and the entire range of actual effects. Human beings, precisely insofar as they gather every higher and lower receptivity—spiritual, imaginal, natural, and corporeal—through genuine combination, composition, and intermixture, can in this respect become the locus in which that form is manifested.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 292,
           "endChar": 413,
           "text": "فهو بهذه الحيثيّة إنّما يصحّ أن يصير مظهراً لتلك الصورة بذلك الاعتبار والحيثيّة المذكورة على سبيل الجمع والتركيب الحقيقي.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 2,
+            "note": "Form of whole characterized through active determinations and human receptivities."
+          },
+          "englishCorrespondence": "By the reality and form of the whole one must mean existence as determined by all the determinations through which it becomes the source of every perfection-producing action and the entire range of actual effects. Human beings, precisely insofar as they gather every higher and lower receptivity—spiritual, imaginal, natural, and corporeal—through genuine combination, composition, and intermixture, can in this respect become the locus in which that form is manifested.",
           "riskMarkers": [
             "exception_or_exclusivity",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 4,
           "startChar": 414,
           "endChar": 504,
           "text": "فلئن قيل: إنّ الوجود المتعيّن بجملة التعيّنات الانفعاليّة لا يغاير حقيقته وصورته بالحقيقة،",
+          "review": {
+            "status": "corrected",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "The one فلئن قيل objection has two branches; an earlier English translation incorrectly introduced 'we reply' before the second branch. Both horns now precede قلنا."
+          },
+          "englishCorrespondence": "If someone objects that existence determined by the totality of receptive determinations is not really distinct from its own reality and form, so that the distinction between the manifest and its locus of manifestation vanishes, and further argues that making reality under its active determinations the form of the whole rather than reality under its receptive determinations is an arbitrary assertion contradicting the claimed comprehensiveness—since such a form would encompass only some determinations—we reply: reality considered under the realizations and necessary aspects by which it is the Real and the originating principle differs, under that consideration, from reality considered under the possible aspects by which creaturehood and being an effect are established.",
           "riskMarkers": [
             "objection",
             "negation",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 5,
           "startChar": 505,
           "endChar": 543,
           "text": "وحينئذ يرتفع الفرق بين الظاهر والمظهر،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "corrected",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "The one فلئن قيل objection has two branches; an earlier English translation incorrectly introduced 'we reply' before the second branch. Both horns now precede قلنا."
+          },
+          "englishCorrespondence": "If someone objects that existence determined by the totality of receptive determinations is not really distinct from its own reality and form, so that the distinction between the manifest and its locus of manifestation vanishes, and further argues that making reality under its active determinations the form of the whole rather than reality under its receptive determinations is an arbitrary assertion contradicting the claimed comprehensiveness—since such a form would encompass only some determinations—we reply: reality considered under the realizations and necessary aspects by which it is the Real and the originating principle differs, under that consideration, from reality considered under the possible aspects by which creaturehood and being an effect are established.",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 544,
           "endChar": 647,
           "text": "على أنّ جعل الحقيقة المتعيّنة بالتعيّنات الفعليّة صورة له دون الحقيقة المتعيّنة بالتعيّنات الانفعاليّة،",
+          "review": {
+            "status": "corrected",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "The one فلئن قيل objection has two branches; an earlier English translation incorrectly introduced 'we reply' before the second branch. Both horns now precede قلنا."
+          },
+          "englishCorrespondence": "If someone objects that existence determined by the totality of receptive determinations is not really distinct from its own reality and form, so that the distinction between the manifest and its locus of manifestation vanishes, and further argues that making reality under its active determinations the form of the whole rather than reality under its receptive determinations is an arbitrary assertion contradicting the claimed comprehensiveness—since such a form would encompass only some determinations—we reply: reality considered under the realizations and necessary aspects by which it is the Real and the originating principle differs, under that consideration, from reality considered under the possible aspects by which creaturehood and being an effect are established.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 648,
           "endChar": 677,
           "text": "مع أنّه من التحكّمات الباردة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "corrected",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "The one فلئن قيل objection has two branches; an earlier English translation incorrectly introduced 'we reply' before the second branch. Both horns now precede قلنا."
+          },
+          "englishCorrespondence": "If someone objects that existence determined by the totality of receptive determinations is not really distinct from its own reality and form, so that the distinction between the manifest and its locus of manifestation vanishes, and further argues that making reality under its active determinations the form of the whole rather than reality under its receptive determinations is an arbitrary assertion contradicting the claimed comprehensiveness—since such a form would encompass only some determinations—we reply: reality considered under the realizations and necessary aspects by which it is the Real and the originating principle differs, under that consideration, from reality considered under the possible aspects by which creaturehood and being an effect are established.",
+          "riskMarkers": []
         },
         {
           "n": 8,
           "startChar": 678,
           "endChar": 704,
           "text": "يستلزم خلاف ما ذهبتم إليه،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "corrected",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "The one فلئن قيل objection has two branches; an earlier English translation incorrectly introduced 'we reply' before the second branch. Both horns now precede قلنا."
+          },
+          "englishCorrespondence": "If someone objects that existence determined by the totality of receptive determinations is not really distinct from its own reality and form, so that the distinction between the manifest and its locus of manifestation vanishes, and further argues that making reality under its active determinations the form of the whole rather than reality under its receptive determinations is an arbitrary assertion contradicting the claimed comprehensiveness—since such a form would encompass only some determinations—we reply: reality considered under the realizations and necessary aspects by which it is the Real and the originating principle differs, under that consideration, from reality considered under the possible aspects by which creaturehood and being an effect are established.",
+          "riskMarkers": []
         },
         {
           "n": 9,
           "startChar": 705,
           "endChar": 759,
           "text": "فإنّ صورته حينئذ ليست الحقيقة الجامعة لسائر التعيّنات،",
+          "review": {
+            "status": "corrected",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "The one فلئن قيل objection has two branches; an earlier English translation incorrectly introduced 'we reply' before the second branch. Both horns now precede قلنا."
+          },
+          "englishCorrespondence": "If someone objects that existence determined by the totality of receptive determinations is not really distinct from its own reality and form, so that the distinction between the manifest and its locus of manifestation vanishes, and further argues that making reality under its active determinations the form of the whole rather than reality under its receptive determinations is an arbitrary assertion contradicting the claimed comprehensiveness—since such a form would encompass only some determinations—we reply: reality considered under the realizations and necessary aspects by which it is the Real and the originating principle differs, under that consideration, from reality considered under the possible aspects by which creaturehood and being an effect are established.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 10,
           "startChar": 760,
           "endChar": 799,
           "text": "بل هي الحقيقة المتعيّنة ببعض التعيّنات.",
+          "review": {
+            "status": "corrected",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "The one فلئن قيل objection has two branches; an earlier English translation incorrectly introduced 'we reply' before the second branch. Both horns now precede قلنا."
+          },
+          "englishCorrespondence": "If someone objects that existence determined by the totality of receptive determinations is not really distinct from its own reality and form, so that the distinction between the manifest and its locus of manifestation vanishes, and further argues that making reality under its active determinations the form of the whole rather than reality under its receptive determinations is an arbitrary assertion contradicting the claimed comprehensiveness—since such a form would encompass only some determinations—we reply: reality considered under the realizations and necessary aspects by which it is the Real and the originating principle differs, under that consideration, from reality considered under the possible aspects by which creaturehood and being an effect are established.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 11,
           "startChar": 800,
           "endChar": 988,
           "text": "قلنا: إنّ الحقيقة المأخوذة بالتحقّقات والوجوه الوجوبيّة والاعتبارات الشريفة التي بها يتحقّق الحقّيّة المبدئيّة غير الحقيقة المأخوذة بالوجوه الإمكانيّة التي بها يتحقّق الخلقيّة والمعلوليّة.",
+          "review": {
+            "status": "corrected",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "The sole قلنا is the beginning of reply, which contrasts divine necessary aspects from possible created aspects, not a second objection."
+          },
+          "englishCorrespondence": "If someone objects that existence determined by the totality of receptive determinations is not really distinct from its own reality and form, so that the distinction between the manifest and its locus of manifestation vanishes, and further argues that making reality under its active determinations the form of the whole rather than reality under its receptive determinations is an arbitrary assertion contradicting the claimed comprehensiveness—since such a form would encompass only some determinations—we reply: reality considered under the realizations and necessary aspects by which it is the Real and the originating principle differs, under that consideration, from reality considered under the possible aspects by which creaturehood and being an effect are established.",
           "riskMarkers": [
             "reply",
             "negation",
             "modality",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 12,
           "startChar": 989,
           "endChar": 1086,
           "text": "على أنّ حقيقة الحقائق الحقّيّة لا يغاير حقيقة الحقائق والتعيّنات الخلقيّة من جهة الحقيقة المطلقة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 8,
+            "note": "One unrestricted reality under hidden/manifest/locus relations, while not identical under differing conceptual predications."
+          },
+          "englishCorrespondence": "Yet the reality of realities is not, as unrestricted reality, different from the reality and determinations of created things. Under one consideration this reality is hidden; under another it is manifest; under others it constitutes the loci of manifestation and the places of concealment. All are one in respect of absolute, unqualified reality, but not one in respect of the conceptual additions and relations under which they are differentiated.",
           "riskMarkers": [
             "negation",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 13,
           "startChar": 1087,
           "endChar": 1127,
           "text": "فتلك الحقيقة ببعض الاعتبارات هي الباطنة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 8,
+            "note": "One unrestricted reality under hidden/manifest/locus relations, while not identical under differing conceptual predications."
+          },
+          "englishCorrespondence": "Yet the reality of realities is not, as unrestricted reality, different from the reality and determinations of created things. Under one consideration this reality is hidden; under another it is manifest; under others it constitutes the loci of manifestation and the places of concealment. All are one in respect of absolute, unqualified reality, but not one in respect of the conceptual additions and relations under which they are differentiated.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 14,
           "startChar": 1128,
           "endChar": 1156,
           "text": "وببعض الاعتبارات هي الظاهرة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 8,
+            "note": "One unrestricted reality under hidden/manifest/locus relations, while not identical under differing conceptual predications."
+          },
+          "englishCorrespondence": "Yet the reality of realities is not, as unrestricted reality, different from the reality and determinations of created things. Under one consideration this reality is hidden; under another it is manifest; under others it constitutes the loci of manifestation and the places of concealment. All are one in respect of absolute, unqualified reality, but not one in respect of the conceptual additions and relations under which they are differentiated.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 15,
           "startChar": 1157,
           "endChar": 1176,
           "text": "وببعضها هي المظاهر،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 8,
+            "note": "One unrestricted reality under hidden/manifest/locus relations, while not identical under differing conceptual predications."
+          },
+          "englishCorrespondence": "Yet the reality of realities is not, as unrestricted reality, different from the reality and determinations of created things. Under one consideration this reality is hidden; under another it is manifest; under others it constitutes the loci of manifestation and the places of concealment. All are one in respect of absolute, unqualified reality, but not one in respect of the conceptual additions and relations under which they are differentiated.",
+          "riskMarkers": []
         },
         {
           "n": 16,
           "startChar": 1177,
           "endChar": 1196,
           "text": "وببعضها هي المكامن،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 8,
+            "note": "One unrestricted reality under hidden/manifest/locus relations, while not identical under differing conceptual predications."
+          },
+          "englishCorrespondence": "Yet the reality of realities is not, as unrestricted reality, different from the reality and determinations of created things. Under one consideration this reality is hidden; under another it is manifest; under others it constitutes the loci of manifestation and the places of concealment. All are one in respect of absolute, unqualified reality, but not one in respect of the conceptual additions and relations under which they are differentiated.",
+          "riskMarkers": []
         },
         {
           "n": 17,
           "startChar": 1197,
           "endChar": 1255,
           "text": "والكلّ واحد من جهة الحقيقة المطلقة والذاتيّة غير المقيّدة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 8,
+            "note": "One unrestricted reality under hidden/manifest/locus relations, while not identical under differing conceptual predications."
+          },
+          "englishCorrespondence": "Yet the reality of realities is not, as unrestricted reality, different from the reality and determinations of created things. Under one consideration this reality is hidden; under another it is manifest; under others it constitutes the loci of manifestation and the places of concealment. All are one in respect of absolute, unqualified reality, but not one in respect of the conceptual additions and relations under which they are differentiated.",
           "riskMarkers": [
             "negation",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 18,
           "startChar": 1256,
           "endChar": 1302,
           "text": "وليس بواحد من جهة الإضافات والنسب الاعتباريّة.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 8,
+            "note": "One unrestricted reality under hidden/manifest/locus relations, while not identical under differing conceptual predications."
+          },
+          "englishCorrespondence": "Yet the reality of realities is not, as unrestricted reality, different from the reality and determinations of created things. Under one consideration this reality is hidden; under another it is manifest; under others it constitutes the loci of manifestation and the places of concealment. All are one in respect of absolute, unqualified reality, but not one in respect of the conceptual additions and relations under which they are differentiated.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         }
       ],
       "englishSentences": [
@@ -9303,7 +9851,7 @@
           "text": "All are one in respect of absolute, unqualified reality, but not one in respect of the conceptual additions and relations under which they are differentiated."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 0
     },
     {
@@ -9321,106 +9869,146 @@
           "startChar": 0,
           "endChar": 150,
           "text": "ونحن قد بيّنّا في العلوم الحقيقيّة الأصليّة أنّ من الممكن أن يتألّف من جزئيّات العناصر أبدان معتدلة ذوات أعضاء تحمل قوى كثيرة يحصل عنها أفعال متنوّعة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Balanced elemental body and faculties are interpreted through the author's philosophical physiology."
+          },
+          "englishCorrespondence": "We have shown in the fundamental sciences of reality that balanced bodies composed of organs can arise from portions of the elements. These organs bear numerous faculties from which diverse acts proceed; through their interaction and intermixture balanced conditions arise.",
           "riskMarkers": [
             "modality"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 151,
           "endChar": 205,
           "text": "يحصل من امتزاجها واختلاط بعضها بالبعض أحوال اعتداليّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Balanced elemental body and faculties are interpreted through the author's philosophical physiology."
+          },
+          "englishCorrespondence": "We have shown in the fundamental sciences of reality that balanced bodies composed of organs can arise from portions of the elements. These organs bear numerous faculties from which diverse acts proceed; through their interaction and intermixture balanced conditions arise.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 206,
           "endChar": 271,
           "text": "وينبعث تلك القوى عن نفوس مجرّدة هي كالصورة لتلك الأبدان المعتدلة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 3,
+            "note": "Balanced elemental body and faculties are interpreted through the author's philosophical physiology."
+          },
+          "englishCorrespondence": "We have shown in the fundamental sciences of reality that balanced bodies composed of organs can arise from portions of the elements. These organs bear numerous faculties from which diverse acts proceed; through their interaction and intermixture balanced conditions arise.",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 272,
           "endChar": 338,
           "text": "ويحصل من مجموع البدن والنفس المجرّدة وحدة حقيقيّة ونوعيّة طبيعيّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 6,
+            "note": "A naturally one body–soul substance distinguished from bare plurality of principles."
+          },
+          "englishCorrespondence": "Those faculties proceed from separate souls that stand to the balanced bodies as form stands to matter. The conjunction of body and separate soul accordingly constitutes a real unity and a natural unity of species. Natural acts issue from this genuinely composite being that could not proceed from a plurality of principles merely insofar as they remain many and are not united in a genuine unity.",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 339,
           "endChar": 429,
           "text": "يصدر عن ذلك المركّب الحقيقي أفعال طبيعيّة يمتنع صدورها عن مبادئ متكثّرة من حيث هي متكثّرة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 6,
+            "note": "A naturally one body–soul substance distinguished from bare plurality of principles."
+          },
+          "englishCorrespondence": "Those faculties proceed from separate souls that stand to the balanced bodies as form stands to matter. The conjunction of body and separate soul accordingly constitutes a real unity and a natural unity of species. Natural acts issue from this genuinely composite being that could not proceed from a plurality of principles merely insofar as they remain many and are not united in a genuine unity.",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 430,
           "endChar": 458,
           "text": "غير واحدة بالوحدة الحقيقيّة؛",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 6,
+            "note": "A naturally one body–soul substance distinguished from bare plurality of principles."
+          },
+          "englishCorrespondence": "Those faculties proceed from separate souls that stand to the balanced bodies as form stands to matter. The conjunction of body and separate soul accordingly constitutes a real unity and a natural unity of species. Natural acts issue from this genuinely composite being that could not proceed from a plurality of principles merely insofar as they remain many and are not united in a genuine unity.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 459,
           "endChar": 512,
           "text": "فإنّ من الممتنع أن يحصل من كلّيّاتها مركّبات حقيقيّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 6,
+            "note": "A naturally one body–soul substance distinguished from bare plurality of principles."
+          },
+          "englishCorrespondence": "Those faculties proceed from separate souls that stand to the balanced bodies as form stands to matter. The conjunction of body and separate soul accordingly constitutes a real unity and a natural unity of species. Natural acts issue from this genuinely composite being that could not proceed from a plurality of principles merely insofar as they remain many and are not united in a genuine unity.",
+          "riskMarkers": []
         },
         {
           "n": 8,
           "startChar": 513,
           "endChar": 675,
           "text": "كما أنّ من الممتنع أن يحصل منها ومن الأفلاك والكواكب والمبادئ الموجدة لها والجواهر المجرّدة التي هي كالصورة النوعيّة بالنسبة إليها مركّبات حقيقيّة وأنواع طبيعيّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "The cosmos can have aggregative unity, not natural species-unity in this argument; the proofs are deferred."
+          },
+          "englishCorrespondence": "No comparable genuine natural composite can be constituted from the elements taken in their universality; nor can a genuine composite or natural species be constituted from the collective of these elements, the celestial spheres and stars, the principles that bring them into being, and the separate substances that stand to them in a relation analogous to substantial form. Such a collection can possess an aggregative unity, but the demonstration of these two propositions, with the requisite proofs and arguments, exceeds the scope of this short treatise.",
+          "riskMarkers": []
         },
         {
           "n": 9,
           "startChar": 676,
           "endChar": 712,
           "text": "وإن أمكن أن يحصل لها وحدة اجتماعيّة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "The cosmos can have aggregative unity, not natural species-unity in this argument; the proofs are deferred."
+          },
+          "englishCorrespondence": "No comparable genuine natural composite can be constituted from the elements taken in their universality; nor can a genuine composite or natural species be constituted from the collective of these elements, the celestial spheres and stars, the principles that bring them into being, and the separate substances that stand to them in a relation analogous to substantial form. Such a collection can possess an aggregative unity, but the demonstration of these two propositions, with the requisite proofs and arguments, exceeds the scope of this short treatise.",
+          "riskMarkers": []
         },
         {
           "n": 10,
           "startChar": 713,
           "endChar": 797,
           "text": "لكن تحقيق البحث في هذين الموضعين وتوجيه الحجج وتقرير البيّنات لا يحتمله هذا المختصر.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 9,
+            "note": "The cosmos can have aggregative unity, not natural species-unity in this argument; the proofs are deferred."
+          },
+          "englishCorrespondence": "No comparable genuine natural composite can be constituted from the elements taken in their universality; nor can a genuine composite or natural species be constituted from the collective of these elements, the celestial spheres and stars, the principles that bring them into being, and the separate substances that stand to them in a relation analogous to substantial form. Such a collection can possess an aggregative unity, but the demonstration of these two propositions, with the requisite proofs and arguments, exceeds the scope of this short treatise.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         }
       ],
       "englishSentences": [
@@ -9479,7 +10067,7 @@
           "text": "Such a collection can possess an aggregative unity, but the demonstration of these two propositions, with the requisite proofs and arguments, exceeds the scope of this short treatise."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 2
     },
     {

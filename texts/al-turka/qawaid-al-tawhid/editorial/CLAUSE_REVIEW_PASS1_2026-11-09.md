@@ -1,6 +1,6 @@
 # Qawāʿid / Tamhīd — clause-level comparative review, pass 1
 
-**9 November 2026.** This work inventories 5520 Arabic punctuation-clause candidates and 2851 English sentence candidates across **all 171 bilingual units**. Only **1427 Arabic clauses in 65 units** have been individually compared with their English in this pass. The remaining **4093 are not certified**.
+**9 November 2026.** This work inventories 5520 Arabic punctuation-clause candidates and 2851 English sentence candidates across **all 171 bilingual units**. Only **1574 Arabic clauses in 75 units** have been individually compared with their English in this pass. The remaining **3946 are not certified**.
 
 All clauses, offsets, corresponding English for reviewed passages, and source fingerprints are in the [complete clause ledger](../qa/clause-ledger.json). Automatic enumeration is **not** evidence of an accurate translation. The original Arabic and the reported QT-059 lacuna remain unchanged.
 
@@ -579,6 +579,88 @@ All clauses, offsets, corresponding English for reviewed passages, and source fi
 | 1–3 | 1–2 | **checked** | فانبعث انبعاثاً إراديّاً إلى المظهر الكلّي والكون الجامع الحاصر للأمر الإلهي، وهو الإنسان الكامل؛ فإنه الجامع بين مظهري… — Perfect Human as encompassing appearance of the essence and divine names, attributes and acts retained. |
 | 4–7 | 3–3 | **checked** | وبما في مظهريّته من السعة والكمال، وهو الجامع أيضاً بين الحقائق الوجوبيّة ونسب الأسماء الإلهيّة وبين الحقائق الإمكانيّة… — Necessary/possible and unity/differentiation as relationally gathered human correspondences preserved. |
 | 8–9 | 4–4 | **checked** | ليظهر فيه بحسبه، ويدرك ذاته حسبما ذكرنا من الحيثيّة الجامعة والجهة الكاملة. — The divine self-apprehension claim remains attributed to the author and grounded in the comprehensive manifestation. |
+
+### QT-041 — A pp. 185–186
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–4 | 1–1 | **checked-with-note** | وما قيل: «إن رؤية الشيء نفسه بنفسه ما هي مثل رؤيته نفسه في أمر آخر يكون له كالمرآة، فإنه يظهر له في نفسه في صورة يعطيها… — The embedded mirror quotation (closely related to Fuṣūṣ) is explicitly examined critically; nested quotation not attributed as the ancestor's original formulation. |
+| 5–9 | 2–3 | **checked** | وهو الإدراك العقلي، فالأمر الذي يصحّ أن يكون مرآة لرؤية نفسه فيه هو العقل الأوّل من جملة معلولاته. ولو أريد بها الإدراك… — Intellectual vision contrasted with sensory sight and First Intellect as possible mirror. |
+| 10–14 | 4–5 | **checked** | لما عرفت أن كل جزئي لا بدّ أن يكون ممكناً لذاته؛ وكيف لا، وإن كل مرئيّ بالذات برؤية الباصرة لا بدّ أن يكون عرضاً جسماني… — Sensory object as corporeal accident versus derivative sight of matter underlines the argument, without mistaking it for modern scientific observation. |
+
+### QT-042 — A pp. 189–190
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–6 | 1–3 | **checked** | فإن قيل: العقل الأوّل لا يصلح لمرآتيّة صورته الجامعة لسائر صفاته الكماليّة والتعيّنات الأسمائيّة، بل إنما يصلح لمرآتيّة… — Objection claims only comprehensive Perfect Human preserves all divine names and forms, not the First Intellect. |
+| 7–10 | 4–5 | **checked** | قلنا: إن حقيقته السارية في كلّ المظاهر هاهنا بوحدتها الحقيقيّة غير مدركة في كلّ المراتب الموجودة في الكون الجامع، بل إن… — Reply denies that the whole identity is directly apprehended in every level; some forms remain intellectually unseen. |
+
+### QT-043 — A pp. 193–194–195
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–6 | 1–3 | **checked** | على أنّا نقول: إن حقيقة الحق وصورته الحقيقيّة لو كانت نفس حقيقة الإنسان وصورته، لم يبق فرق بين الظاهر والمظهر والمرآة و… — Three alternatives—identity with human, unrestricted being, or composite of determinations—are distinguished. |
+| 7–12 | 4–6 | **checked** | يصحّ أن يكون مجلىً ومظهراً لها. ولو كانت هي الوجود المتعيّن بجميع هذه التعيّنات وسائر الصفات والإضافات، لصحّ أن يكون مظ… — Macrocosm analogy to a human formal whole treated as proposed hypothesis, not proved natural unity. |
+| 13–18 | 7–9 | **checked** | وجد بعضها في الأزمنة الماضية ثمّ انقرض بالكلّيّة، ووجد بعضها في الأزمنة الحاضرة ثمّ إنّها تنقرض بالكلّيّة في الأزمنة ال… — Temporal heterogeneity of cosmic species and innumerable perfections prevent any one embodied individual from exhausting the universal image. |
+| 19–21 | 10–11 | **checked** | وكيف لا، فإنّ الكمال الذي يكون لخاتم الأنبياء لا يمكن حصوله لنبيّ آخر، والكمال الذي لخاتم الأولياء عندهم لا يمكن حصوله … — Seal of Prophets and Seal of Saints perfections are discussed as the author's dialectical constraints. |
+
+### QT-044 — A pp. 197–198
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–4 | 1–3 | **checked** | وحينئذ لو صحّ أن يجعل ذلك المظهر جميع أجزاء العالم الذي يكون من جملته الإنسان وأشخاصه، ثمّ إنّ إدراك ذاتها من حيث هي جا… — Dilemma: if perfected self-knowledge not a perfection, it cannot be final cause; if real perfection, dependence follows. |
+| 5–7 | 4–5 | **checked** | ولو وجب أن يكون من جملتها، لتوقّف الواجب لذاته في شيء من كمالاته الحقيقيّة على غيره الممكن بحسب ذاته الحادث من جهة نشأت… — Dependence on a contingent originated composite would negate necessity in every respect. |
+| 8–10 | 6–7 | **checked** | فلئن قيل: إن توقّفه في ذلك على الكون الجامع لا يمكن أن يكون من حيث هو مغاير إيّاه، قلنا: إنّ توقّفه عليه من جهة اشتماله… — Reply to being 'other' clarifies dependence precisely on receptive plurality and conjunction. |
+
+### QT-045 — A pp. 202–203
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–4 | 1–3 | **checked** | ثمّ إنّهم قد اتّفقوا على أنّ وصول الإنسان إلى حدّ الكمال الحقيقي لا يمكن إلّا بانحلال العقد والتخلّص عن القيود وبحصول ا… — Objection: stripping restraints and suspending bodily faculties appears incompatible with comprehensive manifestation. |
+| 5–8 | 4–6 | **checked-with-note** | وكونها بمعزل في تلك الحالة عن استعمال تلك القوى الجسمانيّة. وحينئذ فلا اعتبار عندهم بمثل هذه الإدراكات الحسّيّة والخيال… — The opponents' description of ascetic training and cognitive faculties is accurately framed as reported argument. |
+| 9–12 | 7–9 | **checked** | وحينئذ كان الإنسان الكامل هو المشارك للعقول المجرّدة والأرواح الكاملة. فلا يمكن أن يقال إنّه هو الكون الجامع، إذ لا يوج… — Absent analogues to rebellious spirits and beasts listed as an objection, not an endorsement of their literal absence. |
+| 13–14 | 10–11 | **checked** | ومن البيّن أنّه لا يوجد فيه ما يماثل الأفلاك والكواكب غير القابلة للخرق والالتيام المتحرّكة على سبيل الاستمرار والدوام،… — Celestial spheres' supposed incorruptibility is source's inherited cosmology, explicitly labelled as such. |
+
+### QT-046 — A pp. 206–207
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–5 | 1–4 | **checked** | ثمّ إنّ من البيّن أنّ الكمال الذي يقولون به كالأمر الممتنع، لأنّه لو وصل إليه السالك وأدركه، لما أمكنه أن يعقله بالقوّة… — Objection to suprarational perfection treats its alleged ineffability and unavailability to bodily powers as a difficulty for the opponents. |
+| 6–9 | 5–6 | **checked** | فامتنع أن يتعلّق به شيء من القوى الجسمانيّة المدركة بالحفظ والإحساس والتخيّل والمحاكاة، وهذا بيّن لا يحتاج إلى بيان زائ… — Death versus voluntary attention as proposed condition for complete detachment distinguished. |
+| 10–12 | 7–8 | **checked** | ولا يتحقّق بالإعراض عنها بعدم التفاتها إليها وإلى مقتضياتها وأفعالها وغايتها، وبيّن أنّ انحصار النظر في الأمر المطلق ود… — Natural limitations allegedly remaining even after death are included, not suppressed. |
+
+### QT-047 — A pp. 212–213
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–8 | 1–3 | **checked-with-note** | على أنّا نقول: إنّ الكمالات الفعليّة المستندة إلى الحجج القويّة والبراهين القاطعة، الحاصلة للنفس الناطقة بالأفكار الصحي… — Humoral counter-accusation is analogical/dialectical, not endorsed as medical diagnosis or universal criticism of Sufi practice. |
+| 9–16 | 4–5 | **checked** | لانحراف أمزجتهم وفساد بنيتهم. أمّا الحالة المسمّاة عندهم بمخالفة النفس، فهي بالحقيقة إيلام للروح وإتعاب للبدن بالجوع وا… — Excessive hunger and sleeplessness rendered accurately for السهر here, unlike corrected SH-058 السهو. |
+| 17–19 | 6–7 | **checked** | مفيدة لأمراض كثيرة بعضها بدنيّة وبعضها نفسانيّة، معدّة لقرب الموت وزوال القوّة بالضرورة، فالإدراكات المتفرّعة على هذه ا… — Weakening of constitution and supposed cognitive defects are presented as opponent's claims. |
+
+### QT-048 — A pp. 215–216–217–218
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–6 | 1–6 | **checked** | قلنا: إنّ المظهر الكامل هو الكون الجامع الحاصر لجميع المظاهر في سائر المراتب الموجودة فيه، فإنّ المرتبة الأولى يوجد فيه… — Four degrees of comprehensiveness and differentiated knowledge presented in sequence. |
+| 7–12 | 7–9 | **checked-with-note** | لاشتمالها عليها، مع اشتمالها على معنى الأحديّة الجمعيّة الحقيقيّة الكماليّة التي لا يتصوّر الزيادة عليها من جهة التمام … — Reply to 'only intellectual' explicitly cites all levels, including complete self-apprehension and source-page interleaved Persian marginalia excluded. |
+| 13–19 | 10–14 | **checked** | لأنّ الحقيقة السارية في الكلّ يدرك بذاتها ذاتها وما عدا ذاتها من لوازم ذاتها علماً غيبيّاً إجماليّاً في الإنسان الكامل … — Intellectual, estimative, imaginative and sensory modes gathered together with corresponding receptivities. |
+
+### QT-049 — A pp. 224–225
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–2 | **checked** | ولا بدّ أن يراد بحقيقة الكلّ وصورته الوجود المتعيّن بسائر التعيّنات التي بها يكون مصدراً لجميع الأفعال الكماليّة وجملة … — Form of whole characterized through active determinations and human receptivities. |
+| 4–10 | 3–3 | **corrected** | فلئن قيل: إنّ الوجود المتعيّن بجملة التعيّنات الانفعاليّة لا يغاير حقيقته وصورته بالحقيقة، وحينئذ يرتفع الفرق بين الظاه… — The one فلئن قيل objection has two branches; an earlier English translation incorrectly introduced 'we reply' before the second branch. Both horns now precede قلنا. |
+| 11–11 | 3–3 | **corrected** | قلنا: إنّ الحقيقة المأخوذة بالتحقّقات والوجوه الوجوبيّة والاعتبارات الشريفة التي بها يتحقّق الحقّيّة المبدئيّة غير الحق… — The sole قلنا is the beginning of reply, which contrasts divine necessary aspects from possible created aspects, not a second objection. |
+| 12–18 | 4–8 | **checked** | على أنّ حقيقة الحقائق الحقّيّة لا يغاير حقيقة الحقائق والتعيّنات الخلقيّة من جهة الحقيقة المطلقة، فتلك الحقيقة ببعض الا… — One unrestricted reality under hidden/manifest/locus relations, while not identical under differing conceptual predications. |
+
+### QT-050 — A pp. 228–229–230
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–3 | **checked** | ونحن قد بيّنّا في العلوم الحقيقيّة الأصليّة أنّ من الممكن أن يتألّف من جزئيّات العناصر أبدان معتدلة ذوات أعضاء تحمل قوى… — Balanced elemental body and faculties are interpreted through the author's philosophical physiology. |
+| 4–7 | 4–6 | **checked** | ويحصل من مجموع البدن والنفس المجرّدة وحدة حقيقيّة ونوعيّة طبيعيّة، يصدر عن ذلك المركّب الحقيقي أفعال طبيعيّة يمتنع صدور… — A naturally one body–soul substance distinguished from bare plurality of principles. |
+| 8–10 | 7–9 | **checked** | كما أنّ من الممتنع أن يحصل منها ومن الأفلاك والكواكب والمبادئ الموجدة لها والجواهر المجرّدة التي هي كالصورة النوعيّة با… — The cosmos can have aggregative unity, not natural species-unity in this argument; the proofs are deferred. |
 
 ## Editorial status and next passages
 
