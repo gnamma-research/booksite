@@ -794,7 +794,8 @@ function plotView(){
  return '<section class="plot" aria-label="Maps and textual networks"><header class="plot-head"><div><h2>'+safe(v.title)+'</h2>'+
  '<p>'+safe(v.sub||"")+'</p></div><div class="plot-actions">'+
  (state.family?'<button data-clear-family>Clear textual family</button>':"")+
- '<button data-reset>Reset subject filters</button></div></header>'+v.html+
+ '<button data-reset>Reset subject filters</button></div></header>'+
+ ((state.view==="network"||state.view==="timeline")?browseBar():"")+v.html+
  (data.errors.length?'<p class="warning">A source register is unavailable: '+safe(data.errors.join("; "))+'. The audited records remain accessible.</p>':"")+'</section>';
 }
 function searchResults(q){
@@ -824,6 +825,7 @@ function render(first=false){
  (geographic?'':'<aside class="sidebar" aria-label="Work and evidence details"><div class="side-head"><h2>Selected work · evidence</h2>'+
  '<button type="button" data-close-side>Clear focus</button></div><div class="side-content">'+recordPanel()+'</div></aside>')+'</div>';
  fillSearch();
+ if(state.view==="network"||state.view==="timeline")centerBrowseRail();
  if(first)writeHash(false);
 }
 function changeRange(a,b){
@@ -841,6 +843,18 @@ function onClick(e){
  }
  if(el.hasAttribute("data-view")){
   state.view=el.getAttribute("data-view");state.cluster="";state.evidence="";
+  writeHash(true);render();return;
+ }
+ if(el.hasAttribute("data-browse-step")){browseStep(Number(el.getAttribute("data-browse-step"))||0);return;}
+ if(el.hasAttribute("data-browse-work")){chooseWork(el.getAttribute("data-browse-work"));return;}
+ if(el.hasAttribute("data-browse-mode")){
+  state.browseMode=el.getAttribute("data-browse-mode")==="all"?"all":"linked";
+  writeHash();render();return;
+ }
+ if(el.hasAttribute("data-text-mode")){
+  state.view=el.getAttribute("data-text-mode")==="timeline"?"timeline":"network";
+  state.cluster="";state.evidence="";
+  timelineFollow(data.byId.get(state.selected));
   writeHash(true);render();return;
  }
  if(el.hasAttribute("data-select")||el.hasAttribute("data-search-select")){
@@ -878,7 +892,6 @@ function onClick(e){
  if(el.hasAttribute("data-reset")){state.school="all";state.family="";state.source="all";state.edgeType="all";state.certainty="all";state.search="";state.region="";state.cluster="";state.bookPage=1;writeHash();render();return}
  if(el.hasAttribute("data-evidence")){state.evidence=el.getAttribute("data-evidence");render();return}
  if(el.hasAttribute("data-close-evidence")){state.evidence="";render();return}
- if(el.hasAttribute("data-more")){state.quickLimit+=8;render();return}
  if(el.hasAttribute("data-place")){state.region=el.getAttribute("data-place");state.view="catalogue";state.bookPage=1;writeHash();render();return}
  if(el.hasAttribute("data-copy")){writeHash();if(navigator.clipboard?.writeText)navigator.clipboard.writeText(location.href);return}
  if(el.hasAttribute("data-close-side")){state.selected="";state.evidence="";writeHash();render();return}
@@ -910,7 +923,47 @@ function onInput(e){
 ROOT.addEventListener("click",onClick);
 ROOT.addEventListener("change",onChange);
 ROOT.addEventListener("input",onInput);
+let railTimer=null;
+// Native horizontal scrolling changes focus after it settles; no card click is required.
+ROOT.addEventListener("scroll",event=>{
+ const rail=event.target;
+ if(!rail.matches?.("[data-text-rail]")||rail.dataset.ready!=="1")return;
+ clearTimeout(railTimer);
+ railTimer=setTimeout(()=>{
+  if(!rail.isConnected||rail.dataset.ready!=="1")return;
+  const center=rail.scrollLeft+rail.clientWidth/2;
+  const cards=[...rail.querySelectorAll("[data-browse-work]")];
+  let nearest=null,dist=Infinity;
+  for(const card of cards){
+   const gap=Math.abs(card.offsetLeft+card.offsetWidth/2-center);
+   if(gap<dist){nearest=card;dist=gap;}
+  }
+  const next=nearest?.getAttribute("data-browse-work");
+  if(next&&next!==state.selected)chooseWork(next);
+ },175);
+},true);
+let railSwipe=null;
+ROOT.addEventListener("touchstart",e=>{
+ if((state.view!=="timeline"&&state.view!=="network")||
+    !e.target.closest?.("[data-text-rail]")||e.touches.length!==1)return;
+ railSwipe={x:e.touches[0].clientX,y:e.touches[0].clientY};
+},{passive:true});
+ROOT.addEventListener("touchend",e=>{
+ if(!railSwipe||e.changedTouches.length!==1)return;
+ const dx=e.changedTouches[0].clientX-railSwipe.x;
+ const dy=e.changedTouches[0].clientY-railSwipe.y;
+ railSwipe=null;
+ if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.3)browseStep(dx<0?1:-1);
+},{passive:true});
 ROOT.addEventListener("keydown",e=>{
+ if((e.key==="ArrowLeft"||e.key==="ArrowRight")&&
+    (state.view==="network"||state.view==="timeline")&&
+    !e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&
+    !e.target.closest?.("input,textarea,select,[contenteditable=true]")){
+  e.preventDefault();
+  browseStep(e.key==="ArrowRight"?1:-1);
+  return;
+ }
  const el=e.target.closest("[role=button]");
  if(el&&["Enter"," "].includes(e.key)){e.preventDefault();if(typeof el.click==="function")el.click();else el.dispatchEvent(new MouseEvent("click",{bubbles:true,cancelable:true}));}
  if(e.key==="Escape"){state.searchOpen=false;fillSearch()}
@@ -922,6 +975,7 @@ ROOT.addEventListener("keydown",e=>{
 window.addEventListener("popstate",()=>{if(!data.loadReady)return;readHash();render()});
 window.addEventListener("hashchange",()=>{if(!data.loadReady)return;readHash();render()});
 window.GNAtlasUnified={debug:()=>({ready:data.loadReady,subject:state.subject,view:state.view,selected:state.selected,
+ browseMode:state.browseMode,browseLength:(state.view==="network"||state.view==="timeline")?browseWorks().length:null,
  total:data.all.length,edges:data.edges.length,counts:data.counts,lanes:renderCache.lanes.length,
  currentMatches:filtered().length,errors:data.errors.slice()}),
  select:id=>chooseWork(id,true)};
