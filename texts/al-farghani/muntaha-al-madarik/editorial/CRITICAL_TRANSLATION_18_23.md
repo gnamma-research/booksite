@@ -1,6 +1,9 @@
 # Farghānī · Muntahā al-madārik — first Arabic–English clause-by-clause review
 
-**B2007 pp.18–23 · 80 source-checked clauses · 9 November 2026**
+**B2007 pp.18–23 · 80 source-checked clauses · updated with a bounded historical-print check, 9 November 2026**
+
+> **New witnessed evidence:** The printed 1876 I1876 p6 (PDF scan 10) reads **المطلب الغائي** rather than the B2007 digital **المطلب الغائبّ** (CR001-014) and **علميا ووجوديا** rather than B2007 **عمليا ووجوديا** (CR001-024). Both are now *historically print-corrected*; the original B2007 readings are preserved verbatim below as a transparent diplomatic reference. I1876 p5 agrees on **بطون المشتمل** (CR001-010), leaving a manuscript crux; I1876 p7 agrees on **من حيث واحديتها** (CR002-005). See [photographed-source report](I1876_COLLATION_001.md). The recorded introductory 1876 print checks comprise **four selected loci**, not a full-page or manuscript collation.
+
 
 **Authorial basis:** Beirut digitization of the modern printed edition, pp.18–23, with the modern editor's footnotes excluded from the Arabic matn. The Arabic segmentation is editorial, and page-break-spanning clauses are identified by continuation syntax. Every clause has its source URL. English is freshly checked against the displayed Arabic (not yet against the 1876 lithograph or manuscripts). This is a **precritical verified-reading layer**, NOT a constituted critical Arabic text. Five clauses contain unresolved textual cruxes; manuscript variants established: **zero**.
 
@@ -172,7 +175,7 @@ It also contains the precious jewels of the names of attributes, acquaintance wi
 
 **Editorial decision:** Distinguish takhalluq (assuming qualities) from taḥaqquq (realizing them).
 
-### CR001-014 · crux (unresolved text)
+### CR001-014 · historical-print correction (I1876 p6)
 
 **Arabic** (B2007)
 
@@ -182,7 +185,7 @@ It also contains the precious jewels of the names of attributes, acquaintance wi
 
 It also contains the pearls of the names of acts, whose benefits and effects are universal, and whose judgments and reports extend throughout the cosmic ranks—the loci in which the perfection through the names is completed, the intended goal referred to by 'I created creation to be known'.
 
-**Editorial decision:** The digital phrase المطلب الغائبّ appears lexically awkward. A clean print reading is needed before interpreting it as 'hidden' rather than 'intended' goal.
+**Editorial decision:** **Superseded by the directly photographed 1876 printing:** its reading is المطلب الغائي (“ultimate/purposive objective”) at printed p6, PDF scan 10. B2007 online presents المطلب الغائبّ. Prefer the 1876 form in the edited text while preserving the Beirut reading as a variant; medieval manuscript collation remains open.
 
 ### CR001-015 · retain
 
@@ -292,7 +295,7 @@ There is nothing there except the determination that is identical with unity; th
 
 **Editorial decision:** This clause has علما ووجودا explicitly, distinct from the uncertain reading of عمليا below.
 
-### CR001-024 · crux (unresolved text)
+### CR001-024 · historical-print correction (I1876 p6)
 
 **Arabic** (B2007)
 
@@ -302,7 +305,7 @@ There is nothing there except the determination that is identical with unity; th
 
 So that the perfection of disclosure may be realized in articulated distinction, and its rule and effect may encompass the determiner and what is determined in essential rather than temporal succession—and also in an operative [text: ʿamaliyyan] and existential order with respect to the eternal Determiner who knows, and His everlasting essential and attributive knowledge.
 
-**Editorial decision:** Previous English silently read 'in knowledge and existence' at the second occurrence, but B2007 and a derivative transcription read عمليّا, not علميّا. The contextual conjecture 'epistemic' requires an independent witness, not a silent correction. The unvowelled identical المقدّر والمقدّر also requires grammatical control.
+**Editorial decision:** **Superseded by direct photograph I1876 printed p6, PDF scan 10:** 1876 reads علميا ووجوديا, B2007 digital عمليّا ووجوديّا. Prefer ‘in knowledge and existence’ in the critical English. The identical unvowelled المقدّر والمقدّر still requires grammatical control; **this is print-level evidence, not a manuscript variant**.
 
 ### CR001-025 · retain
 
