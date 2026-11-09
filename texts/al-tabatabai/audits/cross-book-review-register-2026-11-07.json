@@ -3,16 +3,16 @@
   "title": "Cross-book source and English review register",
   "summary": {
     "date": "2026-11-09",
-    "totalReaderUnits": 304,
+    "totalReaderUnits": 309,
     "M": {
-      "localReading": 57,
-      "localTranslated": 57,
+      "localReading": 62,
+      "localTranslated": 62,
       "fullAuthorialBooks": 6,
       "completeLocalBookContent": false,
       "mappedAuthorialTopics": 77,
-      "status": "57 bilingual selections (11 introduction, 11 Book I, 17 Book II, 14 Book III, four Book IV). Book IV introductory original passages source-paired; remaining majority of al-Manṭiq untranslated, separate 1968 scan not collated.",
+      "status": "62 selected source-paired Arabic–English working units (intro 11, Book I 11, II 17, III 14, IV 9). Authorial Book IV coverage now through selected original pp.125–137, not entire 72-page Book IV; Books V and VI remain absent. 1968 independent printed scan comparison pending.",
       "localBook1Units": 11,
-      "localBook4Units": 4
+      "localBook4Units": 9
     },
     "B": {
       "localReading": 111,
@@ -31,11 +31,13 @@
       "adoptedPrintedEditorialEmendations": 8,
       "supplementaryCriticalNotes": 9,
       "englishAutomatedStructureScreened": 136,
-      "englishLocalBilingualRead": 70,
+      "englishLocalBilingualRead": 74,
       "englishIndependentlyCollated": 0,
       "englishTriageRegister": "nihaya-english-collation-triage-2026-11-09.json",
       "secondEditionDigitalSpotChecks": 5,
-      "localReviewedFourthBatch": 2
+      "localReviewedFourthBatch": 2,
+      "localReviewedFifthBatch": 4,
+      "englishCorrectionsFifthBatch": 1
     },
     "expertReviewedUnitsVerified": 0,
     "expertReviewedUnitStatus": "Not documented; zero units are claimed to have passed independent specialist review",
@@ -46,17 +48,17 @@
     }
   },
   "provenance": {
-    "MuzaffarSourceSha": "3d0f7f95ce4ba533ab3ff9dcd7aa75129dc4b256",
+    "MuzaffarSourceSha": "b0b9756202b0f98ff39189e5cfe2161409c1b2f9",
     "BidayaSourceSha": "77c694c1a6eb2b3cf6a0dd1745586c2feafd2b79",
-    "NihayaSourceSha": "52107500a82264b1e578fb4bcad2806f42634aed",
+    "NihayaSourceSha": "a71b1a41a4628b41bd0303115d56c48397fd3e27",
     "BidayaParitySha": "206e9ea60af9108b614441cd8e049742098cd339",
     "NihayaSupplementSha": "6405c9b6ec4307906533c5eb9435b49b5214afa5",
-    "MuzaffarMapSha": "c832345cf796c52d6f8c23db9329c0c7ac0f42c3",
-    "maintenanceNote": "2026-11-09: fourth batch source translations and review registers; follow-up public supplemental apparatus note N1417-IX09-REFERENCE-01 added without altering authorial text.",
-    "latestTextualDecision": "N-IX-09: first/second type cross-reference unresolved, **conjecture not adopted**, now visible in per-passage public and PDF apparatus; 1404 and 1428 independent print readings must be recorded before any correction."
+    "MuzaffarMapSha": "db26fbf405f026e5d815cb64ff532b3c9da9d041",
+    "maintenanceNote": "9 November 2026 Stage V: five original Book IV passage pairs, four complete same-base Nihāya chapter reviews, IX.11 instant-vs-time English correction; no new independent full-witness collation or specialist certification.",
+    "latestTextualDecision": "N-IX-11: «الحركة التوسّطيّة منطبقةٌ عليه بواسطة القطعيّة» refers back to «الآن» not to time; English changed, original Arabic unchanged. IX.9 first/second-kind problem remains unadopted conjecture."
   },
   "method": "One row per locally stored authorial passage. Presence of Arabic or English is a technical coverage flag, not a scholarly judgment. Same-source normalised PDF comparison has known limitations. Historical attribution issues are isolated in critical notes.",
-  "sourceStatus": "Muẓaffar: 57 source-grounded selected Arabic-English units, NOT all six books, original exercises and much of Books I–IV plus Books V–VI untranslated. Nihāya: 136 working pairs, 70 same-base locally reviewed, 0 independently complete witness-collated.",
+  "sourceStatus": "Muẓaffar: 62 selected units only, six-book source incomplete; Nihāya: 136/136 paired, 74/136 local full-unit same-base reads, 0 complete independent second-witness collations.",
   "entries": [
     {
       "id": "M-P-01",
@@ -1425,6 +1427,126 @@
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; Arabic punctuation/kāf normalized, not diplomatic.",
       "sourceAssessment": "consecutive Book IV original source excerpt from pp.125–130; full Book IV and other books untranslated",
       "nextReview": "Independently compare every clause and original exercises with the 1968 print and a second witness; retain differences in apparatus."
+    },
+    {
+      "id": "M-C-05",
+      "book": "M",
+      "stage": "C",
+      "chapter": 5,
+      "title": "Categoricals by subject: singular, natural, indefinite, quantified",
+      "source": {
+        "page": "130–132",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH Arabic digital transcription; compare 1968 Najaf ACO scan pending",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=130&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2313,
+      "englishCharacters": 3006,
+      "sourceEditionReviewed": "1402 AH Dār al-Taʿāruf/Rafed digital Arabic, locally read; no independent 1968 early scanned-page collation",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; Arabic normalized, not diplomatic.",
+      "sourceAssessment": "five consecutive Book IV reading units pp.130–137; authorial original preserved by source boundary, surrounding later sections and exercises incomplete",
+      "nextReview": "Recheck 1968 print witness on every page, inspect original quotation attributed to Ibn Sīnā, verify quantifier symbol typography and all examples and original footnotes."
+    },
+    {
+      "id": "M-C-06",
+      "book": "M",
+      "stage": "C",
+      "chapter": 6,
+      "title": "Why logic privileges quantified propositions",
+      "source": {
+        "page": "132–133",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH Arabic digital transcription; compare 1968 Najaf ACO scan pending",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=132&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1764,
+      "englishCharacters": 1832,
+      "sourceEditionReviewed": "1402 AH Dār al-Taʿāruf/Rafed digital Arabic, locally read; no independent 1968 early scanned-page collation",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; Arabic normalized, not diplomatic.",
+      "sourceAssessment": "five consecutive Book IV reading units pp.130–137; authorial original preserved by source boundary, surrounding later sections and exercises incomplete",
+      "nextReview": "Recheck 1968 print witness on every page, inspect original quotation attributed to Ibn Sīnā, verify quantifier symbol typography and all examples and original footnotes."
+    },
+    {
+      "id": "M-C-07",
+      "book": "M",
+      "stage": "C",
+      "chapter": 7,
+      "title": "Quantifier expressions and symbols of four categorical forms",
+      "source": {
+        "page": "133–134",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH Arabic digital transcription; compare 1968 Najaf ACO scan pending",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=133&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1028,
+      "englishCharacters": 1322,
+      "sourceEditionReviewed": "1402 AH Dār al-Taʿāruf/Rafed digital Arabic, locally read; no independent 1968 early scanned-page collation",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; Arabic normalized, not diplomatic.",
+      "sourceAssessment": "five consecutive Book IV reading units pp.130–137; authorial original preserved by source boundary, surrounding later sections and exercises incomplete",
+      "nextReview": "Recheck 1968 print witness on every page, inspect original quotation attributed to Ibn Sīnā, verify quantifier symbol typography and all examples and original footnotes."
+    },
+    {
+      "id": "M-C-08",
+      "book": "M",
+      "stage": "C",
+      "chapter": 8,
+      "title": "Personal, indefinite and quantified conditionals",
+      "source": {
+        "page": "134–136",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH Arabic digital transcription; compare 1968 Najaf ACO scan pending",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=134&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2008,
+      "englishCharacters": 2610,
+      "sourceEditionReviewed": "1402 AH Dār al-Taʿāruf/Rafed digital Arabic, locally read; no independent 1968 early scanned-page collation",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; Arabic normalized, not diplomatic.",
+      "sourceAssessment": "five consecutive Book IV reading units pp.130–137; authorial original preserved by source boundary, surrounding later sections and exercises incomplete",
+      "nextReview": "Recheck 1968 print witness on every page, inspect original quotation attributed to Ibn Sīnā, verify quantifier symbol typography and all examples and original footnotes."
+    },
+    {
+      "id": "M-C-09",
+      "book": "M",
+      "stage": "C",
+      "chapter": 9,
+      "title": "Quantifying connected and disjunctive propositions",
+      "source": {
+        "page": "136–137",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH Arabic digital transcription; compare 1968 Najaf ACO scan pending",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=136&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 441,
+      "englishCharacters": 1022,
+      "sourceEditionReviewed": "1402 AH Dār al-Taʿāruf/Rafed digital Arabic, locally read; no independent 1968 early scanned-page collation",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; Arabic normalized, not diplomatic.",
+      "sourceAssessment": "five consecutive Book IV reading units pp.130–137; authorial original preserved by source boundary, surrounding later sections and exercises incomplete",
+      "nextReview": "Recheck 1968 print witness on every page, inspect original quotation attributed to Ibn Sīnā, verify quantifier symbol typography and all examples and original footnotes."
     },
     {
       "id": "B-INTRO",
@@ -6595,8 +6717,10 @@
         "reviewHints": [
           "paragraph-reflow"
         ],
-        "localBilingualRead": false,
-        "independentlyCollated": false
+        "localBilingualRead": true,
+        "independentlyCollated": false,
+        "sourceGrade": "direct complete same-base Arabic + English review (1417 printed-digital), NOT independent manuscript or second printed witness",
+        "finding": "Direct full local Arabic-English reading of pp.251–253: determinable recipient and determinate received form, varying nearness/remoteness, weak potential vs intense actual existence, gradation in single continuous existence, indefinite divisibility, definition of movement as first perfection of the potential qua potential, matter and accidental motion. No new English correction; later 1404/1428 independent witness comparison remains open."
       }
     },
     {
@@ -6793,8 +6917,10 @@
         "reviewHints": [
           "paragraph-reflow"
         ],
-        "localBilingualRead": false,
-        "independentlyCollated": false
+        "localBilingualRead": true,
+        "independentlyCollated": false,
+        "sourceGrade": "direct complete same-base Arabic + English review (1417 printed-digital), NOT independent manuscript or second printed witness",
+        "finding": "Direct full local Arabic-English reading of pp.261–264: argument from accidental flow to changing proximate substantial cause, objection from extrinsic occasions, reply that accidental being exists for its substantial subject, independent argument of accident as degree of substance, one substantial flowing form through successive species, first/second movements, motion-within-motion and its instantaneous-parts objection, illustrative layered inherence and universal substrate. The old note already records difficult 'instantaneous parts' wording at pp.263–264; preserve rather than cosmetically fixing. No new English change; no independent complete second-witness collation."
       }
     },
     {
@@ -6881,15 +7007,15 @@
       "arabicPresent": true,
       "englishPresent": true,
       "arabicCharacters": 4307,
-      "englishCharacters": 6329,
+      "englishCharacters": 6336,
       "sourceEditionReviewed": "additional 1428 two-volume witness identified, NOT yet exhaustively collated",
       "sourceParityPercent": null,
-      "editorialNotes": 2,
+      "editorialNotes": 3,
       "supplementalCriticalNoteIds": [],
-      "flag": null,
+      "flag": "English referent corrected in time/motion paragraph: 'time' → 'the instant' for «عليه» immediately after «الآن»",
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "nextReview": "Independently collate Arabic, source section IX.11 in 1404 scan + 1428 print, and verify original Asfār quotation; retain correction with exact source evidence.",
       "englishCollation": {
         "structuralScreen": "checked-automatically",
         "arabicParagraphs": 29,
@@ -6897,8 +7023,10 @@
         "reviewHints": [
           "paragraph-reflow"
         ],
-        "localBilingualRead": false,
-        "independentlyCollated": false
+        "localBilingualRead": true,
+        "independentlyCollated": false,
+        "sourceGrade": "direct complete same-base Arabic + English review (1417 printed-digital), NOT independent manuscript or second printed witness",
+        "finding": "Direct complete local Arabic-English reading of pp.268–271: prior/later noncoexistence, time as continuous nonstable magnitude of movement, individuated measured motions, instants as shared privative limits, traversal versus intermediate motion, refusal of flowing instant, seven consequences, dahr/sarmad, Asfār citation. EXACT ENGLISH CORRECTION from 'corresponds to time through traversal motion' to 'corresponds to the instant through traversal motion': Arabic «والحركة التوسّطيّة منطبقةٌ عليه بواسطة القطعيّة» follows the immediate antecedent «الآن». No Arabic wording changed and no 1404/1428 secondary witness claim."
       }
     },
     {
@@ -6997,8 +7125,10 @@
         "reviewHints": [
           "paragraph-reflow"
         ],
-        "localBilingualRead": false,
-        "independentlyCollated": false
+        "localBilingualRead": true,
+        "independentlyCollated": false,
+        "sourceGrade": "direct complete same-base Arabic + English review (1417 printed-digital), NOT independent manuscript or second printed witness",
+        "finding": "Direct complete local Arabic-English reading of pp.273–276: all six factors dividing motion (two termini plus category, subject, time, agent), proximate nature and inclination, quwwa vs qudra, knowledge and will, full/incomplete agency, affirmation of divine power without an external compeller, impossibility of time before time, and debate on power antecedent to act. No English change adopted; printed editor's historical ascriptions remain unverified independently."
       }
     },
     {
