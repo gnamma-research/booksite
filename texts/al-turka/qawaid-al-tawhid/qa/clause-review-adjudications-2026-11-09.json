@@ -226,15 +226,15 @@
           "arStart": 17,
           "arEnd": 19,
           "enStart": 11,
-          "enEnd": 11,
+          "enEnd": 12,
           "status": "corrected",
           "note": "Accidental/essential (عارضة/ذاتية) and species-level predication (قولاً نوعياً) corrected; earlier extrinsic/intrinsic and 'specific manner' blurred the logical claim."
         },
         {
           "arStart": 20,
           "arEnd": 38,
-          "enStart": 12,
-          "enEnd": 20,
+          "enStart": 13,
+          "enEnd": 21,
           "status": "checked",
           "note": "Fourfold dilemma, a-fortiori necessity and final denial of an entailing particular nature preserved."
         }
