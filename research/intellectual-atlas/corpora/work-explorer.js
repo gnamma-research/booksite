@@ -21,7 +21,7 @@ const GAZETTEER=[
  ["Mecca",21.42,39.83,/\bmecca|makkah\b/i],["Medina",24.47,39.61,/\bmedina|madinah\b/i]
 ];
 const model={source:null,canonicalBuilt:false,catalogueBuilt:false,all:[],nodes:new Map(),edges:[],edgeById:new Map(),incoming:new Map(),outgoing:new Map(),sources:new Map(),families:[],stats:{canonical:0,bibliographic:0,auditedEdges:0,sourceEdges:0},error:"",loading:false};
-const state={scope:"all",school:"all",provenance:"all",family:"",work:"",edge:"",search:"",kind:"all",direction:"both",quality:"all",hops:1,mode:"network",page:1,place:"",perPage:20};
+const state={scope:"all",school:"all",provenance:"all",family:"",work:"",edge:"",search:"",kind:"all",direction:"both",quality:"all",hops:1,mode:"network",page:1,place:"",perPage:20,advancedOpen:false};
 let lastArgs=null,initHash=false,searchTimer=null,shownNodes=[],shownEdges=[],lastResults=0;
 const sourcesFor = (edge) => (edge.sourceIds||[]).map(id=>model.sources.get(id)).filter(Boolean).concat(edge.sourceUrl?[{title:edge.sourceLabel||"Bibliographical evidence",url:edge.sourceUrl}]:[]);
 const join = (arr)=>[...new Set((arr||[]).filter(Boolean))].join(", ");
@@ -366,7 +366,7 @@ function controls(){
  '<label>Science<select data-gnx-scope>'+opts(FIELDS,state.scope)+'</select></label>'+
  '<label>School<select data-gnx-school>'+opts({all:"All schools",...SCHOOLS},state.school)+'</select></label>'+
  '<label>Provenance<select data-gnx-provenance>'+opts({all:"All records",audited:"Audited history",openiti:"OpenITI metadata",alreq:"Manuscript bibliography",reader:"GNAMMA pinned"},state.provenance)+'</select></label></div>'+
- '<details class="gnx-advanced"><summary>Refine relationships, family and traversal depth</summary><div class="gnx-control-row">'+
+ '<details class="gnx-advanced"'+(state.advancedOpen?' open':'')+'><summary>Refine relationships, family and traversal depth</summary><div class="gnx-control-row">'+
  '<label>Textual family<select data-gnx-family>'+opts(fam,state.family)+'</select></label>'+
  '<label>Connections<select data-gnx-kind>'+opts({all:"All verified types",commentary:"Commentary & gloss",critique:"Criticism & response",translation:"Translation & adaptation",use:"Textual use & sources",other:"Other recorded"},state.kind)+'</select></label>'+
  '<label>Direction<select data-gnx-direction>'+opts({both:"Before and after",prior:"Sources only",later:"Reception only"},state.direction)+'</select></label>'+
@@ -454,6 +454,7 @@ host.addEventListener("input",e=>{
 });
 host.addEventListener("click",e=>{
  if(!lastArgs?.isActive())return;
+ if(e.target.closest(".gnx-advanced summary")){state.advancedOpen=!state.advancedOpen;return;}
  const t=e.target.closest("[data-gnx-focus],[data-gnx-edge],[data-gnx-page],[data-gnx-mode],[data-gnx-place],[data-gnx-copy],[data-gnx-export],[data-gnx-clear],[data-gnx-close-edge],[data-gnx-retry]");
  if(!t)return;e.preventDefault();
  if(t.hasAttribute("data-gnx-focus")){state.work=t.getAttribute("data-gnx-focus");state.edge="";state.mode="network";writeHash(true);}
