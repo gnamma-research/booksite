@@ -220,14 +220,33 @@ window.FARGHANI_CRITICAL_PASS_006={
       "id": "CR006-015",
       "page": 52,
       "ar": "تفرّع ( سم الحكيم ) منه",
-      "en": "The name the Wise branches from it.",
-      "disposition": "crux",
-      "critical_note": "STAGE XV partial visual I1876 p32 scan36 appears to read اسم الحكم, whereas modern B2007 digitized excerpt has سم الحكيم. Low-res scan is INSUFFICIENT to decide between الحَكَم and الحَكِيم, which are substantively different divine names; require 2200px photo and early MSS before changing the lemma or English. Neither printed difference nor manuscript variant counted.",
+      "en": "From it branches the name the Judge (al-Ḥakam).",
+      "disposition": "corrected",
+      "critical_note": "STAGE XVI FULL-RESOLUTION PHOTOGRAPHIC CORRECTION: the original I1876 printed p32 (scan36, 2200×3370 pixels) clearly reads تفرع (اسم الحكم) منه — al-Ḥakam (Judge). B2007 ONLINE DIGITAL reads تفرّع ( سم الحكيم ) منه — al-Ḥakīm (Wise) with missing alif in ism. Preserve that modern digital lemma in ar, adopt old printed lemma in edited_ar provisionally. Actual physical Beirut printing and medieval MSS have NOT been collated. This is one verified historical print-vs-digital difference, not a manuscript variant.",
       "source_siglum": "B2007",
       "source_url": "https://ablibrary.net/book_content/b/9606/52?lang=ar",
       "grade": "modern-printed-digital-selected-locus-checked",
-      "historical_print_verified": false,
-      "manuscript_verified": false
+      "historical_print_verified": true,
+      "manuscript_verified": false,
+      "edited_ar": "تفرّع ( اسم الحكم ) منه",
+      "historical_print": {
+        "printed_page": 32,
+        "scan_index": 36,
+        "status": "historical-print-difference",
+        "reading": "تفرّع ( اسم الحكم ) منه",
+        "note": "Verified from original-resolution 2200x3370 historical I1876 print. Digital B2007 reads سم الحكيم. Do not mistake a digital transcription for a photographed modern print; all MS witnesses unchecked.",
+        "hires": true,
+        "source_pdf": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
+        "original_image_url": "https://raw.githubusercontent.com/gnamma-research/booksite/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876-hires/images/scan_0036.jpg",
+        "official_iiif_image_url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000264/36/full/2200,/0/default.jpg",
+        "source_manifest": "facsimile-I1876-hires/IIIF_SELECTED_HIRES_MANIFEST.json",
+        "image_sha256": "8a5f2a25fb93cc6560442dd7c0b9f8e9499f833df7b5c33153e12ea4c0463950",
+        "original_pixel_size": [
+          2200,
+          3370
+        ],
+        "apparatus": "editorial/I1876_COLLATION_CUMULATIVE_006.json"
+      }
     },
     {
       "id": "CR006-016",
@@ -554,5 +573,13 @@ window.FARGHANI_CRITICAL_PASS_006={
       "historical_print_verified": false,
       "manuscript_verified": false
     }
-  ]
+  ],
+  "latest_historical_print_update": {
+    "date": "2026-11-09",
+    "printed_loci_aggregate": 15,
+    "differences_aggregate": 7,
+    "agreements_aggregate": 8,
+    "edited_lemma_at_p52": "اسم الحكم",
+    "verified_manuscript_variants": 0
+  }
 };
