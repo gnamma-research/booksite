@@ -826,7 +826,7 @@ ROOT.addEventListener("change",onChange);
 ROOT.addEventListener("input",onInput);
 ROOT.addEventListener("keydown",e=>{
  const el=e.target.closest("[role=button]");
- if(el&&["Enter"," "].includes(e.key)){e.preventDefault();el.click();}
+ if(el&&["Enter"," "].includes(e.key)){e.preventDefault();if(typeof el.click==="function")el.click();else el.dispatchEvent(new MouseEvent("click",{bubbles:true,cancelable:true}));}
  if(e.key==="Escape"){state.searchOpen=false;fillSearch()}
  if(e.key==="Enter"&&e.target?.id==="gn-search"&&state.search.trim()){
   const results=searchResults(state.search);
