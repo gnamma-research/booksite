@@ -15,19 +15,27 @@
       {
         "printed": 5,
         "pdf_scan_index": 9,
-        "sha256_jpeg": "5b763cfdd440f55b5c08df541c4578ef837f21313e990ae4f0109e9261b02076"
+        "sha256_jpeg": "5b763cfdd440f55b5c08df541c4578ef837f21313e990ae4f0109e9261b02076",
+        "repository_jpeg_sha256": "dd1059e8fe8df6a97695cdffdb04b249c8f2bb28d9192607ac064b1cda5e543e",
+        "repo_image_path": "facsimile-I1876/images/scan_0009.jpg"
       },
       {
         "printed": 6,
         "pdf_scan_index": 10,
-        "sha256_jpeg": "fc282d18cfc93c9a1ff1f466adf817f2d43a403705ea79eb6781eb4ea608e7f1"
+        "sha256_jpeg": "fc282d18cfc93c9a1ff1f466adf817f2d43a403705ea79eb6781eb4ea608e7f1",
+        "repository_jpeg_sha256": "77aedd3ff6c02c7c171258b98474ed318afc7e564772084706794e70e64ed5cc",
+        "repo_image_path": "facsimile-I1876/images/scan_0010.jpg"
       },
       {
         "printed": 7,
         "pdf_scan_index": 11,
-        "sha256_jpeg": "5b3cda3c7b58635ebc27f609322895f017cd30efd34a03a82592a8b98dad2865"
+        "sha256_jpeg": "5b3cda3c7b58635ebc27f609322895f017cd30efd34a03a82592a8b98dad2865",
+        "repository_jpeg_sha256": "b201a8728ee1f67c082ba3e798a67af4bce0f1517e32d1b824f19be2ee2cdf81",
+        "repo_image_path": "facsimile-I1876/images/scan_0011.jpg"
       }
-    ]
+    ],
+    "archival_repository_status": "59 JPEG scans and three contact sheets now committed to master in facsimile-I1876/",
+    "archived_image_manifest": "facsimile-I1876/SOURCE_INGEST_MANIFEST.json"
   },
   "scope": "Four selected source loci only from three photographed historical printed pages; not whole-page or manuscript collation",
   "comparisons": [
