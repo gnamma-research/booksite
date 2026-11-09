@@ -1,3 +1,5 @@
+> **LATEST CUMULATIVE SCOPE:** Stage 04 extends the original 68 records by **36 new proposition-level entries (MP-069–MP-104)** through printed p.138. Existing early-stage heading and note below remain as the historical record of the earlier research state.
+
 # GNAMMA | Register of Metaphysical Perspectives and Technical Terms
 
 **Stage 3; 9 November 2026.** 68 proposition-level records from the first-pass translated *Mashraʿ* pp.11–78 plus **explicitly nonconsecutive, uncounted research excerpts** from *Khuṣūṣ al-niʿam* and *Mashraʿ* Nuṣūṣ units 20 and 22. Each comparison is flagged as an inspected passage or a **navigation lead**, never as a manuscript-collated reading.
@@ -881,3 +883,450 @@ Every record separates: speaker; text and location; ontology; controlling *iʿti
 
 
 **Coverage status (9 November 2026):** newly translated printed pp.39–88 (50 consecutive pages). Cumulative Arabic–English coverage pp.11–88 (78 printed pages). No manuscript or 2000–01 printed collation has been completed.
+
+
+# Stage 04 additions — explicit perspective and technical-term register (pp.89–138)
+
+All entries use al-Mazīdī 2008 **online transcription** as source. A direct `source` link proves consultation of that online page only; it is not an attestation of manuscript validity or an independent comparison with Qūnawī’s own edition. Comparator citations marked *lead* have not been clause-collated in Stage 04.
+
+## MP-069 — Special comprehensive truth versus restricted name-dependent tastes
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.89–90**, [online source](https://ablibrary.net/book_content/b/9637/89?lang=ar); working `MSH-P089` and contiguous page entries. **Speaker layer:** Qūnawī quoted, al-Mahāʾimī commenting.
+- **Ontological level/object:** Names and particular divine presences relative to comprehensive perfection.
+- **Governing consideration:** Distinguish primary attribution to one name from *jamʿ al-jamʿ* and most comprehensive perfection.
+- **Mode of cognition/disclosure:** Spiritual taste evaluated for agreement with comprehensive knowledge.
+- **Qualification of knower:** Possessor of a particular *maqām* versus comprehensive realized knower.
+- **Terms in this register:** dhawq; maqām; ḥaythiyya; ṣidq.
+- **Scope of assertion:** Relative truth may be correct under one station while insufficient for an unrestricted claim. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Turka SH-017 and Farghānī introductory distinction (navigation leads, not collated).
+- **Open disagreement or crux:** Whether “what God knows” is here direct essential knowledge or its highest determinable disclosure.
+
+## MP-070 — The limits of reporting complete realization
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.91–92**, [online source](https://ablibrary.net/book_content/b/9637/91?lang=ar); working `MSH-P091` and contiguous page entries. **Speaker layer:** Qūnawī quoted, al-Mahāʾimī commenting.
+- **Ontological level/object:** Absolute Essence as distinct from expressible relational assertions.
+- **Governing consideration:** Distinguish expressibility in language from direct apprehension by a special state.
+- **Mode of cognition/disclosure:** Theoretically inferable knowledge versus tasted shuhūd.
+- **Qualification of knower:** Recipient of special disclosure.
+- **Terms in this register:** ʿilm; dhawq; shuhūd; taʿbīr.
+- **Scope of assertion:** The claim that some attained knowledge cannot be written is epistemic, not a denial of divine intelligibility. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Fanārī *Miṣbāḥ al-uns* and Qūnawī *Miftāḥ* (leads).
+- **Open disagreement or crux:** What is withheld because of intrinsic inexpressibility versus prudential concealment.
+
+## MP-071 — The end of comprehensible perfection without encompassing the absolute
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.93–95**, [online source](https://ablibrary.net/book_content/b/9637/93?lang=ar); working `MSH-P093` and contiguous page entries. **Speaker layer:** Al-Mahāʾimī expounding cited prophetic prayers.
+- **Ontological level/object:** Comprehensive divine perfection versus object comprehended by created cognition.
+- **Governing consideration:** Knowledge can reach the perfection proper to a human knower without encompassing the Unrestricted.
+- **Mode of cognition/disclosure:** Scriptural prayer and visionary commentary.
+- **Qualification of knower:** Even the most accomplished human knower.
+- **Terms in this register:** kamāl; iḥāṭa; maʿrifa.
+- **Scope of assertion:** Station-conditioned limit; not numerical identity between finite and infinite knowledge. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Qūnawī and Farghānī (cross-text check pending).
+- **Open disagreement or crux:** Verify wording and attribution of earlier prophetic reports.
+
+## MP-072 — Principial ordering of the first and second determinations
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.98–101**, [online source](https://ablibrary.net/book_content/b/9637/98?lang=ar); working `MSH-P098` and contiguous page entries. **Speaker layer:** Qūnawī quoted; al-Mahāʾimī explanatory.
+- **Ontological level/object:** First determination, second determination, intelligible intermediation.
+- **Governing consideration:** Relations of unity and plurality vary at each principial level.
+- **Mode of cognition/disclosure:** Metaphysical inference tested by disclosure.
+- **Qualification of knower:** Knower able to distinguish levels of the divine names.
+- **Terms in this register:** taʿayyun awwal; taʿayyun thānī; barzakh.
+- **Scope of assertion:** Ordered principial distinction, not alteration of God or temporal event. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Ibn Turka SH-027/028; Qayṣarī *Muqaddima* (navigation leads).
+- **Open disagreement or crux:** Multiple traditional taxonomies do not map one-to-one by labels.
+
+## MP-073 — Unrestricted necessary existence predicated under a determination
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.102–103**, [online source](https://ablibrary.net/book_content/b/9637/102?lang=ar); working `MSH-P102` and contiguous page entries. **Speaker layer:** Al-Mahāʾimī explicating Qūnawī.
+- **Ontological level/object:** Real in pure negative unrestrictedness versus determinate intellective relation.
+- **Governing consideration:** “One”, “necessary” and “unrestricted” themselves involve an *iʿtibār* at the relevant rank.
+- **Mode of cognition/disclosure:** Theoretical and disclosed cognition separated.
+- **Qualification of knower:** Qualified knower able to avoid equivocation.
+- **Terms in this register:** wujūd; iṭlāq; wājib; taʿayyun.
+- **Scope of assertion:** Valid under a determinate cognitive relation; not automatically applied to the Absolute from every perspective. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Turka SH-020–024; Avicenna *Ilāhiyyāt* VI.3 (leads).
+- **Open disagreement or crux:** What objective foundation has the first intelligible difference?.
+
+## MP-074 — Mirrors and the difference between appearance and intrinsic alteration
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.104–107**, [online source](https://ablibrary.net/book_content/b/9637/104?lang=ar); working `MSH-P104` and contiguous page entries. **Speaker layer:** Al-Mahāʾimī elaborating Qūnawī.
+- **Ontological level/object:** Intrinsic reality of reflected form and determinate modes of its appearance.
+- **Governing consideration:** The mirror changes the aspect of manifestation, not the being of the Real in Himself.
+- **Mode of cognition/disclosure:** Metaphysical argument with mirror analogy.
+- **Qualification of knower:** Rational analyst of manifestations.
+- **Terms in this register:** mirʾāh; tajallī; taʾthīr; nisba.
+- **Scope of assertion:** Relationally grounded plurality; not a new property modifying the Unrestricted. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Turka SH-030–031 coloured-glass analogy (verified existing handoff as lead).
+- **Open disagreement or crux:** Whether any real effect at contingent level requires a distinct act of existing.
+
+## MP-075 — Special essential disclosure as lightning-like
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.108**, [online source](https://ablibrary.net/book_content/b/9637/108?lang=ar); working `MSH-P108` and contiguous page entries. **Speaker layer:** Qūnawī quoted; al-Mahāʾimī comments.
+- **Ontological level/object:** Unrestricted Reality disclosed without a determinate locus.
+- **Governing consideration:** Nonformal disclosure as distinct from ordinary name/attribute-specific theophanies.
+- **Mode of cognition/disclosure:** Tasted shuhūd, not merely logical proof.
+- **Qualification of knower:** Recipient capable of special essential *tajallī*.
+- **Terms in this register:** tajallī dhātī barqī; farāgh.
+- **Scope of assertion:** Duration characterised as no longer than a breath, relative to the report of such witnessing. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Qūnawī pp.109–111 and 137; Fanārī (lead).
+- **Open disagreement or crux:** Whether literal temporal duration applies to every metaphysical register.
+
+## MP-076 — The disappearance of bodily and psychical attention is not nonexistence
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.109**, [online source](https://ablibrary.net/book_content/b/9637/109?lang=ar); working `MSH-P109` and contiguous page entries. **Speaker layer:** Al-Mahāʾimī.
+- **Ontological level/object:** Living human faculties at a station of nonattention.
+- **Governing consideration:** Precisely «ليس معنى الفراغ ... عدمها في الواقع».
+- **Mode of cognition/disclosure:** Phenomenological withdrawal and nonattentive witnessing.
+- **Qualification of knower:** Recipient of essential disclosure.
+- **Terms in this register:** farāgh; nafs; qalb; rūḥ.
+- **Scope of assertion:** Explicitly qualified cognitive claim; denial of ontological abolition. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Ghazālī and Qushayrī citations pp.20–25; Qūnawī pp.108–110.
+- **Open disagreement or crux:** How do faculties persist under a nonformal disclosure that excludes attention to them?.
+
+## MP-077 — Human comprehensiveness causes the flash not to endure
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.109–110**, [online source](https://ablibrary.net/book_content/b/9637/109?lang=ar); working `MSH-P109` and contiguous page entries. **Speaker layer:** Al-Mahāʾimī expounding Qūnawī.
+- **Ontological level/object:** Human composite capacities and the brief special disclosure.
+- **Governing consideration:** The recipient’s *jamʿiyya* simultaneously supports disclosure and requires the return of other functions.
+- **Mode of cognition/disclosure:** Integrated spiritual psychology.
+- **Qualification of knower:** Perfect Human, not a disembodied simple intellect.
+- **Terms in this register:** jamʿiyya; barqī; insān kāmil.
+- **Scope of assertion:** Explanation of the experience’s transience; not of change in the divine Essence. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Farghānī introductory human completeness (unverified text comparison); Turka.
+- **Open disagreement or crux:** Does the notion of a “breath” measure the disclosure or the recipient’s attention?.
+
+## MP-078 — Statements “nothing with God” under an essential experience
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.110–112**, [online source](https://ablibrary.net/book_content/b/9637/110?lang=ar); working `MSH-P110` and contiguous page entries. **Speaker layer:** Qūnawī cited; al-Mahāʾimī explains.
+- **Ontological level/object:** Essence under disclosure versus eternal attributes and fixed relations.
+- **Governing consideration:** Absence of separately witnessed things ≠ actual annihilation of attributes.
+- **Mode of cognition/disclosure:** Tasted disclosure contrasted with rational conception.
+- **Qualification of knower:** Specific Muhammadan prophetic inheritance.
+- **Terms in this register:** lā shayʾ maʿahu; tajallī; ḥāl.
+- **Scope of assertion:** Station-relative phrasing; neither attributes nor creatures cease to exist by mere change of attention. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** *Fuṣūṣ*, *Futūḥāt* and Qūnawī *Miftāḥ* (source check required).
+- **Open disagreement or crux:** Authenticated status of quoted sayings and their precise doctrinal scope.
+
+## MP-079 — Fixed entities as unmade intelligible realities
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.112–114**, [online source](https://ablibrary.net/book_content/b/9637/112?lang=ar); working `MSH-P112` and contiguous page entries. **Speaker layer:** Qūnawī quoted; al-Mahāʾimī constructs argument.
+- **Ontological level/object:** Aʿyān in divine knowledge; manifested effects and divine act.
+- **Governing consideration:** Distinguish uncreated intelligible reality from conditioned phenomenal showing.
+- **Mode of cognition/disclosure:** Metaphysical argument joined to essential disclosure.
+- **Qualification of knower:** Knower of fixed entities under tasted unity.
+- **Terms in this register:** aʿyān thābita; shuʾūn; jaʿl.
+- **Scope of assertion:** Dependent interpretation, not a claim that worldly effects are self-subsistent. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Turka SH-035, Qūnawī Text 22 (navigation lead).
+- **Open disagreement or crux:** What is the foundation of objective differentiation among unmade entities?.
+
+## MP-080 — Relations condition multiplicity but mirrors do not produce it ex nihilo
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.115**, [online source](https://ablibrary.net/book_content/b/9637/115?lang=ar); working `MSH-P115` and contiguous page entries. **Speaker layer:** Al-Mahāʾimī interpreting Qūnawī.
+- **Ontological level/object:** One existential self-disclosure and many receptive entities.
+- **Governing consideration:** Manifest multiplicity comes through *nisba* to the mirrors, not their causal alteration of source.
+- **Mode of cognition/disclosure:** Philosophical necessity argument and unveiling.
+- **Qualification of knower:** Witness of the Real without a locus.
+- **Terms in this register:** nisba; iʿtibārī kathra; mirʾāh.
+- **Scope of assertion:** Valid under relational manifestation; no new intrinsic multiplicity of the Unrestricted. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Qayṣarī introduction pp.48–51 (lead); Turka SH-017.
+- **Open disagreement or crux:** Is the distinction objectively grounded without positing an extrinsic accident in God?.
+
+## MP-081 — Rival causal descriptions as partially true
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.116**, [online source](https://ablibrary.net/book_content/b/9637/116?lang=ar); working `MSH-P116` and contiguous page entries. **Speaker layer:** Qūnawī quoted; al-Mahāʾimī commenting.
+- **Ontological level/object:** Attribution of agency to the Real, to forms and to their relations.
+- **Governing consideration:** Different assignments of an effect may correspond to different valid aspects.
+- **Mode of cognition/disclosure:** Comprehensive witnessing after differentiation.
+- **Qualification of knower:** Knower in *baqāʾ* rather than exclusive effacement.
+- **Terms in this register:** ḥaqq yaqīn; ṣawāb nisbī; baqāʾ.
+- **Scope of assertion:** Explicit claim of **relative correctness** of competing attributions, not global equivalence. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Turka SH-049–052; Thomist per se/participation (comparative only).
+- **Open disagreement or crux:** Can both attributions preserve real created action without independent divinity?.
+
+## MP-082 — As cause of plurality, the Real appears only in a viewed form
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.117**, [online source](https://ablibrary.net/book_content/b/9637/117?lang=ar); working `MSH-P117` and contiguous page entries. **Speaker layer:** Qūnawī lemma, al-Mahāʾimī explains.
+- **Ontological level/object:** Real as the intelligible source of plural forms.
+- **Governing consideration:** Restriction *min ḥaythu huwa sabab li-l-kathra*: an aspect of causality, not the unrestricted Essence.
+- **Mode of cognition/disclosure:** Divine self-knowledge and creaturely contemplation.
+- **Qualification of knower:** Knower of the cause in its determinate operation.
+- **Terms in this register:** sabab; manẓūr; kathra.
+- **Scope of assertion:** Aspect-qualified statement; not denial of disclosure without a locus in other respects. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Qūnawī Text Nine; Turka SH-027 (lead).
+- **Open disagreement or crux:** Separate potential causal plenitude from actual displayed multiplicity.
+
+## MP-083 — What a thing causes when considered without added conditions
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.118**, [online source](https://ablibrary.net/book_content/b/9637/118?lang=ar); working `MSH-P118` and contiguous page entries. **Speaker layer:** Qūnawī lemma; al-Mahāʾimī comments.
+- **Ontological level/object:** A source *qua itself* versus a configured causal whole.
+- **Governing consideration:** The contrary does not issue under *min ḥaythu huwa huwa*, but may emerge with added conditions.
+- **Mode of cognition/disclosure:** Rational causal analysis; hidden further aspect admitted as unmastered.
+- **Qualification of knower:** Philosophical inquirer; commentator expressly «ولست منهم».
+- **Terms in this register:** min ḥaythu huwa huwa; shart; munāsaba.
+- **Scope of assertion:** Conditional universal rule; commentator’s conjecture is not claimed as unveiling. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Avicenna causal congruence (lead); Turka SH-049–052.
+- **Open disagreement or crux:** Precise identity of the hidden additional consideration.
+
+## MP-084 — Composite efficacy and the distinction between conditions and efficient links
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.119**, [online source](https://ablibrary.net/book_content/b/9637/119?lang=ar); working `MSH-P119` and contiguous page entries. **Speaker layer:** Qūnawī quoted, al-Mahāʾimī explains.
+- **Ontological level/object:** A complex of essential and extrinsic factors.
+- **Governing consideration:** Effects are predicated of the contributing whole according to the governing rank.
+- **Mode of cognition/disclosure:** Causal inference and Qurʾānic allusion.
+- **Qualification of knower:** Analyst of derivative causes.
+- **Terms in this register:** hayʾa; shākila; shurūṭ.
+- **Scope of assertion:** No contradiction with intrinsic-source principle because its *iʿtibār* differs. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Turka SH-035 and Thomist concurrence (leads).
+- **Open disagreement or crux:** Determine scope of “each component has its effect” without contradicting p115.
+
+## MP-085 — No identical second disclosure
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.119–121**, [online source](https://ablibrary.net/book_content/b/9637/119?lang=ar); working `MSH-P119` and contiguous page entries. **Speaker layer:** Qūnawī and al-Mahāʾimī.
+- **Ontological level/object:** One effusion, inexhaustible possibilities and recurrent manifestations.
+- **Governing consideration:** Absolute repetition would leave no differentiating aspect of reality, rank or arrangement.
+- **Mode of cognition/disclosure:** Metaphysical and explicitly **persuasive** argument.
+- **Qualification of knower:** Witness of changing disclosures.
+- **Terms in this register:** lā takrār; burhān taṭbīq; iqnāʿ.
+- **Scope of assertion:** Not a rigorous physical law; denial of identity of manifestation under all respects. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Abū Ṭālib al-Makkī citation (uncollated); Farghānī (lead).
+- **Open disagreement or crux:** Whether appeal to nonfinite possibilities is logically sound and how “twice” is measured.
+
+## MP-086 — The first determination is not the negative Absolute
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.121–122**, [online source](https://ablibrary.net/book_content/b/9637/121?lang=ar); working `MSH-P121` and contiguous page entries. **Speaker layer:** Qūnawī quoted; al-Mahāʾimī comments.
+- **Ontological level/object:** Pure unrestrictedness and principial source of names.
+- **Governing consideration:** Predicates require *taʿayyun*, and the many are ordered by a first determinate unity.
+- **Mode of cognition/disclosure:** Conceptual inference supported by taste.
+- **Qualification of knower:** Reasoner or realised metaphysician.
+- **Terms in this register:** iṭlāq salbī; taʿayyun awwal.
+- **Scope of assertion:** Principial priority, not temporal genesis. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Turka SH-027–028; Qayṣarī pp.48–51 (leads).
+- **Open disagreement or crux:** Identify the first determination under each author independently.
+
+## MP-087 — Two senses of predication in relation to names
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.122**, [online source](https://ablibrary.net/book_content/b/9637/122?lang=ar); working `MSH-P122` and contiguous page entries. **Speaker layer:** Al-Mahāʾimī.
+- **Ontological level/object:** Divine names and their application to a qualified subject.
+- **Governing consideration:** Separates *ḥaml al-muwāṭaʾa* from derivative attribution *ḥaml al-ishtiqāq*.
+- **Mode of cognition/disclosure:** Logical analysis at a determinate stage.
+- **Qualification of knower:** Theologian or logician.
+- **Terms in this register:** ḥaml muwāṭaʾa; ḥaml ishtiqāq.
+- **Scope of assertion:** Logical claim about names, not a direct ontology of multiple divine essences. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Post-Avicennian logic and Turka (leads).
+- **Open disagreement or crux:** Which uses of predication are strictly linguistic versus ontic?.
+
+## MP-088 — Essential and act-related attributes ordered without time
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.123**, [online source](https://ablibrary.net/book_content/b/9637/123?lang=ar); working `MSH-P123` and contiguous page entries. **Speaker layer:** Al-Mahāʾimī construing Qūnawī and citing kalām.
+- **Ontological level/object:** Essential attributes and derivative act-related names.
+- **Governing consideration:** Dependence in *dhāt*, not succession of events in *zamān*.
+- **Mode of cognition/disclosure:** Rational *naẓar* contrasted with unveiling.
+- **Qualification of knower:** Theologian under conceptual veil.
+- **Terms in this register:** ḥudūth dhātī; ṣifāt dhāt/fiʿl.
+- **Scope of assertion:** Relational priority, timeless on the commentator’s premises. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Ashʿarī, Māturīdī, Avicenna (separate primary texts needed).
+- **Open disagreement or crux:** Al-Mahāʾimī’s attributions of school positions need checking.
+
+## MP-089 — Different gifts by predominance of the essential or nominal aspect
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.123–124**, [online source](https://ablibrary.net/book_content/b/9637/123?lang=ar); working `MSH-P123` and contiguous page entries. **Speaker layer:** Qūnawī quoted and al-Mahāʾimī explains.
+- **Ontological level/object:** Gifts to recipients under divine names.
+- **Governing consideration:** Essential, nominal and mixed gifts classified by predominance of the relevant relation.
+- **Mode of cognition/disclosure:** Exegetical and metaphysical account.
+- **Qualification of knower:** Recipient whose mode of asking conditions the gift.
+- **Terms in this register:** ʿaṭāʾ dhātī; asmāʾī; wujūb; imkān.
+- **Scope of assertion:** Relational classification: no division of the absolute Essence into components. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Farghānī, Qūnawī *Miftāḥ* (leads).
+- **Open disagreement or crux:** What makes the predominance objective rather than merely classificatory?.
+
+## MP-090 — Divine reckoning under names and nonnumerable essential gifts
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.124–125**, [online source](https://ablibrary.net/book_content/b/9637/124?lang=ar); working `MSH-P124` and contiguous page entries. **Speaker layer:** Qūnawī and al-Mahāʾimī.
+- **Ontological level/object:** Gift, temporal conditions and eschatological answer.
+- **Governing consideration:** Names have bounded domains whereas essential correspondences lack determinate numerical limit.
+- **Mode of cognition/disclosure:** Scriptural reading and theological speculation.
+- **Qualification of knower:** Recipients under different giving names.
+- **Terms in this register:** ḥisāb ʿasīr/yasīr; munāsaba dhātiyya.
+- **Scope of assertion:** Some applications are eschatological and explicitly speculative. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Qurʾān 84:7–9, Ibn ʿArabī *Fuṣūṣ* (direct check needed).
+- **Open disagreement or crux:** What is asserted about punishment’s end versus relative transformation of its perception?.
+
+## MP-091 — Priority of mercy over wrath as interpreted by al-Mahāʾimī
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.125**, [online source](https://ablibrary.net/book_content/b/9637/125?lang=ar); working `MSH-P125` and contiguous page entries. **Speaker layer:** Al-Mahāʾimī, attributing a position to Ibn ʿArabī.
+- **Ontological level/object:** Ultimate divine mercy in the horizon of eschatology.
+- **Governing consideration:** Priority of essential mercy over nominal punitive appearance.
+- **Mode of cognition/disclosure:** Theological interpretation, not direct disclosed report here.
+- **Qualification of knower:** Saved and punished under different names.
+- **Terms in this register:** raḥma; ghaḍab; nisba.
+- **Scope of assertion:** Attributed doctrine, NOT settled universal Akbarian consensus. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Ibn ʿArabī original required.
+- **Open disagreement or crux:** Does the proposed eventual cessation of suffering mean objective end or altered receptivity?.
+
+## MP-092 — Preparedness and existential condition as unspoken petition
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.127**, [online source](https://ablibrary.net/book_content/b/9637/127?lang=ar); working `MSH-P127` and contiguous page entries. **Speaker layer:** Qūnawī quoted; al-Mahāʾimī classifies.
+- **Ontological level/object:** Fixed entities, receptive capacities and natural conditions.
+- **Governing consideration:** Distinct *suʾāl* according to *istiʿdād*, state, rank, spirit, temperament.
+- **Mode of cognition/disclosure:** Ontology of receptivity and spiritual psychology.
+- **Qualification of knower:** Recipient at various levels.
+- **Terms in this register:** suʾāl istiʿdādī; fayḍ aqdas; ḥāl.
+- **Scope of assertion:** No automatic equivalence of verbal request and ontological predisposition. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Farghānī and Turka (leads).
+- **Open disagreement or crux:** Does the Most Holy Effusion give possibility a determination or actual existence?.
+
+## MP-093 — Condition does not mean cause
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.128**, [online source](https://ablibrary.net/book_content/b/9637/128?lang=ar); working `MSH-P128` and contiguous page entries. **Speaker layer:** Al-Mahāʾimī explicating Qūnawī.
+- **Ontological level/object:** Intermediary ranked sources of effusion.
+- **Governing consideration:** *Shart* depends-on without producing; *sabab* depends-on with efficacy.
+- **Mode of cognition/disclosure:** Conceptual causal distinction and high-level witnessing.
+- **Qualification of knower:** Advanced recipients able to see Real in causes and conditions.
+- **Terms in this register:** sharṭ; sabab; wāsiṭa.
+- **Scope of assertion:** Formal/causal distinction within one comprehensive vision. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Aquinas concurrence and Poinsot causality (comparative leads).
+- **Open disagreement or crux:** Whether denying independence changes a condition into an efficient cause.
+
+## MP-094 — One intelligible effusion determined by receptivities
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.128–129**, [online source](https://ablibrary.net/book_content/b/9637/128?lang=ar); working `MSH-P128` and contiguous page entries. **Speaker layer:** Qūnawī and al-Mahāʾimī.
+- **Ontological level/object:** Primordial *fayḍ maʿnawī* and cosmic recipients.
+- **Governing consideration:** No independent possibility-rule is attached to influx as it passes ranks.
+- **Mode of cognition/disclosure:** Metaphysics joined to disclosed perception.
+- **Qualification of knower:** Highest recipients under comprehension of source and result.
+- **Terms in this register:** fayḍ maʿnawī; qawābil; aḥkām imkāniyya.
+- **Scope of assertion:** Relational determination without extrinsic modification of source. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Turka SH-030/031, SH-049/052 (leads).
+- **Open disagreement or crux:** How can objective differences have causes if the influx is intrinsically one?.
+
+## MP-095 — Outward makes inward unity manifest as a plurality of forms
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.130**, [online source](https://ablibrary.net/book_content/b/9637/130?lang=ar); working `MSH-P130` and contiguous page entries. **Speaker layer:** Qūnawī, explained by al-Mahāʾimī.
+- **Ontological level/object:** al-Ẓāhir/al-Bāṭin, recipients, fixed entities and *shuʾūn*.
+- **Governing consideration:** Inward unity includes possible plurality rather than opposing it; outward determinations reveal it.
+- **Mode of cognition/disclosure:** Unveiling and inferential exposition.
+- **Qualification of knower:** Fully realized witness.
+- **Terms in this register:** al-Ẓāhir; al-Bāṭin; aʿyān; ṣuwar shuʾūn.
+- **Scope of assertion:** Relative to divine name and disclosure, not total literal identity of objects. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Turka SH-017/027–028 (leads).
+- **Open disagreement or crux:** Whether fixed entities are identical with name-rulings or grounded by them.
+
+## MP-096 — Tasted unity cannot be exactly expressed as a subject and predicate
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.130**, [online source](https://ablibrary.net/book_content/b/9637/130?lang=ar); working `MSH-P130` and contiguous page entries. **Speaker layer:** Al-Mahāʾimī explaining Qūnawī.
+- **Ontological level/object:** Nondual essential apprehension versus grammatical proposition.
+- **Governing consideration:** Any assertion articulates subject/predicate or actor/acted-upon, introducing distinction.
+- **Mode of cognition/disclosure:** Pure *dhawq* contrasted with discourse.
+- **Qualification of knower:** Recipient of special unitive guidance.
+- **Terms in this register:** tawḥīd dhawqī; ibāra; lisān.
+- **Scope of assertion:** Limit of expressibility for this realization, not abolition of all valid theology. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Fanārī and Qūnawī epistemology (leads).
+- **Open disagreement or crux:** What makes a proposition valid when experiential nonduality escapes syntax?.
+
+## MP-097 — Divine responsive accommodation is an admitted metaphor
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.131**, [online source](https://ablibrary.net/book_content/b/9637/131?lang=ar); working `MSH-P131` and contiguous page entries. **Speaker layer:** Qūnawī and al-Mahāʾimī.
+- **Ontological level/object:** Response to prayer and human obedience.
+- **Governing consideration:** Divine *muṭāwaʿa* is compared to an answer, not literal obedience.
+- **Mode of cognition/disclosure:** Rhetorical analysis and practical instruction.
+- **Qualification of knower:** Obedient servant.
+- **Terms in this register:** muṭāwaʿa; ijāba; istiʿāra.
+- **Scope of assertion:** Explicitly figurative; incompatible with divine subjection. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Qurʾān 40:60 and commentary; spiritual psychology.
+- **Open disagreement or crux:** Is there a nonmetaphorical real relation corresponding to the figure?.
+
+## MP-098 — Correct apprehension is not a mental image of the Essence
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.132**, [online source](https://ablibrary.net/book_content/b/9637/132?lang=ar); working `MSH-P132` and contiguous page entries. **Speaker layer:** Al-Mahāʾimī.
+- **Ontological level/object:** Divine Presence witnessed in things under names.
+- **Governing consideration:** Affirm seeing the Real in all things without *ḥulūl*, *ittiḥād*, or confinement.
+- **Mode of cognition/disclosure:** Discursive knowledge and disclosed witnessing distinguished.
+- **Qualification of knower:** Experienced petitioner.
+- **Terms in this register:** taṣawwur; maʿrifa; shuhūd.
+- **Scope of assertion:** Positive qualified conception, not sensory form. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Turka SH-035, Qūnawī other works (leads).
+- **Open disagreement or crux:** What differentiates apprehension of a name from projecting a fantasy?.
+
+## MP-099 — Mental imagery and the risk of praying to one’s own conception
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.133–134**, [online source](https://ablibrary.net/book_content/b/9637/133?lang=ar); working `MSH-P133` and contiguous page entries. **Speaker layer:** Qūnawī and al-Mahāʾimī.
+- **Ontological level/object:** Represented divine figure versus Real under true names.
+- **Governing consideration:** False identification of finite mental construction as the unrestricted Real.
+- **Mode of cognition/disclosure:** Inference from scriptural address and epistemic introspection.
+- **Qualification of knower:** Veiled petitioner.
+- **Terms in this register:** ṣūra mutashakhkhiṣa; khayāl; naẓar.
+- **Scope of assertion:** Conditional claim about **specific answer**, not absolute refusal of all supplication. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Qurʾān 40:60, 27:62; spiritual cognition texts.
+- **Open disagreement or crux:** Does the argument require an implausibly perfect concept for all answered prayer?.
+
+## MP-100 — Divine accompaniment distinguished from absolute identity
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.135**, [online source](https://ablibrary.net/book_content/b/9637/135?lang=ar); working `MSH-P135` and contiguous page entries. **Speaker layer:** Qūnawī and al-Mahāʾimī.
+- **Ontological level/object:** One divine Reality and all created images.
+- **Governing consideration:** *Maʿiyya* under names is not Essence physically inhabiting a representation.
+- **Mode of cognition/disclosure:** Scriptural exegesis and metaphysical aspect.
+- **Qualification of knower:** Veiled and qualified petitioner.
+- **Terms in this register:** maʿiyya; nisba; ṣifāt.
+- **Scope of assertion:** Qualified presence, not indwelling or equality of God and mental objects. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Qurʾān 57:4; 60:3; Fanārī (lead).
+- **Open disagreement or crux:** How is divine universal withness compatible with distinct actuality?.
+
+## MP-101 — Correct but partial name-bound knowledge at intermediate station
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.135–136**, [online source](https://ablibrary.net/book_content/b/9637/135?lang=ar); working `MSH-P135` and contiguous page entries. **Speaker layer:** Qūnawī and al-Mahāʾimī.
+- **Ontological level/object:** Particular divine name/attribute as known and invoked.
+- **Governing consideration:** Valid under some divine ranks, not comprehensive of all names.
+- **Mode of cognition/disclosure:** Correct conception and shuhūd, but partial.
+- **Qualification of knower:** Intermediate among the people of God.
+- **Terms in this register:** mutawassiṭ; asmāʾ; ḥaythiyya.
+- **Scope of assertion:** Station-conditioned adequacy; not simply false because less comprehensive. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Qūnawī station-relative truth p89; Farghānī (lead).
+- **Open disagreement or crux:** What are necessary and sufficient conditions for calling a bounded perspective “correct”?.
+
+## MP-102 — Flash ceases but its complete apprehension persists
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.136–137**, [online source](https://ablibrary.net/book_content/b/9637/136?lang=ar); working `MSH-P136` and contiguous page entries. **Speaker layer:** Qūnawī with explicit commentary of al-Mahāʾimī.
+- **Ontological level/object:** Essential disclosure versus the abiding human cognitive state.
+- **Governing consideration:** A single brief essential disclosure yields enduring *maʿrifa* comprehending all names and ranks.
+- **Mode of cognition/disclosure:** Direct essential witnessing followed by synthesis.
+- **Qualification of knower:** Perfect Human and singular individual.
+- **Terms in this register:** barqī; jamʿiyya; shuhūd atamm.
+- **Scope of assertion:** Explicit phenomenological temporal distinction: *tajallī* ends; cognition remains. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Compare Mashraʿ pp108–110 with pp136–137, Fanārī *Miṣbāḥ* (lead).
+- **Open disagreement or crux:** Does the continued representation persist by habitual *malaka*, as form, or by ongoing support?.
+
+## MP-103 — Knowledge of decree conditions perfect petition
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.137–138**, [online source](https://ablibrary.net/book_content/b/9637/137?lang=ar); working `MSH-P137` and contiguous page entries. **Speaker layer:** Qūnawī and al-Mahāʾimī.
+- **Ontological level/object:** Divine knowledge, tablet and Pen, manifested events.
+- **Governing consideration:** Distinguish intrinsically impossible from what is impossible *given prior divine knowledge*.
+- **Mode of cognition/disclosure:** Disclosure across ranks, not inference from observed past.
+- **Qualification of knower:** Perfect poles and selected *afrād*.
+- **Terms in this register:** lawḥ maḥfūẓ; maqām qalamī; mustaḥīl bi-l-ʿilm.
+- **Scope of assertion:** Claims of realized apprehension of decree; no inference that all humans know destiny. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Avicenna on divine knowledge, Ṭūsī and later kalām (not collated).
+- **Open disagreement or crux:** Does a conditional decree threaten freedom, and what is the source of its counterfactual contingency?.
+
+## MP-104 — Definitive versus suspended decree and unspoken volition
+
+- **Source:** *Mashraʿ*, 2008 ed., printed **pp.138**, [online source](https://ablibrary.net/book_content/b/9637/138?lang=ar); working `MSH-P138` and contiguous page entries. **Speaker layer:** Al-Mahāʾimī explaining Qūnawī.
+- **Ontological level/object:** Cosmic events as unconditioned or conditioned by an appointed means.
+- **Governing consideration:** *Jāzim* decree versus *muʿallaq* decree requiring petition, willing or other causes.
+- **Mode of cognition/disclosure:** Theological-metaphysical interpretation.
+- **Qualification of knower:** Knower whose aspiration is aligned with decree.
+- **Terms in this register:** taqdīr jāzim/muʿallaq; himma; irāda.
+- **Scope of assertion:** A cause under decree, not self-subsisting creaturely existentiation. **Evidence:** first-pass online transcription, manuscript uncollated.
+- **Comparators:** Kalām discussions of duʿāʾ and *qaḍāʾ*; *Futūḥāt* (leads).
+- **Open disagreement or crux:** Exact distinction between knowledge of an event and determination of its occurrence.
+
+## Methodological synthesis for the next critical pass
+
+1. **Do not infer numerical identity from predicative unity** (pp.102, 122): direct and derivative predication of the Real are already distinct logical operations, and both differ from the determination of one intelligible effusion (pp.128–130).
+2. **Do not infer an abolished ontology from the loss of awareness** (pp.108–109): al-Mahāʾimī explicitly denies that the human faculties cease to exist; p.137 expressly distinguishes the transient flash from its enduring cognitive results.
+3. **Do not infer independence from conditional efficacy** (pp.117–119, 128–129): *sharṭ* and *sabab* have distinct causal roles, and intermediate ranks are not treated as independent origins of the first effusion.
+4. **Do not infer arbitrariness from station-qualified truth** (pp.89, 116, 135–136): the partial report can be right relative to a name or station while less adequate than the perfected integration.
+5. **Do not import Guénon or Schuon as a taxonomy** until the meanings of unrestrictedness, first determination, fixed entities and manifested existence have been established directly. The current file does not equate Qūnawī’s *iṭlāq* with a particular Guénonian “Beyond-Being” tier or place *sat–cit–ānanda* into the Akbarian hierarchy.
+
+**Revision threshold:** all source readings are first-pass; no manuscript critical status, independent quotation authentication, or complete cross-author doctrinal concordance is claimed.
