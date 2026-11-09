@@ -1,0 +1,67 @@
+{
+  "schema": "gnamma-farghani-cumulative-vii-v1",
+  "built_at_utc": "2026-11-09T04:15:26.358032+00:00",
+  "status": "working source-corrected, NOT manuscript critical definitive",
+  "scope": "Muntaha al-madarik authorial Arabic introduction and final preface, B2007 pp18-145",
+  "previous_complete_archive": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_CRITICAL_006.md",
+  "previous_complete_archive_sha256": "90928dc566c0831494863c0dae9ed1ca94128b1f7cad9da0ef993d8f59e2b3c5",
+  "new_complete_archive": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_CRITICAL_007.md",
+  "new_complete_archive_sha256": "207526e54266c1c9d9483d6cc1488f8c4bd2bb0e92034424bcfeb43c5b1eb4cd",
+  "new_archive_utf8_bytes": 1999209,
+  "arabic_text_bilingual_status": "198 selected modern digital source checks; no full continuous manuscript-proofed copy-text",
+  "english_working_draft_beirut_pages": [
+    18,
+    145
+  ],
+  "english_working_draft_page_count": 128,
+  "modern_source_checked_clause_count": 198,
+  "historical_print_selected_comparisons": 10,
+  "historical_print_differences": 5,
+  "historical_print_agreements": 5,
+  "historical_print_whole_pages_fully_collated": 0,
+  "medieval_manuscripts_actual_folios_seen": 0,
+  "manuscript_variants_independently_verified": 0,
+  "first_next_unchecked_modern_arabic_page": 37,
+  "artifacts": [
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/I1876_COLLATION_STAGE_007.md",
+      "sha256": "2b69dba26f38f577e6b601ba966164a4d51fac1f7dc62e2cc9f071d07e349e54",
+      "bytes": 6038
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/I1876_COLLATION_CUMULATIVE_004.json",
+      "sha256": "9f2667731c1535fd1ab9dac4ef7d063c312503bad98e8baef114448fddea672c",
+      "bytes": 17623
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_LOCUS_REGISTER_004.json",
+      "sha256": "3dceac4bd079fb5a3a0fde8d8eb4e8cc57510810a2f36e811f6e611170282d14",
+      "bytes": 19040
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/COLLATION_MATRIX_I1876_005.csv",
+      "sha256": "2713f537e05436747ea99ae1e8561af4ea043994848b04ff8eb04cdd1663e53d",
+      "bytes": 4388
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_HANDOFF_CRITICAL_007.md",
+      "sha256": "ec0ff0e87114bd8e343b7af88e50162a646586553017b31377083ec12b48dad5",
+      "bytes": 4427
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/STATUS.md",
+      "sha256": "54163dced84d5be3793b895f033a3ddbef73387d005767ecb4fdc7a9f885c5bf",
+      "bytes": 31974
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_COVERAGE_REGISTER.json",
+      "sha256": "d6ddbfd5fa1984ac25cd13f0f1f0d6ec313131bd6b0eb2b4f7af5286d194c6fc",
+      "bytes": 85254
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/WITNESS_REGISTER.json",
+      "sha256": "458ae98a0ae65ff65a937480e691a5b522326a4ee282e28f0b4a5b561111ac69",
+      "bytes": 32232
+    }
+  ]
+}
