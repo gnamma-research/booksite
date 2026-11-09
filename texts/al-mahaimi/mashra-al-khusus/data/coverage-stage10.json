@@ -39,7 +39,23 @@
     ],
     "qunawi_2008_unimported_pages": 30,
     "qunawi_independent_online_passages": 47,
-    "qunawi_online_passages_source": "independent online transcription; not checked against printed appendix"
+    "qunawi_online_passages_source": "independent online transcription; not checked against printed appendix",
+    "qunawi_2008_page_specific_transcribed_elsewhere": [
+      237,
+      238
+    ],
+    "qunawi_2008_digital_transcribed_across_project": [
+      235,
+      236,
+      237,
+      238,
+      267
+    ],
+    "qunawi_2008_remaining_without_page_specific_proof": [
+      239,
+      266
+    ],
+    "qunawi_2008_pages_without_page_specific_proof": 28
   },
   "concordance": {
     "ar_en_qunawi_passages": 47,
@@ -98,6 +114,7 @@
     "data": "texts/al-mahaimi/mashra-al-khusus/data/parallel.json",
     "apparatus": "texts/al-mahaimi/mashra-al-khusus/editorial/APPARATUS_STAGE09.md",
     "concordance": "texts/al-mahaimi/mashra-al-khusus/editorial/CONCORDANCE_STAGE10.md",
-    "integrity_test": "tests/test_mahaimi_stage10.py"
+    "integrity_test": "tests/test_mahaimi_stage10.py",
+    "appendix_proof_pp237_238": "texts/al-mahaimi/mashra-al-khusus/data/stage10-qunawi-pp237-238.md"
   }
 }
