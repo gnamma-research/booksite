@@ -6,6 +6,8 @@
 
 **Source quality control:** Five Stage XIII excerpts were revised to remove overly compressed or reconstructed Arabic quotations; corrected data and editorial records are canonical. All 74 remain *selected bounded phrases from a derivative transcription*, not an independently photographed Beirut original, not continuous Arabic copy-text and not any MS folio.
 
+**One-file bilingual cumulative apparatus:** [All 468 selected Arabic–English records](CUMULATIVE_SELECTED_BILINGUAL_013.md), graded by direct digital-edition versus derivative transcription; this is not a continuous critical Arabic text.
+
 **New assets:** [Exact Stage XIII handoff](STAGE_HANDOFF_CRITICAL_013.md) · [74 individual reviewed excerpts](CRITICAL_TRANSLATION_79_101_DERIVATIVE.md) · [machine-readable data](../data/critical-pass-009-p79-101.js) · [grade-aware source register](SOURCE_PROVENANCE_CRITICAL_013.json) · [128-page coverage](CRITICAL_COVERAGE_REGISTER.json) · [interactive reader](../critical-edition.html).
 
 **Next:** Beirut printed **p102** (Fourth Foundation, pp102–143) and p144–145 closing preface; separately upgrade every p61–101 selected check against actual photographed modern print, then historical printing and original manuscript witnesses before calling edition definitive.
