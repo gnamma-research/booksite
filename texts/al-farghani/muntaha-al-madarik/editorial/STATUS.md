@@ -1,5 +1,20 @@
 # Muntahā al-madārik · Editorial and translation register
 
+
+## Current milestone — Stage VII, original-resolution 1876 photographs (9 November 2026)
+
+**Complete English introductory draft preserved:** B2007 pp18–145 = 128 consecutive page-labelled units, still requiring full line-by-line scholarly Arabic verification. The modern B2007 Arabic–English audit remains **198 selected clause records** on pp18–36, not 198 complete-page or manuscript comparisons.
+
+**Historical printed evidence has advanced to ten selected loci** across nine I1876 printed pages (5, 6, 7, 8, 9, 10, 13, 16, 18), recorded with exact scans and SHA provenance: **five true print-to-print differences and five bounded agreements**. New high-resolution readings:
+- I1876 p8/scan12 **سوى أنه ربما يكون** vs B2007 p23 **إلّا أنه ربما يكون** (prefer historic printed connective provisionally; the modal `ربما` is unchanged).
+- I1876 p16/scan20 **في عون هذا**, agreeing with B2007 p33 (reject imagined `عين`; leave grammatical interpretation unsettled).
+- I1876 p14/scan18 **لون الماء لون إنائه** controls Beirut's digitized spacing error `الماءلون` (not a substantive variant).
+
+Six **original-resolution 2200px** Princeton/NYU IIIF prints are in `facsimile-I1876-hires/images/`, with URL and SHA hashes in `facsimile-I1876-hires/IIIF_SELECTED_HIRES_MANIFEST.json`. [Stage VII report](I1876_COLLATION_STAGE_007.md), [cumulative ten-locus print apparatus](I1876_COLLATION_CUMULATIVE_004.json), [exact stage handoff](STAGE_HANDOFF_CRITICAL_007.md).
+
+**Crucial qualification:** **zero photographed medieval manuscript folios collated, zero manuscript variants established, zero complete historical printed pages line-proofed**. Next B2007 modern source page needing systemic proofreading: **p37**. The full Arabic critical text and a reasoned manuscript stemma remain incomplete. The edition is still an **evidence-corrected working edition**, not definitive.
+
+
 ## Current milestone — photographed 1876 collation VI: eight exact loci (9 November 2026)
 
 The original Princeton/NYU historical printing I1876 (vol.I) has now been directly compared with the Beirut B2007 source at **eight bounded loci** across I1876 printed pages **5, 6, 7, 8, 9, 10, 13, 18** (PDF scans 9,10,11,12,13,14,17,22). There are **four real print differences** and **four narrow agreements**, registered with exact page/scan concordances and source hashes in [cumulative register v3](I1876_COLLATION_CUMULATIVE_003.json) and [Stage VI textual report](I1876_COLLATION_STAGE_006.md).
