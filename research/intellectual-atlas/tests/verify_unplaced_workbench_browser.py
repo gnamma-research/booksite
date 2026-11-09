@@ -89,6 +89,26 @@ async def test(page):
     # Stronger check via provenance audit counts rather than assuming search ordering.
     require(s["d"]["counts"]["alreqAuthorDated"]>=764,"Cited author deaths not retained")
 
+    # A geographical "works unlocated" total must open a genuine, source-linked
+    # catalogue rather than a decorative counter on the map.
+    await page.goto(ROOT + "#view=geography&subject=all",wait_until="domcontentloaded")
+    await ready(page)
+    await page.locator('[data-geo-unplaced]').first.click()
+    require(await page.locator('[data-geo-unplaced-panel]').count()==1,
+            "Unplaced geographical works counter has no active source browser")
+    require(await page.locator('[data-geo-unplaced-work]').count()>0,
+            "Unplaced geographical workbench is empty")
+    require(await page.locator('[data-geo-unplaced-panel] a[href*="alreq.com"]').count()>0 or
+            await page.locator('[data-geo-unplaced-panel] a[href*="github.com"]').count()>0,
+            "Unlocated map records lack bibliographic sources")
+    await page.locator('[data-geo-unplaced-search]').fill('فقه')
+    await page.wait_for_timeout(360)
+    require(await page.locator('[data-geo-unplaced-work]').count()>0,
+            "Arabic geographical catalogue search is broken")
+    await page.locator('[data-geo-unplaced-work]').first.click()
+    require((await state(page))["d"]["view"]=="network",
+            "Unlocated geographical source record did not open its full work profile")
+
     # In all disciplines, an unplaced marker remains clickable and opens the
     # *same* source workbench, never a static snapshot.
     for science in ["nahw","sarf","balagha","usul","fiqh"]:
