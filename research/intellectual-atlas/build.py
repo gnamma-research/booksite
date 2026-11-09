@@ -114,11 +114,22 @@ assert len(early_register['authorities']) >= 16
 assert len(bib_openiti['works']) >= 1800
 assert bib_alreq['statistics']['distinct_catalogue_ids'] == 4157
 assert all(not r['text_acquired'] for r in bib_alreq['works'])
+author_chron=json.loads((ROOT/'corpora'/'author-chronology.json').read_text(encoding='utf-8'))
+assert len(author_chron['entries'])>=19
+author_urls={e['author_url']:e for e in author_chron['entries']}
+assert len(author_urls)==len(author_chron['entries']), 'Duplicate or ambiguous author biography'
+assert all(e['dating_event']=='author_death' and e['death_ah']>0 and
+           e['source_url'].startswith('https://app.alreq.com/ar/Authors/Author/')
+           and e['status'] in ('confirmed','disputed') for e in author_chron['entries'])
+alreq_known=[w for w in bib_alreq['works'] if w.get('author_url') in author_urls]
+assert len(alreq_known)==author_chron['catalogue_records_affected']==764
+assert all(not w['text_acquired'] for w in alreq_known)
+assert all(w.get('dating_status','').startswith('undated') for w in alreq_known), 'Do not mutate source catalogue dating claims'
 manifest = {
     'title': 'Texts in Time · Islamic Intellectual Atlas',
     'revision': 'tajrid-critical-links-8-2026-10-31',
     'status': 'working research',
-    'ui_revision': 'hanafi-geography-map-and-source-network-2026-11-09',
+    'ui_revision': 'evidence-dated-undated-source-workbench-2026-11-09',
     'mobile_interface_note': 'The main UI has Hanafi-inspired tabs By century, By region and Source network, with one subject selector and search. A georeferenced coastal map shows separately documented author and work events, and unplaced source records remain counted. Source network and book timeline remain available across sciences.',
     'whole_range_note': 'Use the shared year controls and zoomable era clusters; switch sciences without changing map interface.',
     'date_marker_note': 'Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.',
@@ -148,13 +159,22 @@ manifest = {
         'complete_corpora_claimed': False,
         'license': corpus_registry['license'],
     },
+    'chronology_enrichment': {
+        'source': 'corpora/author-chronology.json',
+        'alreq_author_biographies_checked': len(author_chron['entries']),
+        'alreq_records_with_sourced_author_death_anchor': len(alreq_known),
+        'alreq_records_still_without_author_death_anchor': len(bib_alreq['works'])-len(alreq_known),
+        'event_type': 'author death, not book composition or manuscript copying',
+        'unplaced_workflow': 'Immediate searchable source workbench in both chronology and geographic views',
+        'automatic_same_title_merges': 0,
+    },
     'geography': {'data_url':'corpora/geo-events.json','geocoded_events':len(geo['events']),'author_events':sum(e['entity']=='author' for e in geo['events']),'work_events':sum(e['entity']=='work' for e in geo['events']),'registered_places':len(geo['places']),'unplaced_research_caveat':'No automatic geolocation from an author nisba, text title or manuscript catalogue association.'},
     'bibliography_map': {
         'mode': 'single shared chronological renderer with source-date qualifications, undated source-record lanes, Hanafi-style bidirectional work-centred networks and optional principal-texts synopses',
         'openiti_primary_work_candidates': len(bib_openiti['works']),
         'alreq_source_linked_entries': len(bib_alreq['works']),
         'graph_renderer': 'atlas-unified.js',
-        'graph_interactions': ['one shared year axis for all sciences','zoom and pan to era clusters','school and historical early-jurist lanes','unplaced works within same map','source-evidence work panel','Hanafi-style bidirectional network','curated-family and selective principal texts'],
+        'graph_interactions': ['one shared year axis for all sciences','zoom and pan to era clusters','sourced author-death timeline anchors','visible undated workbench and Arabic title/author search','author/source identity and citations','school and early-jurist lanes','unplaced geography catalogue','source-evidence work panel','bidirectional text network','principal texts'],
         'registered_early_historical_authorities': len(early_register['authorities']),
         'alreq_fiqh_by_school': bib_alreq['statistics']['by_school'],
         'alreq_nahw_entries': bib_alreq['statistics']['by_genre']['nahw'],
