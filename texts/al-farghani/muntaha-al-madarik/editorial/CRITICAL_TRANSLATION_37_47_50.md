@@ -1,3 +1,5 @@
+> **Stage XV supersession:** The original p38 discussion below predates direct photographic evidence. I1876 printed p20 scan24 explicitly reads **القابل**; the conjecture **القائل** has NO independent witness at this locus. See [photo report](I1876_COLLATION_STAGE_015.md). The historical Stage VIII wording is preserved below as a dated record, not a current recommendation.
+
 # Farghānī · Critical Pass V — Beirut pp37–47, p50
 
 **9 November 2026 · Stage VIII.** 45 selected bounded authorial Arabic–English checks across 12 modern printed pages, **not** full pages collated. Sequential source checking still requires p48–49; p50 was checked out of sequence. 1876 historical printing and medieval manuscripts were **not** examined for these new loci; no additional witness variant has been established.
