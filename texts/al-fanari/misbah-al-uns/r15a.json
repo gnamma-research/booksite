@@ -1,0 +1,262 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R15a",
+  "date": "2026-11-09",
+  "startSection": "4.821",
+  "endSection": "4.845",
+  "sourceRepo": "OpenITI/0850AH",
+  "sourceCommit": "e2715c62fb458ce3ddc43b962cd55677cdd7bc35",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.821",
+      "number": 821,
+      "pageStart": 510,
+      "pageEnd": 510,
+      "arabic": "ثم نقول: وجميع الأفلاك صور المراتب والحضرات وكواكبها صور الأسماء الإلهية، لان الأسماء مؤثرة حسب محلية المراتب، فبذلك ظهر في الكواكب بحسب محلية الأفلاك نضدا علوا وسفلا وحركتها سرعة وبطوء، وفي الجملة بحسب الأوضاع الفلكية المشتملة على أنواع الاتصالات الكوكبية.",
+      "english": "We further say: All the celestial spheres are images of the degrees and Presences, while their planets are images of the divine Names, because Names act in accordance with the receptivity of their degrees. This explains the planets' arrangement in ranks of high and low, and the speed or slowness of their motions, according to their celestial loci—in general, according to the heavenly configurations containing the various kinds of planetary conjunction.",
+      "notes": "Differentiation of sphere as formal degree and planet as name-manifestation is provisional; the next objection asks whether spheres themselves manifest Names.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.822",
+      "number": 822,
+      "pageStart": 510,
+      "pageEnd": 510,
+      "arabic": "فان قلت: المفهوم من هذا التقسيم ان ليس الأفلاك مظاهر الأسماء، وقد مر ان كل موجود يستند إلى الحق باسم معين من حيث خصوصية توجه الحق إليه بحسبه، فهو مظهر ذلك الاسم.",
+      "english": "If you object: This division seems to imply that the spheres are not loci of manifestation of the Names. Yet it was established that each existent relates to the Real through a particular Name in accordance with the distinctive orientation of the Real toward it, and therefore manifests that Name.",
+      "notes": "Source objection to overly rigid planet/sphere distinction.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.823",
+      "number": 823,
+      "pageStart": 510,
+      "pageEnd": 511,
+      "arabic": "قلت: الأفلاك كذلك لما قال الشيخ قدس سره في الفك السليماني: ان كل سماء محل حكم اسم من أسماء الحق واستناد تلك الأسماء إلى الحق تعالى من حيثية ذلك الاسم ومن مقام تعين الامر الموحى به، كما قال تعالى: وأوحى في كل سماء امرها (12 - فصلت) لكن قول الشيخ قدس سره في المفتاح مشعر بان ذلك الاسم المدبر للفلك بعينه هو الاسم الذي مظهره الكوكب، والفلك كالعضو له مدخل في تعين الاسم الكوكب، كالجسم للانسان، والمسألة بين الفلاسفة أيضا مختلف فيها: ان لكل فلك وكوكب نفسا أو النفس للكواكب والفلك كالعضو لها؟",
+      "english": "I reply: The spheres are indeed such loci, as the Shaykh, may his secret be sanctified, said in the work on the Sphere of Solomon: each heaven is the locus of the ruling of a Name of the Real, and those Names relate to the Real through the specific respect of that Name and from the station in which the command revealed to it becomes determined, as God says: 'He revealed to each heaven its command' [Qurʾān 41:12]. Yet what the Shaykh says in the *Miftāḥ* suggests that the very Name which governs a sphere is the Name manifested by its planet, while the sphere is like a limb participating in determining the planet's Name, as a body does for the human being. The philosophers likewise disagree whether each sphere and planet has its own soul or the soul belongs to the planet and the sphere is like its limb.",
+      "notes": "Compare Qūnawī *Miftāḥ al-ghayb* and the cited `Fakk al-Falak al-Sulaymānī`. Source recognises two models, not a definitive single cosmological structure.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.824",
+      "number": 824,
+      "pageStart": 511,
+      "pageEnd": 511,
+      "arabic": "ثم نقول: الملائكة التي هي عمار السماوات - أعني القوى الفلكية مما سبق في البروج والمنازل وتوابعهما - صور احكام الأسماء، لانهم سدنة الكواكب ويتبعهم تبعية احكام الأسماء للأسماء، ثم العناصر صور الأسماء المختصة بالعماء وهى أمهات أسماء الألوهة - كالأربعة المذكورة - لان كيفياتها صور تلك الصفات كما مر، فمحل تلك الكيفيات - وهى العناصر - صورة الاسم المتعين من كل منها (1)، كالعالم والحي والمريد والقادر.",
+      "english": "We further say: The angels who populate the heavens—namely celestial powers associated with the zodiacal signs, mansions, and their dependants mentioned above—are forms of the rulings of the Names, for they serve the planets and follow them as the rulings of the Names follow the Names themselves. The elements, in turn, are forms of the Names distinctive to the Cloud [al-ʿamāʾ], the motherly Names of divinity, such as the four already mentioned. Their qualities are images of those attributes; thus the elements, as loci of those qualities, are images of the particularised Name corresponding to each—such as the Knowing, the Living, the Willing, or the Powerful.",
+      "notes": "Elemental qualities and divine Names are compared as forms and manifestations; the source does not claim fire is literally a rational animal.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.825",
+      "number": 825,
+      "pageStart": 511,
+      "pageEnd": 511,
+      "arabic": "فان قلت: كيف يكون النار حيا وقادرا والماء عالما مريدا والهواء مريدا حيا والأرض قادرا عالما؟",
+      "english": "If you object: In what sense can fire be living and powerful, water knowing and willing, air willing and living, and earth powerful and knowing?",
+      "notes": "Four pairs of divine-name attributes associated with elements. The next sections provide the analogical rationale.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.826",
+      "number": 826,
+      "pageStart": 511,
+      "pageEnd": 511,
+      "arabic": "قلت: لان كل شئ فيه كل شئ، لكن المغلوب خفى الحكم أو مستهلكه، وقد علم لذلك ان مختارنا مذهب الكمون والبروز، فالغالب في الحرارة التي هي أصل الحياة كالحرارة الغريزية والحرارات الاخر ممدها إذا لم يفرط، كما قيل: النار فاكهة الشتاء، ولذا بها كان التوسل القريب إلى التغذى في نضج الغذاء وطبخ الأشياء، اما دليل قدرتها: فقهرها وعلوها.",
+      "english": "I reply: Everything is present in everything, though whatever is overcome has a hidden or absorbed ruling. Hence it is clear that our chosen view is that of concealment and emergence [al-kumūn wa-l-burūz]. Heat predominates in fire and is the root of life, as with innate heat and the other heats that replenish it when they are not excessive—as they say, 'Fire is winter's fruit.' Fire is the nearest means to nourishment through ripening and cooking food. Its power is evident from its overwhelming force and upward movement.",
+      "notes": "The doctrine of kumūn/burūz is technical, not modern latent gene expression or present-day science. 'Fire is winter's fruit' is proverbial.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.827",
+      "number": 827,
+      "pageStart": 511,
+      "pageEnd": 512,
+      "arabic": "ثم الماء لبرودته تناسب برد اليقين الدافع لحرارات الشبه واضطرابات الشكوك، لذا عبر الماء بالعلم وصار الأنهار الأربعة في الجنة مظاهر علوم الوهب التي أصفاها ومقدمها نهر الماء الغير الاسن، وتمثل العلم المختص بالفطرة والملة التي هي أصل الغذائية الروحانية باللبن بدليل قوله صلى الله عليه وآله: أصبت الفطرة، وبحديث رؤيا النبي صلى الله عليه وآله قدحا من اللبن وتأويله بالعلم. واما إرادة الماء فميله إلى أن يصير جزء كل شئ حي بالفعل ويمد بتلك الجزئية حياته، كما قال تعالى: وجعلنا من الماء كل شئ حي أفلا يؤمنون (30 - الأنبياء)",
+      "english": "Water's coldness corresponds to the coolness of certainty, which drives away the heat of suspicious notions and the agitation of doubts. Thus water is used as a symbol of knowledge. The four rivers of Paradise become manifestations of bestowed sciences [ʿulūm al-wahb], the purest and foremost being the unspoiled river of water. Knowledge belonging to innate disposition and the religious community, the root of spiritual nourishment, is represented by milk, as indicated by the Prophet's words, 'You have attained the primordial disposition,' and the report of his dream of a cup of milk, interpreted as knowledge. As for water's will, it lies in its tendency to become an actual constituent of every living thing, maintaining its life through that participation, as God says, 'We made from water every living thing. Will they not believe?' [Qurʾān 21:30].",
+      "notes": "The pairing water–knowledge is an analogy between coolness and certainty; distinguish the four paradisal rivers' full symbolism. Hadith milk variants require verification.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.828",
+      "number": 828,
+      "pageStart": 512,
+      "pageEnd": 512,
+      "arabic": "ثم الهواء أكثر ميلا من الماء وامدادا للحيوة من النار، لكونه انسب للحرارة اللطيفية الغريزية، حتى لو انقطع الهواء النفسي أدنى ساعة افضى إلى هلاك الحيوان - بخلاف الماء والنار -.",
+      "english": "Air has a greater propensity to movement than water and contributes more directly to the life supplied by fire, since it is more suited to subtle innate heat. The interruption of breathing air for even a short time brings about an animal's death, unlike the temporary absence of water or fire.",
+      "notes": "Source physiologic analogy; the general claim is historical and non-quantitative.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.829",
+      "number": 829,
+      "pageStart": 512,
+      "pageEnd": 512,
+      "arabic": "ثم الأرض لا شك في قهرها بثقلها ويبوستها الذي هو دليل قدرتها، ولا ريب في أن تعيين المحسوس للعلوم الاحساسية بها.",
+      "english": "Earth undoubtedly subdues by its weight and dryness, which indicates its power; and its role in making sensory objects determinate for sensory knowledge cannot be doubted.",
+      "notes": "Power through weight and knowledge through sense-determination are analogical predications.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.830",
+      "number": 830,
+      "pageStart": 512,
+      "pageEnd": 512,
+      "arabic": "ثم نقول: الشمس مظهر الألوهية، لأنها ممدة بالاسم المحيى كما مر لمظاهر سائر الأسماء التي هي الكواكب في أنوارها وأوضاعها كما سيجئ ولجميع الموجودات الحسية كامداد الألوهية لأسمائها ورقائقها. والقمر له اعتباران: اعتبار صورته الحقيقية الكدرة المظلمة في ذاته واعتبار استنارته بنور الشمس، فبالاعتبار الأول هو مظهر حقيقة العالم من حيث امكانه المقتضى لظلمة عدميته في ذاته وقابليته للوجود، وبالاعتبار الثاني مظهر نفس العالم من حيث ظهوره بالوجود الفائض من الله تعالى، فالقمر جعله الله آية على حال الوجود من جهة انه اشتمل على هذين السرين: أحدهما انه في ذاته ومن حيث هو هو غنى عن النور - لكنه قابل - وثانيهما انه من حيث تقابله بالشمس يستنير بحكمها، فهو نظير الوجود في غناه من حيث هو هو وعروضه لأعيان الممكنات بحكم الألوهة.",
+      "english": "We further say: The Sun manifests Divinity because it supports, through the Name al-Muḥyī (the Life-Giver), the loci of the other Names—the planets—in their lights and configurations, as will be explained, and all sensory existents, just as Divinity sustains its Names and subtle connecting relations. The Moon has two considerations: its true bodily form, opaque and dark in itself, and its illumination by sunlight. In the first respect it manifests the reality of the world insofar as it is possible, which entails the darkness of its own privation and its receptivity to Being. In the second it manifests the soul of the world insofar as the world appears through the Being bestowed by God. God made the Moon a sign of the state of Being because it contains two mysteries: first, it is in itself, simply as it is, without borrowed light—though receptive to it; second, as it faces the Sun it becomes illuminated by its ruling. Thus the Moon is analogous to Being's self-sufficiency insofar as it is itself and its coming to accompany the fixed entities of possibilities through the ruling of Divinity.",
+      "notes": "There is a difficult shift from Moon-as-dark-world to Moon-as-analogue-of-Being; the source itself proposes an alternative clarification in §4.831. Do not force one consistent literal ontology prematurely.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.831",
+      "number": 831,
+      "pageStart": 512,
+      "pageEnd": 513,
+      "arabic": "ويمكن ان يقال: المراد ان النور المستفاد من الشمس للقمر كالوجود من حيث غناه عن القمر من حيث هو هو وعروضه له من حيث المقابلة والمسامتة بينهما بحكم الامداد الأسمائي والتنوير الاحيائي. ولما نبهنا عليه من أن الحق سبحانه جعل القمر آية على سر الوجود باعتباري الغنى والتعلق، صح للقمر وثبت له عدة أحوال ظهر بها سر ارتباط الخليفة الكامل به، وذلك من وجوه:",
+      "english": "One may alternatively say that the light the Moon receives from the Sun is like Being: considered in itself, it is independent of the Moon, but it comes to accompany it through their opposition and alignment, under the ruling of support from the Names and life-giving illumination. As we indicated, God has made the Moon a sign of Being's mystery under the two considerations of self-sufficiency and attachment. Thus a number of conditions rightly belong to the Moon through which the mystery of the perfected vicegerent's connection with it appears, in several ways.",
+      "notes": "Source explicitly proposes an alternative interpretation («ويمكن أن يقال»). The sequence enumerating lunar/Perfect Human analogies begins next.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.832",
+      "number": 832,
+      "pageStart": 513,
+      "pageEnd": 513,
+      "arabic": "الأول: جمعه بين الامرين المتغايرين:",
+      "english": "First: The Moon combines two differing things.",
+      "notes": "Heading for three subconsiderations of lunar opposites.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.833",
+      "number": 833,
+      "pageStart": 513,
+      "pageEnd": 513,
+      "arabic": "اما أولا فبين الظلمة الذاتية والنور العارض، حتى صار نورا لعدم مخالطته الجسم لاضياء - كما في الشمس - أو بين ظلمة النصف الغير المقابل ونور النصف المقابل لها.",
+      "english": "First of these, it combines its intrinsic darkness with an adventitious light, becoming luminous without light being mixed with its body as it is in the case of the Sun. Or it combines the darkness of the hemisphere not facing the Sun with the light of the hemisphere facing it.",
+      "notes": "Two ways to formulate darkness/illumination are given; retain «أو».",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.834",
+      "number": 834,
+      "pageStart": 513,
+      "pageEnd": 513,
+      "arabic": "واما ثانيا: فبين اللطف الحاصل بالاستنارة العارضة والكثافة الحاصلة بالظلمة الذاتية.",
+      "english": "Second, it combines subtlety acquired through borrowed illumination with density resulting from intrinsic darkness.",
+      "notes": "Elemental/hierarchical terms rather than modern optical density.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.835",
+      "number": 835,
+      "pageStart": 513,
+      "pageEnd": 513,
+      "arabic": "واما ثالثا: فبقبول النقص في الاستنارة والزيادة فيها في المرآتين المثبتتين على البعد والقرب من الشمس كما علم، فذلك نظير ما للكامل من قوله تارة: انا بشر مثلكم وأنتم اعلم بأمور دنياكم، وقوله: ما أدرى ما يفعل بي ولا بكم (9 - الأحقاف) مع أنه كان على بصيرة من ربه وقال: أيكم مثلي؟ أبيت عند ربى يطعمني ويسقيني، ولا ينام قلبي، وأخبر عن طلائع المهدي عليه السلام وغير ذلك، وذلك لتردده بين ملاحظة رجوع التعددات إلى أحدية الذات وملاحظة ظهوره في تلك التعينات.",
+      "english": "Third, it admits both decrease and increase in illumination in the two mirrors established through distance from and proximity to the Sun, as explained. This resembles the Perfect One who at one time says, 'I am a human being like you,' and 'You know better the affairs of your worldly life,' and, 'I do not know what will be done with me or with you' [Qurʾān 46:9], yet who is upon clear insight from his Lord and says, 'Which of you is like me? I spend the night with my Lord, who feeds and gives me drink,' and, 'My heart does not sleep'; he also reported signs preceding the Mahdī and other matters. These varying expressions arise from a turning between witnessing the return of multiplicities to the Oneness of the Essence and witnessing its appearance in those determinations.",
+      "notes": "The hadith phrases, Qurʾān 46:9, and Mahdī signs require distinct source checks. Avoid reading alternation of standpoint as contradiction of prophetic veracity. «المرآتين» is unverified and may be a witness error.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.836",
+      "number": 836,
+      "pageStart": 513,
+      "pageEnd": 513,
+      "arabic": "وسيجئ من كلام النفحات: ان كل شئ لا يخلو جمعا وتفصيلا عن التلبس بهذين الحكمين، فلا ينحصر الامر في تعظيم ولا تحقير ولا ترك ولا تخيير ولا تعريف ولا تنكير، بل الكل ثمة وما ثمة كل. هذا كلامه.",
+      "english": "As will be cited from al-Nafaḥāt: Nothing, either comprehensively or in its details, is free of these two rulings. The matter cannot therefore be restricted to magnification or diminishment, abandoning or choosing, making definite or indefinite: all is there, yet not everything is there. Thus far his words.",
+      "notes": "Unusual paradox «بل الكل ثمة وما ثمة كل» must be preserved, not flattened. Attribution and the phrase «هذا كلامه» need source-boundary control.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.837",
+      "number": 837,
+      "pageStart": 513,
+      "pageEnd": 513,
+      "arabic": "وأيضا نظير ما للكامل المتروحن ان يظهر بصور مختلفة في آن واحد وآنات متعددة، كما يروى عن أبي الفتح الموصلي المشهور بقضيب البان من أنه يرى في وقت واحد في أطراف الميدان مشغولا في كل موضع بشغل آخر.",
+      "english": "Another analogy is the power attributed to a perfected person spiritualised in such a way as to appear in different forms at one instant or at different instants. Such a report is transmitted concerning Abū al-Fatḥ al-Mawṣilī, known as Qaḍīb al-Bān: he was said to be visible in several parts of the square at once, occupied in a different task in each.",
+      "notes": "The passage introduces a reported miracle/karāma, not evidence of verified physical bilocation. Verify name/spelling of Qaḍīb al-Bān.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.838",
+      "number": 838,
+      "pageStart": 513,
+      "pageEnd": 514,
+      "arabic": "الثاني: ما صح له ان ينصبغ بسرعة الحركة، لما مر ان تنوره وتنويره نظير قبول فيض الألوهية واظهار احكامها، وشأن ذلك ان يكون على أسرع ما يتصور من وجوه الوسع والامكان، فكان حركته أسرع الحركات، فذلك نظير ما للكامل المتروحن ان يقطع المسافة الطويلة في زمان قصير ظاهرا بخاصية الروح والسر واستتباعهما للجسد.",
+      "english": "Second [lunar analogy]: The Moon can be characterised by rapid motion, since, as explained, its receiving and imparting light resemble the reception of divine effusion and the manifestation of its rulings. Such activity should occur at the greatest speed conceivable within possibility and capacity; therefore its motion is the swiftest of motions. This resembles the perfected spiritualised person's traversing a long distance in a short apparent time through the properties of spirit and inward secret and their drawing the body along.",
+      "notes": "Historical geocentric account and hagiographic association, not modern orbital calculation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.839",
+      "number": 839,
+      "pageStart": 514,
+      "pageEnd": 514,
+      "arabic": "الثالث: إحاطته لذلك بقوى سائر الكواكب وحركاتها وخواصها وايصاله الجميع المجتمع في روحانيته المسمى عندنا بإسماعيل وعند الفلاسفة بالعقل الفعال إلى ما تحته بالصورة من عالم العناصر والمولدات.",
+      "english": "Third: For that reason it encompasses the powers, motions, and properties of the other planets and conveys them all, gathered in its spiritual principle—which we call Ismāʿīl and the philosophers call the Active Intellect [al-ʿaql al-faʿʿāl]—to what lies beneath it in the form of the elemental world and generated things.",
+      "notes": "Ismāʿīl here is an angelic/intellectual designation, not the prophet Ismāʿīl; philosophical identification requires cross-reference.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.840",
+      "number": 840,
+      "pageStart": 514,
+      "pageEnd": 514,
+      "arabic": "قال الشيخ قدس سره في الفلك المحمدي: واما سر انشقاق القمر وظهوره بصورة تصرفه عليه وآله السلام فيه فهو ان فلك القمر وإن كان أصغر الأفلاك من حيث الجرم فإنه أجمعها من حيث الحكم، لان فيه يجتمع قوى سائر السماوات وتوجهات الملائكة، ثم يتوزع منه على هذا العالم وأهله، لذا كانت سماء الخلافة، فظهر منه سر جمعية نبينا محمد صلى الله عليه وآله وختميته، لأنه لما كان اخر الرسل وأجمعهم تصرف في آخر الأفلاك وأجمعها للقوى. تم كلامه. وهذا نظير ما للكامل ان يتحقق بالأسماء الإلهية ويظهر منه آثار الجميع سوى ما هو من خصائص الحق جل جلاله.",
+      "english": "The Shaykh—may his secret be sanctified—said in the Muḥammadan Sphere: 'The mystery of the Moon's splitting and its appearing as a manifestation of the Prophet's power of disposal, may God bless him and his family, is this: although the sphere of the Moon is the smallest of the celestial spheres in bodily extent, it is the most comprehensive in its ruling. The powers of the remaining heavens and the orientations of the angels gather within it and are then distributed from it to this world and its inhabitants. Hence it was the heaven of vicegerency, and through it appeared the mystery of our Prophet Muḥammad's comprehensiveness and finality: being the last of the messengers and the most comprehensive, he exercised disposal in the last of the spheres and the one gathering their powers most fully.' Thus far his words. This resembles the Perfect One who realises the divine Names and manifests their combined effects, apart from what belongs exclusively to the Real, majestic is His glory.",
+      "notes": "Identify `al-Falak al-Muḥammadī` and quotation source; the moon-splitting reference alludes Qurʾān 54:1, but the physical mechanism is mystical cosmology.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.841",
+      "number": 841,
+      "pageStart": 514,
+      "pageEnd": 514,
+      "arabic": "الرابع: انه لما علم أن نوره مستفاد من الشمس بالوجه المذكور، تحقق ان نوره من حيث إنه نور عين الشمس لا يتغير ولا يغايرها - بمعنى صدقها عليه - لصدق الحقيقة الجامعة على افرادها من كل وجه، وان لم يصدق الفرد عليها الا من بعض الوجوه، فالقمر خليفة الشمس في ظلمة الليل، كما أن الشمس ونوره خليفة الحق في الليل الكوني والظلمة الامكانية من جهة ما مر ان الشمس مظهر الألوهية من حيث امدادها بالاسم المحيى لمظاهر الأسماء التي هي الكواكب أو جميع الموجودات المحسوسة، وهذا نظير ان الكامل خليفة الحق في تنوير العالمين بنور الهداية إلى مصالح الدارين في ليل الجهل وظلمة الغواية.",
+      "english": "Fourth: Since we know that the Moon's light is received from the Sun in the way described, we realise that its light, considered simply as light, is identical in nature with sunlight and does not change or differ from it—meaning that the universal reality is truly predicated of its individuals in every respect, whereas the individual is predicated of that universal only in some respects. The Moon is the Sun's vicegerent amid the darkness of night; similarly the Sun and its light are vicegerents of the Real amid cosmic night and the darkness of possibility, insofar as the Sun manifests Divinity by supporting the planetary loci of the Names, and indeed all sensory things, through the Name al-Muḥyī. Likewise the Perfect One is the Real's vicegerent in illuminating both worlds with the light of guidance toward what benefits this life and the Hereafter, amid the night of ignorance and the darkness of error.",
+      "notes": "Formal distinction between common luminous nature and individual recipients; vicegerency is analogical, not identity of divine Essence with created Sun.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.842",
+      "number": 842,
+      "pageStart": 514,
+      "pageEnd": 515,
+      "arabic": "الخامس: ان كلا من الشمس والقمر خليفة الاخر في وقت ما من جهته الخاصة كما قال تعالى: وهو الذي جعل الليل والنهار خلفة (62 - الفرقان) فهو نظير ما ورد في الشرع من استخلاف الخليفة الكامل مستخلفه - أي الحق سبحانه - اما كناية عنه بعبارة الوكالة كما قال تعالى: وكفى بالله وكيلا (81 - النساء) وقوله: وأصلح لي شأني كله، واما تصريحا بعبارة الاستخلاف كما قال عليه وآله السلام: اللهم أنت الصاحب في السفر والخليفة في الأهل والمال والولد، ثم لليوم الجمع بين حكمي الليل والنهار من الخلافة والاستخلاف من الطرفين، فكذا للكامل الجامع بين مرتبة الخلافة بكماله ومرتبة الاستخلاف لغيبته في ذات ربه من غير انحصار فيهما.",
+      "english": "Fifth: Each of the Sun and Moon succeeds the other at its appointed time and from its particular respect, as God said: 'He made night and day successors to one another' [Qurʾān 25:62]. This resembles what the Revealed Law relates of the perfected vicegerent appointing as his own successor the One who appointed him—namely the Exalted Real—sometimes by the expression of entrusting affairs, as in 'God suffices as Trustee' [Qurʾān 4:81] and 'Set all my affairs right'; at other times explicitly through language of succession, as in the Prophet's supplication: 'O God, You are the Companion in travel and the Successor concerning family, property, and children.' The day gathers the two rulings of succeeding and being succeeded from either side. Likewise the Perfect One gathers the rank of vicegerency through his perfection with that of appointing a successor through his disappearance in his Lord's Essence, without being confined to either.",
+      "notes": "The reciprocity of khalīfa and mustakhlaf is intensely perspective-sensitive; do not construe it as the created person controlling God's existence. Verify supplied supplication's exact transmitted wording.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.843",
+      "number": 843,
+      "pageStart": 515,
+      "pageEnd": 515,
+      "arabic": "السادس: ان بالنور الشمسي ظهرت الكيفيات الخفية في الجرم المظلم القمري، فكانت الشمس مظهرة للقمر من هذه الحيثية، اما من حيث إنه لولا الاقتران بين نورها وجرمه ما وصف النور الشمسي بالاختلاف والتغير، ولا اثر المد والجزر من الزيادة والنقصان ولا بالنماء والذبول وغير ذلك من آثار القمر، أي الظاهرة من الحق بسببية عادة الهية، فهذا نظير ما للكامل وغيره من الوجود وتوابعه المظهر لهم والمنور لاوصافهم، وما للحق بسببهم من الاحكام المظهرية في قوله: حتى نعلم (31 - محمد) وان الله لا يمل حتى تملوا، وقوله: مرضت فلم تعدني، وقوله: ان الله قال على لسان عبده: سمع الله لمن حمده، ومن الجمع بين الاعتبارين في قوله: وما رميت إذ رميت ولكن الله رمى (17 - الأنفال).",
+      "english": "Sixth: Sunlight makes manifest the hidden qualities of the Moon's dark body; in that respect the Sun manifests the Moon. But without the meeting of sunlight and the Moon's body, sunlight could not be described by variation and change, nor would the phenomena of increase and decrease associated with tides, growth, withering and other lunar effects appear—that is, effects made manifest by the Real through customary divine causation. This resembles Being and its concomitants making the perfected and others manifest and illuminating their qualities, and resembles the rulings of manifestation attributed to the Real on their account in the sayings, 'Until We know' [Qurʾān 47:31], 'God does not weary until you weary,' 'I was ill and you did not visit Me,' and 'God has said through the tongue of His servant, \"God hears the one who praises Him.\"' The two considerations are gathered in 'You did not throw when you threw, but God threw' [Qurʾān 8:17].",
+      "notes": "Time-conditioned effects and divine transcendence are differentiated by iʿtibār. Scriptural verses and hadith qudsī excerpts require independent source control; the optical/tidal explanation is premodern.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.844",
+      "number": 844,
+      "pageStart": 515,
+      "pageEnd": 516,
+      "arabic": "السابع: ان نور الشمس جامع بين أمرين مختلفين، كتبريد شئ بواسطة مظهرية القمر الليلي البارد وتسخين شئ آخر بذاته أو بواسطة ما يزيد تسخينه، كإضائة موضع بمقابلة صورتها وانعكاس نورها إليه وظلمة موضع آخر بواسطة انطباعه في القمر مع غيبة صورتها عنه، فهذا كهداية محمد صلى الله عليه وآله بلطف الحق تعالى وضلالة أبى جهل بخذلانه، كل منهما بواسطة الاستعداد الخاص المظهري، من كمال استعداد ذاك وقصور هذا، كما قال تعالى: لها ما كسبت وعليها ما اكتسبت (286 - البقرة) فان الكسب للقابل كما أن الخلق للفاعل، وقال عليه وآله السلام: الناس مجزيون بأعمالهم... الحديث، وقال: الخير كله بيديك والشر ليس إليك، وقولهم: كل نعمة منه فضل وكل نقمة منه عدل. اما قوله تعالى: قل كل من عند الله (78 - النساء) أي خلقا لا كسبا أو من حديث الفيض الأقدس النزيه القائل بلسان حاله: قبل من قبل لا لعلة ورد من رد لا لعلة.",
+      "english": "Seventh: Sunlight gathers two differing effects: it cools one thing through manifestation in the cold nocturnal Moon, while warming another directly or through an intermediary that intensifies its heat; it illuminates one place by the reception and reflection of its image, while another place becomes dark through the Moon's impress when the Sun's image is absent from it. This resembles Muḥammad's guidance, may God bless him and his family, through the Real's subtle grace, and Abū Jahl's misguidance through being abandoned to himself. Each occurs through a specific receptive preparedness: the perfection of the former's readiness and the deficiency of the latter's, as God says, 'To its benefit is what it earns and against it what it acquires' [Qurʾān 2:286]. Acquisition belongs to the recipient as creation belongs to the Agent. The Prophet is reported to have said that people are recompensed for their deeds; and to have prayed, 'All good is in Your hands and evil is not attributed to You.' They say, 'Every blessing from Him is favour, every punishment from Him is justice.' As for 'Say: All is from God' [Qurʾān 4:78], this is true in respect of creation, not acquisition—or from the standpoint of the Most Holy Effusion, whose purity speaks as though saying, 'He accepted whom He accepted without a cause, and rejected whom He rejected without a cause.'",
+      "notes": "Distinguish kasb of the recipient from khalq of the Agent, and the viewpoint of al-fayḍ al-aqdas. This is an exegetical theodicy, not a blanket endorsement of fatalism. All reports should be verified.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.845",
+      "number": 845,
+      "pageStart": 516,
+      "pageEnd": 516,
+      "arabic": "فعلم من هذه الاسرار ان القمر مظهر الشمس ومفصل جمل لاحكامه وخواصه المنطوية المندرجة في ذات الشمس، المتوقف ظهورها وتعددها على القوابل المختلف الاستعداد، كالوجود الإلهي الممثل به بعينه، فإنه من حيث إنه وجود محض لا يحاط به رؤية وعلما - كذات القمر - ومن حيث إنه وجود ظاهر في الممكنات بحسبها يعرف الحق بما يعرف من الوجوه المذكورة ويعرف أيضا صورة تعلق علمه بكل شئ على النحو الذي هو عليه لا يتغير أصلا بتغير الزمان وغيره، أي من حيث هو علمه، وسر تعلق علمه بكل جزء وجزئي من الوجه التفصيلي وسر قوله: حتى نعلم (31 - محمد) أي من حيث المظاهر وغير ذلك من احكام مرتبة المظهرية.",
+      "english": "These mysteries show that the Moon is a locus of manifestation for the Sun and differentiates the comprehensive rulings and properties enfolded in the Sun itself, whose manifestation and multiplicity depend upon recipients of differing preparedness. The divine Being of which sunlight is an analogy is likewise beyond the grasp of sight and knowledge insofar as it is pure Being—like the Moon's intrinsic bodily nature [under the analogy]. Yet as Being manifested in possible beings in accordance with their states, the Real is known through the various respects already described. One thereby understands, too, the form of the relation of His Knowledge to each thing exactly as it is: considered as His Knowledge, this never changes through time or anything else. One also recognises the mystery of its relation to each universal and particular in detailed manifestation, and the mystery of the words 'Until We know' [Qurʾān 47:31], referring to the loci of manifestation and the other rulings of their degree.",
+      "notes": "Avoid attributing actual acquisition of knowledge or change to God: the explicit unchanged Knowledge vs changing loci distinction is central. The moon analogy is interpretive and historically cosmological.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    }
+  ]
+}
