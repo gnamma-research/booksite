@@ -35,6 +35,8 @@
 | Historical exceptional fourth-figure modal combinations source-classified | **46/46** | Historical taxonomy, NOT full independently derived modal proofs |
 | Classical modal consequence types independently proved in full source semantics | **0/46** | Stage101 establishes weaker conditional temporal-shadows only |
 
+**Stable unresolved note IDs:** `HWN-001` (modern insertion boundary), `HWN-025` (doubtful source reading), `HWN-082` (uncertain word), `HWN-090` (cross-page source attribution). None is to be marked complete without a documented resolution.
+
 **These are incomparable denominators and may never be added or conflated.** Zero of 274 later pages is fully certified even though 106 notes carry first-pass English. The original main Y may be 100% working-translated but remains 0% multi-witness certified. On H, Stage107 adds **55 new consecutive numbered notes, 53 marked complete first-pass, two partial**, not 55 complete Arabic facing pages or photographed pages.
 
 ## Translation/source data and exact aggregation
