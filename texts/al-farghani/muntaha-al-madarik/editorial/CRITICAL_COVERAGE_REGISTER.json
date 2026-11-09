@@ -12,8 +12,8 @@
   "authorial_introduction_english_draft_complete": true,
   "authorial_introduction_arabic_critical_edition_complete": false,
   "definitive_grade": false,
-  "source_witness_grade": "B2007 printed-digital source: 283 selected loci on pages18–60; derivative web-forum retranscription: 111 selected loci on page labels61–78, NOT independently checked B2007 printing. No completed full-page proof or manuscript readings.",
-  "next_critical_audit_page": 79,
+  "source_witness_grade": "283 B2007 edited modern digitized selected checks on pp18–60 (43 page labels); 185 DERIVATIVE modern-forum transcribed selected checks on pp61–101 (41 page labels). No full-page bilingual proof. Historical I1876 photographic comparisons remain only ten bounded loci. No manuscripts collated.",
+  "next_critical_audit_page": 102,
   "next_translation_outside_intro": "B2007 p146 poem commentary (must confirm division against scan)",
   "pages": [
     {
@@ -1211,8 +1211,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 80,
@@ -1226,8 +1232,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 4,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 81,
@@ -1241,8 +1253,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 82,
@@ -1256,8 +1274,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 5,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 83,
@@ -1271,8 +1295,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 84,
@@ -1286,8 +1316,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 4,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 85,
@@ -1301,8 +1337,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-third-foundation"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 86,
@@ -1316,8 +1358,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-third-foundation"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 87,
@@ -1331,8 +1379,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-third-foundation"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 88,
@@ -1346,8 +1400,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-third-foundation"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 89,
@@ -1361,8 +1421,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-third-foundation"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 90,
@@ -1376,8 +1442,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-third-foundation"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 4,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 91,
@@ -1391,8 +1463,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-third-foundation"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 92,
@@ -1406,8 +1484,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-third-foundation"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 93,
@@ -1421,8 +1505,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-third-foundation"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 94,
@@ -1436,8 +1526,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-third-foundation"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 95,
@@ -1451,8 +1547,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-third-foundation"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 96,
@@ -1466,8 +1568,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-third-foundation"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 97,
@@ -1481,8 +1589,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-third-foundation"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 98,
@@ -1496,8 +1610,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-third-foundation"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 99,
@@ -1511,8 +1631,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-third-foundation"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 100,
@@ -1526,8 +1652,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-third-foundation"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 101,
@@ -1541,8 +1673,14 @@
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
-      "source_fidelity_status": "working-English-only-unchecked",
-      "source_kind": "B2007-derived-forum-third-foundation"
+      "source_fidelity_status": "Selected derivative online retranscription authorial passages checked against working English; NOT original B2007 or I1876 photographic or manuscript proof",
+      "source_kind": "D-Forum-B2007-derivative",
+      "secondary_transcription_clause_count": 3,
+      "secondary_transcription_checked": true,
+      "secondary_transcription_source_url": "https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": false,
+      "editorial_note": "Stage XIII, Foundation III: source only derivative retyped modern edition; correct five reconstructed clauses in CR009; not full-page proof."
     },
     {
       "b2007_page": 102,
@@ -2209,7 +2347,7 @@
     }
   ],
   "source_pages_with_selected_arabic_english_checks": 43,
-  "check_methodology": "283 earlier modern edited-digitized B2007 selected spans across 43 page labels pp18–60; 57 derivative forum spans across 9 page labels 61–69; 54 derivative forum spans across 9 page labels 70–78. Total 394 selected bilingual excerpts over 61 page labels, but ONLY 283 direct modern edited-digitized checks; remaining 111 are derivative transcription. No complete printed page line-proofed. 10 earlier I1876 photographed print-to-print loci, 5 differences/5 agreements; 0 manuscript folios or variants. Next derivative audit p79; next direct B2007 page requiring verification p61.",
+  "check_methodology": "Original B2007 direct digitized selected authorial checks: 283 on page labels pp18–60. Derivative retyped Arabic checked against older working English: 57 on pp61–69; 54 on pp70–78; 74 on pp79–101. Totals: 468 selected review loci across 84 page labels, 283 direct modern-digitized + 185 derivative. NOTHING here verifies every word of a printed page or any medieval MS. Historical I1876 print comparisons unchanged ten loci/five differences/five agreements. Next new source p102; next direct modern printed page needing upgrade p61.",
   "issues_flagged_including_resolved_typographic": 17,
   "historical_print_pages_with_selected_loci_checked": 9,
   "historical_print_variants_verified": 5,
@@ -2222,8 +2360,8 @@
   "independent_manuscript_variants": 0,
   "historical_print_fully_collated_pages": 0,
   "next_direct_modern_print_audit_page": 61,
-  "secondary_transcription_checked_clause_count": 111,
-  "secondary_transcription_reviewed_page_count": 18,
+  "secondary_transcription_checked_clause_count": 185,
+  "secondary_transcription_reviewed_page_count": 41,
   "secondary_transcription_pages": [
     61,
     62,
@@ -2242,10 +2380,33 @@
     75,
     76,
     77,
-    78
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101
   ],
-  "secondary_transcription_unresolved_crux_records": 2,
-  "total_reader_clause_records": 394,
-  "total_distinct_page_labels_with_any_bilingual_check": 61,
-  "total_source_pages_with_mixed_provenance": 61
+  "secondary_transcription_unresolved_crux_records": 4,
+  "total_reader_clause_records": 468,
+  "total_distinct_page_labels_with_any_bilingual_check": 84,
+  "total_source_pages_with_mixed_provenance": 84
 }
