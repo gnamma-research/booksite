@@ -153,8 +153,9 @@ function prepare(){
  data.loadReady=true;
 }
 async function load(){
- const tasks=["corpora/canonical-atlas.json","corpora/expanded-bibliography.json","corpora/manuscript-full.json","corpora/registry.json","corpora/early-jurists.json"];
- const r=await Promise.allSettled(tasks.map(p=>fetch(p).then(resp=>{if(!resp.ok)throw Error(p+" "+resp.status);return resp.json()})));
+ const tasks=["embedded canonical atlas","corpora/expanded-bibliography.json","corpora/manuscript-full.json","corpora/registry.json","corpora/early-jurists.json"];
+ const r=await Promise.allSettled(tasks.map((p,i)=>i===0?Promise.resolve().then(()=>JSON.parse(document.querySelector("script[data-atlas]").textContent)):
+ fetch(p).then(resp=>{if(!resp.ok)throw Error(p+" "+resp.status);return resp.json()})));
  if(r[0].status!=="fulfilled"){ROOT.innerHTML='<section class="loading"><h1>Atlas sources unavailable</h1><p>The audited historical dataset could not be loaded. <a href="corpora/">Open the bibliography</a> or reload the atlas.</p></section>';return;}
  const o=r.map((x,i)=>{if(x.status==="fulfilled")return x.value;data.errors.push(tasks[i]+": "+String(x.reason?.message||x.reason));return null;});
  loadCanonical(o[0]);loadMetadata(o[1],o[2],o[3],o[4]);prepare();
