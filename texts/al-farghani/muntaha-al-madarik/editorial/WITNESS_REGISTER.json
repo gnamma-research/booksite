@@ -5,7 +5,7 @@
   "scope": {
     "historical_print": "1876 Istanbul volume I, printed pages 1–107 per Scattolin",
     "notes": "The printed and digital Beirut paginations do not correspond; never copy a number without labelling its witness.",
-    "critical_edition_status": "source-checked working English; Arabic manuscript critical edition NOT constituted",
+    "critical_edition_status": "working text with first I1876-to-B2007 printed reading established; manuscript witnesses still not examined",
     "continuous_full_arabic_transcription": false,
     "continuous_full_english_translation": true,
     "consecutive_english_draft": "Beirut B2007 pp.18–34, 17 pages in working translation; not line-by-line proofed or independently collated",
@@ -47,7 +47,9 @@
     "definitive_status": "not-achieved",
     "critical_review_new_stage": "Critical IV: 56 new selective loci p30–36, 198 total on 19 Beirut pages",
     "historical_print_imprint_question": "NYU catalogue identifies Istanbul 1293/1876; Chittick 2025 describes Bulaq/Cairo 1876. Establish by reading scanned title page.",
-    "additional_new_candidates_004": "Heidelberg H154 (undated, textual 1v–322r, viewer gated); Gotha G2267 (87ff incomplete via Scattolin 2001); neither read"
+    "additional_new_candidates_004": "Heidelberg H154 (undated, textual 1v–322r, viewer gated); Gotha G2267 (87ff incomplete via Scattolin 2001); neither read",
+    "historical_print_collated_loci": 1,
+    "independent_print_variant_count": 1
   },
   "witnesses": [
     {
@@ -57,10 +59,28 @@
       "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en",
       "pageRange": "1–107: introductory division (Scattolin)",
       "editor": "Muḥammad Shukrī al-ʿŪfī, reported by Scattolin",
-      "access": "catalogue and public-domain digital facsimile locator verified; individual page images NOT collated",
-      "accessGrade": "catalogued-scan-not-inspected",
+      "access": "1876 vol I official facsimile acquired; scan22 corresponding to printed p18 directly visually examined and collated for one lexeme at Beirut B2007 p34. Other scan pages retrieved but not text-proofed.",
+      "accessGrade": "historical-print-one-locus-visual-collation",
       "role": "intended historical print control; not yet a copy-text",
-      "variantsExamined": 0
+      "variantsExamined": 1,
+      "photoEvidence": [
+        {
+          "siglum": "I1876",
+          "work": "Muntaha al-madarik vol 1",
+          "printed_page": 18,
+          "scan_index": 22,
+          "reading": "الحضرة العمائية",
+          "corresponding_B2007_printed_page": 34,
+          "modern_print_reading": "الحضرة العملية",
+          "source_pdf_sha256": "d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87",
+          "derived_jpeg_sha256": "5dafe2aaa9561e85c128f22b07c5642a64cbac96fbf79b3aad8ef1941d1d10bf",
+          "evidence_url": "https://github.com/gnamma-research/booksite/actions/runs/42536981050/artifacts/13639926426",
+          "source_url": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
+          "inspection": "direct_visual_print_photo_2026-11-09",
+          "manuscript": false,
+          "full_page_proof": false
+        }
+      ]
     },
     {
       "siglum": "B2007",
@@ -317,10 +337,10 @@
       "id": "ED-0003",
       "location": "B2007 p.34, الحضرة العملية",
       "type": "unresolved-digital-reading",
-      "evidence": "the digital print reads al-ḥaḍra al-ʿamaliyya in the second-determination name register; context may suggest a different abstract qualifier, but no second witness has been read",
+      "evidence": "the digital print reads al-ḥaḍra al-ʿamaliyya in the second-determination name register; context may suggest a different abstract qualifier, but no second witness has been read — I1876 photographed p18 scan22 supports العمائية against B2007 p34 العملية; original status superseded.",
       "criticalVariant": false,
       "manuscriptSupport": null,
-      "status": "no-emendation; literal translation retained with warning"
+      "status": "historical-print-difference-now-resolved-refer-to-ED-0009"
     },
     {
       "id": "ED-0004",
@@ -370,6 +390,18 @@
       "criticalVariant": false,
       "manuscriptSupport": null,
       "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    },
+    {
+      "id": "ED-0009",
+      "location": "B2007 printed p34 ↔ I1876 printed p18 (PDF scan22)",
+      "type": "independently-verified-historical-print-variant",
+      "B2007": "الحضرة العملية",
+      "I1876": "الحضرة العمائية",
+      "adopted": "الحضرة العمائية",
+      "proof_source": "editorial/CRITICAL_PRINT_I1876_COLLATION_005.md",
+      "criticalVariant": true,
+      "manuscriptSupport": null,
+      "status": "historic_print_verified_2026-11-09"
     }
   ],
   "selectionRule": "Do not create a variant reading or siglum support unless two independent witnesses have actually been inspected in the relevant locus. Orthographic normalization is not a textual variant.",
