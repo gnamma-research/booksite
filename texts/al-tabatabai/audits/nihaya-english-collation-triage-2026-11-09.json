@@ -1,0 +1,3114 @@
+{
+  "schema": 1,
+  "title": "Nihāyat al-Ḥikma — cumulative English text collation triage",
+  "updated": "2026-11-09",
+  "source": "nihayat-al-hikma/data/book.json",
+  "scope": "All 136 reading units mechanically screened; 16 complete passages directly compared against the local Arabic; all 136 still await full independent printed-witness and specialist collation.",
+  "standard": "No AI-only structural scan is a full semantic English collation or professional critical edition. Local bilingual reading is not an independent Arabic witness. Neither a flagged nor an unflagged row establishes textual accuracy.",
+  "summary": {
+    "units": 136,
+    "arabicCharacters": 422651,
+    "englishCharacters": 671622,
+    "unitsWithParagraphReflow": 111,
+    "unitsWithThreeOrMoreParagraphDifference": 63,
+    "unitsWithAnyHint": 70,
+    "automaticallyScreened": 136,
+    "locallyReadAgainstStoredArabic": 16,
+    "independentlyReconciledAgainstCompleteSecondWitness": 0,
+    "expertVerified": 0,
+    "hintCounts": {
+      "paragraph-reflow": 63,
+      "lexical-spot-check": 8
+    }
+  },
+  "rows": [
+    {
+      "id": "N-INTRO",
+      "stage": "0",
+      "chapter": 0,
+      "title": "Remarks Serving as an Introduction to This Discipline",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=7&type=c_fbook",
+      "sourcePages": "7–10",
+      "arabicChars": 5049,
+      "englishChars": 7442,
+      "arabicParagraphs": 32,
+      "englishParagraphs": 29,
+      "englishToArabicCharRatio": 1.474,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 32,
+          "english": 29,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-I-01",
+      "stage": "I",
+      "chapter": 1,
+      "title": "Chapter One: Existence Is Shared in Meaning",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=12&type=c_fbook",
+      "sourcePages": "12–14",
+      "arabicChars": 1458,
+      "englishChars": 2349,
+      "arabicParagraphs": 10,
+      "englishParagraphs": 10,
+      "englishToArabicCharRatio": 1.611,
+      "hints": [],
+      "englishReview": {
+        "status": "local-bilingual-reading-checked",
+        "finding": "Checked locally against Arabic: semantic commonality of existence, simple existential propositions, conceptual versus referential difference, two arguments against pure equivocity. No alteration proposed; quotation remains to be separately checked in Ṣadrā.",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-I-02",
+      "stage": "I",
+      "chapter": 2,
+      "title": "Chapter Two: The Primacy of Existence and the Derivative Character of Quiddity",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=14&type=c_fbook",
+      "sourcePages": "14–23",
+      "arabicChars": 11837,
+      "englishChars": 18554,
+      "arabicParagraphs": 67,
+      "englishParagraphs": 59,
+      "englishToArabicCharRatio": 1.567,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 67,
+          "english": 59,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-I-03",
+      "stage": "I",
+      "chapter": 3,
+      "title": "Chapter Three: Existence Is a Graded Reality",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=23&type=c_fbook",
+      "sourcePages": "23–27",
+      "arabicChars": 4922,
+      "englishChars": 7282,
+      "arabicParagraphs": 22,
+      "englishParagraphs": 19,
+      "englishToArabicCharRatio": 1.479,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 22,
+          "english": 19,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-I-04",
+      "stage": "I",
+      "chapter": 4,
+      "title": "Chapter Four: Some Judgments Concerning Nonexistence",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=28&type=c_fbook",
+      "sourcePages": "28–30",
+      "arabicChars": 2545,
+      "englishChars": 4640,
+      "arabicParagraphs": 14,
+      "englishParagraphs": 12,
+      "englishToArabicCharRatio": 1.823,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-I-05",
+      "stage": "I",
+      "chapter": 5,
+      "title": "Chapter Five: There Is No Repetition in Existence",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=30&type=c_fbook",
+      "sourcePages": "30–33",
+      "arabicChars": 3692,
+      "englishChars": 6629,
+      "arabicParagraphs": 26,
+      "englishParagraphs": 22,
+      "englishToArabicCharRatio": 1.796,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 26,
+          "english": 22,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-II-01",
+      "stage": "II",
+      "chapter": 1,
+      "title": "Chapter One: The Division of Existence into Independent and Connective Existence",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=37&type=c_fbook",
+      "sourcePages": "37–39",
+      "arabicChars": 2820,
+      "englishChars": 4412,
+      "arabicParagraphs": 16,
+      "englishParagraphs": 16,
+      "englishToArabicCharRatio": 1.565,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-II-02",
+      "stage": "II",
+      "chapter": 2,
+      "title": "Chapter Two: How Connective and Independent Existence Differ",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=39&type=c_fbook",
+      "sourcePages": "39–40",
+      "arabicChars": 1372,
+      "englishChars": 2194,
+      "arabicParagraphs": 7,
+      "englishParagraphs": 6,
+      "englishToArabicCharRatio": 1.599,
+      "hints": [],
+      "englishReview": {
+        "status": "local-bilingual-reading-checked",
+        "finding": "Checked locally against Arabic and the documented 1428 printed-editor deletion: connective dependence in relation to cause, distinction between independent concept and relational mode, three consequences. English preserves the relative comparison and the apparatus notes the conjectural deletion.",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-II-03",
+      "stage": "II",
+      "chapter": 3,
+      "title": "Chapter Three: The Division of Existence in Itself into Existence for Itself and Existence for Another",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=40&type=c_fbook",
+      "sourcePages": "40–41",
+      "arabicChars": 1614,
+      "englishChars": 2847,
+      "arabicParagraphs": 9,
+      "englishParagraphs": 8,
+      "englishToArabicCharRatio": 1.764,
+      "hints": [],
+      "englishReview": {
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: fi nafsihi/li-nafsihi/li-ghayrihi distinctions, accident's actuality through the subject, substantial forms, final qualification of attributive existence. Translation tracks the argument; no substantive revision proposed.",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-III-01",
+      "stage": "III",
+      "chapter": 1,
+      "title": "Chapter: The Division of Existence into Mental and External Existence",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=45&type=c_fbook",
+      "sourcePages": "45–52",
+      "arabicChars": 9042,
+      "englishChars": 14747,
+      "arabicParagraphs": 47,
+      "englishParagraphs": 32,
+      "englishToArabicCharRatio": 1.631,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 47,
+          "english": 32,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IV-PRE",
+      "stage": "IV",
+      "chapter": 0,
+      "title": "Stage IV: Necessity, Impossibility, and Possibility, and Their Restriction to Three",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=53&type=c_fbook",
+      "sourcePages": "53–53",
+      "arabicChars": 194,
+      "englishChars": 237,
+      "arabicParagraphs": 5,
+      "englishParagraphs": 1,
+      "englishToArabicCharRatio": 1.222,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 5,
+          "english": 1,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IV-01",
+      "stage": "IV",
+      "chapter": 1,
+      "title": "Chapter One: Every Concept Is Either Necessary, Possible, or Impossible",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=55&type=c_fbook",
+      "sourcePages": "55–62",
+      "arabicChars": 9333,
+      "englishChars": 15502,
+      "arabicParagraphs": 62,
+      "englishParagraphs": 38,
+      "englishToArabicCharRatio": 1.661,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 62,
+          "english": 38,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IV-02",
+      "stage": "IV",
+      "chapter": 2,
+      "title": "Chapter Two: The Division of Each of the Three Modalities into What Is Intrinsic, What Is Through Another, and What Is Relative to Another, with an Exception for Possibility",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=63&type=c_fbook",
+      "sourcePages": "63–66",
+      "arabicChars": 3983,
+      "englishChars": 7612,
+      "arabicParagraphs": 22,
+      "englishParagraphs": 18,
+      "englishToArabicCharRatio": 1.911,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 22,
+          "english": 18,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IV-03",
+      "stage": "IV",
+      "chapter": 3,
+      "title": "Chapter Three: The Quiddity of the Intrinsically Necessary Existent Is Its Existence",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=66&type=c_fbook",
+      "sourcePages": "66–70",
+      "arabicChars": 5849,
+      "englishChars": 9609,
+      "arabicParagraphs": 28,
+      "englishParagraphs": 25,
+      "englishToArabicCharRatio": 1.643,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 28,
+          "english": 25,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IV-04",
+      "stage": "IV",
+      "chapter": 4,
+      "title": "Chapter Four: What Is Intrinsically Necessary in Existence Is Necessary in Existence in Every Respect",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=70&type=c_fbook",
+      "sourcePages": "70–74",
+      "arabicChars": 3938,
+      "englishChars": 6782,
+      "arabicParagraphs": 24,
+      "englishParagraphs": 21,
+      "englishToArabicCharRatio": 1.722,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 24,
+          "english": 21,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IV-05",
+      "stage": "IV",
+      "chapter": 5,
+      "title": "Chapter Five: A Thing Does Not Exist Unless It Becomes Necessary, and the Refutation of the Doctrine of Priority",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=74&type=c_fbook",
+      "sourcePages": "74–78",
+      "arabicChars": 4427,
+      "englishChars": 8052,
+      "arabicParagraphs": 28,
+      "englishParagraphs": 25,
+      "englishToArabicCharRatio": 1.819,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 28,
+          "english": 25,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IV-06",
+      "stage": "IV",
+      "chapter": 6,
+      "title": "Chapter Six: The Possible Existent’s Need for a Cause, and Why Possibility, Rather Than Origination, Is the Ground of That Need",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=78&type=c_fbook",
+      "sourcePages": "78–83",
+      "arabicChars": 4872,
+      "englishChars": 8342,
+      "arabicParagraphs": 30,
+      "englishParagraphs": 22,
+      "englishToArabicCharRatio": 1.712,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 30,
+          "english": 22,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IV-07",
+      "stage": "IV",
+      "chapter": 7,
+      "title": "Chapter Seven: The Possible Existent Needs a Cause in Its Continuance Just as It Needs One in Its Origination",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=83&type=c_fbook",
+      "sourcePages": "83–83",
+      "arabicChars": 748,
+      "englishChars": 1233,
+      "arabicParagraphs": 3,
+      "englishParagraphs": 3,
+      "englishToArabicCharRatio": 1.648,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IV-08",
+      "stage": "IV",
+      "chapter": 8,
+      "title": "Chapter Eight: Some Judgments Concerning What Is Intrinsically Impossible",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=84&type=c_fbook",
+      "sourcePages": "84–88",
+      "arabicChars": 6578,
+      "englishChars": 11471,
+      "arabicParagraphs": 36,
+      "englishParagraphs": 34,
+      "englishToArabicCharRatio": 1.744,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-V-01",
+      "stage": "V",
+      "chapter": 1,
+      "title": "Chapter One: Quiddity in Its Own Essence Is Neither Existent Nor Nonexistent",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=91&type=c_fbook",
+      "sourcePages": "91–92",
+      "arabicChars": 1536,
+      "englishChars": 2415,
+      "arabicParagraphs": 5,
+      "englishParagraphs": 4,
+      "englishToArabicCharRatio": 1.572,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-V-02",
+      "stage": "V",
+      "chapter": 2,
+      "title": "Chapter Two: The Ways in Which Quiddity Is Considered",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=92&type=c_fbook",
+      "sourcePages": "92–94",
+      "arabicChars": 1359,
+      "englishChars": 2338,
+      "arabicParagraphs": 12,
+      "englishParagraphs": 10,
+      "englishToArabicCharRatio": 1.72,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-V-03",
+      "stage": "V",
+      "chapter": 3,
+      "title": "Chapter Three: The Universal and the Particular",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=94&type=c_fbook",
+      "sourcePages": "94–98",
+      "arabicChars": 4907,
+      "englishChars": 7745,
+      "arabicParagraphs": 21,
+      "englishParagraphs": 15,
+      "englishToArabicCharRatio": 1.578,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 21,
+          "english": 15,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-V-04",
+      "stage": "V",
+      "chapter": 4,
+      "title": "Chapter Four: Essential and Accidental Predicates",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=98&type=c_fbook",
+      "sourcePages": "98–99",
+      "arabicChars": 1316,
+      "englishChars": 2490,
+      "arabicParagraphs": 9,
+      "englishParagraphs": 9,
+      "englishToArabicCharRatio": 1.892,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-V-05",
+      "stage": "V",
+      "chapter": 5,
+      "title": "Chapter Five: Genus, Differentia, Species, and Some Related Matters",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=99&type=c_fbook",
+      "sourcePages": "99–103",
+      "arabicChars": 4935,
+      "englishChars": 7995,
+      "arabicParagraphs": 29,
+      "englishParagraphs": 26,
+      "englishToArabicCharRatio": 1.62,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 29,
+          "english": 26,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-V-06",
+      "stage": "V",
+      "chapter": 6,
+      "title": "Chapter Six: Some Matters Concerning the Differentia",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=103&type=c_fbook",
+      "sourcePages": "103–107",
+      "arabicChars": 4672,
+      "englishChars": 7815,
+      "arabicParagraphs": 27,
+      "englishParagraphs": 22,
+      "englishToArabicCharRatio": 1.673,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 27,
+          "english": 22,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-V-07",
+      "stage": "V",
+      "chapter": 7,
+      "title": "Chapter Seven: Some Properties of Species",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=107&type=c_fbook",
+      "sourcePages": "107–108",
+      "arabicChars": 2301,
+      "englishChars": 3651,
+      "arabicParagraphs": 10,
+      "englishParagraphs": 11,
+      "englishToArabicCharRatio": 1.587,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-PRE",
+      "stage": "VI",
+      "chapter": 0,
+      "title": "Stage VI: The Ten Categories — Introduction",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=109&type=c_fbook",
+      "sourcePages": "109–109",
+      "arabicChars": 55,
+      "englishChars": 85,
+      "arabicParagraphs": 1,
+      "englishParagraphs": 1,
+      "englishToArabicCharRatio": 1.545,
+      "hints": [
+        {
+          "type": "lexical-spot-check",
+          "category": "negative-qualification",
+          "note": "word-family screening can produce false positives"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-01",
+      "stage": "VI",
+      "chapter": 1,
+      "title": "The categories and their number",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=111&type=c_fbook",
+      "sourcePages": "111–114",
+      "arabicChars": 3030,
+      "englishChars": 4594,
+      "arabicParagraphs": 19,
+      "englishParagraphs": 13,
+      "englishToArabicCharRatio": 1.516,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 19,
+          "english": 13,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-02",
+      "stage": "VI",
+      "chapter": 2,
+      "title": "The definition of substance and its being a genus of the quiddities beneath it",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=114&type=c_fbook",
+      "sourcePages": "114–117",
+      "arabicChars": 3290,
+      "englishChars": 4783,
+      "arabicParagraphs": 15,
+      "englishParagraphs": 10,
+      "englishToArabicCharRatio": 1.454,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 15,
+          "english": 10,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-03",
+      "stage": "VI",
+      "chapter": 3,
+      "title": "The primary divisions of substance",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=117&type=c_fbook",
+      "sourcePages": "117–118",
+      "arabicChars": 2060,
+      "englishChars": 2746,
+      "arabicParagraphs": 8,
+      "englishParagraphs": 6,
+      "englishToArabicCharRatio": 1.333,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-04",
+      "stage": "VI",
+      "chapter": 4,
+      "title": "The quiddity of body",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=119&type=c_fbook",
+      "sourcePages": "119–126",
+      "arabicChars": 7088,
+      "englishChars": 10561,
+      "arabicParagraphs": 43,
+      "englishParagraphs": 27,
+      "englishToArabicCharRatio": 1.49,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 43,
+          "english": 27,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-05",
+      "stage": "VI",
+      "chapter": 5,
+      "title": "The quiddity of matter and the demonstration of its existence",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=126&type=c_fbook",
+      "sourcePages": "126–130",
+      "arabicChars": 5765,
+      "englishChars": 9044,
+      "arabicParagraphs": 27,
+      "englishParagraphs": 19,
+      "englishToArabicCharRatio": 1.569,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 27,
+          "english": 19,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-06",
+      "stage": "VI",
+      "chapter": 6,
+      "title": "Matter does not exist apart from corporeal form, nor corporeal form apart from matter",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=130&type=c_fbook",
+      "sourcePages": "130–134",
+      "arabicChars": 4123,
+      "englishChars": 6237,
+      "arabicParagraphs": 24,
+      "englishParagraphs": 20,
+      "englishToArabicCharRatio": 1.513,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 24,
+          "english": 20,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-07",
+      "stage": "VI",
+      "chapter": 7,
+      "title": "Establishing specific forms: the substantial forms that differentiate the substance of body in general into species",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=134&type=c_fbook",
+      "sourcePages": "134–137",
+      "arabicChars": 3879,
+      "englishChars": 6013,
+      "arabicParagraphs": 21,
+      "englishParagraphs": 17,
+      "englishToArabicCharRatio": 1.55,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 21,
+          "english": 17,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-08",
+      "stage": "VI",
+      "chapter": 8,
+      "title": "Quantity, one of the accidental categories",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=137&type=c_fbook",
+      "sourcePages": "137–139",
+      "arabicChars": 753,
+      "englishChars": 1158,
+      "arabicParagraphs": 8,
+      "englishParagraphs": 5,
+      "englishToArabicCharRatio": 1.538,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 8,
+          "english": 5,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-09",
+      "stage": "VI",
+      "chapter": 9,
+      "title": "The divisions of quantity",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=139&type=c_fbook",
+      "sourcePages": "139–141",
+      "arabicChars": 2181,
+      "englishChars": 3038,
+      "arabicParagraphs": 18,
+      "englishParagraphs": 8,
+      "englishToArabicCharRatio": 1.393,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 18,
+          "english": 8,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-10",
+      "stage": "VI",
+      "chapter": 10,
+      "title": "Various judgments concerning quantity",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=141&type=c_fbook",
+      "sourcePages": "141–144",
+      "arabicChars": 2878,
+      "englishChars": 4139,
+      "arabicParagraphs": 18,
+      "englishParagraphs": 10,
+      "englishToArabicCharRatio": 1.438,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 18,
+          "english": 10,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-11",
+      "stage": "VI",
+      "chapter": 11,
+      "title": "Quality and its primary division",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=144&type=c_fbook",
+      "sourcePages": "144–146",
+      "arabicChars": 1089,
+      "englishChars": 1714,
+      "arabicParagraphs": 7,
+      "englishParagraphs": 4,
+      "englishToArabicCharRatio": 1.574,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 7,
+          "english": 4,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-12",
+      "stage": "VI",
+      "chapter": 12,
+      "title": "Sensible qualities",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=146&type=c_fbook",
+      "sourcePages": "146–149",
+      "arabicChars": 2355,
+      "englishChars": 3209,
+      "arabicParagraphs": 18,
+      "englishParagraphs": 9,
+      "englishToArabicCharRatio": 1.363,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 18,
+          "english": 9,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-13",
+      "stage": "VI",
+      "chapter": 13,
+      "title": "Qualities peculiar to quantities",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=150&type=c_fbook",
+      "sourcePages": "150–153",
+      "arabicChars": 4614,
+      "englishChars": 7279,
+      "arabicParagraphs": 28,
+      "englishParagraphs": 20,
+      "englishToArabicCharRatio": 1.578,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 28,
+          "english": 20,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-14",
+      "stage": "VI",
+      "chapter": 14,
+      "title": "Dispositional qualities",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=153&type=c_fbook",
+      "sourcePages": "153–155",
+      "arabicChars": 1778,
+      "englishChars": 2813,
+      "arabicParagraphs": 12,
+      "englishParagraphs": 9,
+      "englishToArabicCharRatio": 1.582,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 12,
+          "english": 9,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-15",
+      "stage": "VI",
+      "chapter": 15,
+      "title": "Psychic qualities",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=155&type=c_fbook",
+      "sourcePages": "155–162",
+      "arabicChars": 7475,
+      "englishChars": 11669,
+      "arabicParagraphs": 48,
+      "englishParagraphs": 26,
+      "englishToArabicCharRatio": 1.561,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 48,
+          "english": 26,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-16",
+      "stage": "VI",
+      "chapter": 16,
+      "title": "Relation",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=162&type=c_fbook",
+      "sourcePages": "162–167",
+      "arabicChars": 4857,
+      "englishChars": 7795,
+      "arabicParagraphs": 32,
+      "englishParagraphs": 27,
+      "englishToArabicCharRatio": 1.605,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 32,
+          "english": 27,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-17",
+      "stage": "VI",
+      "chapter": 17,
+      "title": "Where",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=167&type=c_fbook",
+      "sourcePages": "167–170",
+      "arabicChars": 3067,
+      "englishChars": 4767,
+      "arabicParagraphs": 24,
+      "englishParagraphs": 18,
+      "englishToArabicCharRatio": 1.554,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 24,
+          "english": 18,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-18",
+      "stage": "VI",
+      "chapter": 18,
+      "title": "When",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=170&type=c_fbook",
+      "sourcePages": "170–172",
+      "arabicChars": 1489,
+      "englishChars": 2175,
+      "arabicParagraphs": 9,
+      "englishParagraphs": 7,
+      "englishToArabicCharRatio": 1.461,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-19",
+      "stage": "VI",
+      "chapter": 19,
+      "title": "Position",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=172&type=c_fbook",
+      "sourcePages": "172–173",
+      "arabicChars": 1342,
+      "englishChars": 2264,
+      "arabicParagraphs": 12,
+      "englishParagraphs": 11,
+      "englishToArabicCharRatio": 1.687,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-20",
+      "stage": "VI",
+      "chapter": 20,
+      "title": "Possession",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=173&type=c_fbook",
+      "sourcePages": "173–174",
+      "arabicChars": 805,
+      "englishChars": 1448,
+      "arabicParagraphs": 7,
+      "englishParagraphs": 5,
+      "englishToArabicCharRatio": 1.799,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VI-21",
+      "stage": "VI",
+      "chapter": 21,
+      "title": "The two categories of acting and being acted upon",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=174&type=c_fbook",
+      "sourcePages": "174–176",
+      "arabicChars": 2298,
+      "englishChars": 3874,
+      "arabicParagraphs": 14,
+      "englishParagraphs": 12,
+      "englishToArabicCharRatio": 1.686,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VII-01",
+      "stage": "VII",
+      "chapter": 1,
+      "title": "The concepts of unity and multiplicity are self-evident and need no definition",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=179&type=c_fbook",
+      "sourcePages": "179–181",
+      "arabicChars": 2624,
+      "englishChars": 4056,
+      "arabicParagraphs": 13,
+      "englishParagraphs": 13,
+      "englishToArabicCharRatio": 1.546,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VII-02",
+      "stage": "VII",
+      "chapter": 2,
+      "title": "The divisions of the one",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=182&type=c_fbook",
+      "sourcePages": "182–183",
+      "arabicChars": 1799,
+      "englishChars": 2813,
+      "arabicParagraphs": 13,
+      "englishParagraphs": 12,
+      "englishToArabicCharRatio": 1.564,
+      "hints": [],
+      "englishReview": {
+        "status": "local-bilingual-reading-checked",
+        "finding": "Checked locally against Arabic: genuine/derivative oneness, numerical/conceptual/existential generality, indivisibility, varieties of similarity and graded attribution. No substantive correction identified in this pass.",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VII-03",
+      "stage": "VII",
+      "chapter": 3,
+      "title": "Identity is a consequence of unity, and otherness a consequence of multiplicity",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=183&type=c_fbook",
+      "sourcePages": "183–185",
+      "arabicChars": 3116,
+      "englishChars": 5078,
+      "arabicParagraphs": 15,
+      "englishParagraphs": 14,
+      "englishToArabicCharRatio": 1.63,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VII-04",
+      "stage": "VII",
+      "chapter": 4,
+      "title": "Predication as “is it” and as “has it”",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=185&type=c_fbook",
+      "sourcePages": "185–187",
+      "arabicChars": 1686,
+      "englishChars": 3167,
+      "arabicParagraphs": 14,
+      "englishParagraphs": 13,
+      "englishToArabicCharRatio": 1.878,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VII-05",
+      "stage": "VII",
+      "chapter": 5,
+      "title": "Otherness and its divisions",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=187&type=c_fbook",
+      "sourcePages": "187–189",
+      "arabicChars": 1802,
+      "englishChars": 2996,
+      "arabicParagraphs": 11,
+      "englishParagraphs": 9,
+      "englishToArabicCharRatio": 1.663,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VII-06",
+      "stage": "VII",
+      "chapter": 6,
+      "title": "Contradictory opposition",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=189&type=c_fbook",
+      "sourcePages": "189–192",
+      "arabicChars": 3880,
+      "englishChars": 6110,
+      "arabicParagraphs": 25,
+      "englishParagraphs": 10,
+      "englishToArabicCharRatio": 1.575,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 25,
+          "english": 10,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VII-07",
+      "stage": "VII",
+      "chapter": 7,
+      "title": "The opposition of privation and possession",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=192&type=c_fbook",
+      "sourcePages": "192–193",
+      "arabicChars": 1132,
+      "englishChars": 1807,
+      "arabicParagraphs": 5,
+      "englishParagraphs": 4,
+      "englishToArabicCharRatio": 1.596,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VII-08",
+      "stage": "VII",
+      "chapter": 8,
+      "title": "Correlative opposition",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=193&type=c_fbook",
+      "sourcePages": "193–194",
+      "arabicChars": 1024,
+      "englishChars": 1755,
+      "arabicParagraphs": 6,
+      "englishParagraphs": 4,
+      "englishToArabicCharRatio": 1.714,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VII-09",
+      "stage": "VII",
+      "chapter": 9,
+      "title": "Contrary opposition",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=194&type=c_fbook",
+      "sourcePages": "194–198",
+      "arabicChars": 5883,
+      "englishChars": 8893,
+      "arabicParagraphs": 27,
+      "englishParagraphs": 23,
+      "englishToArabicCharRatio": 1.512,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 27,
+          "english": 23,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VIII-01",
+      "stage": "VIII",
+      "chapter": 1,
+      "title": "Establishing causality and being an effect, and that they concern existence",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=201&type=c_fbook",
+      "sourcePages": "201–203",
+      "arabicChars": 2103,
+      "englishChars": 3352,
+      "arabicParagraphs": 11,
+      "englishParagraphs": 7,
+      "englishToArabicCharRatio": 1.594,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 11,
+          "english": 7,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VIII-02",
+      "stage": "VIII",
+      "chapter": 2,
+      "title": "The divisions of cause",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=204&type=c_fbook",
+      "sourcePages": "204–205",
+      "arabicChars": 1581,
+      "englishChars": 2444,
+      "arabicParagraphs": 13,
+      "englishParagraphs": 7,
+      "englishToArabicCharRatio": 1.546,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 13,
+          "english": 7,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VIII-03",
+      "stage": "VIII",
+      "chapter": 3,
+      "title": "The necessity of the effect’s existence when its complete cause exists, and of the cause’s existence when its effect exists",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=205&type=c_fbook",
+      "sourcePages": "205–214",
+      "arabicChars": 10218,
+      "englishChars": 17025,
+      "arabicParagraphs": 62,
+      "englishParagraphs": 51,
+      "englishToArabicCharRatio": 1.666,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 62,
+          "english": 51,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VIII-04",
+      "stage": "VIII",
+      "chapter": 4,
+      "title": "From the one, only one proceeds",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=214&type=c_fbook",
+      "sourcePages": "214–216",
+      "arabicChars": 2244,
+      "englishChars": 3408,
+      "arabicParagraphs": 16,
+      "englishParagraphs": 14,
+      "englishToArabicCharRatio": 1.519,
+      "hints": [],
+      "englishReview": {
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: simplicity, intrinsic proportionality between effect and cause, many-effects objection to divine power, one-from-many subcases, three conclusions. The English represents the authorial position; independent witness/quoted source checking pending.",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VIII-05",
+      "stage": "VIII",
+      "chapter": 5,
+      "title": "The impossibility of circularity and infinite regress in causes",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=216&type=c_fbook",
+      "sourcePages": "216–221",
+      "arabicChars": 5612,
+      "englishChars": 8353,
+      "arabicParagraphs": 33,
+      "englishParagraphs": 32,
+      "englishToArabicCharRatio": 1.488,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VIII-06",
+      "stage": "VIII",
+      "chapter": 6,
+      "title": "The efficient cause",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=221&type=c_fbook",
+      "sourcePages": "221–222",
+      "arabicChars": 1342,
+      "englishChars": 2077,
+      "arabicParagraphs": 7,
+      "englishParagraphs": 7,
+      "englishToArabicCharRatio": 1.548,
+      "hints": [
+        {
+          "type": "lexical-spot-check",
+          "category": "opposition-qualification",
+          "note": "word-family screening can produce false positives"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VIII-07",
+      "stage": "VIII",
+      "chapter": 7,
+      "title": "The divisions of the efficient cause",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=222&type=c_fbook",
+      "sourcePages": "222–226",
+      "arabicChars": 5837,
+      "englishChars": 9219,
+      "arabicParagraphs": 21,
+      "englishParagraphs": 18,
+      "englishToArabicCharRatio": 1.579,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 21,
+          "english": 18,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VIII-08",
+      "stage": "VIII",
+      "chapter": 8,
+      "title": "None exercises efficacy in existence, in the true sense of the word, except God—glorified is He",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=226&type=c_fbook",
+      "sourcePages": "226–227",
+      "arabicChars": 1387,
+      "englishChars": 2347,
+      "arabicParagraphs": 4,
+      "englishParagraphs": 3,
+      "englishToArabicCharRatio": 1.692,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VIII-09",
+      "stage": "VIII",
+      "chapter": 9,
+      "title": "An agent complete in its agency is stronger than its act and prior to it",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=227&type=c_fbook",
+      "sourcePages": "227–228",
+      "arabicChars": 1091,
+      "englishChars": 1794,
+      "arabicParagraphs": 7,
+      "englishParagraphs": 6,
+      "englishToArabicCharRatio": 1.644,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VIII-10",
+      "stage": "VIII",
+      "chapter": 10,
+      "title": "A simple thing cannot be both agent and recipient",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=228&type=c_fbook",
+      "sourcePages": "228–230",
+      "arabicChars": 2597,
+      "englishChars": 4256,
+      "arabicParagraphs": 15,
+      "englishParagraphs": 13,
+      "englishToArabicCharRatio": 1.639,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VIII-11",
+      "stage": "VIII",
+      "chapter": 11,
+      "title": "The final cause and the proof of its existence",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=230&type=c_fbook",
+      "sourcePages": "230–237",
+      "arabicChars": 9305,
+      "englishChars": 14210,
+      "arabicParagraphs": 50,
+      "englishParagraphs": 36,
+      "englishToArabicCharRatio": 1.527,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 50,
+          "english": 36,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VIII-12",
+      "stage": "VIII",
+      "chapter": 12,
+      "title": "Unpremeditated action, necessary intention, habit, and similar acts are not without an end",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=237&type=c_fbook",
+      "sourcePages": "237–240",
+      "arabicChars": 4256,
+      "englishChars": 6505,
+      "arabicParagraphs": 25,
+      "englishParagraphs": 21,
+      "englishToArabicCharRatio": 1.528,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 25,
+          "english": 21,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VIII-13",
+      "stage": "VIII",
+      "chapter": 13,
+      "title": "The rejection of chance as the absence of a connection between agent and end",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=240&type=c_fbook",
+      "sourcePages": "240–243",
+      "arabicChars": 5264,
+      "englishChars": 7782,
+      "arabicParagraphs": 31,
+      "englishParagraphs": 22,
+      "englishToArabicCharRatio": 1.478,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 31,
+          "english": 22,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VIII-14",
+      "stage": "VIII",
+      "chapter": 14,
+      "title": "The material and formal causes",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=244&type=c_fbook",
+      "sourcePages": "244–246",
+      "arabicChars": 2916,
+      "englishChars": 4339,
+      "arabicParagraphs": 13,
+      "englishParagraphs": 11,
+      "englishToArabicCharRatio": 1.488,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-VIII-15",
+      "stage": "VIII",
+      "chapter": 15,
+      "title": "The corporeal cause",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=246&type=c_fbook",
+      "sourcePages": "246–246",
+      "arabicChars": 574,
+      "englishChars": 971,
+      "arabicParagraphs": 5,
+      "englishParagraphs": 4,
+      "englishToArabicCharRatio": 1.692,
+      "hints": [
+        {
+          "type": "lexical-spot-check",
+          "category": "negative-qualification",
+          "note": "word-family screening can produce false positives"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IX-PRE",
+      "stage": "IX",
+      "chapter": 0,
+      "title": "Introduction: Potentiality and Actuality",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=249&type=c_fbook",
+      "sourcePages": "249–250",
+      "arabicChars": 1377,
+      "englishChars": 2101,
+      "arabicParagraphs": 6,
+      "englishParagraphs": 5,
+      "englishToArabicCharRatio": 1.526,
+      "hints": [
+        {
+          "type": "lexical-spot-check",
+          "category": "opposition-qualification",
+          "note": "word-family screening can produce false positives"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IX-01",
+      "stage": "IX",
+      "chapter": 1,
+      "title": "Every Temporally Originated Thing Is Preceded by the Potentiality for Its Existence",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=250&type=c_fbook",
+      "sourcePages": "250–251",
+      "arabicChars": 2134,
+      "englishChars": 3399,
+      "arabicParagraphs": 12,
+      "englishParagraphs": 10,
+      "englishToArabicCharRatio": 1.593,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IX-02",
+      "stage": "IX",
+      "chapter": 2,
+      "title": "Further Discussion of Potential and Actual Existence, and the Division of Existence into Them",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=251&type=c_fbook",
+      "sourcePages": "251–253",
+      "arabicChars": 3245,
+      "englishChars": 4945,
+      "arabicParagraphs": 24,
+      "englishParagraphs": 16,
+      "englishToArabicCharRatio": 1.524,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 24,
+          "english": 16,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IX-03",
+      "stage": "IX",
+      "chapter": 3,
+      "title": "Further Clarification of the Definition of Motion and What It Depends Upon",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=254&type=c_fbook",
+      "sourcePages": "254–255",
+      "arabicChars": 1311,
+      "englishChars": 1862,
+      "arabicParagraphs": 5,
+      "englishParagraphs": 3,
+      "englishToArabicCharRatio": 1.42,
+      "hints": [],
+      "englishReview": {
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: gradually actualized being, Aristotle's first-perfection formula, first/second perfections, six requisites of motion. Translator's original caveat on masāfa preserved. No unrepresented conceptual step found.",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IX-04",
+      "stage": "IX",
+      "chapter": 4,
+      "title": "The Division of Change",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=255&type=c_fbook",
+      "sourcePages": "255–256",
+      "arabicChars": 1661,
+      "englishChars": 2492,
+      "arabicParagraphs": 9,
+      "englishParagraphs": 6,
+      "englishToArabicCharRatio": 1.5,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 9,
+          "english": 6,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IX-05",
+      "stage": "IX",
+      "chapter": 5,
+      "title": "The Starting Point and Endpoint of Motion",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=256&type=c_fbook",
+      "sourcePages": "256–257",
+      "arabicChars": 1223,
+      "englishChars": 1849,
+      "arabicParagraphs": 7,
+      "englishParagraphs": 6,
+      "englishToArabicCharRatio": 1.512,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IX-06",
+      "stage": "IX",
+      "chapter": 6,
+      "title": "The Course of Motion",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=257&type=c_fbook",
+      "sourcePages": "257–258",
+      "arabicChars": 1306,
+      "englishChars": 1953,
+      "arabicParagraphs": 7,
+      "englishParagraphs": 7,
+      "englishToArabicCharRatio": 1.495,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IX-07",
+      "stage": "IX",
+      "chapter": 7,
+      "title": "The Categories in Which Motion Occurs",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=258&type=c_fbook",
+      "sourcePages": "258–260",
+      "arabicChars": 2531,
+      "englishChars": 3570,
+      "arabicParagraphs": 20,
+      "englishParagraphs": 17,
+      "englishToArabicCharRatio": 1.411,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 20,
+          "english": 17,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IX-08",
+      "stage": "IX",
+      "chapter": 8,
+      "title": "Clarifying Motion in a Category and the Fundamental Questions That Follow from It",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=261&type=c_fbook",
+      "sourcePages": "261–264",
+      "arabicChars": 4914,
+      "englishChars": 7390,
+      "arabicParagraphs": 27,
+      "englishParagraphs": 20,
+      "englishToArabicCharRatio": 1.504,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 27,
+          "english": 20,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IX-09",
+      "stage": "IX",
+      "chapter": 9,
+      "title": "The Subject of Motion",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=265&type=c_fbook",
+      "sourcePages": "265–266",
+      "arabicChars": 2782,
+      "englishChars": 4184,
+      "arabicParagraphs": 15,
+      "englishParagraphs": 14,
+      "englishToArabicCharRatio": 1.504,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IX-10",
+      "stage": "IX",
+      "chapter": 10,
+      "title": "The Agent of Motion: The Mover",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=266&type=c_fbook",
+      "sourcePages": "266–268",
+      "arabicChars": 2096,
+      "englishChars": 3162,
+      "arabicParagraphs": 9,
+      "englishParagraphs": 9,
+      "englishToArabicCharRatio": 1.509,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IX-11",
+      "stage": "IX",
+      "chapter": 11,
+      "title": "Time",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=268&type=c_fbook",
+      "sourcePages": "268–271",
+      "arabicChars": 4307,
+      "englishChars": 6329,
+      "arabicParagraphs": 29,
+      "englishParagraphs": 19,
+      "englishToArabicCharRatio": 1.469,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 29,
+          "english": 19,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IX-12",
+      "stage": "IX",
+      "chapter": 12,
+      "title": "The Meaning of Speed and Slowness",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=271&type=c_fbook",
+      "sourcePages": "271–273",
+      "arabicChars": 1639,
+      "englishChars": 2323,
+      "arabicParagraphs": 10,
+      "englishParagraphs": 7,
+      "englishToArabicCharRatio": 1.417,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 10,
+          "english": 7,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "local-bilingual-reading-checked",
+        "finding": "Checked locally against Arabic: speed/slowness as relational comparisons, rebuttal of interrupted-rest account, Asfār citation, maximum opposition requirement, final distinction between rate and flowing. Quotation in Asfār not independently collated.",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IX-13",
+      "stage": "IX",
+      "chapter": 13,
+      "title": "Rest",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=273&type=c_fbook",
+      "sourcePages": "273–274",
+      "arabicChars": 879,
+      "englishChars": 1322,
+      "arabicParagraphs": 4,
+      "englishParagraphs": 4,
+      "englishToArabicCharRatio": 1.504,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-IX-14",
+      "stage": "IX",
+      "chapter": 14,
+      "title": "The Divisions of Motion",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=274&type=c_fbook",
+      "sourcePages": "274–276",
+      "arabicChars": 2778,
+      "englishChars": 4004,
+      "arabicParagraphs": 17,
+      "englishParagraphs": 14,
+      "englishToArabicCharRatio": 1.441,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 17,
+          "english": 14,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-X-01",
+      "stage": "X",
+      "chapter": 1,
+      "title": "Priority and Posteriority",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=279&type=c_fbook",
+      "sourcePages": "279–282",
+      "arabicChars": 4052,
+      "englishChars": 6109,
+      "arabicParagraphs": 18,
+      "englishParagraphs": 16,
+      "englishToArabicCharRatio": 1.508,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-X-02",
+      "stage": "X",
+      "chapter": 2,
+      "title": "The Criterion of Priority and Posteriority in Each Division",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=282&type=c_fbook",
+      "sourcePages": "282–285",
+      "arabicChars": 3586,
+      "englishChars": 5505,
+      "arabicParagraphs": 18,
+      "englishParagraphs": 15,
+      "englishToArabicCharRatio": 1.535,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 18,
+          "english": 15,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-X-03",
+      "stage": "X",
+      "chapter": 3,
+      "title": "Coexistence",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=285&type=c_fbook",
+      "sourcePages": "285–286",
+      "arabicChars": 1386,
+      "englishChars": 2050,
+      "arabicParagraphs": 8,
+      "englishParagraphs": 8,
+      "englishToArabicCharRatio": 1.479,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-X-04",
+      "stage": "X",
+      "chapter": 4,
+      "title": "The Meaning and Divisions of Beginninglessness and Origination",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=286&type=c_fbook",
+      "sourcePages": "286–287",
+      "arabicChars": 983,
+      "englishChars": 1594,
+      "arabicParagraphs": 6,
+      "englishParagraphs": 5,
+      "englishToArabicCharRatio": 1.622,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-X-05",
+      "stage": "X",
+      "chapter": 5,
+      "title": "Temporal Beginninglessness and Origination",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=287&type=c_fbook",
+      "sourcePages": "287–288",
+      "arabicChars": 1904,
+      "englishChars": 2768,
+      "arabicParagraphs": 10,
+      "englishParagraphs": 10,
+      "englishToArabicCharRatio": 1.454,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-X-06",
+      "stage": "X",
+      "chapter": 6,
+      "title": "Intrinsic Origination and Beginninglessness",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=288&type=c_fbook",
+      "sourcePages": "288–289",
+      "arabicChars": 1131,
+      "englishChars": 1870,
+      "arabicParagraphs": 8,
+      "englishParagraphs": 6,
+      "englishToArabicCharRatio": 1.653,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-X-07",
+      "stage": "X",
+      "chapter": 7,
+      "title": "Origination and Beginninglessness by Existential Reality",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=289&type=c_fbook",
+      "sourcePages": "289–290",
+      "arabicChars": 608,
+      "englishChars": 1048,
+      "arabicParagraphs": 3,
+      "englishParagraphs": 3,
+      "englishToArabicCharRatio": 1.724,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-X-08",
+      "stage": "X",
+      "chapter": 8,
+      "title": "Origination and Beginninglessness in Dahr",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=290&type=c_fbook",
+      "sourcePages": "290–290",
+      "arabicChars": 767,
+      "englishChars": 1288,
+      "arabicParagraphs": 4,
+      "englishParagraphs": 4,
+      "englishToArabicCharRatio": 1.679,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XI-PRE",
+      "stage": "XI",
+      "chapter": 0,
+      "title": "Introduction to Stage XI: Intellection, the Intellect, and the Intelligible",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=291&type=c_fbook",
+      "sourcePages": "291–291",
+      "arabicChars": 109,
+      "englishChars": 178,
+      "arabicParagraphs": 1,
+      "englishParagraphs": 1,
+      "englishToArabicCharRatio": 1.633,
+      "hints": [
+        {
+          "type": "lexical-spot-check",
+          "category": "negative-qualification",
+          "note": "word-family screening can produce false positives"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XI-01",
+      "stage": "XI",
+      "chapter": 1,
+      "title": "The definition of knowledge, its primary division, and some of its properties",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=293&type=c_fbook",
+      "sourcePages": "293–297",
+      "arabicChars": 6306,
+      "englishChars": 9793,
+      "arabicParagraphs": 28,
+      "englishParagraphs": 25,
+      "englishToArabicCharRatio": 1.553,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 28,
+          "english": 25,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XI-02",
+      "stage": "XI",
+      "chapter": 2,
+      "title": "The union of the knower with the known, termed the union of the intellect with the intelligible",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=298&type=c_fbook",
+      "sourcePages": "298–301",
+      "arabicChars": 4265,
+      "englishChars": 7097,
+      "arabicParagraphs": 17,
+      "englishParagraphs": 15,
+      "englishToArabicCharRatio": 1.664,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XI-03",
+      "stage": "XI",
+      "chapter": 3,
+      "title": "The division of acquired knowledge into universal and particular, and related matters",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=301&type=c_fbook",
+      "sourcePages": "301–304",
+      "arabicChars": 4421,
+      "englishChars": 6826,
+      "arabicParagraphs": 20,
+      "englishParagraphs": 18,
+      "englishToArabicCharRatio": 1.544,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XI-04",
+      "stage": "XI",
+      "chapter": 4,
+      "title": "Another sense in which acquired knowledge divides into universal and particular",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=304&type=c_fbook",
+      "sourcePages": "304–305",
+      "arabicChars": 1558,
+      "englishChars": 2617,
+      "arabicParagraphs": 9,
+      "englishParagraphs": 9,
+      "englishToArabicCharRatio": 1.68,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XI-05",
+      "stage": "XI",
+      "chapter": 5,
+      "title": "The kinds of intellection",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=305&type=c_fbook",
+      "sourcePages": "305–306",
+      "arabicChars": 978,
+      "englishChars": 1461,
+      "arabicParagraphs": 8,
+      "englishParagraphs": 7,
+      "englishToArabicCharRatio": 1.494,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XI-06",
+      "stage": "XI",
+      "chapter": 6,
+      "title": "The degrees of intellect",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=306&type=c_fbook",
+      "sourcePages": "306–307",
+      "arabicChars": 663,
+      "englishChars": 999,
+      "arabicParagraphs": 7,
+      "englishParagraphs": 5,
+      "englishToArabicCharRatio": 1.507,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XI-07",
+      "stage": "XI",
+      "chapter": 7,
+      "title": "That which bestows these cognitive forms",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=307&type=c_fbook",
+      "sourcePages": "307–308",
+      "arabicChars": 2102,
+      "englishChars": 3325,
+      "arabicParagraphs": 6,
+      "englishParagraphs": 6,
+      "englishToArabicCharRatio": 1.582,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XI-08",
+      "stage": "XI",
+      "chapter": 8,
+      "title": "The division of acquired knowledge into conception and assent",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=308&type=c_fbook",
+      "sourcePages": "308–310",
+      "arabicChars": 2308,
+      "englishChars": 3746,
+      "arabicParagraphs": 10,
+      "englishParagraphs": 8,
+      "englishToArabicCharRatio": 1.623,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XI-09",
+      "stage": "XI",
+      "chapter": 9,
+      "title": "The division of acquired knowledge into self-evident and theoretical",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=310&type=c_fbook",
+      "sourcePages": "310–314",
+      "arabicChars": 5419,
+      "englishChars": 8860,
+      "arabicParagraphs": 30,
+      "englishParagraphs": 27,
+      "englishToArabicCharRatio": 1.635,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 30,
+          "english": 27,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XI-10",
+      "stage": "XI",
+      "chapter": 10,
+      "title": "The division of acquired knowledge into real concepts and concepts formed by intellectual consideration",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=314&type=c_fbook",
+      "sourcePages": "314–317",
+      "arabicChars": 5343,
+      "englishChars": 8780,
+      "arabicParagraphs": 23,
+      "englishParagraphs": 22,
+      "englishToArabicCharRatio": 1.643,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XI-11",
+      "stage": "XI",
+      "chapter": 11,
+      "title": "Knowledge by presence is not confined to a thing’s knowledge of itself",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=318&type=c_fbook",
+      "sourcePages": "318–318",
+      "arabicChars": 783,
+      "englishChars": 1372,
+      "arabicParagraphs": 3,
+      "englishParagraphs": 3,
+      "englishToArabicCharRatio": 1.752,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XI-12",
+      "stage": "XI",
+      "chapter": 12,
+      "title": "Every immaterial being is intellect, intellective subject, and intelligible",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=318&type=c_fbook",
+      "sourcePages": "318–319",
+      "arabicChars": 1198,
+      "englishChars": 2027,
+      "arabicParagraphs": 7,
+      "englishParagraphs": 6,
+      "englishToArabicCharRatio": 1.692,
+      "hints": [],
+      "englishReview": {
+        "status": "local-bilingual-reading-checked",
+        "finding": "Checked locally against Arabic: immaterial intellect, knower/known unity, objection from human soul, distinction immaterial in essence versus material in acts, acquired intellect, accidental/relational qualification. No substantive correction identified in this pass.",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XI-13",
+      "stage": "XI",
+      "chapter": 13,
+      "title": "Knowledge of what has a cause is obtained only through knowledge of its cause, and related matters",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=320&type=c_fbook",
+      "sourcePages": "320–321",
+      "arabicChars": 2073,
+      "englishChars": 3343,
+      "arabicParagraphs": 7,
+      "englishParagraphs": 7,
+      "englishToArabicCharRatio": 1.613,
+      "hints": [],
+      "englishReview": {
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: knowledge of cause and effect, quidditative example of four/evenness, sensory objection, judgment by intellect, concomitances, final limit on proof from effect. No substantive correction needed in this local reading.",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XI-14",
+      "stage": "XI",
+      "chapter": 14,
+      "title": "Items of knowledge are not intrinsic to the soul",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=321&type=c_fbook",
+      "sourcePages": "321–322",
+      "arabicChars": 1038,
+      "englishChars": 1768,
+      "arabicParagraphs": 6,
+      "englishParagraphs": 6,
+      "englishToArabicCharRatio": 1.703,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XI-15",
+      "stage": "XI",
+      "chapter": 15,
+      "title": "Other divisions of knowledge",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=322&type=c_fbook",
+      "sourcePages": "322–323",
+      "arabicChars": 2267,
+      "englishChars": 3900,
+      "arabicParagraphs": 6,
+      "englishParagraphs": 7,
+      "englishToArabicCharRatio": 1.72,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-PRE",
+      "stage": "XII",
+      "chapter": 0,
+      "title": "Introduction to Stage XII: Matters concerning the Necessary Existent",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=325&type=c_fbook",
+      "sourcePages": "325–325",
+      "arabicChars": 148,
+      "englishChars": 273,
+      "arabicParagraphs": 4,
+      "englishParagraphs": 1,
+      "englishToArabicCharRatio": 1.845,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 4,
+          "english": 1,
+          "note": "paragraph counts alone do not indicate omissions"
+        },
+        {
+          "type": "lexical-spot-check",
+          "category": "negative-qualification",
+          "note": "word-family screening can produce false positives"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-01",
+      "stage": "XII",
+      "chapter": 1,
+      "title": "Establishing necessary existence",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=327&type=c_fbook",
+      "sourcePages": "327–329",
+      "arabicChars": 2586,
+      "englishChars": 4462,
+      "arabicParagraphs": 11,
+      "englishParagraphs": 10,
+      "englishToArabicCharRatio": 1.725,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-02",
+      "stage": "XII",
+      "chapter": 2,
+      "title": "Some other demonstrations offered for the existence of the Necessary—exalted is He",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=330&type=c_fbook",
+      "sourcePages": "330–333",
+      "arabicChars": 4004,
+      "englishChars": 6746,
+      "arabicParagraphs": 18,
+      "englishParagraphs": 15,
+      "englishToArabicCharRatio": 1.685,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 18,
+          "english": 15,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-03",
+      "stage": "XII",
+      "chapter": 3,
+      "title": "The intrinsically Necessary has no quiddity",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=333&type=c_fbook",
+      "sourcePages": "333–335",
+      "arabicChars": 2761,
+      "englishChars": 4372,
+      "arabicParagraphs": 7,
+      "englishParagraphs": 6,
+      "englishToArabicCharRatio": 1.583,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-04",
+      "stage": "XII",
+      "chapter": 4,
+      "title": "The Necessary is simple, composed of neither external nor mental parts",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=335&type=c_fbook",
+      "sourcePages": "335–338",
+      "arabicChars": 3616,
+      "englishChars": 6010,
+      "arabicParagraphs": 17,
+      "englishParagraphs": 14,
+      "englishToArabicCharRatio": 1.662,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 17,
+          "english": 14,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-05",
+      "stage": "XII",
+      "chapter": 5,
+      "title": "The unity of the intrinsically Necessary: He has no associate in necessary existence",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=338&type=c_fbook",
+      "sourcePages": "338–340",
+      "arabicChars": 2574,
+      "englishChars": 4406,
+      "arabicParagraphs": 10,
+      "englishParagraphs": 8,
+      "englishToArabicCharRatio": 1.712,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-06",
+      "stage": "XII",
+      "chapter": 6,
+      "title": "The unity of the intrinsically Necessary in lordship: there is no lord besides Him",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=340&type=c_fbook",
+      "sourcePages": "340–344",
+      "arabicChars": 3924,
+      "englishChars": 5914,
+      "arabicParagraphs": 15,
+      "englishParagraphs": 11,
+      "englishToArabicCharRatio": 1.507,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 15,
+          "english": 11,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-07",
+      "stage": "XII",
+      "chapter": 7,
+      "title": "The intrinsically Necessary has no associate in any concept in respect of its instance",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=344&type=c_fbook",
+      "sourcePages": "344–345",
+      "arabicChars": 1569,
+      "englishChars": 2529,
+      "arabicParagraphs": 5,
+      "englishParagraphs": 5,
+      "englishToArabicCharRatio": 1.612,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-08",
+      "stage": "XII",
+      "chapter": 8,
+      "title": "The attributes of the intrinsically Necessary in general, and their division",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=345&type=c_fbook",
+      "sourcePages": "345–346",
+      "arabicChars": 1010,
+      "englishChars": 1692,
+      "arabicParagraphs": 4,
+      "englishParagraphs": 4,
+      "englishToArabicCharRatio": 1.675,
+      "hints": [
+        {
+          "type": "lexical-spot-check",
+          "category": "causal-relation",
+          "note": "word-family screening can produce false positives"
+        }
+      ],
+      "englishReview": {
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: affirmative/negative attributes, double negation, real/relational attributes, essential versus act-based abstraction. Technical divisions are rendered; no local correction proposed.",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-09",
+      "stage": "XII",
+      "chapter": 9,
+      "title": "The attributes of essence are identical with the transcendent essence",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=346&type=c_fbook",
+      "sourcePages": "346–349",
+      "arabicChars": 4009,
+      "englishChars": 6609,
+      "arabicParagraphs": 22,
+      "englishParagraphs": 17,
+      "englishToArabicCharRatio": 1.649,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 22,
+          "english": 17,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-10",
+      "stage": "XII",
+      "chapter": 10,
+      "title": "The attributes of act are additional to the essence",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=349&type=c_fbook",
+      "sourcePages": "349–350",
+      "arabicChars": 1687,
+      "englishChars": 2853,
+      "arabicParagraphs": 5,
+      "englishParagraphs": 5,
+      "englishToArabicCharRatio": 1.691,
+      "hints": [],
+      "englishReview": {
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: act attributes derived through relations to contingent effects, origination, providence, provision, process terms and immutable divine essence. No missing argumentative clause identified.",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-11",
+      "stage": "XII",
+      "chapter": 11,
+      "title": "His knowledge—exalted is He",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=350&type=c_fbook",
+      "sourcePages": "350–356",
+      "arabicChars": 5875,
+      "englishChars": 9771,
+      "arabicParagraphs": 38,
+      "englishParagraphs": 33,
+      "englishToArabicCharRatio": 1.663,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 38,
+          "english": 33,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-12",
+      "stage": "XII",
+      "chapter": 12,
+      "title": "Providence, decree, and measure",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=356&type=c_fbook",
+      "sourcePages": "356–360",
+      "arabicChars": 5943,
+      "englishChars": 9245,
+      "arabicParagraphs": 24,
+      "englishParagraphs": 21,
+      "englishToArabicCharRatio": 1.556,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 24,
+          "english": 21,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-13",
+      "stage": "XII",
+      "chapter": 13,
+      "title": "His power—exalted is He",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=360&type=c_fbook",
+      "sourcePages": "360–364",
+      "arabicChars": 6120,
+      "englishChars": 9533,
+      "arabicParagraphs": 20,
+      "englishParagraphs": 16,
+      "englishToArabicCharRatio": 1.558,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 20,
+          "english": 16,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-14",
+      "stage": "XII",
+      "chapter": 14,
+      "title": "The Necessary is the principle of every contingent existent: the discussion of His will’s encompassing all acts",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=364&type=c_fbook",
+      "sourcePages": "364–370",
+      "arabicChars": 8529,
+      "englishChars": 13279,
+      "arabicParagraphs": 31,
+      "englishParagraphs": 23,
+      "englishToArabicCharRatio": 1.557,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 31,
+          "english": 23,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-15",
+      "stage": "XII",
+      "chapter": 15,
+      "title": "His life—exalted is He",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=371&type=c_fbook",
+      "sourcePages": "371–371",
+      "arabicChars": 685,
+      "englishChars": 1131,
+      "arabicParagraphs": 4,
+      "englishParagraphs": 4,
+      "englishToArabicCharRatio": 1.651,
+      "hints": [],
+      "englishReview": {
+        "status": "local-bilingual-reading-checked",
+        "finding": "Checked locally against Arabic: life as apprehension and action, power/knowledge as consequents in animals, divine knowledge/power identical to essence, divine life. No substantive correction identified in this pass.",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-16",
+      "stage": "XII",
+      "chapter": 16,
+      "title": "Will and speech",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=371&type=c_fbook",
+      "sourcePages": "371–373",
+      "arabicChars": 1382,
+      "englishChars": 2256,
+      "arabicParagraphs": 9,
+      "englishParagraphs": 9,
+      "englishToArabicCharRatio": 1.632,
+      "hints": [],
+      "englishReview": {
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: attributed definitions of will/speech, quoted account of speech as real signification, authorial rejection and comparison to hearing/sight. Distinction between quotation and author's voice preserved.",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-17",
+      "stage": "XII",
+      "chapter": 17,
+      "title": "Divine providence over creation: the cosmic order possesses the greatest possible goodness and precision",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=373&type=c_fbook",
+      "sourcePages": "373–375",
+      "arabicChars": 2813,
+      "englishChars": 4412,
+      "arabicParagraphs": 10,
+      "englishParagraphs": 9,
+      "englishToArabicCharRatio": 1.568,
+      "hints": [],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-18",
+      "stage": "XII",
+      "chapter": 18,
+      "title": "Good and evil, and the inclusion of evil in divine decree",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=375&type=c_fbook",
+      "sourcePages": "375–378",
+      "arabicChars": 4852,
+      "englishChars": 7614,
+      "arabicParagraphs": 20,
+      "englishParagraphs": 17,
+      "englishToArabicCharRatio": 1.569,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 20,
+          "english": 17,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-19",
+      "stage": "XII",
+      "chapter": 19,
+      "title": "The ordering of His acts, which is the order of creation",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=378&type=c_fbook",
+      "sourcePages": "378–380",
+      "arabicChars": 2598,
+      "englishChars": 3854,
+      "arabicParagraphs": 12,
+      "englishParagraphs": 8,
+      "englishToArabicCharRatio": 1.483,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 12,
+          "english": 8,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-20",
+      "stage": "XII",
+      "chapter": 20,
+      "title": "The intellectual realm, its order, and how multiplicity arises within it",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=380&type=c_fbook",
+      "sourcePages": "380–387",
+      "arabicChars": 9225,
+      "englishChars": 14446,
+      "arabicParagraphs": 31,
+      "englishParagraphs": 25,
+      "englishToArabicCharRatio": 1.566,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 31,
+          "english": 25,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-21",
+      "stage": "XII",
+      "chapter": 21,
+      "title": "The imaginal realm",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=387&type=c_fbook",
+      "sourcePages": "387–388",
+      "arabicChars": 953,
+      "englishChars": 1541,
+      "arabicParagraphs": 5,
+      "englishParagraphs": 4,
+      "englishToArabicCharRatio": 1.617,
+      "hints": [],
+      "englishReview": {
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: imaginal barzakh, separation from matter not its effects, vertical and horizontal intellects, separate and connected imagination, arbitrary imagined forms. **Corrected English opening to preserve barzakh**, and added a passage-level translator note; no printed witness claimed.",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-22",
+      "stage": "XII",
+      "chapter": 22,
+      "title": "The material realm",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=388&type=c_fbook",
+      "sourcePages": "388–389",
+      "arabicChars": 1129,
+      "englishChars": 1658,
+      "arabicParagraphs": 6,
+      "englishParagraphs": 5,
+      "englishToArabicCharRatio": 1.469,
+      "hints": [],
+      "englishReview": {
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: material world's dependence on potentiality, competing causes, scientific discoveries, substantial motion, material realm as flowing, compatibility with immutable cause. No missing premise found.",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-23",
+      "stage": "XII",
+      "chapter": 23,
+      "title": "The origination of the world",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=389&type=c_fbook",
+      "sourcePages": "389–392",
+      "arabicChars": 3421,
+      "englishChars": 5664,
+      "arabicParagraphs": 17,
+      "englishParagraphs": 14,
+      "englishToArabicCharRatio": 1.656,
+      "hints": [
+        {
+          "type": "paragraph-reflow",
+          "arabic": 17,
+          "english": 14,
+          "note": "paragraph counts alone do not indicate omissions"
+        }
+      ],
+      "englishReview": {
+        "status": "automatic-structure-and-lexicon-screen-only",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    },
+    {
+      "id": "N-XII-24",
+      "stage": "XII",
+      "chapter": 24,
+      "title": "The perpetuity of emanation",
+      "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=392&type=c_fbook",
+      "sourcePages": "392–393",
+      "arabicChars": 964,
+      "englishChars": 1606,
+      "arabicParagraphs": 7,
+      "englishParagraphs": 6,
+      "englishToArabicCharRatio": 1.666,
+      "hints": [
+        {
+          "type": "lexical-spot-check",
+          "category": "opposition-qualification",
+          "note": "word-family screening can produce false positives"
+        }
+      ],
+      "englishReview": {
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: unceasing divine emanation versus temporal material parts, cyclic cosmology objection, changing conditions, rejection of obsolete celestial physics, authorial completion date. All propositions represented; Asfār background not externally checked.",
+        "independentWitnessCollation": false,
+        "externalExpertCertification": false
+      }
+    }
+  ]
+}

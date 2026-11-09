@@ -9,7 +9,7 @@
     "institutionalScan": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000780/1",
     "institutionalScanYear": 1968
   },
-  "status": "29 authorial sections in the local bilingual reader: 11 introduction, four opening Book I, and 14 selections of Book III. Full six-book Arabic/English integration remains incomplete.",
+  "status": "36 bilingual original reading sections (11 intro, four Book I, seven Book II, 14 Book III); complete source has six books, most of which are not yet in this local reader.",
   "parts": [
     {
       "book": 0,
@@ -174,26 +174,37 @@
         {
           "arabic": "الجزئي الإضافي",
           "english": "Relative particularity",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=58&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation",
+          "firstPrintedPage": 58
         },
         {
           "arabic": "المتواطئ والمشكك",
           "english": "Univocal and graduated predication",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=59&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation",
+          "firstPrintedPage": 59
         },
         {
           "arabic": "المفهوم والمصداق",
           "english": "Concept and instance",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=61&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation",
+          "firstPrintedPage": 61
+        },
+        {
+          "arabic": "العنوان والمعنون",
+          "english": "Concept as title, its referent, primary and common predication",
+          "firstPrintedPage": 61,
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=61&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation"
         },
         {
           "arabic": "النسب الأربع",
           "english": "Four relations between universals",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=63&type=c_fbook",
+          "locatorStatus": "observed in searchable source page; early scan pending collation",
+          "firstPrintedPage": 63
         },
         {
           "arabic": "الكليات الخمس",
@@ -232,8 +243,8 @@
           "locatorStatus": "bibliographic topic, exact printed page not checked"
         }
       ],
-      "availableUnits": 0,
-      "note": "No authorial Book II section has yet been transcribed or translated in the local reader.",
+      "availableUnits": 7,
+      "note": "Seven bilingual reading passages cover the introductory sections of Book II (pp. 56–65): universals and particulars; actual and hypothetical instances; relative particular; univocal and graded universals; concept and instance; predication; and the four extensional relations. Further Book II topics and exercises remain untranslated.",
       "url": "https://lib.rafed.net/m/?b_id=1604&page=57&type=c_fbook"
     },
     {
@@ -515,11 +526,12 @@
   "summary": {
     "totalAuthorialBooks": 6,
     "sourcePagesCoveredByRegister": 455,
-    "localTranslatedUnits": 29,
+    "localTranslatedUnits": 36,
     "localIntroUnits": 11,
     "localBook3Units": 14,
-    "otherAuthorialBooksLocallyTranslated": 0,
-    "localBook1Units": 4
+    "otherAuthorialBooksLocallyTranslated": 1,
+    "localBook1Units": 4,
+    "localBook2Units": 7
   },
-  "accuracy": "Only book-opening printed-page links and the Book VI demonstration-section start at p. 311 have individually verified locator evidence. Other chapter/section titles are verified against the Rafed contents but their exact internal printed page locators are intentionally withheld until checked."
+  "accuracy": "Authorial book-opening page locators and the first three Book II headings (pp. 57–59) checked in the searchable source. Other internal printed page locators are not claimed unless explicitly checked; 1968 NYU public-domain scan remains an independent pagination/typographic witness to inspect."
 }
