@@ -288,7 +288,7 @@
 
 **Verified/revised English:** The disclosure appeared again as determined [the phrase 'في عون هذا' remains uncertain], through its inseparable original love.
 
-**Decision:** B2007 prints في عون هذا. The phrase is syntactically difficult; do NOT insert a conjectural عين or emend to a smoother reading without an independent image of I1876 or manuscript.
+**Decision:** B2007 prints في عون هذا. The high-resolution photographed I1876 p16/scan20 directly confirms في عون هذا as in B2007 p33. An unsupported عين conjecture is no longer warranted on printed evidence. The phrase's grammatical reference remains difficult and manuscript folios have not been read.
 
 [Arabic source](https://ablibrary.net/book_content/b/9606/33?lang=ar)
 
