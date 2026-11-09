@@ -1,3 +1,17 @@
+## Continuous book traversal: timeline and complete source graph — 9 November 2026
+
+The two **text-facing modes**—**Book timeline** and **Source network**—now share a persistent horizontal **Browse texts** rail. The selected book remains in focus while browsing:
+
+- Use **Previous / Next**, the **Left / Right arrow keys**, touch **swipes**, or native horizontal scrolling through the cards. The selected work **and the visualization update automatically**. Clicking an individual card remains possible but is not necessary.
+- Switch **Timeline ⇄ Source & reception graph** in the rail without changing the selected work. The timeline retains its original chronological SVG and automatically highlights the selected work or its dated/undated cluster. If a previously zoomed date range excludes a newly selected dated work, the range follows it at the same scale.
+- Each source/reception graph now renders **all directly documented incoming and outgoing relationships immediately**, including every arrow and evidence card. The former eight-relationship cap and **Show further connected works** button have been removed. Larger graphs are vertically scrollable **but not lazily populated**.
+- The **Source-linked** scope is the default browsing sequence, so arrowing through the network does not force a succession of unconnected catalogue records. Choose **All catalogued** to include every known work record, whether or not this research register has documented an influence relation. The scope and selected work persist in copied URLs.
+- The word **direct** is crucial: longer inferential paths or mere membership in a textual family are *not* asserted as historically verified influence. Each real edge retains its separate relation type, certainty and citation.
+
+Browser contract: `tests/verify_text_browsing_browser.py` exercises full cited network rendering, live traversal, active timeline highlighting, keyboard navigation, rail scrolling, scope/URL restoration and iPhone-sized touch swipes. Original source data and the geographical atlas are unchanged.
+
+---
+
 ## Hanafi-style geographical atlas: authors and textual events (9 November 2026)
 
 The live atlas now opens with **By century**, **By region**, and **Source network** in a restrained editorial interface, inspired by Hanafi Atlas's navigational hierarchy. A single science selector and search serves all intellectual sciences; the original chronological book diagram, principal-texts synopsis and catalogue remain in the same interface as secondary views.
