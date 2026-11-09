@@ -113,7 +113,10 @@ async def test_desktop(page):
 async def test_roundtrip(page):
     await page.goto(ROOT + "#view=sources&science=fiqh&source_tab=texts&madhhab=all",
                     wait_until="domcontentloaded", timeout=60000)
-    await page.wait_for_selector("[data-dn-work]", timeout=65000)
+    # The full subject atlas correctly groups a millennium into dated era clusters first.
+    await page.wait_for_selector("[data-dn-cluster]", timeout=65000)
+    await page.locator("[data-dn-cluster]").first.click()
+    await page.wait_for_selector("[data-dn-work]", timeout=20000)
     await page.locator("[data-dn-work]").first.click()
     await page.locator('[data-action="explore-source-selected"]').click()
     d = await info(page)
