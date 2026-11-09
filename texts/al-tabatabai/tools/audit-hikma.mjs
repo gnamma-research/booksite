@@ -72,11 +72,15 @@ for(const [name,file] of books){
   if(name==='Muẓaffar'){
     check(data.editorialStatus?.translationComplete!==true,'Muẓaffar selections must not be called a complete edition');
     check(units.some(u=>u.id==='M-P-01'),'Muẓaffar introduction must precede its Book III selections');
-    check(units.filter(u=>/^M-K-0[1-7]$/.test(u.id)).length===7,
-      'Muẓaffar Book II universals and predication must preserve seven complete working passages');
-    check(units.length===36,'Muẓaffar must contain 36 reading passages after the Book II expansion');
+    check(units.filter(u=>/^M-K-(0[1-9]|1[0-7])$/.test(u.id)).length===17,
+      'Muẓaffar Book II must preserve seventeen working bilingual reading units, some source-normalized');
+    check(units.length===46,'Muẓaffar must contain 46 working reading units after Book II expansion');
     check(stages.some(x=>x.id==='K'&&x.bookNumber===2),'Muẓaffar Book II stage is missing');
-    const universalIds=['M-K-01','M-K-02','M-K-03','M-K-04','M-K-05','M-K-06','M-K-07'];
+    const universalIds=['M-K-01','M-K-02','M-K-03','M-K-04','M-K-05','M-K-06','M-K-07','M-K-08','M-K-09','M-K-10','M-K-11','M-K-12','M-K-13','M-K-14','M-K-15','M-K-16','M-K-17'];
+    check(units.find(u=>u.id==='M-K-08')?.notes?.some(n=>/conjecture|inconsistent|not logically consistent/i.test(n.text||'')),
+      'Source-critical conjecture in M-K-08 must remain explicit');
+    check(units.find(u=>u.id==='M-K-14')?.notes?.some(n=>/not a diplomatic|normalized/i.test(n.text||'')),
+      'Normalized M-K-14 must not masquerade as exact diplomatic Arabic');
     check(universalIds.every(id=>units.find(u=>u.id===id)?.english?.length>350),
       'Muẓaffar Book II bilingual passage is missing or unexpectedly short');
   }
@@ -109,7 +113,7 @@ if(mMap&&mText){
   check(mMap.parts.reduce((n,x)=>n+x.availableUnits,0)===mText.units.length,'Muẓaffar mapped translation count mismatch');
   check(mMap.summary?.localTranslatedUnits===mText.units.length,
     'Muẓaffar map summary is stale');
-  check(mMap.parts.find(p=>p.book===2)?.availableUnits===7,
+  check(mMap.parts.find(p=>p.book===2)?.availableUnits===17,
     'Muẓaffar source map must register Book II opening');
   check(mMap.parts.reduce((n,x)=>n+x.topics.length,0)>=60,'Muẓaffar map lost section titles');
   for(const p of mMap.parts){
@@ -177,7 +181,9 @@ if(nText&&nTriage){
       'Cumulative review register not linked to triage '+r.id);
   }
   check(nTriage.summary?.automaticallyScreened===136,'Incomplete Nihāya full-corpus screening');
-  check(nTriage.summary?.locallyReadAgainstStoredArabic===16,'Nihāya local checked sample changed unexpectedly');
+  check(nTriage.summary?.locallyReadAgainstStoredArabic===28,'Nihāya local checked sample changed unexpectedly');
+  check(nTriage.summary?.secondaryPrintedDigitalSpotChecks===4,
+    'Nihāya revised printed-digital spot checks must remain individually documented');
   check(nTriage.summary?.independentlyReconciledAgainstCompleteSecondWitness===0,
     'Nihāya screen incorrectly described as independent witness collation');
 }

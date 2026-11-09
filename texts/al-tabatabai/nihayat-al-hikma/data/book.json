@@ -582,6 +582,11 @@
         {
           "type": "translation",
           "text": "The three considerations are bi-sharṭ shayʾ, bi-sharṭ lā, and lā bi-sharṭ. The last must be distinguished from lā bi-sharṭ maqsamī, the unconditioned quiddity that is itself the subject divided into all three considerations."
+        },
+        {
+          "type": "Later editor’s critical observation · not authorial",
+          "text": "At vol. 1, printed p. 123 n. 1 of al-Zāriʿī’s revised 1428 AH edition, the editor challenges the inference that because some conditioned instances of quiddity exist outside the mind, quiddity as the unconditioned dividendum must likewise exist there. The editor’s argument distinguishes the dividendum’s preservation through the divisions from the existence of the dividendum as such in all divisions. This is a later philosophical criticism, not a textual variant or an opinion to attribute to Ṭabāṭabāʾī. The English translation of the authorial proposition remains unchanged.",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=122&type=c_fbook"
         }
       ],
       "status": "source-based-working-translation"
@@ -1184,7 +1189,13 @@
       },
       "title": "The opposition of privation and possession",
       "english": "This is also called the opposition of privation and having. Its terms are an existent feature that occurs in a subject naturally capable of possessing it, and the absence of that existent feature in that subject. An example is sight and blindness, the latter being the lack of sight in a subject naturally capable of seeing.\n\nWhether the subject of the possession is taken as an individual nature, a specific nature, or a generic nature makes no difference to the occurrence of this opposition. A generic nature, and likewise a specific nature, is a subject of an individual’s attribute just as the individual itself is its subject. Thus the lack of sight in a scorpion—as has been said—is blindness and a privation, since its genus, animal, is naturally capable of seeing, even if the specific nature of scorpion is not characterized by sight. Likewise, a human being’s beardlessness and lack of facial hair before puberty is a privation, since the specific nature of the human being has that capacity, even though the class of those who have not reached puberty does not possess a beard. The opposition of privation and possession in this unrestricted sense is called “genuine.”\n\nIt is sometimes restricted by time, with the requirement that the privation occur at the time appropriate to the possession. In that case the opposition is called “commonly recognized.” On this usage, a human being’s beardlessness before puberty is not a privation at all, and likewise the scorpion’s lack of sight is not blindness.\n\nThis is closer to a terminological convention. There is therefore no difficulty if cases whose subject is the genus or species fall outside privation and possession on this usage without falling under any of the other three oppositions, although the kinds of opposition are confined to four.",
-      "notes": [],
+      "notes": [
+        {
+          "type": "Later editor’s factual caution · not authorial",
+          "text": "The author gives the inherited example of the scorpion’s supposed lack of sight («فعدم البصر في العقرب ـ كما قيل ـ») to illustrate privation relative to an animal genus. The 1428 AH editor, vol. 1 printed p. 258 n. 4, notes that some modern descriptions report scorpion eyes. The original statement is an expressly qualified historical logical illustration, not a reliable zoological observation. The translated argument and the author/editor distinction are preserved.",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=257&type=c_fbook"
+        }
+      ],
       "status": "source-based-working-translation"
     },
     {
@@ -1199,8 +1210,14 @@
         "page": "193–194"
       },
       "title": "Correlative opposition",
-      "english": "As the division has shown, two correlatives are two existent features, one of which cannot be conceived without conceiving the other. They stand in a reciprocal relation: one cannot be conceived without conceiving the other, which is itself conceived through the first. For this reason they cannot occur together in one thing in the same respect, since a relation cannot run between a thing and itself.\n\nAn objection has been raised against treating correlation as one of the four kinds of opposition: opposition in general is itself a kind of correlation, since two opposites, insofar as they are opposites, are correlatives. Counting correlation as a kind of opposition would therefore amount to making something a coordinate division alongside one of its own subdivisions.\n\nThe reply is that the concept of opposition is an instance of correlation, whereas an instance of correlation is one of the kinds and instances of opposition. What falls under correlation is the concept of opposition; what stands alongside correlation as a coordinate division is an instance of opposition. A mental concept is often an individual instance of that to which it is opposed. The concept of the particular, for example, is in one respect an instance of the universal and in another respect opposed to it. There is therefore no difficulty.\n\nOne judgment concerning correlation is that the two correlatives are coextensive in existence and nonexistence, and in potentiality and actuality. If one exists, the other necessarily exists; if one does not exist, the other necessarily does not exist; and if one is potential or actual, the other necessarily is so as well. It follows that they are simultaneous: neither precedes the other, whether in the mind or externally.",
-      "notes": [],
+      "english": "As the division has shown, two correlatives are two existent features, one of which cannot be conceived without conceiving the other. They stand in a reciprocal relation: one cannot be conceived without conceiving the other, which is itself conceived through the first. For this reason they cannot occur together in one thing in the same respect, since a relation cannot run between a thing and itself.\n\nAn objection has been raised against treating correlation as one of the four kinds of opposition: opposition in general is itself a kind of correlation, since two opposites, insofar as they are opposites, are correlatives. Counting correlation as a kind of opposition would therefore amount to making something a coordinate division alongside one of its own subdivisions.\n\nThe reply is that the concept of opposition is an instance of correlation, whereas an instance of correlation is one of the kinds and instances of opposition. What falls under correlation is the concept of opposition; what stands alongside correlation as a coordinate division is an instance of opposition. A mental concept is often an individual instance of that to which it is opposed. The concept of the particular, for example, is in one respect an instance of the universal and in another respect opposed to it. There is therefore no difficulty.\n\nOne rule concerning correlation is that the two correlatives correspond necessarily in respect of existence and nonexistence, and likewise of potentiality and actuality. If one exists, the other necessarily exists; if one does not exist, the other necessarily does not exist; and if one is potential or actual, the other necessarily is so as well. It follows that they are simultaneous: neither precedes the other, whether in the mind or externally.",
+      "notes": [
+        {
+          "type": "English precision · corrected against authorial Arabic",
+          "text": "For «المتضايفان متكافئان وجوداً وعدماً وقوّةً وفعلا», ‘correspond necessarily in respect of existence, nonexistence, potentiality, and actuality’ replaces the misleading ‘coextensive’ (which suggests identity of extension). The author argues existential and modal simultaneity of opposed correlatives, not identity of their sets of instances. The corrected 1428 AH transcription (vol. 1 p. 259) agrees at this clause. This is a translation correction, not an Arabic emendation or manuscript attestation.",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=257&type=c_fbook"
+        }
+      ],
       "status": "source-based-working-translation"
     },
     {

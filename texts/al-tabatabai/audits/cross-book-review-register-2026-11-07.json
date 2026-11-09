@@ -3,14 +3,14 @@
   "title": "Cross-book source and English review register",
   "summary": {
     "date": "2026-11-09",
-    "totalReaderUnits": 283,
+    "totalReaderUnits": 293,
     "M": {
-      "localReading": 36,
-      "localTranslated": 36,
+      "localReading": 46,
+      "localTranslated": 46,
       "fullAuthorialBooks": 6,
       "completeLocalBookContent": false,
-      "mappedAuthorialTopics": 69,
-      "status": "Selected introduction, Book I, seven Book II passages and Book III definition passages; complete original six-book corpus remains substantially untranslated."
+      "mappedAuthorialTopics": 74,
+      "status": "46 locally paired working units; 17 Book II readings including one explicitly normalized section. Complete six-book al-Manṭiq remains not imported or translated."
     },
     "B": {
       "localReading": 111,
@@ -29,9 +29,10 @@
       "adoptedPrintedEditorialEmendations": 8,
       "supplementaryCriticalNotes": 8,
       "englishAutomatedStructureScreened": 136,
-      "englishLocalBilingualRead": 16,
+      "englishLocalBilingualRead": 28,
       "englishIndependentlyCollated": 0,
-      "englishTriageRegister": "nihaya-english-collation-triage-2026-11-09.json"
+      "englishTriageRegister": "nihaya-english-collation-triage-2026-11-09.json",
+      "secondEditionDigitalSpotChecks": 4
     },
     "expertReviewedUnitsVerified": 0,
     "expertReviewedUnitStatus": "Not documented; zero units are claimed to have passed independent specialist review",
@@ -581,6 +582,246 @@
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "selected Book II original sections; source complete only in external Arabic witness",
       "nextReview": "Verify 1968 printed Arabic and trace quotations/particles before specialist certification"
+    },
+    {
+      "id": "M-K-08",
+      "book": "M",
+      "stage": "K",
+      "chapter": 8,
+      "title": "Relations between complements of universals: equality and inclusion",
+      "source": {
+        "page": "65–67",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf (1402 AH) searchable transcription; 1968 al-Nuʿmān printed scan still requires checking",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=65&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1908,
+      "englishCharacters": 2749,
+      "sourceEditionReviewed": "1402 AH Rafed searchable Arabic transcription; 1968 ACO scan not independently collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": "SOURCE-PROVISIONAL: see unit editorial note",
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; any source-normalized sections and conjectural proof corrections are expressly marked in passage notes.",
+      "sourceAssessment": "Selected Book II original passages; entire six-book al-Manṭiq not yet locally transcribed and translated",
+      "nextReview": "Collate against early 1968 printed witness. Resolve the conjectural negation steps in M-K-08 and replace normalized M-K-14 with exact Arabic before certification."
+    },
+    {
+      "id": "M-K-09",
+      "book": "M",
+      "stage": "K",
+      "chapter": 9,
+      "title": "Complements of overlapping and disjoint universals",
+      "source": {
+        "page": "67–69",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf (1402 AH) searchable transcription; 1968 al-Nuʿmān printed scan still requires checking",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=67&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2111,
+      "englishCharacters": 2352,
+      "sourceEditionReviewed": "1402 AH Rafed searchable Arabic transcription; 1968 ACO scan not independently collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; any source-normalized sections and conjectural proof corrections are expressly marked in passage notes.",
+      "sourceAssessment": "Selected Book II original passages; entire six-book al-Manṭiq not yet locally transcribed and translated",
+      "nextReview": "Collate against early 1968 printed witness. Resolve the conjectural negation steps in M-K-08 and replace normalized M-K-14 with exact Arabic before certification."
+    },
+    {
+      "id": "M-K-10",
+      "book": "M",
+      "stage": "K",
+      "chapter": 10,
+      "title": "The five predicables: species, genus, and differentia",
+      "source": {
+        "page": "70–73",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf (1402 AH) searchable transcription; 1968 al-Nuʿmān printed scan still requires checking",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=70&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2174,
+      "englishCharacters": 2890,
+      "sourceEditionReviewed": "1402 AH Rafed searchable Arabic transcription; 1968 ACO scan not independently collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; any source-normalized sections and conjectural proof corrections are expressly marked in passage notes.",
+      "sourceAssessment": "Selected Book II original passages; entire six-book al-Manṭiq not yet locally transcribed and translated",
+      "nextReview": "Collate against early 1968 printed witness. Resolve the conjectural negation steps in M-K-08 and replace normalized M-K-14 with exact Arabic before certification."
+    },
+    {
+      "id": "M-K-11",
+      "book": "M",
+      "stage": "K",
+      "chapter": 11,
+      "title": "Relative species, higher and lower genera, and near and remote differentiae",
+      "source": {
+        "page": "73–75",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf (1402 AH) searchable transcription; 1968 al-Nuʿmān printed scan still requires checking",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=73&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1768,
+      "englishCharacters": 2828,
+      "sourceEditionReviewed": "1402 AH Rafed searchable Arabic transcription; 1968 ACO scan not independently collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; any source-normalized sections and conjectural proof corrections are expressly marked in passage notes.",
+      "sourceAssessment": "Selected Book II original passages; entire six-book al-Manṭiq not yet locally transcribed and translated",
+      "nextReview": "Collate against early 1968 printed witness. Resolve the conjectural negation steps in M-K-08 and replace normalized M-K-14 with exact Arabic before certification."
+    },
+    {
+      "id": "M-K-12",
+      "book": "M",
+      "stage": "K",
+      "chapter": 12,
+      "title": "Essential and accidental predicates; proprium and common accident",
+      "source": {
+        "page": "75–77",
+        "edition": "al-Muẓaffar, al-Manṭiq, searchable Dār al-Taʿāruf 1402 AH text (preliminary collation, not 1968 printed-scan verified)",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=75&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1237,
+      "englishCharacters": 2061,
+      "sourceEditionReviewed": "1402 AH Rafed searchable Arabic transcription; 1968 ACO scan not independently collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; any source-normalized sections and conjectural proof corrections are expressly marked in passage notes.",
+      "sourceAssessment": "Selected Book II original passages; entire six-book al-Manṭiq not yet locally transcribed and translated",
+      "nextReview": "Collate against early 1968 printed witness. Resolve the conjectural negation steps in M-K-08 and replace normalized M-K-14 with exact Arabic before certification."
+    },
+    {
+      "id": "M-K-13",
+      "book": "M",
+      "stage": "K",
+      "chapter": 13,
+      "title": "Relative predication, compound properties, and subspecies",
+      "source": {
+        "page": "77–78",
+        "edition": "al-Muẓaffar, al-Manṭiq, searchable Dār al-Taʿāruf 1402 AH text (preliminary collation, not 1968 printed-scan verified)",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=77&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1295,
+      "englishCharacters": 2374,
+      "sourceEditionReviewed": "1402 AH Rafed searchable Arabic transcription; 1968 ACO scan not independently collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; any source-normalized sections and conjectural proof corrections are expressly marked in passage notes.",
+      "sourceAssessment": "Selected Book II original passages; entire six-book al-Manṭiq not yet locally transcribed and translated",
+      "nextReview": "Collate against early 1968 printed witness. Resolve the conjectural negation steps in M-K-08 and replace normalized M-K-14 with exact Arabic before certification."
+    },
+    {
+      "id": "M-K-14",
+      "book": "M",
+      "stage": "K",
+      "chapter": 14,
+      "title": "The three distinctions of predication",
+      "source": {
+        "page": "78–81",
+        "edition": "al-Muẓaffar, al-Manṭiq, searchable Dār al-Taʿāruf 1402 AH text (preliminary collation, not 1968 printed-scan verified)",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=78&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1899,
+      "englishCharacters": 3240,
+      "sourceEditionReviewed": "1402 AH Rafed searchable Arabic transcription; 1968 ACO scan not independently collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": "SOURCE-PROVISIONAL: see unit editorial note",
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; any source-normalized sections and conjectural proof corrections are expressly marked in passage notes.",
+      "sourceAssessment": "Selected Book II original passages; entire six-book al-Manṭiq not yet locally transcribed and translated",
+      "nextReview": "Collate against early 1968 printed witness. Resolve the conjectural negation steps in M-K-08 and replace normalized M-K-14 with exact Arabic before certification."
+    },
+    {
+      "id": "M-K-16",
+      "book": "M",
+      "stage": "K",
+      "chapter": 16,
+      "title": "Accidental attribution means predication, not mere inherence",
+      "source": {
+        "page": "82–83",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable transcription; 1968 ACO scan not yet independently collated",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=82&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 912,
+      "englishCharacters": 1431,
+      "sourceEditionReviewed": "Rafed Dār 1402 AH searchable Arabic transcription, 1968 ACO page check pending",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; any source-normalized sections and conjectural proof corrections are expressly marked in passage notes.",
+      "sourceAssessment": "source excerpt from Book II; surrounding exercises and remaining books absent",
+      "nextReview": "Verify exact printed Arabic paragraph-by-paragraph, quotations, particles, and scientific illustrations"
+    },
+    {
+      "id": "M-K-17",
+      "book": "M",
+      "stage": "K",
+      "chapter": 17,
+      "title": "Divisions of accidental predicates: necessary, evident, demonstrable, and separable",
+      "source": {
+        "page": "83–84",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH searchable transcription; 1968 ACO scan not yet independently collated",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=83&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2320,
+      "englishCharacters": 3133,
+      "sourceEditionReviewed": "Rafed Dār 1402 AH searchable Arabic transcription, 1968 ACO page check pending",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; any source-normalized sections and conjectural proof corrections are expressly marked in passage notes.",
+      "sourceAssessment": "source excerpt from Book II; surrounding exercises and remaining books absent",
+      "nextReview": "Verify exact printed Arabic paragraph-by-paragraph, quotations, particles, and scientific illustrations"
+    },
+    {
+      "id": "M-K-15",
+      "book": "M",
+      "stage": "K",
+      "chapter": 15,
+      "title": "Logical, natural, and intellectual universals",
+      "source": {
+        "page": "84–86",
+        "edition": "al-Muẓaffar, al-Manṭiq, searchable Dār al-Taʿāruf 1402 AH text (preliminary collation, not 1968 printed-scan verified)",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=84&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1530,
+      "englishCharacters": 2720,
+      "sourceEditionReviewed": "1402 AH Rafed searchable Arabic transcription; 1968 ACO scan not independently collated",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; any source-normalized sections and conjectural proof corrections are expressly marked in passage notes.",
+      "sourceAssessment": "Selected Book II original passages; entire six-book al-Manṭiq not yet locally transcribed and translated",
+      "nextReview": "Collate against early 1968 printed witness. Resolve the conjectural negation steps in M-K-08 and replace normalized M-K-14 with exact Arabic before certification."
     },
     {
       "id": "M-Q-01",
@@ -4253,7 +4494,7 @@
         "arabicParagraphs": 5,
         "englishParagraphs": 4,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -4274,7 +4515,7 @@
       "englishCharacters": 2338,
       "sourceEditionReviewed": "additional 1428 two-volume witness identified, NOT yet exhaustively collated",
       "sourceParityPercent": null,
-      "editorialNotes": 1,
+      "editorialNotes": 2,
       "supplementalCriticalNoteIds": [],
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
@@ -4285,7 +4526,7 @@
         "arabicParagraphs": 12,
         "englishParagraphs": 10,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -4351,7 +4592,7 @@
         "arabicParagraphs": 9,
         "englishParagraphs": 9,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -4451,7 +4692,7 @@
         "arabicParagraphs": 10,
         "englishParagraphs": 11,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -4757,7 +4998,7 @@
         "reviewHints": [
           "paragraph-reflow"
         ],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -4859,7 +5100,7 @@
         "reviewHints": [
           "paragraph-reflow"
         ],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -5325,7 +5566,7 @@
         "arabicParagraphs": 14,
         "englishParagraphs": 13,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -5357,7 +5598,7 @@
         "arabicParagraphs": 11,
         "englishParagraphs": 9,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -5412,7 +5653,7 @@
       "englishCharacters": 1807,
       "sourceEditionReviewed": "additional 1428 two-volume witness identified, NOT yet exhaustively collated",
       "sourceParityPercent": null,
-      "editorialNotes": 0,
+      "editorialNotes": 1,
       "supplementalCriticalNoteIds": [],
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
@@ -5423,7 +5664,7 @@
         "arabicParagraphs": 5,
         "englishParagraphs": 4,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -5441,10 +5682,10 @@
       "arabicPresent": true,
       "englishPresent": true,
       "arabicCharacters": 1024,
-      "englishCharacters": 1755,
+      "englishCharacters": 1778,
       "sourceEditionReviewed": "additional 1428 two-volume witness identified, NOT yet exhaustively collated",
       "sourceParityPercent": null,
-      "editorialNotes": 0,
+      "editorialNotes": 1,
       "supplementalCriticalNoteIds": [],
       "flag": null,
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
@@ -5455,7 +5696,7 @@
         "arabicParagraphs": 6,
         "englishParagraphs": 4,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -6581,7 +6822,7 @@
         "arabicParagraphs": 8,
         "englishParagraphs": 8,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
@@ -6613,7 +6854,7 @@
         "arabicParagraphs": 6,
         "englishParagraphs": 5,
         "reviewHints": [],
-        "localBilingualRead": false,
+        "localBilingualRead": true,
         "independentlyCollated": false
       }
     },
