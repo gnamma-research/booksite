@@ -1,6 +1,6 @@
 # Qawāʿid / Tamhīd — clause-level comparative review, pass 1
 
-**9 November 2026.** This work inventories 5520 Arabic punctuation-clause candidates and 2853 English sentence candidates across **all 171 bilingual units**. Only **584 Arabic clauses in 19 units** have been individually compared with their English in this pass. The remaining **4936 are not certified**.
+**9 November 2026.** This work inventories 5520 Arabic punctuation-clause candidates and 2853 English sentence candidates across **all 171 bilingual units**. Only **817 Arabic clauses in 23 units** have been individually compared with their English in this pass. The remaining **4703 are not certified**.
 
 All clauses, offsets, corresponding English for reviewed passages, and source fingerprints are in the [complete clause ledger](../qa/clause-ledger.json). Automatic enumeration is **not** evidence of an accurate translation. The original Arabic and the reported QT-059 lacuna remain unchanged.
 
@@ -199,6 +199,61 @@ All clauses, offsets, corresponding English for reviewed passages, and source fi
 | 39–43 | 24–32 | **checked** | و اما قوله : « و سلب ما عدا الإطلاق عنه » فهو جواب دخل مقدَّر ، و تقرير ذلك ان القاعدة القائلة بان اعتبار المعاني و الأ… — The apparent self-reference reductio and response by negative/non-real determination are distinguished. |
 | 44–47 | 33–41 | **checked** | فان قلت : التعيُّنات مطلقا على ما ذهبتم إليه لا يكون اموراً حقيقيَّة بل اعتباريَّة عدميَّة سواء كان مبدأ للاحكام الوجود… — Difference between non-real and real name-producing considerations retained without making determinations new substances. |
 | 48–52 | 42–47 | **checked-with-note** | لا يقال : فلا يبقى مع هذا الاعتبار حينئذ على إطلاقه الصرف ، فانَّ للعقل ان يجرّد عنه مع عروضه له ، إذ في وسع العقل ان ي… — Intellect's ability to abstract its own act and the gathering-of-opposites analogy remain, with unresolved تضايق/تعانق variants. |
+
+### SH-029 — A, printed pp. 131–132
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–5 | 1–3 | **checked** | أقول : لمَّا استلزمت الهويَّة المطلقة ، الظهور المذكور المسمى بالتجلى الأول ، المعبَّر عنه بالنسبة العلميَّة ، فلا بُدّ… — First tajallī is construed as a relation of knowledge; attributes are identical with essence under one determination yet accompanying under another. The English preserves this relativity rather than asserting an unqualified identity. |
+| 6–9 | 4–8 | **checked-with-note** | لما تقرر ان جميع المراتب حتى المحسوسات مشاهد في تلك الحضرة من حيث انّها عينها كما قال الشيخ : شعر انا أنت ، أنت نحن ، ن… — Arabic poetic quotation أنا أنت / أنت نحن / نحن هو and the encompassing presence are retained; original punctuation creates several short verse fragments. |
+| 10–13 | 9–12 | **checked** | فيكون التعيُّن المذكور متضمناً للشعور بالكمال الذاتي و الأسمائى ، الذي هو ظهور الذات على نفسها في تعيُّناتها في نفسها -… — Distinguishes essential from nominal perfection, most holy effusion and istijlāʾ; the fourfold division is an explicit exhaustive claim. |
+| 14–24 | 13–17 | **checked** | فان ظهور الذات في مظاهرها المتعيِّنة على نفسها اما ان يكون بحسب الظاهر ، أو بحسب المظهر ، و الأول لا يتصور الا من حيث ش… — The first main division is according to the manifest (ẓāhir), requiring a wholly comprehensive Perfect Human locus, not an abstract genus. |
+| 25–30 | 18–18 | **checked** | و حينئذ ، اما ان يكون ذلك الظهور من حيث جمعيَّة ذلك الشأن و كلّيتها ، كما في قوله تعالى : « وَ ما رَمَيْتَ إِذْ رَمَيْت… — Two subcases of manifestation from the manifest side: universality and particulars; Qurʾān 8:17 and Moses's speaking tree are retained as scriptural examples. |
+| 31–38 | 18–21 | **checked** | و الثاني ، و هو ان يكون ظهورها على نفسها بحسب المظاهر ، فلا يخلو من ان يكون ظهورها بحسب ذلك المظهر على نفسه بخصوصيَّة ا… — The second division is according to manifestation loci and subdivides self-manifestation of each individual and relational manifestation to another. |
+| 39–42 | 22–22 | **checked-with-note** | و يمكن استفادة هذه الأقسام كلُّها من قوله : « جمعاً و فرادى . . . » . — The final 'collectively and individually' excerpt is preserved; punctuation-splitting treats its printed ellipsis as four candidates, not four actual grammatical propositions. |
+
+### SH-031 — A, printed pp. 138–141
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–9 | 1–4 | **checked** | أقول : هذا إشارة إلى ما يمكن إيراده هاهنا و دفعه ، ذلك انَّه يلزم على ما ذهبتم إليه ، ان الماهيّات و الأعيان انّما تكون… — The objection hinges on intellect/known as correlative opposites and alleges two existentially separate subjects; it is not Ibn Turka's endorsed conclusion. |
+| 10–14 | 5–8 | **checked** | و أجاب عن هذه الشبهة بجوابين : أحدهما ، جدلىُّ في صورة النقض ، و هو انه لو صحَّ ما ذكرتموه من المقدمات الدالة على تقابل… — The first reply is expressly dialectical, reducing the rival premise by appeal to self-knowledge of the Necessary and immaterial angels. |
+| 15–23 | 9–14 | **checked** | و لما لم يندفع الشبهة بهذا الجواب بل ما زاد الا تعميماً لمواردها ، أشار إلى وجه تحقيقي به ينقلع مادة الشبهة عن أصلها ، … — The dialectical reply is judged insufficient; the second answer distinguishes notional opposition from real existential distinction and uses iʿtibār as determining consideration. |
+| 24–29 | 15–17 | **checked-with-note** | اما بيان ان الماهيات يكفى في حصولها مجرّد الاعتبار ، فهو انَّ الماهيّات من حيث هي مغايرة هي مغايرة للذات ، لا تكون الا … — Quiddities qua distinct are determining relations, in a register where no other exists outside absolute being. Labīd's quoted hemistich is distinguished from an independent prophetic utterance. |
+| 30–40 | 17–23 | **checked** | لا يكون لها تحقُّق أصلًا الا ان تلك الحقيقة لمّا اقتضت الظهور بحسب الجلاء و الاستجلاء ، اختلفت مراتب ظهوراتها في الجلاء… — Degrees of appearance differ in clarity relative to our cognitive faculties, explicitly not as differences intrinsic to the undetermined reality. |
+| 41–51 | 24–27 | **checked** | كنور الشمس مثلًا ، فانّه إذا وقع شعاعها على أجسام صيقلة ، مختلفة الألوان ، كقِطَعٍ من الزُّجاج الملوّنة مثلًا ، لا بدَّ… — Light and colored-glass analogy: colors belong to the mediating glass, not to light intrinsically. This is the commentator's analogy rather than an optical experiment. |
+| 52–54 | 28–28 | **unresolved-reading** | لكن للزجاج بدا ، شعاعة ، فترى فيه الوان . — The electronic Arabic للزجاج بدا شعاعة is syntactically disturbed; English 'radiance appears through the glass' is contextual, not a manuscript-established emendation. |
+| 55–66 | 29–32 | **checked** | فظهر ، انّ حصول تلك الماهيّات ، انّما هو باعتبار تعيُّنات اعتبارية . فعلم ايضاً من هذا ، ان لا تمايز بينها بالفعل بحسب … — No extramental distinction is asserted specifically 'at this level' for the quiddities insofar as distinct, not a categorical denial of worldly differences. |
+| 67–73 | 33–35 | **checked** | نعم ، انّها باعتبار كونها عين تلك الهويَّة في الخارج ، يكون حاصلة لها ، حصول نفسها لنفسها ، فاعتبار هذا الحصول النسبي و… — Identity in external being under a specified respect is distinguished from relative considered existence; the closing relation is not converted into an independent substance. |
+| 74–76 | 36–37 | **checked** | تدبّر ما سمعت ، فانَّه غاية التوضيح في هذا المقام ، لعل اللَّه يوصلك إلى المرام . — Closing injunction to reflect and prayer correctly attributed to the author. |
+
+### SH-017 — A, printed pp. 90–93
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–4 | 1–2 | **checked** | أقول : هذا إشارة إلى بيان انتفاء الصورة الثانية من الصور الأربع عن الطبيعة الملزومة بوجه يعلم منه معنى قول المحققين عن … — Initial exclusion of the second case and meaning of the Necessary's determination being itself are retained. |
+| 5–11 | 3–4 | **checked** | و تقرير ذلك ، ان معنى قولهم ، تعيُّن الواجب نفسه في الأعيان ، هو انَّه بنفسه ممتاز عن ساير ما عداه ، لا انَّه يقتضي صفة… — Self-distinction is not differentiation through a separately added external quality; the dependence reductio follows. |
+| 12–24 | 5–10 | **checked** | ثمَّ انّه يمكن ان يتوهم هاهنا ، ان ذات الواجب حينئذ ، يلزم ان يكون عبارة عن مجرد الشخصيَّة ، فانّه لو كان مرادهم بكون ت… — Mere external thisness is rejected as the Necessary's essence because such an aggregate of relational accidents does not intellect itself or others. |
+| 25–28 | 11–11 | **checked** | ثمَّ انّه لما أبطل ان يكون نفس الواجب هي الشخصية ، أراد ان يبيِّن معنى قولهم ، ان التعيّن نفس الواجب على ما هو الحق عند… — Self-determination gives the Necessary what individual thisness gives a particular without identifying God with a heap of accidents. |
+| 29–34 | 12–16 | **checked** | فلئن قيل : احد الأمرين لازم ، اما عدم انحصار الصور المذكورة في الأربعة ، أو صحَّة عروض الاشتراك للطبيعة الواجبة ، ضرورة… — Two-horned objection—non-exhaustiveness of fourfold division or common predication—is fully retained as adversary's objection. |
+| 35–40 | 17–21 | **checked** | قلنا : انّما يستحيل ذلك ان لو استلزم صحَّة عروض الاشتراك المقابل للامتياز و التشخُّص لتلك الطبيعة ، و ليس كذلك ، فان تش… — Reply disambiguates shared meaning from commonality opposed to self-distinction and denies a separate counterpart. |
+| 41–51 | 22–27 | **checked** | و لهذا الكلام بلسان اهل النظر توضيح يتوقف على مقدمة ذوقيَّة يحتاج المتفطِّن في إدراكها إلى تلطيف السرِّ و تدقيق النظر و… — Two kinds of determination—opposition versus comprehensiveness—distinguished by positive contradictory attributes versus a feature lacking in the other. |
+| 52–55 | 28–31 | **checked-with-note** | و امارات التميز في القسم الأول منه لا بُدَّ و ان يكون خارجاً عن المتعين ضرورة انّها نسب أو مبادى نسب بين الأمور المتقاب… — Marks of opposition are extrinsic relations; marks of comprehensiveness are intrinsic to being the whole/general, as an analogy not identification of the Necessary with a physical aggregate. |
+| 56–65 | 32–35 | **checked-with-note** | و لا شكَّ ان الهيئة المجموعيَّة و الصور الاحاطيَّة التي للأشياء ، ليس لها حقيقة - وراء - اجتماع تلك الخصوصيات واحديَّة … — Comprehensive form's unity of gathering and Qurʾān 112:3–4 retained; the terse two positive opposition-kinds are not overexplained. |
+| 66–70 | 36–37 | **checked** | و إذا تقرَّر هذا ، عرفت معنى قوله ، ان الواجب يفيد لنفسه ما يفيد شخصيَّة الشخص ، و تأمَّل في هذه النكتة ، فانّها منطوية… — Concluding recurrence of individuality analogy and exhortation is present. |
+
+### SH-032 — A, printed pp. 141–143
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–8 | 1–3 | **checked** | أقول : لمّا كان التعيُّن الأول الجامع بين الواحديَّة و الأحديَّة ، المعبّر عنه بالوحدة الذاتيَّة ، تارة ، و بالهويَّة ا… — Undifferentiated first determination gathers aḥadiyya and wāḥidiyya; no real difference of names is being asserted at that initial register. |
+| 9–14 | 4–6 | **checked** | فلا مجال فيه حينئذ ، ان تظهر تلك التعيُّنات على ما هو مقتضى الكمال الأسمائى ، بان تظهر تلك الهويَّة في التعيُّنات الأسم… — Hidden levels and letters still unarticulated within breath preserve the causal analogy; there is no premature physical creation claim. |
+| 15–19 | 7–7 | **checked** | فحينئذ ، اقتضت تلك الهويَّة الظهور و البروز ، لكن لا من حيث ذاتها ، بل من حيث اعتباراتها و شئونها ، على مقتضى أسئلتهم ب… — Manifestation is predicated through its relations and affairs, expressly not the unconditioned essence qua essence. |
+| 20–26 | 8–10 | **checked-with-note** | فانبعث من ذلك التجلي و كنه بطونه ، ميل ارادى و حركة حُبيَّة و شوق عشقى بحسبه تجلى ، بتعيُّن آخر ، و بنوع اظهر ، على مثا… — Movement of love, volitional inclination and a second disclosure translated with source's syntactic variants around بحسبه تجلى noted. |
+| 27–34 | 11–14 | **checked** | و يسمى هذا التجلي باصطلاحهم ، النفس الرحمانى ، اما لأنَّه كالنَفَس الإنساني في كونه حقيقة بخاريَّة بسيطة الذات ، انّما … — Two grounds for calling it the Breath of the All-Merciful distinguished: formal articulation and relief of distress. |
+| 35–41 | 15–18 | **checked-with-note** | كما قال الشيخ « رضى اللَّه عنه » في فصوص الحكم : « العالم ظهر في النفس الرحمانى الذي نفّس اللَّه به ، عن الأسماء الإلهي… — Ibn ʿArabī's quote reproduced as a quotation within the grandson's commentary; not an independently collated entire source. |
+| 42–44 | 19–26 | **checked-with-note** | شعر : الكل في عين النفس * - كالضوء في ذات الغلس - و العلم بالبرهان في * - سلخ النهار لمن نعس - فيرى الذي قد قلته * - رؤ… — All eight couplets retained; ellipses and uncertain images remain literal or bracketed, not rewritten as modern paraphrase. |
+| 45–45 | 27–27 | **checked** | فتأمل . — Final author's explanatory remark and imperative to reflect are distinguished from the preceding Ibn ʿArabī verse. |
 
 ## Editorial status and next passages
 
