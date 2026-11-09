@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-human-clause-review-v1",
   "date": "2026-11-09",
-  "reviewScope": "1,427 Arabic punctuation-clause candidates in 65 bilingual units (QT001–040 and 25 selected sharḥ units), with specific errors and source variants tracked; remaining 4,093 only inventoried.",
+  "reviewScope": "Manual Arabic–English comparative review of 1,574 punctuation-delimited clauses in 75 units: original matn QT001–050 and 25 selected Tamhīd commentary units. Remaining 3,946 not individually certified.",
   "sourceBasis": "Current repository JS matn/commentary modules, retained edition N introduction and edition A main/conclusion",
   "method": "Source clause numbers are computed from Arabic punctuation. English ranges are manually matched, not proportional autoalignment. All segments in these eleven sections must be covered exactly once; unresolved readings remain explicit.",
   "units": [
@@ -2321,9 +2321,315 @@
           "note": "The divine self-apprehension claim remains attributed to the author and grounded in the comprehensive manifestation."
         }
       ]
+    },
+    {
+      "id": "QT-041",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 4,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked-with-note",
+          "note": "The embedded mirror quotation (closely related to Fuṣūṣ) is explicitly examined critically; nested quotation not attributed as the ancestor's original formulation."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 9,
+          "enStart": 2,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Intellectual vision contrasted with sensory sight and First Intellect as possible mirror."
+        },
+        {
+          "arStart": 10,
+          "arEnd": 14,
+          "enStart": 4,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Sensory object as corporeal accident versus derivative sight of matter underlines the argument, without mistaking it for modern scientific observation."
+        }
+      ]
+    },
+    {
+      "id": "QT-042",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 6,
+          "enStart": 1,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Objection claims only comprehensive Perfect Human preserves all divine names and forms, not the First Intellect."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 10,
+          "enStart": 4,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Reply denies that the whole identity is directly apprehended in every level; some forms remain intellectually unseen."
+        }
+      ]
+    },
+    {
+      "id": "QT-043",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 6,
+          "enStart": 1,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Three alternatives—identity with human, unrestricted being, or composite of determinations—are distinguished."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 12,
+          "enStart": 4,
+          "enEnd": 6,
+          "status": "checked",
+          "note": "Macrocosm analogy to a human formal whole treated as proposed hypothesis, not proved natural unity."
+        },
+        {
+          "arStart": 13,
+          "arEnd": 18,
+          "enStart": 7,
+          "enEnd": 9,
+          "status": "checked",
+          "note": "Temporal heterogeneity of cosmic species and innumerable perfections prevent any one embodied individual from exhausting the universal image."
+        },
+        {
+          "arStart": 19,
+          "arEnd": 21,
+          "enStart": 10,
+          "enEnd": 11,
+          "status": "checked",
+          "note": "Seal of Prophets and Seal of Saints perfections are discussed as the author's dialectical constraints."
+        }
+      ]
+    },
+    {
+      "id": "QT-044",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 4,
+          "enStart": 1,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Dilemma: if perfected self-knowledge not a perfection, it cannot be final cause; if real perfection, dependence follows."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 7,
+          "enStart": 4,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Dependence on a contingent originated composite would negate necessity in every respect."
+        },
+        {
+          "arStart": 8,
+          "arEnd": 10,
+          "enStart": 6,
+          "enEnd": 7,
+          "status": "checked",
+          "note": "Reply to being 'other' clarifies dependence precisely on receptive plurality and conjunction."
+        }
+      ]
+    },
+    {
+      "id": "QT-045",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 4,
+          "enStart": 1,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Objection: stripping restraints and suspending bodily faculties appears incompatible with comprehensive manifestation."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 8,
+          "enStart": 4,
+          "enEnd": 6,
+          "status": "checked-with-note",
+          "note": "The opponents' description of ascetic training and cognitive faculties is accurately framed as reported argument."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 12,
+          "enStart": 7,
+          "enEnd": 9,
+          "status": "checked",
+          "note": "Absent analogues to rebellious spirits and beasts listed as an objection, not an endorsement of their literal absence."
+        },
+        {
+          "arStart": 13,
+          "arEnd": 14,
+          "enStart": 10,
+          "enEnd": 11,
+          "status": "checked",
+          "note": "Celestial spheres' supposed incorruptibility is source's inherited cosmology, explicitly labelled as such."
+        }
+      ]
+    },
+    {
+      "id": "QT-046",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 5,
+          "enStart": 1,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Objection to suprarational perfection treats its alleged ineffability and unavailability to bodily powers as a difficulty for the opponents."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 9,
+          "enStart": 5,
+          "enEnd": 6,
+          "status": "checked",
+          "note": "Death versus voluntary attention as proposed condition for complete detachment distinguished."
+        },
+        {
+          "arStart": 10,
+          "arEnd": 12,
+          "enStart": 7,
+          "enEnd": 8,
+          "status": "checked",
+          "note": "Natural limitations allegedly remaining even after death are included, not suppressed."
+        }
+      ]
+    },
+    {
+      "id": "QT-047",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 8,
+          "enStart": 1,
+          "enEnd": 3,
+          "status": "checked-with-note",
+          "note": "Humoral counter-accusation is analogical/dialectical, not endorsed as medical diagnosis or universal criticism of Sufi practice."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 16,
+          "enStart": 4,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Excessive hunger and sleeplessness rendered accurately for السهر here, unlike corrected SH-058 السهو."
+        },
+        {
+          "arStart": 17,
+          "arEnd": 19,
+          "enStart": 6,
+          "enEnd": 7,
+          "status": "checked",
+          "note": "Weakening of constitution and supposed cognitive defects are presented as opponent's claims."
+        }
+      ]
+    },
+    {
+      "id": "QT-048",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 6,
+          "enStart": 1,
+          "enEnd": 6,
+          "status": "checked",
+          "note": "Four degrees of comprehensiveness and differentiated knowledge presented in sequence."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 12,
+          "enStart": 7,
+          "enEnd": 9,
+          "status": "checked-with-note",
+          "note": "Reply to 'only intellectual' explicitly cites all levels, including complete self-apprehension and source-page interleaved Persian marginalia excluded."
+        },
+        {
+          "arStart": 13,
+          "arEnd": 19,
+          "enStart": 10,
+          "enEnd": 14,
+          "status": "checked",
+          "note": "Intellectual, estimative, imaginative and sensory modes gathered together with corresponding receptivities."
+        }
+      ]
+    },
+    {
+      "id": "QT-049",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Form of whole characterized through active determinations and human receptivities."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 10,
+          "enStart": 3,
+          "enEnd": 3,
+          "status": "corrected",
+          "note": "The one فلئن قيل objection has two branches; an earlier English translation incorrectly introduced 'we reply' before the second branch. Both horns now precede قلنا."
+        },
+        {
+          "arStart": 11,
+          "arEnd": 11,
+          "enStart": 3,
+          "enEnd": 3,
+          "status": "corrected",
+          "note": "The sole قلنا is the beginning of reply, which contrasts divine necessary aspects from possible created aspects, not a second objection."
+        },
+        {
+          "arStart": 12,
+          "arEnd": 18,
+          "enStart": 4,
+          "enEnd": 8,
+          "status": "checked",
+          "note": "One unrestricted reality under hidden/manifest/locus relations, while not identical under differing conceptual predications."
+        }
+      ]
+    },
+    {
+      "id": "QT-050",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Balanced elemental body and faculties are interpreted through the author's philosophical physiology."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 7,
+          "enStart": 4,
+          "enEnd": 6,
+          "status": "checked",
+          "note": "A naturally one body–soul substance distinguished from bare plurality of principles."
+        },
+        {
+          "arStart": 8,
+          "arEnd": 10,
+          "enStart": 7,
+          "enEnd": 9,
+          "status": "checked",
+          "note": "The cosmos can have aggregative unity, not natural species-unity in this argument; the proofs are deferred."
+        }
+      ]
     }
   ],
-  "claimedManuallyComparedArabicClauses": 1427,
+  "claimedManuallyComparedArabicClauses": 1574,
   "issues": "Three passages corrected; one passage contains two connected technical-semantic corrections; additional textual cruxes flagged without conjectural emendation.",
   "noWitnessesCollated": true
 }
