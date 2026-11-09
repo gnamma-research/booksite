@@ -26,8 +26,8 @@
       "additionalWitnesses": 2,
       "additionalGlossaryTerms": 47,
       "independentArabicCollation": false,
-      "adoptedPrintedEditorialEmendations": 3,
-      "supplementaryCriticalNotes": 6
+      "adoptedPrintedEditorialEmendations": 7,
+      "supplementaryCriticalNotes": 8
     },
     "expertReviewedUnitsVerified": 0,
     "expertReviewedUnitStatus": "Not documented; zero units are claimed to have passed independent specialist review",
@@ -45,7 +45,7 @@
     "NihayaSupplementSha": "65f3e068b0d44eec4c96ff13b05c45a57bac4c4a",
     "MuzaffarMapSha": "6cae1741a3f59039fe2764178a3ad3140d16530a",
     "maintenanceNote": "2026-11-09: appended four new al-Manṭiq language/signification passages; all remain working translations with no documented independent specialist verification.",
-    "latestTextualDecision": "N-VI-03: singular 'الصورة الطبيعية' adopted from 1428 editor, older plural retained."
+    "latestTextualDecision": "N-VI-15/16: corrected agent/perfection and correlative predicate language following the 1428 editor's explicit corrected copy readings (vol. 1 pp. 209 and 218)."
   },
   "method": "One row per locally stored authorial passage. Presence of Arabic or English is a technical coverage flag, not a scholarly judgment. Same-source normalised PDF comparison has known limitations. Historical attribution issues are isolated in critical notes.",
   "sourceStatus": "Full original Muzaffar Arabic and English remain absent from the local corpus outside the 25 selected passages.",
@@ -4420,16 +4420,19 @@
       },
       "arabicPresent": true,
       "englishPresent": true,
-      "arabicCharacters": 7477,
-      "englishCharacters": 11634,
+      "arabicCharacters": 7475,
+      "englishCharacters": 11669,
       "sourceEditionReviewed": "additional 1428 two-volume witness identified, NOT yet exhaustively collated",
       "sourceParityPercent": null,
-      "editorialNotes": 1,
-      "supplementalCriticalNoteIds": [],
-      "flag": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [
+        "N1428-VI15-01"
+      ],
+      "flag": "Two later editor corrections to agent's secondary perfections and knowledge as the act of distinguishing; earlier 1417 forms preserved.",
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Compare the edited reading against independently collated early witnesses and the argument in later commentaries.",
+      "textualLocusAssessment": "Editorial conjecture explicitly identified in the revised 1428 printed edition; prior 1417 reading preserved; not independently certified by manuscripts."
     },
     {
       "id": "N-VI-16",
@@ -4444,16 +4447,19 @@
       },
       "arabicPresent": true,
       "englishPresent": true,
-      "arabicCharacters": 4855,
-      "englishCharacters": 7775,
+      "arabicCharacters": 4858,
+      "englishCharacters": 7792,
       "sourceEditionReviewed": "additional 1428 two-volume witness identified, NOT yet exhaustively collated",
       "sourceParityPercent": null,
-      "editorialNotes": 1,
-      "supplementalCriticalNoteIds": [],
-      "flag": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [
+        "N1428-VI16-01"
+      ],
+      "flag": "Two later editor corrections allocate an abstracted relational predicate to each relatum rather than jointly to both.",
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review."
+      "nextReview": "Compare the edited reading against independently collated early witnesses and the argument in later commentaries.",
+      "textualLocusAssessment": "Editorial conjecture explicitly identified in the revised 1428 printed edition; prior 1417 reading preserved; not independently certified by manuscripts."
     },
     {
       "id": "N-VI-17",
