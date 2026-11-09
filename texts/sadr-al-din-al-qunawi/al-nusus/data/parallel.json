@@ -11,7 +11,7 @@
       "author": "Ṣadr al-Dīn al-Qūnawī",
       "type": "primary-matn",
       "content_status": "Online-witness translation begun; no manuscript collation",
-      "entry_count": 35,
+      "entry_count": 42,
       "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
     },
     {
@@ -1207,7 +1207,7 @@
       "order": 10,
       "locator": "transcription printed pp. 260–261; forum lines 601–603",
       "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
-      "status": "translated-online-witness",
+      "status": "attribution-provisional-appended-text",
       "arabic": "نصّ شريف جدّا: اعلم أن الحق هو الوجود المحض لا اختلاف فيه، وأنه واحد وحدة حقيقية، لا يتعقل في مقابلة كثرة، ولا يتوقف تحققها في نفسها، ولا تصورها في العلم الصحيح المحقق على تصور ضد لها، بل هي لنفسها ثابتة مثبتة لا مثبتة. وقولنا: وحدة للتنزيه والتفهيم لا للدلالة على مفهوم الوحدة على نحو ما هو متصور في الأذهان المحجوبة. وإذا عرفت هذا فنقول: إنه سبحانه من حيث اعتبار وحدته المنبه عليها، وتجرده عن المظاهر، وعن الأوصاف المضافة إليه من حيث المظاهر، وظهوره فيها لا يدرك، ولا يحاط به، ولا يعرف، ولا ينعت، ولا يوصف.",
       "english": "An especially noble text. Know that the Real is pure wujūd, in which there is no difference, and that He is one with a real unity that is not conceived as the opposite of multiplicity. Neither its reality in itself nor its conception in sound, realised knowledge depends upon conceiving an opposite. Rather, it is self-subsisting and makes other things evident, without requiring another to establish it. Our word ‘unity’ is employed for transcendence and instruction, not to indicate the concept of unity as entertained by veiled minds. Once this is understood, we say: insofar as one considers the unity just described, His freedom from loci of manifestation and from the attributes related to Him through them, and His manifestation within them, He is not apprehended, encompassed, known, qualified or described.",
       "tags": [
@@ -1216,7 +1216,7 @@
         "tanzih",
         "mazahir"
       ],
-      "notes": "Important textual variant: «ثابتة مثبتة لا مثبتة» is grammatically difficult in the online witness; the tentative translation follows a possible vocalisation, not a verified reading. Requires collation. This is only the opening of the long 'one wujūd' text."
+      "notes": "Important textual variant: «ثابتة مثبتة لا مثبتة» is grammatically difficult in the online witness; the tentative translation follows a possible vocalisation, not a verified reading. Requires collation. This is only the opening of the long 'one wujūd' text. Printed text footnote at p. 260/261 states its exemplar introduced this as an appended text (نص ملحق); verify authorial status before critical publication."
     },
     {
       "id": "QUN-NU-020-B",
@@ -1225,7 +1225,7 @@
       "order": 11,
       "locator": "transcription printed pp. 261–262; forum lines 615–616",
       "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي",
-      "status": "translated-online-witness",
+      "status": "attribution-provisional-appended-text",
       "arabic": "الوجود في حق الحق عين ذاته فيما عداه أمر زائد على حقيقته، وحقيقة كل موجود عبارة عن نسبة تعينه في علم ربه أزلا، ويسمّى باصطلاح المحققين من أهل اللّه تعالى عينا ثابتة، وباصطلاح غيرهم: ماهية، والمعلوم المعدوم والشيء الثابت ونحو ذلك. والحق سبحانه من حيث وحدة وجوده لم يصدر عنه إلا واحد؛ لاستحالة إظهار الواحد وإيجاده من حيث كونه واحدا، ما هو أكثر من واحد، لكن ذلك الواحد عندنا هو الوجود العام المفاض على أعيان المكونات، ما وجد منها وما لم يوجد مما سبق العلم بوجوده، وهذا الوجود مشترك بين القلم الأعلى الذي هو أول موجود، المسمّى أيضا بالعقل الأول، وبين سائر الموجودات ليس كما ذكره أهل النظر من الفلاسفة.",
       "english": "In the Real, wujūd is identical with His Essence; in what is other than Him, it is additional to that thing's reality. The reality of every existent is the relation of its eternal determination in its Lord's knowledge. In the terminology of the realised people of God this is called a fixed entity; in other terminology it is a quiddity, a known nonentity, an established thing, and the like. The Real, in respect of the unity of His wujūd, gives rise to only one, for what is one precisely as one cannot bring forth a multiplicity as such. But for us this one is the general wujūd effused upon the entities of things that come to be—both those that have appeared and those whose future existence is already known. This wujūd is shared by the Highest Pen, which is the first existent and also called the First Intellect, and by all other existents, though not in the manner described by the speculative philosophers.",
       "tags": [
@@ -1235,7 +1235,140 @@
         "fayd",
         "aql-awwal"
       ],
-      "notes": "This is an excerpt, not the end of the long text. Do not equate ‘shared’ here with univocal instantiation without examining the surrounding qualifications."
+      "notes": "This is an excerpt, not the end of the long text. Do not equate ‘shared’ here with univocal instantiation without examining the surrounding qualifications. Printed text footnote at p. 260/261 states its exemplar introduced this as an appended text (نص ملحق); verify authorial status before critical publication."
+    },
+    {
+      "id": "QUN-NU-020-C",
+      "order": 11.01,
+      "section": "The twentieth text: why sensible appearances are not wujūd itself",
+      "locator": "Forum source with printed page labels 260–261, lines 604 and 609–614; an appended-text attribution warning applies",
+      "arabic": "وكل ما يدرك في الأعيان، ويشهد من الأكوان بأي وجه كان أدركه الإنسان، وفي أي حضرة حصل الشهود، ما عدا الإدراك المتعلق بالمعاني المجردة والحقائق في حضرة غيبها بطريق الكشف، ولذلك قلت في الأعيان: أي ما أدرك في مظهر ما كان، فإنما ذلك المدرك ألوان وأضواء، وسطوح مختلفة الكيفية متفاوتة الكمية، تظهر أمثلتها في عالم المثال المتصل بنشأة الإنسان، أو المنفصل عنه من وجه على نحو ما هو في الخارج، أو ما مفرداته في الخارج وكثرة الجميع محسوسة، والأحدية فيها معقولة أو محدوسة، وكل ذلك أحكام الوجود، أو قل صور نسب علمه، أو صفات لازمة له من حيث اقترانه بكل عين موجودة بسر ظهوره، فيظهر فيها وبها ولها بحسبها كيف شئت، وأطلقت ليس هو الوجود. فإن الوجود واحد، ولا يدرك بسواه من حيث ما يغايره على ما مرّ من أن الواحد من كونه واحدا لا يدرك بالكثير من حيث هو كثير وبالعكس. ولم يصح الإدراك للإنسان من كونه واحدا وحدة حقيقية كوحدة الوجود، بل إنما صحّ له ذلك من كونه حقيقة متصفة بالوجود والحياة وقيام العلم به، وثبوت المناسبة بينه وبين ما يروم إدراكه، وارتفاع الموانع العائقة عن الإدراك، فما أدرك ما أدركه إلا من حيث كثرته، لا من حيث أحديته، فتعذّر إدراكه من حيث هو ما لا كثرة فيه أصلا لما مرّ. ولهذه النكتة أسرار نفيسة ذكرتها بتفصيل أكثر من هذا في كتابي المسمّى بـ«كشف سر الغيرة عن سر الحيرة». وسيرد أيضا في داخل الكتاب ما يزيد بيان لما ذكرناه وأصّلناه إن شاء اللّه تعالى. ثم نرجع إلى تمام ما كنا بسبيله فنقول:",
+      "english": "Everything perceived among concrete entities and witnessed among the things of the cosmos, by whatever faculty and in whatever presence witnessing occurs—apart from an unveiled apprehension of abstract meanings and realities in their unseen presence—is, insofar as it is perceived in a locus of manifestation, an array of colours, lights and surfaces, differing in quality and measure. Their likenesses may appear within the imaginal world connected with human embodiment, or in one sense separate from it, according to what exists outwardly or to elements found outwardly. The multiplicity of such appearances is sensible; their unity is grasped intellectually or intuitively. All these are judgements or effects of existence, or forms of the relations of its knowledge, or concomitant attributes arising as it is joined, through the mystery of manifestation, to each existing entity. It appears in, through, and for each thing according to that thing. Yet none of these appearances is existence itself. For existence is one, and, as already argued, unity precisely as unity cannot be perceived through multiplicity precisely as multiplicity, nor the reverse. A human being does not perceive simply through an unqualified unity such as that of existence. Human apprehension is possible because the person is a reality endowed with existence, life and knowledge, because some proportion or correspondence obtains between the perceiver and the object sought, and because obstacles to apprehension are removed. A human being therefore perceives through differentiated capacities, not through pure unicity; that which is utterly without multiplicity cannot be apprehended as such. I have discussed the subtleties of this point more fully in my book *Unveiling the Secret of Jealousy from the Secret of Bewilderment*, and the present work will return to it. Let us resume the subject.",
+      "tags": [
+        "wujud",
+        "idrak",
+        "wahda",
+        "kathra",
+        "mithal"
+      ],
+      "notes": "The footnote at the transition to this long text says the exemplar calls it ‘an appended text’. Its place and attribution require collation. Parenthetical descriptions of sensible colours and surfaces do not reduce existence to a physical substance.",
+      "work": "QUN-NU",
+      "status": "attribution-provisional-appended-text",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-020-D",
+      "order": 11.02,
+      "section": "The fixed entities are not brought into being as additional things",
+      "locator": "Forum source printed p. 262, lines 616 (end), 619–623; a printed editor marks this as an appended text",
+      "arabic": "فإنه ما ثمّ عند المحققين إلا الحق والعالم، والعالم ليس بشيء زائد على حقائق معلومة للّه تعالى، كما أشرنا إليه من قبل، متصفة بالوجود ثابتا. والحقائق من حيث معلوميتها وتعين صورها في علم الحق الذاتي الأزلي يستحيل أن تكون مجعولة؛ لاستحالة قيام الحوادث بذات الحق سبحانه وتعالى، واستحالة أن يكون الحق ظرفا لسواه أو مظروفا، ولمفاسد أخر لا تخفى على المستبصرين فافهم. ولهذا لا توصف بالجعل عند المحققين من أهل الكشف والنظر أيضا؛ إذ المجعول هو الوجود، فما لا وجود له لا يكون مجعولا، ولو كان كذلك لكان للعلم القديم في تعين معلوماته فيه أزلا أثر مع أنها غير خارجة من العالم بها، فإنها معدومة لأنفسها، لا ثبوت لها إلا في نفس العالم بها. فلو قيل بجعلها لزم إما مساوقتها للعالم بها في الوجود، وإما أن يكون العالم بها محلا لقبول الأثر من نفسه في نفسه، وظرفا لغيره أيضا كما مرّ، وكل ذلك باطل؛ لأنه قادح في صرافة وحدته سبحانه، وقاض بأن الوجود المفاض عرض للأشياء الموجودة لا المعدومة، وكل ذلك محال من حيث إنه تحصيل للحاصل ومن وجوه أخر، لا حاجة إلى التطويل بذكرها فافهم. فثبت أنها من حيث ما ذكرنا غير مجعولة، وليس ثمة وجودان كما ذكرنا، بل الوجود واحد، وأنه مشترك بين سائرها، مستفاد من الحق سبحانه وتعالى.",
+      "english": "According to the realised knowers there are only the Real and the world. The world is nothing additional to realities known to God, as we said earlier, insofar as they are established as things characterised by existence. Such realities, considered as being known and as having their forms determined in the Real's eternal essential knowledge, cannot themselves be made. To suppose otherwise would require new events to subsist in the divine Essence or the Real to be a container for something other than Himself—both impossible on the account being given. For this reason the realised exponents of unveiling and of reflection alike refuse to call the realities, under that consideration, ‘made’. What is brought into being is existence; what has no existence is not itself a thing that has been produced. Were these eternal objects of knowledge produced in that respect, eternal knowledge would have to be affected by the determination of its objects, even though those objects are not outside the one who knows them. In themselves they are nonexistent and possess establishment only in the knowledge of their knower. To call them made would imply either that they share the knower's own existence, or that the knower receives into Himself an effect from Himself and becomes a receptacle of another. Both implications compromise the pure unity under discussion. It would also make the bestowed existence a supervening attribute of things that were already existent, a futile production of what already exists. Hence these known realities, in the respect stated, are not made. Nor are there two existences: existence is one, bestowed upon them all from the Real.",
+      "tags": [
+        "ayan-thabita",
+        "mahiyya",
+        "ilm",
+        "ijad",
+        "wujud"
+      ],
+      "notes": "Distinguish ‘fixed in God's knowing’ from separately existing uncreated objects. The printed witness’s ‘appended text’ warning remains unresolved; this is not a manuscript-verified authorial claim.",
+      "work": "QUN-NU",
+      "status": "attribution-provisional-appended-text",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-020-E",
+      "order": 11.03,
+      "section": "One existence considered in itself and in its determinations",
+      "locator": "Forum source printed pp. 262–263, lines 624–631, appended-text warning",
+      "arabic": "ثم إن هذا الوجود الواحد العارض للممكنات المخلوقة ليس بمغاير في الحقيقة للوجود الحق الباطن المجرد عن الأعيان والمظاهر إلا بنسب واعتبارات، كالظهور والتعين والتعدد الحاصل بالاقتران وقبول حكم الاشتراك، ونحو ذلك من النعوت التي تلحقه بواسطة التعلق بالمظاهر. وينبوع مظاهر الوجود باعتبار اقترانه حضرة تجليه، ومنزل تعينه وتدليه العماء الذي ذكره النبي صلى اللّه عليه وسلم، وهو مقام التنزل الرباني، ومنبع الجود الذاتي الرحماني من غيب الهوية، وحجاب عز الأنية، وفي هذا العماء يتعين مرتبة النكاح الأول الغيبي الأزلي، الفاتح حضرات الأسماء الإلهية بالتوجهات الذاتية الأزلية، وسنفك ختم مفتاح مفاتيحه عن قريب إن شاء اللّه تعالى. فللوجود إن فهمت اعتباران: أحدهما من كونه وجودا فحسب، وهو الحق، وإنه من هذا الوجه كما سبقت الإشارة إليه لا كثرة فيه، ولا تركيب، ولا صفة، ولا نعت، ولا اسم، ولا رسم، ولا نسبة، ولا حكم، بل هو وجود بحت. وقولنا: (وجود) هو للتفهيم، لا أن ذلك الاسم حقيقي له، بل اسمه عين صفته، وصفته عين ذاته. وكماله نفس وجوده الذاتي الثابت له من نفسه لا من سواه، وحياته وقدرته عين علمه، وعلمه بالأشياء أزلا عين علمه بنفسه، بمعنى أنه علم نفسه بنفسه، وعلم كل شيء بنفس علمه بنفسه.",
+      "english": "This one existence bestowed upon created possibles does not differ in its underlying reality from the true, inward existence stripped of the entities and loci in which it appears, except by relations and conceptual considerations: appearance, determination, the multiplicity that arises through association, the attribution of sharing, and similar qualifications introduced by relation to manifestations. The source of the loci of existence, considered in its association with them, is the Presence of its self-disclosure; the rank of its determination and descent is the ‘Cloud’ (*ʿamāʾ*) described in a prophetic report. The text understands this as the rank of divine descent and the source of merciful generosity from the unseen of Identity, veiled by the majesty of divine I-ness. In this Cloud the degree of the first, eternal, unseen conjunction becomes determined and opens the Presences of the divine Names by eternal essential orientations; its details are promised later. If you understand, existence has two considerations. First, considered simply as existence, it is the Real, and under that respect there is no multiplicity, composition, attribute, distinguishing description, name, form, relation or judgement: it is sheer existence. Even the word ‘existence’ is an aid to understanding, not His properly delimiting name. His name is His attribute and His attribute His Essence; His perfection is His intrinsic existence, due to Himself and not to another. His life and power are identical with His knowledge, and His eternal knowledge of things is identical with His self-knowledge: He knows Himself through Himself and everything through that same knowledge of Himself.",
+      "tags": [
+        "wujud",
+        "itibar",
+        "ama",
+        "tajalli",
+        "asma"
+      ],
+      "notes": "The wording ‘same reality of existence’ should not be read as making one creature's contingent quiddity identical with the Essence; its qualifications are governed by consideration. The prophetic ʿamāʾ report remains to be source-checked. This may be an appended passage.",
+      "work": "QUN-NU",
+      "status": "attribution-provisional-appended-text",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-020-F",
+      "order": 11.04,
+      "section": "Opposed descriptions do not qualify the Essence under the same consideration",
+      "locator": "Forum source printed p. 263, lines 632–635, appended-text warning",
+      "arabic": "تتحد فيه المختلفات، وتنبعث منه المتكثرات هي دون أن تحويه أو يحويها، أو تبديه عن بطون متقدم، أو هو بنفسه يبرزها فيبديها، له وحدة هي محتد كل كثرة، وبساطة هي عين كل تركيب آخر، وأول مرة كل ما يتناقض في حق غيره فهو له على أكمل الوجوه ثابت، وكل من نطق عنه لا به، ونفى عنه كل أمر مشتبه وحصره في مدركه، فهو أبكم ساكت، وجاهل مباهت، حتى يرى به كل ضد في نفس ضده، بل عينه مع تميزه بين حقيقته وبينه. وحدته عين كثرته، وبساطته عين تركيبه، وظهوره نفس بطونه، وآخريته عين أوليته، لا ينحصر في المفهوم من الوحدة أو الوجود، ولا ينضبط لشاهد ولا في مشهود له أن يكون كما قال وظهر كما يريد، دون الحصر في الإطلاق والتقييد، له المعنى المحيط بكل حرف، والكمال المستوعب كل وصف، كل ما خفي عن المحجوبين حسنه، مما يتوهم فيه شين ونقص، فإنه متى كشف عن ساقه بحيث يدرك صحة انضيافه إليه ألقى فيه صورة الكمال، ورئي أنه منصة لتجلي الجلال أو الجمال. سائر الأسماء والصفات عنده متكثرة في عين وحدة هي عينه، لا يتنزه عما هو ثابت له، ولا يحتجب عما أبداه ليكمل. وحجابه وعزته وغناه وقدسه عبارة عن امتياز حقيقته عن كل شيء يضادها، وعن عدم تعلقه بشيء، أو عدم احتياجه في ثبوت وجوده له وبقائه إلى ذلك، لا تحقق لشيء بنفسه ولا بشيء إلا به فانتبه.",
+      "english": "Contrasting things are gathered in Him, and differentiated things emerge from Him without enclosing Him or being enclosed by Him; their disclosure does not impose a prior hidden condition upon His Reality. His unity is the origin of multiplicity, and His simplicity the principle of every composition. What appears contradictory when predicated of other things may, under the fullest consideration, be predicated here without the limitation ordinarily involved. Whoever speaks about Him merely from his own delimited conception, negating whatever puzzles him, has in fact said nothing adequate and remained ignorant of what he seeks, until he perceives through Him how the opposites are comprehended without abolishing their distinctions. His unity is spoken of as His multiplicity; His simplicity as His composition; His manifestness as His hiddenness; His lastness as His firstness. Yet He is not confined to the notions of unity and existence as these occur within the mind, or to any observer and observed object. He discloses as He wills without confinement to either absoluteness or restriction. The Names and attributes are multiple under a unity that is not other than His Reality, and His perfection does not depend on concealing or correcting some deficiency. His majesty, independence and sanctity designate the difference of His Reality from anything opposed to it and His freedom from needing another for His existence or continuance. Nothing attains establishment through itself or another save by Him.",
+      "tags": [
+        "wahda",
+        "kathra",
+        "zuhur",
+        "butun",
+        "itibar"
+      ],
+      "notes": "The rhetoric uses paradox to oppose finite delimitation. It must not be presented as a license to assert formal contradictions under the same respect. The Arabic has suspicious expressions including «وأول مرة»; this passage needs separate collation and may be an appendix.",
+      "work": "QUN-NU",
+      "status": "attribution-provisional-appended-text",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-020-G",
+      "order": 11.05,
+      "section": "God’s incomprehensibility and the dependence of every contingent thing",
+      "locator": "Forum source printed pp. 263–264, lines 636 and 639–642, appended-text warning",
+      "arabic": "لا تدركه سبحانه من هذه الحيثية العقول والأفكار، ولا تحويه الجهات والأقطار، ولا تحيط بمشاهدته ومعرفته البصائر والأبصار، ومنزه عن القيود الصورية والمعنوية، مقدس عن قبول كل تقدير متعلق بكمية أو كيفية، متعال عن الإحاطات الحدسية والفهمية والظنية والعلمية، محتجب بكمال عزته عن جميع بريته، الكامل منهم والناقص، والمقبل إليه في زعمه والناكس. جميع تنزيهات العقول من حيث أفكارها ومن حيث بصائرها أحكام سلبية، لا تفيد معرفة حقيقية، وهي مع ذلك دون ما يقتضيه جلاله ويستحقه قدسه وكماله، ومنشأ تعلق علمه بالعالم من عين علمه بنفسه، وظهور هذا التعلق بظهور نسب علمه التي هي معلوماته، وإنما هو عالم بما لا يتناهى من حيث إحاطة علمه، وكونه مصدرا لكل شيء، فيعلم ذاته ولازم ذاته، ولازم اللازم جمعا وفرادى، وإجمالا وتفصيلا، هكذا إلى ما لا يتناهى، وما عينه أو علم تعين مرتبته عند شرط وسبب، فإنه يعلمه بشرطه وسببه، ولازمه أن سبق علمه بذلك تعينه، وإلا فيعلمه بنفسه سبحانه، وكيف شاء، غير أنه لا يتجدد له علم، ولا يتعين في حقه أمر ينحصر فيه ولا حكم. كماله بنفسه، ووجوده بالفعل لا بالقوة، وبالوجوب لا بالإمكان، منزه عن التغير المعلوم والحدثان، لا تحويه المحدثات لتبديه أو تصونه، ولا يكونها لحاجة إلى سواه، ولا تكونه ترتبط الأشياء به من حيث ما تعين منه، ولا يرتبط بها من حيث امتيازها بتعددها عنه، فيتوقف وجودها لها عليه، ولا يتوقف عليها، مستغن بحقيقته عن كل شيء، مفتقر إليه في وجوده كل شيء. ليس بينه وبين الأشياء نسبة إلا العناية، كما قيل، ولا حجاب إلا الجهل والتلبيس والتخيل؛ لغاية قربه ودنوه، وفرط عزه وعلوه، وعنايته في الحقيقة إفاضة نوره الوجودي على من انطبع في مرآة عينه التي هي نسب معلوميته، واستعد لقبول حكم إيجاده ومظهريته سبحانه، ﴿لَيْسَ كَمِثْلِهِ شَيْءٌ﴾ من الوجه الأول، و﴿وَهُوَ السَّمِيعُ الْبَصِيرُ﴾ [الشورى: 11] من الوجه الثاني.",
+      "english": "Under this consideration, neither intellects nor reflections apprehend Him, nor do places and directions enclose Him, nor does any faculty of sight or insight encompass Him. He transcends formal and intelligible limitations and every quantitative or qualitative measure, every attempt at exhaustive apprehension through intuition, understanding, conjecture or knowledge. The most perfected and the least perfected alike encounter the veil of His unassailable majesty. All the transcendence articulated by intellects is, in its own mode, a negative judgement; it does not amount to a complete apprehension of His Reality, and still falls short of what His majesty and perfection demand. His knowledge of the world derives from His very self-knowledge; the relational articulation of that knowledge appears in the relations under which things are known. He knows indefinitely many things by the comprehensiveness of His knowledge, knowing Himself, His intrinsic concomitants and the consequences of these, together and separately, in summary and detail. What is known to become determinate through a condition or cause is known precisely with that condition or cause, without any fresh knowledge arising in Him. His perfection is intrinsic, His being actual rather than potential, necessary rather than possible. He is not changed by originated things and does not bring them into existence out of a need for them. Things depend upon Him insofar as they derive their determination from Him, while He is not dependent upon them. Between the Real and things, the relation may be named providential concern (*ʿināya*); their apparent separation is magnified by ignorance and imagination despite divine nearness and exaltedness. This providence is interpreted as the effusion of existential light upon an entity prepared for manifestation. Hence the two halves of Qurʾān 42:11 are read under distinct considerations: 'Nothing is like Him' with respect to the first, and 'He is the Hearing, the Seeing' with respect to the second.",
+      "tags": [
+        "tanzih",
+        "ilm",
+        "wujud",
+        "wujub",
+        "imkan"
+      ],
+      "notes": "The first and second respects in Q 42:11 are made explicit in this source. Qurʾānic text should always be checked against the standard muṣḥaf in final publication. The reader does not endorse any simplistic identity of God's knowing with created contingent knowledge.",
+      "work": "QUN-NU",
+      "status": "attribution-provisional-appended-text",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-020-H",
+      "order": 11.06,
+      "section": "Determination as creation without incarnation or division",
+      "locator": "Forum source printed p. 265, lines 643 and 646–651, appended-text warning",
+      "arabic": "ومتى أدرك أو شوهد أو خاطب أو خوطب فمن وراء حجاب عزته في مرتبة نفسه المذكورة، بنسبة ظاهريته وحكم تجليه في منزل تدليه من حيث اقتران وجوده العام بالممكنات، وشروق نوره على أعيان الموجودات ليس غير ذلك. فهو سبحانه من حيث هذا الوجه إذا لومح تعين وجوده متقيدا بالصفات اللازمة لكل متعين من الأعيان الممكنة، التي هي في الحقيقة نسب علمه جمعا وفرادى، وما يتبع تلك الصفات من الأمور المسماة شؤونا وخواص وعوارض، والآثار التابعة لأحكام الاسم الدهر المسماة أوقاتا، والمراتب أيضا والمواطن، فإن ذلك التعين والتشخص يسمى خلقا وسوى، كما ستعرف عن قريب سره إن شاء اللّه تعالى. وينضاف إليه إذ ذاك كل وصف، ويسمى بكل اسم، ويظهر بكل رسم، ويقبل كل حكم، ويتقيد في كل مكان بكل رسم، ويدرك لكل مشعر من بصر وسمع وعقل وفهم، وغير ذلك من القوى والمدارك فاذكر. واعلم أن ذلك بسريانه في كل شيء بنوره الذاتي المقدس عن التجزئ والانقسام، والحلول في الأرواح والأجسام فافهم، ولكن كل ذلك متى أحب وكيف شاء. وهو في كل وقت وحال القابل لهذين الحكمين الكليين المذكورين المتضادين بذاته، لا بأمر زائد، والجامع بين كل أمرين مختلفين من غائب وحاضر وصادر ووارد، إذا شاء ظهر في كل صورة، وإن لم يشأ لم ينضاف إليه صورة. لا يقدح تعينه وتشخصه بالصور، واتصافه بصفاتها في كمال وجوده وعزه وقدسه، ولا ينافي ظهوره في الأشياء وإظهاره وتعينه وتقيده بها وبأحكامها من حيث هي علوه وإطلاقه من القيود، وغناه بذاته عن جميع ما وصف بالوجود، بل هو سبحانه الجامع بين ما تماثل من الحقائق وتخالف فيتألف، وبين ما تغاير وتباين فيختلف.",
+      "english": "Whenever He is said to be apprehended or witnessed, or to address another or be addressed, this is from beyond the veil of His majesty, under the rank and relation of manifestness by which His general existence is connected with possibles and His light shines upon concrete existents. Under this consideration, when existence is viewed as determined by the qualities belonging to each possible entity—these qualities being relations of divine knowledge, together and separately—and by what follow from them, such as affairs, peculiarities, accidents, times, ranks and situations, that determination or individuation is called 'creation' and 'other than God'. In such manifestations descriptions, names, forms, judgements and means of apprehension apply according to the capacities of the relevant loci. Understand, however, that the diffusion of His essential light through things involves neither division and partition nor indwelling within spirits and bodies. Such manifestation occurs only as He wills. These two seemingly opposed general judgements are reconciled without an additional independent principle: He may disclose in any form as He wills without requiring a form to be related to Him. Being described under manifest forms does not diminish His intrinsic perfection, transcendence and independence, nor does manifestation under restrictions contradict His transcendence of limitations considered in itself. He gathers realities insofar as they correspond and differ, without being limited by either relation.",
+      "tags": [
+        "tajalli",
+        "hulul",
+        "taayyun",
+        "khalq",
+        "wujud"
+      ],
+      "notes": "Arabic explicitly excludes ḥulūl, partition and division. Thus the metaphysical predication of appearing in forms must not be read as physical inhabitation or as numerical equivalence of Essence and each created body.",
+      "work": "QUN-NU",
+      "status": "attribution-provisional-appended-text",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
+    },
+    {
+      "id": "QUN-NU-020-I",
+      "order": 11.07,
+      "section": "Concealment and disclosure under the Names; conclusion of the surviving extract",
+      "locator": "Forum source printed pp. 265–266, lines 652–659, appended-text warning",
+      "arabic": "بتجليه الوجودي ظهرت الخفيات، وتنزلت من الغيب إلى الشهادة البركات من حيث أسمائه: الباسط والمبدي، وبارتفاع حكم تدليه تخفى وتنعدم الموجودات باسميه: القابض والمعيد. إنه تعالى كان محتجبا بعزه، كان غفورا، وإن أحب أن يعرف دنا وظهر فيما شاء كيف شاء، فكان ودودا، فبالمحبة يبدي من كونه محبّا وهي تبديه، وبها من كونه محبّا ومحبوبا يعيد كل شيء في قبضته، ومقهور تحت قوة بطشه لقوة فعله وضعف المنفعل. ومظهر قدرته وآلة حكمته في فعله بسنته، ومحل ظهور سر القبض والبسط والإبداء والإخفاء والغيب والشهادة والكشف والحجاب الصوري السببي، الذي به يفعل ما ذكره لا مطلقا هو عرشه المجيد. ولهذا قال سبحانه وتعالى مبدأ سر هذا الأمر: ﴿لِمَنْ كَانَ لَهُ قَلْبٌ أَوْ أَلْقَى السَّمْعَ وَهُوَ شَهِيدٌ﴾ [ق: 37]، ﴿إِنَّ بَطْشَ رَبِّكَ لَشَدِيدٌ ۝ إِنَّهُ هُوَ يُبْدِئُ وَيُعِيدُ ۝ وَهُوَ الْغَفُورُ الْوَدُودُ ۝ ذُو الْعَرْشِ الْمَجِيدُ ۝ فَعَّالٌ لِمَا يُرِيدُ﴾ [البروج: 12–16]. في مرتبتي الإطلاق والتقييد، وقوله تعالى: ﴿فَعَّالٌ لِمَا يُرِيدُ﴾ جواب سؤال مقدر، علم أنه يبدو من معترض محجوب.",
+      "english": "Through His existential self-disclosure hidden realities become manifest, and blessings descend, as it were, from the unseen into the visible under His Names the Expander and the Originator. When the governing relation of this descent is withdrawn, existents become concealed or pass away under the Names the Withholder and the Restorer. He is hidden through the dignity of His majesty and is called the Forgiving; if He wills to be known, He draws near and appears as He chooses, and is called the Loving. Through love, the relation of lover and beloved displays or withdraws things within His encompassing power. The manifestation of His power, the instrumentality through which His wisdom operates according to the established order, and the locus in which the relations of contraction and expansion, disclosure and concealment, unseen and witnessed, and their conditioned means appear, are here associated with His glorious Throne. The author cites, first, the call to one who has a heart or gives attentive hearing while witnessing [Q 50:37], and then the sequence concerning God's severe grasp, origination and restoration, forgiveness, love, the glorious Throne, and His doing what He wills [Q 85:12–16]. These are read in the two registers of absoluteness and determination. The final clause concerning His doing what He wills is explained as answering an anticipated objection from a veiled interlocutor.",
+      "tags": [
+        "asma",
+        "qabd",
+        "bast",
+        "zuhur",
+        "butun"
+      ],
+      "notes": "This closes the **accessible forum extract**, not necessarily the complete historical book. Text and punctuation at the very end are abrupt and may be disrupted by transcription/page divisions; verify in full printed edition and manuscripts. Attribution remains provisional because of the appended-text note.",
+      "work": "QUN-NU",
+      "status": "attribution-provisional-appended-text",
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3169-متن-كتاب-النصوص-في-تحقيق-الطور-المخصوص-للإمام-العارف-بالله-صدر-الدين-القونوي"
     },
     {
       "id": "IZN-RIS-002-05",
@@ -1274,5 +1407,8 @@
       "notes": "Selected consecutive clause from chapter four, not a substitute for the complete chapter. Manuscript collation and reproduction rights of the 2023 apparatus require separate review."
     }
   ],
-  "concordance_status": "23 Qūnawī source-located bilingual passages link to 64 real al-Mahāʾimī section anchors, in the separate 127-section / 426-pair first-pass reader (through printed p. 138). No retranslations or unsupported manuscripts are claimed."
+  "concordance_status": "23 Qūnawī source-located bilingual passages link to 64 real al-Mahāʾimī section anchors, in the separate 127-section / 426-pair first-pass reader (through printed p. 138). No retranslations or unsupported manuscripts are claimed.",
+  "source_cautions": [
+    "Printed source p. 260/261 describes the long ‘pure wujūd’ text as a naṣṣ mulḥaq (appended text) in its exemplar; the entire QUN-NU-020 range is only provisionally attributed until manuscript comparison."
+  ]
 }
