@@ -2,7 +2,7 @@
 
 ## New source-critical milestone — first directly photographed I1876 collation (9 November 2026)
 
-**The physical scan was recovered, not merely catalogued.** Princeton/NYU original I1876 printing, vol.I, PDF scans 9–11 = printed pp5–7, read directly on four bounded loci corresponding to Beirut B2007 pp18,19,21. The [evidence register](I1876_COLLATION_001.json) preserves original PDF source hash, scan numbers, historical printed page numbers, diplomatic readings, adoption grounds, and the explicit distinction between print and manuscript.
+**The physical scan was recovered, inspected, and archived in GNAMMA (59 source images plus contact sheets), not merely catalogued.** Princeton/NYU original I1876 printing, vol.I, PDF scans 9–11 = printed pp5–7, read directly on four bounded loci corresponding to Beirut B2007 pp18,19,21. The [evidence register](I1876_COLLATION_001.json) preserves original PDF source hash, scan numbers, historical printed page numbers, diplomatic readings, adoption grounds, and the explicit distinction between print and manuscript.
 
 **Two real historical PRINT differences:** I1876 p6 `المطلب الغائي` against B2007 p19 `المطلب الغائبّ`; I1876 p6 `علميا ووجوديا` against B2007 p19 `عمليا ووجوديا`. Adopt the historically attested readings provisionally in the corrected Arabic reading text and in the English. **Two agreements:** `بطون المشتمل` remains in I1876 p5 and B2007 p18 (awkwardness unresolved); `من حيث واحديتها` in I1876 p7 and B2007 p21 confirms correction of the older GNAMMA excerpt. This is **4 selected print checks across 3 printed pages**, not full-page inspection and not any manuscript variant.
 
