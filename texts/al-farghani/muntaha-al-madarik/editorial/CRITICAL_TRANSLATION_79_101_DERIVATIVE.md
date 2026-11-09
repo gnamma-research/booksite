@@ -327,31 +327,31 @@
 
 ### CR009-032 · B2007 page label 88 · retain
 
-**Derivative Arabic excerpt:** فسار هذا العنصر بأركانه بحكم الاقتضاء والحركة الحبية الأصلية
+**Derivative Arabic excerpt:** الثالث : ما هو ألطف من الثاني غلبت عليه الحرارة والرطوبة مع ثبوت الباقي
 
-**Reviewed English:** The element with its constituent principles proceeds under primordial love and its motion.
+**Reviewed English:** The third element is subtler than the second and is dominated by heat and moisture, while retaining the others.
 
-**Critical note:** Doctrinal original-love principle becomes the causal narrative of differentiation.
+**Critical note:** This is the air element in the author's medieval four-element explanation, not a contemporary empirical account.
 
 **Transcription:** https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A. Lower evidentiary grade; no original historical or MS leaf inspected for this clause.
 
 ### CR009-033 · B2007 page label 88 · retain
 
-**Derivative Arabic excerpt:** فتلك الحركة المضافة ... أظهرت أركانها الأربعة النار والهواء والماء والتراب
+**Derivative Arabic excerpt:** والقسم الرابع ما كان ألطف من الثالث غلبت عليه الحرارة واليبوسة مع تحقّق الباقي
 
-**Reviewed English:** That movement disclosed its four elements: fire, air, water and earth.
+**Reviewed English:** The fourth element, subtler than the third, is dominated by heat and dryness while retaining the others.
 
-**Critical note:** Different four from primitive heat/cold/moisture/dryness in p81.
+**Critical note:** This is fire, completing the four-element series with earth, water, and air.
 
 **Transcription:** https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A. Lower evidentiary grade; no original historical or MS leaf inspected for this clause.
 
 ### CR009-034 · B2007 page label 88 · annotate
 
-**Derivative Arabic excerpt:** وتتوجه الأصول الأسمائية إلى مظاهر معنوية وروحانية ومثالية وحسية
+**Derivative Arabic excerpt:** أوّلا : من حيث مظاهرها المعنوية التي عيّنها الاسم المريد
 
-**Reviewed English:** The principal divine names are directed toward intelligible, spiritual, imaginal and sensible loci.
+**Reviewed English:** First, through their intelligible manifestations as determined by the name the Willing.
 
-**Critical note:** This summary is a compressed authorial relationship, not a new independently attested quote. Mark this as a synthetic span pending contiguous line verification.
+**Critical note:** This is an attested opening of the author's explicit fourfold enumeration; subsequent ranks are spiritual, imaginal and sensible. Prior synthetically reconstructed sentence withdrawn.
 
 **Transcription:** https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A. Lower evidentiary grade; no original historical or MS leaf inspected for this clause.
 
@@ -417,11 +417,11 @@
 
 ### CR009-041 · B2007 page label 90 · annotate
 
-**Derivative Arabic excerpt:** الصور ... أرضا وصورها الاسم المصوّر صورة كروية من حيث الإدراك العقلي ومسطحة بحسب ظاهر الإدراك
+**Derivative Arabic excerpt:** فانفتقت فكانت أرضا وصورها الاسم المصوّر صورة كروية من حيث الإدراك العقلي ومسطحة بحسب ظاهر الإدراك
 
-**Reviewed English:** The earth is fashioned as a sphere for rational understanding but appears flat to ordinary sense perception.
+**Reviewed English:** It opened and became earth, fashioned by the Fashioner as spherical to rational apprehension but flat in the apparent view of the senses.
 
-**Critical note:** Internal historical astronomical distinction; do not misrepresent Farghānī as claiming an objectively flat earth.
+**Critical note:** Both descriptions are expressly qualified by different modes of knowing; no scientific endorsement of ancient cosmology is intended.
 
 **Transcription:** https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A. Lower evidentiary grade; no original historical or MS leaf inspected for this clause.
 
@@ -707,11 +707,11 @@
 
 ### CR009-070 · B2007 page label 100 · annotate
 
-**Derivative Arabic excerpt:** فعرض كل ما علم آدم مما اشتملت ذاته عليه باطنا وظاهرا وخلقا وحقّا على الملائكة
+**Derivative Arabic excerpt:** فلمّا أنبأهم آدم بذلك حينئذ علموا وكملوا بذلك العلم من جهة كلّهم
 
-**Reviewed English:** He presented to the angels all that He taught Adam, within Adam's inward and outward reality, creaturely and divine aspects.
+**Reviewed English:** When Adam informed them of this, they came to know and were perfected through that knowledge, in their relation to the whole.
 
-**Critical note:** Do not read this as establishing that Adam is identically the divine Essence.
+**Critical note:** Page 100 describes the angels' learning through Adam, not their biological composition. Replaces earlier locus misassigned from p99.
 
 **Transcription:** https://alshrefalm7sy.ahlamontada.com/t3213-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%AA%D8%B9%D9%8A%D9%86-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84-%D9%88%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%AA%D9%83%D9%88%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A2%D8%AF%D9%85-%D8%B9%D9%84%D9%8A%D9%87-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A. Lower evidentiary grade; no original historical or MS leaf inspected for this clause.
 
