@@ -796,7 +796,9 @@ function sourceCards(n){
  const anchors=evid.map(s=>(validURL(s.url)?'<a class="citation-link" href="'+safe(validURL(s.url))+'" target="_blank" rel="noopener noreferrer">'+safe(s.title||s.id)+'</a>':'<p>'+safe(s.title||s.id)+'</p>')+
   (s.locator?'<p class="source-summary">'+safe(s.locator)+'</p>':"")).join("");
  const own=validURL(n.sourceURL)?'<a class="citation-link" href="'+safe(validURL(n.sourceURL))+'" target="_blank" rel="noopener noreferrer">Open original '+safe(n.provenance)+' record</a>':"";
- return anchors+own||'<p class="source-summary">No clickable source record is available in this selection.</p>';
+ const biography=validURL(n.authorURL)?'<a class="citation-link" href="'+safe(validURL(n.authorURL))+'" target="_blank" rel="noopener noreferrer">Original author biography'+(n.yearKind==="verified_author_death_proxy"?" · source of death date":" · check for missing dates")+'</a>':"";
+ const date=validURL(n.dateEvidenceURL)&&n.dateEvidenceURL!==n.authorURL?'<a class="citation-link" href="'+safe(validURL(n.dateEvidenceURL))+'" target="_blank" rel="noopener noreferrer">Date evidence</a>':"";
+ return anchors+own+biography+date||'<p class="source-summary">No clickable source record is available in this selection.</p>';
 }
 function recordPanel(){
  const n=data.byId.get(state.selected);
@@ -821,6 +823,11 @@ function recordPanel(){
  (n.note?'<p class="record-text">'+safe(n.note)+'</p>':"")+
  (n.warning?'<p class="caution">'+safe(n.warning)+'</p>':"")+
  (n.manuscripts?'<p class="record-text">Catalogue mentions '+n.manuscripts+' manuscript records; not individually verified by this atlas.</p>':"")+
+ (n.yearKind==="verified_author_death_proxy"?'<p class="record-text"><strong>Cited author-death anchor:</strong> '+safe(n.authorDates)+'. The work is not claimed to have been composed in that year. See the linked author biography below.</p>':"")+
+ (n.authorURL&&data.authorWorks.get(n.authorURL)?.length>1?
+ '<details class="side-details"><summary>Other catalogue entries assigned to this author ('+(data.authorWorks.get(n.authorURL).length-1)+')</summary>'+
+ data.authorWorks.get(n.authorURL).filter(x=>x.id!==n.id).slice(0,30).map(x=>'<article><button type="button" data-select="'+safe(x.id)+'">'+safe(x.title)+'</button><p>Same catalogue author ID; not an asserted commentary or influence relation.</p></article>').join("")+
+ '</details>':"")+
  '<p class="caution">'+safe(caution)+'</p>'+
  '<div class="record-actions"><button type="button" data-show-network="'+safe(n.id)+'">View sources &amp; reception</button>'+
  '<button type="button" data-copy>Copy link</button>'+
@@ -893,7 +900,7 @@ function render(first=false){
  (geographic?'':'<aside class="sidebar" aria-label="Work and evidence details"><div class="side-head"><h2>Selected work · evidence</h2>'+
  '<button type="button" data-close-side>Clear focus</button></div><div class="side-content">'+recordPanel()+'</div></aside>')+'</div>';
  fillSearch();
- if(state.view==="network"||state.view==="timeline")centerBrowseRail();
+ if((state.view==="network"||state.view==="timeline")&&!state.cluster)centerBrowseRail();
  if(first)writeHash(false);
 }
 function changeRange(a,b){
@@ -903,6 +910,9 @@ function changeRange(a,b){
  state.cluster="";state.clusterPage=1;
  writeHash();render();
 }
+function focusWorkbench(){
+ requestAnimationFrame(()=>{const panel=ROOT.querySelector("[data-time-workbench]");if(panel){panel.scrollIntoView({block:"start",behavior:"auto"});panel.focus({preventScroll:true});}});
+}
 function onClick(e){
  const el=e.target.closest("button,[role=button]");if(!el||!ROOT.contains(el))return;
  const summary=e.target.closest(".atlas-advanced summary");if(summary){state.advancedOpen=!state.advancedOpen;return;}
@@ -910,7 +920,7 @@ function onClick(e){
   initialSubject(el.getAttribute("data-subject"));writeHash(true);render();return;
  }
  if(el.hasAttribute("data-view")){
-  state.view=el.getAttribute("data-view");state.cluster="";state.evidence="";
+  state.view=el.getAttribute("data-view");state.cluster="";state.clusterSearch="";state.evidence="";
   writeHash(true);render();return;
  }
  if(el.hasAttribute("data-browse-step")){browseStep(Number(el.getAttribute("data-browse-step"))||0);return;}
@@ -925,6 +935,12 @@ function onClick(e){
   timelineFollow(data.byId.get(state.selected));
   writeHash(true);render();return;
  }
+ if(el.hasAttribute("data-cluster-work")){
+  const id=el.getAttribute("data-cluster-work"),n=data.byId.get(id);
+  if(!n)return;
+  state.selected=id;state.evidence="";state.search="";
+  writeHash(true);render();focusWorkbench();return;
+ }
  if(el.hasAttribute("data-select")||el.hasAttribute("data-search-select")){
   chooseWork(el.getAttribute("data-select")||el.getAttribute("data-search-select"),el.hasAttribute("data-search-select"));return;
  }
@@ -934,14 +950,25 @@ function onClick(e){
   const items=renderCache.clusters.get(key);if(!items?.length)return;
   const a=Math.min(...items.map(x=>x.year)),b=Math.max(...items.map(x=>x.year));
   if(state.to-state.from>130){changeRange(a-45,b+45);return}
-  state.cluster=key;state.clusterPage=1;render();return;
+  state.cluster=key;state.clusterSearch="";state.clusterPage=1;writeHash(true);render();focusWorkbench();return;
  }
- if(el.hasAttribute("data-unplaced")){state.cluster=el.getAttribute("data-unplaced");state.clusterPage=1;render();return}
+ if(el.hasAttribute("data-open-unplaced-all")){
+  state.cluster="undated:all";state.clusterSearch="";state.clusterPage=1;
+  writeHash(true);render();focusWorkbench();return;
+ }
+ if(el.hasAttribute("data-unplaced")){
+  state.cluster=el.getAttribute("data-unplaced");state.clusterSearch="";state.clusterPage=1;
+  writeHash(true);render();focusWorkbench();return;
+ }
+ if(el.hasAttribute("data-close-shelf")){
+  state.cluster="";state.clusterSearch="";state.clusterPage=1;
+  writeHash();render();return;
+ }
  if(el.hasAttribute("data-page")){
   const [kind,delta]=el.getAttribute("data-page").split(":");
   if(kind==="catalogue")state.bookPage=Math.max(1,state.bookPage+Number(delta));
   else state.clusterPage=Math.max(1,state.clusterPage+Number(delta));
-  render();return;
+  render();if(kind==="cluster")focusWorkbench();return;
  }
  if(el.hasAttribute("data-zoom")){
   const fac=Number(el.getAttribute("data-zoom")),mid=(state.from+state.to)/2,span=(state.to-state.from)*fac;
@@ -957,12 +984,12 @@ function onClick(e){
   if(b>a+9)changeRange(a,b);else ROOT.querySelector("[data-year-to]")?.setCustomValidity("End year must be at least ten years after the start");return;
  }
  if(el.hasAttribute("data-clear-family")){state.family="";writeHash();render();return}
- if(el.hasAttribute("data-reset")){state.school="all";state.family="";state.source="all";state.edgeType="all";state.certainty="all";state.search="";state.region="";state.cluster="";state.bookPage=1;writeHash();render();return}
+ if(el.hasAttribute("data-reset")){state.school="all";state.family="";state.source="all";state.edgeType="all";state.certainty="all";state.search="";state.region="";state.cluster="";state.clusterSearch="";state.bookPage=1;writeHash();render();return}
  if(el.hasAttribute("data-evidence")){state.evidence=el.getAttribute("data-evidence");render();return}
  if(el.hasAttribute("data-close-evidence")){state.evidence="";render();return}
  if(el.hasAttribute("data-place")){state.region=el.getAttribute("data-place");state.view="catalogue";state.bookPage=1;writeHash();render();return}
  if(el.hasAttribute("data-copy")){writeHash();if(navigator.clipboard?.writeText)navigator.clipboard.writeText(location.href);return}
- if(el.hasAttribute("data-close-side")){state.selected="";state.evidence="";writeHash();render();return}
+ if(el.hasAttribute("data-close-side")){state.selected="";state.evidence="";state.cluster="";writeHash();render();return}
 }
 function onChange(e){
  const t=e.target;if(!ROOT.contains(t))return;
@@ -979,7 +1006,19 @@ function onChange(e){
 }
 let pendingSearch=null;
 function onInput(e){
- const t=e.target;if(t.id!=="gn-search")return;
+ const t=e.target;
+ if(t.hasAttribute?.("data-shelf-search")){
+  const q=t.value.slice(0,120),cursor=t.selectionStart;
+  clearTimeout(pendingSearch);
+  pendingSearch=setTimeout(()=>{
+   if(!t.isConnected)return;
+   state.clusterSearch=q;state.clusterPage=1;writeHash();render();
+   const next=ROOT.querySelector("[data-shelf-search]");
+   if(next){next.focus({preventScroll:true});try{next.setSelectionRange(cursor,cursor);}catch{}}
+  },150);
+  return;
+ }
+ if(t.id!=="gn-search")return;
  const value=t.value.slice(0,140);state.search=value;state.searchOpen=!!value.trim();
  clearTimeout(pendingSearch);
  pendingSearch=setTimeout(()=>{
