@@ -83,6 +83,25 @@ async function main(){
   for(const [id,title] of configs){
    const raw=fs.readFileSync(p.join(base,id,'data/book.json')),book=JSON.parse(raw.toString('utf8'));
    const source=crypto.createHash('sha256').update(raw).digest('hex');
+   let supplementSource=null;
+   if(id==='nihayat-al-hikma'){
+     // Typeset and web editions share the same critical apparatus.
+     const supplementBytes=fs.readFileSync(p.join(base,id,'data/editorial-supplement.json'));
+     supplementSource=crypto.createHash('sha256').update(supplementBytes).digest('hex');
+     const extra=JSON.parse(supplementBytes.toString('utf8'));
+     const byId=new Map(book.units.map(unit=>[unit.id,unit]));
+     for(const note of extra.criticalNotes||[]){
+       const unit=byId.get(note.passageId);
+       if(!unit)throw Error('Unresolved Nihāya critical note '+note.id);
+       const existing=unit.notes||[];
+       const duplicate=existing.some(item=>
+         (item.id && item.id===note.id) ||
+         (item.url && item.url===note.url &&
+          /^Textual emendation/i.test(item.type||'') &&
+          /^Textual emendation/i.test(note.type||'')));
+       if(!duplicate)unit.notes=[...existing,{id:note.id,type:note.type,text:note.text,url:note.url}];
+     }
+   }
    for(const mode of modes){
     const filename=id+'-'+mode+'-A4.pdf';
     console.log('Rendering '+filename);
@@ -95,7 +114,7 @@ async function main(){
     if(buf.length<15000||buf.subarray(0,5).toString('utf8')!=='%PDF-')throw Error('Bad PDF '+filename);
     fs.writeFileSync(p.join(dest,filename),buf);
     manifest.files.push({book:title,mode,filename,bytes:buf.length,sha256:crypto.createHash('sha256').update(buf).digest('hex'),
-      source_sha256:source,arabic_sections:book.units.filter(x=>!isGuide(x)&&normal(x.arabic)).length,
+      source_sha256:source,supplement_sha256:supplementSource,arabic_sections:book.units.filter(x=>!isGuide(x)&&normal(x.arabic)).length,
       english_sections:book.units.filter(x=>!isGuide(x)&&normal(x.english)).length});
    }
   }
