@@ -51,4 +51,23 @@ for(const e of book.entries.filter(e=>e.id.startsWith('QUN-NU-020-'))){
  assert.equal(e.status,'attribution-provisional-appended-text','Text 20 must remain explicitly provisional until witnessed');
 }
 
+
+// Al-Iznīqī cumulative working edition: provenance and noncompletion guard.
+const iz=JSON.parse(read(path.join(base,'editorial/IZNIQI_COVERAGE_STATUS_20261109.json')));
+assert.equal(iz.total_medieval_pages,22,'Medieval text ends at printed page 852');
+assert.equal(iz.source_page_images_inspected,22,'Inspected-page count must match source register');
+assert.equal(iz.pages.length,22,'One precise source-page record required for every printed page');
+assert.equal(iz.source_pages_with_final_verified_full_literal_translation,0,'Do not call interpretive drafts literal-complete');
+assert(iz.pages.every(p=>p.source_rendered_inspected && !p.english_full_literal_verified && !p.manuscript_leaf_collated));
+for(const segment of iz.segments){
+ const contents=read(path.join(base,'editorial',segment.file));
+ assert(contents.length>400,'Missing Iznīqī translation segment: '+segment.file);
+}
+const izCumulative=read(path.join(base,'editorial/IZNIQI_EN_CUMULATIVE_DRAFT_20261109.md'));
+assert(izCumulative.includes('NOT A COMPLETE LITERAL EDITION'),'Provisional caveat is required');
+assert(izCumulative.length>50000,'Cumulative must include all source-page segments');
+const izHtml=read(path.join(base,'izniqi/index.html'));
+assert(izHtml.includes('IZNIQI_EN_CUMULATIVE_DRAFT_20261109.md'),'Iznīqī reader must load cumulative draft');
+assert(catalog.includes('sadr-al-din-al-qunawi/al-nusus/izniqi/'),'Text catalogue must link working English reader');
+
 console.log(JSON.stringify({status:'PASS',passages:book.entries.length,arabic:ar,english:en,linked_entries:linkedEntries,mahaimi_links:linkCount,targets:mahIds.size},null,2));
