@@ -6,15 +6,16 @@
     "originalMatnUnits": 61,
     "commentaryUnits": 110,
     "totalArabicPunctuationClauses": 5520,
-    "totalEnglishSentenceCandidates": 2851,
-    "individuallyComparedArabicPunctuationClauses": 1574,
-    "individuallyComparedUnits": 75,
-    "NOTIndividuallyComparedArabicClauses": 3946,
+    "totalEnglishSentenceCandidates": 2853,
+    "individuallyComparedArabicPunctuationClauses": 1761,
+    "individuallyComparedUnits": 86,
+    "NOTIndividuallyComparedArabicClauses": 3759,
     "statuses": {
-      "checked-with-note": 281,
-      "checked": 1205,
-      "unresolved-reading": 64,
-      "corrected": 21,
+      "checked-with-note": 313,
+      "checked": 1331,
+      "unresolved-reading": 85,
+      "corrected": 27,
+      "corrected-with-note": 2,
       "corrected-with-source-crux": 3
     },
     "editorialLimit": "Punctuation-derived segments do not always equal syntactic clauses. Only individually compared units have manually associated English ranges. No manuscript witnesses were collated."
@@ -10085,128 +10086,176 @@
           "startChar": 0,
           "endChar": 89,
           "text": "وقد بيّن أيضاً فيها أنّ الأنواع الشريفة التي يمكن أن يصدر عنها الأفعال الكماليّة متناهية،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Noble kinds capable of perfectional acts are stated finite."
+          },
+          "englishCorrespondence": "It has also been established in those sciences that the noble kinds from which acts of perfection may proceed are finite.",
+          "riskMarkers": []
         },
         {
           "n": 2,
           "startChar": 90,
           "endChar": 132,
           "text": "ولا اعتبار بالأنواع الناقصة الخسيسة هاهنا،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Superior kind has more acts than inferior; transmitted وبصدر remains uncorrected."
+          },
+          "englishCorrespondence": "Inferior, deficient kinds need not be taken into account here: whatever perfectional acts proceed from an inferior kind also proceed from a superior kind, whereas the superior kind can produce acts that the inferior cannot.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 133,
           "endChar": 197,
           "text": "فإنّ جميع ما يصدر عن الخسيس من الأفعال الكماليّة يصدر عن الشريف،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Superior kind has more acts than inferior; transmitted وبصدر remains uncorrected."
+          },
+          "englishCorrespondence": "Inferior, deficient kinds need not be taken into account here: whatever perfectional acts proceed from an inferior kind also proceed from a superior kind, whereas the superior kind can produce acts that the inferior cannot.",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 198,
           "endChar": 241,
           "text": "وبصدر عن الشريف ما لا يمكن صدوره عن الخسيس،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Superior kind has more acts than inferior; transmitted وبصدر remains uncorrected."
+          },
+          "englishCorrespondence": "Inferior, deficient kinds need not be taken into account here: whatever perfectional acts proceed from an inferior kind also proceed from a superior kind, whereas the superior kind can produce acts that the inferior cannot.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 5,
           "startChar": 242,
           "endChar": 351,
           "text": "والنوع الشريف الواحد بالوحدة الحقيقيّة يتضمّن سائر الأنواع الخسيسة بالنسبة إليه بالمعنى الذي أشير إليه هاهنا،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "One truly unified noble kind encompasses lesser kinds relatively, even if numerically unbounded."
+          },
+          "englishCorrespondence": "A single noble kind possessing real unity thus includes within itself all the inferior kinds relative to it, in the sense indicated here, even if these are unlimited in number.",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 352,
           "endChar": 384,
           "text": "وإن كانت غير متناهية بحسب العدد.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "One truly unified noble kind encompasses lesser kinds relatively, even if numerically unbounded."
+          },
+          "englishCorrespondence": "A single noble kind possessing real unity thus includes within itself all the inferior kinds relative to it, in the sense indicated here, even if these are unlimited in number.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 385,
           "endChar": 429,
           "text": "وأمّا الكمال الأصلي الممكن بحسب النوع هاهنا،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Primary perfection is shared by complete individuals of a species."
+          },
+          "englishCorrespondence": "As for the primary perfection possible to the kind considered as a kind, all perfected individuals belonging to it share in that perfection.",
           "riskMarkers": [
             "modality"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 8,
           "startChar": 430,
           "endChar": 477,
           "text": "فإنّما يشترك فيه جميع الأشخاص الكاملة من النوع،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Primary perfection is shared by complete individuals of a species."
+          },
+          "englishCorrespondence": "As for the primary perfection possible to the kind considered as a kind, all perfected individuals belonging to it share in that perfection.",
           "riskMarkers": [
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 9,
           "startChar": 478,
           "endChar": 552,
           "text": "ولا اعتبار بالكمالات الجزئيّة التي تختلف بحسب اختلاف الاستعدادات الجزئيّة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 5,
+            "note": "Particular perfections vary with preparation."
+          },
+          "englishCorrespondence": "Particular perfections that differ according to individual capacities are not decisive for this purpose.",
+          "riskMarkers": []
         },
         {
           "n": 10,
           "startChar": 553,
           "endChar": 612,
           "text": "وأمّا تفصيل الكلام في هذه المواضع وتوجيه البحث فيه وتحقيقه،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "Author declines expansion of proofs in the brief treatise."
+          },
+          "englishCorrespondence": "A perceptive reader familiar with the foundations of the preceding discussions will understand how these questions are to be argued and established; extending the explanation and multiplying premises in this short treatise would serve no purpose.",
+          "riskMarkers": []
         },
         {
           "n": 11,
           "startChar": 613,
           "endChar": 662,
           "text": "فلا يخفى على الذكيّ العارف بأصول المباحث السالفة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "Author declines expansion of proofs in the brief treatise."
+          },
+          "englishCorrespondence": "A perceptive reader familiar with the foundations of the preceding discussions will understand how these questions are to be argued and established; extending the explanation and multiplying premises in this short treatise would serve no purpose.",
+          "riskMarkers": []
         },
         {
           "n": 12,
           "startChar": 663,
           "endChar": 717,
           "text": "فلا وجه لتطويل البيان وتكثير المقدّمات في هذا المختصر.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "Author declines expansion of proofs in the brief treatise."
+          },
+          "englishCorrespondence": "A perceptive reader familiar with the foundations of the preceding discussions will understand how these questions are to be argued and established; extending the explanation and multiplying premises in this short treatise would serve no purpose.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -10253,7 +10302,7 @@
           "text": "extending the explanation and multiplying premises in this short treatise would serve no purpose."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 1
     },
     {
@@ -10271,85 +10320,113 @@
           "startChar": 0,
           "endChar": 100,
           "text": "ولا يمتنع أن يتوقّف الحقّ في الاتّصاف ببعض الصفات والتعيّنات على صفات وتعيّنات أخر لاحقة به من ذاته.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Attributes and determinations may depend on others from the Real Himself."
+          },
+          "englishCorrespondence": "There is nothing impossible in the Real's being described by certain attributes and determinations depending upon other attributes and determinations that accrue to Him from His own reality.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 101,
           "endChar": 152,
           "text": "فلئن قيل: إنّها من حيث هي موجودات خاصّة أمور ممكنة،",
+          "review": {
+            "status": "unresolved-reading",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Objection concerns possible existents; awkward displaced «ببعض الصفات الممكنة» remains."
+          },
+          "englishCorrespondence": "If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes.",
           "riskMarkers": [
             "objection"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 153,
           "endChar": 238,
           "text": "ولا يجوز أن يتوقّف الحقّ في الاتّصاف بصفة كماليّة على أمر ممكن — ببعض الصفات الممكنة.",
+          "review": {
+            "status": "unresolved-reading",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Objection concerns possible existents; awkward displaced «ببعض الصفات الممكنة» remains."
+          },
+          "englishCorrespondence": "If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes.",
           "riskMarkers": [
             "modality"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 4,
           "startChar": 239,
           "endChar": 322,
           "text": "قلنا: لا يستحيل أن يتوقّف الحقّ في الاتّصاف ببعض الصفات الممكنة على صفات أخر ممكنة،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "One reply to the objection; relative possible qualifications do not render the essence externally dependent."
+          },
+          "englishCorrespondence": "If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes.",
           "riskMarkers": [
             "reply",
             "negation",
             "modality"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 5,
           "startChar": 323,
           "endChar": 369,
           "text": "كالكمالات الأسمائيّة مثلاً على صفات أخر ممكنة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "One reply to the objection; relative possible qualifications do not render the essence externally dependent."
+          },
+          "englishCorrespondence": "If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes.",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 370,
           "endChar": 483,
           "text": "والصفة الكماليّة هي ظهوره في المظهر التامّ الكامل الكلّيّ المطلق الذي هو من الصفات اللازمة والتعيّنات الواجبة به،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 4,
+            "note": "Manifestation in the complete locus is a necessary concomitant through the Real."
+          },
+          "englishCorrespondence": "The perfectional attribute in question is His manifestation in the complete, perfected, universal, and unrestricted locus of manifestation. This manifestation belongs among His necessary concomitant attributes and determinations through Himself, not through another.",
           "riskMarkers": [
             "modality",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 484,
           "endChar": 495,
           "text": "لا من غيره.",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 4,
+            "note": "Manifestation in the complete locus is a necessary concomitant through the Real."
+          },
+          "englishCorrespondence": "The perfectional attribute in question is His manifestation in the complete, perfected, universal, and unrestricted locus of manifestation. This manifestation belongs among His necessary concomitant attributes and determinations through Himself, not through another.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         }
       ],
       "englishSentences": [
@@ -10378,7 +10455,7 @@
           "text": "This manifestation belongs among His necessary concomitant attributes and determinations through Himself, not through another."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 0
     },
     {
@@ -10396,200 +10473,272 @@
           "startChar": 0,
           "endChar": 148,
           "text": "فلا يلزم أن تكون الإدراكات الحسّيّة والوهميّة والفكريّة غير معتبرة لو كان الكمال الحقيقي والإدراك اليقيني لا يحصل إلّا عند الوصول إلى مرتبة الإطلاق،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Higher apprehension does not invalidate sensory, estimative or discursive knowledge."
+          },
+          "englishCorrespondence": "It does not follow that sensory, estimative, and discursive perceptions cease to count if true perfection and certain apprehension are attained only upon reaching the level of unrestrictedness.",
           "riskMarkers": [
             "negation",
             "exception_or_exclusivity",
             "conditional",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 149,
           "endChar": 381,
           "text": "فإنّ القوّة القدسيّة لو أخذت العلوم والمعارف عن مآخذها ومعادنها عند تجرّدها واستولت على هذه القوى المدركة بحيث لا تستقلّ بنفسها في شيء من حركاتها وأفعالها بدون استخدامها إيّاها وقهرها لتلك القوى على وجوب متابعتها ومبايعتها بالضرورة،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 4,
+            "note": "Higher faculty orders all lower faculties; 'pledging allegiance' metaphor condensed."
+          },
+          "englishCorrespondence": "For when the holy faculty draws its knowledge and cognitions from their proper sources in its state of detachment, and comes to command the other cognitive faculties so thoroughly that none acts independently without being employed and made to obey it, then the perceptions and operations of those faculties are themselves to be taken into account. None need obstruct the perfection sought by the spiritual practitioners; instead they assist its acquisition, consolidation, and advancement to its highest degrees.",
           "riskMarkers": [
             "negation",
             "conditional"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 382,
           "endChar": 425,
           "text": "لاعتُبر بالضرورة سائر إدراكاتها وتصرّفاتها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 4,
+            "note": "Higher faculty orders all lower faculties; 'pledging allegiance' metaphor condensed."
+          },
+          "englishCorrespondence": "For when the holy faculty draws its knowledge and cognitions from their proper sources in its state of detachment, and comes to command the other cognitive faculties so thoroughly that none acts independently without being employed and made to obey it, then the perceptions and operations of those faculties are themselves to be taken into account. None need obstruct the perfection sought by the spiritual practitioners; instead they assist its acquisition, consolidation, and advancement to its highest degrees.",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 426,
           "endChar": 491,
           "text": "واستحال أن يكون شيء منها مانعاً لحصول ما هو الكمال الحقيقي عندهم،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 4,
+            "note": "Higher faculty orders all lower faculties; 'pledging allegiance' metaphor condensed."
+          },
+          "englishCorrespondence": "For when the holy faculty draws its knowledge and cognitions from their proper sources in its state of detachment, and comes to command the other cognitive faculties so thoroughly that none acts independently without being employed and made to obey it, then the perceptions and operations of those faculties are themselves to be taken into account. None need obstruct the perfection sought by the spiritual practitioners; instead they assist its acquisition, consolidation, and advancement to its highest degrees.",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 492,
           "endChar": 583,
           "text": "بل لا بدّ أن يكون معيّناً لحصول ما هو الكمال الحقيقي ورسوخه وسهولة الترقّي إلى أقصى مراتبه،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 4,
+            "note": "Higher faculty orders all lower faculties; 'pledging allegiance' metaphor condensed."
+          },
+          "englishCorrespondence": "For when the holy faculty draws its knowledge and cognitions from their proper sources in its state of detachment, and comes to command the other cognitive faculties so thoroughly that none acts independently without being employed and made to obey it, then the perceptions and operations of those faculties are themselves to be taken into account. None need obstruct the perfection sought by the spiritual practitioners; instead they assist its acquisition, consolidation, and advancement to its highest degrees.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 6,
           "startChar": 584,
           "endChar": 594,
           "text": "فاعلم ذلك.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 5,
+            "note": "Authorial injunction preserved."
+          },
+          "englishCorrespondence": "Understand this.",
+          "riskMarkers": []
         },
         {
           "n": 7,
           "startChar": 595,
           "endChar": 655,
           "text": "وأمّا نظائر العفاريت والمردة فلا نسلّم أنّها غير موجودة فيه.",
+          "review": {
+            "status": "unresolved-reading",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "هربت versus هذّبت remains; English 'disciplined' is contextual."
+          },
+          "englishCorrespondence": "Nor do we concede that the counterparts of rebellious spirits and demons are absent from the perfected human. Rather, the faculties corresponding to them, having been brought under control and disciplined through the recognised exercises of perfection, perform praiseworthy acts of an angelic character.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 8,
           "startChar": 656,
           "endChar": 660,
           "text": "نعم،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "unresolved-reading",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "هربت versus هذّبت remains; English 'disciplined' is contextual."
+          },
+          "englishCorrespondence": "Nor do we concede that the counterparts of rebellious spirits and demons are absent from the perfected human. Rather, the faculties corresponding to them, having been brought under control and disciplined through the recognised exercises of perfection, perform praiseworthy acts of an angelic character.",
+          "riskMarkers": []
         },
         {
           "n": 9,
           "startChar": 661,
           "endChar": 782,
           "text": "القوى التي هي نظائرها لمّا تسخّرت وهربت [هُذّبت: قراءة بديلة] بالمجاهدات المعتبرة عند أصحاب الاستكمال في الأشخاص الكاملة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "unresolved-reading",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "هربت versus هذّبت remains; English 'disciplined' is contextual."
+          },
+          "englishCorrespondence": "Nor do we concede that the counterparts of rebellious spirits and demons are absent from the perfected human. Rather, the faculties corresponding to them, having been brought under control and disciplined through the recognised exercises of perfection, perform praiseworthy acts of an angelic character.",
+          "riskMarkers": []
         },
         {
           "n": 10,
           "startChar": 783,
           "endChar": 829,
           "text": "فقد صارت الأفعال المحمودة الصادرة عنها ملكيّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "unresolved-reading",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "هربت versus هذّبت remains; English 'disciplined' is contextual."
+          },
+          "englishCorrespondence": "Nor do we concede that the counterparts of rebellious spirits and demons are absent from the perfected human. Rather, the faculties corresponding to them, having been brought under control and disciplined through the recognised exercises of perfection, perform praiseworthy acts of an angelic character.",
+          "riskMarkers": []
         },
         {
           "n": 11,
           "startChar": 830,
           "endChar": 943,
           "text": "فصارت ممنوعة عمّا يصحّ أن يصدر عنها حسب اقتضاء طبائعها أو مطاوعتها لبعض القوى الجسمانيّة كالقوّة الوهميّة وشبهها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 8,
+            "englishSentenceEnd": 8,
+            "note": "Lower faculties act under the holy faculty rather than independently."
+          },
+          "englishCorrespondence": "They are prevented from acting merely according to their own natural impulses or in obedience to lower bodily faculties, such as estimation, independently of the holy faculty.",
+          "riskMarkers": []
         },
         {
           "n": 12,
           "startChar": 944,
           "endChar": 982,
           "text": "من غير استخدام القوّة القدسيّة إيّاها.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 8,
+            "englishSentenceEnd": 8,
+            "note": "Lower faculties act under the holy faculty rather than independently."
+          },
+          "englishCorrespondence": "They are prevented from acting merely according to their own natural impulses or in obedience to lower bodily faculties, such as estimation, independently of the holy faculty.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 13,
           "startChar": 983,
           "endChar": 1063,
           "text": "وهكذا الكلام بعينه في الأنواع المماثلة للوحوش والسباع والبهائم والحشرات المؤذية.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 9,
+            "englishSentenceEnd": 9,
+            "note": "Animal and harmful counterparts included."
+          },
+          "englishCorrespondence": "The same applies to the counterparts of wild beasts, predators, animals, and harmful insects.",
+          "riskMarkers": []
         },
         {
           "n": 14,
           "startChar": 1064,
           "endChar": 1109,
           "text": "وأمّا الطبائع التي هي نظائر الأفلاك والكواكب،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 10,
+            "note": "Analogy does not confer all properties of exemplar."
+          },
+          "englishCorrespondence": "As for the natures corresponding to the celestial spheres and stars, a likeness need not share every property of its original.",
+          "riskMarkers": []
         },
         {
           "n": 15,
           "startChar": 1110,
           "endChar": 1172,
           "text": "فلا يجب اتّصافها بجميع الصفات التي تتّصف بها الأفلاك والكواكب،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 10,
+            "note": "Analogy does not confer all properties of exemplar."
+          },
+          "englishCorrespondence": "As for the natures corresponding to the celestial spheres and stars, a likeness need not share every property of its original.",
+          "riskMarkers": []
         },
         {
           "n": 16,
           "startChar": 1173,
           "endChar": 1256,
           "text": "فإنّ ما يكون مثالاً للشيء المعيّن لا يجب اتّصافه بجميع ما يتّصف به ذلك الشيء بعينه.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 10,
+            "note": "Analogy does not confer all properties of exemplar."
+          },
+          "englishCorrespondence": "As for the natures corresponding to the celestial spheres and stars, a likeness need not share every property of its original.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 17,
           "startChar": 1257,
           "endChar": 1318,
           "text": "ولا نسلّم أنّه ليس هناك ما يتحرّك على سبيل الدوام والاستمرار،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 11,
+            "englishSentenceEnd": 11,
+            "note": "Arteries and lungs as continually moving belong to historical physiology."
+          },
+          "englishCorrespondence": "Nor is it true that nothing in the human being moves continuously: the arteries and organs such as the lungs are in continual motion without interruption or exhaustion [as the author's inherited physiology represents them].",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 18,
           "startChar": 1319,
           "endChar": 1382,
           "text": "فإنّ الشرايين وشبهها كالرئة متحرّكة دائماً من غير ضعف ولا فتور.",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 11,
+            "englishSentenceEnd": 11,
+            "note": "Arteries and lungs as continually moving belong to historical physiology."
+          },
+          "englishCorrespondence": "Nor is it true that nothing in the human being moves continuously: the arteries and organs such as the lungs are in continual motion without interruption or exhaustion [as the author's inherited physiology represents them].",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         }
       ],
       "englishSentences": [
@@ -10660,7 +10809,7 @@
           "text": "Nor is it true that nothing in the human being moves continuously: the arteries and organs such as the lungs are in continual motion without interruption or exhaustion [as the author's inherited physiology represents them]."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 1
     },
     {
@@ -10678,138 +10827,186 @@
           "startChar": 0,
           "endChar": 67,
           "text": "ولا نسلّم أنّ العقل لا يدرك كلّ ما يدرك في الطور الذي هو فوق العقل.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Double negative and scope of intellect preserved."
+          },
+          "englishCorrespondence": "We do not concede that the intellect is incapable of apprehending everything apprehended in the mode said to lie above intellect.",
           "riskMarkers": [
             "negation",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 68,
           "endChar": 72,
           "text": "نعم،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Some hidden matters require a nobler faculty."
+          },
+          "englishCorrespondence": "Certainly, some hidden matters cannot be reached by the intellect on its own, but are apprehended only through another faculty nobler than it.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 73,
           "endChar": 117,
           "text": "إنّ من الأشياء الخفيّة ما لا يصل إليه العقل،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Some hidden matters require a nobler faculty."
+          },
+          "englishCorrespondence": "Certainly, some hidden matters cannot be reached by the intellect on its own, but are apprehended only through another faculty nobler than it.",
           "riskMarkers": [
             "negation",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 4,
           "startChar": 118,
           "endChar": 155,
           "text": "ولا يدرك إلّا بقوّة أخرى هي أشرف منه،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Some hidden matters require a nobler faculty."
+          },
+          "englishCorrespondence": "Certainly, some hidden matters cannot be reached by the intellect on its own, but are apprehended only through another faculty nobler than it.",
           "riskMarkers": [
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 5,
           "startChar": 156,
           "endChar": 221,
           "text": "وأمّا الأشياء الباقية فكلّ ما يدرك بتلك القوّة يدرك أيضاً بالعقل.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "Other higher apprehensions also accessible to intellect."
+          },
+          "englishCorrespondence": "Yet other things apprehended by that higher faculty can also be apprehended by intellect.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 6,
           "startChar": 222,
           "endChar": 308,
           "text": "على أنّا نقول: إنّ كلّ ما يدرك معنى كلّيّاً أو حقيقة كلّيّة يصدق عليه حدّ العقل واسمه.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Comprehending universals satisfies broader ʿaql definition."
+          },
+          "englishCorrespondence": "Indeed, whatever apprehends a universal meaning or universal reality falls under the definition and name of intellect.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 309,
           "endChar": 313,
           "text": "نعم،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 5,
+            "note": "Discursive reason works by finding middle terms."
+          },
+          "englishCorrespondence": "By 'intellect', however, when they speak of the sciences associated with it as formal sciences, they have in mind the discursive faculty that draws knowledge from its principles by finding middle terms and combining them with the two terms of the conclusion.",
+          "riskMarkers": []
         },
         {
           "n": 8,
           "startChar": 314,
           "endChar": 497,
           "text": "إنّ العقل الذي يقولون به ويعبّرون عن العلوم المنسوبة إليه بالعلوم الرسميّة إنّما يريدون به القوّة الفكريّة التي تأخذ العلوم من مبادئها بتوسّط استخراج الأوساط وتأليفها مع حدّي المطلوب،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 5,
+            "note": "Discursive reason works by finding middle terms."
+          },
+          "englishCorrespondence": "By 'intellect', however, when they speak of the sciences associated with it as formal sciences, they have in mind the discursive faculty that draws knowledge from its principles by finding middle terms and combining them with the two terms of the conclusion.",
           "riskMarkers": [
             "exception_or_exclusivity",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 9,
           "startChar": 498,
           "endChar": 562,
           "text": "على أنّ الحافظة بتوسّط استخراج الأوساط وتأليفها مع حدّي المطلوب،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "unresolved-reading",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 6,
+            "note": "Duplicated middle-term phrase remains flagged, not silently deleted."
+          },
+          "englishCorrespondence": "[At this point the transmitted Arabic appears to repeat part of its previous clause.] Memory, estimation, and imagination need not obey the discursive intellect, yet they can submit to the nobler faculty and become its servants and instruments.",
+          "riskMarkers": []
         },
         {
           "n": 10,
           "startChar": 563,
           "endChar": 644,
           "text": "على أنّ الحافظة والمتوهّمة والمتخيّلة قد لا تطيع العقل الفكري وتنقاد لتلك القوّة،",
+          "review": {
+            "status": "unresolved-reading",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 6,
+            "note": "Duplicated middle-term phrase remains flagged, not silently deleted."
+          },
+          "englishCorrespondence": "[At this point the transmitted Arabic appears to repeat part of its previous clause.] Memory, estimation, and imagination need not obey the discursive intellect, yet they can submit to the nobler faculty and become its servants and instruments.",
           "riskMarkers": [
             "negation",
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 11,
           "startChar": 645,
           "endChar": 675,
           "text": "بل تصير من جملة خدمها وآلاتها.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "unresolved-reading",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 6,
+            "note": "Duplicated middle-term phrase remains flagged, not silently deleted."
+          },
+          "englishCorrespondence": "[At this point the transmitted Arabic appears to repeat part of its previous clause.] Memory, estimation, and imagination need not obey the discursive intellect, yet they can submit to the nobler faculty and become its servants and instruments.",
+          "riskMarkers": []
         },
         {
           "n": 12,
           "startChar": 676,
           "endChar": 739,
           "text": "فلا يمتنع أن يعبّر عمّا أدركته تلك القوّة بشيء من العبارات عنه.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 7,
+            "note": "Apprehension by higher power may be spoken of."
+          },
+          "englishCorrespondence": "Accordingly nothing prevents what that faculty apprehends from being expressed, in some measure, in words.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -10856,7 +11053,7 @@
           "text": "Accordingly nothing prevents what that faculty apprehends from being expressed, in some measure, in words."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 2
     },
     {
@@ -10874,74 +11071,102 @@
           "startChar": 0,
           "endChar": 115,
           "text": "وبيّن أنّ دوام المراقبة والمواظبة على ما ذكرنا من الملاحظة مع ملازمة الآداب والشروط المعتبرة عند أرباب هذه الصناعة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Watchfulness and disciplines order bodily faculties; source subject relations remain strained."
+          },
+          "englishCorrespondence": "It is clear that sustained watchfulness, continued attention of the kind described, observance of the recognised disciplines and conditions of this art, and the refusal to employ the bodily faculties merely to procure worldly pleasures or repel bodily discomforts, can bring those faculties into obedience.",
+          "riskMarkers": []
         },
         {
           "n": 2,
           "startChar": 116,
           "endChar": 200,
           "text": "وترك استعمال شيء من القوى الجسمانيّة في جذب الملاذّ الدنيويّة ودفع المكاره البدنيّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Watchfulness and disciplines order bodily faculties; source subject relations remain strained."
+          },
+          "englishCorrespondence": "It is clear that sustained watchfulness, continued attention of the kind described, observance of the recognised disciplines and conditions of this art, and the refusal to employ the bodily faculties merely to procure worldly pleasures or repel bodily discomforts, can bring those faculties into obedience.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 201,
           "endChar": 275,
           "text": "ثمّ قهرها على المطاوعة والمتابعة وممانعة اقتضاء ما تقتضيه القيود المذكورة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Watchfulness and disciplines order bodily faculties; source subject relations remain strained."
+          },
+          "englishCorrespondence": "It is clear that sustained watchfulness, continued attention of the kind described, observance of the recognised disciplines and conditions of this art, and the refusal to employ the bodily faculties merely to procure worldly pleasures or repel bodily discomforts, can bring those faculties into obedience.",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 276,
           "endChar": 316,
           "text": "إمّا بحسب ذاتها أو بوجوب مطاوعتها للهوى،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "unresolved-reading",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 3,
+            "note": "Printed variants بوجود/بوجوب and تقيّد/ويفيد; English is contextual."
+          },
+          "englishCorrespondence": "The practitioner resists the tendencies flowing from the restrictions just mentioned, whether these arise from the faculties' own nature or from their habitual submission to appetite. The bodily faculties of estimation and imagination, in particular, can be made to follow the higher faculty and prevented from turning wholly toward the body and becoming bound to matter and its obscuring conditions.",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 317,
           "endChar": 470,
           "text": "والقوّة الوهميّة أو المتخيّلة البدنيّة إنّما يقهرها على المتابعة والمدافعة عن توجّهها بالكلّيّة نحو البدن وتقيّد انجذابها نحو المادّة والكدورات الماديّة.",
+          "review": {
+            "status": "unresolved-reading",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 3,
+            "note": "Printed variants بوجود/بوجوب and تقيّد/ويفيد; English is contextual."
+          },
+          "englishCorrespondence": "The practitioner resists the tendencies flowing from the restrictions just mentioned, whether these arise from the faculties' own nature or from their habitual submission to appetite. The bodily faculties of estimation and imagination, in particular, can be made to follow the higher faculty and prevented from turning wholly toward the body and becoming bound to matter and its obscuring conditions.",
           "riskMarkers": [
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 6,
           "startChar": 471,
           "endChar": 537,
           "text": "فإنّ الأسباب الفاعلة لا يبعد أن تصير معزولة عن بعض ضروب الفاعليّة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Stronger efficient causes redirect subordinate causal operation."
+          },
+          "englishCorrespondence": "For there is nothing improbable in an operative cause being prevented, by other and more powerful causes, from exercising one kind of activity and constrained instead to exercise an activity opposed to it.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 538,
           "endChar": 593,
           "text": "مقهورة على ضرب آخر يقابل الضرب الأوّل بأسباب أخر قويّة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Stronger efficient causes redirect subordinate causal operation."
+          },
+          "englishCorrespondence": "For there is nothing improbable in an operative cause being prevented, by other and more powerful causes, from exercising one kind of activity and constrained instead to exercise an activity opposed to it.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -10970,7 +11195,7 @@
           "text": "For there is nothing improbable in an operative cause being prevented, by other and more powerful causes, from exercising one kind of activity and constrained instead to exercise an activity opposed to it."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 2
     },
     {
@@ -10981,590 +11206,810 @@
       "sourceLocator": "A pp. 252–253–254–255",
       "sourceUrl": null,
       "arabicSha256": "7e287482cfe77ed43ec4bcf3aab6e63fab7142666bd8bf974eea4a208e8f6d1e",
-      "englishSha256": "0e6dc0a09ada6e4c1f6715e3319b75739c1831d5c7e553327d1fd4383189b7d4",
+      "englishSha256": "34641b55a6b59cd686a335ebb96a118bfb7ffccff01fd2d059f8193a0cc301f6",
       "arabicClauses": [
         {
           "n": 1,
           "startChar": 0,
           "endChar": 74,
           "text": "ومن جعل المعارف العقليّة والعلوم اليقينيّة المستندة إلى البراهين القطعيّة،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Proof-based certainties contrasted with pathological imagination using inherited humoral medicine."
+          },
+          "englishCorrespondence": "Whoever classes intellectual cognitions and certain sciences founded on conclusive demonstrations, attained by a person of balanced constitution who is not overwhelmed by bodily vices, among corrupt imaginings and veils to genuine perfection—neither themselves being such veils nor incapable of serving as preparatory conditions for the perfection at issue—deserves rather to be numbered among the mad, the melancholic, and those who deny necessary knowledge.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 75,
           "endChar": 152,
           "text": "الحاصلة للإنسان المعتدل المزاج الذي لم تستول عليه الرذائل الطبيعيّة البدنيّة،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Proof-based certainties contrasted with pathological imagination using inherited humoral medicine."
+          },
+          "englishCorrespondence": "Whoever classes intellectual cognitions and certain sciences founded on conclusive demonstrations, attained by a person of balanced constitution who is not overwhelmed by bodily vices, among corrupt imaginings and veils to genuine perfection—neither themselves being such veils nor incapable of serving as preparatory conditions for the perfection at issue—deserves rather to be numbered among the mad, the melancholic, and those who deny necessary knowledge.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 153,
           "endChar": 207,
           "text": "من الخيالات الفاسدة والحجب المانعة للكمالات الحقيقيّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Proof-based certainties contrasted with pathological imagination using inherited humoral medicine."
+          },
+          "englishCorrespondence": "Whoever classes intellectual cognitions and certain sciences founded on conclusive demonstrations, attained by a person of balanced constitution who is not overwhelmed by bodily vices, among corrupt imaginings and veils to genuine perfection—neither themselves being such veils nor incapable of serving as preparatory conditions for the perfection at issue—deserves rather to be numbered among the mad, the melancholic, and those who deny necessary knowledge.",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 208,
           "endChar": 285,
           "text": "لا نفسها ولا من الأسباب المعدّة بالنسبة إلى ما هو من الكمالات الحقيقيّة عنده،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Proof-based certainties contrasted with pathological imagination using inherited humoral medicine."
+          },
+          "englishCorrespondence": "Whoever classes intellectual cognitions and certain sciences founded on conclusive demonstrations, attained by a person of balanced constitution who is not overwhelmed by bodily vices, among corrupt imaginings and veils to genuine perfection—neither themselves being such veils nor incapable of serving as preparatory conditions for the perfection at issue—deserves rather to be numbered among the mad, the melancholic, and those who deny necessary knowledge.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 5,
           "startChar": 286,
           "endChar": 297,
           "text": "فمن الأولى،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Proof-based certainties contrasted with pathological imagination using inherited humoral medicine."
+          },
+          "englishCorrespondence": "Whoever classes intellectual cognitions and certain sciences founded on conclusive demonstrations, attained by a person of balanced constitution who is not overwhelmed by bodily vices, among corrupt imaginings and veils to genuine perfection—neither themselves being such veils nor incapable of serving as preparatory conditions for the perfection at issue—deserves rather to be numbered among the mad, the melancholic, and those who deny necessary knowledge.",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 298,
           "endChar": 305,
           "text": "الأحقّ،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Proof-based certainties contrasted with pathological imagination using inherited humoral medicine."
+          },
+          "englishCorrespondence": "Whoever classes intellectual cognitions and certain sciences founded on conclusive demonstrations, attained by a person of balanced constitution who is not overwhelmed by bodily vices, among corrupt imaginings and veils to genuine perfection—neither themselves being such veils nor incapable of serving as preparatory conditions for the perfection at issue—deserves rather to be numbered among the mad, the melancholic, and those who deny necessary knowledge.",
+          "riskMarkers": []
         },
         {
           "n": 7,
           "startChar": 306,
           "endChar": 313,
           "text": "الأخلق،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Proof-based certainties contrasted with pathological imagination using inherited humoral medicine."
+          },
+          "englishCorrespondence": "Whoever classes intellectual cognitions and certain sciences founded on conclusive demonstrations, attained by a person of balanced constitution who is not overwhelmed by bodily vices, among corrupt imaginings and veils to genuine perfection—neither themselves being such veils nor incapable of serving as preparatory conditions for the perfection at issue—deserves rather to be numbered among the mad, the melancholic, and those who deny necessary knowledge.",
+          "riskMarkers": []
         },
         {
           "n": 8,
           "startChar": 314,
           "endChar": 384,
           "text": "أن تعدّه من زمرة المجانين وأصحاب الماليخولياء ومنكري العلوم الضروريّة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Proof-based certainties contrasted with pathological imagination using inherited humoral medicine."
+          },
+          "englishCorrespondence": "Whoever classes intellectual cognitions and certain sciences founded on conclusive demonstrations, attained by a person of balanced constitution who is not overwhelmed by bodily vices, among corrupt imaginings and veils to genuine perfection—neither themselves being such veils nor incapable of serving as preparatory conditions for the perfection at issue—deserves rather to be numbered among the mad, the melancholic, and those who deny necessary knowledge.",
+          "riskMarkers": []
         },
         {
           "n": 9,
           "startChar": 385,
           "endChar": 479,
           "text": "وأمّا تكرار بعض الألفاظ المعيّنة حال المراقبة فإنّما يكون سبباً لاستمرار ما ذكرنا من الملاحظة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Repetition of words sustains attentiveness."
+          },
+          "englishCorrespondence": "Repetition of certain words during vigilant contemplation serves to sustain the attention described above;",
           "riskMarkers": [
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 10,
           "startChar": 480,
           "endChar": 536,
           "text": "وأمّا قوّة الصوت ومجاهرته فغير معتبرة عند أرباب الصناعة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "Loud utterance not a required condition."
+          },
+          "englishCorrespondence": "forceful or loud utterance is not an essential condition recognised by practitioners of the discipline.",
+          "riskMarkers": []
         },
         {
           "n": 11,
           "startChar": 537,
           "endChar": 601,
           "text": "وأمّا التخلّي عن الخلق وملازمة المواضع الخالية فإنّه أمر ضروريّ،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Withdrawal removes distractions and directs heart to God."
+          },
+          "englishCorrespondence": "Withdrawal from people and remaining in solitude is needed to clear the heart of distracting thoughts, relinquish obscuring attachments, and devote one's whole concern to God.",
+          "riskMarkers": []
         },
         {
           "n": 12,
           "startChar": 602,
           "endChar": 658,
           "text": "لا يتصوّر بدونه تفريغ القلب عن الوساوس والشواغل المانعة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Withdrawal removes distractions and directs heart to God."
+          },
+          "englishCorrespondence": "Withdrawal from people and remaining in solitude is needed to clear the heart of distracting thoughts, relinquish obscuring attachments, and devote one's whole concern to God.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 13,
           "startChar": 659,
           "endChar": 687,
           "text": "والتبرّي من العلائق المظلمة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Withdrawal removes distractions and directs heart to God."
+          },
+          "englishCorrespondence": "Withdrawal from people and remaining in solitude is needed to clear the heart of distracting thoughts, relinquish obscuring attachments, and devote one's whole concern to God.",
+          "riskMarkers": []
         },
         {
           "n": 14,
           "startChar": 688,
           "endChar": 728,
           "text": "والإقبال بكنه الهمّة على الله بالكلّيّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Withdrawal removes distractions and directs heart to God."
+          },
+          "englishCorrespondence": "Withdrawal from people and remaining in solitude is needed to clear the heart of distracting thoughts, relinquish obscuring attachments, and devote one's whole concern to God.",
+          "riskMarkers": []
         },
         {
           "n": 15,
           "startChar": 729,
           "endChar": 849,
           "text": "كما لا يتصوّر بدونه استنباط العلوم الفكريّة اليقينيّة والمطالب البرهانيّة مجرّدة عن الشكوك والشبهات الوهميّة والخياليّة.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 5,
+            "note": "Likewise required for orderly demonstration."
+          },
+          "englishCorrespondence": "But the same freedom from distraction is required for deriving certain discursive knowledge and demonstrative conclusions without the intrusion of imaginative and estimative doubts.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 16,
           "startChar": 850,
           "endChar": 918,
           "text": "ومن شرط في هذا الأمر وطريقه تناول الأغذية الرديّة فهو جاهل أو ممرور.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 6,
+            "note": "Bad food not necessary for contemplative practice."
+          },
+          "englishCorrespondence": "Whoever makes the consumption of unsuitable foods a condition of this path is ignorant or disturbed.",
+          "riskMarkers": []
         },
         {
           "n": 17,
           "startChar": 919,
           "endChar": 923,
           "text": "نعم،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 7,
+            "note": "Suitability of foods and impediments differs by constitution."
+          },
+          "englishCorrespondence": "Foods suitable to one traveller may harm another: constitutions differ, and so do the dispositions that obstruct them.",
+          "riskMarkers": []
         },
         {
           "n": 18,
           "startChar": 924,
           "endChar": 974,
           "text": "إنّ من السالكين من يناسبه غذاء معيّن دون غذاء آخر،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 7,
+            "note": "Suitability of foods and impediments differs by constitution."
+          },
+          "englishCorrespondence": "Foods suitable to one traveller may harm another: constitutions differ, and so do the dispositions that obstruct them.",
+          "riskMarkers": []
         },
         {
           "n": 19,
           "startChar": 975,
           "endChar": 1001,
           "text": "ومنهم من يكون على عكس ذلك،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 7,
+            "note": "Suitability of foods and impediments differs by constitution."
+          },
+          "englishCorrespondence": "Foods suitable to one traveller may harm another: constitutions differ, and so do the dispositions that obstruct them.",
+          "riskMarkers": []
         },
         {
           "n": 20,
           "startChar": 1002,
           "endChar": 1078,
           "text": "فإنّ الأمزجة مختلفة والصفات الذميمة الطبيعيّة الحاجبة بحسب ذلك أيضاً مختلفة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 7,
+            "note": "Suitability of foods and impediments differs by constitution."
+          },
+          "englishCorrespondence": "Foods suitable to one traveller may harm another: constitutions differ, and so do the dispositions that obstruct them.",
+          "riskMarkers": []
         },
         {
           "n": 21,
           "startChar": 1079,
           "endChar": 1200,
           "text": "ولا شكّ أنّ التدبير بحسب الأغذية والأدوية وغيرهما في مداواة الأمراض النفسانيّة إنّما يختلف حسب اختلاف تلك العلل والأمراض،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 8,
+            "englishSentenceEnd": 8,
+            "note": "Analogy to bodily therapy preserved."
+          },
+          "englishCorrespondence": "Management of food and remedies for psychological disorders must therefore vary with the condition, just as treatment of bodily illnesses does.",
           "riskMarkers": [
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 22,
           "startChar": 1201,
           "endChar": 1232,
           "text": "كما في العلل والأمراض البدنيّة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 8,
+            "englishSentenceEnd": 8,
+            "note": "Analogy to bodily therapy preserved."
+          },
+          "englishCorrespondence": "Management of food and remedies for psychological disorders must therefore vary with the condition, just as treatment of bodily illnesses does.",
+          "riskMarkers": []
         },
         {
           "n": 23,
           "startChar": 1233,
           "endChar": 1312,
           "text": "وأمّا الجوع الشديد والسهر المفرط فهو مذموم كلّ الذمّ في طريق التصوّف والمجاهدة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 9,
+            "englishSentenceEnd": 9,
+            "note": "Excessive hunger and sleeplessness condemned in both paths."
+          },
+          "englishCorrespondence": "Severe hunger and excessive sleeplessness are thoroughly condemned in the path of Sufi discipline no less than in the path of teaching and investigation.",
+          "riskMarkers": []
         },
         {
           "n": 24,
           "startChar": 1313,
           "endChar": 1349,
           "text": "كما هو مذموم في طريق التعلّم والنظر.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 9,
+            "englishSentenceEnd": 9,
+            "note": "Excessive hunger and sleeplessness condemned in both paths."
+          },
+          "englishCorrespondence": "Severe hunger and excessive sleeplessness are thoroughly condemned in the path of Sufi discipline no less than in the path of teaching and investigation.",
+          "riskMarkers": []
         },
         {
           "n": 25,
           "startChar": 1350,
           "endChar": 1354,
           "text": "نعم،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 10,
+            "note": "Moderate nourishment protects strength, composure and attention."
+          },
+          "englishCorrespondence": "The requisite food is that which sustains strength without upsetting the humours, producing heedlessness, lethargy or turbulent desire, or so occupying a person with digestion and bodily elimination that attention to higher things is lost.",
+          "riskMarkers": []
         },
         {
           "n": 26,
           "startChar": 1355,
           "endChar": 1442,
           "text": "القدر المعتبر عندهم من الغذاء ما لا تسقط بقلّته القوّة ولا تستولي به على المزاج المرّة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 10,
+            "note": "Moderate nourishment protects strength, composure and attention."
+          },
+          "englishCorrespondence": "The requisite food is that which sustains strength without upsetting the humours, producing heedlessness, lethargy or turbulent desire, or so occupying a person with digestion and bodily elimination that attention to higher things is lost.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 27,
           "startChar": 1443,
           "endChar": 1480,
           "text": "ولا تعرض أذيّتها من الاضطراب والغفلة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 10,
+            "note": "Moderate nourishment protects strength, composure and attention."
+          },
+          "englishCorrespondence": "The requisite food is that which sustains strength without upsetting the humours, producing heedlessness, lethargy or turbulent desire, or so occupying a person with digestion and bodily elimination that attention to higher things is lost.",
+          "riskMarkers": []
         },
         {
           "n": 28,
           "startChar": 1481,
           "endChar": 1517,
           "text": "ولا يوجب تكثّر الكسل ولا ثور الشهوة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 10,
+            "note": "Moderate nourishment protects strength, composure and attention."
+          },
+          "englishCorrespondence": "The requisite food is that which sustains strength without upsetting the humours, producing heedlessness, lethargy or turbulent desire, or so occupying a person with digestion and bodily elimination that attention to higher things is lost.",
+          "riskMarkers": []
         },
         {
           "n": 29,
           "startChar": 1518,
           "endChar": 1619,
           "text": "ولا يوجب انصراف همّه عن جانب القدس وإقباله على الهضم والتغذية ودفع الفضول وتوليد البراز وما يشبه ذلك.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 10,
+            "note": "Moderate nourishment protects strength, composure and attention."
+          },
+          "englishCorrespondence": "The requisite food is that which sustains strength without upsetting the humours, producing heedlessness, lethargy or turbulent desire, or so occupying a person with digestion and bodily elimination that attention to higher things is lost.",
+          "riskMarkers": []
         },
         {
           "n": 30,
           "startChar": 1620,
           "endChar": 1655,
           "text": "وهكذا الكلام بعينه في النوم والسهر.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 11,
+            "englishSentenceEnd": 11,
+            "note": "Sleep and wakefulness distinct from SH-058 السهو."
+          },
+          "englishCorrespondence": "Sleep and wakefulness must be regulated by the same principle.",
+          "riskMarkers": []
         },
         {
           "n": 31,
           "startChar": 1656,
           "endChar": 1726,
           "text": "وبالجملة فكلّ ما هو شرط في أحد الطريقين فهو شرط بعينه في الطريق الآخر.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 12,
+            "englishSentenceEnd": 12,
+            "note": "Shared necessary conditions in both epistemic paths."
+          },
+          "englishCorrespondence": "In short, whatever condition is genuinely required for one of the two paths is required for the other.",
+          "riskMarkers": []
         },
         {
           "n": 32,
           "startChar": 1727,
           "endChar": 1886,
           "text": "وأمّا ارتكاب الآلام والمشقّات وترك الراحات بالاختيار فلا يجوز إلّا بالنسبة إلى المستكمل الذي اعتاد الترفّه والتنعّم والراحة البدنيّة واستولت على مزاجه الشهوات،",
+          "review": {
+            "status": "corrected-with-note",
+            "englishSentenceStart": 13,
+            "englishSentenceEnd": 13,
+            "note": "Restored historically disparaging references to effeminate men and women; literal content is attributed, not endorsed."
+          },
+          "englishCorrespondence": "Voluntary pain, hardship and relinquishment of comfort are justified only as a corrective for someone habituated to luxury and bodily ease, whose temperament is ruled by appetites and what the author disparagingly describes as the habits of effeminate men and women.",
           "riskMarkers": [
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 33,
           "startChar": 1887,
           "endChar": 1930,
           "text": "وغلب عليه أخلاق المخانيث والشهوات والنسوان.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "corrected-with-note",
+            "englishSentenceStart": 13,
+            "englishSentenceEnd": 13,
+            "note": "Restored historically disparaging references to effeminate men and women; literal content is attributed, not endorsed."
+          },
+          "englishCorrespondence": "Voluntary pain, hardship and relinquishment of comfort are justified only as a corrective for someone habituated to luxury and bodily ease, whose temperament is ruled by appetites and what the author disparagingly describes as the habits of effeminate men and women.",
+          "riskMarkers": []
         },
         {
           "n": 34,
           "startChar": 1931,
           "endChar": 2013,
           "text": "وهكذا الكلام بعينه في تحصيل الملكات المفيدة لهيئة الحزن والهمّ والبكاء وما يشبهها.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 14,
+            "englishSentenceEnd": 14,
+            "note": "Related cultivation of sorrow, concern and weeping covered."
+          },
+          "englishCorrespondence": "The same qualified principle applies to cultivating dispositions of sorrow, concern, and tears.",
+          "riskMarkers": []
         },
         {
           "n": 35,
           "startChar": 2014,
           "endChar": 2081,
           "text": "وأمّا كسب الملكات المفيدة للذلّة وقلّة الحميّة والمسكنة وما يشبهها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "unresolved-reading",
+            "englishSentenceStart": 15,
+            "englishSentenceEnd": 15,
+            "note": "The transmitted «فلا يجوز» before anger/pride apparently conflicts with therapy by contraries; no conjectural emendation."
+          },
+          "englishCorrespondence": "As for dispositions of humility, restrained assertiveness and lowliness, the transmitted clause concerning those dominated by anger, vanity, pride, coerciveness, and love of status is syntactically and philosophically problematic [see the textual note below].",
+          "riskMarkers": []
         },
         {
           "n": 36,
           "startChar": 2082,
           "endChar": 2200,
           "text": "فلا يجوز بالنسبة إلى المرتاضين الذين غلب على مزاجهم الغضب الشديد والعجب والتكبّر والقهر والسطوة وحبّ الجاه وما يشبهها.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "unresolved-reading",
+            "englishSentenceStart": 15,
+            "englishSentenceEnd": 15,
+            "note": "The transmitted «فلا يجوز» before anger/pride apparently conflicts with therapy by contraries; no conjectural emendation."
+          },
+          "englishCorrespondence": "As for dispositions of humility, restrained assertiveness and lowliness, the transmitted clause concerning those dominated by anger, vanity, pride, coerciveness, and love of status is syntactically and philosophically problematic [see the textual note below].",
+          "riskMarkers": []
         },
         {
           "n": 37,
           "startChar": 2201,
           "endChar": 2416,
           "text": "ولا شكّ أنّ معالجة الأمراض النفسانيّة والتخلّص عن الأخلاق الرديّة المهلكة وتجريد النفس عن العادات الخبيثة المظلمة لا يمكن بدون اتّصافها بملكات مرضيّة وعادات حسنة تقابل تلك الأخلاق الذميمة والصفات الخبيثة بمقابلاتها؛",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 16,
+            "englishSentenceEnd": 16,
+            "note": "Opposing stable virtues cure defective habits."
+          },
+          "englishCorrespondence": "Yet the explicit principle that follows is that destructive habits can only be cured through praiseworthy habits opposed to them.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 38,
           "startChar": 2417,
           "endChar": 2464,
           "text": "فإنّ دفع أحد الضدّين لا يمكن إلّا بالضدّ الآخر،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 16,
+            "englishSentenceEnd": 16,
+            "note": "Opposing stable virtues cure defective habits."
+          },
+          "englishCorrespondence": "Yet the explicit principle that follows is that destructive habits can only be cured through praiseworthy habits opposed to them.",
           "riskMarkers": [
             "negation",
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 39,
           "startChar": 2465,
           "endChar": 2498,
           "text": "كما في معالجة الأمراض الجسمانيّة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 16,
+            "englishSentenceEnd": 16,
+            "note": "Opposing stable virtues cure defective habits."
+          },
+          "englishCorrespondence": "Yet the explicit principle that follows is that destructive habits can only be cured through praiseworthy habits opposed to them.",
+          "riskMarkers": []
         },
         {
           "n": 40,
           "startChar": 2499,
           "endChar": 2601,
           "text": "ومن البيّن أنّ سورة أحد الضدّين متى انكسرت بسورة الضدّ الآخر حصلت هناك حالة متوسّطة قريبة من الاعتدال.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 17,
+            "englishSentenceEnd": 17,
+            "note": "Balance approached through countervailing force."
+          },
+          "englishCorrespondence": "As the force of one contrary is broken by the force of its opposite, a condition nearer the mean arises.",
+          "riskMarkers": []
         },
         {
           "n": 41,
           "startChar": 2602,
           "endChar": 2747,
           "text": "والمزاج الذي استولت عليه الشهوة الخبيثة البهيميّة متى انكسرت الكيفيّة الموجبة لتلك الحالة بسورة الكيفيّة التي تقابلها مال إلى الحالة الاعتداليّة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 18,
+            "englishSentenceEnd": 18,
+            "note": "Appetites moderated through the opposed disposition."
+          },
+          "englishCorrespondence": "Where appetite predominates, an opposing disposition draws the temperament toward equilibrium;",
+          "riskMarkers": []
         },
         {
           "n": 42,
           "startChar": 2748,
           "endChar": 2809,
           "text": "وهكذا الكلام في المزاج الذي غلبت عليه شدّة القهر وحدّة الغضب،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 19,
+            "englishSentenceEnd": 19,
+            "note": "Anger likewise moderated; complete balance not guaranteed."
+          },
+          "englishCorrespondence": "where violence and anger predominate, the appropriate contrary does likewise, even if complete balance is not attained.",
+          "riskMarkers": []
         },
         {
           "n": 43,
           "startChar": 2810,
           "endChar": 2912,
           "text": "فإنّه متى انكسرت الكيفيّة المفيدة لتينك الحالتين بسورة الكيفيّة التي تقابلها مال إلى الحالة المتوسّطة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 19,
+            "englishSentenceEnd": 19,
+            "note": "Anger likewise moderated; complete balance not guaranteed."
+          },
+          "englishCorrespondence": "where violence and anger predominate, the appropriate contrary does likewise, even if complete balance is not attained.",
+          "riskMarkers": []
         },
         {
           "n": 44,
           "startChar": 2913,
           "endChar": 2958,
           "text": "وإن لم يتّفق الوصول إلى حدّ الاعتدال الحقيقي.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 19,
+            "englishSentenceEnd": 19,
+            "note": "Anger likewise moderated; complete balance not guaranteed."
+          },
+          "englishCorrespondence": "where violence and anger predominate, the appropriate contrary does likewise, even if complete balance is not attained.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 45,
           "startChar": 2959,
           "endChar": 3129,
           "text": "ولا يخفى عليك أنّ إخراج المزاج الواقع في الحدود المقابلة لحدّ الاعتدال إلى حدّ الاعتدال باستعمال القوانين المعتبرة في صناعتي الطبّ والحكمة لا يكون إسقاماً وتمريضاً للبدن،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 20,
+            "englishSentenceEnd": 20,
+            "note": "Correcting imbalance counts as healing, not pathology."
+          },
+          "englishCorrespondence": "Restoring a disordered constitution toward equilibrium under the principles of medicine and practical wisdom is not making the soul and body ill, but healing and strengthening them.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 46,
           "startChar": 3130,
           "endChar": 3192,
           "text": "بل يكون بالحقيقة إبراءً وتقويةً للنفس والبدن وإفادةً لصحّتهما.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 20,
+            "englishSentenceEnd": 20,
+            "note": "Correcting imbalance counts as healing, not pathology."
+          },
+          "englishCorrespondence": "Restoring a disordered constitution toward equilibrium under the principles of medicine and practical wisdom is not making the soul and body ill, but healing and strengthening them.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 47,
           "startChar": 3193,
           "endChar": 3304,
           "text": "ولا تتوهّم أنّ ما يكون علاجاً لمرض معيّن في محلّ جزئيّ بحسب وقت وحال معيّنين يكون علاجاً لسائر الأمراض الباقية،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 21,
+            "englishSentenceEnd": 21,
+            "note": "Treatment not transferable indiscriminately among diseases."
+          },
+          "englishCorrespondence": "One must not imagine that a remedy suited to one disorder in one patient at one moment cures every disorder.",
+          "riskMarkers": []
         },
         {
           "n": 48,
           "startChar": 3305,
           "endChar": 3379,
           "text": "فإنّ الأمراض النفسانيّة إنّما يختصّ بعضها بالحدود الواقعة في جانب الإفراط،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 22,
+            "englishSentenceEnd": 22,
+            "note": "Excess and deficiency distinguished."
+          },
+          "englishCorrespondence": "Some psychological disorders arise through excess, others through deficiency;",
           "riskMarkers": [
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 49,
           "startChar": 3380,
           "endChar": 3425,
           "text": "والبعض الآخر بالحدود الواقعة في جانب التفريط،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 22,
+            "englishSentenceEnd": 22,
+            "note": "Excess and deficiency distinguished."
+          },
+          "englishCorrespondence": "Some psychological disorders arise through excess, others through deficiency;",
+          "riskMarkers": []
         },
         {
           "n": 50,
           "startChar": 3426,
           "endChar": 3523,
           "text": "على أنّ مداواة مرض معيّن إنّما تختلف بحسب اختلاف الأوقات والأحوال والموضوعات والعادات وما يشبهها.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 23,
+            "englishSentenceEnd": 23,
+            "note": "Circumstances, times, people and habits qualify remedies."
+          },
+          "englishCorrespondence": "remedies vary according to persons, times, circumstances and habits.",
           "riskMarkers": [
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 51,
           "startChar": 3524,
           "endChar": 3535,
           "text": "فتأمّل ذلك.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "corrected",
+            "englishSentenceStart": 24,
+            "englishSentenceEnd": 24,
+            "note": "Restored explicit «فتأمل ذلك»: Reflect on this."
+          },
+          "englishCorrespondence": "Reflect on this.",
+          "riskMarkers": []
         },
         {
           "n": 52,
           "startChar": 3536,
           "endChar": 3623,
           "text": "واعلم أنّ مخالفة النفس بالمعنى الذي ذهب إليه العارفون كما يجب اعتبارها في طريق التصوّف،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 25,
+            "englishSentenceEnd": 25,
+            "note": "Discipline of lower self essential for Sufism and rational learning."
+          },
+          "englishCorrespondence": "Finally, 'opposing the lower soul', understood in the sense of the gnostics, is as necessary in teaching and rational inquiry as in Sufi practice.",
+          "riskMarkers": []
         },
         {
           "n": 53,
           "startChar": 3624,
           "endChar": 3666,
           "text": "يجب أيضاً اعتبارها في طريق التعليم والنظر.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 25,
+            "englishSentenceEnd": 25,
+            "note": "Discipline of lower self essential for Sufism and rational learning."
+          },
+          "englishCorrespondence": "Finally, 'opposing the lower soul', understood in the sense of the gnostics, is as necessary in teaching and rational inquiry as in Sufi practice.",
+          "riskMarkers": []
         },
         {
           "n": 54,
           "startChar": 3667,
           "endChar": 3750,
           "text": "وقد أشرنا إلى ذلك في كثير من المواضع فلا حاجة هاهنا إلى تكرار الكلام وتوضيح البيان،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 26,
+            "englishSentenceEnd": 26,
+            "note": "Author declines repeated elaboration."
+          },
+          "englishCorrespondence": "We have explained this elsewhere, so need not prolong the account here.",
+          "riskMarkers": []
         },
         {
           "n": 55,
           "startChar": 3751,
           "endChar": 3761,
           "text": "فاعرف ذلك.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "corrected",
+            "englishSentenceStart": 27,
+            "englishSentenceEnd": 27,
+            "note": "Restored explicit «فاعرف ذلك»: Understand this."
+          },
+          "englishCorrespondence": "Understand this.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -11643,84 +12088,96 @@
         {
           "n": 13,
           "startChar": 1953,
-          "endChar": 2112,
-          "text": "Voluntary pain, hardship and relinquishment of comfort are only justified as a corrective for a person habituated to luxury, bodily ease, and excessive desire."
+          "endChar": 2219,
+          "text": "Voluntary pain, hardship and relinquishment of comfort are justified only as a corrective for someone habituated to luxury and bodily ease, whose temperament is ruled by appetites and what the author disparagingly describes as the habits of effeminate men and women."
         },
         {
           "n": 14,
-          "startChar": 2113,
-          "endChar": 2208,
+          "startChar": 2220,
+          "endChar": 2315,
           "text": "The same qualified principle applies to cultivating dispositions of sorrow, concern, and tears."
         },
         {
           "n": 15,
-          "startChar": 2209,
-          "endChar": 2468,
+          "startChar": 2316,
+          "endChar": 2575,
           "text": "As for dispositions of humility, restrained assertiveness and lowliness, the transmitted clause concerning those dominated by anger, vanity, pride, coerciveness, and love of status is syntactically and philosophically problematic [see the textual note below]."
         },
         {
           "n": 16,
-          "startChar": 2469,
-          "endChar": 2598,
+          "startChar": 2576,
+          "endChar": 2705,
           "text": "Yet the explicit principle that follows is that destructive habits can only be cured through praiseworthy habits opposed to them."
         },
         {
           "n": 17,
-          "startChar": 2599,
-          "endChar": 2703,
+          "startChar": 2706,
+          "endChar": 2810,
           "text": "As the force of one contrary is broken by the force of its opposite, a condition nearer the mean arises."
         },
         {
           "n": 18,
-          "startChar": 2704,
-          "endChar": 2798,
+          "startChar": 2811,
+          "endChar": 2905,
           "text": "Where appetite predominates, an opposing disposition draws the temperament toward equilibrium;"
         },
         {
           "n": 19,
-          "startChar": 2799,
-          "endChar": 2918,
+          "startChar": 2906,
+          "endChar": 3025,
           "text": "where violence and anger predominate, the appropriate contrary does likewise, even if complete balance is not attained."
         },
         {
           "n": 20,
-          "startChar": 2919,
-          "endChar": 3100,
+          "startChar": 3026,
+          "endChar": 3207,
           "text": "Restoring a disordered constitution toward equilibrium under the principles of medicine and practical wisdom is not making the soul and body ill, but healing and strengthening them."
         },
         {
           "n": 21,
-          "startChar": 3101,
-          "endChar": 3209,
+          "startChar": 3208,
+          "endChar": 3316,
           "text": "One must not imagine that a remedy suited to one disorder in one patient at one moment cures every disorder."
         },
         {
           "n": 22,
-          "startChar": 3210,
-          "endChar": 3287,
+          "startChar": 3317,
+          "endChar": 3394,
           "text": "Some psychological disorders arise through excess, others through deficiency;"
         },
         {
           "n": 23,
-          "startChar": 3288,
-          "endChar": 3356,
+          "startChar": 3395,
+          "endChar": 3463,
           "text": "remedies vary according to persons, times, circumstances and habits."
         },
         {
           "n": 24,
-          "startChar": 3357,
-          "endChar": 3503,
-          "text": "Finally, 'opposing the lower soul', understood in the sense of the gnostics, is as necessary in teaching and rational inquiry as in Sufi practice."
+          "startChar": 3464,
+          "endChar": 3480,
+          "text": "Reflect on this."
         },
         {
           "n": 25,
-          "startChar": 3504,
-          "endChar": 3575,
+          "startChar": 3481,
+          "endChar": 3627,
+          "text": "Finally, 'opposing the lower soul', understood in the sense of the gnostics, is as necessary in teaching and rational inquiry as in Sufi practice."
+        },
+        {
+          "n": 26,
+          "startChar": 3628,
+          "endChar": 3699,
           "text": "We have explained this elsewhere, so need not prolong the account here."
+        },
+        {
+          "n": 27,
+          "startChar": 3700,
+          "endChar": 3716,
+          "text": "Understand this."
         }
       ],
-      "manualComparativeReview": false,
-      "sourceWarnings": 0
+      "manualComparativeReview": true,
+      "sourceWarnings": 1
     },
     {
       "id": "QT-057",
@@ -11737,106 +12194,146 @@
           "startChar": 0,
           "endChar": 90,
           "text": "واعلم أنّ المحقّقين من النظّار لا ينكرون إمكان طريق التصوّف وإفضاءه إلى المقصد على الندور،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Rational investigators report rare success of contemplative method."
+          },
+          "englishCorrespondence": "Know that the accomplished investigators among speculative thinkers do not deny that the Sufi path is possible or that it occasionally reaches its intended end.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 91,
           "endChar": 130,
           "text": "لكنّهم استوعروه واستبعدوا اجتماع شروطه،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Condition aggregation viewed as difficult."
+          },
+          "englishCorrespondence": "Nevertheless, they regard it as arduous and think that bringing together its necessary conditions is unlikely.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 131,
           "endChar": 178,
           "text": "وزعموا أنّ محو العلائق إلى ذلك الحدّ كالمتعذّر،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "Removal of attachments nearly impossible, in this objection."
+          },
+          "englishCorrespondence": "They suppose that effacing attachments to the required degree is almost unattainable;",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 179,
           "endChar": 223,
           "text": "وإن حصل في حالة ومدّة قريبة فثباته أبعد منه،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Passing thoughts imperil durable attentiveness."
+          },
+          "englishCorrespondence": "even if achieved briefly, retaining that condition is still harder, because the slightest obsessive thought or passing notion disturbs and distracts the heart.",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 224,
           "endChar": 263,
           "text": "إذ أدنى وسوسة وخاطر يشوّش القلب ويشغله.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Passing thoughts imperil durable attentiveness."
+          },
+          "englishCorrespondence": "even if achieved briefly, retaining that condition is still harder, because the slightest obsessive thought or passing notion disturbs and distracts the heart.",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 264,
           "endChar": 323,
           "text": "وفي أثناء المجاهدة قد يفسد المزاج ويختلّ العقل ويمرض البدن،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 5,
+            "note": "Bodily and mental disturbances are the reported objection."
+          },
+          "englishCorrespondence": "During spiritual exertion, moreover, the constitution may be disturbed, judgement confused and the body made ill.",
           "riskMarkers": [
             "technical_vocabulary"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 324,
           "endChar": 423,
           "text": "ومتى لم تتقدّم رياضة تهذيبه بحقائق العلوم تتشبّث بالقلب خيالات فاسدة يطمئنّ النفس إليها مدّة مديدة.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 6,
+            "note": "Without prior knowledge fantasies may be entrenched."
+          },
+          "englishCorrespondence": "Unless the practitioner has first trained and disciplined the mind through genuine sciences, corrupt imaginings may take hold of the heart and satisfy the soul for a very long time.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 8,
           "startChar": 424,
           "endChar": 495,
           "text": "فكم من سالك سلك هذا الطريق ثمّ بقي في خيال واحد عشرين سنة وأكثر من ذلك،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 7,
+            "note": "Twenty-year counterexample and prior mastery preserved."
+          },
+          "englishCorrespondence": "Many a traveller has pursued this path only to remain caught in a single image for twenty years or more, when prior mastery of knowledge would have disclosed the confusion immediately.",
+          "riskMarkers": []
         },
         {
           "n": 9,
           "startChar": 496,
           "endChar": 566,
           "text": "ولو كان قد أتقن العلم من قبل لاتّضح له وجه التباس ذلك الخيال في الحال.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 7,
+            "note": "Twenty-year counterexample and prior mastery preserved."
+          },
+          "englishCorrespondence": "Many a traveller has pursued this path only to remain caught in a single image for twenty years or more, when prior mastery of knowledge would have disclosed the confusion immediately.",
+          "riskMarkers": []
         },
         {
           "n": 10,
           "startChar": 567,
           "endChar": 626,
           "text": "وحينئذ كان الاشتغال بطريق النظر أسهل وأقرب إلى الغرض وأوفق.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 8,
+            "englishSentenceEnd": 8,
+            "note": "Easier, nearer, fitting follows adopted أوفق, not alternative أوثق."
+          },
+          "englishCorrespondence": "In this sense the path of rational investigation appears easier, closer to its objective, and more fitting.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -11889,7 +12386,7 @@
           "text": "In this sense the path of rational investigation appears easier, closer to its objective, and more fitting."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 1
     },
     {
@@ -11907,118 +12404,162 @@
           "startChar": 0,
           "endChar": 96,
           "text": "وأمّا نحن فنقول: إنّ كلّ شرط يعتبر في طريق التصوّف فلا بدّ من اعتباره في طريق النظر عند التحقيق،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "First-person reply makes two paths share necessary conditions."
+          },
+          "englishCorrespondence": "As for us, we say that, on proper examination, every condition that must be observed in the Sufi path must also be observed in the path of rational investigation.",
+          "riskMarkers": []
         },
         {
           "n": 2,
           "startChar": 97,
           "endChar": 161,
           "text": "فإنّ رفع العلائق المشوّشة أمر ضروريّ لا بدّ منه في كلا الطريقين،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 3,
+            "note": "Distractions must be removed."
+          },
+          "englishCorrespondence": "The removal of distracting attachments is necessary in both; that is clear without further demonstration.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 162,
           "endChar": 195,
           "text": "وهذا بيّن لا يحتاج إلى بيان زائد،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 3,
+            "note": "Distractions must be removed."
+          },
+          "englishCorrespondence": "The removal of distracting attachments is necessary in both; that is clear without further demonstration.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 4,
           "startChar": 196,
           "endChar": 225,
           "text": "وهكذا الكلام في النوم والسهر.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Explicit السهر is sleep deprivation/wakefulness, not السهو."
+          },
+          "englishCorrespondence": "The same is true of the regulation of sleep and wakefulness.",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 226,
           "endChar": 290,
           "text": "وبالجملة فإنّ اعتبار جميع ما به يعتدل المزاج ضروريّ في الصورتين،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 5,
+            "note": "Balance and avoiding causes of imbalance preserved."
+          },
+          "englishCorrespondence": "In short, everything required to maintain a balanced constitution must be observed in either path, while everything that disturbs that balance must be avoided.",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 291,
           "endChar": 350,
           "text": "كما أنّ الاجتناب عن جميع ما يخرجه عن الاعتدال ضروريّ فيهما،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 5,
+            "note": "Balance and avoiding causes of imbalance preserved."
+          },
+          "englishCorrespondence": "In short, everything required to maintain a balanced constitution must be observed in either path, while everything that disturbs that balance must be avoided.",
+          "riskMarkers": []
         },
         {
           "n": 7,
           "startChar": 351,
           "endChar": 397,
           "text": "ويُعرف من هذا أنّه لا استبعاد في اجتماع شروطه.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 6,
+            "note": "Conditions are not impossible to combine."
+          },
+          "englishCorrespondence": "This also shows that there is nothing inherently incredible about bringing together the conditions of contemplative practice.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 8,
           "startChar": 398,
           "endChar": 465,
           "text": "وأمّا الخواطر المشوّشة لجمع الهمّة فهي من جملة الموانع في الطريقين،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 7,
+            "note": "Intrusive thoughts affect both paths."
+          },
+          "englishCorrespondence": "Distracting thoughts that disperse concentration are obstacles to both paths.",
+          "riskMarkers": []
         },
         {
           "n": 9,
           "startChar": 466,
           "endChar": 528,
           "text": "فإنّه من الضرورات الواقعة في الطريق حسب اقتضاء الحكمة البالغة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 8,
+            "englishSentenceEnd": 8,
+            "note": "Strained providential-necessity phrase interpreted, not emended."
+          },
+          "englishCorrespondence": "Such disturbances do arise in the course of one's activity under the order of providential wisdom;",
+          "riskMarkers": []
         },
         {
           "n": 10,
           "startChar": 529,
           "endChar": 637,
           "text": "لكنّ تسكين المتخيّلة المتحرّكة بالحركات المضطربة المشوّشة وإلجامها ومنعها عنها غير متعذّر عند أرباب الصناعة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 9,
+            "englishSentenceEnd": 9,
+            "note": "Stillness and restraint of imagination are possible."
+          },
+          "englishCorrespondence": "nevertheless, practitioners of the discipline do not regard it as impossible to quiet the imagination when it is driven by confused, agitated motions, restraining it and preventing its disturbances, as their books explain.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 11,
           "startChar": 638,
           "endChar": 660,
           "text": "كما هو مذكور في كتبهم.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 9,
+            "englishSentenceEnd": 9,
+            "note": "Stillness and restraint of imagination are possible."
+          },
+          "englishCorrespondence": "nevertheless, practitioners of the discipline do not regard it as impossible to quiet the imagination when it is driven by confused, agitated motions, restraining it and preventing its disturbances, as their books explain.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -12077,7 +12618,7 @@
           "text": "nevertheless, practitioners of the discipline do not regard it as impossible to quiet the imagination when it is driven by confused, agitated motions, restraining it and preventing its disturbances, as their books explain."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 0
     },
     {
@@ -12095,133 +12636,181 @@
           "startChar": 0,
           "endChar": 99,
           "text": "وما قيل إنّ علوم النظّار مأخوذة من الحواسّ وعلوم أصحاب المجاهدة مأخوذة من المبدأ الفيّاض فليس بشيء،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "False opposition between empiricist reasoning and spiritual effusion rejected."
+          },
+          "englishCorrespondence": "The assertion that the speculative philosophers derive their knowledge from the senses, whereas those who undertake spiritual exertion derive theirs from the effusive Principle, is mistaken.",
+          "riskMarkers": []
         },
         {
           "n": 2,
           "startChar": 100,
           "endChar": 145,
           "text": "فإنّ الحواسّ هي المعدّات الأُوَل في الطريقين،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Senses prepare both methods; first Principle effuses knowledge."
+          },
+          "englishCorrespondence": "The senses provide the first preparatory conditions in both paths, while the principle that actually bestows cognitions and sciences is, through itself, the effusive Principle.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 146,
           "endChar": 193,
           "text": "ومفيض المعارف والعلوم هو المبدأ الفيّاض بالذات.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Senses prepare both methods; first Principle effuses knowledge."
+          },
+          "englishCorrespondence": "The senses provide the first preparatory conditions in both paths, while the principle that actually bestows cognitions and sciences is, through itself, the effusive Principle.",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 194,
           "endChar": 238,
           "text": "أمّا الأوّل فكونها معدّة في طريق النظر ظاهر،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "Preparatory role for rational method accepted."
+          },
+          "englishCorrespondence": "As for the first claim: that the senses prepare one for rational investigation is obvious.",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 239,
           "endChar": 330,
           "text": "وكونها معدّة في الطريق الآخر فلأنّها لو لم تكن معدّة لما تعلّقت النفس الناطقة ببدنه البتّة،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Embodied soul argument depends on sensory preparation."
+          },
+          "englishCorrespondence": "But they are preparatory also for the other path: were they not, the rational soul would never have become attached to its body.",
           "riskMarkers": [
             "negation",
             "conditional"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 6,
           "startChar": 331,
           "endChar": 404,
           "text": "ثمّ إنّ الكمال الحقيقي لا بدّ وأن يحصل لها بعد انقطاع ذلك التعلّق بالموت.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 5,
+            "note": "Postmortem attainment of perfection explicit."
+          },
+          "englishCorrespondence": "True perfection, moreover, must become available to the soul when that bodily attachment is severed by death.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 405,
           "endChar": 467,
           "text": "فلئن قيل: جاز أن يكتسب من ذلك التعلّق ما يمنعه عن الوصول إليه.",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "Objection and reply retained, question renders strained syntax."
+          },
+          "englishCorrespondence": "If one objects that bodily association can impart dispositions that prevent attainment, we answer that, on that supposition, the perfection must have been attainable prior to association with the body; why, then, should the soul have become attached to it at all?",
           "riskMarkers": [
             "objection"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 8,
           "startChar": 468,
           "endChar": 515,
           "text": "قلنا: فعلى هذا يجب حصول ذلك الكمال قبل تعلّقها،",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "Objection and reply retained, question renders strained syntax."
+          },
+          "englishCorrespondence": "If one objects that bodily association can impart dispositions that prevent attainment, we answer that, on that supposition, the perfection must have been attainable prior to association with the body; why, then, should the soul have become attached to it at all?",
           "riskMarkers": [
             "reply"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 9,
           "startChar": 516,
           "endChar": 543,
           "text": "وحينئذ لم تتعلّق به البتّة.",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 7,
+            "note": "Objection and reply retained, question renders strained syntax."
+          },
+          "englishCorrespondence": "If one objects that bodily association can impart dispositions that prevent attainment, we answer that, on that supposition, the perfection must have been attainable prior to association with the body; why, then, should the soul have become attached to it at all?",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 10,
           "startChar": 544,
           "endChar": 673,
           "text": "فلئن قلتم: فكما يكتسب من ذلك التعلّق ملكات مانعة للوصول فلا يبعد أن يكتسب منه ملكات أُخَر تُعَدّ من جملة الأسباب والشروط المطلقة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked-with-note",
+            "englishSentenceStart": 8,
+            "englishSentenceEnd": 8,
+            "note": "Acquired beneficial habits concede previous premise; الشروط المطلقة contextual."
+          },
+          "englishCorrespondence": "If the opponent replies that, just as bodily association can impart obstructive habits, it may equally impart other habits that serve as preparatory causes and conditions, we answer: you have now returned to the truth and conceded what you previously denied.",
+          "riskMarkers": []
         },
         {
           "n": 11,
           "startChar": 674,
           "endChar": 742,
           "text": "قلنا: فعلى هذا قد رجعتم إلى ما هو الحقّ واعترفتم به بعد ما أنكرتموه.",
+          "review": {
+            "status": "checked-with-note",
+            "englishSentenceStart": 8,
+            "englishSentenceEnd": 8,
+            "note": "Acquired beneficial habits concede previous premise; الشروط المطلقة contextual."
+          },
+          "englishCorrespondence": "If the opponent replies that, just as bodily association can impart obstructive habits, it may equally impart other habits that serve as preparatory causes and conditions, we answer: you have now returned to the truth and conceded what you previously denied.",
           "riskMarkers": [
             "reply"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 12,
           "startChar": 743,
           "endChar": 803,
           "text": "وأمّا الثاني فلما بيّنّاه في كتبنا المعمولة في صناعة الحكمة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "unresolved-reading",
+            "englishSentenceStart": 9,
+            "englishSentenceEnd": 9,
+            "note": "Referenced missing proof and reported ancestral lacuna not reconstructed."
+          },
+          "englishCorrespondence": "As for the second claim, its explanation has already been supplied in our works on philosophical science.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -12280,7 +12869,7 @@
           "text": "As for the second claim, its explanation has already been supplied in our works on philosophical science."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 2
     },
     {
@@ -12291,241 +12880,333 @@
       "sourceLocator": "A pp. 266–267",
       "sourceUrl": null,
       "arabicSha256": "5d7d65bf0cc8de5c10927808532af1d4380b193c271a19b80fbc02878240d391",
-      "englishSha256": "ca892eb2664afa3ef13a3b83ab22a12361f3aa32d67668e64e59279b11428b28",
+      "englishSha256": "985b831ece9704771da58cec31486c026a2a0a2e22942762c576a8f4c0475240",
       "arabicClauses": [
         {
           "n": 1,
           "startChar": 0,
           "endChar": 44,
           "text": "على أنّا نقول: إنّ العلوم كلّها موجودة فينا،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Sciences are present but veiled."
+          },
+          "englishCorrespondence": "We further say that all the sciences are already present within us, as reflection upon the earlier discussions will show, but they remain hidden behind veils preventing their manifestation.",
+          "riskMarkers": []
         },
         {
           "n": 2,
           "startChar": 45,
           "endChar": 85,
           "text": "لما ستعرفه لو تأمّلت في المباحث السالفة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Sciences are present but veiled."
+          },
+          "englishCorrespondence": "We further say that all the sciences are already present within us, as reflection upon the earlier discussions will show, but they remain hidden behind veils preventing their manifestation.",
           "riskMarkers": [
             "conditional"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 3,
           "startChar": 86,
           "endChar": 125,
           "text": "لكنّها مخفيّة بالحجب المانعة عن الظهور.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Sciences are present but veiled."
+          },
+          "englishCorrespondence": "We further say that all the sciences are already present within us, as reflection upon the earlier discussions will show, but they remain hidden behind veils preventing their manifestation.",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 126,
           "endChar": 321,
           "text": "ولا يخفى عليك أنّ ظهورها تارة يكون بالحركات اللطيفة الفكريّة الروحانيّة بعد تسليط القوّة القدسيّة على قوّتي الوهميّة والمتخيّلة وسائر القوى الجسمانيّة وتهذيب الأخلاق وتزيين النفس بالأخلاق الحسنة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Discursive route entails ordering lower faculties and character."
+          },
+          "englishCorrespondence": "They can become manifest in one way through subtle, spiritual movements of discursive thought, after the holy faculty has been given mastery over estimation, imagination, and the other bodily faculties and after the character has been refined and the soul adorned with good qualities.",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 322,
           "endChar": 453,
           "text": "وتارة أخرى بتسكين المتخيّلة والمتوهّمة وإلجامهما ومنعهما عن الحركات المضطربة المشوّشة بعد تسخير القوى الجسمانيّة بالتزكية والتصفية.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "Contemplative route entails stilling imagination."
+          },
+          "englishCorrespondence": "They can become manifest in another way through stilling estimation and imagination, bridling them and restraining their confused movements once the bodily faculties have been disciplined through purification and clarification.",
+          "riskMarkers": []
         },
         {
           "n": 6,
           "startChar": 454,
           "endChar": 520,
           "text": "وكلا الطريقين حقّ عند أكثر المحقّقين من أهل النظر وأصحاب المجاهدة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Both routes endorsed."
+          },
+          "englishCorrespondence": "Most accomplished investigators, whether rational scholars or practitioners of spiritual exertion, accept both paths as legitimate.",
+          "riskMarkers": []
         },
         {
           "n": 7,
           "startChar": 521,
           "endChar": 582,
           "text": "[شعر] خذ أبطن هرشى أو قفاها فإنّه * كلا جانبي هرشى لهنّ طريق.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 5,
+            "note": "Harshā poetic route analogy preserved."
+          },
+          "englishCorrespondence": "As the quoted verse puts it: 'Take the inner slope of Harshā or its far side: either side affords a path.' Someone who believes that purification and refinement of character have no place in teaching and rational inquiry follows caprice and whim.",
+          "riskMarkers": []
         },
         {
           "n": 8,
           "startChar": 583,
           "endChar": 649,
           "text": "ومن اعتقد أنّه لا اعتبار بالتزكية والتصفية في طريق التعليم والنظر،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 5,
+            "note": "Criticism directed at knowledge without purification."
+          },
+          "englishCorrespondence": "As the quoted verse puts it: 'Take the inner slope of Harshā or its far side: either side affords a path.' Someone who believes that purification and refinement of character have no place in teaching and rational inquiry follows caprice and whim.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 9,
           "startChar": 650,
           "endChar": 695,
           "text": "ركب متن الهوى والهوس حسب هذه العقيدة الفاسدة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 5,
+            "note": "Criticism directed at knowledge without purification."
+          },
+          "englishCorrespondence": "As the quoted verse puts it: 'Take the inner slope of Harshā or its far side: either side affords a path.' Someone who believes that purification and refinement of character have no place in teaching and rational inquiry follows caprice and whim.",
+          "riskMarkers": []
         },
         {
           "n": 10,
           "startChar": 696,
           "endChar": 725,
           "text": "وغلبت على نفسه الشهوة والغضب،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 6,
+            "note": "Appetite, anger and deprivation of virtue preserved."
+          },
+          "englishCorrespondence": "Appetite and anger dominate the soul, destructive natural vices take possession of it, and angelic, loving virtues are denied to it.",
+          "riskMarkers": []
         },
         {
           "n": 11,
           "startChar": 726,
           "endChar": 765,
           "text": "واستولت عليه الرذائل الطبيعيّة المهلكة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 6,
+            "note": "Appetite, anger and deprivation of virtue preserved."
+          },
+          "englishCorrespondence": "Appetite and anger dominate the soul, destructive natural vices take possession of it, and angelic, loving virtues are denied to it.",
+          "riskMarkers": []
         },
         {
           "n": 12,
           "startChar": 766,
           "endChar": 806,
           "text": "وحُرمت عليها الفضائل الملكيّة المحبّيّة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 6,
+            "note": "Appetite, anger and deprivation of virtue preserved."
+          },
+          "englishCorrespondence": "Appetite and anger dominate the soul, destructive natural vices take possession of it, and angelic, loving virtues are denied to it.",
+          "riskMarkers": []
         },
         {
           "n": 13,
           "startChar": 807,
           "endChar": 882,
           "text": "واشتغل بقراءة كتب مقلّدي الفلاسفة وزبر المتكلّمين من أصحاب الجدل والمشاغبة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 7,
+            "note": "Imitators, disputants, conflicting memorized opinions retained."
+          },
+          "englishCorrespondence": "Such a person devotes himself to the books of imitators of philosophers and to contentious theologians, wasting his life memorising contradictory opinions and rival statements.",
+          "riskMarkers": []
         },
         {
           "n": 14,
           "startChar": 883,
           "endChar": 950,
           "text": "وضيّع عمره في ضبط الآراء المتناقضة وحفظ الأحوال والأقوال المتقابلة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 7,
+            "note": "Imitators, disputants, conflicting memorized opinions retained."
+          },
+          "englishCorrespondence": "Such a person devotes himself to the books of imitators of philosophers and to contentious theologians, wasting his life memorising contradictory opinions and rival statements.",
+          "riskMarkers": []
         },
         {
           "n": 15,
           "startChar": 951,
           "endChar": 1002,
           "text": "فوقع نفسه في لجج الخيالات الفاسدة والأوهام الباطلة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "unresolved-reading",
+            "englishSentenceStart": 8,
+            "englishSentenceEnd": 8,
+            "note": "A p267 variants فوقع/فأوقع and المفرفة/المغرقة left open."
+          },
+          "englishCorrespondence": "Tossed into a sea of corrupt imaginings and false suppositions amid overwhelming waves of doubts, the light of his heart fades and his insight is blinded by the accumulation of obscuring conditions and false beliefs.",
+          "riskMarkers": []
         },
         {
           "n": 16,
           "startChar": 1003,
           "endChar": 1043,
           "text": "عند تلاطم أمواج الشكوك والشبهات المغرقة.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "unresolved-reading",
+            "englishSentenceStart": 8,
+            "englishSentenceEnd": 8,
+            "note": "A p267 variants فوقع/فأوقع and المفرفة/المغرقة left open."
+          },
+          "englishCorrespondence": "Tossed into a sea of corrupt imaginings and false suppositions amid overwhelming waves of doubts, the light of his heart fades and his insight is blinded by the accumulation of obscuring conditions and false beliefs.",
+          "riskMarkers": []
         },
         {
           "n": 17,
           "startChar": 1044,
           "endChar": 1115,
           "text": "فاضمحلّ نور قلبه وعميت بصيرته بتراكم الكدورات المظلمة والعقائد الفاسدة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "unresolved-reading",
+            "englishSentenceStart": 8,
+            "englishSentenceEnd": 8,
+            "note": "A p267 variants فوقع/فأوقع and المفرفة/المغرقة left open."
+          },
+          "englishCorrespondence": "Tossed into a sea of corrupt imaginings and false suppositions amid overwhelming waves of doubts, the light of his heart fades and his insight is blinded by the accumulation of obscuring conditions and false beliefs.",
+          "riskMarkers": []
         },
         {
           "n": 18,
           "startChar": 1116,
           "endChar": 1165,
           "text": "وازداد فيه الجهل والتردّد وحصل له البهت والتحيّر،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "corrected",
+            "englishSentenceStart": 9,
+            "englishSentenceEnd": 11,
+            "note": "Restored «فلحق به من الحق الغضب», a previously omitted reference to divine wrath."
+          },
+          "englishCorrespondence": "Ignorance and hesitation intensify; perplexity takes hold; he no longer knows which way to turn, and the wrath of the Real overtakes him.",
+          "riskMarkers": []
         },
         {
           "n": 19,
           "startChar": 1166,
           "endChar": 1184,
           "text": "ولا يدري أين يذهب،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "corrected",
+            "englishSentenceStart": 9,
+            "englishSentenceEnd": 11,
+            "note": "Restored «فلحق به من الحق الغضب», a previously omitted reference to divine wrath."
+          },
+          "englishCorrespondence": "Ignorance and hesitation intensify; perplexity takes hold; he no longer knows which way to turn, and the wrath of the Real overtakes him.",
+          "riskMarkers": []
         },
         {
           "n": 20,
           "startChar": 1185,
           "endChar": 1208,
           "text": "فلحق به من الحقّ الغضب،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "corrected",
+            "englishSentenceStart": 9,
+            "englishSentenceEnd": 11,
+            "note": "Restored «فلحق به من الحق الغضب», a previously omitted reference to divine wrath."
+          },
+          "englishCorrespondence": "Ignorance and hesitation intensify; perplexity takes hold; he no longer knows which way to turn, and the wrath of the Real overtakes him.",
+          "riskMarkers": []
         },
         {
           "n": 21,
           "startChar": 1209,
           "endChar": 1245,
           "text": "وظنّ أنّ الكمال ما حصل له ووصل إليه،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 12,
+            "englishSentenceEnd": 12,
+            "note": "Mistaken belief that book-learning exhausts perfection preserved."
+          },
+          "englishCorrespondence": "Yet he supposes that the learning he has acquired is the whole of perfection and that there is no more desirable state or abiding felicity beyond it.",
+          "riskMarkers": []
         },
         {
           "n": 22,
           "startChar": 1246,
           "endChar": 1293,
           "text": "وليس وراءه حالة مرغوبة كماليّة ولا سعادة باقية،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 12,
+            "englishSentenceEnd": 12,
+            "note": "Mistaken belief that book-learning exhausts perfection preserved."
+          },
+          "englishCorrespondence": "Yet he supposes that the learning he has acquired is the whole of perfection and that there is no more desirable state or abiding felicity beyond it.",
+          "riskMarkers": []
         },
         {
           "n": 23,
           "startChar": 1294,
           "endChar": 1361,
           "text": "فليتقِ خبث هذه العقيدة ووجه ضررها من لطفه وليستعذ به من مكره وغضبه.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "unresolved-reading",
+            "englishSentenceStart": 13,
+            "englishSentenceEnd": 13,
+            "note": "A p267 prints فيتقن ... واستعد while adopted Arabic has فليتق ... وليستعذ; the English remains interpretative."
+          },
+          "englishCorrespondence": "Let him recognise, through God's grace, the corruption and harm of this belief, and seek refuge in Him from His devising and wrath.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -12592,24 +13273,24 @@
         {
           "n": 11,
           "startChar": 1668,
-          "endChar": 1705,
-          "text": "he no longer knows which way to turn."
+          "endChar": 1746,
+          "text": "he no longer knows which way to turn, and the wrath of the Real overtakes him."
         },
         {
           "n": 12,
-          "startChar": 1706,
-          "endChar": 1855,
+          "startChar": 1747,
+          "endChar": 1896,
           "text": "Yet he supposes that the learning he has acquired is the whole of perfection and that there is no more desirable state or abiding felicity beyond it."
         },
         {
           "n": 13,
-          "startChar": 1856,
-          "endChar": 1954,
-          "text": "Let him beware the corruption and danger of that belief and seek protection from its consequences."
+          "startChar": 1897,
+          "endChar": 2028,
+          "text": "Let him recognise, through God's grace, the corruption and harm of this belief, and seek refuge in Him from His devising and wrath."
         }
       ],
-      "manualComparativeReview": false,
-      "sourceWarnings": 1
+      "manualComparativeReview": true,
+      "sourceWarnings": 2
     },
     {
       "id": "QT-061",
@@ -12619,227 +13300,307 @@
       "sourceLocator": "A pp. 269–270",
       "sourceUrl": null,
       "arabicSha256": "e836a0616d501da780358ad62139ce1b69a640aa4fa59cbd0037aa438da0079e",
-      "englishSha256": "cbbde711ac1f851254b23f89b1b3e6d8c7093a672a97aa9f23d5298cf608c5c0",
+      "englishSha256": "02fa69d55c9e679d1c77126e53ad8714dcaf802b1a44d9ed075261a2bbd1c675",
       "arabicClauses": [
         {
           "n": 1,
           "startChar": 0,
           "endChar": 62,
           "text": "دقيقة: قد بقي هاهنا بحث مفيد لا بدّ وأن نشير إليه إشارة خفيّة.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 1,
+            "englishSentenceEnd": 1,
+            "note": "Final subtle issue announced."
+          },
+          "englishCorrespondence": "A subtle point remains, one useful inquiry to which we must allude briefly.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 2,
           "startChar": 63,
           "endChar": 144,
           "text": "اعلم أنّ أصحاب النظر والتعليم عندهم علم يمكن أن يتميّز به النظر الصحيح عن الفاسد،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Logic discriminates valid reasoning and truth/falsehood."
+          },
+          "englishCorrespondence": "Know that those who pursue rational investigation and formal instruction possess a science by which sound reasoning can be distinguished from unsound reasoning, and the true aspect of a matter can be distinguished from the false.",
+          "riskMarkers": []
         },
         {
           "n": 3,
           "startChar": 145,
           "endChar": 188,
           "text": "ويمكن أيضاً أن يعرف به وجه الحقّ عن الباطل،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 2,
+            "englishSentenceEnd": 2,
+            "note": "Logic discriminates valid reasoning and truth/falsehood."
+          },
+          "englishCorrespondence": "Know that those who pursue rational investigation and formal instruction possess a science by which sound reasoning can be distinguished from unsound reasoning, and the true aspect of a matter can be distinguished from the false.",
+          "riskMarkers": []
         },
         {
           "n": 4,
           "startChar": 189,
           "endChar": 245,
           "text": "وليس عند السالكين من أصحاب المجاهدة آلة شأنها ما ذكرناه.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 3,
+            "englishSentenceEnd": 3,
+            "note": "Initial disadvantage of wayfarers stated as dialectical position."
+          },
+          "englishCorrespondence": "The travellers of the path who practise spiritual exertion do not possess an instrument of precisely this description.",
+          "riskMarkers": []
         },
         {
           "n": 5,
           "startChar": 246,
           "endChar": 276,
           "text": "فلئن قيل: إنّ علومنا وجدانيّة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Immediate knowledge objection presented."
+          },
+          "englishCorrespondence": "If they object that their knowledge is immediately experienced, and just as necessary knowledge given in direct awareness needs no instrumental science to distinguish it, so their knowledge obtained through spiritual taste and immediate finding requires none, our reply is that what one spiritual traveller experiences may contradict what another experiences.",
           "riskMarkers": [
             "objection"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 6,
           "startChar": 277,
           "endChar": 350,
           "text": "وكما لا يفتقر في حصول العلوم الوجدانيّة الضروريّة إلى صناعة آليّة مميّزة،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Immediate knowledge objection presented."
+          },
+          "englishCorrespondence": "If they object that their knowledge is immediately experienced, and just as necessary knowledge given in direct awareness needs no instrumental science to distinguish it, so their knowledge obtained through spiritual taste and immediate finding requires none, our reply is that what one spiritual traveller experiences may contradict what another experiences.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 7,
           "startChar": 351,
           "endChar": 392,
           "text": "فكذلك العلوم الحاصلة لنا بالذوق والوجدان.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Immediate knowledge objection presented."
+          },
+          "englishCorrespondence": "If they object that their knowledge is immediately experienced, and just as necessary knowledge given in direct awareness needs no instrumental science to distinguish it, so their knowledge obtained through spiritual taste and immediate finding requires none, our reply is that what one spiritual traveller experiences may contradict what another experiences.",
+          "riskMarkers": []
         },
         {
           "n": 8,
           "startChar": 393,
           "endChar": 466,
           "text": "قلنا: إنّ ما يجده بعض السالكين قد يكون مناقضاً لما يجده البعض الآخر منهم،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 4,
+            "englishSentenceEnd": 4,
+            "note": "Reply notes conflicting experiences."
+          },
+          "englishCorrespondence": "If they object that their knowledge is immediately experienced, and just as necessary knowledge given in direct awareness needs no instrumental science to distinguish it, so their knowledge obtained through spiritual taste and immediate finding requires none, our reply is that what one spiritual traveller experiences may contradict what another experiences.",
           "riskMarkers": [
             "reply"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 9,
           "startChar": 467,
           "endChar": 526,
           "text": "ولهذا قد ينكر البعض منهم البعض الآخر في إدراكاتهم ومعارفهم.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 5,
+            "englishSentenceEnd": 5,
+            "note": "Mutual denial among experiencers included."
+          },
+          "englishCorrespondence": "Indeed, practitioners sometimes reject one another's perceptions and cognitions.",
+          "riskMarkers": []
         },
         {
           "n": 10,
           "startChar": 527,
           "endChar": 635,
           "text": "ومتى عرفت هذا فنقول: لا بدّ للسالكين من أصحاب المجاهدة أن يحصّلوا العلوم الحقيقيّة الفكريّة النظريّة أوّلاً،",
+          "review": {
+            "status": "unresolved-reading",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 6,
+            "note": "Purification, prior studies and logic analogy retained; غير المتسقة المنتظمة printed syntax unresolved."
+          },
+          "englishCorrespondence": "Once this is understood, we say that those who follow the path of spiritual exertion must first acquire the genuine discursive and theoretical sciences, after purifying their hearts by severing darkening attachments and refining and ordering their dispositions, so that those sciences—including the instrumental discipline that discriminates correct from incorrect thinking—will stand in relation to experiential cognitions much as the instrumental science of logic stands in relation to theoretical sciences whose arguments require ordering.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 11,
           "startChar": 636,
           "endChar": 706,
           "text": "بعد تصفية القلب بقطع العلائق المكدّرة المظلمة وتهذيب الأخلاق وترتيبها،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "unresolved-reading",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 6,
+            "note": "Purification, prior studies and logic analogy retained; غير المتسقة المنتظمة printed syntax unresolved."
+          },
+          "englishCorrespondence": "Once this is understood, we say that those who follow the path of spiritual exertion must first acquire the genuine discursive and theoretical sciences, after purifying their hearts by severing darkening attachments and refining and ordering their dispositions, so that those sciences—including the instrumental discipline that discriminates correct from incorrect thinking—will stand in relation to experiential cognitions much as the instrumental science of logic stands in relation to theoretical sciences whose arguments require ordering.",
+          "riskMarkers": []
         },
         {
           "n": 12,
           "startChar": 707,
           "endChar": 882,
           "text": "حتّى تصير هذه العلوم النظريّة التي تكون من جملتها الصناعة الآليّة المميّزة بالنسبة إلى المعارف الذوقيّة كالعلم الآلي المنطقي بالنسبة إلى العلوم النظريّة غير المتّسقة المنتظمة.",
+          "review": {
+            "status": "unresolved-reading",
+            "englishSentenceStart": 6,
+            "englishSentenceEnd": 6,
+            "note": "Purification, prior studies and logic analogy retained; غير المتسقة المنتظمة printed syntax unresolved."
+          },
+          "englishCorrespondence": "Once this is understood, we say that those who follow the path of spiritual exertion must first acquire the genuine discursive and theoretical sciences, after purifying their hearts by severing darkening attachments and refining and ordering their dispositions, so that those sciences—including the instrumental discipline that discriminates correct from incorrect thinking—will stand in relation to experiential cognitions much as the instrumental science of logic stands in relation to theoretical sciences whose arguments require ordering.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 13,
           "startChar": 883,
           "endChar": 959,
           "text": "فلو تحيّر الطالب السالك وتوقّف في بعض المطالب التي لا تحصل له بالفكر والنظر،",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 7,
+            "note": "Other route attains what thought cannot, tested by acquired intellectual habit."
+          },
+          "englishCorrespondence": "Then, if the seeker becomes perplexed and reaches an impasse on a question not resolved by discursive reasoning, he may attain it by the other path and discern its true aspect through the stable intellectual dispositions acquired from his theoretical studies.",
           "riskMarkers": [
             "negation"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 14,
           "startChar": 960,
           "endChar": 980,
           "text": "حصّله بالطريق الآخر،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 7,
+            "note": "Other route attains what thought cannot, tested by acquired intellectual habit."
+          },
+          "englishCorrespondence": "Then, if the seeker becomes perplexed and reaches an impasse on a question not resolved by discursive reasoning, he may attain it by the other path and discern its true aspect through the stable intellectual dispositions acquired from his theoretical studies.",
+          "riskMarkers": []
         },
         {
           "n": 15,
           "startChar": 981,
           "endChar": 1059,
           "text": "ويدرك وجه الحقّ فيه بالملكات المستفادة من هذه العلوم الحاصلة له بالفكر والنظر.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 7,
+            "englishSentenceEnd": 7,
+            "note": "Other route attains what thought cannot, tested by acquired intellectual habit."
+          },
+          "englishCorrespondence": "Then, if the seeker becomes perplexed and reaches an impasse on a question not resolved by discursive reasoning, he may attain it by the other path and discern its true aspect through the stable intellectual dispositions acquired from his theoretical studies.",
+          "riskMarkers": []
         },
         {
           "n": 16,
           "startChar": 1060,
           "endChar": 1112,
           "text": "هذا إذا لم يكن له شيخ مكمّل يرشده في كلّ مقام ومنزل.",
+          "review": {
+            "status": "corrected",
+            "englishSentenceStart": 8,
+            "englishSentenceEnd": 8,
+            "note": "Active مكمّل denotes a guide able to perfect another, not passive perfected."
+          },
+          "englishCorrespondence": "This applies where he has no perfecting spiritual master to guide him at every station and stage.",
           "riskMarkers": [
             "negation",
             "conditional"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 17,
           "startChar": 1113,
           "endChar": 1199,
           "text": "واعلم أنّ تحقيق الكلام في هذا الموضع إنّما يحتاج إلى كلام مبسوط لا يحتمله هذا المختصر.",
+          "review": {
+            "status": "checked",
+            "englishSentenceStart": 9,
+            "englishSentenceEnd": 9,
+            "note": "Full treatment deferred."
+          },
+          "englishCorrespondence": "A full treatment of this question would require a lengthy discussion beyond this brief treatise.",
           "riskMarkers": [
             "negation",
             "exception_or_exclusivity"
-          ],
-          "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+          ]
         },
         {
           "n": 18,
           "startChar": 1200,
           "endChar": 1242,
           "text": "وهذا آخر ما أردنا أن نورده في هذه الرسالة،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 10,
+            "englishSentenceEnd": 10,
+            "note": "Ancestor's closing formula kept separate from descendant's أقول."
+          },
+          "englishCorrespondence": "This is the end of what we intended to present in this epistle.",
+          "riskMarkers": []
         },
         {
           "n": 19,
           "startChar": 1243,
           "endChar": 1267,
           "text": "والحمد لله ربّ العالمين،",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 11,
+            "englishSentenceEnd": 11,
+            "note": "Blessing and doxology retained."
+          },
+          "englishCorrespondence": "Praise belongs to God, Lord of the worlds, and blessings and peace upon His Prophet Muḥammad the Chosen and his pure family.",
+          "riskMarkers": []
         },
         {
           "n": 20,
           "startChar": 1268,
           "endChar": 1322,
           "text": "والصلاة والسلام على نبيّه محمّد المصطفى وآله الطاهرين.",
-          "riskMarkers": [],
           "review": {
-            "status": "not-yet-individually-reviewed"
-          }
+            "status": "checked",
+            "englishSentenceStart": 11,
+            "englishSentenceEnd": 11,
+            "note": "Blessing and doxology retained."
+          },
+          "englishCorrespondence": "Praise belongs to God, Lord of the worlds, and blessings and peace upon His Prophet Muḥammad the Chosen and his pure family.",
+          "riskMarkers": []
         }
       ],
       "englishSentences": [
@@ -12889,7 +13650,7 @@
           "n": 8,
           "startChar": 1669,
           "endChar": 1766,
-          "text": "This applies where he has no perfected spiritual teacher to guide him at every station and stage."
+          "text": "This applies where he has no perfecting spiritual master to guide him at every station and stage."
         },
         {
           "n": 9,
@@ -12910,7 +13671,7 @@
           "text": "Praise belongs to God, Lord of the worlds, and blessings and peace upon His Prophet Muḥammad the Chosen and his pure family."
         }
       ],
-      "manualComparativeReview": false,
+      "manualComparativeReview": true,
       "sourceWarnings": 3
     },
     {
@@ -86069,7 +86830,7 @@
       "sourceLocator": "A, printed p. 274",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/470?lang=ar",
       "arabicSha256": "ac5bb55b771aad046eb7cf08a14965b4a4fecda564cb810bf7a4f2102309e79d",
-      "englishSha256": "61d26a71c9b95697d8a2d71fb112cd1fa3cd0804f6a9fd062936f5129798365c",
+      "englishSha256": "58408eb305df1e7d0a463792c6c4d7e93a8b18420b3f823da431f66635a50b8a",
       "arabicClauses": [
         {
           "n": 1,
@@ -86082,7 +86843,7 @@
             "englishSentenceEnd": 1,
             "note": "أقفاله/إقباله/أفعاله variants materially affect metaphor; the principal displayed reading is followed."
           },
-          "englishCorrespondence": "All of this applies when the seeker has no master of the path to direct him, no perfected guide to follow, who holds in his hands the keys to his locks and states.",
+          "englishCorrespondence": "All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his locks and states.",
           "riskMarkers": [
             "negation",
             "conditional"
@@ -86099,7 +86860,7 @@
             "englishSentenceEnd": 1,
             "note": "أقفاله/إقباله/أفعاله variants materially affect metaphor; the principal displayed reading is followed."
           },
-          "englishCorrespondence": "All of this applies when the seeker has no master of the path to direct him, no perfected guide to follow, who holds in his hands the keys to his locks and states.",
+          "englishCorrespondence": "All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his locks and states.",
           "riskMarkers": []
         },
         {
@@ -86113,7 +86874,7 @@
             "englishSentenceEnd": 1,
             "note": "أقفاله/إقباله/أفعاله variants materially affect metaphor; the principal displayed reading is followed."
           },
-          "englishCorrespondence": "All of this applies when the seeker has no master of the path to direct him, no perfected guide to follow, who holds in his hands the keys to his locks and states.",
+          "englishCorrespondence": "All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his locks and states.",
           "riskMarkers": []
         },
         {
@@ -86179,19 +86940,19 @@
         {
           "n": 1,
           "startChar": 0,
-          "endChar": 163,
-          "text": "All of this applies when the seeker has no master of the path to direct him, no perfected guide to follow, who holds in his hands the keys to his locks and states."
+          "endChar": 159,
+          "text": "All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his locks and states."
         },
         {
           "n": 2,
-          "startChar": 164,
-          "endChar": 322,
+          "startChar": 160,
+          "endChar": 318,
           "text": "If, however, he does have such a guide, then every stage and station has sciences and a measure proper to it, according to the time and the seeker's capacity."
         },
         {
           "n": 3,
-          "startChar": 323,
-          "endChar": 467,
+          "startChar": 319,
+          "endChar": 463,
           "text": "The guide, discerning the successive degrees of that capacity, draws the traveller's attention to those sciences and their appropriate measures."
         }
       ],

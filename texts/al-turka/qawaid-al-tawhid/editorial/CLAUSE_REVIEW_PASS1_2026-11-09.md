@@ -1,6 +1,6 @@
 # Qawāʿid / Tamhīd — clause-level comparative review, pass 1
 
-**9 November 2026.** This work inventories 5520 Arabic punctuation-clause candidates and 2851 English sentence candidates across **all 171 bilingual units**. Only **1574 Arabic clauses in 75 units** have been individually compared with their English in this pass. The remaining **3946 are not certified**.
+**9 November 2026.** This work inventories 5520 Arabic punctuation-clause candidates and 2853 English sentence candidates across **all 171 bilingual units**. Only **1761 Arabic clauses in 86 units** have been individually compared with their English in this pass. The remaining **3759 are not certified**.
 
 All clauses, offsets, corresponding English for reviewed passages, and source fingerprints are in the [complete clause ledger](../qa/clause-ledger.json). Automatic enumeration is **not** evidence of an accurate translation. The original Arabic and the reported QT-059 lacuna remain unchanged.
 
@@ -662,8 +662,166 @@ All clauses, offsets, corresponding English for reviewed passages, and source fi
 | 4–7 | 4–6 | **checked** | ويحصل من مجموع البدن والنفس المجرّدة وحدة حقيقيّة ونوعيّة طبيعيّة، يصدر عن ذلك المركّب الحقيقي أفعال طبيعيّة يمتنع صدور… — A naturally one body–soul substance distinguished from bare plurality of principles. |
 | 8–10 | 7–9 | **checked** | كما أنّ من الممتنع أن يحصل منها ومن الأفلاك والكواكب والمبادئ الموجدة لها والجواهر المجرّدة التي هي كالصورة النوعيّة با… — The cosmos can have aggregative unity, not natural species-unity in this argument; the proofs are deferred. |
 
+### QT-051 — A pp. 234
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–1 | 1–1 | **checked** | وقد بيّن أيضاً فيها أنّ الأنواع الشريفة التي يمكن أن يصدر عنها الأفعال الكماليّة متناهية، — Noble kinds capable of perfectional acts are stated finite. |
+| 2–4 | 2–2 | **checked-with-note** | ولا اعتبار بالأنواع الناقصة الخسيسة هاهنا، فإنّ جميع ما يصدر عن الخسيس من الأفعال الكماليّة يصدر عن الشريف، وبصدر عن ال… — Superior kind has more acts than inferior; transmitted وبصدر remains uncorrected. |
+| 5–6 | 3–3 | **checked** | والنوع الشريف الواحد بالوحدة الحقيقيّة يتضمّن سائر الأنواع الخسيسة بالنسبة إليه بالمعنى الذي أشير إليه هاهنا، وإن كانت … — One truly unified noble kind encompasses lesser kinds relatively, even if numerically unbounded. |
+| 7–8 | 4–4 | **checked** | وأمّا الكمال الأصلي الممكن بحسب النوع هاهنا، فإنّما يشترك فيه جميع الأشخاص الكاملة من النوع، — Primary perfection is shared by complete individuals of a species. |
+| 9–9 | 5–5 | **checked** | ولا اعتبار بالكمالات الجزئيّة التي تختلف بحسب اختلاف الاستعدادات الجزئيّة. — Particular perfections vary with preparation. |
+| 10–12 | 6–7 | **checked** | وأمّا تفصيل الكلام في هذه المواضع وتوجيه البحث فيه وتحقيقه، فلا يخفى على الذكيّ العارف بأصول المباحث السالفة، فلا وجه ل… — Author declines expansion of proofs in the brief treatise. |
+
+### QT-052 — A pp. 237
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–1 | 1–1 | **checked** | ولا يمتنع أن يتوقّف الحقّ في الاتّصاف ببعض الصفات والتعيّنات على صفات وتعيّنات أخر لاحقة به من ذاته. — Attributes and determinations may depend on others from the Real Himself. |
+| 2–3 | 2–2 | **unresolved-reading** | فلئن قيل: إنّها من حيث هي موجودات خاصّة أمور ممكنة، ولا يجوز أن يتوقّف الحقّ في الاتّصاف بصفة كماليّة على أمر ممكن — بب… — Objection concerns possible existents; awkward displaced «ببعض الصفات الممكنة» remains. |
+| 4–5 | 2–2 | **checked-with-note** | قلنا: لا يستحيل أن يتوقّف الحقّ في الاتّصاف ببعض الصفات الممكنة على صفات أخر ممكنة، كالكمالات الأسمائيّة مثلاً على صفات… — One reply to the objection; relative possible qualifications do not render the essence externally dependent. |
+| 6–7 | 3–4 | **checked-with-note** | والصفة الكماليّة هي ظهوره في المظهر التامّ الكامل الكلّيّ المطلق الذي هو من الصفات اللازمة والتعيّنات الواجبة به، لا من… — Manifestation in the complete locus is a necessary concomitant through the Real. |
+
+### QT-053 — A pp. 243–244
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–1 | 1–1 | **checked** | فلا يلزم أن تكون الإدراكات الحسّيّة والوهميّة والفكريّة غير معتبرة لو كان الكمال الحقيقي والإدراك اليقيني لا يحصل إلّا … — Higher apprehension does not invalidate sensory, estimative or discursive knowledge. |
+| 2–5 | 2–4 | **checked-with-note** | فإنّ القوّة القدسيّة لو أخذت العلوم والمعارف عن مآخذها ومعادنها عند تجرّدها واستولت على هذه القوى المدركة بحيث لا تستقل… — Higher faculty orders all lower faculties; 'pledging allegiance' metaphor condensed. |
+| 6–6 | 5–5 | **checked** | فاعلم ذلك. — Authorial injunction preserved. |
+| 7–10 | 6–7 | **unresolved-reading** | وأمّا نظائر العفاريت والمردة فلا نسلّم أنّها غير موجودة فيه. نعم، القوى التي هي نظائرها لمّا تسخّرت وهربت [هُذّبت: قراء… — هربت versus هذّبت remains; English 'disciplined' is contextual. |
+| 11–12 | 8–8 | **checked** | فصارت ممنوعة عمّا يصحّ أن يصدر عنها حسب اقتضاء طبائعها أو مطاوعتها لبعض القوى الجسمانيّة كالقوّة الوهميّة وشبهها، من غي… — Lower faculties act under the holy faculty rather than independently. |
+| 13–13 | 9–9 | **checked** | وهكذا الكلام بعينه في الأنواع المماثلة للوحوش والسباع والبهائم والحشرات المؤذية. — Animal and harmful counterparts included. |
+| 14–16 | 10–10 | **checked** | وأمّا الطبائع التي هي نظائر الأفلاك والكواكب، فلا يجب اتّصافها بجميع الصفات التي تتّصف بها الأفلاك والكواكب، فإنّ ما يك… — Analogy does not confer all properties of exemplar. |
+| 17–18 | 11–11 | **checked-with-note** | ولا نسلّم أنّه ليس هناك ما يتحرّك على سبيل الدوام والاستمرار، فإنّ الشرايين وشبهها كالرئة متحرّكة دائماً من غير ضعف ولا… — Arteries and lungs as continually moving belong to historical physiology. |
+
+### QT-054 — A pp. 248
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–1 | 1–1 | **checked** | ولا نسلّم أنّ العقل لا يدرك كلّ ما يدرك في الطور الذي هو فوق العقل. — Double negative and scope of intellect preserved. |
+| 2–4 | 2–2 | **checked** | نعم، إنّ من الأشياء الخفيّة ما لا يصل إليه العقل، ولا يدرك إلّا بقوّة أخرى هي أشرف منه، — Some hidden matters require a nobler faculty. |
+| 5–5 | 3–3 | **checked** | وأمّا الأشياء الباقية فكلّ ما يدرك بتلك القوّة يدرك أيضاً بالعقل. — Other higher apprehensions also accessible to intellect. |
+| 6–6 | 4–4 | **checked** | على أنّا نقول: إنّ كلّ ما يدرك معنى كلّيّاً أو حقيقة كلّيّة يصدق عليه حدّ العقل واسمه. — Comprehending universals satisfies broader ʿaql definition. |
+| 7–8 | 5–5 | **checked** | نعم، إنّ العقل الذي يقولون به ويعبّرون عن العلوم المنسوبة إليه بالعلوم الرسميّة إنّما يريدون به القوّة الفكريّة التي تأ… — Discursive reason works by finding middle terms. |
+| 9–11 | 6–6 | **unresolved-reading** | على أنّ الحافظة بتوسّط استخراج الأوساط وتأليفها مع حدّي المطلوب، على أنّ الحافظة والمتوهّمة والمتخيّلة قد لا تطيع العقل… — Duplicated middle-term phrase remains flagged, not silently deleted. |
+| 12–12 | 7–7 | **checked** | فلا يمتنع أن يعبّر عمّا أدركته تلك القوّة بشيء من العبارات عنه. — Apprehension by higher power may be spoken of. |
+
+### QT-055 — A pp. 249–250
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–1 | **checked-with-note** | وبيّن أنّ دوام المراقبة والمواظبة على ما ذكرنا من الملاحظة مع ملازمة الآداب والشروط المعتبرة عند أرباب هذه الصناعة، وتر… — Watchfulness and disciplines order bodily faculties; source subject relations remain strained. |
+| 4–5 | 2–3 | **unresolved-reading** | إمّا بحسب ذاتها أو بوجوب مطاوعتها للهوى، والقوّة الوهميّة أو المتخيّلة البدنيّة إنّما يقهرها على المتابعة والمدافعة عن … — Printed variants بوجود/بوجوب and تقيّد/ويفيد; English is contextual. |
+| 6–7 | 4–4 | **checked** | فإنّ الأسباب الفاعلة لا يبعد أن تصير معزولة عن بعض ضروب الفاعليّة، مقهورة على ضرب آخر يقابل الضرب الأوّل بأسباب أخر قوي… — Stronger efficient causes redirect subordinate causal operation. |
+
+### QT-056 — A pp. 252–253–254–255
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–8 | 1–1 | **checked-with-note** | ومن جعل المعارف العقليّة والعلوم اليقينيّة المستندة إلى البراهين القطعيّة، الحاصلة للإنسان المعتدل المزاج الذي لم تستول… — Proof-based certainties contrasted with pathological imagination using inherited humoral medicine. |
+| 9–9 | 2–2 | **checked** | وأمّا تكرار بعض الألفاظ المعيّنة حال المراقبة فإنّما يكون سبباً لاستمرار ما ذكرنا من الملاحظة، — Repetition of words sustains attentiveness. |
+| 10–10 | 3–3 | **checked** | وأمّا قوّة الصوت ومجاهرته فغير معتبرة عند أرباب الصناعة. — Loud utterance not a required condition. |
+| 11–14 | 4–4 | **checked** | وأمّا التخلّي عن الخلق وملازمة المواضع الخالية فإنّه أمر ضروريّ، لا يتصوّر بدونه تفريغ القلب عن الوساوس والشواغل المانع… — Withdrawal removes distractions and directs heart to God. |
+| 15–15 | 5–5 | **checked** | كما لا يتصوّر بدونه استنباط العلوم الفكريّة اليقينيّة والمطالب البرهانيّة مجرّدة عن الشكوك والشبهات الوهميّة والخياليّة. — Likewise required for orderly demonstration. |
+| 16–16 | 6–6 | **checked** | ومن شرط في هذا الأمر وطريقه تناول الأغذية الرديّة فهو جاهل أو ممرور. — Bad food not necessary for contemplative practice. |
+| 17–20 | 7–7 | **checked** | نعم، إنّ من السالكين من يناسبه غذاء معيّن دون غذاء آخر، ومنهم من يكون على عكس ذلك، فإنّ الأمزجة مختلفة والصفات الذميمة … — Suitability of foods and impediments differs by constitution. |
+| 21–22 | 8–8 | **checked** | ولا شكّ أنّ التدبير بحسب الأغذية والأدوية وغيرهما في مداواة الأمراض النفسانيّة إنّما يختلف حسب اختلاف تلك العلل والأمرا… — Analogy to bodily therapy preserved. |
+| 23–24 | 9–9 | **checked** | وأمّا الجوع الشديد والسهر المفرط فهو مذموم كلّ الذمّ في طريق التصوّف والمجاهدة، كما هو مذموم في طريق التعلّم والنظر. — Excessive hunger and sleeplessness condemned in both paths. |
+| 25–29 | 10–10 | **checked** | نعم، القدر المعتبر عندهم من الغذاء ما لا تسقط بقلّته القوّة ولا تستولي به على المزاج المرّة، ولا تعرض أذيّتها من الاضطر… — Moderate nourishment protects strength, composure and attention. |
+| 30–30 | 11–11 | **checked** | وهكذا الكلام بعينه في النوم والسهر. — Sleep and wakefulness distinct from SH-058 السهو. |
+| 31–31 | 12–12 | **checked** | وبالجملة فكلّ ما هو شرط في أحد الطريقين فهو شرط بعينه في الطريق الآخر. — Shared necessary conditions in both epistemic paths. |
+| 32–33 | 13–13 | **corrected-with-note** | وأمّا ارتكاب الآلام والمشقّات وترك الراحات بالاختيار فلا يجوز إلّا بالنسبة إلى المستكمل الذي اعتاد الترفّه والتنعّم وال… — Restored historically disparaging references to effeminate men and women; literal content is attributed, not endorsed. |
+| 34–34 | 14–14 | **checked** | وهكذا الكلام بعينه في تحصيل الملكات المفيدة لهيئة الحزن والهمّ والبكاء وما يشبهها. — Related cultivation of sorrow, concern and weeping covered. |
+| 35–36 | 15–15 | **unresolved-reading** | وأمّا كسب الملكات المفيدة للذلّة وقلّة الحميّة والمسكنة وما يشبهها، فلا يجوز بالنسبة إلى المرتاضين الذين غلب على مزاجهم… — The transmitted «فلا يجوز» before anger/pride apparently conflicts with therapy by contraries; no conjectural emendation. |
+| 37–39 | 16–16 | **checked** | ولا شكّ أنّ معالجة الأمراض النفسانيّة والتخلّص عن الأخلاق الرديّة المهلكة وتجريد النفس عن العادات الخبيثة المظلمة لا يم… — Opposing stable virtues cure defective habits. |
+| 40–40 | 17–17 | **checked** | ومن البيّن أنّ سورة أحد الضدّين متى انكسرت بسورة الضدّ الآخر حصلت هناك حالة متوسّطة قريبة من الاعتدال. — Balance approached through countervailing force. |
+| 41–41 | 18–18 | **checked** | والمزاج الذي استولت عليه الشهوة الخبيثة البهيميّة متى انكسرت الكيفيّة الموجبة لتلك الحالة بسورة الكيفيّة التي تقابلها م… — Appetites moderated through the opposed disposition. |
+| 42–44 | 19–19 | **checked** | وهكذا الكلام في المزاج الذي غلبت عليه شدّة القهر وحدّة الغضب، فإنّه متى انكسرت الكيفيّة المفيدة لتينك الحالتين بسورة ال… — Anger likewise moderated; complete balance not guaranteed. |
+| 45–46 | 20–20 | **checked** | ولا يخفى عليك أنّ إخراج المزاج الواقع في الحدود المقابلة لحدّ الاعتدال إلى حدّ الاعتدال باستعمال القوانين المعتبرة في ص… — Correcting imbalance counts as healing, not pathology. |
+| 47–47 | 21–21 | **checked** | ولا تتوهّم أنّ ما يكون علاجاً لمرض معيّن في محلّ جزئيّ بحسب وقت وحال معيّنين يكون علاجاً لسائر الأمراض الباقية، — Treatment not transferable indiscriminately among diseases. |
+| 48–49 | 22–22 | **checked** | فإنّ الأمراض النفسانيّة إنّما يختصّ بعضها بالحدود الواقعة في جانب الإفراط، والبعض الآخر بالحدود الواقعة في جانب التفريط، — Excess and deficiency distinguished. |
+| 50–50 | 23–23 | **checked** | على أنّ مداواة مرض معيّن إنّما تختلف بحسب اختلاف الأوقات والأحوال والموضوعات والعادات وما يشبهها. — Circumstances, times, people and habits qualify remedies. |
+| 51–51 | 24–24 | **corrected** | فتأمّل ذلك. — Restored explicit «فتأمل ذلك»: Reflect on this. |
+| 52–53 | 25–25 | **checked** | واعلم أنّ مخالفة النفس بالمعنى الذي ذهب إليه العارفون كما يجب اعتبارها في طريق التصوّف، يجب أيضاً اعتبارها في طريق التع… — Discipline of lower self essential for Sufism and rational learning. |
+| 54–54 | 26–26 | **checked** | وقد أشرنا إلى ذلك في كثير من المواضع فلا حاجة هاهنا إلى تكرار الكلام وتوضيح البيان، — Author declines repeated elaboration. |
+| 55–55 | 27–27 | **corrected** | فاعرف ذلك. — Restored explicit «فاعرف ذلك»: Understand this. |
+
+### QT-057 — A pp. 257–258
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–1 | 1–1 | **checked** | واعلم أنّ المحقّقين من النظّار لا ينكرون إمكان طريق التصوّف وإفضاءه إلى المقصد على الندور، — Rational investigators report rare success of contemplative method. |
+| 2–2 | 2–2 | **checked** | لكنّهم استوعروه واستبعدوا اجتماع شروطه، — Condition aggregation viewed as difficult. |
+| 3–3 | 3–3 | **checked** | وزعموا أنّ محو العلائق إلى ذلك الحدّ كالمتعذّر، — Removal of attachments nearly impossible, in this objection. |
+| 4–5 | 4–4 | **checked** | وإن حصل في حالة ومدّة قريبة فثباته أبعد منه، إذ أدنى وسوسة وخاطر يشوّش القلب ويشغله. — Passing thoughts imperil durable attentiveness. |
+| 6–6 | 5–5 | **checked** | وفي أثناء المجاهدة قد يفسد المزاج ويختلّ العقل ويمرض البدن، — Bodily and mental disturbances are the reported objection. |
+| 7–7 | 6–6 | **checked** | ومتى لم تتقدّم رياضة تهذيبه بحقائق العلوم تتشبّث بالقلب خيالات فاسدة يطمئنّ النفس إليها مدّة مديدة. — Without prior knowledge fantasies may be entrenched. |
+| 8–9 | 7–7 | **checked** | فكم من سالك سلك هذا الطريق ثمّ بقي في خيال واحد عشرين سنة وأكثر من ذلك، ولو كان قد أتقن العلم من قبل لاتّضح له وجه التب… — Twenty-year counterexample and prior mastery preserved. |
+| 10–10 | 8–8 | **checked-with-note** | وحينئذ كان الاشتغال بطريق النظر أسهل وأقرب إلى الغرض وأوفق. — Easier, nearer, fitting follows adopted أوفق, not alternative أوثق. |
+
+### QT-058 — A pp. 260
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–1 | 1–1 | **checked** | وأمّا نحن فنقول: إنّ كلّ شرط يعتبر في طريق التصوّف فلا بدّ من اعتباره في طريق النظر عند التحقيق، — First-person reply makes two paths share necessary conditions. |
+| 2–3 | 2–3 | **checked** | فإنّ رفع العلائق المشوّشة أمر ضروريّ لا بدّ منه في كلا الطريقين، وهذا بيّن لا يحتاج إلى بيان زائد، — Distractions must be removed. |
+| 4–4 | 4–4 | **checked** | وهكذا الكلام في النوم والسهر. — Explicit السهر is sleep deprivation/wakefulness, not السهو. |
+| 5–6 | 5–5 | **checked** | وبالجملة فإنّ اعتبار جميع ما به يعتدل المزاج ضروريّ في الصورتين، كما أنّ الاجتناب عن جميع ما يخرجه عن الاعتدال ضروريّ ف… — Balance and avoiding causes of imbalance preserved. |
+| 7–7 | 6–6 | **checked** | ويُعرف من هذا أنّه لا استبعاد في اجتماع شروطه. — Conditions are not impossible to combine. |
+| 8–8 | 7–7 | **checked** | وأمّا الخواطر المشوّشة لجمع الهمّة فهي من جملة الموانع في الطريقين، — Intrusive thoughts affect both paths. |
+| 9–9 | 8–8 | **checked-with-note** | فإنّه من الضرورات الواقعة في الطريق حسب اقتضاء الحكمة البالغة، — Strained providential-necessity phrase interpreted, not emended. |
+| 10–11 | 9–9 | **checked** | لكنّ تسكين المتخيّلة المتحرّكة بالحركات المضطربة المشوّشة وإلجامها ومنعها عنها غير متعذّر عند أرباب الصناعة، كما هو مذك… — Stillness and restraint of imagination are possible. |
+
+### QT-059 — A pp. 262–263–264
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–1 | 1–1 | **checked** | وما قيل إنّ علوم النظّار مأخوذة من الحواسّ وعلوم أصحاب المجاهدة مأخوذة من المبدأ الفيّاض فليس بشيء، — False opposition between empiricist reasoning and spiritual effusion rejected. |
+| 2–3 | 2–2 | **checked** | فإنّ الحواسّ هي المعدّات الأُوَل في الطريقين، ومفيض المعارف والعلوم هو المبدأ الفيّاض بالذات. — Senses prepare both methods; first Principle effuses knowledge. |
+| 4–4 | 3–3 | **checked** | أمّا الأوّل فكونها معدّة في طريق النظر ظاهر، — Preparatory role for rational method accepted. |
+| 5–5 | 4–4 | **checked-with-note** | وكونها معدّة في الطريق الآخر فلأنّها لو لم تكن معدّة لما تعلّقت النفس الناطقة ببدنه البتّة، — Embodied soul argument depends on sensory preparation. |
+| 6–6 | 5–5 | **checked** | ثمّ إنّ الكمال الحقيقي لا بدّ وأن يحصل لها بعد انقطاع ذلك التعلّق بالموت. — Postmortem attainment of perfection explicit. |
+| 7–9 | 6–7 | **checked-with-note** | فلئن قيل: جاز أن يكتسب من ذلك التعلّق ما يمنعه عن الوصول إليه. قلنا: فعلى هذا يجب حصول ذلك الكمال قبل تعلّقها، وحينئذ ل… — Objection and reply retained, question renders strained syntax. |
+| 10–11 | 8–8 | **checked-with-note** | فلئن قلتم: فكما يكتسب من ذلك التعلّق ملكات مانعة للوصول فلا يبعد أن يكتسب منه ملكات أُخَر تُعَدّ من جملة الأسباب والشرو… — Acquired beneficial habits concede previous premise; الشروط المطلقة contextual. |
+| 12–12 | 9–9 | **unresolved-reading** | وأمّا الثاني فلما بيّنّاه في كتبنا المعمولة في صناعة الحكمة. — Referenced missing proof and reported ancestral lacuna not reconstructed. |
+
+### QT-060 — A pp. 266–267
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–3 | 1–1 | **checked** | على أنّا نقول: إنّ العلوم كلّها موجودة فينا، لما ستعرفه لو تأمّلت في المباحث السالفة، لكنّها مخفيّة بالحجب المانعة عن ا… — Sciences are present but veiled. |
+| 4–4 | 2–2 | **checked** | ولا يخفى عليك أنّ ظهورها تارة يكون بالحركات اللطيفة الفكريّة الروحانيّة بعد تسليط القوّة القدسيّة على قوّتي الوهميّة وا… — Discursive route entails ordering lower faculties and character. |
+| 5–5 | 3–3 | **checked** | وتارة أخرى بتسكين المتخيّلة والمتوهّمة وإلجامهما ومنعهما عن الحركات المضطربة المشوّشة بعد تسخير القوى الجسمانيّة بالتزك… — Contemplative route entails stilling imagination. |
+| 6–6 | 4–4 | **checked** | وكلا الطريقين حقّ عند أكثر المحقّقين من أهل النظر وأصحاب المجاهدة. — Both routes endorsed. |
+| 7–7 | 5–5 | **checked** | [شعر] خذ أبطن هرشى أو قفاها فإنّه * كلا جانبي هرشى لهنّ طريق. — Harshā poetic route analogy preserved. |
+| 8–9 | 5–5 | **checked** | ومن اعتقد أنّه لا اعتبار بالتزكية والتصفية في طريق التعليم والنظر، ركب متن الهوى والهوس حسب هذه العقيدة الفاسدة، — Criticism directed at knowledge without purification. |
+| 10–12 | 6–6 | **checked** | وغلبت على نفسه الشهوة والغضب، واستولت عليه الرذائل الطبيعيّة المهلكة، وحُرمت عليها الفضائل الملكيّة المحبّيّة، — Appetite, anger and deprivation of virtue preserved. |
+| 13–14 | 7–7 | **checked** | واشتغل بقراءة كتب مقلّدي الفلاسفة وزبر المتكلّمين من أصحاب الجدل والمشاغبة، وضيّع عمره في ضبط الآراء المتناقضة وحفظ الأ… — Imitators, disputants, conflicting memorized opinions retained. |
+| 15–17 | 8–8 | **unresolved-reading** | فوقع نفسه في لجج الخيالات الفاسدة والأوهام الباطلة، عند تلاطم أمواج الشكوك والشبهات المغرقة. فاضمحلّ نور قلبه وعميت بصي… — A p267 variants فوقع/فأوقع and المفرفة/المغرقة left open. |
+| 18–20 | 9–11 | **corrected** | وازداد فيه الجهل والتردّد وحصل له البهت والتحيّر، ولا يدري أين يذهب، فلحق به من الحقّ الغضب، — Restored «فلحق به من الحق الغضب», a previously omitted reference to divine wrath. |
+| 21–22 | 12–12 | **checked** | وظنّ أنّ الكمال ما حصل له ووصل إليه، وليس وراءه حالة مرغوبة كماليّة ولا سعادة باقية، — Mistaken belief that book-learning exhausts perfection preserved. |
+| 23–23 | 13–13 | **unresolved-reading** | فليتقِ خبث هذه العقيدة ووجه ضررها من لطفه وليستعذ به من مكره وغضبه. — A p267 prints فيتقن ... واستعد while adopted Arabic has فليتق ... وليستعذ; the English remains interpretative. |
+
+### QT-061 — A pp. 269–270
+
+| Arabic clauses | English sentences | Status | Source excerpt and finding |
+|---|---|---|---|
+| 1–1 | 1–1 | **checked** | دقيقة: قد بقي هاهنا بحث مفيد لا بدّ وأن نشير إليه إشارة خفيّة. — Final subtle issue announced. |
+| 2–3 | 2–2 | **checked** | اعلم أنّ أصحاب النظر والتعليم عندهم علم يمكن أن يتميّز به النظر الصحيح عن الفاسد، ويمكن أيضاً أن يعرف به وجه الحقّ عن ا… — Logic discriminates valid reasoning and truth/falsehood. |
+| 4–4 | 3–3 | **checked** | وليس عند السالكين من أصحاب المجاهدة آلة شأنها ما ذكرناه. — Initial disadvantage of wayfarers stated as dialectical position. |
+| 5–7 | 4–4 | **checked** | فلئن قيل: إنّ علومنا وجدانيّة، وكما لا يفتقر في حصول العلوم الوجدانيّة الضروريّة إلى صناعة آليّة مميّزة، فكذلك العلوم ا… — Immediate knowledge objection presented. |
+| 8–8 | 4–4 | **checked** | قلنا: إنّ ما يجده بعض السالكين قد يكون مناقضاً لما يجده البعض الآخر منهم، — Reply notes conflicting experiences. |
+| 9–9 | 5–5 | **checked** | ولهذا قد ينكر البعض منهم البعض الآخر في إدراكاتهم ومعارفهم. — Mutual denial among experiencers included. |
+| 10–12 | 6–6 | **unresolved-reading** | ومتى عرفت هذا فنقول: لا بدّ للسالكين من أصحاب المجاهدة أن يحصّلوا العلوم الحقيقيّة الفكريّة النظريّة أوّلاً، بعد تصفية … — Purification, prior studies and logic analogy retained; غير المتسقة المنتظمة printed syntax unresolved. |
+| 13–15 | 7–7 | **checked** | فلو تحيّر الطالب السالك وتوقّف في بعض المطالب التي لا تحصل له بالفكر والنظر، حصّله بالطريق الآخر، ويدرك وجه الحقّ فيه ب… — Other route attains what thought cannot, tested by acquired intellectual habit. |
+| 16–16 | 8–8 | **corrected** | هذا إذا لم يكن له شيخ مكمّل يرشده في كلّ مقام ومنزل. — Active مكمّل denotes a guide able to perfect another, not passive perfected. |
+| 17–17 | 9–9 | **checked** | واعلم أنّ تحقيق الكلام في هذا الموضع إنّما يحتاج إلى كلام مبسوط لا يحتمله هذا المختصر. — Full treatment deferred. |
+| 18–18 | 10–10 | **checked** | وهذا آخر ما أردنا أن نورده في هذه الرسالة، — Ancestor's closing formula kept separate from descendant's أقول. |
+| 19–20 | 11–11 | **checked** | والحمد لله ربّ العالمين، والصلاة والسلام على نبيّه محمّد المصطفى وآله الطاهرين. — Blessing and doxology retained. |
+
 ## Editorial status and next passages
 
 The corrections to **SH-014**, **SH-INTRO-021**, and **SH-061-E** have been applied to the canonical translation modules. The earlier **SH-058** lexical correction remains in force. Ambiguous printed readings in **SH-061-A** and **SH-061-F** are explicitly unresolved. Compiled corpus, exports, HTML, and PDF editions must track the revised source modules.
 
-The next sequence for human clause review is SH-015, SH-017, SH-020–025, SH-027–031, followed by the remaining commentary and all 61 matn units. **No unreviewed section is declared accurate because of a hash or ratio test.**
+All 61 extant ancestral matn units have now received working-Arabic-to-English comparison. 85 of 110 commentary units still require individual comparison. **No unreviewed section is declared accurate because of a hash or ratio test, and no independent manuscript has been collated.**
