@@ -51,7 +51,9 @@ jobs:
           assert (len(d['nodes']),len(d['edges']),len(d['sources']),len(d['textual_families'])) == (404,377,374,21)
           assert (m['entries'],m['textual_relationships'],m['sources'],m['textual_family_routes']) == (404,377,374,21)
           assert 'documented work composition and recension pins' in m['visual_modes']
-          assert 'hanafi-geography-map-and-source-network' in m['ui_revision']
+          assert 'evidence-dated-undated-source-workbench' in m['ui_revision']
+          assert m['chronology_enrichment']['alreq_records_with_sourced_author_death_anchor']==764
+          assert m['chronology_enrichment']['alreq_records_still_without_author_death_anchor']==3393
           assert len(registry['books']) == 30 and len(registry['relationships']) == 5
           fiqh = [b for b in registry['books'] if 'fiqh' in b['disciplines']]
           assert len(fiqh) == 10
