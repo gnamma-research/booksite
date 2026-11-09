@@ -71,6 +71,25 @@ page = (ROOT/'index.html').read_text(encoding='utf-8')
 assert 'id="gn-atlas"' in page
 assert 'atlas-unified.js' in page and 'atlas-unified.css' in page
 assert 'atlas-app.js' not in page
+assert 'atlas-geo.js' in page and 'atlas-hanafi.css' in page
+geo=json.loads((ROOT/'corpora'/'geo-events.json').read_text(encoding='utf-8'))
+assert len(geo['places'])>=28 and len(geo['events'])>=41
+assert all(-90 <= p['lat'] <= 90 and -180 <= p['lon'] <= 180 for p in geo['places'])
+place_map={p['id']:p for p in geo['places']}
+assert len(place_map)==len(geo['places'])
+assert len(set(e['id'] for e in geo['events']))==len(geo['events'])
+for ge in geo['events']:
+    assert ge['place_id'] in place_map
+    assert ge['entity'] in ('author','work')
+    assert ge['status'] in ('documented','source_attested','qualified')
+    assert ge['citation_url'].startswith('https://')
+    assert ge['note'] and ge['kind']
+    if ge['entity']=='work':
+        assert ge.get('work_id') in {'c:'+n for n in node_ids} or ge.get('reader_ids')
+    if ge['entity']=='author':
+        assert ge.get('canonical_authors') or ge.get('reader_ids')
+assert sum(e['entity']=='work' for e in geo['events'])>=11
+assert sum(e['entity']=='author' for e in geo['events'])>=30
 embedded_match = re.search(r'<script type="application/json" data-atlas>(.*?)</script>', page, re.S)
 assert embedded_match, "Published page must expose the immutable audited research records"
 assert json.loads(embedded_match.group(1)) == data
@@ -99,8 +118,8 @@ manifest = {
     'title': 'Texts in Time · Islamic Intellectual Atlas',
     'revision': 'tajrid-critical-links-8-2026-10-31',
     'status': 'working research',
-    'ui_revision': 'unified-hanafi-style-work-atlas-2026-11-09',
-    'mobile_interface_note': 'All sciences now share one responsive search, source filter, map renderer and detail panel. Subject changes never switch to a separate map application. The Hanafi-inspired source-reception network records only audited relationships.',
+    'ui_revision': 'hanafi-geography-map-and-source-network-2026-11-09',
+    'mobile_interface_note': 'The main UI has Hanafi-inspired tabs By century, By region and Source network, with one subject selector and search. A georeferenced coastal map shows separately documented author and work events, and unplaced source records remain counted. Source network and book timeline remain available across sciences.',
     'whole_range_note': 'Use the shared year controls and zoomable era clusters; switch sciences without changing map interface.',
     'date_marker_note': 'Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.',
     'entries': len(data['nodes']),
@@ -112,7 +131,7 @@ manifest = {
     'neoplatonic_new_relationships': 36,
     'scholarly_networks': len(data['history']['networks']),
     'classification_layers': ['intellectual tradition','textual family','regional/historical network','browse discipline','source-linked bibliographic category map','separate source-text witness catalogue'],
-    'visual_modes': ['shared chronological work atlas','Hanafi-inspired source and reception network','vertical principal-texts synopsis','regional-label evidence index','source-linked catalogue','work evidence panel'],
+    'visual_modes': ['Hanafi-inspired By century map','By region interactive geography','source-backed author events','documented work composition and recension pins','source and reception network','shared historical book timeline','principal texts','bibliographic catalogue'],
     'discipline_nav': ['mapped works','philosophy, kalām and logic','fiqh and uṣūl (integrated cited bibliography)','hadith (SVG book authorities)','tafsīr (SVG book authorities)','taṣawwuf (chronological source-work atlas)','Arabic language sciences (integrated cited bibliography)'],
     'textual_family_routes': len(families),
     'source_corpus': {
@@ -129,6 +148,7 @@ manifest = {
         'complete_corpora_claimed': False,
         'license': corpus_registry['license'],
     },
+    'geography': {'data_url':'corpora/geo-events.json','geocoded_events':len(geo['events']),'author_events':sum(e['entity']=='author' for e in geo['events']),'work_events':sum(e['entity']=='work' for e in geo['events']),'registered_places':len(geo['places']),'unplaced_research_caveat':'No automatic geolocation from an author nisba, text title or manuscript catalogue association.'},
     'bibliography_map': {
         'mode': 'single shared chronological renderer with source-date qualifications, undated source-record lanes, Hanafi-style bidirectional work-centred networks and optional principal-texts synopses',
         'openiti_primary_work_candidates': len(bib_openiti['works']),
@@ -145,7 +165,7 @@ manifest = {
         'historical_influence_edges_generated': 0,
         'primary_source_registers': ['corpora/expanded-bibliography.json','corpora/manuscript-full.json'],
     },
-    'textual_family_note': 'The 404/377 audited dataset remains unchanged, externalized as canonical-atlas.json, and the earlier UI is preserved in legacy.html. All subjects share the same historical map and work-centred network shell. No inferred influence or unsupported manuscript dates.',
+    'textual_family_note': 'The 404/377 audited dataset remains unchanged and the earlier UI is archived. The geographic map has a small cited event sample (author biography vs text composition); it is not a complete geocoding of Alreq or OpenITI. No invented influence or manuscript dates.',
     'tahdhib_added_entries': 26,
     'avicennian_extension_entries': 11,
     'avicennian_new_textual_routes': 2,
