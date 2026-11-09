@@ -55,7 +55,9 @@ async def test_desktop(page):
     check(d["evidence"] > 0, "Documented edges are missing from graph")
     check(d["scrollOverflow"] <= 4, "Explorer makes the document horizontally overflow")
     # A work-centred graph must allow inspection of the exact edge.
-    await page.locator("[data-gnx-edge]").first.click()
+    # Crossing arrows may overlap visually; keyboard operation must remain deterministic.
+    await page.locator("[data-gnx-edge]").first.focus()
+    await page.keyboard.press("Enter")
     check(await page.locator(".gnx-evidence").count() == 1,
           "Selecting edge did not expose relationship evidence")
     check("sources" in (await page.locator(".gnx-evidence").inner_text()).lower(),
