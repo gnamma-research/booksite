@@ -3,7 +3,7 @@
   "title": "Nihāyat al-Ḥikma — cumulative English text collation triage",
   "updated": "2026-11-09",
   "source": "nihayat-al-hikma/data/book.json",
-  "scope": "All 136 currently translated reading units; mechanical tests across all units and conservative manual bilingual reading of the six named units only.",
+  "scope": "All 136 reading units mechanically screened; 16 complete passages directly compared against the local Arabic; all 136 still await full independent printed-witness and specialist collation.",
   "standard": "No AI-only structural scan is a full semantic English collation or professional critical edition. Local bilingual reading is not an independent Arabic witness. Neither a flagged nor an unflagged row establishes textual accuracy.",
   "summary": {
     "units": 136,
@@ -13,7 +13,7 @@
     "unitsWithThreeOrMoreParagraphDifference": 63,
     "unitsWithAnyHint": 70,
     "automaticallyScreened": 136,
-    "locallyReadAgainstStoredArabic": 6,
+    "locallyReadAgainstStoredArabic": 16,
     "independentlyReconciledAgainstCompleteSecondWitness": 0,
     "expertVerified": 0,
     "hintCounts": {
@@ -218,7 +218,8 @@
       "englishToArabicCharRatio": 1.764,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: fi nafsihi/li-nafsihi/li-ghayrihi distinctions, accident's actuality through the subject, substantial forms, final qualification of attributive existence. Translation tracks the argument; no substantive revision proposed.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1437,7 +1438,8 @@
       "englishToArabicCharRatio": 1.519,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: simplicity, intrinsic proportionality between effect and cause, many-effects objection to divine power, one-from-many subcases, three conclusions. The English represents the authorial position; independent witness/quoted source checking pending.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1775,7 +1777,8 @@
       "englishToArabicCharRatio": 1.42,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: gradually actualized being, Aristotle's first-perfection formula, first/second perfections, six requisites of motion. Translator's original caveat on masāfa preserved. No unrepresented conceptual step found.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2473,7 +2476,8 @@
       "englishToArabicCharRatio": 1.613,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: knowledge of cause and effect, quidditative example of four/evenness, sensory objection, judgment by intellect, concomitances, final limit on proof from effect. No substantive correction needed in this local reading.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2721,7 +2725,8 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: affirmative/negative attributes, double negation, real/relational attributes, essential versus act-based abstraction. Technical divisions are rendered; no local correction proposed.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2766,7 +2771,8 @@
       "englishToArabicCharRatio": 1.691,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: act attributes derived through relations to contingent effects, origination, providence, provision, process terms and immutable divine essence. No missing argumentative clause identified.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2909,7 +2915,8 @@
       "englishToArabicCharRatio": 1.632,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: attributed definitions of will/speech, quoted account of speech as real signification, authorial rejection and comparison to hearing/sight. Distinction between quotation and author's voice preserved.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -3019,13 +3026,14 @@
       "sourceLocator": "https://lib.rafed.net/view.php?b_id=1642&page=387&type=c_fbook",
       "sourcePages": "387–388",
       "arabicChars": 953,
-      "englishChars": 1531,
+      "englishChars": 1541,
       "arabicParagraphs": 5,
       "englishParagraphs": 4,
-      "englishToArabicCharRatio": 1.607,
+      "englishToArabicCharRatio": 1.617,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: imaginal barzakh, separation from matter not its effects, vertical and horizontal intellects, separate and connected imagination, arbitrary imagined forms. **Corrected English opening to preserve barzakh**, and added a passage-level translator note; no printed witness claimed.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -3044,7 +3052,8 @@
       "englishToArabicCharRatio": 1.469,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: material world's dependence on potentiality, competing causes, scientific discoveries, substantial motion, material realm as flowing, compatibility with immutable cause. No missing premise found.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -3095,7 +3104,8 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Directly compared full stored Arabic and English: unceasing divine emanation versus temporal material parts, cyclic cosmology objection, changing conditions, rejection of obsolete celestial physics, authorial completion date. All propositions represented; Asfār background not externally checked.",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
