@@ -67,6 +67,66 @@ function init(target,api){root=target;expose=api||{};if(attached)return;attached
   if(t.hasAttribute("data-geo-region-select"))S.region=t.value;
   S.city="";expose.refresh?.();
  });
+ // Work on a real geographic viewBox rather than panning an incidental SVG dot plot.
+ const pointers=new Map();
+ let moving=false,pinchDistance=0,wheelTimer=null,suppressClick=false;
+ const viewSvg=()=>root.querySelector("svg.geo-real-map");
+ function clampView(){
+   const w=1008/S.zoom,h=472/S.zoom;
+   S.cx=Math.max(w/2,Math.min(1008-w/2,S.cx));
+   S.cy=Math.max(h/2,Math.min(472-h/2,S.cy));
+   const svg=viewSvg();
+   if(svg)svg.setAttribute("viewBox",[S.cx-w/2,S.cy-h/2,w,h].join(" "));
+ }
+ root.addEventListener("pointerdown",event=>{
+  const svg=event.target.closest?.("svg.geo-real-map");
+  if(!svg||event.target.closest?.("[data-geo-city]"))return;
+  pointers.set(event.pointerId,{x:event.clientX,y:event.clientY});
+  if(pointers.size===1)moving=false;
+  if(pointers.size===2){const p=[...pointers.values()];pinchDistance=Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y);}
+  svg.setPointerCapture?.(event.pointerId);
+ });
+ root.addEventListener("pointermove",event=>{
+  if(!pointers.has(event.pointerId))return;
+  const before=pointers.get(event.pointerId);
+  const dx=event.clientX-before.x,dy=event.clientY-before.y;
+  pointers.set(event.pointerId,{x:event.clientX,y:event.clientY});
+  const svg=viewSvg();if(!svg)return;
+  const rect=svg.getBoundingClientRect();
+  if(rect.width<1||rect.height<1)return;
+  if(pointers.size>=2){
+   const p=[...pointers.values()],dist=Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y);
+   if(pinchDistance>0){S.zoom=Math.max(1,Math.min(4,S.zoom*(dist/pinchDistance)));moving=true;}
+   pinchDistance=dist;
+  }else{
+   S.cx-=dx*(1008/S.zoom)/rect.width;
+   S.cy-=dy*(472/S.zoom)/rect.height;
+   if(Math.abs(dx)+Math.abs(dy)>0)moving=true;
+  }
+  clampView();
+ });
+ root.addEventListener("pointerup",event=>{
+  if(!pointers.has(event.pointerId))return;
+  pointers.delete(event.pointerId);
+  if(pointers.size===0&&moving){suppressClick=true;moving=false;expose.refresh?.();}
+ });
+ root.addEventListener("pointercancel",event=>{
+  if(!pointers.has(event.pointerId))return;
+  pointers.delete(event.pointerId);
+  if(pointers.size===0){moving=false;expose.refresh?.();}
+ });
+ root.addEventListener("wheel",event=>{
+  if(!event.target.closest?.("svg.geo-real-map"))return;
+  event.preventDefault();
+  S.zoom=Math.max(1,Math.min(4,S.zoom*(event.deltaY<0?1.12:.9)));
+  clampView();
+  clearTimeout(wheelTimer);wheelTimer=setTimeout(()=>expose.refresh?.(),150);
+ },{passive:false});
+ root.addEventListener("click",event=>{
+  if(!suppressClick)return;
+  if(!event.target.closest?.("svg.geo-real-map")){suppressClick=false;return;}
+  event.preventDefault();event.stopImmediatePropagation?.();suppressClick=false;
+ },true);
 }
 function findRelated(ev,works){
  const set=new Set();
