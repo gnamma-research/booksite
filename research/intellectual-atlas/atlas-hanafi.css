@@ -187,3 +187,10 @@ body .footer{font-size:11px}
 #gn-atlas .geo-stats strong{font-size:15px}
 #gn-atlas .geo-stats span{font-size:9px}
 }
+
+/* Real map interaction: gestures stay inside the atlas, not on page scroll. */
+#gn-atlas .geo-real-map{touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
+#gn-atlas .geo-real-map:active{cursor:grabbing}
+#gn-atlas .geo-marker{cursor:pointer}
+#gn-atlas .geo-map-scroll{overscroll-behavior:contain}
+#gn-atlas .geo-century-card{align-content:start}
