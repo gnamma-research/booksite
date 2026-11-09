@@ -691,7 +691,7 @@ The Prophet, peace be upon him, is cited as saying: “There is none among you b
 
 “—inherit Paradise, in which they shall dwell forever” (Qurʾān 23:10–11). These dwellings arise through the orientation of the *malakūt* toward descent for the manifestation of the worlds of nature and sense.
 
-As for enumeration through **realization** (*taḥaqquq*), this occurs through Godwariness (*taqwā*) and divesting oneself of every form, meaning and effect subsisting within one and appearing through one that is marked by origination, and through being concealed within the clouds of their entities, secrets and lights. One then enters the **Garden of Gracious Bestowal** (*jannat al-imtinān*), the station of concealment within the unseen of the Unseen, alluded to by the words: “Indeed the Godwary are in a secure station, amid gardens and springs” (Qurʾān 44:51–52), prepared with what no eye has seen, no ear heard, and what has not occurred to any human heart.
+As for enumeration through **realization** (*taḥaqquq*), this occurs through Godwariness (*taqwā*) and divesting oneself of every form, meaning and effect subsisting within one and appearing through one that is marked by origination, and through becoming concealed within the splendours (*subuḥāt*) of their realities, mysteries, and lights. One then enters the **Garden of Gracious Bestowal** (*jannat al-imtinān*), the station of concealment within the unseen of the Unseen, alluded to by the words: “Indeed the Godwary are in a secure station, amid gardens and springs” (Qurʾān 44:51–52), prepared with what no eye has seen, no ear heard, and what has not occurred to any human heart.
 
 Let us now return to our subject: identifying how each group of the remaining branches that complete the ninety-nine names belongs to its original principle among the names included in this number.
 
@@ -702,6 +702,9 @@ Among the inward perfections is **the Magnificent** (*al-ʿAẓīm*), whose affa
 There is also **the Great** (*al-Kabīr*): because the perfection of His rank is remote from attainment, creatures recognize their smallness and innately testify that He is greater than anything which appears great.
 
 There is **the Exalted** (*al-ʿAlī*), whose perfect exaltedness surpasses every means of apprehension; **the Majestic** (*al-Jalīl*), whose majestic unicity transcends the attribution of anything to Him; **the Self-sufficient** (*al-Ghanī*), independent of all worlds by the perfection of His sufficiency in the unseen of His Unseen, contemplating the beauty of His majesty and His considerations within the first determination of His most holy Essence; and **the All-holy** (*al-Quddūs*), perfectly exempt from blameworthy attributes and from attribution to Him of deficiencies of acts and effects, and the like.
+
+
+**Photographically corrected source reading (I1876 printed p28, scan 32):** «وبالاستتار بسبحات أعيانها وأسرارها وأنوارها». The B2007 online transcript has «بسبحاب» and an earlier draft rendered this as “clouds”; the 1876 photo establishes *subuḥāt* (“splendours/radiances”) as a printed reading. This is a **printed-photo versus modern-digital** comparison, not a manuscript variant. The corrected translation above is provisional pending inspection of the physical B2007 printing and early manuscripts. See [Stage XV apparatus](I1876_COLLATION_STAGE_015.md).
 
 ### B2007 p. 49 · The Living, the All-comprehending, and the Self-subsisting
 [Arabic source](https://ablibrary.net/book_content/b/9606/49?lang=ar)
