@@ -7,7 +7,7 @@
   "source_checked_modern_digital_page_count": 19,
   "clause_record_count": 198,
   "issues_unresolved_digital": 11,
-  "historical_print_independently_collated_pages": 4,
+  "historical_print_independently_collated_pages": 8,
   "manuscript_variants": 0,
   "authorial_introduction_english_draft_complete": true,
   "authorial_introduction_arabic_critical_edition_complete": false,
@@ -114,12 +114,26 @@
       "english_clause_checked_B2007": true,
       "digital_clause_check_count": 15,
       "digital_crux_count": 2,
-      "actual_historical_print_inspected": false,
+      "actual_historical_print_inspected": true,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
       "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
-      "source_kind": "B2007-main-site-printed-digital"
+      "source_kind": "B2007-main-site-printed-digital",
+      "historical_print_loci_verified": 1,
+      "historical_print_loci_status": "selected phrase only, not full I1876 page proof",
+      "historical_print_reference": {
+        "siglum": "I1876",
+        "printed_pages": [
+          8,
+          9
+        ],
+        "scan_indices": [
+          12,
+          13
+        ],
+        "agreement": "فلم تعلم ولم يحكم"
+      }
     },
     {
       "b2007_page": 24,
@@ -146,14 +160,22 @@
       "english_clause_checked_B2007": false,
       "digital_clause_check_count": 12,
       "digital_crux_count": 1,
-      "actual_historical_print_inspected": false,
+      "actual_historical_print_inspected": true,
       "actual_manuscript_inspected": false,
       "independently_collated_variants": 0,
       "full_arabic_page_in_repo": false,
       "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
       "source_kind": "B2007-main-site-printed-digital",
       "page_has_selected_clause_checks": true,
-      "selected_arabic_english_checked_B2007": true
+      "selected_arabic_english_checked_B2007": true,
+      "historical_print_loci_verified": 1,
+      "historical_print_loci_status": "selected phrase only, not full I1876 page proof",
+      "historical_print_reference": {
+        "siglum": "I1876",
+        "printed_page": 10,
+        "scan_index": 14,
+        "agreement": "حكم الغضب عارجا لا نازلا"
+      }
     },
     {
       "b2007_page": 26,
@@ -214,14 +236,23 @@
       "english_clause_checked_B2007": false,
       "digital_clause_check_count": 11,
       "digital_crux_count": 1,
-      "actual_historical_print_inspected": false,
+      "actual_historical_print_inspected": true,
       "actual_manuscript_inspected": false,
-      "independently_collated_variants": 0,
+      "independently_collated_variants": 1,
       "full_arabic_page_in_repo": false,
       "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
       "source_kind": "B2007-main-site-printed-digital",
       "page_has_selected_clause_checks": true,
-      "selected_arabic_english_checked_B2007": true
+      "selected_arabic_english_checked_B2007": true,
+      "historical_print_loci_verified": 1,
+      "historical_print_loci_status": "selected phrase only, not full I1876 page proof",
+      "historical_print_reference": {
+        "siglum": "I1876",
+        "printed_page": 13,
+        "scan_index": 17,
+        "adopted": "المذكور",
+        "modern": "المذكورة"
+      }
     },
     {
       "b2007_page": 30,
@@ -1994,14 +2025,14 @@
   "source_pages_with_selected_arabic_english_checks": 19,
   "check_methodology": "80 earlier digital clause checks pp18–23; 62 selected source spans pp24–29; 56 selected source spans pp30–36 (198 total). Neither printed page nor manuscript has been exhaustively collated. Thirteen cumulative flagged crux records include a resolved p31 digital-spacing typo; no variant from 1876 or MSS is established.",
   "issues_flagged_including_resolved_typographic": 13,
-  "historical_print_pages_with_selected_loci_checked": 4,
-  "historical_print_variants_verified": 3,
-  "historical_print_collation_scope": "Five bounded textual loci across I1876 pp5,6,7,18 (scans9,10,11,22) corresponding to B2007 pp18,19,21,34. Printed differences 3, agreements 2. No page exhaustively collated and no manuscript folio inspected.",
-  "historical_print_pages_with_selected_loci": 4,
-  "historical_print_compared_clause_records": 5,
-  "historical_print_differences": 3,
-  "historical_print_agreements": 2,
-  "historical_print_source": "I1876 source PDF SHA256 d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87; combined evidence in editorial/I1876_COLLATION_CUMULATIVE_002.json",
+  "historical_print_pages_with_selected_loci_checked": 8,
+  "historical_print_variants_verified": 4,
+  "historical_print_collation_scope": "Eight bounded loci across I1876 printed pages 5,6,7,8,9,10,13,18; no entire page has been exhaustively collated, no manuscript images examined.",
+  "historical_print_pages_with_selected_loci": 8,
+  "historical_print_compared_clause_records": 8,
+  "historical_print_differences": 4,
+  "historical_print_agreements": 4,
+  "historical_print_source": "Princeton 1876 printing PDF SHA256 d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87; full evidence editorial/I1876_COLLATION_CUMULATIVE_003.json",
   "independent_manuscript_variants": 0,
   "historical_print_fully_collated_pages": 0
 }
