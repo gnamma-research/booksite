@@ -1,3 +1,13 @@
+## Latest milestone — Stage VIII bilingual source audit (9 November 2026)
+
+**New result:** 45 selected printed-Arabic/English checks on B2007 pp37–47 and p50. Cumulative **243 selected clauses on 31 modern printed pages**, **not 31 exhaustively proofread pages**. Beirut pp48–49 source readings were inaccessible during this stage, although both have working English drafts, so no direct source check is claimed for them. Other unreviewed clauses remain throughout.
+
+**Texts:** [45-clause bilingual Stage VIII record](CRITICAL_TRANSLATION_37_47_50.md) · [machine-readable reader data](../data/critical-pass-005-p37-47-p50.js) · [exact Stage VIII handoff](STAGE_HANDOFF_CRITICAL_008.md) · [128-page coverage ledger](CRITICAL_COVERAGE_REGISTER.json).
+
+**Open critical loci:** p38 **القابل** versus conjectural **القائل**; p41 *ʿamāʾ* ḥadīth wording/negation. Neither is a verified Farghānī manuscript variant. Cumulative **10** bounded I1876 print comparisons, **5** differences, **0** genuine manuscript variants established. Introductory English remains a working translation. Next direct B2007 audit pp48–49, then p51 onward. A definitive Arabic edition requires continuous text and manuscript collation.
+
+---
+
 # Muntahā al-madārik · Editorial and translation register
 
 
