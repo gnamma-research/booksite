@@ -1,3 +1,15 @@
+## One historical atlas for all sciences — 9 November 2026
+
+The current main page is **a new, unified Hanafi-Atlas-inspired interface**, not the previous separately rendered Fiqh/Arabic source-map application. **Every subject opens the identical chronological SVG book map and identical controls**; subject changes alter source records and lanes only. All works remain searchable, and undated manuscript records remain visible as unplaced clusters without fictitious dates.
+
+The five coordinated views are **Historical map**, **Source network** (directed *Rests on / Carried on by*), **Principal texts**, **Regions** (qualified regional-label index), and **Catalogue**. Each selected work uses the same evidence inspector, and every displayed relation is taken from a cited existing edge, never inferred from school membership or time overlap.
+
+The audited 404-node / 377-edge graph is unchanged; it is serialized in `corpora/canonical-atlas.json` and embedded for compatibility with source-integrity checks. Separate OpenITI and Alreq records retain their original identities. The 30 pinned source versions preserve only their five established work relations. The earlier interface is archived in `legacy.html`.
+
+Implementation: `atlas-unified.js`, `atlas-unified.css`, `index.html`; browser contract: `tests/verify_unified_v3_browser.py`; full methodological guide: [WORK_EXPLORER.md](WORK_EXPLORER.md). Run `python build.py` to validate source integrity and publication metadata; it must not overwrite the new page. The paragraphs below record earlier superseded screens and are preserved as an audit history.
+
+---
+
 ## Shared historical atlas and vertical principal-text synopses — 8 November 2026
 
 **Current canonical experience.** The user-selected subject is now treated in the **same temporal-cartographic idiom as the established philosophy/kalām GNAMMA atlas**. The default **Full historical atlas** maps source-linked book authorities against one CE year axis, uses approximate *author death* markers where available, groups crowded eras into zoomable century/period clusters, offers common year-window navigation, pan and zoom, and opens individual work citations on selection. Category lanes represent the four madhhabs or qualified scholarly/textual traditions. The earlier bespoke SVG hub-and-spoke book network and the 32-card catalogue are superseded as the primary subject interface.
