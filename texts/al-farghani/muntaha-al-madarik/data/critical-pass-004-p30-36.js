@@ -375,12 +375,23 @@ window.FARGHANI_CRITICAL_PASS_004={
       "ar": "فعاد ذلك التجلّي ظاهرا معيّنا في عون هذا بقوة المحبة الأصلية اللازمة له",
       "en": "The disclosure appeared again as determined [the phrase 'في عون هذا' remains uncertain], through its inseparable original love.",
       "disposition": "crux",
-      "critical_note": "B2007 prints في عون هذا. The phrase is syntactically difficult; do NOT insert a conjectural عين or emend to a smoother reading without an independent image of I1876 or manuscript.",
+      "critical_note": "Original-resolution I1876 printed p16 (scan20) confirms في عون هذا exactly as in Beirut p33; proposed عين is NOT supported by these two prints. Maintain diplomatic reading, with grammatical argument and early manuscripts still unresolved. Do not call a print agreement a definitive authorial lemma.",
       "source_siglum": "B2007",
       "source_url": "https://ablibrary.net/book_content/b/9606/33?lang=ar",
       "grade": "modern-printed-digital-selected-locus-checked",
-      "historical_print_verified": false,
-      "manuscript_verified": false
+      "historical_print_verified": true,
+      "manuscript_verified": false,
+      "historical_print": {
+        "siglum": "I1876",
+        "printed_page": 16,
+        "scan_index": 20,
+        "reading": "في عون هذا",
+        "status": "agreement",
+        "source_pdf": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
+        "hires": true,
+        "photo_url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876-hires/images/scan_0020.jpg",
+        "note": "The original-resolution I1876 p16 prints في عون هذا, agreeing with Beirut p33. This rejects an unsupported conjectural عين at print level but does not resolve syntactic reference or prove a medieval MS reading."
+      }
     },
     {
       "id": "CR004-030",
