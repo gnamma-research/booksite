@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-07",
+  "updated": "2026-11-09",
   "purpose": "Additional comparative glossary and textual witnesses for the Nihāyat al-Ḥikma reader. Does not modify the authorial Arabic or the translation.",
   "glossary": [
     {
@@ -443,6 +443,18 @@
   ],
   "statusNote": "The presence of a corrected editorial witness does not mean the entire authorial Arabic has been collated against it; variants require documented individual decisions.",
   "criticalNotes": [
+    {
+      "id": "N1428-I02-01",
+      "passageId": "N-I-02",
+      "type": "Textual emendation · later editor",
+      "text": "At the argument distinguishing quiddity from existence, the Qum 1417 AH reading is «ولو كانت عين الوجود لم يجز أن تسلب عن نفسها». In the revised 1428 AH edition, al-Zāriʿī prints «ولو كانت عين الوجود لم يجز أن يسلب عنها» and states explicitly in footnote 1 that the former is found in the copies and that he regards the latter as correct. The main reader adopts the editor's grammatical correction and preserves the earlier copy reading in its passage note. No manuscript collation of this locus is independently claimed.",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=18&type=c_fbook",
+      "source": "Nihāyat al-Ḥikma, vol. 1 (revised 1428 AH), p. 18 n. 1; compare Qum 1417 AH p. 18, edited by ʿAbbās ʿAlī al-Zāriʿī al-Sabzawārī",
+      "status": "Explicit later editorial emendation checked against printed editorial note; manuscript attestation unverified",
+      "adoption": "adopted-with-full-apparatus",
+      "originalReading": "ولو كانت عين الوجود لم يجز أن تسلب عن نفسها",
+      "adoptedReading": "ولو كانت عين الوجود لم يجز أن يسلب عنها"
+    },
     {
       "id": "N1428-I03-01",
       "passageId": "N-I-03",
