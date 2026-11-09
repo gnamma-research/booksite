@@ -437,6 +437,7 @@ jobs:
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-q140-154-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-q155-178-data.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage104.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage105.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/progress-data.js
           node --check tools/tahdhib/handoff_reader_qa.mjs
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-daruri-reader.js
