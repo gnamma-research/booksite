@@ -298,6 +298,8 @@ function toolsUI(){
  '<label class="filteritem">Source register<select data-source>'+
  opts([["all","All source records"],["audited","Audited history"],["OpenITI","OpenITI metadata"],["Alreq manuscript catalogue","Manuscript catalogue"],["pinned","Pinned sources"]],state.source)+
  '</select></label>'+
+ '<label class="filteritem">Textual family<select data-family '+(state.subject!=="intellectual"?"disabled":"")+'>'+
+ opts([["","All research families"],...data.families.map(f=>[f.id,f.label])],state.family)+'</select></label>'+
  '<label class="filteritem">Relationship<select data-edge-type>'+
  opts([["all","All documented"],["commentary","Commentary / gloss"],["critique","Criticism"],["textual_use","Textual use"],["translation","Translation"]],state.edgeType)+
  '</select></label>'+
@@ -784,9 +786,10 @@ function onClick(e){
 }
 function onChange(e){
  const t=e.target;if(!ROOT.contains(t))return;
- const mapped={"data-school":"school","data-source":"source","data-edge-type":"edgeType","data-certainty":"certainty"};
+ const mapped={"data-school":"school","data-source":"source","data-family":"family","data-edge-type":"edgeType","data-certainty":"certainty"};
  for(const [attr,key] of Object.entries(mapped))if(t.hasAttribute(attr)){
   state[key]=t.value;state.cluster="";state.bookPage=1;state.clusterPage=1;
+  if(key==="family"&&t.value){const f=data.families.find(f=>f.id===t.value);if(f&&data.byId.has("c:"+f.root))state.selected="c:"+f.root;state.source="all";state.school="all";}
   if(key==="school"&&t.value!=="all"&&state.selected&&!data.byId.get(state.selected)?.schools.includes(t.value))selectFeatured(false);
   writeHash();render();return;
  }
