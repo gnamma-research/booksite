@@ -53,7 +53,7 @@ async function run(browserType){
     });
     await check(browserType.name()+' no duplicated Nihāya emendation footnotes',async()=>{
       await page.locator('[data-part-jump="passage-N-INTRO"]').click();
-      for(const id of ['N-I-02','N-II-02','N-VI-03']){
+      for(const id of ['N-I-02','N-II-02','N-VI-03','N-VI-15','N-VI-16']){
         const passage=page.locator('#passage-'+id);
         await passage.waitFor({state:'attached',timeout:35000});
         const texts=await passage.locator('.footnote').allTextContents();
