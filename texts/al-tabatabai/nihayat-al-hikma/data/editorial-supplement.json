@@ -441,7 +441,7 @@
       "description": "Secondary collation witness only (vol. 2, 336 pp., 4th edition). Its pagination and critical notes differ from the existing Qum 1417 transcription and are not the reader’s current page locators."
     }
   ],
-  "statusNote": "The presence of a corrected editorial witness does not mean the entire authorial Arabic has been collated against it; variants require documented individual decisions.",
+  "statusNote": "Supplementary apparatus includes inherited later-editor notes and one NEW unresolved IX.9 internal-reference conjecture. Only documented text witnesses support 'attested' labels; no critical specialist certification is implied.",
   "criticalNotes": [
     {
       "id": "N1428-I02-01",
@@ -537,6 +537,19 @@
       "adoptedReading": "ينتزع لكلّ من الموضوعين ... وصفاً ناعتاً له",
       "additionalOriginalReading": "المضاف إلى الابن",
       "additionalAdoptedReading": "المضاف إلى الأب"
+    },
+    {
+      "id": "N1417-IX09-REFERENCE-01",
+      "passageId": "N-IX-09",
+      "type": "Unresolved internal cross-reference · not an attested emendation",
+      "text": "In Chapter IX.9, printed p. 265, the author contrasts (1) longitudinal substantial motion, where matter and the earlier form become the substrate of a later form, with (2) parallel succession, where an enduring matter receives mutually exclusive forms. The text nevertheless says «لا بطريق الخلع واللبس كما في القسم الأول، بل بطريق اللبس بعد اللبس»—'not by stripping off and putting on, as in the first kind, but by putting on after putting on'—inside its account of the FIRST (longitudinal) kind. In light of the immediately preceding distinction and the following 'first/second' conclusions, «القسم الثاني» is a plausible INTERNAL editorial conjecture for «القسم الأول». The 1417 AH printed-digital source itself reads «الأول». No independent 1404/1428 print or manuscript has been checked at this exact phrase in this review. We leave the copied Arabic and the working English unchanged, record the difficulty, and DO NOT treat the conjecture as witnessed or adopted. A future editor must report exact witness readings and any adopted before/after change.",
+      "url": "https://lib.rafed.net/view.php?b_id=1642&page=265&type=c_fbook",
+      "source": "Ṭabāṭabāʾī, Nihāyat al-Ḥikma, Qum 1417 AH digitally transcribed print, p.265; witnessed reading at this stage ONLY in that base digital presentation; additional print collation outstanding",
+      "status": "unresolved internal textual inconsistency; conjecture not adopted; no independent witness attestation",
+      "adoption": "not-adopted",
+      "originalReading": "كما في القسم الأول",
+      "proposedReading": "كما في القسم الثاني",
+      "evidenceGrade": "internal logical argument only; no parallel printed/manuscript attestation in this stage"
     }
   ],
   "sourceCriticalPolicy": "Preserve authorial notes explicitly marked منه رحمه الله; distinguish later editor's explanatory notes; challenge historically questionable ascriptions by checking named scholars' own texts. These criticalNotes are distinct from the authorial Arabic and translation."
