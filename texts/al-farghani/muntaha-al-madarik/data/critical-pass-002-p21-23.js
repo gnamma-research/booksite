@@ -412,13 +412,25 @@ window.FARGHANI_CRITICAL_PASS_002={
       "page": 23,
       "ar": "إلّا أنه ربما يكون في الحضرة الغيبية الأزليّة نحو هذه الكلّيات والجزئيّات أمور باطنة وأحوال مستورة لم تتعيّن بعد لا في الرتبة الثانية ولا في اللّوح المحفوظ",
       "en": "Yet in the eternal unseen Presence there may perhaps be, regarding these universals and particulars, hidden things and concealed states not yet determined either at the second rank or in the Preserved Tablet.",
-      "disposition": "crux",
-      "critical_note": "The modal 'perhaps' and specific rank of determined knowability must be preserved; cannot simply equate with Guénon's nonmanifestable possibilities.",
+      "disposition": "corrected",
+      "critical_note": "PHOTOGRAPHIC PRINT-TO-PRINT DIFFERENCE I1876 printed p8/scan12: سوى أنه ربما يكون; B2007 printed p23: إلّا أنه ربما يكون. Prefer I1876 connective provisionally; the modal ربما and the uncertain status of undetermined affairs must remain. Medieval witnesses not yet collated.",
       "source_siglum": "B2007",
       "source_url": "https://ablibrary.net/book_content/b/9606/23?lang=ar",
       "grade": "printed-digital-Arabic-checked-v1",
-      "historical_print_verified": false,
-      "manuscript_verified": false
+      "historical_print_verified": true,
+      "manuscript_verified": false,
+      "historical_print": {
+        "siglum": "I1876",
+        "printed_page": 8,
+        "scan_index": 12,
+        "reading": "سوى أنه ربما يكون",
+        "status": "historical-print-difference",
+        "source_pdf": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
+        "hires": true,
+        "photo_url": "https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876-hires/images/scan_0012.jpg",
+        "note": "Original-resolution historical I1876 p8 has سوى أنه, while B2007 p23 reads إلا أنه. Both are exceptive; adopt earlier print provisionally, with the Beirut reading preserved, without changing the modal nuance of ربما. No manuscript compared."
+      },
+      "edited_ar": "سوى أنه ربما يكون في الحضرة الغيبية الأزليّة نحو هذه الكلّيات والجزئيّات أمور باطنة وأحوال مستورة لم تتعيّن بعد لا في الرتبة الثانية ولا في اللّوح المحفوظ"
     },
     {
       "id": "CR002-032",
