@@ -108,6 +108,6 @@ for(const item of decisions.units){
 }
 md+='## Editorial status and next passages\n\n';
 md+='The corrections to **SH-014**, **SH-INTRO-021**, and **SH-061-E** have been applied to the canonical translation modules. The earlier **SH-058** lexical correction remains in force. Ambiguous printed readings in **SH-061-A** and **SH-061-F** are explicitly unresolved. Compiled corpus, exports, HTML, and PDF editions must track the revised source modules.\n\n';
-md+='The next sequence for human clause review is SH-015, SH-017, SH-020–025, SH-027–031, followed by the remaining commentary and all 61 matn units. **No unreviewed section is declared accurate because of a hash or ratio test.**\n';
+md+='All 61 extant ancestral matn units have now received working-Arabic-to-English comparison. '+(sharh.length-sharh.filter(u=>decisionMap.has(u.id)).length)+' of 110 commentary units still require individual comparison. **No unreviewed section is declared accurate because of a hash or ratio test, and no independent manuscript has been collated.**\n';
 write('editorial/CLAUSE_REVIEW_PASS1_2026-11-09.md',md);
 console.log(JSON.stringify({passed:true,totalArabic,totalEnglish,totalReviewed,pending:totalArabic-totalReviewed,reviewedUnits:reviewedUnits.length,statuses:counts}));

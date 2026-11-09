@@ -1,9 +1,9 @@
 {
   "schema": "gnamma-human-clause-review-v1",
   "date": "2026-11-09",
-  "reviewScope": "Manual Arabic–English comparative review of 1,574 punctuation-delimited clauses in 75 units: original matn QT001–050 and 25 selected Tamhīd commentary units. Remaining 3,946 not individually certified.",
+  "reviewScope": "Comparative review against retained electronic Arabic of 1761 punctuation-delimited Arabic clauses in 86 units: all 61 ancestral matn units and 25 selected commentary units. 3759 clauses in other commentary units remain unchecked, and no independent manuscripts were collated.",
   "sourceBasis": "Current repository JS matn/commentary modules, retained edition N introduction and edition A main/conclusion",
-  "method": "Source clause numbers are computed from Arabic punctuation. English ranges are manually matched, not proportional autoalignment. All segments in these eleven sections must be covered exactly once; unresolved readings remain explicit.",
+  "method": "Punctuation-derived Arabic segments and English sentences manually aligned with many-to-one mappings as required. Every Arabic segment in each reviewed unit has exactly one adjudication group; overlapping English ranges are allowed when one English sentence translates several consecutive Arabic segments. Mark source cruxes explicitly. This is not independent-witness verification.",
   "units": [
     {
       "id": "SH-061-C",
@@ -2627,9 +2627,888 @@
           "note": "The cosmos can have aggregative unity, not natural species-unity in this argument; the proofs are deferred."
         }
       ]
+    },
+    {
+      "id": "QT-051",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 1,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Noble kinds capable of perfectional acts are stated finite."
+        },
+        {
+          "arStart": 2,
+          "arEnd": 4,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked-with-note",
+          "note": "Superior kind has more acts than inferior; transmitted وبصدر remains uncorrected."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 6,
+          "enStart": 3,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "One truly unified noble kind encompasses lesser kinds relatively, even if numerically unbounded."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 8,
+          "enStart": 4,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Primary perfection is shared by complete individuals of a species."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 9,
+          "enStart": 5,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Particular perfections vary with preparation."
+        },
+        {
+          "arStart": 10,
+          "arEnd": 12,
+          "enStart": 6,
+          "enEnd": 7,
+          "status": "checked",
+          "note": "Author declines expansion of proofs in the brief treatise."
+        }
+      ]
+    },
+    {
+      "id": "QT-052",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 1,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Attributes and determinations may depend on others from the Real Himself."
+        },
+        {
+          "arStart": 2,
+          "arEnd": 3,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "unresolved-reading",
+          "note": "Objection concerns possible existents; awkward displaced «ببعض الصفات الممكنة» remains."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 5,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked-with-note",
+          "note": "One reply to the objection; relative possible qualifications do not render the essence externally dependent."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 7,
+          "enStart": 3,
+          "enEnd": 4,
+          "status": "checked-with-note",
+          "note": "Manifestation in the complete locus is a necessary concomitant through the Real."
+        }
+      ]
+    },
+    {
+      "id": "QT-053",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 1,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Higher apprehension does not invalidate sensory, estimative or discursive knowledge."
+        },
+        {
+          "arStart": 2,
+          "arEnd": 5,
+          "enStart": 2,
+          "enEnd": 4,
+          "status": "checked-with-note",
+          "note": "Higher faculty orders all lower faculties; 'pledging allegiance' metaphor condensed."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 6,
+          "enStart": 5,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Authorial injunction preserved."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 10,
+          "enStart": 6,
+          "enEnd": 7,
+          "status": "unresolved-reading",
+          "note": "هربت versus هذّبت remains; English 'disciplined' is contextual."
+        },
+        {
+          "arStart": 11,
+          "arEnd": 12,
+          "enStart": 8,
+          "enEnd": 8,
+          "status": "checked",
+          "note": "Lower faculties act under the holy faculty rather than independently."
+        },
+        {
+          "arStart": 13,
+          "arEnd": 13,
+          "enStart": 9,
+          "enEnd": 9,
+          "status": "checked",
+          "note": "Animal and harmful counterparts included."
+        },
+        {
+          "arStart": 14,
+          "arEnd": 16,
+          "enStart": 10,
+          "enEnd": 10,
+          "status": "checked",
+          "note": "Analogy does not confer all properties of exemplar."
+        },
+        {
+          "arStart": 17,
+          "arEnd": 18,
+          "enStart": 11,
+          "enEnd": 11,
+          "status": "checked-with-note",
+          "note": "Arteries and lungs as continually moving belong to historical physiology."
+        }
+      ]
+    },
+    {
+      "id": "QT-054",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 1,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Double negative and scope of intellect preserved."
+        },
+        {
+          "arStart": 2,
+          "arEnd": 4,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Some hidden matters require a nobler faculty."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 5,
+          "enStart": 3,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Other higher apprehensions also accessible to intellect."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 6,
+          "enStart": 4,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Comprehending universals satisfies broader ʿaql definition."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 8,
+          "enStart": 5,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Discursive reason works by finding middle terms."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 11,
+          "enStart": 6,
+          "enEnd": 6,
+          "status": "unresolved-reading",
+          "note": "Duplicated middle-term phrase remains flagged, not silently deleted."
+        },
+        {
+          "arStart": 12,
+          "arEnd": 12,
+          "enStart": 7,
+          "enEnd": 7,
+          "status": "checked",
+          "note": "Apprehension by higher power may be spoken of."
+        }
+      ]
+    },
+    {
+      "id": "QT-055",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked-with-note",
+          "note": "Watchfulness and disciplines order bodily faculties; source subject relations remain strained."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 5,
+          "enStart": 2,
+          "enEnd": 3,
+          "status": "unresolved-reading",
+          "note": "Printed variants بوجود/بوجوب and تقيّد/ويفيد; English is contextual."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 7,
+          "enStart": 4,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Stronger efficient causes redirect subordinate causal operation."
+        }
+      ]
+    },
+    {
+      "id": "QT-056",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 8,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked-with-note",
+          "note": "Proof-based certainties contrasted with pathological imagination using inherited humoral medicine."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 9,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Repetition of words sustains attentiveness."
+        },
+        {
+          "arStart": 10,
+          "arEnd": 10,
+          "enStart": 3,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Loud utterance not a required condition."
+        },
+        {
+          "arStart": 11,
+          "arEnd": 14,
+          "enStart": 4,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Withdrawal removes distractions and directs heart to God."
+        },
+        {
+          "arStart": 15,
+          "arEnd": 15,
+          "enStart": 5,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Likewise required for orderly demonstration."
+        },
+        {
+          "arStart": 16,
+          "arEnd": 16,
+          "enStart": 6,
+          "enEnd": 6,
+          "status": "checked",
+          "note": "Bad food not necessary for contemplative practice."
+        },
+        {
+          "arStart": 17,
+          "arEnd": 20,
+          "enStart": 7,
+          "enEnd": 7,
+          "status": "checked",
+          "note": "Suitability of foods and impediments differs by constitution."
+        },
+        {
+          "arStart": 21,
+          "arEnd": 22,
+          "enStart": 8,
+          "enEnd": 8,
+          "status": "checked",
+          "note": "Analogy to bodily therapy preserved."
+        },
+        {
+          "arStart": 23,
+          "arEnd": 24,
+          "enStart": 9,
+          "enEnd": 9,
+          "status": "checked",
+          "note": "Excessive hunger and sleeplessness condemned in both paths."
+        },
+        {
+          "arStart": 25,
+          "arEnd": 29,
+          "enStart": 10,
+          "enEnd": 10,
+          "status": "checked",
+          "note": "Moderate nourishment protects strength, composure and attention."
+        },
+        {
+          "arStart": 30,
+          "arEnd": 30,
+          "enStart": 11,
+          "enEnd": 11,
+          "status": "checked",
+          "note": "Sleep and wakefulness distinct from SH-058 السهو."
+        },
+        {
+          "arStart": 31,
+          "arEnd": 31,
+          "enStart": 12,
+          "enEnd": 12,
+          "status": "checked",
+          "note": "Shared necessary conditions in both epistemic paths."
+        },
+        {
+          "arStart": 32,
+          "arEnd": 33,
+          "enStart": 13,
+          "enEnd": 13,
+          "status": "corrected-with-note",
+          "note": "Restored historically disparaging references to effeminate men and women; literal content is attributed, not endorsed."
+        },
+        {
+          "arStart": 34,
+          "arEnd": 34,
+          "enStart": 14,
+          "enEnd": 14,
+          "status": "checked",
+          "note": "Related cultivation of sorrow, concern and weeping covered."
+        },
+        {
+          "arStart": 35,
+          "arEnd": 36,
+          "enStart": 15,
+          "enEnd": 15,
+          "status": "unresolved-reading",
+          "note": "The transmitted «فلا يجوز» before anger/pride apparently conflicts with therapy by contraries; no conjectural emendation."
+        },
+        {
+          "arStart": 37,
+          "arEnd": 39,
+          "enStart": 16,
+          "enEnd": 16,
+          "status": "checked",
+          "note": "Opposing stable virtues cure defective habits."
+        },
+        {
+          "arStart": 40,
+          "arEnd": 40,
+          "enStart": 17,
+          "enEnd": 17,
+          "status": "checked",
+          "note": "Balance approached through countervailing force."
+        },
+        {
+          "arStart": 41,
+          "arEnd": 41,
+          "enStart": 18,
+          "enEnd": 18,
+          "status": "checked",
+          "note": "Appetites moderated through the opposed disposition."
+        },
+        {
+          "arStart": 42,
+          "arEnd": 44,
+          "enStart": 19,
+          "enEnd": 19,
+          "status": "checked",
+          "note": "Anger likewise moderated; complete balance not guaranteed."
+        },
+        {
+          "arStart": 45,
+          "arEnd": 46,
+          "enStart": 20,
+          "enEnd": 20,
+          "status": "checked",
+          "note": "Correcting imbalance counts as healing, not pathology."
+        },
+        {
+          "arStart": 47,
+          "arEnd": 47,
+          "enStart": 21,
+          "enEnd": 21,
+          "status": "checked",
+          "note": "Treatment not transferable indiscriminately among diseases."
+        },
+        {
+          "arStart": 48,
+          "arEnd": 49,
+          "enStart": 22,
+          "enEnd": 22,
+          "status": "checked",
+          "note": "Excess and deficiency distinguished."
+        },
+        {
+          "arStart": 50,
+          "arEnd": 50,
+          "enStart": 23,
+          "enEnd": 23,
+          "status": "checked",
+          "note": "Circumstances, times, people and habits qualify remedies."
+        },
+        {
+          "arStart": 51,
+          "arEnd": 51,
+          "enStart": 24,
+          "enEnd": 24,
+          "status": "corrected",
+          "note": "Restored explicit «فتأمل ذلك»: Reflect on this."
+        },
+        {
+          "arStart": 52,
+          "arEnd": 53,
+          "enStart": 25,
+          "enEnd": 25,
+          "status": "checked",
+          "note": "Discipline of lower self essential for Sufism and rational learning."
+        },
+        {
+          "arStart": 54,
+          "arEnd": 54,
+          "enStart": 26,
+          "enEnd": 26,
+          "status": "checked",
+          "note": "Author declines repeated elaboration."
+        },
+        {
+          "arStart": 55,
+          "arEnd": 55,
+          "enStart": 27,
+          "enEnd": 27,
+          "status": "corrected",
+          "note": "Restored explicit «فاعرف ذلك»: Understand this."
+        }
+      ]
+    },
+    {
+      "id": "QT-057",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 1,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Rational investigators report rare success of contemplative method."
+        },
+        {
+          "arStart": 2,
+          "arEnd": 2,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Condition aggregation viewed as difficult."
+        },
+        {
+          "arStart": 3,
+          "arEnd": 3,
+          "enStart": 3,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Removal of attachments nearly impossible, in this objection."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 5,
+          "enStart": 4,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Passing thoughts imperil durable attentiveness."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 6,
+          "enStart": 5,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Bodily and mental disturbances are the reported objection."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 7,
+          "enStart": 6,
+          "enEnd": 6,
+          "status": "checked",
+          "note": "Without prior knowledge fantasies may be entrenched."
+        },
+        {
+          "arStart": 8,
+          "arEnd": 9,
+          "enStart": 7,
+          "enEnd": 7,
+          "status": "checked",
+          "note": "Twenty-year counterexample and prior mastery preserved."
+        },
+        {
+          "arStart": 10,
+          "arEnd": 10,
+          "enStart": 8,
+          "enEnd": 8,
+          "status": "checked-with-note",
+          "note": "Easier, nearer, fitting follows adopted أوفق, not alternative أوثق."
+        }
+      ]
+    },
+    {
+      "id": "QT-058",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 1,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "First-person reply makes two paths share necessary conditions."
+        },
+        {
+          "arStart": 2,
+          "arEnd": 3,
+          "enStart": 2,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Distractions must be removed."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 4,
+          "enStart": 4,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Explicit السهر is sleep deprivation/wakefulness, not السهو."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 6,
+          "enStart": 5,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Balance and avoiding causes of imbalance preserved."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 7,
+          "enStart": 6,
+          "enEnd": 6,
+          "status": "checked",
+          "note": "Conditions are not impossible to combine."
+        },
+        {
+          "arStart": 8,
+          "arEnd": 8,
+          "enStart": 7,
+          "enEnd": 7,
+          "status": "checked",
+          "note": "Intrusive thoughts affect both paths."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 9,
+          "enStart": 8,
+          "enEnd": 8,
+          "status": "checked-with-note",
+          "note": "Strained providential-necessity phrase interpreted, not emended."
+        },
+        {
+          "arStart": 10,
+          "arEnd": 11,
+          "enStart": 9,
+          "enEnd": 9,
+          "status": "checked",
+          "note": "Stillness and restraint of imagination are possible."
+        }
+      ]
+    },
+    {
+      "id": "QT-059",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 1,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "False opposition between empiricist reasoning and spiritual effusion rejected."
+        },
+        {
+          "arStart": 2,
+          "arEnd": 3,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Senses prepare both methods; first Principle effuses knowledge."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 4,
+          "enStart": 3,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Preparatory role for rational method accepted."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 5,
+          "enStart": 4,
+          "enEnd": 4,
+          "status": "checked-with-note",
+          "note": "Embodied soul argument depends on sensory preparation."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 6,
+          "enStart": 5,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Postmortem attainment of perfection explicit."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 9,
+          "enStart": 6,
+          "enEnd": 7,
+          "status": "checked-with-note",
+          "note": "Objection and reply retained, question renders strained syntax."
+        },
+        {
+          "arStart": 10,
+          "arEnd": 11,
+          "enStart": 8,
+          "enEnd": 8,
+          "status": "checked-with-note",
+          "note": "Acquired beneficial habits concede previous premise; الشروط المطلقة contextual."
+        },
+        {
+          "arStart": 12,
+          "arEnd": 12,
+          "enStart": 9,
+          "enEnd": 9,
+          "status": "unresolved-reading",
+          "note": "Referenced missing proof and reported ancestral lacuna not reconstructed."
+        }
+      ]
+    },
+    {
+      "id": "QT-060",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 3,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Sciences are present but veiled."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 4,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Discursive route entails ordering lower faculties and character."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 5,
+          "enStart": 3,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Contemplative route entails stilling imagination."
+        },
+        {
+          "arStart": 6,
+          "arEnd": 6,
+          "enStart": 4,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Both routes endorsed."
+        },
+        {
+          "arStart": 7,
+          "arEnd": 7,
+          "enStart": 5,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Harshā poetic route analogy preserved."
+        },
+        {
+          "arStart": 8,
+          "arEnd": 9,
+          "enStart": 5,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Criticism directed at knowledge without purification."
+        },
+        {
+          "arStart": 10,
+          "arEnd": 12,
+          "enStart": 6,
+          "enEnd": 6,
+          "status": "checked",
+          "note": "Appetite, anger and deprivation of virtue preserved."
+        },
+        {
+          "arStart": 13,
+          "arEnd": 14,
+          "enStart": 7,
+          "enEnd": 7,
+          "status": "checked",
+          "note": "Imitators, disputants, conflicting memorized opinions retained."
+        },
+        {
+          "arStart": 15,
+          "arEnd": 17,
+          "enStart": 8,
+          "enEnd": 8,
+          "status": "unresolved-reading",
+          "note": "A p267 variants فوقع/فأوقع and المفرفة/المغرقة left open."
+        },
+        {
+          "arStart": 18,
+          "arEnd": 20,
+          "enStart": 9,
+          "enEnd": 11,
+          "status": "corrected",
+          "note": "Restored «فلحق به من الحق الغضب», a previously omitted reference to divine wrath."
+        },
+        {
+          "arStart": 21,
+          "arEnd": 22,
+          "enStart": 12,
+          "enEnd": 12,
+          "status": "checked",
+          "note": "Mistaken belief that book-learning exhausts perfection preserved."
+        },
+        {
+          "arStart": 23,
+          "arEnd": 23,
+          "enStart": 13,
+          "enEnd": 13,
+          "status": "unresolved-reading",
+          "note": "A p267 prints فيتقن ... واستعد while adopted Arabic has فليتق ... وليستعذ; the English remains interpretative."
+        }
+      ]
+    },
+    {
+      "id": "QT-061",
+      "groups": [
+        {
+          "arStart": 1,
+          "arEnd": 1,
+          "enStart": 1,
+          "enEnd": 1,
+          "status": "checked",
+          "note": "Final subtle issue announced."
+        },
+        {
+          "arStart": 2,
+          "arEnd": 3,
+          "enStart": 2,
+          "enEnd": 2,
+          "status": "checked",
+          "note": "Logic discriminates valid reasoning and truth/falsehood."
+        },
+        {
+          "arStart": 4,
+          "arEnd": 4,
+          "enStart": 3,
+          "enEnd": 3,
+          "status": "checked",
+          "note": "Initial disadvantage of wayfarers stated as dialectical position."
+        },
+        {
+          "arStart": 5,
+          "arEnd": 7,
+          "enStart": 4,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Immediate knowledge objection presented."
+        },
+        {
+          "arStart": 8,
+          "arEnd": 8,
+          "enStart": 4,
+          "enEnd": 4,
+          "status": "checked",
+          "note": "Reply notes conflicting experiences."
+        },
+        {
+          "arStart": 9,
+          "arEnd": 9,
+          "enStart": 5,
+          "enEnd": 5,
+          "status": "checked",
+          "note": "Mutual denial among experiencers included."
+        },
+        {
+          "arStart": 10,
+          "arEnd": 12,
+          "enStart": 6,
+          "enEnd": 6,
+          "status": "unresolved-reading",
+          "note": "Purification, prior studies and logic analogy retained; غير المتسقة المنتظمة printed syntax unresolved."
+        },
+        {
+          "arStart": 13,
+          "arEnd": 15,
+          "enStart": 7,
+          "enEnd": 7,
+          "status": "checked",
+          "note": "Other route attains what thought cannot, tested by acquired intellectual habit."
+        },
+        {
+          "arStart": 16,
+          "arEnd": 16,
+          "enStart": 8,
+          "enEnd": 8,
+          "status": "corrected",
+          "note": "Active مكمّل denotes a guide able to perfect another, not passive perfected."
+        },
+        {
+          "arStart": 17,
+          "arEnd": 17,
+          "enStart": 9,
+          "enEnd": 9,
+          "status": "checked",
+          "note": "Full treatment deferred."
+        },
+        {
+          "arStart": 18,
+          "arEnd": 18,
+          "enStart": 10,
+          "enEnd": 10,
+          "status": "checked",
+          "note": "Ancestor's closing formula kept separate from descendant's أقول."
+        },
+        {
+          "arStart": 19,
+          "arEnd": 20,
+          "enStart": 11,
+          "enEnd": 11,
+          "status": "checked",
+          "note": "Blessing and doxology retained."
+        }
+      ]
     }
   ],
-  "claimedManuallyComparedArabicClauses": 1574,
-  "issues": "Three passages corrected; one passage contains two connected technical-semantic corrections; additional textual cruxes flagged without conjectural emendation.",
+  "claimedManuallyComparedArabicClauses": 1761,
+  "issues": "Qawtaw4 adds QT-051–061 (187 newly compared Arabic segments). QT-056 restores omitted injunctions and authorial historically gendered phrasing; QT-060 restores omitted divine wrath while noting the printed final verbal crux; QT-061 fixes active مكمّل. Other reported source cruces remain unresolved. Editorial source text is unmodified; independent manuscript collation remains zero.",
   "noWitnessesCollated": true
 }
