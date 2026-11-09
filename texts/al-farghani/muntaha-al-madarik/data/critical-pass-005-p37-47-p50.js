@@ -82,13 +82,25 @@ window.FARGHANI_CRITICAL_PASS_005={
       "page": 38,
       "ar": "( والقابل ) يجمعها من أن كل واحد منها من تعيّنات النفس الرحمني",
       "en": "The Receptive gathers them insofar as each is a determination of the Breath of the All-merciful.",
-      "disposition": "crux",
-      "critical_note": "B2007 digital text reads القابل, while p37 explains القول and the principal seven-name sequence suggests القائل might be intended. Retain the printed lemma, record the hypothesis; NO I1876 or manuscript verification of this locus.",
+      "disposition": "annotate",
+      "critical_note": "STAGE XV PHOTO UPDATE: I1876 printed p20 scan24 explicitly reads القابل, agreeing with the B2007 digitized Arabic on this disputed word. The earlier conjecture القائل is NOT witnessed in either printed source; retain القابل as the provisional edited lemma. Distinguish receptivity from the seven-name category القائل attested elsewhere. MSS uncollated.",
       "source_siglum": "B2007",
       "source_url": "https://ablibrary.net/book_content/b/9606/38?lang=ar",
       "grade": "modern-printed-digital-selected-locus-checked",
-      "historical_print_verified": false,
-      "manuscript_verified": false
+      "historical_print_verified": true,
+      "manuscript_verified": false,
+      "historical_print": {
+        "printed_page": 20,
+        "scan_index": 24,
+        "status": "historic-print-agreement",
+        "reading": "والقابل يجمعها",
+        "note": "The noun القابل is present in the photographed 1876 printed page, despite internal parallel mentions of القائل elsewhere. See I1876-L11; no manuscript evidence.",
+        "source_pdf": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
+        "original_image_url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000264/24/full/2200,/0/default.jpg",
+        "original_viewer_url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en",
+        "archived_scan_sha256": "3bdb65963d2ba22687ee50071b08e7b1983796ec50642da2d021b30169d26d00",
+        "linked_collation": "editorial/I1876_COLLATION_CUMULATIVE_005.json"
+      }
     },
     {
       "id": "CR005-006",
