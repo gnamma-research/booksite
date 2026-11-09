@@ -8,7 +8,7 @@ ROOT=Path("texts/al-farghani/muntaha-al-madarik/facsimile-I1876-hires")
 ROOT.mkdir(parents=True,exist_ok=True)
 IMAGES=ROOT/"images";IMAGES.mkdir(exist_ok=True)
 MANIFEST="https://sites.dlib.nyu.edu/viewer/api/presentation/books/princeton_aco000264/manifest.json"
-INDEX=[12,13,14,17,20,22]
+INDEX=[12,13,14,17,20,22,24,32,36,42,43]
 def fetch(url,timeout=40):
     req=Request(url,headers={"Accept":"*/*","User-Agent":"GNAMMA-philological-collation/1.0"})
     with urlopen(req,timeout=timeout) as r:return r.read()
