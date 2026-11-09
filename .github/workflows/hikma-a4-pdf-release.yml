@@ -14,7 +14,9 @@ permissions:
 
 concurrency:
   group: hikma-nine-pdf-editions
-  cancel-in-progress: true
+  # Never repeatedly abort a costly publication when other editors commit.
+  # Its existing source-hash guard refuses to publish stale PDFs safely.
+  cancel-in-progress: false
 
 jobs:
   build-and-release:
