@@ -1,5 +1,16 @@
 # Farghānī · Muntahā al-madārik — cumulative handoff archive
 
+## Latest source-critical stage — photographed 1876 printed witness (9 November 2026)
+
+- [Complete cumulative edition archive through print-collation Stage V](FULL_CUMULATIVE_CRITICAL_005.md), preserving the original translated introduction and all prior critical passes.
+- [Direct photographed historical-print reading report](I1876_COLLATION_001.md), [structured print variants and SHA locator](I1876_COLLATION_001.json).
+- Original printed **I1876 p5 = PDF scan 9; p6 = scan 10; p7 = scan 11**. B2007 printed pp18/19/21 correspond by direct matched source phrases, not by offset assumption.
+- **Two early printed corrections:** `الغائي` (for modern `الغائب`), `علميا` (for modern `عمليا`); two agreements including unresolved `بطون المشتمل`. **Four selected loci**, **zero medieval manuscript checks**.
+- [Updated full English master](WORKING_TRANSLATION_18_145.md); 198 selected modern-source records remain in the GNAMMA [critical reader](../critical-edition.html).
+- **Next:** obtain manuscript images C1107/R670/K273/F3966/Y706 and assess variants. Critical Arabic **not definitive**.
+
+
+
 This is the **stable archive index** for the GNAMMA Farghānī source-critical translation project.
 
 ## Current canonical stage — Critical Pass IV, 9 November 2026
