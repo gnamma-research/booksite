@@ -169,6 +169,7 @@ function initialSubject(subject){
  state.subject=subject;
  state.school="all";state.family="";state.cluster="";state.region="";
  state.bookPage=1;state.clusterPage=1;state.search="";
+ window.GNAMMAGeography?.resetScope?.();
  if(subject==="intellectual"){state.from=-600;state.to=2026}
  else {state.from=630;state.to=1920}
  selectFeatured(false);
