@@ -68,7 +68,7 @@
         "en"
       ],
       "url": "texts/al-mahaimi/mashra-al-khusus/",
-      "note": "Al-Mahāʾimī commentary pp.11–232: consecutive FIRST-PASS English for 222 printed pages. Arabic present in 142 of those pages (11–149 and 230–232), absent in 80 (150–229). Separate Qūnawī: seven English draft sections, three page-specific online Arabic–English proofs (235,236,267), plus 47 Arabic–English excerpts from a separate online witness with 64 contextual links to 61 commentary pages. Standpoint/attribution labels and nine final-text variants are documented. No physical-page photograph or manuscript collation; Āshtiyānī edition only identified bibliographically.",
+      "note": "Al-Mahāʾimī commentary pp.11–232: consecutive FIRST-PASS English for 222 printed pages. Arabic present in 142 of those pages (11–149 and 230–232), absent in 80 (150–229). Separate Qūnawī: seven English draft sections, five page-specific online Arabic–English proofs (235–238,267), plus 47 Arabic–English excerpts from a separate online witness with 64 contextual links to 61 commentary pages. Standpoint/attribution labels and nine final-text variants are documented. No physical-page photograph or manuscript collation; Āshtiyānī edition only identified bibliographically.",
       "copytext": "al-Mazīdī 2008 online page-indexed transcription",
       "source_status": "online-2008-transcription-not-photographically-collated",
       "cumulative_coverage_printed_pages": [
@@ -89,9 +89,9 @@
       "glossary_url": "texts/al-mahaimi/mashra-al-khusus/editorial/GLOSSARY.md",
       "apparatus_url": "texts/al-mahaimi/mashra-al-khusus/editorial/APPARATUS_STAGE09.md",
       "inventory_concordance_url": "texts/al-mahaimi/mashra-al-khusus/editorial/INVENTORY_AND_CONCORDANCE.md",
-      "handoff_url": "texts/al-mahaimi/mashra-al-khusus/editorial/HANDOFF_STAGE09.md",
+      "handoff_url": "texts/al-mahaimi/mashra-al-khusus/editorial/HANDOFF_STAGE11.md",
       "structured_corpus_url": "texts/al-mahaimi/mashra-al-khusus/data/parallel.json",
-      "page_coverage_manifest_url": "texts/al-mahaimi/mashra-al-khusus/data/stage04-page-coverage.json",
+      "page_coverage_manifest_url": "texts/al-mahaimi/mashra-al-khusus/data/coverage-stage11.json",
       "comparative_analysis_url": "texts/al-mahaimi/mashra-al-khusus/editorial/COMPARATIVE_FINDINGS_STAGE04.md",
       "stage04_audit_url": "texts/al-mahaimi/mashra-al-khusus/editorial/STAGE04_AUDIT.md",
       "register_entries": 104,
@@ -109,6 +109,8 @@
       "original_2008_online_proof_pages": [
         235,
         236,
+        237,
+        238,
         267
       ],
       "contextual_concordance_link_count": 64,
@@ -118,7 +120,8 @@
       "legacy_bilingual_markdown_coverage_printed_pages": [
         11,
         149
-      ]
+      ],
+      "latest_working_stage": 11
     },
     {
       "id": "farghani-muntaha-al-madarik",
