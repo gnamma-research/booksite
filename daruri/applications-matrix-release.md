@@ -1,9 +1,11 @@
-# Darūrī applications matrix — 10 November 2026
+# Darūrī applications at a glance — 10 November 2026
 
-Scope: the Darūrī reader's existing Bidāya applications view only. Add a compact, collapsible application-to-principle table above the unchanged case explanations. Case labels and connections must come from the current edition and its existing links, not invented legal associations. Preserve existing contextual returns, filters, reader modes, source text, personal data and all PDFs. No change to the overall Bidāya site.
+A compact, collapsible matrix is added only to the existing Darūrī Bidāya applications view, above the unchanged explanations. Eight rows appear initially; Show all exposes all 28. Existing search and book filters apply to both the table and prose. Short legal-question labels jump to the original explanations. Ticks open exact section titles/references and preserve the existing contextual return.
 
-Integration branch: `daruri-applications-matrix-20261110`.
-Base: `938133a6b554830e3baa58e90c46ab46a4f2048e`.
-Targets reserved in this branch: new `daruri/applications-matrix.js`, `daruri/applications-matrix.css`, installer/QA under `daruri/qa/applications-matrix*`, and surgical additions to `daruri/index.html`, `daruri/sw.js`, and `daruri/download-bundle.js`. The focused GitHub Actions workflow supplies execution because the chat runtime is unavailable. No main-branch publication until checks pass; recheck master immediately before publication. This branch reservation expires at 2026-11-11T00:00:00Z.
+Nine editorial topic groups organize the columns. A tick denotes a recorded link, not agreement: cautionary and critical parallels retain their existing relationship labels. All links are derived from the current edition's primary section, related sections and explicitly cited prose references; no new case-to-principle relationships are added.
 
-Status: source inspection and implementation in progress. No claim of a live change or passed browser testing at this stage.
+Integration is limited to two asset tags and the package-loader cache key in index.html, the new isolated JS/CSS, and matching offline/package assets. Canonical edition data, source notes, study lessons and all five reading PDFs are byte-for-byte unchanged. No change to the overall Bidāya website or other books.
+
+Validation: see qa/applications-matrix-source-check.json and qa/applications-matrix-browser-report.json. Automated Chromium at 1280px/390px and WebKit at 390px/320px check source-derived links, original prose, filters, cell details, return navigation, row jumps, sticky labels, horizontal containment, focus restoration and collapsibility. This is not physical-device testing or a claim of manual screenshot review.
+
+Branch reservation released after test completion. Publication requires an expected-head-checked merge into master and a separate Pages deployment check.
