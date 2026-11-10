@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-lang="both" data-theme="light" data-work="sharh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f1e9">
+<meta name="description" content="Read al-Mahāʾimī’s Mashraʿ al-khuṣūṣ and Qūnawī’s al-Nuṣūṣ in Arabic and English, with editorial notes, source distinctions, cross-references, bookmarks and downloadable working editions.">
+<meta name="application-name" content="Mashraʿ al-khuṣūṣ · NAMA">
+<title>Mashraʿ al-khuṣūṣ · al-Mahāʾimī · NAMA</title>
+<link rel="stylesheet" href="../../../daruri/arabic-fonts.css">
+<style>__READER_STYLES__</style>
+</head>
+<body>
+<a class="skip-link" href="#reading">Skip to text</a>
+<svg class="sr-only" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+<symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16M8 3v6M16 9v6M10 15v6"/></symbol>
+<symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4-6 4z"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path d="m10 14 4-4m-6 5-1 1a4 4 0 0 1-6-6l5-5a4 4 0 0 1 6 0m0 4 1-1a4 4 0 0 1 6 6l-5 5a4 4 0 0 1-6 0" transform="translate(2 0)"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+</defs></svg>
+<div class="reading-progress" aria-hidden="true"><div id="progress-fill"></div></div>
+<header id="top" class="topbar">
+<div class="topbar-inner">
+<button class="icon-btn" id="contents-toggle" aria-label="Show or hide contents" aria-controls="contents-panel" aria-expanded="true" title="Contents"><svg class="icon"><use href="#i-menu"/></svg></button>
+<a class="brand" href="../../../index.html"><span class="brand-seal" aria-hidden="true" lang="ar">م</span><span><strong>NAMA</strong><small>al-Mahāʾimī · Mashraʿ al-khuṣūṣ</small></span></a>
+<div class="header-tools">
+<div class="segmented language-switch" role="group" aria-label="Reading language"><button data-lang="en" aria-pressed="false">EN</button><button data-lang="both" aria-pressed="true">AR / EN</button><button data-lang="ar" aria-pressed="false" lang="ar">ع</button></div>
+<button class="icon-btn" id="search-toggle" aria-label="Search the texts" title="Search (Ctrl or ⌘ K)"><svg class="icon"><use href="#i-search"/></svg></button>
+<button class="icon-btn" data-dialog="settings-dialog" aria-label="Reading settings" title="Reading settings"><svg class="icon"><use href="#i-settings"/></svg></button>
+<button class="icon-btn" data-dialog="bookmarks-dialog" aria-label="Bookmarks" title="Bookmarks"><svg class="icon"><use href="#i-bookmark"/></svg><span id="bookmark-count" class="count" hidden>0</span></button>
+<button class="icon-btn" data-dialog="downloads-dialog" aria-label="Download editions" title="Download editions"><svg class="icon"><use href="#i-download"/></svg></button>
+</div></div>
+</header>
+<div id="drawer-shade" hidden></div>
+<div class="page-shell">
+<aside id="contents-panel" class="contents-panel" aria-label="Book contents">
+<div class="panel-heading"><h2>Contents</h2><button id="contents-close" class="icon-btn mobile-only" aria-label="Close contents"><svg class="icon"><use href="#i-close"/></svg></button></div>
+<label class="field-label" for="work-select">Text</label><select id="work-select"><option value="sharh">Al-Mahāʾimī · commentary</option><option value="matn">Qūnawī · original</option><option value="all">Both works</option></select>
+<div id="matn-source-field" hidden><label class="field-label" for="matn-source">Qūnawī source</label><select id="matn-source"><option value="qunawi_original_proof">2008 appendix · page proofs</option><option value="qunawi_online_transcription">Separate online transcription</option><option value="qunawi_original">Earlier continuous English draft</option><option value="all">All Qūnawī source layers</option></select></div>
+<p class="contents-help" id="contents-help">Continuous reading · headings are editorial</p>
+<nav id="nav-items" aria-label="Sections"></nav>
+<div class="panel-footer"><a href="#edition-notes" id="source-notes-link">Sources and edition status</a><button type="button" class="text-button" data-dialog="downloads-dialog">Download editions</button></div>
+</aside>
+<main id="start">
+<header class="hero">
+<p class="kicker">AL-MAHĀʾIMĪ · COMMENTARY ON QŪNAWĪ</p>
+<h1>Mashraʿ al-khuṣūṣ</h1>
+<p class="ar-title" lang="ar" dir="rtl">مشرع الخصوص إلى معاني النصوص</p>
+<p class="subtitle">Qūnawī’s Texts, with al-Mahāʾimī’s commentary</p>
+<p class="byline">ʿAlāʾ al-Dīn ʿAlī al-Mahāʾimī <span aria-hidden="true">·</span> Arabic and English working edition</p>
+<div class="edition-summary"><span class="status-dot" aria-hidden="true"></span><span id="edition-summary-text">Loading edition status…</span><a href="#edition-notes">About this edition</a></div>
+<div id="resume-box" class="resume-box" hidden><span id="resume-label"></span><button id="resume-button">Resume reading <span aria-hidden="true">→</span></button><button id="resume-dismiss" class="icon-btn" aria-label="Dismiss saved position"><svg class="icon"><use href="#i-close"/></svg></button></div>
+</header>
+<div class="reading-toolbar"><div class="current-work" id="current-work">Al-Mahāʾimī · commentary</div><label for="jump" class="sr-only">Jump to section</label><select id="jump" aria-label="Jump to section"></select><span id="reading-count" class="reading-count"></span></div>
+<div id="reading" tabindex="-1"></div>
+<section id="edition-notes" class="edition-notes">
+<p class="kicker">SOURCES &amp; EDITORIAL METHOD</p><h2>About this working edition</h2>
+<p>Al-Mahāʾimī’s commentary and Qūnawī’s separately printed original are kept as separate works. The 2008 Beirut edition supplies the printed page references. Editorial headings and notes belong to this reading edition; they are separate from the medieval texts.</p>
+<div id="coverage-cards" class="coverage-cards"></div>
+<details><summary>Reading the text and its source layers</summary><p><strong>Commentary</strong> includes Qūnawī’s quoted lemmata within al-Mahāʾimī’s explanation. <strong>Original</strong> displays the separately reproduced Qūnawī text in printed-page order. The main reading corpus keeps one current version of each passage. Earlier overlapping drafts and the separate forum transcription are preserved in the <a href="data/legacy-stage11-qunawi.json">historical source archive</a>; their numbering and textual divisions are not automatically interchangeable with the printed appendix.</p><p>Cross-references identify related passages. A lexical correspondence within the same modern edition does not count as an independent manuscript witness. The English is a working translation reviewed against the Arabic, with exact review coverage recorded in the accompanying files.</p></details>
+<details><summary>Textual witnesses and unresolved readings</summary><p>The source register distinguishes the al-Mazīdī edition (Beirut, 2008), the Āshtiyānī edition (Qom, 1421 AH), Leiden manuscript Or. 5675, and later quotations of Qūnawī. A catalogued witness is not counted as collated until its text has been examined.</p><p>The acquired print itself leaves the final commentary sentence on p.232 unfinished. Printed pp.113–114 are absent from the scan but available in the electronic text. The readings <span lang="ar" dir="rtl">توجب / يوجب / بموجب</span> and <span lang="ar" dir="rtl">الظهور في الوجود / الظهور للوجود</span> require the distinctions documented in the apparatus. Do not silently combine a commentary reading with a different wording in Qūnawī’s original.</p><div class="document-links"><a href="editorial/EDITION_STATUS.md">Edition status</a><a href="editorial/HANDOFF.md">Current editorial handoff</a><a id="ledger-link" href="data/coverage-stage12.json">Exact coverage ledger</a><a href="editorial/SOURCES_STAGE12.md">Witness register</a><a href="editorial/TEXTUAL_NOTES.md">Textual apparatus</a><a href="editorial/GLOSSARY.md">Terminology glossary</a><a href="editorial/REGISTER.md">Research register</a></div></details>
+<details><summary>Using this reader</summary><p>Choose English, Arabic, or both in the top bar. The contents menu selects the work and source layer. Search finds passages without removing the surrounding text. Use the bookmark icon beside a section to save it on this device; reading settings and position are also saved on this device.</p><p>The download menu offers PDF editions, the bilingual text, the structured corpus, and this self-contained reader. Print preserves your chosen language and source view. Notes are included when their display is enabled.</p></details>
+</section>
+<footer class="reader-footer"><a href="../../../index.html">NAMA</a><span>Al-Mahāʾimī · Mashraʿ al-khuṣūṣ</span><button class="text-button" id="back-top">Back to beginning ↑</button></footer>
+</main>
+</div>
+<dialog id="search-dialog" class="search-dialog"><div class="dialog-heading"><h2>Search the texts</h2><button class="icon-btn" data-close aria-label="Close search"><svg class="icon"><use href="#i-close"/></svg></button></div><label class="sr-only" for="pagefilter">Search Arabic or English</label><input id="pagefilter" type="search" placeholder="Search Arabic, English, a page, or a section…" autocomplete="off"><p class="dialog-help">Search opens a passage in its continuous reading context. Arabic vowel marks are ignored.</p><p id="search-status" class="small-status" role="status" aria-live="polite">Enter a word or phrase.</p><div id="search-results"></div></dialog>
+<dialog id="settings-dialog"><div class="dialog-heading"><h2>Reading settings</h2><button class="icon-btn" data-close aria-label="Close settings"><svg class="icon"><use href="#i-close"/></svg></button></div>
+<fieldset><legend>Language</legend><div class="segmented"><button data-lang="en" aria-pressed="false">English</button><button data-lang="both" aria-pressed="true">Both</button><button data-lang="ar" aria-pressed="false" lang="ar">العربية</button></div></fieldset>
+<fieldset><legend>Text size</legend><div class="size-controls"><button id="smaller" aria-label="Smaller text">A−</button><input id="text-scale" aria-label="Text size" type="range" min="85" max="145" step="5" value="100"><button id="larger" aria-label="Larger text">A+</button><output id="scale-value">100%</output></div></fieldset>
+<fieldset><legend>Appearance</legend><label for="theme-select">Theme</label><select id="theme-select"><option value="system">System</option><option value="light">Light</option><option value="night">Dark</option></select><label for="font-select">English typeface</label><select id="font-select"><option value="serif">Book serif</option><option value="sans">Clear sans serif</option></select><label for="column-order">Parallel text order</label><select id="column-order"><option value="ar-first">Arabic first</option><option value="en-first">English first</option></select><label class="check-row"><input id="notes-toggle" type="checkbox" checked> Show editorial notes and cross-references</label><label class="check-row"><input id="headings-toggle" type="checkbox" checked> Show editorial headings</label><label class="check-row"><input id="sources-toggle" type="checkbox" checked> Show source details</label></fieldset>
+<button id="reset-settings" class="secondary-button">Reset reading settings</button>
+</dialog>
+<dialog id="bookmarks-dialog"><div class="dialog-heading"><h2>Bookmarks</h2><button class="icon-btn" data-close aria-label="Close bookmarks"><svg class="icon"><use href="#i-close"/></svg></button></div><p class="dialog-help">Saved on this device.</p><div id="bookmarks-list"></div></dialog>
+<dialog id="downloads-dialog"><div class="dialog-heading"><h2>Download editions</h2><button class="icon-btn" data-close aria-label="Close downloads"><svg class="icon"><use href="#i-close"/></svg></button></div><p class="dialog-help">These downloads preserve the working edition’s source and verification status.</p><div class="download-grid"><a href="downloads/mahaimi-english.pdf" download><strong>English PDF</strong><span>Continuous translation</span></a><a href="downloads/mahaimi-bilingual.pdf" download><strong>Arabic &amp; English PDF</strong><span>Parallel source and translation</span></a><a href="downloads/mahaimi-arabic.pdf" download><strong>Arabic PDF</strong><span>Arabic source text</span></a><a href="downloads/mahaimi-bilingual.md" download><strong>Bilingual Markdown</strong><span>Editable text with source references</span></a><a href="downloads/mahaimi-corpus.json" download><strong>Structured corpus</strong><span>Text, source metadata and links · JSON</span></a><a href="index.html" download="mahaimi-offline-reader.html"><strong>Offline reader</strong><span>This complete reader · HTML</span></a></div><button id="print-view" class="secondary-button">Print the current reading view / Save as PDF</button></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<noscript><p class="noscript-notice">JavaScript is needed for the interactive reader. <a href="downloads/mahaimi-bilingual.pdf">Download the bilingual PDF</a> or <a href="downloads/mahaimi-bilingual.md">read the text file</a>.</p></noscript>
+<script id="corpus-json" type="application/json">__CORPUS_JSON__</script>
+<script id="coverage-json" type="application/json">__COVERAGE_JSON__</script>
+<script>__READER_SCRIPT__</script>
+</body></html>

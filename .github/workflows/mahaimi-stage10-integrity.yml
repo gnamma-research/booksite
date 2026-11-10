@@ -1,4 +1,4 @@
-name: Mahaimi Stage10 critical-edition coverage and concordance
+name: Mahaimi corpus, source coverage and concordance
 on:
   push:
     paths:
