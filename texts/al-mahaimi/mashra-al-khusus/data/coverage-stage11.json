@@ -95,7 +95,22 @@
     "manuscripts_collated": 0,
     "ashtiyani_edition": "bibliographic record confirmed; copy not acquired",
     "editorial_apparatus": "nine intra-edition final-text differences plus independent supporting quotations (stage09)",
-    "p232": "terminal text syntactically incomplete in online transcription; printed editor says آخره; do not infer missing authorial conclusion"
+    "p232": "terminal text syntactically incomplete in online transcription; printed editor says آخره; do not infer missing authorial conclusion",
+    "manuscripts_identified": [
+      {
+        "siglum": "M1",
+        "library": "Leiden University Libraries",
+        "shelfmark": "Or. 5675",
+        "folios": 362,
+        "date_ah": 1142,
+        "date_ce": "1729–1730",
+        "description": "Al-Mahāʾimī, Mashraʿ al-khuṣūṣ, formerly owned by Sultan Muhammad Shifa of Banten",
+        "catalogue_url": "https://bibliography.mk.iq/files/0e8ddc804348667f.pdf",
+        "copyist_attributed_by": "A.C.S. Peacock: Muhyi al-Din ibn Shaykh Abd al-Shakur ibn Abd al-Karim ibn al-Sultan Abu al-Mafakhir",
+        "status": "catalogue_verified_no_manuscript_image_seen"
+      }
+    ],
+    "manuscript_pages_visually_inspected": 0
   },
   "status": {
     "reader_corpus_entries": 280,
@@ -111,7 +126,8 @@
     ],
     "backlinks": true,
     "source_confidence_banners": true,
-    "live_deployment_independently_verified": false
+    "live_deployment_independently_verified": false,
+    "reader_publication_sha": "36acc5e0576be07f794646e0401de62b499752f7"
   },
   "files": {
     "reader": "texts/al-mahaimi/mashra-al-khusus/index.html",
@@ -120,7 +136,8 @@
     "concordance": "texts/al-mahaimi/mashra-al-khusus/editorial/CONCORDANCE_STAGE10.md",
     "integrity_test": "tests/test_mahaimi_stage10.py",
     "appendix_proof_pp237_238": "texts/al-mahaimi/mashra-al-khusus/data/stage10-qunawi-pp237-238.md",
-    "appendix_lemma_concordance": "texts/al-mahaimi/mashra-al-khusus/data/appendix-lemma-concordance-stage11.json"
+    "appendix_lemma_concordance": "texts/al-mahaimi/mashra-al-khusus/data/appendix-lemma-concordance-stage11.json",
+    "witness_register": "texts/al-mahaimi/mashra-al-khusus/editorial/WITNESS_REGISTER_STAGE11.md"
   },
   "source_access_test": {
     "ablibrary_robots": "disallowed",
