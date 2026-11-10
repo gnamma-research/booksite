@@ -24,7 +24,7 @@ a,a:visited{color:inherit;text-decoration:none}
 .arabic-title{font:normal 18pt/1.7 AmiriGnamma,serif;text-align:right;color:#527268}
 .stage-original{font:normal 13pt/1.8 AmiriGnamma,serif;margin-top:5mm}
 .chapter{margin:0 0 9mm;break-inside:auto}
-.chapter-title{break-after:avoid-page;page-break-after:avoid;margin-bottom:4mm}
+.chapter-title{break-inside:avoid;page-break-inside:avoid;break-after:avoid-page;page-break-after:avoid;margin-bottom:4mm}
 .chapter-index{font:8pt Arial,sans-serif;letter-spacing:1pt;color:#5b776e}
 .chapter-title h3{font:normal 15pt/1.45 Georgia,serif;margin:1mm 0}
 .chapter-title p{font:normal 17pt/1.7 AmiriGnamma,serif;color:#686458;margin:0;text-align:right}
