@@ -1,0 +1,3941 @@
+{
+  "meta": {
+    "checked_on": "2026-11-10",
+    "scope": "Substantive traditional Hanafi jurisprudence; biographies and usul excluded from fiqh count. Separate works, not printed volumes or editions.",
+    "verification": "Bibliographical identity and explicit family relations checked against scholarly reference articles and selected primary text editions. Not a complete corpus collation. Unknown chronology intentionally remains null.",
+    "work_count": 125,
+    "direct_relationship_count": 62,
+    "qualified_relationship_count": 12,
+    "source_count": 38,
+    "direction": "base/source -> derivative/commentary",
+    "benchmark_file": "hanafi-atlas-benchmark.json",
+    "works_with_author_death_ah": 108,
+    "works_with_author_death_ce": 105,
+    "chronology_note": "Integer author-death years reflect the cited sources. Two qualified display anchors are explicitly marked as proxies. Composition dates remain separate.",
+    "build_order": [
+      "build_hanafi_corpus.py",
+      "enrich_hanafi_corpus.py"
+    ]
+  },
+  "works": [
+    {
+      "id": "hf_abu_yusuf_kharaj",
+      "title": "Kitāb al-Kharāj",
+      "title_ar": "كتاب الخراج",
+      "author": "Abū Yūsuf",
+      "author_death_ah": 182,
+      "author_death_ce": 798,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fiscal law",
+      "source_ids": [
+        "hf-src-abuyusuf"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 182 AH / 798 CE",
+      "timeline_ce": 798,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_abu_yusuf_ikhtilaf",
+      "title": "Ikhtilāf Abī Ḥanīfa wa-Ibn Abī Laylā",
+      "title_ar": "اختلاف أبي حنيفة وابن أبي ليلى",
+      "author": "Abū Yūsuf",
+      "author_death_ah": 182,
+      "author_death_ce": 798,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "comparative law",
+      "source_ids": [
+        "hf-src-abuyusuf"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 182 AH / 798 CE",
+      "timeline_ce": 798,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_abu_yusuf_radd_awzai",
+      "title": "al-Radd ʿalā Siyar al-Awzāʿī",
+      "title_ar": "الرد على سير الأوزاعي",
+      "author": "Abū Yūsuf",
+      "author_death_ah": 182,
+      "author_death_ce": 798,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "comparative law",
+      "source_ids": [
+        "hf-src-abuyusuf"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 182 AH / 798 CE",
+      "timeline_ce": 798,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_shaybani_asl",
+      "title": "al-Aṣl (al-Mabsūṭ)",
+      "title_ar": "الأصل",
+      "author": "Muḥammad b. al-Ḥasan al-Shaybānī",
+      "author_death_ah": 189,
+      "author_death_ce": 805,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "foundational law corpus",
+      "source_ids": [
+        "hf-src-general"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 189 AH / 805 CE",
+      "timeline_ce": 805,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_shaybani_ziyadat",
+      "title": "al-Ziyādāt",
+      "title_ar": "الزيادات",
+      "author": "Muḥammad b. al-Ḥasan al-Shaybānī",
+      "author_death_ah": 189,
+      "author_death_ce": 805,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "foundational law corpus",
+      "source_ids": [
+        "hf-src-general"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 189 AH / 805 CE",
+      "timeline_ce": 805,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_shaybani_jami_kabir",
+      "title": "al-Jāmiʿ al-kabīr",
+      "title_ar": "الجامع الكبير",
+      "author": "Muḥammad b. al-Ḥasan al-Shaybānī",
+      "author_death_ah": 189,
+      "author_death_ce": 805,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "foundational law corpus",
+      "source_ids": [
+        "hf-src-general"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 189 AH / 805 CE",
+      "timeline_ce": 805,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_shaybani_jami_saghir",
+      "title": "al-Jāmiʿ al-ṣaghīr",
+      "title_ar": "الجامع الصغير",
+      "author": "Muḥammad b. al-Ḥasan al-Shaybānī",
+      "author_death_ah": 189,
+      "author_death_ce": 805,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "foundational law corpus",
+      "source_ids": [
+        "hf-src-general"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 189 AH / 805 CE",
+      "timeline_ce": 805,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_shaybani_siyar_kabir",
+      "title": "al-Siyar al-kabīr",
+      "title_ar": "السير الكبير",
+      "author": "Muḥammad b. al-Ḥasan al-Shaybānī",
+      "author_death_ah": 189,
+      "author_death_ce": 805,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "international law",
+      "source_ids": [
+        "hf-src-general"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 189 AH / 805 CE",
+      "timeline_ce": 805,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_shaybani_siyar_saghir",
+      "title": "al-Siyar al-ṣaghīr",
+      "title_ar": "السير الصغير",
+      "author": "Muḥammad b. al-Ḥasan al-Shaybānī",
+      "author_death_ah": 189,
+      "author_death_ce": 805,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "international law",
+      "source_ids": [
+        "hf-src-general"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 189 AH / 805 CE",
+      "timeline_ce": 805,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_shaybani_hujja",
+      "title": "al-Ḥujja ʿalā ahl al-Madīna",
+      "title_ar": "الحجة على أهل المدينة",
+      "author": "Muḥammad b. al-Ḥasan al-Shaybānī",
+      "author_death_ah": 189,
+      "author_death_ce": 805,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "comparative law",
+      "source_ids": [
+        "hf-src-general"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 189 AH / 805 CE",
+      "timeline_ce": 805,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_khassaf_adab_qadi",
+      "title": "Adab al-qāḍī",
+      "title_ar": "أدب القاضي",
+      "author": "Abū Bakr al-Khaṣṣāf",
+      "author_death_ah": 261,
+      "author_death_ce": 875,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "judicial procedure",
+      "source_ids": [
+        "hf-src-khassaf"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 261 AH / 875 CE",
+      "timeline_ce": 875,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_khassaf_awqaf",
+      "title": "Aḥkām al-awqāf",
+      "title_ar": "أحكام الأوقاف",
+      "author": "Abū Bakr al-Khaṣṣāf",
+      "author_death_ah": 261,
+      "author_death_ce": 875,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "endowment law",
+      "source_ids": [
+        "hf-src-khassaf"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 261 AH / 875 CE",
+      "timeline_ce": 875,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_khassaf_hiyal",
+      "title": "Kitāb al-Ḥiyal",
+      "title_ar": "كتاب الحيل",
+      "author": "Abū Bakr al-Khaṣṣāf",
+      "author_death_ah": 261,
+      "author_death_ce": 875,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "legal devices",
+      "source_ids": [
+        "hf-src-khassaf"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 261 AH / 875 CE",
+      "timeline_ce": 875,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_khassaf_nafaqat",
+      "title": "Kitāb al-Nafaqāt",
+      "title_ar": "كتاب النفقات",
+      "author": "Abū Bakr al-Khaṣṣāf",
+      "author_death_ah": 261,
+      "author_death_ce": 875,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "maintenance law",
+      "source_ids": [
+        "hf-src-khassaf"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 261 AH / 875 CE",
+      "timeline_ce": 875,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_khassaf_rida",
+      "title": "Kitāb al-Riḍāʿ",
+      "title_ar": "كتاب الرضاع",
+      "author": "Abū Bakr al-Khaṣṣāf",
+      "author_death_ah": 261,
+      "author_death_ce": 875,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "family law",
+      "source_ids": [
+        "hf-src-khassaf"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 261 AH / 875 CE",
+      "timeline_ce": 875,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_tahawi_mukhtasar",
+      "title": "Mukhtaṣar al-Ṭaḥāwī",
+      "title_ar": "مختصر الطحاوي",
+      "author": "Abū Jaʿfar al-Ṭaḥāwī",
+      "author_death_ah": 321,
+      "author_death_ce": 933,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "mukhtasar",
+      "source_ids": [
+        "hf-src-tahawi"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 321 AH / 933 CE",
+      "timeline_ce": 933,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_tahawi_ikhtilaf",
+      "title": "Ikhtilāf al-ʿulamāʾ",
+      "title_ar": "اختلاف العلماء",
+      "author": "Abū Jaʿfar al-Ṭaḥāwī",
+      "author_death_ah": 321,
+      "author_death_ce": 933,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "comparative law",
+      "source_ids": [
+        "hf-src-tahawi",
+        "hf-src-general"
+      ],
+      "notes": "Original no longer extant in full; al-Jaṣṣāṣ’s abridgment is a distinct surviving work. Do not merge them.",
+      "date_label": "d. 321 AH / 933 CE",
+      "timeline_ce": 933,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_tahawi_shurut_kabir",
+      "title": "al-Shurūṭ al-kabīr",
+      "title_ar": "الشروط الكبير",
+      "author": "Abū Jaʿfar al-Ṭaḥāwī",
+      "author_death_ah": 321,
+      "author_death_ce": 933,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "legal formularies",
+      "source_ids": [
+        "hf-src-tahawi"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 321 AH / 933 CE",
+      "timeline_ce": 933,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_tahawi_shurut_saghir",
+      "title": "al-Shurūṭ al-ṣaghīr",
+      "title_ar": "الشروط الصغير",
+      "author": "Abū Jaʿfar al-Ṭaḥāwī",
+      "author_death_ah": 321,
+      "author_death_ce": 933,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "legal formularies",
+      "source_ids": [
+        "hf-src-tahawi"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 321 AH / 933 CE",
+      "timeline_ce": 933,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_karkhi_mukhtasar",
+      "title": "Mukhtaṣar al-Karkhī",
+      "title_ar": "مختصر الكرخي",
+      "author": "Abū al-Ḥasan al-Karkhī",
+      "author_death_ah": 340,
+      "author_death_ce": 952,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "mukhtasar",
+      "source_ids": [
+        "hf-src-wiqaya",
+        "hf-src-quduri",
+        "hf-src-karkhi"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 340 AH / 952 CE",
+      "timeline_ce": 952,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_jassas_sharh_tahawi",
+      "title": "Sharḥ Mukhtaṣar al-Ṭaḥāwī",
+      "title_ar": "شرح مختصر الطحاوي",
+      "author": "Abū Bakr al-Jaṣṣāṣ",
+      "author_death_ah": 370,
+      "author_death_ce": 981,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-tahawi",
+        "hf-src-jassas"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 370 AH / 981 CE",
+      "timeline_ce": 981,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_jassas_mukhtasar_ikhtilaf",
+      "title": "Mukhtaṣar Ikhtilāf al-ʿulamāʾ",
+      "title_ar": "مختصر اختلاف العلماء",
+      "author": "Abū Bakr al-Jaṣṣāṣ",
+      "author_death_ah": 370,
+      "author_death_ce": 981,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "abridgment",
+      "source_ids": [
+        "hf-src-general",
+        "hf-src-jassas"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 370 AH / 981 CE",
+      "timeline_ce": 981,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_jassas_adab_qadi",
+      "title": "Sharḥ Adab al-qāḍī",
+      "title_ar": "شرح أدب القاضي",
+      "author": "Abū Bakr al-Jaṣṣāṣ",
+      "author_death_ah": 370,
+      "author_death_ce": 981,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-khassaf",
+        "hf-src-jassas"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 370 AH / 981 CE",
+      "timeline_ce": 981,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_hakim_kafi",
+      "title": "al-Kāfī",
+      "title_ar": "الكافي",
+      "author": "al-Ḥākim al-Shahīd",
+      "author_death_ah": 334,
+      "author_death_ce": 945,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "compendium",
+      "source_ids": [
+        "hf-src-fiqh"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 334 AH / 945 CE",
+      "timeline_ce": 945,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_sarakhsi_mabsut",
+      "title": "al-Mabsūṭ",
+      "title_ar": "المبسوط",
+      "author": "Shams al-Aʾimma al-Sarakhsī",
+      "author_death_ah": 483,
+      "author_death_ce": 1090,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-fiqh"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 483 AH / 1090 CE",
+      "timeline_ce": 1090,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_sarakhsi_siyar",
+      "title": "Sharḥ al-Siyar al-kabīr",
+      "title_ar": "شرح السير الكبير",
+      "author": "Shams al-Aʾimma al-Sarakhsī",
+      "author_death_ah": 483,
+      "author_death_ce": 1090,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-fiqh"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 483 AH / 1090 CE",
+      "timeline_ce": 1090,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_quduri_mukhtasar",
+      "title": "Mukhtaṣar al-Qudūrī",
+      "title_ar": "مختصر القدوري",
+      "author": "Abū al-Ḥusayn al-Qudūrī",
+      "author_death_ah": 428,
+      "author_death_ce": 1037,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "mukhtasar",
+      "source_ids": [
+        "hf-src-quduri"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 428 AH / 1037 CE",
+      "timeline_ce": 1037,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_quduri_tajrid",
+      "title": "al-Tajrīd",
+      "title_ar": "التجريد",
+      "author": "Abū al-Ḥusayn al-Qudūrī",
+      "author_death_ah": 428,
+      "author_death_ce": 1037,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "comparative law",
+      "source_ids": [
+        "hf-src-quduri"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 428 AH / 1037 CE",
+      "timeline_ce": 1037,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_quduri_taqrib",
+      "title": "al-Taqrīb",
+      "title_ar": "التقريب",
+      "author": "Abū al-Ḥusayn al-Qudūrī",
+      "author_death_ah": 428,
+      "author_death_ce": 1037,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "comparative law",
+      "source_ids": [
+        "hf-src-quduri"
+      ],
+      "notes": "Two successive authorial recensions are reported; counted as one work here, not two.",
+      "date_label": "d. 428 AH / 1037 CE",
+      "timeline_ce": 1037,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_quduri_sharh_karkhi",
+      "title": "Sharḥ Mukhtaṣar al-Karkhī",
+      "title_ar": "شرح مختصر الكرخي",
+      "author": "Abū al-Ḥusayn al-Qudūrī",
+      "author_death_ah": 428,
+      "author_death_ce": 1037,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-quduri"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 428 AH / 1037 CE",
+      "timeline_ce": 1037,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_quduri_adab_qadi",
+      "title": "Sharḥ Adab al-qāḍī",
+      "title_ar": "شرح أدب القاضي",
+      "author": "Abū al-Ḥusayn al-Qudūrī",
+      "author_death_ah": 428,
+      "author_death_ce": 1037,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-quduri"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 428 AH / 1037 CE",
+      "timeline_ce": 1037,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_haddad_jawhara",
+      "title": "al-Jawhara al-nayyira",
+      "title_ar": "الجوهرة النيرة",
+      "author": "Abū Bakr al-Ḥaddād",
+      "author_death_ah": 800,
+      "author_death_ce": 1398,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-fiqh",
+        "hf-src-haddad"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification. CE year follows the full biographical entry’s 25 January 1398 date; short cross-references sometimes print 1397.",
+      "date_label": "d. 800 AH / 1398 CE",
+      "timeline_ce": 1398,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_haddad_siraj",
+      "title": "al-Sirāj al-wahhāj",
+      "title_ar": "السراج الوهاج",
+      "author": "Abū Bakr al-Ḥaddād",
+      "author_death_ah": 800,
+      "author_death_ce": 1398,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-fiqh",
+        "hf-src-haddad"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification. CE year follows the full biographical entry’s 25 January 1398 date; short cross-references sometimes print 1397.",
+      "date_label": "d. 800 AH / 1398 CE",
+      "timeline_ce": 1398,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_maydani_lubab",
+      "title": "al-Lubāb fī sharḥ al-Kitāb",
+      "title_ar": "اللباب في شرح الكتاب",
+      "author": "ʿAbd al-Ghanī al-Ghunaymī al-Maydānī",
+      "author_death_ah": 1298,
+      "author_death_ce": 1881,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-fiqh",
+        "hf-src-maydani"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 1298 AH / 1881 CE",
+      "timeline_ce": 1881,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_samarqandi_tuhfa",
+      "title": "Tuḥfat al-fuqahāʾ",
+      "title_ar": "تحفة الفقهاء",
+      "author": "ʿAlāʾ al-Dīn al-Samarqandī",
+      "author_death_ah": 539,
+      "author_death_ce": 1144,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "law compendium",
+      "source_ids": [
+        "hf-src-fiqh"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 539 AH / 1144 CE",
+      "timeline_ce": 1144,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_kasani_badai",
+      "title": "Badāʾiʿ al-ṣanāʾiʿ fī tartīb al-sharāʾiʿ",
+      "title_ar": "بدائع الصنائع في ترتيب الشرائع",
+      "author": "ʿAlāʾ al-Dīn al-Kāsānī",
+      "author_death_ah": 587,
+      "author_death_ce": 1191,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "law compendium",
+      "source_ids": [
+        "hf-src-fiqh"
+      ],
+      "notes": "Bibliographies call this a commentary on Tuḥfat al-fuqahāʾ, but the scholarly reference describes substantial reorganisation and independent treatment. No unqualified commentary edge added.",
+      "date_label": "d. 587 AH / 1191 CE",
+      "timeline_ce": 1191,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_marghinani_bidaya",
+      "title": "Bidāyat al-mubtadī",
+      "title_ar": "بداية المبتدي",
+      "author": "Burhān al-Dīn al-Marghīnānī",
+      "author_death_ah": 593,
+      "author_death_ce": 1197,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "mukhtasar",
+      "source_ids": [
+        "hf-src-hidaya"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 593 AH / 1197 CE",
+      "timeline_ce": 1197,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_marghinani_hidaya",
+      "title": "al-Hidāya",
+      "title_ar": "الهداية",
+      "author": "Burhān al-Dīn al-Marghīnānī",
+      "author_death_ah": 593,
+      "author_death_ce": 1197,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-hidaya"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 593 AH / 1197 CE",
+      "timeline_ce": 1197,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_marghinani_kifaya_muntahi",
+      "title": "Kifāyat al-muntahī",
+      "title_ar": "كفاية المنتهي",
+      "author": "Burhān al-Dīn al-Marghīnānī",
+      "author_death_ah": 593,
+      "author_death_ce": 1197,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-hidaya"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 593 AH / 1197 CE",
+      "timeline_ce": 1197,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_khabbazi_kifaya",
+      "title": "al-Kifāya fī sharḥ al-Hidāya",
+      "title_ar": "الكفاية في شرح الهداية",
+      "author": "Jalāl al-Dīn al-Khabbāzī",
+      "author_death_ah": 691,
+      "author_death_ce": 1292,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-hidaya"
+      ],
+      "notes": "Distinct from al-Kurlānī’s commentary and Ibn al-Turkumānī’s similarly titled abridgment.",
+      "date_label": "d. 691 AH / 1292 CE",
+      "timeline_ce": 1292,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_sighnaqi_nihaya",
+      "title": "al-Nihāya fī sharḥ al-Hidāya",
+      "title_ar": "النهاية في شرح الهداية",
+      "author": "Ḥusām al-Dīn al-Sighnāqī",
+      "author_death_ah": 711,
+      "author_death_ce": null,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-hidaya",
+        "hf-src-usul-nihaya"
+      ],
+      "notes": "Completed 700 AH / 1301 CE. The author’s death is not the composition date.",
+      "composition_ah": 700,
+      "composition_ce": 1301,
+      "date_label": "d. 711 AH",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_tajsharia_nihaya",
+      "title": "Nihāyat al-kifāya li-dirāyat al-Hidāya",
+      "title_ar": "نهاية الكفاية لدراية الهداية",
+      "author": "Tāj al-Sharīʿa ʿUmar b. ʿUbayd Allāh",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "date_basis": "not established in this research pass",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-hidaya"
+      ],
+      "notes": "Author Tāj al-Sharīʿa ʿUmar must not be confused with Burhān al-Sharīʿa Maḥmūd, author of al-Wiqāya.",
+      "date_label": "Death date not established",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_kaki_miraj",
+      "title": "Miʿrāj al-dirāya ilā sharḥ al-Hidāya",
+      "title_ar": "معراج الدراية إلى شرح الهداية",
+      "author": "Qiwām al-Dīn al-Kākī",
+      "author_death_ah": 749,
+      "author_death_ce": null,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-hidaya",
+        "hf-src-usul-nihaya"
+      ],
+      "notes": "Completed 745 AH / 1344 CE. The author’s death is not the composition date.",
+      "composition_ah": 745,
+      "composition_ce": 1344,
+      "date_label": "d. 749 AH",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_itqani_ghaya",
+      "title": "Ghāyat al-bayān",
+      "title_ar": "غاية البيان",
+      "author": "Amīr Kātib al-Itqānī",
+      "author_death_ah": 758,
+      "author_death_ce": 1357,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-hidaya",
+        "hf-src-itqani"
+      ],
+      "notes": "Completed 747 AH / 1346 CE. The author’s death is not the composition date.",
+      "composition_ah": 747,
+      "composition_ce": 1346,
+      "date_label": "d. 758 AH / 1357 CE",
+      "timeline_ce": 1357,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_qurlani_kifaya",
+      "title": "al-Kifāya fī sharḥ al-Hidāya",
+      "title_ar": "الكفاية في شرح الهداية",
+      "author": "Jalāl al-Dīn al-Kurlānī",
+      "author_death_ah": 767,
+      "author_death_ce": 1366,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-hidaya",
+        "hf-src-usul-nihaya"
+      ],
+      "notes": "Distinct from al-Khabbāzī’s commentary and Ibn al-Turkumānī’s similarly titled abridgment.",
+      "date_label": "d. 767 AH / 1366 CE",
+      "timeline_ce": 1366,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_babarti_inaya",
+      "title": "al-ʿInāya sharḥ al-Hidāya",
+      "title_ar": "العناية شرح الهداية",
+      "author": "Akmal al-Dīn al-Bābartī",
+      "author_death_ah": 786,
+      "author_death_ce": 1384,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-hidaya"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 786 AH / 1384 CE",
+      "timeline_ce": 1384,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_ayni_binaya",
+      "title": "al-Bināya sharḥ al-Hidāya",
+      "title_ar": "البناية شرح الهداية",
+      "author": "Badr al-Dīn al-ʿAynī",
+      "author_death_ah": 855,
+      "author_death_ce": 1451,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-hidaya",
+        "hf-src-kanz"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 855 AH / 1451 CE",
+      "timeline_ce": 1451,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_ibn_humam_fath",
+      "title": "Fatḥ al-qadīr",
+      "title_ar": "فتح القدير",
+      "author": "Kamāl al-Dīn Ibn al-Humām",
+      "author_death_ah": 861,
+      "author_death_ce": 1457,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-hidaya"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 861 AH / 1457 CE",
+      "timeline_ce": 1457,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_qadizade_nataij",
+      "title": "Natāʾij al-afkār fī kashf al-rumūz wa-l-asrār",
+      "title_ar": "نتائج الأفكار في كشف الرموز والأسرار",
+      "author": "Qāḍīzāda Aḥmad Shams al-Dīn",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "date_basis": "not established in this research pass",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "completion",
+      "source_ids": [
+        "hf-src-hidaya"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "Death date not established",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_sadi_hashiya_inaya",
+      "title": "Ḥāshiya ʿalā al-ʿInāya",
+      "title_ar": "حاشية على العناية",
+      "author": "Saʿdī Çelebi",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "date_basis": "not established in this research pass",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "hf-src-hidaya"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "Death date not established",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_mawsili_mukhtar",
+      "title": "al-Mukhtār li-l-fatwā",
+      "title_ar": "المختار للفتوى",
+      "author": "ʿAbd Allāh b. Maḥmūd al-Mawṣilī",
+      "author_death_ah": 683,
+      "author_death_ce": 1284,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "mukhtasar",
+      "source_ids": [
+        "hf-src-fiqh"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 683 AH / 1284 CE",
+      "timeline_ce": 1284,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_mawsili_ikhtiyar",
+      "title": "al-Ikhtiyār li-taʿlīl al-Mukhtār",
+      "title_ar": "الاختيار لتعليل المختار",
+      "author": "ʿAbd Allāh b. Maḥmūd al-Mawṣilī",
+      "author_death_ah": 683,
+      "author_death_ce": 1284,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-fiqh"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 683 AH / 1284 CE",
+      "timeline_ce": 1284,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_nasafi_wafi",
+      "title": "al-Wāfī",
+      "title_ar": "الوافي",
+      "author": "Abū al-Barakāt al-Nasafī",
+      "author_death_ah": 710,
+      "author_death_ce": 1310,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "law compendium",
+      "source_ids": [
+        "hf-src-kanz"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 710 AH / 1310 CE",
+      "timeline_ce": 1310,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_nasafi_kanz",
+      "title": "Kanz al-daqāʾiq",
+      "title_ar": "كنز الدقائق",
+      "author": "Abū al-Barakāt al-Nasafī",
+      "author_death_ah": 710,
+      "author_death_ce": 1310,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "abridgment",
+      "source_ids": [
+        "hf-src-kanz"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 710 AH / 1310 CE",
+      "timeline_ce": 1310,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_nasafi_kafi",
+      "title": "al-Kāfī fī sharḥ al-Wāfī",
+      "title_ar": "الكافي في شرح الوافي",
+      "author": "Abū al-Barakāt al-Nasafī",
+      "author_death_ah": 710,
+      "author_death_ce": 1310,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-general"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 710 AH / 1310 CE",
+      "timeline_ce": 1310,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_zaylai_tabyin",
+      "title": "Tabyīn al-ḥaqāʾiq sharḥ Kanz al-daqāʾiq",
+      "title_ar": "تبيين الحقائق شرح كنز الدقائق",
+      "author": "ʿUthmān b. ʿAlī al-Zaylaʿī",
+      "author_death_ah": 743,
+      "author_death_ce": 1343,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-kanz"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 743 AH / 1343 CE",
+      "timeline_ce": 1343,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_shalabi_hashiya_tabyin",
+      "title": "Ḥāshiya ʿalā Tabyīn al-ḥaqāʾiq",
+      "title_ar": "حاشية على تبيين الحقائق",
+      "author": "Shihāb al-Dīn Aḥmad al-Shalabī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "date_basis": "not established in this research pass",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "hf-src-kanz"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "Death date not established",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_ayni_ramz",
+      "title": "Ramz al-ḥaqāʾiq",
+      "title_ar": "رمز الحقائق",
+      "author": "Badr al-Dīn al-ʿAynī",
+      "author_death_ah": 855,
+      "author_death_ce": 1451,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-kanz"
+      ],
+      "notes": "Distinct from Sirāj al-Dīn Ibn al-Shiḥna’s work of the same title.",
+      "date_label": "d. 855 AH / 1451 CE",
+      "timeline_ce": 1451,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_miskin_sharh_kanz",
+      "title": "Sharḥ Kanz al-daqāʾiq",
+      "title_ar": "شرح كنز الدقائق",
+      "author": "Mullā Miskīn",
+      "author_death_ah": 954,
+      "author_death_ce": 1547,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-kanz"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 954 AH / 1547 CE",
+      "timeline_ce": 1547,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_zayn_nujaym_bahr",
+      "title": "al-Baḥr al-rāʾiq sharḥ Kanz al-daqāʾiq",
+      "title_ar": "البحر الرائق شرح كنز الدقائق",
+      "author": "Zayn al-Dīn Ibn Nujaym",
+      "author_death_ah": 970,
+      "author_death_ce": 1563,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-kanz"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 970 AH / 1563 CE",
+      "timeline_ce": 1563,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_turi_takmila_bahr",
+      "title": "Takmilat al-Baḥr al-rāʾiq",
+      "title_ar": "تكملة البحر الرائق",
+      "author": "Muḥammad b. Ḥusayn al-Ṭūrī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "date_basis": "not established in this research pass",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "completion",
+      "source_ids": [
+        "hf-src-kanz"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "Death date not established",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_ibnabidin_minha",
+      "title": "Minḥat al-khāliq ʿalā al-Baḥr al-rāʾiq",
+      "title_ar": "منحة الخالق على البحر الرائق",
+      "author": "Muḥammad Amīn Ibn ʿĀbidīn",
+      "author_death_ah": 1252,
+      "author_death_ce": 1836,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "hf-src-ibnabidin"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 1252 AH / 1836 CE",
+      "timeline_ce": 1836,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_siraj_nujaym_nahr",
+      "title": "al-Nahr al-fāʾiq sharḥ Kanz al-daqāʾiq",
+      "title_ar": "النهر الفائق شرح كنز الدقائق",
+      "author": "Sirāj al-Dīn Ibn Nujaym",
+      "author_death_ah": 1005,
+      "author_death_ce": 1596,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-kanz",
+        "hf-src-usul-nahr"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 1005 AH / 1596 CE",
+      "timeline_ce": 1596,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_ramli_muzhir",
+      "title": "Muẓhir al-ḥaqāʾiq al-khafiyya",
+      "title_ar": "مظهر الحقائق الخفية",
+      "author": "Khayr al-Dīn al-Ramlī",
+      "author_death_ah": 1081,
+      "author_death_ce": 1671,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "hf-src-kanz"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 1081 AH / 1671 CE",
+      "timeline_ce": 1671,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_ibn_saati_majma",
+      "title": "Majmaʿ al-baḥrayn wa-multaqā al-nayyirayn",
+      "title_ar": "مجمع البحرين وملتقى النيرين",
+      "author": "Muẓaffar al-Dīn Ibn al-Sāʿātī",
+      "author_death_ah": 694,
+      "author_death_ce": 1295,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "law compendium",
+      "source_ids": [
+        "hf-src-fiqh"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 694 AH / 1295 CE",
+      "timeline_ce": 1295,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_qunawi_durar_bihar",
+      "title": "Durar al-biḥār",
+      "title_ar": "درر البحار",
+      "author": "Shams al-Dīn al-Qūnawī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "date_basis": "not established in this research pass",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "comparative law",
+      "source_ids": [
+        "hf-src-general"
+      ],
+      "notes": "Author Shams al-Dīn al-Qūnawī; not the Akbarian Ṣadr al-Dīn al-Qūnawī.",
+      "date_label": "Death date not established",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_burhan_wiqaya",
+      "title": "Wiqāyat al-riwāya fī masāʾil al-Hidāya",
+      "title_ar": "وقاية الرواية في مسائل الهداية",
+      "author": "Burhān al-Sharīʿa Maḥmūd al-Maḥbūbī",
+      "author_death_ah": 730,
+      "author_death_ce": null,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "abridgment",
+      "source_ids": [
+        "hf-src-wiqaya"
+      ],
+      "notes": "Authorship follows Murteza Bedir’s source-critical article: Burhān al-Sharīʿa Maḥmūd, not his brother Tāj al-Sharīʿa ʿUmar. Reported death 730 AH / 1329–30 CE.",
+      "date_label": "d. 730 AH / 1329–1330 CE",
+      "timeline_ce": 1329.5,
+      "timeline_basis": "midpoint of reported two-year death range",
+      "timeline_is_proxy": true,
+      "date_note": "1329.5 is an approximate chart anchor for the reported 1329–1330 CE range, not an exact death or composition date.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_sadr_sharh_wiqaya",
+      "title": "Sharḥ al-Wiqāya",
+      "title_ar": "شرح الوقاية",
+      "author": "Ṣadr al-Sharīʿa ʿUbayd Allāh b. Masʿūd",
+      "author_death_ah": 747,
+      "author_death_ce": 1346,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-wiqaya"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 747 AH / 1346 CE",
+      "timeline_ce": 1346,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_sadr_nuqaya",
+      "title": "al-Nuqāya mukhtaṣar al-Wiqāya",
+      "title_ar": "النقاية مختصر الوقاية",
+      "author": "Ṣadr al-Sharīʿa ʿUbayd Allāh b. Masʿūd",
+      "author_death_ah": 747,
+      "author_death_ce": 1346,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "abridgment",
+      "source_ids": [
+        "hf-src-wiqaya"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 747 AH / 1346 CE",
+      "timeline_ce": 1346,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_kuhistani_jami_rumuz",
+      "title": "Jāmiʿ al-rumūz",
+      "title_ar": "جامع الرموز",
+      "author": "Shams al-Dīn al-Quhistānī",
+      "author_death_ah": 962,
+      "author_death_ce": 1555,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-general",
+        "hf-src-kuhistani"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification. Death follows the source’s preferred 962/1555; the article records alternative dates.",
+      "composition_ah": 941,
+      "composition_ce": 1535,
+      "composition_note": "Completed 8 Dhū al-Ḥijja 941 / 10 June 1535.",
+      "date_label": "d. 962 AH / 1555 CE",
+      "timeline_ce": 1555,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_laknawi_umda",
+      "title": "ʿUmdat al-riʿāya ʿalā Sharḥ al-Wiqāya",
+      "title_ar": "عمدة الرعاية على شرح الوقاية",
+      "author": "ʿAbd al-Ḥayy al-Laknawī",
+      "author_death_ah": 1304,
+      "author_death_ce": 1886,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "hf-src-wiqaya",
+        "hf-src-hanafi-atlas"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 1304 AH / 1886 CE",
+      "timeline_ce": 1886,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_laknawi_siaya",
+      "title": "al-Siʿāya fī kashf mā fī Sharḥ al-Wiqāya",
+      "title_ar": "السعاية في كشف ما في شرح الوقاية",
+      "author": "ʿAbd al-Ḥayy al-Laknawī",
+      "author_death_ah": 1304,
+      "author_death_ce": 1886,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "hf-src-wiqaya",
+        "hf-src-hanafi-atlas"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 1304 AH / 1886 CE",
+      "timeline_ce": 1886,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_kemalpasa_islah",
+      "title": "Iṣlāḥ al-Wiqāya",
+      "title_ar": "إصلاح الوقاية",
+      "author": "Ibn Kamāl Pasha",
+      "author_death_ah": 940,
+      "author_death_ce": 1534,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "revision",
+      "source_ids": [
+        "hf-src-wiqaya"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 940 AH / 1534 CE",
+      "timeline_ce": 1534,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_kemalpasa_idah",
+      "title": "Īḍāḥ al-Iṣlāḥ",
+      "title_ar": "إيضاح الإصلاح",
+      "author": "Ibn Kamāl Pasha",
+      "author_death_ah": 940,
+      "author_death_ce": 1534,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-wiqaya"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 940 AH / 1534 CE",
+      "timeline_ce": 1534,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_mullahusraw_ghurar",
+      "title": "Ghurar al-aḥkām",
+      "title_ar": "غرر الأحكام",
+      "author": "Mullā Khusraw",
+      "author_death_ah": 885,
+      "author_death_ce": 1480,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "mukhtasar",
+      "source_ids": [
+        "hf-src-ghurar"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 885 AH / 1480 CE",
+      "timeline_ce": 1480,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_mullahusraw_durar",
+      "title": "Durar al-ḥukkām fī sharḥ Ghurar al-aḥkām",
+      "title_ar": "درر الحكام في شرح غرر الأحكام",
+      "author": "Mullā Khusraw",
+      "author_death_ah": 885,
+      "author_death_ce": 1480,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-ghurar"
+      ],
+      "notes": "Mullā Khusraw’s commentary on Ghurar; distinct from ʿAlī Ḥaydar’s later Mecelle commentary of the same short title.",
+      "date_label": "d. 885 AH / 1480 CE",
+      "timeline_ce": 1480,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_halabi_multaqa",
+      "title": "Multaqā al-abḥur",
+      "title_ar": "ملتقى الأبحر",
+      "author": "Ibrāhīm al-Ḥalabī",
+      "author_death_ah": 956,
+      "author_death_ce": 1549,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "law compendium",
+      "source_ids": [
+        "hf-src-multaqa"
+      ],
+      "notes": "Synthesis of several earlier legal manuals; not an abridgment of al-Hidāya alone. Completed 923 AH / 1517 CE.",
+      "composition_ah": 923,
+      "composition_ce": 1517,
+      "date_label": "d. 956 AH / 1549 CE",
+      "timeline_ce": 1549,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_shaykhizada_majma",
+      "title": "Majmaʿ al-anhur fī sharḥ Multaqā al-abḥur",
+      "title_ar": "مجمع الأنهر في شرح ملتقى الأبحر",
+      "author": "ʿAbd al-Raḥmān Shaykhīzāda",
+      "author_death_ah": 1078,
+      "author_death_ce": 1667,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-multaqa",
+        "hf-src-shaykhizada"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "composition_ah": 1077,
+      "composition_ce": 1666,
+      "composition_note": "Second and final volume completed 1077/1666; first volume 1070/1660.",
+      "date_label": "d. 1078 AH / 1667 CE",
+      "timeline_ce": 1667,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_haskafi_muntaqa",
+      "title": "al-Durr al-muntaqā fī sharḥ al-Multaqā",
+      "title_ar": "الدر المنتقى في شرح الملتقى",
+      "author": "ʿAlāʾ al-Dīn al-Ḥaṣkafī",
+      "author_death_ah": 1088,
+      "author_death_ce": 1677,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-multaqa",
+        "hf-src-haskafi"
+      ],
+      "notes": "Commentary on Multaqā; distinct from al-Durr al-mukhtār, the commentary on Tanwīr.",
+      "composition_ah": 1080,
+      "composition_ce": 1669,
+      "composition_note": "Completion date reported by the author biography.",
+      "date_label": "d. 1088 AH / 1677 CE",
+      "timeline_ce": 1677,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_mawqufati_multaqa",
+      "title": "Sharḥ Multaqā al-abḥur (Mevkūfāt)",
+      "title_ar": "شرح ملتقى الأبحر",
+      "author": "Muḥammad al-Mawqūfātī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "date_basis": "not established in this research pass",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-multaqa"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "Death date not established",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_baqani_majra",
+      "title": "Majrā al-anhur ʿalā Multaqā al-abḥur",
+      "title_ar": "مجرى الأنهر على ملتقى الأبحر",
+      "author": "Nūr al-Dīn Maḥmūd al-Bāqānī",
+      "author_death_ah": 1003,
+      "author_death_ce": 1594,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-multaqa"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 1003 AH / 1594 CE",
+      "timeline_ce": 1594,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_sivasi_faraid_multaqa",
+      "title": "Farāʾid Multaqā al-abḥur",
+      "title_ar": "فرائد ملتقى الأبحر",
+      "author": "Ismāʿīl b. Sinān al-Dīn al-Sīvāsī",
+      "author_death_ah": 1047,
+      "author_death_ce": 1637,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-multaqa"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 1047 AH / 1637 CE",
+      "timeline_ce": 1637,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_timurtashi_tanwir",
+      "title": "Tanwīr al-abṣār wa-jāmiʿ al-biḥār",
+      "title_ar": "تنوير الأبصار وجامع البحار",
+      "author": "Shams al-Dīn Muḥammad al-Timurtāshī",
+      "author_death_ah": 1006,
+      "author_death_ce": 1598,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "mukhtasar",
+      "source_ids": [
+        "hf-src-general"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 1006 AH / 1598 CE",
+      "timeline_ce": 1598,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_haskafi_durr",
+      "title": "al-Durr al-mukhtār sharḥ Tanwīr al-abṣār",
+      "title_ar": "الدر المختار شرح تنوير الأبصار",
+      "author": "ʿAlāʾ al-Dīn al-Ḥaṣkafī",
+      "author_death_ah": 1088,
+      "author_death_ce": 1677,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-general",
+        "hf-src-haskafi"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 1088 AH / 1677 CE",
+      "timeline_ce": 1677,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_tahtawi_durr",
+      "title": "Ḥāshiya ʿalā al-Durr al-mukhtār",
+      "title_ar": "حاشية على الدر المختار",
+      "author": "Aḥmad al-Ṭaḥṭāwī",
+      "author_death_ah": 1231,
+      "author_death_ce": 1816,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "hf-src-general",
+        "hf-src-tahtawi"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 1231 AH / 1816 CE",
+      "timeline_ce": 1816,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_ibnabidin_radd",
+      "title": "Radd al-muḥtār ʿalā al-Durr al-mukhtār",
+      "title_ar": "رد المحتار على الدر المختار",
+      "author": "Muḥammad Amīn Ibn ʿĀbidīn",
+      "author_death_ah": 1252,
+      "author_death_ce": 1836,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "hf-src-ibnabidin"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 1252 AH / 1836 CE",
+      "timeline_ce": 1836,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_ibnabidinzada_qurra",
+      "title": "Qurrat ʿuyūn al-akhyār li-takmilat Radd al-muḥtār",
+      "title_ar": "قرة عيون الأخيار لتكملة رد المحتار",
+      "author": "Muḥammad ʿAlāʾ al-Dīn Ibn ʿĀbidīnzāda",
+      "author_death_ah": 1306,
+      "author_death_ce": 1889,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "completion",
+      "source_ids": [
+        "hf-src-ibnabidin",
+        "hf-src-ibnabidinzada"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 1306 AH / 1889 CE",
+      "timeline_ce": 1889,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_rafii_tahrir",
+      "title": "Taḥrīr al-mukhtār li-Radd al-muḥtār",
+      "title_ar": "تحرير المختار لرد المحتار",
+      "author": "ʿAbd al-Qādir b. Muṣṭafā al-Rāfiʿī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "date_basis": "not established in this research pass",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "hf-src-ibnabidin"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "Death date not established",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_shurunbulali_nur",
+      "title": "Nūr al-īḍāḥ wa-najāt al-arwāḥ",
+      "title_ar": "نور الإيضاح ونجاة الأرواح",
+      "author": "Ḥasan al-Shurunbulālī",
+      "author_death_ah": 1069,
+      "author_death_ce": 1659,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "worship manual",
+      "source_ids": [
+        "hf-src-shurunbulali",
+        "hf-src-usul-nur"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "composition_ah": 1032,
+      "composition_ce": 1623,
+      "date_label": "d. 1069 AH / 1659 CE",
+      "timeline_ce": 1659,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_shurunbulali_imdad",
+      "title": "Imdād al-fattāḥ sharḥ Nūr al-īḍāḥ",
+      "title_ar": "إمداد الفتاح شرح نور الإيضاح",
+      "author": "Ḥasan al-Shurunbulālī",
+      "author_death_ah": 1069,
+      "author_death_ce": 1659,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-shurunbulali"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "composition_ah": 1045,
+      "composition_ce": 1636,
+      "date_label": "d. 1069 AH / 1659 CE",
+      "timeline_ce": 1659,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_shurunbulali_maraqi",
+      "title": "Marāqī al-falāḥ",
+      "title_ar": "مراقي الفلاح",
+      "author": "Ḥasan al-Shurunbulālī",
+      "author_death_ah": 1069,
+      "author_death_ce": 1659,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "abridged commentary",
+      "source_ids": [
+        "hf-src-shurunbulali"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "composition_ah": 1054,
+      "composition_ce": 1644,
+      "date_label": "d. 1069 AH / 1659 CE",
+      "timeline_ce": 1659,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_abu_layth_nawazil",
+      "title": "al-Nawāzil",
+      "title_ar": "النوازل",
+      "author": "Abū al-Layth al-Samarqandī",
+      "author_death_ah": 373,
+      "author_death_ce": 983,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-general"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 373 AH / 983 CE",
+      "timeline_ce": 983,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_abu_layth_uyun",
+      "title": "ʿUyūn al-masāʾil",
+      "title_ar": "عيون المسائل",
+      "author": "Abū al-Layth al-Samarqandī",
+      "author_death_ah": 373,
+      "author_death_ce": 983,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-general"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 373 AH / 983 CE",
+      "timeline_ce": 983,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_natifi_waqiat",
+      "title": "al-Wāqiʿāt",
+      "title_ar": "الواقعات",
+      "author": "Abū al-ʿAbbās al-Nāṭifī",
+      "author_death_ah": 446,
+      "author_death_ce": 1054,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-natifi"
+      ],
+      "notes": "Reported historical work; survival is unestablished. The TDV entry rejects the attribution of Süleymaniye Hasan Hüsnü Paşa 345/1 because it cites later sources.",
+      "date_label": "d. 446 AH / 1054 CE",
+      "timeline_ce": 1054,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_natifi_ajnas",
+      "title": "al-Ajnās wa-l-furūq",
+      "title_ar": "الأجناس والفروق",
+      "author": "Abū al-ʿAbbās al-Nāṭifī",
+      "author_death_ah": 446,
+      "author_death_ce": 1054,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "legal distinctions",
+      "source_ids": [
+        "hf-src-natifi"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 446 AH / 1054 CE",
+      "timeline_ce": 1054,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_sughdi_nutaf",
+      "title": "al-Nutaf fī al-fatāwā",
+      "title_ar": "النتف في الفتاوى",
+      "author": "ʿAlī b. al-Ḥusayn al-Sughdī",
+      "author_death_ah": 461,
+      "author_death_ce": 1068,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-sughdi"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 461 AH / 1068 CE",
+      "timeline_ce": 1068,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_sadrshahid_fatawa_kubra",
+      "title": "al-Fatāwā al-kubrā",
+      "title_ar": "الفتاوى الكبرى",
+      "author": "Ḥusām al-Dīn ʿUmar Ṣadr al-Shahīd",
+      "author_death_ah": 536,
+      "author_death_ce": 1141,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-sadrshahid"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 536 AH / 1141 CE",
+      "timeline_ce": 1141,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_sadrshahid_fatawa_sughra",
+      "title": "al-Fatāwā al-ṣughrā",
+      "title_ar": "الفتاوى الصغرى",
+      "author": "Ḥusām al-Dīn ʿUmar Ṣadr al-Shahīd",
+      "author_death_ah": 536,
+      "author_death_ce": 1141,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-sadrshahid"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 536 AH / 1141 CE",
+      "timeline_ce": 1141,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_sadrshahid_waqiat",
+      "title": "al-Wāqiʿāt al-Ḥusāmiyya",
+      "title_ar": "الواقعات الحسامية",
+      "author": "Ḥusām al-Dīn ʿUmar Ṣadr al-Shahīd",
+      "author_death_ah": 536,
+      "author_death_ce": 1141,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-sadrshahid"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 536 AH / 1141 CE",
+      "timeline_ce": 1141,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_walwaliji_fatawa",
+      "title": "al-Fatāwā al-Walwālijiyya",
+      "title_ar": "الفتاوى الولوالجية",
+      "author": "Abū al-Fatḥ ʿAbd al-Rashīd b. Abī Ḥanīfa al-Walwālijī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "date_basis": "author death lower bound; not an exact year or composition date",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-general",
+        "hf-src-walwaliji"
+      ],
+      "notes": "Authorship follows the source’s preferred identification. Some manuscripts and later bibliographies name Isḥāq b. Abī Bakr (d.710/1310); the TDV article explains the conflicting attribution.",
+      "author_death_after_ah": 540,
+      "author_death_after_ce": 1146,
+      "date_label": "d. after 540 AH / 1146 CE",
+      "timeline_ce": 1146,
+      "timeline_basis": "lower boundary, death after 1146",
+      "timeline_is_proxy": true,
+      "date_note": "1146 is the lower boundary of the stated death range, used only as a display anchor; the exact death year is unknown.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "disputed; preferred attribution retained"
+    },
+    {
+      "id": "hf_qadikhan_fatawa",
+      "title": "Fatāwā Qāḍīkhān (al-Khāniyya)",
+      "title_ar": "فتاوى قاضي خان",
+      "author": "Fakhr al-Dīn al-Ḥasan b. Manṣūr Qāḍīkhān",
+      "author_death_ah": 592,
+      "author_death_ce": 1196,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-qadikhan",
+        "hf-src-usul-ziyadat"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 592 AH / 1196 CE",
+      "timeline_ce": 1196,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_qadikhan_sharh_ziyadat",
+      "title": "Sharḥ al-Ziyādāt",
+      "title_ar": "شرح الزيادات",
+      "author": "Fakhr al-Dīn al-Ḥasan b. Manṣūr Qāḍīkhān",
+      "author_death_ah": 592,
+      "author_death_ce": 1196,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-qadikhan",
+        "hf-src-usul-ziyadat"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 592 AH / 1196 CE",
+      "timeline_ce": 1196,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_marghinani_mukhtarat",
+      "title": "Mukhtārāt al-nawāzil",
+      "title_ar": "مختارات النوازل",
+      "author": "Burhān al-Dīn al-Marghīnānī",
+      "author_death_ah": 593,
+      "author_death_ce": 1197,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-marghinani"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 593 AH / 1197 CE",
+      "timeline_ce": 1197,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_marghinani_tajnis",
+      "title": "al-Tajnīs wa-l-mazīd fī al-fatāwā",
+      "title_ar": "التجنيس والمزيد في الفتاوى",
+      "author": "Burhān al-Dīn al-Marghīnānī",
+      "author_death_ah": 593,
+      "author_death_ce": 1197,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-marghinani"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 593 AH / 1197 CE",
+      "timeline_ce": 1197,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_bukhari_muhit",
+      "title": "al-Muḥīṭ al-Burhānī",
+      "title_ar": "المحيط البرهاني",
+      "author": "Burhān al-Dīn Maḥmūd b. Aḥmad al-Bukhārī",
+      "author_death_ah": 616,
+      "author_death_ce": 1219,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "law compendium",
+      "source_ids": [
+        "hf-src-burhanbukhari"
+      ],
+      "notes": "Burhān al-Dīn Maḥmūd b. Aḥmad al-Bukhārī (Ibn Māza); distinct from Raḍī al-Dīn al-Sarakhsī’s al-Muḥīṭ al-Raḍawī. Author identification and death follow the TDV entry; the article discusses conflicting medieval identifications.",
+      "date_label": "d. 616 AH / 1219 CE",
+      "timeline_ce": 1219,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_bukhari_dhakhira",
+      "title": "al-Dhakhīra al-Burhāniyya",
+      "title_ar": "الذخيرة البرهانية",
+      "author": "Burhān al-Dīn Maḥmūd b. Aḥmad al-Bukhārī",
+      "author_death_ah": 616,
+      "author_death_ce": 1219,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-burhanbukhari"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification. Author identification and death follow the TDV entry; the article discusses conflicting medieval identifications.",
+      "date_label": "d. 616 AH / 1219 CE",
+      "timeline_ce": 1219,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_bukhari_tatimma",
+      "title": "Tatimmat al-fatāwā",
+      "title_ar": "تتمة الفتاوى",
+      "author": "Burhān al-Dīn Maḥmūd b. Aḥmad al-Bukhārī",
+      "author_death_ah": 616,
+      "author_death_ce": 1219,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-burhanbukhari"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification. Author identification and death follow the TDV entry; the article discusses conflicting medieval identifications.",
+      "date_label": "d. 616 AH / 1219 CE",
+      "timeline_ce": 1219,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_zahidi_qunya",
+      "title": "Qunyat al-munya",
+      "title_ar": "قنية المنية",
+      "author": "Najm al-Dīn al-Zāhidī",
+      "author_death_ah": 658,
+      "author_death_ce": 1260,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-general",
+        "hf-src-zahidi"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification. The source dates death after 21 Jumādā II 658 / 3 June 1260 within its stated death year 658/1260.",
+      "date_label": "d. 658 AH / 1260 CE",
+      "timeline_ce": 1260,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_tatar_fatawa",
+      "title": "al-Fatāwā al-Tātārkhāniyya",
+      "title_ar": "الفتاوى التاتارخانية",
+      "author": "ʿĀlim b. al-ʿAlāʾ al-Indarpatī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "date_basis": "not established in this research pass",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-usul-tatar"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "Death date not established",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_bazzazi_fatawa",
+      "title": "al-Fatāwā al-Bazzāziyya",
+      "title_ar": "الفتاوى البزازية",
+      "author": "Ḥāfiẓ al-Dīn al-Bazzāzī",
+      "author_death_ah": 827,
+      "author_death_ce": 1424,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-general",
+        "hf-src-hanafi-atlas"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 827 AH / 1424 CE",
+      "timeline_ce": 1424,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_zayn_nujaym_fatawa",
+      "title": "al-Fatāwā al-Zayniyya",
+      "title_ar": "الفتاوى الزينية",
+      "author": "Zayn al-Dīn Ibn Nujaym",
+      "author_death_ah": 970,
+      "author_death_ce": 1563,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-general",
+        "hf-src-kanz"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 970 AH / 1563 CE",
+      "timeline_ce": 1563,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_ramli_fatawa",
+      "title": "al-Fatāwā al-Khayriyya",
+      "title_ar": "الفتاوى الخيرية",
+      "author": "Khayr al-Dīn al-Ramlī",
+      "author_death_ah": 1081,
+      "author_death_ce": 1671,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-general",
+        "hf-src-kanz"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 1081 AH / 1671 CE",
+      "timeline_ce": 1671,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_hindiyya_fatawa",
+      "title": "al-Fatāwā al-Hindiyya (al-ʿĀlamgīriyya)",
+      "title_ar": "الفتاوى الهندية",
+      "author": "Commission led by Niẓām al-Dīn al-Burhānpūrī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "date_basis": "not established in this research pass",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa compendium",
+      "source_ids": [
+        "hf-src-usul-hindiyya"
+      ],
+      "notes": "Collaborative Mughal compilation, also titled al-ʿĀlamgīriyya; one work, not two. Dated composition period 1664–1672 CE in reference bibliography.",
+      "date_label": "Death date not established",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_imadi_hamidiyya",
+      "title": "al-Fatāwā al-Ḥāmidiyya",
+      "title_ar": "الفتاوى الحامدية",
+      "author": "Ḥāmid b. ʿAlī al-ʿImādī al-Dimashqī",
+      "author_death_ah": 1171,
+      "author_death_ce": 1758,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "hf-src-ibnabidin"
+      ],
+      "notes": "Ḥāmid b. ʿAlī al-ʿImādī of Damascus, d.1171/1758; not Ḥāmid b. Muḥammad al-Qunawī, d.985/1577.",
+      "date_label": "d. 1171 AH / 1758 CE",
+      "timeline_ce": 1758,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_ibnabidin_uqud",
+      "title": "al-ʿUqūd al-durriyya fī tanqīḥ al-Fatāwā al-Ḥāmidiyya",
+      "title_ar": "العقود الدرية في تنقيح الفتاوى الحامدية",
+      "author": "Muḥammad Amīn Ibn ʿĀbidīn",
+      "author_death_ah": 1252,
+      "author_death_ce": 1836,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "abridgment and revision",
+      "source_ids": [
+        "hf-src-ibnabidin"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 1252 AH / 1836 CE",
+      "timeline_ce": 1836,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_sadrshahid_adab",
+      "title": "Sharḥ Adab al-qāḍī",
+      "title_ar": "شرح أدب القاضي",
+      "author": "Ḥusām al-Dīn ʿUmar Ṣadr al-Shahīd",
+      "author_death_ah": 536,
+      "author_death_ce": 1141,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-khassaf",
+        "hf-src-sadrshahid"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 536 AH / 1141 CE",
+      "timeline_ce": 1141,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_sadrshahid_nafaqat",
+      "title": "Sharḥ Kitāb al-Nafaqāt",
+      "title_ar": "شرح كتاب النفقات",
+      "author": "Ḥusām al-Dīn ʿUmar Ṣadr al-Shahīd",
+      "author_death_ah": 536,
+      "author_death_ce": 1141,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "hf-src-khassaf",
+        "hf-src-sadrshahid"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 536 AH / 1141 CE",
+      "timeline_ce": 1141,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_trabulusi_isaf",
+      "title": "al-Isʿāf fī aḥkām al-awqāf",
+      "title_ar": "الإسعاف في أحكام الأوقاف",
+      "author": "Burhān al-Dīn Ibrāhīm al-Ṭarābulusī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "date_basis": "not established in this research pass",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "endowment law",
+      "source_ids": [
+        "hf-src-khassaf"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "Death date not established",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_usrushani_fusul",
+      "title": "al-Fuṣūl al-Ustrūshanīyya",
+      "title_ar": "الفصول الأسروشنية",
+      "author": "Majd al-Dīn al-Ustrūshanī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "date_basis": "not established in this research pass",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "judicial procedure",
+      "source_ids": [
+        "hf-src-general"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "Death date not established",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_marghinani_fusul",
+      "title": "Fuṣūl al-iḥkām fī uṣūl al-aḥkām",
+      "title_ar": "فصول الإحكام في أصول الأحكام",
+      "author": "Zayn al-Dīn al-Marghīnānī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "date_basis": "not established in this research pass",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "judicial procedure",
+      "source_ids": [
+        "hf-src-general"
+      ],
+      "notes": "Author Zayn al-Dīn, not Burhān al-Dīn, author of al-Hidāya.",
+      "date_label": "Death date not established",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_simawi_jami_fusulayn",
+      "title": "Jāmiʿ al-fuṣūlayn",
+      "title_ar": "جامع الفصولين",
+      "author": "Badr al-Dīn Ibn Qāḍī Samāwna",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "date_basis": "not established in this research pass",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "judicial procedure",
+      "source_ids": [
+        "hf-src-general"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "Death date not established",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_trabulusi_muin",
+      "title": "Muʿīn al-ḥukkām",
+      "title_ar": "معين الحكام",
+      "author": "ʿAlāʾ al-Dīn ʿAlī b. Khalīl al-Ṭarābulusī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "date_basis": "not established in this research pass",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "judicial procedure",
+      "source_ids": [
+        "hf-src-general"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "Death date not established",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_ibn_shihna_lisan",
+      "title": "Lisān al-ḥukkām",
+      "title_ar": "لسان الحكام",
+      "author": "Lisān al-Dīn Ibn al-Shiḥna",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "date_basis": "not established in this research pass",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "judicial procedure",
+      "source_ids": [
+        "hf-src-general"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "Death date not established",
+      "timeline_ce": null,
+      "timeline_basis": null,
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_ibnabidin_nuzha",
+      "title": "Nuzhat al-nawāẓir ʿalā al-Ashbāh wa-l-naẓāʾir",
+      "title_ar": "نزهة النواظر على الأشباه والنظائر",
+      "author": "Muḥammad Amīn Ibn ʿĀbidīn",
+      "author_death_ah": 1252,
+      "author_death_ce": 1836,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "gloss on legal maxims",
+      "source_ids": [
+        "hf-src-ibnabidin"
+      ],
+      "notes": "Bibliographical identity checked against the linked source; edition, manuscript and composition chronology require separate verification.",
+      "date_label": "d. 1252 AH / 1836 CE",
+      "timeline_ce": 1836,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    },
+    {
+      "id": "hf_zayn_nujaym_ashbah",
+      "title": "al-Ashbāh wa-l-naẓāʾir",
+      "title_ar": "الأشباه والنظائر",
+      "author": "Zayn al-Dīn Ibn Nujaym",
+      "author_death_ah": 970,
+      "author_death_ce": 1563,
+      "date_basis": "author death, not composition",
+      "school": "hanafi",
+      "discipline": "fiqh",
+      "genre": "legal maxims",
+      "source_ids": [
+        "hf-src-ibnabidin",
+        "hf-src-kanz"
+      ],
+      "notes": "Legal maxims within fiqh; not a work of uṣūl al-fiqh. Distinct from al-Suyūṭī’s Shāfiʿī work of the same title.",
+      "date_label": "d. 970 AH / 1563 CE",
+      "timeline_ce": 1563,
+      "timeline_basis": "author death",
+      "timeline_is_proxy": false,
+      "date_note": "Author-death chronology; does not date the composition of the book.",
+      "metadata_attribution": "Bibliographic facts compiled from the linked sources; see source_ids.",
+      "attribution_status": "source-identified"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hf-src-general",
+      "title": "Ahmet Özel, Hanefi Mezhebi: Literature (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/hanefi-mezhebi#2-literatur",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-fiqh",
+      "title": "Ahmet Özel, Fıkıh: Classical literature (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/fikih#2",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-hidaya",
+      "title": "Cengiz Kallek, al-Hidāya (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/el-hidaye",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-kanz",
+      "title": "Ahmet Yaman, Kanz al-daqāʾiq (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/kenzud-dekaik",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-wiqaya",
+      "title": "Murteza Bedir, Wiqāyat al-riwāya (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/vikayetur-rivaye",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-multaqa",
+      "title": "Şükrü Selim Has, Multaqā al-abḥur (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/multekal-ebhur",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-abuyusuf",
+      "title": "Salim Öğüt, Abū Yūsuf (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/ebu-yusuf",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-khassaf",
+      "title": "Abdülvehhab Öztürk, al-Khaṣṣāf (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/hassaf",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-tahawi",
+      "title": "Davut İltaş, al-Ṭaḥāwī (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/tahavi",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-quduri",
+      "title": "Cengiz Kallek, al-Qudūrī (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/kuduri",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-ghurar",
+      "title": "Ahmet Akgündüz, Durar al-ḥukkām of Molla Hüsrev (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/durerul-hukkam--molla-husrev",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-shurunbulali",
+      "title": "Şevket Topal, al-Shurunbulālī (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/surunbulali",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-ibnabidin",
+      "title": "Ahmet Özel, Ibn ʿĀbidīn Muḥammad Amīn (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/ibn-abidin-muhammed-emin",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-natifi",
+      "title": "Tahsin Özcan, al-Nāṭifī (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/natifi",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-sughdi",
+      "title": "Salahaddin Abdüllatif en-Nahi, al-Sughdī (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/sugdi",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-qadikhan",
+      "title": "Ahmet Özel, Qāḍīkhān (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/kadihan",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-burhanbukhari",
+      "title": "Mustafa Uzunpostalcı, Burhān al-Dīn al-Bukhārī (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/burhaneddin-el-buhari",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-sadrshahid",
+      "title": "Ahmet Özel, Ṣadr al-Shahīd (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/sadrussehid",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-marghinani",
+      "title": "Ferhat Koca, al-Marghīnānī (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/merginani-burhaneddin",
+      "kind": "scholarly reference article",
+      "support": "Bibliographical identity and the named textual relationships, where explicitly stated.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-usul-nihaya",
+      "title": "al-Sighnāqī, al-Nihāya fī sharḥ al-Hidāya, edited text and introduction",
+      "url": "https://usul.ai/ar/t/al-nihayah-fi-sharh-al-hidayah/28",
+      "kind": "primary text edition",
+      "support": "Author and title; introduction names al-Kākī and al-Kurlānī commentaries.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-usul-nahr",
+      "title": "Sirāj al-Dīn Ibn Nujaym, al-Nahr al-fāʾiq",
+      "url": "https://usul.ai/ar/t/nahr-faiq/503",
+      "kind": "primary text edition",
+      "support": "Title, author and author death 1005 AH; commentary text.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-usul-nur",
+      "title": "al-Shurunbulālī, Nūr al-īḍāḥ",
+      "url": "https://usul.ai/ar/t/nur-al-idah-wa-najah-al-arwah-fi%27l-fiqh-al-hanafi/54",
+      "kind": "primary text edition",
+      "support": "Title, author, classification, and work content. CE death is taken from TDV, not automated AH conversion.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-usul-hindiyya",
+      "title": "al-Fatāwā al-Hindiyya, primary text",
+      "url": "https://usul.ai/ar/t/al-fatawa-al-hindiya",
+      "kind": "primary text edition",
+      "support": "Title, compilers, and preface describing sources and arrangement.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-usul-tatar",
+      "title": "al-Fatāwā al-Tātārkhāniyya, catalogue",
+      "url": "https://usul.ai/ar/t/al-fatawa-al-tatarkhaniyah",
+      "kind": "primary text catalogue",
+      "support": "Title and authorship.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-usul-ziyadat",
+      "title": "Qāḍīkhān, Sharḥ al-Ziyādāt, introduction",
+      "url": "https://usul.ai/ar/t/sharh-al-ziyadat/84",
+      "kind": "primary text edition",
+      "support": "Qāḍīkhān works and bibliography.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-hanafi-atlas",
+      "title": "Hanafi Biographical Atlas core metadata",
+      "url": "https://www.hanafiatlas.com/data/atlas.json",
+      "kind": "research dataset",
+      "support": "Author-death dates only for shared authors; biography works are held separately.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-jassas",
+      "title": "al-Jaṣṣāṣ (TDV İslâm Ansiklopedisi)",
+      "url": "https://islamansiklopedisi.org.tr/cessas",
+      "kind": "scholarly reference article",
+      "support": "Author identity and death date; bibliographical titles where listed.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-haddad",
+      "title": "Abū Bakr al-Ḥaddād (TDV İslâm Ansiklopedisi)",
+      "url": "https://islamansiklopedisi.org.tr/haddad-ebu-bekir",
+      "kind": "scholarly reference article",
+      "support": "Author identity and death date; bibliographical titles where listed.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-maydani",
+      "title": "ʿAbd al-Ghanī al-Maydānī (TDV İslâm Ansiklopedisi)",
+      "url": "https://islamansiklopedisi.org.tr/meydani-abdulgani-b-talib",
+      "kind": "scholarly reference article",
+      "support": "Author identity and death date; bibliographical titles where listed.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-haskafi",
+      "title": "al-Ḥaṣkafī (TDV İslâm Ansiklopedisi)",
+      "url": "https://islamansiklopedisi.org.tr/haskefi",
+      "kind": "scholarly reference article",
+      "support": "Author identity and death date; bibliographical titles where listed.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-shaykhizada",
+      "title": "Shaykhizāda (TDV İslâm Ansiklopedisi)",
+      "url": "https://islamansiklopedisi.org.tr/seyhizade",
+      "kind": "scholarly reference article",
+      "support": "Author identity and death date; bibliographical titles where listed.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-ibnabidinzada",
+      "title": "Ibn ʿĀbidīnzāda (TDV İslâm Ansiklopedisi)",
+      "url": "https://islamansiklopedisi.org.tr/ibn-abidinzade",
+      "kind": "scholarly reference article",
+      "support": "Author identity and death date; bibliographical titles where listed.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-tahtawi",
+      "title": "Aḥmad b. Muḥammad al-Ṭaḥṭāwī (TDV İslâm Ansiklopedisi)",
+      "url": "https://islamansiklopedisi.org.tr/tahtavi-ahmed-b-muhammed",
+      "kind": "scholarly reference article",
+      "support": "Author identity and death date; bibliographical titles where listed.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-kuhistani",
+      "title": "al-Quhistānī (TDV İslâm Ansiklopedisi)",
+      "url": "https://islamansiklopedisi.org.tr/kuhistani",
+      "kind": "scholarly reference article",
+      "support": "Author identity and death date; bibliographical titles where listed.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-itqani",
+      "title": "al-Itqānī (TDV İslâm Ansiklopedisi)",
+      "url": "https://islamansiklopedisi.org.tr/itkani",
+      "kind": "scholarly reference article",
+      "support": "Author identity and death date; bibliographical titles where listed.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-karkhi",
+      "title": "al-Karkhī (TDV İslâm Ansiklopedisi)",
+      "url": "https://islamansiklopedisi.org.tr/kerhi",
+      "kind": "scholarly reference article",
+      "support": "Author identity and death date; bibliographical titles where listed.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-zahidi",
+      "title": "al-Zāhidī (TDV İslâm Ansiklopedisi)",
+      "url": "https://islamansiklopedisi.org.tr/zahidi",
+      "kind": "scholarly reference article",
+      "support": "Author identity and death date; bibliographical titles where listed.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hf-src-walwaliji",
+      "title": "al-Fatāwā al-Walwālijiyya (TDV İslâm Ansiklopedisi)",
+      "url": "https://islamansiklopedisi.org.tr/el-fetaval-velvaliciyye",
+      "kind": "scholarly reference article",
+      "support": "Author identity and death date; bibliographical titles where listed.",
+      "accessed": "2026-11-10"
+    }
+  ],
+  "relations": [
+    {
+      "from": "hf_tahawi_mukhtasar",
+      "to": "hf_jassas_sharh_tahawi",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-tahawi"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_tahawi_ikhtilaf",
+      "to": "hf_jassas_mukhtasar_ikhtilaf",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "hf-src-general"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_khassaf_adab_qadi",
+      "to": "hf_jassas_adab_qadi",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-khassaf"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_hakim_kafi",
+      "to": "hf_sarakhsi_mabsut",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-fiqh"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_shaybani_siyar_kabir",
+      "to": "hf_sarakhsi_siyar",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-fiqh"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_karkhi_mukhtasar",
+      "to": "hf_quduri_sharh_karkhi",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-quduri"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_khassaf_adab_qadi",
+      "to": "hf_quduri_adab_qadi",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-quduri"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_quduri_mukhtasar",
+      "to": "hf_haddad_jawhara",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-fiqh"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_quduri_mukhtasar",
+      "to": "hf_haddad_siraj",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-fiqh"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_quduri_mukhtasar",
+      "to": "hf_maydani_lubab",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-fiqh"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_marghinani_bidaya",
+      "to": "hf_marghinani_hidaya",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-hidaya"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_marghinani_bidaya",
+      "to": "hf_marghinani_kifaya_muntahi",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-hidaya"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_marghinani_hidaya",
+      "to": "hf_khabbazi_kifaya",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-hidaya"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_marghinani_hidaya",
+      "to": "hf_sighnaqi_nihaya",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-hidaya",
+        "hf-src-usul-nihaya"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_marghinani_hidaya",
+      "to": "hf_tajsharia_nihaya",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-hidaya"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_marghinani_hidaya",
+      "to": "hf_kaki_miraj",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-hidaya",
+        "hf-src-usul-nihaya"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_marghinani_hidaya",
+      "to": "hf_itqani_ghaya",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-hidaya"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_marghinani_hidaya",
+      "to": "hf_qurlani_kifaya",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-hidaya",
+        "hf-src-usul-nihaya"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_marghinani_hidaya",
+      "to": "hf_babarti_inaya",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-hidaya"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_marghinani_hidaya",
+      "to": "hf_ayni_binaya",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-hidaya",
+        "hf-src-kanz"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_marghinani_hidaya",
+      "to": "hf_ibn_humam_fath",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-hidaya"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_ibn_humam_fath",
+      "to": "hf_qadizade_nataij",
+      "type": "completion",
+      "evidence_source_ids": [
+        "hf-src-hidaya"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_babarti_inaya",
+      "to": "hf_sadi_hashiya_inaya",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "hf-src-hidaya"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_mawsili_mukhtar",
+      "to": "hf_mawsili_ikhtiyar",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-fiqh"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_nasafi_wafi",
+      "to": "hf_nasafi_kanz",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "hf-src-kanz"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_nasafi_wafi",
+      "to": "hf_nasafi_kafi",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-general"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_nasafi_kanz",
+      "to": "hf_zaylai_tabyin",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-kanz"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_zaylai_tabyin",
+      "to": "hf_shalabi_hashiya_tabyin",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "hf-src-kanz"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_nasafi_kanz",
+      "to": "hf_ayni_ramz",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-kanz"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_nasafi_kanz",
+      "to": "hf_miskin_sharh_kanz",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-kanz"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_nasafi_kanz",
+      "to": "hf_zayn_nujaym_bahr",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-kanz"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_zayn_nujaym_bahr",
+      "to": "hf_turi_takmila_bahr",
+      "type": "completion",
+      "evidence_source_ids": [
+        "hf-src-kanz"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_zayn_nujaym_bahr",
+      "to": "hf_ibnabidin_minha",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "hf-src-ibnabidin"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_nasafi_kanz",
+      "to": "hf_siraj_nujaym_nahr",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-kanz",
+        "hf-src-usul-nahr"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_zayn_nujaym_bahr",
+      "to": "hf_ramli_muzhir",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "hf-src-kanz"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_marghinani_hidaya",
+      "to": "hf_burhan_wiqaya",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "hf-src-wiqaya"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_burhan_wiqaya",
+      "to": "hf_sadr_sharh_wiqaya",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-wiqaya"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_burhan_wiqaya",
+      "to": "hf_sadr_nuqaya",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "hf-src-wiqaya"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_sadr_nuqaya",
+      "to": "hf_kuhistani_jami_rumuz",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-general"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_sadr_sharh_wiqaya",
+      "to": "hf_laknawi_umda",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "hf-src-wiqaya",
+        "hf-src-hanafi-atlas"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_sadr_sharh_wiqaya",
+      "to": "hf_laknawi_siaya",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "hf-src-wiqaya",
+        "hf-src-hanafi-atlas"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_burhan_wiqaya",
+      "to": "hf_kemalpasa_islah",
+      "type": "revision",
+      "evidence_source_ids": [
+        "hf-src-wiqaya"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_kemalpasa_islah",
+      "to": "hf_kemalpasa_idah",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-wiqaya"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_mullahusraw_ghurar",
+      "to": "hf_mullahusraw_durar",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-ghurar"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_halabi_multaqa",
+      "to": "hf_shaykhizada_majma",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-multaqa"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_halabi_multaqa",
+      "to": "hf_haskafi_muntaqa",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-multaqa"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_halabi_multaqa",
+      "to": "hf_mawqufati_multaqa",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-multaqa"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_halabi_multaqa",
+      "to": "hf_baqani_majra",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-multaqa"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_halabi_multaqa",
+      "to": "hf_sivasi_faraid_multaqa",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-multaqa"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_timurtashi_tanwir",
+      "to": "hf_haskafi_durr",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-general"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_haskafi_durr",
+      "to": "hf_tahtawi_durr",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "hf-src-general"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_haskafi_durr",
+      "to": "hf_ibnabidin_radd",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "hf-src-ibnabidin"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_ibnabidin_radd",
+      "to": "hf_ibnabidinzada_qurra",
+      "type": "completion",
+      "evidence_source_ids": [
+        "hf-src-ibnabidin"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_ibnabidin_radd",
+      "to": "hf_rafii_tahrir",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "hf-src-ibnabidin"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_shurunbulali_nur",
+      "to": "hf_shurunbulali_imdad",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-shurunbulali"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_shurunbulali_imdad",
+      "to": "hf_shurunbulali_maraqi",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "hf-src-shurunbulali"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_shaybani_ziyadat",
+      "to": "hf_qadikhan_sharh_ziyadat",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-qadikhan",
+        "hf-src-usul-ziyadat"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_imadi_hamidiyya",
+      "to": "hf_ibnabidin_uqud",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "hf-src-ibnabidin"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_khassaf_adab_qadi",
+      "to": "hf_sadrshahid_adab",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-khassaf",
+        "hf-src-sadrshahid"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_khassaf_nafaqat",
+      "to": "hf_sadrshahid_nafaqat",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "hf-src-khassaf"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_khassaf_awqaf",
+      "to": "hf_trabulusi_isaf",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "hf-src-khassaf"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    },
+    {
+      "from": "hf_zayn_nujaym_ashbah",
+      "to": "hf_ibnabidin_nuzha",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "hf-src-ibnabidin"
+      ],
+      "note": "Direct textual relationship reported in the linked bibliographical source; arrow runs from base work to derivative work."
+    }
+  ],
+  "qualified_relations": [
+    {
+      "from": "hf_quduri_mukhtasar",
+      "to": "hf_marghinani_bidaya",
+      "type": "synthesis_source",
+      "evidence_source_ids": [
+        "hf-src-hidaya"
+      ],
+      "note": "One of two principal base manuals."
+    },
+    {
+      "from": "hf_shaybani_jami_saghir",
+      "to": "hf_marghinani_bidaya",
+      "type": "synthesis_source",
+      "evidence_source_ids": [
+        "hf-src-hidaya"
+      ],
+      "note": "One of two principal base manuals."
+    },
+    {
+      "from": "hf_samarqandi_tuhfa",
+      "to": "hf_kasani_badai",
+      "type": "reworking",
+      "evidence_source_ids": [
+        "hf-src-fiqh"
+      ],
+      "note": "Substantial reworking; do not flatten to an ordinary commentary."
+    },
+    {
+      "from": "hf_ibn_saati_majma",
+      "to": "hf_qunawi_durar_bihar",
+      "type": "expanded_adaptation",
+      "evidence_source_ids": [
+        "hf-src-general"
+      ],
+      "note": "Adds views of other schools; source describes expansion."
+    },
+    {
+      "from": "hf_usrushani_fusul",
+      "to": "hf_simawi_jami_fusulayn",
+      "type": "synthesis_source",
+      "evidence_source_ids": [
+        "hf-src-general"
+      ],
+      "note": "One of two named books combined in Jāmiʿ al-fuṣūlayn."
+    },
+    {
+      "from": "hf_marghinani_fusul",
+      "to": "hf_simawi_jami_fusulayn",
+      "type": "synthesis_source",
+      "evidence_source_ids": [
+        "hf-src-general"
+      ],
+      "note": "One of two named books combined in Jāmiʿ al-fuṣūlayn."
+    },
+    {
+      "from": "hf_quduri_mukhtasar",
+      "to": "hf_halabi_multaqa",
+      "type": "synthesis_source",
+      "evidence_source_ids": [
+        "hf-src-multaqa"
+      ],
+      "note": "Named source of Multaqā; not an exclusive parent or a claim of direct abridgment."
+    },
+    {
+      "from": "hf_mawsili_mukhtar",
+      "to": "hf_halabi_multaqa",
+      "type": "synthesis_source",
+      "evidence_source_ids": [
+        "hf-src-multaqa"
+      ],
+      "note": "Named source of Multaqā; not an exclusive parent or a claim of direct abridgment."
+    },
+    {
+      "from": "hf_nasafi_kanz",
+      "to": "hf_halabi_multaqa",
+      "type": "synthesis_source",
+      "evidence_source_ids": [
+        "hf-src-multaqa"
+      ],
+      "note": "Named source of Multaqā; not an exclusive parent or a claim of direct abridgment."
+    },
+    {
+      "from": "hf_burhan_wiqaya",
+      "to": "hf_halabi_multaqa",
+      "type": "synthesis_source",
+      "evidence_source_ids": [
+        "hf-src-multaqa"
+      ],
+      "note": "Named source of Multaqā; not an exclusive parent or a claim of direct abridgment."
+    },
+    {
+      "from": "hf_ibn_saati_majma",
+      "to": "hf_halabi_multaqa",
+      "type": "synthesis_source",
+      "evidence_source_ids": [
+        "hf-src-multaqa"
+      ],
+      "note": "Named source of Multaqā; not an exclusive parent or a claim of direct abridgment."
+    },
+    {
+      "from": "hf_marghinani_hidaya",
+      "to": "hf_halabi_multaqa",
+      "type": "synthesis_source",
+      "evidence_source_ids": [
+        "hf-src-multaqa"
+      ],
+      "note": "Named source of Multaqā; not an exclusive parent or a claim of direct abridgment."
+    }
+  ]
+}

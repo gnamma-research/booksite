@@ -39,10 +39,11 @@ async def ready(page):
 async def test(page):
     issues=[]
     page.on("pageerror",lambda e:issues.append(str(e)))
-    resp=await page.goto(ROOT+"#view=timeline&subject=fiqh",wait_until="domcontentloaded",timeout=85000)
+    resp=await page.goto(ROOT+"#view=timeline&subject=fiqh&source_tier=Alreq%20manuscript%20catalogue",wait_until="domcontentloaded",timeout=85000)
     require(resp.status==200,"Atlas URL not served")
     await ready(page)
     s=await state(page)
+    require(s["d"]["source"]=="Alreq manuscript catalogue","Alreq evidence test opened a different source register")
     require(s["d"]["counts"]["audited"]==404,"Original research graph altered")
     require(s["d"]["counts"]["openiti"]>=1800 and s["d"]["counts"]["alreq"]==4157,"Original bibliographic records lost")
     require(s["d"]["counts"]["alreqAuthorDated"]>=764,"Source-backed Alreq author-date anchors missing")
@@ -113,10 +114,16 @@ async def test(page):
     # *same* source workbench, never a static snapshot.
     for science in ["nahw","sarf","balagha","usul","fiqh"]:
         await page.locator('[data-science]').select_option(science)
+        # Subject changes restore their own defaults; this test concerns Alreq.
+        advanced=page.locator('.atlas-advanced')
+        if not await advanced.evaluate("el => el.open"):
+            await advanced.locator('summary').click()
+        await page.locator('[data-source]').select_option('Alreq manuscript catalogue')
         await page.locator('[data-view="timeline"]').click()
         await page.locator('[data-unplaced]').first.focus()
         await page.keyboard.press("Enter")
         s=await state(page)
+        require(s["d"]["source"]=="Alreq manuscript catalogue",f"{science}: source scope changed during undated browsing")
         require(s["shelf"]==1 and s["shelfCards"]>0,f"{science}: unplaced marker did not open a real catalogue")
         require(s["overflow"]<=4,f"{science}: document overflow")
         await page.locator('[data-close-shelf]').click()
@@ -136,7 +143,7 @@ async def main():
         await test(page)
         if args.width>=700:
             mobile=await b.new_page(viewport={"width":390,"height":844},is_mobile=True,has_touch=True)
-            await mobile.goto(ROOT+"#view=timeline&subject=nahw",wait_until="domcontentloaded")
+            await mobile.goto(ROOT+"#view=timeline&subject=nahw&source_tier=Alreq%20manuscript%20catalogue",wait_until="domcontentloaded")
             await ready(mobile)
             await mobile.locator('[data-unplaced]').first.focus()
             await mobile.keyboard.press("Enter")

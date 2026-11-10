@@ -1,3 +1,13 @@
+## 10 November 2026 — researched fiqh and full Hanafi benchmark inventory
+
+The fiqh view now opens **431 distinct researched works**: Hanafi 125, Shafiʿi 104, Maliki 97, Hanbali 66, Zahiri 4, Imami 19, Zaydi 9 and Ibadi 7. Its **247 source-linked relationships** draw on **281 cited source URLs**, with individual work, author, date and relationship qualifications. The separate **Biography & ṭabaqāt** collection indexes all **84 Hanafi Atlas entries** (68 core + 16 supplementary), preserving attribution, survival and uncertain-date notices. The comparator's 23-book reading collection remains on its original site.
+
+**Books by century** and **All works** are now the defaults. Visible madhhab counts distinguish researched books from imported, potentially overlapping OpenITI/Alreq records. A missing relationship no longer removes a work from normal browsing. The geographical map remains available with its independently documented coverage; no dates or places have been invented to fill gaps. The canonical 404/377 historical graph is unchanged.
+
+Read the [public coverage and feature comparison](corpora/fiqh-coverage.html), [research JSON](corpora/fiqh-research.json), and [current restart handoff](HANDOFF_CURRENT.md). Rebuild with `python research/intellectual-atlas/build.py`. Earlier sections below describe previous releases and must not override this current behavior.
+
+---
+
 ## 9 November 2026: No dead-end “unplaced” sources
 
 The historical timeline and geographical map now distinguish what can be defensibly placed from what cannot:

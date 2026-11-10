@@ -4,10 +4,10 @@ const ROOT=document.getElementById("gn-atlas");if(!ROOT)return;
 const SUBJECTS=[
  ["all","All sciences"],["intellectual","Philosophy & kalām"],["fiqh","Fiqh"],["usul","Uṣūl al-fiqh"],
  ["nahw","Naḥw"],["sarf","Ṣarf"],["balagha","Balāgha"],["lugha","Lexicography"],
- ["hadith","Hadith"],["tafsir","Tafsīr"],["tasawwuf","Taṣawwuf"]
+ ["hadith","Hadith"],["tafsir","Tafsīr"],["tasawwuf","Taṣawwuf"],["biography","Biography & ṭabaqāt"]
 ];
 const NAMES=Object.fromEntries(SUBJECTS);
-const SCHOOLS={all:"All schools",hanafi:"Ḥanafī",maliki:"Mālikī",shafii:"Shāfiʿī",hanbali:"Ḥanbalī",early:"Early jurists",named_other:"Other historical schools",unassigned:"Unassigned"};
+const SCHOOLS={all:"All schools",hanafi:"Ḥanafī",maliki:"Mālikī",shafii:"Shāfiʿī",hanbali:"Ḥanbalī",zahiri:"Ẓāhirī",imami:"Imāmī / Jaʿfarī",zaydi:"Zaydī",ibadi:"Ibāḍī",ismaili:"Ismāʿīlī",historical:"Early jurists & other circles",early:"Early jurists",named_other:"Other historical schools",unassigned:"Unassigned"};
 const FAMILY_NAMES={ancient:"Greek & late antique",neoplatonic:"Neoplatonism",translation:"Translation movements",
 falsafa:"Falsafa",avicennan:"Avicennan",ishraqi:"Illuminationism",sadrian:"Ṣadrian",ashari:"Ashʿarī",maturidi:"Māturīdī",mutazili:"Muʿtazilī",sunni:"Sunni kalām",
 imami:"Imāmī",akbarian:"Akbarian",christian:"Christian Arabic",jewish:"Jewish Arabic",critical:"Later critics",context:"Contexts"};
@@ -27,11 +27,12 @@ const GAZETTEER=[
 const TYPENAMES={commentary:"Commentary",gloss:"Gloss",component:"Constituent section",translation_adaptation:"Translation / adaptation",
 textual_use:"Textual use",author_reference:"Author reference",critique:"Critical engagement",reported_doctrine:"Reported teaching",
 reported_source:"Source testimony",exchange:"Scholarly exchange",broad_influence:"Qualified connection",hypothesis:"Hypothesis",
-claimed_lineage:"Claimed lineage",abridgement:"Abridgement",translation:"Translation",other:"Relationship"};
-const state={subject:"all",view:"geography",school:"all",search:"",source:"all",family:"",edgeType:"all",certainty:"all",
-from:-600,to:2026,selected:"",evidence:"",cluster:"",clusterPage:1,clusterSearch:"",bookPage:1,depth:1,browseMode:"linked",region:"",searchOpen:false,advancedOpen:false};
+claimed_lineage:"Claimed lineage",abridgement:"Abridgement",abridgment:"Abridgement",versification:"Versification",synthesis:"Synthesis",synthesis_source:"Source for a synthesis",reworking:"Reworking",expanded_adaptation:"Expanded adaptation",critical_commentary:"Critical commentary",critical_gloss:"Critical gloss",completion:"Completion",continuation:"Continuation",revision:"Revision",correction:"Correction",authorial_elucidation:"Authorial elucidation",source_use:"Source use",translation:"Translation",other:"Relationship"};
+const EDGE_GROUPS={commentary:["commentary","gloss","critical_commentary","critical_gloss","authorial_elucidation"],critique:["critique","hypothesis","critical_commentary","critical_gloss","correction"],textual_use:["textual_use","source_use","reported_source","reported_doctrine","author_reference","component"],abridgement:["abridgement","abridgment"],versification:["versification"],synthesis:["synthesis","synthesis_source","reworking","expanded_adaptation","revision"],completion:["completion","continuation"],translation:["translation","translation_adaptation"]};
+const state={subject:"all",view:"timeline",school:"all",search:"",source:"all",family:"",edgeType:"all",certainty:"all",
+from:-600,to:2026,selected:"",evidence:"",cluster:"",clusterPage:1,clusterSearch:"",bookPage:1,depth:1,browseMode:"all",region:"",searchOpen:false,advancedOpen:false};
 const data={all:[],byId:new Map(),edges:[],in:new Map(),out:new Map(),families:[],sources:new Map(),history:[],
-errors:[],counts:{audited:0,openiti:0,alreq:0,pinned:0,relations:0,alreqAuthorDated:0,unplaced:0},chronology:new Map(),authorWorks:new Map(),licences:[],loadReady:false};
+errors:[],counts:{audited:0,openiti:0,alreq:0,pinned:0,relations:0,alreqAuthorDated:0,unplaced:0,researchedFiqh:0,biographical:0,fiqhRelations:0},chronology:new Map(),authorWorks:new Map(),licences:[],loadReady:false};
 const renderCache={clusters:new Map(),workMap:new Map(),current:[],filtered:[],lanes:[],network:null};
 const safe=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const normal=x=>String(x??"").normalize("NFKD").replace(/[\u0300-\u036f\u064b-\u065f\u0670\u0640]/g,"").replace(/[أإآٱ]/g,"ا").replace(/ى/g,"ي").replace(/[ʿʾ’'`]/g,"").toLowerCase();
@@ -48,7 +49,7 @@ function addWork(x){
  x.sourceIds=uniq(x.sourceIds||[]);
  x.year=x.year===null||x.year===undefined||!Number.isFinite(+x.year)?null:Number(x.year);
  x.kind=x.kind||"work";
- x.searchText=normal([x.title,x.arabic,x.author,x.id,x.family,x.tradition,x.region,(x.lines||[]).join(" "),x.roman].join(" "));
+ x.searchText=normal([x.title,x.arabic,x.author,x.id,x.family,x.tradition,x.region,(x.lines||[]).join(" "),(x.aliases||[]).join(" "),x.roman].join(" "));
  data.byId.set(x.id,x);data.all.push(x);
 }
 function canonicalSubject(n){
@@ -149,6 +150,39 @@ function loadMetadata(oi,ms,registry,early,chronology){
  }
  data.licences=uniq([registry?.license||"",oi?.license||"",ms?.license||""]);
 }
+function loadResearchCorpus(register,prefix,biographical=false){
+ if(!register)return;
+ const sourcePrefix=prefix+":source:";
+ for(const s of register.sources||[])data.sources.set(sourcePrefix+s.id,{...s,id:sourcePrefix+s.id,locator:s.locator||s.support||""});
+ for(const w of register.works||[]){
+  const ah=Number.isFinite(w.author_death_ah)?w.author_death_ah:null;
+  const ce=Number.isFinite(w.author_death_ce)?w.author_death_ce:ah?ahce(ah):null;
+  const sourcedLabel=w.date_label||"";
+  const year=Number.isFinite(w.timeline_ce)?w.timeline_ce:ce;
+  addWork({id:prefix+":"+w.id,sourceId:w.id,title:w.title,arabic:w.title_ar||"",roman:w.title,
+   author:w.author||"Author not established",authorDates:ah?"d. "+ah+" AH":"",aliases:w.aliases||[],
+   subjects:[biographical?"biography":w.discipline||"fiqh"],schools:biographical?[]:[w.school],
+   year,yearKind:year==null?"unplaced":w.timeline_is_proxy?"qualified_author_date_proxy":"author_death_proxy",
+   dateLabel:sourcedLabel||(year==null?"Date not established":"Author d. "+(ah?ah+" AH · ":"")+(w.author_death_ce?ce+" CE":"c. "+ce+" CE")),
+   dateNote:w.date_note||(biographical?"Date and its qualification follow the attributed source catalogue.":
+    "Author-death anchor, not a date of composition. CE dates converted from AH are approximate; unknown dates remain unplaced."),
+   kind:"work",tradition:biographical?"Hanafi biographical literature":SCHOOLS[w.school]||w.school,
+   family:w.family||"",region:biographical?w.region||"":"",placeNote:w.place_note||"",authorSchool:biographical?w.author_school||"":"",provenance:biographical?"Hanafi Atlas benchmark":"Researched fiqh bibliography",
+   layer:biographical?"benchmark":"researched",sourceIds:(w.source_ids||[]).map(id=>sourcePrefix+id),
+   sourceURL:w.source_url||w.url||"",pinned:false,featured:!!w.featured,
+   note:w.notes||w.note||"",intro:"",lines:[],genre:w.genre||"",survival:w.survival||w.status||"not reviewed",
+   schoolEvidence:biographical?"A source for Hanafi history; its author need not be Hanafi.":"Classified by the cited bibliography; editions are not counted as additional works.",
+   benchmarkCore:w.benchmark_group==="core68",readerId:w.reader_id||"",warning:[w.warning,w.attribution_caveat].filter(Boolean).join(" ")});
+ }
+ for(const e of register.relations||[])addEdge({id:prefix+":"+(e.id||e.from+":"+e.to+":"+e.type),
+  from:prefix+":"+e.from,to:prefix+":"+e.to,type:e.type||"textual_use",label:e.label||TYPENAMES[e.type]||e.type,
+  confidence:e.confidence||(biographical?(/probabl|suspect|perhaps|possible|doubt/i.test(e.note||"")?"qualified benchmark report":"benchmark-reported"):"bibliographically attested"),evidence:[e.note||e.evidence||"",e.assertion_status||""].filter(Boolean).join(" "),
+  evidenceKind:biographical?"Attributed Hanafi Atlas source research":"Cited bibliography / edition record",
+  sourceIds:(e.evidence_source_ids||e.source_ids||[]).map(id=>sourcePrefix+id),sourceURL:e.source_url||"",origin:prefix});
+ if(biographical)data.counts.biographical=register.works?.length||0;
+ else {data.counts.researchedFiqh=register.works?.length||0;data.counts.fiqhRelations=register.relations?.length||0;}
+}
+function defaultSource(){return state.subject==="fiqh"&&data.counts.researchedFiqh?"research":state.subject==="biography"?"benchmark":"all";}
 function prepare(){
  data.in=new Map();data.out=new Map();
  for(const e of data.edges){
@@ -165,12 +199,12 @@ function prepare(){
  data.loadReady=true;
 }
 async function load(){
- const tasks=["embedded canonical atlas","corpora/expanded-bibliography.json","corpora/manuscript-full.json","corpora/registry.json","corpora/early-jurists.json","corpora/geo-events.json","corpora/author-chronology.json"];
+ const tasks=["embedded canonical atlas","corpora/expanded-bibliography.json","corpora/manuscript-full.json","corpora/registry.json","corpora/early-jurists.json","corpora/geo-events.json","corpora/author-chronology.json","corpora/fiqh-research.json","corpora/hanafi-atlas-benchmark.json"];
  const r=await Promise.allSettled(tasks.map((p,i)=>i===0?Promise.resolve().then(()=>JSON.parse(document.querySelector("script[data-atlas]").textContent)):
  fetch(p).then(resp=>{if(!resp.ok)throw Error(p+" "+resp.status);return resp.json()})));
  if(r[0].status!=="fulfilled"){ROOT.innerHTML='<section class="loading"><h1>Atlas sources unavailable</h1><p>The audited historical dataset could not be loaded. <a href="corpora/">Open the bibliography</a> or reload the atlas.</p></section>';return;}
  const o=r.map((x,i)=>{if(x.status==="fulfilled")return x.value;data.errors.push(tasks[i]+": "+String(x.reason?.message||x.reason));return null;});
- loadCanonical(o[0]);loadMetadata(o[1],o[2],o[3],o[4],o[6]);prepare();window.GNAMMAGeography?.setData(o[5]||{events:[],places:[]});
+ loadCanonical(o[0]);loadMetadata(o[1],o[2],o[3],o[4],o[6]);loadResearchCorpus(o[7],"fq");loadResearchCorpus(o[8],"ha",true);prepare();window.GNAMMAGeography?.setData(o[5]||{events:[],places:[]});
  window.GNAMMAGeography?.init(ROOT,{refresh:()=>{writeHash();render();},select:id=>chooseWork(id,true)});
  readHash();
  if(!data.byId.has(state.selected))selectFeatured(false);
@@ -179,6 +213,7 @@ async function load(){
 function initialSubject(subject){
  if(!NAMES[subject])return;
  state.subject=subject;
+ state.source=defaultSource();state.browseMode="all";
  state.school="all";state.family="";state.cluster="";state.region="";
  state.bookPage=1;state.clusterPage=1;state.clusterSearch="";state.search="";
  window.GNAMMAGeography?.resetScope?.();
@@ -194,9 +229,9 @@ function readHash(){
  if(subject==="fiqh"&&p.get("source_tab")==="method")subject="usul";
  if(subject==="philosophy"||subject==="kalam")subject="intellectual";
  if(NAMES[subject])state.subject=subject;
- const view=p.get("mode")||legacy||"geography";
+ const view=p.get("mode")||legacy||"timeline";
  state.view=({timeline:"timeline",sources:"timeline",explorer:"network",relations:"network",audit:"catalogue",network:"network",
-  principal:"principal",summary:"principal",map:"geography",chronology:"timeline",geography:"geography",regions:"regions",catalogue:"catalogue"})[view]||"geography";
+  principal:"principal",summary:"principal",map:"geography",chronology:"timeline",geography:"geography",regions:"regions",catalogue:"catalogue"})[view]||"timeline";
  const selected=p.get("work_id")||p.get("gnx_work")||p.get("work")||"";
  state.selected=selected&&data.byId.has(selected)?selected:data.byId.has("c:"+selected)?"c:"+selected:"";
  state.family=p.get("family")||p.get("text_family")||p.get("gnx_family")||"";
@@ -206,18 +241,18 @@ function readHash(){
  state.school=Object.hasOwn(SCHOOLS,p.get("school"))?p.get("school"):
   Object.hasOwn(SCHOOLS,p.get("madhhab"))?p.get("madhhab"):"all";
  state.search=(p.get("q")||p.get("gnx_q")||"").slice(0,140);
- state.browseMode=p.get("browse")==="all"?"all":"linked";
- state.source=["all","audited","OpenITI","Alreq manuscript catalogue","pinned"].includes(p.get("source_tier"))?p.get("source_tier"):"all";
+ state.browseMode=p.get("browse")==="linked"?"linked":"all";
+ state.source=["all","audited","OpenITI","Alreq manuscript catalogue","pinned","research","benchmark"].includes(p.get("source_tier"))?p.get("source_tier"):defaultSource();
  const from=Number(p.get("from")),to=Number(p.get("to"));
  if(p.has("from")&&p.has("to")&&Number.isFinite(from)&&Number.isFinite(to)&&to>from+9){
   state.from=Math.max(PERIOD_MIN,Math.min(PERIOD_MAX-10,from));
   state.to=Math.min(PERIOD_MAX,Math.max(state.from+10,to));
  }else if(state.subject!=="intellectual"&&state.subject!=="all"){state.from=630;state.to=1920}
- state.edgeType=["all","commentary","critique","textual_use","translation"].includes(p.get("edge_type"))?p.get("edge_type"):"all";
+ state.edgeType=p.get("edge_type")==="all"||Object.hasOwn(EDGE_GROUPS,p.get("edge_type"))?p.get("edge_type"):"all";
  state.certainty=p.get("certain")==="1"?"verified":"all";
  state.region=p.get("place")||"";
  state.cluster=p.get("shelf")||"";state.clusterSearch=(p.get("shelf_q")||"").slice(0,120);state.clusterPage=1;state.bookPage=1;state.quickLimit=8;state.evidence="";
- if(!state.selected)selectFeatured(false);
+ if(!state.selected||!filtered(false).some(n=>n.id===state.selected))selectFeatured(false);
  window.GNAMMAGeography?.readHash();
 }
 function writeHash(push=false){
@@ -226,11 +261,11 @@ function writeHash(push=false){
  if(state.selected)p.set("work_id",state.selected);
  if(state.school!=="all")p.set("school",state.school);
  if(state.search)p.set("q",state.search);
- if(state.browseMode==="all")p.set("browse","all");
+ if(state.browseMode==="linked")p.set("browse","linked");
  if(state.cluster&&state.view==="timeline")p.set("shelf",state.cluster);
  if(state.clusterSearch&&state.view==="timeline")p.set("shelf_q",state.clusterSearch);
  if(state.family)p.set("family",state.family);
- if(state.source!=="all")p.set("source_tier",state.source);
+ if(state.source!=="all"||defaultSource()!=="all")p.set("source_tier",state.source);
  if(state.edgeType!=="all")p.set("edge_type",state.edgeType);
  if(state.certainty!=="all")p.set("certain","1");
  if(state.region)p.set("place",state.region);
@@ -242,7 +277,7 @@ function writeHash(push=false){
 }
 function selectFeatured(write=true){
  const list=filtered(false);
- const focus=list.find(x=>x.pinned&&x.degree>0)||list.find(x=>x.layer==="audited"&&x.featured&&x.degree>0)||
+ const focus=list.filter(x=>x.layer==="researched"&&x.degree>0).sort((a,b)=>b.degree-a.degree)[0]||list.find(x=>x.pinned&&x.degree>0)||list.find(x=>x.layer==="audited"&&x.featured&&x.degree>0)||
  list.filter(x=>x.kind==="work"&&x.degree>0).sort((a,b)=>b.degree-a.degree)[0]||
  list.find(x=>x.kind==="work")||list[0];
  state.selected=focus?.id||"";state.evidence="";
@@ -252,11 +287,13 @@ function filtered(considerSearch=true){
  const q=normal(state.search);
  const result=data.all.filter(n=>{
   if(state.subject!=="all"&&!n.subjects.includes(state.subject))return false;
-  if(state.school!=="all"&&!n.schools.includes(state.school))return false;
+  if(state.school==="historical"?!n.schools.some(s=>s==="early"||s==="named_other"):state.school!=="all"&&!n.schools.includes(state.school))return false;
   if(state.source==="audited"&&n.layer!=="audited")return false;
   if(state.source==="OpenITI"&&n.provenance!=="OpenITI")return false;
   if(state.source==="Alreq manuscript catalogue"&&n.provenance!=="Alreq manuscript catalogue")return false;
   if(state.source==="pinned"&&!n.pinned)return false;
+  if(state.source==="research"&&n.layer!=="researched")return false;
+  if(state.source==="benchmark"&&n.layer!=="benchmark")return false;
   if(state.region&&!GAZETTEER.some(g=>g[0]===state.region&&g[3].test(n.region)))return false;
   if(state.family&&state.subject==="intellectual"){
    const family=data.families.find(f=>f.id===state.family);
@@ -270,14 +307,8 @@ function filtered(considerSearch=true){
 function relevantEdges(id,direction){
  const r=direction==="prior"?data.in.get(id)||[]:data.out.get(id)||[];
  return r.filter(e=>{
-   if(state.edgeType!=="all"){
-    const type=e.type||"";
-    if(state.edgeType==="commentary"&&!["commentary","gloss"].includes(type))return false;
-    if(state.edgeType==="critique"&&!["critique","hypothesis"].includes(type))return false;
-    if(state.edgeType==="textual_use"&&!["textual_use","reported_source","reported_doctrine","author_reference","component"].includes(type))return false;
-    if(state.edgeType==="translation"&&!["translation","translation_adaptation"].includes(type))return false;
-   }
-   if(state.certainty==="verified"&&/qualified|proposed|contested|hypothes|claimed|unverified/i.test(e.confidence||""))return false;
+   if(state.edgeType!=="all"&&!EDGE_GROUPS[state.edgeType]?.includes(e.type||""))return false;
+   if(state.certainty==="verified"&&/qualified|proposed|contested|hypothes|claimed|unverified|not independently/i.test(e.confidence||""))return false;
    if(state.family){
     const f=data.families.find(f=>f.id===state.family);
     if(f&&(!f.member_ids.includes(e.from.slice(2))||!f.member_ids.includes(e.to.slice(2))))return false;
@@ -303,6 +334,7 @@ function chooseWork(id,moveToNetwork=false){
   state.subject=n.subjects[0]||"all";state.school="all";state.family="";
  }
  if(state.school!=="all"&&!n.schools.includes(state.school))state.school="all";
+ if(state.source==="research"&&n.layer!=="researched"||state.source==="benchmark"&&n.layer!=="benchmark")state.source=n.layer==="researched"?"research":n.layer==="benchmark"?"benchmark":"all";
  if(state.family){
   const f=data.families.find(f=>f.id===state.family);
   if(f&&!f.member_ids.includes(n.sourceId))state.family="";
@@ -312,8 +344,8 @@ function chooseWork(id,moveToNetwork=false){
 }
 
 // Navigate the same dated or undated works in both visualization modes.
-// Browsing defaults to works with actual documented edges; all catalogue
-// records remain available with an explicit All catalogued selector.
+// Every work remains browsable, including works whose relationships are not
+// yet researched. A relationship filter must never masquerade as corpus size.
 function browseWorks(){
  const works=filtered(false).filter(n=>n.kind==="work");
  const selected=data.byId.get(state.selected);
@@ -358,8 +390,8 @@ function browseBar(){
  '<button type="button" data-text-mode="timeline" aria-pressed="'+(state.view==="timeline")+'">Timeline</button>'+
  '<button type="button" data-text-mode="network" aria-pressed="'+(state.view==="network")+'">Source &amp; reception graph</button></div>'+
  '<div class="text-browser-scopes" role="group" aria-label="Choose works to browse">'+
- '<button type="button" data-browse-mode="linked" aria-pressed="'+(state.browseMode==="linked")+'">Source-linked</button>'+
- '<button type="button" data-browse-mode="all" aria-pressed="'+(state.browseMode==="all")+'">All catalogued</button></div></div>'+
+ '<button type="button" data-browse-mode="linked" aria-pressed="'+(state.browseMode==="linked")+'">With recorded relationships</button>'+
+ '<button type="button" data-browse-mode="all" aria-pressed="'+(state.browseMode==="all")+'">All works</button></div></div>'+
  '<div class="text-rail" data-text-rail tabindex="0" aria-label="Scroll or swipe horizontally through works; the visualization updates as the focused card changes">'+neighboring+'</div>'+
  '<p class="text-browse-caveat">Order uses recorded dates or approximate author-death dates. Texts shown next to one another are not necessarily historically dependent.</p></section>';
 }
@@ -381,7 +413,7 @@ function subjectControls(){
  opts(SUBJECTS,state.subject)+'</select></label>';
 }
 function viewControls(){
- const names=[["geography","By century"],["regions","By region"],["network","Source network"],["timeline","Book timeline"],["principal","Principal texts"],["catalogue","Catalogue"]];
+ const names=[["timeline","Books by century"],["network","Source network"],["geography","Geographical map"],["regions","By region"],["principal","Principal texts"],["catalogue","Catalogue"]];
  return '<div class="viewtabs hanafi-tabs" role="tablist" aria-label="Explore historical sources">'+names.map(([v,title])=>
  '<button role="tab" type="button" data-view="'+v+'" aria-selected="'+(state.view===v)+'">'+title+'</button>').join("")+'</div>';
 }
@@ -394,11 +426,11 @@ function toolsUI(){
  '<select data-school '+(!["fiqh","usul"].includes(state.subject)?"disabled":"")+'>'+
  opts(Object.entries(SCHOOLS),state.school)+'</select></label>'+
  '<label class="filteritem">Source register<select data-source>'+
- opts([["all","All source records"],["audited","Audited history"],["OpenITI","OpenITI metadata"],["Alreq manuscript catalogue","Manuscript catalogue"],["pinned","Pinned sources"]],state.source)+'</select></label>'+
+ opts([["all","All source records (may overlap)"],["research","Researched fiqh works"],["benchmark","Hanafi Atlas bibliography"],["audited","Audited history"],["OpenITI","OpenITI metadata"],["Alreq manuscript catalogue","Manuscript catalogue"],["pinned","Pinned sources"]],state.source)+'</select></label>'+
  '<label class="filteritem">Textual family<select data-family '+(state.subject!=="intellectual"?"disabled":"")+'>'+
  opts([["","All research families"],...data.families.map(f=>[f.id,f.label])],state.family)+'</select></label>'+
  '<label class="filteritem">Relationship<select data-edge-type>'+
- opts([["all","All documented"],["commentary","Commentary / gloss"],["critique","Criticism"],["textual_use","Textual use"],["translation","Translation"]],state.edgeType)+'</select></label>'+
+ opts([["all","All documented"],["commentary","Commentary / gloss"],["abridgement","Abridgement"],["versification","Versification"],["synthesis","Synthesis / reworking"],["completion","Completion / continuation"],["critique","Criticism"],["textual_use","Textual use"],["translation","Translation"]],state.edgeType)+'</select></label>'+
  '<label class="filteritem">Evidence<select data-certainty>'+opts([["all","Include qualified"],["verified","Hide provisional"]],state.certainty)+'</select></label>'+
  '<div class="year-controls"><button data-pan="-1" aria-label="Earlier years" '+(!yearsEnabled?"disabled":"")+'>←</button>'+
  '<button data-zoom="0.60" aria-label="Zoom in years" '+(!yearsEnabled?"disabled":"")+'>＋</button>'+
@@ -423,9 +455,38 @@ function hero(){
  '<h1>Where scholarship took shape</h1>'+
  '<p class="hero-desc">Explore authors, texts, places and centuries across the Islamic sciences. Follow a source to its commentary and examine the evidence behind every connection.</p>'+
  '<div class="hero-metrics"><span><strong>'+fnum(data.counts.audited)+'</strong><small>audited entries</small></span>'+
+ '<span><strong>'+fnum(data.counts.researchedFiqh)+'</strong><small>researched fiqh works</small></span>'+
  '<span><strong>'+fnum(data.counts.openiti+data.counts.alreq)+'</strong><small>source catalogue records</small></span>'+
  '<span><strong>'+fnum(count.events||0)+'</strong><small>researched place events</small></span></div>'+
  '</section>';
+}
+function corpusCoverage(){
+ if(state.subject!=="fiqh"&&state.subject!=="biography")return "";
+ if(state.subject==="biography")return '<section class="corpus-coverage" aria-label="Biographical corpus coverage">'+
+ '<div class="coverage-heading"><div><span class="eyebrow">HANAFI ATLAS BENCHMARK</span><h2>'+fnum(data.counts.biographical)+' biographical and historical entries</h2></div>'+
+ '<a href="corpora/fiqh-coverage.html">Coverage &amp; sources</a></div>'+
+ '<p>All 68 core catalogue works and 16 supplementary sources are indexed here. The original collection offers reading material for 23 books. These historical sources have their own subject and are excluded from fiqh totals.</p>'+
+ '<p>Bibliographical data and source links credited to <a href="https://www.hanafiatlas.com/catalogue" target="_blank" rel="noopener noreferrer">Hanafi Biographical Atlas</a> and its cited research. Work profiles open the original site; its <a href="https://www.hanafiatlas.com/books" target="_blank" rel="noopener noreferrer">23-book reading collection</a> remains there.</p></section>';
+ const research=data.all.filter(n=>n.layer==="researched"&&n.subjects.includes("fiqh")&&n.kind==="work");
+ const imported=data.all.filter(n=>n.layer==="bibliographic"&&n.subjects.includes("fiqh"));
+ const schools=Object.entries(SCHOOLS).filter(([id])=>id!=="all"&&research.some(n=>n.schools.includes(id)));
+ const buttons=[["all","All schools"],...schools].map(([id,label])=>{
+  const count=id==="all"?research.length:research.filter(n=>n.schools.includes(id)).length;
+  return '<button type="button" data-fiqh-school="'+id+'" aria-pressed="'+(state.source==="research"&&state.school===id)+'">'+safe(label)+' <strong>'+fnum(count)+'</strong></button>';
+ }).join("");
+ const shown=filtered().filter(n=>n.kind==="work"||state.school==="historical").length;
+ const selected=state.school==="historical"?"historical jurists and circles":state.source==="research"?"researched works":"source records; cross-catalogue overlap may remain";
+ return '<section class="corpus-coverage" aria-label="Fiqh corpus coverage">'+
+ '<div class="coverage-heading"><div><span class="eyebrow">FIQH · DISTINCT WORKS</span><h2>'+fnum(research.length)+' researched works across the legal traditions</h2></div>'+
+ '<a href="corpora/fiqh-coverage.html">Coverage &amp; sources</a></div>'+
+ '<div class="coverage-schools" role="group" aria-label="Browse researched fiqh by madhhab">'+buttons+'</div>'+
+ '<div class="coverage-actions"><button type="button" data-corpus="research" aria-pressed="'+(state.source==="research")+'">Researched works</button>'+
+ '<button type="button" data-corpus="all" aria-pressed="'+(state.source==="all")+'">Include '+fnum(imported.length)+' imported records</button>'+
+ '<button type="button" data-early-jurists>Early jurists &amp; other circles</button>'+
+ '<button type="button" data-subject="biography">Hanafi biographical books</button></div>'+
+ '<p class="coverage-status" role="status">Showing '+fnum(shown)+' '+selected+'. Commentary, gloss and abridgment links carry their own evidence. '+
+ (state.view==="geography"||state.view==="regions"?'The geographical map covers only documented locations. <button type="button" data-view="timeline">See every work on the book timeline</button>.':
+ 'Author-death dates are labelled as chronological anchors; undated works remain accessible.')+'</p></section>';
 }
 function lanesFor(nodes){
  if(state.subject==="all")return SUBJECTS.filter(x=>x[0]!=="all").map(([id,label])=>({id,label,nodes:nodes.filter(n=>n.subjects.includes(id))})).filter(l=>l.nodes.length);
@@ -506,7 +567,7 @@ function viewTimeline(){
       '<rect x="'+(x-wide/2)+'" y="'+yy+'" width="'+wide+'" height="31" rx="5" fill="var(--panel)" stroke="var(--line)" />'+
       '<circle cx="'+(x-wide/2+7)+'" cy="'+(yy+16)+'" r="2.8" fill="var(--accent)"/>'+
       '<text x="'+(x-wide/2+14)+'" y="'+(yy+12)+'" fill="currentColor" font-size="10" font-weight="600">'+safe(truncate(n.title,15))+'</text>'+
-      '<text x="'+(x-wide/2+14)+'" y="'+(yy+24)+'" fill="var(--muted)" font-size="8.7">'+safe(type+yearLabel(n.year)+" · "+(n.layer==="audited"?"text":"catalogue"))+'</text></g>';
+      '<text x="'+(x-wide/2+14)+'" y="'+(yy+24)+'" fill="var(--muted)" font-size="8.7">'+safe(type+yearLabel(n.year)+" · "+(["audited","researched"].includes(n.layer)?"text":"catalogue"))+'</text></g>';
    }else{
     const key=lane.id+"@"+start;
     renderCache.clusters.set(key,items);
@@ -521,7 +582,7 @@ function viewTimeline(){
   const height=Math.max(85,ends.length*38+31);
   body+='<line x1="0" x2="'+W+'" y1="'+(y+height)+'" y2="'+(y+height)+'" stroke="var(--line)" stroke-opacity=".7"/>'+
   '<text x="13" y="'+(y+31)+'" fill="var(--ink)" font-size="12" font-weight="650">'+safe(truncate(lane.label,22))+'</text>'+
-  '<text x="13" y="'+(y+47)+'" fill="var(--muted)" font-size="10">'+lane.nodes.length.toLocaleString()+' source records</text>'+
+  '<text x="13" y="'+(y+47)+'" fill="var(--muted)" font-size="10">'+lane.nodes.length.toLocaleString()+(state.source==="research"?' works':' source records')+'</text>'+
   '<line x1="'+left+'" x2="'+(W-right)+'" y1="'+(y+height-6)+'" y2="'+(y+height-6)+'" stroke="var(--line)" stroke-opacity=".35"/>'+
   shapes;
   if(undated.length){
@@ -556,11 +617,11 @@ function viewTimeline(){
  const active=state.cluster&&renderCache.clusters.has(state.cluster)?renderClusterList(renderCache.clusters.get(state.cluster)):"";
  const countIn=nodes.filter(inWindow).length;
  const unresolved=nodes.filter(n=>n.year===null&&n.kind==="work").length;
- const sourced=nodes.filter(n=>n.yearKind==="verified_author_death_proxy").length;
+ const sourced=nodes.filter(n=>n.yearKind==="verified_author_death_proxy"||["researched","benchmark"].includes(n.layer)&&n.year!==null).length;
  const totals='<div class="atlas-chronology-coverage" aria-label="Date evidence coverage">'+
   '<span><strong>'+fnum(countIn)+'</strong> dated records within the time window</span>'+
   '<span><strong>'+fnum(sourced)+'</strong> records positioned by cited author death</span>'+
-  '<span><strong>'+fnum(unresolved)+'</strong> genuinely unplaced works</span>'+
+  '<span><strong>'+fnum(unresolved)+'</strong> works without a plotted date</span>'+
   (unresolved?'<button type="button" data-open-unplaced-all>Explore all undated records</button>':"")+
   '</div>';
  const note='<div class="plot-note"><span class="legend"><i class="swatch date"></i> Dated work or jurist</span>'+
@@ -584,13 +645,14 @@ function shelfInlineInspector(n){
  const sibs=(data.authorWorks.get(n.authorURL)||[]).filter(a=>a.id!==n.id);
  return '<div class="atlas-shelf-inspector" data-shelf-inspector aria-label="Selected source record">'+
  '<div class="atlas-shelf-inspector-header"><strong>Selected source · '+safe(n.title)+'</strong>'+
- '<span>'+safe(n.yearKind==="verified_author_death_proxy"?"Author-date anchor":"No source date")+'</span></div>'+
+ '<span>'+safe(n.year!==null?"Author-date anchor":"Date unresolved")+'</span></div>'+
  '<p>'+safe(n.author||"Author not specified")+' · '+safe(n.dateLabel)+'</p>'+
  '<p>'+safe(n.dateNote||"The source has no reliable date.")+'</p>'+
  '<div class="atlas-shelf-links">'+
  (source?'<a href="'+safe(source)+'" target="_blank" rel="noopener noreferrer">Original catalogue record</a>':"")+
  (author?'<a href="'+safe(author)+'" target="_blank" rel="noopener noreferrer">Author biography</a>':"")+
  (date&&date!==author?'<a href="'+safe(date)+'" target="_blank" rel="noopener noreferrer">Death-date source</a>':"")+
+ (["researched","benchmark"].includes(n.layer)?n.sourceIds.map(id=>data.sources.get(id)).filter(s=>s&&validURL(s.url)).map(s=>'<a href="'+safe(validURL(s.url))+'" target="_blank" rel="noopener noreferrer">'+safe(s.title||"Cited bibliography")+'</a>').join(""):"")+
  '<button type="button" data-show-network="'+safe(n.id)+'">Open work profile</button></div>'+
  (sibs.length?'<p>'+sibs.length+' other catalogue entries assigned to this author (not necessarily textual dependencies).</p>'+
  '<div class="atlas-shelf-siblings">'+sibs.slice(0,8).map(w=>'<button type="button" data-cluster-work="'+safe(w.id)+'">'+safe(truncate(w.title,42))+'</button>').join("")+'</div>':"")+
@@ -606,9 +668,9 @@ function renderClusterList(arr){
  const selected=rows.find(x=>x.id===state.selected);
  return '<section data-time-workbench class="atlas-evidence-shelf" tabindex="-1" role="region" aria-label="Interactive source-record workbench">'+
  '<div class="atlas-shelf-head"><div><span class="eyebrow">'+(undated?'UNDATED SOURCE RECORDS':'WORKS WITH DATED EVIDENCE')+'</span>'+
- '<h3>'+(undated?'Browse works without an attested date':'Examine sources in this chronological group')+
+ '<h3>'+(undated?'Browse works without a fixed date':'Examine sources in this chronological group')+
  ' <small>'+fnum(rows.length)+' / '+fnum(arr.length)+'</small></h3>'+
- '<p>'+(undated?'These catalogue records cannot be assigned a year on current evidence. Open any book or author biography, or search this group without leaving the historical map.':
+ '<p>'+(undated?'These works have unresolved, approximate or disputed chronology. Inspect each book’s date notes and sources, or search this group without leaving the historical map.':
  'Author-death anchors and composition dates are different kinds of evidence. Open a record to inspect the date and its source.')+'</p></div>'+
  '<button type="button" data-close-shelf>Close</button></div>'+
  '<label class="atlas-shelf-search">Search this source group<input data-shelf-search type="search" autocomplete="off" placeholder="Title, author, Arabic name…" value="'+safe(state.clusterSearch)+'"/></label>'+
@@ -632,7 +694,7 @@ function viewCatalogue(){
  const chunk=list.slice((page-1)*28,page*28);
  return {html:'<div class="canvas-outer"><div class="browse-grid">'+chunk.map(bookButton).join("")+'</div>'+pagination(page,Math.ceil(list.length/28),"catalogue")+'</div>'+
   '<p class="plot-note">A catalogue entry records a work or witness in its source; matching titles are not automatically the same historical work.</p>',
- title:"Work catalogue · "+sceneTitle(),sub:fnum(list.length)+" source records matching the current filters"};
+ title:"Work catalogue · "+sceneTitle(),sub:fnum(list.length)+(state.source==="research"?" researched works":" source records")+" matching the current filters"};
 }
 function linkRows(rel,previous){
  const id=previous?rel.from:rel.to;
@@ -805,7 +867,9 @@ function recordPanel(){
  if(!n)return '<div class="side-empty">Select a work from the historical map, search, or source network to see its dates, sources, provenance and recorded reception.</div>';
  const typ=n.kind==="person"?"Historical jurist / authority":n.kind!=="work"?"Historical context":"Textual work";
  const incoming=data.in.get(n.id)||[],outgoing=data.out.get(n.id)||[];
- const caution=n.layer==="bibliographic"?"This is a source-linked catalogue record. It has not been reconciled with other catalogues or checked against manuscripts. No intellectual relationship follows from school classification or chronological proximity.":
+ const caution=n.layer==="researched"?"This work's bibliographic identity is supported by the sources below. Full-text collation and exhaustive coverage of its reception are separate tasks.":
+ n.layer==="benchmark"?"This record is credited to the Hanafi Biographical Atlas. Its date, attribution and survival qualifications follow that source; it is not counted as a fiqh work.":
+ n.layer==="bibliographic"?"This is imported catalogue metadata. Subject labels and cross-catalogue identity have not all been reviewed. No intellectual relationship follows from school classification or chronological proximity.":
  n.kind==="person"?"A person's institutional school and authored works must be established separately; no artificial book relations are drawn.":
  "The wording and certainty of each textual relationship are controlled by its cited evidence. Absence from this register does not mean historical isolation.";
  const sources=sourceCards(n);
@@ -817,7 +881,11 @@ function recordPanel(){
  '<dl class="record-dl"><dt>Chronology</dt><dd>'+safe(n.dateLabel||"Unplaced")+'</dd>'+
  '<dt>Date means</dt><dd>'+safe(n.dateNote||n.yearKind||"Date not independently established")+'</dd>'+
  '<dt>Subject(s)</dt><dd>'+safe(n.subjects.map(s=>NAMES[s]||s).join(", "))+'</dd>'+
+ (n.genre?'<dt>Literary form</dt><dd>'+safe(n.genre)+'</dd>':"")+
+ (n.survival&&n.survival!=="not reviewed"&&n.survival!=="unrecorded"?'<dt>Survival / availability</dt><dd>'+safe(({ms:"Manuscript reported",partly:"Partly surviving",printed:"Printed edition reported",lost:"Lost / not known to survive"})[n.survival]||n.survival)+'</dd>':"")+
  (n.region?'<dt>Region label</dt><dd>'+safe(n.region)+'</dd>':"")+
+ (n.placeNote?'<dt>Place qualification</dt><dd>'+safe(n.placeNote)+'</dd>':"")+
+ (n.authorSchool?'<dt>Author school (source)</dt><dd>'+safe(n.authorSchool)+'</dd>':"")+
  (n.schoolEvidence?'<dt>Classification</dt><dd>'+safe(n.schoolEvidence)+'</dd>':"")+
  (n.version?'<dt>Source version</dt><dd>'+safe(truncate(n.version,80))+'</dd>':"")+'</dl>'+
  (n.note?'<p class="record-text">'+safe(n.note)+'</p>':"")+
@@ -877,8 +945,8 @@ function searchResults(q){
  const words=normal(q);if(!words)return [];
  return data.all.filter(n=>n.searchText.includes(words))
   .sort((a,b)=>{const la=normal(a.title),lb=normal(b.title);
-   const sa=(la.startsWith(words)?100:0)+(a.pinned?30:0)+(a.layer==="audited"?25:0)+(a.degree||0);
-   const sb=(lb.startsWith(words)?100:0)+(b.pinned?30:0)+(b.layer==="audited"?25:0)+(b.degree||0);
+   const sa=(la.startsWith(words)?100:0)+(a.pinned?30:0)+(a.layer==="researched"?80:0)+(a.layer==="audited"?25:0)+(a.degree||0);
+   const sb=(lb.startsWith(words)?100:0)+(b.pinned?30:0)+(b.layer==="researched"?80:0)+(b.layer==="audited"?25:0)+(b.degree||0);
    return sb-sa||la.localeCompare(lb);
   }).slice(0,MAX_SEARCH);
 }
@@ -895,7 +963,7 @@ function render(first=false){
  if(!data.loadReady)return;
  if(!data.byId.has(state.selected))selectFeatured(false);
  const geographic=state.view==="geography"||state.view==="regions";
- ROOT.innerHTML=hero()+toolsUI()+
+ ROOT.innerHTML=hero()+toolsUI()+corpusCoverage()+
  '<div class="workplace'+(geographic?' geo-mode':'')+'">'+plotView()+
  (geographic?'':'<aside class="sidebar" aria-label="Work and evidence details"><div class="side-head"><h2>Selected work · evidence</h2>'+
  '<button type="button" data-close-side>Clear focus</button></div><div class="side-content">'+recordPanel()+'</div></aside>')+'</div>';
@@ -918,6 +986,18 @@ function onClick(e){
  const summary=e.target.closest(".atlas-advanced summary");if(summary){state.advancedOpen=!state.advancedOpen;return;}
  if(el.hasAttribute("data-subject")){
   initialSubject(el.getAttribute("data-subject"));writeHash(true);render();return;
+ }
+ if(el.hasAttribute("data-fiqh-school")){
+  state.school=el.getAttribute("data-fiqh-school");state.source="research";state.search="";state.family="";state.region="";
+  state.cluster="";state.bookPage=1;state.browseMode="all";selectFeatured(false);writeHash(true);render();return;
+ }
+ if(el.hasAttribute("data-corpus")){
+  state.source=el.getAttribute("data-corpus");state.cluster="";state.bookPage=1;
+  selectFeatured(false);writeHash(true);render();return;
+ }
+ if(el.hasAttribute("data-early-jurists")){
+  state.source="all";state.school="historical";state.view="timeline";state.search="";state.family="";state.region="";state.cluster="";
+  selectFeatured(false);writeHash(true);render();return;
  }
  if(el.hasAttribute("data-view")){
   state.view=el.getAttribute("data-view");state.cluster="";state.clusterSearch="";state.evidence="";
@@ -984,7 +1064,7 @@ function onClick(e){
   if(b>a+9)changeRange(a,b);else ROOT.querySelector("[data-year-to]")?.setCustomValidity("End year must be at least ten years after the start");return;
  }
  if(el.hasAttribute("data-clear-family")){state.family="";writeHash();render();return}
- if(el.hasAttribute("data-reset")){state.school="all";state.family="";state.source="all";state.edgeType="all";state.certainty="all";state.search="";state.region="";state.cluster="";state.clusterSearch="";state.bookPage=1;writeHash();render();return}
+ if(el.hasAttribute("data-reset")){state.school="all";state.family="";state.source=defaultSource();state.edgeType="all";state.certainty="all";state.search="";state.region="";state.cluster="";state.clusterSearch="";state.bookPage=1;selectFeatured(false);writeHash();render();return}
  if(el.hasAttribute("data-evidence")){state.evidence=el.getAttribute("data-evidence");render();return}
  if(el.hasAttribute("data-close-evidence")){state.evidence="";render();return}
  if(el.hasAttribute("data-place")){state.region=el.getAttribute("data-place");state.view="catalogue";state.bookPage=1;writeHash();render();return}
@@ -999,6 +1079,7 @@ function onChange(e){
   state[key]=t.value;state.cluster="";state.bookPage=1;state.clusterPage=1;
   if(key==="family"&&t.value){const f=data.families.find(f=>f.id===t.value);if(f&&data.byId.has("c:"+f.root))state.selected="c:"+f.root;state.source="all";state.school="all";}
   if(key==="school"&&t.value!=="all"&&state.selected&&!data.byId.get(state.selected)?.schools.includes(t.value))selectFeatured(false);
+  if(key==="source")selectFeatured(false);
   writeHash();render();return;
  }
  // Do not rebuild the DOM on blur from a search-result click:
@@ -1081,7 +1162,7 @@ ROOT.addEventListener("keydown",e=>{
 });
 window.addEventListener("popstate",()=>{if(!data.loadReady)return;readHash();render()});
 window.addEventListener("hashchange",()=>{if(!data.loadReady)return;readHash();render()});
-window.GNAtlasUnified={debug:()=>({ready:data.loadReady,subject:state.subject,view:state.view,selected:state.selected,
+window.GNAtlasUnified={debug:()=>({ready:data.loadReady,subject:state.subject,view:state.view,selected:state.selected,source:state.source,school:state.school,
  browseMode:state.browseMode,browseLength:(state.view==="network"||state.view==="timeline")?browseWorks().length:null,
  total:data.all.length,edges:data.edges.length,counts:data.counts,lanes:renderCache.lanes.length,
  currentMatches:filtered().length,errors:data.errors.slice()}),

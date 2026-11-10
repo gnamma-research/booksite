@@ -14,3 +14,16 @@
 @media(max-width:820px){.masthead{padding:11px 16px}.masthead nav{gap:11px}.masthead nav a{font-size:11px}.hero{padding:21px 16px 15px}.hero-metrics{justify-content:start}.subjects{padding:9px 10px}.control-shell{padding:11px}.workplace{display:flex;flex-direction:column}.plot{width:100%;padding:13px 11px}.sidebar{width:100%;border-left:0;border-top:1px solid var(--line);min-height:0}.side-content{max-height:none}.network-cols{gap:8px;padding:10px}.network-wrap{padding:5px}}
 @media(max-width:560px){.brand{font-size:25px}.brand img{width:31px;height:31px}.masthead nav{gap:8px}.masthead nav a{font-size:10px}.masthead nav a:last-child{display:none}.hero h1{font-size:30px}.hero-desc{font-size:12px}.hero-metrics span{text-align:left}.hero-metrics strong{font-size:15px}.primary-controls{gap:7px}.search-holder{flex-basis:100%}.viewtabs{width:100%;display:flex;overflow-x:auto;flex-wrap:nowrap}.viewtabs button{padding:8px 10px;min-height:35px;flex:0 0 auto}.subcontrols{gap:7px}.year-controls{width:100%;justify-content:start}.network-cols{grid-template-columns:minmax(0,1fr);gap:12px}.network-col.root-col{order:-1}.net-list{grid-template-columns:repeat(2,minmax(0,1fr))}.net-card strong{font-size:11px}.network-root{min-height:0}.browse-grid{grid-template-columns:minmax(0,1fr)}.plot-head h2{font-size:20px}.plot-head{gap:5px}.control-shell{padding:10px 9px}.subject button{font-size:11px}.footer{padding:18px 12px}.sidebar .side-content{padding:14px 12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.corpus-coverage{margin:0 auto 1.2rem;max-width:1700px;padding:1.2rem 1.5rem;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--ink)}
+.coverage-heading{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.coverage-heading h2{font-size:1.3rem;line-height:1.35;margin:.3rem 0 .7rem}
+.coverage-heading>a{font-size:.9rem;white-space:nowrap;color:var(--accent)}
+.coverage-schools,.coverage-actions{display:flex;flex-wrap:wrap;gap:.5rem;margin:.75rem 0}
+.coverage-schools button,.coverage-actions button{padding:.55rem .8rem;border:1px solid var(--line);border-radius:7px;background:var(--panel);color:var(--ink);font:inherit;font-size:.88rem;cursor:pointer}
+.coverage-schools button strong{display:inline-block;margin-inline-start:.45rem;color:var(--accent);font-variant-numeric:tabular-nums}
+.coverage-schools button[aria-pressed=true],.coverage-actions button[aria-pressed=true]{border-color:var(--accent);background:var(--accentbg);font-weight:650}
+.coverage-actions{border-top:1px solid var(--line);padding-top:.65rem}
+.coverage-actions button{font-size:.8rem}
+.corpus-coverage p{font-size:.86rem;line-height:1.6;color:var(--muted);margin:.65rem 0 0}
+.coverage-status button{font:inherit;color:var(--accent);background:transparent;border:0;text-decoration:underline;cursor:pointer;padding:0}
+@media(max-width:600px){.corpus-coverage{padding:1rem;margin:.75rem .5rem}.coverage-heading h2{font-size:1.1rem}.coverage-schools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.coverage-schools button{text-align:start;padding:.55rem;font-size:.8rem}.coverage-schools button strong{float:inline-end}.coverage-actions button{flex:1 1 44%;font-size:.75rem}.coverage-heading>a{white-space:normal}}

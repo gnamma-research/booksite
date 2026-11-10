@@ -48,7 +48,14 @@ async def main():
         response=await page.goto(ROOT+"#view=network&subject=intellectual&work_id=c:avicenna_shifa",wait_until="domcontentloaded",timeout=80000)
         check(response.status==200,"Atlas route unavailable")
         await page.wait_for_function("() => window.GNAtlasUnified?.debug().ready",timeout=90000)
+        initial=await state(page)
+        check(initial["d"]["browseMode"]=="all","Text browsing must include unlinked works by default")
+        # This part exercises a chain of works with documented relationships.
+        await page.locator('[data-browse-mode="linked"]').click()
         a=await state(page)
+        check(a["d"]["browseMode"]=="linked","Explicit recorded-relationship scope failed")
+        check(a["d"]["browseLength"]<initial["d"]["browseLength"],"Recorded-relationship filter did not narrow all works")
+        check("browse=linked" in a["hash"],"Explicit linked scope is absent from the permalink")
         check(a["d"]["selected"]=="c:avicenna_shifa","Original focused work lost")
         check(a["graph"]==1 and a["rail"]==1,"Work rail and source graph do not coexist")
         check(a["networkRecords"]==SHIFA_LINKS,f"Expected all {SHIFA_LINKS} directly recorded relations, found {a['networkRecords']}")
@@ -105,19 +112,19 @@ async def main():
         h=await state(page)
         check(h["graph"]==1 and h["railActive"]==h["d"]["selected"],"Rail scroll did not redraw and recenter graph")
 
-        # All catalogued works are opt-in, including those with no verified edges.
+        # Returning to the default includes works without recorded relationships.
         await page.locator('[data-browse-mode="all"]').click()
         z=await state(page)
         check(z["d"]["browseMode"]=="all","All catalogued scope failed")
         check(z["d"]["browseLength"]>a["d"]["browseLength"],"Unlinked works inaccessible from navigation")
-        check("browse=all" in z["hash"],"Browse scope does not survive permalink")
+        check("browse=linked" not in z["hash"],"Returning to all works left the linked-only permalink active")
         await page.reload(wait_until="domcontentloaded")
         await page.wait_for_function("() => window.GNAtlasUnified?.debug().ready",timeout=90000)
         check((await state(page))["d"]["browseMode"]=="all","Deep-link reload lost browse scope")
 
         # Mobile swipe changes focused text without clicking an individual card.
         mobile=await browser.new_page(viewport={"width":390,"height":844},is_mobile=True,has_touch=True)
-        await mobile.goto(ROOT+"#view=network&subject=intellectual&work_id=c:avicenna_shifa",wait_until="domcontentloaded",timeout=80000)
+        await mobile.goto(ROOT+"#view=network&subject=intellectual&work_id=c:avicenna_shifa&browse=linked",wait_until="domcontentloaded",timeout=80000)
         await mobile.wait_for_function("() => window.GNAtlasUnified?.debug().ready",timeout=90000)
         before=(await state(mobile))["d"]["selected"]
         await mobile.locator('[data-text-rail]').evaluate("""rail => {
