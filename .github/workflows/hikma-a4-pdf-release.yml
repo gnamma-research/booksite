@@ -1,6 +1,16 @@
 name: Hikma - verify and publish nine A4 PDFs
 on:
   workflow_dispatch:
+  pull_request:
+    branches: [master]
+    paths:
+      - 'texts/al-tabatabai/*/data/book.json'
+      - 'texts/al-tabatabai/nihayat-al-hikma/data/editorial-supplement.json'
+      - 'texts/al-tabatabai/assets/hikma-pdf.css'
+      - 'texts/al-tabatabai/assets/hikma-rich-text.js'
+      - 'texts/al-tabatabai/assets/hikma-rich-text.css'
+      - 'texts/al-tabatabai/tools/build-pdfs.cjs'
+      - '.github/workflows/hikma-a4-pdf-release.yml'
   push:
     branches: [master]
     paths:
@@ -16,10 +26,10 @@ permissions:
   contents: write
 
 concurrency:
-  group: hikma-nine-pdf-editions
-  # Never repeatedly abort a costly publication when other editors commit.
-  # Its existing source-hash guard refuses to publish stale PDFs safely.
-  cancel-in-progress: false
+  group: hikma-nine-pdf-editions-${{ github.ref }}
+  # Preview builds cannot hold up public releases. Replace obsolete PR previews;
+  # master publication retains the source-hash guard and is never interrupted.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build-and-release:
@@ -78,6 +88,7 @@ jobs:
           if-no-files-found: warn
           retention-days: 30
       - name: Publish only verified PDF files on current master
+        if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
         shell: bash
         run: |
           set -euo pipefail

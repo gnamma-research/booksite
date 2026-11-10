@@ -461,6 +461,13 @@
   function resolveHash() {
     try { return state.byHash.get(decodeURIComponent(location.hash.slice(1))); } catch (_) { return null; }
   }
+  function currentReadingUnit() {
+    const nodes = [...document.querySelectorAll('.passage')];
+    const line = ($('reading-toolbar')?.getBoundingClientRect().bottom || 110) + 60;
+    let chosen = nodes[0];
+    for (const node of nodes) { if (node.getBoundingClientRect().top <= line) chosen = node; else break; }
+    return state.byUnit.get(chosen?.dataset.unit) || state.active?.units[0] || state.units[0];
+  }
   function navigate(target, writeHash) {
     if (!target || !target.group) return;
     state.active = target.group;
@@ -598,7 +605,7 @@
   $('order-toggle').addEventListener('click', () => { state.preferences.order = state.preferences.order === 'english-first' ? 'arabic-first' : 'english-first'; applyPreferences(true); });
   $('font-decrease').addEventListener('click', () => { state.preferences.size = Math.max(16, state.preferences.size - 1); applyPreferences(true); });
   $('font-increase').addEventListener('click', () => { state.preferences.size = Math.min(26, state.preferences.size + 1); applyPreferences(true); });
-  $('reading-view').addEventListener('change', () => { state.preferences.view = $('reading-view').value; applyPreferences(true); render(); if (state.active) navigate({ group: state.active }, true); });
+  $('reading-view').addEventListener('change', () => { const unit = currentReadingUnit(); state.preferences.view = $('reading-view').value; applyPreferences(true); render(); if (unit) navigate({ group: unit.group, unit }, true); });
   $('glossary-open').addEventListener('click', event => openDialog($('glossary-dialog'), event.currentTarget));
   for (const id of ['sources-open', 'edition-open']) $(id).addEventListener('click', event => openDialog($('sources-dialog'), event.currentTarget));
   $('glossary-search').addEventListener('input', renderGlossary);
@@ -719,7 +726,7 @@
     toggleBookmark(id) { const unit=state.byUnit.get(id); if(unit) toggleBookmark(unit); },
     openNote(id, opener) { const unit=state.byUnit.get(id); if(unit) openNote(unit, opener); },
     saveDesk() { writeStorage(prefix+'bookmarks',[...state.bookmarks]); writeStorage(prefix+'notes',state.notes); render(); document.dispatchEvent(new CustomEvent('hikma:desk')); },
-    currentUnit() { return state.active?.units[0] || state.units[0]; }
+    currentUnit() { return currentReadingUnit(); }
   });
   loadBook();
 })();

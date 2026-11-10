@@ -29,6 +29,9 @@ async function main(type){const browser=await type.launch({headless:true});try{
    await page.locator('#glossary-open').click();await page.locator('#study-dictionary-search').fill('Mental existence');
    const sense=page.locator('[data-term="mental-existence"]');await sense.locator('.dictionary-book').first().waitFor({state:'attached',timeout:30000});
    assert.equal(await sense.locator('.dictionary-book').count(),3);
+   const formattedQuote=sense.locator('.dictionary-hit').filter({has:page.locator('a[href*="M-C-10"]')}).locator('blockquote');
+   assert.ok(await formattedQuote.locator('strong').count()>0,'Reviewed quote emphasis must render as formatted text');
+   assert.doesNotMatch(await formattedQuote.textContent(),/\*\*/);
    const n=sense.locator('.dictionary-book[data-book="N"]');assert.ok((await n.textContent()).includes('Nihāyat'));
    const hit=n.locator('a[href*="N-III-01"]').first();assert.ok(await hit.count());
    assert.match(await n.textContent(),/Automatic phrase matches|word occurrence/);
@@ -114,6 +117,7 @@ async function main(type){const browser=await type.launch({headless:true});try{
  await check(type.name()+' print range and cancellation preserve reading choices',async()=>{
    await page.goto(base+'#passage-M-V-28');await ready(page);
    await page.locator('#reading-view').selectOption('quiet');
+   assert.match(page.url(),/M-V-28/,'Changing the view must retain the selected subsection within its chapter');
    await page.evaluate(()=>{
      window.print=()=>{};
      const unit=window.HikmaReader.state.byUnit.get('M-V-28');

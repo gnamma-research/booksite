@@ -5,14 +5,15 @@
   "project": "Nihayat–Muzaffar–Bidayat Hikma reader",
   "repository": "gnamma-research/booksite",
   "preservation": {
-    "status": "saved-remotely",
+    "status": "checkpoint-manifest-in-containing-commit; exact remote commit recorded after upload",
     "branch": "nihayat4-stage10-20261111",
-    "contentCommit": "4a92fdbc54da37b9859a00fb567dc4a5a6a87bc4",
+    "contentCommit": null,
     "previousRemoteStage9Commit": "44fa9a086a17dfe446295f01d076b0dd6ef31959",
     "originalDraftPullRequest": 288,
     "originalDraftPullRequestStatus": "open-draft-not-merged",
     "remotePublicationOfRecoveredWork": false,
-    "activeDraftPullRequest": 289
+    "activeDraftPullRequest": 289,
+    "priorContentCommit": "4a92fdbc54da37b9859a00fb567dc4a5a6a87bc4"
   },
   "published": {
     "stage": 8,
@@ -70,8 +71,9 @@
     },
     "verifiedStoredUnitHashPairs": 83,
     "verifiedDistinctEvidenceFiles": 210,
-    "pendingIntegration": true,
-    "readingGrade": "Recovered prior AI-assisted whole-unit 1404 facsimile and 1428 edited digital comparisons. File integrity verified on recovery; no fresh full scholarly rereading or manuscript/human certification claimed."
+    "pendingIntegration": false,
+    "readingGrade": "Recovered prior AI-assisted whole-unit 1404 facsimile and 1428 edited digital comparisons. File integrity verified on recovery; no fresh full scholarly rereading or manuscript/human certification claimed.",
+    "stage10Receipt": "audits/nihaya-stage10-integration-receipt.json"
   },
   "sourceArchive": {
     "filename": "Nihayat4_Stage9_Recovered_Research_2026-11-10.zip",
@@ -86,22 +88,24 @@
   "validation": {
     "preparedRepositoryFilesHashMatched": 82,
     "recoveredReportFilesHashMatched": 5,
-    "structuralAudit": "passed; 140/111/136 paired units, zero failures and warnings",
+    "structuralAudit": "passed on integrated 93-comparison sources; 140/111/136 paired units, zero failures and warnings",
     "priorRemoteReaderChecks": 51,
     "priorRemoteStudyToolsSuite": "failed at Markdown quotation assertion on old commit; later recovered local fix is present",
-    "latestBrowserRegressionStatus": "not-yet-verified-on-recovered-revision",
+    "latestBrowserRegressionStatus": "51 checks passed on 4a92fdbc; integrated revision pending",
     "latestBrowserRegressionChecks": 51,
     "latestStudyToolsChecks": 30,
     "recoveredReleasePdfVerificationCount": 0,
-    "wholeNihayaReviewReperformedDuringRecovery": false
+    "wholeNihayaReviewReperformedDuringRecovery": false,
+    "latestStudyToolsStatus": "12/30 passed on 4a92fdbc; subsection defect fixed, new run pending",
+    "replayProtection": "passed: repeated applied plan refused before mutation; canonical hashes unchanged"
   },
   "nextWork": {
-    "firstTask": "Reconcile and incorporate all 83 recovered reports and the 3 new V.5–7 comparisons. Exact early/late integration plans are in preparation; check saved files before repeating.",
-    "firstNewExternalComparison": "N-VI-07",
+    "firstTask": "Continue fresh comparisons from N-VI-10. All 83 recovered reports and the nine fresh Stage X comparisons are incorporated. Verify the current checkpoint before opening source pages.",
+    "firstNewExternalComparison": "N-VI-10",
     "remainingExternalGroups": [
       {
-        "range": "N-VI-07–N-VI-21",
-        "count": 15
+        "range": "N-VI-10–N-VI-21",
+        "count": 12
       },
       {
         "range": "N-VII-01–N-VII-09",
@@ -112,14 +116,11 @@
         "count": 11
       },
       {
-        "range": "N-XII-11–N-XII-24",
-        "count": 14
+        "range": "N-XII-14–N-XII-24",
+        "count": 11
       }
     ],
     "remainingExternalUnitIds": [
-      "N-VI-07",
-      "N-VI-08",
-      "N-VI-09",
       "N-VI-10",
       "N-VI-11",
       "N-VI-12",
@@ -152,9 +153,6 @@
       "N-VIII-09",
       "N-VIII-10",
       "N-VIII-11",
-      "N-XII-11",
-      "N-XII-12",
-      "N-XII-13",
       "N-XII-14",
       "N-XII-15",
       "N-XII-16",
@@ -180,6 +178,7 @@
   ],
   "restartRules": [
     "The current field supersedes the recovered historical snapshot. The old recovery guard checks the original Stage IX bytes only; intentional Stage X changes must not be reset to satisfy it.",
+    "Run verify-current-checkpoint.py against the current manifest. A mismatch means inspect newer work, never reset it to satisfy an older snapshot.",
     "Read the short start file and this state first; do not recursively load previous chats or every historical handoff.",
     "Read only the current unit/report/source window; use programmatic summaries for large files.",
     "Check saved effects before retrying a failed operation; preserve newer branch changes.",
@@ -190,29 +189,54 @@
   "recoveryManifest": "audits/recovery-stage9-2026-11-10/repo-file-manifest.json",
   "current": {
     "stage": 10,
-    "status": "saved-work-in-progress",
+    "status": "source-checkpoint-awaiting-release-validation",
     "pairedUnitsByBook": {
       "muzaffar-al-mantiq": 140,
       "bidayat-al-hikma": 111,
       "nihayat-al-hikma": 136
     },
     "combinedUnits": 387,
-    "nihayaExternalComparisonRecords": 87,
-    "nihayaExternalComparisonsIntegrated": 1,
-    "nihayaExternalComparisonsRemaining": 49,
-    "pendingRecoveredReports": 83,
-    "pendingNewReports": 3,
+    "nihayaExternalComparisonRecords": 93,
+    "nihayaExternalComparisonsIntegrated": 93,
+    "nihayaExternalComparisonsRemaining": 43,
+    "pendingRecoveredReports": 0,
+    "pendingNewReports": 0,
     "newComparisonIds": [
       "N-V-05",
       "N-V-06",
-      "N-V-07"
+      "N-V-07",
+      "N-VI-07",
+      "N-VI-08",
+      "N-VI-09",
+      "N-XII-11",
+      "N-XII-12",
+      "N-XII-13"
     ],
     "newComparisonReport": "audits/nihaya-external-stage10-new.json",
     "newIntegrationPlan": "audits/nihaya-stage10-v-integration.json",
-    "readerFixes": 3,
+    "readerFixes": 5,
     "readerQaRecord": "audits/nihayat-stage10-reader-qa.json",
     "remoteReaderRun": 42921111094,
-    "remoteReaderStatus": "in-progress",
-    "newPdfCount": 0
+    "remoteReaderStatus": "first-run-failed-at-subsection-retention; repair awaiting integrated-revision run",
+    "newPdfCount": 0,
+    "externalComparisonRegister": "audits/nihaya-external-comparison-register.json",
+    "integrationReceipt": "audits/nihaya-stage10-integration-receipt.json",
+    "checkpointManifest": "audits/nihayat-stage10-checkpoint-manifest.json",
+    "textualDecisions": 73,
+    "arabicStringReplacements": 74,
+    "explicitLaterEditorialEmendations": 40,
+    "unfootnotedLaterReadingsAdopted": 16,
+    "newComparisonReports": [
+      "audits/nihaya-external-stage10-new.json",
+      "audits/nihaya-stage10-vi7-9-review.json",
+      "audits/nihaya-stage10-xii11-13-review.json"
+    ],
+    "integrationPlans": [
+      "audits/nihaya-stage10-early-integration.json",
+      "audits/nihaya-stage10-late-integration.json",
+      "audits/nihaya-stage10-v-integration.json",
+      "audits/nihaya-stage10-vi7-9-integration.json",
+      "audits/nihaya-stage10-xii11-13-integration.json"
+    ]
   }
 }

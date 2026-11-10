@@ -1,5 +1,5 @@
 /* Shared study tools: reviewed connections, sense-based dictionary, private desk.
-   All published source strings are rendered as text, never executable markup. */
+   Published strings are escaped; quote emphasis uses the shared safe renderer. */
 (() => {
   'use strict';
   const $ = id => document.getElementById(id);
@@ -188,7 +188,7 @@
       const section=make('section','dictionary-book');section.dataset.book=book;section.append(make('h4','',bookNames[book]));
       const discussions=(term.discussions||[]).filter(d=>d.unit[0]===book);
       const recorded=(term.recordedReferences||[]).filter(d=>d.unit[0]===book&&!discussions.some(x=>x.unit===d.unit));
-      if(discussions.length){section.append(make('p','occurrence-kind','Reviewed discussions'));for(const item of discussions){const box=make('div','dictionary-hit');box.append(passageLink(item),make('p','',item.note||item.role||'Discussion'));if(item.quote)box.append(make('blockquote','',item.quote));section.append(box);}}
+      if(discussions.length){section.append(make('p','occurrence-kind','Reviewed discussions'));for(const item of discussions){const box=make('div','dictionary-hit');box.append(passageLink(item),make('p','',item.note||item.role||'Discussion'));if(item.quote){const quote=make('blockquote');quote.innerHTML=HikmaRichText.inline(item.quote);box.append(quote);}section.append(box);}}
       if(recorded.length){const refs=make('details','study-small-details');refs.append(make('summary','',recorded.length+' recorded glossary '+(recorded.length===1?'reference':'references')));refs.append(make('p','dialog-intro','Preserved from the edition’s glossary; these are separate from newly reviewed cross-text connections.'));for(const r of recorded)refs.append(passageLink(r));section.append(refs);}
       const hits=(term.occurrences||[]).filter(o=>o.unit[0]===book);
       if(hits.length){const lex=make('details','study-small-details lexical-occurrences');lex.append(make('summary','',hits.length+' word '+(hits.length===1?'occurrence':'occurrences')+' · inspect context'));lex.append(make('p','dialog-intro','Automatic phrase matches in the current text. A match may be an example, an incidental mention or another sense; it does not create a philosophical connection.'));
