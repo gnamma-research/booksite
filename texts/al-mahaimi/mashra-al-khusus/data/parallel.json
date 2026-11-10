@@ -1889,6 +1889,15 @@
         "printed_locator": "transcription printed p. 236; forum lines 281, 284",
         "label": "The first text: Absolute nondetermination"
       }
+    ],
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT235",
+        "label": "Qūnawī original p. 235 [37 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 37,
+        "alignment": "lexical correspondence in shared digital source only"
+      }
     ]
   },
   {
@@ -1973,6 +1982,15 @@
         "printed_locator": "transcription printed p. 236; forum lines 281, 284",
         "label": "The first text: Absolute nondetermination"
       }
+    ],
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT236",
+        "label": "Qūnawī original p. 236 [57 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 57,
+        "alignment": "lexical correspondence in shared digital source only"
+      }
     ]
   },
   {
@@ -2019,6 +2037,15 @@
         "target_id": "QNW-CON-001-B",
         "printed_locator": "transcription printed p. 236; forum lines 285–286",
         "label": "The first text: knowledge and first determination"
+      }
+    ],
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT236",
+        "label": "Qūnawī original p. 236 [64 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 64,
+        "alignment": "lexical correspondence in shared digital source only"
       }
     ]
   },
@@ -2084,6 +2111,15 @@
         "printed_locator": "transcription printed p. 236; forum lines 285–286",
         "label": "The first text: knowledge and first determination"
       }
+    ],
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT236",
+        "label": "Qūnawī original p. 236 [31 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 31,
+        "alignment": "lexical correspondence in shared digital source only"
+      }
     ]
   },
   {
@@ -2120,6 +2156,15 @@
         "target_id": "QNW-CON-001-C",
         "printed_locator": "transcription printed pp. 236–237; forum lines 287–292",
         "label": "The first text: two ways of considering the known"
+      }
+    ],
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT236",
+        "label": "Qūnawī original p. 236 [43 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 43,
+        "alignment": "lexical correspondence in shared digital source only"
       }
     ]
   },
@@ -2162,6 +2207,15 @@
         "target_id": "QNW-CON-001-C",
         "printed_locator": "transcription printed pp. 236–237; forum lines 287–292",
         "label": "The first text: two ways of considering the known"
+      }
+    ],
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT236",
+        "label": "Qūnawī original p. 236 [21 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 21,
+        "alignment": "lexical correspondence in shared digital source only"
       }
     ]
   },
@@ -2210,6 +2264,15 @@
         "printed_locator": "transcription printed p. 237; forum lines 293–299",
         "label": "The next text: predication and three grades of entailment"
       }
+    ],
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT237",
+        "label": "Qūnawī original p. 237 [79 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 79,
+        "alignment": "lexical correspondence in shared digital source only"
+      }
     ]
   },
   {
@@ -2247,6 +2310,15 @@
         "printed_locator": "transcription printed p. 237; forum lines 293–299",
         "label": "The next text: predication and three grades of entailment"
       }
+    ],
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT237",
+        "label": "Qūnawī original p. 237 [69 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 69,
+        "alignment": "lexical correspondence in shared digital source only"
+      }
     ]
   },
   {
@@ -2283,6 +2355,15 @@
         "target_id": "QNW-CON-002-A",
         "printed_locator": "transcription printed p. 237; forum lines 293–299",
         "label": "The next text: predication and three grades of entailment"
+      }
+    ],
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT237",
+        "label": "Qūnawī original p. 237 [33 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 33,
+        "alignment": "lexical correspondence in shared digital source only"
       }
     ]
   },
@@ -2336,6 +2417,15 @@
         "printed_locator": "transcription printed p. 237; forum line 300",
         "label": "Divine knowledge and its objects"
       }
+    ],
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT237",
+        "label": "Qūnawī original p. 237 [32 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 32,
+        "alignment": "lexical correspondence in shared digital source only"
+      }
     ]
   },
   {
@@ -2383,6 +2473,15 @@
         "printed_locator": "transcription printed p. 237; forum line 300",
         "label": "Divine knowledge and its objects"
       }
+    ],
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT237",
+        "label": "Qūnawī original p. 237 [25 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 25,
+        "alignment": "lexical correspondence in shared digital source only"
+      }
     ]
   },
   {
@@ -2425,6 +2524,15 @@
         "printed_locator": "online Arabic transcription pp. 237–238, lines 301–304; printed Yāsīn edition p. 43 (PDF index 38)",
         "label": "Judgements vary with the judge and what is judged"
       }
+    ],
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT238",
+        "label": "Qūnawī original p. 238 [71 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 71,
+        "alignment": "lexical correspondence in shared digital source only"
+      }
     ]
   },
   {
@@ -2466,6 +2574,15 @@
         "target_id": "QNW-CON-003-C",
         "printed_locator": "online transcription p. 238, lines 305–306; printed Yāsīn edition p. 44 (PDF index 39)",
         "label": "Knowledge follows wujūd and the capacity of its recipient"
+      }
+    ],
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT238",
+        "label": "Qūnawī original p. 238 [16 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 16,
+        "alignment": "lexical correspondence in shared digital source only"
       }
     ]
   },
@@ -2513,6 +2630,15 @@
         "target_id": "QNW-CON-003-C",
         "printed_locator": "online transcription p. 238, lines 305–306; printed Yāsīn edition p. 44 (PDF index 39)",
         "label": "Knowledge follows wujūd and the capacity of its recipient"
+      }
+    ],
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT238",
+        "label": "Qūnawī original p. 238 [26 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 26,
+        "alignment": "lexical correspondence in shared digital source only"
       }
     ]
   },
@@ -2614,6 +2740,15 @@
         "printed_locator": "online transcription pp. 238–239, lines 307–309; printed Yāsīn edition p. 45 (PDF index 40) begins this unit",
         "label": "Why this book speaks from the all-comprehensive station"
       }
+    ],
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT238",
+        "label": "Qūnawī original p. 238 [104 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 104,
+        "alignment": "lexical correspondence in shared digital source only"
+      }
     ]
   },
   {
@@ -2661,6 +2796,15 @@
         "target_id": "QNW-CON-004-B",
         "printed_locator": "online transcription p. 239, lines 310–315; printed Yāsīn edition p. 45 continuing p. 46",
         "label": "A knower must distinguish the limits of cognition"
+      }
+    ],
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT238",
+        "label": "Qūnawī original p. 238 [43 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 43,
+        "alignment": "lexical correspondence in shared digital source only"
       }
     ]
   },
@@ -6457,7 +6601,16 @@
         "en": "**Al-Mahāʾimī (continuing):** The Real creates at the occasion of the First Intellect's turning, not because that turning assists an otherwise deficient divine act. As with human actions in the theological account to which al-Mahāʾimī alludes, the creature's intention accompanies an act that is ultimately the creation of God. Causal order is the form in which divine wisdom is displayed, not an external necessity governing God.\n\n**Qūnawī:** “For this reason He said, disclosing the secret of the matter: ‘For one who has a heart, or gives ear while present’ (Q 50:37); and: ‘Surely your Lord's grasp is mighty. It is He who originates and restores. He is the Forgiving, the Loving, Lord of the Glorious Throne, Doer of whatever He wills’ (Q 85:12–16), under the two ranks of absoluteness and determination. His saying, ‘Doer of whatever He wills,’ answers an anticipated objection, which He knew a veiled objector would raise.”\n\n**Al-Mahāʾimī:** Qūnawī treats these verses as an allusive presentation of the preceding order. The one with a heart is capable of perceiving subtle Qurʾānic meanings; the one who listens with full attention receives teaching that discloses them. God's “grasp” points to irresistible power. Origination corresponds to bringing possibilities to manifestation, and restoration to their return to concealment; lovingness and forgiveness are read under these related standpoints. The glorious Throne symbolizes the First Intellect as a locus through which the wisdom of ordered effects is disclosed.\n\nThe anticipated objection arises because the reference to the Throne might make one think God requires the intermediary in order to act. Hence “Doer of whatever He wills”: He acts **with causes or without them**. Causes belong to wisdom and order, not to a necessity imposed on His ability. Likewise the divine names associated with love and concealment do not compel an emanation by the nature of a necessary mechanism. Their manifestation occurs through divine choosing and will. This closes al-Mahāʾimī's exposition of Text Twenty-One."
       }
     ],
-    "translation_alignment": "page_level_only_not_lemma_aligned"
+    "translation_alignment": "page_level_only_not_lemma_aligned",
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT267",
+        "label": "Qūnawī original p. 267 [15 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 15,
+        "alignment": "lexical correspondence in shared digital source only"
+      }
+    ]
   },
   {
     "id": "MSH-P231",
@@ -6479,7 +6632,16 @@
         "en": "**Al-Mahāʾimī (transition):** Having completed the account of unification, Qūnawī begins to uncover what most frequently veils one from its realization. He calls this a “noble text,” the last of his texts, because it completes the clarification of divine unity, the noblest object of inquiry. Once this principal veil is removed the others are more easily disclosed. Its position at the end is appropriate because complete clarification of unity occurs at the station in which gathering and distinction are held together in oneness (*aḥadiyyat al-jamʿ wa-l-farq*), ordinarily taken to be the last of the stations.\n\n**Qūnawī:** “Know that the greatest doubts and veils are [those arising from] the multiplicities occurring within one existence: these necessitate the effects of the fixed entities within it, whereupon it is imagined that the entities themselves have appeared in existence and through existence. Yet only **their effects have appeared in existence**; they themselves have never appeared, for their very reality does not require manifestation.”\n\n**Al-Mahāʾimī:** This is the greatest impediment to unity because the apparent veils of defect, possibility and change all follow from it. Once its error is removed, the subordinate errors are in effect removed as well. The multiplicities in question are the effects of fixed entities in the one existence made manifest under their determinations. They may lead the observer to think that the fixed entities themselves are what is visible, and that each has appeared through a special existence of its own distinct from the existence of the Necessary. Qūnawī denies this: the Real is what appears in and through these determinations. The entities' **effects** become manifest in that existence, while the entities as fixed entities neither have manifested nor ever will. Taken in themselves they are non-existent realities: non-being, as such, has no outward self-manifestation. It is existence that is manifest and concealed under the differing considerations.\n\nAl-Mahāʾimī invokes Ibn ʿArabī's *Inshāʾ al-dawāʾir* concerning existence not being an addition to existence itself. This does not deny that existence can be conceptually distinguished from quiddity in the case of contingent things; the problem is the reification of that distinction into a second, independently existing being.\n\n**Qūnawī:** “Whenever a realized knower reports something other than this or attributes existence and appearance to those entities, he speaks in the language of certain ranks and relative tastes. Such speech is correct only in relation to a specific station or a number of stations, not in relation to the taste of the station of perfection. What we have now stated, however, is a definitive text whose ruling cannot be superseded. So it is with everything mentioned in this book: it is the unqualified truth of how the matter is. What is said elsewhere may likewise be true unqualifiedly, as this is, or may be true through relation to a particular station, as explained earlier.”\n\n**Al-Mahāʾimī:** A realized knower may speak as if the entities were themselves outwardly manifest, with existence realized in them, or as if their derivative existence were the shadow of true existence in virtue of which they appear. The point is **not** that every accomplished knower possesses all stations and simply chooses to describe a lower one; rather, the language is appropriate to someone whose unveiling has reached a determinate station or group of stations, but not yet the station of comprehensive perfection. In that highest station no independently existent appearance is attributed to the fixed entities, since the one existence alone is manifest through them. [The commentary continues on p. 232.]"
       }
     ],
-    "translation_alignment": "page_level_only_not_lemma_aligned"
+    "translation_alignment": "page_level_only_not_lemma_aligned",
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT267",
+        "label": "Qūnawī original p. 267 [71 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 71,
+        "alignment": "lexical correspondence in shared digital source only"
+      }
+    ]
   },
   {
     "id": "MSH-P232",
@@ -6501,7 +6663,16 @@
         "en": "**Al-Mahāʾimī (continuing):** This is therefore a definitive judgment which a still higher station cannot abrogate, whereas statements confined to lower stations can be superseded by a more comprehensive disclosure. Qūnawī says the texts of this book are spoken from the station of perfection and thus have unqualified validity, whereas other utterances in this and other writings may be correct only from certain restricted standpoints. The validity of a disclosure, when properly situated, should not be denied; he has earlier argued that every authentic unveiling is true **in some respect**, even when its verbal statement is not adequate to every respect.\n\nAn objection: “But it has been said repeatedly that the fixed entities appear.” Answer: that means that they appear **through the Real's appearing in them**, not that they appear by their own intrinsic being. The existence and manifestation ascribed to them in that respect belong in reality to the Real, not to them, and the entities considered in themselves remain perpetually without independent existence. A second objection would deny the final lemma's status as a definitive statement because it seems to contradict those previous assertions. That objection works only if one wrongly assumes that outward appearance must be the entity's intrinsic appearance. Correctly distinguishing the aspects removes the contradiction.\n\n**Qūnawī:** “When what I have explained in this text becomes clear to you, you will know that manifestation belongs to existence, but under the condition of multiplicity together with the effects of the entities within it; that hiddenness is an intrinsic attribute of the entities, and likewise of existence insofar as its unity is conceived. The matter turns between manifestness and hiddenness through predominance and subordination: what diminishes on the side of manifestation becomes included in hiddenness, and conversely. Relations and attributions are forms of states and rulings arising among ranks; some cause others to appear and others to be concealed in accordance with the predominance and subordination just indicated. Understand.”\n\n**Al-Mahāʾimī:** May God bless our master Muḥammad and his family and companions. That is, if you understand the statement that what appears is the effects of the entities *within existence*, you will know that manifestation properly belongs to existence. For the entities considered in themselves are non-existent and thus have no effects independently. It is **only through existence's relation to them** that their effects may be spoken of; in truth they are the effects of existence under the condition of the entities. “When the effects of existence appear under the condition of…”\n\n**[SOURCE TEXT BREAKS OFF HERE.]** The available online transcription ends the sentence abruptly with `فإذا ظهرت آثار الوجود بشرط .` followed by “Its end, and praise belongs to God, Lord of the worlds.” It is impossible to recover the expected complement from this transcription alone. No completion is supplied here."
       }
     ],
-    "translation_alignment": "page_level_only_not_lemma_aligned"
+    "translation_alignment": "page_level_only_not_lemma_aligned",
+    "appendix_links": [
+      {
+        "target_id": "QNW-WIT267",
+        "label": "Qūnawī original p. 267 [44 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 44,
+        "alignment": "lexical correspondence in shared digital source only"
+      }
+    ]
   },
   {
     "id": "QNW-001",
@@ -6677,6 +6848,15 @@
         "ar": "بسم اللّه الرحمن الرحيم\nالحمد للّه الذي أبان بمستقرات الهمم مراتب علم اليقين وعينه وحقه ودرجاته ، وأوضح بسكون قلق الطالبين حال الوصول إلى منتهى شاء نفوسهم بتفاوت درجاتهم في منازل معرفته سبحانه في تقريباته .\nوميّز خاصته من بين الخلق بأن لم يجعل لهم غاية سوى ذاته من جميع عوالمه ، وحضرات أسمائه وصفاته ، بل جعل منتهى مدى هممهم أشرف متعلقات علمه الذاتي وأعلى مراداته ، حتى صار نهاية مرادهم وغاية مرماهم ما يريده بذاته لذاته .\nومن جهة أعلى حيثيات شؤونها الأصلية الأول ، وأرفع تعيناته ، فهو سبحانه عين علمهم اليقيني ، وعينه وحقه في سائر مراتب علمه الذاتي المتعلق به أولا .\nثم بمعلوماته مع استهلاكهم فيه من حيث هم ، وبقاء حكمهم وسرايته في جميع موجوداته وحضراته .\nوصلّى اللّه على المتحقق به من حيثية الشهود الأكمل ، والعلم الأتم الأشرف الأشمل ، مع دوام الحضور معه سبحانه في جميع مواطنه وأحواله ومراتبه ونشأته .\nسيدنا محمد وآله والصفوة من أمته وإخوانه الحائزين من اللّه ميراثه الأتم المشتمل على علومه وأحواله ومقاماته .\nمع تحققهم بنتائج حظوظهم الاختصاصية المميّزة إيّاهم عن التي تميز بها خواص الوسائط وثمرات التبعية ، وأحكام الروابط ، صلاة مستمرة الحكم .\nدائمة الإيناع دوام الزمان من حيث حقيقتها الكلية ، وصور أحكامها التفصيلية المعبّر عنها بسنينه وشهوره وأيامه وساعاته .\nنصّ شريف هو أول النصوص الواجب تقديمه : اعلم أن الحق من حيث إطلاقه الذاتي لا يصح أن يحكم عليه بحكم ، أو يعرّف بوصف ، أو يضاف إليه نسبة ما من وحدة ، أو وجوب وجود ، أو مبدئية ، أو اقتضاء إيجاد ، أو صدور أثر ، أو تعلق علم منه",
         "en": "**Qūnawī, printed p. 235 (page-level translation).** In the name of God, the All-Merciful, the Ever-Merciful. Praise belongs to God, who has disclosed, by the settled stations of aspiration, the ranks and degrees of the knowledge of certainty, its eye and its truth. By quieting the seekers' restlessness He has clarified the state of arrival at what their souls sought, according to the differences among their ranks in the stations of approaching knowledge of Him. He singled out His elect by giving them no final goal among all His worlds or among the presences of His names and attributes except His own Essence. Rather, He made the highest object of their resolve the noblest objects of His essential knowledge and the highest objects of His willing, until what He wills for Himself by Himself becomes their furthest aim. From the standpoint of the highest primordial aspects of His affairs and His highest determinations, He is their certain knowledge itself, its eye and its truth, in all ranks of His essential knowledge as it pertains first to Himself and then to the objects of His knowledge. Their individual selfhood is effaced in Him while their determination and its effects remain operative throughout His existents and presences. May blessing rest upon our master Muḥammad, who realizes this in perfect witnessing and most comprehensive knowledge with enduring presence with Him in all situations, states, ranks and modalities of being; and upon his family and the elect of his community and brothers, inheritors of his most complete legacy in knowledge, states and stations, according to their distinctive shares beyond those of intermediaries and followers: a blessing whose ruling continues, whose fruits endure as time endures in its universal reality, and whose detailed manifestations are marked by years, months, days and hours.\n\n**First noble text (begins; continues on p. 236):** Know that nothing may be predicated of the Real under the aspect of His essential absoluteness as a judgment, designation or relation, whether unity, necessary existence, principiality, demand for creation, the emanation of an effect, or the relation of knowledge from Him ..."
       }
+    ],
+    "concordance_links": [
+      {
+        "target_id": "MSH-060",
+        "label": "p. 72 · First naṣṣ: the Absolute as the subject of metaphysical knowledge [37 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 37,
+        "alignment": "lexical correspondence in shared digital source only"
+      }
     ]
   },
   {
@@ -6698,6 +6878,43 @@
         "sequence": 1,
         "ar": "بنفسه أو غيره ؛ لأن كل ذلك يقضي بالتعين والتقيد ، ولا ريب في أن تعقل كل تعين يقضي بسبق اللاتعين ، فكل ما ذكرناه ينافي الإطلاق ، بل تصور إطلاق الحق يشترط فيه أن يتعقل بمعنى أنه وصف سلبيّ ، لا بمعنى أنه إطلاق ضد التقييد ، بل هو إطلاق عن الوحدة والكثرة المعلومتين ، وعن الحصر أيضا في الإطلاق والتقييد ، وفي الجمع بين كل ذلك والتنزه عنه ، فيصح في حقه كل ذلك حال تنزّهه عن الجميع ، فنسبة كل ذلك إليه وغيره وسلبه عنه على السواء ، ليس أحد الأمرين بأولى من الآخر ، وإذا وضح هذا علم أن نسبة الوحدة إلى الحق والمبدئية والتأثير والفعل الإيجادي ونحو ذلك إنما يصح وينضاف إلى الحق باعتبار التعين .\nوأول التعينات المتعلقة : النسبة العلمية الذاتية ، لكن باعتبار تميزها عن الذات بالامتياز النسبي لا الحقيقي ، وبواسطة النسبة العلمية الذاتية يتعقل وحدة الحق ووجوب وجوده ومبدئيته ، وسيما من حيث أن علمه بنفسه في نفسه في نفسه ، وأن عين علمه بنفسه سبب لعلمه بكل شيء ، وأن الأشياء عبارة عن تعيّنات تعقلاته الكلية والتفصيلية ، وأن الماهيات عبارة عن التعقلات ، وأنها تعقلات منتشئة التعقل بعضها من بعض ، لا بمعنى أنها تحدث في تعقل الحق تعالى ، تعالى اللّه عما لا يليق به .\nبل تعقل البعض من متأخر الرتبة عن البعض ، وكلها تعقلات أزلية أبدية على وتيرة واحدة ، تتعقل في العلم ويتعلق بها بحسب ما تقتضيه حقائقها .\nومقتضى حقائقها على نحوين : أحدهما : تعقلها من حيث استهلاك كثرتها في وحدة الحق ، وهو تعقل المفصل في المجمل ، كمشاهدة العالم العاقل بعين العلم في النواة الواحدة ما فيها بالقوة من الأغصان والأوراق والثمر ، والذي في كل فرد من أفراد ذلك الثمر مثل ما في النواة الأولى ، وهكذا إلى غير النهاية .\nوالنحو الآخر : تعقّل أحكام الوحدة جملة بعد جملة ، فيتعقل كل جملة بما تشتمل عليه من الماهيات التي هي صورة تلك التعقّلات المتكثرة المعددة للوجود الواحد ، وهكذا عكس الاستهلاك الأول المشار إليه ؛ فإن ذلك عبارة عن استهلاك الكثرة في الوحدة ،",
         "en": "**Qūnawī, printed p. 236 (continuation).** ... whether of knowledge from Him concerning Himself or another. All these descriptions imply determination and restriction. Every intelligible determination presupposes non-determination; thus all the foregoing descriptions conflict with absoluteness. Indeed, the conception of the Real's absoluteness must be conceived as a *negative description*: it is not absoluteness understood as the opposite of restriction, but freedom from the familiar unity and multiplicity and freedom even from being confined to absoluteness or restriction, their combination, or transcendence of both. Hence all these descriptions may be affirmed of Him while He transcends them all. Their attribution and denial stand on equal footing at this level. It follows that attributing unity, principiality, efficacy and creative action to the Real is proper only under the consideration of determination.\n\nThe first relevant determination is the **intrinsic relation of knowledge** (*al-nisba al-ʿilmiyya al-dhātiyya*), differentiated from the Essence relatively and not really. Through this relation one can conceive the Real's unity, necessary existence and principiality, especially because His knowledge of Himself in Himself is itself the ground of His knowledge of everything. Things are the determinations of His universal and particular conceptions, and quiddities are these conceptions. Certain conceptions are ordered after others, not because anything originates or changes in the Real's knowledge—God is exalted above that—but because some are posterior to others in **rank**. All are eternal conceptions on a single unchanging footing, known according to the requirements of their realities.\n\nThe realities have two modes of being conceived. In the first, their multiplicity is absorbed within the Real's unity, the detailed being conceived in the undifferentiated, as a knowledgeable person can discern in a seed the branches, leaves and fruits contained there potentially, and in each resulting fruit a seed with comparable possibilities indefinitely. In the second, the judgments of unity are conceived group after group, each group including the quiddities that are forms of the multiple conceptions determining the one existence. This is the reverse absorption of the first mode: there multiplicity is absorbed into unity, whereas here unity is absorbed into multiplicity [the sentence continues on p. 237]."
+      }
+    ],
+    "concordance_links": [
+      {
+        "target_id": "MSH-062",
+        "label": "p. 74 · An absoluteness beyond the binary of absolute and conditioned [57 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 57,
+        "alignment": "lexical correspondence in shared digital source only"
+      },
+      {
+        "target_id": "MSH-063",
+        "label": "p. 75 · First determination as intrinsic knowledge-relation, not real division [64 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 64,
+        "alignment": "lexical correspondence in shared digital source only"
+      },
+      {
+        "target_id": "MSH-065",
+        "label": "p. 77 · Fixed entities as cognitions, without temporal emergence of divine knowledge [31 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 31,
+        "alignment": "lexical correspondence in shared digital source only"
+      },
+      {
+        "target_id": "MSH-066",
+        "label": "p. 78 · Eternal cognition, temporal relations, and the differentiated within the undifferentiated [43 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 43,
+        "alignment": "lexical correspondence in shared digital source only"
+      },
+      {
+        "target_id": "MSH-067",
+        "label": "p. 79 · Reciprocal intelligibility: multiplicity in unity and unity in multiplicity [21 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 21,
+        "alignment": "lexical correspondence in shared digital source only"
       }
     ]
   },
@@ -6721,6 +6938,43 @@
         "ar": "وهذا هو استهلاك الوحدة في الكثرة فليعلم ذلك .\n\nاعلم أن الحق من حيث إطلاقه وإحاطته لا يسمّى باسم ، ولا يضاف إليه حكم ، ولا يتعيّن بوصف ولا رسم ، ليس نسبة الاقتضاء إليه بأولى من نسبة اللا اقتضاء ، فإن الاقتضاء المتعقل إذ ذاك أو المنفي هو حكم متعين ووصف مقيّد . ثم لتعلم أن الاقتضاء وإن كان ذاتيّا فإن له ثلاث مراتب : حكمه من حيث المرتبة الأولى هو أنه لا يتوقف على شرط ، ولا موجب يكون سببا لتعيّنه . وحكمه من حيث المرتبة الثانية هو أن يتوقف تعيّنه على شرط واحد فحسب .\n\nوحكمه من حيث المرتبة الثالثة هو أن ظهور أحكامه يتوقف على شروط وأسباب ووسائط . فحكم الاقتضاء الأول هو الفيض الذاتي لا لموجب ، ولا يتعقل في مقابلة قابل أو استعداده ، وحكم الاقتضاء الثاني التوقف على شرط واحد وجوديّ فحسب ، وذلك الشرط الوجودي هو العقل الأول الذي هو واسطة بين الحق وبين ما قدّر وجوده من الممكنات إلى يوم القيامة ، وأما حكم الاقتضاء من حيث المرتبة الثالثة فإن ظهور أثره وحكمه موقوف على شروط شتى كباقي الموجودات .\n\nولست أعني بهذا أن ثمة اقتضاءات ثلاثة مختلفة الحقائق ، بل هو اقتضاء واحد وله ثلاث مراتب ، يظهر ويتعين به من حيثية كل مرتبة منها أثر أو آثار فافهم . ومن النصوص الإلهية : إن العلم الوحداني الذاتي يضاف إليه التعدّد من حيث تعلّقه بالمعلومات ، ولا يتحقق بإدراكها إلا من تعيّناته وتعلّقاته ، وتعلقه بكل معلوم تابع للمعلوم بحسب ما هو المعلوم عليه في نفسه ، بسيطا كان المعلوم أو مركبا ، زمانيّا أو مكانيّا ، أو غير زماني ولا مكاني ، موقت القبول ، متناهي الحكم والوصف ، أو غير موقت ولا متناه فيما ذكرنا ، فاعلم ذلك .\n\nومن تفاريع ما ذكرنا من النصوص أيضا أن الحكم من كل حاكم على كل محكوم عليه تابع لحال الحاكم حين الحكم ، وتابع لحال المحكوم عليه حال حكم الحاكم عليه ، فإن",
         "en": "This is the absorption of unity in multiplicity; understand it accordingly.\n\nKnow that, considered in His absoluteness and all-encompassing character, the Real cannot be given a name, assigned a ruling, or determined through an attribute or designation. To attribute exigency (*iqtiḍāʾ*) to Him is no more appropriate than to deny it, for either the exigency here conceived or its negation would itself be a determinate ruling and a qualified description. Nevertheless, although exigency is intrinsic, it has three ranks. Considered under the first rank, it depends on neither a condition nor a determining cause that would bring about its specification. Under the second, its determination depends on precisely one condition.\n\nUnder the third, its rulings manifest only through conditions, causes, and intermediaries. The ruling of the first exigency is essential effusion (*al-fayḍ al-dhātī*), neither occasioned by a necessitating cause nor understood in opposition to a recipient or its preparedness. The second involves a single existential condition: the First Intellect, which mediates between the Real and the contingent things destined to exist until the Day of Resurrection. Under the third rank, the manifestation of its effects and rulings depends on many conditions, as with other existent things.\n\nI do not mean that there are three exigencies differing in reality. There is one exigency with three ranks, and from each rank's perspective one effect or several become manifest and determined. Understand this. Another divine text states: intrinsic, unitive knowledge is qualified by multiplicity insofar as it relates to things known. Knowledge of them is realized only through the determinations and relations of that knowledge. Its relation to each object follows the object as it is in itself—simple or composite, temporal or spatial, neither temporal nor spatial, subject to acceptance at a particular time, finite in ruling and description, or neither temporally restricted nor finite in these respects.\n\nAmong the further consequences of these texts is that the judgement of any judge concerning a subject depends both upon the judge's condition at the time of judging and upon the subject's condition at that same time. For if..."
       }
+    ],
+    "concordance_links": [
+      {
+        "target_id": "MSH-068",
+        "label": "p. 80 · Text Two: three modes of intrinsic demand/effusion [79 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 79,
+        "alignment": "lexical correspondence in shared digital source only"
+      },
+      {
+        "target_id": "MSH-069",
+        "label": "p. 81 · Effusion without mediation, one mediation, and many conditions [69 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 69,
+        "alignment": "lexical correspondence in shared digital source only"
+      },
+      {
+        "target_id": "MSH-070",
+        "label": "p. 82 · The Most Holy Effusion and nonexistence of unrealized possibilities [33 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 33,
+        "alignment": "lexical correspondence in shared digital source only"
+      },
+      {
+        "target_id": "MSH-071",
+        "label": "p. 83 · The single effusion and Text Three on knowledge as one reality with many relations [32 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 32,
+        "alignment": "lexical correspondence in shared digital source only"
+      },
+      {
+        "target_id": "MSH-072",
+        "label": "p. 84 · Immutable knowledge and changing relations; a general rule for judging [25 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 25,
+        "alignment": "lexical correspondence in shared digital source only"
+      }
     ]
   },
   {
@@ -6743,6 +6997,43 @@
         "ar": "كان المحكوم عليه ما من شأنه التنقل في الأحوال تنوعت أحكام الحاكم عليه في كل حال ، واختلفت بحسب تلبّسه بتلك الأحوال ، وإن كان المحكوم عليه من شأنه الثبات على وتيرة واحدة ثبت حكم الحاكم عليه بحسب التعلق المعين بحكم الحاكم عليه ومقتضاه ، وبقي الأمر بحسب حال الحاكم حين الحكم ، فإن كان الحاكم من مقتضى ذاته التقلّب في الأحوال بحسبها ، أو مقتضى ذاته أنه ثابت والأحوال تنقلب فيكون تبعية حكم الحاكم بحسب أحد الأمرين الحاصرين لمراتب حكم كل حاكم وكل محكوم عليه ؛ إذ لا يخرج عما ذكرته حكم حاكم ولا محكوم عليه .\n\nومن تفاريع ما ذكرنا من النصوص أيضا أن العلم يتبع الوجود ، بمعنى أنه حيث يكون الوجود يكون العلم دون انفكاك . وتفاوت العلم بحسب تفاوت قبول الماهية الوجود تماما ونقصانا ، فالقابل للوجود على وجه أتم يكون العلم هناك أتم ، وينقص العلم بقدر القبول الناقص ، وغلبة أحكام الإمكان على أحكام الوجوب عكس ما ذكرنا أولا ، فاعلم ذلك .\n\nومن تفاريع ما ذكرنا من النصوص المحققة أيضا ، وإن كنت قد ألمعت بطرف منه في بعض المواضع من كتبي في ضمن أمر آخر وبلسانه ، لكن لما أفردت هذا الكتاب لذكر النصوص من الأذواق المختصّة بخصوص مقام الكمال ، دون لسان عمومه من الأذواق المقيّدة الحاصلة لأرباب المقامات المخصوصة والمستندة من حيث الأصالة إلى حضرة اسم أو صفة من الصفات ، والأسماء الإلهية التي هي محتد ذلك الذوق الخاص ومنبعه ، وجب عليّ أن أفرد وأميز ما يختص بذوق المقام الأكمل الأجمع ، وصحة ثبوته ومطابقته لما يعلمه اللّه تعالى في أعلى درجات علمه وأتمها وأكملها من ذلك الأمر المترجم عنه ، دون تقرير صحته وثبوته بالنسبة والإضافة إلى مقام دون مقام ، وباعتبار حال ووقت دون غيرهما من الأوقات والأحوال وما ذكر .\n\nفنقول بعد تمهيد هذه المقدمة الكلية في بيان هذا النص الذي قصدنا إيضاحه : إن كل معلوم أدركه الإنسان بنظره أو كشفه أو حسه أو خياله جمعا وفرادى ، ولم ينته نظره أو كشفه لذلك الأمر ، أو إدراكه إيّاه حسّا وخيالا إلى إدراك ما وراءه بعد معرفة",
         "en": "...the subject being judged is of a kind that passes from one condition to another, the judge's rulings about it vary in each condition according to the conditions it assumes. If the subject remains fixed in one and the same state, the ruling concerning it remains fixed with regard to the determinate relation and demands of that ruling; the matter then depends on the condition of the judge at the moment of judgement. The judge either changes by the demands of his own nature as his states vary, or remains fixed while the states change. These alternatives encompass the ranks of every judgement and of every subject judged; no case falls outside what I have described.\n\nAnother consequence: **knowledge follows existence**. Wherever existence is, there is knowledge, inseparably. Knowledge differs according to the degree to which a quiddity receives existence, whether perfectly or deficiently. Where the reception of existence is more complete, knowledge is likewise more complete; knowledge diminishes to the extent that reception is incomplete. The predominance of the rulings of contingency over the rulings of necessity reverses the initial case. Understand this.\n\nI have alluded elsewhere in my writings to another consequence of these verified texts, while discussing other matters and using their language. Yet I devoted the present book to recording the specific disclosures belonging to the most perfect spiritual station—not the general language of the qualified disclosures received by those occupying particular stations, which derive principally from the presence of some divine name or attribute. Because the divine names are the origin and source of each such specific disclosure, I must distinguish what belongs to the most comprehensive and perfect station, and what is truly established and corresponds to God's knowledge of the matter in its highest, fullest, and most perfect degree. I do not intend merely to establish what is true in relation to one station rather than another, or one condition or time rather than others.\n\nWith this general introduction to the text I intend to clarify, I say: everything a person knows through reasoning, unveiling, sensation, or imagination, whether collectively or individually, if his investigation or unveiling of it—or his sensory or imaginal apprehension—does not attain what lies beyond it after recognition of..."
       }
+    ],
+    "concordance_links": [
+      {
+        "target_id": "MSH-073",
+        "label": "p. 85 · Judgements vary with the states of judge and recipient [71 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 71,
+        "alignment": "lexical correspondence in shared digital source only"
+      },
+      {
+        "target_id": "MSH-074",
+        "label": "p. 86 · Four combinations of change and fixity; Text Four on the inseparability of knowledge from existence [16 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 16,
+        "alignment": "lexical correspondence in shared digital source only"
+      },
+      {
+        "target_id": "MSH-075",
+        "label": "p. 87 · All existence entails knowledge; differences of manifestation and preparedness [26 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 26,
+        "alignment": "lexical correspondence in shared digital source only"
+      },
+      {
+        "target_id": "MSH-P089",
+        "label": "p. 89 · Text Five: the criterion of the comprehensive station [104 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 104,
+        "alignment": "lexical correspondence in shared digital source only"
+      },
+      {
+        "target_id": "MSH-P090",
+        "label": "p. 90 · Text Five: cognition and what lies beyond its object [43 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 43,
+        "alignment": "lexical correspondence in shared digital source only"
+      }
     ]
   },
   {
@@ -6764,6 +7055,29 @@
         "sequence": 1,
         "ar": "نصّ شريف هو آخر النصوص :\nاعلم أن أعظم الشبه والحجب أن التعددات الواقعة في الوجود الواحد يوجب آثار الأعيان الثابتة فيه ، فتوهم أن الأعيان ظهرت في الوجود وبالوجود ، وإنما ظهرت آثارها في الوجود ولم تظهر هي ، ولا تظهر أبدا ؛ لأنها لذاتها لا تقتضي الظهور .\nومتى أخبر محقق بغير هذا أو نسب إليها الوجود والظهور ، فإنما ذلك الإخبار بلسان بعض المراتب والأذواق النسبية : أي إنما تثبت صحتها بالنسبة إلى مقام معين أو مقامات مخصوصة دون ذوق مقام الكمال .\nوأما النص الذي لا ينسخ حكمه فهو ما ذكرناه ، وهكذا كل ما ذكر في هذا الكتاب ، فإنه الحق الصريح الذي هو الأمر عليه ، وما سواه فقد يكون صحيحا مطلقا كهذا الذي ذكرنا ، وقد يكون صحيحا بالنسبة والإضافة إلى مقام ما ، كما سبقت الإشارة إليه .\nومتى وضح لك ما ذكرته في هذا النص علمت أن الظهور للوجود ، لكن بشرط التعدّد مع آثار الأعيان فيه ، وأن البطون صفة ذاتية للأعيان ، والوجود أيضا من حيث تعقل وحدته ، والأمر دائر بين ظهور وبطون لغلبة ومغلوبية ، بمعنى أنه ما نقص من الظاهر اندرج في الباطن وبالعكس ، والنسب والإضافات صور أحوال وأحكام تنشئ بين المراتب ، فيظهر بعضها بعضا ، ويخفي بعضها بعضا ، بحسب الغلبة والمغلوبية المشار إليها آنفا فافهم .\nتمّ الكتاب والحمد لله وحده وصلّى الله على سيّدنا محمد وآله وصحبه وسلم",
         "en": "**Qūnawī, final text (source-checked translation of printed p. 267).**\n\nKnow that the greatest doubts and veils arise when the multiplicities occurring in the one existence produce effects belonging to the fixed entities therein. One then imagines that the entities themselves have appeared in existence and through existence. Yet what appears in existence is their effects; **they themselves neither appeared nor will ever appear**, because their very nature does not demand manifestation.\n\nWhen a realized knower reports otherwise, or attributes existence and manifestation to them, this report is in the idiom of certain ranks and relative tastes: it is valid only in relation to one determinate station or several stations, not according to the experiential knowledge of the station of perfection.\n\nThe definitive statement, whose ruling cannot be superseded, is what we have stated; so too every statement in this book. This is the unqualified truth about the matter. What is said elsewhere may be true unqualifiedly, as this is, or may be true only relatively and in connection with some station, as already indicated.\n\nWhen what I have explained in this text becomes clear, you will know that manifestation belongs **to existence**, but under the condition of multiplicity together with the effects of the entities within it. Hiddenness is an intrinsic attribute of the entities, and likewise of existence insofar as its unity is conceived. The matter alternates between manifestation and hiddenness through predominance and subordination: whatever diminishes from the manifest falls within the hidden, and conversely. Relations and attributions are forms of states and judgments arising among ranks: some make others manifest and hide others according to the predominance and subordination already indicated. Understand.\n\n*The book is complete; praise is to God alone, and may God bless our master Muḥammad, his family and companions and grant them peace.*"
+      }
+    ],
+    "concordance_links": [
+      {
+        "target_id": "MSH-P230",
+        "label": "p. 230 · Qurʾānic proof and the denial of necessary emanation [15 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 15,
+        "alignment": "lexical correspondence in shared digital source only"
+      },
+      {
+        "target_id": "MSH-P231",
+        "label": "p. 231 · Fixed entities do not themselves come to exist [71 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 71,
+        "alignment": "lexical correspondence in shared digital source only"
+      },
+      {
+        "target_id": "MSH-P232",
+        "label": "p. 232 · Degrees of valid disclosure and the final rule of manifestation [44 matching 5-grams]",
+        "kind": "printed_appendix_lemma",
+        "match_score": 44,
+        "alignment": "lexical correspondence in shared digital source only"
       }
     ]
   },
