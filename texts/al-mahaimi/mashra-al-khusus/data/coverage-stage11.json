@@ -86,7 +86,9 @@
       19,
       20
     ],
-    "numbering_discrepancy_note": "online text 19-C describes affinities, while the Mahaimi working commentary calls affinity material Text Twenty; no automatic ordinal concordance"
+    "numbering_discrepancy_note": "online text 19-C describes affinities, while the Mahaimi working commentary calls affinity material Text Twenty; no automatic ordinal concordance",
+    "appendix_2008_lemma_links": 19,
+    "appendix_2008_lemma_link_method": "Minimum 15 distinct matching normalized Arabic 5-grams; links are between duplicated 2008 digital-text witnesses and hence not manuscript collation."
   },
   "edition": {
     "printer_facsimiles_checked": 0,
@@ -117,7 +119,8 @@
     "apparatus": "texts/al-mahaimi/mashra-al-khusus/editorial/APPARATUS_STAGE09.md",
     "concordance": "texts/al-mahaimi/mashra-al-khusus/editorial/CONCORDANCE_STAGE10.md",
     "integrity_test": "tests/test_mahaimi_stage10.py",
-    "appendix_proof_pp237_238": "texts/al-mahaimi/mashra-al-khusus/data/stage10-qunawi-pp237-238.md"
+    "appendix_proof_pp237_238": "texts/al-mahaimi/mashra-al-khusus/data/stage10-qunawi-pp237-238.md",
+    "appendix_lemma_concordance": "texts/al-mahaimi/mashra-al-khusus/data/appendix-lemma-concordance-stage11.json"
   },
   "source_access_test": {
     "ablibrary_robots": "disallowed",
