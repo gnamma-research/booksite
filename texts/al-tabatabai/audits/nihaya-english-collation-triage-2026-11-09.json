@@ -3,7 +3,7 @@
   "title": "Nihāyat al-Ḥikma — cumulative English text collation triage",
   "updated": "2026-11-09",
   "source": "nihayat-al-hikma/data/book.json",
-  "scope": "136/136 automatic structural screens; 74/136 individually documented local Arabic–English full-unit readings (70 inherited + four new IX.2/IX.8/IX.11/IX.14); 0 complete independent second-witness collations; 0 specialist certifications. Previously documented 1428 checks remain limited spot checks.",
+  "scope": "All 136 Arabic–English units automatically screened; 80 of 136 individually documented complete local same-base bilingual readings (74 inherited plus Stage VI 6), 0 complete independent printed/manuscript collation of all 136 units, 0 expert-certified; inherited 1428 partial spot checks remain separate.",
   "standard": "No AI-only structural scan is a full semantic English collation or professional critical edition. Local bilingual reading is not an independent Arabic witness. Neither a flagged nor an unflagged row establishes textual accuracy.",
   "summary": {
     "units": 136,
@@ -13,7 +13,7 @@
     "unitsWithThreeOrMoreParagraphDifference": 63,
     "unitsWithAnyHint": 70,
     "automaticallyScreened": 136,
-    "locallyReadAgainstStoredArabic": 74,
+    "locallyReadAgainstStoredArabic": 80,
     "independentlyReconciledAgainstCompleteSecondWitness": 0,
     "expertVerified": 0,
     "hintCounts": {
@@ -27,7 +27,9 @@
     "englishCorrectionsThirdBatch": 2,
     "reviewedNewFourthBatch": 2,
     "reviewedNewFifthBatch": 4,
-    "englishCorrectionsFifthBatch": 1
+    "englishCorrectionsFifthBatch": 1,
+    "reviewedNewSixthBatch": 6,
+    "notesSixthBatch": 1
   },
   "rows": [
     {
@@ -142,7 +144,9 @@
       "englishToArabicCharRatio": 1.823,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Full same-base Arabic–English reading of printed 1417 pp.28–30: no thinghood or intrinsic differentiation of nonexistence; relative/nonrelative privations, analogical causal ascription to nonexistence, conceptual double-negation, explicitly different primary/common predications, rebuttals to self-reference of 'nothing can be asserted of the absolutely nonexistent', and concept vs external contradictory conjunction. English preserves the quoted objections and replies; no alteration proposed. Cross-check Ṣadrā attribution independently later.",
+        "sourceGrade": "local complete original Arabic–English reading against stored 1417 digitally transcribed copy, not an independently collated print or manuscript",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -168,7 +172,9 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Full same-base Arabic–English reading of printed 1417 pp.30–33: individuation of existence, exclusion of two numerically identical existences, simultaneous indiscernibles vs interrupted return, imaginary distinction of intervening nonexistence, preserved intellectual form objection, four supporting arguments, cited opinion of some mutakallimūn and reply treating resurrection as transition between modes of being rather than annihilation/recreation. English currently conveys identity bi-ʿaynihi correctly. No alteration; theological source verification and independent printed comparison pending.",
+        "sourceGrade": "local complete original Arabic–English reading against stored 1417 digitally transcribed copy, not an independently collated print or manuscript",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2449,7 +2455,9 @@
       "englishToArabicCharRatio": 1.582,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Full same-base Arabic–English reading of printed 1417 pp.307–308: universal acquired forms require separate intelligible bestower, neither receiving soul nor material agent, spatial relations of material causes, soul's union with abstract intellect, objection whether forms could descend from many heterogeneous intellects, response from one-individual-per-immaterial-species and vertical series, Peripatetic Agent Intellect, Illuminationist horizontal lords of species, imaginal separate bestower for particulars. All objections and school-attributions represented. No lexical change; no independent 1404/1428 or external doctrinal review.",
+        "sourceGrade": "local complete original Arabic–English reading against stored 1417 digitally transcribed copy, not an independently collated print or manuscript",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2468,7 +2476,9 @@
       "englishToArabicCharRatio": 1.623,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Full same-base Arabic–English reading of printed 1417 pp.308–310: conception vs assent, received view of four-part composite affirmative, three-part simple existential, purported lack of ḥukm in negative, then author's 'al-ḥaqq' view of predicative relation as preparation rather than internal part of proposition, synthesis vs decomposition in soul and representational act, dependence of every assent on more than one conception. Explicit interpretive note added to authorial unit: 'no judgment' in negative vs judgment as psychic act requires careful distinct sense analysis. Authorial wording left intact, not treated as a source variant.",
+        "sourceGrade": "local complete original Arabic–English reading against stored 1417 digitally transcribed copy, not an independently collated print or manuscript",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2612,7 +2622,9 @@
       "englishToArabicCharRatio": 1.72,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Full same-base Arabic–English reading of printed 1417 pp.322–323: first Asfār quotation—knowledge as immaterial existence and individual identity, subject/object union, necessary/contingent, substantive/accidental, substantial vs accidental knowledge as presence not inherence; further tripartition active/passive/neither, estimative influence; second quote on gradation of knowledge, divine knowledge's priority, knowledge of cause vs effect/substance vs accidents, figurative extension to teaching/learning/relation. Source quotation not independently collated against Asfār; no English alteration.",
+        "sourceGrade": "local complete original Arabic–English reading against stored 1417 digitally transcribed copy, not an independently collated print or manuscript",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -2663,7 +2675,9 @@
       "englishToArabicCharRatio": 1.725,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Full same-base Arabic–English reading of printed 1417 pp.327–329: multiple formulations of burhān al-ṣiddīqīn, innī inference of being's concomitants, unrestricted reality of existence proof, objection that contingent existences also exclude their own negation, response that their quiddative delimitation enables absence, distinguish unrestricted from delimited, full long Ṣadrā Asfār argument from perfection/deficiency and cause/effect to Necessary Existent. Translation retains distinction between author's concise inference and attributed later extended quotation. No English change; verify Asfār citation and 1404/1428 witnesses independently.",
+        "sourceGrade": "local complete original Arabic–English reading against stored 1417 digitally transcribed copy, not an independently collated print or manuscript",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
