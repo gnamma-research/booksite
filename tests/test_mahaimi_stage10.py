@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Source-honest Mahāʾimī/Qūnawī Stage10 corpus consistency checks.
+"""Source-honest Mahāʾimī/Qūnawī Stage11 corpus consistency checks.
 
 Run at repo root: python tests/test_mahaimi_stage10.py
 No manuscript collation or printed-facsimile verification is claimed.
@@ -16,7 +16,7 @@ match = re.search(r'<script id="corpus-json" type="application/json">([\s\S]*?)<
 assert match is not None, "inline corpus script missing"
 INLINE = json.loads(match.group(1))
 assert INLINE == DATA, "main HTML corpus differs from data/parallel.json"
-assert len(DATA) == 278, "unexpected Stage10 entry count"
+assert len(DATA) == 280, "unexpected Stage10 entry count"
 ids = {e["id"] for e in DATA}
 assert len(ids) == len(DATA), "duplicate entry ID"
 
@@ -49,7 +49,9 @@ assert len(reverse) == 64 and all(to in ids for _, to in reverse)
 assert set((b, a) for a, b in links) == set(reverse), "non-reciprocal contextual links"
 
 proofs = sorted(e["printed_pages"][0] for e in DATA if e.get("edition_layer") == "qunawi_original_proof")
-assert proofs == [235, 236, 267]
+assert proofs == [235, 236, 237, 238, 267]
+assert len(proofs) == len(set(proofs)), 'duplicate page proof'
+assert all(e['arabic_transcription_status'] != 'manuscript_collated' for e in DATA if e.get('edition_layer') == 'qunawi_original_proof')
 assert len([e for e in DATA if e.get("edition_layer") == "qunawi_original"]) == 7
 assert 'data-crossref' in HTML and 'qunawi_online_transcription' in HTML
 manifest = json.loads((ROOT / "texts/manifest.json").read_text(encoding="utf-8"))
@@ -57,5 +59,6 @@ record = next(e for e in manifest["texts"] if e["id"] == "mahaimi-mashra-khusus"
 assert record["cumulative_printed_pages_count"] == 222
 assert record["commentary_arabic_imported_pages"] == 142
 assert record["original_qn_online_excerpt_count"] == 47
+assert record['original_2008_online_proof_pages'] == [235, 236, 237, 238, 267]
 assert record["manuscript_collation_completed_pages"] == 0
-print("PASS: Stage10 coverage, source distinctions, manifest, concordance, and reader JSON")
+print("PASS: Stage11 coverage, source distinctions, manifest, concordance, and reader JSON")
