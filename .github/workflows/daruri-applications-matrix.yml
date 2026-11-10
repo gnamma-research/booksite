@@ -10,11 +10,15 @@ permissions:
   contents: write
 concurrency:
   group: daruri-applications-matrix
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   validate:
     runs-on: ubuntu-24.04
+    container: mcr.microsoft.com/playwright:v1.56.1-noble
     timeout-minutes: 15
+    env:
+      PLAYWRIGHT_BROWSERS_PATH: /ms-playwright
+      NODE_PATH: /tmp/daruri-matrix-tests/node_modules
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -27,15 +31,12 @@ jobs:
           node --check daruri/qa/applications-matrix-browser.js
           node --check daruri/download-bundle.js
           node --check daruri/sw.js
-      - name: Install isolated browser test dependencies
-        run: |
-          npm install --prefix /tmp/daruri-matrix-tests --no-audit --no-fund playwright@1.56.1
-          /tmp/daruri-matrix-tests/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Install browser driver for the preinstalled browser image
+        run: npm install --prefix /tmp/daruri-matrix-tests --no-audit --no-fund playwright@1.56.1
       - name: Desktop and mobile application checks
-        env:
-          NODE_PATH: /tmp/daruri-matrix-tests/node_modules
         run: |
           python3 -m http.server 8765 >/tmp/daruri-matrix-http.log 2>&1 &
+          node daruri/qa/applications-matrix-layout-probe.js
           node daruri/qa/applications-matrix-browser.js
       - name: Retain browser screenshots
         if: always()
@@ -46,6 +47,7 @@ jobs:
           if-no-files-found: ignore
       - name: Commit tested integration to this feature branch only
         run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
           test "$(git ls-remote origin refs/heads/daruri-applications-matrix-20261110 | cut -f1)" = "$GITHUB_SHA"
           python3 - <<'PY'
           from pathlib import Path
@@ -60,7 +62,7 @@ jobs:
 
           Validation: see qa/applications-matrix-source-check.json and qa/applications-matrix-browser-report.json. Automated Chromium at 1280px/390px and WebKit at 390px/320px check source-derived links, original prose, filters, cell details, return navigation, row jumps, sticky labels, horizontal containment, focus restoration and collapsibility. This is not physical-device testing or a claim of manual screenshot review.
 
-          Branch reservation released after test completion. Publication requires an expected-head-checked update of master and a separate Pages deployment check.
+          Branch reservation released after test completion. Publication requires an expected-head-checked merge into master and a separate Pages deployment check.
           ''',encoding='utf-8')
           PY
           git config user.name 'github-actions[bot]'
