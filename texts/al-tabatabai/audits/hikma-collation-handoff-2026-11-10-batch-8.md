@@ -141,3 +141,7 @@ The reader workflow checks Chromium/WebKit, direct and combined readers, and mob
 4. Finish the pending remote reader and PDF verification, attach the release evidence above, and reconcile all current manifests and registers before announcing publication.
 
 **Cumulative checkpoint:** 348 paired working units; 136/136 complete local Nihāya readings; one complete external Nihāya chapter comparison; zero specialist certifications. Muẓaffar now reaches the end of Book IV's new continuous chapter-II span and the Book V preface, with earlier gaps and the remaining original work still outstanding.
+
+### Initial release infrastructure repair
+
+The first exact-head Hikma workflow, [run 42843182825](https://github.com/gnamma-research/booksite/actions/runs/42843182825), passed the source audit and JavaScript syntax checks but stopped before browser tests: `ubuntu-latest` resolved to Ubuntu 26.04, which the pinned Playwright 1.58.0 installer does not support. Both Hikma workflows are therefore pinned to `ubuntu-24.04`; source content is unchanged by this repair. A later successful run must be recorded before claiming browser or PDF verification.
