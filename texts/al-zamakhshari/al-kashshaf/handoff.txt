@@ -1,22 +1,33 @@
-KASHSHAF / FUTUH AL-GHAYB — C06 CONTINUATION
-8 November 2026
+KASHSHAF / FUTUH AL-GHAYB — C07 REVIEWED
+10 November 2026
 
-USER TASK
-Complete the designated next five surahs and put the entire cumulative translation on GNAMMA, with Tibi switchable around the Kashshaf. The five are 97,104,95,99,101 in ascending Quran Arabic word count:30,33,34,36,36. All five are now complete first drafts of both authorial layers. Minimum future batch remains five short or three medium surahs, each complete.
+CURRENT RESULT
+All 277 existing authorial passages have been compared with electronic Arabic sources. 26 correction records were adopted. The inherited reader from bcbb0846e6d3fdd1cdee86286b4b51b34fe0c791 has been preserved and the corrected Arabic and English integrated into its 123 reading units, 19 static chapter pages, legacy chapter URLs, downloads and search/dictionary data. Navigation, menu icons and controls use the Bahr al-Madid implementation.
 
-CUMULATIVE COVERAGE
-Kashshaf:19 whole-surah drafts. Tibi:18 whole-surah drafts plus Fatiha I677–686 only. Fatiha Tibi resumes I687 at قوله: (معنى اختصاص اسم الله بالابتداء), through I770. Do not call Fatiha Tibi complete. Remaining Quran chapters, general introductions, and Tibi's book epilogue are not covered by complete-surah claims.
-English words including notes:56,780.
-Approximate mixed working Arabic source coverage:31,106/2,085,859 = 1.491%. New batch:6,405 mixed tokens. This is a working transcription proxy, not an exact full-book percentage. Final scholarly review:0%.
+REVIEW STATUS
+Electronic comparison: 277/277.
+Complete Arabic transcriptions: 276/277.
+Fresh page-image collation: 0/277.
+Final scholarly approval: 0/277.
+T108.04 exact Arabic restoration was recovered from the earlier C07 correction record citing Dubai XVI:603; retained in brackets, without claiming a fresh image check.
+T113.06: Arabic of the question to Aisha and her answer still missing from the electronic source. A visible gap is retained; it was not backtranslated.
+This is NOT a definitive critical edition.
 
-READER
-Public target: https://gnamma-research.github.io/booksite/texts/al-zamakhshari/al-kashshaf/
-Repository: gnamma-research/booksite, master. Static chapter pages contain all text from initial load, with no JavaScript or data-fetch dependency for reading. Tibi is mapped explicitly to Kashshaf segments, displayed alongside on wide screens and between base passages on narrow ones. A persistent layer control hides or shows every Tibi segment. Full-text search, passage links, local bookmarks, font/theme settings, focus view, complete text and individual draft downloads are included.
-Fatiha's incomplete Tibi status is shown at the chapter opening and at the exact end of the available Tibi material. Original text drafts remain in translations/. coverage.json records every T-to-K relationship; edition.json contains all parsed segments. Texts index receives one scoped catalogue entry.
+DRAFT COVERAGE
+19 Kashshaf surahs; 18 complete Tibi surahs and Fatiha I:677–686. Fatiha I:687–770 remains untranslated. Other 95 Quran chapters and general introductions are outside this corpus. The Kashshaf closing prayer/colophon is retained separately in sources/kashshaf-colophon-ar.txt; Tibi's book epilogue is outside the reader.
 
-REVIEW
-Read metadata/C06-review-ledger.json and every translation's U-notes. All five Kashshaf chapters compared once with the Turkish publication. Nine selected Arabic printed pages inspected, all equal physical PDF page numbers in this region. New unresolved readings include T99 jiz'al gloss and T104's final positive/negative variant. Earlier source defects and flags remain; see C05 ledger. No independent hadith authentication or final scholarly review claimed.
+READ FIRST
+review-register.html — passage decisions and source dossiers.
+review-ledger.json — adopted and deferred corrections and remaining work.
+reviews/*.json — five detailed comparison dossiers.
+edition.json — canonical reader records; reviewed-corpus.json — all 277 independently keyed passages.
+coverage.json — draft coverage separated from verification.
+arabic-corrections.json — inherited scan reports; these were not newly verified.
 
-FILES AND SOURCES
-This checkpoint copies C05 without changing its files or original sources. Original scans remain in the private source corpus identified by the C05 handoff. Treat all sources as read-only. New excerpts are draft-inputs/095,097,099,101,104-K/T/Turkish.txt. Public site contains original English translation, not the modern Turkish source corpus or the source PDF archive.
-Use build_site.py in the C06 parent, not C04/C05 hardcoded builders. C06 metadata supersedes earlier progress. Retain earlier handoffs as historical records. For continuation, finish a whole designated batch, update coverage and uncertainties, and preserve every authorial argument.
+NEXT REQUIRED WORK
+Obtain and collate full printed-page images, resolve every flagged variant, complete Tibi Fatiha I:687–770, then perform independent scholarly review. In T104 the positive/negative variant changes the argument and must remain explicit. Do not promote draft completeness or electronic comparison to final approval.
+
+VALIDATION
+tests/kashshaf/verify-c07.py: content invariants and exact cumulative copies.
+tests/kashshaf/reader-browser.cjs: Chromium and WebKit; exact Bahr menu/icon parity, shelf, modes, Tibi persistence, search, dictionary, bookmarks, print, 19 static pages, 277 complete English and Arabic sections, responsive layouts and review links.
+.github/workflows/kashshaf-reader-qa.yml runs these before publication.

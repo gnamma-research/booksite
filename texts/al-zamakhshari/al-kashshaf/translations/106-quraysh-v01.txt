@@ -1,74 +1,83 @@
-QURAYSH (106)
-Complete first-pass translation of both authorial layers • C05 • 27 October 2026
+AL-KASHSHAF / FUTUH AL-GHAYB — C07 REVIEWED
+10 November 2026
 
-SOURCE AND STATUS
-Kashshāf: Dār al-Kitāb al-ʿArabī, 1407 AH, IV:800–803, OpenITI Shamela0023627-ara1, compared with the embedded Kashshāf in Ṭībī. Ṭībī: Futūḥ al-Ghayb, Dubai, 1434/2013, XVI:585–590, OpenITI Sham19Y0020891-ara1. Both layers are translated to the end. Modern editorial footnotes are excluded. Reports are translated as attributed by the authors, not independently authenticated. First draft; see the C05 review ledger and textual notes.
+All 277 existing passages have undergone electronic comparison. This is a revised working edition, not a definitive critical edition. Draft coverage: 19 Kashshāf sūrahs, 18 Ṭībī sūrahs and Fātiḥa I:677–686 only. I:687–770 remains untranslated. One Arabic gap, conflicting readings, complete page-image collation and final scholarly approval remain outstanding.
 
-AL-ZAMAKHSHARĪ — AL-KASHSHĀF
+SURAH 106 — Quraysh
+
+﴿بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ لِإِيلَـٰفِ قُرَيْشٍ﴾ (106:1)
+For the taming of Qureysh
+
+﴿إِۦلَـٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ﴾ (106:2)
+For their taming (We cause) the caravans to set forth in winter and summer
+
+﴿فَلْيَعْبُدُوا۟ رَبَّ هَـٰذَا ٱلْبَيْتِ﴾ (106:3)
+So let them worship the Lord of this House
+
+﴿ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍ وَءَامَنَهُم مِّنْ خَوْفٍۭ﴾ (106:4)
+Who hath fed them against hunger and hath made them safe from fear
 
 K106.01 — Heading, verses, and the governing construction [IV:800–801]
+
 Meccan; four verses. [The DKA heading additionally places its revelation after al-Tīn.]
 In the name of God, the All-Merciful, the Merciful.
 
 For the accustomed security of Quraysh—(1) their accustomed winter and summer journey—(2) let them worship the Lord of this House, (3) who has fed them against hunger and secured them against fear. (4)
 
-“For the accustomed security of Quraysh” (li-īlāfi Quraysh) depends grammatically on “let them worship”: He commands them to worship Him because He has accustomed them to the two journeys. If you ask why fāʾ then enters, I reply: because the statement carries a conditional meaning. Its sense is: if for nothing else, let them worship Him for their accustomed security. God’s blessings upon them are innumerable; if they do not worship Him for His other blessings, let them worship Him for this one conspicuous blessing.
+“For the accustomed security of Quraysh” (li-īlāfi (لإيلاف) Quraysh) depends grammatically on “let them worship”: He commands them to worship Him because He has accustomed them to the two journeys. If you ask why fāʾ (ف) then enters, I reply: because the statement carries a conditional meaning. Its sense is: if for nothing else, let them worship Him for their accustomed security. God’s blessings upon them are innumerable; if they do not worship Him for His other blessings, let them worship Him for this one conspicuous blessing.
 
 It is also said to mean: “Marvel at Quraysh’s accustomed security.” Another interpretation connects it to what precedes: “He made them like eaten stalks for the accustomed security of Quraysh.” This resembles enjambment (taḍmīn) in poetry: the meaning of one verse depends upon the preceding verse in such a way that it cannot stand correctly without it. In Ubayy’s codex the two are one sūrah, with no division. It is related of ʿUmar that he recited them both in the second unit of the sunset prayer, having recited “By the fig” in the first.
 
 The meaning is that He destroyed the Abyssinians who intended to attack them, so that people would hear of this, stand in greater awe of them, and accord them increased respect. Thus security would be established for their two journeys and no one would dare attack them.
 
+T106.01 — The fāʾ and the implied condition [XVI:585–586]
+
+Meccan; four verses. In the name of God, the All-Merciful, the Merciful.
+
+On “why, then, does fāʾ (ف) enter?”: the fāʾ (ف) [in the question fa-lima] indicates objection. That is: if li-īlāf (لإيلاف) depends on fa-l-yaʿbudū (فليعبدوا), why does the fāʾ (ف) of succession stand between the governing expression and what it governs? He answers that fāʾ (ف) introduces the consequence of an omitted condition. This must be supplied, because if one reconstructs simply “let them worship Him for the accustomed security of Quraysh,” the fāʾ (ف) remains without anything to which it relates.
+
+It may also be understood as reinforcement, with fāʾ (ف) marking succession: “For Quraysh’s accustomed security, let them worship Him—so let them worship.” Likewise His saying “so let them rejoice” [10:58]. Its permissibility has already been transmitted from al-Zubayr, from al-Zajjāj. His saying “and your Lord—magnify Him” [74:3] follows this pattern. He says: “Fāʾ enters because of the conditional meaning, as though it said, ‘Whatever happens, do not cease to magnify Him.’”
+
+On “the meaning is: immā (إمّا) lā (لا), let them worship Him”: the author is reported to have said, “The Arabs say ‘Do this, immā (إمّا) lā (لا),’ meaning ‘If you will not do something else, do this.’ Mā is additional, compensating for the omitted kāna. They pronounce lā (لا) with imāla (إمالة) because it stands in place of the verb, like balā, both taking the verb’s place. One also says, ‘Give me this, immā (إمّا) lā (لا).’”
+
+T106.02 — Linking the two sūrahs [XVI:586]
+
+On “He made them like eaten stalks for the accustomed security of Quraysh,” al-Zajjāj says: “The meaning is: God destroyed the People of the Elephant so that Quraysh and their accustomed winter and summer journeys might remain.”
+
+On “in the second [unit] of the sunset prayer”: that is, in the second rakʿa; in the first rakʿa he recited Sūrat “By the fig.” This apparently indicates that they are one sūrah. [This is Ṭībī’s inference, retained as his statement.]
+
 K106.02 — The journeys and variant forms [IV:801]
+
 Quraysh had two journeys: they travelled to Yemen in winter and Syria in summer, obtaining provisions and trading. They were secure on both journeys because they were the people of God’s sanctuary and custodians of His House; no one molested them, whereas other people were seized and raided.
 
-Īlāf comes from ālaftu l-makāna, ūlifuhu īlāfan: I became accustomed to a place; hence I am muʾlif. The poet says:
-“Among those accustomed to the [herbage / easy journey], not those grazing arāk.”
+Īlāf comes from ālaftu l-makāna (آلفت المكان), ūlifuhu īlāfan (أولفه إيلافًا): I became accustomed to a place; hence I am muʾlif (مؤلف). The poet says:
+“Among those accustomed to the [herbage / easy journey], not those grazing arāk (أراك).”
 [The DKA transcription reads al-rahw, “easy travelling”; Ṭībī’s printed base reads al-zahw and explains both forms below.]
 
-The reading li-ilāfi Quraysh also occurs, meaning “because of Quraysh’s becoming accustomed.” It is said that one says aliftuhu ilfan wa-ilāfan. Abū Jaʿfar reads li-ilfi Quraysh. Both forms occur in the poet’s words:
+The reading li-ilāfi (لإلاف) Quraysh also occurs, meaning “because of Quraysh’s becoming accustomed.” It is said that one says aliftuhu ilfan wa-ilāfan (وإلافًا). Abū Jaʿfar reads li-ilfi Quraysh. Both forms occur in the poet’s words:
 “You claim that your brothers are Quraysh;
-they have ilf, while you have no ilāf.”
+they have ilf (إلف), while you have no ilāf (إلاف).”
+
+T106.03 — The camel verse and the verbal noun [XVI:587]
+
+On “among those accustomed”: one says ālaftu l-makāna (آلفت المكان), ūlifuhu īlāfan (أولفه إيلافًا) when one becomes accustomed to a place; hence muʾlif (مؤلف). [Earlier provisional reconstruction of the cited wording: al-zahw ghayra l-awārik (الزهو غير الأوارك). The retrieved electronic witness instead reads الزهو غير الإدراك; the wording remains unresolved.] Zahw denotes being short of ripeness; zahw (زهو) also means herbage and dates beginning to colour. One says zahat al-ibilu zahwan when camels travel for a night or more after watering. Zahawtuhā, “I drove them,” is also used: the verb is both transitive and intransitive. Zāhiya (هي) camels do not graze saline plants. Some transmit al-rahw with rāʾ (ر): easy travelling. One says, “The horses came at an easy pace.” Awārik is the plural of ārika (آركة): camels eating arāk (أراك). Al-Jawharī says: “Arakat means that she stayed among the arāk (أراك), which belongs to the saline vegetation; she is ārika (آركة), plural awārik (أوارك).”
+
+On “that is, because of Quraysh’s becoming accustomed”: according to this interpretation, ilāf (إلاف) is the verbal noun of fāʿala (فَاعَلَ), and means muʾālafa (مؤالفة), like ḍāraba (ضارب), muḍārabatan (مضاربةً) and ḍirāban (ضرابًا).
 
 K106.03 — The name Quraysh and the syntax of “journey” [IV:802]
-ʿIkrima reads li-yaʾlafa Qurayshun, ilfahum riḥlata l-shitāʾi wa-l-ṣayf. Quraysh are the descendants of al-Naḍr ibn Kināna. They were named with the diminutive of al-qirsh, a great sea creature that attacks ships and can be overcome only with fire. Muʿāwiya is reported to have asked Ibn ʿAbbās, “Why was Quraysh so named?” He replied, “After a sea creature that eats but is not eaten and overcomes but is not overcome,” and recited:
+
+ʿIkrima reads li-yaʾlafa (ليألف) Qurayshun, ilfahum riḥlata l-shitāʾi wa-l-ṣayf (رحلة الشتاء والصيف). Quraysh are the descendants of al-Naḍr ibn Kināna. They were named with the diminutive of al-qirsh, a great sea creature that attacks ships and can be overcome only with fire. Muʿāwiya is reported to have asked Ibn ʿAbbās, “Why was Quraysh so named?” He replied, “After a sea creature that eats but is not eaten and overcomes but is not overcome,” and recited:
 “Quraysh is the creature dwelling in the sea;
 after it Quraysh was named Quraysh.”
 
 The diminutive conveys magnification. Another explanation derives it from qarsh, earning, because they earned through trade and travelling through the lands.
 
-Īlāf is first stated without qualification, then replaced by an appositional expression specifying the two journeys, to magnify this accustomed security and remind them of the greatness of its blessing. Riḥla is accusative as the object of īlāfihim, just as yatīman is made accusative by iṭʿām [90:14–15]. The two journeys of winter and summer are meant. The singular is used because confusion is impossible, as in:
+Īlāf is first stated without qualification, then replaced by an appositional expression specifying the two journeys, to magnify this accustomed security and remind them of the greatness of its blessing. Riḥla is accusative as the object of īlāfihim (إيلافهم), just as yatīman (يتيمًا) is made accusative by iṭʿām (إطعام) [90:14–15]. The two journeys of winter and summer are meant. The singular is used because confusion is impossible, as in:
 “Eat into part of your belly [rather than fill your bellies].”
 
-K106.04 — Hunger, fear, and the concluding report [IV:803]
-Ruḥla is also read, with ḍamma: the destination to which one travels. The indefiniteness of “hunger” and “fear” indicates their severity. Through the two journeys He fed them against the severe hunger they had previously suffered and secured them against great fear: fear of the People of the Elephant, or fear of being seized in their own country and on their routes.
-
-It is also said that hardship had afflicted them until they ate carrion and burnt bones; and that He secured them against fear of leprosy, so that it does not afflict them in their country. All this, it is said, came through Abraham’s prayer. Among novel interpretations is: “He secured them against fear” that the caliphate might belong to others. Min khawf is also read with concealment of the nūn [ikhfāʾ].
-
-From God’s Messenger: “Whoever recites the sūrah ‘For the accustomed security of Quraysh,’ God gives him ten good deeds for every person who circumambulates the Kaʿba and stays there in devotional retreat.”
-
-AL-ṬĪBĪ — FUTŪḤ AL-GHAYB
-
-T106.01 — The fāʾ and the implied condition [XVI:585–586]
-Meccan; four verses. In the name of God, the All-Merciful, the Merciful.
-
-On “why, then, does fāʾ enter?”: the fāʾ [in the question fa-lima] indicates objection. That is: if li-īlāf depends on fa-l-yaʿbudū, why does the fāʾ of succession stand between the governing expression and what it governs? He answers that fāʾ introduces the consequence of an omitted condition. This must be supplied, because if one reconstructs simply “let them worship Him for the accustomed security of Quraysh,” the fāʾ remains without anything to which it relates.
-
-It may also be understood as reinforcement, with fāʾ marking succession: “For Quraysh’s accustomed security, let them worship Him—so let them worship.” Likewise His saying “so let them rejoice” [10:58]. Its permissibility has already been transmitted from al-Zubayr, from al-Zajjāj. His saying “and your Lord—magnify Him” [74:3] follows this pattern. He says: “Fāʾ enters because of the conditional meaning, as though it said, ‘Whatever happens, do not cease to magnify Him.’”
-
-On “the meaning is: immā lā, let them worship Him”: the author is reported to have said, “The Arabs say ‘Do this, immā lā,’ meaning ‘If you will not do something else, do this.’ Mā is additional, compensating for the omitted kāna. They pronounce lā with imāla because it stands in place of the verb, like balā, both taking the verb’s place. One also says, ‘Give me this, immā lā.’”
-
-T106.02 — Linking the two sūrahs [XVI:586]
-On “He made them like eaten stalks for the accustomed security of Quraysh,” al-Zajjāj says: “The meaning is: God destroyed the People of the Elephant so that Quraysh and their accustomed winter and summer journeys might remain.”
-
-On “in the second [unit] of the sunset prayer”: that is, in the second rakʿa; in the first rakʿa he recited Sūrat “By the fig.” This apparently indicates that they are one sūrah. [This is Ṭībī’s inference, retained as his statement.]
-
-T106.03 — The camel verse and the verbal noun [XVI:587]
-On “among those accustomed”: one says ālaftu l-makāna, ūlifuhu īlāfan when one becomes accustomed to a place; hence muʾlif. [The cited wording is] al-zahw ghayra l-awārik. Zahw denotes being short of ripeness; zahw also means herbage and dates beginning to colour. One says zahat al-ibilu zahwan when camels travel for a night or more after watering. Zahawtuhā, “I drove them,” is also used: the verb is both transitive and intransitive. Zāhiya camels do not graze saline plants. Some transmit al-rahw with rāʾ: easy travelling. One says, “The horses came at an easy pace.” Awārik is the plural of ārika: camels eating arāk. Al-Jawharī says: “Arakat means that she stayed among the arāk, which belongs to the saline vegetation; she is ārika, plural awārik.”
-
-On “that is, because of Quraysh’s becoming accustomed”: according to this interpretation, ilāf is the verbal noun of fāʿala, and means muʾālafa, like ḍāraba, muḍārabatan and ḍirāban.
-
 T106.04 — Two poems [XVI:588–589]
-On “it is also said”: this indicates a verbal noun of faʿala, like kataba kitāban.
+
+On “it is also said”: this indicates a verbal noun of faʿala (فَعَلَ), like kataba kitāban (كتب كتابًا).
 
 After the verse beginning “You claim” comes:
 “Those people were secured against hunger and fear,
@@ -87,12 +96,50 @@ In the latter age they shall have a prophet
 who multiplies killing and scratching wounds among them.”
 
 T106.05 — The object and the destination [XVI:589]
-On “just as yatīman is made accusative by iṭʿām” [90:14–15], Abū l-Baqāʾ says: “Yatīman is the object of iṭʿām. Some Basrans hold that when the verbal noun governs an object, it contains a pronoun like the pronoun within the active participle.”
 
-On “the destination to which one travels,” al-Kawāshī says: “Originally riḥla meant travelling on a riding camel; it then came to be used for every kind of travel.”
+On “just as yatīman (يتيمًا) is made accusative by iṭʿām (إطعام)” [90:14–15], Abū l-Baqāʾ says: “Yatīman is the object of iṭʿām (إطعام). Some Basrans hold that when the verbal noun governs an object, it contains a pronoun like the pronoun within the active participle.”
+
+On “the destination to which one travels,” al-Kawāshī says: “Originally riḥla (رِحْلة) meant travelling on a riding camel; it then came to be used for every kind of travel.”
 
 End of the sūrah [XVI:590; no further unique gloss follows the final Kashshāf block].
+
+K106.04 — Hunger, fear, and the concluding report [IV:803]
+
+Ruḥla is also read, with ḍamma (ضَمّة): the destination to which one travels. The indefiniteness of “hunger” and “fear” indicates their severity. Through the two journeys He fed them against the severe hunger they had previously suffered and secured them against great fear: fear of the People of the Elephant, or fear of being seized in their own country and on their routes.
+
+It is also said that hardship had afflicted them until they ate carrion and burnt bones; and that He secured them against fear of leprosy, so that it does not afflict them in their country. All this, it is said, came through Abraham’s prayer. Among novel interpretations is: “He secured them against fear” that the caliphate might belong to others. Min khawf is also read with concealment of the nūn (ن) [ikhfāʾ (إخفاء)].
+
+From God’s Messenger: “Whoever recites the sūrah ‘For the accustomed security of Quraysh,’ God gives him ten good deeds for every person who circumambulates the Kaʿba and stays there in devotional retreat.”
+
+Quraysh · source and review notes · inherited record
+
+INHERITED C06 RECORD. Earlier scan claims have not been independently reconfirmed in this pass. Current corrections supersede provisional renderings below; consult the C07 review register.
 
 TEXTUAL AND REVIEW NOTES
 K106-U1 / T106-U1: The camel verse has zahw in the printed Dubai base and rahw in the DKA transcription. Both are preserved and explained. The difficult printed phrase الزهو غير الإدراك appears in the transcription as well; it is not securely established as a transcription error. The bracketed reconstruction of the cited verse and its relation to the adjacent lexical explanations require further fine collation before final publication. The provisional account above retains all the lexical alternatives rather than suppressing the difficulty.
 T106-U2: The reading “al-Zubayr, from al-Zajjāj” occurs in the print; the modern apparatus notes a witness omission. It remains attributed as printed, without asserting a resolved identification.
+
+
+Tanzil Quran Text
+Copyright (C) 2007-2021 Tanzil Project
+License: Creative Commons Attribution 3.0
+
+This copy of the Quran text is carefully produced, highly
+verified and continuously monitored by a group of specialists
+in Tanzil Project.
+
+TERMS OF USE:
+
+- Permission is granted to copy and distribute verbatim copies
+  of this text, but CHANGING IT IS NOT ALLOWED.
+
+- This Quran text can be used in any website or application,
+  provided that its source (Tanzil Project) is clearly indicated,
+  and a link is made to tanzil.net to enable users to keep
+  track of changes.
+
+- This copyright notice shall be included in all verbatim copies
+  of the text, and shall be reproduced appropriately in all files
+  derived from or containing substantial portion of this text.
+
+Please check updates at: http://tanzil.net/updates/

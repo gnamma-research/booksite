@@ -1,7 +1,7 @@
 name: Kashshaf and Tibi reader QA
 on:
   push:
-    branches: [master]
+    branches: [master, 'codex/kashshaf-c07*']
     paths:
       - 'texts/al-zamakhshari/al-kashshaf/**'
       - 'tests/kashshaf/**'
@@ -21,6 +21,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify source and rendering invariants
+        run: |
+          node --check texts/al-zamakhshari/al-kashshaf/reader-render.js
+          node --check texts/al-zamakhshari/al-kashshaf/book-pages.js
+          node --check tests/kashshaf/reader-browser.cjs
+          python3 tests/kashshaf/verify-c07.py
       - run: npm install --no-save --package-lock=false playwright
       - run: npx playwright install --with-deps chromium webkit
       - name: Verify complete content and reader interactions

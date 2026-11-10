@@ -1,6 +1,6 @@
 {
-  "checkpoint": "C06",
-  "date": "2026-11-08",
+  "checkpoint": "C07",
+  "date": "2026-11-10",
   "K_complete": 19,
   "T_complete": 18,
   "T_partial": {
@@ -677,5 +677,19 @@
         ]
       }
     }
-  ]
+  ],
+  "completion_basis": "Existing translated surah coverage, not final approval",
+  "review": {
+    "segments_compared": 277,
+    "new_scan_collated": 0,
+    "final_approved": 0,
+    "arabic_lacunae": [
+      "T113.06"
+    ],
+    "inline_arabic_glosses_added": 611,
+    "recovered_prior_scan_restorations": [
+      "T108.04"
+    ],
+    "additional_inherited_glosses": 534
+  }
 }

@@ -1,53 +1,94 @@
-AL-ʿAṢR (103) — TIME
-Complete first-pass translation of both authorial layers • C05 • 27 October 2026
+AL-KASHSHAF / FUTUH AL-GHAYB — C07 REVIEWED
+10 November 2026
 
-SOURCE AND STATUS
-Kashshāf: Dār al-Kitāb al-ʿArabī, 1407 AH, IV:793–794, OpenITI Shamela0023627-ara1; checked against the embedded base text in Ṭībī. Ṭībī: Futūḥ al-Ghayb, Dubai, 1434/2013, XVI:565–567, OpenITI Sham19Y0020891-ara1. Both layers are translated through their endings. Modern editorial footnotes are excluded. Reports retain their authors’ attribution without independent authentication. Review details and uncertainties are recorded in the C05 ledger; this is not a final critical edition.
+All 277 existing passages have undergone electronic comparison. This is a revised working edition, not a definitive critical edition. Draft coverage: 19 Kashshāf sūrahs, 18 Ṭībī sūrahs and Fātiḥa I:677–686 only. I:687–770 remains untranslated. One Arabic gap, conflicting readings, complete page-image collation and final scholarly approval remain outstanding.
 
-AL-ZAMAKHSHARĪ — AL-KASHSHĀF
+SURAH 103 — al-ʿAṣr
+
+﴿بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ وَٱلْعَصْرِ﴾ (103:1)
+By the declining day
+
+﴿إِنَّ ٱلْإِنسَـٰنَ لَفِى خُسْرٍ﴾ (103:2)
+Lo! man is a state of loss
+
+﴿إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ﴾ (103:3)
+Save those who believe and do good works, and exhort one another to truth and exhort one another to endurance
 
 K103.01 — Heading and verses [IV:793]
+
 Meccan; three verses. [The DKA edition’s heading additionally places its revelation after al-Sharḥ.]
 In the name of God, the All-Merciful, the Merciful.
 
 By time! (1) Surely the human being is in loss, (2) except those who believe, do righteous deeds, counsel one another to the truth, and counsel one another to patience. (3)
 
 K103.02 — The oath and the exception [IV:793–794]
+
 He swears by the afternoon prayer because of its excellence. Evidence is His saying, “and the middle prayer—the afternoon prayer,” in Ḥafṣa’s codex [cf. 2:238], and the Prophet’s saying, “Whoever misses the afternoon prayer is as though he had been deprived of his family and property.” Moreover, the obligation to perform it is more demanding because people rush into their trading and earning toward the end of the day and are occupied with their livelihoods.
 
 Or He swears by the late afternoon, just as He swears by the morning brightness, because both contain signs of divine power. Or He swears by time because of the many kinds of wonders in its passage.
 
-“The human being” denotes the species. Khusr means khusrān, loss, just as kufr is used for kufrān. The meaning is that people lose in their trading, except the righteous alone: they purchase the hereafter with this world, and so profit and attain felicity. Everyone else trades in the opposite way and falls into loss and wretchedness.
+“The human being” denotes the species. Khusr means khusrān (خسران), loss, just as kufr (كُفْر) is used for kufrān (كفران). The meaning is that people lose in their trading, except the righteous alone: they purchase the hereafter with this world, and so profit and attain felicity. Everyone else trades in the opposite way and falls into loss and wretchedness.
 
 “And counsel one another to the truth”: to the established reality that cannot rightfully be denied. It encompasses all good: affirming God’s oneness and obeying Him, following His books and messengers, renouncing attachment to this world, and desiring the hereafter.
 
 “And counsel one another to patience”: in refraining from acts of disobedience, performing acts of obedience, and bearing the trials with which God tests His servants.
 
-K103.03 — Closing report [IV:794]
-From God’s Messenger: “Whoever recites the sūrah ‘By time,’ God forgives him, and he is among those who counsel one another to the truth and counsel one another to patience.”
-
-AL-ṬĪBĪ — FUTŪḤ AL-GHAYB
-
 T103.01 — “As though deprived of his family and property” [XVI:565]
+
 Meccan; three verses. In the name of God, the All-Merciful, the Merciful.
 
-On “as though he had been deprived of his family and property,” al-Nihāya says: “Wutira means diminished. You say watartuhu when you diminish someone, as though making him solitary after he had been many. It is also said to derive from watr, an injury: the person who misses the afternoon prayer is likened to someone whose intimate companion has been killed or whose family and property have been taken from him.
+On “as though he had been deprived of his family and property,” al-Nihāya says: “Wutira means diminished. You say watartuhu (وَتَرْتُه) when you diminish someone, as though making him solitary after he had been many. It is also said to derive from watr (وَتْر), an injury: the person who misses the afternoon prayer is likened to someone whose intimate companion has been killed or whose family and property have been taken from him.
 
-“The report is transmitted with ‘family’ both accusative and nominative. Those who put it in the accusative make it the second object of wutira, and understand within the verb an unexpressed passive subject referring to the person who missed the prayer. Those who put it in the nominative posit no such pronoun, but make ‘family’ the passive subject, since they are the ones struck by the loss and taken away. Whoever attributes the deprivation to the man puts both nouns in the accusative; whoever attributes it to family and property puts them in the nominative.”
+“The report is transmitted with ‘family’ both accusative and nominative. Those who put it in the accusative make it the second object of wutira (وُتِر), and understand within the verb an unexpressed passive subject referring to the person who missed the prayer. Those who put it in the nominative posit no such pronoun, but make ‘family’ the passive subject, since they are the ones struck by the loss and taken away. Whoever attributes the deprivation to the man puts both nouns in the accusative; whoever attributes it to family and property puts them in the nominative.”
 
 T103.02 — Rushing, time, and mutual counsel [XVI:566]
-On “because they rush” (li-tahāfut): it means falling down piece by piece. Tahāfut al-farāsh fī l-nār means the moths’ falling into the fire.
 
-On “or He swears by time,” al-Zajjāj says: “Al-ʿaṣr means time; al-ʿaṣr also means day, and al-ʿaṣr means night.” Ḥumayd ibn Thawr says:
+On “because they rush” (li-tahāfut (لتهافت)): it means falling down piece by piece. Tahāfut al-farāsh fī (في) l-nār means the moths’ falling into the fire.
+
+On “or He swears by time,” al-Zajjāj says: “Al-ʿaṣr means time; al-ʿaṣr (العصر) also means day, and al-ʿaṣr (العصر) means night.” Ḥumayd ibn Thawr says:
 “The two times—day and night—do not delay,
 when they seek something, in overtaking what they aim at.”
 
-On “‘and counsel one another to the truth’: to the established reality,” and what follows, al-Rāghib says: “Waṣiyya is giving another person advance instructions about something to be done, accompanied by admonition and sincere advice. It derives from their expression arḍ wāṣiya: land whose vegetation is continuous. One says awṣāhu and waṣṣāhu; a people tawāṣaw when they counsel one another.” One says qaddamtu ilayhi bi-kadhā when one commands someone before the time comes for the action to be needed.
+On “‘and counsel one another to the truth’: to the established reality,” and what follows, al-Rāghib says: “Waṣiyya is giving another person advance instructions about something to be done, accompanied by admonition and sincere advice. It derives from their expression arḍ wāṣiya (أرض واصية): land whose vegetation is continuous. One says awṣāhu (أوصاه) and waṣṣāhu (وصّاه); a people tawāṣaw (تواصوا) when they counsel one another.” One says qaddamtu ilayhi bi-kadhā (بكذا) when one commands someone before the time comes for the action to be needed.
 
 T103.03 — The four requirements of deliverance [XVI:567]
+
 The Imām [Fakhr al-Dīn al-Rāzī] says: “The verse contains a severe threat, for it judges all people to be in loss except whoever possesses faith, righteous action, mutual counsel to the truth, and mutual counsel to patience. This indicates that deliverance depends on these things together. Just as the morally responsible person must acquire what concerns his own self, he must also, regarding others, call to religion, give sincere advice, command right and forbid wrong, and love for another what he loves for himself. Mutual counsel is then repeated so that the first includes calling to God and the second remaining steadfast in it.”
 
 End of the sūrah.
 
+K103.03 — Closing report [IV:794]
+
+From God’s Messenger: “Whoever recites the sūrah ‘By time,’ God forgives him, and he is among those who counsel one another to the truth and counsel one another to patience.”
+
+al-ʿAṣr · source and review notes · inherited record
+
+INHERITED C06 RECORD. Earlier scan claims have not been independently reconfirmed in this pass. Current corrections supersede provisional renderings below; consult the C07 review register.
+
 TEXTUAL NOTE
 T103-U1: XVI:566 reads أرض واصية, “land whose vegetation is continuous”; the electronic text’s أوض is corrected from the scan. This is a transcription correction, not a translation of the modern editor’s apparatus.
+
+
+Tanzil Quran Text
+Copyright (C) 2007-2021 Tanzil Project
+License: Creative Commons Attribution 3.0
+
+This copy of the Quran text is carefully produced, highly
+verified and continuously monitored by a group of specialists
+in Tanzil Project.
+
+TERMS OF USE:
+
+- Permission is granted to copy and distribute verbatim copies
+  of this text, but CHANGING IT IS NOT ALLOWED.
+
+- This Quran text can be used in any website or application,
+  provided that its source (Tanzil Project) is clearly indicated,
+  and a link is made to tanzil.net to enable users to keep
+  track of changes.
+
+- This copyright notice shall be included in all verbatim copies
+  of the text, and shall be reproduced appropriately in all files
+  derived from or containing substantial portion of this text.
+
+Please check updates at: http://tanzil.net/updates/

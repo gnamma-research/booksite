@@ -1,64 +1,44 @@
-AL-MASAD / TABBAT (111) — THE TWISTED ROPE
-Complete first-pass translation of both authorial layers • C05 • 27 October 2026
+AL-KASHSHAF / FUTUH AL-GHAYB — C07 REVIEWED
+10 November 2026
 
-SOURCE AND STATUS
-Kashshāf: DKA, 1407 AH, IV:813–817, OpenITI Shamela0023627-ara1. Ṭībī: Dubai, 1434/2013, XVI:622–631, OpenITI Sham19Y0020891-ara1. Both authorial layers are translated in full through their endings. Editorial footnotes are excluded; transmitted assertions retain their attribution. First draft, not final review. The scan of printed XVI:629 was consulted for the camel-hide verse and gloss.
+All 277 existing passages have undergone electronic comparison. This is a revised working edition, not a definitive critical edition. Draft coverage: 19 Kashshāf sūrahs, 18 Ṭībī sūrahs and Fātiḥa I:677–686 only. I:687–770 remains untranslated. One Arabic gap, conflicting readings, complete page-image collation and final scholarly approval remain outstanding.
 
-AL-ZAMAKHSHARĪ — AL-KASHSHĀF
+SURAH 111 — al-Masad
+
+﴿بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ تَبَّتْ يَدَآ أَبِى لَهَبٍ وَتَبَّ﴾ (111:1)
+The power of Abu Lahab will perish, and he will perish
+
+﴿مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ﴾ (111:2)
+His wealth and gains will not exempt him
+
+﴿سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ﴾ (111:3)
+He will be plunged in flaming Fire
+
+﴿وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ﴾ (111:4)
+And his wife, the wood-carrier
+
+﴿فِى جِيدِهَا حَبْلٌ مِّن مَّسَدٍۭ﴾ (111:5)
+Will have upon her neck a halter of palm-fibre
 
 K111.01 — Heading, verses, and destruction [IV:813]
+
 Meccan; five verses. [The DKA heading places it after al-Fātiḥa.]
 In the name of God, the All-Merciful, the Merciful.
 
 May Abū Lahab’s hands perish—and perish he did! (1) His wealth and what he earned have availed him nothing. (2) He shall burn in a flaming fire, (3) and his wife, the carrier of firewood, (4) with a rope of twisted fibre about her neck. (5)
 
-Tabāb means destruction. Hence their question, “Is she young, or tābba?”—worn out by decrepitude and old age. His hands perish because, according to a report, he picked up a stone to throw at God’s Messenger; “and he perished” means his whole person perished. Or his hands are declared ruined with the destruction of his entire person intended, as in “because of what your two hands sent ahead” [22:10]. “And he perished” then means this occurred and was accomplished, as in:
+Tabāb means destruction. Hence their question, “Is she young, or tābba (تابّة)?”—worn out by decrepitude and old age. His hands perish because, according to a report, he picked up a stone to throw at God’s Messenger; “and he perished” means his whole person perished. Or his hands are declared ruined with the destruction of his entire person intended, as in “because of what your two hands sent ahead” [22:10]. “And he perished” then means this occurred and was accomplished, as in:
 “He requited me—may God requite him with the worst requital—
 with the requital of howling dogs; and He has done so.”
 
-K111.02 — The warning on al-Ṣafā and his byname [IV:814]
-Ibn Masʿūd’s reading “and he has indeed perished” supports this. It is related that when “Warn your nearest kinsfolk” [26:214] was revealed, he climbed al-Ṣafā and cried, “Alarm!” People gathered from every direction. He said, “Sons of ʿAbd al-Muṭṭalib, sons of Fihr: if I told you there was cavalry at this mountain’s foot, would you believe me?” “Yes.” “Then I warn you before the Hour.” Abū Lahab said, “Ruin to you! Is this why you summoned us?” The sūrah was revealed.
-
-If you ask why he is given his kunya, when this is an honour, I reply: there are three explanations. First, he may have been known by his kunya rather than his name. A man may be known by one rather than the other; hence either may follow the other as explanatory apposition. Since the intention was to make him notorious by a curse that would remain his mark, the better-known designation was used. This is supported by the reading yadā Abū Lahab, like “ʿAlī ibn Abū Ṭālib” and “Muʿāwiya ibn Abū Sufyān”: nothing is altered in the familiar name, lest the listener become confused. Fulayta ibn Qāsim, Mecca’s ruler, had two sons, one called ʿAbdi-llāh with the genitive, the other ʿAbda-llāh with the accusative. There was a man in Mecca known only as ʿAbdi-llāh, with kasra on the dāl.
-
-Second, his name was ʿAbd al-ʿUzzā, so the kunya was used instead. Third, he belonged to the people of the Fire and would end in a flaming fire, so his condition suited his kunya, “Father of Flame,” making it fitting. One calls someone Abū Lahab as one calls a wicked person “Father of Evil” and a good person “Father of Good,” or as the Messenger called al-Muhallab’s father Abū Ṣufra because of yellow colouring in his face. It is also said that his cheeks glowed and shone, which gave him the name; using it may therefore mock both him and his pride in it.
-
-Abī Lahb is also read with quiescent hāʾ: an alteration peculiar to proper names, like Shums ibn Mālik with ḍamma.
-
-K111.03 — Wealth and earnings [IV:814–815]
-Mā aghnā is either an interrogative expressing denial, with mā accusative, or a negation. Wa-mā kasaba is nominative; mā is either relative, “what he earned,” or converts the clause into a verbal noun, “his earning.” His wealth and what he earned through it did not benefit him: capital and profits; or livestock and their offspring and benefits—he owned abundant breeding stock; or inherited wealth and what he acquired himself; or long-held and newly acquired property.
-
-Ibn ʿAbbās explains “what he earned” as his children. Abū Lahab’s sons are said to have brought a dispute before him and begun fighting. He rose to separate them; one pushed him and he fell. Angry, he said, “Take this foul earning away from me!” Hence the Prophet’s saying, “The best of what a man eats is from his earning, and his child is from his earning.” Al-Ḍaḥḥāk explains it as his wealth and evil action, meaning his schemes of hostility against the Messenger. Qatāda takes it as the deeds he thought amounted to something, as in “We turned to whatever deeds they had done” [25:23]. It is related that he said, “If my nephew’s claims are true, I shall ransom myself from it with my wealth and children.”
-
-K111.04 — His wife and the firewood [IV:815]
-Sa-yaṣlā is read with fatḥa on yāʾ and also with ḍamma, in both lightened and doubled forms. Sīn expresses threat: it will inevitably occur, however delayed. His wife is Umm Jamīl daughter of Ḥarb, Abū Sufyān’s sister. She carried bundles of thorns, prickles and saʿdān and scattered them at night on the Messenger’s path. Or she went about carrying tales. A malicious gossip who corrupts relations is said to “carry firewood among them”: he kindles their hostility and causes evil. The poet says:
-“A fair woman never found upon a blameworthy course,
-nor walking among the tribe with damp firewood.”
-The wood is called damp to suggest smoke, an additional evil.
-
-“His wife” is nominative, conjoined to the pronoun in sa-yaṣlā: he and his wife will burn; “about her neck” then expresses a circumstance. Or “his wife” is the subject and “about her neck” its predicate. “Carrier of firewood” is also read accusative as abuse. I prefer this reading: whoever loves reviling Umm Jamīl has approached the Messenger through something fine (jamīl). Ḥammālatun li-l-ḥaṭab and ḥammālatan li-l-ḥaṭab are also read, with tanwīn and nominative or accusative. Wa-murayʾatuhu, “and his little wife,” is read as a diminutive.
-
-K111.05 — The rope, the taunt, and punishment [IV:815–817]
-Masad is tightly twisted cord, whether palm fibre, leather, or another material. The poet says, “And a rope tightly twisted from she-camels.” A man mamsūd in build is firmly knit. Thus she has a twisted rope about her neck, carrying and tying up the thorns like wood-gatherers. This debases and belittles her, depicting her as one of the serving-women who gather wood, to anger both her and her husband despite their house of honour and their wealth and prosperity.
-
-Someone taunted al-Faḍl ibn al-ʿAbbās ibn ʿUtba ibn Abī Lahab with “the carrier of firewood.” He replied:
-“Why have you turned to insulting and diminishing me?
-What reproach is there in the carrier of firewood?
-A radiant woman, whose broad blaze shone in glory,
-offspring of an elder of profound ancestral distinction.”
-
-Or the meaning is that in Hell she will appear as she did when carrying the thorn-bundle: always bearing a bundle of hellfire wood from zaqqūm or ḍarīʿ, with a rope twisted from the Fire’s chains about her neck. Every criminal is punished in a manner corresponding to his crime.
-
-From God’s Messenger: “Whoever recites Sūrat Tabbat, I hope God will not place him and Abū Lahab together in one abode.”
-
-AL-ṬĪBĪ — FUTŪḤ AL-GHAYB
-
 T111.01 — Loss and old age [XVI:622]
+
 Meccan; five verses. In the name of God, the All-Merciful, the Merciful.
 
-On “tabāb means destruction,” al-Rāghib says: “Tabb and tabāb mean persistence in loss. One says tabban lahu and tabba lahu; tabbabtuhu means I said that to him. Because persistence is included, istatabba li-fulān means something became established for him. ‘Abū Lahab’s hands perished’ means they persisted in loss; ‘they added only destruction to them’ [11:101] means causing loss.” On “becoming aged”: ʿajizat and ʿajjazat describe a woman becoming old, just as tathayyabat means becoming previously married.
+On “tabāb (تباب) means destruction,” al-Rāghib says: “Tabb and tabāb (تباب) mean persistence in loss. One says tabban lahu (تَبًّا له) and tabbun lahu (تَبٌّ له); tabbabtuhu means I said that to him. Because persistence is included, istatabba li-fulān means something became established for him. ‘Abū Lahab’s hands perished’ means they persisted in loss; ‘they added only destruction to them’ [11:101] means causing loss.” On “becoming aged”: ʿajazat (عَجَزَتْ) and ʿajjazat (عَجَّزَتْ) describe a woman becoming old, just as tathayyabat means becoming previously married.
 
 T111.02 — Hands, the whole person, and certainty [XVI:623–624]
+
 On “his entire person is meant,” compare:
 “A man whose hands begrudge another man
 a benefit from someone else is surely miserly.”
@@ -68,45 +48,119 @@ On “‘and he perished’: it happened”: according to one explanation tabba 
 
 I say: the composition supports this. What follows explains it: “His wealth and earnings availed him nothing” points to his deeds’ destruction, and “He shall burn in a flaming fire” to his own. The past tense first signals certainty, as God’s announcements of future events do; the future tense second depicts the coming state before the listener’s eyes. Ibn Masʿūd’s “he has indeed perished” supports this, since qad confirms, as in the poet’s “and He has done so.” The poem means: he requited me like howling dogs—“running dogs” is also transmitted—may God give him His worst requital, and He has already done it.
 
+K111.02 — The warning on al-Ṣafā and his byname [IV:814]
+
+Ibn Masʿūd’s reading “and he has indeed perished” supports this. It is related that when “Warn your nearest kinsfolk” [26:214] was revealed, he climbed al-Ṣafā and cried, “Alarm!” People gathered from every direction. He said, “Sons of ʿAbd al-Muṭṭalib, sons of Fihr: if I told you there was cavalry at this mountain’s foot, would you believe me?” “Yes.” “Then I warn you before the Hour.” Abū Lahab said, “Ruin to you! Is this why you summoned us?” The sūrah was revealed.
+
+If you ask why he is given his kunya, when this is an honour, I reply: there are three explanations. First, he may have been known by his kunya rather than his name. A man may be known by one rather than the other; hence either may follow the other as explanatory apposition. Since the intention was to make him notorious by a curse that would remain his mark, the better-known designation was used. This is supported by the reading yadā (يدا) Abū Lahab, like “ʿAlī ibn Abū Ṭālib” and “Muʿāwiya ibn Abū Sufyān”: nothing is altered in the familiar name, lest the listener become confused. Falīta (فَلِيتة) ibn Qāsim (فَلِيتة بن قاسم), Mecca’s ruler, had two sons, one called ʿAbdi-llāh with the genitive, the other ʿAbda-llāh with the accusative. There was a man in Mecca known only as ʿAbdi-llāh, with kasra (كَسْرة) on the dāl (د).
+
+Second, his name was ʿAbd al-ʿUzzā, so the kunya was used instead. Third, he belonged to the people of the Fire and would end in a flaming fire, so his condition suited his kunya, “Father of Flame,” making it fitting. One calls someone Abū Lahab as one calls a wicked person “Father of Evil” and a good person “Father of Good,” or as the Messenger called al-Muhallab’s father Abū Ṣufra because of yellow colouring in his face. It is also said that his cheeks glowed and shone, which gave him the name; using it may therefore mock both him and his pride in it.
+
+Abī Lahb is also read with quiescent hāʾ (ه): an alteration peculiar to proper names, like Shums ibn Mālik with ḍamma (ضَمّة).
+
 T111.03 — The cry of warning [XVI:624]
+
 The report upon “Warn your nearest kinsfolk” [26:214] is transmitted by al-Bukhārī, Muslim, Imām Aḥmad and al-Tirmidhī from Ibn ʿAbbās: the Prophet climbed al-Ṣafā, calling the branches of Quraysh, “Sons of Fihr! Sons of ʿAdī!” They gathered; anyone unable to come sent someone to discover the matter. Abū Lahab and Quraysh came. He said, “If I told you cavalry in the valley intended to raid you, would you believe me?” “Yes: we have experienced only truthfulness from you.” “Then I warn you before a severe punishment.” Abū Lahab said, “Ruin to you all day! Is this why you gathered us?” The sūrah descended.
 
-Al-Nihāya explains yā ṣabāḥāh: “A cry for aid, originally the alarm for a raid, since raids commonly occurred in the morning: morning has come, so prepare.” Safḥ is the mountain’s lower slope, where water pours down.
+Al-Nihāya explains yā ṣabāḥāh (صباحاه): “A cry for aid, originally the alarm for a raid, since raids commonly occurred in the morning: morning has come, so prepare.” Safḥ is the mountain’s lower slope, where water pours down.
 
 T111.04 — Names, readings, and al-Muhallab [XVI:625–626]
+
 On preserving the name unchanged, al-Intiṣāf says: “This indicates that the nominative precedes the other case forms. They preserve its familiar shape; the name became known thus. His name ʿAbd al-ʿUzzā was avoided in favour of his kunya because it was disliked.”
 
-Fulayta has fatḥa on fāʾ and kasra on lām; Fukayta with kāf and the diminutive is also transmitted. The report that the Messenger named al-Muhallab’s father Abū Ṣufra is not mentioned in Jāmiʿ al-uṣūl. Al-Muhallab is Abū Saʿīd al-Muhallab ibn Abī Ṣufra; his father’s name was Ẓālim ibn Surrāq ibn Ṣubayḥ al-Azdī. Al-Muhallab fought the celebrated wars against the Khārijites and died in 83 at Marw al-Rūdh under ʿAbd al-Malik ibn Marwān. He belongs to the first generation of Basran Successors and saw ʿUmar ibn al-Khaṭṭāb.
+Falīta (فَلِيتة) has fatḥa (فَتْحة) on fāʾ (ف) and kasra (كَسْرة) on lām (ل); Fukayta (فُكَيْتة) with kāf (ك) and the diminutive is also transmitted. The report that the Messenger named al-Muhallab’s father Abū Ṣufra is not mentioned in Jāmiʿ al-uṣūl (الأصول). Al-Muhallab is Abū Saʿīd al-Muhallab ibn Abī Ṣufra; his father’s name was Ẓālim ibn Surrāq ibn Ṣubayḥ al-Azdī. Al-Muhallab fought the celebrated wars against the Khārijites and died in 83 at Marw al-Rūdh under ʿAbd al-Malik ibn Marwān. He belongs to the first generation of Basran Successors and saw ʿUmar ibn al-Khaṭṭāb.
 
 “It is also said he was so named” subdivides the third explanation; it is not a fourth. The kunya is preferred either because it uniquely identifies him and his name would confuse; or both identify him equally and the kunya was chosen though the name was possible; or for a subtle point: to signify that he belongs to Hell, either simply or with mockery. The author of al-Miftāḥ indicates the first explanation and the first version of the third.
 
-Ibn Kathīr reads Lahb with quiescent hāʾ; the others with fatḥa. Abū l-Baqāʾ calls them two dialectal forms. Mā’s accusative position is as an absolute object: “What benefit?” Abū l-Baqāʾ gives the two interpretations and says it cannot mean “that which.” The author is reported to have said: māl is general; Bedouins use it of camels, while their landed notables use it of an estate.
+Ibn Kathīr reads Lahb with quiescent hāʾ (ه); the others with fatḥa (فَتْحة). Abū l-Baqāʾ calls them two dialectal forms. Mā’s accusative position is as an absolute object: “What benefit?” Abū l-Baqāʾ gives the two interpretations and says it cannot mean “that which.” The author is reported to have said: māl (مال) is general; Bedouins use it of camels, while their landed notables use it of an estate.
+
+K111.03 — Wealth and earnings [IV:814–815]
+
+Mā aghnā (أغنى) is either an interrogative expressing denial, with mā (ما) accusative, or a negation. Wa-mā kasaba is nominative; mā (ما) is either relative, “what he earned,” or converts the clause into a verbal noun, “his earning.” His wealth and what he earned through it did not benefit him: capital and profits; or livestock and their offspring and benefits—he owned abundant breeding stock; or inherited wealth and what he acquired himself; or long-held and newly acquired property.
+
+Ibn ʿAbbās explains “what he earned” as his children. Abū Lahab’s sons are said to have brought a dispute before him and begun fighting. He rose to separate them; one pushed him and he fell. Angry, he said, “Take this foul earning away from me!” Hence the Prophet’s saying, “The best of what a man eats is from his earning, and his child is from his earning.” Al-Ḍaḥḥāk explains it as his wealth and evil action, meaning his schemes of hostility against the Messenger. Qatāda takes it as the deeds he thought amounted to something, as in “We turned to whatever deeds they had done” [25:23]. It is related that he said, “If my nephew’s claims are true, I shall ransom myself from it with my wealth and children.”
 
 T111.05 — Livestock, earnings, and the reading [XVI:627]
-On sābiyāʾ [the transcription also writes sāyibāʾ], al-Nihāya says: “The offspring and abundance of livestock; one says a household has sābiyāʾ, plural sawābī. Originally it is the membrane from which the newborn emerges, or the afterbirth.” Some say it is a diptote naming the offspring. Tālid means long-held wealth, opposite to newly acquired ṭārif. Abū Dāwūd transmitted “the best of what a man eats” from ʿĀʾisha. The reading sa-yaṣlā with fatḥa is the well-known one; the reading with ḍamma is noncanonical.
+
+On sābiyāʾ (سابياء) [the transcription also writes sāyibāʾ (سايباء)], al-Nihāya says: “The offspring and abundance of livestock; one says a household has sābiyāʾ (سابياء), plural sawābī (سوابي). Originally it is the membrane from which the newborn emerges, or the afterbirth.” Some say it is a diptote naming the offspring. Tālid means long-held wealth, opposite to newly acquired ṭārif (طارف). Abū Dāwūd transmitted “the best of what a man eats” from ʿĀʾisha. The reading sa-yaṣlā (سيصلى) with fatḥa (فَتْحة) is the well-known one; the reading with ḍamma (ضَمّة) is noncanonical.
+
+K111.04 — His wife and the firewood [IV:815]
+
+Sa-yaṣlā (لا) is read with fatḥa (فَتْحة) on yāʾ (ي) and also with ḍamma (ضَمّة), in both lightened and doubled forms. Sīn expresses threat: it will inevitably occur, however delayed. His wife is Umm Jamīl daughter of Ḥarb, Abū Sufyān’s sister. She carried bundles of thorns, prickles and saʿdān (سعدان) and scattered them at night on the Messenger’s path. Or she went about carrying tales. A malicious gossip who corrupts relations is said to “carry firewood among them”: he kindles their hostility and causes evil. The poet says:
+“A fair woman never found upon a blameworthy course,
+nor walking among the tribe with damp firewood.”
+The wood is called damp to suggest smoke, an additional evil.
+
+“His wife” is nominative, conjoined to the pronoun in sa-yaṣlā (سيصلى): he and his wife will burn; “about her neck” then expresses a circumstance. Or “his wife” is the subject and “about her neck” its predicate. “Carrier of firewood” is also read accusative as abuse. I prefer this reading: whoever loves reviling Umm Jamīl has approached the Messenger through something fine (jamīl). Ḥammālatun li-l-ḥaṭab (للحطب) and ḥammālatan (حمّالةً) li-l-ḥaṭab (للحطب) are also read, with tanwīn (تنوين) and nominative or accusative. Wa-murayʾatuhu, “and his little wife,” is read as a diminutive.
 
 T111.06 — The woman and damp wood [XVI:628]
+
 “Never hunted” means never found: she is likened to an oryx and its description applied to her. Lāʾima means something blameworthy: she was never found pursuing a blameworthy quality. The poet praises her honour. Al-khaṭar al-raṭb is also transmitted: damp wood used to make an enclosure. The meaning is that she did not go among people carrying tales and instilling hostility.
 
-On smoke as an additional evil: he did not merely make it wood, but damp wood, an intensifying completion (īghāl and tatmīm) for hyperbole. Imruʾ al-Qays says:
+On smoke as an additional evil: he did not merely make it wood, but damp wood, an intensifying completion (īghāl (إيغال) and tatmīm (تتميم)) for hyperbole. Imruʾ al-Qays says:
 “I bore a Rudaynī spear whose point was like
 the brilliance of a flame unmixed with smoke.”
-ʿĀṣim reads ḥammālata l-ḥaṭab accusative; the others nominative.
+ʿĀṣim reads ḥammālata l-ḥaṭab (حمّالةَ الحطب) accusative; the others nominative.
+
+K111.05 — The rope, the taunt, and punishment [IV:815–817]
+
+Masad is tightly twisted cord, whether palm fibre, leather, or another material. The poet says, “And a rope tightly twisted from she-camels.” A man mamsūd (ممسود) in build is firmly knit. Thus she has a twisted rope about her neck, carrying that bundle of thorns and fastening it about her neck, as wood-gatherers do. This debases and belittles her, depicting her as one of the serving-women who gather wood, to anger both her and her husband despite their house of honour and their wealth and prosperity.
+
+Someone taunted al-Faḍl ibn al-ʿAbbās ibn ʿUtba ibn Abī Lahab with “the carrier of firewood.” He replied:
+“Why have you turned to insulting and diminishing me?
+What reproach is there in the carrier of firewood?
+A radiant woman, whose broad blaze shone in glory,
+offspring of an elder of profound ancestral distinction.”
+
+Or the meaning is that in Hell she will appear as she did when carrying the thorn-bundle: always bearing a bundle of hellfire wood from zaqqūm (زقّوم) or ḍarīʿ (ضريع), with a rope twisted from the Fire’s chains about her neck. Every criminal is punished in a manner corresponding to his crime.
+
+From God’s Messenger: “Whoever recites Sūrat Tabbat, I hope God will not place him and Abū Lahab together in one abode.”
 
 T111.07 — The twisted camel-hide rope [XVI:629]
+
 The verse “And a rope tightly twisted from she-camels” continues, according to al-Zajjāj:
 “Reddish-white, choice, with marrow approaching maturity.”
-Al-Muṭliʿ has “neither old she-camels nor young ones of the ḥiqqa age.” Umirra means twisted. Ayāniq is the plural of aynuq, itself a plural of nāqa: the cord is made from their hides. Ṣuhb qualifies ayāniq. An aṣhab camel has white mingled with red. Rāhiq is borrowed from a boy approaching maturity. Anyāb is the plural of nāb [an old she-camel]. The rope is made neither from a very young nor an old animal’s hide, but from a strong young adult’s.
+Al-Muṭliʿ has “neither old she-camels nor young ones of the ḥiqqa (حِقّة) age.” Umirra means twisted. Ayāniq is the plural of aynuq, itself a plural of nāqa (ناقة): the cord is made from their hides. Ṣuhb qualifies ayāniq (أيانق). An aṣhab (أصهب) camel has white mingled with red. Rāhiq is borrowed from a boy approaching maturity. Anyāb is the plural of nāb (ناب) [an old she-camel]. The rope is made neither from a very young nor an old animal’s hide, but from a strong young adult’s.
 
-On “firmly knit,” al-Jawharī gives “a girl of well-knit build.” Mawāhin is plural of māhina: mahna, with fatḥa on mīm, is service; māhin is a servant.
+On “firmly knit,” al-Jawharī gives “a girl of well-knit build.” Mawāhin is plural of māhina (ماهنة): mahna, with fatḥa (فَتْحة) on mīm (م), is service; māhin (ماهن) is a servant.
 
 T111.08 — Anger, the poem, and final syntax [XVI:630–631]
-Maʿiḍtu and imtaʿaḍtu mean I became angry and found something distressing. In “what did you intend toward insulting me,” aradta includes the meaning of turning toward, and therefore takes ilā. A shādikha is a horse’s broad white blaze extending from forelock to nose without touching the eyes, a feature of noble horses. “The elder” is taken as ʿAbd al-Muṭṭalib—but this is not correct, since she is Ḥarb’s daughter and Abū Sufyān’s sister, as stated.
 
-On the interpretation that her appearance in Hell matches her former appearance: “and his wife, carrier of firewood” is then a circumstantial clause referring to the pronoun in sa-yaṣlā, or “his wife” is conjoined to that pronoun. On the earlier interpretation it cannot be a circumstantial clause, but one sentence is conjoined to another. Abū l-Baqāʾ says: “Imraʾatuhu has two analyses: a subject with ḥammāla as predicate; or conjoined to the pronoun in sa-yaṣlā. On the latter, ḥammāla is either an adjective for the preceding noun or stands for ‘while she is a carrier.’”
+Maʿiḍtu and imtaʿaḍtu (امتعضت) mean I became angry and found something distressing. In “what did you intend toward insulting me,” aradta (أردت) includes the meaning of turning toward, and therefore takes ilā (إلى). A shādikha (شادخة) is a horse’s broad white blaze extending from forelock to nose without touching the eyes, a feature of noble horses. “The elder” is taken as ʿAbd al-Muṭṭalib—but this is not correct, since she is Ḥarb’s daughter and Abū Sufyān’s sister, as stated.
+
+On the interpretation that her appearance in Hell matches her former appearance: “and his wife, carrier of firewood” is then a circumstantial clause referring to the pronoun in sa-yaṣlā (سيصلى), or “his wife” is conjoined to that pronoun. On the earlier interpretation it cannot be a circumstantial clause, but one sentence is conjoined to another. Abū l-Baqāʾ says: “Imraʾatuhu has two analyses: a subject with ḥammāla (حمّالة) as predicate; or conjoined to the pronoun in sa-yaṣlā (سيصلى). On the latter, ḥammāla (حمّالة) is either an adjective for the preceding noun or stands for ‘while she is a carrier.’”
 
 End of the sūrah.
+
+al-Masad · source and review notes · inherited record
+
+INHERITED C06 RECORD. Earlier scan claims have not been independently reconfirmed in this pass. Current corrections supersede provisional renderings below; consult the C07 review register.
 
 REVIEW FLAGS
 T111-U1: The transmitted camel verse has rāhiq; the modern apparatus records zāhiq. The author’s own gloss explains rāhiq, retained here. His attribution of the completion to al-Zajjāj is preserved, though the editor disputes it.
 T111-U2: The printed transition الأصهب before the al-Muṭliʿ quotation is awkward; no missing prose has been invented. The explanation of aṣhab is fully translated where it occurs.
+
+
+Tanzil Quran Text
+Copyright (C) 2007-2021 Tanzil Project
+License: Creative Commons Attribution 3.0
+
+This copy of the Quran text is carefully produced, highly
+verified and continuously monitored by a group of specialists
+in Tanzil Project.
+
+TERMS OF USE:
+
+- Permission is granted to copy and distribute verbatim copies
+  of this text, but CHANGING IT IS NOT ALLOWED.
+
+- This Quran text can be used in any website or application,
+  provided that its source (Tanzil Project) is clearly indicated,
+  and a link is made to tanzil.net to enable users to keep
+  track of changes.
+
+- This copyright notice shall be included in all verbatim copies
+  of the text, and shall be reproduced appropriately in all files
+  derived from or containing substantial portion of this text.
+
+Please check updates at: http://tanzil.net/updates/
