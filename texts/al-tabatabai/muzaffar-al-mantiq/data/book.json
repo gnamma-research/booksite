@@ -7,11 +7,11 @@
   "status": "working-translation",
   "editorialStatus": {
     "translationComplete": false,
-    "translatedSection": "Introduction 11; Book I 11; Book II 17; Book III 14; Book IV 22; all selected working translations, Books V–VI not translated.",
-    "translatedPassages": 75,
+    "translatedSection": "Intro 11, Book I 11, Book II 17, Book III 14, Book IV 25 selected source-paired readings to printed p.159; Books V and VI have no bilingual corpus.",
+    "translatedPassages": 78,
     "sourceBasis": "1402 AH Dār al-Taʿāruf Rafed searchable Arabic; the separately identified 1968 institutional scan remains to be independently collated.",
     "englishComparator": "Carney's 75-page English PDF supplied by the user ends without the complete Book III section on definitions. English here is independently translated from Arabic.",
-    "editionNotice": "75 selected Arabic–English readings, including Book IV modal exercises and connected/disjunctive logic through 1402 printed p.156. Digital text not full early facsimile, all exercises/figures across book incomplete."
+    "editionNotice": "78 selected Arabic–English working readings, now through end-of-first-chapter Book IV propositions and exercises (printed p.159); closing schematic chart not independently transcribed. The remaining Book IV logical laws and all Books V–VI are untranslated."
   },
   "sources": [
     {
@@ -1753,6 +1753,77 @@
         "page": "155–156",
         "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
         "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/186?lang=ar"
+      }
+    },
+    {
+      "id": "M-C-23",
+      "stage": "C",
+      "chapter": 23,
+      "title": "Conditionals made of conditionals: nested and mixed propositions",
+      "arabicTitle": "تنبيه أول — تأليف الشرطيات",
+      "arabic": "تنبيه\n\nقد يغفل المبتدئ عن بعض القضايا فلا يسهل عليه إلحاقها بقسمها من أنواع القضايا، لا سيما في التعبيرات الدارجة في ألسنة المؤلفين التي لم توضع بصورة فنية مضبوطة كما تقتضيها قواعد المنطق. وهذه الغفلة قد توقعه في الغلط عند الاستدلال أو لا يهتدي إلى وجه الاستدلال في كلام غيره. وتكثر هذه الغفلة في الشرطيات.\n\nفلذلك وجب التنبيه على أمور تنفع في هذا الباب نرجو أن يستعين بها المبتدئ.\n\n١ ـ تأليف الشرطيات\n\nإنّ الشرطية تتألف من طرفين هما قضيتان بالأصل، والمنفصلة بالخصوص قد تتألف من ثلاثة أطراف فأكثر. فالطرفان أو الأطراف التي هي القضايا بالأصل قد تكون من الحمليات أو من المتصلات أو من المنفصلات أو من المختلفات، بأن تتألف المتصلة مثلاً من حملية ومتصلة. وترتقي أقسام تأليف الشرطيات إلى وجوه كثيرة لا فائدة في إحصائها. وعلى الطالب أن يلاحظ ذلك بنفسه ولا يغفل عنه، فقد ترد عليه شرطية مؤلفة من متصلة ومنفصلة فيظن أنها أكثر من قضية. وللتوضيح نذكر بعض الوجوه وأمثلتها:\n\nفمثلاً قد تتألف المتصلة من حملية ومتصلة نحو: «إن كان العلم سبباً للسعادة، فإن كان الإنسان عالماً كان سعيداً»؛ فإنّ المقدم في هذه القضية حملية، والتالي متصلة، وهو «إن كان الإنسان عالماً كان سعيداً».\n\nوقد تتألف المتصلة من حملية ومنفصلة نحو: «إذا كان اللفظ مفرداً فإمّا أن يكون اسماً أو فعلاً أو حرفاً»؛ فالمقدم حملية والتالي منفصلة ذات ثلاثة أطراف.\n\nوقد تتألف المنفصلة من حملية ومتصلة نحو: «إمّا أن لا تكون حيلولة الأرض مسبباً لخسوف القمر، أو إذا حالت الأرض بين القمر والشمس كان القمر منخسفاً».\n\nوهكذا قد تتألف المتصلة أو المنفصلة من متصلتين أو منفصلتين أو متصلة ومنفصلة، ويطول ذكر أمثلتها.\n\nثم إنّ الشرطية التي تكون طرفاً في شرطية أيضاً تأليفها يكون من الحمليات أو الشرطيات أو المختلفات، وهكذا فتنبه لذلك.",
+      "english": "**First note: constructing conditionals.** Ordinary writing frequently omits the explicit logical markers that would reveal a proposition's formal type. Beginners may therefore misclassify arguments or fail to see their inferential force, especially with conditionals. Muẓaffar directs the reader to reconstruct their actual structure.\n\nEvery conditional has two sides that, taken on their own, were propositions. A disjunctive proposition may have three or more alternatives. The component propositions may themselves be categorical, connected conditional, disjunctive, or a mixture. There is no useful upper limit to the arrangements.\n\nA connected conditional can have a **categorical antecedent and connected-conditional consequent**: “If knowledge causes happiness, then if a human is learned, that person is happy.” The outer antecedent is “knowledge causes happiness,” while the outer consequent is itself the full conditional concerning a learned human.\n\nA connected conditional may also have a **categorical antecedent and disjunctive consequent**: “If an expression is simple, it is either a noun, a verb, or a particle.” The consequent here consists of three mutually distinguished alternatives.\n\nA disjunctive proposition can combine a **categorical alternative and a conditional alternative**: “Either the earth's interposition is not a cause of the lunar eclipse, or, if the earth intervenes between moon and sun, the moon is eclipsed.” The latter is an entire conditional serving as one side of the disjunction; Muẓaffar's astronomical example is quoted as an example of structure, not independently endorsed geometry.\n\nBy repeating this operation, one obtains connected conditionals made of two connected conditionals, two disjunctives, or mixed components; similarly for disjunctive propositions. **A conditional nested within another is still one component of the outer proposition**, not a separate unrelated outer proposition. A correct reconstruction must respect the scope and hierarchy of every connective.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Authorial prose from 1402 Rafed printed pp.156–157, with normalized punctuation; no independent 1968 scanned-page collation."
+        },
+        {
+          "type": "Syntax note",
+          "text": "Do not flatten “if A, then (if B, then C)” into two unrelated clauses or substitute a different formula without proving equivalence."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH authorial Arabic digital text; normalized, not independently image-collated",
+        "page": "156–157",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-C-24",
+      "stage": "C",
+      "chapter": 24,
+      "title": "Displaced propositions and reconstructing their logical form",
+      "arabicTitle": "تنبيه ثانٍ — المنحرفات والتطبيقات",
+      "arabic": "٢ ـ المنحرفات\n\nومن الموهمات في القضايا انحراف القضية عن استعمالها الطبيعي ووضعها المنطقي، فيشتبه حالها بأنها من أي نوع، ومثل هذه تسمّى «منحرفة».\n\nوهذا الانحراف قد يكون في الحملية كما لو اقترن سورها بالمحمول مع أن الاستعمال الطبيعي أن يقترن بالموضوع، كقولهم: «الإنسان بعض الحيوان» أو «الإنسان ليس كل الحيوان». وحق الاستعمال فيهما أن يقال: «بعض الحيوان إنسان» و«ليس كل حيوان إنساناً».\n\nوقد يكون الانحراف في الشرطية كما لو خلت عن أدوات الاتصال والعناد، فتكون بصورة حملية وهي في قوة الشرطية، نحو: «لا تكون الشمس طالعة أو يكون النهار موجوداً»، فهي إمّا في قوة المتصلة وهي قولنا: «كلما كانت الشمس طالعة كان النهار موجوداً»، وإمّا في قوة المنفصلة وهي قولنا: «إمّا أن لا تكون الشمس طالعة وإمّا أن يكون النهار موجوداً».\n\nونحو: «ليس يكون النهار موجوداً إلا والشمس طالعة» وهي أيضاً في قوة المتصلة أو المنفصلة المتقدمتين.\n\nونحو: «لا يجتمع المال إلا من شح أو حرام» فإنها في قوة المنفصلة وهي قولنا: «إمّا أن يجتمع المال من شح أو من حرام»، أو في قوة المتصلة وهي قولنا: «إن اجتمع المال فاجتماعه إمّا من شح أو من حرام». وهذه متصلة مقدمها حملية وتاليها منفصلة بالأصل.\n\nوعلى الطالب أن يلاحظ ويدقق القضايا المستعملة في العلوم، فإنها كثيراً ما تكون منحرفة عن أصلها فيغفل عنها، وليستعمل فطنته في إرجاعها إلى أصلها.\n\nتطبيقات\n\n١ ـ كيف ترد هذه القضية إلى أصلها «ليس للإنسان إلا ما سعى»؟\nالجواب: إنّ هذه قضية فيها حصر فهي تنحلّ إلى حمليتين موجبة وسالبة فهي منحرفة. والحمليتان هما «كل إنسان له نتيجة سعيه» و«ليس للإنسان ما لم يسع إليه».\n\n٢ ـ من أي القضايا قوله «أزرى بنفسه من استشعر الطمع»؟\nالجواب: إنها قضية منحرفة عن متصلة، وهي في قوة قولنا «كلما استشعر المرء الطمع أزرى بنفسه».\n\n٣ ـ كيف ترد هذه القضية إلى أصلها: «ما خاب من تمسك بك»؟\nالجواب: إنها منحرفة عن حملية موجبة كلية وهي: «كل من تمسك بك لا يخيب».",
+      "english": "**Second note: propositions displaced from their normal form.** A proposition may depart from its most transparent logical syntax, so that its category becomes difficult to recognize. Muẓaffar calls such a proposition *munḥarifa*, “displaced” or “deviant” in its expression, without implying that its meaning is inherently false.\n\nA categorical can be displaced by attaching the quantifier to the **predicate** instead of the **subject**: “Human is part of animal,” or “Human is not the whole of animal.” He restores the normal categorical arrangement as “Some animals are humans” and “Not every animal is human,” respectively. The reconstructions display the intended quantity of the subject.\n\nA conditional may omit the usual signs of entailment or incompatibility and resemble a categorical. The sentence “Either the sun is not shining or it is daytime” can express a connected form (“Whenever the sun shines, it is daytime”) or a disjunctive form (“Either the sun is not shining or it is daytime”), depending on the intended relation. Likewise, “Daytime does not occur without the sun shining” can express one of the foregoing structures.\n\nThe moralizing expression “Wealth accumulates only through avarice or illicit gain” can be analysed either as a disjunction of the two stated sources, or as a connected conditional: “If wealth accumulates, its accumulation results from either avarice or illicit gain.” In the latter reconstruction the antecedent is categorical while the consequent is disjunctive. The content is the author's example, not an independent claim about the causes of wealth.\n\nMuẓaffar applies the procedure to three further statements.\n\n**First**, “A human has only what he has striven for” expresses restriction and resolves into an affirmative and a negative categorical: what a human has comes from the results of effort, and what a person has not striven for is denied in the indicated respect.\n\n**Second**, “Whoever becomes possessed by greed has debased himself” is an implicit connected conditional: “Whenever a person becomes possessed by greed, he has debased himself.”\n\n**Third**, “One who clung to you has not been disappointed” is a displaced **universal affirmative with negative predicate content**: “Every person who clings to you does not fail.” Its status as affirmative is at the level of the principal copular assertion, not the absence of the word *not* in its predicate.\n\nThe underlying rule is to recover **quantity, quality, connective, and scope** before drawing inferences; surface grammar alone can obscure the proposition's structure.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Authorial examples from the 1402 Rafed text printed pp.157–158; spelling/punctuation normalized; no independent early facsimile comparison."
+        },
+        {
+          "type": "Technical distinction",
+          "text": "The analysis of 'Every S is non-P' versus 'Not every S is P' depends on the earlier distinction between complemented terms and negated predication; this passage preserves the author's own source transformations."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH authorial Arabic digital text; normalized, not independently image-collated",
+        "page": "157–158",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-C-25",
+      "stage": "C",
+      "chapter": 25,
+      "title": "Four authorial exercises in classifying and restoring conditionals",
+      "arabicTitle": "تمرينات على الشرطيات والمنحرفات",
+      "arabic": "تمرينات\n\n١ ـ لو قال القائل: «كلما كان الحيوان مجترّاً كان مشقوق الظلف» أو قال: «كلما كان الإنسان قصيراً كان ذكياً»، فماذا نعدّ هاتين القضيتين من اللزوميات أو من الاتفاقيات؟\n\n٢ ـ بيّن نوع هذه القضايا وأرجع المنحرفة إلى أصلها:\nأ ـ «إذا ازدحم الجواب خفي الصواب».\nب ـ «إذا كثرت المقدرة قلت الشهوة».\nج ـ «من نال استطال».\nد ـ «رضي بالذل من كشف عن ضرّه».\nهـ ـ «إنما يخشى الله من عباده العلماء».\n\n٣ ـ قولهم: «الدهر يومان، يوم لك ويوم عليك»، من أي أنواع القضايا؟ وإذا كانت منحرفة فأرجعها إلى أصلها وبيّن نوعها.\n\n٤ ـ من أي القضايا قول عليّ عليه السلام: «لا تخلو الأرض من قائم لله بحجّة إمّا ظاهراً مشهوراً أو خائفاً مغموراً»؟ وإذا كانت منحرفة فأرجعها إلى أصلها وبيّن نوعها.",
+      "english": "**Author's exercises at the end of the initial treatment of propositions.** Answers have deliberately not been supplied: the author intends independent logical analysis.\n\n1. Classify two connected conditionals as intrinsically necessary (*luzūmiyya*) or coincidental (*ittifāqiyya*): “Whenever an animal ruminates, it has a split hoof”; and “Whenever a human being is short, that person is intelligent.” The exercise tests whether a constant correlation implies an essential nexus.\n\n2. Identify the forms of these statements and restore any displaced forms: (a) “When answers crowd one another, correctness becomes hidden”; (b) “When power or capacity increases, desire diminishes”; (c) “Whoever gains becomes proud”; (d) “Whoever reveals his harm has accepted humiliation”; (e) “Only those of His servants who possess knowledge fear God.” Preserve the original special restriction in the final Qurʾānic example rather than turning it into an unrestricted affirmative.\n\n3. Identify the logical kind of “Time has two days: a day for you and a day against you.” If its expression is displaced, reconstruct the explicitly qualified form and give its type.\n\n4. Identify the logical kind of the attribution to ʿAlī: “The earth is never without someone who stands as God's proof, either well known and openly visible or fearful and concealed.” If it is a displaced proposition, reconstruct it in standard form and classify its disjunction.\n\nThis ends the original first-chapter material on propositions in the 1402 searchable witness. The final *summary chart* appearing as an image is not independently transcribed or certified in this reader.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Working original Arabic with all four end-of-chapter exercise questions, including the five lettered subitems, copied from 1402 digitally presented pp.159. The closing summary is an image in this edition and is not part of this textual unit; 1968 scanned print and transmitted attribution in question 4 not independently verified."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH authorial Arabic digital text; normalized, not independently image-collated",
+        "page": "159",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
       }
     }
   ],
