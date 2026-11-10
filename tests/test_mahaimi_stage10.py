@@ -48,6 +48,12 @@ reverse = [(e["id"], l["target_id"]) for e in commentary for l in e.get("matn_li
 assert len(reverse) == 64 and all(to in ids for _, to in reverse)
 assert set((b, a) for a, b in links) == set(reverse), "non-reciprocal contextual links"
 
+lemma = [(e['id'], l['target_id']) for e in DATA if e.get('edition_layer') == 'qunawi_original_proof' for l in e.get('concordance_links', [])]
+reverse_lemma = [(e['id'], l['target_id']) for e in commentary for l in e.get('appendix_links', [])]
+assert len(lemma) == len(reverse_lemma) == 19
+assert set((b,a) for a,b in lemma) == set(reverse_lemma)
+assert all(target in ids for _, target in lemma + reverse_lemma)
+assert all(l['match_score'] >= 15 for e in DATA for l in e.get('appendix_links', [])), 'low-confidence appendix link'
 proofs = sorted(e["printed_pages"][0] for e in DATA if e.get("edition_layer") == "qunawi_original_proof")
 assert proofs == [235, 236, 237, 238, 267]
 assert len(proofs) == len(set(proofs)), 'duplicate page proof'
@@ -60,5 +66,6 @@ assert record["cumulative_printed_pages_count"] == 222
 assert record["commentary_arabic_imported_pages"] == 142
 assert record["original_qn_online_excerpt_count"] == 47
 assert record['original_2008_online_proof_pages'] == [235, 236, 237, 238, 267]
+assert record['appendix_direct_lemma_link_count'] == 19
 assert record["manuscript_collation_completed_pages"] == 0
 print("PASS: Stage11 coverage, source distinctions, manifest, concordance, and reader JSON")
