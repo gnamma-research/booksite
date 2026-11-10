@@ -1,6 +1,6 @@
 # GNAMMA Ḥikma — Stage VIII cumulative handoff (10 November 2026)
 
-**Repository:** `gnamma-research/booksite`. **Edition status:** working Arabic transcription and English translation, with explicitly graded textual decisions; no specialist-certified critical edition is claimed. **Publication checkpoint:** remote reader CI, final PDF verification, and publication remain **PENDING**. Record the verified commit, PR, merge SHA, workflow runs, and PDF manifest below when those steps finish.
+**Continuation key:** `nihayat4`. **Repository:** `gnamma-research/booksite`. **Edition status:** working Arabic transcription and English translation, with explicitly graded textual decisions; no specialist-certified critical edition is claimed. **Publication checkpoint:** **published and verified**. The merged source, corrected nine-PDF release, 51 browser checks, 23 sampled PDF-page inspections, and exact comparisons of 24 live files are recorded in the [release-verification report](hikma-release-verification-2026-11-10-stage8.json).
 
 This stage continues the saved [Stage VII handoff](hikma-collation-handoff-2026-11-10-batch-7.md), which links the earlier stages. Preserve that evidence chain. The present handoff supersedes Stage VII's cumulative counts, its unresolved status for the Nihāya IX.9 cross-reference, its Muẓaffar continuation boundaries, and its former description of the Carney comparator. Earlier source limitations remain in force unless an exact new check is identified here.
 
@@ -16,6 +16,8 @@ This stage continues the saved [Stage VII handoff](hikma-collation-handoff-2026-
 | Nihāya complete independent external chapter comparisons | **1/136** | **IX.9 alone** has a complete comparison with the early printed facsimile and a complete reading of the later edited digital chapter. **135 units** still require this grade of external comparison. |
 | Nihāya partial later-print checks | **13** recorded targets | Nine inherited plus VI.5, IX.11, IX.12, and X.2 in this stage. These remain phrase-level checks, separate from the full IX.9 comparison. |
 | Independent specialist certification | **0** | No external human specialist sign-off is documented for any unit. |
+
+The reader groups the **348 stored units into 347 navigation sections**: Muẓaffar’s M-K-01 and M-K-02 share stage K, chapter 1, and remain two passages within one section. The navigation count does not imply a missing unit.
 
 The [cross-book review register](cross-book-review-register-2026-11-07.json), [Nihāya triage register](nihaya-english-collation-triage-2026-11-09.json), and [Muẓaffar authorial map](../muzaffar-al-mantiq/data/authorial-map.json) are the machine-readable records. A false whole-work `independentArabicCollation` flag must not erase IX.9's separate complete-chapter evidence; conversely, that one chapter must not be generalized to the other 135 units.
 
@@ -71,7 +73,7 @@ The new chapter-II span does **not** fill earlier omissions in Book IV. The olde
 
 ### Carney comparator correction
 
-The user-provided **75-page Carney English PDF extends through Book V**, with sampled final substantive pages on **induction and analogy**. The earlier metadata saying that it ended before Book III was false and has been corrected in the [Muẓaffar source metadata](../muzaffar-al-mantiq/data/book.json). It remains a partial comparator whose complete continuous coverage is not established. The new English in this project is independently rendered from the Arabic; the comparator is not republished.
+The user-provided **75-page Carney English PDF is a partial, noncontinuous comparator extending through Book V**. The [direct coverage check](muzaffar-carney-comparator-coverage-2026-11-10.json) inspected thirteen pages: pp.37–38 move directly from universals/species into the Book V inference preface, and pp.70–74 cover the closing inference material, induction, and analogy; p.75 is blank. The earlier metadata saying that it ended before Book III was false and has been corrected in the [Muẓaffar source metadata](../muzaffar-al-mantiq/data/book.json). Neither complete six-book coverage nor a comprehensive clause-by-clause comparison is claimed. The new English in this project is independently rendered from the Arabic; the comparator is not republished.
 
 ## Nihāya: all 136 local readings completed
 
@@ -121,27 +123,38 @@ Thus **two** changes clarify the same stored base, and **two** follow disclosed 
 
 The shared [rich-text renderer](../assets/hikma-rich-text.js) and [stylesheet](../assets/hikma-rich-text.css) serve the individual readers, combined reader, and [A4 builder](../tools/build-pdfs.cjs). They render the source square and the aligned English table from escaped data. Table cells have semantic headers, and the mobile table scrolls within its own container. Print study layouts stack the two languages for the table passage so that its five columns use the page width. Source transcription and editorial qualification remain in the prose; inline footnote markers still attach to the final prose paragraph when a figure follows it.
 
-Local structural checks passed for the four-node/six-relation bilingual SVG, the five-column/seven-row table, complement signs, escaped hostile strings, malformed-row retention, ordinary prose/emphasis, and the three PDF HTML modes. JavaScript syntax and whitespace checks passed. These are **not** claims of final rendered-page or published-PDF verification.
+Local structural checks passed for the four-node/six-relation bilingual SVG, the five-column/seven-row table, complement signs, escaped hostile strings, malformed-row retention, ordinary prose/emphasis, and the three PDF HTML modes. JavaScript syntax and whitespace checks passed. Final rendered-page and published-file verification is recorded separately below.
 
-The reader workflow checks Chromium/WebKit, direct and combined readers, and mobile containment. The PDF workflow watches both shared helper files and includes them in its stale-build publication guard. All **nine** A4 editions must be regenerated from the final committed source; verify manifest source and supplement hashes, selectable text, Arabic shaping, table/diagram legibility, and the 101/111/136 source counts before claiming publication.
+The reader workflow checks Chromium/WebKit, direct and combined readers, and mobile containment. The PDF workflow watches both shared helper files and includes them in its stale-build publication guard. All **nine** A4 editions were regenerated from the final committed source. Their manifest source/supplement hashes, byte sizes, SHA256 values, selectable text, all 2,239 page dimensions, and 101/111/136 paired-unit counts passed. Targeted visual inspection covered **23 pages across all nine editions**, with no observed clipping, overlap, shaping defects, or isolated chapter labels in those samples. This is sampled visual QA, not an assertion that every page received manual inspection.
 
-| Release evidence | Status / record to complete |
+| Release evidence | Verified record |
 | --- | --- |
-| Source commit / working branch | **PENDING — record verified identifiers** |
-| PR and merge SHA | **PENDING** |
-| Reader CI run and artifact review | **PENDING remote verification** |
-| Nine-PDF build, checksums, and rendered-page inspection | **PENDING** |
-| Published reader and current PDF manifest | **PENDING** |
+| Source and runner repair | Source `4a3d35ada523a513ebcd63a4861ef9afaab28ae4`; Ubuntu 24.04 runner repair `0b1d03da9235c7236159c971dcbe74d0c67b09c6`. |
+| PR and merge | [PR #286](https://github.com/gnamma-research/booksite/pull/286), merged as `93353860a31e528d88a14e7125c99c7fdc97731a`. |
+| Final PDF heading repair | `91d5ccbddb51812965deac3a76eb8cc13b6293cb`; keeps the chapter label and both titles together. |
+| Final reader CI | [Run 42847941422](https://github.com/gnamma-research/booksite/actions/runs/42847941422), on `91d5ccb`: **51 passed**, Chromium 26 and WebKit 25. |
+| PDF generation and publication | [Run 42847941362](https://github.com/gnamma-research/booksite/actions/runs/42847941362), successful; nine-PDF publication `73cb227ee1d2dd8ae57d32e8b73e3a9d438851dd`. |
+| Final layout and content checks | All nine PDF hashes/source hashes and A4 dimensions passed; **23 final pages** visually inspected, including both square renderings, the complete English table, Arabic source transcription, IX.9/X.2 apparatus, and repaired chapter transitions. |
+| Public deployment | [Pages run 42848144933](https://github.com/gnamma-research/booksite/actions/runs/42848144933), successful at **15:50:33 UTC, 10 November 2026**. |
+| Live reader and downloads | [Combined reader](https://gnamma-research.github.io/booksite/texts/al-tabatabai/) and [PDF manifest](https://gnamma-research.github.io/booksite/texts/al-tabatabai/editions/manifest.json): **24/24 live-file hashes matched**, including all nine PDFs, four reader entrypoints, book data, apparatus, map, registers, and shared assets. |
+
+| Final PDF pages | Reading | Study | Reference |
+| --- | ---: | ---: | ---: |
+| Muẓaffar | 110 | 235 | 169 |
+| Bidāya | 131 | 223 | 146 |
+| Nihāya | 289 | 562 | 374 |
+
+The first PDF publication was superseded after visual QA found isolated small chapter labels at Nihāya reading pp.202–203. The shared PDF header rule was repaired, all nine editions were rebuilt, and final pp.202–204 now keep the chapter labels with their titles. Browser screenshot review covered twelve earlier screenshots with the same final reader code; the saved screenshots show the relation table, while the square received automated browser checks and direct English/Arabic PDF visual inspection. The [release report](hikma-release-verification-2026-11-10-stage8.json) preserves these distinct verification scopes.
 
 ## Next precise work
 
 1. Continue original Muẓaffar with **M-V-02**, the **definition of syllogism at Rafed displayed p.200**: [next source locus](https://lib.rafed.net/view.php?b_id=1604&page=200&type=c_fbook). M-V-01 already contains the complete preface through p.199. Read the remaining Book V prose and exercises consecutively, then Book VI; do not infer completeness from mapped headings.
 2. Return to earlier Muẓaffar omissions and image gaps. Preserve the unresolved both-terms table complement, the retained **في النقض** issue, M-C-17's polarity problem, M-K-08's formula, and M-K-14's normalization until exact evidence supports a recorded decision.
 3. For Nihāya, undertake complete external comparisons for the remaining **135 units**. Preserve the distinction between early facsimile, later edited digital print, internal conjecture, and manuscript evidence. Separately check quoted source works and seek independent specialist review.
-4. Finish the pending remote reader and PDF verification, attach the release evidence above, and reconcile all current manifests and registers before announcing publication.
+4. Optional reader polish: keep the wide table caption visible while its cells scroll, add a horizontal-scroll cue, and remove the duplicated introduction wording in the combined sidebar. These cosmetic issues do not remove passages or invalidate the completed source/PDF verification.
 
 **Cumulative checkpoint:** 348 paired working units; 136/136 complete local Nihāya readings; one complete external Nihāya chapter comparison; zero specialist certifications. Muẓaffar now reaches the end of Book IV's new continuous chapter-II span and the Book V preface, with earlier gaps and the remaining original work still outstanding.
 
 ### Initial release infrastructure repair
 
-The first exact-head Hikma workflow, [run 42843182825](https://github.com/gnamma-research/booksite/actions/runs/42843182825), passed the source audit and JavaScript syntax checks but stopped before browser tests: `ubuntu-latest` resolved to Ubuntu 26.04, which the pinned Playwright 1.58.0 installer does not support. Both Hikma workflows are therefore pinned to `ubuntu-24.04`; source content is unchanged by this repair. A later successful run must be recorded before claiming browser or PDF verification.
+The first exact-head Hikma workflow, [run 42843182825](https://github.com/gnamma-research/booksite/actions/runs/42843182825), passed the source audit and JavaScript syntax checks but stopped before browser tests: `ubuntu-latest` resolved to Ubuntu 26.04, which the pinned Playwright 1.58.0 installer does not support. Both Hikma workflows are therefore pinned to `ubuntu-24.04`; source content is unchanged by this repair. The subsequent final reader and PDF runs listed above passed on Ubuntu 24.04.
