@@ -1,0 +1,37 @@
+name: Daruri applications matrix
+on:
+  push:
+    branches: [daruri-applications-matrix-20261110]
+    paths:
+      - '.github/workflows/daruri-applications-matrix.yml'
+      - 'daruri/applications-matrix*'
+      - 'daruri/qa/applications-matrix*'
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Inspect existing application records and integration points
+        run: |
+          node <<'NODE'
+          const fs=require('fs'),vm=require('vm');
+          const sandbox={window:{},console}; sandbox.globalThis=sandbox;
+          vm.runInNewContext(fs.readFileSync('daruri/edition-r3-20261020.js','utf8'),sandbox);
+          console.log('EXPORTS',Object.keys(sandbox),Object.keys(sandbox.window));
+          const values=[...Object.values(sandbox),...Object.values(sandbox.window)];
+          const book=values.find(x=>x&&Array.isArray(x.apps)&&Array.isArray(x.sections));
+          if(!book)throw Error('Edition export not found');
+          console.log('BOOK_KEYS',Object.keys(book));
+          console.log('APPLICATIONS',JSON.stringify(book.apps));
+          console.log('SECTION_TITLES',JSON.stringify(book.sections.map(s=>({id:s.id,title:s.title,part:s.part}))));
+          const html=fs.readFileSync('daruri/index.html','utf8');
+          for(const term of ['function renderApplications','function appCard','function gnLinkAppRefs','applicationList','function showAppDetail']){
+            const i=html.indexOf(term);console.log('INTEGRATION',term,i,html.slice(Math.max(0,i-200),i+3500));
+          }
+          console.log('DOWNLOAD_BUNDLE_START',fs.readFileSync('daruri/download-bundle.js','utf8').slice(0,14000));
+          NODE
