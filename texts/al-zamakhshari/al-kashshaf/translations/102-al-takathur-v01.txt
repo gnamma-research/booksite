@@ -1,18 +1,43 @@
-SŪRAT AL-TAKĀTHUR (102): RIVALRY IN INCREASE
-Complete first-draft translation of al-Zamakhsharī and al-Ṭībī
-Checkpoint C05 • 27 October 2026
+AL-KASHSHAF / FUTUH AL-GHAYB — C07 REVIEWED
+10 November 2026
 
-Coverage: all eight verses, the complete Kashshāf chapter, and all distinct authorial commentary in Futūḥ al-Ghayb XVI, 558–564. The repeated Kashshāf base text in Ṭībī's edition is represented in its own layer. Modern editorial footnotes are excluded from the authorial translation. Sources: K-DKA IV, 791–793; T-Dubai XVI, 558–564, through working transcriptions. This is a complete first draft; critical review is not complete. Transmitted reports retain their source's attributions without a claim of independent authentication.
+All 277 existing passages have undergone electronic comparison. This is a revised working edition, not a definitive critical edition. Draft coverage: 19 Kashshāf sūrahs, 18 Ṭībī sūrahs and Fātiḥa I:677–686 only. I:687–770 remains untranslated. One Arabic gap, conflicting readings, complete page-image collation and final scholarly approval remain outstanding.
 
-AL-ZAMAKHSHARĪ — AL-KASHSHĀF
+SURAH 102 — al-Takāthur
+
+﴿بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ أَلْهَىٰكُمُ ٱلتَّكَاثُرُ﴾ (102:1)
+Rivalry in worldly increase distracteth you
+
+﴿حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ﴾ (102:2)
+Until ye come to the graves
+
+﴿كَلَّا سَوْفَ تَعْلَمُونَ﴾ (102:3)
+Nay, but ye will come to know
+
+﴿ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ﴾ (102:4)
+Nay, but ye will come to know
+
+﴿كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ﴾ (102:5)
+Nay, would that ye knew (now) with a sure knowledge
+
+﴿لَتَرَوُنَّ ٱلْجَحِيمَ﴾ (102:6)
+For ye will behold hell-fire
+
+﴿ثُمَّ لَتَرَوُنَّهَا عَيْنَ ٱلْيَقِينِ﴾ (102:7)
+Aye, ye will behold it with sure vision
+
+﴿ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ﴾ (102:8)
+Then, on that day, ye will be asked concerning pleasure
 
 K102.01 — Heading and verses
+
 Meccan; eight verses. [K-DKA adds: revealed after al-Kawthar.]
 In the name of God, the All-Merciful, the Merciful.
 “Rivalry in increase has distracted you, until you visited the graves. No indeed! You will come to know. Again, no indeed! You will come to know. No indeed! If only you knew with knowledge of certainty! You will surely see the blazing Fire. Then you will surely see it with the very certainty of sight. Then that day you will surely be questioned about the pleasures you enjoyed.”
 
 K102.02 — Rivalry and the graves
-Alhāhu ʿan kadhā and aqhāhu mean that something occupied him and distracted him from something else. Takāthur is competing in abundance and boasting of it: one group says, “We are more numerous,” and the other says, “We are more numerous.” It is reported that Banū ʿAbd Manāf and Banū Sahm boasted to one another about which was greater in number. Banū ʿAbd Manāf outnumbered them. Banū Sahm said: “Aggression destroyed us in the age of ignorance; count against us both the living and the dead.” Banū Sahm then outnumbered them.
+
+Alhāhu ʿan (عن) kadhā (كذا) and aqhāhu (أقهاه) mean that something occupied him and distracted him from something else. Takāthur is competing in abundance and boasting of it: one group says, “We are more numerous,” and the other says, “We are more numerous.” It is reported that Banū ʿAbd Manāf and Banū Sahm boasted to one another about which was greater in number. Banū ʿAbd Manāf outnumbered them. Banū Sahm said: “Aggression destroyed us in the age of ignorance; count against us both the living and the dead.” Banū Sahm then outnumbered them.
 The meaning is: you competed over the number of the living, and once you exhausted their number, you turned to the graves and competed over the dead. Their proceeding to mention the dead is expressed as visiting the graves, in mockery of them. It is also said that they actually visited the graves, saying, “This is so-and-so's grave; this is so-and-so's grave,” while boasting to one another.
 The meaning is that this distracted you—something that does not concern you and yields you no benefit in this world or the next—from what does concern you: the affairs of religion, which are more important and more deserving of attention than anything else.
 Or He means: rivalry in wealth and children distracted you until you died and were buried. You spent your lives seeking this world, racing toward it and throwing yourselves upon it, until death came while you cared for nothing else. It distracted you from what had a greater claim upon you: striving for your final outcome and working for your hereafter. Visiting the graves is an expression for death. A poet said:
@@ -21,65 +46,101 @@ will secure ten [nights of exclusive companionship], unless he visits the grave.
 Another said:
 “Abū Mālik visited the graves,
 and became the meanest of their visitors.”
-Ibn ʿAbbās read a-alhākum, as a question whose purpose is to elicit acknowledgment.
-
-K102.03 — Repeated warning
-Kallā, “no indeed,” rebukes and calls attention to the fact that someone concerned for his own welfare ought not to make this world his entire concern while neglecting his religion. “You will come to know” warns them so that they may fear and awaken from heedlessness. Repetition emphasizes the rebuke and warning directed at them. Thumma, “again/then,” indicates that the second warning is more emphatic and severe than the first, as when you tell someone you are advising, “I tell you, and then I tell you again: do not do it.”
-The meaning is: you will know the error of your present course when you see before you the terror of meeting God. This admonition is counsel and mercy for you. He then repeats the admonition and says, “If only you knew,” with the consequence left unstated: if you knew what lies before you with knowledge of something certain—as you know those matters of which you are assured and to whose knowledge you have devoted your attention—you would do something beyond description or comprehension. But you are astray and ignorant.
-
-K102.04 — Seeing the Fire; readings; certainty
-He then says, “You will surely see the blazing Fire,” explaining what He had warned them against and threatened them with. The magnifying effect of clarifying something after leaving it unspecified has already been discussed. This is the response to an omitted oath. The oath emphasizes the threat and establishes that what they are threatened with admits no doubt. He repeats it, coordinating it with thumma, to intensify the threat and increase the terror.
-La-tarʾunna is also read, with a hamza [in place of the wāw]; it is considered objectionable. If you ask why, when changing a wāw bearing ḍamma into hamza is a regular analogy, I answer: that applies to a wāw whose ḍamma is permanent. Here it is incidental, introduced to avoid the meeting of two vowelless letters. La-turawunna and la-turawunnahā are also read as passives: “you will surely be made to see,” and “you will surely be made to see it.”
-“With the very certainty of sight” (ʿayna al-yaqīn): a seeing that is certainty itself and its pure essence. Seeing may mean knowledge and visual perception.
-
-K102.05 — The enjoyment about which people are questioned
-“About the pleasures you enjoyed”: about the amusement and comfortable enjoyment whose pleasures distracted you from religion and its obligations.
-If you ask what enjoyment a person is questioned and reproached about, since everyone has some enjoyment, I answer: it is the enjoyment of someone who devotes all his concern to exhausting the pleasures of life, living only to eat fine food, wear soft clothes, and pass his time in amusement and entertainment. He pays no heed to knowledge and action and does not undertake their difficulties.
-But someone who enjoys God's blessings and provisions—which He created only for His servants—and draws strength from them to study knowledge and perform good works, while rising to the duty of gratitude, is far removed from this. God's Messenger indicated this in the report that he and his Companions ate dates and drank water afterward, and he said: “Praise belongs to God, who fed us, gave us drink, and made us Muslims.”
-God's Messenger is reported to have said: “Whoever recites ‘Rivalry in increase has distracted you,’ God will not call him to account for the enjoyment He granted him in the abode of this world, and he will be given a reward as though he had recited a thousand verses.”
-
-AL-ṬĪBĪ — FUTŪḤ AL-GHAYB
+Ibn ʿAbbās read a-alhākum (أألهاكم), as a question whose purpose is to elicit acknowledgment.
 
 T102.01 — Outnumbering; the irony of visiting graves (XVI, 558–559)
-On “Banū Sahm outnumbered them”: they defeated them through greater numbers, from the expression kāthartuhu fa-kathartuhu, “I competed with him in numbers and outnumbered him.” Takāthur is striving to increase one's wealth and numbers.
+
+On “Banū Sahm outnumbered them”: they defeated them through greater numbers, from the expression kāthartuhu fa-kathartuhu (كاثرته فكثرته), “I competed with him in numbers and outnumbered him.” Takāthur is striving to increase one's wealth and numbers.
 On “you turned to the graves and competed over the dead”: according to this, “the graves” is an indirect expression for moving from mentioning the living to mentioning the dead in mutual boasting. It is mockery because visiting graves was prescribed to recall death, reject love of this world, and abandon ostentation and boasting. These people reversed this: they made visiting graves a cause of greater hardness of heart, immersion in worldly love, and boasting of greater numbers.
 We have transmitted from Muslim, Abū Dāwūd, and al-Nasāʾī, from Burayda, that God's Messenger said: “I forbade you to visit graves; now visit them.” Abū Dāwūd's version reads: “Visit them, for they remind you of the hereafter.”
 On “or He means: rivalry in wealth and children distracted you until you died”: the three interpretations thus reduce to ‘visiting’ meaning either the transition from mentioning one group to mentioning another, actual visiting, or death. “Spending” is a circumstantial expression attached to “distracted you”; “from what had a greater claim upon you” is also governed by “distracted you.”
 
 T102.02 — The verse about a shared attachment (559–560)
-On “This year no intimate…”: al-Fāʾiq says: “A woman's ḍamd is her joining together and taking two lovers.” Abū Dhuʾayb said:
+
+On “This year no intimate…”: al-Fāʾiq says: “A woman's ḍamd (ضمد) is her joining together and taking two lovers.” Abū Dhuʾayb said:
 “You wish to join me and Khālid as your lovers—
 can two swords, woe to you, be joined in one sheath?”
 The author of the quoted verse is Miqdād ibn Ḥassān al-Zubayrī. It is preceded by:
 “I have found a shared attachment a grievous thing.”
-In the age of ignorance a woman would take a lover besides her husband; that is ḍamd.
-On “ten” (ʿashran): ten nights. A reading with kasra on the ʿayn, ʿishran, is also transmitted, meaning companionship. Muʿāshara means association, as does taʿāshur; the corresponding noun is ʿishra. Khalīl means husband. The meaning is that a husband will not secure exclusive companionship with a woman for ten nights unless he dies. “Who has tasted a shared attachment” describes the intimate. [The compressed verse and its explanation remain difficult; the alternatives are retained rather than conflated.]
+In the age of ignorance a woman would take a lover besides her husband; that is ḍamd (ضمد).
+On “ten” (ʿashran (عَشْرًا)): ten nights. A reading with kasra (كَسْرة) on the ʿayn (ع), ʿishran (عِشْرًا), is also transmitted, meaning companionship. Muʿāshara means association, as does taʿāshur (تعاشر); the corresponding noun is ʿishra (عِشْرة). Khalīl means husband. The meaning is that a husband will not secure exclusive companionship with a woman for ten nights unless he dies. “Who has tasted a shared attachment” describes the intimate. [The compressed verse and its explanation remain difficult; the alternatives are retained rather than conflated.]
+
+K102.03 — Repeated warning
+
+Kallā, “no indeed,” rebukes and calls attention to the fact that someone concerned for his own welfare ought not to make this world his entire concern while neglecting his religion. “You will come to know” warns them so that they may fear and awaken from heedlessness. Repetition emphasizes the rebuke and warning directed at them. Thumma, “again/then,” indicates that the second warning is more emphatic and severe than the first, as when you tell someone you are advising, “I tell you, and then I tell you again: do not do it.”
+The meaning is: you will know the error of your present course when you see before you the terror of meeting God. This admonition is counsel and mercy for you. He then repeats the admonition and says, “If only you knew,” with the consequence left unstated: if you knew what lies before you with knowledge of something certain—as you know those matters of which you are assured and to whose knowledge you have devoted your attention—you would do something beyond description or comprehension. But you are astray and ignorant.
 
 T102.03 — Kallā, stopping points, and the two senses (560–561)
-On “kallā rebukes and calls attention”: it rejects the preceding discourse and calls attention to what the following discourse indicates. He thus takes both its meanings into consideration. The Imām [Fakhr al-Dīn al-Rāzī] says: “Kallā is connected with what precedes by rejection and denial: the matter is not as these people imagine, that true happiness lies in abundant numbers, wealth, and children. It is connected with what follows in the sense, ‘Truly, you will come to know’—but at a time when the transgressor becomes repentant, the unbeliever becomes a Muslim, and the covetous person becomes an ascetic.” The author's words intimate both meanings.
-Al-Kawāshī says: “The stop at ‘the graves’ is complete if kallā calls attention. If it rebukes, the stop is at kallā.”
-If you ask whether the author's position entails using a shared expression simultaneously in both its different meanings, I answer: it does not. The intention is that, if one begins with kallā, a new statement begins there. An implied question is supplied: what is the recompense of these heedless people, and what is said of them? The answer is: truly, they will know the outcome of their state when they see the blazing Fire. The discourse thus conveys rebuke by its meaning.
-If one stops at kallā, the implied question occurs after it: what will be done to these rejected people who have been rebuked? The answer is: they will know what will be done to them when they see the blazing Fire. The discourse thus entails calling attention by its meaning. The author of al-Murshid says: “‘Until you visited the graves’ is a complete stop. Begin with kallā in the sense of threat and warning.”
+
+On “kallā (كلّا) rebukes and calls attention”: it rejects the preceding discourse and calls attention to what the following discourse indicates. He thus takes both its meanings into consideration. The Imām [Fakhr al-Dīn al-Rāzī] says: “Kallā is connected with what precedes by rejection and denial: the matter is not as these people imagine, that true happiness lies in abundant numbers, wealth, and children. It is connected with what follows in the sense, ‘Truly, you will come to know’—but at a time when the transgressor becomes repentant, the unbeliever becomes a Muslim, and the covetous person becomes an ascetic.” The author's words intimate both meanings.
+Al-Kawāshī says: “The stop at ‘the graves’ is complete if kallā (كلّا) calls attention. If it rebukes, the stop is at kallā (كلّا).”
+If you ask whether the author's position entails using a shared expression simultaneously in both its different meanings, I answer: it does not. The intention is that, if one begins with kallā (كلّا), a new statement begins there. An implied question is supplied: what is the recompense of these heedless people, and what is said of them? The answer is: truly, they will know the outcome of their state when they see the blazing Fire. The discourse thus conveys rebuke by its meaning.
+If one stops at kallā (كلّا), the implied question occurs after it: what will be done to these rejected people who have been rebuked? The answer is: they will know what will be done to them when they see the blazing Fire. The discourse thus entails calling attention by its meaning. The author of al-Murshid says: “‘Until you visited the graves’ is a complete stop. Begin with kallā (كلّا) in the sense of threat and warning.”
 On “if you knew what lies before you”: it is said that ‘knowledge’ here means knowing the thing itself, not knowing it by its description.
 
+K102.04 — Seeing the Fire; readings; certainty
+
+He then says, “You will surely see the blazing Fire,” explaining what He had warned them against and threatened them with. The magnifying effect of clarifying something after leaving it unspecified has already been discussed. This is the response to an omitted oath. The oath emphasizes the threat and establishes that what they are threatened with admits no doubt. He repeats it, coordinating it with thumma, to intensify the threat and increase the terror.
+La-tarʾunna is also read, with a hamza (همزة) [in place of the wāw (و)]; it is considered objectionable. If you ask why, when changing a wāw (و) bearing ḍamma (ضَمّة) into hamza (همزة) is a regular analogy, I answer: that applies to a wāw (و) whose ḍamma (ضَمّة) is permanent. Here it is incidental, introduced to avoid the meeting of two vowelless letters. La-turawunna and la-turawunnahā (لَتُرَوُنَّها) are also read as passives: “you will surely be made to see,” and “you will surely be made to see it.”
+“With the very certainty of sight” (ʿayna al-yaqīn (اليقين)): a seeing that is certainty itself and its pure essence. Seeing may mean knowledge and visual perception.
+
 T102.04 — The hamza reading and the canonical readers (562)
-On “that applies to a wāw whose ḍamma is permanent”: al-Zajjāj says: “The reading is la-tarawunna, with ḍamma on the wāw and without hamza. The wāw receives ḍamma because it and the nūn are both vowelless. Some have pronounced it with hamza, but the grammarians dislike this because its ḍamma is not permanent: it was given a vowel to avoid two vowelless letters meeting. They change a wāw with permanent ḍamma into hamza, as in adʾur, the plural of dār, ‘house’; adwur is also permissible.”
-On “la-turawunna is also read”: Ibn ʿĀmir and al-Kisāʾī read with ḍamma on the tāʾ; the others with fatḥa. Among the seven readers there is no disagreement that la-tarawunnahā has fatḥa on the tāʾ.
+
+On “that applies to a wāw (و) whose ḍamma (ضَمّة) is permanent”: al-Zajjāj says: “The reading is la-tarawunna (لَتَرَوُنَّ), with ḍamma (ضَمّة) on the wāw (و) and without hamza (همزة). The wāw (و) receives ḍamma (ضَمّة) because it and the nūn (ن) are both vowelless. Some have pronounced it with hamza (همزة), but the grammarians dislike this because its ḍamma (ضَمّة) is not permanent: it was given a vowel to avoid two vowelless letters meeting. They change a wāw (و) with permanent ḍamma (ضَمّة) into hamza (همزة), as in adʾur (أدؤر), the plural of dār (دار), ‘house’; adwur is also permissible.”
+On “la-turawunna (لَتُرَوُنَّ) is also read”: Ibn ʿĀmir and al-Kisāʾī read with ḍamma (ضَمّة) on the tāʾ (ت); the others with fatḥa (فَتْحة). Among the seven readers there is no disagreement that la-tarawunnahā (لَتَرَوُنَّها) has fatḥa (فَتْحة) on the tāʾ (ت).
 
 T102.05 — Knowledge, sight, and the degrees of certainty (562–563)
-On “‘the very certainty of sight’: a seeing that is certainty itself”: it is said that ʿayna al-yaqīn is accusative as a verbal-noun expression. ʿAyn here means the thing itself, as when you say, “Zayd himself came”—nafsuhu or ʿaynuhu. The correct position is that seeing here means visual perception rather than knowledge.
-I say: this is what he intended by “seeing may mean knowledge and visual perception,” treating the coordination as explanatory. The Qāḍī says: “‘ʿAyn al-yaqīn’ means a seeing that is certainty itself, for knowledge through direct witnessing is the highest degree of certainty.”
-Our shaykh, Shaykh al-Islām—may his inner being be sanctified—says in al-ʿAwārif: “ʿIlm al-yaqīn, knowledge of certainty, is reached through reflection and inference. ʿAyn al-yaqīn, the eye of certainty, is reached through unveilings and gifts. Ḥaqq al-yaqīn, the reality of certainty, comes through truly separating oneself from the stain of clay when the herald of union arrives.” Al-Junayd says: “The reality of certainty is that the servant becomes fully established in it: he witnesses unseen things just as he witnesses visible things, with direct vision.”
+
+On “‘the very certainty of sight’: a seeing that is certainty itself”: it is said that ʿayna al-yaqīn (اليقين) is accusative as a verbal-noun expression. ʿAyn here means the thing itself, as when you say, “Zayd himself came”—nafsuhu or ʿaynuhu (عينه). The correct position is that seeing here means visual perception rather than knowledge.
+I say: this is what he intended by “seeing may mean knowledge and visual perception,” treating the coordination as explanatory. The Qāḍī says: “‘ʿAyn al-yaqīn (اليقين)’ means a seeing that is certainty itself, for knowledge through direct witnessing is the highest degree of certainty.”
+Our shaykh, Shaykh al-Islām—may his inner being be sanctified—says in al-ʿAwārif: “ʿIlm al-yaqīn (اليقين), knowledge of certainty, is reached through reflection and inference. ʿAyn al-yaqīn (اليقين), the eye of certainty, is reached through unveilings and gifts. Ḥaqq al-yaqīn (اليقين), the reality of certainty, comes through truly separating oneself from the stain of clay when the herald of union arrives.” Al-Junayd says: “The reality of certainty is that the servant becomes fully established in it: he witnesses unseen things just as he witnesses visible things, with direct vision.”
+
+K102.05 — The enjoyment about which people are questioned
+
+“About the pleasures you enjoyed”: about the amusement and comfortable enjoyment whose pleasures distracted you from religion and its obligations.
+If you ask what enjoyment a person is questioned and reproached about, since everyone has some enjoyment, I answer: it is the enjoyment of someone who devotes all his concern to exhausting the pleasures of life, living only to eat fine food, wear soft clothes, and pass his time in amusement and entertainment. He pays no heed to knowledge and action and does not undertake their difficulties.
+But someone who enjoys God's blessings and provisions—which He created only for His servants—and draws strength from them to study knowledge and perform good works, while rising to the duty of gratitude, is far removed from this. God's Messenger indicated this in the report that he and his Companions ate dates and drank water afterward, and he said: “Praise belongs to God, who fed us, gave us drink, and made us Muslims.”
+God's Messenger is reported to have said: “Whoever recites ‘Rivalry in increase has distracted you,’ God will not call him to account for the enjoyment He granted him in the abode of this world, and he will be given a reward as though he had recited a thousand verses.”
 
 T102.06 — Who is questioned about enjoyment? (563–564)
+
 On “the enjoyment of someone who devotes all his concern to exhausting pleasures”: the Qāḍī says: “The address, ‘Then that day you will surely be questioned about the pleasures you enjoyed,’ concerns specifically anyone whose worldly life distracted him from his religion, not the believers, because of the contextual indication and the many texts such as ‘Say: Who has forbidden God's adornment, which He has brought forth for His servants, and the good things of provision?’ (7:32), and ‘Eat of the good things’ (23:51). It is also said to concern unbelievers specifically; or to be general, since everyone is questioned about his gratitude.”
 I say: the latter is supported by what we have transmitted from Muslim, al-Tirmidhī, and Ibn Mājah, from Abū Hurayra. God's Messenger went out and encountered Abū Bakr and ʿUmar. He asked: “What brought you out of your homes?” They said: “Hunger.” He said: “By Him in whose hand is my soul, the same thing brought me out.” They came to the house of a man of the Anṣār, who brought them a cluster containing unripe, dried, and fresh dates, and slaughtered an animal for them. They ate from the sheep and the date-cluster and drank. When they had eaten and drunk their fill, God's Messenger said to them: “By Him in whose hand is my soul, you will surely be questioned about this enjoyment on the Day of Resurrection.” The report is abbreviated here.
 Al-Wāḥidī transmits from Muqātil: “He means the unbelievers of Mecca. In this world they lived amid goodness and blessings. On the Day of Resurrection they will be questioned about gratitude for what they enjoyed. They did not thank the Lord of blessings, since they worshipped others and associated partners with Him; then they will be punished. This is al-Ḥasan's position.”
 I say: this is supported by the fact that the address from the beginning of the sūrah is to those competing and boasting in abundance, who, as explained above, are unbelievers. Since preoccupation with worldly enjoyment is a characteristic of the heedless, and a believer must avoid base qualities, God's Messenger spoke sternly when he said, “You will be questioned about this enjoyment on the Day of Resurrection.” This does not mean that he was interpreting the verse by what he said.
 Complete.
 
+al-Takāthur · source and review notes · inherited record
+
+INHERITED C06 RECORD. Earlier scan claims have not been independently reconfirmed in this pass. Current corrections supersede provisional renderings below; consult the C07 review register.
+
 SOURCE AND REVIEW NOTES
 K102-U1: The difficult poetic citation involving ḍimād, a shared attachment, is translated together with Ṭībī's complete lexical explanation and alternate reading. Printed p. 560 was inspected and confirms the wording of that explanation; the compressed verse still requires comparison with further witnesses. Bracketed wording makes the supplied sense visible. The Turkish version construes the participants differently; its interpretation has not replaced Ṭībī's explicit gloss khalīl = husband.
 K102-U2: K-DKA's transcription has a damaged phrase concerning conversion of wāw to hamza. The translation follows the grammatical explanation preserved in Ṭībī's quoted base and his citation from al-Zajjāj.
 T102-U1: The image “the stain of clay” and “the herald of union” belongs to the quoted mystical definition in al-ʿAwārif; it is retained rather than replaced by an explanatory summary.
 T102-U2: Ṭībī first notes evidence for a general questioning and then argues for the address's specific context. Both stages of his argument are preserved. The closing merit report and other reports await independent hadith review.
+
+
+Tanzil Quran Text
+Copyright (C) 2007-2021 Tanzil Project
+License: Creative Commons Attribution 3.0
+
+This copy of the Quran text is carefully produced, highly
+verified and continuously monitored by a group of specialists
+in Tanzil Project.
+
+TERMS OF USE:
+
+- Permission is granted to copy and distribute verbatim copies
+  of this text, but CHANGING IT IS NOT ALLOWED.
+
+- This Quran text can be used in any website or application,
+  provided that its source (Tanzil Project) is clearly indicated,
+  and a link is made to tanzil.net to enable users to keep
+  track of changes.
+
+- This copyright notice shall be included in all verbatim copies
+  of the text, and shall be reproduced appropriately in all files
+  derived from or containing substantial portion of this text.
+
+Please check updates at: http://tanzil.net/updates/

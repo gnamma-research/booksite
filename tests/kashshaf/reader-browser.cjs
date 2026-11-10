@@ -29,7 +29,7 @@ async function run(type,name){
   const initialQ=await page.locator('.quran-arabic').innerText();
   assert.ok(await page.locator('.q-en').isVisible());
   await page.locator('[data-language="ar"]').click();assert.equal(await page.locator('.ar-column:visible').count(),0);assert.ok(await page.locator('.quran-arabic').isVisible());assert.equal(await page.locator('.quran-arabic').innerText(),initialQ);
-  assert.ok(await page.locator('.en-column .ar-term').count()>0);
+  assert.ok(await page.locator('.en-column .ar-term,.en-column .lexical').count()>0);
   await page.locator('[data-setting="tibi"]').first().uncheck();assert.equal(await page.locator('.tibi-layer:visible').count(),0);assert.equal(await page.locator('.kashshaf-layer:visible').count(),1);
   await page.reload();await page.locator('.passage').waitFor();assert.equal(await page.locator('.tibi-layer:visible').count(),0);
   await page.locator('[data-language="ar"]').click();await page.locator('[data-language="en"]').click();assert.equal(await page.locator('.en-column:visible').count(),0);assert.equal(await page.locator('.q-en:visible').count(),0);assert.ok(await page.locator('.quran-arabic').isVisible());assert.equal(await page.locator('.quran-arabic').innerText(),initialQ);
@@ -41,7 +41,7 @@ async function run(type,name){
   await page.locator('#location-button').click();await page.locator('#jumpOverlay[open]').waitFor();assert.ok(await page.locator('#jumpResults [data-section]').count()>0);await page.locator('#jumpClose').click();
   await page.locator('#readerSaveAction').click();await page.waitForFunction(()=>BahrReader.desk.some(x=>x.type==='bookmark'));
   await open('#/contents');assert.equal(await page.locator('.contents-part').count(),19);assert.equal(await page.locator('.toc-link').count(),123);
-  await open('#/dictionary');await page.locator('.dictionary-card').first().waitFor();assert.equal(await page.locator('.dictionary-card').count(),659);await page.locator('.dictionary-card').first().click();await page.locator('#sheet[open]').waitFor();await page.locator('#sheet-close').click();
+  await open('#/dictionary');await page.locator('.dictionary-card').first().waitFor();assert.equal(await page.locator('.dictionary-card').count(),edition.review.dictionary_entries);await page.locator('.dictionary-card').first().click();await page.locator('#sheet[open]').waitFor();await page.locator('#sheet-close').click();
   for(const route of ['indices','research','study','desk','help','about']){await open('#/'+route);assert.ok((await page.locator('#main').innerText()).length>100);}
   await open('#/search?q=الكوثر');await page.waitForFunction(()=>document.querySelector('#search-results')?.textContent.length>30);assert.ok(await page.locator('#search-results a[href*="/read/"]').count()>0);
   await open('#/search?q=abundance');await page.waitForFunction(()=>document.querySelector('#search-results')?.textContent.length>30);assert.ok(await page.locator('#search-results a[href*="/read/"]').count()>0);
@@ -58,9 +58,13 @@ async function run(type,name){
   assert.equal(await page.locator('.quran-arabic .ayah').first().getAttribute('data-verse'),'1:1');
   assert.ok(await page.locator('.quran-arabic').evaluateAll(es=>es.every(e=>e.textContent.includes('﴿')&&e.textContent.includes('﴾'))));
   assert.ok(await page.locator('.passage').evaluateAll(es=>es.every(e=>{const q=e.querySelector('.quran-context'),l=e.querySelector('.author-layer');return Boolean(q.compareDocumentPosition(l)&Node.DOCUMENT_POSITION_FOLLOWING)})));
-  const texts=await page.locator('.author-layer').evaluateAll(es=>es.map(e=>{const copy=e.querySelector('.en-column').cloneNode(true);copy.querySelectorAll('.ar-term,.source-lemma,h3,button,.personal-paragraph-tools,.scholarly-anchor').forEach(x=>x.remove());return {id:e.dataset.sourceId,text:[...copy.querySelectorAll('p[data-anchor]')].map(p=>p.textContent).join('\n\n')};}));
+  const texts=await page.locator('.author-layer').evaluateAll(es=>es.map(e=>{const copy=e.querySelector('.en-column').cloneNode(true);copy.querySelectorAll('.source-lemma,h3,button:not(.lexical),.personal-paragraph-tools,.scholarly-anchor').forEach(x=>x.remove());return {id:e.dataset.sourceId,text:[...copy.querySelectorAll('p[data-anchor]')].map(p=>p.textContent).join('\n\n')};}));
   // Added Arabic gloss spans leave a separator behind when removed; compare every non-whitespace character.
   const normal=s=>s.replace(/\s+/g,'');for(const s of edition.records.flatMap(r=>r.layers)){assert.equal(normal(texts.find(x=>x.id===s.id).text),normal(s.text),'Preserved complete English '+s.id);}
+  const arabic=await page.locator('.author-layer').evaluateAll(es=>es.map(e=>({id:e.dataset.sourceId,text:[...e.querySelectorAll('.ar-column p[data-anchor]')].map(p=>p.textContent).join('\n\n')})));
+  for(const s of edition.records.flatMap(r=>r.layers)){assert.equal(normal(arabic.find(x=>x.id===s.id).text),normal(s.ar),'Complete Arabic '+s.id);assert.equal(s.review.new_scan_collation,false);}
+  assert.deepEqual(edition.review.arabic_lacunae,['T113.06']);
+  await page.goto(base+'review-register.html#K001.12');assert.ok(await page.locator('[id="K001.12"]').getAttribute('open')!==null);assert.match(await page.locator('[id="K001.12"]').innerText(),/kingship/);
   const noJS=await browser.newContext({javaScriptEnabled:false}),plain=await noJS.newPage();for(const book of edition.books){await plain.goto(base+'plain/surah-'+String(book.number).padStart(3,'0')+'.html');assert.equal(await plain.locator('.author-layer').count(),edition.records.filter(r=>r.s===book.number).flatMap(r=>r.layers).length);assert.ok(await plain.locator('.quran-arabic').first().isVisible());}await noJS.close();
   for(const file of ['downloads/Kashshaf-Tibi-C07.html','downloads/Kashshaf-Tibi-C07.txt','arabic-alignment-audit.json'])assert.equal((await context.request.get(base+file)).status(),200);
   assert.deepEqual(errors,[]);assert.deepEqual(failures,[]);results.push({browser:name,all277EnglishSectionsPreserved:true,all277ArabicSectionsPresent:true,static19CompleteSurahs:true,print:true,responsive:true,pageErrors:errors,failedRequests:failures});

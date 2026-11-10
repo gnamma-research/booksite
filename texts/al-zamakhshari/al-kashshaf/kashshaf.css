@@ -11,3 +11,5 @@
 @media print{.commentary-controls,.passage-actions,.tibi-relation{display:none!important}.quran-context{break-inside:avoid}.author-layer{break-inside:auto}.quran-arabic{font-size:24px}.parallel{display:grid;grid-template-columns:1fr 1fr;gap:24px}.tibi-off .tibi-layer{display:none!important}.no-en .en-column,.no-ar .ar-column{display:none!important}}
 
 .quran-basmala{margin-bottom:.65em;font-size:.93em}.basmala-en{text-align:center;font-style:italic;margin-bottom:1em!important}.quran-arabic .ayah-number{unicode-bidi:isolate}
+
+.critical-review{font:11px/1.7 system-ui,sans-serif;color:var(--muted);margin-top:1rem}.ui-hide-notes .critical-review{display:none}.review-progress{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:900px;margin:24px auto}.review-progress p{padding:16px;border:1px solid var(--line);border-radius:8px;font-size:14px}.review-progress progress{width:100%;display:block;margin-top:8px}@media(max-width:600px){.review-progress{grid-template-columns:1fr}}

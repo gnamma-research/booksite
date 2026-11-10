@@ -1,23 +1,45 @@
-AL-MĀʿŪN (107) — SMALL ACTS OF ASSISTANCE
-Complete first-pass translation of both authorial layers • C05 • 27 October 2026
+AL-KASHSHAF / FUTUH AL-GHAYB — C07 REVIEWED
+10 November 2026
 
-SOURCE AND STATUS
-Kashshāf: DKA, 1407 AH, IV:803–806, OpenITI Shamela0023627-ara1. Ṭībī: Dubai, 1434/2013, XVI:591–599, OpenITI Sham19Y0020891-ara1. Both authorial layers are translated through their endings. The different headings are retained explicitly. Modern editorial notes are excluded. Claims about faith and unbelief are the authors’ arguments, not independent judgments on individuals. Complete first draft; final review pending.
+All 277 existing passages have undergone electronic comparison. This is a revised working edition, not a definitive critical edition. Draft coverage: 19 Kashshāf sūrahs, 18 Ṭībī sūrahs and Fātiḥa I:677–686 only. I:687–770 remains untranslated. One Arabic gap, conflicting readings, complete page-image collation and final scholarly approval remain outstanding.
 
-AL-ZAMAKHSHARĪ — AL-KASHSHĀF
+SURAH 107 — al-Māʿūn
+
+﴿بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ﴾ (107:1)
+Hast thou observed him who belieth religion
+
+﴿فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ﴾ (107:2)
+That is he who repelleth the orphan
+
+﴿وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ﴾ (107:3)
+And urgeth not the feeding of the needy
+
+﴿فَوَيْلٌ لِّلْمُصَلِّينَ﴾ (107:4)
+Ah, woe unto worshippers
+
+﴿ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ﴾ (107:5)
+Who are heedless of their prayer
+
+﴿ٱلَّذِينَ هُمْ يُرَآءُونَ﴾ (107:6)
+Who would be seen (at worship)
+
+﴿وَيَمْنَعُونَ ٱلْمَاعُونَ﴾ (107:7)
+Yet refuse small kindnesses
 
 K107.01 — Heading, verses, and readings [IV:803]
+
 The DKA heading describes the first three verses as Meccan and the remainder as Medinan, seven verses in all, and places revelation after al-Takāthur. Ṭībī’s embedded Kashshāf heading says: Meccan, also said to be Medinan; seven verses.
 In the name of God, the All-Merciful, the Merciful.
 
 Have you seen the one who denies recompense? (1) That is the one who violently repulses the orphan (2) and does not urge feeding the needy. (3) So woe to those who pray, (4) yet are heedless of their prayer, (5) who make a display, (6) and withhold assistance. (7)
 
-A-rayta is also read with the hamza omitted. It is not the preferred form, since dropping that hamza is peculiar to the imperfect; raytu is not established Arabic usage. What makes it easier here is the initial interrogative particle. Compare:
+A-rayta is also read with the hamza (همزة) omitted. It is not the preferred form, since dropping that hamza (همزة) is peculiar to the imperfect; raytu (رأيت) is not established Arabic usage. What makes it easier here is the initial interrogative particle. Compare:
 “Friend, have you seen or heard of a herdsman
 returning to the udder what he gathered in the milking bowl?”
 
 K107.02 — The orphan and signs of denial [IV:804]
-Ibn Masʿūd read a-raʾaytaka, adding the address-marker, as in “Tell me of this one whom You have honoured above me” [17:62]. The meaning is: do you know who denies recompense? If not, that denier is the one who pushes the orphan away violently, with cruelty and injury, rejecting him harshly with rebuke. Yadaʿu is also read: abandons and treats coldly. “Does not urge”: does not encourage his household to give the needy food.
+
+Ibn Masʿūd read a-raʾaytaka (أرأيتك), adding the address-marker, as in “Tell me of this one whom You have honoured above me” [17:62]. The meaning is: do you know who denies recompense? If not, that denier is the one who pushes the orphan away violently, with cruelty and injury, rejecting him harshly with rebuke. Yadaʿu is also read: abandons and treats coldly. “Does not urge”: does not encourage his household to give the needy food.
 
 Withholding kindness and daring to injure the weak are made the sign of denying recompense. Had he believed in recompense and been certain of the threat, he would have feared God and His punishment and not done this. His doing it reveals denial. How severe these words, how fearful the situation, how forceful the warning against sin and its fitness to indicate weak faith and a slack bond of certainty!
 
@@ -25,15 +47,67 @@ Withholding kindness and daring to injure the weak are made the sign of denying 
 
 Their neglect of prayer, religion’s pillar and the distinction between faith and unbelief; their ostentation, a branch of associating partners with God; and their refusal of alms, prayer’s counterpart and Islam’s bridge, are all the more fitting signs that they deny recompense. How many bearing Islam’s name—even scholars—you see like this! What a calamity!
 
+T107.01 — The heading, reading, and poetic illustration [XVI:591–592]
+
+Ṭībī’s own heading: Medinan; six verses. [This differs from the embedded base text and is preserved, not silently corrected.]
+In the name of God, the All-Merciful, the Merciful.
+
+A-rayta is al-Kisāʾī’s reading. The initial interrogative makes a second hamza (همزة) burdensome, hence its omission. The verse beginning “Friend” resembles Abū l-Ṭayyib’s:
+“Youth once gone cannot be recovered;
+no passing day can be brought back.”
+Ṣāḥ originally means yā ṣāḥib (صاحب), shortened by truncation. Qary is gathering water in a basin. An ʿulba (عُلْبة) is a wooden milking bowl, plural ʿulab (عُلَب) or ʿilāb (عِلاب). The poet asks whether his friend ever saw or heard of a herdsman returning to the udder milk (مِلْك) already drawn and gathered in the bowl.
+
+On adding the address-marker: the kāf (ك) reinforces the address already expressed by tāʾ (ت). Al-Rāghib says: “Ḥaḍḍ is urging, like ḥathth (حثّ), except that ḥathth (حثّ) may concern travel and driving onward, while ḥaḍḍ (حضّ) does not. Its origin is urging onto the ḥaḍīḍ (حضيض), the ground’s lower level.”
+
+T107.02 — Culpable heedlessness and hurried prayer [XVI:593–594]
+
+Al-Rāghib says: “Sahw is an error from inattention, of two kinds. One arises from causes a person himself brought about: someone drinks wine and commits wrongdoing without intending it. The other does not arise from his own causes: an insane person insults someone. The second is pardoned; the first is accountable. The first kind is what God condemns in ‘woe to those who pray, heedless of their prayer.’”
+
+“Or fail to perform it” is conjoined to “neglect prayer.” Thus neglect means delaying prayer beyond its time through indifference, or inattentively omitting its constituent acts, forms, proprieties and stillness. Hence “they peck through it like a bird pecking grain.” Abū Dāwūd and al-Nasāʾī transmit from ʿAbd al-Raḥmān (الرحمن) ibn Shibl: the Messenger forbade pecking like a crow, spreading oneself like a predatory beast, and claiming a habitual place as a camel does.
+
+Al-Bukhārī and al-Nasāʾī transmit from Zayd ibn Wahb: Ḥudhayfa saw a man praying deficiently and asked how long he had prayed this way. “Forty years.” “You have not prayed for forty years. If you died praying thus, you would die outside Muḥammad’s original way.” He added, “A person may pray briefly yet completely and well.”
+
+T107.03 — The escalating argument [XVI:594–595]
+
+“Ostentation” and “withholding alms” are nominative, conjoined to “their neglect,” the subject of yakūna (يكون); “a sign” is the predicate, understood similarly for the coordinated terms, as in:
+“We with what we have, and you with what you have,
+are content, though judgment differs.”
+
+These things are signs of denying recompense because “woe to those who pray” follows as consequence from cause and result from condition, with an escalation: do you recognise the denier? He repulses the orphan and withholds his good. Do you recognise something still greater and more dreadful? Abandoning prayer and alms and displaying one’s deeds are greater, because worship is the intrinsic purpose of the world’s creation. On this account māʿūn (ماعون) must mean withholding alms, completing the mention of prayer rather than introducing a further escalation. Denial of recompense thus fundamentally nullifies the wisdom in creating heaven and earth, legislating worship, and urging all other good deeds. God protect us from it.
+
+The Imām says: “Denying resurrection is like the root of every kind of unbelief and sin. God makes harming the weak and withholding kindness its sign: belief in recompense and certainty of the threat would prevent them. Denial of resurrection therefore produces the sin.”
+
 K107.03 — Another construction; neglect of prayer versus lapses in it [IV:804–805]
-Alternatively fa-dhālika is conjoined to “the one who denies,” either joining one person to another or one attribute to another. The answer to a-raʾayta is omitted, indicated by what follows: tell me what you say about one who denies recompense and one who harms the orphan and does not feed the needy—is his conduct good? Then: “woe to those who pray,” meaning, once his wrongdoing is known, woe to them. Their description replaces their pronoun, because along with denial and the other attributed acts they neglected prayer, made a display, and failed to purify their property by alms.
+
+Alternatively fa-dhālika (فذلك) is conjoined to “the one who denies,” either joining one person to another or one attribute to another. The answer to a-raʾayta (أرأيت) is omitted, indicated by what follows: tell me what you say about one who denies recompense and one who harms the orphan and does not feed the needy—is his conduct good? Then: “woe to those who pray,” meaning, once his wrongdoing is known, woe to them. Their description replaces their pronoun, because along with denial and the other attributed acts they neglected prayer, made a display, and failed to purify their property by alms.
 
 If you ask how the plural “those who pray” replaces the pronoun of the singular “one who denies,” I reply: the meaning is plural, because the class is intended.
 
-What distinguishes “heedless of their prayer” (ʿan) from “heedless in their prayer” (fī)? ʿAn means neglecting and abandoning it, paying it little attention: the conduct of hypocrites or brazenly sinful Muslims. Fī means lapses occurring during it through Satan’s whispering or inward thoughts, from which scarcely any Muslim is free. Even God’s Messenger had lapses during prayer, let alone others; hence jurists include chapters on the prostration for forgetfulness. Anas said, “Praise God that He did not say ‘in their prayer.’” Ibn Masʿūd read lāhūna, “distracted.”
+What distinguishes “heedless of their prayer” (ʿan (عن)) from “heedless in their prayer” (fī (في))? ʿAn means neglecting and abandoning it, paying it little attention: the conduct of hypocrites or brazenly sinful Muslims. Fī means lapses occurring during it through Satan’s whispering or inward thoughts, from which scarcely any Muslim is free. Even God’s Messenger had lapses during prayer, let alone others; hence jurists include chapters on the prostration for forgetfulness. Anas said, “Praise God that He did not say ‘in their prayer.’” Ibn Masʿūd read lāhūna (لاهون), “distracted.”
+
+T107.04 — Who are “those who pray”? [XVI:595–596]
+
+On joining persons or attributes: in the first earlier construction fāʾ (ف) answers an omitted condition, “If you do not know, then recognise him as that denier.” If a particular person is intended, “the one” denotes someone known; if an attribute, it can also denote the class. Hence the differing identifications: Muqātil gives al-ʿĀṣ ibn Wāʾil; al-Suddī and Muqātil give al-Walīd ibn al-Mughīra; Ibn ʿAbbās gives a hypocrite. These occur in al-Maʿālim.
+
+Al-Kawāshī says: “Do not pause after ‘the needy’ if ‘the one’ denotes the class and the praying people belong to the same statement. What a-raʾayta (أرأيت) relates to is then omitted: what do you say of one who denies truth, repulses the orphan and injures the needy—has he acted well? Woe to them! ‘Those who pray’ replaces ‘them.’”
+
+I say: this shows that on the first interpretation “woe to those who pray” is separate from the preceding statement as regards its referent. The denier is an unbeliever such as al-Walīd or al-ʿĀṣ; the praying people are Muslims. Making injury and withheld kindness signs of denial signals their severity, so believers avoid such conduct, characteristic of unbelievers denying Judgment Day. Hence the author’s exclamations about the severe words and fearful situation, and their indication of weak faith.
+
+His saying “he then connected ‘woe to those who pray,’ as though saying ‘if the matter is thus’” also indicates distinct referents: he mentions “the matter,” without saying an explicit noun replaces a pronoun. By contrast, on the final interpretation he expressly says “woe to them.” There the praying people are the deniers, since he says they were heedless of prayer “alongside their denial.” The Imām says: “On this interpretation the verse shows an unbeliever receiving additional punishment for prohibited acts and omitted religious obligations. This supports al-Shāfiʿī’s position that unbelievers are addressed by the subsidiary ordinances of revealed law.”
+
+T107.05 — Objections to the distinction between ʿan and fī [XVI:597]
+
+The Imām says: “ʿAṭāʾ transmits from Ibn ʿAbbās: had God said ‘heedless in their prayer,’ believers would be more exposed to this threat. Instead He says ‘heedless of their prayer’: not remembering it and being disengaged from it. This interpretation is weak: heedlessness of prayer cannot mean abandoning prayer, since ‘those who pray’ affirms their prayer; moreover, abandoning it through heedlessness is neither hypocrisy nor unbelief.
+
+“The first objection may be answered: He calls them praying people regarding the outward prayer, and says they have entirely forgotten prayer regarding its meaning, as in ‘When they stand for prayer, they stand lazily, showing themselves to people, and remember God only a little’ [4:142].”
+
+I say: “those who pray” may mean those whose proper role is to discharge gratitude owed for God’s blessings. He therefore attributes prayer to them—“their prayer”—indicating an established duty upon the morally responsible. They should not pass from maintaining its pillars, forms and customary practices into inattention, much less abandonment. This rests on unbelievers’ being addressed by subsidiary ordinances.
+
+The Imām says: “The second objection is answered by understanding forgetfulness of prayer as remaining forgetful of God throughout every part. This proceeds only from a hypocrite who thinks prayer useless. A Muslim who believes its benefits cannot fail throughout all its parts to recall religion, reward or punishment. He may indeed lapse during some parts. Thus inattention in prayer is a believer’s act, and inattention of prayer an unbeliever’s.” [The argumentative claim is translated as his, without turning it into a diagnostic rule.]
 
 K107.04 — Ostentation and assistance [IV:805–806]
-If you ask what ostentation (murāʾāh) means, I reply: it is the reciprocal form from showing. The ostentatious person shows others his deed, and they show him praise and admiration. Displaying a righteous deed does not make someone ostentatious if it is obligatory. Obligations should be public and manifest, as in the Prophet’s saying, “There is no concealment in God’s obligations”: they are Islam’s signs and religion’s rites. Their omission deserves blame and abhorrence, so suspicion must be removed by making performance visible.
+
+If you ask what ostentation (murāʾāh (مراءاة)) means, I reply: it is the reciprocal form from showing. The ostentatious person shows others his deed, and they show him praise and admiration. Displaying a righteous deed does not make someone ostentatious if it is obligatory. Obligations should be public and manifest, as in the Prophet’s saying, “There is no concealment in God’s obligations”: they are Islam’s signs and religion’s rites. Their omission deserves blame and abhorrence, so suspicion must be removed by making performance visible.
 
 A voluntary deed should be concealed: leaving it incurs neither blame nor suspicion. Showing it so that others follow the example is good. Ostentation consists specifically in showing it so that eyes see and people praise one’s righteousness. Someone saw a man prolonging a prostration of thanksgiving in the mosque and said, “How fine this would be in your house!” He said so because he discerned display and desire for reputation. Avoiding ostentation is difficult except for those trained in sincerity. Hence the Messenger said, “Ostentation is more hidden than a black ant’s movement on black haircloth in a dark night.”
 
@@ -45,62 +119,45 @@ Ibn Masʿūd explains it as things ordinarily lent among people: an axe, cooking
 
 From God’s Messenger: “Whoever recites Sūrat ‘Have you seen,’ God forgives him if he pays the obligatory alms.”
 
-AL-ṬĪBĪ — FUTŪḤ AL-GHAYB
-
-T107.01 — The heading, reading, and poetic illustration [XVI:591–592]
-Ṭībī’s own heading: Medinan; six verses. [This differs from the embedded base text and is preserved, not silently corrected.]
-In the name of God, the All-Merciful, the Merciful.
-
-A-rayta is al-Kisāʾī’s reading. The initial interrogative makes a second hamza burdensome, hence its omission. The verse beginning “Friend” resembles Abū l-Ṭayyib’s:
-“Youth once gone cannot be recovered;
-no passing day can be brought back.”
-Ṣāḥ originally means yā ṣāḥib, shortened by truncation. Qary is gathering water in a basin. An ʿulba is a wooden milking bowl, plural ʿulab or ʿilāb. The poet asks whether his friend ever saw or heard of a herdsman returning to the udder milk already drawn and gathered in the bowl.
-
-On adding the address-marker: the kāf reinforces the address already expressed by tāʾ. Al-Rāghib says: “Ḥaḍḍ is urging, like ḥathth, except that ḥathth may concern travel and driving onward, while ḥaḍḍ does not. Its origin is urging onto the ḥaḍīḍ, the ground’s lower level.”
-
-T107.02 — Culpable heedlessness and hurried prayer [XVI:593–594]
-Al-Rāghib says: “Sahw is an error from inattention, of two kinds. One arises from causes a person himself brought about: someone drinks wine and commits wrongdoing without intending it. The other does not arise from his own causes: an insane person insults someone. The second is pardoned; the first is accountable. The first kind is what God condemns in ‘woe to those who pray, heedless of their prayer.’”
-
-“Or fail to perform it” is conjoined to “neglect prayer.” Thus neglect means delaying prayer beyond its time through indifference, or inattentively omitting its constituent acts, forms, proprieties and stillness. Hence “they peck through it like a bird pecking grain.” Abū Dāwūd and al-Nasāʾī transmit from ʿAbd al-Raḥmān ibn Shibl: the Messenger forbade pecking like a crow, spreading oneself like a predatory beast, and claiming a habitual place as a camel does.
-
-Al-Bukhārī and al-Nasāʾī transmit from Zayd ibn Wahb: Ḥudhayfa saw a man praying deficiently and asked how long he had prayed this way. “Forty years.” “You have not prayed for forty years. If you died praying thus, you would die outside Muḥammad’s original way.” He added, “A person may pray briefly yet completely and well.”
-
-T107.03 — The escalating argument [XVI:594–595]
-“Ostentation” and “withholding alms” are nominative, conjoined to “their neglect,” the subject of yakūna; “a sign” is the predicate, understood similarly for the coordinated terms, as in:
-“We with what we have, and you with what you have,
-are content, though judgment differs.”
-
-These things are signs of denying recompense because “woe to those who pray” follows as consequence from cause and result from condition, with an escalation: do you recognise the denier? He repulses the orphan and withholds his good. Do you recognise something still greater and more dreadful? Abandoning prayer and alms and displaying one’s deeds are greater, because worship is the intrinsic purpose of the world’s creation. On this account māʿūn must mean withholding alms, completing the mention of prayer rather than introducing a further escalation. Denial of recompense thus fundamentally nullifies the wisdom in creating heaven and earth, legislating worship, and urging all other good deeds. God protect us from it.
-
-The Imām says: “Denying resurrection is like the root of every kind of unbelief and sin. God makes harming the weak and withholding kindness its sign: belief in recompense and certainty of the threat would prevent them. Denial of resurrection therefore produces the sin.”
-
-T107.04 — Who are “those who pray”? [XVI:595–596]
-On joining persons or attributes: in the first earlier construction fāʾ answers an omitted condition, “If you do not know, then recognise him as that denier.” If a particular person is intended, “the one” denotes someone known; if an attribute, it can also denote the class. Hence the differing identifications: Muqātil gives al-ʿĀṣ ibn Wāʾil; al-Suddī and Muqātil give al-Walīd ibn al-Mughīra; Ibn ʿAbbās gives a hypocrite. These occur in al-Maʿālim.
-
-Al-Kawāshī says: “Do not pause after ‘the needy’ if ‘the one’ denotes the class and the praying people belong to the same statement. What a-raʾayta relates to is then omitted: what do you say of one who denies truth, repulses the orphan and injures the needy—has he acted well? Woe to them! ‘Those who pray’ replaces ‘them.’”
-
-I say: this shows that on the first interpretation “woe to those who pray” is separate from the preceding statement as regards its referent. The denier is an unbeliever such as al-Walīd or al-ʿĀṣ; the praying people are Muslims. Making injury and withheld kindness signs of denial signals their severity, so believers avoid such conduct, characteristic of unbelievers denying Judgment Day. Hence the author’s exclamations about the severe words and fearful situation, and their indication of weak faith.
-
-His saying “he then connected ‘woe to those who pray,’ as though saying ‘if the matter is thus’” also indicates distinct referents: he mentions “the matter,” without saying an explicit noun replaces a pronoun. By contrast, on the final interpretation he expressly says “woe to them.” There the praying people are the deniers, since he says they were heedless of prayer “alongside their denial.” The Imām says: “On this interpretation the verse shows an unbeliever receiving additional punishment for prohibited acts and omitted religious obligations. This supports al-Shāfiʿī’s position that unbelievers are addressed by the subsidiary ordinances of revealed law.”
-
-T107.05 — Objections to the distinction between ʿan and fī [XVI:597]
-The Imām says: “ʿAṭāʾ transmits from Ibn ʿAbbās: had God said ‘heedless in their prayer,’ believers would be more exposed to this threat. Instead He says ‘heedless of their prayer’: not remembering it and being disengaged from it. This interpretation is weak: heedlessness of prayer cannot mean abandoning prayer, since ‘those who pray’ affirms their prayer; moreover, abandoning it through heedlessness is neither hypocrisy nor unbelief.
-
-“The first objection may be answered: He calls them praying people regarding the outward prayer, and says they have entirely forgotten prayer regarding its meaning, as in ‘When they stand for prayer, they stand lazily, showing themselves to people, and remember God only a little’ [4:142].”
-
-I say: “those who pray” may mean those whose proper role is to discharge gratitude owed for God’s blessings. He therefore attributes prayer to them—“their prayer”—indicating an established duty upon the morally responsible. They should not pass from maintaining its pillars, forms and customary practices into inattention, much less abandonment. This rests on unbelievers’ being addressed by subsidiary ordinances.
-
-The Imām says: “The second objection is answered by understanding forgetfulness of prayer as remaining forgetful of God throughout every part. This proceeds only from a hypocrite who thinks prayer useless. A Muslim who believes its benefits cannot fail throughout all its parts to recall religion, reward or punishment. He may indeed lapse during some parts. Thus inattention in prayer is a believer’s act, and inattention of prayer an unbeliever’s.” [The argumentative claim is translated as his, without turning it into a diagnostic rule.]
-
 T107.06 — Public obligations, the poem, and lending [XVI:598–599]
-“No concealment” is also transmitted as “no gharar.” Al-Nihāya explains Wāʾil ibn Ḥujr’s report: God’s obligations are not covered and hidden; they are displayed, announced and voiced publicly.
+
+“No concealment” is also transmitted as “no gharar (غرر).” Al-Nihāya explains Wāʾil ibn Ḥujr’s report: God’s obligations are not covered and hidden; they are displayed, announced and voiced publicly.
 
 The poem “a people remaining in Islam” alludes to apostates who withheld alms: we are not apostates, so do not treat us like them.
 
-On things ordinarily passed between borrowers, al-Jawharī says: “Iʿtawarū l-shayʾ means they passed it among themselves; taʿawwarūhu and taʿāwarūhu mean the same.”
+On things ordinarily passed between borrowers, al-Jawharī says: “Iʿtawarū l-shayʾ means they passed it among themselves; taʿawwarūhu (تعوّروه) and taʿāwarūhu (تعاوروه) mean the same.”
 
 End of the sūrah.
+
+al-Māʿūn · source and review notes · inherited record
+
+INHERITED C06 RECORD. Earlier scan claims have not been independently reconfirmed in this pass. Current corrections supersede provisional renderings below; consult the C07 review register.
 
 REVIEW FLAGS
 T107-U1: The six-verse/Medinan heading differs from the base’s seven-verse alternatives. It is preserved as transmitted, not adopted as a settled verse count.
 T107-U2: The elaborate argument on ʿan/fī and legal responsibility is fully retained. Printed XVI:597 was inspected; further comparison of the quoted authorities is pending.
+
+
+Tanzil Quran Text
+Copyright (C) 2007-2021 Tanzil Project
+License: Creative Commons Attribution 3.0
+
+This copy of the Quran text is carefully produced, highly
+verified and continuously monitored by a group of specialists
+in Tanzil Project.
+
+TERMS OF USE:
+
+- Permission is granted to copy and distribute verbatim copies
+  of this text, but CHANGING IT IS NOT ALLOWED.
+
+- This Quran text can be used in any website or application,
+  provided that its source (Tanzil Project) is clearly indicated,
+  and a link is made to tanzil.net to enable users to keep
+  track of changes.
+
+- This copyright notice shall be included in all verbatim copies
+  of the text, and shall be reproduced appropriately in all files
+  derived from or containing substantial portion of this text.
+
+Please check updates at: http://tanzil.net/updates/

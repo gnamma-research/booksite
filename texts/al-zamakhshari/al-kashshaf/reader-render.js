@@ -1,3 +1,27 @@
+/* Tanzil Quran Text
+Copyright (C) 2007-2021 Tanzil Project
+License: Creative Commons Attribution 3.0
+
+This copy of the Quran text is carefully produced, highly
+verified and continuously monitored by a group of specialists
+in Tanzil Project.
+
+TERMS OF USE:
+
+- Permission is granted to copy and distribute verbatim copies
+  of this text, but CHANGING IT IS NOT ALLOWED.
+
+- This Quran text can be used in any website or application,
+  provided that its source (Tanzil Project) is clearly indicated,
+  and a link is made to tanzil.net to enable users to keep
+  track of changes.
+
+- This copyright notice shall be included in all verbatim copies
+  of the text, and shall be reproduced appropriately in all files
+  derived from or containing substantial portion of this text.
+
+Please check updates at: http://tanzil.net/updates/
+ */
 /* Complete Kashshaf units, with independently visible Tibi commentary. */
 (function(){'use strict';
 function unit(r,first,p,E,sourceHTML){
@@ -9,7 +33,7 @@ function unit(r,first,p,E,sourceHTML){
  const layers=r.layers.map((s,i)=>{
   const isT=s.author==='tibi';
   const ar=s.ar.split(/\n\s*\n/).filter(x=>x.trim()).map(text=>'<p id="ar-'+r.id+'-'+(++ai)+'" data-anchor="true" data-lang="ar">'+E(p.marks==='unvowelled'?text.replace(/[\u064b-\u065f\u0670]/g,''):text)+'</p>').join('');
-  return '<section class="author-layer '+(isT?'tibi-layer':'kashshaf-layer')+'" data-author="'+s.author+'" data-source-id="'+s.id+'"><header class="layer-heading"><span class="author-name">'+(isT?'Ṭībī · <bdi lang="ar">فتوح الغيب</bdi>':'Zamakhsharī · <bdi lang="ar">الكشاف</bdi>')+'</span><span class="segment-id" id="'+s.id+'">'+s.id+'</span></header>'+(isT?'<p class="tibi-relation">Commentary on '+s.on.map(id=>'<a href="'+('#/read/'+id)+'">'+E(id)+'</a>').join(', ')+'</p>':'')+'<div class="parallel"><div class="language-col ar-column" data-lang="ar" lang="ar" dir="rtl"><span class="language-label">'+(isT?'شرح الطيبي':'تفسير الزمخشري')+'</span>'+ar+'</div><div class="language-col en-column" data-lang="en" lang="en"><section id="en-'+r.id+'-s'+(i+1)+'" data-segment="'+(i+1)+'"><h3 class="segment-title">'+E(s.title)+'</h3>'+(isT&&s.lemma?'<p class="source-lemma"><span>Arabic lemma · </span><bdi lang="ar" dir="rtl">'+E(s.lemma)+'</bdi></p>':'')+sourceHTML(s.html,r.id,i+1)+'</section></div></div></section>';
+  return '<section class="author-layer '+(isT?'tibi-layer':'kashshaf-layer')+'" data-author="'+s.author+'" data-source-id="'+s.id+'"><header class="layer-heading"><span class="author-name">'+(isT?'Ṭībī · <bdi lang="ar">فتوح الغيب</bdi>':'Zamakhsharī · <bdi lang="ar">الكشاف</bdi>')+'</span><span class="segment-id" id="'+s.id+'">'+s.id+'</span></header>'+(isT?'<p class="tibi-relation">Commentary on '+s.on.map(id=>'<a href="'+('#/read/'+id)+'">'+E(id)+'</a>').join(', ')+'</p>':'')+'<div class="parallel"><div class="language-col ar-column" data-lang="ar" lang="ar" dir="rtl"><span class="language-label">'+(isT?'شرح الطيبي':'تفسير الزمخشري')+'</span>'+ar+'</div><div class="language-col en-column" data-lang="en" lang="en"><section id="en-'+r.id+'-s'+(i+1)+'" data-segment="'+(i+1)+'"><h3 class="segment-title">'+E(s.title)+'</h3>'+(isT&&s.lemma?'<p class="source-lemma"><span>Arabic lemma · </span><bdi lang="ar" dir="rtl">'+E(s.lemma)+'</bdi></p>':'')+sourceHTML(s.html,r.id,i+1)+'</section></div></div><p class="critical-review">Electronic comparison complete · '+(s.review.arabic_complete?'page-image collation pending':'Arabic transcription has a marked gap')+' · <a href="review-register.html#'+s.id+'">Sources &amp; review</a></p></section>';
  }).join('');
  return '<article class="passage" data-record="'+r.id+'" id="unit-'+r.id+'"><header class="passage-header"><span class="eyebrow">'+E(r.surah)+' · Q '+E(r.q)+'</span><'+(first?'h1':'h2')+'>'+E(r.title)+'</'+(first?'h1':'h2')+'><div class="passage-meta"><span>'+E(r.cairo)+'</span><span>Arabic and English aligned by section</span><button data-action="citation" data-record="'+r.id+'">Cite</button><button data-action="save" data-record="'+r.id+'">Save passage</button></div></header>'+q+layers+'<div class="passage-actions"><button data-action="passage-notes" data-record="'+r.id+'">Annotations & references</button><button data-action="annotate" data-record="'+r.id+'">Add a personal note</button><button data-action="citation" data-record="'+r.id+'">Citation</button></div></article>';
 }

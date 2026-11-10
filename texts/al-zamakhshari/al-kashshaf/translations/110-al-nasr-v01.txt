@@ -1,62 +1,54 @@
-AL-NAṢR (110) — DIVINE HELP
-Complete first-pass translation of both authorial layers • C05 • 27 October 2026
+AL-KASHSHAF / FUTUH AL-GHAYB — C07 REVIEWED
+10 November 2026
 
-SOURCE AND STATUS
-Kashshāf: Dār al-Kitāb al-ʿArabī, 1407 AH, IV:810–813, OpenITI Shamela0023627-ara1. Ṭībī: Futūḥ al-Ghayb, Dubai, 1434/2013, XVI:613–621, OpenITI Sham19Y0020891-ara1, with the missing Qurʾānic quotation restored from the scan of printed XVI:615. Both layers are translated through the closing report and final gloss. Modern editorial notes are excluded. Historical and transmitted assertions remain attributed to the author concerned; conflicting chronologies are not silently harmonised. Further review remains necessary.
+All 277 existing passages have undergone electronic comparison. This is a revised working edition, not a definitive critical edition. Draft coverage: 19 Kashshāf sūrahs, 18 Ṭībī sūrahs and Fātiḥa I:677–686 only. I:687–770 remains untranslated. One Arabic gap, conflicting readings, complete page-image collation and final scholarly approval remain outstanding.
 
-AL-ZAMAKHSHARĪ — AL-KASHSHĀF
+SURAH 110 — al-Naṣr
+
+﴿بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ﴾ (110:1)
+When Allah's succour and the triumph cometh
+
+﴿وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًا﴾ (110:2)
+And thou seest mankind entering the religion of Allah in troops
+
+﴿فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا﴾ (110:3)
+Then hymn the praises of thy Lord, and seek forgiveness of Him. Lo! He is ever ready to show mercy
 
 K110.01 — Heading and verses [IV:810]
+
 Revealed at Minā during the Farewell Pilgrimage, it is counted as Medinan. It is the last sūrah revealed, and has three verses. [The DKA heading also places it after al-Tawba.]
 In the name of God, the All-Merciful, the Merciful.
 
 When God’s help and the conquest come, (1) and you see people entering God’s religion in multitudes, (2) glorify your Lord with praise and ask His forgiveness: He has ever turned mercifully toward the repentant. (3)
 
 K110.02 — Help and conquest [IV:810]
-“When” (idhā) is accusative through sabbiḥ, “glorify,” and concerns the future. Announcing this before its occurrence is one of the signs of prophethood. It is reported that the sūrah was revealed during the days of tashrīq at Minā in the Farewell Pilgrimage.
 
-If you ask how help differs from conquest, so that the latter is conjoined to the former, I reply: naṣr is succour and giving mastery over an enemy. Hence naṣara llāhu l-arḍa means God watered the earth with rain. Fatḥ is the conquest of countries. The meaning is help for God’s Messenger against the Arabs, or against Quraysh, and the conquest of Mecca. It is also said to mean God’s help for believers generally and His opening the polytheists’ countries to them.
+“When” (idhā (إذا)) is accusative through sabbiḥ (سبّح), “glorify,” and concerns the future. Announcing this before its occurrence is one of the signs of prophethood. It is reported that the sūrah was revealed during the days of tashrīq at Minā in the Farewell Pilgrimage.
+
+If you ask how help differs from conquest, so that the latter is conjoined to the former, I reply: naṣr (نصر) is succour and giving mastery over an enemy. Hence naṣara (نصر) llāhu l-arḍa means God watered the earth with rain. Fatḥ is the conquest of countries. The meaning is help for God’s Messenger against the Arabs, or against Quraysh, and the conquest of Mecca. It is also said to mean God’s help for believers generally and His opening the polytheists’ countries to them.
 
 Mecca was conquered ten days into Ramaḍān in the eighth year. With God’s Messenger were ten thousand Emigrants, Helpers, and members of Arab tribes. He stayed fifteen nights, then went out against Hawāzin. On entering Mecca he stood at the Kaʿba’s door and said: “There is no god but God alone, without partner. He fulfilled His promise, helped His servant, and routed the confederates alone.” Then: “People of Mecca, what do you think I shall do with you?” They replied, “Good: you are a noble brother and son of a noble brother.” He said, “Go: you are released.” God’s Messenger thus freed them, although God had forcibly delivered their persons into his power and they were his booty. Therefore Mecca’s people were called “the released.” They then pledged allegiance to him in Islam.
 
+T110.01 — A chronological objection [XVI:613–614]
+
+Medinan; three verses. In the name of God, the All-Merciful, the Merciful.
+
+On “or against Quraysh, and the conquest of Mecca,” the Qāḍī [al-Bayḍāwī] says: “It is said to mean God’s help generally and the conquest of Mecca and other countries for them. What is obtained is figuratively described as coming, suggesting that decreed events proceed from eternity toward their appointed times, approaching gradually. That is: help has drawn near its time, so await its arrival and prepare to give thanks.”
+
+I say: this and the author’s statement require examination, because Mecca’s conquest preceded the sūrah’s revelation. We transmit from Muslim, from ʿUbayd Allāh (الله) ibn ʿAbd Allāh (الله) ibn ʿUtba: Ibn ʿAbbās asked me, “Do you know the last complete sūrah revealed?” I said, “Yes: ‘When God’s help and the conquest come.’” He said, “Correct.” The author’s own words indicate this: he dates Mecca’s conquest to ten days into Ramaḍān of year eight, whereas it is said that the sūrah descended during the days of tashrīq at Minā in the Farewell Pilgrimage. That pilgrimage was in year ten: he remained nine years without performing pilgrimage, then was permitted it in the tenth.
+
 K110.03 — Entering in multitudes [IV:810–811]
+
 “Into God’s religion”: into the religion of Islam, for no other religion is attributed to Him: “Whoever seeks a religion other than Islam, it will not be accepted from him” [3:85]. “In multitudes”: dense groups. An entire tribe would enter after people had previously entered singly or in pairs.
 
-Jābir ibn ʿAbd Allāh once wept. Asked why, he said, “I heard God’s Messenger say: ‘People entered God’s religion in multitudes and will leave it in multitudes.’” It is also said that “people” means the Yemenis. Abū Hurayra says: when the sūrah was revealed, God’s Messenger said, “God is greatest! God’s help and the conquest have come, and the people of Yemen have come, a people tender of heart. Faith is Yemeni, understanding is Yemeni, and wisdom is Yemeni.” He also said, “I find your Lord’s relief coming from the direction of Yemen.” [The DKA transcription has nafīr; Ṭībī’s base and gloss have nafas.]
+Jābir ibn ʿAbd Allāh (الله) once wept. Asked why, he said, “I heard God’s Messenger say: ‘People entered God’s religion in multitudes and will leave it in multitudes.’” It is also said that “people” means the Yemenis. Abū Hurayra says: when the sūrah was revealed, God’s Messenger said, “God is greatest! God’s help and the conquest have come, and the people of Yemen have come, a people tender of heart. Faith is Yemeni, understanding is Yemeni, and wisdom is Yemeni.” He also said, “I find your Lord’s relief coming from the direction of Yemen.” [The DKA transcription has nafīr (نفير); Ṭībī’s base and gloss have nafas (نَفَس).]
 
 Al-Ḥasan says: when God’s Messenger conquered Mecca, the Arabs turned to one another and said, “Now that he has overcome the people of the sanctuary, we have no strength against him. God had protected them from the People of the Elephant and everyone who intended to attack them.” So they entered Islam in multitudes without fighting.
 
 Ibn ʿAbbās read “God’s conquest and help.” Yudkhalūna, “are made to enter,” is also read in the passive. If you ask the grammatical position of “entering,” I reply: accusative, either as a circumstantial clause, with raʾayta meaning “saw” or “recognised,” or as its second object, with raʾayta meaning “knew.”
 
-K110.04 — Glorification and asking forgiveness [IV:811–812]
-“Glorify your Lord with praise”: say “Glory be to God,” praising Him. That is: marvel that God has made possible what never occurred to you or anyone else—that someone should overcome the people of the sanctuary—and praise Him for His action. Or remember Him, glorifying and praising, increasing your worship and praise as His beneficence to you increases. Or perform prayer for Him. Umm Hāniʾ relates that when the Kaʿba’s door was opened, he prayed eight units of the forenoon prayer. ʿĀʾisha relates that before his death he frequently said, “Glory be to You, O God, and praise be Yours; I ask Your forgiveness and turn to You.”
-
-The command to seek forgiveness alongside glorification completes the command concerning religion’s foundation: combining obedience with guarding against disobedience. His being commanded thus, despite his protection from sin, is a gracious aid to his community. Asking forgiveness also entails humility before God and abasement of the self, and is therefore worship in itself. From the Prophet: “I seek forgiveness a hundred times during a day and night.”
-
-K110.05 — The announcement of his departure [IV:812]
-It is related that when God’s Messenger recited the sūrah to his Companions, they rejoiced, but al-ʿAbbās wept. “What makes you weep, uncle?” he asked. “Your death has been announced to you.” He replied, “It is as you say.” He then lived two years, during which he was not seen laughing in gladness. It is also said that Ibn ʿAbbās made this remark, and God’s Messenger said, “This boy has been given much knowledge.”
-
-It is related that when the sūrah was revealed, God’s Messenger preached: “God gave a servant a choice between this world and meeting Him, and he chose meeting God.” Abū Bakr understood and said, “May we ransom you with ourselves, our property, our fathers and our children.”
-
-From Ibn ʿAbbās: ʿUmar used to bring him close and admit him with the veterans of Badr. ʿAbd al-Raḥmān asked, “Do you admit this youth with us, when among our sons are his equals?” He replied, “He is one whose standing you know.” Ibn ʿAbbās says: one day he admitted them, and me with them, and asked about “When God’s help comes.” I think he asked only because of me. Some said, “God commands His Prophet, when He grants him conquest, to ask forgiveness and repent.” I said, “Rather, his death has been announced to him.” ʿUmar said, “I understand it only as you do,” then, “How can you blame me concerning him after what you have seen?”
-
-The Prophet called Fāṭima and said, “Daughter, my death has been announced to me.” She wept. He said, “Do not weep: you will be the first of my household to join me.” Ibn Masʿūd says this sūrah is called the Sūrah of Farewell.
-
-“He has ever turned mercifully”: in past ages, ever since creating morally responsible beings, He has turned toward them when they sought forgiveness. Every seeker of forgiveness should therefore expect the same.
-
-K110.06 — Closing report [IV:813]
-From God’s Messenger: “Whoever recites the sūrah ‘When God’s help comes’ receives the reward of someone who was present with Muḥammad on the day Mecca was conquered.”
-
-AL-ṬĪBĪ — FUTŪḤ AL-GHAYB
-
-T110.01 — A chronological objection [XVI:613–614]
-Medinan; three verses. In the name of God, the All-Merciful, the Merciful.
-
-On “or against Quraysh, and the conquest of Mecca,” the Qāḍī [al-Bayḍāwī] says: “It is said to mean God’s help generally and the conquest of Mecca and other countries for them. What is obtained is figuratively described as coming, suggesting that decreed events proceed from eternity toward their appointed times, approaching gradually. That is: help has drawn near its time, so await its arrival and prepare to give thanks.”
-
-I say: this and the author’s statement require examination, because Mecca’s conquest preceded the sūrah’s revelation. We transmit from Muslim, from ʿUbayd Allāh ibn ʿAbd Allāh ibn ʿUtba: Ibn ʿAbbās asked me, “Do you know the last complete sūrah revealed?” I said, “Yes: ‘When God’s help and the conquest come.’” He said, “Correct.” The author’s own words indicate this: he dates Mecca’s conquest to ten days into Ramaḍān of year eight, whereas it is said that the sūrah descended during the days of tashrīq at Minā in the Farewell Pilgrimage. That pilgrimage was in year ten: he remained nine years without performing pilgrimage, then was permitted it in the tenth.
-
 T110.02 — Jābir’s report and Yemeni faith [XVI:614–616]
+
 On Jābir’s weeping: Aḥmad ibn Ḥanbal transmitted this report from him; al-Dārimī transmitted it from Abū Hurayra.
 
 On “faith is Yemeni”: al-Bukhārī, Muslim and al-Tirmidhī transmit from Abū Hurayra that God’s Messenger said, “The people of Yemen have come to you: they are more tender in feeling and softer of heart. Faith is Yemeni, and wisdom is Yemeni.” Another transmission has “understanding is Yemeni.”
@@ -66,12 +58,20 @@ Al-Nihāya says: “He said this because faith began in Mecca, which belongs to 
 “Understanding is Yemeni” is also transmitted. This praises the Yemenis for hastening to faith and accepting it well. I say: perhaps “understanding” (fiqh) means what al-Ḥasan meant in the report we transmit from al-Dārimī, from ʿImrān. I once said to al-Ḥasan about something he said, “Abū Saʿīd, that is not what the jurists say.” He replied, “Woe to you! Have you ever seen a person of understanding? Such a person renounces attachment to this world, desires the hereafter, sees clearly in his religion, and perseveres in worshipping his Lord.”
 
 T110.03 — Relief from Yemen and the Arabs’ words [XVI:616]
-On “I find your Lord’s nafas from Yemen,” al-Nihāya says: “Nafas is borrowed from the air drawn inward by breathing, which cools and moderates the inward heat; or from the breath of wind one inhales and finds refreshing; or from a garden’s breath, its pleasant scents, through which distress is relieved. One says, ‘You have breathing space in your affair,’ and ‘Act while you have breathing space in your life’: breadth and room.”
 
-On ammā idh ẓafira, “now that he has prevailed”: ammā is transmitted both lightened and doubled. The doubled form is preferable, for ammā distinguishes cases: before he prevailed over the sanctuary’s people we hoped to overcome him; now that he has prevailed we have no strength against him.
+On “I find your Lord’s nafas (نَفَس) from Yemen,” al-Nihāya says: “Nafas is borrowed from the air drawn inward by breathing, which cools and moderates the inward heat; or from the breath of wind one inhales and finds refreshing; or from a garden’s breath, its pleasant scents, through which distress is relieved. One says, ‘You have breathing space in your affair,’ and ‘Act while you have breathing space in your life’: breadth and room.”
+
+On ammā (أمّا) idh ẓafira (ظفر), “now that he has prevailed”: ammā (أمّا) is transmitted both lightened and doubled. The doubled form is preferable, for ammā (أمّا) distinguishes cases: before he prevailed over the sanctuary’s people we hoped to overcome him; now that he has prevailed we have no strength against him.
+
+K110.04 — Glorification and asking forgiveness [IV:811–812]
+
+“Glorify your Lord with praise”: say “Glory be to God,” praising Him. That is: marvel that God has made possible what never occurred to you or anyone else—that someone should overcome the people of the sanctuary—and praise Him for His action. Or remember Him, glorifying and praising, increasing your worship and praise as His beneficence to you increases. Or perform prayer for Him. Umm Hāniʾ relates that when the Kaʿba’s door was opened, he prayed eight units of the forenoon prayer. ʿĀʾisha relates that before his death he frequently said, “Glory be to You, O God, and praise be Yours; I ask Your forgiveness and turn to You.”
+
+The command to seek forgiveness alongside glorification completes the command concerning religion’s foundation: combining obedience with guarding against disobedience. His being commanded thus, despite his protection from sin, is a gracious aid to his community. Asking forgiveness also entails humility before God and abasement of the self, and is therefore worship in itself. From the Prophet: “I seek forgiveness a hundred times during a day and night.”
 
 T110.04 — Wonder or worship? [XVI:617–618]
-On “say ‘Glory be to God,’ praising Him; that is, marvel”: the bāʾ in “with your Lord’s praise” introduces a circumstance. Say the glorification while engaged in praise. On this interpretation the mention of glorification does not aim at remembrance as such. He says: “Originally God is glorified upon seeing something wondrous among His works; usage then broadened until it was applied to anything that occasions wonder.” Al-Intiṣāf says: “The command here has the meaning of a statement: an imperative in an expression of wonder is not intended as a command. The point is that this event is such as to arouse wonder.”
+
+On “say ‘Glory be to God,’ praising Him; that is, marvel”: the bāʾ (ب) in “with your Lord’s praise” introduces a circumstance. Say the glorification while engaged in praise. On this interpretation the mention of glorification does not aim at remembrance as such. He says: “Originally God is glorified upon seeing something wondrous among His works; usage then broadened until it was applied to anything that occasions wonder.” Al-Intiṣāf says: “The command here has the meaning of a statement: an imperative in an expression of wonder is not intended as a command. The point is that this event is such as to arouse wonder.”
 
 On “or remember Him, glorifying and praising”: on this interpretation glorification implies remembrance by semantic inclusion (taḍmīn), which is why he expresses glorification as a circumstance. “With your Lord’s praise” is a circumstance nested within that circumstance, since the incorporated meaning is most often expressed circumstantially. The Qāḍī says: “Extol God through the attributes of majesty while praising Him for the attributes of beneficence.”
 
@@ -80,6 +80,7 @@ I say: this interpretation is preferable and more coherent. In Sūrat al-Fatḥ 
 This is also what his cousin, the learned authority of the community, understood when he answered those elders, saying that the Prophet’s death had been announced; ʿUmar confirmed him.
 
 T110.05 — Connecting passages by meaning [XVI:618–619]
+
 Muḥyī l-Sunna transmits from Muḥammad ibn Jarīr that “so that God may forgive your earlier and later sin” [48:2] refers back to “When God’s help and the conquest come” through “and ask His forgiveness”: ask forgiveness so that God may forgive you. What is meant is that this explanation of purpose depends on something understood after “We have granted you a manifest conquest”: “[so glorify your Lord with praise and ask His forgiveness,] so that He may forgive you.” Both sūrahs refer to one event and one situation. It does not mean that “so that God may forgive you” is directly governed by that very wording “ask His forgiveness.” That would disrupt the miraculous composition, beyond human powers and capacities. How could it, when “We have granted you” was revealed before Mecca’s conquest, after the Messenger’s return from al-Ḥudaybiya, while Sūrat al-Naṣr was revealed two years after the conquest? In Sūrat Hūd we have already set out a rule for bringing together portions of one narrative occurring in different contexts and forms.
 
 If you ask: the narrative’s unity indicates this implied expression, but what of Muḥyī l-Sunna’s further transmission from al-Ḥusayn ibn al-Faḍl, that “so that God may forgive you” refers back to “ask forgiveness for your sin and for believing men and women” [47:19]—ask forgiveness so that God may forgive you and “admit believing men and women to gardens beneath which rivers flow” [48:5]?
@@ -91,21 +92,68 @@ This accords with what we transmit from Muslim and al-Tirmidhī, from Anas. When
 Perhaps the speaker considered that if God’s Messenger asks forgiveness for his sin and the believers’ sin, God must forgive him and answer his prayer for his community, as in: “Had they, after wronging themselves, come to you and asked God’s forgiveness, and the Messenger asked forgiveness for them, they would have found God ever relenting, merciful” [4:64]. He therefore connected the passages in meaning. For this subtle reason he preferred “refers back” and “is referred back” to “is grammatically dependent.” God knows best.
 
 T110.06 — Completing obedience with caution [XVI:620]
+
 On “eight units of the forenoon prayer”: we transmit the report in Ṣaḥīḥ al-Bukhārī. On “he frequently said before his death”: al-Bukhārī and Muslim transmitted it.
 
-On “the command to ask forgiveness alongside glorification completes”: in the rhetorical discipline, completion (takmīl) consists in bringing a statement that appears incomplete, then completing it with another. Here glorification commands obedience; acts of obedience are incomplete without guarding against sins. The Qāḍī says: “Ask His forgiveness, humbling yourself and regarding your deeds as insufficient, and remedying what escaped you through attending to another. It is also said: ask forgiveness for your community. Putting glorification, then praise, before seeking forgiveness follows the descent from the Creator to creation.”
+On “the command to ask forgiveness alongside glorification completes”: in the rhetorical discipline, completion (takmīl (تكميل)) consists in bringing a statement that appears incomplete, then completing it with another. Here glorification commands obedience; acts of obedience are incomplete without guarding against sins. The Qāḍī says: “Ask His forgiveness, humbling yourself and regarding your deeds as insufficient, and remedying what escaped you through attending to another. It is also said: ask forgiveness for your community. Putting glorification, then praise, before seeking forgiveness follows the descent from the Creator to creation.”
 
 On “I seek forgiveness a hundred times during a day [and night]”: al-Bukhārī and al-Tirmidhī transmitted it from Abū Hurayra.
 
+K110.05 — The announcement of his departure [IV:812]
+
+It is related that when God’s Messenger recited the sūrah to his Companions, they rejoiced, but al-ʿAbbās wept. “What makes you weep, uncle?” he asked. “Your death has been announced to you.” He replied, “It is as you say.” He then lived two years, during which he was not seen laughing in gladness. It is also said that Ibn ʿAbbās made this remark, and God’s Messenger said, “This boy has been given much knowledge.”
+
+It is related that when the sūrah was revealed, God’s Messenger preached: “God gave a servant a choice between this world and meeting Him, and he chose meeting God.” Abū Bakr understood and said, “May we ransom you with ourselves, our property, our fathers and our children.”
+
+From Ibn ʿAbbās: ʿUmar used to bring him close and admit him with the veterans of Badr. ʿAbd al-Raḥmān (الرحمن) asked, “Do you admit this youth with us, when among our sons are his equals?” He replied, “He is one whose standing you know.” Ibn ʿAbbās says: one day he admitted them, and me with them, and asked about “When God’s help comes.” I think he asked only because of me. Some said, “God commands His Prophet, when He grants him conquest, to ask forgiveness and repent.” I said, “Rather, his death has been announced to him.” ʿUmar said, “I understand it only as you do,” then, “How can you blame me concerning him after what you have seen?”
+
+The Prophet called Fāṭima and said, “Daughter, my death has been announced to me.” She wept. He said, “Do not weep: you will be the first of my household to join me.” Ibn Masʿūd says this sūrah is called the Sūrah of Farewell.
+
+“He has ever turned mercifully”: in past ages, ever since creating morally responsible beings, He has turned toward them when they sought forgiveness. Every seeker of forgiveness should therefore expect the same.
+
 T110.07 — Ibn ʿAbbās and Fāṭima [XVI:621]
+
 On Ibn ʿAbbās’s report that ʿUmar brought him close: Imām Aḥmad, al-Bukhārī and al-Tirmidhī transmitted it. “Brought him close” means gave him precedence, treated him on a level with the elders, and permitted him to enter his presence.
 
 On his calling Fāṭima: this is an abridgment of al-Dārimī’s transmission from Ibn ʿAbbās.
 
 End of the sūrah.
 
+K110.06 — Closing report [IV:813]
+
+From God’s Messenger: “Whoever recites the sūrah ‘When God’s help comes’ receives the reward of someone who was present with Muḥammad on the day Mecca was conquered.”
+
+al-Naṣr · source and review notes · inherited record
+
+INHERITED C06 RECORD. Earlier scan claims have not been independently reconfirmed in this pass. Current corrections supersede provisional renderings below; consult the C07 review register.
+
 TEXTUAL AND REVIEW NOTES
 T110-U1: The electronic text omits the quotation at 62:2; “and teaches them the Book and wisdom” is restored from printed XVI:615 (physical PDF page 614).
 K110-U1: The two-year survival report conflicts with the Farewell-Pilgrimage dating; Ṭībī’s chronological criticism is preserved separately. No historical reconciliation is imposed.
 K110-U2: Nafīr in the DKA electronic text is rendered following nafas in Ṭībī’s printed base and lexical explanation; the variant is retained here for further collation.
 T110-U2: The supplied volume XVI scan skips printed p. 613: physical page 612 shows printed 612, and physical page 613 shows printed 614. The chapter opening on printed p. 613 is present in the electronic transcription and is translated here; a replacement scan is still needed for its visual collation. Do not apply a single page offset throughout this PDF.
+
+
+Tanzil Quran Text
+Copyright (C) 2007-2021 Tanzil Project
+License: Creative Commons Attribution 3.0
+
+This copy of the Quran text is carefully produced, highly
+verified and continuously monitored by a group of specialists
+in Tanzil Project.
+
+TERMS OF USE:
+
+- Permission is granted to copy and distribute verbatim copies
+  of this text, but CHANGING IT IS NOT ALLOWED.
+
+- This Quran text can be used in any website or application,
+  provided that its source (Tanzil Project) is clearly indicated,
+  and a link is made to tanzil.net to enable users to keep
+  track of changes.
+
+- This copyright notice shall be included in all verbatim copies
+  of the text, and shall be reproduced appropriately in all files
+  derived from or containing substantial portion of this text.
+
+Please check updates at: http://tanzil.net/updates/

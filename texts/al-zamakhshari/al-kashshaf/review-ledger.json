@@ -1,74 +1,358 @@
 {
-  "checkpoint": "C06",
-  "new_surahs": [
-    97,
-    104,
-    95,
-    99,
-    101
-  ],
-  "K_pages": {
-    "95": "IV773–775",
-    "97": "IV780–781",
-    "99": "IV783–785",
-    "101": "IV789–791",
-    "104": "IV794–796"
+  "checkpoint": "C07",
+  "date": "2026-11-10",
+  "scope": "All 277 existing passages, across 19 selected surahs. The complete books have not been translated or collated.",
+  "status": "Electronic comparison completed for the existing corpus; not a definitive critical edition.",
+  "progress": {
+    "segments_compared": 277,
+    "new_scan_collated": 0,
+    "final_approved": 0,
+    "arabic_lacunae": [
+      "T113.06"
+    ],
+    "inline_arabic_glosses_added": 611,
+    "recovered_prior_scan_restorations": [
+      "T108.04"
+    ],
+    "additional_inherited_glosses": 534
   },
-  "T_pages": {
-    "95": "XVI504–508",
-    "97": "XVI522–525",
-    "99": "XVI536–545",
-    "101": "XVI554–557",
-    "104": "XVI568–576"
+  "previous_checkpoint_claims": {
+    "checkpoint": "C06",
+    "new_surahs": [
+      97,
+      104,
+      95,
+      99,
+      101
+    ],
+    "K_pages": {
+      "95": "IV773–775",
+      "97": "IV780–781",
+      "99": "IV783–785",
+      "101": "IV789–791",
+      "104": "IV794–796"
+    },
+    "T_pages": {
+      "95": "XVI504–508",
+      "97": "XVI522–525",
+      "99": "XVI536–545",
+      "101": "XVI554–557",
+      "104": "XVI568–576"
+    },
+    "Turkish_complete_pass_pages": {
+      "95": [
+        1354,
+        1356,
+        1358
+      ],
+      "97": [
+        1372,
+        1374
+      ],
+      "99": [
+        1382,
+        1384,
+        1386
+      ],
+      "101": [
+        1396,
+        1398
+      ],
+      "104": [
+        1408,
+        1410,
+        1412
+      ]
+    },
+    "scan_checks_physical_equals_printed": [
+      505,
+      524,
+      536,
+      539,
+      545,
+      556,
+      572,
+      574,
+      576
+    ],
+    "corrections": [
+      "T95: الغذاء restored from printed505.",
+      "K97: exclusive agency refers to God; follows Arabic and Tibi rather than apparent Turkish error.",
+      "K99: باللسان follows embedded base against DKA بالنسيان.",
+      "T99: بنصف القرآن restored from545.",
+      "T101: printed556 supports khuzyā."
+    ],
+    "open_flags": [
+      "T99 jizʿāl gloss: printed تطلع retained in note; تظلع provisional.",
+      "T104 phrase وأقر بدء إحراق at574 remains provisional.",
+      "T104 final يلزم at576 has opposite لا يلزم variant; main reading retained with explicit flag.",
+      "All earlier U-flags remain."
+    ],
+    "review_limit": "One Turkish comparison and selective scans, not full scan collation or final scholarly review."
   },
-  "Turkish_complete_pass_pages": {
-    "95": [
-      1354,
-      1356,
-      1358
-    ],
-    "97": [
-      1372,
-      1374
-    ],
-    "99": [
-      1382,
-      1384,
-      1386
-    ],
-    "101": [
-      1396,
-      1398
-    ],
-    "104": [
-      1408,
-      1410,
-      1412
-    ]
-  },
-  "scan_checks_physical_equals_printed": [
-    505,
-    524,
-    536,
-    539,
-    545,
-    556,
-    572,
-    574,
-    576
+  "prior_evidence_policy": "Earlier scan checks are retained as previous reports, not independently reconfirmed in this pass.",
+  "adopted_corrections": [
+    {
+      "id": "K001.03",
+      "old": "We begrudge mankind their food.",
+      "new": "We envy human beings their food.",
+      "reason": "نحسد الإنس الطعاما: envy is the direct lexical sense and is confirmed by Ṭībī’s explanation in T001.12; the existing begrudge is less exact.",
+      "category": "lexical_precision"
+    },
+    {
+      "id": "K001.12",
+      "old": "ownership (milk, مِلْك) is general, whereas kingship (mulk, مُلْك) is particular",
+      "new": "kingship (mulk, مُلْك) is general, whereas ownership (milk, مِلْك) is particular",
+      "reason": "Existing rendering reverses the two nouns. Al-Jurjānī’s primary ḥāshiya explicitly reads الملك بالضم يعم والملك بالكسر يخص; Ṭībī’s corresponding lemma is also vocalized المُلك يعم، والمِلك يخص.",
+      "category": "material_translation_error",
+      "evidence_source_ids": [
+        "Jurjani-Hasiya-I57"
+      ]
+    },
+    {
+      "id": "T001.05",
+      "old": "Al-Shuʿla says:",
+      "new": "In al-Shuʿla (الشعلة) it is stated:",
+      "reason": "The source says قال في الشعلة, introducing a cited work rather than naming an author as the speaker.",
+      "category": "attribution_precision"
+    },
+    {
+      "id": "T001.08",
+      "old": "the print and transcription actually read al-dhābiḥ",
+      "new": "the electronic transcription reads al-dhābiḥ",
+      "reason": "No printed-page image was inspected in this audit; the electronic reading الذابح is confirmed, but a print-check claim is not.",
+      "category": "review_claim"
+    },
+    {
+      "id": "T001.09",
+      "old": "is retained as printed",
+      "new": "is retained as transcribed",
+      "reason": "The present evidence is an electronic transcription; no scan is available to substantiate printed.",
+      "category": "review_claim"
+    },
+    {
+      "id": "T094.01",
+      "kind": "revised_translation",
+      "before": "On “it affirms and establishes the expansion”: He repudiates the absence of expansion. Once that absence is repudiated, expansion is established, because the interrogative hamza expresses repudiation; repudiation is negation, and negation applied to negation becomes affirmation. The hamza may not be treated here as a question seeking acknowledgment (taqrīr).",
+      "after": "Meccan; eight verses. In the name of God, the All-Merciful, the Merciful.\n\nOn “it affirms and establishes the expansion”: He repudiates the absence of expansion. Once that absence is repudiated, expansion is established, because the interrogative hamza expresses repudiation; repudiation is negation, and negation applied to negation becomes affirmation. The hamza may not be treated here as a question seeking acknowledgment (taqrīr)."
+    },
+    {
+      "id": "T094.04",
+      "kind": "revised_translation",
+      "before": "On “he read a-lam nashraḥa, with fatḥa on the ḥāʾ”: its original form is nashraḥan. The nūn was omitted and the fatḥa on the ḥāʾ retained as an indication of it. This is in al-Muntaqā.\nIbn Jinnī said: “A-lam nashraḥa, with fatḥa on the ḥāʾ, is transmitted from Abū Jaʿfar al-Manṣūr. Ibn Mujāhid said: ‘This is wholly impermissible.’” Ibn Jinnī said: “The obvious position, and what accords with customary usage, is as Ibn Mujāhid states. Something like it nevertheless occurs in what I read to Abū ʿAlī in Abū Zayd's Nawādir:\n‘From which of death's two days shall I flee—\na day not decreed, or a day decreed?’\nIt is said that he intended lam yuqdar-an, with the light emphatic nūn. In our view omitting it is impermissible, because the emphatic nūn is most closely allied to expansion and elaboration, not concision and abbreviation. In Abū Zayd's Nawādir there is another verse, said to be fabricated:\n‘Strike away the anxieties that visit you by night,\nas with a sword you strike a horse's forelock.’\nHe intended iḍrib-an, with the light nūn, and omitted it.”",
+      "after": "On “he read a-lam nashraḥa, with fatḥa on the ḥāʾ”: its original form is nashraḥan. The nūn was omitted and the fatḥa on the ḥāʾ retained as an indication of it. This is in al-Muntaqā.\nIbn Jinnī said: “A-lam nashraḥa, with fatḥa on the ḥāʾ, is transmitted from Abū Jaʿfar al-Manṣūr. Ibn Mujāhid said: ‘This is wholly impermissible.’” Ibn Jinnī said: “The obvious position, and what accords with customary usage, is as Ibn Mujāhid states. Something like it nevertheless occurs in what I read to Abū ʿAlī in Abū Zayd's Nawādir:\n‘From which of death's two days shall I flee—\na day not decreed, or a day decreed?’\nIt is said that he intended lam yuqdar-an, with the light emphatic nūn. In our view omitting it is impermissible, because the emphatic nūn is most closely allied to expansion and elaboration, not concision and abbreviation. In Abū Zayd's Nawādir there is another verse, said to be fabricated:\n‘Strike away the anxieties that visit you by night,\nas with a sword you strike the crown of a horse's head.’\nHe intended iḍrib-an, with the light nūn, and omitted it.”"
+    },
+    {
+      "id": "T095.02",
+      "kind": "revised_translation",
+      "before": "On “removes decay”: one says ḥafirat asnānuhu ḥafaran when the sockets of his teeth—that is, their roots—have deteriorated. One also says ḥafarat ḥafran; ḥafra denotes a single occurrence.\n\nOn “and so is amīn; ammān is also said”: that is, they say, “in a trustworthy place.”",
+      "after": "On “removes decay”: one says ḥafirat asnānuhu ḥafaran when the sockets of his teeth—that is, their roots—have deteriorated. One also says ḥafarat ḥafran; ḥafra denotes a single occurrence.\n\nOn “and so is amīn; ammān is also said”: that is, they use ammān (أمان) in place of amīn (أمين)."
+    },
+    {
+      "id": "T097.05",
+      "kind": "revised_translation",
+      "before": "On “it is nothing but safety”: he means that hiya, “it,” is the subject and salām, “peace,” the predicate. The predicate is placed first, and the night is made peace itself, to convey exclusivity.\n\nThe author of al-Kashf says: “Hiya is a subject and salām a preceding predicate. Salām has the sense of an active participle: it brings peace. This interpretation is necessary if ḥattā, ‘until,’ is to depend on it. If salām were taken as a verbal noun, ḥattā could not depend on it, because one may not separate a governing expression from its complement. It may instead depend on ‘the angels descend.’ Hiya cannot be the subject with the phrase beginning ḥattā as its predicate, for that would convey no useful information: every night has this characteristic [of lasting until dawn].”",
+      "after": "On “it is nothing but safety”: he means that hiya, “it,” is the subject and salām, “peace,” the predicate. The predicate is placed first, and the night is made peace itself, to convey exclusivity.\n\nThe author of al-Kashf says: “Hiya is a subject and salām a preceding predicate. Salām has the sense of an active participle: it brings peace. This interpretation is necessary if ḥattā, ‘until,’ is to depend on it. If salām were taken as a verbal noun, ḥattā could not depend on it, because the verbal noun may not be separated from its dependent complement [here by hiya]. It may instead depend on ‘the angels descend.’ Hiya cannot be the subject with the phrase beginning ḥattā as its predicate, for that would convey no useful information: every night has this characteristic [of lasting until dawn].”"
+    },
+    {
+      "id": "K099.02",
+      "kind": "revised_translation",
+      "before": "Zilzālahā is read with kasra or fatḥa on the zāy. With kasra it is a verbal noun; with fatḥa, a noun. Among word-patterns, faʿlāl with fatḥa occurs only in a reduplicated form.\n\nIf you ask what “its shaking” means in the possessive construction, I answer: the shaking that befits it in accordance with wisdom and God’s will—the violent shaking beyond which there is none. Compare: “Honour the pious man with his honour, and abase the impious man with his abasement,” meaning the honour and abasement they respectively deserve. Or it means its entire shaking, every degree of shaking possible for it.\n\nAthqāl is the plural of thiql, household goods, as in “They carry your burdens” [16:7]. He makes the things buried within the earth its burdens.",
+      "after": "Zilzālahā is read with kasra or fatḥa on the zāy. With kasra it is a verbal noun; with fatḥa, a noun. Among word-patterns, faʿlāl with fatḥa occurs only in a reduplicated form.\n\nIf you ask what “its shaking” means in the possessive construction, I answer: the shaking that befits it in accordance with wisdom and God’s will—the violent shaking beyond which there is none. Compare: “Honour the pious man with his honour, and abase the impious man with his abasement,” meaning the honour and abasement they respectively deserve. Or it means its entire shaking, every degree of shaking possible for it.\n\nAthqāl is the plural of thaqal (ثَقَل), household goods, as in “They carry your burdens” [16:7]. He makes the things buried within the earth its burdens."
+    },
+    {
+      "id": "T099.01",
+      "kind": "revised_translation",
+      "before": "Medinan; nine verses. In the name of God, the All-Merciful, the Merciful. [The embedded Kashshāf heading instead records disagreement about the place of revelation; both headings here give nine verses.]\n\nOn “among word-patterns, faʿlāl with fatḥa occurs only in a reduplicated form,” al-Kawāshī has: “Nāqa jizʿāl occurs, meaning a she-camel which [limps; the printed text here reads ‘looks out/climbs’], as does qasṭāl, a word for dust; neither is reduplicated. It is said that Bahrām and Shahrām are foreign.” As for qahqār, it is a weak linguistic form. Al-Ṣiḥāḥ has: “Qahqarr, with doubled rāʾ, is hard stone. Aḥmad ibn Yaḥyā alone used to say qahqār.”",
+      "after": "Medinan; nine verses. In the name of God, the All-Merciful, the Merciful. [The embedded Kashshāf heading instead records disagreement about the place of revelation; both headings here give nine verses.]\n\nOn “among word-patterns, faʿlāl with fatḥa occurs only in a reduplicated form,” al-Kawāshī has: “The expression nāqa جزعال occurs, meaning a she-camel which [probably ‘limps’; the electronic text reads تطلع, ‘looks out/climbs’], as does qasṭāl, a word for dust; neither is reduplicated. It is said that Bahrām and Shahrām are foreign.” As for qahqār, it is a weak linguistic form. Al-Ṣiḥāḥ has: “Qahqarr, with doubled rāʾ, is hard stone. Aḥmad ibn Yaḥyā alone used to say qahqār.”"
+    },
+    {
+      "id": "T105.05",
+      "status": "recommended_precision_correction",
+      "old": "Desert of praise is discerned by seeing modes, not merely entities.",
+      "new": "Entitlement to praise arises only from observing the modes, not from observing the entities.",
+      "arabic_evidence": "واستحقاق المدح إنما يحصل برؤية الكيفيات لا برؤية الذوات",
+      "reason": "يحصل describes the arising of entitlement to praise; the current discerned supplies an epistemic verb absent from the Arabic. The abstract phrasing avoids supplying an unstated subject of entitlement, and the contrast between كيفيات and ذوات is preserved.",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s515.html",
+      "source_line": 85
+    },
+    {
+      "id": "T106.03",
+      "old": "[The cited wording is] al-zahw ghayra l-awārik.",
+      "new": "[Earlier provisional reconstruction of the cited wording: al-zahw ghayra l-awārik. The retrieved electronic witness instead reads الزهو غير الإدراك; the wording remains unresolved.]",
+      "reason": "Explicitly label the inherited conjecture; the retrieved electronic witness does not establish it."
+    },
+    {
+      "id": "K111.02",
+      "old": "Fulayta ibn Qāsim",
+      "new": "Falīta ibn Qāsim (فَلِيتة بن قاسم)",
+      "evidence": "Kashshaf has unvocalized فليتة; Tibi’s explicit gloss s519 line65 specifies fatḥa on fāʾ and kasra on lām, and separately reports diminutive Fukayta. Fulayta wrongly combines the two.",
+      "certainty": "high"
+    },
+    {
+      "id": "K111.05",
+      "old": "carrying and tying up the thorns like wood-gatherers",
+      "new": "carrying that bundle of thorns and fastening it about her neck, as wood-gatherers do",
+      "evidence": "Local DKA explicitly says وأنها تحمل تلك الحزمة من الشوك وتربطها في جيدها كما يفعل الحطابون. Existing English omits the location of the fastening.",
+      "certainty": "high"
+    },
+    {
+      "id": "T111.01",
+      "old": "tabban lahu and tabba lahu",
+      "new": "tabban lahu (تَبًّا له) and tabbun lahu (تَبٌّ له)",
+      "evidence": "s519 line25 explicitly contrasts accusative and nominative nouns: تبًّا له وتبٌّ له. tabba falsely represents the second as a finite verb.",
+      "certainty": "high"
+    },
+    {
+      "id": "T111.01",
+      "old": "ʿajizat and ʿajjazat",
+      "new": "ʿajazat (عَجَزَتْ) and ʿajjazat (عَجَّزَتْ)",
+      "evidence": "s519 line27 vocalizes عَجَزَت with fatḥa on jīm, whereas existing transliteration has kasra. This aligns this witness, not a claim that no alternate lexical form exists.",
+      "certainty": "high"
+    },
+    {
+      "id": "T111.04",
+      "old": "Fulayta has fatḥa on fāʾ and kasra on lām",
+      "new": "Falīta (فَلِيتة) has fatḥa on fāʾ and kasra on lām",
+      "evidence": "s519 line65 explicit vowel gloss; keep separately transmitted Fukayta (فُكَيْتة).",
+      "certainty": "high"
+    },
+    {
+      "id": "T112.12",
+      "before": "I resolved to stay for a morning.",
+      "after": "I resolved to stay until morning.",
+      "reason": "Al-Baghdadi explicitly glosses the poetic phrase as الإقامة إلى وقت الصباح; the earlier literal 'for a morning' is less precise.",
+      "evidence": {
+        "url": "https://almntqim.com/٤٦٥١_خزانة-الأدب-البغدادي-ج-٣/٨٨_الصفحة",
+        "work": "Khizanat al-adab",
+        "location": "III:88",
+        "arabic": "يقول: عزمت على الإقامة إلى وقت الصباح لأني قد وجدت الرأي والحزم قد أوجبا ذلك"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "T112.12",
+      "before": "[REVIEW T112-U3: The isolated half-line إقامة ذي صباح lacks its full poetic context. The literal provisional rendering above should be checked against the poem.]",
+      "after": "[SOURCE CHECK T112-U3: Al-Baghdādī, Khizānat al-adab III:86–88, records the full line and explains إقامة ذي صباح as remaining until morning. The rendering follows that explanation; it does not establish every detail of the poem's attribution or context.]",
+      "reason": "Replace the now-outdated claim that the half-line lacks a checked context.",
+      "evidence": {
+        "url": "https://almntqim.com/٤٦٥١_خزانة-الأدب-البغدادي-ج-٣/٨٨_الصفحة",
+        "location": "III:88"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "T113.01",
+      "before": "evokes good through the Day of Resurrection",
+      "after": "[resembles the opening of the Day of Resurrection]",
+      "reason": "The printed/transcribed Tibi quote is corrupt here; Baydawi's quoted source explicitly has محاكاة فاتحة يوم القيامة. Brackets identify source-based restoration rather than a verified Tibi reading.",
+      "evidence": {
+        "url": "https://www.islamweb.net/ar/library/content/205/3329/تفسير-سورة-سورة-الفلق",
+        "work": "Anwar al-tanzil",
+        "location": "V:348, tafsir 113:1",
+        "arabic": "ومحاكاة فاتحة يوم القيامة"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "T113.01",
+      "before": "[REVIEW T113-U1: The scanned quotation at p.645 has difficult wording محاكاة الخير بيوم القيامة and a final word read provisionally as تربية. OpenITI gives قريبة. The contextual rendering of this final clause is provisional and must be checked against al-Qāḍī's source.]",
+      "after": "[SOURCE CHECK T113-U1: Ṭībī's quoted text has the difficult محاكاة الخير بيوم القيامة and the electronic text ends with قريبة. Al-Bayḍāwī, Anwār al-tanzīl V:348, reads محاكاة فاتحة يوم القيامة and تربية. The bracketed resurrection clause follows that quoted source; تربية also corroborates the earlier provisional reading. These are source-based restorations, not a newly collated Ṭībī manuscript reading.]",
+      "reason": "Record new primary quotation-source evidence and retain witness distinction.",
+      "evidence": {
+        "url": "https://www.islamweb.net/ar/library/content/205/3329/تفسير-سورة-سورة-الفلق",
+        "location": "V:348"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "T113.07",
+      "before": "while remaining sound in his prophetic capacity. It would impair prophethood only [if]",
+      "after": "[and recovered, inasmuch as he was human, not inasmuch as he was a prophet]. It would impair prophethood only [if]",
+      "reason": "Al-Raghib's quoted source has ويمرض ويصح من حيث هو بشر لا من حيث هو نبي and لو وجد للسحر تأثير. The existing provisional reading gives صح a different syntactic role. Brackets show restoration from the quotation source.",
+      "evidence": {
+        "url": "https://arabic-keyboard.info/books/ar/read-book/تفسير-الراغب-الأصفهاني",
+        "location": "Tafsir 2:102; electronic line 918",
+        "arabic": "ويمرض ويصح من حيث هو بشر لا من حيث هو نبي، وإنما كان ذلك قادحا في النبوة لو وجد للسحر تأثير في أمر يرجع إلى النبوة"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "T113.07",
+      "before": "[REVIEW T113-U2: The scan p.648 reads فيصح من حيث نبي and then أو وجد للسحر تأثير. The first is provisionally read as preservation of prophetic soundness; “[if]” expresses the apparently intended conditional of the second, whose printed أو is problematic. Check al-Rāghib's source before removing the flag. At p.649 the scan has بما يقع, correcting OpenITI's بما لا يقع, which reverses the argument.]",
+      "after": "[SOURCE CHECK T113-U2: The earlier scan report gives فيصح من حيث نبي and أو وجد للسحر تأثير. Al-Rāghib's own tafsīr of 2:102 reads ويمرض ويصح من حيث هو بشر لا من حيث هو نبي and لو وجد للسحر تأثير. The bracketed restoration follows the quoted source and explains the human capacity in which illness and recovery occur. The same source confirms the positive بما يقع, already reported from Dubai XVI:649. Ṭībī's exact damaged wording still requires another witness; no new scan collation is claimed.]",
+      "reason": "The quoted source resolves the intended contrast and conditional without erasing the Tibi witness problem.",
+      "evidence": {
+        "url": "https://arabic-keyboard.info/books/ar/read-book/تفسير-الراغب-الأصفهاني",
+        "location": "Tafsir 2:102; electronic line 918"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "T114.07",
+      "before": "ḥaqqaqtu al-shayʾa aḥuqquhu",
+      "after": "ḥaqaqtu al-shayʾa aḥuqquhu",
+      "reason": "The Arabic is حَقَقْتُ الشئَ أَحُقُّه, form I, not ḥaqqaqtu (form II).",
+      "evidence": {
+        "url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+        "printed_page": 655,
+        "line": 60,
+        "arabic": "حَقَقْتُ الشئَ أَحُقُّه"
+      },
+      "status": "recommended"
+    },
+    {
+      "id": "T114.07",
+      "before": "[REVIEW T114-U3: The final sentence is problematic in the print itself: وهذا القول المتعسف لا يريد أنه ضعيف. Its wording is retained, even though its denial of weakness conflicts with the following criticism. The phrase لا يريد may be displaced from the next gloss; that is a hypothesis, not an adopted correction. Check the Imam's source before repairing it. Mā in وما أحقه is negative, not an exclamation; the scan, Ṭībī's gloss and Turkish p.1480 agree.]",
+      "after": "[SOURCE CHECK T114-U3: The earlier scan report gives وهذا القول المتعسف لا يريد أنه ضعيف. Al-Rāzī's tafsīr of 114:6 instead reads وهذا القول ضعيف, followed by the same linguistic objection. This confirms that the source criticizes the interpretation, but does not establish how the corruption arose in Ṭībī. The printed wording is retained with this warning; displacement from the next gloss remains a hypothesis. Mā in وما أحقه is negative, not exclamatory.]",
+      "reason": "Primary quoted source establishes intended criticism but not exact Tibi emendation.",
+      "evidence": {
+        "url": "https://tafsir.deenapps.com/index.php?chapter=114&tafsir_type=al-razi&trans=usmani&verse=6",
+        "location": "Tafsir 114:6, Arabic text (not the site's English summary)",
+        "arabic": "وهذا القول ضعيف؛ لأن جعل الإنسان اسما للجنس الذي يندرج فيه الجن والإنس بعيد من اللغة"
+      },
+      "status": "recommended"
+    }
   ],
-  "corrections": [
-    "T95: الغذاء restored from printed505.",
-    "K97: exclusive agency refers to God; follows Arabic and Tibi rather than apparent Turkish error.",
-    "K99: باللسان follows embedded base against DKA بالنسيان.",
-    "T99: بنصف القرآن restored from545.",
-    "T101: printed556 supports khuzyā."
+  "deferred_corrections": [
+    {
+      "id": "T106.03",
+      "status": "conditional_remove_or_label_editorial_conjecture",
+      "old": "[The cited wording is] al-zahw ghayra l-awārik. ",
+      "new": "",
+      "arabic_evidence": "الزهو غير الإدراك، الزهو: البقل، والزهو أيضاً البُسر الملون",
+      "reason": "This reconstructed poetic lemma does not appear in the retrieved electronic witness. Retain only if an independent inspected source supports it, or label it as conjecture.",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s516.html",
+      "source_line": 41
+    },
+    {
+      "id": "T111.04",
+      "old": "Ẓālim ibn Surrāq ibn Ṣubayḥ al-Azdī",
+      "new": "Ẓālim ibn Sarrāq ibn Ṣubayḥ al-Azdī",
+      "evidence": "s519 line67 vocalizes سَرَّاق with fatḥa. This correction follows this electronic witness; verify the proper name’s printed vocalization before declaring it final.",
+      "certainty": "provisional_source_vocalization"
+    }
   ],
-  "open_flags": [
-    "T99 jizʿāl gloss: printed تطلع retained in note; تظلع provisional.",
-    "T104 phrase وأقر بدء إحراق at574 remains provisional.",
-    "T104 final يلزم at576 has opposite لا يلزم variant; main reading retained with explicit flag.",
-    "All earlier U-flags remain."
+  "dossiers": [
+    "reviews/fatiha.json",
+    "reviews/new-batch.json",
+    "reviews/middle-surahs.json",
+    "reviews/short-surahs.json",
+    "reviews/final-surahs.json"
   ],
-  "review_limit": "One Turkish comparison and selective scans, not full scan collation or final scholarly review."
+  "remaining": [
+    "Obtain and collate complete printed-page images for every translated passage.",
+    "Resolve all flagged variants and verify the Arabic lacuna in T113.06.",
+    "Translate and review the remainder of Tibi on Fatiha I:687–770.",
+    "Collate additional witnesses before claiming a definitive critical text.",
+    "Complete independent scholarly review, citations, report/poem attribution and remaining lexical checks.",
+    "The Kashshaf closing prayer/colophon and Tibi epilogue remain outside the current reader."
+  ],
+  "recovered_prior_evidence": {
+    "id": "T108.04",
+    "source_commit": "bcbb0846e6d3fdd1cdee86286b4b51b34fe0c791",
+    "source_file": "arabic-corrections.json",
+    "page": "Dubai XVI:603",
+    "note": "Exact Arabic retained in the earlier C07 reader; adopted in brackets, on the basis of its prior scan report, without a fresh scan check."
+  }
 }

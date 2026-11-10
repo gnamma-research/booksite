@@ -1,14 +1,33 @@
-AL-FĀTIḤA — AL-ṬĪBĪ’S SEPARATE COMMENTARY
-Working translation v0.1, part 1 • checkpoint C04 • 27 October 2026
+AL-KASHSHAF / FUTUH AL-GHAYB — C07 REVIEWED
+10 November 2026
 
-COVERAGE AND STATUS
-This file translates the complete unique commentary on printed pages I:677–686 of Futūḥ al-Ghayb, first edition, Dubai International Holy Quran Award, 1434/2013. It includes Ṭībī’s source quotations, arguments, examples, and brief grammatical notes. It does not retranslate the intervening full Kashshāf base blocks, which are in 001-al-fatiha-kashshaf-v01.txt.
-The scans of these ten pages have been visually compared with OpenITI Sham19Y0020891-ara1. Modern editorial footnotes are not translated as if they were Ṭībī’s text.
-THIS IS NOT THE COMPLETE FĀTIḤA COMMENTARY. Next begins I:687, قوله: (معنى اختصاص اسم الله بالابتداء). The sūrah commentary runs through I:770. Pages before I:677 belong to the general introductory material, not an omitted opening portion of this sūrah unit.
-The Turkish edition translates Kashshāf, not this whole commentary, and therefore cannot independently verify Ṭībī’s unique additions.
-Source and file details: metadata/source-inventory.json and metadata/file-manifest.json.
+All 277 existing passages have undergone electronic comparison. This is a revised working edition, not a definitive critical edition. Draft coverage: 19 Kashshāf sūrahs, 18 Ṭībī sūrahs and Fātiḥa I:677–686 only. I:687–770 remains untranslated. One Arabic gap, conflicting readings, complete page-image collation and final scholarly approval remain outstanding.
+
+SURAH 1 — al-Fātiḥa
+
+﴿بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ﴾ (1:1)
+In the name of Allah, the Beneficent, the Merciful
+
+﴿ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ﴾ (1:2)
+Praise be to Allah, Lord of the Worlds
+
+﴿ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ﴾ (1:3)
+The Beneficent, the Merciful
+
+﴿مَـٰلِكِ يَوْمِ ٱلدِّينِ﴾ (1:4)
+Master of the Day of Judgment
+
+﴿إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ﴾ (1:5)
+Thee (alone) we worship; Thee (alone) we ask for help
+
+﴿ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ﴾ (1:6)
+Show us the straight path
+
+﴿صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ﴾ (1:7)
+The path of those whom Thou hast favoured; Not the (path) of those who earn Thine anger nor of those who go astray
 
 T001.01 — Meccan revelation and “Mother of the Qurʾān” [I:677]
+
 On his words, “The sūrah of the Opening of the Book is Meccan; it is also said to be Meccan and Medinan”:
 
 Al-Kawāshī says: “The correct view is that it is Meccan.” The Qāḍī [al-Bayḍāwī] says: “It has been established that it is Meccan, because of His saying, ‘We have indeed given you seven of the oft-repeated’ [15:87], which is Meccan.”
@@ -18,26 +37,28 @@ On his words, “because it includes the meanings found in the Qurʾān”:
 That is, the Qurʾān sets out in detail the meaning that al-Fātiḥa contains in summary. In a related way Mecca is called “Mother of the Settlements,” because the earth was spread out from beneath it. Imām Muḥammad ibn Ismāʿīl al-Bukhārī said: “Al-Fātiḥa was called Mother of the Book because writing the codices begins with it, and recitation in prayer begins with it.”
 
 T001.02 — The four kinds of religious knowledge [I:678]
+
 The Qāḍī says: “It comprises theoretical wisdom and practical rulings, which consist in following the straight path, and knowledge of the ranks of the fortunate and the stations of the wretched.”
 
 This may be expanded by saying that it comprises four kinds of knowledge upon which religion depends.
 
-The first is knowledge of the foundations (ʿilm al-uṣūl). Its principal points are knowledge of God and His attributes, indicated by “to God, Lord of the worlds, the All-Merciful, the Merciful”; knowledge of prophethood, intended by “upon whom You have bestowed favour”; and knowledge of the return to God, intimated by “Master of the Day of Recompense.”
+The first is knowledge of the foundations (ʿilm (علم) al-uṣūl (الأصول)). Its principal points are knowledge of God and His attributes, indicated by “to God, Lord of the worlds, the All-Merciful, the Merciful”; knowledge of prophethood, intended by “upon whom You have bestowed favour”; and knowledge of the return to God, intimated by “Master of the Day of Recompense.”
 
-The second is knowledge of the branches (ʿilm al-furūʿ). Its foundation is acts of worship, intended by “You alone we worship.” Worship is bodily and financial. Both forms require the affairs of livelihood, comprising transactions and marriages; and these necessarily require judicial determinations. The branches are therefore established upon these foundations.
+The second is knowledge of the branches (ʿilm (علم) al-furūʿ (الفروع)). Its foundation is acts of worship, intended by “You alone we worship.” Worship is bodily and financial. Both forms require the affairs of livelihood, comprising transactions and marriages; and these necessarily require judicial determinations. The branches are therefore established upon these foundations.
 
-The third is knowledge of that through which perfection is obtained: the science of character (ʿilm al-akhlāq). Its highest aspect is reaching the presence of the All-Sufficient (al-ṣamadāniyya), taking refuge in the precinct of divine uniqueness (al-fardāniyya), following His path, and remaining upright upon it. This is indicated by “You alone we ask for help; guide us on the straight path.”
+The third is knowledge of that through which perfection is obtained: the science of character (ʿilm (علم) al-akhlāq (الأخلاق)). Its highest aspect is reaching the presence of the All-Sufficient (al-ṣamadāniyya (الصمدانية)), taking refuge in the precinct of divine uniqueness (al-fardāniyya (الفردانية)), following His path, and remaining upright upon it. This is indicated by “You alone we ask for help; guide us on the straight path.”
 
 The fourth is knowledge of narratives and accounts of past communities and bygone generations, both their fortunate and their wretched, together with the promises made to those among them who acted well and the threats directed at their wrongdoers. This is intended by “upon whom You have bestowed favour, not those who have incurred wrath, nor those astray.”
 
 We shall disclose this meaning more fully when we begin interpreting the sūrah according to this pattern. Keep it in mind, so that it may serve as a decisive judge.
 
 T001.03 — Commands, names, repetition, and prayer [I:679]
+
 On his words, “and imposing worship through commands and prohibitions”:
 
-Al-Asās says: “Taʿabbadanī so-and-so and iʿtabadanī mean ‘he made me like a slave to him.’ Taʿabbada so-and-so means ‘he practised devotion,’ and ‘he sat in his place of worship.’”
+Al-Asās says: “Taʿabbadanī so-and-so and iʿtabadanī (اعتبدني) mean ‘he made me like a slave to him.’ Taʿabbada so-and-so means ‘he practised devotion,’ and ‘he sat in his place of worship.’”
 
-Here the verb takes bāʾ because it incorporates the meaning of imposing an obligation (taklīf): that is, He imposed commands and prohibitions upon him as worship, meaning the things commanded and prohibited. It is also possible for bāʾ to be as in “I wrote with the pen,” with command and prohibition retaining their literal meanings.
+Here the verb takes bāʾ (ب) because it incorporates the meaning of imposing an obligation (taklīf (تكليف)): that is, He imposed commands and prohibitions upon him as worship, meaning the things commanded and prohibited. It is also possible for bāʾ (ب) to be as in “I wrote with the pen,” with command and prohibition retaining their literal meanings.
 
 On “and al-Wāfiya for that reason”:
 
@@ -52,54 +73,60 @@ On “because it is excellent, or valid”:
 This explains why the name “prayer” is appropriate to al-Fātiḥa. The Ḥanafīs say that it is called the sūrah of Prayer because it is excellent: reciting it in prayer is preferable to reciting something else. The Shāfiʿīs explain the name by saying that prayer is valid only through it.
 
 T001.04 — Verse endings and counting the basmala [I:680]
+
 On his words, “except that some count ‘upon whom You have bestowed favour’ but not the naming formula, while others take the opposite position”:
 
-The author of al-Murshid says: “If you stop at ‘upon whom You have bestowed favour,’ it is the end of a verse according to the people of Medina and Basra. The stop is permissible but not good, because ghayr, when genitive, is connected to it as an adjective or substitute, and when accusative is a circumstantial expression or an exception. Its permissibility rests only upon the transmitted report that he—God bless him and grant him peace—used to stop at verse endings. This is a verse ending according to those I have mentioned, and that explains its permissibility.” His words end here.
+The author of al-Murshid says: “If you stop at ‘upon whom You have bestowed favour,’ it is the end of a verse according to the people of Medina and Basra. The stop is permissible but not good, because ghayr (غير), when genitive, is connected to it as an adjective or substitute, and when accusative is a circumstantial expression or an exception. Its permissibility rests only upon the transmitted report that he—God bless him and grant him peace—used to stop at verse endings. This is a verse ending according to those I have mentioned, and that explains its permissibility.” His words end here.
 
 I say: the second position is preferable, because the cadence of “upon whom You have bestowed favour” does not match that of the sūrah’s verse endings, and because of what Muḥyī al-Sunna related in Sharḥ al-Sunna, from Ibn Jurayj:
 
 “My father informed me, from Saʿīd ibn Jubayr, that ‘We have indeed given you seven of the oft-repeated and the mighty Qurʾān’ [15:87] means Mother of the Qurʾān. My father said: Saʿīd ibn Jubayr recited it to me until he finished it, then said, ‘In the name of God, the All-Merciful, the Merciful: the seventh verse.’ Saʿīd said: Ibn ʿAbbās recited it to me just as I have recited it to you, then said, ‘In the name of God, the All-Merciful, the Merciful: the seventh verse.’”
 
 T001.05 — The readers’ positions on the basmala [I:681]
+
 On “the readers of Medina, Basra, and Syria”:
 
-Al-Shuʿla says: “From Mecca, Ibn Kathīr, and from Kufa, ʿĀṣim and al-Kisāʾī, hold that the basmala belongs to al-Fātiḥa and to every sūrah. This is the view of Ibn ʿAbbās and Saʿīd ibn Jubayr, and the position of al-Shāfiʿī, ʿAṭāʾ, al-Zuhrī, and Ibn al-Mubārak—God be pleased with them.
+In al-Shuʿla (الشعلة) it is stated: “From Mecca, Ibn Kathīr, and from Kufa, ʿĀṣim and al-Kisāʾī, hold that the basmala (بسملة) belongs to al-Fātiḥa and to every sūrah. This is the view of Ibn ʿAbbās and Saʿīd ibn Jubayr, and the position of al-Shāfiʿī, ʿAṭāʾ, al-Zuhrī, and Ibn al-Mubārak—God be pleased with them.
 
 “Ḥamza, also from Kufa, holds that it belongs to al-Fātiḥa alone, the entire Qurʾān being treated as a single sūrah. This is the view of Saʿīd ibn al-Musayyab.
 
 “Abū ʿAmr of Basra, Nāfiʿ of Medina, and Ibn ʿĀmir of Syria hold that it is a verse neither of al-Fātiḥa nor of another sūrah. Its occurrence in al-Naml is part of a verse. This is the view of Ibn Masʿūd, and the position of Abū Ḥanīfa, Mālik, and Aḥmad—God be pleased with them.”
 
 T001.06 — A “matter of consequence” and the metaphor of being cut short [I:681–682]
+
 On “every matter of consequence”:
 
 Imām Aḥmad ibn Ḥanbal related in his Musnad, from Abū Hurayra—God be pleased with him—that God’s Messenger—God bless him and grant him peace—said: “Every speech or matter of consequence that is not opened with the remembrance of God is cut short”—or he said, “severed.”
 
-Al-Nihāya says: “Bāl means a condition or affair. A matter dhū bāl is an important one to which attention and concern are devoted. In another usage, bāl means the heart.”
+Al-Nihāya says: “Bāl means a condition or affair. A matter dhū (ذو) bāl (بال) is an important one to which attention and concern are devoted. In another usage, bāl (بال) means the heart.”
 
-It has been said that such a matter is called dhū bāl, “possessing a heart,” because, by occupying the heart, it is as though it owns it and has become its possessor. An important affair may also be called dhū bāl through an implicit metaphor (istiʿāra makniyya), with “cut short” supplying a reinforcing feature (tarshīḥ), as in “Your hater is the one cut off” [108:3]. Similarly, he—blessings upon him—gave the affair a head and the summit of a hump in his saying, “The head of the affair is Islam, and the summit of its hump is jihād.” Al-Tirmidhī transmitted this report.
+It has been said that such a matter is called dhū (ذو) bāl (بال), “possessing a heart,” because, by occupying the heart, it is as though it owns it and has become its possessor. An important affair may also be called dhū (ذو) bāl (بال) through an implicit metaphor (istiʿāra (استعارة) makniyya), with “cut short” supplying a reinforcing feature (tarshīḥ (ترشيح)), as in “Your hater is the one cut off” [108:3]. Similarly, he—blessings upon him—gave the affair a head and the summit of a hump in his saying, “The head of the affair is Islam, and the summit of its hump is jihād.” Al-Tirmidhī transmitted this report.
 
 T001.07 — The number one hundred and fourteen [I:682–683]
+
 On “whoever omits it has omitted one hundred and fourteen verses”:
 
-This statement is either made by predominance (taghlīb), or to intensify the rebuke; or it includes the occurrence in al-Naml, since the negation concerns omitting everything to which the name basmala applies; or it rests upon his belief that Sūrat Barāʾa, too, ought to be headed by the basmala.
+This statement is either made by predominance (taghlīb (تغليب)), or to intensify the rebuke; or it includes the occurrence in al-Naml, since the negation concerns omitting everything to which the name basmala (بسملة) applies; or it rests upon his belief that Sūrat Barāʾa, too, ought to be headed by the basmala (بسملة).
 
 Supporting this last possibility is what we have related from al-Tirmidhī and Abū Dāwūd: Ibn ʿAbbās asked ʿUthmān—God be pleased with them both—“What led you not to write ‘In the name of God, the All-Merciful, the Merciful’?”—meaning in Barāʾa. [The source then says “the report,” without reproducing its remainder.]
 
 T001.08 — Supplying a verb: reading or beginning? [I:683]
+
 On “to something omitted”:
 
 Prepositions are never without something to which they are attached, because their function is to convey the meanings of verbs to nouns. They indicate an action in general, however, and a contextual indication is needed to specify it. Here that indication is what follows the naming formula: “Praise belongs to God.” This is something read and recited, and so indicates that the implicit verb is “I read” or “I recite.” The explanation “because what follows” determines which expression is to be supplied.
 
-It would have been more appropriate to say, “What follows the naming formula is the reading,” since beginning with the formula concerns the action that the person pronouncing it intends to perform. This is indicated by his saying, “Every agent who begins his action with ‘In the name of God, the All-Merciful, the Merciful’ implicitly supplies that for which the naming formula was made a beginning.” What is implicit is the action, not its object, just as what follows the slaughterer’s naming formula is the slaughtering, not the slaughtered animal. [T001-U1: the print and transcription actually read al-dhābiḥ, “the slaughterer,” at the final occurrence; “slaughtering” is a contextual emendation, not a silently verified reading.]
+It would have been more appropriate to say, “What follows the naming formula is the reading,” since beginning with the formula concerns the action that the person pronouncing it intends to perform. This is indicated by his saying, “Every agent who begins his action with ‘In the name of God, the All-Merciful, the Merciful’ implicitly supplies that for which the naming formula was made a beginning.” What is implicit is the action, not its object, just as what follows the slaughterer’s naming formula is the slaughtering, not the slaughtered animal. [T001-U1: the electronic transcription reads al-dhābiḥ (الذابح), “the slaughterer,” at the final occurrence; “slaughtering” is a contextual emendation, not a silently verified reading.]
 
 T001.09 — Al-Intiṣāf’s objection and al-Inṣāf’s reply [I:683–685]
+
 The author of al-Intiṣāf says:
 
 “What the grammarians supply is ‘I begin the act of reading.’ The validity of supplying a general expression is preferable. Do you not see that, wherever a prepositional phrase functions as a predicate, adjective, relative clause, or circumstantial expression, they supply ‘being’ or ‘remaining’ as what governs it, preferring this because it is general?
 
 “Moreover, supplying the verb ‘begin’ independently accomplishes the purpose intended by the naming formula, since its purpose is that a beginning be made with it. Supplying the verb ‘begin’ is therefore more effective.
 
-“As for the explicit verb ‘read’ in His saying, ‘Read in the name of your Lord’ [96:1], that is because reading is the more important thing there. For this reason the verb there is put before the phrase attached to it, unlike the basmala, in which beginning is more important.”
+“As for the explicit verb ‘read’ in His saying, ‘Read in the name of your Lord’ [96:1], that is because reading is the more important thing there. For this reason the verb there is put before the phrase attached to it, unlike the basmala (بسملة), in which beginning is more important.”
 
 The author of al-Inṣāf replies:
 
@@ -109,29 +136,32 @@ The author of al-Inṣāf replies:
 
 “As for his claim that ‘the purpose is that the naming formula be placed at the beginning,’ we accept what this entails. This actually occurs by starting with it, not by implying the verb ‘begin.’ Someone who prays and starts with the opening takbīr, or begins ablution by washing his face, does not need to imply ‘I began with that’ in order to count as beginning. He does, however, need the naming formula’s blessing and its encompassing his whole action.”
 
-[T001-U2: the opening expression أبتدئ فعل القراءة is retained as printed. Its punctuation and relation to the argument for a general verb merit comparison with al-Intiṣāf itself.]
+[T001-U2: the opening expression أبتدئ فعل القراءة is retained as transcribed. Its punctuation and relation to the argument for a general verb merit comparison with al-Intiṣāf itself.]
 
 T001.10 — The traveller’s sentence, Arabs and Bedouin, and the wedding formula [I:685]
+
 On “and says, ‘In God’s name’”:
 
 This is coordinated with “halts.” The response to “when” is “the meaning is.” “Who begins in his action” qualifies “every agent.”
 
 His expression “the Arabs’ saying,” followed by “the Bedouin’s saying,” suggests a distinction. Al-Nihāya says: “Al-aʿrāb are those who inhabit the desert and do not reside in towns. Al-ʿarab is the name of this well-known people and has no singular formed from its own expression, whether they reside in the desert or in towns.”
 
-Al-Mughrib says: “Al-ʿarabī refers to the inhabitants of towns and villages; al-aʿrābī to the inhabitants of the deserts.”
+Al-Mughrib says: “Al-ʿarabī refers to the inhabitants of towns and villages; al-aʿrābī (الأعرابي) to the inhabitants of the deserts.”
 
 On “for the bridegroom”:
 
-Al-Nihāya says: “Aʿrasa the man, and he is a muʿris, means that he went in to his wife when the marriage was consummated. One does not use the form عرس, as ordinary people do.”
+Al-Nihāya says: “Aʿrasa the man, and he is a muʿris (مُعْرِس), means that he went in to his wife when the marriage was consummated. One does not use the form عرس, as ordinary people do.”
 
 Al-Jāmiʿ says: “Rifāʾ means good companionship and harmony, from mending a garment. By ‘with harmony and sons’ they mean that this marriage is accompanied by both. God’s Messenger—God bless him and grant him peace—forbade it because it was one of the distinctive formulas of the Age of Ignorance.”
 
 T001.11 — What the wedding explanation modifies [I:686]
+
 On “meaning ‘May you wed,’ or ‘May you marry’”:
 
 This may relate to the first expression, with “the Bedouin’s saying” parenthetical, because “with good fortune and blessing” is a general formula used of anyone intending to undertake something. Alternatively, it relates to both expressions, which is the preferable interpretation.
 
 T001.12 — The poet’s invitation to the jinn [I:686]
+
 On “I said, ‘To the food!’,” the verse:
 
 Before it comes:
@@ -139,16 +169,39 @@ Before it comes:
 They came to my fire. I said, “Who are you?”
 They said, “The jinn.” I said, “Good evening to you!”
 
-Al-Aṣmaʿī said: “ʿIm ṣabāḥan, ‘Good morning,’ means anʿim, ‘Enjoy [a good morning].’ The reconstructed past verb is waʿama, with present yaʿimu. The past is not actually uttered, just as the past forms of daʿ and dhar, ‘leave,’ are not uttered.” Al-Anbārī mentioned this.
+Al-Aṣmaʿī said: “ʿIm ṣabāḥan, ‘Good morning,’ means anʿim (أنعم), ‘Enjoy [a good morning].’ The reconstructed past verb is waʿama (وَعَمَ), with present yaʿimu (يَعِمُ). The past is not actually uttered, just as the past forms of daʿ (دَعْ) and dhar, ‘leave,’ are not uttered.” Al-Anbārī mentioned this.
 
-The poet claimed that the jinn came to him while he was beside his fire, and that he greeted them and invited them to eat. One says ḥasadahu l-shayʾa and ḥasadahu ʿalā l-shayʾ, “he envied him the thing.” That is: “We envy them because they eat, whereas we do not eat.”
+The poet claimed that the jinn came to him while he was beside his fire, and that he greeted them and invited them to eat. One says ḥasadahu l-shayʾa and ḥasadahu ʿalā (على) l-shayʾ, “he envied him the thing.” That is: “We envy them because they eat, whereas we do not eat.”
 
 “To the food” means “Come!”
 
 T001.13 — Identifying the more important expression [I:686]
+
 On “because the more important of the action”:
 
-The action is “I recite” or “I read.” In “and what is attached to it,” the lām of mutaʿalliq is read with kasra in both occurrences: this is “In God’s name.” Min in “of the action” marks the starting point [of the comparison]. That is, the more important of “I read” and “In God’s name” is “In God’s name.”
+The action is “I recite” or “I read.” In “and what is attached to it,” the lām (ل) of mutaʿalliq (متعلّق) is read with kasra (كَسْرة) in both occurrences: this is “In God’s name.” Min in “of the action” marks the starting point [of the comparison]. That is, the more important of “I read” and “In God’s name” is “In God’s name.”
+
+al-Fātiḥa · source and review notes · inherited record
+
+INHERITED C06 RECORD. Earlier scan claims have not been independently reconfirmed in this pass. Current corrections supersede provisional renderings below; consult the C07 review register.
+
+Ṭībī coverage is only the completed first instalment, printed I:677–686. The remaining Fātiḥa commentary has not been translated in this release.
+
+REVIEW RECORD AND OPEN FLAGS
+1. Full first pass of the author’s sūrah commentary is now present. The opening of the entire book is a separate future unit.
+2. K001.12–13 restore the major K-DKA transcription omission. They are checked against the separate K-JK transcription and the actual embedded Arabic text in the Dubai scan, I:734–741. The modern editorial source note after the proverb in K-JK is excluded.
+3. The contrast مِلْك / مُلْك is ownership / kingship. This order is confirmed by the scanned vocalization and Turkish comparison. The preference for malik is Zamakhsharī’s, not an editorial choice to suppress the mālik reading.
+4. K001-U1: both transcriptions say “Raḥmān of this world and the next, and Raḥīm of this world.” The unexpected final “this world” is also supported by the Turkish text, p.76, and is retained; further Arabic scan collation is pending. Do not silently correct it.
+5. K001-U2: the vowel-assimilation examples and minor poetic/proper-name vocalizations require a second Arabic scan pass.
+6. Reports are translated as reports. No new independent judgment of authenticity is supplied. Ṭībī’s comments on the closing reports must be translated separately at the end of his Fātiḥa layer.
+7. Still needed: complete line-by-line scan comparison of K001.01–22 against ʿUbaykān and the YEK facing Arabic; a second English fidelity pass; the rest of Ṭībī I:677–770.
+8. Technical policy: iltifāt, badal, ḥāl, tawfīq, alṭāf, milk/mulk, and the actual Arabic reading variants are preserved where their distinctions carry the argument. Square-bracketed clarifications are editorial, not medieval source text.
+
+
+
+
+C04 TURKISH COMPARISON ADDENDUM
+The complete Turkish Fātiḥa text, even-numbered pages 66–98, paragraphs 9–78, was read against this draft. The English poem was corrected to news concerning Abū al-Aswad, rather than transmission on his authority. Nibz and allaha were corrected in the lexical discussion. Arabic remains controlling; Turkish expansions, editorial hadith judgments, and occasional interpretive differences have not been silently incorporated. The Turkish numbered verse scheme excludes the opening basmala from its displayed 1–7 sequence; Arabic reference numbers in this draft retain the usual basmala-counting scheme.
 
 END OF PART 1
 
@@ -164,3 +217,27 @@ REVIEW NOTES
 - T001-U1 and T001-U2 remain open.
 - The modern Dubai footnotes sometimes criticize the hadith chains or supply manuscript variants. They are separate editorial material, not automatically part of Ṭībī’s own commentary.
 
+
+Tanzil Quran Text
+Copyright (C) 2007-2021 Tanzil Project
+License: Creative Commons Attribution 3.0
+
+This copy of the Quran text is carefully produced, highly
+verified and continuously monitored by a group of specialists
+in Tanzil Project.
+
+TERMS OF USE:
+
+- Permission is granted to copy and distribute verbatim copies
+  of this text, but CHANGING IT IS NOT ALLOWED.
+
+- This Quran text can be used in any website or application,
+  provided that its source (Tanzil Project) is clearly indicated,
+  and a link is made to tanzil.net to enable users to keep
+  track of changes.
+
+- This copyright notice shall be included in all verbatim copies
+  of the text, and shall be reproduced appropriately in all files
+  derived from or containing substantial portion of this text.
+
+Please check updates at: http://tanzil.net/updates/

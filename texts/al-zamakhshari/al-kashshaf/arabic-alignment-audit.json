@@ -1,306 +1,317 @@
-[
-  {
-    "surah": 1,
-    "author": "K",
-    "segments": 22,
-    "characters": 18179,
-    "sha256": "d818d2a748cb4dbca2788e3e442d6e616dda5721da35773b37facace11c1d670",
-    "complete_partition": true
-  },
-  {
-    "surah": 1,
-    "author": "T",
-    "segments": 13,
-    "characters": 7782,
-    "sha256": "b73dd67bcbbf2755aec527c6962d0ecca73267dee5ae655bfa964884fa258727",
-    "complete_partition": true
-  },
-  {
-    "surah": 94,
-    "author": "K",
-    "segments": 6,
-    "characters": 4703,
-    "sha256": "99e28a1a71f660137bf2e68f216cfef21f27f98beaef93478a23d810d0666e70",
-    "complete_partition": true
-  },
-  {
-    "surah": 94,
-    "author": "T",
-    "segments": 12,
-    "characters": 9303,
-    "sha256": "05d2265c37d1a2c3dc83e92e52ecddd10f1aae0b9f398f0cd60c25ecc8846151",
-    "complete_partition": true
-  },
-  {
-    "surah": 95,
-    "author": "K",
-    "segments": 7,
-    "characters": 3473,
-    "sha256": "66ecc445b2ffc20899b067c2e2959a92461c279cc746a989825d26a54f2d9935",
-    "complete_partition": true
-  },
-  {
-    "surah": 95,
-    "author": "T",
-    "segments": 7,
-    "characters": 3040,
-    "sha256": "04be657cbb2abb64d62828df429b1a43a9a87cd601ba0b2f7a012ec9b2ee6864",
-    "complete_partition": true
-  },
-  {
-    "surah": 97,
-    "author": "K",
-    "segments": 6,
-    "characters": 2206,
-    "sha256": "ba27dbe2cda49e55154766f3ad8a458b7fa6fefdd6ec88108b8e821c97016811",
-    "complete_partition": true
-  },
-  {
-    "surah": 97,
-    "author": "T",
-    "segments": 6,
-    "characters": 3207,
-    "sha256": "dbf839531b34ada3df220ad9bb3cd173e9ed8ed65e9a84012019ce34f3406dc9",
-    "complete_partition": true
-  },
-  {
-    "surah": 99,
-    "author": "K",
-    "segments": 8,
-    "characters": 3029,
-    "sha256": "cc175063f5975eb1251e60ed1bbb1173031b94a6540acd3fd62ead368ee5584f",
-    "complete_partition": true
-  },
-  {
-    "surah": 99,
-    "author": "T",
-    "segments": 11,
-    "characters": 8119,
-    "sha256": "d331087b6444981b70cb49c9efbef94a887af54e94e0c36e3495f2cbf17b9d0f",
-    "complete_partition": true
-  },
-  {
-    "surah": 101,
-    "author": "K",
-    "segments": 6,
-    "characters": 1910,
-    "sha256": "019cf21f76542264dc1afa0ca272cb15bff5fa4cddc98d495606b6c45ae60a11",
-    "complete_partition": true
-  },
-  {
-    "surah": 101,
-    "author": "T",
-    "segments": 5,
-    "characters": 1855,
-    "sha256": "fe8b9ae712fd0eed898302479bda2612ae850c6f0e789bc58f5b798608efc181",
-    "complete_partition": true
-  },
-  {
-    "surah": 102,
-    "author": "K",
-    "segments": 5,
-    "characters": 3153,
-    "sha256": "f94af5719b25cd56e238473f2d61bfbebaefeb3d60b7380c18a73fa881c631ce",
-    "complete_partition": true
-  },
-  {
-    "surah": 102,
-    "author": "T",
-    "segments": 6,
-    "characters": 4784,
-    "sha256": "a62f08e41e056ac8dfde34afa4d83704ce08fe0344b1cb963253e784b113ae78",
-    "complete_partition": true
-  },
-  {
-    "surah": 103,
-    "author": "K",
-    "segments": 3,
-    "characters": 1074,
-    "sha256": "57b192fa7017418c74b763b6ce017a62eb85aa4a658ac3756fb736d2b2734ee8",
-    "complete_partition": true
-  },
-  {
-    "surah": 103,
-    "author": "T",
-    "segments": 3,
-    "characters": 1417,
-    "sha256": "1ae79e0282f78f94075b0f17ad2edcf96a1a1cc067ac0694b204a40fb1f388ea",
-    "complete_partition": true
-  },
-  {
-    "surah": 104,
-    "author": "K",
-    "segments": 7,
-    "characters": 2899,
-    "sha256": "3801616e975a39f2fee916b1a1035182b55a28ef9cd76d47adc73eddc9fc2a3e",
-    "complete_partition": true
-  },
-  {
-    "surah": 104,
-    "author": "T",
-    "segments": 9,
-    "characters": 6131,
-    "sha256": "e7405548324fe2d834536726d3910782ff6dfa4482d38b742e0938187d2d3389",
-    "complete_partition": true
-  },
-  {
-    "surah": 105,
-    "author": "K",
-    "segments": 5,
-    "characters": 3879,
-    "sha256": "b7db875cab225bc1fdac582e8c9d08f59edc44984162715b3d9b5e2270f44f80",
-    "complete_partition": true
-  },
-  {
-    "surah": 105,
-    "author": "T",
-    "segments": 7,
-    "characters": 4845,
-    "sha256": "f00467db5db5d5335760a78edf85b700672b5c7bc3be9e0b870d2a7f46f8d7d8",
-    "complete_partition": true
-  },
-  {
-    "surah": 106,
-    "author": "K",
-    "segments": 4,
-    "characters": 2542,
-    "sha256": "7e8680ba56685be157bfa9b9a66a6d744b99f31f81ec612d2dc7b1234b7fb1f5",
-    "complete_partition": true
-  },
-  {
-    "surah": 106,
-    "author": "T",
-    "segments": 5,
-    "characters": 2536,
-    "sha256": "31039cd7f23ad8518a6157d1947f5c3aae5eae42cf880de82bff2be5a4d0fe2e",
-    "complete_partition": true
-  },
-  {
-    "surah": 107,
-    "author": "K",
-    "segments": 4,
-    "characters": 4000,
-    "sha256": "0a85b3729f596d2705e84ad2b2c5e41debfb95f112e6ae052dfaee1ea3656b9a",
-    "complete_partition": true
-  },
-  {
-    "surah": 107,
-    "author": "T",
-    "segments": 6,
-    "characters": 6067,
-    "sha256": "5443d115fe5824ad1b17d1a23afca5ddbc56b775e7ef17666968a93abef9b34a",
-    "complete_partition": true
-  },
-  {
-    "surah": 108,
-    "author": "K",
-    "segments": 5,
-    "characters": 2161,
-    "sha256": "cef5e60f072967a550cee53b58a6651c627944129e59b9b77f337c1fe4c24a65",
-    "complete_partition": true
-  },
-  {
-    "surah": 108,
-    "author": "T",
-    "segments": 7,
-    "characters": 3941,
-    "sha256": "c49770cf31cb3b58d77027260c998d8a7fa38f370968553f9577a9973fd861c5",
-    "complete_partition": true
-  },
-  {
-    "surah": 109,
-    "author": "K",
-    "segments": 4,
-    "characters": 1741,
-    "sha256": "a908043eea05c95de42b1c78c739414489fbd364e13ea527a2401e641480b0b6",
-    "complete_partition": true
-  },
-  {
-    "surah": 109,
-    "author": "T",
-    "segments": 8,
-    "characters": 6320,
-    "sha256": "becab0b1c24870d23a1c6b3facc921a68626c84d662a0ccde27722c68b3230f6",
-    "complete_partition": true
-  },
-  {
-    "surah": 110,
-    "author": "K",
-    "segments": 6,
-    "characters": 4199,
-    "sha256": "1146325cf5b69cbd5ba7da869c9c31a61d99efa70201c85972b068dde7a68275",
-    "complete_partition": true
-  },
-  {
-    "surah": 110,
-    "author": "T",
-    "segments": 7,
-    "characters": 6698,
-    "sha256": "5c8037817854b861df110efc87afaf25876db321e2ec95db7b2965434f1a9975",
-    "complete_partition": true
-  },
-  {
-    "surah": 111,
-    "author": "K",
-    "segments": 5,
-    "characters": 4288,
-    "sha256": "1c1b8e0ec9c5ae2250550828a8f2640c9320f0152858adce1b41d7a5cce28605",
-    "complete_partition": true
-  },
-  {
-    "surah": 111,
-    "author": "T",
-    "segments": 8,
-    "characters": 5677,
-    "sha256": "aeddda03a995d628e7e5724ed122c785b986edaea9b89d05ff49bc44e83494ea",
-    "complete_partition": true
-  },
-  {
-    "surah": 112,
-    "author": "K",
-    "segments": 7,
-    "characters": 3579,
-    "sha256": "516382f82de072025328c485a31472ea93c649b524375a6fe68c5f947cdc1364",
-    "complete_partition": true
-  },
-  {
-    "surah": 112,
-    "author": "T",
-    "segments": 15,
-    "characters": 9521,
-    "sha256": "2a93ab3cfd593286afd8489538bdc6ffa3f60a28e64e53758beccc86c69eb262",
-    "complete_partition": true
-  },
-  {
-    "surah": 113,
-    "author": "K",
-    "segments": 7,
-    "characters": 3616,
-    "sha256": "399b78ceeec06a69c1091dcd82529afc1961450c076d6579e60336559c3df9be",
-    "complete_partition": true
-  },
-  {
-    "surah": 113,
-    "author": "T",
-    "segments": 10,
-    "characters": 5274,
-    "sha256": "fa33e693f68233bbde10a5c7693fd5eb28bbf4226722f94b7d2336b3353934f6",
-    "complete_partition": true
-  },
-  {
-    "surah": 114,
-    "author": "K",
-    "segments": 6,
-    "characters": 2384,
-    "sha256": "48e7f5451528585b7ae1e739e918f20da2f8e3a7d02645a4d837282c1c7ed5b8",
-    "complete_partition": true
-  },
-  {
-    "surah": 114,
-    "author": "T",
-    "segments": 9,
-    "characters": 3576,
-    "sha256": "bd48438024025c0f2ffb48a90cf9bd64bcb4b12ebddbe7e8b755ae0c5b3186b8",
-    "complete_partition": true
-  }
-]
+{
+  "checkpoint": "C07-reviewed",
+  "passages": 277,
+  "complete_transcriptions": 276,
+  "marked_gap": [
+    "T113.06"
+  ],
+  "new_scan_collation": 0,
+  "final_approval": 0,
+  "prior_partition_checks": [
+    {
+      "surah": 1,
+      "author": "K",
+      "segments": 22,
+      "characters": 18179,
+      "sha256": "d818d2a748cb4dbca2788e3e442d6e616dda5721da35773b37facace11c1d670",
+      "complete_partition": true
+    },
+    {
+      "surah": 1,
+      "author": "T",
+      "segments": 13,
+      "characters": 7782,
+      "sha256": "b73dd67bcbbf2755aec527c6962d0ecca73267dee5ae655bfa964884fa258727",
+      "complete_partition": true
+    },
+    {
+      "surah": 94,
+      "author": "K",
+      "segments": 6,
+      "characters": 4703,
+      "sha256": "99e28a1a71f660137bf2e68f216cfef21f27f98beaef93478a23d810d0666e70",
+      "complete_partition": true
+    },
+    {
+      "surah": 94,
+      "author": "T",
+      "segments": 12,
+      "characters": 9303,
+      "sha256": "05d2265c37d1a2c3dc83e92e52ecddd10f1aae0b9f398f0cd60c25ecc8846151",
+      "complete_partition": true
+    },
+    {
+      "surah": 95,
+      "author": "K",
+      "segments": 7,
+      "characters": 3473,
+      "sha256": "66ecc445b2ffc20899b067c2e2959a92461c279cc746a989825d26a54f2d9935",
+      "complete_partition": true
+    },
+    {
+      "surah": 95,
+      "author": "T",
+      "segments": 7,
+      "characters": 3040,
+      "sha256": "04be657cbb2abb64d62828df429b1a43a9a87cd601ba0b2f7a012ec9b2ee6864",
+      "complete_partition": true
+    },
+    {
+      "surah": 97,
+      "author": "K",
+      "segments": 6,
+      "characters": 2206,
+      "sha256": "ba27dbe2cda49e55154766f3ad8a458b7fa6fefdd6ec88108b8e821c97016811",
+      "complete_partition": true
+    },
+    {
+      "surah": 97,
+      "author": "T",
+      "segments": 6,
+      "characters": 3207,
+      "sha256": "dbf839531b34ada3df220ad9bb3cd173e9ed8ed65e9a84012019ce34f3406dc9",
+      "complete_partition": true
+    },
+    {
+      "surah": 99,
+      "author": "K",
+      "segments": 8,
+      "characters": 3029,
+      "sha256": "cc175063f5975eb1251e60ed1bbb1173031b94a6540acd3fd62ead368ee5584f",
+      "complete_partition": true
+    },
+    {
+      "surah": 99,
+      "author": "T",
+      "segments": 11,
+      "characters": 8119,
+      "sha256": "d331087b6444981b70cb49c9efbef94a887af54e94e0c36e3495f2cbf17b9d0f",
+      "complete_partition": true
+    },
+    {
+      "surah": 101,
+      "author": "K",
+      "segments": 6,
+      "characters": 1910,
+      "sha256": "019cf21f76542264dc1afa0ca272cb15bff5fa4cddc98d495606b6c45ae60a11",
+      "complete_partition": true
+    },
+    {
+      "surah": 101,
+      "author": "T",
+      "segments": 5,
+      "characters": 1855,
+      "sha256": "fe8b9ae712fd0eed898302479bda2612ae850c6f0e789bc58f5b798608efc181",
+      "complete_partition": true
+    },
+    {
+      "surah": 102,
+      "author": "K",
+      "segments": 5,
+      "characters": 3153,
+      "sha256": "f94af5719b25cd56e238473f2d61bfbebaefeb3d60b7380c18a73fa881c631ce",
+      "complete_partition": true
+    },
+    {
+      "surah": 102,
+      "author": "T",
+      "segments": 6,
+      "characters": 4784,
+      "sha256": "a62f08e41e056ac8dfde34afa4d83704ce08fe0344b1cb963253e784b113ae78",
+      "complete_partition": true
+    },
+    {
+      "surah": 103,
+      "author": "K",
+      "segments": 3,
+      "characters": 1074,
+      "sha256": "57b192fa7017418c74b763b6ce017a62eb85aa4a658ac3756fb736d2b2734ee8",
+      "complete_partition": true
+    },
+    {
+      "surah": 103,
+      "author": "T",
+      "segments": 3,
+      "characters": 1417,
+      "sha256": "1ae79e0282f78f94075b0f17ad2edcf96a1a1cc067ac0694b204a40fb1f388ea",
+      "complete_partition": true
+    },
+    {
+      "surah": 104,
+      "author": "K",
+      "segments": 7,
+      "characters": 2899,
+      "sha256": "3801616e975a39f2fee916b1a1035182b55a28ef9cd76d47adc73eddc9fc2a3e",
+      "complete_partition": true
+    },
+    {
+      "surah": 104,
+      "author": "T",
+      "segments": 9,
+      "characters": 6131,
+      "sha256": "e7405548324fe2d834536726d3910782ff6dfa4482d38b742e0938187d2d3389",
+      "complete_partition": true
+    },
+    {
+      "surah": 105,
+      "author": "K",
+      "segments": 5,
+      "characters": 3879,
+      "sha256": "b7db875cab225bc1fdac582e8c9d08f59edc44984162715b3d9b5e2270f44f80",
+      "complete_partition": true
+    },
+    {
+      "surah": 105,
+      "author": "T",
+      "segments": 7,
+      "characters": 4845,
+      "sha256": "f00467db5db5d5335760a78edf85b700672b5c7bc3be9e0b870d2a7f46f8d7d8",
+      "complete_partition": true
+    },
+    {
+      "surah": 106,
+      "author": "K",
+      "segments": 4,
+      "characters": 2542,
+      "sha256": "7e8680ba56685be157bfa9b9a66a6d744b99f31f81ec612d2dc7b1234b7fb1f5",
+      "complete_partition": true
+    },
+    {
+      "surah": 106,
+      "author": "T",
+      "segments": 5,
+      "characters": 2536,
+      "sha256": "31039cd7f23ad8518a6157d1947f5c3aae5eae42cf880de82bff2be5a4d0fe2e",
+      "complete_partition": true
+    },
+    {
+      "surah": 107,
+      "author": "K",
+      "segments": 4,
+      "characters": 4000,
+      "sha256": "0a85b3729f596d2705e84ad2b2c5e41debfb95f112e6ae052dfaee1ea3656b9a",
+      "complete_partition": true
+    },
+    {
+      "surah": 107,
+      "author": "T",
+      "segments": 6,
+      "characters": 6067,
+      "sha256": "5443d115fe5824ad1b17d1a23afca5ddbc56b775e7ef17666968a93abef9b34a",
+      "complete_partition": true
+    },
+    {
+      "surah": 108,
+      "author": "K",
+      "segments": 5,
+      "characters": 2161,
+      "sha256": "cef5e60f072967a550cee53b58a6651c627944129e59b9b77f337c1fe4c24a65",
+      "complete_partition": true
+    },
+    {
+      "surah": 108,
+      "author": "T",
+      "segments": 7,
+      "characters": 3941,
+      "sha256": "c49770cf31cb3b58d77027260c998d8a7fa38f370968553f9577a9973fd861c5",
+      "complete_partition": true
+    },
+    {
+      "surah": 109,
+      "author": "K",
+      "segments": 4,
+      "characters": 1741,
+      "sha256": "a908043eea05c95de42b1c78c739414489fbd364e13ea527a2401e641480b0b6",
+      "complete_partition": true
+    },
+    {
+      "surah": 109,
+      "author": "T",
+      "segments": 8,
+      "characters": 6320,
+      "sha256": "becab0b1c24870d23a1c6b3facc921a68626c84d662a0ccde27722c68b3230f6",
+      "complete_partition": true
+    },
+    {
+      "surah": 110,
+      "author": "K",
+      "segments": 6,
+      "characters": 4199,
+      "sha256": "1146325cf5b69cbd5ba7da869c9c31a61d99efa70201c85972b068dde7a68275",
+      "complete_partition": true
+    },
+    {
+      "surah": 110,
+      "author": "T",
+      "segments": 7,
+      "characters": 6698,
+      "sha256": "5c8037817854b861df110efc87afaf25876db321e2ec95db7b2965434f1a9975",
+      "complete_partition": true
+    },
+    {
+      "surah": 111,
+      "author": "K",
+      "segments": 5,
+      "characters": 4288,
+      "sha256": "1c1b8e0ec9c5ae2250550828a8f2640c9320f0152858adce1b41d7a5cce28605",
+      "complete_partition": true
+    },
+    {
+      "surah": 111,
+      "author": "T",
+      "segments": 8,
+      "characters": 5677,
+      "sha256": "aeddda03a995d628e7e5724ed122c785b986edaea9b89d05ff49bc44e83494ea",
+      "complete_partition": true
+    },
+    {
+      "surah": 112,
+      "author": "K",
+      "segments": 7,
+      "characters": 3579,
+      "sha256": "516382f82de072025328c485a31472ea93c649b524375a6fe68c5f947cdc1364",
+      "complete_partition": true
+    },
+    {
+      "surah": 112,
+      "author": "T",
+      "segments": 15,
+      "characters": 9521,
+      "sha256": "2a93ab3cfd593286afd8489538bdc6ffa3f60a28e64e53758beccc86c69eb262",
+      "complete_partition": true
+    },
+    {
+      "surah": 113,
+      "author": "K",
+      "segments": 7,
+      "characters": 3616,
+      "sha256": "399b78ceeec06a69c1091dcd82529afc1961450c076d6579e60336559c3df9be",
+      "complete_partition": true
+    },
+    {
+      "surah": 113,
+      "author": "T",
+      "segments": 10,
+      "characters": 5274,
+      "sha256": "fa33e693f68233bbde10a5c7693fd5eb28bbf4226722f94b7d2336b3353934f6",
+      "complete_partition": true
+    },
+    {
+      "surah": 114,
+      "author": "K",
+      "segments": 6,
+      "characters": 2384,
+      "sha256": "48e7f5451528585b7ae1e739e918f20da2f8e3a7d02645a4d837282c1c7ed5b8",
+      "complete_partition": true
+    },
+    {
+      "surah": 114,
+      "author": "T",
+      "segments": 9,
+      "characters": 3576,
+      "sha256": "bd48438024025c0f2ffb48a90cf9bd64bcb4b12ebddbe7e8b755ae0c5b3186b8",
+      "complete_partition": true
+    }
+  ],
+  "prior_partition_note": "These pre-review checksums document the recovered archive, not the revised text. Current exact-content invariants are tested against edition.json and reviewed-corpus.json."
+}
