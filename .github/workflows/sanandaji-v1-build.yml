@@ -1,0 +1,28 @@
+name: Assemble Sanandaji Volume I review corpus
+on:
+  push:
+    branches: ['sanandaji/vol1-all-register-2026-11-10']
+    paths: ['.ingest/sanandaji-v1/READY.json']
+permissions:
+  contents: write
+concurrency:
+  group: sanandaji-v1-corpus-review
+  cancel-in-progress: false
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: sanandaji/vol1-all-register-2026-11-10
+      - name: Verify and assemble the exact staged corpus
+        run: python3 tools/assemble-sanandaji-v1.py
+      - name: Commit generated reader data to the same review branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add texts/al-sanandaji/taqrib-al-maram/volume-i-review/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Assemble checksum-verified Sanandaji Volume I review corpus'
+            git push origin HEAD:sanandaji/vol1-all-register-2026-11-10
+          fi
