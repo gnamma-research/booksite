@@ -68,7 +68,7 @@
         "en"
       ],
       "url": "texts/al-mahaimi/mashra-al-khusus/",
-      "note": "Al-Mahāʾimī commentary pp.11–232: consecutive FIRST-PASS English for 222 printed pages. Arabic present in 142 of those pages (11–149 and 230–232), absent in 80 (150–229). Separate Qūnawī: seven English draft sections, five page-specific online Arabic–English proofs (235–238,267), plus 47 Arabic–English excerpts from a separate online witness with 64 contextual links to 61 commentary pages. Standpoint/attribution labels and nine final-text variants are documented. No physical-page photograph or manuscript collation; Āshtiyānī edition only identified bibliographically.",
+      "note": "Al-Mahāʾimī commentary pp.11–232: consecutive FIRST-PASS English for 222 printed pages. Arabic present in 142 of those pages (11–149 and 230–232), absent in 80 (150–229). Separate Qūnawī: seven English draft sections, five page-specific online Arabic–English proofs (235–238,267), plus 47 Arabic–English excerpts from a separate online witness with 64 contextual links to 61 commentary pages. Standpoint/attribution labels and nine final-text variants are documented. No physical-page photograph or manuscript collation; Āshtiyānī edition only identified bibliographically. Five digitally indexed appendix proof pages now link to 19 commentary sections by shared five-word Arabic sequences; these are internal parallels, not independent witnesses.",
       "copytext": "al-Mazīdī 2008 online page-indexed transcription",
       "source_status": "online-2008-transcription-not-photographically-collated",
       "cumulative_coverage_printed_pages": [
@@ -121,7 +121,8 @@
         11,
         149
       ],
-      "latest_working_stage": 11
+      "latest_working_stage": 11,
+      "appendix_direct_lemma_link_count": 19
     },
     {
       "id": "farghani-muntaha-al-madarik",
