@@ -1,9 +1,9 @@
 {
   "schema": 1,
   "title": "Nihāyat al-Ḥikma — cumulative English text collation triage",
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "source": "nihayat-al-hikma/data/book.json",
-  "scope": "All 136 Arabic–English units automatically screened; 80 of 136 individually documented complete local same-base bilingual readings (74 inherited plus Stage VI 6), 0 complete independent printed/manuscript collation of all 136 units, 0 expert-certified; inherited 1428 partial spot checks remain separate.",
+  "scope": "136/136 mechanical structural screens, 86/136 direct full-unit local bilingual reads, 9 passage-targeted digitally transcribed 1428 secondary edition spot checks (5 older + 4 new). A spot check does NOT constitute a complete second-print collation. 0 complete independently collated units and 0 expert certificates.",
   "standard": "No AI-only structural scan is a full semantic English collation or professional critical edition. Local bilingual reading is not an independent Arabic witness. Neither a flagged nor an unflagged row establishes textual accuracy.",
   "summary": {
     "units": 136,
@@ -13,7 +13,7 @@
     "unitsWithThreeOrMoreParagraphDifference": 63,
     "unitsWithAnyHint": 70,
     "automaticallyScreened": 136,
-    "locallyReadAgainstStoredArabic": 80,
+    "locallyReadAgainstStoredArabic": 86,
     "independentlyReconciledAgainstCompleteSecondWitness": 0,
     "expertVerified": 0,
     "hintCounts": {
@@ -21,7 +21,7 @@
       "lexical-spot-check": 8
     },
     "newReviewedThisBatch": 12,
-    "secondaryPrintedDigitalSpotChecks": 5,
+    "secondaryPrintedDigitalSpotChecks": 9,
     "englishCorrectionsThisBatch": 1,
     "reviewedNewThirdBatch": 40,
     "englishCorrectionsThirdBatch": 2,
@@ -29,7 +29,9 @@
     "reviewedNewFifthBatch": 4,
     "englishCorrectionsFifthBatch": 1,
     "reviewedNewSixthBatch": 6,
-    "notesSixthBatch": 1
+    "notesSixthBatch": 1,
+    "reviewedNewSeventhBatch": 6,
+    "secondaryDigitalSpotChecksNewSeventhBatch": 4
   },
   "rows": [
     {
@@ -704,9 +706,22 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Complete local 1417 Arabic-English reading pp.111–114: quiddity, ascending genus and its metaphysical finitude, genus/differentia simplicity, real unity of highest genera, why one quiddity cannot fall under two, necessary/impossible outside generic quiddities, ten categories by induction, alternative reduction to 4/5 categories and author's rebuttal from existence-derived concepts. English preserves objection/reply and tenfold list. TARGETED 1428 print-digital corroboration vol.1 pp.148–152 of opening, category list, and four-/five-category argument only; not exhaustive second witness. No English change.",
+        "sourceGrade": "full source-to-working-English local review against stored 1417 Arabic; separately listed 1428 digital partial spot checks where applicable",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
+      },
+      "secondaryDigitalSpotCheck": {
+        "edition": "1428 al-Zāriʿī revised vol.1",
+        "page": "148–152",
+        "url": "https://lib.rafed.net/view.php?b_id=3108&page=149&type=c_fbook",
+        "checkedPhrases": [
+          "لا ريب أنّ للموجود الممكن ماهيّة",
+          "جمهور المشّائين",
+          "المقولات أربع"
+        ],
+        "scope": "selected source clauses, not complete print collation"
       }
     },
     {
@@ -730,9 +745,22 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Complete local 1417 Arabic-English reading pp.114–117: definition of substance/accident by whether dependent on subject independent of it, property vs essential genus/differentia definition, external vs mental under common vs primary predication, relation of substantial form to matter, prior objection that substrate depends upon form, rebuttal denying genus membership of simple form, positive dependence argument for substance as genus and failed alternative argument from single existential attribute. English retains distinctions. TARGETED 1428 revised vol.1 pp.152–155 confirms definitions and later editor's ref to Bidāya VI.1, which must be read alongside Bidāya VI.2's explicit *bi-sharṭ lā* qualification. No English change; source-located public cross-text critical note N1428-VI02-FORM-01 added.",
+        "sourceGrade": "full source-to-working-English local review against stored 1417 Arabic; separately listed 1428 digital partial spot checks where applicable",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
+      },
+      "secondaryDigitalSpotCheck": {
+        "edition": "1428 al-Zāriʿī revised vol.1",
+        "page": "152–155 incl. editor n.1",
+        "url": "https://lib.rafed.net/view.php?b_id=3108&page=153&type=c_fbook",
+        "checkedPhrases": [
+          "تنقسم الماهيّة انقساما أوّليا",
+          "وأمّا ما قيل",
+          "الصور الجوهريّة ماهيّات بسيطة"
+        ],
+        "scope": "selected source phrases and later editor's footnote, not full independent collation"
       }
     },
     {
@@ -907,9 +935,22 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Complete local 1417 Arabic-English reading pp.139–141: discrete vs continuous, common boundary, temporal nonstable continuum vs coexistent stable quantity, three-dimensional mathematical body/surface/line, number's external actuality, categories of magnitude and species. Working English retains author's exact conceptual example without silently improving it. TARGETED 1428 vol.1 p.185–186 digital corroboration finds same intermediate-segment illustration and explicit editor's n.2 criticism: true shared boundary is a distinct point/line/surface/instant, or any discrete series 3+1+3 could appear continuous. Added public source-located note N1428-VI09-BOUNDARY-01. Not an Arabic textual variant or adopted emendation.",
+        "sourceGrade": "full source-to-working-English local review against stored 1417 Arabic; separately listed 1428 digital partial spot checks where applicable",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
+      },
+      "secondaryDigitalSpotCheck": {
+        "edition": "1428 al-Zāriʿī revised vol.1",
+        "page": "185–186 authorial example + editor n.2",
+        "url": "https://lib.rafed.net/view.php?b_id=3108&page=186&type=c_fbook",
+        "checkedPhrases": [
+          "المتّصل هو : الكمّ الّذي",
+          "القسم المتوسّط يمكن أن يجعل بداية",
+          "الحدّ المشترك خارج عن طرفيه"
+        ],
+        "scope": "authorial locus plus editor's conceptual objection; not whole two-edition collation"
       }
     },
     {
@@ -933,9 +974,22 @@
         }
       ],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Complete local 1417 Arabic-English reading pp.141–144: number's contrast with magnitudes and time, denial of greatest-opposed numerical contrariety, why 10 is not essentially composed of particular lower numeric pairs, gradation by more/less not strength/weakness, finite dimensions line-and-sphere proof, classical rejection of void, indefinitely increasing number versus fully actual infinity and whole/fractions. English preserves all six numbered arguments and qualifications. TARGETED 1428 vol.1 pp.188–189 digital corroboration of opening, first two judgments and editor's classical doxographic sources; remaining whole chapter not independently reverified against printed volume. No English change, do not treat classical finite-dimension argument as uncontested modern theorem.",
+        "sourceGrade": "full source-to-working-English local review against stored 1417 Arabic; separately listed 1428 digital partial spot checks where applicable",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
+      },
+      "secondaryDigitalSpotCheck": {
+        "edition": "1428 al-Zāriʿī revised vol.1",
+        "page": "188–189 opening and numerical contrariety",
+        "url": "https://lib.rafed.net/view.php?b_id=3108&page=189&type=c_fbook",
+        "checkedPhrases": [
+          "من خواصّ الكمّ المساواة",
+          "أنّ العدد لا تضادّ فيه",
+          "العشرة مثلا يجوز فرض تركّبها"
+        ],
+        "scope": "selected clauses only"
       }
     },
     {
@@ -1262,7 +1316,9 @@
       "englishToArabicCharRatio": 1.63,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Complete local 1417 Arabic-English reading pp.183–185: huwiyya as relative identity of differing aspects, rejected predications between continuum halves, Ṣadrā's before/after division answer, primary essential predication through conceptual/essential sameness despite ʿitibār, common predication through existential unity despite conceptual difference, need for attributive existence wujūd naʿtī rather than numerical union of two existences-in-themselves, two 'nexuses' ʿaqd al-waḍʿ/ʿaqd al-ḥaml, third philosophical predication ḥaml al-ḥaqīqa wa-l-raqīqa grounded in higher stage containing lower perfections. All examples present in translation, including two types and the third philosophical usage. No new English correction or external printed comparison.",
+        "sourceGrade": "full source-to-working-English local review against stored 1417 Arabic; separately listed 1428 digital partial spot checks where applicable",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
@@ -1734,7 +1790,9 @@
       "englishToArabicCharRatio": 1.488,
       "hints": [],
       "englishReview": {
-        "status": "automatic-structure-and-lexicon-screen-only",
+        "status": "local-bilingual-reading-checked",
+        "finding": "Complete local 1417 Arabic-English reading pp.244–246: prime vs secondary matter, causality of matter for composite, distinct matter/form relation, reply to materialist reduction of four causes with three arguments (potentiality cannot give actuality; necessity from efficient source; uniform undetermined nature cannot produce diversity), form as formal cause of composite but not of matter, successive vegetative/animal forms and inheritance of acts, final form containing perfections, unitive vs juxtaposed composition. Translation preserves 'form is co-cause of matter' distinct from 'formal cause of composite'. No English correction or external printed collation in this stage.",
+        "sourceGrade": "full source-to-working-English local review against stored 1417 Arabic; separately listed 1428 digital partial spot checks where applicable",
         "independentWitnessCollation": false,
         "externalExpertCertification": false
       }
