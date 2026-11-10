@@ -9,3 +9,5 @@
 .edition-status{max-width:800px;margin:1rem auto;font-size:14px}.status-table{width:100%;border-collapse:collapse;font-size:14px}.status-table th,.status-table td{text-align:start;padding:10px;border-bottom:1px solid var(--line,#b2c4bd)}.source-lemma bdi{white-space:normal}.ui-hide-notes .tibi-layer{display:block}.tibi-off.ui-hide-notes .tibi-layer{display:none!important}
 @media(max-width:600px){.tibi-layer{padding:12px 10px}.quran-context{padding:16px 12px!important}.layer-heading{align-items:start}.commentary-controls{padding:12px}.commentary-controls .muted{font-size:11px}.author-name{font-size:12px}.author-name bdi{font-size:17px}}
 @media print{.commentary-controls,.passage-actions,.tibi-relation{display:none!important}.quran-context{break-inside:avoid}.author-layer{break-inside:auto}.quran-arabic{font-size:24px}.parallel{display:grid;grid-template-columns:1fr 1fr;gap:24px}.tibi-off .tibi-layer{display:none!important}.no-en .en-column,.no-ar .ar-column{display:none!important}}
+
+.quran-basmala{margin-bottom:.65em;font-size:.93em}.basmala-en{text-align:center;font-style:italic;margin-bottom:1em!important}.quran-arabic .ayah-number{unicode-bidi:isolate}

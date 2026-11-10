@@ -2,7 +2,10 @@
 (function(){'use strict';
 function unit(r,first,p,E,sourceHTML){
  let ai=0;
- const q='<section class="quran-context" aria-label="Qurʾānic passage"><div class="quran-heading"><span lang="ar" dir="rtl">القرآن الكريم · سورة '+E(r.surah_ar)+'</span><span>Q '+E(r.q)+'</span></div><div class="quran-arabic" lang="ar" dir="rtl">'+r.verses.map(v=>'<span class="ayah" data-verse="'+E(v.key)+'">'+E(v.ar)+' <span class="ayah-number" aria-label="Verse '+v.number+'">﴿'+String(v.number).replace(/\d/g,d=>'٠١٢٣٤٥٦٧٨٩'[d])+'﴾</span></span>').join(' ')+'</div><div class="q-en" lang="en">'+r.verses.map(v=>'<p><sup>'+v.number+'</sup> '+E(v.en)+'</p>').join('')+'<p class="quran-credit">Verse translation: Marmaduke Pickthall (1930).</p></div></section>';
+ const firstVerse=r.verses[0], parts=firstVerse&&r.s!==1&&firstVerse.number===1?firstVerse.ar.split(' '):[];
+ const basmala=parts.length>4&&/^ب[\u064b-\u065f]*سْمِ/.test(parts[0])?parts.slice(0,4).join(' '):'';
+ const verseArabic=v=>v===firstVerse&&basmala?v.ar.slice(basmala.length+1):v.ar;
+ const q='<section class="quran-context" aria-label="Qurʾānic passage"><div class="quran-heading"><span lang="ar" dir="rtl">القرآن الكريم · سورة '+E(r.surah_ar)+'</span><span>Q '+E(r.q)+'</span></div><div class="quran-arabic" lang="ar" dir="rtl">'+(basmala?'<div class="quran-basmala">'+E(basmala)+'</div>':'')+'﴿ '+r.verses.map(v=>'<span class="ayah" data-verse="'+E(v.key)+'">'+E(verseArabic(v))+' <span class="ayah-number" aria-label="Verse '+v.number+'">۝'+String(v.number).replace(/\d/g,d=>'٠١٢٣٤٥٦٧٨٩'[d])+'</span></span>').join(' ')+' ﴾</div><div class="q-en" lang="en">'+(basmala?'<p class="basmala-en">In the name of Allah, the Beneficent, the Merciful.</p>':'')+r.verses.map(v=>'<p><sup>'+v.number+'</sup> '+E(v.en)+'</p>').join('')+'<p class="quran-credit">Verse translation: Marmaduke Pickthall (1930).</p></div></section>';
  const layers=r.layers.map((s,i)=>{
   const isT=s.author==='tibi';
   const ar=s.ar.split(/\n\s*\n/).filter(x=>x.trim()).map(text=>'<p id="ar-'+r.id+'-'+(++ai)+'" data-anchor="true" data-lang="ar">'+E(p.marks==='unvowelled'?text.replace(/[\u064b-\u065f\u0670]/g,''):text)+'</p>').join('');

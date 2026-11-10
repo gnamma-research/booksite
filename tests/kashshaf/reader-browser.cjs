@@ -15,7 +15,12 @@ async function run(type,name){
   const bahr=await context.newPage();await bahr.goto('http://127.0.0.1:8767/texts/ibn-ajiba/al-bahr-al-madid/#/read/fatiha_1');await bahr.waitForFunction(()=>window.BahrUI);
   assert.deepEqual(menu,await bahr.locator('.primary-nav [data-nav]').evaluateAll(es=>es.map(e=>({route:e.dataset.nav,text:e.textContent.trim(),icon:e.querySelector('use')?.getAttribute('href')}))));
   assert.deepEqual(buttons,await bahr.locator('#readingControls button').evaluateAll(es=>es.map(e=>({label:e.getAttribute('aria-label'),icon:e.querySelector('use')?.getAttribute('href')}))));await bahr.close();
-  results.push({browser:name,menuAndToolbarMatchBahr:true});
+  // The navigation shelf opens and closes without changing the passage or language.
+  if(await page.locator('#leftNav').isVisible())await page.locator('[data-ui="menu-close"]').click();
+  await page.locator('#menuBtn').click();assert.ok(await page.locator('#leftNav').isVisible());
+  await page.locator('[data-ui="menu-close"]').click();assert.equal(await page.locator('#leftNav').isVisible(),false);
+  assert.equal(await page.locator('.passage').getAttribute('data-record'),'K097.05');
+  results.push({browser:name,menuAndToolbarMatchBahr:true,shelfToggle:true});
   for(const r of edition.records){
    assert.ok(r.verses.length);assert.ok(r.layers[0].author==='kashshaf');
    for(const s of r.layers){assert.ok(s.ar.length>0);assert.ok(s.text.length>0);}
@@ -49,8 +54,13 @@ async function run(type,name){
   for(const size of [{width:1440,height:960},{width:320,height:700},{width:390,height:844},{width:844,height:390}]){await page.setViewportSize(size);await page.evaluate(()=>document.fonts.ready);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'No horizontal overflow '+name+' '+size.width);await page.screenshot({path:out+'/'+name+'-'+size.width+'.png'});}
   await page.setViewportSize({width:1440,height:960});await page.evaluate(()=>BahrUI.readingMode('continuous'));await page.waitForFunction(()=>document.querySelectorAll('.passage').length===123,{timeout:30000});
   assert.equal(await page.locator('.author-layer').count(),277);assert.equal(await page.locator('.quran-context').count(),123);
+  assert.ok(await page.locator('.quran-basmala').count()>0);
+  assert.equal(await page.locator('.quran-arabic .ayah').first().getAttribute('data-verse'),'1:1');
+  assert.ok(await page.locator('.quran-arabic').evaluateAll(es=>es.every(e=>e.textContent.includes('﴿')&&e.textContent.includes('﴾'))));
+  assert.ok(await page.locator('.passage').evaluateAll(es=>es.every(e=>{const q=e.querySelector('.quran-context'),l=e.querySelector('.author-layer');return Boolean(q.compareDocumentPosition(l)&Node.DOCUMENT_POSITION_FOLLOWING)})));
   const texts=await page.locator('.author-layer').evaluateAll(es=>es.map(e=>{const copy=e.querySelector('.en-column').cloneNode(true);copy.querySelectorAll('.ar-term,.source-lemma,h3,button,.personal-paragraph-tools,.scholarly-anchor').forEach(x=>x.remove());return {id:e.dataset.sourceId,text:[...copy.querySelectorAll('p[data-anchor]')].map(p=>p.textContent).join('\n\n')};}));
-  const normal=s=>s.replace(/\s+/g,' ').trim();for(const s of edition.records.flatMap(r=>r.layers)){assert.equal(normal(texts.find(x=>x.id===s.id).text),normal(s.text),'Preserved complete English '+s.id);}
+  // Added Arabic gloss spans leave a separator behind when removed; compare every non-whitespace character.
+  const normal=s=>s.replace(/\s+/g,'');for(const s of edition.records.flatMap(r=>r.layers)){assert.equal(normal(texts.find(x=>x.id===s.id).text),normal(s.text),'Preserved complete English '+s.id);}
   const noJS=await browser.newContext({javaScriptEnabled:false}),plain=await noJS.newPage();for(const book of edition.books){await plain.goto(base+'plain/surah-'+String(book.number).padStart(3,'0')+'.html');assert.equal(await plain.locator('.author-layer').count(),edition.records.filter(r=>r.s===book.number).flatMap(r=>r.layers).length);assert.ok(await plain.locator('.quran-arabic').first().isVisible());}await noJS.close();
   for(const file of ['downloads/Kashshaf-Tibi-C07.html','downloads/Kashshaf-Tibi-C07.txt','arabic-alignment-audit.json'])assert.equal((await context.request.get(base+file)).status(),200);
   assert.deepEqual(errors,[]);assert.deepEqual(failures,[]);results.push({browser:name,all277EnglishSectionsPreserved:true,all277ArabicSectionsPresent:true,static19CompleteSurahs:true,print:true,responsive:true,pageErrors:errors,failedRequests:failures});
