@@ -17,7 +17,7 @@ K001.01 · Names, place of revelation, and verse count [K-DKA I:1]
 
 
 
-It is Meccan. It has also been said to be both Meccan and Medinan, since it was revealed once in Mecca and again in Medina. It is called “Mother of the Qurʾān” (Umm al-Qurʾān), because it includes the meanings found in the Qurʾān: praising God Most High as He deserves; imposing worship through commands and prohibitions; and promises and threats. For the same reason it is called “The Treasure” (al-Kanz) and “The Comprehensive” (al-Wāfiya). It is called “Praise” (al-Ḥamd (الحمد)), and “The Oft-Repeated” (al-Mathānī), because it is repeated in every rakʿa. It is called “Prayer” (al-Ṣalāh), because prayer is excellent, or valid, through its recitation within it; and “Healing” (al-Shifāʾ) and “The Healer” (al-Shāfiya). It has seven verses by agreement, although some count “upon whom You have bestowed favour” as a verse ending and do not count the basmala (بسملة), whereas others take the opposite position.
+It is Meccan. It has also been said to be both Meccan and Medinan, since it was revealed once in Mecca and again in Medina. It is called “Mother of the Qurʾān” (Umm al-Qurʾān (أم القرآن)), because it includes the meanings found in the Qurʾān: praising God Most High as He deserves; imposing worship through commands and prohibitions; and promises and threats. For the same reason it is called “The Treasure” (al-Kanz (الكنز)) and “The Comprehensive” (al-Wāfiya (الوافية)). It is called “Praise” (al-Ḥamd (الحمد)), and “The Oft-Repeated” (al-Mathānī (المثاني)), because it is repeated in every rakʿa (ركعة). It is called “Prayer” (al-Ṣalāh (الصلاة)), because prayer is excellent, or valid, through its recitation within it; and “Healing” (al-Shifāʾ (الشفاء)) and “The Healer” (al-Shāfiya (الشافية)). It has seven verses by agreement, although some count “upon whom You have bestowed favour” as a verse ending and do not count the basmala (بسملة), whereas others take the opposite position.
 
 
 
@@ -65,13 +65,13 @@ Al-Asās says: “Taʿabbadanī (تعبّدني) so-and-so and iʿtabadanī (ا�
 
 Here the verb takes bāʾ (باء (ب)) because it incorporates the meaning of imposing an obligation (taklīf (تكليف)): that is, He imposed commands and prohibitions upon him as worship, meaning the things commanded and prohibited. It is also possible for bāʾ (باء (ب)) to be as in “I wrote with the pen,” with command and prohibition retaining their literal meanings.
 
-On “and al-Wāfiya for that reason”:
+On “and al-Wāfiya (الوافية) for that reason”:
 
 That is, it is called “The Treasure” and “The Comprehensive” for the meaning already mentioned: its inclusion of the meanings.
 
-On “in every rakʿa”:
+On “in every rakʿa (ركعة)”:
 
-That is, in every prayer. God Most High says, “Bow with those who bow” [2:43]. It has also been said that this is because it is paired with another sūrah in every rakʿa.
+That is, in every prayer. God Most High says, “Bow with those who bow” [2:43]. It has also been said that this is because it is paired with another sūrah in every rakʿa (ركعة).
 
 On “because it is excellent, or valid”:
 
@@ -259,7 +259,7 @@ They said, “The jinn.” I said, “Good evening to you!”
 
 Al-Aṣmaʿī said: “ʿIm ṣabāḥan (عِمْ صباحًا), ‘Good morning,’ means anʿim (أنعم), ‘Enjoy [a good morning].’ The reconstructed past verb is waʿama (وَعَمَ), with present yaʿimu (يَعِمُ). The past is not actually uttered, just as the past forms of daʿ (دَعْ) and dhar, ‘leave,’ are not uttered.” Al-Anbārī mentioned this.
 
-The poet claimed that the jinn came to him while he was beside his fire, and that he greeted them and invited them to eat. One says ḥasadahu l-shayʾa and ḥasadahu ʿalā l-shayʾ, “he envied him the thing.” That is: “We envy them because they eat, whereas we do not eat.”
+The poet claimed that the jinn came to him while he was beside his fire, and that he greeted them and invited them to eat. One says ḥasadahu l-shayʾa and ḥasadahu ʿalā (على) l-shayʾ, “he envied him the thing.” That is: “We envy them because they eat, whereas we do not eat.”
 
 “To the food” means “Come!”
 
@@ -654,7 +654,7 @@ K001.17 · Guidance and the straight path [K-DKA I:15]
 
 “Guide us on the straight path.”
 
-Hadā (هدى) originally takes its complement with lām (لام (ل)) or ilā, as in His sayings “This Qurʾān guides to that which is most upright” [17:9] and “You surely guide to a straight path” [42:52]. Here it is treated like ikhtāra (اختار), “choose,” in “Moses chose his people” [7:155; that is, chose from among them].
+Hadā (هدى) originally takes its complement with lām (لام (ل)) or ilā (إلى), as in His sayings “This Qurʾān guides to that which is most upright” [17:9] and “You surely guide to a straight path” [42:52]. Here it is treated like ikhtāra (اختار), “choose,” in “Moses chose his people” [7:155; that is, chose from among them].
 
 To ask for guidance when they are already guided means asking for increased guidance through the bestowal of gracious aids (alṭāf (ألطاف)), as in His sayings “Those who are guided, He increases in guidance” [47:17] and “Those who strive for Our sake, We shall surely guide upon Our ways” [29:69]. It is related from ʿAlī and Ubayy—God be pleased with them both—that “Guide us” means “Make us steadfast.” Command and supplication have a single form, since each is a request; they differ only in rank. ʿAbd Allāh (الله) read arshidnā (أرشدنا), “Direct us rightly.”
 
@@ -876,7 +876,7 @@ On “he read a-lam nashraḥa (نَشْرَحَ), with fatḥa (فَتْحَة 
 Ibn Jinnī said: “A-lam nashraḥa (نَشْرَحَ), with fatḥa (فَتْحَة (ـَ)) on the ḥāʾ (حاء (ح)), is transmitted from Abū Jaʿfar al-Manṣūr. Ibn Mujāhid said: ‘This is wholly impermissible.’” Ibn Jinnī said: “The obvious position, and what accords with customary usage, is as Ibn Mujāhid states. Something like it nevertheless occurs in what I read to Abū ʿAlī in Abū Zayd's Nawādir:
 ‘From which of death's two days shall I flee—
 a day not decreed, or a day decreed?’
-It is said that he intended lam yuqdar-an, with the light emphatic nūn (نون (ن)). In our view omitting it is impermissible, because the emphatic nūn (نون (ن)) is most closely allied to expansion and elaboration, not concision and abbreviation. In Abū Zayd's Nawādir there is another verse, said to be fabricated:
+It is said that he intended lam (لم) yuqdar-an, with the light emphatic nūn (نون (ن)). In our view omitting it is impermissible, because the emphatic nūn (نون (ن)) is most closely allied to expansion and elaboration, not concision and abbreviation. In Abū Zayd's Nawādir there is another verse, said to be fabricated:
 ‘Strike away the anxieties that visit you by night,
 as with a sword you strike a horse's forelock.’
 He intended iḍrib-an (اضربَنْ), with the light nūn (نون (ن)), and omitted it.”
@@ -1041,7 +1041,7 @@ T094.12 · Exclusive longing and the unusual conjunction (503)
 
 واجعل رغبتك إليع خصوصا
 
-On “make Him exclusively the object of your longing”: particularization is conveyed by placing the prepositional phrase before the verb. Al-Sayyid says in al-Amālī: “The fāʾ (فاء (ف)) occurs together with the wāw (واو (و)), and ilā is governed by what comes after the fāʾ (فاء (ف)). Similarly, in ‘and your garments—purify them’ (74:4), what precedes the fāʾ (فاء (ف)) is made accusative by what follows it. This is among the remarkable features of their speech: ordinarily fāʾ (فاء (ف)) coordinates, introduces a response, or introduces something resembling a response, such as the predicate of an incomplete noun—that is, a relative pronoun whose relative clause is verbal. Here it falls outside its assigned function.”
+On “make Him exclusively the object of your longing”: particularization is conveyed by placing the prepositional phrase before the verb. Al-Sayyid says in al-Amālī: “The fāʾ (فاء (ف)) occurs together with the wāw (واو (و)), and ilā (إلى) is governed by what comes after the fāʾ (فاء (ف)). Similarly, in ‘and your garments—purify them’ (74:4), what precedes the fāʾ (فاء (ف)) is made accusative by what follows it. This is among the remarkable features of their speech: ordinarily fāʾ (فاء (ف)) coordinates, introduces a response, or introduces something resembling a response, such as the predicate of an incomplete noun—that is, a relative pronoun whose relative clause is verbal. Here it falls outside its assigned function.”
 The sūrah is complete, by God's praise and aid. God suffices us; how excellent a trustee He is.
 
 
@@ -2054,7 +2054,7 @@ K102.04 · Seeing the Fire; readings; certainty
 
 
 
-He then says, “You will surely see the blazing Fire,” explaining what He had warned them against and threatened them with. The magnifying effect of clarifying something after leaving it unspecified has already been discussed. This is the response to an omitted oath. The oath emphasizes the threat and establishes that what they are threatened with admits no doubt. He repeats it, coordinating it with thumma, to intensify the threat and increase the terror.
+He then says, “You will surely see the blazing Fire,” explaining what He had warned them against and threatened them with. The magnifying effect of clarifying something after leaving it unspecified has already been discussed. This is the response to an omitted oath. The oath emphasizes the threat and establishes that what they are threatened with admits no doubt. He repeats it, coordinating it with thumma (ثم), to intensify the threat and increase the terror.
 La-tarʾunna (لَتَرَؤُنَّ) is also read, with a hamza (همزة (ء)) [in place of the wāw (واو (و))]; it is considered objectionable. If you ask why, when changing a wāw (واو (و)) bearing ḍamma (ضَمَّة (ـُ)) into hamza (همزة (ء)) is a regular analogy, I answer: that applies to a wāw (واو (و)) whose ḍamma (ضَمَّة (ـُ)) is permanent. Here it is incidental, introduced to avoid the meeting of two vowelless letters. La-turawunna (لَتُرَوُنَّ) and la-turawunnahā (لَتُرَوُنَّها) are also read as passives: “you will surely be made to see,” and “you will surely be made to see it.”
 “With the very certainty of sight” (ʿayna al-yaqīn (عين اليقين)): a seeing that is certainty itself and its pure essence. Seeing may mean knowledge and visual perception.
 
@@ -2413,7 +2413,7 @@ On “nothing in the human body is more delicate than the fuʾād (فؤاد),”
 
 On “or, figuratively, it examines the mines from which what necessitates it is drawn”: choosing the word “mines” hints at the reverse of the Prophet’s saying, “People are mines, like mines of gold and silver.” Since these people’s hearts are the settled seats of the pollution and filth of corrupt beliefs that necessitate the Fire, and the commencement of each person’s burning is fixed according to what he deserves, it is said that the Fire figuratively examines the mines of what necessitates it.
 
-In al-Taysīr, Abū Saʿīd says: “It knows how much punishment each of them deserves because of the unbelief and corrupt beliefs in his heart.” This comes from saying iṭṭalaʿa (اطّلع) fulānun ʿalā amrinā: he became acquainted with our affair and knew it. God has made the fire such that it burns each person according to his deserts, neither adding nor subtracting, as though it had ascertained the amount he deserves. He says: “Since it may be described as enraged and as calling whoever turned his back and withdrew, it may also be described in this way.”
+In al-Taysīr, Abū Saʿīd says: “It knows how much punishment each of them deserves because of the unbelief and corrupt beliefs in his heart.” This comes from saying iṭṭalaʿa (اطّلع) fulānun ʿalā (على) amrinā: he became acquainted with our affair and knew it. God has made the fire such that it burns each person according to his deserts, neither adding nor subtracting, as though it had ascertained the amount he deserves. He says: “Since it may be described as enraged and as calling whoever turned his back and withdrew, it may also be described in this way.”
 
 
 
@@ -2745,7 +2745,7 @@ T106.02 · Linking the two sūrahs [XVI:586]
 
 On “He made them like eaten stalks for the accustomed security of Quraysh,” al-Zajjāj says: “The meaning is: God destroyed the People of the Elephant so that Quraysh and their accustomed winter and summer journeys might remain.”
 
-On “in the second [unit] of the sunset prayer”: that is, in the second rakʿa; in the first rakʿa he recited Sūrat “By the fig.” This apparently indicates that they are one sūrah. [This is Ṭībī’s inference, retained as his statement.]
+On “in the second [unit] of the sunset prayer”: that is, in the second rakʿa (ركعة); in the first rakʿa (ركعة) he recited Sūrat “By the fig.” This apparently indicates that they are one sūrah. [This is Ṭībī’s inference, retained as his statement.]
 
 
 
@@ -3301,7 +3301,7 @@ K109.03 · Future and past; the use of mā
 
 
 
-“I do not worship” intends worship in the future, because lā (لا) is used only with an imperfect verb having a future meaning, just as mā (ما) is used only with an imperfect having a present meaning. Do you not see that lan emphatically negates what lā (لا) negates? Al-Khalīl said that lan originally consists of lā (لا) an. The meaning is: in the future I will not do what you ask of me, namely worship your gods; nor will you do in the future what I ask of you, namely worship my God.
+“I do not worship” intends worship in the future, because lā (لا) is used only with an imperfect verb having a future meaning, just as mā (ما) is used only with an imperfect having a present meaning. Do you not see that lan (لن) emphatically negates what lā (لا) negates? Al-Khalīl said that lan (لن) originally consists of lā (لا) an (أن). The meaning is: in the future I will not do what you ask of me, namely worship your gods; nor will you do in the future what I ask of you, namely worship my God.
 “Nor am I a worshipper of what you have worshipped” means: at no time in the past was I a worshipper of what you worshipped then. You never knew me to worship an idol in the age of ignorance; how, then, can this be expected of me in Islam? “Nor are you worshippers of what I worship” means: at no time have you worshipped that which I now worship.
 If you ask why He did not say “what I worshipped” (mā (ما) ʿabadtu (عبدت)), as He said “what you worshipped” (mā (ما) ʿabadtum (عبدتم)), I answer: they used to worship idols before the prophetic mission, whereas he was not worshipping God at that time. [Ṭībī's sustained objection to this statement is translated below.]
 If you ask why mā (ما), “what,” is used rather than man, “who,” I answer: the intended consideration is the description, as though He said, “I do not worship the false, and you do not worship the true.” It is also said that mā (ما) forms a verbal noun: I do not perform your worship, and you do not perform my worship.
@@ -3500,7 +3500,7 @@ T110.03 · Relief from Yemen and the Arabs’ words [XVI:616]
 
 On “I find your Lord’s nafas (نَفَس) from Yemen,” al-Nihāya says: “Nafas (نَفَس) is borrowed from the air drawn inward by breathing, which cools and moderates the inward heat; or from the breath of wind one inhales and finds refreshing; or from a garden’s breath, its pleasant scents, through which distress is relieved. One says, ‘You have breathing space in your affair,’ and ‘Act while you have breathing space in your life’: breadth and room.”
 
-On ammā (أمّا) idh ẓafira (ظفر), “now that he has prevailed”: ammā (أمّا) is transmitted both lightened and doubled. The doubled form is preferable, for ammā (أمّا) distinguishes cases: before he prevailed over the sanctuary’s people we hoped to overcome him; now that he has prevailed we have no strength against him.
+On ammā (أمّا) idh (إذ) ẓafira (ظفر), “now that he has prevailed”: ammā (أمّا) is transmitted both lightened and doubled. The doubled form is preferable, for ammā (أمّا) distinguishes cases: before he prevailed over the sanctuary’s people we hoped to overcome him; now that he has prevailed we have no strength against him.
 
 
 
@@ -3828,7 +3828,7 @@ T111.08 · Anger, the poem, and final syntax [XVI:630–631]
 
 لتمتعض
 
-Maʿiḍtu (مَعِضْتُ) and imtaʿaḍtu (امتعضت) mean I became angry and found something distressing. In “what did you intend toward insulting me,” aradta (أردت) includes the meaning of turning toward, and therefore takes ilā. A shādikha (شادخة) is a horse’s broad white blaze extending from forelock to nose without touching the eyes, a feature of noble horses. “The elder” is taken as ʿAbd al-Muṭṭalib—but this is not correct, since she is Ḥarb’s daughter and Abū Sufyān’s sister, as stated.
+Maʿiḍtu (مَعِضْتُ) and imtaʿaḍtu (امتعضت) mean I became angry and found something distressing. In “what did you intend toward insulting me,” aradta (أردت) includes the meaning of turning toward, and therefore takes ilā (إلى). A shādikha (شادخة) is a horse’s broad white blaze extending from forelock to nose without touching the eyes, a feature of noble horses. “The elder” is taken as ʿAbd al-Muṭṭalib—but this is not correct, since she is Ḥarb’s daughter and Abū Sufyān’s sister, as stated.
 
 On the interpretation that her appearance in Hell matches her former appearance: “and his wife, carrier of firewood” is then a circumstantial clause referring to the pronoun in sa-yaṣlā (سَيَصْلَى), or “his wife” is conjoined to that pronoun. On the earlier interpretation it cannot be a circumstantial clause, but one sentence is conjoined to another. Abū l-Baqāʾ says: “Imraʾatuhu (امرأته) has two analyses: a subject with ḥammāla (حمّالة) as predicate; or conjoined to the pronoun in sa-yaṣlā (سَيَصْلَى). On the latter, ḥammāla (حمّالة) is either an adjective for the preceding noun or stands for ‘while she is a carrier.’”
 
