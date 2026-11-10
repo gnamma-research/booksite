@@ -1,0 +1,41 @@
+name: Kashshaf published edition verification
+on:
+  push:
+    branches: [codex/kashshaf-c07-live-verify-20261110]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Verify the public reviewed edition
+        run: |
+          python3 - <<'PY'
+          import json,time,urllib.request
+          base='https://gnamma-research.github.io/booksite/texts/al-zamakhshari/al-kashshaf/'
+          for attempt in range(18):
+              try:
+                  url=base+'reviewed-corpus.json?verify=889d4136-'+str(attempt)
+                  with urllib.request.urlopen(url,timeout=25) as r:
+                      corpus=json.load(r)
+                  passages=[s for b in corpus['books'] for s in b['segments']]
+                  assert len(passages)==277
+                  assert corpus['review']['arabic_lacunae']==['T113.06']
+                  break
+              except Exception as e:
+                  print('Waiting for reviewed release:',type(e).__name__,str(e),flush=True)
+                  if attempt==17: raise
+                  time.sleep(15)
+          with urllib.request.urlopen(base+'review-register.html?verify=889d4136',timeout=25) as r:
+              register=r.read().decode()
+          assert 'Passage decisions' in register and 'Recovered C07 evidence' in register
+          with urllib.request.urlopen(base+'plain/surah-001.html?verify=889d4136',timeout=25) as r:
+              fatiha=r.read().decode()
+          assert 'kingship' in fatiha and 'page-image collation pending' in fatiha
+          with urllib.request.urlopen(base+'handoff.txt?verify=889d4136',timeout=25) as r:
+              handoff=r.read().decode()
+          assert 'C07 REVIEWED' in handoff and '26 correction records' in handoff
+          print('PASS: public reviewed edition, 277 passages, one marked Arabic gap, review register, Fatiha and cumulative handoff.')
+          PY
