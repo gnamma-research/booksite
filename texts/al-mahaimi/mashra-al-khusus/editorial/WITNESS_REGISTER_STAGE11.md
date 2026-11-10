@@ -14,6 +14,15 @@ A source is not marked **collated** unless its manuscript/facsimile has actually
 - **Status:** bibliographically confirmed; **no facsimile or manuscript pages acquired/collated by this project**. A reproduction of the opening folios is *referenced* by Peacock, not yet used for textual collation. Exact ending folio and completeness at the end are unknown.
 - **Acquisition priority:** high. Request a legal complete digital reproduction, or at minimum the text's ending and colophon, from Leiden University Libraries using precisely shelfmark **Or. 5675**. First inspect the final words and compare with 2008 p. 232's truncated electronic transcription `فإذا ظهرت آثار الوجود بشرط`; then investigate variants `الظهور في الوجود`/`الظهور للوجود` and `توجب`/`يوجب`/`بموجب`.
 
+### Manuscript M1: interlinear transmission evidence (2025)
+
+A recent independent study **actually analyzes this same manuscript**, strengthening the identification and showing a bilingual pedagogical layer: Muhammad Dluha Luthfillah, “Not the Utawi You Think You Know: Some Preliminary Notes on Early Javanese Interlinear Translations,” *Journal of Arabic and Islamic Studies* **25.3 (2025): 175–195**, DOI **10.5617/jais.12698**. The study explicitly describes Leiden Or. 5675 (1142 AH / 1729–30) as a **Banten copy with interlinear Javanese translation**. In its examples, *utawi* functions primarily as a marker of the nominal-sentence subject (*mubtadaʾ*), unlike some earlier usages connected to the conjunction `wāw al-istiʾnāf`. This bears on the history of reading and teaching the commentary, but the published linguistic observations are **not a manuscript collation performed by GNAMMA**, nor proof of the entire textual content or ending.
+
+- Peer-reviewed published item: https://doi.org/10.5617/jais.12698
+- Open study text (volume PDF): https://tawfeeq-shekh-ahmad.huji.ac.il/sites/default/files/textual_microcosms/files/001-222_intlintr_complete.pdf
+
+The register should ultimately distinguish (a) the copyist's Arabic hand, (b) interlinear Javanese glosses and their writer/date if establishable, (c) marginalia, and (d) later owner inscriptions.
+
 ## E1 · Āshtiyānī edition, Qom, 1421 AH [2000–01]
 
 - **Title and editor:** *Mashraʿ al-khuṣūṣ*, edited/introduction by Sayyid Jalāl al-Dīn Āshtiyānī, 335 pp.; ISBN **964424804X**. NII catalog NCID BA64748920; recorded library holdings Kyoto University and University of Tokyo.
