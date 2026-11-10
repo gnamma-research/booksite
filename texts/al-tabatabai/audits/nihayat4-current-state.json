@@ -1,17 +1,18 @@
 {
   "schema": "nihayat4-restart-state-v1",
-  "updatedOn": "2026-11-10",
+  "updatedOn": "2026-11-11",
   "timezone": "Asia/Riyadh",
   "project": "Nihayat–Muzaffar–Bidayat Hikma reader",
   "repository": "gnamma-research/booksite",
   "preservation": {
     "status": "saved-remotely",
-    "branch": "nihayat4-recovery-20261110",
-    "contentCommit": "5098feea89a2b131cee916289ff328e743a37d84",
+    "branch": "nihayat4-stage10-20261111",
+    "contentCommit": "4a92fdbc54da37b9859a00fb567dc4a5a6a87bc4",
     "previousRemoteStage9Commit": "44fa9a086a17dfe446295f01d076b0dd6ef31959",
     "originalDraftPullRequest": 288,
     "originalDraftPullRequestStatus": "open-draft-not-merged",
-    "remotePublicationOfRecoveredWork": false
+    "remotePublicationOfRecoveredWork": false,
+    "activeDraftPullRequest": 289
   },
   "published": {
     "stage": 8,
@@ -95,13 +96,9 @@
     "wholeNihayaReviewReperformedDuringRecovery": false
   },
   "nextWork": {
-    "firstTask": "Reconcile and integrate the 83 recovered Nihaya reports against the adopted-decision ledger, starting at N-INTRO. Preserve historical variants and source grades.",
-    "firstNewExternalComparison": "N-V-05",
+    "firstTask": "Reconcile and incorporate all 83 recovered reports and the 3 new V.5–7 comparisons. Exact early/late integration plans are in preparation; check saved files before repeating.",
+    "firstNewExternalComparison": "N-VI-07",
     "remainingExternalGroups": [
-      {
-        "range": "N-V-05–N-V-07",
-        "count": 3
-      },
       {
         "range": "N-VI-07–N-VI-21",
         "count": 15
@@ -120,9 +117,6 @@
       }
     ],
     "remainingExternalUnitIds": [
-      "N-V-05",
-      "N-V-06",
-      "N-V-07",
       "N-VI-07",
       "N-VI-08",
       "N-VI-09",
@@ -185,6 +179,7 @@
     "Cumulative saved checkpoints and honest separate progress bars"
   ],
   "restartRules": [
+    "The current field supersedes the recovered historical snapshot. The old recovery guard checks the original Stage IX bytes only; intentional Stage X changes must not be reset to satisfy it.",
     "Read the short start file and this state first; do not recursively load previous chats or every historical handoff.",
     "Read only the current unit/report/source window; use programmatic summaries for large files.",
     "Check saved effects before retrying a failed operation; preserve newer branch changes.",
@@ -192,5 +187,32 @@
     "Report drafted, reviewed, incorporated, remotely saved and published as separate states.",
     "Update this ledger from actual identifiers and evidence; never invent whole-work or overall percentages."
   ],
-  "recoveryManifest": "audits/recovery-stage9-2026-11-10/repo-file-manifest.json"
+  "recoveryManifest": "audits/recovery-stage9-2026-11-10/repo-file-manifest.json",
+  "current": {
+    "stage": 10,
+    "status": "saved-work-in-progress",
+    "pairedUnitsByBook": {
+      "muzaffar-al-mantiq": 140,
+      "bidayat-al-hikma": 111,
+      "nihayat-al-hikma": 136
+    },
+    "combinedUnits": 387,
+    "nihayaExternalComparisonRecords": 87,
+    "nihayaExternalComparisonsIntegrated": 1,
+    "nihayaExternalComparisonsRemaining": 49,
+    "pendingRecoveredReports": 83,
+    "pendingNewReports": 3,
+    "newComparisonIds": [
+      "N-V-05",
+      "N-V-06",
+      "N-V-07"
+    ],
+    "newComparisonReport": "audits/nihaya-external-stage10-new.json",
+    "newIntegrationPlan": "audits/nihaya-stage10-v-integration.json",
+    "readerFixes": 3,
+    "readerQaRecord": "audits/nihayat-stage10-reader-qa.json",
+    "remoteReaderRun": 42921111094,
+    "remoteReaderStatus": "in-progress",
+    "newPdfCount": 0
+  }
 }
