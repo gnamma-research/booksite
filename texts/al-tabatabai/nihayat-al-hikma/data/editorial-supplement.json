@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "purpose": "Additional comparative glossary and textual witnesses for the Nihāyat al-Ḥikma reader. Does not modify the authorial Arabic or the translation.",
   "glossary": [
     {
@@ -441,7 +441,7 @@
       "description": "Secondary collation witness only (vol. 2, 336 pp., 4th edition). Its pagination and critical notes differ from the existing Qum 1417 transcription and are not the reader’s current page locators."
     }
   ],
-  "statusNote": "The presence of a corrected editorial witness does not mean the entire authorial Arabic has been collated against it; variants require documented individual decisions. This fourth-batch supplement additionally registers one unresolved IX.9 internal-reference conjecture; it is NOT an adopted variant and has not been independently witnessed. No specialist certification is implied.",
+  "statusNote": "The presence of a corrected editorial witness does not mean the entire authorial Arabic has been collated against it; variants require documented individual decisions. This fourth-batch supplement additionally registers one unresolved IX.9 internal-reference conjecture; it is NOT an adopted variant and has not been independently witnessed. No specialist certification is implied. Two additional later-print annotations (VI.2 substantial forms and VI.9 continuum-boundary criticism) are recorded as editor/analytical remarks, NOT as adopted manuscript variants. The IX.9 conjecture remains unadopted.",
   "criticalNotes": [
     {
       "id": "N1428-I02-01",
@@ -550,6 +550,32 @@
       "originalReading": "كما في القسم الأول",
       "proposedReading": "كما في القسم الثاني",
       "evidenceGrade": "internal logical argument only; no parallel printed/manuscript attestation in this stage"
+    },
+    {
+      "id": "N1428-VI09-BOUNDARY-01",
+      "passageId": "N-VI-09",
+      "type": "Later printed editor's conceptual objection · boundary of continuum",
+      "text": "In the 1428 AH revised edition, vol. 1, printed p.185–186, editor al-Zāriʿī objects (p.186 n.2) to the author's illustration that an intermediate segment of a divided line can serve as the shared boundary between adjacent segments. The editor insists that a shared boundary is outside both adjacent magnitudinal parts: a point between two parts of a line, a line between parts of a surface, a surface between portions of a body, and an instant between portions of time. Otherwise a discrete number such as seven could be divided into three, one, three and the middle unit incorrectly counted as a common boundary, erasing the distinction between continuous and discrete quantity. The author's 1417 Arabic wording and its literal English remain unchanged; attach the editor's argument as criticism, not an attested manuscript emendation. The wording of the author's example is also present in the later digital print; no alternative original reading claimed.",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=186&type=c_fbook",
+      "source": "Nihāyat al-Ḥikma, ed. ʿAbbās ʿAlī al-Zāriʿī, 4th ed., Qum 1428 AH, vol. 1, printed p.186 n.2; authorial chapter IX on quantity in Stage VI (N-VI-09), base 1417 AH pp.139–141",
+      "status": "Later editor's printed conceptual objection independently read in digital edition; not a manuscript variant, not an adopted change",
+      "adoption": "not-applicable-editorial-comment",
+      "subject": "continuity/common limit; discreteness",
+      "originalReading": "القسم المتوسّط يمكن أن يجعل بداية لكلّ من الجانبين ونهاية له",
+      "proposedReading": null
+    },
+    {
+      "id": "N1428-VI02-FORM-01",
+      "passageId": "N-VI-02",
+      "type": "Intertextual authorial qualification · substance genus and substantial forms",
+      "text": "The 1428 revised editor at vol. 1, printed p.154 n.1 points to Muḥammad Taqī al-Āmulī's position and cross-refers to Ṭabāṭabāʾī's *Bidāyat al-Ḥikma* p.87, where the initial definition includes an elemental substantial form inhering in matter that depends upon that form. The *Nihāyat* chapter, however, insists that substantial forms are simple quiddities not species falling directly under the genus of substance. Compare the user's bilingual *Bidāya* units B-VI-01 and B-VI-02: B-VI-01 permits 'substance' as an existential descriptor of form in dependent matter; B-VI-02 expressly states that corporeal form enters the fivefold classification only incidentally, because a differentia taken *bi-sharṭ lā* does not fall under the genus of substance even if substance is predicated of it. Accordingly, do not call the two authorial works unqualifiedly contradictory or silently harmonize them: distinguish definitional description, genre membership, and common vs primary predication. This is an analytical reconciliation, not a newly discovered variant or final doctrinal adjudication.",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=153&type=c_fbook",
+      "source": "1428 al-Zāriʿī edition, vol. 1 printed pp.153–155 n.1; compare *Bidāyat al-Ḥikma* local authorial units B-VI-01 and B-VI-02, Arabic reader source https://lib.rafed.net/m/?b_id=1571&type=c_fbook",
+      "status": "Later edition footnote cross-reference and exact two local Bidāya Arabic chapter checks; interpretive comparison, not print variant",
+      "adoption": "not-applicable-intertextual-note",
+      "subject": "substance vs form; genus vs common predication",
+      "originalReading": null,
+      "proposedReading": null
     }
   ],
   "sourceCriticalPolicy": "Preserve authorial notes explicitly marked منه رحمه الله; distinguish later editor's explanatory notes; challenge historically questionable ascriptions by checking named scholars' own texts. These criticalNotes are distinct from the authorial Arabic and translation."

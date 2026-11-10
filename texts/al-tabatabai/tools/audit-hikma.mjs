@@ -74,11 +74,11 @@ for(const [name,file] of books){
     check(units.some(u=>u.id==='M-P-01'),'Muẓaffar introduction must precede its Book III selections');
     check(units.filter(u=>/^M-K-(0[1-9]|1[0-7])$/.test(u.id)).length===17,
       'Muẓaffar Book II must preserve seventeen working bilingual reading units, some source-normalized');
-    check(units.length===67,'Muẓaffar must contain 67 selected working units including 14 original Book IV selections');
-    const newBook4=['M-C-01','M-C-02','M-C-03','M-C-04','M-C-05','M-C-06','M-C-07','M-C-08','M-C-09','M-C-10','M-C-11','M-C-12','M-C-13','M-C-14'];
+    check(units.length===78,'Muẓaffar must retain 78 selected original Arabic-English working passages and 25 Book IV readings');
+    const newBook4=Array.from({length:25},(_,i)=>'M-C-'+String(i+1).padStart(2,'0'));
     check(stages.some(x=>x.id==='C'&&x.bookNumber===4),'Muẓaffar new Book IV stage missing');
     check(newBook4.every(id=>units.some(u=>u.id===id&&u.stage==='C'&&u.arabic.length>350&&u.english.length>850)),
-      'Muẓaffar 14 Book IV original Arabic-English readings missing/truncated');
+      'Muẓaffar 25 source-grounded Book IV selected Arabic-English readings missing/truncated');
     check(stages.some(x=>x.id==='K'&&x.bookNumber===2),'Muẓaffar Book II stage is missing');
     const universalIds=['M-K-01','M-K-02','M-K-03','M-K-04','M-K-05','M-K-06','M-K-07','M-K-08','M-K-09','M-K-10','M-K-11','M-K-12','M-K-13','M-K-14','M-K-15','M-K-16','M-K-17'];
     check(units.find(u=>u.id==='M-K-08')?.notes?.some(n=>/conjecture|inconsistent|not logically consistent/i.test(n.text||'')),
@@ -124,8 +124,8 @@ if(mMap&&mText){
     'Muẓaffar source map lost new Book I source coverage');
   check(mMap.parts.find(p=>p.book===2)?.availableUnits===17,
     'Muẓaffar source map must register Book II opening');
-  check(mMap.parts.find(p=>p.book===4)?.availableUnits===14,
-    'Muẓaffar source map must register 14 Book IV selected readings');
+  check(mMap.parts.find(p=>p.book===4)?.availableUnits===25,
+    'Muẓaffar source map must register 25 Book IV selected readings');
   check(mMap.parts.reduce((n,x)=>n+x.topics.length,0)>=60,'Muẓaffar map lost section titles');
   for(const p of mMap.parts){
     check(p.start>0&&p.end>=p.start,'Muẓaffar invalid page range for book '+p.book);
@@ -192,10 +192,10 @@ if(nText&&nTriage){
       'Cumulative review register not linked to triage '+r.id);
   }
   check(nTriage.summary?.automaticallyScreened===136,'Incomplete Nihāya full-corpus screening');
-  check(nTriage.summary?.locallyReadAgainstStoredArabic===80,'Nihāya must preserve 80 complete local same-base readings (74+6)');
-  check(nTriage.summary?.secondaryPrintedDigitalSpotChecks===5,
+  check(nTriage.summary?.locallyReadAgainstStoredArabic===86,'Nihāya must preserve 86 local whole-unit bilingual checks (80+6)');
+  check(nTriage.summary?.secondaryPrintedDigitalSpotChecks===9,
     'Nihāya revised printed-digital spot checks must remain individually documented');
-  check(rows.filter(r=>r.englishReview?.status==='local-bilingual-reading-checked').length===80,
+  check(rows.filter(r=>r.englishReview?.status==='local-bilingual-reading-checked').length===86,
     'Nihāya direct bilingual checks mismatch cumulative register');
   const unitXI=nText.units.find(u=>u.id==='N-XI-PRE');
   check(unitXI?.english.includes('“intellect” (al-ʿaql)')&&!unitXI?.english.includes('term “intellection”'),
@@ -255,6 +255,19 @@ if(nText&&nExtra){
   check(ix9?.passageId==='N-IX-09'&&ix9?.adoption==='not-adopted' &&
     ix9?.originalReading==='كما في القسم الأول'&&ix9?.proposedReading==='كما في القسم الثاني',
     'Nihāya IX.9 internal crux must remain an explicitly unadopted conjecture');
+  const editorVI09=nExtra.criticalNotes?.find(n=>n.id==='N1428-VI09-BOUNDARY-01');
+  const editorVI02=nExtra.criticalNotes?.find(n=>n.id==='N1428-VI02-FORM-01');
+  check(editorVI09?.passageId==='N-VI-09'&&editorVI09?.adoption==='not-applicable-editorial-comment' &&
+    /1428/.test(editorVI09?.source||'') &&
+    review?.entries?.find(r=>r.id==='N-VI-09')?.supplementalCriticalNoteIds?.includes('N1428-VI09-BOUNDARY-01'),
+    'Later 1428 editor critique of continuum boundary must remain explicitly attributed and visible');
+  check(editorVI02?.passageId==='N-VI-02'&&editorVI02?.adoption==='not-applicable-intertextual-note' &&
+    review?.entries?.find(r=>r.id==='N-VI-02')?.supplementalCriticalNoteIds?.includes('N1428-VI02-FORM-01'),
+    'Nihāya VI.2 vs Bidāya VI.1-2 intertextual issue must not be silently harmonized');
+  check(nTriage.summary?.independentlyReconciledAgainstCompleteSecondWitness===0 &&
+    review?.summary?.N?.englishIndependentlyCollated===0 &&
+    review?.summary?.expertReviewedUnitsVerified===0,
+    'Partial printed-digital spot checks cannot be promoted to complete witness collation or expert review');
   check(review?.entries?.find(r=>r.id==='N-IX-09')?.supplementalCriticalNoteIds?.includes('N1417-IX09-REFERENCE-01'),
     'Nihāya IX.9 public critical apparatus lost cumulative review register backlink');
 }

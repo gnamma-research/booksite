@@ -3,15 +3,15 @@
   "title": "al-Manṭiq",
   "arabicTitle": "المنطق",
   "author": "Muḥammad Riḍā al-Muẓaffar",
-  "description": "Selected original authorial Arabic and working English from Muẓaffar's six-book logic. 13 locally paired Book IV sections; substantial missing original content and no complete independent print collation.",
+  "description": "Selected source-anchored Arabic–English working passages from Muẓaffar's six-book logic; includes Book IV simple and compound modalities, while much of the original and all Books V and VI remain unavailable in the local bilingual reader.",
   "status": "working-translation",
   "editorialStatus": {
     "translationComplete": false,
-    "translatedSection": "Introduction 11, Book I 11, Book II 17, Book III 14, Book IV 14; selective Arabic-English working authorial excerpts.",
-    "translatedPassages": 67,
+    "translatedSection": "Intro 11, Book I 11, Book II 17, Book III 14, Book IV 25 selected source-paired readings to printed p.159; Books V and VI have no bilingual corpus.",
+    "translatedPassages": 78,
     "sourceBasis": "1402 AH Dār al-Taʿāruf Rafed searchable Arabic; the separately identified 1968 institutional scan remains to be independently collated.",
     "englishComparator": "Carney's 75-page English PDF supplied by the user ends without the complete Book III section on definitions. English here is independently translated from Arabic.",
-    "editionNotice": "67 working bilingual source-selected units, including Book IV through eight simple modal kinds on pp.146–148. Rest of six-book work incomplete; independent 1968 print collation outstanding."
+    "editionNotice": "78 selected Arabic–English working readings, now through end-of-first-chapter Book IV propositions and exercises (printed p.159); closing schematic chart not independently transcribed. The remaining Book IV logical laws and all Books V–VI are untranslated."
   },
   "sources": [
     {
@@ -1541,6 +1541,289 @@
         "edition": "al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH digital transcription; independent 1968 printed witness check pending",
         "page": "146–148",
         "url": "https://lib.rafed.net/view.php?b_id=1604&page=147&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-C-15",
+      "stage": "C",
+      "chapter": 15,
+      "title": "Compound modal propositions: the implicit opposite-quality judgment",
+      "arabicTitle": "أقسام المركبة — القضية الصريحة والمشار إليها",
+      "arabic": "أقسام المركبة\n\nقلنا فيما تقدّم: إن المركّبة ما انحلّت إلى قضيتين موجبة وسالبة. ونزيدها هنا توضيحاً، فنقول: إن المركّبة تتألف من قضية مذكورة بعبارة صريحة هي الجزء الأول منها (سواء كانت موجبة أو سالبة وباعتبار هذا الجزء الصريح تسمّى المركّبة موجبة أو سالبة)، ومن قضية أخرى تخالف الجزء الأول بالكيف وتوافقه بالكم، غير مذكورة بعبارة صريحة، وإنّما يشار إليها بنحو كلمة «لا دائماً» و«لا بالضرورة».\n\nوإنّما يلتجأ إلى التركيب عندما تُستعمل قضية موجّهة عامّة تحتمل وجهين: الضرورة واللاضرورة، أو الدوام واللادوام، فيراد بيان أنها ليست بضرورية أو ليست بدائمة، فيضاف إلى القضية مثل كلمة «لا بالضرورة» أو «لا دائماً».\n\nمثل ما إذا قال القائل: «كل مصلّ يتجنب الفحشاء بالفعل» فيحتمل أن يكون ذلك ضرورياً لا ينفك عنه، ويحتمل ألا يكون ضرورياً، فلأجل دفع الاحتمال ولأجل التنصيص على أنه ليس بضروري تُقيّد القضية بقولنا «لا بالضرورة». كما يحتمل أن يكون ذلك دائماً ويحتمل ألا يكون، ولأجل دفع الاحتمال وبيان أنه ليس بدائم تُقيّد القضية بقولنا «لا دائماً».\n\nفالجزء الأول، وهو «كل مصلّ يتجنب الفحشاء بالفعل»، قضية موجبة كلية مطلقة عامة. والجزء الثاني، وهو «لا بالضرورة»، يشار به إلى قضية سالبة كلية ممكنة عامة؛ لأن معنى «لا بالضرورة» أن تجنّب الفحشاء ليس بضروري لكل مصلّ، فيكون مؤدّاه أنه يمكن سلب تجنّب الفحشاء عن المصلّي، ويعبّر عن هذه القضية بقولهم: «لا شيء من المصلّي بمتجنّب للفحشاء بالإمكان العام».\n\nوكذا لو كان الجزء الثاني هو «لا دائماً» فإنّه يشار به إلى قضية سالبة كلية ولكنّها مطلقة عامة؛ لأن معنى «لا دائماً» أنّ تجنّب الفحشاء لا يثبت لكل مصلّ دائماً، فيكون المؤدّى «لا شيء من المصلّي بمتجنّب للفحشاء بالفعل».\n\nوأهم القضايا المركّبة المتعارفة ستّ:",
+      "english": "**Compound modal propositions.** A compound proposition is analysable into two modal judgments, one affirmative and one negative. Muẓaffar now makes the structure precise. The **first component** is stated explicitly and may itself be positive or negative; the compound proposition receives its positive or negative classification from this expressly stated component. A **second component**, opposite to it in quality but the same in quantity, is indicated rather than fully expressed, commonly by “not always” (*lā dāʾiman*) or “not necessarily” (*lā bi-l-ḍarūra*).\n\nThe second qualification is needed because a general modal statement can leave open whether the predicate belongs by necessity or without necessity, or whether its attribution is permanent or nonpermanent. To exclude the stronger reading, one adds the corresponding negative qualification; it should not be confused with denying the original assertion.\n\nFor example, “Every person who prays in fact avoids indecency” is a universal affirmative of general actuality. It does not yet decide whether avoiding indecency follows **necessarily** from the description of praying. Adding “not necessarily” denies necessity while retaining the preceding actual assertion. Likewise, adding “not always” rejects perpetual attachment without canceling the positive first component.\n\nThe author expresses the implicitly signified second judgment in the corresponding **universal negative modal** form, with the same quantity as the first, but of opposite quality. His specific formal schemata are retained here rather than replaced by a simplified modern predicate-logic formula, because his use of scope, possibility and the modal negative requires separate analysis. \n\nThe six familiar compounds are now enumerated.",
+      "notes": [
+        {
+          "type": "Source-critical status",
+          "text": "Working authorial-source transcription with normalized punctuation, spelling and paragraph breaks. The 1402 digital edition and separately published 1421 digital text were compared for the indicated argument and examples; no 1968 facsimile or manuscript comparison has been carried out.",
+          "url": "https://ablibrary.net/book_content/b/4628/178?lang=ar"
+        },
+        {
+          "type": "Logical/translation note",
+          "text": "The author says the two components agree in *quantity* and differ in *quality*. Do not read the implicit negative as if it simply erased the explicitly affirmed actual occurrence. His equivalent 'no S is P' forms are technical modal presentations, not unqualified factual denials; a formalization requires carefully locating the modal operator."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH digital source (normalized transcription); compared at indicated locus with later Rafed 1421 AH digital edition, not a facsimile collation",
+        "page": "148–149",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
+        "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/177?lang=ar"
+      }
+    },
+    {
+      "id": "M-C-16",
+      "stage": "C",
+      "chapter": 16,
+      "title": "Two special compounds: qualified necessity and customary permanence",
+      "arabicTitle": "المشروطة الخاصة والعرفية الخاصة",
+      "arabic": "١ ـ (المشروطة الخاصّة): وهي المشروطة العامة المقيّدة باللادوام الذاتي. والمشروطة العامة هي الدالّة على ضرورة ثبوت المحمول للموضوع ما دام الوصف ثابتاً له، فيحتمل فيها أن يكون المحمول دائم الثبوت لذات الموضوع وإن تجرّد عن الوصف، ويحتمل ألا يكون. ولأجل دفع الاحتمال وبيان أنه غير دائم الثبوت لذات الموضوع تُقيّد القضية باللادوام الذاتي، فيشار به إلى قضية مطلقة عامة.\n\nفتتركّب المشروطة الخاصة على هذا من مشروطة عامة صريحة ومطلقة عامة مشار إليها بكلمة «لا دائماً»، نحو: «كلّ شجر نامٍ بالضرورة ما دام شجراً، لا دائماً»، أي: «لا شيء من الشجر بنامٍ بالفعل». وإنّما سمّيت خاصّة لأنها أخصّ من المشروطة العامة.\n\n٢ ـ (العرفية الخاصّة): وهي العرفية العامة المقيّدة باللادوام الذاتي. ومعناه أن المحمول وإن كان دائماً ما دام الوصف، هو غير دائم ما دام الذات، فيرفع به احتمال الدوام ما دام الذات. ويشار باللادوام إلى قضية مطلقة عامة كالسابق، نحو: «كل شجر نامٍ دائماً ما دام شجراً، لا دائماً»، أي: «لا شيء من الشجر بنامٍ بالفعل».\n\nفتتركّب العرفية الخاصة من عرفية عامة صريحة ومطلقة عامة مشار إليها بكلمة «لا دائماً». وإنّما سمّيت خاصة لأنها أخص من العرفية العامة، إذ العرفية العامة تحتمل الدوام ما دام الذات وعدمه، والعرفية الخاصة مختصة بعدم الدوام ما دام الذات.",
+      "english": "**1. The special conditioned necessity (*al-mashrūṭa al-khāṣṣa*).** Begin with a universal conditioned-necessity proposition: the predicate belongs necessarily to the subject **for as long as the specified description holds**. This alone is compatible with two possibilities. The predicate might also belong throughout the existence of the underlying subject even after it no longer satisfies the description, or it might not. The *special* compound excludes the first alternative by adding a denial of permanence **throughout the subject's existence as such** (*al-lā-dawām al-dhātī*).\n\nThe proposition consequently has two components: an expressly asserted general conditional necessity, and an implicitly indicated general actuality of the opposite quality. Muẓaffar's example is that every tree necessarily grows so long as it is a tree, “but not always”—the qualification denying that growth lasts as long as the underlying subject exists regardless of its title. He also supplies an elliptical technical negative formula to express the second component. Its negation must not cancel the necessity under the stated description. The special form is narrower than the general conditioned form precisely because it removes the possibility of unrestricted permanence.\n\n**2. The special customary proposition (*al-ʿurfiyya al-khāṣṣa*).** Begin instead with general customary permanence: the predicate holds continuously **while the subject satisfies its qualifying description**, without asserting intrinsic necessity of the predicate. Add the same denial of *unrestricted* permanence through the subject's underlying existence. Thus “Every tree always grows while it is a tree—but not always [without regard to this description].” This combines an explicitly stated general customary proposition with an implicitly indicated general-actuality negative, and is narrower than the unrestricted general customary form.\n\nThe first compound asserts necessity *under the title* and denies unconstrained permanence; the second asserts permanence *under the title* and denies unconstrained permanence. The difference between **necessity** and **actual duration** remains essential.",
+      "notes": [
+        {
+          "type": "Source-critical status",
+          "text": "Working authorial-source transcription with normalized punctuation, spelling and paragraph breaks. The 1402 digital edition and separately published 1421 digital text were compared for the indicated argument and examples; no 1968 facsimile or manuscript comparison has been carried out.",
+          "url": "https://ablibrary.net/book_content/b/4628/179?lang=ar"
+        },
+        {
+          "type": "Logical/translation note",
+          "text": "The qualifier «لا دائماً» restricts duration in the *underlying subject*, not duration while the defining title holds. The 1421 parallel digital edition preserves both types and their tree examples. The short source schemata «لا شيء من الشجر بنام بالفعل» are presented as authorial abbreviated modal notation; their scope is not silently converted into the unconditional claim 'no tree grows'."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH digital source (normalized transcription); compared at indicated locus with later Rafed 1421 AH digital edition, not a facsimile collation",
+        "page": "149",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
+        "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/179?lang=ar"
+      }
+    },
+    {
+      "id": "M-C-17",
+      "stage": "C",
+      "chapter": 17,
+      "title": "Actual yet not necessary; actual yet not permanent",
+      "arabicTitle": "الوجودية اللاضرورية والوجودية اللادائمة",
+      "arabic": "٣ ـ (الوجودية اللاضرورية): وهي المطلقة العامة المقيّدة باللاضرورية الذاتية، لأن المطلقة العامة يحتمل فيها أن يكون المحمول ضرورياً لذات الموضوع ويحتمل عدمه؛ ولأجل التصريح بعدم ضرورة ثبوته لذات الموضوع تُقيّد بكلمة «لا بالضرورة». وسلب الضرورة معناه الإمكان العام؛ لأن الإمكان العام هو سلب الضرورة عن الطرف المقابل، فإذا سُلبت الضرورة عن الطرف المذكور صريحاً في القضية ـ ولنفرضه حكماً إيجابياً ـ فمعناه أن الطرف المقابل وهو السلب موجّه بالإمكان العام.\n\nوعليه فيشار بكلمة «لا بالضرورة» إلى ممكنة عامة. فإذا قلت: «كل إنسان متنفس بالفعل، لا بالضرورة» فإن «لا بالضرورة» إشارة إلى قولك: «لا شيء من الإنسان بمتنفس بالإمكان العام».\n\nفتتركّب إذن الوجودية اللاضرورية من مطلقة عامة وممكنة عامة، وإنّما سمّيت «وجودية» لأن المطلقة العامة تدل على تحقّق الحكم ووجوده خارجاً، وسمّيت «لاضرورية» لتقييدها باللاضرورة.\n\n٤ ـ (الوجودية اللادائمة): وهي المطلقة العامة المقيّدة باللادوام الذاتي؛ لأن المطلقة العامة يحتمل فيها أن يكون المحمول دائم الثبوت لذات الموضوع ويحتمل عدمه، ولأجل التصريح بعدم الدوام تُقيّد القضية بكلمة «لا دائماً»، فيشار بها إلى مطلقة عامة كما تقدّم.\n\nفتتركّب الوجودية اللادائمة من مطلقتين عامتين، وسمّيت «وجودية» للسبب المتقدم، نحو: «لا شيء من الإنسان بمتنفس بالفعل، لا دائماً»، أي: أن كل إنسان متنفس بالفعل.",
+      "english": "**3. Actuality without intrinsic necessity (*al-wujūdiyya al-lā-ḍarūriyya*).** An unrestricted general-actuality proposition tells us that the predication really occurs. It leaves open whether the predicate necessarily belongs to the subject's own essence. The compound form specifies **not by intrinsic necessity**, thus combining an expressly affirmed general actuality with an implicitly indicated general possibility of the opposite quality.\n\nThe step is logical: general possibility denies the necessity of the **opposite** side. If the proposition explicitly affirms P of S, adding “not necessarily [P]” rules out necessary P; this in turn licenses the opposite side in the broad possibility sense. The author illustrates the distinction with “Every human is in fact breathing, but not necessarily.” He gives a technical negative formulation for the implied second component. The compound is called *wujūdiyya* because the explicitly stated form asserts actuality, and *lā-ḍarūriyya* because it excludes necessity of that actuality.\n\n**4. Actuality without intrinsic permanence (*al-wujūdiyya al-lā-dāʾima*).** General actuality also leaves open whether the predicate remains permanently true of the subject as such. Here one adds “not always” to exclude such permanence. The resulting compound has **two general-actuality modal components** of opposite quality, one stated openly and the other indicated by the negative qualification.\n\nMuẓaffar's example is expressed in the source with a negative first component about human breathing followed by “not always”; his stated explanatory equivalent then affirms breathing as actual. This polarity is retained as an **editorially unresolved example** rather than silently harmonized with a preferred affirmative template. The governing distinction is nonetheless clear: *lā-ḍarūriyya* excludes essential necessity, while *lā-dāʾima* excludes unrestricted duration. Neither qualifier by itself denies the first component's actual occurrence.",
+      "notes": [
+        {
+          "type": "Source-critical status",
+          "text": "Working authorial-source transcription with normalized punctuation, spelling and paragraph breaks. The 1402 digital edition and separately published 1421 digital text were compared for the indicated argument and examples; no 1968 facsimile or manuscript comparison has been carried out.",
+          "url": "https://ablibrary.net/book_content/b/4628/180?lang=ar"
+        },
+        {
+          "type": "Logical/translation note",
+          "text": "The 1402 text's «لا شيء من الإنسان بمتنفس بالفعل، لا دائماً» followed by «أي أن كل إنسان متنفس بالفعل» is counterintuitive as a literal negative and apparent positive paraphrase. The 1421 digital witness has the same juxtaposition; retain both as an open **authorial/source example issue**, not a demonstrated printed variant. Do not silently replace the original initial negative with a positive."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH digital source (normalized transcription); compared at indicated locus with later Rafed 1421 AH digital edition, not a facsimile collation",
+        "page": "150",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
+        "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/180?lang=ar"
+      }
+    },
+    {
+      "id": "M-C-18",
+      "stage": "C",
+      "chapter": 18,
+      "title": "Occurrent but nonpermanent; genuinely two-sided possibility",
+      "arabicTitle": "الحينية اللادائمة والممكنة الخاصة",
+      "arabic": "٥ ـ (الحينية اللادائمة): وهي الحينية المطلقة المقيّدة باللادوام الذاتي؛ لأن الحينية المطلقة معناها أن المحمول فعلي الثبوت للموضوع حين اتصافه بوصفه، فيحتمل فيها الدوام ما دام الموضوع وعدمه، ولأجل التصريح بعدم الدوام تُقيّد باللادوام الذاتي الذي يشار به إلى مطلقة عامة كما تقدّم. فتتركّب الحينية اللادائمة من حينية مطلقة ومطلقة عامة، نحو: «كل طائر خافق الجناحين بالفعل حين هو طائر، لا دائماً»، أي: «لا شيء من الطائر بخافق الجناحين بالفعل».\n\n٦ ـ (الممكنة الخاصة): وهي الممكنة العامة المقيّدة باللاضرورة الذاتية، ومعناها أن الطرف الموافق المذكور في القضية ليس ضرورياً كما كان الطرف المخالف ـ حسب التصريح في القضية ـ ليس ضرورياً أيضاً، فيرفع بقيد «اللاضرورة» احتمال الوجوب إذا كانت القضية موجبة، واحتمال الامتناع إذا كانت سالبة. ومفاد مجموع القضية بعد التركيب هو الإمكان الخاص الذي هو عبارة عن سلب الضرورة عن الطرفين.\n\nفتتركّب الممكنة الخاصة من ممكنتين عامتين، وتكون فيها الجهة نفس المادة الواقعية إذا كانت صادقة.\n\nويكفي لإفادة ذلك تقييد القضية بالإمكان الخاص اختصاراً، فنقول: «كل حيوان متحرك بالإمكان الخاص»، أي: «كل حيوان متحرك بالإمكان العام، ولا شيء من الحيوان بمتحرك بالإمكان العام».\n\nوالتعبير بالإمكان الخاص بمنزلة ما لو قُيّدت الممكنة العامة باللاضرورة، كما لو قلت في المثال: «كل حيوان متحرك بالإمكان العام، لا بالضرورة».",
+      "english": "**5. Actuality while qualified, without enduring actuality of the subject as such (*al-ḥīniyya al-lā-dāʾima*).** The starting statement is an *actuality-in-a-specified-condition*: the predicate is present while the subject bears the stated title or description. Without further qualification, this is compatible both with permanence throughout the underlying subject's existence and with its absence. Adding “not always” rules out the unrestricted permanence. The compound consequently consists of an explicitly stated *ḥīniyya muṭlaqa* and an implicitly signified *muṭlaqa ʿāmma* of opposite quality.\n\nThe author's example is “Every bird is in fact beating its wings while it is [flying as] a bird, but not always [throughout its existence].” He supplies a negative technical expression for the hidden part, which must not be mistaken for saying that no bird ever beats its wings.\n\n**6. Special possibility (*al-mumkina al-khāṣṣa*).** The starting general-possibility proposition has already denied necessity of the **opposite** side of its assertion. This does not exclude necessity of the **asserted** side. The special compound adds “not necessarily” to deny that latter necessity as well. The result is **two-sided absence of necessity**, *salb al-ḍarūra ʿan al-ṭarafayn*: both affirmative and negative directions remain intrinsically possible.\n\nFor an affirmative compound this removes necessary affirmation; for a negative compound it removes necessary negation or impossibility. The fully expressed composite thus has two *mumkina ʿāmma* components of opposite quality, and its expressed qualification (*jiha*) coincides with the actual intrinsic possibility (*mādda*) when the proposition is true.\n\nThe author abbreviates the composite by saying “Every animal moves in the special possibility sense,” meaning that motion is possible and its absence is possible. He also supplies the long form, “Every animal can move in the general sense, but not necessarily.” The latter must be understood in the logic of intrinsic modality, not as an observation that an individual animal happens to be at rest.",
+      "notes": [
+        {
+          "type": "Source-critical status",
+          "text": "Working authorial-source transcription with normalized punctuation, spelling and paragraph breaks. The 1402 digital edition and separately published 1421 digital text were compared for the indicated argument and examples; no 1968 facsimile or manuscript comparison has been carried out.",
+          "url": "https://ablibrary.net/book_content/b/4628/181?lang=ar"
+        },
+        {
+          "type": "Logical/translation note",
+          "text": "The 1421 digital source at p.181 also preserves both forms. Interpret «لا بالضرورة» as absence of *same-side* necessity supplementing the already absent *opposite-side* necessity. The example of moving animals is part of the historical author's logic, not proof of a universal zoological law."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH digital source (normalized transcription); compared at indicated locus with later Rafed 1421 AH digital edition, not a facsimile collation",
+        "page": "151",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
+        "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/181?lang=ar"
+      }
+    },
+    {
+      "id": "M-C-19",
+      "stage": "C",
+      "chapter": 19,
+      "title": "Seven authorial exercises on modal relations and compounds",
+      "arabicTitle": "تمرينات على الموجهات والمركبة",
+      "arabic": "تمرينات\n\n١ ـ اذكر ماذا بين الضرورية الذاتية وبين الدائمة المطلقة من النسب الأربع، وكذا ما بين الضرورية الذاتية وبين المشروطة العامة والعرفية العامة.\n\n٢ ـ اذكر النسبة بين الدائمة المطلقة وبين كلّ من المطلقة العامة والعرفية العامة.\n\n٣ ـ ما النسبة بين المشروطة العامة والعرفية العامة، وكذا بين الضرورية الذاتية والمشروطة الخاصة؟\n\n٤ ـ لو أنّا قيّدنا المشروطة العامة باللاضرورة الذاتية، هل يصح التركيب؟\n\n٥ ـ هل ترى يصح تقييد الحينية المطلقة باللاضرورة الذاتية؟ وإذا صحّ فماذا ينبغي أن نسمّي هذه القضية المركبة؟\n\n٦ ـ هل يصح تقييد الدائمة المطلقة باللاضرورة الذاتية؟\n\n٧ ـ اذكر مثالاً واحداً من نفسك لكلّ من الموجّهات البسيطة، ثم اجعلها مركّبة بواحدة من التركيبات الستّ المذكورة الممكنة لها.",
+      "english": "**Author's exercises — retained as exercises, not silently replaced with answers.**\n\n1. Determine which of the four relations between two universals holds between intrinsic necessity and unrestricted permanence. Do the same for intrinsic necessity compared respectively with general conditioned necessity and general customary permanence.\n\n2. Determine the relation between unrestricted permanence and each of general actuality and general customary permanence.\n\n3. Determine the relation between general conditioned necessity and general customary permanence, and between intrinsic necessity and the special conditioned compound.\n\n4. If we qualify general conditioned necessity by the absence of intrinsic necessity, is the resulting compound well formed?\n\n5. Can actuality limited to the period in which a description holds (*ḥīniyya muṭlaqa*) be qualified by absence of intrinsic necessity? If it can, what should the compound be called?\n\n6. Can unrestricted permanence itself be qualified by absence of intrinsic necessity?\n\n7. Invent one illustration of each simple modal proposition and convert it, where logically possible, into one of the six compound forms just described.\n\nThese seven questions test the inclusion, noninclusion, and possible joint satisfaction of *intrinsic necessity*, *permanence*, *actuality*, and *general/special possibility*. Some combinations may fail for reasons arising from the implicit second component.",
+      "notes": [
+        {
+          "type": "Editorial status",
+          "text": "Digitally presented authorial prose and examples; spelling/punctuation normalized. Not a diplomatic facsimile or independently manuscript-collated passage."
+        },
+        {
+          "type": "Logical note",
+          "text": "The 1402 edition inserts an authorial summary chart immediately before these exercises as a nontext image. The chart is NOT transcribed here; the later digital edition exposes a textualized chart at p.182, but it has not yet been independently matched to the earlier image. Do not treat this seven-exercise text as exhaustive of p.152's visual content."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, 1402 AH Dār al-Taʿāruf digital printed-source text; parallel 1421 Qum digital page where specified; no early 1968 facsimile collation",
+        "page": "152",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
+        "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/182?lang=ar"
+      }
+    },
+    {
+      "id": "M-C-20",
+      "stage": "C",
+      "chapter": 20,
+      "title": "Necessary versus coincidental connected conditionals",
+      "arabicTitle": "تقسيمات الشرطية الأخرى — اللزومية والاتفاقية",
+      "arabic": "تقسيمات الشرطية الأخرى\n\nتقدّم أن الشرطية تنقسم باعتبار نسبتها إلى متّصلة ومنفصلة، وباعتبار الكيف إلى موجبة وسالبة، وباعتبار الأحوال والأزمان إلى شخصية ومهملة ومحصورة، والمحصورة إلى كلّية وجزئية. وقد بقي تقسيم كلّ من المتّصلة والمنفصلة إلى أقسامها.\n\nاللزومية والاتفاقية\n\nتنقسم المتّصلة باعتبار طبيعة الاتّصال بين المقدّم والتالي إلى لزومية واتفاقية:\n\n١ ـ (اللزومية): وهي التي بين طرفيها اتصال حقيقي لعلاقة توجب استلزام أحدهما للآخر، بأن يكون أحدهما علّة للآخر أو معلولين لعلّة واحدة. نحو: «إذا سخن الماء فإنه يتمدّد» والمقدّم علّة التالي. ونحو: «إذا تمدّد الماء فإنه ساخن» والتالي علّة للمقدّم بعكس الأوّل. ونحو: «إذا غلا الماء فإنه يتمدّد» وفيه الطرفان معلولان لعلّة واحدة، لأنّ الغليان والتمدّد معلولان للسخونة إلى درجة معيّنة.\n\n٢ ـ (الاتفاقية): وهي التي ليس بين طرفيها اتصال حقيقي لعدم العلقة التي توجب الملازمة، ولكنّه يتّفق حصول التالي عند حصول المقدّم، كما لو اتّفق أن محمّداً الطالب لا يحضر الدرس إلا بعد شروع المدرّس، فتؤلّف هذه القضية الشرطية: «كلّما جاء محمّد فإن المدرّس قد سبق شروعه في الدرس». وليس هنا أية علاقة بين مجيء محمّد وسبق شروع الدرس، وإنما ذلك بمحض الصدفة المتكرّرة.\n\nومن لم يتنوّر بنور العلم والمعرفة كثيراً ما يقع في الغلط، فيظنّ في كثير من الاتفاقيات أنّها قضايا لزومية لمجرّد تكرّر المصادفة.",
+      "english": "**Further divisions of conditional propositions.** The connected/disjunctive distinction concerns the relation, the affirmative/negative distinction its quality, and the singular/indefinite/quantified distinction the circumstances or times to which it applies. Further subdivisions concern the character of the relation itself.\n\nA **connected conditional** is either *necessary in connection* (*luzūmiyya*) or *coincidental* (*ittifāqiyya*).\n\nIn a necessary connection, a genuine relation entails that one side follows from the other. This may take several causal forms: the antecedent causes the consequent, the consequent is a sign of a cause corresponding to it, or both statements describe effects of a common cause. Muẓaffar illustrates the first with water expanding when heated; the second with expansion indicating the presence of heat; and the third with boiling and expansion arising from heating to an appropriate level. These are the author's explanatory causal illustrations, not an independently verified modern physical model of all fluids.\n\nIn a coincidental connection, no intrinsic relation of entailment links the antecedent and consequent, although the latter happens when the former occurs. Suppose the student Muḥammad only arrives after the teacher has begun the lesson. We can say, “Whenever Muḥammad arrives, the teacher will already have begun the class.” The recurring sequence, however, may express an accidental pairing rather than a necessary relation between the student's arrival and the teacher's beginning.\n\nMuẓaffar warns against treating **repeated coincidence alone** as proof of necessary connection. Frequent succession of two events does not establish that the first makes the second necessary.",
+      "notes": [
+        {
+          "type": "Editorial status",
+          "text": "Digitally presented authorial prose and examples; spelling/punctuation normalized. Not a diplomatic facsimile or independently manuscript-collated passage."
+        },
+        {
+          "type": "Logical note",
+          "text": "Logical point: al-luzūmiyya is an asserted genuine explanatory nexus, not merely the material conditional's actual truth; al-ittifāqiyya is repeated conjunction without that nexus. Examples and traditional physical causal descriptions preserved as historical authorial illustrations."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, 1402 AH Dār al-Taʿāruf digital printed-source text; parallel 1421 Qum digital page where specified; no early 1968 facsimile collation",
+        "page": "153–154",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
+        "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/183?lang=ar"
+      }
+    },
+    {
+      "id": "M-C-21",
+      "stage": "C",
+      "chapter": 21,
+      "title": "Disjunctive incompatibility: essential versus coincidental; genuine division",
+      "arabicTitle": "أقسام المنفصلة — العنادية والاتفاقية والحقيقية",
+      "arabic": "أقسام المنفصلة\n\nللمنفصلة تقسيمان:\n\nأ ـ العنادية والاتفاقية\n\nوهذا التقسيم باعتبار طبيعة التنافي بين الطرفين كالمتّصلة، فتنقسم إلى:\n\n١ ـ (العنادية): وهي التي بين طرفيها تنافٍ وعناد حقيقي، بأن تكون ذات النسبة في كلّ منهما تنافي وتعاند ذات النسبة في الآخر، نحو: «العدد الصحيح إمّا أن يكون زوجاً أو فرداً».\n\n٢ ـ (الاتفاقية): وهي التي لا يكون التنافي بين طرفيها حقيقياً ذاتياً، وإنما يتّفق أن يتحقّق أحدهما بدون الآخر لأمر خارج عن ذاتهما، نحو: «إمّا أن يكون الجالس في الدار محمّداً أو باقراً» إذا اتّفق أن عُلم أن غيرهما لم يكن. ونحو: «هذا الكتاب إمّا أن يكون في علم المنطق وإمّا أن يكون مملوكاً لخالد» إذا اتّفق أن خالداً لا يملك كتاباً في علم المنطق، واحتمل أن يكون هذا الكتاب المعيّن في هذا العلم.\n\nب ـ الحقيقية ومانعة الجمع ومانعة الخلو\n\nوهذا التقسيم باعتبار إمكان اجتماع الطرفين ورفعهما وعدم إمكان ذلك، فتنقسم إلى:\n\n١ ـ (حقيقية): وهي ما حُكم فيها بتنافي طرفيها صدقاً وكذباً في الإيجاب، وعدم تنافيهما كذلك في السلب؛ بمعنى أنّه لا يمكن اجتماعهما ولا ارتفاعهما في الإيجاب، ويجتمعان ويرتفعان في السلب.\n\nمثال الإيجاب: «العدد الصحيح إمّا أن يكون زوجاً أو فرداً»؛ فالزوج والفرد لا يجتمعان ولا يرتفعان.\n\nمثال السلب: «ليس الحيوان إمّا أن يكون ناطقاً وإمّا أن يكون قابلاً للتعليم»، فالناطق والقابل للتعليم يجتمعان في الإنسان ويرتفعان في غيره.\n\nوتُستعمل الحقيقية في القسمة الحاصرة الثنائية وغيرها، واستعمالها أكثر من أن يُحصى.",
+      "english": "**Disjunctive conditionals:** two classifications must be kept distinct.\n\nThe first asks whether the incompatibility between the alternatives is **intrinsic** (*ʿinādiyya*) or merely **incidental** (*ittifāqiyya*). Intrinsic exclusion follows from the very relations asserted in the two components, as when an integer is either even or odd. Incidental exclusion arises from a circumstance external to the definitions: for example, the person sitting at home is either Muḥammad or Bāqir when we happen to know that nobody else is there; or a particular book is either about logic or belongs to Khālid, where circumstances ensure that Khālid owns no book on logic.\n\nThe second classification asks whether the two sides can both be true and whether they can both be false.\n\nA **genuine or complete disjunction** (*ḥaqīqiyya*) affirms that its two alternatives **cannot both be true and cannot both be false**. This is exclusive and exhaustive disjunction. “An integer is either even or odd” provides the author's elementary illustration.\n\nIts **negation** denies that two alternatives stand in this relationship of exhaustive mutual exclusion. The author illustrates it with “It is not the case that an animal is either rational or capable of being taught,” because both descriptions can occur together in a human and both can be absent in other animals. Here he explains the failure of exclusion and exhaustion, rather than asserting that every animal has neither property.\n\nGenuine disjunction serves to establish exhaustive classifications into two or more alternatives. No modal claim about a mere accidental conjunction should be smuggled into an essential dichotomy.",
+      "notes": [
+        {
+          "type": "Editorial status",
+          "text": "Digitally presented authorial prose and examples; spelling/punctuation normalized. Not a diplomatic facsimile or independently manuscript-collated passage."
+        },
+        {
+          "type": "Logical note",
+          "text": "The first distinction (ʿinādiyya/ittifāqiyya) concerns whether exclusion is intrinsic; the second (ḥaqīqiyya/māniʿat al-jamʿ/māniʿat al-khulūw) concerns the truth-conditions. Negative disjunction is the denial of the *disjunctive relation*, not necessarily a conjunction of denials."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, 1402 AH Dār al-Taʿāruf digital printed-source text; parallel 1421 Qum digital page where specified; no early 1968 facsimile collation",
+        "page": "154–155",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
+        "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/185?lang=ar"
+      }
+    },
+    {
+      "id": "M-C-22",
+      "stage": "C",
+      "chapter": 22,
+      "title": "At-most-one versus at-least-one disjunctions",
+      "arabicTitle": "مانعة الجمع ومانعة الخلو، الموجبة والسالبة",
+      "arabic": "٢ ـ (مانعة جمع): وهي ما حُكم فيها بتنافي طرفيها أو عدم تنافيهما صدقاً لا كذباً، بمعنى أنه لا يمكن اجتماعهما ويجوز أن يرتفعا معاً في الإيجاب، ويمكن اجتماعهما ولا يمكن ارتفاعهما في السلب.\n\nمثال الإيجاب: «إمّا أن يكون الجسم أبيض أو أسود»، فالأبيض والأسود لا يمكن اجتماعهما في جسم واحد ولكن يمكن ارتفاعهما في الجسم الأحمر.\n\nمثال السلب: «ليس إمّا أن يكون الجسم غير أبيض أو غير أسود»، فإن غير الأبيض وغير الأسود يجتمعان في الأحمر ولا يرتفعان في الجسم الواحد بأن لا يكون غير أبيض ولا غير أسود، بل يكون أبيض وأسود، وهذا محال.\n\nوتُستعمل مانعة الجمع في جواب من يتوهّم إمكان الاجتماع بين شيئين، كمن يتوهّم أن الإمام يجوز أن يكون عاصياً لله، فيقال له: «إن الشخص إمّا أن يكون إماماً أو عاصياً لله»، ومعناه أن الإمامة والعصيان لا يجتمعان وإن جاز أن يرتفعا بأن يكون شخص واحد ليس إماماً ولا عاصياً.\n\nهذا في الموجبة، وأمّا في السالبة فتُستعمل في جواب من يتوهّم استحالة اجتماع شيئين، كمن يتوهّم امتناع اجتماع النبوة والإمامة في بيت واحد، فيقال له: «ليس إمّا أن يكون البيت الواحد فيه نبوّة أو إمامة»، ومعناه أن النبوّة والإمامة لا مانع من اجتماعهما في بيت واحد.\n\n٣ ـ (مانعة خلو): وهي ما حُكم فيها بتنافي طرفيها أو عدم تنافيهما كذباً لا صدقاً، بمعنى أنه لا يمكن ارتفاعهما ويمكن اجتماعهما في الإيجاب، ويمكن ارتفاعهما ولا يمكن اجتماعهما في السلب.\n\nمثال الإيجاب: «الجسم إمّا أن يكون غير أبيض أو غير أسود»، أي إنّه لا يخلو من أحدهما وإن اجتمعا. ونحو: «إمّا أن يكون الجسم في الماء أو لا يغرق»، فإنّه يمكن اجتماعهما بأن يكون في الماء ولا يغرق، ولكن لا يخلو الواقع من أحدهما لامتناع أن لا يكون الجسم في الماء ويغرق.\n\nمثال السلب: «ليس إمّا أن يكون الجسم أبيض وإمّا أن يكون أسود»، ومعناه أن الواقع قد يخلو من أحدهما وإن كانا لا يجتمعان.\n\nوتُستعمل مانعة الخلو الموجبة في جواب من يتوهم إمكان أن يخلو الواقع من الطرفين، كمن يتوهم أنه يمكن أن يخلو الشيء من أن يكون علة ومعلولاً، فيقال له: «كلّ شيء لا يخلو إمّا أن يكون علة أو معلولاً»، وإن جاز أن يكون شيء واحد علة ومعلولاً معاً: علة لشيء ومعلولاً لشيء آخر.\n\nوأمّا السالبة فتُستعمل في جواب من يتوهم أن الواقع لا يخلو من الطرفين، كما يتوهم انحصار أقسام الناس في عاقل لا دين له وديّن لا عقل له، فيقال له: «ليس الإنسان إمّا أن يكون عاقلاً لا دين له أو ديّناً لا عقل له»، بل يجوز أن يكون شخص واحد عاقلاً وديّناً معاً.",
+      "english": "**2. Disjunction preventing conjunction (*māniʿat al-jamʿ*).** In its affirmative form, this asserts that **at most one** of the two alternatives can be true. It does *not* require that one of them be true; both may fail. For example, a body may be either white or black under the intended exclusion, but a red body is neither, so the alternatives are not exhaustive. The negative form denies the at-most-one condition: the two descriptions can occur together. Muẓaffar's paired example uses “non-white” and “non-black”: both obtain together in a red body, although their double denial would demand that one body be simultaneously white and black.\n\nThe author applies the affirmative form to his doctrinal premise that an imam and a sinner cannot be the same person, although a person could be neither; the negative form to the claim that prophethood and imamate can coexist within one household. These are his school-specific illustrations of exclusive versus nonexclusive predication, not new historical arguments independently endorsed by the translation.\n\n**3. Disjunction preventing joint absence (*māniʿat al-khulūw*).** Its affirmative form asserts that **at least one** of two alternatives is true; the two may also be true together. Thus every body is either non-white or non-black, and a red body satisfies both. Another source example is “Either the body is in water or it does not sink”: the body may be in water and not sink, but the author excludes the circumstance of sinking outside water, under his assumed conditions.\n\nThe negative form denies that at least one must always hold: both alternatives may fail. Consequently, “It is not the case that a body is either white or black” allows a body of some other colour while not asserting that white and black can coexist.\n\nHe applies the affirmative form to the claim that everything is a cause or an effect, potentially both relative to different things. His negative form rejects the supposed exhaustive opposition between an intelligent person without religion and a religious person without intelligence, because the two properties can belong together. The underlying logical distinction is between **at least one true** and **not necessarily at least one true**; the historical examples do not establish a timeless exhaustive ontology without additional premises.",
+      "notes": [
+        {
+          "type": "Editorial status",
+          "text": "Digitally presented authorial prose and examples; spelling/punctuation normalized. Not a diplomatic facsimile or independently manuscript-collated passage."
+        },
+        {
+          "type": "Logical note",
+          "text": "Do not conflate inclusive 'at least one' with exclusive 'exactly one'. The water/sinking example depends upon implicit empirical assumptions; the theological examples are authorial illustrations. The original 1402 source text on pp.155–156 contains all named categories and examples, corresponding to later print's topical headings."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, 1402 AH Dār al-Taʿāruf digital printed-source text; parallel 1421 Qum digital page where specified; no early 1968 facsimile collation",
+        "page": "155–156",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
+        "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/186?lang=ar"
+      }
+    },
+    {
+      "id": "M-C-23",
+      "stage": "C",
+      "chapter": 23,
+      "title": "Conditionals made of conditionals: nested and mixed propositions",
+      "arabicTitle": "تنبيه أول — تأليف الشرطيات",
+      "arabic": "تنبيه\n\nقد يغفل المبتدئ عن بعض القضايا فلا يسهل عليه إلحاقها بقسمها من أنواع القضايا، لا سيما في التعبيرات الدارجة في ألسنة المؤلفين التي لم توضع بصورة فنية مضبوطة كما تقتضيها قواعد المنطق. وهذه الغفلة قد توقعه في الغلط عند الاستدلال أو لا يهتدي إلى وجه الاستدلال في كلام غيره. وتكثر هذه الغفلة في الشرطيات.\n\nفلذلك وجب التنبيه على أمور تنفع في هذا الباب نرجو أن يستعين بها المبتدئ.\n\n١ ـ تأليف الشرطيات\n\nإنّ الشرطية تتألف من طرفين هما قضيتان بالأصل، والمنفصلة بالخصوص قد تتألف من ثلاثة أطراف فأكثر. فالطرفان أو الأطراف التي هي القضايا بالأصل قد تكون من الحمليات أو من المتصلات أو من المنفصلات أو من المختلفات، بأن تتألف المتصلة مثلاً من حملية ومتصلة. وترتقي أقسام تأليف الشرطيات إلى وجوه كثيرة لا فائدة في إحصائها. وعلى الطالب أن يلاحظ ذلك بنفسه ولا يغفل عنه، فقد ترد عليه شرطية مؤلفة من متصلة ومنفصلة فيظن أنها أكثر من قضية. وللتوضيح نذكر بعض الوجوه وأمثلتها:\n\nفمثلاً قد تتألف المتصلة من حملية ومتصلة نحو: «إن كان العلم سبباً للسعادة، فإن كان الإنسان عالماً كان سعيداً»؛ فإنّ المقدم في هذه القضية حملية، والتالي متصلة، وهو «إن كان الإنسان عالماً كان سعيداً».\n\nوقد تتألف المتصلة من حملية ومنفصلة نحو: «إذا كان اللفظ مفرداً فإمّا أن يكون اسماً أو فعلاً أو حرفاً»؛ فالمقدم حملية والتالي منفصلة ذات ثلاثة أطراف.\n\nوقد تتألف المنفصلة من حملية ومتصلة نحو: «إمّا أن لا تكون حيلولة الأرض مسبباً لخسوف القمر، أو إذا حالت الأرض بين القمر والشمس كان القمر منخسفاً».\n\nوهكذا قد تتألف المتصلة أو المنفصلة من متصلتين أو منفصلتين أو متصلة ومنفصلة، ويطول ذكر أمثلتها.\n\nثم إنّ الشرطية التي تكون طرفاً في شرطية أيضاً تأليفها يكون من الحمليات أو الشرطيات أو المختلفات، وهكذا فتنبه لذلك.",
+      "english": "**First note: constructing conditionals.** Ordinary writing frequently omits the explicit logical markers that would reveal a proposition's formal type. Beginners may therefore misclassify arguments or fail to see their inferential force, especially with conditionals. Muẓaffar directs the reader to reconstruct their actual structure.\n\nEvery conditional has two sides that, taken on their own, were propositions. A disjunctive proposition may have three or more alternatives. The component propositions may themselves be categorical, connected conditional, disjunctive, or a mixture. There is no useful upper limit to the arrangements.\n\nA connected conditional can have a **categorical antecedent and connected-conditional consequent**: “If knowledge causes happiness, then if a human is learned, that person is happy.” The outer antecedent is “knowledge causes happiness,” while the outer consequent is itself the full conditional concerning a learned human.\n\nA connected conditional may also have a **categorical antecedent and disjunctive consequent**: “If an expression is simple, it is either a noun, a verb, or a particle.” The consequent here consists of three mutually distinguished alternatives.\n\nA disjunctive proposition can combine a **categorical alternative and a conditional alternative**: “Either the earth's interposition is not a cause of the lunar eclipse, or, if the earth intervenes between moon and sun, the moon is eclipsed.” The latter is an entire conditional serving as one side of the disjunction; Muẓaffar's astronomical example is quoted as an example of structure, not independently endorsed geometry.\n\nBy repeating this operation, one obtains connected conditionals made of two connected conditionals, two disjunctives, or mixed components; similarly for disjunctive propositions. **A conditional nested within another is still one component of the outer proposition**, not a separate unrelated outer proposition. A correct reconstruction must respect the scope and hierarchy of every connective.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Authorial prose from 1402 Rafed printed pp.156–157, with normalized punctuation; no independent 1968 scanned-page collation."
+        },
+        {
+          "type": "Syntax note",
+          "text": "Do not flatten “if A, then (if B, then C)” into two unrelated clauses or substitute a different formula without proving equivalence."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH authorial Arabic digital text; normalized, not independently image-collated",
+        "page": "156–157",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-C-24",
+      "stage": "C",
+      "chapter": 24,
+      "title": "Displaced propositions and reconstructing their logical form",
+      "arabicTitle": "تنبيه ثانٍ — المنحرفات والتطبيقات",
+      "arabic": "٢ ـ المنحرفات\n\nومن الموهمات في القضايا انحراف القضية عن استعمالها الطبيعي ووضعها المنطقي، فيشتبه حالها بأنها من أي نوع، ومثل هذه تسمّى «منحرفة».\n\nوهذا الانحراف قد يكون في الحملية كما لو اقترن سورها بالمحمول مع أن الاستعمال الطبيعي أن يقترن بالموضوع، كقولهم: «الإنسان بعض الحيوان» أو «الإنسان ليس كل الحيوان». وحق الاستعمال فيهما أن يقال: «بعض الحيوان إنسان» و«ليس كل حيوان إنساناً».\n\nوقد يكون الانحراف في الشرطية كما لو خلت عن أدوات الاتصال والعناد، فتكون بصورة حملية وهي في قوة الشرطية، نحو: «لا تكون الشمس طالعة أو يكون النهار موجوداً»، فهي إمّا في قوة المتصلة وهي قولنا: «كلما كانت الشمس طالعة كان النهار موجوداً»، وإمّا في قوة المنفصلة وهي قولنا: «إمّا أن لا تكون الشمس طالعة وإمّا أن يكون النهار موجوداً».\n\nونحو: «ليس يكون النهار موجوداً إلا والشمس طالعة» وهي أيضاً في قوة المتصلة أو المنفصلة المتقدمتين.\n\nونحو: «لا يجتمع المال إلا من شح أو حرام» فإنها في قوة المنفصلة وهي قولنا: «إمّا أن يجتمع المال من شح أو من حرام»، أو في قوة المتصلة وهي قولنا: «إن اجتمع المال فاجتماعه إمّا من شح أو من حرام». وهذه متصلة مقدمها حملية وتاليها منفصلة بالأصل.\n\nوعلى الطالب أن يلاحظ ويدقق القضايا المستعملة في العلوم، فإنها كثيراً ما تكون منحرفة عن أصلها فيغفل عنها، وليستعمل فطنته في إرجاعها إلى أصلها.\n\nتطبيقات\n\n١ ـ كيف ترد هذه القضية إلى أصلها «ليس للإنسان إلا ما سعى»؟\nالجواب: إنّ هذه قضية فيها حصر فهي تنحلّ إلى حمليتين موجبة وسالبة فهي منحرفة. والحمليتان هما «كل إنسان له نتيجة سعيه» و«ليس للإنسان ما لم يسع إليه».\n\n٢ ـ من أي القضايا قوله «أزرى بنفسه من استشعر الطمع»؟\nالجواب: إنها قضية منحرفة عن متصلة، وهي في قوة قولنا «كلما استشعر المرء الطمع أزرى بنفسه».\n\n٣ ـ كيف ترد هذه القضية إلى أصلها: «ما خاب من تمسك بك»؟\nالجواب: إنها منحرفة عن حملية موجبة كلية وهي: «كل من تمسك بك لا يخيب».",
+      "english": "**Second note: propositions displaced from their normal form.** A proposition may depart from its most transparent logical syntax, so that its category becomes difficult to recognize. Muẓaffar calls such a proposition *munḥarifa*, “displaced” or “deviant” in its expression, without implying that its meaning is inherently false.\n\nA categorical can be displaced by attaching the quantifier to the **predicate** instead of the **subject**: “Human is part of animal,” or “Human is not the whole of animal.” He restores the normal categorical arrangement as “Some animals are humans” and “Not every animal is human,” respectively. The reconstructions display the intended quantity of the subject.\n\nA conditional may omit the usual signs of entailment or incompatibility and resemble a categorical. The sentence “Either the sun is not shining or it is daytime” can express a connected form (“Whenever the sun shines, it is daytime”) or a disjunctive form (“Either the sun is not shining or it is daytime”), depending on the intended relation. Likewise, “Daytime does not occur without the sun shining” can express one of the foregoing structures.\n\nThe moralizing expression “Wealth accumulates only through avarice or illicit gain” can be analysed either as a disjunction of the two stated sources, or as a connected conditional: “If wealth accumulates, its accumulation results from either avarice or illicit gain.” In the latter reconstruction the antecedent is categorical while the consequent is disjunctive. The content is the author's example, not an independent claim about the causes of wealth.\n\nMuẓaffar applies the procedure to three further statements.\n\n**First**, “A human has only what he has striven for” expresses restriction and resolves into an affirmative and a negative categorical: what a human has comes from the results of effort, and what a person has not striven for is denied in the indicated respect.\n\n**Second**, “Whoever becomes possessed by greed has debased himself” is an implicit connected conditional: “Whenever a person becomes possessed by greed, he has debased himself.”\n\n**Third**, “One who clung to you has not been disappointed” is a displaced **universal affirmative with negative predicate content**: “Every person who clings to you does not fail.” Its status as affirmative is at the level of the principal copular assertion, not the absence of the word *not* in its predicate.\n\nThe underlying rule is to recover **quantity, quality, connective, and scope** before drawing inferences; surface grammar alone can obscure the proposition's structure.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Authorial examples from the 1402 Rafed text printed pp.157–158; spelling/punctuation normalized; no independent early facsimile comparison."
+        },
+        {
+          "type": "Technical distinction",
+          "text": "The analysis of 'Every S is non-P' versus 'Not every S is P' depends on the earlier distinction between complemented terms and negated predication; this passage preserves the author's own source transformations."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH authorial Arabic digital text; normalized, not independently image-collated",
+        "page": "157–158",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-C-25",
+      "stage": "C",
+      "chapter": 25,
+      "title": "Four authorial exercises in classifying and restoring conditionals",
+      "arabicTitle": "تمرينات على الشرطيات والمنحرفات",
+      "arabic": "تمرينات\n\n١ ـ لو قال القائل: «كلما كان الحيوان مجترّاً كان مشقوق الظلف» أو قال: «كلما كان الإنسان قصيراً كان ذكياً»، فماذا نعدّ هاتين القضيتين من اللزوميات أو من الاتفاقيات؟\n\n٢ ـ بيّن نوع هذه القضايا وأرجع المنحرفة إلى أصلها:\nأ ـ «إذا ازدحم الجواب خفي الصواب».\nب ـ «إذا كثرت المقدرة قلت الشهوة».\nج ـ «من نال استطال».\nد ـ «رضي بالذل من كشف عن ضرّه».\nهـ ـ «إنما يخشى الله من عباده العلماء».\n\n٣ ـ قولهم: «الدهر يومان، يوم لك ويوم عليك»، من أي أنواع القضايا؟ وإذا كانت منحرفة فأرجعها إلى أصلها وبيّن نوعها.\n\n٤ ـ من أي القضايا قول عليّ عليه السلام: «لا تخلو الأرض من قائم لله بحجّة إمّا ظاهراً مشهوراً أو خائفاً مغموراً»؟ وإذا كانت منحرفة فأرجعها إلى أصلها وبيّن نوعها.",
+      "english": "**Author's exercises at the end of the initial treatment of propositions.** Answers have deliberately not been supplied: the author intends independent logical analysis.\n\n1. Classify two connected conditionals as intrinsically necessary (*luzūmiyya*) or coincidental (*ittifāqiyya*): “Whenever an animal ruminates, it has a split hoof”; and “Whenever a human being is short, that person is intelligent.” The exercise tests whether a constant correlation implies an essential nexus.\n\n2. Identify the forms of these statements and restore any displaced forms: (a) “When answers crowd one another, correctness becomes hidden”; (b) “When power or capacity increases, desire diminishes”; (c) “Whoever gains becomes proud”; (d) “Whoever reveals his harm has accepted humiliation”; (e) “Only those of His servants who possess knowledge fear God.” Preserve the original special restriction in the final Qurʾānic example rather than turning it into an unrestricted affirmative.\n\n3. Identify the logical kind of “Time has two days: a day for you and a day against you.” If its expression is displaced, reconstruct the explicitly qualified form and give its type.\n\n4. Identify the logical kind of the attribution to ʿAlī: “The earth is never without someone who stands as God's proof, either well known and openly visible or fearful and concealed.” If it is a displaced proposition, reconstruct it in standard form and classify its disjunction.\n\nThis ends the original first-chapter material on propositions in the 1402 searchable witness. The final *summary chart* appearing as an image is not independently transcribed or certified in this reader.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Working original Arabic with all four end-of-chapter exercise questions, including the five lettered subitems, copied from 1402 digitally presented pp.159. The closing summary is an image in this edition and is not part of this textual unit; 1968 scanned print and transmitted attribution in question 4 not independently verified."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH authorial Arabic digital text; normalized, not independently image-collated",
+        "page": "159",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
       }
     }
   ],
