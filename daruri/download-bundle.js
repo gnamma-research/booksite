@@ -108,6 +108,8 @@
       ['daruri/headerless-navigation.css','headerless-navigation.css?v=20261028-icon-align1'],
       ['daruri/headerless-navigation.js','headerless-navigation.js?v=20261026-visuals-lang-fast1'],
       ['daruri/dock-ios-compact.css','dock-ios-compact.css?v=20261023-ux-dock1'],
+      ['daruri/applications-matrix.js', 'applications-matrix.js?v=20261110-matrix1'],
+      ['daruri/applications-matrix.css', 'applications-matrix.css?v=20261110-matrix1'],
       ['daruri/bookmark-ui.js', 'bookmark-ui.js?v=20261023-personal-icons'],
       ['daruri/bookmark-ui.css', 'bookmark-ui.css?v=20261023-personal-icons'],
       ['daruri/backup-transfer.js', 'backup-transfer.js?v=20261023-transfer-release2'],
