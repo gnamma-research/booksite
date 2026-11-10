@@ -4,7 +4,8 @@
   const $ = id => document.getElementById(id);
   const root = document.documentElement;
   const bookId = document.body.dataset.book;
-  const prefix = `gnamma-hikma:${bookId}:`;
+  const prefix = 'gnamma-hikma:desk:';
+  const sharedBase = bookId === 'combined' ? './' : '../';
   const text = value => value == null ? '' : String(value);
   const make = (tag, className, value) => {
     const node = document.createElement(tag);
@@ -32,6 +33,25 @@
       return false;
     }
   }
+  // One private desk across all four readers. Import older per-reader data once;
+  // keep conflicting notes in a recoverable archive instead of discarding either.
+  if (!readStorage(prefix + 'migrated', false)) {
+    const marks = new Set(readStorage(prefix + 'bookmarks', []));
+    const notes = readStorage(prefix + 'notes', {});
+    const conflicts = readStorage(prefix + 'migration-conflicts', []);
+    for (const legacy of ['combined','muzaffar-al-mantiq','bidayat-al-hikma','nihayat-al-hikma']) {
+      const lp = 'gnamma-hikma:' + legacy + ':';
+      for (const id of readStorage(lp + 'bookmarks', [])) if (typeof id === 'string') marks.add(id);
+      for (const [id, value] of Object.entries(readStorage(lp + 'notes', {}))) {
+        if (typeof value !== 'string' || !value.trim()) continue;
+        if (!notes[id]) notes[id] = value;
+        else if (notes[id] !== value) conflicts.push({id, text:value, source:legacy});
+      }
+    }
+    const ok = writeStorage(prefix + 'bookmarks', [...marks]) && writeStorage(prefix + 'notes', notes)
+      && writeStorage(prefix + 'migration-conflicts', conflicts);
+    if (ok) writeStorage(prefix + 'migrated', true);
+  }
   const initialBookmarks = readStorage(prefix + 'bookmarks', []);
   state.bookmarks = new Set(Array.isArray(initialBookmarks) ? initialBookmarks.filter(v => typeof v === 'string') : []);
   const initialNotes = readStorage(prefix + 'notes', {});
@@ -41,15 +61,22 @@
   state.preferences = {
     language: ['bilingual', 'arabic', 'english'].includes(p.language) ? p.language : 'bilingual',
     order: ['arabic-first', 'english-first'].includes(p.order) ? p.order : 'arabic-first',
-    view: ['focus', 'continuous'].includes(p.view) ? p.view : 'continuous',
+    view: ['focus', 'quiet', 'continuous'].includes(p.view) ? p.view : 'continuous',
     size: Number.isFinite(p.size) ? Math.max(16, Math.min(26, p.size)) : 19,
-    theme: ['dark', 'light'].includes(p.theme) ? p.theme : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+    theme: ['system', 'dark', 'light'].includes(p.theme) ? p.theme : 'system',
+    vowels: p.vowels !== false,
+    palette: ['plaster','cordoba','nasrid','zellij','landscape','open-landscape'].includes(p.palette) ? p.palette : 'plaster',
+    headings: ['both','original','editorial'].includes(p.headings) ? p.headings : 'both',
+    pageStyle: ['quiet','book','structured'].includes(p.pageStyle) ? p.pageStyle : 'quiet',
+    arabicFont: ['amiri','scheherazade','naskh'].includes(p.arabicFont) ? p.arabicFont : 'amiri',
+    englishFont: ['original','source-sans','lexend'].includes(p.englishFont) ? p.englishFont : 'original'
   };
   function applyPreferences(save = false) {
     const pref = state.preferences;
     root.dataset.language = pref.language;
     root.dataset.order = pref.order;
-    root.dataset.theme = pref.theme;
+    root.dataset.theme = pref.theme === 'system' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : pref.theme;
+    for (const key of ['palette','headings','pageStyle','arabicFont','englishFont','view']) root.dataset[key] = pref[key];
     root.style.setProperty('--reading-size', pref.size + 'px');
     document.querySelectorAll('button[data-language]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.language === pref.language)));
     $('reading-view').value = pref.view;
@@ -59,13 +86,15 @@
     $('theme-toggle').setAttribute('aria-label', themeLabel);
     $('theme-toggle').title = themeLabel;
     $('theme-toggle').setAttribute('aria-pressed', String(pref.theme === 'dark'));
-    document.querySelector('meta[name="theme-color"]').content = pref.theme === 'dark' ? '#242720' : '#f5f1e8';
+    document.querySelector('meta[name="theme-color"]').content = root.dataset.theme === 'dark' ? '#242720' : '#f5f1e8';
     const orderLabel = `Place ${pref.order === 'english-first' ? 'Arabic' : 'English'} first`;
     $('order-toggle').setAttribute('aria-label', orderLabel);
     $('order-toggle').title = orderLabel;
     if (save) writeStorage('gnamma-hikma:preferences', pref);
+    document.dispatchEvent(new CustomEvent('hikma:preferences'));
   }
   applyPreferences();
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { if (state.preferences.theme === 'system') applyPreferences(); });
 
   const iconPaths = {
     bookmark: ['M6 3h12v18l-6-4-6 4Z'],
@@ -125,6 +154,7 @@
       usedIds.add(domId);
       const unit = { ...raw, id, domId, stage: text(raw.stage == null ? '0' : raw.stage), chapter: chapterNumber(raw.chapter), title: text(raw.title), arabicTitle: text(raw.arabicTitle), arabic: text(raw.arabic), english: text(raw.english), status: text(raw.status || book.status || ''), notes: Array.isArray(raw.notes) ? raw.notes : [] };
       unit.searchText = normalise([unit.title, unit.arabicTitle, unit.arabic, unit.english].join(' '));
+      unit.paragraphIds = state.studyIndex?.paragraphs?.[unit.id] || {};
       const groupKey = unit.stage + '::' + unit.chapter;
       let group = groups.get(groupKey);
       if (!group) {
@@ -142,7 +172,11 @@
     for (const unit of state.units) {
       state.byHash.set(unit.domId, { group: unit.group, unit });
       if (!state.byHash.has(unit.id)) state.byHash.set(unit.id, { group: unit.group, unit });
+      for (const language of ['english','arabic']) for (const paragraph of unit.paragraphIds[language] || []) {
+        state.byHash.set(paragraph.id, {group:unit.group, unit, paragraph:paragraph.id});
+      }
     }
+    for(const [retired,target] of Object.entries(state.studyIndex?.retiredParagraphs || {})){const resolved=state.byHash.get(target);if(resolved)state.byHash.set(retired,resolved);}
     state.active = state.groups[0] || null;
     for (const [id, value] of Object.entries(state.notes)) if (typeof value !== 'string') delete state.notes[id];
     updateMetadata();
@@ -151,6 +185,7 @@
     render();
     const target = resolveHash();
     if (target) navigate(target, false);
+    document.dispatchEvent(new CustomEvent('hikma:ready'));
   }
   function updateMetadata() {
     const book = state.book;
@@ -168,6 +203,14 @@
     if (!authorUnits && guides) coverage = `Reading guide · ${guides} editorial ${guides === 1 ? 'section' : 'sections'} · bilingual text not yet available`;
     else if (!state.units.length) coverage = 'The reading edition is being prepared';
     else coverage = `${originals} Arabic ${originals === 1 ? 'section' : 'sections'} · ${translated} of ${authorUnits} ${authorUnits === 1 ? 'section' : 'sections'} with English${state.units.some(unit => /draft|working|provisional|unreviewed/.test(unit.status.toLowerCase())) ? ' · working translation' : ''}`;
+    if (bookId === 'combined') {
+      const byPart = part => state.units.filter(unit => unit.part === part && !isGuide(unit));
+      const entry = (part, label) => {
+        const units = byPart(part), translated = units.filter(hasEnglish).length;
+        return label + ': ' + translated + '/' + units.length + ' reading passages in working English';
+      };
+      coverage = [entry('M', 'I · al-Manṭiq selections'), entry('B', 'II · Bidāya'), entry('N', 'III · Nihāya')].join(' · ');
+    }
     $('coverage-text').textContent = coverage;
     if (!authorUnits && guides) {
       document.querySelector('.edition-badge').textContent = 'READING GUIDE';
@@ -193,8 +236,8 @@
       let stageNode = byStage.get(group.stage);
       if (!stageNode) {
         stageNode = make('details', 'toc-stage'); stageNode.dataset.stage = group.stage;
-        stageNode.open = !!state.query || state.savedOnly || openStages.has(group.stage) || (state.active && state.active.stage === group.stage) || group.stage === '0';
-        const summary = make('summary'); summary.append(make('span', 'stage-roman', group.stage === '0' ? '—' : group.stage), make('span', '', stageTitle(group.stage)));
+        stageNode.open = !!state.query || state.savedOnly || openStages.has(group.stage) || (state.active && state.active.stage === group.stage) || /-0$/.test(group.stage);
+        const summary = make('summary'); summary.append(make('span', 'stage-roman', group.units[0].id.startsWith('M-') ? (state.stages.get(group.stage)?.bookNumber || '·') : group.stage.replace(/^[MBN]-/, '') === '0' ? '·' : group.stage.replace(/^[MBN]-/, '')), make('span', '', stageTitle(group.stage)));
         const list = make('ul', 'toc-chapters'); stageNode.append(summary, list); $('toc').append(stageNode); byStage.set(group.stage, stageNode);
       }
       const item = make('li'); const anchor = make('a'); anchor.href = '#' + group.id; anchor.dataset.group = group.key;
@@ -221,7 +264,11 @@
     $('title-page').hidden = !!state.query || state.savedOnly;
     $('filter-notice').hidden = !state.query && !state.savedOnly;
     $('filter-message').textContent = state.query ? `Search results for “${state.query}”${state.savedOnly ? ' in your saved passages' : ''}.` : 'Your saved passages.';
-    const shown = state.preferences.view === 'focus' && !state.query && !state.savedOnly ? matched.filter(unit => unit.group === state.active) : matched;
+    const shown = state.preferences.view !== 'continuous' && !state.query && !state.savedOnly
+      ? matched.filter(unit => unit.group === state.active)
+      : state.preferences.view === 'continuous' && !state.query && !state.savedOnly
+      ? matched.filter(unit => bookId !== 'combined' || unit.part === (state.active && state.active.stage[0]))
+      : matched;
     const content = $('reading-content'); content.replaceChildren();
     if (!shown.length) {
       const empty = make('div', 'empty-state');
@@ -233,7 +280,7 @@
         if (unit.stage !== lastStage) {
           const stage = state.stages.get(unit.stage) || {};
           const heading = make('header', 'stage-heading');
-          heading.append(make('span', 'stage-number', unit.stage === '0' ? 'INTRODUCTION' : (stage.bookNumber ? `BOOK ${stage.bookNumber}` : `STAGE ${unit.stage}`)), make('h2', '', stageTitle(unit.stage)));
+          heading.append(make('span', 'stage-number', (unit.stage === '0' || unit.stage.endsWith('-0')) ? 'INTRODUCTION' : (unit.id.startsWith('M-') ? (stage.bookNumber ? `BOOK ${stage.bookNumber}` : 'BOOK III') : `STAGE ${unit.stage.replace(/^[MBN]-/, '')}`)), make('h2', '', stageTitle(unit.stage)));
           if (stage.arabicTitle) { const arabic = make('p', 'stage-arabic', stage.arabicTitle); arabic.lang = 'ar'; arabic.dir = 'rtl'; heading.append(arabic); }
           if (stage.introductionArabic) { const intro = make('p', 'stage-introduction', stage.introductionArabic); intro.lang = 'ar'; intro.dir = 'rtl'; heading.append(intro); }
           fragment.append(heading); lastStage = unit.stage;
@@ -241,7 +288,7 @@
         if (unit.group !== lastGroup) {
           section = make('section', 'chapter-section'); section.id = unit.group.id; section.dataset.group = unit.group.key;
           const heading = make('header', 'chapter-heading'); const titles = make('div', 'chapter-heading-text');
-          titles.append(make('span', 'chapter-label', unit.chapter ? `CHAPTER ${unit.chapter}` : isGuide(unit) ? 'READING GUIDE' : 'INTRODUCTION'), make('h3', '', unit.group.title));
+          titles.append(make('span', 'chapter-label', unit.chapter ? `${unit.id.startsWith('M-') ? 'READING SECTION' : 'CHAPTER'} ${unit.chapter}` : isGuide(unit) ? 'READING GUIDE' : 'INTRODUCTION'), make('h3', 'editorial-heading', unit.group.title));
           if (unit.group.arabicTitle) { const arabic = make('p', 'chapter-title-arabic', unit.group.arabicTitle); arabic.lang = 'ar'; arabic.dir = 'rtl'; titles.append(arabic); }
           const permalink = make('a', 'chapter-permalink', '§'); permalink.href = '#' + unit.group.id; permalink.setAttribute('aria-label', 'Link to ' + unit.group.title);
           permalink.addEventListener('click', event => { event.preventDefault(); navigate({ group: unit.group }, true); });
@@ -251,8 +298,9 @@
       }
       content.append(fragment);
     }
-    $('reading-count').textContent = state.preferences.view === 'focus' && state.active && groups.length ? `${groups.indexOf(state.active) + 1} / ${groups.length}` : `${shown.length} ${shown.length === 1 ? 'section' : 'sections'}`;
+    $('reading-count').textContent = state.preferences.view !== 'continuous' && state.active && groups.length ? `${groups.indexOf(state.active) + 1} / ${groups.length}` : `${shown.length} ${shown.length === 1 ? 'section' : 'sections'}`;
     updateLocation(); renderNavigation(groups); observeSections();
+    document.dispatchEvent(new CustomEvent('hikma:render'));
   }
   function renderPassage(unit) {
     const article = make('article', 'passage'); article.id = unit.domId; article.dataset.unit = unit.id;
@@ -290,7 +338,7 @@
       if (unit.group.units.length > 1 && subtitle && subtitle !== (language === 'arabic' ? unit.group.arabicTitle : unit.group.title)) panel.append(make('h4', 'unit-subheading', subtitle));
       const body = make('div', 'text-body');
       // The shared renderer escapes every source string before generating markup.
-      body.innerHTML = HikmaRichText.renderUnit(unit, language);
+      body.innerHTML = HikmaRichText.renderUnit(unit, language, {paragraphIds:(unit.paragraphIds[language] || []).map(p => p.id), plainArabic:!state.preferences.vowels});
       panel.append(body); columns.append(panel);
     }
     article.append(columns);
@@ -339,6 +387,7 @@
       if (button) { button.setAttribute('aria-pressed', String(added)); button.setAttribute('aria-label', added ? 'Remove bookmark' : 'Bookmark this passage'); button.title = button.getAttribute('aria-label'); }
       renderToc(matchingUnits());
     }
+    document.dispatchEvent(new CustomEvent('hikma:desk'));
     notify(added ? 'Passage saved to your bookmarks.' : 'Bookmark removed.');
   }
   function openNote(unit, opener) {
@@ -357,11 +406,12 @@
     const article = $(unit.domId);
     if (article) { appendPersonalNote(article, unit); const button = article.querySelector('[data-note]'); button.classList.toggle('has-note', !!value); button.setAttribute('aria-label', value ? 'Edit your note' : 'Add a personal note'); button.title = button.getAttribute('aria-label'); }
     $('note-dialog').close();
+    document.dispatchEvent(new CustomEvent('hikma:desk'));
     if (persisted) notify(value ? 'Your note is saved in this browser.' : 'Your note was removed.');
   }
   function renderNavigation(groups) {
     const nav = $('chapter-navigation');
-    nav.hidden = state.preferences.view !== 'focus' || !!state.query || state.savedOnly || groups.length < 2;
+    nav.hidden = state.preferences.view === 'continuous' || !!state.query || state.savedOnly || groups.length < 2;
     if (nav.hidden) return;
     const index = groups.indexOf(state.active); const previous = groups[index - 1]; const next = groups[index + 1];
     $('previous-chapter').disabled = !previous; $('next-chapter').disabled = !next;
@@ -372,22 +422,34 @@
   }
   function updateLocation() {
     if (!state.active) return;
-    $('current-location').textContent = `${state.active.stage === '0' ? '' : 'Stage ' + state.active.stage + ' · '}${state.active.title}`;
+    $('current-location').textContent = stageTitle(state.active.stage) + ' · ' + state.active.title;
     document.querySelectorAll('#toc a[data-group]').forEach(anchor => {
       if (anchor.dataset.group === state.active.key) anchor.setAttribute('aria-current', 'true'); else anchor.removeAttribute('aria-current');
     });
+    document.dispatchEvent(new CustomEvent('hikma:location'));
   }
+  let scrollFrame = 0;
   function observeSections() {
-    if (state.preferences.view === 'focus' || !('IntersectionObserver' in window)) return;
-    state.observer = new IntersectionObserver(entries => {
-      const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-      if (visible.length) {
-        const group = state.groups.find(g => g.key === visible[0].target.dataset.group);
-        if (group) { state.active = group; updateLocation(); }
-      }
-    }, { rootMargin: '-140px 0px -55% 0px', threshold: 0 });
-    document.querySelectorAll('.chapter-section').forEach(section => state.observer.observe(section));
+    if (state.preferences.view !== 'continuous') return;
+    if (state.observer) state.observer.disconnect();
+    // Pick the last heading above the reading line. Intersection callbacks alone
+    // can report an old heading after a long cross-book jump.
+    state.observer = new IntersectionObserver(() => updateFromScroll(), {rootMargin:'-140px 0px -55% 0px'});
+    document.querySelectorAll('.chapter-section').forEach(node => state.observer.observe(node));
   }
+  function updateFromScroll() {
+    if (scrollFrame || state.preferences.view !== 'continuous') return;
+    scrollFrame = requestAnimationFrame(() => {
+      scrollFrame = 0;
+      const nodes = [...document.querySelectorAll('.chapter-section')];
+      let chosen = nodes[0];
+      const line = ($('reading-toolbar')?.getBoundingClientRect().bottom || 120) + 32;
+      for (const node of nodes) { if (node.getBoundingClientRect().top <= line) chosen = node; else break; }
+      const group = chosen && state.groups.find(g => g.key === chosen.dataset.group);
+      if (group && state.active !== group) { state.active = group; updateLocation(); }
+    });
+  }
+  window.addEventListener('scroll', updateFromScroll, {passive:true});
   function resolveHash() {
     try { return state.byHash.get(decodeURIComponent(location.hash.slice(1))); } catch (_) { return null; }
   }
@@ -396,10 +458,10 @@
     state.active = target.group;
     const matching = matchingUnits();
     if (!matching.some(unit => unit.group === target.group)) { state.query = ''; $('book-search').value = ''; state.savedOnly = false; }
-    if (state.preferences.view === 'focus' || !$(target.unit ? target.unit.domId : target.group.id)) render();
+    if (state.preferences.view !== 'continuous' || !$(target.unit ? target.unit.domId : target.group.id)) render();
     else { renderToc(matchingUnits()); updateLocation(); }
     closeSidebar(false);
-    const id = target.unit ? target.unit.domId : target.group.id;
+    const id = target.paragraph || (target.unit ? target.unit.domId : target.group.id);
     if (writeHash) history.pushState(null, '', '#' + encodeURIComponent(id));
     requestAnimationFrame(() => { const element = $(id); if (element) { element.scrollIntoView({ block: 'start', behavior: 'instant' }); element.setAttribute('tabindex', '-1'); element.focus({ preventScroll: true }); } });
   }
@@ -419,7 +481,8 @@
       if (entry.editorialOrigin) article.append(make('p', 'glossary-provenance', 'Comparative editorial entry · not authorial text'));
       const candidates = [entry.arabic, entry.english, entry.term].map(normalise).filter(value => value && value.length > 2);
       const part = entry.bookLabel === 'al-Manṭiq' ? 'M' : entry.bookLabel === 'Bidāya' ? 'B' : entry.bookLabel === 'Nihāya' ? 'N' : null;
-      const occurrence = (entry.passageId && state.byUnit.get(entry.passageId)) || state.units.find(unit => (!part || unit.part === part) && candidates.some(value => unit.searchText.includes(value)));
+      const recordedId = entry.passageId || /#(?:passage-)?([MBN]-[A-Z0-9-]+)/.exec(entry.sourceUrl || '')?.[1];
+      const occurrence = recordedId && state.byUnit.get(recordedId);
       if (occurrence) {
         const jump = make('button', 'dictionary-jump', 'Read in the text');
         jump.type = 'button'; jump.addEventListener('click', () => { $('glossary-dialog').close(); navigate({group:occurrence.group,unit:occurrence},true); });
@@ -434,7 +497,7 @@
     const book = state.book; const node = $('sources-content'); node.replaceChildren();
     node.append(make('p', 'dialog-intro', book.description || 'Read the Arabic text alongside the English rendering and consult the cited sources for each passage.'));
     const statistics = make('div', 'edition-statistics');
-    const data = [[state.stages.size - (state.stages.has('0') ? 1 : 0), 'stages'], [state.units.filter(unit => unit.arabic.trim() && !isGuide(unit)).length, 'Arabic sections'], [state.units.filter(hasEnglish).length, 'English translations']];
+    const data = [[bookId === 'combined' ? 3 : state.stages.size - (state.stages.has('0') ? 1 : 0), bookId === 'combined' ? 'books' : 'stages'], [state.units.filter(unit => unit.arabic.trim() && !isGuide(unit)).length, 'Arabic sections'], [state.units.filter(hasEnglish).length, 'English translations']];
     for (const [value, label] of data) { const stat = make('div'); stat.append(make('span', 'stat-value', value), make('span', 'stat-label', label)); statistics.append(stat); }
     node.append(statistics, make('h3', '', 'Reading this edition'));
     const guideCount = state.units.filter(isGuide).length;
@@ -465,12 +528,12 @@
     node.append(list);
     node.append(make('h3', '', 'Continue studying'));
     const allContents = document.createElement('p');
-    allContents.append(link('Muẓaffar: complete authorial contents, six books', bookId === 'muzaffar-al-mantiq' ? './contents.html' : '../muzaffar-al-mantiq/contents.html'));
+    allContents.append(link('Muẓaffar: complete authorial contents, six books', sharedBase + 'muzaffar-al-mantiq/contents.html'));
     allContents.append(make('span', 'source-domain', ' Source map, not a complete translation.'));
     node.append(allContents);
-    const guide = make('a', '', 'A guide to studying the two Hikma texts ↗'); guide.href = '../study-guide.html'; node.append(guide);
+    const guide = make('a', '', 'A guide to studying the two Hikma texts ↗'); guide.href = sharedBase + 'study-guide.html'; node.append(guide);
     node.append(make('p', '', ''));
-    const audit = make('a', '', 'Editorial scope and recorded source readings ↗'); audit.href = '../editorial-status.html'; node.append(audit);
+    const audit = make('a', '', 'Editorial scope and recorded source readings ↗'); audit.href = sharedBase + 'editorial-status.html'; node.append(audit);
   }
   function openDialog(dialog, opener) {
     closeSidebar(false);
@@ -547,22 +610,36 @@
     if (event.key === prefix + 'bookmarks') { const stored = readStorage(event.key, []); if (Array.isArray(stored)) state.bookmarks = new Set(stored); render(); }
     if (event.key === prefix + 'notes') { const stored = readStorage(event.key, {}); if (stored && typeof stored === 'object' && !Array.isArray(stored)) state.notes = stored; render(); }
   });
-  async function loadBook() {
-    $('begin-reading').disabled = true;
-    try {
-      const response = await fetch('./data/book.json', { cache: 'no-cache' });
-      if (!response.ok) throw new Error('Edition unavailable');
-      const book = await response.json();
-      if (bookId === 'nihayat-al-hikma') {
+  function combineBooks(muzaffar, bidaya, nihaya) {
+    const prep = (book, code, name) => {
+      const stages = book.stages.map(stage => ({...stage, id: code + '-' + stage.id,
+        title: name + ' · ' + (stage.id === '0' || code === 'M' ? '' : 'Stage ' + stage.id + ': ') + stage.title }));
+      const units = book.units.filter(unit => !String(unit.id).startsWith('B-GUIDE'))
+        .map(unit => ({...unit, stage: code + '-' + unit.stage, part: code}));
+      return {stages,units};
+    };
+    const m=prep(muzaffar, 'M', 'al-Manṭiq');
+    const b=prep(bidaya, 'B', 'Bidāyat al-Ḥikma');
+    const n=prep(nihaya, 'N', 'Nihāyat al-Ḥikma');
+    return {id:'hikma-combined',title:'Logic, Bidāyat & Nihāyat al-Ḥikma',
+      arabicTitle:'المنطق · بداية الحكمة · نهاية الحكمة',author:'Muḥammad Riḍā al-Muẓaffar · Muḥammad Ḥusayn al-Ṭabāṭabāʾī',
+      description:'Three books in one reader. Part I: selected passages from al-Muẓaffar’s logic, with the full Arabic source linked. Part II: complete authorial Arabic and full original working English of Bidāyat al-Ḥikma. Part III: complete authorial Arabic and full working English of Nihāyat al-Ḥikma. All English awaits independent expert review.',
+      status:'complete-working-translation-bidaya-and-nihaya-muzaffar-selections',
+      stages:[...m.stages,...b.stages,...n.stages],units:[...m.units,...b.units,...n.units],
+      sources:[...(muzaffar.sources||[]),...(bidaya.sources||[]),...(nihaya.sources||[])],
+      glossary:[...(muzaffar.glossary||[]).map(entry => ({...entry,bookLabel:'al-Manṭiq'})),...(bidaya.glossary||[]).map(entry => ({...entry,bookLabel:'Bidāya'})),...(nihaya.glossary||[]).map(entry => ({...entry,bookLabel:'Nihāya'}))],
+      editorialStatus:{translationMethod:'Separate statuses are retained. Muẓaffar contains introductory and definition selections, not its entire Arabic or English text. Bidāya and Nihāya both have complete authorial Arabic and full working English reading coverage; textual collation, comparison with manuscript witnesses and independent specialist review are outstanding.',collation:'The user-uploaded 325-page Arabic–English PDF is the Bidāya transcription witness; original Arabic text requires further character-by-character proofreading.',pagination:'Bidāya page numbers follow the supplied bilingual PDF. Nihāya follows the previously recorded 1417 AH Qum edition.'}};
+  }
+  async function supplementNihaya(n) {
         try {
-          const supplementResponse = await fetch('./data/editorial-supplement.json', { cache: 'no-cache' });
+          const supplementResponse = await fetch(sharedBase + 'nihayat-al-hikma/data/editorial-supplement.json', { cache: 'no-cache' });
           if (supplementResponse.ok) {
-            const supplement = await supplementResponse.json();
-            const existing = new Set((book.glossary || []).map(item => (item.arabic || item.term || '').normalize('NFKC').replace(/[\u064b-\u065f\u0670\s]/g, '')));
-            book.glossary = [...(book.glossary || []), ...(supplement.glossary || []).filter(item => !existing.has((item.arabic || item.term || '').normalize('NFKC').replace(/[\u064b-\u065f\u0670\s]/g, '')))];
-            book.sources = [...(book.sources || []), ...(supplement.sources || [])];
-            for (const note of supplement.criticalNotes || []) {
-              const unit = book.units.find(item => item.id === note.passageId);
+            const extra = await supplementResponse.json();
+            const existing = new Set((n.glossary || []).map(item => (item.arabic || item.term || '').normalize('NFKC').replace(/[\u064b-\u065f\u0670\s]/g, '')));
+            n.glossary = [...(n.glossary || []), ...(extra.glossary || []).filter(item => !existing.has((item.arabic || item.term || '').normalize('NFKC').replace(/[\u064b-\u065f\u0670\s]/g, '')))];
+            n.sources = [...(n.sources || []), ...(extra.sources || [])];
+            for (const note of extra.criticalNotes || []) {
+              const unit = n.units.find(item => item.id === note.passageId);
               if (unit) {
                  // Some critical readings are already recorded in the authorial
                  // book.json for inclusion in the standalone printed editions.
@@ -577,9 +654,35 @@
                }
             }
           }
-        } catch (_) { /* The authorial reader remains fully available if the optional supplement fails. */ }
+        } catch (_) { /* Optional critical bibliography must never block the three-book reader. */ }
+    return n;
+  }
+  async function loadBook() {
+    $('begin-reading').disabled = true;
+    try {
+      // Optional apparatus failure must leave the primary text readable.
+      const support = fetch(sharedBase + 'data/study-index.json', {cache:'no-cache'})
+        .then(r => r.ok ? r.json() : null).catch(() => null);
+      const paths = bookId === 'combined'
+        ? ['muzaffar-al-mantiq','bidayat-al-hikma','nihayat-al-hikma'].map(slug => sharedBase + slug + '/data/book.json')
+        : ['./data/book.json'];
+      const books = await Promise.all(paths.map(async path => {
+        const response = await fetch(path, {cache:'no-cache'});
+        if (!response.ok) throw new Error('Edition unavailable');
+        return response.json();
+      }));
+      state.studyIndex = await support;
+      if (bookId === 'combined') {
+        const [m,b,n] = books;
+        await supplementNihaya(n);
+        state.sourceBooks = {M:m,B:b,N:n};
+        setData(combineBooks(m,b,n));
+      } else {
+        const book = books[0];
+        if (bookId === 'nihayat-al-hikma') await supplementNihaya(book);
+        state.sourceBooks = {[book.units[0]?.id?.[0]]:book};
+        setData(book);
       }
-      setData(book);
     } catch (error) {
       const box = make('div', 'loading-state error-state');
       box.append(make('span', 'loading-mark', ''), make('h2', '', 'The reading text is unavailable'), make('p', '', 'The edition could not be opened. Please try again in a moment.'));
@@ -591,5 +694,21 @@
       $('glossary-list').replaceChildren(make('p', 'dialog-intro', 'The glossary will appear when the edition opens.'));
     }
   }
+  document.querySelectorAll('[data-part-jump]').forEach(button => button.addEventListener('click', () => {
+    const id=button.dataset.partJump;
+    const target=state.byHash.get(id);
+    if (target) { navigate(target,true); }
+  }));
+  window.HikmaReader = Object.freeze({
+    state, bookId, sharedBase, normalise, make, notify, readStorage, writeStorage,
+    navigateId(id, writeHash = true) { const target = state.byHash.get(id) || state.byHash.get('passage-' + id); if (target) navigate(target, writeHash); return !!target; },
+    navigate, refresh:render, openSidebar, closeSidebar,
+    setFilter(query='', savedOnly=false) {state.query=query;state.savedOnly=savedOnly;$('book-search').value=query;render();},
+    setPreferences(values, redraw = false) { Object.assign(state.preferences, values); applyPreferences(true); if (redraw) render(); },
+    toggleBookmark(id) { const unit=state.byUnit.get(id); if(unit) toggleBookmark(unit); },
+    openNote(id, opener) { const unit=state.byUnit.get(id); if(unit) openNote(unit, opener); },
+    saveDesk() { writeStorage(prefix+'bookmarks',[...state.bookmarks]); writeStorage(prefix+'notes',state.notes); render(); document.dispatchEvent(new CustomEvent('hikma:desk')); },
+    currentUnit() { return state.active?.units[0] || state.units[0]; }
+  });
   loadBook();
 })();

@@ -35,6 +35,8 @@ jobs:
           node --check texts/al-tabatabai/assets/hikma-reader.js
           node --check texts/al-tabatabai/assets/hikma-combined.js
           node --check texts/al-tabatabai/assets/hikma-refinements.js
+          node --check texts/al-tabatabai/assets/hikma-study-tools.js
+          node --check texts/al-tabatabai/tools/qa-study-tools.cjs
           node --check texts/al-tabatabai/tools/qa-browser.cjs
       - name: Install browser engines
         run: |
@@ -52,6 +54,7 @@ jobs:
             sleep 0.25
           done
           HIKMA_QA_OUTPUT=hikma-qa-artifacts node texts/al-tabatabai/tools/qa-browser.cjs
+          HIKMA_QA_OUTPUT=hikma-qa-artifacts node texts/al-tabatabai/tools/qa-study-tools.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:

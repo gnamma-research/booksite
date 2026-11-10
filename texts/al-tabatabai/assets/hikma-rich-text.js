@@ -55,11 +55,12 @@
     const direction = language === 'ar' ? 'rtl' : 'ltr';
     const lines = text(value).trim().replace(/\r\n?/g, '\n').split('\n'), output = [];
     const caption = text(options.tableCaption).trim() || (language === 'ar' ? 'جدول' : 'Table');
-    let paragraph = [];
+    let paragraph = [], paragraphNumber = 0;
     function flush() {
       if (!paragraph.length) return;
       const content = inline(paragraph.join('\n'));
-      output.push('<p dir="' + direction + '">' + (options.lineBreaks ? content.replace(/\n/g, '<br>') : content) + '</p>');
+      const id = options.paragraphIds?.[paragraphNumber++];
+      output.push('<p dir="' + direction + '"' + (id ? ' id="' + escape(id) + '" data-paragraph="true"' : '') + '>' + (options.lineBreaks ? content.replace(/\n/g, '<br>') : content) + '</p>');
       paragraph = [];
     }
     for (let i = 0; i < lines.length;) {
@@ -152,10 +153,19 @@
   function renderUnit(unit, language, options = {}) {
     const arabic = language === 'arabic' || language === 'ar', field = arabic ? 'arabic' : 'english';
     const title = text(arabic ? unit.arabicTitle : unit.title).trim();
-    return renderText(unit[field], { ...options, language: field,
+    return renderText(arabic && options.plainArabic ? stripVowels(unit[field]) : unit[field], { ...options, language: field,
       tableCaption: options.tableCaption || (title ? (arabic ? 'جدول: ' : 'Table: ') + title : '') }) +
       renderDiagram(unit.sourceDiagram, field, unit.id);
   }
 
-  return Object.freeze({ escape, inline, renderText, renderDiagram, renderUnit, validDiagram });
+  function stripVowels(value) {
+    // In Muẓaffar's formulas the fatḥa over an isolated term letter marks its
+    // complement. Removing it changes the proposition, so retain those tokens.
+    return text(value).replace(/[\u0621-\u065f\u0670\u0671]+/g, token => {
+      const bare = token.replace(/[\u064b-\u065f\u0670\u0640]/g, '');
+      return /^[بحج]$/.test(bare) ? token : token.replace(/[\u064b-\u065f\u0670]/g, '');
+    });
+  }
+
+  return Object.freeze({ escape, inline, renderText, renderDiagram, renderUnit, validDiagram, stripVowels });
 });

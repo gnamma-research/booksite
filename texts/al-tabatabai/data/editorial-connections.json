@@ -1,0 +1,1063 @@
+{
+  "schema": 1,
+  "date": "2026-11-10",
+  "policy": {
+    "purpose": "Read a related argument, not merely the same word.",
+    "types": {
+      "development": "Bidaya argument developed or examined in Nihaya.",
+      "orientation": "Introductory account useful to a Nihaya reader.",
+      "foundation": "A philosophical basis needed to interpret a logical distinction.",
+      "qualification": "A substantive difference or restriction that should not be flattened.",
+      "logical-tool": "A specific logical distinction used by the philosophical argument."
+    },
+    "negativeRule": "Lexical occurrence never generates a curated cross-text link.",
+    "review": "Passages are read and an exact quoted anchor is recorded. This is editorial analysis, not independent specialist certification."
+  },
+  "links": [
+    {
+      "id": "ct-m-p-04-b-xi-01-1",
+      "from": {
+        "unit": "M-P-04",
+        "language": "english",
+        "quote": "On examining these experiences, the author invites us to understand cognition as the reception of the forms of things in the soul, by analogy with the way an image is impressed in a mirror. "
+      },
+      "to": {
+        "unit": "B-XI-01",
+        "language": "english",
+        "quote": "As established in the discussion of mental existence, we have knowledge of things outside ourselves when their *quiddities* become present to us, not through the extramental existences by wh"
+      },
+      "type": "foundation",
+      "rationale": "Muẓaffar’s introductory account defines cognition through the presence of a form. Bidāya distinguishes this representative mode from the direct presence of the known itself, and thereby locates the introductory definition within a wider account of knowledge.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation.",
+      "caution": "The mirror analogy does not by itself establish the metaphysical thesis that cognition is immaterial."
+    },
+    {
+      "id": "ct-m-p-04-n-iii-01-2",
+      "from": {
+        "unit": "M-P-04",
+        "language": "english",
+        "quote": "On examining these experiences, the author invites us to understand cognition as the reception of the forms of things in the soul, by analogy with the way an image is impressed in a mirror. "
+      },
+      "to": {
+        "unit": "N-III-01",
+        "language": "english",
+        "quote": "First: a mental quiddity does not fall under, and is not included in, the category under which it fell when it was external and its effects followed upon it. It has only the concept of that "
+      },
+      "type": "foundation",
+      "rationale": "Nihāya explains how a mental form can preserve a thing’s quiddity without acquiring its external effects. This is the philosophical question raised by calling cognition the presence of the thing’s form.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-m-p-05-n-xi-08-3",
+      "from": {
+        "unit": "M-P-05",
+        "language": "english",
+        "quote": "Once you demonstrate their equality, however, a further cognitive state arises: you apprehend that the relation accords with reality, and this apprehension entails the soul's judgment and as"
+      },
+      "to": {
+        "unit": "N-XI-08",
+        "language": "english",
+        "quote": "As for judgment’s being an act of the soul within mental apprehension, its reality in our statement “Zayd is standing,” for example, is as follows. Through sensation the soul reaches one thi"
+      },
+      "type": "qualification",
+      "rationale": "Compare Muẓaffar’s description of assent as an apprehension entailing judgment with Ṭabāṭabāʾī’s analysis of judgment as an act of the soul that unites concepts in order to represent an external state of affairs.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation.",
+      "caution": "These are related analyses; the link does not assume that their accounts of assent and judgment are identical."
+    },
+    {
+      "id": "ct-m-p-08-b-viii-08-4",
+      "from": {
+        "unit": "M-P-08",
+        "language": "english",
+        "quote": "Ignorance is the absence of knowledge in a subject capable of knowing. We do not call a stone blind, because blindness is the lack of sight in something naturally fitted to see. Similarly, k"
+      },
+      "to": {
+        "unit": "B-VIII-08",
+        "language": "english",
+        "quote": "This is also called the opposition of *privation and possession* or *deprivation and capacity*. It consists in a positive condition belonging to a subject naturally fitted to receive it and "
+      },
+      "type": "foundation",
+      "rationale": "The definition of ignorance relies on privation in a subject capable of knowledge. Bidāya explains that ontological form of opposition and distinguishes broad natural capacity from capacity at the relevant time.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-m-p-09-b-xi-08-5",
+      "from": {
+        "unit": "M-P-09",
+        "language": "english",
+        "quote": "Both conception and assent are divided into two kinds. The first is *immediate* or self-evident (*ḍarūrī*, *badīhī*): it does not require a further process of inquiry or discursive thought. "
+      },
+      "to": {
+        "unit": "B-XI-08",
+        "language": "english",
+        "quote": "Discursive sciences ultimately depend upon immediate cognitions by which their conclusions are established. Otherwise the series of demonstrations would recede without end and could never yi"
+      },
+      "type": "foundation",
+      "rationale": "The division between immediate and discursive cognition raises a further question: why must proof terminate in immediate knowledge? Bidāya develops that dependence and the role of the first principle of contradiction.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-m-k-02-n-iii-01-6",
+      "from": {
+        "unit": "M-K-02",
+        "language": "english",
+        "quote": "A universal need not have individuals that actually exist. The intellect may form a universal concept capable of applying to more than one individual without abstracting it from presently ex"
+      },
+      "to": {
+        "unit": "N-III-01",
+        "language": "english",
+        "quote": "The resolution is that what is established in the mind consists only of their concepts by primary predication, not their instances by common predication. What is conceived of a partner to th"
+      },
+      "type": "foundation",
+      "rationale": "A universal concept can be entertained even when it has no possible external instance. Nihāya explains how a concept of an intrinsic impossibility can exist mentally without making the impossible object exist.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation.",
+      "caution": "The existence of a concept is not the existence or real possibility of what it signifies."
+    },
+    {
+      "id": "ct-m-k-04-b-i-05-7",
+      "from": {
+        "unit": "M-K-04",
+        "language": "english",
+        "quote": "Second, consider a universal such as whiteness, number or existence. When applied to its instances, unlike the previous type it admits variation in the mode of predication: through intensity"
+      },
+      "to": {
+        "unit": "B-I-05",
+        "language": "english",
+        "quote": "Likewise, existence is a single reality with different ranks distinguished by intensity and weakness, priority and posteriority, and other such respects. The very respect in which its degree"
+      },
+      "type": "qualification",
+      "rationale": "Muẓaffar introduces graded application through examples including existence. Bidāya argues for a stronger ontological thesis: the degrees differ in the very reality in which they agree.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation.",
+      "caution": "Do not infer the metaphysical unity of existence merely from the logical classification of a predicate as graded."
+    },
+    {
+      "id": "ct-m-k-06-b-viii-03-8",
+      "from": {
+        "unit": "M-K-06",
+        "language": "english",
+        "quote": "When predicating something of a subject, one may have in view only its concept, making the concept itself what the judgment concerns. Thus, when one says, “A human being is a rational animal"
+      },
+      "to": {
+        "unit": "B-VIII-03",
+        "language": "english",
+        "quote": "First, subject and predicate may be identical in concept and quiddity but differ in the way they are considered. For instance, in ‘A human is a rational animal’, the definition and the defin"
+      },
+      "type": "foundation",
+      "rationale": "The logical distinction between primary and common predication rests on different kinds of unity: identity of meaning and identity of concrete instance. Bidāya makes that ground explicit.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-m-k-15-b-v-02-9",
+      "from": {
+        "unit": "M-K-15",
+        "language": "english",
+        "quote": "**1. The natural universal (*al-kullī al-ṭabīʿī*).** The intellect considers the thing's nature without attending to universality as an additional description. Thus it considers human being "
+      },
+      "to": {
+        "unit": "B-V-02",
+        "language": "english",
+        "quote": "The quiddity divided according to these three considerations is the *natural universal* (al-kullī al-ṭabīʿī). Universality is attributed to it by the mind, allowing it to be applied to many "
+      },
+      "type": "foundation",
+      "rationale": "Muẓaffar distinguishes the nature from universality and the nature qualified by universality. Bidāya situates the natural universal within the three considerations of quiddity and explains how it exists through individuals.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation.",
+      "caution": "A common nature is not one numerically identical object distributed among all individuals."
+    },
+    {
+      "id": "ct-m-k-15-b-xi-09-10",
+      "from": {
+        "unit": "M-K-15",
+        "language": "english",
+        "quote": "**2. The logical universal (*al-kullī al-manṭiqī*).** The intellect considers the abstract characteristic of being a universal—“that which may be supposed to apply to many”—without attaching"
+      },
+      "to": {
+        "unit": "B-XI-09",
+        "language": "english",
+        "quote": "A *considered* or *intellectually abstracted* concept is not of this kind. Such concepts fall into two broad groups. Some have instances whose proper mode is to exist outside the mind, such "
+      },
+      "type": "foundation",
+      "rationale": "The logical universal is a mental attribute. Bidāya places logical concepts such as universal, genus and species within the wider account of intellectually considered concepts, distinguishing them from externally realized quiddities.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-m-q-04-n-xi-13-11",
+      "from": {
+        "unit": "M-Q-04",
+        "language": "english",
+        "quote": "If a respondent has answered either the simple or composite hal, you proceed to the fifth stage: seeking the cause. Sometimes you seek only the ground of the judgment—namely, a demonstration"
+      },
+      "to": {
+        "unit": "N-XI-13",
+        "language": "english",
+        "quote": "It is therefore clear from the foregoing that investigating a conclusion sought yields knowledge of it only by proceeding to it through its cause, if it has a cause, or through general conco"
+      },
+      "type": "qualification",
+      "rationale": "Muẓaffar separates a reason for assent from a cause of being. Nihāya develops a demanding account of knowing a caused conclusion through its cause, and separately treats knowledge through general concomitances.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation.",
+      "caution": "This is a comparison of explanatory roles, not an assertion that every inference from an effect supplies knowledge of its cause in the same sense."
+    },
+    {
+      "id": "ct-m-c-10-b-ii-01-12",
+      "from": {
+        "unit": "M-C-10",
+        "language": "english",
+        "quote": "**1. Mental, external, and real propositions.** An affirmative categorical proposition affirms something of something. Affirmation presupposes that the thing of which a predicate is affirmed"
+      },
+      "to": {
+        "unit": "B-II-01",
+        "language": "english",
+        "quote": "The philosophers offer several arguments for mental existence. **First**, we make affirmative judgments about non-existents—for example, attributing some character to a sea of mercury, or di"
+      },
+      "type": "foundation",
+      "rationale": "The logical claim that affirmative predication requires an established subject becomes an argument for mental existence when the subject is absent from the external world. Bidāya gives that argument explicitly.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-m-c-10-n-iii-01-13",
+      "from": {
+        "unit": "M-C-10",
+        "language": "english",
+        "quote": "**Mental (dhihniyya):** the subject exists in the intellect alone. Examples are “Every conjunction of contradictories differs from a conjunction of similars” and “Every ruby mountain is poss"
+      },
+      "to": {
+        "unit": "N-III-01",
+        "language": "english",
+        "quote": "The logicians' division of individuals into mental and external individuals is based upon a loose manner of speaking intended to facilitate instruction."
+      },
+      "type": "qualification",
+      "rationale": "Nihāya expressly qualifies the logicians’ division into mental and external individuals as a pedagogical way of speaking. Read this alongside Muẓaffar’s classification of categorical propositions.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation.",
+      "caution": "The two discussions classify different things: propositions by their subject domain, and quiddities by their mode of existence."
+    },
+    {
+      "id": "ct-m-c-12-b-iv-06-14",
+      "from": {
+        "unit": "M-C-12",
+        "language": "english",
+        "quote": "**Special, or real, possibility (imkān khāṣṣ / ḥaqīqī):** neither affirmation nor negation of the predicate is intrinsically necessary. One denies necessity **from both sides together** (*sa"
+      },
+      "to": {
+        "unit": "B-IV-06",
+        "language": "english",
+        "quote": "The possibility under discussion here is the absence of necessity on both sides, existence and non-existence, for a quiddity considered simply in itself. This is called *special possibility*"
+      },
+      "type": "foundation",
+      "rationale": "The logic text’s distinction between special and general possibility matters metaphysically: denying necessity on both sides differs from merely excluding impossibility. Bidāya surveys these and the further senses of possibility.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-m-c-28-n-iii-01-15",
+      "from": {
+        "unit": "M-C-28",
+        "language": "english",
+        "quote": "**Notice.** These eight unities are those commonly recognized among logicians. Some add “unity of predication,” with regard to its being primary predication or common predication. This condi"
+      },
+      "to": {
+        "unit": "N-III-01",
+        "language": "english",
+        "quote": "The resolution is that what is established in the mind consists only of their concepts by primary predication, not their instances by common predication. What is conceived of a partner to th"
+      },
+      "type": "foundation",
+      "rationale": "Unity of predication prevents apparent contradictions involving concepts of impossible things. Nihāya applies the primary/common distinction to show why the mental concept does not instantiate the impossible object.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-b-ii-01-n-iii-01-16",
+      "from": {
+        "unit": "B-II-01",
+        "language": "english",
+        "quote": "The prevailing position among philosophers is that quiddities have, in addition to their external existence—where their characteristic effects follow from them—another mode of existence in w"
+      },
+      "to": {
+        "unit": "N-III-01",
+        "language": "english",
+        "quote": "The well-known position of the philosophers is that these quiddities which exist externally and upon which their effects follow have another existence in which those very external effects do"
+      },
+      "type": "development",
+      "rationale": "Nihāya restates the distinction between mental and external existence, develops the alternatives to it, and uses the distinction between primary and common predication to answer the category and impossibility objections.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-n-iii-01-b-ii-01-17",
+      "from": {
+        "unit": "N-III-01",
+        "language": "english",
+        "quote": "The well-known position of the philosophers is that these quiddities which exist externally and upon which their effects follow have another existence in which those very external effects do"
+      },
+      "to": {
+        "unit": "B-II-01",
+        "language": "english",
+        "quote": "The prevailing position among philosophers is that quiddities have, in addition to their external existence—where their characteristic effects follow from them—another mode of existence in w"
+      },
+      "type": "orientation",
+      "rationale": "Bidāya gives a more introductory route through mental existence, with separated arguments and concrete examples before the objections.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-b-xi-01-n-xi-01-18",
+      "from": {
+        "unit": "B-XI-01",
+        "language": "english",
+        "quote": "As established in the discussion of mental existence, we have knowledge of things outside ourselves when their *quiddities* become present to us, not through the extramental existences by wh"
+      },
+      "to": {
+        "unit": "N-XI-01",
+        "language": "english",
+        "quote": "This is the division into acquired knowledge and knowledge by presence to which an initial consideration leads. Deeper consideration, however, shows that acquired knowledge too ultimately re"
+      },
+      "type": "development",
+      "rationale": "Nihāya develops why representative knowledge ultimately rests upon knowledge by presence. The comparison turns on the mode in which the known is present, rather than on whether a cognition was learned through effort.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-n-xi-01-b-xi-01-19",
+      "from": {
+        "unit": "N-XI-01",
+        "language": "english",
+        "quote": "This is the division into acquired knowledge and knowledge by presence to which an initial consideration leads. Deeper consideration, however, shows that acquired knowledge too ultimately re"
+      },
+      "to": {
+        "unit": "B-XI-01",
+        "language": "english",
+        "quote": "As established in the discussion of mental existence, we have knowledge of things outside ourselves when their *quiddities* become present to us, not through the extramental existences by wh"
+      },
+      "type": "orientation",
+      "rationale": "Review Bidāya’s initial distinction between presence through quiddity and presence through the known’s own existence.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-b-xi-07-n-xi-08-20",
+      "from": {
+        "unit": "B-XI-07",
+        "language": "english",
+        "quote": "Judgment, moreover, is an **act of the soul** in cognitive experience; it is not merely a passive reception of a further mental picture. When we perceive Zayd standing, sensation presents on"
+      },
+      "to": {
+        "unit": "N-XI-08",
+        "language": "english",
+        "quote": "As for judgment’s being an act of the soul within mental apprehension, its reality in our statement “Zayd is standing,” for example, is as follows. Through sensation the soul reaches one thi"
+      },
+      "type": "development",
+      "rationale": "Nihāya expands the analysis of judgment as the soul’s act, explaining how encounters with standing Zayd, standing ʿAmr and nonstanding Zayd prepare the separation and reunification of concepts.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-n-xi-08-b-xi-07-21",
+      "from": {
+        "unit": "N-XI-08",
+        "language": "english",
+        "quote": "As for judgment’s being an act of the soul within mental apprehension, its reality in our statement “Zayd is standing,” for example, is as follows. Through sensation the soul reaches one thi"
+      },
+      "to": {
+        "unit": "B-XI-07",
+        "language": "english",
+        "quote": "Judgment, moreover, is an **act of the soul** in cognitive experience; it is not merely a passive reception of a further mental picture. When we perceive Zayd standing, sensation presents on"
+      },
+      "type": "orientation",
+      "rationale": "Bidāya supplies a compact account of the same act of judgment and its distinction from merely conceiving a relation.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-b-xi-08-n-xi-09-22",
+      "from": {
+        "unit": "B-XI-08",
+        "language": "english",
+        "quote": "The most fundamental of all is that contradictories cannot both obtain nor both fail to obtain. It is a genuine exclusive alternative: either the affirmation or its negation is true. Every i"
+      },
+      "to": {
+        "unit": "N-XI-09",
+        "language": "english",
+        "quote": "The primary proposition most worthy of acceptance is the proposition that contradictories cannot both obtain or both be absent. This is expressed by our saying, “Either the affirmation is tr"
+      },
+      "type": "development",
+      "rationale": "Nihāya gives further consequences of the first principle and extends the replies to sceptical claims. The relevant connection is the dependence of knowledge on excluding the contradictory.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-n-xi-09-b-xi-08-23",
+      "from": {
+        "unit": "N-XI-09",
+        "language": "english",
+        "quote": "The primary proposition most worthy of acceptance is the proposition that contradictories cannot both obtain or both be absent. This is expressed by our saying, “Either the affirmation is tr"
+      },
+      "to": {
+        "unit": "B-XI-08",
+        "language": "english",
+        "quote": "The most fundamental of all is that contradictories cannot both obtain nor both fail to obtain. It is a genuine exclusive alternative: either the affirmation or its negation is true. Every i"
+      },
+      "type": "orientation",
+      "rationale": "Bidāya presents the introductory route from immediate cognition to the first of first principles and the problem of scepticism.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-b-v-07-n-v-03-24",
+      "from": {
+        "unit": "B-V-07",
+        "language": "english",
+        "quote": "The correct view, therefore, is that universality and particularity correspond to distinct modes in which quiddities exist, not merely degrees of clarity or indistinctness in a perceiver's p"
+      },
+      "to": {
+        "unit": "N-V-03",
+        "language": "english",
+        "quote": "This is unsound. If things were so, the instance of quiddity would in reality be only one of its individuals, and universal propositions would be false, such as “Every possible existent has "
+      },
+      "type": "development",
+      "rationale": "Nihāya develops the rejection of universality as merely indistinct perception and answers the further objection that a concept in a particular soul must therefore be particular in the relevant logical respect.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-n-v-03-b-v-07-25",
+      "from": {
+        "unit": "N-V-03",
+        "language": "english",
+        "quote": "This is unsound. If things were so, the instance of quiddity would in reality be only one of its individuals, and universal propositions would be false, such as “Every possible existent has "
+      },
+      "to": {
+        "unit": "B-V-07",
+        "language": "english",
+        "quote": "The correct view, therefore, is that universality and particularity correspond to distinct modes in which quiddities exist, not merely degrees of clarity or indistinctness in a perceiver's p"
+      },
+      "type": "orientation",
+      "rationale": "Bidāya isolates the central objection: an indistinct perception of one thing cannot account for a universal judgment true of many.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    }
+  ],
+  "terms": [
+    {
+      "id": "mental-existence",
+      "label": "Mental existence",
+      "arabic": "الوجود الذهني",
+      "transliteration": "al-wujūd al-dhihnī",
+      "definition": "A thing’s presence as known, without the external effects of the object following from that presence. Distinguish the mental existence of the represented quiddity from the actual existence of the cognitive state.",
+      "category": "Knowledge and truth",
+      "aliases": [
+        "وجود ذهني",
+        "وجود ذهني",
+        "mental being"
+      ],
+      "replaces": [
+        "Mental existence"
+      ],
+      "discussions": [
+        {
+          "unit": "M-P-04",
+          "language": "english",
+          "quote": "On examining these experiences, the author invites us to understand cognition as the reception of the forms of things in the soul, by analogy with the way an image is impressed in a mirror. ",
+          "role": "Reviewed discussion",
+          "note": "Introductory form-based account of knowledge"
+        },
+        {
+          "unit": "M-C-10",
+          "language": "english",
+          "quote": "**Mental (dhihniyya):** the subject exists in the intellect alone. Examples are “Every conjunction of contradictories differs from a conjunction of similars” and “Every ruby mountain is poss",
+          "role": "Reviewed discussion",
+          "note": "Mental subjects of affirmative propositions"
+        },
+        {
+          "unit": "B-II-01",
+          "language": "english",
+          "quote": "The prevailing position among philosophers is that quiddities have, in addition to their external existence—where their characteristic effects follow from them—another mode of existence in w",
+          "role": "Reviewed discussion",
+          "note": "Definition, proofs and objections"
+        },
+        {
+          "unit": "N-III-01",
+          "language": "english",
+          "quote": "The well-known position of the philosophers is that these quiddities which exist externally and upon which their effects follow have another existence in which those very external effects do",
+          "role": "Reviewed discussion",
+          "note": "Definition and developed replies to objections"
+        }
+      ]
+    },
+    {
+      "id": "acquired-knowledge",
+      "label": "Acquired knowledge",
+      "arabic": "العلم الحصولي",
+      "transliteration": "al-ʿilm al-ḥuṣūlī",
+      "definition": "Knowledge in which the object is present through its quiddity or representative form. “Acquired” in this distinction does not mean that the cognition necessarily required study or inference.",
+      "category": "Knowledge and truth",
+      "aliases": [
+        "علم حصولي",
+        "representative knowledge"
+      ],
+      "replaces": [
+        "Acquired knowledge"
+      ],
+      "discussions": [
+        {
+          "unit": "M-P-04",
+          "language": "english",
+          "quote": "On examining these experiences, the author invites us to understand cognition as the reception of the forms of things in the soul, by analogy with the way an image is impressed in a mirror. ",
+          "role": "Reviewed discussion",
+          "note": "Related introductory account through the presence of a form"
+        },
+        {
+          "unit": "B-XI-01",
+          "language": "english",
+          "quote": "As established in the discussion of mental existence, we have knowledge of things outside ourselves when their *quiddities* become present to us, not through the extramental existences by wh",
+          "role": "Reviewed discussion",
+          "note": "Presence through quiddity"
+        },
+        {
+          "unit": "N-XI-01",
+          "language": "english",
+          "quote": "We say: it was established in the discussion of mental existence that we have some knowledge of things outside us, in the sense that they are present to us through their very quiddities, rat",
+          "role": "Reviewed discussion",
+          "note": "First division of knowledge"
+        }
+      ],
+      "scopeNote": "Muẓaffar’s acquired or discursive cognition (kasbī/naẓarī) is a different division; its English word “acquired” must not silently merge the two."
+    },
+    {
+      "id": "knowledge-by-presence",
+      "label": "Knowledge by presence",
+      "arabic": "العلم الحضوري",
+      "transliteration": "al-ʿilm al-ḥuḍūrī",
+      "definition": "Knowledge in which the known itself is present through its own existence, rather than through a separately representing form.",
+      "category": "Knowledge and truth",
+      "aliases": [
+        "علم حضوري",
+        "presential knowledge"
+      ],
+      "replaces": [
+        "Knowledge by presence"
+      ],
+      "discussions": [
+        {
+          "unit": "B-XI-01",
+          "language": "english",
+          "quote": "Another kind is a person's knowledge of the very self indicated by ‘I’. One is not wholly unaware of oneself in any circumstance—whether in solitude or company, sleep or wakefulness, or othe",
+          "role": "Reviewed discussion",
+          "note": "Self-presence as a first example"
+        },
+        {
+          "unit": "N-XI-01",
+          "language": "english",
+          "quote": "His knowledge of himself does not consist in the quiddity of his self being present to him conceptually, as acquired knowledge. For a concept present in the mind, however it is supposed, doe",
+          "role": "Reviewed discussion",
+          "note": "Individuated self-presence and the argument from existence"
+        }
+      ]
+    },
+    {
+      "id": "conception",
+      "label": "Conception",
+      "arabic": "التصور",
+      "transliteration": "taṣawwur",
+      "definition": "Apprehension of an intelligible content without the act of affirming or denying it. The broader use of “conception” for cognition as such must be distinguished from this restricted contrast with assent.",
+      "category": "Knowledge and truth",
+      "aliases": [
+        "تصور",
+        "تصوّر"
+      ],
+      "replaces": [
+        "Conception"
+      ],
+      "discussions": [
+        {
+          "unit": "M-P-05",
+          "language": "english",
+          "quote": "Draw a triangle: its form comes to be present in the mind. This cognition is called *conception* (taṣawwur), considered here simply as an apprehension without affirmation or judgment. The sa",
+          "role": "Reviewed discussion",
+          "note": "Definition and geometric example"
+        },
+        {
+          "unit": "B-XI-07",
+          "language": "english",
+          "quote": "Conception is the cognitive form of one or several objects without affirmation or negation, as when we conceive human being, body, or substance. Assent is a cognition accompanied by affirmin",
+          "role": "Reviewed discussion",
+          "note": "Division of acquired knowledge"
+        },
+        {
+          "unit": "N-XI-08",
+          "language": "english",
+          "quote": "Acquired knowledge is either a mental form obtained from a single known, without affirmation or negation, such as knowledge of a human or of the antecedent of a conditional proposition; this",
+          "role": "Reviewed discussion",
+          "note": "Conception contrasted with assent"
+        }
+      ]
+    },
+    {
+      "id": "assent",
+      "label": "Assent",
+      "arabic": "التصديق",
+      "transliteration": "taṣdīq",
+      "definition": "Cognition involving affirmation or denial. The relationship between apprehension, the act of judgment and the constituents of a proposition receives different formulations in the logic and philosophy texts.",
+      "category": "Knowledge and truth",
+      "aliases": [
+        "تصديق",
+        "judgment"
+      ],
+      "replaces": [
+        "Assent"
+      ],
+      "discussions": [
+        {
+          "unit": "M-P-05",
+          "language": "english",
+          "quote": "Once you demonstrate their equality, however, a further cognitive state arises: you apprehend that the relation accords with reality, and this apprehension entails the soul's judgment and as",
+          "role": "Reviewed discussion",
+          "note": "Apprehension entailing judgment"
+        },
+        {
+          "unit": "B-XI-07",
+          "language": "english",
+          "quote": "Judgment, moreover, is an **act of the soul** in cognitive experience; it is not merely a passive reception of a further mental picture. When we perceive Zayd standing, sensation presents on",
+          "role": "Reviewed discussion",
+          "note": "Judgment as an act of the soul"
+        },
+        {
+          "unit": "N-XI-08",
+          "language": "english",
+          "quote": "As for judgment’s being an act of the soul within mental apprehension, its reality in our statement “Zayd is standing,” for example, is as follows. Through sensation the soul reaches one thi",
+          "role": "Reviewed discussion",
+          "note": "The soul’s synthesis of concepts in judgment"
+        }
+      ],
+      "scopeNote": "The reviewed connection compares the analyses; it does not identify assent with every occurrence of a proposition."
+    },
+    {
+      "id": "self-evident-knowledge",
+      "label": "Self-evident and discursive knowledge",
+      "arabic": "البديهي والنظري",
+      "transliteration": "badīhī / naẓarī",
+      "definition": "The distinction concerns whether an inferential process is needed. It does not by itself say whether the object is known through a form or by presence.",
+      "category": "Knowledge and truth",
+      "aliases": [
+        "self-evident",
+        "discursive",
+        "ضروري",
+        "بديهي",
+        "نظري"
+      ],
+      "replaces": [],
+      "discussions": [
+        {
+          "unit": "M-P-09",
+          "language": "english",
+          "quote": "Both conception and assent are divided into two kinds. The first is *immediate* or self-evident (*ḍarūrī*, *badīhī*): it does not require a further process of inquiry or discursive thought. ",
+          "role": "Reviewed discussion",
+          "note": "Immediate and discursive conception and assent"
+        },
+        {
+          "unit": "B-XI-08",
+          "language": "english",
+          "quote": "Discursive sciences ultimately depend upon immediate cognitions by which their conclusions are established. Otherwise the series of demonstrations would recede without end and could never yi",
+          "role": "Reviewed discussion",
+          "note": "Why discursive cognition depends on immediate cognition"
+        },
+        {
+          "unit": "N-XI-09",
+          "language": "english",
+          "quote": "Self-evident knowledge, also called necessary knowledge, is that whose acquisition requires no learning or reflection. Examples include conceiving the concepts of existence, thing, and unity",
+          "role": "Reviewed discussion",
+          "note": "Definition and the first principle"
+        }
+      ]
+    },
+    {
+      "id": "natural-universal",
+      "label": "Natural universal",
+      "arabic": "الكلي الطبيعي",
+      "transliteration": "al-kullī al-ṭabīʿī",
+      "definition": "The nature considered without adding universality as a logical attribute. Its occurrence in individuals is distinct from the mind’s consideration of that nature as predicable of many.",
+      "category": "Universals and definition",
+      "aliases": [
+        "natural universal",
+        "كلي طبيعي"
+      ],
+      "replaces": [
+        "Natural universal"
+      ],
+      "discussions": [
+        {
+          "unit": "M-K-15",
+          "language": "english",
+          "quote": "**1. The natural universal (*al-kullī al-ṭabīʿī*).** The intellect considers the thing's nature without attending to universality as an additional description. Thus it considers human being ",
+          "role": "Reviewed discussion",
+          "note": "Natural, logical and intellectual universal"
+        },
+        {
+          "unit": "B-V-02",
+          "language": "english",
+          "quote": "The quiddity divided according to these three considerations is the *natural universal* (al-kullī al-ṭabīʿī). Universality is attributed to it by the mind, allowing it to be applied to many ",
+          "role": "Reviewed discussion",
+          "note": "The nature divided by the three considerations of quiddity"
+        }
+      ],
+      "scopeNote": "Universality is not one numerically identical external entity shared by all individuals."
+    },
+    {
+      "id": "universal-particular",
+      "label": "Universal and particular",
+      "arabic": "الكلي والجزئي",
+      "transliteration": "kullī / juzʾī",
+      "definition": "A universal can be predicated of many even by supposition. Particularity excludes such sharing. The texts distinguish this from the individuation of a cognitive state in one knower.",
+      "category": "Universals and definition",
+      "aliases": [
+        "universal",
+        "particular",
+        "كلي",
+        "جزئي"
+      ],
+      "replaces": [],
+      "discussions": [
+        {
+          "unit": "M-K-02",
+          "language": "english",
+          "quote": "A universal need not have individuals that actually exist. The intellect may form a universal concept capable of applying to more than one individual without abstracting it from presently ex",
+          "role": "Reviewed discussion",
+          "note": "Universality without actual or possible external instances"
+        },
+        {
+          "unit": "B-V-07",
+          "language": "english",
+          "quote": "The correct view, therefore, is that universality and particularity correspond to distinct modes in which quiddities exist, not merely degrees of clarity or indistinctness in a perceiver's p",
+          "role": "Reviewed discussion",
+          "note": "Universality is not merely indistinct perception"
+        },
+        {
+          "unit": "N-V-03",
+          "language": "english",
+          "quote": "Universality is thus a mental property that accrues to quiddity in the mind. External, concrete existence is coextensive with individuality and precludes being shared. Universality is theref",
+          "role": "Reviewed discussion",
+          "note": "Mental universality and external individuation"
+        }
+      ]
+    },
+    {
+      "id": "primary-predication",
+      "label": "Primary predication",
+      "arabic": "الحمل الأولي",
+      "transliteration": "al-ḥaml al-awwalī",
+      "definition": "Predication through identity of concept or quiddity, with a difference in consideration. Contrast common predication through unity of concrete instance.",
+      "category": "Unity and opposition",
+      "aliases": [
+        "الحمل الأولي الذاتي",
+        "primary essential predication",
+        "primary predication"
+      ],
+      "replaces": [
+        "Primary predication",
+        "Primary essential predication"
+      ],
+      "discussions": [
+        {
+          "unit": "M-K-06",
+          "language": "english",
+          "quote": "When predicating something of a subject, one may have in view only its concept, making the concept itself what the judgment concerns. Thus, when one says, “A human being is a rational animal",
+          "role": "Reviewed discussion",
+          "note": "Concept considered as the subject of predication"
+        },
+        {
+          "unit": "B-VIII-03",
+          "language": "english",
+          "quote": "First, subject and predicate may be identical in concept and quiddity but differ in the way they are considered. For instance, in ‘A human is a rational animal’, the definition and the defin",
+          "role": "Reviewed discussion",
+          "note": "Unity of definition and defined"
+        },
+        {
+          "unit": "N-III-01",
+          "language": "english",
+          "quote": "The resolution is that what is established in the mind consists only of their concepts by primary predication, not their instances by common predication. What is conceived of a partner to th",
+          "role": "Reviewed discussion",
+          "note": "Concepts of impossibilities without impossible instances"
+        }
+      ]
+    },
+    {
+      "id": "common-predication",
+      "label": "Common predication",
+      "arabic": "الحمل الشائع",
+      "transliteration": "al-ḥaml al-shāʾiʿ",
+      "definition": "Predication based on unity of instance despite difference of concept. Merely conceiving a substance or quality does not make the mind an external instance of it.",
+      "category": "Unity and opposition",
+      "aliases": [
+        "common predication"
+      ],
+      "replaces": [
+        "Common predication"
+      ],
+      "discussions": [
+        {
+          "unit": "M-K-06",
+          "language": "english",
+          "quote": "One may instead look beyond the concept to what it represents. In saying “The human being laughs” or “The human being is in loss,” the concept of humanity points to individual humans, who ar",
+          "role": "Reviewed discussion",
+          "note": "The concept as a title for instances"
+        },
+        {
+          "unit": "B-VIII-03",
+          "language": "english",
+          "quote": "Second, subject and predicate may differ conceptually while coinciding in their concrete instance, as in ‘A human is capable of laughter’ or ‘Zayd is standing’. This is *common predication* ",
+          "role": "Reviewed discussion",
+          "note": "Difference of concept with unity of instance"
+        },
+        {
+          "unit": "N-III-01",
+          "language": "english",
+          "quote": "The resolution is that what is impossible is for one thing to be both substance and accident by common predication. Intellectually apprehended substance is substance by primary predication a",
+          "role": "Reviewed discussion",
+          "note": "Resolution of the substance/accident objection"
+        }
+      ]
+    },
+    {
+      "id": "privation-possession",
+      "label": "Privation and possession",
+      "arabic": "العدم والملكة",
+      "transliteration": "ʿadam / malaka",
+      "definition": "An opposed absence and positive condition in a subject naturally capable of that condition; distinct from unrestricted negation.",
+      "category": "Unity and opposition",
+      "aliases": [
+        "عدم وملكة",
+        "privation",
+        "possession"
+      ],
+      "replaces": [
+        "Privation and possession"
+      ],
+      "discussions": [
+        {
+          "unit": "M-P-08",
+          "language": "english",
+          "quote": "Ignorance is the absence of knowledge in a subject capable of knowing. We do not call a stone blind, because blindness is the lack of sight in something naturally fitted to see. Similarly, k",
+          "role": "Reviewed discussion",
+          "note": "Ignorance as absence in a subject able to know"
+        },
+        {
+          "unit": "B-VIII-08",
+          "language": "english",
+          "quote": "This is also called the opposition of *privation and possession* or *deprivation and capacity*. It consists in a positive condition belonging to a subject naturally fitted to receive it and ",
+          "role": "Reviewed discussion",
+          "note": "Definition and the scope of natural capacity"
+        }
+      ]
+    },
+    {
+      "id": "gradation-logical",
+      "label": "Graded predication",
+      "arabic": "المشكك",
+      "transliteration": "mushakkik",
+      "definition": "A universal whose instances differ in the manner of its application, for example by intensity or priority. This logical division does not by itself prove an ontology of one graded reality.",
+      "category": "Universals and definition",
+      "aliases": [
+        "متواطئ",
+        "مشكك",
+        "graded universal"
+      ],
+      "replaces": [],
+      "discussions": [
+        {
+          "unit": "M-K-04",
+          "language": "english",
+          "quote": "Second, consider a universal such as whiteness, number or existence. When applied to its instances, unlike the previous type it admits variation in the mode of predication: through intensity",
+          "role": "Reviewed discussion",
+          "note": "Graded application of a common concept"
+        }
+      ]
+    },
+    {
+      "id": "gradation",
+      "label": "Gradation of existence",
+      "arabic": "تشكيك الوجود",
+      "transliteration": "tashkīk al-wujūd",
+      "definition": "The thesis that existence is one reality whose degrees differ in the very respect in which they agree. It is stronger than merely classifying a universal predicate as graded.",
+      "category": "Being and quiddity",
+      "aliases": [
+        "تشكيك",
+        "gradation"
+      ],
+      "replaces": [
+        "Gradation"
+      ],
+      "discussions": [
+        {
+          "unit": "B-I-05",
+          "language": "english",
+          "quote": "Likewise, existence is a single reality with different ranks distinguished by intensity and weakness, priority and posteriority, and other such respects. The very respect in which its degree",
+          "role": "Reviewed discussion",
+          "note": "The common reality and the difference of its ranks"
+        }
+      ]
+    },
+    {
+      "id": "special-possibility",
+      "label": "Special possibility",
+      "arabic": "الإمكان الخاص",
+      "transliteration": "al-imkān al-khāṣṣ",
+      "definition": "Absence of intrinsic necessity on both sides, affirmation and negation. In an existential context it is the contingency of a quiddity considered in itself.",
+      "category": "Modality and causation",
+      "aliases": [
+        "إمكان خاص",
+        "special possibility",
+        "real possibility"
+      ],
+      "replaces": [],
+      "discussions": [
+        {
+          "unit": "M-C-12",
+          "language": "english",
+          "quote": "**Special, or real, possibility (imkān khāṣṣ / ḥaqīqī):** neither affirmation nor negation of the predicate is intrinsically necessary. One denies necessity **from both sides together** (*sa",
+          "role": "Reviewed discussion",
+          "note": "Two-sided absence of necessity"
+        },
+        {
+          "unit": "B-IV-06",
+          "language": "english",
+          "quote": "The possibility under discussion here is the absence of necessity on both sides, existence and non-existence, for a quiddity considered simply in itself. This is called *special possibility*",
+          "role": "Reviewed discussion",
+          "note": "Special possibility and its contrast with general possibility"
+        }
+      ]
+    },
+    {
+      "id": "general-possibility",
+      "label": "General possibility",
+      "arabic": "الإمكان العام",
+      "transliteration": "al-imkān al-ʿāmm",
+      "definition": "Absence of necessity on the opposite side, without deciding whether the affirmed side is itself necessary. This is broader than special possibility.",
+      "category": "Modality and causation",
+      "aliases": [
+        "إمكان عام",
+        "general possibility"
+      ],
+      "replaces": [],
+      "discussions": [
+        {
+          "unit": "M-C-12",
+          "language": "english",
+          "quote": "**General possibility (imkān ʿāmm)** is broader. Here only **one of the two opposing necessities** is denied. Saying that something “can exist” means merely that its nonexistence is not nece",
+          "role": "Reviewed discussion",
+          "note": "One-sided absence of necessity"
+        },
+        {
+          "unit": "B-IV-06",
+          "language": "english",
+          "quote": "The term “possibility” is also used more generally to exclude necessity on the *opposite* side, whether the side affirmed is necessary or not. Thus one says “This is possible” to mean “This ",
+          "role": "Reviewed discussion",
+          "note": "The broader usage of possibility"
+        }
+      ]
+    },
+    {
+      "id": "cause-of-assent",
+      "label": "Ground of assent",
+      "arabic": "علة التصديق",
+      "transliteration": "ʿillat al-taṣdīq",
+      "definition": "That through which a judgment is justified, distinguished from the cause that makes the fact obtain. A logical reason and an existential cause need not be identical.",
+      "category": "Modality and causation",
+      "aliases": [
+        "cause of assent",
+        "ground of assent"
+      ],
+      "replaces": [
+        "Ground of assent"
+      ],
+      "discussions": [
+        {
+          "unit": "M-Q-04",
+          "language": "english",
+          "quote": "If a respondent has answered either the simple or composite hal, you proceed to the fifth stage: seeking the cause. Sometimes you seek only the ground of the judgment—namely, a demonstration",
+          "role": "Reviewed discussion",
+          "note": "Two purposes of asking why"
+        },
+        {
+          "unit": "N-XI-13",
+          "language": "english",
+          "quote": "It is therefore clear from the foregoing that investigating a conclusion sought yields knowledge of it only by proceeding to it through its cause, if it has a cause, or through general conco",
+          "role": "Reviewed discussion",
+          "note": "Qualification: causal knowledge and general concomitances"
+        }
+      ]
+    },
+    {
+      "id": "cause-of-being",
+      "label": "Cause of being",
+      "arabic": "علة الوجود",
+      "transliteration": "ʿillat al-wujūd",
+      "definition": "That which explains the thing’s existence or the fact’s obtaining, as distinct from what explains someone’s assent to it.",
+      "category": "Modality and causation",
+      "aliases": [
+        "cause of being",
+        "cause of existence"
+      ],
+      "replaces": [
+        "Cause of being"
+      ],
+      "discussions": [
+        {
+          "unit": "M-Q-04",
+          "language": "english",
+          "quote": "If a respondent has answered either the simple or composite hal, you proceed to the fifth stage: seeking the cause. Sometimes you seek only the ground of the judgment—namely, a demonstration",
+          "role": "Reviewed discussion",
+          "note": "Real explanation distinguished from a reason for assent"
+        },
+        {
+          "unit": "N-XI-13",
+          "language": "english",
+          "quote": "By cause here we mean the cause that necessitates the effect through the specific character of its causality, whether it is a cause through its quiddity, as four is the cause of evenness, or",
+          "role": "Reviewed discussion",
+          "note": "The cause relevant to the knowledge of a caused thing"
+        }
+      ]
+    },
+    {
+      "id": "intellectual-consideration",
+      "label": "Intellectual consideration",
+      "arabic": "اعتباري",
+      "transliteration": "iʿtibārī",
+      "definition": "A context-sensitive family of uses: a philosophical or logical abstraction, the derivative status of quiddity, and a practical attribution are different senses.",
+      "category": "Knowledge and truth",
+      "aliases": [
+        "considered",
+        "اعتباري"
+      ],
+      "replaces": [
+        "Intellectually considered; derivative; conventional"
+      ],
+      "discussions": [
+        {
+          "unit": "B-XI-09",
+          "language": "english",
+          "quote": "A *considered* or *intellectually abstracted* concept is not of this kind. Such concepts fall into two broad groups. Some have instances whose proper mode is to exist outside the mind, such ",
+          "role": "Reviewed discussion",
+          "note": "Philosophical and logical considered concepts"
+        },
+        {
+          "unit": "B-XI-09",
+          "language": "english",
+          "quote": "The term *iʿtibārī* has further meanings outside this discussion. It may denote what is derivative rather than primary, as quiddity relative to existence. It may denote what lacks separate e",
+          "role": "Reviewed discussion",
+          "note": "Other uses: derivative status, relational being and practical attribution"
+        }
+      ],
+      "scopeNote": "The dictionary keeps these senses explicit. Word occurrences under this umbrella are not assertions that they all mean the same thing."
+    }
+  ]
+}

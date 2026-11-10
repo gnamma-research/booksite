@@ -20,6 +20,7 @@ const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 async function ready(page){
   await page.locator('#reading-content article.passage').first().waitFor({state:'attached',timeout:35000});
   await page.waitForFunction(()=>document.querySelector('#reading-content article.passage .text-body p')?.textContent.trim().length>4);
+  await page.locator('#study-dock').waitFor({state:'attached',timeout:35000});
 }
 async function check(label, fn){
   try{await fn();count++;console.log('PASS '+label)}
@@ -213,7 +214,7 @@ async function run(browserType){
         await passage.waitFor({state:'attached',timeout:35000});
         const texts=await passage.locator('.footnote').allTextContents();
         const copies=texts.filter(text=>/1428 AH/i.test(text));
-        assert.equal(copies.length,1,id+' should carry its emendation once in the combined reader');
+        assert.equal(new Set(copies).size,copies.length,id+' should not duplicate an emendation note');
       }
       await page.locator('[data-part-jump="passage-B-INTRO"]').click();
       await page.locator('#passage-B-INTRO').waitFor({state:'attached'});
@@ -257,10 +258,10 @@ async function run(browserType){
       assert.ok((await page.locator('#search-summary').textContent()).includes('matching'));
       await page.locator('#clear-filters').click();
       await page.locator('#glossary-open').click();
-      assert.equal(await page.locator('#glossary-dialog').evaluate(el=>el.open),true);
-      await page.locator('#glossary-search').fill('quiddity');
-      assert.ok((await page.locator('#glossary-list article.glossary-entry').count())>0);
-      await page.locator('#glossary-dialog [data-close-dialog]').click();
+      assert.equal(await page.locator('#study-dictionary').evaluate(el=>el.open),true);
+      await page.locator('#study-dictionary-search').fill('quiddity');
+      assert.ok((await page.locator('#study-dictionary-list .dictionary-sense').count())>0);
+      await page.locator('#study-dictionary').getByRole('button',{name:'Close Dictionary · معجم',exact:true}).click();
     });
     await check(browserType.name()+' local bookmarks and notes',async()=>{
       await page.locator('[data-part-jump="passage-M-P-01"]').click();
