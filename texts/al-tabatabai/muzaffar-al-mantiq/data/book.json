@@ -7,11 +7,11 @@
   "status": "working-translation",
   "editorialStatus": {
     "translationComplete": false,
-    "translatedSection": "Introduction 11; Book I 11; Book II 17; Book III 14; Book IV 18 selected local Arabic–English working units. Books V and VI not translated.",
-    "translatedPassages": 71,
+    "translatedSection": "Introduction 11; Book I 11; Book II 17; Book III 14; Book IV 22; all selected working translations, Books V–VI not translated.",
+    "translatedPassages": 75,
     "sourceBasis": "1402 AH Dār al-Taʿāruf Rafed searchable Arabic; the separately identified 1968 institutional scan remains to be independently collated.",
     "englishComparator": "Carney's 75-page English PDF supplied by the user ends without the complete Book III section on definitions. English here is independently translated from Arabic.",
-    "editionNotice": "71 selected Arabic–English working readings, now through compound modal forms, 1402 pp.148–151. 1421 digital source sampled, 1968 ACO printed facsimile not independently collated. No complete six-book edition."
+    "editionNotice": "75 selected Arabic–English readings, including Book IV modal exercises and connected/disjunctive logic through 1402 printed p.156. Digital text not full early facsimile, all exercises/figures across book incomplete."
   },
   "sources": [
     {
@@ -1649,6 +1649,110 @@
         "page": "151",
         "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
         "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/181?lang=ar"
+      }
+    },
+    {
+      "id": "M-C-19",
+      "stage": "C",
+      "chapter": 19,
+      "title": "Seven authorial exercises on modal relations and compounds",
+      "arabicTitle": "تمرينات على الموجهات والمركبة",
+      "arabic": "تمرينات\n\n١ ـ اذكر ماذا بين الضرورية الذاتية وبين الدائمة المطلقة من النسب الأربع، وكذا ما بين الضرورية الذاتية وبين المشروطة العامة والعرفية العامة.\n\n٢ ـ اذكر النسبة بين الدائمة المطلقة وبين كلّ من المطلقة العامة والعرفية العامة.\n\n٣ ـ ما النسبة بين المشروطة العامة والعرفية العامة، وكذا بين الضرورية الذاتية والمشروطة الخاصة؟\n\n٤ ـ لو أنّا قيّدنا المشروطة العامة باللاضرورة الذاتية، هل يصح التركيب؟\n\n٥ ـ هل ترى يصح تقييد الحينية المطلقة باللاضرورة الذاتية؟ وإذا صحّ فماذا ينبغي أن نسمّي هذه القضية المركبة؟\n\n٦ ـ هل يصح تقييد الدائمة المطلقة باللاضرورة الذاتية؟\n\n٧ ـ اذكر مثالاً واحداً من نفسك لكلّ من الموجّهات البسيطة، ثم اجعلها مركّبة بواحدة من التركيبات الستّ المذكورة الممكنة لها.",
+      "english": "**Author's exercises — retained as exercises, not silently replaced with answers.**\n\n1. Determine which of the four relations between two universals holds between intrinsic necessity and unrestricted permanence. Do the same for intrinsic necessity compared respectively with general conditioned necessity and general customary permanence.\n\n2. Determine the relation between unrestricted permanence and each of general actuality and general customary permanence.\n\n3. Determine the relation between general conditioned necessity and general customary permanence, and between intrinsic necessity and the special conditioned compound.\n\n4. If we qualify general conditioned necessity by the absence of intrinsic necessity, is the resulting compound well formed?\n\n5. Can actuality limited to the period in which a description holds (*ḥīniyya muṭlaqa*) be qualified by absence of intrinsic necessity? If it can, what should the compound be called?\n\n6. Can unrestricted permanence itself be qualified by absence of intrinsic necessity?\n\n7. Invent one illustration of each simple modal proposition and convert it, where logically possible, into one of the six compound forms just described.\n\nThese seven questions test the inclusion, noninclusion, and possible joint satisfaction of *intrinsic necessity*, *permanence*, *actuality*, and *general/special possibility*. Some combinations may fail for reasons arising from the implicit second component.",
+      "notes": [
+        {
+          "type": "Editorial status",
+          "text": "Digitally presented authorial prose and examples; spelling/punctuation normalized. Not a diplomatic facsimile or independently manuscript-collated passage."
+        },
+        {
+          "type": "Logical note",
+          "text": "The 1402 edition inserts an authorial summary chart immediately before these exercises as a nontext image. The chart is NOT transcribed here; the later digital edition exposes a textualized chart at p.182, but it has not yet been independently matched to the earlier image. Do not treat this seven-exercise text as exhaustive of p.152's visual content."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, 1402 AH Dār al-Taʿāruf digital printed-source text; parallel 1421 Qum digital page where specified; no early 1968 facsimile collation",
+        "page": "152",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
+        "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/182?lang=ar"
+      }
+    },
+    {
+      "id": "M-C-20",
+      "stage": "C",
+      "chapter": 20,
+      "title": "Necessary versus coincidental connected conditionals",
+      "arabicTitle": "تقسيمات الشرطية الأخرى — اللزومية والاتفاقية",
+      "arabic": "تقسيمات الشرطية الأخرى\n\nتقدّم أن الشرطية تنقسم باعتبار نسبتها إلى متّصلة ومنفصلة، وباعتبار الكيف إلى موجبة وسالبة، وباعتبار الأحوال والأزمان إلى شخصية ومهملة ومحصورة، والمحصورة إلى كلّية وجزئية. وقد بقي تقسيم كلّ من المتّصلة والمنفصلة إلى أقسامها.\n\nاللزومية والاتفاقية\n\nتنقسم المتّصلة باعتبار طبيعة الاتّصال بين المقدّم والتالي إلى لزومية واتفاقية:\n\n١ ـ (اللزومية): وهي التي بين طرفيها اتصال حقيقي لعلاقة توجب استلزام أحدهما للآخر، بأن يكون أحدهما علّة للآخر أو معلولين لعلّة واحدة. نحو: «إذا سخن الماء فإنه يتمدّد» والمقدّم علّة التالي. ونحو: «إذا تمدّد الماء فإنه ساخن» والتالي علّة للمقدّم بعكس الأوّل. ونحو: «إذا غلا الماء فإنه يتمدّد» وفيه الطرفان معلولان لعلّة واحدة، لأنّ الغليان والتمدّد معلولان للسخونة إلى درجة معيّنة.\n\n٢ ـ (الاتفاقية): وهي التي ليس بين طرفيها اتصال حقيقي لعدم العلقة التي توجب الملازمة، ولكنّه يتّفق حصول التالي عند حصول المقدّم، كما لو اتّفق أن محمّداً الطالب لا يحضر الدرس إلا بعد شروع المدرّس، فتؤلّف هذه القضية الشرطية: «كلّما جاء محمّد فإن المدرّس قد سبق شروعه في الدرس». وليس هنا أية علاقة بين مجيء محمّد وسبق شروع الدرس، وإنما ذلك بمحض الصدفة المتكرّرة.\n\nومن لم يتنوّر بنور العلم والمعرفة كثيراً ما يقع في الغلط، فيظنّ في كثير من الاتفاقيات أنّها قضايا لزومية لمجرّد تكرّر المصادفة.",
+      "english": "**Further divisions of conditional propositions.** The connected/disjunctive distinction concerns the relation, the affirmative/negative distinction its quality, and the singular/indefinite/quantified distinction the circumstances or times to which it applies. Further subdivisions concern the character of the relation itself.\n\nA **connected conditional** is either *necessary in connection* (*luzūmiyya*) or *coincidental* (*ittifāqiyya*).\n\nIn a necessary connection, a genuine relation entails that one side follows from the other. This may take several causal forms: the antecedent causes the consequent, the consequent is a sign of a cause corresponding to it, or both statements describe effects of a common cause. Muẓaffar illustrates the first with water expanding when heated; the second with expansion indicating the presence of heat; and the third with boiling and expansion arising from heating to an appropriate level. These are the author's explanatory causal illustrations, not an independently verified modern physical model of all fluids.\n\nIn a coincidental connection, no intrinsic relation of entailment links the antecedent and consequent, although the latter happens when the former occurs. Suppose the student Muḥammad only arrives after the teacher has begun the lesson. We can say, “Whenever Muḥammad arrives, the teacher will already have begun the class.” The recurring sequence, however, may express an accidental pairing rather than a necessary relation between the student's arrival and the teacher's beginning.\n\nMuẓaffar warns against treating **repeated coincidence alone** as proof of necessary connection. Frequent succession of two events does not establish that the first makes the second necessary.",
+      "notes": [
+        {
+          "type": "Editorial status",
+          "text": "Digitally presented authorial prose and examples; spelling/punctuation normalized. Not a diplomatic facsimile or independently manuscript-collated passage."
+        },
+        {
+          "type": "Logical note",
+          "text": "Logical point: al-luzūmiyya is an asserted genuine explanatory nexus, not merely the material conditional's actual truth; al-ittifāqiyya is repeated conjunction without that nexus. Examples and traditional physical causal descriptions preserved as historical authorial illustrations."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, 1402 AH Dār al-Taʿāruf digital printed-source text; parallel 1421 Qum digital page where specified; no early 1968 facsimile collation",
+        "page": "153–154",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
+        "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/183?lang=ar"
+      }
+    },
+    {
+      "id": "M-C-21",
+      "stage": "C",
+      "chapter": 21,
+      "title": "Disjunctive incompatibility: essential versus coincidental; genuine division",
+      "arabicTitle": "أقسام المنفصلة — العنادية والاتفاقية والحقيقية",
+      "arabic": "أقسام المنفصلة\n\nللمنفصلة تقسيمان:\n\nأ ـ العنادية والاتفاقية\n\nوهذا التقسيم باعتبار طبيعة التنافي بين الطرفين كالمتّصلة، فتنقسم إلى:\n\n١ ـ (العنادية): وهي التي بين طرفيها تنافٍ وعناد حقيقي، بأن تكون ذات النسبة في كلّ منهما تنافي وتعاند ذات النسبة في الآخر، نحو: «العدد الصحيح إمّا أن يكون زوجاً أو فرداً».\n\n٢ ـ (الاتفاقية): وهي التي لا يكون التنافي بين طرفيها حقيقياً ذاتياً، وإنما يتّفق أن يتحقّق أحدهما بدون الآخر لأمر خارج عن ذاتهما، نحو: «إمّا أن يكون الجالس في الدار محمّداً أو باقراً» إذا اتّفق أن عُلم أن غيرهما لم يكن. ونحو: «هذا الكتاب إمّا أن يكون في علم المنطق وإمّا أن يكون مملوكاً لخالد» إذا اتّفق أن خالداً لا يملك كتاباً في علم المنطق، واحتمل أن يكون هذا الكتاب المعيّن في هذا العلم.\n\nب ـ الحقيقية ومانعة الجمع ومانعة الخلو\n\nوهذا التقسيم باعتبار إمكان اجتماع الطرفين ورفعهما وعدم إمكان ذلك، فتنقسم إلى:\n\n١ ـ (حقيقية): وهي ما حُكم فيها بتنافي طرفيها صدقاً وكذباً في الإيجاب، وعدم تنافيهما كذلك في السلب؛ بمعنى أنّه لا يمكن اجتماعهما ولا ارتفاعهما في الإيجاب، ويجتمعان ويرتفعان في السلب.\n\nمثال الإيجاب: «العدد الصحيح إمّا أن يكون زوجاً أو فرداً»؛ فالزوج والفرد لا يجتمعان ولا يرتفعان.\n\nمثال السلب: «ليس الحيوان إمّا أن يكون ناطقاً وإمّا أن يكون قابلاً للتعليم»، فالناطق والقابل للتعليم يجتمعان في الإنسان ويرتفعان في غيره.\n\nوتُستعمل الحقيقية في القسمة الحاصرة الثنائية وغيرها، واستعمالها أكثر من أن يُحصى.",
+      "english": "**Disjunctive conditionals:** two classifications must be kept distinct.\n\nThe first asks whether the incompatibility between the alternatives is **intrinsic** (*ʿinādiyya*) or merely **incidental** (*ittifāqiyya*). Intrinsic exclusion follows from the very relations asserted in the two components, as when an integer is either even or odd. Incidental exclusion arises from a circumstance external to the definitions: for example, the person sitting at home is either Muḥammad or Bāqir when we happen to know that nobody else is there; or a particular book is either about logic or belongs to Khālid, where circumstances ensure that Khālid owns no book on logic.\n\nThe second classification asks whether the two sides can both be true and whether they can both be false.\n\nA **genuine or complete disjunction** (*ḥaqīqiyya*) affirms that its two alternatives **cannot both be true and cannot both be false**. This is exclusive and exhaustive disjunction. “An integer is either even or odd” provides the author's elementary illustration.\n\nIts **negation** denies that two alternatives stand in this relationship of exhaustive mutual exclusion. The author illustrates it with “It is not the case that an animal is either rational or capable of being taught,” because both descriptions can occur together in a human and both can be absent in other animals. Here he explains the failure of exclusion and exhaustion, rather than asserting that every animal has neither property.\n\nGenuine disjunction serves to establish exhaustive classifications into two or more alternatives. No modal claim about a mere accidental conjunction should be smuggled into an essential dichotomy.",
+      "notes": [
+        {
+          "type": "Editorial status",
+          "text": "Digitally presented authorial prose and examples; spelling/punctuation normalized. Not a diplomatic facsimile or independently manuscript-collated passage."
+        },
+        {
+          "type": "Logical note",
+          "text": "The first distinction (ʿinādiyya/ittifāqiyya) concerns whether exclusion is intrinsic; the second (ḥaqīqiyya/māniʿat al-jamʿ/māniʿat al-khulūw) concerns the truth-conditions. Negative disjunction is the denial of the *disjunctive relation*, not necessarily a conjunction of denials."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, 1402 AH Dār al-Taʿāruf digital printed-source text; parallel 1421 Qum digital page where specified; no early 1968 facsimile collation",
+        "page": "154–155",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
+        "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/185?lang=ar"
+      }
+    },
+    {
+      "id": "M-C-22",
+      "stage": "C",
+      "chapter": 22,
+      "title": "At-most-one versus at-least-one disjunctions",
+      "arabicTitle": "مانعة الجمع ومانعة الخلو، الموجبة والسالبة",
+      "arabic": "٢ ـ (مانعة جمع): وهي ما حُكم فيها بتنافي طرفيها أو عدم تنافيهما صدقاً لا كذباً، بمعنى أنه لا يمكن اجتماعهما ويجوز أن يرتفعا معاً في الإيجاب، ويمكن اجتماعهما ولا يمكن ارتفاعهما في السلب.\n\nمثال الإيجاب: «إمّا أن يكون الجسم أبيض أو أسود»، فالأبيض والأسود لا يمكن اجتماعهما في جسم واحد ولكن يمكن ارتفاعهما في الجسم الأحمر.\n\nمثال السلب: «ليس إمّا أن يكون الجسم غير أبيض أو غير أسود»، فإن غير الأبيض وغير الأسود يجتمعان في الأحمر ولا يرتفعان في الجسم الواحد بأن لا يكون غير أبيض ولا غير أسود، بل يكون أبيض وأسود، وهذا محال.\n\nوتُستعمل مانعة الجمع في جواب من يتوهّم إمكان الاجتماع بين شيئين، كمن يتوهّم أن الإمام يجوز أن يكون عاصياً لله، فيقال له: «إن الشخص إمّا أن يكون إماماً أو عاصياً لله»، ومعناه أن الإمامة والعصيان لا يجتمعان وإن جاز أن يرتفعا بأن يكون شخص واحد ليس إماماً ولا عاصياً.\n\nهذا في الموجبة، وأمّا في السالبة فتُستعمل في جواب من يتوهّم استحالة اجتماع شيئين، كمن يتوهّم امتناع اجتماع النبوة والإمامة في بيت واحد، فيقال له: «ليس إمّا أن يكون البيت الواحد فيه نبوّة أو إمامة»، ومعناه أن النبوّة والإمامة لا مانع من اجتماعهما في بيت واحد.\n\n٣ ـ (مانعة خلو): وهي ما حُكم فيها بتنافي طرفيها أو عدم تنافيهما كذباً لا صدقاً، بمعنى أنه لا يمكن ارتفاعهما ويمكن اجتماعهما في الإيجاب، ويمكن ارتفاعهما ولا يمكن اجتماعهما في السلب.\n\nمثال الإيجاب: «الجسم إمّا أن يكون غير أبيض أو غير أسود»، أي إنّه لا يخلو من أحدهما وإن اجتمعا. ونحو: «إمّا أن يكون الجسم في الماء أو لا يغرق»، فإنّه يمكن اجتماعهما بأن يكون في الماء ولا يغرق، ولكن لا يخلو الواقع من أحدهما لامتناع أن لا يكون الجسم في الماء ويغرق.\n\nمثال السلب: «ليس إمّا أن يكون الجسم أبيض وإمّا أن يكون أسود»، ومعناه أن الواقع قد يخلو من أحدهما وإن كانا لا يجتمعان.\n\nوتُستعمل مانعة الخلو الموجبة في جواب من يتوهم إمكان أن يخلو الواقع من الطرفين، كمن يتوهم أنه يمكن أن يخلو الشيء من أن يكون علة ومعلولاً، فيقال له: «كلّ شيء لا يخلو إمّا أن يكون علة أو معلولاً»، وإن جاز أن يكون شيء واحد علة ومعلولاً معاً: علة لشيء ومعلولاً لشيء آخر.\n\nوأمّا السالبة فتُستعمل في جواب من يتوهم أن الواقع لا يخلو من الطرفين، كما يتوهم انحصار أقسام الناس في عاقل لا دين له وديّن لا عقل له، فيقال له: «ليس الإنسان إمّا أن يكون عاقلاً لا دين له أو ديّناً لا عقل له»، بل يجوز أن يكون شخص واحد عاقلاً وديّناً معاً.",
+      "english": "**2. Disjunction preventing conjunction (*māniʿat al-jamʿ*).** In its affirmative form, this asserts that **at most one** of the two alternatives can be true. It does *not* require that one of them be true; both may fail. For example, a body may be either white or black under the intended exclusion, but a red body is neither, so the alternatives are not exhaustive. The negative form denies the at-most-one condition: the two descriptions can occur together. Muẓaffar's paired example uses “non-white” and “non-black”: both obtain together in a red body, although their double denial would demand that one body be simultaneously white and black.\n\nThe author applies the affirmative form to his doctrinal premise that an imam and a sinner cannot be the same person, although a person could be neither; the negative form to the claim that prophethood and imamate can coexist within one household. These are his school-specific illustrations of exclusive versus nonexclusive predication, not new historical arguments independently endorsed by the translation.\n\n**3. Disjunction preventing joint absence (*māniʿat al-khulūw*).** Its affirmative form asserts that **at least one** of two alternatives is true; the two may also be true together. Thus every body is either non-white or non-black, and a red body satisfies both. Another source example is “Either the body is in water or it does not sink”: the body may be in water and not sink, but the author excludes the circumstance of sinking outside water, under his assumed conditions.\n\nThe negative form denies that at least one must always hold: both alternatives may fail. Consequently, “It is not the case that a body is either white or black” allows a body of some other colour while not asserting that white and black can coexist.\n\nHe applies the affirmative form to the claim that everything is a cause or an effect, potentially both relative to different things. His negative form rejects the supposed exhaustive opposition between an intelligent person without religion and a religious person without intelligence, because the two properties can belong together. The underlying logical distinction is between **at least one true** and **not necessarily at least one true**; the historical examples do not establish a timeless exhaustive ontology without additional premises.",
+      "notes": [
+        {
+          "type": "Editorial status",
+          "text": "Digitally presented authorial prose and examples; spelling/punctuation normalized. Not a diplomatic facsimile or independently manuscript-collated passage."
+        },
+        {
+          "type": "Logical note",
+          "text": "Do not conflate inclusive 'at least one' with exclusive 'exactly one'. The water/sinking example depends upon implicit empirical assumptions; the theological examples are authorial illustrations. The original 1402 source text on pp.155–156 contains all named categories and examples, corresponding to later print's topical headings."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, 1402 AH Dār al-Taʿāruf digital printed-source text; parallel 1421 Qum digital page where specified; no early 1968 facsimile collation",
+        "page": "155–156",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
+        "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/186?lang=ar"
       }
     }
   ],
