@@ -318,7 +318,7 @@
       const t = text(n.type).toLowerCase(), v = text(n.text);
       if (/lecture note · source|source note|editorial guide|translation status|source locator|coverage|to be translated/.test(t)) continue;
       if (/^Lecture-note locator:|Source locator supplied;|translation not yet available|full translation remains/i.test(v)) continue;
-      entries.push({ text:v, url:n.url || '' });
+      entries.push({ text:v, arabic:text(n.arabic), type:text(n.type), anchor:n.anchor, url:n.url || '' });
     }
     if (unit.source && typeof unit.source === 'object') {
       const source = unit.source;
@@ -349,7 +349,14 @@
       const items = make('ol', 'footnote-list');
       entries.forEach((entry, i) => {
         const li = make('li', 'footnote'); li.id = unit.domId + '-footnote-' + (i + 1);
-        addLinkedText(li, entry.text);
+        if (entry.type) li.append(make('strong', 'footnote-kind', entry.type + ': '));
+        if (entry.arabic) {
+          li.classList.add('authorial-bilingual-note');
+          const original = make('div', 'footnote-arabic'); original.lang = 'ar'; original.dir = 'rtl';
+          original.innerHTML = HikmaRichText.renderText(entry.arabic, {language:'arabic'}); li.append(original);
+          const translation = make('div', 'footnote-english'); translation.lang = 'en';
+          addLinkedText(translation, entry.text); li.append(translation);
+        } else addLinkedText(li, entry.text);
         if (entry.url) li.append(document.createTextNode(' '), link('Source', entry.url));
         items.append(li);
       });
@@ -650,7 +657,7 @@
                    (item.url && item.url === note.url &&
                     /^Textual emendation/i.test(item.type || '') &&
                     /^Textual emendation/i.test(note.type || '')));
-                 if (!duplicate) unit.notes = [...existingNotes, { id: note.id, type: note.type, text: note.text, url: note.url }];
+                 if (!duplicate) unit.notes = [...existingNotes, { ...note }];
                }
             }
           }

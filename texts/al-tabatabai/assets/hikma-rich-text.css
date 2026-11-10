@@ -29,3 +29,6 @@
   .hikma-source-diagram figcaption{font-size:8pt}
   .hikma-source-diagram[lang="ar"] figcaption{font-size:10pt}
 }
+.hikma-classification{margin:1.5em 0;padding:1em;border:1px solid var(--line,#cabca4);border-radius:4px;break-inside:avoid;max-width:100%;font-size:.9em;line-height:1.6}
+.hikma-classification ul{list-style:none;padding:0;margin:0}.hikma-classification li{margin:.4em 0}.hikma-classification li>span{display:inline-block;padding:.15em .6em;background:var(--accent-soft,#f1f4ef);border-radius:3px}.hikma-classification li>ul{border-inline-start:1px solid var(--muted,#60605e);margin-inline-start:.7em;padding-inline-start:1.1em}.hikma-classification figcaption{font:12px/1.6 Arial,sans-serif;color:var(--muted,#60605e);margin-top:1em}.hikma-classification[lang=ar] figcaption{font:16px/1.7 AmiriGnamma,Amiri,serif}
+@media print{.hikma-classification{padding:3mm;font-size:11pt}.hikma-classification[lang=ar]{font-size:14pt}.hikma-classification figcaption{font-size:8pt}.hikma-classification[lang=ar] figcaption{font-size:10pt}}

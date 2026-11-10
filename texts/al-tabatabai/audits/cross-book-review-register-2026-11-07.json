@@ -3,17 +3,17 @@
   "title": "Cross-book source and English review register",
   "summary": {
     "date": "2026-11-10",
-    "totalReaderUnits": 348,
+    "totalReaderUnits": 387,
     "M": {
-      "localReading": 101,
-      "localTranslated": 101,
+      "localReading": 140,
+      "localTranslated": 140,
       "fullAuthorialBooks": 6,
       "completeLocalBookContent": false,
       "mappedAuthorialTopics": 77,
-      "status": "Introduction 11, Book I 11, Book II 17, Book III 14, Book IV 47, Book V 1: 101 paired working units. New continuous coverage follows Rafed displayed pp.162–195 and the Book V preface at pp.198–199. Earlier gaps and untranscribed charts remain; the rest of Book V and all of VI are absent.",
+      "status": "Introduction 11; Book I 11; Book II 17; Book III 14; Book IV 47; Book V 40: 140 paired working units. Book V is continuously translated from Rafed displayed pp.198–270, including all 19 productive categorical moods, proofs, exercises and the conclusion. Earlier gaps and Book VI remain.",
       "localBook1Units": 11,
       "localBook4Units": 47,
-      "localBook5Units": 1
+      "localBook5Units": 40
     },
     "B": {
       "localReading": 111,
@@ -59,17 +59,17 @@
     }
   },
   "provenance": {
-    "MuzaffarSourceSha": "83e8c49789a5507022b29f39e63cf478b3591842",
+    "MuzaffarSourceSha": "5e395e210857734684b0e11c21c134bc7dfbd10f",
     "BidayaSourceSha": "77c694c1a6eb2b3cf6a0dd1745586c2feafd2b79",
     "NihayaSourceSha": "8c9c22338ca4ef19fc2438316d7fb8b66b91b0cb",
     "BidayaParitySha": "206e9ea60af9108b614441cd8e049742098cd339",
     "NihayaSupplementSha": "acfe485596c0acf220da213924c1e64d3439ded8",
-    "MuzaffarMapSha": "3d5ad782bb670e2fb88973d305b3dda1c51aac8f",
+    "MuzaffarMapSha": "eb3f584630191707835a0bb359f48a04b75f6b80",
     "maintenanceNote": "Stage VIII recovered from the saved Stage VII baseline: 23 new Muẓaffar units, 50 remaining complete Nihāya local readings, IX.9 full early-print comparison, six disclosed new textual decisions and four English changes. Source hashes reflect the current actual files.",
     "latestTextualDecision": "IX.9 first/second-kind issue resolved by an explicit 1428 correction; the early 1404 print retains first. VI.5 addition/bestowal explicitly corrected by the later editor. X.2 dependent/non-dependence follows an unfootnoted later-edition reading, not a claimed manuscript variant. See the 13-decision ledger."
   },
   "method": "One row per locally stored authorial passage. Presence of Arabic or English is a technical coverage flag, not a scholarly judgment. Same-source normalised PDF comparison has known limitations. Historical attribution issues are isolated in critical notes.",
-  "sourceStatus": "348 source-paired working units: 101 selected Muẓaffar + 111 Bidāya + 136 Nihāya. All 136 Nihāya units locally read in full; IX.9 alone fully compared to the early external printed facsimile. The triage records 13 partial later-edition checks, no manuscript or specialist certification. Muẓaffar has 47 Book IV units and one Book V preface; earlier gaps, the remainder of V and all of VI persist.",
+  "sourceStatus": "387 source-paired working units: 140 Muẓaffar + 111 Bidāya + 136 Nihāya. Muẓaffar Book V is now completely translated from its digital base; earlier gaps and all of VI remain. The complete Nihāya external comparison is in progress; completed Stage IX evidence will be incorporated before final publication.",
   "entries": [
     {
       "id": "M-P-01",
@@ -2518,6 +2518,1597 @@
       "arabicCharacters": 2031,
       "englishCharacters": 3039,
       "editorialNotes": 3
+    },
+    {
+      "id": "M-V-02",
+      "book": "M",
+      "stage": "V",
+      "chapter": 2,
+      "title": "Syllogism: definition and the five qualifications",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "200–201",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=200&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 200,
+            "firstBlock": 0,
+            "lastBlockExclusive": 9
+          },
+          {
+            "page": 201,
+            "firstBlock": 0,
+            "lastBlockExclusive": 3
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=200&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1289,
+      "englishCharacters": 2325,
+      "editorialNotes": 3,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-03",
+      "book": "M",
+      "stage": "V",
+      "chapter": 2,
+      "title": "General terminology of syllogism",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "201–202",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=201&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 201,
+            "firstBlock": 3,
+            "lastBlockExclusive": 11
+          },
+          {
+            "page": 202,
+            "firstBlock": 0,
+            "lastBlockExclusive": 10
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=201&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1601,
+      "englishCharacters": 2484,
+      "editorialNotes": 2,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-04",
+      "book": "M",
+      "stage": "V",
+      "chapter": 3,
+      "title": "Syllogisms divided by matter and form",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "203–204",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=203&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 203,
+            "firstBlock": 0,
+            "lastBlockExclusive": 12
+          },
+          {
+            "page": 204,
+            "firstBlock": 0,
+            "lastBlockExclusive": 14
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=203&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1900,
+      "englishCharacters": 3103,
+      "editorialNotes": 4,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-05",
+      "book": "M",
+      "stage": "V",
+      "chapter": 3,
+      "title": "Summary diagram: argument and the kinds of syllogism",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "205",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=205&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 205,
+            "firstBlock": 0,
+            "lastBlockExclusive": 1
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=205&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 138,
+      "englishCharacters": 356,
+      "editorialNotes": 2,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-06",
+      "book": "M",
+      "stage": "V",
+      "chapter": 4,
+      "title": "Categorical conjunctive syllogism: its three terms",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "206–207",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=206&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 206,
+            "firstBlock": 0,
+            "lastBlockExclusive": 12
+          },
+          {
+            "page": 207,
+            "firstBlock": 0,
+            "lastBlockExclusive": 6
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=206&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1439,
+      "englishCharacters": 2097,
+      "editorialNotes": 2,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-07",
+      "book": "M",
+      "stage": "V",
+      "chapter": 4,
+      "title": "The five general rules of conjunctive syllogism",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "207–210",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=207&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 207,
+            "firstBlock": 6,
+            "lastBlockExclusive": 15
+          },
+          {
+            "page": 208,
+            "firstBlock": 0,
+            "lastBlockExclusive": 11
+          },
+          {
+            "page": 209,
+            "firstBlock": 0,
+            "lastBlockExclusive": 12
+          },
+          {
+            "page": 210,
+            "firstBlock": 0,
+            "lastBlockExclusive": 4
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=207&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 3574,
+      "englishCharacters": 5177,
+      "editorialNotes": 4,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-08",
+      "book": "M",
+      "stage": "V",
+      "chapter": 5,
+      "title": "The four figures and the conditions of the first",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "211–212",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=211&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 211,
+            "firstBlock": 0,
+            "lastBlockExclusive": 7
+          },
+          {
+            "page": 212,
+            "firstBlock": 0,
+            "lastBlockExclusive": 10
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=211&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2261,
+      "englishCharacters": 3259,
+      "editorialNotes": 3,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-09",
+      "book": "M",
+      "stage": "V",
+      "chapter": 5,
+      "title": "The four productive moods of the first figure",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "213–214",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=213&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 213,
+            "firstBlock": 0,
+            "lastBlockExclusive": 9
+          },
+          {
+            "page": 214,
+            "firstBlock": 0,
+            "lastBlockExclusive": 12
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=213&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1628,
+      "englishCharacters": 2293,
+      "editorialNotes": 2,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-10",
+      "book": "M",
+      "stage": "V",
+      "chapter": 6,
+      "title": "The second figure and its conditions",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "214–216",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=214&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 214,
+            "firstBlock": 12,
+            "lastBlockExclusive": 16
+          },
+          {
+            "page": 215,
+            "firstBlock": 0,
+            "lastBlockExclusive": 10
+          },
+          {
+            "page": 216,
+            "firstBlock": 0,
+            "lastBlockExclusive": 1
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=214&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1968,
+      "englishCharacters": 2741,
+      "editorialNotes": 1,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-11",
+      "book": "M",
+      "stage": "V",
+      "chapter": 6,
+      "title": "The four moods of the second figure and their proofs",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "216–219",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=216&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 216,
+            "firstBlock": 1,
+            "lastBlockExclusive": 14
+          },
+          {
+            "page": 217,
+            "firstBlock": 0,
+            "lastBlockExclusive": 23
+          },
+          {
+            "page": 218,
+            "firstBlock": 0,
+            "lastBlockExclusive": 22
+          },
+          {
+            "page": 219,
+            "firstBlock": 0,
+            "lastBlockExclusive": 5
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=216&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2781,
+      "englishCharacters": 3712,
+      "editorialNotes": 3,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-12",
+      "book": "M",
+      "stage": "V",
+      "chapter": 7,
+      "title": "The third figure and its conditions",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "219–220",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=219&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 219,
+            "firstBlock": 5,
+            "lastBlockExclusive": 12
+          },
+          {
+            "page": 220,
+            "firstBlock": 0,
+            "lastBlockExclusive": 5
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=219&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1394,
+      "englishCharacters": 2122,
+      "editorialNotes": 2,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-13",
+      "book": "M",
+      "stage": "V",
+      "chapter": 7,
+      "title": "The six moods of the third figure and their proofs",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "220–223",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=220&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 220,
+            "firstBlock": 5,
+            "lastBlockExclusive": 16
+          },
+          {
+            "page": 221,
+            "firstBlock": 0,
+            "lastBlockExclusive": 26
+          },
+          {
+            "page": 222,
+            "firstBlock": 0,
+            "lastBlockExclusive": 22
+          },
+          {
+            "page": 223,
+            "firstBlock": 0,
+            "lastBlockExclusive": 21
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=220&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2732,
+      "englishCharacters": 3937,
+      "editorialNotes": 3,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-14",
+      "book": "M",
+      "stage": "V",
+      "chapter": 7,
+      "title": "Remarks on reductio",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "224",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=224&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 224,
+            "firstBlock": 0,
+            "lastBlockExclusive": 5
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=224&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 706,
+      "englishCharacters": 1134,
+      "editorialNotes": 1,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-15",
+      "book": "M",
+      "stage": "V",
+      "chapter": 7,
+      "title": "Proof by assumption: three stages and two worked proofs",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "224–226",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=224&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 224,
+            "firstBlock": 5,
+            "lastBlockExclusive": 9
+          },
+          {
+            "page": 225,
+            "firstBlock": 0,
+            "lastBlockExclusive": 13
+          },
+          {
+            "page": 226,
+            "firstBlock": 0,
+            "lastBlockExclusive": 19
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=224&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2653,
+      "englishCharacters": 3461,
+      "editorialNotes": 3,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-16",
+      "book": "M",
+      "stage": "V",
+      "chapter": 7,
+      "title": "Reduction to the first figure",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "227",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=227&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 227,
+            "firstBlock": 0,
+            "lastBlockExclusive": 3
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=227&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 513,
+      "englishCharacters": 747,
+      "editorialNotes": 2,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-17",
+      "book": "M",
+      "stage": "V",
+      "chapter": 8,
+      "title": "The fourth figure: conditions, moods, and proofs",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "227–230",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=227&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 227,
+            "firstBlock": 3,
+            "lastBlockExclusive": 11
+          },
+          {
+            "page": 228,
+            "firstBlock": 0,
+            "lastBlockExclusive": 17
+          },
+          {
+            "page": 229,
+            "firstBlock": 0,
+            "lastBlockExclusive": 19
+          },
+          {
+            "page": 230,
+            "firstBlock": 0,
+            "lastBlockExclusive": 10
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=227&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2669,
+      "englishCharacters": 3949,
+      "editorialNotes": 4,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-18",
+      "book": "M",
+      "stage": "V",
+      "chapter": 8,
+      "title": "Exercises on the four figures",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "231",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=231&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 231,
+            "firstBlock": 0,
+            "lastBlockExclusive": 8
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=231&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1098,
+      "englishCharacters": 1368,
+      "editorialNotes": 2,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-19",
+      "book": "M",
+      "stage": "V",
+      "chapter": 9,
+      "title": "Conditional conjunctive syllogism: terms, divisions, and connected premises",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "232–234",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=232&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 232,
+            "firstBlock": 0,
+            "lastBlockExclusive": 8
+          },
+          {
+            "page": 233,
+            "firstBlock": 0,
+            "lastBlockExclusive": 12
+          },
+          {
+            "page": 234,
+            "firstBlock": 0,
+            "lastBlockExclusive": 4
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=232&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 3543,
+      "englishCharacters": 5433,
+      "editorialNotes": 3,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-20",
+      "book": "M",
+      "stage": "V",
+      "chapter": 10,
+      "title": "Disjunctive premises: converting affirmative disjunctions to connected conditionals",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "235–237",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=235&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 235,
+            "firstBlock": 0,
+            "lastBlockExclusive": 7
+          },
+          {
+            "page": 236,
+            "firstBlock": 0,
+            "lastBlockExclusive": 17
+          },
+          {
+            "page": 237,
+            "firstBlock": 0,
+            "lastBlockExclusive": 5
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=235&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2439,
+      "englishCharacters": 3675,
+      "editorialNotes": 3,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-21",
+      "book": "M",
+      "stage": "V",
+      "chapter": 10,
+      "title": "Converting negative disjunctions to connected conditionals",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "237",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=237&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 237,
+            "firstBlock": 5,
+            "lastBlockExclusive": 18
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=237&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 789,
+      "englishCharacters": 1326,
+      "editorialNotes": 3,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-22",
+      "book": "M",
+      "stage": "V",
+      "chapter": 10,
+      "title": "Converting connected conditionals to disjunctions",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "238",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=238&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 238,
+            "firstBlock": 0,
+            "lastBlockExclusive": 4
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=238&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 848,
+      "englishCharacters": 1666,
+      "editorialNotes": 1,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-23",
+      "book": "M",
+      "stage": "V",
+      "chapter": 10,
+      "title": "Combining disjunctive premises: conditions and a worked investigation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "238–241",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=238&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 238,
+            "firstBlock": 4,
+            "lastBlockExclusive": 7
+          },
+          {
+            "page": 239,
+            "firstBlock": 0,
+            "lastBlockExclusive": 7
+          },
+          {
+            "page": 240,
+            "firstBlock": 0,
+            "lastBlockExclusive": 14
+          },
+          {
+            "page": 241,
+            "firstBlock": 0,
+            "lastBlockExclusive": 11
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=238&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 3848,
+      "englishCharacters": 5106,
+      "editorialNotes": 3,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-24",
+      "book": "M",
+      "stage": "V",
+      "chapter": 11,
+      "title": "A connected and a disjunctive premise",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "241–243",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=241&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 241,
+            "firstBlock": 11,
+            "lastBlockExclusive": 15
+          },
+          {
+            "page": 242,
+            "firstBlock": 0,
+            "lastBlockExclusive": 12
+          },
+          {
+            "page": 243,
+            "firstBlock": 0,
+            "lastBlockExclusive": 2
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=241&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1888,
+      "englishCharacters": 2673,
+      "editorialNotes": 1,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-25",
+      "book": "M",
+      "stage": "V",
+      "chapter": 11,
+      "title": "A categorical and a connected premise",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "243–245",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=243&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 243,
+            "firstBlock": 2,
+            "lastBlockExclusive": 14
+          },
+          {
+            "page": 244,
+            "firstBlock": 0,
+            "lastBlockExclusive": 13
+          },
+          {
+            "page": 245,
+            "firstBlock": 0,
+            "lastBlockExclusive": 6
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=243&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2638,
+      "englishCharacters": 3764,
+      "editorialNotes": 3,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-26",
+      "book": "M",
+      "stage": "V",
+      "chapter": 11,
+      "title": "A categorical and a disjunctive premise; closing remark on conditional syllogisms",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "245–246",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=245&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 245,
+            "firstBlock": 6,
+            "lastBlockExclusive": 14
+          },
+          {
+            "page": 246,
+            "firstBlock": 0,
+            "lastBlockExclusive": 5
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=245&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1145,
+      "englishCharacters": 1669,
+      "editorialNotes": 1,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-27",
+      "book": "M",
+      "stage": "V",
+      "chapter": 12,
+      "title": "Exceptional syllogism: composition, division, and conditions",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "247–248",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=247&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 247,
+            "firstBlock": 0,
+            "lastBlockExclusive": 9
+          },
+          {
+            "page": 248,
+            "firstBlock": 0,
+            "lastBlockExclusive": 4
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=247&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1230,
+      "englishCharacters": 1819,
+      "editorialNotes": 2,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-28",
+      "book": "M",
+      "stage": "V",
+      "chapter": 12,
+      "title": "The connected exceptional syllogism",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "248–249",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=248&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 248,
+            "firstBlock": 4,
+            "lastBlockExclusive": 14
+          },
+          {
+            "page": 249,
+            "firstBlock": 0,
+            "lastBlockExclusive": 2
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=248&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 881,
+      "englishCharacters": 1670,
+      "editorialNotes": 3,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-29",
+      "book": "M",
+      "stage": "V",
+      "chapter": 12,
+      "title": "The disjunctive exceptional syllogism and exhaustive division",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "249–250",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=249&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 249,
+            "firstBlock": 2,
+            "lastBlockExclusive": 14
+          },
+          {
+            "page": 250,
+            "firstBlock": 0,
+            "lastBlockExclusive": 3
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=249&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1648,
+      "englishCharacters": 2437,
+      "editorialNotes": 2,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-30",
+      "book": "M",
+      "stage": "V",
+      "chapter": 13,
+      "title": "Implicit syllogism and enthymeme",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "251",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=251&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 251,
+            "firstBlock": 0,
+            "lastBlockExclusive": 10
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=251&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 805,
+      "englishCharacters": 1306,
+      "editorialNotes": 3,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-31",
+      "book": "M",
+      "stage": "V",
+      "chapter": 13,
+      "title": "Acquiring premises by analysis and the five stages of thought",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "251–254",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=251&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 251,
+            "firstBlock": 10,
+            "lastBlockExclusive": 12
+          },
+          {
+            "page": 252,
+            "firstBlock": 0,
+            "lastBlockExclusive": 5
+          },
+          {
+            "page": 253,
+            "firstBlock": 0,
+            "lastBlockExclusive": 9
+          },
+          {
+            "page": 254,
+            "firstBlock": 0,
+            "lastBlockExclusive": 4
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=251&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 3794,
+      "englishCharacters": 5329,
+      "editorialNotes": 3,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-32",
+      "book": "M",
+      "stage": "V",
+      "chapter": 14,
+      "title": "Compound syllogisms: definition and two forms",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "255–257",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=255&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 255,
+            "firstBlock": 0,
+            "lastBlockExclusive": 6
+          },
+          {
+            "page": 256,
+            "firstBlock": 0,
+            "lastBlockExclusive": 17
+          },
+          {
+            "page": 257,
+            "firstBlock": 0,
+            "lastBlockExclusive": 1
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=255&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2434,
+      "englishCharacters": 3466,
+      "editorialNotes": 2,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-33",
+      "book": "M",
+      "stage": "V",
+      "chapter": 14,
+      "title": "Reductio as a compound syllogism",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "257–259",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=257&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 257,
+            "firstBlock": 1,
+            "lastBlockExclusive": 9
+          },
+          {
+            "page": 258,
+            "firstBlock": 0,
+            "lastBlockExclusive": 11
+          },
+          {
+            "page": 259,
+            "firstBlock": 0,
+            "lastBlockExclusive": 9
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=257&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2727,
+      "englishCharacters": 3791,
+      "editorialNotes": 2,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-34",
+      "book": "M",
+      "stage": "V",
+      "chapter": 14,
+      "title": "The syllogism of equality and its analysis",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "259–260",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=259&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 259,
+            "firstBlock": 9,
+            "lastBlockExclusive": 14
+          },
+          {
+            "page": 260,
+            "firstBlock": 0,
+            "lastBlockExclusive": 9
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=259&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1931,
+      "englishCharacters": 2829,
+      "editorialNotes": 3,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-35",
+      "book": "M",
+      "stage": "V",
+      "chapter": 15,
+      "title": "Induction: definition, complete and incomplete",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "261–262",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=261&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 261,
+            "firstBlock": 0,
+            "lastBlockExclusive": 9
+          },
+          {
+            "page": 262,
+            "firstBlock": 0,
+            "lastBlockExclusive": 1
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=261&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1371,
+      "englishCharacters": 2040,
+      "editorialNotes": 3,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-36",
+      "book": "M",
+      "stage": "V",
+      "chapter": 15,
+      "title": "The difficult objection concerning induction and certainty",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "262",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=262&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 262,
+            "firstBlock": 1,
+            "lastBlockExclusive": 6
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=262&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 975,
+      "englishCharacters": 1289,
+      "editorialNotes": 2,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-37",
+      "book": "M",
+      "stage": "V",
+      "chapter": 15,
+      "title": "The solution: observation, causes, self-evidence, and complete similarity",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "262–264",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=262&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 262,
+            "firstBlock": 6,
+            "lastBlockExclusive": 9
+          },
+          {
+            "page": 263,
+            "firstBlock": 0,
+            "lastBlockExclusive": 5
+          },
+          {
+            "page": 264,
+            "firstBlock": 0,
+            "lastBlockExclusive": 2
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=262&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2129,
+      "englishCharacters": 3095,
+      "editorialNotes": 4,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-38",
+      "book": "M",
+      "stage": "V",
+      "chapter": 16,
+      "title": "Analogy: definition and its four components",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "265–266",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=265&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 265,
+            "firstBlock": 0,
+            "lastBlockExclusive": 12
+          },
+          {
+            "page": 266,
+            "firstBlock": 0,
+            "lastBlockExclusive": 1
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=265&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1053,
+      "englishCharacters": 1609,
+      "editorialNotes": 3,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-39",
+      "book": "M",
+      "stage": "V",
+      "chapter": 16,
+      "title": "The epistemic value of analogy and the complete cause",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "266–267",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=266&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 266,
+            "firstBlock": 1,
+            "lastBlockExclusive": 6
+          },
+          {
+            "page": 267,
+            "firstBlock": 0,
+            "lastBlockExclusive": 5
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=266&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1833,
+      "englishCharacters": 2682,
+      "editorialNotes": 3,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
+    },
+    {
+      "id": "M-V-40",
+      "book": "M",
+      "stage": "V",
+      "chapter": 17,
+      "title": "Final exercises on syllogisms and the close of Part Two",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "268–270",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=268&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 268,
+            "firstBlock": 0,
+            "lastBlockExclusive": 8
+          },
+          {
+            "page": 269,
+            "firstBlock": 0,
+            "lastBlockExclusive": 13
+          },
+          {
+            "page": 270,
+            "firstBlock": 0,
+            "lastBlockExclusive": 1
+          }
+        ],
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=268&type=c_fbook"
+      },
+      "sourceEditionReviewed": "Full continuous digital-base translation with separately documented targeted 1968 printed-witness checks; no full independent print collation",
+      "sourceParityPercent": null,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "fresh working English from Arabic; NOT yet independently checked against a complete second printed facsimile or specialist-certified",
+      "sourceAssessment": "Every assigned base block represented; nine print-attested English decisions, one recovered classification figure and four unresolved printed cruxes distinguished in the Stage IX Book V register.",
+      "nextReview": "Compare the passage and symbolic notation with the 1968 facsimile; resolve inherited chart and earlier selection gaps.",
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2534,
+      "englishCharacters": 3864,
+      "editorialNotes": 4,
+      "reviewRegister": "muzaffar-book-v-source-decisions-2026-11-10.json"
     },
     {
       "id": "B-INTRO",

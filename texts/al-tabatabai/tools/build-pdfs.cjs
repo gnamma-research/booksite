@@ -12,7 +12,7 @@ const rich=richText.inline;
 const paragraphs=(txt,dir)=>richText.renderText(txt,{language:dir==='rtl'?'arabic':'english',lineBreaks:true});
 const passage=(unit,language)=>richText.renderUnit(unit,language,{lineBreaks:true});
 const isGuide=x=>/editorial|guide|outline/.test(String(x.status||'').toLowerCase())||String(x.id).startsWith('B-GUIDE');
-function footnotes(u){
+function footnotes(u,mode){
  const notes=[];
  for(const raw of u.notes||[]){
    const n=typeof raw==='string'?{text:raw}:raw;
@@ -20,11 +20,11 @@ function footnotes(u){
    const type=String(n.type||'').toLowerCase(),txt=String(n.text);
    if(/lecture note · source|source note|editorial guide|translation status|source locator|coverage|to be translated/.test(type))continue;
    if(/^Lecture-note locator:|Source locator supplied;|translation not yet available|full translation remains/i.test(txt))continue;
-   notes.push([n.type||'Note',txt,n.url||'']);
+   notes.push([n.type||'Note',txt,n.url||'',n.arabic||'']);
  }
  if(u.source){notes.push(['Source',[u.source.edition||'Arabic text',u.source.page?'p. '+u.source.page:''].filter(Boolean).join(' · '),u.source.url||'']);}
  if(!notes.length)return '';
- return '<aside class="apparatus"><ol>'+notes.map(x=>'<li><span class="note-kind">'+esc(x[0])+':</span> '+rich(x[1])+
+ return '<aside class="apparatus"><ol>'+notes.map(x=>'<li'+(x[3]?' class="authorial-bilingual-note"':'')+'><span class="note-kind">'+esc(x[0])+':</span> '+(x[3]&&mode!=='reading'?'<div class="note-arabic" lang="ar" dir="rtl">'+paragraphs(x[3],'rtl')+'</div>':'')+(x[3]&&mode==='reference'?'':rich(x[1]))+
    (String(x[2]).startsWith('https://')?' <span class="note-url">'+esc(x[2])+'</span>':'')+'</li>').join('')+'</ol></aside>';
 }
 function buildHtml(book,mode,css){
@@ -35,7 +35,7 @@ function buildHtml(book,mode,css){
   if(st!==lastStage){
    const id='stage-'+slug(st);
    toc.push('<li class="toc-stage"><a href="#'+id+'">'+esc(stage.title||st)+'</a></li>');
-   pages.push('<header class="stage-title" id="'+id+'"><span class="kicker">'+(st==='0'?'INTRODUCTION':'STAGE '+esc(st))+'</span>'+
+   pages.push('<header class="stage-title" id="'+id+'"><span class="kicker">'+(st==='0'?'INTRODUCTION':book.id==='muzaffar-al-mantiq'?'BOOK '+esc(stage.bookNumber||3):'STAGE '+esc(st))+'</span>'+
      '<h2>'+esc(stage.title||st)+'</h2>'+
      (stage.arabicTitle?'<p class="arabic-title" lang="ar" dir="rtl">'+esc(stage.arabicTitle)+'</p>':'')+
      (stage.introductionArabic&&mode!=='reading'?'<div class="stage-original" lang="ar" dir="rtl">'+paragraphs(stage.introductionArabic,'rtl')+'</div>':'')+
@@ -46,7 +46,7 @@ function buildHtml(book,mode,css){
   pages.push('<section class="chapter" id="'+anchor+'">');
   if(chapter!==lastChapter){
    toc.push('<li class="toc-chapter"><a href="#'+anchor+'">'+esc(u.title||'')+'</a></li>');
-   pages.push('<header class="chapter-title"><span class="chapter-index">'+(st==='0'?'INTRODUCTION':'CHAPTER '+esc(u.chapter??''))+'</span>'+
+   pages.push('<header class="chapter-title"><span class="chapter-index">'+(st==='0'?'INTRODUCTION':(book.id==='muzaffar-al-mantiq'?'READING SECTION ':'CHAPTER ')+esc(u.chapter??''))+'</span>'+
      '<h3>'+esc(u.title||'')+'</h3>'+
      (u.arabicTitle?'<p lang="ar" dir="rtl">'+esc(u.arabicTitle)+'</p>':'')+'</header>');
    lastChapter=chapter;
@@ -59,7 +59,7 @@ function buildHtml(book,mode,css){
   }else if(mode==='reference')pages.push('<div class="arabic full" lang="ar" dir="rtl">'+passage(u,'arabic')+'</div>');
   else pages.push(en?'<div class="english full" lang="en" dir="ltr">'+passage(u,'english')+'</div>':
     '<div class="arabic full" lang="ar" dir="rtl">'+passage(u,'arabic')+'</div>');
-  pages.push(footnotes(u)+'</section>');
+  pages.push(footnotes(u,mode)+'</section>');
  }
  const author=typeof book.author==='object'?book.author.name||'':book.author||'';
  const labels={study:'Arabic–English study edition',reading:'Reading edition',reference:'Arabic reference edition'};
@@ -102,7 +102,7 @@ async function main(){
          (item.url && item.url===note.url &&
           /^Textual emendation/i.test(item.type||'') &&
           /^Textual emendation/i.test(note.type||'')));
-       if(!duplicate)unit.notes=[...existing,{id:note.id,type:note.type,text:note.text,url:note.url}];
+       if(!duplicate)unit.notes=[...existing,{...note}];
      }
    }
    for(const mode of modes){

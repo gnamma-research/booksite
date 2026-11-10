@@ -75,13 +75,13 @@ for(const [name,file] of books){
     check(units.some(u=>u.id==='M-P-01'),'Muẓaffar introduction must precede its Book III selections');
     check(units.filter(u=>/^M-K-(0[1-9]|1[0-7])$/.test(u.id)).length===17,
       'Muẓaffar Book II must preserve seventeen working bilingual reading units, some source-normalized');
-    check(units.length===101,'Muẓaffar must retain 101 selected Arabic-English working passages, 47 Book IV readings and the Book V preface');
+    check(units.length===140,'Muẓaffar must retain 140 Arabic-English working passages, including all 40 Book V sections');
     const newBook4=Array.from({length:47},(_,i)=>'M-C-'+String(i+1).padStart(2,'0'));
     check(stages.some(x=>x.id==='C'&&x.bookNumber===4),'Muẓaffar new Book IV stage missing');
     check(newBook4.every(id=>units.some(u=>u.id===id&&u.stage==='C'&&u.arabic.length>350&&u.english.length>850)),
       'Muẓaffar 47 source-grounded Book IV selected Arabic-English readings missing/truncated');
-    check(stages.some(x=>x.id==='V'&&x.bookNumber===5)&&units.filter(u=>u.stage==='V').length===1&&
-      units.find(u=>u.id==='M-V-01')?.source?.page==='198–199','Book V preface must be distinct from Book IV');
+    check(stages.some(x=>x.id==='V'&&x.bookNumber===5)&&units.filter(u=>u.stage==='V').length===40&&
+      units.find(u=>u.id==='M-V-01')?.source?.page==='198–199','Complete Book V and its original preface must remain distinct from Book IV');
     const square=units.find(u=>u.id==='M-C-30')?.sourceDiagram;
     check(square?.nodes?.length===4&&square?.relations?.length===6,'Source square must retain four propositions and six relations');
     check(units.find(u=>u.id==='M-C-46')?.notes?.some(n=>n.type==='Existential conditions'&&
@@ -134,8 +134,8 @@ if(mMap&&mText){
     'Muẓaffar source map lost new Book I source coverage');
   check(mMap.parts.find(p=>p.book===2)?.availableUnits===17,
     'Muẓaffar source map must register Book II opening');
-  check(mMap.parts.find(p=>p.book===4)?.availableUnits===47&&mMap.parts.find(p=>p.book===5)?.availableUnits===1,
-    'Muẓaffar source map must register 47 Book IV readings and one Book V preface');
+  check(mMap.parts.find(p=>p.book===4)?.availableUnits===47&&mMap.parts.find(p=>p.book===5)?.availableUnits===40,
+    'Muẓaffar source map must register 47 Book IV readings and all 40 Book V sections');
   check(mMap.parts.reduce((n,x)=>n+x.topics.length,0)>=60,'Muẓaffar map lost section titles');
   for(const p of mMap.parts){
     check(p.start>0&&p.end>=p.start,'Muẓaffar invalid page range for book '+p.book);

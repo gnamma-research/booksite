@@ -445,6 +445,168 @@
       "rationale": "Bidāya isolates the central objection: an indistinct perception of one thing cannot account for a universal judgment true of many.",
       "reviewStatus": "passages-read",
       "provenance": "Editorial comparison of the paired Arabic–English reading units, 2026-11-10. This is not an authorial citation."
+    },
+    {
+      "id": "ct-m-v-40-b-ii-01-v",
+      "from": {
+        "unit": "M-V-40",
+        "language": "english",
+        "quote": "1. Someone argued against mental existence as follows: if quiddities existed in the mind, the mind would be hot and cold when conceiving heat and cold, straight and round, and so on. The con"
+      },
+      "to": {
+        "unit": "B-II-01",
+        "language": "english",
+        "quote": "**The third objection** argues that mental existence would make the soul hot and cold, wide and long, extended, moving, triangular, square, faithful, unbelieving, and so forth whenever it co"
+      },
+      "type": "foundation",
+      "rationale": "Exercises 1, 4 and 5 reproduce the hot/cold objection and the proof from affirmative judgments of impossibles. Bidāya develops both and distinguishes primary from common predication in the reply.",
+      "caution": "Read the objection together with its reply; do not present the objection as Ṭabāṭabāʾī’s conclusion.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the Book V Arabic–English continuation with the paired philosophical passage, 2026-11-10. This is not an authorial cross-reference."
+    },
+    {
+      "id": "ct-m-v-40-n-iii-01-v",
+      "from": {
+        "unit": "M-V-40",
+        "language": "english",
+        "quote": "1. Someone argued against mental existence as follows: if quiddities existed in the mind, the mind would be hot and cold when conceiving heat and cold, straight and round, and so on. The con"
+      },
+      "to": {
+        "unit": "N-III-01",
+        "language": "english",
+        "quote": "The resolution is that the criterion for a thing's existence being for another and for its qualifying that other is common predication. What exists in the mind of coldness, heat, and the lik"
+      },
+      "type": "foundation",
+      "rationale": "The final exercises ask for the logical arrangement of the same mental-existence proof and hot/cold objection treated in Nihāya. Its reply distinguishes the mental concept from the external effect by modes of predication.",
+      "caution": "This links a worked philosophical dispute to a request to formalize it, not a generic occurrence of “proposition”.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the Book V Arabic–English continuation with the paired philosophical passage, 2026-11-10. This is not an authorial cross-reference."
+    },
+    {
+      "id": "ct-m-v-40-b-xii-04-v",
+      "from": {
+        "unit": "M-V-40",
+        "language": "english",
+        "quote": "2. Someone argued that God Most High knows, because what lacks a thing cannot give it, and He, glorified be He, has created knowledge in us. Therefore He knows. Identify the kind of inferenc"
+      },
+      "to": {
+        "unit": "B-XII-04",
+        "language": "english",
+        "quote": "We have established that God is the source bestowing every existence and existential perfection. A cause giving a perfection must possess that perfection in a higher and nobler mode: what gi"
+      },
+      "type": "foundation",
+      "rationale": "Exercise 2 uses the causal axiom to infer divine knowledge from knowledge produced in us. Bidāya explicitly states the same axiom and applies it to knowledge, power, and life.",
+      "caution": "The target qualifies possession as higher and nobler; it does not attribute a creature’s limited mode to God.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the Book V Arabic–English continuation with the paired philosophical passage, 2026-11-10. This is not an authorial cross-reference."
+    },
+    {
+      "id": "ct-m-v-40-n-xii-04-v",
+      "from": {
+        "unit": "M-V-40",
+        "language": "english",
+        "quote": "2. Someone argued that God Most High knows, because what lacks a thing cannot give it, and He, glorified be He, has created knowledge in us. Therefore He knows. Identify the kind of inferenc"
+      },
+      "to": {
+        "unit": "N-XII-04",
+        "language": "english",
+        "quote": "The intrinsically Necessary is sheer existence, with no access for nonexistence to His essence, and no existential perfection is denied of Him. For every contingent existential perfection is"
+      },
+      "type": "foundation",
+      "rationale": "Exercise 2 uses the exact maxim that the giver cannot lack what it gives. Nihāya uses it in proving that no existential perfection is absent from the Necessary, while explaining how the possession is compatible with simplicity.",
+      "caution": "The target explicitly rejects common predication identifying the Necessary with contingent things; retain that qualification.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the Book V Arabic–English continuation with the paired philosophical passage, 2026-11-10. This is not an authorial cross-reference."
+    },
+    {
+      "id": "ct-m-v-39-b-vii-03-v",
+      "from": {
+        "unit": "M-V-39",
+        "language": "english",
+        "quote": "We may, however, know that the common feature—the respect of resemblance—is a **complete cause** of the judgment’s presence in the original case. We then infer with certainty that the judgme"
+      },
+      "to": {
+        "unit": "B-VII-03",
+        "language": "english",
+        "quote": "Whenever a complete cause exists, its effect must exist. Otherwise the effect could be absent despite the presence of everything required for it; its absence would then be unexplained. Likew"
+      },
+      "type": "foundation",
+      "rationale": "Muẓaffar’s transition from resemblance to certain demonstration depends on the common feature being a complete cause. Bidāya explains why a complete cause and its effect cannot be separated.",
+      "caution": "Ontological necessity does not by itself establish that an investigator has identified the complete cause; Muẓaffar expressly marks that epistemic difficulty.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the Book V Arabic–English continuation with the paired philosophical passage, 2026-11-10. This is not an authorial cross-reference."
+    },
+    {
+      "id": "ct-m-v-39-n-viii-03-v",
+      "from": {
+        "unit": "M-V-39",
+        "language": "english",
+        "quote": "We may, however, know that the common feature—the respect of resemblance—is a **complete cause** of the judgment’s presence in the original case. We then infer with certainty that the judgme"
+      },
+      "to": {
+        "unit": "N-VIII-03",
+        "language": "english",
+        "quote": "This is mistaken. The human being acting by choice is not a complete cause of the act, but an incomplete cause. The act has other incomplete causes, such as matter, its presence, the coincid"
+      },
+      "type": "foundation",
+      "rationale": "The argument’s certainty requires the full cause. Nihāya distinguishes complete from incomplete causes, including in voluntary action, and argues that the complete cause necessitates its effect.",
+      "caution": "The relation is the specific full-cause premise, not a broad crosslink for every occurrence of “cause”.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the Book V Arabic–English continuation with the paired philosophical passage, 2026-11-10. This is not an authorial cross-reference."
+    },
+    {
+      "id": "ct-m-v-37-n-xi-13-v",
+      "from": {
+        "unit": "M-V-37",
+        "language": "english",
+        "quote": "**2. On causal explanation as well.** Someone who has observed some particulars investigates the cause of the feature’s presence and discovers that it belongs to those observed particulars b"
+      },
+      "to": {
+        "unit": "N-XI-13",
+        "language": "english",
+        "quote": "It is therefore clear from the foregoing that investigating a conclusion sought yields knowledge of it only by proceeding to it through its cause, if it has a cause, or through general conco"
+      },
+      "type": "foundation",
+      "rationale": "Muẓaffar contrasts bare observation with inquiry that knows a causal explanation. Nihāya develops the dependence of certain knowledge of a caused thing on its cause and distinguishes the case of what has no cause.",
+      "caution": "Nihāya separately allows general concomitances for what has no cause and discusses the objection from sensation. This is not an assertion that both authors give an identical modern theory of induction.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the Book V Arabic–English continuation with the paired philosophical passage, 2026-11-10. This is not an authorial cross-reference."
+    },
+    {
+      "id": "ct-m-v-32-b-xi-08-v",
+      "from": {
+        "unit": "M-V-32",
+        "language": "english",
+        "quote": "**Compound syllogisms: preliminary explanation and definition.** To establish the proposition sought, analysis must eventually reach self-evident premises whose knowledge requires no acquisi"
+      },
+      "to": {
+        "unit": "B-XI-08",
+        "language": "english",
+        "quote": "Discursive sciences ultimately depend upon immediate cognitions by which their conclusions are established. Otherwise the series of demonstrations would recede without end and could never yi"
+      },
+      "type": "foundation",
+      "rationale": "Compound syllogisms are traced back to self-evident premises to avoid an endless regress of acquisition. Bidāya states the same dependence of discursive knowledge on immediate cognition.",
+      "caution": "Link to the foundation of the proof chain, not merely to the shared word “knowledge”.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the Book V Arabic–English continuation with the paired philosophical passage, 2026-11-10. This is not an authorial cross-reference."
+    },
+    {
+      "id": "ct-m-v-33-n-xi-09-v",
+      "from": {
+        "unit": "M-V-33",
+        "language": "english",
+        "quote": "A researcher may be unable to establish the proposition sought directly and may devise an indirect approach. One seeks a proof invalidating its contradictory in order to establish the propos"
+      },
+      "to": {
+        "unit": "N-XI-09",
+        "language": "english",
+        "quote": "It is therefore the first proposition to which assent attaches, and all theoretical and self-evident knowledge ultimately rests upon it in an exceptive syllogism through which the knowledge "
+      },
+      "type": "foundation",
+      "rationale": "Muẓaffar’s reductio establishes the target by falsifying its contradictory because contradictories cannot both be false. Nihāya names their joint truth/joint falsity exclusion the first principle and describes the exceptive syllogism completing knowledge.",
+      "caution": "The link concerns the logical foundation of reductio and certainty; it does not conflate reductio with simple immediate inference.",
+      "reviewStatus": "passages-read",
+      "provenance": "Editorial comparison of the Book V Arabic–English continuation with the paired philosophical passage, 2026-11-10. This is not an authorial cross-reference."
     }
   ],
   "terms": [
@@ -491,6 +653,13 @@
           "quote": "The well-known position of the philosophers is that these quiddities which exist externally and upon which their effects follow have another existence in which those very external effects do",
           "role": "Reviewed discussion",
           "note": "Definition and developed replies to objections"
+        },
+        {
+          "unit": "M-V-40",
+          "language": "english",
+          "quote": "4. In support of mental existence they argued: “We undoubtedly make affirmative judgments about some impossible things, as when we judge that the conjunction of contradictories differs from ",
+          "role": "Reviewed discussion",
+          "note": "Exercise asking the reader to formalize the proof from affirmative judgments of impossibles."
         }
       ]
     },
@@ -1058,6 +1227,374 @@
         }
       ],
       "scopeNote": "The dictionary keeps these senses explicit. Word occurrences under this umbrella are not assertions that they all mean the same thing."
+    },
+    {
+      "id": "syllogism",
+      "label": "Syllogism",
+      "arabic": "القياس",
+      "transliteration": "qiyās",
+      "definition": "An argument composed of propositions such that accepting them entails another proposition by virtue of their composition. In this logical sense qiyās is distinct from juristic analogy.",
+      "category": "Argument and proof",
+      "aliases": [
+        "syllogism",
+        "syllogisms",
+        "قياس"
+      ],
+      "scopeNote": "Word occurrences elsewhere must be read in context; this entry’s logical sense does not establish a philosophical cross-reference.",
+      "discussions": [
+        {
+          "unit": "M-V-02",
+          "language": "english",
+          "quote": "**1. Syllogism: its definition.** They define syllogism as “a discourse composed of propositions which, whenever conceded, entails in itself another discourse.”",
+          "role": "Reviewed logical discussion",
+          "note": "Definition and conditions in the Book V text."
+        }
+      ]
+    },
+    {
+      "id": "conjunctive-syllogism",
+      "label": "Conjunctive syllogism",
+      "arabic": "القياس الاقتراني",
+      "transliteration": "al-qiyās al-iqtirānī",
+      "definition": "A syllogism in which neither the conclusion nor its contradictory is expressly given as a whole in the premises. Its premises may be categorical or conditional.",
+      "category": "Argument and proof",
+      "aliases": [
+        "conjunctive syllogism",
+        "اقتراني"
+      ],
+      "scopeNote": "Word occurrences elsewhere must be read in context; this entry’s logical sense does not establish a philosophical cross-reference.",
+      "discussions": [
+        {
+          "unit": "M-V-04",
+          "language": "english",
+          "quote": "**Second, in respect of its form:** differences of arrangement are considered apart from the character of the matter. The present book investigates syllogism in this respect. It divides into",
+          "role": "Reviewed logical discussion",
+          "note": "Definition and conditions in the Book V text."
+        }
+      ]
+    },
+    {
+      "id": "categorical-syllogism",
+      "label": "Categorical syllogism",
+      "arabic": "القياس الحملي",
+      "transliteration": "al-qiyās al-ḥamlī",
+      "definition": "A conjunctive syllogism composed of categorical propositions, with minor, major and middle terms.",
+      "category": "Argument and proof",
+      "aliases": [
+        "categorical syllogism",
+        "الاقتراني الحملي"
+      ],
+      "scopeNote": "Word occurrences elsewhere must be read in context; this entry’s logical sense does not establish a philosophical cross-reference.",
+      "discussions": [
+        {
+          "unit": "M-V-06",
+          "language": "english",
+          "quote": "**Categorical conjunctive syllogism: its terms.** A conjunctive syllogism must contain two premises so that they yield the proposition sought. Those premises must also contain three terms: a",
+          "role": "Reviewed logical discussion",
+          "note": "Definition and conditions in the Book V text."
+        }
+      ]
+    },
+    {
+      "id": "conditional-syllogism",
+      "label": "Conditional syllogism",
+      "arabic": "القياس الشرطي",
+      "transliteration": "al-qiyās al-sharṭī",
+      "definition": "A syllogism involving conditional propositions; Muẓaffar distinguishes several kinds according to how their components are connected.",
+      "category": "Argument and proof",
+      "aliases": [
+        "conditional syllogism",
+        "الاقتراني الشرطي"
+      ],
+      "scopeNote": "Word occurrences elsewhere must be read in context; this entry’s logical sense does not establish a philosophical cross-reference.",
+      "discussions": [
+        {
+          "unit": "M-V-19",
+          "language": "english",
+          "quote": "**Conditional conjunctive syllogism: its definition and terms.** The meaning and terms of categorical conjunctive syllogism have already been explained. Conditional conjunctive syllogism dif",
+          "role": "Reviewed logical discussion",
+          "note": "Definition and conditions in the Book V text."
+        }
+      ]
+    },
+    {
+      "id": "exceptional-syllogism",
+      "label": "Exceptional syllogism",
+      "arabic": "القياس الاستثنائي",
+      "transliteration": "al-qiyās al-istithnāʾī",
+      "definition": "A syllogism whose conditional premise explicitly contains the conclusion or its contradictory, completed by an asserting or denying premise. The English label “exceptive syllogism” is also used in the philosophical books.",
+      "category": "Argument and proof",
+      "aliases": [
+        "exceptional syllogism",
+        "exceptive syllogism",
+        "استثنائي"
+      ],
+      "scopeNote": "Word occurrences elsewhere must be read in context; this entry’s logical sense does not establish a philosophical cross-reference.",
+      "discussions": [
+        {
+          "unit": "M-V-27",
+          "language": "english",
+          "quote": "**Exceptional syllogism: its definition and composition.** This syllogism and its definition were mentioned earlier. It belongs to the complete syllogisms: those whose production of a conclu",
+          "role": "Reviewed logical discussion",
+          "note": "Definition and conditions in the Book V text."
+        }
+      ]
+    },
+    {
+      "id": "syllogistic-figure",
+      "label": "Syllogistic figure",
+      "arabic": "الشكل",
+      "transliteration": "shakl",
+      "definition": "The arrangement of the middle term in relation to the two extremes in the premises. Muẓaffar distinguishes four categorical figures.",
+      "category": "Argument and proof",
+      "aliases": [
+        "four figures",
+        "first figure",
+        "second figure",
+        "third figure",
+        "fourth figure",
+        "الأشكال",
+        "الشكل"
+      ],
+      "scopeNote": "Word occurrences elsewhere must be read in context; this entry’s logical sense does not establish a philosophical cross-reference.",
+      "discussions": [
+        {
+          "unit": "M-V-08",
+          "language": "english",
+          "quote": "**The four figures.** We said that a conjunctive syllogism must have three terms: middle, minor, and major. We now add that the middle’s position relative to the two extremes differs between",
+          "role": "Reviewed logical discussion",
+          "note": "Definition and conditions in the Book V text."
+        }
+      ]
+    },
+    {
+      "id": "syllogistic-mood",
+      "label": "Syllogistic mood",
+      "arabic": "الضرب",
+      "transliteration": "ḍarb",
+      "definition": "A combination of premise quantity and quality within a syllogistic figure. Only some moods are productive under the author’s conditions.",
+      "category": "Argument and proof",
+      "aliases": [
+        "moods",
+        "productive mood",
+        "ضروب",
+        "الضرب"
+      ],
+      "scopeNote": "Word occurrences elsewhere must be read in context; this entry’s logical sense does not establish a philosophical cross-reference.",
+      "discussions": [
+        {
+          "unit": "M-V-09",
+          "language": "english",
+          "quote": "**Its moods.** Each premise of a syllogism, taken by itself, may be any one of the four quantified propositions. Pairing the four possibilities for the minor with the four for the major give",
+          "role": "Reviewed logical discussion",
+          "note": "Definition and conditions in the Book V text."
+        }
+      ]
+    },
+    {
+      "id": "middle-term",
+      "label": "Middle term",
+      "arabic": "الحد الأوسط",
+      "transliteration": "al-ḥadd al-awsaṭ",
+      "definition": "The term repeated in the two premises that connects the minor and major terms. Its meaning, not merely its written word, must recur.",
+      "category": "Argument and proof",
+      "aliases": [
+        "middle term",
+        "الحد الأوسط",
+        "الاوسط"
+      ],
+      "scopeNote": "Word occurrences elsewhere must be read in context; this entry’s logical sense does not establish a philosophical cross-reference.",
+      "discussions": [
+        {
+          "unit": "M-V-07",
+          "language": "english",
+          "quote": "**1. The middle term must recur.** The very same term must be stated in the minor and major premises, without a difference. Otherwise it would not be a repeated middle term, and no connectio",
+          "role": "Reviewed logical discussion",
+          "note": "Definition and conditions in the Book V text."
+        }
+      ]
+    },
+    {
+      "id": "compound-syllogism",
+      "label": "Compound syllogism",
+      "arabic": "القياس المركب",
+      "transliteration": "al-qiyās al-murakkab",
+      "definition": "A proof composed of successive syllogisms in which intermediate conclusions supply premises for later steps.",
+      "category": "Argument and proof",
+      "aliases": [
+        "compound syllogism",
+        "القياس المركب",
+        "القياسات المركبة"
+      ],
+      "scopeNote": "Word occurrences elsewhere must be read in context; this entry’s logical sense does not establish a philosophical cross-reference.",
+      "discussions": [
+        {
+          "unit": "M-V-32",
+          "language": "english",
+          "quote": "**Compound syllogisms: preliminary explanation and definition.** To establish the proposition sought, analysis must eventually reach self-evident premises whose knowledge requires no acquisi",
+          "role": "Reviewed logical discussion",
+          "note": "Definition and conditions in the Book V text."
+        }
+      ]
+    },
+    {
+      "id": "reductio",
+      "label": "Reductio",
+      "arabic": "قياس الخلف",
+      "transliteration": "qiyās al-khalf",
+      "definition": "An indirect proof establishing the desired proposition by showing that its contradictory leads to a contradiction. Muẓaffar analyzes its compound syllogistic structure.",
+      "category": "Argument and proof",
+      "aliases": [
+        "reductio",
+        "indirect proof",
+        "قياس الخلف"
+      ],
+      "scopeNote": "Word occurrences elsewhere must be read in context; this entry’s logical sense does not establish a philosophical cross-reference.",
+      "discussions": [
+        {
+          "unit": "M-V-33",
+          "language": "english",
+          "quote": "A researcher may be unable to establish the proposition sought directly and may devise an indirect approach. One seeks a proof invalidating its contradictory in order to establish the propos",
+          "role": "Reviewed logical discussion",
+          "note": "Definition and conditions in the Book V text."
+        }
+      ]
+    },
+    {
+      "id": "proof-by-assumption",
+      "label": "Proof by assumption",
+      "arabic": "دليل الافتراض",
+      "transliteration": "dalīl al-iftirāḍ",
+      "definition": "A traditional proof procedure selecting an instance supplied by a particular premise and using it to establish a syllogistic conclusion.",
+      "category": "Argument and proof",
+      "aliases": [
+        "proof by assumption",
+        "دليل الافتراض"
+      ],
+      "scopeNote": "Word occurrences elsewhere must be read in context; this entry’s logical sense does not establish a philosophical cross-reference.",
+      "discussions": [
+        {
+          "unit": "M-V-15",
+          "language": "english",
+          "quote": "**2. Proof by assumption.** Some moods of the third or second figure that have a particular premise can also be proved by **assumption**. There is no harm in explaining it to illuminate stud",
+          "role": "Reviewed logical discussion",
+          "note": "Definition and conditions in the Book V text."
+        }
+      ]
+    },
+    {
+      "id": "induction",
+      "label": "Induction",
+      "arabic": "الاستقراء",
+      "transliteration": "al-istiqrāʾ",
+      "definition": "An inference concerning a universal through inspection of its particulars. Muẓaffar distinguishes complete enumeration, bare incomplete observation, and claims grounded in causes or further rational conditions.",
+      "category": "Argument and proof",
+      "aliases": [
+        "induction",
+        "inductive",
+        "استقراء"
+      ],
+      "scopeNote": "Word occurrences elsewhere must be read in context; this entry’s logical sense does not establish a philosophical cross-reference.",
+      "discussions": [
+        {
+          "unit": "M-V-35",
+          "language": "english",
+          "quote": "**2. Induction: its definition.** We previously defined induction as **the mind’s examination of a number of particulars, from which it derives a general judgment**. Suppose, for instance, t",
+          "role": "Reviewed logical discussion",
+          "note": "Definition and conditions in the Book V text."
+        }
+      ]
+    },
+    {
+      "id": "complete-induction",
+      "label": "Complete induction",
+      "arabic": "الاستقراء التام",
+      "transliteration": "al-istiqrāʾ al-tāmm",
+      "definition": "An inductive argument in which all the relevant particulars are examined; this differs from drawing a conclusion about unexamined instances.",
+      "category": "Argument and proof",
+      "aliases": [
+        "complete induction",
+        "الاستقراء التام"
+      ],
+      "scopeNote": "Word occurrences elsewhere must be read in context; this entry’s logical sense does not establish a philosophical cross-reference.",
+      "discussions": [
+        {
+          "unit": "M-V-35",
+          "language": "english",
+          "quote": "**The first, complete induction,** yields certainty. It has been said that it returns to the syllogism by division used in demonstrations. For example: every figure is either spherical or po",
+          "role": "Reviewed logical discussion",
+          "note": "Definition and conditions in the Book V text."
+        }
+      ]
+    },
+    {
+      "id": "incomplete-induction",
+      "label": "Incomplete induction",
+      "arabic": "الاستقراء الناقص",
+      "transliteration": "al-istiqrāʾ al-nāqiṣ",
+      "definition": "An inference beyond the observed particulars. Muẓaffar distinguishes bare observation from cases claimed to have additional causal or rational grounds.",
+      "category": "Argument and proof",
+      "aliases": [
+        "incomplete induction",
+        "الاستقراء الناقص"
+      ],
+      "scopeNote": "Word occurrences elsewhere must be read in context; this entry’s logical sense does not establish a philosophical cross-reference.",
+      "discussions": [
+        {
+          "unit": "M-V-36",
+          "language": "english",
+          "quote": "**A difficult objection.** Syllogism is the principal proof of philosophical propositions and yields certainty. Yet it always depends on a universal premise. Its basis must therefore be indu",
+          "role": "Reviewed logical discussion",
+          "note": "Definition and conditions in the Book V text."
+        }
+      ]
+    },
+    {
+      "id": "analogy",
+      "label": "Analogy",
+      "arabic": "التمثيل",
+      "transliteration": "al-tamthīl",
+      "definition": "Passing from a known case to another case through a shared feature. Resemblance alone does not establish certainty; knowing a complete cause changes the proof’s status.",
+      "category": "Argument and proof",
+      "aliases": [
+        "analogy",
+        "analogical",
+        "التمثيل"
+      ],
+      "scopeNote": "Word occurrences elsewhere must be read in context; this entry’s logical sense does not establish a philosophical cross-reference.",
+      "discussions": [
+        {
+          "unit": "M-V-38",
+          "language": "english",
+          "quote": "**3. Analogy: its definition.** This is the third kind of argument, with which the discussions of Book V conclude. As previously defined, analogy is **the mind’s passage from a judgment conc",
+          "role": "Reviewed logical discussion",
+          "note": "Definition and conditions in the Book V text."
+        }
+      ]
+    },
+    {
+      "id": "enthymeme",
+      "label": "Enthymeme",
+      "arabic": "القياس المضمر",
+      "transliteration": "al-qiyās al-muḍmar",
+      "definition": "A syllogistic argument in which a premise or the conclusion is left unstated because it is understood from the context.",
+      "category": "Argument and proof",
+      "aliases": [
+        "enthymeme",
+        "implicit syllogism",
+        "قياس مضمر",
+        "الضمير"
+      ],
+      "scopeNote": "Word occurrences elsewhere must be read in context; this entry’s logical sense does not establish a philosophical cross-reference.",
+      "discussions": [
+        {
+          "unit": "M-V-30",
+          "language": "english",
+          "quote": "**Conclusion: appendices to syllogism.**",
+          "role": "Reviewed logical discussion",
+          "note": "Definition and conditions in the Book V text."
+        }
+      ]
     }
   ]
 }

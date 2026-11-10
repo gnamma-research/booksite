@@ -19,7 +19,7 @@ async function main(type){const browser=await type.launch({headless:true});try{
    await page.locator('[data-link="'+connection.id+'"] a').click();
    await page.locator('#'+connection.to.paragraph).waitFor({state:'visible'});
    assert.equal(new URL(page.url()).hash,'#'+connection.to.paragraph);
-   assert.ok((await page.locator('#'+connection.to.paragraph).textContent()).includes(connection.to.quote));
+   assert.ok((await page.locator('#'+connection.to.paragraph).textContent()).includes(connection.to.quote.replace(/\*\*/g,'').replace(/\*/g,'')));
    assert.match(await page.locator('#study-dock-location').textContent(),/Bidāya/);
    await page.locator('#study-return a').click();
    await page.locator('#passage-M-P-04').waitFor({state:'attached'});
@@ -38,7 +38,7 @@ async function main(type){const browser=await type.launch({headless:true});try{
  await check(type.name()+' sense distinction: circular definition versus causal circularity',async()=>{
    await page.locator('#glossary-open').click();await page.locator('#study-dictionary-search').fill('circular');
    assert.ok(await page.locator('.dictionary-sense').filter({hasText:'Causal circularity'}).count());
-   assert.ok(await page.locator('.dictionary-sense').filter({hasText:'Circularity'}).count()>=2);
+   assert.ok(await page.locator('.dictionary-sense').filter({hasText:/circularity/i}).count()>=2);
    await close(page,'#study-dictionary');
  });
  await check(type.name()+' original versus editorial contents and six Muzaffar books',async()=>{
@@ -90,6 +90,34 @@ async function main(type){const browser=await type.launch({headless:true});try{
    const link=index.links.find(l=>l.to.unit==='N-III-01');await page.goto(base+'nihayat-al-hikma/#'+link.to.paragraph);await ready(page);
    await page.locator('#'+link.to.paragraph).waitFor({state:'visible'});assert.equal(await page.locator('#'+link.to.paragraph).getAttribute('data-paragraph'),'true');
  });
+ await check(type.name()+' complete Muzaffar Book V and recovered classification',async()=>{
+   await page.goto(base+'#passage-M-V-05');await ready(page);
+   assert.equal(Object.keys(index.units).filter(id=>id.startsWith('M-V-')).length,40);
+   assert.equal(await page.locator('#passage-M-V-05 .hikma-classification').count(),2);
+   assert.match(await page.locator('#passage-M-V-05 .english-panel .hikma-classification').textContent(),/Syllogism[\s\S]*Conjunctive[\s\S]*Conditional/);
+   await page.screenshot({path:path.join(out,type.name()+'-classification.png'),fullPage:false});
+ });
+ await check(type.name()+' print range and cancellation preserve reading choices',async()=>{
+   await page.goto(base+'#passage-M-V-28');await ready(page);
+   await page.locator('#reading-view').selectOption('quiet');
+   await page.evaluate(()=>{window.print=()=>{};});
+   const before=page.url();await page.locator('#pdf-print').click();
+   await page.locator('#pdf-scope').selectOption('range');await page.locator('#pdf-from').selectOption('M-V-27');await page.locator('#pdf-to').selectOption('M-V-29');
+   await page.locator('#pdf-language').selectOption('arabic');await page.locator('#pdf-confirm').click();
+   assert.equal(await page.locator('.passage:not([data-pdf-exclude])').count(),3);
+   assert.equal(await page.locator('body').getAttribute('data-pdf-language'),'arabic');
+   assert.equal(await page.locator('.pdf-personal-note').count(),0);
+   await page.evaluate(()=>window.dispatchEvent(new Event('afterprint')));
+   assert.equal(await page.locator('#reading-view').inputValue(),'quiet');assert.equal(page.url(),before);
+   assert.equal(await page.locator('[data-pdf-exclude]').count(),0);
+ });
+ await check(type.name()+' one downloads page exposes all books and nine editions',async()=>{
+   await page.locator('#study-editions-open').click();await page.locator('#library .files li').last().waitFor({state:'attached',timeout:30000});
+   assert.equal(await page.locator('#library .book').count(),3);assert.equal(await page.locator('#library .files li').count(),9);
+   assert.equal(await page.locator('#library a[download]').count(),9);assert.equal(await page.locator('#library .file-actions a:not([download])').count(),9);
+   assert.match(await page.locator('.back').textContent(),/reading position/);await page.screenshot({path:path.join(out,type.name()+'-editions.png'),fullPage:true});
+   await page.locator('.back').click();await ready(page);assert.match(page.url(),/M-V-28/);
+ });
  await check(type.name()+' no uncaught errors',async()=>assert.deepEqual(errors,[]));
  const mobile=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,reducedMotion:'reduce'});const phone=await mobile.newPage();phone.on('pageerror',e=>errors.push(e.message));
  await phone.goto(base+'#passage-M-P-04');await ready(phone);
@@ -102,6 +130,7 @@ async function main(type){const browser=await type.launch({headless:true});try{
    await close(phone,'#study-dictionary');await phone.screenshot({path:path.join(out,type.name()+'-phone-reader.png'),fullPage:false});
    const bounds=await phone.locator('#study-dock').boundingBox();assert.ok(bounds.x>=0&&bounds.x+bounds.width<=392);
  });
+ assert.deepEqual(errors,[]);
  await mobile.close();await context.close();
 }finally{await browser.close();}}
 (async()=>{for(const type of [chromium,webkit])await main(type);console.log('All '+checks+' study-tool checks passed');})().catch(e=>{console.error(e.stack);process.exitCode=1;});

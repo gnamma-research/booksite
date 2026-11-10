@@ -45,3 +45,5 @@ p:last-child{margin-bottom:0}
 .note-url{overflow-wrap:anywhere;color:#777;font-size:7pt}
 .chapter-continuation .chapter-title{display:none}
 .source-summary{break-before:page;font:9pt/1.5 Georgia,serif;color:#666}
+
+.apparatus .authorial-bilingual-note{break-inside:auto}.note-arabic{font:12pt/1.8 AmiriGnamma,serif;margin:2mm 0;text-align:right}.note-arabic p{margin:0 0 2mm}

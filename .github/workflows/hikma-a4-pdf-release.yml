@@ -48,7 +48,8 @@ jobs:
           from pathlib import Path
           from pypdf import PdfReader
           root=Path('texts/al-tabatabai')
-          entries=json.loads((root/'editions/manifest.json').read_text())['files']
+          manifest=json.loads((root/'editions/manifest.json').read_text())
+          entries=manifest['files']
           assert len(entries)==9, f"Expected nine editions; got {len(entries)}"
           for row in entries:
               pdf=root/'editions'/row['filename']
@@ -62,10 +63,12 @@ jobs:
                   assert supplement.is_file(), 'Missing Nihaya apparatus'
                   assert hashlib.sha256(supplement.read_bytes()).hexdigest()==row['supplement_sha256']
               reader=PdfReader(str(pdf))
+              row['pages']=len(reader.pages)
               assert len(reader.pages)>=3, (row['filename'],len(reader.pages))
               sample=' '.join((reader.pages[i].extract_text() or '') for i in range(min(5,len(reader.pages))))
               assert len(sample.strip())>100, f"Unsearchable or blank PDF {row['filename']}"
               print(row['filename'],len(reader.pages),'A4 pages',row['bytes'],'bytes')
+          (root/'editions/manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
           PY
       - uses: actions/upload-artifact@v4
         if: always()
