@@ -3,15 +3,17 @@
   "title": "al-Manṭiq",
   "arabicTitle": "المنطق",
   "author": "Muḥammad Riḍā al-Muẓaffar",
-  "description": "Selected source-anchored Arabic–English working passages from Muẓaffar's six-book logic; includes Book IV simple and compound modalities, while much of the original and all Books V and VI remain unavailable in the local bilingual reader.",
+  "description": "101 selected source-anchored Arabic–English working passages from Muẓaffar’s six-book logic. The continuation covers Book IV chapter II through its conclusion and the Book V preface; earlier omissions, most of Book V and all of Book VI remain.",
   "status": "working-translation",
   "editorialStatus": {
     "translationComplete": false,
-    "translatedSection": "Intro 11, Book I 11, Book II 17, Book III 14, Book IV 25 selected source-paired readings to printed p.159; Books V and VI have no bilingual corpus.",
-    "translatedPassages": 78,
-    "sourceBasis": "1402 AH Dār al-Taʿāruf Rafed searchable Arabic; the separately identified 1968 institutional scan remains to be independently collated.",
-    "englishComparator": "Carney's 75-page English PDF supplied by the user ends without the complete Book III section on definitions. English here is independently translated from Arabic.",
-    "editionNotice": "78 selected Arabic–English working readings, now through end-of-first-chapter Book IV propositions and exercises (printed p.159); closing schematic chart not independently transcribed. The remaining Book IV logical laws and all Books V–VI are untranslated."
+    "translatedSection": "Introduction 11, Book I 11, Book II 17, Book III 14, Book IV 47, Book V 1: 101 paired working units. New continuous coverage follows Rafed displayed pp.162–195 and the Book V preface at pp.198–199. Earlier gaps and untranscribed charts remain; the rest of Book V and all of VI are absent.",
+    "translatedPassages": 101,
+    "sourceBasis": "Dār al-Taʿāruf 1402 AH searchable Arabic presented by Rafed. Targeted table/final-example checks in M-C-46–47 use the independent 1968 Najaf facsimile; the full text has not been independently collated.",
+    "englishComparator": "The user-provided 75-page English PDF by Carney is a partial, noncontinuous comparator; its sampled final pages cover induction and analogy through Book V. It does not end before Book III. New English here is independently rendered from the Arabic, not reproduced from that comparator.",
+    "editionNotice": "101 selected Arabic–English working units, including 47 in Book IV and the opening of Book V. The new 23-unit continuation includes all prose and exercises in displayed pp.162–195 and 198–199, the p.169 square, and an explicitly reconstructed English alignment of the defective digital p.193 table. Earlier summary-chart omissions and other selection gaps remain. Targeted 1968 table and final-example checks are documented in M-C-46–47; no complete facsimile collation is claimed.",
+    "paginationNote": "New locators identify the numbered page containers in Rafed’s digital presentation. They are not independently verified physical page numbers in the 1968 scan. Inherited page ranges may differ; M-C-25 is corrected from inherited p.159 to displayed p.160.",
+    "continuationNextLocus": "Book V, definition of syllogism, Rafed displayed p.200; next unit M-V-02."
   },
   "sources": [
     {
@@ -29,7 +31,7 @@
     {
       "id": "carney",
       "title": "al-Manṭiq: Logic, English translation by Shaykh ʿAbdul-Ḥakīm Carney",
-      "description": "75-page user-provided comparator, not republished. It does not cover the translated chapter on definition."
+      "description": "75-page user-provided partial English comparator, not republished. Its final substantive pages cover induction and analogy through Book V; the earlier assertion that it ended before Book III was incorrect. Continuous coverage of the whole six-book work is not established."
     }
   ],
   "stages": [
@@ -80,6 +82,13 @@
       "bookNumber": 4,
       "title": "Book IV · Propositions and Their Properties",
       "arabicTitle": "الباب الرابع — القضايا وأحكامها"
+    },
+    {
+      "id": "V",
+      "number": 5,
+      "bookNumber": 5,
+      "title": "Book V · Argument and Inference",
+      "arabicTitle": "الباب الخامس — مباحث الاستدلال"
     }
   ],
   "units": [
@@ -1817,13 +1826,709 @@
         {
           "type": "Source status",
           "text": "Working original Arabic with all four end-of-chapter exercise questions, including the five lettered subitems, copied from 1402 digitally presented pp.159. The closing summary is an image in this edition and is not part of this textual unit; 1968 scanned print and transmitted attribution in question 4 not independently verified."
+        },
+        {
+          "type": "Pagination correction · Stage VIII",
+          "text": "This exercise text is under Rafed’s displayed p.160. The inherited p.159 locator is corrected. The earlier summary chart remains an explicit omission; this pagination repair does not add a facsimile transcription."
         }
       ],
       "status": "working-translation",
       "source": {
         "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH authorial Arabic digital text; normalized, not independently image-collated",
-        "page": "159",
-        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
+        "page": "160",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=160&type=c_fbook",
+        "paginationBasis": "Rafed displayed page label; replaces inherited p.159, not facsimile-verified pagination"
+      }
+    },
+    {
+      "id": "M-C-26",
+      "stage": "C",
+      "chapter": 26,
+      "title": "Why relations between propositions are needed",
+      "arabicTitle": "في أحكام القضايا أو النسب بينها",
+      "arabic": "الفَصْلُ الثاني\n\nفي أحكام القضايا أو النسب بينها\n\nتمهيد :\n\nكثيرا ما يعاني فيلتجيء الباحث مشقة في البرهان على مطلوبه مباشرة بل قد يمتنع عليه ذلك احيانا فيلتجيء الى البرهان على قضية أخري لها نسبة مع القضية المطلوبة ليقارنها بها : فقد يحصل له من العلم بصدق القضية المبرهن عليها العلم بكذب القضية المطلوبة أو بالعكس. وذلك اذا كان هناك تلازم بين صدق احداهما وكذب الاخري. وقد يحصل له من العلم بصدق القضية المبرهن عليها العلم بصدق القضية المطلوبة أو من العلم بكذب الاولي العلم بكذب الثانية. وذلك اذا كان صدق الاولي يستلزم صدق الثانية أو كان كذبها يستلزم كذبها.\n\nفلا بد للمنطقي قبل الشروع في مباحث الاستدلال وبعد إ لمامه بجملة من القضايا أن يعرف النسب بينها حتي يستطيع ان يبرهن على مطلوبه أحيانا من طريق البرهنة على قضية أخري لها نسبتها مع القضية المطلوبة فينتقل ذهنه من القضية المبرهن على صدقها او كذبها الى صدق أو كذب القضية التي يحاول تحصيل العلم بها.\n\nوالمباحث التي تعريف بها النسب بين القضايا هي مباحث التناقض والعكس المستوي وعكس النقيض وملحقاتها. وتسمي (احكام القضايا). ونحن نشرع ان شاء الله تعالي في هذه المباحث على هذا الترتيب المتقدم.",
+      "english": "**Chapter Two: The rules governing propositions, or the relations between them**\n\n**Introduction.** An investigator frequently encounters difficulty in proving the proposition sought directly; at times this may even be impossible. He therefore turns to proving another proposition that bears a relation to the proposition sought, so that he can compare the two. Knowledge that the proved proposition is true may give him knowledge that the proposition sought is false, or conversely. This happens when the truth of either necessarily accompanies the falsity of the other. Alternatively, knowledge that the proved proposition is true may give him knowledge that the proposition sought is true; or knowledge that the first is false may give him knowledge that the second is false. This happens when the first proposition's truth entails the second's truth, or its falsity entails the other's falsity.\n\nBefore beginning the study of inference, therefore, and after becoming acquainted with a number of propositions, the student of logic must know the relations between them. He can then sometimes prove what he seeks by proving another proposition related to it, and his mind can pass from the proposition whose truth or falsity has been demonstrated to the truth or falsity of the proposition about which he is seeking knowledge.\n\nThe investigations through which the relations between propositions are known are those of contradiction, simple conversion, contraposition, and their supplementary topics. These are called “the rules governing propositions.” God willing, we shall now begin these investigations in the order just given.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete consecutive authorial prose in this logical division, transcribed from Rafed displayed page labels 162–162; Arabic letter-shape normalization only (Persian kaf/ya to Arabic equivalents), with source spelling anomalies retained. This displayed-page locator is verified from HTML page containers and is not silently identified with inherited printed-page metadata. English is an independent working translation, not a copied published translation."
+        },
+        {
+          "type": "Digital-source anomaly",
+          "text": "Rafed displayed p162 inserts فيلتجيء between يعاني and الباحث in the opening sentence. The Arabic here preserves it; English follows the intelligible clause and records the extra word as unresolved digital corruption. The source also has minor spacing/spelling anomalies; no independent 1968 facsimile comparison is claimed."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "162",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=162&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-27",
+      "stage": "C",
+      "chapter": 27,
+      "title": "Contradiction: need, definition, and the force of “in itself”",
+      "arabicTitle": "التناقض والحاجة إليه وتعريفه",
+      "arabic": "التناقض\n\nالحاجة الى هذا البحث والتعريف به\n\nقلنا في التمهيد : ان كثيرا ما تمس الحاجة الى الاستدلال على قضية ليست هي نفس القضية المطلوبة. ولكن العلم بكذبها يلزمه العلم بصدق القضية المطلوبة او بالعكس عندما يكون صدق احداهما يلزم كذب الاخري.\n\nوالقضيتان اللتان لهما هذه الصفة هما القضيتان المتناقضتان فاذا أردت مثلا أن تبرهن على صدق القضية (الروح موجودة) مع فرض انك لا تتمكن على ذلك مباشرة فيكفي ان تبرهن على كذب نقيضها وهو (الروح ليست موجودة) فاذا علمت كذب هذا النقيض لا بد أن تعلم صدق الاولي لان النقيضين لا يكذبان معا. واذا برهنت على صدق النقيض لا بد أن تعلم صدق لان النقيضين لا يكذبان معا. واذا برهنت على صدق النقيض لا بد ان تعلم كذب الاولي لان النقيضين لا يصدقان معا.\n\nوربما يظن أن معرفة نقيض القضية أمر ظاهر كمعرفة نقائض المفردات كالانسان واللانسان التي يكفي فيها الاختلاف بالايجاب والسلب. ولكن الامر ليس بهذه السهولة اذ يجوز أن تكون الموجبة والسالبة صادقتين معا مثل : بعض الحيوان انسان وبعض الحيوان ليس بانسان. ويجوز أن تكونا كاذبتين معا مثل : كل حيوان انسان ولا شيء من الحيوان بانسان.\n\nوعليه لا غنى للباحث عن الرجوع الى قواعد التناقض المذكورة في علم المنطق لتشخيص نقيض كل قضية\n\nتعريف التناقض\n\nقد عرفت فيما سبق المقصود من التناقض الذي هو أحد أقسام التقابل ولنضعه هنا بعبارة جامعة فنية في خصوص القضايا فنقول (تناقض القضايا :\n\nاختلاف في القضيتين يقتضي لذاته أن تكون احداهما صادقة والاخري كاذبة).\n\nولا بد من قيد (لذاته) في التعريف لانه ربما يقتضي اختلاف القضيتين تخالفهما في الصدق والكذب ولكن لا لذات الاختلاف بل لامر آخر مثل : كل انسان حويان ولا شيسء من الانسان بحيوان فانه لما كان الموضوع أخص من المحمول صدقت احدي الكليتين وكذبت الاخري. أما لو كان الموضوع أعم من المحمول لكذبا معا نحو كل حيوان انسان ولا شيء من الحيوان بانسان كما تقدم.\n\nونعني بالاختلاف الذي يقتضي تخالفهما في الصدق هو الاختلاف الذي يقتضي ذلك في أية مادة كانت القضيتان ومهما كانت النسبة بين الموضوع والمحمول كالاختلاف بين الموجبة الكلية والسالبة الجزئية.",
+      "english": "**Contradiction**\n\n**Why this investigation is needed.** We said in the introduction that it is often necessary to establish a proposition other than the proposition sought. Knowledge of its falsity, however, entails knowledge of the truth of the proposition sought, or conversely, when the truth of either entails the falsity of the other.\n\nTwo propositions with this property are contradictory propositions. Suppose, for example, that you wish to demonstrate the truth of “The soul exists,” but cannot do so directly. It is sufficient to demonstrate the falsity of its contradictory, “The soul does not exist.” Once you know that this contradictory is false, you must know that the first proposition is true, because contradictories cannot both be false. If you demonstrate the truth of the contradictory, you must know that the first proposition is false, because contradictories cannot both be true. [The digital Arabic repeats an incomplete sentence here; see the textual note.]\n\nOne might suppose that identifying a proposition's contradictory is obvious, like identifying the contradictories of simple terms, such as human and nonhuman, where a difference of affirmation and negation suffices. The matter is not so simple, however. An affirmative and a negative can both be true: “Some animals are human” and “Some animals are not human.” They can also both be false: “Every animal is human” and “No animal is human.”\n\nAccordingly, to identify the contradictory of each proposition, the investigator cannot dispense with the rules of contradiction stated in logic.\n\n**Definition of contradiction.** You have already learned what contradiction means as one of the kinds of opposition. Let us now express it in a comprehensive technical formula specifically concerning propositions: “Contradiction between propositions is a difference between two propositions that, in itself, requires one of them to be true and the other false.”\n\nThe qualification “in itself” is indispensable. A difference between two propositions may require them to differ in truth and falsity, but because of something else, rather than because of that difference itself. Consider “Every human is an animal” and “No human is an animal.” Because the subject is narrower than the predicate, one of these two universal propositions is true and the other false. If the subject were broader than the predicate, however, both would be false: “Every animal is human” and “No animal is human,” as above.\n\nBy the difference that requires them to differ in truth, we mean a difference that requires this whatever the propositions' matter may be, and whatever the relation between subject and predicate: for example, the difference between a universal affirmative and a particular negative.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete consecutive authorial prose in this logical division, transcribed from Rafed displayed page labels 163–164; Arabic letter-shape normalization only (Persian kaf/ya to Arabic equivalents), with source spelling anomalies retained. This displayed-page locator is verified from HTML page containers and is not silently identified with inherited printed-page metadata. English is an independent working translation, not a copied published translation."
+        },
+        {
+          "type": "Digital-source anomaly",
+          "text": "Displayed p163 repeats the incomplete sequence وإذا برهنت على صدق النقيض لا بد أن تعلم صدق لأن النقيضين لا يكذبان معا between the two complete correct sentences. Arabic preserves this duplication; English translates the complete reasoning once and explicitly flags the intrusion. Displayed p164 has حويان and شيسء, contextually read in English as animal and thing; these are not silently emended in Arabic."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "163–164",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=163&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-28",
+      "stage": "C",
+      "chapter": 28,
+      "title": "The eight unities and unity of predication",
+      "arabicTitle": "شروط التناقض والوحدات الثمان",
+      "arabic": "شروط التناقض\n\nلا بد لتحقق التناقض بين القضيتين من اتحاد هما في أمور ثمانية واختلافهما في أمور ثلاثة :\n\nالوحدات الثمان :\n\nتسمي الامور التي يجب اتحاد القضيتين المتناقضتين فيها (الوحدات الثمان) وهي ما يأتي :\n\n١ ـ (الموضوع) فلو اختلفا فيه لم يتناقضا مثل : العلم نافع الجهل ليس بنافع.\n\n٢ ـ (المحمول) فلو اختلفا فيه لم يتناقضا مثل : العلم نافع العلم ليس بضار.\n\n٣ ـ (الزمان) فلا تناقض بين «الشمس مشرقة» أي في النهار وبين «الشمس ليست بمشرقة» أي في الليل.\n\n٤ ـ (المكان) فلا تناقض بين «الارض مخصبة» أي في الريف وبين «الارض ليست بمخصبة» أي في البادية.\n\n٥ ـ (القوة والفعل) أي لا بد من اتحاد القضيتين في القوة والفعل فلا تناقض بين «محمد ميت» أي بالقوة وبين «محمد ليس بميت» أي بالفعل.\n\n٦ ـ (الكل والجزء) فلا تناقض بين «العراق مخصب» أي بعضه وبين «العراق ليس بمخصب» أي كله.\n\n٧ ـ (الشرط) فلا تناقض بين «الطالب ناجح آخر السنة» أي ان اجتهد وبين «الطالب غير ناجح» أي اذا لم يجتهد.\n\n٨ ـ (الاضافة) فلا تناقض بين «الاربعة نصف» أي بالاضافة الى الثمانية وبين «الاربعة ليست بنصف» أي بالاضافة الى العشرة.\n\nتنبيه\n\nهذه الوحدات الثمان هي المشهورة بين المناطقة. وبعضهم يضيف اليها (وحدة الحمل) من ناحية كونه حملا أوليا أو حملا شايعا. وهذا الشرط لازم فيجب لتناقض القضيتين أن يتحدا في الحمل فلو كان الحمل في إحداهما أوليا وفي الاخري شايعا فانه يجوز أن يصدقا معا مثل قولهم (الجزئي جزئي) أي بالحمل الاولي (الجزئي ليس بجزئي) أي بالحمل الشايع لان مفهوم الجزئي من مصاديق مفهوم الكلي فانه يصدق على كثيرين.",
+      "english": "**Conditions of contradiction**\n\nFor two propositions to contradict one another, they must agree in eight respects and differ in three.\n\n**The eight unities.** The respects in which two contradictory propositions must agree are called “the eight unities.” They are as follows.\n\n1. **Subject.** If the subjects differ, there is no contradiction: “Knowledge is beneficial”; “Ignorance is not beneficial.”\n\n2. **Predicate.** If the predicates differ, there is no contradiction: “Knowledge is beneficial”; “Knowledge is not harmful.”\n\n3. **Time.** There is no contradiction between “The sun is shining,” meaning during the day, and “The sun is not shining,” meaning during the night.\n\n4. **Place.** There is no contradiction between “The land is fertile,” meaning in the cultivated countryside, and “The land is not fertile,” meaning in the desert.\n\n5. **Potentiality and actuality.** The two propositions must agree in potentiality and actuality. There is no contradiction between “Muḥammad is dead,” meaning potentially, and “Muḥammad is not dead,” meaning actually.\n\n6. **Whole and part.** There is no contradiction between “Iraq is fertile,” meaning part of it, and “Iraq is not fertile,” meaning the whole of it.\n\n7. **Condition.** There is no contradiction between “The student will pass at the end of the year,” meaning if he works diligently, and “The student will not pass,” meaning if he does not work diligently.\n\n8. **Relation.** There is no contradiction between “Four is a half,” meaning in relation to eight, and “Four is not a half,” meaning in relation to ten.\n\n**Notice.** These eight unities are those commonly recognized among logicians. Some add “unity of predication,” with regard to its being primary predication or common predication. This condition is necessary: contradictory propositions must agree in their predication. If predication is primary in one and common in the other, both can be true. For example, they say: “The particular is particular,” by primary predication, and “The particular is not particular,” by common predication. This is because the concept of the particular is an instance of the concept of the universal: it is predicable of many.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete consecutive authorial prose in this logical division, transcribed from Rafed displayed page labels 164–165; Arabic letter-shape normalization only (Persian kaf/ya to Arabic equivalents), with source spelling anomalies retained. This displayed-page locator is verified from HTML page containers and is not silently identified with inherited printed-page metadata. English is an independent working translation, not a copied published translation."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "164–165",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=164&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-29",
+      "stage": "C",
+      "chapter": 29,
+      "title": "Differences in quantity, quality, and modality",
+      "arabicTitle": "الاختلاف بالكم والكيف والجهة",
+      "arabic": "الاختلاف\n\nقلنا : لا بد من اختلاف القضيتين المتناقضتين في أمور ثلاثة. وهي (الكم والكيف والجهة).\n\nالاختلاف بالكم والكيف :\n\nأما الاختلاف بالكم والكيف فمعناه ان احداهما اذا كانت موجبة كانت الاخري سالبة واذا كانت كلية كانت الثانية جزئية. وعليه.\n\nالموجبة الكلية ... نقيض .... السالبة الجزئية\n\nالموجبة الجزئية ... نقيض .... السالبة الكلية\n\nلانهما لو كانتا موجبتين أو سالبتين لجاز أن يصدقا أو يكذبا معا. ولو كانت كليتين لجاز ان يكذبا معا كما لو كان الموضع أعم على ما مثلنا سابقا. ولو كانتا جزئيتين لجاز أن يصدقا معا كما لو كان الموضوع أيضا أعم. نحو : بعض المعدن حديد. وبعض المعدن ليس بحديد.\n\nالاختلاف بالجهة\n\nأما الاختلاف بالجهة فأمر يقتضيه طبع التناقض كالاختلاف بالايجاب والسلب لأن نقيض كل شيء رفعه فكما يرفع الايجاب بالسلب والسلب بالايجاب فلا بد من رفع الجهة بجهة تناقضها.\n\nولكن الجهة التي ترفع جهة أخري قد تكون من احدي الجهات المعرفة فيكون لها نقيض صريح مثل رفع الممكنة العامة بالضرورية وبالعكس لان الامكان هو سلب الضرورة.\n\nوقد لا تكون من الجهات المعروفة التي لها عندنا اسم معروف فلا بد أن نلتمس لها جهة من الجهات المعروفة تلازمها فنطلق عليها اسمها فلا يكون نقيضا صريحا بل لازم النقيض.\n\nمثلا (الدائمة) تناقضها (المطلقة العامة) ولكن لا بالتناقض الصريح بل احداهما لازمة لنقيض الاخري فاذا قلت : «الارض متحركة دائما» فنقيضها الصريح سلب الدوام ولكن سلب الدوام ليس من الجهات المعروفة فنلتمس له جهة لازمة فنقول : لازم عدم الدوام أن سلب التحرك عن الارض حاصل في زمن من الازمنة أي «ان الارض ليست متحركة بالفعل». وهذه مطلقة عامة تكون لازمة لنقيض الدائمة.\n\nواذا قلت : «كل انسان كاتب بالفعل» فنقيضها السريع ان الانسان لم تثبت له لاكتابة كذلك أي بالفعل. ولازم ذلك دوام السلب أي «ان بعض الانسان ليس بكاتب دائما» وهذه دائمة وهي لازمة لنقيض المطلقة العامة.\n\nولا حاجة الى ذكر تفصيل نقائض الموجهات فلتطلب من المطولات ان ارادها الطالب على انه في غني عنها وننصحه ألا يتعب نفسه بتحصيلها فانها قليلة الجدوي.",
+      "english": "**The differences**\n\nWe said that two contradictory propositions must differ in three respects: quantity, quality, and modality.\n\n**Difference in quantity and quality.** This means that if one is affirmative, the other is negative; and if one is universal, the other is particular. Accordingly:\n\nThe contradictory of the universal affirmative is the particular negative.\n\nThe contradictory of the particular affirmative is the universal negative.\n\nIf both were affirmative or both negative, they could both be true or both false. If both were universal, they could both be false, as when the subject is broader than the predicate, in the examples given above. If both were particular, they could both be true, again when the subject is broader: “Some minerals are iron” and “Some minerals are not iron.”\n\n**Difference in modality.** Difference in modality is required by the nature of contradiction, just as difference in affirmation and negation is. The contradictory of anything is its removal. Thus, just as affirmation is removed by negation and negation by affirmation, a modality must be removed by a modality that contradicts it.\n\nThe modality that removes another modality may be one of the recognized modalities, in which case there is an explicit contradictory. General possibility is removed by necessity, and conversely, because possibility is the negation of necessity.\n\nAlternatively, it may not be one of the recognized modalities for which we have a recognized name. We must then seek a recognized modality that necessarily accompanies it and apply that name to it. What we have is not an explicit contradictory, but a necessary concomitant of the contradictory.\n\nFor example, the permanent proposition is contradicted by the general actual proposition, but not by explicit contradiction: each is a necessary concomitant of the other's contradictory. If you say “The earth is always in motion,” its explicit contradictory is the negation of permanence. The negation of permanence, however, is not one of the recognized modalities. We therefore seek a modality necessarily accompanying it and say: the absence of permanence requires that motion be denied of the earth at some time; that is, “The earth is actually not in motion.” This is a general actual proposition, necessarily accompanying the contradictory of the permanent proposition.\n\nIf you say “Every human is actually writing,” its explicit contradictory is that writing is not established of a human in that manner, that is, actually. This requires permanence of negation: “Some humans are always not writing.” This is a permanent proposition, necessarily accompanying the contradictory of the general actual proposition.\n\nThere is no need to detail the contradictories of modal propositions. A student who wants them may consult the more extensive works. He has no need of them, however, and we advise him not to trouble himself with acquiring them, because they are of little benefit.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete consecutive authorial prose in this logical division, transcribed from Rafed displayed page labels 165–167; Arabic letter-shape normalization only (Persian kaf/ya to Arabic equivalents), with source spelling anomalies retained. This displayed-page locator is verified from HTML page containers and is not silently identified with inherited printed-page metadata. English is an independent working translation, not a copied published translation."
+        },
+        {
+          "type": "Digital-source anomaly",
+          "text": "Displayed p166 reads نقيضها السريع and لاكتابة, contextually rendered as its explicit contradictory and writing. Arabic preserves these readings; English retains the logical distinction between the explicit contradictory and its necessarily accompanying recognized modality."
+        },
+        {
+          "type": "Logical framework",
+          "text": "The author’s modality of actuality is technical and should not be reduced to “happening at this instant.” In his example, the negation concerns actual occurrence under the stated scope and is represented by a permanent negative."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "165–167",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=165&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-30",
+      "stage": "C",
+      "chapter": 30,
+      "title": "Subalternation, contrariety, and subcontrariety",
+      "arabicTitle": "التداخل والتضاد والدخول تحت التضاد",
+      "arabic": "من ملحقات التناقض :\n\nالتداخل والتضاد والدخول تحت التضاد\n\nتقدم ان التناقض في المحصورات الاربع يقع بين الموجبه الكلية والسالبة الجزئية وبين الموجبة الجزئية والسالبة الكلية أي بين المختلفتين في الكم والكيف. ويبقي أن تلاحظ النسبة بين البواقي أي بين المختلفتين بالكم فقط أو بالكيف فقط ومعرفة هذه النسب تنفع أيضا في الاستدلال على قضية لمعرفة قضية أخري لها تسيبة معها كما سيأتي.\n\nوعليه نقول : المحصورتان ان اختلفتا كما وكيفا فهما المتناقضتان وقد تقدم التناقض. وان اختلفتا في احدهما فقط فعلي ثلاثة أقسام.\n\n١ ـ (المتداخلتان) وهما المختلفتان في الكم دون الكيف أعني الموجبتين أو السالبتين. وسميتا متداخلتين لدخول احداهما في الاخري لأن الجزئية داخلة في الكلية.\n\nومعني ذلك : ان الكلية اذا صدقت صدقت الجزئية المتحدة معها في الكيف ولا عكس.\n\nولازم ذلك ان الجزئية اذا كذبت كذبت الكلية المتحدة معها في الكيف ولا عكس.\n\nمثلا (كل ذهب معدن) فانها صادقة ولابد أن تصدق معها (بعض الذهب معدن) قطعا.\n\nومثل (بعض الذهب اسود) فانها كاذبة ولا بد أن تكذب معها (كل ذهب اسود).\n\n٢ ـ (المتضادتان) وهما المختلفتان في الكيف دون الكم وكانتا كليتين. وسميتا متضادتين لانهما كالضدين يمتنع صدقهما معا ويجوز أن يكذبا معا.\n\nومعني ذلك أنه اذا صدقت احداهما لا بد أن تكذب الاخري ولا عكس أي لو كذبت احداهما لا يجب أن تصدق الاخري.\n\nفمثلا اذا صدق (كل ذهب معدن) يجب أن يكذب (لا شيء من الذهب بمعدن).\n\nولكن اذا كذب (كل معدن ذهب) لا يجب أن يصدق (لا شيء من المعدن بذهب) بل هذه كاذبة في المثال.\n\n٣ ـ (الداخلتان تحت التضاد) وهما المختلفتان في الكيف دون الكم وكانتا جزئيتين. وانما سميتا داخلتين تحت التضاد لا نهما داخلتان تحت الكليتين كل منهماتحت الكلية المتفقة معها في الكيف من جهة ولا نهما على عكس الضدين في الصدق والكذب أي انهما يمتنع اجتماعهما على الكذب ويجوز أن يصدقا معا.\n\nومعنى ذلك : انه اذا كذبت احداهما لابد أن تصدق الاخري ولا عكس أي انه لو صدقت احداهما لا يجب أن تكذب الاخري.\n\nفمثلا اذا كذب (بعض الذهب اسود) فانه يجب أن يصدق (بعض الذهب ليس بأسود).\n\nولكن اذا صدق (بعض المعدن ذهب) لا يجب أن يكذب (بعض المعدن ليس بذهب) بل هذه صادقة في المثال.\n\nوقد جرت عادة المنطقيين من القديم أن يضعوا لتناسب المحصورات جميعا لأجل توضيحها لوحا على النحو الآتي :\n\n[تفريغ اللوح المصوّر، ص١٦٩]\nأعلى اليمين: كل ب حـ. أعلى اليسار: لا ب حـ. العلاقة: متضادتان.\nأسفل اليمين: ع ب حـ. أسفل اليسار: س ب حـ. العلاقة: داخلتان تحت التضاد.\nالضلعان العموديان: متداخلتان. والقطران: متناقضتان.",
+      "english": "**Supplementary to contradiction: subalternation, contrariety, and subcontrariety**\n\nWe have seen that, among the four quantified propositions, contradiction holds between the universal affirmative and the particular negative, and between the particular affirmative and the universal negative: that is, between propositions differing in both quantity and quality. It remains to consider the relations between the other pairs, which differ only in quantity or only in quality. Knowing these relations is also useful for inferring a proposition from knowledge of another proposition related to it, as will become clear.\n\nThus, if two quantified propositions differ in both quantity and quality, they are contradictories, already discussed. If they differ in only one of these respects, there are three cases.\n\n1. **Subalterns** differ in quantity but not in quality: both are affirmative or both negative. They are called subalterns because one is included in the other: the particular is included in the universal.\n\nThis means that if the universal proposition is true, the particular proposition agreeing with it in quality is true; the converse does not hold. It follows that if the particular proposition is false, the universal proposition agreeing with it in quality is false; the converse does not hold.\n\nFor example, “Every piece of gold is a mineral” is true, and “Some gold is a mineral” must certainly be true with it. Again, “Some gold is black” is false, and “Every piece of gold is black” must be false with it.\n\n2. **Contraries** differ in quality but not in quantity and are both universal. They are called contraries because, like contrary things, they cannot both be true but can both be false.\n\nThis means that if one is true, the other must be false; the converse does not hold. If one is false, the other need not be true. For example, if “Every piece of gold is a mineral” is true, “No gold is a mineral” must be false. If “Every mineral is gold” is false, however, “No mineral is gold” need not be true: in this example it is false.\n\n3. **Subcontraries** differ in quality but not in quantity and are both particular. They are called subcontraries, first, because they fall under the two universal propositions, each under the universal agreeing with it in quality; and second, because their relation in truth and falsity is the reverse of that of contraries: they cannot both be false but can both be true.\n\nThis means that if one is false, the other must be true; the converse does not hold. If one is true, the other need not be false. For example, if “Some gold is black” is false, “Some gold is not black” must be true. If “Some minerals are gold” is true, however, “Some minerals are not gold” need not be false: in this example it is true.\n\nSince ancient times, logicians have customarily illustrated all the relations between the quantified propositions in the following diagram.\n\n**Transcription of the source diagram.** Upper right: “Every B is C”; upper left: “No B is C.” These are contraries. Lower right: “Some B is C”; lower left: “Some B is not C.” These are subcontraries. Each vertical pair is a pair of subalterns. Each diagonal pair is a pair of contradictories.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete consecutive authorial prose in this logical division, transcribed from Rafed displayed page labels 167–169; Arabic letter-shape normalization only (Persian kaf/ya to Arabic equivalents), with source spelling anomalies retained. This displayed-page locator is verified from HTML page containers and is not silently identified with inherited printed-page metadata. English is an independent working translation, not a copied published translation."
+        },
+        {
+          "type": "Source figure",
+          "text": "The square on Rafed displayed p169 (image014.gif) was visually inspected and its four formulas and six relations fully transcribed here. This is a transcription of the digital image, not independent collation of the 1968 facsimile."
+        },
+        {
+          "type": "Logical framework",
+          "text": "The traditional square as presented assumes the subject domains required by its existential commitments. The text’s subalternation and subcontrariety should not be reinterpreted as unrestricted laws of modern empty-domain class logic. Authorial examples about gold are retained as examples, not independently verified scientific claims."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "167–169",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=167&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "sourceDiagram": {
+        "url": "https://lib.rafed.net/Books/1604_almanteq/images/image014.gif",
+        "page": "169",
+        "visuallyInspected": true,
+        "nodes": [
+          {
+            "id": "A",
+            "arabic": "كل ب حـ",
+            "english": "Every B is C",
+            "position": "upper-right"
+          },
+          {
+            "id": "E",
+            "arabic": "لا ب حـ",
+            "english": "No B is C",
+            "position": "upper-left"
+          },
+          {
+            "id": "I",
+            "arabic": "ع ب حـ",
+            "english": "Some B is C",
+            "position": "lower-right"
+          },
+          {
+            "id": "O",
+            "arabic": "س ب حـ",
+            "english": "Some B is not C",
+            "position": "lower-left"
+          }
+        ],
+        "relations": [
+          {
+            "from": "A",
+            "to": "E",
+            "arabic": "متضادتان",
+            "english": "contrary"
+          },
+          {
+            "from": "I",
+            "to": "O",
+            "arabic": "داخلتان تحت التضاد",
+            "english": "subcontrary"
+          },
+          {
+            "from": "A",
+            "to": "I",
+            "arabic": "متداخلتان",
+            "english": "subaltern"
+          },
+          {
+            "from": "E",
+            "to": "O",
+            "arabic": "متداخلتان",
+            "english": "subaltern"
+          },
+          {
+            "from": "A",
+            "to": "O",
+            "arabic": "متناقضتان",
+            "english": "contradictory"
+          },
+          {
+            "from": "E",
+            "to": "I",
+            "arabic": "متناقضتان",
+            "english": "contradictory"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M-C-31",
+      "stage": "C",
+      "chapter": 31,
+      "title": "Simple conversion and its conditions",
+      "arabicTitle": "العكس المستوي وشروطه",
+      "arabic": "العكوس\n\nسبق في أول هذا الفصل ان قلنا : ان الباحث قد يحتاج للاستدلال على مطلوبه الى أن يبرهن على قضية اخري لها علاقة مع مطلوبه يستنبط من صدقها صدق القضية المطلوبة للملازمة بينهما في الصدق. وهذه الملازمة واقعة بين كل قضية و(عكسها المستوي) وبينها وبين (عكس نقيضها). فنحن الآن نبحث عن القسمين :\n\nالعكس المستوي\n\nأما العكس المستوي فهو : «تبديل طرفي القضية مع بقاء الكيف والصدق». أي ان القضية المحكوم بصدقها تحول الى قضية تتبع الاولي في الصدق وفي الايجاب والسلب بتبديل طرفي الاولي بأن يجعل موضوع الاولي محمولا في الثانية والمحمول موضوعا أو المقدم تاليا والتالي مقدما.\n\nوتسمي الاولي (الاصل) والثانية (العكس المستوي). فكلمة (العكس) هنا لها اصطلاحان : اصطلاح في نفس التبديل واصطلاح في القضية التي وقع فيها التبديل.\n\nومعنى ان العكس تابع للاصل في الصدق : أن الاصل اذا كان صادقا وجب صدق العكس. ولكن لا يجب أن يتبعه في الكذب فقد يكذب الاصل والعكس صادق. ولازم ذلك ان الاصل لا يتبع عكسه في الصدق ولكن يتبعه في الكذب فاذا كذب العكس كذب الاصل لانه لو صدق الاصل يلزم منه صدق العكس والمفروض كذبه.\n\nفهنا قاعدتان تنفعان في الاستدلال :\n\n١ ـ اذا صدق الاصل صدق عكسه.\n\n٢ ـ اذا كذب العكس كذب اصله.\n\nوهذه القاعدة الثانية متفرعة على الاولي. كما علمت.\n\nشروط العكس\n\nعلمنا ان العكس انما يحصل بشروط ثلاثة : تبديل الطرفين وبقاء الكيف وبقاء الصدق. أما الكم فلا يشترط بقاؤه وانما الواجب بقاء الصدق وهو قد يقتضي بقاء الكم في بعض القضايا وقد يقتضي عدمه في البعض الآخر.\n\nوالمهم فيما يأتي معرفة القضية التي يقتضي بقاء الصدق في عكسها بقاء الكم أو عدم بقائه.\n\nولو تبدل الطرفان وكان الكيف باقيا. ولكن لم يبق الصدق فلا يسمي ذلك عكسا. بل يسمي (انقلابا).",
+      "english": "**Conversions**\n\nAt the beginning of this chapter, we said that an investigator may need to establish a proposition related to the one sought, so as to infer the latter's truth from the former's truth, because they are connected by an entailment in truth. Such entailment holds between a proposition and its simple converse, and between it and its contrapositive. We shall now discuss both kinds.\n\n**Simple conversion.** Simple conversion is “the interchange of a proposition's two terms while preserving quality and truth.” That is, a proposition judged true is transformed into another proposition following the first in truth and in affirmation or negation, by interchanging its two terms: the first proposition's subject becomes the second's predicate, and its predicate the second's subject; or its antecedent becomes the consequent, and its consequent the antecedent.\n\nThe first is called the original proposition, and the second its simple converse. The term “conversion” thus has two technical uses here: the interchange itself, and the proposition in which the interchange has occurred.\n\nTo say that the converse follows the original in truth means that if the original is true, the converse must be true. It need not follow it in falsity: the original may be false while its converse is true. It follows that the original does not follow its converse in truth, but does follow it in falsity. If the converse is false, the original is false, because if the original were true, its converse would have to be true, whereas the converse is assumed false.\n\nThere are thus two rules useful in inference:\n\n1. If the original proposition is true, its converse is true.\n\n2. If the converse is false, its original proposition is false.\n\nThe second rule follows from the first, as you now know.\n\n**Conditions of conversion.** Conversion takes place under three conditions: interchange of the terms, preservation of quality, and preservation of truth. Preservation of quantity is not required. What is required is preservation of truth, which may require quantity to be preserved in some propositions and changed in others.\n\nWhat matters in the following discussion is to identify the propositions for which preserving truth in conversion requires preservation of quantity, and those for which it does not.\n\nIf the terms are interchanged and quality is preserved, but truth is not preserved, this is not called conversion; it is called a mere reversal.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete consecutive authorial prose in this logical division, transcribed from Rafed displayed page labels 170–171; Arabic letter-shape normalization only (Persian kaf/ya to Arabic equivalents), with source spelling anomalies retained. This displayed-page locator is verified from HTML page containers and is not silently identified with inherited printed-page metadata. English is an independent working translation, not a copied published translation."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "170–171",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=170&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-32",
+      "stage": "C",
+      "chapter": 32,
+      "title": "Conversion of universal and particular affirmatives",
+      "arabicTitle": "الموجبتان تنعكسان موجبة جزئية",
+      "arabic": "الموجبتان تنعكسان موجبة جزئية :\n\nأي ان الموجبة الكلية تنعكس موجبة جزئية. والموجبة الجزئية تنعكس كنفسها. فاذا قلت :\n\nكل حـ ب | فعكسها | ع ب حـ\n\nوع حـ ب | فعكسها | ع ب حـ\n\nولا ينعكسان | الى | كل ب حـ\n\nالبرهان :\n\n(١) في الكلية : أن المحمول فيها اما ان يكون أعم من الموضوع أو مساوياله. وعلي التقديرين تصدق الجزئية قطعا لان الموضوع في التقديرين يصدق على بعض افراد المحمول فاذا قلت :\n\nكل ماء مسائل | يصدق | بعض السائل ماء\n\nوكل انسان ناطق | يصدق | بعض الناطق انسان\n\nولكن لا تصدق الكلية على كل تقدير لان الموضوع في التقدير الاول لا يصدق على جميع أفراد المحمول لانه أخص من المحمول فاذا قلت :\n\n(كل سائل ماء) فالقضية كاذبة وهو المطلوب.\n\n(٢) وفي الجزئية : اما أن يكون المحمول أعم مطلقا من الموضوع أو اخص مطلقا او اعم من وجه او مساويا. وعلى بعض هذه التقادير وهو التقدير الاول والثالث لا يصدق العكس موجبة كلية لانه اذا كان المحمول أعم مطلقا أو من وجه فان الموضوع لا يصدق على جميع أفراد المحمول انما يصدق لو كان اخص او مساويا. أما عكسه الى الموجبة الجزئية فانه يصدق على كل تقدير فاذا قلت :\n\nبعض السائل ماء | يصدق | بعض الماء سائل\n\nوبعض الماء سائل | يصدق | بعض السائل ماء\n\nوبعض الطير أبيض | يصدق | بعض الابيض طير\n\nوبعض الانسان ناطق | يصدق | بعض الناطق انسان",
+      "english": "**Both affirmatives convert to a particular affirmative**\n\nThe universal affirmative converts to a particular affirmative, and the particular affirmative converts to one of its own kind. Thus:\n\n“Every C is B” converts to “Some B is C.”\n\n“Some C is B” converts to “Some B is C.”\n\nNeither converts to “Every B is C.”\n\n**Proof.** (1) In the universal proposition, the predicate is either broader than the subject or coextensive with it. In either case the particular converse is certainly true, because in either case the subject is predicable of some instances of the predicate. Thus:\n\n“Every water is liquid” gives the true converse “Some liquid is water.”\n\n“Every human is rational” gives the true converse “Some rational being is human.”\n\nThe universal converse, however, is not true in every case. In the first case, the subject is not predicable of all instances of the predicate, since it is narrower than the predicate. Accordingly, “Every liquid is water” is false, which establishes the point sought.\n\n(2) In the particular proposition, the predicate may be absolutely broader than the subject, absolutely narrower, overlapping it, or coextensive with it. In the first and third of these cases, its universal affirmative converse is not true. When the predicate is absolutely broader than the subject or overlaps it, the subject does not apply to all instances of the predicate. Such a universal converse is true only when the predicate is narrower or coextensive. Its particular affirmative converse, however, is true in every case:\n\n“Some liquid is water” gives “Some water is liquid.”\n\n“Some water is liquid” gives “Some liquid is water.”\n\n“Some birds are white” gives “Some white things are birds.”\n\n“Some humans are rational” gives “Some rational beings are human.”",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete consecutive authorial prose in this logical division, transcribed from Rafed displayed page labels 171–172; Arabic letter-shape normalization only (Persian kaf/ya to Arabic equivalents), with source spelling anomalies retained. This displayed-page locator is verified from HTML page containers and is not silently identified with inherited printed-page metadata. English is an independent working translation, not a copied published translation."
+        },
+        {
+          "type": "Digital-source anomaly",
+          "text": "Displayed p172 prints كل ماء مسائل. The English reads “Every water is liquid,” explicitly taking مسائل as a digital corruption of سائل on the evidence of the immediately following example كل سائل ماء. Arabic preserves مسائل; no second-witness attestation is asserted."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "171–172",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=171&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-33",
+      "stage": "C",
+      "chapter": 33,
+      "title": "Conversion of the universal negative and its proof",
+      "arabicTitle": "السالبة الكلية تنعكس سالبة كلية",
+      "arabic": "السالبة الكلية تنعكس سالبة كلية\n\nفيبقي الكم والكيف معا فاذا صدق قولنا :\n\n | لا شيء من الحيوان بشجر\n\nصدق | لا شيء من الشجر بحيوان\n\nوالبرهان واضح : لان السالبة الكلية لا تصدق الاّ مع تباين الموضوع والمحمول تباينا كليا. والمتباينان لا يجتمعان أبدا فيصح سلب كل منهما عن جميع أفراد الآخر سواء جعلت هذا موضوعا أو ذاك موضوعا.\n\nوللتدريب على اقامة البراهين من طريق النقيض والعكس نقيم البرهان على هذا الامر بالصورة الآتية :\n\nالمفروض | لا ب حـ | قضية صادقة\n\nالمدعي | لا حـ ب | صادقة أيضا\n\nالبرهان :\n\nلو لم تصدق | لا حـ ب | \n\nلصدق نقيضها | ع حـ ب | \n\nولصدق | ع ب حـ | (العكس المستوي للنقيض)\n\nواذا لا حظنا هذا العكس المستوي (ع ب حـ) ونسبناه الى الأصل (لا ب حـ) وجدناه نقيضاله فلو كان (ع ب حـ) صادقا وجب أن يكون (لا ب حـ) كاذبا مع ان المفروض صدقه.\n\nفوجب ان تكون | لا حـ ب | صادقة | وهو المطلوب\n\nتعقيب\n\nبهذا البرهان تعرف الفائدة في النقيض والعكس المستوي عند الاستدلال. لأنا لا بد أن نرجع في هذا البرهان الى الوراء فنقول :\n\nالمفروض ان | لا ب حـ | صادقة\n\nفتكذب | ع ب حـ | نقيضها\n\nوهذا النقيض عكس | ع حـ ب | فيكذب أيضا\n\nلا نه اذا كذب العكس كذب الاصل |  | (القاعدة الثانية)\n\nواذا كذب هذا الاصل اعني | ع حـ ب | \n\nصدق نقيضه | لا حـ ب | وهو المطلوب\n\nفاستفدت (تارة) من صدق الاصل كذب نقيضه و(أخري) من كذب العكس كذب أصله و(ثالثة) من كذب الاصل صدق نقيضه.\n\nوسيمر عليك هذا الاصتدلال كثيرا فدقق فيه جيدا وعليك باتقانه.",
+      "english": "**The universal negative converts to a universal negative**\n\nBoth quantity and quality are preserved. If “No animal is a tree” is true, “No tree is an animal” is true.\n\nThe proof is clear. A universal negative is true only when its subject and predicate are wholly disjoint. Wholly disjoint terms never coincide, so each can be denied of every instance of the other, whichever is made the subject.\n\nFor practice in constructing proofs by contradiction and conversion, we shall demonstrate this in the following form.\n\nAssumption: “No B is C” is true.\n\nClaim: “No C is B” is also true.\n\n**Proof.** If “No C is B” were not true, its contradictory, “Some C is B,” would be true. Then “Some B is C,” the simple converse of that contradictory, would be true. Comparing this simple converse with the original proposition, “No B is C,” we find that it is its contradictory. If “Some B is C” were true, “No B is C” would therefore have to be false, although it is assumed true. Hence “No C is B” must be true, which was to be proved.\n\n**Further explanation.** This proof shows the usefulness of contradiction and simple conversion in inference. We must retrace the proof and say:\n\n“No B is C” is assumed true.\n\nIts contradictory, “Some B is C,” is therefore false.\n\nThis contradictory is the converse of “Some C is B,” so the latter is also false: if the converse is false, the original is false, by the second rule.\n\nWhen this original proposition, “Some C is B,” is false, its contradictory, “No C is B,” is true, which is the conclusion sought.\n\nThus you have used, first, the truth of an original proposition to establish the falsity of its contradictory; second, the falsity of a converse to establish the falsity of its original; and third, the falsity of an original to establish the truth of its contradictory.\n\nYou will encounter this form of inference frequently. Examine it carefully and master it.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete consecutive authorial prose in this logical division, transcribed from Rafed displayed page labels 172–173; Arabic letter-shape normalization only (Persian kaf/ya to Arabic equivalents), with source spelling anomalies retained. This displayed-page locator is verified from HTML page containers and is not silently identified with inherited printed-page metadata. English is an independent working translation, not a copied published translation."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "172–173",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=172&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-34",
+      "stage": "C",
+      "chapter": 34,
+      "title": "Why particular negatives and disjunctives have no simple converse",
+      "arabicTitle": "السالبة الجزئية والمنفصلة لا عكس لهما",
+      "arabic": "السالبة الجزئية لا عكس لها\n\nأي لا تنعكس أبدا لا الى كلية ولا الى جزئية لأنه يجوز أن يكون موضوعها اعم من محمولها مثل (بعض الحيوان ليس بانسان). والاخص لا يجوز سلب الاعم عنه بحال من الاحوال لا كليا ولا جزئيا لأنه كلما صدق الاخص صدق الاعم معه فكيف يصح سلب الأعم عنه فلا يصدق قولنا (لا شيء من الانسان بحيوان) ولا قولنا (بعض الإنسان ليس بحيوان).\n\nالمنفصلة لا عكس لها :\n\nأشرنا في صدر البحث الى ان العكس المستوي يعم الحملية والشرطية : ولكن عند التأمل نجد أن المنفصلة لا ثمرة لعكسها لانها أقصي ما تدل عليه تدل على التنافي بين المقدم والتالي. ولا ترتيب طبيعي بينهما فانت بالخيار في جعل ايهما مقدما والثاني تاليا من دون أن يحصل فرق في البين فسواء ان قلت : العدد اما زوج أو فرد أو قلت : العدد اما فرد أو زوج فان مؤداهما واحد.\n\nفلذا قالوا : المنفصلة لا عكس لها. أي لا ثمرة فيه.\n\nنعم لو حولتها الى حملية فان احكام الحملية تشملها كما لو قلت في المثال مثلا : العدد ينقسم الى زوج وفرد فانها تنعكس الى قولنا : ما ينقسم الى زوج وفرود عدد.",
+      "english": "**The particular negative has no converse.** It never converts to either a universal or a particular proposition. Its subject may be broader than its predicate, as in “Some animals are not human.” The broader term cannot be denied of the narrower under any circumstances, either universally or particularly. Whenever the narrower applies, the broader applies with it. How, then, could the broader be denied of it? Neither “No human is an animal” nor “Some humans are not animals” is true.\n\n**The disjunctive proposition has no converse.** At the beginning of this investigation we indicated that simple conversion concerns categorical and conditional propositions alike. On reflection, however, we find that conversion of a disjunctive proposition has no benefit. At most, it signifies incompatibility between antecedent and consequent. There is no natural order between them: either can be made the antecedent and the other the consequent, without any difference arising. Whether you say “Number is either even or odd” or “Number is either odd or even,” the meaning is the same.\n\nThis is why they say that a disjunctive proposition has no converse: there is no benefit in converting it.\n\nIf you transform it into a categorical proposition, however, the rules for categorical propositions apply. In this example you might say “Number is divided into even and odd.” This converts to “What is divided into even and odd is number.”",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete consecutive authorial prose in this logical division, transcribed from Rafed displayed page labels 174–174; Arabic letter-shape normalization only (Persian kaf/ya to Arabic equivalents), with source spelling anomalies retained. This displayed-page locator is verified from HTML page containers and is not silently identified with inherited printed-page metadata. English is an independent working translation, not a copied published translation."
+        },
+        {
+          "type": "Digital-source anomaly",
+          "text": "Displayed p174 ends with وفرود, contextually rendered as “and odd.” The Arabic retains this digital reading. The author is denying a distinct inferential gain from reversing disjuncts, rather than denying commutativity of disjunction."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "174",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=174&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-35",
+      "stage": "C",
+      "chapter": 35,
+      "title": "Two methods of contraposition and their quantity rules",
+      "arabicTitle": "عكس النقيض وقاعدته من جهة الكم",
+      "arabic": "عكس النقيض\n\nوهو العكس الثاني للقضية الذي يستدل بصدقها على صدقه. وله طريقتان.\n\n١ ـ طريقة القدماء ويسمي (عكس النقيض الموافق) لتوافقه مع أصله في الكيف وهو «تحويل القضية الى أخري موضوعها نقيض محمول الاصل ومحمولها نقيض موضوع الاصل مع بقاء الصدق والكيف».\n\nوبالاختصار هو : «تبديل نقيضي الطرفين مع بقاء الصدق والكيف». فالقضية : كل كاتب انسان تحول بعكس النقيض الموافق الي :\n\nكل (لا انسان) هو (لا كاتب)\n\n٢ ـ طريقة المتأخرين ويسمي (عكس النقيض المخالف) لتخالفه مع أصله في\n\nالكيف وهو «تحويل القضية الى أخري موضوعها نقيض محمول الاصل ومحمولها عين موضوع الاصل مع بقاء الصدق دون الكيف».\n\nفالقضية : كل كاتب انسان تحول بعكس النقيض المخالف الي :\n\nلا شيء من (اللانسان) بكاتب\n\nقاعدة عكس النقيض\n\nمن جهة الكم\n\nحكم السوالب هنا حكم الموجبات في العكس المستوي وحكم الموجبات حكم السوالب هناك أي ان :\n\n١ ـ السالبة الكلية تنعكس جزئية : سالبة في الموافق وموجبة في المخالف.\n\n٢ ـ السالبة الجزئية تنعكس جزئية أيضا : سالبة في الموافق موجبة في المخالف.\n\n٣ ـ الموجبة الكلية تنعكس كلية : موجبة في الموافق سالبة في المخالف.\n\n٤ ـ الموجبة الجزئية لا تنعكس اصلا بعكس النقيض.\n\nالبرهان\n\nولا بد من اقامة البرهان على كل واحد من تلك الاحكام السابقة وفي هذه البراهين تدريب للطالب على الاستفادة من النقيض والعكس في الاستدلال وقد استعملنا الاسلوب المتبع في الهندسة النظرية لإقامة البرهان. فمن ألف اسلوب الكتب الهندسية يسهل عليه ذلك. وقد تقدم مثال منه في البرهان على عكس السالبة الكلية بالعكس المستوي موضحا (١).\n\nويجب أن يعلم انا نرمز للنقيض بحرف عليه فتحة للاختصار وللتوضيح. في كل ما سيأتي على هذا النحو :\n\nبَ ..................... نقيض الموضوع\n\nحـَ .................... نقيض المحمول",
+      "english": "**Contraposition**\n\nThis is the second transformation of a proposition whose truth is inferred from the truth of the original. It has two methods.\n\n1. **The method of the earlier logicians**, called contraposition agreeing in quality, because it agrees with its original in quality: “Transforming a proposition into another whose subject is the contradictory of the original predicate and whose predicate is the contradictory of the original subject, while preserving truth and quality.”\n\nBriefly, it is “interchanging the contradictories of the two terms while preserving truth and quality.” Thus “Every writer is human” becomes, by contraposition agreeing in quality, “Every nonhuman is a nonwriter.”\n\n2. **The method of the later logicians**, called contraposition differing in quality, because it differs from its original in quality: “Transforming a proposition into another whose subject is the contradictory of the original predicate and whose predicate is the original subject itself, while preserving truth but changing quality.”\n\nThus “Every writer is human” becomes, by contraposition differing in quality, “No nonhuman is a writer.”\n\n**The rule of contraposition with respect to quantity.** The negatives here are governed by the same rule as the affirmatives in simple conversion, and the affirmatives here by the same rule as the negatives there. That is:\n\n1. The universal negative becomes a particular: negative in contraposition agreeing in quality, affirmative in contraposition differing in quality.\n\n2. The particular negative likewise becomes a particular: negative in the agreeing form, affirmative in the differing form.\n\n3. The universal affirmative becomes a universal: affirmative in the agreeing form, negative in the differing form.\n\n4. The particular affirmative does not contrapose at all.\n\n**Proof.** Each of these rules must be demonstrated. These proofs train the student to use contradiction and conversion in inference. We have adopted the style of theoretical geometry in presenting the demonstrations, so they will be easy for anyone familiar with the method of geometrical textbooks. An example has already been explained in the proof of the simple conversion of the universal negative.(1)\n\nFor brevity and clarity, in everything that follows we symbolize the contradictory of a term by putting a fatḥa above its letter:\n\nB′, written بَ in the Arabic notation: the contradictory of the subject.\n\nC′, written حـَ in the Arabic notation: the contradictory of the predicate.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete consecutive authorial prose in this logical division, transcribed from Rafed displayed page labels 175–176; Arabic letter-shape normalization only (Persian kaf/ya to Arabic equivalents), with source spelling anomalies retained. This displayed-page locator is verified from HTML page containers and is not silently identified with inherited printed-page metadata. English is an independent working translation, not a copied published translation."
+        },
+        {
+          "type": "Notation",
+          "text": "English prime marks and the verbal form “non-B/non-C” represent the author’s fatḥa above the Arabic term-letter. Arabic ع denotes a particular affirmative and س a particular negative; لا denotes a universal negative. The isolated reference marker (1) on displayed p176 has no corresponding footnote text in this captured page; no note has been invented."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "175–176",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=175&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-36",
+      "stage": "C",
+      "chapter": 36,
+      "title": "Two proofs for the contraposition of the universal negative",
+      "arabicTitle": "برهان عكس السالبة الكلية",
+      "arabic": "برهان عكس السالبة الكلية\n\nفلاجل اثبات عكس السالبة الكلية بعكس النقيض نقيم برهانين : برهانا على عكسها بالموافق وبرهان على عكسها بالمخالف فنقول :\n\n(أولا) المدعي انها تنعكس سالبة جزئية بعكس النقيض الموافق ولا تنعكس سالبة كلية فهنا مطلوبان أي انه اذا صدقت.\n\nلا ب حـ\n\nصدقت | س حـَ بَ | (المطلوب الاول)\n\nولا تصدق | لا حـَ بَ | (المطلوب الثاني)\n\nالبرهان :\n\nان من المعلوم :\n\n١ ـ ان السالبة الكلية ال تصدق الا اذا كان بين طرفيها تباين كلي. وهذا بديهي.\n\n٢ ـ ان النسبة بين نقيضي المتباينين هي التباين الجزئي وقد تقدم البرهان على ذلك في بحث النسب في الجزء الاول.\n\n٣ ـ ان مرجع التباين الجزئي الى سالبتين جزئيتين كما ان مرجع التباين الكلي الى سالبتين كليتين. وهذا بديهي أيضا.\n\nوينتج من هذه المقدمات الثلاث أنه :\n\nاذا صدق | لا ب حـ | (أي يكون بين الطرفين تباين كلي)\n\nصدقت | س بَ حَـ | السالبة الجزئية بين النقيضين\n\nوصدقت أيضا | س حَـ بَ | السالبة الجزئية بين النقيضين\n\nوهو (المطلوب الاول)\n\nثم يفهم من المقدمة الثانية ان التباين الكلي لا يتحقق دائما بين نقيضي\n\nالمتباينين اذ ربما يكون بينهما العموم والخصوص من وجه.\n\nأي ان السالبة الكلية بين نقيضي المتباينين لا تصدق دائما.\n\nأو فقل لا تصدق دائما | لا حَـ بَ | (المطلوب الثاني)\n\n(ثانيا) المدعي ان السالبة الكلية تنعكس موجبة جزئية بعكس النقيض المخالف ولا تنعكس موجبة كلية فهنا مطلوبان أي انه اذا صدقت :\n\nلا ب حـ\n\nصدقت | ع حَـ ب | (المطلوب الاول)\n\nولا تصدق | كل حَـ ب | (المطلوب الثاني)\n\nالبرهان :\n\nلما كان بين ب ، حـ تباين كلي كما تقدم فمعناه أن احدهما يصدق من نقيض الآخر.\n\nأي ان ب يصدق مع حَـ\n\nواذا تصادق ب وحَـ\n\nصدق على الاقل ع حـ ب\n\n(المطلوب الاول)\n\nثم انه تقدم ان نقيضي المتباينين قد تكون بينهما نسبة العموم والخصوص من وجه فيصدق على هذا التقدير :\n\nحَـ مع ب\n\nولا يصدق حينئذ | حَـ مع ب | والا لاجتمع النقيضان ب ، بَ\n\nفلا يصدق | كل حَـ ب | (المطلوب الثاني)",
+      "english": "**Proof of the contraposition of the universal negative**\n\nTo establish the contraposition of the universal negative we give two proofs: one for contraposition agreeing in quality and one for contraposition differing in quality.\n\n**First.** The claim is that it becomes a particular negative by contraposition agreeing in quality, and does not become a universal negative. There are therefore two conclusions sought. If “No B is C” is true, then “Some non-C is not non-B” is true, while “No non-C is non-B” does not follow.\n\n**Proof.** The following are known:\n\n1. A universal negative is true only when its two terms are wholly disjoint. This is self-evident.\n\n2. The relation between the contradictories of two wholly disjoint terms is partial disjointness. This was demonstrated in the investigation of relations in Part One.\n\n3. Partial disjointness amounts to two particular negatives, just as total disjointness amounts to two universal negatives. This too is self-evident.\n\nFrom these three premises it follows that, if “No B is C” is true, so that the terms are wholly disjoint, both particular negatives between their contradictories are true: “Some non-B is not non-C,” and “Some non-C is not non-B.” This establishes the first conclusion sought.\n\nThe second premise also shows that the contradictories of two wholly disjoint terms are not always wholly disjoint: they may overlap. A universal negative between the contradictories of wholly disjoint terms is therefore not always true. In other words, “No non-C is non-B” is not always true. This establishes the second conclusion sought.\n\n**Second.** The claim is that the universal negative becomes a particular affirmative by contraposition differing in quality, and does not become a universal affirmative. Again there are two conclusions sought. If “No B is C” is true, “Some non-C is B” is true, while “Every non-C is B” does not follow.\n\n**Proof.** Since B and C are wholly disjoint, as above, one applies together with the contradictory of the other. That is, B applies together with non-C. If B and non-C coincide, at least “Some non-C is B” is true: the first conclusion sought. [In the digital formula at this point the mark over C is missing; this explicit reading restores the complement required by the preceding sentence.]\n\nWe have also seen that the contradictories of wholly disjoint terms can overlap. On that supposition, non-C occurs together with [non-B]. For those instances, non-C does not occur together with B; otherwise the contradictories B and non-B would coincide. Therefore “Every non-C is B” is not true: the second conclusion sought. [The digital text writes B in both of the opposed lines; the first “non-B” here is an explicit conjectural reading, not an independently witnessed correction.]",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete consecutive authorial prose in this logical division, transcribed from Rafed displayed page labels 177–178; Arabic letter-shape normalization only (Persian kaf/ya to Arabic equivalents), with source spelling anomalies retained. This displayed-page locator is verified from HTML page containers and is not silently identified with inherited printed-page metadata. English is an independent working translation, not a copied published translation."
+        },
+        {
+          "type": "Unresolved digital formulas",
+          "text": "Displayed p178 has ع حـ ب where the prose requires ع حَـ ب, and then writes حَـ مع ب in both opposed lines, where the first should read حَـ مع بَ for the stated overlap argument. Arabic preserves both digital readings. English explicitly supplies conjectural complement marks and does not present them as verified print variants. Independent early-print collation is still required."
+        },
+        {
+          "type": "Logical framework",
+          "text": "The universal-negative-to-particular-affirmative contrapositive uses the traditional existential assumptions of this treatment. “Does not convert to a universal” means that the universal result is not generally entailed, not that it is false in every individual case."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "177–178",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=177&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-37",
+      "stage": "C",
+      "chapter": 37,
+      "title": "Proofs of the two contrapositives of the particular negative",
+      "arabicTitle": "برهان عكس السالبة الجزئية",
+      "arabic": "برهان عكس السالبة الجزئية\n\n ولأجل اثبات عكس السالبة الجزئية بعكس النقيض أيضا نقيم برهانين للموافق والمخالف فنقول :\n\n(اولا) المدعي ان السالبة الجزئية تنعكس سالبة جزئية بعكس النقيض الموافق ولا تنعكس كلية فهنا مطلوبان أي انه اذا صدقت :\n\n س ب حـ\n\n    صدقت\nس حَـ بَ\n(المطلوب الاول)\nولا تصدق\nلا حَـ بَ\n(المطلوب الثاني)\nالبرهان :\n\n من المعلوم ان السالبة الجزئية تصدق في ثلاثة فروض :\n\n ١ ـ ان يكون بين طرفيها عموم من وجه. وحينئذ يكون بين نقيضيهما تباين جزئي كما تقدم في بحث النسب.\n\n ٢ ـ ان يكون بينهما تباين كلي وبين نقيضيهما أيضا تباين جزئي كما تقدم.\n\n ٣ ـ ان يكون الموضوع أعم مطلقا من المحمول فيكون نقيض المحمول أعم مطلقا من نقيض الموضوع.\n\n وعلى جميع هذه التقادير الثلاثة تصدق السالبة الجزئية :\nس حَ بَ\n(المطلوب الاول)\nاما للتباين الجزئي بينهما أو لان نقيض حـ أعم مطلقا من نقيض ب.\n\n ثم على بعض التقادير يكون بين نقيضي الطرفين عموم وخصوص من وجه أو مطلقا فلا تصدق السالبة الكلية :\nلا حَـ بَ\n(المطلوب الثاني)\n(ثانيا) المدعي ان السالبة الجزئية تنعكس موجبة جزئية بعكس النقيض المخالف ولا تنعكس كلية فهنا مطلوبان أي اذا صدقت :\n\n س ب حـ\n\n    صدقت\nع حَـ ب\n(المطلوب الاول)\nولا تصدق\nكل حَـ ب\n(المطلوب الثاني)\nالبرهان :\n\n تقدم ان على جميع التقادير الممكنة للموضوع والمحمول في السالبة الجزئية اما أن يكون بين نقيضيهما تباين جزئي أو ان نقيض المحمول أعم مطلقا فيلزم على القديرين أن يصدق : \nبعض حَـ بدون بَ\n\n   فيصدق\nبعض حَـ مع ب\n\nلا النقيضين (وهما بَ ، ب) لا يرتفعان\n\n   أي يصدق\nع حَـ ب\n(المطلوب الاول)\nثم ان نقيضي الموضوع والمحمول قد يكون بينهما عموم من وجه.\n\n    وقد تصدق\nع حَـ بَ\n\n   ويمكن تحويلها الى\nس حَـ ب\nصادقة\nلان الاولي موجبة معدولة المحمول فيمكن جعلها سالبة محصلة المحمول اذ السالبة المحصلة المحمول أعم من الموجبة المعدولة المحمول اذا اتفقا في الكم واذا صدق الاخص صدق الأعم قطعا فاذا كانت : \nس حَـ ب\nصادقة\nكذب نقيضها\nكل حَـ ب\n(المطلوب الثاني)",
+      "english": "To establish contraposition of the particular negative, we again give two proofs: one for contraposition retaining quality and one for contraposition changing quality.\n\n**First.** We claim that the particular negative gives a particular negative by contraposition retaining quality, but does not give a universal. Thus two things are to be established. If “Some B are not C” is true, “Some non-C are not non-B” is true—the first conclusion—but “No non-C is non-B” need not be true—the second conclusion.\n\n**Proof.** A particular negative can be true in three situations:\n\n1. Its terms overlap without either including the other. Their complements then stand in partial exclusion, as explained in the discussion of relations.\n2. Its terms are wholly disjoint. Their complements likewise stand in partial exclusion, as previously explained.\n3. Its subject is strictly more extensive than its predicate. The complement of the predicate is then strictly more extensive than the complement of the subject.\n\nIn all three situations, “Some non-C are not non-B” is true. This establishes the first conclusion, whether because the complements partially exclude one another or because non-C is more extensive than non-B. In some of these situations, however, the complementary terms overlap or one is strictly more extensive than the other. Therefore the universal negative “No non-C is non-B” is not invariably true. This establishes the second conclusion.\n\n**Second.** We claim that the particular negative gives a particular affirmative by contraposition changing quality, but does not give a universal. Thus, if “Some B are not C” is true, “Some non-C are B” is true—the first conclusion—but “All non-C are B” need not be true—the second conclusion.\n\n**Proof.** We have already explained that, in every possible arrangement of the subject and predicate of the particular negative, either their complements partially exclude one another or the complement of the predicate is strictly more extensive. In either case, some non-C occurs without non-B. Therefore some non-C occurs with B, since the two contradictories, B and non-B, cannot both be absent. Hence “Some non-C are B” is true, which is the first conclusion.\n\nThe complements of the subject and predicate may also overlap. “Some non-C are non-B” may therefore be true. This can be transformed into the true statement “Some non-C are not B.” The former is an affirmative with a complemented predicate; it can be made a negative with an uncomplemented predicate. With quantity unchanged, the negative with an uncomplemented predicate is more extensive than the affirmative with a complemented predicate; when the more restricted statement is true, the more extensive is certainly true. If “Some non-C are not B” is true, its contradictory, “All non-C are B,” is false. This establishes the second conclusion.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete continuous authorial passage from Rafed’s digitally presented Dār al-Taʿāruf 1402 AH text, displayed page(s) 178–180; Arabic kaf/ya and paragraph/table whitespace normalized. Displayed pagination is recorded, not silently equated with a scanned print. Original symbolic readings remain in Arabic even where damaged; each conjectural English reconstruction is identified. The 1968 institutional scan has not been collated for this unit."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "178–180",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=178&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-38",
+      "stage": "C",
+      "chapter": 38,
+      "title": "Proofs of the two contrapositives of the universal affirmative",
+      "arabicTitle": "برهان عكس الموجبة الكلية",
+      "arabic": "برهان عكس الموجبة الكلية\n\n ولا ججل اثبات عكس الموجبة الكلية بعكس النقيض نقيم أيضا برهانين للموافق والمخالف فنقول :\n\n (اولا) المدعي انها تنعكس موجبة كلية بعكس النقيض الموافق أي انه اذا صدقت :\nكل ب حـ\n(المفروض)\nصدقت\nكل حَـ بَ\n(المطلوب)\nالبرهان :\n\n    لو لم تصدق\nكل حَـ بَ\n\n   لصدقت\nس حَـ بَ\nنقيضها\nفتصدق\nس ب حـ\nعكس نقيضها الموافق\nفتكذب\nكل ب حـ\nنقيض العكس المذكور\nوهذا خلف. أي خلف الفرض لان هذا (نقيض العكس المذكور) هو نفس الاصل المفروض صدقه.\n\n    فوجب ان تصدق\nكل حَـ بَ\n(وهو المطلوب)\n(ثانيا) المدعي ان الموجبة الكلية تنعكس سالبة كلية بعكس النقيض المخالف أي انه اذا صدقت :\nكل ب حـ\n(المفروض)\nصدقت\nلا حَـ ب\n(المطلوب)\nالبرهان :\n\n    لولم تصدق\nلا حَـ ب\n\n   لصدقت\nع حَـ ب\nنقيضها\nفتصدق\nع ب حـَ\nعكسها المستوي\nوهذه موجبة جزئية معدولة المحمول فتحول الى سالبة جزئية محصلة المحمول وقد تقدم فيحدث أن :\nس ب حـ\n\n   فتكذب\nكل بَ حَـ\nنقيضها\nوهذا خلف لانه الاصل المفروض صدقه \n\n    فوجب ان تصدق\nلا حَـ ب\n(وهو المطلوب)",
+      "english": "To establish contraposition of the universal affirmative, we likewise give two proofs, for the forms retaining and changing quality.\n\n**First.** The universal affirmative gives a universal affirmative by contraposition retaining quality. If “All B are C” is true, as assumed, “All non-C are non-B” is true, as required.\n\n**Proof.** If “All non-C are non-B” were not true, its contradictory, “Some non-C are not non-B,” would be true. Its contrapositive retaining quality, “Some B are not C,” would then be true. The contradictory of this last statement, “All B are C,” would therefore be false. This contradicts the assumption: the contradictory of that contrapositive is precisely the original statement assumed true. Consequently “All non-C are non-B” must be true, which is the required conclusion.\n\n**Second.** The universal affirmative gives a universal negative by contraposition changing quality. If “All B are C” is true, as assumed, “No non-C is B” is true, as required.\n\n**Proof.** If “No non-C is B” were not true, its contradictory, “Some non-C are B,” would be true. By simple conversion, “Some B are non-C” would then be true. This is a particular affirmative with a complemented predicate. As explained earlier, it can be transformed into a particular negative with an uncomplemented predicate, yielding “Some B are not C.” Its contradictory would therefore be false. **The digital formula at this point reads “All non-B are non-C”; the conclusion required by the preceding line and by the author's following words is “All B are C.”** The author continues: “This is a contradiction, since it is the original statement assumed true.” Therefore “No non-C is B” must be true, which is the required conclusion.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete continuous authorial passage from Rafed’s digitally presented Dār al-Taʿāruf 1402 AH text, displayed page(s) 180–181; Arabic kaf/ya and paragraph/table whitespace normalized. Displayed pagination is recorded, not silently equated with a scanned print. Original symbolic readings remain in Arabic even where damaged; each conjectural English reconstruction is identified. The 1968 institutional scan has not been collated for this unit."
+        },
+        {
+          "type": "Unresolved symbolic reading",
+          "text": "At displayed p181 the second proof prints «كل بَ حَـ» as the contradictory of «س ب حـ» and immediately identifies it with the original «كل ب حـ». The English identifies the required reading explicitly, but the Arabic is not emended. Rafed’s separate b1728 digital presentation p214 repeats the same damaged formula; this is not independent facsimile attestation."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "180–181",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=180&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-39",
+      "stage": "C",
+      "chapter": 39,
+      "title": "Why the particular affirmative has neither form of contraposition",
+      "arabicTitle": "الموجبة الجزئية لا تنعكس بعكس النقيض",
+      "arabic": "الموجبة الجزئية لا تنعكس\n\n يكفينا للبرهنة على عدم انعكاس الموجبة الجزئية بعكس النقيض الموافق\n\nوالمخالف مطلقا أن نبرهن على عدم انعكاسها الى الجزئية. وبطريق أولي يعلم عدم انعكاسها الى الكلية لأنه تقدم ان الجزئية داخلة في الكلية فاذا كذبت الجزئية كذبت الكلية. وعليه فنقول :\n\n (اولا) المدعي ان الموجبة الجزئية لا تنعكس الى موجبة جزئية بعكس النقيض الموافق.\n\n    فاذا صدقت\nع ب حـ\nلا يلزم ان تصدق\nع حَـ بَ\nالبرهان :\n\n من موارد صدق الموجبة الجزئية أن يكون بين طرفيها عموم من وجه فيكون حينئذ بين نقيضيهما نسبة التباين الجزئي الذي هو أعم من التباين الكلي والعموم من وجه فيصدق على تقديم التباين الكلي : \nلا حَـ بَ\n\n   فيكذب نقيضها\nع حَـ بَ\n(وهو المطلوب)\n(ثانيا) المدعي ان الموجبة الجزئية لا تنعكس الى السالبة الجزئية بعكس النقيض المخالف.\n\n    فاذا صدقت\nع ب حـ\nلا يلزم ان تصدق\nس حَـ ب\nالبرهان :\n\n قد تقدم على تقديم التباين الكلي بين نقيضي الطرفين في الموجبة الجزئية والسالبة الكلية :\nلا حَـ ب\n\n   فتصدق\nكل حَـ ب\nلان سلب السلب ايجاب\nفيكذب نقيضها\nس حَـ ب\n(وهو المطلوب)\nولأجل أن يتضح لك عدم انعكاس الموجبة الجزئية بعكس النقيض تدبر هذا\n\nالمثال وهو (بعض اللانسان حيوان) فان هذه القضية لا تنعكس بعكس النقيض الموافق الى (بعض اللاحيوان انسان) ولا الى (كل لا حيوان انسان) لا نهما كاذبتان لأنه لا شيء من اللاحيوان بانسان.\n\n ولا تنعكس بالمخالف الى (ليس كل لا حيوان لا انسان) ولا الى (لا شيء من اللاحيوان بلا انسان) الانهما كاذبتان أيضا لأن كل لا حيوان هو لا انسان.",
+      "english": "To prove that the particular affirmative admits neither contraposition retaining quality nor contraposition changing quality, it is enough to show that it does not yield a particular proposition. Its failure to yield a universal follows all the more readily. We have explained that the particular is included under the universal: if the particular is false, the universal is false. We therefore say:\n\n**First.** The particular affirmative does not yield a particular affirmative by contraposition retaining quality. If “Some B are C” is true, “Some non-C are non-B” need not be true.\n\n**Proof.** One situation in which a particular affirmative is true is that its terms overlap without either including the other. Their complements then stand in partial exclusion, which is more general than complete disjointness or overlap. If the complements are completely disjoint, “No non-C is non-B” is true. Its contradictory, “Some non-C are non-B,” is therefore false. This is the required conclusion.\n\n**Second.** The particular affirmative does not yield a particular negative by contraposition changing quality. If “Some B are C” is true, “Some non-C are not B” need not be true.\n\n**Proof.** As previously explained, the complements of the terms of a particular affirmative may be completely disjoint. The resulting universal negative is then intended to be “No non-C is non-B.” **The digital formula instead omits the complement mark on B and reads “No non-C is B.”** The author continues that “All non-C are B” is true, because negation of negation is affirmation. Its contradictory, “Some non-C are not B,” is therefore false, which establishes the conclusion. The reconstruction “No non-C is non-B” is required by that stated reason; it is not an independently verified variant.\n\nTo understand why the particular affirmative does not admit contraposition, consider “Some non-humans are animals.” By contraposition retaining quality this does not yield either “Some non-animals are humans” or “All non-animals are humans”: both are false, since no non-animal is a human. By contraposition changing quality it does not yield either “Not every non-animal is a non-human” or “No non-animal is a non-human.” These too are false, since every non-animal is a non-human.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete continuous authorial passage from Rafed’s digitally presented Dār al-Taʿāruf 1402 AH text, displayed page(s) 181–183; Arabic kaf/ya and paragraph/table whitespace normalized. Displayed pagination is recorded, not silently equated with a scanned print. Original symbolic readings remain in Arabic even where damaged; each conjectural English reconstruction is identified. The 1968 institutional scan has not been collated for this unit."
+        },
+        {
+          "type": "Unresolved symbolic reading",
+          "text": "Displayed p182 has «لا حَـ ب» where the surrounding claim that the complements are disjoint and the subsequent double-negation inference require «لا حَـ بَ». Arabic retained; English reconstruction labelled. The b1728 digital text p215 shares the omission and supplies no independent print attestation."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "181–183",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=181&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-40",
+      "stage": "C",
+      "chapter": 40,
+      "title": "Exercises in consequence, conversion and juristic contraposition",
+      "arabicTitle": "تمرينات على العكوس",
+      "arabic": "تمرينات\n\n ١ ـ اذا كانت هذه القضية (كل عاقل لا تبطره النعمة) صادقة. فبين حكم القضايا الآتية في صدقها أو كذبها. مع بيان السبب :\n\n أ ـ بعض العقلاء لا تبطره النعمة.\n\n ب ـ ليس بعض العقلاء لا تبطره النعمة.\n\n ج ـ جيمع من لا تبطرهم النعمة عقلاء.\n\n د ـ لا شخص من العقلاء لا تبطره النعمة.\n\n هـ ـ كل من تبطره النعمة غير عاقل.\n\n و ـ لا شخص ممن تبطره النعمة بعاقل.\n\n ز ـ بعض من لا تبطره النعمة عاقل.\n\n ٢ ـ اذا كانت هذه القضية (بعض المعادن ليس يذوب بالحرارة) كاذبة فاستخرج القضايا الصادقة والكاذبة التي تلزم من كذب هذه القضية.\n\n ٣ ـ استدل فخر المحققين في شرحه (الايضاح) على أن الماء يتنجس بالتغيير التقديري بالنجاسة فقال : «ان الماء مقهور بالنجاسة عند التغيير التقديري لانه كلما لم يصير الماء مقهورا لم يتغير بها على تقدير المخالفة. وينعكس النقيض الى قولنا : كلما تغير الماء على تقدير المخالفة بالنجاسة كان مقهورا».\n\n فبين أي عكس نقيض هذا. وكيف استخراجه. ولا حظ ان القضية المستعملة هنا شرطية متصلة.\n\n __________________\n\n (١) نقل هذا الاستدلال صاحب المدارك في مبحث الماء. ثم اورد عليه فراجع اذا شئت.",
+      "english": "1. Suppose the proposition “Every rational person is one whom prosperity does not make arrogant” is true. Determine the truth or falsity of each of the following propositions, giving the reason:\n\n   a. Some rational people are not made arrogant by prosperity.\n\n   b. Some rational people are not among those who are not made arrogant by prosperity.\n\n   c. All those who are not made arrogant by prosperity are rational.\n\n   d. No rational person is among those who are not made arrogant by prosperity.\n\n   e. Everyone who is made arrogant by prosperity is non-rational.\n\n   f. No one who is made arrogant by prosperity is rational.\n\n   g. Some of those who are not made arrogant by prosperity are rational.\n\n2. Suppose “Some minerals do not melt under heat” is false. Extract the true and false propositions that follow from the falsity of this proposition.\n\n3. In his commentary *al-Īḍāḥ*, Fakhr al-Muḥaqqiqīn argued that water becomes ritually impure through an alteration by impurity assessed hypothetically. He said: “Water is overcome by impurity when the alteration is hypothetically assessed, because whenever water is not overcome, it would not be altered by it on the supposition of a difference. By contraposition this becomes: whenever water would be altered by impurity on the supposition of a difference, it is overcome.”\n\nExplain which form of contraposition this is and how it is obtained. Notice that the proposition employed here is a connected conditional.\n\n**Author's footnote.** The author of *al-Madārik* quoted this argument in his discussion of water and then raised an objection against it. Consult that discussion if you wish.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete continuous authorial passage from Rafed’s digitally presented Dār al-Taʿāruf 1402 AH text, displayed page(s) 184–184; Arabic kaf/ya and paragraph/table whitespace normalized. Displayed pagination is recorded, not silently equated with a scanned print. Original symbolic readings remain in Arabic even where damaged; each conjectural English reconstruction is identified. The 1968 institutional scan has not been collated for this unit."
+        },
+        {
+          "type": "Translation and exercise scope",
+          "text": "The opening Arabic «كل عاقل لا تبطره النعمة» is formally affirmative predication of the negative expression “not made arrogant by prosperity.” The English retains that structure. Item b renders the traditional particular-negative use of «ليس بعض», not a wide-scope denial of the existential quantifier. The juristic quotation and attribution have not been independently collated with al-Īḍāḥ or al-Madārik."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "184",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=184&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-41",
+      "stage": "C",
+      "chapter": 41,
+      "title": "Complementation and the four proofs of predicate obversion",
+      "arabicTitle": "النقض وقاعدة نقض المحمول",
+      "arabic": "من ملحقات العكوس النقض\n\n من المباحث التي لا تقل شأنا عن العكوس في استنباط صدق القضية من صدق أصلها مباحث (النقض) فلا بأس بالتعرض لها الحاقا لها بالعكوس فنقول :\n\n النقض : هو تحويل القضية الى أخري لازمة لها في الصدق مع بقاء طرفي القضية على موضعهما. وهو على ثلاثة أنواع :\n\n ١ ـ أن يجعل نقيض موضوع الاولي موضوعا للثانية ونفس محمولها محمولا ويسمي هذا التحويل (نقض الموضوع) والقضية المحولة (منقوضة الموضوع).\n\n ٢ ـ أن يجعل نفس موضوع الاولي موضوعا للثانية ونقيض محمولها محمولا ويسمي التحويل (نقيض المحمول) والقضية المحولة (منقوضة المحمول).\n\n ٣ ـ أن يجعل نقيض الموضوع موضوعا ونقيض المحمول محمولا. ويسمي التحويل (النقض التام). والقضية المحولة (منقوضة الطرفين).\n\n ولنبحث عن قاعدة كل واحد من هذه الانواع. ولنبدأ بقاعدة نقض المحمول لأنه الباب للباقي كما ستعرف السر في ذلك :\n\n قاعدة نقض المحمول\n\n علينا لاستخراج منقوضة المحمول صادقة على تقدير صدق أصلها ان نغير كيف القضية ونستبدل محمولها بنقيضه. مع بقاء الموضوع على حاله وبقاء الكم. ولا بد من اقامة البرهان على منقوضة محمول كل واحدة من المحصورات فنقول :\n\n ١ ـ (الموجبة الكلية) منقوضة محمولها سالبة كلية نحو كل انسان حيوان فتحول\n\nبنقض محمولها الي : «لا شيء من الانسان بلا حيوان».\n\n وللبرهان على ذلك نقول :\n\n    اذا صدقت\nكل ب حـ\n(المفروض)\nصدقت\nلا ب حَـ\n(المطلوب)\nالبرهان :\n\n    اذا صدقت\nكل ب حـ\n\n   صدقت\nلا حَـ ب\nعكس نقيضها المخالف\nوينعكس بالعكس المستوي الى\nلا ب حَـ\nوهو المطلوب\n٢ ـ (الموجبة الجزئية) منقوضة محمولها سالبة جزئية نحو بعض الحيوان انسان فتتحول بنقض محمولها الي : «ليس كل حيوان لا انسان أي أنه إذا صدقت :\nع ب حـ\n(المفروض)\nصدقت\nس ب حَـ\n(المطلوب)\nالبرهان : \n\n    لولم تصدق\nس ب حَـ\n\n   لصدق نقيضها\nكل ب حَـ\n\n   فتصدق\nلا ب حـ\n(نقض المحمول)\nفيكذب نقيضها\nع ب حـ\n\n  ولكنه عن الاصل فهو خلاف الفرض.\n\n    فيجب ان يصدق\nس ب حَـ\n(وهو المطلوب)\n٣ ـ (السالبة الكلية) منقوضة محمولها موجبة كلية نحو لا شيء من الماء بجامد فتتحول بنقض محمولها الي : «كل ماء غير جامد».\n\n أي انه اذا صدقت : ـ\nلا ب حـ\n(المفروض)\nصدقت\nكل ب حَـ\n(المطلوب)\nالبرهان : \n\n    لو لم تصدق\nكل ب حَـ\n\n   لصدق نقيضها\nس ب حَـ\n\n   فتصدق\nع ب حـ\nلأن سلب السلب ايجاب\nفيكذب نقيضها\nلا ب حـ\n\n  ولكنه عين الاصل فهو خلاف الفرض.\n\n    فيجب ان يصدق\nكل ب حَـ\n(وهو المطلوب)\n٤ ـ (السالبة الجزئية) منقوضة محمولها موجبة جزئية نحو ليس كل معدن\n\n ذهبا فتتحول بنقض محمولها الي : «بعض المعدن غير ذهب». أي انه اذا صدقت : \nس ب حـ\n(المفروض)\nصدقت\nع ب حَـ\n(المطلوب)\nالبرهان : \n\n    اذا صدقت\nس ب حـ\n(الاصل)\nصدقت\nع حَـ ب\n(عكس النقيض المخالف)\nوينعكس بالعكس المستوي الى\nع ب حَـ\nوهو المطلوب",
+      "english": "Among the discussions no less important than conversion for inferring the truth of a proposition from the truth of its original is **complementation** (*naqḍ*). It is therefore appropriate to append it to the discussion of conversion.\n\nComplementation transforms a proposition into another that follows from it in truth, while leaving its terms in their original positions. It has three forms:\n\n1. Make the complement of the first proposition's subject the subject of the second, while keeping its predicate as predicate. This transformation is called **subject-complementation**, and the transformed proposition is called **subject-complemented**.\n2. Keep the first proposition's subject as subject and make the complement of its predicate the predicate. This transformation is called **predicate-complementation**, and the transformed proposition is called **predicate-complemented**.\n3. Make the complement of the subject the subject and the complement of the predicate the predicate. This is called **complete complementation**, and the transformed proposition is called **complemented in both terms**.\n\nWe shall examine the rule for each form, beginning with predicate-complementation, since it provides the way to the others, as will become clear.\n\n**The rule for predicate-complementation.** To obtain a true predicate-complemented proposition when its original is true, change the quality of the proposition and replace its predicate by its complement, leaving the subject and quantity unchanged. We must prove this for each of the four quantified forms.\n\n**1. Universal affirmative.** Its predicate-complemented form is a universal negative. Thus “Every human is an animal” becomes “No human is a non-animal.” Symbolically, if “All B are C” is true—the assumption—“No B is non-C” is true—the required conclusion.\n\nProof: from “All B are C,” contraposition changing quality gives “No non-C is B.” Simple conversion gives “No B is non-C,” which is the required conclusion.\n\n**2. Particular affirmative.** Its predicate-complemented form is a particular negative. Thus “Some animals are human” becomes “Not every animal is non-human.” If “Some B are C” is true—the assumption—“Some B are not non-C” is true—the required conclusion.\n\nProof: if “Some B are not non-C” were not true, its contradictory, “All B are non-C,” would be true. Predicate-complementation would give “No B is C.” Its contradictory, “Some B are C,” would therefore be false. But this is the original statement, contrary to the assumption. Thus “Some B are not non-C” must be true.\n\n**3. Universal negative.** Its predicate-complemented form is a universal affirmative. Thus “No water is solid” becomes “All water is non-solid.” If “No B is C” is true—the assumption—“All B are non-C” is true—the required conclusion.\n\nProof: if “All B are non-C” were not true, its contradictory, “Some B are not non-C,” would be true. Then “Some B are C” would be true, because negation of negation is affirmation. Its contradictory, “No B is C,” would be false. But that is the original statement, contrary to the assumption. Therefore “All B are non-C” must be true.\n\n**4. Particular negative.** Its predicate-complemented form is a particular affirmative. Thus “Not every mineral is gold” becomes “Some minerals are non-gold.” If “Some B are not C” is true—the assumption—“Some B are non-C” is true—the required conclusion.\n\nProof: from the original, “Some B are not C,” contraposition changing quality gives “Some non-C are B.” Simple conversion then gives “Some B are non-C,” which is the required conclusion.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete continuous authorial passage from Rafed’s digitally presented Dār al-Taʿāruf 1402 AH text, displayed page(s) 185–187; Arabic kaf/ya and paragraph/table whitespace normalized. Displayed pagination is recorded, not silently equated with a scanned print. Original symbolic readings remain in Arabic even where damaged; each conjectural English reconstruction is identified. The 1968 institutional scan has not been collated for this unit."
+        },
+        {
+          "type": "Terminology",
+          "text": "Predicate-complementation with change of quality is standard English “obversion.” Subject-complementation and complementation of both terms are kept distinct. The Arabic digital list calls the second operation «نقيض المحمول» at one point; the surrounding section consistently calls it «نقض المحمول». No substantive Arabic emendation is adopted."
+        },
+        {
+          "type": "Logical scope",
+          "text": "These are the author’s traditional rules, transmitted with his examples. The water example is a stipulated logical illustration, not a general scientific claim about water in every state. The author’s treatment of negative propositions and empty subjects requires care; these translations do not independently certify all steps for modern empty-term semantics."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "185–187",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=185&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-42",
+      "stage": "C",
+      "chapter": 42,
+      "title": "Transforming the original and handling complemented predicates",
+      "arabicTitle": "تنبيهان: طريقة تحويل الأصل وتحويل معدولة المحمول",
+      "arabic": "تنبيهان\n\n طريقة تحويل الاصل (التنبيه الاول) الطريق التي اتبعناها في البرهان على منقوضة محمول الموجبة الكلية والسالبة الجزئية طريق جديدة في البرهان ينبغي أن نسميها الآن (طريقة تحويل الاصل) قبل مجيء بحث القياس فتدخل في أحد أقسامه كالطريق السابقة التي سميناها : (طريقة البرهان على كذب النقيض).\n\n وقد رأيت أننا في هذه الطريقة (طريقة تحويل الاصل) أجرينا التحويلات التي\n\n __________________\n\n (١) وهو قياس المساواة لان منقوضة المحمول لازمة لعكس نقيض الاصل لانها عكسه المستوي وعكس النقيض لازم للاصل ولازم اللازم لازم.\n\nسبقت معرفتنا لها على الاصل ثم على المحول من الاصل تباعا حتي انتهينا الى المطلوب : فقد رأيت في الموجبة الكلية أنا حولنا الاصل الى عكس النقيض المخالف فيصدق على تقدير صدق أصله ثم حولنا هذا العكس الى العكس المستوي فخرج لنا نفس المطلوب اعني (منقوضة المحمول) فيصدق التحويل الثاني على تقدير صدق عكس نقيض الاصل (تحويل الاول) الصادق على تقدير صدق الاصل فيصدق التحويل الثاني على تقدير صدق الاصل وهذا هو المقصود اثباته فتوصلنا الى المطلوب بأخصر طريق.\n\n وسنتبع هذه الطريق السهلة فيما يأتي لنقض الموضوع والنقض التام ويمكن اجراؤها أيضا في البرهان على عكوس النقيض باستخدام منقوضة المحمول. وعلى الطالب أن يستعمل الحذق وينتبه الى أنه أي التحويلات ينبغي استخدامه حتي يتوصل الى مطلوبه.\n\n تحويل معدولة المحمول (التنبيه الثاني) وقد استعملنا في عكس النقيض ونقض المحمول طريقتين من التحويل الملازم للاصل في الصدق وفي الحقيقة هما من باب نقض المحمول ولكن لبداهتهما استدللنا بهما قبل ان يأتي البرهان على منقوضة المحمول ولذا لم نسمها بنقض المحمول وهما :\n\n أ ـ (تحويل الموجبة المعدولة الى سالبة محصلة المحمول موافقة لها في الكم) لأن مؤداهما واحد وانما الفرق ان السلب محمول في الموجبة والحمل مسلوب في السالبة.\n\n ب ـ تحويل السالبة المعدولة المحمول الى موجبة محصلة المحمول موافقة لها في الكم لان سلب السلب ايجاب. وهذا بديهي واضح.",
+      "english": "**First observation: the method of transforming the original.** The procedure followed in proving predicate-complementation for the universal affirmative and the particular negative is a new method of proof. We should now call it “the method of transforming the original,” before the discussion of syllogism arrives and assigns it to one of its kinds. It stands alongside the earlier method we called “proof by establishing the falsity of the contradictory.”\n\nYou have seen that in this method we successively applied transformations already known to us: first to the original, then to its transformed result, until we reached the required conclusion. In the universal affirmative, we transformed the original into its contrapositive changing quality, which is true if the original is true. We then subjected that contrapositive to simple conversion and obtained precisely the required predicate-complemented proposition. The second transformation is true if the contrapositive—the first transformation—is true; that first transformation is true if the original is true. The second is therefore true if the original is true. This is what we intended to prove, and we reached it by a very short route.\n\nWe shall use this easy method below for subject-complementation and complete complementation. It can also be employed in proving the contrapositives by using predicate-complementation. The student should exercise skill and attend to which transformations must be used to reach the desired conclusion.\n\n**Author's footnote.** This is a syllogism of equality. The predicate-complemented proposition follows from the original's contrapositive, since it is the simple converse of that contrapositive; the contrapositive follows from the original; and what follows from a consequence follows from its ground.\n\n**Second observation: transforming a complemented predicate.** In contraposition and predicate-complementation we have used two truth-preserving transformations. In fact, both belong to predicate-complementation. Because they are self-evident, however, we used them as grounds of proof before proving the rule for predicate-complementation, and consequently did not then give them that name. They are:\n\nA. Transforming an affirmative with a complemented predicate into a negative with an uncomplemented predicate, keeping the same quantity. Their import is the same; the difference is that negation is predicated in the affirmative, whereas predication is negated in the negative.\n\nB. Transforming a negative with a complemented predicate into an affirmative with an uncomplemented predicate, keeping the same quantity. Negation of negation is affirmation. This is clear and self-evident.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete continuous authorial passage from Rafed’s digitally presented Dār al-Taʿāruf 1402 AH text, displayed page(s) 187–188; Arabic kaf/ya and paragraph/table whitespace normalized. Displayed pagination is recorded, not silently equated with a scanned print. Original symbolic readings remain in Arabic even where damaged; each conjectural English reconstruction is identified. The 1968 institutional scan has not been collated for this unit."
+        },
+        {
+          "type": "Authorial note retained",
+          "text": "The footnote explaining the syllogism of equality on displayed p187 has been retained and translated. It belongs to the original source presentation; the later b1728 edition adds further numbered notes that are not imported into this authorial text."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "187–188",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=187&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-43",
+      "stage": "C",
+      "chapter": 43,
+      "title": "Seven exercises on obversion and methods of proof",
+      "arabicTitle": "تمرينات على نقض المحمول",
+      "arabic": "تمرينات\n\n ١ ـ برهن على نقض محمول الموجبة الكلية بطريق البرهان على كذب النقيض.\n\n ٢ ـ برهن على نقض محمول السالبة الجزئية بطريق البرهان على كذب النقيض.\n\n ٣ ـ برهن على نقض محمول السالبة الجزئية بطريقة تحويل الاصل بأخذ عكس النقيض الموافق اولا ثم استمر الى أن تستخرج منقوضة المحمول.\n\n ٤ ـ جرب هل يمكن البرهان على نقض محمول الموجبة الجزئية بطريقة تحويل الاصل.\n\n ٥ ـ برهن على نقض محمول السالبة الكلية بطريقة تحويل الاصل. وانظر ماذا ستكون النتيجة وبين ما تجده.\n\n ٦ ـ برهن على عكس النقيض المخالف والموافق لكل من المحصورات. عدا الموجبة الجزئية بطريقة تحويل الاصل واستخدم لهذا الغرض قاعدتي نقض المحمول والعكس المستوي فقط.\n\n ٧ ـ جرب أن تبرهن على عكس النقيض المخالف والموافق للموجبة الجزئية بهذه الطريقة وانظر انك ستقف فلا تستطيع الوصول الى النتيجة فبين أسباب الوقوف.",
+      "english": "1. Prove predicate-complementation of the universal affirmative by the method of establishing the falsity of its contradictory.\n\n2. Prove predicate-complementation of the particular negative by the method of establishing the falsity of its contradictory.\n\n3. Prove predicate-complementation of the particular negative by transforming the original: first take its contrapositive retaining quality, then continue until you obtain its predicate-complemented form.\n\n4. Try whether predicate-complementation of the particular affirmative can be proved by transforming the original.\n\n5. Prove predicate-complementation of the universal negative by transforming the original. Observe what the result will be, and explain what you find.\n\n6. Prove contraposition changing quality and retaining quality for each quantified form except the particular affirmative, using the method of transforming the original. For this purpose use only the rules of predicate-complementation and simple conversion.\n\n7. Try to prove contraposition changing quality and retaining quality for the particular affirmative by this method. Notice that you will come to a halt and be unable to reach the result; explain the reasons for that halt.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete continuous authorial passage from Rafed’s digitally presented Dār al-Taʿāruf 1402 AH text, displayed page(s) 189–189; Arabic kaf/ya and paragraph/table whitespace normalized. Displayed pagination is recorded, not silently equated with a scanned print. Original symbolic readings remain in Arabic even where damaged; each conjectural English reconstruction is identified. The 1968 institutional scan has not been collated for this unit."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "189",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=189&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-44",
+      "stage": "C",
+      "chapter": 44,
+      "title": "Complete complementation and subject-complementation of the universals",
+      "arabicTitle": "قاعدة النقض التام ونقض الموضوع في الكليتين",
+      "arabic": "قاعدة النقض التام ونقض الموضوع\n\n لاستخراج (منقوضة الطرفين) صادقة علينا أن نستبدل بموضوع القضية الاصلية نقيضه فنجعله موضوعا وبمحمولها نقيضه فنجعله محمولا مع تغيير الكم دون الكيف.\n\n ولاستخراج (منقوضة الموضوع) صادقة علينا أن نستبدل بموضوع القضية الاصلية نقيضه فنجعله موضوعا ونبقي المحمول على حاله مع تغيير الكم والكيف معا.\n\n ولا ينقض بهذين النقضين الا الكليتان. ولا بد من البرهان لكل من المحصورات :\n\n ١ ـ (الموجبة الكلية) نقضها التام موجبة جزئية ونقض موضوعها سالبة جزئية نحو كل فضة معدن فنقضها التام : (بعض اللافضة هو لا معدن) ونقض موضوعها : (بعض اللافضة ليس هو معدنا).\n\n وللبرهان على ذلك نقول :\n\n    المفروض صدق\nكل ب حـ\n\n   والمدعي صدق\nع بَ حَـ\n(المطلوب الاول)\nوصدق\nس بَ حـ\n(المطلوب الثاني)\nالبرهان :\n\n    اذا صدق\nكل ب حـ\n\n   صدق\nكل حَـ بَ\nعكس النقيض الموافق\nفيصدق عكسه المستوي\nع بَ حَـ\n(وهو المطلوب الاول)\nوتنقض محمول هذا الاخير فيحدث س بَ حـ (وهو المطلوب الثاني)\n\n ٢ ـ (السالبة الكلية) نقضها التام سالبة جزئية ونقض موضوعها موجبة جزئية نحو : لا شيء من الحديد بذهب فنقضها التام : (بعض اللاحديد ليس بلا ذهب) ونقض موضوعها : (بعض اللاحديد ذهب).\n\n وللبرهان على ذلك نقول :\n\n    المفروض صدق\nلا ب حـ\n\n   والمدعي صدق\nس بَ حَـ\n(المطلوب الاول)\nوصدق\nع بَ حَـ\n(المطلوب الثاني)\nالبرهان :\n\n    اذا صدق\nلا ب حـ\n\n   صدق\nلا حـ ب\nالعكس المستوي\nفيصدق عكس نقيضه الموافق\nس بَ حَـ\n(وهو المطلوب الاول)\nوننقض محمول هذا الأخير فيحدث ع بَ حـ (وهو المطلوب الثاني)",
+      "english": "To obtain a true proposition **complemented in both terms**, replace the original subject by its complement and make it the subject, and replace the original predicate by its complement and make it the predicate, changing quantity but not quality.\n\nTo obtain a true **subject-complemented** proposition, replace the original subject by its complement and make it the subject, while leaving the predicate unchanged, changing both quantity and quality.\n\nOnly the two universal propositions admit these two forms of complementation. We must give the proof for each of the quantified forms.\n\n**1. Universal affirmative.** Complete complementation gives a particular affirmative; subject-complementation gives a particular negative. Thus, from “All silver is mineral,” complete complementation gives “Some non-silver is non-mineral,” and subject-complementation gives “Some non-silver is not mineral.”\n\nFor the proof, assume that “All B are C” is true. The first claim is that “Some non-B are non-C” is true; the second, that “Some non-B are not C” is true.\n\nProof: “All B are C” gives “All non-C are non-B” by contraposition retaining quality. Simple conversion gives “Some non-B are non-C,” which is the first conclusion. Predicate-complementation of this last proposition gives “Some non-B are not C,” which is the second conclusion.\n\n**2. Universal negative.** Complete complementation gives a particular negative; subject-complementation gives a particular affirmative. Thus, from “No iron is gold,” complete complementation gives “Some non-iron is not non-gold,” and subject-complementation gives “Some non-iron is gold.”\n\nFor the proof, assume that “No B is C” is true. The first claim is that “Some non-B are not non-C” is true. The second is intended to be “Some non-B are C.” **The digital statement of this second claim reads “Some non-B are non-C”; the wording of the example and the final line of the proof instead give the uncomplemented C.**\n\nProof: “No B is C” gives “No C is B” by simple conversion. Its contrapositive retaining quality is “Some non-B are not non-C,” which is the first conclusion. Predicate-complementation of this last proposition gives “Some non-B are C,” which is the second conclusion.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete continuous authorial passage from Rafed’s digitally presented Dār al-Taʿāruf 1402 AH text, displayed page(s) 190–191; Arabic kaf/ya and paragraph/table whitespace normalized. Displayed pagination is recorded, not silently equated with a scanned print. Original symbolic readings remain in Arabic even where damaged; each conjectural English reconstruction is identified. The 1968 institutional scan has not been collated for this unit."
+        },
+        {
+          "type": "Unresolved symbolic reading",
+          "text": "Displayed p191 states the second goal of the universal-negative case as «ع بَ حَـ», while its own concluding line reads «ع بَ حـ», matching the gold example. Arabic unchanged; English marks the mismatch. The b1728 digital text p224 repeats it."
+        },
+        {
+          "type": "Existential conditions",
+          "text": "The universal-to-particular steps are the author’s traditional inferences. In modern semantics allowing empty terms, the universal-affirmative inversion requires a nonempty non-C class, and the universal-negative inversion requires a nonempty C class. These requirements should not be confused with a merely mechanical change of quantifier."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "190–191",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=190&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-45",
+      "stage": "C",
+      "chapter": 45,
+      "title": "Why neither particular admits complete or subject complementation",
+      "arabicTitle": "الجزئيتان لا نقض تام لهما ولا نقض موضوع",
+      "arabic": "٣ و٤ ـ (الجزئيتان) ليس لهما نقض تام ولا نقض موضوع. وللبرهنة لعي ذلك يكفي البرهان على عدم نقضهما الى الجزئية فيعلم بطريق اولي عدم نقضهما\n\n الي الكلية كما قدمنا في عدم انعكاس الموجبة الجزئية بعكس النقيض فنقول :\n\n (في الموجبة الجزئية) :\n\n    المفروض صدق\nع ب حـ\n\n   المدعي ال تصدق دائما\nع بَ حَـ\n(المطلوب الاول)\nولا تصدق دائما\nس بَ حَـ\n(المطلوب الثاني)\nالبرهان :\n\n تقدم في عكس النقيض في الموجبة الجزئية ان في بعض تقاديرها تكون النسبة بين نقيضي طرفيها التباين الكلي فتصدق حينئذ السالبة الكلية :\nلا بَ حَ\n\n   فيكذب نقيضها\nع بَ حَـ\n(وهو المطلوب الاول)\nوتصدق أيضا منقوضة محمول هذه السالبة الكلية\nكل بَ حـ\n\n   فيكذب نقيضها\nس بَ حَـ\n(وهو المطلوب الثاني)\n(وفي السالبة الجزئية) :\n\n    المفروض صدق\nس ب حـ\n\n   والمدعي لا تصدق دائما\nس بَ حَـ\n(المطلوب الاول)\nولا تصدق دائما\nع بَ حـ\n(المطلوب الثاني)\nالبرهان :\n\n في السالبة الجزئية قد يكون الموضوع أعم من المحمول مطلقا نحو بعض الحيوان ليس بانسان ولما كان :\n\n (اولا) نقيض الاعم اخص من نقيض الاخص مطلقا. فتصدق اذن الموجبة الكلية :\nكل بَ حَـ\n\n   فيكذب نقيضها\nس بَ حَـ\n(وهو المطلوب الاول)\nو(ثانيا) نقيض الاعم يباين عين الاخص تباينا كليا فتصدق اذن السالبة الكلية :\nلا بَ حـ\n\n   فيكذب نقيضها\nع بَ حـ\n(وهو المطلوب الثاني)",
+      "english": "**3 and 4. The two particulars.** Neither has complete complementation or subject-complementation. To prove this, it is enough to show that neither operation yields a particular proposition; failure to yield a universal then follows all the more readily, as explained when showing that the particular affirmative has no contrapositive.\n\n**The particular affirmative.** Assume “Some B are C” is true. The first claim is that “Some non-B are non-C” is not invariably true. The second is intended to be that “Some non-B are not C” is not invariably true. **In stating this second goal the digital text instead prints “Some non-B are not non-C.”**\n\nProof: in discussing contraposition of the particular affirmative, we explained that its complementary terms can, in some cases, be completely disjoint. “No non-B is non-C” is then true. Its contradictory, “Some non-B are non-C,” is false, which establishes the first conclusion.\n\nThe predicate-complemented form of that universal negative is also true: “All non-B are C.” Its contradictory is therefore false. **Here again the digital text prints “Some non-B are not non-C”; the contradictory of the immediately preceding universal is “Some non-B are not C.”** This establishes the intended second conclusion.\n\n**The particular negative.** Assume “Some B are not C” is true. The first claim is that “Some non-B are not non-C” is not invariably true. The second is that “Some non-B are C” is not invariably true.\n\nProof: the subject of a particular negative may be strictly more extensive than its predicate, as in “Some animals are not human.”\n\nFirst, the complement of the more extensive term is strictly less extensive than the complement of the less extensive term. Therefore “All non-B are non-C” is true. Its contradictory, “Some non-B are not non-C,” is false, which establishes the first conclusion.\n\nSecond, the complement of the more extensive term is completely disjoint from the less extensive term itself. Hence “No non-B is C” is true. Its contradictory, “Some non-B are C,” is false, which establishes the second conclusion.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete continuous authorial passage from Rafed’s digitally presented Dār al-Taʿāruf 1402 AH text, displayed page(s) 191–192; Arabic kaf/ya and paragraph/table whitespace normalized. Displayed pagination is recorded, not silently equated with a scanned print. Original symbolic readings remain in Arabic even where damaged; each conjectural English reconstruction is identified. The 1968 institutional scan has not been collated for this unit."
+        },
+        {
+          "type": "Unresolved symbolic reading",
+          "text": "Displayed pp191–192 twice gives «س بَ حَـ» for the second goal in the particular-affirmative case, whereas subject-complementation leaves C unchanged and the preceding «كل بَ حـ» has contradictory «س بَ حـ». Both displayed occurrences remain in Arabic. The b1728 pp224–225 digital presentation repeats the same problem."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "191–192",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=191&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      }
+    },
+    {
+      "id": "M-C-46",
+      "stage": "C",
+      "chapter": 46,
+      "title": "The author’s table of relations among quantified propositions",
+      "arabicTitle": "لوح نسب المحصورات",
+      "arabic": "لوح نسب المحصورات\n\n    الاصل\n\n النقيض\n\n العكس المستوي\n\n عكس النقيض الموافق\n\n عكس النقيض المخالف\n\n نقض المحمول\n\n نقض الطرفين\n\n نقض الموضوع\nكل ب حـ\n\n س ب حـ\n\n ع حـ ب\n\n كل حَـ بَ\n\n لا حَـ ب\n\n لا ب حـ\n\n ع بَ حـ\n\n س بَ حـ\nع ب حـ\n\n لاب حـ\n\n ع حـ ب\n\n س ب حَـ\nلا ب حـ\n\n ع ب حـ\n\n لا حـ ب\n\n س حَـ بَ\n\n ع حَـ ب\n\n كل ب حَـ\n\n س بَ حَـ\n\n ع بَ حـ\nس ب حـ\n\n كل ب حـ\n\n س حَـ بَ\n\n ع حَـ ب\n\n ع ب حَـ",
+      "english": "**Table of relations among the quantified propositions.** The source supplies eight headings: original proposition; contradictory; simple converse; contrapositive retaining quality; contrapositive changing quality; predicate-complemented form; form complemented in both terms; and subject-complemented form.\n\nFor compact display, A(B,C) means “All B are C”; I(B,C), “Some B are C”; E(B,C), “No B is C”; and O(B,C), “Some B are not C.” Here ¬B and ¬C name the complementary terms, not negations of whole propositions.\n\nThe following table **reconstructs the intended alignment from the preceding authorial proofs**. Two complement marks missing in the digital table's universal-affirmative column are restored only in this English reconstruction; the Arabic retains the digital readings. A dash records the absence of a generally valid transform in the author's account. Several universal-to-particular entries require distinct nonempty-class premises, specified in the accompanying note; they are not valid under unrestricted empty-term semantics.\n\n| Relation | Universal affirmative A(B,C) | Particular affirmative I(B,C) | Universal negative E(B,C) | Particular negative O(B,C) |\n| --- | --- | --- | --- | --- |\n| Contradictory | O(B,C) | E(B,C) | I(B,C) | A(B,C) |\n| Simple converse | I(C,B) | I(C,B) | E(C,B) | — |\n| Contrapositive retaining quality | A(¬C,¬B) | — | O(¬C,¬B) | O(¬C,¬B) |\n| Contrapositive changing quality | E(¬C,B) | — | I(¬C,B) | I(¬C,B) |\n| Predicate-complemented form | E(B,¬C) | O(B,¬C) | A(B,¬C) | I(B,¬C) |\n| Both terms complemented | I(¬B,¬C) | — | O(¬B,¬C) | — |\n| Subject-complemented form | O(¬B,C) | — | I(¬B,C) | — |\n\n**Digital-source record.** In the universal-affirmative column, the predicate-complemented entry is actually printed as «لا ب حـ»—E(B,C)—and the entry for both terms complemented as «ع بَ حـ»—I(¬B,C). Both conflict with the corresponding preceding prose proofs. The particular columns also omit blank placeholders in the HTML, so their surviving entries cannot simply be aligned by row position. This remains an editorial reconstruction. A targeted comparison with the independent 1968 Najaf edition (printed p.221, NYU canvas225) confirms the row alignment and the C-complement mark in the predicate-complemented entry, but its entry for both terms complemented also lacks the C-complement mark. That second restoration remains conjectural; the 1402 printed edition has not been image-collated.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete continuous authorial passage from Rafed’s digitally presented Dār al-Taʿāruf 1402 AH text, displayed page(s) 193; Arabic kaf/ya and paragraph/table whitespace normalized. Displayed pagination is recorded, not silently equated with a scanned print. Original symbolic readings remain in Arabic even where damaged; each conjectural English reconstruction is identified. A targeted comparison with the independent 1968 scan is recorded below; this is not a complete collation."
+        },
+        {
+          "type": "Table transcription and reconstruction",
+          "text": "The complete displayed p.193 digital table is preserved in Arabic as its original ordered columns. English supplies an explicitly editorial aligned table derived from the preceding proofs. The independent 1968 print p.221 confirms the row alignment and the C-complement mark in the universal affirmative’s predicate-obversion cell. Its both-terms-complemented cell also omits the C-complement mark; that restoration remains conjectural. Rafed b1728 p.226 repeats the defective digital table. The 1402 printed edition itself has not been image-collated."
+        },
+        {
+          "type": "Existential conditions",
+          "text": "The contradictory row gives the denial of the original; the other populated cells are presented as consequences of the original. In modern set semantics allowing empty terms, the simple converse of A(B,C) and both contrapositives of E(B,C) require B to be nonempty. The forms complementing both terms or the subject alone require different existence premises: from A(B,C), non-C must be nonempty; from E(B,C), C must be nonempty. These last premises do not follow merely from B being nonempty. The other populated consequences need no additional existence premise. The proofs on displayed pp190–191 give no separate statement that the required C or non-C class exists."
+        },
+        {
+          "type": "Targeted independent print comparison",
+          "text": "Visual comparison with the independent Najaf: Maṭbaʿat al-Nuʿmān, 1968 edition, printed p.221 (Princeton/NYU canvas225), confirms the table alignment and the C-complement mark in the universal-affirmative predicate-obversion cell. Its both-terms-complemented cell still reads «ع بَ حـ», without the C-complement mark, so that English restoration remains conjectural. The 1402 printed edition itself has not been image-collated.",
+          "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/225/full/!1600,2200/0/default.jpg"
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "193",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=193&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "targetedIndependentWitness": "1968 Najaf, Maṭbaʿat al-Nuʿmān, Princeton/NYU canvases225–227; only the table and final examples checked"
+      }
+    },
+    {
+      "id": "M-C-47",
+      "stage": "C",
+      "chapter": 47,
+      "title": "The logical axiom of immediate transformation",
+      "arabicTitle": "البديهة المنطقية أو الاستدلال المباشر البديهي",
+      "arabic": "البديهة المنطقية\n\n أو\n\n الاستدلال المباشر البديهي\n\n جميع ما تقدم من احكام القضايا (النقيض والعكوس والنقض) هي من نوع الاستدلال المباشر بالنسبة الى القضية المحولة عن الاصل أي النقيض والعكس والنقض لأنه يستدل في النقض من صدق احدي القضيتين على كذب الاخري وبالعكس ويستدل في الباقي من صدق الاصل على صدق ما حول اليه عكسا أو نقضا أو من كذب العكس والنقض على كذب الاصل.\n\n وسميناه مباشرا لأن انتقال اذهن الى المطلوب أعني كذب القضية أو صدقها انما يحصل من قضية واحدة معلومة فقط بلا توسط قضية أخري.\n\n وقد تقدم البرهان على كل نوع من أنواع الاستدلال المباشر. وبقي نوع آخر منه بديهي لا يحتاج الى أكثر من بيانه. وقد يسمي (البديهية المنطقية) فنقول :\n\n من البديهيات في العلوم الرياضية انه اذا أضفت شيئا واحداً الى كل من الشيئين المتساويين فان نسبة التساوي لا تتغير فلو كان :\n\n ب = حـ\n\n وأضفت الى كل منهما عددا معينا مثل عدد (٤) لكان :\n\n ب + ٤ = حـ + ٤\n\n وكذلك اذا طرحت من كل منهما عددا معينا أو ضربتهما فيه أو قسمتهما عليه كعدد ٤ فان نسبة التساوي لا تتغير فيكون :\n\n ب ـ ٤ = حـ ـ ٤\n\n وب * ٤ = حـ * ٤\n\nو ب = حـ\n\n وكذا لا تتغير النسبة لو كان ب أكبر من حـ أو أصغر منه فانه يكون\n\n ب + ٤ اكبر من حـ + ٤ او اصغر منه\n\n و ب ـ ٤ اكبر من حـ ـ ٤ أو اصغر منه وهكذا\n\n ونظير ذلك نقول في القضية فانه لو صح أن تزيد كلمة على موضوع القضية ونفس الكلمة على محمولها فان نسبة القضية لا تتغير بمعني بقاء الكم والكيف والصدق. فاذا صدق : كل انسان حيوان واضفت كلمة (رأس) الى طرفيها\n\n صدق : كل (رأس) انسان (رأس) حيوان.\n\n أو اضفت كلمة (يجب) مثلا\n\n صدق : كل (من يجب) انسانا (يحب) حيوانا\n\n واذا صدق : لا شيء من الحيوان بحجر\n\n صدق : لا شيء من الحيوان (مستلقيا) بحجر (مستلقيا)\n\n واذا صدق : بعض المعدن ليس بذهب\n\n صدق : بعض (قطعة) المعدن ليس (بقطعة) ذهب\n\n وهكذا يمكن لك أن تحول كل قضية صادقة الى قضية أخري صادقة بزيادة كلمة تصح زيادتها على الموضوع والمحمول معا بغير تغيير في كم القضية وكيفها سواء كانت الكلمة مضافة أو حالا أو وصفا أو فعلا او اي شيء آخر من هذا القبيل.",
+      "english": "All the preceding laws of propositions—contradiction, conversion and complementation—are forms of immediate inference with respect to the proposition transformed from the original: its contradictory, converse or complemented form. In the first case, one infers the falsity of one proposition from the truth of the other, and conversely. In the remaining cases, one infers the truth of the converted or complemented proposition from the truth of the original, or the falsity of the original from the falsity of its converse or complemented form. **At the first case the digital Arabic says “in complementation”; the context, the truth-to-falsity description and the contrast with the remaining cases indicate contradiction.**\n\nWe called it immediate because the mind reaches the required truth or falsity of the proposition from just one known proposition, without an intervening proposition. The proof for every type of immediate inference has already been given. One further type remains; it is self-evident and needs no more than an explanation. It may be called “the logical axiom.”\n\nIt is self-evident in mathematics that adding the same thing to two equal things does not change their relation of equality. If B = C, and a definite number, such as 4, is added to each, then B + 4 = C + 4. Likewise, subtracting a definite number from each, multiplying them by it, or dividing them by it—as with 4—does not alter equality. Thus B − 4 = C − 4, B × 4 = C × 4, and B ÷ 4 = C ÷ 4. **For the division line, the Rafed digital source displays only “B = C”; the full division equation given here is visible in the independent 1968 Najaf edition, printed p.223.**\n\nLikewise, if B is greater or less than C, the relation remains unchanged: B + 4 is greater or less than C + 4; B − 4 is greater or less than C − 4; and similarly for the other operations.\n\nWe say something analogous about a proposition. **If it is correct to add** a word to its subject and the same word to its predicate, the relation expressed by the proposition does not change: its quantity, quality and truth are preserved. Suppose “Every human is an animal” is true. Adding “head” to both terms gives the true statement “Every human's head is an animal's head.” Or, adding the verb “loves,” the intended example is “Everyone who loves a human loves an animal.” **The digital text instead has «يجب» in its introduction and subject phrase, but «يحب» in the predicate; “loves” in the first two places is supported by the independent 1968 Najaf edition, printed p.223, which reads «يحب» in all three positions.**\n\nIf “No animal is a stone” is true, then “No animal lying down is a stone lying down” is true. If “Some mineral is not gold” is true, then “Some piece of mineral is not a piece of gold” is true.\n\nIn this way, a true proposition can be transformed into another true proposition by adding a word that can correctly be added to both subject and predicate, without changing the proposition's quantity or quality. That word may form a possessive construction, express a circumstance, be an adjective, be a verb, or be another expression of this kind.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete continuous authorial passage from Rafed’s digitally presented Dār al-Taʿāruf 1402 AH text, displayed page(s) 194–195; Arabic kaf/ya and paragraph/table whitespace normalized. Displayed pagination is recorded, not silently equated with a scanned print. Original symbolic readings remain in Arabic even where damaged; each conjectural English reconstruction is identified. A targeted comparison with the independent 1968 scan is recorded below; this is not a complete collation."
+        },
+        {
+          "type": "Digital readings and targeted print evidence",
+          "text": "Displayed p.194 has «في النقض» where the author describes the truth/falsity reversal of contradiction; the 1968 print also retains this wording, so its contextual interpretation remains marked. Displayed p.195 omits both divisors in the division example and has «يجب / من يجب» against «يحب» in the predicate. The independent 1968 print p.223 supplies division by 4 on both sides and «يحب» in all three positions. The English adopts these independently supported readings while the Arabic preserves the digital-source record. Rafed b1728 repeats the digital problems and is not the source of the corrected readings."
+        },
+        {
+          "type": "Logical scope of the final rule",
+          "text": "The conditional «لو صح» and concluding «كلمة تصح زيادتها» restrict permissible additions. The paragraph is not translated as permission to apply every verb, intensional context or quantifier-taking operator indiscriminately to both terms. The arithmetic example uses positive 4, so it does not address inequality reversal under multiplication by a negative number."
+        },
+        {
+          "type": "Targeted independent print comparison",
+          "text": "The independent Najaf: Maṭbaʿat al-Nuʿmān, 1968 edition, printed p.223 (Princeton/NYU canvas227), visibly prints «ب ÷ ٤ = حـ ÷ ٤» and «يحب / من يحب / يحب». These support the full division equation and the matching loves example in English. The preceding heading page (canvas226, between printed221 and223) retains «في النقض», so its contextual contradiction reading is still qualified. This is targeted earlier-edition evidence, not a full collation or verification of the 1402 print.",
+          "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/227/full/!1600,2200/0/default.jpg"
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "194–195",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=194&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "targetedIndependentWitness": "1968 Najaf, Maṭbaʿat al-Nuʿmān, Princeton/NYU canvases225–227; only the table and final examples checked"
+      }
+    },
+    {
+      "id": "M-V-01",
+      "stage": "V",
+      "chapter": 1,
+      "title": "Book V: argument, its aim, and the three methods of inference",
+      "arabicTitle": "الباب الخامس: الحجة وهيئة تأليفها — تصدير وطرق الاستدلال",
+      "arabic": "البابُ الخامِس\n\n الحُجّة وَهَيئة تألِيفها\n\n أو\n\n مَباحثُ الاسْتِدلالِ\n\nتصدير ان اسمي هدف للمنطقي وأقصي مقصد له (مباحث الحجة) أي مباحث المعلوم التصديقي الذي يستحدم للتوصل الى معرفة المجهول التصديقي. أما ما تقدم من الابواب فكلها في الحقيقة مقدمات لهذا المقصد حتي مباحث المعرف لان المعرف انما يبحث عنه ليستعان به على فهم مفردات القضية من الموضوع والمحمول.\n\n و(الحجة) عندهم عبارة عما يتألف من قضايا يتجه بها الى مطلوب يستحصل بها وانما سميت (حجة) لانه يحتج بها على الخصم لاثبات المطلوب وتسمي (دليلا) لانها تدل على المطلوب وتهيئتها وتأليفها لاجل الدلالة يسمي (استدلالا).\n\n ومما يجب التنبيه عليه قبل كل شيء : ان القضايا ليست كلها يجب أن تطلب بحجة والا لما انتهينا الى العلم بقضية أبدا بل لا بد من الانتهاء الى قضايا بديهية ليس من شأنها ان تكون مطلوبة وانما هي المباديء للمطالب وهي رأس المال للمتجر العلمي.\n\n طريق الاستدلال او اقسام الحجة من منا لم يحصل له العلم بوجود النار عند رؤية الدخان ومن ذا الذي لا يتوقع صوت الرعد عند مشاهدة البرق في الحساب؟ ومن ذا الذي لا يستنبط أن النوم يجم القوي وأن الحجر يبتل بوضعه في الماء وان السكينة تقطع الاجسام الطرية؟ وقد نحكم على شخص بأنه كريم لانه يشبه في بعض صفاته كريما نعرفه أو نحكم على قلم بأنه حسن لأنه يشبه قلما جربناه ... وهكذا الى آلاف من أمثال هذه الاستنتاجات تمر علينا كل يوم.\n\nوفي الحقيقة ان هذه الاستنتاجات الواضحة التي لا يخلو منها ذو شعور ترجع كلها الى أنواع الحجة المعروفة التي نحن بصدد بيانها ولكن على الاكثر لا يشعر المستنبط انه سلك أحد تلك الانواع وان كان من علماء المنطق. وقد تعجب لو قيل لك أن تسعة وتسعين في المائة من الناس هم منطقيون بالفطرة من حيث لا يعلمون.\n\n ولما كان الانسان من ذلك يقع في كثير من الخطأ في أحكامه او يتعذر عليه تحصيل مطلوبه لم يستغن عن دراسة الطرق العلمية للتفكير الصحيح والاستدلال المنتج.\n\n والطرق العلمية للاستدلال عدا طريق الاستدلال المباشر الذي تقدم البحث عنه هي ثلاثة أنواع رئيسة :\n\n ١ ـ (القياس) وهو أن يستخدم الذهن القواعد العامة المسلم بصحتها في الانتقال الى مطلوبه. وهو العمدة في الطرق.\n\n ٢ ـ (التمثيل) وهو أن ينتقل الذهن من حكم أحد الشيئين الى الحكم على الآخر لجهة مشتركة بينهما.\n\n ٣ ـ (الاستقراء) وهو ان يدرس الذهن عدة جزئيات قيستنبط منها حكما عاما.",
+      "english": "**Book V: argument and the form of its composition, or the study of inference.**\n\n**Preface.** The logician's highest aim and ultimate purpose is the study of argument: the known assent that is used to reach knowledge of an unknown assent. All the preceding books are, in reality, preliminaries to this purpose, including the discussion of definition, since a defining account is examined in order to help us understand the individual terms of a proposition, its subject and predicate.\n\nAn **argument** (*ḥujja*) is, in their terminology, something composed of propositions directed toward a conclusion that is obtained through them. It is called a *ḥujja* because it is advanced against an opponent to establish the conclusion. It is also called an **indication** or **proof** (*dalīl*) because it points to the conclusion. Preparing and combining it for that purpose is called **inference** (*istidlāl*).\n\nBefore anything else, one point must be noted. Not every proposition must be sought by means of an argument. Otherwise we would never arrive at knowledge of any proposition. We must eventually reach self-evident propositions, whose nature is not to be sought in that way. They are the principles of what is sought, and the capital of the enterprise of knowledge.\n\n**The methods of inference, or divisions of argument.** Who among us has not learned that there is fire upon seeing smoke? Who does not expect the sound of thunder on seeing lightning in the clouds? Who does not infer that sleep restores strength, that a stone becomes wet when placed in water, and that a knife cuts soft bodies? We may judge someone to be generous because that person resembles someone we know to be generous in some characteristics, or judge a pen to be good because it resembles a pen we have tried. Thousands of such inferences pass before us every day.\n\nIn fact, these obvious inferences, from which no sentient person is entirely without a share, all return to the recognized kinds of argument we are about to explain. Usually, however, the person making the inference does not notice which of those kinds has been employed, even if that person is a scholar of logic. You might be surprised to be told that ninety-nine per cent of people are natural logicians without knowing it.\n\nYet human beings make many mistakes in their judgments or are unable to obtain the conclusions they seek. They therefore cannot dispense with studying systematic methods of correct thinking and productive inference.\n\nApart from immediate inference, which has already been discussed, the systematic methods of inference fall into three principal kinds:\n\n1. **Syllogism** (*qiyās*): the mind uses general rules accepted as correct to move to the conclusion sought. This is the principal method.\n2. **Analogy** (*tamthīl*): the mind passes from a judgment about one of two things to a judgment about the other because of a feature shared between them.\n3. **Induction** (*istiqrāʾ*): the mind examines a number of particulars and derives a general judgment from them.",
+      "notes": [
+        {
+          "type": "Source status",
+          "text": "Complete continuous authorial passage from Rafed’s digitally presented Dār al-Taʿāruf 1402 AH text, displayed page(s) 198–199; Arabic kaf/ya and paragraph/table whitespace normalized. Displayed pagination is recorded, not silently equated with a scanned print. Original symbolic readings remain in Arabic even where damaged; each conjectural English reconstruction is identified. The 1968 institutional scan has not been collated for this unit."
+        },
+        {
+          "type": "Authorial heading and pagination",
+          "text": "The Book V title is displayed separately at Rafed p196, followed by blank p197. Its preface and three methods are pp198–199; the definition of syllogism begins p200. The English heading translates the p196 title, which is also prefixed to this unit’s Arabic. Do not call p198 the end of Book IV."
+        },
+        {
+          "type": "Digital spelling and rhetorical claim",
+          "text": "Displayed p198 has «السحاب» corrupted to «الحساب» in the lightning example and «يستحدم» for «يستخدم»; the English renders the evident contextual sense and this note records the digital anomalies. The “ninety-nine per cent” assertion is the author’s rhetoric, not a verified statistic."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "198–199",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=198&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
       }
     }
   ],

@@ -1,11 +1,11 @@
 NIHĀYAT AL-ḤIKMA
 Sayyid Muḥammad Ḥusayn al-Ṭabāṭabāʾī
-English working translation · prepared 4 November 2026
-Coverage: 136/136 reading sections, including 130 numbered chapters.
+English working translation · prepared 4 November 2026; revised 10 November 2026
+Coverage: 136/136 reading units, including 130 numbered chapters.
 Fresh AI-assisted translation from the authorial Arabic corpus; not a reproduction of a published English version.
-Selected printed passages checked against Qum 1404. The full Arabic transcription and English translation have not received exhaustive independent specialist review.
+136/136 complete local Arabic–English readings. IX.9 fully compared with the Qum 1404 printed facsimile pp.210–212 and the 1428 digital edited chapter, vol.2 pp.107–110; other external checks are targeted. No exhaustive independent whole-work or specialist review.
 Per-unit locators follow the Qum 1417 transcription. They are not PDF page numbers in the Qum 1404 witness.
-The author’s text follows. Notes identified as translation or textual are editorial additions, not part of the original.
+The author’s text follows. Translation notes, textual apparatus and later-editor commentary are separately attributed.
 
 
 Author’s Introduction
@@ -60,7 +60,7 @@ Second, since its subject is the most general of things, and nothing outside it 
 
 Such propositions, together with their opposites, return to propositions with a disjunctive predicate whose alternatives are coextensive with existence in general, as when we say, “Every existent is either actual or potential.” Most philosophical questions therefore proceed by division: dividing the existent into necessary and contingent; dividing the contingent into substance and accident; dividing substance into immaterial and material; dividing the immaterial into intellect and soul; and so forth.
 
-Third, the propositions of philosophy are formulated by reversing the direction of predication. Our statements, “The necessary exists” and “The contingent exists,” mean, “Existence is sometimes necessary and sometimes contingent.” Our statement, “Necessity is either intrinsic or through another,” means, “The necessary existent is divided into what is necessary in itself and what is necessary through another.”
+Third, the propositions of philosophy are formulated by reversing the direction of predication. Our statements, “The necessary exists” and “The contingent exists,” mean, “Existence is necessary in some instances and contingent in others.” Our statement, “Necessity is either intrinsic or through another,” means, “The necessary existent is divided into what is necessary in itself and what is necessary through another.”
 
 Fourth, since this discipline has the most general subject of all disciplines, and nothing whatsoever falls outside its subject and the predicates that refer back to it, no end external to it can be conceived for whose sake the discipline is pursued.
 
@@ -227,6 +227,14 @@ What has preceded also shows that a concept is a quiddity only if it has an exte
 
 [translation note] Iʿtibārī is rendered “derivative” where quiddity is contrasted with primary existence; the text does not thereby deny that quiddities truly exist through existence. “The order of things themselves” renders nafs al-amr, whose scope the author explains in the seventh consequence.
 
+[Textual emendation · 1428 AH editor note] At N-I-02, the 1417 AH base witness reads «ولو كانت عين الوجود لم يجز أن تسلب عن نفسها». The 1428 AH revised edition prints «ولو كانت عين الوجود لم يجز أن يسلب عنها» and explicitly records the earlier reading in footnote 1 (vol. 1, p. 18), calling the printed version correct. The emended reading makes 'existence' the predicate that could not be negated of a quiddity identical with it. Adopted here as an explicitly attributed editorial emendation, not represented as a manuscript-attested authorial reading.
+Source: ʿAbbās ʿAlī al-Zāriʿī al-Sabzawārī (ed.), 1428 AH, vol. 1, p. 18 note 1; compare 1417 AH base
+https://lib.rafed.net/view.php?b_id=3108&page=18&type=c_fbook
+
+[Textual emendation · later editor note] At the argument distinguishing quiddity from existence, the Qum 1417 AH reading is «ولو كانت عين الوجود لم يجز أن تسلب عن نفسها». In the revised 1428 AH edition, al-Zāriʿī prints «ولو كانت عين الوجود لم يجز أن يسلب عنها» and states explicitly in footnote 1 that the former is found in the copies and that he regards the latter as correct. The main reader adopts the editor's grammatical correction and preserves the earlier copy reading in its passage note. No manuscript collation of this locus is independently claimed.
+Source: Nihāyat al-Ḥikma, vol. 1 (revised 1428 AH), p. 18 n. 1; compare Qum 1417 AH p. 18, edited by ʿAbbās ʿAlī al-Zāriʿī al-Sabzawārī
+https://lib.rafed.net/view.php?b_id=3108&page=18&type=c_fbook
+
 N-I-03 · Chapter Three: Existence Is a Graded Reality
 Source: Arabic transcription · Qum 1417 AH, p. 23–27
 https://lib.rafed.net/view.php?b_id=1642&page=23&type=c_fbook
@@ -271,6 +279,14 @@ Sixth: existence, with the breadth and expansiveness belonging to its reality, i
 
 [translation note] “Graded reality” renders ḥaqīqa mushakkaka: the degrees share the very reality by which they differ. The “ancient Persian sages” are the Fahlawiyyūn named in the Arabic.
 
+[Historical correction · later editor note] The 1428 AH editor's long note listing eight positions on the reality of existence (vol. 1, printed p. 34) groups ‘Tomas Akoims’ (Thomas Aquinas) with absolute equivocation between God and creatures. This attribution is inaccurate: Aquinas, Summa theologiae I, q. 13, a. 5, explicitly rejects both univocal and purely equivocal predication in favour of analogy. This correction concerns the later editor's note; it is not a criticism of an assertion in Tabatabai's authorial chapter. Primary reference: https://www.newadvent.org/summa/1013.htm.
+Source: 1428 AH Zāriʿī ed., vol. 1 pp. 33–34; Aquinas ST I q13 a5
+https://lib.rafed.net/view.php?b_id=3108&page=32&type=c_fbook
+
+[Authorial footnote attribution note] In the corrected 1428 AH witness (vol. 1, printed p. 36) the short footnote on negating a limit is explicitly marked ‘منه رحمه الله’ (‘from the author’). It explains that, because limitation has the character of negation, denying limitation is a negation of negation and therefore affirms the pure actuality of existence. The attribution is authorial; the surrounding longer explanatory footnotes belong to the later editor.
+Source: 1428 AH Zāriʿī ed., vol. 1, printed p. 36, note marked منه رحمه الله
+https://lib.rafed.net/view.php?b_id=3108&page=32&type=c_fbook
+
 N-I-04 · Chapter Four: Some Judgments Concerning Nonexistence
 Source: Arabic transcription · Qum 1417 AH, p. 28–30
 https://lib.rafed.net/view.php?b_id=1642&page=28&type=c_fbook
@@ -298,6 +314,10 @@ In other words, nothing can be asserted of what is absolutely nonexistent by com
 The foregoing also removes the suspicion of contradiction from several other propositions. For example, we say, “The particular is particular,” whereas it is itself a universal that applies to many things. We say, “The conjunction of contradictories is impossible,” whereas it is itself possible and exists in the mind. And we say, “A thing either subsists in the mind or does not subsist in it,” whereas what does not subsist in the mind does subsist in it, since it is something understood and exists with a mental existence.
 
 The particular is particular by primary predication, and a universal applying to many things by common predication. The conjunction of contradictories is possible by primary predication and impossible by common predication. What does not subsist in the mind does not subsist in it by primary predication, and does subsist in it by common predication.
+
+[Doxography · later editorial note note] The 1428 AH editor's note on the differentiation of non-existents (vol. 1, printed p. 38) cites Naṣīr al-Dīn al-Ṭūsī's Kashf al-Murād (p. 43) and proposes reconciling the apparent disagreement by distinguishing absolute non-being from absences considered in relation to particular things. This reconciliation is a later editorial gloss, not an authorial assertion to be inserted into Tabāṭabāʾī's matn; its reading of Ṭūsī requires separate verification against Kashf al-Murād.
+Source: 1428 AH Zāriʿī ed., vol. 1, printed p. 38, editorial note on Ṭūsī
+https://lib.rafed.net/view.php?b_id=3108&page=32&type=c_fbook
 
 N-I-05 · Chapter Five: There Is No Repetition in Existence
 Source: Arabic transcription · Qum 1417 AH, p. 30–33
@@ -392,7 +412,7 @@ N-II-02 · Chapter Two: How Connective and Independent Existence Differ
 Source: Arabic transcription · Qum 1417 AH, p. 39–40
 https://lib.rafed.net/view.php?b_id=1642&page=39&type=c_fbook
 
-Is the difference between independent and connective existence a difference in kind, or is it not? That is, can connective existence, which has a dependent meaning, shed this character and become an independent meaning when attention is directed to it independently, after having had the meaning of a particle, or can it not? The correct position is the latter alternative: the difference is not one of kind. For, as will be explained in the discussions of cause and effect, an effect’s need for its cause is rooted in its very essence. This entails that it is need itself and that its essence subsists through the existence of the cause, having no independence apart from it in any respect. It follows that the existence of every effect—whether it is a substance or an accident existing in itself—is connective when considered in relation to its cause, although, when considered in itself and when such effects are compared with one another, it is a substance or an accident existing in itself. Thus the difference between connective and independent existence is not a difference in kind such that the nonindependent concept abstracted from the connective could not be transformed into the independent concept abstracted from the independent.
+Is the difference between independent and connective existence a difference in kind, or is it not? That is, can connective existence, which has a dependent meaning, shed this character and become an independent meaning when attention is directed to it independently, after having had the meaning of a particle, or can it not? The correct position is the latter alternative: the difference is not one of kind. For, as will be explained in the discussions of cause and effect, an effect’s need for its cause is rooted in its very essence. This entails that it is need itself and that its essence subsists through the existence of the cause, having no independence apart from it in any respect. It follows that the existence of every effect—whether it is a substance or an accident—is connective when considered in relation to its cause, although, when considered in itself and when such effects are compared with one another, it is a substance or an accident existing in itself. Thus the difference between connective and independent existence is not a difference in kind such that the nonindependent concept abstracted from the connective could not be transformed into the independent concept abstracted from the independent.
 
 Several points follow from the foregoing.
 
@@ -405,6 +425,14 @@ Second, some connective existences subsist through a single term, such as the ex
 Third, the order of existence contains only one independent existence, namely the Necessary Existent—exalted is His name. The rest are connections, relations, and correlations.
 
 [translation note] The Arabic “the latter” is read with the chapter’s initial question and its explicit conclusion: the distinction is not a difference in kind. “The meaning of a particle” refers to a meaning dependent on its terms, like that of a grammatical particle, rather than an independently apprehended concept.
+
+[Textual emendation · 1428 AH editor note] At N-II-02, the 1417 AH base reads «كان جوهراً أو عرضاً موجوداً في نفسه رابطاً بالنظر إلى علّته». The revised 1428 AH editor explicitly reports that all consulted copies include «موجوداً في نفسه», but omits it as redundant and misleading: the effect is considered ‘in itself’ only relative to itself, not absolutely while considered as dependent on its cause. This reader follows that printed editorial deletion in Arabic and English, preserving the earlier wording here. The change is an editor's conjectural correction, not a manuscript-attested omission.
+Source: ʿAbbās ʿAlī al-Zāriʿī (ed.), 1428 AH, vol. 1, p. 52 n. 6; compare 1417 AH base, chapter II.2
+https://lib.rafed.net/view.php?b_id=3108&page=52&type=c_fbook
+
+[Textual emendation · later editor note] In the 1428 AH revised edition vol. 1 p. 52 n. 6, al-Zāriʿī says that all copies read «كان جوهرا أو عرضا موجودا في نفسه رابطا بالنظر إلى علّته» but deletes «موجودا في نفسه» as superfluous and, without the subsequent restriction ‘considered in itself’, misleading. The reading edition adopts the explicit editorial deletion in Arabic and English. The phrase from the 1417 AH base and the editor's rationale remain in the passage note; manuscript evidence for the omission has not been claimed.
+Source: Nihāyat al-Ḥikma, edited 1428 AH vol. 1 p. 52 n. 6; prior 1417 AH Qum text, II.2
+https://lib.rafed.net/view.php?b_id=3108&page=52&type=c_fbook
 
 N-II-03 · Chapter Three: The Division of Existence in Itself into Existence for Itself and Existence for Another
 Source: Arabic transcription · Qum 1417 AH, p. 40–41
@@ -971,6 +999,9 @@ Quiddity is therefore multiple externally through the multiplicity of its indivi
 
 [translation note] The three considerations are bi-sharṭ shayʾ, bi-sharṭ lā, and lā bi-sharṭ. The last must be distinguished from lā bi-sharṭ maqsamī, the unconditioned quiddity that is itself the subject divided into all three considerations.
 
+[Later editor’s critical observation · not authorial note] At vol. 1, printed p. 123 n. 1 of al-Zāriʿī’s revised 1428 AH edition, the editor challenges the inference that because some conditioned instances of quiddity exist outside the mind, quiddity as the unconditioned dividendum must likewise exist there. The editor’s argument distinguishes the dividendum’s preservation through the divisions from the existence of the dividendum as such in all divisions. This is a later philosophical criticism, not a textual variant or an opinion to attribute to Ṭabāṭabāʾī. The English translation of the authorial proposition remains unchanged.
+https://lib.rafed.net/view.php?b_id=3108&page=122&type=c_fbook
+
 N-V-03 · Chapter Three: The Universal and the Particular
 Source: Arabic transcription · Qum 1417 AH, p. 94–98
 https://lib.rafed.net/view.php?b_id=1642&page=94&type=c_fbook
@@ -1232,6 +1263,10 @@ What establishes substance's being a genus of the quiddities beneath it is there
 
 It follows from the foregoing that a single thing cannot be both substance and accident. It suffices to observe that substance exists not in a subject, while accident exists in a subject. These two attributes plainly cannot combine in one thing.
 
+[Intertextual authorial qualification · substance genus and substantial forms note] The 1428 revised editor at vol. 1, printed p.154 n.1 points to Muḥammad Taqī al-Āmulī's position and cross-refers to Ṭabāṭabāʾī's *Bidāyat al-Ḥikma* p.87, where the initial definition includes an elemental substantial form inhering in matter that depends upon that form. The *Nihāyat* chapter, however, insists that substantial forms are simple quiddities not species falling directly under the genus of substance. Compare the user's bilingual *Bidāya* units B-VI-01 and B-VI-02: B-VI-01 permits 'substance' as an existential descriptor of form in dependent matter; B-VI-02 expressly states that corporeal form enters the fivefold classification only incidentally, because a differentia taken *bi-sharṭ lā* does not fall under the genus of substance even if substance is predicated of it. Accordingly, do not call the two authorial works unqualifiedly contradictory or silently harmonize them: distinguish definitional description, genre membership, and common vs primary predication. This is an analytical reconciliation, not a newly discovered variant or final doctrinal adjudication.
+Source: 1428 al-Zāriʿī edition, vol. 1 printed pp.153–155 n.1; compare *Bidāyat al-Ḥikma* local authorial units B-VI-01 and B-VI-02, Arabic reader source https://lib.rafed.net/m/?b_id=1571&type=c_fbook
+https://lib.rafed.net/view.php?b_id=3108&page=153&type=c_fbook
+
 N-VI-03 · The primary divisions of substance
 Source: Arabic transcription · Qum 1417 AH, p. 117–118
 https://lib.rafed.net/view.php?b_id=1642&page=117&type=c_fbook
@@ -1244,9 +1279,17 @@ After referring to this division, the author of the Asfār says: “The better w
 
 He then indicates why this division is better: “This is because it will emerge throughout our investigations that human psychic substance is matter for the cognitive form through which it becomes another, actually perfected substance, belonging to determinate species with another mode of existence than the natural existence belonging to these determinate natural species.” End of quotation.
 
-The objection to the former division applies equally to this one. Moreover, coordinating natural forms—which are subsequent to body's specific constitution—with dimensional form does not fit the division's being primary.
+The objection to the former division applies equally to this one. Moreover, coordinating natural form—which is subsequent to body's specific constitution—with dimensional form does not fit the division's being primary.
 
 In any event, what concerns us here is to investigate the reality of body and of its two parts, matter and corporeal form. A complete investigation of soul belongs to psychology. Its reality will become partially clear in the two stages on potentiality and actuality, and on intellect and intelligible. The reality of intellect is discussed in theology in the narrower sense. It too will become partially clear in the stages on potentiality and actuality, and on intellect and intelligible, God willing.
+
+[Textual emendation · 1428 AH editor note] The 1417 AH base reads «عطف الصور الطبيعيّة» (plural). The revised 1428 AH edition, vol. 1 p. 158 n. 1, explicitly records that copies read the plural, but prints «عطف الصورة الطبيعيّة» (singular), matching the singular predicate «وهي متأخرة». The singular has been adopted in Arabic and English; the plural is preserved here as the earlier transmitted reading. This is editorial emendation, not a newly attested manuscript variant.
+Source: al-Zāriʿī, revised 1428 AH ed., vol. 1, p. 158 n. 1; 1417 AH Qum text III: Stage VI, Chapter 3
+https://lib.rafed.net/view.php?b_id=3108&page=158&type=c_fbook
+
+[Textual emendation · later editor note] The 1417 AH reading has «عطف الصور الطبيعيّة» (plural), but the revised 1428 AH edition vol. 1 p. 158 n. 1 explicitly notes that the copies have the plural and prints «عطف الصورة الطبيعيّة» (singular), agreeing with the subsequent singular pronoun and adjective «وهي متأخّرة». The reader adopts the editor's correction, preserves the transmitted plural in a passage note, and does not claim a manuscript source for the singular.
+Source: ʿAbbās ʿAlī al-Zāriʿī, 1428 AH revised edition, vol. 1 p. 158 n. 1; 1417 Qum, Stage VI.3
+https://lib.rafed.net/view.php?b_id=3108&page=158&type=c_fbook
 
 N-VI-04 · The quiddity of body
 Source: Arabic transcription · Qum 1417 AH, p. 119–126
@@ -1347,6 +1390,10 @@ The reply, as the Master answered, is that matter contains potentiality and actu
 It should not be objected: The argument is undermined by intellect. It acts upon what is beneath it and is affected by what is above it. It therefore has two aspects, action and being acted upon. On your account it must consequently be composed of matter and form, acting through form and being acted upon through matter.
 
 The reply is that being acted upon and reception there differ from the being acted upon and reception under discussion in bodies. An intellect’s being acted upon and receiving existence from what is above it amount to nothing but its existence being bestowed upon it, without a preceding potentiality and preparedness bringing its subject closer to actuality. It is only the intellect that posits for an intellect a quiddity and considers that quiddity receptive to existence and nonexistence, thereby considering its investiture with existence to be reception and being acted upon. “Reception,” like “being acted upon,” is thus shared by the two meanings. What entails composition is reception in the sense of preceding preparedness and potentiality, not reception in the sense of the bestowal of existence. An intellect acts through precisely that through which it receives and is acted upon.
+
+[Textual emendation · 1428 AH editor note] The 1404 Qum facsimile, printed p. 102 (NYU canvas 106), and the 1417 transcription, p. 129, read «بإضافة المرتبة العالية» (through the addition of the higher degree). The 1428 editor, vol. 1 p. 171 n. 1, explicitly records that reading and corrects to «بإفاضة المرتبة العالية» (through the bestowal of the higher degree). The Arabic follows this attributed editorial emendation; the existing English already reflects it. No manuscript-attested variant is claimed.
+Source: 1428 revised editorial print, with targeted early-print facsimile corroboration of the recorded prior reading
+https://lib.rafed.net/view.php?b_id=3108&page=171&type=c_fbook
 
 N-VI-06 · Matter does not exist apart from corporeal form, nor corporeal form apart from matter
 Source: Arabic transcription · Qum 1417 AH, p. 130–134
@@ -1463,6 +1510,10 @@ Discrete quantity, namely number, necessarily exists externally. The existence o
 Every rank in the endless series of numbers is a particular species of number distinct from the others, since each has numerical properties that do not extend beyond it to another. Time is one species, even though the subjects in which it occurs are the several species of substantial and accidental motions, because there is a common measure among its instances.
 
 Mathematical bodies with no common measure, such as the sphere, cone, cube, and the like, are distinct species. The same holds for surfaces with no common measure, such as the plane surface and the kinds of convex and concave surfaces; and likewise for lines with no common measure, if they exist, such as the straight line and the kinds of arcs. Irregular bodies, surfaces, and lines are not species, but composites of various species.
+
+[Later printed editor's conceptual objection · boundary of continuum note] In the 1428 AH revised edition, vol. 1, printed p.185–186, editor al-Zāriʿī objects (p.186 n.2) to the author's illustration that an intermediate segment of a divided line can serve as the shared boundary between adjacent segments. The editor insists that a shared boundary is outside both adjacent magnitudinal parts: a point between two parts of a line, a line between parts of a surface, a surface between portions of a body, and an instant between portions of time. Otherwise a discrete number such as seven could be divided into three, one, three and the middle unit incorrectly counted as a common boundary, erasing the distinction between continuous and discrete quantity. The author's 1417 Arabic wording and its literal English remain unchanged; attach the editor's argument as criticism, not an attested manuscript emendation. The wording of the author's example is also present in the later digital print; no alternative original reading claimed.
+Source: Nihāyat al-Ḥikma, ed. ʿAbbās ʿAlī al-Zāriʿī, 4th ed., Qum 1428 AH, vol. 1, printed p.186 n.2; authorial chapter IX on quantity in Stage VI (N-VI-09), base 1417 AH pp.139–141
+https://lib.rafed.net/view.php?b_id=3108&page=186&type=c_fbook
 
 N-VI-10 · Various judgments concerning quantity
 Source: Arabic transcription · Qum 1417 AH, p. 141–144
@@ -1606,7 +1657,7 @@ Then, as has been said, this cognitive form is followed by desire for the act, s
 
 The principles of voluntary action in us are therefore knowledge, desire, will, and the operative motive power. This is what we find in ourselves in our voluntary acts. Close consideration of the condition of other animals shows that, in their voluntary acts, they are like human beings.
 
-The following points have thus become clear. First, the efficient principle of a human being’s voluntary acts, insofar as they are his secondary perfections, is the human being insofar as he is a cognitive agent. Knowledge completes his agency: by it a perfection is distinguished from other things. Desire follows this knowledge without depending upon another desire or a will; and will necessarily follows desire without depending upon another will, for otherwise wills would regress infinitely. Counting will as the efficient cause of the act is therefore misplaced. Will, and the desire preceding it, are instead concomitants of the knowledge that completes the agent’s agency.
+The following points have thus become clear. First, the efficient principle of a human being’s voluntary acts, insofar as they are his secondary perfections, is the human being insofar as he is a cognitive agent. Knowledge completes his agency: through it, the human agent distinguishes the perfection to be pursued from other things. Desire follows this knowledge without depending upon another desire or a will; and will necessarily follows desire without depending upon another will, for otherwise wills would regress infinitely. Counting will as the efficient cause of the act is therefore misplaced. Will, and the desire preceding it, are instead concomitants of the knowledge that completes the agent’s agency.
 
 Second, those human acts in whose production knowledge has a role are never devoid of the agent’s will, even an act performed under coercion. The discussion of the divisions of agent will provide further material useful here.
 
@@ -1646,6 +1697,14 @@ Notice. The foregoing account of quality, its judgments, and its properties is w
 
 [translation note] The supplied transcription opens with the end of the preceding discussion of preparedness, then runs into this chapter’s heading. Its comparison with knowledge breaks off after “between its subject”; the ellipsis marks that textual break, and no missing counterpart has been supplied.
 
+[Textual emendation · 1428 AH editor note] At N-VI-15 the 1417 AH base reads «بما أنّها كمالاتها الثانية» (in this second occurrence of the phrase) and «يتمّيز به الكمال من غيره». The 1428 AH editor, vol. 1 p. 209 nn. 3–4, explicitly prints «كمالاته الثانية» (the human's perfections) and «يميّز به» (the human agent distinguishes through knowledge), recording the earlier readings as copy readings. The reader adopts these two editorial emendations, while leaving intact an earlier occurrence «من كمالاتها الثانية» that correctly refers to the feminine soul. The previous readings remain here; no manuscript-attested variant is claimed.
+Source: 1428 revised editorial print, not independently verified manuscript witness
+https://lib.rafed.net/view.php?b_id=3108&page=205&type=c_fbook
+
+[Textual emendation · later editor note] In vol. 1 p. 209 nn. 3–4 the 1428 revised editor states that the copies give «كمالاتها الثانية» at the second occurrence and «يتميّز به» for the act of discriminating by knowledge. He prints «كمالاته الثانية» to refer the perfections to the human being and «يميّز به» so that the agent distinguishes by knowledge. The earlier «من كمالاتها الثانية» referring to the soul remains correct and was not altered. Two explicit editorial conjectures are accepted with earlier readings preserved in N-VI-15 apparatus.
+Source: Nihāyat al-Ḥikma 1428 revised edition, vol. 1 p. 209 nn. 3–4; compare 1417 base
+https://lib.rafed.net/view.php?b_id=3108&page=205&type=c_fbook
+
 N-VI-16 · Relation
 Source: Arabic transcription · Qum 1417 AH, p. 162–167
 https://lib.rafed.net/view.php?b_id=1642&page=162&type=c_fbook
@@ -1672,13 +1731,13 @@ Perhaps what the intellect understands by the word “relation,” together with
 
 The difference between the relative in the strict and in the ordinary senses
 
-Sometimes “relative” is used to mean the category itself, which they call “the relative in the strict sense.” Sometimes it means the subject of the category. Sometimes it means the subject and the accident together, which they call “the relative in the ordinary sense.” For ordinary people think that what is related to a son, for example, is the human being characterized by sonship, whereas the connection on both sides belongs in truth to the relation itself.
+Sometimes “relative” is used to mean the category itself, which they call “the relative in the strict sense.” Sometimes it means the subject of the category. Sometimes it means the subject and the accident together, which they call “the relative in the ordinary sense.” For ordinary people think that what is related to a father, for example, is the human being characterized by sonship, whereas the connection on both sides belongs in truth to the relation itself.
 
 Third discussion: relation exists externally
 
 Relation exists externally, and sense perception supports this. The senses apprehend various external relations whose objective effects cannot be doubted, such as the relation of father and son, above and below, near and far, and others.
 
-As for its manner of existence, the intellect abstracts from the two subjects possessing the mutually concomitant reciprocal relation a qualification characterizing them, without adding anything to them. Relation therefore exists through the existence of its subject, without there being a separate, independent existence corresponding to it.
+As for its manner of existence, the intellect abstracts, for each of the two subjects possessing the mutually concomitant reciprocal relation, a qualification characterizing that subject, without adding anything to them. Relation therefore exists through the existence of its subject, without there being a separate, independent existence corresponding to it.
 
 After discussing this point, the author of the Asfār says: “In general, the relative, insofar as it is relative, is simple. It has no independent, separate existence externally. Its existence consists in its attaching to things whose condition is such that they admit comparison with something else. The heaven’s existence in itself is the existence of substances, while its existence in such a manner that, when it is compared with the earth, being above is understood, is the existence of relations.” End of quotation.
 
@@ -1704,7 +1763,13 @@ Relation is divided into that whose terms are alike, in which there is no differ
 
 It is also divided into external relation, such as father and son, and mental relation, such as universal and individual, and more general and more specific.
 
-[translation note] In the example explaining the relative in ordinary usage, the supplied transcription reads “the human being characterized by sonship” as what is related to a son. This apparent textual inconsistency has been retained; “fatherhood” may have been intended.
+[Textual emendation · 1428 AH editor note] At N-VI-16 the 1417 AH base reads «ينتزع من الموضوعين ... وصفاً ناعتاً لهما». The 1428 AH revised edition, vol. 1 p. 218 n. 4, explicitly corrects to «ينتزع لكلّ من الموضوعين ... وصفاً ناعتاً له», referring a separate relational predicate to each term rather than one quality belonging identically to both. Both panels follow the editor's reading, and the earlier wording is preserved here. The editor also notes that «لوقوعها» is preferable to «لوقوعه» in a preceding phrase; the main 1417 text already has «لوقوعها», so no correction was necessary there. In the same chapter, the editor also reports that the copies read «المضاف إلى الابن» but corrects to «المضاف إلى الأب» (vol. 1 p. 218 n. 1). In this passage a son is related to his father; ‘to a son’ contradicts the accompanying example of sonship. The online Arabic and English now adopt this explicitly recorded correction, retaining the older wording in the apparatus.
+Source: 1428 revised editorial print, not independently verified manuscript witness
+https://lib.rafed.net/view.php?b_id=3108&page=207&type=c_fbook
+
+[Textual emendation · later editor note] The 1417 base says «ينتزع من الموضوعين الواجدين للنسبة المتكرّرة المتلازمة وصفاً ناعتاً لهما». In vol. 1 p. 218 n. 4 the 1428 editor prints «ينتزع لكلّ من الموضوعين ... وصفاً ناعتاً له» and explicitly records the earlier copy reading. The correction changes the analysis from one common property attributed jointly to both relata to one relational predicate of each term, dependent on their reciprocal relation. Both Arabic and English were corrected; old wording remains in the authorial passage note. The nearby «لوقوعها» was already correct in the 1417 reader. In the same chapter (vol. 1 p. 218 n. 1) he also corrects «المضاف إلى الابن» to «المضاف إلى الأب», since the subject bearing sonship is related to a father. The reader adopts this correction in both Arabic and English and retains the prior wording as a documented copy reading.
+Source: Nihāyat al-Ḥikma 1428 revised edition, vol. 1 p. 218 nn. 1 and 4; compare 1417 base
+https://lib.rafed.net/view.php?b_id=3108&page=207&type=c_fbook
 
 N-VI-17 · Where
 Source: Arabic transcription · Qum 1417 AH, p. 167–170
@@ -1788,7 +1853,11 @@ The second is a meaning more restricted than the first: a quantity’s being sus
 
 This has been disputed on the ground that a line and a surface, and indeed a mathematical body, have no “where” apart from their attachment to corporeal matter. Mere quantitative continuity, therefore, does not suffice to make something susceptible to sensible indication unless it is joined to matter.
 
-An imaginal form of quantity that is immaterial does, however, admit imaginal indication; an intelligible form likewise admits an indication appropriate to it.
+An imaginal form divested of quantity nevertheless admits an imaginal indication; an intellectual form likewise admits an indication appropriate to it.
+
+[Critical English collation · 1428 printed digital witness note] In «نعم للصورة الخياليّة المجرّدة من الكمّ إشارة خياليّة» the prepositional phrase «من الكمّ» depends on «المجرّدة»: the imaginal form is divested of quantity, not an 'imaginal form of quantity'. The former translation misattached the phrase and inverted the point. Corrected against Qum 1417 text and independently compared with the 1428 AH revised vol. 1 p. 228 transcription; no manuscript attestation is claimed.
+Source: Nihāyat al-Ḥikma, al-Zāriʿī revised 1428 AH, vol. 1, printed p. 228
+https://lib.rafed.net/view.php?b_id=3108&page=237&type=c_fbook
 
 N-VI-20 · Possession
 Source: Arabic transcription · Qum 1417 AH, p. 173–174
@@ -2013,6 +2082,9 @@ It is sometimes restricted by time, with the requirement that the privation occu
 
 This is closer to a terminological convention. There is therefore no difficulty if cases whose subject is the genus or species fall outside privation and possession on this usage without falling under any of the other three oppositions, although the kinds of opposition are confined to four.
 
+[Later editor’s factual caution · not authorial note] The author gives the inherited example of the scorpion’s supposed lack of sight («فعدم البصر في العقرب ـ كما قيل ـ») to illustrate privation relative to an animal genus. The 1428 AH editor, vol. 1 printed p. 258 n. 4, notes that some modern descriptions report scorpion eyes. The original statement is an expressly qualified historical logical illustration, not a reliable zoological observation. The translated argument and the author/editor distinction are preserved.
+https://lib.rafed.net/view.php?b_id=3108&page=257&type=c_fbook
+
 N-VII-08 · Correlative opposition
 Source: Arabic transcription · Qum 1417 AH, p. 193–194
 https://lib.rafed.net/view.php?b_id=1642&page=193&type=c_fbook
@@ -2023,7 +2095,10 @@ An objection has been raised against treating correlation as one of the four kin
 
 The reply is that the concept of opposition is an instance of correlation, whereas an instance of correlation is one of the kinds and instances of opposition. What falls under correlation is the concept of opposition; what stands alongside correlation as a coordinate division is an instance of opposition. A mental concept is often an individual instance of that to which it is opposed. The concept of the particular, for example, is in one respect an instance of the universal and in another respect opposed to it. There is therefore no difficulty.
 
-One judgment concerning correlation is that the two correlatives are coextensive in existence and nonexistence, and in potentiality and actuality. If one exists, the other necessarily exists; if one does not exist, the other necessarily does not exist; and if one is potential or actual, the other necessarily is so as well. It follows that they are simultaneous: neither precedes the other, whether in the mind or externally.
+One rule concerning correlation is that the two correlatives correspond necessarily in respect of existence and nonexistence, and likewise of potentiality and actuality. If one exists, the other necessarily exists; if one does not exist, the other necessarily does not exist; and if one is potential or actual, the other necessarily is so as well. It follows that they are simultaneous: neither precedes the other, whether in the mind or externally.
+
+[English precision · corrected against authorial Arabic note] For «المتضايفان متكافئان وجوداً وعدماً وقوّةً وفعلا», ‘correspond necessarily in respect of existence, nonexistence, potentiality, and actuality’ replaces the misleading ‘coextensive’ (which suggests identity of extension). The author argues existential and modal simultaneity of opposed correlatives, not identity of their sets of instances. The corrected 1428 AH transcription (vol. 1 p. 259) agrees at this clause. This is a translation correction, not an Arabic emendation or manuscript attestation.
+https://lib.rafed.net/view.php?b_id=3108&page=257&type=c_fbook
 
 N-VII-09 · Contrary opposition
 Source: Arabic transcription · Qum 1417 AH, p. 194–198
@@ -2455,6 +2530,9 @@ Later thinkers have argued for the permissibility of one thing’s being both ag
 As you have learned, this argument is complete only where reception means being characterized by something. Reception and action are then one.
 
 Where reception is affection, being affected, and acquiring perfection, however, reception necessarily accompanies lack and action necessarily accompanies possession. These are incompatible and do not coexist in one thing.
+
+[Arabic transcription normalisation note] The imported digital Arabic began «االمشهور», containing a duplicated initial alif. Corrected to «المشهور». This is an evident orthographic/transcription repair only, not an emendation of the author's logical argument or a manuscript variant.
+https://lib.rafed.net/view.php?b_id=1642&page=228&type=c_fbook
 
 N-VIII-11 · The final cause and the proof of its existence
 Source: Arabic transcription · Qum 1417 AH, p. 230–237
@@ -2929,7 +3007,7 @@ This entails that, in the first kind of substantial species, prime matter is det
 
 When these hierarchical and parallel substantial differentiations into species are referred to motion, then, in the second kind, the matter that is the subject of motion at its beginning remains the very same subject as the forms succeed one another until motion ends. This holds whether it is prime matter or second matter. The same judgment applies to accidental motions.
 
-In the first kind, hierarchical motion, prime matter is the subject of the first form, and the two together are the subject of the second form. This occurs through putting on a further form after putting on a form, rather than through stripping off and putting on, as in the former case.
+In the first kind, hierarchical motion, prime matter is the subject of the first form, and the two together are the subject of the second form. This occurs not by stripping off and putting on, as in the second kind, but by putting on after putting on.
 
 This entails that the motion is intensifying rather than uniform. It also entails that the matter of the first form is no longer, by itself, the subject of the second form. Rather, the subject of the latter is prime matter together with the first form, while prime matter alone is an accompanying factor.
 
@@ -2950,6 +3028,26 @@ Third, every motion, whatever it may be, is bounded by a beginning and an end. E
 A part in this sense never passes from potentiality to actuality, nor does the specific quiddity abstracted from such a limit ever pass from potentiality to actuality.
 
 [translation note] The Arabic distinguishes parallel species (ʿarḍī, with a quiescent rāʾ) from accidental motions (ʿaraḍī, with a vowel on the rāʾ). “Putting on after putting on” preserves the author’s metaphor for cumulative substantial perfection.
+
+[Textual emendation · 1428 AH editor; early reading preserved note] The complete IX.9 authorial chapter was compared with the 1404 Qum facsimile, printed pp.210–212 (NYU canvases 214–216), and the later 1428 edition, vol.2 pp.107–110. The early print at p.211 and the 1417 base at p.265 both read «كما في القسم الأول» (as in the first kind). The 1428 editor explicitly records this copy reading and corrects it to «كما في القسم الثاني» at vol.2 p.108 n.4. The reader adopts the attributed later correction: stripping off and putting on belongs to the second, parallel kind, whereas the first, hierarchical kind is putting on after putting on. The English now says “as in the second kind.” The early facsimile does NOT attest الثاني. This resolves the previously unadopted internal conjecture; the original note identifier is preserved for continuity. No manuscript attestation or specialist certification is claimed.
+Source: 1404 Qum p.211, NYU canvas215; 1417 Qum p.265; 1428 al-Zāriʿī vol.2 p.108 n.4
+https://lib.rafed.net/view.php?b_id=3109&page=108&type=c_fbook
+
+[Grammatical recast · 1428 AH editor note] The early 1404 facsimile p.211 and the 1417 base p.265 read «هي الموضوع بعينه ما تعاقبت». The 1428 editor, vol.2 p.108 n.3, recasts this as «هي بعينها موضوع ما تعاقبت». The reader adopts that disclosed grammatical recast; the claim that the same matter persists through the succession of forms is unchanged. The later note quotes its copies with «تعاقب» without a final feminine ت, whereas the directly inspected early facsimile and the current 1417 transcription have «تعاقبت». The collective copy report must not be substituted for the exact reading of either inspected witness. The English already conveys the same subject claim.
+Source: 1404 Qum p.211, canvas215; 1417 p.265; 1428 vol.2 p.108 n.3
+https://lib.rafed.net/view.php?b_id=3109&page=108&type=c_fbook
+
+[Pronoun correction · 1428 AH editor note] The 1404 early print p.212 and the 1417 base p.266 have the masculine possessive in «قوة لقوته» (base with vocalization: «قوّةً لقوّته»). The 1428 editor, vol.2 p.109 n.2, corrects the pronoun to the feminine «لقوّتها», referring to «فعليّة ما». The reading text adopts «قوّةً لقوّتها». The English already refers to an actuality’s own potentiality and is unchanged. This pronoun correction is separate from the editor’s philosophical objection to the argument against descending motion.
+Source: 1404 Qum p.212, canvas216; 1417 p.266; 1428 vol.2 p.109 n.2
+https://lib.rafed.net/view.php?b_id=3109&page=109&type=c_fbook
+
+[Later editor’s philosophical objection · not authorial text note] The editor disputes the argument against descending motion. A subject's coexisting potentiality, not its present actuality, can be actualized at a less perfect level. Such decline can therefore still be potentiality becoming actuality. He also questions treating withering merely as incidental motion. Preserve this disagreement alongside the author's argument. This is separately attributed later commentary; the authorial argument remains in the Arabic and English. The works invoked by the editor have not been independently collated here.
+Source: 1428 vol2 pp109–110 note2 and following note1
+https://lib.rafed.net/view.php?b_id=3109&page=109&type=c_fbook
+
+[Later editor’s philosophical objection · not authorial text note] The editor invokes Bidāya and the author's Asfar gloss: motion as motion need not have a distinct enduring substrate; substantial motion can itself be a self-subsisting fluid substantial actuality. Keep this outside authorial text. This is separately attributed later commentary; the authorial argument remains in the Arabic and English. The works invoked by the editor have not been independently collated here.
+Source: 1428 vol2 p107 note2
+https://lib.rafed.net/view.php?b_id=3109&page=107&type=c_fbook
 
 N-IX-10 · The Agent of Motion: The Mover
 Source: Arabic transcription · Qum 1417 AH, p. 266–268
@@ -3019,7 +3117,13 @@ It is said in the Asfār: “Existents that are neither motion nor in motion are
 
 [translation note] Dahr and sarmad are retained as technical terms for atemporal modes of coexistence; translating both simply as “eternity” would obscure the distinction made here.
 
-[translation note] In «والحركة التوسّطيّة منطبقةٌ عليه بواسطة القطعيّة», the pronoun «عليه» most naturally refers to the immediately preceding «الآن» (instant), not «الزمان» (time). This is a translation correction against the 1417 AH Arabic, not an independently attested textual variant. The subsequent argument rejects treating a “flowing instant” as an independently real constituent of time.
+[translation note] In «والحركة التوسّطيّة منطبقةٌ عليه بواسطة القطعيّة», the pronoun «عليه» most directly refers to the immediately preceding «الآن» (instant), not the more distant «الزمان» (time). The English therefore says 'corresponds to the instant through traversal motion'. This is an internal grammatical/semantic translation correction against the 1417 AH Arabic digital text, not a printed-witness variant. The following discussion rejects an independently real 'flowing instant' as a constituent of time.
+
+[English collation · Stage V note] Corrected ‘time’ → ‘instant’ at «منطبقة عليه» after «الآن», based on direct local rereading of 1417 printed-digital Arabic pp.269–270. No claim of an independent 1404/1428 print collation or an expert attestation.
+
+[Grammatical correction · 1428 AH editor note] The early 1404 Qum print p.215 (NYU canvas219) and the 1417 base read «أيّ حركة كانت». The 1428 editor, vol.2 p.115 n.2, explicitly corrects this to «أيّة حركة كانت», agreeing with حركة. The Arabic adopts this attributed grammatical correction; no change in English meaning is required. This is a targeted phrase comparison, not a complete external collation of IX.11.
+Source: 1404 Qum p.215, canvas219; 1428 vol.2 p.115 n.2; 1417 base IX.11
+https://lib.rafed.net/view.php?b_id=3109&page=115&type=c_fbook
 
 N-IX-12 · The Meaning of Speed and Slowness
 Source: Arabic transcription · Qum 1417 AH, p. 271–273
@@ -3158,7 +3262,7 @@ The criterion of priority and posteriority by causality is the complete cause's 
 
 The criterion of priority and posteriority in quiddative constitution is their sharing in the establishment of quiddity. The posterior depends upon the prior for its establishment, as a complete quiddity depends upon its parts.
 
-The criterion of priority and posteriority in dahr is that a universal level of existence shares, with what is above or below it, occurrence in concrete reality, while concretely depending upon what is above it, or having what is below it depend upon it, in such a way that the two do not coexist. Non-dependence is included at the level of that upon which the other depends. Examples are the priority of the world of separate intellects over the imaginal world, and the priority of the imaginal world over the material world.
+The criterion of priority and posteriority in dahr is that a universal level of existence shares, with what is above or below it, occurrence in concrete reality, while concretely depending upon what is above it, or having what is below it depend upon it, in such a way that the two do not coexist. The nonexistence of what depends is included at the level of that upon which it depends. Examples are the priority of the world of separate intellects over the imaginal world, and the priority of the imaginal world over the material world.
 
 The criterion of priority and posteriority in literal attribution is their sharing establishment in a sense broad enough to include both literal and figurative establishment. Literal establishment belongs to the prior, figurative to the posterior—as in existence's priority over quiddity through its primacy.
 
@@ -3166,7 +3270,9 @@ The criterion of priority and posteriority by existential reality is their shari
 
 [translation note] The Master of Illumination is Shihāb al-Dīn al-Suhrawardī. The imaginal world (ʿālam al-mithāl) is an ontological realm of immaterial forms, not simply private imagination.
 
-[textual note] The paragraph on dahr reads ʿadam al-tawaqquf (“non-dependence”) in both the transcription and the Qum 1404 scan, printed p. 228. The wording is retained. Compare X.8, where the effect’s nonexistence at the level of its cause is stated explicitly.
+[Textual variant · 1428 AH revised edition note] The 1404 Qum facsimile, printed p. 228 (NYU canvas 232), and the 1417 transcription, p. 284, read «عدم التوقّف» (non-dependence). The 1428 revised edition, vol. 2 pp. 136–137, prints «عدم المتوقّف» (the nonexistence of what depends), without a footnote identifying this particular change. The Arabic and English follow that attested later-edition reading; the earlier reading is preserved here. This is a later printed variant, not an independently verified manuscript reading.
+Source: 1428 digital edited print; unfootnoted main-text variant compared with 1404 facsimile and 1417 transcription
+https://lib.rafed.net/view.php?b_id=3109&page=136&type=c_fbook
 
 N-X-03 · Coexistence
 Source: Arabic transcription · Qum 1417 AH, p. 285–286
@@ -3279,7 +3385,11 @@ N-XI-PRE · Introduction to Stage XI: Intellection, the Intellect, and the Intel
 Source: Arabic transcription · Qum 1417 AH, p. 291–291
 https://lib.rafed.net/view.php?b_id=1642&page=291&type=c_fbook
 
-Although the heading employs the term “intellection,” which in technical usage refers to universal apprehension rather than particular apprehension, the discussion embraces both.
+Although the heading uses “intellect” (al-ʿaql)—a term conventionally applied to universal rather than particular apprehension—the investigation extends to both.
+
+[English collation · literal technical term note] The Arabic has «العقل الذي يطلق اصطلاحاً على الإدراك الكلّي دون الجزئي». The prior English substituted 'intellection' for the subject noun «العقل». Revised to 'intellect' (al-ʿaql) while retaining the point that the investigation extends beyond universal cognition. Verified directly against the stored Arabic, not independently against a manuscript.
+Source: Qum 1417 AH transcription, Stage XI preface
+https://lib.rafed.net/view.php?b_id=1642&page=291&type=c_fbook
 
 N-XI-01 · The definition of knowledge, its primary division, and some of its properties
 Source: Arabic transcription · Qum 1417 AH, p. 293–297
@@ -3361,7 +3471,7 @@ With this established, when the knower is the cause and the known is the effect,
 
 Similar reasoning applies to knowledge of the relational: everything relational that is known is known through knowledge of the independent being through which that relation subsists.
 
-When the knower is the effect and the known is the cause, the known must exist for the knower, while it is impossible for anything to exist for a relational existence. The cause’s existence for the effect is therefore fulfilled only through the effect’s subsistence through the cause. The cause itself exists for itself, while the effect is not outside it. The cause knows itself, and this knowledge is ascribed to the effect insofar as the effect is not outside it. The effect attains only as much knowledge of the cause as its own existence can encompass. The predication between them is the predication of the cause of the effect, as sustained by the cause. This too is a kind of predication of a reality and its attenuated reality.
+When the knower is the effect and the known is the cause, the known must exist for the knower, while it is impossible for anything to exist for a relational existence. The cause’s existence for the effect is therefore fulfilled only through the effect’s subsistence through the cause. The cause itself exists for itself, while the effect is not outside it. The cause knows itself, and this knowledge is ascribed to the effect insofar as the effect is not outside it. The effect attains only as much knowledge of the cause as its own existence can encompass. In this predication, the cause is predicated of the effect insofar as the effect is sustained by the cause. This too is a kind of predication of a reality and its attenuated reality.
 
 Thus an effect’s knowledge of its cause ultimately amounts to the cause’s knowledge—considered together with its effect—of itself considered alone. And a cause’s knowledge of its effect ultimately amounts to the cause’s knowledge—considered in itself—of itself considered together with its effect.
 
@@ -3500,6 +3610,8 @@ As for judgment’s being an act of the soul within mental apprehension, its rea
 Judgment is therefore an act of the soul, while also being one of the mental forms that represent what lies beyond them. If it were a conception taken from external reality, the proposition would not convey a complete meaning on which one could stop, just as either component of a conditional proposition does not. If it were a conception produced by the soul on its own, without assistance or support from external reality, it would not represent external reality. Some further matters related to this will come to you later.
 
 The foregoing establishes that every assent depends upon more than one conception. There is thus no assent without conception.
+
+[Translator's analytical note · negative proposition note] Negative predication and judgment: the author first reports a received account in which a negative categorical has subject, predicate and negative predicative relation, but «ولا حكم فيها، لا أن فيها حكما عدميا» ('it has no judgment, rather than a negative judgment'), since negating the act of making is not the making of a negation. He subsequently gives his own account, «والحقّ», where predicative relation as conceived is preparatory to the soul's act of judging, not itself a constituent of every proposition. The juxtaposition should not be silently flattened into a single unquestioned theory of negative assent; whether a denial is a positive mental act requires interpretation of his distinct senses of ḥukm. Authorial Arabic and literal working English retained; no variant attested.
 
 N-XI-09 · The division of acquired knowledge into self-evident and theoretical
 Source: Arabic transcription · Qum 1417 AH, p. 310–314
@@ -4310,13 +4422,15 @@ N-XII-21 · The imaginal realm
 Source: Arabic transcription · Qum 1417 AH, p. 387–388
 https://lib.rafed.net/view.php?b_id=1642&page=387&type=c_fbook
 
-It is also called the “intermediate realm,” because it lies between the intellectual realm and the realm of matter and nature. As became clear from the foregoing, it is a degree of existence free of matter but not of matter’s effects, such as quantity, quality, position, and similar accidents. The cause bringing it into existence is the last of the vertical intellects, called the “Agent Intellect” by the Peripatetics, or some of the horizontal intellects according to the Illuminationists.
+It is also called the “barzakh” (intermediate realm), because it lies between the intellectual realm and the realm of matter and nature. As became clear from the foregoing, it is a degree of existence free of matter but not of matter’s effects, such as quantity, quality, position, and similar accidents. The cause bringing it into existence is the last of the vertical intellects, called the “Agent Intellect” by the Peripatetics, or some of the horizontal intellects according to the Illuminationists.
 
 It contains the images of substantial forms that are aspects of multiplicity in the intellect bestowing this realm. Some are presented to others in different configurations, without the differences of configuration impairing the individual unity of the substance concerned. An example is that many human individuals conceive someone from the past whom they have not seen, but whose name and something of whose life they have heard. Each represents him within himself in a configuration appropriate to what he supposes him to be, according to the attributes he knows, even if this differs from the configuration that person has for someone else.
 
 Because of this point, they have divided the imaginal into separate imagination, subsisting in its own right independently of particular imagining souls, and connected imagination, subsisting in particular imagining souls.
 
 Moreover, among the things imagined by souls are arbitrary forms that do not befit the act of a wise agent and bear a relation to the play of the imaginative faculty.
+
+[English collation · term restored note] The Arabic opening reads «ويسمّى أيضاً البرزخ». The English now retains the authorial technical term barzakh alongside the explanatory rendering 'intermediate realm', rather than silently substituting the paraphrase. Compared directly against the Qum 1417 transcription; early scan/1428 independent witness collation remains pending.
 
 N-XII-22 · The material realm
 Source: Arabic transcription · Qum 1417 AH, p. 388–389
@@ -4385,7 +4499,7 @@ SOURCES
 
 Nihāyat al-ḥikma — Qum 1404 AH, Princeton / Arabic Collections Online
 https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/1
-Institutional scan of the original Arabic work. NYU identifies this digitized material as public domain. The scan supplies the early printed witness; selected passages have been visually checked, not the whole book.
+Institutional scan of the original Arabic work. NYU identifies this digitized material as public domain. IX.9 was compared in full with printed pp.210–212; other selected passages were visually checked. This is not a complete collation of the whole book.
 
 Arabic Collections Online — collection and rights policy
 https://aco.dlib.nyu.edu/about
@@ -4406,3 +4520,11 @@ The Shīʿah Institute’s announced translation and explication. The publisher�
 The Shīʿah Institute — translator biography and publication status
 https://www.shiahinstitute.org/the-dean/
 Current primary evidence that The Pursuit of Philosophy remains listed as forthcoming.
+
+Nihāyat al-Ḥikma, vol. 1 — revised 1428 AH edition, editor ʿAbbās ʿAlī al-Zāriʿī al-Sabzawārī
+https://lib.rafed.net/view.php?b_id=3108&type=c_fbook
+Secondary collation witness only (vol. 1, 283 pp., 4th edition, Islamic Publishing Institution). The editor describes correcting previously overlooked textual errors and adding explanatory and critical notes; those notes are not silently imported into the authorial text.
+
+Nihāyat al-Ḥikma, vol. 2 — revised 1428 AH edition, editor ʿAbbās ʿAlī al-Zāriʿī al-Sabzawārī
+https://lib.rafed.net/view.php?b_id=3109&type=c_fbook
+Secondary collation witness only (vol. 2, 336 pp., 4th edition). Its pagination and critical notes differ from the existing Qum 1417 transcription and are not the reader’s current page locators.

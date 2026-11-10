@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "updated": "2026-11-10",
-  "purpose": "Additional comparative glossary and textual witnesses for the Nihāyat al-Ḥikma reader. Does not modify the authorial Arabic or the translation.",
+  "purpose": "Additional comparative glossary, textual witnesses and separately attributed critical apparatus. Adopted readings are explicitly linked to changes in the reading text; later philosophical commentary remains separate from the authorial text.",
   "glossary": [
     {
       "term": "ʿaql bi-l-fiʿl",
@@ -441,7 +441,7 @@
       "description": "Secondary collation witness only (vol. 2, 336 pp., 4th edition). Its pagination and critical notes differ from the existing Qum 1417 transcription and are not the reader’s current page locators."
     }
   ],
-  "statusNote": "The presence of a corrected editorial witness does not mean the entire authorial Arabic has been collated against it; variants require documented individual decisions. This fourth-batch supplement additionally registers one unresolved IX.9 internal-reference conjecture; it is NOT an adopted variant and has not been independently witnessed. No specialist certification is implied. Two additional later-print annotations (VI.2 substantial forms and VI.9 continuum-boundary criticism) are recorded as editor/analytical remarks, NOT as adopted manuscript variants. The IX.9 conjecture remains unadopted.",
+  "statusNote": "All 136 authorial units have a complete local bilingual reading check. IX.9 alone has a complete external comparison with the early 1404 printed facsimile and the later 1428 digital edition. The earlier first-kind reading is preserved in the apparatus; second-kind is adopted as the later editor’s explicit correction. Targeted checks elsewhere do not establish complete chapter collation. The decision ledger records 13 textual decisions: 12 explicit later-editor emendations and one unfootnoted later-edition reading, implemented through 14 Arabic string replacements. No manuscript collation or independent specialist certification is claimed.",
   "criticalNotes": [
     {
       "id": "N1428-I02-01",
@@ -541,15 +541,18 @@
     {
       "id": "N1417-IX09-REFERENCE-01",
       "passageId": "N-IX-09",
-      "type": "Unresolved internal cross-reference · not an attested emendation",
-      "text": "In Chapter IX.9, printed p. 265, the author contrasts (1) longitudinal substantial motion, where matter and the earlier form become the substrate of a later form, with (2) parallel succession, where an enduring matter receives mutually exclusive forms. The text nevertheless says «لا بطريق الخلع واللبس كما في القسم الأول، بل بطريق اللبس بعد اللبس»—'not by stripping off and putting on, as in the first kind, but by putting on after putting on'—inside its account of the FIRST (longitudinal) kind. In light of the immediately preceding distinction and the following 'first/second' conclusions, «القسم الثاني» is a plausible INTERNAL editorial conjecture for «القسم الأول». The 1417 AH printed-digital source itself reads «الأول». No independent 1404/1428 print or manuscript has been checked at this exact phrase in this review. We leave the copied Arabic and the working English unchanged, record the difficulty, and DO NOT treat the conjecture as witnessed or adopted. A future editor must report exact witness readings and any adopted before/after change.",
-      "url": "https://lib.rafed.net/view.php?b_id=1642&page=265&type=c_fbook",
-      "source": "Ṭabāṭabāʾī, Nihāyat al-Ḥikma, Qum 1417 AH digitally transcribed print, p.265; witnessed reading at this stage ONLY in that base digital presentation; additional print collation outstanding",
-      "status": "unresolved internal textual inconsistency; conjecture not adopted; no independent witness attestation",
-      "adoption": "not-adopted",
+      "type": "Textual emendation · 1428 AH editor; early reading preserved",
+      "text": "The complete IX.9 authorial chapter was compared with the 1404 Qum facsimile, printed pp.210–212 (NYU canvases 214–216), and the later 1428 edition, vol.2 pp.107–110. The early print at p.211 and the 1417 base at p.265 both read «كما في القسم الأول» (as in the first kind). The 1428 editor explicitly records this copy reading and corrects it to «كما في القسم الثاني» at vol.2 p.108 n.4. The reader adopts the attributed later correction: stripping off and putting on belongs to the second, parallel kind, whereas the first, hierarchical kind is putting on after putting on. The English now says “as in the second kind.” The early facsimile does NOT attest الثاني. This resolves the previously unadopted internal conjecture; the original note identifier is preserved for continuity. No manuscript attestation or specialist certification is claimed.",
+      "url": "https://lib.rafed.net/view.php?b_id=3109&page=108&type=c_fbook",
+      "source": "1404 Qum p.211, NYU canvas215; 1417 Qum p.265; 1428 al-Zāriʿī vol.2 p.108 n.4",
+      "status": "Resolved by explicit later-editor emendation; earlier/base reading independently confirmed in early facsimile",
+      "adoption": "adopted-with-full-apparatus",
       "originalReading": "كما في القسم الأول",
-      "proposedReading": "كما في القسم الثاني",
-      "evidenceGrade": "internal logical argument only; no parallel printed/manuscript attestation in this stage"
+      "evidenceGrade": "Complete early-print facsimile comparison of IX.9 and complete later-edition digital chapter reading; not manuscript collation",
+      "adoptedReading": "كما في القسم الثاني",
+      "resolved": "2026-11-10",
+      "priorStatus": "Unadopted internal conjecture in Stage IV–VII",
+      "evidenceReport": "../../audits/nihaya-ix9-external-collation-2026-11-10.json"
     },
     {
       "id": "N1428-VI09-BOUNDARY-01",
@@ -576,7 +579,90 @@
       "subject": "substance vs form; genus vs common predication",
       "originalReading": null,
       "proposedReading": null
+    },
+    {
+      "id": "N1428-IX09-SUBJECT-01",
+      "passageId": "N-IX-09",
+      "type": "Grammatical recast · 1428 AH editor",
+      "text": "The early 1404 facsimile p.211 and the 1417 base p.265 read «هي الموضوع بعينه ما تعاقبت». The 1428 editor, vol.2 p.108 n.3, recasts this as «هي بعينها موضوع ما تعاقبت». The reader adopts that disclosed grammatical recast; the claim that the same matter persists through the succession of forms is unchanged. The later note quotes its copies with «تعاقب» without a final feminine ت, whereas the directly inspected early facsimile and the current 1417 transcription have «تعاقبت». The collective copy report must not be substituted for the exact reading of either inspected witness. The English already conveys the same subject claim.",
+      "url": "https://lib.rafed.net/view.php?b_id=3109&page=108&type=c_fbook",
+      "source": "1404 Qum p.211, canvas215; 1417 p.265; 1428 vol.2 p.108 n.3",
+      "status": "Explicit later editorial recast; not manuscript-attested",
+      "adoption": "adopted-with-full-apparatus",
+      "originalReading": "هي الموضوع بعينه ما تعاقبت",
+      "adoptedReading": "هي بعينها موضوع ما تعاقبت"
+    },
+    {
+      "id": "N1428-IX09-POTENTIALITY-01",
+      "passageId": "N-IX-09",
+      "type": "Pronoun correction · 1428 AH editor",
+      "text": "The 1404 early print p.212 and the 1417 base p.266 have the masculine possessive in «قوة لقوته» (base with vocalization: «قوّةً لقوّته»). The 1428 editor, vol.2 p.109 n.2, corrects the pronoun to the feminine «لقوّتها», referring to «فعليّة ما». The reading text adopts «قوّةً لقوّتها». The English already refers to an actuality’s own potentiality and is unchanged. This pronoun correction is separate from the editor’s philosophical objection to the argument against descending motion.",
+      "url": "https://lib.rafed.net/view.php?b_id=3109&page=109&type=c_fbook",
+      "source": "1404 Qum p.212, canvas216; 1417 p.266; 1428 vol.2 p.109 n.2",
+      "status": "Explicit later editorial pronoun correction; not manuscript-attested",
+      "adoption": "adopted-with-full-apparatus",
+      "originalReading": "قوّةً لقوّته",
+      "adoptedReading": "قوّةً لقوّتها"
+    },
+    {
+      "id": "N1428-IX11-GENDER-01",
+      "passageId": "N-IX-11",
+      "type": "Grammatical correction · 1428 AH editor",
+      "text": "The early 1404 Qum print p.215 (NYU canvas219) and the 1417 base read «أيّ حركة كانت». The 1428 editor, vol.2 p.115 n.2, explicitly corrects this to «أيّة حركة كانت», agreeing with حركة. The Arabic adopts this attributed grammatical correction; no change in English meaning is required. This is a targeted phrase comparison, not a complete external collation of IX.11.",
+      "url": "https://lib.rafed.net/view.php?b_id=3109&page=115&type=c_fbook",
+      "source": "1404 Qum p.215, canvas219; 1428 vol.2 p.115 n.2; 1417 base IX.11",
+      "status": "Explicit later-editor correction; targeted external check only",
+      "adoption": "adopted-with-full-apparatus",
+      "originalReading": "أيّ حركة كانت",
+      "adoptedReading": "أيّة حركة كانت"
+    },
+    {
+      "type": "Textual emendation · 1428 AH editor",
+      "text": "The 1404 Qum facsimile, printed p. 102 (NYU canvas 106), and the 1417 transcription, p. 129, read «بإضافة المرتبة العالية» (through the addition of the higher degree). The 1428 editor, vol. 1 p. 171 n. 1, explicitly records that reading and corrects to «بإفاضة المرتبة العالية» (through the bestowal of the higher degree). The Arabic follows this attributed editorial emendation; the existing English already reflects it. No manuscript-attested variant is claimed.",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=171&type=c_fbook",
+      "source": "1428 revised editorial print, with targeted early-print facsimile corroboration of the recorded prior reading",
+      "id": "N1428-VI05-BESTOWAL-01",
+      "passageId": "N-VI-05",
+      "status": "Explicit later-editor emendation from addition to bestowal; early facsimile and 1417 base agree on the earlier word.",
+      "adoption": "adopted-with-full-apparatus",
+      "originalReading": "بإضافة المرتبة العالية",
+      "adoptedReading": "بإفاضة المرتبة العالية",
+      "evidenceReport": "../../audits/nihaya-targeted-variants-2026-11-10.json"
+    },
+    {
+      "type": "Textual variant · 1428 AH revised edition",
+      "text": "The 1404 Qum facsimile, printed p. 228 (NYU canvas 232), and the 1417 transcription, p. 284, read «عدم التوقّف» (non-dependence). The 1428 revised edition, vol. 2 pp. 136–137, prints «عدم المتوقّف» (the nonexistence of what depends), without a footnote identifying this particular change. The Arabic and English follow that attested later-edition reading; the earlier reading is preserved here. This is a later printed variant, not an independently verified manuscript reading.",
+      "url": "https://lib.rafed.net/view.php?b_id=3109&page=136&type=c_fbook",
+      "source": "1428 digital edited print; unfootnoted main-text variant compared with 1404 facsimile and 1417 transcription",
+      "id": "N1428-X02-DEPENDENT-01",
+      "passageId": "N-X-02",
+      "status": "Attested later-edition main-text reading, not an explicitly footnoted correction and not a manuscript variant.",
+      "adoption": "adopted-with-full-apparatus",
+      "originalReading": "عدم التوقّف",
+      "adoptedReading": "عدم المتوقّف",
+      "evidenceReport": "../../audits/nihaya-targeted-variants-2026-11-10.json"
+    },
+    {
+      "id": "N1428-IX09-DESCENT-OBJECTION-01",
+      "passageId": "N-IX-09",
+      "type": "Later editor’s philosophical objection · not authorial text",
+      "text": "The editor disputes the argument against descending motion. A subject's coexisting potentiality, not its present actuality, can be actualized at a less perfect level. Such decline can therefore still be potentiality becoming actuality. He also questions treating withering merely as incidental motion. Preserve this disagreement alongside the author's argument. This is separately attributed later commentary; the authorial argument remains in the Arabic and English. The works invoked by the editor have not been independently collated here.",
+      "url": "https://lib.rafed.net/view.php?b_id=3109&page=109&type=c_fbook",
+      "source": "1428 vol2 pp109–110 note2 and following note1",
+      "status": "later editor objection, not variant or adopted authorial correction",
+      "adoption": "not-applicable-editorial-comment"
+    },
+    {
+      "id": "N1428-IX09-SUBJECT-OBJECTION-01",
+      "passageId": "N-IX-09",
+      "type": "Later editor’s philosophical objection · not authorial text",
+      "text": "The editor invokes Bidāya and the author's Asfar gloss: motion as motion need not have a distinct enduring substrate; substantial motion can itself be a self-subsisting fluid substantial actuality. Keep this outside authorial text. This is separately attributed later commentary; the authorial argument remains in the Arabic and English. The works invoked by the editor have not been independently collated here.",
+      "url": "https://lib.rafed.net/view.php?b_id=3109&page=107&type=c_fbook",
+      "source": "1428 vol2 p107 note2",
+      "status": "later editor cross-text objection, not variant",
+      "adoption": "not-applicable-editorial-comment"
     }
   ],
-  "sourceCriticalPolicy": "Preserve authorial notes explicitly marked منه رحمه الله; distinguish later editor's explanatory notes; challenge historically questionable ascriptions by checking named scholars' own texts. These criticalNotes are distinct from the authorial Arabic and translation."
+  "sourceCriticalPolicy": "Preserve authorial notes explicitly marked منه رحمه الله; distinguish later editor's explanatory notes; challenge historically questionable ascriptions by checking named scholars' own texts. These criticalNotes are distinct from the authorial Arabic and translation.",
+  "textualDecisionLedger": "../../audits/nihaya-adopted-textual-decisions-2026-11-10.json"
 }
