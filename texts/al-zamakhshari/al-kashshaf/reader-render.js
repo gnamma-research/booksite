@@ -1,0 +1,18 @@
+/* Complete Kashshaf units, with independently visible Tibi commentary. */
+(function(){'use strict';
+function unit(r,first,p,E,sourceHTML){
+ let ai=0;
+ const firstVerse=r.verses[0], parts=firstVerse&&r.s!==1&&firstVerse.number===1?firstVerse.ar.split(' '):[];
+ const basmala=parts.length>4&&/^ب[\u064b-\u065f]*سْمِ/.test(parts[0])?parts.slice(0,4).join(' '):'';
+ const verseArabic=v=>v===firstVerse&&basmala?v.ar.slice(basmala.length+1):v.ar;
+ const q='<section class="quran-context" aria-label="Qurʾānic passage"><div class="quran-heading"><span lang="ar" dir="rtl">القرآن الكريم · سورة '+E(r.surah_ar)+'</span><span>Q '+E(r.q)+'</span></div><div class="quran-arabic" lang="ar" dir="rtl">'+(basmala?'<div class="quran-basmala">'+E(basmala)+'</div>':'')+'﴿ '+r.verses.map(v=>'<span class="ayah" data-verse="'+E(v.key)+'">'+E(verseArabic(v))+' <span class="ayah-number" aria-label="Verse '+v.number+'">۝'+String(v.number).replace(/\d/g,d=>'٠١٢٣٤٥٦٧٨٩'[d])+'</span></span>').join(' ')+' ﴾</div><div class="q-en" lang="en">'+(basmala?'<p class="basmala-en">In the name of Allah, the Beneficent, the Merciful.</p>':'')+r.verses.map(v=>'<p><sup>'+v.number+'</sup> '+E(v.en)+'</p>').join('')+'<p class="quran-credit">Verse translation: Marmaduke Pickthall (1930).</p></div></section>';
+ const layers=r.layers.map((s,i)=>{
+  const isT=s.author==='tibi';
+  const ar=s.ar.split(/\n\s*\n/).filter(x=>x.trim()).map(text=>'<p id="ar-'+r.id+'-'+(++ai)+'" data-anchor="true" data-lang="ar">'+E(p.marks==='unvowelled'?text.replace(/[\u064b-\u065f\u0670]/g,''):text)+'</p>').join('');
+  return '<section class="author-layer '+(isT?'tibi-layer':'kashshaf-layer')+'" data-author="'+s.author+'" data-source-id="'+s.id+'"><header class="layer-heading"><span class="author-name">'+(isT?'Ṭībī · <bdi lang="ar">فتوح الغيب</bdi>':'Zamakhsharī · <bdi lang="ar">الكشاف</bdi>')+'</span><span class="segment-id" id="'+s.id+'">'+s.id+'</span></header>'+(isT?'<p class="tibi-relation">Commentary on '+s.on.map(id=>'<a href="'+('#/read/'+id)+'">'+E(id)+'</a>').join(', ')+'</p>':'')+'<div class="parallel"><div class="language-col ar-column" data-lang="ar" lang="ar" dir="rtl"><span class="language-label">'+(isT?'شرح الطيبي':'تفسير الزمخشري')+'</span>'+ar+'</div><div class="language-col en-column" data-lang="en" lang="en"><section id="en-'+r.id+'-s'+(i+1)+'" data-segment="'+(i+1)+'"><h3 class="segment-title">'+E(s.title)+'</h3>'+(isT&&s.lemma?'<p class="source-lemma"><span>Arabic lemma · </span><bdi lang="ar" dir="rtl">'+E(s.lemma)+'</bdi></p>':'')+sourceHTML(s.html,r.id,i+1)+'</section></div></div></section>';
+ }).join('');
+ return '<article class="passage" data-record="'+r.id+'" id="unit-'+r.id+'"><header class="passage-header"><span class="eyebrow">'+E(r.surah)+' · Q '+E(r.q)+'</span><'+(first?'h1':'h2')+'>'+E(r.title)+'</'+(first?'h1':'h2')+'><div class="passage-meta"><span>'+E(r.cairo)+'</span><span>Arabic and English aligned by section</span><button data-action="citation" data-record="'+r.id+'">Cite</button><button data-action="save" data-record="'+r.id+'">Save passage</button></div></header>'+q+layers+'<div class="passage-actions"><button data-action="passage-notes" data-record="'+r.id+'">Annotations & references</button><button data-action="annotate" data-record="'+r.id+'">Add a personal note</button><button data-action="citation" data-record="'+r.id+'">Citation</button></div></article>';
+}
+function layerControls(p){return '<div class="commentary-controls"><label><input type="checkbox" data-setting="tibi" '+(p.tibi!==false?'checked':'')+'> <span>Ṭībī’s commentary <bdi lang="ar">شرح الطيبي</bdi></span></label><span class="muted">AR · EN · both &nbsp; / &nbsp; Qurʾānic Arabic stays visible</span></div>';}
+window.KashshafRender={unit,layerControls};
+})();
