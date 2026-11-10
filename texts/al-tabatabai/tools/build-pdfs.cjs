@@ -2,14 +2,15 @@
    HIKMA_PDF_MODES=reading,study,reference node texts/al-tabatabai/tools/build-pdfs.cjs */
 'use strict';
 const fs=require('node:fs'),p=require('node:path'),crypto=require('node:crypto');
-const {chromium}=require('playwright');
+const richText=require('../assets/hikma-rich-text.js');
 const base=p.resolve(__dirname,'..'),dest=p.join(base,'editions');
 const modes=(process.env.HIKMA_PDF_MODES||'reading,study,reference').split(',');
 const configs=[['muzaffar-al-mantiq','al-Manṭiq'],['bidayat-al-hikma','Bidāyat al-Ḥikma'],['nihayat-al-hikma','Nihāyat al-Ḥikma']];
 const esc=x=>String(x??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 const normal=x=>String(x??'').trim(),slug=x=>String(x).replace(/[^a-zA-Z0-9_-]/g,'-');
-const rich=x=>esc(x).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/\*([^*]+)\*/g,'<em>$1</em>');
-const paragraphs=(txt,dir)=>normal(txt).split(/\n\s*\n/).filter(Boolean).map(x=>'<p dir="'+dir+'">'+rich(x).replace(/\n/g,'<br>')+'</p>').join('');
+const rich=richText.inline;
+const paragraphs=(txt,dir)=>richText.renderText(txt,{language:dir==='rtl'?'arabic':'english',lineBreaks:true});
+const passage=(unit,language)=>richText.renderUnit(unit,language,{lineBreaks:true});
 const isGuide=x=>/editorial|guide|outline/.test(String(x.status||'').toLowerCase())||String(x.id).startsWith('B-GUIDE');
 function footnotes(u){
  const notes=[];
@@ -53,11 +54,11 @@ function buildHtml(book,mode,css){
   const ar=normal(u.arabic),en=normal(u.english);
   if(mode==='study'){
     pages.push('<div class="pair'+(!ar||!en?' pair-single':'')+'">'+
-      (ar?'<div class="arabic" lang="ar" dir="rtl">'+paragraphs(ar,'rtl')+'</div>':'')+
-      (en?'<div class="english" lang="en" dir="ltr">'+paragraphs(en,'ltr')+'</div>':'')+'</div>');
-  }else if(mode==='reference')pages.push('<div class="arabic full" lang="ar" dir="rtl">'+paragraphs(ar,'rtl')+'</div>');
-  else pages.push(en?'<div class="english full" lang="en" dir="ltr">'+paragraphs(en,'ltr')+'</div>':
-    '<div class="arabic full" lang="ar" dir="rtl">'+paragraphs(ar,'rtl')+'</div>');
+      (ar?'<div class="arabic" lang="ar" dir="rtl">'+passage(u,'arabic')+'</div>':'')+
+      (en?'<div class="english" lang="en" dir="ltr">'+passage(u,'english')+'</div>':'')+'</div>');
+  }else if(mode==='reference')pages.push('<div class="arabic full" lang="ar" dir="rtl">'+passage(u,'arabic')+'</div>');
+  else pages.push(en?'<div class="english full" lang="en" dir="ltr">'+passage(u,'english')+'</div>':
+    '<div class="arabic full" lang="ar" dir="rtl">'+passage(u,'arabic')+'</div>');
   pages.push(footnotes(u)+'</section>');
  }
  const author=typeof book.author==='object'?book.author.name||'':book.author||'';
@@ -75,7 +76,9 @@ async function main(){
  for(const m of modes)if(!['study','reading','reference'].includes(m))throw Error('Invalid PDF layout '+m);
  fs.mkdirSync(dest,{recursive:true});
  const font=fs.readFileSync(p.join(base,'../../daruri/fonts/amiri-regular.woff2')).toString('base64');
- const css=fs.readFileSync(p.join(base,'assets/hikma-pdf.css'),'utf8').replace('__AMIRI_DATA__',font);
+ const css=fs.readFileSync(p.join(base,'assets/hikma-pdf.css'),'utf8').replace('__AMIRI_DATA__',font)+'\n'+
+   fs.readFileSync(p.join(base,'assets/hikma-rich-text.css'),'utf8');
+ const {chromium}=require('playwright');
  const browser=await chromium.launch({args:['--disable-dev-shm-usage']});
  const page=await browser.newPage({viewport:{width:1200,height:850}});
  const manifest={schema:1,builder:'tools/build-pdfs.cjs',files:[]};
@@ -122,4 +125,5 @@ async function main(){
  fs.writeFileSync(p.join(dest,'manifest.json'),JSON.stringify(manifest,null,2)+'\n');
  console.log('Generated '+manifest.files.length+' PDF editions');
 }
-main().catch(e=>{console.error(e.stack||e);process.exitCode=1});
+module.exports={buildHtml};
+if(require.main===module)main().catch(e=>{console.error(e.stack||e);process.exitCode=1});

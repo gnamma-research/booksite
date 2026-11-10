@@ -20,7 +20,7 @@ concurrency:
 
 jobs:
   reader:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
@@ -31,6 +31,7 @@ jobs:
         run: node texts/al-tabatabai/tools/audit-hikma.mjs
       - name: Verify JavaScript syntax
         run: |
+          node --check texts/al-tabatabai/assets/hikma-rich-text.js
           node --check texts/al-tabatabai/assets/hikma-reader.js
           node --check texts/al-tabatabai/assets/hikma-combined.js
           node --check texts/al-tabatabai/assets/hikma-refinements.js

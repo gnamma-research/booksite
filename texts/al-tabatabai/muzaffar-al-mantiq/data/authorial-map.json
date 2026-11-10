@@ -7,9 +7,10 @@
     "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
     "printedPages": 455,
     "institutionalScan": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000780/1",
-    "institutionalScanYear": 1968
+    "institutionalScanYear": 1968,
+    "paginationCaution": "Legacy start/end and firstPrintedPage fields are inherited bibliographic mappings unless a locator says directly checked. Stage VIII records verified displayed page labels separately; these must not be treated as page numbers in the independently uncollated 1968 facsimile."
   },
-  "status": "78 selected Arabic–English working authorial units: Introduction 11, Book I 11, Book II 17, Book III 14, Book IV 25; Books V–VI zero, gaps in Books I–IV and figures/exercises remain. Six-book authorial map is not full-text translation.",
+  "status": "101 selected Arabic–English working units: Introduction 11; Book I 11; Book II 17; Book III 14; Book IV 47; Book V 1; Book VI zero. The new continuous chapter II of Book IV and Book V preface do not remove earlier omissions or establish complete six-book coverage.",
   "parts": [
     {
       "book": 0,
@@ -318,7 +319,7 @@
       "title": "Definition and division",
       "arabic": "الباب الثالث — المعرف وتلحق به القسمة",
       "start": 91,
-      "end": 126,
+      "end": 123,
       "topics": [
         {
           "arabic": "مطلب ما وأي وهل ولم",
@@ -384,21 +385,22 @@
       ],
       "availableUnits": 14,
       "note": "Four-question, definition and definition-condition selections have bilingual working text (14 local passages). The remaining authorial discussion of division and omitted parts of the same book do not yet have local text.",
-      "url": "https://lib.rafed.net/m/?b_id=1604&page=91&type=c_fbook"
+      "url": "https://lib.rafed.net/m/?b_id=1604&page=91&type=c_fbook",
+      "rangeCaution": "End is bounded by the verified next-book title at displayed124; earlier BookIII starting-page mapping remains inherited."
     },
     {
       "book": 4,
       "title": "Propositions and their properties",
       "arabic": "الباب الرابع — القضايا وأحكامها",
-      "start": 127,
-      "end": 198,
+      "start": 124,
+      "end": 195,
       "topics": [
         {
           "arabic": "القضية وأقسامها",
           "english": "The proposition; categorical and conditional",
-          "firstPrintedPage": 127,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=127&type=c_fbook",
-          "locatorStatus": "observed in source table of contents"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=126&type=c_fbook",
+          "locatorStatus": "directly read Rafed displayed page; physical 1968 pagination not collated",
+          "firstDisplayedPage": 126
         },
         {
           "arabic": "الموجبة والسالبة",
@@ -439,45 +441,58 @@
         {
           "arabic": "التناقض وشروطه والوحدات الثمان",
           "english": "Contradiction and the eight conditions of unity",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=163&type=c_fbook",
+          "locatorStatus": "directly read Rafed displayed page; physical 1968 pagination not collated",
+          "firstDisplayedPage": 163,
+          "passageId": "M-C-27"
         },
         {
           "arabic": "التداخل والتضاد",
           "english": "Subalternation and contrariety",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=167&type=c_fbook",
+          "locatorStatus": "directly read Rafed displayed page; physical 1968 pagination not collated",
+          "firstDisplayedPage": 167,
+          "passageId": "M-C-30"
         },
         {
           "arabic": "العكس المستوي وعكس النقيض",
           "english": "Conversion and contraposition",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=170&type=c_fbook",
+          "locatorStatus": "directly read Rafed displayed page; physical 1968 pagination not collated",
+          "firstDisplayedPage": 170,
+          "passageId": "M-C-31"
         },
         {
           "arabic": "نقض المحمول ونقض الموضوع",
           "english": "Predicate and subject negation",
-          "url": "https://lib.rafed.net/m/?b_id=1604&type=c_fbook",
-          "locatorStatus": "bibliographic topic, exact printed page not checked"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=185&type=c_fbook",
+          "locatorStatus": "directly read Rafed displayed page; physical 1968 pagination not collated",
+          "firstDisplayedPage": 185,
+          "passageId": "M-C-41"
         }
       ],
-      "availableUnits": 25,
-      "note": "25 selected authorial Arabic–English working passages now cover portions of printed pp.125–159, including quantified propositions, simple and compound modalities, original exercises, necessary/coincidental conditionals, three kinds of disjunction and displaced forms. Source printed figures/charts are NOT fully transcribed; the remaining Book IV (pp.160–198) and all Books V–VI absent, as are other gaps in Books I–III. 1968 scanned edition not independently collated.",
-      "url": "https://lib.rafed.net/m/?b_id=1604&page=127&type=c_fbook"
+      "availableUnits": 47,
+      "note": "47 working bilingual units. New continuous displayed pp.162–195 cover contradiction, opposition, conversion, contraposition, complementation, all intervening exercises and the final logical axiom. The p.169 square is transcribed; the p.193 English table is explicitly reconstructed from defective digital notation. Earlier summary-chart omissions and selection gaps remain; no complete 1968 facsimile collation is claimed. Targeted 1968 checks are recorded for the table and final examples; one restored complement mark remains conjectural.",
+      "url": "https://lib.rafed.net/view.php?b_id=1604&page=124&type=c_fbook",
+      "displayedEndVerified": 195,
+      "paginationBasis": "Verified Rafed displayed title124, first prose126 and final prose195; not physical1968 pagination",
+      "displayedTitlePageVerified": 124,
+      "displayedFirstProsePageVerified": 126
     },
     {
       "book": 5,
       "title": "Inference, syllogism, induction and analogy",
       "arabic": "الباب الخامس — مباحث الاستدلال",
-      "start": 199,
-      "end": 276,
+      "start": 196,
+      "end": 270,
       "topics": [
         {
           "arabic": "طريق الاستدلال",
           "english": "The structure of inference",
-          "firstPrintedPage": 199,
-          "url": "https://lib.rafed.net/m/?b_id=1604&page=199&type=c_fbook",
-          "locatorStatus": "observed in source table of contents"
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=198&type=c_fbook",
+          "locatorStatus": "directly read Rafed displayed page; physical 1968 pagination not collated",
+          "firstDisplayedPage": 198,
+          "passageId": "M-V-01"
         },
         {
           "arabic": "القياس وأقسامه",
@@ -534,15 +549,18 @@
           "locatorStatus": "bibliographic topic, exact printed page not checked"
         }
       ],
-      "availableUnits": 0,
-      "note": "No Book V passage has yet been translated in the local reader.",
-      "url": "https://lib.rafed.net/m/?b_id=1604&page=199&type=c_fbook"
+      "availableUnits": 1,
+      "note": "The Book V preface at displayed pp.198–199 is translated as M-V-01. The title is displayed p.196, p.197 is blank, and the definition of syllogism begins p.200. The remaining Book V text is not yet in the bilingual reader.",
+      "url": "https://lib.rafed.net/view.php?b_id=1604&page=196&type=c_fbook",
+      "displayedTitlePageVerified": 196,
+      "displayedFirstProsePageVerified": 198,
+      "paginationBasis": "Verified Rafed displayed title196, first prose198, final exercises269 and endnotice270; not physical1968 pagination"
     },
     {
       "book": 6,
       "title": "The five argumentative arts",
       "arabic": "الباب السادس — الصناعات الخمس",
-      "start": 277,
+      "start": 274,
       "end": 455,
       "topics": [
         {
@@ -586,19 +604,25 @@
       ],
       "availableUnits": 0,
       "note": "No authorial Book VI passage has yet been translated in the local reader.",
-      "url": "https://lib.rafed.net/m/?b_id=1604&page=277&type=c_fbook"
+      "url": "https://lib.rafed.net/view.php?b_id=1604&page=274&type=c_fbook",
+      "displayedTitlePageVerified": 274,
+      "displayedFirstProsePageVerified": 276,
+      "paginationBasis": "Verified Rafed displayed title274 and first prose276; endpoint455 inherited and not newly checked"
     }
   ],
   "summary": {
     "totalAuthorialBooks": 6,
     "sourcePagesCoveredByRegister": 455,
-    "localTranslatedUnits": 78,
+    "localTranslatedUnits": 101,
     "localIntroUnits": 11,
     "localBook3Units": 14,
-    "otherAuthorialBooksLocallyTranslated": 1,
+    "otherAuthorialBooksLocallyTranslated": 4,
     "localBook1Units": 11,
     "localBook2Units": 17,
-    "localBook4Units": 25
+    "localBook4Units": 47,
+    "localBook5Units": 1,
+    "otherAuthorialBooksLocallyTranslatedDefinition": "Books other than Book III with at least one local translated unit: I, II, IV, V."
   },
-  "accuracy": "The new Book I source pages 38–53 have been inspected in the searchable 1402 AH Arabic; normalised punctuation and potential printed variants still need independent 1968 visual collation. Book II's known 1402/1421 symbolic proof inconsistency remains recorded without unsupported manuscript attestation."
+  "accuracy": "New units M-C-26–47 and M-V-01 were read continuously against Rafed displayed pp.162–195 and 198–199. Displayed page labels are distinguished from unverified physical-pagination mappings. The p.169 image was visually transcribed; the defective p.193 digital table has an explicitly editorial English reconstruction. Targeted 1968 facsimile checks of the table and final examples support the table alignment, one complement mark, the division equation and the matching verb; one complement restoration remains conjectural. The full 1968 text remains uncollated. Earlier selection gaps, omitted charts, normalized M-K-14 and unresolved symbolic readings remain disclosed.",
+  "updated": "2026-11-10"
 }

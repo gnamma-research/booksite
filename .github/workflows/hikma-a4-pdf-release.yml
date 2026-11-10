@@ -7,6 +7,8 @@ on:
       - 'texts/al-tabatabai/*/data/book.json'
       - 'texts/al-tabatabai/nihayat-al-hikma/data/editorial-supplement.json'
       - 'texts/al-tabatabai/assets/hikma-pdf.css'
+      - 'texts/al-tabatabai/assets/hikma-rich-text.js'
+      - 'texts/al-tabatabai/assets/hikma-rich-text.css'
       - 'texts/al-tabatabai/tools/build-pdfs.cjs'
       - '.github/workflows/hikma-a4-pdf-release.yml'
 
@@ -21,7 +23,7 @@ concurrency:
 
 jobs:
   build-and-release:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
@@ -93,7 +95,9 @@ jobs:
                   texts/al-tabatabai/nihayat-al-hikma/data/book.json \
                   texts/al-tabatabai/nihayat-al-hikma/data/editorial-supplement.json \
                   texts/al-tabatabai/tools/build-pdfs.cjs \
-                  texts/al-tabatabai/assets/hikma-pdf.css; then
+                  texts/al-tabatabai/assets/hikma-pdf.css \
+                  texts/al-tabatabai/assets/hikma-rich-text.js \
+                  texts/al-tabatabai/assets/hikma-rich-text.css; then
               echo 'A newer source edition arrived after this build. Refusing to publish stale PDFs.'
               exit 1
             fi

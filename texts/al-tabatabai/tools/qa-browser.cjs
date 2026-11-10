@@ -4,6 +4,8 @@
  *   python3 -m http.server 8767 --bind 127.0.0.1 &
  *   npm install --no-save --package-lock=false playwright@1.58.0
  *   node texts/al-tabatabai/tools/qa-browser.cjs
+ * Focused square/table checks (no full-reader PDF smoke test):
+ *   HIKMA_QA_SCOPE=logic node texts/al-tabatabai/tools/qa-browser.cjs
  */
 'use strict';
 const { chromium, webkit } = require('playwright');
@@ -22,6 +24,116 @@ async function ready(page){
 async function check(label, fn){
   try{await fn();count++;console.log('PASS '+label)}
   catch(e){console.error('FAIL '+label+': '+e.stack);throw e}
+}
+const relationTable=[
+  ['Contradictory','O(B,C)','E(B,C)','I(B,C)','A(B,C)'],
+  ['Simple converse','I(C,B)','I(C,B)','E(C,B)','—'],
+  ['Contrapositive retaining quality','A(¬C,¬B)','—','O(¬C,¬B)','O(¬C,¬B)'],
+  ['Contrapositive changing quality','E(¬C,B)','—','I(¬C,B)','I(¬C,B)'],
+  ['Predicate-complemented form','E(B,¬C)','O(B,¬C)','A(B,¬C)','I(B,¬C)'],
+  ['Both terms complemented','I(¬B,¬C)','—','O(¬B,¬C)','—'],
+  ['Subject-complemented form','O(¬B,C)','—','I(¬B,C)','—']
+];
+async function runLogic(browserType){
+  const browser=await browserType.launch({headless:true});
+  try{
+    for(const mobile of [false,true]){
+      for(const reader of ['combined','direct']){
+        const context=await browser.newContext({
+          viewport:mobile?{width:390,height:844}:{width:1365,height:900},
+          isMobile:mobile,hasTouch:mobile,reducedMotion:'reduce'
+        });
+        try{
+          const page=await context.newPage();
+          const errors=[];
+          page.on('pageerror',error=>errors.push(error.message));
+          const label=browserType.name()+' '+reader+' '+(mobile?'mobile':'desktop');
+          const url=base+(reader==='direct'?'muzaffar-al-mantiq/':'')+'#passage-M-C-30';
+          await page.goto(url,{waitUntil:'domcontentloaded'});
+          await ready(page);
+          await check(label+' bilingual square of opposition',async()=>{
+            for(const language of ['english','arabic']){
+              const figure=page.locator('#passage-M-C-30 .'+language+'-panel .hikma-source-diagram');
+              await figure.waitFor({state:'attached',timeout:35000});
+              assert.equal(await figure.count(),1,'Duplicate square in '+language);
+              const svg=figure.locator('svg');
+              assert.equal(await svg.count(),1,'Missing SVG square in '+language);
+              assert.ok(await svg.getAttribute('viewBox'),'Square needs a scalable viewBox');
+              assert.ok((await svg.locator('title').textContent()).trim(),'Square has no accessible title');
+              assert.ok((await svg.locator('desc').textContent()).trim(),'Square has no accessible description');
+              assert.ok((await figure.locator('figcaption').textContent()).trim(),'Square has no caption');
+              const nodes=await svg.locator('.hikma-diagram-node').evaluateAll(elements=>
+                elements.map(element=>element.dataset.node).sort());
+              assert.deepEqual(nodes,['A','E','I','O'],'Four quantified propositions must be represented');
+              const pairs=await svg.locator('.hikma-diagram-relation').evaluateAll(elements=>
+                elements.map(element=>[element.dataset.from,element.dataset.to].sort().join('-')).sort());
+              assert.deepEqual(pairs,['A-E','A-I','A-O','E-I','E-O','I-O'],
+                'Square must preserve all six authorial relationships');
+            }
+          });
+          await check(label+' aligned relation table and complement signs',async()=>{
+            const passage=page.locator('#passage-M-C-46');
+            await passage.waitFor({state:'attached',timeout:35000});
+            const table=passage.locator('.english-panel .hikma-table-scroll > table.hikma-text-table');
+            assert.equal(await table.count(),1,'The relation table was not rendered as a table');
+            const headers=await table.locator('thead th').allTextContents();
+            assert.deepEqual(headers.map(text=>text.trim()),[
+              'Relation','Universal affirmative A(B,C)','Particular affirmative I(B,C)',
+              'Universal negative E(B,C)','Particular negative O(B,C)'
+            ]);
+            const rows=await table.locator('tbody tr').evaluateAll(elements=>elements.map(row=>
+              [...row.querySelectorAll('th,td')].map(cell=>cell.textContent.trim())));
+            assert.deepEqual(rows,relationTable,'A missing cell or complement sign changed the table');
+            assert.ok(!(await passage.locator('.english-panel .text-body p').allTextContents())
+              .some(text=>text.includes('| Relation |')),'Raw Markdown table leaked into prose');
+            const text=await passage.textContent();
+            assert.match(text,/reconstructs the intended alignment/i,'Editorial reconstruction must remain explicit');
+            assert.match(text,/digital-source record|digital (?:table|source)/i,
+              'The source reading must remain distinguishable from the editorial reconstruction');
+          });
+          await check(label+' figure and table containment',async()=>{
+            for(const id of ['M-C-30','M-C-46']){
+              await page.locator('#passage-'+id+' .english-panel').scrollIntoViewIfNeeded();
+              const dimensions=await page.evaluate(()=>({
+                viewport:innerWidth,document:document.documentElement.scrollWidth,
+                body:document.body.scrollWidth
+              }));
+              assert.ok(dimensions.document<=dimensions.viewport+3 && dimensions.body<=dimensions.viewport+3,
+                id+' causes horizontal page overflow: '+JSON.stringify(dimensions));
+            }
+            for(const svg of await page.locator('#passage-M-C-30 .hikma-source-diagram svg').all()){
+              const bounds=await svg.evaluate(element=>({
+                width:element.getBoundingClientRect().width,
+                container:element.parentElement.getBoundingClientRect().width
+              }));
+              assert.ok(bounds.width>0 && bounds.width<=bounds.container+2,
+                'Square exceeds its figure: '+JSON.stringify(bounds));
+            }
+            if(mobile){
+              const scroll=page.locator('#passage-M-C-46 .english-panel .hikma-table-scroll');
+              const dimensions=await scroll.evaluate(element=>({
+                visible:element.clientWidth,content:element.scrollWidth,
+                overflow:getComputedStyle(element).overflowX
+              }));
+              assert.ok(['auto','scroll'].includes(dimensions.overflow),
+                'Wide table needs its own horizontal scrolling container');
+              assert.ok(dimensions.visible>0 && dimensions.visible<=390,
+                'Table container exceeds the mobile viewport');
+              if(dimensions.content>dimensions.visible+1){
+                await scroll.evaluate(element=>{element.scrollLeft=element.scrollWidth;});
+                assert.ok(await scroll.evaluate(element=>element.scrollLeft>0),
+                  'Last table columns cannot be reached on mobile');
+                await scroll.evaluate(element=>{element.scrollLeft=0;});
+              }
+            }
+            assert.deepEqual(errors,[],'Reader raised an uncaught JavaScript error');
+          });
+          await page.locator('#passage-M-C-46 .english-panel .hikma-table-scroll').scrollIntoViewIfNeeded();
+          await page.screenshot({path:path.join(output,browserType.name()+'-'+reader+'-'+(mobile?'mobile':'desktop')+'-relations.png'),fullPage:false});
+        }finally{await context.close()}
+      }
+    }
+  }finally{await browser.close()}
 }
 async function run(browserType){
   const browser=await browserType.launch({headless:true});
@@ -212,7 +324,8 @@ async function run(browserType){
 (async()=>{
   for(const type of [chromium,webkit]){
     if(process.env.HIKMA_QA_BROWSER && process.env.HIKMA_QA_BROWSER!==type.name())continue;
-    await run(type);
+    if(process.env.HIKMA_QA_SCOPE!=='logic')await run(type);
+    await runLogic(type);
   }
   console.log('All '+count+' checks passed');
 })().catch(e=>{console.error(e.stack||e);process.exitCode=1;});

@@ -281,7 +281,6 @@
     const columns = make('div', 'parallel-text');
     const arabicOnly = !unit.english.trim() && !!unit.arabic.trim();
     if (arabicOnly) columns.classList.add('is-arabic-only');
-    let lastParagraph = null;
     for (const language of ['english', 'arabic']) {
       if (!text(unit[language]).trim()) continue;
       const panel = make('div', 'text-panel ' + language + '-panel');
@@ -290,15 +289,8 @@
       const subtitle = language === 'arabic' ? unit.arabicTitle : unit.title;
       if (unit.group.units.length > 1 && subtitle && subtitle !== (language === 'arabic' ? unit.group.arabicTitle : unit.group.title)) panel.append(make('h4', 'unit-subheading', subtitle));
       const body = make('div', 'text-body');
-      for (const paragraph of unit[language].trim().split(/\n\s*\n/)) {
-        const p = make('p');
-        for (const part of paragraph.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g)) {
-          if (part.startsWith('**') && part.endsWith('**')) p.append(make('strong', '', part.slice(2, -2)));
-          else if (part.startsWith('*') && part.endsWith('*')) p.append(make('em', '', part.slice(1, -1)));
-          else p.append(document.createTextNode(part));
-        }
-        body.append(p); lastParagraph = language === 'english' ? (lastParagraph || p) : p;
-      }
+      // The shared renderer escapes every source string before generating markup.
+      body.innerHTML = HikmaRichText.renderUnit(unit, language);
       panel.append(body); columns.append(panel);
     }
     article.append(columns);
@@ -314,7 +306,7 @@
         items.append(li);
       });
       footnotes.append(summary, items); article.append(footnotes);
-      const preferred = article.querySelector('.english-panel .text-body p:last-child') || article.querySelector('.arabic-panel .text-body p:last-child');
+      const preferred = article.querySelector('.english-panel .text-body > p:last-of-type') || article.querySelector('.arabic-panel .text-body > p:last-of-type');
       if (preferred) {
         const sup = make('sup', 'footnote-references');
         for (let i = 0; i < entries.length; i++) {

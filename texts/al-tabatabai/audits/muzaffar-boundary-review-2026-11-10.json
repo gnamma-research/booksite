@@ -1,0 +1,117 @@
+{
+  "title": "Targeted boundary and logical-table cross-check of 23 new Muzaffar units",
+  "scope": "Targeted review of source boundaries, book/stage placement, the p193 reconstructed relation table, the existential qualifications in its associated p190–191 proofs, and the p194–195 immediate-transformation qualification. This is not a new full bilingual review of all 23 units and not an independent facsimile collation.",
+  "inputs": [
+    {
+      "retrievedFileName": "muzaffar_iv_a.json",
+      "sha256": "a8732bea8bb98f791a158438c0487ac795adc93d2cb9c131f0a0f4fd3b807b89"
+    },
+    {
+      "retrievedFileName": "muzaffar_iv_b.json",
+      "sha256": "157857e9fe5af8a74c5da1d981699871ee244e12f5ac58983ce00995fe6f0251"
+    }
+  ],
+  "newUnits": {
+    "A": 11,
+    "B": 12,
+    "total": 23,
+    "bookIV": 22,
+    "bookV": 1
+  },
+  "sourceGrade": "Rafed displayed-page text and page containers for the digitally presented Dar al-Taaruf 1402 edition. Displayed locators are not asserted to equal printed-page numbers.",
+  "boundaries": [
+    {
+      "locus": "Existing C25 to new C26",
+      "finding": "The four exercises of existing C25 occur in displayed pg160. Its inherited source field says p159, so that field must not be conflated with verified displayed pagination. The same displayed160 also includes the image summary image013.gif, which C25 explicitly says is not transcribed. Displayed161 is blank; the new C26 begins with Chapter Two at162.",
+      "decision": "No prose discontinuity established at the join, but the acknowledged earlier image gap remains unless separately transcribed. Do not claim all Book IV source material has been fully translated."
+    },
+    {
+      "locus": "A/B join at displayed178",
+      "finding": "A ends the second claim of the universal-negative contraposition proof. B begins exactly at برهان عكس السالبة الجزئية and includes the following introductory sentence on the same page.",
+      "decision": "No overlap or omitted intervening prose at this join."
+    },
+    {
+      "locus": "End of Book IV and opening of Book V",
+      "finding": "Book IV final prose ends at displayed195. Book V title is196,197 is blank, its preface and three methods are198–199, and syllogism definition starts200.",
+      "decision": "The new material comprises22 Book IV units and one Book V unit. Remap draft MC-B-12 from stage C into a new Book V stage; the draft stage is not authorial placement."
+    },
+    {
+      "locus": "Start of Book IV",
+      "finding": "Displayed124 has the title القضايا واحکامها;125 has the basmala;126 begins وفيه فصلان and the first chapter’s definition of proposition, continuing at127.",
+      "decision": "Use displayed124 for title and126 for substantive prose start. Do not retain127 as a verified start locator."
+    },
+    {
+      "locus": "End of Book V and start of Book VI",
+      "finding": "Final exercises continue through displayed269;270 contains the end-of-Part-II notice;271 is blank. PartIII title is272,273 blank, BookVI title274,275 blank, and its preface begins276 and continues277.",
+      "decision": "The inherited endV276/startVI277 does not match the displayed source. For this witness use BookV prose end269/endnotice270, BookVI title274/prose start276. The intermediate PartIII title is not BookV text."
+    }
+  ],
+  "logicalTable": {
+    "unit": "MC-B-10 (draft id)",
+    "sourceDisplayedPage": 193,
+    "finding": "All28 transformed entries/absence marks in the English7-by4 table are internally consistent with their stated transformation types and the p190–191 universal-inversion proofs inspected here. The two missing C-complement signs in the digital universal-affirmative column are correctly identified as editorial restorations in English only; omitted blank placeholders are not mechanically interpreted as a source row alignment.",
+    "mandatoryEnglishCorrection": null,
+    "currentQualifications": "The table explicitly states that it reconstructs intended alignment from prior proofs, distinguishes complemented terms from proposition negation, preserves the original Arabic digital readings, and retains traditional existential assumptions. The p190–191 note correctly specifies nonempty non-C for universal-affirmative inversion and nonempty C for universal-negative inversion.",
+    "optionalMorePreciseExistentialNote": "In modern semantics that permits empty terms, A(B,C) to its particular simple converse requires nonempty B; E(B,C) to either particular contrapositive requires nonempty B. The A row’s both-term and subject-complemented forms require nonempty non-C; the E row’s corresponding forms require nonempty C. The other truth-preserving entries require no additional nonemptiness assumption beyond what their premises already assert.",
+    "reasoning": "Universal affirmatives assert inclusion and universal negatives assert disjointness; neither alone asserts the existence needed by an existential conclusion. The listed requirements identify a witness class for each particular conclusion.",
+    "scopeLimit": "This checks the translation/reconstruction and its qualifications, not a claim that the uncorrected digital table or an unseen printed table has been independently validated."
+  },
+  "immediateTransformation": {
+    "unit": "MC-B-11 (draft id)",
+    "sourceDisplayedPages": "194–195",
+    "finding": "The English expressly retains the source restriction that adding the same word must be permissible. Its note correctly avoids presenting the rule as valid for arbitrary intensional contexts or quantifier-bearing operators. The arithmetic illustration uses positive4, and the missing division notation is explicitly flagged.",
+    "mandatoryEnglishCorrection": null
+  },
+  "evidence": [
+    {
+      "url": "https://lib.rafed.net/view.php?b_id=1604&page=125&type=c_fbook",
+      "file": {
+        "retrievedFileName": "muzaffar-boundary-125.html",
+        "sha256": "3898c65d6788b425f16598be6f199a727a65f2c418a5bf387a8329edfc1046f5"
+      },
+      "containers": "pg123–pg127 inspected, with immediately preceding part title/end context"
+    },
+    {
+      "url": "https://lib.rafed.net/view.php?b_id=1604&page=275&type=c_fbook",
+      "file": {
+        "retrievedFileName": "muzaffar-boundary-275.html",
+        "sha256": "99d30d407750083691f134194e70824938a2ded552a215993c5c175219651982"
+      },
+      "containers": "pg274–pg277 inspected; preceding pg269–pg273 establish actual end/part-title boundary"
+    },
+    {
+      "url": "https://lib.rafed.net/view.php?b_id=1604&page=160&type=c_fbook",
+      "file": {
+        "retrievedFileName": "rafed160.html",
+        "sha256": "5a1b6bbfe60d1546e39c8607a57e8f1ebd733144e23e7646b671ea4d859a0982"
+      },
+      "containers": "pg160 exercise text and image013.gif reference"
+    },
+    {
+      "url": "https://lib.rafed.net/view.php?b_id=1604&page=193&type=c_fbook",
+      "file": {
+        "retrievedFileName": "pg193.txt",
+        "sha256": "47e8a2895c7035e1313ed33bc8e5553535b7907c34c434e5150eeda887402766"
+      },
+      "containers": "Full extracted digital table inspected"
+    },
+    {
+      "url": "https://lib.rafed.net/view.php?b_id=1604&page=178&type=c_fbook",
+      "file": {
+        "retrievedFileName": "pg178.txt",
+        "sha256": "126e4ac18474a2079f22635e509c8748bd644312475126844b0810d6a1a1a9cb"
+      },
+      "containers": "Full join locus inspected"
+    },
+    {
+      "url": "https://lib.rafed.net/view.php?b_id=1604&page=195&type=c_fbook",
+      "file": {
+        "retrievedFileName": "pg195.txt",
+        "sha256": "4dfb4987258a4147931ad4721f810dc21a64cd260de3c27b6810463074e879a2"
+      },
+      "containers": "End of Book IV and qualified transformation rule inspected"
+    }
+  ],
+  "canonicalMutation": "None",
+  "integrationResolution": "Book V opening is M-V-01/stageV; source map uses verified displayed boundaries; earlier image gaps remain disclosed."
+}

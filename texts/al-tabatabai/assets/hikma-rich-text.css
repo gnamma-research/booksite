@@ -1,0 +1,31 @@
+/* Shared source figures and semantic tables, including the A4 editions. */
+.hikma-source-diagram{margin:1.4em 0;max-width:100%;break-inside:avoid;page-break-inside:avoid;text-align:center;color:var(--ink,#21211f)}
+.hikma-source-diagram svg{display:block;width:100%;height:auto;max-width:640px;margin:0 auto;overflow:visible}
+.hikma-source-diagram text{text-anchor:middle;dominant-baseline:central;font:24px Georgia,"Times New Roman",serif;fill:currentColor;stroke:var(--paper,#fff);stroke-width:8px;stroke-linejoin:round;paint-order:stroke fill;unicode-bidi:plaintext}
+.hikma-source-diagram[lang="ar"] text{font:30px AmiriGnamma,Amiri,"Noto Naskh Arabic","Traditional Arabic",serif}
+.hikma-source-diagram .hikma-diagram-node text{font-weight:bold}
+.hikma-diagram-relation line{stroke:var(--muted,#60605e);stroke-width:1.5px;stroke-dasharray:2 6}
+.hikma-source-diagram figcaption{font:12px/1.65 Arial,Helvetica,sans-serif;color:var(--muted,#60605e);margin-top:.6em;text-align:center;overflow-wrap:anywhere}
+.hikma-source-diagram[lang="ar"] figcaption{font:17px/1.8 AmiriGnamma,Amiri,"Noto Naskh Arabic",serif}
+.hikma-table-scroll{display:block;width:100%;max-width:100%;min-width:0;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;margin:1.3em 0;padding-bottom:.4em}
+.hikma-table-scroll:focus-visible{outline:2px solid var(--accent,#315d55);outline-offset:3px}
+.hikma-text-table{border-collapse:collapse;width:100%;min-width:640px;font-size:.8em;line-height:1.5;text-align:start;table-layout:fixed;color:inherit}
+.hikma-text-table caption{text-align:start;font-weight:bold;line-height:1.5;padding:0 0 .7em;color:var(--accent,#315d55)}
+.hikma-text-table th,.hikma-text-table td{border:1px solid var(--line,#cabca4);padding:.6em;vertical-align:top;overflow-wrap:anywhere;word-break:normal}
+.hikma-text-table th{font-weight:bold;background:var(--accent-soft,#f1f4ef)}
+.hikma-text-table thead th:first-child{width:28%}
+.hikma-text-table tbody th{font-weight:normal}
+@media print{
+  .hikma-table-scroll{overflow:visible;padding-bottom:0;break-inside:auto}
+  .hikma-text-table{min-width:0;max-width:100%;font-size:9pt;line-height:1.4}
+  .hikma-text-table thead{display:table-header-group}
+  .hikma-text-table tr{break-inside:avoid;page-break-inside:avoid}
+  .hikma-text-table caption{break-after:avoid}
+  .pair:has(.hikma-text-table),.parallel-text:has(.hikma-text-table){display:block}
+  body[data-pdf-mode="study"] .parallel-text:has(.hikma-text-table){display:block!important}
+  .pair:has(.hikma-text-table)>.english,.parallel-text:has(.hikma-text-table)>.text-panel+.text-panel{margin-top:6mm}
+  .parallel-text:has(.hikma-text-table)>.text-panel{padding:0;border:0}
+  .hikma-source-diagram{margin:4mm 0;--paper:#fff}
+  .hikma-source-diagram figcaption{font-size:8pt}
+  .hikma-source-diagram[lang="ar"] figcaption{font-size:10pt}
+}
