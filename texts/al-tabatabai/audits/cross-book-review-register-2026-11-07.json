@@ -2,17 +2,17 @@
   "schema": 1,
   "title": "Cross-book source and English review register",
   "summary": {
-    "date": "2026-11-09",
-    "totalReaderUnits": 314,
+    "date": "2026-11-10",
+    "totalReaderUnits": 325,
     "M": {
-      "localReading": 67,
-      "localTranslated": 67,
+      "localReading": 78,
+      "localTranslated": 78,
       "fullAuthorialBooks": 6,
       "completeLocalBookContent": false,
       "mappedAuthorialTopics": 77,
-      "status": "67 *selected* original Arabic-English working passage units (11 introduction; 11 Book I; 17 Book II; 14 Book III; 14 Book IV) through printed p.148, NOT a six-book edition. Entire Books V/VI not locally translated.",
+      "status": "78 selected authorial Arabic-English *working passages* (Introduction 11, Book I 11, Book II 17, Book III 14, Book IV 25); ending first chapter pp125–159; remaining Book IV and Books V–VI absent, figures not all transcribed",
       "localBook1Units": 11,
-      "localBook4Units": 14
+      "localBook4Units": 25
     },
     "B": {
       "localReading": 111,
@@ -29,16 +29,18 @@
       "additionalGlossaryTerms": 47,
       "independentArabicCollation": false,
       "adoptedPrintedEditorialEmendations": 8,
-      "supplementaryCriticalNotes": 9,
+      "supplementaryCriticalNotes": 11,
       "englishAutomatedStructureScreened": 136,
-      "englishLocalBilingualRead": 80,
+      "englishLocalBilingualRead": 86,
       "englishIndependentlyCollated": 0,
       "englishTriageRegister": "nihaya-english-collation-triage-2026-11-09.json",
-      "secondEditionDigitalSpotChecks": 5,
+      "secondEditionDigitalSpotChecks": 9,
       "localReviewedFourthBatch": 2,
       "localReviewedFifthBatch": 4,
       "englishCorrectionsFifthBatch": 1,
-      "localReviewedSixthBatch": 6
+      "localReviewedSixthBatch": 6,
+      "localReviewedSeventhBatch": 6,
+      "secondaryPrintedDigitalSpotChecksNewSeventhBatch": 4
     },
     "expertReviewedUnitsVerified": 0,
     "expertReviewedUnitStatus": "Not documented; zero units are claimed to have passed independent specialist review",
@@ -49,17 +51,17 @@
     }
   },
   "provenance": {
-    "MuzaffarSourceSha": "84c3645cc7a8cd43862b11d7e4e05715a838fd58",
+    "MuzaffarSourceSha": "7f496c3c78e3676cfefb45a21531b03fac18326c",
     "BidayaSourceSha": "77c694c1a6eb2b3cf6a0dd1745586c2feafd2b79",
     "NihayaSourceSha": "1c4509e152cb0739563e3fd239b4b6b9cb7b2601",
     "BidayaParitySha": "206e9ea60af9108b614441cd8e049742098cd339",
-    "NihayaSupplementSha": "6405c9b6ec4307906533c5eb9435b49b5214afa5",
-    "MuzaffarMapSha": "d4e0aebeef65ea5961b9892be095f9af13331ff8",
-    "maintenanceNote": "10 November 2026 Stage VI: five original Book IV working bilingual units pp.138–148, six complete local Nihāya same-base reviews, public XI.8 interpretive note. Source honesty unchanged: no independent full-witness collation or expert certification.",
-    "latestTextualDecision": "N-XI-08 tension in ḥukm and negative propositions requires conceptual commentary, NOT silent emendation; IX.9 first/second parallel/longitudinal remains unadopted conjecture."
+    "NihayaSupplementSha": "d46e423882bcfe44e530a06af7ec22f28da764d7",
+    "MuzaffarMapSha": "0238e58fef4b9ce2873818d6523a248a20588da0",
+    "maintenanceNote": "10 November 2026 Stage VII: 11 Muẓaffar Book IV first-chapter source-grounded selected readings pp148–159, six complete 1417-base local Nihāya bilingual checks, four 1428 digital phrase-only spot checks, two separately attributed later-editor notes. No exhaustive 1968 or manuscript collation.",
+    "latestTextualDecision": "N-VI-09 retains author's medium-segment continuum illustration, separate 1428 editor critique p186 n2. N-VI-02 cross-text substantial form note separately attributed. N-IX-09 first/second reference remains UNADOPTED."
   },
   "method": "One row per locally stored authorial passage. Presence of Arabic or English is a technical coverage flag, not a scholarly judgment. Same-source normalised PDF comparison has known limitations. Historical attribution issues are isolated in critical notes.",
-  "sourceStatus": "Three Ḥikma reader corpora comprise 314 paired *working units* (67 selected al-Manṭiq, 111 complete Bidāya, 136 complete Nihāya). 80/136 Nihāya units have same-base local rereadings; 0 complete second-witness collations; no specialist certification. Full Muẓaffar Books V/VI untranslated.",
+  "sourceStatus": "314→325 local Arabic-English paired *working units* (78 selected al-Manṭiq+111 Bidāya+136 Nihāya). 86/136 Nihāya same-base full-unit readings, nine targeted 1428 printed-digital spots, zero complete second-witness collations/expert verification. M Books V–VI absent.",
   "entries": [
     {
       "id": "M-P-01",
@@ -1668,6 +1670,270 @@
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate reliable printed Arabic witness; normalized, not diplomatic.",
       "sourceAssessment": "direct 1402 digital authorial passages pp.138–148 with some source images/exercises still untranscribed; not full Book IV",
       "nextReview": "Collate against early 1968 printed image, verify every original example/diagram, source words, and separate editorial notes; do not infer exhaustiveness from a unit count"
+    },
+    {
+      "id": "M-C-15",
+      "book": "M",
+      "stage": "C",
+      "chapter": 15,
+      "title": "Compound modal propositions: the implicit opposite-quality judgment",
+      "source": {
+        "page": "148–149",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH digital source (normalized transcription); compared at indicated locus with later Rafed 1421 AH digital edition, not a facsimile collation",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1533,
+      "englishCharacters": 1773,
+      "sourceEditionReviewed": "1402 AH Rafed digitally presented authorial Arabic, with selected separate 1421 AH digital text comparisons; independent 1968 ACO facsimile NOT checked",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate early printed facsimile or manuscript witness, and NOT specialist certified",
+      "sourceAssessment": "Selected original Book IV printed p148–159; authorial figure/diagram images not yet transcribed; substantial remaining book absent",
+      "nextReview": "Check all printed 1402 passages and figures against the 1968 ACO facsimile, resolve any schematic example mismatch with exact witness and clause, verify attributions and all exercises"
+    },
+    {
+      "id": "M-C-16",
+      "book": "M",
+      "stage": "C",
+      "chapter": 16,
+      "title": "Two special compounds: qualified necessity and customary permanence",
+      "source": {
+        "page": "149",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH digital source (normalized transcription); compared at indicated locus with later Rafed 1421 AH digital edition, not a facsimile collation",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1143,
+      "englishCharacters": 2173,
+      "sourceEditionReviewed": "1402 AH Rafed digitally presented authorial Arabic, with selected separate 1421 AH digital text comparisons; independent 1968 ACO facsimile NOT checked",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate early printed facsimile or manuscript witness, and NOT specialist certified",
+      "sourceAssessment": "Selected original Book IV printed p148–159; authorial figure/diagram images not yet transcribed; substantial remaining book absent",
+      "nextReview": "Check all printed 1402 passages and figures against the 1968 ACO facsimile, resolve any schematic example mismatch with exact witness and clause, verify attributions and all exercises"
+    },
+    {
+      "id": "M-C-17",
+      "book": "M",
+      "stage": "C",
+      "chapter": 17,
+      "title": "Actual yet not necessary; actual yet not permanent",
+      "source": {
+        "page": "150",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH digital source (normalized transcription); compared at indicated locus with later Rafed 1421 AH digital edition, not a facsimile collation",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1207,
+      "englishCharacters": 1993,
+      "sourceEditionReviewed": "1402 AH Rafed digitally presented authorial Arabic, with selected separate 1421 AH digital text comparisons; independent 1968 ACO facsimile NOT checked",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": "Authorial example has apparent polarity mismatch, preserved and annotated",
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate early printed facsimile or manuscript witness, and NOT specialist certified",
+      "sourceAssessment": "Selected original Book IV printed p148–159; authorial figure/diagram images not yet transcribed; substantial remaining book absent",
+      "nextReview": "Check all printed 1402 passages and figures against the 1968 ACO facsimile, resolve any schematic example mismatch with exact witness and clause, verify attributions and all exercises"
+    },
+    {
+      "id": "M-C-18",
+      "book": "M",
+      "stage": "C",
+      "chapter": 18,
+      "title": "Occurrent but nonpermanent; genuinely two-sided possibility",
+      "source": {
+        "page": "151",
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH digital source (normalized transcription); compared at indicated locus with later Rafed 1421 AH digital edition, not a facsimile collation",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1223,
+      "englishCharacters": 2106,
+      "sourceEditionReviewed": "1402 AH Rafed digitally presented authorial Arabic, with selected separate 1421 AH digital text comparisons; independent 1968 ACO facsimile NOT checked",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate early printed facsimile or manuscript witness, and NOT specialist certified",
+      "sourceAssessment": "Selected original Book IV printed p148–159; authorial figure/diagram images not yet transcribed; substantial remaining book absent",
+      "nextReview": "Check all printed 1402 passages and figures against the 1968 ACO facsimile, resolve any schematic example mismatch with exact witness and clause, verify attributions and all exercises"
+    },
+    {
+      "id": "M-C-19",
+      "book": "M",
+      "stage": "C",
+      "chapter": 19,
+      "title": "Seven authorial exercises on modal relations and compounds",
+      "source": {
+        "page": "152",
+        "edition": "Muẓaffar, al-Manṭiq, 1402 AH Dār al-Taʿāruf digital printed-source text; parallel 1421 Qum digital page where specified; no early 1968 facsimile collation",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 683,
+      "englishCharacters": 1441,
+      "sourceEditionReviewed": "1402 AH Rafed digitally presented authorial Arabic, with selected separate 1421 AH digital text comparisons; independent 1968 ACO facsimile NOT checked",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": "Adjacent printed summary chart is image only; not fully transcribed",
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate early printed facsimile or manuscript witness, and NOT specialist certified",
+      "sourceAssessment": "Selected original Book IV printed p148–159; authorial figure/diagram images not yet transcribed; substantial remaining book absent",
+      "nextReview": "Check all printed 1402 passages and figures against the 1968 ACO facsimile, resolve any schematic example mismatch with exact witness and clause, verify attributions and all exercises"
+    },
+    {
+      "id": "M-C-20",
+      "book": "M",
+      "stage": "C",
+      "chapter": 20,
+      "title": "Necessary versus coincidental connected conditionals",
+      "source": {
+        "page": "153–154",
+        "edition": "Muẓaffar, al-Manṭiq, 1402 AH Dār al-Taʿāruf digital printed-source text; parallel 1421 Qum digital page where specified; no early 1968 facsimile collation",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1217,
+      "englishCharacters": 1734,
+      "sourceEditionReviewed": "1402 AH Rafed digitally presented authorial Arabic, with selected separate 1421 AH digital text comparisons; independent 1968 ACO facsimile NOT checked",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate early printed facsimile or manuscript witness, and NOT specialist certified",
+      "sourceAssessment": "Selected original Book IV printed p148–159; authorial figure/diagram images not yet transcribed; substantial remaining book absent",
+      "nextReview": "Check all printed 1402 passages and figures against the 1968 ACO facsimile, resolve any schematic example mismatch with exact witness and clause, verify attributions and all exercises"
+    },
+    {
+      "id": "M-C-21",
+      "book": "M",
+      "stage": "C",
+      "chapter": 21,
+      "title": "Disjunctive incompatibility: essential versus coincidental; genuine division",
+      "source": {
+        "page": "154–155",
+        "edition": "Muẓaffar, al-Manṭiq, 1402 AH Dār al-Taʿāruf digital printed-source text; parallel 1421 Qum digital page where specified; no early 1968 facsimile collation",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1314,
+      "englishCharacters": 1669,
+      "sourceEditionReviewed": "1402 AH Rafed digitally presented authorial Arabic, with selected separate 1421 AH digital text comparisons; independent 1968 ACO facsimile NOT checked",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate early printed facsimile or manuscript witness, and NOT specialist certified",
+      "sourceAssessment": "Selected original Book IV printed p148–159; authorial figure/diagram images not yet transcribed; substantial remaining book absent",
+      "nextReview": "Check all printed 1402 passages and figures against the 1968 ACO facsimile, resolve any schematic example mismatch with exact witness and clause, verify attributions and all exercises"
+    },
+    {
+      "id": "M-C-22",
+      "book": "M",
+      "stage": "C",
+      "chapter": 22,
+      "title": "At-most-one versus at-least-one disjunctions",
+      "source": {
+        "page": "155–156",
+        "edition": "Muẓaffar, al-Manṭiq, 1402 AH Dār al-Taʿāruf digital printed-source text; parallel 1421 Qum digital page where specified; no early 1968 facsimile collation",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 2130,
+      "englishCharacters": 2333,
+      "sourceEditionReviewed": "1402 AH Rafed digitally presented authorial Arabic, with selected separate 1421 AH digital text comparisons; independent 1968 ACO facsimile NOT checked",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate early printed facsimile or manuscript witness, and NOT specialist certified",
+      "sourceAssessment": "Selected original Book IV printed p148–159; authorial figure/diagram images not yet transcribed; substantial remaining book absent",
+      "nextReview": "Check all printed 1402 passages and figures against the 1968 ACO facsimile, resolve any schematic example mismatch with exact witness and clause, verify attributions and all exercises"
+    },
+    {
+      "id": "M-C-23",
+      "book": "M",
+      "stage": "C",
+      "chapter": 23,
+      "title": "Conditionals made of conditionals: nested and mixed propositions",
+      "source": {
+        "page": "156–157",
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH authorial Arabic digital text; normalized, not independently image-collated",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1564,
+      "englishCharacters": 2028,
+      "sourceEditionReviewed": "1402 AH Rafed digitally presented authorial Arabic, with selected separate 1421 AH digital text comparisons; independent 1968 ACO facsimile NOT checked",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate early printed facsimile or manuscript witness, and NOT specialist certified",
+      "sourceAssessment": "Selected original Book IV printed p148–159; authorial figure/diagram images not yet transcribed; substantial remaining book absent",
+      "nextReview": "Check all printed 1402 passages and figures against the 1968 ACO facsimile, resolve any schematic example mismatch with exact witness and clause, verify attributions and all exercises"
+    },
+    {
+      "id": "M-C-24",
+      "book": "M",
+      "stage": "C",
+      "chapter": 24,
+      "title": "Displaced propositions and reconstructing their logical form",
+      "source": {
+        "page": "157–158",
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH authorial Arabic digital text; normalized, not independently image-collated",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 1679,
+      "englishCharacters": 2585,
+      "sourceEditionReviewed": "1402 AH Rafed digitally presented authorial Arabic, with selected separate 1421 AH digital text comparisons; independent 1968 ACO facsimile NOT checked",
+      "sourceParityPercent": null,
+      "editorialNotes": 2,
+      "supplementalCriticalNoteIds": [],
+      "flag": null,
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate early printed facsimile or manuscript witness, and NOT specialist certified",
+      "sourceAssessment": "Selected original Book IV printed p148–159; authorial figure/diagram images not yet transcribed; substantial remaining book absent",
+      "nextReview": "Check all printed 1402 passages and figures against the 1968 ACO facsimile, resolve any schematic example mismatch with exact witness and clause, verify attributions and all exercises"
+    },
+    {
+      "id": "M-C-25",
+      "book": "M",
+      "stage": "C",
+      "chapter": 25,
+      "title": "Four authorial exercises in classifying and restoring conditionals",
+      "source": {
+        "page": "159",
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH authorial Arabic digital text; normalized, not independently image-collated",
+        "locator": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook"
+      },
+      "arabicPresent": true,
+      "englishPresent": true,
+      "arabicCharacters": 663,
+      "englishCharacters": 1638,
+      "sourceEditionReviewed": "1402 AH Rafed digitally presented authorial Arabic, with selected separate 1421 AH digital text comparisons; independent 1968 ACO facsimile NOT checked",
+      "sourceParityPercent": null,
+      "editorialNotes": 1,
+      "supplementalCriticalNoteIds": [],
+      "flag": "Adjacent printed summary chart is image only; not fully transcribed",
+      "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against a separate early printed facsimile or manuscript witness, and NOT specialist certified",
+      "sourceAssessment": "Selected original Book IV printed p148–159; authorial figure/diagram images not yet transcribed; substantial remaining book absent",
+      "nextReview": "Check all printed 1402 passages and figures against the 1968 ACO facsimile, resolve any schematic example mismatch with exact witness and clause, verify attributions and all exercises"
     },
     {
       "id": "B-INTRO",
@@ -5274,8 +5540,21 @@
         "reviewHints": [
           "paragraph-reflow"
         ],
-        "localBilingualRead": false,
-        "independentlyCollated": false
+        "localBilingualRead": true,
+        "independentlyCollated": false,
+        "sourceGrade": "whole-unit internal Arabic–English reading from stored 1417 source; secondary 1428 digital spot-checks explicitly separate",
+        "finding": "Complete local 1417 Arabic-English reading pp.111–114: quiddity, ascending genus and its metaphysical finitude, genus/differentia simplicity, real unity of highest genera, why one quiddity cannot fall under two, necessary/impossible outside generic quiddities, ten categories by induction, alternative reduction to 4/5 categories and author's rebuttal from existence-derived concepts. English preserves objection/reply and tenfold list. TARGETED 1428 print-digital corroboration vol.1 pp.148–152 of opening, category list, and four-/five-category argument only; not exhaustive second witness. No English change.",
+        "secondaryDigitalSpotCheck": {
+          "edition": "1428 al-Zāriʿī revised vol.1",
+          "page": "148–152",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=149&type=c_fbook",
+          "checkedPhrases": [
+            "لا ريب أنّ للموجود الممكن ماهيّة",
+            "جمهور المشّائين",
+            "المقولات أربع"
+          ],
+          "scope": "selected source clauses, not complete print collation"
+        }
       }
     },
     {
@@ -5296,11 +5575,13 @@
       "sourceEditionReviewed": "additional 1428 two-volume witness identified, NOT yet exhaustively collated",
       "sourceParityPercent": null,
       "editorialNotes": 0,
-      "supplementalCriticalNoteIds": [],
-      "flag": null,
+      "supplementalCriticalNoteIds": [
+        "N1428-VI02-FORM-01"
+      ],
+      "flag": "Source cross-reference with Bidāya VI.1–2 on substantial form and its genus/status",
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "nextReview": "Compare the two authors' wording against actual early printed text and specialist commentary; preserve the later editor's separate note",
       "englishCollation": {
         "structuralScreen": "checked-automatically",
         "arabicParagraphs": 15,
@@ -5308,8 +5589,21 @@
         "reviewHints": [
           "paragraph-reflow"
         ],
-        "localBilingualRead": false,
-        "independentlyCollated": false
+        "localBilingualRead": true,
+        "independentlyCollated": false,
+        "sourceGrade": "whole-unit internal Arabic–English reading from stored 1417 source; secondary 1428 digital spot-checks explicitly separate",
+        "finding": "Complete local 1417 Arabic-English reading pp.114–117: definition of substance/accident by whether dependent on subject independent of it, property vs essential genus/differentia definition, external vs mental under common vs primary predication, relation of substantial form to matter, prior objection that substrate depends upon form, rebuttal denying genus membership of simple form, positive dependence argument for substance as genus and failed alternative argument from single existential attribute. English retains distinctions. TARGETED 1428 revised vol.1 pp.152–155 confirms definitions and later editor's ref to Bidāya VI.1, which must be read alongside Bidāya VI.2's explicit *bi-sharṭ lā* qualification. No English change; source-located public cross-text critical note N1428-VI02-FORM-01 added.",
+        "secondaryDigitalSpotCheck": {
+          "edition": "1428 al-Zāriʿī revised vol.1",
+          "page": "152–155 incl. editor n.1",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=153&type=c_fbook",
+          "checkedPhrases": [
+            "تنقسم الماهيّة انقساما أوّليا",
+            "وأمّا ما قيل",
+            "الصور الجوهريّة ماهيّات بسيطة"
+          ],
+          "scope": "selected source phrases and later editor's footnote, not full independent collation"
+        }
       }
     },
     {
@@ -5534,11 +5828,13 @@
       "sourceEditionReviewed": "additional 1428 two-volume witness identified, NOT yet exhaustively collated",
       "sourceParityPercent": null,
       "editorialNotes": 0,
-      "supplementalCriticalNoteIds": [],
-      "flag": null,
+      "supplementalCriticalNoteIds": [
+        "N1428-VI09-BOUNDARY-01"
+      ],
+      "flag": "1428 editor's critique of segment vs true shared magnitude boundary; authorial text retained",
       "translationAssessment": "working English rendered; NOT yet independently checked clause-by-clause against more than one reliable Arabic witness",
       "sourceAssessment": "original edition with newer independent edition registered for later collation",
-      "nextReview": "Check every argument, quotation, logical particle and page against a critical Arabic witness; record approved variants and independent review.",
+      "nextReview": "Examine edition's figure and text in early print and verify precise 1428 note 2; distinguish authorial example and editorial objection",
       "englishCollation": {
         "structuralScreen": "checked-automatically",
         "arabicParagraphs": 18,
@@ -5546,8 +5842,21 @@
         "reviewHints": [
           "paragraph-reflow"
         ],
-        "localBilingualRead": false,
-        "independentlyCollated": false
+        "localBilingualRead": true,
+        "independentlyCollated": false,
+        "sourceGrade": "whole-unit internal Arabic–English reading from stored 1417 source; secondary 1428 digital spot-checks explicitly separate",
+        "finding": "Complete local 1417 Arabic-English reading pp.139–141: discrete vs continuous, common boundary, temporal nonstable continuum vs coexistent stable quantity, three-dimensional mathematical body/surface/line, number's external actuality, categories of magnitude and species. Working English retains author's exact conceptual example without silently improving it. TARGETED 1428 vol.1 p.185–186 digital corroboration finds same intermediate-segment illustration and explicit editor's n.2 criticism: true shared boundary is a distinct point/line/surface/instant, or any discrete series 3+1+3 could appear continuous. Added public source-located note N1428-VI09-BOUNDARY-01. Not an Arabic textual variant or adopted emendation.",
+        "secondaryDigitalSpotCheck": {
+          "edition": "1428 al-Zāriʿī revised vol.1",
+          "page": "185–186 authorial example + editor n.2",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=186&type=c_fbook",
+          "checkedPhrases": [
+            "المتّصل هو : الكمّ الّذي",
+            "القسم المتوسّط يمكن أن يجعل بداية",
+            "الحدّ المشترك خارج عن طرفيه"
+          ],
+          "scope": "authorial locus plus editor's conceptual objection; not whole two-edition collation"
+        }
       }
     },
     {
@@ -5580,8 +5889,21 @@
         "reviewHints": [
           "paragraph-reflow"
         ],
-        "localBilingualRead": false,
-        "independentlyCollated": false
+        "localBilingualRead": true,
+        "independentlyCollated": false,
+        "sourceGrade": "whole-unit internal Arabic–English reading from stored 1417 source; secondary 1428 digital spot-checks explicitly separate",
+        "finding": "Complete local 1417 Arabic-English reading pp.141–144: number's contrast with magnitudes and time, denial of greatest-opposed numerical contrariety, why 10 is not essentially composed of particular lower numeric pairs, gradation by more/less not strength/weakness, finite dimensions line-and-sphere proof, classical rejection of void, indefinitely increasing number versus fully actual infinity and whole/fractions. English preserves all six numbered arguments and qualifications. TARGETED 1428 vol.1 pp.188–189 digital corroboration of opening, first two judgments and editor's classical doxographic sources; remaining whole chapter not independently reverified against printed volume. No English change, do not treat classical finite-dimension argument as uncontested modern theorem.",
+        "secondaryDigitalSpotCheck": {
+          "edition": "1428 al-Zāriʿī revised vol.1",
+          "page": "188–189 opening and numerical contrariety",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=189&type=c_fbook",
+          "checkedPhrases": [
+            "من خواصّ الكمّ المساواة",
+            "أنّ العدد لا تضادّ فيه",
+            "العشرة مثلا يجوز فرض تركّبها"
+          ],
+          "scope": "selected clauses only"
+        }
       }
     },
     {
@@ -6048,8 +6370,10 @@
         "arabicParagraphs": 15,
         "englishParagraphs": 14,
         "reviewHints": [],
-        "localBilingualRead": false,
-        "independentlyCollated": false
+        "localBilingualRead": true,
+        "independentlyCollated": false,
+        "sourceGrade": "whole-unit internal Arabic–English reading from stored 1417 source; secondary 1428 digital spot-checks explicitly separate",
+        "finding": "Complete local 1417 Arabic-English reading pp.183–185: huwiyya as relative identity of differing aspects, rejected predications between continuum halves, Ṣadrā's before/after division answer, primary essential predication through conceptual/essential sameness despite ʿitibār, common predication through existential unity despite conceptual difference, need for attributive existence wujūd naʿtī rather than numerical union of two existences-in-themselves, two 'nexuses' ʿaqd al-waḍʿ/ʿaqd al-ḥaml, third philosophical predication ḥaml al-ḥaqīqa wa-l-raqīqa grounded in higher stage containing lower perfections. All examples present in translation, including two types and the third philosophical usage. No new English correction or external printed comparison."
       }
     },
     {
@@ -6708,8 +7032,10 @@
         "arabicParagraphs": 13,
         "englishParagraphs": 11,
         "reviewHints": [],
-        "localBilingualRead": false,
-        "independentlyCollated": false
+        "localBilingualRead": true,
+        "independentlyCollated": false,
+        "sourceGrade": "whole-unit internal Arabic–English reading from stored 1417 source; secondary 1428 digital spot-checks explicitly separate",
+        "finding": "Complete local 1417 Arabic-English reading pp.244–246: prime vs secondary matter, causality of matter for composite, distinct matter/form relation, reply to materialist reduction of four causes with three arguments (potentiality cannot give actuality; necessity from efficient source; uniform undetermined nature cannot produce diversity), form as formal cause of composite but not of matter, successive vegetative/animal forms and inheritance of acts, final form containing perfections, unitive vs juxtaposed composition. Translation preserves 'form is co-cause of matter' distinct from 'formal cause of composite'. No English correction or external printed collation in this stage."
       }
     },
     {
