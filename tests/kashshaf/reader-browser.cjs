@@ -29,7 +29,7 @@ async function run(type,name){
   const initialQ=await page.locator('.quran-arabic').innerText();
   assert.ok(await page.locator('.q-en').isVisible());
   await page.locator('[data-language="ar"]').click();assert.equal(await page.locator('.ar-column:visible').count(),0);assert.ok(await page.locator('.quran-arabic').isVisible());assert.equal(await page.locator('.quran-arabic').innerText(),initialQ);
-  assert.ok(await page.locator('.en-column .ar-term').count()>0);
+  assert.ok(await page.locator('.en-column .ar-term,.en-column .lexical').count()>0);
   await page.locator('[data-setting="tibi"]').first().uncheck();assert.equal(await page.locator('.tibi-layer:visible').count(),0);assert.equal(await page.locator('.kashshaf-layer:visible').count(),1);
   await page.reload();await page.locator('.passage').waitFor();assert.equal(await page.locator('.tibi-layer:visible').count(),0);
   await page.locator('[data-language="ar"]').click();await page.locator('[data-language="en"]').click();assert.equal(await page.locator('.en-column:visible').count(),0);assert.equal(await page.locator('.q-en:visible').count(),0);assert.ok(await page.locator('.quran-arabic').isVisible());assert.equal(await page.locator('.quran-arabic').innerText(),initialQ);
@@ -58,7 +58,7 @@ async function run(type,name){
   assert.equal(await page.locator('.quran-arabic .ayah').first().getAttribute('data-verse'),'1:1');
   assert.ok(await page.locator('.quran-arabic').evaluateAll(es=>es.every(e=>e.textContent.includes('﴿')&&e.textContent.includes('﴾'))));
   assert.ok(await page.locator('.passage').evaluateAll(es=>es.every(e=>{const q=e.querySelector('.quran-context'),l=e.querySelector('.author-layer');return Boolean(q.compareDocumentPosition(l)&Node.DOCUMENT_POSITION_FOLLOWING)})));
-  const texts=await page.locator('.author-layer').evaluateAll(es=>es.map(e=>{const copy=e.querySelector('.en-column').cloneNode(true);copy.querySelectorAll('.source-lemma,h3,button,.personal-paragraph-tools,.scholarly-anchor').forEach(x=>x.remove());return {id:e.dataset.sourceId,text:[...copy.querySelectorAll('p[data-anchor]')].map(p=>p.textContent).join('\n\n')};}));
+  const texts=await page.locator('.author-layer').evaluateAll(es=>es.map(e=>{const copy=e.querySelector('.en-column').cloneNode(true);copy.querySelectorAll('.source-lemma,h3,button:not(.lexical),.personal-paragraph-tools,.scholarly-anchor').forEach(x=>x.remove());return {id:e.dataset.sourceId,text:[...copy.querySelectorAll('p[data-anchor]')].map(p=>p.textContent).join('\n\n')};}));
   // Added Arabic gloss spans leave a separator behind when removed; compare every non-whitespace character.
   const normal=s=>s.replace(/\s+/g,'');for(const s of edition.records.flatMap(r=>r.layers)){assert.equal(normal(texts.find(x=>x.id===s.id).text),normal(s.text),'Preserved complete English '+s.id);}
   const arabic=await page.locator('.author-layer').evaluateAll(es=>es.map(e=>({id:e.dataset.sourceId,text:[...e.querySelectorAll('.ar-column p[data-anchor]')].map(p=>p.textContent).join('\n\n')})));
