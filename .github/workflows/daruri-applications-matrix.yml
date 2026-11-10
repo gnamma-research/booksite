@@ -8,36 +8,65 @@ on:
       - 'daruri/qa/applications-matrix*'
 permissions:
   contents: write
+concurrency:
+  group: daruri-applications-matrix
+  cancel-in-progress: false
 jobs:
-  inspect:
-    runs-on: ubuntu-latest
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Inspect canonical records without changing source
+      - name: Install narrow reader change and verify source preservation
         run: |
-          node <<'NODE'
-          const fs=require('fs'),vm=require('vm');
-          const nodes={};const sandbox={window:{},console,document:{getElementById:id=>nodes[id]||(nodes[id]={textContent:''})}};
-          try{vm.runInNewContext(fs.readFileSync('daruri/edition-r3-20261020.js','utf8'),sandbox)}catch(e){console.error(e.message);process.exit(1)}
-          const book=JSON.parse(nodes.editionData.textContent);
-          const html=fs.readFileSync('daruri/index.html','utf8');
-          const report={keys:Object.keys(book),apps:book.apps.map(({text,...a})=>a),sections:book.sections.map(s=>({id:s.id,title:s.title,headingEn:s.headingEn,part:s.part}))};
-          fs.writeFileSync('daruri/qa/applications-matrix-inspection.json',JSON.stringify(report,null,2)+'\n');
-          let integration='';
-          for(const term of ['function renderApplications','function appCard','function gnLinkAppRefs','function gnAppJump','function gnApp','function showAppDetail']){
-            const i=html.indexOf(term);integration+='\n### '+term+' ('+i+')\n'+html.slice(Math.max(0,i-100),i+5000)+'\n';
-          }
-          integration+='\n### Bundle\n'+fs.readFileSync('daruri/download-bundle.js','utf8');
-          fs.writeFileSync('daruri/qa/applications-matrix-integration.txt',integration);
-          console.log('Captured',book.apps.length,'applications and',book.sections.length,'section titles.');
-          NODE
-      - name: Save branch-only inspection
+          python3 daruri/qa/applications-matrix-install.py
+          node --check daruri/applications-matrix.js
+          node --check daruri/qa/applications-matrix-browser.js
+          node --check daruri/download-bundle.js
+          node --check daruri/sw.js
+      - name: Install isolated browser test dependencies
         run: |
+          npm install --prefix /tmp/daruri-matrix-tests --no-audit --no-fund playwright@1.56.1
+          /tmp/daruri-matrix-tests/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Desktop and mobile application checks
+        env:
+          NODE_PATH: /tmp/daruri-matrix-tests/node_modules
+        run: |
+          python3 -m http.server 8765 >/tmp/daruri-matrix-http.log 2>&1 &
+          node daruri/qa/applications-matrix-browser.js
+      - name: Retain browser screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-applications-matrix-browser-evidence
+          path: daruri/qa/applications-matrix-screenshots/
+          if-no-files-found: ignore
+      - name: Commit tested integration to this feature branch only
+        run: |
+          test "$(git ls-remote origin refs/heads/daruri-applications-matrix-20261110 | cut -f1)" = "$GITHUB_SHA"
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('daruri/applications-matrix-release.md')
+          p.write_text('''# Darūrī applications at a glance — 10 November 2026
+
+          A compact, collapsible matrix is added only to the existing Darūrī Bidāya applications view, above the unchanged explanations. Eight rows appear initially; Show all exposes all 28. Existing search and book filters apply to both the table and prose. Short legal-question labels jump to the original explanations. Ticks open exact section titles/references and preserve the existing contextual return.
+
+          Nine editorial topic groups organize the columns. A tick denotes a recorded link, not agreement: cautionary and critical parallels retain their existing relationship labels. All links are derived from the current edition's primary section, related sections and explicitly cited prose references; no new case-to-principle relationships are added.
+
+          Integration is limited to two asset tags and the package-loader cache key in index.html, the new isolated JS/CSS, and matching offline/package assets. Canonical edition data, source notes, study lessons and all five reading PDFs are byte-for-byte unchanged. No change to the overall Bidāya website or other books.
+
+          Validation: see qa/applications-matrix-source-check.json and qa/applications-matrix-browser-report.json. Automated Chromium at 1280px/390px and WebKit at 390px/320px check source-derived links, original prose, filters, cell details, return navigation, row jumps, sticky labels, horizontal containment, focus restoration and collapsibility. This is not physical-device testing or a claim of manual screenshot review.
+
+          Branch reservation released after test completion. Publication requires an expected-head-checked update of master and a separate Pages deployment check.
+          ''',encoding='utf-8')
+          PY
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add daruri/qa/applications-matrix-inspection.json daruri/qa/applications-matrix-integration.txt
-          git diff --cached --quiet || git commit -m 'Capture Daruri application records and integration points'
+          git add daruri/index.html daruri/sw.js daruri/download-bundle.js daruri/applications-matrix-release.md daruri/qa/applications-matrix-source-check.json daruri/qa/applications-matrix-browser-report.json
+          git rm -f --ignore-unmatch daruri/qa/applications-matrix-inspection.json daruri/qa/applications-matrix-integration.txt
+          git diff --cached --stat
+          git diff --cached --quiet || git commit -m 'Integrate tested Daruri applications matrix; preserve source and PDFs'
           git push origin HEAD:daruri-applications-matrix-20261110
