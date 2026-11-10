@@ -11,6 +11,9 @@ from urllib.parse import quote
 UA = 'GNAMMA-Research-Citation-Checker/1.0 (noncommercial scholarly source-verification; one-off)'
 SLUG = quote('مشرع الخصوص إلى معاني النصوص النصوص في تحقيق الطور المخصوص',safe='')
 SOURCES = {
+ 'ibn_22':'https://www.ibnalarabi.com/qunawi/khusus.php?id=22',
+ 'ibn_32':'https://www.ibnalarabi.com/qunawi/khusus.php?id=32',
+ 'ibn_nusus':'https://www.ibnalarabi.com/qunawi/nusus.php?id=20',
  'ablibrary_150':'https://ablibrary.net/book_content/b/9637/150?lang=ar',
  'najaf_150':f'https://najafdesertlibrary.com/book/{SLUG}/v/1/p/150',
  'najaf_239':f'https://najafdesertlibrary.com/book/{SLUG}/v/1/p/239',
