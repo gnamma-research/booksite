@@ -41,7 +41,11 @@
 :root[data-page-style=book] .chapter-section{background:var(--paper-raised);padding:24px 28px;margin-bottom:35px;border:1px solid var(--line);box-shadow:0 3px 18px #00000005}
 :root[data-page-style=structured] .passage{border:1px solid var(--line);padding:20px;border-radius:5px;margin-bottom:18px}
 :root[data-view=quiet] .reader-shell{grid-template-columns:1fr}
-:root[data-view=quiet] .contents-panel{display:none}
+:root[data-view=quiet] .contents-panel{display:flex;position:fixed;left:0;top:0;bottom:0;height:100dvh;width:290px;max-width:calc(100vw - 40px);z-index:60;transform:translateX(-100%);visibility:hidden;padding:27px 23px 0}
+:root[data-view=quiet] .contents-open .contents-panel{transform:translateX(0);visibility:visible}
+:root[data-view=quiet] .menu-button,:root[data-view=quiet] .sidebar-close{display:flex}
+:root[data-view=quiet] .sidebar-backdrop{position:fixed;inset:0;background:rgba(24,31,27,.4);backdrop-filter:blur(2px);z-index:50}
+:root[data-view=quiet] body.contents-open{overflow:hidden}
 :root[data-view=quiet] .reader-main{max-width:1250px;width:100%;margin:auto}
 :root[data-view=quiet] .study-dock{left:0}
 :root[data-view=quiet] .chapter-navigation{display:none}
@@ -52,4 +56,10 @@
 @media print{.study-dock,.study-nav,.study-context,.study-return,.paragraph-action,.heading-provenance,.table-scroll-hint,.study-dialog{display:none!important}.linked-target{outline:none}.text-body p{scroll-margin:0}.reader-main{padding-bottom:0}.hikma-text-table caption.sr-only{position:static;width:auto;height:auto;clip:auto;white-space:normal;overflow:visible}:root[data-view=quiet] .reader-main{max-width:none}}
 
 .footnote-kind{font-weight:600;color:var(--accent)}.footnote-arabic{font:21px/1.85 var(--arabic-reading-font),serif;margin:8px 0}.footnote-arabic p{margin:5px 0}.footnote-english{margin:8px 0}.authorial-bilingual-note{break-inside:auto}
-@media print{body[data-pdf-mode=reading] .footnote-arabic,body[data-pdf-mode=reference] .authorial-bilingual-note .footnote-english{display:none!important}.footnote-arabic{font-size:12pt}}
+@media print{
+ body[data-pdf-mode=reading]:not([data-pdf-language=arabic]):not([data-pdf-language=bilingual]) .footnote-arabic,
+ body[data-pdf-language=english] .footnote-arabic,
+ body[data-pdf-mode=reference]:not([data-pdf-language=english]):not([data-pdf-language=bilingual]) .authorial-bilingual-note .footnote-english,
+ body[data-pdf-language=arabic] .authorial-bilingual-note .footnote-english{display:none!important}
+ .footnote-arabic{font-size:12pt}
+}

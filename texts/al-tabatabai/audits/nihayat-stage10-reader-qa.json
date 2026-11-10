@@ -1,0 +1,118 @@
+{
+  "schema": "gnamma-hikma-reader-qa-1",
+  "recorded_at": "2026-11-10T23:09:23.584412+00:00",
+  "baseline_revision": "078bac900e33bb7d44718985a5c9d42ba1f7370b",
+  "status": "local-static-checks-passed-browser-validation-pending",
+  "scope": "Recovered three-book reader, with scoped Stage X UI fixes. Subsequent source integration requires another source audit.",
+  "local_validation": {
+    "source_audit": {
+      "status": "passed",
+      "counts": {
+        "muzaffar": 140,
+        "bidaya": 111,
+        "nihaya": 136,
+        "combined": 387
+      },
+      "all_units_arabic_and_english": true,
+      "failures": [],
+      "warnings": [],
+      "command": "node texts/al-tabatabai/tools/audit-hikma.mjs"
+    },
+    "javascript_syntax": {
+      "status": "passed",
+      "files": [
+        "assets/hikma-rich-text.js",
+        "assets/hikma-reader.js",
+        "assets/hikma-combined.js",
+        "assets/hikma-refinements.js",
+        "assets/hikma-study-tools.js",
+        "tools/qa-study-tools.cjs",
+        "tools/qa-browser.cjs",
+        "tools/build-pdfs.cjs"
+      ]
+    },
+    "diff_whitespace": {
+      "status": "passed",
+      "command": "git diff --check"
+    }
+  },
+  "fixes": [
+    {
+      "id": "focus-search-drawer",
+      "problem": "Focus view hid the contents panel even when its mobile drawer was opened; desktop search also targeted the hidden panel.",
+      "change": "Make Focus contents available as a temporary drawer on desktop and mobile, preserve the reading view, and synchronize inert state when the view changes.",
+      "files": [
+        "assets/hikma-reader.js",
+        "assets/hikma-combined.js",
+        "assets/hikma-study-tools.css"
+      ],
+      "browser_assertions": "Focus search visibility and keyboard focus, Escape restoration, desktop continuous-mode interaction, and mobile drawer close."
+    },
+    {
+      "id": "live-reading-desk",
+      "problem": "A Reading Desk already open in one tab did not refresh when another reader tab saved a note or bookmark.",
+      "change": "Dispatch the shared desk update after a validated storage event and reader redraw.",
+      "files": [
+        "assets/hikma-reader.js",
+        "assets/hikma-combined.js"
+      ],
+      "browser_assertions": "Edit a note through a second reader tab and require the already-open first-tab desk to display the new text."
+    },
+    {
+      "id": "print-footnote-language",
+      "problem": "Edition-mode rules suppressed the Arabic or English side of bilingual authorial notes even when an explicit print language required that side.",
+      "change": "Apply explicit English, Arabic or bilingual print selection to authorial notes; retain edition defaults when no override is selected.",
+      "files": [
+        "assets/hikma-study-tools.css"
+      ],
+      "browser_assertions": "Within the existing print-range test, render a runtime-only bilingual-note fixture and verify Arabic-only output under Reading layout, then restore the prior view."
+    }
+  ],
+  "browser_validation": {
+    "status": "blocked-before-application-tests",
+    "application_checks_passed_locally": 0,
+    "attempts": [
+      {
+        "runner": "default runtime Playwright",
+        "result": "Chromium headless-shell executable absent."
+      },
+      {
+        "runner": "system Chromium",
+        "result": "Launch aborted: socket() failed: Operation not permitted. No application assertions executed."
+      },
+      {
+        "runner": "downloaded WebKit",
+        "result": "Browser downloaded, but host validation reported missing libgtk-4, libgraphene, libharfbuzz-icu, libmanette, libhyphen and libGLESv2. No application assertions executed."
+      }
+    ],
+    "local_logs": "stage10-work/qa/regression.log and stage10-work/qa/study.log",
+    "next_gate": {
+      "workflow": ".github/workflows/hikma-reader-qa.yml",
+      "repository": "gnamma-research/booksite",
+      "branch": "nihayat4-stage10-20261111",
+      "status": "pending-isolated-branch-PR-and-CI",
+      "suites": [
+        {
+          "script": "texts/al-tabatabai/tools/qa-browser.cjs",
+          "expected_checks": 51
+        },
+        {
+          "script": "texts/al-tabatabai/tools/qa-study-tools.cjs",
+          "expected_checks": 30
+        }
+      ],
+      "engines": [
+        "chromium",
+        "webkit"
+      ],
+      "note": "Existing study scenarios were extended; no pass count is claimed until CI completes on the exact revision."
+    }
+  },
+  "unverified": [
+    "Visual appearance in desktop and mobile browsers",
+    "End-to-end navigation, dictionary, note continuity and print behavior after these fixes",
+    "Nine downloadable PDF files regenerated against the final Stage X source revision",
+    "Production publication"
+  ],
+  "mutations": "Four reader/UI/test files and this QA record; no source text, scholarly ledgers, remote branches, commits or publication changed by this audit."
+}

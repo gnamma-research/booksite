@@ -77,6 +77,7 @@
     root.dataset.order = pref.order;
     root.dataset.theme = pref.theme === 'system' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : pref.theme;
     for (const key of ['palette','headings','pageStyle','arabicFont','englishFont','view']) root.dataset[key] = pref[key];
+    $('contents-panel').inert = !state.sidebarOpen && usesSidebarDrawer();
     root.style.setProperty('--reading-size', pref.size + 'px');
     document.querySelectorAll('button[data-language]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.language === pref.language)));
     $('reading-view').value = pref.view;
@@ -553,8 +554,9 @@
     dialog.addEventListener('close', () => { const opener = dialog._opener; if (opener && opener.isConnected) opener.focus(); });
   }
   function isMobile() { return matchMedia('(max-width: 900px)').matches; }
+  function usesSidebarDrawer() { return isMobile() || state.preferences.view === 'quiet'; }
   function openSidebar() {
-    if (!isMobile()) { $('book-search').focus(); return; }
+    if (!usesSidebarDrawer()) { $('book-search').focus(); return; }
     state.sidebarOpen = true;
     $('contents-panel').inert = false;
     document.body.classList.add('contents-open');
@@ -572,10 +574,10 @@
     $('contents-toggle').setAttribute('aria-expanded', 'false');
     $('reader-main').inert = false;
     document.querySelector('.site-header').inert = false;
-    $('contents-panel').inert = isMobile();
+    $('contents-panel').inert = usesSidebarDrawer();
     if (focus && wasOpen) $('contents-toggle').focus();
   }
-  $('contents-panel').inert = isMobile();
+  $('contents-panel').inert = usesSidebarDrawer();
   $('contents-toggle').addEventListener('click', openSidebar);
   $('contents-close').addEventListener('click', () => closeSidebar());
   $('sidebar-backdrop').addEventListener('click', () => closeSidebar());
@@ -583,7 +585,7 @@
   document.addEventListener('keydown', event => {
     const editing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName) || document.activeElement.isContentEditable;
     if (event.key === 'Escape' && state.sidebarOpen) { event.preventDefault(); closeSidebar(); }
-    if (event.key === '/' && !editing && !document.querySelector('dialog[open]') && !event.metaKey && !event.ctrlKey && !event.altKey) { event.preventDefault(); if (isMobile()) openSidebar(); $('book-search').focus(); }
+    if (event.key === '/' && !editing && !document.querySelector('dialog[open]') && !event.metaKey && !event.ctrlKey && !event.altKey) { event.preventDefault(); openSidebar(); $('book-search').focus(); }
     if (event.key === 'Tab' && state.sidebarOpen) {
       const focusable = [...$('contents-panel').querySelectorAll('a[href],button,input,summary')].filter(node => !node.disabled && node.getClientRects().length);
       const first = focusable[0], last = focusable[focusable.length - 1];
@@ -614,8 +616,10 @@
   window.addEventListener('popstate', () => { if (location.hash === '#title-page') { state.query=''; state.savedOnly=false; $('book-search').value=''; render(); $('title-page').scrollIntoView(); } else { const target=resolveHash(); if(target) navigate(target,false); } });
   window.addEventListener('hashchange', () => { if (location.hash === '#title-page') { state.query = ''; state.savedOnly = false; $('book-search').value = ''; render(); $('title-page').scrollIntoView(); } else navigate(resolveHash(), false); });
   window.addEventListener('storage', event => {
-    if (event.key === prefix + 'bookmarks') { const stored = readStorage(event.key, []); if (Array.isArray(stored)) state.bookmarks = new Set(stored); render(); }
-    if (event.key === prefix + 'notes') { const stored = readStorage(event.key, {}); if (stored && typeof stored === 'object' && !Array.isArray(stored)) state.notes = stored; render(); }
+    let changed = false;
+    if (event.key === prefix + 'bookmarks') { const stored = readStorage(event.key, []); if (Array.isArray(stored)) { state.bookmarks = new Set(stored); changed = true; } }
+    if (event.key === prefix + 'notes') { const stored = readStorage(event.key, {}); if (stored && typeof stored === 'object' && !Array.isArray(stored)) { state.notes = stored; changed = true; } }
+    if (changed) { render(); document.dispatchEvent(new CustomEvent('hikma:desk')); }
   });
   function combineBooks(muzaffar, bidaya, nihaya) {
     const prep = (book, code, name) => {

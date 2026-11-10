@@ -1,0 +1,279 @@
+{
+  "schema": "nihaya-full-unit-external-comparison-v1",
+  "created": "2026-11-11",
+  "timezone": "Asia/Riyadh",
+  "inputBookSha256": "d1dd963f7a22e2be4ccca4c73c3799a4be6f9b5e4a30415cfc6d12993d07a4fd",
+  "status": "complete-new-comparisons-pending-integration",
+  "method": "The complete stored Arabic and English were read against all corresponding 1404 printed facsimile pages (visual inspection) and the complete 1428 edited digital text with its notes. Printed-page and canvas numbers are distinguished. The later source is a digital presentation, not a newly inspected printed copy. No manuscript collation or independent human certification is claimed.",
+  "completedUnitCount": 3,
+  "units": [
+    {
+      "id": "N-V-05",
+      "status": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "5e047d15f47b722a6370207aaf63de1c347a165c74c17a2d7ceb8c769cd2fb80",
+      "storedEnglishSha256": "7562bb95f884f9b491f700291eb1d9cf8b8158132dc0a7f4462241682d991d34",
+      "sourceGrade": "The complete stored Arabic and English were read against all corresponding 1404 printed facsimile pages (visual inspection) and the complete 1428 edited digital text with its notes. Printed-page and canvas numbers are distinguished. The later source is a digital presentation, not a newly inspected printed copy. No manuscript collation or independent human certification is claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          29
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          26
+        ],
+        "earlyPrintedPages": [
+          78,
+          79,
+          80,
+          81,
+          82
+        ],
+        "earlyCanvases": [
+          82,
+          83,
+          84,
+          85,
+          86
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          133,
+          134,
+          135,
+          136
+        ],
+        "allBoundariesAccounted": true,
+        "boundaryNote": "Begins with the Chapter Five heading on 1404 p.78 and ends with والأمر في الجواهر المجردة أيضا على هذه الوتيرة at the top of p.82, before Chapter Six. Later I.133–136; Chapter Six starts I.137 and is excluded."
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/scans/early-082.jpg",
+          "sha256": "b515d539246689232422f483b62c05c7edb3d51de7f8320b693ac005fcf9c4e2",
+          "printedPage": 78,
+          "canvas": 82,
+          "kind": "full-page facsimile visually inspected",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/82"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/scans/early-083.jpg",
+          "sha256": "c97a0a74cd903442687fc4ae95ab97e70412244420a8cbd430997373f95af726",
+          "printedPage": 79,
+          "canvas": 83,
+          "kind": "full-page facsimile visually inspected",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/83"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/scans/early-084.jpg",
+          "sha256": "ec67a46f0dba13449fce3e42591826bdc4556d1e6ec68ecdcefbbacb346a2f2f",
+          "printedPage": 80,
+          "canvas": 84,
+          "kind": "full-page facsimile visually inspected",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/84"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/scans/early-085.jpg",
+          "sha256": "2c2f74fa6794b929e9dfcf577f977ce7f6e25671b8a77e1ab88d5e37ae873de1",
+          "printedPage": 81,
+          "canvas": 85,
+          "kind": "full-page facsimile visually inspected",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/85"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/scans/early-086.jpg",
+          "sha256": "b80cd65f96d040705aba332587e84c51e6588a077ff3d9cc12420b1e0291abff",
+          "printedPage": 82,
+          "canvas": 86,
+          "kind": "full-page facsimile visually inspected",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/86"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/rafed-3108-pages.json",
+          "sha256": "df25e252296516e58e1eef3b4c0ce9acb0fd86dbd20fec36ed680992f9e10bd3",
+          "kind": "1428 edited digital text and notes read in full for the stated chapter",
+          "volume": 1,
+          "pages": [
+            133,
+            134,
+            135,
+            136
+          ],
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=133&type=c_fbook"
+        }
+      ],
+      "argumentFindings": [
+        "The complete account of genus/differentia as matter/form under contrasting considerations, the Asfar quotation, both objections and replies, and all four conclusions are present in the English.",
+        "A substantive digital transcription error changes rational animal into an identity between animal and rational; both the 1404 print p.79 and later I.134 support repair of Arabic and the corresponding English.",
+        "The early printed Asfar citation (II, pp.29–30) is absent from the stored body; restore it as an explicitly authorial source note.",
+        "Later I.134 regularizes منها to منهما. The 1404 print has منها, and the early reading is retained. This does not require an English alteration.",
+        "Later I.135 n.5 names Qutb al-Din al-Rawandi in a reference to Sharh al-Matali. That later-editor attribution has not been independently verified and is not inserted as authorial fact."
+      ]
+    },
+    {
+      "id": "N-V-06",
+      "status": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "a3bb7af299c0e84c2643c6e45098fc8e2c7f234c1e3fecb74b359851578dbc73",
+      "storedEnglishSha256": "1fe96f40824709cb9449d27cd6f089c38b488606dd80127508fda34be74959fd",
+      "sourceGrade": "The complete stored Arabic and English were read against all corresponding 1404 printed facsimile pages (visual inspection) and the complete 1428 edited digital text with its notes. Printed-page and canvas numbers are distinguished. The later source is a digital presentation, not a newly inspected printed copy. No manuscript collation or independent human certification is claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          27
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          22
+        ],
+        "earlyPrintedPages": [
+          82,
+          83,
+          84,
+          85
+        ],
+        "earlyCanvases": [
+          86,
+          87,
+          88,
+          89
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          137,
+          138,
+          139,
+          140,
+          141,
+          142
+        ],
+        "allBoundariesAccounted": true,
+        "boundaryNote": "Begins at Chapter Six on 1404 p.82 and ends after the two accounts of the soul’s origination at the top of p.85, before Chapter Seven. Later I.137–142; Chapter Seven starts I.143 and is excluded."
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/scans/early-086.jpg",
+          "sha256": "b80cd65f96d040705aba332587e84c51e6588a077ff3d9cc12420b1e0291abff",
+          "printedPage": 82,
+          "canvas": 86,
+          "kind": "full-page facsimile visually inspected",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/86"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/scans/early-087.jpg",
+          "sha256": "6a391ca83975e1ef69cd3b1831ff7662f8d942660ce6e10a28f0daff150655b1",
+          "printedPage": 83,
+          "canvas": 87,
+          "kind": "full-page facsimile visually inspected",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/87"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/scans/early-088.jpg",
+          "sha256": "d95bcd25dc7aef8c95c08cb99eb5ce40c24b5ba0f1f9b14661d21dd6ce197768",
+          "printedPage": 84,
+          "canvas": 88,
+          "kind": "full-page facsimile visually inspected",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/88"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/scans/early-089.jpg",
+          "sha256": "c112bfad496d46441478e8a23ac459424256fe734e055afec7cb10365051f1f6",
+          "printedPage": 85,
+          "canvas": 89,
+          "kind": "full-page facsimile visually inspected",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/89"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/rafed-3108-pages.json",
+          "sha256": "df25e252296516e58e1eef3b4c0ce9acb0fd86dbd20fec36ed680992f9e10bd3",
+          "kind": "1428 edited digital text and notes read in full for the stated chapter",
+          "volume": 1,
+          "pages": [
+            137,
+            138,
+            139,
+            140,
+            141,
+            142
+          ],
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=137&type=c_fbook"
+        }
+      ],
+      "argumentFindings": [
+        "The full distinction of logical and real/derivational differentiae, ultimate differentia, regress objection, primary/common predication, substantial form and immaterial soul is represented without an omitted argument in the current English.",
+        "The existing English treatment of من غير أن تندرج تحته فيكون جزءا من ماهيتها correctly keeps the consequence inside the negative scope. The early print and later text both retain the same Arabic; do not add a negation or reverse the English.",
+        "Later I.140 and I.142 regularize masculine pronouns in ففي كونه and فيصدق عليه to feminine forms. The early print pp.83–84 attests the existing forms; retain them and record the later variants.",
+        "The later editor’s threefold account of differentia (I.137 n.1) elaborates the author’s twofold division. It is commentary and is not substituted for the author’s two senses.",
+        "The early and later witnesses support correction of two mechanical spellings; several artificial paragraph breaks are joined without changing wording."
+      ]
+    },
+    {
+      "id": "N-V-07",
+      "status": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "121b159a0df676fea485b63efceb7cd43e4e9a4d05d96f46f2b561caf5ac0805",
+      "storedEnglishSha256": "37633216968827c54aa315dcb7e0b76e755b54bb01184a3012543ffa4352ad4c",
+      "sourceGrade": "The complete stored Arabic and English were read against all corresponding 1404 printed facsimile pages (visual inspection) and the complete 1428 edited digital text with its notes. Printed-page and canvas numbers are distinguished. The later source is a digital presentation, not a newly inspected printed copy. No manuscript collation or independent human certification is claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          10
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          11
+        ],
+        "earlyPrintedPages": [
+          85,
+          86
+        ],
+        "earlyCanvases": [
+          89,
+          90
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          143,
+          144,
+          145
+        ],
+        "allBoundariesAccounted": true,
+        "boundaryNote": "Begins at Chapter Seven on 1404 p.85 and concludes وهو المطلوب on p.86. The Stage VI title at p.87/canvas91 was inspected to confirm the ending but is not counted as a chapter page. Later I.143–145; the Stage VI title I.147 is excluded."
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/scans/early-089.jpg",
+          "sha256": "c112bfad496d46441478e8a23ac459424256fe734e055afec7cb10365051f1f6",
+          "printedPage": 85,
+          "canvas": 89,
+          "kind": "full-page facsimile visually inspected",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/89"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/scans/early-090.jpg",
+          "sha256": "a83997c54a0abcaf8de43906e9e370ca2f24ce720b9feab337b4e2f2475de701",
+          "printedPage": 86,
+          "canvas": 90,
+          "kind": "full-page facsimile visually inspected",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/90"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/rafed-3108-pages.json",
+          "sha256": "df25e252296516e58e1eef3b4c0ce9acb0fd86dbd20fec36ed680992f9e10bd3",
+          "kind": "1428 edited digital text and notes read in full for the stated chapter",
+          "volume": 1,
+          "pages": [
+            143,
+            144,
+            145
+          ],
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=143&type=c_fbook"
+        }
+      ],
+      "argumentFindings": [
+        "Real/relative species, the unity of real composites, union versus conjunction, and all four alternatives in the multiplicity argument are present in both Arabic and English.",
+        "Early p.86 has بانضمامه إليه وعدم انضمامه الكثرة with the conjunction و; the later digital presentation I.145 omits that conjunction. Retain the early-supported base and the English contrast between presence and absence of the separable accident.",
+        "The current translation preserves the distinction between an individual of a species and a numerical unit in the regress argument, and correctly concludes by contraposition.",
+        "The later editor’s discussion of whether real and relative species share a univocal term is kept as later commentary; it does not replace the author’s classification.",
+        "One artificial paragraph break inside حقيقة واحدة is joined. No substantive Arabic or English change is required."
+      ]
+    }
+  ]
+}

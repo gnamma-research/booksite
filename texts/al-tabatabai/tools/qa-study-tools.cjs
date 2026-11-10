@@ -67,7 +67,16 @@ async function main(type){const browser=await type.launch({headless:true});try{
    await page.goto(base+'#passage-M-C-44');await ready(page);
    assert.equal(await page.locator('#passage-M-C-44 [data-bookmark]').getAttribute('aria-pressed'),'true');
    await page.locator('.study-nav').getByRole('button',{name:'Reading Desk',exact:true}).click();
-   assert.match(await page.locator('#study-desk-list').textContent(),/Private cross-reader continuity check/);await close(page,'#study-desk');
+   assert.match(await page.locator('#study-desk-list').textContent(),/Private cross-reader continuity check/);
+   const other=await context.newPage();
+   try{
+     await other.goto(base+'muzaffar-al-mantiq/#passage-M-C-44');await ready(other);
+     await other.locator('#passage-M-C-44 [data-note]').click();
+     await other.locator('#note-text').fill('Private cross-reader continuity check — updated in another tab');
+     await other.locator('#note-form button[type="submit"]').click();
+     await page.locator('#study-desk-list').getByText('Private cross-reader continuity check — updated in another tab',{exact:true}).waitFor({state:'visible'});
+   }finally{await other.close();}
+   await close(page,'#study-desk');
  });
  await check(type.name()+' paragraph copy has citation and opt-in personal note',async()=>{
    await page.locator('#passage-M-C-44 .english-panel .paragraph-action').first().click();
@@ -78,7 +87,12 @@ async function main(type){const browser=await type.launch({headless:true});try{
  await check(type.name()+' focus and continuous retain the selected location',async()=>{
    await page.locator('#reading-view').selectOption('quiet');assert.equal(await page.locator('.chapter-section').count(),1);assert.ok(!(await page.locator('#contents-panel').isVisible()));
    await page.locator('#study-next').click();assert.match(await page.locator('#study-dock-location').textContent(),/neither particular/);
+   await page.keyboard.press('/');await page.locator('#book-search').waitFor({state:'visible'});
+   assert.equal(await page.locator('#book-search').evaluate(n=>n===document.activeElement),true);
+   await page.keyboard.press('Escape');assert.ok(!(await page.locator('#contents-panel').isVisible()));
+   assert.equal(await page.locator('#reading-view').inputValue(),'quiet');
    await page.locator('#reading-view').selectOption('continuous');assert.ok(await page.locator('.chapter-section').count()>50);
+   assert.equal(await page.locator('#contents-panel').evaluate(n=>n.inert),false);
  });
  await check(type.name()+' index exposes conceptual routes, not raw first matches',async()=>{
    await page.locator('#study-menu-open').click();await page.locator('#study-menu').getByRole('button',{name:'Subject index',exact:true}).click();
@@ -100,14 +114,24 @@ async function main(type){const browser=await type.launch({headless:true});try{
  await check(type.name()+' print range and cancellation preserve reading choices',async()=>{
    await page.goto(base+'#passage-M-V-28');await ready(page);
    await page.locator('#reading-view').selectOption('quiet');
-   await page.evaluate(()=>{window.print=()=>{};});
+   await page.evaluate(()=>{
+     window.print=()=>{};
+     const unit=window.HikmaReader.state.byUnit.get('M-V-28');
+     unit.notes=[...(unit.notes||[]),{type:'Browser test fixture',arabic:'حاشية عربية للاختبار',text:'Authorial-note translation for browser testing.'}];
+   });
    const before=page.url();await page.locator('#pdf-print').click();
    await page.locator('#pdf-scope').selectOption('range');await page.locator('#pdf-from').selectOption('M-V-27');await page.locator('#pdf-to').selectOption('M-V-29');
+   await page.locator('input[name="pdf-mode"][value="reading"]').check();
    await page.locator('#pdf-language').selectOption('arabic');await page.locator('#pdf-confirm').click();
    assert.equal(await page.locator('.passage:not([data-pdf-exclude])').count(),3);
    assert.equal(await page.locator('body').getAttribute('data-pdf-language'),'arabic');
    assert.equal(await page.locator('.pdf-personal-note').count(),0);
+   await page.emulateMedia({media:'print'});
+   const authorialNote=page.locator('#passage-M-V-28 .authorial-bilingual-note').filter({hasText:'Browser test fixture'});
+   assert.ok(await authorialNote.locator('.footnote-arabic').isVisible());
+   assert.ok(!(await authorialNote.locator('.footnote-english').isVisible()));
    await page.evaluate(()=>window.dispatchEvent(new Event('afterprint')));
+   await page.emulateMedia({media:null});
    assert.equal(await page.locator('#reading-view').inputValue(),'quiet');assert.equal(page.url(),before);
    assert.equal(await page.locator('[data-pdf-exclude]').count(),0);
  });
@@ -129,6 +153,10 @@ async function main(type){const browser=await type.launch({headless:true});try{
    await phone.screenshot({path:path.join(out,type.name()+'-phone-dictionary.png'),fullPage:false});
    await close(phone,'#study-dictionary');await phone.screenshot({path:path.join(out,type.name()+'-phone-reader.png'),fullPage:false});
    const bounds=await phone.locator('#study-dock').boundingBox();assert.ok(bounds.x>=0&&bounds.x+bounds.width<=392);
+   await phone.locator('#reading-view').selectOption('quiet');await phone.locator('#contents-toggle').click();
+   await phone.locator('#book-search').waitFor({state:'visible'});await phone.locator('#contents-close').click();
+   assert.equal(await phone.locator('#reading-view').inputValue(),'quiet');
+   assert.ok(!(await phone.locator('#contents-panel').isVisible()));
  });
  assert.deepEqual(errors,[]);
  await mobile.close();await context.close();
