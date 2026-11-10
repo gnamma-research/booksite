@@ -3,15 +3,15 @@
   "title": "al-Manṭiq",
   "arabicTitle": "المنطق",
   "author": "Muḥammad Riḍā al-Muẓaffar",
-  "description": "Selected original authorial Arabic and working English from Muẓaffar's six-book logic. 13 locally paired Book IV sections; substantial missing original content and no complete independent print collation.",
+  "description": "Selected source-anchored Arabic–English working passages from Muẓaffar's six-book logic; includes Book IV simple and compound modalities, while much of the original and all Books V and VI remain unavailable in the local bilingual reader.",
   "status": "working-translation",
   "editorialStatus": {
     "translationComplete": false,
-    "translatedSection": "Introduction 11, Book I 11, Book II 17, Book III 14, Book IV 14; selective Arabic-English working authorial excerpts.",
-    "translatedPassages": 67,
+    "translatedSection": "Introduction 11; Book I 11; Book II 17; Book III 14; Book IV 18 selected local Arabic–English working units. Books V and VI not translated.",
+    "translatedPassages": 71,
     "sourceBasis": "1402 AH Dār al-Taʿāruf Rafed searchable Arabic; the separately identified 1968 institutional scan remains to be independently collated.",
     "englishComparator": "Carney's 75-page English PDF supplied by the user ends without the complete Book III section on definitions. English here is independently translated from Arabic.",
-    "editionNotice": "67 working bilingual source-selected units, including Book IV through eight simple modal kinds on pp.146–148. Rest of six-book work incomplete; independent 1968 print collation outstanding."
+    "editionNotice": "71 selected Arabic–English working readings, now through compound modal forms, 1402 pp.148–151. 1421 digital source sampled, 1968 ACO printed facsimile not independently collated. No complete six-book edition."
   },
   "sources": [
     {
@@ -1541,6 +1541,114 @@
         "edition": "al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH digital transcription; independent 1968 printed witness check pending",
         "page": "146–148",
         "url": "https://lib.rafed.net/view.php?b_id=1604&page=147&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-C-15",
+      "stage": "C",
+      "chapter": 15,
+      "title": "Compound modal propositions: the implicit opposite-quality judgment",
+      "arabicTitle": "أقسام المركبة — القضية الصريحة والمشار إليها",
+      "arabic": "أقسام المركبة\n\nقلنا فيما تقدّم: إن المركّبة ما انحلّت إلى قضيتين موجبة وسالبة. ونزيدها هنا توضيحاً، فنقول: إن المركّبة تتألف من قضية مذكورة بعبارة صريحة هي الجزء الأول منها (سواء كانت موجبة أو سالبة وباعتبار هذا الجزء الصريح تسمّى المركّبة موجبة أو سالبة)، ومن قضية أخرى تخالف الجزء الأول بالكيف وتوافقه بالكم، غير مذكورة بعبارة صريحة، وإنّما يشار إليها بنحو كلمة «لا دائماً» و«لا بالضرورة».\n\nوإنّما يلتجأ إلى التركيب عندما تُستعمل قضية موجّهة عامّة تحتمل وجهين: الضرورة واللاضرورة، أو الدوام واللادوام، فيراد بيان أنها ليست بضرورية أو ليست بدائمة، فيضاف إلى القضية مثل كلمة «لا بالضرورة» أو «لا دائماً».\n\nمثل ما إذا قال القائل: «كل مصلّ يتجنب الفحشاء بالفعل» فيحتمل أن يكون ذلك ضرورياً لا ينفك عنه، ويحتمل ألا يكون ضرورياً، فلأجل دفع الاحتمال ولأجل التنصيص على أنه ليس بضروري تُقيّد القضية بقولنا «لا بالضرورة». كما يحتمل أن يكون ذلك دائماً ويحتمل ألا يكون، ولأجل دفع الاحتمال وبيان أنه ليس بدائم تُقيّد القضية بقولنا «لا دائماً».\n\nفالجزء الأول، وهو «كل مصلّ يتجنب الفحشاء بالفعل»، قضية موجبة كلية مطلقة عامة. والجزء الثاني، وهو «لا بالضرورة»، يشار به إلى قضية سالبة كلية ممكنة عامة؛ لأن معنى «لا بالضرورة» أن تجنّب الفحشاء ليس بضروري لكل مصلّ، فيكون مؤدّاه أنه يمكن سلب تجنّب الفحشاء عن المصلّي، ويعبّر عن هذه القضية بقولهم: «لا شيء من المصلّي بمتجنّب للفحشاء بالإمكان العام».\n\nوكذا لو كان الجزء الثاني هو «لا دائماً» فإنّه يشار به إلى قضية سالبة كلية ولكنّها مطلقة عامة؛ لأن معنى «لا دائماً» أنّ تجنّب الفحشاء لا يثبت لكل مصلّ دائماً، فيكون المؤدّى «لا شيء من المصلّي بمتجنّب للفحشاء بالفعل».\n\nوأهم القضايا المركّبة المتعارفة ستّ:",
+      "english": "**Compound modal propositions.** A compound proposition is analysable into two modal judgments, one affirmative and one negative. Muẓaffar now makes the structure precise. The **first component** is stated explicitly and may itself be positive or negative; the compound proposition receives its positive or negative classification from this expressly stated component. A **second component**, opposite to it in quality but the same in quantity, is indicated rather than fully expressed, commonly by “not always” (*lā dāʾiman*) or “not necessarily” (*lā bi-l-ḍarūra*).\n\nThe second qualification is needed because a general modal statement can leave open whether the predicate belongs by necessity or without necessity, or whether its attribution is permanent or nonpermanent. To exclude the stronger reading, one adds the corresponding negative qualification; it should not be confused with denying the original assertion.\n\nFor example, “Every person who prays in fact avoids indecency” is a universal affirmative of general actuality. It does not yet decide whether avoiding indecency follows **necessarily** from the description of praying. Adding “not necessarily” denies necessity while retaining the preceding actual assertion. Likewise, adding “not always” rejects perpetual attachment without canceling the positive first component.\n\nThe author expresses the implicitly signified second judgment in the corresponding **universal negative modal** form, with the same quantity as the first, but of opposite quality. His specific formal schemata are retained here rather than replaced by a simplified modern predicate-logic formula, because his use of scope, possibility and the modal negative requires separate analysis. \n\nThe six familiar compounds are now enumerated.",
+      "notes": [
+        {
+          "type": "Source-critical status",
+          "text": "Working authorial-source transcription with normalized punctuation, spelling and paragraph breaks. The 1402 digital edition and separately published 1421 digital text were compared for the indicated argument and examples; no 1968 facsimile or manuscript comparison has been carried out.",
+          "url": "https://ablibrary.net/book_content/b/4628/178?lang=ar"
+        },
+        {
+          "type": "Logical/translation note",
+          "text": "The author says the two components agree in *quantity* and differ in *quality*. Do not read the implicit negative as if it simply erased the explicitly affirmed actual occurrence. His equivalent 'no S is P' forms are technical modal presentations, not unqualified factual denials; a formalization requires carefully locating the modal operator."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH digital source (normalized transcription); compared at indicated locus with later Rafed 1421 AH digital edition, not a facsimile collation",
+        "page": "148–149",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
+        "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/177?lang=ar"
+      }
+    },
+    {
+      "id": "M-C-16",
+      "stage": "C",
+      "chapter": 16,
+      "title": "Two special compounds: qualified necessity and customary permanence",
+      "arabicTitle": "المشروطة الخاصة والعرفية الخاصة",
+      "arabic": "١ ـ (المشروطة الخاصّة): وهي المشروطة العامة المقيّدة باللادوام الذاتي. والمشروطة العامة هي الدالّة على ضرورة ثبوت المحمول للموضوع ما دام الوصف ثابتاً له، فيحتمل فيها أن يكون المحمول دائم الثبوت لذات الموضوع وإن تجرّد عن الوصف، ويحتمل ألا يكون. ولأجل دفع الاحتمال وبيان أنه غير دائم الثبوت لذات الموضوع تُقيّد القضية باللادوام الذاتي، فيشار به إلى قضية مطلقة عامة.\n\nفتتركّب المشروطة الخاصة على هذا من مشروطة عامة صريحة ومطلقة عامة مشار إليها بكلمة «لا دائماً»، نحو: «كلّ شجر نامٍ بالضرورة ما دام شجراً، لا دائماً»، أي: «لا شيء من الشجر بنامٍ بالفعل». وإنّما سمّيت خاصّة لأنها أخصّ من المشروطة العامة.\n\n٢ ـ (العرفية الخاصّة): وهي العرفية العامة المقيّدة باللادوام الذاتي. ومعناه أن المحمول وإن كان دائماً ما دام الوصف، هو غير دائم ما دام الذات، فيرفع به احتمال الدوام ما دام الذات. ويشار باللادوام إلى قضية مطلقة عامة كالسابق، نحو: «كل شجر نامٍ دائماً ما دام شجراً، لا دائماً»، أي: «لا شيء من الشجر بنامٍ بالفعل».\n\nفتتركّب العرفية الخاصة من عرفية عامة صريحة ومطلقة عامة مشار إليها بكلمة «لا دائماً». وإنّما سمّيت خاصة لأنها أخص من العرفية العامة، إذ العرفية العامة تحتمل الدوام ما دام الذات وعدمه، والعرفية الخاصة مختصة بعدم الدوام ما دام الذات.",
+      "english": "**1. The special conditioned necessity (*al-mashrūṭa al-khāṣṣa*).** Begin with a universal conditioned-necessity proposition: the predicate belongs necessarily to the subject **for as long as the specified description holds**. This alone is compatible with two possibilities. The predicate might also belong throughout the existence of the underlying subject even after it no longer satisfies the description, or it might not. The *special* compound excludes the first alternative by adding a denial of permanence **throughout the subject's existence as such** (*al-lā-dawām al-dhātī*).\n\nThe proposition consequently has two components: an expressly asserted general conditional necessity, and an implicitly indicated general actuality of the opposite quality. Muẓaffar's example is that every tree necessarily grows so long as it is a tree, “but not always”—the qualification denying that growth lasts as long as the underlying subject exists regardless of its title. He also supplies an elliptical technical negative formula to express the second component. Its negation must not cancel the necessity under the stated description. The special form is narrower than the general conditioned form precisely because it removes the possibility of unrestricted permanence.\n\n**2. The special customary proposition (*al-ʿurfiyya al-khāṣṣa*).** Begin instead with general customary permanence: the predicate holds continuously **while the subject satisfies its qualifying description**, without asserting intrinsic necessity of the predicate. Add the same denial of *unrestricted* permanence through the subject's underlying existence. Thus “Every tree always grows while it is a tree—but not always [without regard to this description].” This combines an explicitly stated general customary proposition with an implicitly indicated general-actuality negative, and is narrower than the unrestricted general customary form.\n\nThe first compound asserts necessity *under the title* and denies unconstrained permanence; the second asserts permanence *under the title* and denies unconstrained permanence. The difference between **necessity** and **actual duration** remains essential.",
+      "notes": [
+        {
+          "type": "Source-critical status",
+          "text": "Working authorial-source transcription with normalized punctuation, spelling and paragraph breaks. The 1402 digital edition and separately published 1421 digital text were compared for the indicated argument and examples; no 1968 facsimile or manuscript comparison has been carried out.",
+          "url": "https://ablibrary.net/book_content/b/4628/179?lang=ar"
+        },
+        {
+          "type": "Logical/translation note",
+          "text": "The qualifier «لا دائماً» restricts duration in the *underlying subject*, not duration while the defining title holds. The 1421 parallel digital edition preserves both types and their tree examples. The short source schemata «لا شيء من الشجر بنام بالفعل» are presented as authorial abbreviated modal notation; their scope is not silently converted into the unconditional claim 'no tree grows'."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH digital source (normalized transcription); compared at indicated locus with later Rafed 1421 AH digital edition, not a facsimile collation",
+        "page": "149",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
+        "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/179?lang=ar"
+      }
+    },
+    {
+      "id": "M-C-17",
+      "stage": "C",
+      "chapter": 17,
+      "title": "Actual yet not necessary; actual yet not permanent",
+      "arabicTitle": "الوجودية اللاضرورية والوجودية اللادائمة",
+      "arabic": "٣ ـ (الوجودية اللاضرورية): وهي المطلقة العامة المقيّدة باللاضرورية الذاتية، لأن المطلقة العامة يحتمل فيها أن يكون المحمول ضرورياً لذات الموضوع ويحتمل عدمه؛ ولأجل التصريح بعدم ضرورة ثبوته لذات الموضوع تُقيّد بكلمة «لا بالضرورة». وسلب الضرورة معناه الإمكان العام؛ لأن الإمكان العام هو سلب الضرورة عن الطرف المقابل، فإذا سُلبت الضرورة عن الطرف المذكور صريحاً في القضية ـ ولنفرضه حكماً إيجابياً ـ فمعناه أن الطرف المقابل وهو السلب موجّه بالإمكان العام.\n\nوعليه فيشار بكلمة «لا بالضرورة» إلى ممكنة عامة. فإذا قلت: «كل إنسان متنفس بالفعل، لا بالضرورة» فإن «لا بالضرورة» إشارة إلى قولك: «لا شيء من الإنسان بمتنفس بالإمكان العام».\n\nفتتركّب إذن الوجودية اللاضرورية من مطلقة عامة وممكنة عامة، وإنّما سمّيت «وجودية» لأن المطلقة العامة تدل على تحقّق الحكم ووجوده خارجاً، وسمّيت «لاضرورية» لتقييدها باللاضرورة.\n\n٤ ـ (الوجودية اللادائمة): وهي المطلقة العامة المقيّدة باللادوام الذاتي؛ لأن المطلقة العامة يحتمل فيها أن يكون المحمول دائم الثبوت لذات الموضوع ويحتمل عدمه، ولأجل التصريح بعدم الدوام تُقيّد القضية بكلمة «لا دائماً»، فيشار بها إلى مطلقة عامة كما تقدّم.\n\nفتتركّب الوجودية اللادائمة من مطلقتين عامتين، وسمّيت «وجودية» للسبب المتقدم، نحو: «لا شيء من الإنسان بمتنفس بالفعل، لا دائماً»، أي: أن كل إنسان متنفس بالفعل.",
+      "english": "**3. Actuality without intrinsic necessity (*al-wujūdiyya al-lā-ḍarūriyya*).** An unrestricted general-actuality proposition tells us that the predication really occurs. It leaves open whether the predicate necessarily belongs to the subject's own essence. The compound form specifies **not by intrinsic necessity**, thus combining an expressly affirmed general actuality with an implicitly indicated general possibility of the opposite quality.\n\nThe step is logical: general possibility denies the necessity of the **opposite** side. If the proposition explicitly affirms P of S, adding “not necessarily [P]” rules out necessary P; this in turn licenses the opposite side in the broad possibility sense. The author illustrates the distinction with “Every human is in fact breathing, but not necessarily.” He gives a technical negative formulation for the implied second component. The compound is called *wujūdiyya* because the explicitly stated form asserts actuality, and *lā-ḍarūriyya* because it excludes necessity of that actuality.\n\n**4. Actuality without intrinsic permanence (*al-wujūdiyya al-lā-dāʾima*).** General actuality also leaves open whether the predicate remains permanently true of the subject as such. Here one adds “not always” to exclude such permanence. The resulting compound has **two general-actuality modal components** of opposite quality, one stated openly and the other indicated by the negative qualification.\n\nMuẓaffar's example is expressed in the source with a negative first component about human breathing followed by “not always”; his stated explanatory equivalent then affirms breathing as actual. This polarity is retained as an **editorially unresolved example** rather than silently harmonized with a preferred affirmative template. The governing distinction is nonetheless clear: *lā-ḍarūriyya* excludes essential necessity, while *lā-dāʾima* excludes unrestricted duration. Neither qualifier by itself denies the first component's actual occurrence.",
+      "notes": [
+        {
+          "type": "Source-critical status",
+          "text": "Working authorial-source transcription with normalized punctuation, spelling and paragraph breaks. The 1402 digital edition and separately published 1421 digital text were compared for the indicated argument and examples; no 1968 facsimile or manuscript comparison has been carried out.",
+          "url": "https://ablibrary.net/book_content/b/4628/180?lang=ar"
+        },
+        {
+          "type": "Logical/translation note",
+          "text": "The 1402 text's «لا شيء من الإنسان بمتنفس بالفعل، لا دائماً» followed by «أي أن كل إنسان متنفس بالفعل» is counterintuitive as a literal negative and apparent positive paraphrase. The 1421 digital witness has the same juxtaposition; retain both as an open **authorial/source example issue**, not a demonstrated printed variant. Do not silently replace the original initial negative with a positive."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH digital source (normalized transcription); compared at indicated locus with later Rafed 1421 AH digital edition, not a facsimile collation",
+        "page": "150",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
+        "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/180?lang=ar"
+      }
+    },
+    {
+      "id": "M-C-18",
+      "stage": "C",
+      "chapter": 18,
+      "title": "Occurrent but nonpermanent; genuinely two-sided possibility",
+      "arabicTitle": "الحينية اللادائمة والممكنة الخاصة",
+      "arabic": "٥ ـ (الحينية اللادائمة): وهي الحينية المطلقة المقيّدة باللادوام الذاتي؛ لأن الحينية المطلقة معناها أن المحمول فعلي الثبوت للموضوع حين اتصافه بوصفه، فيحتمل فيها الدوام ما دام الموضوع وعدمه، ولأجل التصريح بعدم الدوام تُقيّد باللادوام الذاتي الذي يشار به إلى مطلقة عامة كما تقدّم. فتتركّب الحينية اللادائمة من حينية مطلقة ومطلقة عامة، نحو: «كل طائر خافق الجناحين بالفعل حين هو طائر، لا دائماً»، أي: «لا شيء من الطائر بخافق الجناحين بالفعل».\n\n٦ ـ (الممكنة الخاصة): وهي الممكنة العامة المقيّدة باللاضرورة الذاتية، ومعناها أن الطرف الموافق المذكور في القضية ليس ضرورياً كما كان الطرف المخالف ـ حسب التصريح في القضية ـ ليس ضرورياً أيضاً، فيرفع بقيد «اللاضرورة» احتمال الوجوب إذا كانت القضية موجبة، واحتمال الامتناع إذا كانت سالبة. ومفاد مجموع القضية بعد التركيب هو الإمكان الخاص الذي هو عبارة عن سلب الضرورة عن الطرفين.\n\nفتتركّب الممكنة الخاصة من ممكنتين عامتين، وتكون فيها الجهة نفس المادة الواقعية إذا كانت صادقة.\n\nويكفي لإفادة ذلك تقييد القضية بالإمكان الخاص اختصاراً، فنقول: «كل حيوان متحرك بالإمكان الخاص»، أي: «كل حيوان متحرك بالإمكان العام، ولا شيء من الحيوان بمتحرك بالإمكان العام».\n\nوالتعبير بالإمكان الخاص بمنزلة ما لو قُيّدت الممكنة العامة باللاضرورة، كما لو قلت في المثال: «كل حيوان متحرك بالإمكان العام، لا بالضرورة».",
+      "english": "**5. Actuality while qualified, without enduring actuality of the subject as such (*al-ḥīniyya al-lā-dāʾima*).** The starting statement is an *actuality-in-a-specified-condition*: the predicate is present while the subject bears the stated title or description. Without further qualification, this is compatible both with permanence throughout the underlying subject's existence and with its absence. Adding “not always” rules out the unrestricted permanence. The compound consequently consists of an explicitly stated *ḥīniyya muṭlaqa* and an implicitly signified *muṭlaqa ʿāmma* of opposite quality.\n\nThe author's example is “Every bird is in fact beating its wings while it is [flying as] a bird, but not always [throughout its existence].” He supplies a negative technical expression for the hidden part, which must not be mistaken for saying that no bird ever beats its wings.\n\n**6. Special possibility (*al-mumkina al-khāṣṣa*).** The starting general-possibility proposition has already denied necessity of the **opposite** side of its assertion. This does not exclude necessity of the **asserted** side. The special compound adds “not necessarily” to deny that latter necessity as well. The result is **two-sided absence of necessity**, *salb al-ḍarūra ʿan al-ṭarafayn*: both affirmative and negative directions remain intrinsically possible.\n\nFor an affirmative compound this removes necessary affirmation; for a negative compound it removes necessary negation or impossibility. The fully expressed composite thus has two *mumkina ʿāmma* components of opposite quality, and its expressed qualification (*jiha*) coincides with the actual intrinsic possibility (*mādda*) when the proposition is true.\n\nThe author abbreviates the composite by saying “Every animal moves in the special possibility sense,” meaning that motion is possible and its absence is possible. He also supplies the long form, “Every animal can move in the general sense, but not necessarily.” The latter must be understood in the logic of intrinsic modality, not as an observation that an individual animal happens to be at rest.",
+      "notes": [
+        {
+          "type": "Source-critical status",
+          "text": "Working authorial-source transcription with normalized punctuation, spelling and paragraph breaks. The 1402 digital edition and separately published 1421 digital text were compared for the indicated argument and examples; no 1968 facsimile or manuscript comparison has been carried out.",
+          "url": "https://ablibrary.net/book_content/b/4628/181?lang=ar"
+        },
+        {
+          "type": "Logical/translation note",
+          "text": "The 1421 digital source at p.181 also preserves both forms. Interpret «لا بالضرورة» as absence of *same-side* necessity supplementing the already absent *opposite-side* necessity. The example of moving animals is part of the historical author's logic, not proof of a universal zoological law."
+        }
+      ],
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH digital source (normalized transcription); compared at indicated locus with later Rafed 1421 AH digital edition, not a facsimile collation",
+        "page": "151",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=154&type=c_fbook",
+        "parallelEditionUrl": "https://ablibrary.net/book_content/b/4628/181?lang=ar"
       }
     }
   ],
