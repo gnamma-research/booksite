@@ -1,0 +1,196 @@
+{
+  "schema": "nihayat4-restart-state-v1",
+  "updatedOn": "2026-11-10",
+  "timezone": "Asia/Riyadh",
+  "project": "Nihayat–Muzaffar–Bidayat Hikma reader",
+  "repository": "gnamma-research/booksite",
+  "preservation": {
+    "status": "saved-remotely",
+    "branch": "nihayat4-recovery-20261110",
+    "contentCommit": "5098feea89a2b131cee916289ff328e743a37d84",
+    "previousRemoteStage9Commit": "44fa9a086a17dfe446295f01d076b0dd6ef31959",
+    "originalDraftPullRequest": 288,
+    "originalDraftPullRequestStatus": "open-draft-not-merged",
+    "remotePublicationOfRecoveredWork": false
+  },
+  "published": {
+    "stage": 8,
+    "handoffCommit": "dff709b6c7031bcbc7f6ed55cf56dddea7b376e4",
+    "pdfCommit": "73cb227ee1d2dd8ae57d32e8b73e3a9d438851dd",
+    "muzaffarUnits": 101,
+    "bidayaUnits": 111,
+    "nihayaUnits": 136,
+    "combinedUnits": 348,
+    "nihayaLocalReviews": 136,
+    "nihayaExternalComparisonsIntegrated": 1,
+    "pdfCount": 9,
+    "verificationRecord": "audits/hikma-release-verification-2026-11-10-stage8.json"
+  },
+  "recovered": {
+    "stage": 9,
+    "pairedUnitsByBook": {
+      "muzaffar-al-mantiq": 140,
+      "bidayat-al-hikma": 111,
+      "nihayat-al-hikma": 136
+    },
+    "combinedUnits": 387,
+    "muzaffarBookVUnits": 40,
+    "muzaffarNewUnitsAfterStage8": 39,
+    "muzaffarNewUnitIds": {
+      "first": "M-V-02",
+      "last": "M-V-40"
+    },
+    "muzaffarNewSourceBlocks": 798,
+    "muzaffarNewEnglishBodyWords": 17441,
+    "muzaffarBookVIUnits": 0,
+    "nihayaLocalReviews": 136,
+    "nihayaExternalComparisonRecords": 84,
+    "nihayaRecoveredUnincorporatedReports": 83,
+    "nihayaExternalComparisonsIntegrated": 1,
+    "nihayaExternalComparisonsRemaining": 52,
+    "curatedConceptualLinks": 34,
+    "sharedDictionaryTerms": 147,
+    "independentHumanCertifications": 0
+  },
+  "progressDenominators": {
+    "nihayaAuthorialUnits": 136,
+    "muzaffarBookVDraftUnits": 40,
+    "requiredPdfEditions": 9,
+    "muzaffarWholeBook": null,
+    "overallProject": null
+  },
+  "comparisonEvidence": {
+    "summary": "audits/recovery-stage9-2026-11-10/summary.json",
+    "receipt": "audits/recovery-stage9-2026-11-10/integrity-receipt.json",
+    "reportCounts": {
+      "a": 23,
+      "b": 53,
+      "c": 7
+    },
+    "verifiedStoredUnitHashPairs": 83,
+    "verifiedDistinctEvidenceFiles": 210,
+    "pendingIntegration": true,
+    "readingGrade": "Recovered prior AI-assisted whole-unit 1404 facsimile and 1428 edited digital comparisons. File integrity verified on recovery; no fresh full scholarly rereading or manuscript/human certification claimed."
+  },
+  "sourceArchive": {
+    "filename": "Nihayat4_Stage9_Recovered_Research_2026-11-10.zip",
+    "libraryFileId": "libfile_673bcb72029c8191b429614aadc64ff1",
+    "url": "https://chatgpt.com/library?file_id=libfile_673bcb72029c8191b429614aadc64ff1&account_id=personal",
+    "bytes": 418504494,
+    "sha256": "8f5185e9c53be3f25a35b22bb7b0589a5dead218735be90871e2211b76c85fb9",
+    "researchFiles": 770,
+    "historicalPathPrefix": "/workspace/scratch/5f05ed215428/",
+    "restoreRule": "Resolve the suffix after historicalPathPrefix under the extracted archive root; do not rewrite historical reports."
+  },
+  "validation": {
+    "preparedRepositoryFilesHashMatched": 82,
+    "recoveredReportFilesHashMatched": 5,
+    "structuralAudit": "passed; 140/111/136 paired units, zero failures and warnings",
+    "priorRemoteReaderChecks": 51,
+    "priorRemoteStudyToolsSuite": "failed at Markdown quotation assertion on old commit; later recovered local fix is present",
+    "latestBrowserRegressionStatus": "not-yet-verified-on-recovered-revision",
+    "latestBrowserRegressionChecks": 51,
+    "latestStudyToolsChecks": 30,
+    "recoveredReleasePdfVerificationCount": 0,
+    "wholeNihayaReviewReperformedDuringRecovery": false
+  },
+  "nextWork": {
+    "firstTask": "Reconcile and integrate the 83 recovered Nihaya reports against the adopted-decision ledger, starting at N-INTRO. Preserve historical variants and source grades.",
+    "firstNewExternalComparison": "N-V-05",
+    "remainingExternalGroups": [
+      {
+        "range": "N-V-05–N-V-07",
+        "count": 3
+      },
+      {
+        "range": "N-VI-07–N-VI-21",
+        "count": 15
+      },
+      {
+        "range": "N-VII-01–N-VII-09",
+        "count": 9
+      },
+      {
+        "range": "N-VIII-01–N-VIII-11",
+        "count": 11
+      },
+      {
+        "range": "N-XII-11–N-XII-24",
+        "count": 14
+      }
+    ],
+    "remainingExternalUnitIds": [
+      "N-V-05",
+      "N-V-06",
+      "N-V-07",
+      "N-VI-07",
+      "N-VI-08",
+      "N-VI-09",
+      "N-VI-10",
+      "N-VI-11",
+      "N-VI-12",
+      "N-VI-13",
+      "N-VI-14",
+      "N-VI-15",
+      "N-VI-16",
+      "N-VI-17",
+      "N-VI-18",
+      "N-VI-19",
+      "N-VI-20",
+      "N-VI-21",
+      "N-VII-01",
+      "N-VII-02",
+      "N-VII-03",
+      "N-VII-04",
+      "N-VII-05",
+      "N-VII-06",
+      "N-VII-07",
+      "N-VII-08",
+      "N-VII-09",
+      "N-VIII-01",
+      "N-VIII-02",
+      "N-VIII-03",
+      "N-VIII-04",
+      "N-VIII-05",
+      "N-VIII-06",
+      "N-VIII-07",
+      "N-VIII-08",
+      "N-VIII-09",
+      "N-VIII-10",
+      "N-VIII-11",
+      "N-XII-11",
+      "N-XII-12",
+      "N-XII-13",
+      "N-XII-14",
+      "N-XII-15",
+      "N-XII-16",
+      "N-XII-17",
+      "N-XII-18",
+      "N-XII-19",
+      "N-XII-20",
+      "N-XII-21",
+      "N-XII-22",
+      "N-XII-23",
+      "N-XII-24"
+    ],
+    "muzaffar": "Review saved Book V and nine print-supported English decisions; begin Book VI at displayed p.276 (title p.274), and fill earlier source gaps. Never duplicate M-V-02–40.",
+    "reader": "Run 51 existing and 30 new browser checks on the recovered revision, inspect usability, reconcile all controls with Daruri, and rebuild/verify nine PDFs before publication."
+  },
+  "retainedRequirements": [
+    "Full external Nihaya comparison, retaining witness grades and exact variants",
+    "Complete Muzaffar translation, including exercises, diagrams and earlier gaps",
+    "Daruri-consistent menus, editorial/authorial headings, language controls and continuous reading",
+    "All books and editions together in the download area",
+    "Selective philosophical cross-links with reasons, separate from glossary and automatic word occurrences",
+    "Cumulative saved checkpoints and honest separate progress bars"
+  ],
+  "restartRules": [
+    "Read the short start file and this state first; do not recursively load previous chats or every historical handoff.",
+    "Read only the current unit/report/source window; use programmatic summaries for large files.",
+    "Check saved effects before retrying a failed operation; preserve newer branch changes.",
+    "Save after each completed unit or coherent batch and keep working across batches.",
+    "Report drafted, reviewed, incorporated, remotely saved and published as separate states.",
+    "Update this ledger from actual identifiers and evidence; never invent whole-work or overall percentages."
+  ],
+  "recoveryManifest": "audits/recovery-stage9-2026-11-10/repo-file-manifest.json"
+}
