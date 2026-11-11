@@ -1,3 +1,15 @@
+## Stage XVIII — production-quality introductory reader and error audit (11 November 2026)
+
+**Reader UX complete for the existing English working introduction**: all 128 Beirut pp18–145 page anchors survive, with five work sections, full-English-page search, mobile and desktop reading desk, saved places, page-by-page navigation, progress, citation copying, font and theme controls, focus, print and optional per-page Arabic source evidence. A compact phone appearance menu and opaque iOS navigation bar were visually checked in Chromium/WebKit. The 32 older bilingual introductory extracts and 559 selected source-graded Arabic–English critical clauses are separate reading layers.
+
+**Prose/display audit:** 11 intrusive bracketed continuation captions removed, two editorial progress paragraphs moved into source apparatus, malformed Markdown/HTML emphasis on pp21,31,34,83,113 repaired, 128 source-link entries and **70** optional notes separated from the continuous reading text. The already photographed historical-print `الحضرة العمائية` (“Cloud-like Presence”) at p34 now agrees between the reader and the canonical working Markdown; modern digital variant `الحضرة العملية` remains explicitly visible in apparatus.
+
+**No inflated evidence:** English 128-page scope remains *working*, critical selected clauses **559 = 283 edited-digital + 276 derivative**, I1876 photographed PRINT bounded checks **15** (7 differences, 8 agreements); **0 fully collated pages and 0 authenticated manuscript variants**. The full introduction, rather than the main poem commentary, is the defined work scope.
+
+**QA and recovery:** [complete Stage XVIII reader/source bundle](FULL_CUMULATIVE_READER_018.md) · [exact handoff](STAGE_HANDOFF_READER_018.md) · [reader corrections and browser QA report](READER_REVIEW_018.md) · [machine-readable source SHA manifest](STAGE_MANIFEST_READER_018.json) · [full introduction](../continuous-translation.html). Automated source and browser checks are enforced at every reader commit by GitHub Actions; current results should be checked on the workflow link.
+
+---
+
 ## Source-link verification supplement — 11 November 2026
 
 An apparently mislabeled 2007 scanned-edition download points to an Internet Archive item whose accessible OCR instead names Dāwūd al-Qayṣarī's commentary. Because the actual PDF could not be inspected, the item is excluded from Farghānī collation. A separate 2007 PDF candidate was inaccessible (HTTP 403). [See source candidate audit](SOURCE_CANDIDATE_AUDIT_017.md). **No actual physical B2007 printed page has yet been checked from these candidates.**
