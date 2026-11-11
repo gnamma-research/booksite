@@ -6,7 +6,7 @@
 const $=id=>document.getElementById(id);
 const sources=[window.FARGHANI_CRITICAL_PASS_001,window.FARGHANI_CRITICAL_PASS_002,window.FARGHANI_CRITICAL_PASS_003,window.FARGHANI_CRITICAL_PASS_004,window.FARGHANI_CRITICAL_PASS_005,window.FARGHANI_CRITICAL_PASS_006,window.FARGHANI_CRITICAL_PASS_007,window.FARGHANI_CRITICAL_PASS_008,window.FARGHANI_CRITICAL_PASS_009,window.FARGHANI_CRITICAL_PASS_010,window.FARGHANI_CRITICAL_PASS_011].filter(Boolean);
 const rows=sources.flatMap(s=>s.records||[]).sort((a,b)=>a.page-b.page || a.id.localeCompare(b.id));
-let lang="both",notes=true;
+let lang="both",notes=false;
 function el(tag,className,text) {
  const n=document.createElement(tag);if(className)n.className=className;if(text!==undefined)n.textContent=text;return n;
 }
