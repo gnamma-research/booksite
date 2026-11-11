@@ -1,4 +1,5 @@
 name: Qawtaw8 final witness dispositions and five editions
+# Source witness-locator compatibility restored before this run.
 on:
   push:
     branches: [qawtaw7-20261111-witness-resolutions]
