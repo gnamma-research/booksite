@@ -1,8 +1,8 @@
-/* Tahdhīb Stage112: fifteen evidence-graded metrics and FOUR historical H-local numbering series. */
+/* Stage113 derived from immutable historical source batches. */
 window.GNAMMA_TAHDHIB_PROGRESS={
   "schema": "gnamma-tahdhib-cumulative-progress-v1",
-  "updated": "2026-11-09",
-  "stage": "112",
+  "updated": "2026-11-11",
+  "stage": "113",
   "baseline": {
     "logicMatnDivisions": 19,
     "kalamClauses": 1044,
@@ -105,19 +105,19 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     },
     {
       "id": "mafahim-notes",
-      "label": "H-MAFAHIM Q216–221 · locally numbered concepts glosses with English",
-      "current": 5,
-      "total": 11,
+      "label": "H-MAFAHIM Q216–225 · first-pass English notes",
+      "current": 30,
+      "total": 35,
       "unit": "locally numbered notes",
-      "note": "Fourth authentic source section begins with new local note1 on Qum p216: 5 complete first-pass English,6 partial, unfinished beyond p221."
+      "note": "30/35 first-pass English complete; partial notes4,5,6,9,10. Note2 revised from full digital Arabic; notes12–35 fully transcribed and translated."
     },
     {
       "id": "mafahim-arabic",
-      "label": "H-MAFAHIM Q216–221 · full digitally searchable Arabic transcription",
-      "current": 0,
-      "total": 11,
+      "label": "H-MAFAHIM Q216–225 · full digital Arabic note transcriptions",
+      "current": 25,
+      "total": 35,
       "unit": "locally numbered notes",
-      "note": "All 11 currently show short Arabic locator lemmata ONLY. No photographed source page or independent manuscript variant certified."
+      "note": "Full digital Arabic for note2 and notes12–35, 25 units; not photographed or independently manuscript-collated."
     },
     {
       "id": "historical-classes",
@@ -356,12 +356,12 @@ window.GNAMMA_TAHDHIB_PROGRESS={
       "printedStartPage": 216,
       "localFirstNote": 1,
       "stableFirstId": "HWN-MAFAHIM-001",
-      "notesIndexed": 11,
-      "notesTranslated": 5,
-      "notesPartial": 6,
-      "notesArabicTranscribed": 0,
-      "lastProcessedQumPage": 221,
-      "nextLocalNote": 12
+      "notesIndexed": 35,
+      "notesTranslated": 30,
+      "notesPartial": 5,
+      "notesArabicTranscribed": 25,
+      "lastProcessedQumPage": 225,
+      "nextLocalNote": 36
     }
   },
   "currentRelease": {
@@ -373,9 +373,10 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     "cumulativeMarkdown": "batches/hawashi-preface-numbered-cumulative-hwn001-140.md",
     "introductionReader": "hawashi-numbered-notes.html",
     "introductionCumulativeMarkdown": "batches/hawashi-introduction-numbered-cumulative-intro001-082.md",
-    "allSectionsCumulativeMarkdown": "batches/hawashi-all-sections-cumulative-stage112.md",
+    "allSectionsCumulativeMarkdown": "batches/hawashi-all-sections-cumulative-stage113.md",
     "significationCumulativeMarkdown": "batches/hawashi-signification-numbered-cumulative-dal001-091.md",
-    "conceptsCumulativeMarkdown": "batches/hawashi-concepts-numbered-cumulative-maf001-011.md"
+    "conceptsCumulativeMarkdown": "batches/hawashi-concepts-numbered-cumulative-maf001-035.md",
+    "manifest": "corpus-manifest.json"
   },
   "stages": [
     {
@@ -609,6 +610,32 @@ window.GNAMMA_TAHDHIB_PROGRESS={
         "HANDOFF_LATEST.md",
         "stages/STAGE112_SIGNIFICATION_AND_CONCEPTS.md"
       ]
+    },
+    {
+      "id": "113",
+      "date": "2026-11-11",
+      "title": "Full Arabic–English Concepts12–35; complete revised Concepts2; release recovery",
+      "sourcePages": "216;221–225",
+      "noteRange": "H-MAFAHIM 12–35 plus revised2",
+      "fullNoteCount": 24,
+      "partialNoteCount": 0,
+      "revisedPartialCompleted": 1,
+      "arabicNoteCount": 25,
+      "certifiedPages": 0,
+      "report": "stages/STAGE113_FULL_ARABIC_AND_RELEASE_RECOVERY.md",
+      "files": [
+        "hawashi-concepts-stage113-source.json",
+        "hawashi-concepts-stage113-patch.js",
+        "hawashi-effective-stage113.json",
+        "corpus-manifest.json",
+        "batches/hawashi-all-sections-cumulative-stage113.md",
+        "batches/hawashi-concepts-numbered-cumulative-maf001-035.md",
+        "stages/STAGE113_FULL_ARABIC_AND_RELEASE_RECOVERY.md",
+        "HANDOFF_LATEST.md",
+        "progress-data.js",
+        "progress.html",
+        "hawashi-numbered-notes.html"
+      ]
     }
   ],
   "introLedger": {
@@ -830,12 +857,12 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     "sectionClosedAtPrintedPage": 215
   },
   "overallLaterGlossNoteLedger": {
-    "indexedNotes": 324,
-    "completeEnglish": 266,
-    "partialEnglish": 58,
-    "fullDigitalArabic": 54,
-    "arabicLocatorsOnly": 270,
-    "unnumberedFollowing": 10,
+    "indexedNotes": 348,
+    "completeEnglish": 291,
+    "partialEnglish": 57,
+    "fullDigitalArabic": 79,
+    "arabicLocatorsOnly": 269,
+    "unnumberedFollowing": 11,
     "distinctSections": [
       "H-PREFACE",
       "H-INTRO",
@@ -849,29 +876,81 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     "sectionId": "H-MAFAHIM",
     "titleArabic": "حواشي المفاهيم (النسب الأربع، الكليات الخمس، مفهوم كلي)",
     "printedStartPage": 216,
-    "lastProcessedQumPrintedPage": 221,
+    "lastProcessedQumPrintedPage": 225,
     "noteIdPrefix": "HWN-MAFAHIM-",
-    "indexedNotes": 11,
+    "indexedNotes": 35,
     "completedEnglish": [
       1,
+      2,
       3,
       7,
       8,
-      11
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
     ],
     "partiallyTranslated": [
-      2,
       4,
       5,
       6,
       9,
       10
     ],
-    "fullDigitizedArabicNotes": [],
-    "unnumberedFollowingRendered": [],
+    "fullDigitizedArabicNotes": [
+      2,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "unnumberedFollowingRendered": [
+      20
+    ],
     "sourcePhotographed": false,
     "fullPrintedPagesCertified": 0,
-    "nextLocalNote": 12,
-    "nextSourcePage": 221
+    "nextLocalNote": 36,
+    "nextSourcePage": 225
   }
 };

@@ -37,13 +37,13 @@ h1{font:500 clamp(28px,4vw,43px)/1.23 Georgia,serif;margin:9px 0}.overline{font:
 <option value="all">All numbered notes</option><option value="complete_searchable_note">Translated first-pass</option><option value="partial_translation">Partial translation</option>
 </select></nav>
 <main>
-<div class="overline">GNAMMA · Cumulative edition · Stage 112</div>
+<div class="overline">GNAMMA · Cumulative edition · Stage 113</div>
 <h1>Ḥawāshī — numbered glosses</h1>
 <p class="lead">The complete note, not the page of the printed volume, is the unit of translation. The English translations below are distinct from the much shorter preliminary Q125–178 selections.</p>
-<div class="notice">FOUR independently numbered H sections: Preface Q127–164 (140 notes, 136 complete first-pass English); Introduction to Logic Q165–187 (82, 66 complete); Signification Q188–215 (91, 59 complete); and new Concepts / Universals <strong>Q216 onward, historical numbering RESTARTS at local 1</strong> (11 notes through Q221, five complete). Combined <strong>324 distinct numbered source records, 266 English first-pass complete and 58 partial</strong>. Only 54 Preface notes have full digitally searchable Arabic; the other 270 records have Arabic LOCATORS ONLY. Ten adjacent unnumbered glosses are separately attributed. <strong>No complete H printed page has been independently photo/manuscript-collated.</strong></div>
-<div class="stats"><span id="count">Loading…</span><span>0 fully translated printed pages certified</span><span>H-PREFACE 136/140 · H-INTRO 66/82 · H-DALALA 59/91 · H-MAFAHIM 5/11 English</span></div>
+<div class="notice">Four historical H sections with distinct local numbering. <strong>348 numbered records: 291 first-pass English complete, 57 partial.</strong> There are <strong>79 full digital Arabic notes</strong> (54 Preface and25 Concepts) and269 Arabic locators. Stage113 adds full Arabic and English for Concepts12–35 and completes a replacement for Concepts2. Eleven unnumbered passages are separately attributed. <strong>No whole H printed page or independent Y manuscript reading is certified.</strong></div>
+<div class="stats"><span id="count">Loading…</span><span>0 fully translated printed pages certified</span><span>H-PREFACE 136/140 · H-INTRO 66/82 · H-DALALA 59/91 · H-MAFAHIM 30/35 English</span></div>
 <div id="notes"></div>
-<footer><a href="batches/hawashi-all-sections-cumulative-stage112.md">All FOUR sections · full cumulative Markdown</a> · <a href="batches/hawashi-preface-numbered-cumulative-hwn001-140.md">Preface notes 1–140</a> · <a href="batches/hawashi-introduction-numbered-cumulative-intro001-082.md">Introduction notes 1–82</a> · <a href="batches/hawashi-signification-numbered-cumulative-dal001-091.md">Signification notes 1–91</a> · <a href="batches/hawashi-concepts-numbered-cumulative-maf001-011.md">Concepts notes 1–11</a> · <a href="progress.html">Cumulative status, full handoff and stage logs</a> · <a href="hawashi-q125-178.html">52 earlier page selections</a>. Attribution remains provisional until individual signatures are checked against print photographs.</footer>
+<footer><a href="batches/hawashi-all-sections-cumulative-stage113.md">All FOUR sections · full cumulative Markdown</a> · <a href="batches/hawashi-preface-numbered-cumulative-hwn001-140.md">Preface notes 1–140</a> · <a href="batches/hawashi-introduction-numbered-cumulative-intro001-082.md">Introduction notes 1–82</a> · <a href="batches/hawashi-signification-numbered-cumulative-dal001-091.md">Signification notes 1–91</a> · <a href="batches/hawashi-concepts-numbered-cumulative-maf001-035.md">Concepts notes 1–35</a> · <a href="progress.html">Cumulative status, full handoff and stage logs</a> · <a href="hawashi-q125-178.html">52 earlier page selections</a>. Attribution remains provisional until individual signatures are checked against print photographs.</footer>
 </main>
 <script src="hawashi-numbered-notes-stage104.js?v=20261109-104"></script>
 <script src="hawashi-numbered-notes-stage105.js?v=20261109-105"></script>
@@ -72,6 +72,7 @@ h1{font:500 clamp(28px,4vw,43px)/1.23 Georgia,serif;margin:9px 0}.overline{font:
 <script src="hawashi-signification-notes-stage112c.js?v=20261109-112"></script>
 <script src="hawashi-signification-notes-stage112d.js?v=20261109-112"></script>
 <script src="hawashi-concepts-notes-stage112a.js?v=20261109-112"></script>
+<script src="hawashi-concepts-stage113-patch.js?v=20261111-113"></script>
 <script>
 (function(){'use strict';
 const base=window.GNAMMA_TAHDHIB_HAWASHI_NOTES;
@@ -158,6 +159,10 @@ for(const [i,batch] of stage112.entries()){
  }
  for(const n of batch.records){if(n.sectionId!==expected||byId.has(n.id))throw Error('Invalid or duplicate Stage112 note '+n.id);byId.set(n.id,n);}
 }
+const amendment113=window.GNAMMA_HAWASHI_STAGE113_PATCH;
+if(!amendment113){document.getElementById('notes').textContent='Stage113 data unavailable';return;}
+for(const n of amendment113.overrides){if(!byId.has(n.id))throw Error('Unknown revised note '+n.id);byId.set(n.id,n);}
+for(const n of amendment113.appends){if(byId.has(n.id))throw Error('Duplicate new note '+n.id);byId.set(n.id,n);}
 const entries=[...byId.values()].sort((a,b)=>{
  const group=x=>({ 'H-PREFACE':0,'H-INTRO':1,'H-DALALA':2,'H-MAFAHIM':3 })[x.sectionId||'H-PREFACE'] ?? 9;
  return group(a)-group(b)||(a.noteNumber??a.localNoteNumber)-(b.noteNumber??b.localNoteNumber);
