@@ -17,7 +17,7 @@
   } catch (_) { saved = {}; }
   const preferences = {
     language: ["ar","en","both"].includes(saved.language) ? saved.language : "both",
-    notes: saved.notes !== false,
+    notes: saved.notes === true,
     compare: saved.compare === true,
     continuous: saved.continuous === true,
     theme: ["parchment","horizon","night"].includes(saved.theme) ? saved.theme : "parchment",
