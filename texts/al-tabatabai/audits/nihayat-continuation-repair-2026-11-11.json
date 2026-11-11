@@ -35,6 +35,17 @@
       "run": 42931137632,
       "commit": "5e89d21bae44598186404d8de43eba05d04cdc2b",
       "result": "passed"
+    },
+    "coldStart": {
+      "result": "passed",
+      "sourceCommit": "59c07624a491318210c7188a2baf234950d56241",
+      "inputDataFiles": 2,
+      "sourceBooksPresent": false,
+      "archiveLoaded": false,
+      "nextNewComparison": "N-VI-10",
+      "compared": 93,
+      "incorporated": 93,
+      "remaining": 43
     }
   },
   "readerValidation": {
@@ -62,14 +73,43 @@
     }
   ],
   "readerRepair": {
-    "status": "saved-awaiting-browser-validation",
-    "description": "Use one header/toolbar scroll offset so Focus and Next retain the exact subsection.",
+    "status": "paragraph-restoration-saved-awaiting-browser-validation",
+    "description": "Restore the explicitly copied paragraph after modal close; apply header scroll clearance once.",
     "requiredTransition": "M-C-44 continuous > M-C-44 focus > M-C-45 Next > M-C-45 continuous",
-    "lastFailureRun": 42930385674,
-    "paths": [
-      "texts/al-tabatabai/assets/hikma-reader.css",
-      "texts/al-tabatabai/assets/hikma-study-tools.css",
+    "lastFailureRun": 42931500565,
+    "newPaths": [
+      ".github/workflows/hikma-reader-qa.yml",
+      "texts/al-tabatabai/assets/hikma-study-tools.js",
       "texts/al-tabatabai/tools/qa-study-tools.cjs"
     ]
-  }
+  },
+  "defaultEntryCommit": "ed053637c45a87698baaa77434713c9fa0d6a118",
+  "historicalRedirectCommits": {
+    "nihayat4-recovery-20261110": "260294cee1d75ab2947822b02a3ca6ed6c60a0db",
+    "nihayat4-stage10-20261111": "08c0e097086a19dab723af1b4aaaa82f166b6c92"
+  },
+  "supersededPullRequest": {
+    "number": 289,
+    "state": "closed",
+    "historicalBranchPreserved": true
+  },
+  "readerValidationAttempts": [
+    {
+      "run": 42930385674,
+      "sourceCommit": "ff64b89d059ae43036014bafba00a31f5b085302",
+      "status": "failed",
+      "legacyChecksPassed": 51,
+      "studyChecksPassedBeforeFailure": 7,
+      "failure": "Study Next navigation stayed at M-C-44 instead of M-C-45; source repair being reviewed separately."
+    },
+    {
+      "run": 42931500565,
+      "sourceCommit": "59c07624a491318210c7188a2baf234950d56241",
+      "status": "failed",
+      "legacyChecksPassed": 51,
+      "studyChecksPassedBeforeFailure": 7,
+      "failure": "Copy dialog did not restore its explicitly chosen paragraph to the current reading line."
+    }
+  ],
+  "validationOrder": "Run the currently failing study suite first, followed by all 51 legacy checks; both suites remain required."
 }

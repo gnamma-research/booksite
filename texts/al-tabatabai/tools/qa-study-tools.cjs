@@ -88,7 +88,20 @@ async function main(type){const browser=await type.launch({headless:true});try{
    await close(page,'#study-copy-dialog');
  });
  await check(type.name()+' focus and continuous retain the selected location',async()=>{
-   await page.waitForFunction(()=>window.HikmaReader.currentUnit()?.id==='M-C-44');
+   try {
+     await page.waitForFunction(()=>window.HikmaReader.currentUnit()?.id==='M-C-44');
+   } catch (error) {
+     console.log('Reading location diagnostic '+JSON.stringify(await page.evaluate(()=>({
+       current:window.HikmaReader.currentUnit()?.id,hash:location.hash,scrollY,
+       view:document.getElementById('reading-view').value,
+       toolbarBottom:document.getElementById('reading-toolbar').getBoundingClientRect().bottom,
+       scrollPadding:getComputedStyle(document.documentElement).scrollPaddingTop,
+       focused:document.activeElement?.outerHTML.slice(0,250),
+       passages:['M-C-43','M-C-44','M-C-45'].map(id=>{const p=document.getElementById('passage-'+id),r=p?.getBoundingClientRect();return {id,top:r?.top,bottom:r?.bottom,margin:p&&getComputedStyle(p).scrollMarginTop};})
+     }))));
+     await page.screenshot({path:path.join(out,type.name()+'-reading-location-failure.png'),fullPage:false});
+     throw error;
+   }
    await page.locator('#reading-view').selectOption('quiet');assert.equal(await page.locator('.chapter-section').count(),1);assert.ok(!(await page.locator('#contents-panel').isVisible()));
    assert.match(page.url(),/passage-M-C-44$/,'Entering Focus must preserve the paragraph action’s reading section');
    await page.locator('#study-next').click();

@@ -11,7 +11,7 @@
     {
       "path": ".github/workflows/hikma-reader-qa.yml",
       "bytes": 2402,
-      "sha256": "a010219ebbab5c750d999d041f26b0292128068e117f08cec770526e51e485a3"
+      "sha256": "33c184a85d0ac8dc2cf6b7f6247d8188ae35c64d7ea9ce11cb33241413fa8f9d"
     },
     {
       "path": ".github/workflows/nihayat-continuation-qa.yml",
@@ -75,8 +75,8 @@
     },
     {
       "path": "texts/al-tabatabai/assets/hikma-study-tools.js",
-      "bytes": 38517,
-      "sha256": "19ade0bec6cc57955f9c6fa161f8e83198d7dee1a024a625cdacdfc7682174aa"
+      "bytes": 38867,
+      "sha256": "1a21801d44e7c1fdf939531c5e3cc7964e2b423dac805a7868022373e1b13b5d"
     },
     {
       "path": "texts/al-tabatabai/audits/bidaya-325page-source-parity-2026-11-07.json",
@@ -1155,8 +1155,8 @@
     },
     {
       "path": "texts/al-tabatabai/tools/qa-study-tools.cjs",
-      "bytes": 15529,
-      "sha256": "438b59600ca0a46da043d2ff88991d37def476bc2f7fa52dcd9d36e7b17926b1"
+      "bytes": 16395,
+      "sha256": "233854a9a2af0ce83c7fe7dc6cc2948f9ad86f3b94fe32edbd1725d899e477c5"
     },
     {
       "path": "texts/al-tabatabai/tools/resume-current.py",
@@ -1186,5 +1186,5 @@
   ],
   "parentManifest": "audits/nihayat-stage10-checkpoint-manifest.json",
   "preservedSourceCommit": "1a967009e52f36923362b3a96e67574491314942",
-  "readerRepair": "Remove duplicated header clearance when resolving the current section after scrollIntoView."
+  "readerRepair": "Restore the explicitly copied paragraph after modal close; apply header scroll clearance once."
 }

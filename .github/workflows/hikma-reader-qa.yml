@@ -53,8 +53,8 @@ jobs:
             if curl -fsS http://127.0.0.1:8767/texts/al-tabatabai/ >/dev/null; then break; fi
             sleep 0.25
           done
-          HIKMA_QA_OUTPUT=hikma-qa-artifacts node texts/al-tabatabai/tools/qa-browser.cjs
           HIKMA_QA_OUTPUT=hikma-qa-artifacts node texts/al-tabatabai/tools/qa-study-tools.cjs
+          HIKMA_QA_OUTPUT=hikma-qa-artifacts node texts/al-tabatabai/tools/qa-browser.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:

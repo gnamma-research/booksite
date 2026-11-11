@@ -250,6 +250,10 @@
     for(const [id,title,checked] of [['study-copy-citation','Include citation',true],['study-copy-notes','Include my personal note',false]]){const input=make('input');input.type='checkbox';input.id=id;input.checked=checked;input.addEventListener('change',renderCopy);controls.append(field(title,input));}
     const preview=make('textarea');preview.id='study-copy-preview';preview.readOnly=true;preview.rows=8;preview.setAttribute('aria-label','Copy preview');
     const actions=make('div','study-actions');actions.append(button('Copy text',()=>copyText(preview.value)),button('Copy stable link',()=>copyText(canonical($('study-copy-scope').value==='paragraph'?copyTarget.paragraph:copyTarget.unit))));d.append(where,controls,preview,actions);
+    // An explicitly chosen paragraph can sit below the reader's tracking line.
+    // Restore that anchor after focus returns from the modal, so subsequent
+    // Focus/Next actions operate on the copied section rather than its predecessor.
+    d.addEventListener('close',()=>{if(copyTarget?.paragraph)api.navigateId(copyTarget.paragraph,false);});
   }
   function showCopy(target,opener){copyTarget={...target,selection:window.getSelection()?.toString().trim()||''};$('study-copy-scope').value=target.paragraph?'paragraph':'section';$('study-copy-scope').querySelector('[value="paragraph"]').disabled=!target.paragraph;$('study-copy-scope').querySelector('[value="selection"]').disabled=!copyTarget.selection;$('study-copy-language').value=target.paragraph?.includes('-ar-')?'arabic':target.paragraph?'english':api.state.preferences.language;renderCopy();open($('study-copy-dialog'),opener);}
   function plainParagraph(id){const p=$(id);if(!p)return '';const c=p.cloneNode(true);c.querySelectorAll('button,.footnote-references').forEach(n=>n.remove());return c.textContent.trim();}
