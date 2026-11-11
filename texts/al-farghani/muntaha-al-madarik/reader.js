@@ -58,7 +58,7 @@
     $("notes-button").setAttribute("aria-pressed", String(preferences.notes));
     $("compare-button").setAttribute("aria-pressed", String(preferences.compare));
     $("continuous-button").setAttribute("aria-pressed", String(preferences.continuous));
-    $("continuous-button").textContent=preferences.continuous ? "One extract" : "Continuous";
+    $("continuous-button").textContent=preferences.continuous ? "One extract" : "All 32 extracts";
     $("focus-button").textContent=["Focus: normal","Focus: reading","Focus: deep"][preferences.focus];
   }
   function makeUnit(u) {
@@ -121,7 +121,7 @@
     $("prev-label").textContent=current>0?units[current-1].id:"—";
     $("next-label").textContent=current<units.length-1?units[current+1].id:"—";
     $("bookmark-button").textContent=bookmarks.includes(u.id)?"★ Saved":"☆ Save";
-    $("reading-status").textContent=(current+1)+"/"+units.length+" selections · not complete";
+    $("reading-status").textContent=(current+1)+"/"+units.length+" curated bilingual extracts";
     persist();
   }
   function showToast(message) {
