@@ -58,7 +58,7 @@ def main(root):
     page=re.sub(r'<img src="../../../assets/gnamma-mark.svg"[^>]*>','',page)
     page=re.sub(r'<script src="[^"]+"></script>','',page)
     base='https://gnamma-research.github.io/booksite/texts/al-turka/qawaid-al-tawhid/'
-    page=page.replace('href="./"','href="'+base+'"').replace('href="editorial/','href="'+base+'editorial/')
+    page=page.replace('href="clause-review.html"','href="'+base+'clause-review.html"').replace('href="./"','href="'+base+'"').replace('href="editorial/','href="'+base+'editorial/')
     logic=read('commentary-reader.js').replace('href="editorial/','href="'+base+'editorial/').replace('href="./#','href="'+base+'#')
     serial=json.dumps(corpus,ensure_ascii=False).replace('<','\\u003c')
     page=page.replace('</body>','<script>window.GNAMMA_TAMHID_CORPUS = '+serial+';</script>\n<script>'+logic.replace('</script','<\\/script')+'</script>\n</body>')

@@ -167,7 +167,7 @@ def build(edition,filename,title,group,lang,notesMode,appendix):
     intro='<section class="toc"><h1>Contents</h1><a href="#intro">Commentator’s introduction</a><a href="#text">Original text and commentary</a>'
     if appendix: intro+='<a href="#gloss">Technical dictionary</a><a href="#subjects">Subject index</a>'
     if appendix=='full':intro+='<a href="#sources">Cited sources and quotations</a>'
-    intro+='</section>'
+    intro+='<p class="muted">Source-based working translation. Electronic Arabic–English comparison completed 11 November 2026; not an independently human-certified or manuscript-collated edition. The reported ancestral loss at QT-059 remains unreconstructed. Unresolved readings are recorded in the Study and Reference editions and the online comparison ledger.</p></section>'
     pieces=[cover,intro,'<section id="intro" class="section"><h1 class="section-title">Introduction to the commentary</h1><p class="muted">Ṣāʾin al-Dīn Ibn Turka</p>']
     for u in INTRO:
         pieces.append('<div class="unit" id="'+K(u['id'])+'"><h2>'+K(u.get('section'))+'</h2>'+pair(u['arabic'],u['english'],lang)+notes(u,notesMode)+'</div>')
@@ -203,6 +203,6 @@ for q in jobs:
     print('BUILD',q[1],flush=True)
     result.append(build(*q))
     print('DONE',q[1],result[-1]['pages'],flush=True)
-manifest=dict(revision='2026-11-04',source='Gnamma translated Arabic/English matn and Tamhīd commentary, original edition N and Āshtiyānī edition A',format='A4, searchable Unicode text, source-based content',files=result,arabicVowelled=False,notOffered='A fully vowelled Arabic edition is not made from an unvowelled transcription.')
+manifest=dict(revision='2026-11-11-qawtaw5',source='Gnamma translated Arabic/English matn and Tamhīd commentary, original edition N and Āshtiyānī edition A',format='A4, searchable Unicode text, source-based content',files=result,arabicVowelled=False,notOffered='A fully vowelled Arabic edition is not made from an unvowelled transcription.')
 (PDF/'manifest.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n',encoding='utf8')
 print('MANIFEST',len(result),'editions')

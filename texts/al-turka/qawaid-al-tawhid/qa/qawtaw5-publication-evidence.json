@@ -1,0 +1,146 @@
+{
+  "date": "2026-11-11",
+  "inputCommit": "3c4a9115268673f4a2290a7adff55f9bfd07b4f6",
+  "workflowRun": "42941606054",
+  "comparison": {
+    "schema": "gnamma-clause-inventory-v2",
+    "date": "2026-11-11",
+    "totalBilingualUnits": 171,
+    "originalMatnUnits": 61,
+    "commentaryUnits": 110,
+    "totalArabicPunctuationClauses": 5520,
+    "totalEnglishSentenceCandidates": 2853,
+    "individuallyComparedArabicPunctuationClauses": 5520,
+    "individuallyComparedUnits": 171,
+    "NOTIndividuallyComparedArabicClauses": 0,
+    "statuses": {
+      "checked-with-note": 513,
+      "checked": 4637,
+      "unresolved-reading": 213,
+      "corrected": 110,
+      "corrected-with-note": 42,
+      "corrected-with-source-crux": 5
+    },
+    "groupStatuses": {
+      "checked-with-note": 103,
+      "checked": 1222,
+      "unresolved-reading": 55,
+      "corrected": 34,
+      "corrected-with-note": 12,
+      "corrected-with-source-crux": 2
+    },
+    "unresolvedOrSourceCruxGroups": 57,
+    "independentManuscriptsCollated": 0,
+    "independentHumanCertification": false,
+    "editorialLimit": "Complete comparison coverage is not certainty of every reading. Punctuation segments may be fragments. Retained electronic Arabic only; QT-059 lacuna deferred. No new manuscript or source-image collation."
+  },
+  "releaseTests": {
+    "passed": true,
+    "date": "2026-11-11",
+    "units": 171,
+    "arabicSegments": 5520,
+    "addedComparedUnits": 85,
+    "addedComparedArabicSegments": 3759,
+    "wordingChanges": 36,
+    "arabicUnchanged": true,
+    "matnFilesUnchanged": true,
+    "compiledMarkdownStandaloneParity": true,
+    "independentManuscriptsCollated": 0,
+    "independentHumanCertification": false
+  },
+  "reviewBrowser": {
+    "passed": true,
+    "browser": "Chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "allSegments": 5520,
+    "units": 171,
+    "pending": 0,
+    "unresolvedFilter": true,
+    "sourcePolarityAndUnityCorrections": true,
+    "realIOSSafariTested": false
+  },
+  "pdfs": [
+    {
+      "filename": "qawaid-bilingual-reading.pdf",
+      "title": "Bilingual Reading",
+      "group": "reading",
+      "language": "both",
+      "pages": 298,
+      "size_bytes": 919403,
+      "sha256": "52cf5efeab8b1198aa6a09314cc889016bc8c4dabd06ae3492bb4d905bd0ab79",
+      "description": "Original and commentary, without explanatory notes",
+      "content": {
+        "matn": 61,
+        "commentary": 110
+      },
+      "default": false
+    },
+    {
+      "filename": "qawaid-english-reading.pdf",
+      "title": "English Reading",
+      "group": "reading",
+      "language": "english",
+      "pages": 138,
+      "size_bytes": 433850,
+      "sha256": "aa4a70d424551378ebb2afacf6aea063de637887d9466d542111c1b8d9290350",
+      "description": "Original and commentary, without explanatory notes",
+      "content": {
+        "matn": 61,
+        "commentary": 110
+      },
+      "default": false
+    },
+    {
+      "filename": "qawaid-arabic-reading.pdf",
+      "title": "Arabic Reading",
+      "group": "reading",
+      "language": "arabic",
+      "pages": 173,
+      "size_bytes": 522105,
+      "sha256": "3d3e00f4cd0774aae5a4de6e87165e6577fc07b6060369a8288b53b5b92d85c8",
+      "description": "Original and commentary, without explanatory notes",
+      "content": {
+        "matn": 61,
+        "commentary": 110
+      },
+      "default": false
+    },
+    {
+      "filename": "qawaid-bilingual-study.pdf",
+      "title": "Bilingual Study",
+      "group": "study",
+      "language": "both",
+      "pages": 322,
+      "size_bytes": 1022624,
+      "sha256": "064daa46ca63d714fe8008cad19ea5149654f871ae46b793744f33817abd379f",
+      "description": "With selected notes and subject guide",
+      "content": {
+        "matn": 61,
+        "commentary": 110
+      },
+      "default": false
+    },
+    {
+      "filename": "qawaid-bilingual-reference.pdf",
+      "title": "Bilingual Reference",
+      "group": "reference",
+      "language": "both",
+      "pages": 362,
+      "size_bytes": 1189396,
+      "sha256": "ba30569676d3270951bf285651e21545e0b49ee46960e143688b44b17a0e49c6",
+      "description": "Complete source notes, glossary, index and references",
+      "content": {
+        "matn": 61,
+        "commentary": 110
+      },
+      "default": true
+    }
+  ],
+  "pdfCorrectedEnglishChecked": true,
+  "selectedPagesRendered": true,
+  "realDeviceIOSSafariTested": false,
+  "liveDeploymentVerified": false
+}

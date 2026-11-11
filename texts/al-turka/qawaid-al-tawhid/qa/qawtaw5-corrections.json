@@ -1,0 +1,254 @@
+[
+  {
+    "id": "SH-INTRO-006",
+    "sourceLocator": "N, printed pp. 22–23",
+    "old": "among the chosen prophets and friends of God: Agathodaimon",
+    "new": "among the chosen prophets and friends of God, peace be upon them: Agathodaimon",
+    "reason": "Restore explicit عليهم السلام."
+  },
+  {
+    "id": "SH-INTRO-006",
+    "sourceLocator": "N, printed pp. 22–23",
+    "old": "to argument alone and unassisted inquiry.",
+    "new": "to argument alone and purely discursive inquiry.",
+    "reason": "Translate البحث البحت without introducing the stronger idea of receiving no divine assistance."
+  },
+  {
+    "id": "SH-INTRO-009",
+    "sourceLocator": "N, printed pp. 24–25",
+    "old": "rather than from itself.",
+    "new": "rather than from itself, so that the demonstration would fail.",
+    "reason": "Restore the second objection’s concluding claim فلا يتم إذا البيان."
+  },
+  {
+    "id": "SH-INTRO-029",
+    "sourceLocator": "N, printed pp. 37–38",
+    "old": "the keys of that assent and trust",
+    "new": "the keys of that assent and faith",
+    "reason": "Preserve explicit الإذعان والإيمان in the petition."
+  },
+  {
+    "id": "SH-INTRO-030",
+    "sourceLocator": "N, printed pp. 38",
+    "old": "the Shaykh's discussion in his work",
+    "new": "the discussion of the Shaykh, may God have mercy on him, in his work",
+    "reason": "Restore رحمه الله from introductory attribution."
+  },
+  {
+    "id": "SH-INTRO-031",
+    "sourceLocator": "N, printed pp. 38–39",
+    "old": "the relational meaning described by the Shaykh.",
+    "new": "the relational meaning described by the Shaykh, may God have mercy on him.",
+    "reason": "Restore explicit رحمه الله."
+  },
+  {
+    "id": "SH-002",
+    "sourceLocator": "A, printed pp. 49–52",
+    "old": "The intended explanation is that certainty [in this doctrine of unity] would amount to certainty in the invalidity of all classes of certain cognition:",
+    "new": "The explanation given is that certainty that the doctrine of unity is invalid [sic] amounts to certainty in the invalidity of all classes of certain cognition:",
+    "reason": "Preserve the explicit negative ببطلان instead of silently substituting certainty in unity."
+  },
+  {
+    "id": "SH-009",
+    "sourceLocator": "A, printed pp. 68–71",
+    "old": "can be identical with the subject that precedes and constitutes it.",
+    "new": "can be identical with its prior subject and also constitute that subject.",
+    "reason": "Correct reversed constitutive relation in نفس معروضه السابق عليه ومقوما له."
+  },
+  {
+    "id": "SH-009",
+    "sourceLocator": "A, printed pp. 68–71",
+    "old": "They all participate in the occurrence of a fixed nature, which functions like the subject of changing, non-enduring attributes.",
+    "new": "They all share in occurring to that fixed nature, which functions like a substrate for what are, as it were, its changing, non-enduring attributes.",
+    "reason": "Preserve direction of حصولها لتلك الطبيعة and the nature-as-substrate analogy."
+  },
+  {
+    "id": "SH-010",
+    "sourceLocator": "A, printed pp. 71–72",
+    "old": "Consider walking in relation to its shares in humans, horses, and other things.",
+    "new": "Consider the predicate ‘walker’ in relation to its instances in humans, horses, and other things.",
+    "reason": "Keep الماشي as a derivative predicate applied to subjects, rather than converting it into the act of walking."
+  },
+  {
+    "id": "SH-013",
+    "sourceLocator": "A, printed pp. 78–81",
+    "old": "since otherwise the intrinsically Necessary would not be necessary in every respect.",
+    "new": "since otherwise the intrinsically Necessary would not be one in every respect.",
+    "reason": "Translate واحدا, not واجبا; argument here concerns unity/simplicity, not merely modal necessity."
+  },
+  {
+    "id": "SH-016",
+    "sourceLocator": "A, printed pp. 87–89",
+    "old": "We reply that the author has established in his philosophical books",
+    "new": "We reply that the author, may his secret be sanctified, has established in his philosophical books",
+    "reason": "Represent the conventional invocation abbreviated قده in the retained text."
+  },
+  {
+    "id": "SH-033",
+    "sourceLocator": "A, printed pp. 144–148",
+    "old": "The author therefore refers their discussion to those disciplines.",
+    "new": "The author, may God have mercy on him, therefore refers their discussion to those disciplines.",
+    "reason": "Restore رحمه الله at the explicit authorial attribution."
+  },
+  {
+    "id": "SH-036",
+    "sourceLocator": "A, printed pp. 161–163",
+    "old": "The author therefore refers the detailed investigation to the philosophical work designated here as the elevated wisdom [the wording is textually uncertain].",
+    "new": "The author therefore refers the detailed investigation to al-Ḥikma al-Manīʿa [the displayed title, whose textual form remains uncertain].",
+    "reason": "Preserve الحكمة المنيعة as a displayed work-title, without claiming independent bibliographic or manuscript identification."
+  },
+  {
+    "id": "SH-039",
+    "sourceLocator": "A, printed pp. 173–177",
+    "old": "Unity is consequently concealed through differentiation and external articulation, which display the particular perfections belonging to their particulars.",
+    "new": "Unity is consequently concealed, as the essence requires intellectual differentiation and external articulation, to display the particular perfections belonging to their particulars.",
+    "reason": "Retain العقلي and بحسب اقتضاء الذات; not undifferentiated generic differentiation."
+  },
+  {
+    "id": "SH-039",
+    "sourceLocator": "A, printed pp. 173–177",
+    "old": "The Shaykh expressly states this in his treatise The Construction of Circles.",
+    "new": "The Shaykh, may his secret be sanctified, expressly states this in his treatise The Construction of Circles.",
+    "reason": "Restore قدس سره."
+  },
+  {
+    "id": "SH-039",
+    "sourceLocator": "A, printed pp. 173–177",
+    "old": "Yet how base and sullied it can also be in existence, for from it have come Muḥammad, Abū Jahl, Pharaoh, and Moses.",
+    "new": "Yet how base and sullied it can also be in existence, for from it have come Muḥammad, may God bless him and his family, as well as Abū Jahl, Pharaoh, and Moses, peace be upon him.",
+    "reason": "Restore صلى الله عليه وآله and عليه السلام in the cited passage."
+  },
+  {
+    "id": "SH-039-B",
+    "sourceLocator": "A, printed pp. 178–180",
+    "old": "The names have their appointed domains: attaining the higher prepares for attaining the lower.",
+    "new": "The names have a tawqīfī, authoritatively fixed character: attaining the higher prepares for attaining the lower.",
+    "reason": "Preserve الأسماء توقيفية as an explicit technical claim, with its contextual consequence."
+  },
+  {
+    "id": "SH-040",
+    "sourceLocator": "A, printed pp. 180–184",
+    "old": "Know, then, that the divine relation, in accordance with essential unity, requires the movement bringing things into existence to be circular and returning, as will be explained.",
+    "new": "Know, then, that the divine relation, in accordance with essential unity, requires the movement bringing things into existence to be circular and returning, as will be explained, God Most High willing.",
+    "reason": "Restore إن شاء الله تعالى."
+  },
+  {
+    "id": "SH-041",
+    "sourceLocator": "A, printed pp. 186–189",
+    "old": "I say: this refers to what Shaykh Muḥyī al-Dīn says in the Bezels of Wisdom, intimating an answer to the preceding difficulty.",
+    "new": "I say: this refers to what Shaykh Muḥyī al-Dīn, may his secret be sanctified, says in the Bezels of Wisdom, intimating an answer to the preceding difficulty.",
+    "reason": "Restore قدس سره."
+  },
+  {
+    "id": "SH-041",
+    "sourceLocator": "A, printed pp. 186–189",
+    "old": "the form's particular character follows upon the recipient's reception of that influence.",
+    "new": "the form’s particular features result from an influence generated by that recipient.",
+    "reason": "Restore the causal direction of تأثير متولد منه, rather than translating it as reception by the recipient."
+  },
+  {
+    "id": "SH-041",
+    "sourceLocator": "A, printed pp. 186–189",
+    "old": "Al-Ḥallāj expresses this in the words,",
+    "new": "Ḥusayn ibn Manṣūr al-Ḥallāj, chief of those who affirm divine unity, expresses this in the words,",
+    "reason": "Restore the displayed full name and رئيس الموحدين as the author’s epithet."
+  },
+  {
+    "id": "SH-041",
+    "sourceLocator": "A, printed pp. 186–189",
+    "old": "Admittedly, the name Necessary should not then be applied, since, as indicated, the names have their appointed domains.",
+    "new": "Admittedly, the name Necessary should not then be applied, since, as indicated, the names have a tawqīfī, authoritatively fixed character.",
+    "reason": "Preserve الأسماء توقيفية rather than only its interpretive paraphrase."
+  },
+  {
+    "id": "SH-041",
+    "sourceLocator": "A, printed pp. 186–189",
+    "old": "the unique Imam Abū Ḥāmid al-Ghazālī and others",
+    "new": "the unique Imam Abū Ḥāmid al-Ghazālī—may God be pleased with him—and others",
+    "reason": "Restore رضى الله عنه in the quotation."
+  },
+  {
+    "id": "SH-046",
+    "sourceLocator": "A, printed pp. 207–212",
+    "old": "Their absolute perfection would therefore be unattainable.",
+    "new": "Their absolute perfection would therefore be unattainable, and thus impossible.",
+    "reason": "Restore فيكون ممتنعاً after the distinct unattainability conclusion."
+  },
+  {
+    "id": "SH-051",
+    "sourceLocator": "A, printed pp. 234–237",
+    "old": "Each succeeding perfected person must encompass the predecessor's perfections together with the particular perfections proper to himself, until that kind of perfection is completed in the seal.",
+    "new": "Each succeeding perfected person must encompass the predecessor’s perfections together with the particular perfections proper to himself, until that kind of perfection is completed in the seal—upon him be the finest blessings and the fullest greetings.",
+    "reason": "Restore عليه من الصلوات أفضلها ومن التحيات أكملها."
+  },
+  {
+    "id": "SH-051",
+    "sourceLocator": "A, printed pp. 234–237",
+    "old": "This is supported by what is reported of the ancient Persian divinized sages: they agreed that, as the ranks of intellects descend, their illuminations multiply.",
+    "new": "This is supported by what is reported of the ancient Persian sages devoted to divine wisdom: they agreed that, as the ranks of intellects descend, their illuminations multiply.",
+    "reason": "Avoid falsely translating الحكماء المتألهة as sages who are deified."
+  },
+  {
+    "id": "SH-051",
+    "sourceLocator": "A, printed pp. 234–237",
+    "old": "This meaning is among those contained in the prophetic saying,",
+    "new": "This meaning is among those contained in the following saying of the Prophet—may God bless him and his family and grant him peace:",
+    "reason": "Restore صلى الله عليه وآله وسلم."
+  },
+  {
+    "id": "SH-053",
+    "sourceLocator": "A, printed pp. 244–247",
+    "old": "achieving an effect with assistance is easier than achieving it without assistance.",
+    "new": "achieving an effect with assistance is easier than achieving it without assistance—understand this.",
+    "reason": "Restore فاعلم ذلك without changing sentence segmentation."
+  },
+  {
+    "id": "SH-053",
+    "sourceLocator": "A, printed pp. 244–247",
+    "old": "The report that the Prophet's satan submitted through him points to this meaning.",
+    "new": "The report that the Prophet’s satan submitted through him—may God bless the Prophet and his family—points to this meaning.",
+    "reason": "Restore صلى الله عليه وآله; keep the statement as a reported interpretation."
+  },
+  {
+    "id": "SH-053",
+    "sourceLocator": "A, printed pp. 244–247",
+    "old": "The Shaykh has explained the correspondences adequately.",
+    "new": "The Shaykh, may his secret be sanctified, has explained the correspondences adequately.",
+    "reason": "Restore قدس سره."
+  },
+  {
+    "id": "SH-055",
+    "sourceLocator": "A, printed pp. 250–252",
+    "old": "The Real's replenishments and self-disclosures reach the world continuously at every breath.",
+    "new": "The Real’s replenishments and self-disclosures—glorified and exalted is He—reach the world continuously at every breath.",
+    "reason": "Restore سبحانه وتعالى."
+  },
+  {
+    "id": "SH-057",
+    "sourceLocator": "A, printed pp. 258–260",
+    "old": "The language of revelation expresses this in the report that the believer's heart is between two fingers of the All-Merciful: among bodily members none changes position more readily than the fingers.",
+    "new": "The language of revelation expresses this in the Prophet’s saying—may God bless him and his family—that the believer’s heart is between two fingers of the All-Merciful: among bodily members none changes position more readily than the fingers.",
+    "reason": "Restore صلى الله عليه وآله and explicit prophetic attribution without authenticating the report anew."
+  },
+  {
+    "id": "SH-057",
+    "sourceLocator": "A, printed pp. 258–260",
+    "old": "It is reported that al-Ḥusayn ibn Manṣūr asked a practitioner about his state and station.",
+    "new": "It is reported that al-Ḥusayn ibn Manṣūr, may his secret be sanctified, asked a practitioner about his state and station.",
+    "reason": "Restore قدس سره."
+  },
+  {
+    "id": "SH-058",
+    "sourceLocator": "A, printed pp. 260–262",
+    "old": "Some occupy it with firm recitations and forceful utterance;",
+    "new": "Some occupy it with firm recitations, forceful utterance, and sound foundations.",
+    "reason": "Restore the otherwise omitted الأصول القويمة without speculative technical reconstruction."
+  },
+  {
+    "id": "SH-060",
+    "sourceLocator": "A, printed pp. 267–269",
+    "old": "The other removes those bodily powers from their governing positions, stills them, and restrains their distracting movements after subduing and weakening their influence through purification.",
+    "new": "The other removes those bodily powers from their governing positions, stills them, and restrains their distracting movements after subduing their auxiliaries and weakening them through purification.",
+    "reason": "Restore explicit أعوانها and preserve the source’s pronoun reference rather than replace it with generic influence."
+  }
+]

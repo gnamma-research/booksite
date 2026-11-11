@@ -7,7 +7,7 @@
   "introductoryUnits": 40,
   "mainUnits": 64,
   "concludingUnits": 6,
-  "englishWords": 48772,
+  "englishWords": 48921,
   "allArabicEnglishExportSectionsPresent": true,
   "recordedMainSourceHashesReproduced": 64,
   "sourceHashChecks": [
@@ -272,8 +272,8 @@
   "protectedTextsUnchanged": {
     "data/units.js": "f41af2df56902f7b3f04535c3927f075c2f8dfb436cb92e4b11801cc1d3dfe77",
     "data/parallel-matn.md": "295a13e18027ea10ff11fd94c47c8c012648a25e4ad843ae7d76e5427cb2e659",
-    "data/commentary-main-001-019.js": "904e2b4662bc330868d550dc357678ce753189902039b1eb96f704565a2f47f4",
-    "data/commentary-main-020-060.js": "0a223fbe6bea2060783713fe667532a6ab87d2a85f5b6c4f06d9313806f4c1e9"
+    "data/commentary-main-001-019.js": "0108a050d25a4f43d35395f1cd48ef25a2a9e9e5f6c6079ec81dba29878cd077",
+    "data/commentary-main-020-060.js": "c70b3c61e660be426b1474584f14a2555fbf15188f89c32e45134629c57844d0"
   },
   "qt059OriginalLacuna": "noted and deferred, no reconstruction",
   "freshSourceWebsiteAccess": "not part of this audit; retained electronic sources used",
@@ -284,5 +284,5 @@
   "readabilityCorrection": "SH-061-A: closures -> locks for أقفاله; Arabic unchanged; variant note preserved",
   "stalePilotQueueRemoved": true,
   "singleFileReaderGenerated": true,
-  "singleFileSha256": "02863f7a797b6b645b909bdbbb3108a6a8bb614354edc0172cbcd1b54c2aeab8"
+  "singleFileSha256": "61693c6b563542f70a2eb0e9f4f6c0144438c5b71f18b5ff49a3f23efa394d19"
 }

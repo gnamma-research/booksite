@@ -1,5 +1,5 @@
 {
-  "revision": "2026-11-04",
+  "revision": "2026-11-11-qawtaw5",
   "source": "Gnamma translated Arabic/English matn and Tamhīd commentary, original edition N and Āshtiyānī edition A",
   "format": "A4, searchable Unicode text, source-based content",
   "files": [
@@ -9,8 +9,8 @@
       "group": "reading",
       "language": "both",
       "pages": 298,
-      "size_bytes": 918415,
-      "sha256": "5f8006fc313fbbd09399b58c705778d308d503d9583d5e7670a9f2ba972cce2d",
+      "size_bytes": 919403,
+      "sha256": "52cf5efeab8b1198aa6a09314cc889016bc8c4dabd06ae3492bb4d905bd0ab79",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -24,8 +24,8 @@
       "group": "reading",
       "language": "english",
       "pages": 138,
-      "size_bytes": 432899,
-      "sha256": "3390602ce5ff62226b1ce078275fa1bc2ac94fe4c55e0416706b6e647586cec8",
+      "size_bytes": 433850,
+      "sha256": "aa4a70d424551378ebb2afacf6aea063de637887d9466d542111c1b8d9290350",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -39,8 +39,8 @@
       "group": "reading",
       "language": "arabic",
       "pages": 173,
-      "size_bytes": 521662,
-      "sha256": "9e8e8c1a91e888d97d561245bbcdbf214732c06e88c66841e8b6578728ec449b",
+      "size_bytes": 522105,
+      "sha256": "3d3e00f4cd0774aae5a4de6e87165e6577fc07b6060369a8288b53b5b92d85c8",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -54,8 +54,8 @@
       "group": "study",
       "language": "both",
       "pages": 322,
-      "size_bytes": 1021488,
-      "sha256": "4f04aa23600e37440ad65e34dac6c636e87e2e8494048006903a3e9169d61282",
+      "size_bytes": 1022624,
+      "sha256": "064daa46ca63d714fe8008cad19ea5149654f871ae46b793744f33817abd379f",
       "description": "With selected notes and subject guide",
       "content": {
         "matn": 61,
@@ -68,9 +68,9 @@
       "title": "Bilingual Reference",
       "group": "reference",
       "language": "both",
-      "pages": 361,
-      "size_bytes": 1178564,
-      "sha256": "90d2aa07433b3919f766a86551017fd9c8e96d098b2cafcae3eb5637f15e8694",
+      "pages": 362,
+      "size_bytes": 1189396,
+      "sha256": "ba30569676d3270951bf285651e21545e0b49ee46960e143688b44b17a0e49c6",
       "description": "Complete source notes, glossary, index and references",
       "content": {
         "matn": 61,
