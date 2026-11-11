@@ -138,12 +138,15 @@ async function main(type){const browser=await type.launch({headless:true});try{
    await page.goto(base+'#passage-M-V-28');await ready(page);
    await page.locator('#reading-view').selectOption('quiet');
    assert.match(page.url(),/M-V-28/,'Changing the view must retain the selected subsection within its chapter');
+   const printPosition=()=>page.evaluate(()=>({unit:window.HikmaReader.currentUnit()?.id,hash:location.hash,view:window.HikmaReader.state.preferences.view,scrollY,toolbar:document.querySelector('#reading-toolbar').getBoundingClientRect().bottom,printMedia:matchMedia('print').matches,selected:document.querySelector('#pdf-from').value,passages:[...document.querySelectorAll('.passage')].map(n=>({id:n.dataset.unit,top:n.getBoundingClientRect().top,height:n.getBoundingClientRect().height}))}));
+   const printPositions={beforeOptions:await printPosition()};
    await page.evaluate(()=>{
      window.print=()=>{};
      const unit=window.HikmaReader.state.byUnit.get('M-V-28');
      unit.notes=[...(unit.notes||[]),{type:'Browser test fixture',arabic:'حاشية عربية للاختبار',text:'Authorial-note translation for browser testing.'}];
    });
    const before=page.url();await page.locator('#pdf-print').click();
+   printPositions.optionsOpened=await printPosition();
    await page.locator('#pdf-scope').selectOption('range');await page.locator('#pdf-from').selectOption('M-V-27');await page.locator('#pdf-to').selectOption('M-V-29');
    await page.locator('input[name="pdf-mode"][value="reading"]').check();
    await page.locator('#pdf-language').selectOption('arabic');await page.locator('#pdf-confirm').click();
@@ -156,7 +159,8 @@ async function main(type){const browser=await type.launch({headless:true});try{
    assert.ok(!(await authorialNote.locator('.footnote-english').isVisible()));
    await page.evaluate(()=>window.dispatchEvent(new Event('afterprint')));
    await page.emulateMedia({media:null});
-   await page.waitForFunction(()=>window.HikmaReader.currentUnit()?.id==='M-V-28');
+   try { await page.waitForFunction(()=>window.HikmaReader.currentUnit()?.id==='M-V-28'); }
+   catch(error) { printPositions.afterPrint=await printPosition();console.error('PRINT_POSITION_DIAGNOSTIC '+JSON.stringify(printPositions));await page.screenshot({path:path.join(out,type.name()+'-print-return-failure.png'),fullPage:false});throw error; }
    assert.equal(await page.locator('#reading-view').inputValue(),'quiet');assert.equal(page.url(),before);
    assert.equal(await page.locator('[data-pdf-exclude]').count(),0);
  });
