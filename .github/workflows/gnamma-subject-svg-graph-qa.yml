@@ -1,4 +1,4 @@
-name: GNAMMA subject graph backward-compatibility: shared timeline and vertical synopsis
+name: 'GNAMMA subject graph backward-compatibility: shared timeline and vertical synopsis'
 on:
   push:
     branches: [fix/subject-first-interactive-book-graph-20261107]

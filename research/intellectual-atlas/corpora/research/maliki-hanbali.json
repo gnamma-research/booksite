@@ -1,0 +1,5199 @@
+{
+  "schema_version": 1,
+  "created": "2026-11-10",
+  "scope": "Distinct Mālikī and Ḥanbalī fiqh works; bibliographic identities and explicit textual relationships. Editions, partial-volume republications and usul works are not counted as additional fiqh books.",
+  "method": "Catalogue title pages checked against multiple scholarly reference articles, institutional bibliographies and national-library records. This is bibliographical verification, not textual collation. Arabic catalogue metadata has known errors; ambiguous dates were withheld and combined-volume author roles corrected.",
+  "works": [
+    {
+      "id": "mh_maliki_1168",
+      "title": "al-Aḥkām",
+      "title_ar": "الأحكام لعبد الملك بن حبيب",
+      "author": "ʿAbd al-Malik ibn Ḥabīb",
+      "author_ar": "عبد الملك بن حبيب",
+      "author_death_ah": 238,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_1168"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_14552",
+      "title": "Taḥrīr al-kalām fī masāʾil al-iltizām",
+      "title_ar": "تحرير الكلام في مسائل الإلتزام",
+      "author": "al-Ḥaṭṭāb al-Ruʿaynī",
+      "author_ar": "الحطاب",
+      "author_death_ah": 954,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_monograph",
+      "source_ids": [
+        "mh_cat_14552"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_14608",
+      "title": "ʿUyūn al-adilla fī masāʾil al-khilāf",
+      "title_ar": "عيون الأدلة في مسائل الخلاف بين فقهاء الأمصار",
+      "author": "Ibn al-Qaṣṣār",
+      "author_ar": "ابن القصار",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "comparative_fiqh",
+      "source_ids": [
+        "mh_cat_14608"
+      ],
+      "notes": "One work; the linked catalogue witness is the purification section, not an additional independent book.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_16968",
+      "title": "al-Mukhtaṣar al-fiqhī",
+      "title_ar": "المختصر الفقهي لابن عرفة",
+      "author": "Ibn ʿArafa",
+      "author_ar": "ابن عرفة",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_16968"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_21688",
+      "title": "Fatḥ al-ʿAlī al-Mālik",
+      "title_ar": "فتح العلي المالك في الفتوى على مذهب الإمام مالك",
+      "author": "Muḥammad ʿIllaysh",
+      "author_ar": "محمد بن أحمد عليش",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "fatwa_collection",
+      "source_ids": [
+        "mh_cat_21688"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_37064",
+      "title": "Khulāṣat al-jawāhir al-zakiyya",
+      "title_ar": "خلاصة الجواهر الزكية في فقه المالكية",
+      "author": "Aḥmad ibn Turkī",
+      "author_ar": "أحمد بن تركي المالكي",
+      "author_death_ah": 979,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "primer",
+      "source_ids": [
+        "mh_cat_37064"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_569",
+      "title": "Mawāhib al-jalīl",
+      "title_ar": "مواهب الجليل في شرح مختصر خليل",
+      "author": "al-Ḥaṭṭāb al-Ruʿaynī",
+      "author_ar": "الحطاب",
+      "author_death_ah": 954,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_569",
+        "mh_darifta_khalil"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_6193",
+      "title": "al-Qawānīn al-fiqhiyya",
+      "title_ar": "القوانين الفقهية",
+      "author": "Ibn Juzayy al-Kalbī",
+      "author_ar": "ابن جزي الكلبي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "comparative_fiqh",
+      "source_ids": [
+        "mh_cat_6193"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_14249",
+      "title": "al-Durr al-thamīn wa-l-mawrid al-muʿīn",
+      "title_ar": "الدر الثمين والمورد المعين",
+      "author": "Muḥammad Mayyāra",
+      "author_ar": "ميارة",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_14249",
+        "mh_tdv_ibnashir"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_14297",
+      "title": "Sharḥ Mukhtaṣar Khalīl",
+      "title_ar": "شرح الزرقاني على مختصر خليل",
+      "author": "ʿAbd al-Bāqī al-Zurqānī",
+      "author_ar": "الزرقاني، عبد الباقي",
+      "author_death_ah": 1099,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_14297",
+        "mh_darifta_khalil"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_14593",
+      "title": "Dīwān al-aḥkām al-kubrā",
+      "title_ar": "ديوان الأحكام الكبرى أو الإعلام بنوازل الأحكام وقطر من سير الحكام",
+      "author": "ʿĪsā ibn Sahl",
+      "author_ar": "القاضي أبو الأصبغ ابن سهل",
+      "author_death_ah": 486,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "judicial_cases",
+      "source_ids": [
+        "mh_cat_14593"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_18609",
+      "title": "Sharḥ al-Risāla",
+      "title_ar": "شرح الرسالة",
+      "author": "al-Qāḍī ʿAbd al-Wahhāb",
+      "author_ar": "القاضي عبد الوهاب",
+      "author_death_ah": 422,
+      "author_death_ce": 1031,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_18609",
+        "mh_tdv_risala",
+        "mh_awqaf_maliki"
+      ],
+      "notes": "Historical full Risāla commentary. The linked digital witness contains the creed portion; it is not evidence that the full commentary is digitized.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_96257",
+      "title": "al-Nawādir wa-l-ziyādāt",
+      "title_ar": "النوادر والزيادات على ما في المدونة من غيرها من الأمهات",
+      "author": "Ibn Abī Zayd al-Qayrawānī",
+      "author_ar": "ابن أبي زيد القيرواني",
+      "author_death_ah": 386,
+      "author_death_ce": 996,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_96257",
+        "mh_tdv_ibnabizayd"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_133369",
+      "title": "Tawḍīḥ al-aḥkām sharḥ Tuḥfat al-ḥukkām",
+      "title_ar": "توضيح الأحكام شرح تحفة الحكام",
+      "author": "ʿUthmān ibn al-Makkī al-Tūzarī",
+      "author_ar": "عثمان بن المكي التوزري",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_133369"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_147313",
+      "title": "Taḥbīr al-mukhtaṣar",
+      "title_ar": "تحبير المختصر وهو الشرح الوسط لبهرام على مختصر خليل",
+      "author": "Bahrām al-Damīrī",
+      "author_ar": "بهرام الدميري",
+      "author_death_ah": 805,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_147313",
+        "mh_darifta_khalil"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_149697",
+      "title": "Lawāmiʿ al-durar fī hatk astār al-Mukhtaṣar",
+      "title_ar": "لوامع الدرر في هتك استار المختصر",
+      "author": "Muḥammad ibn Muḥammad Sālim al-Majlisī",
+      "author_ar": "محمد بن محمد سالم المجلسي الشنقيطي",
+      "author_death_ah": 1302,
+      "author_death_ce": 1885,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_149697",
+        "mh_nli_lawami"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_150969",
+      "title": "Bulghat al-sālik li-Aqrab al-masālik",
+      "title_ar": "بلغة السالك لأقرب المسالك",
+      "author": "Aḥmad al-Ṣāwī",
+      "author_ar": "أحمد الصاوي",
+      "author_death_ah": 1241,
+      "author_death_ce": 1825,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "mh_cat_150969",
+        "mh_saghir_mcy",
+        "mh_sawi_primary"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_13234",
+      "title": "al-Shāmil fī fiqh al-Imām Mālik",
+      "title_ar": "الشامل في فقه الإمام مالك",
+      "author": "Bahrām al-Damīrī",
+      "author_ar": "بهرام الدميري",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_13234"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_14442",
+      "title": "al-Tawḍīḥ fī sharḥ Mukhtaṣar Ibn al-Ḥājib",
+      "title_ar": "التوضيح في شرح مختصر ابن الحاجب",
+      "author": "Khalīl ibn Isḥāq",
+      "author_ar": "خليل بن إسحاق الجندي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_14442",
+        "mh_darifta_khalil"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_14594",
+      "title": "ʿIqd al-jawāhir al-thamīna",
+      "title_ar": "عقد الجواهر الثمينة في مذهب عالم المدينة",
+      "author": "Ibn Shās",
+      "author_ar": "ابن شاس",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_14594"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_17682",
+      "title": "Ashal al-madārik",
+      "title_ar": "أسهل المدارك «شرح إرشاد السالك في مذهب إمام الأئمة مالك»",
+      "author": "Abū Bakr al-Kashnāwī",
+      "author_ar": "الكشناوي، أبو بكر",
+      "author_death_ah": 1397,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_17682"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_18146",
+      "title": "Rawḍat al-mustabīn fī sharḥ al-Talqīn",
+      "title_ar": "روضة المستبين في شرح كتاب التلقين",
+      "author": "Ibn Bazīza",
+      "author_ar": "ابن بزيزة",
+      "author_death_ah": 673,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_18146"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_95578",
+      "title": "Fatāwā Ibn Sirāj",
+      "title_ar": "فتاوى قاضي الجماعة ابن سراج الأندلسي",
+      "author": "Ibn Sirāj al-Andalusī",
+      "author_ar": "ابن سراج الأندلسي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "fatwa_collection",
+      "source_ids": [
+        "mh_cat_95578"
+      ],
+      "notes": "Ibn Sirāj requires further authority reconciliation; catalogue death date is withheld.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_96602",
+      "title": "Majālis Ibn al-Qāsim",
+      "title_ar": "مجالس ابن القاسم التي سأل عنها مالكا",
+      "author": "ʿAbd al-Raḥmān ibn al-Qāsim",
+      "author_ar": "ابن القاسم",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "question_collection",
+      "source_ids": [
+        "mh_cat_96602"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_121378",
+      "title": "al-Tanbīh ʿalā mabādiʾ al-tawjīh",
+      "title_ar": "التنبيه على مبادئ التوجيه",
+      "author": "Abū al-Ṭāhir Ibn Bashīr",
+      "author_ar": "أبو الطاهر ابن بشير",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_121378"
+      ],
+      "notes": "One work; the linked edition covers worship.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_91",
+      "title": "Sharḥ Mukhtaṣar Khalīl (al-Khurashī)",
+      "title_ar": "شرح الخرشي على مختصر خليل",
+      "author": "Muḥammad al-Khurashī",
+      "author_ar": "الخرشي = الخراشي",
+      "author_death_ah": 1102,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_91",
+        "mh_darifta_khalil"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_1267",
+      "title": "Mudawwanat Ashhab (surviving Ḥajj section)",
+      "title_ar": "مدونة أشهب — قسم الحج الباقي",
+      "author": "Ashhab ibn ʿAbd al-ʿAzīz",
+      "author_ar": "أشهب",
+      "author_death_ah": 204,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_1267"
+      ],
+      "notes": "One historical work represented by its surviving/published pilgrimage section; not counted again as a separate complete Mudawwana.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_9627",
+      "title": "al-Maʿūna ʿalā madhhab ʿālim al-Madīna",
+      "title_ar": "المعونة على مذهب عالم المدينة",
+      "author": "al-Qāḍī ʿAbd al-Wahhāb",
+      "author_ar": "القاضي عبد الوهاب",
+      "author_death_ah": 422,
+      "author_death_ce": 1031,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_9627",
+        "mh_tdv_risala",
+        "mh_awqaf_maliki"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_11355",
+      "title": "Mukhtaṣar Khalīl",
+      "title_ar": "مختصر خليل",
+      "author": "Khalīl ibn Isḥāq",
+      "author_ar": "خليل بن إسحاق الجندي",
+      "author_death_ah": 776,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "matn",
+      "source_ids": [
+        "mh_cat_11355",
+        "mh_darifta_khalil"
+      ],
+      "notes": "Khalīl’s death date is transmitted with variants; 776 AH is the cited catalogue/reference date, not a composition year.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_14467",
+      "title": "ʿUyūn al-masāʾil",
+      "title_ar": "عيون المسائل للقاضي عبد الوهاب المالكي",
+      "author": "al-Qāḍī ʿAbd al-Wahhāb",
+      "author_ar": "القاضي عبد الوهاب",
+      "author_death_ah": 422,
+      "author_death_ce": 1031,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_14467",
+        "mh_tdv_risala",
+        "mh_awqaf_maliki"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_14555",
+      "title": "Sharḥ al-Risāla (Ibn Nājī)",
+      "title_ar": "شرح ابن ناجي التنوخي على متن الرسالة",
+      "author": "Qāsim ibn ʿĪsā Ibn Nājī",
+      "author_ar": "ابن ناجي التنوخي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_14555"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_21611",
+      "title": "al-Tāj wa-l-iklīl",
+      "title_ar": "التاج والإكليل لمختصر خليل",
+      "author": "Muḥammad ibn Yūsuf al-Mawwāq",
+      "author_ar": "محمد بن يوسف المواق",
+      "author_death_ah": 897,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_21611",
+        "mh_darifta_khalil"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_21739",
+      "title": "Bidāyat al-mujtahid wa-nihāyat al-muqtaṣid",
+      "title_ar": "بداية المجتهد ونهاية المقتصد",
+      "author": "Ibn Rushd al-Ḥafīd",
+      "author_ar": "ابن رشد الحفيد",
+      "author_death_ah": 595,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "comparative_fiqh",
+      "source_ids": [
+        "mh_cat_21739"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_32195",
+      "title": "Ḍawʾ al-shumūʿ ʿalā sharḥ al-Majmūʿ",
+      "title_ar": "ضوء الشموع على شرح المجموع",
+      "author": "Muḥammad al-Amīr al-Sunbāwī",
+      "author_ar": "الأمير محمد السنباوي المالكي",
+      "author_death_ah": 1232,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "mh_cat_32195",
+        "mh_habashi_majmu"
+      ],
+      "notes": "Catalogue editions combine text, commentary and gloss. Al-Ḥabashī identifies Ḍawʾ al-shumūʿ as the author’s gloss on his own Sharḥ al-Majmūʿ; the three layers are retained as separate works.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_6196",
+      "title": "Jāmiʿ al-ummahāt",
+      "title_ar": "جامع الأمهات",
+      "author": "Ibn al-Ḥājib",
+      "author_ar": "ابن الحاجب",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "matn",
+      "source_ids": [
+        "mh_cat_6196",
+        "mh_awqaf_maliki"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_9548",
+      "title": "Mukhtaṣar al-Akhḍarī",
+      "title_ar": "متن الأخضري في العبادات على مذهب الإمام مالك",
+      "author": "ʿAbd al-Raḥmān al-Akhḍarī",
+      "author_ar": "الأخضري",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "primer",
+      "source_ids": [
+        "mh_cat_9548"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_14556",
+      "title": "Sharḥ al-Risāla (Zarrūq)",
+      "title_ar": "شرح زروق على متن الرسالة",
+      "author": "Aḥmad Zarrūq",
+      "author_ar": "زروق",
+      "author_death_ah": 899,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_14556"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_18116",
+      "title": "Ikhtilāf aqwāl Mālik wa-aṣḥābih",
+      "title_ar": "اختلاف أقوال مالك وأصحابه",
+      "author": "Ibn ʿAbd al-Barr",
+      "author_ar": "ابن عبد البر",
+      "author_death_ah": 463,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "comparative_fiqh",
+      "source_ids": [
+        "mh_cat_18116"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_21516",
+      "title": "Irshād al-sālik ilā ashraf al-masālik",
+      "title_ar": "إرشاد السالك إلى أشرف المسالك في فقه الإمام مالك",
+      "author": "Ibn ʿAskar al-Baghdādī",
+      "author_ar": "ابن عسكر",
+      "author_death_ah": 732,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "matn",
+      "source_ids": [
+        "mh_cat_21516"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_21604",
+      "title": "al-Sharḥ al-kabīr (al-Dardīr)",
+      "title_ar": "الشرح الكبير على مختصر خليل",
+      "author": "Aḥmad al-Dardīr",
+      "author_ar": "أحمد الدردير",
+      "author_death_ah": 1201,
+      "author_death_ce": 1786,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_21604",
+        "mh_darifta_khalil"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_35276",
+      "title": "Ajwibat al-Tasūlī ʿan masāʾil al-Amīr ʿAbd al-Qādir",
+      "title_ar": "أجوبة التسولي عن مسائل الأمير عبد القادر في الجهاد",
+      "author": "ʿAlī al-Tasūlī",
+      "author_ar": "التسولي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "fatwa_collection",
+      "source_ids": [
+        "mh_cat_35276"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_150676",
+      "title": "Jawāhir al-durar fī ḥall alfāẓ al-Mukhtaṣar",
+      "title_ar": "جواهر الدرر في حل ألفاظ المختصر",
+      "author": "Muḥammad al-Tatāʾī",
+      "author_ar": "التتائي",
+      "author_death_ah": 942,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_150676"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_1717",
+      "title": "al-Dhakhīra",
+      "title_ar": "الذخيرة للقرافي",
+      "author": "Shihāb al-Dīn al-Qarāfī",
+      "author_ar": "القرافي",
+      "author_death_ah": 684,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_1717"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_14245",
+      "title": "al-Ishrāf ʿalā nukat masāʾil al-khilāf",
+      "title_ar": "الإشراف على نكت مسائل الخلاف",
+      "author": "al-Qāḍī ʿAbd al-Wahhāb",
+      "author_ar": "القاضي عبد الوهاب",
+      "author_death_ah": 422,
+      "author_death_ce": 1031,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "comparative_fiqh",
+      "source_ids": [
+        "mh_cat_14245",
+        "mh_tdv_risala",
+        "mh_awqaf_maliki"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_14253",
+      "title": "al-Tanbīhāt al-mustanbaṭa",
+      "title_ar": "التنبيهات المستنبطة على الكتب المدونة والمختلطة",
+      "author": "al-Qāḍī ʿIyāḍ",
+      "author_ar": "القاضي عياض",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_14253"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_14605",
+      "title": "Shifāʾ al-ghalīl fī ḥall muqfal Khalīl",
+      "title_ar": "شفاء الغليل في حل مقفل خليل",
+      "author": "Ibn Ghāzī al-Miknāsī",
+      "author_ar": "محمد بن أحمد بن غازي المكناسي",
+      "author_death_ah": 919,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "mh_cat_14605",
+        "mh_darifta_khalil"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_18261",
+      "title": "al-Radd ʿalā al-Shāfiʿī",
+      "title_ar": "الرد على الشافعي لابن اللباد",
+      "author": "Abū Bakr Ibn al-Labbād",
+      "author_ar": "أبو بكر ابن اللباد",
+      "author_death_ah": 333,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "comparative_fiqh",
+      "source_ids": [
+        "mh_cat_18261"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_21589",
+      "title": "al-Fawākih al-dawānī",
+      "title_ar": "الفواكه الدواني على رسالة ابن أبي زيد القيرواني",
+      "author": "Aḥmad al-Nafrāwī",
+      "author_ar": "النفراوي",
+      "author_death_ah": 1126,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_21589"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_21597",
+      "title": "Ḥāshiyat al-ʿAdawī ʿalā Kifāyat al-ṭālib",
+      "title_ar": "حاشية العدوي على كفاية الطالب الرباني",
+      "author": "ʿAlī al-ʿAdawī",
+      "author_ar": "العدوي",
+      "author_death_ah": 1189,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "mh_cat_21597"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_96925",
+      "title": "al-Tawassuṭ bayna Mālik wa-Ibn al-Qāsim",
+      "title_ar": "التوسط بين مالك وابن القاسم في المسائل التي اختلفا فيها من مسائل المدونة",
+      "author": "al-Jubayrī",
+      "author_ar": "الجبيري",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "comparative_fiqh",
+      "source_ids": [
+        "mh_cat_96925"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_123685",
+      "title": "Manāhij al-taḥṣīl",
+      "title_ar": "مناهج التحصيل ونتائج لطائف التأويل في شرح المدونة وحل مشكلاتها",
+      "author": "ʿAlī ibn Saʿīd al-Rajrājī",
+      "author_ar": "الرجراجي، علي بن سعيد",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_123685"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_1206",
+      "title": "al-Mukhtaṣar al-ṣaghīr",
+      "title_ar": "المختصر الصغير لابن عبد الحكم «خلافيات في الفقه»",
+      "author": "ʿAbd Allāh ibn ʿAbd al-Ḥakam",
+      "author_ar": "ابن عبد الحكم الفقيه",
+      "author_death_ah": 214,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "matn",
+      "source_ids": [
+        "mh_cat_1206"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_1326",
+      "title": "Sharḥ al-Mukhtaṣar al-kabīr",
+      "title_ar": "شرح المختصر الكبير للأبهري",
+      "author": "Abū Bakr al-Abharī",
+      "author_ar": "الأبهري",
+      "author_death_ah": 375,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_1326"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_7262",
+      "title": "al-Talqīn",
+      "title_ar": "التلقين في الفقة المالكي",
+      "author": "al-Qāḍī ʿAbd al-Wahhāb",
+      "author_ar": "القاضي عبد الوهاب",
+      "author_death_ah": 422,
+      "author_death_ce": 1031,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "matn",
+      "source_ids": [
+        "mh_cat_7262",
+        "mh_tdv_risala",
+        "mh_awqaf_maliki"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_14310",
+      "title": "Masāʾil Abī al-Walīd Ibn Rushd",
+      "title_ar": "مسائل أبي الوليد ابن رشد",
+      "author": "Ibn Rushd al-Jadd",
+      "author_ar": "ابن رشد الجد",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "fatwa_collection",
+      "source_ids": [
+        "mh_cat_14310"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_14590",
+      "title": "al-Tafrīʿ",
+      "title_ar": "التفريع في فقه الإمام مالك بن أنس",
+      "author": "Ibn al-Jallāb",
+      "author_ar": "ابن الجلاب",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_14590"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_18606",
+      "title": "al-Dhabb ʿan madhhab al-Imām Mālik",
+      "title_ar": "الذب عن مذهب الإمام مالك",
+      "author": "Ibn Abī Zayd al-Qayrawānī",
+      "author_ar": "ابن أبي زيد القيرواني",
+      "author_death_ah": 386,
+      "author_death_ce": 996,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "comparative_fiqh",
+      "source_ids": [
+        "mh_cat_18606",
+        "mh_tdv_ibnabizayd"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_21614",
+      "title": "Minaḥ al-jalīl",
+      "title_ar": "منح الجليل شرح مختصر خليل",
+      "author": "Muḥammad ʿIllaysh",
+      "author_ar": "محمد بن أحمد عليش",
+      "author_death_ah": 1299,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_21614",
+        "mh_darifta_khalil"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_30174",
+      "title": "Mawhūb al-jalīl",
+      "title_ar": "موهوب الجليل في شرح مختصر خليل",
+      "author": "Ibn Abī Bakr al-Wādānī",
+      "author_ar": "ابن أبي بكر الواداني",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_30174"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_37326",
+      "title": "al-ʿAshmāwiyya",
+      "title_ar": "متن العشماوية",
+      "author": "ʿAbd al-Bārī al-ʿAshmāwī",
+      "author_ar": "عبد الباري العشماوي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "primer",
+      "source_ids": [
+        "mh_cat_37326"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_132974",
+      "title": "Irshād al-sālik ilā afʿāl al-manāsik",
+      "title_ar": "إرشاد السالك إلى أفعال المناسك",
+      "author": "Burhān al-Dīn Ibn Farḥūn",
+      "author_ar": "ابن فرحون، برهان الدين",
+      "author_death_ah": 799,
+      "author_death_ce": 1397,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "pilgrimage_manual",
+      "source_ids": [
+        "mh_cat_132974",
+        "mh_tdv_farhun"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_631",
+      "title": "Ashal al-masālik",
+      "title_ar": "أسهل المسالك في مذهب الإمام مالك",
+      "author": "Muḥammad al-Bashshār",
+      "author_ar": "محمد البشار",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "verse_manual",
+      "source_ids": [
+        "mh_cat_631",
+        "mh_awqaf_maliki"
+      ],
+      "notes": "Conflicting catalogue/bibliography dates for the author; no numerical placement asserted.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_7367",
+      "title": "al-Kāfī fī fiqh ahl al-Madīna",
+      "title_ar": "الكافي في فقه أهل المدينة",
+      "author": "Ibn ʿAbd al-Barr",
+      "author_ar": "ابن عبد البر",
+      "author_death_ah": 463,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_7367"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_8487",
+      "title": "al-Tahdhīb fī ikhtiṣār al-Mudawwana",
+      "title_ar": "التهذيب في اختصار المدونة",
+      "author": "Abū Saʿīd al-Barādhiʿī",
+      "author_ar": "أبو سعيد ابن البراذعي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "abridgment",
+      "source_ids": [
+        "mh_cat_8487",
+        "mh_awqaf_maliki"
+      ],
+      "notes": "The catalogue date 372 AH conflicts with scholarly bibliographical chronology; withheld rather than silently propagated.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_14591",
+      "title": "al-Tabṣira",
+      "title_ar": "التبصرة للخمي",
+      "author": "Abū al-Ḥasan al-Lakhmī",
+      "author_ar": "اللخمي، أبو الحسن",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_14591"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_18607",
+      "title": "al-Jāmiʿ li-masāʾil al-Mudawwana",
+      "title_ar": "الجامع لمسائل المدونة",
+      "author": "Ibn Yūnus al-Ṣiqillī",
+      "author_ar": "ابن يونس الصقلي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_18607"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_21735",
+      "title": "al-Muqaddimāt al-mumahhidāt",
+      "title_ar": "المقدمات الممهدات",
+      "author": "Ibn Rushd al-Jadd",
+      "author_ar": "ابن رشد الجد",
+      "author_death_ah": 520,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_21735"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_21751",
+      "title": "al-Bayān wa-l-taḥṣīl",
+      "title_ar": "البيان والتحصيل",
+      "author": "Ibn Rushd al-Jadd",
+      "author_ar": "ابن رشد الجد",
+      "author_death_ah": 520,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_21751"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_587",
+      "title": "al-Mudawwana",
+      "title_ar": "المدونة",
+      "author": "Saḥnūn (compiler), transmitting Ibn al-Qāsim from Mālik",
+      "author_ar": "سحنون بن سعيد التنوخي، عن ابن القاسم عن مالك",
+      "author_death_ah": 240,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_587",
+        "mh_tdv_maliki",
+        "mh_awqaf_maliki"
+      ],
+      "notes": "Compilation transmitted through Saḥnūn and Ibn al-Qāsim; catalogue filing under Mālik is not treated as sole authorship.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_121376",
+      "title": "Sharḥ al-Talqīn",
+      "title_ar": "شرح التلقين",
+      "author": "al-Māzirī",
+      "author_ar": "المازري",
+      "author_death_ah": 536,
+      "author_death_ce": 1141,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_121376",
+        "mh_tdv_maziri",
+        "mh_tdv_maliki"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_11373",
+      "title": "al-Risāla",
+      "title_ar": "الرسالة لابن أبي زيد القيرواني",
+      "author": "Ibn Abī Zayd al-Qayrawānī",
+      "author_ar": "ابن أبي زيد القيرواني",
+      "author_death_ah": 386,
+      "author_death_ce": 996,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "primer",
+      "source_ids": [
+        "mh_cat_11373",
+        "mh_tdv_ibnabizayd"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_7441",
+      "title": "al-Thamar al-dānī",
+      "title_ar": "الثمر الداني شرح رسالة ابن أبي زيد القيرواني",
+      "author": "Ṣāliḥ ʿAbd al-Samīʿ al-Ābī al-Azharī",
+      "author_ar": "صالح بن عبد السميع الأزهري",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_7441"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_776",
+      "title": "Maʿūnat ulī al-nuhā",
+      "title_ar": "شرح منتهى الإرادات لابن النجار = معونة أولي النهى",
+      "author": "Ibn al-Najjār al-Futūḥī",
+      "author_ar": "ابن النجار الفتوحي",
+      "author_death_ah": 972,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_776"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_7360",
+      "title": "al-Iqnāʿ li-ṭālib al-intifāʿ",
+      "title_ar": "الإقناع في فقه الإمام أحمد بن حنبل",
+      "author": "Mūsā al-Ḥajjāwī",
+      "author_ar": "الحجاوي",
+      "author_death_ah": 968,
+      "author_death_ce": 1560,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_7360",
+        "mh_tdv_hajjawi"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_13664",
+      "title": "Muntahā al-irādāt",
+      "title_ar": "منتهى الإرادات في جمع المقنع مع التنقيح وزيادات",
+      "author": "Ibn al-Najjār al-Futūḥī",
+      "author_ar": "ابن النجار الفتوحي",
+      "author_death_ah": 972,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "synthesis",
+      "source_ids": [
+        "mh_cat_13664"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_16952",
+      "title": "al-Munawwir fī rājiḥ al-Muḥarrar",
+      "title_ar": "المنور في راجح المحرر",
+      "author": "Taqī al-Dīn al-Ādamī",
+      "author_ar": "تقي الدين الأدمي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "abridgment",
+      "source_ids": [
+        "mh_cat_16952"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_147064",
+      "title": "al-Wajīz",
+      "title_ar": "الوجيز في الفقه على مذهب الإمام أحمد بن حنبل",
+      "author": "al-Ḥusayn ibn Yūsuf al-Dujaylī",
+      "author_ar": "الحسين بن يوسف الدجيلي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "matn",
+      "source_ids": [
+        "mh_cat_147064"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_147656",
+      "title": "Akhṣar al-mukhtaṣarāt",
+      "title_ar": "أخصر المختصرات",
+      "author": "Muḥammad Ibn Balbān",
+      "author_ar": "ابن بلبان الحنبلي",
+      "author_death_ah": 1083,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "abridgment",
+      "source_ids": [
+        "mh_cat_147656",
+        "mh_akhsar_preface"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_1153",
+      "title": "al-Sharḥ al-kabīr ʿalā al-Muqniʿ",
+      "title_ar": "الشرح الكبير على المقنع",
+      "author": "Shams al-Dīn ʿAbd al-Raḥmān Ibn Qudāma (Ibn Abī ʿUmar)",
+      "author_ar": "ابن أبي عمر",
+      "author_death_ah": 682,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_1153"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_1241",
+      "title": "Hidāyat al-rāghib",
+      "title_ar": "هداية الراغب لشرح عمدة الطالب",
+      "author": "ʿUthmān Ibn Qāʾid al-Najdī",
+      "author_ar": "ابن قائد",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_1241"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_2977",
+      "title": "Mukhtaṣar al-Khiraqī",
+      "title_ar": "مختصر الخرقى",
+      "author": "Abū al-Qāsim al-Khiraqī",
+      "author_ar": "الخرقي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "matn",
+      "source_ids": [
+        "mh_cat_2977"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_6105",
+      "title": "Masāʾil Aḥmad: recension of ʿAbd Allāh",
+      "title_ar": "مسائل الإمام أحمد رواية ابنه عبد الله",
+      "author": "Aḥmad ibn Ḥanbal; collected by his son ʿAbd Allāh",
+      "author_ar": "أحمد بن حنبل",
+      "author_death_ah": 241,
+      "author_death_ce": 855,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "question_collection",
+      "source_ids": [
+        "mh_cat_6105"
+      ],
+      "notes": "Distinct student collection of Aḥmad’s answers. Author date denotes Aḥmad, not the collection’s completion or the transmitter’s death.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_13785",
+      "title": "al-Fawāʾid al-muntakhabāt",
+      "title_ar": "الفوائد المنتخبات في شرح أخصر المختصرات",
+      "author": "ʿUthmān Ibn Jāmiʿ",
+      "author_ar": "عثمان ابن جامع",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_13785"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_14153",
+      "title": "al-Rawḍ al-nadī",
+      "title_ar": "الروض الندي شرح كافي المبتدي",
+      "author": "Aḥmad ibn ʿAbd Allāh al-Baʿlī",
+      "author_ar": "أحمد بن عبد الله البعلي",
+      "author_death_ah": 1189,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_14153"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_18353",
+      "title": "Ḥāshiyat Ibn Qāʾid ʿalā Muntahā al-irādāt",
+      "title_ar": "حاشية ابن قائد على منتهى الإرادات",
+      "author": "ʿUthmān Ibn Qāʾid al-Najdī",
+      "author_ar": "ابن قائد",
+      "author_death_ah": 1097,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "mh_cat_18353"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_19233",
+      "title": "al-Muqniʿ",
+      "title_ar": "المقنع في فقه الإمام أحمد",
+      "author": "Muwaffaq al-Dīn Ibn Qudāma",
+      "author_ar": "ابن قدامة",
+      "author_death_ah": 620,
+      "author_death_ce": 1223,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "matn",
+      "source_ids": [
+        "mh_cat_19233",
+        "mh_tdv_muqni"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_21609",
+      "title": "al-Inṣāf",
+      "title_ar": "الإنصاف في معرفة الراجح من الخلاف",
+      "author": "ʿAlāʾ al-Dīn al-Mardāwī",
+      "author_ar": "المرداوي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_21609"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_30057",
+      "title": "al-Taʿlīqa al-kabīra",
+      "title_ar": "التعليقة الكبيرة",
+      "author": "al-Qāḍī Abū Yaʿlā Ibn al-Farrāʾ",
+      "author_ar": "القاضي أبو يعلى ابن الفراء",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "comparative_fiqh",
+      "source_ids": [
+        "mh_cat_30057"
+      ],
+      "notes": "One historical work. Separately published surviving sections are not counted as independent works.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_97809",
+      "title": "Ḥāshiyat al-Labadī ʿalā Nayl al-maʾārib",
+      "title_ar": "حاشية اللبدي على نيل المآرب",
+      "author": "ʿAbd al-Ghanī al-Labadī",
+      "author_ar": "عبد الغني اللبدي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "mh_cat_97809"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_150961",
+      "title": "al-Fawākih al-ʿadīda fī al-masāʾil al-mufīda",
+      "title_ar": "الفواكه العديدة في المسائل المفيدة",
+      "author": "Aḥmad al-Manqūr",
+      "author_ar": "أحمد المنقور",
+      "author_death_ah": 1125,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "fatwa_collection",
+      "source_ids": [
+        "mh_cat_150961"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_1202",
+      "title": "al-ʿIqd al-mufrad",
+      "title_ar": "العقد المفرد في الفقه على مذهب الإمام أحمد",
+      "author": "Abū ʿAyyāsha Muḥammad al-Bayyūmī al-Damanhūrī",
+      "author_ar": "محمد البيومي بن محمد الدمنهوري، أبو عياشة",
+      "author_death_ah": 1335,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "matn",
+      "source_ids": [
+        "mh_cat_1202",
+        "mh_mujamaah_iqd"
+      ],
+      "notes": "The school classification describes this manual’s legal content, not an assertion about its author’s personal madhhab.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_6106",
+      "title": "Masāʾil Aḥmad: recension of Ṣāliḥ",
+      "title_ar": "مسائل الإمام أحمد رواية ابنه أبي الفضل صالح",
+      "author": "Aḥmad ibn Ḥanbal; collected by his son Ṣāliḥ",
+      "author_ar": "أحمد بن حنبل",
+      "author_death_ah": 241,
+      "author_death_ce": 855,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "question_collection",
+      "source_ids": [
+        "mh_cat_6106"
+      ],
+      "notes": "Distinct student collection of Aḥmad’s answers. Author date denotes Aḥmad, not the collection’s completion or the transmitter’s death.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_6538",
+      "title": "al-Minaḥ al-shāfiyāt",
+      "title_ar": "المنح الشافيات بشرح مفردات الإمام أحمد",
+      "author": "Manṣūr al-Buhūtī",
+      "author_ar": "البهوتي",
+      "author_death_ah": 1051,
+      "author_death_ce": 1641,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_6538",
+        "mh_tdv_buhuti"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_14386",
+      "title": "ʿUmdat al-ṭālib",
+      "title_ar": "عمدة الطالب لنيل المآرب",
+      "author": "Manṣūr al-Buhūtī",
+      "author_ar": "البهوتي",
+      "author_death_ah": 1051,
+      "author_death_ce": 1641,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "matn",
+      "source_ids": [
+        "mh_cat_14386",
+        "mh_tdv_buhuti"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_21642",
+      "title": "Kashshāf al-qināʿ",
+      "title_ar": "كشاف القناع عن متن الإقناع",
+      "author": "Manṣūr al-Buhūtī",
+      "author_ar": "البهوتي",
+      "author_death_ah": 1051,
+      "author_death_ce": 1641,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_21642",
+        "mh_tdv_buhuti"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_30058",
+      "title": "Maslak al-rāghib li-sharḥ Dalīl al-ṭālib",
+      "title_ar": "مسلك الراغب لشرح دليل الطالب",
+      "author": "Ibrāhīm al-ʿAwfī al-Ṣāliḥī",
+      "author_ar": "إبراهيم العوفي الصالحي",
+      "author_death_ah": 1094,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_30058"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_30066",
+      "title": "Fatḥ Wahhāb al-maʾārib",
+      "title_ar": "فتح وهاب المآرب على دليل الطالب",
+      "author": "Aḥmad Ibn ʿAwaḍ",
+      "author_ar": "ابن عوض",
+      "author_death_ah": 1088,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_30066"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_147658",
+      "title": "al-Rawḍ al-murbiʿ",
+      "title_ar": "الروض المربع بشرح زاد المستقنع",
+      "author": "Manṣūr al-Buhūtī",
+      "author_ar": "البهوتي",
+      "author_death_ah": 1051,
+      "author_death_ce": 1641,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_147658",
+        "mh_tdv_buhuti"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_219",
+      "title": "al-Riʿāya al-ṣughrā",
+      "title_ar": "الرعاية الصغرى في الفقه",
+      "author": "Ibn Ḥamdān",
+      "author_ar": "ابن حمدان",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_219"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_795",
+      "title": "al-Manhaj al-ṣaḥīḥ fī al-jamʿ bayna al-Muqniʿ wa-l-Tanqīḥ",
+      "title_ar": "المنهج الصحيح في الجمع بين ما في المقنع والتنقيح",
+      "author": "Aḥmad ibn ʿAbd Allāh al-ʿAskarī",
+      "author_ar": "شهاب الدين العسكري",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "synthesis",
+      "source_ids": [
+        "mh_cat_795"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_6115",
+      "title": "Kashf al-mukhaddarāt",
+      "title_ar": "كشف المخدرات لشرح أخصر المختصرات",
+      "author": "ʿAbd al-Raḥmān ibn ʿAbd Allāh al-Baʿlī",
+      "author_ar": "البعلي، عبد الرحمن بن عبد الله",
+      "author_death_ah": 1192,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_6115"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_11315",
+      "title": "ʿUmdat al-fiqh",
+      "title_ar": "عمدة الفقه",
+      "author": "Muwaffaq al-Dīn Ibn Qudāma",
+      "author_ar": "ابن قدامة",
+      "author_death_ah": 620,
+      "author_death_ce": 1223,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "primer",
+      "source_ids": [
+        "mh_cat_11315",
+        "mh_tdv_muqni"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_13571",
+      "title": "al-Irshād ilā sabīl al-rashād",
+      "title_ar": "الإرشاد إلى سبيل الرشاد",
+      "author": "Abū ʿAlī Ibn Abī Mūsā al-Hāshimī",
+      "author_ar": "أبو علي بن أبي موسى الهاشمي",
+      "author_death_ah": 428,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_13571"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_17363",
+      "title": "al-Tadhkira fī al-fiqh",
+      "title_ar": "التذكرة في الفقه على مذهب الإمام أحمد",
+      "author": "Abū al-Wafāʾ Ibn ʿAqīl",
+      "author_ar": "أبو الوفاء ابن عقيل",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_17363"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_20699",
+      "title": "al-Mumtiʿ fī sharḥ al-Muqniʿ",
+      "title_ar": "الممتع في شرح المقنع",
+      "author": "Abū al-Barakāt Ibn al-Munajjā",
+      "author_ar": "ابن المنجى، أبو البركات",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_20699"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_21619",
+      "title": "al-Mubdiʿ fī sharḥ al-Muqniʿ",
+      "title_ar": "المبدع في شرح المقنع",
+      "author": "Burhān al-Dīn Ibrāhīm Ibn Mufliḥ",
+      "author_ar": "برهان الدين ابن مفلح",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_21619"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_21731",
+      "title": "al-Kāfī fī fiqh al-Imām Aḥmad",
+      "title_ar": "الكافي في فقه الإمام أحمد",
+      "author": "Muwaffaq al-Dīn Ibn Qudāma",
+      "author_ar": "ابن قدامة",
+      "author_death_ah": 620,
+      "author_death_ce": 1223,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_21731",
+        "mh_tdv_muqni"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_7460",
+      "title": "al-Muḥarrar",
+      "title_ar": "المحرر في الفقه",
+      "author": "Majd al-Dīn ʿAbd al-Salām Ibn Taymiyya",
+      "author_ar": "مجد الدين عبد السلام ابن تيمية",
+      "author_death_ah": 652,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "matn",
+      "source_ids": [
+        "mh_cat_7460",
+        "mh_maiman_biblio"
+      ],
+      "notes": "Author of the base text is Majd al-Dīn Ibn Taymiyya; Ibn Mufliḥ authored the accompanying Nukat, retained separately.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_10908",
+      "title": "al-ʿUdda sharḥ al-ʿUmda",
+      "title_ar": "العدة شرح العمدة",
+      "author": "Bahāʾ al-Dīn al-Maqdisī",
+      "author_ar": "بهاء الدين المقدسي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_10908"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_11196",
+      "title": "Dalīl al-ṭālib",
+      "title_ar": "دليل الطالب لنيل المطالب",
+      "author": "Marʿī ibn Yūsuf al-Karmī",
+      "author_ar": "مرعي الكرمي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "matn",
+      "source_ids": [
+        "mh_cat_11196"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_12052",
+      "title": "al-Furūʿ",
+      "title_ar": "الفروع",
+      "author": "Shams al-Dīn Muḥammad Ibn Mufliḥ",
+      "author_ar": "ابن مفلح",
+      "author_death_ah": 763,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_12052",
+        "mh_qatarch_furu"
+      ],
+      "notes": "Taṣḥīḥ al-Furūʿ is a separate work by al-Mardāwī, not a second title for Ibn Mufliḥ’s base text. Death dates 762/763 AH occur in references.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_16772",
+      "title": "Ḥāshiyat al-Khalwatī ʿalā al-Muntahā",
+      "title_ar": "حاشية الخلوتي على منتهى الإرادات",
+      "author": "Muḥammad al-Khalwatī",
+      "author_ar": "الخلوتي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "mh_cat_16772"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_29796",
+      "title": "Bidāyat al-ʿābid wa-kifāyat al-zāhid",
+      "title_ar": "بداية العابد وكفاية الزاهد",
+      "author": "ʿAbd al-Raḥmān ibn ʿAbd Allāh al-Baʿlī",
+      "author_ar": "البعلي، عبد الرحمن بن عبد الله",
+      "author_death_ah": 1192,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "primer",
+      "source_ids": [
+        "mh_cat_29796"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_96876",
+      "title": "Nayl al-maʾārib bi-sharḥ Dalīl al-ṭālib",
+      "title_ar": "نيل المآرب بشرح دليل الطالب",
+      "author": "ʿAbd al-Qādir Ibn Abī Taghlib",
+      "author_ar": "ابن أبي تغلب",
+      "author_death_ah": 1135,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_96876"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_709",
+      "title": "al-Tanqīḥ al-mushbiʿ",
+      "title_ar": "التنقيح المشبع في تحرير أحكام المقنع",
+      "author": "ʿAlāʾ al-Dīn al-Mardāwī",
+      "author_ar": "علي بن سليمان المرداوي",
+      "author_death_ah": 885,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "abridgment",
+      "source_ids": [
+        "mh_cat_709",
+        "mh_tdv_muqni"
+      ],
+      "notes": "Al-Mardāwī authored the base text; al-Ḥajjāwī authored the accompanying gloss, retained separately.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_3125",
+      "title": "Masāʾil Aḥmad wa-Isḥāq",
+      "title_ar": "مسائل الإمام أحمد وإسحاق بن راهويه",
+      "author": "Isḥāq ibn Manṣūr al-Kawsaj",
+      "author_ar": "إسحاق بن منصور الكوسج",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "question_collection",
+      "source_ids": [
+        "mh_cat_3125"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_20589",
+      "title": "Ghāyat al-muntahā",
+      "title_ar": "غاية المنتهى في جمع الإقناع والمنتهى ط غراس",
+      "author": "Marʿī ibn Yūsuf al-Karmī",
+      "author_ar": "مرعي الكرمي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "synthesis",
+      "source_ids": [
+        "mh_cat_20589"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_21677",
+      "title": "Maṭālib ulī al-nuhā",
+      "title_ar": "مطالب أولي النهى في شرح غاية المنتهى",
+      "author": "Muṣṭafā al-Ruḥaybānī",
+      "author_ar": "الرحيباني",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_21677",
+        "mh_qatar_matalib"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_21693",
+      "title": "Daqāʾiq ulī al-nuhā (Sharḥ al-Muntahā)",
+      "title_ar": "شرح منتهى الإرادات للبهوتي = دقائق أولي النهى ط عالم الكتب",
+      "author": "Manṣūr al-Buhūtī",
+      "author_ar": "البهوتي",
+      "author_death_ah": 1051,
+      "author_death_ce": 1641,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_21693",
+        "mh_tdv_buhuti"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_6094",
+      "title": "al-Nukat wa-l-fawāʾid al-saniyya",
+      "title_ar": "النكت والفوائد السنية على مشكل المحرر",
+      "author": "Shams al-Dīn Muḥammad Ibn Mufliḥ",
+      "author_ar": "ابن مفلح",
+      "author_death_ah": 763,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "mh_cat_6094"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_6910",
+      "title": "al-Mughnī",
+      "title_ar": "المغني لابن قدامة",
+      "author": "Muwaffaq al-Dīn Ibn Qudāma",
+      "author_ar": "ابن قدامة",
+      "author_death_ah": 620,
+      "author_death_ce": 1223,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_6910",
+        "mh_tdv_muqni"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_11230",
+      "title": "Zād al-mustaqniʿ",
+      "title_ar": "زاد المستقنع في اختصار المقنع",
+      "author": "Mūsā al-Ḥajjāwī",
+      "author_ar": "الحجاوي",
+      "author_death_ah": 968,
+      "author_death_ce": 1560,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "abridgment",
+      "source_ids": [
+        "mh_cat_11230",
+        "mh_tdv_hajjawi"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_13246",
+      "title": "al-Riwāyatayn wa-l-wajhayn (fiqh)",
+      "title_ar": "الروايتان والوجهان — المسائل الفقهية",
+      "author": "al-Qāḍī Abū Yaʿlā Ibn al-Farrāʾ",
+      "author_ar": "القاضي أبو يعلى ابن الفراء",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "comparative_fiqh",
+      "source_ids": [
+        "mh_cat_13246"
+      ],
+      "notes": "The fiqh portion of a larger work; counted once, not by subject volumes.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_26094",
+      "title": "al-Hidāya",
+      "title_ar": "الهداية على مذهب الإمام أحمد",
+      "author": "Abū al-Khaṭṭāb al-Kalwadhānī",
+      "author_ar": "أبو الخطاب الكلوذاني",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "matn",
+      "source_ids": [
+        "mh_cat_26094"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_151",
+      "title": "Sharḥ ʿUmdat al-fiqh",
+      "title_ar": "شرح عمدة الفقه - ابن تيمية",
+      "author": "Taqī al-Dīn Aḥmad Ibn Taymiyya",
+      "author_ar": "ابن تيمية",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_151"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_1287",
+      "title": "Sharḥ al-Muqniʿ (Bahāʾ al-Dīn)",
+      "title_ar": "شرح المقنع للبهاء المقدسي",
+      "author": "Bahāʾ al-Dīn al-Maqdisī",
+      "author_ar": "بهاء الدين المقدسي",
+      "author_death_ah": 624,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_1287"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_21487",
+      "title": "Masāʾil Aḥmad: recension of Abū Dāwūd",
+      "title_ar": "مسائل الإمام أحمد رواية أبي داود السجستاني",
+      "author": "Aḥmad ibn Ḥanbal; collected by Abū Dāwūd al-Sijistānī",
+      "author_ar": "أحمد بن حنبل",
+      "author_death_ah": 241,
+      "author_death_ce": 855,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "question_collection",
+      "source_ids": [
+        "mh_cat_21487"
+      ],
+      "notes": "Distinct student collection of Aḥmad’s answers. Author date denotes Aḥmad, not the collection’s completion or the transmitter’s death.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_21743",
+      "title": "Sharḥ Mukhtaṣar al-Khiraqī",
+      "title_ar": "شرح الزركشي على مختصر الخرقي",
+      "author": "Shams al-Dīn al-Zarkashī al-Ḥanbalī",
+      "author_ar": "الزركشي الحنبلي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_cat_21743"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_30143",
+      "title": "al-Mufradāt",
+      "title_ar": "المفردات",
+      "author": "Ibn al-Zāghūnī",
+      "author_ar": "ابن الزاغوني",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_cat_30143"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_147311",
+      "title": "Mukhtaṣar al-ifādāt",
+      "title_ar": "مختصر الإفادات في ربع العبادات والآداب وزيادات",
+      "author": "Muḥammad Ibn Balbān",
+      "author_ar": "ابن بلبان الحنبلي",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "primer",
+      "source_ids": [
+        "mh_cat_147311"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_muwatta",
+      "title": "al-Muwaṭṭaʾ",
+      "title_ar": "الموطأ",
+      "author": "Mālik ibn Anas",
+      "author_death_ah": 179,
+      "author_death_ce": 795,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "hadith_fiqh",
+      "source_ids": [
+        "mh_tdv_maliki"
+      ],
+      "notes": "Foundational mixed hadith/fiqh collection; recensions and modern editions are not counted as separate works.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_utbiyya",
+      "title": "al-Mustakhraja (al-ʿUtbiyya)",
+      "title_ar": "المستخرجة من الأسمعة — العتبية",
+      "author": "Muḥammad al-ʿUtbī",
+      "author_death_ah": 255,
+      "author_death_ce": 869,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_tdv_maliki"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_wadiha",
+      "title": "al-Wāḍiḥa",
+      "title_ar": "الواضحة في السنن والفقه",
+      "author": "ʿAbd al-Malik ibn Ḥabīb",
+      "author_death_ah": 238,
+      "author_death_ce": 853,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_tdv_maliki"
+      ],
+      "notes": "Preservation is fragmentary; bibliographical existence is not a claim of full digitization.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_mawwaziyya",
+      "title": "al-Mawwāziyya",
+      "title_ar": "الموازية",
+      "author": "Ibn al-Mawwāz",
+      "author_death_ah": 269,
+      "author_death_ce": 883,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_tdv_maliki"
+      ],
+      "notes": "Early work known through manuscript remains and later transmission; no complete digital copy claimed.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_mukhtasarkabir",
+      "title": "al-Mukhtaṣar al-kabīr",
+      "title_ar": "المختصر الكبير",
+      "author": "ʿAbd Allāh ibn ʿAbd al-Ḥakam",
+      "author_death_ah": 214,
+      "author_death_ce": 829,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "matn",
+      "source_ids": [
+        "mh_tdv_maliki",
+        "mh_awqaf_maliki"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_muntqa",
+      "title": "al-Muntaqā sharḥ al-Muwaṭṭaʾ",
+      "title_ar": "المنتقى شرح الموطأ",
+      "author": "Abū al-Walīd al-Bājī",
+      "author_death_ah": 474,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_awqaf_maliki",
+        "mh_tdv_wansharisi"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_murshid",
+      "title": "al-Murshid al-muʿīn",
+      "title_ar": "المرشد المعين على الضروري من علوم الدين",
+      "author": "ʿAbd al-Wāḥid Ibn ʿĀshir",
+      "author_death_ah": 1040,
+      "author_death_ce": 1631,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "verse_manual",
+      "source_ids": [
+        "mh_awqaf_maliki",
+        "mh_tdv_ibnashir"
+      ],
+      "notes": "Mixed creed, fiqh and spiritual formation; included for its extensive Mālikī worship section.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_majmu",
+      "title": "al-Majmūʿ (al-Amīr)",
+      "title_ar": "المجموع في الفقه المالكي",
+      "author": "Muḥammad al-Amīr al-Sunbāwī",
+      "author_death_ah": 1232,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "matn",
+      "source_ids": [
+        "mh_awqaf_maliki",
+        "mh_habashi_majmu"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_sharhmajmu",
+      "title": "Sharḥ al-Majmūʿ (al-Amīr)",
+      "title_ar": "شرح المجموع في الفقه المالكي",
+      "author": "Muḥammad al-Amīr al-Sunbāwī",
+      "author_death_ah": 1232,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_habashi_majmu"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_kifaya",
+      "title": "Kifāyat al-ṭālib al-rabbānī",
+      "title_ar": "كفاية الطالب الرباني لرسالة ابن أبي زيد القيرواني",
+      "author": "ʿAlī ibn Muḥammad al-Munūfī",
+      "author_death_ah": 939,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_kifaya_bnt"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_banani",
+      "title": "al-Fatḥ al-rabbānī (Ḥāshiyat al-Bannānī)",
+      "title_ar": "الفتح الرباني فيما ذهل عنه الزرقاني",
+      "author": "Muḥammad al-Ḥasan al-Bannānī",
+      "author_death_ah": 1194,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "mh_cat_14297",
+        "mh_darifta_khalil"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_adawikhurashi",
+      "title": "Ḥāshiyat al-ʿAdawī ʿalā al-Khurashī",
+      "title_ar": "حاشية العدوي على شرح الخرشي",
+      "author": "ʿAlī al-ʿAdawī",
+      "author_death_ah": 1189,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "mh_cat_91",
+        "mh_darifta_khalil"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_dasuqi",
+      "title": "Ḥāshiyat al-Dasūqī",
+      "title_ar": "حاشية الدسوقي على الشرح الكبير",
+      "author": "Muḥammad al-Dasūqī",
+      "author_death_ah": 1230,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "mh_cat_21604",
+        "mh_darifta_khalil"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_aqrab",
+      "title": "Aqrab al-masālik",
+      "title_ar": "أقرب المسالك إلى مذهب الإمام مالك",
+      "author": "Aḥmad al-Dardīr",
+      "author_death_ah": 1201,
+      "author_death_ce": 1786,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "matn",
+      "source_ids": [
+        "mh_saghir_mcy",
+        "mh_sawi_primary"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_sharhsaghir",
+      "title": "al-Sharḥ al-ṣaghīr",
+      "title_ar": "الشرح الصغير على أقرب المسالك",
+      "author": "Aḥmad al-Dardīr",
+      "author_death_ah": 1201,
+      "author_death_ce": 1786,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_saghir_mcy",
+        "mh_sawi_primary"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_tuhfa",
+      "title": "Tuḥfat al-ḥukkām",
+      "title_ar": "تحفة الحكام في نكت العقود والأحكام",
+      "author": "Abū Bakr Ibn ʿĀṣim al-Gharnāṭī",
+      "author_death_ah": 829,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "judicial_verse_manual",
+      "source_ids": [
+        "mh_tdv_nawazil",
+        "mh_awqaf_maliki"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_miyar",
+      "title": "al-Miʿyār al-muʿrib",
+      "title_ar": "المعيار المعرب والجامع المغرب عن فتاوى أهل إفريقية والأندلس والمغرب",
+      "author": "Aḥmad al-Wansharīsī",
+      "author_death_ah": 914,
+      "author_death_ce": 1508,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "fatwa_collection",
+      "source_ids": [
+        "mh_tdv_wansharisi"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_burzuli",
+      "title": "Jāmiʿ masāʾil al-aḥkām (Nawāzil al-Burzulī)",
+      "title_ar": "جامع مسائل الأحكام مما نزل من القضايا بالمفتين والحكام",
+      "author": "Abū al-Qāsim al-Burzulī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "fatwa_collection",
+      "source_ids": [
+        "mh_tdv_burzuli",
+        "mh_awqaf_maliki"
+      ],
+      "notes": "Death dates 841–844 AH differ among sources; withheld. Other aliases are not counted again without work-identity reconciliation.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_tabsira",
+      "title": "Tabṣirat al-ḥukkām",
+      "title_ar": "تبصرة الحكام في أصول الأقضية ومناهج الأحكام",
+      "author": "Burhān al-Dīn Ibn Farḥūn",
+      "author_death_ah": 799,
+      "author_death_ce": 1397,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "judicial_manual",
+      "source_ids": [
+        "mh_tdv_farhun"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_durra",
+      "title": "Durrat al-ghawwāṣ",
+      "title_ar": "درة الغواص في محاضرة الخواص",
+      "author": "Burhān al-Dīn Ibn Farḥūn",
+      "author_death_ah": 799,
+      "author_death_ce": 1397,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "legal_riddles",
+      "source_ids": [
+        "mh_tdv_farhun"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_tashil",
+      "title": "Tashīl al-muhimmāt",
+      "title_ar": "تسهيل المهمات في شرح جامع الأمهات",
+      "author": "Burhān al-Dīn Ibn Farḥūn",
+      "author_death_ah": 799,
+      "author_death_ce": 1397,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_tdv_farhun"
+      ],
+      "notes": "Manuscript-attested commentary; no full digital edition asserted.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_hululukabir",
+      "title": "al-Bayān wa-l-takmīl",
+      "title_ar": "البيان والتكميل في شرح مختصر خليل",
+      "author": "Aḥmad Ḥulūlū",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_tdv_hululu"
+      ],
+      "notes": "The larger of two distinct Khalīl commentaries; separately attested, with portions edited.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_hululusaghir",
+      "title": "Sharḥ Mukhtaṣar Khalīl al-ṣaghīr (Ḥulūlū)",
+      "title_ar": "شرح مختصر خليل الصغير لحلولو",
+      "author": "Aḥmad Ḥulūlū",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_tdv_hululu"
+      ],
+      "notes": "Distinct shorter commentary, identified separately from al-Bayān wa-l-takmīl.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_qalshani",
+      "title": "Taḥrīr al-maqāla",
+      "title_ar": "تحرير المقالة في شرح الرسالة",
+      "author": "Aḥmad al-Qalshānī",
+      "author_death_ah": 863,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_tdv_risala",
+        "mh_awqaf_maliki"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_maliki_fakihani",
+      "title": "al-Taḥrīr wa-l-taḥbīr",
+      "title_ar": "التحرير والتحبير في شرح رسالة ابن أبي زيد",
+      "author": "ʿUmar al-Fākihānī",
+      "author_death_ah": 734,
+      "author_death_ce": null,
+      "school": "maliki",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_tdv_risala",
+        "mh_awqaf_maliki"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_tashih",
+      "title": "Taṣḥīḥ al-Furūʿ",
+      "title_ar": "تصحيح الفروع",
+      "author": "ʿAlāʾ al-Dīn al-Mardāwī",
+      "author_death_ah": 885,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "critical_gloss",
+      "source_ids": [
+        "mh_cat_12052",
+        "mh_tdv_hanbali",
+        "mh_qatarch_furu"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_hawashi",
+      "title": "Ḥawāshī al-Tanqīḥ",
+      "title_ar": "حواشي التنقيح",
+      "author": "Mūsā al-Ḥajjāwī",
+      "author_death_ah": 968,
+      "author_death_ce": 1560,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "mh_cat_709",
+        "mh_tdv_hajjawi"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_kafimubtadi",
+      "title": "Kāfī al-mubtadī",
+      "title_ar": "كافي المبتدي من الطلاب",
+      "author": "Muḥammad Ibn Balbān",
+      "author_death_ah": 1083,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "matn",
+      "source_ids": [
+        "mh_kafi_waqfeya",
+        "mh_akhsar_preface"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_mutli",
+      "title": "al-Muṭliʿ ʿalā abwāb al-Muqniʿ",
+      "title_ar": "المطلع على أبواب المقنع",
+      "author": "Muḥammad ibn Abī al-Fatḥ al-Baʿlī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "lexical_commentary",
+      "source_ids": [
+        "mh_tdv_muqni"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_mustawib",
+      "title": "al-Mustawʿib",
+      "title_ar": "المستوعب",
+      "author": "Naṣīr al-Dīn al-Sāmirī",
+      "author_death_ah": 616,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_maiman_biblio"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_tawdih",
+      "title": "al-Tawḍīḥ fī al-jamʿ bayna al-Muqniʿ wa-l-Tanqīḥ",
+      "title_ar": "التوضيح في الجمع بين المقنع والتنقيح",
+      "author": "Aḥmad al-Shuwaykī",
+      "author_death_ah": 939,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "synthesis",
+      "source_ids": [
+        "mh_maiman_biblio",
+        "mh_tdv_muqni"
+      ],
+      "notes": "",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_muqnibanna",
+      "title": "al-Muqniʿ fī sharḥ Mukhtaṣar al-Khiraqī",
+      "title_ar": "المقنع في شرح مختصر الخرقي",
+      "author": "Ibn al-Bannāʾ al-Baghdādī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "mh_tdv_hanbali"
+      ],
+      "notes": "Distinct from Ibn Qudāma’s al-Muqniʿ; title-author pairing retained.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    },
+    {
+      "id": "mh_hanbali_jamikhalal",
+      "title": "al-Jāmiʿ li-ʿulūm al-Imām Aḥmad",
+      "title_ar": "الجامع لعلوم الإمام أحمد",
+      "author": "Abū Bakr al-Khallāl",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "hanbali",
+      "discipline": "fiqh",
+      "genre": "legal_compendium",
+      "source_ids": [
+        "mh_tdv_hanbali"
+      ],
+      "notes": "Historical compilation, partly preserved. Individual surviving sections are not inflated into separate whole-work counts.",
+      "date_basis": "author_death_not_composition",
+      "verification": "bibliographic_identity"
+    }
+  ],
+  "sources": [
+    {
+      "id": "mh_tdv_maliki",
+      "title": "Eyyüp Said Kaya, Mālikī Mezhebi (TDV İslâm Ansiklopedisi)",
+      "url": "https://islamansiklopedisi.org.tr/maliki-mezhebi",
+      "kind": "scholarly_reference",
+      "support": "Formation, regional traditions, foundational texts, and commentary literature; bibliography section.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_tdv_risala",
+      "title": "Ali Hakan Çavuşoğlu, er-Risāle (Ibn Abī Zayd), TDV",
+      "url": "https://islamansiklopedisi.org.tr/er-risale--ibn-ebu-zeyd",
+      "kind": "scholarly_reference",
+      "support": "Identifies the Risāla and its distinct commentary tradition; distinguishes full commentary from published creed excerpts.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_tdv_ibnabizayd",
+      "title": "H. Yunus Apaydın, Ibn Ebū Zeyd (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/ibn-ebu-zeyd",
+      "kind": "scholarly_reference",
+      "support": "Works and author death; Nawādir compilation and Risāla commentary reception.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_darifta_khalil",
+      "title": "Egyptian Dār al-Iftāʾ: al-Imām Khalīl al-Mālikī",
+      "url": "https://www.dar-alifta.org/ar/ourreligion/details/100/الإمام-خليل-المالكي",
+      "kind": "institutional_reference",
+      "support": "Named Khalīl commentaries and glosses; combined-edition authors distinguished. Some date/title claims remain variant across references.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_awqaf_maliki",
+      "title": "Kuwait Ministry of Awqāf, Marājiʿ al-dirāsa wa-l-baḥth fī al-fiqh al-Mālikī",
+      "url": "https://malik.awqaf.gov.kw/ar/مراجع%20الدراسة%20والبحث%20في%20الفقه%20المالكي",
+      "kind": "institutional_bibliography",
+      "support": "Broad Maliki bibliography including early books, legal practice, nawāzil and teaching texts. Evident typographical date errors are not imported.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_tdv_farhun",
+      "title": "Cengiz Kallek, Ibn Ferḥūn, Burhāneddin (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/ibn-ferhun-burhaneddin",
+      "kind": "scholarly_reference",
+      "support": "Author death and legal/judicial works, including Tabsira, Durra, Irshād and Tashīl.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_tdv_nawazil",
+      "title": "TDV İslâm Ansiklopedisi: Nevâzil",
+      "url": "https://islamansiklopedisi.org.tr/nevazil",
+      "kind": "scholarly_reference",
+      "support": "Mālikī legal-practice and fatwa collections; Tuḥfat al-ḥukkām commentary tradition.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_tdv_wansharisi",
+      "title": "Necmettin Kızılkaya and Osman Yılmaz, Venşerīsī (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/venserisi",
+      "kind": "scholarly_reference",
+      "support": "Miʿyār identity, completion, sources and subsequent works; author death.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_tdv_burzuli",
+      "title": "Ali Şafak, Burzülī (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/burzuli",
+      "kind": "scholarly_reference",
+      "support": "Burzulī fatwa collection; explicit disagreement about death date.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_tdv_hululu",
+      "title": "TDV İslâm Ansiklopedisi: Hulûlû",
+      "url": "https://islamansiklopedisi.org.tr/hululu",
+      "kind": "scholarly_reference",
+      "support": "Two separately identified Khalīl commentaries and an abridgment of Burzulī fatwas.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_tdv_maziri",
+      "title": "Eyyüp Said Kaya, Māzerī (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/mazeri",
+      "kind": "scholarly_reference",
+      "support": "Author identity, death 536/1141 and legal works.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_tdv_hanbali",
+      "title": "Ferhat Koca, Ḥanbelī Mezhebi (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/hanbeli-mezhebi",
+      "kind": "scholarly_reference",
+      "support": "Hanbali literature, distinct Masāʾil recensions, early compilers and direct textual families.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_tdv_muqni",
+      "title": "Ferhat Koca, al-Muqniʿ (Ibn Qudāma), TDV",
+      "url": "https://islamansiklopedisi.org.tr/el-mukni--ibn-kudame",
+      "kind": "scholarly_reference",
+      "support": "Direct commentaries, abridgments, compilations and glosses in the Muqniʿ/Tanqīḥ/Muntahā/Zād family.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_tdv_buhuti",
+      "title": "ʿAbd al-ʿAẓīm Maḥmūd al-Dīb, Buhūtī (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/buhuti",
+      "kind": "scholarly_reference",
+      "support": "Author death 1051/1641; named commentaries and glosses, ʿUmdat al-ṭālib and its descendants.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_tdv_hajjawi",
+      "title": "Salim Öğüt, Ḥaccāvī (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/haccavi",
+      "kind": "scholarly_reference",
+      "support": "Iqnāʿ, Zād, Ḥawāshī al-Tanqīḥ and respective textual relationships; death 968/1560 with older variant.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_qatar_matalib",
+      "title": "Qatar Ministry of Awqāf: Maṭālib ulī al-nuhā",
+      "url": "https://www.islam.gov.qa/ebooks/eBooks.aspx?BookId=46",
+      "kind": "publisher_catalogue",
+      "support": "Explicit Ghāya/Muntahā/Iqnāʿ compilation and Maṭālib commentary relationship.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_maiman_biblio",
+      "title": "Al-Kulliyyāt al-fiqhiyya fī al-madhhab al-Ḥanbalī: source bibliography",
+      "url": "https://www.almaimanlawfirm.com/images/books/book1.pdf",
+      "kind": "research_book",
+      "support": "Bibliographic identification of Mustawʿib, Muḥarrar, Furūʿ, Tawḍīḥ and major Hanbali sources; pp.97–98.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_kifaya_bnt",
+      "title": "Tunisian National Library: Kifāyat al-ṭālib al-rabbānī",
+      "url": "https://www.bibliotheque.nat.tn/BNT/detailstatic.aspx?RSC_BASE=SYRACUSE&RSC_DOCID=2037102&TITLE=%D9%83%D9%81%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%B7%D8%A7%D9%84%D8%A8-%D8%A7%D9%84%D8%B1%D8%A8%D8%A7%D9%86%D9%8A-%D8%B9%D9%84%D9%89-%D8%B1%D8%B3%D8%A7%D9%84%D8%A9-%D8%A7%D8%A8%D9%86-%D8%A7%D8%A8%D9%8A-%D8%B2%D9%8A%D8%AF-%D8%A7%D9%84%D9%82%D9%8A%D8%B1%D9%88%D8%A7%D9%86%D9%8A&_lg=ar-TN",
+      "kind": "national_library_catalogue",
+      "support": "Names al-Munūfī, 939 AH, and identifies the text as a commentary on Ibn Abī Zayd.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_saghir_mcy",
+      "title": "UAE Ministry of Culture libraries: al-Sharḥ al-ṣaghīr",
+      "url": "https://lib.mcy.gov.ae/cgi-bin/koha/opac-detail.pl?biblionumber=26708",
+      "kind": "national_library_catalogue",
+      "support": "Separates al-Dardīr’s matn/commentary from al-Ṣāwī’s marginal gloss; author life dates.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_sawi_primary",
+      "title": "Bulghat al-sālik: bibliographic card and author preface",
+      "url": "https://islamport.com/l/mlk/3126/1.htm",
+      "kind": "primary_text",
+      "support": "Author preface names Aqrab al-masālik and Bulghat al-sālik; edition distinguishes matn, commentary and gloss.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_kafi_waqfeya",
+      "title": "Waqfeya: Kāfī al-mubtadī min al-ṭullāb",
+      "url": "https://waqfeya.net/books/%D9%83%D8%A7%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D8%A8%D8%AA%D8%AF%D9%8A-%D9%85%D9%86-%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A8-205d41df9d09412194fe57b2836b8c63",
+      "kind": "catalogue",
+      "support": "Title and Ibn Balbān attribution.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_akhsar_preface",
+      "title": "Takwin: Akhṣar al-mukhtaṣarāt, author preface",
+      "url": "https://takw.in/fiqh/hanbali/akhsar-almukhtasarat",
+      "kind": "primary_text_excerpt",
+      "support": "Ibn Balbān expressly identifies Akhṣar as his abridgment of Kāfī al-mubtadī.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_tdv_ibnashir",
+      "title": "Muḥammed Eroğlu, Ibn ʿĀshir al-Fāsī (TDV)",
+      "url": "https://islamansiklopedisi.org.tr/ibn-asir-el-fasi",
+      "kind": "scholarly_reference",
+      "support": "Ibn ʿĀshir death 1040/1631 and explicit Mayyāra commentary on al-Murshid al-muʿīn.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_qatarch_furu",
+      "title": "Shaykh ʿAbd Allāh al-Anṣārī Centre library: Furūʿ and Taṣḥīḥ",
+      "url": "https://www.qatarch.com/library/book/11153",
+      "kind": "institutional_library_catalogue",
+      "support": "Separately identifies Ibn Mufliḥ as base-text author and al-Mardāwī as author of the marginal Taṣḥīḥ; dates 763 and 885 AH.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_nli_lawami",
+      "title": "National Library of Israel: Lawāmiʿ al-durar",
+      "url": "https://www.nli.org.il/ar/books/NNL_ALEPH997007772916905171/NLI",
+      "kind": "national_library_catalogue",
+      "support": "Explicitly identifies the work as a Khalīl commentary, with author name Muḥammad ibn Muḥammad Sālim al-Majlisī and death 1302 AH/1885 CE.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_habashi_majmu",
+      "title": "ʿAbd Allāh al-Ḥabashī, Jāmiʿ al-shurūḥ wa-l-ḥawāshī: Majmūʿ al-Amīr",
+      "url": "https://ablibrary.net/book_content/b/14017/139?lang=ar",
+      "kind": "research_bibliography",
+      "support": "Separately identifies al-Majmūʿ, the author’s commentary and Ḍawʾ al-shumūʿ as his gloss on that commentary, with manuscript locations and print witnesses.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_mujamaah_iqd",
+      "title": "Majmaah University Library: al-ʿIqd al-mufrad",
+      "url": "https://maktabat.mu.edu.sa/cgi-bin/koha/opac-detail.pl?biblionumber=38263&shelfbrowse_itemnumber=746345",
+      "kind": "university_library_catalogue",
+      "support": "Author name Abū ʿAyyāsha Muḥammad al-Bayyūmī al-Damanhūrī and death 1335 AH; distinct Ḥanbalī manual.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_1168",
+      "title": "Al-Khizāna catalogue: الأحكام لعبد الملك بن حبيب",
+      "url": "https://khzanah.com/books/1168",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14552",
+      "title": "Al-Khizāna catalogue: تحرير الكلام في مسائل الإلتزام",
+      "url": "https://khzanah.com/books/14552",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14608",
+      "title": "Al-Khizāna catalogue: عيون الأدلة في مسائل الخلاف بين فقهاء الأمصار - كتاب الطهارة - ط جامعة الإمام",
+      "url": "https://khzanah.com/books/14608",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_16968",
+      "title": "Al-Khizāna catalogue: المختصر الفقهي لابن عرفة",
+      "url": "https://khzanah.com/books/16968",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21688",
+      "title": "Al-Khizāna catalogue: فتح العلي المالك في الفتوى على مذهب الإمام مالك",
+      "url": "https://khzanah.com/books/21688",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_37064",
+      "title": "Al-Khizāna catalogue: خلاصة الجواهر الزكية في فقه المالكية",
+      "url": "https://khzanah.com/books/37064",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_569",
+      "title": "Al-Khizāna catalogue: مواهب الجليل في شرح مختصر خليل",
+      "url": "https://khzanah.com/books/569",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_6193",
+      "title": "Al-Khizāna catalogue: القوانين الفقهية",
+      "url": "https://khzanah.com/books/6193",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14249",
+      "title": "Al-Khizāna catalogue: الدر الثمين والمورد المعين",
+      "url": "https://khzanah.com/books/14249",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14297",
+      "title": "Al-Khizāna catalogue: شرح الزرقاني على مختصر خليل وحاشية البناني",
+      "url": "https://khzanah.com/books/14297",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14593",
+      "title": "Al-Khizāna catalogue: ديوان الأحكام الكبرى أو الإعلام بنوازل الأحكام وقطر من سير الحكام",
+      "url": "https://khzanah.com/books/14593",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_18609",
+      "title": "Al-Khizāna catalogue: شرح الرسالة",
+      "url": "https://khzanah.com/books/18609",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_96257",
+      "title": "Al-Khizāna catalogue: النوادر والزيادات على ما في المدونة من غيرها من الأمهات",
+      "url": "https://khzanah.com/books/96257",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_133369",
+      "title": "Al-Khizāna catalogue: توضيح الأحكام شرح تحفة الحكام",
+      "url": "https://khzanah.com/books/133369",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_147313",
+      "title": "Al-Khizāna catalogue: تحبير المختصر وهو الشرح الوسط لبهرام على مختصر خليل",
+      "url": "https://khzanah.com/books/147313",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_149697",
+      "title": "Al-Khizāna catalogue: لوامع الدرر في هتك استار المختصر",
+      "url": "https://khzanah.com/books/149697",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_150969",
+      "title": "Al-Khizāna catalogue: حاشية الصاوي على الشرح الصغير ط الحلبي",
+      "url": "https://khzanah.com/books/150969",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_13234",
+      "title": "Al-Khizāna catalogue: الشامل في فقه الإمام مالك",
+      "url": "https://khzanah.com/books/13234",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14442",
+      "title": "Al-Khizāna catalogue: التوضيح في شرح مختصر ابن الحاجب",
+      "url": "https://khzanah.com/books/14442",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14594",
+      "title": "Al-Khizāna catalogue: عقد الجواهر الثمينة في مذهب عالم المدينة",
+      "url": "https://khzanah.com/books/14594",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_17682",
+      "title": "Al-Khizāna catalogue: أسهل المدارك «شرح إرشاد السالك في مذهب إمام الأئمة مالك»",
+      "url": "https://khzanah.com/books/17682",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_18146",
+      "title": "Al-Khizāna catalogue: روضة المستبين في شرح كتاب التلقين",
+      "url": "https://khzanah.com/books/18146",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_95578",
+      "title": "Al-Khizāna catalogue: فتاوى قاضي الجماعة ابن سراج الأندلسي",
+      "url": "https://khzanah.com/books/95578",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_96602",
+      "title": "Al-Khizāna catalogue: مجالس ابن القاسم التي سأل عنها مالكا",
+      "url": "https://khzanah.com/books/96602",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_121378",
+      "title": "Al-Khizāna catalogue: التنبيه على مبادئ التوجيه - قسم العبادات",
+      "url": "https://khzanah.com/books/121378",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_91",
+      "title": "Al-Khizāna catalogue: شرح الخرشي على مختصر خليل - ومعه حاشية العدوي",
+      "url": "https://khzanah.com/books/91",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_1267",
+      "title": "Al-Khizāna catalogue: كتاب الحج من مدونة أشهب",
+      "url": "https://khzanah.com/books/1267",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_9627",
+      "title": "Al-Khizāna catalogue: المعونة على مذهب عالم المدينة",
+      "url": "https://khzanah.com/books/9627",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_11355",
+      "title": "Al-Khizāna catalogue: مختصر خليل",
+      "url": "https://khzanah.com/books/11355",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14467",
+      "title": "Al-Khizāna catalogue: عيون المسائل للقاضي عبد الوهاب المالكي",
+      "url": "https://khzanah.com/books/14467",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14555",
+      "title": "Al-Khizāna catalogue: شرح ابن ناجي التنوخي على متن الرسالة",
+      "url": "https://khzanah.com/books/14555",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21611",
+      "title": "Al-Khizāna catalogue: التاج والإكليل لمختصر خليل",
+      "url": "https://khzanah.com/books/21611",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21739",
+      "title": "Al-Khizāna catalogue: بداية المجتهد ونهاية المقتصد",
+      "url": "https://khzanah.com/books/21739",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_32195",
+      "title": "Al-Khizāna catalogue: ضوء الشموع شرح المجموع",
+      "url": "https://khzanah.com/books/32195",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_6196",
+      "title": "Al-Khizāna catalogue: جامع الأمهات",
+      "url": "https://khzanah.com/books/6196",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_9548",
+      "title": "Al-Khizāna catalogue: متن الأخضري في العبادات على مذهب الإمام مالك",
+      "url": "https://khzanah.com/books/9548",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14556",
+      "title": "Al-Khizāna catalogue: شرح زروق على متن الرسالة",
+      "url": "https://khzanah.com/books/14556",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_18116",
+      "title": "Al-Khizāna catalogue: اختلاف أقوال مالك وأصحابه",
+      "url": "https://khzanah.com/books/18116",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21516",
+      "title": "Al-Khizāna catalogue: إرشاد السالك إلى أشرف المسالك في فقه الإمام مالك",
+      "url": "https://khzanah.com/books/21516",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21604",
+      "title": "Al-Khizāna catalogue: الشرح الكبير للشيخ الدردير وحاشية الدسوقي",
+      "url": "https://khzanah.com/books/21604",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_35276",
+      "title": "Al-Khizāna catalogue: أجوبة التسولي عن مسائل الأمير عبد القادر في الجهاد",
+      "url": "https://khzanah.com/books/35276",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_150676",
+      "title": "Al-Khizāna catalogue: جواهر الدرر في حل ألفاظ المختصر",
+      "url": "https://khzanah.com/books/150676",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_1717",
+      "title": "Al-Khizāna catalogue: الذخيرة للقرافي",
+      "url": "https://khzanah.com/books/1717",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14245",
+      "title": "Al-Khizāna catalogue: الإشراف على نكت مسائل الخلاف",
+      "url": "https://khzanah.com/books/14245",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14253",
+      "title": "Al-Khizāna catalogue: التنبيهات المستنبطة على الكتب المدونة والمختلطة",
+      "url": "https://khzanah.com/books/14253",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14605",
+      "title": "Al-Khizāna catalogue: مختصر خليل - ومعه شفاء الغليل في حل مقفل خليل",
+      "url": "https://khzanah.com/books/14605",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_18261",
+      "title": "Al-Khizāna catalogue: الرد على الشافعي لابن اللباد",
+      "url": "https://khzanah.com/books/18261",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21589",
+      "title": "Al-Khizāna catalogue: الفواكه الدواني على رسالة ابن أبي زيد القيرواني",
+      "url": "https://khzanah.com/books/21589",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21597",
+      "title": "Al-Khizāna catalogue: حاشية العدوي على كفاية الطالب الرباني",
+      "url": "https://khzanah.com/books/21597",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_96925",
+      "title": "Al-Khizāna catalogue: التوسط بين مالك وابن القاسم في المسائل التي اختلفا فيها من مسائل المدونة",
+      "url": "https://khzanah.com/books/96925",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_123685",
+      "title": "Al-Khizāna catalogue: مناهج التحصيل ونتائج لطائف التأويل في شرح المدونة وحل مشكلاتها",
+      "url": "https://khzanah.com/books/123685",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_1206",
+      "title": "Al-Khizāna catalogue: المختصر الصغير لابن عبد الحكم «خلافيات في الفقه»",
+      "url": "https://khzanah.com/books/1206",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_1326",
+      "title": "Al-Khizāna catalogue: شرح المختصر الكبير للأبهري",
+      "url": "https://khzanah.com/books/1326",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_7262",
+      "title": "Al-Khizāna catalogue: التلقين في الفقة المالكي",
+      "url": "https://khzanah.com/books/7262",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14310",
+      "title": "Al-Khizāna catalogue: مسائل أبي الوليد ابن رشد",
+      "url": "https://khzanah.com/books/14310",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14590",
+      "title": "Al-Khizāna catalogue: التفريع في فقه الإمام مالك بن أنس",
+      "url": "https://khzanah.com/books/14590",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_18606",
+      "title": "Al-Khizāna catalogue: الذب عن مذهب الإمام مالك",
+      "url": "https://khzanah.com/books/18606",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21614",
+      "title": "Al-Khizāna catalogue: منح الجليل شرح مختصر خليل",
+      "url": "https://khzanah.com/books/21614",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_30174",
+      "title": "Al-Khizāna catalogue: موهوب الجليل في شرح مختصر خليل",
+      "url": "https://khzanah.com/books/30174",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_37326",
+      "title": "Al-Khizāna catalogue: متن العشماوية",
+      "url": "https://khzanah.com/books/37326",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_132974",
+      "title": "Al-Khizāna catalogue: إرشاد السالك إلى أفعال المناسك",
+      "url": "https://khzanah.com/books/132974",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_631",
+      "title": "Al-Khizāna catalogue: أسهل المسالك في مذهب الإمام مالك - ضمن مجموع «الرفعة»",
+      "url": "https://khzanah.com/books/631",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_7367",
+      "title": "Al-Khizāna catalogue: الكافي في فقه أهل المدينة",
+      "url": "https://khzanah.com/books/7367",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_8487",
+      "title": "Al-Khizāna catalogue: التهذيب في اختصار المدونة",
+      "url": "https://khzanah.com/books/8487",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14591",
+      "title": "Al-Khizāna catalogue: التبصرة للخمي",
+      "url": "https://khzanah.com/books/14591",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_18607",
+      "title": "Al-Khizāna catalogue: الجامع لمسائل المدونة",
+      "url": "https://khzanah.com/books/18607",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21735",
+      "title": "Al-Khizāna catalogue: المقدمات الممهدات",
+      "url": "https://khzanah.com/books/21735",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21751",
+      "title": "Al-Khizāna catalogue: البيان والتحصيل",
+      "url": "https://khzanah.com/books/21751",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_587",
+      "title": "Al-Khizāna catalogue: المدونة",
+      "url": "https://khzanah.com/books/587",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_121376",
+      "title": "Al-Khizāna catalogue: شرح التلقين",
+      "url": "https://khzanah.com/books/121376",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_11373",
+      "title": "Al-Khizāna catalogue: الرسالة لابن أبي زيد القيرواني",
+      "url": "https://khzanah.com/books/11373",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_7441",
+      "title": "Al-Khizāna catalogue: الثمر الداني شرح رسالة ابن أبي زيد القيرواني",
+      "url": "https://khzanah.com/books/7441",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_776",
+      "title": "Al-Khizāna catalogue: شرح منتهى الإرادات لابن النجار = معونة أولي النهى",
+      "url": "https://khzanah.com/books/776",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_7360",
+      "title": "Al-Khizāna catalogue: الإقناع في فقه الإمام أحمد بن حنبل",
+      "url": "https://khzanah.com/books/7360",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_13664",
+      "title": "Al-Khizāna catalogue: منتهى الإرادات في جمع المقنع مع التنقيح وزيادات - ت التركي",
+      "url": "https://khzanah.com/books/13664",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_16952",
+      "title": "Al-Khizāna catalogue: المنور في راجح المحرر",
+      "url": "https://khzanah.com/books/16952",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_147064",
+      "title": "Al-Khizāna catalogue: الوجيز في الفقه على مذهب الإمام أحمد بن حنبل",
+      "url": "https://khzanah.com/books/147064",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_147656",
+      "title": "Al-Khizāna catalogue: أخصر المختصرات - ط ركائز",
+      "url": "https://khzanah.com/books/147656",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_1153",
+      "title": "Al-Khizāna catalogue: الشرح الكبير على المقنع - ط المنار",
+      "url": "https://khzanah.com/books/1153",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_1241",
+      "title": "Al-Khizāna catalogue: هداية الراغب لشرح عمدة الطالب - ط ركائز",
+      "url": "https://khzanah.com/books/1241",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_2977",
+      "title": "Al-Khizāna catalogue: مختصر الخرقى",
+      "url": "https://khzanah.com/books/2977",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_6105",
+      "title": "Al-Khizāna catalogue: مسائل الإمام أحمد رواية ابنه عبد الله",
+      "url": "https://khzanah.com/books/6105",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_13785",
+      "title": "Al-Khizāna catalogue: الفوائد المنتخبات في شرح أخصر المختصرات",
+      "url": "https://khzanah.com/books/13785",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14153",
+      "title": "Al-Khizāna catalogue: الروض الندي شرح كافي المبتدي",
+      "url": "https://khzanah.com/books/14153",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_18353",
+      "title": "Al-Khizāna catalogue: حاشية ابن قائد على منتهى الإرادات",
+      "url": "https://khzanah.com/books/18353",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_19233",
+      "title": "Al-Khizāna catalogue: المقنع في فقه الإمام أحمد - ت الأرناؤوط",
+      "url": "https://khzanah.com/books/19233",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21609",
+      "title": "Al-Khizāna catalogue: الإنصاف في معرفة الراجح من الخلاف - ت الفقي",
+      "url": "https://khzanah.com/books/21609",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_30057",
+      "title": "Al-Khizāna catalogue: التعليقة الكبيرة - أبو يعلى - من الأشربة للأيمان",
+      "url": "https://khzanah.com/books/30057",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_97809",
+      "title": "Al-Khizāna catalogue: حاشية اللبدي على نيل المآرب",
+      "url": "https://khzanah.com/books/97809",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_150961",
+      "title": "Al-Khizāna catalogue: الفواكه العديدة في المسائل المفيدة",
+      "url": "https://khzanah.com/books/150961",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_1202",
+      "title": "Al-Khizāna catalogue: العقد المفرد في الفقه على مذهب الإمام أحمد",
+      "url": "https://khzanah.com/books/1202",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_6106",
+      "title": "Al-Khizāna catalogue: مسائل الإمام أحمد رواية ابنه أبي الفضل صالح",
+      "url": "https://khzanah.com/books/6106",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_6538",
+      "title": "Al-Khizāna catalogue: المنح الشافيات بشرح مفردات الإمام أحمد",
+      "url": "https://khzanah.com/books/6538",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_14386",
+      "title": "Al-Khizāna catalogue: عمدة الطالب لنيل المآرب",
+      "url": "https://khzanah.com/books/14386",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21642",
+      "title": "Al-Khizāna catalogue: كشاف القناع عن متن الإقناع - ت مصيلحي",
+      "url": "https://khzanah.com/books/21642",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_30058",
+      "title": "Al-Khizāna catalogue: مسلك الراغب لشرح دليل الطالب - ت الهزاني وإدريس",
+      "url": "https://khzanah.com/books/30058",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_30066",
+      "title": "Al-Khizāna catalogue: فتح وهاب المآرب على دليل الطالب - ت الجماز",
+      "url": "https://khzanah.com/books/30066",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_147658",
+      "title": "Al-Khizāna catalogue: الروض المربع بشرح زاد المستقنع - ط ركائز",
+      "url": "https://khzanah.com/books/147658",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_219",
+      "title": "Al-Khizāna catalogue: الرعاية الصغرى في الفقه",
+      "url": "https://khzanah.com/books/219",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_795",
+      "title": "Al-Khizāna catalogue: المنهج الصحيح في الجمع بين ما في المقنع والتنقيح",
+      "url": "https://khzanah.com/books/795",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_6115",
+      "title": "Al-Khizāna catalogue: كشف المخدرات لشرح أخصر المختصرات",
+      "url": "https://khzanah.com/books/6115",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_11315",
+      "title": "Al-Khizāna catalogue: عمدة الفقه",
+      "url": "https://khzanah.com/books/11315",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_13571",
+      "title": "Al-Khizāna catalogue: الإرشاد إلى سبيل الرشاد",
+      "url": "https://khzanah.com/books/13571",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_17363",
+      "title": "Al-Khizāna catalogue: التذكرة في الفقه على مذهب الإمام أحمد",
+      "url": "https://khzanah.com/books/17363",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_20699",
+      "title": "Al-Khizāna catalogue: الممتع في شرح المقنع - ت ابن دهيش ط 3",
+      "url": "https://khzanah.com/books/20699",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21619",
+      "title": "Al-Khizāna catalogue: المبدع في شرح المقنع - ط العلمية",
+      "url": "https://khzanah.com/books/21619",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21731",
+      "title": "Al-Khizāna catalogue: الكافي في فقه الإمام أحمد",
+      "url": "https://khzanah.com/books/21731",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_7460",
+      "title": "Al-Khizāna catalogue: المحرر في الفقه على مذهب أحمد - ومعه النكت والفوائد السنية",
+      "url": "https://khzanah.com/books/7460",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_10908",
+      "title": "Al-Khizāna catalogue: العدة شرح العمدة",
+      "url": "https://khzanah.com/books/10908",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_11196",
+      "title": "Al-Khizāna catalogue: دليل الطالب لنيل المطالب",
+      "url": "https://khzanah.com/books/11196",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_12052",
+      "title": "Al-Khizāna catalogue: الفروع وتصحيح الفروع",
+      "url": "https://khzanah.com/books/12052",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_16772",
+      "title": "Al-Khizāna catalogue: حاشية الخلوتي على منتهى الإرادات",
+      "url": "https://khzanah.com/books/16772",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_29796",
+      "title": "Al-Khizāna catalogue: بداية العابد وكفاية الزاهد - ت العجمي",
+      "url": "https://khzanah.com/books/29796",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_96876",
+      "title": "Al-Khizāna catalogue: نيل المآرب بشرح دليل الطالب",
+      "url": "https://khzanah.com/books/96876",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_709",
+      "title": "Al-Khizāna catalogue: التنقيح المشبع في تحرير أحكام المقنع - مع حواشي التنقيح",
+      "url": "https://khzanah.com/books/709",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_3125",
+      "title": "Al-Khizāna catalogue: مسائل الإمام أحمد وإسحاق بن راهويه",
+      "url": "https://khzanah.com/books/3125",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_20589",
+      "title": "Al-Khizāna catalogue: غاية المنتهى في جمع الإقناع والمنتهى ط غراس",
+      "url": "https://khzanah.com/books/20589",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21677",
+      "title": "Al-Khizāna catalogue: مطالب أولي النهى في شرح غاية المنتهى",
+      "url": "https://khzanah.com/books/21677",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21693",
+      "title": "Al-Khizāna catalogue: شرح منتهى الإرادات للبهوتي = دقائق أولي النهى ط عالم الكتب",
+      "url": "https://khzanah.com/books/21693",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_6094",
+      "title": "Al-Khizāna catalogue: النكت والفوائد السنية على مشكل المحرر",
+      "url": "https://khzanah.com/books/6094",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_6910",
+      "title": "Al-Khizāna catalogue: المغني لابن قدامة - ت التركي",
+      "url": "https://khzanah.com/books/6910",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_11230",
+      "title": "Al-Khizāna catalogue: زاد المستقنع في اختصار المقنع - ت العسكر",
+      "url": "https://khzanah.com/books/11230",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_13246",
+      "title": "Al-Khizāna catalogue: الروايتين والوجهين - المسائل الفقهية منه",
+      "url": "https://khzanah.com/books/13246",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_26094",
+      "title": "Al-Khizāna catalogue: الهداية على مذهب الإمام أحمد",
+      "url": "https://khzanah.com/books/26094",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_151",
+      "title": "Al-Khizāna catalogue: شرح عمدة الفقه - ابن تيمية - ط عطاءات العلم",
+      "url": "https://khzanah.com/books/151",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_1287",
+      "title": "Al-Khizāna catalogue: شرح المقنع للبهاء المقدسي",
+      "url": "https://khzanah.com/books/1287",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21487",
+      "title": "Al-Khizāna catalogue: مسائل الإمام أحمد رواية أبي داود السجستاني",
+      "url": "https://khzanah.com/books/21487",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_21743",
+      "title": "Al-Khizāna catalogue: شرح الزركشي على مختصر الخرقي",
+      "url": "https://khzanah.com/books/21743",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_30143",
+      "title": "Al-Khizāna catalogue: المفردات",
+      "url": "https://khzanah.com/books/30143",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "mh_cat_147311",
+      "title": "Al-Khizāna catalogue: مختصر الإفادات في ربع العبادات والآداب وزيادات",
+      "url": "https://khzanah.com/books/147311",
+      "kind": "catalogue",
+      "support": "Work title, attribution and digitized witness. Composite volumes are split into their distinct authored works in this corpus.",
+      "accessed": "2026-11-10"
+    }
+  ],
+  "relations": [
+    {
+      "from": "mh_maliki_11355",
+      "to": "mh_maliki_569",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_569",
+        "mh_darifta_khalil"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11355",
+      "to": "mh_maliki_147313",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_147313",
+        "mh_darifta_khalil"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11355",
+      "to": "mh_maliki_149697",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_149697",
+        "mh_nli_lawami"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11355",
+      "to": "mh_maliki_14297",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_14297",
+        "mh_darifta_khalil"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11355",
+      "to": "mh_maliki_91",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_91",
+        "mh_darifta_khalil"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11355",
+      "to": "mh_maliki_21611",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_21611",
+        "mh_darifta_khalil"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11355",
+      "to": "mh_maliki_21604",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_21604",
+        "mh_darifta_khalil"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11355",
+      "to": "mh_maliki_150676",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_150676"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11355",
+      "to": "mh_maliki_21614",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_21614",
+        "mh_darifta_khalil"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11355",
+      "to": "mh_maliki_30174",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_30174"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11355",
+      "to": "mh_maliki_hululukabir",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_tdv_hululu"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11355",
+      "to": "mh_maliki_hululusaghir",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_tdv_hululu"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11355",
+      "to": "mh_maliki_14605",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "mh_cat_14605",
+        "mh_darifta_khalil"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11373",
+      "to": "mh_maliki_18609",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_18609",
+        "mh_tdv_risala",
+        "mh_awqaf_maliki"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11373",
+      "to": "mh_maliki_14555",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_14555"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11373",
+      "to": "mh_maliki_14556",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_14556"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11373",
+      "to": "mh_maliki_21589",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_21589"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11373",
+      "to": "mh_maliki_7441",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_7441"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11373",
+      "to": "mh_maliki_kifaya",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_kifaya_bnt"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11373",
+      "to": "mh_maliki_qalshani",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_tdv_risala",
+        "mh_awqaf_maliki"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_11373",
+      "to": "mh_maliki_fakihani",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_tdv_risala",
+        "mh_awqaf_maliki"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_kifaya",
+      "to": "mh_maliki_21597",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "mh_cat_21597"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_14297",
+      "to": "mh_maliki_banani",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "mh_cat_14297",
+        "mh_darifta_khalil"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_91",
+      "to": "mh_maliki_adawikhurashi",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "mh_cat_91",
+        "mh_darifta_khalil"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_21604",
+      "to": "mh_maliki_dasuqi",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "mh_cat_21604",
+        "mh_darifta_khalil"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_aqrab",
+      "to": "mh_maliki_sharhsaghir",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_saghir_mcy",
+        "mh_sawi_primary"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_sharhsaghir",
+      "to": "mh_maliki_150969",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "mh_cat_150969",
+        "mh_saghir_mcy",
+        "mh_sawi_primary"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_6196",
+      "to": "mh_maliki_14442",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_14442",
+        "mh_darifta_khalil"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_6196",
+      "to": "mh_maliki_tashil",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_tdv_farhun"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_7262",
+      "to": "mh_maliki_121376",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_121376",
+        "mh_tdv_maziri",
+        "mh_tdv_maliki"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_7262",
+      "to": "mh_maliki_18146",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_18146"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_21516",
+      "to": "mh_maliki_17682",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_17682"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_murshid",
+      "to": "mh_maliki_14249",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_14249",
+        "mh_tdv_ibnashir"
+      ],
+      "note": "Mayyāra’s commentary on Ibn ʿĀshir’s al-Murshid al-muʿīn.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_majmu",
+      "to": "mh_maliki_sharhmajmu",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_habashi_majmu"
+      ],
+      "note": "Al-Amīr’s commentary on his own al-Majmūʿ.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_sharhmajmu",
+      "to": "mh_maliki_32195",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "mh_habashi_majmu"
+      ],
+      "note": "Al-Amīr’s gloss on his own commentary; not a second title for the commentary itself.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_tuhfa",
+      "to": "mh_maliki_133369",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_133369"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_mukhtasarkabir",
+      "to": "mh_maliki_1326",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_1326",
+        "mh_tdv_maliki"
+      ],
+      "note": "Al-Abharī comments on Ibn ʿAbd al-Ḥakam’s larger Mukhtaṣar.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_587",
+      "to": "mh_maliki_8487",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "mh_cat_8487",
+        "mh_awqaf_maliki"
+      ],
+      "note": "Al-Barādhiʿī’s titled abridgment of the Mudawwana.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_587",
+      "to": "mh_maliki_123685",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_123685"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_587",
+      "to": "mh_maliki_14253",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_14253"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_utbiyya",
+      "to": "mh_maliki_21751",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_tdv_maliki",
+        "mh_cat_21751"
+      ],
+      "note": "Ibn Rushd’s commentary on the Mustakhraja/ʿUtbiyya.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_maliki_muwatta",
+      "to": "mh_maliki_muntqa",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_awqaf_maliki",
+        "mh_tdv_wansharisi"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_19233",
+      "to": "mh_hanbali_1153",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_1153"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_19233",
+      "to": "mh_hanbali_21619",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_21619"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_19233",
+      "to": "mh_hanbali_21609",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_21609"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_19233",
+      "to": "mh_hanbali_20699",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_20699"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_19233",
+      "to": "mh_hanbali_1287",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_1287"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_19233",
+      "to": "mh_hanbali_mutli",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_tdv_muqni"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_19233",
+      "to": "mh_hanbali_11230",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "mh_tdv_hajjawi"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_11230",
+      "to": "mh_hanbali_147658",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_tdv_buhuti"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_21609",
+      "to": "mh_hanbali_709",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "mh_tdv_muqni"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_709",
+      "to": "mh_hanbali_hawashi",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "mh_tdv_hajjawi"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_19233",
+      "to": "mh_hanbali_13664",
+      "type": "synthesis",
+      "evidence_source_ids": [
+        "mh_tdv_muqni"
+      ],
+      "note": "Muntahā combines material from al-Muqniʿ and al-Tanqīḥ, with additions.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_19233",
+      "to": "mh_hanbali_795",
+      "type": "synthesis",
+      "evidence_source_ids": [
+        "mh_tdv_muqni",
+        "mh_cat_795"
+      ],
+      "note": "Bibliographically attested combination; source describes it as unfinished.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_19233",
+      "to": "mh_hanbali_tawdih",
+      "type": "synthesis",
+      "evidence_source_ids": [
+        "mh_tdv_muqni",
+        "mh_maiman_biblio"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_709",
+      "to": "mh_hanbali_13664",
+      "type": "synthesis",
+      "evidence_source_ids": [
+        "mh_tdv_muqni"
+      ],
+      "note": "Muntahā combines material from al-Muqniʿ and al-Tanqīḥ, with additions.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_709",
+      "to": "mh_hanbali_795",
+      "type": "synthesis",
+      "evidence_source_ids": [
+        "mh_tdv_muqni",
+        "mh_cat_795"
+      ],
+      "note": "Bibliographically attested combination; source describes it as unfinished.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_709",
+      "to": "mh_hanbali_tawdih",
+      "type": "synthesis",
+      "evidence_source_ids": [
+        "mh_tdv_muqni",
+        "mh_maiman_biblio"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_13664",
+      "to": "mh_hanbali_776",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_tdv_muqni",
+        "mh_cat_776"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_13664",
+      "to": "mh_hanbali_21693",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_tdv_muqni",
+        "mh_cat_21693",
+        "mh_tdv_buhuti"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_13664",
+      "to": "mh_hanbali_18353",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "mh_cat_18353"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_13664",
+      "to": "mh_hanbali_16772",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "mh_cat_16772"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_7360",
+      "to": "mh_hanbali_21642",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_tdv_buhuti"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_7360",
+      "to": "mh_hanbali_20589",
+      "type": "synthesis",
+      "evidence_source_ids": [
+        "mh_tdv_muqni",
+        "mh_qatar_matalib"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_13664",
+      "to": "mh_hanbali_20589",
+      "type": "synthesis",
+      "evidence_source_ids": [
+        "mh_tdv_muqni",
+        "mh_qatar_matalib"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_20589",
+      "to": "mh_hanbali_21677",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_qatar_matalib"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_2977",
+      "to": "mh_hanbali_6910",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_tdv_hanbali",
+        "mh_cat_6910",
+        "mh_tdv_muqni"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_2977",
+      "to": "mh_hanbali_21743",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_tdv_hanbali",
+        "mh_cat_21743"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_2977",
+      "to": "mh_hanbali_muqnibanna",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_tdv_hanbali",
+        "mh_tdv_hanbali"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_11315",
+      "to": "mh_hanbali_10908",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_10908"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_11315",
+      "to": "mh_hanbali_151",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_151"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_14386",
+      "to": "mh_hanbali_1241",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_tdv_buhuti",
+        "mh_cat_1241"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_11196",
+      "to": "mh_hanbali_30058",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_30058"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_11196",
+      "to": "mh_hanbali_30066",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_30066"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_11196",
+      "to": "mh_hanbali_96876",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_96876"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_96876",
+      "to": "mh_hanbali_97809",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "mh_cat_97809"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_147656",
+      "to": "mh_hanbali_13785",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_13785"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_147656",
+      "to": "mh_hanbali_6115",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_6115"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_kafimubtadi",
+      "to": "mh_hanbali_147656",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "mh_akhsar_preface"
+      ],
+      "note": "Author’s preface explicitly names Kāfī al-mubtadī as the source abridged.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_kafimubtadi",
+      "to": "mh_hanbali_14153",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "mh_cat_14153"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_7460",
+      "to": "mh_hanbali_6094",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "mh_cat_6094"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    },
+    {
+      "from": "mh_hanbali_12052",
+      "to": "mh_hanbali_tashih",
+      "type": "critical_gloss",
+      "evidence_source_ids": [
+        "mh_cat_12052",
+        "mh_tdv_hanbali",
+        "mh_qatarch_furu"
+      ],
+      "note": "Named title/bibliographic description explicitly identifies the base text.",
+      "verification": "bibliographic_relationship",
+      "direction": "base_to_derivative"
+    }
+  ],
+  "counts": {
+    "works": 163,
+    "maliki": 97,
+    "hanbali": 66,
+    "sources": 157,
+    "relations": 82
+  },
+  "exclusions": [
+    "Modern Salafi commentaries were not used to inflate the classical corpus.",
+    "The duplicate editions and excerpt volumes in the catalogues are not distinct-work additions.",
+    "Al-Qarāfī-attributed Sharḥ al-Tafrīʿ was withheld pending stronger work-identity confirmation.",
+    "Burzulī alternative titles are not multiplied into separate works.",
+    "No places of composition or exact composition years have been inferred from author affiliation or death."
+  ]
+}

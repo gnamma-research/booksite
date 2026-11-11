@@ -17,7 +17,7 @@ permissions:
 
 jobs:
   atlas-browser:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
@@ -31,6 +31,9 @@ jobs:
       - name: Verify canonical source integrity
         run: |
           node --check research/intellectual-atlas/atlas-unified.js
+          python research/intellectual-atlas/corpora/build_fiqh_research.py
+          git diff --exit-code -- research/intellectual-atlas/corpora/fiqh-research.json research/intellectual-atlas/corpora/hanafi-atlas-benchmark.json research/intellectual-atlas/corpora/fiqh-coverage.html
+          node research/intellectual-atlas/tests/verify_fiqh_research.js
           python - <<'PY'
           import json
           from pathlib import Path

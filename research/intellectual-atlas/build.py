@@ -11,6 +11,11 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parent
+# Rebuild the distinct-work register from committed, source-linked research.
+subprocess.run([sys.executable, str(ROOT/'corpora'/'build_fiqh_research.py')],
+               check=True, capture_output=True, text=True)
+fiqh_research=json.loads((ROOT/'corpora'/'fiqh-research.json').read_text(encoding='utf-8'))
+hanafi_benchmark=json.loads((ROOT/'corpora'/'hanafi-atlas-benchmark.json').read_text(encoding='utf-8'))
 # Corpus-level evidence and byte integrity are validated independently of
 # the historical atlas. A separate OpenITI version is NOT a new atlas node.
 corpus_registry_file = ROOT/'corpora'/'registry.json'
@@ -129,8 +134,8 @@ manifest = {
     'title': 'Texts in Time · Islamic Intellectual Atlas',
     'revision': 'tajrid-critical-links-8-2026-10-31',
     'status': 'working research',
-    'ui_revision': 'evidence-dated-undated-source-workbench-2026-11-09',
-    'mobile_interface_note': 'The main UI has Hanafi-inspired tabs By century, By region and Source network, with one subject selector and search. A georeferenced coastal map shows separately documented author and work events, and unplaced source records remain counted. Source network and book timeline remain available across sciences.',
+    'ui_revision': 'hanafi-geography-map-and-source-network-fiqh-research-2026-11-10',
+    'mobile_interface_note': 'Books by century opens by default and all works are browsable. Fiqh has visible researched-work counts by madhhab; imported source records remain optional. One subject selector, search and shared views serve all sciences. The separate geographical map distinguishes documented author and work events from unlocated works.',
     'whole_range_note': 'Use the shared year controls and zoomable era clusters; switch sciences without changing map interface.',
     'date_marker_note': 'Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.',
     'entries': len(data['nodes']),
@@ -142,9 +147,27 @@ manifest = {
     'neoplatonic_new_relationships': 36,
     'scholarly_networks': len(data['history']['networks']),
     'classification_layers': ['intellectual tradition','textual family','regional/historical network','browse discipline','source-linked bibliographic category map','separate source-text witness catalogue'],
-    'visual_modes': ['Hanafi-inspired By century map','By region interactive geography','source-backed author events','documented work composition and recension pins','source and reception network','shared historical book timeline','principal texts','bibliographic catalogue'],
+    'visual_modes': ['Books by century (default)','source and reception network','geographical map','By region interactive geography','principal texts','bibliographic catalogue'],
     'discipline_nav': ['mapped works','philosophy, kalām and logic','fiqh and uṣūl (integrated cited bibliography)','hadith (SVG book authorities)','tafsīr (SVG book authorities)','taṣawwuf (chronological source-work atlas)','Arabic language sciences (integrated cited bibliography)'],
     'textual_family_routes': len(families),
+    'researched_fiqh': {
+        'data_url':'corpora/fiqh-research.json',
+        'coverage_and_comparison_url':'corpora/fiqh-coverage.html',
+        **fiqh_research['metadata']['summary'],
+        'counting_policy':fiqh_research['metadata']['counting_policy'],
+        'scope':fiqh_research['metadata']['scope'],
+        'full_text_acquisition_or_collation_claimed':False,
+    },
+    'hanafi_atlas_benchmark': {
+        'data_url':'corpora/hanafi-atlas-benchmark.json',
+        'catalogue_entries':len(hanafi_benchmark['works']),
+        'core_entries':sum(w['benchmark_group']=='core68' for w in hanafi_benchmark['works']),
+        'textual_relations':len(hanafi_benchmark['relations']),
+        'contextual_relations_kept_separate':len(hanafi_benchmark['contextual_relations']),
+        'original_reading_collection_books':23,
+        'original_readers_reproduced_locally':False,
+        'attribution_url':'https://www.hanafiatlas.com/about',
+    },
     'source_corpus': {
         'url': 'corpora/',
         'index': 'corpora/registry.json',
