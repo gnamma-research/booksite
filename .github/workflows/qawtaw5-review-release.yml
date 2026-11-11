@@ -2,33 +2,143 @@ name: Qawtaw5 complete electronic-text review release
 on:
   push:
     branches: [qawtaw5-20261111-complete-review]
-    paths:
-      - '.github/workflows/qawtaw5-review-release.yml'
+    paths: ['.github/workflows/qawtaw5-review-release.yml']
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 concurrency:
-  group: qawtaw5-source-snapshot
+  group: qawtaw5-complete-release
   cancel-in-progress: false
 jobs:
-  snapshot:
+  release:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
+    env:
+      P: texts/al-turka/qawaid-al-tawhid
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: qawtaw5-20261111-complete-review
           sparse-checkout: |
             texts/al-turka/qawaid-al-tawhid
             assets
           fetch-depth: 1
-      - name: Record source revision
+      - name: Check the recorded comparison and apply only exact English corrections
         run: |
-          git rev-parse HEAD > texts/al-turka/qawaid-al-tawhid/qa/qawtaw5-snapshot-commit.txt
+          git rev-parse HEAD > /tmp/qawtaw5-input-commit
+          python "$P/qa/qawtaw5_release.py"
+          python "$P/qa/finalize-reading-edition.py"
+          node "$P/qa/generate-clause-ledger.mjs"
+          python "$P/qa/qawtaw5_release.py" --verify
+      - name: Install browser and Arabic PDF rendering tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core libpango-1.0-0 libpangocairo-1.0-0 poppler-utils
+          python -m pip install --quiet weasyprint pypdf playwright
+          python -m playwright install --with-deps chromium
+      - name: Test actual mobile-size Chromium commentary and offline reader
+        run: |
+          python "$P/qa/test-commentary-browser.py"
+          python "$P/qa/check-standalone-browser.py" --browsers chromium --screenshots /tmp/qawtaw5-browser
+      - name: Test the complete review interface and unresolved-reading filter
+        run: |
+          python -m http.server 8765 >/tmp/qawtaw5-http.log 2>&1 &
+          SERVER=$!
+          trap 'kill "$SERVER"' EXIT
+          python - <<'PY'
+          import json,pathlib
+          from playwright.sync_api import sync_playwright
+          p=pathlib.Path('texts/al-turka/qawaid-al-tawhid')
+          out=pathlib.Path('/tmp/qawtaw5-browser');out.mkdir(exist_ok=True)
+          with sync_playwright() as play:
+              browser=play.chromium.launch(headless=True)
+              page=browser.new_page(viewport={'width':390,'height':844})
+              errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
+              page.goto('http://127.0.0.1:8765/'+str(p)+'/clause-review.html',wait_until='networkidle')
+              page.wait_for_function("document.querySelector('#n-all').textContent==='5,520'")
+              assert page.locator('#n-pending').inner_text()=='0'
+              assert page.locator('#n-units').inner_text()=='171'
+              page.select_option('#unit','SH-002')
+              assert 'invalid [sic]' in page.locator('#clauses').inner_text()
+              page.select_option('#filter','unresolved')
+              assert page.locator('#clauses article').count()>0
+              page.screenshot(path=str(out/'review-unresolved-mobile.png'),full_page=False)
+              page.select_option('#filter','pending')
+              assert page.locator('#clauses article').count()==0
+              page.select_option('#filter','all');page.select_option('#unit','SH-013')
+              assert 'one in every respect' in page.locator('#clauses').inner_text()
+              page.screenshot(path=str(out/'review-complete-mobile.png'),full_page=False)
+              assert not errors,errors
+              browser.close()
+          (p/'qa/qawtaw5-review-browser.json').write_text(json.dumps({'passed':True,'browser':'Chromium','viewport':[390,844],'allSegments':5520,'units':171,'pending':0,'unresolvedFilter':True,'sourcePolarityAndUnityCorrections':True,'realIOSSafariTested':False},indent=2)+'\n')
+          PY
+      - name: Build all five PDFs only after recompiling the commentary
+        run: python "$P/pdf/build_editions.py"
+      - name: Verify PDF hashes, pages and corrected English; render selected pages
+        run: |
+          mkdir -p /tmp/qawtaw5-pdf
+          pdftotext "$P/pdf/qawaid-english-reading.pdf" /tmp/qawtaw5-pdf/english.txt
+          python - <<'PY'
+          import json,pathlib,hashlib,re,subprocess,os
+          from pypdf import PdfReader
+          p=pathlib.Path('texts/al-turka/qawaid-al-tawhid')
+          m=json.loads((p/'pdf/manifest.json').read_text());assert len(m['files'])==5
+          for row in m['files']:
+              f=p/'pdf'/row['filename']
+              assert f.read_bytes().startswith(b'%PDF-')
+              assert len(PdfReader(str(f)).pages)==row['pages']
+              assert hashlib.sha256(f.read_bytes()).hexdigest()==row['sha256']
+          text=re.sub(r'\s+',' ',pathlib.Path('/tmp/qawtaw5-pdf/english.txt').read_text())
+          for needle in ['invalid [sic]','also constitute that subject','one in every respect','influence generated by that recipient','sages devoted to divine wisdom','sound foundations']:
+              assert needle in text,needle
+          selected=[('qawaid-bilingual-reading.pdf',3,'bilingual-p3'),('qawaid-bilingual-study.pdf',4,'study-p4'),('qawaid-bilingual-reference.pdf',m['files'][-1]['pages'],'reference-final')]
+          for filename,n,label in selected:
+              subprocess.run(['pdftoppm','-f',str(n),'-l',str(n),'-scale-to','1300','-png','-singlefile',str(p/'pdf'/filename),'/tmp/qawtaw5-pdf/'+label],check=True)
+          evidence={'date':'2026-11-11','inputCommit':pathlib.Path('/tmp/qawtaw5-input-commit').read_text().strip(),'workflowRun':os.environ.get('GITHUB_RUN_ID'),'comparison':json.loads((p/'qa/qawtaw5-summary.json').read_text()),'releaseTests':json.loads((p/'qa/qawtaw5-release-tests.json').read_text()),'reviewBrowser':json.loads((p/'qa/qawtaw5-review-browser.json').read_text()),'pdfs':m['files'],'pdfCorrectedEnglishChecked':True,'selectedPagesRendered':True,'realDeviceIOSSafariTested':False,'liveDeploymentVerified':False}
+          (p/'qa/qawtaw5-publication-evidence.json').write_text(json.dumps(evidence,ensure_ascii=False,indent=2)+'\n')
+          print(json.dumps({'passed':True,'pdfs':[(x['filename'],x['pages']) for x in m['files']]}))
+          PY
+      - name: Verify all source Arabic remains unchanged
+        run: |
+          python "$P/qa/qawtaw5_release.py" --verify
+          python - <<'PY'
+          import json,pathlib,subprocess,hashlib
+          p=pathlib.Path('texts/al-turka/qawaid-al-tawhid')
+          baseline=json.loads(subprocess.check_output(['git','show','HEAD:'+str(p/'data/commentary-corpus.json')]))
+          current=json.loads((p/'data/commentary-corpus.json').read_text())
+          before={u['id']:u['arabic'] for u in baseline['units']}
+          assert before=={u['id']:u['arabic'] for u in current['units']}
+          assert sum(bool(u.get('precedingMatn')) for u in current['units'])==4
+          for u in current['units']:
+              old=next(x for x in baseline['units'] if x['id']==u['id'])
+              for key in ['arabicSourceTranscription','sourceTextSha256','precedingMatn']:
+                  assert old.get(key)==u.get(key),(u['id'],key)
+          print('All 110 commentary Arabic texts, 64 raw source records and four ancestral bridges unchanged')
+          PY
+      - name: Commit verified source and derived files to the review branch only
+        run: |
+          git config user.name 'Gnamma editorial release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin qawtaw5-20261111-complete-review
+          test "$(git rev-parse origin/qawtaw5-20261111-complete-review)" = "$(cat /tmp/qawtaw5-input-commit)"
+          git add "$P"
+          git reset -- "$P/qa/__pycache__" "$P/qa/standalone-browser" || true
+          if ! git diff --cached --quiet; then
+            git commit -m 'Complete Qawtaw5 electronic comparison: 171 units, 5520 segments, corrected reader and five PDFs'
+            git push origin HEAD:qawtaw5-20261111-complete-review
+          fi
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: qawtaw5-source-snapshot
+          name: qawtaw5-complete-release
           path: |
             texts/al-turka/qawaid-al-tawhid/
-            assets/gnamma-mark.svg
-            assets/gnamma-landscape.webp
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawtaw5-visual-evidence
+          path: |
+            /tmp/qawtaw5-browser/
+            /tmp/qawtaw5-pdf/*.png
           retention-days: 30
