@@ -1,0 +1,63 @@
+name: Tahdhib Stage113 source-complete build
+on:
+  workflow_dispatch:
+  push:
+    branches: ['tahdhib-source-complete-stage113-20261111']
+    paths:
+      - '.github/workflows/tahdhib-stage113-build.yml'
+      - 'tools/tahdhib/build_stage113.py'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-concepts-stage113-source.json'
+permissions:
+  contents: write
+concurrency:
+  group: tahdhib-stage113-generated-source
+  cancel-in-progress: true
+jobs:
+  generate-verify-save:
+    if: github.ref == 'refs/heads/tahdhib-source-complete-stage113-20261111'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: tahdhib-source-complete-stage113-20261111
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install PyYAML==6.0.2
+      - name: Derive full corpus and exact progress from immutable sources
+        run: python tools/tahdhib/build_stage113.py
+      - name: Run all original source and logic checks plus the new manifest audit
+        run: python tools/tahdhib/run_ci_contract.py logical-core
+      - name: Syntax-check the new overlay
+        run: node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-concepts-stage113-patch.js
+      - name: Run full original Chromium and WebKit regression commands
+        run: python tools/tahdhib/run_ci_contract.py reader-chromium
+      - name: Save generated products to this feature branch only
+        env:
+          TARGET_BRANCH: tahdhib-source-complete-stage113-20261111
+        run: |
+          test "$GITHUB_REF" = "refs/heads/$TARGET_BRANCH"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add texts/al-taftazani/tahdhib-al-mantiq/edition/
+          git add tools/tahdhib/check_stage_handoff.py tools/tahdhib/check_stage112_archive.py
+          git add tools/tahdhib/handoff_reader_qa.mjs tools/tahdhib/handoff_reader_stage112_archive.mjs
+          if ! git diff --cached --quiet; then
+            git commit -m 'Generate verified Stage113 full Arabic-English corpus, manifest, reader and recovery handoff'
+            git push origin "HEAD:refs/heads/$TARGET_BRANCH"
+          fi
+          git rev-parse HEAD
+      - name: Export inspectable recovery bundle (verification status is in this run)
+        if: always()
+        run: python tools/tahdhib/build_recovery_bundle.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tahdhib-stage113-build-output
+          path: tahdhib-recovery-export/
+          if-no-files-found: warn
+          retention-days: 30
