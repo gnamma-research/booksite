@@ -1,0 +1,34 @@
+name: Daruri Arabic Pango Word Geometry Pilot
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/daruri-arabic-pango-pilot-20261022]
+    paths:
+      - '.github/workflows/daruri-arabic-pango-pilot.yml'
+      - 'daruri/qa/probe_arabic_pango_layout.py'
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install matching PDF layout dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
+          python -m pip install "weasyprint==68.0" "PyMuPDF==1.26.7"
+      - name: Compare Pango's exact Arabic word boxes with the untouched published PDFs
+        run: python daruri/qa/probe_arabic_pango_layout.py
+      - name: Keep validated Arabic test layout reports and sample highlight pages
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-arabic-word-geometry-proof
+          path: daruri/qa/arabic-pango-probe/
+          if-no-files-found: warn
+          retention-days: 30

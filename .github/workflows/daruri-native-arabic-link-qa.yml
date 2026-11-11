@@ -1,0 +1,105 @@
+name: Daruri Native Arabic Phrase Link QA
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/daruri-arabic-pango-pilot-20261022]
+    paths:
+      - '.github/workflows/daruri-native-arabic-link-qa.yml'
+      - 'daruri/qa/native-phone/prepare_arabic_fixture.py'
+      - 'daruri/qa/verify-arabic-personal-export-browser.mjs'
+  pull_request:
+    paths:
+      - '.github/workflows/daruri-native-arabic-link-qa.yml'
+      - 'daruri/qa/native-phone/prepare_arabic_fixture.py'
+permissions:
+  contents: read
+jobs:
+  arabic-fixture:
+    name: Generate real Arabic phrase highlight and P1 PDF
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Browser fixture dependencies
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1
+          npx --prefix daruri/qa playwright install --with-deps chromium
+      - name: Serve local Gnamma website
+        run: |
+          python3 -m http.server 8123 --bind 127.0.0.1 >/tmp/arabic-phone-server.log 2>&1 &
+          for i in $(seq 1 40); do
+            curl -sf http://127.0.0.1:8123/daruri/ >/dev/null && exit 0
+            sleep .25
+          done
+          exit 1
+      - name: Generate real Arabic P1+exact highlight fixture
+        env:
+          GNAMMA_ARABIC_PHONE_FIXTURE: '1'
+        run: node daruri/qa/verify-arabic-personal-export-browser.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: real-arabic-phrase-personal-pdf
+          path: |
+            daruri/qa/phone-output/personal-pdf-sample.pdf
+            daruri/qa/phone-output/arabic-source.json
+          retention-days: 5
+          if-no-files-found: error
+  native-android:
+    name: Pixel Android native P1 tap, highlight and return
+    needs: arabic-fixture
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: real-arabic-phrase-personal-pdf
+          path: daruri/qa/phone-output
+      - name: Prepare Arabic-specific source page and note search checks
+        run: python3 daruri/qa/native-phone/prepare_arabic_fixture.py android
+      - name: Enable host KVM for Android emulator
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' |
+            sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          target: google_apis
+          arch: x86_64
+          profile: pixel_7
+          emulator-options: -no-window -no-snapshot -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+          disable-animations: true
+          script: bash daruri/qa/native-phone/android/run.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: native-android-real-arabic-phrase-evidence
+          path: daruri/qa/phone-results/android/
+          retention-days: 7
+          if-no-files-found: warn
+  native-iphone:
+    name: iPhone PDFKit Arabic P1 navigation and text search
+    needs: arabic-fixture
+    runs-on: macos-15
+    timeout-minutes: 32
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: real-arabic-phrase-personal-pdf
+          path: daruri/qa/phone-output
+      - name: Adapt PDFKit test to actual Arabic source page
+        run: python3 daruri/qa/native-phone/prepare_arabic_fixture.py ios
+      - name: Run actual PDFKit PDF reader on iPhone Simulator
+        run: bash daruri/qa/native-phone/ios/run.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: native-ios-real-arabic-phrase-evidence
+          path: daruri/qa/phone-results/ios/
+          retention-days: 7
+          if-no-files-found: warn

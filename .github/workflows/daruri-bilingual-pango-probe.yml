@@ -1,0 +1,31 @@
+name: Daruri Bilingual Arabic Pango Layout Probe
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/daruri-arabic-pango-pilot-20261022]
+    paths:
+      - '.github/workflows/daruri-bilingual-pango-probe.yml'
+      - 'daruri/qa/probe_bilingual_arabic_pango.py'
+permissions: {contents: read}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install pinned WeasyPrint and PyMuPDF
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
+          python -m pip install weasyprint==68.0 PyMuPDF==1.26.7
+      - name: Compare source-driven Arabic Pango word geometry with four bilingual A4 PDFs
+        run: python daruri/qa/probe_bilingual_arabic_pango.py
+      - name: Keep bilingual parity report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-bilingual-arabic-word-parity-proof
+          path: daruri/qa/arabic-bilingual-probe-summary.json
+          if-no-files-found: warn

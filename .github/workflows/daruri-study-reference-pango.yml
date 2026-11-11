@@ -1,0 +1,31 @@
+name: Daruri Study and Reference Arabic Pango Audit
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/daruri-arabic-pango-pilot-20261022]
+    paths:
+      - '.github/workflows/daruri-study-reference-pango.yml'
+      - 'daruri/qa/probe_study_reference_pango.py'
+permissions:
+  contents: read
+jobs:
+  study:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install PDF source rendering tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
+          python -m pip install weasyprint==68.0 PyMuPDF==1.26.7
+      - name: Inspect Study and Reference word positions without changing published PDFs
+        run: python daruri/qa/probe_study_reference_pango.py --edition all
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: study-reference-arabic-layout-diagnostics
+          path: daruri/qa/study-reference-pango-report/
+          if-no-files-found: warn

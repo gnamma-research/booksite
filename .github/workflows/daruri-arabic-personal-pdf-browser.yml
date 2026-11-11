@@ -1,0 +1,35 @@
+name: Daruri Arabic precise personal PDF browser QA
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/daruri-arabic-pango-pilot-20261022]
+    paths:
+      - '.github/workflows/daruri-arabic-personal-pdf-browser.yml'
+      - 'daruri/qa/verify-arabic-personal-export-browser.mjs'
+      - 'daruri/editions/maps/**'
+permissions:
+  contents: read
+jobs:
+  precise-arabic-export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Verify eight exact maps and source quote matching
+        run: node daruri/qa/verify-arabic-pango-maps.cjs
+      - name: Install isolated browser and PDF validator
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1
+          npx --prefix daruri/qa playwright install --with-deps chromium
+      - name: Start static Daruri site server
+        run: |
+          python3 -m http.server 8123 --bind 127.0.0.1 > /tmp/daruri-arabic-personal-http.log 2>&1 &
+          for i in $(seq 1 40); do
+            curl -sf http://127.0.0.1:8123/daruri/ >/dev/null && exit 0
+            sleep .25
+          done
+          exit 1
+      - name: Create actual Arabic personal PDF and verify clickable precise phrase and note links
+        run: node daruri/qa/verify-arabic-personal-export-browser.mjs
