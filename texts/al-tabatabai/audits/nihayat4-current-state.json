@@ -103,64 +103,24 @@
     "replayProtection": "passed: repeated applied plan refused before mutation; canonical hashes unchanged"
   },
   "nextWork": {
-    "firstTask": "Run the bounded resume-current.py check, then continue fresh comparisons from N-VI-10. All 83 recovered reports and the nine fresh Stage X comparisons are incorporated.",
-    "firstNewExternalComparison": "N-VI-10",
+    "firstTask": "Finish the saved completion plans, preserving every complete unit report, then incorporate their findings using exact preimage checks. Do not restart completed comparisons. The source text and all 93 earlier incorporated comparisons remain intact.",
+    "firstNewExternalComparison": "N-VII-05",
     "remainingExternalGroups": [
       {
-        "range": "N-VI-10–N-VI-21",
-        "count": 12
+        "range": "N-VII-05–N-VII-09",
+        "count": 5
       },
       {
-        "range": "N-VII-01–N-VII-09",
-        "count": 9
-      },
-      {
-        "range": "N-VIII-01–N-VIII-11",
-        "count": 11
-      },
-      {
-        "range": "N-XII-14–N-XII-24",
-        "count": 11
+        "range": "N-XII-19–N-XII-24",
+        "count": 6
       }
     ],
     "remainingExternalUnitIds": [
-      "N-VI-10",
-      "N-VI-11",
-      "N-VI-12",
-      "N-VI-13",
-      "N-VI-14",
-      "N-VI-15",
-      "N-VI-16",
-      "N-VI-17",
-      "N-VI-18",
-      "N-VI-19",
-      "N-VI-20",
-      "N-VI-21",
-      "N-VII-01",
-      "N-VII-02",
-      "N-VII-03",
-      "N-VII-04",
       "N-VII-05",
       "N-VII-06",
       "N-VII-07",
       "N-VII-08",
       "N-VII-09",
-      "N-VIII-01",
-      "N-VIII-02",
-      "N-VIII-03",
-      "N-VIII-04",
-      "N-VIII-05",
-      "N-VIII-06",
-      "N-VIII-07",
-      "N-VIII-08",
-      "N-VIII-09",
-      "N-VIII-10",
-      "N-VIII-11",
-      "N-XII-14",
-      "N-XII-15",
-      "N-XII-16",
-      "N-XII-17",
-      "N-XII-18",
       "N-XII-19",
       "N-XII-20",
       "N-XII-21",
@@ -192,18 +152,18 @@
   "recoveryManifest": "audits/recovery-stage9-2026-11-10/repo-file-manifest.json",
   "current": {
     "stage": 10,
-    "status": "source-checkpoint-awaiting-release-validation",
+    "status": "critical-edition-completion-in-progress",
     "pairedUnitsByBook": {
       "muzaffar-al-mantiq": 140,
       "bidayat-al-hikma": 111,
       "nihayat-al-hikma": 136
     },
     "combinedUnits": 387,
-    "nihayaExternalComparisonRecords": 93,
+    "nihayaExternalComparisonRecords": 125,
     "nihayaExternalComparisonsIntegrated": 93,
-    "nihayaExternalComparisonsRemaining": 43,
+    "nihayaExternalComparisonsRemaining": 11,
     "pendingRecoveredReports": 0,
-    "pendingNewReports": 0,
+    "pendingNewReports": 32,
     "newComparisonIds": [
       "N-V-05",
       "N-V-06",
@@ -268,6 +228,18 @@
       ],
       "visualInspection": "pending",
       "publicationStep": "skipped on pull-request preview"
+    },
+    "completionInProgress": {
+      "reports": [
+        "audits/nihaya-completion-vi-vii-2026-11-11.json",
+        "audits/nihaya-completion-viii-xii-2026-11-11.json"
+      ],
+      "plans": [
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json",
+        "audits/nihaya-completion-viii-xii-integration-2026-11-11.json"
+      ],
+      "savedCompleteUnitComparisons": 32,
+      "planRule": "Cumulative plans remain in progress until their assigned range is complete. Freeze an integration-ready plan before applying; do not replay unit comparisons already recorded as complete."
     }
   },
   "continuation": {

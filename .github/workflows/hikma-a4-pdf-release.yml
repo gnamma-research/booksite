@@ -10,6 +10,7 @@ on:
       - 'texts/al-tabatabai/assets/hikma-rich-text.js'
       - 'texts/al-tabatabai/assets/hikma-rich-text.css'
       - 'texts/al-tabatabai/tools/build-pdfs.cjs'
+      - 'daruri/fonts/amiri-regular.woff2'
       - '.github/workflows/hikma-a4-pdf-release.yml'
   push:
     branches: [master]
@@ -20,6 +21,7 @@ on:
       - 'texts/al-tabatabai/assets/hikma-rich-text.js'
       - 'texts/al-tabatabai/assets/hikma-rich-text.css'
       - 'texts/al-tabatabai/tools/build-pdfs.cjs'
+      - 'daruri/fonts/amiri-regular.woff2'
       - '.github/workflows/hikma-a4-pdf-release.yml'
 
 permissions:
@@ -77,6 +79,8 @@ jobs:
               assert len(reader.pages)>=3, (row['filename'],len(reader.pages))
               sample=' '.join((reader.pages[i].extract_text() or '') for i in range(min(5,len(reader.pages))))
               assert len(sample.strip())>100, f"Unsearchable or blank PDF {row['filename']}"
+              fonts={str(f.get_object().get('/BaseFont','')) for page in reader.pages[:5] for f in page['/Resources'].get('/Font',{}).get_object().values()}
+              assert any('Amiri' in name for name in fonts), f"Arabic print font missing from {row['filename']}: {fonts}"
               print(row['filename'],len(reader.pages),'A4 pages',row['bytes'],'bytes')
           (root/'editions/manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
           PY
@@ -111,7 +115,8 @@ jobs:
                   texts/al-tabatabai/tools/build-pdfs.cjs \
                   texts/al-tabatabai/assets/hikma-pdf.css \
                   texts/al-tabatabai/assets/hikma-rich-text.js \
-                  texts/al-tabatabai/assets/hikma-rich-text.css; then
+                  texts/al-tabatabai/assets/hikma-rich-text.css \
+                  daruri/fonts/amiri-regular.woff2; then
               echo 'A newer source edition arrived after this build. Refusing to publish stale PDFs.'
               exit 1
             fi

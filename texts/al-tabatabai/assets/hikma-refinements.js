@@ -95,12 +95,6 @@
     return chosen?.dataset.unit||window.HikmaReader?.currentUnit()?.id;
   }
   let printUnit=null,printBookUnits=[],printOrigin=null;
-  // Focusing a sticky header control can scroll its normal-flow position into
-  // view before click runs. Keep the reading position when using the pointer.
-  if(printButton)printButton.addEventListener('pointerdown',event=>{
-    if(event.button!==0)return;
-    event.preventDefault();printButton.focus({preventScroll:true});
-  });
   function selectedPrintUnits(){
     const api=window.HikmaReader,scope=$('pdf-scope').value;
     if(!api||!printUnit)return [];

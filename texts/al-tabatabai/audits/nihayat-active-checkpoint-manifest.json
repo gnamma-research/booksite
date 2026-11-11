@@ -1,12 +1,12 @@
 {
   "schema": "nihayat-current-checkpoint-v1",
   "date": "2026-11-11",
-  "scope": "Current source, source evidence, reader assets and verification tools. Mutable continuation/status documents and generated editions are excluded and checked through their own receipts.",
+  "scope": "Current source, source evidence, reader assets and verification tools, including explicitly in-progress completion reports. Mutable continuation/status documents and generated editions are excluded and checked through their own receipts.",
   "files": [
     {
       "path": ".github/workflows/hikma-a4-pdf-release.yml",
-      "bytes": 6325,
-      "sha256": "81c462d5d98bdd9b543f087a8d121c9057795c8fed7f3d66bb3bbb85cb4825c3"
+      "bytes": 6743,
+      "sha256": "c3c7196b8da0ed09700bb641d511e54ab15ba04d2743871685d2ac7f7fcc091c"
     },
     {
       "path": ".github/workflows/hikma-reader-qa.yml",
@@ -35,13 +35,13 @@
     },
     {
       "path": "texts/al-tabatabai/assets/hikma-pdf.css",
-      "bytes": 3643,
-      "sha256": "64e6e7f8c503ff84c31642a55b4e25593e6ae4abcb0f8e163fa55dfdf3b55ea0"
+      "bytes": 4611,
+      "sha256": "6fae70be8407c4108e10edab8eb6ea7d17f5d5e4d5790ec9ceff67959caa1d48"
     },
     {
       "path": "texts/al-tabatabai/assets/hikma-reader.css",
-      "bytes": 31926,
-      "sha256": "f2accdc9a38aa2b089ca8fab4319b56ff882d1149e5ca66f640899adf4ab3bf5"
+      "bytes": 32028,
+      "sha256": "bbf4c7f922d5fa3913a12d96d3809083700d3711a412724e1110a50b61b65092"
     },
     {
       "path": "texts/al-tabatabai/assets/hikma-reader.js",
@@ -55,8 +55,8 @@
     },
     {
       "path": "texts/al-tabatabai/assets/hikma-refinements.js",
-      "bytes": 15042,
-      "sha256": "0fdd353a92cc48e7204c0b7be80389a93d3fdd975cf1260fe53d096ec8cf40d5"
+      "bytes": 15291,
+      "sha256": "05cf6cfc80c0acf97675f75152bd5b1d7edd52a0cda05498184f390a41fed587"
     },
     {
       "path": "texts/al-tabatabai/assets/hikma-rich-text.css",
@@ -70,8 +70,8 @@
     },
     {
       "path": "texts/al-tabatabai/assets/hikma-study-tools.css",
-      "bytes": 14148,
-      "sha256": "6098d8a6ee65d2b923b5f30d49f933503d03bcddd5e7e416938173856c52637d"
+      "bytes": 14188,
+      "sha256": "788ec7a44e364dd09e9d41eb8d3144e19934a239864ecf9d06075c984863cbcc"
     },
     {
       "path": "texts/al-tabatabai/assets/hikma-study-tools.js",
@@ -189,14 +189,34 @@
       "sha256": "0937c67ea1450877c7c1260a24affaa7ca042e67241261ea0416cde4f60e99a6"
     },
     {
+      "path": "texts/al-tabatabai/audits/nihaya-completion-vi-vii-2026-11-11-integration.json",
+      "bytes": 263279,
+      "sha256": "4c58e53679e773735e6a68f0d81737a2d2bde3f8f48a991b6e2681ef6e5b8ade"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/nihaya-completion-vi-vii-2026-11-11.json",
+      "bytes": 134437,
+      "sha256": "0266cc6571f1e683563d394c39969556dae55fe90c18eace18c9279c71b855de"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/nihaya-completion-viii-xii-2026-11-11.json",
+      "bytes": 510515,
+      "sha256": "cc9805f6c47cc0d55c210668f4692e837db8cce13762a939d7d2b1ffa19a5d54"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/nihaya-completion-viii-xii-integration-2026-11-11.json",
+      "bytes": 84792,
+      "sha256": "29f3dff73c8c35ad80b8913ce0f353a676db8c0b46b6f59181cbb04241fd30ad"
+    },
+    {
       "path": "texts/al-tabatabai/audits/nihaya-english-collation-triage-2026-11-09.json",
       "bytes": 280306,
       "sha256": "2934609aeb5af7ccb89cd489a2223a41994a1d2365d524e25e4e5593f71f3b27"
     },
     {
       "path": "texts/al-tabatabai/audits/nihaya-external-comparison-register.json",
-      "bytes": 62698,
-      "sha256": "9a22d9985148b5d81a2809020621d18958889b8a5c3e8310aadda9d9c8f6ddb1"
+      "bytes": 65079,
+      "sha256": "728849df97255235384325e4b1f0a39eec4020d992b76712d7e2afd62b0f51e0"
     },
     {
       "path": "texts/al-tabatabai/audits/nihaya-external-stage10-new.json",
@@ -1135,8 +1155,8 @@
     },
     {
       "path": "texts/al-tabatabai/tools/build-pdfs.cjs",
-      "bytes": 8949,
-      "sha256": "3a142027bd500bda0129a1368394a89452ea6e5bfdc587288cb5f9a675bce6f6"
+      "bytes": 12306,
+      "sha256": "5d9eacfebe7ed4c93dd2c115320ca9b84c1fc22b6a34426ba3e707a36ba49eec"
     },
     {
       "path": "texts/al-tabatabai/tools/build-study-index.py",
