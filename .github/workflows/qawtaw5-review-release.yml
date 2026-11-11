@@ -1,0 +1,34 @@
+name: Qawtaw5 complete electronic-text review release
+on:
+  push:
+    branches: [qawtaw5-20261111-complete-review]
+    paths:
+      - '.github/workflows/qawtaw5-review-release.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: qawtaw5-source-snapshot
+  cancel-in-progress: false
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            texts/al-turka/qawaid-al-tawhid
+            assets
+          fetch-depth: 1
+      - name: Record source revision
+        run: |
+          git rev-parse HEAD > texts/al-turka/qawaid-al-tawhid/qa/qawtaw5-snapshot-commit.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: qawtaw5-source-snapshot
+          path: |
+            texts/al-turka/qawaid-al-tawhid/
+            assets/gnamma-mark.svg
+            assets/gnamma-landscape.webp
+          retention-days: 30
