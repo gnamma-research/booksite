@@ -95,5 +95,15 @@
     "new_witness_read_in_stage_XVII": false,
     "medieval_manuscript_checked": false
   },
-  "full_archive_git_blob_sha": "93458ad159a73ad85a16da747f46e3da3d7ad426"
+  "full_archive_git_blob_sha": "93458ad159a73ad85a16da747f46e3da3d7ad426",
+  "source_candidate_exclusion": {
+    "status": "provisionally disqualified",
+    "file": "editorial/SOURCE_CANDIDATE_AUDIT_017.md",
+    "git_blob_sha": "b77f7db28df39a44ac9572326e67599641738f63",
+    "argument": "Internet Archive OCR linked to a purported Farghani 2007 PDF explicitly identifies separate Dawud al-Qaysari Ta'iyya commentary; PDF pages not directly inspected",
+    "new_actual_2007_photographed_pages": 0
+  },
+  "latest_source_audit_handoff_sha": "ee82da713cf33353926b9d6fc9da7c401e3dbacd",
+  "full_cumulative_snapshot_sha": "93458ad159a73ad85a16da747f46e3da3d7ad426",
+  "full_cumulative_scope_note": "Text and reader-source cumulative snapshot; newly added source-candidate audit remains linked separately, not embedded in that frozen source snapshot."
 }
