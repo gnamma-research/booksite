@@ -1,26 +1,30 @@
 {
   "schema": 1,
   "updated": "2026-11-11",
-  "title": "Nihaya cumulative adopted textual decisions through Stage X",
+  "title": "Nihaya cumulative textual decisions for the complete printed-witness reading edition",
   "countingPolicy": "One decision is one adopted editorial issue. A single relation-predicate decision in VI.16 requires two string replacements. Spacing repairs are counted separately. The X.2 reading is attested in the later edition without a dedicated variant footnote; it is not counted among explicit editorial emendations.",
   "summary": {
-    "textualDecisions": 73,
-    "arabicStringReplacements": 74,
+    "textualDecisions": 86,
+    "arabicStringReplacements": 87,
     "byClassification": {
-      "explicit-later-editor-emendation": 17,
-      "attested-later-edition-reading-unfootnoted": 6,
+      "explicit-later-editor-emendation": 21,
+      "attested-later-edition-reading-unfootnoted": 7,
       "jointly-attested-early-print-and-later-digital-transcription-repair": 5,
       "early-facsimile-reading-against-later-digital; not-a-later-editor-emendation": 1,
-      "L1": 23,
+      "L1": 24,
       "L2": 10,
-      "E2": 5,
+      "E2": 7,
       "E1": 3,
       "attested-digital-transcription-repair": 1,
-      "mechanical-transcription-repair": 2
+      "mechanical-transcription-repair": 2,
+      "base-transcription-error-corrected-from-both-witnesses": 2,
+      "body-omission-and-boundary-restoration-attested-in-both-witnesses": 1,
+      "chapter-boundary-transcription-repair-attested-in-both-witnesses": 1,
+      "consonantal-restoration-attested-in-both-printed-witnesses": 1
     },
-    "explicitLaterEditorialEmendations": 40,
-    "laterEditionReadingsWithoutSpecificVariantFootnote": 16,
-    "stage10LayoutOperations": 122
+    "explicitLaterEditorialEmendations": 45,
+    "laterEditionReadingsWithoutSpecificVariantFootnote": 17,
+    "stage10LayoutOperations": 202
   },
   "decisions": [
     {
@@ -1940,6 +1944,592 @@
       "reason": "The masculine pronoun refers grammatically to المعلول; later p.174 attests له without a dedicated variant note. Fresh inspection shows that early p.103 actually reads لها, contradicting report C. Retain the early/base feminine verb تكون because its postposed subject is علّة, and make that subject and its adjective nominative. This is a mixed later-reading and contextual-vocalization decision, not mere orthography.",
       "manuscriptAttestationClaimed": false,
       "readingAccounting": "The pronoun is a substantive later-edition adoption. Its separate contextual case-vowel component remains in the normalization list."
+    },
+    {
+      "id": "N-S11-VI-13-001",
+      "passageId": "N-VI-13",
+      "criticalNoteId": "N11-COLLATION-VI-13",
+      "stage": "X",
+      "classification": "base-transcription-error-corrected-from-both-witnesses",
+      "replacements": [
+        {
+          "before": "وإن كان لا يفارقان",
+          "after": "وإن كانا لا يفارقان"
+        }
+      ],
+      "applicationReplacement": {
+        "before": "وإن كان لا يفارقان",
+        "after": "وإن كانا لا يفارقان"
+      },
+      "source": {
+        "earlyEdition": "Qum 1404 AH printed facsimile",
+        "earlyPrintedPages": [
+          116,
+          117,
+          118,
+          119
+        ],
+        "earlyCanvasURLs": [
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/120",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/121",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/122",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/123"
+        ],
+        "laterEdition": "1428 AH revised edition, al-Zāriʿī, edited digital presentation",
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          199,
+          200,
+          201,
+          202,
+          203,
+          204
+        ],
+        "laterURLs": [
+          "https://lib.rafed.net/view.php?b_id=3108&page=199&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=200&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=201&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=202&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=203&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=204&type=c_fbook"
+        ],
+        "method": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed."
+      },
+      "sourceGrade": "base-transcription-error-corrected-from-both-witnesses",
+      "reason": "Early 117 and later 201 both read the dual كانا; the stored transcription drops its final alif. Restore agreement with the two qualities.",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-S11-VI-13-002",
+      "passageId": "N-VI-13",
+      "criticalNoteId": "N11-COLLATION-VI-13",
+      "stage": "X",
+      "classification": "explicit-later-editor-emendation",
+      "replacements": [
+        {
+          "before": "أن يشمل الشديدُ على الضعيف",
+          "after": "أن يشمل الشديدُ الضعيفَ"
+        }
+      ],
+      "applicationReplacement": {
+        "before": "أن يشمل الشديدُ على الضعيف",
+        "after": "أن يشمل الشديدُ الضعيفَ"
+      },
+      "source": {
+        "earlyEdition": "Qum 1404 AH printed facsimile",
+        "earlyPrintedPages": [
+          116,
+          117,
+          118,
+          119
+        ],
+        "earlyCanvasURLs": [
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/120",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/121",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/122",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/123"
+        ],
+        "laterEdition": "1428 AH revised edition, al-Zāriʿī, edited digital presentation",
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          199,
+          200,
+          201,
+          202,
+          203,
+          204
+        ],
+        "laterURLs": [
+          "https://lib.rafed.net/view.php?b_id=3108&page=199&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=200&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=201&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=202&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=203&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=204&type=c_fbook"
+        ],
+        "method": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+        "laterFootnote": 1
+      },
+      "sourceGrade": "explicit-later-editor-emendation",
+      "reason": "Adopt the later editor's expressly documented grammatical repair: شمل takes a direct object. Early 118 and base have the reported mixed construction; later 203 n. 1 supplies the correction and mentions يشتمل ... على as an alternative.",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-S11-VI-14-001",
+      "passageId": "N-VI-14",
+      "criticalNoteId": "N11-COLLATION-VI-14",
+      "stage": "X",
+      "classification": "body-omission-and-boundary-restoration-attested-in-both-witnesses",
+      "replacements": [
+        {
+          "before": "فثبت ممّا بيّنّا بالبرهان أنّ لا قوّةَ ولا استعدادَ بالذات لكون الشيء فاعلا ، بل إنّما القوّة والاستعداد للإنفعال ولصيرورة الشيء قابلا لشيء بعد أن لم يكن» ، إنتهى.",
+          "after": "فثبت ممّا بيّنّا بالبرهان أنّ لا قوّةَ ولا استعدادَ بالذات لكون الشيء فاعلا ، بل إنّما القوّة والاستعداد للإنفعال ولصيرورة الشيء قابلا لشيء بعد أن لم يكن» ، إنتهى.\n\nوأمّا نفس الاستعداد فقد قيل: «إنّها من المضاف، إذ لا يعقل إلاّ بين شيئين: مستعدّ ومستعدّ له، فلا يكون نوعاً من الكيف». ويظهر من بعضهم أنّه كيفٌ يلزمه إضافة، كالعلم الذي هو من الكيفيّات النفسانيّة ويلزمه الإضافة بين موضوعه ومتعلّقه، أعني العالم والمعلوم، وكالقدرة والإرادة."
+        }
+      ],
+      "applicationReplacement": {
+        "before": "فثبت ممّا بيّنّا بالبرهان أنّ لا قوّةَ ولا استعدادَ بالذات لكون الشيء فاعلا ، بل إنّما القوّة والاستعداد للإنفعال ولصيرورة الشيء قابلا لشيء بعد أن لم يكن» ، إنتهى.",
+        "after": "فثبت ممّا بيّنّا بالبرهان أنّ لا قوّةَ ولا استعدادَ بالذات لكون الشيء فاعلا ، بل إنّما القوّة والاستعداد للإنفعال ولصيرورة الشيء قابلا لشيء بعد أن لم يكن» ، إنتهى.\n\nوأمّا نفس الاستعداد فقد قيل: «إنّها من المضاف، إذ لا يعقل إلاّ بين شيئين: مستعدّ ومستعدّ له، فلا يكون نوعاً من الكيف». ويظهر من بعضهم أنّه كيفٌ يلزمه إضافة، كالعلم الذي هو من الكيفيّات النفسانيّة ويلزمه الإضافة بين موضوعه ومتعلّقه، أعني العالم والمعلوم، وكالقدرة والإرادة."
+      },
+      "source": {
+        "earlyEdition": "Qum 1404 AH printed facsimile",
+        "earlyPrintedPages": [
+          119,
+          120
+        ],
+        "earlyCanvasURLs": [
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/123",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/124"
+        ],
+        "laterEdition": "1428 AH revised edition, al-Zāriʿī, edited digital presentation",
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          205,
+          206
+        ],
+        "laterURLs": [
+          "https://lib.rafed.net/view.php?b_id=3108&page=205&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=206&type=c_fbook"
+        ],
+        "method": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed."
+      },
+      "sourceGrade": "body-omission-and-boundary-restoration-attested-in-both-witnesses",
+      "reason": "Restore the complete final authorial paragraph to VI14 from early 120 and later 206; its damaged opening was erroneously fused with VI15. This is a chapter-boundary and transcription restoration, not a later editor’s conjecture.",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-S11-VI-15-001",
+      "passageId": "N-VI-15",
+      "criticalNoteId": "N11-COLLATION-VI-15",
+      "stage": "X",
+      "classification": "chapter-boundary-transcription-repair-attested-in-both-witnesses",
+      "replacements": [
+        {
+          "before": "وأمّا نفس الاستعداد ، فقد قيل : «إنّها من المضاف ، إذ لا يعقل إلاّ بين شيئيْن مستعدّ ومستعدّ له ، فلا يكون نوعاً من الكيف» ويظهر من بعضهم أنّه كيفٌ يلزمه إضافة ، كالعلم الذي هو من الكيفيّات النفسانيّة وتلزمه الإضافة بين موضوعه في الكيفيّات النفسانيّة",
+          "after": ""
+        }
+      ],
+      "applicationReplacement": {
+        "before": "وأمّا نفس الاستعداد ، فقد قيل : «إنّها من المضاف ، إذ لا يعقل إلاّ بين شيئيْن مستعدّ ومستعدّ له ، فلا يكون نوعاً من الكيف» ويظهر من بعضهم أنّه كيفٌ يلزمه إضافة ، كالعلم الذي هو من الكيفيّات النفسانيّة وتلزمه الإضافة بين موضوعه في الكيفيّات النفسانيّة",
+        "after": ""
+      },
+      "source": {
+        "earlyEdition": "Qum 1404 AH printed facsimile",
+        "earlyPrintedPages": [
+          120,
+          121,
+          122,
+          123,
+          124,
+          125
+        ],
+        "earlyCanvasURLs": [
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/124",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/125",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/126",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/127",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/128",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/129"
+        ],
+        "laterEdition": "1428 AH revised edition, al-Zāriʿī, edited digital presentation",
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215
+        ],
+        "laterURLs": [
+          "https://lib.rafed.net/view.php?b_id=3108&page=207&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=208&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=209&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=210&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=211&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=212&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=213&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=214&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=215&type=c_fbook"
+        ],
+        "method": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed."
+      },
+      "sourceGrade": "chapter-boundary-transcription-repair-attested-in-both-witnesses",
+      "reason": "Remove the truncated VI14 tail and fused duplicate heading; complete VI14 paragraph is restored in its own unit. Early 120 and later 207 establish the VI15 opening.",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-S11-VI-16-001",
+      "passageId": "N-VI-16",
+      "criticalNoteId": "N11-COLLATION-VI-16",
+      "stage": "X",
+      "classification": "explicit-later-editor-emendation",
+      "replacements": [
+        {
+          "before": "وبين مطلق النسبة ،",
+          "after": "وبين ما في غيرها من مطلق النسبة ،"
+        }
+      ],
+      "applicationReplacement": {
+        "before": "وبين مطلق النسبة ،",
+        "after": "وبين ما في غيرها من مطلق النسبة ،"
+      },
+      "source": {
+        "earlyEdition": "Qum 1404 AH printed facsimile",
+        "earlyPrintedPages": [
+          125,
+          126,
+          127,
+          128,
+          129
+        ],
+        "earlyCanvasURLs": [
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/129",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/130",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/131",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/132",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/133"
+        ],
+        "laterEdition": "1428 AH revised edition, al-Zāriʿī, edited digital presentation",
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          216,
+          217,
+          218,
+          219,
+          220
+        ],
+        "laterURLs": [
+          "https://lib.rafed.net/view.php?b_id=3108&page=216&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=217&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=218&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=219&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=220&type=c_fbook"
+        ],
+        "method": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+        "laterFootnote": 1
+      },
+      "sourceGrade": "explicit-later-editor-emendation",
+      "reason": "Adopt the explicit later 217 n. 1 clarification. The early/base reading is preserved in the apparatus; the wording distinguishes relation in the other categories from the reciprocal relation under discussion.",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-S11-VI-17-001",
+      "passageId": "N-VI-17",
+      "criticalNoteId": "N11-COLLATION-VI-17",
+      "stage": "X",
+      "classification": "explicit-later-editor-emendation",
+      "replacements": [
+        {
+          "before": "الذي لا يسعه فيه غيره معه",
+          "after": "الذي لا يسعه مع غيره"
+        }
+      ],
+      "applicationReplacement": {
+        "before": "الذي لا يسعه فيه غيره معه",
+        "after": "الذي لا يسعه مع غيره"
+      },
+      "source": {
+        "earlyEdition": "Qum 1404 AH printed facsimile",
+        "earlyPrintedPages": [
+          129,
+          130,
+          131
+        ],
+        "earlyCanvasURLs": [
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/133",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/134",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/135"
+        ],
+        "laterEdition": "1428 AH revised edition, al-Zāriʿī, edited digital presentation",
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          221,
+          222,
+          223,
+          224
+        ],
+        "laterURLs": [
+          "https://lib.rafed.net/view.php?b_id=3108&page=221&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=222&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=223&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=224&type=c_fbook"
+        ],
+        "method": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+        "laterFootnote": 2
+      },
+      "sourceGrade": "explicit-later-editor-emendation",
+      "reason": "Adopt the expressly documented later 224 n. 2 repair of the proper-place definition; early 131 and base retain the awkward reported construction.",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-S11-VII-03-001",
+      "passageId": "N-VII-03",
+      "criticalNoteId": "N11-COLLATION-VII-03",
+      "stage": "X",
+      "classification": "base-transcription-error-corrected-from-both-witnesses",
+      "replacements": [
+        {
+          "before": "المرتبة العالية الوجود",
+          "after": "المرتبة العالية من الوجود"
+        }
+      ],
+      "applicationReplacement": {
+        "before": "المرتبة العالية الوجود",
+        "after": "المرتبة العالية من الوجود"
+      },
+      "source": {
+        "earlyEdition": "Qum 1404 AH printed facsimile",
+        "earlyPrintedPages": [
+          141,
+          142,
+          143
+        ],
+        "earlyCanvasURLs": [
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/145",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/146",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/147"
+        ],
+        "laterEdition": "1428 AH revised edition, al-Zāriʿī, edited digital presentation",
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          244,
+          245,
+          246,
+          247
+        ],
+        "laterURLs": [
+          "https://lib.rafed.net/view.php?b_id=3108&page=244&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=245&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=246&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=247&type=c_fbook"
+        ],
+        "method": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed."
+      },
+      "sourceGrade": "base-transcription-error-corrected-from-both-witnesses",
+      "reason": "Both early 143 and later 247 contain من between العالية and الوجود; restore the omitted preposition. The English already represents the intended phrase.",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-S11-VII-05-001",
+      "passageId": "N-VII-05",
+      "criticalNoteId": "N11-COLLATION-VII-05",
+      "stage": "X",
+      "classification": "attested-later-edition-reading-unfootnoted",
+      "replacements": [
+        {
+          "before": "ويسمّى أيضاً «الغير» بحسب التشخّص والعدد.",
+          "after": "ويسمّى أيضاً الغير بحسب التشخّص والعدد «آخر»."
+        }
+      ],
+      "applicationReplacement": {
+        "before": "ويسمّى أيضاً «الغير» بحسب التشخّص والعدد.",
+        "after": "ويسمّى أيضاً الغير بحسب التشخّص والعدد «آخر»."
+      },
+      "source": {
+        "earlyEdition": "Qum 1404 AH printed facsimile",
+        "earlyPrintedPages": [
+          145,
+          146
+        ],
+        "earlyCanvasURLs": [
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/149",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/150"
+        ],
+        "laterEdition": "1428 AH revised edition, al-Zāriʿī, edited digital presentation",
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          250,
+          251,
+          252,
+          253
+        ],
+        "laterURLs": [
+          "https://lib.rafed.net/view.php?b_id=3108&page=250&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=251&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=252&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=253&type=c_fbook"
+        ],
+        "method": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+        "laterFootnote": 1
+      },
+      "sourceGrade": "unfootnoted-later-edition-reading; lexical completion with explanatory citation",
+      "reason": "Adopt the later 253 body’s completion of the individuation terminology, supported by n. 1's explanatory quotation. Early 145/base omit آخر; no manuscript attestation or explicit variant-report status is claimed.",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-S11-VII-09-001",
+      "passageId": "N-VII-09",
+      "criticalNoteId": "N11-COLLATION-VII-09",
+      "stage": "X",
+      "classification": "explicit-later-editor-emendation",
+      "replacements": [
+        {
+          "before": "عَثَروا باُمور",
+          "after": "عَثَروا على اُمور"
+        }
+      ],
+      "applicationReplacement": {
+        "before": "عَثَروا باُمور",
+        "after": "عَثَروا على اُمور"
+      },
+      "source": {
+        "earlyEdition": "Qum 1404 AH printed facsimile",
+        "earlyPrintedPages": [
+          151,
+          152,
+          153,
+          154
+        ],
+        "earlyCanvasURLs": [
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/155",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/156",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/157",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/158"
+        ],
+        "laterEdition": "1428 AH revised edition, al-Zāriʿī, edited digital presentation",
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          261,
+          262,
+          263,
+          264,
+          265,
+          266
+        ],
+        "laterURLs": [
+          "https://lib.rafed.net/view.php?b_id=3108&page=261&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=262&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=263&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=264&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=265&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=266&type=c_fbook"
+        ],
+        "method": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+        "laterFootnote": 1
+      },
+      "sourceGrade": "explicit-later-editor-emendation",
+      "reason": "Adopt the explicit prepositional correction in later p. 263 n. 1; early p. 152 attests the base reading with بامور.",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-S11-VII-09-002",
+      "passageId": "N-VII-09",
+      "criticalNoteId": "N11-COLLATION-VII-09",
+      "stage": "X",
+      "classification": "consonantal-restoration-attested-in-both-printed-witnesses",
+      "replacements": [
+        {
+          "before": "الوحدة مساوقةٌ لوجود",
+          "after": "الوحدة مساوقةٌ للوجود"
+        }
+      ],
+      "applicationReplacement": {
+        "before": "الوحدة مساوقةٌ لوجود",
+        "after": "الوحدة مساوقةٌ للوجود"
+      },
+      "source": {
+        "earlyEdition": "Qum 1404 AH printed facsimile",
+        "earlyPrintedPages": [
+          151,
+          152,
+          153,
+          154
+        ],
+        "earlyCanvasURLs": [
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/155",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/156",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/157",
+          "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/158"
+        ],
+        "laterEdition": "1428 AH revised edition, al-Zāriʿī, edited digital presentation",
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          261,
+          262,
+          263,
+          264,
+          265,
+          266
+        ],
+        "laterURLs": [
+          "https://lib.rafed.net/view.php?b_id=3108&page=261&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=262&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=263&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=264&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=265&type=c_fbook",
+          "https://lib.rafed.net/view.php?b_id=3108&page=266&type=c_fbook"
+        ],
+        "method": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed."
+      },
+      "sourceGrade": "consonantal-restoration-attested-in-both-printed-witnesses",
+      "reason": "Restore the omitted definite-article lam: early p. 154 and later p. 266 both read الوحدة مساوقة للوجود.",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N11-XII20-AR03",
+      "passageId": "N-XII-20",
+      "criticalNoteId": "N11-XII20-COLLATION",
+      "stage": "X",
+      "classification": "E2",
+      "replacements": [
+        {
+          "before": "كلَّ علّة موجودة واجدةٌ",
+          "after": "كلَّ علّة موجِدة واجدةٌ"
+        }
+      ],
+      "applicationReplacement": {
+        "before": "كلَّ علّة موجودة واجدةٌ",
+        "after": "كلَّ علّة موجِدة واجدةٌ"
+      },
+      "source": "Early printed p. 319 (canvas 323); later II p. 294, third-objection body",
+      "sourceGrade": "E2",
+      "reason": "Restore the reading shared by both external witnesses: an existence-bestowing cause, not merely an existent cause.",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N11-XII20-AR04",
+      "passageId": "N-XII-20",
+      "criticalNoteId": "N11-XII20-COLLATION",
+      "stage": "X",
+      "classification": "L1",
+      "replacements": [
+        {
+          "before": "موجِداً في غيره",
+          "after": "موجوداً في غيره"
+        }
+      ],
+      "applicationReplacement": {
+        "before": "موجِداً في غيره",
+        "after": "موجوداً في غيره"
+      },
+      "source": "Later II p. 297 n. 1 explicitly corrects early p. 320/base موجدا; immediate antithesis is موجودا في نفسه",
+      "sourceGrade": "L1",
+      "reason": "Adopt the explicit, contextually compelled missing-wāw correction and document the contrary early reading.",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N11-XII24-AR01",
+      "passageId": "N-XII-24",
+      "criticalNoteId": "N11-XII24-COLLATION",
+      "stage": "X",
+      "classification": "E2",
+      "replacements": [
+        {
+          "before": "ومتعدّات مجهولة",
+          "after": "ومعدّات مجهولة"
+        }
+      ],
+      "applicationReplacement": {
+        "before": "ومتعدّات مجهولة",
+        "after": "ومعدّات مجهولة"
+      },
+      "source": "Direct reading of early printed p. 326 (canvas 330) and later II p. 308",
+      "sourceGrade": "E2",
+      "reason": "Remove intrusive tāʾ from the technical term معدّات, already correctly rendered as preparatory factors in English.",
+      "manuscriptAttestationClaimed": false
     }
   ],
   "spacingNormalizationsThisStage": [
@@ -2812,6 +3402,566 @@
       "before": "القدرة المجردّة عن النواقص",
       "after": "القدرة المجرّدة عن النواقص",
       "classification": "N2"
+    },
+    {
+      "id": "N-S11-VI-10-001",
+      "passageId": "N-VI-10",
+      "before": "تلاقي الخطان",
+      "after": "تلاقى الخطان",
+      "classification": "orthographic-alignment-with-both-witnesses"
+    },
+    {
+      "id": "N-S11-VI-10-002",
+      "passageId": "N-VI-10",
+      "before": "«اللا يقفى»",
+      "after": "«اللايقفيّ»",
+      "classification": "orthographic-alignment-with-both-witnesses"
+    },
+    {
+      "id": "N-S11-VI-10-003",
+      "passageId": "N-VI-10",
+      "before": "ترجٌّحٌ",
+      "after": "ترجُّحٌ",
+      "classification": "editorial-vocalization-repair"
+    },
+    {
+      "id": "N-S11-VI-11-002",
+      "passageId": "N-VI-11",
+      "before": "عرَّفُوه",
+      "after": "عرَّفوه",
+      "classification": "editorial-vocalization-repair"
+    },
+    {
+      "id": "N-S11-VI-12-002",
+      "passageId": "N-VI-12",
+      "before": "عنيفأو",
+      "after": "عنيف أو",
+      "classification": "layout-only"
+    },
+    {
+      "id": "N-S11-VI-12-003",
+      "passageId": "N-VI-12",
+      "before": "التموُّجُالهواءَ",
+      "after": "التموُّجُ الهواءَ",
+      "classification": "layout-only"
+    },
+    {
+      "id": "N-S11-VI-12-004",
+      "passageId": "N-VI-12",
+      "before": "التفة",
+      "after": "التفه",
+      "classification": "orthographic-alignment-with-both-witnesses"
+    },
+    {
+      "id": "N-S11-VI-12-005",
+      "passageId": "N-VI-12",
+      "before": "جَعَل الغيرَ",
+      "after": "جَعْل الغيرِ",
+      "classification": "contextual-editorial-vocalization"
+    },
+    {
+      "id": "N-S11-VI-12-006",
+      "passageId": "N-VI-12",
+      "before": "طيبّة",
+      "after": "طيّبة",
+      "classification": "editorial-vocalization-repair"
+    },
+    {
+      "id": "N-S11-VI-13-005",
+      "passageId": "N-VI-13",
+      "before": "المتلاقيَينْن",
+      "after": "المتلاقيَيْن",
+      "classification": "transcription-repair-attested-in-both-witnesses"
+    },
+    {
+      "id": "N-S11-VI-15-006",
+      "passageId": "N-VI-15",
+      "before": "يغايِرُ؛ النفرةَ",
+      "after": "يغايِرُ النفرةَ",
+      "classification": "layout-only"
+    },
+    {
+      "id": "N-S11-VI-15-007",
+      "passageId": "N-VI-15",
+      "before": "لازُمُه",
+      "after": "لازِمُه",
+      "classification": "editorial-vocalization-repair"
+    },
+    {
+      "id": "N-S11-VI-15-008",
+      "passageId": "N-VI-15",
+      "before": "نسبةَ المزاج",
+      "after": "نسبةُ المزاج",
+      "classification": "contextual-editorial-case-vocalization"
+    },
+    {
+      "id": "N-S11-VI-15-009",
+      "passageId": "N-VI-15",
+      "before": "فضيلةْ ممدوحةْ",
+      "after": "فضيلةٌ ممدوحةٌ",
+      "classification": "contextual-editorial-case-vocalization"
+    },
+    {
+      "id": "N-S11-VI-15-010",
+      "passageId": "N-VI-15",
+      "before": "إنمّا",
+      "after": "إنّما",
+      "classification": "editorial-vocalization-repair"
+    },
+    {
+      "id": "N-S11-VI-16-004",
+      "passageId": "N-VI-16",
+      "before": "تكرّر النسبه",
+      "after": "تكرّر النسبة",
+      "classification": "orthographic-alignment-with-both-witnesses"
+    },
+    {
+      "id": "N-S11-VI-16-005",
+      "passageId": "N-VI-16",
+      "before": "لها مقايسةً",
+      "after": "لها مقايسةٌ",
+      "classification": "contextual-editorial-case-vocalization"
+    },
+    {
+      "id": "N-S11-VI-17-003",
+      "passageId": "N-VI-17",
+      "before": "التقيسم",
+      "after": "التقسيم",
+      "classification": "transcription-repair-attested-in-both-witnesses"
+    },
+    {
+      "id": "N-S11-VI-17-004",
+      "passageId": "N-VI-17",
+      "before": "تتُركان",
+      "after": "تُتركان",
+      "classification": "editorial-vocalization-repair"
+    },
+    {
+      "id": "N-S11-VI-17-005",
+      "passageId": "N-VI-17",
+      "before": "فإنّ فيه حلولُ الجسم",
+      "after": "فإنّ فيه حلولَ الجسم",
+      "classification": "contextual-editorial-case-vocalization"
+    },
+    {
+      "id": "N-S11-VI-17-006",
+      "passageId": "N-VI-17",
+      "before": "ورجوعُهما",
+      "after": "ورجوعَهما",
+      "classification": "contextual-editorial-case-vocalization"
+    },
+    {
+      "id": "N-S11-VI-18-001",
+      "passageId": "N-VI-18",
+      "before": "الجوهريّه",
+      "after": "الجوهريّة",
+      "classification": "editorial-orthographic-normalization"
+    },
+    {
+      "id": "N-S11-VI-19-002",
+      "passageId": "N-VI-19",
+      "before": "فك الأشدّ",
+      "after": "فكالأشدّ",
+      "classification": "transcription-repair-attested-in-both-witnesses"
+    },
+    {
+      "id": "N-S11-VI-19-003",
+      "passageId": "N-VI-19",
+      "before": "المجردّة",
+      "after": "المجرّدة",
+      "classification": "editorial-vocalization-repair"
+    },
+    {
+      "id": "N-S11-VI-20-001",
+      "passageId": "N-VI-20",
+      "before": "فالإحاطه",
+      "after": "فالإحاطة",
+      "classification": "orthographic-alignment-with-both-witnesses"
+    },
+    {
+      "id": "N-S11-VII-01-001",
+      "passageId": "N-VII-01",
+      "before": "«كلٌّ موجود فهو واحدٌ»",
+      "after": "«كلُّ موجودٍ فهو واحدٌ»",
+      "classification": "contextual-editorial-case-vocalization"
+    },
+    {
+      "id": "N-S11-VII-01-002",
+      "passageId": "N-VII-01",
+      "before": "مع مساوقِة الخارجيّ",
+      "after": "مع مساوقةِ الخارجيّ",
+      "classification": "editorial-vocalization-repair"
+    },
+    {
+      "id": "N-S11-VII-01-003",
+      "passageId": "N-VII-01",
+      "before": "وهلّم",
+      "after": "وهلمّ",
+      "classification": "editorial-vocalization-repair"
+    },
+    {
+      "id": "N-S11-VII-02-002",
+      "passageId": "N-VII-02",
+      "before": "بالعددالذي",
+      "after": "بالعدد الذي",
+      "classification": "layout-only"
+    },
+    {
+      "id": "N-S11-VII-02-003",
+      "passageId": "N-VII-02",
+      "before": "ووجودُ كلٌّ من",
+      "after": "ووجودُ كلٍّ من",
+      "classification": "contextual-editorial-case-vocalization"
+    },
+    {
+      "id": "N-S11-VII-03-002",
+      "passageId": "N-VII-03",
+      "before": "جهةُّ وحدتِهِ",
+      "after": "جهةُ وحدتِهِ",
+      "classification": "editorial-vocalization-repair"
+    },
+    {
+      "id": "N-S11-VII-03-003",
+      "passageId": "N-VII-03",
+      "before": "مع وحدِة مّا",
+      "after": "مع وحدةٍ مّا",
+      "classification": "editorial-vocalization-repair"
+    },
+    {
+      "id": "N-S11-VII-04-001",
+      "passageId": "N-VII-04",
+      "before": "قاعدة الفرعيّه",
+      "after": "قاعدة الفرعيّة",
+      "classification": "orthographic-alignment-with-both-witnesses"
+    },
+    {
+      "id": "N-S11-VII-06-001",
+      "passageId": "N-VII-06",
+      "before": "في الحقيقية",
+      "after": "في الحقيقة",
+      "classification": "transcription-repair-attested-in-both-witnesses"
+    },
+    {
+      "id": "N-S11-VII-06-002",
+      "passageId": "N-VII-06",
+      "before": "المنفصله الحقيقيّة",
+      "after": "المنفصلة الحقيقيّة",
+      "classification": "orthographic-alignment-with-both-witnesses"
+    },
+    {
+      "id": "N-S11-VII-06-003",
+      "passageId": "N-VII-06",
+      "before": "يطّرد كلٌّ",
+      "after": "يطرد كلٌّ",
+      "classification": "editorial-vocalization-repair"
+    },
+    {
+      "id": "N-S11-VII-06-004",
+      "passageId": "N-VII-06",
+      "before": "فلازُمُ تفسيرِهِ",
+      "after": "فلازِمُ تفسيرِهِ",
+      "classification": "editorial-vocalization-repair"
+    },
+    {
+      "id": "N-S11-VII-07-001",
+      "passageId": "N-VII-07",
+      "before": "النوعيّه موضوعان",
+      "after": "النوعيّة موضوعان",
+      "classification": "orthographic-alignment-with-both-witnesses"
+    },
+    {
+      "id": "N-S11-VII-09-005",
+      "passageId": "N-VII-09",
+      "before": "متضائف",
+      "after": "متضايف",
+      "classification": "orthographic-normalization-supported-by-later-witness"
+    },
+    {
+      "id": "N-S11-VII-09-006",
+      "passageId": "N-VII-09",
+      "before": "الوجودالخارجيّ",
+      "after": "الوجود الخارجيّ",
+      "classification": "transcription-layout-correction"
+    },
+    {
+      "id": "N-S11-VII-09-007",
+      "passageId": "N-VII-09",
+      "before": "الأنواع الأخيرة\n\nالمندرجة تحت بعض آخر.",
+      "after": "الأنواع الأخيرة المندرجة تحت بعض آخر.",
+      "classification": "transcription-layout-correction"
+    },
+    {
+      "id": "N-S11-VII-09-008",
+      "passageId": "N-VII-09",
+      "before": "فكلُّ مو جود",
+      "after": "فكلُّ موجود",
+      "classification": "transcription-layout-correction"
+    },
+    {
+      "id": "N-S11-VII-09-009",
+      "passageId": "N-VII-09",
+      "before": "وجودّيان",
+      "after": "وجوديّان",
+      "classification": "vocalization-correction"
+    },
+    {
+      "id": "N-S11-VII-09-010",
+      "passageId": "N-VII-09",
+      "before": "من أيٍّ مفهوم",
+      "after": "من أيِّ مفهوم",
+      "classification": "editorial-vocalization"
+    },
+    {
+      "id": "N-S11-VII-09-011",
+      "passageId": "N-VII-09",
+      "before": "يطّرد الآخرَ",
+      "after": "يطرد الآخرَ",
+      "classification": "editorial-vocalization-supported-by-both-witnesses"
+    },
+    {
+      "id": "N-S11-VII-09-012",
+      "passageId": "N-VII-09",
+      "before": "واحدٌّ",
+      "after": "واحدٌ",
+      "classification": "vocalization-correction"
+    },
+    {
+      "id": "N11-VIII03-SP01",
+      "passageId": "N-VIII-03",
+      "before": "بقاءًكان",
+      "after": "بقاءً كان",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-VIII03-SP02",
+      "passageId": "N-VIII-03",
+      "before": "مستقلاّعنهاغيرَ",
+      "after": "مستقلاّ عنها غيرَ",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-VIII03-SP03",
+      "passageId": "N-VIII-03",
+      "before": "هذاالقول",
+      "after": "هذا القول",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-VIII03-SP04",
+      "passageId": "N-VIII-03",
+      "before": "وقدتقدّمت",
+      "after": "وقد تقدّمت",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-VIII05-AR01",
+      "passageId": "N-VIII-05",
+      "before": "تلك السلسة",
+      "after": "تلك السلسلة",
+      "classification": "orthographic-transcription-repair"
+    },
+    {
+      "id": "N11-VIII05-SP01",
+      "passageId": "N-VIII-05",
+      "before": "لايخلوأكثرهامن",
+      "after": "لا يخلو أكثرها من",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-VIII08-SP01",
+      "passageId": "N-VIII-08",
+      "before": "وهوالمؤثّر",
+      "after": "وهو المؤثّر",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-VIII09-SP01",
+      "passageId": "N-VIII-09",
+      "before": "أيضاًكما",
+      "after": "أيضاً كما",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-VIII09-SP02",
+      "passageId": "N-VIII-09",
+      "before": "التامّةوسائر",
+      "after": "التامّة وسائر",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-VIII09-SP03",
+      "passageId": "N-VIII-09",
+      "before": "فلايتقدّم",
+      "after": "فلا يتقدّم",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-VIII09-SP04",
+      "passageId": "N-VIII-09",
+      "before": "لا ستلزامه",
+      "after": "لاستلزامه",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-VIII10-AR01",
+      "passageId": "N-VIII-10",
+      "before": "متدافعتنان",
+      "after": "متدافعتان",
+      "classification": "orthographic-transcription-repair"
+    },
+    {
+      "id": "N11-VIII11-SP01",
+      "passageId": "N-VIII-11",
+      "before": "أيضاًيطلب",
+      "after": "أيضاً يطلب",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-VIII11-SP02",
+      "passageId": "N-VIII-11",
+      "before": "لا ستحالة",
+      "after": "لاستحالة",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-VIII11-SP03",
+      "passageId": "N-VIII-11",
+      "before": "مايراه",
+      "after": "ما يراه",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-VIII11-SP04",
+      "passageId": "N-VIII-11",
+      "before": "مايجده",
+      "after": "ما يجده",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-VIII11-SP05",
+      "passageId": "N-VIII-11",
+      "before": "بمالها",
+      "after": "بما لها",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-VIII11-AR01",
+      "passageId": "N-VIII-11",
+      "before": "المتدّرب",
+      "after": "المتدرّب",
+      "classification": "N2"
+    },
+    {
+      "id": "N11-XII14-AR01",
+      "passageId": "N-XII-14",
+      "before": "لااستقلال",
+      "after": "لا استقلال",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-XII14-AR02",
+      "passageId": "N-XII-14",
+      "before": "إنّهوجود",
+      "after": "إنّه وجود",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-XII14-AR03",
+      "passageId": "N-XII-14",
+      "before": "فإنّهملا",
+      "after": "فإنّهم لا",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-XII14-AR04",
+      "passageId": "N-XII-14",
+      "before": "الفاعلموجَباً",
+      "after": "الفاعل موجَباً",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-XII14-AR05",
+      "passageId": "N-XII-14",
+      "before": "الأبحاث السابقه",
+      "after": "الأبحاث السابقة",
+      "classification": "orthographic-transcription-repair"
+    },
+    {
+      "id": "N11-XII17-AR01",
+      "passageId": "N-XII-17",
+      "before": "دقةّ",
+      "after": "دقّة",
+      "classification": "N2"
+    },
+    {
+      "id": "N11-XII17-AR02",
+      "passageId": "N-XII-17",
+      "before": "ثلاثه عوالم",
+      "after": "ثلاثة عوالم",
+      "classification": "orthographic-transcription-repair"
+    },
+    {
+      "id": "N11-XII18-AR01",
+      "passageId": "N-XII-18",
+      "before": "إيصالكلّ",
+      "after": "إيصال كلّ",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-XII18-AR02",
+      "passageId": "N-XII-18",
+      "before": "ينعدم كما لها",
+      "after": "ينعدم كمالها",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-XII18-AR03",
+      "passageId": "N-XII-18",
+      "before": "بأصابة الشرّ",
+      "after": "بإصابة الشرّ",
+      "classification": "orthographic-transcription-repair"
+    },
+    {
+      "id": "N11-XII18-AR04",
+      "passageId": "N-XII-18",
+      "before": "وليس بشرَ",
+      "after": "وليس بشرّ",
+      "classification": "N2"
+    },
+    {
+      "id": "N11-XII19-AR01",
+      "passageId": "N-XII-19",
+      "before": "وآثارها؛وعالم",
+      "after": "وآثارها؛ وعالم",
+      "classification": "N1"
+    },
+    {
+      "id": "N11-XII19-AR02",
+      "passageId": "N-XII-19",
+      "before": "قوّهٌ",
+      "after": "قوّةٌ",
+      "classification": "orthographic-transcription-repair"
+    },
+    {
+      "id": "N11-XII20-AR01",
+      "passageId": "N-XII-20",
+      "before": "تتصورّ",
+      "after": "تتصوّر",
+      "classification": "N2"
+    },
+    {
+      "id": "N11-XII20-AR02",
+      "passageId": "N-XII-20",
+      "before": "يدبرّ",
+      "after": "يدبّر",
+      "classification": "N2"
+    },
+    {
+      "id": "N11-XII20-AR05",
+      "passageId": "N-XII-20",
+      "before": "لايتناهي بما لا يتناهي",
+      "after": "لا يتناهى بما لا يتناهى",
+      "classification": "orthographic-transcription-repair"
     }
   ],
   "historicalLedger": "nihaya-adopted-textual-decisions-2026-11-10.json",

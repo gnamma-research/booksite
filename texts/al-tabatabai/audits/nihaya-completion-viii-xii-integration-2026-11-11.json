@@ -1084,6 +1084,372 @@
           "criticalNoteID": "N11-XII18-COLLATION"
         }
       ]
+    },
+    {
+      "unitID": "N-XII-19",
+      "reviewID": "N-COMPLETE-20261111-XII-19",
+      "arabicPreimageSha256": "9d3c6389fae14df559095d32cd1f3911d989b9c02bd61f1a4a5c259bfb76487a",
+      "englishPreimageSha256": "6578d370d1983c1579dee3ba96b71ed68b76a51b4a8dd1c1bacaeff3c36d6fa7",
+      "decisions": [
+        {
+          "decisionID": "N11-XII19-AR01",
+          "unitID": "N-XII-19",
+          "field": "arabic",
+          "operation": "replace-substring",
+          "old": "وآثارها؛وعالم",
+          "new": "وآثارها؛ وعالم",
+          "disposition": "adopt",
+          "sourceGrade": "N1",
+          "evidence": "Early p. 314; later II p. 287",
+          "reason": "Restore space after punctuation."
+        },
+        {
+          "decisionID": "N11-XII19-AR02",
+          "unitID": "N-XII-19",
+          "field": "arabic",
+          "operation": "replace-substring",
+          "old": "قوّهٌ",
+          "new": "قوّةٌ",
+          "disposition": "adopt",
+          "sourceGrade": "N1",
+          "evidence": "Early p. 314; later digital II p. 288 repeats the final-letter defect",
+          "reason": "Correct final-letter transcription error in قوة."
+        },
+        {
+          "decisionID": "N11-XII19-EN01",
+          "unitID": "N-XII-19",
+          "field": "english",
+          "operation": "replace-substring",
+          "old": "in a simpler, nobler, and more beautiful manner",
+          "new": "in a simpler, nobler, and more comprehensive manner",
+          "disposition": "adopt",
+          "sourceGrade": "E1",
+          "evidence": "Shared أبسط وأشرف وأجمل in early p. 315 and later II p. 289; context of the higher cause containing its effect's perfection",
+          "reason": "Render أجمل contextually as comprehensiveness of the less differentiated intellectual order; explicitly disclosed as an interpretive judgment in the apparatus."
+        },
+        {
+          "decisionID": "N11-XII19-COLLATION-APP",
+          "reviewID": "N-COMPLETE-20261111-XII-19",
+          "unitID": "N-XII-19",
+          "field": "notes",
+          "operation": "append-shared-critical-note",
+          "old": null,
+          "new": {
+            "id": "N11-XII19-COLLATION",
+            "passageId": "N-XII-19",
+            "type": "External comparison · complete-unit review",
+            "text": "Qum 1404 printed pp. 313–315 (canvases 317–319); 1428 edited digital text, vol. 2 pp. 287–289. Every stored Arabic and English paragraph, the complete early printed unit, and the later body and associated editorial notes were read. Printed witnesses only; no manuscript collation or independent human specialist certification is claimed.\n\nThe complete early/base body is retained. The later digital witness has a substantial omission in the first conclusion, so it is not used to shorten the base. Two Arabic typographic repairs and one disclosed English interpretation are proposed.\n\nAll eight English paragraphs were compared with all twelve Arabic paragraphs and both witnesses. Existential priority is not rendered as temporal succession, and the account of motion in imagination correctly distinguishes the represented change from change in knowledge. English already preserves the full sentence absent from the later digital body. In the third conclusion, أجمل is proposed as ‘more comprehensive’ rather than ‘more beautiful’: in context the higher cause contains the lower order in a simpler, less differentiated manner. This is a contextual translation judgment, not a variant in Arabic.\n\nLater p. 288 omits the early p. 315/base span وأعلى ، ومن أعلى المراتب التي هي مبدأ الكلّ أقرب ، فعالم العقل أقدم وأسبق between the first occurrence of أقدم وأسبق and وجودا من عالم المثال. Its resulting sentence jumps directly from the degree in graded existence to priority over the imaginal world. Retain the fuller early/base wording and English; this is a later digital-witness omission, not an omission in the current edition.\n\nLater p. 288 n. 1 replaces early/base ما فيها with ما فيه; n. 2 replaces عليها with عليه and the body also has وتتوقف instead of ويتوقف. These are grammatical regularizations. Retain the early/base wording.\n\nThe sequence أبسط وأشرف وأجمل is shared by early p. 315, base, and later p. 289. The proposed English renders the last term in the sense of comprehensiveness or lack of differentiation, supported by the immediately preceding claim that a cause contains the perfection of its effect; it is not evidence for a different Arabic reading.\n\nInsert a space in وآثارها؛وعالم and correct قوّه to قوّة. These are conservative typography corrections, with no doctrinal effect.\n\nLater editorial commentary: Read all notes on pp. 287–288: internal references to XII.17 and XI.3, the referent of this realm, explicit gender/pronoun repairs, and the link to the earlier treatment of causal possession of perfection. Page 289 has no associated note. No later historical claim is promoted into the authorial text.\n\nOriginal-note and boundary review: No early footnote or reference is missing from the base. The significant omission is in the later digital witness, and the complete early wording is already present in both stored languages. All four conclusions and both chapter boundaries were verified.",
+            "source": "Qum 1404 printed pp. 313–315 (canvases 317–319); 1428 edited digital text, vol. 2 pp. 287–289",
+            "url": "https://lib.rafed.net/view.php?b_id=3109&page=287&type=c_fbook",
+            "status": "Complete printed-witness comparison; no manuscript certification.",
+            "sourceGrades": [
+              "A1",
+              "C1",
+              "L1",
+              "L2"
+            ],
+            "evidenceReport": "../../audits/nihaya-completion-viii-xii-2026-11-11.json",
+            "reviewID": "N-COMPLETE-20261111-XII-19"
+          },
+          "disposition": "apparatus-only",
+          "sourceGrade": "A1",
+          "evidence": "Qum 1404 printed pp. 313–315 (canvases 317–319); 1428 edited digital text, vol. 2 pp. 287–289",
+          "reason": "Preserve attributed comparison evidence and editorial decisions in the shared critical apparatus.",
+          "criticalNoteID": "N11-XII19-COLLATION"
+        }
+      ]
+    },
+    {
+      "unitID": "N-XII-20",
+      "reviewID": "N-COMPLETE-20261111-XII-20",
+      "arabicPreimageSha256": "a22a962a85af4dffba37b0421fa20d435804732befec0a597467d048de86eeeb",
+      "englishPreimageSha256": "93d2e6a12c7734bf36a6698e05ba7e4da57a390fbe992d7a65d4c6f65a1c2663",
+      "decisions": [
+        {
+          "decisionID": "N11-XII20-AR01",
+          "unitID": "N-XII-20",
+          "field": "arabic",
+          "operation": "replace-substring",
+          "old": "تتصورّ",
+          "new": "تتصوّر",
+          "disposition": "adopt",
+          "sourceGrade": "N1",
+          "evidence": "Early p. 317; later II p. 292",
+          "reason": "Place the shadda on the correct consonant."
+        },
+        {
+          "decisionID": "N11-XII20-AR02",
+          "unitID": "N-XII-20",
+          "field": "arabic",
+          "operation": "replace-substring",
+          "old": "يدبرّ",
+          "new": "يدبّر",
+          "disposition": "adopt",
+          "sourceGrade": "N1",
+          "evidence": "Early p. 317; later II p. 292 repeats the misplaced shadda",
+          "reason": "Place the shadda on the correct consonant."
+        },
+        {
+          "decisionID": "N11-XII20-AR03",
+          "unitID": "N-XII-20",
+          "field": "arabic",
+          "operation": "replace-substring",
+          "old": "كلَّ علّة موجودة واجدةٌ",
+          "new": "كلَّ علّة موجِدة واجدةٌ",
+          "disposition": "adopt",
+          "sourceGrade": "R1",
+          "evidence": "Early printed p. 319 (canvas 323); later II p. 294, third-objection body",
+          "reason": "Restore the reading shared by both external witnesses: an existence-bestowing cause, not merely an existent cause."
+        },
+        {
+          "decisionID": "N11-XII20-AR04",
+          "unitID": "N-XII-20",
+          "field": "arabic",
+          "operation": "replace-substring",
+          "old": "موجِداً في غيره",
+          "new": "موجوداً في غيره",
+          "disposition": "adopt",
+          "sourceGrade": "N1",
+          "evidence": "Later II p. 297 n. 1 explicitly corrects early p. 320/base موجدا; immediate antithesis is موجودا في نفسه",
+          "reason": "Adopt the explicit, contextually compelled missing-wāw correction and document the contrary early reading."
+        },
+        {
+          "decisionID": "N11-XII20-AR05",
+          "unitID": "N-XII-20",
+          "field": "arabic",
+          "operation": "replace-substring",
+          "old": "لايتناهي بما لا يتناهي",
+          "new": "لا يتناهى بما لا يتناهى",
+          "disposition": "adopt",
+          "sourceGrade": "N1",
+          "evidence": "Early p. 320; later II p. 296",
+          "reason": "Normalize spacing and final alif maqṣūra in the repeated verb."
+        },
+        {
+          "decisionID": "N11-XII20-EN01",
+          "unitID": "N-XII-20",
+          "field": "english",
+          "operation": "replace-substring",
+          "old": "Every existent cause, for example, possesses",
+          "new": "Every cause that bestows existence, for example, possesses",
+          "disposition": "adopt",
+          "sourceGrade": "E1",
+          "evidence": "Early p. 319 and later II p. 294 read علة موجدة; corresponding Arabic correction N11-XII20-AR03",
+          "reason": "Translate the externally attested causative participle, eliminating the mistranslation induced by the base transcription defect."
+        },
+        {
+          "decisionID": "N11-XII20-COLLATION-APP",
+          "reviewID": "N-COMPLETE-20261111-XII-20",
+          "unitID": "N-XII-20",
+          "field": "notes",
+          "operation": "append-shared-critical-note",
+          "old": null,
+          "new": {
+            "id": "N11-XII20-COLLATION",
+            "passageId": "N-XII-20",
+            "type": "External comparison · complete-unit review",
+            "text": "Qum 1404 printed pp. 315–321 (canvases 319–325); 1428 edited digital text, vol. 2 pp. 290–298. Every stored Arabic and English paragraph, the complete early printed unit, and the later body and associated editorial notes were read. Printed witnesses only; no manuscript collation or independent human specialist certification is claimed.\n\nThe complete body is represented in both languages. Propose five Arabic replacements: two diacritic repairs, infinity-expression spelling/spacing, restoration of موجدة from both external witnesses, and the explicit later correction موجودا in the causal contrast. One English sentence is corrected to match the restored existence-bestowing cause. All substantial later editorial interventions are distinguished from inherited text.\n\nAll 25 English paragraphs and the existing note were compared with all 31 Arabic paragraphs and both complete witnesses. The translation accurately preserves the distinction between the possibility-of-the-nobler principle and the stronger claim of a separate same-quiddity archetype, including all three objections and the exception for human development. Change ‘Every existent cause’ to ‘Every cause that bestows existence’ to match early/later موجدة against the base's موجودة. The English ‘existing in another’ already follows the correct contextual reading موجودا in the second proof; the proposed Arabic correction makes that interpretive repair explicit. The remaining English and existing note are retained.\n\nEarly p. 319 and later p. 294 read كل علة موجدة واجدة لجميع كمالات المعلول; base has موجودة. Restore موجِدة and correct the corresponding English from an ‘existent cause’ to a cause that bestows existence. This is supported by both external witnesses, not merely by doctrinal inference.\n\nEarly p. 320 and base read موجدا في غيره; later p. 297 n. 1 explicitly corrects this to موجودا في غيره. The immediate contrast with موجودا في نفسه and the account of relational existence support adoption of the missing-wāw correction. Record the early reading; do not present the corrected wording as unanimously attested. English had already rendered ‘existing in another’.\n\nEarly p. 316 has الذي هذه صفتها; base already reads صفته, which the later editor explicitly adopts at p. 290 n. 4. Early p. 317 has تصح صدور الكثير منه, base يصح صدور الكثير منه, and later p. 291 تصحح صدور الكثير منه. The base's existing grammatical repair is retained; no importation of the later reformulation is needed. Later p. 292 also regularizes يفي to تفي.\n\nLater p. 293 adds هو in جسم هو موضوعها (n. 2), changes قيامه to قيامها (n. 3), and changes يعتني به ويوجده ويدبر أمره to feminine plurals (n. 5). The last note admits the inherited masculine pronouns can refer to كل منها. Retain the early/base text and intelligible English. Later p. 294 also has فتكون where early/base has فيكون.\n\nLater p. 295 n. 1 inserts [معقولنا] after يكون and identifies it as an editorial addition absent from its copies. No corresponding Arabic insertion is made here; English already makes the understood referent intelligible.\n\nLater p. 296 n. 3 changes يوجد to يصدر on the basis of al-Asfār; n. 6 changes بواسطة to بواسطته. Retain the early p. 320/base wording in the attributed argument; the underlying Asfār was not independently collated. Later p. 297 changes تكون to يكون in the two discussions of a جهة, and p. 298 nn. 2–3 changes كمالها / لكونها to كماله / لكونه. These grammatical regularizations are recorded but not imported.\n\nRepair تتصورّ to تتصوّر and يدبرّ to يدبّر, and normalize لايتناهي بما لا يتناهي to لا يتناهى بما لا يتناهى. These affect only diacritics, spacing and the clear verb's final letter.\n\nLater editorial commentary: Read every note on pp. 290–298, including the claim that the quiddity clause is redundant, Peripatetic and Illuminationist bibliographies, the quoted attribution of Platonic Forms, all three argument attributions, the explanation of reality/attenuated-reality predication, the long Ṣadrā quotation on the history and uses of the principle and its continuation onto p. 296, the source-driven corrections, and the final-objection bibliography. Historical attributions and underlying quotations remain attributed later evidence; none implies independent verification of the cited works.\n\nOriginal-note and boundary review: The early chapter has no original bibliographical note omitted from the base. Every body paragraph, all three arguments and objections, the full tanbīh and both final conclusions are present. The later long note continuing from p. 295 to p. 296 was read in full. No missing passage was found; the two lexical defects are separately proposed and evidenced.",
+            "source": "Qum 1404 printed pp. 315–321 (canvases 319–325); 1428 edited digital text, vol. 2 pp. 290–298",
+            "url": "https://lib.rafed.net/view.php?b_id=3109&page=290&type=c_fbook",
+            "status": "Complete printed-witness comparison; no manuscript certification.",
+            "sourceGrades": [
+              "A1",
+              "C1",
+              "L1",
+              "L2"
+            ],
+            "evidenceReport": "../../audits/nihaya-completion-viii-xii-2026-11-11.json",
+            "reviewID": "N-COMPLETE-20261111-XII-20"
+          },
+          "disposition": "apparatus-only",
+          "sourceGrade": "A1",
+          "evidence": "Qum 1404 printed pp. 315–321 (canvases 319–325); 1428 edited digital text, vol. 2 pp. 290–298",
+          "reason": "Preserve attributed comparison evidence and editorial decisions in the shared critical apparatus.",
+          "criticalNoteID": "N11-XII20-COLLATION"
+        }
+      ]
+    },
+    {
+      "unitID": "N-XII-21",
+      "reviewID": "N-COMPLETE-20261111-XII-21",
+      "arabicPreimageSha256": "39f93b7f02dd598ddffbdf7e0f67abf99506c569027f849157a0b891236347fc",
+      "englishPreimageSha256": "1c46f9565689cae282acd0050b7d1e8951a01e5ef84d347f6b8bd2f33d539868",
+      "decisions": [
+        {
+          "decisionID": "N11-XII21-NOTE01",
+          "unitID": "N-XII-21",
+          "field": "notes",
+          "operation": "replace-note",
+          "old": {
+            "type": "English collation · term restored",
+            "text": "The Arabic opening reads «ويسمّى أيضاً البرزخ». The English now retains the authorial technical term barzakh alongside the explanatory rendering 'intermediate realm', rather than silently substituting the paraphrase. Compared directly against the Qum 1417 transcription; early scan/1428 independent witness collation remains pending."
+          },
+          "new": {
+            "type": "English collation · term restored and externally confirmed",
+            "text": "The Arabic opening reads «ويسمّى أيضاً البرزخ». The English retains the technical term barzakh alongside the explanatory rendering 'intermediate realm'. The term is directly confirmed in the Qum 1417 transcription, the Qum 1404 printed witness p. 321 (canvas 325), and the 1428 edited digital text, vol. II p. 299. The complete unit was reviewed against both external printed witnesses on 2026-11-11; this is printed-witness comparison, without a claim of manuscript collation or genealogical independence."
+          },
+          "disposition": "adopt",
+          "sourceGrade": "R1",
+          "evidence": "Direct reading of early p. 321 and later II p. 299, plus complete-unit comparison pp. 321–322/299–300",
+          "reason": "Replace the obsolete pending-comparison statement with the actual completed evidence while preserving source qualifications."
+        },
+        {
+          "decisionID": "N11-XII21-COLLATION-APP",
+          "reviewID": "N-COMPLETE-20261111-XII-21",
+          "unitID": "N-XII-21",
+          "field": "notes",
+          "operation": "append-shared-critical-note",
+          "old": null,
+          "new": {
+            "id": "N11-XII21-COLLATION",
+            "passageId": "N-XII-21",
+            "type": "External comparison · complete-unit review",
+            "text": "Qum 1404 printed pp. 321–322 (canvases 325–326); 1428 edited digital text, vol. 2 pp. 299–300. Every stored Arabic and English paragraph, the complete early printed unit, and the later body and associated editorial notes were read. Printed witnesses only; no manuscript collation or independent human specialist certification is claimed.\n\nNo substantive body variant or correction is required. The previously restored term البرزخ is directly confirmed in both external witnesses. Update the existing restoration note to replace its now-obsolete statement that this comparison remains pending.\n\nAll four English paragraphs and the existing note were reviewed against all five Arabic paragraphs and the external unit. The translation distinguishes matter from its effects, universal separate imagination from particular connected imagination, and their relation to variable imagined configurations. The term barzakh and explanatory intermediate realm are fully supported. No English body change is proposed.\n\nEarly p. 321 and later p. 299 both explicitly open ويسمى أيضا البرزخ. This completes the external verification previously left pending in the stored note; the existing restored English term is retained.\n\nVariation in هيئة/هيأة orthography and word spacing is non-substantive. No missing body phrase or different doctrinal reading was found.\n\nLater editorial commentary: Read all three notes on p. 299: internal references to XI.3, XII.17 and XII.19, Avicennan references for the Agent Intellect, and Illuminationist references for horizontal intellects. Page 300 has no associated note. These bibliographical attributions remain later commentary and are not claims of independent collation of the cited works.\n\nOriginal-note and boundary review: No early original note or paragraph is missing. The opening technical term and all concluding sentences are present in both languages. The only proposed metadata change removes a stale pending-status sentence after completing the actual comparison.",
+            "source": "Qum 1404 printed pp. 321–322 (canvases 325–326); 1428 edited digital text, vol. 2 pp. 299–300",
+            "url": "https://lib.rafed.net/view.php?b_id=3109&page=299&type=c_fbook",
+            "status": "Complete printed-witness comparison; no manuscript certification.",
+            "sourceGrades": [
+              "A1",
+              "C1",
+              "L1",
+              "L2"
+            ],
+            "evidenceReport": "../../audits/nihaya-completion-viii-xii-2026-11-11.json",
+            "reviewID": "N-COMPLETE-20261111-XII-21"
+          },
+          "disposition": "apparatus-only",
+          "sourceGrade": "A1",
+          "evidence": "Qum 1404 printed pp. 321–322 (canvases 325–326); 1428 edited digital text, vol. 2 pp. 299–300",
+          "reason": "Preserve attributed comparison evidence and editorial decisions in the shared critical apparatus.",
+          "criticalNoteID": "N11-XII21-COLLATION"
+        }
+      ]
+    },
+    {
+      "unitID": "N-XII-22",
+      "reviewID": "N-COMPLETE-20261111-XII-22",
+      "arabicPreimageSha256": "a04723d1dbef4eb96bf9200ffd28f24296c9151438c0b5f837fdedc39e8335d7",
+      "englishPreimageSha256": "b928346239754f1cc43a85d521f576e439d1be02e151a31f8e1fdc40f0a1647a",
+      "decisions": [
+        {
+          "decisionID": "N11-XII22-COLLATION-APP",
+          "reviewID": "N-COMPLETE-20261111-XII-22",
+          "unitID": "N-XII-22",
+          "field": "notes",
+          "operation": "append-shared-critical-note",
+          "old": null,
+          "new": {
+            "id": "N11-XII22-COLLATION",
+            "passageId": "N-XII-22",
+            "type": "External comparison · complete-unit review",
+            "text": "Qum 1404 printed pp. 322–323 (canvases 326–327); 1428 edited digital text, vol. 2 pp. 301–302. Every stored Arabic and English paragraph, the complete early printed unit, and the later body and associated editorial notes were read. Printed witnesses only; no manuscript collation or independent human specialist certification is claimed.\n\nThe complete body is retained without an adopted correction. The three witnesses agree substantively; the later note's claim about pronoun forms is recorded with the directly observed early reading.\n\nAll five English paragraphs accurately distinguish attachment in essence and act from attachment only in act, potential perfections from gradual actualization, and producing an intrinsically changing existent from making a previously nonchanging thing change. This last distinction is the chapter's central claim and is preserved in English. The remark ‘down to the present day’ translates the author's historical statement, not a new assessment of science in 2026. No English change is proposed.\n\nLater p. 301 n. 1–2 says its copies have فيه where it prints فيها in the species/perfections and competing-causes clauses. The directly read early p. 322 and current base already have فيها in both places. Thus the editor's report is not treated as a description of the early witness actually consulted here. No body change follows.\n\nLater editorial commentary: Read p. 301's internal references and pronoun note, and all of p. 302's extended comparison of the proposed connection through accidental celestial motion with Ṣadrā's alternative through substantial motion and the rational/natural aspects of celestial nature. The cited Asfār pages and historical positions are later explanatory material, not separately verified source claims or additions to the author's body.\n\nOriginal-note and boundary review: No early original note, source reference or paragraph is omitted. Both chapter boundaries and the closing solution are complete. The later note was read through its final reference to Asfār III, p. 131.",
+            "source": "Qum 1404 printed pp. 322–323 (canvases 326–327); 1428 edited digital text, vol. 2 pp. 301–302",
+            "url": "https://lib.rafed.net/view.php?b_id=3109&page=301&type=c_fbook",
+            "status": "Complete printed-witness comparison; no manuscript certification.",
+            "sourceGrades": [
+              "A1",
+              "C1",
+              "L1",
+              "L2"
+            ],
+            "evidenceReport": "../../audits/nihaya-completion-viii-xii-2026-11-11.json",
+            "reviewID": "N-COMPLETE-20261111-XII-22"
+          },
+          "disposition": "apparatus-only",
+          "sourceGrade": "A1",
+          "evidence": "Qum 1404 printed pp. 322–323 (canvases 326–327); 1428 edited digital text, vol. 2 pp. 301–302",
+          "reason": "Preserve attributed comparison evidence and editorial decisions in the shared critical apparatus.",
+          "criticalNoteID": "N11-XII22-COLLATION"
+        }
+      ]
+    },
+    {
+      "unitID": "N-XII-23",
+      "reviewID": "N-COMPLETE-20261111-XII-23",
+      "arabicPreimageSha256": "aa011c0966b5c0fb28d103f09937c099b90e45b6bac33234293fcb74a1995400",
+      "englishPreimageSha256": "e2e451e979b398c89cfb55eee1783015d23ea7b79fded82133775975fa7b746d",
+      "decisions": [
+        {
+          "decisionID": "N11-XII23-COLLATION-APP",
+          "reviewID": "N-COMPLETE-20261111-XII-23",
+          "unitID": "N-XII-23",
+          "field": "notes",
+          "operation": "append-shared-critical-note",
+          "old": null,
+          "new": {
+            "id": "N11-XII23-COLLATION",
+            "passageId": "N-XII-23",
+            "type": "External comparison · complete-unit review",
+            "text": "Qum 1404 printed pp. 323–326 (canvases 327–330); 1428 edited digital text, vol. 2 pp. 303–306. Every stored Arabic and English paragraph, the complete early printed unit, and the later body and associated editorial notes were read. Printed witnesses only; no manuscript collation or independent human specialist certification is claimed.\n\nThe complete early/base body is retained. The later editor's directional and grammatical changes in the definition of temporal priority/posteriority are explicitly recorded. No missing original passage or source reference was found.\n\nAll fourteen English paragraphs were compared with all seventeen Arabic paragraphs and both external witnesses. Intrinsic dependence is distinguished from temporal origination through continuous substantial motion; the author's own account is kept separate from the theologians' view being criticized. In the time-definition sentence, ‘adjoining’ is the existing conservative rendering of تليه in both clauses. The context requires the actuality after a potentiality and the potentiality before an actuality; the later editor makes that asymmetry explicit. The inherited Arabic is not silently rewritten, and the apparatus discloses this issue. No English body replacement is proposed.\n\nEarly p. 324 and base read وقبليته هي كونه قوة للفعلية التي تليه وبعديته هي كونه فعلية للقوة التي تليه. Later p. 304 n. 2 changes the first تليه to تليها; n. 3 changes the second التي تليه to التي تسبقها. Both notes propose still fuller formulations giving each term its relation to both neighbours. Retain the early/base sentence; English ‘adjoining’ reflects adjacency without silently claiming the later wording is the original. The contextual order is potentiality before its actualization, as the preceding paragraph expressly states.\n\nLater p. 306 n. 3 changes عروض التغير to عرض التغير. Retain early p. 326/base عروض and the English ‘occurrence of change’.\n\nThe phrase متحول من القوة lacks an explicit إلى الفعل in early p. 324, base, and later p. 304. The English ‘passes out of potentiality’ accurately preserves this shorter wording; no unsupported phrase is supplied.\n\nLater editorial commentary: Read every note on pp. 303–306: internal references and the gloss of intrinsic coexistent nonexistence, the two time-definition corrections and suggested expansions, and the distinction between merely imagined time without a ground of abstraction and supposed abstracted time grounded in divine permanence. The editor's attributions to theologians, Ashʿarites, al-Sabzawārī and Ṭabāṭabāʾī's Asfār notes remain attributed commentary, with no independent collation of those works claimed.\n\nOriginal-note and boundary review: No original early footnote or bibliographical reference is missing. The full four-page early unit, both its opening and closing, and all later notes were read. The current English represents every argument and rejoinder, including the final rejection of noncorrespondence between abstraction and its source.",
+            "source": "Qum 1404 printed pp. 323–326 (canvases 327–330); 1428 edited digital text, vol. 2 pp. 303–306",
+            "url": "https://lib.rafed.net/view.php?b_id=3109&page=303&type=c_fbook",
+            "status": "Complete printed-witness comparison; no manuscript certification.",
+            "sourceGrades": [
+              "A1",
+              "C1",
+              "L1",
+              "L2"
+            ],
+            "evidenceReport": "../../audits/nihaya-completion-viii-xii-2026-11-11.json",
+            "reviewID": "N-COMPLETE-20261111-XII-23"
+          },
+          "disposition": "apparatus-only",
+          "sourceGrade": "A1",
+          "evidence": "Qum 1404 printed pp. 323–326 (canvases 327–330); 1428 edited digital text, vol. 2 pp. 303–306",
+          "reason": "Preserve attributed comparison evidence and editorial decisions in the shared critical apparatus.",
+          "criticalNoteID": "N11-XII23-COLLATION"
+        }
+      ]
+    },
+    {
+      "unitID": "N-XII-24",
+      "reviewID": "N-COMPLETE-20261111-XII-24",
+      "arabicPreimageSha256": "206840b2da7028fe662d783718427e9acb9449b2e3f04859cbc959c7d240b106",
+      "englishPreimageSha256": "7c21860cd05a6043f1b18c6f53fec32b10075ae2f620f250d4b5e371236c7021",
+      "decisions": [
+        {
+          "decisionID": "N11-XII24-AR01",
+          "unitID": "N-XII-24",
+          "field": "arabic",
+          "operation": "replace-substring",
+          "old": "ومتعدّات مجهولة",
+          "new": "ومعدّات مجهولة",
+          "disposition": "adopt",
+          "sourceGrade": "R1",
+          "evidence": "Direct reading of early printed p. 326 (canvas 330) and later II p. 308",
+          "reason": "Remove intrusive tāʾ from the technical term معدّات, already correctly rendered as preparatory factors in English."
+        },
+        {
+          "decisionID": "N11-XII24-COLLATION-APP",
+          "reviewID": "N-COMPLETE-20261111-XII-24",
+          "unitID": "N-XII-24",
+          "field": "notes",
+          "operation": "append-shared-critical-note",
+          "old": null,
+          "new": {
+            "id": "N11-XII24-COLLATION",
+            "passageId": "N-XII-24",
+            "type": "External comparison · complete-unit review",
+            "text": "Qum 1404 printed pp. 326–326 (canvases 330–330); 1428 edited digital text, vol. 2 pp. 307–308. Every stored Arabic and English paragraph, the complete early printed unit, and the later body and associated editorial notes were read. Printed witnesses only; no manuscript collation or independent human specialist certification is claimed.\n\nThe complete final chapter and authorial colophon are present. Restore معدّات in place of the base's متعدّات, supported by both external witnesses. Retain and document the later editor's additional word and grammatical correction rather than silently importing them.\n\nAll six English paragraphs were compared with all seven Arabic paragraphs and the entire external final unit. The distinction between perpetual divine bestowal and an unchanging or recurring natural world is accurately preserved. The English ‘preparatory factors’ already translates the external reading معدّات correctly. The authorial completion date, 6 Muḥarram 1395 AH, and closing blessing are complete. The sentence saying the ancient views have ‘now’ been overturned is the author's historical statement, not a new scientific assessment by this edition. No English replacement is needed.\n\nEarly p. 326 and later p. 308 read شرائط ومعدات مجهولة لنا; the base has ومتعدّات. Restore ومعدّات. This removes an intrusive tāʾ in the technical term for preparatory factors; the existing English already reflects the correct word.\n\nLater p. 308 inserts [مأخوذة] after أصولا موضوعة and its n. 1 expressly says the bracketed word is absent from its copies. It is not added to the early/base body.\n\nLater p. 308 n. 2 changes early/base انفسخ اليوم هذه الآراء to انفسخت اليوم هذه الآراء. Retain the inherited wording and record this grammatical regularization.\n\nThe author's colophon is dated 6 Muḥarram 1395 in both external witnesses and the base. The later editor's distinct notes give completion dates for his own work of 27 Rajab 1416 and Shawwāl 1423 and sign ʿAbbās ʿAlī al-Zāriʿī al-Sabzawārī. These later dates are not authorial revision dates or replacements for the book's colophon.\n\nLater editorial commentary: Read the internal reference to XII.13, the full discussion of cycles and the Illuminationist position on preserved celestial images, the attribution of permanence to earlier philosophers with Ṣadrā's reported rejection of that attribution, both explicit editorial interventions, and the editor's complete closing account. Underlying Ḥikmat al-Ishrāq, al-Milal wa-l-niḥal and al-Asfār passages were not independently collated. The author's end is distinguished from the editor's devotional conclusion and dated statement of work.\n\nOriginal-note and boundary review: No original note or concluding passage is absent. The full authorial colophon, including day, month, year and blessing, is represented in both languages. The later editorial ending was read and excluded from the author's body; the following index boundary on p. 309 confirms the extent of the later unit.",
+            "source": "Qum 1404 printed pp. 326–326 (canvases 330–330); 1428 edited digital text, vol. 2 pp. 307–308",
+            "url": "https://lib.rafed.net/view.php?b_id=3109&page=307&type=c_fbook",
+            "status": "Complete printed-witness comparison; no manuscript certification.",
+            "sourceGrades": [
+              "A1",
+              "C1",
+              "L1",
+              "L2"
+            ],
+            "evidenceReport": "../../audits/nihaya-completion-viii-xii-2026-11-11.json",
+            "reviewID": "N-COMPLETE-20261111-XII-24"
+          },
+          "disposition": "apparatus-only",
+          "sourceGrade": "A1",
+          "evidence": "Qum 1404 printed pp. 326–326 (canvases 330–330); 1428 edited digital text, vol. 2 pp. 307–308",
+          "reason": "Preserve attributed comparison evidence and editorial decisions in the shared critical apparatus.",
+          "criticalNoteID": "N11-XII24-COLLATION"
+        }
+      ]
     }
   ]
 }

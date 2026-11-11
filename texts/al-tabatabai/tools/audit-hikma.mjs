@@ -186,8 +186,10 @@ if(review){
   check(review.entries.length===expected,'Cross-book review register no longer covers all local passages');
   check(new Set(review.entries.map(x=>x.id)).size===review.entries.length,'Duplicate cross-book review record IDs');
   check(review.summary?.expertReviewedUnitsVerified===0 &&
-    review.summary?.statusLabels?.criticalEdition==='NOT VERIFIED',
-    'Review register must not present non-certified translations as a definitive critical edition');
+    review.summary?.statusLabels?.specialistCertifiedCriticalEdition==='NOT VERIFIED'&&
+    review.summary?.N?.printedWitnessEditionComplete===(incorporatedIds.size===136)&&
+    review.summary?.N?.manuscriptCollation===false,
+    'Completed printed-witness editing must remain distinct from human certification and manuscript collation');
   check(review.entries.filter(x=>!incorporatedIds.has(x.id)).every(x=>x.translationAssessment?.includes('NOT yet independently checked')),
     'An unchecked review record is incorrectly marked as independently collated');
   check(review.entries.filter(x=>x.englishCollation?.independentlyCollated).map(x=>x.id).sort().join(',')===[...incorporatedIds].sort().join(','),
@@ -240,8 +242,14 @@ if(nText&&nTriage){
     xi8?.arabic?.includes('ولا حكم فيها') && xi8?.arabic?.includes('والحقّ'),
     'Nihāya XI.8 negative judgment interpretive crux must retain its source and public note');
   const unitVI19=nText.units.find(u=>u.id==='N-VI-19');
-  check(unitVI19?.english.includes('imaginal form divested of quantity')&&arabicKey(unitVI19?.arabic).includes(arabicKey('المجردة من الكم')),
-    'Nihāya VI.19 scope correction lost');
+  check(unitVI19?.english.includes('imaginal form abstracted from quantity')&&arabicKey(unitVI19?.arabic).includes(arabicKey('المجردة من الكم'))&&
+    unitVI19?.notes?.some(n=>n.id==='N11-INTERPRETIVE-VI-19'&&n.text.includes('divested of quantity')),
+    'Nihāya VI.19 must preserve the attested wording and disclose the interpretive qualification');
+  const vi14=nText.units.find(u=>u.id==='N-VI-14'),vi15=nText.units.find(u=>u.id==='N-VI-15');
+  check(vi14?.english.includes('between its subject and its object—that is, the knower and the known—and like capacity and will.')&&
+    arabicKey(vi14?.arabic).includes(arabicKey('وأمّا نفس الاستعداد'))&&
+    !vi15?.english.includes('As for preparedness itself')&&vi15?.english.startsWith('A psychic quality is'),
+    'VI.14 final preparedness paragraph must be complete and remain before the VI.15 boundary');
   check(nText.units.find(u=>u.id==='N-VIII-10')?.arabic.startsWith('المشهور'),
     'Nihāya VIII.10 double-alif transcription corruption returned');
   check(nTriage.summary?.independentlyReconciledAgainstCompleteSecondWitness===incorporatedIds.size,
@@ -307,7 +315,10 @@ if(nText&&nExtra){
       check(unit?.arabic?.includes(replacement.after),'Decision not implemented: '+decision.id);
       // A feminine possessive can contain the earlier masculine string as its prefix.
       const escaped=replacement.before.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-      check(!new RegExp(escaped+'(?![\\p{L}\\p{M}\\p{N}_])','u').test(unit?.arabic||''),
+      if(decision.classification==='body-omission-and-boundary-restoration-attested-in-both-witnesses'){
+        check(replacement.after.startsWith(replacement.before)&&replacement.after.length>replacement.before.length,
+          'An appended restoration must retain its complete unchanged lead-in: '+decision.id);
+      }else check(!new RegExp(escaped+'(?![\\p{L}\\p{M}\\p{N}_])','u').test(unit?.arabic||''),
         'Earlier token sequence remains after adoption: '+decision.id);
     }
   }

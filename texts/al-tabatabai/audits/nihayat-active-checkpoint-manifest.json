@@ -1,7 +1,7 @@
 {
   "schema": "nihayat-current-checkpoint-v1",
   "date": "2026-11-11",
-  "scope": "Current source, source evidence, reader assets and verification tools, including explicitly in-progress completion reports. Mutable continuation/status documents and generated editions are excluded and checked through their own receipts.",
+  "scope": "Complete printed-witness source, frozen evidence reports/plans, discussion map, generated paragraph index, reader assets and verification tools. Mutable continuation/status documents and generated PDF editions are excluded and checked through their own receipts.",
   "files": [
     {
       "path": ".github/workflows/hikma-a4-pdf-release.yml",
@@ -25,8 +25,8 @@
     },
     {
       "path": "texts/al-tabatabai/assets/hikma-combined.js",
-      "bytes": 53476,
-      "sha256": "94272d83cc5a2c0f546b202dd891dcc4b1d9fac9a6277b00713098a04df3ddc8"
+      "bytes": 53972,
+      "sha256": "6cc777acde05e51b37a3085c8e0ef24d6b59e125023afc5edbc1d34328804f03"
     },
     {
       "path": "texts/al-tabatabai/assets/hikma-guide.css",
@@ -45,8 +45,8 @@
     },
     {
       "path": "texts/al-tabatabai/assets/hikma-reader.js",
-      "bytes": 53476,
-      "sha256": "94272d83cc5a2c0f546b202dd891dcc4b1d9fac9a6277b00713098a04df3ddc8"
+      "bytes": 53972,
+      "sha256": "6cc777acde05e51b37a3085c8e0ef24d6b59e125023afc5edbc1d34328804f03"
     },
     {
       "path": "texts/al-tabatabai/assets/hikma-refinements.css",
@@ -84,9 +84,29 @@
       "sha256": "03cea017783d699c210da6e8569d0cc8acf6c9c6f323d85f8c183b76d4949b5f"
     },
     {
+      "path": "texts/al-tabatabai/audits/bidaya-where-position-correction-2026-11-11.json",
+      "bytes": 1053,
+      "sha256": "9b8216d5f62768afc124e4aa6edc26d320d7958d11fafc595a32b8e0953d9875"
+    },
+    {
       "path": "texts/al-tabatabai/audits/cross-book-review-register-2026-11-07.json",
-      "bytes": 664997,
-      "sha256": "5eeca8f2dc120001dcefc45106259f597168c24b5fb94c5ec9956283d5e8faac"
+      "bytes": 680983,
+      "sha256": "05283a6d7f7f96cbb712f097a503502075de3745d801915c78411928fabf917d"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/discussion-link-completion-2026-11-11.json",
+      "bytes": 929362,
+      "sha256": "279125e0f9e1efccbc4aed8cb6c3f52f8d62c16cc827a13674f69481022f62c4"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/discussion-link-completion-2026-11-11.md",
+      "bytes": 10742,
+      "sha256": "c27ac16b58fe93ed1c0724811a8a1eaa780c510117ca97afca2299d2be0cbea6"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/discussion-link-second-review-2026-11-11.json",
+      "bytes": 83275,
+      "sha256": "e86da85353f6a1b1792cf70ad8ed945111b6eec271dafb7f157ceb20bd1944fc"
     },
     {
       "path": "texts/al-tabatabai/audits/hikma-collation-handoff-2026-11-09-batch-2.md",
@@ -185,38 +205,58 @@
     },
     {
       "path": "texts/al-tabatabai/audits/nihaya-adopted-textual-decisions-current.json",
-      "bytes": 111553,
-      "sha256": "0937c67ea1450877c7c1260a24affaa7ca042e67241261ea0416cde4f60e99a6"
+      "bytes": 156859,
+      "sha256": "b996a1bc4c2a29f18f555f35be1e32ea8cf8149814df4e48be4cdc42c2724adb"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/nihaya-boundary-anchor-migration-2026-11-11.json",
+      "bytes": 1421,
+      "sha256": "24aa8e4c1ccef0d7f2e734a046cff1f3a3321f132570a40e12c6560f78ef5f48"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/nihaya-complete-edition-2026-11-11.json",
+      "bytes": 7914,
+      "sha256": "5c97b9623c515d9460c13ab4665057f5f081cf19c74558be8059f24528d62618"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/nihaya-completion-presentation-reconciliation-2026-11-11.json",
+      "bytes": 43492,
+      "sha256": "311e9e3e960a1fb95ab260201c46bb2ad2847bc1fa512a26bad2c6b71acbc234"
     },
     {
       "path": "texts/al-tabatabai/audits/nihaya-completion-vi-vii-2026-11-11-integration.json",
-      "bytes": 263279,
-      "sha256": "4c58e53679e773735e6a68f0d81737a2d2bde3f8f48a991b6e2681ef6e5b8ade"
+      "bytes": 348020,
+      "sha256": "b26ae38253e5d049cdf51ebf940ea1fc62e3bd117117aa08d687e21ad26ba139"
     },
     {
       "path": "texts/al-tabatabai/audits/nihaya-completion-vi-vii-2026-11-11.json",
-      "bytes": 134437,
-      "sha256": "0266cc6571f1e683563d394c39969556dae55fe90c18eace18c9279c71b855de"
+      "bytes": 181806,
+      "sha256": "08f2150fca8207154b356062923a837b3d247341a848753eddf43149da1127c5"
     },
     {
       "path": "texts/al-tabatabai/audits/nihaya-completion-viii-xii-2026-11-11.json",
-      "bytes": 510515,
-      "sha256": "cc9805f6c47cc0d55c210668f4692e837db8cce13762a939d7d2b1ffa19a5d54"
+      "bytes": 671230,
+      "sha256": "b0b8d3287acc617fe4c20b1c3d6ca18df63d12807d3523d851dbe00f3415af46"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json",
+      "bytes": 125225,
+      "sha256": "fba09b600e16a4668c61a687495f9ea6b1b84545186ba3fe6bf6387b69447a02"
     },
     {
       "path": "texts/al-tabatabai/audits/nihaya-completion-viii-xii-integration-2026-11-11.json",
-      "bytes": 84792,
-      "sha256": "29f3dff73c8c35ad80b8913ce0f353a676db8c0b46b6f59181cbb04241fd30ad"
+      "bytes": 120811,
+      "sha256": "8f130f37b8f6a752ed49dca73c402a209a98d8622f1049bd9402ba5a0743b2d4"
     },
     {
       "path": "texts/al-tabatabai/audits/nihaya-english-collation-triage-2026-11-09.json",
-      "bytes": 280306,
-      "sha256": "2934609aeb5af7ccb89cd489a2223a41994a1d2365d524e25e4e5593f71f3b27"
+      "bytes": 312765,
+      "sha256": "bf0fcf259982b92ab431ee0729824839314855d8ec659b8308eeae580f1bab13"
     },
     {
       "path": "texts/al-tabatabai/audits/nihaya-external-comparison-register.json",
-      "bytes": 65079,
-      "sha256": "728849df97255235384325e4b1f0a39eec4020d992b76712d7e2afd62b0f51e0"
+      "bytes": 65990,
+      "sha256": "9c72bae5e007ecd5e17818dab6b5fa1a9a72b64ace80ddfb7cbfea77eabf15e2"
     },
     {
       "path": "texts/al-tabatabai/audits/nihaya-external-stage10-new.json",
@@ -240,8 +280,8 @@
     },
     {
       "path": "texts/al-tabatabai/audits/nihaya-stage10-integration-receipt.json",
-      "bytes": 897673,
-      "sha256": "49a8ca1dee2ff9b27903a57debac7b25204239dacb8038e301ab9904b24fd11a"
+      "bytes": 1347732,
+      "sha256": "2d625ac4666aa72fd5041f5e389612c8399c671224cae6d5319b1229ce6d42a1"
     },
     {
       "path": "texts/al-tabatabai/audits/nihaya-stage10-late-integration.json",
@@ -284,6 +324,11 @@
       "sha256": "7db8c656c144c24a1d0ee4f25d835a33e4fd98b7da93c21ca857ca4dccf6e70e"
     },
     {
+      "path": "texts/al-tabatabai/audits/pdf-layout-preview-2026-11-11.json",
+      "bytes": 19284,
+      "sha256": "16d05eedf9a4c3297fca76e87ab903c57eab9d9ecdadf148b57e371d5849dd21"
+    },
+    {
       "path": "texts/al-tabatabai/audits/recovery-stage9-2026-11-10/integrity-receipt.json",
       "bytes": 148097,
       "sha256": "3504f0f234d9ee4fa0b9cc6567e93101d25f6fa4346f5fdd2f62a116f822a2cb"
@@ -315,8 +360,8 @@
     },
     {
       "path": "texts/al-tabatabai/bidayat-al-hikma/data/book.json",
-      "bytes": 730660,
-      "sha256": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f"
+      "bytes": 731353,
+      "sha256": "41a82bebff137704771a67a1d70c42754e39b0c8c535c63b089ed87442bd6fa1"
     },
     {
       "path": "texts/al-tabatabai/bidayat-al-hikma/index.html",
@@ -325,8 +370,8 @@
     },
     {
       "path": "texts/al-tabatabai/data/editorial-connections.json",
-      "bytes": 85632,
-      "sha256": "0803818f1d704ef6e9b10442f53577a0f12f4fb757580602f5edd9a880491e76"
+      "bytes": 721524,
+      "sha256": "37a7680c06c30f4c08909cf38e8c37b1e70db7f03e6ec71979a1afa44d038508"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/acquired-knowledge.json",
@@ -341,7 +386,7 @@
     {
       "path": "texts/al-tabatabai/data/occurrences/assent.json",
       "bytes": 60641,
-      "sha256": "06cbcd8cd1e82b9bd1ac168722acf85c3b620bcf35937a9443e2d389342cf70f"
+      "sha256": "a21bb6f9a92be690c5f383c74653920a14a1e1ee5efb6c7ecffac79080938def"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/categorical-syllogism.json",
@@ -355,8 +400,8 @@
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/cause-of-being.json",
-      "bytes": 6232,
-      "sha256": "e13f031d7b1f51c62f897727ca2e256095625042d048b1be0995a98c12f2cd4b"
+      "bytes": 6235,
+      "sha256": "2f9aabef396d18ee0454b5750fe5e897889a64b0cc085af6d4c962cb72bf7b4e"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/common-predication.json",
@@ -372,6 +417,11 @@
       "path": "texts/al-tabatabai/data/occurrences/compound-syllogism.json",
       "bytes": 4656,
       "sha256": "8e145499145158b0856a7ce35228b6f0ee96d253b560a25dafc9a259e58bbe95"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/concept-as-title.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/conception.json",
@@ -404,14 +454,19 @@
       "sha256": "3a3c733e47857206fe8a29615b7e9ee56c43d9494d708f82a353a17d011c27b0"
     },
     {
+      "path": "texts/al-tabatabai/data/occurrences/good-and-evil.json",
+      "bytes": 21084,
+      "sha256": "2cb4bd4d70b02baeef5aa326556780d6b468a481daaf0f3b2b3fc2d355644a26"
+    },
+    {
       "path": "texts/al-tabatabai/data/occurrences/gradation-logical.json",
       "bytes": 1556,
-      "sha256": "7c2fef208b4f55ee11e064c4adca4d1ceeb7262122040ea716912db8e20f0944"
+      "sha256": "6f03cc33095927d1ef98bafa108a7363843cb3afea5e9c4118641be010babcd8"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/gradation.json",
-      "bytes": 12525,
-      "sha256": "aa1ac3abfd1897fafe4bcebb2a0f8c44a293ebc98a8f0da5ac5a03710a25d47e"
+      "bytes": 12520,
+      "sha256": "cf8d4d80e654eff1c3b41e398e314dcf6a1d574689dd18b81438b45cf22d844d"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/incomplete-induction.json",
@@ -432,6 +487,11 @@
       "path": "texts/al-tabatabai/data/occurrences/knowledge-by-presence.json",
       "bytes": 16528,
       "sha256": "f1e745067b53f2e423d662dc3cdab11d87f616e22cf1cd6410384caee95f635c"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/logical-universal.json",
+      "bytes": 1492,
+      "sha256": "5e614f5e93ea9b38accc9c99812a3df24ac1efbd3a469149e0d0fe8ed01d5298"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/mental-existence.json",
@@ -456,7 +516,7 @@
     {
       "path": "texts/al-tabatabai/data/occurrences/privation-possession.json",
       "bytes": 22964,
-      "sha256": "7bdf069c113788c22dd2fe6173833d74959f37bbb06be5704a9a0fca5ee779e3"
+      "sha256": "426f148932353357b742f4cbfe7c50cb6019fa0405087a6e76a4981f3b56de1f"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/proof-by-assumption.json",
@@ -470,8 +530,8 @@
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/self-evident-knowledge.json",
-      "bytes": 42654,
-      "sha256": "313afdea670a3ee0e5bb2a5dd60044d8f113d551ecb55991af495e4e28bbcf49"
+      "bytes": 42944,
+      "sha256": "de2200a4cb3eb43859a0cd6db8cc4e7a38bb5c265fb8de27eec65e36b1d4022f"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/special-possibility.json",
@@ -520,13 +580,13 @@
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-cause-effect.json",
-      "bytes": 311852,
-      "sha256": "4a509f1783be37da9b06c231eac240f05eae6636af540e5bd2ee09d9ba7e5de0"
+      "bytes": 311859,
+      "sha256": "0f07fe4076b5873f22b21826ed044e57191db2ae969f0c2547bbaf429b5a6aca"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-circularity.json",
-      "bytes": 9079,
-      "sha256": "6373702672bf8c0737a7f76ee076d30a8c5de5913707dbc4dadfccb93be14089"
+      "bytes": 8499,
+      "sha256": "54902b291c4c50712db683cee4914dba1373e32efba69ca844569c686b8b4fde"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-coextensiveness.json",
@@ -540,8 +600,8 @@
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-complete-cause.json",
-      "bytes": 32413,
-      "sha256": "af46a9ec64b86aa07188bf6cb56b1aab320bcfc2cbb2440c302ace4bb03dd8d3"
+      "bytes": 32788,
+      "sha256": "43bb1fe9d7f2013f14a1e4ea5326035f297edb45f999c06c7727887a29a8bbe8"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-complete-descriptive-definition.json",
@@ -561,7 +621,7 @@
     {
       "path": "texts/al-tabatabai/data/occurrences/term-concept-instance.json",
       "bytes": 141160,
-      "sha256": "61b2e8b2cf1fd6f8ab1f8aefb4e28a8fded2472c19d5e5d125801f7d39c7f27c"
+      "sha256": "3208008be78c083c9d308a2ee18b711b29aeb7c6bd725b9bb029bc8ad3c60b37"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-conception-assent.json",
@@ -580,13 +640,13 @@
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-contradiction.json",
-      "bytes": 38931,
-      "sha256": "3f71381b174daa94e793a20b2e53c84a247f929cf1277b01553c51df2d3f3881"
+      "bytes": 38929,
+      "sha256": "89368feb201d51e3a4c7ac2ad8af15317f69c123676360cd6b4127c8c94b9790"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-contrariety.json",
-      "bytes": 19976,
-      "sha256": "49f7c4822a1da8c2f2a485239bc792c82129cb45af418b12dff5ee5b94dde184"
+      "bytes": 19977,
+      "sha256": "6a5a2250fd0610432fe4bf275f8aa99ca0cd90c5367b0b8a11ca5512c96fe556"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-conventional-signification.json",
@@ -631,7 +691,7 @@
     {
       "path": "texts/al-tabatabai/data/occurrences/term-differentia.json",
       "bytes": 64549,
-      "sha256": "aa4d330124e8ea32c44a194538fb847329493b8061ac5badbe6c828403b434b6"
+      "sha256": "66f86db89da3e5c269fd24a945b6c9489cb25acdcf0426e16c0475f2155aae9d"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-dispositional-possibility.json",
@@ -655,13 +715,13 @@
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-essential-predicate.json",
-      "bytes": 30517,
-      "sha256": "068c1d9c3d313482c9aa0471c04ac699aeddc2ea5cd49590f2b0265b76bff152"
+      "bytes": 30515,
+      "sha256": "1515c15277741683ccbcd962e517cdfb3ad8749c223f099762051f6803b1c8cc"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-establishment-subsistence.json",
       "bytes": 52271,
-      "sha256": "3eb4f3cb6ca9b135372fde807baf300c0cefda94954480541d779ddd654c2361"
+      "sha256": "e83e81c0bac9c3d59e3fe85f4fd98d44335f9cd3a4c0d5017287bab31afa16c1"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-existence-for-another.json",
@@ -675,13 +735,13 @@
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-existence.json",
-      "bytes": 578912,
-      "sha256": "e2ff5bce03887ae85280911f15526a91ece89acade0d899c63175b4a3653cba4"
+      "bytes": 578456,
+      "sha256": "1aabcea174b77b200524faa2e894f62ee4b028aef501df9719d77f6670f979fc"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-existent-being.json",
       "bytes": 328147,
-      "sha256": "31bba824d7bb66c0b7a183581f58c63a709ff52e2031d66337935d7bf29fd0f5"
+      "sha256": "0454d5bcf3b3bce90ee20f06444cff3828b934cad2e4caa8f4d62f2767aa26de"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-explanation-of-the-name.json",
@@ -700,13 +760,13 @@
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-external-existence.json",
-      "bytes": 25685,
-      "sha256": "0576f1789313680f5c5057bb39b36bc5d0bc172a7c95eac37e85e365481d92d0"
+      "bytes": 26135,
+      "sha256": "46678cc450f76a6eb371b7a8c9b8edfa959c7ceedcee589ae1ce23e05f0e2800"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-final-cause.json",
-      "bytes": 5181,
-      "sha256": "35d4e57f046715bf5a96e9a3ebcadd25d98c0d08e48e64359af481f27f80ace9"
+      "bytes": 5182,
+      "sha256": "bad498c7a8fd3e2f10d6c0c602e4c399aa3d99f6629df8ed56573a3593aed49a"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-first-intellect.json",
@@ -720,13 +780,13 @@
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-genus.json",
-      "bytes": 84368,
-      "sha256": "fdf39bd2d8c03c0350c5753595e7fe2d35274a95bde70f0361c4984f789fe428"
+      "bytes": 84369,
+      "sha256": "ee5cc7ec9070f2a7d4874a39ef6c1ace960a69a684eb4e28a99b3be7739c5719"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-imaginal-realm.json",
       "bytes": 10210,
-      "sha256": "ad1ac800a0e2d26ad13e37004e8e0f909e8465f3ef85ac990e1bc0ed7bde87bc"
+      "sha256": "5d7535fda8fafe81ec2213bb63c4911608d4e3fd7104d89697eef2ab0dfd8cc4"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-implicative-signification.json",
@@ -736,7 +796,7 @@
     {
       "path": "texts/al-tabatabai/data/occurrences/term-in-itself-for-itself-through-itself.json",
       "bytes": 103040,
-      "sha256": "ae7f2c57f3d6dae857d8b015d779141151bfae28b45c77e65c655091770a06df"
+      "sha256": "c6a1a85cfa6e3175b12825876510d55c57951b79890a993359cbdc6a57e9c28b"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-inclusive-signification.json",
@@ -760,28 +820,28 @@
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-individuation.json",
-      "bytes": 10365,
-      "sha256": "6b2aa8e3b8b6569a840eaf56e4cef4c6bd66f8beaea422b9cca7d7e34a58a729"
+      "bytes": 10404,
+      "sha256": "a23d0864bcaf60233c60bd0af14ceed77af533038618bfd272845412c9154d52"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-infinite-regress.json",
-      "bytes": 13444,
-      "sha256": "c5b3ae29ba3a901402b20b7a6b7940678078e42a5e5bd563f7f79deeaad8b560"
+      "bytes": 13447,
+      "sha256": "c7650b78ca581c7ec993b8db8db129975ae7bd07c5e3cbd4d9b2484fa3f10044"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-intellect-knower-intelligible.json",
-      "bytes": 146036,
-      "sha256": "538c3e6540d461b71f5dff8a7cfe333378c65b08d183f9ada1be44a3e6184855"
+      "bytes": 146038,
+      "sha256": "1c376e2eb9e1996df80ff975b5466eb4d2af5499f257a711c1b8e5b6a4d5d5c6"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-intelligible.json",
       "bytes": 32206,
-      "sha256": "9183ede7c7908d95e587de838afb7c90335cebed130548f5689e17287b577abd"
+      "sha256": "e68fe78d8317753191719ba39f8d97490a37c883a6f34ecfb1da9cc95c977e21"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-intermediate-traversal-motion.json",
       "bytes": 13510,
-      "sha256": "80523d85dbfc43cb4478cb61fa3b5d8c3cf68dea47a5f0f83f6d8416279fecb8"
+      "sha256": "852f133c21f9fdb29cc621c7cedad11f376ba0c1219a0b1a43ec3f798dcb3a1a"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-intrinsic-contingency.json",
@@ -790,13 +850,13 @@
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-intrinsically-through-another.json",
-      "bytes": 127995,
-      "sha256": "ed543202b7336ae7ce1f9d26209b25189ec6d2f872b2174b825b648863821a12"
+      "bytes": 127993,
+      "sha256": "2b08a7a2f16838e04b1984bb876f50d0986f350d1531d855257407d4707acbc5"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-linking-existence.json",
-      "bytes": 15596,
-      "sha256": "2b54d5c6a20df1a565daab7bd3a100a086a8511c9857ac17ab981e06dea78643"
+      "bytes": 15599,
+      "sha256": "0b80b50883f1c384c97f9075df786df46d97d6aeb037c61f0f9369b04889d208"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-material-cause.json",
@@ -810,8 +870,8 @@
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-matter-form.json",
-      "bytes": 314830,
-      "sha256": "48889f2c09722aa8065c0650e8bb8fdf8bd891ff5cdb8d98672617e304512538"
+      "bytes": 314834,
+      "sha256": "f592b3b63c3d31829aac2dfca6dd53424d59cef8f0ac4f944edb4e51a48b5693"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-natural-signification.json",
@@ -846,12 +906,12 @@
     {
       "path": "texts/al-tabatabai/data/occurrences/term-potency.json",
       "bytes": 93281,
-      "sha256": "06f50790cc993651778da5dfdabd8b8357615b67faea161010072c07ed7e4acd"
+      "sha256": "24cb72556ceab111c3bad7e8e589c77015ffebdff10d2f413366a449a8d1f3c3"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-potentiality-actuality.json",
-      "bytes": 234596,
-      "sha256": "015f220d73b347214c7b4fa9b95633484aa445f0d5e19596fcf6fb68fbe8c353"
+      "bytes": 234598,
+      "sha256": "f9b2c87f433c6afc63c18875a2c4eebcaee0bc172ec6ffe318c12d314f995308"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-primacy-of-existence.json",
@@ -866,7 +926,7 @@
     {
       "path": "texts/al-tabatabai/data/occurrences/term-prime-matter.json",
       "bytes": 17401,
-      "sha256": "9f5ef430f2efb9311bde793a0331f0a7bb5801477be2b4ef8317fb3d200cb45c"
+      "sha256": "032059d37e1fb5fae1a36f1749b02d52b182a8c7804deb0627770d1c160a624e"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-proprium.json",
@@ -881,22 +941,22 @@
     {
       "path": "texts/al-tabatabai/data/occurrences/term-proximate-genus.json",
       "bytes": 9215,
-      "sha256": "32b1664049f5ce70661a832e251b257861dcc68691d9f82b48f38ac0eca7b1f7"
+      "sha256": "37f43bfbf65dffd7ca54f89ee747495f5920983840f61f97edea40882048398a"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-quality.json",
-      "bytes": 91598,
-      "sha256": "08fba40048adfee9dcd0b0434b3e0a854d8077ddca95b72328e0289e9673c74b"
+      "bytes": 91600,
+      "sha256": "4dab38dd54107378ac98d3b21483d0d0597a7ab1711d7362ee834f2940ba0774"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-quantity.json",
-      "bytes": 34660,
-      "sha256": "e3b5692d35974609ad75b5dbdf91b25a2433e79c2ac342d59763313f2434271c"
+      "bytes": 34664,
+      "sha256": "b7e331ea75b20cda49057a32203551e2bcb5fd713fa1e4a67d3cce91968a1d5f"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-quiddity.json",
       "bytes": 237269,
-      "sha256": "35730d91244364e90742f893ef6e3145548c82b0c884b4387615cd780817f252"
+      "sha256": "c8ea469709abeebc579e8f13db56d2a84aceb253ace6e21206c1ec4cf9933cce"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-rational-signification.json",
@@ -910,8 +970,8 @@
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-relation.json",
-      "bytes": 124972,
-      "sha256": "169f98d8d77866eb9cc8cdb6a56b1cc539706843028120b0d4e964e63ba99025"
+      "bytes": 124973,
+      "sha256": "ab91ca47938ac465277a41986a326fd16540444dd2d48885794084b316a1036d"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-relative-necessity.json",
@@ -970,13 +1030,13 @@
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-soul.json",
-      "bytes": 129576,
-      "sha256": "243fdb3ba01cbe9b20f908db36fb8790a9faeca1f72ec4f2453fdd62f7c6c3cc"
+      "bytes": 129578,
+      "sha256": "b58e7a4d3e888778ffa823b501682587f9dfdc7bfabfa89475304cf6e4c2be24"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-species.json",
-      "bytes": 141744,
-      "sha256": "78af7ad5b2ed013e686dab49c52e48d8981d470e4e55d27b7f622a02406d3205"
+      "bytes": 141745,
+      "sha256": "89209456aca6a05d3e1158ebe09af6072d4a416bb5414c4a8f4dd0deafbc1136"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-specific-substantial-form.json",
@@ -985,18 +1045,18 @@
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-substance-accident.json",
-      "bytes": 179640,
-      "sha256": "80eff901412c0965d1bee91b7fc993d19c725fb6658295936ec0b34d32927ce5"
+      "bytes": 179638,
+      "sha256": "391aae046e2e2df2f8ecd3d2e98aecacc0b245c7a06b8a1e6e957a5bfe3f18a7"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-substantial-motion.json",
-      "bytes": 12306,
-      "sha256": "8357ece71a71c143ffa5653117003cd23942b0fc1fe34b0b325ee7d7ca46b0e9"
+      "bytes": 12571,
+      "sha256": "2f0651c6bfe2e72b3f27483dd2c40cb7e7b912b39636e052e350e4ee55d151dd"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-the-fact-of-the-matter.json",
-      "bytes": 6981,
-      "sha256": "a7c5a5241f39db72ad5feb01c807d1e44d5ea318f7a22ca4b0394c6dcf9607d8"
+      "bytes": 8153,
+      "sha256": "0697f6b679aa1c6a2ab03db080f8889fdc89298eaa96490eba3208af6111e5a4"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-the-necessary-existent.json",
@@ -1025,13 +1085,13 @@
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-time-dahr-sarmad.json",
-      "bytes": 96775,
-      "sha256": "3e63dc9a1175874ea0c17d62f3cff4ad7a50dd01528f1558226b9f8bc11b8954"
+      "bytes": 96777,
+      "sha256": "69b6a767b0f8d73e08ff65a9428b5573af0a9d9985152044b789900ca5b31615"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-time.json",
-      "bytes": 92795,
-      "sha256": "ff14830693b96aa4435099004b0e7a550df55874f4e61e97dfd1a43095633af2"
+      "bytes": 92797,
+      "sha256": "ed4cfc62842ae7c17e8b78d2aea96336f3a8a12f0c043f308c0ce7d1190be843"
     },
     {
       "path": "texts/al-tabatabai/data/occurrences/term-total-signification.json",
@@ -1065,13 +1125,13 @@
     },
     {
       "path": "texts/al-tabatabai/data/paragraph-anchors.json",
-      "bytes": 876031,
-      "sha256": "0604d338cefdc7225c085b205600b0e93440d5699aedd604c432e595c9185a66"
+      "bytes": 876202,
+      "sha256": "32664ccc2d9b45a0db47fe2d850e54b51e9a4c5ceae73dad780eef6e1b3acc8a"
     },
     {
       "path": "texts/al-tabatabai/data/study-index.json",
-      "bytes": 654654,
-      "sha256": "7e92a0c3333c4d3ef2247d6dfa059281f9019147f7e97ad266c9253d4258e295"
+      "bytes": 1224491,
+      "sha256": "e31693e0a2df2eee8ced2a83a8cd686bd0a6306380a7cceb7d1468073b489219"
     },
     {
       "path": "texts/al-tabatabai/editorial-status.html",
@@ -1120,18 +1180,18 @@
     },
     {
       "path": "texts/al-tabatabai/nihayat-al-hikma/data/book.json",
-      "bytes": 1855985,
-      "sha256": "60cda09a94f18ee2e0b9d27b6fb9cea8f90a4e418b4b3682504b896c18918221"
+      "bytes": 2000961,
+      "sha256": "4fa2a7686d328652aad0178c5839e0ff51a5872c73ff20101c34450ef8de54a5"
     },
     {
       "path": "texts/al-tabatabai/nihayat-al-hikma/data/editorial-supplement.json",
-      "bytes": 267801,
-      "sha256": "5a5e54316856eb7825fac24f164689f70da2f7f995b5d8a1326112a8ac163fb9"
+      "bytes": 398867,
+      "sha256": "d1c97a5f1aaa48ac65b50115674b077cd1a7e5c18926fc63faf5df642df376ad"
     },
     {
       "path": "texts/al-tabatabai/nihayat-al-hikma/data/nihayat-al-hikma-english.txt",
-      "bytes": 922138,
-      "sha256": "490bbb63fefe403b79243d49201218c770656e472d73a4ff5a48b0daa3027e37"
+      "bytes": 1031723,
+      "sha256": "8914b99f72fb1773c4fb8942f20b51001020b27bf09eaa9ec50c201179c69288"
     },
     {
       "path": "texts/al-tabatabai/nihayat-al-hikma/index.html",
@@ -1145,23 +1205,23 @@
     },
     {
       "path": "texts/al-tabatabai/study-guide.html",
-      "bytes": 21662,
-      "sha256": "4629905f00c68b5c3643d0907229de87b6a6de3103b85fd64e4c412e21a7e435"
+      "bytes": 23946,
+      "sha256": "2a4d3753560769f99b7c4ac25534188af38efcdd24e9127acdddd2e521620f69"
     },
     {
       "path": "texts/al-tabatabai/tools/audit-hikma.mjs",
-      "bytes": 26221,
-      "sha256": "44cb22121fcc45348cfd86b7244c5c42b4d0c7dcb22b9370e95a260f44b354e5"
+      "bytes": 27407,
+      "sha256": "31ca6ef8bd46ea7bc5a993ea886557332023633cd374402147b35c646724a4c9"
     },
     {
       "path": "texts/al-tabatabai/tools/build-pdfs.cjs",
-      "bytes": 12306,
-      "sha256": "5d9eacfebe7ed4c93dd2c115320ca9b84c1fc22b6a34426ba3e707a36ba49eec"
+      "bytes": 12425,
+      "sha256": "c4add3f739d8e7a9988b199c453c4f86f1536174e4babde961dc798539cea1d8"
     },
     {
       "path": "texts/al-tabatabai/tools/build-study-index.py",
-      "bytes": 10952,
-      "sha256": "1e0f140f3375520b1583c33247c47a3c01c0818f352fd05c3c189fd0e2723a71"
+      "bytes": 11096,
+      "sha256": "eb99703368e9bdf71a975882eb53122d975f8761a9e7f92b10f129436011accd"
     },
     {
       "path": "texts/al-tabatabai/tools/integrate-nihaya-stage10.py",
@@ -1170,23 +1230,23 @@
     },
     {
       "path": "texts/al-tabatabai/tools/qa-browser.cjs",
-      "bytes": 21091,
-      "sha256": "bd7fe5b249e9db91907d775e4d83314c1f8caebda2b5e6308e118fc7f35a6eb5"
+      "bytes": 21238,
+      "sha256": "6474e594abf580a21834a6e9b9b9adf8469356d2baf2fa132a7b590fa6b1c090"
     },
     {
       "path": "texts/al-tabatabai/tools/qa-study-tools.cjs",
-      "bytes": 16479,
-      "sha256": "3d4213a714a5ecb2d5ce4d0244da8eae9c886820677ab3664c624feb2e5d5ea8"
+      "bytes": 19098,
+      "sha256": "b10a56d5211b88902c678bc6a6af0f7d95a09c874cade57d86d2ec3f9962c154"
     },
     {
       "path": "texts/al-tabatabai/tools/resume-current.py",
-      "bytes": 11500,
-      "sha256": "d7bf32b19e62096b7fc243ab5c0a0c05cf39ab93292c64248fc3dafccda922c6"
+      "bytes": 12116,
+      "sha256": "f08843c8f148f70235eb90ecb6b3ce77bb2576cecabd8324411a436466902cd5"
     },
     {
       "path": "texts/al-tabatabai/tools/tests/test_resume_current.py",
-      "bytes": 7433,
-      "sha256": "7cb39f187be5c6ef2e92df028469db388f87bc185305682e66d8804ed26e0431"
+      "bytes": 8745,
+      "sha256": "bb2623ff30f4a97a72f5c28a176cb12c3bed7563e9bfc0c22fe244009b93563b"
     },
     {
       "path": "texts/al-tabatabai/tools/verify-current-checkpoint.py",
@@ -1206,5 +1266,5 @@
   ],
   "parentManifest": "audits/nihayat-stage10-checkpoint-manifest.json",
   "preservedSourceCommit": "1a967009e52f36923362b3a96e67574491314942",
-  "readerRepair": "Paragraph Copy and Focus/Next corrections retained; unconfirmed print-restoration experiment reverted. Strong print-return regression remains open."
+  "readerRepair": "All81 prior browser checks passed on28198294, including actual print/return position. Final integrated release adds boundary and good/evil route regressions."
 }

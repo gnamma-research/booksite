@@ -4,9 +4,9 @@
   "countingPolicy": "A completed comparison and incorporated findings are separate states. Incorporation records adopted, retained and deferred readings; it does not mean all proposals were adopted.",
   "summary": {
     "total": 136,
-    "compared": 125,
-    "incorporated": 93,
-    "remaining": 11
+    "compared": 136,
+    "incorporated": 136,
+    "remaining": 0
   },
   "units": [
     {
@@ -444,11 +444,11 @@
     {
       "unitID": "N-VI-10",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "4312399e8c6972368ce45e9737389f9327ed503979b4be445c7c3ada554464d3",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "827e95a75115c442baa823127ff08d3f83a809ff2f3b4d3bebd2ca97de4be30b",
       "currentEnglishSha256": "83151bfbac57d26e5b750bfda95cbb03a1a0f897ed4527619a5757b1bbf33905",
       "evidenceReports": [
-        "audits/nihaya-completion-vi-vii-2026-11-11.json#/units/0"
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -456,11 +456,11 @@
     {
       "unitID": "N-VI-11",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "c5bfffaa90b9852aeb22c18f32cef61308a144640a5d3c447099cb13ab1d241f",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "9981e616ca16436f0d5d1f1f0668f0688f65bf418cad790f920fe932e782b130",
       "currentEnglishSha256": "eb5febb14eec5d0ede5673248f3a45e9d557a1c52cdf57f6e812353ab41a8c69",
       "evidenceReports": [
-        "audits/nihaya-completion-vi-vii-2026-11-11.json#/units/1"
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -468,11 +468,11 @@
     {
       "unitID": "N-VI-12",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "4d3ead5ee03608f6ee04892085162a25048087fa70025d75b72cae3b113cce37",
-      "currentEnglishSha256": "a83adef2fa4ca525289b747f40aeb6d7c114ea2b500de5d9e03c86118d77658a",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "24836bf496cc4f4f43fd7894dd2893edcaf66c1ef14b0d2a99e1bd648b2001c0",
+      "currentEnglishSha256": "8233e47aac2561484b5f0b46f9888f2d4f0c62769ab747976335a792532ce3a4",
       "evidenceReports": [
-        "audits/nihaya-completion-vi-vii-2026-11-11.json#/units/2"
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -480,11 +480,11 @@
     {
       "unitID": "N-VI-13",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "4403658ed7f51ad3ae0cc0ec6cca82caaa8198fb850444d51384c2fcf0997e1e",
-      "currentEnglishSha256": "663f0fd793558a84039a38bb7ff463dbf70580491dca28b7d3407980bd00a79c",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "d67158717a3ae2b7e8572c1d5b0c72fc9de09675c8613b3f7a2bdff1e57a1b8b",
+      "currentEnglishSha256": "ce8721de9eedcaa8e08d397b563383933784a5afafdf7b317ce9a5c4007971a8",
       "evidenceReports": [
-        "audits/nihaya-completion-vi-vii-2026-11-11.json#/units/3"
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -492,11 +492,11 @@
     {
       "unitID": "N-VI-14",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "cf1b453a90b5e57900cdeabac89d96dcb3a9953af22114684d95f0cc52c401f6",
-      "currentEnglishSha256": "9f83e25c150e055b6595f42219e4b94b181c8e4a8042cba3021ed373f9266f5e",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "618c00efd1c6b40389c42d78efb07aa87f2a3fc458cb612c01be3c7ba9cb70fc",
+      "currentEnglishSha256": "42b7251f752281ad60bd0c5267ac7160b1d0a3c7cd6019ad6ec4531fe3493d2c",
       "evidenceReports": [
-        "audits/nihaya-completion-vi-vii-2026-11-11.json#/units/4"
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -504,11 +504,11 @@
     {
       "unitID": "N-VI-15",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "826c46c4db9f27b07501f112df0f459a5be85f8a440c1e9fedc4fbfd8216a601",
-      "currentEnglishSha256": "d69572bcbc6326b40e092c83b0601a9c1e94346d2ec060c32f7e4ab2efa34b82",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "50eec065910a8e17d8aa35d4586a312c0f6c39b53e367e9efd0aabc95d29d078",
+      "currentEnglishSha256": "1bd918512685a786c5cc7901833d92d26a066ce50595aa43f83d8e282f8f513b",
       "evidenceReports": [
-        "audits/nihaya-completion-vi-vii-2026-11-11.json#/units/5"
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -516,11 +516,11 @@
     {
       "unitID": "N-VI-16",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "286758b6d5337942de7c2c6239073cdd90fcdd3234ef3b210b6bc70bae851a82",
-      "currentEnglishSha256": "992df0f05f0462a85051f9ae6cbc932fb56ff9679a356111cd8459cc11767401",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "0cc02fdf0b9eb183bdade03bf792c71215a699558a82d179798ad39b2b004f9b",
+      "currentEnglishSha256": "9faad54559d3614049e400367b3574ab9b98d9328187c84eb51331fce7156ee5",
       "evidenceReports": [
-        "audits/nihaya-completion-vi-vii-2026-11-11.json#/units/6"
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -528,11 +528,11 @@
     {
       "unitID": "N-VI-17",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "312a176f84401cd6bbed01139db134e8187fbf5ed786c79615891eba096d22cc",
-      "currentEnglishSha256": "83a4eeda39720f38f46469113402cd090636ca3e4c73cf3f403e1bb4202c18b6",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "697c7104e3076b2e1f95ebba6b2a850263f285ca49f9d93b43c8a17bf70ec602",
+      "currentEnglishSha256": "9372ece8cc8cb5eca07db30ba4b8055928859a79308d54028c2d3681a6dc9769",
       "evidenceReports": [
-        "audits/nihaya-completion-vi-vii-2026-11-11.json#/units/7"
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -540,11 +540,11 @@
     {
       "unitID": "N-VI-18",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "c0b0c45064c75367453bd8c1bfc1afd4f9278f48b8b99e68938c654dbbd8e39b",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "2d80d25f8641bfaf171a046fee185c8665a90bf228985ec46f9d901eee0aeed9",
       "currentEnglishSha256": "bae084a582e0928a868545d24f1603847c4b4772f6b1bb3c7a97dc64ca131aa7",
       "evidenceReports": [
-        "audits/nihaya-completion-vi-vii-2026-11-11.json#/units/8"
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -552,11 +552,11 @@
     {
       "unitID": "N-VI-19",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "5bae02c38ab94fe54b947d40542a795532efc7f2fc8ff1ad32ceb5306f11199c",
-      "currentEnglishSha256": "09171825c46b486da370d7ab86dfddc86ce84677cfe0d08364f5948ace9f5de3",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "67cde33bfb39ea14e782bbd5970b3a7cba330afdb906642a02c4fee56d4fe646",
+      "currentEnglishSha256": "c8363d1e798288ce7ae8f57628e3f52b9380f7653ef8b33d20336750a18b82be",
       "evidenceReports": [
-        "audits/nihaya-completion-vi-vii-2026-11-11.json#/units/10"
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -564,11 +564,11 @@
     {
       "unitID": "N-VI-20",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "7c2db9e275d7ee99920f8ad0770367e592fc53963b1e4a93ed60581552188b02",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "9dd3778ab5128a3c7582ec290ca747a9a7bd1d73ce80655e0ebe8a3f7052ec0b",
       "currentEnglishSha256": "8902a5da8cf7948a7fce8b92db726b54950fa153ccabe204d2f1d4c03d174ea6",
       "evidenceReports": [
-        "audits/nihaya-completion-vi-vii-2026-11-11.json#/units/9"
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -576,11 +576,11 @@
     {
       "unitID": "N-VI-21",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
+      "findingsIncorporated": true,
       "currentArabicSha256": "514d0ce8283dd7843d588a42aa93e687ddc63f9c13d126b4276b5193afbff568",
-      "currentEnglishSha256": "64a41199d772d951cdd237574adb790a66b324f9e8e39e4cc26872a9a1a08db2",
+      "currentEnglishSha256": "5efd37f2e6ad8057adaec8752b0f1df9fd70cb236478eb09baec15efd0415f90",
       "evidenceReports": [
-        "audits/nihaya-completion-vi-vii-2026-11-11.json#/units/11"
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -588,11 +588,11 @@
     {
       "unitID": "N-VII-01",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "cf90d7ed4eac3e8e6ebe416d0f47ecb64744f7ee1e0c245be643e0558aaa9dcc",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "1fae90de38cfcf3ae6d65f96b4866b6a768cc10dedab63b2f06285fe99ccd241",
       "currentEnglishSha256": "1de2a4ac52c0358601b128109abc196a93a90e8742b85506b6b75061155a7a54",
       "evidenceReports": [
-        "audits/nihaya-completion-vi-vii-2026-11-11.json#/units/12"
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -600,11 +600,11 @@
     {
       "unitID": "N-VII-02",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "8dc0cc124e3e0a9eb2eb695ab9c4e54202fb97a2ca3673c443733210cc6f0d7e",
-      "currentEnglishSha256": "c56f46371637eb2e60e27d6e4f77eb56698709be87e6e40e5dbac095ac6e2fe9",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "1ddae7e76467568cc615d1b4b16a87513c9ac91e1471259e968db819a8a037b3",
+      "currentEnglishSha256": "4bb1b61a7c40b8af6737a0be4a3c1b177f839a596eee819c9d5e6388215f9f37",
       "evidenceReports": [
-        "audits/nihaya-completion-vi-vii-2026-11-11.json#/units/13"
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -612,11 +612,11 @@
     {
       "unitID": "N-VII-03",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "711d34d6346f22183cae1cf034333c70c00019877ef84a10a017cb3f3eee0d38",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "dcd5d2c4c7e30321e8383e51e7c978ca7d146d3bfa2691252499496a00bad449",
       "currentEnglishSha256": "c32e8bd46fcdc11609dcd7922634dc5493adab3121cbce045d80c2cf8acc1d24",
       "evidenceReports": [
-        "audits/nihaya-completion-vi-vii-2026-11-11.json#/units/14"
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -624,73 +624,83 @@
     {
       "unitID": "N-VII-04",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "37961887691881e130f2ce4f9f19bcb7bff54f260a89a2a89f4221c048fa3411",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "a1100e9a9dacafa60d2c356c6e4504d5ca0ac0dd63cbcad4bf042b462557bfc6",
       "currentEnglishSha256": "aee08092fbad3133b1d5f30a3b1077a4c385c2a52e5799735e4d4aa1ab2c0bad",
       "evidenceReports": [
-        "audits/nihaya-completion-vi-vii-2026-11-11.json#/units/15"
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
     },
     {
       "unitID": "N-VII-05",
-      "comparisonComplete": false,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "8149f2aa295a720dc80618720b6295951f6ca4495cd1030e4e24a7c61fadad41",
-      "currentEnglishSha256": "e1bb5ff1330bad5eb9c9db2082fd976550226e4953917225b2e1516b0748d3e4",
-      "evidenceReports": [],
+      "comparisonComplete": true,
+      "findingsIncorporated": true,
+      "currentArabicSha256": "58f6aec59c6feb417319754566a60b9747345bfcbbfac4cb989a3245fd8ef785",
+      "currentEnglishSha256": "4d04fe81deb8cd34185df047cfafef6f2c31b5e7ffa9e3bdecd753b2552a64b6",
+      "evidenceReports": [
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
+      ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
     },
     {
       "unitID": "N-VII-06",
-      "comparisonComplete": false,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "bab906fbce73e51ebe9be1e116dc2c498bf28b05ea9e92ecd815984fa33e4ce0",
+      "comparisonComplete": true,
+      "findingsIncorporated": true,
+      "currentArabicSha256": "80513ec22623c5d44a529ec437ae9c0e93e33886a6a1e1f2de3967941b5f88ec",
       "currentEnglishSha256": "cbcb94c8018c67fd423bb9f51dee0dcbe763543f5c24151be4c0bb952323d082",
-      "evidenceReports": [],
+      "evidenceReports": [
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
+      ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
     },
     {
       "unitID": "N-VII-07",
-      "comparisonComplete": false,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "5856ff93ba572e97d5b9e4b578026ed7ea695d8ffa2d3e7e1a6b8a33af9834f9",
+      "comparisonComplete": true,
+      "findingsIncorporated": true,
+      "currentArabicSha256": "71a44ddb64d68d406c9ab9df7799c4b3d66f4bc7f6bb473a3923e625665bb6ed",
       "currentEnglishSha256": "1030735d6c4efa2d715d1b459c97e1ea3689c79f4850f25912141e695a9a1eab",
-      "evidenceReports": [],
+      "evidenceReports": [
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
+      ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
     },
     {
       "unitID": "N-VII-08",
-      "comparisonComplete": false,
-      "findingsIncorporated": false,
+      "comparisonComplete": true,
+      "findingsIncorporated": true,
       "currentArabicSha256": "0557d414eca11e235b32eaecc3b355a2b8bf434ee7aaccbdffa11ab00f006461",
       "currentEnglishSha256": "2ccc81e3f62c056a41370d1077465ee353d2a76c26284af8ebe6c37c636595dd",
-      "evidenceReports": [],
+      "evidenceReports": [
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
+      ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
     },
     {
       "unitID": "N-VII-09",
-      "comparisonComplete": false,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "cd60f6e39dd05ffe52e5c8257c6a3e87c0fc132d43e14ae3c66017da4541d481",
-      "currentEnglishSha256": "255a91a51eaacd8cd58bf3f4b5f86be768bb257700fec1dbad20f3bc761cf9a8",
-      "evidenceReports": [],
+      "comparisonComplete": true,
+      "findingsIncorporated": true,
+      "currentArabicSha256": "2e72359336bb3f681ab3e2c2efa1fadafa8015ef8846acebd636b3e353a98078",
+      "currentEnglishSha256": "a287e6ceb1633088926654243483b6a1b02c21164295cd8fd73e6821a068e7b1",
+      "evidenceReports": [
+        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json"
+      ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
     },
     {
       "unitID": "N-VIII-01",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
+      "findingsIncorporated": true,
       "currentArabicSha256": "c13cd38082b1af8d9de18cf732f518b4eda7d94316a6ccf4e63c38c1e2b0bd42",
       "currentEnglishSha256": "c620f1039e0389bd81e8ee58b6f7d895a2663749a1d2e3208871d5ef43202706",
       "evidenceReports": [
-        "audits/nihaya-completion-viii-xii-2026-11-11.json#/units/0"
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -698,11 +708,11 @@
     {
       "unitID": "N-VIII-02",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
+      "findingsIncorporated": true,
       "currentArabicSha256": "c9f4ea0400fa0d6b9f0ddbcac8d935434406cb5b7b03c53aab137ad995041e2c",
       "currentEnglishSha256": "39d9ff4f41398bb48a8999bd376d5839c650bb4f0b0d8c25476e9864f12f00d0",
       "evidenceReports": [
-        "audits/nihaya-completion-viii-xii-2026-11-11.json#/units/1"
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -710,11 +720,11 @@
     {
       "unitID": "N-VIII-03",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "03cb8697c5258647fd7ec7e704eb95a4ab41697b7af47a9d4421d54fde679bbd",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "e8b2ff58a051648ae76412b075f5cf0a35fa4ff79f871a3908f2f1d42a8d8bc2",
       "currentEnglishSha256": "e5718bac2e9fc1783e35b53984b921968d40c9d564a87a45d5225e6f662aaa2d",
       "evidenceReports": [
-        "audits/nihaya-completion-viii-xii-2026-11-11.json#/units/2"
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -722,11 +732,11 @@
     {
       "unitID": "N-VIII-04",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
+      "findingsIncorporated": true,
       "currentArabicSha256": "d8c51c250cc7d761eee153674d1f4afd166f2ab2f6be9e05522ca2ae5f8496e4",
       "currentEnglishSha256": "b9a777b3380031278072cc1edcc6440a8d76e32d973268d5412971b1ca14c20b",
       "evidenceReports": [
-        "audits/nihaya-completion-viii-xii-2026-11-11.json#/units/3"
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -734,11 +744,11 @@
     {
       "unitID": "N-VIII-05",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "13755d6b0f43cfcca14c0d3a4584bdc485fbec4a0ea23187632cd7d3a416aa88",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "ea61e6f7e2b4aa362c03980d00ef63f046647cd8498657fb089bfe29a0a50eec",
       "currentEnglishSha256": "e3002ceb84e2d4c69e0b035a22bd948944c021f6d212bd72bcf5a944edf935bd",
       "evidenceReports": [
-        "audits/nihaya-completion-viii-xii-2026-11-11.json#/units/4"
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -746,11 +756,11 @@
     {
       "unitID": "N-VIII-06",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
+      "findingsIncorporated": true,
       "currentArabicSha256": "5c9f03ef90005b78bc545d72f00c75b57759a4006c3b3bf4a2c1145a4da40817",
       "currentEnglishSha256": "1b8664116499ce4a5619e8f3b88cf6261d381b845a3cb0a12248cc092703fdb1",
       "evidenceReports": [
-        "audits/nihaya-completion-viii-xii-2026-11-11.json#/units/5"
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -758,11 +768,11 @@
     {
       "unitID": "N-VIII-07",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
+      "findingsIncorporated": true,
       "currentArabicSha256": "7857a75e247a0185a917385fc1243f279efd71de2f36a9d091dfcb0d4b8af11b",
       "currentEnglishSha256": "060937eddc7e1de6521a4219fe3390671f20ad15fefa12e4180879d2aac85937",
       "evidenceReports": [
-        "audits/nihaya-completion-viii-xii-2026-11-11.json#/units/6"
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -770,11 +780,11 @@
     {
       "unitID": "N-VIII-08",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "75b992d07f978f8b2dac25125d75ccb19d40f7f1bfc59fe5c7e06b0817a7bda1",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "4fc4c0477ed265080bcafd29bc7390365e64aee72598beca6b4cd3fa0b0973c0",
       "currentEnglishSha256": "572bd35660f14675c7cf6677be399ee734defdb98a511ad032e2599af130cfa8",
       "evidenceReports": [
-        "audits/nihaya-completion-viii-xii-2026-11-11.json#/units/7"
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -782,11 +792,11 @@
     {
       "unitID": "N-VIII-09",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "427d72530a5db6b488483781a85bfe5b7f7c99e3445e7e8a19134c6fd667207d",
-      "currentEnglishSha256": "7ab4854dfbeb2ed22d41dd539befef9a5eda3838fc78e5f3cf19595bfcd54246",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "828f1761fc63d025b80a60ec2c48731d0134bbe7ec6742538992fcffa8787822",
+      "currentEnglishSha256": "47640f027afc7563d1aad9d1055edf3f1f91e6c3f69583d1d4953a8990414f4b",
       "evidenceReports": [
-        "audits/nihaya-completion-viii-xii-2026-11-11.json#/units/8"
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -794,11 +804,11 @@
     {
       "unitID": "N-VIII-10",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "9cdf04f67feb9cf385baa7eb8662cabf9b5e53b165338db55d7ddd0585c94fa5",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "b9e16efc7cc4b6925cfafe0f2e9d1daecb9cd2eed039df79dfd88409abad32a5",
       "currentEnglishSha256": "bc528dec857ff5aa15552745ea9260360f8657e42b6d950ef51de6f712d0e8bf",
       "evidenceReports": [
-        "audits/nihaya-completion-viii-xii-2026-11-11.json#/units/9"
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -806,11 +816,11 @@
     {
       "unitID": "N-VIII-11",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "b1db1842530965c941c0a13ee0ced3603c855ad9f0bbf44ac2699abbd496146b",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "1f7550465329ab9e5291115dc9ac0fc4182475b350e9eac3921f34162c3d35fd",
       "currentEnglishSha256": "878baad36dac4c42b8bb85665f2fc0df9491496e9716019666523c593564c927",
       "evidenceReports": [
-        "audits/nihaya-completion-viii-xii-2026-11-11.json#/units/10"
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -1502,11 +1512,11 @@
     {
       "unitID": "N-XII-14",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "6e4da415fbd4428fdbb60e630a13bf8728d0c437418aa520ee0216617abc8120",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "bfb090ec938fad56be504d3114bf6e8ee8d75cf398708a6d80b235d8ede5635b",
       "currentEnglishSha256": "16b69fe1ed2fdd5383816bea6c16e63bb3dba486c5f7196de5db944fee36aab5",
       "evidenceReports": [
-        "audits/nihaya-completion-viii-xii-2026-11-11.json#/units/11"
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -1514,11 +1524,11 @@
     {
       "unitID": "N-XII-15",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
+      "findingsIncorporated": true,
       "currentArabicSha256": "517cf7f2e57362f22c37e5db9e4945f805ebced7ab22c582528453b93df68364",
       "currentEnglishSha256": "a754975b9e3517d24dc1bafbd6adacb7f859e7398ba96ce6dc0c23441009cab3",
       "evidenceReports": [
-        "audits/nihaya-completion-viii-xii-2026-11-11.json#/units/12"
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -1526,11 +1536,11 @@
     {
       "unitID": "N-XII-16",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
+      "findingsIncorporated": true,
       "currentArabicSha256": "aca0c964beeedf13ea2c9219cec7f430adcb34c567079f31c9fcd3d3f71bff0b",
       "currentEnglishSha256": "76c5db3dd3a5eedca2b07daa60f0ed8696c022ed07c52e96e997928511522af1",
       "evidenceReports": [
-        "audits/nihaya-completion-viii-xii-2026-11-11.json#/units/13"
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -1538,11 +1548,11 @@
     {
       "unitID": "N-XII-17",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "d7c55377b6cf087584da0e6bb025e0adfa4618c373044e47cd7b4516f90ce76e",
-      "currentEnglishSha256": "1220bb527f5e9534500d303a9798cfa4c70417efa00497307aa58ad8fd6bf364",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "c3617214de6b651e2c3553f30453d5fe1cad687f03ff7a0f0ad498c7c1f994a4",
+      "currentEnglishSha256": "f1d4edcbce13bac040fabab6dfdda1c9d7631705ec73b8267a5d6b2adcb61bbc",
       "evidenceReports": [
-        "audits/nihaya-completion-viii-xii-2026-11-11.json#/units/14"
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
@@ -1550,72 +1560,84 @@
     {
       "unitID": "N-XII-18",
       "comparisonComplete": true,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "602c386d0f8701f427d1aa5080f38ca4c08a409f3c5a15d43fc80bb4dd08864b",
+      "findingsIncorporated": true,
+      "currentArabicSha256": "f5ae08023623ccef5be92d409aeb8e4c026e92efb62b373aba4958ec9d706784",
       "currentEnglishSha256": "1dddf954f8e9e6bfe878c51afcd0bc4bf20b24c61be7bcc488ddf1db29ffa28f",
       "evidenceReports": [
-        "audits/nihaya-completion-viii-xii-2026-11-11.json#/units/15"
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
       ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
     },
     {
       "unitID": "N-XII-19",
-      "comparisonComplete": false,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "9d3c6389fae14df559095d32cd1f3911d989b9c02bd61f1a4a5c259bfb76487a",
-      "currentEnglishSha256": "6578d370d1983c1579dee3ba96b71ed68b76a51b4a8dd1c1bacaeff3c36d6fa7",
-      "evidenceReports": [],
+      "comparisonComplete": true,
+      "findingsIncorporated": true,
+      "currentArabicSha256": "b3c4ee1ea4fbff4861066138818db2a4f82c340f21aa6fe3dcf7973cd439b6a7",
+      "currentEnglishSha256": "25a96152b4d6ab9e827ec9c50ffe2bf392cd8229367a6550cc4478d8efc9ca03",
+      "evidenceReports": [
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
+      ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
     },
     {
       "unitID": "N-XII-20",
-      "comparisonComplete": false,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "a22a962a85af4dffba37b0421fa20d435804732befec0a597467d048de86eeeb",
-      "currentEnglishSha256": "93d2e6a12c7734bf36a6698e05ba7e4da57a390fbe992d7a65d4c6f65a1c2663",
-      "evidenceReports": [],
+      "comparisonComplete": true,
+      "findingsIncorporated": true,
+      "currentArabicSha256": "9d9bc522081a92dfc323b1aef7529bd38491f72eff20d7752f3be965d74a30bb",
+      "currentEnglishSha256": "3e8141b9a4f56d78801e01a7f5724e670f9a58da3596d6e68275c3961c3476f3",
+      "evidenceReports": [
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
+      ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
     },
     {
       "unitID": "N-XII-21",
-      "comparisonComplete": false,
-      "findingsIncorporated": false,
+      "comparisonComplete": true,
+      "findingsIncorporated": true,
       "currentArabicSha256": "39f93b7f02dd598ddffbdf7e0f67abf99506c569027f849157a0b891236347fc",
       "currentEnglishSha256": "1c46f9565689cae282acd0050b7d1e8951a01e5ef84d347f6b8bd2f33d539868",
-      "evidenceReports": [],
+      "evidenceReports": [
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
+      ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
     },
     {
       "unitID": "N-XII-22",
-      "comparisonComplete": false,
-      "findingsIncorporated": false,
+      "comparisonComplete": true,
+      "findingsIncorporated": true,
       "currentArabicSha256": "a04723d1dbef4eb96bf9200ffd28f24296c9151438c0b5f837fdedc39e8335d7",
       "currentEnglishSha256": "b928346239754f1cc43a85d521f576e439d1be02e151a31f8e1fdc40f0a1647a",
-      "evidenceReports": [],
+      "evidenceReports": [
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
+      ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
     },
     {
       "unitID": "N-XII-23",
-      "comparisonComplete": false,
-      "findingsIncorporated": false,
+      "comparisonComplete": true,
+      "findingsIncorporated": true,
       "currentArabicSha256": "aa011c0966b5c0fb28d103f09937c099b90e45b6bac33234293fcb74a1995400",
       "currentEnglishSha256": "e2e451e979b398c89cfb55eee1783015d23ea7b79fded82133775975fa7b746d",
-      "evidenceReports": [],
+      "evidenceReports": [
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
+      ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
     },
     {
       "unitID": "N-XII-24",
-      "comparisonComplete": false,
-      "findingsIncorporated": false,
-      "currentArabicSha256": "206840b2da7028fe662d783718427e9acb9449b2e3f04859cbc959c7d240b106",
+      "comparisonComplete": true,
+      "findingsIncorporated": true,
+      "currentArabicSha256": "e45922cea01e46493f8205b34610fce5fe7c66cf4005bf55b5862c40ee751010",
       "currentEnglishSha256": "7c21860cd05a6043f1b18c6f53fec32b10075ae2f620f250d4b5e371236c7021",
-      "evidenceReports": [],
+      "evidenceReports": [
+        "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
+      ],
       "independentHumanCertification": false,
       "manuscriptCollation": false
     }

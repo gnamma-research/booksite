@@ -136,7 +136,7 @@ async function main(){
     if(buf.length<15000||buf.subarray(0,5).toString('utf8')!=='%PDF-')throw Error('Bad PDF '+filename);
     fs.writeFileSync(p.join(dest,filename),buf);
     manifest.files.push({book:title,mode,filename,bytes:buf.length,sha256:crypto.createHash('sha256').update(buf).digest('hex'),
-      source_sha256:source,supplement_sha256:supplementSource,arabic_sections:book.units.filter(x=>!isGuide(x)&&normal(x.arabic)).length,
+      source_sha256:source,supplement_sha256:supplementSource,editorial_status:book.status||null,external_comparisons:book.editorialStatus?.completeExternalWitnessComparisons??null,arabic_sections:book.units.filter(x=>!isGuide(x)&&normal(x.arabic)).length,
       english_sections:book.units.filter(x=>!isGuide(x)&&normal(x.english)).length});
    }
   }

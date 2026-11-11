@@ -131,11 +131,23 @@
   function normalise(value) {
     return text(value).normalize('NFD').replace(/[\u0300-\u036f\u0610-\u061a\u064b-\u065f\u0670\u06d6-\u06ed\u0640]/g, '').replace(/[إأآٱ]/g, 'ا').replace(/ى/g, 'ي').toLowerCase();
   }
-  const isGuide = unit => /editorial|guide|outline/.test(unit.status.toLowerCase());
-  const hasEnglish = unit => !!unit.english.trim() && !isGuide(unit);
+  const isGuide = unit => /editorial|guide|outline/.test(text(unit.status).toLowerCase());
+  const hasEnglish = unit => !!text(unit.english).trim() && !isGuide(unit);
+  function editionLabel(book) {
+    const units = (book.units || []).filter(unit => !isGuide(unit));
+    const editorial = book.editorialStatus || {};
+    if (units.length && editorial.authorialCorpusComplete === true && editorial.translationComplete === true
+      && editorial.completeExternalWitnessComparisons === units.length
+      && units.every(unit => text(unit.arabic).trim() && hasEnglish(unit))) return 'Printed-witness critical reading edition';
+    if (/draft|working|provisional|unreviewed/.test(text(book.status).toLowerCase())
+      || units.some(unit => /draft|working|provisional|unreviewed/.test(text(unit.status).toLowerCase()))) return 'Working translation';
+    if (/reviewed|verified/.test(text(book.status).toLowerCase())) return 'Reviewed translation';
+    return 'Reading edition';
+  }
   function statusLabel(unit) {
     if (isGuide(unit)) return 'Editorial reading guide';
     if (!unit.english.trim()) return 'English translation forthcoming';
+    if (unit.sourceEditionLabel === 'Printed-witness critical reading edition') return unit.sourceEditionLabel;
     if (/draft|working|provisional|unreviewed/.test(unit.status.toLowerCase())) return 'Working translation';
     if (/reviewed|verified/.test(unit.status.toLowerCase())) return 'Reviewed translation';
     return 'English translation';
@@ -148,12 +160,13 @@
     state.stages = new Map(book.stages.map(stage => [text(stage.id), stage]));
     const groups = new Map();
     const usedIds = new Set();
+    const bookEditionLabel = editionLabel(book);
     state.units = book.units.map((raw, index) => {
       const id = text(raw.id || 'passage-' + (index + 1));
       let domId = 'passage-' + slug(id);
       while (usedIds.has(domId)) domId += '-' + (index + 1);
       usedIds.add(domId);
-      const unit = { ...raw, id, domId, stage: text(raw.stage == null ? '0' : raw.stage), chapter: chapterNumber(raw.chapter), title: text(raw.title), arabicTitle: text(raw.arabicTitle), arabic: text(raw.arabic), english: text(raw.english), status: text(raw.status || book.status || ''), notes: Array.isArray(raw.notes) ? raw.notes : [] };
+      const unit = { ...raw, id, domId, stage: text(raw.stage == null ? '0' : raw.stage), chapter: chapterNumber(raw.chapter), title: text(raw.title), arabicTitle: text(raw.arabicTitle), arabic: text(raw.arabic), english: text(raw.english), status: text(raw.status || book.status || ''), sourceEditionLabel: raw.sourceEditionLabel || bookEditionLabel, notes: Array.isArray(raw.notes) ? raw.notes : [] };
       unit.searchText = normalise([unit.title, unit.arabicTitle, unit.arabic, unit.english].join(' '));
       unit.paragraphIds = state.studyIndex?.paragraphs?.[unit.id] || {};
       const groupKey = unit.stage + '::' + unit.chapter;
@@ -203,19 +216,20 @@
     let coverage;
     if (!authorUnits && guides) coverage = `Reading guide · ${guides} editorial ${guides === 1 ? 'section' : 'sections'} · bilingual text not yet available`;
     else if (!state.units.length) coverage = 'The reading edition is being prepared';
-    else coverage = `${originals} Arabic ${originals === 1 ? 'section' : 'sections'} · ${translated} of ${authorUnits} ${authorUnits === 1 ? 'section' : 'sections'} with English${state.units.some(unit => /draft|working|provisional|unreviewed/.test(unit.status.toLowerCase())) ? ' · working translation' : ''}`;
+    else coverage = `${originals} Arabic ${originals === 1 ? 'section' : 'sections'} · ${translated} of ${authorUnits} ${authorUnits === 1 ? 'section' : 'sections'} with English · ${editionLabel(book)}`;
     if (bookId === 'combined') {
-      const byPart = part => state.units.filter(unit => unit.part === part && !isGuide(unit));
-      const entry = (part, label) => {
-        const units = byPart(part), translated = units.filter(hasEnglish).length;
-        return label + ': ' + translated + '/' + units.length + ' reading passages in working English';
-      };
-      coverage = [entry('M', 'I · al-Manṭiq selections'), entry('B', 'II · Bidāya'), entry('N', 'III · Nihāya')].join(' · ');
+      coverage = Object.entries(state.sourceBooks).map(([part, source]) => {
+        const units = state.units.filter(unit => unit.part === part && !isGuide(unit));
+        return source.title + ': ' + units.filter(hasEnglish).length + '/' + units.length + ' passages with English · ' + editionLabel(source);
+      }).join(' · ');
     }
     $('coverage-text').textContent = coverage;
     if (!authorUnits && guides) {
       document.querySelector('.edition-badge').textContent = 'READING GUIDE';
       $('begin-reading').textContent = 'Open the reading guide ↓';
+    } else if (editionLabel(book) === 'Printed-witness critical reading edition') {
+      document.querySelector('.edition-badge').textContent = 'CRITICAL READING EDITION';
+      document.querySelector('.edition-badge').title = editionLabel(book);
     }
     $('begin-reading').disabled = !state.units.length;
   }
@@ -518,10 +532,16 @@
     const guideCount = state.units.filter(isGuide).length;
     const editorialText = guideCount === state.units.length && guideCount ? 'This edition currently provides editorial reading guidance. These guide sections are not translations of the author’s text. The Arabic original and an English translation will be identified separately when available.' : 'Arabic and English are aligned by chapter or passage. The label beneath each passage identifies its translation status; the source citation opens the underlying edition. Notes labelled as editorial explain choices or offer reading guidance.';
     node.append(make('p', '', editorialText), make('p', '', 'Bookmarks and personal notes are stored in this browser only. They do not alter the public edition.'));
-    if (book.status) node.append(make('p', '', 'Edition status: ' + text(book.status).replace(/[-_]/g, ' ') + '.'));
-    if (book.editorialStatus && typeof book.editorialStatus === 'object') {
-      const editorial = book.editorialStatus;
-      for (const key of ['translationMethod', 'collation', 'pagination']) if (editorial[key]) node.append(make('p', '', editorial[key]));
+    const editions = bookId === 'combined' ? Object.values(state.sourceBooks) : [book];
+    for (const source of editions) {
+      if (bookId === 'combined') node.append(make('h3', '', source.title));
+      node.append(make('p', '', 'Edition status: ' + editionLabel(source) + '.'));
+      if (source.editorialStatus && typeof source.editorialStatus === 'object') {
+        const editorial = source.editorialStatus;
+        for (const value of [editorial.translationMethod, editorial.collation || editorial.sourceBasis, editorial.pagination || editorial.paginationNote]) {
+          if (value) node.append(make('p', '', value));
+        }
+      }
     }
     if (book.downloads && Array.isArray(book.downloads)) {
       for (const item of book.downloads) {
@@ -630,10 +650,11 @@
   });
   function combineBooks(muzaffar, bidaya, nihaya) {
     const prep = (book, code, name) => {
+      const sourceEditionLabel = editionLabel(book);
       const stages = book.stages.map(stage => ({...stage, id: code + '-' + stage.id,
         title: name + ' · ' + (stage.id === '0' || code === 'M' ? '' : 'Stage ' + stage.id + ': ') + stage.title }));
       const units = book.units.filter(unit => !String(unit.id).startsWith('B-GUIDE'))
-        .map(unit => ({...unit, stage: code + '-' + unit.stage, part: code}));
+        .map(unit => ({...unit, stage: code + '-' + unit.stage, part: code, status: unit.status || book.status || '', sourceEditionLabel}));
       return {stages,units};
     };
     const m=prep(muzaffar, 'M', 'al-Manṭiq');
@@ -641,12 +662,11 @@
     const n=prep(nihaya, 'N', 'Nihāyat al-Ḥikma');
     return {id:'hikma-combined',title:'Logic, Bidāyat & Nihāyat al-Ḥikma',
       arabicTitle:'المنطق · بداية الحكمة · نهاية الحكمة',author:'Muḥammad Riḍā al-Muẓaffar · Muḥammad Ḥusayn al-Ṭabāṭabāʾī',
-      description:'Three books in one reader. Part I: selected passages from al-Muẓaffar’s logic, with the full Arabic source linked. Part II: complete authorial Arabic and full original working English of Bidāyat al-Ḥikma. Part III: complete authorial Arabic and full working English of Nihāyat al-Ḥikma. All English awaits independent expert review.',
-      status:'complete-working-translation-bidaya-and-nihaya-muzaffar-selections',
+      description:'Three books in one reader. ' + [muzaffar,bidaya,nihaya].map(book => book.title + ': ' + text(book.description)).join(' '),
+      status:'combined-reading-edition',
       stages:[...m.stages,...b.stages,...n.stages],units:[...m.units,...b.units,...n.units],
       sources:[...(muzaffar.sources||[]),...(bidaya.sources||[]),...(nihaya.sources||[])],
-      glossary:[...(muzaffar.glossary||[]).map(entry => ({...entry,bookLabel:'al-Manṭiq'})),...(bidaya.glossary||[]).map(entry => ({...entry,bookLabel:'Bidāya'})),...(nihaya.glossary||[]).map(entry => ({...entry,bookLabel:'Nihāya'}))],
-      editorialStatus:{translationMethod:'Separate statuses are retained. Muẓaffar contains introductory and definition selections, not its entire Arabic or English text. Bidāya and Nihāya both have complete authorial Arabic and full working English reading coverage; textual collation, comparison with manuscript witnesses and independent specialist review are outstanding.',collation:'The user-uploaded 325-page Arabic–English PDF is the Bidāya transcription witness; original Arabic text requires further character-by-character proofreading.',pagination:'Bidāya page numbers follow the supplied bilingual PDF. Nihāya follows the previously recorded 1417 AH Qum edition.'}};
+      glossary:[...(muzaffar.glossary||[]).map(entry => ({...entry,bookLabel:'al-Manṭiq'})),...(bidaya.glossary||[]).map(entry => ({...entry,bookLabel:'Bidāya'})),...(nihaya.glossary||[]).map(entry => ({...entry,bookLabel:'Nihāya'}))]};
   }
   async function supplementNihaya(n) {
         try {

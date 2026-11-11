@@ -150,7 +150,9 @@ def main():
           # are reliable offsets into the marked Arabic original.
           snippet=p[:200]+('…' if len(p)>200 else '')
           hits.append({'unit':uid,'paragraph':pid,'language':lang,'snippet':snippet})
-      t['occurrences']=hits;t['aliases']=sorted(set(t['aliases']));t['reviewStatus']='reviewed-discussions-and-separately-labelled-lexical-matches'
+      t['occurrences']=hits;t['aliases']=sorted(set(t['aliases']))
+      t['reviewStatus']=('reviewed-discussions-and-separately-labelled-lexical-matches' if t.get('discussions')
+                         else 'glossary-references-and-separately-labelled-lexical-matches')
     terms.sort(key=lambda t:t['label'].casefold())
     occurrence_total=sum(len(t['occurrences']) for t in terms)
     occurrence_dir=ROOT/'data/occurrences';occurrence_dir.mkdir(exist_ok=True)
@@ -160,7 +162,7 @@ def main():
       (occurrence_dir/(term['id']+'.json')).write_text(json.dumps(occurrences,ensure_ascii=False,separators=(',',':'))+'\n')
     ANCHORS.write_text(json.dumps({'paragraphs':pm,'retiredParagraphs':retired},ensure_ascii=False,separators=(',',':'))+'\n')
     compact_pm={uid:{lang:[{'id':row['id']} for row in rows] for lang,rows in langs.items()} for uid,langs in pm.items()}
-    result={'schema':1,'generated':'2026-11-10','policy':curated['policy'],'books':{k:{'title':b['title'],'slug':BOOKS[k],'units':len(b['units'])} for k,b in corpus.items()},'units':metadata,'paragraphs':compact_pm,'retiredParagraphs':retired,'links':links,'terms':terms,'authorialMap':json.loads((ROOT/BOOKS['M']/'data/authorial-map.json').read_text())}
+    result={'schema':1,'generated':curated.get('date','2026-11-11'),'policy':curated['policy'],'books':{k:{'title':b['title'],'slug':BOOKS[k],'units':len(b['units'])} for k,b in corpus.items()},'units':metadata,'paragraphs':compact_pm,'retiredParagraphs':retired,'links':links,'terms':terms,'authorialMap':json.loads((ROOT/BOOKS['M']/'data/authorial-map.json').read_text())}
     OUT.parent.mkdir(exist_ok=True);OUT.write_text(json.dumps(result,ensure_ascii=False,separators=(',',':'))+'\n')
     print(json.dumps({'units':len(metadata),'paragraphs':len(lookup),'terms':len(terms),'curatedLinks':len(links),'lexicalOccurrences':occurrence_total,'bytes':OUT.stat().st_size}))
 

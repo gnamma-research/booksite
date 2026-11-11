@@ -5,18 +5,19 @@
   "project": "Nihayat–Muzaffar–Bidayat Hikma reader",
   "repository": "gnamma-research/booksite",
   "preservation": {
-    "status": "verified-stage10-source-preserved; stable-continuation-branch-established",
+    "status": "complete-printed-witness-edition; stable-continuation-branch; final-release-pending",
     "branch": "nihayat-active",
-    "contentCommit": "1a967009e52f36923362b3a96e67574491314942",
+    "contentCommit": "28198294e8695d71c45f58d680369d178cd7372e",
     "previousRemoteStage9Commit": "44fa9a086a17dfe446295f01d076b0dd6ef31959",
     "originalDraftPullRequest": 288,
-    "originalDraftPullRequestStatus": "open-draft-not-merged",
+    "originalDraftPullRequestStatus": "historical-recovery-draft; superseded-by-PR-290",
     "remotePublicationOfRecoveredWork": false,
     "activeDraftPullRequest": 290,
     "priorContentCommit": "4a92fdbc54da37b9859a00fb567dc4a5a6a87bc4",
     "supersededStage10PullRequest": 289,
     "reconciliationCommit": "ff64b89d059ae43036014bafba00a31f5b085302",
-    "supersededStage10PullRequestStatus": "replaced-by-PR-290; historical branch preserved"
+    "supersededStage10PullRequestStatus": "replaced-by-PR-290; historical branch preserved",
+    "contentCommitScope": "Last remotely verified checkpoint before final 136-unit completion commit. Final source checkpoint will be recorded immediately after saving."
   },
   "published": {
     "stage": 8,
@@ -76,7 +77,16 @@
     "verifiedDistinctEvidenceFiles": 210,
     "pendingIntegration": false,
     "readingGrade": "Recovered prior AI-assisted whole-unit 1404 facsimile and 1428 edited digital comparisons. File integrity verified on recovery; no fresh full scholarly rereading or manuscript/human certification claimed.",
-    "stage10Receipt": "audits/nihaya-stage10-integration-receipt.json"
+    "stage10Receipt": "audits/nihaya-stage10-integration-receipt.json",
+    "finalFreshComparisons": {
+      "units": 43,
+      "reports": [
+        "audits/nihaya-completion-vi-vii-2026-11-11.json",
+        "audits/nihaya-completion-viii-xii-2026-11-11.json"
+      ],
+      "incorporated": true,
+      "sourceArchive": "completionSourceArchive"
+    }
   },
   "sourceArchive": {
     "filename": "Nihayat4_Stage9_Recovered_Research_2026-11-10.zip",
@@ -86,50 +96,30 @@
     "sha256": "8f5185e9c53be3f25a35b22bb7b0589a5dead218735be90871e2211b76c85fb9",
     "researchFiles": 770,
     "historicalPathPrefix": "/workspace/scratch/5f05ed215428/",
-    "restoreRule": "Resolve the suffix after historicalPathPrefix under the extracted archive root; do not rewrite historical reports."
+    "restoreRule": "Resolve the suffix after historicalPathPrefix under the extracted archive root; do not rewrite historical reports.",
+    "reverifiedOn": "2026-11-11"
   },
   "validation": {
     "preparedRepositoryFilesHashMatched": 82,
     "recoveredReportFilesHashMatched": 5,
-    "structuralAudit": "passed on integrated 93-comparison sources; 140/111/136 paired units, zero failures and warnings",
+    "structuralAudit": "passed on all 136 incorporated comparisons; 140/111/136 paired units; zero failures and warnings",
     "priorRemoteReaderChecks": 51,
     "priorRemoteStudyToolsSuite": "failed at Markdown quotation assertion on old commit; later recovered local fix is present",
-    "latestBrowserRegressionStatus": "51 checks passed on 4a92fdbc; integrated revision pending",
+    "latestBrowserRegressionStatus": "passed on 28198294; final integrated source run pending",
     "latestBrowserRegressionChecks": 51,
     "latestStudyToolsChecks": 30,
-    "recoveredReleasePdfVerificationCount": 0,
+    "recoveredReleasePdfVerificationCount": 9,
     "wholeNihayaReviewReperformedDuringRecovery": false,
-    "latestStudyToolsStatus": "12/30 passed on 4a92fdbc; subsection defect fixed, new run pending",
+    "latestStudyToolsStatus": "30/30 passed on 28198294; final source adds two regression cases per browser",
     "replayProtection": "passed: repeated applied plan refused before mutation; canonical hashes unchanged"
   },
   "nextWork": {
-    "firstTask": "Finish the saved completion plans, preserving every complete unit report, then incorporate their findings using exact preimage checks. Do not restart completed comparisons. The source text and all 93 earlier incorporated comparisons remain intact.",
-    "firstNewExternalComparison": "N-VII-05",
-    "remainingExternalGroups": [
-      {
-        "range": "N-VII-05–N-VII-09",
-        "count": 5
-      },
-      {
-        "range": "N-XII-19–N-XII-24",
-        "count": 6
-      }
-    ],
-    "remainingExternalUnitIds": [
-      "N-VII-05",
-      "N-VII-06",
-      "N-VII-07",
-      "N-VII-08",
-      "N-VII-09",
-      "N-XII-19",
-      "N-XII-20",
-      "N-XII-21",
-      "N-XII-22",
-      "N-XII-23",
-      "N-XII-24"
-    ],
+    "firstTask": "The complete printed-witness Nihaya edition has all 136 comparisons and findings incorporated. Finish the final source-matched browser/PDF gates and publication; do not replay translation or collation.",
+    "firstNewExternalComparison": null,
+    "remainingExternalGroups": [],
+    "remainingExternalUnitIds": [],
     "muzaffar": "Review saved Book V and nine print-supported English decisions; begin Book VI at displayed p.276 (title p.274), and fill earlier source gaps. Never duplicate M-V-02–40.",
-    "reader": "Resolve the reproduced print-restoration/Editions-return issue (M-V-28 becomes a preceding section), then complete all 30 study and 51 legacy checks. Nine preview PDFs from run 42933279860 already passed automated source-hash/searchability checks; inspect their layout and publish only after release checks pass."
+    "reader": "81 browser checks passed on the prior source checkpoint. Final integrated release includes four added checks for repaired-boundary old links and the reviewed good/evil route."
   },
   "retainedRequirements": [
     "Full external Nihaya comparison, retaining witness grades and exact variants",
@@ -151,19 +141,19 @@
   ],
   "recoveryManifest": "audits/recovery-stage9-2026-11-10/repo-file-manifest.json",
   "current": {
-    "stage": 10,
-    "status": "critical-edition-completion-in-progress",
+    "stage": 11,
+    "status": "complete-source-edition-awaiting-release",
     "pairedUnitsByBook": {
       "muzaffar-al-mantiq": 140,
       "bidayat-al-hikma": 111,
       "nihayat-al-hikma": 136
     },
     "combinedUnits": 387,
-    "nihayaExternalComparisonRecords": 125,
-    "nihayaExternalComparisonsIntegrated": 93,
-    "nihayaExternalComparisonsRemaining": 11,
+    "nihayaExternalComparisonRecords": 136,
+    "nihayaExternalComparisonsIntegrated": 136,
+    "nihayaExternalComparisonsRemaining": 0,
     "pendingRecoveredReports": 0,
-    "pendingNewReports": 32,
+    "pendingNewReports": 0,
     "newComparisonIds": [
       "N-V-05",
       "N-V-06",
@@ -179,16 +169,16 @@
     "newIntegrationPlan": "audits/nihaya-stage10-v-integration.json",
     "readerFixes": 7,
     "readerQaRecord": "audits/nihayat-continuation-repair-2026-11-11.json",
-    "remoteReaderRun": 42933279835,
-    "remoteReaderStatus": "failed-at-print-restoration; continuation checks and Copy/Focus/Next are verified, full reader release remains draft",
+    "remoteReaderRun": 42938141421,
+    "remoteReaderStatus": "81/81 browser checks passed before final textual integration; final source-matched run required",
     "newPdfCount": 9,
     "externalComparisonRegister": "audits/nihaya-external-comparison-register.json",
     "integrationReceipt": "audits/nihaya-stage10-integration-receipt.json",
     "checkpointManifest": "audits/nihayat-active-checkpoint-manifest.json",
-    "textualDecisions": 73,
-    "arabicStringReplacements": 74,
-    "explicitLaterEditorialEmendations": 40,
-    "unfootnotedLaterReadingsAdopted": 16,
+    "textualDecisions": 86,
+    "arabicStringReplacements": 87,
+    "explicitLaterEditorialEmendations": 45,
+    "unfootnotedLaterReadingsAdopted": 17,
     "newComparisonReports": [
       "audits/nihaya-external-stage10-new.json",
       "audits/nihaya-stage10-vi7-9-review.json",
@@ -199,48 +189,49 @@
       "audits/nihaya-stage10-late-integration.json",
       "audits/nihaya-stage10-v-integration.json",
       "audits/nihaya-stage10-vi7-9-integration.json",
-      "audits/nihaya-stage10-xii11-13-integration.json"
+      "audits/nihaya-stage10-xii11-13-integration.json",
+      "audits/nihaya-completion-vi-vii-2026-11-11-integration.json",
+      "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
     ],
-    "remoteReaderCommit": "08d7cd6329e7e5fead0959240f3a2ae349e23f9f",
+    "remoteReaderCommit": "28198294e8695d71c45f58d680369d178cd7372e",
     "readerRepair": {
-      "status": "partially-verified; print-return issue remains open",
+      "status": "verified in Chromium and WebKit",
       "confirmed": [
-        "explicit paragraph Copy restoration",
-        "Focus/Next subsection retention"
+        "paragraph Copy restoration",
+        "Focus/Next subsection retention",
+        "print range and cancellation preserve actual reading position",
+        "Editions return retains the selected section"
       ],
-      "openIssue": "Print restoration and subsequent Editions return must retain M-V-28.",
-      "unconfirmedPrintExperimentCommit": "08d7cd6329e7e5fead0959240f3a2ae349e23f9f",
-      "printExperimentDisposition": "Reverted in active code; retained in Git history. Stronger failing regression kept."
+      "openIssue": null,
+      "verificationRun": 42938141421,
+      "verificationCommit": "28198294e8695d71c45f58d680369d178cd7372e",
+      "checks": 81
     },
     "pdfPreview": {
-      "status": "built-and-automatically-verified; not-published",
-      "run": 42933279860,
-      "sourceCommit": "08d7cd6329e7e5fead0959240f3a2ae349e23f9f",
-      "artifactId": 13816593391,
-      "artifactUrl": "https://github.com/gnamma-research/booksite/actions/runs/42933279860/artifacts/13816593391",
+      "status": "built-and-visually-sampled; final integrated source build pending; not-published",
+      "run": 42938141554,
+      "sourceCommit": "28198294e8695d71c45f58d680369d178cd7372e",
+      "artifactId": 13818923845,
+      "artifactSha256": "b78e4a51fdc41d3c477c390ff0a62030f0ae721305cc9e060ab643dc1a435174",
       "pdfCount": 9,
-      "artifactBytes": 16417493,
       "checks": [
-        "all nine files exist",
-        "source and supplement hashes match",
-        "output file hashes and byte counts match",
-        "page count and sample text extraction pass"
+        "source/supplement/output hashes",
+        "embedded Unicode Amiri in all nine PDFs",
+        "page counts and sample extraction"
       ],
-      "visualInspection": "pending",
+      "visualInspection": "42 actual rendered pages across nine PDFs; see audits/pdf-layout-preview-2026-11-11.json",
       "publicationStep": "skipped on pull-request preview"
     },
-    "completionInProgress": {
-      "reports": [
-        "audits/nihaya-completion-vi-vii-2026-11-11.json",
-        "audits/nihaya-completion-viii-xii-2026-11-11.json"
-      ],
-      "plans": [
-        "audits/nihaya-completion-vi-vii-2026-11-11-integration.json",
-        "audits/nihaya-completion-viii-xii-integration-2026-11-11.json"
-      ],
-      "savedCompleteUnitComparisons": 32,
-      "planRule": "Cumulative plans remain in progress until their assigned range is complete. Freeze an integration-ready plan before applying; do not replay unit comparisons already recorded as complete."
-    }
+    "completionReports": [
+      "audits/nihaya-completion-vi-vii-2026-11-11.json",
+      "audits/nihaya-completion-viii-xii-2026-11-11.json"
+    ],
+    "curatedDiscussionRoutes": 532,
+    "reciprocalDiscussionPairs": 266,
+    "sharedDictionaryTerms": 150,
+    "curatedDictionaryTerms": 73,
+    "criticalApparatusNotes": 154,
+    "completionAudit": "audits/nihaya-complete-edition-2026-11-11.json"
   },
   "continuation": {
     "canonicalBranch": "nihayat-active",
@@ -251,18 +242,30 @@
       "audits/nihaya-external-comparison-register.json"
     ],
     "fullVerificationCommand": "python3 texts/al-tabatabai/tools/verify-current-checkpoint.py",
-    "fullVerificationScope": "Explicit deeper integrity check after materializing its 236 files; not mandatory for a metadata-only cold start.",
-    "sourceCheckpoint": "1a967009e52f36923362b3a96e67574491314942",
+    "fullVerificationScope": "Explicit deeper integrity check after materializing every file named in the current manifest; not mandatory for a metadata-only cold start.",
+    "sourceCheckpoint": "28198294e8695d71c45f58d680369d178cd7372e",
     "repairDate": "2026-11-11",
     "timeZone": "Asia/Riyadh",
     "conversationErrorCause": "Not established; repository state cannot diagnose ChatGPT infrastructure.",
     "verification": {
-      "status": "passed",
-      "tests": 15,
+      "status": "16 local tests passed; final remote run pending",
+      "tests": 16,
       "ciRun": 42933279930,
       "ciSourceCommit": "08d7cd6329e7e5fead0959240f3a2ae349e23f9f",
       "freshWorkspaceRestart": "passed with state/register only",
-      "nextNewUnit": "N-VI-10"
+      "nextNewUnit": null
     }
+  },
+  "completionSourceArchive": {
+    "filename": "Nihayat_Complete_Collation_Evidence_2026-11-11.zip",
+    "libraryFileId": "libfile_d75a9a72ed6481918f715869be5b3931",
+    "url": "https://chatgpt.com/library?file_id=libfile_d75a9a72ed6481918f715869be5b3931&account_id=personal",
+    "bytes": 34776684,
+    "sha256": "cd8d2ddd8d4d106b2fdb86a6a7028dd7e328f52707153770e6fd0da0e7316c02",
+    "evidenceFiles": 107,
+    "manifest": "evidence-manifest.json",
+    "historicalPathPrefix": "/workspace/scratch/39c4d2329b31/",
+    "restoreRule": "Resolve each frozen report path after historicalPathPrefix under the extracted archive root, using evidence-manifest.json for exact identity. Do not rewrite frozen reports.",
+    "scope": "Early printed-witness images and cached later edited digital pages used in the final 43 whole-unit comparisons."
   }
 }

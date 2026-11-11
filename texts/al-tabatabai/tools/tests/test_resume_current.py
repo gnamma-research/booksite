@@ -166,6 +166,28 @@ class ResumeCurrentTests(unittest.TestCase):
         self.assertIn("Integrated english hash differs", " ".join(result["problems"]))
         self.assertEqual(before, self.snapshot())
 
+    def test_completed_edition_does_not_restart_release_or_comparison(self):
+        for row in self.register["units"]:
+            row.update(comparisonComplete=True, findingsIncorporated=True)
+        self.register["summary"].update(compared=3, incorporated=3, remaining=0)
+        self.state["current"].update(nihayaExternalComparisonRecords=3,
+                                     nihayaExternalComparisonsIntegrated=3,
+                                     nihayaExternalComparisonsRemaining=0,
+                                     status="published-and-verified")
+        self.state["nextWork"].update(firstNewExternalComparison=None, remainingExternalUnitIds=[])
+        self.save()
+        self.assertEqual("review_and_release", self.check()[0]["nextTask"]["kind"])
+        self.state["published"].update(nihayaExternalComparisonsIntegrated=3,
+                                       verificationRecord="audits/final-release.json")
+        self.save()
+        before = self.snapshot()
+        result, code = self.check()
+        self.assertEqual(0, code, result)
+        self.assertEqual("nihaya_complete", result["nextTask"]["kind"])
+        self.assertIsNone(result["firstNewComparison"])
+        self.assertLess(len(json.dumps(result).encode()), 3000)
+        self.assertEqual(before, self.snapshot())
+
 
 if __name__ == "__main__":
     unittest.main()

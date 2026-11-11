@@ -127,6 +127,25 @@ async function main(type){const browser=await type.launch({headless:true});try{
    const link=index.links.find(l=>l.to.unit==='N-III-01');await page.goto(base+'nihayat-al-hikma/#'+link.to.paragraph);await ready(page);
    await page.locator('#'+link.to.paragraph).waitFor({state:'visible'});assert.equal(await page.locator('#'+link.to.paragraph).getAttribute('data-paragraph'),'true');
  });
+ await check(type.name()+' restored chapter boundary preserves old Arabic and English links',async()=>{
+   for(const old of ['para-N-VI-15-ar-001','para-N-VI-15-en-001']){
+     const target=index.retiredParagraphs[old];assert.ok(target?.startsWith('para-N-VI-14-'));
+     await page.goto(base+'nihayat-al-hikma/#'+old);await ready(page);
+     await page.locator('#'+target).waitFor({state:'visible'});
+     await page.waitForFunction(()=>window.HikmaReader.currentUnit()?.id==='N-VI-14');
+     assert.equal(await page.locator('#'+target).evaluate(n=>n.closest('.passage').dataset.unit),'N-VI-14');
+   }
+ });
+ await check(type.name()+' good and evil discussion route reaches its reviewed argument',async()=>{
+   const link=index.links.find(l=>l.from.unit==='B-XII-03'&&l.to.unit==='N-XII-18');assert.ok(link);
+   await page.goto(base+'#'+link.from.paragraph);await ready(page);
+   await page.locator('#passage-B-XII-03 .cross-text-links summary').click();
+   await page.locator('[data-link="'+link.id+'"] a').click();
+   await page.locator('#'+link.to.paragraph).waitFor({state:'visible'});
+   assert.equal(new URL(page.url()).hash,'#'+link.to.paragraph);
+   assert.ok((await page.locator('#'+link.to.paragraph).textContent()).includes(link.to.quote.replace(/\*/g,'')));
+   await page.locator('#study-return a').click();await ready(page);assert.match(page.url(),/B-XII-03/);
+ });
  await check(type.name()+' complete Muzaffar Book V and recovered classification',async()=>{
    await page.goto(base+'#passage-M-V-05');await ready(page);
    assert.equal(Object.keys(index.units).filter(id=>id.startsWith('M-V-')).length,40);

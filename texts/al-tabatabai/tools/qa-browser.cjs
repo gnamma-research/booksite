@@ -233,7 +233,8 @@ async function run(browserType){
       await intellect.waitFor({state:'attached',timeout:35000});
       assert.match(await intellect.textContent(),/“intellect” \(al-ʿaql\)/);
       const position=page.locator('#passage-N-VI-19');
-      assert.match(await position.textContent(),/imaginal form divested of quantity/i);
+      assert.match(await position.textContent(),/imaginal form abstracted from quantity/i);
+      assert.match(await position.textContent(),/divested of quantity/i,'The interpretive note must disclose the superseded stronger gloss.');
       const agent=page.locator('#passage-N-VIII-10');
       const rendered=await agent.locator('.arabic-panel .text-body').textContent();
       assert.ok(rendered.includes('المشهور'),'Missing corrected Arabic');

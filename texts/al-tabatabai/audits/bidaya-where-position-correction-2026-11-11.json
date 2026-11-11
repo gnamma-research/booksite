@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-11",
+  "unit": "B-X-10",
+  "oldEnglish": "If location is a kind of position, local motion is correspondingly a variety of positional motion.",
+  "newEnglish": "Rather, location is a kind of position, and local motion is correspondingly a variety of positional motion.",
+  "arabicClause": "بل الأين ضرب من الوضع وعليه فالحركة الأينية ضرب من الحركة الوضعية",
+  "sourceGrade": "Local complete-unit Arabic–English contextual check; corroborating explicit quotation in1428 Nihaya vol.1 p.221 n.1. The original325-page user-supplied PDF was not freshly reread for this correction.",
+  "recordedSource": {
+    "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
+    "page": 225,
+    "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+  },
+  "beforeEnglishSHA256": "f04228535b8cff770fa96fbb1be30b5951b15b22f746fb8907c2887543920380",
+  "afterEnglishSHA256": "02260eeff3af329c32fb17979dfa92cd32efb39bcbc2193cdc40f03e095e0272",
+  "humanCertification": false
+}

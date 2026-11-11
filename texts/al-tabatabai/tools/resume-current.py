@@ -176,6 +176,15 @@ def inspect_checkpoint(root=HIKMA, check_text=False):
                 "unit": next_id,
                 "action": "Continue from this unit; save each completed unit or coherent batch.",
             }
+        elif (current.get("status") == "published-and-verified"
+              and published.get("nihayaExternalComparisonsIntegrated") == len(rows)
+              and published.get("pdfCount") == 9
+              and published.get("verificationRecord")):
+            next_task = {
+                "kind": "nihaya_complete",
+                "unit": None,
+                "action": "The complete printed-witness Nihaya edition is recorded as published and verified. Preserve it; no translation, comparison or release replay is due. Consult nextWork only for a new request or the separate Muzaffar queue.",
+            }
         else:
             next_task = {
                 "kind": "review_and_release",
