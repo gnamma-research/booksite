@@ -115,3 +115,7 @@ Ibn Khaldūn contributes large-scale causal analysis of ʿumrān. Classical prac
 - Internal baseline: the preserved edition 1.4, existing canonical chapters and the seven-book revision audit. The foregoing sources have been consulted for the interpretive architecture; none proves the unpublished manuscript-critical work has been done.
 
 **Permanent rule:** The Prophet's ﷺ integral example is the orienting whole; the later sciences are valuable but partial modes of preservation, interpretation and formation. A civilizational history must reconstruct their effects on persons and relationships as well as their formal institutional structures.
+
+## Addendum: the Muhammadan axial centre
+
+The subsequent [Muhammadan Axis of ʿUmrān](MUHAMMADAN_AXIS_OF_UMRAN_METHOD.md) supplies the deeper and more comprehensive interpretation of this outline. It distinguishes the unique historical commission, the Akbarian account of the Muhammadan Reality, graded spiritual inheritance (works, states and knowledge), the distinction between knowing from reports and knowing by *dhawq*, the possibilities and limits of *ṣuḥba*, and the nonmechanical relation between prophetic acts, human formation and civilizational institutions. Its methodological and evidentiary qualifications apply throughout.
