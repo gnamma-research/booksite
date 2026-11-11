@@ -1,0 +1,3209 @@
+{
+  "schema": 1,
+  "title": "Stage X exact integration plan: new Nihaya XII.11–13 reviews",
+  "date": "2026-11-10",
+  "status": "ready-for-parent-integration; no canonical files edited",
+  "baseCommit": "078bac90 (recovery base; field preimages govern integration)",
+  "sourceReport": "/workspace/scratch/bfa9477bedba/stage10-work/nihaya-xii11-13-review.json",
+  "sourceReportSha256": "5aca8f1fc730a67513d31901473cc947c6134b09d5b96f88c9e8cbf876b53f6b",
+  "canonicalBook": "/workspace/scratch/bfa9477bedba/nihayat-stage10/texts/al-tabatabai/nihayat-al-hikma/data/book.json",
+  "canonicalSupplement": "/workspace/scratch/bfa9477bedba/nihayat-stage10/texts/al-tabatabai/nihayat-al-hikma/data/editorial-supplement.json",
+  "sourceGrades": {
+    "E1": "Reading directly supported by the early printed facsimile against the base and/or later digital witness.",
+    "E2": "Early printed and later digital witnesses agree against the base.",
+    "L1": "Explicit later editorial emendation or supplement; not an early reading or manuscript evidence.",
+    "L2": "Unfootnoted later digital reading; not independent proof of the original reading.",
+    "N1": "Word-boundary or layout normalization, with lexical text unchanged.",
+    "N2": "Correction of misplaced vocalization, with consonantal text unchanged; limited to the named loci.",
+    "R1": "Original printed reference restored as a separately labeled note, not interpolated into the argument.",
+    "A1": "Separately attributed later commentary or a retained variant.",
+    "C1": "Completed comparison with an explicit no-change receipt for the specified field."
+  },
+  "summary": {
+    "completedUnitReviews": 3,
+    "unitIDs": [
+      "N-XII-11",
+      "N-XII-12",
+      "N-XII-13"
+    ],
+    "arabicCharactersCompared": 17938,
+    "englishWordsCompared": 4559,
+    "adoptedArabicStringOperations": 9,
+    "adoptedEnglishStringOperations": 0,
+    "restoredPrintedReferenceNotes": 1,
+    "newSharedCollationNotes": 3,
+    "retainedOrDeferredVariants": 18,
+    "laterEditorialCommentaryGroups": 23,
+    "decisionCountsByDisposition": {
+      "adopt": 10,
+      "apparatus-only": 23,
+      "defer": 1
+    },
+    "decisionCountsByOperation": {
+      "replace-substring": 9,
+      "retain": 18,
+      "append-note": 1,
+      "append-shared-critical-note": 3,
+      "record-no-change": 3
+    }
+  },
+  "validation": {
+    "canonicalBookUnmodifiedByThisScript": true,
+    "canonicalBookSha256AtReview": "a3d57ed5f2ed991918e2c8057c4ce62f3d9e447da5cb01edd30dd1f45810afc1",
+    "exactAdoptedReplacementAnchorsValidated": 9,
+    "allSixBodyFieldHashesRecorded": true,
+    "allParagraphAnchorsValidated": 152,
+    "unchangedEnglishFields": 3,
+    "existingNotesPreserved": true,
+    "allOtherUnitsUnchangedInDryRun": true,
+    "earlyInspectedImagesDistinct": 13,
+    "lateDigitalPagesRead": 20,
+    "lateHtmlHashesMatchArchivedRegistry": true,
+    "dryRunPostimageHashes": {
+      "N-XII-11": {
+        "arabicSha256": "91649ce9a11e0f6333904833d243e6cade4b553cc6c93f60837be47bf42cdc05",
+        "englishSha256": "5bd3fda5a2efa6b8df936844f8f216f56a2972b0c91b120d712d5482579cedae"
+      },
+      "N-XII-12": {
+        "arabicSha256": "75c31ddbf86c0bc284d9500ea7e109ce21a738c46f06666cbbeb78950f49ddc3",
+        "englishSha256": "30431beca02110853eed924a4de1c31b0bda8ddca609e522e892a48516b0e0f6"
+      },
+      "N-XII-13": {
+        "arabicSha256": "b77a7c1383ab5d4406dba2e94ea2a3d28085cce56f11671baf3b6662353d3d5a",
+        "englishSha256": "1139d62b60569c16f4d9a4f490593cbfe8b8e1dc8859b7cf9ae51c7a2e66a9a5"
+      }
+    }
+  },
+  "decisionPolicy": [
+    "Keep the early reading when a later grammatical, lexical or doctrinal proposal is not compelled.",
+    "Do not silently promote later editorial supplements into authorial text.",
+    "Preserve all existing notes and prior decisions; only XII.11–13 is in scope.",
+    "The Arabic form يعمم in XII.12 was rechecked with magnification and is an early printed reading; the later يعمّ is not adopted.",
+    "No English body change is justified by this review. Interpretation of XII.13 به as referring to the attributes is disclosed."
+  ],
+  "integrationInstructions": [
+    "Check each of the six field hashes in units[].base before applying the Arabic changes. Other units may have changed after this plan was generated.",
+    "Apply only adopt/replace-substring body operations, in the listed order, requiring a unique exact old substring.",
+    "Retain and record-no-change decisions do not mutate the body; proposedNew records an unadopted candidate.",
+    "Append the restored printed-reference note to XII.12; its text is English only and its arabic is separate.",
+    "Append each append-shared-critical-note to its unit notes and supplement criticalNotes exactly once.",
+    "Save the review report at texts/al-tabatabai/audits/nihaya-stage10-xii11-13-review.json or update evidenceReport paths consistently.",
+    "Mark these three units externally compared only after the receipt and notes are integrated; this is not manuscript or human-specialist certification."
+  ],
+  "decisions": [
+    {
+      "decisionID": "N10-NEW-XII11-AR01",
+      "reviewID": "N10-NEW-REVIEW-XII11",
+      "unitID": "N-XII-11",
+      "field": "arabic",
+      "operation": "replace-substring",
+      "old": "العلم بعدالإيجاد",
+      "new": "العلم بعد الإيجاد",
+      "disposition": "adopt",
+      "sourceGrade": "N1",
+      "evidence": "1404 pp. 289–290 / canvases 293–294; 1428 p. 248",
+      "reason": "Separate بعد from الإيجاد without changing the reading.",
+      "criticalNoteID": "N10-NEW-XII11-COLLATION"
+    },
+    {
+      "decisionID": "N10-NEW-XII11-AR02",
+      "reviewID": "N10-NEW-REVIEW-XII11",
+      "unitID": "N-XII-11",
+      "field": "arabic",
+      "operation": "replace-substring",
+      "old": "مرتبة وجوداتهاالممكنة",
+      "new": "مرتبة وجوداتها الممكنة",
+      "disposition": "adopt",
+      "sourceGrade": "N1",
+      "evidence": "1404 pp. 289–290 / canvases 293–294; 1428 p. 248",
+      "reason": "Separate the noun and its adjective without altering the argument.",
+      "criticalNoteID": "N10-NEW-XII11-COLLATION"
+    },
+    {
+      "decisionID": "N10-NEW-XII11-VAR01",
+      "reviewID": "N10-NEW-REVIEW-XII11",
+      "unitID": "N-XII-11",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "العلم بالمسموعات والعلم بالمبصرات من مطلق العلم",
+      "new": "العلم بالمسموعات والعلم بالمبصرات من مطلق العلم",
+      "disposition": "apparatus-only",
+      "sourceGrade": "L2",
+      "evidence": "1404 p. 289 / canvas 293; 1428 p. 246",
+      "reason": "The later unfootnoted فهما supplies an explicit syntactic resumption. The earlier wording is intelligible and is retained; the English already conveys the predication.",
+      "criticalNoteID": "N10-NEW-XII11-COLLATION",
+      "proposedNew": "العلم بالمسموعات والعلم بالمبصرات ، فهما من مطلق العلم",
+      "earlyReading": "العلم بالمسموعات والعلم بالمبصرات من مطلق العلم",
+      "laterReading": "العلم بالمسموعات والعلم بالمبصرات ، فهما من مطلق العلم"
+    },
+    {
+      "decisionID": "N10-NEW-XII11-VAR02",
+      "reviewID": "N10-NEW-REVIEW-XII11",
+      "unitID": "N-XII-11",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "لبيان تحقُّق العلم",
+      "new": "لبيان تحقُّق العلم",
+      "disposition": "apparatus-only",
+      "sourceGrade": "L1",
+      "evidence": "1404 p. 290 / canvas 294; 1428 p. 248 n. 4",
+      "reason": "The later editor adds نحو and appeals to Bidaya. The following clause already specifies union; no need to introduce a word absent from the early print.",
+      "criticalNoteID": "N10-NEW-XII11-COLLATION",
+      "proposedNew": "لبيان نحو تحقُّق العلم",
+      "earlyReading": "لبيان تحقُّق العلم",
+      "laterReading": "لبيان نحو تحقُّق العلم"
+    },
+    {
+      "decisionID": "N10-NEW-XII11-VAR03",
+      "reviewID": "N10-NEW-REVIEW-XII11",
+      "unitID": "N-XII-11",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "لا بالعروض ونحوه",
+      "new": "لا بالعروض ونحوه",
+      "disposition": "apparatus-only",
+      "sourceGrade": "L1",
+      "evidence": "1404 p. 290 / canvas 294; 1428 p. 248 n. 5",
+      "reason": "Retain the coherent earlier expression for inherence; the later lexical preference is attributed.",
+      "criticalNoteID": "N10-NEW-XII11-COLLATION",
+      "proposedNew": "لا بالعرض ونحوه",
+      "earlyReading": "لا بالعروض ونحوه",
+      "laterReading": "لا بالعرض ونحوه"
+    },
+    {
+      "decisionID": "N10-NEW-XII11-VAR04",
+      "reviewID": "N10-NEW-REVIEW-XII11",
+      "unitID": "N-XII-11",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "فله (تعالى) علمٌ إجماليّ بها بتبع علمه بذاته.",
+      "new": "فله (تعالى) علمٌ إجماليّ بها بتبع علمه بذاته.",
+      "disposition": "apparatus-only",
+      "sourceGrade": "L1",
+      "evidence": "1404 p. 290 / canvas 294; 1428 p. 249 n. 1",
+      "reason": "The editor explicitly says the bracketed supplement is absent from the copies. Its digital text also prints الإيحاد. Neither the supplement nor an unmarked correction of its typo enters the authorial body.",
+      "criticalNoteID": "N10-NEW-XII11-COLLATION",
+      "proposedNew": "[وأمّا قبل الإيحاد] فله (تعالى) علمٌ إجماليّ بها بتبع علمه بذاته.",
+      "earlyReading": "فله (تعالى) علمٌ إجماليّ بها بتبع علمه بذاته.",
+      "laterReading": "[وأمّا قبل الإيحاد] فله تعالى علم إجماليّ بها بتبع علمه بذاته"
+    },
+    {
+      "decisionID": "N10-NEW-XII11-VAR05",
+      "reviewID": "N10-NEW-REVIEW-XII11",
+      "unitID": "N-XII-11",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "إنّ ذاته المتعالية علْمٌ تفصيليٌّ بالمعلول الأوّل",
+      "new": "إنّ ذاته المتعالية علْمٌ تفصيليٌّ بالمعلول الأوّل",
+      "disposition": "apparatus-only",
+      "sourceGrade": "L1",
+      "evidence": "1404 p. 291 / canvas 295; 1428 p. 250 n. 3",
+      "reason": "The editor calls the possessive construction preferable. It changes identity into possession in a reported position; preserve the earlier identity formulation and matching English.",
+      "criticalNoteID": "N10-NEW-XII11-COLLATION",
+      "proposedNew": "إنّ لذاته المتعالية علْمٌ تفصيليٌّ بالمعلول الأوّل",
+      "earlyReading": "إنّ ذاته المتعالية علْمٌ تفصيليٌّ بالمعلول الأوّل",
+      "laterReading": "إنّ لذاته المتعالية علْمٌ تفصيليٌّ بالمعلول الأوّل"
+    },
+    {
+      "decisionID": "N10-NEW-XII11-VAR06",
+      "reviewID": "N10-NEW-REVIEW-XII11",
+      "unitID": "N-XII-11",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "وذات المعلول الأوّل علْمٌ تفصيليٌّ بالمعلول الثاني",
+      "new": "وذات المعلول الأوّل علْمٌ تفصيليٌّ بالمعلول الثاني",
+      "disposition": "apparatus-only",
+      "sourceGrade": "L1",
+      "evidence": "1404 p. 291 / canvas 295; 1428 p. 250 n. 4",
+      "reason": "Preserve the second identity formulation for the same reason; this is not a typographical correction.",
+      "criticalNoteID": "N10-NEW-XII11-COLLATION",
+      "proposedNew": "ولذات المعلول الأوّل علْمٌ تفصيليٌّ بالمعلول الثاني",
+      "earlyReading": "وذات المعلول الأوّل علْمٌ تفصيليٌّ بالمعلول الثاني",
+      "laterReading": "ولذات المعلول الأوّل علْمٌ تفصيليٌّ بالمعلول الثاني"
+    },
+    {
+      "decisionID": "N10-NEW-XII12-AR01",
+      "reviewID": "N10-NEW-REVIEW-XII12",
+      "unitID": "N-XII-12",
+      "field": "arabic",
+      "operation": "replace-substring",
+      "old": "\n\n__________________\n\n",
+      "new": "\n\n",
+      "disposition": "adopt",
+      "sourceGrade": "N1",
+      "evidence": "1404 p. 293 / canvas 297; 1428 p. 253",
+      "reason": "Remove a transcription layout separator between the judicial analogy and its analysis. No word or argument is removed.",
+      "criticalNoteID": "N10-NEW-XII12-COLLATION"
+    },
+    {
+      "decisionID": "N10-NEW-XII12-AR02",
+      "reviewID": "N10-NEW-REVIEW-XII12",
+      "unitID": "N-XII-12",
+      "field": "arabic",
+      "operation": "replace-substring",
+      "old": "بماله من الخصوصيّات",
+      "new": "بما له من الخصوصيّات",
+      "disposition": "adopt",
+      "sourceGrade": "N1",
+      "evidence": "1404 p. 293 / canvas 297; 1428 p. 253 n. 1",
+      "reason": "Normalize the word boundary while deliberately retaining the early masculine pronoun, which can refer to existence.",
+      "criticalNoteID": "N10-NEW-XII12-COLLATION"
+    },
+    {
+      "decisionID": "N10-NEW-XII12-AR03",
+      "reviewID": "N10-NEW-REVIEW-XII12",
+      "unitID": "N-XII-12",
+      "field": "arabic",
+      "operation": "replace-substring",
+      "old": "والبناء يقدّر ما يريده من البنّاء",
+      "new": "والبنّاء يقدّر ما يريده من البناء",
+      "disposition": "adopt",
+      "sourceGrade": "N2",
+      "evidence": "1404 p. 294 / canvas 298; 1428 p. 255",
+      "reason": "Correct the reversed builder/building vocalization. The consonantal text is unchanged, the later vocalization and context distinguish the agent from the building, and the existing English is already correct.",
+      "criticalNoteID": "N10-NEW-XII12-COLLATION"
+    },
+    {
+      "decisionID": "N10-NEW-XII12-AR04",
+      "reviewID": "N10-NEW-REVIEW-XII12",
+      "unitID": "N-XII-12",
+      "field": "arabic",
+      "operation": "replace-substring",
+      "old": "الصور العلمّيّة",
+      "new": "الصور العلميّة",
+      "disposition": "adopt",
+      "sourceGrade": "N2",
+      "evidence": "1404 p. 295 / canvas 299; 1428 p. 255",
+      "reason": "Move the misplaced shadda from mim to ya in the adjective علمیّة; this is a limited vocalization repair, not an exhaustive diplomatic normalization.",
+      "criticalNoteID": "N10-NEW-XII12-COLLATION"
+    },
+    {
+      "decisionID": "N10-NEW-XII12-AR05",
+      "reviewID": "N10-NEW-REVIEW-XII12",
+      "unitID": "N-XII-12",
+      "field": "arabic",
+      "operation": "replace-substring",
+      "old": "يحدّبها فعل الإنسان",
+      "new": "يحدّ بها فعل الإنسان",
+      "disposition": "adopt",
+      "sourceGrade": "N1",
+      "evidence": "1404 p. 295 / canvas 299; 1428 p. 256",
+      "reason": "Separate the verb from the attached next word; preserve the wording and existing English.",
+      "criticalNoteID": "N10-NEW-XII12-COLLATION"
+    },
+    {
+      "decisionID": "N10-NEW-XII12-VAR01",
+      "reviewID": "N10-NEW-REVIEW-XII12",
+      "unitID": "N-XII-12",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "بماله من الخصوصيّات المعلومة",
+      "new": "بماله من الخصوصيّات المعلومة",
+      "disposition": "apparatus-only",
+      "sourceGrade": "L1",
+      "evidence": "1404 p. 293 / canvas 297; 1428 p. 253 n. 1",
+      "reason": "The later editor prefers a feminine reference to things. The earlier masculine can refer to their existence. Only word spacing is normalized by AR02; the pronoun is retained.",
+      "criticalNoteID": "N10-NEW-XII12-COLLATION",
+      "proposedNew": "بما لها من الخصوصيّات المعلومة",
+      "earlyReading": "بماله من الخصوصيّات المعلومة",
+      "laterReading": "بما لها من الخصوصيّات المعلومة"
+    },
+    {
+      "decisionID": "N10-NEW-XII12-VAR02",
+      "reviewID": "N10-NEW-REVIEW-XII12",
+      "unitID": "N-XII-12",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "نسبتها إلى عللها التامّة",
+      "new": "نسبتها إلى عللها التامّة",
+      "disposition": "apparatus-only",
+      "sourceGrade": "L1",
+      "evidence": "1404 p. 293 / canvas 297; 1428 p. 253 n. 2",
+      "reason": "The distributive plural of complete causes is coherent for plural contingent existents. Retain it rather than impose the later singular.",
+      "criticalNoteID": "N10-NEW-XII12-COLLATION",
+      "proposedNew": "نسبتها إلى علّتها التامّة",
+      "earlyReading": "نسبتها إلى عللها التامّة",
+      "laterReading": "نسبتها إلى علّتها التامّة"
+    },
+    {
+      "decisionID": "N10-NEW-XII12-VAR03",
+      "reviewID": "N10-NEW-REVIEW-XII12",
+      "unitID": "N-XII-12",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "الكثيف من الأجسام ذا اللون",
+      "new": "الكثيف من الأجسام ذا اللون",
+      "disposition": "apparatus-only",
+      "sourceGrade": "L1",
+      "evidence": "1404 p. 295 / canvas 299; 1428 p. 255 n. 2",
+      "reason": "The accusative ذا may qualify الكثيف as the object of seeing. The later genitive is an explicit editorial preference, not compelled by the earlier syntax.",
+      "criticalNoteID": "N10-NEW-XII12-COLLATION",
+      "proposedNew": "الكثيف من الأجسام ذي اللون",
+      "earlyReading": "الكثيف من الأجسام ذا اللون",
+      "laterReading": "الكثيف من الأجسام ذي اللون"
+    },
+    {
+      "decisionID": "N10-NEW-XII12-VAR04",
+      "reviewID": "N10-NEW-REVIEW-XII12",
+      "unitID": "N-XII-12",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "حدودٌ ألحقها بها العللُ الناقصة",
+      "new": "حدودٌ ألحقها بها العللُ الناقصة",
+      "disposition": "apparatus-only",
+      "sourceGrade": "L1",
+      "evidence": "1404 p. 295 / canvas 299; 1428 p. 255 n. 3",
+      "reason": "The postponed nonhuman broken-plural subject permits the earlier masculine verb. Retain the earlier form while recording the later agreement choice.",
+      "criticalNoteID": "N10-NEW-XII12-COLLATION",
+      "proposedNew": "حدودٌ ألحقتها بها العللُ الناقصة",
+      "earlyReading": "حدودٌ ألحقها بها العللُ الناقصة",
+      "laterReading": "حدودٌ ألحقتها بها العللُ الناقصة"
+    },
+    {
+      "decisionID": "N10-NEW-XII12-VAR05",
+      "reviewID": "N10-NEW-REVIEW-XII12",
+      "unitID": "N-XII-12",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "حتّى يعمّم الماهيّات الإمكانيّة",
+      "new": "حتّى يعمّم الماهيّات الإمكانيّة",
+      "disposition": "apparatus-only",
+      "sourceGrade": "L2",
+      "evidence": "1404 p. 295 / canvas 299, checked again with magnification; 1428 p. 256",
+      "reason": "Early print really reads يعمم, agreeing with the base. The later unfootnoted يعمّ is smoother for encompasses, but cannot be presented as a reading agreed by both witnesses. Preserve the early form and disclose the contextual English rendering.",
+      "criticalNoteID": "N10-NEW-XII12-COLLATION",
+      "proposedNew": "حتّى يعمّ الماهيّات الإمكانيّة",
+      "earlyReading": "حتى يعمم الماهيات الامكانية",
+      "laterReading": "حتّى يعمّ الماهيّات الإمكانيّة"
+    },
+    {
+      "decisionID": "N10-NEW-XII12-REFERENCE01",
+      "reviewID": "N10-NEW-REVIEW-XII12",
+      "unitID": "N-XII-12",
+      "field": "notes",
+      "operation": "append-note",
+      "old": null,
+      "new": {
+        "id": "N10-NEW-XII12-REFERENCE01",
+        "passageId": "N-XII-12",
+        "type": "Source reference · restored from the early printed edition",
+        "arabic": "الأسفار، ج ٦، ص ٢٩٢.",
+        "english": "Asfār, vol. 6, p. 292. This volume/page reference follows the quotation in the early printed edition. The later edition gives vol. 6, pp. 291–292. The Asfār source itself has not been independently collated in this review.",
+        "text": "Asfār, vol. 6, p. 292. This volume/page reference follows the quotation in the early printed edition. The later edition gives vol. 6, pp. 291–292. The Asfār source itself has not been independently collated in this review.",
+        "anchorAfterArabic": "فالقضاء الربانيّ وهو صورة علْمِ الله قديمٌ بالذات باق ببقاء الله» ـ إنتهى.",
+        "anchorAfterEnglish": "Divine decree, which is the form of God’s knowledge, is therefore intrinsically eternal and endures through God’s endurance.” End of quotation.",
+        "source": "1404 p. 294 / canvas 298, parenthetical ج 6 ص 292; 1428 vol. 2 p. 254 n. 2.",
+        "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/298",
+        "attribution": "Original printed bibliographic reference, not a newly supplied authorial argument or a signed authorial footnote.",
+        "status": "Restored separately from the main text; underlying quoted work not independently verified."
+      },
+      "disposition": "adopt",
+      "sourceGrade": "R1",
+      "evidence": "1404 p. 294 / canvas 298, parenthetical ج 6 ص 292; 1428 vol. 2 p. 254 n. 2.",
+      "reason": "Restore the omitted early printed reference as a separate bilingual source note. The text field contains English only so the reader does not duplicate Arabic.",
+      "criticalNoteID": "N10-NEW-XII12-COLLATION"
+    },
+    {
+      "decisionID": "N10-NEW-XII13-AR01",
+      "reviewID": "N10-NEW-REVIEW-XII13",
+      "unitID": "N-XII-13",
+      "field": "arabic",
+      "operation": "replace-substring",
+      "old": "الفواعل الطبيعيّة العادمة للشهور",
+      "new": "الفواعل الطبيعيّة العادمة للشعور",
+      "disposition": "adopt",
+      "sourceGrade": "E1",
+      "evidence": "1404 p. 297 / canvas 301; compare 1428 p. 258, which still prints للشهور",
+      "reason": "The early print clearly has الشعور, awareness. The base and later digital witness share الشهور, months. The source and context justify the correction; the existing English already says awareness.",
+      "criticalNoteID": "N10-NEW-XII13-COLLATION"
+    },
+    {
+      "decisionID": "N10-NEW-XII13-AR02",
+      "reviewID": "N10-NEW-REVIEW-XII13",
+      "unitID": "N-XII-13",
+      "field": "arabic",
+      "operation": "replace-substring",
+      "old": "القدرة المجردّة عن النواقص",
+      "new": "القدرة المجرّدة عن النواقص",
+      "disposition": "adopt",
+      "sourceGrade": "N2",
+      "evidence": "1404 p. 298 / canvas 302; 1428 p. 259",
+      "reason": "Correct the misplaced shadda to the form المجرّدة. Consonants and philosophical content are unchanged.",
+      "criticalNoteID": "N10-NEW-XII13-COLLATION"
+    },
+    {
+      "decisionID": "N10-NEW-XII13-VAR01",
+      "reviewID": "N10-NEW-REVIEW-XII13",
+      "unitID": "N-XII-13",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "فالخير محبوبٌ مطلقاً",
+      "new": "فالخير محبوبٌ مطلقاً",
+      "disposition": "apparatus-only",
+      "sourceGrade": "L2",
+      "evidence": "1404 p. 297 / canvas 301; 1428 p. 259",
+      "reason": "The later digital text adds له without an editorial note. The early text and base omit it; the context supplies the agent and no addition is needed.",
+      "criticalNoteID": "N10-NEW-XII13-COLLATION",
+      "proposedNew": "فالخير محبوبٌ له مطلقاً",
+      "earlyReading": "فالخير محبوبٌ مطلقاً",
+      "laterReading": "فالخير محبوبٌ له مطلقاً"
+    },
+    {
+      "decisionID": "N10-NEW-XII13-VAR02",
+      "reviewID": "N10-NEW-REVIEW-XII13",
+      "unitID": "N-XII-13",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "لا سبيل لتطرّق الشوق عليه",
+      "new": "لا سبيل لتطرّق الشوق عليه",
+      "disposition": "apparatus-only",
+      "sourceGrade": "L2",
+      "evidence": "1404 p. 297 / canvas 301; 1428 p. 259",
+      "reason": "The early print agrees with عليه. Record the later unfootnoted prepositional alteration without treating it as a correction proved by both witnesses.",
+      "criticalNoteID": "N10-NEW-XII13-COLLATION",
+      "proposedNew": "لا سبيل لتطرّق الشوق إليه",
+      "earlyReading": "لا سبيل لتطرّق الشوق عليه",
+      "laterReading": "لا سبيل لتطرّق الشوق إليه"
+    },
+    {
+      "decisionID": "N10-NEW-XII13-VAR03",
+      "reviewID": "N10-NEW-REVIEW-XII13",
+      "unitID": "N-XII-13",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "بإرادة ومشيّة",
+      "new": "بإرادة ومشيّة",
+      "disposition": "apparatus-only",
+      "sourceGrade": "L1",
+      "evidence": "1404 pp. 298–299 / canvases 302–303; 1428 p. 262 n. 1",
+      "reason": "Record the later editor’s explicit standardized spelling; do not relabel it as the early reading. The meaning and English volition are unchanged.",
+      "criticalNoteID": "N10-NEW-XII13-COLLATION",
+      "proposedNew": "بإرادة ومشيئة",
+      "earlyReading": "بإرادة ومشيّة",
+      "laterReading": "بإرادة ومشيئة"
+    },
+    {
+      "decisionID": "N10-NEW-XII13-VAR04",
+      "reviewID": "N10-NEW-REVIEW-XII13",
+      "unitID": "N-XII-13",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "وجود الإرادة والمشيّة",
+      "new": "وجود الإرادة والمشيّة",
+      "disposition": "apparatus-only",
+      "sourceGrade": "L1",
+      "evidence": "1404 p. 299 / canvas 303; 1428 p. 262 n. 2",
+      "reason": "The second explicit spelling normalization has the same status; preserve the earlier orthography in this pass.",
+      "criticalNoteID": "N10-NEW-XII13-COLLATION",
+      "proposedNew": "وجود الإرادة والمشيئة",
+      "earlyReading": "وجود الإرادة والمشيّة",
+      "laterReading": "وجود الإرادة والمشيئة"
+    },
+    {
+      "decisionID": "N10-NEW-XII13-VAR05",
+      "reviewID": "N10-NEW-REVIEW-XII13",
+      "unitID": "N-XII-13",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "فما بالها تنتزع",
+      "new": "فما بالها تنتزع",
+      "disposition": "apparatus-only",
+      "sourceGrade": "L1",
+      "evidence": "1404 p. 299 / canvas 303; 1428 p. 263 n. 5",
+      "reason": "The earlier ما بالها followed by a verbal clause is intelligible. The editor’s added أن is not necessary to recover the argument.",
+      "criticalNoteID": "N10-NEW-XII13-COLLATION",
+      "proposedNew": "فما بالها أن تنتزع",
+      "earlyReading": "فما بالها تنتزع",
+      "laterReading": "فما بالها أن تنتزع"
+    },
+    {
+      "decisionID": "N10-NEW-XII13-VAR06",
+      "reviewID": "N10-NEW-REVIEW-XII13",
+      "unitID": "N-XII-13",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "استحال أن يتّصف به الذات الواجبة بالذات",
+      "new": "استحال أن يتّصف به الذات الواجبة بالذات",
+      "disposition": "defer",
+      "sourceGrade": "L1",
+      "evidence": "1404 p. 300 / canvas 304; 1428 p. 263 n. 6",
+      "reason": "The later agreement correction makes the antecedent action attributes explicit. Preserve the early reading pending further textual evidence and disclose that English them interprets the referent as those attributes; do not claim the earlier grammar is unproblematic.",
+      "criticalNoteID": "N10-NEW-XII13-COLLATION",
+      "proposedNew": "استحال أن تتّصف بها الذات الواجبة بالذات",
+      "earlyReading": "استحال أن يتّصف به الذات الواجبة بالذات",
+      "laterReading": "استحال أن تتّصف بها الذات الواجبة بالذات"
+    },
+    {
+      "decisionID": "N10-NEW-XII13-VAR07",
+      "reviewID": "N10-NEW-REVIEW-XII13",
+      "unitID": "N-XII-13",
+      "field": "arabic",
+      "operation": "retain",
+      "old": "بنحو العروض",
+      "new": "بنحو العروض",
+      "disposition": "apparatus-only",
+      "sourceGrade": "L1",
+      "evidence": "1404 p. 300 / canvas 304; 1428 p. 264 n. 1",
+      "reason": "Retain the earlier inherence/occurrence wording consistently with the other such loci; record the later explicit lexical preference.",
+      "criticalNoteID": "N10-NEW-XII13-COLLATION",
+      "proposedNew": "بنحو العرض",
+      "earlyReading": "بنحو العروض",
+      "laterReading": "بنحو العرض"
+    },
+    {
+      "decisionID": "N10-NEW-XII11-APP",
+      "reviewID": "N10-NEW-REVIEW-XII11",
+      "unitID": "N-XII-11",
+      "field": "notes",
+      "operation": "append-shared-critical-note",
+      "old": null,
+      "new": {
+        "id": "N10-NEW-XII11-COLLATION",
+        "passageId": "N-XII-11",
+        "type": "External comparison · new Stage X review",
+        "text": "Qum 1404 printed pp. 288–292 (canvases 292–296); 1428 edited digital text, vol. 2 pp. 245–251. Stage X compared every stored Arabic and English paragraph with the complete early printed chapter and the later digital chapter, including the chapter boundaries and all associated later editorial notes. The early witness is a facsimile; the 1428 witness is a digital presentation, not a facsimile. No manuscript or independent human specialist certification is claimed.\n\nAdopted [N1]: «العلم بعدالإيجاد» → «العلم بعد الإيجاد». Separate بعد from الإيجاد without changing the reading. Evidence: 1404 pp. 289–290 / canvases 293–294; 1428 p. 248.\n\nAdopted [N1]: «مرتبة وجوداتهاالممكنة» → «مرتبة وجوداتها الممكنة». Separate the noun and its adjective without altering the argument. Evidence: 1404 pp. 289–290 / canvases 293–294; 1428 p. 248.\n\nRecorded variant; earlier body retained: «العلم بالمسموعات والعلم بالمبصرات من مطلق العلم»; later proposal «العلم بالمسموعات والعلم بالمبصرات ، فهما من مطلق العلم». The later unfootnoted فهما supplies an explicit syntactic resumption. The earlier wording is intelligible and is retained; the English already conveys the predication. Evidence: 1404 p. 289 / canvas 293; 1428 p. 246.\n\nRecorded variant; earlier body retained: «لبيان تحقُّق العلم»; later proposal «لبيان نحو تحقُّق العلم». The later editor adds نحو and appeals to Bidaya. The following clause already specifies union; no need to introduce a word absent from the early print. Evidence: 1404 p. 290 / canvas 294; 1428 p. 248 n. 4.\n\nRecorded variant; earlier body retained: «لا بالعروض ونحوه»; later proposal «لا بالعرض ونحوه». Retain the coherent earlier expression for inherence; the later lexical preference is attributed. Evidence: 1404 p. 290 / canvas 294; 1428 p. 248 n. 5.\n\nRecorded variant; earlier body retained: «فله (تعالى) علمٌ إجماليّ بها بتبع علمه بذاته.»; later proposal «[وأمّا قبل الإيحاد] فله (تعالى) علمٌ إجماليّ بها بتبع علمه بذاته.». The editor explicitly says the bracketed supplement is absent from the copies. Its digital text also prints الإيحاد. Neither the supplement nor an unmarked correction of its typo enters the authorial body. Evidence: 1404 p. 290 / canvas 294; 1428 p. 249 n. 1.\n\nRecorded variant; earlier body retained: «إنّ ذاته المتعالية علْمٌ تفصيليٌّ بالمعلول الأوّل»; later proposal «إنّ لذاته المتعالية علْمٌ تفصيليٌّ بالمعلول الأوّل». The editor calls the possessive construction preferable. It changes identity into possession in a reported position; preserve the earlier identity formulation and matching English. Evidence: 1404 p. 291 / canvas 295; 1428 p. 250 n. 3.\n\nRecorded variant; earlier body retained: «وذات المعلول الأوّل علْمٌ تفصيليٌّ بالمعلول الثاني»; later proposal «ولذات المعلول الأوّل علْمٌ تفصيليٌّ بالمعلول الثاني». Preserve the second identity formulation for the same reason; this is not a typographical correction. Evidence: 1404 p. 291 / canvas 295; 1428 p. 250 n. 4.\n\nEnglish comparison: Every stored English paragraph was compared with its Arabic and both external witnesses. The distinctions between knowledge before/after creation, detailed/comprehensive knowledge, and acquired/presential knowledge are preserved. The existing note defining comprehensive (ijmali) as undivided rather than incomplete knowledge is retained. No English body correction is justified in this pass.\n\nLater editorial commentary, separate from the authorial argument:\n\n1428 vol. 2 245 nn. 1–4 — Cross-references and proof analysis: References to XI.1/XI.11 and IV.4/XII.4, the unpacking into two syllogisms of the self-knowledge proof, and the referent of the existential perfections were read. The expanded syllogisms are the later editor’s exposition.\n\n1428 vol. 2 246 n. 1 and n. 2 continued through 247 — Causal references and hearing/seeing debate: The editor cites VIII.5 and XII.9, then quotes Sadra, Asfar 6:422, on hearing and seeing as specific presential cognitions distinct from unqualified knowledge. He next quotes Tabatabai’s separate Asfar annotation rejecting that restriction because all categories are present to God and divine knowledge is wholly presential. The latter is an attributed quotation from another work, not an original footnote of this Nihaya chapter.\n\n1428 vol. 2 247 nn. 1–3 — Reported historical attributions and vocabulary: The editor distinguishes denial of divine knowledge from denial of knowledge of others, quotes Tusi on the transmission of these positions, glosses mahjuj as defeated, and cites Shahrastani for Hisham b. Amr al-Fuwati and Abu Bakr al-Asamm. These historical attributions are reported as editorial claims, not independently established here.\n\n1428 vol. 2 248 nn. 1–7 — References, proposed emendations, and school attributions: All references for Plato and Porphyry, the two explicit alterations نحو and بالعرض, the report of Suhrawardi’s spiritual encounter with Aristotle, and the named later followers Tusi, Shirazi, Ibn Kammuna and Shahrazuri were read. The altered words are registered separately and the historical narrative remains attributed.\n\n1428 vol. 2 249 nn. 1–4 — Supplement, disagreement, and Milesian identification: The bracketed before-creation supplement is expressly absent from the copies. The editor quotes Sabzawari’s Asfar 6:165 annotation against the author: material things are absent to us but present to an encompassing divine knower. This disagreement is not blended into the author’s reply. The editor identifies al-Malati as Thales and contrasts an account attributed to Anaximenes, with cited secondary transmission.\n\n1428 vol. 2 250 nn. 1–6 — Qualification of a cross-reference and later preferences: The editor says the claimed earlier proof is not explicit in this book and points instead to VI.15/XI.11; identifies the sixth account with some philosophers and Sabzawari; prefers لذاته and ولذات in notes 3–4; and supplies sources for later thinkers and the Peripatetic account. The identity-to-possession alteration is not adopted.\n\n1428 vol. 2 251 nn. 1–4 — Logical and school references: References for the logical universal, Muʿtazilite fixity of nonexistents, I.2, and the Sufi positions linked to Ibn Arabi and Qunawi were read. The cited earlier works themselves were not independently collated.",
+        "source": "Qum 1404 printed pp. 288–292 (canvases 292–296); 1428 edited digital text, vol. 2 pp. 245–251",
+        "url": "https://lib.rafed.net/view.php?b_id=3109&page=245&type=c_fbook",
+        "status": "Complete full-unit comparison of two printed editions, the later through its digital presentation; no manuscript certification.",
+        "sourceGrades": [
+          "A1",
+          "C1",
+          "L1",
+          "L2",
+          "N1"
+        ],
+        "evidenceReport": "../../audits/nihaya-stage10-xii11-13-review.json",
+        "reviewID": "N10-NEW-REVIEW-XII11"
+      },
+      "disposition": "apparatus-only",
+      "sourceGrade": "A1",
+      "evidence": "Qum 1404 printed pp. 288–292 (canvases 292–296); 1428 edited digital text, vol. 2 pp. 245–251",
+      "reason": "Append the same attributed collation note to the unit and supplement criticalNotes. Keep all existing notes. Later commentary is not authorial body text.",
+      "criticalNoteID": "N10-NEW-XII11-COLLATION"
+    },
+    {
+      "decisionID": "N10-NEW-XII11-EN-NOCHANGE",
+      "reviewID": "N10-NEW-REVIEW-XII11",
+      "unitID": "N-XII-11",
+      "field": "english",
+      "operation": "record-no-change",
+      "old": null,
+      "new": null,
+      "disposition": "apparatus-only",
+      "sourceGrade": "C1",
+      "evidence": "Qum 1404 printed pp. 288–292 (canvases 292–296); 1428 edited digital text, vol. 2 pp. 245–251",
+      "reason": "Full English comparison complete. No new English body alteration is justified; the exact baseline English is identified by its verified hash.",
+      "criticalNoteID": "N10-NEW-XII11-COLLATION"
+    },
+    {
+      "decisionID": "N10-NEW-XII12-APP",
+      "reviewID": "N10-NEW-REVIEW-XII12",
+      "unitID": "N-XII-12",
+      "field": "notes",
+      "operation": "append-shared-critical-note",
+      "old": null,
+      "new": {
+        "id": "N10-NEW-XII12-COLLATION",
+        "passageId": "N-XII-12",
+        "type": "External comparison · new Stage X review",
+        "text": "Qum 1404 printed pp. 292–296 (canvases 296–300); 1428 edited digital text, vol. 2 pp. 252–257. Stage X compared every stored Arabic and English paragraph with the complete early printed chapter and the later digital chapter, including the chapter boundaries and all associated later editorial notes. The early witness is a facsimile; the 1428 witness is a digital presentation, not a facsimile. No manuscript or independent human specialist certification is claimed.\n\nLayout correction: remove the stray transcription separator between the judicial example and its analysis; no authorial text is removed.\n\nAdopted [N1]: «بماله من الخصوصيّات» → «بما له من الخصوصيّات». Normalize the word boundary while deliberately retaining the early masculine pronoun, which can refer to existence. Evidence: 1404 p. 293 / canvas 297; 1428 p. 253 n. 1.\n\nAdopted [N2]: «والبناء يقدّر ما يريده من البنّاء» → «والبنّاء يقدّر ما يريده من البناء». Correct the reversed builder/building vocalization. The consonantal text is unchanged, the later vocalization and context distinguish the agent from the building, and the existing English is already correct. Evidence: 1404 p. 294 / canvas 298; 1428 p. 255.\n\nAdopted [N2]: «الصور العلمّيّة» → «الصور العلميّة». Move the misplaced shadda from mim to ya in the adjective علمیّة; this is a limited vocalization repair, not an exhaustive diplomatic normalization. Evidence: 1404 p. 295 / canvas 299; 1428 p. 255.\n\nAdopted [N1]: «يحدّبها فعل الإنسان» → «يحدّ بها فعل الإنسان». Separate the verb from the attached next word; preserve the wording and existing English. Evidence: 1404 p. 295 / canvas 299; 1428 p. 256.\n\nRecorded variant; earlier body retained: «بماله من الخصوصيّات المعلومة»; later proposal «بما لها من الخصوصيّات المعلومة». The later editor prefers a feminine reference to things. The earlier masculine can refer to their existence. Only word spacing is normalized by AR02; the pronoun is retained. Evidence: 1404 p. 293 / canvas 297; 1428 p. 253 n. 1.\n\nRecorded variant; earlier body retained: «نسبتها إلى عللها التامّة»; later proposal «نسبتها إلى علّتها التامّة». The distributive plural of complete causes is coherent for plural contingent existents. Retain it rather than impose the later singular. Evidence: 1404 p. 293 / canvas 297; 1428 p. 253 n. 2.\n\nRecorded variant; earlier body retained: «الكثيف من الأجسام ذا اللون»; later proposal «الكثيف من الأجسام ذي اللون». The accusative ذا may qualify الكثيف as the object of seeing. The later genitive is an explicit editorial preference, not compelled by the earlier syntax. Evidence: 1404 p. 295 / canvas 299; 1428 p. 255 n. 2.\n\nRecorded variant; earlier body retained: «حدودٌ ألحقها بها العللُ الناقصة»; later proposal «حدودٌ ألحقتها بها العللُ الناقصة». The postponed nonhuman broken-plural subject permits the earlier masculine verb. Retain the earlier form while recording the later agreement choice. Evidence: 1404 p. 295 / canvas 299; 1428 p. 255 n. 3.\n\nRecorded variant; earlier body retained: «حتّى يعمّم الماهيّات الإمكانيّة»; later proposal «حتّى يعمّ الماهيّات الإمكانيّة». Early print really reads يعمم, agreeing with the base. The later unfootnoted يعمّ is smoother for encompasses, but cannot be presented as a reading agreed by both witnesses. Preserve the early form and disclose the contextual English rendering. Evidence: 1404 p. 295 / canvas 299, checked again with magnification; 1428 p. 256.\n\nUnresolved compression: both early p. 294 and later p. 255 say that the builder constructs according to what he determined, followed by لأسباب متجدّدة توجب عليه ذلك. Neither consulted witness supplies an intervening change-of-plan clause. The current English retains the transmitted sequence; no conjectural clause is added. The early printed Asfar 6:292 reference following the quotation is restored as a separate source note.\n\nEnglish comparison: All stored English was compared with the full Arabic and witnesses, including the complete Asfar quotation, both craft analogies, the conditions of vision, the choice objection and the extension to quiddities. The builder passage remains awkward in both witnesses; the English follows that text without inventing a missing revision of the plan. The reading encompasses for يعمّم is a contextual rendering; the later witness’s يعمّ is recorded, not silently back-projected. No English body change is adopted.\n\nLater editorial commentary, separate from the authorial argument:\n\n1428 vol. 2 252 n. 1 — General sources: References to Isharat, Asfar and Manzuma on the divisions of divine knowledge were read as references, not as independently collated witnesses.\n\n1428 vol. 2 252 n. 2 — Different schemes of divine knowledge: The editor reports Sadra’s five degrees—providence, pen, tablet, decree and measure—and Sabzawari’s additional register of being. This taxonomy is later commentary.\n\n1428 vol. 2 252 n. 3 continued through 253 — Survey of providence and separate authorial gloss: The full discussion of views on providence and definitions associated with Suhrawardi, Avicenna, Sadra, Sabzawari and Qunawi was read. It includes an attributed quotation of Tabatabai’s separate Asfar 6:291 gloss deriving providence from the goal and the divine essence. That quotation is not an original note of this Nihaya chapter.\n\n1428 vol. 2 253 nn. 1–3 — Pronoun/number preferences and causal objection: The later editor prefers بما لها to بماله and علّتها التامة to عللها التامة. The earlier readings admit, respectively, reference to existence and distributive plural causes. The editor’s stronger claim about God alone being truly a cause is kept distinct from the author’s series of subordinate causes.\n\n1428 vol. 2 254 nn. 1–5 — Source citation and referents: The cited source of the prevalent decree account, the Asfar 6:291–292 quotation reference, two Sadra referent glosses and the two accounts under discussion were read.\n\n1428 vol. 2 255 nn. 1–3 — Lexical gloss and grammatical preferences: Qaʿa is glossed as a courtyard or tract of land. The editor explicitly changes ذا اللون to ذي اللون and ألحقها to ألحقتها. The earlier accusative can qualify the object of seeing, and the delayed nonhuman plural subject permits the earlier masculine verb; both earlier readings are retained.\n\n1428 vol. 2 256 nn. 1–5 — Internal cross-references: All references for limits, freedom of choice, contingency and negative composition were read: XII.4, IV.5, VIII.3, IV.1 and XII.4.\n\n1428 vol. 2 257 n. 1, complete — Comparative decree/measure discussion: The full note compares Damad’s Qabasat 418 account of the world as whole/articulated and Sabzawari’s universal intellect versus planetary soul forms. It then presents three differences inferred from the author and his Asfar 6:292 gloss: decree through complete cause versus measure through partial causes; measure concerning material things versus decree also including immaterial things; and unchanging decree versus measure that can change or fail. These are the later editor’s comparative claims, not additions to the authorial conclusion.",
+        "source": "Qum 1404 printed pp. 292–296 (canvases 296–300); 1428 edited digital text, vol. 2 pp. 252–257",
+        "url": "https://lib.rafed.net/view.php?b_id=3109&page=252&type=c_fbook",
+        "status": "Complete full-unit comparison of two printed editions, the later through its digital presentation; no manuscript certification.",
+        "sourceGrades": [
+          "A1",
+          "C1",
+          "L1",
+          "L2",
+          "N1",
+          "N2",
+          "R1"
+        ],
+        "evidenceReport": "../../audits/nihaya-stage10-xii11-13-review.json",
+        "reviewID": "N10-NEW-REVIEW-XII12"
+      },
+      "disposition": "apparatus-only",
+      "sourceGrade": "A1",
+      "evidence": "Qum 1404 printed pp. 292–296 (canvases 296–300); 1428 edited digital text, vol. 2 pp. 252–257",
+      "reason": "Append the same attributed collation note to the unit and supplement criticalNotes. Keep all existing notes. Later commentary is not authorial body text.",
+      "criticalNoteID": "N10-NEW-XII12-COLLATION"
+    },
+    {
+      "decisionID": "N10-NEW-XII12-EN-NOCHANGE",
+      "reviewID": "N10-NEW-REVIEW-XII12",
+      "unitID": "N-XII-12",
+      "field": "english",
+      "operation": "record-no-change",
+      "old": null,
+      "new": null,
+      "disposition": "apparatus-only",
+      "sourceGrade": "C1",
+      "evidence": "Qum 1404 printed pp. 292–296 (canvases 296–300); 1428 edited digital text, vol. 2 pp. 252–257",
+      "reason": "Full English comparison complete. No new English body alteration is justified; the exact baseline English is identified by its verified hash.",
+      "criticalNoteID": "N10-NEW-XII12-COLLATION"
+    },
+    {
+      "decisionID": "N10-NEW-XII13-APP",
+      "reviewID": "N10-NEW-REVIEW-XII13",
+      "unitID": "N-XII-13",
+      "field": "notes",
+      "operation": "append-shared-critical-note",
+      "old": null,
+      "new": {
+        "id": "N10-NEW-XII13-COLLATION",
+        "passageId": "N-XII-13",
+        "type": "External comparison · new Stage X review",
+        "text": "Qum 1404 printed pp. 296–300 (canvases 300–304); 1428 edited digital text, vol. 2 pp. 258–264. Stage X compared every stored Arabic and English paragraph with the complete early printed chapter and the later digital chapter, including the chapter boundaries and all associated later editorial notes. The early witness is a facsimile; the 1428 witness is a digital presentation, not a facsimile. No manuscript or independent human specialist certification is claimed.\n\nAdopted [E1]: «الفواعل الطبيعيّة العادمة للشهور» → «الفواعل الطبيعيّة العادمة للشعور». The early print clearly has الشعور, awareness. The base and later digital witness share الشهور, months. The source and context justify the correction; the existing English already says awareness. Evidence: 1404 p. 297 / canvas 301; compare 1428 p. 258, which still prints للشهور.\n\nAdopted [N2]: «القدرة المجردّة عن النواقص» → «القدرة المجرّدة عن النواقص». Correct the misplaced shadda to the form المجرّدة. Consonants and philosophical content are unchanged. Evidence: 1404 p. 298 / canvas 302; 1428 p. 259.\n\nRecorded variant; earlier body retained: «فالخير محبوبٌ مطلقاً»; later proposal «فالخير محبوبٌ له مطلقاً». The later digital text adds له without an editorial note. The early text and base omit it; the context supplies the agent and no addition is needed. Evidence: 1404 p. 297 / canvas 301; 1428 p. 259.\n\nRecorded variant; earlier body retained: «لا سبيل لتطرّق الشوق عليه»; later proposal «لا سبيل لتطرّق الشوق إليه». The early print agrees with عليه. Record the later unfootnoted prepositional alteration without treating it as a correction proved by both witnesses. Evidence: 1404 p. 297 / canvas 301; 1428 p. 259.\n\nRecorded variant; earlier body retained: «بإرادة ومشيّة»; later proposal «بإرادة ومشيئة». Record the later editor’s explicit standardized spelling; do not relabel it as the early reading. The meaning and English volition are unchanged. Evidence: 1404 pp. 298–299 / canvases 302–303; 1428 p. 262 n. 1.\n\nRecorded variant; earlier body retained: «وجود الإرادة والمشيّة»; later proposal «وجود الإرادة والمشيئة». The second explicit spelling normalization has the same status; preserve the earlier orthography in this pass. Evidence: 1404 p. 299 / canvas 303; 1428 p. 262 n. 2.\n\nRecorded variant; earlier body retained: «فما بالها تنتزع»; later proposal «فما بالها أن تنتزع». The earlier ما بالها followed by a verbal clause is intelligible. The editor’s added أن is not necessary to recover the argument. Evidence: 1404 p. 299 / canvas 303; 1428 p. 263 n. 5.\n\nRecorded variant; earlier body retained: «استحال أن يتّصف به الذات الواجبة بالذات»; later proposal «استحال أن تتّصف بها الذات الواجبة بالذات». The later agreement correction makes the antecedent action attributes explicit. Preserve the early reading pending further textual evidence and disclose that English them interprets the referent as those attributes; do not claim the earlier grammar is unproblematic. Evidence: 1404 p. 300 / canvas 304; 1428 p. 263 n. 6.\n\nRecorded variant; earlier body retained: «بنحو العروض»; later proposal «بنحو العرض». Retain the earlier inherence/occurrence wording consistently with the other such loci; record the later explicit lexical preference. Evidence: 1404 p. 300 / canvas 304; 1428 p. 264 n. 1.\n\nEnglish comparison: Every English paragraph was checked against the complete Arabic and both witnesses. Awareness already translates the intended الشعور and needs no change. The distinction between human will as a psychic quality, the unproved identification of divine essential knowledge with will, and will abstracted from the station of act is preserved. The English plural them interprets the earlier awkward به in reference to the action attributes; that interpretation and the later editor’s بها are disclosed. No English body correction is adopted.\n\nLater editorial commentary, separate from the authorial argument:\n\n1428 vol. 2 258 n. 1 — Choice gloss: The editor explains self-determination as what the agent’s own essence requires. This is an explanatory gloss.\n\n1428 vol. 2 259 nn. 1–6 — Syntax, references and ontological explanation: All six notes were read: the attachment of من القيود, the reference to XII.6, power as an existential perfection, the reasoning from psychic quality through accident/quiddity/limitation to lack, the ellipsis excluding will, and the referent of إذا كان.\n\n1428 vol. 2 260 n. 1 continued through 261 — Two definitions of power and a separate Asfar annotation: The entire lengthy note contrasts the theologians’ possibility of acting/not acting with the philosophers’ conditional definition. It questions each when understood through an added psychic will and then quotes, with abridgment, Tabatabai’s separate Asfar 6:307–308 annotation on the unconditioned efficient agent. The quote’s conclusion identifies both definitions with the agent’s freedom from necessitation imposed by act or non-act. It is not inserted into the Nihaya authorial body.\n\n1428 vol. 2 261 nn. 1–4 — Definition sources, philosophical referent and Avicenna attribution: References for the conditional definition and knowledge of the best order, identification of the philosophers, and the attribution to Avicenna of conceptual as well as extensional identity were read. The editor’s bibliographic references have not been independently verified.\n\n1428 vol. 2 261 n. 5 continued through 262 — Concept versus instance: The full argument distinguishes identity of instances, shared by all divine perfections, from identity of concepts. The editor argues that saying God knows and saying God wills do not convey the same concept. This reinforces the author’s objection but remains separately attributed exposition.\n\n1428 vol. 2 262 nn. 1–4 — Orthographic emendations and references: Both explicit changes of مشيّة to مشيئة and the references to XII.10 and the end of this chapter were read. The normalized spelling is recorded as later editorial work; it is not treated as an early or manuscript reading.\n\n1428 vol. 2 263 nn. 1–6 — References and grammatical changes: The backwards reference, philosopher/source citations, reference to the earlier editorial argument, gloss of ما بالها, addition of أن before تنتزع, and the change أن يتّصف به to أن تتّصف بها were all read. The earlier construction without أن is retained. The agreement change is disclosed as a later emendation, with the English’s plural interpretation made explicit.\n\n1428 vol. 2 264 nn. 1–2 — Lexical preference and cross-reference: The later editor explicitly replaces العروض with العرض and refers to XII.10. The earlier العروض, conveying inherence or occurrence as an accident, is retained, consistently with the other retained loci.",
+        "source": "Qum 1404 printed pp. 296–300 (canvases 300–304); 1428 edited digital text, vol. 2 pp. 258–264",
+        "url": "https://lib.rafed.net/view.php?b_id=3109&page=258&type=c_fbook",
+        "status": "Complete full-unit comparison of two printed editions, the later through its digital presentation; no manuscript certification.",
+        "sourceGrades": [
+          "A1",
+          "C1",
+          "E1",
+          "L1",
+          "L2",
+          "N2"
+        ],
+        "evidenceReport": "../../audits/nihaya-stage10-xii11-13-review.json",
+        "reviewID": "N10-NEW-REVIEW-XII13"
+      },
+      "disposition": "apparatus-only",
+      "sourceGrade": "A1",
+      "evidence": "Qum 1404 printed pp. 296–300 (canvases 300–304); 1428 edited digital text, vol. 2 pp. 258–264",
+      "reason": "Append the same attributed collation note to the unit and supplement criticalNotes. Keep all existing notes. Later commentary is not authorial body text.",
+      "criticalNoteID": "N10-NEW-XII13-COLLATION"
+    },
+    {
+      "decisionID": "N10-NEW-XII13-EN-NOCHANGE",
+      "reviewID": "N10-NEW-REVIEW-XII13",
+      "unitID": "N-XII-13",
+      "field": "english",
+      "operation": "record-no-change",
+      "old": null,
+      "new": null,
+      "disposition": "apparatus-only",
+      "sourceGrade": "C1",
+      "evidence": "Qum 1404 printed pp. 296–300 (canvases 300–304); 1428 edited digital text, vol. 2 pp. 258–264",
+      "reason": "Full English comparison complete. No new English body alteration is justified; the exact baseline English is identified by its verified hash.",
+      "criticalNoteID": "N10-NEW-XII13-COLLATION"
+    }
+  ],
+  "units": [
+    {
+      "reviewID": "N10-NEW-REVIEW-XII11",
+      "unitID": "N-XII-11",
+      "status": "complete-full-unit-external-comparison",
+      "integrationStatus": "reviewed-plan-awaiting-parent-integration",
+      "bodyOutcome": "limited-arabic-repairs; English retained",
+      "base": {
+        "source": {
+          "edition": "Arabic transcription · Qum 1417 AH",
+          "url": "https://lib.rafed.net/view.php?b_id=1642&page=350&type=c_fbook",
+          "page": "350–356"
+        },
+        "bookSha256": "a3d57ed5f2ed991918e2c8057c4ce62f3d9e447da5cb01edd30dd1f45810afc1",
+        "arabicSha256": "44a65dd7bb22ff578a11fe7060d050787cd2ca7bff17ffa6efe5e392d486f4be",
+        "englishSha256": "5bd3fda5a2efa6b8df936844f8f216f56a2972b0c91b120d712d5482579cedae",
+        "arabicCharacters": 5875,
+        "englishWords": 1482,
+        "arabicParagraphs": 38,
+        "englishParagraphs": 33,
+        "notesSha256": "016cba135a58c2f8b9b5d8e0616e99e9126802f96710ffdf9deaf9129f3e4ea2"
+      },
+      "boundaries": {
+        "earlyStart": "Qum 1404 p. 288 / canvas 292: الفصل الحادي عشر, after the end of XII.10.",
+        "earlyEnd": "p. 292 / canvas 296: قبل ثبوتها العيني الخاص بها, before الفصل الثاني عشر.",
+        "lateStart": "1428 vol. 2 p. 245: الفصل الحادي عشر / في علمه تعالى.",
+        "lateEnd": "p. 251: final reply to the tenth view; XII.12 starts on p. 252."
+      },
+      "coverage": [
+        {
+          "segment": "Self-knowledge, intrinsic detailed/comprehensive knowledge, and causal presential knowledge",
+          "early": "printed pp. 288–289",
+          "late": "vol. 2 pp. 245–246",
+          "finding": "All three demonstrations, the immaterial/material distinction, the five-item recap and both corollaries are present."
+        },
+        {
+          "segment": "Hearing and seeing; denial of knowledge; first reported view and reply",
+          "early": "printed pp. 289",
+          "late": "vol. 2 pp. 246–248",
+          "finding": "The hearing/seeing inference and every qualification of the first reply are preserved. The later editor’s extensive Asfar discussion remains commentary."
+        },
+        {
+          "segment": "Second, third, fourth and fifth reported positions and replies",
+          "early": "printed pp. 289–291",
+          "late": "vol. 2 pp. 248–250",
+          "finding": "All four positions and each objection are present, including the material-presence objection and the prohibition on acquired cognition in immaterial intellects."
+        },
+        {
+          "segment": "Sixth and seventh reported positions and replies",
+          "early": "printed pp. 291",
+          "late": "vol. 2 pp. 250",
+          "finding": "Identity formulations in the sixth view are retained against the later editor’s possessive preferences. Both loss-of-perfection objections are present."
+        },
+        {
+          "segment": "Eighth position, its three replies, theologians’ qualification, ninth and tenth positions",
+          "early": "printed pp. 291–292",
+          "late": "vol. 2 pp. 250–251",
+          "finding": "All three objections to the Peripatetic account, the logical sense of universal, and both final replies are present through the chapter ending."
+        }
+      ],
+      "paragraphCoverageCount": 71,
+      "paragraphCoverage": [
+        {
+          "field": "arabic",
+          "paragraph": 1,
+          "sha256": "759d95172e67a59270ef81166712f81012fdd3293826afb8aace22a2103525e7",
+          "characters": 71,
+          "start": "قد تحقّق فيما تقدّم أنّ لكلّ مجرّد علماً بذاته ، لحضور ذاته المجرّدة عن",
+          "end": "قد تحقّق فيما تقدّم أنّ لكلّ مجرّد علماً بذاته ، لحضور ذاته المجرّدة عن",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 2,
+          "sha256": "e64f6d3182e182549dad5e0c6dbb54dcfd37548f28adbdd9c9192311ae12b78b",
+          "characters": 110,
+          "start": "المادّة لذاته ، وليس العلم إلاّ حضور شيء لشيء ، والواجب (تعالى) منزّه عن المادّة والقوّة ،",
+          "end": " العلم إلاّ حضور شيء لشيء ، والواجب (تعالى) منزّه عن المادّة والقوّة ، فذاته معلومة لذاته.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 3,
+          "sha256": "8296d88c07151ffc6bd37b657b0a1627a17f4f2b0e70ea7d3d95d96cd9f8d38c",
+          "characters": 368,
+          "start": "وقد تقدّم أيضاً أنّ ذاته المتعالية حقيقة الوجود الصرف البسيط الواحد بالوحدة الحقّة الذي لا",
+          "end": " (تعالى) في مرتبة ذاته المتعالية علماً تفصيليّاً في عين الإجمال وإجماليّاً في عين التفصيل.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 4,
+          "sha256": "c404878b806d2a030738ef5c047791842f646b3db3ce2eaf67f10628f5a54694",
+          "characters": 290,
+          "start": "وقد تقدّم أيضاً أنّ ما سواه من الموجودات معاليلُ له ، منتهيةٌ إليه بلا واسطة أو بواسطة أو ",
+          "end": "ة وجوداتها علماً حضوريّاً ، أمّا المجرّدة منها فبأنفسها ، وأمّا الماديّة فبصورها المجرّدة.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 5,
+          "sha256": "98111a04eaa3b5e91fada32620782f4cc155384c7b9aec3cec34d172dfc2fc1a",
+          "characters": 378,
+          "start": "فتبيّن بما مرّ أنّ للواجب (تعالى) علماً بذاته في مرتبة ذاته وهو عين ذاته ، وأنّ له (تعالى)",
+          "end": "واتها خارجاً من الذات المتعالية ، وهو «العلم بعد الإيجاد» ؛ وأنّ علمه حضوريّ كيفما صُوِّر.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 6,
+          "sha256": "49b0c19f04138d092ed7a8ad5a7b3849eba2f5f28f0fcb3d759b588ef1459fa9",
+          "characters": 15,
+          "start": "فهذه خمس مسائل.",
+          "end": "فهذه خمس مسائل.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 7,
+          "sha256": "d967fe6a94e41a894be4d700c7ab25a005036dec759c7aa986b266bdfcd74a31",
+          "characters": 116,
+          "start": "ويتفرّع على ذلك أنّ كلَّ علْم متقرّر في مراتب الممكنات من العلل المجرّدة العقليّة والمثالي",
+          "end": "لْم متقرّر في مراتب الممكنات من العلل المجرّدة العقليّة والمثاليّة فإنّه علْمٌ له (تعالى).",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 8,
+          "sha256": "bc0e535c0e15d5984ca6d6de4521e977ab93638ed6c1a2b2dfed96b12bf13df9",
+          "characters": 153,
+          "start": "ويتفرّع أيضاً أنّه سميعٌ بصيرٌ كما أنّه عليمٌ خبيرٌ ، لما أنّ حقيقة السمع والبصر هي العلم ",
+          "end": "قيقة السمع والبصر هي العلم بالمسموعات والعلم بالمبصرات من مطلق العلم وله (تعالى) كلُّ علم.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 9,
+          "sha256": "898480b36ab3a88c2a6bb6eb94da5656b030c63acb8c6555378e1af066c54d1a",
+          "characters": 104,
+          "start": "وللباحثين في علمه (تعالى) اختلافٌ كثيرٌ حتّى أنكره بعضهم من أصله ، وهو محجوج بما قام على ذ",
+          "end": "لمه (تعالى) اختلافٌ كثيرٌ حتّى أنكره بعضهم من أصله ، وهو محجوج بما قام على ذلك من البرهان.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 10,
+          "sha256": "bbcad61afd09fbcd907748edcd2ba051448779b139d05581706d475071fa0482",
+          "characters": 22,
+          "start": "وللمثبتين مذاهب شتّى :",
+          "end": "وللمثبتين مذاهب شتّى :",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 11,
+          "sha256": "300c17b47050f874939af188c0af2a43cfa6dbd4d1af597341640411238c57e2",
+          "characters": 96,
+          "start": "أحدها : أنّ له (تعالى) علماً بذاته دون معلولاتها ، لأنّ الذات المتعالية أزليّة وكلّ معلول ",
+          "end": ": أنّ له (تعالى) علماً بذاته دون معلولاتها ، لأنّ الذات المتعالية أزليّة وكلّ معلول حادث .",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 12,
+          "sha256": "d90ac4710ef8fd6554cc3f3cc3adc82b2f8297e0499c15bdfc7df0b6cf5ee1a2",
+          "characters": 405,
+          "start": "وفيه : أنّ العلم بالمعلول في الأزل لا يستوجب كونه موجوداً في الأزل بوجوده الخاصّ به ، على ",
+          "end": "ً بمعلولاته قبل الإيجاد في مرتبة الذات وعلماً حضوريّاً بها بعد الإيجاد في مرتبة المعلولات.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 13,
+          "sha256": "04b8b9dd546daf30beb6bcd0c882ce3905d76797b782dee184cda25b091e3e34",
+          "characters": 133,
+          "start": "الثاني : ما يُنسب إلى أفلاطون ، أنّ علمه (تعالى) التفصيليّ هو العقول المجرّدة والمُثل الإل",
+          "end": "عالى) التفصيليّ هو العقول المجرّدة والمُثل الإلهيّة التي تجتمع فيها كمالات الأنواع تفصيلا.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 14,
+          "sha256": "a6e8f9927d451f216b02b079ed7bbd497b9d3be457cb7c7ad361a9914a0b6018",
+          "characters": 228,
+          "start": "وفيه : أنّ ذلك من العلم بعدالإيجاد ، وهو في مرتبة وجوداتهاالممكنة ، وانحصار علمه (تعالى) ا",
+          "end": "الية في ذاتها عن الكمال العلميّ ، وهو وجودٌ صِرْفٌ لا يشذّ عنه كمال من الكمالات الوجوديّة.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 15,
+          "sha256": "e37dd6f9f4b0a93d51d79b880ac48e1a2cb7d7f57b4aee94d1283a3d9603c19e",
+          "characters": 71,
+          "start": "الثالث : ما يُنسب إلى فرفوريوس ، أنّ علمه (تعالى) بالإتّحاد مع المعلوم.",
+          "end": "الثالث : ما يُنسب إلى فرفوريوس ، أنّ علمه (تعالى) بالإتّحاد مع المعلوم.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 16,
+          "sha256": "3e709154f86f17262b236e730e0a21b1326d9ef50c95238c83408210126c8381",
+          "characters": 156,
+          "start": "وفيه : أنّ ذلك إنّما يكفي لبيان تحقُّق العلم ، وأنّ ذلك باتّحاد العاقل مع المعقول لا بالعر",
+          "end": "عاقل مع المعقول لا بالعروض ونحوه ، ولا يكفي لبيان ثبوت العلم بالأشياء قبل الإيجاد أو بعده.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 17,
+          "sha256": "10e1c737a5a9cde2c7d48d9c6c5d8840ee9b7680dd8ede7b697d7014221f8dd0",
+          "characters": 260,
+          "start": "الرابع : ما يُنسب إلى شيخ الإشراق وتبعه جمع ممّن بعدَه من المحقّقين ، أنّ الأشياء أعمّ من ",
+          "end": " ، وهو علمه التفصيليّ بالأشياء بعد الإيجاد ، فله (تعالى) علمٌ إجماليّ بها بتبع علمه بذاته.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 18,
+          "sha256": "262a02f446c1c8efee64810cb9991dfe778e422be45a3a52aaf09c35e0af1540",
+          "characters": 132,
+          "start": "وفيه : أوّلا : أنّ قوله : «بحضور المادّيّات له (تعالى)» ممنوعٌ ، فالمادّيّة لا تجامع الحضو",
+          "end": "ت له (تعالى)» ممنوعٌ ، فالمادّيّة لا تجامع الحضور ، على ما بيّن في مباحث العاقل والمعقول .",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 19,
+          "sha256": "e67036a35e1cbad387460c05cf2a4122cf30fc2bbd8f0b12d0e5bfd9db9effe9",
+          "characters": 194,
+          "start": "وثانياً : أنّ قصر العلم التفصيليّ بالأشياء في مرتبة وجوداتها يوجب خلوّ الذات المتعالية الف",
+          "end": "ل تفصيليّ في الأشياء عن تفصيلها ، وهي وجودٌ صِرْفٌ جامعٌ لكلّ كمال وجوديّ بنحو أعلى وأشرف.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 20,
+          "sha256": "35764694cb84724b9c797595656e4a9d0dd194d6fc43aced2095b201ecf96e57",
+          "characters": 66,
+          "start": "الخامس : ما يُنسب إلى الملطيّ أنّه (تعالى) يعلم العقل الأوّل ـ وهو",
+          "end": "الخامس : ما يُنسب إلى الملطيّ أنّه (تعالى) يعلم العقل الأوّل ـ وهو",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 21,
+          "sha256": "d54e026a989299e14cec7d73016299ec779beaee6035bbf3ca99910b423ebcf1",
+          "characters": 101,
+          "start": "الصادر الأوّل ـ بحضوره عنده ، ويعلم سائر الأشياء ممّا دون العقل الأوّل بارتسام صورها في ال",
+          "end": "ّل ـ بحضوره عنده ، ويعلم سائر الأشياء ممّا دون العقل الأوّل بارتسام صورها في العقل الأوّل.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 22,
+          "sha256": "60e5ee3c9f9a97c83b16785f5949f16e7af8f3da8cfc25b4a03a93a193d46432",
+          "characters": 205,
+          "start": "وفيه : أنّه يرد عليه ما يرد على القول السابق ـ من لزوم خلوّ الذات المتعالية عن الكمال وهي ",
+          "end": "نّه قد تقدّم في مباحث العاقل والمعقول أنّ العقول المجرّدة لا علمَ ارتساميّاً حصوليّاً لها.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 23,
+          "sha256": "9626b8add1f3efa7a58fb0f0dd74d6c0d2a657ef000bfa34b5f73f593cbdd42c",
+          "characters": 182,
+          "start": "السادس : قول بعضهم : «إنّ ذاته المتعالية علْمٌ تفصيليٌّ بالمعلول الأوّل وإجماليٌّ بما دونه",
+          "end": " وذات المعلول الأوّل علْمٌ تفصيليٌّ بالمعلول الثاني وإجماليٌّ بما دونه ، وعلى هذا القياس».",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 24,
+          "sha256": "d7e2597d5d13a9cc1588b1b98f8298403ad3b1d0ef0c50924bb38b718607ec30",
+          "characters": 108,
+          "start": "وفيه : محذورُ خلُوِّ الذات المتعالية عن كمال العلم بما دون المعلول الأوّل وهي وجودٌ صِرْفٌ",
+          "end": "ِّ الذات المتعالية عن كمال العلم بما دون المعلول الأوّل وهي وجودٌ صِرْفٌ لا يسلب عنه كمال.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 25,
+          "sha256": "1770769f3ee9f9e67151b95c67852c46ad1f77068568c423e60b82b3ffde71e9",
+          "characters": 219,
+          "start": "السابع : ما يُنسب إلى أكثر المتأخّرين ، أنّ له (تعالى) علماً تفصيليّاً بذاته وهو علم إجمال",
+          "end": "فصيليّ بالأشياء فهو بعدَ وجودها ، لأنّ العلم تابعٌ للمعلوم ولا معلومَ قبلُ الوجود العينيّ.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 26,
+          "sha256": "529d51ea27033b0dc515bf09bca36d711f29183e61522be84422a6454df3ae30",
+          "characters": 150,
+          "start": "وفيه : محذورُ خلوِّ الذات المتعالية عن الكمال العلميّ ـ كما في الوجوه السابقة ـ ، على أنّ ",
+          "end": "في الوجوه السابقة ـ ، على أنّ فيه إثبات العلم الارتساميّ الحصوليّ في الوجود المجرّد المحض.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 27,
+          "sha256": "10970062090fb861dfdce17ee65dabebaf2dd37df20a2e86d0a7d78a7cacfcc5",
+          "characters": 227,
+          "start": "الثامن : ما يُنسب إلى المشّائين ، أنّ له (تعالى) علماً حضوريّاً بذاته المتعالية ، وعلماً ت",
+          "end": "هيّاتها على النظام الموجود في الخارج لذاته (تعالى) ، لا على وجه الدخول بعينيّة أو جزئيّة ،",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 28,
+          "sha256": "469116504fdd5451e58328741333657f4180ee45aeace97c4ba0b1f498b12720",
+          "characters": 200,
+          "start": "بل على نحو قيامها بها بالثبوت الذهنيّ على وجه الكلّيّة ، بمعنى عدم تغيُّرِ العلم بتغيُّرِ ",
+          "end": "لح عليه في مباحث العلم ـ ، فهو عِلْمٌ عنائيٌّ يستتبع فيه حصولُ المعلوم علماً حصولَه عيناً.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 29,
+          "sha256": "5b977387dfccd88cb75488a872a424a7d3ed890e5ab55e9ac08af8cb300fc7b9",
+          "characters": 59,
+          "start": "وفيه : أوّلا : ما في سابقه من محذور خلُوِّ الذات عن الكمال.",
+          "end": "وفيه : أوّلا : ما في سابقه من محذور خلُوِّ الذات عن الكمال.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 30,
+          "sha256": "6517468b632cb288e7b9fa6c1ad89afc71e20ac01583aebc36cf7284976fcd0a",
+          "characters": 83,
+          "start": "وثانياً : ما في سابقه أيضاً من محذور ثبوت العلم الحصوليّ فيما هو مجرّد ذاتاً وفعلا.",
+          "end": "وثانياً : ما في سابقه أيضاً من محذور ثبوت العلم الحصوليّ فيما هو مجرّد ذاتاً وفعلا.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 31,
+          "sha256": "ffcb13741be88365af9933c84cbead56443202e2ecb1d6abd0fcbab9c9c16845",
+          "characters": 214,
+          "start": "وثالثاً : أنّ لازمَهُ ثبوت وجود ذهنيّ من غير عينيّ يقاس إليه ، ولازمُهُ أن يعود وجوداً آخر",
+          "end": "ّ بها ، وهو منفصل الوجود عنه (تعالى) ، ويرجع بالدقّة إلى القول الثاني المنسوب إلى أفلاطون.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 32,
+          "sha256": "230b3b8805758dc9d1224c2723575312798faa75f7425d8712293779d42bf12f",
+          "characters": 178,
+          "start": "واعلم أنّ أكثر المتكلّمين على هذا القول ، وإن طعنوا فيه من حيث عدّهم العلم قبل الإيجاد كلّ",
+          "end": "لّيّاً ، زعماً منهم أنّ المراد بالكلّيّ ما اصطلح عليه في مبحث الكلّيّ والجزئيّ من المنطق .",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 33,
+          "sha256": "0d0543c0c90bbbbf2c7689adafc1c2ad03ca1f44582704c1ea738f5a35aa0ec6",
+          "characters": 122,
+          "start": "وذلك أنّهم اختاروا أنّ العلم التفصيليّ قبل الإيجاد حصوليٌّ ، وأنّه على حالِهِ قبلَ وجود ال",
+          "end": "فصيليّ قبل الإيجاد حصوليٌّ ، وأنّه على حالِهِ قبلَ وجود الأشياء وبعدَ وجودها من غير تغيير.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 34,
+          "sha256": "986ed26a48a7fd92e93cb874666d489a668203aa31257981247d9436274f3a71",
+          "characters": 105,
+          "start": "التاسع : قول المعتزلة أنّ للماهيّات ثبوتاً عينيّاً في العدم ، وهو الذي تعلّق به علمه (تعال",
+          "end": "معتزلة أنّ للماهيّات ثبوتاً عينيّاً في العدم ، وهو الذي تعلّق به علمه (تعالى) قبل الإيجاد.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 35,
+          "sha256": "525cef65b1c6a24b9b541830f9a6288214b5ec99f8d0cfbd54e3b42a3d5f4b59",
+          "characters": 49,
+          "start": "وفيه : أنّه قد تقدّم بطلان القول بثبوت المعدومات.",
+          "end": "وفيه : أنّه قد تقدّم بطلان القول بثبوت المعدومات.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 36,
+          "sha256": "f4d2f2606befe2c32461b799213d22bcd9b575d5140adf4aab22a5dc44c02e82",
+          "characters": 126,
+          "start": "العاشر : ما نُسب إلى الصوفيّة ، أنّ للماهيّات ثبوتاً علميّاً بتبع الأسماء والصفات ، هو الذ",
+          "end": "للماهيّات ثبوتاً علميّاً بتبع الأسماء والصفات ، هو الذي تعلّق به علمه (تعالى) قبل الإيجاد.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 37,
+          "sha256": "cdbbcffb2a85e1057d363796f00a9fed7ac09a292ab50e25b968a4d5fc87d46d",
+          "characters": 74,
+          "start": "وفيه : أنّ أصالة الوجود واعتباريّة الماهيّة تنفي أيَّ ثبوت مفروض للماهيّات",
+          "end": "وفيه : أنّ أصالة الوجود واعتباريّة الماهيّة تنفي أيَّ ثبوت مفروض للماهيّات",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 38,
+          "sha256": "4cc02941e751cb4801b5308a383832c7ef71397fa3f4d0caeb0ff4aef12927ff",
+          "characters": 31,
+          "start": "قبلَ ثبوتها العينيّ الخاصّ بها.",
+          "end": "قبلَ ثبوتها العينيّ الخاصّ بها.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 1,
+          "sha256": "ab97f0d532a3903f0587e72f9ac0491cda220a11a80638ae50ef62ae325aa5e2",
+          "characters": 319,
+          "start": "It was established above that every immaterial being has knowledge of its own essence, bec",
+          "end": "d is He—is free of matter and potentiality. His essence is therefore known to His essence.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 2,
+          "sha256": "80598042090ecc353f81ff7a49aeb03d3b7f5af4841f9ee92a940428a1c24ccc",
+          "characters": 645,
+          "start": "It was also established that His transcendent essence is the reality of pure, simple exist",
+          "end": "ledge that is detailed in its very comprehensiveness and comprehensive in its very detail.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 3,
+          "sha256": "d52e4e808b2e5c75e163d12c5798db80e0e8288903422ef0c6bc7e522153a96e",
+          "characters": 513,
+          "start": "It was further established that all other existents are His effects, terminating in Him wi",
+          "end": " immaterial things through themselves, and material things through their immaterial forms.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 4,
+          "sha256": "1e9d710baf161e71fc989c6d49e9e80b60946476d0054edc2bfd92c7df56a817",
+          "characters": 646,
+          "start": "The foregoing establishes that the Necessary—exalted is He—knows His essence at the degree",
+          "end": " into existence”; and that His knowledge is knowledge by presence however it is conceived.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 5,
+          "sha256": "529224892f22215d6090512f41b8e9924cd9fe01b02e6d7830a781a546da3d6a",
+          "characters": 25,
+          "start": "These are five questions.",
+          "end": "These are five questions.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 6,
+          "sha256": "ce730f1ac2b040e9427c350b30d8aa14a7ac079f5b491c3edc978925923247a5",
+          "characters": 184,
+          "start": "It follows that every item of knowledge established at the degrees of contingent beings, a",
+          "end": " immaterial intellectual and imaginal causes, is knowledge belonging to Him—exalted is He.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 7,
+          "sha256": "83d1146733d6b43abdc169fb130d49beca55f0594a592ecf9338b7a53e8dc8a0",
+          "characters": 281,
+          "start": "It also follows that He is Hearing and Seeing, just as He is Knowing and Aware. For the re",
+          "end": "ging to knowledge without qualification; and every knowledge belongs to Him—exalted is He.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 8,
+          "sha256": "fdfbb532a5ba64c8e2470a3feb46e2bc3e206102292d8e41fa132cfef7a759bb",
+          "characters": 185,
+          "start": "Investigators have differed greatly concerning His knowledge—exalted is He—so much so that",
+          "end": " have denied it altogether. Such a person is refuted by the demonstration establishing it.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 9,
+          "sha256": "f287576f4c53ffda7583884cd3c75865a030814c091679a324974f07bba16339",
+          "characters": 43,
+          "start": "Those who affirm it hold various positions.",
+          "end": "Those who affirm it hold various positions.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 10,
+          "sha256": "3c5cf8bde8a1e567eba7f7cf4b55d40bd446fe35347c901fdd512b4b6cbbceb2",
+          "characters": 138,
+          "start": "First: He—exalted is He—knows His essence but not its effects, because the transcendent es",
+          "end": "t its effects, because the transcendent essence is eternal and every effect is originated.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 11,
+          "sha256": "83e268aa02d406efb0d62eb23a9d83bbd2e50eea045fc137154d7476a992160c",
+          "characters": 680,
+          "start": "The objection is that knowing an effect eternally does not require that it exist eternally",
+          "end": "edge by presence of them after bringing them into existence, at the degree of the effects.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 12,
+          "sha256": "f6d230e975baf6527d5e011dee3d84874d81d1ceb67dc62a575840b677707f7c",
+          "characters": 189,
+          "start": "Second: the position attributed to Plato, that His detailed knowledge—exalted is He—is the",
+          "end": "al intellects and divine Forms in which the perfections of species are gathered in detail.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 13,
+          "sha256": "05e7a57ebe0da8750fd61e355e82fe7c87a42925b49eb158487548f6fac7a71d",
+          "characters": 337,
+          "start": "The objection is that this belongs to knowledge after bringing into existence, at the degr",
+          "end": "of knowledge, whereas it is pure existence from which no existential perfection is absent.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 14,
+          "sha256": "aab6e39c27cd58e550dc3ec7aeb5802c5431c339017a5d27c5720cfebaf16406",
+          "characters": 109,
+          "start": "Third: the position attributed to Porphyry, that His knowledge—exalted is He—is through un",
+          "end": " attributed to Porphyry, that His knowledge—exalted is He—is through union with the known.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 15,
+          "sha256": "11118547b9ef07f3c72018b7ebefa430611743a2d89100da36cb521f243dba69",
+          "characters": 310,
+          "start": "The objection is that this suffices only to explain the realization of knowledge and that ",
+          "end": "not suffice to establish knowledge of things before or after bringing them into existence.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 16,
+          "sha256": "4a29204d95b1b9e05a791e6b56f490b4757fce46fd754976150ac507951345fb",
+          "characters": 424,
+          "start": "Fourth: the position attributed to the Shaykh of Illumination, followed by a group of late",
+          "end": "e He has comprehensive knowledge of them as a consequence of His knowledge of His essence.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 17,
+          "sha256": "a15a2de2cdedb1c474bb2979bac51afd68e2f30c5315a5a1559241d70e3f372c",
+          "characters": 230,
+          "start": "The first objection is that the claim that material things are present to Him—exalted is H",
+          "end": "resence, as explained in the discussions of the intellective subject and the intelligible.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 18,
+          "sha256": "2caf4c4171062d1ca51840ab9134927b12f4d6b0cc43a4bb42123ae66d3a5c2c",
+          "characters": 310,
+          "start": "The second objection is that confining detailed knowledge of things to the degree of their",
+          "end": "s pure existence, encompassing every existential perfection in a higher and nobler manner.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 19,
+          "sha256": "470a1220893d8d1110a2cc002958d3699be4f8e21eb58534ce54b8c256da7532",
+          "characters": 272,
+          "start": "Fifth: the position attributed to al-Malaṭī, that He—exalted is He—knows the first intelle",
+          "end": "gs below the first intellect through the impression of their forms in the first intellect.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 20,
+          "sha256": "d960f23dacee1d3311901771430935d4188a5b1f3cdcdcc6bc8a769175ff4825",
+          "characters": 361,
+          "start": "The objection is that this is subject to the same difficulty as the previous position: it ",
+          "end": "ntelligible that immaterial intellects have no acquired knowledge through impressed forms.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 21,
+          "sha256": "51fd2940b77c15546f30c914d2649557802a14ceb968b280b14eac9569306bfd",
+          "characters": 286,
+          "start": "Sixth: the statement of some that “His transcendent essence is detailed knowledge of the f",
+          "end": "nowledge of the second effect and comprehensive knowledge of what is below it; and so on.”",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 22,
+          "sha256": "96f5ff34a91e0f645f8b02ceddd0c2392acb3733ab11649543d98aeab49cd9b6",
+          "characters": 205,
+          "start": "The objection is the unacceptable consequence that the transcendent essence lacks the perf",
+          "end": " below the first effect, although it is pure existence from which no perfection is denied.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 23,
+          "sha256": "2da9036af8c266e1c0fc8b1b81c0706d0aea7c9244b9a8d8f53ee2355d0c5631",
+          "characters": 358,
+          "start": "Seventh: the position attributed to most later thinkers, that He—exalted is He—has detaile",
+          "end": "ence, because knowledge follows the known and there is no known before concrete existence.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 24,
+          "sha256": "3830498a97be84c522ca968c21b9dd1e6f6e08f66033a314c1aadaa72f03d8e9",
+          "characters": 237,
+          "start": "The objection is the unacceptable consequence that the transcendent essence lacks the perf",
+          "end": "ver, it affirms acquired knowledge through impressed forms in purely immaterial existence.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 25,
+          "sha256": "258c0473fdbec278d95370d4788aa14b171dbfd8dff258ff8db4d79207d81064",
+          "characters": 673,
+          "start": "Eighth: the position attributed to the Peripatetics, that He—exalted is He—has knowledge b",
+          "end": "edge: the occurrence of the known in knowledge entails its occurrence in concrete reality.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 26,
+          "sha256": "6b83733273b7274b02c9d3ed2dda76802b8017e09ffda024fbafd74cf740245d",
+          "characters": 107,
+          "start": "The first objection is the same difficulty as in the preceding position: the essence would",
+          "end": "on is the same difficulty as in the preceding position: the essence would lack perfection.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 27,
+          "sha256": "e0beb98ee671fa0b37c11531726d3cee4aacc138e8bb2667b6599fa2d3e1910b",
+          "characters": 160,
+          "start": "The second is likewise the difficulty in the preceding position: acquired knowledge would ",
+          "end": "red knowledge would be established in that which is immaterial both in essence and in act.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 28,
+          "sha256": "d91440e20fe853a90742e6b9bbf690503e14e2af4eef725068402a038ac343a1",
+          "characters": 354,
+          "start": "The third is that this entails the establishment of mental existence without a concrete ex",
+          "end": "alted is He. On close examination, it returns to the second position, attributed to Plato.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 29,
+          "sha256": "43ac7b6e8e38119388fad0b2b93014d8430b940621c9c0a67dd0e732f704a8d9",
+          "characters": 404,
+          "start": "Know that most theologians hold this position, even though they criticize it for describin",
+          "end": " into existence is acquired knowledge and remains unchanged before and after things exist.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 30,
+          "sha256": "493c67644d993a56bbf4606e420c6b1c572789b5e9a65406f794ba5caa3579e8",
+          "characters": 178,
+          "start": "Ninth: the Muʿtazilite position that quiddities have concrete establishment in nonexistenc",
+          "end": "nce, and this is the object of His knowledge—exalted is He—before bringing into existence.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 31,
+          "sha256": "d6724dfcb73b54842b1d07f3318ac4a5d4676d9bd9c181d258c1f11150c03bbd",
+          "characters": 123,
+          "start": "The objection is that the falsity of the doctrine of the establishment of nonexistent thin",
+          "end": " of the doctrine of the establishment of nonexistent things has already been demonstrated.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 32,
+          "sha256": "8dc7ab710f18a2711f595339295396855de431597a78142f5bf505bbb96eb499",
+          "characters": 224,
+          "start": "Tenth: the position attributed to the Sufis, that quiddities have establishment in knowled",
+          "end": "tes, and this is the object of His knowledge—exalted is He—before bringing into existence.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 33,
+          "sha256": "a429119465f489a0df38332fac35133c57ef5299bdc94a17a59bf8a9d23ff5ef",
+          "characters": 197,
+          "start": "The objection is that the primacy of existence and the intellectually considered status of",
+          "end": "any supposed establishment of quiddities before their own specific concrete establishment.",
+          "reviewed": true,
+          "layoutArtifact": false
+        }
+      ],
+      "witnesses": [
+        {
+          "edition": "Qum 1404, Princeton / Arabic Collections Online, early printed facsimile",
+          "notManuscript": true,
+          "manifest": "https://sites.dlib.nyu.edu/viewer/api/presentation/books/princeton_aco000637/manifest.json",
+          "pdfLocalPath": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "pdfSha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "printedPages": [
+            288,
+            289,
+            290,
+            291,
+            292
+          ],
+          "images": [
+            {
+              "canvas": 292,
+              "printedPage": 288,
+              "viewerUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/292",
+              "localRender": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/scans/canvas-292.png",
+              "renderSha256": "7983063e38fd826096253aaaff6fb37bed2987328edcbab816a6b61b59d39131",
+              "renderMethod": "Archived PyMuPDF rendering of the early PDF at width 1600 pixels.",
+              "actuallyVisuallyRead": true
+            },
+            {
+              "canvas": 293,
+              "printedPage": 289,
+              "viewerUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/293",
+              "localRender": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/scans/canvas-293.png",
+              "renderSha256": "82cdc348210e59913ff8be00ced06b424e741301b18246276ecfb6674923f950",
+              "renderMethod": "Archived PyMuPDF rendering of the early PDF at width 1600 pixels.",
+              "actuallyVisuallyRead": true
+            },
+            {
+              "canvas": 294,
+              "printedPage": 290,
+              "viewerUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/294",
+              "localRender": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/scans/canvas-294.png",
+              "renderSha256": "1176a4934de0127524a6c6ea8d234bb397d0c857d754062c95c866d0e3464564",
+              "renderMethod": "Archived PyMuPDF rendering of the early PDF at width 1600 pixels.",
+              "actuallyVisuallyRead": true
+            },
+            {
+              "canvas": 295,
+              "printedPage": 291,
+              "viewerUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/295",
+              "localRender": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/scans/canvas-295.png",
+              "renderSha256": "4ca8c124a08fac58dd0c594dbdb922e30036b3dd8b1272989c605cb775c430f1",
+              "renderMethod": "Archived PyMuPDF rendering of the early PDF at width 1600 pixels.",
+              "actuallyVisuallyRead": true
+            },
+            {
+              "canvas": 296,
+              "printedPage": 292,
+              "viewerUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/296",
+              "localRender": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/scans/canvas-296.png",
+              "renderSha256": "51e40c9bbe0e5362db6a0d3c9edec1dc2f62b48438487177e17b4c21c1f76707",
+              "renderMethod": "Archived PyMuPDF rendering of the early PDF at width 1600 pixels.",
+              "actuallyVisuallyRead": true
+            }
+          ]
+        },
+        {
+          "edition": "1428 fourth edited edition, Abbas Ali al-Zarii al-Sabzawari, vol. 2, Rafed digital presentation",
+          "notFacsimile": true,
+          "notManuscript": true,
+          "pages": [
+            {
+              "page": 245,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=245&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-241.html",
+              "htmlSha256": "ee8e4bfe64d107c8fb1c52fb16db1e184c416c3d14bf6f2b9e4645b64612d20b",
+              "pageTextSha256": "a6b200ecda006f6b42c0d3cea0b665d130b7a6adf02d42f77ec1adb8f8fe8ab3",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 6
+            },
+            {
+              "page": 246,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=246&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-241.html",
+              "htmlSha256": "ee8e4bfe64d107c8fb1c52fb16db1e184c416c3d14bf6f2b9e4645b64612d20b",
+              "pageTextSha256": "b03f355efb17672769ff2f5b7fb1c3fc3dac31db443a4f777dd3b3fb8eaed0f4",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 3
+            },
+            {
+              "page": 247,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=247&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-241.html",
+              "htmlSha256": "ee8e4bfe64d107c8fb1c52fb16db1e184c416c3d14bf6f2b9e4645b64612d20b",
+              "pageTextSha256": "cb69b9e0ce40b8ea0442b4201826e5223c4166ea5934a56c7b536b1d6ff78053",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 6
+            },
+            {
+              "page": 248,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=248&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-241.html",
+              "htmlSha256": "ee8e4bfe64d107c8fb1c52fb16db1e184c416c3d14bf6f2b9e4645b64612d20b",
+              "pageTextSha256": "6e84d36f231570b03664401792fd955248e6b9433e4caac06a015f44bc6019b3",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 7
+            },
+            {
+              "page": 249,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=249&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-241.html",
+              "htmlSha256": "ee8e4bfe64d107c8fb1c52fb16db1e184c416c3d14bf6f2b9e4645b64612d20b",
+              "pageTextSha256": "8bc790587e73579e2714ba7393d9bd527937ab791b3bd64fa8ae4af119670519",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 5
+            },
+            {
+              "page": 250,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=250&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-241.html",
+              "htmlSha256": "ee8e4bfe64d107c8fb1c52fb16db1e184c416c3d14bf6f2b9e4645b64612d20b",
+              "pageTextSha256": "d165e7687d20aab65a0b5c9778aacb91274b728b1d27fefe41955af2248f9fa2",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 6
+            },
+            {
+              "page": 251,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=251&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-241.html",
+              "htmlSha256": "ee8e4bfe64d107c8fb1c52fb16db1e184c416c3d14bf6f2b9e4645b64612d20b",
+              "pageTextSha256": "21c0975f9aecf2f20cf56eface751e861670e343a04fc3fc1bcd2c49edaa5b97",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 4
+            }
+          ],
+          "actualReadScope": "Every authorial paragraph within the chapter boundaries and every associated editorial note, including continuation across pages."
+        }
+      ],
+      "variants": [
+        {
+          "decisionID": "N10-NEW-XII11-VAR01",
+          "base": "العلم بالمسموعات والعلم بالمبصرات من مطلق العلم",
+          "early": "العلم بالمسموعات والعلم بالمبصرات من مطلق العلم",
+          "later": "العلم بالمسموعات والعلم بالمبصرات ، فهما من مطلق العلم",
+          "disposition": "apparatus-only",
+          "sourceGrade": "L2",
+          "evidence": "1404 p. 289 / canvas 293; 1428 p. 246",
+          "judgment": "The later unfootnoted فهما supplies an explicit syntactic resumption. The earlier wording is intelligible and is retained; the English already conveys the predication."
+        },
+        {
+          "decisionID": "N10-NEW-XII11-VAR02",
+          "base": "لبيان تحقُّق العلم",
+          "early": "لبيان تحقُّق العلم",
+          "later": "لبيان نحو تحقُّق العلم",
+          "disposition": "apparatus-only",
+          "sourceGrade": "L1",
+          "evidence": "1404 p. 290 / canvas 294; 1428 p. 248 n. 4",
+          "judgment": "The later editor adds نحو and appeals to Bidaya. The following clause already specifies union; no need to introduce a word absent from the early print."
+        },
+        {
+          "decisionID": "N10-NEW-XII11-VAR03",
+          "base": "لا بالعروض ونحوه",
+          "early": "لا بالعروض ونحوه",
+          "later": "لا بالعرض ونحوه",
+          "disposition": "apparatus-only",
+          "sourceGrade": "L1",
+          "evidence": "1404 p. 290 / canvas 294; 1428 p. 248 n. 5",
+          "judgment": "Retain the coherent earlier expression for inherence; the later lexical preference is attributed."
+        },
+        {
+          "decisionID": "N10-NEW-XII11-VAR04",
+          "base": "فله (تعالى) علمٌ إجماليّ بها بتبع علمه بذاته.",
+          "early": "فله (تعالى) علمٌ إجماليّ بها بتبع علمه بذاته.",
+          "later": "[وأمّا قبل الإيحاد] فله تعالى علم إجماليّ بها بتبع علمه بذاته",
+          "disposition": "apparatus-only",
+          "sourceGrade": "L1",
+          "evidence": "1404 p. 290 / canvas 294; 1428 p. 249 n. 1",
+          "judgment": "The editor explicitly says the bracketed supplement is absent from the copies. Its digital text also prints الإيحاد. Neither the supplement nor an unmarked correction of its typo enters the authorial body."
+        },
+        {
+          "decisionID": "N10-NEW-XII11-VAR05",
+          "base": "إنّ ذاته المتعالية علْمٌ تفصيليٌّ بالمعلول الأوّل",
+          "early": "إنّ ذاته المتعالية علْمٌ تفصيليٌّ بالمعلول الأوّل",
+          "later": "إنّ لذاته المتعالية علْمٌ تفصيليٌّ بالمعلول الأوّل",
+          "disposition": "apparatus-only",
+          "sourceGrade": "L1",
+          "evidence": "1404 p. 291 / canvas 295; 1428 p. 250 n. 3",
+          "judgment": "The editor calls the possessive construction preferable. It changes identity into possession in a reported position; preserve the earlier identity formulation and matching English."
+        },
+        {
+          "decisionID": "N10-NEW-XII11-VAR06",
+          "base": "وذات المعلول الأوّل علْمٌ تفصيليٌّ بالمعلول الثاني",
+          "early": "وذات المعلول الأوّل علْمٌ تفصيليٌّ بالمعلول الثاني",
+          "later": "ولذات المعلول الأوّل علْمٌ تفصيليٌّ بالمعلول الثاني",
+          "disposition": "apparatus-only",
+          "sourceGrade": "L1",
+          "evidence": "1404 p. 291 / canvas 295; 1428 p. 250 n. 4",
+          "judgment": "Preserve the second identity formulation for the same reason; this is not a typographical correction."
+        }
+      ],
+      "laterEditorialCommentary": [
+        {
+          "source": "1428 vol. 2 245 nn. 1–4",
+          "kind": "Cross-references and proof analysis",
+          "summary": "References to XI.1/XI.11 and IV.4/XII.4, the unpacking into two syllogisms of the self-knowledge proof, and the referent of the existential perfections were read. The expanded syllogisms are the later editor’s exposition."
+        },
+        {
+          "source": "1428 vol. 2 246 n. 1 and n. 2 continued through 247",
+          "kind": "Causal references and hearing/seeing debate",
+          "summary": "The editor cites VIII.5 and XII.9, then quotes Sadra, Asfar 6:422, on hearing and seeing as specific presential cognitions distinct from unqualified knowledge. He next quotes Tabatabai’s separate Asfar annotation rejecting that restriction because all categories are present to God and divine knowledge is wholly presential. The latter is an attributed quotation from another work, not an original footnote of this Nihaya chapter."
+        },
+        {
+          "source": "1428 vol. 2 247 nn. 1–3",
+          "kind": "Reported historical attributions and vocabulary",
+          "summary": "The editor distinguishes denial of divine knowledge from denial of knowledge of others, quotes Tusi on the transmission of these positions, glosses mahjuj as defeated, and cites Shahrastani for Hisham b. Amr al-Fuwati and Abu Bakr al-Asamm. These historical attributions are reported as editorial claims, not independently established here."
+        },
+        {
+          "source": "1428 vol. 2 248 nn. 1–7",
+          "kind": "References, proposed emendations, and school attributions",
+          "summary": "All references for Plato and Porphyry, the two explicit alterations نحو and بالعرض, the report of Suhrawardi’s spiritual encounter with Aristotle, and the named later followers Tusi, Shirazi, Ibn Kammuna and Shahrazuri were read. The altered words are registered separately and the historical narrative remains attributed."
+        },
+        {
+          "source": "1428 vol. 2 249 nn. 1–4",
+          "kind": "Supplement, disagreement, and Milesian identification",
+          "summary": "The bracketed before-creation supplement is expressly absent from the copies. The editor quotes Sabzawari’s Asfar 6:165 annotation against the author: material things are absent to us but present to an encompassing divine knower. This disagreement is not blended into the author’s reply. The editor identifies al-Malati as Thales and contrasts an account attributed to Anaximenes, with cited secondary transmission."
+        },
+        {
+          "source": "1428 vol. 2 250 nn. 1–6",
+          "kind": "Qualification of a cross-reference and later preferences",
+          "summary": "The editor says the claimed earlier proof is not explicit in this book and points instead to VI.15/XI.11; identifies the sixth account with some philosophers and Sabzawari; prefers لذاته and ولذات in notes 3–4; and supplies sources for later thinkers and the Peripatetic account. The identity-to-possession alteration is not adopted."
+        },
+        {
+          "source": "1428 vol. 2 251 nn. 1–4",
+          "kind": "Logical and school references",
+          "summary": "References for the logical universal, Muʿtazilite fixity of nonexistents, I.2, and the Sufi positions linked to Ibn Arabi and Qunawi were read. The cited earlier works themselves were not independently collated."
+        }
+      ],
+      "englishReviewFinding": "Every stored English paragraph was compared with its Arabic and both external witnesses. The distinctions between knowledge before/after creation, detailed/comprehensive knowledge, and acquired/presential knowledge are preserved. The existing note defining comprehensive (ijmali) as undivided rather than incomplete knowledge is retained. No English body correction is justified in this pass.",
+      "decisionIDs": [
+        "N10-NEW-XII11-AR01",
+        "N10-NEW-XII11-AR02",
+        "N10-NEW-XII11-VAR01",
+        "N10-NEW-XII11-VAR02",
+        "N10-NEW-XII11-VAR03",
+        "N10-NEW-XII11-VAR04",
+        "N10-NEW-XII11-VAR05",
+        "N10-NEW-XII11-VAR06",
+        "N10-NEW-XII11-APP",
+        "N10-NEW-XII11-EN-NOCHANGE"
+      ],
+      "canonicalCollationNoteID": "N10-NEW-XII11-COLLATION",
+      "limitations": [
+        "No manuscript consulted.",
+        "Later edition read in its digital presentation, not a facsimile.",
+        "The cited earlier works and historical attributions were not independently collated.",
+        "This is a complete content comparison, not an exhaustive apparatus of punctuation and every vowel mark.",
+        "No independent human specialist certification is implied."
+      ]
+    },
+    {
+      "reviewID": "N10-NEW-REVIEW-XII12",
+      "unitID": "N-XII-12",
+      "status": "complete-full-unit-external-comparison",
+      "integrationStatus": "reviewed-plan-awaiting-parent-integration",
+      "bodyOutcome": "limited-arabic-repairs; English retained",
+      "base": {
+        "source": {
+          "edition": "Arabic transcription · Qum 1417 AH",
+          "url": "https://lib.rafed.net/view.php?b_id=1642&page=356&type=c_fbook",
+          "page": "356–360"
+        },
+        "bookSha256": "a3d57ed5f2ed991918e2c8057c4ce62f3d9e447da5cb01edd30dd1f45810afc1",
+        "arabicSha256": "4ac0e8b6ff6d3da836d7a5daaeb41bd7fea00b6a778ab3c0560ea78a5e6781d6",
+        "englishSha256": "30431beca02110853eed924a4de1c31b0bda8ddca609e522e892a48516b0e0f6",
+        "arabicCharacters": 5943,
+        "englishWords": 1482,
+        "arabicParagraphs": 24,
+        "englishParagraphs": 21,
+        "notesSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "boundaries": {
+        "earlyStart": "Qum 1404 p. 292 / canvas 296: الفصل الثاني عشر, immediately after XII.11.",
+        "earlyEnd": "p. 296 / canvas 300: الشيء ما لم يجب لم يوجد, before الفصل الثالث عشر.",
+        "lateStart": "1428 vol. 2 p. 252: الفصل الثاني عشر / في العناية والقضاء والقدر.",
+        "lateEnd": "p. 257: final maxim and the full later editorial note; XII.13 begins on p. 258."
+      },
+      "coverage": [
+        {
+          "segment": "Providence and judicial analogy for decree",
+          "early": "printed pp. 292–293",
+          "late": "vol. 2 pp. 252–253",
+          "finding": "Definition of providence, the judge’s two verdicts and the transition from conventional to real necessitation are complete. The base separator line has no authorial counterpart."
+        },
+        {
+          "segment": "Two decrees, critique of prevalent/Sadrian accounts, and Asfar quotation",
+          "early": "printed pp. 293–294",
+          "late": "vol. 2 pp. 253–254",
+          "finding": "The entire quotation and every branch of the author’s reply are present. The early print’s parenthetical volume/page citation is recorded for restoration as a note."
+        },
+        {
+          "segment": "Measure; tailor and builder; restrictions on vision",
+          "early": "printed pp. 294–295",
+          "late": "vol. 2 pp. 255–256",
+          "finding": "Both craft analogies and the complete cascade of visual conditions were read. The awkward renewed-causes clause is actually present in both witnesses; no missing change-of-plan clause is invented."
+        },
+        {
+          "segment": "Choice objection/reply and extension to quiddities",
+          "early": "printed pp. 295–296",
+          "late": "vol. 2 pp. 256",
+          "finding": "Both objections and replies are complete. Early يعمم agrees with the base; the later unfootnoted يعمّ is recorded without being mislabeled as agreement of both witnesses."
+        },
+        {
+          "segment": "Purposes of measure and decree",
+          "early": "printed pp. 296",
+          "late": "vol. 2 pp. 256–257",
+          "finding": "The conclusion through both causal/necessity maxims is complete. The long final comparative editorial note was read separately from the authorial ending."
+        }
+      ],
+      "paragraphCoverageCount": 45,
+      "paragraphCoverage": [
+        {
+          "field": "arabic",
+          "paragraph": 1,
+          "sha256": "7757dd8b4db4b5d73a68fa1e096acc60341a5a552687f945ed54cb26124ca0fa",
+          "characters": 123,
+          "start": "ذكروا أنّ من مراتب علمه (تعالى) العناية والقضاء والقدر ، لصدق كلّ منها بمفهومه الخاصّ على ",
+          "end": "لعناية والقضاء والقدر ، لصدق كلّ منها بمفهومه الخاصّ على خصوصيّة من خصوصيّات علمه (تعالى).",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 2,
+          "sha256": "645f83b5f32dae7578bdc6139252f9c1b6440993db9ae2c9406a4e3d7a8ef3d3",
+          "characters": 188,
+          "start": "أمّا العناية : وهي كون الصورة العلميّة علّةً موجبةً للمعلوم الذي هو الفعل ، فإنّ علمه التف",
+          "end": "لأشياء وهو عين ذاته علّةٌ لوجودها بماله من الخصوصيّات المعلومة ، فله (تعالى) عنايةٌ بخلقه.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 3,
+          "sha256": "c34737e67430e9613d43a39727be9d6c8938d66472c9ebb0fb48b983c31b83e8",
+          "characters": 457,
+          "start": "وأمّا القضاء : فهو بمفهومه المعروف جَعْلُ النسبةَ التي بين موضوع ومحموله ضروريّةً موجبةً ،",
+          "end": "لخصومة؛ وبالجملة قضاء القاضي إيجابه الأمرَ إيجاباً علميّاً يتبعه إيجابه الخارجيّ إعتباراً.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 4,
+          "sha256": "1601abd16e0f19d8d6de02674837ebbf73bfd227d92be8415e97055a7512114b",
+          "characters": 18,
+          "start": "__________________",
+          "end": "__________________",
+          "reviewed": true,
+          "layoutArtifact": true
+        },
+        {
+          "field": "arabic",
+          "paragraph": 5,
+          "sha256": "61209526a86814b80611ea9ea17d29ff32841250bb5f21787a8c63da516b33de",
+          "characters": 364,
+          "start": "وإذا اُخِذَ هذا المعنى حقيقيّاً بالتحليل غيرَ إعتباريّ ، إنطبق على الوجوب الذي يتلبّس به ا",
+          "end": " واجبٌ موجَب بالغير ، والعلل تنتهي إلى الواجب بالذات ، فهو العلّة الموجبة لها ولمعلولاتها.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 6,
+          "sha256": "1c464bacd7694793848e64d8a9708f90c892d9a1b35caa0bccb9c076c8c2a11e",
+          "characters": 250,
+          "start": "وإذ كانت الموجودات الممكنة بما لها من النظام الأحسن في مرتبة وجوداتها العينيّة علماً فعليّ",
+          "end": " الذاتيّ منه المنكشف له به كلُّ شيء على ما هو عليه في الأعيان على التفصيل بنحو أعلى وأشرف.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 7,
+          "sha256": "5bc19d63ed6b939f8cc280071559622455683c99a35b23921cebf66ebba8f7f8",
+          "characters": 72,
+          "start": "فالقضاء قضاءان : قضاءٌ ذاتيٌّ خارجٌ من العالم ، وقضاءٌ فعليٌّ داخلٌ فيه.",
+          "end": "فالقضاء قضاءان : قضاءٌ ذاتيٌّ خارجٌ من العالم ، وقضاءٌ فعليٌّ داخلٌ فيه.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 8,
+          "sha256": "242d39abdd5910e6f920740cbb46e9e8869c37c9555c8e273f6329c0b210885c",
+          "characters": 125,
+          "start": "ومن هنا يظهر ضَعْف ما نُسب إلى المشهور أنّ القضاء هو ما عند المفارقات العقليّة من العلم با",
+          "end": "هور أنّ القضاء هو ما عند المفارقات العقليّة من العلم بالموجودات الممكنة بما لها من النظام.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 9,
+          "sha256": "69b10093fb5d81e38891540f36c9803b583e223117e94c19ded60b994a45b7a8",
+          "characters": 509,
+          "start": "وكذا ما ذهب إليه صدر المتألّهين (رحمه الله) ، أنّ القضاء هو العلم الذاتيّ المتعلّق بتفاصيل",
+          "end": "مكانات واقعيّة. فالقضاء الربانيّ وهو صورة علْمِ الله قديمٌ بالذات باق ببقاء الله» ـ إنتهى.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 10,
+          "sha256": "ff106e5bf268fd2999b271520f684e0a4ceeb0410475e72277b4d84de6086329",
+          "characters": 214,
+          "start": "وينبغي أن يحمل قوله : «صور علميّة لازمة لذاته» على العلم الذاتيّ الذي لا ينفك عن الذات ، و",
+          "end": "العالَم ولم تكن قديمة بالذات ـ كما صرّح بذلك ـ ؛ على أنّها لو كانت حضوريّةً إنطبقت على قول",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 11,
+          "sha256": "4fb7b2194de844e1490e64895bfa629cc84bae0314d9cb71fe722b7001409558",
+          "characters": 124,
+          "start": "أفلاطون في العلم ، وهو (رحمه الله) لا يرتضيه ، ولو كانت حصوليّةً إنطبقت على قول المشّائين ",
+          "end": " لا يرتضيه ، ولو كانت حصوليّةً إنطبقت على قول المشّائين ، وهو (رحمه الله) لا يرتضيه أيضاً.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 12,
+          "sha256": "95ab91c233907e0ea6e1ed51624a3dd03bb32681394405887b436ec4c5e8b741",
+          "characters": 205,
+          "start": "ووجه الضعف في القولين أنّ صدقَ القضاء بمفهومه على إحدَي المرتبتَيْن من العلم ـ أعني العلم ",
+          "end": "لا ينفي صدقَه على الاُخرى ، فالحقّ أنّ القضاء قضاءان : ذاتيٌّ وفعليٌّ ـ كما تقدّم بيانه ـ.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 13,
+          "sha256": "4118911c350e328166de12de22bf9e430c6c9537de3f5edeaf491a1ef31e1a70",
+          "characters": 554,
+          "start": "وأمّا القَدَر : فهو ما يلحق الشيء من كميّة أو حدّ في صفاته وآثاره. والتقدير تعيين ما يلحقه",
+          "end": "سبة إلى الشيء المقدَّر كالقالب الذي يقلب به الشيء فيحدّ به الشيء بحدّ أو حدود لا يتعدّاها.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 14,
+          "sha256": "fa2c515f0ff5e1e22092aa3ba8250f437ad50c867e87151bcce176541327e1b8",
+          "characters": 763,
+          "start": "وإذا اُخذ هذا المعنى بالتحليل حقيقيّاً إنطبق على الحدود التي تلحق الموجودات المادّيّة من ن",
+          "end": " ولا في كلّ مكان ولا في كلّ زمان؛ فلئن أحصيتَ الشرائط الحافّة حولَ رؤية واحدة شخصيّة ألفيت",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 15,
+          "sha256": "e144d839fc71fe34c34ab46714498eb0e2a7c8d59490f4ba3329828bb88ab058",
+          "characters": 159,
+          "start": "جمّاً غفيراً لا يحيط به الإحصاء ، وما هي إلاّ حدودٌ ألحقها بها العللُ الناقصة التي تحدّ ال",
+          "end": " الناقصة التي تحدّ الرؤيةَ المذكورة بما تضع فيها من أثر ومنها ما يمنعه الموانع من التأثير.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 16,
+          "sha256": "9635a32b4bbaaefc7a0743537feaa3a2c4e4762bce5f76d2cf5efa6d4ec33c1c",
+          "characters": 208,
+          "start": "وهذه الحدود جهاتٌ وجوديّةٌ تلازِمُها سلوبٌ كما تبيّن أنفاً ، ولها صور علميّة في نشأة المثا",
+          "end": "دّر بها صفات الأشياء وآثارها ، فلا سبيل لشيء منها إلاّ إلى صفة أو أثر ، هداه إليه التقدير.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 17,
+          "sha256": "e99ce02f822af8e526b69f04d6193bac04ec10179825f0a1895ef5855044ac88",
+          "characters": 68,
+          "start": "فإن قلت : لازِمُ هذا البيان كون الإنسان مجبَراً غير مختار في أفعاله.",
+          "end": "فإن قلت : لازِمُ هذا البيان كون الإنسان مجبَراً غير مختار في أفعاله.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 18,
+          "sha256": "4a8fc7d795c9f7c4ccbf03c7f9f0b5c41a444cbbbe62176a6b56526385a72c1c",
+          "characters": 143,
+          "start": "قلت : كلاّ ، فإنّ الإختيار أحد الشرائط التي يحدّبها فعل الإنسان. وقد فصّلنا القول في دفع ه",
+          "end": "عل الإنسان. وقد فصّلنا القول في دفع هذه الشبهة في مباحث الوجود وفي مباحث العلّة والمعلول .",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 19,
+          "sha256": "4d39eebf8c3e18ccd46a121d518c181d58ef2a1ad938a3f186fd21ed56986cd7",
+          "characters": 443,
+          "start": "فإن قلت : هلاّ عمّمتم القول في القدر ، وهو ضَرْبُ الحدود للشيء من حيث صفاته وآثاره في علْم",
+          "end": "أو مثالا معلّقاً أو طبيعة مادّيّة ، ويكون العلم السابق الذي يتقدّر به الشيء علماً ذاتيّاً.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 20,
+          "sha256": "6612c3d31867187e7ec9c5577c99ef2dc077727ec5fa14dfb83ea636788c158d",
+          "characters": 270,
+          "start": "وبالجملة يكون القَدَر بحسب العين هو التعيّن المنتزع من الوجود العينيّ والتقدير هو التعيين ",
+          "end": "و الإيجاب العلميّ الذي يستتبعه ، سواء كان من حيث الماهيّة والذات أو من حيث الصفات والآثار.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 21,
+          "sha256": "e456aaa51de1e523cebcbe963fa1d820794b28c6034d3578ef5fabb2a13b15c8",
+          "characters": 228,
+          "start": "قلت : كون الماهيّة حدّاً ذاتيّاً للممكن لا ريب فيه ، لكنّهم راعوا في بحث القَدَرِ ظاهرَ مف",
+          "end": "ه من الصفات والآثار دون أصل الذات ، فلا يعمّ ما وراء الطبائع التي لها تعلّقٌ مّا بالمادّة.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 22,
+          "sha256": "1c9a0a472041bde0fd1193eb252abf91200d2d8c27344808ad5a188637b95058",
+          "characters": 67,
+          "start": "وغرضهم من عقد هذا البحث بيان أنّ الممكن ليس مُرخَى العنان فيما يلحق",
+          "end": "وغرضهم من عقد هذا البحث بيان أنّ الممكن ليس مُرخَى العنان فيما يلحق",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 23,
+          "sha256": "d51aff5e2c79d1469fbf49195876ae0a091e94fb14695d793ea808d74c66101c",
+          "characters": 190,
+          "start": "به من الصفات والآثار مستقلاّ عن الواجب (تعالى) فيما يتّصف به أو يفعل ، بل الأمر في ذلك إلي",
+          "end": "، فلا يقع إلاّ ما قدّره. وهذا قريب المعنى من قولهم : «علّةُ علّةِ الشيء علّةٌ لذلك الشيء».",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 24,
+          "sha256": "9b8acc6df8d9063b6dee68365fc035c1fb973966abc5813d09d512cb59664bcc",
+          "characters": 155,
+          "start": "كما أنّ غرضهم من بحث القضاء بيان أنّ الممكن لا يقع إلاّ بوجوب غيريّ ينتهي إليه (تعالى) في ",
+          "end": "يّ ينتهي إليه (تعالى) في علْم سابق ، وهو قريب المعنى من قولهم : «الشيء ما لم يجب لم يوجد».",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 1,
+          "sha256": "d29a7af99a6bdf19a8c11c78ec65872098ff801cf58f475493fd11353021e271",
+          "characters": 197,
+          "start": "They have mentioned providence, decree, and measure among the degrees of His knowledge—exa",
+          "end": "e each, through its own specific concept, applies to a particular aspect of His knowledge.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 2,
+          "sha256": "606868b80f28ecda991d11c6bcf9db76b35647adbed18c0e8473df1c83562022",
+          "characters": 320,
+          "start": "As for providence, it consists in the cognitive form’s being a necessitating cause of the ",
+          "end": "icular characteristics. He—exalted is He—therefore exercises providence over His creation.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 3,
+          "sha256": "67410c440b279f19fa05e929795ec139fa7f3d0fccfbceb9fd3cbfc9c3322bea",
+          "characters": 679,
+          "start": "As for decree, in its familiar meaning it is to make the relation between a subject and it",
+          "end": "ecessary in knowledge, followed by making it externally necessary in a conventional sense.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 4,
+          "sha256": "9bb4dc7b16a91ae7d03af69822594d4b8085324de13b7e4da26283bedfb50d2e",
+          "characters": 552,
+          "start": "When this meaning is taken through analysis as real rather than conventional, it applies t",
+          "end": " intrinsically Necessary, who is therefore the cause necessitating them and their effects.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 5,
+          "sha256": "8e3dced98766a2ad49ca0d85c2c0c63b640836939358aa79103286442e51fb18",
+          "characters": 362,
+          "start": "Since contingent existents, with their best order at the degree of their concrete existenc",
+          "end": "is disclosed to Him in detail as it is in concrete reality, in a higher and nobler manner.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 6,
+          "sha256": "730855da3fa8e17d0d51c972d5379cf50d97723a60f327390304b23b86416d2d",
+          "characters": 100,
+          "start": "Decree is therefore of two kinds: essential decree, outside the world, and active decree, ",
+          "end": "therefore of two kinds: essential decree, outside the world, and active decree, within it.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 7,
+          "sha256": "15418886baf33994dc49f3580c319e60a293887ae4f01a33688b26a699ca32d0",
+          "characters": 175,
+          "start": "This shows the weakness of what is attributed to the prevalent view: that decree is the kn",
+          "end": "he knowledge of contingent existents and their order possessed by the separate intellects.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 8,
+          "sha256": "64d2bfc90b2194538afb44f79ccb4563952d79bd51e9cb7f9d0e3e77cd4a5981",
+          "characters": 167,
+          "start": "The same applies to Ṣadr al-Mutaʾallihīn’s—may God have mercy on him—view that decree is e",
+          "end": "t decree is essential knowledge relating to the details of creation. He says in the Asfār:",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 9,
+          "sha256": "a255179c9966437d68cb2677dedc1755d0d139fa1a5ab420e11d3efd5efc59e6",
+          "characters": 676,
+          "start": "“As for decree, according to them it means the existence of the intellectual forms of all ",
+          "end": "is therefore intrinsically eternal and endures through God’s endurance.” End of quotation.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 10,
+          "sha256": "dc8d869a469164655d9e2fd281ab6e9bf97dc24badd64037f8c38e223c4ca780",
+          "characters": 544,
+          "start": "His expression “cognitive forms necessarily accompanying His essence” should be understood",
+          "end": "ired forms, it would coincide with the Peripatetic account, which he also does not accept.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 11,
+          "sha256": "7869e39026113c0c4c309a952e39b39375ca81292ba6a5facc612e31b835542b",
+          "characters": 301,
+          "start": "The weakness of both positions is that the applicability of the concept of decree to one o",
+          "end": " truth is therefore that decree is of two kinds, essential and active, as explained above.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 12,
+          "sha256": "d0a79467670f689b8f2da206bb2f7556a724441846cc7c900673e476cca450a2",
+          "characters": 837,
+          "start": "As for measure, it is the quantity or limit attaching to a thing in its attributes and eff",
+          "end": "mold in which a thing is cast, delimiting it by a limit or limits that it does not exceed.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 13,
+          "sha256": "7cdb0626181a203f4498ced68fb9d2d19214be8b432d58f130f0d4f4c656eb79",
+          "characters": 1398,
+          "start": "When this meaning is taken as real through analysis, it applies to the limits attaching to",
+          "end": "place in it. Some of these causes are prevented by impediments from exerting their effect.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 14,
+          "sha256": "f22842ab3da74e76d2033796930027a23b12a455d74794c0c1e1366c361d37d3",
+          "characters": 336,
+          "start": "These limits are existential aspects accompanied by negations, as was just explained. They",
+          "end": " has access to any attribute or effect except that to which determination has directed it.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 15,
+          "sha256": "8d94c61e38be979f046083b42639086568663f3a3ead5d7dfbec93c4904c5180",
+          "characters": 95,
+          "start": "You may object: this account entails that the human is compelled and has no choice in his ",
+          "end": "ay object: this account entails that the human is compelled and has no choice in his acts.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 16,
+          "sha256": "d8c2d30edebb8b2961e47e3f895f7c42906ed01ff15a1824069e4b026a58e524",
+          "characters": 208,
+          "start": "I reply: not at all. Choice is one of the conditions through which the human act is delimi",
+          "end": "efutation of this doubt in detail in the discussions of existence and of cause and effect.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 17,
+          "sha256": "2034b26911acb892349c09201813e93fc8e08f054a561c3cb2f6bba223d00056",
+          "characters": 781,
+          "start": "You may object: why not generalize the account of measure, which is the imposition of limi",
+          "end": "nd the prior knowledge through which the thing is determined would be essential knowledge.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 18,
+          "sha256": "5378767b3e6f029bf7dc715e40659ab6f232118c00e073262aaba66facffc7e6",
+          "characters": 402,
+          "start": "In brief, measure in concrete reality would be the determination abstracted from concrete ",
+          "end": "hat entails it, whether with respect to quiddity and essence or to attributes and effects.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 19,
+          "sha256": "e556eefd2e17b3ad3a0191ddadf5a76e2952adbdf5058955278f70dda02c280d",
+          "characters": 390,
+          "start": "I reply: there is no doubt that quiddity is an intrinsic limit of the contingent. In discu",
+          "end": "therefore does not encompass what lies beyond natures that have some attachment to matter.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 20,
+          "sha256": "459bc2ba105b533857a1564df21c926d5fc14de6c7ff53de926a0f538892fd46",
+          "characters": 418,
+          "start": "Their purpose in undertaking this discussion is to show that the contingent is not left un",
+          "end": "close in meaning to their saying, “The cause of a thing’s cause is a cause of that thing.”",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 21,
+          "sha256": "5dd58706509cdb6a3d71e6095ad1ea4f2f641fc58c4b4295ad670772501dcb63",
+          "characters": 267,
+          "start": "Likewise, their purpose in discussing decree is to show that the contingent occurs only th",
+          "end": "is is close in meaning to their saying, “A thing does not exist until it is necessitated.”",
+          "reviewed": true,
+          "layoutArtifact": false
+        }
+      ],
+      "witnesses": [
+        {
+          "edition": "Qum 1404, Princeton / Arabic Collections Online, early printed facsimile",
+          "notManuscript": true,
+          "manifest": "https://sites.dlib.nyu.edu/viewer/api/presentation/books/princeton_aco000637/manifest.json",
+          "pdfLocalPath": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "pdfSha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "printedPages": [
+            292,
+            293,
+            294,
+            295,
+            296
+          ],
+          "images": [
+            {
+              "canvas": 296,
+              "printedPage": 292,
+              "viewerUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/296",
+              "localRender": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/scans/canvas-296.png",
+              "renderSha256": "51e40c9bbe0e5362db6a0d3c9edec1dc2f62b48438487177e17b4c21c1f76707",
+              "renderMethod": "Archived PyMuPDF rendering of the early PDF at width 1600 pixels.",
+              "actuallyVisuallyRead": true
+            },
+            {
+              "canvas": 297,
+              "printedPage": 293,
+              "viewerUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/297",
+              "localRender": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/scans/canvas-297.png",
+              "renderSha256": "be029f33133bff3d457e331c2345b3752ff4ed90e1e59867123b89c7f76d9ab0",
+              "renderMethod": "Archived PyMuPDF rendering of the early PDF at width 1600 pixels.",
+              "actuallyVisuallyRead": true
+            },
+            {
+              "canvas": 298,
+              "printedPage": 294,
+              "viewerUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/298",
+              "localRender": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/scans/canvas-298.png",
+              "renderSha256": "175fa53961af7724b2cfe1746a6abd2eabeabe7f80e41ebe4a52d2f4af04f371",
+              "renderMethod": "Archived PyMuPDF rendering of the early PDF at width 1600 pixels.",
+              "actuallyVisuallyRead": true
+            },
+            {
+              "canvas": 299,
+              "printedPage": 295,
+              "viewerUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/299",
+              "localRender": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/scans/canvas-299.png",
+              "renderSha256": "efcc87c835ef3b8d85231ad8859169fe48ede26289ce4517452cae50a9d9f594",
+              "renderMethod": "Archived PyMuPDF rendering of the early PDF at width 1600 pixels.",
+              "actuallyVisuallyRead": true
+            },
+            {
+              "canvas": 300,
+              "printedPage": 296,
+              "viewerUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/300",
+              "localRender": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/scans/canvas-300.png",
+              "renderSha256": "4d7900c7608d424e759e982e6421875cd76c3be6c3549d0798e3b21d8698cc76",
+              "renderMethod": "Archived PyMuPDF rendering of the early PDF at width 1600 pixels.",
+              "actuallyVisuallyRead": true
+            }
+          ]
+        },
+        {
+          "edition": "1428 fourth edited edition, Abbas Ali al-Zarii al-Sabzawari, vol. 2, Rafed digital presentation",
+          "notFacsimile": true,
+          "notManuscript": true,
+          "pages": [
+            {
+              "page": 252,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=252&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-241.html",
+              "htmlSha256": "ee8e4bfe64d107c8fb1c52fb16db1e184c416c3d14bf6f2b9e4645b64612d20b",
+              "pageTextSha256": "ffd6e444e2ad1211a595c3dc5d54029844859b1753a963f019699b8cff06b10c",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 7
+            },
+            {
+              "page": 253,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=253&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-241.html",
+              "htmlSha256": "ee8e4bfe64d107c8fb1c52fb16db1e184c416c3d14bf6f2b9e4645b64612d20b",
+              "pageTextSha256": "6f56c273a7e4819565fa87d8b58be3e90c08b725cd9aed01671b1d7161727a07",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 6
+            },
+            {
+              "page": 254,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=254&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-241.html",
+              "htmlSha256": "ee8e4bfe64d107c8fb1c52fb16db1e184c416c3d14bf6f2b9e4645b64612d20b",
+              "pageTextSha256": "320a0cae6a9616c3c7e4c52b5a251cdf6bd09273e095d93f067c91553deecc56",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 4
+            },
+            {
+              "page": 255,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=255&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-241.html",
+              "htmlSha256": "ee8e4bfe64d107c8fb1c52fb16db1e184c416c3d14bf6f2b9e4645b64612d20b",
+              "pageTextSha256": "a62ed18695b96df15f28fd052f993090b18d92622bde31c0f63bc7c7af694b3c",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 3
+            },
+            {
+              "page": 256,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=256&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-241.html",
+              "htmlSha256": "ee8e4bfe64d107c8fb1c52fb16db1e184c416c3d14bf6f2b9e4645b64612d20b",
+              "pageTextSha256": "d30a25599dff2a190204c027aae8391e398901f0569ae876332b3191536e202e",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 5
+            },
+            {
+              "page": 257,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=257&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-241.html",
+              "htmlSha256": "ee8e4bfe64d107c8fb1c52fb16db1e184c416c3d14bf6f2b9e4645b64612d20b",
+              "pageTextSha256": "4969067add78b5c45f7a3b26e505b96968074cc213b313259c781a3a62df4934",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 7
+            }
+          ],
+          "actualReadScope": "Every authorial paragraph within the chapter boundaries and every associated editorial note, including continuation across pages."
+        }
+      ],
+      "variants": [
+        {
+          "decisionID": "N10-NEW-XII12-VAR01",
+          "base": "بماله من الخصوصيّات المعلومة",
+          "early": "بماله من الخصوصيّات المعلومة",
+          "later": "بما لها من الخصوصيّات المعلومة",
+          "disposition": "apparatus-only",
+          "sourceGrade": "L1",
+          "evidence": "1404 p. 293 / canvas 297; 1428 p. 253 n. 1",
+          "judgment": "The later editor prefers a feminine reference to things. The earlier masculine can refer to their existence. Only word spacing is normalized by AR02; the pronoun is retained."
+        },
+        {
+          "decisionID": "N10-NEW-XII12-VAR02",
+          "base": "نسبتها إلى عللها التامّة",
+          "early": "نسبتها إلى عللها التامّة",
+          "later": "نسبتها إلى علّتها التامّة",
+          "disposition": "apparatus-only",
+          "sourceGrade": "L1",
+          "evidence": "1404 p. 293 / canvas 297; 1428 p. 253 n. 2",
+          "judgment": "The distributive plural of complete causes is coherent for plural contingent existents. Retain it rather than impose the later singular."
+        },
+        {
+          "decisionID": "N10-NEW-XII12-VAR03",
+          "base": "الكثيف من الأجسام ذا اللون",
+          "early": "الكثيف من الأجسام ذا اللون",
+          "later": "الكثيف من الأجسام ذي اللون",
+          "disposition": "apparatus-only",
+          "sourceGrade": "L1",
+          "evidence": "1404 p. 295 / canvas 299; 1428 p. 255 n. 2",
+          "judgment": "The accusative ذا may qualify الكثيف as the object of seeing. The later genitive is an explicit editorial preference, not compelled by the earlier syntax."
+        },
+        {
+          "decisionID": "N10-NEW-XII12-VAR04",
+          "base": "حدودٌ ألحقها بها العللُ الناقصة",
+          "early": "حدودٌ ألحقها بها العللُ الناقصة",
+          "later": "حدودٌ ألحقتها بها العللُ الناقصة",
+          "disposition": "apparatus-only",
+          "sourceGrade": "L1",
+          "evidence": "1404 p. 295 / canvas 299; 1428 p. 255 n. 3",
+          "judgment": "The postponed nonhuman broken-plural subject permits the earlier masculine verb. Retain the earlier form while recording the later agreement choice."
+        },
+        {
+          "decisionID": "N10-NEW-XII12-VAR05",
+          "base": "حتّى يعمّم الماهيّات الإمكانيّة",
+          "early": "حتى يعمم الماهيات الامكانية",
+          "later": "حتّى يعمّ الماهيّات الإمكانيّة",
+          "disposition": "apparatus-only",
+          "sourceGrade": "L2",
+          "evidence": "1404 p. 295 / canvas 299, checked again with magnification; 1428 p. 256",
+          "judgment": "Early print really reads يعمم, agreeing with the base. The later unfootnoted يعمّ is smoother for encompasses, but cannot be presented as a reading agreed by both witnesses. Preserve the early form and disclose the contextual English rendering."
+        }
+      ],
+      "laterEditorialCommentary": [
+        {
+          "source": "1428 vol. 2 252 n. 1",
+          "kind": "General sources",
+          "summary": "References to Isharat, Asfar and Manzuma on the divisions of divine knowledge were read as references, not as independently collated witnesses."
+        },
+        {
+          "source": "1428 vol. 2 252 n. 2",
+          "kind": "Different schemes of divine knowledge",
+          "summary": "The editor reports Sadra’s five degrees—providence, pen, tablet, decree and measure—and Sabzawari’s additional register of being. This taxonomy is later commentary."
+        },
+        {
+          "source": "1428 vol. 2 252 n. 3 continued through 253",
+          "kind": "Survey of providence and separate authorial gloss",
+          "summary": "The full discussion of views on providence and definitions associated with Suhrawardi, Avicenna, Sadra, Sabzawari and Qunawi was read. It includes an attributed quotation of Tabatabai’s separate Asfar 6:291 gloss deriving providence from the goal and the divine essence. That quotation is not an original note of this Nihaya chapter."
+        },
+        {
+          "source": "1428 vol. 2 253 nn. 1–3",
+          "kind": "Pronoun/number preferences and causal objection",
+          "summary": "The later editor prefers بما لها to بماله and علّتها التامة to عللها التامة. The earlier readings admit, respectively, reference to existence and distributive plural causes. The editor’s stronger claim about God alone being truly a cause is kept distinct from the author’s series of subordinate causes."
+        },
+        {
+          "source": "1428 vol. 2 254 nn. 1–5",
+          "kind": "Source citation and referents",
+          "summary": "The cited source of the prevalent decree account, the Asfar 6:291–292 quotation reference, two Sadra referent glosses and the two accounts under discussion were read."
+        },
+        {
+          "source": "1428 vol. 2 255 nn. 1–3",
+          "kind": "Lexical gloss and grammatical preferences",
+          "summary": "Qaʿa is glossed as a courtyard or tract of land. The editor explicitly changes ذا اللون to ذي اللون and ألحقها to ألحقتها. The earlier accusative can qualify the object of seeing, and the delayed nonhuman plural subject permits the earlier masculine verb; both earlier readings are retained."
+        },
+        {
+          "source": "1428 vol. 2 256 nn. 1–5",
+          "kind": "Internal cross-references",
+          "summary": "All references for limits, freedom of choice, contingency and negative composition were read: XII.4, IV.5, VIII.3, IV.1 and XII.4."
+        },
+        {
+          "source": "1428 vol. 2 257 n. 1, complete",
+          "kind": "Comparative decree/measure discussion",
+          "summary": "The full note compares Damad’s Qabasat 418 account of the world as whole/articulated and Sabzawari’s universal intellect versus planetary soul forms. It then presents three differences inferred from the author and his Asfar 6:292 gloss: decree through complete cause versus measure through partial causes; measure concerning material things versus decree also including immaterial things; and unchanging decree versus measure that can change or fail. These are the later editor’s comparative claims, not additions to the authorial conclusion."
+        }
+      ],
+      "englishReviewFinding": "All stored English was compared with the full Arabic and witnesses, including the complete Asfar quotation, both craft analogies, the conditions of vision, the choice objection and the extension to quiddities. The builder passage remains awkward in both witnesses; the English follows that text without inventing a missing revision of the plan. The reading encompasses for يعمّم is a contextual rendering; the later witness’s يعمّ is recorded, not silently back-projected. No English body change is adopted.",
+      "decisionIDs": [
+        "N10-NEW-XII12-AR01",
+        "N10-NEW-XII12-AR02",
+        "N10-NEW-XII12-AR03",
+        "N10-NEW-XII12-AR04",
+        "N10-NEW-XII12-AR05",
+        "N10-NEW-XII12-VAR01",
+        "N10-NEW-XII12-VAR02",
+        "N10-NEW-XII12-VAR03",
+        "N10-NEW-XII12-VAR04",
+        "N10-NEW-XII12-VAR05",
+        "N10-NEW-XII12-REFERENCE01",
+        "N10-NEW-XII12-APP",
+        "N10-NEW-XII12-EN-NOCHANGE"
+      ],
+      "canonicalCollationNoteID": "N10-NEW-XII12-COLLATION",
+      "limitations": [
+        "No manuscript consulted.",
+        "Later edition read in its digital presentation, not a facsimile.",
+        "The cited earlier works and historical attributions were not independently collated.",
+        "This is a complete content comparison, not an exhaustive apparatus of punctuation and every vowel mark.",
+        "No independent human specialist certification is implied."
+      ],
+      "unresolvedCruxes": [
+        {
+          "locus": "Builder analogy, early p. 294; later p. 255",
+          "finding": "Both witnesses contain the same awkward renewed-causes clause. No extra clause is supplied.",
+          "status": "transmitted text retained with an explanatory apparatus note"
+        }
+      ],
+      "magnifiedCheck": {
+        "sourceImage": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/scans/canvas-299.png",
+        "crop": "/workspace/scratch/bfa9477bedba/stage10-work/inspection-xii12-yamm.png",
+        "cropSha256": "ed83b87c75ef41eb6316727536d82f8ef4a220b89b210aa96bf6148edba53a9e",
+        "cropRectangle": [
+          320,
+          1540,
+          1350,
+          1740
+        ],
+        "finding": "The early print reads يعمم, not يعمّ. This corrects the provisional unzoomed reading; the plan retains the early form."
+      }
+    },
+    {
+      "reviewID": "N10-NEW-REVIEW-XII13",
+      "unitID": "N-XII-13",
+      "status": "complete-full-unit-external-comparison",
+      "integrationStatus": "reviewed-plan-awaiting-parent-integration",
+      "bodyOutcome": "limited-arabic-repairs; English retained",
+      "base": {
+        "source": {
+          "edition": "Arabic transcription · Qum 1417 AH",
+          "url": "https://lib.rafed.net/view.php?b_id=1642&page=360&type=c_fbook",
+          "page": "360–364"
+        },
+        "bookSha256": "a3d57ed5f2ed991918e2c8057c4ce62f3d9e447da5cb01edd30dd1f45810afc1",
+        "arabicSha256": "dab1d2b2c43f13fb7ed9890bcd4e35087e458fa516d7fecbc8bec8132cae98ad",
+        "englishSha256": "1139d62b60569c16f4d9a4f490593cbfe8b8e1dc8859b7cf9ae51c7a2e66a9a5",
+        "arabicCharacters": 6120,
+        "englishWords": 1595,
+        "arabicParagraphs": 20,
+        "englishParagraphs": 16,
+        "notesSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "boundaries": {
+        "earlyStart": "Qum 1404 p. 296 / canvas 300: الفصل الثالث عشر / في قدرته تعالى.",
+        "earlyEnd": "p. 300 / canvas 304: إنه يريد كذا فعلاً, before الفصل الرابع عشر.",
+        "lateStart": "1428 vol. 2 p. 258: الفصل الثالث عشر / في قدرته تعالى.",
+        "lateEnd": "p. 264: final complete-cause example and notes; XII.14 begins on p. 265."
+      },
+      "coverage": [
+        {
+          "segment": "Definition of power and exclusion of compulsion",
+          "early": "printed pp. 296–297",
+          "late": "vol. 2 pp. 258",
+          "finding": "Every restriction—activity rather than passivity, knowledge, knowledge as motive, the act as the agent’s good, and freedom from external compulsion—is present. Early الشعور corrects the shared base/later digital الشهور typo."
+        },
+        {
+          "segment": "Human desire/will and purification of divine power",
+          "early": "printed pp. 297–298",
+          "late": "vol. 2 pp. 259–261",
+          "finding": "The sequence of cognition, desire, will and muscular action and the exclusion of lack, contingency and change from God are complete. The later editor’s extended Asfar gloss was read separately."
+        },
+        {
+          "segment": "First objection: will as a constitutive essential attribute",
+          "early": "printed pp. 298",
+          "late": "vol. 2 pp. 261",
+          "finding": "The conditional definition and the author’s reply that an asserted identification with knowledge is only naming are complete."
+        },
+        {
+          "segment": "Second objection and reply: multiple modes of knowing and willing",
+          "early": "printed pp. 298–299",
+          "late": "vol. 2 pp. 262–263",
+          "finding": "The objector’s examples and syllogism, the author’s limited concession about animal agency, and the non-assimilation of will to the generic concept of knowledge are preserved."
+        },
+        {
+          "segment": "Third objection, mercy analogy, and final action-level derivation of will",
+          "early": "printed pp. 299–300",
+          "late": "vol. 2 pp. 263–264",
+          "finding": "The entire expanded-use reply, divine-mercy analogy, and both ways of abstracting will from action were compared through the last sentence. Later agreement corrections are attributed; the English interprets the relevant pronoun as referring to attributes."
+        }
+      ],
+      "paragraphCoverageCount": 36,
+      "paragraphCoverage": [
+        {
+          "field": "arabic",
+          "paragraph": 1,
+          "sha256": "369338b7001dceb4a1f3decbab8ca7f11f1b24c8dff4fbd6730c654d6bc6f3b5",
+          "characters": 574,
+          "start": "إنّ من المعاني التي نعدّها من الكمالات الوجوديّة القدرة ، ولا تكون إلاّ في الفعل دون الإنف",
+          "end": "نّه خيرٌ له من حيث إنّه هذا الفاعل بأن يتصوّره ويصدّق أنّه خيرٌ له من حيث إنّه هذا الفاعل.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 2,
+          "sha256": "143df6a5b85235d22218a8203f558ae6264b49fb55d63775eb5ecbd8c77ceda6",
+          "characters": 363,
+          "start": "ولازِمُ العلم بكون الفعل خيراً للفاعل أن يكون كمالا له يقتضيه بنفسه ، فإنّ خيرَ كلِّ نوع ه",
+          "end": "الإجبار ، والقادر مختارٌ ـ بمعنى أنّ الفعل إنّما يتعيّن له بتعيين منه لا بتعيين من غيره ـ.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 3,
+          "sha256": "ca23a9e80ce5d5ff953ec2668feab9f5dceb0034e9035cd31113ed0133ef98e3",
+          "characters": 234,
+          "start": "ثمّ إذا تمّ العلم بكون الفعل خيراً أعقب ذلك شوقاً من الفاعل إلى الفعل ، فالخير محبوبٌ مطلق",
+          "end": "ر العلم السابق قطعاً ، وأعقب ذلك الإرادة ، وهي كيفيّة نفسانيّة غير العلم السابق وغير الشوق",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 4,
+          "sha256": "250a61b7f4f35cc25928c1c9e05af875b7ef003bc37ffb2c7d891fec295b78d4",
+          "characters": 89,
+          "start": "قطعاً ، وبتحقّقها يتحقّق الفعل الذي هو تحريك العضلات بواسطة القوّة العاملة المنبثّة فيها.",
+          "end": "قطعاً ، وبتحقّقها يتحقّق الفعل الذي هو تحريك العضلات بواسطة القوّة العاملة المنبثّة فيها.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 5,
+          "sha256": "284ad991a5bf6682c84743f6c4003e347ff86203b25428e8c25ea220669a1a00",
+          "characters": 418,
+          "start": "هذا ما يكشف البحث عن القدرة التي عندنا من القيود التي فيها ، وهي المبدئيّة للفعل والعلم بأ",
+          "end": " كيفيّةً نفسانيّةً تلازم الفقدَ ، والفقد يلازم النقصَ ، وهو (تعالى) منزّه عن كلّ نقص وعدم.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 6,
+          "sha256": "119f0cada7224008e1d2fb8a2f120772da10f0c43439f4cd520be8a729a42685",
+          "characters": 290,
+          "start": "وكذلك الإرادة التي هي كيفيّة نفسانيّة غير العلم والشوق ، فإنّها ماهيّة ممكنة ، والواجب (تع",
+          "end": "ا توجد قبله ولا تبقى بعده ، فاتّصاف الواجب (تعالى) بها مستلزم لتغيُّرِ الموصوف ، وهو محال.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 7,
+          "sha256": "562a0bf83b0d253e34622dac15bed09c015552423c5dc3b49abc1cd80a189e9b",
+          "characters": 342,
+          "start": "فتحصّل أنّ القدرة المجردّة عن النواقص والأعدام هي كون الشيء مبدأً فاعليّاً للفعل عن علْم ب",
+          "end": "ه يؤثّر فيه ، فهو (تعالى) قادر بذاته. وما أوردناه من البيان يجري في العقول المجرّدة أيضاً.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 8,
+          "sha256": "8e62415ffed92649b4a381683d3996481f52604129765998c6c4109774fc883c",
+          "characters": 294,
+          "start": "فإن قلت : ما سلكتموه من الطريق لإثبات القدرة للواجب (تعالى) خِلْوٌ عن إثبات الإرادة بما هي",
+          "end": "ادة صفةً ذاتيّة للواجب مقوّمةً للقدرة ، غير أنّهم فسّروا الإرادة الواجبيّة بـ «أنّها علْمٌ",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 9,
+          "sha256": "053d20e71ff4e54ecd411176cc5ed52c4618189326d11288f20fb87708110047",
+          "characters": 17,
+          "start": "بالنظام الأصلح» .",
+          "end": "بالنظام الأصلح» .",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 10,
+          "sha256": "454b4152a7789e43de2298b130cf1d954993c4fedc630d4deb3f52c37568f950",
+          "characters": 263,
+          "start": "قلت : ما ذكروه في معنى القدرة يرجع إلى ما أوردناه في معناها المتضمّن للقيود الثلاثة : المب",
+          "end": "ن في أخْذِهم علْمَه (تعالى) مصداقاً للإرادة ، ولا سبيلَ إلى اثبات ذلك ، فهو أشبه بالتسمية.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 11,
+          "sha256": "8f826c01760d6f753f89fb6ccba23fa552a947cb8b936e24b3b7c2e4fe19b91c",
+          "characters": 359,
+          "start": "فإن قلت : من الجائز أن يكون لوجود واحد مّا بحسب نشأته المختلفة ماهيّاتٌ مختلفةٌ ومراتبُ مت",
+          "end": "ت ، فكون الإرادة التي فينا كيفاً نفسانيّاً لا يدفع كون إرادة الواجب لفعله هو علمه الذاتيّ.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 12,
+          "sha256": "629ab1788706c71a1b903d7a94aa69badbd26cec89d5d8311ddc9aff7f61e4ff",
+          "characters": 309,
+          "start": "ثمّ إنّ من المسلّم أنّ الفاعل المختار لا يفعل ما يفعل إلاّ بإرادة ومشيّة ، والواجب (تعالى)",
+          "end": "لإختيار ، فعلمه (تعالى) هو إرادته ، فهو (تعالى) مريد بما أنّه عالم بعلمه الذي هو عين ذاته.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 13,
+          "sha256": "6400ecd9e92ba0286b74e21c517d7cb5ff37e3293f39517cab4259f642672ad0",
+          "characters": 409,
+          "start": "قلت : الذي نتسلّمه أنّ الفاعل المختار من الحيوان لا يفعل ما يفعل إلاّ عن علم بمصلحة الفعل ",
+          "end": "مقام الفعل كسائر الصفات الفعليّة ، كما تقدّمت الإشارة إليه في البحث عن صفات الفعل وسيجيء .",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 14,
+          "sha256": "3533c3016d932ddcdbfda56f2946179b392bfb3131cb4ce08979e7946bc5b7a1",
+          "characters": 69,
+          "start": "وبالجملة لا دليل على صدق مفهوم الإرادة على علم الواجب (تعالى) بالنظام",
+          "end": "وبالجملة لا دليل على صدق مفهوم الإرادة على علم الواجب (تعالى) بالنظام",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 15,
+          "sha256": "c00cbf834536d7a25e4d8df5f3c5197f4b3028cfc64f4f08df414ab2d6f4ba93",
+          "characters": 259,
+          "start": "الأصلح ، فإنّ المراد بمفهومها إمّا هو الذي عندنا فهو كيفيّة نفسانيّة مغايرة للعلم ، وإمّا ",
+          "end": "، ولذا قدّمنا أنّ القول بأنّ علم الواجب (تعالى) بالنظام الأحسن إرادةٌ منه ، أشبه بالتسمية.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 16,
+          "sha256": "4b7bd060ef85e414166c5dec30a88b4c2403750f708b9457d1e6ef75820f992e",
+          "characters": 469,
+          "start": "ولا ينبغي أن يقاس الإرادة بالعلم الذي يقال إنّه كيفيّة نفسانيّة ثمّ يجرّد عن الماهيّة ويجع",
+          "end": "مقولة منتزعٌ عن الوجود بما هو وجود ، فللعلم معنى جامع يهدي إليه التحليل وهو حضور شيء لشيء.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 17,
+          "sha256": "003485abad167485e1523f8de942260bf5d18956a7a0b62d76aac69c8a6a9c26",
+          "characters": 224,
+          "start": "فإن قلت : لو كانت الإرادة لا يعرف لها معنى إلاّ الكيفيّة النفسانيّة التي في الحيوان ، فما ",
+          "end": "ة هناك؟ فهو الشاهد على أنّ لها معنى أوسع من الكيفيّة النفسانيّة وأنّها صفة وجوديّة كالعلم.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 18,
+          "sha256": "2d051a75d1e4f18ed2118849d1384039bb2b4babacf8f0e1d0ba0944f7f26eb8",
+          "characters": 460,
+          "start": "قلت : اللفظ كما يطلق ويراد به معناه الحقيقيّ كذلك يطلق ويراد به لوازم المعنى الحقيقيّ وآثا",
+          "end": "م المعنى الحقيقيّ وآثاره المتفرّعة عليه توسّعاً؛ فالرحمة ـ مثلا ـ فيما عندنا تأثّر وانفعال",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 19,
+          "sha256": "ff7c9e6805f0b1826fd8f18ad891804fd3928a1a78bcc40fc15aca0b3be52f5a",
+          "characters": 384,
+          "start": "نفسانيّ من مشاهدة مسكين محتاج إلى كمال ، كالعافية والصحّة والبقاء ، ويترتّب عليه أن يرفع ا",
+          "end": "حمة لها نسبة إليه (تعالى) اشتقّ منه صفة الرحيم صفة فعل له (تعالى) ، والأمر على هذا القياس.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "arabic",
+          "paragraph": 20,
+          "sha256": "4328832c4598810df0095d904bc99576cff28ea83ded61b76fb8d10f838bbfdb",
+          "characters": 256,
+          "start": "والإرادة المنسوبة إليه (تعالى) منتزعةٌ من مقام الفعل ، إمّا من نفس الفعل الذي يوجد في الخا",
+          "end": "التامّة للفعل كما يقال عند مشاهدة جَمْعِ الفاعل أسبابَ الفعل ليفعل : «أنّه يريد كذا فعلا».",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 1,
+          "sha256": "cee2f8fb328da555a5c40ffcb3943f5f50d8df90f25f48ee9c23de7a453ee559",
+          "characters": 799,
+          "start": "Among the meanings we count as existential perfections is power. It concerns action rather",
+          "end": "is agent: he conceives it and assents that it is good for him insofar as he is this agent.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 2,
+          "sha256": "097f21c40e416fc7e5851a44c32e5d72da808bc5f633cdaae45eae8216d22f4b",
+          "characters": 699,
+          "start": "A necessary consequence of knowing that the act is good for the agent is that it is a perf",
+          "end": "mined for him through his own determination, rather than through determination by another.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 3,
+          "sha256": "5286120005cc233a8d734090d04ce7660beb577ff1672e9f5e52c92382c01b4e",
+          "characters": 486,
+          "start": "When the knowledge that the act is good is complete, it is followed by the agent’s desire ",
+          "end": " is realized: the movement of the muscles through the active faculty diffused within them.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 4,
+          "sha256": "03d70eaeaad4ec031e721e922ecd95f03d3219a463a879c4e6fe7a7f36ad4c32",
+          "characters": 633,
+          "start": "These are the qualifications that investigation discloses in the power found in us: being ",
+          "end": "k necessarily accompanies deficiency, and He is free of every deficiency and nonexistence.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 5,
+          "sha256": "9fc0de51707402605194d80c98055b40e2d252a222d0e6a4817d94b68d1c5caf",
+          "characters": 484,
+          "start": "The same applies to will as a psychic quality distinct from knowledge and desire. It is a ",
+          "end": "d by it would therefore entail change in that which is characterized, which is impossible.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 6,
+          "sha256": "3670f42e05685372126ceb1bd3140c82012675439eb8158f0a83b9f8294dba2a",
+          "characters": 550,
+          "start": "It follows that power, stripped of deficiencies and nonexistences, is a thing’s being an e",
+          "end": "ntrinsically powerful. The account we have given applies to immaterial intellects as well.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 7,
+          "sha256": "43c07a803bea9cdf5c8b2a4ddae79cb9a830e241c01147b9cb868da7439ea2e4",
+          "characters": 440,
+          "start": "You may object: the path you have followed to establish power for the Necessary—exalted is",
+          "end": "ower. They have, however, explained necessary will as knowledge of the most fitting order.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 8,
+          "sha256": "7e5fa8025ff6a8b18b4cd42fe38d7cfafd9394310fa8d9970d9077ccf766a827",
+          "characters": 395,
+          "start": "I reply: their account of the meaning of power returns to the account we have given, which",
+          "end": "instance of will. There is no way to establish this, and it is more like an act of naming.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 9,
+          "sha256": "9a88526d173d1faa20b71962332f1b1dda96ddc4da4c7cbc25d21edba63109d0",
+          "characters": 601,
+          "start": "You may object: a single existence may have different quiddities and unequal degrees accor",
+          "end": "therefore does not exclude the Necessary’s will for His act being His essential knowledge.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 10,
+          "sha256": "cc1fc4d1c34a0b08e2679af9de6bd6e64d76a327ee78a2f79b7aab5b469c2430",
+          "characters": 464,
+          "start": "Moreover, it is conceded that a choosing agent does whatever it does only through will and",
+          "end": "d He is willing insofar as He is knowing through His knowledge identical with His essence.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 11,
+          "sha256": "905976fa1346ddcf71904dca421ef7c52570818e4dd8b5ac855206f43532bb47",
+          "characters": 623,
+          "start": "I reply: what we concede is that a choosing animal agent does whatever it does only throug",
+          "end": "ct, as was indicated in the discussion of attributes of act and will be explained further.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 12,
+          "sha256": "19f3bc7574846f15f346eba18be4d867606fd78f77d7fe46714a5dadc7eb1506",
+          "characters": 491,
+          "start": "In brief, there is no proof that the concept of will applies to the Necessary’s knowledge ",
+          "end": "alling the Necessary’s knowledge of the best order His will is more like an act of naming.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 13,
+          "sha256": "26982d8729ceb31dfc7926b085a051f72642a996d2fb053f33f957f3716580aa",
+          "characters": 730,
+          "start": "Will should not be compared with knowledge, which is said to be a psychic quality and is t",
+          "end": "refore has a common meaning to which analysis leads: the presence of one thing to another.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 14,
+          "sha256": "2f1e33ef199b4e56a90bd1cad22b9f5988e371fb49e0a5937d4ae2ce09a1debf",
+          "characters": 294,
+          "start": "You may object: if will has no known meaning except the psychic quality found in animals, ",
+          "end": "ing broader than a psychic quality and that it is an existential attribute like knowledge.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 15,
+          "sha256": "a9b73a0ece1a661fb016f0b1b78262a9c57c006a90ab05d78d88098034cb404d",
+          "characters": 1391,
+          "start": "I reply: just as an expression may be used for its real meaning, it may also, by extension",
+          "end": "l is derived from it as one of His attributes of act. Other cases follow the same pattern.",
+          "reviewed": true,
+          "layoutArtifact": false
+        },
+        {
+          "field": "english",
+          "paragraph": 16,
+          "sha256": "7d240c35cf0b504e2f9dd853d02cea4abdf0e222437ceb0203024c1250ac29f1",
+          "characters": 423,
+          "start": "The will ascribed to Him—exalted is He—is abstracted from the station of act: either from ",
+          "end": "the causes of an act in order to perform it, “He intends to perform such-and-such an act.”",
+          "reviewed": true,
+          "layoutArtifact": false
+        }
+      ],
+      "witnesses": [
+        {
+          "edition": "Qum 1404, Princeton / Arabic Collections Online, early printed facsimile",
+          "notManuscript": true,
+          "manifest": "https://sites.dlib.nyu.edu/viewer/api/presentation/books/princeton_aco000637/manifest.json",
+          "pdfLocalPath": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "pdfSha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "printedPages": [
+            296,
+            297,
+            298,
+            299,
+            300
+          ],
+          "images": [
+            {
+              "canvas": 300,
+              "printedPage": 296,
+              "viewerUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/300",
+              "localRender": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/scans/canvas-300.png",
+              "renderSha256": "4d7900c7608d424e759e982e6421875cd76c3be6c3549d0798e3b21d8698cc76",
+              "renderMethod": "Archived PyMuPDF rendering of the early PDF at width 1600 pixels.",
+              "actuallyVisuallyRead": true
+            },
+            {
+              "canvas": 301,
+              "printedPage": 297,
+              "viewerUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/301",
+              "localRender": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/scans/canvas-301.png",
+              "renderSha256": "ff44f4662b77af57052e1d2eec43a389dfbaaef824ed8edafe56307913f0a7ba",
+              "renderMethod": "Archived PyMuPDF rendering of the early PDF at width 1600 pixels.",
+              "actuallyVisuallyRead": true
+            },
+            {
+              "canvas": 302,
+              "printedPage": 298,
+              "viewerUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/302",
+              "localRender": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/scans/canvas-302.png",
+              "renderSha256": "c151ce1d94e6d6fdee3dea1535071696d394422af3d2c153aa0aa5c7aa0a388b",
+              "renderMethod": "Archived PyMuPDF rendering of the early PDF at width 1600 pixels.",
+              "actuallyVisuallyRead": true
+            },
+            {
+              "canvas": 303,
+              "printedPage": 299,
+              "viewerUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/303",
+              "localRender": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/scans/canvas-303.png",
+              "renderSha256": "b7755225bbd8bb2f1520bc087be730002a18b7030d4fe0037102c618663dc131",
+              "renderMethod": "Archived PyMuPDF rendering of the early PDF at width 1600 pixels.",
+              "actuallyVisuallyRead": true
+            },
+            {
+              "canvas": 304,
+              "printedPage": 300,
+              "viewerUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/304",
+              "localRender": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/scans/canvas-304.png",
+              "renderSha256": "01fe13e29b24ba986018aa6dc064b52dfae013e923d0209f94cce38c18cb6cab",
+              "renderMethod": "Archived PyMuPDF rendering of the early PDF at width 1600 pixels.",
+              "actuallyVisuallyRead": true
+            }
+          ]
+        },
+        {
+          "edition": "1428 fourth edited edition, Abbas Ali al-Zarii al-Sabzawari, vol. 2, Rafed digital presentation",
+          "notFacsimile": true,
+          "notManuscript": true,
+          "pages": [
+            {
+              "page": 258,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=258&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-241.html",
+              "htmlSha256": "ee8e4bfe64d107c8fb1c52fb16db1e184c416c3d14bf6f2b9e4645b64612d20b",
+              "pageTextSha256": "a3cb40b45ea2701bfffa1abc2d2d16f4080a9ca6301dbef361dd5df441b1db46",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 1
+            },
+            {
+              "page": 259,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=259&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-241.html",
+              "htmlSha256": "ee8e4bfe64d107c8fb1c52fb16db1e184c416c3d14bf6f2b9e4645b64612d20b",
+              "pageTextSha256": "984f1f49143fb6f8eeacafcb1f83aa3eb39c0d072da1662afec7c4205e77a647",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 6
+            },
+            {
+              "page": 260,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=260&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-241.html",
+              "htmlSha256": "ee8e4bfe64d107c8fb1c52fb16db1e184c416c3d14bf6f2b9e4645b64612d20b",
+              "pageTextSha256": "b69d799223362af7acd63d07489875f5aa0c3ac42919d58aa3094f17e07e57ab",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 8
+            },
+            {
+              "page": 261,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=261&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-261.html",
+              "htmlSha256": "517515d1a3d5c6ffd4e1bb6a09d429ca3fc5aaec4836495c42e17da4cc61d153",
+              "pageTextSha256": "1fbed2139befd840ae0ad2ceac13ddd5add96df03e694e2e897e9ec484d5c771",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 7
+            },
+            {
+              "page": 262,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=262&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-261.html",
+              "htmlSha256": "517515d1a3d5c6ffd4e1bb6a09d429ca3fc5aaec4836495c42e17da4cc61d153",
+              "pageTextSha256": "377368f19ed95f49bd74855c1a900fbce18d2722823586704b6abc9087c33842",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 5
+            },
+            {
+              "page": 263,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=263&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-261.html",
+              "htmlSha256": "517515d1a3d5c6ffd4e1bb6a09d429ca3fc5aaec4836495c42e17da4cc61d153",
+              "pageTextSha256": "2f37944c7a58911f5cba5968c6c82cdc2fe8045ca3ce2921a57e6802c41e90ff",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 6
+            },
+            {
+              "page": 264,
+              "url": "https://lib.rafed.net/view.php?b_id=3109&page=264&type=c_fbook",
+              "htmlFile": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_b/html/3109-261.html",
+              "htmlSha256": "517515d1a3d5c6ffd4e1bb6a09d429ca3fc5aaec4836495c42e17da4cc61d153",
+              "pageTextSha256": "cf486868d5ae0863464db3baa7694a12ad2fbd9e953262aec138295f8d54bcf5",
+              "bodyParagraphsRead": true,
+              "allAssociatedEditorialNotesRead": true,
+              "footnoteBlocksRead": 2
+            }
+          ],
+          "actualReadScope": "Every authorial paragraph within the chapter boundaries and every associated editorial note, including continuation across pages."
+        }
+      ],
+      "variants": [
+        {
+          "decisionID": "N10-NEW-XII13-VAR01",
+          "base": "فالخير محبوبٌ مطلقاً",
+          "early": "فالخير محبوبٌ مطلقاً",
+          "later": "فالخير محبوبٌ له مطلقاً",
+          "disposition": "apparatus-only",
+          "sourceGrade": "L2",
+          "evidence": "1404 p. 297 / canvas 301; 1428 p. 259",
+          "judgment": "The later digital text adds له without an editorial note. The early text and base omit it; the context supplies the agent and no addition is needed."
+        },
+        {
+          "decisionID": "N10-NEW-XII13-VAR02",
+          "base": "لا سبيل لتطرّق الشوق عليه",
+          "early": "لا سبيل لتطرّق الشوق عليه",
+          "later": "لا سبيل لتطرّق الشوق إليه",
+          "disposition": "apparatus-only",
+          "sourceGrade": "L2",
+          "evidence": "1404 p. 297 / canvas 301; 1428 p. 259",
+          "judgment": "The early print agrees with عليه. Record the later unfootnoted prepositional alteration without treating it as a correction proved by both witnesses."
+        },
+        {
+          "decisionID": "N10-NEW-XII13-VAR03",
+          "base": "بإرادة ومشيّة",
+          "early": "بإرادة ومشيّة",
+          "later": "بإرادة ومشيئة",
+          "disposition": "apparatus-only",
+          "sourceGrade": "L1",
+          "evidence": "1404 pp. 298–299 / canvases 302–303; 1428 p. 262 n. 1",
+          "judgment": "Record the later editor’s explicit standardized spelling; do not relabel it as the early reading. The meaning and English volition are unchanged."
+        },
+        {
+          "decisionID": "N10-NEW-XII13-VAR04",
+          "base": "وجود الإرادة والمشيّة",
+          "early": "وجود الإرادة والمشيّة",
+          "later": "وجود الإرادة والمشيئة",
+          "disposition": "apparatus-only",
+          "sourceGrade": "L1",
+          "evidence": "1404 p. 299 / canvas 303; 1428 p. 262 n. 2",
+          "judgment": "The second explicit spelling normalization has the same status; preserve the earlier orthography in this pass."
+        },
+        {
+          "decisionID": "N10-NEW-XII13-VAR05",
+          "base": "فما بالها تنتزع",
+          "early": "فما بالها تنتزع",
+          "later": "فما بالها أن تنتزع",
+          "disposition": "apparatus-only",
+          "sourceGrade": "L1",
+          "evidence": "1404 p. 299 / canvas 303; 1428 p. 263 n. 5",
+          "judgment": "The earlier ما بالها followed by a verbal clause is intelligible. The editor’s added أن is not necessary to recover the argument."
+        },
+        {
+          "decisionID": "N10-NEW-XII13-VAR06",
+          "base": "استحال أن يتّصف به الذات الواجبة بالذات",
+          "early": "استحال أن يتّصف به الذات الواجبة بالذات",
+          "later": "استحال أن تتّصف بها الذات الواجبة بالذات",
+          "disposition": "defer",
+          "sourceGrade": "L1",
+          "evidence": "1404 p. 300 / canvas 304; 1428 p. 263 n. 6",
+          "judgment": "The later agreement correction makes the antecedent action attributes explicit. Preserve the early reading pending further textual evidence and disclose that English them interprets the referent as those attributes; do not claim the earlier grammar is unproblematic."
+        },
+        {
+          "decisionID": "N10-NEW-XII13-VAR07",
+          "base": "بنحو العروض",
+          "early": "بنحو العروض",
+          "later": "بنحو العرض",
+          "disposition": "apparatus-only",
+          "sourceGrade": "L1",
+          "evidence": "1404 p. 300 / canvas 304; 1428 p. 264 n. 1",
+          "judgment": "Retain the earlier inherence/occurrence wording consistently with the other such loci; record the later explicit lexical preference."
+        }
+      ],
+      "laterEditorialCommentary": [
+        {
+          "source": "1428 vol. 2 258 n. 1",
+          "kind": "Choice gloss",
+          "summary": "The editor explains self-determination as what the agent’s own essence requires. This is an explanatory gloss."
+        },
+        {
+          "source": "1428 vol. 2 259 nn. 1–6",
+          "kind": "Syntax, references and ontological explanation",
+          "summary": "All six notes were read: the attachment of من القيود, the reference to XII.6, power as an existential perfection, the reasoning from psychic quality through accident/quiddity/limitation to lack, the ellipsis excluding will, and the referent of إذا كان."
+        },
+        {
+          "source": "1428 vol. 2 260 n. 1 continued through 261",
+          "kind": "Two definitions of power and a separate Asfar annotation",
+          "summary": "The entire lengthy note contrasts the theologians’ possibility of acting/not acting with the philosophers’ conditional definition. It questions each when understood through an added psychic will and then quotes, with abridgment, Tabatabai’s separate Asfar 6:307–308 annotation on the unconditioned efficient agent. The quote’s conclusion identifies both definitions with the agent’s freedom from necessitation imposed by act or non-act. It is not inserted into the Nihaya authorial body."
+        },
+        {
+          "source": "1428 vol. 2 261 nn. 1–4",
+          "kind": "Definition sources, philosophical referent and Avicenna attribution",
+          "summary": "References for the conditional definition and knowledge of the best order, identification of the philosophers, and the attribution to Avicenna of conceptual as well as extensional identity were read. The editor’s bibliographic references have not been independently verified."
+        },
+        {
+          "source": "1428 vol. 2 261 n. 5 continued through 262",
+          "kind": "Concept versus instance",
+          "summary": "The full argument distinguishes identity of instances, shared by all divine perfections, from identity of concepts. The editor argues that saying God knows and saying God wills do not convey the same concept. This reinforces the author’s objection but remains separately attributed exposition."
+        },
+        {
+          "source": "1428 vol. 2 262 nn. 1–4",
+          "kind": "Orthographic emendations and references",
+          "summary": "Both explicit changes of مشيّة to مشيئة and the references to XII.10 and the end of this chapter were read. The normalized spelling is recorded as later editorial work; it is not treated as an early or manuscript reading."
+        },
+        {
+          "source": "1428 vol. 2 263 nn. 1–6",
+          "kind": "References and grammatical changes",
+          "summary": "The backwards reference, philosopher/source citations, reference to the earlier editorial argument, gloss of ما بالها, addition of أن before تنتزع, and the change أن يتّصف به to أن تتّصف بها were all read. The earlier construction without أن is retained. The agreement change is disclosed as a later emendation, with the English’s plural interpretation made explicit."
+        },
+        {
+          "source": "1428 vol. 2 264 nn. 1–2",
+          "kind": "Lexical preference and cross-reference",
+          "summary": "The later editor explicitly replaces العروض with العرض and refers to XII.10. The earlier العروض, conveying inherence or occurrence as an accident, is retained, consistently with the other retained loci."
+        }
+      ],
+      "englishReviewFinding": "Every English paragraph was checked against the complete Arabic and both witnesses. Awareness already translates the intended الشعور and needs no change. The distinction between human will as a psychic quality, the unproved identification of divine essential knowledge with will, and will abstracted from the station of act is preserved. The English plural them interprets the earlier awkward به in reference to the action attributes; that interpretation and the later editor’s بها are disclosed. No English body correction is adopted.",
+      "decisionIDs": [
+        "N10-NEW-XII13-AR01",
+        "N10-NEW-XII13-AR02",
+        "N10-NEW-XII13-VAR01",
+        "N10-NEW-XII13-VAR02",
+        "N10-NEW-XII13-VAR03",
+        "N10-NEW-XII13-VAR04",
+        "N10-NEW-XII13-VAR05",
+        "N10-NEW-XII13-VAR06",
+        "N10-NEW-XII13-VAR07",
+        "N10-NEW-XII13-APP",
+        "N10-NEW-XII13-EN-NOCHANGE"
+      ],
+      "canonicalCollationNoteID": "N10-NEW-XII13-COLLATION",
+      "limitations": [
+        "No manuscript consulted.",
+        "Later edition read in its digital presentation, not a facsimile.",
+        "The cited earlier works and historical attributions were not independently collated.",
+        "This is a complete content comparison, not an exhaustive apparatus of punctuation and every vowel mark.",
+        "No independent human specialist certification is implied."
+      ]
+    }
+  ]
+}

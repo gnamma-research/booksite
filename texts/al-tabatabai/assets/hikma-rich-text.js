@@ -55,11 +55,12 @@
     const direction = language === 'ar' ? 'rtl' : 'ltr';
     const lines = text(value).trim().replace(/\r\n?/g, '\n').split('\n'), output = [];
     const caption = text(options.tableCaption).trim() || (language === 'ar' ? 'جدول' : 'Table');
-    let paragraph = [];
+    let paragraph = [], paragraphNumber = 0;
     function flush() {
       if (!paragraph.length) return;
       const content = inline(paragraph.join('\n'));
-      output.push('<p dir="' + direction + '">' + (options.lineBreaks ? content.replace(/\n/g, '<br>') : content) + '</p>');
+      const id = options.paragraphIds?.[paragraphNumber++];
+      output.push('<p dir="' + direction + '"' + (id ? ' id="' + escape(id) + '" data-paragraph="true"' : '') + '>' + (options.lineBreaks ? content.replace(/\n/g, '<br>') : content) + '</p>');
       paragraph = [];
     }
     for (let i = 0; i < lines.length;) {
@@ -149,13 +150,46 @@
       edges + corners + '</svg><figcaption>' + escape(caption) + '</figcaption></figure>';
   }
 
+  function renderFigure(figure, language) {
+    if (!figure || figure.kind !== 'classification-tree' || !Array.isArray(figure.branches)) return '';
+    const ar = language === 'arabic' || language === 'ar', suffix = ar ? 'Arabic' : 'English';
+    const branches = new Map();
+    for (const row of figure.branches) {
+      const parent = text(row['parent' + suffix]), children = row['children' + suffix];
+      if (!parent || !Array.isArray(children) || children.some(c => !text(c))) return '';
+      branches.set(parent, children);
+    }
+    const children = new Set([...branches.values()].flat());
+    const roots = [...branches.keys()].filter(k => !children.has(k));
+    if (roots.length !== 1) return '';
+    function node(label, seen) {
+      if (seen.has(label) || seen.size > 12) throw Error('Cyclic figure');
+      const next = new Set(seen); next.add(label);
+      return '<li><span>' + escape(label) + '</span>' + (branches.has(label) ?
+        '<ul>' + branches.get(label).map(c => node(c,next)).join('') + '</ul>' : '') + '</li>';
+    }
+    let tree; try { tree = node(roots[0], new Set()); } catch (_) { return ''; }
+    const caption = ar ? 'خلاصة التقسيم — إعادة رسم من طبعة النجف، ١٩٦٨، ص ٢٣٤؛ تتمة صريحة للرسم المفقود في النص الرقمي.' :
+      'Summary of the division — redrawn from the Najaf 1968 edition, p. 234; an explicit supplement to the missing digital figure.';
+    return '<figure class="hikma-classification" lang="' + (ar?'ar':'en') + '" dir="' + (ar?'rtl':'ltr') + '"><ul>' + tree + '</ul><figcaption>' + escape(caption) + '</figcaption></figure>';
+  }
+
   function renderUnit(unit, language, options = {}) {
     const arabic = language === 'arabic' || language === 'ar', field = arabic ? 'arabic' : 'english';
     const title = text(arabic ? unit.arabicTitle : unit.title).trim();
-    return renderText(unit[field], { ...options, language: field,
+    return renderText(arabic && options.plainArabic ? stripVowels(unit[field]) : unit[field], { ...options, language: field,
       tableCaption: options.tableCaption || (title ? (arabic ? 'جدول: ' : 'Table: ') + title : '') }) +
-      renderDiagram(unit.sourceDiagram, field, unit.id);
+      renderDiagram(unit.sourceDiagram, field, unit.id) + renderFigure(unit.sourceFigure, field);
   }
 
-  return Object.freeze({ escape, inline, renderText, renderDiagram, renderUnit, validDiagram });
+  function stripVowels(value) {
+    // In Muẓaffar's formulas the fatḥa over an isolated term letter marks its
+    // complement. Removing it changes the proposition, so retain those tokens.
+    return text(value).replace(/[\u0621-\u065f\u0670\u0671]+/g, token => {
+      const bare = token.replace(/[\u064b-\u065f\u0670\u0640]/g, '');
+      return /^[بحج]$/.test(bare) ? token : token.replace(/[\u064b-\u065f\u0670]/g, '');
+    });
+  }
+
+  return Object.freeze({ escape, inline, renderText, renderDiagram, renderFigure, renderUnit, validDiagram, stripVowels });
 });

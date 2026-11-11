@@ -25,18 +25,19 @@ h1{font:normal clamp(32px,5vw,48px)/1.18 Georgia,serif;margin:12px 0 18px}
 .revision-state{font:12px/1.5 Arial,sans-serif;color:var(--muted);margin:0 0 15px}
 .revision-state[data-release-freshness="earlier"]{font-weight:700;color:var(--ink)}
 .revision-state[data-release-freshness="current"]{color:var(--accent)}
-footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font:11px/1.6 Arial,sans-serif}
-@media(max-width:650px){main{padding-top:33px}.files{grid-template-columns:1fr}.site-header{padding:15px 18px}}
+.edition-guide{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:0 0 32px}.edition-guide h2{font-size:19px;font-weight:normal;margin:0 0 8px}.edition-guide p{font:13px/1.65 Arial,sans-serif;color:var(--muted);margin:0}.file-actions{display:flex;gap:20px;flex-wrap:wrap}.files .file-size{font:12px/1.5 Arial,sans-serif;margin:10px 0}.technical{font:11px/1.6 Arial,sans-serif;overflow-wrap:anywhere;margin-top:10px;color:var(--muted)}.technical summary{cursor:pointer}.book .coverage{font-size:14px;max-width:750px;margin:12px 0}.book-reader{font:13px Arial,sans-serif}.files a:focus-visible,.back:focus-visible{outline:2px solid currentColor;outline-offset:4px}footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font:11px/1.6 Arial,sans-serif}
+@media(max-width:650px){main{padding-top:33px}.files,.edition-guide{grid-template-columns:1fr}.site-header{padding:15px 18px}}
 </style>
 </head>
 <body>
 <header class="site-header"><a class="brand" href="../../../">gnamma</a><a class="back" href="../">← Return to reader</a></header>
 <main><span class="eyebrow">THE READING ROOM · A4 EDITIONS</span>
 <h1>Downloadable books</h1>
-<p class="intro">The reading, Arabic–English study, and Arabic reference layouts are typeset from a recorded source revision, with selectable text and numbered passage notes. Each book is checked against the current online text before its release is labelled current. The English in progress is clearly distinguished from the available Arabic in each book.</p>
+<p class="intro">All three books and their three PDF editions are gathered here. Each A4 file has selectable text, a linked contents list and passage notes. Choose an edition below, or use <strong>Print / PDF</strong> in the reader for a section, a range, another language choice or your personal notes.</p>
+<div class="edition-guide"><section><h2>Reading</h2><p>English text in one column, with the edition’s notes. Suited to continuous reading.</p></section><section><h2>Study</h2><p>Arabic and English together. Suited to comparison and close study.</p></section><section><h2>Reference</h2><p>Arabic text, restored original footnotes and source apparatus.</p></section></div>
 <p id="status" role="status" aria-live="polite">Checking published editions…</p>
 <div id="library"></div>
-<footer>The published file manifest records SHA-256 checksums for each PDF and its source text. These are working textual editions, not independently certified critical editions. For the latest on-screen text, return to the reader.</footer>
+<footer>Each file records its editorial status, printed-witness comparison coverage and source checksums. Complete comparison with printed witnesses is distinct from manuscript collation or independent specialist certification. For the latest on-screen text, return to the reader.</footer>
 </main>
 <script>
 (async function(){
@@ -45,6 +46,28 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font:1
  function el(t,c,txt){let n=document.createElement(t);if(c)n.className=c;if(txt!=null)n.textContent=safe(txt);return n;}
  const modes=['reading','study','reference'];
  const names={reading:'Reading',study:'Arabic–English study',reference:'Arabic reference'};
+ const descriptions={reading:'English · one column',study:'Arabic and English · parallel',reference:'Arabic · source apparatus'};
+ const slugs={'al-Manṭiq':'muzaffar-al-mantiq','Bidāyat al-Ḥikma':'bidayat-al-hikma','Nihāyat al-Ḥikma':'nihayat-al-hikma'};
+ function completePrintedComparison(row){
+   return Number.isInteger(row.arabic_sections)&&row.arabic_sections>0
+     &&Number.isInteger(row.external_comparisons)&&row.external_comparisons===row.arabic_sections;
+ }
+ function fileEditionLabel(row){
+   if(row.book==='Nihāyat al-Ḥikma'){
+     if(completePrintedComparison(row)&&row.english_sections===row.arabic_sections)return 'Printed-witness critical reading edition';
+     if(completePrintedComparison(row))return 'Complete printed-witness comparison';
+     return Number.isInteger(row.external_comparisons)?'Reading edition · printed comparison incomplete':'Reading edition · printed comparison not recorded';
+   }
+   if(/working|draft|provisional|unreviewed/i.test(safe(row.editorial_status)))return 'Working translation';
+   return row.editorial_status?'Reading edition':'Reading edition · editorial status not recorded';
+ }
+ function comparisonCoverage(row){
+   return Number.isInteger(row.external_comparisons)&&row.external_comparisons>=0
+     &&Number.isInteger(row.arabic_sections)&&row.arabic_sections>0
+     ?row.external_comparisons+'/'+row.arabic_sections+' source passages compared with printed witnesses'
+     :'Printed-witness comparison coverage is not recorded for this file';
+ }
+ try{const saved=sessionStorage.getItem('gnamma-hikma:edition-return');if(saved){const url=new URL(saved,location.href);if(url.origin===location.origin&&url.pathname.includes('/texts/al-tabatabai/')){const back=document.querySelector('.back');back.href=url.href;back.textContent='← Return to your reading position';}}}catch(_){}
  const sourcePaths={
    'al-Manṭiq':'../muzaffar-al-mantiq/data/book.json',
    'Bidāyat al-Ḥikma':'../bidayat-al-hikma/data/book.json',
@@ -87,7 +110,8 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font:1
    const freshMap=Object.fromEntries(freshness);
    for(const book of ['al-Manṭiq','Bidāyat al-Ḥikma','Nihāyat al-Ḥikma']){
      const all=rows.filter(x=>x.book===book);if(!all.length)continue;
-     const section=el('section','book'),title=el('h2','',book),details=el('p','details',all[0].arabic_sections+' source passages · '+all[0].english_sections+' with working English');
+     const sameCoverage=all.every(row=>row.arabic_sections===all[0].arabic_sections&&row.english_sections===all[0].english_sections);
+     const section=el('section','book'),title=el('h2','',book),details=el('p','details',sameCoverage?all[0].arabic_sections+' Arabic source passages · '+all[0].english_sections+' with English':'Passage coverage varies by file; see the individual editions below.');
      const freshnessText=freshMap[book]==='current'?'Matches the current online text':
        freshMap[book]==='earlier'?'Previous release — the online text has been revised':'Source revision could not be checked';
      const revision=el('p','revision-state',freshnessText);
@@ -96,12 +120,25 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font:1
      for(const mode of modes){
        const r=all.find(x=>x.mode===mode);if(!r)continue;
        if(!/^[a-z0-9-]+-(reading|study|reference)-A4\.pdf$/.test(r.filename))continue;
-       const li=el('li'),heading=el('strong','',names[mode]),a=el('a','', 'Download PDF'),size=el('small','',Math.round(Number(r.bytes)/1024)+' KB · SHA-256 '+String(r.sha256||'').slice(0,12)+'…');
-       a.href='./'+r.filename;a.download=r.filename;
-       if(freshMap[book]!=='current')a.textContent='Download recorded PDF';
-       li.append(heading,a,size);files.append(li);
+       const li=el('li'),heading=el('strong','',names[mode]),description=el('p','file-size',descriptions[mode]);
+       const edition=el('p','file-size',fileEditionLabel(r));
+       const comparison=el('p','file-size',comparisonCoverage(r));
+       if(!sameCoverage)description.append(document.createTextNode(' · Source: '+r.arabic_sections+' Arabic and '+r.english_sections+' English passages'));
+       const actions=el('div','file-actions'),view=el('a','', 'View PDF'),download=el('a','', 'Download');
+       view.href='./'+r.filename;view.setAttribute('aria-label','View '+book+' '+names[mode]+' PDF');
+       download.href='./'+r.filename;download.download=r.filename;download.setAttribute('aria-label','Download '+book+' '+names[mode]+' PDF');actions.append(view,download);
+       const size=el('small','', (r.pages?r.pages+' pages · ':'')+(Number(r.bytes)/1048576).toFixed(1)+' MB · A4');
+       const technical=el('details','technical');technical.append(el('summary','','File and source verification'),el('p','','PDF SHA-256: '+r.sha256),el('p','','Text SHA-256: '+r.source_sha256));
+       if(r.supplement_sha256)technical.append(el('p','','Apparatus SHA-256: '+r.supplement_sha256));
+       li.append(heading,description,edition,comparison,actions,size,technical);files.append(li);
      }
-     section.append(title,details,revision,files);list.append(section);
+     const reader=el('a','book-reader','Open the '+book+' reader');reader.href='../'+slugs[book]+'/';
+     const coverageText=book==='al-Manṭiq'?'A working translation of selected passages from the six-book logic. The online collection includes the complete Book V; earlier selection gaps and all of Book VI remain. Check the passage counts and release status for each PDF.'
+       :book==='Bidāyat al-Ḥikma'?'The complete authorial book is available in Arabic with a working English translation. Comprehensive textual collation and independent translation review remain open.'
+       :all.every(row=>completePrintedComparison(row)&&row.english_sections===row.arabic_sections)?'Complete authorial Arabic and English in a printed-witness critical reading edition, with recorded textual decisions. Manuscript collation and independent specialist certification are outside this edition’s completed scope.'
+       :'These files have the printed-comparison coverage recorded below. Open the reader for the latest edition; an earlier PDF does not acquire later revisions automatically.';
+     const coverage=el('p','coverage',coverageText);
+     section.append(title,details,reader,coverage,revision,files);list.append(section);
    }
    const stale=freshness.filter(([_,status])=>status==='earlier').length;
    const unknown=freshness.filter(([_,status])=>status==='unverified').length;

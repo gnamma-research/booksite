@@ -161,3 +161,17 @@ body[data-book="combined"] .reading-context{white-space:normal}
 }
 
 .glossary-provenance{font:10px/1.5 Arial,Helvetica,sans-serif;color:var(--muted);margin:4px 0 8px;letter-spacing:.15px}
+
+.pdf-settings{display:grid;gap:12px;margin:18px 0}.pdf-settings label{display:grid;gap:6px;font:13px/1.5 Arial,sans-serif}.pdf-settings select{width:100%;max-width:100%;padding:9px;color:var(--ink);background:var(--paper-raised);border:1px solid var(--line);border-radius:4px}.pdf-settings .pdf-checkbox{display:flex;align-items:center;gap:8px}#pdf-range:not([hidden]){display:grid;gap:10px}.pdf-personal-note{display:none}
+@media print{
+ [data-pdf-exclude=true]{display:none!important}
+ .gnamma-print .pdf-personal-note{display:block;border-top:1px solid #aaa;padding-top:3mm;margin-top:4mm;font:10pt/1.5 Georgia,serif;white-space:pre-wrap}
+ body[data-pdf-language=english] .parallel-text,body[data-pdf-language=arabic] .parallel-text{display:block!important}
+ body[data-pdf-language=english] .english-panel,body[data-pdf-language=arabic] .arabic-panel{display:block!important;width:100%!important;max-width:none!important}
+ body[data-pdf-language=english] .arabic-panel,body[data-pdf-language=english] .stage-introduction,body[data-pdf-language=arabic] .english-panel{display:none!important}
+ body[data-pdf-language=bilingual] .parallel-text{display:grid!important;grid-template-columns:1fr 1fr!important;gap:7mm!important}
+ body[data-pdf-language=bilingual] .arabic-panel,body[data-pdf-language=bilingual] .english-panel,body[data-pdf-language=bilingual] .stage-introduction,body[data-pdf-language=arabic] .stage-introduction{display:block!important}
+ body[data-pdf-language=bilingual] .parallel-text.is-arabic-only{display:block!important}
+ body.gnamma-print .arabic-panel .text-body{font-family:var(--arabic-reading-font,Amiri),serif!important}
+ body.gnamma-print .english-panel .text-body{font-family:var(--english-reading-font,Georgia),serif!important}
+}

@@ -1,4 +1,4 @@
-/* Standalone A4 PDF editions. __AMIRI_DATA__ is replaced with a local font. */
+/* Standalone A4 PDF editions with the locally embedded Amiri font. */
 @font-face{font-family:AmiriGnamma;src:url(data:font/woff2;base64,__AMIRI_DATA__) format("woff2");font-style:normal;font-weight:400;font-display:swap}
 :root{font-family:Georgia,"Times New Roman",serif;color:#21211f;background:white}
 *{box-sizing:border-box}
@@ -45,3 +45,6 @@ p:last-child{margin-bottom:0}
 .note-url{overflow-wrap:anywhere;color:#777;font-size:7pt}
 .chapter-continuation .chapter-title{display:none}
 .source-summary{break-before:page;font:9pt/1.5 Georgia,serif;color:#666}
+.edition-introduction{break-after:page;font:11pt/1.6 Georgia,serif}.edition-introduction h2,.printed-glossary h2{font:normal 22pt/1.3 Georgia,serif;color:#315d55}.edition-introduction h3{font:normal 15pt/1.4 Georgia,serif;margin-top:8mm;break-after:avoid}.edition-source h4{font:11pt/1.4 Georgia,serif;font-weight:bold;margin:4mm 0 1mm;break-after:avoid}.edition-source p{margin:0 0 2mm}.passage-reference{display:block;font:8pt/1.4 Arial,sans-serif;letter-spacing:.6pt;color:#5b776e;margin-bottom:2mm;break-after:avoid}.printed-glossary{break-before:page}.glossary-intro{font:10pt/1.55 Georgia,serif}.glossary-entry{break-inside:avoid;margin:0 0 5mm}.glossary-entry h3{font:12pt/1.5 Georgia,serif;color:#315d55;margin:0}.glossary-entry h3 [lang=ar]{font:16pt/1.5 AmiriGnamma,serif}.glossary-entry p{font:10pt/1.5 Georgia,serif;margin:1mm 0}.glossary-entry .glossary-term{font-style:italic;color:#666}.glossary-locus{font:8pt Arial,sans-serif;color:#315d55;white-space:nowrap}
+
+.apparatus .authorial-bilingual-note{break-inside:auto}.note-arabic{font:12pt/1.8 AmiriGnamma,serif;margin:2mm 0;text-align:right}.note-arabic p{margin:0 0 2mm}

@@ -1,6 +1,17 @@
 name: Hikma - verify and publish nine A4 PDFs
 on:
   workflow_dispatch:
+  pull_request:
+    branches: [master]
+    paths:
+      - 'texts/al-tabatabai/*/data/book.json'
+      - 'texts/al-tabatabai/nihayat-al-hikma/data/editorial-supplement.json'
+      - 'texts/al-tabatabai/assets/hikma-pdf.css'
+      - 'texts/al-tabatabai/assets/hikma-rich-text.js'
+      - 'texts/al-tabatabai/assets/hikma-rich-text.css'
+      - 'texts/al-tabatabai/tools/build-pdfs.cjs'
+      - 'daruri/fonts/amiri-regular.woff2'
+      - '.github/workflows/hikma-a4-pdf-release.yml'
   push:
     branches: [master]
     paths:
@@ -10,16 +21,17 @@ on:
       - 'texts/al-tabatabai/assets/hikma-rich-text.js'
       - 'texts/al-tabatabai/assets/hikma-rich-text.css'
       - 'texts/al-tabatabai/tools/build-pdfs.cjs'
+      - 'daruri/fonts/amiri-regular.woff2'
       - '.github/workflows/hikma-a4-pdf-release.yml'
 
 permissions:
   contents: write
 
 concurrency:
-  group: hikma-nine-pdf-editions
-  # Never repeatedly abort a costly publication when other editors commit.
-  # Its existing source-hash guard refuses to publish stale PDFs safely.
-  cancel-in-progress: false
+  group: hikma-nine-pdf-editions-${{ github.ref }}
+  # Preview builds cannot hold up public releases. Replace obsolete PR previews;
+  # master publication retains the source-hash guard and is never interrupted.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build-and-release:
@@ -48,7 +60,8 @@ jobs:
           from pathlib import Path
           from pypdf import PdfReader
           root=Path('texts/al-tabatabai')
-          entries=json.loads((root/'editions/manifest.json').read_text())['files']
+          manifest=json.loads((root/'editions/manifest.json').read_text())
+          entries=manifest['files']
           assert len(entries)==9, f"Expected nine editions; got {len(entries)}"
           for row in entries:
               pdf=root/'editions'/row['filename']
@@ -62,10 +75,14 @@ jobs:
                   assert supplement.is_file(), 'Missing Nihaya apparatus'
                   assert hashlib.sha256(supplement.read_bytes()).hexdigest()==row['supplement_sha256']
               reader=PdfReader(str(pdf))
+              row['pages']=len(reader.pages)
               assert len(reader.pages)>=3, (row['filename'],len(reader.pages))
               sample=' '.join((reader.pages[i].extract_text() or '') for i in range(min(5,len(reader.pages))))
               assert len(sample.strip())>100, f"Unsearchable or blank PDF {row['filename']}"
+              fonts={str(f.get_object().get('/BaseFont','')) for page in reader.pages[:5] for f in page['/Resources'].get('/Font',{}).get_object().values()}
+              assert any('Amiri' in name for name in fonts), f"Arabic print font missing from {row['filename']}: {fonts}"
               print(row['filename'],len(reader.pages),'A4 pages',row['bytes'],'bytes')
+          (root/'editions/manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
           PY
       - uses: actions/upload-artifact@v4
         if: always()
@@ -75,6 +92,7 @@ jobs:
           if-no-files-found: warn
           retention-days: 30
       - name: Publish only verified PDF files on current master
+        if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
         shell: bash
         run: |
           set -euo pipefail
@@ -97,7 +115,8 @@ jobs:
                   texts/al-tabatabai/tools/build-pdfs.cjs \
                   texts/al-tabatabai/assets/hikma-pdf.css \
                   texts/al-tabatabai/assets/hikma-rich-text.js \
-                  texts/al-tabatabai/assets/hikma-rich-text.css; then
+                  texts/al-tabatabai/assets/hikma-rich-text.css \
+                  daruri/fonts/amiri-regular.woff2; then
               echo 'A newer source edition arrived after this build. Refusing to publish stale PDFs.'
               exit 1
             fi

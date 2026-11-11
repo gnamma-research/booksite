@@ -10,7 +10,7 @@
     "institutionalScanYear": 1968,
     "paginationCaution": "Legacy start/end and firstPrintedPage fields are inherited bibliographic mappings unless a locator says directly checked. Stage VIII records verified displayed page labels separately; these must not be treated as page numbers in the independently uncollated 1968 facsimile."
   },
-  "status": "101 selected Arabic–English working units: Introduction 11; Book I 11; Book II 17; Book III 14; Book IV 47; Book V 1; Book VI zero. The new continuous chapter II of Book IV and Book V preface do not remove earlier omissions or establish complete six-book coverage.",
+  "status": "140 Arabic–English working units: Introduction 11; Book I 11; Book II 17; Book III 14; Book IV 47; Book V 40; Book VI zero. Book V is complete in the working digital-base translation. Earlier omissions and all of Book VI remain.",
   "parts": [
     {
       "book": 0,
@@ -549,12 +549,287 @@
           "locatorStatus": "bibliographic topic, exact printed page not checked"
         }
       ],
-      "availableUnits": 1,
-      "note": "The Book V preface at displayed pp.198–199 is translated as M-V-01. The title is displayed p.196, p.197 is blank, and the definition of syllogism begins p.200. The remaining Book V text is not yet in the bilingual reader.",
+      "availableUnits": 40,
+      "note": "Book V is translated continuously from displayed pp.198–270 as M-V-01–40, including the preface, categorical and conditional syllogisms, induction, analogy, all proofs and exercises, and the Part Two end notice. The missing digital classification tree is supplemented explicitly from the inspected 1968 print.",
       "url": "https://lib.rafed.net/view.php?b_id=1604&page=196&type=c_fbook",
       "displayedTitlePageVerified": 196,
       "displayedFirstProsePageVerified": 198,
-      "paginationBasis": "Verified Rafed displayed title196, first prose198, final exercises269 and endnotice270; not physical1968 pagination"
+      "paginationBasis": "Verified Rafed displayed title196, first prose198, final exercises269 and endnotice270; not physical1968 pagination",
+      "verifiedSections": [
+        {
+          "unit": "M-V-02",
+          "arabic": "١ ـ القياس / تعريفه",
+          "editorialEnglish": "Syllogism: definition and the five qualifications",
+          "displayedPages": "200–201",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=200&type=c_fbook"
+        },
+        {
+          "unit": "M-V-03",
+          "arabic": "الاصطلاحات العامة في القياس",
+          "editorialEnglish": "General terminology of syllogism",
+          "displayedPages": "201–202",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=201&type=c_fbook"
+        },
+        {
+          "unit": "M-V-04",
+          "arabic": "أقسام القياس بحسب مادته وهيئته",
+          "editorialEnglish": "Syllogisms divided by matter and form",
+          "displayedPages": "203–204",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=203&type=c_fbook"
+        },
+        {
+          "unit": "M-V-05",
+          "arabic": "خلاصة التقسيم",
+          "editorialEnglish": "Summary diagram: argument and the kinds of syllogism",
+          "displayedPages": "205",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=205&type=c_fbook"
+        },
+        {
+          "unit": "M-V-06",
+          "arabic": "الاقتراني الحملي / حدوده",
+          "editorialEnglish": "Categorical conjunctive syllogism: its three terms",
+          "displayedPages": "206–207",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=206&type=c_fbook"
+        },
+        {
+          "unit": "M-V-07",
+          "arabic": "القواعد العامة للاقتراني",
+          "editorialEnglish": "The five general rules of conjunctive syllogism",
+          "displayedPages": "207–210",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=207&type=c_fbook"
+        },
+        {
+          "unit": "M-V-08",
+          "arabic": "الأشكال الأربعة / الشكل الأول / شروطه",
+          "editorialEnglish": "The four figures and the conditions of the first",
+          "displayedPages": "211–212",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=211&type=c_fbook"
+        },
+        {
+          "unit": "M-V-09",
+          "arabic": "الشكل الأول / ضروبه",
+          "editorialEnglish": "The four productive moods of the first figure",
+          "displayedPages": "213–214",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=213&type=c_fbook"
+        },
+        {
+          "unit": "M-V-10",
+          "arabic": "الشكل الثاني / شروطه",
+          "editorialEnglish": "The second figure and its conditions",
+          "displayedPages": "214–216",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=214&type=c_fbook"
+        },
+        {
+          "unit": "M-V-11",
+          "arabic": "الشكل الثاني / ضروبه / تمرين",
+          "editorialEnglish": "The four moods of the second figure and their proofs",
+          "displayedPages": "216–219",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=216&type=c_fbook"
+        },
+        {
+          "unit": "M-V-12",
+          "arabic": "الشكل الثالث / شروطه",
+          "editorialEnglish": "The third figure and its conditions",
+          "displayedPages": "219–220",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=219&type=c_fbook"
+        },
+        {
+          "unit": "M-V-13",
+          "arabic": "الشكل الثالث / ضروبه",
+          "editorialEnglish": "The six moods of the third figure and their proofs",
+          "displayedPages": "220–223",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=220&type=c_fbook"
+        },
+        {
+          "unit": "M-V-14",
+          "arabic": "تنبيهات / طريقة الخلف",
+          "editorialEnglish": "Remarks on reductio",
+          "displayedPages": "224",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=224&type=c_fbook"
+        },
+        {
+          "unit": "M-V-15",
+          "arabic": "تنبيهات / دليل الافتراض",
+          "editorialEnglish": "Proof by assumption: three stages and two worked proofs",
+          "displayedPages": "224–226",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=224&type=c_fbook"
+        },
+        {
+          "unit": "M-V-16",
+          "arabic": "تنبيهات / الرد",
+          "editorialEnglish": "Reduction to the first figure",
+          "displayedPages": "227",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=227&type=c_fbook"
+        },
+        {
+          "unit": "M-V-17",
+          "arabic": "الشكل الرابع / شروطه / ضروبه",
+          "editorialEnglish": "The fourth figure: conditions, moods, and proofs",
+          "displayedPages": "227–230",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=227&type=c_fbook"
+        },
+        {
+          "unit": "M-V-18",
+          "arabic": "تمرينات",
+          "editorialEnglish": "Exercises on the four figures",
+          "displayedPages": "231",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=231&type=c_fbook"
+        },
+        {
+          "unit": "M-V-19",
+          "arabic": "الاقتراني الشرطي / تعريفه وحدوده / أقسامه / ١ ـ المؤلف من المتصلات",
+          "editorialEnglish": "Conditional conjunctive syllogism: terms, divisions, and connected premises",
+          "displayedPages": "232–234",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=232&type=c_fbook"
+        },
+        {
+          "unit": "M-V-20",
+          "arabic": "٢ ـ المؤلف من المنفصلات / تمهيد / تحويل المنفصلة الموجبة إلى متصلة",
+          "editorialEnglish": "Disjunctive premises: converting affirmative disjunctions to connected conditionals",
+          "displayedPages": "235–237",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=235&type=c_fbook"
+        },
+        {
+          "unit": "M-V-21",
+          "arabic": "تحويل المنفصلة السالبة إلى متصلة",
+          "editorialEnglish": "Converting negative disjunctions to connected conditionals",
+          "displayedPages": "237",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=237&type=c_fbook"
+        },
+        {
+          "unit": "M-V-22",
+          "arabic": "تحويل المتصلة إلى منفصلة",
+          "editorialEnglish": "Converting connected conditionals to disjunctions",
+          "displayedPages": "238",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=238&type=c_fbook"
+        },
+        {
+          "unit": "M-V-23",
+          "arabic": "التأليف من المنفصلات وشروطه / طريقة أخذ النتيجة",
+          "editorialEnglish": "Combining disjunctive premises: conditions and a worked investigation",
+          "displayedPages": "238–241",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=238&type=c_fbook"
+        },
+        {
+          "unit": "M-V-24",
+          "arabic": "٣ ـ المؤلف من المتصلة والمنفصلة / أصنافه / شروطه وطريقة أخذ النتيجة",
+          "editorialEnglish": "A connected and a disjunctive premise",
+          "displayedPages": "241–243",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=241&type=c_fbook"
+        },
+        {
+          "unit": "M-V-25",
+          "arabic": "٤ ـ المؤلف من الحملية والمتصلة / أصنافه / طريقة أخذ النتيجة / الشروط",
+          "editorialEnglish": "A categorical and a connected premise",
+          "displayedPages": "243–245",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=243&type=c_fbook"
+        },
+        {
+          "unit": "M-V-26",
+          "arabic": "٥ ـ المؤلف من الحملية والمنفصلة / خاتمة",
+          "editorialEnglish": "A categorical and a disjunctive premise; closing remark on conditional syllogisms",
+          "displayedPages": "245–246",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=245&type=c_fbook"
+        },
+        {
+          "unit": "M-V-27",
+          "arabic": "القياس الاستثنائي / تعريفه وتأليفه / تقسيمه / شروطه",
+          "editorialEnglish": "Exceptional syllogism: composition, division, and conditions",
+          "displayedPages": "247–248",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=247&type=c_fbook"
+        },
+        {
+          "unit": "M-V-28",
+          "arabic": "حكم الاتصالي",
+          "editorialEnglish": "The connected exceptional syllogism",
+          "displayedPages": "248–249",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=248&type=c_fbook"
+        },
+        {
+          "unit": "M-V-29",
+          "arabic": "حكم الانفصالي",
+          "editorialEnglish": "The disjunctive exceptional syllogism and exhaustive division",
+          "displayedPages": "249–250",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=249&type=c_fbook"
+        },
+        {
+          "unit": "M-V-30",
+          "arabic": "خاتمة في لواحق القياس / القياس المضمر أو الضمير",
+          "editorialEnglish": "Implicit syllogism and enthymeme",
+          "displayedPages": "251",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=251&type=c_fbook"
+        },
+        {
+          "unit": "M-V-31",
+          "arabic": "كسب المقدمات بالتحليل",
+          "editorialEnglish": "Acquiring premises by analysis and the five stages of thought",
+          "displayedPages": "251–254",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=251&type=c_fbook"
+        },
+        {
+          "unit": "M-V-32",
+          "arabic": "القياسات المركبة / تمهيد وتعريف / أقسام القياس المركب",
+          "editorialEnglish": "Compound syllogisms: definition and two forms",
+          "displayedPages": "255–257",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=255&type=c_fbook"
+        },
+        {
+          "unit": "M-V-33",
+          "arabic": "قياس الخلف / كيفيته",
+          "editorialEnglish": "Reductio as a compound syllogism",
+          "displayedPages": "257–259",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=257&type=c_fbook"
+        },
+        {
+          "unit": "M-V-34",
+          "arabic": "قياس المساواة / تحليل هذا القياس",
+          "editorialEnglish": "The syllogism of equality and its analysis",
+          "displayedPages": "259–260",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=259&type=c_fbook"
+        },
+        {
+          "unit": "M-V-35",
+          "arabic": "٢ ـ الاستقراء / تعريفه / أقسامه",
+          "editorialEnglish": "Induction: definition, complete and incomplete",
+          "displayedPages": "261–262",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=261&type=c_fbook"
+        },
+        {
+          "unit": "M-V-36",
+          "arabic": "شبهة مستعصية",
+          "editorialEnglish": "The difficult objection concerning induction and certainty",
+          "displayedPages": "262",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=262&type=c_fbook"
+        },
+        {
+          "unit": "M-V-37",
+          "arabic": "حل الشبهة",
+          "editorialEnglish": "The solution: observation, causes, self-evidence, and complete similarity",
+          "displayedPages": "262–264",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=262&type=c_fbook"
+        },
+        {
+          "unit": "M-V-38",
+          "arabic": "٣ ـ التمثيل / تعريفه / أركانه",
+          "editorialEnglish": "Analogy: definition and its four components",
+          "displayedPages": "265–266",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=265&type=c_fbook"
+        },
+        {
+          "unit": "M-V-39",
+          "arabic": "التمثيل / قيمته العلمية",
+          "editorialEnglish": "The epistemic value of analogy and the complete cause",
+          "displayedPages": "266–267",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=266&type=c_fbook"
+        },
+        {
+          "unit": "M-V-40",
+          "arabic": "تمرينات على الأقيسة / انتهى الجزء الثاني",
+          "editorialEnglish": "Final exercises on syllogisms and the close of Part Two",
+          "displayedPages": "268–270",
+          "url": "https://lib.rafed.net/view.php?b_id=1604&page=268&type=c_fbook"
+        }
+      ]
     },
     {
       "book": 6,
@@ -613,16 +888,16 @@
   "summary": {
     "totalAuthorialBooks": 6,
     "sourcePagesCoveredByRegister": 455,
-    "localTranslatedUnits": 101,
+    "localTranslatedUnits": 140,
     "localIntroUnits": 11,
     "localBook3Units": 14,
     "otherAuthorialBooksLocallyTranslated": 4,
     "localBook1Units": 11,
     "localBook2Units": 17,
     "localBook4Units": 47,
-    "localBook5Units": 1,
+    "localBook5Units": 40,
     "otherAuthorialBooksLocallyTranslatedDefinition": "Books other than Book III with at least one local translated unit: I, II, IV, V."
   },
-  "accuracy": "New units M-C-26–47 and M-V-01 were read continuously against Rafed displayed pp.162–195 and 198–199. Displayed page labels are distinguished from unverified physical-pagination mappings. The p.169 image was visually transcribed; the defective p.193 digital table has an explicitly editorial English reconstruction. Targeted 1968 facsimile checks of the table and final examples support the table alignment, one complement mark, the division equation and the matching verb; one complement restoration remains conjectural. The full 1968 text remains uncollated. Earlier selection gaps, omitted charts, normalized M-K-14 and unresolved symbolic readings remain disclosed.",
+  "accuracy": "New units M-C-26–47 and M-V-01 were read continuously against Rafed displayed pp.162–195 and 198–199. Displayed page labels are distinguished from unverified physical-pagination mappings. The p.169 image was visually transcribed; the defective p.193 digital table has an explicitly editorial English reconstruction. Targeted 1968 facsimile checks of the table and final examples support the table alignment, one complement mark, the division equation and the matching verb; one complement restoration remains conjectural. The full 1968 text remains uncollated. Earlier selection gaps, omitted charts, normalized M-K-14 and unresolved symbolic readings remain disclosed. Stage IX completes the working Book V translation through displayed p.270: 798/798 source blocks in the new span, 39 new units, 17,441 English body words. Nine source-supported English decisions and the recovered classification figure are distinguished from four unresolved printed cruxes. The 1968 visual checks remain targeted; complete independent print collation is not claimed.",
   "updated": "2026-11-10"
 }

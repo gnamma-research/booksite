@@ -1,0 +1,3622 @@
+{
+  "schema": "nihaya.fresh-complete-comparison.v1",
+  "project": "Nihayat al-Hikma",
+  "date": "2026-11-11",
+  "assignedRange": "N-VI-10–21; N-VII-01–09",
+  "status": "complete",
+  "completedUnitCount": 21,
+  "completionDefinition": "Stored Arabic and English read in full; every corresponding early printed page visually read including boundaries; every corresponding later edited digital body paragraph and footnote read. Text extraction and hashes establish reproducibility, not a substitute for reading.",
+  "inputBookSHA256": "60cda09a94f18ee2e0b9d27b6fb9cea8f90a4e418b4b3682504b896c18918221",
+  "verification": {
+    "uniqueEarlyPagesRead": 43,
+    "laterPagesRead": 75,
+    "manuscriptCollationClaimed": false,
+    "specialistCertificationClaimed": false
+  },
+  "units": [
+    {
+      "id": "N-VI-10",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=141&type=c_fbook",
+        "page": "141–144"
+      },
+      "storedArabicSha256": "4312399e8c6972368ce45e9737389f9327ed503979b4be445c7c3ada554464d3",
+      "storedEnglishSha256": "83151bfbac57d26e5b750bfda95cbb03a1a0f897ed4527619a5757b1bbf33905",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          18
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          10
+        ],
+        "earlyPrintedPages": [
+          111,
+          112,
+          113
+        ],
+        "earlyCanvases": [
+          115,
+          116,
+          117
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          189,
+          190,
+          191,
+          192
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "Begins under the tenth-chapter heading on early 111 after VI9; concludes above the eleventh-chapter heading on early 113. Later 189 begins the chapter and 192 ends it before VI11 on 193.",
+        "segments": [
+          "Properties and division across material and immaterial being",
+          "No contrariety in number or geometrical quantities; distinct numerical species",
+          "Intensity versus increase; rotating-line finitude argument and named alternative proofs",
+          "Void and promised cross-reference; indefinitely continuable number versus actual completed infinity"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            111,
+            112,
+            113
+          ],
+          "pdfPagesAndCanvases": [
+            115,
+            116,
+            117
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/115",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/116",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/117"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-115.jpg",
+              "sha256": "8bb4cccf2f6963352278962e73dd8f7a04bc6fe88375a8f27ec4383af08316fa"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-116.jpg",
+              "sha256": "5a921bcdeaa2a0dfb2f6fc66a6c3fb4b11dc96837f272fbe7aa9d99a7e530b29"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-117.jpg",
+              "sha256": "0cd1ff4dfeb74b7205c9695b18635c259cb46acf20fe702c2a83072049bcbe5c"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-181.html",
+          "sha256": "6a21c7e165e40c0c4e5bfa1c831c70d6a22c874f9b39a3e5086abc3ed25e5ac2",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            189,
+            190,
+            191,
+            192
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=189&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=190&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=191&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=192&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [],
+      "orthographicCorrections": [
+        {
+          "category": "orthographicCorrections",
+          "old": "تلاقي الخطان",
+          "new": "تلاقى الخطان",
+          "reason": "Both early 112 and later 191 read the past-tense تلاقى; restore final alif maqṣūra in the stored transcription.",
+          "sourceGrade": "orthographic-alignment-with-both-witnesses"
+        },
+        {
+          "category": "orthographicCorrections",
+          "old": "«اللا يقفى»",
+          "new": "«اللايقفيّ»",
+          "reason": "Both witnesses name the indefinitely continuable infinite اللايقفي; restore the term's final yāʾ and join its lexical form. This is not a new doctrinal reading.",
+          "sourceGrade": "orthographic-alignment-with-both-witnesses"
+        }
+      ],
+      "vocalizationCorrections": [
+        {
+          "category": "vocalizationCorrections",
+          "old": "ترجٌّحٌ",
+          "new": "ترجُّحٌ",
+          "reason": "Repair misplaced nunation in the verbal noun tarajjuḥ; both witnesses have the same consonantal reading ترجح.",
+          "sourceGrade": "editorial-vocalization-repair"
+        }
+      ],
+      "proposedAuthorNotes": [],
+      "proposedEditorialNotes": [
+        {
+          "text": "The later editor at 1428 vol. 1 p. 192 n. 1 observes that the promised discussion of void is not actually supplied in VI17, the chapter on Where. The promise is present in the 1404 printed text (p. 112) and is retained; this later observation is not silently substituted into the author's wording."
+        }
+      ],
+      "unadoptedVariants": [],
+      "argumentFindings": [
+        "All six numbered judgments and the entire rotating-line argument are present in Arabic and represented in English. No body omission or original authorial footnote was found.",
+        "English correctly distinguishes numerical equality from identity of species and the indefinitely continuable series from an actually completed infinite. The historical arguments are retained as the author's arguments."
+      ],
+      "editorialCommentary": [
+        "Later 189 notes identify imaginal magnitude and references for numerical contrariety; 190 attributes the composite-number argument to al-Razi and the objection to Sabzawari; 191 lists finitude and void proponents and opponents. These are later bibliography and commentary, not missing authorial body."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 111,
+          "chapter": "الفصل العاشر — في أحكام مختلفة للكم",
+          "observation": "Chapter ordinal and subject visually verified; spelling and typography normalized in this label."
+        },
+        "later": {
+          "printedPage": 189,
+          "headings": [
+            "الفصل العاشر",
+            "في أحكام مختلفة للكمّ"
+          ]
+        }
+      },
+      "noMissingAuthorialNoteObserved": true,
+      "noteReplacements": []
+    },
+    {
+      "id": "N-VI-11",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=144&type=c_fbook",
+        "page": "144–146"
+      },
+      "storedArabicSha256": "c5bfffaa90b9852aeb22c18f32cef61308a144640a5d3c447099cb13ab1d241f",
+      "storedEnglishSha256": "eb5febb14eec5d0ede5673248f3a45e9d557a1c52cdf57f6e812353ab41a8c69",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          7
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          4
+        ],
+        "earlyPrintedPages": [
+          113,
+          114
+        ],
+        "earlyCanvases": [
+          117,
+          118
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          193,
+          194
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "Begins below VI10's ending on early 113; fourfold division and induction conclude at top of114 before VI12 heading. Later 193–194 entirely cover VI11; VI12 begins 195.",
+        "segments": [
+          "Definition and exclusion of other categories",
+          "Complete abridged Sadra quotation on descriptive definitions and the epistemic circularity objection",
+          "Four divisions and inductive basis"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            113,
+            114
+          ],
+          "pdfPagesAndCanvases": [
+            117,
+            118
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/117",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/118"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-117.jpg",
+              "sha256": "0cd1ff4dfeb74b7205c9695b18635c259cb46acf20fe702c2a83072049bcbe5c"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-118.jpg",
+              "sha256": "6c85c94f6c6c1bcbe271a59cc0f897a322b6c303848e5213d1c266bb4156d950"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-181.html",
+          "sha256": "6a21c7e165e40c0c4e5bfa1c831c70d6a22c874f9b39a3e5086abc3ed25e5ac2",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            193,
+            194
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=193&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=194&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [],
+      "orthographicCorrections": [
+        {
+          "category": "orthographicCorrections",
+          "field": "arabicTitle",
+          "old": "إنقسامه",
+          "new": "انقسامه",
+          "reason": "Correct hamzat al-waṣl in the chapter heading; the same heading is present in both witnesses.",
+          "sourceGrade": "editorial-orthographic-normalization"
+        }
+      ],
+      "vocalizationCorrections": [
+        {
+          "category": "vocalizationCorrections",
+          "old": "عرَّفُوه",
+          "new": "عرَّفوه",
+          "reason": "Remove the incorrect ḍamma from the past-tense third-person plural verb; the witnesses' consonants are unchanged.",
+          "sourceGrade": "editorial-vocalization-repair"
+        }
+      ],
+      "proposedAuthorNotes": [
+        {
+          "arabic": "الأسفار، ج ٤، ص ٥٨.",
+          "english": "Author's citation: al-Asfār, vol. 4, p. 58. The 1428 edition gives pp. 58–59 (vol. 1 p. 194 n. 1).",
+          "source": "1404 printed facsimile p. 113, inline citation at the end of the abridged quotation; 1428 digital vol. 1 p. 194 n. 1.",
+          "reason": "Restore the original author's printed citation, omitted from the stored Arabic/English unit, while distinguishing the later expanded locator."
+        }
+      ],
+      "proposedEditorialNotes": [
+        {
+          "text": "At 1428 vol. 1 p. 193 n. 2 the later editor objects that the Necessary Existent is already outside the domain of the highest genera of possible quiddities, because the Necessary has no quiddity. He therefore regards 'accident' as excluding substance in this inquiry. The author's broader exclusion statement remains unchanged."
+        }
+      ],
+      "unadoptedVariants": [],
+      "argumentFindings": [
+        "All Arabic and English paragraphs, including both halves of the Sadra quotation, are present. The English preserves the distinction between an essential definition and an incomplete description.",
+        "The original inline citation after the abridged quotation was absent from the stored unit. It is proposed for restoration as an explicitly authorial source note; the later editor extends its page range."
+      ],
+      "editorialCommentary": [
+        "Later 193 n. 1 surveys al-Razi, Sabzawari and Ibn Sina's definitions. Later 194 n. 2 gives sources for the fourfold division and notes that Sadra judges proposed exhaustive derivations weak. None is represented as an authorial footnote."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 113,
+          "chapter": "الفصل الحادي عشر — في الكيف وانقسامه الأوّلي",
+          "observation": "Chapter ordinal and subject visually verified; spelling and typography normalized in this label."
+        },
+        "later": {
+          "printedPage": 193,
+          "headings": [
+            "الفصل الحادي عشر",
+            "في الكيف وانقسامه الأوّليّ"
+          ]
+        }
+      },
+      "noMissingAuthorialNoteObserved": false,
+      "noteReplacements": []
+    },
+    {
+      "id": "N-VI-12",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=146&type=c_fbook",
+        "page": "146–149"
+      },
+      "storedArabicSha256": "4d3ead5ee03608f6ee04892085162a25048087fa70025d75b72cae3b113cce37",
+      "storedEnglishSha256": "a83adef2fa4ca525289b747f40aeb6d7c114ea2b500de5d9e03c86118d77658a",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          18
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          9
+        ],
+        "earlyPrintedPages": [
+          114,
+          115
+        ],
+        "earlyCanvases": [
+          118,
+          119
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          195,
+          196,
+          197,
+          198
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "Begins beneath VI11 on early 114 and ends with the four additional tangible qualities and chapter-end ornament on 115; VI13 begins 116. Later 195–198 form the whole chapter, including continued notes crossing196/197 and 197/198.",
+        "segments": [
+          "Assimilation and five sensible classes; theories of color",
+          "Light, manifestation, opposition to darkness and alternative ontologies",
+          "Sound and its distinction from air undulation; nine tastes",
+          "Odors and human olfactory weakness; twelve tangible qualities and added composites"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            114,
+            115
+          ],
+          "pdfPagesAndCanvases": [
+            118,
+            119
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/118",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/119"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-118.jpg",
+              "sha256": "6c85c94f6c6c1bcbe271a59cc0f897a322b6c303848e5213d1c266bb4156d950"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-119.jpg",
+              "sha256": "171c80bbda8081f84091e69ddc67a1de1a0f9b2ca7a9eb4b59975f577b89e5b0"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-181.html",
+          "sha256": "6a21c7e165e40c0c4e5bfa1c831c70d6a22c874f9b39a3e5086abc3ed25e5ac2",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            195,
+            196,
+            197,
+            198
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=195&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=196&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=197&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=198&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [
+        {
+          "category": "englishCorrections",
+          "old": "desiccation, wetness",
+          "new": "surface dryness, wetness",
+          "reason": "الجفاف is a state contrasted with البلّة, not the process of drying. The later explanation (198 n. 2) defines the contrast by absence or presence of adhering wet material; 'surface dryness' distinguishes it from the earlier constitutional اليبوسة.",
+          "sourceGrade": "English-lexical-clarification-supported-by-later-commentary"
+        }
+      ],
+      "orthographicCorrections": [
+        {
+          "category": "orthographicCorrections",
+          "old": "عنيفأو",
+          "new": "عنيف أو",
+          "reason": "Restore the missing word boundary present in early 115 and later 196.",
+          "sourceGrade": "layout-only"
+        },
+        {
+          "category": "orthographicCorrections",
+          "old": "التموُّجُالهواءَ",
+          "new": "التموُّجُ الهواءَ",
+          "reason": "Restore the word boundary between the subject and object of بلغ, as printed in both witnesses.",
+          "sourceGrade": "layout-only"
+        },
+        {
+          "category": "orthographicCorrections",
+          "old": "التفة",
+          "new": "التفه",
+          "reason": "Early 115 and later 197 give التفه, blandness; correct the stored final letter without changing the translation.",
+          "sourceGrade": "orthographic-alignment-with-both-witnesses"
+        }
+      ],
+      "vocalizationCorrections": [
+        {
+          "category": "vocalizationCorrections",
+          "old": "جَعَل الغيرَ",
+          "new": "جَعْل الغيرِ",
+          "reason": "The gloss after أي requires the verbal noun 'making another', not the finite verb 'he made'; الغير is genitive as its complement. Consonantal جعل الغير is common to both witnesses; the vocalization is editorial.",
+          "sourceGrade": "contextual-editorial-vocalization"
+        },
+        {
+          "category": "vocalizationCorrections",
+          "old": "طيبّة",
+          "new": "طيّبة",
+          "reason": "Move the shadda to yāʾ in pleasant; later 197 explicitly prints طيّبة.",
+          "sourceGrade": "editorial-vocalization-repair"
+        }
+      ],
+      "proposedAuthorNotes": [],
+      "proposedEditorialNotes": [
+        {
+          "text": "The later editor distinguishes three accounts of darkness and light at 1428 vol. 1 p. 196 n. 3: negation/affirmation among the Illuminationists, privation/possession among the Peripatetics, and contrariety among theologians. The author's body reports the privation/possession account. This later comparison is commentary, not a replacement of the authorial claim."
+        }
+      ],
+      "unadoptedVariants": [],
+      "argumentFindings": [
+        "The entire fivefold sensible-quality discussion is present. All lists preserve their members and order; English accurately reports the competing historical views of light and sound without presenting them as modern physical findings.",
+        "No original authorial citation or footnote is missing from the early printed chapter. Later bibliographic and explanatory notes have been distinguished from the author's body."
+      ],
+      "editorialCommentary": [
+        "Later 195 attributes the five primary colors to the Muʿtazila and discusses the imaginative-color view. Later 196 distinguishes three accounts of light/darkness opposition. Later 196–197 contrasts philosophical and theological accounts of sound and locates Ibn Sina's remark on smell. Later 198 explains the tangible qualities through al-Katibi and records disagreements over their classification."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 114,
+          "chapter": "الفصل الثاني عشر — في الكيفيّات المحسوسة",
+          "observation": "Chapter ordinal and subject visually verified; spelling and typography normalized in this label."
+        },
+        "later": {
+          "printedPage": 195,
+          "headings": [
+            "الفصل الثاني عشر",
+            "في الكيفيّات المحسوسة (١)"
+          ]
+        }
+      },
+      "noMissingAuthorialNoteObserved": true,
+      "noteReplacements": []
+    },
+    {
+      "id": "N-VI-13",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=150&type=c_fbook",
+        "page": "150–153"
+      },
+      "storedArabicSha256": "4403658ed7f51ad3ae0cc0ec6cca82caaa8198fb850444d51384c2fcf0997e1e",
+      "storedEnglishSha256": "663f0fd793558a84039a38bb7ff463dbf70580491dca28b7d3407980bd00a79c",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          28
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          20
+        ],
+        "earlyPrintedPages": [
+          116,
+          117,
+          118,
+          119
+        ],
+        "earlyCanvases": [
+          120,
+          121,
+          122,
+          123
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          199,
+          200,
+          201,
+          202,
+          203,
+          204
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "Begins at early 116 heading; early 117 continues the angle definition,118 continues species and numerical qualities,119 ends with imaginal qualities before VI14. Later 199–204 include the complete body and notes, including the angle-classification note continued from 200 to 201.",
+        "segments": [
+          "Three quantitative-quality divisions and rejection of bodily configuration as one real genus",
+          "Definitions of shape and angle; Ibn Sina's dihedral angle",
+          "Straightness/circularity and argument from changing boundary subjects",
+          "Corollaries against contrariety and gradation; numerical qualities and imaginal instantiation"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            116,
+            117,
+            118,
+            119
+          ],
+          "pdfPagesAndCanvases": [
+            120,
+            121,
+            122,
+            123
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/120",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/121",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/122",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/123"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-120.jpg",
+              "sha256": "cb9d9973c3e632b963ef00ca7e29f281a57bf35ca6465091d3160f4d3f986f6f"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-121.jpg",
+              "sha256": "145033b484f90d862c7af60f594462f9a14eb83fccc2793dd5b5ccd821d64a6b"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-122.jpg",
+              "sha256": "6444983260ff6ed3c9b45e33d4faa23265e66290dfc78b6dc3dc8d763ef8d8fd"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-123.jpg",
+              "sha256": "9a6c687db5967fddca7df703ae2fb32466eaf927c888c8661495677985aade42"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-181.html",
+          "sha256": "6a21c7e165e40c0c4e5bfa1c831c70d6a22c874f9b39a3e5086abc3ed25e5ac2",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            199,
+            200
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=199&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=200&type=c_fbook"
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-201.html",
+          "sha256": "e816dfa1f9a09c98a0699f0f0e1f251957f4cf251ccef4b009d8bd250e219464",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            201,
+            202,
+            203,
+            204
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=201&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=202&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=203&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=204&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [
+        {
+          "category": "arabicCorrections",
+          "old": "وإن كان لا يفارقان",
+          "new": "وإن كانا لا يفارقان",
+          "reason": "Early 117 and later 201 both read the dual كانا; the stored transcription drops its final alif. Restore agreement with the two qualities.",
+          "sourceGrade": "base-transcription-error-corrected-from-both-witnesses"
+        },
+        {
+          "category": "arabicCorrections",
+          "old": "أن يشمل الشديدُ على الضعيف",
+          "new": "أن يشمل الشديدُ الضعيفَ",
+          "reason": "Adopt the later editor's expressly documented grammatical repair: شمل takes a direct object. Early 118 and base have the reported mixed construction; later 203 n. 1 supplies the correction and mentions يشتمل ... على as an alternative.",
+          "sourceGrade": "explicit-later-editor-emendation",
+          "laterFootnote": 1
+        }
+      ],
+      "englishCorrections": [
+        {
+          "category": "englishCorrections",
+          "old": "First, there is no contrariety between straightness and circularity:",
+          "new": "First, there is no contrariety between straight and circular lines:",
+          "reason": "The corollary explicitly uses the substantivized المستقيم والمستدير, whose bearer-subjects are crucial to the argument. Preserve the distinction from the abstract qualities named earlier.",
+          "sourceGrade": "English-subject-alignment-with-both-witnesses"
+        },
+        {
+          "category": "englishCorrections",
+          "old": "Second, there is no intensification or weakening between straightness and circularity.",
+          "new": "Second, there is no intensification or weakening between straight and circular lines.",
+          "reason": "Align the second corollary with its explicit المستقيم والمستدير subjects; no change to the author's argument is implied.",
+          "sourceGrade": "English-subject-alignment-with-both-witnesses"
+        }
+      ],
+      "orthographicCorrections": [
+        {
+          "category": "orthographicCorrections",
+          "old": "المتلاقيَينْن",
+          "new": "المتلاقيَيْن",
+          "reason": "Remove the duplicated nūn in the dual participle; early 117 and later 201 both have المتلاقيين.",
+          "sourceGrade": "transcription-repair-attested-in-both-witnesses"
+        }
+      ],
+      "vocalizationCorrections": [],
+      "proposedAuthorNotes": [],
+      "proposedEditorialNotes": [
+        {
+          "text": "At 1428 vol. 1 p. 201 n. 5 the editor objects that 'the two differ specifically' appears grammatically to refer to straightness and circularity, while the following argument establishes specific difference between the straight and circular lines. He proposes making those subjects explicit. The Arabic authorial wording is retained and this interpretation is disclosed; the immediately following corollaries explicitly use المستقيم والمستدير."
+        },
+        {
+          "text": "At 1428 vol. 1 p. 203 n. 1 the editor reports the reading أن يشمل الشديد على الضعيف and corrects it to أن يشمل الشديد الضعيف, also allowing أن يشتمل الشديد على الضعيف. The edition adopts his printed direct-object wording. The early 1404 p. 118 and stored base preserve the reported construction."
+        }
+      ],
+      "unadoptedVariants": [
+        {
+          "text": "The shape definition ends أحاط به حدود خاصة in early 116 and the base; later 200 expands this to أحاط به حد أو حدود خاصة without a variant footnote. The early wording is retained, since the preceding definition already explicitly allows one or more boundaries and its meaning is coherent."
+        }
+      ],
+      "argumentFindings": [
+        "All definitions, examples, inferential steps and three final consequences are present in both stored languages. No original author footnote or citation locator is missing.",
+        "The later edition explicitly repairs the grammar of the gradation sentence at 203 n. 1. Its adopted direct-object construction is recorded as a later editorial emendation, not a manuscript reading.",
+        "English is aligned with the substantivized straight/circular in the two corollaries; the separate difficulty over the earlier pronoun is left visible in an attributed editorial note."
+      ],
+      "editorialCommentary": [
+        "Later 199 supplies sources for configuration; 200–201 surveys competing categorizations of angles; 202 records Qushji's objection to the common-subject argument and a reference to Lahiji's reply; 203–204 clarify numerical qualities and point back to VI10."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 116,
+          "chapter": "الفصل الثالث عشر — في الكيفيّات المختصّة بالكميّات",
+          "observation": "Chapter ordinal and subject visually verified; spelling and typography normalized in this label."
+        },
+        "later": {
+          "printedPage": 199,
+          "headings": [
+            "الفصل الثالث عشر",
+            "في الكيفيّات المختصّة بالكمّيّات"
+          ]
+        }
+      },
+      "noMissingAuthorialNoteObserved": true,
+      "noteReplacements": []
+    },
+    {
+      "id": "N-VI-14",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=153&type=c_fbook",
+        "page": "153–155"
+      },
+      "storedArabicSha256": "cf1b453a90b5e57900cdeabac89d96dcb3a9953af22114684d95f0cc52c401f6",
+      "storedEnglishSha256": "9f83e25c150e055b6595f42219e4b94b181c8e4a8042cba3021ed373f9266f5e",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          12
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          9
+        ],
+        "earlyPrintedPages": [
+          119,
+          120
+        ],
+        "earlyCanvases": [
+          123,
+          124
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          205,
+          206
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "Early 119 begins with the chapter heading and subtitle; early 120 ends not at the end of the Sadra quotation but after the separate preparedness/relation paragraph, before the VI15 heading. Later 206 confirms that complete final paragraph before VI15 begins 207. The stored boundary incorrectly places a truncated version in VI15.",
+        "segments": [
+          "Generic preparedness and two species; third active-capacity proposal",
+          "Entire Sadra quotation excluding active capacity and treating preparedness as passive",
+          "Final authorial paragraph on preparedness as relation or relational quality, restored from both witnesses"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            119,
+            120
+          ],
+          "pdfPagesAndCanvases": [
+            123,
+            124
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/123",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/124"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-123.jpg",
+              "sha256": "9a6c687db5967fddca7df703ae2fb32466eaf927c888c8661495677985aade42"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-124.jpg",
+              "sha256": "abe811cc96c1f90a55e5dbd243d36ad41a8f39186f4fe8942c548f0561a2bd84"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-201.html",
+          "sha256": "e816dfa1f9a09c98a0699f0f0e1f251957f4cf251ccef4b009d8bd250e219464",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            205,
+            206
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=205&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=206&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [
+        {
+          "category": "arabicCorrections",
+          "old": "فثبت ممّا بيّنّا بالبرهان أنّ لا قوّةَ ولا استعدادَ بالذات لكون الشيء فاعلا ، بل إنّما القوّة والاستعداد للإنفعال ولصيرورة الشيء قابلا لشيء بعد أن لم يكن» ، إنتهى.",
+          "new": "فثبت ممّا بيّنّا بالبرهان أنّ لا قوّةَ ولا استعدادَ بالذات لكون الشيء فاعلا ، بل إنّما القوّة والاستعداد للإنفعال ولصيرورة الشيء قابلا لشيء بعد أن لم يكن» ، إنتهى.\n\nوأمّا نفس الاستعداد فقد قيل: «إنّها من المضاف، إذ لا يعقل إلاّ بين شيئين: مستعدّ ومستعدّ له، فلا يكون نوعاً من الكيف». ويظهر من بعضهم أنّه كيفٌ يلزمه إضافة، كالعلم الذي هو من الكيفيّات النفسانيّة ويلزمه الإضافة بين موضوعه ومتعلّقه، أعني العالم والمعلوم، وكالقدرة والإرادة.",
+          "reason": "Restore the complete final authorial paragraph to VI14 from early 120 and later 206; its damaged opening was erroneously fused with VI15. This is a chapter-boundary and transcription restoration, not a later editor’s conjecture.",
+          "sourceGrade": "body-omission-and-boundary-restoration-attested-in-both-witnesses"
+        }
+      ],
+      "englishCorrections": [
+        {
+          "category": "englishCorrections",
+          "old": "“From what we have demonstrated it is therefore established that there is intrinsically no capacity or preparedness for a thing's being an agent. Capacity and preparedness are only for being affected, and for a thing to become receptive to something after it had not been so.” End of quotation.",
+          "new": "“From what we have demonstrated it is therefore established that there is intrinsically no capacity or preparedness for a thing's being an agent. Capacity and preparedness are only for being affected, and for a thing to become receptive to something after it had not been so.” End of quotation.\n\nAs for preparedness itself, it has been said: “It belongs to relation, since it is intelligible only between two things: something prepared and that for which it is prepared. It is therefore not a species of quality.” From some writers it appears that it is a quality entailing a relation, like knowledge, which belongs to the psychic qualities and entails a relation between its subject and its object—that is, the knower and the known—and like capacity and will.",
+          "reason": "Translate the restored complete final paragraph at its proper VI14 location, including the missing object/knower-known/capacity-and-will conclusion.",
+          "sourceGrade": "new-translation-of-restored-authorial-paragraph"
+        }
+      ],
+      "orthographicCorrections": [],
+      "vocalizationCorrections": [],
+      "proposedAuthorNotes": [
+        {
+          "arabic": "الأسفار، ج ٤، ص ١٠٥.",
+          "english": "Author's citation: al-Asfār, vol. 4, p. 105. The 1428 editor supplies pp. 105–106 (vol. 1 p. 206 n. 1).",
+          "source": "1404 p. 120, inline after the quotation; 1428 vol. 1 p. 206 n. 1.",
+          "reason": "Restore the omitted author's original locator, distinguishing the later expanded range."
+        }
+      ],
+      "proposedEditorialNotes": [],
+      "unadoptedVariants": [
+        {
+          "text": "In the final paragraph early 120 reads ويلزمه الإضافة with knowledge (العلم) as masculine antecedent; later 206 reads وتلزمه الإضافة. The restored text retains early ويلزمه; the distinction does not change the translated relation."
+        }
+      ],
+      "argumentFindings": [
+        "The main Arabic and English argument is complete through the quoted proof, but the original author citation is omitted. Restore the early locator as an authorial note.",
+        "The final paragraph is misassigned to VI15 and corrupted there: its closing account of subject/object, knower/known, capacity and will is missing. Both complete witnesses establish the correct VI14 boundary. Restore the entire paragraph here and remove the damaged fragment from VI15 in its coordinated review.",
+        "English for the restored paragraph is newly supplied from the complete Arabic witnesses; the defective fragment in the old VI15 is not treated as a completed translation."
+      ],
+      "editorialCommentary": [
+        "Later 205 notes explain morbidity and health-resistance, attribute the active-capacity view, and locate Ibn Sina’s discussion of wrestling. Later 206 n. 2 attributes the relational account of preparedness to al-Razi and Sadra; n. 3 classifies the alternative as a quality with relation."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 119,
+          "chapter": "الفصل الرابع عشر — في الكيفيّات الاستعداديّة",
+          "observation": "Chapter ordinal and subject visually verified; spelling and typography normalized in this label."
+        },
+        "later": {
+          "printedPage": 205,
+          "headings": [
+            "الفصل الرابع عشر",
+            "في الكيفيّات الاستعداديّة"
+          ]
+        }
+      },
+      "noMissingAuthorialNoteObserved": false,
+      "noteReplacements": []
+    },
+    {
+      "id": "N-VI-15",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=155&type=c_fbook",
+        "page": "155–162"
+      },
+      "storedArabicSha256": "826c46c4db9f27b07501f112df0f459a5be85f8a440c1e9fedc4fbfd8216a601",
+      "storedEnglishSha256": "d69572bcbc6326b40e092c83b0601a9c1e94346d2ec060c32f7e4ab2efa34b82",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          48
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          26
+        ],
+        "earlyPrintedPages": [
+          120,
+          121,
+          122,
+          123,
+          124,
+          125
+        ],
+        "earlyCanvases": [
+          124,
+          125,
+          126,
+          127,
+          128,
+          129
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "Begins at the VI15 heading near the bottom of early 120, not with the preceding preparedness paragraph; continues through the notice on natural-scientific findings at early 125, then VI16 begins. Later 207–215 confirm the whole chapter, including continued notes 207/208,210/211,211/212 and 213/214.",
+        "segments": [
+          "State/habit, will and the complete Sadra quotation",
+          "Cognitive agency, desire, will and motive power; three consequences",
+          "Animal and divine power; acquired/present knowledge; character and moral faculties",
+          "Virtues/vices, states, pleasure/pain and privation objection/reply; concluding notice"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            120,
+            121,
+            122,
+            123,
+            124,
+            125
+          ],
+          "pdfPagesAndCanvases": [
+            124,
+            125,
+            126,
+            127,
+            128,
+            129
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/124",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/125",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/126",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/127",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/128",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/129"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-124.jpg",
+              "sha256": "abe811cc96c1f90a55e5dbd243d36ad41a8f39186f4fe8942c548f0561a2bd84"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-125.jpg",
+              "sha256": "6083d66c23ee6abeceb26b7c78bfff45e70b8de085ec35b67ccb72bfcb82ce31"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-126.jpg",
+              "sha256": "f24bb617e138a48fe5f73766eacd46e416feaea06fe4b9298eb859562b1de3e8"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-127.jpg",
+              "sha256": "512ad360558e966412412027bad8aa627dab745d084cf22db9a555dd0626bfa2"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-128.jpg",
+              "sha256": "dbf12860ba3333f0b586dc73370a51ff65239bf350a7ba80f897732697a4f342"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-129.jpg",
+              "sha256": "95cc4af83417cb9ec295b013341e3f4c1a0d2383db2eddd208ee87ad13805934"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-201.html",
+          "sha256": "e816dfa1f9a09c98a0699f0f0e1f251957f4cf251ccef4b009d8bd250e219464",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            207,
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=207&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=208&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=209&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=210&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=211&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=212&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=213&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=214&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=215&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [
+        {
+          "category": "arabicCorrections",
+          "old": "وأمّا نفس الاستعداد ، فقد قيل : «إنّها من المضاف ، إذ لا يعقل إلاّ بين شيئيْن مستعدّ ومستعدّ له ، فلا يكون نوعاً من الكيف» ويظهر من بعضهم أنّه كيفٌ يلزمه إضافة ، كالعلم الذي هو من الكيفيّات النفسانيّة وتلزمه الإضافة بين موضوعه في الكيفيّات النفسانيّة",
+          "new": "",
+          "reason": "Remove the truncated VI14 tail and fused duplicate heading; complete VI14 paragraph is restored in its own unit. Early 120 and later 207 establish the VI15 opening.",
+          "sourceGrade": "chapter-boundary-transcription-repair-attested-in-both-witnesses"
+        }
+      ],
+      "englishCorrections": [
+        {
+          "category": "englishCorrections",
+          "old": "As for preparedness itself, it has been said: “It belongs to relation, since it is intelligible only between two things, something prepared and that for which it is prepared. Thus it is not a species of quality.” From some writers it appears that it is a quality entailing a relation, like knowledge, which is one of the psychic qualities and entails a relation between its subject …\n\n",
+          "new": "",
+          "reason": "Remove the truncated VI14 paragraph from VI15; its complete translation is restored to VI14, ending the artificial ellipsis.",
+          "sourceGrade": "translation-boundary-repair"
+        },
+        {
+          "category": "englishCorrections",
+          "old": "If this assent is necessary or a firmly established habit",
+          "new": "If this assent is self-evident or a firmly established habit",
+          "reason": "ضروري here contrasts with assent reached through deliberation, so it concerns immediate cognition, not metaphysical necessity.",
+          "sourceGrade": "English-epistemic-modal-disambiguation"
+        },
+        {
+          "category": "englishCorrections",
+          "old": "If, however, the assent is not necessary and already settled",
+          "new": "If, however, the assent is not self-evidently settled",
+          "reason": "Align the scope of لم يكن ضروريا مقضيا به and avoid suggesting that the soul deliberates over assent that is already settled.",
+          "sourceGrade": "English-scope-and-epistemic-clarification"
+        },
+        {
+          "category": "englishCorrections",
+          "old": "what is contrary insofar as it is contrary",
+          "new": "what is adverse insofar as it is adverse",
+          "expectedOccurrences": 2,
+          "reason": "المنافي names what is adverse to the apprehending subject here; avoid confusing it with the technical opposition of contrariety discussed elsewhere.",
+          "sourceGrade": "English-terminological-disambiguation"
+        }
+      ],
+      "orthographicCorrections": [
+        {
+          "category": "orthographicCorrections",
+          "old": "يغايِرُ؛ النفرةَ",
+          "new": "يغايِرُ النفرةَ",
+          "reason": "Remove intrusive semicolon between the verb and its object; both witnesses have the continuous phrase.",
+          "sourceGrade": "layout-only"
+        }
+      ],
+      "vocalizationCorrections": [
+        {
+          "category": "vocalizationCorrections",
+          "old": "لازُمُه",
+          "new": "لازِمُه",
+          "reason": "Correct the lexical vocalization of lāzim; no consonantal change.",
+          "sourceGrade": "editorial-vocalization-repair"
+        },
+        {
+          "category": "vocalizationCorrections",
+          "old": "نسبةَ المزاج",
+          "new": "نسبةُ المزاج",
+          "reason": "The phrase is the nominative predicate of نسبتها, not an accusative complement. Witness consonants are unchanged.",
+          "sourceGrade": "contextual-editorial-case-vocalization"
+        },
+        {
+          "category": "vocalizationCorrections",
+          "old": "فضيلةْ ممدوحةْ",
+          "new": "فضيلةٌ ممدوحةٌ",
+          "reason": "Replace inappropriate word-final sukūns with the nominative predicate and agreeing adjective; consonants and meaning unchanged.",
+          "sourceGrade": "contextual-editorial-case-vocalization"
+        },
+        {
+          "category": "vocalizationCorrections",
+          "old": "إنمّا",
+          "new": "إنّما",
+          "reason": "Correct misplaced shadda in the restrictive particle.",
+          "sourceGrade": "editorial-vocalization-repair"
+        }
+      ],
+      "proposedAuthorNotes": [
+        {
+          "arabic": "الأسفار، ج ٤، ص ١١٣.",
+          "english": "Author's citation after the quotation on will: al-Asfār, vol. 4, p. 113.",
+          "source": "1404 printed p. 121, inline locator; 1428 vol. 1 p. 208 n. 1.",
+          "reason": "The printed original citation is absent from the stored unit; restore as an authorial locator."
+        }
+      ],
+      "proposedEditorialNotes": [
+        {
+          "text": "At1428 vol. 1 p. 209 n. 1 the editor restricts the movement-of-muscles description to bodily acts, since inward acts do not require muscular movement. At n. 6 he objects that the necessary sequence from desire to will conflicts with the preceding distinction between them and the example of desiring without willing. These are later objections; the authorial sequence is preserved."
+        },
+        {
+          "text": "At1428 vol. 1 p. 211 n. 1 the editor notes that the promised discussion of the separate beings’ knowledge is to come in XI1 and XI11, despite the author’s backward-looking تقدّم. The printed wording is retained with the corrected navigation supplied here."
+        },
+        {
+          "text": "At1428 vol. 1 pp. 211–212 n. 2 the editor argues that character is the stable quality through which voluntary actions proceed from the soul, not itself the agent producing them. The author’s definition is retained and his dependence on willing is kept visible."
+        },
+        {
+          "text": "At1428 vol. 1 p. 215 n. 2 the editor quotes a pupil’s objection that pleasure and pain are both positive qualities and therefore contraries. The pupil also rejects treating privation itself as present to the soul. This disagreement is reported as later commentary; it does not overwrite the author’s privation account and reply."
+        }
+      ],
+      "unadoptedVariants": [],
+      "argumentFindings": [
+        "All 48 stored Arabic and 26 English paragraphs were read, including the corrupt opening. The entire genuine VI15 body is present after its heading; the preceding fragment belongs to VI14 and has been fully restored there.",
+        "The two earlier incorporated emendations from later 209 nn. 3–4 (كمالاته and يميّز) remain intact and are not counted again as new adoptions. The linked page in their current note is corrected from 205 to 209.",
+        "Restore the original Asfar 4 p. 113 locator after the quotation on will. Distinguish later philosophical objections from the author’s argument; retain the complete pain objection and reply and the author’s concluding invitation to consult natural science."
+      ],
+      "editorialCommentary": [
+        "Later 207 surveys the state/habit issue; 208 identifies Sabzawari on intensified desire; 210–211 surveys categories of knowledge and their different aspects; 212–213 explains character and ethical examples; 213–214 surveys rival pleasure definitions; 215 supplies provenance for the evil objection and answer. All notes have been read in their continued page context."
+      ],
+      "unresolvedIssues": [
+        "The repeated presence clause at early 123/later 211 (وإن كانت هي أيضا بما أنها من صنعها حاضرة عندها) has a compressed pronoun chain whose final antecedents are not disambiguated by these witnesses. The English retains the transmitted surface anaphora; no conjectural Arabic emendation is made."
+      ],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 120,
+          "chapter": "الفصل الخامس عشر — في الكيفيات النفسانية",
+          "observation": "Chapter ordinal and subject visually verified; typography normalized in this label."
+        },
+        "later": {
+          "printedPage": 207,
+          "headings": [
+            "الفصل الخامس عشر",
+            "في الكيفيّات النفسانيّة"
+          ]
+        }
+      },
+      "noteReplacements": [
+        {
+          "old": {
+            "type": "translation",
+            "text": "The supplied transcription opens with the end of the preceding discussion of preparedness, then runs into this chapter’s heading. Its comparison with knowledge breaks off after “between its subject”; the ellipsis marks that textual break, and no missing counterpart has been supplied."
+          },
+          "new": {
+            "type": "translation",
+            "text": "The damaged tail of the preceding preparedness discussion has been restored in full to N-VI-14 from the 1404 printed p. 120 and 1428 digital vol. 1 p. 206. N-VI-15 now begins at its attested heading with الكيفيّة النفسانيّة. The duplicated heading and truncated translation fragment have been removed."
+          },
+          "reason": "Replace the obsolete damaged-source warning with the documented completed boundary restoration."
+        },
+        {
+          "old": {
+            "type": "Textual emendation · 1428 AH editor",
+            "text": "At N-VI-15 the 1417 AH base reads «بما أنّها كمالاتها الثانية» (in this second occurrence of the phrase) and «يتمّيز به الكمال من غيره». The 1428 AH editor, vol. 1 p. 209 nn. 3–4, explicitly prints «كمالاته الثانية» (the human's perfections) and «يميّز به» (the human agent distinguishes through knowledge), recording the earlier readings as copy readings. The reader adopts these two editorial emendations, while leaving intact an earlier occurrence «من كمالاتها الثانية» that correctly refers to the feminine soul. The previous readings remain here; no manuscript-attested variant is claimed.",
+            "url": "https://lib.rafed.net/view.php?b_id=3108&page=205&type=c_fbook",
+            "source": "1428 revised editorial print, not independently verified manuscript witness"
+          },
+          "new": {
+            "type": "Textual emendation · 1428 AH editor",
+            "text": "At N-VI-15 the 1417 AH base reads «بما أنّها كمالاتها الثانية» (in this second occurrence of the phrase) and «يتمّيز به الكمال من غيره». The 1428 AH editor, vol. 1 p. 209 nn. 3–4, explicitly prints «كمالاته الثانية» (the human's perfections) and «يميّز به» (the human agent distinguishes through knowledge), recording the earlier readings as copy readings. The reader adopts these two editorial emendations, while leaving intact an earlier occurrence «من كمالاتها الثانية» that correctly refers to the feminine soul. The previous readings remain here; no manuscript-attested variant is claimed.",
+            "url": "https://lib.rafed.net/view.php?b_id=3108&page=209&type=c_fbook",
+            "source": "1428 revised editorial print, not independently verified manuscript witness"
+          },
+          "reason": "Point the already adopted209 nn. 3–4 emendation note to its actual cited source page; preserve its substantive content and historical decisions."
+        }
+      ],
+      "noMissingAuthorialNoteObserved": false
+    },
+    {
+      "id": "N-VI-16",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=162&type=c_fbook",
+        "page": "162–167"
+      },
+      "storedArabicSha256": "286758b6d5337942de7c2c6239073cdd90fcdd3234ef3b210b6bc70bae851a82",
+      "storedEnglishSha256": "992df0f05f0462a85051f9ae6cbc932fb56ff9679a356111cd8459cc11767401",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          32
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          27
+        ],
+        "earlyPrintedPages": [
+          125,
+          126,
+          127,
+          128,
+          129
+        ],
+        "earlyCanvases": [
+          129,
+          130,
+          131,
+          132,
+          133
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          216,
+          217,
+          218,
+          219,
+          220
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "VI16 begins below the notice of VI15 on early 125 and ends on early 129 before the Where heading. Later 216–220 cover all five discussions, with the final note from 219 continued on 220.",
+        "segments": [
+          "Relational categories versus ontological dependence",
+          "Definition, reciprocal relation and strict/ordinary relatives",
+          "External existence and the full Sadra quotation",
+          "Correlative equivalence and temporal/future-knowledge objections and replies",
+          "Examples across all categories and two divisions of relation"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            125,
+            126,
+            127,
+            128,
+            129
+          ],
+          "pdfPagesAndCanvases": [
+            129,
+            130,
+            131,
+            132,
+            133
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/129",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/130",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/131",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/132",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/133"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-129.jpg",
+              "sha256": "95cc4af83417cb9ec295b013341e3f4c1a0d2383db2eddd208ee87ad13805934"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-130.jpg",
+              "sha256": "fbff94af69b3b0ef7432ed7e30538077b21ed5d4447b73f979531eac6834b11a"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-131.jpg",
+              "sha256": "403b0ea5eb4cb4f0c2a10fc87f6409d7cbb7f50a06e361c2b236d6a0d6cf4b28"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-132.jpg",
+              "sha256": "ae24c89c0d68963d175a3db4810c4239358749b8a080770c45ff5438e349bc43"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-133.jpg",
+              "sha256": "a2add7c473fed614f57975ed776e34b7630bc7c0dd599be43ce20355c492d49d"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-201.html",
+          "sha256": "e816dfa1f9a09c98a0699f0f0e1f251957f4cf251ccef4b009d8bd250e219464",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            216,
+            217,
+            218,
+            219,
+            220
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=216&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=217&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=218&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=219&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=220&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [
+        {
+          "category": "arabicCorrections",
+          "old": "وبين مطلق النسبة ،",
+          "new": "وبين ما في غيرها من مطلق النسبة ،",
+          "reason": "Adopt the explicit later 217 n. 1 clarification. The early/base reading is preserved in the apparatus; the wording distinguishes relation in the other categories from the reciprocal relation under discussion.",
+          "sourceGrade": "explicit-later-editor-emendation",
+          "laterFootnote": 1
+        }
+      ],
+      "englishCorrections": [
+        {
+          "category": "englishCorrections",
+          "old": "This is the difference between the relation within this category and relation in the unrestricted sense.",
+          "new": "This is the difference between the relation within this category and relation in the unrestricted sense as it occurs in other categories.",
+          "reason": "Align English with the expressly documented later 217 clarification adopted in Arabic.",
+          "sourceGrade": "English-alignment-with-explicit-later-editor-emendation"
+        },
+        {
+          "category": "englishCorrections",
+          "old": "such as one neighbor and another, one brother and another, and one nearby thing and another",
+          "new": "such as one nearby thing and another, one brother and another, and one neighbor and another",
+          "reason": "Preserve the transmitted order القريب، الأخ، الجار in both witnesses. All three examples were already represented.",
+          "sourceGrade": "English-example-order-alignment"
+        }
+      ],
+      "orthographicCorrections": [
+        {
+          "category": "orthographicCorrections",
+          "old": "تكرّر النسبه",
+          "new": "تكرّر النسبة",
+          "reason": "Restore tāʾ marbūṭa in النسبة, attested in both witnesses.",
+          "sourceGrade": "orthographic-alignment-with-both-witnesses"
+        }
+      ],
+      "vocalizationCorrections": [
+        {
+          "category": "vocalizationCorrections",
+          "old": "لها مقايسةً",
+          "new": "لها مقايسةٌ",
+          "reason": "مقايسة is the delayed nominative subject of يكون with لها as predicate; correct case without changing witness consonants.",
+          "sourceGrade": "contextual-editorial-case-vocalization"
+        }
+      ],
+      "proposedAuthorNotes": [
+        {
+          "arabic": "الأسفار، ج ٤، ص ٢٠٤.",
+          "english": "Author's citation for the quotation on relation's existence: al-Asfār, vol. 4, p. 204.",
+          "source": "1404 printed p. 127, inline at end of quotation; 1428 vol. 1 p. 219 n. 1.",
+          "reason": "Restore the omitted original locator."
+        }
+      ],
+      "proposedEditorialNotes": [
+        {
+          "text": "At 1428 vol. 1 p. 217 n. 1 the editor reports وبين مطلق النسبة and replaces it with وبين ما في غيرها من مطلق النسبة. The adopted wording makes the comparison explicit: reciprocal relation in this category versus relation as found in other categories. It is an expressly identified editorial correction, not manuscript evidence."
+        },
+        {
+          "text": "The later notes at vol. 1 pp. 219–220 attribute the temporal and future-knowledge objections and survey Ibn Sina’s and Sadra’s replies. The author’s final pointer to unity of knowledge and known leads to XI2 (p. 220 n. 1)."
+        }
+      ],
+      "unadoptedVariants": [],
+      "argumentFindings": [
+        "All five discussions, including both objections and complete replies, are present in both languages. The original Asfar 4 p. 204 locator is omitted and proposed for restoration.",
+        "Previously incorporated later 218 corrections (الأب and separate predicates for each term) remain intact and are not counted anew. The chapter supplies another expressly footnoted later 217 clarification of the contrasted relation, adopted with English alignment.",
+        "Bracketed topical explanations in the Arabic subheadings are later navigational additions, absent from the early printed discussion ordinals; they are retained as editorial aids rather than attributed to the author."
+      ],
+      "editorialCommentary": [
+        "Later 216 locates the discussion of dependent existence in II1; 217 supplies rival definitions and identifies descriptive versus essential definition; 218 distinguishes views of external relation; 220 completes the future-knowledge note and the two final classifications. All notes are read, not treated as authorial body."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 125,
+          "chapter": "الفصل السادس عشر — في الإضافة",
+          "observation": "Chapter ordinal and subject visually verified; typography normalized in this label."
+        },
+        "later": {
+          "printedPage": 216,
+          "headings": [
+            "الفصل السادس عشر",
+            "في الإضافة"
+          ]
+        }
+      },
+      "noteReplacements": [
+        {
+          "old": {
+            "type": "Textual emendation · 1428 AH editor",
+            "text": "At N-VI-16 the 1417 AH base reads «ينتزع من الموضوعين ... وصفاً ناعتاً لهما». The 1428 AH revised edition, vol. 1 p. 218 n. 4, explicitly corrects to «ينتزع لكلّ من الموضوعين ... وصفاً ناعتاً له», referring a separate relational predicate to each term rather than one quality belonging identically to both. Both panels follow the editor's reading, and the earlier wording is preserved here. The editor also notes that «لوقوعها» is preferable to «لوقوعه» in a preceding phrase; the main 1417 text already has «لوقوعها», so no correction was necessary there. In the same chapter, the editor also reports that the copies read «المضاف إلى الابن» but corrects to «المضاف إلى الأب» (vol. 1 p. 218 n. 1). In this passage a son is related to his father; ‘to a son’ contradicts the accompanying example of sonship. The online Arabic and English now adopt this explicitly recorded correction, retaining the older wording in the apparatus.",
+            "url": "https://lib.rafed.net/view.php?b_id=3108&page=207&type=c_fbook",
+            "source": "1428 revised editorial print, not independently verified manuscript witness"
+          },
+          "new": {
+            "type": "Textual emendation · 1428 AH editor",
+            "text": "At N-VI-16 the 1417 AH base reads «ينتزع من الموضوعين ... وصفاً ناعتاً لهما». The 1428 AH revised edition, vol. 1 p. 218 n. 4, explicitly corrects to «ينتزع لكلّ من الموضوعين ... وصفاً ناعتاً له», referring a separate relational predicate to each term rather than one quality belonging identically to both. Both panels follow the editor's reading, and the earlier wording is preserved here. The editor also notes that «لوقوعها» is preferable to «لوقوعه» in a preceding phrase; the main 1417 text already has «لوقوعها», so no correction was necessary there. In the same chapter, the editor also reports that the copies read «المضاف إلى الابن» but corrects to «المضاف إلى الأب» (vol. 1 p. 218 n. 1). In this passage a son is related to his father; ‘to a son’ contradicts the accompanying example of sonship. The online Arabic and English now adopt this explicitly recorded correction, retaining the older wording in the apparatus.",
+            "url": "https://lib.rafed.net/view.php?b_id=3108&page=218&type=c_fbook",
+            "source": "1428 revised editorial print, not independently verified manuscript witness"
+          },
+          "reason": "Correct the current note link to 218, where its cited nn. 1 and 4 actually occur, retaining the already adopted decisions."
+        }
+      ],
+      "noMissingAuthorialNoteObserved": false
+    },
+    {
+      "id": "N-VI-17",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=167&type=c_fbook",
+        "page": "167–170"
+      },
+      "storedArabicSha256": "312a176f84401cd6bbed01139db134e8187fbf5ed786c79615891eba096d22cc",
+      "storedEnglishSha256": "83a4eeda39720f38f46469113402cd090636ca3e4c73cf3f403e1bb4202c18b6",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          24
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          18
+        ],
+        "earlyPrintedPages": [
+          129,
+          130,
+          131
+        ],
+        "earlyCanvases": [
+          133,
+          134,
+          135
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          221,
+          222,
+          223,
+          224
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "Begins under the Where heading on early 129 after VI16; ends with generic/specific/individual Where and the chapter-end ornament on 131. VI18 begins 132. Later 221–224 supply all three discussions; the denial-of-place note continues222/223.",
+        "segments": [
+          "Four agreed marks of place and full survey of five positive views plus denial",
+          "Critique of reduction to position and of matter/form; surface and substantial-extension objections",
+          "Where as configuration rather than relation itself; real and extended, generic/specific/individual divisions"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            129,
+            130,
+            131
+          ],
+          "pdfPagesAndCanvases": [
+            133,
+            134,
+            135
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/133",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/134",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/135"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-133.jpg",
+              "sha256": "a2add7c473fed614f57975ed776e34b7630bc7c0dd599be43ce20355c492d49d"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-134.jpg",
+              "sha256": "9a5e22426f62603f0b01e9d427c8487cadd9940879005393da6d166972db88ad"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-135.jpg",
+              "sha256": "e014bbcbb13e2a83cacae150a2fad75a0b07598f5c6545739f7a92cae80d1ebf"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-221.html",
+          "sha256": "c25c69d43c35856385557d1347d5984068bd33b00838bad196fb89ceb753cd24",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            221,
+            222,
+            223,
+            224
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=221&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=222&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=223&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=224&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [
+        {
+          "category": "arabicCorrections",
+          "old": "الذي لا يسعه فيه غيره معه",
+          "new": "الذي لا يسعه مع غيره",
+          "reason": "Adopt the expressly documented later 224 n. 2 repair of the proper-place definition; early 131 and base retain the awkward reported construction.",
+          "sourceGrade": "explicit-later-editor-emendation",
+          "laterFootnote": 2
+        }
+      ],
+      "englishCorrections": [
+        {
+          "category": "englishCorrections",
+          "old": "yet they are necessarily at rest.",
+          "new": "yet they are self-evidently at rest.",
+          "reason": "بالضرورة marks the asserted evident stationary condition of the chosen examples, not an intrinsic necessity preventing either animal from moving.",
+          "sourceGrade": "English-epistemic-modal-disambiguation"
+        }
+      ],
+      "orthographicCorrections": [
+        {
+          "category": "orthographicCorrections",
+          "old": "التقيسم",
+          "new": "التقسيم",
+          "reason": "Restore the correct letter order, attested in early 131 and later 224.",
+          "sourceGrade": "transcription-repair-attested-in-both-witnesses"
+        }
+      ],
+      "vocalizationCorrections": [
+        {
+          "category": "vocalizationCorrections",
+          "old": "تتُركان",
+          "new": "تُتركان",
+          "reason": "Correct placement of the passive prefix vowel in 'are left'; consonantal text unchanged.",
+          "sourceGrade": "editorial-vocalization-repair"
+        },
+        {
+          "category": "vocalizationCorrections",
+          "old": "فإنّ فيه حلولُ الجسم",
+          "new": "فإنّ فيه حلولَ الجسم",
+          "reason": "The delayed subject of إنّ is accusative; source consonants unchanged.",
+          "sourceGrade": "contextual-editorial-case-vocalization"
+        },
+        {
+          "category": "vocalizationCorrections",
+          "old": "ورجوعُهما",
+          "new": "ورجوعَهما",
+          "reason": "Coordinate رجوع with the delayed accusative subject حلول of إنّ in the same sentence.",
+          "sourceGrade": "contextual-editorial-case-vocalization"
+        }
+      ],
+      "proposedAuthorNotes": [
+        {
+          "arabic": "الأسفار، ج ٤، ص ٣٩.",
+          "english": "Author's citation after the four agreed marks of place: al-Asfār, vol. 4, p. 39.",
+          "source": "1404 printed p. 130, inline; 1428 digital vol. 1 p. 221 n. 3.",
+          "reason": "Restore the missing original quotation locator."
+        }
+      ],
+      "proposedEditorialNotes": [
+        {
+          "text": "At 1428 vol. 1 p. 221 n. 1 the editor directs the reader to Nihaya IX7, where the author questions whether Where is a distinct category, and to Bidayat al-Hikma p. 158, where Where is described as a kind of Position. These parallel discussions qualify the categorical presentation here and provide a substantive route between the elementary and advanced works."
+        },
+        {
+          "text": "The later editor at vol. 1 p. 224 n. 2 explicitly replaces the reported لا يسعه فيه غيره معه with لا يسعه مع غيره and supplies a Persian explanation: the proper place cannot hold that thing together with another. The corrected Arabic is adopted; the English already expressed this intended sense."
+        }
+      ],
+      "unadoptedVariants": [],
+      "argumentFindings": [
+        "The complete competing-place arguments and all divisions are represented in Arabic and English. The original author citation for the four marks is omitted and restored as an authorial note.",
+        "The chapter contains discussion of place and emptiness/fullness, but no separate proof of the impossibility of void promised in VI10. This confirms the later editor's cross-reference warning recorded there.",
+        "The place/position question has a substantive cross-book parallel: the later editor points to the author's doubt about Where's independent category in Nihaya IX7 and Bidaya p158. This doctrinal comparison is not a keyword association."
+      ],
+      "editorialCommentary": [
+        "Later 222 surveys and qualifies attribution of the place doctrines, including Mir Damad's challenge to the attribution to Plato; 223–224 give provenance for the surface/extension objections. Bracketed topical discussion labels are editorial aids not present in the early ordinal headings."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 129,
+          "chapter": "الفصل السابع عشر — في الأين",
+          "observation": "Chapter ordinal and subject visually verified; typography normalized in this label."
+        },
+        "later": {
+          "printedPage": 221,
+          "headings": [
+            "الفصل السابع عشر",
+            "في الأين (١)"
+          ]
+        }
+      },
+      "noteReplacements": [],
+      "noMissingAuthorialNoteObserved": false
+    },
+    {
+      "id": "N-VI-18",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=170&type=c_fbook",
+        "page": "170–172"
+      },
+      "storedArabicSha256": "c0b0c45064c75367453bd8c1bfc1afd4f9278f48b8b99e68938c654dbbd8e39b",
+      "storedEnglishSha256": "bae084a582e0928a868545d24f1603847c4b4772f6b1bb3c7a97dc64ca131aa7",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          9
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          7
+        ],
+        "earlyPrintedPages": [
+          132,
+          133
+        ],
+        "earlyCanvases": [
+          136,
+          137
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          225,
+          226
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "Begins at early 132 chapter heading and ends at top of133 before VI19. Later 225–226 cover the entire chapter; VI19 begins 227.",
+        "segments": [
+          "Definition and each motion's proper time versus common daily-motion measure",
+          "Real/extended When and comparison with Where",
+          "Gradual/instantaneous events; intrinsic/incidental When and qualification by substantial motion"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            132,
+            133
+          ],
+          "pdfPagesAndCanvases": [
+            136,
+            137
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/136",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/137"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-136.jpg",
+              "sha256": "9f53fad7b310500ebde19159a7b34014f289f47b04602061bf3ecb123fe08bc7"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-137.jpg",
+              "sha256": "222acee20c2997784536e85d0acce3163e9f4024f85c97a125b0e3c26fff6207"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-221.html",
+          "sha256": "c25c69d43c35856385557d1347d5984068bd33b00838bad196fb89ceb753cd24",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            225,
+            226
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=225&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=226&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [],
+      "orthographicCorrections": [
+        {
+          "category": "orthographicCorrections",
+          "old": "الجوهريّه",
+          "new": "الجوهريّة",
+          "reason": "Normalize the final tāʾ marbūṭa of the adjective; early 133 clearly prints the feminine form. The edited digital text shares the base's final-letter typographic defect.",
+          "sourceGrade": "editorial-orthographic-normalization"
+        }
+      ],
+      "vocalizationCorrections": [],
+      "proposedAuthorNotes": [],
+      "proposedEditorialNotes": [
+        {
+          "text": "The later editor identifies the promised accounts as IX11 for time (vol. 1 p. 225 n. 1), IX8 for substantial motion (p. 226 n. 3), and IX7 for the categories admitting motion (p. 226 n. 4). At p. 226 n. 1 he notes that Sadra disputes the reported contrast between common temporal and exclusive spatial occupancy."
+        }
+      ],
+      "unadoptedVariants": [
+        {
+          "text": "Early 133 reads وأما على القول بها, while the stored base and later 226 read وأما على القول به. The base wording is retained; both contextual constructions concern affirming substantial motion, and the English makes that reference explicit."
+        }
+      ],
+      "argumentFindings": [
+        "All three divisions and the qualification concerning substantial motion are present in Arabic and English. No body omission, original authorial citation or footnote is missing.",
+        "The English accurately distinguishes coincidence of temporal measures from identity of bodies and preserves the author's challenge to a distinction premised on denying substantial motion."
+      ],
+      "editorialCommentary": [
+        "Later 226 distinguishes Peripatetic denial of substantial motion from the author's position and supplies historical sources for the Where/When contrast."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 132,
+          "chapter": "الفصل الثامن عشر — في المتى",
+          "observation": "Chapter ordinal and subject visually verified; typography normalized in this label."
+        },
+        "later": {
+          "printedPage": 225,
+          "headings": [
+            "الفصل الثامن عشر",
+            "في المتى"
+          ]
+        }
+      },
+      "noteReplacements": [],
+      "noMissingAuthorialNoteObserved": true
+    },
+    {
+      "id": "N-VI-19",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=172&type=c_fbook",
+        "page": "172–173"
+      },
+      "storedArabicSha256": "5bae02c38ab94fe54b947d40542a795532efc7f2fc8ff1ad32ceb5306f11199c",
+      "storedEnglishSha256": "09171825c46b486da370d7ab86dfddc86ce84677cfe0d08364f5948ace9f5de3",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          12
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          11
+        ],
+        "earlyPrintedPages": [
+          133,
+          134
+        ],
+        "earlyCanvases": [
+          137,
+          138
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          227,
+          228
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "Begins after VI18 at early 133; the notice continues at top of134 and ends before VI20. Later 227–228 fully cover this chapter.",
+        "segments": [
+          "Definition, natural/non-natural and actual/potential position",
+          "Reported contrariety and intensity; author’s reservation about utmost difference",
+          "Two noncategorical senses and sensible versus imaginal/intellectual indication"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            133,
+            134
+          ],
+          "pdfPagesAndCanvases": [
+            137,
+            138
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/137",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/138"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-137.jpg",
+              "sha256": "222acee20c2997784536e85d0acce3163e9f4024f85c97a125b0e3c26fff6207"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-138.jpg",
+              "sha256": "17bf1ce1a2de3ff756564ed1e7b56b91ad69af61c92db0e3fdc8c7bb8cda5a77"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-221.html",
+          "sha256": "c25c69d43c35856385557d1347d5984068bd33b00838bad196fb89ceb753cd24",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            227,
+            228
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=227&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=228&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [
+        {
+          "category": "englishCorrections",
+          "old": "An imaginal form divested of quantity nevertheless admits an imaginal indication;",
+          "new": "An imaginal form abstracted from quantity nevertheless admits an imaginal indication;",
+          "reason": "Preserve the attested من construction without the stronger claim that quantity is absent from imaginal form. The corrected note explicitly distinguishes the textual agreement from semantic interpretation.",
+          "sourceGrade": "English-qualified-rendering-of-attested-phrase"
+        }
+      ],
+      "orthographicCorrections": [
+        {
+          "category": "orthographicCorrections",
+          "old": "فك الأشدّ",
+          "new": "فكالأشدّ",
+          "reason": "Repair the broken comparison particle; early 133 and later 228 read فكالأشد.",
+          "sourceGrade": "transcription-repair-attested-in-both-witnesses"
+        }
+      ],
+      "vocalizationCorrections": [
+        {
+          "category": "vocalizationCorrections",
+          "old": "المجردّة",
+          "new": "المجرّدة",
+          "reason": "Move the shadda from dāl to rāʾ in the passive participle mujarrada; consonantal reading unchanged.",
+          "sourceGrade": "editorial-vocalization-repair"
+        }
+      ],
+      "proposedAuthorNotes": [],
+      "proposedEditorialNotes": [],
+      "unadoptedVariants": [
+        {
+          "text": "Later 227 n. 1 reports copies with من نسبته بعض أجزائه and prints من نسبة أجزائه بعضها. Early 133 and the present base instead have the already grammatical من نسبة بعض أجزائه. Retain the base: it is not the defective reading reported by the later editor, and the rearrangement does not add content."
+        }
+      ],
+      "argumentFindings": [
+        "All divisions, the author’s caution about contrariety, and both additional senses of position are present. No original authorial footnote or locator is missing.",
+        "The earlier English apparatus makes an interpretive claim stronger than the Arabic witnesses justify. The rendering is revised to preserve the transmitted construction and the note is corrected; witness agreement is not represented as independent proof of a disputed semantic gloss."
+      ],
+      "editorialCommentary": [
+        "Later 227 supplies definitions, examples of actual/potential position and historical proponents of the contrariety claim. Later 228 locates Sadra’s objection to indication based solely on quantitative continuity in Asfar 4 pp221–222."
+      ],
+      "unresolvedIssues": [
+        "The precise force of التجريد من الكم in the imaginal-indication sentence remains interpretive; both witnesses transmit the same phrase. “Abstracted from quantity” intentionally avoids asserting that imaginal form lacks quantitative structure."
+      ],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 133,
+          "chapter": "الفصل التاسع عشر — في الوضع",
+          "observation": "Chapter ordinal and subject visually verified; typography normalized in this label."
+        },
+        "later": {
+          "printedPage": 227,
+          "headings": [
+            "الفصل التاسع عشر",
+            "في الوضع"
+          ]
+        }
+      },
+      "noteReplacements": [
+        {
+          "old": {
+            "type": "Critical English collation · 1428 printed digital witness",
+            "text": "In «نعم للصورة الخياليّة المجرّدة من الكمّ إشارة خياليّة» the prepositional phrase «من الكمّ» depends on «المجرّدة»: the imaginal form is divested of quantity, not an 'imaginal form of quantity'. The former translation misattached the phrase and inverted the point. Corrected against Qum 1417 text and independently compared with the 1428 AH revised vol. 1 p. 228 transcription; no manuscript attestation is claimed.",
+            "source": "Nihāyat al-Ḥikma, al-Zāriʿī revised 1428 AH, vol. 1, printed p. 228",
+            "url": "https://lib.rafed.net/view.php?b_id=3108&page=237&type=c_fbook"
+          },
+          "new": {
+            "type": "Critical English collation · 1428 printed digital witness",
+            "text": "Both the 1404 printed p. 134 and the 1428 edited digital vol. 1 p. 228 read الصورة الخيالية المجردة من الكم. The closer rendering “an imaginal form abstracted from quantity” preserves the transmitted من construction. The earlier note overstated the case for “divested of quantity”: agreement of the Arabic witnesses establishes the wording, not that particular semantic interpretation. In context the author contrasts sensible, imaginal and intellectual indication; no Arabic emendation is made.",
+            "source": "Nihāyat al-Ḥikma, al-Zāriʿī revised 1428 AH, vol. 1, printed p. 228",
+            "url": "https://lib.rafed.net/view.php?b_id=3108&page=228&type=c_fbook",
+            "id": "N11-INTERPRETIVE-VI-19"
+          },
+          "reason": "Replace the overconfident earlier gloss and wrong page237 link with the exact228 source and explicit semantic qualification."
+        }
+      ],
+      "noMissingAuthorialNoteObserved": true
+    },
+    {
+      "id": "N-VI-20",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=173&type=c_fbook",
+        "page": "173–174"
+      },
+      "storedArabicSha256": "7c2db9e275d7ee99920f8ad0770367e592fc53963b1e4a93ed60581552188b02",
+      "storedEnglishSha256": "8902a5da8cf7948a7fce8b92db726b54950fa153ccabe204d2f1d4c03d174ea6",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          7
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          5
+        ],
+        "earlyPrintedPages": [
+          134,
+          135
+        ],
+        "earlyCanvases": [
+          138,
+          139
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          229,
+          230
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "Begins at the Possession heading on early 134; the final authorial paragraph continues at top of135 and ends before VI21. Later 229–230 cover the full short chapter.",
+        "segments": [
+          "Encompassing relation, complete/incomplete and natural/non-natural possession",
+          "Full Sadra quotation and authorial distinction between existential and conventional ownership"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            134,
+            135
+          ],
+          "pdfPagesAndCanvases": [
+            138,
+            139
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/138",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/139"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-138.jpg",
+              "sha256": "17bf1ce1a2de3ff756564ed1e7b56b91ad69af61c92db0e3fdc8c7bb8cda5a77"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-139.jpg",
+              "sha256": "093cb84f9f9be7adbd2612d650a7ae991099647bfc472754b7ab3b3127fa4628"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-221.html",
+          "sha256": "c25c69d43c35856385557d1347d5984068bd33b00838bad196fb89ceb753cd24",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            229,
+            230
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=229&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=230&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [],
+      "orthographicCorrections": [
+        {
+          "category": "orthographicCorrections",
+          "old": "فالإحاطه",
+          "new": "فالإحاطة",
+          "reason": "Restore final tāʾ marbūṭa, attested in early 134 and later 229.",
+          "sourceGrade": "orthographic-alignment-with-both-witnesses"
+        }
+      ],
+      "vocalizationCorrections": [],
+      "proposedAuthorNotes": [
+        {
+          "arabic": "الأسفار، ج ٤، ص ٢٢٣.",
+          "english": "Author's citation after the quotation on ownership: al-Asfār, vol. 4, p. 223.",
+          "source": "1404 printed p. 134, inline after quotation; 1428 vol. 1 p. 229 n. 1.",
+          "reason": "Restore the omitted original citation."
+        }
+      ],
+      "proposedEditorialNotes": [
+        {
+          "text": "The later editor at 1428 vol. 1 p. 229 n. 1 quotes Ibn Sina's reservations about understanding possession as a category and its purported species, and Bahmanyar's reluctance to include it among the categories. At p. 230 n. 2 he identifies the author's promised treatment of ownership as XI10. These historical qualifications do not alter the authorial definition."
+        }
+      ],
+      "unadoptedVariants": [],
+      "argumentFindings": [
+        "The entire Arabic body and English argument are present, including the author's disagreement with treating real ownership as a category. Restore the original Asfar 4 p223 quotation locator.",
+        "English keeps categorical possession, existential dependence of faculties, and conventional ownership distinct; no further body correction is needed."
+      ],
+      "editorialCommentary": [
+        "Later 230 n. 1 equates the author's real ownership with the natural ownership named in the Sadra quotation."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 134,
+          "chapter": "الفصل العشرون — في الجِدَة",
+          "observation": "Chapter ordinal and subject visually verified; typography normalized in this label."
+        },
+        "later": {
+          "printedPage": 229,
+          "headings": [
+            "الفصل العشرون",
+            "في الجدة"
+          ]
+        }
+      },
+      "noteReplacements": [],
+      "noMissingAuthorialNoteObserved": false
+    },
+    {
+      "id": "N-VI-21",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=174&type=c_fbook",
+        "page": "174–176"
+      },
+      "storedArabicSha256": "514d0ce8283dd7843d588a42aa93e687ddc63f9c13d126b4276b5193afbff568",
+      "storedEnglishSha256": "64a41199d772d951cdd237574adb790a66b324f9e8e39e4cc26872a9a1a08db2",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          14
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          12
+        ],
+        "earlyPrintedPages": [
+          135,
+          136
+        ],
+        "earlyCanvases": [
+          139,
+          140
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          231,
+          232,
+          233
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "Begins under VI21 heading on early 135, ends on 136 with the true-predication argument; next canvas141 is the Stage VII title. Later 231–233 provide the complete chapter, including the reply-provenance note continued 232/233; 234 is blank before the next stage.",
+        "segments": [
+          "Definitions of acting/being acted upon and their relation to gradual motion",
+          "Complete Sadra quotation distinguishing motion, category, and acting/undergoing",
+          "Both regress objections and the full response through dependent production and true predication"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            135,
+            136
+          ],
+          "pdfPagesAndCanvases": [
+            139,
+            140
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/139",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/140"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-139.jpg",
+              "sha256": "093cb84f9f9be7adbd2612d650a7ae991099647bfc472754b7ab3b3127fa4628"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-140.jpg",
+              "sha256": "1001e7ba0fb2c2b5d41cc81971e0a0afdef2bbb31d60d75a16b3192a25b86f18"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-221.html",
+          "sha256": "c25c69d43c35856385557d1347d5984068bd33b00838bad196fb89ceb753cd24",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            231,
+            232,
+            233
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=231&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=232&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=233&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [
+        {
+          "category": "englishCorrections",
+          "old": "the truth of its concept of an external entity in an external proposition.",
+          "new": "the true application of its concept to an external entity in an external proposition.",
+          "reason": "Clarify صدق مفهومه على عين خارجي: the claim concerns the concept's true application to an instance, not truth possessed by a concept or an 'external entity' modifying it.",
+          "sourceGrade": "English-predication-clarification"
+        }
+      ],
+      "orthographicCorrections": [],
+      "vocalizationCorrections": [],
+      "proposedAuthorNotes": [
+        {
+          "arabic": "الأسفار، ج ٤، ص ٢٢٥.",
+          "english": "Author's citation for the quotation on acting and being acted upon: al-Asfār, vol. 4, p. 225.",
+          "source": "1404 printed p. 136, inline; 1428 vol. 1 p. 232 n. 1.",
+          "reason": "Restore the omitted original quotation locator."
+        }
+      ],
+      "proposedEditorialNotes": [],
+      "unadoptedVariants": [
+        {
+          "text": "Early 135 and the stored base read من جملة ما له من الحركة; later 231 reads من جهة ما له من الحركة without reporting a variant. Retain the early/base wording; the relation to the subject's motion remains explicit."
+        },
+        {
+          "text": "At the quotation's end early 136 has فقد ثبت نحو ثبوتهما في الخارج وعرضيتهما; the base and later 232 have فقد ثبت نحو وجودهما في الخارج وعرضيتهما. Retain the base/later wording; both refer to establishing the mode of external reality and accidental status."
+        }
+      ],
+      "argumentFindings": [
+        "All Arabic and English definitions, the full quotation, both objections and complete reply are present. Restore the original Asfar 4 p225 locator.",
+        "The distinction between motion itself and the two configurations of producing/receiving gradual effects is retained; the final English predication clause is clarified without changing the argument."
+      ],
+      "editorialCommentary": [
+        "Later 231 links the verbal category names to Ibn Sina; 232 attributes the two regress objections to al-Razi and discusses Sadra/Taftazani replies, with the final note continuing on 233. No later note is treated as an omitted original author footnote."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 135,
+          "chapter": "الفصل الحادي والعشرون — في مقولتي أن يفعل وأن ينفعل",
+          "observation": "Chapter ordinal and subject visually verified; typography normalized in this label."
+        },
+        "later": {
+          "printedPage": 231,
+          "headings": [
+            "الفصل الحادي والعشرون",
+            "في مقولتي أن يفعل وأن ينفعل"
+          ]
+        }
+      },
+      "noteReplacements": [],
+      "noMissingAuthorialNoteObserved": false
+    },
+    {
+      "id": "N-VII-01",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=179&type=c_fbook",
+        "page": "179–181"
+      },
+      "storedArabicSha256": "cf90d7ed4eac3e8e6ebe416d0f47ecb64744f7ee1e0c245be643e0558aaa9dcc",
+      "storedEnglishSha256": "1de2a4ac52c0358601b128109abc196a93a90e8742b85506b6b75061155a7a54",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          13
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          13
+        ],
+        "earlyPrintedPages": [
+          138,
+          139,
+          140
+        ],
+        "earlyCanvases": [
+          142,
+          143,
+          144
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          237,
+          238,
+          239,
+          240
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "Begins on early 138, whose page number is at the foot; the notice continues on 139 and concludes at top of140 before VII2. Later 237–240 include the complete chapter and the extended logical note crossing239/240.",
+        "segments": [
+          "Self-evidence, circular definitions and verbal elucidation",
+          "Division into one/many and unity coextensive with existence",
+          "Two considerations of unity and parallels with actuality/external existence",
+          "Regress objection to external unity and identity-with-essence response"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            138,
+            139,
+            140
+          ],
+          "pdfPagesAndCanvases": [
+            142,
+            143,
+            144
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/142",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/143",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/144"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-142.jpg",
+              "sha256": "af6d17b786ca1bc15739fb458336fceeb12c1de9bfa242a74d8ba3d820c16cd1"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-143.jpg",
+              "sha256": "8ebfbec14fe99165ffbb5ed37a5f0d12696a2d18288e282a09c7a05852bd6ccd"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-144.jpg",
+              "sha256": "1ce49b805d167396086f5a038c54504b4ad4ef0ce39939eae805ddff0d489e89"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-221.html",
+          "sha256": "c25c69d43c35856385557d1347d5984068bd33b00838bad196fb89ceb753cd24",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            237,
+            238,
+            239,
+            240
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=237&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=238&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=239&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=240&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [],
+      "orthographicCorrections": [],
+      "vocalizationCorrections": [
+        {
+          "category": "vocalizationCorrections",
+          "old": "«كلٌّ موجود فهو واحدٌ»",
+          "new": "«كلُّ موجودٍ فهو واحدٌ»",
+          "reason": "كلّ is in construct with موجود, so it is not nunated and its complement is genitive. Witness consonants are unchanged.",
+          "sourceGrade": "contextual-editorial-case-vocalization"
+        },
+        {
+          "category": "vocalizationCorrections",
+          "old": "مع مساوقِة الخارجيّ",
+          "new": "مع مساوقةِ الخارجيّ",
+          "reason": "Move the genitive vowel to the end of the noun مساوقة after مع; no consonantal change.",
+          "sourceGrade": "editorial-vocalization-repair"
+        },
+        {
+          "category": "vocalizationCorrections",
+          "old": "وهلّم",
+          "new": "وهلمّ",
+          "reason": "Move shadda to mīm in هلمّ; lexical correction only.",
+          "sourceGrade": "editorial-vocalization-repair"
+        }
+      ],
+      "proposedAuthorNotes": [],
+      "proposedEditorialNotes": [
+        {
+          "text": "At 1428 vol. 1 pp. 239–240 n. 3 the editor analyzes the apparent contradiction through the two senses of unity: with relative unity, the conclusion does not contradict the coextensive claim; with absolute unity, the syllogism's negative major premise fails. He locates the author's own explanation in his annotation on Asfar 2 p90. This is a later explanatory note, distinct from the authorial body."
+        }
+      ],
+      "unadoptedVariants": [
+        {
+          "text": "Early 139 reads عروض العدد لها; later 239 n. 1 explicitly reports عروض and prints عرض. The present base already reads عرض, so the attested difference is recorded without a new adoption or double counting."
+        }
+      ],
+      "argumentFindings": [
+        "The entire Arabic body and English argument are present, including both counterarguments and replies. No original authorial citation or footnote is missing.",
+        "English preserves the distinction between unity coextensive with existence and relative unity opposed to multiplicity, rather than treating the apparent contradiction as a missing passage."
+      ],
+      "editorialCommentary": [
+        "Later 237–238 surveys the self-evidence/definition debate; 238 n. 5 defines coextensiveness by identity of instances; 240 identifies the regress objection and points to I2 for existence through itself."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 138,
+          "ordinal": "الفصل الأول",
+          "title": "في أنّ مفهوم الوحدة والكثرة بديهيّ غنيّ عن التعريف"
+        },
+        "later": {
+          "printedPage": 237,
+          "ordinal": "الفصل الأوّل",
+          "title": "في أنّ مفهوم الوحدة والكثرة بديهيّ غنيّ عن التعريف"
+        }
+      },
+      "noteReplacements": [],
+      "noMissingAuthorialNoteObserved": true
+    },
+    {
+      "id": "N-VII-02",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=182&type=c_fbook",
+        "page": "182–183"
+      },
+      "storedArabicSha256": "8dc0cc124e3e0a9eb2eb695ab9c4e54202fb97a2ca3673c443733210cc6f0d7e",
+      "storedEnglishSha256": "c56f46371637eb2e60e27d6e4f77eb56698709be87e6e40e5dbac095ac6e2fe9",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          13
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          12
+        ],
+        "earlyPrintedPages": [
+          140,
+          141
+        ],
+        "earlyCanvases": [
+          144,
+          145
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          241,
+          242,
+          243
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "Begins below VII1 on early 140; concludes on 141 with graded predication before VII3 heading. Later 241–243 contain the full division and the long note continued 241/242, plus examples continued 242/243.",
+        "segments": [
+          "Real/derivative unity; true unity and unity attributed to an essence",
+          "Particular/general unity; indivisible/divisible bearers",
+          "Conceptual and existential generality; names of derivative unities; gradation"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            140,
+            141
+          ],
+          "pdfPagesAndCanvases": [
+            144,
+            145
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/144",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/145"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-144.jpg",
+              "sha256": "1ce49b805d167396086f5a038c54504b4ad4ef0ce39939eae805ddff0d489e89"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-145.jpg",
+              "sha256": "340080a3b0976b57466c6e4b25e693d4fbb89c62bde53bb121187882569e49dc"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-241.html",
+          "sha256": "5ce99534f250381b72e0b5dc9a187501c00b3c9a38d5baec937f31116c1812be",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            241,
+            242,
+            243
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=241&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=242&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=243&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [
+        {
+          "category": "englishCorrections",
+          "old": "such as walking and laughing.",
+          "new": "such as what walks and what laughs.",
+          "reason": "The examples الماشي والضاحك are accidental predicables, not names of the acts themselves. Preserve their participial form.",
+          "sourceGrade": "English-predicable-alignment"
+        }
+      ],
+      "orthographicCorrections": [
+        {
+          "category": "orthographicCorrections",
+          "old": "بالعددالذي",
+          "new": "بالعدد الذي",
+          "reason": "Restore the word boundary present in both witnesses.",
+          "sourceGrade": "layout-only"
+        }
+      ],
+      "vocalizationCorrections": [
+        {
+          "category": "vocalizationCorrections",
+          "old": "ووجودُ كلٌّ من",
+          "new": "ووجودُ كلٍّ من",
+          "reason": "كلّ is genitive as the complement of وجود; correct case without altering consonants.",
+          "sourceGrade": "contextual-editorial-case-vocalization"
+        }
+      ],
+      "proposedAuthorNotes": [],
+      "proposedEditorialNotes": [
+        {
+          "text": "At 1428 vol. 1 pp. 241–242 n. 2 the editor contrasts this classification with Sabzawari and al-Amuli, who divide real unity as a whole into particular and general, and take all-pervading existence to possess true unity in a derivative mode. The author's narrower placement is preserved. This is a doctrinal difference in classification, not a lost line."
+        }
+      ],
+      "unadoptedVariants": [
+        {
+          "text": "Early 140 and the stored base have من غير واسطة في العروض; later 241 has من غير واسطة في العرض without a variant report. Retain the established philosophical construction العروض in the base."
+        },
+        {
+          "text": "Early 141 and the base read ويختلف أسماء; later 242 reads وتختلف أسماء. Both agree on the subject and meaning; the base is retained, since either gender agreement can accompany a broken plural in this construction."
+        }
+      ],
+      "argumentFindings": [
+        "The complete classification tree and all examples are present in Arabic and English. No original author footnote or citation locator is missing.",
+        "The author places all-pervading existence under general unity in the branch other than true unity. This is retained rather than harmonized silently with the differing classification cited by the later editor."
+      ],
+      "editorialCommentary": [
+        "Later 242 defines all-pervading existence and the note continued 243 supplies examples of the five named kinds of unity; 243 closes with bibliographic parallels."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 140,
+          "chapter": "الفصل الثاني — في أقسام الواحد",
+          "observation": "Chapter ordinal and subject visually verified; typography normalized in this label."
+        },
+        "later": {
+          "printedPage": 241,
+          "headings": [
+            "الفصل الثاني",
+            "في أقسام الواحد"
+          ]
+        }
+      },
+      "noteReplacements": [],
+      "noMissingAuthorialNoteObserved": true
+    },
+    {
+      "id": "N-VII-03",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=183&type=c_fbook",
+        "page": "183–185"
+      },
+      "storedArabicSha256": "711d34d6346f22183cae1cf034333c70c00019877ef84a10a017cb3f3eee0d38",
+      "storedEnglishSha256": "c32e8bd46fcdc11609dcd7922634dc5493adab3121cbce045d80c2cf8acc1d24",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          15
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          14
+        ],
+        "earlyPrintedPages": [
+          141,
+          142,
+          143
+        ],
+        "earlyCanvases": [
+          145,
+          146,
+          147
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          244,
+          245,
+          246,
+          247
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "Begins after VII2 on early 141; the magnitude objection continues142, and the chapter ends143 with reality/attenuated-manifestation predication before VII4. Later 244–247 include the entire body and the identity/predication note continued 244/245.",
+        "segments": [
+          "Identity and otherness; continuous-magnitude objection and complete answer",
+          "Primary essential and common predication with all examples",
+          "Attributive versus in-itself existence; subject and predicate nexuses",
+          "Third predication of reality and attenuated manifestation"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            141,
+            142,
+            143
+          ],
+          "pdfPagesAndCanvases": [
+            145,
+            146,
+            147
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/145",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/146",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/147"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-145.jpg",
+              "sha256": "340080a3b0976b57466c6e4b25e693d4fbb89c62bde53bb121187882569e49dc"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-146.jpg",
+              "sha256": "fdf3121a4489d5ab7a3dc11626f1fe7715a96f1254ab990f18c2470688c5256b"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-147.jpg",
+              "sha256": "f126940c384ef79748d15ffae44e31f8144a2e5aa8b8acd85977ee55f8f87cbf"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-241.html",
+          "sha256": "5ce99534f250381b72e0b5dc9a187501c00b3c9a38d5baec937f31116c1812be",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            244,
+            245,
+            246,
+            247
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=244&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=245&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=246&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=247&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [
+        {
+          "category": "arabicCorrections",
+          "old": "المرتبة العالية الوجود",
+          "new": "المرتبة العالية من الوجود",
+          "reason": "Both early 143 and later 247 contain من between العالية and الوجود; restore the omitted preposition. The English already represents the intended phrase.",
+          "sourceGrade": "base-transcription-error-corrected-from-both-witnesses"
+        }
+      ],
+      "englishCorrections": [],
+      "orthographicCorrections": [],
+      "vocalizationCorrections": [
+        {
+          "category": "vocalizationCorrections",
+          "old": "جهةُّ وحدتِهِ",
+          "new": "جهةُ وحدتِهِ",
+          "reason": "Remove the spurious shadda on the final consonant of جهة; nominative predicate retained.",
+          "sourceGrade": "editorial-vocalization-repair"
+        },
+        {
+          "category": "vocalizationCorrections",
+          "old": "مع وحدِة مّا",
+          "new": "مع وحدةٍ مّا",
+          "reason": "Place the genitive marking at the noun ending after مع rather than inside وحدة; no consonantal alteration.",
+          "sourceGrade": "editorial-vocalization-repair"
+        }
+      ],
+      "proposedAuthorNotes": [],
+      "proposedEditorialNotes": [
+        {
+          "text": "The later editor at vol. 1 pp. 244–245 explains that identity and predication can each be used broadly for union in some respect or more narrowly for union in existence. He compares the author's Bidayat al-Hikma p. 131 and Sabzawari's terminology. At p. 246 nn. 4–5 he cites the author's Bidaya annotations for the names 'primary essential' and 'common technical' predication. These are substantive links between the elementary text, advanced metaphysics, and logical predication."
+        }
+      ],
+      "unadoptedVariants": [],
+      "argumentFindings": [
+        "Every argument and example is present in English and Arabic. The sole substantive transcription omission is من in the concluding phrase 'higher degree of existence', present in both witnesses and restored.",
+        "No original authorial citation or footnote is missing. The early full chapter title is retained; the later edition substitutes the bracketed editorial title 'On identity, which is predication'.",
+        "The account of predication explicitly connects logical proposition structure with the earlier metaphysical distinction between in-itself and attributive existence; the translation keeps those levels distinct."
+      ],
+      "editorialCommentary": [
+        "Later 245 locates the continuum objection and replies in Sadra and Mir Damad; 246 directs readers to V5 for genus/differentia and II1–3 for dependence and attribution; 247 supplies the logical reference for the two nexuses."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 141,
+          "ordinal": "الفصل الثالث",
+          "title": "في أنّ من لوازم الوحدة الهوهويّة ومن لوازم الكثرة الغيريّة"
+        },
+        "later": {
+          "printedPage": 244,
+          "ordinal": "الفصل الثالث",
+          "title": "[في الهوهو، وهو الحمل]",
+          "status": "Editorial replacement heading; early title retained"
+        }
+      },
+      "noteReplacements": [],
+      "noMissingAuthorialNoteObserved": true
+    },
+    {
+      "id": "N-VII-04",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=185&type=c_fbook",
+        "page": "185–187"
+      },
+      "storedArabicSha256": "37961887691881e130f2ce4f9f19bcb7bff54f260a89a2a89f4221c048fa3411",
+      "storedEnglishSha256": "aee08092fbad3133b1d5f30a3b1077a4c385c2a52e5799735e4d4aa1ab2c0bad",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          14
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          13
+        ],
+        "earlyPrintedPages": [
+          143,
+          144
+        ],
+        "earlyCanvases": [
+          147,
+          148
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          248,
+          249
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "The chapter begins at the bottom of early 143 and occupies144 to the final criticism of an exception to the presupposition rule. VII5 begins 145. Later 248–249 cover all text and notes.",
+        "segments": [
+          "Direct and derivative predication",
+          "Definitive/non-definitive subjects and examples",
+          "Simple/compound existential propositions; regress objection and three responses"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            143,
+            144
+          ],
+          "pdfPagesAndCanvases": [
+            147,
+            148
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/147",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/148"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-147.jpg",
+              "sha256": "f126940c384ef79748d15ffae44e31f8144a2e5aa8b8acd85977ee55f8f87cbf"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-148.jpg",
+              "sha256": "8096e61a0ddefddf28b0bdb11d3c183eca309d16368b6cf24c4b7c1b1087ed05"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-241.html",
+          "sha256": "5ce99534f250381b72e0b5dc9a187501c00b3c9a38d5baec937f31116c1812be",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            248,
+            249
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=248&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=249&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [],
+      "orthographicCorrections": [
+        {
+          "category": "orthographicCorrections",
+          "old": "قاعدة الفرعيّه",
+          "new": "قاعدة الفرعيّة",
+          "reason": "Restore the feminine adjective's tāʾ marbūṭa; early 144 and later 249 give the standard form.",
+          "sourceGrade": "orthographic-alignment-with-both-witnesses"
+        }
+      ],
+      "vocalizationCorrections": [],
+      "proposedAuthorNotes": [],
+      "proposedEditorialNotes": [
+        {
+          "text": "At 1428 vol. 1 p. 248 n. 1 the editor limits the opening divisions to common predication by comparison with the author's Bidayat al-Hikma p. 132. At p. 249 n. 4 he quotes the author's Bidaya annotation at p. 103 against allowing exceptions to rational rules. These are discussion-level cross-references: kinds of predication connect to the existential status required for attributive judgment."
+        }
+      ],
+      "unadoptedVariants": [
+        {
+          "text": "Early 144/base have بانتقاضه; later 249 has بانتقاضها, changing grammatical reference to the rule rather than the preceding universality claim. Retain the transmitted base construction; the argument and English meaning are unchanged."
+        }
+      ],
+      "argumentFindings": [
+        "All three divisions, every example, the regress objection and the author's evaluations of the alternative replies are present in Arabic and English. No original authorial note or citation is missing.",
+        "The translation preserves the difference between asserting a thing's existence and attributing something to an existing subject, which supplies the metaphysical qualification of the logical presupposition rule."
+      ],
+      "editorialCommentary": [
+        "Later 249 attributes the main objection and reply to Sadra, the entailment revision to Dawani, and the proposed exception to al-Razi. Later 248 substitutes the bracketed editorial heading 'Divisions of predication' for the early specific chapter title; the early title is retained."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 143,
+          "ordinal": "الفصل الرابع",
+          "title": "في انقسام الحمل إلى هوهو وذي هو"
+        },
+        "later": {
+          "printedPage": 248,
+          "ordinal": "الفصل الرابع",
+          "title": "[في تقسيمات الحمل]",
+          "status": "Editorial replacement heading; early title retained"
+        }
+      },
+      "noteReplacements": [],
+      "noMissingAuthorialNoteObserved": true
+    },
+    {
+      "id": "N-VII-05",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=187&type=c_fbook",
+        "page": "187–189"
+      },
+      "storedArabicSha256": "8149f2aa295a720dc80618720b6295951f6ca4495cd1030e4e24a7c61fadad41",
+      "storedEnglishSha256": "e1bb5ff1330bad5eb9c9db2082fd976550226e4953917225b2e1516b0748d3e4",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          11
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          9
+        ],
+        "earlyPrintedPages": [
+          145,
+          146
+        ],
+        "earlyCanvases": [
+          149,
+          150
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          250,
+          251,
+          252,
+          253
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "Begins on early 145 and ends with the exhaustive fourfold division on 146 before VII6. Later 250 contains the heading and long editorial note; 251–253 give the whole body and complete continued notes 250/251 and 251/252.",
+        "segments": [
+          "Essential/nonessential otherness and opposition's conditions",
+          "Like-things and consequent/antecedent counterexamples",
+          "Nonessential difference and individuation terminology",
+          "Fourfold opposition and branching rationale"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            145,
+            146
+          ],
+          "pdfPagesAndCanvases": [
+            149,
+            150
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/149",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/150"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-149.jpg",
+              "sha256": "02a760417196c27dac21215456257873ed0cbe1057992f15fa7061b0415171d2"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-150.jpg",
+              "sha256": "7da2d391d64dbedb6f05fa72aa45f7d8351d3753749b426f47ee6b28f8576f97"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-241.html",
+          "sha256": "5ce99534f250381b72e0b5dc9a187501c00b3c9a38d5baec937f31116c1812be",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            250,
+            251,
+            252,
+            253
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=250&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=251&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=252&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=253&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [
+        {
+          "category": "arabicCorrections",
+          "old": "ويسمّى أيضاً «الغير» بحسب التشخّص والعدد.",
+          "new": "ويسمّى أيضاً الغير بحسب التشخّص والعدد «آخر».",
+          "reason": "Adopt the later 253 body’s completion of the individuation terminology, supported by n. 1's explanatory quotation. Early 145/base omit آخر; no manuscript attestation or explicit variant-report status is claimed.",
+          "sourceGrade": "unfootnoted-later-edition-reading; lexical completion with explanatory citation",
+          "laterFootnote": 1
+        }
+      ],
+      "englishCorrections": [
+        {
+          "category": "englishCorrections",
+          "old": "“Other” is also said with regard to individuation and number.",
+          "new": "What is “other” in respect of individuation and number is also called “another” (ākhar).",
+          "reason": "Translate the adopted later 253 lexical completion, preserving the technical distinction between ghayr and ākhar.",
+          "sourceGrade": "English-alignment-with-attested-later-reading"
+        }
+      ],
+      "orthographicCorrections": [],
+      "vocalizationCorrections": [],
+      "proposedAuthorNotes": [],
+      "proposedEditorialNotes": [
+        {
+          "text": "The 1428 body at vol. 1 p. 253 reads ويسمّى أيضا الغير بحسب التشخّص والعدد: آخر. Early 145 and the stored base omit آخر. The later n. 1 quotes Sabzawari's convention that what is other in individuation is called 'another' (ākhar), or 'like' under a different convention. The added term is adopted as an attested later-edition reading; the note is explanatory and does not expressly report an earlier copy variant."
+        },
+        {
+          "text": "The long later note at pp. 250–251 distinguishes rival classifications of likeness as unity, otherness, or opposition. At pp. 251–252 the editor distinguishes unrestricted fatherhood/sonship from the same person's differently qualified relations; p. 252 discusses whether the separate conditions of time, subject and respect are redundant. The author's own classification and wording remain visible."
+        }
+      ],
+      "unadoptedVariants": [],
+      "argumentFindings": [
+        "All arguments, counterexamples and the fourfold division are represented in Arabic and English. No original authorial note is missing.",
+        "The early/base individuation sentence ends without the term آخر. The later body explicitly supplies that term and supports its technical use with a Sabzawari quotation. Adopt this later lexical completion with its exact source grade; it is not presented as a manuscript variant or an explicitly reported copy correction."
+      ],
+      "editorialCommentary": [
+        "Later 253 supplies sources for the branching division; the editor's historical discussions do not license replacing the author's treatment of essential incompatibility."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 145,
+          "chapter": "الفصل الخامس — في الغيريّة وأقسامها",
+          "observation": "Chapter ordinal and subject visually verified; typography normalized in this label."
+        },
+        "later": {
+          "printedPage": 250,
+          "headings": [
+            "الفصل الخامس",
+            "في الغيريّة وأقسامها (١)"
+          ]
+        }
+      },
+      "noteReplacements": [],
+      "noMissingAuthorialNoteObserved": true
+    },
+    {
+      "id": "N-VII-06",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=189&type=c_fbook",
+        "page": "189–192"
+      },
+      "storedArabicSha256": "bab906fbce73e51ebe9be1e116dc2c498bf28b05ea9e92ecd815984fa33e4ce0",
+      "storedEnglishSha256": "cbcb94c8018c67fd423bb9f51dee0dcbe763543f5c24151be4c0bb952323d082",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          25
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          10
+        ],
+        "earlyPrintedPages": [
+          146,
+          147,
+          148
+        ],
+        "earlyCanvases": [
+          150,
+          151,
+          152
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          254,
+          255,
+          256
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "Begins below VII5 on early 146 and ends with the promised further discussion and chapter ornament on 148. Later 254–256 give the whole chapter; VII7 begins 257.",
+        "segments": [
+          "Contradiction in propositions and simple terms; reduction to simple and compound existential judgments",
+          "Concept of existence from the proposition; Tajrid quotation and symmetric exclusion",
+          "Mental/linguistic locus, contrast with privation, and exclusion of a middle",
+          "First principles, examples and the complete anti-skeptical conclusion"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            146,
+            147,
+            148
+          ],
+          "pdfPagesAndCanvases": [
+            150,
+            151,
+            152
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/150",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/151",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/152"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-150.jpg",
+              "sha256": "7da2d391d64dbedb6f05fa72aa45f7d8351d3753749b426f47ee6b28f8576f97"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-151.jpg",
+              "sha256": "026ada5285f4935ef077f83c3d570f0e64b1a0771f176695fb0b1609b44e6b3f"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-152.jpg",
+              "sha256": "7f0e8cb8deb22ae93b637a2c4d538b9ee7dc674ac6ec66c58a6bdb9de6b05099"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-241.html",
+          "sha256": "5ce99534f250381b72e0b5dc9a187501c00b3c9a38d5baec937f31116c1812be",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            254,
+            255,
+            256
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=254&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=255&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=256&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [],
+      "orthographicCorrections": [
+        {
+          "category": "orthographicCorrections",
+          "old": "في الحقيقية",
+          "new": "في الحقيقة",
+          "reason": "Remove the intrusive yāʾ in the adverbial phrase; early 146 and later 254 read في الحقيقة.",
+          "sourceGrade": "transcription-repair-attested-in-both-witnesses"
+        },
+        {
+          "category": "orthographicCorrections",
+          "old": "المنفصله الحقيقيّة",
+          "new": "المنفصلة الحقيقيّة",
+          "reason": "Restore final tāʾ marbūṭa in the feminine adjective, as in both witnesses.",
+          "sourceGrade": "orthographic-alignment-with-both-witnesses"
+        }
+      ],
+      "vocalizationCorrections": [
+        {
+          "category": "vocalizationCorrections",
+          "old": "يطّرد كلٌّ",
+          "new": "يطرد كلٌّ",
+          "reason": "The transitive verb is يطرد, 'excludes', as in both witnesses; remove the spurious shadda that suggests the different verb اطّرد.",
+          "sourceGrade": "editorial-vocalization-repair"
+        },
+        {
+          "category": "vocalizationCorrections",
+          "old": "فلازُمُ تفسيرِهِ",
+          "new": "فلازِمُ تفسيرِهِ",
+          "reason": "Correct the lexical vowel of لازم; consonants unchanged.",
+          "sourceGrade": "editorial-vocalization-repair"
+        }
+      ],
+      "proposedAuthorNotes": [],
+      "proposedEditorialNotes": [
+        {
+          "text": "The term المنفصلة الحقيقية here names a disjunction that excludes both joint truth and joint falsity. The later edition at vol. 1 p. 255 n. 1 points to XI10 for the derivation of the concept of existence from its dependent use in propositions, and p. 256 n. 4 to XI9 for the argument against skepticism. These connect logical forms with the advanced theory of knowledge."
+        }
+      ],
+      "unadoptedVariants": [
+        {
+          "text": "The quoted Tajrid wording is القول والعقد in early 147, the base, and later 255. Later 255 n. 2 reports القول والعقل in the cited Shawariq presentation. That is a difference among presentations of the separately quoted source, not a Nihaya manuscript variant; the agreed Nihaya wording is retained."
+        }
+      ],
+      "argumentFindings": [
+        "Every stored Arabic and English paragraph was read. Both reductions, the Tajrid quotation, the double-negation discussion, and the final argument about knowledge are complete; no original authorial footnote or citation locator is missing.",
+        "The English correctly treats noncoexistence and non-coabsence together. The disjunctive claim is both exclusive and exhaustive, not merely the assertion that at least one contradictory is true.",
+        "Source comparison shows that the Arabic defects here are transcription and vocalization errors, not lacunae in the philosophical argument."
+      ],
+      "editorialCommentary": [
+        "Later 255 identifies sources for 'the contradictory is its removal' and the rejected one-sided interpretation. Later 256 identifies the cross-references and preserves the complete first-principle argument."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 146,
+          "chapter": "الفصل السادس — في تقابل التناقض",
+          "observation": "Chapter ordinal and subject visually verified; typography normalized in this label."
+        },
+        "later": {
+          "printedPage": 254,
+          "headings": [
+            "الفصل السادس",
+            "في تقابل التناقض"
+          ]
+        }
+      },
+      "noteReplacements": [],
+      "noMissingAuthorialNoteObserved": true
+    },
+    {
+      "id": "N-VII-07",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=192&type=c_fbook",
+        "page": "192–193"
+      },
+      "storedArabicSha256": "5856ff93ba572e97d5b9e4b578026ed7ea695d8ffa2d3e7e1a6b8a33af9834f9",
+      "storedEnglishSha256": "1030735d6c4efa2d715d1b459c97e1ea3689c79f4850f25912141e695a9a1eab",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          5
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          4
+        ],
+        "earlyPrintedPages": [
+          149
+        ],
+        "earlyCanvases": [
+          153
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          257,
+          258
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "The complete chapter occupies early 149 from heading to end ornament. Later 257–258 give the full body and explanatory notes.",
+        "segments": [
+          "Definition of privation and possession",
+          "Individual/specific/generic receptivity and qualified historical examples",
+          "Time-qualified ordinary convention versus unrestricted definition"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            149
+          ],
+          "pdfPagesAndCanvases": [
+            153
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/153"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-153.jpg",
+              "sha256": "71a8d0b7cff701a3b47d9f98106b821102e8db9186505958a0d188a12bf7efa2"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-241.html",
+          "sha256": "5ce99534f250381b72e0b5dc9a187501c00b3c9a38d5baec937f31116c1812be",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            257,
+            258
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=257&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=258&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [],
+      "orthographicCorrections": [
+        {
+          "category": "orthographicCorrections",
+          "old": "النوعيّه موضوعان",
+          "new": "النوعيّة موضوعان",
+          "reason": "Restore final tāʾ marbūṭa in النوعية, as in early 149 and later 257.",
+          "sourceGrade": "orthographic-alignment-with-both-witnesses"
+        }
+      ],
+      "vocalizationCorrections": [],
+      "proposedAuthorNotes": [],
+      "proposedEditorialNotes": [],
+      "unadoptedVariants": [],
+      "argumentFindings": [
+        "The complete source argument and both examples are present in Arabic and English. No original author note or citation locator is missing.",
+        "The scorpion example retains the author’s own كما قيل qualification, and the existing later-editor caution is confirmed at 258 n. 4. The narrower everyday convention is not confused with the broader logical classification."
+      ],
+      "editorialCommentary": [
+        "Later 257 discusses qinya and Tusi’s classification; 258 distinguishes the time-qualified convention, explains its pedagogical role in the Categories, and gives the factual caution about the historical scorpion example."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 149,
+          "chapter": "الفصل السابع — في تقابل العدم والملكة",
+          "observation": "Chapter ordinal and subject visually verified; typography normalized in this label."
+        },
+        "later": {
+          "printedPage": 257,
+          "headings": [
+            "الفصل السابع",
+            "في تقابل العدم والملكة"
+          ]
+        }
+      },
+      "noteReplacements": [
+        {
+          "old": {
+            "type": "Later editor’s factual caution · not authorial",
+            "text": "The author gives the inherited example of the scorpion’s supposed lack of sight («فعدم البصر في العقرب ـ كما قيل ـ») to illustrate privation relative to an animal genus. The 1428 AH editor, vol. 1 printed p. 258 n. 4, notes that some modern descriptions report scorpion eyes. The original statement is an expressly qualified historical logical illustration, not a reliable zoological observation. The translated argument and the author/editor distinction are preserved.",
+            "url": "https://lib.rafed.net/view.php?b_id=3108&page=257&type=c_fbook"
+          },
+          "new": {
+            "type": "Later editor’s factual caution · not authorial",
+            "text": "The author gives the inherited example of the scorpion’s supposed lack of sight («فعدم البصر في العقرب ـ كما قيل ـ») to illustrate privation relative to an animal genus. The 1428 AH editor, vol. 1 printed p. 258 n. 4, notes that some modern descriptions report scorpion eyes. The original statement is an expressly qualified historical logical illustration, not a reliable zoological observation. The translated argument and the author/editor distinction are preserved.",
+            "url": "https://lib.rafed.net/view.php?b_id=3108&page=258&type=c_fbook"
+          },
+          "reason": "Correct the direct source link from 257 to the actually cited258 n. 4; retain the author/editor distinction."
+        }
+      ],
+      "noMissingAuthorialNoteObserved": true
+    },
+    {
+      "id": "N-VII-08",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=193&type=c_fbook",
+        "page": "193–194"
+      },
+      "storedArabicSha256": "0557d414eca11e235b32eaecc3b355a2b8bf434ee7aaccbdffa11ab00f006461",
+      "storedEnglishSha256": "2ccc81e3f62c056a41370d1077465ee353d2a76c26284af8ebe6c37c636595dd",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          6
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          4
+        ],
+        "earlyPrintedPages": [
+          150
+        ],
+        "earlyCanvases": [
+          154
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          259,
+          260
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "The whole chapter occupies early 150, ending with neither correlative preceding the other and an ornament. Later 259–260 include the full body and sources for the objection/reply.",
+        "segments": [
+          "Reciprocal relation and exclusion of same-respect coinstantiation",
+          "Objection to correlation as a division of opposition and concept/instance reply",
+          "Existential/modal co-presence and denial of precedence"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            150
+          ],
+          "pdfPagesAndCanvases": [
+            154
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/154"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-154.jpg",
+              "sha256": "5a366e7690dc1d3a725bf39db685eefc423bae61f871ecf11163e5e32f7ed09c"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-241.html",
+          "sha256": "5ce99534f250381b72e0b5dc9a187501c00b3c9a38d5baec937f31116c1812be",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            259,
+            260
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=259&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=260&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [],
+      "orthographicCorrections": [],
+      "vocalizationCorrections": [],
+      "proposedAuthorNotes": [],
+      "proposedEditorialNotes": [],
+      "unadoptedVariants": [
+        {
+          "text": "Early 150 and the stored base end أنّهما معانِ; later 260 has أنّهما معا. Retain the early/base form and record the later alternative. Both are followed by the same denial of mental or external precedence, represented by the English “simultaneous”."
+        }
+      ],
+      "argumentFindings": [
+        "All Arabic and English paragraphs are present and no authorial footnote or source locator is missing.",
+        "The existing English correction distinguishing existential/modal correspondence from identity of extension is confirmed; it is not counted as a new adoption. Its later page locator is corrected to 260."
+      ],
+      "editorialCommentary": [
+        "Later 259 identifies earlier presentations of the objection and Sadra’s concept/instance response, while referring to alternative replies elsewhere. The body contains no additional note requiring restoration."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 150,
+          "chapter": "الفصل الثامن — في تقابل التضايف",
+          "observation": "Chapter ordinal and subject visually verified; typography normalized in this label."
+        },
+        "later": {
+          "printedPage": 259,
+          "headings": [
+            "الفصل الثامن",
+            "في تقابل التضايف"
+          ]
+        }
+      },
+      "noteReplacements": [
+        {
+          "old": {
+            "type": "English precision · corrected against authorial Arabic",
+            "text": "For «المتضايفان متكافئان وجوداً وعدماً وقوّةً وفعلا», ‘correspond necessarily in respect of existence, nonexistence, potentiality, and actuality’ replaces the misleading ‘coextensive’ (which suggests identity of extension). The author argues existential and modal simultaneity of opposed correlatives, not identity of their sets of instances. The corrected 1428 AH transcription (vol. 1 p. 259) agrees at this clause. This is a translation correction, not an Arabic emendation or manuscript attestation.",
+            "url": "https://lib.rafed.net/view.php?b_id=3108&page=257&type=c_fbook"
+          },
+          "new": {
+            "type": "English precision · corrected against authorial Arabic",
+            "text": "For «المتضايفان متكافئان وجوداً وعدماً وقوّةً وفعلا», ‘correspond necessarily in respect of existence, nonexistence, potentiality, and actuality’ replaces the misleading ‘coextensive’ (which suggests identity of extension). The author argues existential and modal simultaneity of opposed correlatives, not identity of their sets of instances. The corrected 1428 AH transcription (vol. 1 p. 260) agrees at this clause. This is a translation correction, not an Arabic emendation or manuscript attestation.",
+            "url": "https://lib.rafed.net/view.php?b_id=3108&page=260&type=c_fbook"
+          },
+          "reason": "Correct the apparatus’s page259 reference and page257 URL to 260, where the cited existential/modal clause actually occurs."
+        }
+      ],
+      "noMissingAuthorialNoteObserved": true
+    },
+    {
+      "id": "N-VII-09",
+      "status": "complete",
+      "reviewDate": "2026-11-11",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=194&type=c_fbook",
+        "page": "194–198"
+      },
+      "storedArabicSha256": "cd60f6e39dd05ffe52e5c8257c6a3e87c0fc132d43e14ae3c66017da4541d481",
+      "storedEnglishSha256": "255a91a51eaacd8cd58bf3f4b5f86be768bb257700fec1dbad20f3bc761cf9a8",
+      "sourceGrade": "Complete-unit AI-assisted comparison of stored Arabic and English with all corresponding 1404 printed facsimile pages and 1428 edited digital body and notes. No manuscript collation or independent human specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          27
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          23
+        ],
+        "earlyPrintedPages": [
+          151,
+          152,
+          153,
+          154
+        ],
+        "earlyCanvases": [
+          155,
+          156,
+          157,
+          158
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          261,
+          262,
+          263,
+          264,
+          265,
+          266
+        ],
+        "allBoundariesAccounted": true,
+        "boundaries": "The chapter starts under its ordinal and subject headings on early p. 151. Its argument continues through p. 153, where the separate خاتمة begins, and the conclusion ends on p. 154. Canvas 159 is the following stage VIII title page. Later pp. 261–264 contain the chapter proper and pp. 265–266 its conclusion; p. 267 begins the indexes. The conclusion belongs to this complete review.",
+        "segments": [
+          "Ancient and Peripatetic definitions of contrariety",
+          "Conceptual separation contrasted with positive contrariety; common subject and proximate genus",
+          "Differentia objection and reply; accidental categories and ultimate species",
+          "Utmost distance, intermediate qualities, and exclusion of substantial contrariety",
+          "Two-term limit and the complete Asfar quotation",
+          "Alternation in a subject, relative intermediates, and one particular subject",
+          "Conclusion: competing accounts of one/many, gradation, and exclusion of all four technical oppositions"
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+          "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+          "kind": "1404 printed facsimile; all corresponding pages visually read",
+          "printedPages": [
+            151,
+            152,
+            153,
+            154
+          ],
+          "pdfPagesAndCanvases": [
+            155,
+            156,
+            157,
+            158
+          ],
+          "urls": [
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/155",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/156",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/157",
+            "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/158"
+          ],
+          "renderedPages": [
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-155.jpg",
+              "sha256": "903d53838f008f15660583cab1317f07122bc4a103a0067fb5d3b58de0e1a503"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-156.jpg",
+              "sha256": "1cd432da386f65ee304303f4bace8cb659acfc5236c5cbf9f9d7fe1dcdf7db36"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-157.jpg",
+              "sha256": "70a38e0eacf5551614d6b59a8059dbedc6c0b1e29f4ec0034d4a07c30015096f"
+            },
+            {
+              "path": "/workspace/scratch/39c4d2329b31/vi-vii-collation/early-158.jpg",
+              "sha256": "7842929332e8d46a3e074f091092cc0c81338104c0a150c026764f382e462e3c"
+            }
+          ]
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-261.html",
+          "sha256": "dd5d9409203bbbfeb20094e6a2d7f9f436f1c76d447595c8fecfbecc5cc6e966",
+          "kind": "1428 edited digital presentation; complete body and footnotes read from numbered HTML page containers",
+          "laterVolume": 1,
+          "printedPages": [
+            261,
+            262,
+            263,
+            264,
+            265,
+            266
+          ],
+          "urls": [
+            "https://lib.rafed.net/view.php?b_id=3108&page=261&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=262&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=263&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=264&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=265&type=c_fbook",
+            "https://lib.rafed.net/view.php?b_id=3108&page=266&type=c_fbook"
+          ]
+        }
+      ],
+      "arabicCorrections": [
+        {
+          "category": "arabicCorrections",
+          "old": "عَثَروا باُمور",
+          "new": "عَثَروا على اُمور",
+          "reason": "Adopt the explicit prepositional correction in later p. 263 n. 1; early p. 152 attests the base reading with بامور.",
+          "sourceGrade": "explicit-later-editor-emendation",
+          "laterFootnote": 1
+        },
+        {
+          "category": "arabicCorrections",
+          "old": "الوحدة مساوقةٌ لوجود",
+          "new": "الوحدة مساوقةٌ للوجود",
+          "reason": "Restore the omitted definite-article lam: early p. 154 and later p. 266 both read الوحدة مساوقة للوجود.",
+          "sourceGrade": "consonantal-restoration-attested-in-both-printed-witnesses"
+        }
+      ],
+      "englishCorrections": [
+        {
+          "category": "englishCorrections",
+          "old": "whether or not there is an intermediate or several intermediates that, in relation to either side, belong to the other side.",
+          "new": "whether there is one intermediate or several intermediates that, in relation to either side, belong to the other side.",
+          "reason": "Early p. 153 and later pp. 263–264 read سواء كانت بينهما واسطة أو وسائط, contrasting one intermediate with several; the prior translation added a no-intermediate alternative.",
+          "sourceGrade": "translation-correction-against-both-witnesses"
+        },
+        {
+          "category": "englishCorrections",
+          "old": "Correlatives are coextensive in existence, nonexistence, potentiality, and actuality, but the one and the many do not have this character.",
+          "new": "Correlatives correspond necessarily in respect of existence, nonexistence, potentiality, and actuality, but the one and the many do not have this character.",
+          "reason": "Translate متكافئان in early p. 154 and later p. 266 as existential/modal correspondence, consistent with N-VII-08, rather than identical extension.",
+          "sourceGrade": "translation-precision-against-both-witnesses"
+        }
+      ],
+      "orthographicCorrections": [
+        {
+          "category": "orthographicCorrections",
+          "old": "متضائف",
+          "new": "متضايف",
+          "expectedOccurrences": 2,
+          "reason": "Normalize the spelling of تضايف in both definitions to the later p. 261 spelling; this is an orthographic repair, not a change of concept.",
+          "sourceGrade": "orthographic-normalization-supported-by-later-witness"
+        },
+        {
+          "category": "orthographicCorrections",
+          "old": "الوجودالخارجيّ",
+          "new": "الوجود الخارجيّ",
+          "reason": "Restore the missing word space, with early p. 151 and later p. 262 confirming the phrase.",
+          "sourceGrade": "transcription-layout-correction"
+        },
+        {
+          "category": "orthographicCorrections",
+          "old": "الأنواع الأخيرة\n\nالمندرجة تحت بعض آخر.",
+          "new": "الأنواع الأخيرة المندرجة تحت بعض آخر.",
+          "reason": "Join the mechanically split noun and participial qualifier; both early p. 152 and later p. 262 give one continuous sentence.",
+          "sourceGrade": "transcription-layout-correction"
+        },
+        {
+          "category": "orthographicCorrections",
+          "old": "فكلُّ مو جود",
+          "new": "فكلُّ موجود",
+          "reason": "Remove the internal word break in موجود, as printed on early p. 154 and later p. 266.",
+          "sourceGrade": "transcription-layout-correction"
+        }
+      ],
+      "vocalizationCorrections": [
+        {
+          "category": "vocalizationCorrections",
+          "old": "وجودّيان",
+          "new": "وجوديّان",
+          "reason": "Move the misplaced shadda to the nisba ya in the dual adjective وجوديّان; the later p. 261 form confirms it.",
+          "sourceGrade": "vocalization-correction"
+        },
+        {
+          "category": "vocalizationCorrections",
+          "old": "من أيٍّ مفهوم",
+          "new": "من أيِّ مفهوم",
+          "reason": "Remove tanwin from the construct أيّ before مفهوم; no consonantal change is made.",
+          "sourceGrade": "editorial-vocalization"
+        },
+        {
+          "category": "vocalizationCorrections",
+          "old": "يطّرد الآخرَ",
+          "new": "يطرد الآخرَ",
+          "reason": "Remove the spurious shadda: the transitive verb is يطرد (excludes), as the argument and both witnesses require, rather than يطّرد (holds uniformly).",
+          "sourceGrade": "editorial-vocalization-supported-by-both-witnesses"
+        },
+        {
+          "category": "vocalizationCorrections",
+          "old": "واحدٌّ",
+          "new": "واحدٌ",
+          "reason": "Remove the spurious final shadda in the quoted واحد; this does not change the transmitted consonants.",
+          "sourceGrade": "vocalization-correction"
+        }
+      ],
+      "proposedAuthorNotes": [
+        {
+          "arabic": "الأسفار، ج ٢، ص ١١٤.",
+          "english": "Asfar, vol. 2, p. 114. Original author citation restored after the quotation ending فالتضاد بينهما بالعرض.",
+          "source": "Original inline locator at the end of the quotation, 1404 printed edition p. 153, canvas 157; corroborated by later edition vol. 1 p. 263 n. 2.",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/157",
+          "reason": "The early printed body gives (ج ٢ ص ١١٤) after the complete quotation; the stored Arabic and English omitted that locator. Restore it as an original citation, distinct from later commentary."
+        }
+      ],
+      "proposedEditorialNotes": [
+        {
+          "text": "Later edition vol. 1 p. 263 n. 1 explicitly reports عثروا بامور in its copies and replaces it with عثروا على امور. The early printed witness p. 152 agrees with the reported بامور reading. The prepositional correction is adopted as the later editor’s explicit emendation, without claiming manuscript evidence."
+        },
+        {
+          "text": "The conclusion’s statement that correlatives correspond in existence, nonexistence, potentiality, and actuality repeats the issue in N-VII-08; “coextensive” would wrongly suggest identical extension. The discussion of unity coextensive with existence instead recalls N-VII-01, and its argument from indefinitely greater numerical multiplicities connects with the treatment of number in N-VI-10."
+        }
+      ],
+      "unadoptedVariants": [],
+      "argumentFindings": [
+        "Every stored Arabic and English paragraph, including the complete concluding discussion of one and many, was compared. The Arabic body has no missing argument paragraph. The original inline Asfar locator at early p. 153 was omitted and is restored separately from later editorial notes.",
+        "The ancient definition allows substantial contrariety and more than two terms; the Peripatetic definition adds common subject, proximate genus, and utmost difference. Both stages of the argument are preserved rather than conflated.",
+        "The English “whether or not” introduced an alternative absent from the source: the Arabic contrasts a single intermediate with several intermediates. The correction retains the author’s relative attribution of intermediates to the opposite extreme.",
+        "In the conclusion, existential and modal correspondence of correlatives is distinguished from sameness of extension. The author’s account of one and many as gradation, together with his separate exclusion of each technical kind of opposition, remains complete."
+      ],
+      "editorialCommentary": [
+        "Later p. 261 identifies the historical definitions and includes non-quiddative concepts in the separation argument. Page 262 locates the differentia objection and response in Asfar 2:115–116. Page 263 distinguishes a single intermediate (courage) from several color intermediates. Page 264 explains the historical example of pitch.",
+        "The long later note at p. 265 distinguishes positions attributed to Ibn Sina, Bahmanyar, Fakhr al-Din al-Razi, al-Allama, Suhrawardi, Sadra, and Taftazani. These references are editorial documentation and are not promoted into the author’s body or counted as lost authorial notes. Page 266 refers back to the first chapter of this stage."
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 151,
+          "headings": [
+            "الفصل التاسع",
+            "في تقابل التضاد"
+          ],
+          "internalHeading": {
+            "printedPage": 153,
+            "text": "خاتمة"
+          }
+        },
+        "later": {
+          "printedPage": 261,
+          "headings": [
+            "الفصل التاسع",
+            "في تقابل التضادّ"
+          ],
+          "internalHeading": {
+            "printedPage": 265,
+            "text": "خاتمة"
+          }
+        }
+      },
+      "noteReplacements": [],
+      "noMissingAuthorialNoteObserved": false
+    }
+  ],
+  "inputSnapshotNote": "The whole-book hash records the canonical file observed at final validation. All 21 original Arabic and English unit hashes were rechecked against that file. Per-unit preimages, including exact old note objects, control application while other contributors may update unrelated units.",
+  "finalValidation": {
+    "status": "passed",
+    "method": "Read-only validation against the current canonical book; sequential operations applied to private in-memory copies only.",
+    "unitPreimagesChecked": 21,
+    "expectedArabicEnglishPostimagesChecked": 42,
+    "exactNoteReplacementPreimagesChecked": 6,
+    "uniqueDecisionIDsChecked": 109,
+    "canonicalFilesMutatedByThisAgent": false,
+    "fullIntegratorRunByThisAgent": false,
+    "fullIntegratorNote": "Root will apply this plan together with the remaining VIII/XII plan so that the existing prior-completed preservation guard remains satisfied."
+  },
+  "summaryCounts": {
+    "orthographicCorrections": 22,
+    "vocalizationCorrections": 25,
+    "public-collation-note": 21,
+    "authorial-note-restoration": 8,
+    "englishCorrections": 17,
+    "arabicCorrections": 10,
+    "note-reconciliation": 6,
+    "units": 21,
+    "decisions": 109,
+    "newExplicitLaterEditorialEmendations": 4,
+    "newUnfootnotedLaterBodyReadings": 1,
+    "unitsWithExplicitInterpretiveReservations": 2,
+    "unitsWithUnavailableRequiredWitnessMaterial": 0
+  },
+  "completionQualification": "All assigned source comparison and translation review is complete. Two semantic reservations remain openly documented in VI.15 and VI.19; neither represents unread or unavailable source material. This is a critical edition based on printed and edited digital witnesses, not manuscript collation or independent human certification."
+}

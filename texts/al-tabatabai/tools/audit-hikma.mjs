@@ -75,13 +75,13 @@ for(const [name,file] of books){
     check(units.some(u=>u.id==='M-P-01'),'Muẓaffar introduction must precede its Book III selections');
     check(units.filter(u=>/^M-K-(0[1-9]|1[0-7])$/.test(u.id)).length===17,
       'Muẓaffar Book II must preserve seventeen working bilingual reading units, some source-normalized');
-    check(units.length===101,'Muẓaffar must retain 101 selected Arabic-English working passages, 47 Book IV readings and the Book V preface');
+    check(units.length===140,'Muẓaffar must retain 140 Arabic-English working passages, including all 40 Book V sections');
     const newBook4=Array.from({length:47},(_,i)=>'M-C-'+String(i+1).padStart(2,'0'));
     check(stages.some(x=>x.id==='C'&&x.bookNumber===4),'Muẓaffar new Book IV stage missing');
     check(newBook4.every(id=>units.some(u=>u.id===id&&u.stage==='C'&&u.arabic.length>350&&u.english.length>850)),
       'Muẓaffar 47 source-grounded Book IV selected Arabic-English readings missing/truncated');
-    check(stages.some(x=>x.id==='V'&&x.bookNumber===5)&&units.filter(u=>u.stage==='V').length===1&&
-      units.find(u=>u.id==='M-V-01')?.source?.page==='198–199','Book V preface must be distinct from Book IV');
+    check(stages.some(x=>x.id==='V'&&x.bookNumber===5)&&units.filter(u=>u.stage==='V').length===40&&
+      units.find(u=>u.id==='M-V-01')?.source?.page==='198–199','Complete Book V and its original preface must remain distinct from Book IV');
     const square=units.find(u=>u.id==='M-C-30')?.sourceDiagram;
     check(square?.nodes?.length===4&&square?.relations?.length===6,'Source square must retain four propositions and six relations');
     check(units.find(u=>u.id==='M-C-46')?.notes?.some(n=>n.type==='Existential conditions'&&
@@ -134,8 +134,8 @@ if(mMap&&mText){
     'Muẓaffar source map lost new Book I source coverage');
   check(mMap.parts.find(p=>p.book===2)?.availableUnits===17,
     'Muẓaffar source map must register Book II opening');
-  check(mMap.parts.find(p=>p.book===4)?.availableUnits===47&&mMap.parts.find(p=>p.book===5)?.availableUnits===1,
-    'Muẓaffar source map must register 47 Book IV readings and one Book V preface');
+  check(mMap.parts.find(p=>p.book===4)?.availableUnits===47&&mMap.parts.find(p=>p.book===5)?.availableUnits===40,
+    'Muẓaffar source map must register 47 Book IV readings and all 40 Book V sections');
   check(mMap.parts.reduce((n,x)=>n+x.topics.length,0)>=60,'Muẓaffar map lost section titles');
   for(const p of mMap.parts){
     check(p.start>0&&p.end>=p.start,'Muẓaffar invalid page range for book '+p.book);
@@ -173,18 +173,27 @@ if(bAudit){
 }
 
 /* Guard the cumulative passage-verification register without treating AI translation as certified. */
+const externalRegister=readJson(join(root,'audits/nihaya-external-comparison-register.json'),'Nihaya external comparison register');
+const externalRows=externalRegister?.units||[];
+const incorporatedIds=new Set(externalRows.filter(r=>r.comparisonComplete&&r.findingsIncorporated).map(r=>r.unitID));
+check(externalRows.length===136&&new Set(externalRows.map(r=>r.unitID)).size===136,'External comparison register must account for all 136 unique units');
+check(incorporatedIds.size===externalRegister?.summary?.incorporated,'External integration count must come from actual reviewed identifiers');
+check(externalRows.every(r=>r.independentHumanCertification===false&&r.manuscriptCollation===false),'External register must not imply human or manuscript certification');
+const currentLedger=readJson(join(root,'audits/nihaya-adopted-textual-decisions-current.json'),'Current cumulative textual ledger');
 const review=readJson(join(root,'audits/cross-book-review-register-2026-11-07.json'),'Cross-book review register');
 if(review){
   const expected=(mText?.units.length||0)+(nText?.units.length||0)+111;
   check(review.entries.length===expected,'Cross-book review register no longer covers all local passages');
   check(new Set(review.entries.map(x=>x.id)).size===review.entries.length,'Duplicate cross-book review record IDs');
   check(review.summary?.expertReviewedUnitsVerified===0 &&
-    review.summary?.statusLabels?.criticalEdition==='NOT VERIFIED',
-    'Review register must not present non-certified translations as a definitive critical edition');
-  check(review.entries.filter(x=>x.id!=='N-IX-09').every(x=>x.translationAssessment?.includes('NOT yet independently checked')),
+    review.summary?.statusLabels?.specialistCertifiedCriticalEdition==='NOT VERIFIED'&&
+    review.summary?.N?.printedWitnessEditionComplete===(incorporatedIds.size===136)&&
+    review.summary?.N?.manuscriptCollation===false,
+    'Completed printed-witness editing must remain distinct from human certification and manuscript collation');
+  check(review.entries.filter(x=>!incorporatedIds.has(x.id)).every(x=>x.translationAssessment?.includes('NOT yet independently checked')),
     'An unchecked review record is incorrectly marked as independently collated');
-  check(review.entries.filter(x=>x.englishCollation?.independentlyCollated).map(x=>x.id).join(',')==='N-IX-09',
-    'Full external chapter comparison must be restricted to documented IX.9');
+  check(review.entries.filter(x=>x.englishCollation?.independentlyCollated).map(x=>x.id).sort().join(',')===[...incorporatedIds].sort().join(','),
+    'Every complete external chapter comparison must have an incorporated receipt');
 }
 
 /* Translation-to-source triage is distinct from independent scholarly collation. */
@@ -201,12 +210,15 @@ if(nText&&nTriage){
     if(!u)continue;
     check(r.arabicChars===u.arabic.length&&r.englishChars===u.english.length,
       'Nihāya English triage stale source/translation content at '+r.id);
-    check(r.englishReview?.independentWitnessCollation===(r.id==='N-IX-09')&&
+    check(r.englishReview?.independentWitnessCollation===incorporatedIds.has(r.id)&&
       r.englishReview?.externalExpertCertification===false,
       'Nihāya external comparison/certification grade is incorrect at '+r.id);
     const sha=s=>createHash('sha256').update(s).digest('hex');
     check(r.englishReview?.currentArabicSha256===sha(u.arabic)&&r.englishReview?.currentEnglishSha256===sha(u.english),
       'Nihāya review hashes do not describe current text at '+r.id);
+    const receipt=externalRows.find(x=>x.unitID===r.id);
+    check(receipt?.currentArabicSha256===sha(u.arabic)&&receipt?.currentEnglishSha256===sha(u.english),'External receipt hashes are stale at '+r.id);
+    check(!incorporatedIds.has(r.id)||receipt?.evidenceReports?.length>0,'Incorporated external review lacks its evidence report at '+r.id);
     const register=review?.entries?.find(x=>x.id===r.id);
     check(register?.englishCollation?.structuralScreen==='checked-automatically',
       'Cumulative review register not linked to triage '+r.id);
@@ -226,16 +238,22 @@ if(nText&&nTriage){
     arabicKey(unitIX11?.arabic).includes(arabicKey('الحركة التوسّطيّة منطبقةٌ عليه بواسطة القطعيّة')),
     'Nihāya IX.11 grammatical scope: intermediate motion refers to the instant (al-ān), not time (al-zamān)');
   const xi8=nText.units.find(u=>u.id==='N-XI-08');
-  check(xi8?.notes?.some(n=>/Negative predication and judgment/.test(n.text||'')) &&
+  check(xi8?.notes?.some(n=>n.id==='N10-LATE-XI08-NOTE01'&&n.text.includes('later commentary, not an authorial revision')) &&
     xi8?.arabic?.includes('ولا حكم فيها') && xi8?.arabic?.includes('والحقّ'),
     'Nihāya XI.8 negative judgment interpretive crux must retain its source and public note');
   const unitVI19=nText.units.find(u=>u.id==='N-VI-19');
-  check(unitVI19?.english.includes('imaginal form divested of quantity')&&arabicKey(unitVI19?.arabic).includes(arabicKey('المجردة من الكم')),
-    'Nihāya VI.19 scope correction lost');
+  check(unitVI19?.english.includes('imaginal form abstracted from quantity')&&arabicKey(unitVI19?.arabic).includes(arabicKey('المجردة من الكم'))&&
+    unitVI19?.notes?.some(n=>n.id==='N11-INTERPRETIVE-VI-19'&&n.text.includes('divested of quantity')),
+    'Nihāya VI.19 must preserve the attested wording and disclose the interpretive qualification');
+  const vi14=nText.units.find(u=>u.id==='N-VI-14'),vi15=nText.units.find(u=>u.id==='N-VI-15');
+  check(vi14?.english.includes('between its subject and its object—that is, the knower and the known—and like capacity and will.')&&
+    arabicKey(vi14?.arabic).includes(arabicKey('وأمّا نفس الاستعداد'))&&
+    !vi15?.english.includes('As for preparedness itself')&&vi15?.english.startsWith('A psychic quality is'),
+    'VI.14 final preparedness paragraph must be complete and remain before the VI.15 boundary');
   check(nText.units.find(u=>u.id==='N-VIII-10')?.arabic.startsWith('المشهور'),
     'Nihāya VIII.10 double-alif transcription corruption returned');
-  check(nTriage.summary?.independentlyReconciledAgainstCompleteSecondWitness===1,
-    'Nihāya complete external comparisons must count IX.9 alone');
+  check(nTriage.summary?.independentlyReconciledAgainstCompleteSecondWitness===incorporatedIds.size,
+    'Nihaya complete external comparisons must match the evidence register');
   const newReviews=readJson(join(root,'audits/nihaya-local-review-stage8-2026-11-10.json'),'Stage VIII local review evidence');
   check(newReviews?.reviews?.length===50&&new Set(newReviews?.reviews?.map(r=>r.id)).size===50,
     'Stage VIII must preserve 50 distinct passage-specific full-reading records');
@@ -258,7 +276,7 @@ if(nText&&nExtra){
     check(!criticalIds.has(note.id),'Duplicate Nihāya critical note '+note.id);
     criticalIds.add(note.id);
     check(validIds.has(note.passageId),'Unresolved Nihāya critical note passage '+note.passageId);
-    check(/https:\/\/lib\.rafed\.net\//.test(note.url||''),'Nihāya critical note lacks printed-witness link '+note.id);
+    check(/^https:\/\/(?:lib\.rafed\.net\/|sites\.dlib\.nyu\.edu\/viewer\/books\/)/.test(note.url||''),'Nihāya critical note lacks printed-witness link '+note.id);
     check(!!note.source,'Nihāya critical note lacks source distinction '+note.id);
   }
   /* 1428 AH printed-editor emendations: not independently manuscript-attested. */
@@ -282,11 +300,13 @@ if(nText&&nExtra){
     const entry=review?.entries?.find(x=>x.id===passageId);
     check(entry?.supplementalCriticalNoteIds?.includes(noteId),'Review register missing '+noteId);
   }
-  const ledger=readJson(join(root,'audits/nihaya-adopted-textual-decisions-2026-11-10.json'),'Nihāya textual decision ledger');
-  check(ledger?.decisions?.length===13&&ledger?.decisions?.reduce((n,d)=>n+d.replacements.length,0)===14,
+  const ledger=currentLedger;
+  const historicalLedger=readJson(join(root,'audits/nihaya-adopted-textual-decisions-2026-11-10.json'),'Historical Stage VIII ledger');
+  check(historicalLedger?.decisions?.length===13&&historicalLedger.decisions.every(d=>ledger?.decisions?.some(n=>n.id===d.id&&JSON.stringify(n.replacements)===JSON.stringify(d.replacements))), 'Earlier thirteen textual decisions must survive with their original IDs and readings');
+  check(ledger?.decisions?.length===ledger?.summary?.textualDecisions&&ledger?.decisions?.reduce((n,d)=>n+d.replacements.length,0)===ledger?.summary?.arabicStringReplacements,
     'Textual decisions must be counted separately from literal replacements');
-  check(ledger?.summary?.explicitLaterEditorialEmendations===12&&
-    ledger?.summary?.laterEditionReadingsWithoutSpecificVariantFootnote===1,
+  check(ledger?.summary?.explicitLaterEditorialEmendations===ledger?.decisions?.filter(d=>['explicit-later-editor-emendation','L1'].includes(d.classification)).length&&
+    ledger?.summary?.laterEditionReadingsWithoutSpecificVariantFootnote===ledger?.decisions?.filter(d=>['attested-later-edition-reading-unfootnoted','L2'].includes(d.classification)).length,
     'Explicit editor corrections and unfootnoted later readings must remain distinct');
   for(const decision of ledger?.decisions||[]){
     const unit=nText.units.find(u=>u.id===decision.passageId);
@@ -295,12 +315,15 @@ if(nText&&nExtra){
       check(unit?.arabic?.includes(replacement.after),'Decision not implemented: '+decision.id);
       // A feminine possessive can contain the earlier masculine string as its prefix.
       const escaped=replacement.before.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-      check(!new RegExp(escaped+'(?![\\p{L}\\p{M}\\p{N}_])','u').test(unit?.arabic||''),
+      if(decision.classification==='body-omission-and-boundary-restoration-attested-in-both-witnesses'){
+        check(replacement.after.startsWith(replacement.before)&&replacement.after.length>replacement.before.length,
+          'An appended restoration must retain its complete unchanged lead-in: '+decision.id);
+      }else check(!new RegExp(escaped+'(?![\\p{L}\\p{M}\\p{N}_])','u').test(unit?.arabic||''),
         'Earlier token sequence remains after adoption: '+decision.id);
     }
   }
-  check(review?.summary?.N?.adoptedPrintedEditorialEmendations===12&&
-    review?.summary?.N?.adoptedArabicStringReplacements===14,'Review register textual-decision counts stale');
+  check(review?.summary?.N?.adoptedPrintedEditorialEmendations===ledger?.summary?.explicitLaterEditorialEmendations&&
+    review?.summary?.N?.adoptedArabicStringReplacements===ledger?.summary?.arabicStringReplacements,'Review register textual-decision counts stale');
   const ix9=nExtra.criticalNotes?.find(n=>n.id==='N1417-IX09-REFERENCE-01');
   check(ix9?.passageId==='N-IX-09'&&ix9?.adoption==='adopted-with-full-apparatus' &&
     ix9?.originalReading==='كما في القسم الأول'&&ix9?.adoptedReading==='كما في القسم الثاني'&&
@@ -315,10 +338,10 @@ if(nText&&nExtra){
   check(editorVI02?.passageId==='N-VI-02'&&editorVI02?.adoption==='not-applicable-intertextual-note' &&
     review?.entries?.find(r=>r.id==='N-VI-02')?.supplementalCriticalNoteIds?.includes('N1428-VI02-FORM-01'),
     'Nihāya VI.2 vs Bidāya VI.1-2 intertextual issue must not be silently harmonized');
-  check(nTriage.summary?.independentlyReconciledAgainstCompleteSecondWitness===1 &&
-    review?.summary?.N?.englishIndependentlyCollated===1 &&
+  check(nTriage.summary?.independentlyReconciledAgainstCompleteSecondWitness===incorporatedIds.size &&
+    review?.summary?.N?.englishIndependentlyCollated===incorporatedIds.size &&
     review?.summary?.expertReviewedUnitsVerified===0,
-    'Only documented IX.9 may count as complete external comparison; no expert certification claimed');
+    'Complete external comparisons must match incorporated receipts; no expert certification claimed');
   check(review?.entries?.find(r=>r.id==='N-IX-09')?.supplementalCriticalNoteIds?.includes('N1417-IX09-REFERENCE-01'),
     'Nihāya IX.9 public critical apparatus lost cumulative review register backlink');
 }
