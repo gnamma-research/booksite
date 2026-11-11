@@ -5,32 +5,47 @@
   "project": "Nihayat–Muzaffar–Bidayat Hikma reader",
   "repository": "gnamma-research/booksite",
   "preservation": {
-    "status": "complete-printed-witness-edition; stable-continuation-branch; final-release-pending",
+    "status": "complete-printed-witness-edition; published-and-verified; stable-continuation-branch",
     "branch": "nihayat-active",
-    "contentCommit": "28198294e8695d71c45f58d680369d178cd7372e",
+    "contentCommit": "c300dbd43eb42edef46f3ec60281a94b7d63ac35",
     "previousRemoteStage9Commit": "44fa9a086a17dfe446295f01d076b0dd6ef31959",
     "originalDraftPullRequest": 288,
     "originalDraftPullRequestStatus": "historical-recovery-draft; superseded-by-PR-290",
-    "remotePublicationOfRecoveredWork": false,
-    "activeDraftPullRequest": 290,
+    "remotePublicationOfRecoveredWork": true,
+    "activeDraftPullRequest": null,
     "priorContentCommit": "4a92fdbc54da37b9859a00fb567dc4a5a6a87bc4",
     "supersededStage10PullRequest": 289,
     "reconciliationCommit": "ff64b89d059ae43036014bafba00a31f5b085302",
     "supersededStage10PullRequestStatus": "replaced-by-PR-290; historical branch preserved",
-    "contentCommitScope": "Last remotely verified checkpoint before final 136-unit completion commit. Final source checkpoint will be recorded immediately after saving."
+    "contentCommitScope": "Final complete printed-witness source checkpoint; publication is evidenced separately.",
+    "activePullRequestStatus": "merged",
+    "mergeCommit": "5cf6c3cf7aea6b4f21d52d6a5d3c2fbfcb7110d0",
+    "navigationCommit": "3c3228c429feeb45b80cfa21f521f097b3433a7b",
+    "publishedPullRequest": 290
   },
   "published": {
-    "stage": 8,
-    "handoffCommit": "dff709b6c7031bcbc7f6ed55cf56dddea7b376e4",
-    "pdfCommit": "73cb227ee1d2dd8ae57d32e8b73e3a9d438851dd",
-    "muzaffarUnits": 101,
+    "stage": 11,
+    "sourceCommit": "c300dbd43eb42edef46f3ec60281a94b7d63ac35",
+    "handoffCommit": "5cf6c3cf7aea6b4f21d52d6a5d3c2fbfcb7110d0",
+    "mergeCommit": "5cf6c3cf7aea6b4f21d52d6a5d3c2fbfcb7110d0",
+    "pdfCommit": "f1bdc359333290c0e58c7b167c78f57d379d135e",
+    "navigationCommit": "3c3228c429feeb45b80cfa21f521f097b3433a7b",
+    "muzaffarUnits": 140,
     "bidayaUnits": 111,
     "nihayaUnits": 136,
-    "combinedUnits": 348,
+    "combinedUnits": 387,
     "nihayaLocalReviews": 136,
-    "nihayaExternalComparisonsIntegrated": 1,
+    "nihayaExternalComparisonsIntegrated": 136,
     "pdfCount": 9,
-    "verificationRecord": "audits/hikma-release-verification-2026-11-10-stage8.json"
+    "reciprocalDiscussionPairs": 266,
+    "curatedDiscussionRoutes": 532,
+    "sharedDictionaryTerms": 150,
+    "curatedDictionaryTerms": 73,
+    "verificationRecord": "audits/hikma-release-verification-2026-11-11-complete.json",
+    "pagesRun": 42959162136,
+    "liveVerifiedAtUTC": "2026-11-11T04:29:45.060078+00:00",
+    "readerUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/",
+    "downloadUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/editions/"
   },
   "recovered": {
     "stage": 9,
@@ -105,21 +120,22 @@
     "structuralAudit": "passed on all 136 incorporated comparisons; 140/111/136 paired units; zero failures and warnings",
     "priorRemoteReaderChecks": 51,
     "priorRemoteStudyToolsSuite": "failed at Markdown quotation assertion on old commit; later recovered local fix is present",
-    "latestBrowserRegressionStatus": "passed on 28198294; final integrated source run pending",
+    "latestBrowserRegressionStatus": "85/85 post-merge browser checks passed; live navigation and discussion routes verified",
     "latestBrowserRegressionChecks": 51,
-    "latestStudyToolsChecks": 30,
+    "latestStudyToolsChecks": 34,
     "recoveredReleasePdfVerificationCount": 9,
     "wholeNihayaReviewReperformedDuringRecovery": false,
-    "latestStudyToolsStatus": "30/30 passed on 28198294; final source adds two regression cases per browser",
-    "replayProtection": "passed: repeated applied plan refused before mutation; canonical hashes unchanged"
+    "latestStudyToolsStatus": "34/34 post-merge study-tool checks passed",
+    "replayProtection": "passed: repeated applied plan refused before mutation; canonical hashes unchanged",
+    "latestLiveVerification": "audits/hikma-release-verification-2026-11-11-complete.json"
   },
   "nextWork": {
-    "firstTask": "The complete printed-witness Nihaya edition has all 136 comparisons and findings incorporated. Finish the final source-matched browser/PDF gates and publication; do not replay translation or collation.",
+    "firstTask": "The complete printed-witness Nihaya edition, dictionary, discussion links and all nine PDFs are published and verified. Preserve this release; no translation, comparison or release replay is due. Consult the separate Muzaffar queue only when requested.",
     "firstNewExternalComparison": null,
     "remainingExternalGroups": [],
     "remainingExternalUnitIds": [],
     "muzaffar": "Review saved Book V and nine print-supported English decisions; begin Book VI at displayed p.276 (title p.274), and fill earlier source gaps. Never duplicate M-V-02–40.",
-    "reader": "81 browser checks passed on the prior source checkpoint. Final integrated release includes four added checks for repaired-boundary old links and the reviewed good/evil route."
+    "reader": "No open release blocker. The visible GNAMMA Texts menu includes the combined reading room and all three individual readers. All 85 post-merge browser checks and the live passage/dictionary checks passed."
   },
   "retainedRequirements": [
     "Full external Nihaya comparison, retaining witness grades and exact variants",
@@ -142,7 +158,7 @@
   "recoveryManifest": "audits/recovery-stage9-2026-11-10/repo-file-manifest.json",
   "current": {
     "stage": 11,
-    "status": "complete-source-edition-awaiting-release",
+    "status": "published-and-verified",
     "pairedUnitsByBook": {
       "muzaffar-al-mantiq": 140,
       "bidayat-al-hikma": 111,
@@ -168,9 +184,9 @@
     "newComparisonReport": "audits/nihaya-external-stage10-new.json",
     "newIntegrationPlan": "audits/nihaya-stage10-v-integration.json",
     "readerFixes": 7,
-    "readerQaRecord": "audits/nihayat-continuation-repair-2026-11-11.json",
-    "remoteReaderRun": 42938141421,
-    "remoteReaderStatus": "81/81 browser checks passed before final textual integration; final source-matched run required",
+    "readerQaRecord": "audits/hikma-release-verification-2026-11-11-complete.json",
+    "remoteReaderRun": 42959053807,
+    "remoteReaderStatus": "85/85 post-merge browser checks passed; live dictionary and reciprocal discussion navigation verified",
     "newPdfCount": 9,
     "externalComparisonRegister": "audits/nihaya-external-comparison-register.json",
     "integrationReceipt": "audits/nihaya-stage10-integration-receipt.json",
@@ -193,9 +209,9 @@
       "audits/nihaya-completion-vi-vii-2026-11-11-integration.json",
       "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
     ],
-    "remoteReaderCommit": "28198294e8695d71c45f58d680369d178cd7372e",
+    "remoteReaderCommit": "5cf6c3cf7aea6b4f21d52d6a5d3c2fbfcb7110d0",
     "readerRepair": {
-      "status": "verified in Chromium and WebKit",
+      "status": "verified in Chromium and WebKit on complete source",
       "confirmed": [
         "paragraph Copy restoration",
         "Focus/Next subsection retention",
@@ -203,24 +219,24 @@
         "Editions return retains the selected section"
       ],
       "openIssue": null,
-      "verificationRun": 42938141421,
-      "verificationCommit": "28198294e8695d71c45f58d680369d178cd7372e",
-      "checks": 81
+      "verificationRun": 42959053807,
+      "verificationCommit": "5cf6c3cf7aea6b4f21d52d6a5d3c2fbfcb7110d0",
+      "checks": 85
     },
     "pdfPreview": {
-      "status": "built-and-visually-sampled; final integrated source build pending; not-published",
-      "run": 42938141554,
-      "sourceCommit": "28198294e8695d71c45f58d680369d178cd7372e",
-      "artifactId": 13818923845,
-      "artifactSha256": "b78e4a51fdc41d3c477c390ff0a62030f0ae721305cc9e060ab643dc1a435174",
+      "status": "final-preview-verified-and-visually-sampled; corresponding public PDFs published-and-verified",
+      "run": 42942420387,
+      "sourceCommit": "c300dbd43eb42edef46f3ec60281a94b7d63ac35",
+      "artifactId": 13821601135,
+      "artifactSha256": "d6b3eb21efdf55e8fbc3879d787f248f11d7a7750a325bb59e3934bfccf9d9ea",
       "pdfCount": 9,
       "checks": [
         "source/supplement/output hashes",
         "embedded Unicode Amiri in all nine PDFs",
         "page counts and sample extraction"
       ],
-      "visualInspection": "42 actual rendered pages across nine PDFs; see audits/pdf-layout-preview-2026-11-11.json",
-      "publicationStep": "skipped on pull-request preview"
+      "visualInspection": "38 actual rendered pages across all nine final source-matched PDFs; see the final release verification record.",
+      "publicationStep": "Published by run 42959053772 at f1bdc359333290c0e58c7b167c78f57d379d135e"
     },
     "completionReports": [
       "audits/nihaya-completion-vi-vii-2026-11-11.json",
@@ -231,7 +247,20 @@
     "sharedDictionaryTerms": 150,
     "curatedDictionaryTerms": 73,
     "criticalApparatusNotes": 154,
-    "completionAudit": "audits/nihaya-complete-edition-2026-11-11.json"
+    "completionAudit": "audits/nihaya-complete-edition-2026-11-11.json",
+    "pdfRelease": {
+      "status": "published-and-live-verified",
+      "run": 42959053772,
+      "sourceMergeCommit": "5cf6c3cf7aea6b4f21d52d6a5d3c2fbfcb7110d0",
+      "pdfCommit": "f1bdc359333290c0e58c7b167c78f57d379d135e",
+      "artifactId": 13827653635,
+      "artifactSha256": "9bbea65784bb476d264291c42f85ca272ed4030a4c70c287c7d45342fc2fdd93",
+      "pdfCount": 9,
+      "sourceMatchedPdfCount": 9,
+      "manifestSha256": "1fa24d696c98692010935ceb3f8c1eb56dae877a09790207959a32d7e689635f",
+      "verificationRecord": "audits/hikma-release-verification-2026-11-11-complete.json"
+    },
+    "releaseVerification": "audits/hikma-release-verification-2026-11-11-complete.json"
   },
   "continuation": {
     "canonicalBranch": "nihayat-active",
@@ -243,15 +272,15 @@
     ],
     "fullVerificationCommand": "python3 texts/al-tabatabai/tools/verify-current-checkpoint.py",
     "fullVerificationScope": "Explicit deeper integrity check after materializing every file named in the current manifest; not mandatory for a metadata-only cold start.",
-    "sourceCheckpoint": "28198294e8695d71c45f58d680369d178cd7372e",
+    "sourceCheckpoint": "c300dbd43eb42edef46f3ec60281a94b7d63ac35",
     "repairDate": "2026-11-11",
     "timeZone": "Asia/Riyadh",
     "conversationErrorCause": "Not established; repository state cannot diagnose ChatGPT infrastructure.",
     "verification": {
-      "status": "16 local tests passed; final remote run pending",
+      "status": "16 final-source tests passed; post-merge continuation accounting passed; published-and-verified restart verified",
       "tests": 16,
-      "ciRun": 42933279930,
-      "ciSourceCommit": "08d7cd6329e7e5fead0959240f3a2ae349e23f9f",
+      "ciRun": 42959053704,
+      "ciSourceCommit": "5cf6c3cf7aea6b4f21d52d6a5d3c2fbfcb7110d0",
       "freshWorkspaceRestart": "passed with state/register only",
       "nextNewUnit": null
     }
@@ -267,5 +296,21 @@
     "historicalPathPrefix": "/workspace/scratch/39c4d2329b31/",
     "restoreRule": "Resolve each frozen report path after historicalPathPrefix under the extracted archive root, using evidence-manifest.json for exact identity. Do not rewrite frozen reports.",
     "scope": "Early printed-witness images and cached later edited digital pages used in the final 43 whole-unit comparisons."
-  }
+  },
+  "publicationHistory": [
+    {
+      "stage": 8,
+      "handoffCommit": "dff709b6c7031bcbc7f6ed55cf56dddea7b376e4",
+      "pdfCommit": "73cb227ee1d2dd8ae57d32e8b73e3a9d438851dd",
+      "muzaffarUnits": 101,
+      "bidayaUnits": 111,
+      "nihayaUnits": 136,
+      "combinedUnits": 348,
+      "nihayaLocalReviews": 136,
+      "nihayaExternalComparisonsIntegrated": 1,
+      "pdfCount": 9,
+      "verificationRecord": "audits/hikma-release-verification-2026-11-10-stage8.json",
+      "historicalSnapshot": true
+    }
+  ]
 }
