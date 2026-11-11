@@ -63,7 +63,7 @@ def main():
         assert ('## '+n['id']+' — local note ') in md,n['id']
         assert n['english'] in md,n['id']
         assert n.get('arabicFullText',n['arabicLemma']) in md,n['id']
-    assert 'HWN-MAFAHIM-036' in (ED/'HANDOFF_LATEST.md').read_text()
+    assert 'HWN-MAFAHIM-036' in (ED/'HANDOFF_STAGE113.md').read_text()
     print('PASS Stage113: preserved every Stage112 source check;348 unique notes,291/57 English,79 full Arabic,11 unnumbered;0 fabricated photo certifications')
 
 if __name__=='__main__':
