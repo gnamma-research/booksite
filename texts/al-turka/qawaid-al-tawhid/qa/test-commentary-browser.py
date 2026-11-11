@@ -74,23 +74,29 @@ with sync_playwright() as playwright:
         ck('self-contained HTML renders source Arabic',len(page2.locator('#reading-list .ar').inner_text())>100)
         ck('no standalone HTML page errors',not secondErrors)
         page2.screenshot(path=str(BASE/'qa/commentary-single-file-proof.png'),full_page=False)
-        # Review is a separate editorial view; never mistake machine alignment
-        # for manually checked translation or manuscript collation.
+        # The canonical ledger records comparison, not manuscript certification.
+        ledger=json.loads((BASE/'qa/clause-ledger.json').read_text())
+        summary=ledger['summary'];total=summary['totalArabicPunctuationClauses']
+        reviewed=summary['individuallyComparedArabicPunctuationClauses']
+        sahw=next(a for u in ledger['units'] if u['id']=='SH-058' for a in u['arabicClauses'] if 'السهو' in a['text'])
+        anchor='SH-058-C'+str(sahw['n']).zfill(3)
         page3=context.new_page();reviewErrors=[]
         page3.on('pageerror',lambda e:reviewErrors.append(str(e)))
-        page3.goto('https://gnamma.test'+PREFIX+'clause-review.html#SH-058-C013',
+        page3.goto('https://gnamma.test'+PREFIX+'clause-review.html#'+anchor,
                    wait_until='networkidle',timeout=45000)
-        page3.wait_for_function("() => document.querySelector('#n-all')?.textContent === '3,377'",timeout=30000)
-        ck('clause review indexes 3377 candidate alignments',page3.locator('#n-all').inner_text()=='3,377')
-        ck('review record distinguishes manual from pending',int(page3.locator('#n-reviewed').inner_text().replace(',',''))>=1000 and int(page3.locator('#n-pending').inner_text().replace(',',''))>0)
+        page3.wait_for_function("n => document.querySelector('#n-all')?.textContent === n",arg=f'{total:,}',timeout=30000)
+        ck('canonical review indexes all Arabic segments',page3.locator('#n-all').inner_text()==f'{total:,}')
+        ck('comparison and pending counts match the actual ledger',int(page3.locator('#n-reviewed').inner_text().replace(',',''))==reviewed and int(page3.locator('#n-pending').inner_text().replace(',',''))==total-reviewed)
+        ck('all 171 source units represented',int(page3.locator('#n-units').inner_text())==171)
         ck('deep-link opens SH-058 in the correct section',page3.locator('#unit').input_value()=='SH-058')
-        ck('manual clause has divergent sahw wording','السهو' in page3.locator('#SH-058-C013 .arabic').inner_text() and 'reviewed' in page3.locator('#SH-058-C013 .status').get_attribute('class'))
-        ck('literal commentary gloss visible',page3.locator('#SH-058-C013 .gloss').count()==1)
-        page3.locator('#filter').select_option('gloss')
-        ck('literal-gloss filter shows reviewed commentary',page3.locator('.passage').count()>0)
+        ck('sahw source reading and its uncertainty are visible','السهو' in page3.locator('#'+anchor+' .arabic').inner_text() and 'unresolved-reading' in page3.locator('#'+anchor+' .status').inner_text())
+        page3.locator('#filter').select_option('unresolved')
+        ck('unresolved filter retains source problems',page3.locator('.passage').count()>0 and page3.locator('.passage .status.pending').count()>0)
         page3.locator('#unit').select_option('SH-037')
         page3.locator('#filter').select_option('pending')
-        ck('pending sections remain visibly pending',page3.locator('.passage').count()>0 and page3.locator('.passage .status.pending').count()>0)
+        ck('completed comparison has no falsely pending passages',page3.locator('.passage').count()==0)
+        page3.locator('#filter').select_option('all')
+        ck('previously unreviewed commentary now has recorded correspondences',page3.locator('.passage').count()>0 and page3.locator('.passage .note').count()==page3.locator('.passage').count())
         for width in [320,390,768]:
             page3.set_viewport_size({'width':width,'height':844})
             ck('clause reader has no horizontal overflow '+str(width),page3.evaluate('document.documentElement.scrollWidth <= innerWidth + 2'))

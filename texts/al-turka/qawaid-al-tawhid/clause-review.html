@@ -2,7 +2,7 @@
 <html lang="en" data-theme="parchment">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Arabic–English clause comparison for Gnamma Qawaid al-Tawhid and Tamhid al-Qawaid: distinguishes manually reviewed clauses from automatic candidate alignments.">
+<meta name="description" content="Arabic–English clause comparison for Gnamma Qawaid al-Tawhid and Tamhid al-Qawaid: records model-assisted comparison and unresolved readings separately from manuscript verification.">
 <title>Clause review · Qawāʿid / Tamhīd · GNAMMA</title>
 <link rel="icon" href="../../../assets/gnamma-mark.svg" type="image/svg+xml">
 <style>
@@ -28,24 +28,23 @@ main{max-width:1180px;margin:0 auto;padding:24px 18px 110px}.eyebrow{font-size:1
 <body>
 <header class="top"><a href="./" class="back" aria-label="Back to Qawāʿid matn reader">← Matn &amp; Sharḥ</a><div><strong>GNAMMA · CLAUSE REVIEW</strong><small>Qawāʿid al-Tawḥīd / Tamhīd al-Qawāʿid</small></div><a href="commentary.html" class="back">Full commentary</a></header>
 <main>
-<div class="eyebrow">Scholarly editorial workspace · 8 November 2026</div>
+<div class="eyebrow">Scholarly editorial workspace · 11 November 2026</div>
 <h1>Arabic–English clause review</h1>
-<p class="intro">Compare each Arabic clause with its proposed English alignment and any independently prepared literal gloss. <strong>Manually reviewed</strong> means comparison against the project's available Arabic transcription; it does not mean manuscript collation. <strong>Not yet individually reviewed</strong> means the English is a machine-aligned candidate, not a missing translation.</p>
-<div class="stats" aria-live="polite"><span><strong id="n-all">—</strong> candidate groups</span><span><strong id="n-reviewed">—</strong> individually inspected</span><span><strong id="n-pending">—</strong> awaiting individual inspection</span><span><strong id="n-units">—</strong> text sections</span></div>
-<div class="progress" aria-label="Manually reviewed proportion"><div id="bar"></div></div>
-<div class="warning">The underlying 61 matn and 110 sharḥ units all have a complete working translation. Machine alignment can attach English words to an adjacent Arabic clause. A separate literal gloss corrects that local alignment but does not automatically imply the fluent translation was wrong. Source variants remain open, notably QT-059 and SH-058.</div>
+<p class="intro">All <strong>5,520 Arabic punctuation-derived segments in 171 units</strong> have recorded Arabic–English comparison. This is <strong>model-assisted editorial review of retained electronic transcriptions</strong>, not independent human specialist certification or manuscript collation. “Compared” includes explicitly unresolved readings; it does not mean every source word is certain. Punctuation fragments are not always complete syntactic clauses. <a href="editorial/QAWTAW5_CUMULATIVE_HANDOFF_2026-11-11.md">Release and limitations</a>.</p>
+<div class="stats" aria-live="polite"><span><strong id="n-all">—</strong> Arabic segments</span><span><strong id="n-reviewed">—</strong> compared</span><span><strong id="n-pending">—</strong> not yet compared</span><span><strong id="n-units">—</strong> text sections</span></div>
+<div class="progress" aria-label="Compared proportion, not an accuracy score"><div id="bar"></div></div>
+<div class="warning">The 61 matn and 110 sharḥ units have a complete working translation. English correspondence may repeat across adjacent Arabic segments when one English sentence translates several source clauses. Comparison coverage is not an accuracy score. Unresolved readings remain visible in their own filter; QT-059’s reported ancestral omission remains unreconstructed.</div>
 <div class="toolbar">
 <div class="section"><label for="unit">Text section</label><select id="unit" aria-label="Choose text section"><option>Loading…</option></select></div>
-<div><label for="filter">Review status</label><select id="filter"><option value="all">All clauses</option><option value="reviewed">Manually reviewed</option><option value="pending">Not yet reviewed</option><option value="gloss">With literal gloss</option><option value="notes">With editorial note</option></select></div>
+<div><label for="filter">Review status</label><select id="filter"><option value="all">All clauses</option><option value="reviewed">Compared</option><option value="pending">Not yet reviewed</option><option value="unresolved">Unresolved source reading</option><option value="notes">With editorial note</option></select></div>
 <div class="wide"><label for="query">Search within this section (Arabic or English)</label><input type="search" id="query" placeholder="e.g. الوجود، تعين، possibility, intellect…"></div>
 </div>
 <div class="subbar"><div><h2 id="section-title">Loading textual units…</h2><div class="source" id="source-locator"></div></div><div class="meta"><button type="button" id="copy-link">Copy section link</button><span id="visible-count" class="source"></span></div></div>
 <div id="clauses" role="region" aria-label="Arabic and English clause pairs"><div class="empty">Loading review records…</div></div>
-<div class="footer"><a href="editorial/CLAUSE_REVIEW_2026-11-08.md">Editorial methods &amp; findings</a><a href="editorial/COMMENTARY_TRANSLATION.md">Text sources and status</a><a href="qa/clause-map-matn.jsonl">Raw data · matn</a></div>
+<div class="footer"><a href="editorial/CLAUSE_REVIEW_COMPLETE_2026-11-11.md">Complete comparison record</a><a href="editorial/COMMENTARY_TRANSLATION.md">Text sources and status</a><a href="qa/clause-ledger.json">Canonical ledger</a><a href="qa/qawtaw5-unresolved-register.json">Unresolved readings</a></div>
 </main>
 <script>
 (()=>{'use strict';
-const files=['matn','introduction','main_001_032','main_033_060','conclusion'].map(x=>'qa/clause-map-'+x+'.jsonl');
 const $=id=>document.getElementById(id);
 const all=[],byUnit=new Map();let activeUnit='',rows=[];
 const norm=x=>String(x||'').toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f\u064b-\u065f\u0670]/g,'').replace(/[أإآٱ]/g,'ا').replace(/ى/g,'ي');
@@ -62,11 +61,12 @@ function render(){
  const chosen=rows.filter(x=>{
   if(filter==='reviewed'&&!x.manualReviewStatus)return false;
   if(filter==='pending'&&x.manualReviewStatus)return false;
+  if(filter==='unresolved'&&!/unresolved|crux/.test(x.reviewStatus))return false;
   if(filter==='gloss'&&!x.manualLiteralGloss)return false;
   if(filter==='notes'&&!x.reviewNote&&!x.unitReviewNote)return false;
   return !needle||norm(x.arabic+' '+x.englishCandidate+' '+(x.manualLiteralGloss||'')+' '+(x.reviewNote||'')).includes(needle);
  });
- $('visible-count').textContent=chosen.length+' / '+rows.length+' clause groups';
+ $('visible-count').textContent=chosen.length+' / '+rows.length+' Arabic segments';
  const box=$('clauses');box.replaceChildren();
  if(!chosen.length){box.append(elt('div','empty','No clause matches this filter in the selected section.'));return}
  const fragment=document.createDocumentFragment();
@@ -75,8 +75,8 @@ function render(){
   const ar=elt('div','arabic'),en=elt('div','english');
   const cl=elt('div','clabel');const a=elt('a','',r.id);a.href='#'+r.id;cl.append(a);ar.append(cl);
   span('p','',r.arabic,ar).setAttribute('dir','rtl');
-  const status=elt('div','status '+(r.manualReviewStatus?'reviewed':'pending'),r.manualReviewStatus?'✓ Manually inspected':'○ Not yet individually reviewed');en.append(status);
-  span('div','clabel','English candidate alignment',en);
+  const status=elt('div','status '+(/unresolved|crux/.test(r.reviewStatus)?'pending':(r.manualReviewStatus?'reviewed':'pending')),r.manualReviewStatus?'Compared · '+r.reviewStatus:'○ Not yet individually reviewed');en.append(status);
+  span('div','clabel','Recorded English correspondence',en);
   span('p','',r.englishCandidate,en);
   if(r.manualLiteralGloss){const g=elt('div','gloss');span('strong','','Closer literal gloss',g);span('div','',r.manualLiteralGloss,g);en.append(g)}
   if(r.reviewNote||r.unitReviewNote){span('div','note',[r.reviewNote,r.unitReviewNote].filter(Boolean).join(' '),en)}
@@ -93,8 +93,8 @@ function activateHash(){let wanted='';try{wanted=decodeURIComponent(location.has
 }
 async function begin(){
  try{
-  const response=await Promise.all(files.map(async url=>{const r=await fetch(url,{cache:'no-cache'});if(!r.ok)throw Error(url+': HTTP '+r.status);return r.text()}));
-  for(const text of response)for(const line of text.trim().split('\n')){const r=JSON.parse(line);all.push(r);if(!byUnit.has(r.unit))byUnit.set(r.unit,[]);byUnit.get(r.unit).push(r)}
+  const response=await fetch('qa/clause-ledger.json',{cache:'no-cache'});if(!response.ok)throw Error('Ledger: HTTP '+response.status);const ledger=await response.json();
+  for(const u of ledger.units)for(const a of u.arabicClauses){const status=a.review.status;const r={id:u.id+'-C'+String(a.n).padStart(3,'0'),unit:u.id,source:u.sourceLocator,arabic:a.text,englishCandidate:a.englishCorrespondence||'',manualReviewStatus:status!=='not-yet-individually-reviewed',reviewStatus:status,reviewNote:a.review.note||'',flags:a.riskMarkers||[]};all.push(r);if(!byUnit.has(r.unit))byUnit.set(r.unit,[]);byUnit.get(r.unit).push(r)}
   const reviewed=all.filter(r=>Boolean(r.manualReviewStatus)).length;
   $('n-all').textContent=all.length.toLocaleString();$('n-reviewed').textContent=reviewed.toLocaleString();
   $('n-pending').textContent=(all.length-reviewed).toLocaleString();$('n-units').textContent=byUnit.size;
