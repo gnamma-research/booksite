@@ -73,15 +73,11 @@
     }
   ],
   "readerRepair": {
-    "status": "paragraph-restoration-saved-awaiting-browser-validation",
-    "description": "Restore the explicitly copied paragraph after modal close; apply header scroll clearance once.",
+    "status": "semantic-print-restoration-saved-awaiting-browser-validation",
+    "description": "Preserve semantic reading anchors across mode changes, paragraph Copy, and print restoration after screen media resumes.",
     "requiredTransition": "M-C-44 continuous > M-C-44 focus > M-C-45 Next > M-C-45 continuous",
-    "lastFailureRun": 42931500565,
-    "newPaths": [
-      ".github/workflows/hikma-reader-qa.yml",
-      "texts/al-tabatabai/assets/hikma-study-tools.js",
-      "texts/al-tabatabai/tools/qa-study-tools.cjs"
-    ]
+    "lastFailureRun": 42932529356,
+    "printRestoration": "Wait for screen media before cleanup and retain semantic navigation; remove the saved pixel offset override."
   },
   "defaultEntryCommit": "ed053637c45a87698baaa77434713c9fa0d6a118",
   "historicalRedirectCommits": {
@@ -109,6 +105,14 @@
       "legacyChecksPassed": 51,
       "studyChecksPassedBeforeFailure": 7,
       "failure": "Copy dialog did not restore its explicitly chosen paragraph to the current reading line."
+    },
+    {
+      "run": 42932529356,
+      "sourceCommit": "1d3825e36b5265b1e514b9dffc456b1caa46e4bc",
+      "status": "failed",
+      "studyChecksPassedBeforeFailure": 12,
+      "focusAndNextRetention": "passed",
+      "failure": "After printing, old pixel scroll offset overrode the restored semantic anchor; Downloads return used M-V-27 instead of M-V-28."
     }
   ],
   "validationOrder": "Run the currently failing study suite first, followed by all 51 legacy checks; both suites remain required."

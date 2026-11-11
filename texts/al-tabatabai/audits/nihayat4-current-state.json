@@ -217,10 +217,10 @@
     ],
     "newComparisonReport": "audits/nihaya-external-stage10-new.json",
     "newIntegrationPlan": "audits/nihaya-stage10-v-integration.json",
-    "readerFixes": 7,
+    "readerFixes": 8,
     "readerQaRecord": "audits/nihayat-continuation-repair-2026-11-11.json",
-    "remoteReaderRun": 42931500565,
-    "remoteReaderStatus": "completed-failure: 51 legacy checks and 7 study checks passed; copied paragraph was not retained as the current reading section",
+    "remoteReaderRun": 42932529356,
+    "remoteReaderStatus": "completed-failure: paragraph and Focus/Next retention now pass; Downloads return after print still selected M-V-27 instead of M-V-28",
     "newPdfCount": 0,
     "externalComparisonRegister": "audits/nihaya-external-comparison-register.json",
     "integrationReceipt": "audits/nihaya-stage10-integration-receipt.json",
@@ -241,12 +241,12 @@
       "audits/nihaya-stage10-vi7-9-integration.json",
       "audits/nihaya-stage10-xii11-13-integration.json"
     ],
-    "remoteReaderCommit": "59c07624a491318210c7188a2baf234950d56241",
+    "remoteReaderCommit": "1d3825e36b5265b1e514b9dffc456b1caa46e4bc",
     "readerRepair": {
-      "status": "paragraph-restoration-saved-awaiting-browser-validation",
-      "description": "Restore the explicitly copied paragraph after modal close; apply header scroll clearance once.",
+      "status": "semantic-print-restoration-saved-awaiting-browser-validation",
+      "description": "Preserve semantic reading anchors across mode changes, paragraph Copy, and print restoration after screen media resumes.",
       "requiredTransition": "M-C-44 continuous > M-C-44 focus > M-C-45 Next > M-C-45 continuous",
-      "lastFailureRun": 42931500565
+      "lastFailureRun": 42932529356
     }
   },
   "continuation": {

@@ -55,8 +55,8 @@
     },
     {
       "path": "texts/al-tabatabai/assets/hikma-refinements.js",
-      "bytes": 15042,
-      "sha256": "0fdd353a92cc48e7204c0b7be80389a93d3fdd975cf1260fe53d096ec8cf40d5"
+      "bytes": 15326,
+      "sha256": "d25d0a9d7557714962d8f517885d412575a31d23b0bcfddd5339612ecc45f79d"
     },
     {
       "path": "texts/al-tabatabai/assets/hikma-rich-text.css",
@@ -1155,8 +1155,8 @@
     },
     {
       "path": "texts/al-tabatabai/tools/qa-study-tools.cjs",
-      "bytes": 16395,
-      "sha256": "233854a9a2af0ce83c7fe7dc6cc2948f9ad86f3b94fe32edbd1725d899e477c5"
+      "bytes": 16479,
+      "sha256": "3d4213a714a5ecb2d5ce4d0244da8eae9c886820677ab3664c624feb2e5d5ea8"
     },
     {
       "path": "texts/al-tabatabai/tools/resume-current.py",
@@ -1186,5 +1186,5 @@
   ],
   "parentManifest": "audits/nihayat-stage10-checkpoint-manifest.json",
   "preservedSourceCommit": "1a967009e52f36923362b3a96e67574491314942",
-  "readerRepair": "Restore the explicitly copied paragraph after modal close; apply header scroll clearance once."
+  "readerRepair": "Preserve semantic reading anchors across mode changes, paragraph Copy, and print restoration after screen media resumes."
 }

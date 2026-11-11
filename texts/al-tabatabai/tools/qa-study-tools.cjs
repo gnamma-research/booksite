@@ -156,6 +156,7 @@ async function main(type){const browser=await type.launch({headless:true});try{
    assert.ok(!(await authorialNote.locator('.footnote-english').isVisible()));
    await page.evaluate(()=>window.dispatchEvent(new Event('afterprint')));
    await page.emulateMedia({media:null});
+   await page.waitForFunction(()=>window.HikmaReader.currentUnit()?.id==='M-V-28');
    assert.equal(await page.locator('#reading-view').inputValue(),'quiet');assert.equal(page.url(),before);
    assert.equal(await page.locator('[data-pdf-exclude]').count(),0);
  });

@@ -111,14 +111,20 @@
   for(const id of ['pdf-scope','pdf-from','pdf-to'])$(id).addEventListener('change',printSelectionStatus);
   function printBookTitle(id){return id?.startsWith('B-')?'Bidāyat al-Ḥikma':id?.startsWith('N-')?'Nihāyat al-Ḥikma':'al-Manṭiq — Muḥammad Riḍā al-Muẓaffar';}
   function restoreAfterPrint(){
-    if(!printState)return;const saved=printState;printState=null;const api=window.HikmaReader;
+    if(!printState)return;
+    // Some browsers fire afterprint before they leave print media. Keep the
+    // snapshot until the existing media-change listener can restore screen layout.
+    if(window.matchMedia&&window.matchMedia('print').matches)return;
+    const saved=printState;printState=null;const api=window.HikmaReader;
     document.body.classList.remove('gnamma-print');delete document.body.dataset.pdfMode;delete document.body.dataset.pdfLanguage;
     document.querySelectorAll('[data-pdf-exclude]').forEach(n=>delete n.dataset.pdfExclude);document.querySelectorAll('.pdf-personal-note').forEach(n=>n.remove());
     document.querySelector('.title-page h1')?.removeAttribute('data-print-title');
     api.setPreferences(saved.preferences,false);api.setFilter(saved.query,saved.savedOnly);
     api.navigateId(saved.unit,false);
     document.querySelectorAll('.footnote-details').forEach(n=>{n.open=saved.expanded.includes(n.closest('.passage')?.dataset.unit);});
-    history.replaceState(null,'',saved.url);requestAnimationFrame(()=>window.scrollTo({top:saved.scrollY,left:0,behavior:'instant'}));
+    // navigateId restores the reading anchor after layout. A second scroll to
+    // old page pixels would override it after the temporary print DOM is removed.
+    history.replaceState(null,'',saved.url);
   }
   if(printButton)printButton.addEventListener('click',()=>{
     if(printState)return;const api=window.HikmaReader;if(!api)return;
@@ -130,7 +136,7 @@
   });
   $('pdf-confirm').addEventListener('click',()=>{
     if(printState)return;const api=window.HikmaReader,ids=new Set(selectedPrintUnits());if(!ids.size)return;
-    printState={preferences:{...api.state.preferences},query:api.state.query,savedOnly:api.state.savedOnly,unit:printUnit,url:location.href,scrollY:window.scrollY,expanded:[...document.querySelectorAll('.footnote-details[open]')].map(n=>n.closest('.passage').dataset.unit)};
+    printState={preferences:{...api.state.preferences},query:api.state.query,savedOnly:api.state.savedOnly,unit:printUnit,url:location.href,expanded:[...document.querySelectorAll('.footnote-details[open]')].map(n=>n.closest('.passage').dataset.unit)};
     const scope=$('pdf-scope').value,mode=printDialog.querySelector('input[name="pdf-mode"]:checked').value;
     api.setPreferences({view:'continuous',headings:$('pdf-headings').value,vowels:$('pdf-vowels').checked},false);
     if(scope!=='filter')api.setFilter('',false);else api.refresh();
