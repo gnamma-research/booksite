@@ -55,8 +55,8 @@
     },
     {
       "path": "texts/al-tabatabai/assets/hikma-refinements.js",
-      "bytes": 15326,
-      "sha256": "d25d0a9d7557714962d8f517885d412575a31d23b0bcfddd5339612ecc45f79d"
+      "bytes": 15042,
+      "sha256": "0fdd353a92cc48e7204c0b7be80389a93d3fdd975cf1260fe53d096ec8cf40d5"
     },
     {
       "path": "texts/al-tabatabai/assets/hikma-rich-text.css",
@@ -1186,5 +1186,5 @@
   ],
   "parentManifest": "audits/nihayat-stage10-checkpoint-manifest.json",
   "preservedSourceCommit": "1a967009e52f36923362b3a96e67574491314942",
-  "readerRepair": "Preserve semantic reading anchors across mode changes, paragraph Copy, and print restoration after screen media resumes."
+  "readerRepair": "Paragraph Copy and Focus/Next corrections retained; unconfirmed print-restoration experiment reverted. Strong print-return regression remains open."
 }

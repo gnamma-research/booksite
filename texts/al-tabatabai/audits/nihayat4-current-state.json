@@ -169,7 +169,7 @@
       "N-XII-24"
     ],
     "muzaffar": "Review saved Book V and nine print-supported English decisions; begin Book VI at displayed p.276 (title p.274), and fill earlier source gaps. Never duplicate M-V-02–40.",
-    "reader": "Run 51 existing and 30 new browser checks on the recovered revision, inspect usability, reconcile all controls with Daruri, and rebuild/verify nine PDFs before publication."
+    "reader": "Resolve the reproduced print-restoration/Editions-return issue (M-V-28 becomes a preceding section), then complete all 30 study and 51 legacy checks. Nine preview PDFs from run 42933279860 already passed automated source-hash/searchability checks; inspect their layout and publish only after release checks pass."
   },
   "retainedRequirements": [
     "Full external Nihaya comparison, retaining witness grades and exact variants",
@@ -217,11 +217,11 @@
     ],
     "newComparisonReport": "audits/nihaya-external-stage10-new.json",
     "newIntegrationPlan": "audits/nihaya-stage10-v-integration.json",
-    "readerFixes": 8,
+    "readerFixes": 7,
     "readerQaRecord": "audits/nihayat-continuation-repair-2026-11-11.json",
-    "remoteReaderRun": 42932529356,
-    "remoteReaderStatus": "completed-failure: paragraph and Focus/Next retention now pass; Downloads return after print still selected M-V-27 instead of M-V-28",
-    "newPdfCount": 0,
+    "remoteReaderRun": 42933279835,
+    "remoteReaderStatus": "failed-at-print-restoration; continuation checks and Copy/Focus/Next are verified, full reader release remains draft",
+    "newPdfCount": 9,
     "externalComparisonRegister": "audits/nihaya-external-comparison-register.json",
     "integrationReceipt": "audits/nihaya-stage10-integration-receipt.json",
     "checkpointManifest": "audits/nihayat-active-checkpoint-manifest.json",
@@ -241,12 +241,33 @@
       "audits/nihaya-stage10-vi7-9-integration.json",
       "audits/nihaya-stage10-xii11-13-integration.json"
     ],
-    "remoteReaderCommit": "1d3825e36b5265b1e514b9dffc456b1caa46e4bc",
+    "remoteReaderCommit": "08d7cd6329e7e5fead0959240f3a2ae349e23f9f",
     "readerRepair": {
-      "status": "semantic-print-restoration-saved-awaiting-browser-validation",
-      "description": "Preserve semantic reading anchors across mode changes, paragraph Copy, and print restoration after screen media resumes.",
-      "requiredTransition": "M-C-44 continuous > M-C-44 focus > M-C-45 Next > M-C-45 continuous",
-      "lastFailureRun": 42932529356
+      "status": "partially-verified; print-return issue remains open",
+      "confirmed": [
+        "explicit paragraph Copy restoration",
+        "Focus/Next subsection retention"
+      ],
+      "openIssue": "Print restoration and subsequent Editions return must retain M-V-28.",
+      "unconfirmedPrintExperimentCommit": "08d7cd6329e7e5fead0959240f3a2ae349e23f9f",
+      "printExperimentDisposition": "Reverted in active code; retained in Git history. Stronger failing regression kept."
+    },
+    "pdfPreview": {
+      "status": "built-and-automatically-verified; not-published",
+      "run": 42933279860,
+      "sourceCommit": "08d7cd6329e7e5fead0959240f3a2ae349e23f9f",
+      "artifactId": 13816593391,
+      "artifactUrl": "https://github.com/gnamma-research/booksite/actions/runs/42933279860/artifacts/13816593391",
+      "pdfCount": 9,
+      "artifactBytes": 16417493,
+      "checks": [
+        "all nine files exist",
+        "source and supplement hashes match",
+        "output file hashes and byte counts match",
+        "page count and sample text extraction pass"
+      ],
+      "visualInspection": "pending",
+      "publicationStep": "skipped on pull-request preview"
     }
   },
   "continuation": {
@@ -262,6 +283,14 @@
     "sourceCheckpoint": "1a967009e52f36923362b3a96e67574491314942",
     "repairDate": "2026-11-11",
     "timeZone": "Asia/Riyadh",
-    "conversationErrorCause": "Not established; repository state cannot diagnose ChatGPT infrastructure."
+    "conversationErrorCause": "Not established; repository state cannot diagnose ChatGPT infrastructure.",
+    "verification": {
+      "status": "passed",
+      "tests": 15,
+      "ciRun": 42933279930,
+      "ciSourceCommit": "08d7cd6329e7e5fead0959240f3a2ae349e23f9f",
+      "freshWorkspaceRestart": "passed with state/register only",
+      "nextNewUnit": "N-VI-10"
+    }
   }
 }
