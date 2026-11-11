@@ -140,6 +140,7 @@ async function main(type){const browser=await type.launch({headless:true});try{
    assert.match(page.url(),/M-V-28/,'Changing the view must retain the selected subsection within its chapter');
    const printPosition=()=>page.evaluate(()=>({unit:window.HikmaReader.currentUnit()?.id,hash:location.hash,view:window.HikmaReader.state.preferences.view,scrollY,toolbar:document.querySelector('#reading-toolbar').getBoundingClientRect().bottom,printMedia:matchMedia('print').matches,selected:document.querySelector('#pdf-from').value,passages:[...document.querySelectorAll('.passage')].map(n=>({id:n.dataset.unit,top:n.getBoundingClientRect().top,height:n.getBoundingClientRect().height}))}));
    const printPositions={beforeOptions:await printPosition()};
+   await page.evaluate(()=>{window.printControlEvents=[];for(const type of ['pointerdown','mousedown','focusin','click'])document.querySelector('#pdf-print').addEventListener(type,()=>window.printControlEvents.push({type,unit:window.HikmaReader.currentUnit()?.id,scrollY}),true);});
    await page.evaluate(()=>{
      window.print=()=>{};
      const unit=window.HikmaReader.state.byUnit.get('M-V-28');
@@ -160,7 +161,7 @@ async function main(type){const browser=await type.launch({headless:true});try{
    await page.evaluate(()=>window.dispatchEvent(new Event('afterprint')));
    await page.emulateMedia({media:null});
    try { await page.waitForFunction(()=>window.HikmaReader.currentUnit()?.id==='M-V-28'); }
-   catch(error) { printPositions.afterPrint=await printPosition();console.error('PRINT_POSITION_DIAGNOSTIC '+JSON.stringify(printPositions));await page.screenshot({path:path.join(out,type.name()+'-print-return-failure.png'),fullPage:false});throw error; }
+   catch(error) { printPositions.afterPrint=await printPosition();printPositions.controlEvents=await page.evaluate(()=>window.printControlEvents);console.error('PRINT_POSITION_DIAGNOSTIC '+JSON.stringify(printPositions));await page.screenshot({path:path.join(out,type.name()+'-print-return-failure.png'),fullPage:false});throw error; }
    assert.equal(await page.locator('#reading-view').inputValue(),'quiet');assert.equal(page.url(),before);
    assert.equal(await page.locator('[data-pdf-exclude]').count(),0);
  });

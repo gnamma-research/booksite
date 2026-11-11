@@ -94,7 +94,13 @@
     for(const node of nodes){if(node.getBoundingClientRect().top<=line)chosen=node;else break;}
     return chosen?.dataset.unit||window.HikmaReader?.currentUnit()?.id;
   }
-  let printUnit=null,printBookUnits=[];
+  let printUnit=null,printBookUnits=[],printOrigin=null;
+  // Focusing a sticky header control can scroll its normal-flow position into
+  // view before click runs. Keep the reading position when using the pointer.
+  if(printButton)printButton.addEventListener('pointerdown',event=>{
+    if(event.button!==0)return;
+    event.preventDefault();printButton.focus({preventScroll:true});
+  });
   function selectedPrintUnits(){
     const api=window.HikmaReader,scope=$('pdf-scope').value;
     if(!api||!printUnit)return [];
@@ -111,7 +117,10 @@
   for(const id of ['pdf-scope','pdf-from','pdf-to'])$(id).addEventListener('change',printSelectionStatus);
   function printBookTitle(id){return id?.startsWith('B-')?'Bidāyat al-Ḥikma':id?.startsWith('N-')?'Nihāyat al-Ḥikma':'al-Manṭiq — Muḥammad Riḍā al-Muẓaffar';}
   function restoreAfterPrint(){
-    if(!printState)return;const saved=printState;printState=null;const api=window.HikmaReader;
+    // Some browsers dispatch afterprint before returning to screen layout.
+    // The media change listener performs restoration when that layout is ready.
+    if(!printState||window.matchMedia('print').matches)return;
+    const saved=printState;printState=null;const api=window.HikmaReader;
     document.body.classList.remove('gnamma-print');delete document.body.dataset.pdfMode;delete document.body.dataset.pdfLanguage;
     document.querySelectorAll('[data-pdf-exclude]').forEach(n=>delete n.dataset.pdfExclude);document.querySelectorAll('.pdf-personal-note').forEach(n=>n.remove());
     document.querySelector('.title-page h1')?.removeAttribute('data-print-title');
@@ -123,6 +132,7 @@
   if(printButton)printButton.addEventListener('click',()=>{
     if(printState)return;const api=window.HikmaReader;if(!api)return;
     printUnit=visibleUnit();printBookUnits=api.state.units.filter(u=>u.id[0]===printUnit?.[0]);
+    printOrigin={unit:printUnit,url:location.href,scrollY:window.scrollY};
     for(const id of ['pdf-from','pdf-to']){const select=$(id);select.replaceChildren();for(const u of printBookUnits){const o=document.createElement('option');o.value=u.id;o.textContent=u.id+' · '+u.title;select.append(o);}select.value=printUnit;}
     $('pdf-headings').value=api.state.preferences.headings;$('pdf-vowels').checked=api.state.preferences.vowels;
     $('pdf-notes').checked=false;$('pdf-scope').value=api.state.query||api.state.savedOnly?'filter':'book';printSelectionStatus();
@@ -130,7 +140,7 @@
   });
   $('pdf-confirm').addEventListener('click',()=>{
     if(printState)return;const api=window.HikmaReader,ids=new Set(selectedPrintUnits());if(!ids.size)return;
-    printState={preferences:{...api.state.preferences},query:api.state.query,savedOnly:api.state.savedOnly,unit:printUnit,url:location.href,scrollY:window.scrollY,expanded:[...document.querySelectorAll('.footnote-details[open]')].map(n=>n.closest('.passage').dataset.unit)};
+    printState={...printOrigin,preferences:{...api.state.preferences},query:api.state.query,savedOnly:api.state.savedOnly,expanded:[...document.querySelectorAll('.footnote-details[open]')].map(n=>n.closest('.passage').dataset.unit)};
     const scope=$('pdf-scope').value,mode=printDialog.querySelector('input[name="pdf-mode"]:checked').value;
     api.setPreferences({view:'continuous',headings:$('pdf-headings').value,vowels:$('pdf-vowels').checked},false);
     if(scope!=='filter')api.setFilter('',false);else api.refresh();
