@@ -77,3 +77,10 @@ No manuscript images have been collated for this release. Leiden Or.5675 and the
 - [Page-by-page source map](../data/print-page-map-stage12.json)
 - [Review index](review-stage12/review-index.json)
 - [Exact coverage ledger](../data/coverage-stage12.json)
+
+
+## Stage 13 continuation, 11 November 2026
+
+The remaining commentary pages 41–60, 94–105 and 125–149 were reviewed against the supplied Arabic. Eighty-five English passage corrections repair omitted arguments, reversed implications, paragraph alignment and substantive metaphysical wording. The Arabic was preserved byte-for-byte at the passage level. Thirty editorial notes and three Text Twelve heading corrections accompany the review. Exact old and new English, reasons, page findings and unresolved readings are preserved in review-stage13/.
+
+All 222 commentary pages have now undergone this review. This does not mean every defective clause is resolved: p.43 passage 1 retains an identified synopsis, and the new notes identify further clauses requiring image or independent-witness comparison. Seven positively documented Stage12 scan checks (pp.21,23,26,27,33,35,40) were omitted from the old aggregate; reconciliation raises the historical commentary scan count from 91 to 98, without claiming new image inspection.

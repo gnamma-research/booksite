@@ -1,30 +1,26 @@
-# Mashraʿ al-khuṣūṣ ilā maʿānī al-nuṣūṣ
+# Al-Mahāʾimī: Mashraʿ al-khuṣūṣ, with Qūnawī’s al-Nuṣūṣ
 
-## Al-Mahāʾimī, with Qūnawī’s al-Nuṣūṣ
+Stage 13 · 2026-11-11 · Source-based working edition
 
-Complete bilingual source-based working edition · 10 November 2026
-
-Commentary: printed pp.11–232. Separate Qūnawī appendix: pp.235–267. English is a working translation. This edition has not been independently collated against manuscripts. The commentary’s unfinished final clause is preserved. Printed pp.113–114 are available as electronic text but absent from the acquired scan.
-
-## Sources and editorial policy
-
-[2008 print scan](https://archive.org/details/machra3-khosous) · [Electronic transcription](https://docs.google.com/document/d/10rMWtE9yNKWGhXq8jXBiSUeWYfDNPrb5gho2-g1xoCg/edit) · [Edition status](../editorial/EDITION_STATUS.md)
-
-Modern editorial footnotes are excluded from the medieval running text. Editorial headings and square-bracketed explanations are supplied by this edition. Page markers refer to the source printing, not to the pagination of generated PDFs.
+Arabic and English cover commentary pp.11–232 and the separate Qūnawī appendix pp.235–267.
+Commentary translation review: 222/222 pages. Documented commentary scan comparison: 98/222 pages.
+No independent manuscript collation is claimed. Printed pp.113–114 are absent from the acquired scan. The incomplete final commentary sentence on p.232 remains unreconstructed.
 
 # Al-Mahāʾimī’s commentary
 
-## Printed p. 11 · Author's invocation and preface
+## MSH-000 · Printed p. 11 · Author's invocation and preface
 
-**MSH-000** · [Arabic source](https://archive.org/details/machra3-khosous/page/n11/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n11/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī (authorial preface; cited authorities as marked)
+
+### Arabic · passage 1
 
 بسم اللّه الرّحمن الرّحيم
 
 سبحانك اللهم وبحمدك ، يا من وجوده نوّر سماوات الأسماء والصفات ، وأرض أعيان الممكنات ، تلألأ في مشكاة عدمها مصباح ظهورك ؛ اللائح من زجاجة حبك ، الذي هو كوكب دري من شهودك ، توقد شجرة ربوبيتك المباركة ، بالجمع بين الإجمال والتفصيل ، الزيتونية بما لها من الإيجاد والتحصيل ، لا شرقية تكشف السبحات ، ولا غربية ترخي الحجبات ، يكاد زيت جمالك يضيء بالظهور ، ولو لم تمسسه نار حبك المحرقة للستور ، وذاتك نور على نور ، تهدي لنورك من تشاء من الأحباء ، وتضرب الأمثال للناس ؛ ليحصل لهم بك الاستئناس ، وأنت بكل شيء عليم ، فما أعمى عنك مع غاية ظهورك إلا من علمت من عينه أنه في عماه مقيم ، صلّ عليّ من مصباح روحه نور سماوات الأرواح وأرض الأشباح ، قبل أن يتلمع بمشكاة بدنه ، ويطلع على زجاجة قلبه ؛ الذي هو كوكب دري من تجلّي ربه ، يوقد من شجرة نفسه المباركة بالجمع بين الوجوب والإمكان ، الزيتونة بالسماوات على ثمرات الأعيان ، لا شرقية من المجردات ، ولا غربية من المعلقات ، يكاد زيت نبوتها يضيء بالكمالات ، ولو لم تمسسه نار الرياضة المقتضية ظهور الآيات إذا مسّته ، فنور على نور تهدي لنورك من تشاء من الأنبياء والأولياء ، وتضرب الأمثال للناس ؛ ليعلموا رتبته منك برفع حجب الالتباس ، وأنت بكل شيء عليم ، فما منعت عن اقتباس نوره إلا من علمت أنه باستعداده سقيم .
 
-### English
+### English · passage 1
 
 In the name of God, the All-Merciful, the Especially Merciful.
 
@@ -32,13 +28,13 @@ Glory and praise be Yours, O God! O You whose Being has illumined the heavens of
 
 And bless [**textually uncertain invocation: see apparatus**] him through the lamp of whose spirit the heavens of spirits and the earth of bodily forms were illuminated, before that lamp glimmered in the niche of his body and rose in the glass of his heart, a brilliant star through the self-disclosure of his Lord. It is kindled from the blessed tree of his soul, combining necessity and possibility; an olive-tree, [the transmitted expression connecting it] with the heavens and the fruits of the entities; neither eastern, among the disengaged things, nor western, among the suspended things. The oil of its prophethood would almost shine with perfections, even if the fire of spiritual discipline—which, when it touches it, occasions the manifestation of signs—had not touched it. Thus it is light upon light. You guide whom You will among prophets and friends of God to Your light, and set forth similitudes for people so that, once the veils of confusion have been removed, they might know his rank in relation to You. You know all things. None is prevented from drawing upon his light save one whom You know to be infirm in receptivity.
 
-### Arabic
+### Arabic · passage 2
 
 وبعد . .
 
 فيقول أقل عبيد العلي الصمد علي بن أحمد بن علي بن أحمد - جعله اللّه ممن أسعد بسعادة الأبد : لما كان باتفاق أهل البصيرة والعيان ، وإطباق ذوي العقل والبيان ، وأن الإنسان خلاصة الأكوان ، مراد بالذات لرب البريات من بين جميع الموجودات ، خلق على صورته لمعرفته ولمحبته ، وهو كونه مظهرا مجملا مفصلا لأفعاله وصفاته وذاته ، فما في سائر الحضرات مقدمات ومتمهات لما فيه من الكمالات ، فلا بدّ له إلا ، ولا بدّ من همة تعليه إلى ماله في عليين من معاني الدرجات ، ولا تهمله لتنزعه همته إلى أدنى من درجة البهائم والجمادات ، وذلك باستنارة سماء باطنه وأرض ظاهره بمصباح العقل الفعلي ، من
 
-### English
+### English · passage 2
 
 To proceed: The least of the servants of the Most High, the Self-Sufficient, ʿAlī ibn Aḥmad ibn ʿAlī ibn Aḥmad—may God make him one of those blessed with eternal felicity—says: Since, by the agreement of people of insight and direct vision, and the consensus of those possessed of reason and eloquence, the human being is the quintessence of the worlds, intended for his own sake by the Lord of creatures among all existents, created in His image so as to know and love Him—that is, so as to be a locus of manifestation, at once comprehensively and distinctly, of His acts, attributes and Essence—everything in the other Presences is a preparation and preliminary to the perfections within the human being. He therefore must have [**defective wording in the source**], and must possess an aspiration that raises him towards the degrees that belong to him in the highest reaches; it must not abandon him, lest his aspiration pull him down below the rank of animals and inanimate things. This comes about when the heaven of his inwardness and the earth of his outwardness are illumined by the lamp of the intellect in actuality, from ...
 
@@ -46,11 +42,13 @@ To proceed: The least of the servants of the Most High, the Self-Sufficient, ʿA
 
 This opening is an elaborate allusive rewriting of Qurʾān 24:35. The problematic phrases صلّ عليّ من, الزيتونة بالسماوات على ثمرات الأعيان, and فلا بد له إلا are also visible in the 2008 printed scan (printed p. 11; PDF page 12); they cannot simply be dismissed as errors introduced by the electronic transcription. They remain unresolved pending an independent witness. The wording ومتمهات is also uncertain; no conjectural Arabic restoration has been adopted. Here and below “entity” translates ʿayn without itself deciding whether the referent is a fixed entity, an extramental individual, or a particular determination. The former note accidentally duplicated the following Arabic and English paragraph; that duplicated material has been removed.
 
-## Printed p. 12 · Intellect, unveiling, and the need for commentary
+## MSH-001 · Printed p. 12 · Intellect, unveiling, and the need for commentary
 
-**MSH-001** · [Arabic source](https://archive.org/details/machra3-khosous/page/n12/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n12/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī (authorial preface; cited authorities as marked)
+
+### Arabic · passage 1
 
 نار العقل الفعال ، بعد صفاء زيتونة فكره بزيت الحدس عن ملابسة الوهم والخيال ، وتنور مشكاة العقل الهيولاني ، وزجاجة العقل الملكي ؛ بنور العقل المستفاد من العوالي ؛ بحيث تصير قوته القدسية يكاد زيتها يضيء بالأسرار ؛ ولو لم تمسسه من التعليم والرياضة نار ، وذلك هو نور المكاشفة اللائح منه عين اليقين ، صافيا عن ظلومات شبه الفلاسفة والمتكلمين ؛ على أن حججهم لا تفيد كشف الحقائق ، كما اعترف بذلك الإمامان الغزالي والرازي - وقد فاقا وفاقا فيهما أكثر الخلائق ، والأمر ما بالغ السلف في النهي عنهما ، والتشديد على من يتعاطي تعلمهما وتعليمهما .
 
@@ -58,7 +56,7 @@ This opening is an elaborate allusive rewriting of Qurʾān 24:35. The problemat
 
 قلنا : بعد قطع العلائق ورفع العوائق - إن صار ضروريّا ، وقد جاز انقلاب النظر إليه ؛ فلا نزاع ؛ وإلا فالمميز شواهد الكتاب والسنة وإجماع الأمة ، ثم إرشاد الشيخ المعروف باستقامة الطريقة وكمال البصيرة .
 
-### English
+### English · passage 1
 
 ... the fire of the Active Intellect, after the olive-tree of his thought has been purified by the oil of intuition (*ḥads*) of entanglement with estimation and imagination, and the niche of the material intellect and the glass of the dispositional intellect (*al-ʿaql al-malakī*) have been illuminated by the light of the acquired intellect from the higher realms. His sacred faculty then comes to a point at which its oil would almost shine with mysteries, even if no fire of instruction or discipline had touched it. This is the light of unveiling, from which the eye of certainty shines forth, unclouded by the darkness of the doubts of philosophers and theologians. Their demonstrations do not disclose realities, as the two imams al-Ghazālī and al-Rāzī acknowledged—although they surpassed most people in both fields. This explains why the early authorities so strongly forbade these pursuits and admonished those who undertook to learn or teach them.
 
@@ -66,7 +64,7 @@ One might object: “Without discursive examination (*naẓar*), how could the p
 
 We reply: Once attachments have been cut and impediments lifted, if this knowledge has become immediate and necessary (*ḍarūrī*)—and it is admissible that what had required examination should become such knowledge—then there is no dispute. Otherwise the criterion is the testimonies of the Book and the Sunna and the community’s consensus, followed by the guidance of a spiritual master known for uprightness of path and perfected insight.
 
-### Arabic
+### Arabic · passage 2
 
 نعم . .
 
@@ -74,7 +72,7 @@ We reply: Once attachments have been cut and impediments lifted, if this knowled
 
 وألهمني أن ألقبه : “ مشرع الخصوص إلى معاني النصوص “ ، وأسأله من فضله العظيم ومنه القدير أن يزين قلمي ، بأن يصب عليه زلال الصواب ؛ حتى يتعطش إليه جمهور الطلاب ، ويجعله لي نورا يهديني به إلى حسن المآب ؛ بحيث يكون مظهرا لأسمائه
 
-### English
+### English · passage 2
 
 Certainly, discursive examination can help resolve what perplexes the wayfarer concerning spiritual stations, by means of the acquired dispositions (*malakāt*) that this science has conferred. Now the *Nuṣūṣ* is among the works brought forth by the verifying master, exemplar of the elect, sovereign of the verifiers, refuge of subtle investigators, imam of the imams of the knowers among the Muhammadan heirs: Ṣadr al-Ḥaqq wa-l-Ḥaqīqa wa-l-Dīn, Muḥammad ibn Isḥāq ibn Muḥammad ibn Yūsuf al-Qūnawī—may God be pleased with him and cause him to be well pleased. It shines with the suns of this science, displays its blossoms, gathers the universal principles of its trees that bear every variety of sweetest fruit, and unveils the subtleties of the mysteries whose several lights he deposited in his concentrated expressions. Since I had seen no commentary on it whatsoever—much less one adequate to elucidating its words and meanings and doing justice to its intentions and construction—necessity and divine assistance compelled me to append a commentary that might benefit the hearts of its students in these pursuits. My inadequacy bars the door and keeps me from approaching: it is a hidden book whose untouched treasures are handled only by the purified, and whose mysteries are unveiled only by those brought near. Yet God’s all-embracing, munificent mercy preceded my inadequacy and plunged me into the sea of His generosity to bring forth its pearls and coral.
 
@@ -84,11 +82,13 @@ He inspired me to name it *The Watering Place of the Elect, Leading to the Meani
 
 This paragraph establishes the relationship between rational inquiry, acquired intellectual habits, and unveiling. The author neither treats *naẓar* as self-sufficient nor denies it every auxiliary role; the two parts must be read together. The printed source does not demonstrate that no earlier commentary existed—only that al-Mahāʾimī reports not having seen one. The 2008 print reads العقل الملكي. “Dispositional intellect” interprets this term in the technical sequence of material, dispositional, actual, and acquired intellects; it is not an Arabic emendation. The parallel interpretation of the glass in Q24:35 as العقل بالملكة is explicit in al-Ṭūsī’s commentary on Ibn Sīnā, as quoted in the Sharḥ al-Manẓūma. The earlier rendering “angelic” or “possessed” was misleading in this context.
 
-## Printed p. 13 · The projected introduction
+## MSH-002 · Printed p. 13 · The projected introduction
 
-**MSH-002** · [Arabic source](https://archive.org/details/machra3-khosous/page/n13/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n13/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī (authorial preface; cited authorities as marked)
+
+### Arabic · passage 1
 
 الكريم المنعم الوهاب .
 
@@ -102,7 +102,7 @@ This paragraph establishes the relationship between rational inquiry, acquired i
 
 الثالث : في رفع الشبهات ، واللّه ولي الحسنات .
 
-### English
+### English · passage 1
 
 ... the Generous, the Bestower of Blessings, the Giver.
 
@@ -110,11 +110,13 @@ Let us begin with an introduction that will break the force of doubt concerning 
 
 It therefore has three chapters: the first, on transmitted proofs; the second, on rational proofs; and the third, on resolving objections. God is the patron of good deeds.
 
-## Printed p. 14 · The nature of tawḥīd and its Qurʾānic evidence
+## MSH-003 · Printed p. 14 · The nature of tawḥīd and its Qurʾānic evidence
 
-**MSH-003** · [Arabic source](https://archive.org/details/machra3-khosous/page/n14/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n14/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 [ مقدمة [ الكتاب ] ، وفيها ثلاثة فصول ]
 
@@ -124,7 +126,7 @@ It therefore has three chapters: the first, on transmitted proofs; the second, o
 
 أما من القرآن فقوله تعالى : وَلِلَّهِ الْمَشْرِقُ وَالْمَغْرِبُ فَأَيْنَما تُوَلُّوا فَثَمَّ وَجْهُ اللَّهِ إِنَّ اللَّهَ واسِعٌ عَلِيمٌ [ البقرة : 115 ] ، سَنُرِيهِمْ آياتِنا فِي الْآفاقِ وَفِي أَنْفُسِهِمْ حَتَّى يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ أَ وَلَمْ يَكْفِ بِرَبِّكَ أَنَّهُ عَلى كُلِّ شَيْءٍ شَهِيدٌ * أَلا إِنَّهُمْ فِي مِرْيَةٍ مِنْ لِقاءِ رَبِّهِمْ أَلا إِنَّهُ بِكُلِّ شَيْءٍ مُحِيطٌ [ فصلت : 53 ، 54 ] ، هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْباطِنُ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ [ الحديد : 3 ] ، وَإِذا سَأَلَكَ عِبادِي عَنِّي فَإِنِّي قَرِيبٌ [ البقرة : 186 ] ، وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْ حَبْلِ الْوَرِيدِ [ ق : 16 ] ، وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْكُمْ وَلكِنْ لا تُبْصِرُونَ [ الواقعة : 85 ] ، وَهُوَ مَعَكُمْ أَيْنَ ما كُنْتُمْ [ الحديد : 4 ] ، وَما رَمَيْتَ إِذْ رَمَيْتَ وَلكِنَّ اللَّهَ رَمى [ الأنفال : 17 ] . .
 
-### English
+### English · passage 1
 
 [Introduction to the book, comprising three chapters.] Chapter One: Transmitted Proofs.
 
@@ -132,11 +134,11 @@ Know that *tawḥīd* is the judgment affirming unity of God Most High, upon whi
 
 Among the Qurʾānic evidences are His words: “To God belong the east and the west; wherever you turn, there is the Face of God. God is All-Encompassing, All-Knowing” (2:115); “We shall show them Our signs on the horizons and in themselves until it becomes clear to them that He is the Real. Is it not enough that your Lord witnesses everything? Indeed, they doubt the meeting with their Lord; indeed, He encompasses all things” (41:53–54); “He is the First and the Last, the Manifest and the Hidden, and He knows all things” (57:3); “When My servants ask you concerning Me, I am near” (2:186); “We are nearer to him than the jugular vein” (50:16); “We are nearer to him than you are, but you do not see” (56:85); “He is with you wherever you are” (57:4); and “You did not throw when you threw; rather, God threw” (8:17).
 
-### Arabic
+### Arabic · passage 2
 
 إلى غير ذلك مما لا ينحصر من الآيات الكريمات . وأما أقواله صلى اللّه عليه وسلّم : « أصدق كلمة قالتها العرب ؛ كلمة لبيد : ألا كل شيء ما خلا اللّه باطل » « 1 » . وقوله صلى اللّه عليه وسلّم : « إن أحدكم إذا قام إلى الصلاة فإنما يناجي ربه ، وإن ربه بينه وبين القبلة ؛ فلا يبصقن أحدكم قبل قبلته ؛ ولكن عن يساره أو تحت قدمه » « 2 » .
 
-### English
+### English · passage 2
 
 And there are innumerable other noble verses. As for the Prophet’s sayings—God bless him and grant him peace—there is: “The truest expression uttered by the Arabs is Labīd’s verse: ‘Everything other than God is vain.’” And his saying: “When one of you rises for prayer, he is conversing intimately with his Lord. His Lord is between him and the direction of prayer; therefore let no one spit toward the direction in which he prays, but to his left or beneath his foot.”
 
@@ -144,29 +146,31 @@ And there are innumerable other noble verses. As for the Prophet’s sayings—G
 
 Qurʾānic verses and reported sayings are sources cited **by** al-Mahāʾimī, not independent propositions whose precise metaphysical interpretation is already established. The editorial heading in brackets reflects the printed source; the bracket status of its subdivisions is not independently verified. The 2008 editor's numbered hadith footnotes are excluded from the translated authorial text. Printed p. 14 was visually checked: الحدث is present in the 2008 print, so the proposed sense “intuition” remains an interpretation of a suspect reading, not a verified correction to الحدس.
 
-## Printed p. 15 · Prophetic reports and the authority of al-Ghazālī
+## MSH-004 · Printed p. 15 · Prophetic reports and the authority of al-Ghazālī
 
-**MSH-004** · [Arabic source](https://archive.org/details/machra3-khosous/page/n15/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n15/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 وقوله صلى اللّه عليه وسلم عن اللّه تعالى : « ما يزال عبدي يتقرب إليّ بالنوافل حتى أحبه ، فإذا أحببته ، كنت سمعه الذي يسمع به ، وبصره الذي يبصر به ، ويده التي يبطش بها ، ورجله التي يمشي بها » « 1 » . وقوله صلى اللّه عليه وسلّم : « إن اللّه تعالى يقول يوم القيامة : يا ابن آدم ، مرضت فلم تعدني . . إلى آخره » « 2 » . وقوله صلى اللّه عليه وسلّم : « اربعوا على أنفسكم إنكم لا تدعون أصمّا ولا غائبا عنكم ، تدعون بصيرا ، وهو معكم والذين تدعونه أقرب إلى أحدكم من عنق راحلته » « 3 » .
 
 وروى الترمذي في حديث طويل : « والذي نفس محمد بيده ؛ لو أنكم دلّيتم بحبل إلى الأرض لهبط على اللّه ، ثم قرأ : هو الأول والآخر والظاهر والباطن وهو بكل شيء عليم » « 4 » ، إلى غير ذلك من الأحاديث الصحيحة ؛ وإنما أوّلها جمهور العلماء فرارا من الشبهات ، وسنرفعها ، فلا حاجة إلى تلك التأويلات .
 
-### English
+### English · passage 1
 
 Also his report from God Most High: “My servant continues to draw near to Me through supererogatory deeds until I love him. When I love him, I become his hearing through which he hears, his sight through which he sees, his hand with which he grasps, and his foot with which he walks.” Also his saying: “God Most High will say on the Day of Resurrection: ‘O son of Adam, I was ill and you did not visit Me ...’” and the remainder of the report. Also his saying: “Be gentle with yourselves. You are not calling upon one who is deaf or absent from you. You are calling upon One who sees and who is with you, and the One upon whom you call is nearer to each of you than the neck of his riding-beast.”
 
 Al-Tirmidhī also related, in a long report: “By Him in whose hand is Muḥammad’s soul, if you lowered a rope down into the earth, it would descend upon God.” He then recited: “He is the First and the Last, the Manifest and the Hidden, and He knows all things.” There are other sound reports of this kind. The majority of scholars interpreted them figuratively to escape the difficulties they seem to raise. We shall remove those difficulties; hence those figurative interpretations will not be needed.
 
-### Arabic
+### Arabic · passage 2
 
 وأما من أقوال الأئمة ؛ فمنها ما قال الإمام حجة الإسلام أبو حامد الغزالي - قدّس اللّه روحه - في الباب الثالث من كتاب التلاوة من « الإحياء » : فمن عرف الحق رآه في كل شيء ، إذ كل شيء هو منه وإليه وبه وله ، فهو الكل على التحقيق ، ومن لا يراه في كل ما يراه ؛ فكأنه ما عرفه ، ثم قال : بل التوحيد الخالص أن لا يرى في كل شيء إلا اللّه .
 
 وفي كتاب : ( الصبر والشكر منه ) ، في بيان طريق كشف الغطاء عن الشكر ، ونقول هاهنا نظران : نظر بعين التوحيد المحض ، وهذا النظر يعرّفك قطعا أنه الشاكر وأنه المشكور ، وأنه المحب وأنه المحبوب ، وهذا نظر من عرف أنه ليس في الوجود غيره ، وأن كل شيء هالك إلا وجهه ، وإن ذلك صدق في كل حال أزلا وأبدا . النظر الثاني : وليس في الوجود إلا موجود واحد وموجد ، فالموجد حق والموجد باطل من حيث هو هو ، والموجود قائم وقيوم ، والموجد هالك وفان ، وإذا كان كل من
 
-### English
+### English · passage 2
 
 As for the sayings of the imams, one example is what the Proof of Islam, Abū Ḥāmid al-Ghazālī—may his spirit be sanctified—said in the third chapter of the Book of Recitation in the *Iḥyāʾ*: “Whoever knows the Real sees Him in everything, since everything is from Him, toward Him, through Him and for Him; He is the All in truth. Someone who does not see Him in all that he sees is as though he did not know Him.” He then said: “Pure tawḥīd is to see none but God in everything.”
 
@@ -176,29 +180,31 @@ In the *Book of Patience and Gratitude*, speaking about removing the veil from t
 
 The 2008 printed page was visually checked. The first موجد after “one existent” is understood as the passive mūjad, “that which is brought into being,” in accordance with the argument and the cited Iḥyāʾ passage. In the following clause the Mashraʿ print has الموجد حق, rendered here as “the bringer-into-being is real”; the Iḥyāʾ transcription consulted reads الموجود حق, “the existent is real.” This source difference is recorded rather than silently changing the Arabic quotation. The Iḥyāʾ also supplies intervening clauses omitted in this condensed quotation, explaining the abrupt transition to the second perspective. This is a comparison with a digital text of the cited work, not manuscript collation. “Sound reports” reproduces al-Mahāʾimī’s classification; this project has not independently authenticated the report from al-Tirmidhī.
 
-## Printed p. 16 · Multiple considerations and the fourth degree of tawḥīd
+## MSH-005 · Printed p. 16 · Multiple considerations and the fourth degree of tawḥīd
 
-**MSH-005** · [Arabic source](https://archive.org/details/machra3-khosous/page/n16/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n16/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 عليها فان ، فلا يبقى إلا وجه ربك ذو الجلال والإكرام . ثم قال : إن كحّل بصره بما يزيد في أنواره فيقل عمشه ، وبقدر ما يزيد في بصره يظهر له من نقصانه ما أثبته سوى اللّه ، فإن بقي في سلوكه كذلك ؛ فلا يزال يفضي به النقصان إلى المحو ، فينمحي عن رؤية ما سوى اللّه ، فلا يرى إلا اللّه ، فيكون قد بلغ كمال التوحيد ، وحيث أدرك نقصانا في وجود ما سوى اللّه ؛ دخل في أوائل التوحيد .
 
 ثم قال في ( كتاب الرجاء والخوف منه ) ، في بيان درجة الخوف واختلافه في القوة والضعف : فإن أثمر الورع فهو أعلى ، وأقصى درجاته أن يثمر درجات الصديقين ، وهو أن يسلب الظاهر والباطن مما سوى اللّه تعالى ، حتى لا يبقى لغير اللّه تعالى فيه متسع . ثم قال في كتاب ( التوحيد والتوكل ) ، في بيان حقيقة التوحيد الذي هو أصل التوكل : للتوحيد أربع مراتب ، وهو ينقسم إلى لب ، وإلى لبّ اللب ، وإلى قشر ، وإلى قشر القشر . ثم قال : والرابعة ألا يرى في الوجود إلا واحدا ، وهو مشاهدة الصديقين .
 
-### English
+### English · passage 1
 
 ... “upon [the earth] is passing away, so that only the Face of your Lord, possessed of majesty and generosity, remains.” He continues: “When the eye has been anointed with kohl that increases its light, its dimness diminishes. The greater its sight becomes, the more plainly it discovers the deficiency in whatever it had affirmed as other than God. If the traveller continues in this course, this reduction leads unceasingly towards effacement, until the vision of everything other than God is effaced. He then sees nothing but God and has attained the perfection of tawḥīd. Wherever he still perceives some deficiency in the existence of what is other than God, he has only entered its earliest stages.”
 
 Again, in the *Book of Hope and Fear*, in the explanation of degrees of fear and their difference in strength and weakness, al-Ghazālī says: “If fear produces scrupulous restraint, it is higher. Its utmost degree is to produce the ranks of the utterly truthful: when the outward and inward are stripped of all that is other than God Most High, leaving within them no room for anything else.” Then, in the *Book of Tawḥīd and Trust*, concerning the reality of tawḥīd as the foundation of trust: “Tawḥīd has four degrees; it is divided into kernel, kernel of the kernel, shell, and shell of the shell.” He then says: “The fourth is that a person sees nothing in existence but One; this is the witnessing of the utterly truthful.”
 
-### Arabic
+### Arabic · passage 2
 
 ثم قال : فإن قلت : كيف يتصوّر ألا يشاهد إلا واحدا ، وهو يشاهد السماء والأرض وسائر الأجسام المحسوسة ، وهي كثيرة ، فكيف يكون الكثير واحدا ؟ ثم قال في الجواب : إن الشيء قد يكون كثيرا بنوع مشاهدة واعتبار ، ويكون واحدا بنوع آخر من المشاهدة والاعتبار ، وهذا كما أنّ الإنسان كثيرا ما التفت إلى روحه وجسده وأطرافه وعروقه وعظامه وأحشائه ، وهو باعتبار آخر ومشاهدة أخرى واحد ، إذ نقول : إنه إنسان واحد فهو بالإضافة إلى الإنسانية واحد .
 
 ثم قال : فكذلك كل ما في الوجود من الخالق والمخلوق له اعتبارات ومشاهدات كثيرة ، فهو باعتبار واحد من الاعتبارات واحد ، وباعتبارات أخرى سواها كثير ، بعضها أشد كثرة من بعض ، ثم استشهد بتصديقه صلى اللّه عليه وسلم لبيدا . ثم قول سهل : يا مسكين كان ولم تكن ، ويكون ولا تكون ، فلما كنت اليوم صرت تقول أنا ، وأنا ، كن الآن كما لم تكن ، فإنه اليوم كما كان . ثم قال في كتاب ( المحبة والشوق منه ) ، في بيان سبب قصور أفهام الخلائق عن
 
-### English
+### English · passage 2
 
 He then says: “If you ask: How is it conceivable that someone should witness only One when he also witnesses heaven, earth and the other perceptible bodies, which are many? How can the many be one?” His answer is: “A thing can be many under one kind of witnessing and consideration (*mushāhada wa-iʿtibār*), and one under another kind of witnessing and consideration. Thus a human being is many insofar as one attends to the spirit, body, limbs, veins, bones and internal organs, yet under another consideration and in another witnessing that same human being is one. We say, ‘He is one human being’; in relation to humanity he is one.”
 
@@ -208,11 +214,13 @@ Then: “Likewise, everything in existence, Creator and creature alike, admits o
 
 This is an early *direct textual witness* for the project's perspective register. The analogy does not establish by itself that the Creator and creatures constitute one substantial individual in the same sense that a human being is one. One must identify the precise unifying *iʿtibār*. The quotation must also be checked against the *Iḥyāʾ* to distinguish al-Ghazālī’s original language from al-Mahāʾimī’s selection.
 
-## Printed p. 17 · Divine visibility concealed by its universality
+## MSH-006 · Printed p. 17 · Divine visibility concealed by its universality
 
-**MSH-006** · [Arabic source](https://archive.org/details/machra3-khosous/page/n17/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n17/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 معرفة اللّه تعالى : اعلم أن أظهر الموجودات وأجلاها هو اللّه تعالى .
 
@@ -220,7 +228,7 @@ This is an early *direct textual witness* for the project's perspective register
 
 ثم قال : فاللّه تعالى هو أظهر الأمور ، وبه ظهرت الأشياء كلها ، فلو كان له عدم أو غيبة أو تغير ؛ لا نهدمت السماوات والأرض ، وبطل الملك والملكوت ، ولأدرك به التفرقة بين الحالين ، ولو كانت بعض الأشياء موجودة به ، وبعضها موجودة بغيره ؛ لأدركت التفرقة بين الشيئين في الدلالة ؛ ولكن دلالته عامة في الأشياء على نسق واحد ، ووجوده دائم في الأحوال يستحيل خلافه ، فلا جرم أورثت شدة ظهوره خفاء ، فهذا هو السبب في قصور الأفهام ، فأما من قويت بصيرته ولم تضعف همته ؛ فإنه في حال اعتدال أمره لا يرى إلا اللّه ، ولا يعرف غير اللّه ، ويعلم أنه ليس في الوجود إلا اللّه ، وأفعاله أثر من آثار قدرته ، فهي تابعة له ، فلا وجود بالحقيقة دونه ؛ وإنما الوجود للواحد الحق الذي به وجود الأفعال كلها .
 
-### English
+### English · passage 1
 
 “... knowing God Most High. Know that the most manifest and most conspicuous of existents is God Most High.”
 
@@ -228,11 +236,11 @@ He continues: “There are two reasons why our intellects fail to comprehend som
 
 He continues: “God Most High is therefore the most manifest of all things, and through Him all things have become manifest. Were He subject to absence, disappearance or alteration, the heavens and earth would collapse and the visible and invisible dominions would become void; through this we could discern the difference between the two conditions. And were some things existent through Him and others through something besides Him, we could discern a difference in the evidence afforded by the two. Instead, the indication of Him is universally present in things in one consistent manner, and His existence endures through all conditions: the opposite is impossible. Hence His extreme manifestness produces concealment. This is why understanding is deficient. As for one whose inward vision has become strong and aspiration has not weakened, in his balanced condition he sees only God and knows none other; he knows that there is nothing in existence but God, that His acts are effects of His power and consequently dependent upon Him, and that nothing possesses existence in truth without Him. Existence belongs to the One Real, through whom all acts exist.”
 
-### Arabic
+### Arabic · passage 2
 
 ومن هذا حاله ، فلا ينظر في شيء من الأفعال إلا ويرى فيه الفاعل ، ويذهل عن الفعل من حيث أنه سماء وأرض وحيوان ونبات وشجر . ثم قال : وكان هو الموحد الحق الذي لا يرى إلا اللّه ، بل لا ينظر إلى نفسه من حيث نفسه ، بل من حيث أنه عبد اللّه ؛ فهو الذي يقال فيه : أنه فني في التوحيد ، وأنه فني عن نفسه ، وإليه الإشارة بقول من قال : كنا بنا ، ففنينا عنا ، فبقينا بلا نحن ، ثم قال : ولذلك قيل : لقد ظهرت فما تخفى على أحد * إلّا على أكمه لا يعرف القمرا لكن بطنت بما أظهرت محتجبا * فكيف يعرف من بالعين استترا
 
-### English
+### English · passage 2
 
 “Anyone in this condition looks upon no act without seeing the Agent within it, and is heedless of the act insofar as it is heaven, earth, animal, plant or tree.” He then says: “This is the true affirmer of divine unity, who sees only God. He does not even regard himself with respect to himself, but with respect to being God’s servant. Of such a one it is said that he has passed away in tawḥīd and passed away from himself. This is what is meant by the saying, ‘We existed through ourselves; then we passed away from ourselves and subsisted without an “us”.’” Then he quotes the lines: “You have become manifest, and are hidden from none / except a blind man who knows not the moon. / Yet You are hidden by what You have made manifest, veiled; / how could one know Him who has concealed Himself through the very thing seen?”
 
@@ -240,11 +248,13 @@ He continues: “God Most High is therefore the most manifest of all things, and
 
 The assertion that the spiritually balanced person sees only God is expressly *situated in a mode of vision*. It should not immediately be converted into denial that created effects exist as dependent effects. The passage uses both idioms, *afʿāl* and *āthār al-qudra*. The punctuation `لا نهدمت` in the online Arabic appears to require `لانهدمت`; no silent correction is incorporated.
 
-## Printed p. 18–19 · Al-Rāzī on oneness, proximity, and the language of the Real
+## MSH-007 · Printed p. 18–19 · Al-Rāzī on oneness, proximity, and the language of the Real
 
-**MSH-007** · [Arabic source](https://archive.org/details/machra3-khosous/page/n18/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n18/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 إلى غير ذلك من المواضع الصريحة وغيرها . ومنها ما قال إمام العلماء فخر الدين الرازي ، في « شرح أسماء اللّه تعالى » ، في الفصل السادس من المقدمات في الكلام ، على قوله : أعوذ بك منك : وفيه لطائف : الأولى : معناه أنه لو كان هاهنا غيرك لا ستعذت به خوفا منك ؛ لكنه ليس في الوجود إلا أنت ، فلا استعذت منك إلا بك .
 
@@ -254,7 +264,7 @@ The assertion that the spiritually balanced person sees only God is expressly *s
 
 ثم قال في تفسير الحق ، في تأويل قول الحلاج : « أنا الحق » « 1 » : إنّا بينا بالبرهان النيّر ،
 
-### English
+### English · passage 1
 
 And there are other passages, explicit and otherwise. Among them is what the imam of scholars, Fakhr al-Dīn al-Rāzī, says in his *Commentary on the Divine Names*, in the sixth section of the preliminary discussions, explaining the expression “I seek refuge from You in You”: “There are subtleties here. First, its meaning is that, if there were here anything besides You, I would seek refuge in it out of fear of You; but there is no one in existence but You, so I seek refuge from You only in You.”
 
@@ -264,7 +274,7 @@ Then: “Every possible thing, therefore, considered in itself, is vain and peri
 
 Then, in interpreting the Name “the Real” (*al-Ḥaqq*), while explaining al-Ḥallāj’s utterance “I am the Real,” he says: “We have shown by a luminous demonstration ...”
 
-### Arabic
+### Arabic · passage 2
 
 أن الموجود هو الحق سبحانه ، وأن كل ما سواه فهو باطل ، فهذا رجل فني ما سوى الحق في نظره ، وفنيت أيضا نفسه عن نظره ، ولم يبق في نظره وجود غير اللّه ، فقال في ذلك الوقت أنا الحق ، كأن الحق سبحانه أجرى هذه الكلمة على لسانه حال فنائه بالكلية من نفسه ، واستغراقه في نور جلال اللّه تعالى ، ثم نقل عن الغزالي في سبب غلبة جريان اسم الحق على لسان الصوفية : إنهم في مقام المكاشفة ، ومن كان في مقام المكاشفة رأى اللّه حقّا وغيره باطلا ، وأما المتكلمون فهم من مقام الاستدلال بغير اللّه على وجود اللّه ، فلا جرم كان الغالب على ألسنتهم اسم الباري تعالى .
 
@@ -272,7 +282,7 @@ Then, in interpreting the Name “the Real” (*al-Ḥaqq*), while explaining al
 
 ثم إن الدليل الثاني لو تم ، فإنما يتم في الماهيات الموجودة ، لا فيها من حيث هي قابلة للوجود والعدم ونفس الماهية هناك ، فكيف يكون قرب الصانع أتم من قربها من نفسها بل من وجودها في الموجودية ؟ وقد ذكر في الأول ، فافهم . ثم قال في تفسير الواحد الأحد ، بعد إعادة نكتة ذكرها في : « هو واعلم أن مقام التوحيد مقام يضيق النطق عنه ؛ لأنك إذا أخبرت عنه فهناك مخبر عنه ومخبر به ومجموعهما ، فهو ثلاثة لا واحدة ، فالعقل يعرف ولكن النطق لا يصل إليه .
 
-### English
+### English · passage 2
 
 “... that the only existent is the Real, exalted is He, and that everything besides Him is vain. This was a man in whose vision everything besides the Real had passed away; indeed, his own self had also passed from his view, leaving no existence in his vision other than God. At that moment he said, ‘I am the Real,’ as though the Real, exalted is He, caused this expression to pass over his tongue in the state of his total passing-away from himself and immersion in the light of God’s majesty.” He then quotes al-Ghazālī to explain why the Name *al-Ḥaqq* is especially frequent upon the tongues of Sufis: “They occupy the station of unveiling; one who occupies the station of unveiling sees God as real and whatever is other than Him as vain. The theologians, by contrast, occupy the station of inferring God’s existence from that which is other than God. It is therefore the Name ‘the Creator’ that predominates upon their tongues.”
 
@@ -288,11 +298,13 @@ Al-Rāzī then says in his explanation of the One and Unique, after repeating a 
 
 Printed pp. 18–19 were visually checked. Al-Mahāʾimī’s own intervention begins at وأقول: he argues that the preceding demonstrations establish proximity to ījād, described as a relation that has no existence, rather than to the divine Essence. The running text of p. 19 ends with فالعقل يعرف ولكن النطق لا يصل إليه. The words وأطال في ذلك [مختصر الفتوحات المكية] occur below the footnote rule and continue the modern editor’s note from p. 18; they have been removed from the authorial Arabic and English. They do not attribute the preceding al-Rāzī paragraph to Ibn ʿArabī.
 
-## Printed p. 20 · Earlier testimonies: Junayd, Ibn ʿAṭāʾ, and Shihāb al-Dīn al-Suhrawardī
+## MSH-008 · Printed p. 20 · Earlier testimonies: Junayd, Ibn ʿAṭāʾ, and Shihāb al-Dīn al-Suhrawardī
 
-**MSH-008** · [Arabic source](https://archive.org/details/machra3-khosous/page/n20/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n20/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 سئل الجنيد عن التوحيد ، فقال : معنى يضمحلّ فيه الرسوم ، وتشوش فيه العلوم ، ويكون اللّه كما لم يزل . ثم قال : وقال ابن عطاء : من الناس من يكون في توحيده مكاشفا بالأفعال ، يرى الحادثات باللّه ، ومنهم من هو مكاشف بالحقيقة ، فيضمحل إحساسه بما سواه ، فهو يشاهد الجمع سرا بسر ، وظاهره موصوف بالتفرقة . ثم قال في تفسير اسمه الأول الآخر ، الظاهر الباطن ، نقلا عن الغزالي : إنما خفي لشدة ظهوره ونوره ، وهو حجاب نوره . وهو المراد من قول بعض المحققين : سبحان من اختفى عن العقول بشدة ظهوره ، واحتجب عنها بكمال نوره .
 
@@ -300,7 +312,7 @@ Printed pp. 18–19 were visually checked. Al-Mahāʾimī’s own intervention b
 
 ومنها ما قال الشيخ الكبير شهاب الدين السهروردي في العوارف ، في الباب الثامن : « والصوفي صفا عن هذه البقية في طرفي العمل والترك للخلق ، وعزلهم بالكلية ورآهم بعين الفناء والزوال ، ولاح له ناصية التوحيد ، وعاين سر قوله تعالى : كُلُّ شَيْءٍ هالِكٌ إِلَّا وَجْهَهُ [ القصص : 88 ] . ما قال بعضهم في بعض غلباته : ليس في الدارين غير اللّه . ثم قال في الباب العشرين : فأما الفناء الباطن - وهو محور آثار الوجود عند لمعان نور الشهود - يكون في تجلي الذات .
 
-### English
+### English · passage 1
 
 Al-Junayd was asked about tawḥīd, and answered: “It is a meaning in which the traces [of created distinctness] fade away, established forms of knowledge become unsettled, and God is as He has always been.” Then [al-Rāzī] says: “Ibn ʿAṭāʾ said that some people, in their tawḥīd, experience unveiling through acts: they see temporal things through God. Others experience an unveiling of Reality itself: their sensation of whatever is other than Him fades away. Such a person witnesses gathered unity, secret with secret, while his outward state remains characterized by differentiation.” He then explains the Names First, Last, Manifest and Hidden by citing al-Ghazālī: “He is concealed only through the intensity of His manifestness and light; His veil is His light.” This is what some verifiers mean in saying: “Glory to Him who hides from the intellects through His extreme manifestation and is veiled from them by the perfection of His light.”
 
@@ -308,11 +320,11 @@ Then, interpreting His Name “Light”: “Manifest light is that through which
 
 Other testimonies include what the great shaykh Shihāb al-Dīn al-Suhrawardī says in *ʿAwārif al-maʿārif*, chapter eight: “The Sufi is purified of this remaining residue in both doing and refraining from acts for the sake of creatures; he sets creatures aside altogether and sees them with the eye of passing-away and disappearance. The forefront of divine unity shines for him, and he witnesses the secret of God’s saying, ‘Everything is perishing except His Face’ (28:88).” Thus some, when overwhelmed by a spiritual state, said: “There is nothing in either world but God.” In chapter twenty he says: “As for inward passing-away (*fanāʾ bāṭin*), which is the effacement of the traces of existence at the flashing of the light of witnessing, it occurs in the self-disclosure of the Essence.”
 
-### Arabic
+### Arabic · passage 2
 
 ثم قال في الباب الثلاثين : فالصوفي في الابتداء ينفي الخلق ، ويرى الأشياء من اللّه ؛ حيث طالع ناصية التوحيد ، فإذا ارتقى إلى ذروة التوحيد يشكر الخلق بعد شكر الحق ، ويثبت لهم وجودا في المنع والعطاء ، بعد أن يرى المسبب أولا ؛ وذلك لسعة علمه وقوة معرفته ، يثبت الوسائط ، فلا يحجبه الخلق عن الحق كعامة المسلمين ، ولا يحجبه الحق عن
 
-### English
+### English · passage 2
 
 Then, in chapter thirty: “At the beginning the Sufi negates creatures and sees things as proceeding from God, once the forefront of tawḥīd has appeared to him. But when he rises to the summit of tawḥīd, he thanks creatures after thanking the Real, and acknowledges that they possess an existence in acts of withholding and giving—after first seeing their Cause. Because of his breadth of knowledge and strength of realization, he affirms the intermediaries. Thus creatures do not veil the Real from him, as they do for ordinary Muslims, nor does the Real veil from him ...”
 
@@ -320,11 +332,13 @@ Then, in chapter thirty: “At the beginning the Sufi negates creatures and sees
 
 The second quoted Suhrawardī passage is of central importance: heightened spiritual realization **reinstates the awareness of mediating causes** rather than merely intensifying their phenomenological elimination. This is Suhrawardī as quoted by al-Mahāʾimī; direct collation of the *ʿAwārif* remains necessary. “Shihāb al-Dīn al-Suhrawardī” here is the author of the *ʿAwārif*, **not** the philosopher of illumination. The printed page confirms that the Sufi actively sets creatures aside and sees them under the aspect of passing-away. Word division and hamza were normalized in وعزلهم ... ورآهم. The scan also prints محور آثار الوجود; the English “effacement” understands the expected محو and remains a contextual interpretation of that suspect printed reading.
 
-## Printed p. 21 · Returning from effacement to comprehensiveness
+## MSH-009 · Printed p. 21 · Returning from effacement to comprehensiveness
 
-**MSH-009** · [Arabic source](https://archive.org/details/machra3-khosous/page/n21/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n21/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 الخلق كأرباب الإرادة والمبتدئين ، فيكون شكره للحق ؛ لأنه المنعم والمعطى والمسبب ، ويشكر الخلق ؛ لأنهم واسطة وسبب . ثم قال في الباب السابع والثلاثين : ومن الساجدين من يكاشف أنه يطوي بسجوده بساط الكون والمكان ، ويسرح قلبه في فضاء الكشف والعيان ، فيهوى دون هوية إطباق السماوات ، تمّحي لقوة شهوده تماثيل الكائنات ، ويسجد على طرف رداء العظمة . ثم قال في الباب الحادي والستين : فيغلب وجوده الحق الأعيان والأكوان ، فيرى الكون باللّه من غير استقلال الكون بنفسه .
 
@@ -336,7 +350,7 @@ The second quoted Suhrawardī passage is of central importance: heightened spiri
 
 ومنها ما قال الأستاذ أبو القاسم بن عبد الكريم بن هوازن القشيري ، في رسالة في فضل بيان اعتقاد هذه الطائفة ، عن النصرآبادي أنه يقول : « أنت متردد بين صفات الفعل وصفات الذات ، وكلاهما صفة على الحقيقة ، فإذا هيّمك في مقام التفرقة قرّبك بصفات
 
-### English
+### English · passage 1
 
 “... creatures, as they veil them from those at the stage of willing and from beginners. His thanks are directed to the Real, because He is the Benefactor, Giver and Causer; and he thanks creatures because they are intermediaries and causes.” Then, in chapter thirty-seven: “Some of those who prostrate are granted an unveiling by which they fold up, through their prostration, the carpet of cosmos and place, and their hearts roam through the expanse of unveiling and direct vision. They plunge beyond the identity of the enclosing heavens; the likenesses of the existents are effaced by the intensity of their witnessing, and they prostrate at the hem of the robe of Majesty.” He then says in chapter sixty-one: “The being of the Real so predominates over entities and worlds that he sees the cosmos through God, without attributing self-subsistence to the cosmos.”
 
@@ -352,15 +366,17 @@ There are also the words of Abū al-Qāsim ʿAbd al-Karīm ibn Hawāzin al-Qusha
 
 The passage distinguishes: (i) cosmic dependence without independent subsistence; (ii) effacement of awareness, expressed through the metaphor of a folded-up cosmos; and (iii) the whole person’s participation in witnessing, including bodily existence. The cited passage also suggests that there can be a further grade beyond ordinary fanāʾ. The text of the reported account of Ibn ʿUmar must be separately assessed as a transmission, not presumed sound. Printed p. 21 confirms the suspect construction فيهوى دون هوية إطباق السماوات and the word محورا. The latter should not be used to infer an additional grade of effacement: a parallel transmission in al-Yāfiʿī’s Nashr al-maḥāsin al-ghāliya (digital p. 27) reads لمح, a glimpse, of the higher certainty in this life. The English marks that comparative restoration in brackets; the Arabic has not been altered.
 
-## Printed p. 22 · Al-Qushayrī on differentiation, gathering, and the terminology of finding
+## MSH-010 · Printed p. 22 · Al-Qushayrī on differentiation, gathering, and the terminology of finding
 
-**MSH-010** · [Arabic source](https://archive.org/details/machra3-khosous/page/n22/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n22/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 فعله ، وإذا بلّغك إلى مقام الجمع قرّبك لصفات ذاته » . ثم قال : « ورأيت بخط الأستاذ أبي على الدقاق أنه قيل لصوفي : أين اللّه ؟ فقال : أسخطك اللّه ، أتطلب مع العين أين ؟ » . وفي باب تفسير الألفاظ ، في بيان لفظ التواجد « 1 » والوجد « 2 » والوجود « 3 » . عن الجنيد أنه قال : « علم التوحيد مبائن لوجوده ، ووجوده مبائن لعلمه » « 4 » .
 
-### English
+### English · passage 1
 
 “... action, and when He brings you to the station of gathering (*jamʿ*), He draws you near through the attributes of His Essence.” Then al-Qushayrī says: “I saw in the handwriting of our master Abū ʿAlī al-Daqqāq that someone asked a Sufi: ‘Where is God?’ He replied, ‘May God be displeased with you! Do you seek a “where” alongside the [Divine] Reality itself (*al-ʿayn*)?’” In the chapter explaining technical expressions, where he discusses induced ecstasy (*tawājud*), finding (*wajd*) and being/finding (*wujūd*), al-Junayd is cited as saying: “Knowledge of tawḥīd is distinct from its actual finding; and its actual finding is distinct from knowledge of it.”
 
@@ -368,11 +384,13 @@ The passage distinguishes: (i) cosmic dependence without independent subsistence
 
 Printed p. 22 contains **long numbered explanatory footnotes** after the authorial sentence. In particular a footnote says that the Real's *wujūd* in ecstatic realization differs according to the divine Names and cosmic receptivities in every breath. This is **not part of al-Mahāʾimī’s authorial text** on the evidence of the page’s explicit `هامش` (“footnote”) division. It must never be silently included among his own statements. A note about this useful *editorial witness* appears in `Textual_Apparatus.md`, not in the bilingual translation. The quotation “knowledge of tawḥīd ...” requires collation with al-Qushayrī’s *Risāla*. The note’s historical reference to Textual_Apparatus.md is superseded by editorial/APPARATUS.md and the Stage 12 review. Modern footnote material remains outside the authorial text.
 
-## Printed p. 23 · Gathering, gathering-of-gathering, and second differentiation
+## MSH-011 · Printed p. 23 · Gathering, gathering-of-gathering, and second differentiation
 
-**MSH-011** · [Arabic source](https://archive.org/details/machra3-khosous/page/n23/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n23/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 وعن أبي على الدقاق : « إن الوجود يوجب استهلاك العبد ، فهو كمن غرق في البحر » . ثم قال : « صاحب الود له صحو ومحو ، فحال صحوه بقاؤه بالحق ، وحال محوه فناؤه بالحق ، وهاتان الحالتان أبدا متعاقبتان عليه ، فإذا غلب عليه الصحو بالحق فيه يصل ، وبه يقول » ، قال صلى اللّه عليه وسلم وأولاده فيما أخبر عن الحق : « فبي يسمع ، وبي يبصر » « 1 » .
 
@@ -384,7 +402,7 @@ Printed p. 22 contains **long numbered explanatory footnotes** after the authori
 
 ثم نقل عنه ما ذكره الإمام عنه ، ثم قال : وسئل الجنيد عن التوحيد ، فقال : سمعت
 
-### English
+### English · passage 1
 
 Abū ʿAlī al-Daqqāq said: “Realization of being (*wujūd*) entails the servant’s complete absorption; he is like someone drowned in the sea.” Then al-Qushayrī says: “The person possessed of love alternates between sobriety (*ṣaḥw*) and effacement (*maḥw*). In sobriety he subsists through the Real; in effacement he passes away through the Real. These two states continue to succeed one another in him. When sobriety through the Real prevails, through Him he connects and through Him he speaks.” [Al-Mahāʾimī here invokes the prophetic report in which God says:] “Through Me he hears, and through Me he sees.”
 
@@ -398,11 +416,13 @@ Then he reports a statement of al-Junayd concerning tawḥīd, already quoted by
 
 The critical triplet on p. 23 is a *substantial empirical counterexample* to the blanket claim that the highest spiritual state always discards every distinction. **Second differentiation** is not simply the lowest *farq* regained, because its acts are performed “through God.” This passage is cited from al-Qushayrī and requires confirmation against a reliable edition of the *Risāla*. The textual boundaries on p. 23 are unusually compromised by footnote material and quotation marks; only the main text above is represented as authorial. Printed p. 23 was visually checked: the material beginning أوصاف البشرية and ending التعريفات (ص 324) is below the footnote rule and correctly excluded. The print has صاحب الود and فيه يصل; the digital Risāla consulted instead has صاحب الوجود and فيه يصول. These differences are recorded as comparisons with the cited source, without silently substituting its Arabic. The fragment علامة حقيقة التوحد القائم به واحدا is abbreviated or defective: the Risāla’s fuller wording attributes to Ibn ʿAṭāʾ a statement about forgetting tawḥīd so that its upholder is one.
 
-## Printed p. 24 · Qushayrī's aphorisms and *Laṭāʾif al-ishārāt*
+## MSH-012 · Printed p. 24 · Qushayrī's aphorisms and *Laṭāʾif al-ishārāt*
 
-**MSH-012** · [Arabic source](https://archive.org/details/machra3-khosous/page/n24/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n24/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 مغنيا يقول : وغنّى لي منّي قلبي وغنّيت كما غنّى * وكنّا حيث ما كانوا وكانوا حيث ما كنّا
 
@@ -414,7 +434,7 @@ The critical triplet on p. 23 is a *substantial empirical counterexample* to the
 
 وفي قوله تعالى : لِلْفُقَراءِ الَّذِينَ أُحْصِرُوا فِي سَبِيلِ اللَّهِ [ البقرة : 273 ] كيفما نظروا رأوا سرادقات التوحيد محدقة بهم .
 
-### English
+### English · passage 1
 
 “... a singer saying: ‘My heart sang to me out of myself, and I sang as it sang; / and we were wherever they were, and they were wherever we were.’” Then [al-Qushayrī] says: “Dhū al-Nūn was asked: ‘By what did you know your Lord?’ He replied: ‘I knew my Lord through my Lord; had it not been for my Lord, I would not have known my Lord.’” Al-Shiblī said: “A knower has no notice of what is other than Him, nor does he utter the words of another.” Abū Yazīd was asked about the knower, and answered: “He sees nothing other than God in his sleep or wakefulness; he agrees with nothing other than God and looks towards nothing other than God.” Then, in the chapter on love, [al-Qushayrī] cites the saying: “The lover is effaced with respect to his attributes, and the Beloved is affirmed through His Essence.” There are many other such statements.
 
@@ -428,11 +448,13 @@ On “For the poor who have been constrained in God's way” (2:273): “However
 
 A number of phrases here have doubtful lexical integrity in the web transcription (notably *al-iḥtiṭāf*, *muṣāḥabatuhu*, and the pronouns in the 2:71 quotation). These are translated provisionally with the uncertainty disclosed; see apparatus. These are **al-Qushayrī's statements quoted by al-Mahāʾimī**, not the commentary's own running exegesis of the verses.
 
-## Printed p. 25 · Hidden association, dependence, and the boundaries of spiritual language
+## MSH-013 · Printed p. 25 · Hidden association, dependence, and the boundaries of spiritual language
 
-**MSH-013** · [Arabic source](https://archive.org/details/machra3-khosous/page/n25/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n25/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 ثم قال : فلا يعلم لهم نفسا واحدا مع الخلق ، وأنّي بذلك ولا خلق ، وإذا لم يكن فإثبات ما لم يكن شرك في التوحيد ، ثم قال : وليس على سرهم ذرة من إثبات الأغيار . وفي قوله تعالى : يا أَهْلَ الْكِتابِ تَعالَوْا إِلى كَلِمَةٍ [ آل عمران : 64 ] : وكما لا يكون غيره معبودك ، لا يكون غيره مقصودك ومشهودك ، وهذا هو اتقاء الشرك ، وأنت أول الأغيار الذين لا تشهدهم . وفي قوله تعالى : وَلا يَأْمُرَكُمْ أَنْ تَتَّخِذُوا الْمَلائِكَةَ وَالنَّبِيِّينَ أَرْباباً [ آل عمران : 80 ] : أي يأمركم بإثبات الخلق بعد تخصيصهم شهود الحق .
 
@@ -442,7 +464,7 @@ A number of phrases here have doubtful lexical integrity in the web transcriptio
 
 وفي قوله : لا يُؤاخِذُكُمُ اللَّهُ بِاللَّغْوِ فِي أَيْمانِكُمْ [ المائدة : 89 ] ومن أنت في الواقعة حتى تقدّم نفسك ؟ وأين في الدار ديار حتى يقول بتركه أو يتحقق بوصله أو هجره ؟ كلا بل هو اللّه الواحد القهار . وفي قوله تعالى : قُلْ لِمَنْ ما فِي السَّماواتِ وَالْأَرْضِ [ الأنعام : 12 ] سألهم هل في الدار ديار ؟
 
-### English
+### English · passage 1
 
 Then: “He does not recognize that they have even a single breath in company with creatures—and how could that be, when there are no creatures [before his witnessing]? To affirm what is not there would be an association of others with God in tawḥīd.” Again: “There remains in their innermost consciousness not an atom of affirmation of others.” Concerning “People of the Book, come to a common word” (3:64): “Just as nothing other than Him should be your object of worship, nothing other than Him should be your intended object or object of witnessing. This is to guard against association. You yourself are the first of the ‘others’ that you must not witness.” On “He would not command you to take angels and prophets as lords” (3:80): “[Would] He command you to affirm creatures after granting them exclusive witnessing of the Real?”
 
@@ -456,31 +478,33 @@ On “God does not call you to account for thoughtless words in your oaths” (5
 
 The earlier English inserted “independent/independently” four times in the quotations, although the Arabic has no corresponding qualifier. Those insertions have been removed. Dependence may be part of an interpretation, especially in light of the following statement that temporal things subsist through God, but it must not be silently placed in the quoted wording. This remains al-Qushayrī’s language as transmitted by al-Mahāʾimī. The phrase فاستجابته الحق بالتحقيق لوجوده remains compressed and its English interpretation is provisional.
 
-## Printed p. 26 · Qurʾānic allusions in the testimonies of al-Qushayrī and al-Sulamī
+## MSH-014 · Printed p. 26 · Qurʾānic allusions in the testimonies of al-Qushayrī and al-Sulamī
 
-**MSH-014** · [Arabic source](https://archive.org/details/machra3-khosous/page/n26/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n26/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 وفي قوله تعالى : فَلَمَّا جَنَّ عَلَيْهِ اللَّيْلُ [ الأنعام : 76 ] ، ويقال : قوله عند شهود الكواكب والشمس والقمر هذا رَبِّي [ الأنعام : 78 ] ، إنه كان يلاحظ الآثار والأغيار باللّه ، ثم كان يرى الأشياء للّه ومن اللّه ، ثم طالع الأغيار محو في اللّه . وفي قوله تعالى : الَّذِينَ آمَنُوا وَلَمْ يَلْبِسُوا إِيمانَهُمْ بِظُلْمٍ [ الأنعام : 82 ] في التحقيق وضع الشيء في موضعه ، وأصعبه حسبان الحدثان ما لم يكن فكان ؛ فإن المنشئ اللّه والمجرى اللّه ، ولا إله إلا اللّه ، وسقط ما سوى اللّه .
 
-### English
+### English · passage 1
 
 On “When night covered him” (Q 6:76), it is also said concerning his declaration “This is my Lord” while witnessing the star, sun and moon: he first contemplated effects and things other than God *through* God; then he saw things as belonging to God and coming from God; thereafter, in contemplating things other than God, he was effaced in God. Concerning “Those who believe and do not confound their faith with wrongdoing” (Q 6:82): “[Wrongdoing is], in reality, putting a thing in [other than] its place; its most grievous form is to suppose of temporal things that they were not and then came to be, for it is God who brings forth and God who makes [things] run their course. There is no god but God, and everything apart from God fell away.”
 
-### Arabic
+### Arabic · passage 2
 
 وفي قوله تعالى : وَلَوْ أَشْرَكُوا لَحَبِطَ عَنْهُمْ [ الأنعام : 88 ] ، يعني : لولا حظوا غيرا ، أو شاهدوا من دوننا شيئا ، أو نسبوا شيئية من الحدثان إلى غير قدرتنا في الظهور ؛ لتأسى ما أسلفوه عن عرفانهم . وفي قوله : وَهُوَ وَلِيُّهُمْ [ الأنعام : 127 ] لا في بدايتهم يقصدون غيره ، ولا في نهايتهم يجدون غيره ، ولا في وسطهم يشهدون غيره ، إلى غير ذلك من المواضع التي لا تنحصر .
 
-### English
+### English · passage 2
 
 On “Had they associated others [with God], what they used to do would have come to nothing” (Q 6:88): “If they attended to an other, witnessed something apart from Us, or attributed any actuality of things coming to be to a power other than Ours in manifestation, the knowledge they had previously gained would have been impaired [source wording uncertain].” On “He is their Protector” (Q 6:127): “At their beginning they intend no other than Him; at their end they find no other than Him; and between the two they witness no other than Him.” Many more examples could be cited.
 
-### Arabic
+### Arabic · passage 3
 
 ومنها ما قال الشيخ المحقق أبو عبد الرحمن محمد بن الحسين السلمي النيسابوري ، في تفسيره المسمى بالحقائق : قيل : إن الباء في « بسم » أنه باللّه ظهرت الأشياء ، وبه فنيت ، وبتجليه حسنت المحاسن ، وبالاستتار قبحت وسمحت « 1 » . وكتب أبو سعيد الخراز إلى بعض إخوانه : هل يقدّر أحد اللّه إلا باللّه ؟ وهل يرى اللّه إلا اللّه ؟ وهل عرف اللّه أو يعرفه إلا اللّه ؟ وهل كان قبل العبد وقبل الخلق إلا اللّه ؟ وهل
 
-### English
+### English · passage 3
 
 Among these testimonies is what the verifying shaykh Abū ʿAbd al-Raḥmān Muḥammad ibn al-Ḥusayn al-Sulamī of Nishapur says in his commentary called *al-Ḥaqāʾiq*: “It is said that the letter *bāʾ* in *bism* indicates that through God things appeared, through Him they vanished, through His self-disclosure beautiful things became beautiful, and through His concealment they became ugly and repellent.” Abū Saʿīd al-Kharrāz wrote to one of his brethren: “Can anyone estimate God except through God? Does anyone see God other than God? Has anyone known God, or can anyone know Him, except God? Before the servant and before creation, was there anything other than God? And is ...” [The final question continues on p. 27.]
 
@@ -488,39 +512,41 @@ Among these testimonies is what the verifying shaykh Abū ʿAbd al-Raḥmān Mu�
 
 The scan of printed p. 26 correctly gives Q 6:82; the electronic 28 has been corrected to match it. The scan nevertheless lacks غير in the definition of wrongdoing. Al-Qushayrī’s Laṭāʾif on Q 6:82 reads والظلم ... وضع الشيء في غير موضعه; the English supplies the missing sense in brackets rather than turning the clause into a definition of justice. Source footnote 1 is modern editorial matter and remains excluded. The printed readings لتأسى, وسمحت, and ثم طالع الأغيار محو still require an independent witness.
 
-## Printed p. 27 · Al-Sulamī on the disappearance of otherness
+## MSH-015 · Printed p. 27 · Al-Sulamī on the disappearance of otherness
 
-**MSH-015** · [Arabic source](https://archive.org/details/machra3-khosous/page/n27/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n27/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 الآن في السماوات والأرض وما بينهما إلا اللّه ؟ إذ لم يكونوا باللّه ، فكانوا باللّه وللّه . وفي قوله تعالى : فَتُوبُوا إِلى بارِئِكُمْ [ البقرة : 54 ] ، قال الفارسي : التوبة محو البشرية بإثبات الألوهية . وقوله تعالى : فَمَنْ يَكْفُرْ بِالطَّاغُوتِ [ البقرة : 256 ] ، وقيل : الطاغوت كل ما سوى اللّه تعالى . وفي الجملة من لم يتبرأ من الكل لا يصح له الإيمان باللّه .
 
-### English
+### English · passage 1
 
 ... now in the heavens, the earth, and what lies between them apart from God? For they had not been [the construction here is uncertain]; they came to be through God and for God.” On “Repent to your Creator” (Q 2:54), al-Fārisī says: “Repentance is the effacement of humanity [in the sense of its independent self-assertion] through the affirmation of divinity.” On “Whoever rejects the false object of worship” (Q 2:256), it is said that *ṭāghūt* signifies everything other than God. In short, one who has not renounced everything cannot have sound faith in God [in the special sense being expounded].
 
-### Arabic
+### Arabic · passage 2
 
 وفي قوله تعالى : اللَّهُ وَلِيُّ الَّذِينَ آمَنُوا [ البقرة : 257 ] ، قال ابن عطاء : يفنيهم عن صفاتهم بصفته ، فتندرج صفاتهم تحت صفاته ، كما اندرجت أكوانهم تحت كونه ، وحقوقهم عند حقه . وقوله : لِلَّهِ ما فِي السَّماواتِ وَما فِي الْأَرْضِ [ البقرة : 284 ] ، فمن اشتغل بهما اشتغل بلا شيء عن كل شيء . وفي قوله تعالى : إِنَّ اللَّهَ لا يَخْفى عَلَيْهِ شَيْءٌ [ آل عمران : 5 ] ، قال جعفر : فلا يطلعن عليك ، فيرى في قلبك سواه فيمقتك .
 
-### English
+### English · passage 2
 
 On “God is the Protector of those who believe” (Q 2:257), Ibn ʿAṭāʾ says: “He effaces them from their attributes through His attribute, so their attributes are included beneath His attributes, just as their modes of being are included beneath His being, and their claims [yield] before His right.” On “To God belongs whatever is in the heavens and whatever is on earth” (Q 2:284): “Whoever is occupied with these two is occupied with nothing to the neglect of everything.” On “Nothing is hidden from God” (Q 3:5), Jaʿfar says: “Do not let Him look upon you and find in your heart anything besides Him, lest He detest you.”
 
-### Arabic
+### Arabic · passage 3
 
 وفي قوله : أَ فَغَيْرَ دِينِ اللَّهِ يَبْغُونَ [ آل عمران : 83 ] قال الواسطي : من تمسك بغير الوحدانية ، بل بغير الواحد ؛ فهو بعيد عن الحقيقة . وفي قوله تعالى : مَقامُ إِبْراهِيمَ [ آل عمران : 97 ] ، قال الشبلي : من شاهد فيه مقام الخليل والمقام فهو شريف ، ومن شاهد فيه المقام الحق فهو أشرف . وفي قوله تعالى : اتَّقُوا اللَّهَ حَقَّ تُقاتِهِ [ آل عمران : 102 ] ، قال جعفر : التقوى : ألّا ترى في قلبك شيئا سواه .
 
-### English
+### English · passage 3
 
 On “Do they seek a religion other than God's?” (Q 3:83), al-Wāsiṭī says: “Whoever clings to something other than oneness—or, rather, other than the One—is far from reality.” On “The Station of Abraham” (Q 3:97), al-Shiblī says: “Whoever witnesses there the Friend's station and the place is noble; one who witnesses there the station of the Real is nobler.” On “Be mindful of God with the mindfulness due to Him” (Q 3:102), Jaʿfar says: “Mindfulness is not to see in your heart anything besides Him.”
 
-### Arabic
+### Arabic · passage 4
 
 وقوله : مِنْكُمْ مَنْ يُرِيدُ الدُّنْيا [ آل عمران : 102 ] ، قال الثوري : العامة في قميص العبودية ، والخاصة في قميص الربوبية ، فلا يلاحظون العبودية ، وأهل الصفوة جذبهم الحق ومحاهم عن نفوسهم . وقوله : وَلا يَحْسَبَنَّ الَّذِينَ يَبْخَلُونَ [ آل عمران : 180 ] ، قال ابن عطاء : ومن نظر في طريق الحق إلى الغير ؛ حرم فوائد الحق وسواطع أنوار القرب . وقوله : إِنَّ فِي خَلْقِ السَّماواتِ وَالْأَرْضِ [ آل عمران : 190 ] ، قال
 
-### English
+### English · passage 4
 
 On “Some of you desired this world” (Q 3:152; the 2008 print and its transcription incorrectly give 3:102), al-Thawrī says: “Ordinary people wear the garment of servanthood, the elect wear the garment of lordship, so that they cease to attend to servanthood; the people of purity have been drawn by the Real and effaced from themselves.” On “Let those who are stingy not suppose ...” (Q 3:180), Ibn ʿAṭāʾ says: “Whoever looks to another on the path of the Real is deprived of the Real's gifts and the brilliant lights of proximity.” On “In the creation of the heavens and earth” (Q 3:190), [the quotation continues on p. 28].
 
@@ -528,39 +554,41 @@ On “Some of you desired this world” (Q 3:152; the 2008 print and its transcr
 
 Q 3:152 corrects a wrong number already visible in the 2008 print; the Arabic retains that printed number. The opening clause إذ لم يكونوا باللّه is also present in the scan and is textually uncertain. The earlier “through themselves” has been removed because it has no Arabic equivalent. The spiritual imagery remains a report attributed to the earlier speakers, not independent authentication of their sayings.
 
-## Printed p. 28 · Degrees of witnessing, taṣarruf and self-disclosure
+## MSH-016 · Printed p. 28 · Degrees of witnessing, taṣarruf and self-disclosure
 
-**MSH-016** · [Arabic source](https://archive.org/details/machra3-khosous/page/n28/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n28/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 بعضهم : إن الخواص لم ينظروا إلى الكون والحوادث إلا بمشاهدة الآيات ، وما شاهدوا الآيات إلا بمشاهدة الحق ، ومن شاهد الحق لم يمازج طعم الحدث ، وإني بالحدث لمن الحدث عنده غير الحدث . وفي قوله تعالى : وَاعْبُدُوا اللَّهَ وَلا تُشْرِكُوا بِهِ [ النساء : 36 ] ، قال ابن عطاء : الشرك أن ترى غيره ، أو ترى من سواه ضرّا ونفعا . وقوله تعالى : إِنَّ اللَّهَ لا يَغْفِرُ أَنْ يُشْرَكَ بِهِ [ النساء : 48 ] ، قال الواسطي : هو ألا يطالع سره شيئا سوى اللّه .
 
-### English
+### English · passage 1
 
 Someone said: “The elect do not contemplate the cosmos and events except while witnessing signs; they do not witness signs except while witnessing the Real. Whoever witnesses the Real does not mingle with the taste of temporal occurrence. How could temporal occurrence affect one for whom temporal occurrence is other than [what ordinary people mean by] temporal occurrence?” On “Worship God, and associate nothing with Him” (Q 4:36), Ibn ʿAṭāʾ says: “Association is to behold another than Him, or to behold harm and benefit as coming from another than Him.” On “God does not forgive that partners should be associated with Him” (Q 4:48), al-Wāsiṭī says that [its esoteric demand] is that one's innermost consciousness should behold nothing but God.
 
-### Arabic
+### Arabic · passage 2
 
 وقوله تعالى : مَنْ يُطِعِ الرَّسُولَ فَقَدْ أَطاعَ اللَّهَ [ النساء : 80 ] ، قيل : طاعة الرسول صلى اللّه عليه وسلم طاعة الحق ؛ لفنائه عن أوصافه وقيامه بأوصاف الحق ، وفنائه عن رسومه وبقائه بالحق ظاهرا وباطنا ، فبطاعته وذكره يصل العبد إلى الحق ، وبمخالفته ينقطع عنه .
 
-### English
+### English · passage 2
 
 On “Whoever obeys the Messenger has obeyed God” (Q 4:80), it is said: “Obedience to the Messenger is obedience to the Real, because of his effacement from his own attributes and subsistence through the attributes of the Real, his disappearance from his own traces and his subsistence through the Real outwardly and inwardly. Through obedience to him and remembrance of him the servant reaches the Real; by disobeying him he is cut off from Him.”
 
-### Arabic
+### Arabic · passage 3
 
 وقوله : فَلَمَّا تَوَفَّيْتَنِي [ المائدة : 117 ] ، قال أبو بكر الفارسي : الموحد حيث ما نظر كان الحق منظوره ، إن أخلد في النار لم يلتمس فرجا ؛ لأن رؤية الحق وطئه ونجاته وهلكته من غير واحدة ، لم يبق حجاب إلا طمسه برؤية التفريد ، فكان المخاطب والمخاطب واحدا ؛ وإنما يخاطب الحق نفسه بنفسه . وقوله عزّ وجل : فَلَمَّا جَنَّ عَلَيْهِ اللَّيْلُ رَأى كَوْكَباً [ الأنعام : 76 ] ، قال الواسطي : يطالع الحق بسره لا الكوكب .
 
-### English
+### English · passage 3
 
 On “When You took me to Yourself” (Q 5:117), Abū Bakr al-Fārisī says: “Wherever the unifier turns his gaze, it is the Real that he contemplates. If he were to remain in the Fire forever, he would not seek relief, because beholding the Real, its impact upon him, his rescue and his ruin are [for him] but one [object of regard]. The vision of exclusive oneness has obliterated every veil, so that speaker and one addressed are one; the Real is addressing Himself through Himself.” On “When night covered him, he saw a star” (Q 6:76), al-Wāsiṭī says: “In his secret he looks to the Real, not to the star.”
 
-### Arabic
+### Arabic · passage 4
 
 وقوله : وَهُوَ الَّذِي أَنْشَأَكُمْ مِنْ نَفْسٍ واحِدَةٍ فَمُسْتَقَرٌّ [ الأنعام : 98 ] ، قال الواسطي : مستقر فيه أنوار الذات على الأبد . وقوله : وَإِنْ تُطِعْ أَكْثَرَ مَنْ فِي الْأَرْضِ [ الأنعام : 116 ] ، قيل : من نظر إلى سوى الحق خاب وضل . وفي قوله تعالى : وَكَلَّمَهُ رَبُّهُ [ الأعراف : 143 ] ، سأل النظر إليه إذ رجع إلى حقيقته ، فرأى اللّه في كل منظور له ومبصر . وقوله : فَلَمَّا تَجَلَّى رَبُّهُ [ الأعراف : 143 ] ، قال الواسطي : وصل إلى الخلق من صفاته ونعوته على مقادير هم لا كلية الصفات ، كما أن التجلي لم يكن بكلية الذات .
 
-### English
+### English · passage 4
 
 On “It is He who brought you forth from a single soul; then there is a dwelling-place ...” (Q 6:98), al-Wāsiṭī says: “The lights of the Essence rest within it forever.” On “If you obey most of those on earth” (Q 6:116), it is said: “Whoever looks to anything other than the Real is disappointed and goes astray.” On “His Lord spoke to him” (Q 7:143): “He requested sight of Him when he returned to his own reality, and saw God in every object seen and contemplated.” On “When his Lord disclosed Himself” (Q 7:143), al-Wāsiṭī says: “What reached creatures of His attributes and descriptions was according to their measures, not the totality of the attributes, just as the self-disclosure was not through the totality of the Essence.”
 
@@ -568,31 +596,33 @@ On “It is He who brought you forth from a single soul; then there is a dwellin
 
 The wording «وطئه» in the al-Fārisī quotation is uncertain; “its impact upon him” is provisional. The final claim explicitly distinguishes the measure of the receiver from exhaustive disclosure of the divine Essence; the passage is transmitted from al-Wāsiṭī, not yet al-Mahāʾimī’s independent metaphysical proof.
 
-## Printed p. 29 · Existence and existentiation under two perspectives
+## MSH-017 · Printed p. 29 · Existence and existentiation under two perspectives
 
-**MSH-017** · [Arabic source](https://archive.org/details/machra3-khosous/page/n29/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n29/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 وقوله : فَلَمْ تَقْتُلُوهُمْ . . . الآية [ الأنفال : 17 ] ، قال بعضهم : ما رميت ، ولكن رميت بسهم الجمع فغيبك عنك ، فرميت ولا سيّما الرّامين عنك ؛ لأن المباشرة منك ، والحقيقة لنا إذا لم نفرق . وفي قوله : وَلا تَعْمَلُونَ مِنْ عَمَلٍ إِلَّا كُنَّا عَلَيْكُمْ شُهُوداً [ يونس : 61 ] وقال بعضهم : من شهد شهوده إياه ؛ قطعه ذلك عن مشاهدة الأغيار أجمع . وفي قوله تعالى : وَأَنِ اسْتَغْفِرُوا رَبَّكُمْ [ هود : 3 ] قال يوسف : واستغفار الأكابر من رؤية كل شيء سوى الحق .
 
-### English
+### English · passage 1
 
 On “You did not kill them ...” (Q 8:17), someone says: “You did not cast, but you cast with the arrow of gathering, so He hid you from yourself. You cast, yet [He displaced] the throwers from you [uncertain wording]: the immediate act is yours, while reality belongs to Us when We do not make a separation.” On “Nor do you perform an act without Our being witnesses over you” (Q 10:61), someone says: “Whoever witnesses His witnessing of him is thereby cut off from contemplating all others.” On “Ask your Lord's forgiveness” (Q 11:3), Yūsuf says: “The great ones ask forgiveness for seeing anything at all besides the Real.”
 
-### Arabic
+### Arabic · passage 2
 
 وقوله : وَلِلَّهِ غَيْبُ السَّماواتِ وَالْأَرْضِ وَإِلَيْهِ يُرْجَعُ الْأَمْرُ كُلُّهُ [ هود : 123 ] ، قال النهرجوري : ولا يطلع عليه إلا الأمناء . ثم قال : هم الذين لم يبق عليهم منهم حظ ، ولا لهم منهم مطالبة ، فكانوا بلا كون ، وشهدوا بلا شهود . ثم قال : فلا هم هم ، ولا هم لا هم ، فهم هم من حيث الوجود ، ولا هم من حيث الإيجاد . ثم قال : أخرجوا عن حدود التفرقة إلى عين الجمع ، فهم مجموعون في عين جمع الجمع .
 
-### English
+### English · passage 2
 
 On “To God belongs the unseen of the heavens and earth, and to Him the entire affair returns” (Q 11:123), al-Nahrajūrī says: “None gains access to it except the trustworthy.” Then: “They are those in whom nothing is left for themselves, who retain no claims on their own behalf; so they existed without [their own] being and witnessed without [their own] witnessing.” And: “They are neither themselves nor not themselves: they are themselves insofar as existence (*min ḥayth al-wujūd*) is considered, but not themselves insofar as the bringing-into-existence (*min ḥayth al-ījād*) is considered.” And: “They have been taken beyond the bounds of separation to the very reality of gathering, so that they are gathered in the very reality of the gathering of gatherings.”
 
-### Arabic
+### Arabic · passage 3
 
 وفي قوله تعالى : وَلَقَدْ هَمَّتْ بِهِ [ يوسف : 24 ] ، قال ابن عطاء : احتالت زليخا أن تري نفسها ليوسف ، فحجب اللّه نفسها عن يوسف بالبرهان العالي والحق الظاهر ، حتى لم يشهد في وقته غير الحق « 1 » . وفي قوله : أَ فَمَنْ هُوَ قائِمٌ عَلى كُلِّ نَفْسٍ [ الرعد : 33 ] ، قال الجنيد : باللّه قامت الأشياء ، وبه فنيت ، وبتجليه حسنت المحاسن ، وباستتاره قبحت وسمجت . وفي قوله تعالى : وَاعْبُدْ رَبَّكَ حَتَّى يَأْتِيَكَ الْيَقِينُ [ الحجر : 99 ] ، قال الواسطي : فتتحقق أنك لا تحس بغير الحق ، ولا ترى إلا الحق ، ولا تحادث إلا الحق .
 
-### English
+### English · passage 3
 
 On “She indeed desired him” (Q 12:24), Ibn ʿAṭāʾ says: “Zulaykhā contrived to display herself to Joseph, but God veiled her from him by the highest proof and the manifest Real, so that at that moment he witnessed nothing but the Real.” On “Is He who stands over every soul ...” (Q 13:33), al-Junayd says: “Through God things stood, through Him they perished, through His self-disclosure beauties became beautiful, and through His concealment they became ugly and repellent.” On “Worship your Lord until certainty comes to you” (Q 15:99), al-Wāsiṭī says: “You then realize that you sense nothing but the Real, see nothing but the Real, and converse with nothing but the Real.”
 
@@ -600,39 +630,41 @@ On “She indeed desired him” (Q 12:24), Ibn ʿAṭāʾ says: “Zulaykhā con
 
 The contrast between *min ḥayth al-wujūd* and *min ḥayth al-ījād* is explicit. Its first speaker here is al-Nahrajūrī as transmitted through al-Sulamī. Treat it as a register distinction in reported language, not proof that the terms denote different independently existing objects. The longer story about Joseph in footnote 1 is editorial and omitted.
 
-## Printed p. 30 · Moses, fanāʾ, and the measure of revelation
+## MSH-018 · Printed p. 30 · Moses, fanāʾ, and the measure of revelation
 
-**MSH-018** · [Arabic source](https://archive.org/details/machra3-khosous/page/n30/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n30/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 وفي قوله تعالى : فَلَمَّا أَتاها نُودِيَ يا مُوسى * إِنِّي أَنَا رَبُّكَ [ طه : 11 ، 12 ] ، قيل لموسى : كيف عرفت أن النداء هو نداء الحق ؟ فقال : أفناني وشملني ، فكان كل شعرة مني ، كان مخاطبا بنداء من جميع الجهات ، وكأنها تعبر عن نفسها بجواب ، ولما شملتني أنوار الهيبة ، وأحاطت لي أنوار العزة والجبروت ؛ علمت أنه ليس لأحد أن يخبر عن نفسه باللفظين جميعا متتابعا إلا الحق .
 
-### English
+### English · passage 1
 
 On “When he came to it, he was called: O Moses! Truly I am your Lord” (Q 20:11–12), Moses was asked: “How did you know that the call was the call of the Real?” He replied: “It effaced me and encompassed me; every hair upon me became an addressee of a call coming from every direction, as though each hair expressed an answer. When the lights of awe enveloped me and the lights of might and dominion surrounded me, I knew that no one could speak of himself using those two successive expressions except the Real.”
 
-### Arabic
+### Arabic · passage 2
 
 قال : وكان هو محل الفناء ، فقلت أنت ، أنت لم تزل ، وليس لموسى معك مقام ، ولا له جرأة على الكلام ؛ إلا أن تبقيه ببقائك تنعته بنعوتك ، فتكون أنت المخاطب والمخاطب جميعا . قال : لا يحمل خطابي غيري ولا يجيبني سواي ، أنا المتكلم والمكلم وأنت في الوسط شبح يقع بك محل الخطاب . وفي قوله : وَوَجَدَ اللَّهَ عِنْدَهُ [ النور : 39 ] ، قال ابن عطاء : ما وجد الخلق سوى الحق « 1 » .
 
-### English
+### English · passage 2
 
 He said: “That was the place of effacement, and I said: ‘You! You have never ceased to be; Moses has no standing with You and no boldness to speak, unless You preserve him through Your abiding and characterize him with Your attributes; then You are both the one addressing and the one addressed.’” He [the quoted speaker] said: “‘No one carries My speech but I, and none answers Me but I. I am speaker and one spoken to; you are a shadowy figure in between, serving as the place of address.’” On “He found God with him” (Q 24:39), Ibn ʿAṭāʾ says: “Creatures found nothing but the Real.”
 
-### Arabic
+### Arabic · passage 3
 
 وفي قوله تعالى : سَنُرِيهِمْ آياتِنا فِي الْآفاقِ [ فصلت : 53 ] ، قال الخطمي : لا يزال العبد يرتقي من حال إلى حال ؛ حتى يبلغ الأحوال السنيّة العالية ، ويرى اللّه قائما بالأشياء فانية في رؤية الحق ، ويتيقن أن القديم إذا قورن بالحادث لا يثبت له أثر ، وإن جل قدره وعظم خطره .
 
-### English
+### English · passage 3
 
 On “We shall show them Our signs on the horizons” (Q 41:53), al-Khaṭmī says: “A servant continues to rise from one state to another until he reaches elevated and lofty states, and sees God sustaining things, which vanish in the witnessing of the Real. He becomes certain that when the eternal is compared with the temporally originated, the latter retains no effect [in that regard], however great its worth and importance.”
 
-### Arabic
+### Arabic · passage 4
 
 وهو معنى قوله : آياتِنا فِي الْآفاقِ وَفِي أَنْفُسِهِمْ حَتَّى يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ [ فصلت : 53 ] ، وهو النظر إلى الكون يشاهد الحق ، ثم النظر إلى الحق بالفناء عن الكون ، وهو أن تصير النعوت نعتا واحدا ولا يشهد إلا حقّا صرفا . وسئل أبو عثمان عمن يقول بالشاهد ، وقال : لا أنكر القول لمن يشهد الأشياء كلها شيئا واحدا .
 
-### English
+### English · passage 4
 
 This is the meaning of “Our signs on the horizons and within themselves, until it becomes clear to them that He is the Real” (Q 41:53): first contemplating the cosmos while witnessing the Real, then contemplating the Real while being effaced from the cosmos, when the many attributes become one attribute and one witnesses nothing but the pure Real. Abū ʿUthmān was asked about someone who speaks of *the witnessed one* [*al-shāhid*, reading/context uncertain]. He answered: “I do not reject the assertion of someone who witnesses all things as one thing.”
 
@@ -640,31 +672,33 @@ This is the meaning of “Our signs on the horizons and within themselves, until
 
 The source's report about Moses is an esoteric transmitted narrative, not a verified prophetic ḥadīth. The printed editor cites Ibn ʿAjība in footnote 1; this is excluded from al-Mahāʾimī’s main text. The subject of *fanāʾ* must be kept distinct from a claim of hypostatic fusion.
 
-## Printed p. 31 · The lights of creation and the collapse of separate agency
+## MSH-019 · Printed p. 31 · The lights of creation and the collapse of separate agency
 
-**MSH-019** · [Arabic source](https://archive.org/details/machra3-khosous/page/n31/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n31/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 قال الواسطي : ظهر في كل شيء بما أظهر منه ، وإظهاره الأشياء ظهوره بها ، فإذا فتشتها لا تجد غير اللّه ، ولذلك قال صلى اللّه عليه وسلّم : « أصدق كلمة قالها لبيد : ألا كل شيء ما خلا اللّه باطل » « 1 » . وفي قوله تعالى أَلا إِلَى اللَّهِ تَصِيرُ الْأُمُورُ [ الشورى : 3 ] ، قال : لأن منه مبدأ كل شيء ، وإليه منتهى كل شيء ، فما كان منه وله فهو الساعة به . وفي قوله تعالى : وَنَحْنُ أَقْرَبُ إِلَيْهِ [ ق : 16 ] ، ومن تحقق ذلك لعامر بن قيس حين قال : ما نظرت شيئا إلا ورأيت اللّه أقرب إلىّ منه .
 
-### English
+### English · passage 1
 
 Al-Wāsiṭī said: “He manifested Himself in every thing by what He displayed through it, and His displaying things is His manifestation through them. Examine them closely and you will find none but God. This is why the Prophet, peace be upon him, said: ‘The truest saying spoken by Labīd is: Everything apart from God is vain.’” On “Surely to God all affairs return” (Q 42:53; the source identifies Q 42:3, apparently in error), he says: “For everything's beginning is from Him and its end goes back to Him; what is from Him and for Him is, in the present instant, through Him.” On “We are nearer to him” (Q 50:16), ʿĀmir ibn Qays expressed the realization when he said: “I have never looked at a thing without seeing God nearer to me than that thing.”
 
-### Arabic
+### Arabic · passage 2
 
 وفي قوله تعالى : هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْباطِنُ [ الحديد : 3 ] ، قال جعفر الصادق رضي اللّه عنه : فسقطت هذه المعاني وبقي هو « 2 » . وعن الشبلي : الأشياء ساقطة بأنه أول ، آخر ، ظاهر ، باطن ، إلى غير ذلك من المواضع . ومنها ما قال الشيخ الكامل المحقق أبو طالب المكي ، في كتابه « قوت القلوب » ، في ذكر وصف الزاهد وفضل الزهد : وروينا عن ابن عباس في قوله تعالى : جَمِيعاً مِنْهُ [ الجاثية : 13 ] ، قال : في كل حرف اسم من أسمائه تعالى ، فكان اسم كل شيء عين اسمه ، كما أن فعل كل عين فعله .
 
-### English
+### English · passage 2
 
 On “He is the First and the Last, the Outward and the Inward” (Q 57:3), Jaʿfar al-Ṣādiq said: “These meanings fell away, and He alone remained.” From al-Shiblī: “Things fall away because He is First, Last, Outward and Inward.” There are many similar places. Another authority is the accomplished and verifying shaykh Abū Ṭālib al-Makkī, who says in *Qūt al-qulūb*, in the discussion of the ascetic and the excellence of renunciation: “We have related from Ibn ʿAbbās on the words ‘all of it from Him’ (Q 45:13): ‘In every letter is one of His names, exalted is He; thus the name of every thing is identical with His name, just as the act of every entity is identical with His act.’”
 
-### Arabic
+### Arabic · passage 3
 
 ثم ذكر في فصل آخر : قيل لبعض العارفين هل تأسف الولي على غير اللّه ؟ فقال : وهل يرى غير اللّه فيأسف عليه . ثم قال في شرح مقام التوحيد : كل وصف أحكام المتوكلين حين نظر الولي إلى مولاه الذي تولاه فرآه في كل شيء . ثم قال : إذا كملت مشاهدته وقام بحق شهادته ؛ غيّبت تلك المشاهدة برؤية القيومية وجود الخلقية مع اللّه ، فلم يرها دونه ، قامت له القيومية بنصبه من الملك لما تفرغ قلب لمعاينة الملك ، وهذا من عين اليقين فوق علمه ؛ لأن الحق المبين هو الأول والآخر كما
 
-### English
+### English · passage 3
 
 Elsewhere he relates that a knower was asked: “Does a friend of God grieve for anything other than God?” He answered: “Does he see anything other than God, that he might grieve for it?” In his explanation of the station of unification, he describes the conditions of those who trust in God as the friend turns to his protecting Lord and sees Him in everything. Then: “When his witnessing is perfected and he fulfills the duty of bearing witness, that witnessing—by the vision of God's self-subsistence—renders invisible the existence of creatures *alongside* God. He does not see them apart from Him. The divine self-subsistence stands before him ... when the heart is entirely free to behold the King. This belongs to the eye of certainty, beyond his [discursive] knowledge, because the manifest Real is First and Last, just as ...” [Continued on p. 32. The middle of the Arabic period is defective or severely compressed.]
 
@@ -672,39 +706,41 @@ Elsewhere he relates that a knower was asked: “Does a friend of God grieve for
 
 The verse «ألا إلى الله تصير الأمور» is Q 42:53, not 42:3. «وجود الخلقية مع الله» explicitly contains the preposition *maʿa*; it speaks of the apparent “alongside” in witnessing, not simply created dependence. The long Abū Ṭālib al-Makkī passage has a corrupt clause (قام له القيومية بنصبه من الملك...) needing independent comparison with *Qūt al-qulūb*.
 
-## Printed p. 32 · Causes, intermediaries, and differing scriptural attributions
+## MSH-020 · Printed p. 32 · Causes, intermediaries, and differing scriptural attributions
 
-**MSH-020** · [Arabic source](https://archive.org/details/machra3-khosous/page/n32/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n32/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 هو الظاهر والباطن . ثم قال : وبعض أشياخنا إذا سئل عن التوكل ؛ أجاب عنه بعين الحقيقة ، فيقول : هو أن تكون مع الحق ، كما لم تكن ، فإن الحق الآن كما لم يزل . ثم قال : يا مسكين كان ولم تكن ، ويكون ولا تكون ، فلمّا كنت اليوم ، قلت أنا وأنا ، كن فيما أنت الآن كما لم تكن ، فاليوم كما كان .
 
-### English
+### English · passage 1
 
 ... He is the Outward and the Inward. Then he says: “When certain of our shaykhs were asked about trust in God, they answered from the very reality of the matter: ‘It is to be with the Real as though you had never been, for the Real is now as He always was.’” Then: “Poor soul! He existed when you were not; He will exist when you will not. When today you came to be, you said, ‘I, I!’ Be now, in your present existence, as though you were not, for He is today as He was.”
 
-### Arabic
+### Arabic · passage 2
 
 ثم قال في ذكر إثبات الأسباب والأوساط : فالمتوكل لا يرى إلا اللّه ، ووصفه وفعله وحكمه ، ففعله ظاهر ، ووصفه باطن ، واللّه الظاهر الباطن ، وحكمه هو الرسم ، واللّه الحاكم الراسم ، ثم قال : فإن اللّه قد أظهر أسبابا وأثبت نفسه فيها ، فقال : قُلْ يَتَوَفَّاكُمْ مَلَكُ الْمَوْتِ [ السجدة : 11 ] ، ثم رفعه وأظهر نفسه فقال : اللَّهُ يَتَوَفَّى الْأَنْفُسَ [ الزمر : 42 ] ، وكذلك قال في التفصيل : إِنَّهُمُ اتَّخَذُوا الشَّياطِينَ أَوْلِياءَ [ الأعراف : 30 ] ، وقال في التوحيد : إِنَّا جَعَلْنَا الشَّياطِينَ أَوْلِياءَ [ الأعراف : 27 ] ، وكما قال في المتشابه : وَأَضَلَّهُمُ السَّامِرِيُّ [ طه : 85 ] ، وقال في المحكم : إِلَّا فِتْنَتُكَ تُضِلُّ بِها مَنْ تَشاءُ وَتَهْدِي مَنْ تَشاءُ [ الأعراف : 155 ] ، ثم قال : وكذلك قيل عن اللّه تبارك وتعالى : أنا الدليل على نفسي ، لا دليل أدل علي مني .
 
-### English
+### English · passage 2
 
 Then, concerning the affirmation of causes and intermediaries: “The one who trusts in God sees nothing but God, His attribute, His act, and His command. His act is outward, His attribute inward; God is the Outward and the Inward. His command is the inscribed trace, and God is the One who commands and inscribes.” Then: “God has brought causes into appearance and established Himself [as the true agent] within them. Thus He says, ‘Say: the Angel of Death will take you’ (Q 32:11); then He sets that [mediating attribution] aside and makes Himself manifest: ‘God takes souls’ (Q 39:42). Likewise, in a differentiated account He says, ‘They took the devils as protectors’ (Q 7:30), while under the aspect of unification He says, ‘We made the devils protectors’ (Q 7:27). In the ambiguous [verses] (*mutashābih*) He says, ‘The Sāmirī led them astray’ (Q 20:85); in the decisive [verses] (*muḥkam*), ‘It is nothing but Your trial; You lead astray by it whomever You will and guide whomever You will’ (Q 7:155).” Then: “It is likewise related of God, blessed and exalted: ‘I am My own proof; no proof points to Me more surely than I.’”
 
-### Arabic
+### Arabic · passage 3
 
 ثم قال في ذكر حكم المتوكل في مزيد آخر من الهدى والبيان . وقال بعض العارفين : إذا رأيت الأشياء كلها كشيء واحد ، من معدن واحد ، بعين واحدة ؛ أريت ما لم تر قبل ذلك ، وسمعت ما لم تسمع وفهمت ما لم يفهم الخلق . ثم قال في ذكر أحكام المحبة ووصف أهلها : وتقلب محبة على هوى العبد حتى محبة اللّه هي محبة العبد من كل شيء ، فهو محب للّه حقا ، كما أنه مؤمن به حقا عن مشاهدة اليقين ؛ الذي يغلب رؤيته على رؤية الخلق فيشهده في كل شيء ، ويكون واحدا به دون كل شيء ؛ إذ قد تجلى ، فمن أيقن بكل شيء .
 
-### English
+### English · passage 3
 
 Then, in a further account of the one who trusts in God and of guidance and clarification, a knower says: “When you see all things as though they were one thing, from one mine and with one eye, you will be shown what you had never seen before, hear what you had never heard, and understand what people had not understood.” In discussing love and its possessors, [Abū Ṭālib] continues: “Love ... [source syntactically uncertain] until love of God becomes the servant's love in relation to everything. Then he loves God truly just as he believes in Him truly, through the vision of certainty that makes his vision [of God] prevail over his vision of creatures: he witnesses Him in everything and is one through Him without anything else, for He has disclosed Himself ...” [Final wording of the passage remains defective.]
 
-### Arabic
+### Arabic · passage 4
 
 ثم قال : وما قال التوحيد إلا الواحد ، وما قال اللّه إلا اللّه ، ثم قال : لقد بطنت . . إلى آخره . ثم قال في ذكر مخاوف المحبين ومقاماتهم في الخوف : لقد ظهرت لمن أفنيت بعد فنائه * فكان بلا كون لأنّك كنته قيل قبله :
 
-### English
+### English · passage 4
 
 Then: “None uttered unification but the One; none uttered ‘God’ but God.” Next he says: “You have been inward ...” [and so forth]. In speaking of the fears of lovers and their stations of fear, he cites: “You became manifest to him whom You had effaced, after his effacement; / so he was without a being of his own, because You were he.” The following verse, he says, had been recited before it [see p. 33].
 
@@ -712,39 +748,41 @@ Then: “None uttered unification but the One; none uttered ‘God’ but God.�
 
 The pair 32:11 / 39:42 gives explicitly differentiated versus comprehensive attribution of a single act, not a straightforward claim that angels are unreal. «أثبت نفسه فيها» is not to be silently reinterpreted as a spatial indwelling. An earlier reading quoted «تقلّب محبة» is textually uncertain.
 
-## Printed p. 33 · Divine proximity and the beginning of al-Anṣārī’s testimonies
+## MSH-021 · Printed p. 33 · Divine proximity and the beginning of al-Anṣārī’s testimonies
 
-**MSH-021** · [Arabic source](https://archive.org/details/machra3-khosous/page/n33/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n33/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 لقد بطنت ولا تخفى على أحد * إلّا على أكمه لا يعرف القمرا ثم قال : لقد ظهرت فما تخفى على أحد * إلّا على أكمه لا يعرف القمرا لقد بطنت فما أظهرت محتجبا * وكيف يعرف من بالعرف استترا فصرت أعجب ما عانيت مجتهدا * لأننّي حاجب استطلع الخبرا
 
-### English
+### English · passage 1
 
 “You have been hidden, yet are hidden from no one / except a blind man who cannot recognize the moon.” Then he says: “You have become manifest, hidden from no one / except a blind man who cannot recognize the moon. / You have remained hidden and have not disclosed [Yourself], being veiled [wording uncertain]; / how can he be known who was veiled by the very means of knowing? / I became the strangest thing I encountered in my striving, / for I myself am a veil that tries to discover the news.” [The poem's subject shifts and the wording of its second and third lines calls for collation.]
 
-### Arabic
+### Arabic · passage 2
 
 ثم قال : هو الناظر والمنظور ، والسامع والمسموع ، وهو الشاهد والمشهود ، وهو الواجد والموجود ، كما قال بعض المحبين : ليس في القلب والعيان جميعا * موضع فارغ لغير الحبيب هو سقمي وصحّتي وشفائي * وبه العيش ما حييت بطيب
 
-### English
+### English · passage 2
 
 Then: “He is the seer and what is seen, the hearer and what is heard; He is the witness and the witnessed, the finder and what is found.” As a lover says: “Neither within the heart nor in what the eye beholds / is there any vacant space for anything but the Beloved. / He is my illness, my health, my cure; / through Him life is sweet so long as I live.”
 
-### Arabic
+### Arabic · passage 3
 
 ثم قال في شرح دعائم الإسلام ، وفرض التوحيد : هو اعتقاد القلب أن اللّه تعالى واحد لا من عدد ، إلى أن قال : آخر في أوليته ، أول في آخريته ، وأن أسماءه وصفاته وأنواره غير مخلوقة ولا منفصلة عنه ، وأنه أمام كل شيء ، ووراء كل شيء ، وفوق كل شيء ، ومع كل شيء ، وأقرب إلى كل شيء من نفس الشيء ، وأنه مع ذلك غير محل للأشياء ، وأن الأشياء ليست محلا له ، إلى غير ذلك من المواضع .
 
-### English
+### English · passage 3
 
 Then, explaining the pillars of Islam and the obligation of divine unity: “It is the heart's conviction that God, exalted is He, is one—not as a unit in a number.” Farther on: “He is Last in His Firstness and First in His Lastness; His names, attributes and lights are neither created nor separate from Him. He is before everything, behind everything, above everything, with everything, and closer to everything than the thing is to itself; yet He is not a locus in which things inhere, nor are things loci in which He inheres.” There are further statements of this kind.
 
-### Arabic
+### Arabic · passage 4
 
 وأقول : يناسبه ما روى الواحدي والبغوي ، عن وهب بن منبه : « نودي من الشجرة ؛ قيل يا موسى ، فأجاب سريعا ما يدرى من دعاه . فقال : إني أسمع صوتك ولا أرى مكانك ، فأين أنت ؟ فقال : أنا فوقك ، ومعك ، وأمامك ، وخلفك ، وأقرب إليك من نفسك ، فعلم أن ذلك لا ينبغي إلا للّه عز وجل ، فأيقن به » « 1 » . ومنها ما قال شيخ الإسلام أبو إسماعيل عبد اللّه الأنصاري ، في كتابه « منازل السائرين » « 2 » : ولا يتم مقام التوبة إلا بالانتهاء من التوبة مما دون الحق ، ثم رؤية علة تلك التوبة ، ثم توبة من رؤية تلك العلة ، وفرار خاصة الخاصة مما دون الحق إلى الحق ، ثم من شهود الفرار إلى الحق ، ثم الفرار من الفرار إلى الحق ، وفي باب السماع وسماع الخاصة ثلاثة
 
-### English
+### English · passage 4
 
 **Al-Mahāʾimī adds:** “I say: What al-Wāḥidī and al-Baghawī relate from Wahb ibn Munabbih is fitting here: ‘A call came from the tree: “O Moses!” He answered quickly without knowing who had called him. He said: “I hear Your voice but do not see Your place. Where are You?” He answered: “I am above you, with you, before you, behind you, and nearer to you than your own self.” Moses knew that such a thing befitted none but God, mighty and glorious, and became certain of Him.’” Among the testimonies is also that of the Shaykh of Islam Abū Ismāʿīl ʿAbd Allāh al-Anṣārī in *Manāzil al-sāʾirīn*: “The station of repentance is not complete until one arrives at repentance from whatever is below the Real [reading supported by the cited Manāzil], then has perceived the defect in that repentance, then repented of perceiving that defect. The flight of the elect of the elect is first from what is beneath the Real to the Real, then from witnessing the flight to the Real, and finally from flight itself to the Real.” In the chapter on spiritual audition, the audition of the elect consists of three ... [continued on p. 34].
 
@@ -752,39 +790,41 @@ Then, explaining the pillars of Islam and the obligation of divine unity: “It 
 
 The words after «وأقول» are al-Mahāʾimī’s direct editorial intervention; his account of Wahb ibn Munabbih is a cited report and has not been established as authentic ḥadīth. The insistence on no literal *ḥulūl* (God as substrate and creatures as divine substrate) is explicit in the cited *Qūt* formulation. The scan confirms the problematic printed من in بالانتهاء من التوبة. The cited Manāzil wording is بالانتهاء إلى التوبة مما دون الحق: reaching repentance from what is other than the Real. The English now follows that marked source-supported reading rather than saying that repentance ceases. The Arabic has not been silently emended. The poem’s uncertain wording is also confirmed in print.
 
-## Printed p. 34 · Differentiated spiritual stations in al-Anṣārī
+## MSH-022 · Printed p. 34 · Differentiated spiritual stations in al-Anṣārī
 
-**MSH-022** · [Arabic source](https://archive.org/details/machra3-khosous/page/n34/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n34/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 أشياء : شهود المقصود في كل أمر ، والوقوف على الغاية في كل همس ، والخلاص من التلذذ بالتفرق ، وسماع خاصة الخاصة سماع يغسل العلل عن الكشف ، ويصل الأبد بالأزل ، ويرد النهايات إلى الأول . وفي باب المراقبة : والدرجة الثالثة مراقبة الأزل بمطالعة عين السبق ؛ استقبالا لعلم التوحيد ، ومراقبة ظهور إشارات الأزل على إيحائين الأبد ومراقبة الخلاص من ربطة المراقبة ، فإن مراقبته تقيده برسمه ، فإذا فني رسمه فني قيده ، والرابطة هي القيد . وفي باب الشكر : والدرجة الثالثة ألا يشهد العبد إلا المنعم .
 
-### English
+### English · passage 1
 
 ... matters: “to witness the intended Object in every affair, to stand upon the ultimate end in every whisper, and to be delivered from taking pleasure in differentiation.” The audition of the elect of the elect is “an audition that washes impediments away from unveiling, joins everlasting duration with eternity without beginning, and returns endings to the First.” In the chapter on watchfulness (*murāqaba*), the third degree is “to be watchful of pre-eternity by contemplating the very reality of precedence, welcoming the knowledge of divine unity; to watch for the manifestation of the signs of pre-eternity upon [the allusions / intimations] of post-eternity; and to be free of the bond of watchfulness. One's watchfulness binds one by the trace of one's self; once that trace is annihilated, the bond disappears; the attachment itself is the bond.” In the chapter on gratitude, the third degree is that “the servant witnesses none but the Giver of blessings.”
 
-### Arabic
+### Arabic · passage 2
 
 ثم قال : وإذا شهد المنعم معبوده استعظم منه النعمة ، وإذا شهده حبّا استحلى منه الشدة ، وإذا شهده تفريدا لم يشهد منه نعمة ولا شدة . وفي باب المشاهدة : والدرجة الثالثة : مشاهدة جمع تجذب إلى عين الجمع ، مالكة لصحة الورود ، راكبة بحر الوجود في باب البقاء ، وبقاء ما لم يزل حقّا بإسقاط ما لم يكن محوا ، أي بقاء الحق بإسقاط ما لم يكن موجودا ، حتى يمحو بالفناء فيه .
 
-### English
+### English · passage 2
 
 Then: “When he witnesses the Giver of blessings as his Worshipped One, he regards the gift as great; when he witnesses Him in love, he finds hardship sweet; when he witnesses Him in exclusive unification, he no longer witnesses either blessing or hardship as coming from Him.” In the chapter on direct witnessing, the third degree is “a witnessing of gathering which draws one into the very reality of gathering, possessing soundness of arrival and riding the sea of being.” In the chapter on subsistence: “Subsistence is the subsistence of what has eternally been Real, through the obliteration and dismissal of what never existed [in its own right]”—that is, the subsistence of the Real once what was not existent is dismissed, until it is obliterated through annihilation in Him.
 
-### Arabic
+### Arabic · passage 3
 
 وفي باب الجمع : الجمع ما أسقط التفرقة ، وقطع الإشارة ، وشخص عن الماء والطين ؛ بعد صحة التمكين ، والبراءة من التلوين ، والخلاص من شهود الثنوية ، والتنافي من إحساس الاعتدال ، والتنافي من شهود شهودها ، وأما جمع الوجود فهو تلاشى نهاية الاتصال في عين الوجود محقّا ، وأما جمع العين ؛ فهو تلاشي كل ما تقله الإشارة في ذات الحق حقّا ، والجمع غاية مقامات السالكين ، وهو طرف بحر التوحيد .
 
-### English
+### English · passage 3
 
 In the chapter on gathering (*jamʿ*): “Gathering is that which casts down differentiation, severs pointing and indication, and departs from water and clay, after a firm establishment, freedom from changes of spiritual coloration and release from witnessing duality, [together with] removal of the feeling of equilibrium and even of witnessing its own witnessing.” As for *the gathering of being* (*jamʿ al-wujūd*), it is “the dissolution of the utmost limit of connection into the very reality of being, in complete realization”; *the gathering of the entity* (*jamʿ al-ʿayn*) is “the dissolution into the Essence of the Real of everything that indication could encompass.” Gathering is the utmost reach of the travellers' stations, and the brink of the sea of divine unity.
 
-### Arabic
+### Arabic · passage 4
 
 وقال في باب التوحيد : والذي يشار به إليه على ألسن المشيرين أنه إسقاط الحدث ، وإثبات القدم ، قطب مدار الإشارة إلى هذا الطريق ، وأنه علة لا بد من إسقاطه . ثم قال : فإن التوحيد فوق ما يشير إليه مكون أو يتعاطاه حين أو يقله سبب . قال الشيخ الأنصاري : وقد أجبت في سالف الزمان سائلا - سألني عن توحيد الصوفية - بهذه القوافي الثلاث : ما وحّد الواحد من واحد * إذ كلّ من وحّده جاحد توحيد من ينطق عن نعته * عارية أبطلها الواحد توحيد إيّاه توحيده * ونعت من ينعته لاحد
 
-### English
+### English · passage 4
 
 In the chapter on divine unity: “The expression to which those who indicate point—casting off temporal origination and affirming beginninglessness—is the pivot around which indication turns on this path; yet it is itself a defect that must be cast aside.” Then: “Divine unity is beyond whatever any originated thing indicates, any occasion undertakes, or any cause bears.” Shaykh al-Anṣārī said: “Long ago I answered a questioner about the unity professed by the Sufis with these three rhyming verses: ‘No one has ever unified the One; / for whoever unifies Him thereby denies Him. / The unification voiced by one who speaks of His qualities / is a borrowed thing annulled by the One. / His unification is His own unifying of Himself; / the description given by one who describes Him is a departure [from the truth].’”
 
@@ -792,39 +832,41 @@ In the chapter on divine unity: “The expression to which those who indicate po
 
 The language of “no one unifies the One” is an argument against regarding the servant as the *originating source* of divine unity. It must not be conflated with denial that the servant makes a true confession of tawḥīd. Several terms in the audition and gathering passage look corrupt, including «إيحائين» and «التنافي من إحساس الاعتدال»; translate provisionally pending a direct *Manāzil* collation.
 
-## Printed p. 35 · Al-Kalābādhī: how opposed descriptions can designate a single state
+## MSH-023 · Printed p. 35 · Al-Kalābādhī: how opposed descriptions can designate a single state
 
-**MSH-023** · [Arabic source](https://archive.org/details/machra3-khosous/page/n35/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n35/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 إلى غير ذلك من المواضع . ومنها ما قال الشيخ أبو بكر الكلاباذي البخاري ، في كتاب « التعرف » في بحث المعرفة : أجمعوا على أن الدليل على اللّه عزّ وجل هو اللّه وحده . ثم نقل الثوري وابن عطاء والجنيد ، عن محمد بن واسع : ما رأيت شيئا إلا ورأيت اللّه فيه . وعن غيره : ما رأيت شيئا إلا ورأيت اللّه قبله . وعن الجنيد : أنه العارف والمعروف ، ومعناه أنك جاهل به من حيث أنت ؛ وإنما عرفته من حيث هو هو .
 
-### English
+### English · passage 1
 
 There are other such passages. Another authority is Shaykh Abū Bakr al-Kalābādhī of Bukhara, who says in *al-Taʿarruf*, in the discussion of knowledge: “They agree that God, exalted and majestic, is the sole proof of God.” He then quotes al-Thawrī, Ibn ʿAṭāʾ and al-Junayd, and relates from Muḥammad ibn Wāsiʿ: “I never saw a thing without seeing God in it.” Another says: “I never saw a thing without seeing God before it.” From al-Junayd: “He is both knower and known.” This means that insofar as you are yourself, you do not know Him; rather, you have known Him insofar as He is He.
 
-### Arabic
+### Arabic · passage 2
 
 ثم نقل في بحث الاتصال ، عن ابن عمر : كنا نتراءى اللّه في ذلك المكان ، يعني في الطواف على ما فسره ، هو بحث التجلي والاستتار .
 
-### English
+### English · passage 2
 
 Then, in the discussion of contact or connection (*ittiṣāl*), he relates from Ibn ʿUmar: “We used to behold God together in that place”—meaning, as [the author] explains, during the circumambulation. This belongs to the discussion of self-disclosure and concealment.
 
-### Arabic
+### Arabic · passage 3
 
 ثم قال في بحث الفناء والبقاء : ومنهم من جعل هذه الأحوال كلها حالا واحدا - وإن اختلفت عباراتها ، فجعل الفناء بقاء والجمع تفرقة ، وكذلك الغيبة والشهود والشكر والصحو ، وذلك أن الفاني باق بما للحق ، فان عمّا له ، والثاني مجموع ؛ لأنه لا يشهد إلا الحق ، والمجموع مفارق ؛ لأنه لا يشهد إياه ولا الخلق ، وهو باق لدوامه مع الحق ، وهو جامع به ، وهو فان عما سواه ، مفارق لهم ، وهو غائب سكران لزوال التمييز عنه ، ومعنى زوال التمييز : هو ما قلناه بين الآلام والملاذ ، أو أن الأشياء تتوحد له ، فلا يشهد مخالفة ؛ إذ لا يصرفه الحق إلا في موافقاته ؛ وإنما يميز بين الشيئين وغيره ، فإذا صارت الأشياء شيئا واحدا سقط التمييز .
 
-### English
+### English · passage 3
 
 Then, in the discussion of annihilation (*fanāʾ*) and subsistence (*baqāʾ*): “Some have regarded all these states as a single state despite the difference in their expressions, and have made annihilation subsistence and gathering separation; likewise absence and witnessing, intoxication and sobriety [the transcription reads *shukr*, ‘gratitude’, rather than *sukr*, ‘intoxication’, requiring collation]. This is because one who is annihilated subsists in what belongs to the Real and is annihilated from what belongs to himself. Again, he is gathered because he witnesses only the Real; yet the gathered person is separate because he witnesses neither himself nor creation. He subsists because he remains with the Real, is gathered through Him, and annihilated from all else and separated from them. He is absent and intoxicated because discernment has disappeared from him. The disappearance of discernment means what we have said concerning pains and pleasures; or else things become united for him, so he does not witness contrariety, since the Real directs him only according to what accords with Him. Discernment distinguishes one thing from another, but when things become one thing, discernment falls away.”
 
-### Arabic
+### Arabic · passage 4
 
 ثم قال في بحث التوحيد : ونصيبه من الحق وجود الحق ، وهو فيه ما سور فليس له متقدم ولا متأخر . ثم قال في صفة العارف : سئل الحسن بن علي - رضي اللّه عنهما : متى يكون العارف شهد الحق ؟ قال : إذا بدأ الشاهد ، وفني الشواهد ، وذهب الحواس ، واضمحل الإخلاص . ومعنى فناء الشواهد : سقوط رؤية الخلق عنك بمعنى الضر والنفع والذم والمدح ، وذهاب الحواس هو معنى قوله : « فبي ينطق وبي يبصر . . . إلى آخره » ، إلى غير ذلك من المواضع . ومنها ما قال الفاضل المحقق السيد شمس الدين السمرقندي ، في خاتمة شرح
 
-### English
+### English · passage 4
 
 Then, in the discussion of divine unity: “The servant’s share from the Real is the finding of the Real (*wujūd al-Ḥaqq*); he is held captive within it [reading *maʾsūr*], with neither advance nor retreat.” Then, describing the knower: al-Ḥasan ibn ʿAlī, may God be pleased with them both, was asked: “When does a knower witness the Real?” He said: “When the Witness appears, the witnesses vanish, the senses depart, and even sincerity fades away.” The annihilation of the witnesses means that your regard for creatures disappears insofar as harm, benefit, blame and praise are concerned. The departure of the senses is the meaning of His saying, “Through Me he speaks and through Me he sees ...” [and so forth]. There are many similar places. And there is what the learned verifier Sayyid Shams al-Dīn al-Samarqandī says in the conclusion to his commentary ... [continued on p. 36].
 
@@ -832,39 +874,41 @@ Then, in the discussion of divine unity: “The servant’s share from the Real 
 
 The 2008 scan confirms الشكر, والثاني, and ما سور. The cited Taʿarruf has السكر, والمفارق, and مأسور in the corresponding passages. “Captive” and the servant as subject are now made explicit in English, with the comparative reading marked; the Arabic is unchanged. The Taʿarruf identifies the final speaker more fully as al-Ḥasan ibn ʿAlī ibn Yazdānyār, whereas the Mashraʿ abbreviates the name and adds a blessing. That discrepancy prevents confidently identifying the speaker as the Prophet’s grandson. These are digital cited-source comparisons, not manuscript variants.
 
-## Printed p. 36 · Al-Samarqandī and al-Bayḍāwī on dependence and ascent
+## MSH-024 · Printed p. 36 · Al-Samarqandī and al-Bayḍāwī on dependence and ascent
 
-**MSH-024** · [Arabic source](https://archive.org/details/machra3-khosous/page/n36/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n36/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 صحائفه : أحوال الناس منحصرة في ثلاثة أقسام : الاشتغال بالحق عن الغير ، والاشتغال بالحق مع الغير ، والاشتغال بالغير عن الحق . ثم قال : والثاني عند أهل الطريقة والحقيقة شرك ، والثالث كفر ، والأول فيه السعادة الكلية والبهجة الحقيقية في الأخرى والأولى ؛ فَمَنْ يَكْفُرْ بِالطَّاغُوتِ وَيُؤْمِنْ بِاللَّهِ فَقَدِ اسْتَمْسَكَ بِالْعُرْوَةِ الْوُثْقى لَا انْفِصامَ لَها [ البقرة : 256 ] .
 
-### English
+### English · passage 1
 
 ... on his *Ṣaḥāʾif*: “The conditions of people fall into three classes: occupation with the Real to the exclusion of anything else; occupation with the Real along with something else; and occupation with something else to the exclusion of the Real.” Then: “For the people of the path and of realization, the second is [a subtle form of] association; the third is unbelief; the first yields complete felicity and genuine joy in this world and the next: ‘Whoever rejects false objects of worship and believes in God has grasped the firmest handhold that never breaks’ (Q 2:256).”
 
-### Arabic
+### Arabic · passage 2
 
 ومنها ما قال الفاضل المحقق القاضي ناصر الدين البيضاوي ، في أنوار التنزيل ، في تفسير قوله تعالى : فَأَيْنَما تُوَلُّوا فَثَمَّ وَجْهُ اللَّهِ [ البقرة : 115 ] ، أي : فثم ذاته . ثم قال : إن اللّه بإحاطته بالأشياء واسع عليم . وفي قوله تعالى : وَيَبْقى وَجْهُ رَبِّكَ [ الرحمن : 27 ] ، ولو استقريت جهات الموجودات ، وتصفحت وجودها ؛ وجدتها بأسرها فانية في حد ذاتها إلا وجه اللّه ، أي : الوجه الذي يلي جهته .
 
-### English
+### English · passage 2
 
 Among these also is the learned verifier, Judge Nāṣir al-Dīn al-Bayḍāwī. In *Anwār al-tanzīl*, on “Wherever you turn, there is the Face of God” (Q 2:115), he glosses: “That is, His Essence is there.” Then: “By His encompassing of things God is All-Embracing, All-Knowing.” On “The Face of your Lord shall remain” (Q 55:27): “If you examined the directions or aspects of existents and considered their existence, you would find all of them perishing in themselves apart from the Face of God, that is, the aspect turned toward Him.”
 
-### Arabic
+### Arabic · passage 3
 
 وقال في شرح المصابيح ، في باب الذكر ، في قوله صلى اللّه عليه وسلم عن اللّه عزّ وجل : « لا يزال العبد يتقرب إلي بالنوافل . . . إلى آخره » « 1 » . وإن العبد لا يزال يتقرب إلى اللّه تعالى بأنواع الطاعات وأصناف الرياضات ، ويترقى من مقام إلى آخر أعلى منه ؛ حتى يحبه اللّه سبحانه وتعالى ، فيجعله مستغرقا بملاحظة جناب قدسه ، بحيث ما لاحظ شيئا إلا لاحظ ربه ، فما التفت لفت ، وحابس ومحبوس ، وصانع ومصنوع ، فاعل ومفعول ؛ إلا رأى اللّه ، وهو آخر درجات السالكين ، وأول درجات الواصلين ، فيكون بهذا الاعتبار سمعه وبصره .
 
-### English
+### English · passage 3
 
 In his commentary on *al-Maṣābīḥ*, in the section on remembrance, concerning the divine saying reported by the Prophet, peace be upon him, “My servant continues to approach Me through supererogatory acts ...”: “A servant continues drawing near to God through many kinds of obedience and spiritual discipline, rising from one station to another, higher station, until God, exalted is He, loves him. He then immerses him in contemplation of the precinct of His holiness, so that he never attends to anything without attending to his Lord. Whenever he turns toward someone turning and someone turned toward, a captor and captive, maker and made, agent and patient, he sees God. This is the last degree of the travellers and the first degree of those who have arrived. Under *this consideration*, therefore, God becomes his hearing and his sight.”
 
-### Arabic
+### Arabic · passage 4
 
 ثم قال في باب أسماء اللّه تعالى ، في شرح اسم اللّه : وكل ممكن فإنه لا وجود له ، بل وجوده من الجهة التي يلي الواجب تعالى ، وإليه أشار حيث قال : ألا كل شيء ما خلا اللّه باطل . وفي شرح اسمه الخالق البارئ المصور : فيرقى من المخلوق إلى الخالق ، وينتقل من ملاحظة المصنوع إلى ملاحظة الصانع ؛ حتى يصير بحيث كلما نظر إلى شيء وجد اللّه عنده .
 
-### English
+### English · passage 4
 
 Then, in the chapter on God's names, explaining the name “God”: “Every possible thing has no existence [of its own]; rather its existence is from the aspect (*jiha*) through which it faces the Necessary, exalted is He.” This is indicated by the words “Everything except God is vain.” In explaining the names “the Creator, the Originator, the Fashioner”: “He ascends from the created to the Creator and passes from contemplation of the product to contemplation of its Maker, until he reaches the point that whenever he looks at anything he finds God with it.”
 
@@ -872,39 +916,41 @@ Then, in the chapter on God's names, explaining the name “God”: “Every pos
 
 The phrase «بهذا الاعتبار» is decisive: the hadith description is being explained *under this consideration*, tied to the aspirant’s attainment. The phrase “the thing has no existence” is immediately followed by the qualifier that its being is from the aspect by which it faces the Necessary; it should not be decontextualized as a denial of all created actuality. The al-Samarqandī quotation is a separate, reported triad and cannot simply be turned into a binding Sunni legal classification of those who notice created causes.
 
-## Printed p. 37 · Neither indwelling nor crude separateness
+## MSH-025 · Printed p. 37 · Neither indwelling nor crude separateness
 
-**MSH-025** · [Arabic source](https://archive.org/details/machra3-khosous/page/n37/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n37/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 وفي شرح اسمه الحفيظ : حظ العارف خصوصا أن يعرف باطنه عن ملاحظة الأغيار ، وظاهره عن موافقة الفجار . وفي شرح اسمه الحق : وحظ العبد فيه أن يرى اللّه حقّا ، وما سواه باطلا في ذاته ، حقّا بإيجاده واختراعه . وفي شرح اسمه النور : الظاهر لنفسه ، المظهر لغيره ، ولا شك في أن الوجود إذا قوبل بالعدم كان الظهور للوجود والخفاء للعدم ، ولما كان الباريء تعالى موجودا بذاته مبرّأ عن ظلمة العدم وإمكان طروّه ، وكان وجود سائر الأشياء فائضا عن وجوده ؛ صح إطلاق اسم النور عليه ، إلى غير ذلك من المواضع .
 
-### English
+### English · passage 1
 
 In explaining the name “the Preserver” (*al-Ḥafīẓ*): “The share of the knower, in particular, is to [guard] his inwardness from looking to others, and his outwardness from acting as wrongdoers act.” On “the Real” (*al-Ḥaqq*): “The servant's share is to see God as real, and everything else as unreal *in itself*, yet real through His bringing it into being and originating it.” On “the Light”: “That which is manifest in itself and renders other things manifest. There is no doubt that when being is set in opposition to nonbeing, manifestation belongs to being and hiddenness to nonbeing. Since the Creator, exalted is He, exists through Himself, free of the darkness of nonbeing and even the possibility of its overtaking Him, whereas the being of all other things flows forth from His being, it is correct to apply the name ‘Light’ to Him.” Similar examples occur elsewhere.
 
-### Arabic
+### Arabic · passage 2
 
 ومنها ما قال الفاضل المحقق شرف الدين الطيبي ، بعد نقله ما نقلناه عن الواحدي والبغوي عن « وهب » : وهذا لا يدل على لزوم الجسمية ، وكذلك القرب ، وذكر سائر ما نقلناه عن القاضي في شرح المشكاة ، في تلك المواضع . وقال في أسماء اللّه تعالى وإحصاء الأخص له : أن يستغرق قلبه باللّه تعالى ، ولا يلتفت إلى أحد سواه ، ولا يرجو ولا يخاف فيما يأتي يذر إلا إياه ؛ لأنه هو الحق الثابت وما عداه باطل ، قال اللّه تعالى : كُلُّ شَيْءٍ هالِكٌ إِلَّا وَجْهَهُ [ القصص : 88 ] .
 
-### English
+### English · passage 2
 
 Another authority is the learned verifier Sharaf al-Dīn al-Ṭībī. After citing the account from Wahb which we transmitted from al-Wāḥidī and al-Baghawī, he writes: “This does not require corporeality, nor does [such] nearness.” He also cited, at those places in his commentary on *al-Mishkāt*, the other material which we related from the judge. Concerning the names of God and the most distinctive way to enumerate them, he says that one should “fill the heart with God, attend to none besides Him, and hope in or fear none besides Him in whatever one does or leaves undone, for He is the unshakably Real while everything else is vain. God says: ‘Everything perishes but His Face’” (Q 28:88).
 
-### Arabic
+### Arabic · passage 3
 
 وفي شرح اسمه البصير نقل عن سهل ، أنه قال منذ كذا سنة : إنما أخاطب الحق تعالى والناس يتوهمون إني أكلمهم ، وفي معناه أنشد : وظنّوني أخاطبهم قديما * وأنت بما أخاطبهم مرادي هذه صفة الجمع التي أشار إليها القوم . وفي شرح اسمه الواحد الأحد : وحظ العبد أن يغوص لجة التوحيد ، ويستغرق فيه ، حتى لا يرى من الأزل إلى الأبد غير الواحد الأحد ، إلى غير ذلك من المواضع .
 
-### English
+### English · passage 3
 
 Explaining the name “the All-Seeing,” he relates from Sahl, who said: “For so many years I have addressed none but the Real, exalted is He, while people have thought I was speaking to them.” Someone versified the same meaning: “They thought I had long been addressing them, / while You were the One I intended through my words to them.” This is the attribute of gathering (*jamʿ*) to which the people of the path have referred. In explaining the names “the One, the Unique,” he says: “The servant's share is to plunge into the ocean depths of unity and become absorbed therein, until from beginningless eternity to endless eternity he sees none but the One, the Unique.”
 
-### Arabic
+### Arabic · passage 4
 
 ومنها ما قال الفاضل المحقق سراج الدين - صاحب كشف الكشاف - في ديباجته : الحمد للّه الذي أنار الأعيان بنور الوجود ، وجعلها مرائي صفاته ، واختار منها نوع الإنسان لجمعه سر الأكوان ، فكمل مجالي ذاته . وفي قوله تعالى : فَثَمَّ وَجْهُ اللَّهِ [ البقرة : 115 ] ، أنه تمهيد في ذكر نفي الولد ؛ لأن من له الجهات كلها يتعالى عنها ، فيستحيل أن يماثله ذو جهة ، والولد من جنس الوالد
 
-### English
+### English · passage 4
 
 Another is the learned verifier Sirāj al-Dīn, author of *Kashf al-Kashshāf*, who writes in his preface: “Praise belongs to God, who illumined the entities with the light of being and made them mirrors of His attributes, and chose from among them the human species because it comprehends the secret of the worlds, thereby perfecting the places in which His Essence appears.” On “There is the Face of God” (Q 2:115), he says that it prepares the way for the denial of divine offspring, because He to whom all directions belong is exalted beyond them; consequently no entity bounded by a direction can resemble Him, whereas offspring is of the same kind as its parent ... [continues on p. 38].
 
@@ -912,39 +958,41 @@ Another is the learned verifier Sirāj al-Dīn, author of *Kashf al-Kashshāf*, 
 
 The al-Bayḍāwī passage states both «باطلا في ذاته» and «حقّا بإيجاده واختراعه», expressly indicating one judgement under the thing’s own aspect and another under divine production. Both clauses are crucial. The Ṭībī passage expressly rejects a corporealist reading of divine closeness. The precise identification of *Kashf al-Kashshāf* and its authorship should be checked. “Guard” in the first sentence is a contextual restoration under the divine name al-Ḥafīẓ; the supplied Arabic يعرف is preserved. It should not be treated as a verified alternative reading.
 
-## Printed p. 38 · Completion of twelve transmitted authorities and epistemic reticence
+## MSH-026 · Printed p. 38 · Completion of twelve transmitted authorities and epistemic reticence
 
-**MSH-026** · [Arabic source](https://archive.org/details/machra3-khosous/page/n38/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n38/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī quoting and discussing earlier authorities; follow explicit attribution in each paragraph
+
+### Arabic · passage 1
 
 لا محالة . وفي قوله تعالى : أَ وَلَمْ يَكْفِ بِرَبِّكَ أَنَّهُ عَلى كُلِّ شَيْءٍ شَهِيدٌ [ فصلت : 53 ] فمن شهده ؛ شهد كل شيء . ثم في قوله : وَالظَّاهِرُ وَالْباطِنُ [ الحديد : 3 ] ، وهو الظاهر بوجوده ؛ لأن كل الموجودات بظهوره ظاهرة ، الباطن بكنهه ، إلى غير ذلك من المواضع .
 
-### English
+### English · passage 1
 
 ... necessarily. On “Is it not enough that your Lord is witness over every thing?” (Q 41:53), he says: “Whoever witnesses Him witnesses everything.” On “The Outward and the Inward” (Q 57:3), He is “Outward through His being, for all existents are manifest through His manifestation, and Inward through His innermost reality.” There are many similar places.
 
-### Arabic
+### Arabic · passage 2
 
 فهؤلاء الاثني عشر أئمة أطبقوا على قبولها ، ووقع في كلام بعضهم النقل عن هؤلاء الكبار ، كالحسن بن علي ، وابن عباس ، وابن عمر ، وجعفر ، وأبي فارس ، ويوسف بن الحسين ، وعامر بن قيس ، الواسطي ، وأبي بكر الفارسي ، والنهرجوري ، وأبي عثمان الحيري ، والقاسم ، ومحمد بن واسع ، وابن عطاء ، ورويم ، والخراز ، والنصر آبادي ، وأبي على الدقاق بالتصريح ، وعن غيرهم بالتلويح .
 
-### English
+### English · passage 2
 
 **Al-Mahāʾimī resumes his own synthesis:** These twelve leading authorities agreed in accepting these [truths], and in the words of some there are explicit transmissions from these great figures: al-Ḥasan ibn ʿAlī, Ibn ʿAbbās, Ibn ʿUmar, Jaʿfar, Abū Fāris, Yūsuf ibn al-Ḥusayn, ʿĀmir ibn Qays, al-Wāsiṭī, Abū Bakr al-Fārisī, al-Nahrajūrī, Abū ʿUthmān al-Ḥīrī, al-Qāsim, Muḥammad ibn Wāsiʿ, Ibn ʿAṭāʾ, Ruwaym, al-Kharrāz, al-Naṣrābādhī and Abū ʿAlī al-Daqqāq; and there are implicit references to others.
 
-### Arabic
+### Arabic · passage 3
 
 ونقل الشيخ أبو طالب المكي والغزالي ، عن ابن عباس : « لو فسرت هذه الآية اللَّهُ الَّذِي خَلَقَ سَبْعَ سَماواتٍ وَمِنَ الْأَرْضِ مِثْلَهُنَّ [ الطلاق : 12 ] ؛ لرجمتموني » « 1 » .
 
-### English
+### English · passage 3
 
 Shaykh Abū Ṭālib al-Makkī and al-Ghazālī also transmit from Ibn ʿAbbās: “If I explained this verse—‘God it is who created seven heavens and of the earth their like’ (Q 65:12)—you would stone me.”
 
-### Arabic
+### Arabic · passage 4
 
 ونقل الغزالي منهاج العابدين عن الإمام زين العابدين : إنّي لأكتم من علمي جواهره * كي لا يرى الحقّ ذو الجهل فيقتتنا وقد تقدّم في هذا أبو حسن * إلى الحسين وأوصى قبله للمناء يا ربّ جوهر علم لو أبوح به * لقيل أنت ممّن يعبد الوثنا ولاستحلّ رجال جاهلون دمي * يرون أقبح ما يأتونه حسنا وقد روي البخاري ، عن أبي هريرة : « حفظت من رسول اللّه صلى اللّه عليه وسلم وعاءين من العلم ، فأما أحدهما فبثثته ، وأما الآخر لو بثثته لقطع مني هذا البلعوم » « 2 » . فتأمل هذه الجملة ترشد إن شاء اللّه تعالى .
 
-### English
+### English · passage 4
 
 Al-Ghazālī, in *Minhāj al-ʿābidīn*, transmits from Imām Zayn al-ʿĀbidīn: “I conceal the jewels of my knowledge, / lest an ignorant person see the truth and bring ruin upon us. / Abū Ḥasan was before me in this, / and entrusted [it] to al-Ḥusayn, while before him [the reading is corrupt]. / O many a jewel of knowledge which, if I revealed it, / people would say, ‘You are one who worships idols!’ / Ignorant men would deem it lawful to spill my blood, / thinking the ugliest of their actions beautiful.” Al-Bukhārī also relates from Abū Hurayra: “I preserved two vessels of knowledge from the Messenger of God, peace be upon him. One I disseminated; as for the other, if I disseminated it, this throat of mine would be cut.” Reflect upon this collection of testimonies and you will, God willing, receive guidance.
 
@@ -952,23 +1000,25 @@ Al-Ghazālī, in *Minhāj al-ʿābidīn*, transmits from Imām Zayn al-ʿĀbidī
 
 The printed poetry has unstable wording, especially «للمَنَاء» and the second verse. Do not assign its attribution to Zayn al-ʿĀbidīn with historical certainty before checking its transmission. The Abū Hurayra report is a distinct ḥadīth, not proof that the earlier poems share its authority. This page ends chapter 1; chapter 2 starts p. 39.
 
-## Printed p. 39 · Why rational demonstrations are offered after transmitted testimony
+## MSH-027 · Printed p. 39 · Why rational demonstrations are offered after transmitted testimony
 
-**MSH-027** · [Arabic source](https://archive.org/details/machra3-khosous/page/n39/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n39/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī (argument, with occasional cited authorities)
+
+### Arabic · passage 1
 
 الفصل الثاني في البراهين العقلية على وجود الواجب اعلم أن جمهور العارفين اقتصروا على الأدلة الكشفية ، أي الضرورية الوجدانية ؛ لرفع الحجب الظلمانية ، وبالمجاهدة التي مقدمة الهداية في قوله عزّ وجل : وَالَّذِينَ جاهَدُوا فِينا لَنَهْدِيَنَّهُمْ سُبُلَنا [ العنكبوت : 69 ] ، وبالتقوى : وَاتَّقُوا اللَّهَ وَيُعَلِّمُكُمُ اللَّهُ [ البقرة : 282 ] ، وبكمال التوجه إلى اللّه تعالى ، ولم يرتبوا المقدمات النظرية ؛ لما أنها توقع أهلها في الحيرة المذمومة بإثارة الشبهات المظلمة ؛ إلا من عصمه اللّه بالقوة القدسية والملكات الملكية ، المؤيدة للقوة الحدسية ؛ إلا أن العامة لما بالغوا في الإنكار عليها ، وزعموا أن فيها القطع ببطلان جميع الأحكام - العقلية والحسية والفطرية الغريزية - عقيب المجاهدات الجزافية ؛ فمنشأها استحكام سوء المزاج في موضوعات القوة النفسانية ، وإحراق المواد الصالحة المثيرة للوساوس الخيالية ، واستيلاء المرّة السوداوية ، وغلبة الجنون والمياليخوليا ، وكان ذلك موقعا لهم في الشرك الخفي ، وسببا لخوف سوء الخاتمة ، كما نقله الغزالي عن بعض العارفين ، ودل الحديث النبوي على أنهم أهل العزة باللّه ؛ وجب إيراد تلك المقدمات ورفع ما يستدرجهم من الشبهات ؛ لعلهم يقفون عن الإنكار ، أو ينقلبون إلى الإبصار .
 
-### English
+### English · passage 1
 
 **Chapter Two: Rational demonstrations for the existence of the Necessary Existent.** Know that most of the knowers have confined themselves to proofs furnished by unveiling—that is, immediate, inwardly experienced certainties—for the removal of darkening veils. They proceed through spiritual striving, which precedes guidance in the divine saying, “Those who strive in Us, We shall surely guide them to Our ways” (Q 29:69), through Godfearingness—“Fear God, and God teaches you” (Q 2:282)—and through complete turning towards God. They have not set out discursive premises, because these can plunge their practitioners into blameworthy perplexity through the generation of darkening doubts, except for someone whom God protects by a holy faculty and angelic dispositions supporting the faculty of immediate intuition. But ordinary people have gone to extremes in denouncing these knowers. They allege that the latter, following arbitrary spiritual struggles, categorically reject every judgement—rational, sensory, innate and instinctive—and that the cause is a deeply ingrained disturbance of temperament affecting the seats of the psychic faculties, the consumption of healthy bodily materials giving rise to imaginative obsessions, the predominance of black bile, and the mastery of madness and melancholy. Such an accusation exposes its proponents to hidden associationism and to the fear of an evil end, as al-Ghazālī relates from certain knowers; a Prophetic report, meanwhile, indicates that these people possess honour through God. Therefore it becomes necessary to set forth the [rational] premises and dispel the doubts that entrap the critics, in the hope that they will cease their denial—or be transformed into people who see.
 
-### Arabic
+### Arabic · passage 2
 
 فنقول : هاهنا مقامان : أحدهما في تحقق الوجود المطلق ، والثاني وجوبه بالذات . المقام الأول : اعلم أن تحقق الوجود عن الأفكار أظهر من تحقق النور الحسي عند الإبصار ؛ لكن شدة ظهوره عكست فيه الأمر إلى ضده ، كما أن نور الشمس لما بلغ غاية الإشراق ؛ ظن بعض الخلائق أنه ليس وراء الألوان شيء وراءه ؛ لكن غروب الشمس ظل ضروريا بين محل الظل وموقع الضياء ، وليس كذلك الوجود الذي هو نور الأنوار ؛ لدوام حضوره مع الأشياء على نسق واحد ، فأنكر كثير من مهرة النظار تحققه في الخارج ، وزعموا أن ليس فيه إلا الماهيات ، وإنما هو من المعقولات الثانية والاعتبارات العقلية المحضة ، وكل ذلك لكون النهاية تشبه البداية ؛ لا متناع التحقق ورائها وامتناعه دونها ، والامتناعان يتحدان في تحققه ويختلفان في النسبة ، فلم يكن بد من كشف ما اشتبه عليهم .
 
-### English
+### English · passage 2
 
 We say that there are two questions here: first, the actuality of unrestricted existence (*al-wujūd al-muṭlaq*); second, its being necessary through itself. **First question.** Know that the actuality of existence is more evident to thought than the actuality of sensible light is to sight. Yet its very intensity of manifestation has made things seem the opposite of what they are. In the same way, because sunlight reaches the extreme of radiance, some people have imagined that nothing lies beyond colours; but sunset necessarily brings out the distinction between places of shadow and illumination. Existence, the light of lights, is not like this: it remains constantly present with things in one and the same manner. Hence many highly skilled speculative thinkers deny its extramental actuality, claiming that nothing exists outside the mind except quiddities and that existence itself is only a second intelligible or purely mental consideration. This results from the likeness between the furthest limit and the starting point: actuality is impossible beyond the former and impossible short of the latter. These two impossibilities are alike in their [relation to] actuality, though different in the relations intended. It is therefore necessary to expose the source of the confusion.
 
@@ -976,39 +1026,41 @@ We say that there are two questions here: first, the actuality of unrestricted e
 
 The final contrast of two impossibilities («الامتناعان») is obscure in this transcription. “More evident to thought” renders the recorded «عن الأفكار» provisionally; a printed witness must be consulted. **Online page:** https://ablibrary.net/book_content/b/9637/39?lang=ar
 
-## Printed p. 40 · Existence is not a merely mental consideration: objections and replies
+## MSH-028 · Printed p. 40 · Existence is not a merely mental consideration: objections and replies
 
-**MSH-028** · [Arabic source](https://archive.org/details/machra3-khosous/page/n40/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n40/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī (argument, with occasional cited authorities)
+
+### Arabic · passage 1
 
 فنقول : لا شك أن لكل ماهية وجدت تحققا مطلقا ، فالتحقق إما عينه أو جزؤه ، فظاهر ؛ لأنه لا يكون مجرد أمر اعتباري ، وإما زائد ، فلا شك أن قوام التحقق المقيد ضرورة أن الضد وصف لا يقوم بذاته ، فأما أن يقوم بالتحقق المطلق أو المقيد والثاني بين البطلان ؛ فتعيّن الأول وما به قوام المحقق أولى بأن يكون محققا ، وإن كان القيد اعتباريا فالمتحقق هو المطلق ، وإن كان منع ثبوت التحقق للماهية ؛ كانت الخارجية عين الذهنية ؛ إذ الذهني أولى بأن يكون اعتباريا .
 
-### English
+### English · passage 1
 
 We say: there is no doubt that every quiddity which exists possesses actuality unrestrictedly considered. This actuality is either identical with the quiddity, a part of it, or something additional. In either of the first two cases it is evident that actuality cannot be a merely conceptual affair. If it is additional, the determinate actuality must have something by which it subsists, since a description cannot subsist through itself. It must subsist either through unrestricted actuality or through determinate actuality; the second alternative is plainly untenable, so the first is established. That by which something actual subsists has an even stronger claim to be actual. If the restriction is merely conceptual, the actual reality is what is unrestricted. If the attribution of actuality to quiddity is denied, extramental existence would be identical to existence in the mind—for mental existence would be even more liable to be called conceptual.
 
-### Arabic
+### Arabic · passage 2
 
 على أن التحقق لو كان اعتباريا ؛ فالكل اعتباري ، حتى المعتبر على أن ثبوته مدرك بالضرورة ، فمنعه مكابرة . قيل لو ثبت لكل ماهية تحقق لكان لنسبته إليها تحقق ، وبينها نسبة محققة وتسلسل . قلنا : إن لم تكن موجودة ، فظاهر وإن كانت ، فالنسبة الثانية عين حصوله لها . قيل : إن ثبت لها فصفة لا تستقل ، وإلا تتأخر لثبوتها ، فلا يثبت لها ، ثم أن يكون كيفية يتقدم عليها محلها ويصير أعم منه ؛ على أنه حين إذ يقوم بها فيفتقر إليها .
 
-### English
+### English · passage 2
 
 Moreover, were actuality merely conceptual, everything—including the person making the conceptual consideration—would be merely conceptual; yet its reality is grasped immediately, and denying it is obstinate disputation. **Objection:** If every quiddity possesses an actuality, then its relation to that actuality must itself be actual, and another actual relation must link them, producing an infinite regress. **Reply:** If the relation does not itself exist [in the stipulated manner], the answer is evident; if it does, the second relation is precisely actuality's belonging to the quiddity. **Objection:** If actuality is affirmed as belonging to it, it is a nonsubsistent attribute; otherwise [its attribution] would be postponed until after the quiddity's own establishment, and it could not be established of it. It would furthermore be a quality whose subject precedes it and is more general than it; thus actuality would inhere in that subject and depend upon it.
 
-### Arabic
+### Arabic · passage 3
 
 قلنا : ما ليس بجوهر قد لا يكون عرضا ، والكيفية عرض ، فليس معنى القيام الافتقار ، فإن الصورة لا تفتقر إلى الهيولي . قيل : تحقق الحادث المعدوم الآن ليس بحاصل ؛ وإلا تحقق حين لا تحقق له ، فإذا حصل يقال حصل تحققه بعد ما لم يكن ، فالتحقق من حيث هو غير حاصل . قلنا : ليس بحاصلة ، وهي حاصلة لنفسه ، والإلزام سلب الشيء عن نفسه ، والحاصل بعد ما لم تكن مقارنته . قيل : تحقق الماهية ثابتة ، فلو ثبت المطلق تعدد في ما وجد ، وفيه تحصيل الحاصل .
 
-### English
+### English · passage 3
 
 **Reply:** Not everything which is not a substance is thereby an accident, whereas quality is an accident. Nor does ‘subsisting’ invariably mean ‘depending’; substantial form, for example, does not depend on prime matter [in the sense intended by the argument]. **Objection:** The actuality of a newly originated thing that is now nonexistent is not present. Otherwise actuality would obtain when the thing had none. When it later comes to be we say that its actuality has arisen after not existing; consequently actuality as such was absent. **Reply:** [The quiddity] is not actual, but actuality is actual through itself; the proposed consequence deprives a thing of itself. What comes about after not having been there is the conjunction [of actuality with the quiddity]. **Objection:** The quiddity's actuality is already established; if unrestricted actuality also existed, there would be a duplication in what exists, an idle obtaining of what is already obtained.
 
-### Arabic
+### Arabic · passage 4
 
 قلنا : إن أريد بتحقق الماهية امتيازها ؛ فظاهر أن التحقق واحد ، وإن أريد موجوداتها ؛ فهي للماهية بالوجود ، وله بنفسه ؛ على أن التكرار إنما هو بالنسبة إلى أمر واحد ، وهنا أمران . قيل : يصدق على الاعتبارين ، ويمتنع كونها جزئيات جزئيات الحقيقي . قلنا : إذا كان في الخارج والصادق عليهما وهمي . قيل : لو كان حقيقيّا تكثر الواحد ؛ لأن تحقق الشيء في نفسه غير تحققه في مكانه أو زمانه أو حاله .
 
-### English
+### English · passage 4
 
 **Reply:** If the quiddity's actuality means its distinctness, it is clear that actuality is one. If its [actual] existents are intended, they belong to the quiddity by existence, while existence belongs to itself through itself. In any case repetition would concern one and the same matter, whereas two considerations are at issue here. **Objection:** It is predicable under both considerations, while it cannot be a genuine particular [under each]. **Reply:** [The transcribed wording here is syntactically insecure: the answer contrasts what is extramental with a merely imagined common predicate.] **Objection:** If actuality were real it would multiply what is one, since the actuality of a thing in itself differs from its actuality in a place, a time, or a state.
 
@@ -1016,39 +1068,41 @@ Moreover, were actuality merely conceptual, everything—including the person ma
 
 At least two readings are defective: «الضد وصف» may not be the intended noun, and the last objection and reply around «جزئيات جزئيات الحقيقي» are corrupt. The source text is preserved rather than silently normalised. **Online page:** https://ablibrary.net/book_content/b/9637/40?lang=ar
 
-## Printed p. 41 · Relations do not multiply reality; first proof of necessary existence
+## MSH-029 · Printed p. 41 · Relations do not multiply reality; first proof of necessary existence
 
-**MSH-029** · [Arabic source](https://archive.org/details/machra3-khosous/page/n41/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n41/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī (argument, with occasional cited authorities)
+
+### Arabic · passage 1
 
 قلنا : ممنوع ، وإنما تكثر الإضافات . قيل : لو تعين بنفسه انحصر في الواحد والكثرة مشاهدة ما هو كلي ، لا يفيد ضمّه جزئية الماهية الكلية ، فيتحقق في الخارج ، فهو كسائر الكليات الاعتبارية ، فلا بدّ لتحققها من انضمام التعين أو ملزومها إليها ، فهو الوجود العيني لها ، والتعين اعتباري ؛ لأنه انضمام المشخص وهو ذهني ؛ إذ لو كان خارجيّا لم يضم إلى الماهية الذهنية الكلية في الخارج ، وكذا ملزومه ؛ لأن الاعتباري لا يلزم الحقيقي ، وإلا امتنع تحققه بدون اعتباره ، والحقيقي متحقق بدون المعتبر .
 
-### English
+### English · passage 1
 
-**Reply:** We deny [that its own actuality multiplies it]; it is only the relations which multiply. **Objection:** If existence is determinate by itself, it would be confined to one, whereas multiplicity is witnessed. Moreover what is universal cannot become a real particular outside the mind simply by adjoining it to a universal quiddity. It is like the other conceptual universals: its extramental realization would require the addition either of determination or of something necessarily connected with determination. But determination is conceptual, being the joining of an individuating feature; that joining is mental, since an extramental thing could not be added, *outside the mind*, to a universal quiddity which exists in the mind. The same holds for its necessary concomitant: a conceptual consideration cannot entail a real thing, for otherwise reality could not exist without someone's considering it, whereas real things obtain without the person making the consideration.
+**Reply:** We deny [that its own actuality multiplies it]; it is only the relations which multiply. **Objection:** If existence is determinate by itself, it would be confined to one, whereas multiplicity is witnessed. Moreover what is universal cannot become a real particular outside the mind simply by adjoining it to a universal quiddity. It is like the other conceptual universals: its extramental realization would require the addition either of determination or of something necessarily connected with determination. But determination is conceptual, being the joining of an individuating feature; that joining is mental, since an extramental thing could not be added, *outside the mind*, to a universal quiddity which exists in the mind. The same holds for its necessary concomitant: something merely conceptual cannot be a necessary consequence of something real, for otherwise the real thing could not exist without that conceptual consideration, whereas real things obtain without the person making the consideration.
 
-### Arabic
+### Arabic · passage 2
 
 قلنا : متعين بنفسه ، والتكثر إنما هو للماهيات وتعينها ؛ إما بنفسها بشرط اتصافها بالوجود ، أو بأسباب خارجية ، وإن لم يتعين بنفسه ؛ فيجوز أن يكون العيني لها طبيعة متعينة ، أو من حيث هي من الكلي والجزئي ، لا نفس التعين ولا ملزومه . المقام الثاني : فيه طرق : الطريق الأول : إن الوجود المشترك بالمعنى بين كل موجود بالذات لا يقبل العدم ، فمطلقه المحيط واجب .
 
-### English
+### English · passage 2
 
-**Reply:** Existence is determinate through itself; plurality belongs to quiddities, and their particularization is either through themselves on condition of their being qualified by existence or through extrinsic causes. Even were existence not determinate through itself, their extramental existence could be a determinate nature, or a nature considered apart from the alternatives universal and particular; it need not be determination itself, nor its concomitant. **Second question: the ways of proving intrinsic necessity. First way:** Existence, whose meaning is shared by everything that exists through itself, cannot receive nonexistence; therefore the unrestricted and all-encompassing reality of existence is necessary.
+**Reply:** Existence is determinate through itself; plurality belongs to quiddities, and their particularization is either through themselves on condition of their being qualified by existence or through extrinsic causes. Even were existence not determinate through itself, their extramental existence could be a determinate nature, or a nature considered apart from the alternatives universal and particular; it need not be determination itself, nor its concomitant. **Second question: the ways of proving intrinsic necessity. First way:** Existence—shared in meaning by every existent—does not intrinsically admit nonexistence; therefore the unrestricted and all-encompassing reality of existence is necessary.
 
-### Arabic
+### Arabic · passage 3
 
 أما الاشتراك فيه فبديهي ، ولو عند تصوره بالوجه أو بالفكر ؛ لكن لغاية وضوحه اشتبه أمره ، فجعل عين الماهيات ، فتنبه بأنه يبقى اعتقاد الوجود مع زوال اعتقاد الخصوصيات . قيل : يزول اعتقاد وجود خصوصية بوجود أخرى ، فأين يبقى المشترك بينهما ؟ قلنا : نحن نجد أن متعلق اعتقاد الباقي هو معنى الوجود - وإن لم يوضع له لفظ قط . قيل : لا يزول اعتقاد وجود الشيء لو اعتقد أنه نفس الوجود ، ثم أنه جوهر ، ثم أنه عرض فلا ، فللوجود وجود ويتسلسل .
 
-### English
+### English · passage 3
 
-That such a common meaning is present is self-evident, even if we conceive it only under an aspect or through thought. Yet its extreme clarity has led to confusion, and it has been taken to be identical with quiddities. Notice that the conviction that there is existence remains even when our convictions concerning particular specifications pass away. **Objection:** The belief that one particular thing exists disappears when the existence of another is affirmed; where, then, does the common element remain? **Reply:** We discover that what remains the object of our conviction is the meaning of existence—even if no word had ever been coined for it. **Objection:** If one believes that a thing is existence itself, that it is a substance, then that it is an accident, the belief does not persist in the proposed way; and existence itself must have existence, prompting an infinite regress.
+That such a common meaning is present is self-evident, even if we conceive it only under an aspect or through thought. Yet its extreme clarity has led to confusion, and it has been taken to be identical with quiddities. Notice that the conviction that there is existence remains even when our convictions concerning particular specifications pass away. **Objection:** The belief that one particular thing exists disappears when the existence of another is affirmed; where, then, does the common element remain? **Reply:** We discover that what remains the object of our conviction is the meaning of existence—even if no word had ever been coined for it. **Objection:** Belief in a thing’s existence does not cease if one believes it to be existence itself, then a substance, then an accident. [The connecting wording at فلا is unclear.] Existence would thus itself have existence, prompting an infinite regress.
 
-### Arabic
+### Arabic · passage 4
 
 قلنا : الوجود عينه في الحقيقة ، غيره بالاعتبار ، وينقطع التسلسل بقطعه ، وكونه زائدا في صورة ، لا يستلزم زيادته في أخرى . قيل : فيشترك بين نفسه وغيره . قلنا : يلغي المغايرة الاعتبارية ، وأيضا أن الوجود ينقسم إلى واجب وممكن ، والمورد مشترك . قيل : الاشتراك لفظي ، وجاز العالم إما ممكن أو واجب ، والمورد نفسه الماهية .
 
-### English
+### English · passage 4
 
 **Reply:** Existence is in reality identical with itself; it differs from it only by conceptual consideration. Once that consideration is removed the regress stops. That existence is additional in one case does not entail that it must be additional in another. **Objection:** Then it would be shared between itself and something other than itself. **Reply:** The difference established solely through consideration drops away. Moreover, existence is divided into necessary and possible, and what receives that division is common to both. **Objection:** The sharing might be merely verbal; and one may divide a [given] world into ‘possible’ or ‘necessary’ while what receives the division is its quiddity itself.
 
@@ -1056,71 +1110,79 @@ That such a common meaning is present is self-evident, even if we conceive it on
 
 Do not read the common meaning of existence alone as an independent proof of one numerical extramental subject; the author adds ontological premises. The last objector wording is insecure. **Online page:** https://ablibrary.net/book_content/b/9637/41?lang=ar
 
-## Printed p. 42 · Further replies on common existence and nonexistence
+Stage 13 review: Review against the supplied Arabic corrects the direction of implication at الاعتباري لا يلزم الحقيقي and retains the explicit لا يزول in the following objection. The connecting wording at فلا remains uncertain; no Arabic restoration has been made.
 
-**MSH-030** · [Arabic source](https://archive.org/details/machra3-khosous/page/n42/mode/1up)
+## MSH-030 · Printed p. 42 · Further replies on common existence and nonexistence
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n42/mode/1up
+
+Speaker: al-Mahāʾimī (argument, with occasional cited authorities)
+
+### Arabic · passage 1
 
 قلنا : قسمته عقلية لا تتوقف على وضع تعليليه معا ، بأن وجوده إن حصل من ذاته فواجب ، أو من غيره فممكن ، ومنع التعليل بتقدير عينية الوجود ؛ لامتناع أن يقال الهوية الخاصة إن اقتضت نفسها لذاتها فواجبة ، وإلا فممكنة ؛ إذ لا معنى له مكابرة لصحته بالضرورة ، والماهية المطلقة ، إنما تنقسم بانضمام مقسم ، فإن ضم إليها الوجود فلا بدّ من بقائه مع قسيمها ، وهو استمرار الوجود ، فاشتراكه يستلزم الوجود ، ولا ينقصان بالماهية والشخص لاشتراك مطلقيهما ، وأيضا بأن الشيء ينحصر في الموجود والمعدوم ، والعدم عام ، فكذا مقابله ، وإلا انحصر بين عام وخاص .
 
-### English
+### English · passage 1
 
 **Reply:** It is a rational division, which does not depend upon our affirming both alternatives as actual: if a thing's existence proceeds from itself it is necessary; if from another, it is possible. To deny the explanatory distinction on the supposition that existence is identical with the thing—because one allegedly cannot say that a particular identity, if it entails itself through itself, is necessary, while otherwise it is possible—is sheer obstinacy: the statement is necessarily intelligible. An unrestricted quiddity is divided only by adding a dividing feature. If existence is added to it, existence must remain with each opposing member of the division; the continued presence of existence is precisely the common element. This sharing entails a common existence and is not undone by appeal to quiddity or individuality, since those notions too possess their unrestricted meanings. Further, anything is either existent or nonexistent. Nonexistence is general, and so must its opposite be; otherwise the exhaustive alternatives would be a general and a particular.
 
-### Arabic
+### Arabic · passage 2
 
 قيل : رفع هوية خاصة والحصر بينه وبين ثبوتها . قلنا : يفهم الجمهور العموم ، لا يقال : إن وجد الرفع العام في سائر الهويات اجتمع فيه النقيضان ؛ وإلا امتنع صدق رفع شيء غير تلك الهوية ؛ لأنا نقول : هو ، وإن كان علما بحسب الهويات ؛ لكن لا تتحقق له من حيث هو ، بل بشيء من الإضافات ، وعورضت هذه الشبهات بأدلة عينية وجود للماهيات ، فمنها إن زاد فالماهيات من حيث هي معدومة ، فيلزم اتصاف الموجود بالمعدوم .
 
-### English
+### English · passage 2
 
-**Objection:** What is negated is only a particular identity, and the exhaustive distinction is between its being and its removal. **Reply:** Ordinary understanding takes the expression universally. One should not object that, if this general negation obtains among other identities, contradictories would be joined; if not, it would be impossible to affirm the negation of anything besides that identity. For though the expression is differentiated according to the identities, as such it is not actual except through certain relations. These doubts have also been confronted with alleged proofs that existence is identical with quiddities. One such proof says: if existence were additional, quiddities as such would be nonexistent, so an existent would be qualified by nonexistence.
+**Objection:** What is negated is only a particular identity, and the exhaustive distinction is between its being and its removal. **Reply:** Ordinary understanding takes the expression universally. One should not object that, if this general negation obtains among other identities, contradictories would be joined; if not, it would be impossible to affirm the negation of anything besides that identity. For although it is [the wording علما here is uncertain] with respect to the identities, it has no actuality simply as such, but only through certain relations. These doubts have also been confronted with alleged proofs that existence is identical with quiddities. One such proof says: if existence were additional, quiddities as such would be nonexistent, so the existent would be qualified by the nonexistent.
 
-### Arabic
+### Arabic · passage 3
 
 قلنا : من حيث هي لا تتصف بهما ، بل ينضمان إليها انضمام السواد والبياض بالجسم ، ومنها أن الصفة الثبوتية للشيء فرع ثبوته في نفسه بالضرورة ، فيكون لها قبل وجودها وجود ، فيتقدم على نفسه ويتسلسل . قلنا : الضرورة في صفة وجودية هي غير الوجود ، ومنها لو زاد لكان وجودا . قلنا : ثبوت الشيء لنفسه ليس أمرا زائدا عليه ، وأما امتناع العدم على الوجود ، هو أيضا بديهي ؛ لكن لما ذكر نبه عليه بأن قبوله العدم إما لعروضه له فيلزم اتصاف أحد النقيضين بالآخر ، أو لا فيلزم انقلاب طبيعة إلى طبيعة أخرى ، وبطلانها ضروري .
 
-### English
+### English · passage 3
 
-**Reply:** Quiddities considered in themselves are characterised by neither existence nor nonexistence. These are joined to them as blackness or whiteness may be joined to a body. **Another objection:** Every positive attribute of a thing presupposes that thing's own establishment. Existence would therefore need an existence prior to its own existence, producing self-priority and an infinite regress. **Reply:** That principle of presupposition applies to a positive attribute which is *other than existence*. **Another objection:** If existence were additional, it would itself require existence. **Reply:** A thing's being established as itself is not something additional to it. That nonexistence cannot befall existence is likewise self-evident; the preceding argument serves to bring this out. Nonexistence would either befall existence as an accident—in which case one contradictory would be qualified by its opposite—or else existence would turn into a different nature. Both are necessarily impossible.
+**Reply:** Quiddities considered in themselves are characterised by neither existence nor nonexistence. These are joined to them as blackness or whiteness may be joined to a body. **Another objection:** Every positive attribute of a thing presupposes that thing's own establishment. Quiddities would therefore possess existence before their existence; that existence would precede itself, producing an infinite regress. **Reply:** That principle of presupposition applies to a positive attribute which is *other than existence*. **Another objection:** If existence were additional, it would itself require existence. **Reply:** A thing's being established as itself is not something additional to it. That nonexistence cannot befall existence is likewise self-evident; the preceding argument serves to bring this out. Nonexistence would either befall existence as an accident—in which case one contradictory would be qualified by its opposite—or else existence would turn into a different nature. Both are necessarily impossible.
 
-### Arabic
+### Arabic · passage 4
 
 قيل : المراد إمكان انتفائه . قلنا : امتنع إمكان كون الانتفاء ؛ لامتناع كون المحال ممكنا . قيل : لا يمتنع اتصاف أحد النقيضين بالآخر ؛ وإنما الممتنع حمل أحدهما على الآخر ، بل خارجا عنه قابلا له ولما يقابله ، فامتناع ثبوته لنفسه مع امتناع قبولها له ولمّا يقابلها ؛ أظهر وأجل ، فإنه إذا امتنع مثلا حمل الأسود على ذات الأسود القابلة للسواد ، فامتناع ثبوته لنفس الأسود أولى ؛ على أن منع استحالة اتصاف أحد النقيضين بالآخر مكابرة .
 
-### English
+### English · passage 4
 
-**Objection:** The intended meaning is only that existence might cease. **Reply:** Such cessation cannot even be possible, because an impossibility cannot be possible. **Objection:** It is not impossible for one of two contradictories to qualify the other; what is impossible is to predicate the one of the other, rather than of a subject outside both which can receive either. **Reply:** [The syntax of this rebuttal is unstable in the transcription.] The impossibility of a contradictory's being predicated of itself in the proposed manner is still more evident: for example, if blackness cannot be predicated of the very subject considered as the recipient of blackness, then predicating it of blackness itself would be still more problematic. At any rate, denying that a thing can be qualified by its contradictory is mere obstinacy.
+**Objection:** The intended meaning is only that existence might cease. **Reply:** Such cessation cannot even be possible, because an impossibility cannot be possible. **Objection:** It is not impossible for one of two contradictories to qualify the other; what is impossible is to predicate the one of the other, rather than of a subject outside both which can receive either. **Reply:** [The syntax of this rebuttal is unstable in the transcription.] The impossibility of a contradictory's being predicated of itself in the proposed manner is still more evident: for example, if blackness cannot be predicated of the very subject considered as the recipient of blackness, then predicating it of blackness itself would be still more problematic. At any rate, denying the impossibility of one contradictory’s being qualified by the other is mere obstinacy.
 
 ### Editorial note
 
 Several clauses, particularly the final dialectic about subject and blackness, are transmitted in doubtful syntax and need photographic verification. The translation follows the visible argumentative direction without claiming textual certainty. **Online page:** https://ablibrary.net/book_content/b/9637/42?lang=ar
 
-## Printed p. 43 · Real unity, names, and the possible objection from a specially necessary nature
+Stage 13 review: The expression علما بحسب الهويات and the black/blackness example remain textually difficult. The present review has not checked a page image and does not emend either. The final rebuttal explicitly denies the possibility of one contradictory being qualified by the other; the earlier English accidentally reversed this claim.
 
-**MSH-031** · [Arabic source](https://archive.org/details/machra3-khosous/page/n43/mode/1up)
+## MSH-031 · Printed p. 43 · Real unity, names, and the possible objection from a specially necessary nature
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n43/mode/1up
+
+Speaker: al-Mahāʾimī (argument, with occasional cited authorities)
+
+### Arabic · passage 1
 
 قيل : الاشتراك يستلزم العموم المنافي للوجود لا متناعه في الخارج ، ويستلزم الأفراد المنافية للتوحيد . قلنا : ما يقال عليه ليس من الأفراد ، بل الكل واحد واجب بالذات كثير بصفات ممكنة زائدة على الذات ، فاشتراكه باعتبار إضافته إلى الماهيات ، وتعدده باعتبار ظهوره فيها ، فليس عاما لتحققه ضرورة تحقق الكل به ، ولا خاصّا بقيد اعتباري كالتجرد عن الماهية ؛ وإلا قبل العدم عند عدم اعتباره ، ولا يقيد وجودي ؛ لأنه إن كان كالصورة تركب الواجب ، أو كالفرض فلا يكون لازما لنفس طبيعته ؛ لامتناع تقيد الشيء به كنفسه لوجوده ؛ حيث يوجد الشيء فهو عام فيعم القيد أيضا ، فيكون مقارنا ، فيستند إلى مباين ؛ إذ لو استند إلى لازم لزم القيد ، فيكون مفارقا ، ولزم التسلسل في الأمور المترتبة بين حاصرين الذات والقيد ، والقيد المحض .
 
-### English
+### English · passage 1
 
-**Objection:** Sharing entails universality, which is incompatible with real existence because a universal cannot exist outside the mind; it also entails multiple instances, which contradict divine oneness. **Reply:** What the term is predicated of is not a collection of independently existing instances. Rather the whole is one, necessary through itself, while plurality occurs through possible attributes additional to the Essence. Sharing is considered with respect to its relations to quiddities, and multiplicity with respect to its appearance within them. Thus it is not universal in the manner alleged, since all things are necessarily actual through it. Nor is it a particular marked by a merely conceptual limitation, such as being disengaged from quiddity: otherwise, when that limitation ceased to be considered, existence itself would become susceptible to nonexistence. Neither can a positive restriction qualify it: if like a form, it would render the Necessary composite; if like a differentia, it would not be a necessary concomitant of the very nature of existence. The ensuing argument about a restriction's relation to its subject is compressed and textually uncertain, but its point is to reject a distinct real delimitation that would require another principle or an infinite regress.
+**Objection:** Sharing entails universality, which is incompatible with real existence because a universal cannot exist outside the mind; it also entails multiple instances, which contradict divine oneness. **Reply:** What the term is predicated of is not a collection of independently existing instances. Rather the whole is one, necessary through itself, while plurality occurs through possible attributes additional to the Essence. Sharing is considered with respect to its relations to quiddities, and multiplicity with respect to its appearance within them. Thus it is not universal in the manner alleged, since all things are necessarily actual through it. Nor is it a particular marked by a merely conceptual limitation, such as being disengaged from quiddity: otherwise, when that limitation ceased to be considered, existence itself would become susceptible to nonexistence. Neither can a positive restriction qualify it: if like a form, it would render the Necessary composite; if like a posited [restriction; the transmitted word is الفرض], it would not be a necessary concomitant of the very nature of existence. The ensuing argument about a restriction's relation to its subject is compressed and textually uncertain, but its point is to reject a distinct real delimitation that would require another principle or an infinite regress.
 
-### Arabic
+### Arabic · passage 2
 
 قيل : إنما لا يقبل المطلق العدم لو كان ذات المقيد ، وذلك باطل لصحة حمل المطلق عليه ، مع امتناع حمل أحد الذاتين على الأخرى ، فالحقيقة الواجبة طبيعة خاصة ملزومة للمطلق . قلنا : هي غير معقولة ؛ لأنها إن كانت ذات أفراد ذهنية ، فلو وجد منها فرد وامتنعت الباقية وكلها ممكنة ؛ فوجوب البعض وامتناع البواقي بالغير ؛ إذ ما بالذات لا يزال بالغير ، وإن لم تكن ذات إفراد ، فإن كانت مغايرة لحقيقة الوجود المطلق ، فلا تكون موجودة وإلا تركب مع الوجود ، فهي إما في ماهية حقيقة ، فيلزم قيام الوجود الواجب بها ، وهي غيره فتحتاج إلى الغير وتكون فاعلة له ، وإلا كان وجود الواجب من غيره .
 
-### English
+### English · passage 2
 
-**Objection:** Unrestricted existence could be immune to nonexistence only if it were the very essence of a determinate existent. But that is false: the unrestricted can be predicated of what is determinate, whereas one self-subsistent essence cannot be predicated of another. Necessary reality is therefore a special nature necessarily accompanied by unrestricted existence. **Reply:** Such a nature cannot be made intelligible. If it has instances in the mind, and one instance exists while the others are impossible, despite all being [conceptually] possible, the necessity of the former and impossibility of the latter must come from something extrinsic; for what belongs to something through itself is not eliminated by what comes from another. If the nature has no such instances and differs from unrestricted existence, it cannot itself be existent, lest it become a composite with existence. If it is a quiddity, necessary existence would subsist in it; but being other than existence, it would need what is other and would have to be the agent that brings existence about—otherwise the Necessary's existence would come from another.
+**Objection:** Unrestricted existence could be immune to nonexistence only if it were the very essence of a determinate existent. But that is false: the unrestricted can be predicated of what is determinate, whereas one self-subsistent essence cannot be predicated of another. Necessary reality is therefore a special nature necessarily accompanied by unrestricted existence. **Reply:** Such a nature cannot be made intelligible. If it has instances in the mind, and one instance exists while the others are impossible, despite all being [conceptually] possible, the necessity of the former and impossibility of the latter must come from something extrinsic; for what belongs to something through itself is not eliminated by what comes from another. If the nature has no such instances and differs from unrestricted existence, it cannot itself be existent, lest it become a composite with existence. If it is a quiddity, necessary existence would subsist in it and thus depend on something other than itself. That quiddity would have to be the agent producing this existence—otherwise the Necessary’s existence would come from another.
 
-### Arabic
+### Arabic · passage 3
 
 وقال أيضا : وعلة لوجوده فيتقدم عليه بالوجود ، على أنه لو جاز تأثيرها في تحققها ، جاز في تحقق العالم بلا وجود ، بأن تكون قبل الوجود علة حلولها في العقل الأول ثم لوجوده ، وكذا لما تحته من غير أن يحصل لها وجود فيسند إثبات وجود الصانع الواجب تعالى ، وجاز أيضا أن يكون ماهية كل شيء علة لوجوده من غير أن يؤثر فيه الواجب تعالى ؛ أما إذا كانت بسيطة فلأن ماهيته تعالى لما كانت بسيطة اقتضت وجودها ؛ فكذلك كل بسيط ، وأما إذا كانت مركبة ؛ فلأن ماهية الجزء والصورة والهيئة الاجتماعية يجوز كونها علة الاجتماع ، فيحصل ماهية المجموع ، وهي علة لوجود نفسها أو لوجود الأجزاء ،
 
-### English
+### English · passage 3
 
 It would also have to be the cause of its own existence and so precede itself in existence. Moreover, if such a quiddity could act to actualize itself, it could supposedly act to actualize the world without itself existing: before possessing existence it could cause its own inherence in the First Intellect and then the Intellect's existence, and similarly all subordinate things, without ever itself acquiring existence. Thus the proof of a necessary Creator would be undermined. It would also become admissible that the quiddity of every thing causes its own existence without the Necessary exerting any effect upon it. If simple, the argument would be that, just as the simple divine quiddity allegedly entails its own existence, so does every simple quiddity. If composite, the quiddity of the part, the form, and their composite arrangement could cause that arrangement, yielding the quiddity of the whole; this in turn could cause its own existence or that of its parts ...
 
@@ -1128,135 +1190,149 @@ It would also have to be the cause of its own existence and so precede itself in
 
 The final paragraph continues on p.44. The compressed middle portion of the first reply is flagged; a translation must not silently smooth the corrupted source into a demonstrative syllogism. **Online page:** https://ablibrary.net/book_content/b/9637/43?lang=ar
 
-## Printed p. 44 · Rejecting the specially necessary nature and intrinsic existential gradation
+Stage 13 review: The first pair still gives an explicitly signalled synopsis of the highly compressed final restriction/regress argument rather than a secure clause-by-clause translation. In particular الفرض has not been silently changed to العرض or الفصل. This passage requires further source verification.
 
-**MSH-032** · [Arabic source](https://archive.org/details/machra3-khosous/page/n44/mode/1up)
+## MSH-032 · Printed p. 44 · Rejecting the specially necessary nature and intrinsic existential gradation
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n44/mode/1up
+
+Speaker: al-Mahāʾimī (argument, with occasional cited authorities)
+
+### Arabic · passage 1
 
 وهي بشرط الإجماع فتصير علة لوجود نفسها أو لوجود الأجزاء ، وانعدام الحوادث ؛ لانعدام الشرائط والأمور المعدة التي يقتضي وجودها ، فتسقط أدلة وجود الواجب ؛ إما بشيء من الأمور العقلية التي لا تقبل الوجود ، فيلزم مع احتياج الواجب إلى الأمر العقلي ، وكونه قابلا وفاعلا وعلة للوجود - لا بشرط الوجود - أن يكون مبدأ الوجود العيني أمرا عقليّا يمتنع تحققه في الخارج ؛ فأنى يكون واجبا ملزوما للوجود ، وإذا لم تكن الطبيعة الملزومة مغايرة لحقيقة الوجود المطلق ؛ لزم امتناع استلزام الوجودات الممكنة للحقيقة المطلقة ، امتناع استلزامها للواجبة ، أو وجوب استلزام الوجودات الخاصة للمطلقة ، مع امتناع استلزام حقائق الممكنات للواجبة .
 
-### English
+### English · passage 1
 
-... when that combination is stipulated, and the composite then becomes a cause of its own existence or of the existence of its parts. Perishable things would cease because of the absence of the conditions and preparatory factors required for their occurrence. Proofs of a Necessary Existent would thereby collapse. [On the alternative] that the alleged necessary nature is a merely intelligible thing which cannot possess existence, the Necessary itself would depend upon an intelligible item, while that item would be both receiver and agent, the cause of existence without being required to exist. The principle of extramental existence would then be something mental incapable of extramental actuality. How could that be a Necessary Existent inseparably connected with existence? But if the nature held to entail existence does not differ from the reality of unrestricted existence, one must either deny that possible existences entail unrestricted existence as they fail to entail necessary existence, or require particular existences to entail unrestricted existence despite possible quiddities' failure to entail the Necessary.
+... when that combination is stipulated, and the composite then becomes a cause of its own existence or of the existence of its parts. The nonexistence of temporally originated things would result from the absence of the conditions and preparatory factors required for their existence. Proofs of a Necessary Existent would thereby collapse. [On the alternative] that the alleged necessary nature is a merely intelligible thing which cannot possess existence, the Necessary itself would depend upon an intelligible item, while that item would be both receiver and agent, the cause of existence without being required to exist. The principle of extramental existence would then be something mental incapable of extramental actuality. How could that be a Necessary Existent inseparably connected with existence? But if the nature held to entail existence does not differ from the reality of unrestricted existence, one must either deny that possible existences entail unrestricted existence as they fail to entail necessary existence, or require particular existences to entail unrestricted existence despite possible quiddities' failure to entail the Necessary.
 
-### Arabic
+### Arabic · passage 2
 
 قيل : البطلان ممنوع ، فإنه عين المذهب . قلنا : بين الاستحالة لامتناع اجتماع المتماثلين ، وكون أحدهما حالا في الآخر ، ومخصوصا باللازمية ، من غير أن يكون هناك فارق ، والفرض ألا مغايرة ، والمذهب أن لا تحقق للممكنات ، بل المتحقق واحد مع صفات زائدة . قيل : ملكك تشكيل حقيقة غير مشكك ، فاستلزام الممكنات للمطلق بحقيقة غير حقيقة الواجب ، مع اشتراكهما في هذا العارض .
 
-### English
+### English · passage 2
 
 **Objection:** It is denied that this is absurd: it is the very doctrine being maintained. **Reply:** Its impossibility has been shown. Two entirely alike things cannot be united while one inheres in the other and stands to it as a necessary concomitant without any distinguishing ground, when the hypothesis expressly denies a difference. Our doctrine is not that possibles possess independent actuality. The reality that is actual is one, with additional attributes. **Objection:** Your argument presupposes an ungraded reality. Might not possibles entail the unrestricted by a reality different from that of the Necessary, while the two share the property in question? [The reading «ملكك تشكيل» is corrupt.]
 
-### Arabic
+### Arabic · passage 3
 
 قلنا : وجود المختلفات غير قابل للعدم ، لما مرّ ، فلو وجد آخر تعدد الواجب ، والقائل بالتشكيك ينكره بالكلية ، والاستدلال على التشكيك - بإثبات الأولوية والأقدمية والأكملية والأشرفية - مبني على ثبوت الطبيعة الملزومة ، فإنما هي من لواحق الوجود بالقياس إلى الماهيات بقلة الوسائط وكثرتها مثلا ، على أن لنا في إبطال الطبيعة الملزومية أنها مغايرة لمفهوم كل تعيين ؛ لافتقاره إلى موضوع ، وهو ينافي الوجوب الذاتي ، فيكون أفراد ممكنه ضرورة أنها كلية بحسب العقل ، فلو وجد منها فرد وامتنعت البواقي ؛ كان بالغير ، فإن امتنعت الملازمة بكونها مطلقة أو مفروضة له ؛ لزم المطلوب لو لم يتوقف على الموضوع .
 
-### English
+### English · passage 3
 
-**Reply:** Existence, whatever differences are alleged in its manifestations, does not admit nonexistence, as already established. Were another [independent existence] actual there would be multiple Necessary Existents, something the proponent of gradation wholly rejects. Arguments for gradation from priority, precedence, greater completeness and greater nobility presuppose the alleged nature that necessarily accompanies existence; but such properties accrue to existence only in relation to quiddities—for example, through having fewer or more intermediaries. Against the posited necessarily accompanying nature we add that it differs from the notion of every determination, for determination requires a subject, which conflicts with intrinsic necessity. Such a nature would therefore have possible instances: it is a universal in the mind, and if one instance obtained while the others were impossible, this would have to be through another. If the alleged inseparability is denied because the nature is unrestricted or the restriction is merely supposed, the conclusion follows if the determination is not independent of its subject.
+**Reply:** Existence, whatever differences are alleged in its manifestations, does not admit nonexistence, as already established. Were another [independent existence] actual there would be multiple Necessary Existents, something the proponent of gradation wholly rejects. Arguments for gradation from priority, precedence, greater completeness and greater nobility presuppose the alleged nature that necessarily accompanies existence; but such properties accrue to existence only in relation to quiddities—for example, through having fewer or more intermediaries. Against the posited necessarily accompanying nature we add that it differs from the notion of every determination, for determination requires a subject, which conflicts with intrinsic necessity. Such a nature would therefore have possible instances: it is a universal in the mind, and if one instance obtained while the others were impossible, this would have to be through another. If the alleged inseparability is denied because the nature is unrestricted or the restriction is merely supposed, the conclusion follows if it does not depend on a subject.
 
 ### Editorial note
 
 The clause «ملكك تشكيل» and several further inflections in the final dialectic are visibly defective. The text unequivocally distinguishes priority and perfection relative to quiddities from gradation of existence considered in itself; the rest awaits collation. **Online page:** https://ablibrary.net/book_content/b/9637/44?lang=ar
 
-## Printed p. 45 · What are the alleged individuals of unrestricted existence?
+## MSH-033 · Printed p. 45 · What are the alleged individuals of unrestricted existence?
 
-**MSH-033** · [Arabic source](https://archive.org/details/machra3-khosous/page/n45/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n45/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī (argument, with occasional cited authorities)
+
+### Arabic · passage 1
 
 الموضوع . قيل : صحة هذا الدليل يمنع كون الواجب نفس المطلق ؛ لأنه إن كان ذا أفراد عقلية ، وقد استحال وجود الجمع ، وأن يوجد فرد ، فوجود بعضها وامتناع الآخر إنما هو بالغير وإلا ، فإن غايرت الوجودات الخاصة فحمله على المطلق ، وعليها بالاشتراك اللفظي ، وهي خلاف المتيقن المتعين ؛ وإلا اتصفت الممكنات بالوجوب الذاتي . قلنا : هي بالحقيقة نفي للوجوب الواجب ، وإنما يتصف بالإمكان ماهياتها ، فليس المطلق مغايرا للواجب ؛ وإلا لم يكن قائما بنفسه ممتازا بها بل بالوجوب . قيل : نعم بالضرورة إنها من أفراد المطلق كالواجب .
 
-### English
+### English · passage 1
 
-... [of] a subject. **Objection:** If this argument is sound, the Necessary cannot be identical with unrestricted existence. For if unrestricted existence has instances in the mind while their combined actuality is impossible, the actuality of one and impossibility of another must arise from something other than themselves. Alternatively, if particular existences differ from unrestricted existence, existence is predicated of them and of the unrestricted only equivocally, contradicting the clear and established common meaning; if they do not differ, possible things would be necessary through themselves. **Reply:** In reality, the supposition wrongly deprives the Necessary of necessity. It is the quiddities of possible things that are characterised by possibility. Unrestricted existence is not other than the Necessary, for otherwise it would not subsist through itself and be distinguished by itself, but [would be distinguished] only by necessity. **Objection:** Nonetheless, it is self-evident that possibles, like the Necessary, are instances of unrestricted existence.
+... [of] a subject. **Objection:** If this argument is sound, the Necessary cannot be identical with unrestricted existence. For if unrestricted existence has instances in the mind while their combined actuality is impossible, the actuality of one and impossibility of another must arise from something other than themselves. Alternatively, if particular existences differ from unrestricted existence, existence is predicated of them and of the unrestricted only equivocally, contradicting the clear and established common meaning; if they do not differ, possible things would be necessary through themselves. **Reply:** [The transmitted clause هي بالحقيقة نفي للوجوب الواجب is unclear and does not support a secure translation.] It is the quiddities of possible things that are characterised by possibility. Unrestricted existence is not other than the Necessary, for otherwise it would not subsist through itself and be distinguished by itself, but [would be distinguished] only by necessity. **Objection:** Nonetheless, it is self-evident that possibles, like the Necessary, are instances of unrestricted existence.
 
-### Arabic
+### Arabic · passage 2
 
 قلنا : لا تسمع دعوى الضرورة في محل النزاع ؛ على أنه إن أريد بالممكن معروض شيء من التعينات والصفات - من غير اعتبارها معه - فهو الواجب ، أو شيء منها من غير اعتباره ، فليس من أفراد المطلق بالواجب ؛ لأن ما لم يوجد بنفسه أو المجموع فلا يمكن وجوده ، فليس من أفراد ما وجد ؛ لأن ما يتألف من الوجود الواجب بنفسه أو المجموع ؛ فلا يمكن وجوده بالذات ، والموجود بالعرض لا يتحقق بالذات ؛ لامتناع تحقق جزئه بالذات ، فيمتنع تحقق المتقوم به بالذات ، فامتنع الأفراد الذهنية التي وجودها بالذات ، فيمتنع كونه من أفراد الموجود بالذات ، أو أريد المعروض من حيث هو كذلك ، فالكل موجود ؛ واحد بالذات كثير بحسب الصفات ، ممكنة زائدة على الذات ، ضرورة على أن لا ذات إلا للوجود الواحد بالذات ، فليس للمطلق أفراد ذهنية يختلف بالوجوب والإمكان والامتناع .
 
-### English
+### English · passage 2
 
-**Reply:** An appeal to self-evidence is inadmissible at the very point under dispute. Moreover, by ‘possible’ one might intend the subject to which some determination or attribute belongs, without taking the attribute together with its subject. In that case [the subject considered as existence] is the Necessary. Or one may intend the attribute or determination itself abstracted from the subject; then it is not an independent instance of the unrestricted Necessary: what does not exist through itself, or whose whole cannot so exist, is not an instance of what exists through itself. For a composite of self-necessary existence and something else, or the resulting whole, cannot be necessary through itself. What exists only derivatively does not possess actuality through itself, because a constituent cannot itself possess the stipulated intrinsic actuality. Hence supposed mental instances each existing through themselves are impossible, and no such thing is an instance of the self-existent. Or, finally, the subject may be considered under its description as bearing those attributes. In that case the whole exists: one in essence but multiple through attributes which are possible and additional to the Essence. There is, strictly speaking, no self-subsisting essence other than one existence; unrestricted existence has no mental instances differing by necessity, possibility and impossibility.
+**Reply:** An appeal to self-evidence is inadmissible at the very point under dispute. Moreover, by ‘possible’ one might intend the subject to which some determination or attribute belongs, without taking the attribute together with its subject. In that case [the subject considered as existence] is the Necessary. Or one may intend the attribute or determination itself abstracted from the subject; then it is not an independent instance of the unrestricted Necessary: what does not exist through itself, or whose whole cannot so exist, is not an instance of what exists through itself. For a composite of intrinsically necessary existence and something else, or the resulting whole, cannot possess existence through itself. What exists only derivatively does not possess actuality through itself, because a constituent cannot itself possess the stipulated intrinsic actuality. Hence supposed mental instances each existing through themselves are impossible, and no such thing is an instance of the self-existent. Or, finally, the subject may be considered under its description as bearing those attributes. In that case the whole exists: one in essence but multiple through attributes which are possible and additional to the Essence. There is, strictly speaking, no self-subsisting essence other than one existence; unrestricted existence has no mental instances differing by necessity, possibility and impossibility.
 
-### Arabic
+### Arabic · passage 3
 
 قيل : الممتنع في الخارج وجوده الذهني من أفراد المطلق كالواجب ، فله أفراد متنافية فيه بالضرورة . قلنا : الذهني هو العيني بالحقيقة ، ومغايرته بالاعتبار ، فيجب بالذات ويمتنع بالإضافة إلى ماهية الممتنع ؛ فإن المعاني العقلية إنما يعرض الوجود العيني في بعض مراتبه . قيل : إنما يحصل في القول المعقول الدالة ، فكيف يكون وجودها عين الخارجي ؟ قلنا : الاختصاص بالمعقول إنما هي للموجودية العارضية للمعاني الموجودة ، وكلامنا في الموجود بالذات حمل للمعاني ؛ على أنه إن أريد معروض هذه الاعتبارات من
 
-### English
+### English · passage 3
 
-**Objection:** The nonexistent or impossible has a mental existence which is, like the Necessary, an instance of unrestricted existence. There must therefore be mutually incompatible instances within the unrestricted. **Reply:** Mental and extramental existence are, in reality, one; their difference is through conceptual consideration. What is necessary through itself is impossible only *in relation to* the quiddity of an impossibility. Intelligible meanings receive extramental existence only at some of its degrees. **Objection:** Such meanings occur only in intelligible discourse that indicates them; how could their existence be identical with extramental existence? **Reply:** The restriction to the intelligible concerns the derivative ‘being-existent’ of the meanings that have existence. Our subject is existence through itself, which bears such meanings. Furthermore, if by the subject of these considerations we mean ...
+**Objection:** What is impossible outside the mind has a mental existence which is, like the Necessary, an instance of unrestricted existence. There must therefore be mutually incompatible instances within the unrestricted. **Reply:** Mental and extramental existence are, in reality, one; their difference is through conceptual consideration. What is necessary through itself is impossible only *in relation to* the quiddity of an impossibility. Intelligible meanings are attached to extramental existence only at some of its degrees. **Objection:** Such meanings occur only in intelligible discourse that indicates them; how could their existence be identical with extramental existence? **Reply:** The restriction to the intelligible concerns the derivative ‘being-existent’ of the meanings that have existence. Our subject is existence through itself, which bears such meanings. Furthermore, if by the subject of these considerations we mean ...
 
 ### Editorial note
 
 The author distinguishes conceptual mental identity from a purported plurality of self-subsisting existences. The final sentence continues on p.46. The transcription contains anomalous syntax at «أو شيء منها» and «معروض هذه الاعتبارات». **Online page:** https://ablibrary.net/book_content/b/9637/45?lang=ar
 
-## Printed p. 46 · Completion of first proof; second through fifth ways
+Stage 13 review: The opening reply contains the anomalous phrase هي بالحقيقة نفي للوجوب الواجب. Its earlier English reconstruction has been withdrawn; the supplied Arabic remains unchanged pending source verification.
 
-**MSH-034** · [Arabic source](https://archive.org/details/machra3-khosous/page/n46/mode/1up)
+## MSH-034 · Printed p. 46 · Completion of first proof; second through fifth ways
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n46/mode/1up
+
+Speaker: al-Mahāʾimī (argument, with occasional cited authorities)
+
+### Arabic · passage 1
 
 غير اعتبارها معه ، فهو الواجب بالذات أو العارض ، فليس عن أفراده أو المجموع ، فلا يجب بالذات ، فما يمتنع في الخارج ليس من أفراد المطلق ، وما يمكن راجع إلى نفسه . قيل : لو أبين بعين المطلق بالوجوب الذاتي تقيد به . قلنا : أمر عقلي لا يخرجه عن الإطلاق الحقيقي . قيل : مر أنه لا يتقيد بالعدمي أيضا . قلنا : الكلام فيما يجب ثبوته له من حيث إطلاق المنافي للقيود كلها ، ومنها فيما يجب التعقل ، فتأمل على أنا نبطل الطبيعة الملزومة أيضا ، بأن حقيقتها إنما يجب لذاتها أو لزمها الوجود لذاتها ، لكن فيه نفس الوجود من البسائط لا يلزمه الوجود بالذات لكونه خارجا فيمكن تعقله بدونه ، فنسبة الوجود والعدم مع قطع النظر عن الغير إليه على السوية ، فيكون ممكنا لذاته ، فلا يلزمه الوجود لذاته .
 
-### English
+### English · passage 1
 
 ... apart from taking those considerations together with it, it is the Necessary through itself; if an attribute alone is meant, it is not one of the [Necessary's] independent instances; and if their combination is meant, the whole is not necessary through itself. What is impossible outside the mind cannot therefore count among the instances of unrestricted existence; what is possible returns to the existence [through which it is manifested]. **Objection:** If unrestricted existence is identical with intrinsic necessity, the latter restricts it. **Reply:** That is a conceptual judgement which does not remove real unrestrictedness. **Objection:** But it was said that unrestricted existence does not accept even privative restrictions. **Reply:** The first claim concerns what must belong to it as unrestricted, which excludes every restriction; the second concerns what necessarily follows in thought. Reflect on this distinction. The posited nature said to entail existence is also refuted thus: either its reality is intrinsically necessary or existence is an intrinsic necessary concomitant. But existence, considered as additional to a simple nature, is not entailed by that nature through itself, because it lies outside the nature's concept and that concept can be understood without it. Without regard to anything external, it has an equal relation to existence and nonexistence, so it is intrinsically possible and cannot entail existence intrinsically.
 
-### Arabic
+### Arabic · passage 2
 
 الطريق الثاني : لو لم يكن الوجود واجبا لذاته ؛ لكان إما ممكنا ويفتقر تحققه إلى علة تتقدمه بالوجود ، على أنه يكون وجود الواجب ممكنا ، وإلا منقسما إليها ، وموارد القسمة لا تتحقق في الخارج إلا بأقسامه ؛ لكن أقسام الوجود لا تتحقق أصلا إلا به فيدور .
 
-### English
+### English · passage 2
 
 **Second way:** If existence were not necessary in itself, it would be possible and would require for its actuality a cause preceding it in existence. The existence of the Necessary would then itself be possible. Or existence would be divided into necessary and possible, but a subject of division has no extramental actuality except through its subdivisions; meanwhile the subdivisions of existence cannot themselves be actual except through existence. This produces a circle.
 
-### Arabic
+### Arabic · passage 3
 
 الطريق الثالث : طبيعة الوجود حاصل للواجب ، فإن كانت غيره لافتقر وجود الواجب إلى الغير ، وإلا فإن كانت مطلقة كان المطلق واجبا ، وإن كانت خاصة كان معها المطلق ، فإن وجب فذاك ، وإلا افتقر الخاص بافتقاره إلى علة ، ولو وجب فشرطه لم يجب بذاته ، فلم يجب الخاص أيضا لتقومه مما لم يجب لذاته . الطريق الرابع : الوجود لا حقيقة له زائدا على نفسه ، وإلا تصورت دونه وبطلانه بالضرورة ، فهو واجب ، وإلا أمكن تجرده . قيل : ينتفي بإبقائها . قلنا : ارتفاع الحقائق يستلزم قبلها ، على أنه يستلزم جواز ارتفاع حقيقة الواجب .
 
-### English
+### English · passage 3
 
-**Third way:** The nature of existence is found in the Necessary. If it were other than the Necessary, the Necessary's existence would depend upon another. If it is identical with the Necessary and unrestricted, unrestricted existence is necessary. If it is particular, unrestricted existence is present with it. Should unrestricted existence be necessary, the point is proved. If not, the particular would depend, through its dependence, upon a cause; and even if the particular is claimed necessary, its condition would not be necessary in itself, so the particular composed through it would not be intrinsically necessary either. **Fourth way:** Existence has no reality additional to itself, since otherwise the reality could be conceived without existence, which is necessarily absurd. Existence is therefore necessary; otherwise it could be stripped of itself. **Objection:** It might cease while [its reality] remains. **Reply:** The disappearance of realities would presuppose their existence, and the proposed view implies the possible disappearance of the Necessary's reality.
+**Third way:** The nature of existence is found in the Necessary. If it were other than the Necessary, the Necessary's existence would depend upon another. If it is identical with the Necessary and unrestricted, unrestricted existence is necessary. If it is particular, unrestricted existence is present with it. Should unrestricted existence be necessary, the point is proved. If not, the particular would depend, through its dependence, upon a cause; and even if the particular is claimed necessary, its condition would not be necessary in itself, so the particular composed through it would not be intrinsically necessary either. **Fourth way:** Existence has no reality additional to itself, since otherwise the reality could be conceived without existence, which is necessarily absurd. Existence is therefore necessary; otherwise it could be stripped of itself. **Objection:** It might cease while [its reality] remains. **Reply:** The disappearance of realities would entail [the transmitted word قبلها, “before them,” is unclear here]. Moreover, the proposed view entails the possible disappearance of the Necessary’s reality.
 
-### Arabic
+### Arabic · passage 4
 
 الطريق الخامس : كل شيء يحتاج في تحققه إلى الوجود ، فلو احتاج إلى وجوده المحتاج إلى الواجب والمطلق ؛ لا يتقيد بالاحتياج وعدمه ، بل يحتاج إلى الإفراد لكونه كليّا . قلنا : الاحتياج إلى الخاص احتاج إلى المطلق ، وعدم التقيد إنما يتأتى لو انقسم ويمنع كونها كليّا ، واحتياج كل كلي إلى الأفراد بل الطبائع الممكنة إنما احتياجها في
 
-### English
+### English · passage 4
 
-**Fifth way:** Everything needs existence in order to be actual. If existence itself needed another existence, the latter would [ultimately] need the Necessary. **Objection:** The unrestricted cannot be restricted by either need or the absence of need, and as a universal it requires instances. **Reply:** Dependence upon a particular entails dependence upon the unrestricted; and being without restriction by need would hold only if existence were divisible in the posited sense, which is denied. We likewise deny that existence is a universal which requires individuals in that way. Even possible natures require individuating features only for ...
+**Fifth way:** Everything needs existence in order to be actual. If existence itself needed another existence, the latter would [ultimately] need the Necessary. **Objection:** The unrestricted cannot be restricted by either need or the absence of need, and as a universal it requires instances. **Reply:** Dependence upon a particular entails dependence upon the unrestricted; and being without restriction by need would hold only if existence were divisible in the posited sense, which is denied. We deny both that existence is universal and that every universal requires individuals. Rather, possible natures require ...
 
 ### Editorial note
 
 Source p46 has an unstable transition in the fifth argument. Final sentence continues p.47. One should distinguish “existence is necessary through itself” as metaphysical conclusion from the conceptual fact that its own existence cannot be added to it. **Online page:** https://ablibrary.net/book_content/b/9637/46?lang=ar
 
-## Printed p. 47 · Sixth and seventh arguments; opening two objections
+Stage 13 review: The fourth proof contains the doubtful phrase ارتفاع الحقائق يستلزم قبلها. The inherited English supplied a presupposition-of-prior-existence argument; the revised English marks the source uncertainty instead. The fifth proof’s opening remains unstable as already recorded.
 
-**MSH-035** · [Arabic source](https://archive.org/details/machra3-khosous/page/n47/mode/1up)
+## MSH-035 · Printed p. 47 · Sixth and seventh arguments; opening two objections
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n47/mode/1up
+
+Speaker: al-Mahāʾimī (argument, with occasional cited authorities)
+
+### Arabic · passage 1
 
 ظهورها في الشهادة إلى المشخصات ، وفي المعاني إلى المنوعات لا في تحققها في نفسها . الطريق السادس : لو لم يجب المطلق لوجب الخاص ، فإن غاير المطلق ؛ كان قول الوجود عليهما بالاشتراك اللفظي ، وهو خلاف الضروري ، وإلا تعدد الواجب ؛ لأن المطلق يكون ذا أفراد وهو عين الواجب ، فيجب إفراده على أنه يكون علية الأشياء بلا مناسبة ، وهي تابعة عن الجمهور وبالاستقراء ، ومدركا لكلي لا كلي فوقه ، مع كونه من شعبه التي لا يحيط بها ، وكون المتأخر علة للمتقدم طبعا ، وكونه مندرجا تحت جميع الأمور العامة .
 
-### English
+### English · passage 1
 
-... their manifestation in the sensible world, and differentiating features for their appearance at the level of meanings—not for their own actuality as such. **Sixth way:** If unrestricted existence were not necessary, some particular existence would have to be. If the particular differed in reality from unrestricted existence, calling both ‘existence’ would be equivocal, contrary to what is evident. If it did not differ, Necessary Existents would be multiplied, because the unrestricted would have individuals identical with what is necessary and all such individuals would accordingly be necessary. This would also absurdly make the divine cause of things unrelated to them, contrary to the generally accepted relation of cause and effect, make it apprehend a universal above which there is no further universal although it is itself but one branch of the unrestricted reality it cannot encompass, make the naturally posterior a cause of the naturally prior, and place it under every general predicate.
+... individuating features for their manifestation in the sensible world, and species-forming differentiations for their appearance at the level of meanings—not for their own actuality as such. **Sixth way:** If unrestricted existence were not necessary, some particular existence would have to be. If the particular differed in reality from unrestricted existence, calling both ‘existence’ would be equivocal, contrary to what is evident. If it did not differ, Necessary Existents would be multiplied, because the unrestricted would have individuals identical with what is necessary and all such individuals would accordingly be necessary. This would also absurdly make the divine cause of things unrelated to them, contrary to the causal correspondence accepted by the majority and evidenced by induction, make it apprehend a universal above which there is no further universal although it is itself but one branch of the unrestricted reality it cannot encompass, make the naturally posterior a cause of the naturally prior, and place it under every general predicate.
 
-### Arabic
+### Arabic · passage 2
 
 الطريق السابع : إنا نعلم بالضرورة ، أن الوجود المشترك فيه الموجودات وجود واحد عيني طبيعية عين تلك الموجودات ذهنا وخارجا ، وإنما تعددت واختلفت بالإضافات والاعتبارات المخصصة لا غير ، فالأولى أن يجعل المطلق هو الحقيقي وتعيّناته معان عقلية مأخوذة بالإضافات والاعتبارات ، فالحق محض الوجود ، بحيث لا يمازجه غيره ، ولا تركيب فيه ، ولا كثرة ، ولا نعت ولا رسم ، فافهم واللّه المنعم .
 
-### English
+### English · passage 2
 
 **Seventh way:** We know immediately that existence, in which existent things participate, is a single extramental reality whose nature is identical with those existents mentally and externally; they are multiplied and distinguished only by particularising relations and considerations. It is therefore more appropriate to regard the unrestricted as that which is real, while its determinations are intelligible meanings taken from relations and considerations. The Real is pure existence, not mixed with anything other than itself: there is no composition, plurality, attribute, or delineation in it. Understand this; God is the Bestower.
 
-### Arabic
+### Arabic · passage 3
 
 * * * الفصل الثالث في رفع الشبهات وفيه اعتراضات : الأولى : إن تعين بنفسه امتنع حلول الصفات المنافية فيه ، ضرورة امتناع اتصاف الواحد بالشخص بالمتنافية ؛ وإلا كان تعينه بهذه الصفات لاستحالة أن يكون بالغير ، فيتعدد الواجب بالأفراد المتعينة من تلك الصفات . قلنا بنفسه ، وجاز أن يستلزم بالذات شيئا ومعه آخر . الثانية : إن لم يستقل المطلق بالقوام لم يجب بالذات ، وإن استقل ؛ فإن أوجب حلول شيء منافيه ، يوجد أبدا ضد ما وجد ، وإما أن يستلزم ما ينافيه ، فيجتمعان في كل ما وجد . قلنا : مستقل لا يمنع في مرتبته منافي ما وجد ، وألا يستلزمه إلا في أخرى .
 
-### English
+### English · passage 3
 
 **Chapter Three: Removing doubts.** There are several objections. **First:** If unrestricted existence is determinate through itself, mutually incompatible attributes cannot inhere in it; for a numerically single thing cannot possess contradictory characteristics. Otherwise its determination would be by means of those attributes—since it cannot be determined through another—and the Necessary would multiply according to the distinct individuals bearing those attributes. **Reply:** It is determined through itself, and there is no contradiction in its entailing one thing intrinsically and another in conjunction with an additional consideration. **Second:** If unrestricted existence does not subsist independently, it cannot be necessary in itself. But if it does subsist independently, either it brings about the inherence of something incompatible with what is already present, so the opposite of an existing thing would always appear, or it entails its contrary so both would be united in everything. **Reply:** Its independent subsistence does not prevent what is incompatible with something at one level of its manifestation, or its entailing a different thing only at another level.
 
@@ -1264,63 +1340,69 @@ Source p46 has an unstable transition in the fifth argument. Final sentence cont
 
 The seventh proof expressly makes «الإضافات والاعتبارات المخصصة» the differentiating principle: the philosophical relation between these considered distinctions and actual manifested differences remains a central question. **Online page:** https://ablibrary.net/book_content/b/9637/47?lang=ar
 
-## Printed p. 48 · How different manifestations can belong to unrestricted reality
+Stage 13 review: The final reply to the second objection is compressed in the supplied Arabic. The English conveys its contrast between levels, but its detailed syntax remains to be verified against the print or another witness.
 
-**MSH-036** · [Arabic source](https://archive.org/details/machra3-khosous/page/n48/mode/1up)
+## MSH-036 · Printed p. 48 · How different manifestations can belong to unrestricted reality
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n48/mode/1up
+
+Speaker: al-Mahāʾimī (argument, with occasional cited authorities)
+
+### Arabic · passage 1
 
 الثالثة : المطلق قابل للمتقابل ، فيحتاج إلى معدات خارجية عنه ؛ إذ لو استفاد استعداد القبول لها من نفسه ، لزم الاختلاف الذاتي في حقيقته . قلنا : يجوز أن يستعد بنفسه لشيء وبواسطة لآخر فلا يلزم الاختلاف ، على أن المعدات صفات خارجة عنه . الرابعة : لو وجب لاتحد ، وهو محل الصفات ، فيكون البسيط قابلا لشيء وفاعلا له معا ، وقد أبطل في الحكمة . قلنا : إنما يمتنع من جهة واحدة ، ولا يقدح تعددها في بساطته إذا كانت إحداهما عدمية ، كالتعين الذي هو إضافي مع كون المقبول عدميا أيضا ، فيجوز أن يقبل بتعينه ويفعل بحقيقته أو بالعكس ، على أن العدمي يجوز أن يفعل ويقبل من جهة واحدة ، كاقتضاء وصف شيء للاتصاف بكونه وصفا له وقبوله إياه .
 
-### English
+### English · passage 1
 
-**Third objection:** Unrestricted existence is supposed to receive opposites. It would then need preparatory conditions external to itself, for if its receptivity for them came entirely from itself, there would be an intrinsic opposition in its very reality. **Reply:** It may be disposed for one thing through itself and for another through a mediating factor without an intrinsic opposition; besides, these preparatory conditions are attributes distinct from it. **Fourth:** If necessary, it must be one, yet it is the locus of attributes; a simple reality would consequently be both recipient and agent in relation to the same item, which the philosophers reject. **Reply:** That is impossible only when the two roles are asserted under one and the same aspect. Distinct aspects do not impair simplicity if one of the aspects is privative, such as a determination constituted by relation, and the object received is likewise privative. It may therefore receive through its determination and act through its reality, or conversely. Indeed, a privative item may in a certain manner both act and receive under one aspect, as when a thing's being an attribute of something grounds its being qualified as that attribute.
+**Third objection:** Unrestricted existence is supposed to receive opposites. It would then need preparatory conditions external to itself, for if its receptivity for them came entirely from itself, there would be an intrinsic difference in its very reality. **Reply:** It may be disposed for one thing through itself and for another through a mediating factor without an intrinsic difference; besides, these preparatory conditions are attributes distinct from it. **Fourth:** If necessary, it must be one, yet it is the locus of attributes; a simple reality would consequently be both recipient and agent in relation to the same item, which the philosophers reject. **Reply:** That is impossible only when the two roles are asserted under one and the same aspect. Distinct aspects do not impair simplicity if one of the aspects is privative, such as a determination constituted by relation, and the object received is likewise privative. It may therefore receive through its determination and act through its reality, or conversely. Indeed, a privative item may in a certain manner both act and receive under one aspect, as when an attribute of something entails its being qualified as that thing’s attribute and receives that qualification.
 
-### Arabic
+### Arabic · passage 2
 
 الخامسة : لو كان الواجب المطلق كان علة للأشياء ؛ لكن الواحد من حيث هو كذلك لا يوجب الشيء وما ينافيه ، فلا بدّ لكل شيء من علة أخرى ، فيتوارد العلل على المعلول الشخصي ، بخلاف ما لو كان الخاص إذ يجوز أن يتقيد بوصف يوجب شيئا ومعه آخر . قلنا : يجوز أن يعرضه أحوال لا يتقيد بها ، ويكون مع حال علة لشيء ومع أخرى لأخرى . السادسة : لو وجب المطلق كان واحدا ، ولا شك أنه مشترك بين الحوادث ، فهو إمّا عينها أو متصف بها أو صفة لها ، والكل ظاهر الاستحالة .
 
-### English
+### English · passage 2
 
-**Fifth:** If the Necessary were unrestricted, it would cause all things. But what is one simply as one cannot produce both something and what contradicts it. Each thing would thus require another cause, bringing multiple causes to bear upon the same particular effect. Were the Necessary a particular reality instead, it could be characterised by an attribute producing one thing and another attribute producing a different thing. **Reply:** It is possible for different states to arise in relation to unrestricted existence without restricting it: together with one state it causes one thing, and together with another it causes something else. **Sixth:** If the unrestricted were necessary, it would be one; yet it is confessedly shared among temporal things. It would therefore either be identical with them, qualified by them, or an attribute of them—all manifestly impossible.
+**Fifth:** If the Necessary were unrestricted, it would cause all things. But what is one simply as one cannot produce both something and what contradicts it. Each thing would thus require another cause, bringing multiple causes to bear upon the same particular effect. Were the Necessary a particular reality instead, it could be qualified by an attribute that entails one thing and, in conjunction with something further, another. **Reply:** It is possible for different states to arise in relation to unrestricted existence without restricting it: together with one state it causes one thing, and together with another it causes something else. **Sixth:** If the unrestricted were necessary, it would be one; yet it is confessedly shared among temporal things. It would therefore either be identical with them, qualified by them, or an attribute of them—all manifestly impossible.
 
-### Arabic
+### Arabic · passage 3
 
 قلنا : اشتراكه بينها ظهور في ماهيتها من غير اتصاله بها وانفصاله عنها ؛ لأنها معدومة في ذواتها ، تنورت به واتصفت بنسب عقلية بينها وبينه ، والممتنع اتصافه بالحوادث الموجودة النسب أمور عدمية - سيّما إذا كان أحد طرفيها عدميا ، فهو محض الوجود لا يمازجه سواه ولا كثرة فيه بوجه من الوجوه ، بل هي في هيأة تنورت به ، فهو الكل من حيث أن الكل لا شيء بدونه وليس كمثله شيء وهو السميع البصير . السابعة : إنه من عوارض الواجب ، فلا يكون نفسه لوجوه : الأول : لو لم يزد فإما داخل فيرتكب الواجب ، وإما عين ؛ فإما أن لا يشترك وقد أبطل ، أو يشترك فتجرده صفة عارضة ، فعلتها إما ذات الوجود ، فالممكن مقارن أو غيرها ، فيحتاج إلى منفصل ، وأيضا
 
-### English
+### English · passage 3
 
-**Reply:** Its being shared among them means its appearing within their quiddities, without being joined to them or separated from them. For in themselves they are nonexistent; they become illuminated through it and are characterised by intelligible relations between themselves and it. The impossible claim would be that unrestricted existence is qualified by temporal existents [as independent positive realities]. Relations are privative matters, particularly when one of the two terms is itself privative. It remains pure existence, unmixed with anything, with no plurality in any respect. Rather things are like forms illuminated by it. It is ‘all’ in the sense that the all would be nothing without it, while “Nothing is like unto Him; He is the All-Hearing, the All-Seeing” (Q 42:11). **Seventh:** Existence is an accident of the Necessary and cannot be the Necessary itself, for several reasons. First: if it is not additional, it is either included [as a constituent], making the Necessary composite, or identical. In the second alternative, if it is not shared [the previous demonstrations are contradicted]; if shared, the divine disengagement from other things is an accidental attribute, caused either by the essence of existence, in which case possibles would accompany it, or by something else, in which case it needs an extrinsic principle. Furthermore ...
+**Reply:** Its being shared among them means its appearing within their quiddities, without being joined to them or separated from them. For in themselves they are nonexistent; they become illuminated through it and are characterised by intelligible relations between themselves and it. The impossible claim would be that unrestricted existence is qualified by temporal existents [as independent positive realities]. Relations are privative matters, particularly when one of the two terms is itself privative. It remains pure existence, unmixed with anything, with no plurality in any respect. Rather, plurality lies in a configuration illuminated by it. It is ‘all’ in the sense that the all would be nothing without it, while “Nothing is like unto Him; He is the All-Hearing, the All-Seeing” (Q 42:11). **Seventh:** Existence is an accident of the Necessary and cannot be the Necessary itself, for several reasons. First: if it is not additional, it is either included [as a constituent], making the Necessary composite, or identical. In the second alternative, if it is not shared [the previous demonstrations are contradicted]; if shared, the divine disengagement from other things is an accidental attribute, caused either by the essence of existence, in which case possibles would accompany it, or by something else, in which case it needs an extrinsic principle. Furthermore ...
 
 ### Editorial note
 
 The claim about relations as privative is central, but the visible syntax «اتصافه بالحوادث الموجودة النسب أمور عدمية» is broken and requires checking before a definitive rendering. **Online page:** https://ablibrary.net/book_content/b/9637/48?lang=ar
 
-## Printed p. 49 · Closing objections and transition to Qūnawī
+## MSH-037 · Printed p. 49 · Closing objections and transition to Qūnawī
 
-**MSH-037** · [Arabic source](https://archive.org/details/machra3-khosous/page/n49/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n49/mode/1up
 
-### Arabic
+Speaker: al-Mahāʾimī (argument, with occasional cited authorities)
+
+### Arabic · passage 1
 
 إن اقتضى التجرد انتقض بالممكن ، أو لا تجرد خالف الغرض ، أو لم يقتض شيئا ، فكل علة منفصلة . لا يقال التجرد عدمي فيكون عدم العلة ؛ لأنا نقول : عدم مضاف فيحتاج إلى عدم علة المقارنة ، وهي غير الواجب فيحتاج إلى الغير . قلنا : اشتراكه بمعنى تعلق الصفات المتعددة به واعتبارها معه بحيث تظهره في الأجناس والأنواع والأشخاص ، ولا تعدد فيه فلا اشتراك في ذاته ، وأيضا علة تجرد الذات بشرط عدم اتصافه لها ، على أنا نختار أنه لا يقتضي شيئا ؛ لكن باطنيته يقتضي التجرد وظاهريته التعلق ، فلا يحتاج إلى الغير ؛ لأنه عين الظاهر والباطن ، ولا نسلم التجرد العدمي يحتاج إلى عدم العلة ؛ لأن الاحتياج إلى عدم العلة أمر ثبوتي ، فلا يثبت بما لا ثبوت له ، فإن سلم فالعدم المضاف من الوجود ، فلا تغاير نفس الوجود حتى يحتاج إلى غير ، على أن المحتاج حينئذ يكون نفس التجرد لا الذات المجردة .
 
-### English
+### English · passage 1
 
-... if the essence entails detachment, this is contradicted by possibles; if it entails no detachment, it violates the hypothesis; and if it entails neither, every cause must be extrinsic. One cannot answer that detachment is privative and therefore requires only the absence of a cause, for an absence relative to something would presuppose the absence of the cause of conjunction; that cause would differ from the Necessary, bringing back dependence upon another. **Reply:** Sharing here means that multiple attributes are related to existence and considered together with it, so that it manifests through genera, species and individuals. There is no multiplication within existence itself, and therefore no intrinsic participation of several separate realities. Moreover, the condition of the Essence's disengagement is that it is not qualified by those attributes. We may indeed say that its essence entails neither [the disputed restriction nor its negation] while its inwardness entails disengagement and its outwardness entails relation. It has no need of another because it is itself the Inward and the Outward. We deny that a privative detachment needs an absence of a cause: needing the absence of a cause would be a positive relation, not established by something wholly without actuality. Even if conceded, relative nonexistence derives from existence, not from a distinct existence that would introduce need of another; besides, the supposed dependence would belong to detachment itself, not the Essence that is disengaged.
+... if the essence entails detachment, this is contradicted by possibles; if it entails no detachment, it violates the hypothesis; and if it entails neither, every cause must be extrinsic. One cannot answer that detachment is privative and therefore requires only the absence of a cause, for an absence relative to something would presuppose the absence of the cause of conjunction; that cause would differ from the Necessary, bringing back dependence upon another. **Reply:** Sharing here means that multiple attributes are related to existence and considered together with it, so that it manifests through genera, species and individuals. There is no multiplication within existence itself, and therefore no intrinsic participation of several separate realities. Moreover, [on the present construal] the cause of disengagement is the Essence, on condition that it is not qualified by those attributes. We may indeed say that its essence entails neither [the disputed restriction nor its negation] while its inwardness entails disengagement and its outwardness entails relation. It has no need of another because it is itself the Inward and the Outward. We deny that a privative detachment needs an absence of a cause: needing the absence of a cause would be a positive relation, not established by something wholly without actuality. Even if conceded, relative nonexistence pertains to existence and so is not other than existence itself in a way that would require another; besides, the supposed dependence would belong to detachment itself, not the Essence that is disengaged.
 
-### Arabic
+### Arabic · passage 2
 
 الثاني : لو كان المطلق هو مبدأ للممكنات ، فالمبدأ إما الوجود ، فكل موجود مبدأ لكل شيء حتى لنفسه وعلله لمشاركة الكل في الوجود ، أو مع التجرد ، فالعدم من مبدأ الوجود ، فينسد باب إثبات الصانع ؛ لجواز أن يكون المؤثر وجود ممكن أو المجموع منه ومن العدمي ، لا يقال التجرد شرط التأثير ؛ لأنا نقول : فكل وجود مبدأ للكل - وإن تخلف عنه الأثر لفقد شرطه . قلنا : نختار الأول مع أن الوجود واحد ، فلا يكون الكل مبدأ للكل حتى لنفسه وعلله ، وعلته أن التجرد شرط والمحظور إنما يلزم لو أثر ؛ لكن وجود الشرط في الممكنات محال ، فجاز أن يستلزم فرض وقوعه محال الآخر .
 
-### English
+### English · passage 2
 
 **Second argument of the seventh objection:** If the unrestricted were the origin of possibles, either existence alone is the source—then every existent, sharing in existence, would be the origin of everything, even itself and its causes—or the source is existence together with disengagement. In that case a privation would be included in the first principle of actuality, and the proof of a Creator would collapse, since a possible existence, or its conjunction with a privative condition, might be the agent. Nor can one simply say that disengagement is a condition of efficacy: every existence would remain a universal source, even if its effects failed to follow for want of the condition. **Reply:** We accept the first alternative in the sense that existence is one, not that every thing is independently the source of every other thing or of itself. Disengagement is the relevant condition. The alleged absurdity would follow only if a possible being exercised that independent efficacy; but the condition's obtaining in possible things is impossible, and it is no surprise that supposing something impossible should yield a further impossibility.
 
-### Arabic
+### Arabic · passage 3
 
 الثالث : الوجوب نسبة تقتضي طرفين . قلنا : يكفي التغاير الاعتباري كمن يعلم نفسه . الرابع : الوجود طبيعة نوعية ، فلا تختلف لوازمه . قلنا : مبني على التعدد ، ويجوز باعتبار صفات أخرى معها ، هاهنا شبهات آخر تأتي كلها في مواضعها إن شاء اللّه تعالى ، والآن أوان الشروع في المقاصد واللّه الموفق والمعين على الشدائد . * * *
 
-### English
+### English · passage 3
 
 **Third:** Necessity is a relation requiring two terms. **Reply:** A distinction through conceptual consideration is sufficient, as in the case of someone knowing himself. **Fourth:** Existence is a specific nature, whose necessary properties cannot differ. **Reply:** This presupposes a multiplicity of instances; differences can instead arise when existence is considered with other attributes. There are additional difficulties to be discussed in their proper places, God willing. Now it is time to begin the principal aims. God alone grants success and assistance in hardship.
 
@@ -1328,95 +1410,103 @@ The claim about relations as privative is central, but the visible syntax «ات
 
 This closes the three preliminary chapters; the Qūnawī commentary proper begins with the proem on p.50. **Online page:** https://ablibrary.net/book_content/b/9637/49?lang=ar
 
-## Printed p. 50 · Qūnawī’s invocation: praise, the divine Name, and the signs within its letters
+Stage 13 review: The clause علة تجرد الذات بشرط عدم اتصافه لها is construed as making the Essence the cause of disengagement on the stated condition. Its compressed syntax remains uncertain; this construal has not been verified against a page image.
 
-**MSH-038** · [Arabic source](https://archive.org/details/machra3-khosous/page/n50/mode/1up)
+## MSH-038 · Printed p. 50 · Qūnawī’s invocation: praise, the divine Name, and the signs within its letters
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n50/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 أوان الشروع في المقاصد قال الشيخ رضي اللّه عنه وأرضاه : [ الحمد للّه الذي أبان سبحانه وتعالى بمستقرات الهمم مراتب علم اليقين وعدمه وعينه وحقه ودرجاته ] .
 
-### English
+### English · passage 1
 
 **[Qūnawī, opening lemma]** “Praise belongs to God, who—exalted and glorified is He—has made manifest, through the resting-places of spiritual aspirations, the ranks of knowledge of certainty, its absence, its eye, and its reality, together with their degrees.” [The sequence «وعدمه» is transmitted as “and its absence”; its relation to the surrounding enumeration is suspect and requires a second witness.]
 
-### Arabic
+### Arabic · passage 2
 
 قوله : « الحمد للّه » : الحمد تعظيم الذات بما فيها من محاسن صفات ، واللّه علم لذات الواجب من حيث يرتبط وجود العالم بها ، وعلم الذات المطلقة هو الهاء ، لأنها كناية عن الغائب ، فلها شكل الإحاطة في الخط العربي ، وابتدائها من وسط الصدر ، فتمر على جميع المخارج من جميع الجهات ، فتحيط بخواص سائر الحروف إحاطة غيب الذات بمراتب التعينات ، لكن لا رسم لها من حيث الإطلاق لتنزهها عن كل حكم وتجردها عن كل اسم ورسم ، بل من حيث النسبة الإطلاقية ، وإنما استحق لفظة اللّه للموصوفية ؛ لأن لها أحدية جمع جميع الصفات الألوهية من الحياة والعلم والقدرة والإرادة والكلام والسمع والبصر ، بخلاف سائر الأسماء ؛ لأنها لا تدل إلا على مفهوم مخصوص .
 
-### English
+### English · passage 2
 
 **[Al-Mahāʾimī’s explanation]** On “Praise belongs to God”: praise consists in magnifying an essence by reason of the beautiful qualities it possesses. *Allāh* is a proper name for the Essence of the Necessary Existent insofar as the existence of the world is connected with it. The sign for the unrestricted Essence is the letter *hāʾ*, since it is a pronoun pointing to what is absent. In Arabic writing its form encloses, and its articulation begins from deep within the chest before traversing the various points of articulation; hence it encompasses the distinctive properties of the other letters, just as the unseen of the Essence encompasses the degrees of determinations. Yet no written form belongs to that Essence insofar as it is unrestricted, transcending every judgement and every name and representation; this symbolism concerns it only under the relation of unrestrictedness. The word *Allāh* deserves to be qualified by attributes because it unites in comprehensive oneness all the divine attributes—life, knowledge, power, will, speech, hearing and sight—whereas other Names indicate particular meanings.
 
-### Arabic
+### Arabic · passage 3
 
 والهمزة فيه إشارة إلى التعين الأول ، والألف الخفيفة المختفية إلى اختفاء النفس المتعينة به ، واللام الأولى للملك ، والثانية للملكوت .
 
-### English
+### English · passage 3
 
 The hamza in the Name alludes to the first determination; the concealed, faint *alif* to the hiddenness of the breath or self determined through it [the reading *nafs* requires verification]; the first *lām* to the domain of dominion (*mulk*), and the second to the invisible kingdom (*malakūt*).
 
-### Arabic
+### Arabic · passage 4
 
 والإدغام إلى إدراج الملكوت الباطن في الملك الظاهر ، وانفصال الألف عنها إلى انقطاع المناسبة بين المطلق والمتقيد من حيث الإطلاق والتقيد من حيث ، والألف الظاهرة بعدهما لفظا لا خطا إلى دون المتجلي في نفسها ، وإحاطتها على جميع الأعيان النفسية حتى ارتبط الإله بالمألوه ، والهاء إلى الغيب الذاتي ، والحركات الإعرابية إلى النعوت والأحكام ، ولام التعريف في « الحمد » للاستغراق ، وفي « للّه » للاختصاص ، فيخص جميع أقسامه ، وهي أربعة : حمد الحق نفسه بتعظيم الذات بكمال إطلاقه على النسب والتعينات ، وتعظيم تعينه الأول بأنه متبع الكمالات ، وتعظيمه بإحاطة علمه بجميع المعلومات ، وحقائقه المؤثرة الوجوبية ، ووجود الظاهر بانبساطه على الكائنات .
 
-### English
+### English · passage 4
 
-Assimilation of the letters signifies the inclusion of the inward kingdom within outward dominion. The separation of the *alif* indicates the severance of commensurability between the unrestricted and the restricted precisely under their respective aspects of unrestrictedness and restriction [the transmitted syntax breaks off]. The *alif* audible but unwritten after them points to [an obscure relation between] the self-discloser, its own level, and the encompassing of individual entities, by which the divine is related to what receives divinity. The *hāʾ* signifies the essential unseen and the inflectional vowels the qualifications and judgements. The definite article in *al-ḥamd* denotes totality, while the prefixed *lām* in *li-llāh* denotes exclusive belonging: all kinds of praise belong to Him. These are four: the Real's praise of Himself through magnifying the Essence as perfectly unrestricted beyond relations and determinations; His magnification of the first determination as gathering perfections; His magnification through His knowledge encompassing all objects of knowledge and the necessary effective realities; and the praise involved in manifest existence's expansion through generated things. [The enumeration is compressed and requires verification of the printed text.]
+Assimilation of the letters signifies the inclusion of the inward kingdom within outward dominion. The separation of the *alif* indicates the severance of commensurability between the unrestricted and the restricted precisely under their respective aspects of unrestrictedness and restriction [the transmitted syntax breaks off]. The *alif* audible but unwritten after them points to [an obscure relation between] the self-discloser, its own level, and the encompassing of individual entities, by which the divine is related to what receives divinity. The *hāʾ* signifies the essential unseen and the inflectional vowels the qualifications and judgements. The definite article in *al-ḥamd* denotes totality, while the prefixed *lām* in *li-llāh* denotes exclusive belonging: all kinds of praise belong to Him. These kinds are four. [The first is] the Real’s praise of Himself: magnifying the Essence for its complete unrestrictedness beyond relations and determinations; magnifying His first determination as [the transmitted متبع الكمالات is uncertain]; magnifying Him through His knowledge encompassing all objects of knowledge and the necessary effective realities; and [magnifying] manifest existence through its expansion over created things. [This describes the first kind; the remaining kinds follow below.]
 
-### Arabic
+### Arabic · passage 5
 
 وحمد الحق للخلق بأنهم ملابس نوره ، وحمد الخلق بامتيازه بالوجوب الذاتي ، فمنه حمد عالم المعاني أي الأعيان الثابتة بأنها شؤونه المعنوية وتعينات الأسماء الإلهية ، وحمد عالم الأرواح بالتنزيه والوحدة والنّورية ، وحمد عالم المثال بأنها أجساد التجليات وقوالب الأرواح والمعاني ، وحمد عالم الأجسام من حيث حقائقها ومعانيها وبجلالتها الروحانية ، وحمد عالم الإنسان بتنزيههم عن النقائص ونعته بما هو عليه من الكمالات على الوجه
 
-### English
+### English · passage 5
 
-There is also the Real's praise of creatures, since they are vestments of His light, and creatures' praise of Him, since He is distinguished by intrinsic necessity. This includes praise by the world of meanings—that is, the fixed entities—as His intelligible affairs and determinations of the divine Names; praise by the world of spirits through transcendence, unity and luminosity; praise by the imaginal world as the bodies of self-disclosures and the moulds of spirits and meanings; praise by the bodily world through its realities and meanings and their spiritual splendour; and praise by the human world, which declares Him free from defects and describes Him with the perfections that truly belong to Him, in the most ... [sentence continues on p.51].
+[The second is] the Real’s praise of creatures, since they are vestments of His light; [the third is] creatures’ praise of Him, since He is distinguished by intrinsic necessity. This includes praise by the world of meanings—that is, the fixed entities—as His intelligible affairs and determinations of the divine Names; praise by the world of spirits through transcendence, unity and luminosity; praise by the imaginal world as the bodies of self-disclosures and the moulds of spirits and meanings; praise by the bodily world through its realities and meanings and their spiritual splendour; and praise by the human world, which declares Him free from defects and describes Him with the perfections that truly belong to Him, in the most ... [sentence continues on p.51].
 
 ### Editorial note
 
 The received lemma has «وعدمه» (“and its absence”), anomalous alongside ʿilm/ʿayn/ḥaqq al-yaqīn. Preserve it without emendation. The fourth paragraph contains severe syntactic damage. All bracketed lemmas are Qūnawī, not al-Mahāʾimī. Arabic p.50 ends mid-sentence; no material from p.51 silently moved backwards. **Online page:** https://ablibrary.net/book_content/b/9637/50?lang=ar
 
-## Printed p. 51 · Comprehensive praise and the methods of certainty
+Stage 13 review: The four kinds of praise run across pp.50–51; the descriptions of the Essence, first determination, knowledge and manifest existence are subdivisions of the first kind, the Real’s praise of Himself. The supplied wording متبع الكمالات is retained as uncertain, not silently read as a different word.
 
-**MSH-039** · [Arabic source](https://archive.org/details/machra3-khosous/page/n51/mode/1up)
+## MSH-039 · Printed p. 51 · Comprehensive praise and the methods of certainty
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n51/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 الأكمل ، وحمد الخلق تعظيم المثني عليه لفضائل خصيصة به ، وهو مشرب لكمال حمد الحق نفسه من حيث أنه باعتبار الوجود الظاهر بالكل وفي الكل عين الكل ، والحمد المحيط بهذه المحامد والمسمى حمد الحمد ، وهو القائم بالحق ، والإنسان الكامل يعظم الحق ؛ إما بأحدية جمع جميع المعاني من حيث ظهور هذا الإنسان الكائن الكامل بالصورة الإلهية ، وإما بحسب تفصيله ؛ فإن كان حقيقة من حقائقه - أعني الروح ، والقلب ، والنفس ، والجسم ، وسائر النعوت والأحكام منه - تعرف الحق من حيث الاسم الذي يستند إليه بلسان الذات والمرتبة والاستعداد وأحدية الجمع بما لا يتناهى من المحامد منه .
 
-### English
+### English · passage 1
 
-... perfect manner. Creaturely praise means magnifying the one praised on account of virtues special to Him; it is a share in the perfection of the Real's praise of Himself, insofar as manifest existence, appearing through all and in all, is identical with the all under that consideration. There is a praise comprehending all these praises, called the “praise of praise,” which subsists through the Real. The Perfect Human magnifies the Real either in the oneness gathering all meanings, because this complete human appears in the divine form, or in respect of his differentiated constitution. Each of his realities—spirit, heart, soul, body and all the corresponding qualities and judgements—recognises the Real through the divine Name upon which it depends, speaking in the language of its own reality, rank, preparedness and comprehensive oneness, with inexhaustibly many expressions of praise.
+... perfect manner. [The fourth kind,] creatures’ praise, means magnifying the one praised on account of virtues particular to that one; it is a share in the perfection of the Real's praise of Himself, insofar as manifest existence, appearing through all and in all, is identical with the all under that consideration. There is a praise comprehending all these praises, called the “praise of praise,” which subsists through the Real. The Perfect Human magnifies the Real either in the oneness gathering all meanings, because this complete human appears in the divine form, or in respect of his differentiated constitution. Each of his realities—spirit, heart, soul, body and all the corresponding qualities and judgements—recognises the Real through the divine Name upon which it depends, speaking in the language of its own reality, rank, preparedness and comprehensive oneness, with inexhaustibly many expressions of praise.
 
-### Arabic
+### Arabic · passage 2
 
 [ الذي أبان سبحانه وتعالى بمستقرات الهمم مراتب علم اليقين وعدمه وعينه وحقه ودرجاته ] . شرحه : ( أبان ) جعل الشيء ضروريا ، وهذا يتوقف على المقدمة ، هي أن الطالبين لحقائق الأشياء أربع طوائف : حكماء إشراقيون يطلبونها على سبيل الكشف والعيان ، لا على قاعدة الإسلام ، ومشائيون يطلبونها بالحدّ والبرهان كذلك ، ومتكلمون يطلبونها بهما على قاعدة الإسلام ، وصوفية يطلبونها بالكشف والعيان كذلك .
 
-### English
+### English · passage 2
 
 **[Qūnawī, repeated lemma]** “He made manifest through the resting-places of aspirations the ranks and degrees of the knowledge, eye and reality of certainty [and the transmitted anomalous ‘absence’].” **[Commentary]** Here *abāna*, “made manifest,” means making something immediately and necessarily known. To explain this, one must first distinguish four groups seeking the realities of things: Illuminationist philosophers, who seek them through unveiling and direct vision but not on the rule of Islam; Peripatetic philosophers, who seek them by definitions and demonstrations on that same footing; theologians, who seek them through those rational methods while following the rule of Islam; and Sufis, who seek them by unveiling and direct vision while following that rule.
 
-### Arabic
+### Arabic · passage 3
 
 والمراد بالكشف حصول العقيدة الجازمة بتجريد النفس عن العلائق الجسدانية والصفات الذميمة ، والتوجه إلى اللّه تعالى بالكلية وبقاعدة الإسلام موافقة الكتب السماوية والأخبار النبوية من غير تحمل تأويل لها بلا ضرورة .
 
-### English
+### English · passage 3
 
 Unveiling here means acquiring firm, certain conviction through freeing the soul from bodily attachments and blameworthy qualities and directing oneself wholly towards God. Following the rule of Islam means conformity with revealed books and prophetic reports, without forcing upon them interpretations that are not required.
 
-### Arabic
+### Arabic · passage 4
 
 قيل : يحتاج إلى معونة النظر ؛ ليتميز الحاصل بالإلهام عن إلقاء الشيطان وحديث النفس على أنه غير مقدور للبشر ، والتصفية تتوقف على مجاهدات قلّما يفيء بها المزاج والطمأنينة ؛ إنما هي بالنظر إذا لم يصر الحاصل عند التصفية ضروريا ؛ لأنه حصل بحال يلزم من زواله زوال شيء من المعلوم ، فهو مرتب عليه ؛ إذ لا معنى للنظري غير ذلك ، وإن لم يلزم فلا عبرة به كالتقليد به ، مع أنها توجد للمبطلين فلا بدّ من فارق . قلنا : التمييز بموافقة الكتاب والسنة وإجماع الأمة ، وبهذا خرج ما يوجد للمبطلين .
 
-### English
+### English · passage 4
 
-**Objection:** Discursive reasoning must assist inspiration in order to distinguish it from satanic suggestion and the soul's internal speech. Inspiration is not subject to human control, and purification requires disciplines to which temperament and tranquillity rarely conform. If the outcome of purification is not immediately necessary knowledge, then it depends upon a state whose loss entails losing some of the knowledge; in this sense it is inferential. If no such dependency is found, the result may be no more reliable than unexamined imitation, and people holding false doctrines also experience such convictions; a discriminator is indispensable. **Reply:** The discriminator is agreement with the Book, Sunna and consensus of the community. It thereby excludes the experience of those holding false doctrines.
+**Objection:** Discursive reasoning must assist inspiration in order to distinguish it from satanic suggestion and the soul's internal speech. Inspiration is not subject to human control, and purification requires struggles to which the bodily constitution rarely proves equal. Assurance is attained only through discursive reasoning. If the outcome of purification is not immediately necessary knowledge, then it depends upon a state whose loss entails losing some of the knowledge; in this sense it is inferential. If no such dependency is found, the result may be no more reliable than unexamined imitation, and people holding false doctrines also experience such convictions; a discriminator is indispensable. **Reply:** The discriminator is agreement with the Book, Sunna and consensus of the community. It thereby excludes the experience of those holding false doctrines.
 
-### Arabic
+### Arabic · passage 5
 
 والإلهام - وإن كان غير مقدور - لكنه حاصل بوعده تعالى : وَالَّذِينَ جاهَدُوا فِينا لَنَهْدِيَنَّهُمْ سُبُلَنا [ العنكبوت : 69 ] ، والتصفية لا تخلّ بالمزاج لو كانت على قاعدة المحققين ، بل تزيد اعتدالا ، على أنه يحتاج إليها في النظر أيضا لرفع الشكوك والشبهات
 
-### English
+### English · passage 5
 
 Even if inspiration is not subject to human power, it is promised by God: “Those who strive in Us, We shall surely guide them to Our ways” (Q 29:69). When purification follows the practice of genuine investigators it does not damage a person's constitution but rather makes it more balanced; moreover, even discursive examination requires purification to remove the doubts and perplexities ... [continued p.52].
 
@@ -1424,39 +1514,43 @@ Even if inspiration is not subject to human power, it is promised by God: “Tho
 
 The section distinguishes a claimed source of knowledge (kashf) from its normative testing (scripture and communal consensus). The categorical claims about philosophers and theologians are the author’s own fourfold taxonomy, not an editorial conclusion. Qūnawī’s repeated opening lemma remains separately labelled. **Online page:** https://ablibrary.net/book_content/b/9637/51?lang=ar
 
-## Printed p. 52 · The case for inspiration and its compatibility with rational examination
+Stage 13 review: The fourth praise item is introduced simply as حمد الخلق in the supplied text; its object is not explicitly given. The revised English therefore leaves “the one praised” general instead of silently identifying that object as God.
 
-**MSH-040** · [Arabic source](https://archive.org/details/machra3-khosous/page/n52/mode/1up)
+## MSH-040 · Printed p. 52 · The case for inspiration and its compatibility with rational examination
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n52/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 التي فيه ، والعبرة إنما هي بالحاصل للضروري - وإن كان نظريا قبله ، ولا ينازع في صيرورة النظري ضروريا من يعتد به ، على أن معونة النظر لا تضرنا فكيف بالإلهام ، وقد وعد عز وجل على المجاهدة فيه وما يترتب عليه بوعده عز وجل ، كيف يكون باطلا ؟ وقد قال اللّه تعالى : يا أَيُّهَا الَّذِينَ آمَنُوا إِنْ تَتَّقُوا اللَّهَ يَجْعَلْ لَكُمْ فُرْقاناً [ الأنفال : 29 ] .
 
-### English
+### English · passage 1
 
 ... which arise within it. The criterion is what the knower has actually attained as immediate certainty, even when it previously required discursive investigation. No serious investigator disputes that inferential knowledge may become immediately evident. Nor does the assistance of discursive reasoning undermine our position; how much less can one dismiss inspiration, whose consequences God has promised to those who struggle in His cause? How could it be false when He says, “O believers, if you are mindful of God, He will grant you a criterion for distinction” (Q 8:29)?
 
-### Arabic
+### Arabic · passage 2
 
 قالوا : نورا يفرق به بين الحق والباطل ، وهو المشار إليه بقوله عزّ وجلّ : أَ فَمَنْ شَرَحَ اللَّهُ صَدْرَهُ لِلْإِسْلامِ فَهُوَ عَلى نُورٍ مِنْ رَبِّهِ [ الزمر : 22 ] . وقال اللّه تعالى : إِنَّ فِي ذلِكَ لَآياتٍ لِلْمُتَوَسِّمِينَ [ الحجر : 75 ] . وقال اللّه تعالى : قَدْ بَيَّنَّا الْآياتِ لِقَوْمٍ يُوقِنُونَ [ الجاثية : 4 ] . وقال اللّه تعالى : وَما خَلَقَ اللَّهُ فِي السَّماواتِ وَالْأَرْضِ لَآياتٍ لِقَوْمٍ يَتَّقُونَ [ يونس : 6 ] .
 
-### English
+### English · passage 2
 
-They explain this criterion as a light by which truth is distinguished from falsehood. The same is indicated by “Is one whose breast God has opened to Islam not upon a light from his Lord?” (Q 39:22); “In that are signs for those who discern” (Q 15:75); “We have made clear the signs for people who have certainty” (the cited wording is not fully aligned with Q 45:4, and requires verification); and the statement concerning signs in what God has created in the heavens and earth for people who are mindful of Him (Q 10:6).
+They explain this criterion as a light by which truth is distinguished from falsehood. The same is indicated by “Is one whose breast God has opened to Islam, so that he is upon a light from his Lord ...?” (Q 39:22); “In that are signs for those who discern” (Q 15:75); “We have made clear the signs for people who have certainty” (Q 2:118; the source gives Q 45:4); and the statement concerning signs in what God has created in the heavens and earth for people who are mindful of Him (Q 10:6).
 
-### Arabic
+### Arabic · passage 3
 
 وقال : هذا بَيانٌ لِلنَّاسِ وَهُدىً وَمَوْعِظَةٌ لِلْمُتَّقِينَ [ آل عمران : 138 ] ، وقال اللّه تعالى : وَمَنْ يَتَّقِ اللَّهَ يَجْعَلْ لَهُ مَخْرَجاً * وَيَرْزُقْهُ مِنْ حَيْثُ لا يَحْتَسِبُ [ الطلاق : 2 ، 3 ] . قالوا : يجعل له مخرجا من الشبه والإشكالات ، وعلمه علما من غير تعلم ، ويفطنه من غير تجربة . وقال صلى اللّه عليه وسلم : « من عمل بما علم ورثه اللّه علم ما لم يعلم ، ووفقه فيما يعمل حتى يستوجب دخول الجنة ، ومن لم يعمل بما علم نسّاه ما يعلم ولم يوفق فيما يعمل حتى يستوجب النار » .
 
-### English
+### English · passage 3
 
 He also cites, “This is an exposition for humankind, guidance and an admonition to the mindful” (Q 3:138), and “Whoever is mindful of God, He will appoint for him a way out and provide for him from where he did not reckon” (Q 65:2–3). These verses are interpreted as promising an escape from doubts and difficulties, a knowledge not obtained by study, and insight not obtained by trial. A prophetic report is then cited: “Whoever acts according to what he knows, God causes him to inherit knowledge of what he did not know and gives him success in acting until he merits entry to Paradise; whoever fails to act upon his knowledge is made to forget what he knew and fails to act until he merits the Fire.” [This translation records the attribution in the source, not an independent authentication of the report.]
 
-### Arabic
+### Arabic · passage 4
 
 وقال : « إن من أمتي محدثين ومكلمين وإن عمر منهم » . وقال صلى اللّه عليه وسلم : « اتقوا فراسة المؤمن فإنه ينظر بنور اللّه » . وما يدل على اعتبار النظر لا ينافيه ، فإن كلا الطريقين حسن عند المحققين ؛ لكن
 
-### English
+### English · passage 4
 
 Another report is cited: “Among my community are people who receive inner address and are spoken to, and ʿUmar is one of them.” He also cites: “Be mindful of the believer's discernment, for he looks by the light of God.” Evidence validating discursive reasoning does not contradict such inspiration: both paths are sound according to those who investigate thoroughly. However ... [continued p.53].
 
@@ -1464,39 +1558,43 @@ Another report is cited: “Among my community are people who receive inner addr
 
 Publisher’s modern footnotes on hadith sources are excluded from the Arabic author layer; independent isnād analysis remains undone. The Q 45:4 quotation looks mismatched to its citation and is explicitly flagged. **Online page:** https://ablibrary.net/book_content/b/9637/52?lang=ar
 
-## Printed p. 53 · Why method requires purification; what spiritual aspiration means
+Stage 13 review: Reference correction: قد بينا الآيات لقوم يوقنون is Qurʾān 2:118, verified against the Arabic verse at https://quran.com/2/118 on 11 November 2026. The source’s [الجاثية: 4] remains unchanged in the Arabic transcription; the English reference identifies the actual verse.
 
-**MSH-041** · [Arabic source](https://archive.org/details/machra3-khosous/page/n53/mode/1up)
+## MSH-041 · Printed p. 53 · Why method requires purification; what spiritual aspiration means
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n53/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 من اعتقد أنه لا اعتبار بالتزكية والتجلية والتصفية في طريق التعليم والنظر ؛ ارتكب متن الهوى والهوس ، واستولت عليه الرذائل ، وحرمت عليه الفضائل ، واستقل بقراءة كتب مقلدي الفلاسفة وزبر المتكلمين من أصحاب الجدل والمنازعة ، وضيع عمره في الخيالات الفاسدة والأوهام الباطلة عند تلاطم الشكوك والشبهات المغرقة ، فاضمحل نور قلبه وعميت بصيرته بتراكم كدورات المظلمة والعقائد الفاسدة ، فازداد فيه الجهل والتردد ، وحصل له البهت والتحير ، ولا يدرى أين يذهب فلحق به من الحق الغضب .
 
-### English
+### English · passage 1
 
 Anyone who holds that moral training, illumination and purification have no relevance to instruction and rational study has entered into the very substance of passion and fantasy. Vices dominate him and virtues are denied him; he relies solely on books by imitators of the philosophers and polemical theologians, squanders his life in corrupt imaginings and empty suppositions amid overwhelming doubts, and the light of his heart fades as his inward sight is blinded by accumulating darkness and false beliefs. Ignorance and irresolution increase, leaving him bewildered, without knowing where to turn, and exposed to divine displeasure.
 
-### Arabic
+### Arabic · passage 2
 
 قوله : ( أبان . . . الهمم ) : والهمة من هم إذا اندفع في القصد واختلفوا في معناها . قال صاحب المنازل : « ما تملك الانبعاث للمقصود صرفا لا يتمالك صاحبها » ، ولا يلتفت عنها ، أي لا يقدر صاحبها ولا يستطيع أن يصبر عنه عن الليث والمهل والصبر عنه ؛ ( لانقهاره ) تحت سلطان الهمة ولا يمكنه الالتفات عن مقتضاها . وقال الشيخ المحقق محيي الدين رضي اللّه عنه في اصطلاحاته : إن الخاطر إذا تحقّق في النفس سموّه إرادة ، فإذا تردّد في الثالثة سموه همة ، وفي الرابعة سموه عزما .
 
-### English
+### English · passage 2
 
 On Qūnawī's phrase “He made manifest ... through aspirations”: *himma* comes from *hamma*, an impulse toward an intention, but authorities differ over its technical sense. The author of the *Manāzil* defines it as a movement of the soul wholly possessed by its object, such that its possessor cannot restrain or turn away from it. He lacks the power to hold back or wait, being overcome by the force of aspiration. Ibn ʿArabī, in his technical vocabulary, states that when a passing thought becomes established in the soul it is called will (*irāda*); when it returns a third time it is called aspiration (*himma*), and a fourth time resolve (*ʿazm*). [The details of this numerical sequence are left as the received text and await independent comparison.]
 
-### Arabic
+### Arabic · passage 3
 
 وعند التوجّه إلى الفعل إن كان خاطر الفعل ، سموه قصدا ومع الشروع في الفعل ، سموه سعيا . وقيل : الباعث النفساني في الطلب للكمال ، فمنهم من يهمّ بالمهمّات الدنياوية ، ومنهم من همته الكمالات الأخروية ، ومنهم من يتعلق همهم باللّه ، وفي اللّه وفيما عند اللّه والتفاضل بينهم ؛ إنما هو بحسب الحظوظ من اللّه بمقتضى علو متعلقات همهم من الكف والشهود والمراتب كالنبوة والولاية والخلافة . قيل : هم مجموع في حضرة اسم إلهي يقتضي الأثر المراد بحيث لا يتردد منها إلى غيرها ، فيؤثر ذلك الاسم فيما يراد بشرط جمع الهمم .
 
-### English
+### English · passage 3
 
-When one turns toward action the passing impulse to act is called intention (*qaṣd*), and the commencement of action is striving (*saʿy*). Another view defines aspiration as the psychic impetus that seeks perfection. Some direct their ambition toward worldly matters, others toward the perfections of the next life, while others direct their aspiration to God, in God, or to what is with God. Their difference in degree reflects their shares from God and the sublimity of aspiration's objects, including unveiling, witnessing, and ranks such as prophecy, sainthood and vicegerency. Yet another definition is a single-minded gathering in the presence of a divine Name that calls forth the intended effect without wavering toward another, so that the Name effects what is sought on condition of concentrated aspirations.
+When one turns toward action the passing impulse to act is called intention (*qaṣd*), and the commencement of action is striving (*saʿy*). Another view defines aspiration as the psychic impetus that seeks perfection. Some direct their ambition toward worldly matters, others toward the perfections of the next life, while others direct their aspiration to God, in God, or to what is with God. Their difference in degree reflects their shares from God and the sublimity of aspiration's objects, including [unveiling?; the transmitted word is الكف], witnessing, and ranks such as prophecy, sainthood and vicegerency. Yet another definition is a single-minded gathering in the presence of a divine Name that calls forth the intended effect without wavering toward another, so that the Name effects what is sought on condition of concentrated aspirations.
 
-### Arabic
+### Arabic · passage 4
 
 والأول هنا أوفق لكن له أقسام : في البدايات عقد الهمة بالطاعة والوفاء بعهد التوبة ، وفي الأبواب تعلق القلب بالنعيم الباقي ، وصرف الرغبة عن الفاني والجد في الطلب من غير توان . وفي المعاملات همة باعثة على الاستقامة في العمل ، مع دوام المراقبة وقوة الثقة باللّه في التوكل والتسليم ، وفي الأخلاق صرف الهمة بالكلية إلى إحراز السعادات والكمالات ، وفي الأصول همة تجذب صاحبها إلى جانب الحق بقوة اليقين
 
-### English
+### English · passage 4
 
 The first definition best suits the present discussion, but it has several divisions. In the beginnings, aspiration is bound to obedience and fidelity to repentance; in the gateways, the heart attaches itself to abiding bliss, turns from what perishes, and pursues its goal without slackening. In transactions or practices, it impels upright action, sustained vigilance and firm trust in God through reliance and surrender. In ethical formation it devotes itself entirely to attaining felicity and perfection; among the foundations, aspiration draws its possessor toward the Real through the power of certainty ... [continued p.54].
 
@@ -1504,31 +1602,33 @@ The first definition best suits the present discussion, but it has several divis
 
 Names and quotations from the Manāzil and Ibn ʿArabī are attributed as quotations, not automatically adopted as definitions valid at every station. The source includes a modern editor’s bibliographical footnote, excluded here. **Online page:** https://ablibrary.net/book_content/b/9637/53?lang=ar
 
-## Printed p. 54 · Aspiration, inward repose and certainty
+## MSH-042 · Printed p. 54 · Aspiration, inward repose and certainty
 
-**MSH-042** · [Arabic source](https://archive.org/details/machra3-khosous/page/n54/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n54/mode/1up
 
-### Arabic
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 وروح الأنس مانعة عن الفتور في السير والزيغ في القصد ، وفي الأودية التوجه إلى الحق بالكلية مع الأنفة من المبالاة بحظوظ النفس من الأعراض والأعواض والوسائط كالعمل والأمل والوثوق به . وفي الأحوال صيرورة الهموم همّا واحدا باستيلاء سلطان العشق ، وفي الولايات همة تعلو الصفات ، وتنمو عن النعوت نحو الذات ، وفي النهايات لا همة إلا لتأثير بمؤثرية الحق في جميع الممكنات ، والمراد هنا ما ذكر في الأودية وما بعدها .
 
-### English
+### English · passage 1
 
-... and by the spirit of intimacy which prevents weariness on the journey and deviation of intention. In the valleys, aspiration is the total turning to the Real, with a disdain for reliance upon the soul's own gains, compensations and mediating means—works, hope, and trust in such things. In the spiritual states, many concerns become a single concern through the sovereignty of love. In the realms of sainthood, aspiration rises above attributes and passes beyond descriptive features towards the Essence. At the endings, aspiration concerns only the efficacy of the Real's agency throughout all possible things. What is intended here is aspiration at the level of the valleys and what lies above them.
+... and by the spirit of intimacy which prevents weariness on the journey and deviation of intention. In the valleys, aspiration is the total turning to the Real, with a disdain for reliance upon the soul's own gains, compensations and mediating means—works, hope, and trust in such things. In the spiritual states, many concerns become a single concern through the sovereignty of love. In the realms of sainthood, aspiration rises above attributes and passes beyond descriptive features towards the Essence. At the endings, there is no aspiration except to act effectively through the Real’s own efficacy throughout all possible things. What is intended here is aspiration at the level of the valleys and what lies above them.
 
-### Arabic
+### Arabic · passage 2
 
 والحد عليها أطبق ، والهمة إنما يقال على ما قبلها مجازا ، سيّما فيما قبل الانفلاق ، ويجوز أن يقال المراد بالهمة ها هنا هو القسم الثالث من القول الأخير ، وأما المعنى الثاني والرابع فيختصان بالتأثير في الغي ، والمراد باستقرارها طمأنينة القلوب التي هي فيها ، باعتبار صفاتها بنور الإيمان ومطابقة ما حصل منها للكتاب والسنة ، وذلك لطمأنينة النفس بذكر اللّه تعالى ، بحيث ينقطع عنها الوسواس والهواجس فتمكن نور الذكر فيها أَلا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ [ الرعد : 28 ] ؛ وذلك لأنه تعالى واجب الوجود فليس وراءه شيء ، وهو نور محض لا يبقى معه ظلمة والتوجه التام يقوى جهة الحقيقة الحقيّة إلى أن يقهرها كالقطعة من الحديدة المجاورة للنار ، يحصل منها ما يحصل من النار ؛ وذلك لا يمكن إلا بالمحبة الكامنة في العبد ، وظهورها لا يكون إلا بالاجتناب عما بضادها وهو التقوى ، فتنبهك الذي أبان سبحانه وتعالى بمستقرات الهمم مراتب علم اليقين وعينه وحقه ،
 
-### English
+### English · passage 2
 
-The definition is most strictly appropriate to these higher ranks; its application to earlier stages is analogical, particularly before the decisive opening. It is also possible that ‘aspiration’ here refers to the third type in the last definition. The second and fourth meanings [in the enumeration] concern efficacy in a different manner [the source is unclear]. Its *resting* means the tranquillity of the hearts in which these aspirations are found, as the hearts are qualified by the light of faith and by conformity of their attainments to the Book and the Sunna. This repose comes through remembrance of God, which puts an end to intrusive imaginings, allowing the light of remembrance to become established: “Surely, in the remembrance of God do hearts find rest” (Q 13:28). He is the Necessary Existent, beyond whom there is nothing; He is pure Light before which no darkness remains. Complete turning strengthens the person's participation in the aspect of the Real until it overcomes the person, just as a piece of iron adjoining fire takes on the fire's effects. This is possible only through the love latent in the servant, which emerges only by avoiding its opposites—that is, by Godfearingness. Thus He has disclosed through the resting places of aspiration the ranks of the knowledge, eye, and reality of certainty.
+The definition is most strictly appropriate to these higher ranks; its application to earlier stages is analogical, particularly before the decisive opening. It is also possible that ‘aspiration’ here refers to the third type in the last definition. The second and fourth meanings [in the enumeration] concern exerting an effect [the transmitted phrase في الغي is unclear]. Its *resting* means the tranquillity of the hearts in which these aspirations are found, as the hearts are qualified by the light of faith and by conformity of their attainments to the Book and the Sunna. This repose comes through remembrance of God, which puts an end to intrusive imaginings, allowing the light of remembrance to become established: “Surely, in the remembrance of God do hearts find rest” (Q 13:28). He is the Necessary Existent, beyond whom there is nothing; He is pure Light before which no darkness remains. Complete turning strengthens the person's participation in the aspect of the Real until it overcomes the person, just as a piece of iron adjoining fire takes on the fire's effects. This is possible only through the love latent in the servant, which emerges only by avoiding its opposites—that is, by Godfearingness. Thus He has disclosed through the resting places of aspiration the ranks of the knowledge, eye, and reality of certainty.
 
-### Arabic
+### Arabic · passage 3
 
 فاليقين على ما ذكره الشيخ محيي الدين في رسالة « اليقين » ، مقام بين العلم والطمأنينة من يقن الماء في الحفرة إذا استقر فيها أو من اليقين المعقود التي في الرجل تمسك به السفينة ؛ لأنه عبارة عن استقرار العلم في القلب بحيث لا يزول مهما نقل من محل الموقف ، وانتفى عنه انتفى الإيمان وأعقبه الشك ، والشك نوع من الشرك أو تعطيل ؛ ولهذا لما قيل في إبراهيم ما قيل حتى قيل له أو لم تؤمن قال نبينا محمد صلى اللّه عليه وسلم : « نحن أولى بالشك من إبراهيم » « 1 » ، وأثبت فيه اليقين . فمعلوم أن اليقين كان عنده والطمأنينة كانت مطلوبة له ، وهي التي تعطيها العين ؛
 
-### English
+### English · passage 3
 
 According to Shaykh Muḥyī al-Dīn in his *Epistle on Certainty*, certainty is a station between knowledge and tranquillity. Its etymology is connected with water settling in a hollow, or with the fastening by which a vessel is secured. Certainty is knowledge established in the heart so firmly that it does not disappear even as the knower moves from one position to another. If it disappears, faith is lost and doubt succeeds it; doubt is a species of associationism or denial. When something of that kind was suggested about Abraham, and he was asked “Have you not believed?”, our Prophet said, “We have more right to doubt than Abraham,” [thereby] affirming Abraham's certainty. It is evident that Abraham already had certainty; what he sought was tranquillity, which is granted by direct seeing ...
 
@@ -1536,79 +1636,85 @@ According to Shaykh Muḥyī al-Dīn in his *Epistle on Certainty*, certainty is
 
 The analogies of fire and iron do not by themselves establish identity or indwelling. The lexical derivations and the quotation attributed to Ibn ʿArabī require checking against his treatise. **Online page:** https://ablibrary.net/book_content/b/9637/54?lang=ar
 
-## Printed p. 55 · Different definitions of the three certainties
+## MSH-043 · Printed p. 55 · Different definitions of the three certainties
 
-**MSH-043** · [Arabic source](https://archive.org/details/machra3-khosous/page/n55/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n55/mode/1up
 
-### Arabic
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 ولذلك قال : وَلكِنْ لِيَطْمَئِنَّ قَلْبِي [ البقرة : 260 ] ، والشكوك أمراض زائدة على اليقين ، فجاز أن يطلب . ثم قال : والعلم لا بدّ أن يستند إلى اليقين ، رفع العلم والطمأنينة حياته ، واختلفوا في العلم اليقين وعينه وحقه .
 
-### English
+### English · passage 1
 
 For this reason he said, “But so that my heart may be at rest” (Q 2:260). Doubts are afflictions superadded to certainty, and it is therefore legitimate to seek reassurance. He also said that knowledge must rest upon certainty; [the clause regarding knowledge and repose is corrupt]. Authorities have differed in defining the knowledge, eye and reality of certainty.
 
-### Arabic
+### Arabic · passage 2
 
 وقال في الاصطلاح : علم اليقين ما أعطاه الدليل ، وعينه ما أعطاه المشاهدة ، وحقه ما حصل من العلم بما أراه ذلك الشهود ، ويقرب منه قول العارف علم اليقين ما كان من طريق النظر والاستدلال وعين اليقين ، ما كان بطريق الكشوف والنوال وحق اليقين ، ما كان بتحقيق وانفصال عن لوث الصلصال لورود رائد الوصال .
 
-### English
+### English · passage 2
 
-In the technical definitions it is said: the *knowledge of certainty* (*ʿilm al-yaqīn*) is what demonstration yields; its *eye* (*ʿayn al-yaqīn*) is what witnessing yields; its *reality* (*ḥaqq al-yaqīn*) is what is obtained from knowing the reality made visible through that witnessing. A similar definition says: knowledge of certainty arises through examination and inference; the eye of certainty through unveiling and the reception of a gift; and the reality of certainty through realization, separation from the contamination of clay, and the arrival of the herald of union.
+In the technical definitions it is said: the *knowledge of certainty* (*ʿilm al-yaqīn*) is what demonstration yields; its *eye* (*ʿayn al-yaqīn*) is what witnessing yields; its *reality* (*ḥaqq al-yaqīn*) is what is obtained from knowing the reality made visible through that witnessing. A similar definition says: knowledge of certainty arises through examination and inference; the eye of certainty through unveiling and the reception of a gift; and the reality of certainty through realization and separation from the contamination of clay upon the arrival of the herald of union.
 
-### Arabic
+### Arabic · passage 3
 
 وقال صاحب المنازل : علم اليقين قبول ما ظهر من الحق ، وقبول ما غاب للحق والوقوف على ما قام بالحق ، وعين اليقين هو المعنى بالاستدراك عن الاستدلال ، وعن الخبر بالعيان ، وخرق الشهود حجاب العلم ، وحق اليقين أسفار صبح الكشف ، ثم الخلاص من كلفة اليقين ، ثم الفناء في الحق اليقين . وفي العوارف قال فارس : حق اليقين هو حقيقة ما يشير إليه علم اليقين ، وعين اليقين ما يتحقق العبد بذلك وهو يشاهد العيون . العيون كما يشاهد المرائي مشاهدة عيان ، ويحكم على الغيب فيخبر عنه بالصدق .
 
-### English
+### English · passage 3
 
-The author of the *Manāzil* says: knowledge of certainty consists in accepting what has become manifest of the Real, accepting what is unseen on the Real's authority, and standing by what is upheld through the Real. The eye of certainty involves passing beyond inference to direct apprehension, beyond report to sight, and piercing the veil of discursive knowledge through witnessing. The reality of certainty is the dawn breaking upon unveiling, then release from the effort of certainty, and finally extinction in the Truly Certain Real. In the *ʿAwārif* al-Fārisī says that the reality of certainty is what the knowledge of certainty points towards, while the eye of certainty is the servant's realization of it as he witnesses the entities with direct vision, as one sees things in a mirror, and is able to speak truthfully of the unseen.
+The author of the *Manāzil* says: knowledge of certainty consists in accepting what has become manifest of the Real, accepting what is unseen on the Real's authority, and standing by what is upheld through the Real. The eye of certainty involves passing beyond inference to direct apprehension, beyond report to sight, and piercing the veil of discursive knowledge through witnessing. The reality of certainty is the dawn breaking upon unveiling, then release from the effort of certainty, and finally extinction in the Truly Certain Real. In the *ʿAwārif*, Fāris says that the reality of certainty is what the knowledge of certainty points towards, while the eye of certainty is the servant's realization of it as he witnesses the entities with direct vision, just as one beholds visible things directly, and is able to speak truthfully of the unseen.
 
-### Arabic
+### Arabic · passage 4
 
 وقال بعضهم : علم اليقين حال المعرفة ، وعين اليقين حال الجمع ، وحق اليقين جمع الجمع بلسان التوحيد . وقيل : اليقين اسم ورسم وعلم وعين وحق ، فالاسم والرسم للعوام ، وعلم اليقين للأولياء ، وعين اليقين لخواص الأولياء ، وحق اليقين للأنبياء ، وحقيقة حق اليقين اختص به نبينا صلى اللّه عليه وسلم . والأول أقرب لما نحن فيه ، وأما مراتب علم اليقين ، فهي أنه قد يوجد الأدلة النظرية بعد طول المباحثة والمناقشة ، وقد يوجد بأدنى سعى ، وقد يوجد منها بالأدلة الظاهرة الوجدانية ، وقد يوجد بالمقبولات من كلام محققي المشايخ ويتفاوت بتفاوتهم ، أو من ألفاظ الكتاب والسنة ، بخلاف المأخوذ من علماء الظاهر ، فإنه تقليد لا علم .
 
-### English
+### English · passage 4
 
-Another says: knowledge of certainty is the state of gnosis; the eye of certainty is the state of gathering (*jamʿ*); and the reality of certainty is the gathering of gathering expressed in the language of unity. Yet another counts five things—name, description, knowledge, eye, and reality. Name and description pertain to the common people, knowledge of certainty to the saints, its eye to the elect among the saints, its reality to the prophets, and the innermost reality of certainty to our Prophet alone, peace be upon him. The first definition is closest to the present discussion. The ranks of the knowledge of certainty vary: it may arise from theoretical demonstrations after extensive disputation or from a little effort, from obvious inward evidences, from accepted teachings of realized spiritual masters in varying degrees, or from the words of the Book and the Sunna. Knowledge received merely from outward scholars, by contrast, is imitation rather than direct knowledge.
+Another says: knowledge of certainty is the state of gnosis; the eye of certainty is the state of gathering (*jamʿ*); and the reality of certainty is the gathering of gathering expressed in the language of unity. Yet another counts five things—name, description, knowledge, eye, and reality. Name and description pertain to the common people, knowledge of certainty to the saints, its eye to the elect among the saints, its reality to the prophets, and the reality of the reality of certainty (*ḥaqīqat ḥaqq al-yaqīn*) to our Prophet alone, peace be upon him. The first definition is closest to the present discussion. The ranks of the knowledge of certainty vary: it may arise from theoretical demonstrations after extensive disputation or from a little effort, from obvious inward evidences, from accepted teachings of realized spiritual masters in varying degrees, or from the words of the Book and the Sunna. Knowledge received merely from outward scholars, by contrast, is imitation rather than direct knowledge.
 
 ### Editorial note
 
 The claimed hierarchy of knowers is a reported alternative, not an assertion that every tradition makes identical epistemic divisions. **Online page:** https://ablibrary.net/book_content/b/9637/55?lang=ar
 
-## Printed p. 56 · The three certainties across ontological and cognitive levels
+Stage 13 review: Source comparison, not an adopted emendation: the online text of al-Suhrawardī’s ʿAwārif al-maʿārif, chapter 62 (https://ibnalarabi.com/books/awarif.php?id=65; consulted 11 November 2026), attributes the first definition to Fāris, but introduces the subsequent realization/witnessing sentence under al-Junayd. It reads الغيوب / المرئيات at the place where this commentary’s transcription has العيون / المرائي, and has حال التفرقة where the next pair here reads حال المعرفة. These differences require checking the printed witnesses and quotation boundaries; the commentary’s Arabic and its stated attributions have not been silently replaced. The comparison supports removing the inherited English’s unsupported mirror imagery.
 
-**MSH-044** · [Arabic source](https://archive.org/details/machra3-khosous/page/n56/mode/1up)
+## MSH-044 · Printed p. 56 · The three certainties across ontological and cognitive levels
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n56/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 وأما مراتب عين اليقين فهي : أن يؤخذ من عالم المثال « 1 » ، أو من الأرواح الأرضية ، أو السماوية ، أو من العقول والنفوس العالية ، أو من العلم الأزلي الإلهي . وأما مراتب حق اليقين : فإنه يتحقق بأفعال الحق أو بصفاته ، أو يفنى في ذاته ، أو يبقى بها .
 
-### English
+### English · passage 1
 
 As for the ranks of the eye of certainty, it may be received from the imaginal world, from terrestrial or celestial spirits, from the higher intellects and souls, or from divine eternal knowledge. As for the ranks of the reality of certainty, a person may realize it through the acts of the Real, through His attributes, through extinction in His Essence, or through abiding by it.
 
-### Arabic
+### Arabic · passage 2
 
 وأما درجات علم اليقين فهي : أنه قد يكون بلا سكينة ولا طمأنينة ، وقد يكون معهما أو مع أحدهما ، وقد يكون بأدلة ، فلها شبهات ضعيفة لا تؤثر ؛ لكن يتحير في التفحص عنها عند البحث لضيق مجال العبارة ، وقد يكون بأدلة لا مدخل للشبهة فيها ، وقد يكون بدليل واحد ، وقد يكون بأدلة متعاضدة ، وقد يستدل عليه بالبرهان الآني فقط ، وقد يستدل عليه باللّمي معه .
 
-### English
+### English · passage 2
 
 The degrees of the knowledge of certainty likewise vary. It may lack both stillness and tranquillity, possess both, or possess one without the other. It may be established by proofs to which weak objections can still be raised without undermining the conclusion—though the knower becomes perplexed when trying to respond to them because language is inadequate. Or it may rest on proofs admitting no such objection, on a single demonstration, or on several mutually reinforcing demonstrations. One may know only by a demonstration *that* something is so (*burhān innī*) or also by a demonstration *why* it is so (*burhān limmī*).
 
-### Arabic
+### Arabic · passage 3
 
 وأما درجات عين اليقين ، فهي أنه قد يكون بلا سكينة ولا طمأنينة وقد يكون معهما بالمكاشفة ، وقد يكون بالمشاهدة ، وقد يكون بالمعاينة ، فالمكاشفة شهود الأعيان وما فيها من الأحوال في عين الحق ، فهو التحقيق الصحيح بمطالعة تجليات الإلهية والمشاهدة ، ولآية الأسماء الإلهية والمشاهدة ، ولآية الذات كما أن المكاشفة لآية النعت . فالمشاهدة شهود الذات بارتفاع الحجاب مطلقا . والمعاينة عيان الحق ذاته بذاته بلا شبهة مع عدم اعتبار نقيصة التلوين .
 
-### English
+### English · passage 3
 
-The eye of certainty may also be without stillness or tranquillity, or with both. It may occur by unveiling (*mukāshafa*), witnessing (*mushāhada*), or immediate beholding (*muʿāyana*). Unveiling is the witnessing of entities and their states in the very Reality of the Real; it is genuine realization through contemplating the divine self-disclosures. [The source's additional differentiation between contemplating names, Essence and attributes is grammatically corrupt.] Witnessing is vision of the Essence after the veil has been lifted absolutely. Immediate beholding is seeing the Real, by His very Self, without ambiguity and without taking account of the imperfection of variegation (*talwīn*).
+The eye of certainty may also be without stillness or tranquillity, or with both. It may occur by unveiling (*mukāshafa*), witnessing (*mushāhada*), or immediate beholding (*muʿāyana*). Unveiling is the witnessing of entities and their states in the very Reality of the Real; it is genuine realization through contemplating the divine self-disclosures. [The source's additional differentiation between contemplating names, Essence and attributes is grammatically corrupt.] Witnessing is vision of the Essence after the veil has been lifted absolutely. Immediate beholding is the Real’s beholding His own Essence through His own Essence, without ambiguity and without taking account of the imperfection of variegation (*talwīn*).
 
-### Arabic
+### Arabic · passage 4
 
 وأما درجات حق اليقين فهي : أنه قد يكون بفناء النفس فقط ، أو بفناء القلب معها ، أو بفناء الروح معها مع بقاء السر ، أو مع بقاء الخفي أولا مع شيء منها ، أو بقاء كل شيء من هذه لا بوجودها ، بل بالوجود الحق والنور الفائض منه ، ثم لكل منها درجات لا يسع هذا المختصر ذكرها . قال رضي اللّه عنه : [ وأوضح ، بسكون قلق الطالبين حال الوصول إلى منتهى شأو نفوسهم بتفاوت درجاتهم في منازل معرفته سبحانه في تقريباته ] . الإيضاح : الإخراج من حيز الخفاء إلى الظهور ، كما أن الإبانة : الإخراج من حيز الجهل المفتقر إلى النظر إلى حيز العلم الضروري ، والأول أبلغ ؛ إذ بقي في الضروري نوع خفاء ، لعدم سكون القلق ، والسكون انقطاع الحركة ، والقلق في البدايات تحرك النفس إلى
 
-### English
+### English · passage 4
 
 The reality of certainty may be through the extinction of the soul alone, or the heart along with it, or the spirit along with them while the secret remains, or while the hidden secret remains, or through none of them remaining [the division is insecure], or through the abiding of all these—not by their own existence but by the true Existence and the light overflowing from it. Each of these has further degrees which this brief work cannot enumerate. **Qūnawī says:** “And He made clear, through the cessation of the seekers' agitation upon reaching the utmost reach of their souls, their differing degrees in the abodes of knowledge of Him and in His acts of drawing them near.” To make clear (*īḍāḥ*) is to bring from hiddenness into manifestation, just as to disclose (*ibāna*) is to bring from ignorance requiring investigation into immediate knowledge. The first is more comprehensive, for a kind of hiddenness may remain even in immediate knowledge as long as unrest persists. Repose is the cessation of movement; at the beginnings agitation is the soul's movement towards ...
 
@@ -1616,31 +1722,35 @@ The reality of certainty may be through the extinction of the soul alone, or the
 
 Editorial footnote on *ʿālam al-mithāl* has been excluded from authorial text. The extra sentence in the source on the degrees of witnessing contains errors and must be collated. **Online page:** https://ablibrary.net/book_content/b/9637/56?lang=ar
 
-## Printed p. 57 · Agitation of the seeker, soul and the four journeys
+Stage 13 review: In the definition of muʿāyana, عيان الحق ذاته بذاته makes the Real the beholder and His Essence the object: the revised English preserves that grammar. The intervening distinction of names, Essence and attributes remains explicitly unresolved in the supplied transcription.
 
-**MSH-045** · [Arabic source](https://archive.org/details/machra3-khosous/page/n57/mode/1up)
+## MSH-045 · Printed p. 57 · Agitation of the seeker, soul and the four journeys
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n57/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 طلب الموعود ، والسآمة بما سواه في الوجود ، وفي الأبواب قلق يضيق الخلق ، ويبغض إلى صاحبه الخلق ، ويحبب إليه الموت . وفي المعاملات التوحش عما سوى الحق ، والأنس بالوحدة ، والتخلي عن الخلق . وفي الأخلاق الانخلاع عن البصر والطاقة لما يجد من التوقان إلى الحق والفاقة . وفي الأصول الاضطراب في الفرار إلى المقصود عن كل ما يثبطه في السير إليه أو يقتضى الصدود ، وفي الأودية قلق يغلب العقل ، ويثار والثقل ، وفي الأحوال تحريك الشوق صاحبه بإسقاط صبره ، وفي الولايات قلق يصفي الوقت ، وينقي النعت ، وفي الحقائق قلق ينفى الرسوم والبقايا ، ولا يرضى بالعطايا والصفايا ، وفي النهايات لا يبقى شيئا ولا يذره ، ويفنى كل عين وأثره . والمراد هاهنا ما في الأحوال ، والطالب هو المتوجه السائر إلى الحق بالانقطاع عما سواه ، والوصول البلوغ إلى الغاية وحال هو وقته المنطبق عليه .
 
-### English
+### English · passage 1
 
-... the promised attainment and weariness with all else in existence. At the gateways agitation constricts the created world, makes creatures distasteful to its possessor, and makes death seem desirable. In practical dealings, it is estrangement from all but the Real, intimacy with unity and withdrawal from creatures. At the level of character it is a shedding of perceived powers because of the longing and need one experiences for the Real. At the roots it is restless flight towards the goal from anything that hinders or turns the wayfarer back. In the valleys agitation overcomes discursive intellect and other burdens [reading unclear]; in the states it is longing that moves a person and removes patience. In sainthood it purifies the present moment and clears away attributes. In the realities it abolishes conventional forms and residues and is not satisfied with gifts and chosen privileges; at the endings it leaves nothing untouched and annihilates every entity and trace. The present passage principally concerns what occurs in the spiritual states. The seeker is the one journeying towards the Real through disconnection from everything else. Arrival is reaching the goal, and one's ‘state’ is the condition that coincides with that moment.
+... the promised attainment and weariness with all else in existence. At the gateways agitation constricts one’s disposition, makes creatures distasteful to its possessor, and makes death seem desirable. In practical dealings, it is estrangement from all but the Real, intimacy with unity and withdrawal from creatures. At the level of character it is being stripped of sight [the transmitted البصر is uncertain here] and capacity because of the longing and need one experiences for the Real. At the roots it is restless flight towards the goal from anything that hinders or turns the wayfarer back. In the valleys agitation overcomes discursive intellect and other burdens [reading unclear]; in the states it is longing that moves a person and removes patience. In sainthood it purifies the present moment and clears away attributes. In the realities it abolishes conventional forms and residues and is not satisfied with gifts and chosen privileges; at the endings it leaves nothing untouched and annihilates every entity and trace. The present passage principally concerns what occurs in the spiritual states. The seeker is the one journeying towards the Real through disconnection from everything else. Arrival means reaching the goal; here “at the time” (*ḥāl*) denotes the time coinciding with that arrival.
 
-### Arabic
+### Arabic · passage 2
 
 والشأو البعد ، والنفس هي الجوهر البخاري اللطيف الحامل لقوة الحياة والحس والحركة والإرادة ، وسمّاه الحكيم الروح الحيوانية ، وهي الواسطة بين القلب الذي هو النفس الناطقة وبين البدن ، وهي إما أمارة تميل إلى الطبيعة البدنية ، وتأمر باللذات والشهوات الحسية ، وتجذب القلب إلى الجهة السفلية ، فهي مأوى الشر ، ومنبع الأخلاق الذميمة والأفعال السيئة ، وإما لوامة تنورت بنور القلب تنورا ما بقدر ما نبهت به عن سنة الغفلة ، فتيقظت وبدأت بإصلاح حالها مترددة بين جهة الربوبية والخلقية ، فلما صدرت منه سيئة بحكم جبلتها الظّلمانيّة وسجيّتها تداركها نورا للتنبيه الإلهي ، فأخذت تلوم نفسها وتتوب عنها ، وإما مطمئنة ثم تنورها بنور القلب ، حتى انخلعت عن صفاتها الذميمة ، وتخلقت بالأخلاق الحميدة ، وتوجهت إلى جهة القلب بالكلية متتابعة له إلى جانب عالم القدس ، متنزّهة عن جانب الرجس ،
 
-### English
+### English · passage 2
 
 *Shaʾw* means distance or range. The *nafs* here is the subtle, vapour-like substance bearing the faculties of life, sensation, motion and will; philosophers call it the animal spirit. It mediates between the heart—here the rational soul—and the body. It may be the commanding soul, inclined towards bodily nature, commanding sensory pleasure and desire and drawing the heart downwards; it then becomes the dwelling place of evil and the origin of blameworthy traits and actions. Or it may be the self-reproaching soul, illuminated to some extent by the heart's light and awakened from the sleep of heedlessness. It begins correcting itself, oscillating between lordly and creaturely orientations. When its dark native tendency results in wrongdoing, the light of divine warning overtakes it, so that it reproaches itself and repents. Or it may be the soul at peace, progressively illuminated by the heart, shedding its blameworthy attributes and taking on praiseworthy character. It turns entirely towards the heart and follows it into the holy world, leaving impurity behind.
 
-### Arabic
+### Arabic · passage 3
 
 والوصول إلى منتهى شأوها بانتهاء أسفارها بعد طمأنينتها ونهاية السفر الأول ، أعني إلى اللّه رفع حجب الكثرة عن وجه الوحدة ، ونهاية السفر الثاني ، أعني في اللّه هو رفع حجاب عن وجوه الكثرة العلمية الباطنية ، ونهاية السفر الثالث ، أعني أحديته الذات ، وهو زوال التقيد بالضدين الظاهر والباطن بالحصول في أحدية عين الجمع ، ونهاية السفر الرابع ، أعني عن اللّه إلى الخلق في
 
-### English
+### English · passage 3
 
 The attainment of the furthest range of the soul comes with the completion of its journeys after it finds tranquillity. The end of the first journey, *to God*, is the removal of the veils of multiplicity from the face of unity. The end of the second, *in God*, is the removal of the veils from the aspects of inward, intelligible multiplicity. The end of the third, [towards] the unicity of the Essence, is liberation from the two opposed restrictions, outward and inward, through arrival at the unicity of the very gathering. The end of the fourth journey, *from God to creatures in* ...
 
@@ -1648,39 +1758,41 @@ The attainment of the furthest range of the soul comes with the completion of it
 
 The identification of nafs with a subtle animal spirit is a context-specific psychological usage. The journey-counting and names must be compared with later formulations rather than harmonised silently. **Online page:** https://ablibrary.net/book_content/b/9637/57?lang=ar
 
-## Printed p. 58 · Two senses of gnosis and diverse capacities of knowers
+## MSH-046 · Printed p. 58 · Two senses of gnosis and diverse capacities of knowers
 
-**MSH-046** · [Arabic source](https://archive.org/details/machra3-khosous/page/n58/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n58/mode/1up
 
-### Arabic
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 مقام الاستقامة هو أحدية الجمع والفرق ، بشهود اندراج الحق في الخلق ، واضمحلال الخلق في الحق حتى يرى العين الواحدة في صورة الكثرة ، والصور الكثيرة في عين الوحدة . والمعرفة تقال على معنيين : أحدهما : العلم بأمر باطن ؛ ليستدل عليه بأمر ظاهر ، كما لو سميت شخصا فعلمت باطن أمره بعلامة ظاهرة منه ، كما قيل للنبي صلى اللّه عليه وسلم : فَلَعَرَفْتَهُمْ بِسِيماهُمْ وَلَتَعْرِفَنَّهُمْ فِي لَحْنِ الْقَوْلِ [ محمد : 30 ] .
 
-### English
+### English · passage 1
 
 ... the station of uprightness is the oneness of gathering and differentiation (*jamʿ wa-farq*). It comes through witnessing the inclusion of the Real in creation and the fading of creation in the Real, until the one reality is seen in the forms of multiplicity and the multiple forms in the reality of unity. *Maʿrifa*, gnosis or recognition, is used in two senses. First, knowledge of what is inward inferred from an outward indication—for example, recognising someone's inward character from a visible mark. God says to the Prophet: “You would recognise them by their marks, and you will certainly recognise them through their manner of speech” (Q 47:30).
 
-### Arabic
+### Arabic · passage 2
 
 وثانيهما : العلم بمشهود سبق به عهد ، كما رأيت شخصا رأيته قبل ذلك بمدّة ، فعلمت أنه ذلك المعهود ، فقلت عرفته بعد كذا سنة ، فالمعروف على حسب مراتب الوجود ، وهي ستة : مرتبة الذات الأحدية ، ومرتبة الحضرة الإلهية الواحدية ، ومرتبة المعاني المجردة ، ومرتبة الأرواح ، ومرتبة عالم المثال ، ومرتبة عالم الشهادة ، ومرتبة كون الجامع وهو الإنسان الكامل ، وفي كل واحد منها تفاصيل كثيرة جدّا .
 
-### English
+### English · passage 2
 
 Second, recognition is knowledge of something witnessed which was already familiar: seeing again a person whom one saw long ago and saying, “I recognised him after so many years.” The object recognised is differentiated according to the ranks of existence, which [the source says] are six, but then names: the rank of the unitive Essence (*aḥadiyya*); the rank of the divine Presence of unicity with distinct names (*wāḥidiyya*); the rank of abstract meanings; the rank of spirits; the imaginal world; the witnessed world; and the rank of the all-comprehensive existent, the Perfect Human. Every one of these admits of very many subdivisions.
 
-### Arabic
+### Arabic · passage 3
 
 وأما تفاوت درجات الطالبين فيها ، فهي إن من العارفين من لا طريق له إلى معرفته سوى الاستدلال بفعله على صفته ، وبصفته على اسمه ، وباسمه على ذاته : أُولئِكَ يُنادَوْنَ مِنْ مَكانٍ بَعِيدٍ [ فصلت : 44 ] ، ومنهم من تحمله العناية الأزلية ، فتطرقه إلى حريم الشهود ، فيشهد المعروف تعالى بعد المشاهدة السابقة في معرفة : أَ لَسْتُ بِرَبِّكُمْ [ الأعراف : 172 ] ، ويعرف به أسماءه وصفاته وعكس ما يعرفه العارف الأول ، وبينهما بون بين ، إذ الأول بغيبة معروفة كنائم يرى خيالا غير مطابق للواقع ، والثاني بشهود معروف كمتيقظ يرى مشهودا حقيقيا مطابقا له .
 
-### English
+### English · passage 3
 
 Seekers differ greatly in their degrees of recognition. For some knowers the only way is to infer His attribute from His act, His name from His attribute, and His Essence from His name: “Such people are called from a distant place” (Q 41:44). Others are borne by eternal solicitude into the sanctuary of witnessing. They then witness the One whom they knew through the preceding witnessing signalled by “Am I not your Lord?” (Q 7:172), and know His names and attributes through Him—reversing the first knower's path. The gulf between them is vast. The first knows Him while absent from direct witnessing, rather like a sleeper who sees an image that fails to correspond to reality; the second witnesses Him directly like a waking person who sees something real as it is.
 
-### Arabic
+### Arabic · passage 4
 
 والحق سبحانه واحد في الذات والصفات والأسماء والأفعال ، بمعنى أن كل شيء نسب إليه ذات أو صفة أو اسم أو فعل ، فنسبتها مجازية ؛ لأنها في الحقيقة عكوس أنوار تجليات الذات والصفات الأزلية والأسماء والأفعال الإلهية من مظاهر الكون ، وليس بمظاهرها شيء منها حقيقة كما للمرآة من الصور المتجلية فيها ، فالسمع والبصر من الصفات في أي موصوف كان هو اللّه حقيقة لقوله تعالى : وَهُوَ السَّمِيعُ الْبَصِيرُ [ الشورى : 11 ] ، وإظهار الحق سبحانه وتعالى سر ذاته وصفاته وأفعاله ، ما كان لخفائه عليه قبل ذلك ؛ ولكن ليتجلى باسمه الظاهر آخرا ، كما كان متجليا باسمه الباطن أولا ، ثم
 
-### English
+### English · passage 4
 
 The Real is one in Essence, attributes, names and acts. Whatever essence, attribute, name or act is attributed to other than Him receives such attribution figuratively: in reality these are reflections of the lights of the self-disclosures of the Essence, eternal attributes, divine names and acts in the loci of cosmic manifestation. Nothing of these belongs literally to a locus as the forms reflected in a mirror do not truly belong to the mirror. Hearing and sight, wherever predicated, belong in their reality to God: “He is the All-Hearing, the All-Seeing” (Q 42:11). The Real's making manifest the mystery of His Essence, attributes and acts did not follow upon any previous hiddenness from Himself. It was so that He might subsequently disclose Himself by the name the Outward, just as He had first disclosed Himself by the name the Inward; then ...
 
@@ -1688,23 +1800,25 @@ The Real is one in Essence, attributes, names and acts. Whatever essence, attrib
 
 IMPORTANT: the source expressly says «وهي ستة» (six), but lists seven ranks. Do not emend without examining other witnesses. This is also crucial evidence for different registers of knower and known. **Online page:** https://ablibrary.net/book_content/b/9637/58?lang=ar
 
-## Printed p. 59 · Higher attainment, the person of the Perfect Human, and divine names
+## MSH-047 · Printed p. 59 · Higher attainment, the person of the Perfect Human, and divine names
 
-**MSH-047** · [Arabic source](https://archive.org/details/machra3-khosous/page/n59/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n59/mode/1up
 
-### Arabic
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 إنه تعالى ما ظهر شيء من مظاهر أفعاله إلا وقد احتجب به ؛ وذلك من إتقان صنعه وبليغ حكمته ، ولا يعني بالاسم اللفظ بل هو مدلوله ، وهو الذات الموصوفة ، وهذا معنى قول العلماء : الاسم : المسمى ، وأما تفاوت درجاتهم في تقريباته ، فهو أن العارف قد يتصف بأوصافه على قدر الطاقة البشرية ، وقد يفنى فيها وقد يفنى بها ، وقد يشاهدها وقد يشاهد الذات ، ويفنى فيها ويبقى بها ، ثم إنه قد يكون العارف في مقام التحقق « 1 » ، والفرق بينهما سيجيء ، ثم إنه قد يصير بدلا وقد يصير وتدا ، وقد يصير إماما قطبا ، وقد يصير فردا ، وقد يصير غير ذلك ، وبيان هذه الأشياء لا يتسع لها هذا الموضع ، ويدل على وضوح هذا التفاوت عند الوصول إلى منتهى شأو النفس قوله عليه وعلى أولاده السلام : « من عرف نفسه فقد عرف ربه » « 2 » وذلك ؛ لأن النفس لا تعرف إلا بالوصول إلى منتهى شأوها ومنتهى أسفارها ، فيذهب حينئذ حجبها النورانية والظلمانية ، فتنكشف الحقائق كلها لصيرورتها مرآة كاملة الصفاء في مقابل المبادئ العالية المنتقشة بجميع العلوم والحقائق ، فافهم ترشد إن شاء اللّه تعالى .
 
-### English
+### English · passage 1
 
-Indeed no manifestation of His acts appears without His also becoming veiled through it. This arises from the perfection of His craft and the profundity of His wisdom. By ‘name’ one does not mean a verbal expression but what that expression signifies—the Essence qualified by an attribute. This is the sense in which the scholars say, “The name is the named.” Differences among those brought near Him take several forms. A knower may acquire certain divine attributes within the limits of human capacity; he may be effaced *in* them or *by* them, witness the attributes or witness the Essence, be effaced in them and abide by them. He may occupy the station of realization, whose distinction [from the preceding condition] will be explained later. He may become a *badal*, a *watad*, an imām or pole (*quṭb*), a solitary one (*fard*), or another of the ranks whose details cannot be given here. Their differences at the end of the soul's journey are indicated by the saying attributed to the Prophet, “Whoever knows himself knows his Lord.” The soul is fully known only at the end of its range and its journeys, when its veils of light and darkness disappear and realities become disclosed, for it then becomes a perfectly polished mirror facing the higher principles in which all sciences and realities are inscribed. Reflect and you will receive guidance, God willing.
+Indeed no manifestation of His acts appears without His also becoming veiled through it. This arises from the perfection of His craft and the profundity of His wisdom. By ‘name’ one does not mean a verbal expression but what that expression signifies—the Essence qualified by an attribute. This is the sense in which the scholars say, “The name is the named.” Differences among those brought near Him take several forms. A knower may acquire certain divine attributes within the limits of human capacity; he may be effaced *in* them or *by* them, witness the attributes or witness the Essence, be effaced in it and abide through it. He may occupy the station of realization, whose distinction [from the preceding condition] will be explained later. He may become a *badal*, a *watad*, an imām or pole (*quṭb*), a solitary one (*fard*), or another of the ranks whose details cannot be given here. Their differences at the end of the soul's journey are indicated by the saying attributed to the Prophet, “Whoever knows himself knows his Lord.” The soul is fully known only at the end of its range and its journeys, when its veils of light and darkness disappear and realities become disclosed, for it then becomes a perfectly polished mirror facing the higher principles in which all sciences and realities are inscribed. Reflect and you will receive guidance, God willing.
 
-### Arabic
+### Arabic · passage 2
 
 قال رضي اللّه عنه : [ وميز خاصته من بين الخلق بأن لم يجعل لهم غاية سوى ذاته من جميع عوالمه وحضرات أسمائه وصفاته ] . التمييز : هو النعت الرافع للالتباس والمراد هنا التخصيص ، والخاصة : هم الذين قطعوا المنازل حتى وصلوا إلى اللّه ، فإن لهم سيرا في اللّه وباللّه ومن اللّه ، ودونهم المتوسطون الذين قطعوا أكثر المنازل ، ودونهم المبتدئون الذين لم يقطعوا الأكثر . ويقال للأولين السابقون ، وللمتوسطين المقتصدون ، وللمبتدئين المريدون ، والخلق
 
-### English
+### English · passage 2
 
 **Qūnawī says:** “He distinguished His elect from among creatures by setting no ultimate aim for them other than His Essence, beyond all His worlds and the Presences of His names and attributes.” Distinction (*tamyīz*) is a description removing ambiguity; here it means particular election. The elect are those who have passed through the spiritual abodes until they reached God. They then journey *in God*, *through God*, and *from God*. Beneath them are the intermediate travellers who have crossed most of the abodes, and below these the beginners who have not traversed most of them. The first are called the forerunners; the second, those who follow a middle course; the third, aspirants. The term creation ...
 
@@ -1712,39 +1826,43 @@ Indeed no manifestation of His acts appears without His also becoming veiled thr
 
 The long note explaining realization and seeing God through His names on p59 is an editorial footnote and remains outside the authorial translation. The formula “He who knows himself...” requires separate hadith verification. **Online page:** https://ablibrary.net/book_content/b/9637/59?lang=ar
 
-## Printed p. 60 · The world as manifestation and several non-identical taxonomies of realms and Names
+Related passage IDs: QNW-WIT235
 
-**MSH-048** · [Arabic source](https://archive.org/details/machra3-khosous/page/n60/mode/1up)
+## MSH-048 · Printed p. 60 · The world as manifestation and several non-identical taxonomies of realms and Names
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n60/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 ما ظهر من صور الوجود في الماهيات الممكنة بها الغاية ما تطلب الحركة إليه فتنقطع إليه . والذات هو الأصل الذي به الشيء هو هو ، واختلف في العالم : فقيل : الظل الثاني ، وهو الوجود الظاهر بصور الممكنات ، فلظهوره بتعيناتها يسمى السوي ، والغير باعتبار إضافته إلى الممكنات ، وهي ثابتة على عدميتها ، فالعالم صورته وهو هوية العالم وروحه ، والتعينات أحكام اسم الظاهر الذي هو مجلي الباطن وينقسم إلى عالم الجبروت : عالم الأسماء والصفات الإلهية .
 
-### English
+### English · passage 1
 
 ... creation is the visible form of existence as it appears through possible quiddities. An end is that toward which movement tends and at which it ceases. An essence is the fundamental principle through which a thing is what it is. There are differing descriptions of the *world*. According to one, it is the “second shadow”: existence manifest in the forms of possible things. Because that existence appears in their determinations it is called “what is other” (*siwā*) and “the other” (*ghayr*) when considered in its relation to possibilities, which nevertheless remain established in their own nonexistence. The world is its form, while it is the world's identity and spirit. Determinations are the effects or determinations of the Name the Manifest, through which the Hidden becomes disclosed. In this classification the world is divided into the *jabarūt*, the realm of divine Names and Attributes ...
 
-### Arabic
+### Arabic · passage 2
 
 وعالم الأمر : عالم الأرواح ؛ لأنها وجدت بأمر الحق بلا مادة ومدة ، ويسمى عالم الملكوت والغيب . وعالم الخلق : عالم الأجسام الموجودة بمادة ومدة ، ويسمى عالم الملك والشهادة . وقيل : ما يعلم به الشيء ، فكل موجود عالم أي : والعالم ينقسم إلى عالم غيب وشهادة . وينقسم الغيب إلى محدثات غائبة عن الحس وإلى ملكوت هي الصفات القديمة ، وإلى جبروت هي الذات الأزلية ، والشهادة إلى عالم المثال ، وعالم الأجسام ، وعالم الإنسان . وقيل : اسم لكل موجود ، وينقسم إلى عالم الذات الأحدية .
 
-### English
+### English · passage 2
 
 ... the realm of Command, namely the spirits, which exist by the command of the Real without matter or temporal duration; this is also termed the *malakūt* and the unseen; and the realm of Creation, namely bodies existing with matter and duration, also called *mulk* and the witnessed domain. Another definition takes *ʿālam* as that by which something is known, so that every existent is a world; the world is then divided into the unseen and the witnessed. The unseen is subdivided into originated things hidden from the senses, the *malakūt* identified with eternal attributes, and the *jabarūt* identified with the eternal Essence; the witnessed domain is divided into the imaginal, bodily and human worlds. Yet another account uses “world” as a designation for every existent and divides it into the world of the Essence in its nonnumerical oneness ...
 
-### Arabic
+### Arabic · passage 3
 
 وعالم الإلهية : وهو حضرة الواحد ، وعالم الأرواح المجردة ، وعالم المثال ، وعالم الملكوت وهي القوى الروحانية ، وعالم الملك هو الجسمانيات ، وعالم الكون الجامع وهو الإنسان . والاسم هو الذات مع الصفة . والصفة : هي المعنى القائم بها ، وقد يترادفان وينقسمان باعتبار الأنس والهيبة عند مطالعتها إلى جمالية كما للطيف ، وجلالية كما للقهار ، وعبر عنهما بيديه . وتنقسم الأسماء إلى ذاتية : لا تدل على معان زائدة متعدية على الذات كاللّه والموجود والقديم . ووصفية : تدل على معان زائدة لا تتعدى إلى غير كالحي والعليم والمريد .
 
-### English
+### English · passage 3
 
-... the world of Divinity, the Presence of the One; the world of immaterial spirits; the imaginal world; the *malakūt*, here understood as spiritual powers; the *mulk*, corporeal realities; and the all-comprehensive cosmos, the human being. The divine Name is the Essence together with an attribute, while an attribute is a meaning subsisting in the Essence; the two terms may sometimes be used interchangeably. Considered from the intimacy and awe occasioned by contemplating them, the Names divide into those of beauty (*jamāl*), such as the Gentle, and those of majesty (*jalāl*), such as the Overpowering. These are expressed through the two Hands. In another classification the Names are essential, indicating no additional meaning that passes over to another, as *Allāh*, Existent and Pre-eternal; attributive, indicating an additional meaning that does not pass over to another, as Living, Knowing and Willing ...
+... the world of Divinity, the Presence of the One; the world of immaterial spirits; the imaginal world; the *malakūt*, here understood as spiritual powers; the *mulk*, corporeal realities; and the all-comprehensive cosmos, the human being. The divine Name is the Essence together with an attribute, while an attribute is a meaning subsisting in the Essence; the two terms may sometimes be used interchangeably. Considered from the intimacy and awe occasioned by contemplating them, the Names divide into those of beauty (*jamāl*), such as the Gentle, and those of majesty (*jalāl*), such as the Overpowering. These are expressed through the two Hands. In another classification the Names are essential, indicating no meanings additional to and going beyond the Essence, as *Allāh*, Existent and Pre-eternal; attributive, indicating an additional meaning that does not pass over to another, as Living, Knowing and Willing ...
 
-### Arabic
+### Arabic · passage 4
 
 وفعلية : تدل على معان زائدة متعدية كالخالق والرازق والمصور . وقد يقال الذاتية : ما يستقل بها الذات كالحي العليم المريد القادر السميع البصير
 
-### English
+### English · passage 4
 
 ... or Names of act, indicating additional meanings extending to others, such as Creator, Provider and Shaper. Alternatively, “essential” may denote attributes in which the Essence is sufficient unto itself, such as Living, Knowing, Willing, Powerful, Hearing, Seeing ... [continued p.61].
 
@@ -1752,39 +1870,41 @@ The long note explaining realization and seeing God through His names on p59 is 
 
 The page deliberately supplies *multiple* classifications of the realms: jabarūt, malakūt and ʿālam al-amr do not retain an identical denotation across them. This is evidence for contextual technical meanings, not permission to conflate them. Opening sentence continues p.59 and last sentence p.61. **Online page:** https://ablibrary.net/book_content/b/9637/60?lang=ar
 
-## Printed p. 61 · The primordial Names and the highest object of divine knowledge and aspiration
+## MSH-049 · Printed p. 61 · The primordial Names and the highest object of divine knowledge and aspiration
 
-**MSH-049** · [Arabic source](https://archive.org/details/machra3-khosous/page/n61/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n61/mode/1up
 
-### Arabic
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 المتكلم ، وقيل : الذاتية ما لا يتوقف وجودها على وجود الغي ، وإن توقفت على اعتباره كالعليم ، وتسمى الأسماء الأولية ومفاتيح الغيب وأئمة الأسماء ، ثم الصفات تنقسم إلى ما له الحيطة التامة وإلى ما ليس له ذلك ، فالأول : هو الأئمة السبعة - وإن كان بعضها مشروطا بالبعض ، كالعلم بالحياة والقدرة بهما ، والإرادة بالثلاثة ، والثانية بالأربعة - وهي أصول لكل ما عداها - وإن كان فيها ما يحيط بأكثر الأشياء .
 
-### English
+### English · passage 1
 
 ... Speaking. On another usage, essential Names are those whose existence does not depend on the existence of something else, although their intelligibility may depend upon a consideration of another—such as the Knowing. These are called the first Names, the Keys of the Unseen and the leaders of the Names. Attributes may then be divided into those of complete encompassing scope and those without it. The first are the seven leading attributes, despite relations of conditional priority among them: knowledge presupposes life, power both of those, will the three, and the remaining attributes the four. They are roots of all others, even though some of the others encompass very many things.
 
-### Arabic
+### Arabic · passage 2
 
 وقال الشيخ رضي اللّه عنه : [ بل جعل منتهى مدى هممهم أشرف متعلقات علمه الذاتي وأعلى مراداته ، حتى صار نهاية مرادهم وغاية مرماهم ما يريده بذاته لذاته ، ومن جهة أعلى حيثيات شؤونه الأصلية الأول وأرفع تعيناته ] .
 
-### English
+### English · passage 2
 
 **[Qūnawī, lemma]** “Rather, He made the utmost extent of their aspirations the noblest object of His essential knowledge and the highest objects of His will, until the end of their willing and the furthest target of their aim was what He wills through His Essence for His Essence, under the loftiest aspects of His primordial affairs and His most elevated determinations.”
 
-### Arabic
+### Arabic · passage 3
 
 لما كان العلم الأزلي من حصول نفسه في نفسه لنفسه ، وحصول حقائق كل ما عداه فيه ؛ فله متعلقات ، وأشرف متعلقاته ذاته الجامعة للكل الواجبة بالذات ، ولما كانت الإرادة الأزلية اقتضى ظهور ما في الغيب إلى عالم الشهادة بحسب استعدادات حقائق المظاهر ، كان له مرادات ، وأعلى مراداته ظهور ذاته في المظهر الجامع ، ولما كانت هذه الأمور لا تنال إلا بعلو الهمة جعل منتهى مدى هممهم بحسب علم اليقين أشرف متعلقات علمه الذاتي ، وبحسب عين اليقين أعلى مراداته ، حتى انتهى أمرهم إلى حق اليقين بأن صار مرادهم الأصلي الذي هو غاية مراماتهم بقطع المنازل ما يريده بذاته لذاته ، إنه احتراز بالأول عما يريده بذاته لذاته ، بواسطة هذا المظهر الكامل من مقدماته ومتمماته ، وبالثاني عما يريد له من معرفته مع بقاء نفسه ، ثم فسر ما يريده بذاته لذاته إنه ما يريده من جهة أعلى حيثيات شؤونه الأصلية ، والشؤون الذاتية اعتبار نقوش الحقائق في الذات الأحدية ، وهي الأعيان الثابتة في المرتبة الواحدية ، والحقائق في الأحدية كالشجرة وأغصانها وأوراقها وأزهارها وثمارها في النواة ، وهي التي تظهر وتتفصل في الحضرة الواحدية في العلم ، فالأعيان الثابتة هي حقائق الممكنات في علمه تعالى ، وله عز وجل بحسب هذه الشؤون تجليات في مرتبة الواحدية التي هي صفاته وأسماؤه ، والشؤون منها أصلية هي الشؤون الأول وغير أصلية ، فالأصلية هي القابلة لظهور الحق بذاته بجميع صفاته إجمالا وتفصيلا معا .
 
-### English
+### English · passage 3
 
 **[Al-Mahāʾimī’s exposition]** Eternal knowledge consists in the Real's being present to Himself, in Himself and for Himself, while the realities of everything other than Him are present within His knowledge. It consequently has objects, the noblest being His Essence, necessary through itself and comprehensive of all. Eternal will concerns the disclosure of what lies in the Unseen into the witnessed world according to the preparedness of the realities of manifestation; its highest object is the appearance of the Essence in the comprehensive locus. These things can only be attained through elevated aspiration. Thus, in knowledge of certainty, the limit of their aspiration is the noblest object of essential knowledge; in the eye of certainty, its highest willing; and in the reality of certainty, their original desire becomes that which He wills through Himself for Himself, after they have traversed the stations. Qūnawī's successive restrictions exclude what is willed indirectly through the prerequisites and completions of the Perfect Locus, and what is willed merely for the sake of knowing Him while retaining one's separate self-awareness. The “essential affairs” (*shuʾūn dhātiyya*) are the consideration of the imprints of realities in the Essence under the Presence of *aḥadiyya*; these become the fixed entities at the level of *wāḥidiyya*. The relation is like a tree with branches, leaves, flowers and fruit contained in a seed: the realities subsist undifferentiatedly in *aḥadiyya*, then appear in differentiated form within divine knowledge in *wāḥidiyya*. The fixed entities are the realities of possibilities in God's knowledge. Corresponding to these affairs are self-disclosures at the rank of *wāḥidiyya*, the divine Names and Attributes. Some affairs are primordial, others derivative; the former can receive the Real's appearance through His Essence together with the whole of His Attributes, both comprehensively and distinctly.
 
-### Arabic
+### Arabic · passage 4
 
 وهي وإن كان معقولا لا تدخل في الوجود ، فلها الحكم والأثر في كل ما له وجود
 
-### English
+### English · passage 4
 
 Although this [primordial reality or affair] is intelligible and does not enter into [extramental] existence, it nevertheless has its determination and effect in everything possessing concrete existence ... [continued p.62].
 
@@ -1792,11 +1912,15 @@ Although this [primordial reality or affair] is intelligible and does not enter 
 
 Central ontological distinction: the fixed entities are in divine knowledge, and their realities are *not* asserted to become independently existent just because they have effects. “Essential affairs” in aḥadiyya and “fixed entities” in wāḥidiyya are related but not automatically identical from every perspective. The final «وهي» is grammatically ambiguous. **Online page:** https://ablibrary.net/book_content/b/9637/61?lang=ar
 
-## Printed p. 62 · The first and second determinations; aḥadiyya, wāḥidiyya, and the two kinds of multiplicity
+Related passage IDs: QNW-WIT235
 
-**MSH-050** · [Arabic source](https://archive.org/details/machra3-khosous/page/n62/mode/1up)
+## MSH-050 · Printed p. 62 · The first and second determinations; aḥadiyya, wāḥidiyya, and the two kinds of multiplicity
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n62/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 عيني ، ولهذا مرتبة الأولية من حيث إنها مطلوبة للذات ؛ إذ المعرفة المطلوبة من خلق العالم في قوله : « كنت كنزا مخفيا فأحببت أن أعرف » . لا تحصل إلا من مثل هذا المظهر ، إذ فيه جميع التجليات ، ولا يعرف أحد ما ليس فيه حق المعرفة ، ومن جهة أرفع تعيناته وهو التعين الأول ، وهو يتجلى بذاته على ذاته بصفة الواحدة ، تساوي فيها الظهور والبطون ، وباعتبار قابليته لهما كانت مظهرا للأحدية والواحدية ؛ لأنهما منتسبان ، فلا يظهران إلا بنسبة بينهما هي الواحدة .
 
@@ -1806,7 +1930,7 @@ Central ontological distinction: the fixed entities are in divine knowledge, and
 
 وقد فهم من قول الشيخ رضي اللّه عنه من جهة أعلى حيثيات شؤونه الأصلية وأرفع تعيناته ، أنه لا مطمع إلى ما وراءه لأحد ، وسيصرح في المتن ، فافهم واللّه الملهم .
 
-### English
+### English · passage 1
 
 ... existence. For this reason it has the rank of primacy, insofar as it is sought by the Essence. The kind of knowledge intended by the creation of the world in the reported saying “I was a hidden treasure and loved to be known” is obtained only through a locus such as this, for it includes every self-disclosure; no one fully knows what is absent from his own constitution. The loftiest of the determinations is the first determination, in which the Essence discloses Itself to Itself under the attribute of oneness (*wāḥida*), where manifestation and hiddenness are in equilibrium. Because this determination is receptive to both, it is a locus for *aḥadiyya* and *wāḥidiyya*: the two are related, and their relation is displayed through that intervening unity. [The report “hidden treasure” is cited as a received saying, not verified as a prophetic ḥadīth.]
 
@@ -1820,11 +1944,13 @@ Qūnawī's phrase “under the loftiest aspects of His primordial affairs and Hi
 
 The central philosophical issue is the distinction between the **first taʿayyun** in which essential unity dominates and **second taʿayyun** where distinctions within divine knowledge appear. The report “I was a hidden treasure” requires independent hadith evaluation. The obscure final list is translated provisionally with no invented variants. **Online page:** https://ablibrary.net/book_content/b/9637/62?lang=ar
 
-## Printed p. 63 · Certainty, phenomenal self-effacement, and why divine “pervasion” is not indwelling
+## MSH-051 · Printed p. 63 · Certainty, phenomenal self-effacement, and why divine “pervasion” is not indwelling
 
-**MSH-051** · [Arabic source](https://archive.org/details/machra3-khosous/page/n63/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n63/mode/1up
 
-### Arabic
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 وقال الشيخ رضي اللّه عنه : [ فهو سبحانه عين علمهم اليقيني ، وعينه وحقه في سائر مراتب علمه الذاتي المتعلق به أولا ، ثم بمعلوماته مع استهلاكهم فيه من حيث هم ، وبقاء حكمهم وسرايته في جميع موجوداته وحضراته ] . أي : لما كان منتهى مدى هممهم أشرف متعلقات علمه ، فهو سبحانه عين علمهم اليقيني ، ولما كان منتهى مدى هممهم أعلى مراداته ، فهو سبحانه عين عين يقينهم ، ولما صار مرادهم ما يريده بذاته ، فهو سبحانه عين حق يقينهم .
 
@@ -1834,7 +1960,7 @@ The central philosophical issue is the distinction between the **first taʿayyun
 
 واعلم أن هذه السرايا ليست سراية الحلول ؛ لأنه إما كحلول العرض في الجوهر وسبحانه ليس بعرض لشيء إذ العرض موجود به ، فكيف يكون نفسه أو كحلول الصورة في المادة ، وليس صورة لشيء ؛ لأن الصورة موجودة به والمادة موجودة بها ، فكيف يكون عين شيء منها ، وإما كحلول المتمكن في المكان ، وهو متنزه عن ذلك ؛ لأنه تعالى محيط بالكل ، فكيف يحيط به المكان ، بل سراينه كسراية نور الشمس في الزجاجة ، وليس ينتقل
 
-### English
+### English · passage 1
 
 **Qūnawī says:** “Thus He, exalted is He, is the very reality of their certain knowledge, its eye and its truth throughout the ranks of His essential knowledge, related first to Himself and then to His objects of knowledge, while they are effaced in Him as regards themselves, yet their ruling remains and pervades all His existents and Presences.” **Al-Mahāʾimī explains:** Because the utmost reach of their aspirations is the noblest object of His knowledge, He is the reality of their knowledge of certainty. Because it is the highest object of His will, He is the reality of the eye of their certainty. When what they will coincides with what He wills through His Essence, He is the reality of the reality of their certainty.
 
@@ -1848,11 +1974,15 @@ Know that this pervasion (*sarāyān*) is **not** the pervasion of indwelling (*
 
 DECISIVE PASSAGE: “not under His unrestrictedness”; “not that they become nonexistent as spirit, soul or body”; “not the pervasion of indwelling.” These are separate epistemological and ontological qualifications, not optional ornaments. **Online page:** https://ablibrary.net/book_content/b/9637/63?lang=ar
 
-## Printed p. 64 · Coloured glass, the descent of manifestation, and the status of fixed entities
+Related passage IDs: QNW-WIT235
 
-**MSH-052** · [Arabic source](https://archive.org/details/machra3-khosous/page/n64/mode/1up)
+## MSH-052 · Printed p. 64 · Coloured glass, the descent of manifestation, and the status of fixed entities
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n64/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 منها إلى الزجاج شيء كما يتوهم ، بل يحصل له بمقابلة الشمس ذلك ، فكذلك يتلون هذا النور بلون الزجاج ، ولا لون لنور الشمس وأراد بالسراية في الحضرات ، ظهوره في مرتبة التعين الأول وما بعده من التعلقات الأزلية .
 
@@ -1862,7 +1992,7 @@ DECISIVE PASSAGE: “not under His unrestrictedness”; “not that they become 
 
 لا يقال إذا كان الوجود واجبا ، فكل موجود كذلك ؛ لأنّا نقول بمنع الملازمة ؛ لأنه إنما وجب الوجود لكونه موجودا بالذات ، بخلاف ما وجد بالعرض ، فإن موجوديته من الاعتبارات العقلية ؛ ولهذا قد يعرض الصفات السلبية والعوارض العدمية ، ومن جعل
 
-### English
+### English · passage 1
 
 ... from the sun to the glass, as might be imagined. Rather the effect arises through the glass facing the sun: the light takes on the apparent colour of the glass, although sunlight itself has no colour. By the pervasion of the Presences he means manifestation at the first determination and in the subsequent ranks of eternal relations.
 
@@ -1876,39 +2006,41 @@ One must not argue: if existence is necessary, everything that exists must be ne
 
 The first line closes the p63 solar analogy. Distinguish al-Mahāʾimī’s report of the epistle from his response to an objection; the modern editor’s gloss on huwiyya is excluded. **Online page:** https://ablibrary.net/book_content/b/9637/64?lang=ar
 
-## Printed p. 65 · Manifestation, not creation of existence: a reply to objections
+## MSH-053 · Printed p. 65 · Manifestation, not creation of existence: a reply to objections
 
-**MSH-053** · [Arabic source](https://archive.org/details/machra3-khosous/page/n65/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n65/mode/1up
 
-### Arabic
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 الوجود المطلق من الاعتبارات العقلية ، فلعله لم يفرق بينه وبين هذه الموجودية بل التبس على نظره أمر القسمين ، فجعل الحقيقة المحققة بذاتها التي هي أصل سائر الحقائق الحقيقية أمرا اعتباريا بأعرف ذلك .
 
-### English
+### English · passage 1
 
 ... unrestricted existence to be a purely conceptual consideration may have failed to distinguish it from this derivative attribution of being-existent. The two are confused in his reasoning, so that the reality which is actual through itself and forms the source of all other real things is made into a mere mental consideration. Recognise the distinction.
 
-### Arabic
+### Arabic · passage 2
 
 فإن قيل : لا سبيل إلى القول بالظهور ؛ إذ لو أريد به نفس الوجود ، كان معناه اقتضى الوجود نفسه مع أنها واجبة لا يقع عليها الاقتضاء ، وإن أريد المقيد بقيد بعينه ، فشئ من جزأيه لا يقبل الجعل والتأثير ؛ لما أن الوجود واجب والقيد الآخر ماهية ولا يقبلان الوجود ، وكذا المجموع منهما ، فإن المجموع قائم بالجزأين ، فلما لم يقبل الوجود فلا يقبل العارض أيضا ؛ لأن الوجود العارض تابع لوجود المعروض لكن المتبوع لا يقبل الوجود ، لا يقال : الوجود العقلي يقبل الوجود العيني ؛ لأنا نقول أنه لا يقبل العيني ولا العقلي لأنه تحصيل الحاصل ، وأما باقي القيود المختصة فلا تعتبر في الوجود المطلق ، فلا تكون مقتضية للوجود العيني أو العقلي ، ولا الوجود المطلق مقتضيا لها ، وهكذا الكلام في المجموع العقلي من القيود والمقيد لها ، ولو أريد بالظهور شيء من الماهيات أو النسب والإضافات فلا يقبل الوجود ، فلا حاجة إلى مزيد تقرير وتوضيح .
 
-### English
+### English · passage 2
 
 **Objection:** There is no coherent sense in which manifestation can be affirmed. If it means existence itself, the claim would be that existence causes itself to exist, although it is necessary and cannot be subject to such causal production. If it means existence restricted by a particular qualification, neither of its two constituents can be made or affected: existence is necessary, while the other constituent is a quiddity that cannot in itself receive existence. Nor can the whole receive existence, for the whole depends upon its constituents; if it cannot receive existence it cannot receive the additional attribution of existence either, since an accident's existence follows its subject. One cannot reply that intellectual existence receives extramental existence: it receives neither extramental nor intellectual existence anew, for that would be obtaining what was already present. Nor do the remaining particular limitations enter into consideration within unrestricted existence, so they cannot necessitate extramental or mental existence, nor can unrestricted existence necessitate them. The same applies to any conceptual whole made up of restrictions and the restricted subject. And if ‘manifestation’ refers merely to a quiddity, relation or attribution, these cannot receive existence; the point needs no further explanation.
 
-### Arabic
+### Arabic · passage 3
 
 قلنا : المراد بالظهور صيرورة المطلق متعينا بشيء من التعينات ، وقد عرفت أن متعلق الإمكان هو التعين . فإن قيل : عالم الأجسام أبعد من منبع الوجود وأقرب إلى طبيعة الإمكان الصرف ، فكيف يكون ظهور الوجود فيه أتم وأكمل بل الأولى أن يعكس الأمر فيه .
 
-### English
+### English · passage 3
 
 **Reply:** What we mean by manifestation is that the unrestricted becomes determinate through some determination. As you already know, **the correlate of possibility is the determination**, not existence considered in itself. **Objection:** The bodily world is furthest from the fountainhead of existence and nearest to sheer possibility. How, then, could existence be manifested in it more completely and perfectly? The reverse would seem more appropriate.
 
-### Arabic
+### Arabic · passage 4
 
 قلنا : لعلهم أرادوا أن ما يكون مدركا على سبيل الإجمال ، ومعقولا على سبيل التفصيل ، ومخيلا أو موهوما أو محسوسا بالحواس الظاهرة ، فإن خواص الوجود وآثاره تكون فيه أكمل وأكثر مما يكون مدركا لجميع هذا الوجود ، على أن من البين أن الإنيّة المدركة المتصرفة في المرتبة الأخيرة مدركة بجميع هذه الإدراكات ، بخلاف الإنية المتصرفة في المراتب التي فوقها . لا يقال : لو كان كمال المرتبة الأخيرة مدركة للإدراكات لكان الإنسان الكامل كذلك ، وقد خصصتموه بمن فني عن هذه الإدراكات ؛ لأنّا نقول : الإنسان الكامل لا يكون كماله إلا بتحصيل ملكات هذه الإدراكات في مراتبها ، ولا يكون الإدراك الحسي ،
 
-### English
+### English · passage 4
 
 **Reply:** Perhaps the intention is that a reality which can be apprehended comprehensively, understood distinctly, imagined, estimated and sensed by the outward senses manifests more properties and effects of existence than one accessible only to some of these modes. The individual reality (*inniyya*) manifest at the final rank is plainly accessible through all these modes of cognition, unlike the individual realities operating at higher ranks. **Objection:** If the perfection of the lowest rank consists in being open to all these modes of apprehension, so should the Perfect Human be; yet you describe him as having been effaced from them. **Reply:** The Perfect Human achieves perfection only by acquiring the stable capacities (*malakāt*) corresponding to all these modes of cognition at their proper ranks. Sensory apprehension is not ...
 
@@ -1916,11 +2048,13 @@ The first line closes the p63 solar analogy. Distinguish al-Mahāʾimī’s repo
 
 This page explicitly defines appearance as «صيرورة المطلق متعينا بشيء من التعينات» and says possibility pertains to the determination; these statements are more precise than generic “emanation.” **Online page:** https://ablibrary.net/book_content/b/9637/65?lang=ar
 
-## Printed p. 66 · The embodied Perfect Human, persistence of faculties, and mediation
+## MSH-054 · Printed p. 66 · The embodied Perfect Human, persistence of faculties, and mediation
 
-**MSH-054** · [Arabic source](https://archive.org/details/machra3-khosous/page/n66/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n66/mode/1up
 
-### Arabic
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 وما يلزمه من القيود الحاصلة له بالطبع مانعا لسائر الضروب الباقية التي لا تحصل له بحسب الأكثر إلا بالكسب والاختيار ، والكسب لا يحصل بدون الإدراك الحسي ، فكيف يكون الحسي مانعا من تلك الإدراكات ؛ وإنما يكون مانعا لو كان داعيا إلى المحسوسات من حيث هي في حال الابتداء فلا بدّ من الفناء أولا ، وأما في البقاء فلا يمنع .
 
@@ -1930,7 +2064,7 @@ This page explicitly defines appearance as «صيرورة المطلق متعي�
 
 لما توقف تأثير الفاعل في القابل على مناسبة بينهما بإجراء سنة الإلهية ، ولا مناسبة بين الحق الذي هو في غاية التنزه والخلق الذي في غاية التعلق ، لم يكن بدّ من متوسط ذي جهتي التجرد والتعلق ويتفيض بالأولى ويفيض بالثانية ، وأفضل من جمع بينهما هو نبينا صلى اللّه عليه وسلم باتفاق المحققين ، فتوسل بأكمل الوسائل التي هي الصلاة ، وهي نسبة تربط بين الداعي والمدعو ، فهي من اللّه رحمة وإحسان وغفران ، ومن الخلق دعاء وخضوع ، ويدل باشتقاقها للكثرة على حقائق الارتباط ، وهي الوصلة والصلة والوصال والصلاء والصولة ، والشريك بين هذه الألفاظ هو الجمع والتقريب ، وغايتها أن يستخلفه الحق حتى يصير مصليّا ، أي تابعا للحق المستخلف في الظهور بصورته ، فيصله بالتجليات الذاتية والأسمائية الاختصاصية بحقائق الاصطفاء ، وإعطاء الإنسانية ربطها بالحضرات التي منها صدرت ، وهي خمس : الأولى : حضرة حقيقته إلى عينه الثابتة في العلم الإلهي . الثانية : روحه - أعني - النفس الرحماني المتعين بعينه الثابتة لترويحها والتنفيس عنها من ضيق عدميتها . الثالثة : صورته الجسمانية وشخصيته .
 
-### English
+### English · passage 1
 
 ... nor the restrictions that naturally accompany it an obstacle to the remaining kinds of apprehension, most of which are attained through acquisition and free choice. Acquisition cannot take place without sensory apprehension. How, then, could sense perception in itself bar the other modes? It obstructs them only insofar as it draws the novice towards sensible things considered as ends in themselves; during the first stages effacement is necessary. **At the stage of abiding (*baqāʾ*), however, sense perception is no obstacle.**
 
@@ -1944,31 +2078,35 @@ Since, under the divine customary ordering, the agent's efficacy upon a recipien
 
 Very important: fanāʾ and baqāʾ affect the availability/obstructiveness of sensory cognition differently; this is not a metaphysical assertion that sensory reality disappears. The “five presences” enumeration continues onto p.67. **Online page:** https://ablibrary.net/book_content/b/9637/66?lang=ar
 
-## Printed p. 67 · The five Presences, comprehensive witnessing and the Muhammadan station
+Related passage IDs: QNW-WIT235
 
-**MSH-055** · [Arabic source](https://archive.org/details/machra3-khosous/page/n67/mode/1up)
+## MSH-055 · Printed p. 67 · The five Presences, comprehensive witnessing and the Muhammadan station
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n67/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 الرابعة : الحقيقية القلبية أحدية جمعية روحانية وطبيعية . الخامسة : عقله أي : القوة التي بها يضبط الحقائق ويتعقلها ، ويحمل العلوم والحكم ويفصلها ، وواجب على كل إنسان فريضة من اللّه أن يوصف بهذه الحقائق إلى الحق في أصولها التي منها نشأت وانبعثت ؛ ولهذا السر كانت الصلوات خمسا ،
 
-### English
+### English · passage 1
 
 The fourth is the reality of the heart, a unitive comprehensiveness joining spiritual and natural aspects. The fifth is his intellect, the faculty by which he retains and understands realities, bears sciences and wisdoms, and distinguishes them. Every human being is under a divine obligation to reconnect these realities to the Real in the principles from which they originate; the five daily prayers are linked to this mystery.
 
-### Arabic
+### Arabic · passage 2
 
 ثم إن الرحمة من اللّه تتعلق بكل شيء بحسب استعداده ، فعلى العاصين الغفران ، وما يترتب عليه من الجنة وغيرها ، وعلى المطيعين الجنة والرضا واللقاء ، وعلى العارفين الموحدين مع ذلك إفاضة العلوم اليقينية والمعارف الحقيقية ، وعلى المحققين الكاملين المكملين من الأنبياء والأولياء عليهم السلام التجليات الذاتية والصفاتية ، وأعلى مراتب الجنان من جانب الأعمال والصفات والذات ، وأعني بحيثية الذات ما به ابتهاج للمبدأ الأول من ذاته وكمالاته الذاتية ، فالرحمة المتعلقة بقلب النبي صلى اللّه عليه وسلم أعلى مراتب التجليات الذاتية والأسمائية ، لكمال استعداده وقوة طلبه إياه ، وفيضها من الاسم الجامع الإلهي الذي هو منبع الأنوار كلها ، ولما كانت الملائكة مظاهر الأسماء التي هي سدنة الاسم الأعظم ، والسادن لا بدّ له من متابعة سيده ؛ حصل له الفيض من جميع الأسماء ، واستغفر له مظاهرها بأسرها ، ودعاء المؤمنين له صلى اللّه عليه وسلم إنما هو مجازة ذاتية تقتضى أعيانهم الثابتة ، بل بين استعداداتهم الذاتية ذلك ، وكما كان صلى اللّه عليه وسلم واسطة لكمالاتهم لوجوداتهم في العلم ، والعين ماهية ووجودا ؛ كذلك كان واسطة لكمالاتهم ،
 
-### English
+### English · passage 2
 
 Divine mercy relates to each thing according to its receptivity. For sinners it consists in forgiveness and what follows from it, including entry into the Garden. For the obedient it includes the Garden, divine satisfaction and encounter. For knowers of unity it also includes the outpouring of certain knowledge and true gnoses. For realized, perfected and perfecting prophets and saints it includes essential and attributive self-disclosures and the highest ranks of the gardens with respect to acts, attributes and Essence. By the aspect of the Essence I mean what constitutes the First Principle's joy in His Essence and essential perfections. The mercy directed towards the Prophet's heart is therefore the highest of essential and nominal self-disclosures, due to his perfected receptivity and powerful longing. Its overflow comes from the all-comprehensive divine name, the source of all lights. Angels are loci of names serving the Greatest Name, and a servant follows his master; hence the Prophet receives the overflow of all names, and their manifested loci collectively seek forgiveness for him. The prayers of believers for him express an intrinsic [reciprocity or recompense—reading «مجازة» uncertain] required by their fixed entities and primordial receptivities. As he was the mediator of their perfections and of their existence in knowledge and actuality—of quiddity as well as existence—so he mediates their perfections.
 
-### Arabic
+### Arabic · passage 3
 
 والمتحقق بأسماء ممن جعله اللّه مظهرا لها [ يمحوظ ] رسوم أخلاقه وأوصافه ، وأما المتخلق ، فهو الذي يكتسب فضائل الأخلاق والأوصاف الحميدة يكلف تكلفا وتعمّلا ، ويجتنب الرذائل والذّمائم ، فله من الأسماء الإلهية آثارها ، والشهود هو رؤية الحق بالحق ، وشهود المفصّل في المجمل رؤية الكثرة في الذات الأحدية ، وشهود المجمل في المفصل رؤية الأحدية في الكثرة ، وشهود الأكمل هو الجمع بينهما ، والكمال عبارة عن حصول الجمعية الإلهية والحقائق الكونية بأوفر ظهوره أتم ، والجمعية الإلهية بجميع صفاته وأسمائه فيه أكثر كان أكمل ، وكل من كان أقل خصلة منها كان أنقص ، وعن مرتبة الخلافة الإلهية أبعد ، ووصف الشهود بذلك اعتبار كمال الشاهد الذي هو كاملة ، وهذا الشهود هو المعرفة . قال الشيخ رضي اللّه عنه : العارف من أشهده الرب نفسه ، فظهرت الأحوال عليه ، والمعرفة
 
-### English
+### English · passage 3
 
 The one who realizes the divine names, having been made a locus of their manifestation by God, [effaces: the Arabic verb is corrupt] the delineations of his own traits and attributes. The one who merely adopts the traits (*mutakhalliq*), by contrast, acquires the virtues and praiseworthy qualities through effort and discipline, avoiding vice and blameworthy conduct; he possesses their effects from the divine names. Witnessing means seeing the Real through the Real. Witnessing the differentiated within the comprehensive is seeing multiplicity in the unitive Essence; witnessing the comprehensive within the differentiated is seeing unicity in multiplicity. **The most perfect witnessing unites both.** Perfection consists in the most complete manifestation of divine comprehensiveness and cosmic realities. The more completely someone manifests the totality of divine attributes and names, the more perfect he is; lacking any of them, he is correspondingly deficient and further from the station of divine vicegerency. The witnessing is called perfect in consideration of the perfection of the witness. This witnessing is gnosis. The Shaykh says: “The knower is one to whom the Lord shows Himself, whereupon the spiritual states manifest in him”; and gnosis ...
 
@@ -1976,17 +2114,19 @@ The one who realizes the divine names, having been made a locus of their manifes
 
 The corrupted word «[ يمحوظ ]» is preserved as recorded and translated only cautiously. This page explicitly defines the two reciprocal kinds of witnessing and a higher comprehensive mode. **Online page:** https://ablibrary.net/book_content/b/9637/67?lang=ar
 
-## Printed p. 68 · Comprehensive Muhammadan knowing and the universal name
+## MSH-056 · Printed p. 68 · Comprehensive Muhammadan knowing and the universal name
 
-**MSH-056** · [Arabic source](https://archive.org/details/machra3-khosous/page/n68/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n68/mode/1up
 
-### Arabic
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 حاله فهذا هو عين اليقين . ثم بيّن أنه متحقق به أيضا من حيث العلم الأتم ، وذلك لاطلاعه على العلم الأزلي ، ثم وصف بأنه الأشرف ، وأشرف ارتفاع الوسائط أو قلتها ، فهو إشارة إلى أنه ولا واسطة بين علمه - صلوات اللّه عليه - وبين علم الأزل ، فلذلك وصفه بالأشمل لشموله ما لا يتناهى من المعلومات ، ولم يصفه بالأكمل ؛ لأنه حقيقة واحدة من الحقائق الإلهية ، بخلاف شهوده في جميع حقائقه ، ولم يصف الشهود بالأشرف لشموله ما فيه الواسطة ، وما وليس فيه ، ثم ذكر أن هذه الشهود وهذا العلم لا زمان له - صلوات اللّه عليه - مع دوام حضوره مع ربه ؛ ولذلك تتواتر المشاهدات والتجليات عليه بلا فضل ، حتى لا يشتغل بالغير من كل وجه ، والمواطن الحضرات الخمس الإلهية والأحوال تحول تجلياته والمراتب ، ترتب علوها إلى الدرجات بسلسلة الوسائط على وفق السنة الإلهية ، والنشآت تجدد تجلياته في تلك الأمور كلها بحسب الآنات ، فافهم .
 
 قال رضي اللّه عنه : [ سيدنا محمد ، وآله ، والصفوة من أمته ، وإخوانه الحائزين من اللّه ميراثه الأتم المشتمل على علومه وأحواله ومقاماته ] . السيد المالك ، قال عليه السلام : « أنا سيد ولد آدم ولا فخر » « 1 » ، أي : أنا متولي التصرف فيهم ، ولا فخر لي بذلك ؟ ؛ لأنه من جهة خلقيته ، وإنما الفخر بمن خلقني عليهم ، لأنه جهة حقائقه ، وذلك أن لكل اسم من الأسماء الإلهية صورة في العلم تسمى بالماهية والعين الثابتة وفي الخارج تسمى بالمظهر ، والأسماء أرباب تلك المظاهر ، والحقيقة المحمدية صورة الذات مع جميع الأسماء ، فهو صورة الاسم الجامع الذي منها الفيض على جميع الأسماء ، فتلك الحقيقة هي التي تربّ صورة العلم بالرب الظاهر فيها الذي هو رب الأرباب ، فله الربوبية المطلقة ؛ فلذلك قال صلى اللّه عليه وسلم : « خصصت بفاتحة الكتاب وخواتيم البقرة » « 2 » ، وهي مصدرة بقوله تعالى : الْحَمْدُ لِلَّهِ رَبِّ الْعالَمِينَ [ الفاتحة : 2 ] ، مجمع عوالم الأجسام والأرواح . وهذه الربوبية من جهة حقيقية لا بشريته ، بل هو من هذه الجهة عبد مربوب ، ولا
 
-### English
+### English · passage 1
 
 ... his state: this is the eye of certainty. Qūnawī next explains that he is realized through the most complete knowledge, because he has access to eternal knowledge. It is called the noblest because nobility here consists in the absence or reduction of intermediaries; this indicates that no mediator stands between the Prophet's knowledge and eternal knowledge. It is called the most comprehensive because it encompasses limitless objects of knowledge. It is not called the most perfect because, considered as knowledge, it is one reality among divine realities, unlike his witnessing, which is comprehensive in all of its realities. Witnessing is not called the noblest because it embraces what is mediated and what is unmediated. This witnessing and knowledge are inseparable from him, with his constant presence with his Lord; visions and self-disclosures follow continuously without a gap in which he becomes wholly occupied with another. The ‘stations’ are the five divine Presences; ‘states’ are the alterations of self-disclosure; ‘ranks’ are their order according to degrees of elevation and the sequence of mediations under the divine customary order; and ‘modes of being’ are renewed self-disclosures in all these at successive instants. Understand.
 
@@ -1996,31 +2136,35 @@ The corrupted word «[ يمحوظ ]» is preserved as recorded and translated on
 
 The contrast between “Muhammadan Reality” and the Prophet’s creaturely human aspect is stated expressly; do not present delegated lordship as independent divinity. **Online page:** https://ablibrary.net/book_content/b/9637/68?lang=ar
 
-## Printed p. 69 · The family of the Prophet: physical, religious and spiritual kinship
+Related passage IDs: QNW-WIT235
 
-**MSH-057** · [Arabic source](https://archive.org/details/machra3-khosous/page/n69/mode/1up)
+## MSH-057 · Printed p. 69 · The family of the Prophet: physical, religious and spiritual kinship
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n69/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 يتصور هذه الربوبية إلا بإعطاء كل ذي حق حقه ، وإفاضة جميع ما يحتاج إليه العالم ، فله كل أسماء يتصرف بها في العالم بحسب استعداداتهم . ولما كانت هذه الحقيقة مشتملة على جهتين ، الإلهية والعبودية ، لم يصح لها ذلك أصالة بل تبعية ، وهي الخلافة . « ومحمد » : من التحميد للمبالغة في الحمد ، أو حقيقته ، أعنى ذاته في التعين الأول ، أو مع جميع الصفات ، أو صورة الاسم الجامع أو الروح الأعظم أو الوحدة الحقيقية ؛ فإن قوسي الأحدية والواحدية له أحدية جمع جميع المحامد بإيجاد اللّه الحامد المحمود ، فقامت المحاسن والمحامد الإلهية والكونية كلها بذات محمد صلى اللّه عليه وسلم ، وقامت الحقيقة المحمدية أيضا بجميع المحامد التفصيلية .
 
-### English
+### English · passage 1
 
 ... this lordship cannot be conceived without giving everything its due and bestowing all that the world requires. It possesses the names through which it acts in the world according to the world's receptivities. Yet because this reality embraces two aspects, divine and servantly, it possesses that authority not originally but by derivation: this is vicegerency. The name ‘Muḥammad’ comes from the root of praise in an intensive form. His reality—that is, his essence at the first determination, or together with all attributes, or as the form of the all-comprehensive name, or the Greatest Spirit, or true unity—embraces both the arc of *aḥadiyya* and the arc of *wāḥidiyya* in a comprehensive gathering of praises. God brings forth the one who praises and the one praised, and all divine and cosmic beauties and praises are gathered in the reality of Muḥammad, peace be upon him, while the Muhammadan Reality also supports their distinct and detailed praises.
 
-### Arabic
+### Arabic · passage 2
 
 والآل الأهل ، وهم أقاربه الذين تؤول إليهم أموره صلى اللّه عليه وسلم ، ومواريثهم العلمية والحالية والمقامية ، وهم أقسام ؛ لأن له صلى اللّه عليه وسلم صورة طينية عنصرية ، ودينية شرعية ، ونورية روحية ، وحقيقية قلبية معنوية ؛ فمن قام بصورته الطينية والدينية وصحة نسبته إلى صورته النورية الروحية والحقيقية المعنوية ؛ فهو الخليفة والإمام القائم مقامه كالمهدي عليه السلام ، ومن قام بالثلاثة الأخيرة ؛ فهو وارثه علما ومقاما وحالا ، وهم الخلفاء والأمناء وإن لم يكونوا أشرافا ، ومن انفرد بالقرابة الطينية ؛ فإن كان له يسير في المعنى والخلق فهو من السادات والشرفاء ، وإن ابتعد من الوراثة المعنوية الروحانية العلمية رأسا وخالف ظاهر الشريعة ؛ فلا يجوز أن ينظر إليها بالحقارة ، فلعله قد يكون من أهل البراء ويؤول إلى طهارته الأصلية .
 
-### English
+### English · passage 2
 
 *Āl*, family, refers to the Prophet's kin, to whom his affairs and inheritances of knowledge, spiritual states and stations pass. They are of several kinds, for he has an elemental bodily form, a religious and legal form, a luminous spiritual form, and an inward, heart-centred spiritual reality. Whoever participates fully in the bodily and religious forms and is genuinely connected to the luminous and inward realities is a vicegerent and imam standing in his place, such as the Mahdī, peace be upon him. Whoever participates in the last three is an inheritor of his knowledge, rank and spiritual state: such people are successors and trustees even if not genealogically noble. Someone related only through bodily descent may nevertheless possess some measure of spiritual meaning and character and thus belong to the sayyids and sharifs. Even when a descendant is far removed from spiritual and intellectual inheritance and outwardly violates the law, that kinship should not be despised: he may yet be among those who eventually return to primordial purity.
 
-### Arabic
+### Arabic · passage 3
 
 وقيل : القرابة إما أن يكون صورة فقط ، أو معنى فقط أو صورة ومعنى ؛ فإن جمعها فهو الخليفة والإمام القائم مقامه كأكابر الأنبياء الماضين ، أو بعده كالأولياء الكاملين ، ومن اختص بالمعنوية كمؤمن آل فرعون وصاحب يسين ( ياسين ) ، فهو ولده الروحي القائم بها بما تهيّأ لقبوله من معناه ؛ لذلك قال صلى اللّه عليه وسلم لسلمان رضي اللّه عنه : « سلمان منا أهل البيت » « 1 » ، ومن اختص بالصورة ؛ فهو إما بحسب طينته كالسادات ، أو بحسب دينه كأهل الظاهر من المجتهدين وغيره ، ؛ من العلماء والصلحاء والعباد وسائر المؤمنين ، فالقرابة التامة هي الجامعة ، ثم المعنوية ، ثم الصورية الدينية ، ثم الطينية .
 
-### English
+### English · passage 3
 
 Another explanation divides kinship into form alone, meaning alone, or both. Whoever combines both is a successor and imam standing in the Prophet's place, as were the great prophets before him and the perfected saints after him. Whoever possesses inward spiritual kinship alone—like the believer of Pharaoh's household or the man of Yā Sīn—is his spiritual child, having been prepared to receive his meaning. Hence the Prophet is reported to have said to Salmān, “Salmān is one of us, the People of the House.” One whose kinship is formal alone may possess it by descent, as the sayyids do, or by religion, as do outwardly learned jurists, scholars, the righteous, worshippers and other believers. The most complete kinship embraces all these, followed in order by inward kinship, religious formal kinship, and bodily descent.
 
@@ -2028,11 +2172,13 @@ Another explanation divides kinship into form alone, meaning alone, or both. Who
 
 The scheme of Muhammadan kinship is not to be substituted for positive legal rules of genealogy or inherited political authority. **Online page:** https://ablibrary.net/book_content/b/9637/69?lang=ar
 
-## Printed p. 70 · The Muhammadan heirs, unveiling, and singular disclosures
+## MSH-058 · Printed p. 70 · The Muhammadan heirs, unveiling, and singular disclosures
 
-**MSH-058** · [Arabic source](https://archive.org/details/machra3-khosous/page/n70/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n70/mode/1up
 
-### Arabic
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 والأمة التي أرسل إليهم عليه السلام فإن أجابوا فهم أمة الإجابة وإقامة الدعوة ، وإن كانت عامة في الأصل ، والمراد الأول إذ لا صفوة في الأخيرة ، وهم الذين صفت نفوسهم عن الرذائل ، وقلوبهم عن كدوراتها ، وصفاهم اللّه تعالى عن وجودهم وأوصى فهم بوجوده وصفاته ، ثم ذكر ما يلزم الصفاء من حيازة الميراث الأتم المشار إليه في قوله صلى اللّه عليه وسلم : « العلماء ورثة الأنبياء ، والأنبياء لم يورثوا دينارا ولا درهما ، وإنما ورثوا العلم ، فمن أخذه أخذ بحظ وافر » « 1 » .
 
@@ -2042,7 +2188,7 @@ The scheme of Muhammadan kinship is not to be substituted for positive legal rul
 
 أي : الحائزين ميراثه الأتم مع تحققهم بنتائج حظوظهم الاختصاصية ، والنتيجة ما يحصل من الشيء بطريق التوالد ، وخصها أهل المعقول بما يلزم الحجة لذاتها ، والمراد هنا ما يلزم حظوظهم الاختصاصية من العلوم والأحوال والمقامات ، والحظوظ جمع حظ ، وهو النصيب ، والمراد هنا تجلّ خاص له بحسب استعداده الخاص ، والمراد بالخاص ما يوجد فيه دون ما عداه ، فإن كان بالنسبة إلى جميع ما عداه فخاصة مطلقة والإفاضة فيه ، فهو التجلي الذي جنسه أو نوعه أو صفة في غيره ؛ وإنما قيدنا بذلك ، لأن التجليات لا تتكرر بحسب الشخص أصلا على ما في المتن ، ثم بين الحظوظ الاختصاصية بأنها المميزة إياهم عن الحظوظ التي تميز بها خواص الوسائط والوسائط جمع واسطة ، وهي ما توصل أثر الفاعل إلى المنفعل ، وخواصها الأوصاف التي لونت الأثر بلونها بعد أن لم يكن له ذلك ، فللوسائط خواص من الحظوظ لا توجد في المنفصل القابل إلا بواسطتها ، وعن الحظوظ
 
-### English
+### English · passage 1
 
 The community to whom he—peace be upon him—was sent consists, insofar as they answer him, of the community of response and acceptance of the summons, though the summons was originally universal. It is the former community that is intended, since the latter, as such, contains no elect. These are those whose souls have been purified of vices and whose hearts of their turbidity; God has purified them of their own existence [and attributes] through His existence and attributes. [The printed phrase وأوصى فهم is corrupt; “and attributes” is a contextual conjecture, not an independently attested reading.] He then mentions what follows from such purity: receiving the most complete inheritance, indicated by the Prophet's saying: “The learned are heirs of the prophets. The prophets leave neither dinar nor dirham; they bequeath only knowledge, and whoever takes it has taken an abundant portion.”
 
@@ -2056,47 +2202,51 @@ That is, they inherit his fullest inheritance while realizing the consequences o
 
 The printed page ends mid-sentence; Qūnawī’s words occur in brackets. The modern editor’s hadith footnote is not copied as authorial prose. The printed reading «وأوصى فهم» appears corrupt; supplied bracketed English here is conjectural, not a textual emendation. **Online page:** https://ablibrary.net/book_content/b/9637/70?lang=ar
 
-## Printed p. 71 · Types of mediation and the universal form of time
+Related passage IDs: QNW-WIT235
 
-**MSH-059** · [Arabic source](https://archive.org/details/machra3-khosous/page/n71/mode/1up)
+## MSH-059 · Printed p. 71 · Types of mediation and the universal form of time
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n71/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 التي تميز بها ثمرات التبعية والتبعية الاقتداء في الاعتقاد والأعمال والأحوال وثمراتها ما يحصل منها من علوم الوراثة ؛ فلهذه الثمرات حظوظ من العلوم والأحوال غير الحظوظ الاختصاصية ؛ لكنها تختص بأهل القدوة . ثم ذكر ما هو أعم من ذلك بقوله : ( وأحكام الروابط ) أي : عن الحظوظ التي تميز بها أحكام الروابط بين الفاعل والمنفعل ، غير الوسائط وأحكامها ، الآثار الخاصة بذلك فيها حظوظ تميز عن الحظوظ اختصاصية توجد في كل منفعل يقبل الأثر من الفاعل الحقيقي ، فافهم .
 
-### English
+### English · passage 1
 
 —distinguished by the fruits of following. Following (*tabʿiyya*) means imitating [the exemplar] in belief, actions, and states; its fruits are the inherited knowledges that arise from this. These fruits have shares of knowledge and states other than the absolutely particular shares, although they belong especially to those who follow the exemplar. He next mentions something more general, “and the effects of connections”: that is, shares distinguished by the effects of relations between agent and recipient, other than the intermediaries and their effects. These connections have their particular effects and shares, different from distinctively personal shares, and present in any recipient capable of receiving an effect from the real Agent. Understand.
 
-### Arabic
+### Arabic · passage 2
 
 قال رضي اللّه عنه : [ صلاة مستمرة الحكم ، دائمة الإيناع دوام الزمان ، من حيث حقيقته الكلية وصور أحكامها التفصيلية ، المعبر عنها بسنينه وشهوره وأيامه وساعاته ] .
 
-### English
+### English · passage 2
 
 He [Qūnawī] said, may God be pleased with him: “[A blessing whose efficacy continues, whose fruitfulness endures as long as time, considered both in its universal reality and in the forms of its detailed effects, expressed as its years, months, days, and hours.]”
 
-### Arabic
+### Arabic · passage 3
 
 أي : صلى اللّه عليه وسلم والصفوة من أمته صلاة مثمرة لحكمها الذي هو الكمال ، وهو - وإن كان حاصلا لهم - درجات غير متناهية ؛ فلذلك أردفه بقوله دائمة الإيناع له ، أي الإثمار ، ذلك لفيض الكمال على المتصف بواسطتهم فيضا مستمرا ، ثم شبهه بدوام الزمان من الحيثيتين حيثية حقيقته الكلية « 1 » - فالحقيقة ما به الشيء هو في الخارج ، والماهية ما هو مطلقا ، والهوية ما به التشخص ، والكلى ما يكون مفهومه قابلا لاشتراك كثيرين فيه ، وحقيقة الزمان عند أرسطو مقدار حركة الفلك الأعظم .
 
-### English
+### English · passage 3
 
 That is, he asks blessings upon the Prophet and the elect of his community—blessings fruitful in their efficacy, which is perfection. Even though perfection has been attained by them, it has infinitely many degrees; thus he adds “continually yielding fruit,” meaning the unceasing effusion of perfection upon those characterized by it through their mediation. He compares this to time's continuity in two respects: its universal reality and its particular forms. A thing's *ḥaqīqa* is that whereby it is what it is in external reality; its *māhiyya* is what it is without qualification; its *huwiyya* is that whereby it is individuated. A universal is a conception capable of being shared by many. According to Aristotle, time's reality is the measure of the motion of the outermost sphere.
 
-### Arabic
+### Arabic · passage 4
 
 وعند الأشعري متجدد يقدر به متجدد آخر ، وتحقيقه في علم الكلام والحكمة ، وحيثية صور أحكامها إلى المظاهر التي ظهرت فيه آثار هذه الحقيقة الزمانية مفصلة ، والتفصيل التمييز بين الأشياء التي عند اجتماعها يصح إطلاق الواحد عليها ، ودوام هذه الصورة يتعاقب بعضها على بعض ، فطلب دوام الصلاة مع دوام ثمراتها التي هي كصور أحكامها ؛ لتتوالى عليها التجليات غير المتناهية من السير في اللّه وباللّه ومن اللّه . ثم بيّن صور أحكام حقيقة الزمان بقوله : ( المعبر عنها بسنينه . . .
 
-### English
+### English · passage 4
 
 According to al-Ashʿarī, [time is] a changing occurrence by which another changing occurrence is measured; the full question belongs to kalām and philosophy. As for the aspect of the forms of its effects, this refers to loci of manifestation in which the effects of temporal reality become detailed. “Detailing” separates things which, when gathered, can be described as one. The forms persist by succeeding one another. Thus he asks that blessings and their fruits continue like those forms, so that unending disclosures follow upon one another in travelling in God, through God, and from God. He then explains the forms of the effects of temporal reality by the words “expressed by its years ...”
 
-### Arabic
+### Arabic · passage 5
 
 إلى آخره ) ، والسنة مقدار حركة الشمس بالحركة الخاصة ببروجها أو عن مقدار حركة القمر بها اثني عشر مرة ، والشهر عن مقدار حركة الشمس برجا واحدا أو القمر البروج كلها ، واليوم عن كون الشمس فوق الأفق ، والساعة عن مقدار جزء من أربعة وعشرين جزءا من حركة
 
-### English
+### English · passage 5
 
 —and so on. The year is measured by the sun's proper motion through its zodiacal signs or by twelve such movements of the moon; a month by the sun's movement through one sign or by the moon's passage through all signs; a day by the sun's being above the horizon; and an hour by one twenty-fourth part of the motion of—[continues p. 72].
 
@@ -2104,39 +2254,41 @@ According to al-Ashʿarī, [time is] a changing occurrence by which another chan
 
 The phrase «وهي الحقيقة المطلقة...» is part of modern editor’s numbered footnote on the printed p. 71 and is not included in the translation. The passage supplies explicit separate definitions of ḥaqīqa, māhiyya and huwiyya (not synonyms). **Online page:** https://ablibrary.net/book_content/b/9637/71?lang=ar
 
-## Printed p. 72 · First naṣṣ: the Absolute as the subject of metaphysical knowledge
+## MSH-060 · Printed p. 72 · First naṣṣ: the Absolute as the subject of metaphysical knowledge
 
-**MSH-060** · [Arabic source](https://archive.org/details/machra3-khosous/page/n72/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n72/mode/1up
 
-### Arabic
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 الفلك الأعظم ، وإنما أشار إلى الصور الزمانية ؛ لينبه بذلك على صورة الوجود الأزلي الأبدي ، وانقسامها على كلية وجزئية ، والأمر ما قدر . وقد أطلق الدّهر على اللّه تعالى في الحديث الصحيح بقوله : « لا تسبوا الدهر وأنا الدهر ، أقلب الليل والنهار » « 1 » ، أو على تفاصيل الفيض الواحد في أصله ، أو على أن الكمال النبوي - وإن كان شاملا - لكن له تفاصيل تتوقف على الدعاء ، فافهم .
 
-### English
+### English · passage 1
 
 —the outermost sphere. He mentions temporal forms to draw attention to the form of eternal, everlasting existence and its division into universal and particular aspects, the affair being as decreed. The term *dahr* (time, age) has also been applied to God in the sound hadith, “Do not revile Time, for I am Time: I turn the night and day”; or it may allude to the detailed aspects of the single effusion in its origin; or to the fact that, although prophetic perfection is comprehensive, it has particulars dependent on supplication. Understand.
 
-### Arabic
+### Arabic · passage 2
 
 النص الأول : قال رضي اللّه عنه : [ نص شريف ، هو أول النصوص الواجب تقديمه ] .
 
-### English
+### English · passage 2
 
 **First Text.** He [Qūnawī] said, may God be pleased with him: “[A noble text, the first of the texts, which must be placed first.]”
 
-### Arabic
+### Arabic · passage 3
 
 النص : لغة الخالص ، والمراد هنا ما يختص بذوق المقام الأكمل الأجمع ، المطابق لما يعلمه اللّه تعالى في أعلى درجات علمه ، وأتمها وأكملها على ما بينه الشيخ رضي اللّه عنه في المتن في التفريع الثالث من تفاريع النصوص الثلاثة الأول ، سمي به ؛ لأنه لا يقبل التفسير والتأويل بوجه من الوجوه شرفه باعتبار شرف معلومه ، وهو المطلق الشامل للكل مع غنائه عن الكل ، وإنما كان أول النصوص ؛ لأنه يبحث فيه عن أول الاعتبارات ، وهو الإطلاق والذاتي ، وإنما وجب تقديمه ؛ لأنه يبحث فيه عن موضوع العلم الذي هو الوجود المطلق ، وهو من مقدمات الشروع في العلم على وجه يتميز به تميزا ذاتيّا كاملا ومسائلة مبنية عليه ، وهي حمل أعراضه الذاتية عليه ، أو على أنواعه أو أعراضه الذاتية أو أنواعها ، ولم يتعرض لتعريف العلم ، وهو أنه العلم الباحث عن أحوال الوجود من حيث هو ، ومن حيث ظهوره في المظاهر وغيرها ، مع أن التعريف يفيد بالتمييز الذهني اكتفاء بالتمييز في الواقع الحاصل من تمايز الموضوعات ، وكذا لم يتعرض لغايته لظهورها من ذكر الموضوع ؛ لأنه لما كان أعم الأشياء وأعلاها ، وكان البحث عنها بحثا عن الموجودات كلها على وجه الكشف واليقين ، فمعلوم ما يفيده من السعادة العظمى والدرجة الكبرى التي لا نهاية لها .
 
-### English
+### English · passage 3
 
 Lexically, *naṣṣ* denotes what is pure or unalloyed. Here it means something specifically belonging to the tasting of the most perfect and all-comprehensive station, corresponding to what God knows at the highest, most complete and most perfect degree of His knowledge, as the Shaykh explains later in the third subdivision of the first three texts. It is so named because it admits of no explanation or figurative reinterpretation in any manner [the assertion of indefeasibility is Qūnawī's characterization as explained here, not our editorial standard]. Its nobility belongs to the nobility of its object: the Absolute, which comprehends all while having no need of any. It is first because it investigates the first consideration—intrinsic absoluteness. It necessarily comes first because it treats the subject of this science: unrestricted existence. Among the preliminaries of a science is distinguishing its subject in an essentially complete way, for the questions built upon it concern the predication of essential concomitants of that subject, its kinds, their essential concomitants, or their kinds. He does not explicitly define the science as inquiry into the states of existence as existence, and as it appears in loci of manifestation and other respects. Definition would provide a mental distinction, but he considers sufficient the distinction in reality supplied by the difference of subjects. Nor does he state its end separately, since it is plain from the subject: the most universal and exalted of things. Inquiry into it is inquiry into every existent through unveiling and certainty, and the resulting supreme felicity and highest rank, with no limit, are readily understood.
 
-### Arabic
+### Arabic · passage 4
 
 قال رضي اللّه عنه : [ اعلم أن الحق من حيث إطلاقه الذاتي لا يصح أن يحكم عليه بحكم ، أو يعرف بوصف ، أو يضاف إليه نسبة ما ، من وحدة ، أو وجوب وجود ، أو مبدئية ، أو اقتضاء إيجاد ، أو صدور أثر ، أو تعلق علم منه بنفسه أو غيره ؛ لأن كل ذلك يقضي بالتعين
 
-### English
+### English · passage 4
 
 He [Qūnawī] said, may God be pleased with him: “[Know that the Real, considered in His intrinsic absoluteness, cannot properly be subjected to a judgement, known through an attribute, or assigned any relation whatsoever—neither unity, nor necessity of existence, nor principiality, nor the requirement of bringing-into-existence, nor an effect's issuing forth, nor the relation of knowledge on His part to Himself or anything other than Himself. For all of these entail determination—[continues on p. 73].”
 
@@ -2144,11 +2296,15 @@ He [Qūnawī] said, may God be pleased with him: “[Know that the Real, conside
 
 Naṣṣ 1 opens on this printed page. The last bracketed lemma of Qūnawī continues onto the next. Modern hadith-reference footnote excluded. The word “before” in later discussion denotes the order of consideration, not proven temporal succession. **Online page:** https://ablibrary.net/book_content/b/9637/72?lang=ar
 
-## Printed p. 73 · The Absolute, nonpredication, and the apparent self-referential paradox
+Related passage IDs: QNW-WIT235
 
-**MSH-061** · [Arabic source](https://archive.org/details/machra3-khosous/page/n73/mode/1up)
+## MSH-061 · Printed p. 73 · The Absolute, nonpredication, and the apparent self-referential paradox
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n73/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 والتقيد ، ولا ريب في أن تعقل كل تعين يقضي بسبق اللا تعيّن عليه ، فكل ما ذكرناه ينافي الإطلاق ] .
 
@@ -2160,7 +2316,7 @@ Naṣṣ 1 opens on this printed page. The last bracketed lemma of Qūnawī cont
 
 ثم ذكر ما يستلزم امتناعه امتناع الكل ، وهو أنه يمتنع تعلق علمه بنفسه أو غيره من حيث الإطلاق ، وهذه الأمور كلها متفرعة عليه ، وليس المراد سبق الجهل - تعالى عن ذلك علوّا كبيرا ، بل المراد أن الإطلاق لا يمكن اعتبار العلم معه ، كما لا يمكن اعتبار هذه الأمور مع كونها ؛ لأنها لازمة للحق أزلا وأبدا ، ثم علل جميع ذلك بما هو علة الأصل أولا
 
-### English
+### English · passage 1
 
 “—and restriction. There is no doubt that conceiving any determination requires that non-determination precede it. Thus all that we have enumerated is incompatible with absoluteness.” [End of Qūnawī’s sentence begun p. 72.]
 
@@ -2176,11 +2332,13 @@ He then mentions the one matter whose exclusion entails the exclusion of all the
 
 Key philosophical objection and response. “Before determination” is explicitly a mode of consideration, not temporal prior ignorance. Arabic «أولا موصوفا» and «العلم حاصل» in related pages need collation with Āshtiyānī 1421 edition. **Online page:** https://ablibrary.net/book_content/b/9637/73?lang=ar
 
-## Printed p. 74 · An absoluteness beyond the binary of absolute and conditioned
+## MSH-062 · Printed p. 74 · An absoluteness beyond the binary of absolute and conditioned
 
-**MSH-062** · [Arabic source](https://archive.org/details/machra3-khosous/page/n74/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n74/mode/1up
 
-### Arabic
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 والفروع أيضا ، بأن كل ذلك يقضي بالتعيين والتقييد ، ضرورة أن ما لا يتعين كيف يحكم عليه بحكم معين ، وكيف يوصف بوصف معين ، وكيف يضاف إليه نسبة معينة ؟ ، ثم ذكر ما هو سبب اعتبار الإطلاق بأنه لا ريب في أن تعقل كل تعين يقضي بسبق اللا تعيّن ، فكل ما ذكرناه من الحكم والتعريف بالوصف ، وإضافة النسب إليه ينافي الإطلاق الذي اعتبر فيه التعقل قبل التعين ، وإنما اقتضي تعقل كل تعين سبق اللا تعين عليه ؛ لأنه قيد لا حق فلا بد له من سابق ، والسابق على كل تعين ليس إلا اللا تعين ، فافهم .
 
@@ -2188,7 +2346,7 @@ Key philosophical objection and response. “Before determination” is explicit
 
 قال : يشترط في تصور هذا الإطلاق أن يتعقل ، بمعنى أنه وصف سلبي ، وهو أنه لا يتقيد بشيء ، لا بمعنى أنه إطلاق متعارف ضده التقييد ، وإنما أطلق عليه لفظ الإطلاق ؛ لأنه إطلاق عن الوحدة والكثرة المعلومتين ، فهو من حيث الإطلاق لا يتقيد بالوحدة ولا بالكثرة ، بل المقيد بذلك مراتبه وتعيناته ؛ وهكذا هو مطلق عن الحصر في الإطلاق والتعين بحيث لا يتقيد بأحدهما ، وإن كانا فيه بحسب مراتبه وتعيناته ، ولا في الجمع بين كل ذلك أي الوحدة والكثرة والإطلاق والتقييد ، وكذلك وكل ذلك فيه بحسب مراتبه ، فنسبة كل ذلك إليه ونسبة غيره من التنزيه والتشبيه والغيب والشهادة ، وسلب جميع النسب إليه سواء بلا ترجيح لأحد الأمرين على الآخر ؛ إذ لو رجح لظهور التقيد به ؛ إذ المرجوح لا يقابل ، وإنما حصلت أولوية بعضها على بعض بحسب المراتب المتوقفة على التعينات ولا اعتبار لها حيث يعتبر الإطلاق ، فافهم ، فإنه مزلة الأقدم « 2 » .
 
-### English
+### English · passage 1
 
 —and of its consequences: each description entails specification and restriction. For what is not specified, how could a determinate judgement be asserted, a determinate attribute assigned, or a determinate relation added? He next gives the reason for considering absoluteness: the conception of any determination necessarily presupposes non-determination. Judgements, descriptive definitions, and attributed relations therefore conflict with the absoluteness conceived prior to determination. Every determination is a restriction that comes after [its basis in the order of consideration], and what precedes all determinations is nothing other than non-determination. Understand.
 
@@ -2200,47 +2358,51 @@ Thus, he says, to conceive this absoluteness one must conceive it negatively: th
 
 Critical nuance: this is neither ordinary “unrestricted as opposed to restricted” nor a positive determination called “the Absolute.” Modern editor’s gloss at note 1 and reference to his own separate book at note 2 deliberately omitted; not al-Mahāʾimī. **Online page:** https://ablibrary.net/book_content/b/9637/74?lang=ar
 
-## Printed p. 75 · First determination as intrinsic knowledge-relation, not real division
+Related passage IDs: QNW-WIT236
 
-**MSH-063** · [Arabic source](https://archive.org/details/machra3-khosous/page/n75/mode/1up)
+## MSH-063 · Printed p. 75 · First determination as intrinsic knowledge-relation, not real division
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n75/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 قال رضي اللّه عنه : [ وإذا وضح هذا علم أن نسبة الوحدة إلى الحق والمبدئية والتأثير والفعل الإيجادي ونحو ذلك إنما يصح ويضاف إلى الحق باعتبار التعين ] .
 
-### English
+### English · passage 1
 
 He [Qūnawī] said, may God be pleased with him: “[Once this becomes clear, it is known that attributing unity to the Real, or principiality, influence, the act of bringing-into-existence, and the like, is valid only when related to the Real under the consideration of determination.]”
 
-### Arabic
+### Arabic · passage 2
 
 أي : وإذا ظهر أن لا ترجيح لنسبة على نسبة في الإطلاق ، فترجيحات هذه النسب إنما هو باعتبار تعينه ، والوحدة والمبدئية باعتبار المتعين الأول والتأثير ، وهو التوجه إلى الفعل أو الإعدام والفعل الإيجادي بالنسبة إلى التعين الثاني وما بعده ، وذلك إن كلا منها نسب فلا بد لها من منتسبين ، والإطلاق أمر سلبي ، والمراد : أنه يتوقف تعقلها على اعتباره ، وإلا فهي مع التعين ثابتة للحق أزلا وأبدا ، فافهم .
 
-### English
+### English · passage 2
 
 In other words, since no relation has priority over another under intrinsic absoluteness, any preference among relations arises only with respect to His determination. Unity and principiality pertain to the first determination; influence—orientation toward making or annihilating—and the action of producing existence pertain to the second determination and those after it. Each is a relation and must therefore have relata. Absoluteness is a negative consideration. The intended point is that conceiving these relations depends on considering determination; it does not deny that, in the determinate respects, they are eternally true of the Real. Understand.
 
-### Arabic
+### Arabic · passage 3
 
 قال رضي اللّه عنه : [ وأول التعينات المتعلقة النسبة العلمية الذاتية ؛ لكن باعتبار تميزها عن الذات بالامتياز النسبي لا الحقيقي ] .
 
-### English
+### English · passage 3
 
 He [Qūnawī] said, may God be pleased with him: “[The first of the determinations that can be intellectually apprehended is the intrinsic relation of knowledge, but only insofar as it is distinct from the Essence by a relational distinction, not by a real one.]”
 
-### Arabic
+### Arabic · passage 4
 
 لما توقفت النسب على التعينات ، والنسب مرتبة فلا بدّ من ترتب التعينات ، فأول التعينات المتعقلة النسبة العلمية ، أي التي ظهرت من نسبة العلم ، فجعل العلم نسبة ، إذ لا تحقق للصفات متميزة في تلك الحضرة ، وإنما قال : « المتعلقة » لأن أول التعينات الواقعة نسبة الحياة ، لأنها شرط العلم ؛ لكنها لا تعقل إلا بعد تعقل العلم ، وإنما قال « الذاتية » ؛ لأن النسبة العلمية الأسمائية متأخرة عن هذه النسبة ، وكذا نسبة علمه إلى سائر الأشياء والأعيان ، وإنما قال : باعتبار تميزها ؛ لأنه في الإطلاق العلم حاصل ؛ لكنه لما لم يتميز بالكلية لم يحصل منه تعين ، وإنما اعتبر الامتياز النسبي ؛ لأن الامتياز الحقيقي إنما هو في تعين الواحدية ، لا في الأحدية التي هي التعين الأول ، فهذه النسبة في التعين الأول عين من حيث الحقيقة ، غير باعتبار ما .
 
-### English
+### English · passage 4
 
 Since relations presuppose determinations and relations have an order, determinations too must be ordered. The first determination that can be conceived is the knowledge-relation, that is, what becomes manifest through the relation of knowledge. Thus he treats knowledge as a relation, for the attributes do not subsist there as differentiated realities. He says “that can be intellectually apprehended” because the first determination in actuality is the relation of life, life being a condition of knowledge, though it is not conceived until after knowledge is conceived. He says “intrinsic” to distinguish this from the later relation of knowledge associated with the divine names, and from His knowledge of other things and the fixed entities. He qualifies the distinction by saying “insofar as”: knowledge is present in absoluteness, but because it is not differentiated there at all it does not yield determination. The distinction is relational, because real differentiation belongs only to the determination of *wāḥidiyya*, not to *aḥadiyya*, the first determination. Thus this relation in the first determination is identical in reality but other under a particular consideration.
 
-### Arabic
+### Arabic · passage 5
 
 قال رضي اللّه عنه : [ وبواسطة النسبة العلمية الذاتية ؛ يتعقل وحدة الحق ووجوب وجوده ومبدئيته ، وسيما من حيث إن علمه بنفسه في نفسه ، وأن عين علمه بنفسه سبب لعلمه بكل شيء ، وأن الأشياء عبارة عن تعينات تعقلاته الكلية والتفصيلية ، وأن الماهيات عبارة عن التعقلات ، وأنها تعقلات منتشئة التعقل بعضها من بعض ] . لما توقف إضافة النسب إلى الحق على تعينه ، فالنسب الذاتية توقف تعقلها على التعين الأول ، فبواسطة النسبة العلمية الذاتية . أي : علمه ذاته بذاته في ذاته مع التميز الاعتباري .
 
-### English
+### English · passage 5
 
 He [Qūnawī] said, may God be pleased with him: “[Through the intrinsic knowledge-relation, the Real's unity, necessary existence, and principiality become intelligible—especially insofar as His knowledge of Himself is within Himself, His very knowledge of Himself is the cause of His knowledge of everything, things are determinations of His universal and detailed cognitions, quiddities are cognitions, and these cognitions are intellectually generated one from another.]” Since ascribing relations to the Real depends on determination, conceiving the intrinsic relations depends on the first determination. “Through the intrinsic knowledge-relation” means the Essence's knowledge of Itself through Itself in Itself, together with a distinction made in consideration.
 
@@ -2248,15 +2410,19 @@ He [Qūnawī] said, may God be pleased with him: “[Through the intrinsic knowl
 
 The original explicitly separates (i) actual relation of life from (ii) first intellectually conceived relation of knowledge; (iii) relational distinction of aḥadiyya from (iv) real differentiation assigned to wāḥidiyya. “Real” in last contrast is al-Mahāʾimī’s usage and needs careful analysis before ontological extrapolation. **Online page:** https://ablibrary.net/book_content/b/9637/75?lang=ar
 
-## Printed p. 76 · The ordering of essential relations through self-knowledge
+Related passage IDs: QNW-WIT236
 
-**MSH-064** · [Arabic source](https://archive.org/details/machra3-khosous/page/n76/mode/1up)
+## MSH-064 · Printed p. 76 · The ordering of essential relations through self-knowledge
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n76/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 قال رضي اللّه عنه : ( يتعقل وحدة الحق ) « 1 » ، التي هي نسبة ذاتية باعتبار نفي الكثرة عنها بالذات ، والاعتبار لها في الذات المطلقة لصدقها مع الوحدة والكثرة ، وكذا وجوب وجوده ؛ لأنه نسبة إذ هو اقتضاء ذات الوجود باعتبار مغايرة اعتبارية على ما مرّ ، والاعتبار لها في المطلقة لصدقها على الممكنات ، وكذا مبدئيته ؛ لأنه نسبة بينه وبين ما أبداه ولا اعتبار لها في المطلقة في صدقها على ما أبداه أيضا ، لكن في التعين الأول ظهرت هذه النسب ، وقبل العلم لا يمكن تعقل شيء من ذلك ؛ إذ لو لم يعلم ذاته كيف يحكم بوحدته ، ولو لم يعلم وحدته كيف يحكم بوجوب وجوده لامتناع تعدد الواجب ؟ ولو لم يعلم وجوبه كيف يعلم كونه مبدأ الكثرة ، وكذا لو لم يعلم وجوبه كيف يعلم كونه منتهى الحوادث ومبدأها ، وعلى الخصوص يتوقف تعقل كل منها على النسبة العلمية الذاتية ، من حيث أن علمه نفسه في نفسه من غير زيادة عليه ، فيعلم وحدته ؛ إذ لولاه لم يتعقل الوحدة من كل وجه ، لأنه حينئذ يكون متعددا من ذات وصفه ، وكذا وجوب الوجود المتوقف
 
-### English
+### English · passage 1
 
 He [Qūnawī] said: “[The unity of the Real becomes intelligible].” This unity is an essential relation considered as the negation of multiplicity from Him intrinsically; it can [not] be considered in the unqualified Essence, which holds good with [descriptions of] unity and multiplicity. The same applies to His necessity of existence: this is a relation, the Essence of existence requiring [existence], considered with a distinction only in thought, as mentioned before. It is [not] considered in unrestricted absoluteness, which also encompasses the possible things. The same applies to His principiality, since that is a relation between Him and what He brings forth and cannot be considered in unrestricted absoluteness, which encompasses what is brought forth. These relations appear under the first determination. Before knowledge [in the order of apprehension] none can be understood: if He did not know His essence, how would its unity be judged? Without knowledge of unity, how would necessity be judged, given the impossibility of multiple necessary beings? Without knowledge of necessity, how would principiality toward multiplicity be known? And without knowledge of necessity, how could He be known as both the origin and the end of events? More specifically, conceiving each of these depends upon the intrinsic knowledge-relation, insofar as His knowledge of Himself within Himself adds nothing to His essence; through it He knows His unity. Without this, unity from every aspect would not be intelligible, since otherwise Essence and attribute would constitute a multiplicity. Similarly, the necessity of existence depends—[continued p. 77].
 
@@ -2266,31 +2432,33 @@ He [Qūnawī] said: “[The unity of the Real becomes intelligible].” This uni
 
 This printed page contains a lengthy modern editor footnote (beginning “قال الشيخ صدر الدين القونوي...”) quoting Miftāḥ al-ghayb and polemicizing against critics. It is not part of al-Mahāʾimī’s running text and is expressly excluded. Arabic «(يتعقل وحدة الحق)» is cited by al-Mahāʾimī as a lemma from Qūnawī. Do not cite the footnote as primary testimony without separately verifying its quotation. **Online page:** https://ablibrary.net/book_content/b/9637/76?lang=ar
 
-## Printed p. 77 · Fixed entities as cognitions, without temporal emergence of divine knowledge
+## MSH-065 · Printed p. 77 · Fixed entities as cognitions, without temporal emergence of divine knowledge
 
-**MSH-065** · [Arabic source](https://archive.org/details/machra3-khosous/page/n77/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n77/mode/1up
 
-### Arabic
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 على الوحدة ، على أن الواجب يجب أن يكون كاملا ، ولا كمال مع زيادة العلم لجواز تعقل انفكاكه حينئذ ، والمبدئية عليهما ، على أنه لو زاد علمه بذاته ، فجاز ألا يعلم ذاته ؛ لجاز ألا يعلم مبدئيته .
 
-### English
+### English · passage 1
 
 —upon unity. Besides, the Necessary must be perfect, and there is no perfection if knowledge is superadded [to the Essence], since one might then conceive it apart from Him. Principiality depends upon both. Furthermore, if His self-knowledge were an addition to His Essence, so that it were conceivable for Him not to know Himself, it would also be conceivable for Him not to know His own principiality.
 
-### Arabic
+### Arabic · passage 2
 
 وأيضا من حيث أن عين علمه بنفسه سبب لعلمه بكل شيء ، والوحدة والوجوب ، والمبدئية من جملة الأشياء على أنها من اللوازم القريبة ، فإذا علم البعيدة بعين علمه بنفسه فالقريب أولى ، أو إنما كان علمه بنفسه سببا لعلمه بكل شيء ؛ لأنه شامل على شؤونه التي هي عبارة عن حقائق الأعيان الثابتة التي هي حقائق الأشياء أيضا ، من حيث إن الأشياء تعينات تعقلاته الكلية والتفصيلية ، والوحدة تعين لتعقله كلية الذات من حيث إن شموله على شؤونه ليس على نهج التمييز ، وهذا إنما هو في التعين الأول ، ووجوب الوجود تعين لتعقله كلية الذات من حيث لا تميز فيه لشؤون الممكنات التي يشملها ، والمبدئية تعين لتعقله كلية الذات ، من حيث أنه أولا من غير تميز للآخر فيه ، وأما التفصيلية فليس تتعقل في هذه المرتبة ، وإنما كانت الأشياء عبارة عن تعينات تعقلاته ؛ إذ ليس لها وجود مستقل بل مفاض من نوره على أعيانها التي هي تعقلاته اتصف بها من حيث ظهوره فيها وبها حتى تعين بها ، والأعيان أمور متعقلة لها لا غير ، وأيضا من حيث إن الماهيات عبارة عن التعقلات ، ولا شك أن الوحدة والوجوب والمبدئية إن كانت أمورا موجودة فلا بدّ لها من ماهية ، فلا يسبق التعقل الأول الذاتي ؛ وإلا فهي محض التعقلات ، وإنما كانت الماهيات عبارة عن التعقلات ؛ إذ ليس في الخارج شيء يغاير الوجود في الموجودات مع أنّا نعلم قطعا أن الأشياء تتمايز وتتغاير والوجود مشترك فهو بالماهية ، وأيضا من حيث إنها تعقلات منتشية التعقل بعضها من بعض ، فإن الوحدة منتشية من تعقلات الذات والوجوب عنهما والمبدئية عن الثلاثة ، فهي نفس التعقلات ، وإنما كان بعضها منتشيا عن البعض ؛ لأن المتأخر من هذه الأمور من لوازم المتقدم ، فتعقل الملزوم مستلزم لتعقله ، فكذلك تعقل اللازم منتشئ عن تعقل الملزوم .
 
-### English
+### English · passage 2
 
 Again, His very knowledge of Himself is the cause of His knowledge of everything. Unity, necessity, and principiality belong among the things known, and they are among His nearer concomitants: if He knows distant concomitants through His self-knowledge, He all the more knows the nearer ones. Alternatively, His self-knowledge is the cause of His knowledge of everything because it embraces His own *shuʾūn* (essential aspects), which are the realities of the fixed entities and hence of things. For things are determinations of His universal and detailed cognitions. Unity is a determination of His universal cognition of the Essence insofar as its comprehension of those aspects is not differentiated; this belongs to the first determination. Necessary existence is a determination of His universal cognition of the Essence insofar as the affairs of possible things included within it are not differentiated. Principiality is a determination of His universal cognition insofar as He is first, with no differentiation of what comes afterward within it. Detailed cognitions, however, are not conceived in that rank. Things are described as determinations of His cognitions because they do not possess independent existence; rather, existence is effused from His light upon their fixed entities, which are His cognitions, and He is qualified in respect of His manifestation in and through them, becoming determinate by them. The fixed entities are intelligible matters, nothing beyond that. Moreover, quiddities are cognitions. If unity, necessity, and principiality are existent matters they must have quiddities and cannot precede the first intrinsic cognition; otherwise they are cognitions pure and simple. Quiddities are described as cognitions because in external existent things there is nothing extraneous to existence, although we know with certainty that things are distinguishable and diverse, while existence is shared. Their distinction is therefore through quiddity. These cognitions can further be considered as arising intellectually one from another: unity arises from cognizing the Essence; necessity from cognizing the Essence and unity; and principiality from cognizing all three. They are cognitions, and their ordering arises because the later among these is a necessary concomitant of the earlier. Conceiving that upon which something depends entails conceiving its consequent; accordingly the cognition of the consequent arises from that of its prerequisite.
 
-### Arabic
+### Arabic · passage 3
 
 ولذلك قال رضي اللّه عنه : [ لا بمعنى أنها تحدث في تعقل الحق تعالى ، تعالى اللّه عما لا يليق به ، بل تعقل البعض متأخر الرتبة عن البعض ، وكلها تعقلات أزلية أبدية على وتيرة واحدة تتعقل في العلم ، ويتعلق بها بحسب ما يقتضيه حقائقها ] .
 
-### English
+### English · passage 3
 
 Therefore he [Qūnawī] said, may God be pleased with him: “[Not in the sense that they newly occur in the Real's cognition—God Most High is exalted above anything unbefitting Him—but rather the cognition of some is posterior in rank to the cognition of others. All are beginningless and everlasting cognitions, abiding in one mode; they are intelligible within knowledge, which relates to them according to what their realities require.]”
 
@@ -2298,11 +2466,15 @@ Therefore he [Qūnawī] said, may God be pleased with him: “[Not in the sense 
 
 This is a decisive distinction between cognitive/rank succession and chronological production of divine intellections. The printed Arabic has forms «منتشية» and «تعقلات» that require collation; all have been retained in the source layer. **Online page:** https://ablibrary.net/book_content/b/9637/77?lang=ar
 
-## Printed p. 78 · Eternal cognition, temporal relations, and the differentiated within the undifferentiated
+Related passage IDs: QNW-WIT236
 
-**MSH-066** · [Arabic source](https://archive.org/details/machra3-khosous/page/n78/mode/1up)
+## MSH-066 · Printed p. 78 · Eternal cognition, temporal relations, and the differentiated within the undifferentiated
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n78/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 لما توهم مما سبق ، إن تعقل المنتشئ حادث لتأخره في الوجود عن المنتشئ منه ، دفع ذلك بأن الانتشاء ليس بمعنى الحدوث ؛ لامتناعه في ذات الحق وصفاته اللازمة ، والعلم منها ؛ لأن التجرد نسبة على ما بين في الحكمة ، وما يرى من الحدوث في صفاته اللاحقة باسمه الظاهر ، فحدوثه إنما الظهور بعد البطون في حق الوجود ، وبمعنى سبق العدم عليه في حق الأعيان الثابتة ، فليس تأخر تعقل البعد إلا بحسب الرتبة ، بمعنى التقدم الطبيعي ، وهو أن يكون المتأخر مفتقر إلى المتقدم ، ولا يكون المتقدم علة للمتأخر ، والصفات الإلهية غير معلولة بشيء ؛ لأن تأثير العلل إنما هو في الحوادث فكلها تعقلات أزلية أبدية على وتيرة واحدة لم يسبق الجهل بشيء منها ، بل حقائقها يترتب بعضها على بعض ترتبا طبيعيّا ، والعلم بالشيء إنما يتعلق به بحسب ما يقتضيه حقيقته ؛ ومن هنا نقول أن علم اللّه بالحوادث قديم ؛ لكنه يتعلق بها على حسب ما هي عليه ، فيعلم الماضي ماضيا ، والحال حالا ، والمستقبل مستقبلا من غير تغيير في علمه ، بل تعلقه الذي هو نسبة بين العلم والشيء لا وجود لها ، فلا محذور في اعتبارها ما في علمه تعالى ، فافهم .
 
@@ -2310,7 +2482,7 @@ This is a decisive distinction between cognitive/rank succession and chronologic
 
 لما كان تعلق العلم بالحقائق على حسب مقتضياتها ، فتارة يقتضي كونها على وتيرة واحدة وتارة كونها مترتبة ؛ لأن مقتضى حقائقها على نحوين بناء على أن كلا من الذات الأحدية والحقائق مرآة للآخر ؛ فالنحو الأول المبني على كون الذات مرآة للحقائق وهي فيه على وتيرة واحدة ، تعقل الحقائق من حيث استهلاك كثرتها في وحدة الحق ، أي عدم ظهورها وتميزها فيها التمييز الحقيقي ، مع كونها بالقوة ، وتفصيلها اعتباري بحسب ما يعود إليه آخر ، فهو شهود المفصل ، أي الذي يحصل له التفصيل في المجمل ، فالكل داخل في ذلك الكمال ؛ لكن الكمال الحاوي لتلك الحقائق لا يحصل إلا بظهور الوجود فيها ولها ، وسمة هي معدومة لا تظهر من حيث هي أبدا وأزلا ؛ لكنها مشهودة للحق شهودا علميّا لا عينيّا ، والأسماء تطلب الكمالين جميعا ، فالكثرة اعتبارية والوحدة حقيقية ، كما في النواة الشاملة على الشجر والأثمار ونواها وحدتها كالحقيقة ، وكثرتها فيها اعتبارية ، وإنما يرى
 
-### English
+### English · passage 1
 
 Lest the foregoing suggest that the cognition that “arises” is newly produced because it comes later than that from which it arises, he removes the misunderstanding: “arising” here does not mean temporal origination, which is impossible in the Real's Essence and inseparable attributes, knowledge among them. “For abstraction is a relation, as explained in philosophy.” [The function of this printed/transcribed clause in the argument is uncertain.] What appears as origination in attributes connected with His name *the Manifest* is, in respect of existence, appearance following hiddenness; in respect of the fixed entities, it is described as being preceded by nonexistence. Posteriority in cognition is therefore only posterior **in rank**, by way of natural priority: the later requires the earlier, yet the earlier is not thereby the efficient cause of the later. Divine attributes are not caused by anything, for efficient causation concerns originated things. All these cognitions are eternal and everlasting in one invariant mode; ignorance of none of them came first. Their realities possess a natural order, however, and knowledge relates to each according to its reality. This is why we say God's knowledge of temporal events is eternal, although it relates to them as they are: He knows the past as past, the present as present, and the future as future, without any alteration in His knowledge. What changes is the relation between knowledge and its object, a relation that has no existence; therefore allowing for such a consideration in divine knowledge poses no difficulty. Understand.
 
@@ -2322,11 +2494,15 @@ Since knowledge relates to realities according to their requirements, they are s
 
 A major research datum: at p78 the fixed entities «معدومة لا تظهر من حيث هي أبدا وأزلا» (“nonexistent and never manifest as such”), but this alone does not establish which *possible entities* never have manifested effects; do not overgeneralize. The p78 clause «وسمة هي معدومة» is syntactically suspect in the transcription, and the translation of its antecedent is contextual and provisional. The passage continues p79. **Online page:** https://ablibrary.net/book_content/b/9637/78?lang=ar
 
-## Printed p. 79 · Reciprocal intelligibility: multiplicity in unity and unity in multiplicity
+Related passage IDs: QNW-WIT236
 
-**MSH-067** · [Arabic source](https://archive.org/details/machra3-khosous/page/n79/mode/1up)
+## MSH-067 · Printed p. 79 · Reciprocal intelligibility: multiplicity in unity and unity in multiplicity
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n79/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 الكثرة فيها العالم بها حقيقة لا يتغير علمه عند حصول تلك الكثرة بالفعل في الخارج ، فلا يزاد كمالا لم يكن قبل أصلا ، بل هو ذلك الكمال بعينه ، حصل له صفة الظهور في الخارج ليحصل الكمال الخارجي ، ولا نصيب فيه للعالم إلا فيما علم أولا ، لكن لما كان علمه حاصلا في الخارج فلا بدّ من تعلق علمه به كذلك ليطابق ذلك العلم الأزلي ، فافهم .
 
@@ -2336,7 +2512,7 @@ A major research datum: at p78 the fixed entities «معدومة لا تظهر �
 
 وهذه الصور التي هي ماهيات الخارجية متكثرة بالحقيقة في الخارج معددة للوجود الظاهر فيها لا بحسب نفسه ، بل بحسب الصور الظاهرة فيها ؛ لأنها مرايا متعددة له ، فيتعدد صوره بحسب تعدداتها ، وهذا الاستهلاك - أعني استهلاك الوحدة ، أي اختفاؤها في الحقائق - عكس الاستهلاك الأول الذي هو استهلاك كثرة الحقائق في الوجود ، فهو شهود المجمل في المفصل ، وفي هذه الشهود ترتب على حسب أوقات ظهوره فيها ، فالكثرة والترتب ليس إلا للماهيات الخارجية بالذات ، والذهنية باعتبار قابليتها للخروج ، والوحدة ليس إلا للحق من حيث هي فيه ، فافهم .
 
-### English
+### English · passage 1
 
 ... the one who truly knows it sees the multiplicity within it; his knowledge does not change when the multiplicity comes to exist actually outside the mind. No perfection previously absent is thereby added to knowledge. Rather, the very same perfection acquires the attribute of external manifestation, so that the perfection proper to external existence may be obtained. The knower receives no increment beyond what was known at first; nevertheless, because his knowledge is realized externally, his knowledge must also relate to it as such so as to correspond to the eternal knowledge. Understand.
 
@@ -2350,11 +2526,15 @@ These forms, namely external quiddities, are genuinely multiple outside the mind
 
 Precise claim: real multiplicity of exterior quiddities/manifestations without intrinsic multiplication of unqualified existence. This is not an unrestricted denial of objective diversity. **Online page:** https://ablibrary.net/book_content/b/9637/79?lang=ar
 
-## Printed p. 80 · Text Two: three modes of intrinsic demand/effusion
+Related passage IDs: QNW-WIT236
 
-**MSH-068** · [Arabic source](https://archive.org/details/machra3-khosous/page/n80/mode/1up)
+## MSH-068 · Printed p. 80 · Text Two: three modes of intrinsic demand/effusion
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n80/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 النص الثاني : قال رضي اللّه عنه : [ ومن النصوص : اعلم أن الحق من حيث إطلاقه وإحاطته لا يسمى باسم ، ولا يضاف إليه حكم ، ولا يتعين بوصف ولا رسم ؛ ليس نسبة الاقتضاء إليه بأولى من نسبة اللا اقتضاء ، فإن الاقتضاء المتعقل إذ ذاك أو المنفي هو حكم متعين ووصف مقيد ] .
 
@@ -2366,7 +2546,7 @@ Precise claim: real multiplicity of exterior quiddities/manifestations without i
 
 قال رضي اللّه عنه : [ ثم ليعلم أن الاقتضاء وإن كان ذاتيّا ، فإنّ له ثلاث مراتب : حكمه من حيث المرتبة الأولى : هو أنه لا يتوقف على شرط ، ولا موجب يكون سببا لتعيّنه ، وحكمه من حيث المرتبة الثانية : هو أنه يتوقف تعيّنه على شرط واحد فحسب ، وحكمه من حيث المرتبة الثالثة : هو أن ظهور أحكامه يتوقف على شروط وأسباب ووسائط ] . يريد أن نسبة اللا اقتضاء وإن لم يكن أي : إطلاق الذات أولى من نسبة اللا اقتضاء ،
 
-### English
+### English · passage 1
 
 **Second text. Qūnawī:** “Among the texts: know that the Real, insofar as it is unrestricted and all-encompassing, is not named by a name, assigned a judgement, or determined by a description or defining mark. Ascribing demand [*iqtiḍāʾ*] to it has no greater priority than ascribing non-demand, for a demand conceived or denied at that level is itself a determinate judgement and a restricted qualification.”
 
@@ -2382,31 +2562,35 @@ One can express it as “demanding” or “not demanding” and describe the Es
 
 A fresh numbered text begins p80. Online transcription’s end “نسبة اللا اقتضاء ... أولى من نسبة اللا اقتضاء” repeats itself and likely contains a copy error; preserve and flag. **Online page:** https://ablibrary.net/book_content/b/9637/80?lang=ar
 
-## Printed p. 81 · Effusion without mediation, one mediation, and many conditions
+Related passage IDs: QNW-WIT237
 
-**MSH-069** · [Arabic source](https://archive.org/details/machra3-khosous/page/n81/mode/1up)
+## MSH-069 · Printed p. 81 · Effusion without mediation, one mediation, and many conditions
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n81/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 لكن النسبتين داخلتان في الذات بحسب إطلاقها بالمعنى الأول ، وهذا الاقتضاء وإن كان متحد الذات ، وهو أنه فيض ، لعدم التميز في الإطلاق ، لكنه من حيث التنزل إلى المفاض عليه يختلف أحكامه ؛ لأنه قد يصل بلا واسطة وقد يصل بواسطة ، وقد يصل بوسائط والواسطة الشرط أو السبب ، والمراد بالشرط ما لا دخل له في الإيجاد ، لكن يتوقف عليه ، وبالسبب ما يكون موجبا غير مؤثر ، فلذلك الاقتضاء والفيض عند التنزل من إطلاق الذات ثلاث مراتب مختلفة الأحكام ، وحكمه من حيث المرتبة الأولى : هو أنه لا يتوقف تعلقه بالمفاض عليه على شرط وعلى موجب يكون سببا لتعينه وإن توقف على موجب يكون مؤثرا فيه من الأسماء الإلهية والربوبية إذ لا ترجيح في الذات المطلقة مع غنائها عن العالمين ، وحكمه من حيث المرتبة الثانية : هو أنه يتوقف تعينه ، وإن لم يتوقف أصله على شرط واحد فحسب ، ولو يعتبر السبب هنا ، إذ يشترط معه عدم المانع ، فتتعدد الواسطة لا محالة ، وحكمه من حيث المرتبة الثالثة : هو أن ظهور أحكامه بعد حصول تعينه في إحدى المرتبتين الأوليين يتوقف على شروط وأسباب ووسائط أخرى من الطبائع وأجسام القوى وغيرها ، وإنما اعتبر جميع الأمور هنا مع تعددها ؛ لتشمل هذه المرتبة جميع المراتب غير المتناهية ، وليس المراد أن لا بد من جميع ذلك ، وإنما أراد ضبط المراتب الباقية فيها .
 
-### English
+### English · passage 1
 
 ... but both relations are included in the Essence according to unrestrictedness in the first sense. Demand is one in essence, insofar as it is effusion without differentiation at the unrestricted level; yet its effects differ as it descends to what receives the effusion. It may arrive without mediation, through one mediator, or through many. An intermediary may be a condition or a cause. A “condition” is something that does not itself participate in bringing into existence but on which the effect depends; a “cause” in this context is a necessitating factor that does not itself exercise effective agency. Consequently, as demand and effusion descend from essential unrestrictedness they have three ranks whose rulings differ. At the first rank the relation to the recipient does not depend upon a conditioning factor or one that causes its determination, even if it depends on a genuinely effective source among the divine names and lordly names, since there is no preference within the absolutely unrestricted Essence, which needs none of the worlds. At the second rank, the *determination* of demand, though not the demand in its origin, depends on one condition alone. A cause is not specified here, since treating it as a cause would also require absence of an impediment and thus multiply mediations. At the third rank, once a determination has been established in one of the earlier ranks, the manifestation of its rulings depends on further conditions, causes and intermediaries, such as natures, corporeal forces and other things. All these classes are included to accommodate endlessly many subordinate degrees; not every effect requires all the enumerated factors. He intends to classify the rest of the ranks.
 
-### Arabic
+### Arabic · passage 2
 
 قال رضي اللّه عنه : [ فحكم الاقتضاء الأول هو الفيض الذاتي لا لموجب ، ولا يتعقل في مقابلة قابل أو استعداده ، وحكم الاقتضاء الثاني : التوقف على شرط واحد وجودي فحسب ، وذلك الشرط الوجودي هو العقل الأول الذي هو واسطة بين الحق وبين ما قدر وجوده من الممكنات إلى يوم القيامة ، وأما حكم الاقتضاء من حيث المرتبة الثالثة : فإن ظهور أثره وحكمه موقوف على شروط شتى كباقي الموجودات ] .
 
-### English
+### English · passage 2
 
 **Qūnawī:** “The ruling of the first demand is the essential effusion, not through a necessitating factor, nor can it be conceived in opposition to a recipient or the recipient's preparedness. The ruling of the second demand is dependence on a single existential condition, namely the First Intellect, which mediates between the Real and those possible things that are decreed to exist until the Day of Resurrection. At the third rank, manifestation of the effect and ruling of demand depends upon diverse conditions, as is the case with other existents.”
 
-### Arabic
+### Arabic · passage 3
 
 بيان لأوصاف الفيوض المذكورة وتعيناتها ، أي وإذا كان ذلك ، فحكم الاقتضاء الأول أي أثر الثابت به من حيث المرتبة الأولى حصول الفيض الذاتي قيد به ؛ لأن الأسمائي لا بدّ وأن يكون بواسطة قابليته الأعيان واستعداداتها ؛ لأنها نسب بينها وبين الأعيان ، فهذا الفيض لا يكون بموجب من الأسباب ، ولا يتعقل في مقابلة قابل واستعداده ، إذ القابل واستعداده إنما يحصلان من هذا الفيض ، فلو توقف عليها لزم الدور .
 
-### English
+### English · passage 3
 
 This specifies the kinds and determinations of effusion. The first demand produces an essential effusion, expressly contrasted with a name-conditioned effusion, which necessarily works according to the reception and preparedness of fixed entities because the divine names are relations to those entities. Essential effusion does not occur through any necessitating created cause and is not conceived in relation to a pre-existing recipient and its preparedness: recipient and preparedness are themselves established through this effusion. If it depended on them, a vicious circle would follow.
 
@@ -2414,31 +2598,35 @@ This specifies the kinds and determinations of effusion. The first demand produc
 
 Distinguish the condition (sharṭ), necessitating cause (sabab/mūjib), truly effecting source, and preparedness (istiʿdād); note that “First Intellect” is Qūnawī’s text as quoted. **Online page:** https://ablibrary.net/book_content/b/9637/81?lang=ar
 
-## Printed p. 82 · The Most Holy Effusion and nonexistence of unrealized possibilities
+Related passage IDs: QNW-WIT237
 
-**MSH-070** · [Arabic source](https://archive.org/details/machra3-khosous/page/n82/mode/1up)
+## MSH-070 · Printed p. 82 · The Most Holy Effusion and nonexistence of unrealized possibilities
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n82/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 ومن هنا يفهم أنه لا يكون بواسطة الشرط ، وهذا هو محل الاختيار الإلهي والقدرة مستوية الطرفين والإرادة المرجحة ، والقابل هو العين الثابتة ، والاستعداد تهيؤه للقبول ، وهذا الفيض هو المسمى بالفيض الأقدس ، وحكم الاقتضاء الثاني توقف الفيض الحاصل منه على شرط واحد ، إذ لو تعدد لكان في المرتبة الثالثة ، والشرط هنا وجودي إذ العدمي هو شرط عدم الواسطة حاصل في المرتبة الأولى ، لكنه لما اعتبر كون عدم الواسطة حاصلا ، لم يجعل واسطة بخلاف عدم المانع المعين مع السبب ، فتذكر ولم يعتبر هنا ؛ لأنه إنما يكون شرطا ، حيث فرض المانع ، إذ يكون عدما مضافا ، فيكون في حكم الوجود وإلا كان عدما محضا ، وذلك الشرط الوجودي هو العقل الأول ، إذ الأسماء الإلهية نسب عدمية ، والوجود هو الذات مع اعتبار تلك النسب ، على أنها لا تغاير الذات ، فلا تعد وسائط ، وأما غير العقل الأول ظن فمرتب عليه في تعدد الوسائط ، وإنما لم يجعل سببا لاستلزامه اعتبار الشرط الذي هو عدم المانع معه ، فالعقل الأول هو الواسطة بين الحق وبين ما قدر وجوده من الممكنات ، وإنما اعتبر واسطة ؛ لأنه أكمل الموجودات العالية لكونه بالفعل من كل وجه وقلة وجوه الإمكان فيه ، فهو إلى الحق أقرب ، وإنما قيد للممكنات بما قدر وجوده ، إذ الممكن المعدوم لما لم يخرج من العلم إلى العين ، لم يحتج إلى الواسطة في الوجود ، إذ لا وجود له .
 
-### English
+### English · passage 1
 
 Hence the first effusion does not act through a condition. This is the domain of divine choice, power equally related to the two alternatives, and will selecting one. The recipient is the fixed entity (*ʿayn thābita*); preparedness (*istiʿdād*) is its readiness to receive. This effusion is called the **Most Holy Effusion (*al-fayḍ al-aqdas*)**. The second demand yields an effusion depending on one condition, since two or more would belong to the third rank. This condition must be positive: the absence of mediation is already found at the first rank, and is not counted as another mediator. Absence of an impediment, by contrast, may be considered alongside a cause, but only where an impediment has been posited; in that case its absence is a qualified negation functioning like a positive condition, whereas otherwise it is simple non-being. The one positive condition is the First Intellect. Divine names are non-subsisting relations, and existence is the Essence considered with those relations; because they do not really differ from the Essence they are not counted as separate mediators. Other beings, being subordinate to the First Intellect, entail plurality of intermediaries. The Intellect is called a condition, not a cause, because counting it as a cause would also require the condition that no impediment be present. It mediates between the Real and the possible things whose existence has been decreed. Of the higher existents it is the most perfect, fully actual in all respects and bearing the fewest aspects of possibility, and therefore nearest the Real. The limitation to possibles *decreed to exist* is deliberate: a possible thing that remains non-existent and has not emerged from knowledge into external being requires no mediator of its existence, precisely because it has no such existence.
 
-### Arabic
+### Arabic · passage 2
 
 والحاصل من هذا الاقتضاء العقل الثاني والنفس الكلية ، وأما حكم الاقتضاء من حيث المرتبة الثالثة ، غير العبارة هنا ليفهم المقصود فيما تقدم بعبارة مختصرة وصرح هنا بمعنى الحكم أيضا ، هو أن ظهور الأثر يتوقف على شروط شتى أي أمور متعددة من الشروط والأسباب وغيرها . أطلق عليها الشروط بمعنى المتوقف عليها كباقي الموجودات من العقل الثالث والنفس الثانية والأفلاك ، فافهم .
 
-### English
+### English · passage 2
 
 The effects resulting from the second demand include the Second Intellect and Universal Soul. As for the third rank of demand, the wording is varied to clarify concisely what was meant above: the effect's appearance depends on numerous “conditions,” that is, factors of many kinds, including conditions, causes and other mediators. The word “conditions” is used broadly for whatever an effect depends upon, as in the case of the Third Intellect, the second soul, and the celestial spheres. Understand.
 
-### Arabic
+### Arabic · passage 3
 
 قال رضي اللّه عنه : [ ولست أعني بهذا ، أن ثمة اقتضاءات ثلاثة مختلفة الحقائق ، بل هو اقتضاء واحد ، وله ثلاث مراتب ، يظهر ويتعين به من حيثية كل مرتبة منها أثر أو آثار ، فافهم ] . دفع لما قد يتوهم مما ذكر ، أن في الذات اقتضاءات مختلفة للحقائق ، وهو باطل لما يذكر من أن الواحد لا يقتضي من جهة واحدة إلا الواحد ، فدفع ذلك بأنه اقتضاء واحد
 
-### English
+### English · passage 3
 
 **Qūnawī:** “I do not mean by this that there are three demands differing in their realities. Rather there is one demand with three ranks, and through the aspect of each rank an effect or effects appear and become determined. Understand.” Al-Mahāʾimī forestalls the inference that there are diverse demands within the Essence itself: this would conflict with the principle, to be discussed, that one does not demand more than one from the same aspect. Accordingly, it is one demand ...
 
@@ -2446,11 +2634,15 @@ The effects resulting from the second demand include the Second Intellect and Un
 
 This passage is central for unmanifest fixed possibilities: it asserts the non-existent possible does not require a mediation *in external existence* because it has not emerged into the external realm. It does NOT yet establish intrinsic impossibility of manifestation. The transcription «وأما غير العقل الأول ظن» appears corrupt; no emendation made. **Online page:** https://ablibrary.net/book_content/b/9637/82?lang=ar
 
-## Printed p. 83 · The single effusion and Text Three on knowledge as one reality with many relations
+Related passage IDs: QNW-WIT237
 
-**MSH-071** · [Arabic source](https://archive.org/details/machra3-khosous/page/n83/mode/1up)
+## MSH-071 · Printed p. 83 · The single effusion and Text Three on knowledge as one reality with many relations
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n83/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 بالحقيقة ، يختلف بالمراتب كالأصل ، فله ثلاث مراتب مرتبة في مستقره ، ومرتبتان في تنزله يظهر بحسب كل مرتبة ويتعين بحسبها أثر وآثار ، ففي المرتبة الأولى العقل الأول ، وفي الثانية والثالثة ما ذكرنا ، وإنما قال يظهر ويتعين ، لأن الآثار كامنة في الذات وكانت غير متميزة ، فلما ظهرت ، تميزت فتعينت .
 
@@ -2464,7 +2656,7 @@ This passage is central for unmanifest fixed possibilities: it asserts the non-e
 
 فلذلك قيل : للأعيان الثابتة إنها صور العلم ، وإنها غير مجعولة ، وإلا فلا دخل لانتقاش الصور الكثيرة في العلم الواحد ، لكنها انتقشت باعتبار تعيناته الكثيرة من تعلقاته بالأعيان فهذه التعينات مرايا الأعيان الثابتة . قال الشيخ رضي اللّه عنه : [ وتعلقه بكل معلوم ، تابع للمعلوم بحسب ما هو المعلوم عليه في نفسه : بسيطا كان المعلوم أو مركبا ، زمانيّا كان أو مكانيّا ، أو غير زماني ولا مكاني مؤقت
 
-### English
+### English · passage 1
 
 ... in its reality, but it differs according to its ranks, like the originating principle. It has three ranks: one at its own abiding station and two in its descent; at each rank a particular effect or several effects are manifested and determined. At the first there is the First Intellect; at the others, the effects already discussed. Qūnawī says both “appear” and “become determined” because the effects are concealed within the Essence and as yet indistinguishable; through manifestation they become distinguishable and determinate.
 
@@ -2482,11 +2674,15 @@ Hence the fixed entities are called “forms of knowledge” and “unmade.” I
 
 The grammar of “three ranks ... and two” on opening of page is unclear; report, do not “correct” to a unified cosmological model. In this section the unitary knowledge is intrinsic; pluriformity belongs to its relations. **Online page:** https://ablibrary.net/book_content/b/9637/83?lang=ar
 
-## Printed p. 84 · Immutable knowledge and changing relations; a general rule for judging
+Related passage IDs: QNW-WIT237
 
-**MSH-072** · [Arabic source](https://archive.org/details/machra3-khosous/page/n84/mode/1up)
+## MSH-072 · Printed p. 84 · Immutable knowledge and changing relations; a general rule for judging
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n84/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 القبول ، متناهي الحكم والوصف ، أو غير مؤقت ولامتناه فيما ذكرنا ، فاعلم ذلك ] .
 
@@ -2498,7 +2694,7 @@ The grammar of “three ranks ... and two” on opening of page is unclear; repo
 
 إنما كان أيضا ؛ لأنه ذكر أولا من تفريع الأول تعقل الوحدة ، ووجوب الوجود والمبدئية ، ومن تفريع الثاني الاقتضاءات المختلفة بحسب المراتب ، ومن تفريع الثالث تبعية تعلق العلم بالمعلومات ، فذكر هاهنا ما يصلح كميته للكل ، وهو أن الحكم من كل
 
-### English
+### English · passage 1
 
 **Qūnawī (continuing):** “... in receptivity and limited in its ruling and attribute, or not temporally limited and infinite in the respects we have mentioned. Know this.”
 
@@ -2514,39 +2710,43 @@ It is also a deduction in another sense. From the first text Qūnawī had derive
 
 Retain grammatical difference between intrinsic knowledge (unchanged) and its changing relation (relational, not separately subsistent). The text breaks mid-sentence on p84. **Online page:** https://ablibrary.net/book_content/b/9637/84?lang=ar
 
-## Printed p. 85 · Judgements vary with the states of judge and recipient
+Related passage IDs: QNW-WIT237
 
-**MSH-073** · [Arabic source](https://archive.org/details/machra3-khosous/page/n85/mode/1up)
+## MSH-073 · Printed p. 85 · Judgements vary with the states of judge and recipient
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n85/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 حاكم قديما أو حادثا على كل محكوم عليه مبدعا أو ماديّا تابع لحال الحاكم لوجوب المناسبة بين الأثر والمؤثر ، وإنما اعتبر حاله إذ لا أثر للذات من حيث هي لتساوي الآثار إليه ، وإنما اعتبرت حين الحكم ؛ لأن السابقة واللاحقة غير موجودتين ، فلا أثر لها وتابع لحال المحكوم عليه ، إذ لا بدّ من قابليته لذلك الحكم ، وقيدت تلك الحال بحال حكم الحاكم إذ الحالة السابقة ، واللاحقة غير موجودتين حال تأثير الحاكم ، فكيف يتأثران بها ويقرب من هذا قول أهل المعقول إن النتيجة لا بدّ أن تناسب المقدمتين .
 
-### English
+### English · passage 1
 
 ... judging agent, whether eternal or originated, upon what is judged, whether immaterially originated or material, follows the state of the judge, for the effect must be proportionate to the agent. It is the *state*, rather than the Essence regarded solely as Essence, that is here considered, because without qualification effects stand in an equivalent relation to the Essence. The judge's state at the moment of judging is specified, since states before and after that moment are not then operative and have no such effect. The judgement also follows the state of what is judged, since the object must be capable of receiving that judgement. Again, the relevant state is its state *at the time of judgement*, since earlier and later states are not then operative. This resembles the logicians' principle that a conclusion must correspond to its two premises.
 
-### Arabic
+### Arabic · passage 2
 
 قال رضي اللّه عنه : [ فإن كان المحكوم عليه من شأنه التنقل في الأحوال ، تنوعت أحكام الحاكم عليه في كل حال ، واختلفت بحسب تلبسه بتلك الأحوال ، وإن كان المحكوم عليه مما من شأنه الثبات على وتيرة واحدة ، ثبت حكم الحاكم عليه بحسب التعلق الأول المعين بحكم الحاكم عليه ومقتضاه وبقي الأمر بحسب حال الحاكم حين الحكم ، فإن كان الحاكم من مقتضى ذاته التقلب في الأحوال بحسبها أو مقتضى ذاته أنه ثابت ، والأحوال تنقلب ، فيكون تبعية حكم الحاكم بحسب أحد الأمرين الحاضرين لمراتب حكم كل حاكم ، وكل محكوم عليه إذ لا يخرج عما ذكرته حكم حاكم ولا محكوم عليه ] .
 
-### English
+### English · passage 2
 
 **Qūnawī:** “If what is judged is of a kind whose states change, the rulings of the judge concerning it will vary with each state, differing as it becomes clothed in those states. If, however, what is judged is of a kind whose state remains on a single course, the judge's ruling remains fixed according to the first relation that determined the judgement and its requirement. What remains depends also on the judge's state at the time of judgement: whether the judge is such that it changes according to its states, or such that it remains fixed while the states change. The way a judge's ruling follows these factors therefore falls under the respective present alternatives, covering all ranks of every judging agent and every object judged. No judgement or thing judged falls outside what I have described.”
 
-### Arabic
+### Arabic · passage 3
 
 أي : لمّا كان الحكم تابعا لحال الحاكم والمحكوم عليه حين حكمه عليه ، فإن كان المحكوم عليه مما ينتقل من حال إلى حال ، كثرت أنواع حكم الحاكم عليه في كل حال يكون عليه حكم من الحاكم على حدة ، واختلفت تلك الأحكام بالجنسية والصنفية وغيرها بحسب تلبس المحكوم عليه بتلك الأحكام المختلفة سواء كان الحاكم ثابتا أو متقلبا ، فأما المتقلب كالصانع في صنائعه .
 
-### English
+### English · passage 3
 
 Since a judgement depends on the respective states of judge and object at the time of judging, if the object passes from one condition to another, the sorts of ruling multiply. For each new condition there is a specific judgement, differing by genus, class and other characteristics according to the object's changing situation, whether the judging agent itself remains fixed or changes. A changing agent is exemplified by an artisan in his various arts and works.
 
-### Arabic
+### Arabic · passage 4
 
 وأما الثابت فالأسماء الإلهية والملائكة بالنسبة إلى عالم الكون والفساد ، وذلك بأن ينقطع حكم الحاكم الثابت عن المحكوم عليه بحسب حال تجددت له ، فيصير الحاكم عليه غيره ، ولذا يختص أعمال الأسماء والملائكة بالأوقات المخصوصة لها ، وإن كان المحكوم عليه مما من شأنه الثبات على نهج واحد ثبتت عليه الحكم الأول من الحاكم على حسب تعلق حكمه به أولا ؛ لأن تعلق حكم الحاكم به بحسب هذه الحالة مما دامت هذه الحالة ، بقي التعلق وهذا التعلق معين للحكم ، فيبقى الحكم المعين ببقاء هذا التعلق الباقي بتلك الحالة التي للمحكوم عليه .
 
-### English
+### English · passage 4
 
 A fixed agent is exemplified by the divine names and the angels in relation to the world of generation and corruption. The judgement of a fixed agent can cease to apply to an object when the latter undergoes a change, at which point another agent comes to govern it. Hence the operations of different names and angels are associated with their appropriate times. If, on the other hand, the object naturally remains in one condition, the first judgement remains fixed according to the original relation of the judge to it. So long as the object retains that condition, the relation remains, and because the relation determines the ruling, the determinate ruling continues as well.
 
@@ -2554,11 +2754,15 @@ A fixed agent is exemplified by the divine names and the angels in relation to t
 
 This page applies the judge/recipient rule to changes in finite agents and objects. Beware of attributing temporal change directly to the divine Essence. **Online page:** https://ablibrary.net/book_content/b/9637/85?lang=ar
 
-## Printed p. 86 · Four combinations of change and fixity; Text Four on the inseparability of knowledge from existence
+Related passage IDs: QNW-WIT238
 
-**MSH-074** · [Arabic source](https://archive.org/details/machra3-khosous/page/n86/mode/1up)
+## MSH-074 · Printed p. 86 · Four combinations of change and fixity; Text Four on the inseparability of knowledge from existence
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n86/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 ولكن هنا كلام ، وهو أن تعلق حكم الحاكم أيضا بحسب حال الحاكم ، فنقول إن كان الحكام أيضا ثابتا ، فلا يختلف الحكم عليه كحكم الحق تعالى على العقول ، فلذا كانت بالفعل أزلا وأبدا ، وإن كان مختلف الأحوال كالنفوس يؤثر فيها العقول الكثيرة يختلف أحكامها عليها ، وإن كانت ثابتة ، فلذا يختلف الفيض المتفضل عليها . وجواب قوله : فإن كان الحاكم ، محذوف وهو ثبت الحكم على وتيرة واحدة ، وجواب ما عطف عليه أيضا محذوف ، وهو يتكثّر الأحوال عليه .
 
@@ -2566,7 +2770,7 @@ This page applies the judge/recipient rule to changes in finite agents and objec
 
 النص الرابع : قال رضي اللّه عنه : [ ومن تفاريع ما ذكرنا من النصوص أيضا ، أن العلم يتبع الوجود ، بمعنى أنه حيث يكون الوجود يكون العلم دون انفكاك ] . ومن تفاريع النص الأول المبين : أن أول نسبة غيب الإطلاق ، هي العلم . والنص الثاني المبين فيه ، أن العقل الأول الذي هو الروح الأعظم « 1 » واسطة بين
 
-### English
+### English · passage 1
 
 A further point remains: the relation of the judge's ruling also depends on the judge's state. If the judge itself is fixed, its ruling over a stable object does not vary, as in the Real's ruling over the intellects, which are therefore fully actual eternally and perpetually [in the metaphysical account being expounded]. Where states vary, as with souls affected by many intellects, the intellects’ rulings over those souls differ even though the intellects remain fixed; hence the effusion bestowed on the souls varies. The implied answer to Qūnawī's conditional “if the judge ...” is “the ruling remains fixed in one fashion”; the answer to the alternative clause is “its states become multiple.”
 
@@ -2578,11 +2782,15 @@ The statement “therefore ...” sums up the preceding analysis and is meant to
 
 The extended text in footnote 1 identifying the First Intellect, Supreme Pen, and Muhammadan Spirit is NOT part of al-Mahāʾimī’s main paragraph and is deliberately excluded. The Qūnawī passage begins p.86. **Online page:** https://ablibrary.net/book_content/b/9637/86?lang=ar
 
-## Printed p. 87 · All existence entails knowledge; differences of manifestation and preparedness
+Related passage IDs: QNW-WIT238
 
-**MSH-075** · [Arabic source](https://archive.org/details/machra3-khosous/page/n87/mode/1up)
+## MSH-075 · Printed p. 87 · All existence entails knowledge; differences of manifestation and preparedness
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n87/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 الحق وجميع الموجودات . والنص الثالث المبين فيه : أن تعينات العلم بحسب تعينات المعلومات ، إن العلم يتبع الوجود ، ضرورة أن التعين الأول لما كان أوسع التعينات ، كان سائر التعينات كذلك ، ضرورة أن لازم الأعمى لازم الأخص ؛ للزوم الأعم كل أخص ، ولازم اللازم لازم ضرورة أن توسط العقل بالمناسبة الروحانية ، إذ لا بدّ من المناسبة بين الفاعل والمنفعل ، فلذلك يفيض على كل روح ، لكن بحسب استعداده .
 
@@ -2594,7 +2802,7 @@ The extended text in footnote 1 identifying the First Intellect, Supreme Pen, an
 
 قال رضي اللّه عنه : [ وتفاوت العلم بحسب تفاوت قبول الماهية الوجود تمامية ونقصانا ، فالقابل للوجود على وجه أتم ، يكون العلم هناك أتم ، وينقص العلم بقدر القبول الناقص ، وغلبة أحكام الإمكان على أحكام الوجوب عكس ما ذكرنا أولا ، فاعلم ذلك ] . هذا جواب عن سؤال مقدر تقديره ، لو كان العلم لازما للوجود ملازمة متساوية ؛ لكان مقتضى ذاته ، ومقتضى الذات لا يتفاوت بالعوارض ، فما بالنا نرى بعض الأشياء تام العلم وبعضها ناقصا فيه ، بل لا نرى لبعضها العلم أصلا حتى إن بعض الإنسان يكون
 
-### English
+### English · passage 1
 
 ... the Real and all existents. The third text showed that knowledge's determinations correspond to the determinations of known things. It follows that knowledge accompanies existence: since the first determination is the most comprehensive, its concomitants extend through the more particular determinations, because whatever necessarily accompanies the general also accompanies each particular falling under it, and a concomitant of a concomitant is likewise necessary. The mediation of the Intellect is grounded in spiritual affinity, for an agent and recipient must share a relevant affinity; hence the Intellect pours forth upon every spirit according to that spirit's preparedness.
 
@@ -2612,47 +2820,51 @@ Another argument is that existents are not without immaterial powers, and every 
 
 Fourth text attributes universal knowing to existence and its different manifestations, not necessarily to conscious thought. The existential/epistemic register must be checked before comparison with panpsychism or graded consciousness. **Online page:** https://ablibrary.net/book_content/b/9637/87?lang=ar
 
-## Printed p. 88 · Degrees of cognitive manifestation and opening of Text Five
+Related passage IDs: QNW-WIT238
 
-**MSH-076** · [Arabic source](https://archive.org/details/machra3-khosous/page/n88/mode/1up)
+## MSH-076 · Printed p. 88 · Degrees of cognitive manifestation and opening of Text Five
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n88/mode/1up
+
+Speaker: Qūnawī (quoted bracketed lemma) and al-Mahāʾimī (commentary); individual pair boundaries may contain both
+
+### Arabic · passage 1
 
 جاهلا بربه تعالى . فأجاب : بأن العلم وإن كان في الوجود على نسق واحد بدليل أن تدبير الأرواح في أجسام الجهال على نهج تدبيره في أجسام أهل الكمال ، لكن تفاوت العلم بحسب تفاوت تجلي الوجود على الماهيات ، فكل ماهية قبلت من العلم بمقدار ما صارت مجليا للوجود ؛ فإن العلم من توابع الوجود فحيث كان المتبوع ظاهرا على أتم الوجوه ، أو كان في ظهوره نقص ، كان التابع كذلك .
 
-### English
+### English · passage 1
 
 ... may remain ignorant of his Lord. The answer is that although knowledge accompanies existence according to a single rule—as is shown, on this account, by the governance of the bodies of the ignorant through their spirits in much the same manner as in perfected persons—the *manifestation* of knowledge varies with the manner in which existence discloses itself to particular quiddities. Each quiddity receives knowledge in the measure in which it becomes a locus of existence. Since knowledge follows existence, wherever existence manifests in the fullest fashion knowledge likewise manifests fully, and wherever its manifestation is restricted or deficient the accompanying knowledge appears deficiently as well.
 
-### Arabic
+### Arabic · passage 2
 
 فلذلك لم يظهر في الجمادات شيء من العلم وإن كان في وجودها من حيث الإطلاق العلم الكامل حتى نطقت مع الكمّل من الأنبياء والأولياء عليهم السلام ؛ وسبب ذلك غلبة نظرهم إلى الوجود المطلق فيها ، فلذلك كشفوا بملكوتها ، بخلاف الناظرين إلى تقيده بها سيما من قصر نظرهم على ماهيتها ، حتى قالوا إنها نفس وجودها .
 
-### English
+### English · passage 2
 
 Thus no knowledge ordinarily appears in inanimate things, even though, considered with respect to unrestricted existence, complete knowledge is present in their existence; this is why, according to transmitted reports, such things have spoken in the presence of perfected prophets and saints. Such saints' vision is chiefly directed to unrestricted existence within them, so that the inner, spiritual realm of the things is disclosed to them, unlike those who attend only to existence's restriction by the things' particular forms, especially those who restrict their attention to quiddity and even identify that with existence itself.
 
-### Arabic
+### Arabic · passage 3
 
 ثم أشار رضي اللّه عنه إلى علة عدم الظهور في البعض بأنها غلبت أحكام الإمكان التي أصلها العدم فيها ، فلا يظهر العلم التابع للوجود مع ضده ، ولذلك نقصت القوى الروحانية في الجمادات وزادت في النبات وغلبتهما في الحيوان وعلى الجميع في الإنسان ، وهذه القوى لتجردها يغلب فيها الوجوب الذي هو من صفات الوجود ، فكلما زادت ، زاد العلم ظهورا بنسبة أحكام الوجوب فيه على أحكام الإمكان ، وأشار إليه بقوله عكس ما ذكرنا أولا .
 
-### English
+### English · passage 3
 
 Qūnawī next indicates why knowledge is not outwardly apparent in certain things: the rulings of possibility, whose basis is nonexistence, dominate in them, and the knowledge accompanying existence is not manifest where the opposing limitation prevails. Thus spiritual powers are less manifest among minerals, greater in plants, greater still in animals, and most comprehensive in human beings. Insofar as these powers are immaterial, the rulings of necessity, a quality associated with existence, prevail within them. The greater their manifestation, the greater the outward display of knowledge, in proportion to the predominance of the rulings of necessity over those of possibility. This is the “reverse of what we mentioned first.”
 
-### Arabic
+### Arabic · passage 4
 
 ثم قال : فاعلم ذلك ، تنبيها على نفي ما يزعمه الجمهور من أن العلم بالكليات ليس إلا للإنسان والملائكة ، ولا دليل لهم على ذلك سوى أنهم لم يظفروا إلى البرهان عليه ، ولا يصلح لهم ذلك للاستدلال على النفي مع أنه مخالف للنصوص ، ولما ظهر على الأنبياء والأولياء عليهم السلام على أن في بعض الحيوان كالنحل والعنكبوت من الصنائع ما يتحير فيها محقق المهندسين ، فكيف يمكن نفي العلم عنها ، واللّه أعلم .
 
-### English
+### English · passage 4
 
 His final instruction to “know this” also challenges the common claim that universal knowledge belongs exclusively to human beings and angels. Al-Mahāʾimī argues that the absence of a demonstration establishing cognition in other things is no demonstration of its absence; indeed, the restriction is contrary to the scriptural texts and to phenomena said to have been shown to prophets and saints. Moreover, the structures made by some animals, such as bees and spiders, astonish even expert geometers. How, then, can knowledge be categorically denied to them? God knows best.
 
-### Arabic
+### Arabic · passage 5
 
 النص الخامس : قال رضي اللّه عنه : [ ومن تفاريع ما ذكرنا من النصوص المحققة أيضا ] . هذا تفريع على النص الأول من حيث أن الإطلاق السلبي لا يمكن معرفته ، وعلى الثاني من حيث إن إمكان معرفة النصوص بمعرفة ما ورائها من الأسماء والأعيان ، وعلى
 
-### English
+### English · passage 5
 
 **Fifth text. Qūnawī:** “Among the further deductions from the established texts mentioned earlier ...” Al-Mahāʾimī explains that this is a deduction from the first text insofar as unrestrictedness indicated negatively is not itself directly knowable, and from the second insofar as one can come to know the disclosed truths through knowledge of the names and fixed entities lying behind them, and from ...
 
@@ -2660,11 +2872,13 @@ His final instruction to “know this” also challenges the common claim that u
 
 This page concludes Qūnawī’s Text 4 and opens Text 5 mid-sentence; the next stage must resume on p.89 without dropping the continuation. “Necessity” refers to rulings predominating in powers, not independent necessary existence of created entities. **Online page:** https://ablibrary.net/book_content/b/9637/88?lang=ar
 
-## Printed p. 89 · Text Five: the criterion of the comprehensive station
+## MSH-P089 · Printed p. 89 · Text Five: the criterion of the comprehensive station
 
-**MSH-P089** · [Arabic source](https://archive.org/details/machra3-khosous/page/n89/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n89/mode/1up
 
-### Arabic
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 الثالث بأن غاية تعلق ذلك ما هي .
 
@@ -2676,7 +2890,7 @@ This page concludes Qūnawī’s Text 4 and opens Text 5 mid-sentence; the next 
 
 والمراد بالذوق ما يدرك بالوجدان ، وإنما قيد من حيث الأصالة ؛ لأنه يستند إلى الذات أيضا من حيث استناد الأسماء إليه وشموله عليها ، وفيه تنبيه على أن الكمال لكونه أمرا إضافيّا ، قد يكون مطلقا ، وهو مخصوص مقام الكمال ، وقد يكون بالنسبة إلى شيء دون شيء ، وهو عموم مقام الكمال ، وجب علي أن أفرد وأميز النصوص عن غيرها ، وهي العلوم المختصة بذوق المقام الأكمل أي : خصوص مقام الكمال ، وهو المطلق المستند إلى حضرة جمع الجمع ؛ فلذلك فسّر بالجمع : وهي العلوم المختصة بصحة ثبوتها مطلقا بالنسبة
 
-### English
+### English · passage 1
 
 [Continuation from p. 88.] ... the third text, in respect of the ultimate scope of that relation.
 
@@ -2692,11 +2906,15 @@ A *taste* is what is apprehended through immediate experience (*wijdān*). The q
 
 The source page ends mid-sentence, continued on printed p. 90. Note transcription has odd grammar «الحضرة اسم».
 
-## Printed p. 90 · Text Five: cognition and what lies beyond its object
+Related passage IDs: QNW-WIT238
 
-**MSH-P090** · [Arabic source](https://archive.org/details/machra3-khosous/page/n90/mode/1up)
+## MSH-P090 · Printed p. 90 · Text Five: cognition and what lies beyond its object
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n90/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 إلى جميع الإطلاق والأذواق بحيث يطابق لما يعلمه اللّه تعالى في أعلى درجات علمه تعالى ، وهي العلم الذاتي وأتمها لشمولها على الذات وشؤونها ، وأكملها بالجمع بين الإجمال والتفصيل ، وتلك النصوص هي الأمور التي ترجم عنها في بعض المواضع من كتبي من غير هذا الاعتبار ، ولم أذكر العلوم التي يختص تقرير صحته وثبوته بالنسبة إلى نظر دون نظر ، والإضافة إلى ذوق دون ذوق .
 
@@ -2708,7 +2926,7 @@ The source page ends mid-sentence, continued on printed p. 90. Note transcriptio
 
 إذا عرفت هذا فنقول : كل معلوم سواء كان من الموجودات أولا أدركه الإنسان ، خص بالذكر ، لكونه أكمل مدرك ؛ لاجتماع القوى المدركة كلها فيه ، مع أنه مدرك بذاته أيضا بنظره أي : بالفكر النظري والتعريفات العقلية أو كشفه أي بالقوة القدسية المسماة بالبصيرة الباطنة أو بالوجدان أو باتصال الملأ الأعلى من العقول والنفوس السماوية وغيرها ، أو حسه الظاهر أو خياله الذي هو من الحواس الباطنة جمعا بأن يتفق له في أمر واحد المدركان فصاعدا ، كالنظر والكشف في الأمور الغيبية ، والحس والخيال في الأمور
 
-### English
+### English · passage 1
 
 ... to every form of unrestrictedness and every kind of experiential taste, so as to correspond to what God knows at the highest level of divine knowledge—essential knowledge, which is the fullest because it embraces the Essence and its affairs, and most perfect because it unites undifferentiated comprehension with detailed articulation. These are the matters I have discussed elsewhere under another consideration. I have not included knowledge whose verification is proper to one perspective rather than another, to one taste rather than another.
 
@@ -2724,11 +2942,15 @@ The expression “any known thing” includes things that exist and things that 
 
 Page ends mid-enumeration; continued on 91. Copy-text has «معلم» for «معلوم» in quotation; leave original and mark uncertain.
 
-## Printed p. 91 · Text Five: complete knowledge, the fixed entities, and the unknowable Essence
+Related passage IDs: QNW-WIT238, QNW-WIT239
 
-**MSH-P091** · [Arabic source](https://archive.org/details/machra3-khosous/page/n91/mode/1up)
+## MSH-P091 · Printed p. 91 · Text Five: complete knowledge, the fixed entities, and the unknowable Essence
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n91/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 الظاهرة ، والنظر والحس والخيال فيما بين بين ، كأشكال الهندسة ، وفرادى كالأمور الكشفية التي لا يدركه العقل ، وكالخيالات التي لا يدخل تحت الحس كالبحر من الزئبق ، والعقليات التي لا يدركها الكشف ، كالجمع بين النقيضين ، فإنه أمر عقلي والكشف يأبى تصوره إلا على مثال بأن يتصور الجمع بين الأشياء الممكنة الاجتماع ، ثم يتصور النقيضين ، فيقيس الجمع هنا على الجمع هناك ، والحال أنه لم ينته نظره ، وكشفه لذلك الأمر المدرك بأحدهما إلى إدراك ما وراءه ، أو لم ينته إدراكه لما أدركه حسّا وخيالا إلى إدراك ما وراءه ، ويكون إدراك ما وراءه بعد معرفة ذاتياته كلها ، المفيدة للحد التام ومعرفة لوازمه الكلية إلى الشاملة للأفراد والأحوال المفيدة للرسم التام .
 
@@ -2736,7 +2958,7 @@ Page ends mid-enumeration; continued on 91. Copy-text has «معلم» for «م�
 
 قال رضي اللّه عنه : [ وسواء كان متعلّق إدراكه ومعرفته العالم من حيث معانيه وأرواحه ، أو من حيث صوره وأعراضه ، أو كان متعلق معرفته الحق ، فإنه متى كشف له عن جلية الأمر وصورة تعين كل معلوم في علم الحق ، وجد الأمر كذلك ، فإنه ما لم ينته معرفته بالحق إلى إطلاقه وصرافة وحدة ذاته الحقيقية التي لا اسم يعينها ولا وصف ولا حكم ولا رسم ولا ينضبط بشهود ، ولا يعقل ولا ينحصر في أمر معين ، لم يعرف أن ليس وراء اللّه مرمى ، وإن الإحاطة به علما وشهودا محال ، وأن ليس بعد الوجود الحق المطلق إلا العدم المتوهم هذا ، وإن كان لمعرفة تعذر العلم باللّه على نحو ما يعلم نفسه طريق آخر أعلى وأتم وأكشف ، عرفناه ذوقا وشهودا بحمد اللّه ، ومنه لكن ذلك مما يحرم بيانه وتسطيره وغاية البيان عنه
 
-### English
+### English · passage 1
 
 ... things, or by considering, sensing, and imagining intermediate objects such as geometrical figures. These faculties can also work individually: there are disclosures not grasped by discursive intellect, imagined things not sensed—such as a sea of mercury—and intellectual objects not reached through unveiling, such as the conjunction of contradictories. The latter is an intellectual object which unveiling can only represent through an analogy: first one imagines combining things that can coexist, then imagines opposites and transfers the pattern of combination to them. If the perceiver stops at any of these modes without apprehending what lies beyond their object, even after grasping all its essential elements (yielding a complete definition) and the universal concomitants applying across individuals and conditions (yielding a complete description), the apprehension is incomplete.
 
@@ -2748,11 +2970,15 @@ Necessary concomitants are specified because other accidents, and merely particu
 
 The wording «الجمع بين النقيضين» is reported as an intellectual thought-object, not as an ontologically possible conjunction.
 
-## Printed p. 92 · Text Five: knowing the limits of knowing
+Related passage IDs: QNW-WIT239
 
-**MSH-P092** · [Arabic source](https://archive.org/details/machra3-khosous/page/n92/mode/1up)
+## MSH-P092 · Printed p. 92 · Text Five: knowing the limits of knowing
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n92/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 هذا الإلماع المذكور ] .
 
@@ -2764,7 +2990,7 @@ The wording «الجمع بين النقيضين» is reported as an intellectua
 
 ثم بيّن استحالته بقوله : ( وأن ليس ) أي : ولا يعرف أن ليس بعد الوجود الحق
 
-### English
+### English · passage 1
 
 ... the hint just mentioned.”
 
@@ -2780,11 +3006,13 @@ He next explains the impossibility of such encompassing knowledge by saying that
 
 Page breaks during the argument; «العلم» and «المعرفة» are here deliberately contrasted.
 
-## Printed p. 93 · Text Five: the name as qibla of a station
+## MSH-P093 · Printed p. 93 · Text Five: the name as qibla of a station
 
-**MSH-P093** · [Arabic source](https://archive.org/details/machra3-khosous/page/n93/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n93/mode/1up
 
-### Arabic
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 المطلق إلا العدم المتوهم ؛ لأن العدم المعقول من الموجودات الذهنية ، فلا يخرج عن مطلق الوجود الحق ، فإذا لم يكن وراءه إلا أمر متوهم ، لا يتعلق به تعقل ، فلا يتعقل الإطلاق حق التعقل لو أمكن أصل تعقله ، فلا يتعقل ما يتوقف عليه تعقله حق التعقل ، حتى أنه لا يمكن معرفة شيء من الأشياء حق المعرفة ، لتوقف معرفة كل شيء على معرفة الحق ، ومعرفته على معرفة إطلاقه ؛ فلذلك قال الشيخ محيي الدين بن العربي رضي اللّه عنه : لست أعرف من شيء حقيقته * وكيف أعرفه وأنتم فيه بهذا الطريق عرفنا تعذر العلم باللّه على نحو ما يعلم نفسه ، فإن علمه ليس يتمثل المعلوم فيه ، وانتقاشه حتى يتوقف كماله على إدراك ما وراءه ، بل علمه حصول حقيقته له ، وهي تحتاج إلى برهان فلسفي .
 
@@ -2794,7 +3022,7 @@ Page breaks during the argument; «العلم» and «المعرفة» are here 
 
 أي : هذا الحكم ، وهو أن الحق بلا شيء من الأشياء لا يمكن معرفته حق المعرفة - وإن كان الذوق - أي : الوجدان والمعرفة الحاصلة لصاحب هذا الذوق إلى العلم العيني الحاصل له ، والشهود إلى العين اليقيني الحاصل به ، من حيث إسناد ذلك الذوق والمقام الحاصل به من المعرفة والشهود إلى حضرة الأمم بكونه من الأسماء الإلهية ، واعتبر الإسناد
 
-### English
+### English · passage 1
 
 ... there is only imagined nonexistence. Nonexistence as conceived is itself an object in the mind and thus not outside existence considered absolutely. Beyond absolute existence there is only a merely imagined “thing,” not a real object of intellection. Hence even if one could conceive the absolute in some elementary way, one could not adequately conceive its unrestrictedness; nor what an adequate understanding of it would presuppose. It follows that nothing can be known in complete perfection because knowing every thing requires knowing the Real, and knowing the Real requires knowing His unrestrictedness. Ibn ʿArabī accordingly says [verse]: “I do not know the reality of any thing; how could I know it when You are within it?” This argument establishes why one cannot know God as He knows Himself: divine knowing is not the impression of a representation of the known requiring further knowledge of its background, but His own reality being present to Him. This latter claim calls for philosophical demonstration.
 
@@ -2808,47 +3036,51 @@ The printed commentary next attributes to “Shaykh Ibn ʿArabī” the saying t
 
 The line «حضرة الأمم» is suspicious in the online text, likely an OCR/transcription defect. The Ibn ʿArabī verse should be collated before quotation in an edition.
 
-## Printed p. 94 · Text Five: station-relative attainment is not absolute knowledge
+Related passage IDs: QNW-WIT239
 
-**MSH-P094** · [Arabic source](https://archive.org/details/machra3-khosous/page/n94/mode/1up)
+## MSH-P094 · Printed p. 94 · Text Five: station-relative attainment is not absolute knowledge
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n94/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 إلى حضرة الاسم ؛ لأن الذات من حيث هي مطلقة لا يتعلق بها المعرفة ، بل قيد الاسم بكونه من الأسماء الإلهية ؛ لأن أسماء الذات من حيث لا يغايره مما لا يتعلق العلم بها أيضا ، كما أشار إليه صلى اللّه عليه وسلم : « أو استأثرت به في علم الغيب عندك » « 1 » . وأسماء الربوبية لا تكون غاية للكمّل لكثرة الوسائط .
 
-### English
+### English · passage 1
 
-... to the presence of the name: the Essence in its unrestrictedness cannot be an object of knowledge. Even those names of the Essence which, in their aspect of non-otherness, are not distinguishable from It cannot be fully comprehended. The Prophet alludes to this with “or what You have reserved for Yourself in the knowledge of Your unseen.” Names of lordship, involving several mediations, cannot constitute the final reach of the perfected knowers.
+... to the presence of the name: the Essence as unrestricted cannot be an object of knowledge. He further qualifies the name as one of the divine names, because the names of the Essence, insofar as they are not other than It, likewise cannot be objects of knowledge. The Prophet alludes to this with ‘or what You have reserved for Yourself in the knowledge of the unseen with You.’ The names of lordship cannot be the final goal of the perfected, owing to the many intermediaries involved.
 
-### Arabic
+### Arabic · passage 2
 
 وقوله : ( الذي ) بدل من قوله : ( اسم ) أشارت إلى أنه لا يمكن الكمّل الإحاطة بكل الأسماء لاختصاص كل باسم خاص هو ربه الذي إذا توجه إليه أجاب ، فهو الاسم الأعظم في حقه ، ولذا اختلف الاسم الأعظم بالنسبة إلى الأشخاص سوى الكمل . فإنهم تكثر التجليات من الأسماء عليهم ، ويجابون بأسماء كثيرة من غير اختصاص باسم دون اسم .
 
-### English
+### English · passage 2
 
-The relative pronoun qualifying “name” points to a limitation: even accomplished knowers do not encompass all divine names at once. Each has a special name as his Lord, and when he calls through that name he is answered. For him it is the Greatest Name. Hence reports of the Greatest Name differ between people. More comprehensively perfected persons receive numerous self-disclosures under many names, not being tied to only one.
+His expression ‘which’ stands in apposition to ‘name’. It indicates that the perfected cannot encompass all the names, since each is associated with a particular name that is his Lord: when he turns to it, he receives an answer. It is therefore the Greatest Name in his case. Accordingly, the Greatest Name varies according to persons, except for the perfected: they receive many self-disclosures from the names and are answered through many names, without being restricted to one name rather than another.
 
-### Arabic
+### Arabic · passage 3
 
 فهذا الاسم الخاص قبله صاحب ذلك المقام ، لا يتجلى عليه غيره ، فما فوقه وإن تجلى عليه ما دخل تحت حيطة اسمه ، وغاية معرفته من الحق الذي هو الذات من حيث تجليه بهذا الاسم نهاية في معرفة الذات في حق هذا الشخص ، سيما من الوجه الذي يقضي أن الاسم عين المسمى وهو إن الذات مع الأسماء يتصادق ، وإن تباينت بحسب المفهومات ، فإذا علم الاسم ، فقد علم الذات .
 
-### English
+### English · passage 3
 
 The special name becomes the orientation of a given station; no other name discloses itself to its possessor except insofar as it falls under the scope of that name. His limit of knowing the Real is thus a limit of knowing the Essence *as disclosed through this name*. This is especially so under the consideration that the name is the Named: Essence and names coincide in reference while differing in their concepts. Knowledge of the name therefore entails knowledge of the Essence under the name's qualification.
 
-### Arabic
+### Arabic · passage 4
 
 ثم استدرك رضي اللّه عنه لتصحيح ما سبق من المسألة بأن المعرفة الحاصلة ، والشهود الحاصل من الذوق المستند إلى حضرات الأسماء المخصوصة الإلهية غايات بالنسبة إلى ما دونها من المعرفة والشهود الحاصلين من الذوق المستند إلى أسماء الربوبية وما دونها ، وليست هي غاية مطلقة ، إذ لا غاية للذات المطلقة ، فكيف يكون لمعرفتها غاية ، بل لا بداية لها أيضا ، فإن المبادئ والغايات لا يلحقها ولا كمالها المطلق ، بل المبادئ والغايات أعلام الكمالات النسبية ، فإن المبادئ تشعر بحدوث كمال بالنسبة إلى ما بعده ، والنهايات بالنسبة إلى ما قبله ، وما لا بداية له ولا نهاية ، فأنى يكون لمعرفته شيء منهما ، فلا يحيط بمعرفته من له بداية ولا نهاية .
 
-### English
+### English · passage 4
 
-Qūnawī corrects a possible misunderstanding: the knowledge and witnessing achieved under a particular divine name can be an endpoint relative to lesser grades, such as experiences mediated through the names of lordship; it is not the absolutely final endpoint. The unrestricted Essence itself has no terminus, nor any beginning. Beginnings and endings mark relative perfections: a beginning indicates a perfection appearing with respect to what follows, an end marks completion relative to what precedes. An unbounded Reality cannot be comprehended by a knower whose beginning and end are bounded.
+He then qualifies his statement to set the preceding issue right: the knowledge and witnessing arising from a tasting grounded in particular divine presences of the names are endpoints relative to the lower knowledge and witnessing arising from a tasting grounded in the names of lordship and what lies below them. They are not an absolute endpoint. The unrestricted Essence has no endpoint; how, then, could knowledge of It have one? Nor does It have a beginning: beginnings and endpoints attach neither to It nor to Its unrestricted perfection. Rather, they mark relative perfections. A beginning indicates the origination of a perfection in relation to what follows, and an endpoint in relation to what precedes. How could knowledge of that which has neither beginning nor end have either? Thus one who has a beginning, though no end, cannot encompass knowledge of It.
 
-### Arabic
+### Arabic · passage 5
 
 فلذلك قال رضي اللّه عنه : ( والأمر ) أي : أمر معرفة الذات من حيث الكمال الحقيقي بخلاف ذلك ، فإنه لا يحيط به إلا من لا بداية لعلمه والنهاية ، وما سواه فله بداية ونهاية ، فلذلك
 
-### English
+### English · passage 5
 
 Thus “the matter is otherwise” at the level of true, unrestricted perfection: only one whose knowledge has neither beginning nor end could encompass it. Every other knower has both and so cannot do so ...
 
@@ -2856,39 +3088,43 @@ Thus “the matter is otherwise” at the level of true, unrestricted perfection
 
 The numbered hadith-source marker (1) and modern source footnote have been excluded from the authorial text.
 
-## Printed p. 95 · Text Five: the Muhammadan terminus and incomprehensibility
+Stage 13 review: Review against the supplied Arabic: the second paragraph uses الكمل both in the initial limitation and in its later exception. No hierarchy of two differently perfected groups has been supplied to resolve this tension. The fourth paragraph concludes من له بداية ولا نهاية (‘one who has a beginning and no end’), while the following paragraph speaks of beginning and end; the distinction or possible textual fault requires verification against witnesses.
 
-**MSH-P095** · [Arabic source](https://archive.org/details/machra3-khosous/page/n95/mode/1up)
+## MSH-P095 · Printed p. 95 · Text Five: the Muhammadan terminus and incomprehensibility
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n95/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 قال رضي اللّه عنه : حتى أكمل عبيده صلوات اللّه عليه ، وإليه أشار عزّ وجل بقوله : وَأَنَّ إِلى رَبِّكَ الْمُنْتَهى [ النجم : 42 ] ، فيكون غاية معرفته صلى اللّه عليه وسلم من ربه ، هو ما ذكر في حقيقته ، وليس له في الإطلاق حظ إذ لا مظهر له من حيث هو الإطلاق ، فالاسم الأعظم الجامع غاية معرفته لا غير ، فافهم .
 
-### English
+### English · passage 1
 
 ... even the most perfect of His servants, peace be upon him. God indicates this by the verse “And to your Lord is the final end” [Q 53:42]. The limit of the Prophet's knowledge of his Lord is, then, the Reality under the aspect described, not unrestrictedness as such, for unrestrictedness as such has no locus of manifestation. The encompassing Greatest Name constitutes the utmost limit of his knowledge. Understand.
 
-### Arabic
+### Arabic · passage 2
 
 قال رضي اللّه عنه : [ وأدرج سبحانه وتعالى في هذه الآية لطيفة أخرى خفية ، وهو كونه لم يقل وإن إلى ربك منتهاك ، بل نبه على أن غايته من مطلق الربوبية ، الغاية التي هي غاية الغايات ، وليس بعدها إلا تفاصيل درجات في الأكملية التي لا تقف عند حد وغاية ] . أشار إلى أن هذه الآية ، وإن دلت على انتماء المعرفة المحمدية إلى اسمه الخاص به ، فلا يتوهم منها قصور معرفته عليه ، فقد دلّت على أن ذلك الاسم هو غاية الغايات التي يمكن معرفتها ، فهو عليه الصلاة والسلام أكمل العارفين .
 
-### English
+### English · passage 2
 
 **Qūnawī:** “God has placed another subtle, hidden point in the verse. He did not say ‘To your Lord is *your* end,’ but indicated that his end within the total range of lordship is the end of ends; beyond it lie only further detailed degrees of greater perfection, which never reach a limit or terminus.” **Al-Mahāʾimī:** The verse does not imply that the Prophet's knowledge is deficient merely because it is related to a special divine name. Rather, that name is the furthest goal that can be reached in knowledge; he is consequently the most perfect of knowers.
 
-### Arabic
+### Arabic · passage 3
 
 وذلك أنه تعالى لم يقل : ( وإن إلى ربك منتهاك ) ؛ حتى يتوهم إن لغيره منتهى آخر ، بل نبه تعالى أن غايته صلى اللّه عليه وسلم من مطلق الربوبية غايتها ، وهي التي هي غاية الغايات من أسماء الربوبية والإلهية ، وليس بعد هذه الربوبية المخصوصة صلى اللّه عليه وسلم شيء مما يتعلق به المعرفة إلا تفاصيل درجات جزئية في الأكملية يختص بمعرفتها اللّه تعالى على ما أشار إليه اللّه تعالى على ما أشار إليه صلى اللّه عليه وسلم بقوله : « أو استأثرت به في علم الغيب عندك » « 1 » ، وتلك الدرجات هي التي لا تقف عند حد وغاية حتى يمكن الإحاطة بها لغير اللّه تعالى ، ومع ذلك هي جزئيات الكمالات المخصوصة بربوبيته صلى اللّه عليه وسلم ، فله الكمال المطلق بربه ، وهو منتهى الكمالات والمعارف ، فافهم .
 
-### English
+### English · passage 3
 
 The verse does not say “your end” and thus leave open another terminus for someone else. It identifies his terminus within universal lordship as the utmost terminus of all divine and lordly names. Beyond his specific lordship lie only particular refinements of still greater perfection which God alone knows. The Prophet's invocation “or what You have reserved for Yourself in the knowledge of Your unseen” alludes to those details. Since they have no finite end, none but God can encompass them; nonetheless, they belong to the particular perfections of the lordship proper to the Prophet. Through his Lord he possesses unrestricted perfection in the relevant sense and occupies the end of perfections and kinds of knowledge.
 
-### Arabic
+### Arabic · passage 4
 
 قال رضي اللّه عنه : [ وقد أشار صلى اللّه عليه وسلم إلى ما ذكرنا في بعض مناجاته ، فقال : « أعوذ برضاك من سخطك وبمعافاتك من عقوبتك وأعوذ بك منك لا أحصى ثناء عليك أنت كما أثنيت على نفسك » « 2 » أي : لا أبلغ كل ما فيك . فجمع فيه بين التنبيه على تعذر الإحاطة ، وبين التعريف بانتهائه في معرفة الحق إلى غاية الغايات . وهذا كالتفسير للآية المذكورة وهي
 
-### English
+### English · passage 4
 
 **Qūnawī:** “The Prophet also indicated this in one of his intimate invocations: ‘I seek refuge in Your good pleasure from Your displeasure, in Your pardon from Your punishment; I seek refuge in You from You. I cannot enumerate praise of You: You are as You have praised Yourself.’ That is: I cannot attain all that is in You. Thus he combines the indication of the impossibility of encompassing with the fact that he has attained the highest limit of knowing the Real. It is as though this prayer comments on the verse just mentioned, namely ...”
 
@@ -2896,47 +3132,51 @@ The verse does not say “your end” and thus leave open another terminus for s
 
 Excluded modern hadith references. Text ends mid-Qūnawī quotation, continued on p96.
 
-## Printed p. 96 · Text Five: fanāʾ and baqāʾ in the Muhammadan supplication
+Related passage IDs: QNW-WIT239, QNW-WIT240
 
-**MSH-P096** · [Arabic source](https://archive.org/details/machra3-khosous/page/n96/mode/1up)
+## MSH-P096 · Printed p. 96 · Text Five: fanāʾ and baqāʾ in the Muhammadan supplication
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n96/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 قوله : وَأَنَّ إِلى رَبِّكَ الْمُنْتَهى [ النجم : 42 ] ، وفي الأحاديث النبوية تنبيهات كثيرة تشير إلى ما ذكرنا من تتبعها - بعد التيقظ والتفهم لما ذكرت - ألقاه واضحا جليّا ] .
 
-### English
+### English · passage 1
 
 ... ‘And to your Lord is the final end’ [Q 53:42]. The Prophetic traditions contain many further indications of what we have said: whoever follows them attentively, after grasping our point, will find it plain.”
 
-### Arabic
+### Arabic · passage 2
 
 أي : أشار صلى اللّه عليه وسلم في بعض مناجاته إلى ما ذكرنا من عدم إحاطته بحقيقة المعرفة مع بلوغ غاية الغايات فيها ، فقال : « أعوذ برضاك من سخطك » « 1 » ، نظرا إلى توحيد الأفعال التي هي آثارها . وهذا على نهج البرهان اللّمي من الاستدلال بالمؤثر على الأثر . ثم قال : « وأعوذ بك منك » « 2 » : نظرا إلى توحيد الذات على نهج الشهود .
 
-### English
+### English · passage 2
 
-**Al-Mahāʾimī:** In this intimate prayer the Prophet indicates both that he has attained the end of ends in knowledge and that he cannot encompass the full Reality. “I seek refuge in Your good pleasure from Your displeasure” considers the unity of divine acts as manifested in their effects. This follows the form of demonstration from a cause or agent to its effect. “I seek refuge in You from You” considers essential unity through direct witnessing.
+**Al-Mahāʾimī:** In one of his intimate invocations, the Prophet indicated what we have said: that he does not encompass the reality of knowledge, despite reaching its end of ends. He said, ‘I seek refuge in Your good pleasure from Your displeasure,’ in view of the unity of the acts, which are effects of these [attributes]. This follows the method of a demonstration of the reason why, inferring the effect from its agent. He then said, ‘I seek refuge in You from You,’ in view of the unity of the Essence, by the method of witnessing.
 
-### Arabic
+### Arabic · passage 3
 
 ثم قال : « لا أحصى ثناء عليك » بالغناء في الذات المطلقة مع الإشارة إلى عدم معرفته لها . ثم قال : « أنت كما أثنيت على نفسك » فبقى به وبصفاته عال ، والها به لا بذاته .
 
-### English
+### English · passage 3
 
-“I cannot enumerate praise of You” indicates effacement in the unrestricted Essence while acknowledging the impossibility of knowing it. “You are as You have praised Yourself” indicates subsistence through Him and His attributes: he knows by Him, not by encompassing His unrestricted Essence.
+He then says, ‘I cannot enumerate praise of You’—[understood as] effacement in the unrestricted Essence, while indicating his lack of knowledge of It. He then says, ‘You are as You have praised Yourself’; thus he subsists through Him and through His attributes, ... enraptured by Him, not through his own essence [the wording around عال، والها is uncertain].
 
-### Arabic
+### Arabic · passage 4
 
 ولما كان المقصود من الاستشهاد عدم الإحاطة مع بلوغه غاية الغايات أشار رضي اللّه عنه في تفسير قوله : « لا أحصى ثناء عليك » بقوله : أي : « لا أبلغ كل ما فيك » بحسب الإطلاق وإن بقيت بك ، فليس بقائي بإطلاقك ، بل بتعينك مع صفاته ، جميع صلوات اللّه عليه بين التنبيه على تعذر الإحاطة بالذات المطلقة بل بما دونها لتوقفها عليك من حيث إدراكها حق الإدراك ، وبين التعريف بانتهائه في معرفة الحق إلى غاية الغايات حيث بقي به ، والبقاء غاية المقامات ، إذ لا يحجب الحق الخلق ، ولا الخلق الحق ثمة ، بخلاف مقام الفناء الحاجب للخلق ، والتكوين الحاجب للحق .
 
-### English
+### English · passage 4
 
-The explanation “I cannot reach all that is in You” expresses precisely this combination. Even the Prophet's subsistence by God does not entail his subsistence in the Essence considered with absolute unrestrictedness; rather, it is through the Essence under a determination along with Its attributes. The prayer combines inability to encompass the absolute, which would be required even for the complete knowledge of what is below it, with actual attainment of the supreme end in knowing the Real. Subsistence (*baqāʾ*) is the furthest station, because at that point neither the Real veils creation nor creation veils the Real. In effacement (*fanāʾ*) creation is veiled; in concentration on generated beings the Real is veiled.
+Since the purpose of citing the prayer is to show the absence of encompassing knowledge together with attainment of the end of ends, Qūnawī explains ‘I cannot enumerate praise of You’ as ‘I cannot attain all that is in You’ in respect of unrestrictedness. Even if I subsist through You, my subsistence is not through Your unrestrictedness, but through Your determination together with its attributes. The Prophet thus combines an indication that encompassing the unrestricted Essence—even what lies below It—is impossible, since proper apprehension depends upon You [the transmitted connective wording is uncertain], with an indication that his knowledge of the Real has reached the end of ends, where he subsists through Him. Subsistence is the highest station: there neither the Real veils creation nor creation veils the Real. This differs from the station of effacement, which veils creation, and from ‘bringing-into-being’ (al-takwīn), which veils the Real [the received term requires verification].
 
-### Arabic
+### Arabic · passage 5
 
 فعلى هذا يكون هذا الحديث كالتفسير للآية المذكورة في أن غاية المعرفة متعلقة بالرب الخاص المحمدي ، إذ بقي عليه به ، وهو غاية مقام المعرفة ، مع أنه صلى اللّه عليه وسلم لا يحصى الثناء ، وإنما قال كالتفسير ؛ لأن الآية لا تدل على معنى البقاء ، بل لا تدل على أن هذه الغاية معلومة ؛ لأن الغاية لا تدل على المغيّى إلا أن يقال أنها غاية إسقاط لما بعدها ؛ لأن الإنسان قابل لمعارف لا نهاية لها بحسب الظاهر وإنما أعاد الآية ؛ لئلا يتوهم أنه تفسير لآية أخرى مثل قوله تعالى : وَلا يُحِيطُونَ بِهِ عِلْماً [ طه : 110 ] ، سُبْحانَ رَبِّكَ رَبِّ الْعِزَّةِ
 
-### English
+### English · passage 5
 
 The prayer thus resembles a commentary on the verse because the terminus of the Prophet's knowledge pertains to the Lord proper to him: he subsists through that Lord while acknowledging the impossibility of exhaustive praise. It is only *like* a commentary, because the verse by itself does not explicitly assert subsistence, nor necessarily the actual possession of the terminus. A terminus does not determine the thing terminated, unless one construes the verse as excluding what comes after it, since humanity appears capable of infinitely many further knowledges. The author repeats the verse to avoid making his argument seem to be an explanation of another verse, such as Q 20:110 (“They do not encompass Him in knowledge”) or Q 37:180 (“Glory be to your Lord, the Lord of might ...”) ...
 
@@ -2944,47 +3184,53 @@ The prayer thus resembles a commentary on the verse because the terminus of the 
 
 Modern editor’s two numbered hadith-reference notes on p.96 omitted.
 
-## Printed p. 97 · Text Five: the Heights and the station of overview
+Stage 13 review: Review against the supplied Arabic, without a new scan check: بالغناء is rendered as an understood reference to fanāʾ from its context, but the Arabic remains unchanged. The wording عال، والها, the connective لتوقفها عليك, and the received term التكوين remain uncertain. In particular, التكوين has not been silently changed into التلوين or paraphrased as concentration on created things.
 
-**MSH-P097** · [Arabic source](https://archive.org/details/machra3-khosous/page/n97/mode/1up)
+Related passage IDs: QNW-WIT240
 
-### Arabic
+## MSH-P097 · Printed p. 97 · Text Five: the Heights and the station of overview
+
+Source: https://archive.org/details/machra3-khosous/page/n97/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 عَمَّا يَصِفُونَ [ الصافات : 180 ] ؛ إذ هي لا تدل على بلوغه غاية الغايات من المعرفة بل على تعذر الإحاطة به عزّ وجل لا غير . ثم قال رضي اللّه عنه : [ وفي الأحاديث النبوية تنبيهات كثيرة يشير إلى ما ذكرنا ] . ولم يبين تلك الأحاديث وأكثرها الأحاديث الواردة في الأدعية ، فتتبعها .
 
-### English
+### English · passage 1
 
 ... beyond what they ascribe [Q 37:180]. These verses show only that God cannot be encompassed; unlike the text under discussion, they do not indicate the Prophet's attainment of the end of ends in knowledge. Qūnawī mentions many indications in Prophetic reports but does not enumerate them. Most, al-Mahāʾimī suggests, appear in prayers; these should be followed up.
 
-### Arabic
+### Arabic · passage 2
 
 قال رضي اللّه عنه : [ ثم نقول ولهذا المقام والذوق المنبه عليه السنة تترجم عنه بصيغ مختلفة فمن ألسنته من القرآن من حيث التسمية الذي أخبر سبحانه وتعالى إن رجاله يعرفون كلا بسيماهم ، وهذا من خاصية الاستشراف على الأطراف بالانتهاء في معرفة الأشياء إلى الغاية التي توجب الاستشراف على ما ورائها ] .
 
-### English
+### English · passage 2
 
 **Qūnawī:** “This station and taste have several tongues, which express them in different formulas. One of their Qurʾānic names is the [Station of] the Heights (*al-Aʿrāf*), whose men, God says, recognize everyone by their marks. This is a property of overseeing the outer boundaries, achieved by carrying knowledge of things to the point where one can survey what lies beyond them.”
 
-### Arabic
+### Arabic · passage 3
 
 أي : وبعد تحقيق هذه المسألة ، وهي أن للمعرفة غاية هي منتهى معرفة الكمّل من الأنبياء والأولياء - عليهم الصلاة والسلام - فهذا المقام الذي هو الذوق المنبه عليه بأنه الغاية المطلقة له ألسنة ، أي عبارات تترجم عنه بصيغ مختلفة يدل كل صيغة على وجه من وجوه ذلك المقام وذوق من أذواقه فمن ألسنته أي : عبارته الدالة عليه الموجودة في القرآن الكريم من حيث التسمية إلى العلم الخاص لا اسم الجنس الغالب عليه بعد كونه كليّا الأعراف ، ولما اختلف المفسرون فيه أن أهله أهل كمال أو نقصان ، فقيل : الأنبياء ، وقيل : الملائكة ، وقيل : الشهداء وعدول الآخرة .
 
-### English
+### English · passage 3
 
 **Al-Mahāʾimī:** The point just established is that perfected prophets and saints have an endpoint in knowledge, a comprehensive experiential station. That one station is spoken of in various idioms, each expressing one aspect or taste of it. Among Qurʾānic designations is *al-Aʿrāf*, treated here as a proper designation and not merely the familiar common noun. Commentators disagree whether its inhabitants are perfect or imperfect: they have variously said prophets, angels, martyrs or the just of the Resurrection.
 
-### Arabic
+### Arabic · passage 4
 
 وقيل : الفقهاء والعلماء ، وقيل : قوم يقصر أعمالهم فيحسبون بين الجنة والنار إلى أن يأذن اللّه لهم في دخول الجنة ، وقيل : قوم استوت حسناتهم وسيئاتهم ، وقيل : بطارت خفائرهم إلى آخر الناس ، وقيل : رضي اللّه عنهم آبائهم دون أمهاتهم أو بالعكس ، وقيل : هم أولاد المشركين ، وقيل : المراؤن ، وقيل : أهل الفترة الذين لم يغايروا دينهم اللّه عنه على ما اختاره بأنه عز وجل أخبر أن رجاله يعرفون كلا بسيماهم ، فجعل أصحابه رجالا ، وهم الكمل وأنهم يعرفون كلا بسيماهم ، وهذا من خاصة الاستشراف على الأطراف كل فريق من الفرق ، فلا يكون إلا غاية المعرفة أن الاستشراف على الأطراف بالانتهاء في معرفة الأشياء التي استشرف أطرافها إلى الغاية التي توجب الاستشراف على ما ورائها ؛ حتى يعرف تلك الأشياء حق المعرفة بقدر الطاقة .
 
-### English
+### English · passage 4
 
-Other identifications include jurists and scholars, those whose works leave them waiting between Paradise and Fire for permission to enter, those whose good and evil deeds balance, and further groups named in the transmitted exegetical debates: persons whose protection or kinship has lapsed, persons whose fathers or mothers have won divine approval but not both, children of polytheists, hypocritical show-offs, and people who lived between prophetic missions. This passage's transcription is particularly defective amid its list. Al-Mahāʾimī favours perfected knowers because the Qurʾān says the men of the Heights know all the parties by their signs. That discernment presupposes surveying their extremities and the realities beyond them. It is a mark of the utmost knowledge attainable by human capacity.
+Other identifications include jurists and scholars; people whose deeds fall short, who are held between Paradise and the Fire until God permits them to enter Paradise; and people whose good and bad deeds are equal. The next identification is corrupt in the supplied text (بطارت خفائرهم إلى آخر الناس). Another corrupt phrase concerns fathers' approval without mothers' approval, or the reverse. Further suggestions are the children of polytheists, those who act for show, and people of the interval between prophetic missions who did not change their religion [the transition that follows is corrupt]. The chosen interpretation is supported by God's saying that its men recognize everyone by their marks. They are called ‘men’, understood here as the perfected, and their recognition of everyone by their marks is a distinctive property of surveying the extremities of every group. This can occur only at the utmost reach of knowledge: knowledge of the things whose extremities one surveys must reach the point that affords an outlook upon what lies beyond them, so that those things are properly known to the extent of one's capacity.
 
-### Arabic
+### Arabic · passage 5
 
 فالضمير في قوله : لَمْ يَدْخُلُوها وَهُمْ يَطْمَعُونَ [ الأعراف : 46 ] ، لأهل
 
-### English
+### English · passage 5
 
 The pronoun in “They have not entered it, though they long [to]” [Q 7:46] refers, in his interpretation, to the people of ...
 
@@ -2992,39 +3238,45 @@ The pronoun in “They have not entered it, though they long [to]” [Q 7:46] re
 
 The enumeration of tafsīr views is visibly corrupt in the online transcription; check a printed image. Do not treat it as an exact critical reading.
 
-## Printed p. 98 · Text Five: maṭlaʿ and mawqif across prophetic and wayfaring registers
+Stage 13 review: The supplied Arabic in the list of interpretations of the Heights contains uninterpretable phrases. The English marks these instead of inventing meanings for بطارت خفائرهم or attributing divine approval to one parent from an unstable text. This review does not establish their printed readings.
 
-**MSH-P098** · [Arabic source](https://archive.org/details/machra3-khosous/page/n98/mode/1up)
+Related passage IDs: QNW-WIT240
 
-### Arabic
+## MSH-P098 · Printed p. 98 · Text Five: maṭlaʿ and mawqif across prophetic and wayfaring registers
+
+Source: https://archive.org/details/machra3-khosous/page/n98/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 الجنة ، والسلام من أهل الأعراف عليهم قبل دخولهم الجنة بتسيرهم حال ترددهم ، يدل عليه قوله : وَإِذا صُرِفَتْ أَبْصارُهُمْ [ الأعراف : 47 ] ، أي : أبصار أهل الجنة قبل دخولها : ادْخُلُوا الْجَنَّةَ [ الأعراف : 49 ] ، خطاب من أهل الأعراف لأهل الجنة بعد مقابلتهم مع كبار أهل النار ، ولا تعرض لبحث بقية الأقوال لخروجها عن مقصودنا الآن .
 
-### English
+### English · passage 1
 
 ... Paradise. According to this reading, the people of the Heights greet them before they enter, while they are still in a state of anticipation. The words “when their eyes are turned” [Q 7:47] refer to the eyes of those destined for Paradise, before entry, and “Enter Paradise” [Q 7:49] is the speech of the people of the Heights to them after confronting the prominent people of the Fire. Other interpretations are not discussed because they lie outside the present purpose.
 
-### Arabic
+### Arabic · passage 2
 
 قال رضي اللّه عنه : [ ولسانه في مقام النبوة ، واسمه المطلع كما قال صلى اللّه عليه وسلم في أم القرآن بل في سر كل آية منه : إن لها ظهرا وبطنا وحدا ومطلعا إلى سبعة أبطن وفي رواية إلى سبعين بطنا ، وقد نبهت على ذلك في تفسير الفاتحة ، فلينظر هناك ] .
 
-### English
+### English · passage 2
 
 **Qūnawī:** “In the station of prophecy its tongue and name are the *maṭlaʿ*—the point of rising or outlook. As is reported of the Mother of the Book and, indeed, the mystery of each Qurʾānic verse, it has an outward face, an inward face, a limit and an outlook, extending to seven inward meanings, or according to another report to seventy. I have indicated this in my commentary on the Fātiḥa; consult it there.”
 
-### Arabic
+### Arabic · passage 3
 
 أي : العبارة الدالة على هذا المعنى فيما صدر عن مقام النبوة واسمه الخاص به هناك المطلع ، أي الذي تطلع فيه على هذا المعنى ما دونه ، كما قال صلى اللّه عليه وسلم في حق الفاتحة بل في حق كل آية من القرآن : « إن لها ظهرا » « 1 » ؛ يفهمها عامة المفسرين مما عرف اللغات والإعراب والنزول ، وبطنا يعرفه أهل الحقائق ، وحدا في الظاهر لا يتجاوز المنقول عن السلف ، وفي الباطن لا يتجاوز القواعد ، ومطلعا يطلع به على أسرار الحقيقة المشار إليها بالإشارات اللطيفة ، وخصه بعض المتأخرين بشهود المتكلم .
 
-### English
+### English · passage 3
 
 **Al-Mahāʾimī:** The prophetic designation for this capacity to survey and disclose the higher reaches of meaning is *maṭlaʿ*: that from which the levels beneath become visible. Every verse, like the Fātiḥa, has an outward dimension accessible through language, syntax and circumstance of revelation, an inward meaning grasped by those who know realities, and a boundary: outwardly, the limits of what was transmitted from the forebears, and inwardly, the operative principles of interpretation. The *maṭlaʿ* grants insight into the subtle indications of reality; some later writers confine it to witnessing the speaker.
 
-### Arabic
+### Arabic · passage 4
 
 يقول الإمام جعفر بن محمد الصادق عليه السلام : « لقد تجلى اللّه لخلقه في كل آية ، ولكن لا يصبرون » . وقيل : شهود الحق في كل شيء تجليّا بصفة تخص مظهريته ، والحق أنه أعم من ذلك ، وهو الأوفق للكتاب ، وذلك المطلع ينتهي إلى سبعة أبطن وفي رواية إلى سبعين بطنا . قال الشيخ رضي اللّه عنه : [ وقد نبّهت على وجه انتهاء المطلع إليها في تفسير الفاتحة ، ولم أظفر به حتى أذكر ما فيه ] . قال رضي اللّه عنه : [ واسمه ولسانه في اصطلاح أهل اللّه الموقف الذي هو منتهى كل مقام والمستشرف منه على المقام المستقبل ] .
 
-### English
+### English · passage 4
 
 A saying attributed to Jaʿfar al-Ṣādiq states that God discloses Himself to His creatures in every verse, though they are unable to endure it. Another account understands the *maṭlaʿ* as witnessing the Real in each thing under an attribute appropriate to its manifestation. The intended sense, however, is broader and more consistent with the treatise. The outlook reaches seven or, in another report, seventy inward degrees. Qūnawī points to his Fātiḥa commentary for an explanation, but al-Mahāʾimī says he could not find it to reproduce it here. **Qūnawī:** “Among the people of God its tongue and name are the *mawqif*, the halting-point that marks the end of one station and looks out upon the next.”
 
@@ -3032,135 +3284,147 @@ A saying attributed to Jaʿfar al-Ṣādiq states that God discloses Himself to 
 
 The prophetic narration about seven/seventy depths should be independently examined; editorial hadith footnote not reproduced.
 
-## Printed p. 99 · Text Five: the barzakh as a station-dependent technical designation
+Related passage IDs: QNW-WIT240
 
-**MSH-P099** · [Arabic source](https://archive.org/details/machra3-khosous/page/n99/mode/1up)
+## MSH-P099 · Printed p. 99 · Text Five: the barzakh as a station-dependent technical designation
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n99/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 وعلم هذا الذّوق والعبارة الدّالة عليه في اصطلاح السالكين الذين انقطعوا بما سوى اللّه إليه ، الموقف والمقام الذي هو منتهى كل مقام ماض ، والمستشرف منه على المقام المستقبل ، وإنما خص ذلك بالسالكين ؛ لأنه يختلف باختلاف المقامات ، وذلك يختص بهم دون الواصلين الجامعين للكل ، وإنما قدم الاسم على اللسان هنا وعكس في الأول ؛ ليشعر هناك بأن عبارات الأنبياء أدل عبارات ، تصير بمنزلة العلم وكل لسان لهم بمنزلة الإعلام للمعاني المقصودة به .
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī:** For seekers who turn away from everything other than God, the technical designation is *mawqif*, the position at the end of a past station and with a view toward a future one. This terminology especially belongs to travellers because its meaning changes with their changing stations; it does not apply in precisely the same way to those who have reached a comprehensiveness embracing all stations. Qūnawī places “name” before “tongue” here, but reversed the order in the prophetic register to convey that prophetic expressions disclose their meanings most directly: each such tongue has the force of a designation.
 
-### Arabic
+### Arabic · passage 2
 
 وأما هاهنا فهم لا يبالون بالعبارات : فتارة تقع منهم ما هو بمنزلة العلم وما ليس كذلك ، وهذه العبارة بمنزلة العلم مع اختلاف المعنى المقصود منها ؛ لتعين ذلك بالنسبة إلى كل مقام ، ولما لم يكن عالما بالحقيقة ، أردفه بقوله ولسانه ، وهكذا فيما يأتي بعد . قال رضي اللّه عنه : [ واسمه ولسانه في ذوق مقام الكمال بالنسبة إلى كل مقامين البرزخ الجامع بينهما وبالنسبة إلى خصوص مقام الكمال برزخ البرازخ ] . أي : وعلم هذا الذوق والعبارة الدالة عليه حال كونه داخلا في ذوق مقام الكمال ، وهو مقام الوصول والإحاطة بالمقامات .
 
-### English
+### English · passage 2
 
 Seekers, by contrast, often place little weight on terminology; some of their utterances function as precise names and others do not. The word *mawqif* functions as a designation even though its particular reference varies from station to station. Because it is not an absolutely fixed name, Qūnawī adds “its tongue.” **Qūnawī:** “In the taste of the station of perfection, relative to any two stations, its name and tongue are the *barzakh* joining them; and relative to the special station of perfection it is the *barzakh of barzakhs*.” This is a formulation of the same taste under the all-embracing station of arrival and comprehension.
 
-### Arabic
+### Arabic · passage 3
 
 وإنما قال هنا في ذوق مقام الكمال ، إشعارا بأن هذه عبارة يدل عليه بالمطابقة ، وله نسبتان : نسبة بين كل مقامين من المقامات التي دون الأعلى المطلق ، وما دونه بدرجة واحدة فقط .
 
-### English
+### English · passage 3
 
-The wording “within the taste of perfection” implies that this expression directly names the intended matter. It has two relations: the intermediary between each pair of consecutive stations below the absolutely highest, and the relation of the higher of those stages to the still higher station.
+He says here ‘within the taste of the station of perfection’ to indicate that this expression signifies it directly. It has two relations: one between any two stations among those below the absolutely highest; the other concerns [the absolutely highest] and what lies only one degree below it.
 
-### Arabic
+### Arabic · passage 4
 
 فباعتبار النسبة الأولى يسمى البرزخ الجامع بين المقامين إذ البرزخ هو الحائل بين الشيئين ، وهذا واسطة بينهما جامع لها ، كالخط الذي بين الظل والشمس ، ولما لم يكن لأهل الكمال وقوف ، لم يسم بذلك بخلاف ما تقدم ، وباعتبار النسبة الثانية ، وهو خصوص مقام الكمال إذ الأعلى من هذين المقامين برزخ البرازخ ، أي : البرزخ الذي فوق جميع البرازخ التي دونه . وقد أطلق بعضهم البرزخ على الحضرة الواحدية والتعين الأول الذي هو أصل البرازخ ، وسماه البرزخ الأول والأعظم والأكبر لجمعه البرازخ .
 
-### English
+### English · passage 4
 
-Under the first relation it is the *barzakh* joining two stations: the intermediate boundary that both separates and combines, like the line between shadow and sunlight. Those who have attained perfection are not halted at a fixed stopping-point, which is why this is not simply called *mawqif*. Under the second relation the highest encompassing boundary is the *barzakh of barzakhs*, higher than all the lesser intermediaries. Some also use *barzakh* for the presence of *wāḥidiyya* or the first determination as the origin of the intermediary realities, calling it the first, greatest or most comprehensive *barzakh*.
+Under the first relation it is the *barzakh* joining two stations: the intermediate boundary that both separates and combines, like the line between shadow and sunlight. Those who have attained perfection are not halted at a fixed stopping-point, which is why this is not simply called *mawqif*. Under the second relation the highest encompassing boundary is the *barzakh of barzakhs*, higher than all the lesser intermediaries. Some also use *barzakh* for the presence of *wāḥidiyya* and the first determination as the origin of the intermediary realities, calling it the first, greatest or most comprehensive *barzakh*.
 
 ### Editorial note
 
 The online edition contains an extended note at the end of p99 and beginning of p100 on different uses of barzakh. Its authorship is unclear in transcription; do not silently treat note as al-Mahāʾimī.
 
-## Printed p. 100 · Text Six: nondetermination, identity and true unity
+Related passage IDs: QNW-WIT240
 
-**MSH-P100** · [Arabic source](https://archive.org/details/machra3-khosous/page/n100/mode/1up)
+## MSH-P100 · Printed p. 100 · Text Six: nondetermination, identity and true unity
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n100/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 النص السادس : قال رضي اللّه عنه : « نص شريف عزيز المنال » .
 
-### English
+### English · passage 1
 
 **Text Six. Qūnawī:** “A noble text whose attainment is difficult.”
 
-### Arabic
+### Arabic · passage 2
 
 لما فرغ عن بحث غاية ما يتعلق العلم به ، شرع في بحث ما يمكن تعلق الإدراك به وما لا يمكن ، مع أنه يعز المثال في جميع ذلك ، بمعنى أنه يدرك بالذوق والمشاهدة مع مثال يطابقه من وجه دون وجه والوجه الذي به المطابقة يعز إدراكه ، بل نفس ذلك المثال يعز إدراكه .
 
-### English
+### English · passage 2
 
 **Al-Mahāʾimī:** Having treated the outermost reach of what knowledge can relate to, Qūnawī now considers what can and cannot be apprehended. Even analogies for this theme are difficult: spiritual taste and witnessing can disclose a matter through an image corresponding to it in one respect but not in another, and even the relevant aspect of correspondence—and sometimes the very analogy—is difficult to apprehend.
 
-### Arabic
+### Arabic · passage 3
 
 قال رضي اللّه عنه : [ غيب هوية الحق إشارة إلى إطلاقه باعتبار اللاتعيّن ] أي : الغيب الذي لا يمكن إدراكه من هوية الحق ، إشارة إلى إطلاقه الذي هو المعنى السلبي ، وهو إطلاقه باعتبار اللاتعين ، لا باعتبار تعين الإطلاق المقيد به مطلق ، فإنه ممكن الإدراك .
 
-### English
+### English · passage 3
 
 **Qūnawī:** “The unseen of the Real's Identity (*ghayb huwiyyat al-Ḥaqq*) alludes to His unrestrictedness under the consideration of nondetermination.” **Al-Mahāʾimī:** The unseen aspect of that Identity which cannot be apprehended points to unrestrictedness in the negative sense: unrestrictedness insofar as there is no determination, not the determination of being “unrestricted” as opposed to “restricted.” That latter, qualified notion can be apprehended.
 
-### Arabic
+### Arabic · passage 4
 
 وإنما قال : « غيب هوية الحق » ؛ لأن نفس الهوية يمكن إدراكه في ضمن التعينات . وإنما قال : إشارة ، إذ لا عبارة تدل عليه بالمطابقة ؛ لأنها فرع الإدراك بل فرع الوضع المتوقف عليه ، والغيب ليس باسم له حتى يتقيد بالغيبة ، وإنما جيء به إشعارا بأنه لا يدرك .
 
-### English
+### English · passage 4
 
-Qūnawī calls it the “unseen of the Identity” because the Identity itself may be apprehended through determinations. He calls his expression an *allusion* because no statement literally and adequately describes that unseen. Language presupposes apprehension, and ultimately convention, both of which presuppose a determinable object. “Unseen” is not a proper name that would restrict the Essence to the state of hiddenness; it merely signals that the Reality cannot be apprehended under this aspect.
+Qūnawī says ‘the unseen of the Real's Identity’ because the Identity itself can be apprehended within determinations. He says ‘allusion’ because no expression signifies it directly: expression presupposes apprehension—or, more precisely, a linguistic convention that itself depends on apprehension. ‘Unseen’ is not a name for it that would constrain it by hiddenness; the word is introduced only to indicate that it cannot be apprehended.
 
-### Arabic
+### Arabic · passage 5
 
 قال رضي اللّه عنه : [ ووحدته الحقيقية الماحية لجميع الاعتبارات والأسماء والصفات والنسب والإضافات هي عبارة عن تعقل الحق نفسه وإدراكه لها من حيث تعينه ، وهذا التعقل والإدراك التعيني ، وإن كان يلي الإطلاق المشار إليه ، فإنه بالنسبة إلى تعين الحق في تعقل كل
 
-### English
+### English · passage 5
 
-**Qūnawī:** “His true unity, which effaces all considerations, names, attributes, relations and associations, consists in the Real's intellection of Himself and apprehension of [this unity] in respect of His determination. Although this determining intellection and apprehension follows the unrestrictedness indicated, in relation to the Real's determination in every act of intellection ...”
+**Qūnawī:** ‘His true unity, which effaces all considerations, names, attributes, relations and associations, consists in the Real's intellection of Himself and His apprehension of Himself insofar as He is determined. Although this determinate intellection and apprehension immediately follows the unrestrictedness indicated, in relation to the Real's determination within the intellection of every ...’
 
 ### Editorial note
 
 The first lines of printed p100 are the continuation of a modern note on barzakhs from p99; they are excluded from the authorial text and documented separately.
 
-## Printed p. 101 · Text Six: the first determination and the distinction between ontological and conceptual priority
+Related passage IDs: QNW-WIT240
 
-**MSH-P101** · [Arabic source](https://archive.org/details/machra3-khosous/page/n101/mode/1up)
+## MSH-P101 · Printed p. 101 · Text Six: the first determination and the distinction between ontological and conceptual priority
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n101/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 متعقل في كل تجل تعين مطلق وأنه أوسع التعينات ، وهو شهود الكمّل ، وهو التجلي الذاتي وله مقام التوحيد الأعلى ] .
 
-### English
+### English · passage 1
 
-... of anything intellectually conceived, in every self-disclosure, it is an unrestricted determination, the widest of determinations; it is witnessed by the perfected, is the essential self-disclosure, and belongs to the highest station of unification.”
+... conceiver, in every self-disclosure, it is an unrestricted determination and the most encompassing of determinations. It is the witnessing of the perfected; it is the essential self-disclosure, and to it belongs the highest station of unification.’
 
-### Arabic
+### Arabic · passage 2
 
 أي : وحدة الحق الحقيقية ، أي : التي لا كثرة فيها بوجه من الوجوه ؛ فلذلك كانت ماهية جميع الاعتبارات فضلا عن الأسماء والصفات والنسب والإضافات ، فإن كلا مشعر بكثرة وليس معناه نفي الصفات بالكلية ، بل اندراجها في تلك الوحدة بحيث لا يتميز عن الذات المتصفة بتلك الوحدة عبارة عن تعقل الحق نفسه من غير أن يتميز التعقل من العاقل والمعقول ، فإن هذه الاعتبارات إنما نشأت من تعقل الحق نفسه فهو متأخر عنه ، وعبارة عن تعقل الحق نفسه من حيث تعينه بالمعقولية لا بالتشخيص لغاية بعده عن الإطلاق ، وإنما كان ذلك التعقل وحدة حقيقية ؛ لأن تميز الصفات إنما تكون بعد تعقلها وتعقلها بعد تعقل الذات فهاهنا لم تتعقل إلا الذّات وحدها .
 
-### English
+### English · passage 2
 
-**Al-Mahāʾimī:** True divine unity has no plurality whatsoever. It effaces even conceptual considerations, and a fortiori the names, attributes, relations and connections, since each implies multiplicity. This does not entail the abolition of attributes altogether but their inclusion within the unity without distinguishing them from the Essence so qualified. It is the Real's intellection of Himself before the distinctions among act of knowing, knower and known are made. These distinctions arise through His intellection of Himself and therefore are conceptually posterior to it. It is an intellection of the Essence insofar as It is intelligible, not yet a distinct personal specification; the latter would stand much farther from unrestrictedness. Attribute-distinction presupposes attribute-intellection, which in turn presupposes intellection of the Essence; here the Essence alone is apprehended.
+**Al-Mahāʾimī:** True divine unity has no plurality whatsoever. It effaces even conceptual considerations, and a fortiori the names, attributes, relations and connections, since each implies multiplicity. This does not entail the abolition of attributes altogether but their inclusion within the unity without distinguishing them from the Essence so qualified. It is the Real's intellection of Himself before the distinctions among act of knowing, knower and known are made. These distinctions arise through His intellection of Himself and therefore are conceptually posterior to it. It is the Real’s intellection of Himself in respect of determination as intelligible, not determination by individuation; the latter would stand much farther from unrestrictedness. Attribute-distinction presupposes attribute-intellection, which in turn presupposes intellection of the Essence; here the Essence alone is apprehended.
 
-### Arabic
+### Arabic · passage 3
 
 فهذا التعقل وحدة حقيقية لم يتعقل معها التعقل فضلا عن العاقل والمعقول ، وهذا بخلاف الوحدة المتعلقة مع الصفات ، فإن فيها كثرة اعتبارية ، وإنما تقيد هذا التعقل من حيث التعين ؛ لأنه من حيث الإطلاق لا أولوية للوحدة على الكثرة .
 
-### English
+### English · passage 3
 
-The intellection is true unity, for the act of intellect is not separated from knower and known. Unity considered along with distinct attributes, by contrast, includes a plurality of considerations. This unity is qualified as a “determination” only from the relevant perspective; at the level of unrestrictedness even unity has no privilege over multiplicity.
+This intellection is true unity: the intellection itself is not intellected alongside it, let alone a knower and something known. This differs from unity considered together with the attributes, which contains a plurality of considerations. This intellection is qualified as being ‘in respect of determination’, because in respect of unrestrictedness unity has no priority over multiplicity.
 
-### Arabic
+### Arabic · passage 4
 
 ثم أشار إلى كونه هو التعين الأول بقوله : [ وهذا التعقل أي النفسي والإدراك التعيني ، وإن كان يلي الإطلاق المشار إليه أي : بالمعنى السلبي ، فحقه أن يكون مقيدا بالإطلاق العرفي ، فلا يكون تعينا ، لكنه لما كان فيه الأمران ، التعين بالنسبة إلى ما قبله والإطلاق بالنسبة إلى ما تحته ؛ لأنه بالنسبة إلى تعين الحق في تعقل كل متعقل من الحق والخلق في كل تجلّ في المظهر أو غيره كان تعينا مطلقا ، فهو من حيث الجمع بينهما أو جمع التعينات وهو ما تعلق به العلم به ، فكذلك كان هو لتجلي الذاتي الواقع على الحقيقة المحمدية بالذات وعلى غيره بالواسطة ولا يمكن تجليه في المظاهر بل إذا أشرقها عليها أحرقها فلا يظهر إلا لذاته في ذاته ، فلا يراه كذلك إلا من فني فيه وبقي به وله مقام التوحيد الأعلى ، وهو التوحيد الذاتي فوق الوصفي والعقلي ، ولا يمكن اعتبار التوحيد فيما فوقه إذ لا أولوية لنسبة الوحدة ثمة أصلا ، فافهم ] .
 
-### English
+### English · passage 4
 
-Al-Mahāʾimī then expounds the first determination: relative to negative unrestrictedness it is determination, but relative to everything below it—including the Real's determination within every act of intellection or self-disclosure—it is unrestricted. Under this twofold aspect it gathers the determinations while remaining the most universal. Essential disclosure reaches the Muhammadan Reality immediately and others through mediation. He describes this disclosure as not appearing in differentiated loci: were it to shine on them as such, their differentiating constitution could not withstand it. It appears to the Essence in the Essence and is witnessed as such by one who has passed through effacement and subsists through God. This is essential unity, above the unity of attributes and intellect. Above it unity itself cannot be considered, for unity and plurality have no priority there.
+He then indicates that this is the first determination: ‘This intellection’—that is, self-intellection—‘and determinate apprehension, although it immediately follows the indicated unrestrictedness’, meaning unrestrictedness in the negative sense, would properly be qualified by unrestrictedness in ordinary usage and would thus not be a determination [in that respect]. Yet it combines both: determination in relation to what precedes it, and unrestrictedness in relation to what lies beneath it. Relative to the Real's determination in the intellection of every conceiver, whether the Real or creation, in every self-disclosure, in a locus of manifestation or otherwise, it is an unrestricted determination. In combining both it gathers the determinations [the connective wording here is uncertain], and it is that to which knowledge of Him relates. Hence it is the essential self-disclosure that falls upon the Muhammadan Reality directly, and upon others through an intermediary. It cannot disclose itself in loci of manifestation: if it shines upon them, it burns them up. It appears only to His Essence in His Essence; none sees Him thus except one who has been effaced in Him and subsists through Him. To it belongs the highest station of unification, essential unification above that of attributes and intellect. Unification cannot be considered in what lies above it, since the attribution of unity has no priority there at all. Understand.
 
-### Arabic
+### Arabic · passage 5
 
 قال رضي اللّه عنه : [ ومبدئية الحق تلي هذا التعين والمبدئية هي محتد الاعتبارات ، ومنبع النسب والإضافات الظاهرة في الوجود والباطنة في عرصة التعقلات والأذهان ] .
 
-### English
+### English · passage 5
 
 **Qūnawī:** “The Real's principiality (*mabdaʾiyya*) follows this determination. Principiality is the origin of considerations and the source of relations and connections, whether manifest in existence or hidden in the domain of intellections and minds.”
 
@@ -3168,47 +3432,53 @@ Al-Mahāʾimī then expounds the first determination: relative to negative unres
 
 The long bracket in the online transcription is not always consistently divided between Qūnawī and commentary; check collation. Preserve this passage as the source presents it.
 
-## Printed p. 102 · Text Six: second determination, necessary existence, and principiality
+Stage 13 review: The first-determination discussion distinguishes negative unrestrictedness from unrestrictedness in ordinary usage. The supplied connective فهو من حيث الجمع بينهما أو جمع التعينات is unstable; the translation preserves its general contrast without claiming an established restoration. No independent print comparison was made in this review.
 
-**MSH-P102** · [Arabic source](https://archive.org/details/machra3-khosous/page/n102/mode/1up)
+Related passage IDs: QNW-WIT240
 
-### Arabic
+## MSH-P102 · Printed p. 102 · Text Six: second determination, necessary existence, and principiality
+
+Source: https://archive.org/details/machra3-khosous/page/n102/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 أي كون الحق مبدأ للأشياء يلي هذا التعين ، أي يكون بعده أما أنه ليس قبله فلاستواء النسب أما أنه ليس عينه ؛ لأن اعتبار أصله ، فهو بلي هذا التعين .
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī:** The Real's being the principle of things follows the first determination: it cannot precede it, for before it all relations stand alike; nor can it simply be identical with it, for principiality is a distinct consideration requiring its own foundation.
 
-### Arabic
+### Arabic · passage 2
 
 ثم إن مبدئية الحق هي محتد الاعتبارات ، أي أصلها إذ لا بد لها ممن يعتبر فيه ويكون موضوعه ولا اعتبار قبل المبدئية لما ذكرنا ، فلذلك كانت المبدئية منبع النسب والإضافات ، وهي الظاهرة في الوجود من حيث تعلقه بالأعيان ، فظهوره بها وهي الباطنية في عرصة التعقلات العالية والأذهان السالفة ، فمن هنا كان الحق مبدأ للكل ، ومنتهى لسلسلة الموجودات العينية والذهنية بل لا غير له ظاهرا وباطنا وأولا وآخرا ، فافهم .
 
-### English
+### English · passage 2
 
 Principiality is the origin of every consideration, since consideration presupposes some subject in which its distinctions are made. No such consideration arises prior to principiality in the account under discussion. It is therefore the wellspring of relations and connections, both those that manifest through existence's association with fixed entities and those remaining hidden in higher intellections and minds. In this way the Real is the source and terminal point of the whole series of external and mental existents: He has no other, outwardly or inwardly, first or last.
 
-### Arabic
+### Arabic · passage 3
 
 قال رضي اللّه عنه : [ والمقول فيه أنه وجود مطلق واحد واجب ، فهو عبارة عن تعين الوجود في النسبة العلمية الذاتية الإلهية ، والحق من حيث هذه النسبة يسمى عند المحقق بالمبدأ لا من حيث نسبة غيرها ، فافهم هذا وتدبّر ، فقد أدرجت لك في هذا النص أصل أصول المعارف الإلهية واللّه المرشد ] .
 
-### English
+### English · passage 3
 
 **Qūnawī:** “That of which one says ‘unrestricted, one, necessary existence’ is existence determined in the divine, essential relation of knowledge. The Real is called the Principle by investigators under this relation, not under another. Understand and reflect: in this text I have included for you the principle of all principles of divine knowledge. God is the guide.”
 
-### Arabic
+### Arabic · passage 4
 
 أي : والذي يقال فيه أنه وجود مطلق ، فليس ذلك بغيب هوية الحق الذي هو الإطلاق بالمعنى السلبي ؛ لأنه لا يسمى باسم ولا يتقيد بالإطلاق ، وكذا الذي يقال أنه واحد أو أنه واجب الوجود إذ ذاك لا يقيد بالوحدة والوجوب ، بل الذي يقال فيه هذه الأمور عبارة عن تعيين الوجود بهذه القيود عند تحقق نسبة العلم إلى الذات الشاملة على الأسماء والصفات تفصيلا وهذا هو التعيّن الثاني المسمى بمرتبة الألوهية وحضرة الوحدة ، وذلك لا في التعين الأول .
 
-### English
+### English · passage 4
 
 **Al-Mahāʾimī:** The Real described as “unrestricted existence” is not the unseen of the Identity, namely unrestrictedness in the negative sense, since that is not named or restricted even by the predicate unrestricted. The same holds for calling It one or necessarily existent: those qualifications are not asserted in the aspect of sheer nondetermination. They apply when existence is determined by the divine relation of knowledge to the Essence in its detailed inclusion of names and attributes. This is the *second determination*, the degree of divinity (*ulūhiyya*) and the presence of oneness (*waḥda*), and is not identical to the first determination.
 
-### Arabic
+### Arabic · passage 5
 
 إنما علم الذات من حيث هو ، لا من حيث أنه وجود مطلق أو غيره ، ولا من حيث أنه واحد أو متعدد ، ولا من حيث أنه واجب أولا ؛ لأن هذه أوصاف لحقت التعيّن الأول في التعقل . والحق من حيث هذه النسبة أي : العملية الذاتية الإلهية ، يسمى عند المحققين بالمبدأ ، لا من حيث نسبة غيرها . أما نسبة التعيّن الأول ؛ فلأنها ماحية للاعتبارات ، وأما نسبة الربوبية ، فلأن هذه النسبة بعد أدائها . لا يقال : إن التعين الأول مبدأ لهذه النسبة ؛ لأنا نقول : لما لم تتميز الأسماء ، ثمة لم
 
-### English
+### English · passage 5
 
 At the first determination, the Essence was known simply as itself, not yet as unrestricted existence or its opposite, as one rather than many, or as necessary. These further attributes arise in the intellection of the first determination. The Real is properly called Principle under the divine, essential cognitive relation, not under the nondifferentiating first determination or the later relation of lordship. The objection that the first determination should be the principle of the second is rejected, because the divine names are not distinguished there; hence principiality had not ...
 
@@ -3216,79 +3486,87 @@ At the first determination, the Essence was known simply as itself, not yet as u
 
 Explicit evidence that “unrestricted, one, necessary existence” has a specific second-determination register. P102 transcription contains «العملية» where «العلمية» may be intended; no silent emendation.
 
-## Printed p. 103 · Texts Six to Eight: transition from determinations to ascent and manifestation
+Related passage IDs: QNW-WIT241
 
-**MSH-P103** · [Arabic source](https://archive.org/details/machra3-khosous/page/n103/mode/1up)
+## MSH-P103 · Printed p. 103 · Texts Six to Eight: transition from determinations to ascent and manifestation
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n103/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 يكن للمبدئية ظهور ، وإنما ظهرت في التعين الثاني ، وإلا فقد كان الإطلاق بالمعنى السلبي مبدأ للجميع ولهذه النكتة ، قال رضي اللّه عنه : ( فافهم ) . ثم قال : [ وتدبر ، فقد أدرجت لك أصل أصول المعارف الإلهية ] ، وذلك اشتماله عليه بحيث غيب الهوية والوحدة الحقيقية التي هي التعين الأول والمبدئية التي هي التعين الثاني ومنبع الاعتبارات والأسماء والصفات ، واعتبار ظهورها وبطونها وبحث الوجود المطلق الواحد الواجب ، وهذه أصول مباحث التصوف من تحققها سهل عليه الوقوف على الجزئيات ، واللّه ولي الحسنات .
 
-### English
+### English · passage 1
 
 ... appeared. It first appears at the second determination. Under another aspect even negatively unrestricted Reality is the origin of all. That is why Qūnawī says “Understand.” By “Reflect” and “I have included the principle of principles,” he draws attention to the hidden Identity, true unity as first determination, principiality as second determination, the emergence of names, attributes and considerations, their manifest and hidden relations, and the sense in which one speaks of unrestricted, one, necessary existence. These are foundational questions of the science of spiritual realization; understanding them facilitates the detailed investigations.
 
-### Arabic
+### Arabic · passage 2
 
 النص السابع : قال رضي اللّه عنه : [ كل سالك سلك على أي طريق ، كان غايته الحق بشرط فوزه منه سبحانه بسعادة ما ، فإن ذلك السالك صاحب معراج ، وسلوكه عروج ، فافهم ] . أي : كل سالك سلك مستقيما عن طريق من طرق المشايخ ، فذلك السالك كان غايته الحق بشرط فوزه منه سبحانه بسعادة ما ، من تجلي الجمال واللطف وسائر الأسماء المناسبة لهما .
 
-### English
+### English · passage 2
 
 **Text Seven. Qūnawī:** “Every traveller who follows any path—provided he wins some felicity from God—has the Real as his final end. Such a traveller possesses an ascension (*miʿrāj*), and his journey is an ascent (*ʿurūj*). Understand.” **Al-Mahāʾimī:** Any traveller who follows one of the paths of the masters uprightly, and receives a felicity through disclosures of beauty, gentleness and the related names, has the Real as his end.
 
-### Arabic
+### Arabic · passage 3
 
 وذلك ؛ لأن هذا السالك صاحب معراج ؛ لأنه ليسير حين يعرج عن أفعاله أو صفاته أو ذاته ، فإن عرج عن الأول ، كان ممن تحقق بتوحيد الأفعال ، ومن عرج عن الثاني ، تحقق بتوحيد الصفات ، ومن عرج عن الثالث ، تحقق بتوحيد الذات ، فسلوكه عروج عن الكثرة الموقعة في الشرك الخفي إلى نور التوحيد ، فلا بدّ وأن يكون غايته الحق برفع الحجب عن أنواره عزّ وجل وإنما قلنا : لأن الكل من وجه آخر راجع إلى الحق أيضا ، فلذلك قال : ( فافهم ) .
 
-### English
+### English · passage 3
 
 Such a traveller ascends away from his acts, attributes or selfhood. Ascending beyond acts brings realization of the unity of acts; ascending beyond attributes brings unity of attributes; ascending beyond the self brings essential unity. The journey is therefore a movement beyond the multiplicity entailing hidden associationism toward the light of unification. The final end is the Real, as veils are removed from His lights. Qūnawī adds “Understand” because, from another perspective, all paths ultimately return to the Real as well, though not all have the same qualification of felicity.
 
-### Arabic
+### Arabic · passage 4
 
 النص الثامن : قال رضي اللّه عنه : [ نص شريف كلي يحتوى على أسرار جليّة ] . لما ذكر في النص السابق أن السالك الفائز ، من الحق بسعادة ما ، لا بدّ وأن يكون غايته الحق ، ذكر ما هو سبب تلك السعادة وتفاصيلها ، والأسرار المذكورة هنا هي أنواع التجليات في المظاهر ، وإن الإنسان هو المظهر الكامل المقتضي لأنواع التجليات ، وما يترتب على كل تجلّ ، وأن الحوادث ليست غير الحق ، إذ لم يؤثر في حقائقها ولا في
 
-### English
+### English · passage 4
 
-**Text Eight. Qūnawī:** “A noble, universal text containing sublime mysteries.” The previous text established the Real as the end of any felicitous traveller. This text examines the source and differentiation of that felicity. Its mysteries concern the modes of self-disclosure in loci of manifestation, humanity as the complete locus capable of all such disclosures, and their consequences. Created happenings are not simply an other opposed to the Real, for their underlying realities and ...
+**Text Eight. Qūnawī:** ‘A noble, universal text containing clear mysteries.’ **Al-Mahāʾimī:** Having stated in the preceding text that the traveller who receives some felicity from the Real must have the Real as his final end, he now explains the cause of that felicity and its details. The mysteries discussed here are the kinds of self-disclosure in loci of manifestation, the human being as the complete locus calling for these kinds of disclosure, what follows from each self-disclosure, and that temporally originated things are not other than the Real, since He has not exerted an effect upon their realities or upon ...
 
 ### Editorial note
 
 The phrase «أن الحوادث ليست غير الحق» must be read in the limited sense explicitly given by the following causal analysis; no simple numerical-identity conclusion follows.
 
-## Printed p. 104 · Text Eight: the criterion of causal efficacy and essential reality
+Related passage IDs: QNW-WIT241
 
-**MSH-P104** · [Arabic source](https://archive.org/details/machra3-khosous/page/n104/mode/1up)
+## MSH-P104 · Printed p. 104 · Text Eight: the criterion of causal efficacy and essential reality
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n104/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 وجوداتها ، بل في نسب الوجود إلى الحقائق أو صورها فلا تخل كثرتها وحدوثها بالتوحيد ووجوب الوجود المطلق ، وبيّن أثر كل واحد في الآخر وغير ذلك مما يأتي في آخر شرح هذا النص ، فهذا جلائل الأسرار التي لا يقدر قدرها إلا اللّه وأهله .
 
-### English
+### English · passage 1
 
-... their existence are not themselves altered; rather, the diversity concerns the relations of existence to realities and their forms. Therefore neither the many nor their temporal emergence negates divine unity or the necessity of unrestricted existence. This text will go on to describe apparent reciprocal influences and other profound matters whose worth is known fully only to God and those endowed with their knowledge.
+... their existences, but upon the relations of existence to the realities or their forms. Thus their multiplicity and temporal origination do not impair unification or the necessity of unrestricted existence. He also explains the effect of each upon the other, and other matters that will appear at the end of the commentary on this text. These are the great mysteries whose worth is known only to God and His people.
 
-### Arabic
+### Arabic · passage 2
 
 قال رضي اللّه عنه : [ اعلم أن كل ما يوصف بالمؤثرية في شيء أو في أشياء ، فإنه لا يصدق إطلاق هذا الوصف عليه تماما ، ما لم يؤثر حقيقة ذلك الشيء من حيث هو دون تعقل انضمام قيد آخر إلى تلك الحقيقة الموصوفة بالتأثير ، أو شرط ما خارجي كان ما كان ] .
 
-### English
+### English · passage 2
 
 **Qūnawī:** “Know that anything described as exercising influence upon one or several things is not so described with complete propriety unless it affects the reality of the thing *insofar as it is that thing*, without conceiving the addition of some further qualification to the reality said to exercise influence or any external condition whatsoever.”
 
-### Arabic
+### Arabic · passage 3
 
 تمهيد مقدمة لبيان أن التجليات في المرايا المختلفة لا توجب تأثيرا وتغييرا في حقيقة المنطبع فيها ، فلا تسمى مؤثرة بالحقيقة بل بالمجاز ، فقال : أولا بأن لا تأثير لشيء في شيء بحسب الحقيقة حتى يبطل التوحيد حتى إن تأثير الحق في الأشياء ، تأثير من وجه دون وجه فضلا عن تأثير الخلق بعضه في بعض ، وذلك أن كل ما يوصف في العرف بأنه مؤثر في شيء واحد ، كالبسيط المتعدد الجهات والمركب ، فإنه لا يصدق حمل هذا الوصف إلى التأثير عليه تماما ، ولا أنه يقال مؤثر من جميع الوجوه وبالحقيقة ما لم يؤثر في حقيقة ذلك الشيء المؤثر فيه من حيث هو ذلك الشيء المؤثر فيه مجردا عن تعقل انضمام قيد آخر إلى صفة ذلك المؤثر ، وانضمام شرط خارجي إلى أحدهما - كان الشرط ما كان - من اللوازم أو العوارض إذ لو لم يؤثر في حقيقته بل في عارضه لا يسمى مؤثرا فيه إلا باعتبار ملابسة العارض المؤثر فيه لذلك الشيء ، فيسمى بهذه المجاورة مؤثرا فيه ، ولو كان باعتبار انضمام قيد إلى المؤثر لكان هو المجموع ، فإطلاق المؤثر هو المجموع على من تقيد به من غير ذكر القيد ، تكون من قبيل تسمية الشيء باسم كله ، والقيد صفة رافعة للإطلاق ، ولو كان باعتبار انضمام شرط خارجي ، كانت مؤثريته ناقصة بذاته كاملة بالشرط ، والمتأثرية باعتبار المجموع لا الحقيقة وحدها ، فتسمية أحدهما مؤثرا والآخر متأثرا من قبيل إطلاق الكل على الجزء أيضا .
 
-### English
+### English · passage 3
 
 **Al-Mahāʾimī:** This lays the groundwork for explaining why differentiated mirrors do not change the underlying reality of what appears in them. Such mirrors are therefore called causes in a figurative or qualified, not absolutely proper, sense. Strictly speaking no thing affects another thing's underlying reality in a way that could overturn unification. Even divine “influence” on things is an influence in one respect rather than in every possible respect, much less can creatures affect one another's essences without qualification. When ordinary speech calls a simple substance under several aspects, or a composite thing, an “agent,” the term can only be fully literal if the agent operates upon the affected thing's own reality considered without addition. If only an accident is affected, the language is transferred from the accident to its bearer. If the cause acts only under an added qualification, the whole qualified complex is operative, and naming a part the agent is taking a part for the whole. If an external condition is required, the purported agent is insufficient in itself, and the real explanatory unit includes the condition. Calling one element alone the cause is again an abbreviated usage.
 
-### Arabic
+### Arabic · passage 4
 
 وإنما يعتبر انضمام القيد بالأثر ؛ لأن القيد لا يلحقه من حيث حقيقته إلا بعد تحقق حقيقته ، فلا يكون الأثر في الحقيقة أصلا فضلا عن أثريتها مع القيد ؛ لأنها موجودة قبل بخلاف الشرط . وإنما قال إلى تلك الحقيقة الموصوفة بالتأثير ، ولم يقل إلى المؤثر ؛ لأن كونه مؤثرا ليس على التحقيق بل على المتعارف ، أي : الوصف في العرف بالمؤثرية .
 
-### English
+### English · passage 4
 
 An added qualification is singled out because it attaches to a reality only once that reality has already been constituted, and so cannot account for the very constitution of that reality. An external condition differs in the manner of its requirement. Qūnawī says “the reality described as influencing,” not simply “the influencer,” because influence is here attributed according to conventional speech rather than already granted in the stringent sense being examined.
 
@@ -3296,59 +3574,69 @@ An added qualification is singled out because it attaches to a reality only once
 
 Important distinction: effect on essence versus on an accident, mode, relational appearance, or externally conditioned complex. No extra-mental causation doctrine should be inferred before the subsequent qualifications.
 
-## Printed p. 105 · Text Eight: causal qualification and the mirror argument
+Stage 13 review: In the final paragraph the supplied wording وإنما يعتبر انضمام القيد بالأثر (‘the addition of a qualification to the effect is considered ...’) is difficult in relation to the surrounding argument. A missing negation must not be supplied without a witness; the Arabic remains unchanged.
 
-**MSH-P105** · [Arabic source](https://archive.org/details/machra3-khosous/page/n105/mode/1up)
+Related passage IDs: QNW-WIT241
 
-### Arabic
+## MSH-P105 · Printed p. 105 · Text Eight: causal qualification and the mirror argument
+
+Source: https://archive.org/details/machra3-khosous/page/n105/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 وإنما قال : كان ما كان ؛ لأنه قد يتوهم أن الخارجي إذا كان لازما ما لا ينفك عن الحقيقة المؤثرة أو المتأثرة ، فهو تأثير من حيث هو ، وهو وهم ظاهر الفساد ، وإنما اعتبر الشرط الخارجي ؛ لأن الذهني أمر اعتباري ، فلا يخل بحقيقة التأثير ؛ لأن المؤثر يؤثر حينئذ من غير اعتبار أيضا ، فافهم .
 
-### English
+### English · passage 1
 
 The expression “whatever the external condition may be” prevents the objection that a condition necessarily accompanying its cause should be counted as part of the cause's essence. That inference is mistaken: even an inseparable exterior condition is not identical with the reality considered in itself. A condition merely posited in the mind, on the other hand, does not alter the objective efficacy of the agent, which operates whether or not we form the consideration. Understand.
 
-### Arabic
+### Arabic · passage 2
 
 قال رضي اللّه عنه : [ وإنما ذكرت هذه القيود من أجل الآثار المنسوبة إلى الأشياء من حيث مراتبها أو من حيث اعتبارات هي من لوازم حقائقها ، ومن أجل ما استفاض أيضا عند أهل العقل النظري ، وأكثر أهل الأذواق بأن كل موصوف بالمرآتية سواء كانت مرآته معنوية أو محسوسة ، فإن لها ، أي لتلك المرآة أثر في المنطبع فيها ، لردها صورة المنطبع إليها وظهور صور المنطبع فيها بحسبها ] .
 
-### English
+### English · passage 2
 
 **Qūnawī:** “I added these restrictions because effects are attributed to things according to their ranks or considerations concomitant with their realities, and because it is widely asserted, by theoretical thinkers and many people of spiritual taste, that every mirror, whether spiritual or sensible, has an effect upon what is reflected in it, since it returns the form of what is reflected and its image appears there according to the mirror's nature.”
 
-### Arabic
+### Arabic · passage 3
 
 أي : إنما ذكرت لكون التأثير حقيقيّا ، هذه القيود إن يؤثر بلا ضم قيد إليه في الحقيقة المؤثر فيها ، ولا ضم شرط إلى أحدهما من أجل دفع ما يتعارفه الناس من نسبة الآثار إلى الأشياء من حيث مراتبها ، كالإحراق المنسوب إلى النار ، ومن حيث اعتبار لوازم حقائقها كتأثير العقل الأول من جهة وجوبه في عقل آخر ، ومن جهة إمكانه في الجسم من جهة علمه بنفسه في النفس الكلية ، ولا يعلمون أن المراتب والجهات قيودا أو شرائط ، فكيف يكون التأثير حقيقيّا ، ومن أجل ذلك دفع ما استفاض عند أهل العقل النظري من الفلاسفة المتكلمين ، قيد العقل به ؛ لأنه قد يطلق على البصيرة الباطنة أيضا .
 
-### English
+### English · passage 3
 
 **Al-Mahāʾimī:** The conditions laid down above are intended to question ordinary causal attributions: fire is said to burn according to its rank; the First Intellect is said to produce another intellect under the aspect of necessity, a body under the aspect of possibility, and the Universal Soul through its self-knowledge. But rank, aspect and associated consideration are qualifications or conditions, so these examples do not establish an unqualified influence on a reality in itself. Qūnawī is also responding to theoretical philosophers and theologians; he specifies theoretical *reason* because that word can also be used for inner spiritual sight.
 
-### Arabic
+### Arabic · passage 4
 
 وعند أكثر أهل الأذواق من الصوفية بأن كل موصوف بالمرآتية سواء كانت مرآتيته مرآتية معنوية كالأعيان الثابتة للوجود ، أو محسوسة كالمرايا المضوغة في الحديد وغيره كالماء ، فإن لها ، أي تلك المرآة أثرا ؛ لئلا يتوهم عود الضمير إلى المرآتية وهو فاسد ، إذ لا يتعارف ذلك أصلا بالمتعارف إن للمرآة أثرا في المنطبع فيها بحسب حقيقته لردها ، أي المرآة صورة المنطبع إلى ما يناسبها استقامة واستدارة بصغر أو كبر أو ظهور صورة المنطبع فيها بحسبها ، فحصل التأثير من المرآة والتأثر من المنطبع على وجه الحقيقة ؛ إذ الصورة دالة على الحقيقة ، والتأثير والتأثر فيها يدل عليها بحسب الحقيقة .
 
-### English
+### English · passage 4
 
 Many possessors of experiential knowledge similarly say that any mirror has a real effect on what it reflects: either a spiritual mirror, such as the fixed entities with respect to existence, or a sensible mirror, such as polished metal and water. They argue that the reflecting medium changes the appearance—straight or curved, diminished or enlarged—of the thing's form, and infer a genuine effect on the reflected reality from an effect on its representation. The pronouns in the passage specify the mirror rather than “mirrorhood” as what is alleged to act. Qūnawī will deny that alteration in the image is alteration in the thing itself.
 
-### Arabic
+### Arabic · passage 5
 
 ومن هنا قال أكثر أهل النظر : إن الوجود صار متعددا بالذوات ، أنه صار متقيدا بهذه المظاهر بعد إطلاقه ، ولا يعلمون أن ذلك أثر في صورة المنطبع لا في حقيقته ،
 
-### English
+### English · passage 5
 
-Hence some theoreticians conclude that existence has become numerically multiplied through different essences or has acquired their limitations after being unrestricted. They overlook that the relevant change belongs to the *form in which something appears*, not to the underlying reality ...
+Hence most theoreticians say that existence has become multiple through the essences and has become conditioned by these loci of manifestation after its unrestrictedness. They do not recognize that this is an effect upon the form of what is reflected, not upon its reality ...
 
 ### Editorial note
 
 A complex First Intellect example is difficult in source wording; verify against the printed witness before using it as evidence for Avicennian emanation.
 
-## Printed p. 106 · Text Eight: the mirror does not contain the Reality
+Related passage IDs: QNW-WIT241
 
-**MSH-P106** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P106 · Printed p. 106 · Text Eight: the mirror does not contain the Reality
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 والصورة عرض وكثرة الأعراض وتغيراتها لا يستلزم كثرة الذات وتغيرها ، على أن الصورة ليست للذات بل لظهورها في هذه المرايا عرضت لما لا ذات له سوى ذات من انطبعت الصورة في هذه المرايا بمقابلته وإلى ذلك أشار بما . 
 
@@ -3359,7 +3647,7 @@ A complex First Intellect example is difficult in source wording; verify against
 
 فالمرآة محل لمثاله الذي هو بعض ظهوراته لا غير ، ثم استشعر سؤالا بأن الكمّل قالوا بالوصول إلى أحدية الجمع والبقاء بالحق وشهوده ، وما شهدوا سوى ما في قلوبهم ؛
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —and form is an accident. The multiplicity and changes of accidents do not entail multiplicity or change in the essence. Moreover, the form belongs not to the essence but to its manifestation in these mirrors: it accrues to what has no essence other than the essence of the one whose form is impressed in these mirrors by facing them. He indicates this as follows.
 
@@ -3377,11 +3665,15 @@ The polemic against identifying one's limited apprehension with the Real belongs
 
 English revised against print: corrected the initial claim that the image has no essence other than its original, removed the unsupported claim that the witness declares himself God, restored eternal or originated knowledge, and moved the objection’s final clause to p.107. Actual printed p.106 checked; the entire Arabic body is present.
 
-## Printed p. 107 · Text Eight: essential self-disclosure beyond the mirror
+Related passage IDs: QNW-WIT241
 
-**MSH-P107** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P107 · Printed p. 107 · Text Eight: essential self-disclosure beyond the mirror
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 فلو لا أنه عين حقيقته ، لم يمكنهم القول بذلك . 
 فأجاب : بأنه نوع من المجاز ؛ لأن الظهور نسبة تضاف إلى المنطبع ، فيقال : ظهر الشيء الفلاني في المرآة ، لا من حيث انطباع حقيقته ، بل من حيث انطباع صورة الظهور وليس عين حقيقة المنطبع ، بل نسبة من نسبة ، فالأثر في الظهور ليس أثرا في حقيقة المنطبع ، فلا يقال : الحق تقيد بهذه المظاهر ، بل ظهوراته تقيدت بها لا حقيقته . 
@@ -3393,7 +3685,7 @@ English revised against print: corrected the initial claim that the image has no
 
 وإنما ذكر ذلك ؛ لئلا يتوهم أنه تخيل ما رآه في المرآة خارج المرآة ، فدفع ذلك الوهم ، ثم بالغ فقال : ولا اسم معين ولا صفة معينة ولا حال معين حتى يقال ، هي من المرايا المعنوية ثم عمم بقوله : ولا غير ذلك ، أي : من النسب والإضافات بمحو الكل في الحقيقي حينئذ .
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —if it were not His very reality, they could not say this. He answers that this language has a figurative aspect. “The thing has appeared in the mirror” refers to its image or manifestation, not to the essence itself having entered the mirror. Appearance is an attributed relation, not the original reality. An effect on that relation is not an effect on the Essence. We should not say the Real has become restricted by these loci; rather, **His appearances are qualified through them, not His Reality**.
 
@@ -3411,11 +3703,15 @@ Textually central to the question of how a knower can have unmediated essential 
 
 English revised against scan, especially the omitted negative-absoluteness objection and answer. The old rendering introduced a subsequent descent and effacement merely from attention; the source’s stronger wording is restored. The opening continues p.106.
 
-## Printed p. 108 · Text Eight: al-tajalliyāt al-dhātiyya al-barqiyya
+Related passage IDs: QNW-WIT241
 
-**MSH-P108** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P108 · Printed p. 108 · Text Eight: al-tajalliyāt al-dhātiyya al-barqiyya
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 ثم ذكر أن هذا التجلي أي : الذي في غير المرآة ، يعلم ذوقا أن المرآة لا أثر لها في الحقيقة ، إذ لم تؤثر في ظهورها الذي نسب الأثر بسببه إلى المنطبع ؛ وذلك أن لو أثرت في ظهورها من حيث هو ظهور ، لكان كل ظهور متأثر من المرآة ، لكن لما أمكن الظهور بغيرها ، لم يكن متأثرا بها ، بل المتأثر بها بعض الظهورات ، وذلك بحسب أوصاف لا حقه للظهور ، فإذا لم يؤثر في الظهور الذي هو عارض قريب ، لم يؤثر في حقيقته بطريق الأولى . 
 
@@ -3428,7 +3724,7 @@ English revised against scan, especially the omitted negative-absoluteness objec
 
 ثم قال : [ وهذا الفراغ مطلق ] أي عن النفس والقلب والروح والسر وأخفى ، وجميع الأوصاف والأحوال حتى أنه لا يغاير إطلاق الحق إلا بالمعنى السلبي ، بل بالمعنى
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī:** The distinctive essential disclosure outside the mirror shows by taste that the mirror exerts no influence on the Reality. If a mirror were responsible for appearance *as appearance*, every appearance would have to depend upon a mirror; but an appearance without any such mirror is possible. Mirrors therefore condition only some appearances and their accompanying qualities. If they do not alter even appearance considered in itself, still less can they alter the Reality of the one appearing.
 
@@ -3448,11 +3744,15 @@ Do not collapse “brief” into “subjective only”: p109 expressly explains 
 
 English checked against scan and revised in two places: restored that the names are not external to the Essence, and rendered emptiness of the enumerated faculties without adding attachment. The printed إلا بالمعنى السلبي before بل بالمعنى [continued المقابل للتقييد on p.109] is unstable; the English flags the contextual interpretation. Quotation boundaries in this edition are unreliable; speaker labels remain editorial.
 
-## Printed p. 109 · Text Eight: why lightning-like essential disclosure cannot endure
+Related passage IDs: QNW-WIT242
 
-**MSH-P109** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P109 · Printed p. 109 · Text Eight: why lightning-like essential disclosure cannot endure
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 المقابل للتقييد ؛ وليس معنى الفراغ من هذه الأمور عدمها في الواقع ، بل عدم كونها ملتفتا إليها ومانعا ، كما أن إطلاق الحق ليس بمعنى مجردة عن الصفات كيف وهي واجبة أزلا وأبدا . 
 ثم لما توهم من كونه دائما دوام هذا التجلي عليه لكمال استعداده استثنى ، 
@@ -3467,7 +3767,7 @@ English checked against scan and revised in two places: restored that the names 
 
 وفي قوله :  “ من الفراغ والإطلاق المستجلب لهذه التجليات الاختصاصية هي الإطلاق ( لمناسبته ) إطلاق الذات بخلاف الجمعية ، فإنها إنما تقتضي ظهور الذات مع
 
-### English
+### English · passage 1
 
 ... opposed to restriction, not to an actual annihilation of the faculties. “Emptiness” does not mean that self, heart, spirit, secrets, qualities and states cease to exist in reality; it means they are not attended to and do not constitute obstacles. Similarly the Real's unrestrictedness does not mean an absence of attributes, which are eternally and necessarily His. Qūnawī then forestalls the assumption that perfect receptivity would cause this disclosure to continue indefinitely: “It does not remain beyond one breath; therefore it is likened to lightning.” This contrasts with some introductory illuminations which, despite beginning as flashes, may develop into a stable state.
 
@@ -3485,11 +3785,15 @@ Strong authorial evidence: absence of attention, not nonexistence of faculties; 
 
 All authorial body and English compared with printed p.109. No material English change required. The explanation explicitly distinguishes absence of attention from real annihilation of the faculties and preserves the objection concerning comprehensiveness. Arabic footer-free body is complete.
 
-## Printed p. 110 · Text Eight: enduring effects of a momentary disclosure
+Related passage IDs: QNW-WIT242
 
-**MSH-P110** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P110 · Printed p. 110 · Text Eight: enduring effects of a momentary disclosure
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 الصفات ، وهاهنا وإن كانت الذات متصفة بالجميع ، لكنها لم يحتجب بها ساعة لطيفة ، ثم احتجبت برداء الكبرياء  “ . 
 وفهم من قوله :  “ فحكم الجمعية يثبته وينفى دوامه  “ : أن الجمعية لا تقتضي اجتماع الأوصاف والأحوال في آن واحد ؛ بل يكفى حصولها في الإنسان على سبيل التعاقب كيف وهو في كل آن خلق جديد ، ويؤيده إن جعل السبب أثر الجمعية ، هو حصول مقتضاه بالفعل ، والحال إنما هي بالقوة ، فافهم . 
@@ -3501,7 +3805,7 @@ All authorial body and English compared with printed p.109. No material English 
 
 قال رضي اللّه عنه : [ وعرفت في ليلة كتابتي هذا الوارد ، أنه من لم يذق هذا المشهد لم يكن محلا
 
-### English
+### English · passage 1
 
 ... attributes. Here, although the Essence remains qualified by all of them, it is not veiled by them for a subtle instant, then is veiled by the robe of majesty. The principle that comprehensiveness establishes the disclosure but negates its permanence also implies that the several capacities need not be simultaneously active. Their successive activation is enough, especially given the renewal of creation at every instant. The comprehensive character need not be an actual aggregation of all states in a single instant; the potential for them is significant.
 
@@ -3519,11 +3823,15 @@ Separate duration of disclosure from duration of resulting states or sciences. N
 
 Compared with scan. English restores the presentness of spiritual witnessing and the specified rulings of necessity, omitted from the earlier paraphrase; also restores the Essence as the subject of veiling. Arabic body boundary complete.
 
-## Printed p. 111 · Text Eight: the prophetic inheritance and language of “nothing with Him”
+Related passage IDs: QNW-WIT242
 
-**MSH-P111** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P111 · Printed p. 111 · Text Eight: the prophetic inheritance and language of “nothing with Him”
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 للوراثة ولم يعرف سر قوله صلى اللّه عليه وسلم :  “ لي مع اللّه وقت لا يسعني فيه غير ربي  “  “ 1  “ ، ولا سر قوله صلى اللّه عليه وسلم :  “ كان اللّه ولا شيء معه  “  “ 2  “ ، ولا سر قوله تعالى :وَما أَمْرُنا إِلَّا واحِدَةٌ كَلَمْحٍ بِالْبَصَرِ[ القمر : 50 ] ، ولا يعرف مبدئية الإيجاد لا في زمان موجود ] . 
 أشار إلى فوائد أخرى عزيزة جدّا لهذا التجلي الاختصاصي ، إن الشيخ رضي اللّه عنه مع جلالة قدره لم يعرفها إلا ليلة كتابة هذا الوارد منها : إن من لم يذق هذا المشهد من التجلي الذاتي البرقي ، أي لم يعرف بالذوق والوجدان قبل ذلك إشعارا بامتناع معرفته بغير ذلك ، لم يكن محلا للورثة النبوية ، فلم يكن من العلماء الذين هم ورثة الأنبياء ، إذ ميراثهم الخاص هذا التجلي لغاية عظمته ، وما دونه كما يكون ميراثهم ، يكون ميراثا لعامة الأولياء أيضا . 
@@ -3534,7 +3842,7 @@ Compared with scan. English restores the presentness of spiritual witnessing and
 ومنها : أن من لم يذق هذا المشهد ، لم يعرف سر قوله صلى اللّه عليه وسلم :  “ كان اللّه ولا شيء معه  “  “ 4  “ ، وذلك أن صفاته تعالى لازمة لذاته ، فلا يتصور الذات بدونها إلا لمن تجلى له الذات من غير ظهوره هذه الصفات ، فيعرفها حينئذ أنه كان في الاعتبار الأول أيضا لا شيء معه ، كما أنه الآن لا شيء معه باعتبار هذا التجلي . 
 واشترط أيضا ذوق ذلك لما مر بعينه ، ومنها أن من لم يذق هذا المشهد لم يعرف سر
 
-### English
+### English · passage 1
 
 ... for inheritance [from prophecy], nor has he understood the secret of the saying ‘I have with God a time in which none but my Lord can contain me’; nor the secret of ‘God was, and nothing was with Him’; nor the secret of God's words ‘Our command is but one, like the blink of an eye’ [Q 54:50]; nor the principiality of existentiation outside any existent time.”
 
@@ -3552,11 +3860,15 @@ Hadith wording and attribution require verification independently of this editio
 
 Compared with scan. English removes the unsupported softening “not necessarily” and restores the source’s categorical distinction of inheritances. The source’s ولا يشترط لمعرفته ذوق هذا التجلي appears to lack a consistent connective/negative; the contextual reading is expressly flagged. Hadith-like sayings remain citations made by the author, not independently authenticated reports.
 
-## Printed p. 112 · Text Eight: fixed entities, causality and principiality outside time
+Related passage IDs: QNW-WIT242
 
-**MSH-P112** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P112 · Printed p. 112 · Text Eight: fixed entities, causality and principiality outside time
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 قوله تعالى : وَما أَمْرُنا إِلَّا واحِدَةٌ [ القمر : 50 ] ، أي : وما شأن تجلينا إلا لحظة واحدة كلمح بالبصر .
 
@@ -3569,7 +3881,7 @@ Compared with scan. English removes the unsupported softening “not necessarily
 الغرض من هذا بيان حال الأمور المذكورة أعني صيرورته وارثا وواسع القلب بربه وعارفا سر  “ ولا شيء معه  “ ، وسر وحدة الأمر ، ومبدئية الإيجاد في توقفها على التجلي الذاتي الاختصاصي ، كتوقف هذه المسألة توقفا ظاهرا ، يعنى : من ذاق هذا المشهد الذي هو التجلي الذاتي الاختصاصي بعد علمه أن الأعيان الثابتة ، 
 أي : الصور الثابتة للأشياء في العلم الأزل ، هي حقائق الموجودات والحقائق غير مجعولة ، فالأعيان أيضا غير مجعولة ، والمقدمتان تبينان فيما بعد حقيقة الحق منزهة عن الجعل والتأثير على ما تقرر في العقول السليمة كلها ، وليس في العالم والأشياء أمر ثالث غير الحق والأعيان ؛ لانحصار العالم والأشياء في الوجود والحقائق والوجود حقيقة الحق والحقائق هي الأعيان ، فإنه يجب أن
 
-### English
+### English · passage 1
 
 ... of Q 54:50, “Our command is but one”: the divine self-disclosure under this aspect is like a single moment, “like the blink of an eye.” This is characteristic of the special essential disclosure, whereas other forms can continue for two or more instants. Even a reading of the verse as referring to the Last Day can be connected to the same principle, for the general disappearance of things under essential disclosure would be implicated. Without the taste, the matter is not known in the requisite sense.
 
@@ -3585,11 +3897,15 @@ Not-made fixed entities ≠ independently existing entities; keep distinction be
 
 Compared with scan. Restored the omitted explanatory sequence and precise final continuation; removed the unsupported qualification independently subsisting fundamental. The printed ومن ثم أمر ثالث requires the bracketed [no] from the explicit following gloss وليس ... أمر ثالث; no Arabic emendation is asserted. The printed مبدئية الإيجاد دال في زمان and the transition near unity of the command are defective and marked.
 
-## Printed p. 113 · Text Eight: a precise nonstandard account of causality
+Related passage IDs: QNW-WIT242
 
-**MSH-P113** · [Arabic source](https://docs.google.com/document/d/10rMWtE9yNKWGhXq8jXBiSUeWYfDNPrb5gho2-g1xoCg/edit)
+## MSH-P113 · Printed p. 113 · Text Eight: a precise nonstandard account of causality
 
-### Arabic
+Source: https://docs.google.com/document/d/10rMWtE9yNKWGhXq8jXBiSUeWYfDNPrb5gho2-g1xoCg/edit
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 يعلم إن صح له ما ذكرنا من هذه المقدمات ، أن لا أثر لشيء في شيء ؛ لأنه إما في الأعيان وليست مجعولة ، وما لا يقبل التأثير بحقيقته ، وأما في الحق وعدم قبوله التأثير ظاهر ، أو في الجمع بينهما ، فأما في وجود الجمع أو في حقيقته ، فيعود الكلام فيه أو المجموع من وجوده وحقيقته ، فيتسلسل ووجود المجموع إن كانت معدومة ، فلا أثر في حقيقة المعدوم ، إذ لا حقيقة له من حيث هو معدوم . 
 
@@ -3600,7 +3916,7 @@ Compared with scan. Restored the omitted explanatory sequence and precise final 
 
 لا يقال ، فهي علل الظهور ؛ لأنا نقول : اقتضت الأشياء الظهور ولم تستقل ، فهي شروط للظهور لا علل الثبوت مقتضية ، وهي أعيان الأشياء من قبل ، على أنها لا تؤثر في نفس الظهور بل في صفاته ، فليست مؤثرة أيضا في الشروط الصفات الوجوبية وغيرها من العقول والنفوس والطبائع ، وتسميتها عللا وأسبابا ، ليس على الحقيقة ، فافهم هذه الدقائق تفز بكنوز الحقائق !
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —know, if these premises are established for him, that nothing has an effect upon another thing. An effect would either be imposed upon the fixed entities (which are not made and do not admit essential alteration), upon the Real (which plainly does not admit alteration), or upon their conjunction. But if that conjunction is considered in its existence or its reality, the same problem recurs; if a further composite of those two is proposed, an infinite regress ensues. Nor can an effect alter the reality of the nonexistent qua nonexistent, since under that aspect it has no actual reality to receive an alteration.
 
@@ -3616,11 +3932,13 @@ Central disputed argument: does the differentiation of preparedness have real gr
 
 Printed p.113 is absent from the acquired scan. English and Arabic checked against the publicly linked page-stamped transcription only. Corrected the misreading that someone who had tasted the disclosure nevertheless rejects it, restored the explicit no-recipient argument, and included necessary attributes among the enumerated conditions. No claim of visual or manuscript verification.
 
-## Printed p. 114 · Text Eight: existential influx and causal relations
+## MSH-P114 · Printed p. 114 · Text Eight: existential influx and causal relations
 
-**MSH-P114** · [Arabic source](https://docs.google.com/document/d/10rMWtE9yNKWGhXq8jXBiSUeWYfDNPrb5gho2-g1xoCg/edit)
+Source: https://docs.google.com/document/d/10rMWtE9yNKWGhXq8jXBiSUeWYfDNPrb5gho2-g1xoCg/edit
 
-### Arabic
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 قال رضي اللّه عنه : [ وهكذا فلتعرف الأمر في المدد ، فليس ثمة شيء يمد شيئا غيره ، بل المدد يصل من باطن الشيء إلى الظاهر ، والتجلي النوري الوجودي يظهر ذلك ، فليس الإظهار بتأثير في حقيقة ما أظهره ، فالنسب هي المؤثرة بعضها في بعض ، بمعنى أن بعضها سبب لانتشاء البعض ، وظهور حكمه في الحقيقة التي هي محتدّها ] . 
 
@@ -3630,7 +3948,7 @@ Printed p.113 is absent from the acquired scan. English and Arabic checked again
 قال رضي اللّه عنه : [ ومن جملة ما يعرفه ذائق هذا التجلي  “ 1  “ ، أن لا أثر للأعيان الثابتة من كونها مرائي في التجلي الوجودي الإلهي ، إلا من حيث ظهور التعدد الكامل في غيب ذلك التجلي ، فهو أثر في نسبة الظهور من الأمر الذي هو شرط في الإظهار ، والحق يتعالى عن أن يكون متأثرا من غيره ويتعالى حقائق الكائنات أن تكون من حيث هي حقائقها متأثرة ، فإنها من هذا الوجه في ذوق الكمال عين شؤون الحق ، فلا جائز أن يؤثر فيها غيرها ، فلا أثر لمرآة ما من حيث مرآة في حقيقته المنطبعة فيها لما مرّ بيانه ] . 
 اعلم أن هذه المسألة أعني : مسألة تعديد الأعيان من حيث هي مرايا للتجلي الوجودي وإظهار التجلي الوجودي إياها ، لم يفهم فيما سبق ؛ لأنه إنما ذكر فيه تأثير المرايا
 
-### English
+### English · passage 1
 
 **Qūnawī:** “Understand influx (*madad*) in the same way. There is nothing that supplies influx to something other than itself: it reaches from a thing's inward dimension to its outward dimension, and the luminous existential self-disclosure makes this apparent. Making apparent does not affect the underlying reality of what it manifests. Relations affect one another in the sense that some occasions give rise to others, and their ruling appears in the reality that is their origin.”
 
@@ -3646,11 +3964,15 @@ On p114 the line «(1) أي التجلي البرقي...» is a modern printed e
 
 Printed p.114 is absent from the acquired scan. Review is against the public page-stamped transcription only. English restores the original identity argument about inward existence and removes the unsupported “separate created stock” qualification. The transcription reads التعدد الكامل; [latent] follows the explicit explanatory الكامن on p.115 and is marked as interpretation, not scan-verified Arabic. This page’s final gloss continues p.115.
 
-## Printed p. 115 · Text Eight: neither mirrors nor appearances alter the relevant intrinsic realities
+Related passage IDs: QNW-WIT242, QNW-WIT243
 
-**MSH-P115** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P115 · Printed p. 115 · Text Eight: neither mirrors nor appearances alter the relevant intrinsic realities
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 في المنطبع وما لمؤثر في آثار الأشياء والمدد فيها ، وإنما ذكرها منفردة لشهرة ما يخالفها ، وذلك إن مما اشتهر أن الأعيان الثابتة من حيث كونها مرائي تجلي الوجودي عددت الوجود الواحد وجعلته كثيرا ، فأثرت في تكثيره والحق فيها بإظهارها بعد ما كانت في كتم العدم . 
 
@@ -3663,7 +3985,7 @@ Printed p.114 is absent from the acquired scan. Review is against the public pag
 
 قال رضي اللّه عنه : [ فافهم هذا النص وتدبره ،
 
-### English
+### English · passage 1
 
 [Continued from the prior page.] The preceding account concerned what happens to the reflected image, the purported efficacy of mirrors upon the effects of things, and the influxes to them. Qūnawī singles out the matter because the contrary opinion is widespread: namely, that the fixed entities, in acting as mirrors for existential self-disclosure, multiply the one existence and make it many, thus exerting an effect upon its multiplication; and that the Real exerts an effect upon these entities by manifesting them after they had remained concealed in nonexistence.
 
@@ -3679,11 +4001,13 @@ The source uses compressed and occasionally inconsistent pronouns. Distinguish p
 
 Entire page compared with scan. English retained with two restorations: the printed assertion that conceptual multiplicity becomes real, and the final definition of real influence without an added condition. The p.114 continuation and the p.116 opening remain aligned.
 
-## Printed p. 116 · Text Eight concludes; Text Nine begins with general rules about manifestation
+## MSH-P116 · Printed p. 116 · Text Eight concludes; Text Nine begins with general rules about manifestation
 
-**MSH-P116** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
 
-### Arabic
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 فقد أدرجت فيه من نفائس العلوم والأسرار ما لا يقدر قدره إلا اللّه ، وهذا هو الحق اليقين والنص المبين ، وكل ما تسمعه مما يخالف ذلك ، فإنه وإن كان صوابا ، فإنه صواب نسبي ، وهذا هو الحق الصريح الذي لا مرية فيه واللّه المرشد والهادي ] .
  
@@ -3695,7 +4019,7 @@ Entire page compared with scan. English retained with two restorations: the prin
 قال رضي اللّه عنه : [ ومن النصوص الكلية نصوص ذكرتها في كتاب مفتاح غيب الجمع وتفصيله ، وفي غيره من الكتب التي أنشأتها لا بكلام أحد من الناس ، فإن ذلك ليس من دأبي ، وقد عصمني اللّه من ذلك وأغناني بهبته الخاصة العلية عن العواري الخارجية السفلية ، غير أنه لما اختص هذا الكتاب بذكر هذه النصوص ، وجب ذكر تلك النصوص أيضا هنا ] . 
 لما فرغ عن بيان أنواع التجليات من حيث كونها في المظاهر وغيرها ، وأن المظاهر لا أثر لها في الظاهر ، ولا للظاهر فيها على وجه حقيقي ، بل على نوع من المجاز ، شرع في بيان
 
-### English
+### English · passage 1
 
 **Qūnawī, completing Text Eight:** “For I have placed in it precious sciences and secrets whose worth only God can measure. This is the truth of certainty (*ḥaqq al-yaqīn*) and an unambiguous text. Whatever you hear that differs from it, even if correct, is correct in a relative sense. This is the explicit truth beyond doubt, and God is the one who guides and directs.”
 
@@ -3713,11 +4037,15 @@ Qūnawī’s *Miftāḥ* title and quoted material need comparison with independ
 
 Compared with scan. The print reads مبدئية الإيجاد في زمان موجود, unlike the explicit لا في زمان موجود on p.111; [without] marks the contextual correction. Restored the omitted “He is not other than them,” the final prayer, and the distinction of certainty from relative correctness. Text Nine begins on this page as in the print.
 
-## Printed p. 117 · Text Nine: causality of multiplicity becomes manifest only in a viewed locus
+Related passage IDs: QNW-WIT243
 
-**MSH-P117** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P117 · Printed p. 117 · Text Nine: causality of multiplicity becomes manifest only in a viewed locus
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 أن التجليات لا تكون في غير المظاهر ، وأن أثرها المجازي ، فيما ذا يكون ، وجعلها من النصوص الكلية من حيث أنهما قاعدتان تنطبقان على جميع جزئياتها ، وإن كانا جزئين بالنسبة إلى ما تقدم . 
 
@@ -3729,7 +4057,7 @@ Compared with scan. The print reads مبدئية الإيجاد في زمان م
 
 أي : من جملة تلك النصوص ؛ إن كل ما هو سبب في وجود كثيرة وكثير ، أوردهما معا ، ليشعر باستلزام كل منهما للآخر من حيث الحقيقة ، وإن توهم الانفكاك فيما بعد واحد بجهة أخرى : كالإنسان الواحد ، فإنه من حيث الشمول كثير ووحدته باعتبار اعتبر السببية في وجودهما ، إذ تعقلهما كما في العلم الأزلي لا يحتاج إلى المظهر ، فإنه من حيث هو ، سبب وجودهما ، قيد بذلك ؛ لأن الحق سبب وجودهما وقد يتجلى بدون المظهر ، لكنه من حيث أنه سبب ، لا يمكن أن يتعين بظهور إلا في منظور قيدنا ؛ لأنه لا يمكن تعينه في ذاته بأنه سبب الكثرة ، لكن لا يظهر على التفصيل بدون مرايا الأسماء والصفات والعقول والنفوس وسائر المراتب . هذا في رؤية الحق تعالى ذاته من حيث هو سبب الكثرة ، فإن الرؤية التفصيلية المقيدة بالكثرة الفعلية لا يمكن بدون ذلك ، وإن أمكن رؤية كونه سبب وجود الكثرة بالقوة ، وكذا لا يمكن أن يبدو لناظر من العباد من حيث أنه
 
-### English
+### English · passage 1
 
 [Continued explanation of Text Nine.] The new universal propositions concern the principle that disclosures of the aspect of being a source of many things appear only through loci, and the precise sphere in which their figurative effects can be spoken of. They are universal because each is applicable throughout its particulars, although they develop matters already discussed.
 
@@ -3747,11 +4075,15 @@ The final clause continues on printed p118. “Cause” is restricted by *min �
 
 Full page compared with scan. English revised to restore the commentator’s positive insistence on following the shaykhs in the absence of special gifts, rather than merely contrasting disclosure with imitation. The printed الهيئات/الهيبات and التعليل are textually unstable in this explanation, and the interpretation is marked; Arabic is retained.
 
-## Printed p. 118 · Text Nine: intrinsic production, extrinsic conditions, and modes of causality
+Related passage IDs: QNW-WIT243
 
-**MSH-P118** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P118 · Printed p. 118 · Text Nine: intrinsic production, extrinsic conditions, and modes of causality
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 سبب وجود الكثرة إلا في منظور ؛ لأن تجليه تعالى في غير المظهر لا يكون إلا مع الفراغ التام ، ولا يمكن مع رؤية الكثرة ، فافهم . 
 
@@ -3766,7 +4098,7 @@ Full page compared with scan. English revised to restore the commentator’s pos
 
 قال رضي اللّه عنه : [ ومتى توهم وقوع خلاف ما ذكرنا ، فليس ذلك إلا بشرط خارج عن ذات الشيء أو شروط وبحسبها وبحسب الهيئة المتعلقة الحاصلة من تلك الجمعية أعني
 
-### English
+### English · passage 1
 
 [Text Nine continued.] The Real cannot display His character as cause of the existence of multiplicity to a servant except through an object of contemplation, because His disclosure without a locus entails the total withdrawal from attention to multiplicity. The two perspectives are thus not conflated.
 
@@ -3784,11 +4116,15 @@ Al-Mahāʾimī explicitly says «ولست منهم»—he does not claim realiza
 
 Compared with scan. Restored the contrast of intentional proceeding and [unintentional] fruition; the printed إلى قصد is read from the explicit غير قصد on p.120, so the repair is bracketed. The conjecture concerning the additional factor is translated more fully and its difficult wording marked.
 
-## Printed p. 119 · Text Nine: conditional causal wholes and the impossibility of perfect reproduction
+Related passage IDs: QNW-WIT243
 
-**MSH-P119** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P119 · Printed p. 119 · Text Nine: conditional causal wholes and the impossibility of perfect reproduction
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 جمعية الحقيقة الموصوفة بالمصدرية مع الشروط والاعتبارات الخارجية ، وأحكام المرتبة التي يتعين فيها ذلك الإجماع ، وكُلٌّ يَعْمَلُ عَلى شاكِلَتِهِ " 1 " [ الإسراء : 84 ] . ]
 ومتى اعترض على هذه القاعدة الكلية بتوهم وقوع الضد والمباين أو إثمارهما من الشيء ، فليس بوارد ؛ لأننا إنما منعنا صدور هما وإثمارهما من حيث تعقله من حيث هو هو ، وهذا إنما وقع بانضمام شرط خارج عن ذات ذلك الشيء ، كالنفس الكلية عن الحق بشرط العقل الأول أو شروط كثيرة كسائر المراتب المذكورة . 
@@ -3799,7 +4135,7 @@ Compared with scan. Restored the contrast of intentional proceeding and [uninten
 
 شرع فيما هو في معنى النص الثالث ، أي وكما لا يثمر ولا يصدر عنه ما يضادّه ولا ما يباينه ، كذلك لا يثمر عينه ، ولا مشابه من كل وجه حتى الحقيقة والمرتبة والوجه والنسق ، والزمان والمكان وسائر العوارض .
 
-### English
+### English · passage 1
 
 **Qūnawī (completing the preceding sentence):** “... the conjunction of the reality described as a source with external conditions and considerations, and the rules of the rank in which that conjunction becomes determined. ‘Each acts according to its own configuration’” (Q 17:84).
 
@@ -3815,11 +4151,15 @@ The printed marginal note «(1) أي : خليقته وملكته...» is a moder
 
 Entire page compared with scan. Body English retained apart from restoring the opening of the final gloss, what amounts to a third proposition. Removed the prior inline editorial note and forward-looking sentence from translated authorial prose. The actual modern footnote below the rule is excluded from Arabic body.
 
-## Printed p. 120 · Text Nine: a single effusion, inexhaustible possibilities, no identical repeated disclosure
+Related passage IDs: QNW-WIT244
 
-**MSH-P120** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P120 · Printed p. 120 · Text Nine: a single effusion, inexhaustible possibilities, no identical repeated disclosure
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 وإنما قال : أولا هنا ، ولا يثمر إشعارا بأنه إذا لم يحصل من غير قصد ، فكيف من القصد ، وإنما قال : ولا يظهر ؛ دفعا لما يتوهم من أن المرآة يظهر فيها العين أو المشابه من كل وجه ، ثم علل ذلك بأنه يلزم من ذلك أن يكون الوجود قد حصل ، ولما لم يكن الوجود حادثا أصلا لما بيناه عن وجوبه بالذات ، فسره بقوله : وظهر ، وإنما أورد لفظ قد حصل ؛ ليناسب قوله : وذلك تحصيل الحاصل في حقيقة واحدة ، ومرتبة واحدة على وجه واحد ونسق واحد ، وإنما ذكر هذه الأمور ؛ لأن الحقيقة غير المرتبة كما في الفرس والبقر في مرتبة واحدة وهي الحيوان مع اختلاف حقيقتهما ، فإن الفرس حيوان صاهل ، والبقر حيوان خائر ومعها غير الوجه ، فإنه باعتبار العوارض والكل غير النسق ؛ لأنه باعتبار الهيئة المجموعية ، وذلك تحصيل للحاصل . 
 
@@ -3833,7 +4173,7 @@ Entire page compared with scan. Body English retained apart from restoring the o
 استدلال آخر على امتناع تحصيل الحاصل بمعنى الظهور ، فأظهر لوجهين آخرين : 
 أحدهما إن الممكنات غير متناهية على ما هو المشهور ، وكل يقتضي ظهورا ، فلو تكرر الظهور ، زاد على غير المتناهي ، فلو قوبل كل ظهور بكل ممكن ، فإن لم ينقطع الممكن قبل
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī:** Qūnawī first says “nor does it bring forth,” suggesting that what does not arise even apart from deliberate intention cannot arise simply through intention, and adds “nor does it appear,” to forestall the supposition that a mirror can reproduce an identical thing or a likeness in absolutely every respect. His assertion that existence would thereby “have come about” is interpreted in the special sense of *appearing*, not as saying that existence itself began in time: the earlier demonstration treated existence as intrinsically necessary. He uses the idiom “obtaining what is already obtained” to capture the impossibility of an exact duplicate manifestation at the same reality, rank, aspect and arrangement.
 
@@ -3851,11 +4191,15 @@ Important to distinguish a conceptual claim against exact repetition from a phys
 
 Compared with scan. Restored the author’s separate explanations of true, wise, and knowing, and translated the infinity argument directly rather than replacing it with a neutral summary. That historical argument is reported as the commentator’s reasoning, not validated as modern set theory. The final sentence continues p.121.
 
-## Printed p. 121 · Text Ten begins: negative unrestrictedness and the first principle of determinations
+Related passage IDs: QNW-WIT244
 
-**MSH-P121** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P121 · Printed p. 121 · Text Ten begins: negative unrestrictedness and the first principle of determinations
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 الظهور ، كان الناقص مثل الزائد ، وإن انقطع كان متناهيا ، وزيادة الظهور بقدر منتهاه ، فينقطع أيضا ، فيكون غير المتناهي بل الزائد عليه متناهيا ، وهذا هو برهان التطبيق في امتناع التسلسل . 
 
@@ -3866,7 +4210,7 @@ Compared with scan. Restored the author’s separate explanations of true, wise,
 النص العاشر
 نص شريف : قال رضي اللّه عنه : [ اعلم أن الحق لما لم يكن أن ينسب إليه من حيث إطلاقه صفة أو اسم أو يحكم عليه بحكم ما سلبيّا كان أو إيجابيّا ، علم أن الصفات والأسماء والأحكام لا يطلق عليه ، ولا ينسب إليه إلا من حيث التعينات ، ولما استبان أن كل كثرة وجودية أو متعقلة ، يجب أن تكون مسبوقة بوحدة ، لزم أن تكون التعينات التي من حيث ما تضاف الأسماء والصفات والأحكام إلى الحق ، مسبوقة بتعين هو مبدأ جميع التعينات ومحتدها ، بمعنى أنه ليس وراءه إلا الإطلاق الصرف ، وأنه أمر سلبي يستلزم سلب
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —manifestations, the lesser would equal the greater. If the possible things came to an end, they would be finite, and manifestations would exceed them by a determinate amount and also come to an end. Thus the infinite, indeed what exceeds it, would be finite. This is the proof by correspondence against an infinite regress.
 
@@ -3882,11 +4226,15 @@ Exclude the printed editorial note citing al-Kāshānī’s *Laṭāʾif al-aʿl
 
 Full page compared with print. Corrected electronic متعلقة to printed متعقلة (also explicitly glossed as existence in the mind on p.122). Restored the actual proof-by-correspondence argument and the full nonrepetition argument without substituting a modern summary; the historical reasoning is reported, not validated. The opening completes p.120. Modern editorial footnote excluded.
 
-## Printed p. 122 · Text Ten: unrestricted Essence versus the first determinate basis of names
+Related passage IDs: QNW-WIT244
 
-**MSH-P122** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P122 · Printed p. 122 · Text Ten: unrestricted Essence versus the first determinate basis of names
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 الأوصاف والأحكام والتعينات والاعتبارات من كنه ذاته سبحانه ، وعدم التقيد والحصر في وصف أو اسم أو تعين أو غير ذلك مما عددنا ، أو أجملنا ذكره ] . 
 لما ذكر في النص السابق إنه لا بدّ من اختلاف ما ، بين الأصول والثمرات من وجه أو وجوه مبين هاهنا أن تفاوت الاختلاف ضعفا وشدة من قلة الوسائط وكثرتها ، مع ما يترتب عليهما من العطايا والقابلين لها وأحكامها مع تقديم مقدمة في ذلك يدل على أنه لا بد من واسطة ، وهي أن الحق لما لم يمكن أن ينسب إليه من حيث إطلاقه السلبي صفة ولا اسم ، والصفة ما يقوم بذاته ، والاسم الذات مع الصفة ، أو يحكم عليه بحكم ما ، سلبيّا أو إيجابيا كالحياة والعلم والقدرة . 
@@ -3901,7 +4249,7 @@ Full page compared with print. Corrected electronic متعلقة to printed مت
 
 قال رضوان اللّه عليه : [ ثم إن لذوي العقول السليمة ، وإن عدموا الكشف الصحيح أن يعتبروا الصفات والأسماء التالية ، فإن تعذر عليهم تعقل أسماء وصفات وراء
 
-### English
+### English · passage 1
 
 **Qūnawī (completing Text Ten's opening proposition):** “... qualities, judgements, determinations and considerations from the innermost reality of His Essence—exclusion of confinement or enclosure in any attribute, name, determination or anything else we have enumerated or referred to collectively.”
 
@@ -3919,11 +4267,15 @@ This passage directly distinguishes an absolute negative consideration from prin
 
 Entire page compared with scan. Corrected the electronic metathesis متعلقة to printed متعقلة. Restored the omitted sentence that calls the determination a principle; the print repeats المبدأ والمبدأ and no conjectural Arabic emendation is adopted. Removed a modern explanatory aside from translated authorial prose. The modes of predication remain explicitly distinguished.
 
-## Printed p. 123 · Text Ten: rational order of divine names, non-temporal priority, and divine gifts
+Related passage IDs: QNW-WIT244
 
-**MSH-P123** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P123 · Printed p. 123 · Text Ten: rational order of divine names, non-temporal priority, and divine gifts
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 ما تصورت ، وانتهت إليه إدراكاتهم العقلية ، فتلك الأسماء الذات بالنسبة إليهم ويستدل بحقائقها في طور العقل النظري حال الحجاب ؛ لشمول حكمها وتبعية غيرها من الصفات والأسماء لها وتوقف تعين ما بعدها عليها ]
  . 
@@ -3939,7 +4291,7 @@ Entire page compared with scan. Corrected the electronic metathesis متعلقة
 
 وقسّم العطايا أولا إلى الذاتية والأسمائية باعتبار أن كل عطاء مبدؤه الذات ، من اعتبار اسم معين قيدنا بذلك إذ لا بدّ من الواسطة ؛ لأن الذات من حيث هي غنية عن
 
-### English
+### English · passage 1
 
 **Qūnawī (continued):** “—what they have conceived and their intellectual apprehensions have reached, those names are essential relative to them. Their realities furnish an inference in the phase of theoretical reason, while veiled, because their ruling is comprehensive, the other attributes and names depend upon them, and the determination of what follows depends upon them.”
 
@@ -3955,11 +4307,15 @@ Historical attribution to Ashʿarī and Ḥanafīs is al-Mahāʾimī’s report,
 
 Full page compared with print. The print indeed reads بعدم كلها in the attribution to the Ḥanafīs; the contextual rendering [eternity] is an explicit conjecture for بقدم, not a verified school doctrine or manuscript reading. The modern warning about historical ascriptions has been moved out of the translated prose into this note. The print من اعتبار اسم معين lacks an explicit negative; [without] is supported by the division on p.124. Restored exact final continuation into العالمين on p.124. No Arabic conjecture imposed.
 
-## Printed p. 124 · Text Ten: essential, nominal and mixed gifts; unreckoned and reckoned bestowal
+Related passage IDs: QNW-WIT245
 
-**MSH-P124** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P124 · Printed p. 124 · Text Ten: essential, nominal and mixed gifts; unreckoned and reckoned bestowal
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 العالمين ، عطاء ذاتي ، وباعتبار اسم معين عطاء رسمي ، ثم إلى ثلاثة أقسام باعتبار أن ما يغلب فيه جهة الوجوب ، فعطاء ذاتي ، وما يغلب فيه جهة الإمكان ، فعطاء رسمي ، وما فيه الجهتان على التساوي أو قريبا فيه ، فعطاء مجموعي حاصل من مجموع الذات والأسماء ، فافهم " . 
 
@@ -3973,7 +4329,7 @@ Full page compared with print. The print indeed reads بعدم كلها in the a
 
 ثم قال : بحسب الغلبة والمغلوبية نفيا لزعم من يتوهم أن بعض الأسماء يقتضي
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing Text Ten):** —the worlds. A gift considered in this way is essential, and one considered through a particular name is nominal. A more detailed threefold division turns on the aspect that predominates: where the aspect of necessity prevails, the gift is designated essential; where the aspect of possibility prevails, nominal; where the two are balanced or nearly balanced, a composite gift pertaining jointly to Essence and names. Understand.
 
@@ -3987,11 +4343,15 @@ There is a likely duplicated clause «فإن غلبت نسبتها... أو با�
 
 Entire page compared with scan. Corrected the mistaken attachment of the opening العالمين to the source of gifts: it completes the Essence’s independence of the worlds on p.123. Removed an unmarked interpretive aside from authorial prose and restored the exact final continuation. The lemma contains a duplicated clause concerning predominance of the names; English translates that clause once, and this omission of repetition is explicitly recorded. Arabic preserves the print’s duplication.
 
-## Printed p. 125 · Text Ten: reckoning, essential correspondence, mercy and scriptural proofs
+Related passage IDs: QNW-WIT245
 
-**MSH-P125** · [Arabic source](https://archive.org/details/machra3-khosous/page/n123/mode/1up)
+## MSH-P125 · Printed p. 125 · Text Ten: reckoning, essential correspondence, mercy and scriptural proofs
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n123/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 الحساب دون البعض ، فأكد لتيقنه ، وقال سرا كبيرا لا يمكن إفشاؤه ، وقرر ذلك أن الأسماء راجعة إلى الذات ، فالحساب وإن عسر لبعض الأسماء رجع إلى ما لا حساب فيه ، وهو الرحمة وإن كانت في صورة العذاب ؛ وذلك لأن العذاب لما كان حكمه ففيه مناسبة عقلية لأفعالهم ، وفيه من كمال الحكمة ما يلتذ به من حيث العقل ، وإن كان يتألم من حيث الطبع .
 
@@ -4003,25 +4363,33 @@ Entire page compared with scan. Corrected the mistaken attachment of the opening
 
 قال رضي اللّه عنه : [ ومن لم يعرف هذا الأصل ، لم يعلم حقيقة قوله تعالى : وَاللَّهُ يَرْزُقُ مَنْ يَشاءُ بِغَيْرِ حِسابٍ [ البقرة : 212 ] ، ولا سر قوله تعالى : هذا عَطاؤُنا فَامْنُنْ أَوْ أَمْسِكْ بِغَيْرِ حِسابٍ [ ص : 39 ] ، ونحو ذلك مما تكرر ذكره في الكتاب العزيز ، وفي الأحاديث النبوية أيضا مثل قوله صلى اللّه عليه وسلم : « أنه يدخل الجنة من أمته سبعون ألفا بغير حساب
 
-### English
+### English · passage 1
 
-**Al-Mahāʾimī (continued):** Qūnawī speaks of a hidden secret in the degrees of reckoning because an apparently nominal relation may ultimately return to a more essential one. Al-Mahāʾimī argues that since names return to the Essence, even a severe reckoning under some names is not independent of mercy, though it may appear in a form of chastisement. A consequence can be fitting in a rational sense and manifest a perfection of wisdom while being painful to the recipient's natural disposition. He further conjectures that in the next world reason may come to predominate over bodily inclination; since the disclosures experienced by those undergoing punishment must be nominally determined, he proposes that punishment will in one respect come to an end. He attributes a corresponding doctrine to Ibn ʿArabī. This is a substantive theological claim of the commentator and should be indexed separately from Qūnawī's quoted formulation, not generalized without qualification to every Akbarian school.
+**Al-Mahāʾimī (continued):** ... reckoning while others do not. He emphasizes this because he is certain of it, and speaks of a great secret that cannot be divulged. Its explanation is that the names return to the Essence. Thus reckoning, even when difficult under some names, returns to that in which there is no reckoning: mercy, even if it takes the form of punishment. Since punishment is His judgment, it bears a rational appropriateness to their acts, and it contains a perfection of wisdom in which one takes pleasure as regards intellect, although one suffers as regards nature.
 
-He construes the phrase “if its outcome is a stronger relationship to the Presence of the Essence” as the necessary conclusion of a correctly formed argument, unlike relations under particular names, which can shift. Qūnawī uses restrictive language to assign freedom from reckoning to gifts with an effectively essential predominance, so as not to imply that every gift outside the first-mentioned class must be reckoned.
+Perhaps in the next world intellect will predominate in them over nature. Moreover, the disclosures to those undergoing punishment must be disclosures of the names; their punishment must therefore come to an end in some respect, namely the one we have described. Shaykh Muḥyī al-Dīn explicitly stated this. This relation has already been discussed because of its frequent occurrence in reality. If the outcome—that is, the effect of the prevailing and subordinated aspects—is a strong relation of those gifts to the Presence of the Essence, the expression used indicates that this outcome necessarily follows, just as the conclusion follows from a sound syllogism. This differs from relation to the names, which is not necessary, since it may change.
 
-The reason given for absence of reckoning is essential proportionality between agent and recipient: an essential correspondence, unlike a contingent nominal condition, does not cease. Al-Mahāʾimī locates its governing character in mercy, arguing that the relation of mercy to the Essence is prior to that of wrath. A residual name-based aspect in a mixed gift may tempt one to expect reckoning, but a merely subordinate aspect does not override its governing essential correspondence.
+‘That, then, is what [has no reckoning]’ uses a restrictive construction to indicate that, of these two classes, absence of reckoning belongs exclusively to this one. Had this restrictive formula been used of the essential gifts [mentioned first], it would have suggested that reckoning is necessary for everything else, including this class.
 
-**Qūnawī:** “Whoever does not know this foundation does not understand the reality of the saying, ‘God provides for whom He wills without reckoning’ (Q 2:212), nor the secret of ‘This is Our gift; bestow it or withhold it without reckoning’ (Q 38:39), and similar passages repeated in the Mighty Book and in prophetic reports, such as the saying that seventy thousand of his community will enter Paradise without reckoning ...”
+He then gives the reason for absence of reckoning in both places: ‘Because essential gifts’—those mentioned first—and what has a stronger relation to them, this last class, issue from the agent and are received by the recipient only through an essential correspondence in both. What belongs essentially never ceases or comes to a halt. This pertains specifically to mercy, since mercy's relation to the Essence precedes wrath's relation. Because the aspect of the names is evident in the last class, one might suppose that it is without reckoning from the side of the Essence but subject to reckoning from the side of the names. He rejects this: nothing necessitates the gifts except that correspondence; the subordinated aspect has no effect. Understand.
+
+**Qūnawī:** ‘Whoever does not know this foundation does not know the reality of God's saying, “God provides for whom He wills without reckoning” [Q 2:212], nor the secret of His saying, “This is Our gift; bestow it or withhold it without reckoning” [Q 38:39], and similar passages repeatedly mentioned in the Mighty Book, and also in prophetic reports, such as the saying that seventy thousand of his community will enter Paradise without reckoning ...’
 
 ### Editorial note
 
 The argument about the ultimate character of punishment and Ibn ʿArabī attribution must be compared to passages in *Fuṣūṣ* and *Futūḥāt*. The scriptural words and prophetic report are nested quotations, not original words of al-Mahāʾimī.
 
-## Printed p. 126 · Text Ten: the two classes of unreckoned divine giving
+Stage 13 review: The supplied phrase العذاب لما كان حكمه has been rendered with حكمه understood as “His judgment”. A defective transcription of حكمة (“wisdom”) is also possible in this context. This review has not checked the page image and does not establish either reading.
 
-**MSH-P126** · [Arabic source](https://archive.org/details/machra3-khosous/page/n124/mode/1up)
+Related passage IDs: QNW-WIT245
 
-### Arabic
+## MSH-P126 · Printed p. 126 · Text Ten: the two classes of unreckoned divine giving
+
+Source: https://archive.org/details/machra3-khosous/page/n124/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 ومع كل ألف سبعون ألفا » « 1 » . هؤلاء أصحاب العطايا الأسمائية غير أن نسبتهم إلى حضرة الذات أقوى من نسبتهم إلى حضرة الأسماء والصفات ؛ ولهذا تبعوا أصحاب المناسبة الذاتية وشاركهم في أحوالهم ، فاعلم ذلك ] . أي : ومن لا يعرف أن العطايا الذاتية ، وما غلبت نسبتها إلى الذات لا حساب عليها ، لم يعلم حقيقة قوله تعالى : وَاللَّهُ يَرْزُقُ مَنْ يَشاءُ بِغَيْرِ حِسابٍ [ البقرة : 212 ] أي : العلة الدالة عليه بطريق اللّمية .
 
@@ -4031,67 +4399,77 @@ The argument about the ultimate character of punishment and Ibn ʿArabī attribu
 
 والقسم الثاني : وما أشار إليهم بقوله صلى اللّه عليه وسلم : « ومع كل ألف سبعون ألفا » « 2 » ، هؤلاء أصحاب العطايا الأسمائية ، غير أن نسبتهم إلى الحضرة الذاتية أقوى من جهة غلبة جهة الوجوب .
 
-### English
+### English · passage 1
 
-**Qūnawī (concluding his report):** “... and with every thousand another seventy thousand.” These, he says, possess nominal gifts whose relationship to the Presence of the Essence is stronger than their relationship to the Presence of particular names and attributes; for that reason they follow those who possess essential correspondence and share in their states. Know this.
+**Qūnawī (continued):** ‘... and with every thousand, seventy thousand.’ These possess gifts of the names, but their relation to the Presence of the Essence is stronger than their relation to the Presence of the names and attributes. For this reason they follow those who possess essential correspondence and share in their states. Know this.
 
-**Al-Mahāʾimī:** The foundation teaches that gifts essentially related to the divine Reality, and those in which that relation prevails, are without reckoning. Without it one cannot understand the explanatory ground of Q 2:212, “God provides whom He wills without reckoning.” Though the verse mentions divine willing and the comprehensive name “God,” which embrace named determinations, the essential aspect may predominate within the relevant bestowal. The comprehensive name includes Essence and attributes without lowering the Essence to the level of a particular name. Likewise divine will, here understood as distinct from restricted volition, has a more encompassing relation.
+**Al-Mahāʾimī:** Whoever does not know that essential gifts, and those whose relation to the Essence predominates, have no reckoning does not know the reality of ‘God provides for whom He wills without reckoning’ [Q 2:212]—that is, the cause explaining it by a demonstration of the reason why. This is a gift of the names in which the relation to the Essence predominates, as shown by the fact that ‘God’ is a name encompassing the Essence and attributes, while the Essence is exalted within it. He is high in His nearness and near in His height. Likewise, mashīʾa is above irāda, so it too has a relation to the Essence. ‘Without reckoning’ means in occurrence and timing.
 
-The expression “without reckoning” is taken to embrace the occurrence and timing of provision. The deeper mystery of Q 38:39, “This is Our gift: bestow it or retain it without reckoning,” refers to an essential gift not governed by a calculable rule of obligation or recompense—even the teaching or guidance through which realized people return from the Real to creatures can be transmitted or withheld without a corresponding numerical account.
+Nor does such a person know the secret of ‘This is Our gift’ [Q 38:39]: an essential gift that entails neither obligation nor recompense, even from the aspect of guidance for which the perfected are returned from the Real to creation. Bestow it by teaching whomever you wish, or withhold it, for it is ‘without reckoning’; that is why this phrase is placed last.
 
-Qūnawī uses the word “reality” for the first scriptural passage because its basis is accessible through names outwardly known, but “secret” for the second because it concerns the Essence, the deepest unseen mystery. The prophetic narration is then used to exemplify two groups entering Paradise without reckoning: the original seventy thousand, who are described as leaders with essential gifts, and the accompanying multitudes, whose gifts involve names but incline strongly toward the essential Presence. This is an interpretation of the report, not a hadith-critical authentication.
+He first says ‘reality’, indicating something established in hearts because it concerns the manifest names; he then says ‘secret’, indicating that it concerns the Essence, which is the greatest of the unseen mysteries. He adds that the prophetic reports likewise state that these two classes of gifts are without reckoning: those related to the Essence alone, and those whose relation to the Essence predominates. The first class is the seventy thousand; the report indicates this by making them those who are followed.
 
-[The modern footnotes on this page cite al-Tirmidhī, Ibn Mājah and Aḥmad; they are excluded from the author's Arabic text and may serve as leads for an independent hadith check.]
+The second class is those indicated by ‘with every thousand, seventy thousand’. These possess gifts of the names, but their relation to the Presence of the Essence is stronger because the aspect of necessity predominates.
 
 ### Editorial note
 
 Modern notes about hadith collections (numbers 1 and 2) omitted from authorial Arabic. “Without reckoning” interpreted variously across Q 2:212, Q 38:39, and hadith; keep these contexts distinct.
 
-## Printed p. 127 · Text Ten: recipients and their six modes of request, including unspoken receptivity
+Related passage IDs: QNW-WIT245
 
-**MSH-P127** · [Arabic source](https://archive.org/details/machra3-khosous/page/n125/mode/1up)
+## MSH-P127 · Printed p. 127 · Text Ten: recipients and their six modes of request, including unspoken receptivity
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n125/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 ولعل السر في العدد الأول أنهم على عدد الحجب الإلهية ، وفي الثاني أن كل ألف استتبع العدد المذكور ؛ لأن بهذا الاجتماع إلى عدد الألف تكون المناسبة في الغاية ، فتجعل أصحاب المناسبة الاسمية مع قوتها تابعة لها ، وأشار بقوله : ولهذا تبعوا أصحاب المناسبة الذاتية ، إلى أن الحكم للغالب حتى إنه شاركهم في أحوالهم كلها ؛ وذلك لأن التابع قد يبلغ بالتبعية ما لا يبلغ بالاستقلال ، فلذلك قال : فاعلم ذلك .
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī:** Perhaps the first number, seventy thousand, alludes to the number of divine veils, while the additional multitudes indicate that each thousand brings into its train the same number through its intensified relation of correspondence. This is offered as a possible explanation, not as something proved by the numeral itself. The stronger, essential correspondence can govern recipients whose gifts are otherwise nominal; by following the essentially qualified, a recipient can sometimes attain through dependence what would be inaccessible through independent standing. Hence Qūnawī's instruction, “Know this.”
 
-### Arabic
+### Arabic · passage 2
 
 قال رضي اللّه عنه : [ وإذ قد ذكرنا أقسام العطايا وأحكامها ، فلنذكر أقسام القابلين لها فإنهم في أخذهم على طبقات يتعدد بحسب سؤالاتهم الاستعدادية أو الحلية أو المرتبية أو الروحانية أو الطبيعية المزاجية أو الطبيعية العرضية التي يترجم عنها لسان الطالب القابل ] . لما فرغ عن أقسام العطايا ، أي الذاتية والأسمائية والمنسوبة إليهما وما يترتب عليهما ، ذكر أقسام القابلين لتلك الأقسام ، لكونهم في قبولها على طبقات متفاوتة ، فانقسمت العطايا بأقسامهم أيضا ، وبين رضي اللّه عنه أن طبقاتهم تتعدد بحسب سؤالاتهم .
 
-### English
+### English · passage 2
 
-**Qūnawī:** “Having described the classes of gifts and their governing rules, let us describe the kinds of recipients. Those who receive fall into differing ranks according to the requests that their preparedness, actual state, rank, spiritual constitution, natural temperament, or adventitious natural conditions express—the latter finding expression through the speech of the requesting recipient.”
+**Qūnawī:** ‘Having described the classes of gifts and their governing rules, let us describe the classes of their recipients. In receiving them they fall into levels, differentiated according to their requests of preparedness, state, rank, spirituality, natural temperament, or adventitious nature, which are expressed by the tongue of the seeking recipient.’ **Al-Mahāʾimī:** Having finished with the classes of gifts—essential gifts, gifts of the names, and those related to both—and what follows from them, he describes the classes of their recipients. Their reception differs in degree, so the gifts are also divided according to their classes. He explains that their levels multiply according to their requests.
 
-### Arabic
+### Arabic · passage 3
 
 الطبقة الأولى : السؤالات الحالية ، والحال القابلة الفائضة الاستعدادية ، إذ هو القابلية الفائضة بالفيض الأقدس على الشأن الإلهي . الثانية : السؤالات المقدسة عن الأعيان الثابتة . الثالثة : السؤالات المرتبة ما يعم كل مرتبة من مراتب النزول . الرابعة : السؤالات المختصة ببعض المراتب كالروحانية ، أي المنسوبة إلى الروح ، وما يناسبه من القلب والنفس ، وكالطبيعية المزاجية المتعلقة بالبدن من حيث تركيبه من العناصر ، وكالطبيعة العرضية ، أي العارضة بحسب الدواعي الحاصلة من القوة الجسمانية .
 
-### English
+### English · passage 3
 
-**Al-Mahāʾimī:** Having divided gifts into essential, nominal and jointly related types, Qūnawī now divides recipients according to the different ways in which reception is possible. The word “request” (*suʾāl*) here is broader than a spoken petition. The first form includes a readiness or receptive condition arising through the Most Holy Effusion (*fayḍ aqdas*) at the level of divine affairs; a second concerns requests connected with the fixed entities; a third pertains to a rank of manifestation generally, under the ordered stages of descent. A fourth comprises requests specific to particular levels, such as the spiritual—spirit, heart and soul—natural temperaments resulting from bodily elemental constitution, and contingent bodily impulses and acquired conditions.
+**Al-Mahāʾimī:** The first class is requests of state; the receptive state [the wording here is uncertain] is preparedness, the receptivity bestowed by the Most Holy Effusion upon the divine affair. The second is requests described as ‘purified from the fixed entities’ [المقدسة عن الأعيان الثابتة: the construction is uncertain]. The third is requests of rank, encompassing every rank among the ranks of descent. The fourth is requests specific to certain ranks: spiritual requests, related to the spirit and what corresponds to it, such as heart and soul; requests of natural temperament, related to the body insofar as it is composed of the elements; and requests of adventitious nature, which arise according to impulses originating in the bodily faculties.
 
-### Arabic
+### Arabic · passage 4
 
 وهذه السؤالات الناشئة من الطبيعة هي التي ترجم عنها ، أي بالألفاظ الدالة عليها بعد استقرارها في القلب بلسان الطالب ، وفيه إشعار بأن الداعي إنما يستجاب له ، إذا كان طالبا من اللّه تعالى بالمعرفة التامة والمطاوعة الكاملة القابلة ، إذ سؤال ما لا يمكن ، لا يفيد الإجابة كسؤال النبوة في هذا الزمان ، وأما السؤالات المتقدمة فليست مما يتلفظ بها
 
-### English
+### English · passage 4
 
-Only some requests, especially those springing from natural appetites, receive verbal expression once formed in the heart. Effective petition also requires correspondence between the recipient's actual receptivity and what is requested: asking for what the relevant order excludes—for example prophetic commissioning in the present age—will not produce its fulfillment. The preceding, more fundamental “requests” do not require verbal articulation ...
+These requests arising from nature are what he says are expressed—that is, through words indicating them once they have settled in the heart—by the tongue of the seeking recipient. This suggests that a supplicant is answered only when he seeks from God with complete knowledge and fully compliant receptivity. Requesting the impossible does not secure an answer, as with requesting prophethood in this age. The preceding requests, however, are not things voiced in words ...
 
 ### Editorial note
 
 Al-Mahāʾimī’s enumeration is not perfectly parallel to Qūnawī’s list (note ambiguity of ḥāl, istiʿdād and fixed entities). Preserve without collapsing request from preparedness into spoken supplication.
 
-## Printed p. 128 · Text Ten: highest recipients behold a single effusion under differentiated conditions
+Stage 13 review: The class enumeration remains textually unstable: the first clause combines الحال and الاستعدادية, and the second has المقدسة عن الأعيان الثابتة. The English now exposes those uncertain constructions rather than pretending the enumeration is securely established. No emendation or scan verification is claimed.
 
-**MSH-P128** · [Arabic source](https://archive.org/details/machra3-khosous/page/n126/mode/1up)
+Related passage IDs: QNW-WIT246
 
-### Arabic
+## MSH-P128 · Printed p. 128 · Text Ten: highest recipients behold a single effusion under differentiated conditions
+
+Source: https://archive.org/details/machra3-khosous/page/n126/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 أصلا ، فافهم « 1 » . قال رضي اللّه عنه : [ وعلى الجملة فأعلى مراتب القابلين في قبولهم لما يرد عليهم من فيض الحق وعطاياه ، رؤية وجه الحق في الشروط والأسباب المسماة بالوسائط ، وسلسلة الترتيب بحيث يعلم الأخذ ، ويشهد أن الوسائط السببية ليست غير تعينات الحق في المراتب الإلهية والكونية ، على اختلاف ضروبها بمعنى أنه ليس فيض الحق المقبول وبين القابل إلا نفس تعين الفيض بالقابلية المقيدة دون انضمام حكم إمكاني يقتضيه ، ويوجبه أثر مرور الفيض على مراتب الوسائط والانصباغ بأحكام إمكاناتها ] .
 
@@ -4099,25 +4477,31 @@ Al-Mahāʾimī’s enumeration is not perfectly parallel to Qūnawī’s list (n
 
 والشرط ما يتوقف الشيء من غير تأثير فيه ، والسبب ما يتوقف عليه مع التأثير ذكرهما يشعر برؤية وجهه فيما يؤثر ، وما لا يؤثر المسماة بالوسائط ؛ لتوسطها بين الفيض الأول والقابل ، وبسلسلة الترتيب أي ترتيب الموجودات الفائضة في الألوهية إلى
 
-### English
+### English · passage 1
 
-[Completion of the prior page:] The more primordial receptive requests do not ordinarily find expression in words. Understand.
+... at all. Understand.
 
-**Qūnawī:** “In summary, the highest rank of recipients in receiving the Real's influx and gifts is to perceive the face of the Real within the conditions and causes called intermediaries and throughout the ordered series. Such a recipient knows whence he takes, and witnesses that the causal intermediaries are nothing other than determinations of the Real at divine and cosmic levels, diverse as their kinds may be. That is to say, between the received divine effusion and the recipient there is nothing but the effusion itself becoming determined through restricted receptivity, without any additional ruling of contingency being attached to it through its passage across the successive intermediary ranks or becoming coloured by their contingent judgements.”
+**Qūnawī:** ‘In summary, the highest rank of recipients in receiving what comes to them from the Real's effusion and gifts is to see the face of the Real in the conditions and causes called intermediaries, and in the chain of ordered sequence. The recipient thus knows and witnesses that the causal intermediaries are nothing other than determinations of the Real in the divine and cosmic ranks, with all their different kinds. This means that between the received effusion of the Real and the recipient there is only the effusion's own determination through qualified receptivity, without the addition of a contingent ruling required and necessitated by the effect of the effusion's passage through the intermediary ranks and its being coloured by the rulings of their contingencies.’
 
-**Al-Mahāʾimī:** Every category of recipients admits further degrees. At their highest, those who receive through preparedness, a spiritual state or some other request behold the divine aspect in both the one original effusion and the particular gifts in which it becomes articulated. They thus recognize the face of the Real both in causes and in conditions.
+**Al-Mahāʾimī:** In every class of recipients distinguished by the requests already mentioned there is a further gradation. The highest rank of recipients—whether they receive through a request of preparedness, state or otherwise—is qualified by ‘in their receiving’ [the following explanation of this qualification is unclear in the supplied text]. He uses the singular for the Real's effusion because it is originally one, and also mentions His gifts, which articulate that effusion. He mentions both to indicate that their vision of His face follows one and the same course in undifferentiated and differentiated reception: they see the face of the Real in conditions and causes.
 
-A *condition* (*sharṭ*) is something upon which an occurrence depends but which does not by that fact produce it; a *cause* (*sabab*) is something on which it depends with a causally effective relation. The distinction is not erased by saying that both function as mediating links (*wasāʾiṭ*) between the first effusion and its recipient. The ordered series concerns beings that emerge through their respective levels, from the divine ranks onward to the human ...
+A condition is that upon which something depends without its exercising an effect on it; a cause is that upon which it depends together with an effect. Mentioning both indicates seeing His face in what exercises an effect and what does not. They are called ‘intermediaries’ because they intervene between the first effusion and the recipient, and ‘the chain of ordered sequence’, that is, the order of the beings proceeding by effusion from divinity to ...
 
 ### Editorial note
 
 Page 128 contains an extensive separately marked modern editorial footnote citing al-Shaʿrānī and abridged *Futūḥāt*. The entire note is excluded from al-Mahāʾimī’s running prose. Qūnawī’s formula is explicitly about *taʿayyun* through receptivity, not numerical identity among all presented objects.
 
-## Printed p. 129 · Text Ten: conditions, causes, and determination of one intelligible effusion
+Stage 13 review: In the commentary on في قبولهم, the supplied phrase إما بحسب السؤال قدر is unstable. Its precise explanation of the qualification has not been reconstructed. The English marks this uncertainty; the Arabic is unchanged.
 
-**MSH-P129** · [Arabic source](https://archive.org/details/machra3-khosous/page/n127/mode/1up)
+Related passage IDs: QNW-WIT246
 
-### Arabic
+## MSH-P129 · Printed p. 129 · Text Ten: conditions, causes, and determination of one intelligible effusion
+
+Source: https://archive.org/details/machra3-khosous/page/n127/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 الإنسانية .
 
@@ -4125,25 +4509,31 @@ Page 128 contains an extensive separately marked modern editorial footnote citin
 
 إنما ذكر هما ؛ ليعلم أنه سواء كان بالاختيار أو الإيجاب ، أثر مرور الفيض على مراتب الوسائط ، وإنما ذكر الأثر ؛ لئلا يتوهم كون المرور يوجب حكما إمكانيّا في الفيض وإن لم يؤثر فيه ، وليس كذلك ؛ لأن حكم الشيء هو الأثر الثابت ، وذلك الأثر هو انصباغ الفيض بأحكام إمكانات الوسائط ، ويدل على أن الفيض لم ينضم إليه أحكام إمكانات الوسائط التي مرّ عليها ؛ لأن أحكام إمكانات الوسائط قائمة بالوسائط ، والعرض الواحد لا يقوم بسببين .
 
-### English
+### English · passage 1
 
-**Al-Mahāʾimī (continuing):** The ordered chain extends as far as the human level. Qūnawī names both conditions and causes to show that mediating terms are not confined to conditions. A proximate cause is itself a mediator between the ultimately effective principle and the recipient, and a remote cause still more obviously so. The series of causal influence differs from the broader series of ordered beings: conditions are not necessarily constituents of the former though they are included in the latter.
+... humanity.
 
-The highest recipient sees the face of the Real in all these links. The one who possesses theoretical knowledge understands how reception occurs; one who possesses direct witnessing sees it immediately. In this account the mediators are not separate self-subsistent agents over against the Real, but His determinations at the levels of names and attributes, and at cosmic levels such as fire in burning or water in drowning. The manifest disparity and apparent lowliness of some worldly causes do not imply that such forms fall outside the doctrine of determination, nor that all determinations must have equal rank or perfection. Their differences belong to relational and perspectival orderings (*nisab wa-iʿtibārāt*), not to a newly acquired plurality in the unrestricted Essence.
+**Al-Mahāʾimī:** He mentions these two designations to indicate that both encompass causes and conditions. Intermediaries are not restricted to conditions: a proximate cause mediates between the true agent and the recipient, all the more a remote cause. Nor is the chain of ordered sequence restricted to causes: although conditions do not enter the chain of agents, they enter the chain of ordered beings. Thus one sees the face of the Real in all of them. The recipient knows this if he belongs to the people of knowledge, and witnesses it if he belongs to the people of direct vision.
 
-Two propositions are required to clarify this. The first is that nothing independently other than the first intelligible (*maʿnawī*) effusion intervenes between that effusion and a sensory recipient; rather, the effusion itself becomes determined by the receptivity appropriate to an ordered divine or cosmic rank. The qualification “intelligible” is deliberate: an observer confined to sensory causation may suppose the successive mediators to be alien realities added between the first effusion and the tangible recipient. But the claim is not about a merely sensory stream of physical effects.
+He mentions causal intermediaries particularly because, if these effective things are identical with the Real despite their apparent independence and do not subsist through their own essence, non-effective things have still less claim to independence [the intervening wording is unstable]. They are nothing other than determinations of the Real in the divine ranks, such as names and attributes, and the cosmic ranks, such as fire and water in burning and drowning, despite the different kinds of causes and conditions. This indicates that the lowliness of some does not prevent them from being His determinations because of His exaltedness; nor should one say that, if all were His determinations, they would be equal or close in degree. Their disparity arises only from relations and considerations.
 
-No separate contingency-property is superadded to the effusion merely as a result of passage through the intermediary ranks or through its being described as “coloured” by their possibility. Qūnawī mentions both that something *requires* and that it *necessitates* a result, so that voluntary and necessary accounts of operation are both covered. Al-Mahāʾimī insists that a governing determination actually belongs to its appropriate locus; the contingent rulings of intermediary things reside in those intermediaries and cannot be transferred wholesale as if the same accident inhered in two distinct subjects. His final premise uses the scholastic maxim that one and the same accident does not inhere in two subjects.
+Their being identical with the determinations of the Real depends upon two premises. First, between the Real's first, non-sensible effusion and the recipient among sensible things there is nothing except that first effusion's own determination through receptivity qualified by a divine or cosmic rank. The qualification ‘non-sensible’ is needed because the veiled person imagines many intermediaries other than the effusion between it and a sensible recipient, but imagines no intermediary between a sensible effusion and its recipient. Without the qualification one might suppose that the sensible effusion was meant, and the argument that the intermediaries are identical with the non-sensible effusion would not be established.
+
+No contingent ruling is added to that non-sensible effusion, such that the combination of effusion and ruling would mediate between the effusion and the recipient. The contingent ruling in question is what the effect of the effusion's passage through the intermediary ranks ‘requires’ and ‘necessitates’. He uses both terms to include operation by choice and by necessity. He mentions the ‘effect’ so that one does not suppose that passage alone imposes a contingent ruling on the effusion without affecting it. That is not so: a thing's ruling is its established effect. This effect is the effusion's being coloured by the rulings of the intermediaries' contingencies. The evidence that such rulings are not added to the effusion that passes through the intermediaries is that those rulings subsist in the intermediaries, and a single accident does not subsist through two causes [the supplied word بسببين requires verification].
 
 ### Editorial note
 
 Critical interpretive distinction: (i) source-effusion, (ii) its *taʿayyun* by receptivity, (iii) contingent properties inhering in intermediaries. The final accident argument is al-Mahāʾimī’s reasoning, not an independently established invariant across all Akbarian authors.
 
-## Printed p. 130 · Text Ten: al-Ẓāhir, al-Bāṭin, receptivity and the limits of verbal unity
+Stage 13 review: The final argument in the supplied Arabic reads والعرض الواحد لا يقوم بسببين, literally “a single accident does not subsist through two causes”. The former English silently substituted the scholastic formulation “two subjects”. That may be the intended reading, but it has not been established here; بسببين remains in Arabic and the English flags it. The earlier causal-intermediary paragraph also contains unstable connective wording.
 
-**MSH-P130** · [Arabic source](https://archive.org/details/machra3-khosous/page/n128/mode/1up)
+## MSH-P130 · Printed p. 130 · Text Ten: al-Ẓāhir, al-Bāṭin, receptivity and the limits of verbal unity
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n128/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 نعم حصل لذلك الفيض بالمرور عليها تعين ، فالوسائط تعينات الفيض ، هذه مقدمة والأخرى أن تعينات الفيض هي تعينات الحق وبيانها ، بما قال الشيخ رضي اللّه عنه : [ ويرى الفيض أنه تجلّ من تجليات باطن الحق ، فإن تعددات التعينات التي لحقته ، هي أحكام الاسم الظاهر من حيث أن ظاهر الحق مجلي لباطنه ، فأحكام الظهور تعدد مطلق وحدة البطون ، وتلك الأحكام هي المسماة بالقوابل ، وهي صور الشؤون ليس غيرها ، فافهم واللّه يقول الحق ويهدي من يشاء إلى صراط مستقيم ] .
 
@@ -4153,27 +4543,33 @@ Critical interpretive distinction: (i) source-effusion, (ii) its *taʿayyun* by 
 
 هذا هو ما يمكن استنباطه من العبارة الدالة على التوحيد على وجه الكشف ، واللّه يقول الحق الذي هو عين التوحيد الذي لا كثرة فيه أصلا ، وإلا فالعبارة لا بدّ وأن تدل على التوحيد الذي هو المصدر والموحد اسم الفاعل والموحد اسم المفعول وعلى المبتدأ والخبر ، ويهدي من يشاء من عباده إلى صراط مستقيم من التوحيد الذوقي الذي لا يمكن العبارة عنه ، وإنما يقابله بالمشيئة ؛ لأنه فوق الإرادة ولعله محض الهداية ، أي لا مدخل فيها للكسب ، إذ لا مدخل للأدلة العقلية والنقلية هناك ، وجعله الصراط المستقيم ؛ لأن ما دونه لا يخلو عن دعوى مشاركة مع اللّه تعالى عما يشركون .
 
-### English
+### English · passage 1
 
-**Al-Mahāʾimī:** The preceding argument grants that the effusion becomes determinate in passing through successive ranks, so that the mediators can be called determinations of the effusion. To conclude that they are determinations of the Real requires a second premise. Qūnawī states it as follows.
+**Al-Mahāʾimī:** Certainly, the effusion acquires a determination through passing through them; the intermediaries are therefore determinations of the effusion. That is one premise. The other is that the determinations of the effusion are determinations of the Real. This is explained by the Shaykh's words:
 
-**Qūnawī:** “One sees that the effusion is a self-disclosure from among the disclosures of the Real's inward aspect. The multiplicity of determinations that occurs in it belongs to the rulings of the name the Outward (*al-Ẓāhir*), since the outward aspect of the Real is the site in which His inward aspect becomes disclosed. The rulings of outward appearance make multiple the absolute unity of inwardness. These rulings are what are called the recipients (*qawābil*), and they are nothing other than the forms of the divine affairs (*ṣuwar al-shuʾūn*). Understand: God speaks the truth and guides whom He wills to a straight path.”
+**Qūnawī:** ‘One sees that the effusion is a self-disclosure among the self-disclosures of the inward aspect of the Real. The multiple determinations that attach to it are the rulings of the name the Outward, insofar as the outward aspect of the Real is a locus of disclosure for His inward aspect. The rulings of manifestation multiply the unrestricted unity of inwardness. These rulings are what are called recipients, and they are the forms of the divine affairs, nothing else. Understand. God speaks the truth and guides whom He wills to a straight path.’
 
-**Al-Mahāʾimī:** Effusion is specified as disclosure of the inward Real, not merely a disclosure under a particular outward aspect. The differentiated determinations of effusion depend on the multiplicity of its receptive loci; plurality as such is a ruling of the name *al-Ẓāhir*, under which what is inward becomes displayed. The unity of inwardness is not a unity opposed to the possibility of plurality; it comprehends that plurality without yet presenting it as distinct. Outward manifestation makes that intelligible plurality apparent in its several forms.
+**Al-Mahāʾimī:** This explains that the effusion's determinations are determinations of the Real: one sees the effusion as a self-disclosure among the self-disclosures of the inward aspect of the Real. He specifies this because the Real has many self-disclosures from the side of the Outward. Its being affected by multiplicity shows that it is a disclosure of the Inward: the effusion multiplies with the multiplicity of recipients, while multiplicities belong to the rulings of the name the Outward. Thus the effusion is the name the Outward, and the effusion is a self-disclosure of the Real through the Real, insofar as the outward aspect of the Real is a locus of disclosure for His inward aspect. The rulings of manifestation multiply the unrestricted unity of inwardness—that is, the unity belonging to the Inward [the connective wording is unstable]. This is unrestricted unity, not unity opposed to multiplicity; rather, it includes multiplicity.
 
-The rulings called “recipients” are identified with the fixed entities and with forms of the divine affairs. Since the form of a thing marks its determination, these are characterized as determinations of the Real, not a freestanding ontological population existing over against Him. In that restricted sense the intermediate terms are none other than His determinations. One must nevertheless preserve the sequence of explanatory steps: determining effusion is not synonymous with creating an extrinsic accident in the divine Essence; nor is a phenomenal difference asserted to be sheer nothingness.
+The rulings of the name the Outward make that multiplicity manifest from it. Those rulings are called recipients, namely the fixed entities. The fixed entities are the forms of the Real's affairs. Thus the rulings in the name the Outward are forms of the Real's affairs, which are rulings of the name the Inward. The forms of a thing are its determinations; these are therefore determinations of the Real. Accordingly, the intermediaries are identical with His determinations, and a fortiori are nothing other than them. Understand.
 
-Al-Mahāʾimī admits that this is what can be inferred from the expression under the perspective of unveiling. The full unity to which it alludes cannot be adequately stated in subject–predicate language: any verbal assertion contains at least a source and an asserted act, an agent and an object, or a subject and predicate. He identifies the “straight path” here with a tasted realization of unity that ordinary expressions cannot convey. The special reference to divine willing suggests, he conjectures, a bestowal of guidance outside acquisitive reasoning; proofs drawn from intellect or transmitted reports are not sufficient *as such* for this particular apprehension. This does not deny their validity in their own registers.
+This is what can be drawn from the expression that indicates unification by way of unveiling. God speaks the truth, which is unification itself, containing no multiplicity whatsoever. Otherwise, an expression necessarily indicates ‘unification’ as a verbal noun, ‘the one who unifies’ as an active participle, ‘what is unified’ as a passive participle, and a subject and predicate. He guides whom He wills among His servants to a straight path of tasted unification, which cannot be expressed. He qualifies this by mashīʾa because it is above irāda. Perhaps it is pure guidance—that is, acquisition has no part in it, since intellectual and transmitted proofs have no part there. He calls it the straight path because whatever lies below it is not free of a claim to partnership with God. Exalted is He above what they associate with Him.
 
 ### Editorial note
 
 Qūnawī says the *rulings* of al-Ẓāhir are recipients, and al-Mahāʾimī identifies them with fixed entities. Do not silently equate the several technical levels. His remarks on inadequacy of language are qualified specifically to tasted unity.
 
-## Printed p. 131 · Text Eleven: divine response, knowledge and spiritual obedience
+Stage 13 review: The running English now retains the commentator’s explicit claim that the effusion is the name the Outward, and his denial of a role for intellectual or transmitted proofs “there”, in the tasted unity under discussion. These are the commentator’s claims. The earlier translation added doctrinal qualifications not present in this paragraph. The connective around بأحكام الظهور بعدد مطلق وحدة البطون remains unstable in the supplied Arabic.
 
-**MSH-P131** · [Arabic source](https://archive.org/details/machra3-khosous/page/n129/mode/1up)
+Related passage IDs: QNW-WIT246
 
-### Arabic
+## MSH-P131 · Printed p. 131 · Text Eleven: divine response, knowledge and spiritual obedience
+
+Source: https://archive.org/details/machra3-khosous/page/n129/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 النص الحادي عشر : قال رضي اللّه عنه : [ نص جلي وضابط كلي يفيد معرفة المطاوعة والإجابة الإلهيتين وإباء هما ] .
 
@@ -4185,61 +4581,69 @@ Qūnawī says the *rulings* of al-Ẓāhir are recipients, and al-Mahāʾimī id
 
 الميزان اسم لما يمكن أن يعرف به مقدار الشيء في الثقل والخفة ، والبرهان اسم للقياس المركب من الأقيسة على هيئة منتجة ، واستعير للقاعدة المذكورة إشعارا بأنها لا تحتمل الزيادة والنقصان والتشكيك ، ووصف الميزان بالتام ؛ لأن الناقص لا يدل على المقدار بحيث لا يحتمل الزيادة والنقصان وبالصريح ؛ لأن من الميزان ما لا يعرف كونه على وجه الكمال والصحة ، بل يكون أمره مشتبها ، فبيّن أنه لا نقصان فيه ولا اشتباه ، وإن كان ببعض البديهيات يحتمل التشكيك بحسب العبارة ، وإن لم يحصل به الشك في قلب السامع كشبهات السوفسطائية والسفيه في البديهيات والنظريات .
 
-### English
+### English · passage 1
 
-**Text Eleven — Qūnawī:** “A clear text and universal rule by which one learns the meaning of divine responsiveness and answer, and of their refusal.”
+**Text Eleven — Qūnawī:** “A clear text and universal rule yielding knowledge of divine responsiveness and answer, and of their refusal.”
 
-**Al-Mahāʾimī:** After dividing receptive capacities, Qūnawī asks which requests are answered and which are not. To describe the divine answer as *muṭāwaʿa*, “compliance” or “responsive accommodation,” is a deliberate metaphor: supplication resembles a command in grammatical form, and the response resembles carrying it out. The subsequent mention of refusal makes clear that the image cannot be read as making God literally obedient to a creature. It is meant to stress the elevated standing of a servant who obeys God wholeheartedly and whose petition is, by divine gift, especially responsive. Qūnawī calls the principle “clear” and “universal” to present it as a rule that can be examined against the varied experience of answered requests. “Conveying knowledge” of the rule stresses that knowledge follows from it as a consequence; refusal is mentioned because a thing is often better grasped through its contrary.
+**Al-Mahāʾimī:** Having finished discussing those who receive, he begins to discuss which of them are answered and which are not. Since answering resembles carrying out a command, because supplication and command resemble one another in their verbal form, he calls answering “responsiveness” (*muṭāwaʿa*) by an explicit metaphor. He then explains it in conjunction with refusal, to dispel a mistaken impression. The report cited below employs this metaphor. Its point is to indicate the obedient person's exalted rank: he comes to be responded to by the One whom all obey, willingly or unwillingly. Though figurative, this increases the desire for the obedience that brings it about. Calling the text “clear” indicates that it admits no casting of doubt after some supplications have been accepted. To state this explicitly he adds “a universal rule.” Although a rule is necessarily universal, the added “universal” indicates that there is no exception in any respect.
 
-**Qūnawī:** “Know that the complete, explicit measure and the truly verified, sound proof drawn from taste—by which one knows when the servant is obedient to his Lord and when the divine answer reaches him swiftly in the very matter he asks, without obstacle or delay—is sound knowledge and perfect responsiveness. The more correct his knowledge of the Real and his conception of Him, the swifter the answer in exactly what he asks. The more complete his attentiveness to the Real's commands and the greater his readiness to act upon them with perfect obedience, the more complete is the Real's responsive accommodation of him compared with His accommodation of other servants.”
+He says “yielding” knowledge, rather than “concerning” knowledge, to make explicit that this knowledge follows necessarily from the rule as a conclusion follows from a syllogism, thereby strengthening the assertion. He also mentions refusal, because a thing is often known through its opposite.
 
-**Al-Mahāʾimī:** A “measure” ordinarily establishes heaviness and lightness; a “proof” establishes a conclusion through inferential form. Both are transferred metaphorically to an experiential rule. “Complete” and “explicit” deny an undisclosed defect or ambiguity in the rule, and “sound” guards against a seemingly rigorous but fallacious argument. The repeated qualifications respond to the common impression that, because many people pray while fewer receive the very things requested, no reliable principle of response can be identified. Some verbal objections, as with sophistical challenges to first principles, can be raised without producing substantive uncertainty in the listener.
+**Qūnawī:** “Know that the complete, explicit measure and the verified, sound proof drawn from taste—by which one knows when the servant is obedient to his Lord and when the divine answer reaches him swiftly in the very matter he asks, without impediment or delay—is sound knowledge and perfect responsiveness. The more correct his knowledge of the Real and his conception of Him, the swifter the answer in exactly what he asks. The more complete his attentiveness to the Real's commands and his readiness to carry them out with perfect obedience, the more complete is the Real's responsiveness to him compared with His responsiveness to other servants.”
+
+**Al-Mahāʾimī:** A “measure” names that by which the quantity of something in heaviness or lightness can be known. A “demonstration” names a syllogism composed of syllogisms in an arrangement productive of a conclusion. These terms are applied metaphorically to the stated rule to indicate that it admits neither increase nor decrease nor the casting of doubt. The measure is described as “complete,” because an incomplete one cannot establish a quantity beyond the possibility of increase or decrease; and as “explicit,” because some measures are not known to be complete and sound, their condition being ambiguous. He thus makes clear that it has neither deficiency nor ambiguity. Even some self-evident matters admit verbal challenges, without those challenges producing doubt in the hearer's heart—as with the objections of the sophists and the foolish concerning self-evident and theoretical matters.
 
 ### Editorial note
 
 The phrase “divine obedience” is a marked metaphor (*istiʿāra*), not a doctrinal attribution of servitude to God; distinguish exact requested-object answer from wider forms of response.
 
-## Printed p. 132 · Text Eleven: exact answer versus response, and seeing God without ḥulūl or ittiḥād
+Stage 13 review: The definition of demonstration and the phrase concerning the sophists and the foolish are translated from the supplied Arabic without correcting their unusual formulation. This review does not certify those readings against a photograph.
 
-**MSH-P132** · [Arabic source](https://archive.org/details/machra3-khosous/page/n130/mode/1up)
+Related passage IDs: QNW-WIT246
 
-### Arabic
+## MSH-P132 · Printed p. 132 · Text Eleven: exact answer versus response, and seeing God without ḥulūl or ittiḥād
+
+Source: https://archive.org/details/machra3-khosous/page/n130/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 ووصف البرهان بالذوقي ؛ ليشعر بأن مقدماته وإن لم تكن محسوسة فهي محدوسة ، ولما كان في الحدس احتمال اشتباه ، وصفه بالمحقق ، ولما كان في المغالطات ما يشبه البرهان ، وصفه بالصحيح . وإنما بالغ هذه المبالغة في تشبيه القاعدة المذكورة بالميزان والبرهان ، لما ذكرنا من كثرة الداعين مع قلة الإجابة حتى توهم من ذلك أنه لا يمكن ضبط ما يفيد معرفة محل الإجابة .
 
-### English
+### English · passage 1
 
-**Al-Mahāʾimī:** The proof is called one of *taste* because its premises are not objects of the bodily senses, although they may be apprehended directly or intuitively. Since a claimed intuition can be mistaken, Qūnawī adds “verified”; because fallacies can mimic proof, he adds “sound.” The density of these descriptors is deliberate, given the large number of petitioners and the relatively small number of visibly immediate answers.
+**Al-Mahāʾimī:** The proof is called one of *taste* because its premises are not objects of the bodily senses, but are intuitively apprehended. Since a claimed intuition can be mistaken, Qūnawī adds “verified”; because fallacies can mimic proof, he adds “sound.” The density of these descriptors is deliberate, given the large number of petitioners and the relatively small number of visibly immediate answers.
 
-### Arabic
+### Arabic · passage 2
 
 وإنما قال هنا : في معرفة متى يكون العبد من المطيعين لربه ، وقد قال : أولا في معرفة المطاوعة والإجابة الإلهيين ؛ لأن إطاعة العبد ملزومة لطاعة الحق ، والمطلوب إثبات اللازم ، فذكر أولا ما هو المطلوب ، وثانيا قدم ذكر وجود الملزوم ليدل على وجود اللازم ، ولم يفعل ذلك في الإجابة ؛ لأنها ليست ملزومة للمعرفة ، إذ قد يحصل بدونها عند الاضطرار ، فأبقاها على المنهج الأول وقيد الإجابة بكونها في عين ما يسأله ؛ لأن الإجابة المطلقة حاصلة لكل معين إما بالقول ، وهو لبيك عبدي ، وإما بالفعل مؤخرا ومفوضا عن المسؤول عنه في الحال ، أو مؤخرا وجعل سبب الإجابة صحة المعرفة ، وسبب المطاوعة الإلهية كمال مطاوعة العبد على اللف والنشر المشوش .
 
-### English
+### English · passage 2
 
-Qūnawī first mentions divine accommodation and answer, but then begins his explanation with the servant's obedience to God. That reversal reflects a relation of ground and consequence: the servant's proper obedience is the antecedent condition of the more comprehensive responsive relation. The answering of a particular request is a narrower question. Not every answer of prayer is conditioned by the same degree of explicit knowledge, since relief may be granted to someone in desperate necessity without formal cognition. Therefore the exact object and timing of a petition must be distinguished from broader senses of response. Every petitioner may receive some response: an address acknowledging him, a later effect, or something other than what was requested, at another time. Qūnawī specifically treats an answer *in the very thing requested* and without delay.
+He says here, “in knowing when the servant is among those obedient to his Lord,” whereas he initially spoke of knowing divine responsiveness and answer. This is because the servant's obedience entails the Real's responsiveness; what he intends to establish is the consequent. He therefore first mentions the thing sought, then begins the explanation by mentioning the antecedent, whose presence indicates the consequent's presence. He does not do this with answering, because answering does not necessarily entail knowledge: an answer can occur without it in a state of desperate necessity. He therefore retains the initial order for answering. He restricts the answer to the very thing requested, because an answer in the unrestricted sense is obtained by every particular individual: either verbally—“Here I am, My servant”—or in action, with the response deferred or otherwise disposed of in relation to what was requested [the supplied wording concerning timing and substitution is unclear]. He makes soundness of knowledge the cause of answering, and the perfection of the servant's obedience the cause of divine responsiveness, using an interlaced arrangement (*laff wa-nashr mushawwash*).
 
-### Arabic
+### Arabic · passage 3
 
 وإنما جعل كذلك ؛ لأن مرتبة المطاوعة أعظم ، فقدمها أولا ، والإجابة بالنسبة إليها كالمفرد من المركب ، فقدمه ثانيا .
 
-### English
+### English · passage 3
 
-Al-Mahāʾimī reads “soundness of knowledge” as related to exactness of response, and “perfect responsiveness” of the servant as related to the fuller divine accommodation, noting an interlaced rhetorical arrangement (*laff wa-nashr mushawwash*). Because the latter is superior to the former, it was introduced first, although each causal relation is expounded separately.
+He arranges it in this way because the rank of responsiveness is greater, and so he mentions it first in the initial statement. Answering stands to responsiveness as a simple constituent to a composite, and so he mentions answering first in the second statement.
 
-### Arabic
+### Arabic · passage 4
 
 ولما كان في العبارة هاهنا نوع اشتباه فصله ، فقال : فالأصح معرفة بالحق ، ولما كانت المعرفة تستعمل في التعقل غالبا ، فسرها بقوله : « والأصح تصورا له » ، وإنما أورد هما ؛ لئلا يتوهم من التصور أنه له تعالى صورة يتقيد فيها ، تكون الإجابة الإلهية في عين ما سأل فيه أسرع ، وذلك بأن يراه في كل شيء غير انحصار ، ولا حلول فيها ولا اتحاد بها ، والأتم مراقبة لأوامر الحق بأن ينظر على عباراته وإشاراته ، ويأخذ بالأحوط والعزائم منها ، والنواهي داخلة ؛ لأن المنهيات تركها مأمور ومبادرة إليها بالفعل كمال المطاوعة بأن يكون على الاجتهاد الكامل يكون مطاوعة الحق له أيضا أتم من مطاوعته سبحانه لغيره من العبيد ، سواء كانوا أعداءه ، فلم يكن الحق مطيعا لهم أصلا .
 
-### English
+### English · passage 4
 
-Qūnawī's “correct conception” cannot mean enclosing God within a mental image or form. It means apprehending His presence in the things witnessed without confinement, **indwelling (*ḥulūl*) or union (*ittiḥād*)**. Attentiveness to divine commands includes explicit words and intimations, acting on strict obligations and taking appropriate care with prohibitions, whose observance is a commanded abstention. One who hastens to carry these out achieves fuller human obedience; the corresponding “divine compliance” is, as already stated, a metaphor and should not be compared to obedience imposed upon a subordinate.
+Since the expression here contains some ambiguity, he elaborates it: “the more correct his knowledge of the Real.” Since “knowledge” is most often used for intellectual apprehension, he explains it by adding “and the more correct his conception of Him.” He uses both expressions so that “conception” will not suggest that God has a form within which He is confined. The divine answer in the very thing asked is then swifter. This comes through seeing Him in everything without confinement, indwelling in things, or union with them. “More complete attentiveness to the Real's commands” means attending to His explicit expressions and indications, adopting the more cautious courses and the strict prescriptions. Prohibitions are included, since abstaining from prohibited things is commanded. Hastening to carry them out in action, with perfect obedience and complete exertion, makes the Real's responsiveness to him more complete than His responsiveness to other servants—even if those others are His enemies, to whom the Real is not responsive at all.
 
-### Arabic
+### Arabic · passage 5
 
 قال رضي اللّه عنه : [ ولهذا كان مقتضى حال الأكابر من أهل اللّه أن أكثر أدعيتهم مستجابة
 
-### English
+### English · passage 5
 
 **Qūnawī (continuing):** “For this reason it befits the state of the great ones among God's people that most of their supplications are answered ...”
 
@@ -4247,51 +4651,61 @@ Qūnawī's “correct conception” cannot mean enclosing God within a mental im
 
 The distinctions *maʿrifa* / *taṣawwur*, exact answer / general response, and taste / discursive proof are textually explicit. In p132 the source syntax is compressed; no independent authentication of reports is claimed.
 
-## Printed p. 133 · Text Eleven: petition directed to the Real versus a mental representation
+Stage 13 review: The supplied phrase «مؤخرا ومفوضا عن المسؤول عنه في الحال، أو مؤخرا» is syntactically unclear; the English marks the uncertainty rather than silently replacing مفوضا with a conjectured word. The simple/composite comparison in the following paragraph concerns the rank of answering relative to responsiveness.
 
-**MSH-P133** · [Arabic source](https://archive.org/details/machra3-khosous/page/n131/mode/1up)
+Related passage IDs: QNW-WIT246
 
-### Arabic
+## MSH-P133 · Printed p. 133 · Text Eleven: petition directed to the Real versus a mental representation
+
+Source: https://archive.org/details/machra3-khosous/page/n131/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 لكمال المطاوعة وصحة المعرفة باللّه ، والتصور له وإليه الإشارة بقوله : ادْعُونِي أَسْتَجِبْ لَكُمْ [ غافر : 60 ] ، فالعديم المعرفة الصحيحة الشهودية النسبي التصور ، ليس بداع للحق الذي ضمن له الإجابة بقوله له : ادْعُونِي أَسْتَجِبْ لَكُمْ [ غافر : 60 ] ، وإنما هو متوجه في دعائه إلى الصور الشخصية في ذهنه الناتجة من نظره وخياله ، أو خيال غيره ونظره ، أو المتحصلة من مجموع المشار إليه ] .
 
-### English
+### English · passage 1
 
-**Qūnawī (continuing Text Eleven):** “... because of their perfect obedience, sound knowledge of God and accurate conception of Him. The saying ‘Call upon Me and I will answer you’ (Q 40:60) alludes to this. One who lacks correct, witnessing-based knowledge and an adequate conception is not really calling upon the Real to whom the promise of answer is addressed. Rather, in supplication he turns toward individualized images formed in his mind from his own reasoning and imagination, from another person's imagination and reasoning, or from their combination.”
+**Qūnawī (continuing Text Eleven):** “... because of their perfect obedience, sound knowledge of God and accurate conception of Him. The saying ‘Call upon Me and I will answer you’ (Q 40:60) alludes to this. One who lacks sound witnessing knowledge and whose conception is relative is not calling upon the Real who has guaranteed him an answer by saying, ‘Call upon Me and I will answer you’ (Q 40:60). Rather, in supplication he turns toward individualized images formed in his mind from his own reasoning and imagination, from another person's imagination and reasoning, or from their combination.”
 
-### Arabic
+### Arabic · passage 2
 
 فلهذا يحرم من هذا شأنه الإجابة في عين ما سأل فيه ، أو يتأخر عنه أعني الإجابة ، استدل بالواقع ، ثم بالنص القرآني على القاعدة المذكورة ، أي ولأجل أن كمال المعرفة موجبة للإجابة وكمال المطاوعة موجبة للمطاوعة ، وكان مقتضى حال الأكابر من أهل اللّه أن أكثر أدعيتهم مستجابة .
 
-### English
+### English · passage 2
 
-**Al-Mahāʾimī:** Such a person may be deprived of the answer in exactly the matter asked, or experience a delay. Qūnawī adduces both experiential observation and a Qurʾānic verse. He carefully says that *most* prayers of the great spiritual masters are answered; he does not claim an exhaustive induction showing that every one is. Al-Mahāʾimī explicitly labels this an inference from incomplete induction (*istiqrāʾ nāqiṣ*), whose evidentiary weight is correspondingly limited. Such masters join proper knowledge with the more exacting quality of obedience. The repeated mention of conception prevents “knowledge” from being understood as cognition of the divine only under attributes, without right orientation to the Real.
+**Al-Mahāʾimī:** For this reason someone in this condition is deprived of an answer in the very thing he requested, or it—that is, the answer—is delayed. He argues for the stated rule first from what occurs and then from the Qurʾānic text: because perfect knowledge brings about answering and perfect obedience brings about responsiveness, the state of the great ones among God's people entails that most of their supplications are answered.
 
-### Arabic
+### Arabic · passage 3
 
 إنما جاء بلفظ الأكثر ؛ لأنه المعلوم قطعا ، ولم يعلم بالاستقراء التام استجابة جميع أدعيتهم حتى يتم الاستدلال بالاستقراء التام ، بل هو استدلال بالاستقراء الناقص ، ثم أشار إلى وجه الاستدلال بقوله لكمال المطاوعة ، وهو المعرفة باللّه والتصور له ، أي : لاستجماعهم شرط الإجابة مع شروط المطاوعة التي هي أزيد من الإجابة ، وكيف لا يحصل لهم ، وإنما قدم المطاوعة هنا ؛ لينبه على أن كمال المعرفة إنما يتم بها ، وأعاد قوله والتصور ؛ لئلا يتوهم أن المراد إدراكهم إياه من جهة صفاته كما يشعر به المعرفة .
 
-### English
+### English · passage 3
 
-Because incomplete induction cannot establish the universal rule conclusively, the commentary reads Q 40:60 as its scriptural basis. It understands the verse as a promise to the one who truly addresses the Real, and uses the opposite implication (*mafḥūm al-mukhālafa*) to argue that one who instead addresses a mental image need not receive the *specific* response thus promised. Correct witnessing consists in apprehending the Real in all things without confining Him in them, making Him indwell them, or identifying Him through union with them. The verse is repeated to distinguish these kinds of petition from the petition of the desperate, who may be answered in virtue of their necessity even without this cultivated knowledge. That second case continues on p. 134.
+He uses “most” because that is what is known with certainty. It has not been established by complete induction that all their supplications are answered, which would allow an argument by complete induction; rather, the argument is from incomplete induction. He then indicates the ground of the argument by saying “because of perfect responsiveness,” together with knowledge of God and conception of Him: they combine the condition of answering with the conditions of responsiveness, which exceed answering. How, then, could answering fail to occur for them? He gives responsiveness priority here to indicate that the perfection of knowledge is completed only through it. He repeats “and conception” so that “knowledge” will not be taken to mean merely apprehending Him from the standpoint of His attributes, as the term might suggest.
 
-### Arabic
+### Arabic · passage 4
 
 ولما كان الاستدلال بالاستقراء الناقص ناقص الدلالة ، استدل بالنص القرآني هو قوله عز من قائل : ادْعُونِي أَسْتَجِبْ لَكُمْ [ غافر : 60 ] ، وجه الاستدلال أن منطوقه يدل على أن من توجه إليه بالتصور الصحيح ، إجابة الحق من غير شرط آخر ، وقد دل بمفهوم المخالفة أن عدم المعرفة الصحيحة ، وهي المعرفة الشهودية أي : التي يشهد بها الحق في كل شيء من غير تقيد بها ، ولا حلول فيها ، ولا اتحاد معا ليس بداعي الحق ، فلا يلزمه المضمونة ، بقوله : ادْعُونِي أَسْتَجِبْ لَكُمْ [ غافر : 60 ] « 1 » ، وإنما أعاده ؛ لأنه قد يستجاب المضطر
 
-### English
+### English · passage 4
 
-[The online transcription places a lengthy modern editorial footnote on conditions and times of supplication after marker (1). It is excluded.]
+Since an argument from incomplete induction gives incomplete indication, he adduces the Qurʾānic text: “Call upon Me and I will answer you” (Q 40:60). Its explicit wording indicates that when someone turns toward Him with a correct conception, the Real answers without another condition. By its contrary implication it indicates that one lacking sound knowledge—that is, witnessing knowledge through which the Real is witnessed in everything without being confined to things, indwelling in them, or united with them—is not calling upon the Real, and so the answer guaranteed by “Call upon Me and I will answer you” is not necessarily due to him. He repeats the verse because the desperately distressed person may be answered ... [the sentence continues on p.134].
 
 ### Editorial note
 
 Modern footnote on timings of supplication is excluded. Interpretive inference from Q 40:60 is al-Mahāʾimī’s exegetical use, not the only possible reading of the verse. “Most” is explicitly based on incomplete induction.
 
-## Printed p. 134 · Text Eleven: incomplete mental images and the distinct promise to the distressed
+Related passage IDs: QNW-WIT246, QNW-WIT247
 
-**MSH-P134** · [Arabic source](https://archive.org/details/machra3-khosous/page/n132/mode/1up)
+## MSH-P134 · Printed p. 134 · Text Eleven: incomplete mental images and the distinct promise to the distressed
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n132/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 بوعده قوله : أَمَّنْ يُجِيبُ الْمُضْطَرَّ [ النمل : 62 ] ، وتلك الإجابة مشروطة بالاضطرار لا بنفس الدعاء كهذه ، ثم قال : وإنما يتوجه عديم المعرفة إلى الصورة المشخصة في ذهنه ، ضرورة أنه متوجه إلى صورة ، ولما لم تكن مطابقة للحق بالضرورة ، فليست هي الموجبة للإجابة على الإطلاق .
 
@@ -4299,13 +4713,13 @@ Modern footnote on timings of supplication is excluded. Interpretive inference f
 
 وإنما ذكر هذه الصورة الفاسدة ، للاحتراز عنها بكل حال ، ثم قال : فلهذا أي : ولأجل أنه ليس بداعي الحق بل هو متوجه إلى صورة خياله إلى آخره ، يحرم من هذا شأنه الإجابة في عين ما سأل ، بل يتعوض له بحس مقتضى تلك الصورة ، وولاية ما يرى بها من الأسماء الإلهية . وإنما قال : أعني الإجابة ؛ لئلا يتوهم الإجابة في عين ما سأل ، ويفهم منه أنه لا يخلو عن إجابة ما ؛ لأنه داعي الحق بوجه من وجوهه . قال رضي اللّه عنه : [ ومتى أجيب مثل هذا ، فإنما سببه سر المعية الإلهية المقتضية عدم خلو شيء
 
-### English
+### English · passage 1
 
-**Al-Mahāʾimī:** The separate promise of answer to the desperate—“Who answers the distressed one when he calls?” (Q 27:62)—is conditioned by necessity (*iḍṭirār*), not simply by the quality of deliberative knowledge that governs the preceding class. A petitioner lacking adequate knowledge may turn toward a mentally individuated picture. Since such a picture cannot correspond to the unrestricted Real without remainder, the image as such does not guarantee an unqualified answer.
+**Al-Mahāʾimī:** The separate promise of answer to the desperate—“Who answers the distressed one when he calls?” (Q 27:62)—is conditioned by desperate necessity (*iḍṭirār*), rather than by supplication itself as in the preceding case. A petitioner lacking adequate knowledge may turn toward a mentally individuated picture. Since that image necessarily fails to correspond to the Real, it does not unconditionally necessitate an answer.
 
-The mental picture may result from one's intellectual reasoning, one's own imagination, the imagination or speculation of another person, or a mixture of these. In speaking of a person's own faculties Qūnawī puts rational examination first, since a seeker should ask whether a proposed account is fitting. In describing borrowed accounts, he reverses the order to signal the danger of conforming one's mental image to another's imagination before examining the reasoning behind it. A corrupt image can become entrenched when private imagining and borrowed conception reinforce one another. The point is to avoid directing worship toward one's own limited image while thinking that image exhausts divine reality.
+The mental picture may result from one's intellectual reasoning, one's own imagination, the imagination or speculation of another person, or a mixture of these. In speaking of a person's own faculties Qūnawī puts rational examination first, since a seeker should ask whether a proposed account is fitting. In describing borrowed accounts, he reverses the order to signal the danger of conforming one's mental image to another's imagination before examining the reasoning behind it. A corrupt image can become entrenched when private imagining and borrowed conception reinforce one another. He describes these corrupt images so that they may be avoided in every case.
 
-Someone in that state may not receive the *particular* thing requested, although the matter may be answered in a different way according to whatever partial aspect of the divine names the petitioner actually apprehends. Thus an answer in some respect is not ruled out; Qūnawī's restriction concerns the very object of the petition. His added clarification “that is, the answer” prevents the reader from overlooking this distinction.
+Someone in that state may not receive the *particular* thing requested, although the matter may be answered in a different way according to whatever partial aspect of the divine names the petitioner actually apprehends. Thus an answer in some respect is not ruled out; Qūnawī's restriction concerns the very object of the petition. His clarification “that is, the answer” prevents the delay from being understood as referring only to an answer in exactly what was requested. The wording implies that the person is not without some answer, because he calls upon the Real under one of His aspects.
 
 **Qūnawī (continuing to p. 135):** “When such a person is answered, this is because of the secret of divine accompaniment, according to which nothing is devoid ...”
 
@@ -4315,11 +4729,15 @@ Someone in that state may not receive the *particular* thing requested, although
 
 The printed page has a large modern editorial footnote interleaved after main text. Do not count this footnote as Mahāʾimī. Arabic copy-text here ends mid-quotation and resumes on p135.
 
-## Printed p. 135 · Text Eleven: two grounds for response to imperfect petition—maʿiyya and existential necessity
+Related passage IDs: QNW-WIT247
 
-**MSH-P135** · [Arabic source](https://archive.org/details/machra3-khosous/page/n133/mode/1up)
+## MSH-P135 · Printed p. 135 · Text Eleven: two grounds for response to imperfect petition—maʿiyya and existential necessity
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n133/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 عن الحق أو الجمعية التامة الحاصلة للمضطرين الموعود لهم بالإجابة للاستدعاء الاضطراري ، والاستعداد الحاصل به ، أي : بالاضطرار ] . أي : ومتى أجيب في عين ما سأل من غير تأخير ، مثل هذا المتوجه في دعائه إلى الصورة المشخصة في ذهنه ، فإنما سبب تلك الإجابة في حقه أحد الأمرين : أمر سراية المعية الإلهية ، أي تعلق الصفات الإلهية وظهوراته بجميع الحقائق ، والصور الكونية على ما أشار إليه بقوله تعالى : وَهُوَ مَعَكُمْ أَيْنَ ما كُنْتُمْ [ الحديد : 4 ] .
 
@@ -4329,15 +4747,15 @@ The printed page has a large modern editorial footnote interleaved after main te
 
 وإنما فسر الضمير في به بالاضطرار ؛ لئلا يتوهم عوده إلى استدعاء ، وهذا السبب موجب للإجابة ، فافهم . قال رضي اللّه عنه : [ وحال من هذا وصفه مخالف لحال ذي التصور الصحيح والمعرفة المحققة ، فإنه مستحضر الحق ، ومتوجه إليه استحضارا وتوجها محققا ، وإن لم يكن ذلك من جميع الوجوه ، لكن يكفيه كونه متصورا ومستحضرا للحق في توجهه ، ولو في بعض المراتب ، ومن حيثية بعض الأسماء والصفات . وهذا حال المتوسطين من أهل اللّه والحال
 
-### English
+### English · passage 1
 
 **Qūnawī (completion of p. 134):** “... of the Real, or else because of the perfect concentration arising in desperate people, who have been promised an answer in consequence of their plea born of necessity and the preparedness produced by that very necessity.”
 
-**Al-Mahāʾimī:** If a person focused on a limited mental picture nevertheless receives the particular answer without delay, one of two accounts applies. First, divine accompaniment (*maʿiyya*) reaches throughout beings: the relations and appearances of the divine attributes embrace every cosmic reality and form, as indicated by “He is with you wherever you are” (Q 57:4). The commentator carefully says “divine” accompaniment rather than identifying it simply with the unrestricted Essence in itself. The Essence, considered as absolutely independent of all worlds, has no relational dependence on things. “Withness” is described under the attributes; the accompanying Qurʾānic reference to divine seeing qualifies a reading of identity or presence as crude spatial occupation.
+**Al-Mahāʾimī:** If a person focused on a limited mental picture nevertheless receives the particular answer without delay, one of two accounts applies. First, divine accompaniment (*maʿiyya*) reaches throughout beings: the relations and appearances of the divine attributes embrace every cosmic reality and form, as indicated by “He is with you wherever you are” (Q 57:4). The commentator carefully says “divine” accompaniment rather than identifying it simply with the unrestricted Essence in itself. The Essence as such, being independent of all worlds, has no relation to things as such. The term “divine” indicates that the relation is considered under the attributes. Although ‘He is with you’ might suggest an essential accompaniment of identity, that suggestion is removed by ‘God sees what you do.’
 
-Even this accompaniment does not automatically necessitate the very thing prayed for: the petitioner may be attending to the image under one aspect as a locus of manifestation, or under another aspect as somehow identical with the Real. The image therefore has two possible respects in which an answer may be enabled or obstructed; which predominates depends on further conditions.
+This pervasive accompaniment is a cause of answering, because it entails that nothing is devoid of the Real [the supplied Arabic at this point is defective]. It is nevertheless not a cause that necessitates answering, because the petitioner attends to the image as the Real Himself rather than as a locus of manifestation. The image has two aspects: one calls for answering and the other prevents it. If the former is strengthened by some hidden factor, the person is answered; otherwise not.
 
-Second, a desperate person's complete concentration of aspiration (*jamʿiyyat al-himma*) generates the receptivity attached to the promise of Q 27:62. Even if his conceptual orientation is deficient, necessity may draw his whole attention toward the One who answers, since the Real's accompaniment is not absent even from the concept by which he calls. The decisively relevant readiness comes from the existential condition of distress, not merely from the spoken wording of the request. The pronoun in “produced by it” refers, al-Mahāʾimī specifies, to necessity rather than the act of requesting.
+Second, a desperate person's complete concentration of aspiration (*jamʿiyyat al-himma*) generates the receptivity attached to the promise of Q 27:62. Even if his conceptual orientation is deficient, necessity may draw his whole attention toward the One who answers, since the Real's accompaniment is not absent even from the concept by which he calls. The request born of necessity gives the divine accompaniment preponderance, together with the preparedness arising from that necessity as a locus of mercy [the supplied connecting syntax is unclear]. The pronoun in “produced by it” refers, al-Mahāʾimī specifies, to necessity rather than the act of requesting. This second cause necessitates answering; understand this.
 
 **Qūnawī:** “The state of someone like this differs from that of one possessing a right conception and a verified knowledge. The latter has the Real present to awareness and turns toward Him with a genuine presence and orientation. Though this may not be comprehensive in every aspect, it is enough that he truly conceives and recalls the Real in directing himself, even at some ranks and from the aspect of certain names and attributes. This is the state of the intermediates among God's people, and their state ...”
 
@@ -4345,39 +4763,45 @@ Second, a desperate person's complete concentration of aspiration (*jamʿiyyat a
 
 Do not turn “divine accompaniment” into the absolute Essence’s occupancy of a mental form. Distinguish receptive distress from conceptual correctness. A Qurʾānic source reference on p135 requires verification of the cited verse placement.
 
-## Printed p. 136 · Text Eleven: the intermediate station versus comprehensive realization through essential disclosure
+Stage 13 review: The supplied phrase «مقتضية عدم خلق شيء عن الخلق» is defective; its surrounding argument clearly concerns nothing being devoid of the Real, but the English explanation is marked and no Arabic emendation is adopted. The construction adjoining «لا محل الرحمة» is also unclear and remains flagged for source checking.
 
-**MSH-P136** · [Arabic source](https://archive.org/details/machra3-khosous/page/n134/mode/1up)
+Related passage IDs: QNW-WIT247
 
-### Arabic
+## MSH-P136 · Printed p. 136 · Text Eleven: the intermediate station versus comprehensive realization through essential disclosure
+
+Source: https://archive.org/details/machra3-khosous/page/n134/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 المقدم ذكره حال المحجوبين ] .
 
-### English
+### English · passage 1
 
 **Qūnawī (completing p.135):** “... the previously mentioned state is that of those who remain veiled.”
 
-### Arabic
+### Arabic · passage 2
 
 أي : وحال من هذا أي التوجه إلى الشخص المتخيل في الذهن وصفه ، وإن أجيب في عين ما سأل من غير تأخير مخالف لحال ذي التصور الصحيح والمعرفة المحققة ، فسر التصور الصحيح بالمعرفة أي المطابقة للواقع ؛ ليعلم أنه لا يتم بالتقييد ، بل لا بدّ معه من الدليل القطعي : فكريّا أو ذوقيّا ، وإنما خالف حاله لحال ذي التصور الصحيح ؛ لأن ذا التصور الصحيح يستحضر الحق قبل الدعاء ، ثم يتوجه إليه استحضارا محققا وتوجها محققا ، فهو مشاهد للحق متوجه إليه بحسب إجابته بمقتضى الوعد في قوله : ادْعُونِي أَسْتَجِبْ لَكُمْ [ غافر : 60 ] ، بخلاف المستحضر صورة متخيلة في ذهنه والمتوجه إليها ، فإنه لا يجب إجابته أصلا ؛ وإنما يجب إجابة ذي التصور الصحيح ، وإن لم يكن ذلك من جميع الوجوه من الذات والأسماء والصفات وسائر المراتب والاعتبارات ، لكن يكفيه في وجوب الإجابة كونه متصورا للحق تصورا مطابقا في بعض المراتب مستحضرا للحق في توجهه إليه في بعض المراتب .
 
-### English
+### English · passage 2
 
-**Al-Mahāʾimī:** A person who addresses a mental form, even if occasionally answered in exactly what he asks, differs from a person possessing correct conception and verified knowledge. Correct conception is defined by correspondence to reality, not by a merely stipulated limit, and should have decisive warrant—either intellectual or experiential. The knowledgeable recipient brings the Real to awareness before petitioning and orients himself toward Him with genuine presence, so that the Qurʾānic promise “Call upon Me; I will answer you” (Q 40:60) applies under its proper meaning. This contrasts with supplication directed to an imagined figure.
+**Al-Mahāʾimī:** A person who addresses a mental form, even if occasionally answered in exactly what he asks, differs from a person possessing correct conception and verified knowledge. Correct conception is defined by correspondence to reality, not by a merely stipulated limit, and must be accompanied by decisive proof—either intellectual or experiential. The knowledgeable recipient brings the Real to awareness before petitioning and orients himself toward Him with genuine presence, so that the Qurʾānic promise “Call upon Me; I will answer you” (Q 40:60) applies under its proper meaning. This contrasts with someone who brings an imagined form in his mind to awareness and turns toward it: there is no necessity at all that he be answered. The person with correct conception must be answered even if his conception does not extend to every aspect—the Essence, names, attributes, and all the remaining ranks and considerations. For the necessity of answering, it suffices that he have a conception corresponding to the Real at some ranks and bring the Real at those ranks to awareness as he turns toward Him.
 
-### Arabic
+### Arabic · passage 3
 
 ولما أوهم هذا إن بعض المحجوبين أيضا متوجه إلى الحق في بعض المراتب ، فسرها بكونها من المراتب العالية الحاصلة من حيثيات بعض الأسماء والصفات ، لا من حيثية الصورة المستجلية فإنها مخلة بالمعرفة ، واستحضار بعض المراتب الإلهية لا تخل بها ، وهذا التصور في بعض المراتب الأسمائية والصفاتية حال المتوسطين من أهل اللّه ، فلهذا كثيرا ما يجابون في عين ما سألوا من غير تأخير ، وإن أخرت أو بدلت ، باعتبار ولاية ذلك الاسم وتقيده والحال المقدم ذكره ، وهو استحضار الصورة المتخيلة في الذهن حال المحجوبين ، فلا يجب لهم الإجابة أصلا ، وهو لا يعلم أن تلك الصورة من مظاهر الحق بل يتوهم غيبتها ، فيبعد عن الحق والمتوسط يعلم أنه من أسمائه فيقرب من الحق ، فيجب إجابته ، فافهم .
 
-### English
+### English · passage 3
 
-The correct conception need not encompass the Essence, every divine name and every rank. An authentic orientation under one determinate divine name or attribute may suffice. It is essential, however, to distinguish this from an imagined appearance regarded as a separate self-subsistent object. The former apprehends a real aspect of the divine order; the latter confines attention to a finite picture without understanding its status as manifestation. The qualified but genuine knowledge of certain divine names belongs to the *intermediate* spiritual rank. These recipients often obtain an exact response; however, response can still vary or be delayed in accordance with the governing power and boundaries of the particular name. The veiled, by contrast, have no unconditional right to the specified answer.
+Since this could suggest that some veiled people also turn toward the Real at certain ranks, he explains that these are high ranks attained from the aspects of certain names and attributes, not from the aspect of the imagined form, which impairs knowledge. Bringing some divine ranks to awareness does not impair it. Conception at certain ranks of names and attributes is the state of the intermediates among God's people. Thus they are often answered in exactly what they ask without delay; if the answer is delayed or substituted, this is in accordance with the authority and restriction of that name. The state mentioned previously—bringing to awareness an imagined form in the mind—is the state of the veiled, for whom answering is not necessary at all. Such a person does not know that the form is one of the Real's loci of manifestation, but instead holds a mistaken conception of it [the supplied expression «يتوهم غيبتها», literally “imagines its absence,” is unclear], and so grows distant from the Real. The intermediate knows it to be of His names, thereby draws near to the Real, and must be answered. Understand this.
 
-### Arabic
+### Arabic · passage 4
 
 قال رضي اللّه عنه : [ وأما الكمّل والأفراد ، فإن توجههم إلى الحق ، تابع للتجلي الذاتي المشار إليه الحاصل لهم والوقوف تحققهم بمقال الكمال على الفوز به ، فإنه مثمر لهم معرفة تامة جامعة لحيثيات جميع الأسماء والصفات والمراتب والاعتبارات مع صحة تصور الحق من حيث تجليه الذاتي المشار إليه الحاصل لهم بالشهود الأتم ، فلهذا لا تتأخر عنهم الإجابة ] .
 
-### English
+### English · passage 4
 
 **Qūnawī:** “As for the perfect ones and the singular individuals (*al-kummal wa-l-afrād*), their turning toward the Real follows the essential disclosure already described, which they have received, and their attainment of the station of perfection depends upon winning that disclosure. It brings them complete knowledge comprehending the aspects of every name, attribute, rank and consideration, together with correct apprehension of the Real from the standpoint of that essential disclosure, attained through the most perfect witnessing. For this reason the answer to their requests is not delayed.”
 
@@ -4385,23 +4809,29 @@ The correct conception need not encompass the Essence, every divine name and eve
 
 This is explicit station-relative phenomenology: an intermediary may have veridical yet name-conditioned cognition; the complete one retains the fruits of essential disclosure. The argument about answers is that of Qūnawī under al-Mahāʾimī’s interpretation.
 
-## Printed p. 137 · Text Eleven: the lightning disclosure ends, but its comprehensive knowing remains
+Stage 13 review: The expressions «بالتقييد» in pair2 and «يتوهم غيبتها» in pair3 remain questionable in the supplied Arabic. This review has not silently substituted التقليد or عينيّتها, nor claimed a photographic check.
 
-**MSH-P137** · [Arabic source](https://archive.org/details/machra3-khosous/page/n135/mode/1up)
+Related passage IDs: QNW-WIT247
 
-### Arabic
+## MSH-P137 · Printed p. 137 · Text Eleven: the lightning disclosure ends, but its comprehensive knowing remains
+
+Source: https://archive.org/details/machra3-khosous/page/n135/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 لما فرغ عن بيان حال المحجوب ، وأنه لا يجب إجابته إلا أنه قد يجاب لأمر عارض ، وعن بيان حال المتوسطين ، فإنهم يجابون غالبا فيما سألوا من غير تأخير ؛ لكونهم أصح تصورا أو أتم مطاوعة ، فأشار هنا إلى بيان أن تصورهم هو أصح ما يتصور به الحق ، وإنما أخره إلى هنا لتوقفه على تحصيل مقام التوسط ، فقال : فإن توجههم ، أي في أدعيتهم إلى الحق تابع للتجلي الذاتي المشار إليه أنه التجلي الاختصاصي المسمى البرقي ، ولما توقفت تبعية توجههم لهذا التجلي على حصوله لهم ، أشار إليه بقوله : الحاصل ، ثم استدل عليه بقوله : والموقوف تحققه بمقام الكمال على الفوز به ، ثم بين تبعية توجههم لذلك التجلي مع عدم بقائه نفسين بأنه مثمر لهم معرفة تامة جامعة لحيثيات جميع الأسماء والصفات وسائر المراتب الإلهية والكونية وجميع الاعتبارات ؛ لأن النزول على التجلي الذاتي المشار إليه ، يكون إلى حضرة الأسماء والصفات وسائر المراتب والاعتبارات جميعا ، ولا يقتصر على ذلك بل يكون مع صحة تصور الحق الذي حصل لهم من حيث تجليه الذاتي من غير المظاهر على ما أشير إليه ؛ لأنه قد حصل لهم بالشهود الأتم فيبقى ذلك التصور في أرواحهم وإن زال التجلي ، فتكون معرفتهم وتصورهم للحق أتم وتوجههم بحسب استحضارهم للحق بذلك المتصور الذي لا يحجبهم فيه الصفات عن الذات ولا الذات عن الصفات ولا سائر الأمور عنها : فلهذا لا تتأخر عنهم الإجابة في عين ما سألوا وإنما لم يعده ؛ لأنه مفهوم مما سبق إن عدم التأخير يدل عليه ؛ لأن تغيير المسؤول أشد من تأخيره في عدم القبول ، وقد أشار بقوله : بالشهود الأتم أي : إن التصور إنما يزول إذا لم يكن الشهود كاملا ، وأما مع كماله فلا ، وقد أشار بقوله : فلهذا لا يتأخر عنهم الإجابة ؛ لأنهم سائلون بجميع الألسنة ، والتأخر نوع إباء ، ولا إباء مع السؤال بلسان الذات والأسماء ، فكيف بألسنة الجميع .
 
 قال رضي اللّه عنه : [ وأيضا فإنهم ، أعنى الكمّل ، ومن شاء اللّه من الأفراد أهل الاطلاع على اللوح المحفوظ بل وعلى المقام القلمي بل وعلى حضرة العلم الإلهي ، فيشعرون بالمقدر كونه لسبق العلم بوقوعه ، ولا بدّ فيسألون لا في مستحيل غير مقدر الوجود ، ولا تنبعث هممهم إلى طلب ذلك والإرادة له ، وإنما قلت والإرادة له من أجل أن ثمة من يتوقف وقوع الأشياء على إرادته ، وإن لم يدع ولم يسأل الحق في حصوله ] .
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī:** Qūnawī has distinguished the veiled, who may sometimes receive an answer because of an additional circumstance, from intermediate people who commonly receive what they ask through more accurate knowledge or more complete obedience. He now explains why the comprehensive person's apprehension is of a different order. Their petition follows the particular essential disclosure earlier called lightning-like (*barqī*), the receipt of which marks full realization of the station of perfection.
 
-**Crucial temporal distinction:** Although this disclosure itself does not persist for even two breaths, **its fruition is a comprehensive and abiding knowledge** of the aspects (*ḥaythiyyāt*) of all names and attributes, the divine and cosmic ranks, and their various considerations. Following the special disclosure, the accomplished knower descends to the ranks of names, attributes and other modes without losing the correct apprehension gained from seeing the Real without a locus. Because that initial witnessing was complete, its intelligible imprint remains in the spirit after the immediate disclosure disappears. Consequently no attribute veils the Essence from this recipient, nor does the Essence veil the attributes, nor do the other levels block one another. The new comprehensiveness is not a continuous uninterrupted repetition of the original “flash”; rather, the brief witnessing has enduring cognitive and spiritual effects. This directly connects pp. 108–110 with p. 137.
+**Crucial temporal distinction:** Although this disclosure itself does not persist for even two breaths, **its fruition is a comprehensive and abiding knowledge** of the aspects (*ḥaythiyyāt*) of all names and attributes, the divine and cosmic ranks, and their various considerations. Following the special disclosure, the accomplished knower descends to the ranks of names, attributes and other modes without losing the correct apprehension gained from seeing the Real without a locus. Because that witnessing was complete, the conception remains in their spirits even after the disclosure ceases. Consequently no attribute veils the Essence from this recipient, nor does the Essence veil the attributes, nor do the other levels block one another. The wording ‘through the most complete witnessing’ indicates that the conception disappears only when witnessing is incomplete; where it is complete, the conception does not disappear.
 
-In this station the knower's petition draws on the combined languages of the Essence and divine names. Al-Mahāʾimī takes Qūnawī's denial of delay to imply that the requested object is not replaced either. The commentator's reason is that a true all-comprehending orientation does not suffer the incompleteness that arises from being governed by one restricted name alone.
+In this station the knower's petition draws on the combined languages of the Essence and divine names. Al-Mahāʾimī takes Qūnawī's denial of delay to imply that the requested object is not replaced either. Changing the requested object is an even greater withholding of acceptance than delaying it. Delay is a kind of refusal, and there is no refusal when the request is made through the tongue of the Essence and the names—how much less when it is made through the tongues of them all.
 
 **Qūnawī:** “Furthermore the perfect ones, and whichever of the singular individuals God wills, have access to the Preserved Tablet, indeed to the Pen-rank, indeed to the Presence of divine knowledge. They therefore discern what is decreed to occur, because knowledge of its occurrence has preceded it and it must come about. Thus they ask for nothing whose existence is impossible because it has not been decreed, nor do their aspirations turn toward seeking or willing such a thing. I include ‘willing it’ because there are some whose volition conditions the occurrence of things even without supplicating or verbally asking the Real for their occurrence.”
 
@@ -4409,11 +4839,15 @@ In this station the knower's petition draws on the combined languages of the Ess
 
 A prime textual answer to the research question: p137 explicitly distinguishes transient essential disclosure from persistent cognition, rather than inferring it speculatively. Apparatus should link pp108–110 and 136–138.
 
-## Printed p. 138 · Text Eleven: divine foreknowledge, the Preserved Tablet and conditioned decrees
+Related passage IDs: QNW-WIT247
 
-**MSH-P138** · [Arabic source](https://archive.org/details/machra3-khosous/page/n136/mode/1up)
+## MSH-P138 · Printed p. 138 · Text Eleven: divine foreknowledge, the Preserved Tablet and conditioned decrees
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n136/mode/1up
+
+Speaker: Qūnawī (quoted lemmata) and al-Mahāʾimī (commentary), signalled within English text
+
+### Arabic · passage 1
 
 وقد عاينت ذلك من شيخنا « 1 » - قدس اللّه روحه - سنين كثيرة في أمور لا أحصيها ، وأخبرني رضي اللّه عنه أنه رأى النبي صلى اللّه عليه وسلم في بعض وقائعه وأنه بشره ، وقال له : اللّه أسرع إليك بالإجابة منك إليه بالدعاء .
 
@@ -4421,27 +4855,33 @@ A prime textual answer to the research question: p137 explicitly distinguishes t
 
 وإنما قال : [ ولا تنبعث هممهم وإيراداتهم من أجل أن في الكمل من يتوقف وقوف الأشياء على همته وإيرادته ، كما يتوقف وقوع الأشياء في التقدير الإلهي على الدعاء هذا بالنسبة إلى بعض الأشياء ، فإن المقدرات على نوعين جازمة ومعلقة ، فالمعلقة يتوقف على الدعاء ، أو غيره من الأسباب والجازمة ما لا يتوقف على شيء ، فمن توقف وقوع الأشياء على إرادته فقط ، حصلت بمجرد الإرادة ، وإن لم يدع ولم يسأل الحق في الحصول بلسان الظاهر ] .
 
-### English
+### English · passage 1
 
 **Qūnawī:** “I witnessed this concerning our master—may God sanctify his spirit—over many years, in more matters than I can enumerate. He told me that he saw the Prophet, God bless him and grant him peace, in one of his visionary events, and that the Prophet gave him glad tidings, saying: ‘God is quicker to answer you than you are to supplicate Him.’”
 
-**Al-Mahāʾimī:** This provides another explanation for the asserted immediacy of answers to the perfect ones. Among the poles (*aqṭāb*), the accomplished are said to have knowledge of divine will, and among certain singular individuals (*afrād*) of the more comprehensive willing or choice that precedes a particular determination. The commentary distinguishes degrees of awareness: the Preserved Tablet, identified with the Universal Soul and containing detailed inscriptions of cosmic events; the Pen-rank, identified with the First Intellect and expressing those inscriptions more comprehensively; and the Presence of divine knowledge on which both depend.
+**Al-Mahāʾimī:** This provides another explanation for the asserted immediacy of answers to the perfect ones. Among the poles (*aqṭāb*), the accomplished are said to have knowledge of divine will, and among certain singular individuals (*afrād*) of the more comprehensive willing or choice that precedes a particular determination. The supplied explanation distinguishes the preceding, comprehensive willing (*mashīʾa*) from the particularizing will (*irāda*), although the construction explaining the singular individuals' exemption from the latter is difficult. The commentary then distinguishes degrees of awareness: the Preserved Tablet, identified with the Universal Soul and containing detailed inscriptions of cosmic events; the Pen-rank, identified with the First Intellect and containing those inscriptions in undifferentiated form; and the Presence of divine knowledge on which both depend.
 
-Because the people of essential disclosure descend through and know these ranks, they are said to discern what has been determined to occur. They therefore do not petition for a nonexistent outcome that divine knowledge has excluded. The impossibility in question is **not intrinsic impossibility**—it need not be a contradiction in the nature of the proposed event. Rather, a thing may be impossible *in relation to the determinate content of infallible prior divine knowledge*: its actual occurrence contrary to that knowledge would entail that divine knowledge had been false. Those with a share in knowledge of the decree do not direct will, aspiration or formal prayer toward what has been decisively excluded. Hence an apparent refusal in such a case does not arise.
+Because the people of essential disclosure must descend through and pass through these ranks, they know their contents and discern what has been determined to occur and what has not. Qūnawī mentions only the first of these paired alternatives, as in the verse mentioning ‘garments that protect you from heat’ (Q 16:81), where one counterpart stands for the other as well. They therefore do not petition for a nonexistent outcome that divine knowledge has excluded. The impossibility in question is **not intrinsic impossibility**—it need not be a contradiction in the nature of the proposed event. Rather, a thing may be impossible *in relation to the determinate content of infallible prior divine knowledge*: its actual occurrence contrary to that knowledge would entail that divine knowledge had been false. Those with a share in knowledge of the decree do not direct will, aspiration or formal prayer toward what has been decisively excluded. Hence an apparent refusal in such a case does not arise.
 
-The words about *willing* rather than merely *asking* matter because the causally relevant condition may, on this account, be an accomplished person's aspiration or will without verbal supplication. Al-Mahāʾimī then distinguishes what is **definitively fixed** in the divine decree (*jāzim*) from what is **conditioned or suspended** (*muʿallaq*). The latter is said to depend on supplication or other ordained causes, while the former does not depend on those additional conditions. If an event is divinely decreed to occur upon the will of such a person, it occurs with that will even if no explicit petition is voiced. This is a claim about the structure of a conditioned decree, not a claim of sovereign, self-subsisting creaturely creation.
+The words about *willing* rather than merely *asking* matter because the causally relevant condition may, on this account, be an accomplished person's aspiration or will without verbal supplication. Al-Mahāʾimī then distinguishes what is **definitively fixed** in the divine decree (*jāzim*) from what is **conditioned or suspended** (*muʿallaq*). The latter is said to depend on supplication or other ordained causes, while the former does not depend on those additional conditions. If an event is divinely decreed to occur upon the will of such a person, it occurs with that will even if no explicit petition is voiced. 
 
-[Editorial distinction: a modern footnote identifies “our master” as Ibn ʿArabī. That identification is plausible for Qūnawī but has not been independently checked against a critical edition or manuscript. The footnote is excluded from the translated running text.]
+[Editorial distinction: the modern footnote identifying “our master” as Ibn ʿArabī is excluded. Al-Mahāʾimī himself explicitly names Muḥyī al-Dīn ibn ʿArabī in the continuation on p.139; the attribution therefore does not depend solely on that modern footnote.]
 
 ### Editorial note
 
-The print transcription reads «إيراداتهم» in one line for «إراداتهم», likely a scribal or OCR error; no emendation applied. A modern note identifies Qūnawī’s teacher with Ibn ʿArabī, not independently verified. Page 138 ends after the passage on conditional decree; Text Eleven continues on p139.
+The print transcription reads «إيراداتهم» in one line for «إراداتهم», likely a scribal or OCR error; no emendation applied. Page 138 ends after the passage on conditional decree; Text Eleven continues on p139.
 
-## Printed p. 139 · Text Eleven — perfect human, will and knowledge
+Stage 13 review: The identification of Qūnawī's teacher with Ibn ʿArabī is explicitly made by al-Mahāʾimī in the supplied main text on p.139, not merely by the modern editor. This establishes the commentary's attribution, not independent authentication of the vision-report.
 
-**MSH-P139** · [Arabic source](https://archive.org/details/machra3-khosous/page/n137/mode/1up)
+Related passage IDs: QNW-WIT247
 
-### Arabic
+## MSH-P139 · Printed p. 139 · Text Eleven — perfect human, will and knowledge
+
+Source: https://archive.org/details/machra3-khosous/page/n137/mode/1up
+
+Speaker: Qūnawī quoted lemmata and al-Mahāʾimī explanatory commentary, marked in translation
+
+### Arabic · passage 1
 
 ( وقد عاينت ) أي : علمت علما يشبه العيان من الشيخ الكامل المكمل محيي الدين بن عربي قدس اللّه روحه ، أنه رأى النبي صلى اللّه عليه وسلم في بعض وقائعه ، أي كشوفه أو مناجاته ، وأنه صلى اللّه عليه وسلم بشره بقوله : « اللّه أسرع إليك بالإجابة منك » أي : من سرعتك إليه بالدعاء إذ يجيبك بمجرد الإرادة قبل الدعاء ، أورد هذه العبارة الطويلة ، ولما رأى النبي صلى اللّه عليه وسلم يبشره بأن اللّه أسرع إليك . . .
 إلى آخره ؛ ليشعر أولا أنه رأى من تكون رؤيته رؤية الحق ، ثم ليمدح رؤياه بأنه بشرى من النبي صلى اللّه عليه وسلم ، ثم بيّن ما أجمله مع رعاية عبارة النبي صلى اللّه عليه وسلم . قال رضي اللّه عنه : [ وهذا المقام فوق مقام إجابة الأدعية ، وإنه من خصائص كمال المطاوعة ، ومقامه فوق مقام المطاوعة ، فإن مقام المطاوعة يختص بما سبقت الإشارة إليه من المبادرة إلى امتثال الأوامر ، وتتبع مراضي الحق ، والقيام بحقوقه بقدر الاستطاعة .
@@ -4449,9 +4889,9 @@ The print transcription reads «إيراداتهم» in one line for «إراد�
 وهذا المقام الذي قلت إنه فوق هذا ، راجع إلى كمال موافاة العبد من حيث حقيقته لما يريده الحق منه بالإرادة الأولى الكلية المتعلقة بحصول كمال الجلاء والاستجلاء ، فإنه الموجب لإيجاد العالم ، والإنسان الكامل الذي هو العين المقصودة للّه على التعيين ، وكل ما سواه فمقصود بطريق التبعية له وبسببه من جهة أن ما لا يوصل إلى المطلوب إلا به ، فهو مطلوب ، فهذا هو المراد من قولي « فمقصود بطريق التبعية ] .
 أي : ومقام إجابة الإرادة فوق مقام إجابة الأدعية باللسان لما أنه يحتاج زيادة الإخراج إلى اللسان لما يتأخر إجابته إلى ذلك الإخراج ، وأن مقام إجابة الإرادة من خصائص كمال المطاوعة من العبد الموجبة للمطاوعة الإرادة الإلهية ؛ لإرادته قبل التلفظ . ومقام كمال المطاوعة فوق مقام مطلق المطاوعة الموجبة للمطاوعة الإلهية بعد السؤال باللسان ؛ لأن مقام مطلق المطاوعة يختص بما سبقت الإشارة إليه من المبادرة إلى
 
-### English
+### English · passage 1
 
-**Al-Mahāʾimī:** In explaining “I witnessed,” he means that he gained from the perfected, perfecting master Muḥyī al-Dīn ibn ʿArabī—may God sanctify his spirit—knowledge resembling direct vision: Ibn ʿArabī had seen the Prophet, blessings and peace upon him, in one of his spiritual occurrences, that is, his unveilings or intimate conversations. The Prophet gave him the good news: “God is quicker in answering you than you are [in turning to Him].” That is, God responds through the mere will, before supplication is uttered. Qūnawī sets out the long expression about the vision, first to indicate whom Ibn ʿArabī saw, and then to extol it as prophetic glad tidings; he subsequently expounds what was compressed in the report while retaining its wording.
+**Al-Mahāʾimī:** In explaining “I witnessed,” he means that he gained from the perfected, perfecting master Muḥyī al-Dīn ibn ʿArabī—may God sanctify his spirit—knowledge resembling direct vision: Ibn ʿArabī had seen the Prophet, blessings and peace upon him, in one of his spiritual occurrences, that is, his unveilings or intimate conversations. The Prophet gave him the good news: “God is quicker in answering you than you are [in turning to Him].” That is, God responds through the mere will, before supplication is uttered. Qūnawī gives the long account of seeing the Prophet and receiving the glad tidings, first to indicate that he saw one whose being seen is a seeing of the Real, then to praise the vision as glad tidings from the Prophet. He next explains what he had stated in summary while preserving the Prophet's reported wording.
 
 **Qūnawī:** “This station is above the station in which prayers are answered. It is among the distinctive characteristics of perfect responsiveness (*kamāl al-muṭāwaʿa*), whose station is above ordinary responsiveness. Ordinary responsiveness is confined to what was indicated previously: promptly carrying out commands, pursuing what pleases the Real, and fulfilling His rights to the extent of one's ability. The Prophet alluded to this when his uncle Abū Ṭālib, seeing how quickly God answered his appeals, said, ‘How swiftly your Lord comes to what you desire, Muḥammad!’ Another report says, ‘How responsive your Lord is to you!’ The Prophet answered, ‘And you, uncle—if you obey Him, He will respond to you.’ The station I called higher than this concerns the servant's complete conformity, in virtue of his reality, to what the Real desires of him through the first, universal will, related to the attainment of complete *jalāʾ* and *istijlāʾ*. That is what calls forth the world's existentiation, together with the Perfect Human who is the intended entity in particular. Everything besides him is intended derivatively, for his sake and by reason of him: whatever is indispensable to attaining the intended end is itself intended. This is what I mean by ‘intended derivatively.’”
 
@@ -4461,11 +4901,15 @@ The print transcription reads «إيراداتهم» in one line for «إراد�
 
 The editor reports that he could not locate sources for the two Abū Ṭālib reports; their verification remains unresolved. Page ends in the middle of al-Mahāʾimī’s sentence.
 
-## Printed p. 140 · Text Eleven — perfect human, will and knowledge
+Related passage IDs: QNW-WIT247, QNW-WIT248
 
-**MSH-P140** · [Arabic source](https://archive.org/details/machra3-khosous/page/n138/mode/1up)
+## MSH-P140 · Printed p. 140 · Text Eleven — perfect human, will and knowledge
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n138/mode/1up
+
+Speaker: Qūnawī quoted lemmata and al-Mahāʾimī explanatory commentary, marked in translation
+
+### Arabic · passage 1
 
 امتثال أوامر الحق من الواجبات ، وتتبع مراضي الحق من المندوبات ، والقيام بحقوق الحق من واجب الاعتقاد الصحيح فيه ، ومن الإخلاص في العمل بترك طلب العوض والغرض ، فهو بقدر الاستطاعة قيد به ؛ لأن الإتيان بذلك على وجه الكمال إنما هو مقام كمال المطاوعة .
 وإنما أعاد هذا مع أنه سبقت الإشارة إليه ؛ لأن السابق يوهم أنه هو كمال المطاوعة ، وليس كذلك ، بل هو مطلق المطاوعة ، ثم استدل على استلزام مطلق المطاوعة للمطاوعة الإلهية في إجابة سؤاله صلى اللّه عليه وسلم : « وأنت يا عمّ إن أطعته » ، أي إنما سارع ربي إلى هواي وأطاعني ، لمطاوعتي إياه جزاء عليه ، وليس يختص بي بل هو عام لكل مطيع له ، فدل على أن مطلق الإطاعة من العبد يستوجب إجابة الحق سؤاله ، وقول أبي طالب : « ما أسرع ربك إلى هواك » ، أي إلى ما تحبه فتسأله فيجيبك أسرع من إجابته غيرك .
@@ -4473,7 +4917,7 @@ The editor reports that he could not locate sources for the two Abū Ṭālib re
 فهذا مقام مطلق المطاوعة ، وأما كمال المطاوعة ، فهو المشار إليه بقوله : وهذا المقام الذي أنه فوق هذا أي : فوق قوته مطلق الكمال راجع إلى كمال مواطآت العبد ، لا من حيث حقيقته الذي هو الوجود المطلق لكن باعتبار تعينه به ، ولهذا لو ورد لفظ المواتاة لما يريده الحق فيه بالإرادة الأولى ، أي : المتعلقة بما هو مراد بالذات ، لكونه أكمل البريات ، وهي الإرادة الكلية التي أريد بها ظهور كمال يمكن ظهوره ، وهي المتعلقة بحصول كمال الجلاء والاستجلاء .
 فالجلاء ظهور الذات المقدسة لذاته في ذاته ، والاستجلاء ظهور
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī:** [The ordinary station entails] carrying out the Real's obligatory commands, pursuing His pleasure through recommended works, and observing His rights by holding correct belief concerning Him and acting sincerely, without seeking payment or self-interested advantage. Qūnawī restricts these activities to what lies within one's capacity, because their perfect accomplishment properly belongs to the station of perfected responsiveness.
 
@@ -4481,24 +4925,28 @@ He repeats the point, though it has already been mentioned, lest the previous di
 
 In the other transmitted version, “How responsive your Lord is to you” means how promptly He answers your supplication. On the first reading, the Prophet's own rejoinder employs the rhetorical figure of *mushākala*, matching the expression of the earlier statement; on the second, Abū Ṭālib's own expression also belongs to this figure. The two versions are included because the first emphasizes the speed of response, whereas the second indicates response simply—this being the meaning intended by calling God “responsive.” The second also suggests that this way of speaking is found both before and after Islam, without being prohibited.
 
-Such is the station of responsiveness in general. The superior station of perfected responsiveness is what Qūnawī calls the servant's complete accord with what the Real desires through the first will, namely the will whose object is intended intrinsically, because the Perfect Human is the most complete of creatures. This universal will is directed toward the manifestation of every perfection capable of manifestation and toward the full realization of *jalāʾ* and *istijlāʾ*. *Jalāʾ* means the holy Essence's manifestation to itself within itself, while *istijlāʾ* means [the corresponding manifestation expounded on p. 141].
+Such is the station of responsiveness in general. The superior station of perfected responsiveness is what Qūnawī describes as the servant's complete accord with what the Real desires. Al-Mahāʾimī specifies: ‘not in respect of his reality, which is unrestricted Being, but in respect of his determination by it.’ The following words about the alternative expression *muwātāh* (‘accordance’) are syntactically incomplete in the supplied text. The ‘first will’ concerns what is intended intrinsically, because the Perfect Human is the most complete of creatures. This universal will is directed toward the manifestation of every perfection capable of manifestation and toward the full realization of *jalāʾ* and *istijlāʾ*. *Jalāʾ* means the holy Essence's manifestation to itself within itself, while *istijlāʾ* means [the corresponding manifestation expounded on p. 141].
 
 ### Editorial note
 
 Several awkward expressions in the transcription of the fourth paragraph require comparison with print. Modern marginal notes reporting that the editor could not locate the prophetic reports are excluded.
 
-## Printed p. 141 · Text Eleven — perfect human, will and knowledge
+Stage 13 review: The qualification «لا من حيث حقيقته الذي هو الوجود المطلق لكن باعتبار تعينه به» is retained in translation despite tension with the preceding lemma's ‘in respect of his reality’. The following «ولهذا لو ورد لفظ المواتاة» is incomplete as supplied. No independent witness has been used to remove لا or otherwise normalize this passage.
 
-**MSH-P141** · [Arabic source](https://archive.org/details/machra3-khosous/page/n139/mode/1up)
+## MSH-P141 · Printed p. 141 · Text Eleven — perfect human, will and knowledge
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n139/mode/1up
+
+Speaker: Qūnawī quoted lemmata and al-Mahāʾimī explanatory commentary, marked in translation
+
+### Arabic · passage 1
 
 الذات للذات في التعينات ، وكمال الأولى أن يظهر أيضا في مراتب الأسماء والصفات ، وكمال الثانية أن يجتمع بتلك التعينات إجمالا وتفصيلا في التعين الجامع للتعينات في المرتبة الجامعية الإنسانية ، فإنه أي طلب كمال الجلاء والاستجلاء ، هو الموجب لإيجاد العالم الذي به تتفصل الكمالات المجملة في الذات ، والإنسان الكامل الذي تصير به الكمالات مجملة بعد التفصيل ، فهو الجامع للكمالات الإجمالية والتفصيلية جميعا ؛ فلهذا كان الإنسان الكامل عينا مقصودة للّه تعالى على التعين ، أي من حيث تلك الإرادة ، وإلا فهو سبحانه وتعالى غني عن العالمين ، وكل ما سواه كان إنسانا غير كامل أو غير إنسان ، فمقصود بطريق للإنسان الكامل ، لكونه كالمقدمات والمتممات له .
 ولهذا قال رضي اللّه عنه : ( وبسببه ) أي : بسبب الإنسان انتسب إلى إرادة الحق ظهوره على الكمال ، وليس المظهر كامل من حيث أن ما لا يوصل إلى المطلوب إلا به ، فهو مطلوب ؛ فالمطلوب الأول مراد بالذات ، والثاني مطلوب بتبعية طلب الأول ؛ ولذا قال : فهذا هو المراد من قولي بطريق التبعية . والحاصل عن هذا الكامل لما كان مرادا بالذات ؛ لكونه مظهرا كاملا له مراتب ، يشكل ما يريده بالإرادة الأولى الكلية ، كان مجيبا لإرادته من غير توقف على السؤال باللسان ، بخلاف المطيع الأول ، فافهم .
 قال رضي اللّه عنه : [ وإنما كان الإنسان الكامل هو المراد بعينه دون غيره من أجل أنه مجلى تام للحق يظهر الحق به من حيث ذاته وجميع أسمائه وصفاته وأحكامه واعتباراته على نحو ما يعلم نفسه بنفسه في نفسه ، وما ينطوي عليه من أسمائه وصفاته وسائر ما أشرت إليه من الأحكام والاعتبارات وحقائق معلوماته التي في أعيان مكوناته دون تغيير يوجبه نقص القبول وخلل في مرآتيته يفضي بعدم ظهور ما ينطبع فيه على خلاف ما هو عليه في نفسه ] .
 إشارة إلى سبب كون الإنسان الكامل من الأقطاب والأفراد مرادا للحق دون غيره ، كالعقول والنفوس والأجسام وغيرها ، وهو أن الإنسان الكامل إنما كان مرادا للحق من أجل مجلى تام للحق ، إجمالا وتفصيلا من غير نقص وخلل في مظهريته ؛ وذلك أنه يظهر به الحق من حيث ذاته ، لكنه متصف بالوجود ، وجميع أسمائه وصفاته ؛ لأنه حيّ ، عالم ، قادر ، مريد ، سميع ، بصير ، متكلم ، وفيه الحياة والعلم والقدرة والإرادة والسمع
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī:** [*Istijlāʾ* is] the Essence's manifestation to itself within determinations. The perfection of the first [*jalāʾ*] includes appearing in the ranks of names and attributes; the perfection of the second is that these determinations, both in their undifferentiated and differentiated aspects, be gathered together within the determination comprising all determinations, namely the comprehensive human rank. The pursuit of the perfection of *jalāʾ* and *istijlāʾ* occasions the existentiation of the cosmos, in which perfections folded together in the Essence become differentiated, and of the Perfect Human, in whom those perfections are again brought together after differentiation. He therefore comprises both the undifferentiated and the differentiated perfections. Thus the Perfect Human is specifically intended by God **under this consideration of the will**; otherwise God, exalted is He, is independent of all worlds. Everything other than the Perfect Human—whether a human being who is not perfect or another kind of being—is intended in a subordinate way, as an antecedent or completion relative to him.
 
@@ -4512,18 +4960,22 @@ Qūnawī therefore adds “and because of him”: through the human being the co
 
 The copy-text reads «فمقصود بطريق للإنسان الكامل» and «ليس المظهر كامل» in awkward constructions; retain the witnessed reading and flag for collation.
 
-## Printed p. 142 · Text Eleven — perfect human, will and knowledge
+Related passage IDs: QNW-WIT248
 
-**MSH-P142** · [Arabic source](https://archive.org/details/machra3-khosous/page/n140/mode/1up)
+## MSH-P142 · Printed p. 142 · Text Eleven — perfect human, will and knowledge
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n140/mode/1up
+
+Speaker: Qūnawī quoted lemmata and al-Mahāʾimī explanatory commentary, marked in translation
+
+### Arabic · passage 1
 
 والبصر والكلام وأحكامه المتعلقة بذاته وصفاته ؛ لكونه واجبا به ، ممكنا بنفسه واعتباراته من حيث الإطلاق والتقييد وسائر النسب ، مع ظهور كل منها فيه على الكمال ، فإنه يظهر فيه الذات على نحو ما يعلم نفسه بنفسه لا بعلم زائد ، ولا باعتبار ما يعلم نفسه في المظاهر التي سواه ؛ وذلك عن كونه فانيا فيه ، ويظهر أسماءه وصفاته على نحو علمه بما ينطوي عليه ذاته من أسمائه وصفاته وسائر ما أشرت إليه من الأحكام والاعتبارات ، وذلك عند كونه باقيا به ، ويظهر فيه أيضا حقائق معلوماته التي هي الأعيان الثابتة لمكوناته ، لكونه مختصرا من العالم الكبير ، فهو جامع لنسختي الحق والخلق على ظهور كل منها فيه على الكمال دون تغيير من الظهورين ، سببه نقص قبول المظهر وذلك النقص بخلل في مرآتية المظهر يقتضي ذلك الخلل ظهور ما ينطبع فيه على خلاف ما هو عليه في نفسه ، كما هو شأن المرايا المحسوسة إذا كانت معوجة أو مستطيلة يظهر ذلك الاعوجاج والاستطالة فيما انطبع فيها من الصور .
 وإنما كان قبول الإنسان كاملا غير مختل بحسب المرآتية ؛ لأنه مظهر كامل لذاته وأسمائه وصفاته وسائر اعتباراته ، بخلاف سائر العوام ، فافهم . قال رضي اللّه عنه : [ فإنّ من كان هذا شأنه ، لا يكون له إرادة ممتازة عن إرادة الحق ، بل هو مرآة إرادة ربه وغيرها من الصفات ؛ وحينئذ يستهلك دعاءه في إرادته التي لا تغاير إرادة ربه ، فيقع ما يريده كما قال اللّه تعالى : فَعَّالٌ لِما يُرِيدُ [ هود : 107 ] .
 ومن تحقق بما ذكرنا ، فإنه إن دعا ، إنما يدعو بألسنة العالمين ومراتبهم من كونه مرآة لجميعهم ؛ كما أنه متى ترك الدعاء ، إنما يتركه من حيث كونه مجلى للحق باعتبار أحد وجهيه الذي يلي الجناب الإلهي ، ولا يغايره من كونه : فَعَّالٌ لِما يُرِيدُ [ هود : 107 ] .
 تعليل لقوله : وإنه من خصائص كمال المطاوعة ، أورد بعد بيان معناه ، والفرق بينه
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī:** [The qualities previously mentioned continue with] sight, speech, and the rulings attaching to the Essence and attributes. The Perfect Human is necessary *through Him*, while possible *in himself*, and displays the relevant considerations of unrestrictedness, restriction, and other relations in their completeness. The Essence manifests in him according to the manner in which God knows Himself by Himself, not by an added knowledge nor under the consideration of how He knows Himself in other loci. This is the human being's *fanāʾ* in Him. The names and attributes also manifest in the manner of God's knowledge of what His Essence comprises of names, attributes, rulings, and considerations: this is the servant's *baqāʾ* through Him. There manifest in him, too, the realities of God's known things—the fixed entities of His creatures—because he is a microcosm of the greater world. Thus he gathers both the divine and created copies, each manifest in him completely and without a distortion arising from deficient receptivity. Such distortion would mean a defect in the mirror's functioning, as with a physical mirror that is bent or elongated and consequently alters the reflected shapes.
 
@@ -4537,20 +4989,24 @@ The human being's reception is perfect in respect of its mirroring because he is
 
 A long quotation attributed to Ibn ʿArabī in the modern editor’s footnote (from an answer numbered 108) has been excluded from the translated running text. The phrase “necessary through Him, possible in himself” must not be confused with unqualified creaturely necessity.
 
-## Printed p. 143 · Text Eleven — perfect human, will and knowledge
+Related passage IDs: QNW-WIT248
 
-**MSH-P143** · [Arabic source](https://archive.org/details/machra3-khosous/page/n141/mode/1up)
+## MSH-P143 · Printed p. 143 · Text Eleven — perfect human, will and knowledge
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n141/mode/1up
+
+Speaker: Qūnawī quoted lemmata and al-Mahāʾimī explanatory commentary, marked in translation
+
+### Arabic · passage 1
 
 وبين مطلق المطاوعة ، أي إنما إجابة مجرد الإرادة من خصائص كمال المطاوعة ؛ لأن العبد المتصف بها لما كان مرآة من حيث حقيقته لما يريده الحق منه بالإرادة الأولى الكلية المتعلقة بحصول كمال الجلاء والاستجلاء ، لا يكون له إرادة ممتازة عن إرادة الحق ، بل هذا العبد مرآة إرادة ربه ، ومرآة غيرها من الصفات ، وإرادته ظل إرادته عزّ وجل ، بل عينها بحسب الحقيقة ، فلا يحتاج إلى الدعاء ؛ لأنه حينئذ يستهلك دعاءه في إرادته ، وإرادته لا تغاير إرادة ربه ، فيقع ما يريد الرب الذي هو فعال لما يريد ، لا يختلف عن إرادته مراد ما بوجه من الوجوه ، إذ الوجود العام مطيع له بالطبع ، إطاعة أعضاء الإنسان له عند صحته وكمال قواه ، فهكذا ما هو مرآته لتنورها بنوره ، فيؤثر فيما يقابله تنوير الماء المتنور بالشمس ما يقابله من الحائط ، فيكون فعال لما يريد بربه لا بنفسه ، ثم ذكر ما هو أعلى منه ، وهو من تحقق بما ذكرناه من كمال الجلاء والاستجلاء ، وكان في مقام البقاء ، فلا يستهلك دعاءه ، فإنه يستجاب دعاؤه وإرادته جميعا ؛ لأنه إنما يدعو بألسنة العالمين الظاهرة وبمراتبهم التي هي أسئلة معنوية من سؤال الحال والاستعداد وغيرها ، وكل هذا ناشئ من كونه مرآة لجميعهم ، ودعاء الكل مقبول لا محالة ، وإن ترك الدعاء تجاب إرادته ؛ لأنه إنما يتركه من حيث كونه مجلى للحق ، والحق لا يكون داعيا ، فإنه من شأن العبد ، وهو تعالى أعلى من أن يصير عبدا ، كما أن العبد أخس من أن يصير ربّا ، وكونه مجلى للحق باعتبار أحد وجهيه ، وهو أن كل مقيد له وجه إلى وجه الإطلاق ، وقد كمل هذا الوجه في حق هذا العبد إذ كان مظهرا كاملا ، فلا يغايره من جهة كونه فعالا لما يريد ؛ لأن إرادته مرآة إرادة الحق ، فيكون مجاب الإرادة لا محالة .
 فافهم . قال : [ وليس وراء هذا المقام مرمى لرام ، ولا مرقى إلى مرتبة ولا مقام ، ودونه المتوجه إلى الحق بمعرفة تامة وتصور صحيح المقصود بخطاب : ادْعُونِي أَسْتَجِبْ لَكُمْ ، وخبر الحق صدق ، وقد تيسر ذلك لهذا العبد المشار إليه ، فلزمت النتيجة التي هي الإجابة ، ولا بدّ بخلاف غيره من المتوجهين المذكور شأنهم . فاعلم ذلك تفز بأسرار عزيزة وعلوم غريبة لم تنساق إليها الأفكار والأفهام ولا رقمتها الأنامل بالأقلام واللّه المرشد ] . أي : وليس وراء مقام التحقيق بما ذكرنا من كمال المطاوعة التي هي مرآة للعبد من
 
-### English
+### English · passage 1
 
-**Al-Mahāʾimī:** [The explanation concerns] the distinction from responsiveness in general. Answering a mere act of willing is a mark of perfected responsiveness because the servant of this qualification mirrors, in his very reality, what the Real desires of him in the first universal will directed toward complete *jalāʾ* and *istijlāʾ*. Consequently, he has no will distinct from the Real's will: he mirrors his Lord's will and the other divine attributes. His will is the shadow of the divine will—indeed, under the consideration of reality, its very counterpart. He therefore does not need to supplicate, because his petition is absorbed into willing, and his willing does not stand apart from the will of his Lord. What occurs is whatever the Lord wills, since the Real effects what He wills and no intended thing fails to conform to that will. Universal existence responds to Him by nature, like the limbs of a healthy human being under his perfected faculties. A mirror lit by His light conveys the illumination to what faces it, as water lit by the sun lights up an opposing wall. Therefore **he effects what he wills through his Lord, not through himself**.
+**Al-Mahāʾimī:** [The explanation concerns] the distinction from responsiveness in general. Answering a mere act of willing is a mark of perfected responsiveness because the servant of this qualification mirrors, in his very reality, what the Real desires of him in the first universal will directed toward complete *jalāʾ* and *istijlāʾ*. Consequently, he has no will distinct from the Real's will: he mirrors his Lord's will and the other divine attributes. His will is the shadow of the divine will—indeed, it is identical with it in respect of reality. He therefore does not need to supplicate, because his petition is absorbed into willing, and his willing does not stand apart from the will of his Lord. What occurs is whatever the Lord wills, since the Real effects what He wills and no intended thing fails to conform to that will. Universal existence responds to Him by nature, like the limbs of a healthy human being under his perfected faculties. A mirror lit by His light conveys the illumination to what faces it, as water lit by the sun lights up an opposing wall. Therefore **he effects what he wills through his Lord, not through himself**.
 
-Qūnawī then describes one who has attained a still higher realization of *jalāʾ* and *istijlāʾ* and abides in *baqāʾ*. Such a person does not dissolve his petition into willing; rather, both his petition and his willing are answered. If he prays, he does so through the outward tongues of all worlds and through their ranks—which express implicit requests through states, receptivities, and other conditions—because he mirrors them all. Their petitions are, on this account, answered. If he does not pray, his will is answered because his omission of petition proceeds from his being a locus of manifestation of the Real. The Real does not supplicate, for supplication belongs to the servant; **God is too exalted to become a servant, just as a servant is too lowly to become a Lord**. Every restricted thing has an aspect facing unrestrictedness; in this servant that aspect is perfected because he is a complete locus of manifestation. Consequently his will mirrors the will of the One who effects what He wills.
+Qūnawī then describes one who has attained a still higher realization of *jalāʾ* and *istijlāʾ* and abides in *baqāʾ*. Such a person does not dissolve his petition into willing; rather, both his petition and his willing are answered. If he prays, he does so through the outward tongues of all worlds and through their ranks—which express implicit requests through states, receptivities, and other conditions—because he mirrors them all. The petition of them all is necessarily accepted. If he does not pray, his will is answered because his omission of petition proceeds from his being a locus of manifestation of the Real. The Real does not supplicate, for supplication belongs to the servant; **God is too exalted to become a servant, just as a servant is too lowly to become a Lord**. Every restricted thing has an aspect facing unrestrictedness; in this servant that aspect is perfected because he is a complete locus of manifestation. Consequently his will mirrors the will of the One who effects what He wills.
 
 **Qūnawī:** “Beyond this station there is no further target for the aspirant, no ladder to another rank or station. Beneath it stands one who turns to the Real with complete knowledge and correct conception, the one meant by the address, ‘Call upon Me and I shall answer you.’ The Real's report is true. As that servant has succeeded in doing what has been described, the conclusion necessarily follows: he must be answered—unlike the other kinds of people turning toward Him whose states we have discussed. Know this and you will attain precious secrets and unfamiliar sciences which neither thoughts nor understandings have reached and which fingers have not inscribed with pens. God is the guide.”
 
@@ -4560,11 +5016,15 @@ Qūnawī then describes one who has attained a still higher realization of *jal�
 
 The text gives strong identity-language concerning willing but immediately qualifies the causal agency as “through his Lord, not through himself”; do not cite the former without the latter.
 
-## Printed p. 144 · Text Eleven concludes; Text Twelve begins
+Related passage IDs: QNW-WIT248, QNW-WIT249
 
-**MSH-P144** · [Arabic source](https://archive.org/details/machra3-khosous/page/n142/mode/1up)
+## MSH-P144 · Printed p. 144 · Text Eleven concludes; Text Twelve begins
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n142/mode/1up
+
+Speaker: Qūnawī quoted lemmata and al-Mahāʾimī explanatory commentary, marked in translation
+
+### Arabic · passage 1
 
 حيث حقيقته لما يريده الحق منه بالإرادة الأولى الكلية المتعلقة بكمال الجلاء والاستجلاء والتحقيق به في مقام البقاء مرمى لرام ترقى إليه همته فيقصده ، ولا مرقى إلى المرتبة ؛ لأنها أجمع للمراتب ولا مقام ، لأنه فوق المقامات كلها ، فيكون مستجاب الدعوة والإرادة جميعا ، ودون هذا الكامل المتوجه إلى الحق بمعرفة تامة وتصور صحيح ، وهو الذي لا يناقض الحق بوجه من الوجوه بلوغه غاية ما يمكن الوصول إليه إلا ما يحيط بكنه حقيقته ، إذ هو محال ، وهذا هو الذي يجيب إجابته بمقتضى : ادْعُونِي أَسْتَجِبْ لَكُمْ [ غافر : 60 ] ، لا إرادته ، وهو المقصود بخطاب ادعوني إذ من يجاب إرادته لا يحتاج إلى الدعاء إلا لتحقيق مقام العبودية وكونه مرآة العالم .
 ثم ذكر أنه وإن كان دون الأول ، لا يجوز ترك إجابته ؛ لأن خبر الحق صدق ، وقد أخبر بالإجابة عند دعوته ، وقد تيسر ذلك الدعاء لهذا العبد بالمعرفة التامة والتصور الصحيح ، فلزمت نتيجة الوعد المذكور التي هي الإجابة . شبهت نتيجة القياس في اللزوم ثم ألزم بقوله : « ولا بدّ » بخلاف غيره من المتوجهين المذكور شأنهم في التوسط أو الحجاب الذي يتوجه إلى صورة مختلفة ، فإن إجابتهم جائزة لا واجبة .
@@ -4572,15 +5032,15 @@ The text gives strong identity-language concerning willing but immediately quali
 فاعلم هذه القاعدة تفز بأسرار عزيزة من لزوم إجابة الدعوة أو الإرادة أو عدم لزوم أحدهما ، وعلم غريبه من معرفة الكامل ، وغير الكامل على وجه خاص كلي حاضر لم يتسابق إليها الأفكار ، التي لا تحيط بهذه الأمور الكشفية بل ، والأفهام الذوقية ولا رقمتها الأنامل بالأقلام ؛ إذ هي فرع الفكر والفهم ، وإنما أورده ؛ لأنه ما يتوهم « يعلمون ما يسطرون » ، واللّه المرشد إلى مثل هذه الأسرار والعلوم بتجلياته الذاتية لا غير ، فافهم .
 النص الثاني عشر : قال رضي اللّه عنه : [ نص شريف ] لما ذكر في النص السابق : الأتم معرفته تكون الإجابة إليه أسرع ، شرع في بيان كمال المعرفة ، وبيّن فيها أيضا كمال الإنسان أن يكون مظهر الحق على
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī:** [The preceding section closes:] There is no further object at which aspiration can aim beyond the actualization of the servant as a mirror, in his own reality, of what the Real desires through the first universal will relating to the perfection of *jalāʾ* and *istijlāʾ*, together with that realization in the station of *baqāʾ*. There is no ascent to a further rank, because this rank comprises all ranks, and no higher station, for it is beyond the stations. Both the prayer and the willing of such a person are answered.
 
-Below this complete one is the person turning to the Real with complete knowledge and a correct conception which does not contradict the Real in any respect, who has attained the highest degree accessible short of encompassing the very *quiddity* of the divine Reality—something impossible. This person receives an answer according to “Call upon Me; I will answer you” (Q 40:60), but does not receive the same kind of immediate fulfillment of mere willing. He is addressed by “Call upon Me” precisely because someone whose willing is already answered has no need of petition except to realize servanthood and the task of mirroring the world.
+Below this complete one is the person turning to the Real with complete knowledge and a correct conception which does not contradict the Real in any respect, who has attained the highest degree accessible short of encompassing the innermost reality of the Real—something impossible. This person receives an answer according to “Call upon Me; I will answer you” (Q 40:60), but does not receive the same kind of immediate fulfillment of mere willing. He is addressed by “Call upon Me” precisely because someone whose willing is already answered has no need of petition except to realize servanthood and the task of mirroring the world.
 
 Although this knowledgeable servant is below the first, the response to his prayer cannot be withheld: the Real's report is true, and He has promised an answer where supplication occurs. The servant's complete knowledge and correct conception make the relevant supplication possible, so the promised conclusion—response—follows necessarily, like a conclusion in an argument. Qūnawī adds “inevitably” to underscore the necessity, unlike the middle and veiled people described before, who direct themselves toward a different conceived image; answering them remains possible rather than necessary.
 
-These other cases are mentioned to show the difference: if the person of complete knowledge could be left unanswered, he would be like the others, but divine wisdom does not permit this. Their supplication does not fall under the promise in the same way because they have not invoked God while apprehending Him under a correct conception. To understand this principle is to attain secrets concerning the necessity—or otherwise—of answers to petitions and willing, and an uncommon understanding of the complete and incomplete knower. These disclosures outrun independent thought and discursive understanding; guidance here comes through essential self-disclosures.
+These other cases are mentioned to show the difference: if the person of complete knowledge could be left unanswered, he would be like the others, but divine wisdom does not permit this. Their supplication does not fall under the promise in the same way because they have not invoked God while apprehending Him under a correct conception. To understand this principle is to attain secrets concerning the necessity—or otherwise—of answers to petitions and willing, and an uncommon understanding of the complete and incomplete knower. These secrets concern whether answering a petition or willing is necessary, or neither is necessary; the unfamiliar knowledge distinguishes the complete from the incomplete knower in a specific, universal account. Thoughts have not reached these matters of unveiling—nor even understandings born of taste. Fingers have not inscribed them with pens, since inscription follows thought and understanding. The ensuing phrase concerning ‘what they write’ is unclear in the supplied text. God alone guides to such secrets and sciences through His essential self-disclosures; understand this.
 
 **[Editorial] Text Twelve begins. Al-Mahāʾimī:** Qūnawī calls it a “noble text” because the previous text argued that those with the fullest knowledge receive the quickest answer. He now explains the perfection of knowledge, and also the perfection of the human being as a locus of manifestation of the Real, in the manner [continued on p. 145].
 
@@ -4588,11 +5048,13 @@ These other cases are mentioned to show the difference: if the person of complet
 
 At least two expressions in the middle paragraph appear syntactically defective in the online transcription. Translate provisionally pending printed collation.
 
-## Printed p. 145 · Text Twelve — highest degree of knowledge
+## MSH-P145 · Printed p. 145 · Text Twelve — highest degree of knowledge
 
-**MSH-P145** · [Arabic source](https://archive.org/details/machra3-khosous/page/n143/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n143/mode/1up
 
-### Arabic
+Speaker: Qūnawī quoted lemmata and al-Mahāʾimī explanatory commentary, marked in translation
+
+### Arabic · passage 1
 
 نحو ما يعلم نفسه بنفسه في نفسه ، وأنه يكون مرآة لما يريد الحق بالإرادة الأولى الكلية ، وما يترتب على ذلك مع بيان كيفيتها ، وهي أمور عظيمة ، فلهذا عبر عنه بأنه نص شريف .
 قال رضي اللّه عنه : [ اعلم أن أعلى درجات العلم بالشيء أي شيء كان وبالنسبة إلى أي عالم كان ، وسواء كان المعلوم شيئا واحدا أو أشياء ، إنما تحصل بالاتحاد بالمعلوم وعدم مغايرة العالم له ؛ لأن سبب الجهل بالشيء المانع من كمال إدراكه ، ليس غير غلبة حكم ما به يمتاز كل واحد منهما عن الآخر ، فإن ذلك بعد معنوي والبعد حيث كان مانع من كمال إدراك العبد البعيد وتفاوت درجات العلم بالشيء بمقدار تفاوت غلبة حكم ما به يتحد العالم بالمعلوم ، وأنه القرب الحقيقي الرافع للفصل الذي هو البعد الحقيقي المشار إليه بأحكام ما به المباينة والامتياز ] .
@@ -4601,7 +5063,7 @@ At least two expressions in the middle paragraph appear syntactically defective 
 وهذا في الأول والسابع ظاهر ، وأما في بقية الأقسام ؛ فلأن المعلوم لا بدّ وأن يحصل للعالم مثاله وينتقش في مرآة علمه صورة بحيث لا يتميز غير المرآة في رأي العين ، وهذا هو المراد بالاتحاد ، على أن كل شيء متحد بالكل من حيث الإطلاق ، وهو الغاية في التجرد كمال علمه ، إذ لا مغايرة في مقام الإطلاق .
 ثم استدل على ذلك بأن سبب الجهل إنما احتاج إلى السبب ؛ لأنه عارض بالنسبة إلى الوجود ؛ لأنه يستلزم صفة العلم على ما مر ، فلهذا فسره بالمانع من كمال الإدراك ، ولم يجعله مانعا من نفس الإدراك ؛ لأن كل شيء مدرك بوجه من الوجوه كالشيئية والوجودية ، وذلك من آثار الاتحاد في الإطلاق الأصلي ، وليس ذلك السبب غير غلبة
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī:** [The Perfect Human is a manifestation of the Real] in the way He knows Himself through Himself within Himself, and a mirror for what the Real intends by the first universal will, together with the consequences and manner of this mirroring. These are weighty matters, hence the description “a noble text.”
 
@@ -4609,7 +5071,7 @@ At least two expressions in the middle paragraph appear syntactically defective 
 
 **Al-Mahāʾimī:** The difference between this discussion and the third derivative proposition of the earlier texts is that the latter dealt with perfect encompassing of a thing and showed that such encompassing is impossible. The present discussion concerns the cause of knowledge and how it can attain the highest possible degree of apprehension.
 
-The highest degree of knowledge is considered whether its object is the Real or creation, and whether its knower belongs to the order of the Real or of creatures. The object may be one intrinsically, like a simple thing; one accidentally, like a composite; or plural as plural. Al-Mahāʾimī schematically divides the cases into eight: the Real knowing Himself alone, Himself with the world, one creature alone, or that creature with the rest of the world; and a creature knowing the Real alone, the Real with the world, itself alone, or itself with another creature. Each case is approached through the union of knower and known and the exclusion of otherness.
+The opening of the explanation connects this highest knowledge of God with His answering the person who turns toward Him in supplication. The highest degree of knowledge is considered whether its object is the Real or creation, and whether its knower belongs to the order of the Real or of creatures. The object may be one intrinsically, like a simple thing; one accidentally, like a composite; or plural as plural. Al-Mahāʾimī schematically divides the cases into eight: the Real knowing Himself alone, Himself with the world, one creature alone, or that creature with the rest of the world; and a creature knowing the Real alone, the Real with the world, itself alone, or itself with another creature. Each case is approached through the union of knower and known and the exclusion of otherness.
 
 In the first and seventh cases this is evident. In the others, the known must have a likeness present to the knower, with its image impressed in the mirror of knowledge so that, to vision, it is not distinguished from the mirror. **This** is what “union” signifies in the explanatory analogy. Moreover, each thing is united with all things in the consideration of unrestrictedness, where abstraction reaches its highest limit and otherness is absent.
 
@@ -4619,11 +5081,15 @@ He then explains why ignorance requires a cause: it is adventitious relative to 
 
 The transcription appears awkward in its enumeration of eight cases; the eightfold scheme follows the intended contrasts but its precise syntax needs collation. The mirror analogy is not evidence for the literal numerical identity of created knower and known.
 
-## Printed p. 146 · Text Eleven — perfect human, will and knowledge
+Related passage IDs: QNW-WIT249
 
-**MSH-P146** · [Arabic source](https://archive.org/details/machra3-khosous/page/n144/mode/1up)
+## MSH-P146 · Printed p. 146 · Text Twelve — true nearness and the perfection of knowledge
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n144/mode/1up
+
+Speaker: Qūnawī quoted lemmata and al-Mahāʾimī explanatory commentary, marked in translation
+
+### Arabic · passage 1
 
 حكم ما به يمتاز كل واحد من العالم والمعلوم عن الآخر . ولما أوهم هذا النوع مصادرة على المطلوب ، نية بأنه بعد معنوي ، فيوجب الجهل ؛ لأن البعد حيث كان أي : سواء كان في الأمور الحسية أو المعنوية مانع من كمال إدراك البعيد ؛ إذ لا يعرف معه جميع عوارضه من الكيفيات والمقادير .
 هذا في البعد الحسي ظاهر ، وأما في المعنوي ، فبطريق القياس المسمى بالتمثيل في الظاهر وبطريق التحقيق في الحقيقة ، أن البعد المعنوي موجب لعدم حصول أمثال المعلوم للعالم على الكمال ، كما أن البعد الحسي مانع من تمثيل المرئي في حاسة الرائي على الكمال ، وإذا علم أن البعد سبب الجهل ، فالقرب سبب العلم . ولما كانا أمرين إضافيين غير متحدين بل مختلفين اختلافا غير منضبط ، فلهما درجات تفاوت درجات العلم بالشيء والجهل به من حيث الإحاطة بمقدار تفاوت غلبة حكم ما به يتحد العالم بالمعلوم .
@@ -4631,13 +5097,13 @@ The transcription appears awkward in its enumeration of eight cases; the eightfo
 قال رضي اللّه عنه : [ وإذا شهدت هذا الأمر وذقته بكشف محقق علمت أن سبب كمال علم الحق بالأشياء إنما هو من أجل استجلائه إياها في نفسه ، واستهلاك كثرتها وغيريتها في وحدته ، فإن كينونية كل شيء في أي شيء كان ، سواء كان المحل صوريّا أو معنويّا ، إنما يكون ويظهر بحسب ما تعين وظهر فيه ، ولهذا نقول : الحق علم نفسه بنفسه ، وعلم الأشياء في نفسه بعين علمه بنفسه ] .
 أي : إذا شهدت بالبصيرة الباطنة المفيدة للوجدان الذي هو ذوق ، بكشف محقق الذي يجعله بديهيّا أن أعلى درجات العلم للشيء بالنسبة إلى كل عالم ، إنما هو بالاتحاد بالمعلوم .
 
-### English
+### English · passage 1
 
-**Al-Mahāʾimī:** [Ignorance arises from the dominance of] the factor by which knower and known are distinguished from one another. This could seem to assume what requires proof, so Qūnawī describes it as non-spatial distance, which impedes knowledge. Distance—whether sensible or intellectual—prevents a complete grasp of the remote object, since not all its accidental characteristics, qualities, and measures can then be known.
+**Al-Mahāʾimī:** [Ignorance arises from the dominance of] the factor by which knower and known are distinguished from one another. This could seem to assume what requires proof, so Qūnawī describes it as non-spatial distance, which impedes knowledge. Distance—whether sensory or non-sensory—prevents a complete grasp of the remote object, since not all its accidental characteristics, qualities, and measures can then be known.
 
 The point is apparent in sensory distance. In the non-sensory case, an analogy is used—called *tamthīl* as a procedure of exposition, though a direct insight according to realization: non-sensory distance prevents the likeness of the known from being fully present in the knower, just as physical distance impairs the complete presentation of what is seen to the faculty of sight. If distance produces ignorance, nearness produces knowledge. Distance and nearness are relational, however, and their degrees are neither simply identical nor precisely measurable. Consequently, degrees of comprehensive knowing and ignorance vary with the prevalence of that aspect through which knower and known are united.
 
-Qūnawī calls the ruling of the unifying factor “true nearness,” since nearness in space, time, or qualities is mediated, whereas this nearness has no intermediary. True nearness removes separation, difference, and otherness, which comprise true remoteness, whether sensory or intellectual. His initial statement could suggest that remoteness is exclusively non-sensory. The intention, however, was first to explain intellectual distance by analogy with sensible distance, then to establish the obstructive character of both. All rulings of otherness and distinctness are thus gathered under the description “true remoteness” because they possess the relevant character of distance.
+Qūnawī calls the ruling of the unifying factor “true nearness,” since nearness in space, time, or qualities is mediated, whereas this nearness has no intermediary. True nearness removes separation, difference, and otherness, which comprise true remoteness, whether sensory or non-sensory. His initial statement could suggest that remoteness is exclusively non-sensory. The intention, however, was first to explain non-sensory distance by analogy with sensory distance, then to establish the obstructive character of both. All rulings of otherness and distinctness are thus gathered under the description “true remoteness” because they possess the relevant character of distance.
 
 **Qūnawī:** “When you witness this and taste it through verified unveiling, you will know that the reason for the perfection of the Real's knowledge of things is that He beholds them in Himself and that their multiplicity and otherness are absorbed in His unity. The being of anything in anything—whether its locus be formal or nonformal—occurs and appears according to the determination and manifestation of that in which it occurs. Thus we say: the Real knows Himself through Himself, and He knows things within Himself by the very knowledge through which He knows Himself.”
 
@@ -4647,46 +5113,54 @@ Qūnawī calls the ruling of the unifying factor “true nearness,” since near
 
 The copy-text reads «نية» where a verb meaning “he indicated/clarified” appears intended; it is not emended. Distinguish the analogical proof from the author’s claimed epistemic verification through unveiling.
 
-## Printed p. 147 · Text Eleven — perfect human, will and knowledge
+Related passage IDs: QNW-WIT249
 
-**MSH-P147** · [Arabic source](https://archive.org/details/machra3-khosous/page/n145/mode/1up)
+## MSH-P147 · Printed p. 147 · Text Twelve — divine knowledge, unity and otherness
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n145/mode/1up
+
+Speaker: Qūnawī quoted lemmata and al-Mahāʾimī explanatory commentary, marked in translation
+
+### Arabic · passage 1
 
 قيد حصوله بالشهود المذكور ؛ لأن الدليل السابق إنما يدل على اعتبار القرب في الجملة ؛ لأن القرب الحقيقي ، إنما يوجد بالكشف والذوق ، وقيد الكشف بالمحقق ؛ لأن الصورة لا تدل على ذلك ، إذ لا صورة بهذا القرب حتى يكون لها مثال ، بل هذا القرب يكون وراء طور العقل علمت أن سبب كمال علم الحق بالأشياء مع أنها كثيرة ممكنة وعلمه واحد واجب ، إنما هو من أجل استجلائه إياه ، أي : إظهاره في نفسه بحسب تعيناته بحيث مرآتها ، والمرآة متحدة بالمرئي ، وإذا اتحدت بمرآته استهلاك كثرتها وغيريتها في وحدته الوجودية ، فصارت واحدة واجبة .
 ولهذا قيل : الوحدة تساوق الوجود ، وكل ممكن محفوف بوجوبين : سابق ولا حق ، وإنما استهلك كثرتها وغيريتها في وحدة الحق إذا أتت في علمه مع أن حقائقها على الكثرة ، والإمكان الموجب للغير ؛ لأن كون كل شيء في شيء بحسب محله لا بحسب نفسه ، سواء كان المحل معنويّا كالعلم أو صوريّا ، كالمرايا المتعارفة يكون تعينه وظهوره بحسب المحل الذي تعين فيه فظهر فيه . فالأشياء لما ظهرت في علم الحق ، كان ظهوره على الوحدة والوجوب .
 ولما ظهر الوجود في الحقائق ، كان ظهوره على الكثرة والإمكان ، وإنما كانت الأشياء على الوحدة والوجوب في علم الحق ؛ لكونه في غاية الوحدة حتى اتحد فيه المعلوم والعالم والعلم . ولهذا القول علم الحق نفسه بنفسه بعلم نفسه ، لا بمثال زائد ، ولا بمغايرة العالم للمعلوم ، وذلك كمال علمه بالأشياء باعتبار علمه بنفسه باستجلائه إياها فيه ، فافهم .
 قال رضي اللّه عنه : [ ولما ورد الإخبار الإلهي بأن اللّه تعالى : كان ولم يكن معه شيء انتفت غيرية الأشياء بالنسبة إلى الوحدة التي هي محلها العيني ، وثبتت أولية الحق من حيث الوحدة ] . استدلال على وجوب الأشياء ، وعدم غيريتها للحق باعتبار انتقاشها في العلم الأزلي بالإخبار النبوي الذي هو وجود إلهي لقوله تعالى : إِنْ هُوَ إِلَّا وَحْيٌ يُوحى [ النجم : 4 ] ، لكنه وحى خفي ب : إن اللّه كان ولم يكن معه شيء مع أن حقائق الأشياء كانت في علمه بالإجماع ، فلا بد من تأويله بأنه ، لم يكن معه شيء يغايره ، فانتفت غيرية
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī:** Qūnawī makes the attainment of this knowledge depend on the witnessing he has just described. The preceding argument only establishes, generally, the importance of nearness; true nearness itself is realized through unveiling and tasting. He therefore qualifies the unveiling as verified, since a mental image cannot attest this reality: this nearness has no corresponding form that could represent it and lies beyond the sphere of discursive reason. One then understands how the Real's knowledge is complete even though its objects are many and possible while His knowledge is one and necessary. The explanation is His *istijlāʾ* of things: their appearing within Himself according to their determinations, as in a mirror. The mirror and the reflected object are united under the relevant consideration, and multiplicity and otherness are absorbed into His existential unity, where they are considered one and necessary.
 
-Hence it is said that unity is coextensive with being, and that every possible thing is surrounded by two necessities, antecedent and subsequent. The multiplicity and otherness of the objects are absorbed in the Real's unity **as they occur within divine knowledge**, even though their distinct realities retain plurality and possibility, which involves dependence on another. The way a thing exists in a locus is determined by that locus, not simply by the thing considered in itself. Whether the locus is nonformal, as knowledge is, or formal, as with an ordinary mirror, determination and manifestation follow the character of the receiving locus. Things, accordingly, appear under unity and necessity within the Real's knowledge.
+Hence it is said that unity is coextensive with being, and that every possible thing is surrounded by two necessities, antecedent and subsequent. The multiplicity and otherness of the objects are absorbed in the Real's unity **as they occur within divine knowledge**, even though their distinct realities retain plurality and possibility, which entails otherness. The way a thing exists in a locus is determined by that locus, not simply by the thing considered in itself. Whether the locus is nonformal, as knowledge is, or formal, as with an ordinary mirror, determination and manifestation follow the character of the receiving locus. Things, accordingly, appear under unity and necessity within the Real's knowledge.
 
 When being appears in the distinct realities, by contrast, it appears under the rulings of plurality and possibility. The things are one and necessary in divine knowledge because there the unity is such that knower, known, and knowledge are united. The Real therefore knows Himself through Himself, without an additional representation or a separation of knower and known. His knowledge of things is perfect insofar as it consists in His knowledge of Himself and in His beholding them within Himself.
 
 **Qūnawī:** “When the divine report came that God was, and nothing was with Him, the otherness of things was denied in relation to the unity that is their intrinsic locus, and the Real's priority was established from the standpoint of unity.”
 
-**Al-Mahāʾimī:** He adduces the prophetic report—understood as revelatory communication—to explain both the necessary aspect of things and the absence of their otherness to the Real **as inscribed in eternal knowledge**. Since their realities are nevertheless in His knowledge, the report “God was and nothing was with Him” must be understood as saying that nothing was with Him as an independently other existent. Thus the otherness of [things is denied under the relevant consideration; the argument continues on p. 148].
+**Al-Mahāʾimī:** He adduces the prophetic report, understood as divine communication, to argue for the necessity of things and their lack of otherness to the Real **in respect of their inscription in eternal knowledge**. He invokes ‘It is only a revelation revealed’ (Q 53:4), while identifying this report as hidden revelation. Since, by consensus as he states, the realities of things were in His knowledge, ‘God was and nothing was with Him’ must be interpreted to mean that nothing was with Him that differed from Him. Thus the otherness of [things is denied under the relevant consideration; the argument continues on p. 148].
 
 ### Editorial note
 
 The transmitted report “God was and there was nothing with Him” requires a separate ḥadīth-critical dossier; translation alone does not establish its variants or authenticity. Crucially distinguish the modality “within divine knowledge” from manifested plurality.
 
-## Printed p. 148 · Text Eleven — perfect human, will and knowledge
+Related passage IDs: QNW-WIT249
 
-**MSH-P148** · [Arabic source](https://archive.org/details/machra3-khosous/page/n146/mode/1up)
+## MSH-P148 · Printed p. 148 · Text Twelve — first determination and the two modes of manifestation
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n146/mode/1up
+
+Speaker: Qūnawī quoted lemmata and al-Mahāʾimī explanatory commentary, marked in translation
+
+### Arabic · passage 1
 
 الأشياء بالنسبة إلى الوحدة التي هي ، أو هو محل لكون الأشياء بالنسبة إلى الوحدة التي هي أو هو محل ؛ لكون الأشياء عين الحق والنسبة العلمية متعلقة به . ومن هنا ثبتت أولية الحق للأشياء ، بمعنى أنها كانت حقّا أولا ، وأن الحق أولها من حيث الوحدة التي للأشياء ، وإلا فمن حيث كثرة حقائقها لم تكن حقّا ، ولا الحق أولها ، وهي كثيرة مع وحدته ، لما يذكر بعد من أن الواحد لا يصدر عنه إلا الواحد ، لكن الأشياء من حيث الوجود العام واحد ، فالحق أولها ، فافهم .
 قال رضي اللّه عنه : [ وبامتياز كثرة الأشياء المتعلقة ثانيا الكامنة من قبل في ضمن الوحدة والجمع بينهما وبين الوحدة بالفعل ، ظهر الكمال المستجن في الوحدة أولا ، فانفتح بذلك باب كمال الجلاء والاستجلاء الذي هو المطلوب الحقيقي ، وظهرت أحكام الوحدة في الكثرة ، والكثرة في الوحدة ] .
 بيان كمال علمه تعالى التفصيلي بالأشياء الكثيرة ، أي لما كانت الأشياء كامنة في ضمن الوحدة المذكورة التي هي التعين الأول ، ولها كثرة اعتبارية من حيث تعلق العلم الذاتي بها ، صارت متعلقة ثانيا من حيث الكثرة ، والتعقل بهذه الحيثية يقتضي امتياز تلك الأشياء بعضها من بعض ، فاجتمع هذا الامتياز مع الوحدة الحقيقية في العلم الذاتي بالفعل ، فبهذا الجمع ظهر الكمال الذي كان للوجود مستجنّا في الوحدة ، وهو الكمال الأسمائي ، ولا يظهر إلا في المظاهر ، فانفتح بذلك الجمع باب كمال الجلاء ، وهو ظهور الذات المقدسة لذاته في ذاته ، وكمال الاستجلاء ظهورها لذاته في تعيناته ، أي اجتمع له الظهوران معا ، والجمع بين الظهورين مطلوب حقيقي للذات ؛ إذ قال : « كنت كنزا مخفيّا فأحببت أن أعرف » ، وظهرت عند ذلك أحكام من الصفات الوجوبية في الكثرة ، أو صارت بالفعل ، فاتصفت بالوجود بالفعل لا يكون بلا وجوبين ، سابق ولا حق على ما تقرر في الحكمة وظهرت أحكام الكثرة من الصفات الإمكانية في الوحدة ؛ لأنها لما تعلقت بالكثرة ، فظهرت في مراياها انصبغت بصبغتها ، فاتصفت الوحدة بصفاتها ، فيما يلوح للناظرين ، وهي في الواقع صفات الكثرة ، وكانت أيضا في الوحدة من حيث اشتمالها على الكثرة .
 
-### English
+### English · passage 1
 
-**Al-Mahāʾimī:** [Continuing the preceding explanation:] The otherness of things is denied in relation to the unity serving as their locus, for they are considered identical with the Real **under the relation of knowledge**. Here the Real's priority to things is established: they are first considered in the Real, and He is their first principle, insofar as their unity is in view. Considered in respect of their many distinct realities, however, they are not simply the Real, nor is the Real “first” in that same sense. Their plurality coexists with His unity; the ensuing discussion will invoke the principle that only one proceeds from what is one. Things are nevertheless one insofar as universal being is in view, and it is in that respect that the Real is their first principle.
+**Al-Mahāʾimī:** [Continuing the preceding explanation:] The otherness of things is denied in relation to the unity serving as their locus, for they are considered identical with the Real **under the relation of knowledge**. Here the Real's priority to things is established: they were the Real initially, and the Real is their first principle, from the standpoint of the unity belonging to things. Considered in respect of their many distinct realities, however, they are not simply the Real, nor is the Real “first” in that same sense. Their plurality coexists with His unity; the ensuing discussion will invoke the principle that only one proceeds from what is one. Things are nevertheless one insofar as universal being is in view, and it is in that respect that the Real is their first principle.
 
 **Qūnawī:** “When the multitude of things related [to knowledge] in a secondary way—which had previously been concealed within unity—became distinguished, and the multitude together with unity was actually gathered, the perfection initially hidden in unity became manifest. Thus the door opened to the perfection of *jalāʾ* and *istijlāʾ*, the true object of aspiration, and the rulings of unity appeared in multiplicity and those of multiplicity in unity.”
 
@@ -4698,34 +5172,46 @@ This joining is described as the true object of the Essence's willing, for the t
 
 The opening line is syntactically corrupt or duplicated in the online transcription; first paragraph is provisional. The phrase “hidden treasure” is cited, not certified as a sound ḥadīth. Keep first determination, conceptual distinction, and manifested plurality separate.
 
-## Printed p. 149 · Text Twelve — unity and plurality in knowledge
+Stage 13 review: The phrase ‘they were the Real initially’ renders «أنها كانت حقّا أولا» under the expressly stated consideration of unity. It should not be silently weakened to ‘considered in the Real’ or read as a temporal transition from God into creatures. The corrupted opening syntax remains unresolved.
 
-**MSH-P149** · [Arabic source](https://archive.org/details/machra3-khosous/page/n147/mode/1up)
+Related passage IDs: QNW-WIT249
 
-### Arabic
+## MSH-P149 · Printed p. 149 · Text Twelve — unity and plurality in knowledge
+
+Source: https://archive.org/details/machra3-khosous/page/n147/mode/1up
+
+Speaker: Qūnawī quoted lemmata and al-Mahāʾimī explanatory commentary, marked in translation
+
+### Arabic · passage 1
 
 قال رضي اللّه عنه : [ فوحدت الوحدة الكثرة ؛ لكونها صارت قدرا مشتركا بين المتكثرات المتميزة بالذات بعضها عن بعض ، فوصلت فصولها ؛ لأنها جمعت بذاتها كما ذكرنا ، وعددت المتكثرات الواحد من حيث التعينات التي هي سبب تنوعات ظهور الواحد بالصبغ والإصباغ ، والكيفيات المختلفة التي اقتضتها اختلافات استعدادات المتكثرات القابلة للتجلي الواحد فيها ] . أي : لما ظهرت أحكام الوحدة في الكثرة ، جعلت الوحدة الكثرة أيضا واحدة ، لشمول الوحدة جميع أفرادها شمول الكلي على جزئياته .
 ففي كلّ شيء له آية * تدلّ على أنّه واحد
 وذلك لكون الوحدة صارت عند اتصاف أفراد الكثرة بها قدرا مشتركا بين المتكثرات التي هي أفراد الكثرة ، فلا تتميز من حيث الوحدة ، بل إنما يتميز بعضها عن بعض بذواتها وماهياتها ويتميز ذواتها أيضا ، وتميز ذواتها ليست بمجرد أنها ذوات ، لجواز تشاركها ، بل بفصول مميز لها عرضت لأجناسها ، وهي وجودية لتقويمها الأجناس ، فهي من حيث الحقيقة عين الوحدة التي هي الوجود ، فوصلت الوحدة فصول الكثرة ؛ لأن الوحدة جامعة بذاتها ذوات الكثرة ؛ لأنها شؤون الوحدة ، كما ذكرنا .
 فالعلم بالكثرة الفعلية كمال من حيث تعلق أحكام الوحدة بها ، وأما من جهة الكثرة نفسها فلا ؛ لأنه لما ظهرت أحكام الكثرة في الوحدة ، جعلت المتكثرات الوحدة الظاهرة فيها متعددة بحسب تعينات عرضت للوحدة بالنسبة إلى ظهورها في الكثرة ، فصارت التعينات سبب تنوعات ظهور الواحد بحسب الظاهر بصبغ للمظهر الظاهر بلون أحكام الإمكان ، وانصباغ الظاهر يظهر بلون أحكام الوجوب ، فحصلت كيفيات مختلفة بحسب اختلاف استعدادات في ماهيات المتكثرات التي كلها قابلة للتجلي الواحد الذاتي ، فتكثر الواحد بحسب هذه الاختلافات منصبغا بصبغها تكثر صور الوجه الواحد في المرايا المختلفة ، وانصباغ الزجاجات المختلفة الألوان بنور الشمس ، وانصباغ نوره المنعكس في ذاتها بألوانها ، فيعلم هذه الصور من حيث أنها متحدة بصورة في الحقيقة ، مخالفة لها بهيئات بحسب استعدادات المظاهر ، فهاهنا يتجدد نسبة لعلمه إلى تلك الهيئات لا تجددا زمنيّا ، بل بحسب الرتبة من حيث أن هذه الصور تابعة لصورته الأصلية المعلومة
 
-### English
+### English · passage 1
 
 **Qūnawī:** “Unity makes multiplicity one, because unity becomes a common measure among the many things which are distinguished intrinsically from one another. It thus joins their differentiating features, since it gathers them in itself, as we have said. The many, in turn, make the One appear as many under the determinations responsible for the differentiated appearances of the One: the colouring and being-coloured and the varied qualities required by the differing receptivities of the many things capable of receiving that one self-disclosure.”
 
-**Al-Mahāʾimī:** When the rulings of unity appear in multiplicity, unity makes that multiplicity one by extending to each of its members, in a way compared with a universal extending to its particulars. Hence the saying: “In everything there is a sign / indicating that He is One.” Unity becomes the shared element in the many insofar as they are qualified by it; **under the consideration of unity** they are not distinguished. Their distinction arises instead from their individual realities and quiddities. These are themselves distinct not simply because they are realities—since realities can resemble one another—but through specific differentiating characteristics attached to their genera. These differentiations are existential inasmuch as they constitute the relevant natures; under the standpoint of reality they are related to unity, which is being. Unity joins the differentiations of multiplicity because it gathers the many realities in itself, those realities being its *shuʾūn* (affairs or modalities), as already explained.
+**Al-Mahāʾimī:** When the rulings of unity appear in multiplicity, unity makes that multiplicity one by extending to each of its members, in a way compared with a universal extending to its particulars. Hence the saying: “In everything there is a sign / indicating that He is One.” Unity becomes the shared element in the many insofar as they are qualified by it; **under the consideration of unity** they are not distinguished. Their distinction arises instead from their individual realities and quiddities. These are themselves distinct not simply because they are realities—since realities can resemble one another—but through specific differentiating characteristics attached to their genera. These differentiae are existential because they constitute the genera; in respect of reality they are identical with unity, which is being. Unity joins the differentiations of multiplicity because it gathers the many realities in itself, those realities being its *shuʾūn* (affairs or modalities), as already explained.
 
-Knowledge of actual multiplicity is a perfection insofar as the rulings of unity relate to it, but multiplicity as such is not that perfection. Conversely, when the rulings of plurality appear in unity, the manifold realities cause the unity manifested in them to appear multiple in accordance with the determinations that accompany its manifestation. These determinations produce diverse appearances of the One: the locus is coloured by the rulings of possibility, and what appears is displayed under the aspect of necessity. Differences in receptivity belonging to the quiddities of the many things produce different qualities, though all receive a single essential disclosure. The One therefore appears multiple according to these differences, as one face has multiple appearances in different mirrors or as sunlight is modified by coloured glass and the reflected light bears the glass's colour. The resulting appearances are one with their source-image under one consideration and diverse in their configurations according to the readiness of the loci. Accordingly, an additional relation of knowledge to these configurations is posited—not as a **temporal renewal**, but as an **order of rank**, since the appearances are dependent on the original known image [the sentence continues on p. 150].
+Knowledge of actual multiplicity is a perfection insofar as the rulings of unity relate to it, but multiplicity as such is not that perfection. Conversely, when the rulings of plurality appear in unity, the manifold realities cause the unity manifested in them to appear multiple in accordance with the determinations that accompany its manifestation. These determinations produce diverse appearances of the One: the locus colours what manifests with the colour of the rulings of possibility. The text also speaks of being coloured by the rulings of necessity, but the syntax of this reciprocal clause is defective in the supplied Arabic. Differences in receptivity belonging to the quiddities of the many things produce different qualities, though all receive a single essential disclosure. The One therefore appears multiple according to these differences, as one face has multiple appearances in different mirrors or as sunlight is modified by coloured glass and the reflected light bears the glass's colour. The resulting appearances are one with their source-image under one consideration and diverse in their configurations according to the readiness of the loci. Accordingly, an additional relation of knowledge to these configurations is posited—not as a **temporal renewal**, but as an **order of rank**, since the appearances are dependent on the original known image [the sentence continues on p. 150].
 
 ### Editorial note
 
 The exact predicational force of “a common measure” must not be transferred uncritically into a theory of generic being or a literally shared genus. The page explicitly excludes temporal renewal.
 
-## Printed p. 150 · Varieties of disclosure and the timelessness of divine knowledge
+Stage 13 review: In «بصبغ للمظهر الظاهر بلون أحكام الإمكان» the locus is read as colouring what manifests with the rulings of possibility. The subsequent «وانصباغ الظاهر يظهر بلون أحكام الوجوب» is defective as supplied; its exact reciprocal formulation requires source checking. No Arabic emendation is adopted. The differentiae are expressly said to be «عين الوحدة» in respect of reality, not merely related to it.
 
-**MSH-P150** · [Arabic source](https://archive.org/details/machra3-khosous/page/n148/mode/1up)
+Related passage IDs: QNW-WIT250
 
-### Arabic
+## MSH-P150 · Printed p. 150 · Varieties of disclosure and the timelessness of divine knowledge
+
+Source: https://archive.org/details/machra3-khosous/page/n148/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 بالذات . 
 
@@ -4738,7 +5224,7 @@ The exact predicational force of “a common measure” must not be transferred 
 
 قال المصنف في العظيم رضي اللّه عنه : [ فالعلم والنعيم والسعادة على اختلاف ضروب الجميع ، إنما هو بحسب المناسبة والجهل والعذاب والشقاء بحسب قوة أحكام المباينة والامتياز ، وأما امتزاج أحكام ما به الاتحاد وأحكام ما به الامتياز ، فأبدى السلطنة ومحتد كل جملة من تلك الأحكام بضروب ما من المناسبة ، ومرجعها من حيث الإضافة ،
 
-### English
+### English · passage 1
 
 **[Continuation of al-Mahāʾimī from p. 149]**: These reflected forms are subordinate, in their order, to the original form that is known in itself.
 
@@ -4752,11 +5238,15 @@ All these are diverse knowledges and are said to be renewed only in the sense th
 
 **Qūnawī:** Knowledge, delight and felicity, in all their different varieties, follow correspondence or affinity (*munāsaba*); ignorance, torment and wretchedness follow the strength of the rulings of separation and distinction. As for the intermingling of the rulings of union and those of distinction, its sway is perpetual. The source of each group of these rulings, through some kind of correspondence, and that to which it returns in respect of relation ... [continued on p. 151].
 
-## Printed p. 151 · Correspondence, alienation, and spiritual felicity
+Related passage IDs: QNW-WIT250
 
-**MSH-P151** · [Arabic source](https://archive.org/details/machra3-khosous/page/n149/mode/1up)
+## MSH-P151 · Printed p. 151 · Correspondence, alienation, and spiritual felicity
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n149/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 ومستندها هو المسمى بمرتبة ، فافهم ] . 
 
@@ -4769,7 +5259,7 @@ All these are diverse knowledges and are said to be renewed only in the sense th
 ويمكن أن يقال : الجهل والعذاب والشقاء بحسب قوة أحكام المباينة والامتياز لا غير ، فإنها إذا لم تقو فلا أثر لها في مقابلة المناسبة الأصلية ، ثم نفي ما يتوهم من الاتحاد أنه لا يكون معه من أحكام ما به المباينة والامتياز ، أصل فعال ، بل الأمران دائمان بعد الظهور ، فهو من حيث الوجوب حق واجب واحد في الكل دائما ومن حيث التعينات والصفات الممكنة خلق دائما . 
 ثم ذكر أن محتد ، أي : أصل كل جملة من أحكام ما به الاتحاد ، وأحكام ما به المباينة والامتياز ، بضرب ما من المناسبة مع الوحدة الحقيقية هو المسمى بالمرتبة ، فلذلك علمها الحق سبحانه وتعالى علما كاملا ، فأثرت تلك المناسبة من جهته عزّ وجلّ فيهم ؛ لأنها أصلية ولم
 
-### English
+### English · passage 1
 
 **Qūnawī (continuing):** ...and its support is what is called a rank (*martaba*). Understand.
 
@@ -4783,11 +5273,13 @@ Nor should one imagine that union abolishes all distinction. Both determinations
 
 Therefore the Real, glorified and exalted, knows these things with complete knowledge. That correspondence has an effect upon them from His side because it is original in Him, whereas ... [continued on p. 152].
 
-## Printed p. 152 · Asymmetry of divine and creaturely knowledge; decree and measure
+## MSH-P152 · Printed p. 152 · Asymmetry of divine and creaturely knowledge; decree and measure
 
-**MSH-P152** · [Arabic source](https://archive.org/details/machra3-khosous/page/n150/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n150/mode/1up
 
-### Arabic
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 تؤثر مناسبتهم في تحصيل ذلك العلم لهم ؛ لأنها فرعية فيهم ، فضعفت ؛ وذلك لأن المناسبة وإن كانت أمرا مشتركا ، لكنها في كل شيء بحسب مرتبته ، فلذلك كان مرجعهم من حيث الإضافة ، أي مناسبة الحق للخلق أو مناسبة الخلق للحق هو المسمى بالمرتبة ، فأثرها في رتبة الحق الذي وحدته أصلية أعلى من أثرها في مرتبة الخلق الذي وحدته عارضة باعتبار الوجود . 
 ولولا اعتبار هذا التفاوت ، لتساوى العلمان بوجود المناسبة المشتركة بين العالمين الحق والخلق ، فافهم . 
@@ -4798,7 +5290,7 @@ Therefore the Real, glorified and exalted, knows these things with complete know
 
 ثم ظهور وجود الواحد الحق من حيث أسماؤه على تلك المعلومات بموجب تلك التعديدات تأثيرا في المراتب العالية من العقول والنفوس ، وتأثيرا ثانيا فيما دونها من
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** ...their correspondence does not produce that knowledge in them, because in them it is derivative and therefore weak. Affinity may be common to two terms, but its power differs according to the rank of each. What the relationship between God and creation, or creation and God, ultimately refers to is precisely this rank. Its operation at the level of God, whose unity is original, is incomparably greater than at the level of creatures, whose unity is derivative through existence. Without this distinction, the two knowledges would be equal merely because both parties share a correspondence. Understand.
 
@@ -4810,11 +5302,15 @@ As for the measured determinations, their meaning is that each object of knowled
 
 Finally, the existence of the One Real appears, according to His names and the differences among those objects of knowledge, first with efficacy in the higher ranks of the intellects and souls, and again in the levels beneath them.
 
-## Printed p. 153 · The dispositions of the fixed entities and the meaning of qadar
+Related passage IDs: QNW-WIT250
 
-**MSH-P153** · [Arabic source](https://archive.org/details/machra3-khosous/page/n151/mode/1up)
+## MSH-P153 · Printed p. 153 · The dispositions of the fixed entities and the meaning of qadar
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n151/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 الأجسام والجسمانيات ، إنما يكون في تلك المعدودات بإعادة آثارها التي هي عليها حال ثبوت أعيانها ، فكمل العلم الأزلي بها أيضا من حيث أنها لا تغاير ما في محل القدر ، مع أنها متحدة بالوجود الواحد من وجه ، وإن اعتبر معها تلك الآثار ، فإنها عين تلك المعلومات أيضا ، إذ هي معادة لا مستقلة من كل وجه . 
 
@@ -4827,7 +5323,7 @@ Finally, the existence of the One Real appears, according to His names and the d
 
 أي : اعلم أن أعلى درجات علم العلماء من الإنس والملائكة بالشيء ، أي شيء كان من البديهيات أو النظريات ما عدا الحق ، فإن حصول أعلى درجات العلم به على نحو ما يعلمه ، من المحالات على ما مر ويأتي أيضا ، هو أن تعلم أنت ذلك الشيء بعلم منحك رؤيتك عين ذاك الشيء ، وحقيقته في علم الحق عند اتصالك به بكشف الحجب بينه وبين
 
-### English
+### English · passage 1
 
 [Editorial heading: The dispositions of the fixed entities and the meaning of qadar]
 
@@ -4843,11 +5339,15 @@ Qūnawī's injunction to 'know this' means that it is an unusual knowledge not f
 
 **Al-Mahāʾimī (page breaks at this point):** The highest degree of knowledge available to created knowers, whether human beings or angels, concerns a thing other than the Real, whether immediately evident or reached by reasoning. To know the Real as He knows Himself is impossible, as was explained and will be explained again. One knows the thing in this highest degree when the very thing and its reality are shown within divine knowledge, through the removal of the veils between it and ... [continued on p. 154].
 
-## Printed p. 154 · Knowing a thing by seeing it in divine knowledge
+Related passage IDs: QNW-WIT250
 
-**MSH-P154** · [Arabic source](https://archive.org/details/machra3-khosous/page/n152/mode/1up)
+## MSH-P154 · Printed p. 154 · Knowing a thing by seeing it in divine knowledge
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n152/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 قلبك تماما بجميع استعداداته من غير ذهول بالفناء ؛ بخلاف تصوره بالتعريفات النظرية ، إذ لا يخلو غالبا عن الأوهام والخيالات الفاسدة قبل التصفية الكاملة ؛ ولهذا ترى أكثر النظار يختلفون في التعريفات بعد بذلهم جهدهم فيها . 
 
@@ -4861,7 +5361,7 @@ Qūnawī's injunction to 'know this' means that it is an unusual knowledge not f
 أي : والآية الأخرى الدالة على حصول هذا العلم بالشيء برؤيته إياه في علم الحق تماما ، وعلى صحة ذلك العلم أي يصلح لإنيّته ولميته بخلاف ما سبق ، فإنه يدل على الآنيّة لا غير . 
 وإنما قال : يستدل بها ؛ ليشعر أنها دليل تشبه الأدلة النظرية ، لما نذكر من وجه الاستدلال بها ، هي أن ينسحب حكم علمه ، أي يحيط أثره على الشيء بجملة أجزائه وعوارضه ، وسائر جهاته حتى يتجاوزه إلى ما فوقه من الذاتيات والعوارض ، وهكذا ذاتيات وعوارض فوق هذه الذاتيات والعوارض التي لما فوقه ، وهلم . . . حتى ينتهي إلى حيث يرى آخر ذلك الشيء ، أي آخر متصورات التصور عند الإحاطة بتصورات الشيء
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing from p. 153):** ...your heart, with all of its receptive powers, so that the thing is disclosed fully, without its being lost to awareness by reason of annihilation (*fanāʾ*). This differs from grasping a thing through discursive definitions, which, before complete purification, are usually accompanied by mistaken imagination and corrupt fancies. That is why one sees even accomplished rational investigators disagreeing about definitions despite their exertions.
 
@@ -4873,11 +5373,13 @@ An attempt to increase one's knowledge after claiming already to possess complet
 
 **Al-Mahāʾimī:** The second sign confirms both the acquisition of knowledge through wholly seeing the thing in God's knowledge and its validity. Unlike the first sign, which merely shows that the thing is known, this also permits knowledge of why it is so. Qūnawī says it is a sign *from which one draws an inference*: there is an evidential path here analogous to rational demonstration. It is that knowledge extends to all the thing's parts, accidental features and different respects; then it passes beyond it to what is above it, through its essential constituents and accidents; and in turn to what is above those, repeatedly, until the utmost horizon of the thing comes into sight ... [the argument continues on p. 155].
 
-## Printed p. 155 · The horizon of the known and the inexhaustibility of divine manifestation
+## MSH-P155 · Printed p. 155 · The horizon of the known and the inexhaustibility of divine manifestation
 
-**MSH-P155** · [Arabic source](https://archive.org/details/machra3-khosous/page/n153/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n153/mode/1up
 
-### Arabic
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 وتصور ما فوقه ، وهكذا متصلا بإطلاق الحق الذي ليس وراءه شيء ، فيكون عالما به علما تاما ، وذلك لا يكون إلا برؤيته في علم الحق ، إذ هو من جملة الوسائط شامل على الغاية والبداية وما بينها بما لا يتناهى . 
 
@@ -4892,7 +5394,7 @@ An attempt to increase one's knowledge after claiming already to possess complet
 قال قدس الله سره : [ فكلما لا تنتهي أحوال الإنسان إلى غاية تقف عندها ، فكذلك لا تتناهى تعينات الحق ، وتنوعات ظهوراته للإنسان بحسب أحواله التي هي تعينات مطلق ذات الحق ، وتنوعات ظهوراته] . 
 وقد سبق التنبيه في غير هذا الموضع على أن الأسماء أسماء الأحوال ، وعلى أن الأعيان تتقلب عليها الأحوال .
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continued):** ...and the conceptions of everything above it, until its furthest conceivable boundary is seen as connected with the Real's absoluteness, beyond which there is nothing. Only then is the thing known with complete knowledge. This requires seeing the thing within God's knowledge, which comprehends the beginning, the end and every intermediate connection, without limit.
 
@@ -4908,11 +5410,15 @@ Qūnawī next argues that divine determinations are inexhaustible: some of them 
 
 **Qūnawī (continuing):** It has already been pointed out elsewhere that the names are names of states and that states alternate over the entities ... [continued on p. 156].
 
-## Printed p. 156 · States, names and the impossibility of encompassing the Real
+Related passage IDs: QNW-WIT251
 
-**MSH-P156** · [Arabic source](https://archive.org/details/machra3-khosous/page/n154/mode/1up)
+## MSH-P156 · Printed p. 156 · States, names and the impossibility of encompassing the Real
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n154/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 بخلاف الحق ، فإنه يتقلب في الأحوال ، كما أخبر سبحانه عن ذلك بقوله : كُلَّ يَوْمٍ هُوَ فِي شَأْنٍ [ الرحمن : 29 ] ، فافهم ، ولا تتأول بل اجتهد أن تعاين أولا فآمن وأسلم تسلم ، واللّه الموفق والملهم . 
 أي : وكما لا تنتهي أحوال الإنسان إلى غاية لا يكون وراءها له حالة ؛ لأنه بدأ يتغير عليها الأحوال كل حين ، كما هو شأن المشاهد ، وهو تعينات الذات المطلق ، ومتنوعات ظهوراته لا تنتهي تعينات الحق وتنوعات ظهوراته للإنسان بحسب تلك الأحوال . والفرق بين التعينات وتنوعات الظهور ، 
@@ -4924,7 +5430,7 @@ Qūnawī next argues that divine determinations are inexhaustible: some of them 
 النص الرابع عشر
 قال رضي اللّه عنه : [ نص جليل ] ، لما ذكر في النص السابق اتحاد الحق بالكل حتى كمل علمه به مع عدم اتحاد الكل به ، حتى عجزوا عن معرفته باعتبار العينات فضلا عن الإطلاق سبب هذه الجلالة الساترة للاتحاد ، ولذلك سمي النص جليلا ، وهو أن الاتحاد في
 
-### English
+### English · passage 1
 
 **[Continuation of the discussion of Text Thirteen]**
 
@@ -4936,11 +5442,15 @@ The Qurʾānic statement that He is engaged in an affair each day (55:29) has el
 
 **[Opening of Text Fourteen, on the same printed page.] Al-Mahāʾimī:** Qūnawī designates the following text an exalted text. The preceding discussion established that the Real is united with all things, and therefore knows them perfectly, whereas creatures cannot be united with Him in the same fashion and so cannot know Him through all His determinations, much less in absolute freedom from determination. The present text explains the cause of this majestic greatness that veils the union, which is why it is called an exalted text. Its explanation begins with the fact that union, in ... [continued on p. 157].
 
-## Printed p. 157 · Every absolute has a face toward restriction
+Related passage IDs: QNW-WIT251
 
-**MSH-P157** · [Arabic source](https://archive.org/details/machra3-khosous/page/n155/mode/1up)
+## MSH-P157 · Printed p. 157 · Every absolute has a face toward restriction
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n155/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 الإطلاق لما غلب ، لم يظهر فيه الكثير ، وإن كان له وجه النهاية اتحد بها والتقييد ، وإن كان له وجه إلى الإطلاق ، لكنه لم يغلب فيه ، فلم يظهر فيه بل ظهرت الكثرة لكونها فعلية فيه ، لكن بقدر ما ظهرت الوحدة فيه ، يعرف الإطلاق لا كما يعرفه المطلق
  . 
@@ -4952,7 +5462,7 @@ The Qurʾānic statement that He is engaged in an affair each day (55:29) has el
 وإنما قال ؛ لأن المطلق يمتنع الحكم عليه ما لم يعرف له وصف ، فإذا عرف حكم به عليه سيما إذا انحصر فيه له وجه إلى الإطلاق ، وإن كان منحصرا في القيد ؛ لأن القيد وصف موضعه المطلق ، ويجوز أن يعرف ذلكم الوصف ، فيرجع إلى الأصل . 
 ولا يجوز رفع ذلك الموصوف ، لامتناع قيام الوصف بدونه ، فالموجود من كل مقيد هو الوجود المطلق الحق الواجب بذاته ، فالموصوف يتقيد بصفات المظاهر ، ولكن لا يعرف ذلك إلا من عرف الأشياء معرفة تامة ، إنها ماهيات معدومة انضمت إلى الوجود فاتصف بمراياها ، فصارت أوصافه قيودا ، والماهيات العدمية ليست صفة له ، وإلا اتصف الموجود بالمعدوم الذي هو ضده ، ولا موصوفه وإلا اتصف الموجود بالمعدوم ، بل الموصوف هو الوجود المطلق ، والصفات هي القيود اللاحقة به عند إضافته إلى الماهيات ،
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** ...absoluteness, predominates, so multiplicity does not appear there, although it has an aspect toward finitude with which it is united. Restriction also has an aspect toward absoluteness, but this does not predominate in it and therefore does not appear there; multiplicity appears instead because it is actual there. To the extent that unity appears within restriction, absoluteness is known, though not as the Absolute knows it.
 
@@ -4964,11 +5474,15 @@ Equally, anything judged to be restricted has an aspect toward absoluteness. One
 
 Such a point can be understood only by someone who has fully known that things, considered as quiddities, do not themselves possess existence, but are encountered with existence so that it appears through the mirrors they afford and their descriptions become the qualifications of its manifestation. Nonexistent quiddities are not independently attributes of existence, for this would make what exists bear as an intrinsic attribute its contrary, nonexistence; neither are such quiddities the independently existing bearers of existence. Rather, absolute existence is the bearer, and its apparent qualifications arise through its relation to these quiddities.
 
-## Printed p. 158 · Quiddity and existence; opening of Text Fifteen
+Related passage IDs: QNW-WIT251
 
-**MSH-P158** · [Arabic source](https://archive.org/details/machra3-khosous/page/n156/mode/1up)
+## MSH-P158 · Printed p. 158 · Quiddity and existence; opening of Text Fifteen
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n156/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 أي : الظاهرة عند ذلك بعد ما كانت مندمجة في الذات المطلقة ، وإنما لا يعرف ذلك إلا بمعرفة أن الحق هو الوجود المطلق ، ولا يعرف ذلك إلا بمعرفة أنه موجود بالذات ، واجب غير قابل الاتصاف بالعدم والانقلاب إليه ، ولا من الأمور العقلية التي لا تحقق لها في الخارج بل الكل متحقق به ، وهو متحقق بذاته ، وأنه لا وجود لغيره . 
 
@@ -4981,7 +5495,7 @@ Such a point can be understood only by someone who has fully known that things, 
 وأما من حيث أن انتشاء أسماء الحق من حضرة وحدته ، هو من مقتضى ذاته ، فإن جميع الكمالات التي يوصف بها ، كمالات ذاتية ] . 
 أي : الكمال اللازم للحق له اعتباران : فإنه باعتبار ينقسم إلى ذاتي وأسمائي ، فالذاتي ما لا يتوقف وجوده ولا ظهوره على شيء ، بل هو ظاهر لذاته في ذاته أزلا وأبدا من غير توقف على التعينات والتقيدات ، وباعتبار الحق غني عن العالمين ، والكمال الأسمائي وإن لم
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing Text Fourteen):** Those qualifications become manifest at the level of relation after having been undifferentiated within the absolute Essence. Their proper understanding requires knowing that the Real is absolute existence, which in turn requires knowing that He exists of Himself: He is necessary, incapable of receiving nonexistence or being transformed into it. Nor is He a mere rational concept without external reality; everything is realized through Him, whereas His reality is through Himself. There is no independent existence belonging to any other.
 
@@ -4997,11 +5511,15 @@ Whoever has not witnessed this station—that existence is absolute, that it app
 
 **Al-Mahāʾimī:** The perfection inseparable from the Real admits two considerations. Under one consideration it is divided into intrinsic perfection and perfection of the names. Intrinsic perfection is that whose existence and manifestation depend on nothing: it is manifest to His Essence in His Essence, beginninglessly and endlessly, without dependence on determinations or restrictions. In this respect the Real is independent of all worlds. As for the perfection of the names, although its existence does not ... [continued on p. 159].
 
-## Printed p. 159 · Three accounts of intrinsic and nominal perfection
+Related passage IDs: QNW-WIT251
 
-**MSH-P159** · [Arabic source](https://archive.org/details/machra3-khosous/page/n157/mode/1up)
+## MSH-P159 · Printed p. 159 · Three accounts of intrinsic and nominal perfection
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n157/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 يتوقف وجوده على شيء ، يتوقف ظهوره وحصوله بالفعل على إيجاد العالم ؛ لأن الأسماء نسب بين الذات والأشياء ، فلا يتحقق إلا بالمنتسبين ، وليس ذلك استكمالا للذات ، بل لظهورها في المظاهر بعد كمال ظهورها لذاتها . 
 وباعتبار آخر ، وهو اعتبار ، أن الحكم بالكمال للحق ، يتوقف على تعينه ، فالكمالان معا أسمائيّا . 
@@ -5015,7 +5533,7 @@ Whoever has not witnessed this station—that existence is absolute, that it app
 
 إشارة إلى المسألة الأولى أي من ثبت له الكمال من ذاته ، فهو له أزلا وأبدا ، فلا ينقص كماله إذا تقيد باعتبار مرتبة أو مظهر بقيود هي من العوارض الزائلة ، أو اللوازم الخارجية ، وإذا كانت تلك القيود تقابل أضدادها وما يناقضها ، لكنه لا تفيده نقصا بمعنى
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** ...depend on anything, its manifestation and actual realization depend on bringing the world into existence, because the names are relations between the Essence and things, and a relation is realized only through both of its terms. This does not mean that the Essence gains a perfection it lacked. Rather, it concerns the perfection of its manifestation in loci, after its perfect manifestation to itself.
 
@@ -5027,11 +5545,13 @@ Under a third consideration, both perfections are intrinsic. Those called intrin
 
 **Al-Mahāʾimī:** This addresses the first apparent difficulty. Perfection that belongs to a thing essentially is its perfection eternally. It is not impaired when, relative to a level or a manifesting locus, it is accompanied by contingent and passing restrictions or by externally associated, more persistent concomitants. Even when those qualifications exclude other or opposite qualifications, they cannot damage intrinsic perfection ... [continued p. 160].
 
-## Printed p. 160 · Qualification neither diminishes nor adds to the divine Essence
+## MSH-P160 · Printed p. 160 · Qualification neither diminishes nor adds to the divine Essence
 
-**MSH-P160** · [Arabic source](https://archive.org/details/machra3-khosous/page/n158/mode/1up)
+Source: https://archive.org/details/machra3-khosous/page/n158/mode/1up
 
-### Arabic
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 قدحها في كماله المطلق ؛ لأن القيد إنما يلحقه باعتبار مرتبة ، لا باعتبار غيرها ، فهو على إطلاقه ، وإذا كان على إطلاقه فهو على كماله . 
 أما باعتبار انقسام الكمال الذاتي والأسمائي ؛ فلأن الذات لا تتغير بتغيرات الأسماء ، كما أنها لا تتكثر بتكثرها ، فالنقص من جهة عدم اعتبار بعض الأسماء في تلك المرتبة ، لا تضره باعتبار الإطلاق . 
@@ -5047,7 +5567,7 @@ Under a third consideration, both perfections are intrinsic. Those called intrin
 النص السادس عشر
 قال رضي اللّه عنه : [ نص شريف جدّا ] لما ذكر في النص السابق بحث الكمال ، وهو وصف فلا بدّ من معرفة الموصوف بحسب المراتب الحقيقية وشرع فيها .
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continued):** ...because an attribute attaches to the Real under the consideration of a particular level, not at every other level. He thus remains absolute and, as absolute, perfect. In the first distinction, which separates intrinsic from nominal perfection, the Essence is not altered as names vary any more than it is multiplied by their multiplicity. A particular name's absence at a given level entails no deficiency in the absolute Essence. In the second account, where all perfections are regarded as nominal, every perfection remains in the first determination even if it is not manifest in later determinations; what is absent in one rank is not thereby absent from another. In the third, where all are intrinsic, the Essence is the source of every rank: the source of the first is thereby the source of what proceeds from it, and ultimately the source of all perfections. Understand.
 
@@ -5059,11 +5579,15 @@ An objection might arise: does this not, after all, make the Essence complete it
 
 **[Opening of Text Sixteen on the same printed page.] Al-Mahāʾimī:** Qūnawī calls the next text a very noble text. Having just examined perfection, which is a *description*, he must now consider what is described, as it is known through its true levels. [The explanation continues on p. 161.]
 
-## Printed p. 161 · The Reality knows Himself without an additional image
+Related passage IDs: QNW-WIT252
 
-**MSH-P161** · [Arabic source](https://archive.org/details/machra3-khosous/page/n159/mode/1up)
+## MSH-P161 · Printed p. 161 · The Reality knows Himself without an additional image
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n159/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 وإنما كان شريفا لشموله الحقائق الموصوفة به أجمع ، وإنما كان شرفه جدّا لإفادة المعرفة التامة بالموصوفات والصفات . 
 
@@ -5075,7 +5599,7 @@ An objection might arise: does this not, after all, make the Essence complete it
 
 قال الشيخ رضي اللّه عنه : [ والتحقق بشهود هذه الصفة  “ 1  “ ومعرفتها تماما ، إنما يكون بمعرفة أن الحق في كل متعين قابل للحكم عليه بأنه متعين بحسب الأمر المقتضي إدراك الحق فيه متعينا مع العلم ، بأنه غير محصور في التعين ، وأنه من حيث هو هو غير متعين ] .
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** The text is noble because it comprehends all the realities described by perfection, and exceedingly noble because it imparts complete knowledge of the subjects and their attributes.
 
@@ -5089,11 +5613,15 @@ An objection might arise: does this not, after all, make the Essence complete it
 
 **Qūnawī:** Actual realization of this attribute through witnessing, and complete knowledge of it, consist in knowing that in every determinate thing the Real may be judged determinate according to what makes Him apprehensible in it under determination, while also knowing that He is not confined by that determination and that, considered as He is in Himself, He is undetermined.
 
-## Printed p. 162 · The Real as known in loci of manifestation
+Related passage IDs: QNW-WIT252
 
-**MSH-P162** · [Arabic source](https://archive.org/details/machra3-khosous/page/n160/mode/1up)
+## MSH-P162 · Printed p. 162 · The Real as known in loci of manifestation
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n160/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 أي : إنما يشاهد هذه الصفة شهودا حقيقيّا بحيث يصير عين اليقين أو حقه بمشاهدة أنه الحق ، ومعرفتها تماما بحيث يصير علم اليقين ، إما يكون بمعرفة أنه الحق في كل متعين رتبة أو فرعا أو شخصا قابل ؛ لأن يحكم عليه بالتعين ، لا بحسب ذاته بل بحسب الأمر المقتضي إدراك الحق فيه متعينا من الحواس أو العقول ، أو تجليه بحسب الأسماء المختصة بتلك المرتبة مع علم المشاهد والعارف بأنه غير محصول في التعين أصلا ، فضلا عن تعينه في تلك المتعين المخصوص بالمشاهدة أو المعرفة في الحال مع العلم بأنه من حيث هو غير متعين ، وإنما يتعين بحسب المراتب ، فهو على صرافة إطلاقه في حال تعينه ، فإذا عرف ذلك عرفها بأحدية جمع لا يتعقل وراءها شيء مما ذكر ، ولما جعل هذه الصفة ، لا تغاير الذات افتقر إلى بيانه . 
 
@@ -5102,7 +5630,7 @@ An objection might arise: does this not, after all, make the Essence complete it
 
 وإنما لم يكن بتلك الحيثية ، علم الحق سبحانه بعينه ، لقصور إدراكه ، فلا يعلم بذلك العلم إلا من هو مدركه ؛ لأن العلم بالشيء تابع للمعلوم ، وسواء كان في قصور الإدراك اعتبار المظهر عين الظاهر كمن يرى اللّه مقيدا ببعض الأشياء الظاهر مع الانحصار فيه أولا ، بل يجعل في جميع المظاهر منحصرا فيه ، فيعلم من حيث تعلق علمه بهم بنفسه
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī:** To witness this attribute truly, so that one's seeing amounts to the eye or reality of certainty, and to know it completely with the certainty of knowledge, is to recognize the Real in every thing determined as a rank, a branch, or an individual. One may judge the Real determinate in that thing, not because His Essence is intrinsically limited, but because the senses or intellect, or His self-disclosure under names proper to the rank, make Him apprehensible there in a particular manner. The witness must know that He is not restricted by determination at all, much less by the particular determination presently encountered; considered in Himself He is not determined. His appearing in different forms depends on ranks. He therefore retains the purity of His absoluteness while appearing in a determinate locus. To know this is to know an all-embracing unity beyond which no other union, relation or consideration can be placed. Since the attribute had been declared identical in reality with the Essence, Qūnawī now explains this identification.
 
@@ -5110,11 +5638,15 @@ An objection might arise: does this not, after all, make the Essence complete it
 
 **Al-Mahāʾimī:** God's being present in each determinate thing in a way that warrants judgment about His appearance there—while not being confined to it and while remaining undetermined in Himself—is what the form of divine self-knowledge signifies. If such a form were an addition, it would perfectly correspond to His reality. In divine self-knowledge the Essence is understood as determinate relative to its appearances in the determinate things, in proportion to their receptive aptitudes, without thereby becoming confined by them. It is also known in relation to the one who sees it only in a locus. Such a person's knowledge is a shadowed participation in divine knowledge as it relates to that person's fixed entity. But God knows, under another consideration not restricted to this relational knowledge, that He is Himself undetermined, even when a creature judges Him determined. This further consideration is not the very same as God's knowing Himself in connection with that limited knower, because a knowledge of something follows what its object is; only the creature perceiving Him under a particular limitation knows Him through that limitation alone. This limitation of apprehension applies when the locus is taken as identical with what appears: for example, someone sees God restricted to some manifest things and confines Him there, or instead places Him in all the loci but still confines Him to them. In respect of His knowledge as it relates to these people, He knows Himself ... [continued on p. 163].
 
-## Printed p. 163 · Divine reality and the essential poverty of creation
+Related passage IDs: QNW-WIT252
 
-**MSH-P163** · [Arabic source](https://archive.org/details/machra3-khosous/page/n161/mode/1up)
+## MSH-P163 · Printed p. 163 · Divine reality and the essential poverty of creation
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n161/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 كذلك ، ويعلم من حيثية أخرى أنه لا يتقيد بشيء من ذلك ، أي سواء كان اعتقادهم في غاية الفساد ، أو صوابا من وجه ، فإنه يعلم نفسه من حيث تعلق علمه بهم ، كما يعتقدون ، فافهم . 
 
@@ -5129,7 +5661,7 @@ An objection might arise: does this not, after all, make the Essence complete it
 
 وإليه الإشارة بقوله تعالى :وَاللَّهُ خَيْرُ الرَّازِقِينَ[ الجمعة : 11 ] ،أَحْسَنُ الْخالِقِينَ [ المؤمنون : 14 ] ،أَرْحَمُ الرَّاحِمِينَ[ الأعراف : 151 ] واللَّهِ أَكْبَرُ
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continued):** ...In either case the Real knows the person under the aspect of that person's conception of Him, whether the conception is gravely mistaken or true in one respect; and in another aspect He knows Himself as unqualified by that person's conception. Consider this.
 
@@ -5143,11 +5675,15 @@ An objection might arise: does this not, after all, make the Essence complete it
 
 This is indicated in the expressions “God is the best of providers” (Qurʾān 62:11), “the best of creators” (23:14), “the most merciful of those who show mercy” (7:151), and “God is greater” ... [the source reference and continuation follow on p. 164].
 
-## Printed p. 164 · The inadequacy of purely negative transcendence
+Related passage IDs: QNW-WIT252
 
-**MSH-P164** · [Arabic source](https://archive.org/details/machra3-khosous/page/n162/mode/1up)
+## MSH-P164 · Printed p. 164 · The inadequacy of purely negative transcendence
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n162/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 [ التوبة : 72 ] ، ونحو ذلك . 
 اعلم أن الحق منزه عقلا وشرعا وكشفا ، لكن الفرق بين كل تنزيه ، فإن العقل ينزهه عن بعض الصفات لنقصانها ، فتتمكن له صفات سلبية تقابلها ؛ لأن الشيئين لا يجتمعان ولا يرتفعان . فثمرة تمييز الحق عما يسمى سواه بوصفه بهذه الصفات ، والشيخ رضي اللّه عنه لم يرتض هذا التنزيه ؛ لأن النقصان أمور عدمية لا تقع في الوجود من حيث هو موجود أصلا ، فما في الوجود إلا كامل ، وإنما هي أمور فرضتها الأذهان بالنظر إلى ظهوره في بعض المظاهر دون بعض ، على أنه لا تناقض لشيء في نفس الوجود ، وإنما تتناقض الأشياء بالنسبة إلى المراتب . 
@@ -5159,7 +5695,7 @@ This is indicated in the expressions “God is the best of providers” (Qurʾā
 
 وهو الذي فيه قال الشيخ الأعظم : [ وأما تنزيه أهل الكشف ، فهو بإثبات الجمعية للحق مع عدم الحصر ، وتمييز أحكام الأسماء بعضها عن بعض ، فإنه ليس كل حكم يصح إضافته إلى كل اسم ، بل من الأسماء
 
-### English
+### English · passage 1
 
 **Continuation:** ...[the printed source cites Qurʾān 9:72], and similar expressions.
 
@@ -5173,11 +5709,15 @@ As for the incomparability communicated by the outward sense of Scripture, the e
 
 **Qūnawī (opening of the account of unveiled incomparability):** The incomparability understood by the people of unveiling is to affirm the Real's universal comprehensiveness without limiting Him to the description of comprehending; it distinguishes the rulings proper to the various divine names. Not every ruling may rightly be attributed to every name. Indeed, among the names ... [continued on p. 165].
 
-## Printed p. 165 · Incomparability through unveiled comprehensiveness
+Related passage IDs: QNW-WIT252
 
-**MSH-P165** · [Arabic source](https://archive.org/details/machra3-khosous/page/n163/mode/1up)
+## MSH-P165 · Printed p. 165 · Incomparability through unveiled comprehensiveness
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n163/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 ما يستحيل إضافة بعض الأحكام إليها ، وإن كانت ثابتة لأسماء أخرى  “ 1  “ ، وهكذا الأمر في الصفات ، ومن ثمرات التنزيه الكشفي نفي السوي مع بقاء الحكم العددي ، دون فرض نقص يسلب أو تعقل كمال يضاف إلى الحق بإثبات مثبت ، والسلام ] . 
 
@@ -5189,7 +5729,7 @@ As for the incomparability communicated by the outward sense of Scripture, the e
 
 أي : عن تنزيههم وتشبيههم ؛ لأن عزته مانعة أن يصل إليه إدراكهم وَسَلامٌ عَلَى الْمُرْسَلِينَ [ الصافات : 181 ] إذ أصابوا في تنزيههم الكشفي وَالْحَمْدُ لِلَّهِ رَبِّ الْعالَمِينَ [ الصافات : 182 ] ؛ لشموله الكل بلا نقص وتغيير فيه ، فله الكمالات كلها ، فافهم .
 
-### English
+### English · passage 1
 
 **Qūnawī (continuing):** ...are some to which certain rulings cannot possibly be attributed, although those rulings belong to other names. The same applies to attributes. Among the fruits of unveiled incomparability is the negation of what is other, while retaining numerical determination. This involves no positing of a deficiency that must be negated, nor conceiving a perfection that needs to be added to the Real through some further affirmation. Peace.
 
@@ -5201,11 +5741,15 @@ Nor does this imply an original deficiency in the Essence that is overcome by in
 
 The author's concluding expression 'peace' may be read as a salutation of those who practise this unveiled incomparability and avoid the limitation of the earlier viewpoints. Thus the Qurʾānic conclusion is appropriate: 'Glory be to your Lord, Lord of might, beyond what they describe' (37:180), for creatures' formulations of incomparability and resemblance do not exhaust Him; 'peace be upon the messengers' (37:181), because of the correctness of the transcendence they convey; and 'praise be to God, Lord of the worlds' (37:182), for He comprehends the whole without diminution or change and all perfections belong to Him. Understand.
 
-## Printed p. 166 · Text Eighteen — How a locus determines the mode of presence
+Related passage IDs: QNW-WIT253
 
-**MSH-P166** · [Arabic source](https://archive.org/details/machra3-khosous/page/n164/mode/1up)
+## MSH-P166 · Printed p. 166 · Text Eighteen — How a locus determines the mode of presence
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n164/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 النص الثامن عشر
 قال رضي اللّه عنه : [ نص شريف ] : لما ذكر في النص السابق أن الكل في الحق موجود ، مع أن القديم لا يكون محل الحوادث ، وذكر فيما قبله أن الحق سار في الكل مع أن القديم أجل من أن يحل في الحوادث ، رفع ذلك الوهم وشرفه لما فيه من بيان قدم الحادث من وجه ، وحدوث القديم من وجه آخر ، ولم يجعله حدّا لما ذكر من قبل ، إن لكل مطلق وجها إلى التقييد وبالعكس . 
@@ -5217,7 +5761,7 @@ The author's concluding expression 'peace' may be read as a salutation of those 
 
 وهذا بخلاف وجود الحق وعلمه ، فإنه من حيث هو قديم ، فإذا ظهرت الحوادث فهو حادث بحسب الظهور لا بحسب نفسه ، فإن الظاهر هو الوجود القديم والعلم القديم أضيفا إلى الأشياء ، فصارت مثلها بحسب الإضافة لا بحسب نفس الأمر . فاعلم ذلك ترشد في الجمع بين الشريعة والحقيقة إلى ما أصله التوحيد الصرف إن شاء اللّه تعالى .
 
-### English
+### English · passage 1
 
 **Qūnawī:** A noble text.
 
@@ -5231,11 +5775,15 @@ The possible objects of knowledge are originated by their own nature. Neverthele
 
 This is not the case with the existence and knowledge of the Real, which are eternal considered in themselves. When originated things appear, the ancient existence and knowledge may be described as newly appearing **with respect to manifestation and relation**, not through an origination in themselves. The Eternal is related to the originated and thus receives a relative description without changing in His own reality. Understand this and you will reconcile the outward law (*sharīʿa*) and the inner reality (*ḥaqīqa*) at the point from which pure divine unity proceeds, if God wills.
 
-## Printed p. 167 · Text Nineteen: Why the absolute cannot be named as though it were another thing
+Related passage IDs: QNW-WIT253
 
-**MSH-P167** · [Arabic source](https://archive.org/details/machra3-khosous/page/n165/mode/1up)
+## MSH-P167 · Printed p. 167 · Text Nineteen: Why the absolute cannot be named as though it were another thing
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n165/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 النص التاسع عشر
 قال الشيخ رضي اللّه عنه : [ نص شريف من أشرف النصوص وأجلها وأجمعها لكليات أصول المعرفة الإلهية والكونية ] . 
@@ -5250,7 +5798,7 @@ This is not the case with the existence and knowledge of the Real, which are ete
 
 لا يقال : لو لم يكن شيئا ، لم عن كل تعين ؛ لأنّا نقول هذا الامتياز أمر يفرضه الوهم ،
 
-### English
+### English · passage 1
 
 **Qūnawī:** A noble text, among the noblest, most majestic and most comprehensive statements of the universal principles of divine and cosmic knowledge.
 
@@ -5264,11 +5812,15 @@ The supposition derives from the reasoning that every determination is preceded 
 
 What the unperfected understand as a prior absoluteness is thus a mental supposition formed by contrast with various modes of absoluteness and restriction. It is a negative description, not another entity higher than the Real. Something can stand above another only if it is itself something. If one objects that it must be something because it is distinguished from all determination, the answer is that this distinction is posited by imagination ... [continued on p. 168].
 
-## Printed p. 168 · First determination, essential names and the two presences
+Related passage IDs: QNW-WIT253
 
-**MSH-P168** · [Arabic source](https://archive.org/details/machra3-khosous/page/n166/mode/1up)
+## MSH-P168 · Printed p. 168 · First determination, essential names and the two presences
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n166/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 كما يفرض فوق كل تعين لا تعينا ، مع أن اللاتعين أمر سلبي لا يصح الفوقية والتقدم ، وإنما الأمر الثبوتي الواقع هو التعين الأول ، فذات الحق اسم له ، إذ ليس اسما للأمر العدمي . 
 نعم هو وصف سلبي للذات باعتبار عدم تقييده بشيء من الإطلاق والتقييد ، لكنه ليس باعتبار التعين الأول ، بل باعتبار المراتب ، لكنه لما كان عامّا في تعقل العامة ، فرضوه سابقا على التعين الأول ، فافهم . 
@@ -5281,7 +5833,7 @@ What the unperfected understand as a prior absoluteness is thus a mental supposi
 
 قال الشيخ رضي اللّه عنه : [ والأحدية وصف التعين لا وصف المطلق المعين إذ لا اسم للمطلق ، ولا وصف ]  “ 1  “ .
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** ...just as imagination posits non-determination above every determination. Yet non-determination is a negative consideration and therefore cannot genuinely be above or prior to what is determined. The first determination alone is the affirmative reality at issue. Accordingly, *the divine Essence* is a name applied there, not a name for a non-existent abstraction. Certainly one may describe the Essence negatively as not confined by either absoluteness or restriction. That is an account relative to the ranks, not an additional state prior to the first determination. Because it commonly figures in ordinary people's conception, they imagine it to precede that first determination. Understand.
 
@@ -5297,11 +5849,15 @@ An objection might be raised: if the first determination included several names,
 
 *Editorial note:* An explanatory footnote to *aḥadiyya* is present in the online transcription but is not represented here as part of Qūnawī's or al-Mahāʾimī's running medieval text. The argument continues on p. 169.
 
-## Printed p. 169 · Aḥadiyya, wāḥidiyya, and efficacy without a separate intermediary
+Related passage IDs: QNW-WIT253
 
-**MSH-P169** · [Arabic source](https://archive.org/details/machra3-khosous/page/n167/mode/1up)
+## MSH-P169 · Printed p. 169 · Aḥadiyya, wāḥidiyya, and efficacy without a separate intermediary
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n167/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 جواب سؤال مقدر تقديره كيف تشتمل الذات على الحقائق الأسمائية الذاتية مع أن الذات اسم للمطلق عند تعينه تعينا أولا ، وأول ما يتصور لا يكون إلا الذات وحدها ؛ ولهذا يوصف بالأحدية لاعتبار الأسماء ، فكيف تكون الذات باعتبار أحديتها شاملة على الأسماء . 
 فأجاب بأن : المطلق لا يتعين أصلا إذ لا اسم له ولا وصف ، فكيف يوصف بالتعين وبالأحدية بل الأحدية لا يعتبر معها الأسماء ، والواحدية يعتبر معها الأسماء ، فالذات أعم من الموصوف بالأحدية والواحدية ، فتكون شاملة على الأسماء ، لكن لا تتميز الأسماء باعتبار أحديتها وواحديتها ، فافهم . 
@@ -5315,7 +5871,7 @@ An objection might be raised: if the first determination included several names,
 
 ثم بيّن إن ذلك اللازم هو العلم لا الحياة ، وإن كان العلم يتوقف عليها ، لكن الحياة
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī:** This anticipates an objection. How can the Essence include the essential realities expressed by the names if it is called *Essence* at its first determination, when only the Essence alone can be conceived? Is it not called unicity precisely because the names are not distinguished there? How, then, can it comprehend them under that aspect?
 
@@ -5333,11 +5889,15 @@ He then explains that this concomitant is knowledge, not life. Although knowledg
 
 **Reading note:** At the second occurrence above, the 2008 print repeats *aḥadiyya* (أحديتها أو أحديتها). The bracketed *wāḥidiyya* is a contextual conjecture, not an independently attested reading.
 
-## Printed p. 170 · The one concomitant, unitive plurality and knowledge as mirror
+Related passage IDs: QNW-WIT253
 
-**MSH-P170** · [Arabic source](https://archive.org/details/machra3-khosous/page/n168/mode/1up)
+## MSH-P170 · Printed p. 170 · The one concomitant, unitive plurality and knowledge as mirror
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n168/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 إنما تعلم به ، وليس التوقف هاهنا إلا باعتبار التعقل ، وإلا فالكل صفات أزلية أبدية . 
 
@@ -5351,7 +5911,7 @@ He then explains that this concomitant is knowledge, not life. Although knowledg
 وإنما لم تظهر الشؤون هناك لتوقفها على تمايز الأسماء ، والأسماء وإن ظهرت بظهور الذات لا تتمايز في المرتبة الأولى إلا أن العلم لما كان مرآة الذات مع الأسماء الذاتية ، كان محتد . 
 أي : أصل الكثرة المعنوية ، أي : كثرة المعنى التي هي الأعيان الثابت ومشروعها الذي خرجت الأعيان بسببه من المرتبة الأولى ، فظهرت في الثانية ، ثم استشعر سؤالا بأن العلم كيف يصير مرآة الذات ، مع أن الأسماء الذاتية التي لا تغاير الذات ، إنما لزمت الذات بواسطته ، فلا مغايرة للعلم مع الذات أصلا والمرآة لا بدّ وأن تغاير المرئي فيها .
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** ...is known only through knowledge. The dependence here concerns intelligible apprehension alone; otherwise, all these attributes are beginningless and everlasting.
 
@@ -5367,11 +5927,15 @@ The modes do not yet appear as distinct in that rank, because their discriminati
 
 An objection arises: how can knowledge be a *mirror* of the Essence if the essential names are not other than it and knowledge itself is not other than the Essence? A mirror ordinarily differs from what it displays. [Continued p. 171.]
 
-## Printed p. 171 · Knowledge, self-manifestation and the universal ranks
+Related passage IDs: QNW-WIT253, QNW-WIT254
 
-**MSH-P171** · [Arabic source](https://archive.org/details/machra3-khosous/page/n169/mode/1up)
+## MSH-P171 · Printed p. 171 · Knowledge, self-manifestation and the universal ranks
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n169/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 فأجاب بأن : المراد بقولهم مرآة الذات ، أنه كالمرآة ، وإنما ساغ هذا التنبيه مع امتناع تبعية الشيء بنفسه باعتبار امتياز العلم عن الذات ، في المرتبة الثانية الامتياز الذي تقتضيه نسبة تعقل الذات إليها ، وهو الامتياز الاعتباري .
 وإنما قلنا بهذا الامتياز إذ به يعقل تعين الحق في تعقل نفسه في نفسه فنفسه كالمرآة لنفسه ، وعلمه عين نفسه ، فعلمه الذاتي كالمرآة له بالطريق الأولى .
@@ -5382,7 +5946,7 @@ An objection arises: how can knowledge be a *mirror* of the Essence if the essen
 قال الشيخ الأعظم رضي اللّه عنه : [ وأما المراتب ، فعبارة عن تعينات كلية ، يشتمل عليها اللازم الواحد الذاتي الذي هو العلم ، وهي كالمحال لما يمر عليها من مطلق فيض الصادر عن الذات باعتبار عدم مغايرة الفيض للمفيض كما سبق التنبيه عليه في شأن مظهرية الحق وظاهريته ] . 
 أي : وإنما قلنا : العلم مرآة للمرتب ؛ فلأن المراتب عبارة عن تعينات كلية ، والكليات من حيث هي كليات ، لا تثبت إلا في العلم ، فحينئذ يشتمل عليها اللازم الواحد بالذات ، فيلزمها ذلك اللازم والواحد ، فهي منتقشة فيه انتقاش الذات ، لكن فرق بين الانتقاشين ، فإن لها صورة زائدة في حضرة العلم حتى صارت كالمحال لا يمر عليها
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** When one says that knowledge is the mirror of the Essence, the operative term is *like* a mirror. It would be impossible for a thing to depend on itself as on an independent second thing. What makes the expression legitimate is the relative intelligible distinction between divine knowledge and the Essence at the second rank, the distinction made possible by considering the Essence's relation of understanding itself. Through that merely conceptual difference the Real's determination in His self-understanding can be conceived. His very Self is like a mirror for His Self, and since His knowledge is His Self, His intrinsic knowledge may all the more appropriately be called His mirror.
 
@@ -5398,11 +5962,15 @@ To explain this absence of difference between knower and known, he indicated tha
 
 **Al-Mahāʾimī:** The ranks are universal determinations, and universals insofar as they are universal have their being in knowledge. Knowledge, the one intrinsic concomitant, therefore comprehends the ranks. They are inscribed therein just as the Essence is mirrored therein, though their two kinds of inscription must not be confused. The ranks have an additional form in the presence of knowledge, so that they become like loci through which there passes ... [continued on p. 172].
 
-## Printed p. 172 · The universal ranks modify one unrestricted effusion
+Related passage IDs: QNW-WIT254
 
-**MSH-P172** · [Arabic source](https://archive.org/details/machra3-khosous/page/n170/mode/1up)
+## MSH-P172 · Printed p. 172 · The universal ranks modify one unrestricted effusion
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n170/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 من مطلق فيض الذات ، فيتقيد ذلك الفيض بحسب قابلياتها . 
 وإنما قلنا : أن فيض الذات مطلق ؛ لأن ظاهر الحق ومظهره لما كانا متحدين في مرتبة الوحدة والتعين الأول ، والمفيض هو الظاهر ، والفيض هو المظهر ، كانا متحدين ثمة ، ثم يقيد بحسب صور المراتب المنتقشة في حضرة العلم بقيود زائدة . 
@@ -5417,7 +5985,7 @@ To explain this absence of difference between knower and known, he indicated tha
 
 قال الشيخ رضي اللّه عنه : [ ولها - أعني للمراتب - أعيان ثابتة في عرصة العلم والتعقل ، ولا
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing from p. 171):** The universal effusion from the Essence, in passing through the intelligible ranks, is delimited by the particular capacities of those ranks. It is called unrestricted because the manifest and the locus of manifestation are united at the first determination, the rank of unity. The giver of effusion is the manifest, and the effusion is the locus of manifestation; they are united there. The effusion is qualified only through the additional forms that belong to the ranks as they are inscribed in the divine knowledge.
 
@@ -5431,11 +5999,15 @@ To explain this absence of difference between knower and known, he indicated tha
 
 **Qūnawī (opening of the next sentence):** The ranks have fixed entities in the domain of divine knowledge and intelligible apprehension, and ... [continued p. 173].
 
-## Printed p. 173 · Fixed entities have no independent efficacy
+Related passage IDs: QNW-WIT241, QNW-WIT254
 
-**MSH-P173** · [Arabic source](https://archive.org/details/machra3-khosous/page/n171/mode/1up)
+## MSH-P173 · Printed p. 173 · Fixed entities have no independent efficacy
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n171/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 أثر لها على سبيل الاستقلال ، بل بالوجود ، وهكذا شأن الوجوب مع المراتب ، فإنها مؤثرة ظاهرة الحكم في كل ما يتصل بها ويتعين لديها بتكيفات مطلق الفيض الواصل إليها والمارّ عليها ] . 
 بيّن الضمير ؛ لئلا يتوهم عوده إلى الأسماء التي هي أقرب المذكورات . 
@@ -5450,7 +6022,7 @@ To explain this absence of difference between knower and known, he indicated tha
 
 فقال : وإنها أي : المراتب سواء اعتبر وصول الفيض إليها بأن دوام وجودها من الأزل إلى الأبد كالأرواح القدسية ، أو المرور عليها ، نهايات نسبية إنها لا تدوم ، ينتقل الفيض منه إلى غيره ما دام ، وإن لم ينتقل عنه إلى غيره ما يخصه ، لكن ينتقل بواسطة الفيض
 
-### English
+### English · passage 1
 
 **Qūnawī (continuing):** ...they do not exercise an effect independently, but only through existence. Such too is the relation of necessity to the ranks: the ranks are effective, and their ruling is manifest in everything that comes into contact with them and becomes determined with them, through the conditioning of unrestricted effusion as it reaches and passes through the rank.
 
@@ -5464,11 +6036,15 @@ Nor is it enough to give this efficacy exclusively to the rulings of necessity a
 
 **Al-Mahāʾimī:** This answers an objection. If ranks influence effusion only when effusion reaches and is determined at them, how can they condition what merely passes through them? He says that the ranks are relative endpoints, whether one considers effusion as arriving at them—so that their existence endures from eternity without beginning to eternity without end, as with the sanctified spirits—or as passing through them. Some do not endure, and effusion moves from them to others. Even where the share proper to a rank does not pass from it to another, it passes, through the mediation of effusion ... [continued on p. 174].
 
-## Printed p. 174 · Relative termini, perpetual self-disclosure and renewed creation
+Related passage IDs: QNW-WIT254
 
-**MSH-P174** · [Arabic source](https://archive.org/details/machra3-khosous/page/n172/mode/1up)
+## MSH-P174 · Printed p. 174 · Relative termini, perpetual self-disclosure and renewed creation
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n172/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 إلى ما يؤثر فيه مما دونه ، فالكل نهايات نسبية ، وذلك كان في تعيين الفيض عندها وإيصالها بها ، وإنما كانت نهايات نسبية باعتبار سر الفيض الذاتي الذي هو التجلي الوجودي في كل منزل ودرجة من المنازل والدرجات . 
 
@@ -5483,7 +6059,7 @@ Nor is it enough to give this efficacy exclusively to the rulings of necessity a
 
 والغرض منه بيان أن الفيض هو المتأثر بها ، وهي لا تتغير ؛ فلذلك قال : فهي ثابتة
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** ...to what it affects below itself. All are therefore relative endpoints; this suffices for the determination of effusion with them and its contact with them.
 
@@ -5495,11 +6071,15 @@ The ranks are relative endpoints by reference to the journey of essential effusi
 
 The ranks manifest the results produced by the conjunction of the two orders of rulings. The manifestation is ascribed to the rank as the intelligible mirror and place of conjunction, not to the rulings taken in abstraction: without their place of establishment they are not independent agents. Nor can it be attributed merely to unrestricted effusion, which, as such, does not independently produce its own differentiation. This is clarified by comparing a rank with a shape or mould: the arriving effusion receives a determinate form, while the ranks themselves do not change. For this reason he says: “They are fixed ...” [continued on p. 175].
 
-## Printed p. 175 · The fixed entities, responsibility and the order of the names
+Related passage IDs: QNW-WIT254
 
-**MSH-P175** · [Arabic source](https://archive.org/details/machra3-khosous/page/n173/mode/1up)
+## MSH-P175 · Printed p. 175 · The fixed entities, responsibility and the order of the names
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n173/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 العين في عرصة العلم ، وإليها تستند نتائج الأحكام إذ هي أحكام لتلك الأعيان ؛ لأن التنوع إنما حصل من الأعيان ، وإليها ينضاف آثارها فتنوع الجزاء يترتب عليها لا على الأمر المقدر ؛ لأن هذه الأعيان هي موضع الجزاء ، وإلا فالوجوب وأحكامه من حيث هو لا يستحق جزاء ولا شيئا آخر ، كما أنها مشرع تلك الأفعال ، فلذا قال تعالى :جَزاءً بِما كانُوا يَعْمَلُونَ، وهي لا ينافي أن وجودها من الحق وبتجليه ، فافهم فإنه حينئذ للجمع بين القدر والشرع . 
 
@@ -5509,7 +6089,7 @@ The ranks manifest the results produced by the conjunction of the two orders of 
 
 والمتكلم إلى القادر المريد ظل الذات الأحدية من حيث اشتمالها بذاتها على مفاتيح النسب التي هي الأسماء السبعة استشعر سؤالا ، وهو أن الأحدية إذ اشتملت على الأسماء التي هي مفاتيح الغيب ، كالواحدية ، فأي فرق بينهما حتى جعلا مرتبتين ، فقال : بينهما فرق دقيق يختص بالكمّل ، وهو أن في مرتبة الألوهية يعقل تميز الذات عن هذه الأسماء
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** The fixed entities of the ranks remain established in the domain of knowledge. The results of the assembled rulings are referred to them, since the effects are the effects of those intelligible realities; the difference of outcomes follows from the difference of the fixed entities. Consequently the variation of recompense is connected with the determinate recipients and their acts, not with the decree itself. These determinate entities are the sites where recompense occurs, while necessity and its rulings do not, by themselves, become recipients of reward or punishment. The ranks are also the points from which the relevant actions proceed. The Qurʾānic expression 'as a recompense for what they used to do' states this relationship. None of this implies that the fixed entities have existence independently of God; their existence is through Him and His self-disclosure. Understand: the point enables the joining of divine determination (*qadar*) and revealed obligation (*sharʿ*).
 
@@ -5519,11 +6099,15 @@ The ranks manifest the results produced by the conjunction of the two orders of 
 
 Yet if *aḥadiyya* contains the same essential names as *wāḥidiyya*, why are they two ranks? The difference is precise and is understood according to the mode in which names are distinctly conceived and actually manifest. In the rank of divinity the Essence can be conceived as distinct from these names ... [continued on p. 176].
 
-## Printed p. 176 · Self-disclosure, distinction, and ordered names
+Related passage IDs: QNW-WIT254, QNW-WIT255
 
-**MSH-P176** · [Arabic source](https://archive.org/details/machra3-khosous/page/n174/mode/1up)
+## MSH-P176 · Printed p. 176 · Self-disclosure, distinction, and ordered names
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n174/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 بظهورها بالفعل فيها ، وأما الأحدية ، فالذات لا يعقل تميزها عن أسمائها الذاتية ؛ لأن كلها ثمرة بالقوة ، فلا يتعقل تميزها عنها ، لا من حجب عن هذا السر ، فيقول : لا أسماء ولا صفات هناك أصلا ، وإنما هي في حضرة الألوهية حتى أنهم منعوا من التجلي الذاتي إذ الذات مجردة عن الصفات لا تتجلى على شيء لغاية غنائها عن العالمين على أن كل متجلّ لا بدّ وأن يتصف بالظهور . 
 
@@ -5539,7 +6123,7 @@ Yet if *aḥadiyya* contains the same essential names as *wāḥidiyya*, why are
 قال قدس سره : [ وأما سر المناسبات ، فهو من حيث الاشتراك في الأمر القاضي برفع أحكام المغايرة من الوجه المثبت للمناسبة ] . 
 أي : سبب وقوع المناسبة والروح القائم
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** In the rank of divinity the names are manifested in actual differentiation; in the rank of unicity they are not conceived as different from the Essence, because they are there potentially. Those veiled from this truth speak as though there were no names and attributes at all at the level of the Essence and as though all names belonged exclusively to the divine presence. Some accordingly deny the possibility of essential self-disclosure: they imagine the Essence as stripped of all attributes and therefore unable to disclose itself, given its independence of the worlds; yet self-disclosure necessarily has the meaning of being manifest.
 
@@ -5561,11 +6145,15 @@ The Shaykh had already indicated this order in the divine names, which are follo
 
 **Al-Mahāʾimī:** That is, the cause of affinity and the animating principle that sustains ... [continued on p. 177].
 
-## Printed p. 177 · Text Twenty: The meaning of *munāsaba*, affinity
+Related passage IDs: QNW-WIT255
 
-**MSH-P177** · [Arabic source](https://archive.org/details/machra3-khosous/page/n175/mode/1up)
+## MSH-P177 · Printed p. 177 · Text Twenty: The meaning of *munāsaba*, affinity
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n175/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 بها أي : المناسبة ، فهو أن المناسبة إنما نشأت من مكان الاشتراك بين المتناسبين في أمر يوجد فيما يقضي برفع المغايرة بينهما من هذا الوجه ، وإن ثبتت المغايرة بوجه آخر حتى صار هذا مرتبا عليه ولا خفاء به . وتلك المناسبة إما ذاتية أو مرتبية ، والذاتية إما بين الحق والإنسان ، أو بين بعض أفراد الإنسان مع بعض الآخر منه ، وأما المرتبية ففيما بين أفراد الإنسان فقط . 
 
@@ -5578,7 +6166,7 @@ The Shaykh had already indicated this order in the divine names, which are follo
 أما قدحه في العظمة ؛ فلأنه ظل فلا يساوى ذا الظل ، وأما في الجلال ، فلأنه يقتضي الإحاطة العلية بهذا الظل الظاهر والجلال يمنعه ، وأما في الواحديّة ، فلأن تعين الغير يوجب الاثنينيّة ، وإنما اعتبر الضعف ولم يجعله صرف العدم لأجل وجوب التأثير بوجه . 
 وأيضا تنشأ هذه المناسبة العدمية من جهة خلو مراتبه عن أحكام الإمكان المكثر فيها أحكام الوجوب ، وذلك لخلوه عن خواص الوسائط ، لغاية قربه من الحق فإذا كثرت
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** ...it, namely affinity. The reason that two things can be suitably related is that they share an aspect in virtue of which the differentiation between them is set aside—though in another respect they remain different, so that one can precede the other and the other follow it. Affinity (*munāsaba*) may be **intrinsic** (*dhātiyya*) or a matter of **rank** (*martabiyya*). Intrinsic affinity occurs between the Real and the human being, or between human individuals; rank-based affinity is here treated among human individuals. The two kinds must not be confused.
 
@@ -5588,11 +6176,15 @@ The Shaykh had already indicated this order in the divine names, which are follo
 
 The commentary says that this qualification impugns the Real’s greatness, majesty and oneness. It impugns greatness because it is a shadow and cannot equal that whose shadow it is; majesty, because it entails an encompassing of this manifest shadow, whereas majesty excludes that; and oneness, because the determination of another implies duality. [Reading note: this statement of an impairment is printed, although the preceding Qūnawī lemma calls the determination non-impairing. The phrase describing the encompassing is printed الإحاطة العلية; its exact sense remains uncertain.] For these reasons Qūnawī speaks of the **weakness** of the mirror's conditioning action, rather than its complete absence. The same negative affinity comes from the high rank's relative freedom from possible limitations and from intermediary properties. Thus, when the rulings of necessity become numerous ... [continued on p. 178].
 
-## Printed p. 178 · Two aspects of affinity with the Real
+Related passage IDs: QNW-WIT255
 
-**MSH-P178** · [Arabic source](https://archive.org/details/machra3-khosous/page/n176/mode/1up)
+## MSH-P178 · Printed p. 178 · Two aspects of affinity with the Real
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n176/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 أحكام الوجوب ثبتت المناسبة الذاتية . 
 
@@ -5605,7 +6197,7 @@ The commentary says that this qualification impugns the Real’s greatness, maje
 قال رضي اللّه عنه : [ والمستوعب لما يشتمل عليه مقام الوجوب والإمكان من الصفات والأحكام ، وما يمكن ظهوره بالفعل من ذلك في كل عصر وزمان مع ثبوت المناسبة أيضا من الوجه الأول له الكمال ، وهو محبوب الحق والمقصود لعينه ، فهو من حيث حقيقته التي هي برزخ البرازخ ، مرآة الذات والألوهية معا ولوازمها وصاحب المناسبة الذاتية من وجه الأول محبوب مقرب لا غير وقد سبق التنبيه على ذلك ] . 
 لما كان الوجهان على سبيل منع الخلو أمكن الجمع بينهما ، فالجامع لما يشتمل عليه مقام الوجوب من الصفات الإلهية ومقام الإمكان من أحكام المراتب ، بشرط إمكان
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** When the rulings of necessity predominate, intrinsic affinity is established under the first aspect.
 
@@ -5621,11 +6213,15 @@ The commentary says that this qualification impugns the Real’s greatness, maje
 
 **Al-Mahāʾimī:** Since at least one of the two aspects must obtain, the two can also be combined. Thus the one who gathers what the station of necessity comprises of divine attributes, and what the station of possibility comprises of the rulings of the ranks, on condition that it is possible ... [continued on p. 179].
 
-## Printed p. 179 · The perfect human as isthmus of isthmuses
+Related passage IDs: QNW-WIT255
 
-**MSH-P179** · [Arabic source](https://archive.org/details/machra3-khosous/page/n177/mode/1up)
+## MSH-P179 · Printed p. 179 · The perfect human as isthmus of isthmuses
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n177/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 ظهور تلك الصفات والأحكام بالفعل في كل عصر وزمان ، قيد بذلك إذ منها ما لا يمكن ظهوره أصلا وبحسب بعض الأزمنة ، فلا يخلّ النقص من كمال الشخص مع ثبوت المناسبة أيضا من الوجه الأول مع الحق
  . 
@@ -5638,7 +6234,7 @@ The commentary says that this qualification impugns the Real’s greatness, maje
 قال رضوان اللّه عليه : [ وأما المناسبة الذّاتية بين الناس ، فتثبت من وجهين أيضا ، وهما مثالان للوجهين الإلهيين المذكورين ، أحدهما من جهة اشتراك المتناسبين في المزاج بمعنى وقوع مزاجيهما - مزاجهما - في درجة واحدة من درجات الاعتدالات التي يشتمل عليها مطلق عرض الأمزجية الإنسانية ، أو تكون درجة مزاج أحدهما مجاورة لدرجة مزاج الآخر ، وهذا أصل عظيم في مشرب التحقيق ، قل من يعرف ذوقا ؛ لأن تعينات الأناس من العوالم الروحانية ، وتفاوت درجاتها في الشرف ، وعلو المنزلة من حيث قلة الوسائط وكثرتها وتضاعف وجوه الإمكان وقوتها بسبب كثرة الوسائط وقلتها وضعفها ، إنما موجبها بعد قضاء اللّه تعالى وقدره ، المزاج المستلزم لتعين الروح بحسبه . 
 فالأقرب نسبة إلى الاعتدال الحقيقي الذي تعين نفوس الكمل في نقطة دائرته ،
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** ...for those attributes and rulings to appear in actuality in every age and time. He adds this condition because some cannot appear at all, or cannot appear in certain times; their absence therefore does not diminish the person's perfection. The first aspect of affinity with the Real must also be established: the weakness of the mirror's effect upon the Real's self-disclosure and its freedom from the rulings of possibility. This is the human perfection through which prophecy is established when prophecy is possible, and the stations of the Pole and the solitary individual in our time. Such a person is beloved of the Real through affinity with Him under the first aspect, and is intended for his own sake in respect of his reality as the isthmus of isthmuses, through its comprehension of the essential and divine names.
 
@@ -5648,11 +6244,15 @@ The end of creation, in this account, is the manifestation of this comprehensive
 
 **Qūnawī:** Intrinsic affinity among human beings is likewise established in two ways, corresponding to those two divine–human aspects. One is through a shared temperament (*mizāj*): the two persons' temperaments may lie at the same degree among the degrees of equilibrium covered by the broad range of human temperaments, or their degrees may adjoin one another. This is a great principle in the path of realization, known by immediate experience to very few. For the determinations of human spirits from the spiritual worlds and their unequal nobility and spiritual dignity are connected with the number and strength of the mediations between them and the first principle, and with the multiplicity or weakness of possible limitations. After God's decree and determination, the decisive condition in this ordering is temperament, in accordance with which a spirit becomes individually determined. The temperament closer to genuine equilibrium, the centre around which the perfected souls are determined ... [continued p. 180].
 
-## Printed p. 180 · Temperament as a condition of spiritual manifestation
+Related passage IDs: QNW-WIT255, QNW-WIT256
 
-**MSH-P180** · [Arabic source](https://archive.org/details/machra3-khosous/page/n178/mode/1up)
+## MSH-P180 · Printed p. 180 · Temperament as a condition of spiritual manifestation
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n178/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 يستلزم قبول روح أشرف وأعلى نسبة من درجة العقول والنفوس العالية ، والأبعد عن النقطة الاعتدالية المشار إليها بالعكس من الخسة ونزول الدرجة ] . 
 
@@ -5665,7 +6265,7 @@ The end of creation, in this account, is the manifestation of this comprehensive
 
 فالأتم مزاج أقرب إلى الوحدة ، فيناسبه فيفيض عليه الروح على حسب ذلك ، فبدن الإنسان الأقرب نسبة إلى الاعتدال الحقيقي ، وهو الاعتدال الذي تعين نفوس الكل في نقطة دائرته ، أي : مركزها بحيث لا يتفاوت فيه العناصر وطبائعها أصلا ، خلافا لما يقوله الحكماء ، يستلزم قبول روح أشرف وأعلى يفيض عليه إما من العقول أو من النفوس العالية والبدن الأبعد عن النقطة الاعتدالية المشار إليها ، وبالعكس في قبول الروح ،
 
-### English
+### English · passage 1
 
 **Qūnawī (continuing):** ...receives a more noble and elevated spirit in relation to the ranks of the higher intellects and souls. A temperament further from the point of equilibrium receives what corresponds to a lower rank and a lesser measure of nobility.
 
@@ -5675,11 +6275,15 @@ This affinity has special significance, says the commentator, for the relation o
 
 A temperament in which the opposed elemental tendencies are more completely harmonized approximates unity, and is therefore suited to receiving a nobler spirit. The closest approach to true equilibrium is described as the centre of the circle within which perfect souls are determined, a point at which the elemental tendencies are brought into complete balance. Al-Mahāʾimī marks this as differing from the philosophers' account of equilibrium. The spirit is received according to that degree of suitability, whether it derives, in the cosmology assumed here, from the intellects or from the higher souls. A temperament further removed from the centre corresponds to a lower degree of spiritual manifestation. [Continued p. 181.]
 
-## Printed p. 181 · From temperamental affinity to spiritual affinity
+Related passage IDs: QNW-WIT256
 
-**MSH-P181** · [Arabic source](https://archive.org/details/machra3-khosous/page/n179/mode/1up)
+## MSH-P181 · Printed p. 181 · From temperamental affinity to spiritual affinity
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n179/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 فيكون فيها من الخسة ونزول الدرجة بحسب بعده عن نقطة الاعتدال . 
 
@@ -5691,7 +6295,7 @@ A temperament in which the opposed elemental tendencies are more completely harm
 
 أي : وإذا عرفت أن المزاج هو الذي يستلزم تعين الروح بحسبه شرفا وخسة عن شهود من أهل اليقين ، وإلا فعن فهم محقق عرفت أن بعض الأرواح يكون مبدأ مقامها ، أي : كمالها في التعين من جهة الاعتدال سواء حصل أصل المتعين من اللوح أو من أعلى منه ، إلا أن الكمال في الاعتدال لا يتعلق بما فوقه ؛ لأن اللوح هو النفس الكلية المسماة بالزمرد الخضرات ، لها نسبة ظلمانية إلى الهباء بحر الطبيعة ، كما أن لها نسبة نورانية إلى العقل الأول ، فالاعتدال بيدها بخلاف ما يذكر في المناسبة المرتبية ، وهي كما كانت بمنزلة القلب للعالم كله ، كان تعرفها في جسم الكل ، فلهذا لم يخصها بروحانية شيء من الأفلاك .
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** The further the constitution is from genuine equilibrium, the lower the rank of the spirit it is apt to manifest, according to the gradations presupposed by this cosmology.
 
@@ -5703,11 +6307,15 @@ A temperament in which the opposed elemental tendencies are more completely harm
 
 **Al-Mahāʾimī:** Once you know, by the witnessing of those who possess certainty, or otherwise by verified understanding, that temperament entails a spirit's determination in nobility or baseness, you know that the beginning of the station of some spirits—that is, their perfection in determination through equilibrium—is from the Tablet. This is so whether the original determination comes from the Tablet or from above it. Perfection through equilibrium, however, is not connected with what lies above the Tablet, because the Tablet is the Universal Soul, called the green emerald. It has a dark relation to primordial dust, the sea of Nature, just as it has a luminous relation to the First Intellect. Equilibrium is therefore in its charge, unlike what will be said concerning affinity of rank. Since it is like the heart of the whole cosmos, its operation extends to the body of the whole. For this reason he does not restrict it to the spirituality of any one of the celestial spheres.
 
-## Printed p. 182 · The spiritual orders and the breathing of spirit
+Related passage IDs: QNW-WIT256
 
-**MSH-P182** · [Arabic source](https://archive.org/details/machra3-khosous/page/n180/mode/1up)
+## MSH-P182 · Printed p. 182 · The spiritual orders and the breathing of spirit
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n180/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 ومبدأ تعين بعضها روحانية العرش ، أي عرش الرحمن وروحانية الملائكة الواهبات ، وهي حاصلة من مقام إسرافيل عليه السلام ، وبعدها من روحانية سدرة المنتهى ، منتهى مقام العابدين تحت الكرسي في فلك البروج ، وهي الملائكة المسماة من مقام جبرائيل عليه السلام ، وبعضها من روحانية فلك الثوابت ، وهي التاليات من مقام رضوان خازن الجنان عليه السلام ، وبعضها من روحانية فلك زحل ، وهي النازعات من مقام الملك الكريم ، وبعضها من روحانية فلك المشتري ، 
 وهي الملقيات من مقام الملك المقرب ، وبعضها من روحانية فلك المريخ ، وهي الفارقات من مقام الخاشع ، وبعضها من روحانية فلك الشمس ، وهي الصفات من مقام الرفيع ، وبعضها من روحانية فلك الزهرة ، وهي الفانيات من مقام الحمد ، وبعضها من روحانية عطارد ، وهي الناشطات من مقام الملك الروح ، وبعضها من روحانية فلك القمر ، وهي ملائكة الروحانية من مقام إسماعيل عليه السلام ، وأسامي هذه الملائكة ذكرها الشيخ الكامل المكمل محيي الدين بن العربي - قدس اللّه روحه - في رسالة  “ عقلة المستوفز " 1 " . 
@@ -5719,7 +6327,7 @@ A temperament in which the opposed elemental tendencies are more completely harm
 
 قال الشيخ رضي اللّه عنه : [ وأما المناسبة المرتبية ، فإنها ليست من وجه واحد ، بل من وجوه متعددة : أحدها من جهة معدنها الأصلية التي هي مبدأ تعينات الأرواح المشار إليها آنفا ،
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** The determination of some spirits begins from the spirituality of the Throne—the Throne of the All-Merciful—and the spirituality of the angels called the *Wāhibāt*, arising from the station of Isrāfīl. Thereafter some arise from the spirituality of the Lote Tree of the Furthest Limit, the limit of the station of worshippers, below the Footstool in the sphere of the zodiac, and from the angels named in connection with Jibrīl's station. Some arise from the spirituality of the sphere of the fixed stars: the *Tāliyāt*, from the station of Riḍwān, keeper of the gardens. Some arise from the spirituality of Saturn: the *Nāziʿāt*, from the station of the angel al-Karīm. Some arise from the spirituality of Jupiter: the *Mulqiyāt*, from the station of the angel al-Muqarrab. Some arise from the spirituality of Mars: the *Fāriqāt*, from the station of al-Khāshiʿ. Some arise from the spirituality of the Sun: the *Ṣifāt*, from the station of al-Rafīʿ. Some arise from the spirituality of Venus: the *Fāniyāt*, from the station of al-Ḥamd. Some arise from the spirituality of Mercury: the *Nāshiṭāt*, from the station of the angel al-Rūḥ. Some arise from the spirituality of the Moon: the spiritual angels, from the station of Ismāʿīl—peace be upon him. The names of these angels were mentioned by the perfect and perfecting Shaykh Muḥyī al-Dīn Ibn ʿArabī—may God sanctify his spirit—in the treatise *ʿUqlat al-mustawfiz*. [Reading note: the unusual order-names are transliterated as printed in this edition; they have not been replaced by conjectured canonical forms.]
 
@@ -5735,11 +6343,15 @@ This is why he says “Understand.” He says “Remember” so that you may the
 
 2008 scan printed p182, PDF index180; scan_p182.png. The image reads من مقام الملك الروح, not the digital فلك الروح.
 
-## Printed p. 183 · The original spiritual sources of rank-based affinity
+Related passage IDs: QNW-WIT256
 
-**MSH-P183** · [Arabic source](https://archive.org/details/machra3-khosous/page/n181/mode/1up)
+## MSH-P183 · Printed p. 183 · The original spiritual sources of rank-based affinity
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n181/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 فإن مبدأ تعين أعلاها درجة أعني أرواح الكمل ، أم الكتاب ومبدأ تعين بعضها علما ووجودا متوحدا ذات القلم الأعلى المسمى بالعقل الأول والروح الكلي ومبدأ تعين بعضها اللوح المحفوظ ، وبعضها عرشية إسرافيلية ، وبعضها ميكائيلية من مقام الكرسي وروحانيته ، وبعضها جبرائيلية من مقام سدرة المنتهى ، هكذا إلى آخر أجناس هذه الأصول الروحانية المختصة بإسماعيل صاحب سماء الدنيا المعبر عنه عند حكماء المشائيين بالعقل الفعال كما مرّ ] . 
 
@@ -5753,7 +6365,7 @@ This is why he says “Understand.” He says “Remember” so that you may the
 
 قال الشيخ الصدر رضي اللّه عنه : [ والوجه الآخر من وجهة مظاهرها المثالية ، فإن الأرواح
 
-### English
+### English · passage 1
 
 **Qūnawī (continuing):** ...the original sources from which spirits are determined. The source of the highest of them, that is, the spirits of the perfected, is the Mother of the Book (*umm al-kitāb*). The first determination of certain others, in knowledge and in an existence comprehended under unity, is the reality of the Supreme Pen, called the First Intellect and Universal Spirit. Some are determined from the Preserved Tablet, others from the spirituality of the Throne associated with Isrāfīl, some from the spirituality of the Footstool associated with Mīkāʾīl, and others from the rank of Jibrīl at the Lote Tree. This ordering continues down through the types of these spiritual principles to the lowest heaven, whose spiritual chief Ismāʿīl corresponds to what the Peripatetic philosophers call the Active Intellect.
 
@@ -5767,11 +6379,15 @@ The Peripatetics are a group of philosophers whose earliest members learned from
 
 **Qūnawī:** The other aspect concerns their imaginal manifestations, for spirits ... [continued on p. 184].
 
-## Printed p. 184 · The absolute imaginal world as a locus of spirits
+Related passage IDs: QNW-WIT256, QNW-WIT257
 
-**MSH-P184** · [Arabic source](https://archive.org/details/machra3-khosous/page/n182/mode/1up)
+## MSH-P184 · Printed p. 184 · The absolute imaginal world as a locus of spirits
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n182/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 على اختلاف مراتبها لا تخلو عند جميع المحققين من مظاهر تتعين وتظهر بها ، وأول مراتب مظاهر أرواح الأناسي ما عدا الكمّل ، عالم المثال المطلق ] . 
 
@@ -5782,7 +6398,7 @@ The Peripatetics are a group of philosophers whose earliest members learned from
 قال الشيخ : [ والصور الخيالية ، وإن كانت مواد انتشائها لطائف قوى هذه النشأة الطبيعية ، وجواهرها المطهرة ، والمزكّاة المكتسية صفات الأرواح ، فإن صفاتها وأحوالها في الجنة إنما يظهر بحسب روحانياتها وقواها وخواص مظاهرها المثالية  “ 1  “ ] . 
 إشارة إلى بيان أن عالم المثال  “ 2  “ مرجع مظاهر أرواح أهل الجنة ، فهو مبدأ مظاهرها أيضا ؛ وذلك لأن صورة الجنانية مظاهر أرواحهم بلا شك ، فهذه الصور ، وإن كان أهل منشأها لطائف قوى هذه النشأة الطبيعية ، أعني : القوى الحيوانية التي هي الحواس الظاهرة والباطنة ، والقوى النباتية إذا تلطفت بالأعمال الصالحة ، والأخلاق الفاضلة ،
 
-### English
+### English · passage 1
 
 **Qūnawī (continuing):** ...despite their unequal ranks, are never without the loci through which they become determined and appear, according to all the realized knowers. The first rank in which human spirits appear, apart from the perfected, is the **absolute imaginal world** (*ʿālam al-mithāl al-muṭlaq*).
 
@@ -5794,11 +6410,15 @@ The argument is that, without loci of manifestation, spirits could not be distin
 
 **Al-Mahāʾimī:** This indicates that the imaginal world both supplies and receives the loci through which the spirits of the people of Paradise appear. The natural human faculties involved are the animal powers, including outer and inner senses, and the vegetative faculties, as these are refined by righteous acts and noble character. [Continued p. 185.]
 
-## Printed p. 185 · Imaginal forms and the degrees of Paradise
+Related passage IDs: QNW-WIT257
 
-**MSH-P185** · [Arabic source](https://archive.org/details/machra3-khosous/page/n183/mode/1up)
+## MSH-P185 · Printed p. 185 · Imaginal forms and the degrees of Paradise
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n183/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 ولطائف جواهرها ، أعني : القلب والنفس بشرط تطهير القلب عن لوث النفس الأمارة ، وترى النفس عن صفاتها وأخلاقها بحيث اكتسبت تلك الجواهر صفات الأرواح وكانت الصور الجنانية على حسبها إلا أن لها أحوالا وأوصافا في الجنة ليكون ظهورها فيها إلا بحسب روحانياتها وقوتها متجسدة بالصورة المثالية ، وبحسب خواص مظاهرها المثالية بدليل وقوع التبدل والتغير فيها من غير كون وفساد ، فصفات تلك الصور وأحوالها من عالم المثال مرجع لمظاهر الأرواح ، فهو مبدأ لمظاهرها أيضا ، ثم رجع إلى بيان المناسبة بذلك بين الناس . 
 
@@ -5810,7 +6430,7 @@ The argument is that, without loci of manifestation, spirits could not be distin
 أشار إلى أن عالم المثال كما هو مرجع مظاهر أرواح أهل الجنة من حيث صفاء صورهم وأحوالهم ، كذلك هو مرجع منازلها ، وهذا أدل على كونه مبدأ مظاهرها ، وذلك إن منازل أهل الجنة مراتب الأرواح ، ظهرت فيها من حيث مكانتها عند الحق من حيث قربها وبعدها في المناسبة مع الحق ، فترتفع وتدنو منازلهم بحسب ذلك من حيث مظاهرها المثالية ، وهي مظاهر الأولى ، فمن كان مثاله على أصفى حال أو أكدر فمنزلة بحسب ذلك . 
 واستدل على ذلك بقوله صلى اللّه عليه وسلم لعلي عليه السلام :  “ إن قصرك في الجنة في مقابلة قصري  “ ؛ لأن قرب مكانته عليه السلام بالنسبة إلى مكان النبي صلى اللّه عليه وسلم غير ممكن ؛ لأن أدنى مراتب الأنبياء ، أعلى مراتب الأولياء ، وهو صلى اللّه عليه وسلم أفضل الأنبياء ، فأين مكانته من مكانة علي ، فهو بالضرورة من
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** ...and the subtleties of its substances, namely the heart and soul, on condition that the heart is purified of the stain of the commanding soul and the soul is purified of its attributes and dispositions, so that these substances acquire the qualities of spirits and the paradisal forms accord with them. Yet those forms have states and qualities in Paradise that appear only according to their spiritualities and powers embodied in imaginal form, and according to the properties of their imaginal manifestations. The evidence is their transformation and alteration without generation and corruption. The qualities and states of those forms therefore belong to the imaginal world. Since this world is the return of the manifestations of spirits, it is also their beginning. He then returns to explaining affinity among people through this.
 
@@ -5822,11 +6442,15 @@ He adduces the Prophet's saying to ʿAlī, “Your palace in Paradise faces my p
 
 **Editorial source note:** The modern editor says he could not locate either wording of the palace report to ʿAlī. The reports above are translated as attributions in the medieval text; this review has not independently verified their transmission.
 
-## Printed p. 186 · The imaginal 'market' and multiple layers of manifestation
+Related passage IDs: QNW-WIT257
 
-**MSH-P186** · [Arabic source](https://archive.org/details/machra3-khosous/page/n184/mode/1up)
+## MSH-P186 · Printed p. 186 · The imaginal 'market' and multiple layers of manifestation
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n184/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 حيث المظاهر المثالية ، فلذلك جعله رضي اللّه عنه من الإشارات اللطيفة ، وقد أكّد هذه الإشارات ما ورد في الرواية الأخرى :  “ في محاذاة قصري  “ ، المحاذاة في الصورة الظاهرة أكثر ، فهي أيضا إشارة لطيفة إلى المظاهر المثالية على أنه لو قربت مكانته عليه السلام من مكانته صلى اللّه عليه وسلم ، فكيف يكون مثل ذلك العباس ، ولا يبعد القرب في المظاهر المثالية مع البعد في المكانة من اللّه تعالى ؛ لأن هذه مناسبة في الأمور الحسية ، فلا تستلزم المناسبة في الأمور الحقية على ذلك المقدار بعينه . 
 
@@ -5837,7 +6461,7 @@ He adduces the Prophet's saying to ʿAlī, “Your palace in Paradise faces my p
 
 فأجاب بأن : ما ذكرنا أولا ، هي الصور الأصلية والمنازل الأصلية جعلت من بحر عالم المثال المطلق ، وهذه الصور والمنازل فرعية حصلت من بعض جداول عالم المثال ، إذ عالم المثال المطلق بحر عظيم معدن مظاهر وصور كثيرة ، فاستلزمت المنازل الأصلية التي جعلت فيها التفاوت ، لا يستلزم في المنازل الفرعية ، وخواص مظاهرها التي ظهرت في
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** ...the imaginal manifestations. That is why he counted this among the subtle allusions. The other narration, “alongside my palace,” confirms it: alignment applies more directly to outward form, so this too subtly points to imaginal manifestations. Moreover, even were ʿAlī's standing near that of the Prophet, how could something similar hold for al-ʿAbbās? Nearness in imaginal manifestations is quite possible despite distance in standing before God. This is an affinity in sensible things and does not require affinity in realities related to the Real to precisely the same extent.
 
@@ -5849,11 +6473,15 @@ He then anticipates the objection that this account succeeds only if spiritual a
 
 He answers that the first account concerns original forms and original dwellings, constituted from the sea of the absolute imaginal world. These other forms and dwellings are secondary, arising from some of that world's streams. The absolute imaginal world is a vast sea, the source of many manifestations and forms. The distinctions required in the original dwellings need not be required in the secondary ones; and the properties of their manifestations that appeared in ... [continued on p. 187].
 
-## Printed p. 187 · The nourishment and attire of Paradise
+Related passage IDs: QNW-WIT257
 
-**MSH-P187** · [Arabic source](https://archive.org/details/machra3-khosous/page/n185/mode/1up)
+## MSH-P187 · Printed p. 187 · The nourishment and attire of Paradise
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n185/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 الصورة الأولى في الخواص الأصلية العالية ، وهذه من الخواص العارضية ، إذ فيها . 
 ثم استدل على إثبات هذا الجدول ، بأنه مجرى المدد الواصل من عالم المثال إلى مظاهر أرواح أهل الجنة إذ لا بد لهم من المدد ؛ لأنهم كل حين خلق جديد ، وليس ذلك من بحر عالم المثال المطلق ، إذ لا تخصص فيه لشخص دون شخص ، فلا بدّ من الجدول ، فافهم بالنسبة إلى كل صورة ومنزلة جدول منه ؛ لأن نسبنا الأولى إلى البحر ؛ لأنها من جداول كثيرة جامعة إلى كنز الخواص ، فلذلك جعلناها أصلية
@@ -5867,7 +6495,7 @@ He answers that the first account concerns original forms and original dwellings
 إشارة إلى ما يظهر عليهم من حيث روحانيتهم ومكانتهم من الحق بعد بيان ما يظهر عليهم من جهة مظاهرة المثالية وخواصها ، وفيه دفع ما يتوهم أنها من عالم المثال أيضا ؛ فلذلك قال بهذه العبارة : ( وأما الخلع والتحف ) ، وقيد بالجمهور إذ الكمّل لا يحتاجون إلى ذلك ، وهم دائمون في الرؤية . 
 وأما البله ، فهم لا يصلون إلى هذه الرتبة ، لعدم كمال روحانيتهم المناسبة لرتبة الرؤية ، وبين أنها من عند الحق ، إشعارا بأنها ليست من عالم المثال ، إذ لا مناسبة بذلك مع
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** ...the first form belong to the original higher properties; these others belong to accidental properties. [The printed sentence then has the incomplete words إذ فيها, “since in them ...”.]
 
@@ -5881,11 +6509,15 @@ The supply of manifestation must continually reach the inhabitants because exist
 
 **Al-Mahāʾimī:** This indicates what appears to them in respect of their spirituality and standing before the Real, after explaining what appears to them in respect of their imaginal manifestations and properties. It also rejects the supposition that these gifts likewise belong to the imaginal world; hence the wording, “As for the robes and gifts.” He specifies the generality of the inhabitants because the perfected have no need of these: they abide continually in vision. The simple-hearted (*al-bulh*) do not attain this rank, because their spirituality lacks the perfection corresponding to the rank of vision. He explains that the gifts come from the Real to indicate that they do not come from the imaginal world, for through that world there is no affinity with ... [continued on p. 188].
 
-## Printed p. 188 · The gifts brought before the vision of the Real
+Related passage IDs: QNW-WIT257, QNW-WIT258
 
-**MSH-P188** · [Arabic source](https://archive.org/details/machra3-khosous/page/n186/mode/1up)
+## MSH-P188 · Printed p. 188 · The gifts brought before the vision of the Real
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n186/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 الحق ، فلا يستحقون به الحمل إلى كثيب الرؤية لزيارة الحق ومجالسته ، فهي مظاهر أحكام الأسماء والصفات التي استندا في الواقع إليها ، وإن لم يعلموا استنادهم إليها إلى الآن ، ثم ذكر فائدة إتيان الملائكة بها ، بأنه لا بد لهم من حصول استعداد جديد ، إذ المستمر لو كان كافيا لمراتب الرؤية بدوامه ؛ على أن الرؤيا تحتاج إلى مناسبة ذاتية وأسمائية ، لكن المناسبة بالذات لا تحصل بنفسه إذ لا علاقة بينهما ، بل بواسطة الأسماء والصفات التي لها ربوبية خاصة على أولئك الزائرين ، فبتلك التحف يحيي الرقائق ، أي : تعلقات ارتباطهم بالحق ، فإذا حييت تلك الرقائق ، قربت المناسبة مع الحق ، فصارت من جهة الذات والأسماء جميعا تستحق الحمل إلى كثيب الرؤية . 
 
@@ -5897,7 +6529,7 @@ The supply of manifestation must continually reach the inhabitants because exist
 
 وتلك السلطنة أحكام تلك الأسماء السابقة المقتضية للاجتماع ، فمتى ظهرت سلطنة هذه الأسماء ظهرت الأحكام القاضية بالامتياز بين أولئك الزائرين وبين الحق ، فحصل البعد فيما بينهما وحصل الحجاب وهكذا انتهت سلطنة هذه الأسماء المقتضية للبعد والحجاب ، وانتهت أحكامها ، عادت سلطنة الأسماء الأول ، فعادوا إلى الرؤية ، فعلم أن لكل اسم حدّا معلوما في السلطنة محلا وزمانا ، فلها الربوبية بحسب تلك
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** ...the Real. Thus through it they do not merit being carried to the mound of vision to visit and sit with the Real. These gifts are manifestations of the rulings of the names and attributes on which the visitors actually depend, even if they have not yet known that dependence. He then explains the benefit of the angels' bringing the gifts: the visitors must acquire a new receptivity. If their continuing receptivity sufficed, vision would continue with it. Vision moreover requires affinity of Essence and names; affinity with the Essence does not arise by itself, since there is no connection between the two, but through the names and attributes possessing a particular lordship over those visitors. The gifts enliven the subtle ties, namely their connections with the Real. Once these ties are enlivened, their affinity with the Real draws near, and through both Essence and names together they merit being carried to the mound of vision.
 
@@ -5911,11 +6543,15 @@ When the sway of these names appears, the rulings requiring distinction between 
 
 Facsimile printed p188, PDF zero-based index186, scan_p188.png: the Qūnawī lemma reads النسبة and جمعهم.
 
-## Printed p. 189 · Text Twenty — Degrees of the audience with the Real
+Related passage IDs: QNW-WIT258
 
-**MSH-P189** · [Arabic source](https://archive.org/details/machra3-khosous/page/n187/mode/1up)
+## MSH-P189 · Printed p. 189 · Text Twenty — Degrees of the audience with the Real
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n187/mode/1up
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 الأزمنة . 
 
@@ -5929,7 +6565,7 @@ Facsimile printed p188, PDF zero-based index186, scan_p188.png: the Qūnawī lem
 
 قال الشيخ رضي اللّه عنه : [ وأما حال الكمّل - نفعنا اللّه بهم فيما ذكرنا وسواه - فإنه بخلاف
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** ...times.
 
@@ -5943,11 +6579,15 @@ He then explains that the length or brevity of the audience accords with the afo
 
 **Qūnawī:** As for the condition of the perfected—may God benefit us through them in what we have mentioned and in other matters—it is contrary to ... [continued on p. 190].
 
-## Printed p. 190 · The perfected and unrestricted essential self-disclosure
+Related passage IDs: QNW-WIT258
 
-**MSH-P190** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P190 · Printed p. 190 · The perfected and unrestricted essential self-disclosure
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 ذلك فإنهم قد تجاوزوا حضرات الأسماء والصفات والتجليات الخصيصة بها إلى عرصة التجلي الذاتي ، فهم كما أخبر النبي صلى اللّه عليه وسلم عن شأنهم بقوله :  “ صنف من أهل الجنة ، لا يستتر الرب عنهم ، ولا يحتجب  “  “ 1  “ ، وذلك أنهم غير محصورين في الجنة وغيرها من العوالم والحضرات كما قد أشرت إليه في غير هذا الموضع ، من أن الجنة لا تسع إنسانا كاملا ولا غير الجنة ، فهم وإن ظهروا فيما شاءوا من المظاهر ، فإنهم منزهون عن الحصر والقيود ، والأمكنة والأزمنة ، كسيدهم ، بل هم معه أينما كان ، وحيث لا أين ولا حيث ولا جرم ولا بعد ولا حجاب ولا انتقال لزيارة ولا انتهاء بحكم وقت من الأوقات والسماء والصفات ، فافهم واجتهد ، وتمنّ أن تلحق بهم ، وأن تشاركهم في بعض مراتبهم العلية : فإن اللّه ولي الإحسان ] . 
 
@@ -5955,7 +6595,7 @@ He then explains that the length or brevity of the audience accords with the afo
 
 وسبب عدم التستر والاحتجاب أنهم لا يتقيدون بمظهر سواء الجنة وغيرها من العوالم والحضرات ؛ وذلك لأن كل مقيد ضيق والإنسان الكامل واسع بسعة ربه ، فله بكل مكان مظهر من غير تقيد به ، فهم وإن ظهروا فيما شاءوا من المظاهر لا يتقيدون به ، وكذا لا يتقيدون بالأمكنة والأزمنة ، وإلا تقيدوا بها ، وأنهم لتسترهم في الظهور في كل مكان وزمان ، مع عدم التقيد ، بل هم معه في كل مكان وزمان ، وحيث لامكان ولا جهة ، بل صاروا مظاهر كلية لربهم بجميع تجلياته ، لا جرم لا بعد لهم ولا حجاب عنه بوجه من الوجوه ، فكذا لا انتقال عليهم لزيارة لما فيه من التخصيص بالمكان ، وهم منزهون عنه ،
 
-### English
+### English · passage 1
 
 **Qūnawī (continuing):** “—that. They have passed beyond the presences of the names and attributes, and the self-disclosures peculiar to them, into the open field of essential self-disclosure. They are as the Prophet—God bless him and grant him peace—reported concerning them: ‘A class of the people of Paradise from whom the Lord neither hides nor veils Himself.’ This is because they are not confined within Paradise or any other world or presence. As I have indicated elsewhere, neither Paradise nor anything other than Paradise can encompass a perfect human being. Although they appear in whichever loci of manifestation they will, they transcend confinement, restrictions, places, and times, as does their Master. Rather, they are with Him wherever He is, and where there is neither ‘where’ nor ‘whereabouts’: no body, distance, veil, movement to a visitation, or ending under the ruling of a particular time, name, or attribute. Understand, strive, and aspire to join them and share in some of their exalted ranks, for God is the patron of beneficence.”
 
@@ -5967,11 +6607,15 @@ The reason for this absence of hiding and veiling is that they are not restricte
 
 Full page retranslation replaces compressed gloss and removes content that belongs to p. 189. Scan compared with printed p. 190. Printed والسماء والصفات is contextually read as the names and attributes, with السماء retained in the Arabic transcription; this is a marked interpretive reading, not manuscript-supported emendation. The awkward printed opening of the gloss (فقال: خفاء لهم) is rendered conservatively.
 
-## Printed p. 191 · Intermediate ranks and Adam in the lowest heaven
+Related passage IDs: QNW-WIT258, QNW-WIT259
 
-**MSH-P191** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P191 · Printed p. 191 · Intermediate ranks and Adam in the lowest heaven
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 ولا انتهاء لرؤيتهم بحكم وقت من الأوقات ؛ لأنهم جاوزوا الأزمنة ، ولا بحكم الأسماء والصفات القاضية بالامتياز ؛ لأنهم تجاوزوا حضرات الأسماء والصفات ، فافهم . 
 فإنهم مع الحق في الكل ، واجتهد أن تلحق بهم في بعض مراتبهم العالية بتبعيتهم ، بل وأن تشاركهم في ذلك بالاستقلال ، واللّه ولي الإحسان ، فلا تنظر إلى قصورك فتنقطع عن هذا الجهد ) . 
@@ -5984,7 +6628,7 @@ Full page retranslation replaces compressed gloss and removes content that belon
 
 وهذا عن تفاصيل إليها أشار الشيخ فقال رضي اللّه عنه : [ فأهل الشقاء هم الذين لم تفتح لهم أبواب السماء حال الموت ، وهم في شقائهم على مراتب مختلفة ؛ فإن النبي عليه وعلى آل بيته التحية : أخبر عن أرواح بعض الأشقياء أنها تجمع في برهوت  “ 2  “ والحليتين والخاسئين
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —nor does their vision end under the ruling of a particular time, for they have passed beyond times; nor under the ruling of the names and attributes that require distinction, for they have passed beyond the presences of the names and attributes. Understand. They are with the Real in all things. Strive to join them in some of their exalted ranks by following them—indeed, to share independently with them in this. God is the patron of beneficence, so do not look at your own deficiency and thereby cease this striving.
 
@@ -6000,11 +6644,15 @@ He then indicates the details, saying:
 
 Full page retranslation restores the final Qūnawī lemma, previously omitted, and preserves its continuation onto p. 192. Scan checked. The expression printed as الجانب القوي أنا لها، والقوي أحلى من الضعيف is textually difficult; English flags the unclear short phrase rather than inventing an explanation. Names after Barahut are transliterations of this edition’s uncertain forms, not verified geographical identifications.
 
-## Printed p. 192 · Degrees of wretchedness and felicity in the barzakh
+Related passage IDs: QNW-WIT259
 
-**MSH-P192** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P192 · Printed p. 192 · Degrees of wretchedness and felicity in the barzakh
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 والخابتين  “  “ 1  “ . مبدأ مراتب الأشقياء من مقعر السماء الدنيا التي فيها آدم ، وأنزلها ما ذكره عليه السلام ، ومراتب عموم السعداء في البرزخ السماء الدنيا على درجات متفاوتة يجمعها مرتبة واحدة ، ومراتب أهل الخصوص من السعداء ما أشار إليه صلى اللّه عليه وسلم في حديث الإسراء بعد ذكره آدم من أن :  “ عيسى عليه السلام في الثانية ، ويوسف في الثالثة ، وإدريس في الرابعة ، وهارون في الخامسة ، وموسى في السادسة ، وإبراهيم في السابعة على جميعهم السلام  “  “ 2  “ ، 
 وهكذا شأن شاركي هؤلاء الأنبياء والوارثين لهم تماما متفاوت المراتب في هذه السماوات ، فإن هذه الأخبار من الرسول صلى اللّه عليه وسلم هي باعتبار ما شاهده في إحدى إسرائه ، فإنه ثبت أن النبي صلى اللّه عليه وسلم حصل له أربعة وثلاثون معراجا رواها وجمعها وأثبت رواياتها أبو نعيم الحافظ الأصفهاني رحمة اللّه عليه ] . 
@@ -6016,7 +6664,7 @@ Full page retranslation restores the final Qūnawī lemma, previously omitted, a
 فوجه الجمع بينهما الدّال على اختلاف مراتبهم ، أن مبدأ مراتب الأشقياء من مقعر سماء الدنيا فأعلاها ، وهو لما كان أدنى شقاوة كرة الأثير ؛ لقربهم من آدم عليه السلام في العصيان ورجاء الغفران ، وأنزلها ما ذكره صلى اللّه عليه وسلم : من أن بعضها تجمع في برهوت ، والخابتين ، 
 ثم ذكر أن مراتب عموم السعداء ، أي من كان شقاوة في عالم البرزخ ، قيد به إذ في القيامة يكونون فوق تلك المنازل في الجنة السماء الدنيا ، ولهم فيها أيضا مراتب مختلفة مع اشتراكهم في رتبة سماء الدنيا ، وذلك لجمعهم بين الطاعة والعصيان وحصول الغفران ، كآدم عليه السلام ومراتب
 
-### English
+### English · passage 1
 
 **Qūnawī (continuing):** “—and al-Khābitayn. The ranks of the wretched begin at the concave inner surface of the lowest heaven, in which Adam is, and their lowest rank is what he—peace be upon him—mentioned. The ranks of the generality of the felicitous in the barzakh are in the lowest heaven, at differing degrees gathered within a single rank. The ranks of the elect among the felicitous are those to which he pointed in the report of the Night Journey after mentioning Adam: Jesus is in the second heaven, Joseph in the third, Idrīs in the fourth, Aaron in the fifth, Moses in the sixth, and Abraham in the seventh—peace upon them all. The same applies to those who fully share with these prophets and inherit from them, at differing ranks within these heavens. These reports from the Messenger—God bless him and grant him peace—concern what he witnessed during one of his night journeys. For it is established that the Prophet experienced thirty-four ascents, whose reports Abū Nuʿaym, the traditionist of Isfahan—God have mercy upon him—transmitted, collected, and authenticated.”
 
@@ -6032,11 +6680,15 @@ He then mentions that the ranks of the generality of the felicitous—that is, t
 
 Full page retranslation preserves all lemma and gloss and the continuation onto p. 193. Scan checked. The claim of thirty-four ascents is a claim in Qūnawī’s text, not independently authenticated by this working edition. The printed wording أي من كان شقاوة is syntactically defective and is marked in English. The uncertain place/name forms are retained as printed transliterations.
 
-## Printed p. 193 · Why heavenly ranks are not confined to seven prophets
+Related passage IDs: QNW-WIT259
 
-**MSH-P193** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P193 · Printed p. 193 · Why heavenly ranks are not confined to seven prophets
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 خواص السعداء فوق ذلك ، وإن كانت لهم معاص لكنها بدلت بالحسنات ، فلم يعبأ بها . 
 كما أخبر عليه السلام عن هؤلاء الأنبياء ، وهكذا شأن الكمّل من ورثتهم وأتباعهم مع اختلافهم أيضا في المرتبة ، ذكر أنهم لكونهم من أهل الكمال لا ينحصرون هناك ، بل هي بعض مظاهرهم ، فإن هذه الأخبار من الرسول صلى اللّه عليه وسلم باعتبار بعض مشاهداته الحاصلة في بعض معاريجه . 
@@ -6048,7 +6700,7 @@ Full page retranslation preserves all lemma and gloss and the continuation onto 
 
 وقد قال عزّ وجلّ في حق آدم : إِنِّي جاعِلٌ فِي الْأَرْضِ خَلِيفَةً [ البقرة : 30 ] ، فكيف يكون دونه ، وكذا غيره من أكابر الأنبياء والمرسلين ، مع أن هارون ليس من المرسلين ، فإذا كان له تعين في السماويات ، فكيف لا يكون للمرسلين ذلك ، فإن لم يكن تعين مراتبهم في السماوات ، فأين تتعين مراتبهم البرزخية بعد الموت قبل القيامة ، وليس في
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —the elect among the felicitous are above that. Even if they committed acts of disobedience, these were replaced with good deeds and so were not taken into account. This is as the Prophet reported concerning these prophets. The same applies to the perfected among their heirs and followers, although their ranks also differ. He explains that, because they are people of perfection, they are not confined there; these are only some of their loci of manifestation. The Messenger's reports concern some of what he witnessed during some of his ascents.
 
@@ -6062,11 +6714,15 @@ Full page retranslation preserves all lemma and gloss and the continuation onto 
 
 Full page retranslation restores detailed argument and follows its boundary. Scan checked. The Qūnawī lemma has the defective printed transition ومن ثم إلى العالم الأعلى الأسفل; English marks the crux rather than silently constructing a complete Arabic sentence. The commentary’s descriptions of the prophets are translated as the author’s statements.
 
-## Printed p. 194 · Heavenly affinities and the opening of Text Twenty-One
+Related passage IDs: QNW-WIT259, QNW-WIT260
 
-**MSH-P194** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P194 · Printed p. 194 · Heavenly affinities and the opening of Text Twenty-One
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 الواقع لتعينها إلا العالم الأعلى السماوي ، والعالم الأسفل العنصري ، والعالم السفلي محل تعينات مراتب الأشقياء على اختلاف طبقاتهم ، فكيف يشارك السعداء بل الأنبياء والكمّل من ذريتهم في تلك المراتب ، ولا يمكن أن يكون تعينات مراتبهم في تلك المنازل ؛ لأن ذلك يختص بما بعد الحشر . 
 
@@ -6079,7 +6735,7 @@ Full page retranslation restores detailed argument and follows its boundary. Sca
 
 قال رضي اللّه عنه : [ اعلم أن الحق هو الوجود المحض لا اختلاف فيه ، وإنه واحد وحدة حقيقية لا يتعقل في مقابلة كثرة ، ولا يتوقف تحققها في نفسها ، ولا تصورها في العلم
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —reality there are only the upper, heavenly world and the lower, elemental world in which they could be determined? The lower world is the locus of the determination of the ranks of the wretched, according to their differing levels. How could the felicitous—indeed, the prophets and the perfected among their descendants—share those ranks with them? Nor can their ranks be determined in those [paradisal] abodes, because that belongs specifically to what follows the gathering.
 
@@ -6099,11 +6755,15 @@ He then states the cause of this particular witnessing. In that state, an affini
 
 Full page retranslation restores the transition and beginning of Text Twenty-One. Scan checked. The printed phrase إلا من مقتضى مشاركته الذاتية لا تتغير conflates the changeable sharing with the assertion that essential affinity does not change; the translation marks the syntactic difficulty rather than treating an inferred repair as attested Arabic. Bracketed paradisal identifies the contextual referent of تلك المنازل without adding an Arabic reading.
 
-## Printed p. 195 · True unity, conceptual opposition, and the theologians
+Related passage IDs: QNW-WIT260
 
-**MSH-P195** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P195 · Printed p. 195 · True unity, conceptual opposition, and the theologians
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 الصحيح المحقق على تصور ضد لها ، بل هي لنفسها ثابتة مثبتة لا مثبتة . 
 وقولنا : وحدة للتنزيه والتفهيم لا للدلالة على مفهوم الوحدة على نحو ما هو متصور في الأذهان المحجوبة ] . 
@@ -6118,7 +6778,7 @@ Full page retranslation restores the transition and beginning of Text Twenty-One
 قلنا : لما عرضت الكثرة التي فيه ، فقد عرضت للكثير بالواسطة ، وتغاير الجهات أمر عقلي . 
 قيل : لو كانت نفس الوجود ، لكان التفريق إعداما وهو باطل ، إذ ليس شق
 
-### English
+### English · passage 1
 
 **Qūnawī (continuing):** “—in sound, realized knowledge upon conceiving an opposite to it. Rather, it is established through itself and establishes [others]; it is not established [by another]. Our saying ‘unity’ is for declaring transcendence and conveying understanding, not for indicating the concept of unity as it is conceived in veiled minds.”
 
@@ -6136,11 +6796,15 @@ It may be said: if unity were existence itself, division would be annihilation; 
 
 Full retranslation against the page and scan removes the Text Twenty-One heading/opening that belongs to p. 194 and preserves the objection continuing onto p. 196. Printed p. 195 was visually compared. The difficult phrase إذ هو فيه وثمة is rendered according to its immediate contrast of manifestation and hiddenness without adding a new doctrine.
 
-## Printed p. 196 · The sea analogy and the limits of apprehending pure existence
+Related passage IDs: QNW-WIT260
 
-**MSH-P196** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P196 · Printed p. 196 · The sea analogy and the limits of apprehending pure existence
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 البعوض بإبرة البحر الأخضر إعداما له ، وإحداثا لبحرين آخرين ضرورة . 
 قلنا : إنما يمكن التفريق إعداما لو كان مبدأ للوحدة ، فإن وحدة البحر أيضا باقية ، سلمنا أنه يكثر ، فقد عدم من حيث الوحدة ، وإحداث البحرين ، أي : صفة جعلت لبحرين قبل الأحداث لا يكون محض عدم ، وإن كانت غير الوجود ، فلم يذكر الدلالة على مفهوم الوحدة المقابلة للكثرة ، وهي أن يكون مفروضها شخصا لا يقبل القسمة بالوحدة والكثرة ، فيه يتحدان من غير أن تتعدد ذات الواجب تعالى . 
@@ -6151,7 +6815,7 @@ Full retranslation against the page and scan removes the Text Twenty-One heading
 
 قال الشيخ رضي اللّه عنه : [ وكل ما يدرك في الأعيان ، ويشهد من الأكوان بأي وجه كان أدركه الإنسان ، وفي أي حضرة حصل الشهود ، ما عدا الإدراك المتعلق بالمعاني المجردة والحقائق في حضرة غيبها بطريق الكشف ؛ ولذلك قلت في الأعيان ، أي : ما أدرك في مظهر ما كان ، فإنما ذلك المدرك ألوان وأضواء وسطوح مختلفة الكيفية متفاوتة الكمية ، تظهر أو مثلتها في عالم المثال المتصل بنشأة الإنسان أو المنفصل عنه من وجه على نحو ما هو في الخارج ، أو ما مفرداته في الخارج ، وكثرة الجميع محسوسة ، والأحدية فيها معقولة أو محدوسة ، وكل ذلك أحكام الوجود أو قل صور نسب علمه أو صفات لازمة له بحيث
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —of the green sea by a mosquito with its needle plainly does not annihilate it and bring two other seas into being.
 
@@ -6167,11 +6831,15 @@ We answer: division could be annihilation only if it [negated] unity; the sea's 
 
 Scan compared. The print has لو كان مبدأ للوحدة, literally “if it were a principle of unity”; the English [negated] is a contextual interpretive repair, not an attested Arabic reading. The mosquito/needle/sea analogy is restored. The final lemma ends on بحيث at this page boundary; its continuation is on p. 197.
 
-## Printed p. 197 · Outward sense, inward imagination, and what each apprehends
+Related passage IDs: QNW-WIT260, QNW-WIT261
 
-**MSH-P197** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P197 · Printed p. 197 · Outward sense, inward imagination, and what each apprehends
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 اقترانه بكل عين موجودة بسر ظهوره ، فيظهر فيها وبها ولها بحسبها كيف شئت ، وأطلقت ليس هو الوجود ] . 
 
@@ -6186,7 +6854,7 @@ Scan compared. The print has لو كان مبدأ للوحدة, literally “if 
 
 لا يقال : وما ذكرتم أن الوحدة فيها معقولة أو محدوسة ، فقد أدركت ؛ فأدرك
 
-### English
+### English · passage 1
 
 **Qūnawī (continuing):** “—its association with each existent entity through the secret of its manifestation. It appears in it, through it, for it, and according to it. However you wish to put it, what is thus named is not existence itself.”
 
@@ -6206,11 +6874,15 @@ Do not say: ‘You have said that their unity is intellectually grasped or intui
 
 Full retranslation restores the opening continuation and the specific psychology/cosmology omitted from the previous paraphrase. Scan compared. The historical locations assigned to imagination and the separate imaginal world are translated as the commentator’s account. Printed أو على ما تقرر ذاته في الخارج is obscure; [their elements] follows the immediately preceding lemma’s مفرداته and is an interpretive rendering, not an Arabic emendation.
 
-## Printed p. 198 · Rulings of existence and the multiplicity involved in knowing
+Related passage IDs: QNW-WIT261
 
-**MSH-P198** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P198 · Printed p. 198 · Rulings of existence and the multiplicity involved in knowing
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 الوجود ؛ لأنّا نقول : المراد الإدراك التام ، ولم يدرك كذلك ، بل في الجملة ؛ على أن هذه الوحدة المدركة فيها ليست هي وحدة الوجود ، فإنها لا تدرك فيها أصلا ، وإذا لم يكن المرئي من هذه الأشياء نفس الوجود ، فنقول كل ذلك المدرك أحكام الوجود من حيث اقترانه لكل عين أضيف إليه الوجود ، وليس ذلك الاقتران بطريق الاتصال ، بل بسر ظهوره فيها ، 
 أي : في حقائقها ، وظهوره إذا هي تراه في غيره ، كما ترى في الآفاق والأنفس ؛ ويظهر بها لذاتها أو لغيره وبحسبها لا بكليته ؛ كما هو ، فلذلك يتفاوت ظهور في الإنسان وغيره . 
@@ -6225,7 +6897,7 @@ Full retranslation restores the opening continuation and the specific psychology
 
 أي إنما لم يدرك الوجود فيها ؛ لأنه واحد ولا يدرك الواحد بالكثير من حيث هو كثير ؛ لأنه يغايره ، والمغايرة مباينة ، والمباينة مانعة من العلم على ما مر في النص الحادي عشر .
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —‘existence has been apprehended.’ For we answer: complete apprehension is intended, and it has not been apprehended in that way, but only generally. Moreover, this unity apprehended in the things is not the unity of existence, which is not apprehended in them at all. Since what is seen of these things is not existence itself, we say that all this apprehended content is the rulings of existence in respect of its association with each entity to which existence is attributed. This association is not by contact, but through the secret of its appearing in them—that is, in their realities—and its appearing when they see it in another, as you see it in the horizons and in yourselves. It appears through them for themselves or for another, and according to them, not in its totality as it is. Hence its manifestation differs in the human being and in other things.
 
@@ -6241,11 +6913,15 @@ The result is that what is apprehended is not existence, which is the one Real i
 
 Full page translation compared with scan. The printed أسرار نفسية is translated as “secrets concerning the soul” rather than silently emended to نفيسة. Explanatory additions about independent objects and perfect identification in the old English are removed.
 
-## Printed p. 199 · Human conditions of knowledge and the return to the fixed entities
+Related passage IDs: QNW-WIT261
 
-**MSH-P199** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P199 · Printed p. 199 · Human conditions of knowledge and the return to the fixed entities
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 ولذا لا يدرك الكثير بالواحد من حيث هو واحد على أنه لو أدرك الواحد بالكثير لا تنقش له صور بحسب أجزاء الكثير ، فيدرك كثيرا ، ولو أدرك الكثير بالواحد لتمثل في الواحد ، وهو محل لعدم اتساع الواحد لتمثل الكثير فيه . 
 نعم يدرك الواحد بالكثير من جهة واحدة كونت الكثير بالوحدة من حيث شمول الواحد له بالقوة ؛ 
@@ -6260,7 +6936,7 @@ Full page translation compared with scan. The printed أسرار نفسية is t
 
 رجوع إلى تحقيق كون الحق هو الوجود ، لا أمر زائد على حقيقته يتقوم بذلك
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** For this reason the many are not apprehended by the one insofar as it is one. Moreover, if the one were apprehended by the many, forms would be impressed according to the parts of the many, and it would be apprehended as many. If the many were apprehended by the one, they would be represented in the one, which is impossible because the one has no capacity for the representation of the many within it. Yet the one may be apprehended by the many through a single aspect [the following construction is compressed], and the many by unity insofar as the one encompasses them potentially.
 
@@ -6276,11 +6952,15 @@ If it is asked, ‘Does this not contradict the earlier account of essential sel
 
 Full translation compared with scan. The print contains an unstable sentence beginning فإذا كان كذلك يقدر إدراك الإنسان and ending لما مر أن الكثير لا يدرك الكثير; the bracketed English reconstructs the argument from the explicit lemma on p. 198 and marks the supplied words. No Arabic repair is presented as attested. The final gloss is kept incomplete at the physical page boundary. The older English softened the absolute language concerning egoity and added an explanatory conclusion absent from the page; both are corrected.
 
-## Printed p. 200 · Arguments for existence as the Real’s Essence and as additional to contingent quiddities
+Related passage IDs: QNW-WIT261
 
-**MSH-P200** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P200 · Printed p. 200 · Arguments for existence as the Real’s Essence and as additional to contingent quiddities
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 الوجود ، وإن لم يلحقها لم توجد بل بقيت معدومة أما الأول ؛ فلأنه لو قام وجوده بماهيته ، لكان محتاجا إليها وهي غيره ، والمحتاج إلى الغير ممكن ، وهي ليست غير الماهية ، وإلا لكان وجوده الواجب بغيره ، فهي الماهية ، والعلة متقدمة على المعلول بالوجود ، فتتقدم الماهية على الوجود بالوجود ، وأنه محال ومتناقض ، ولازمة تقدم الشيء على نفسه والتسلسل . 
 قيل : العلة متقدمة إما بالوجود ، فممنوع كتقدم الماهية الممكنة فإنها قابلة للوجود والقابل يتقدم لا بالوجود ، كما ذكرتم بعينه ، وأيضا فالأجزاء مقومة للماهية المركبة ، والمقومة متقدم وليس بالوجود ؛ لأنّا نجزم بذلك التقدم ، وإن قطعنا النظر عن الوجود . 
@@ -6295,7 +6975,7 @@ Full translation compared with scan. The print contains an unstable sentence beg
 قلنا ثبوتها ضروري ؛ لأنها غير مجعولة على ما يذكره آنفا ، وارتفاع الوجود ممنوع ، وإلا لكان قابلا لنقيضه ، وهو أشد من اجتماع النقيضين على ما مر ، الثاني : إنّا نعقل الماهية مع الشك في وجودها . 
 قيل : في الخارجي دون الذهني ، فإنه نفس التعقل ، والكلام في الوجود المطلق .
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —it would subsist by that existence, and without its accession would not exist but remain nonexistent. As for the first claim: if His existence subsisted in His quiddity, it would need that quiddity, which would be other than it; whatever needs another is possible. The [cause] cannot be other than the quiddity, or His existence would be necessary through another. It must therefore be the quiddity. A cause precedes its effect in existence; the quiddity would thus precede existence through existence. This is impossible and contradictory, entailing a thing's preceding itself and an infinite regress.
 
@@ -6317,11 +6997,13 @@ It may be said: its external existence, not its mental existence, which is the v
 
 Full page retranslation compared with scan. Bracketed [cause] supplies an antecedent required by the compressed printed opening وهي ليست غير الماهية. The arguments about quiddities and existence are translated as the commentator’s claims, including his absolute denial of existence’s cessation; no explanatory substitution about disappearance of manifestations is added.
 
-## Printed p. 201 · The eternal determination of realities and competing terms for quiddity
+## MSH-P201 · Printed p. 201 · The eternal determination of realities and competing terms for quiddity
 
-**MSH-P201** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
 
-### Arabic
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 أجيب : بأن تحقق الذهني لا يمنع الشك فيه ؛ ولذلك اختلف فيه ، فمن أثبته فالبرهان ، وأيضا فالماهية الخارجية خالية عن الوجود الذّهني ما لم يتعقل ، فتغايرتان .
 وقد ثبتت مغايرة الخارجي لها فتغاير المطلق ، لا وهاهنا أبحاث طويلة مر أكثرها في المقدمة ، ولا يليق ما بقي منها بكتب الصوفية ، فليراجع بها كتب الكلام والحكمة .
@@ -6339,7 +7021,7 @@ Full page retranslation compared with scan. Bracketed [cause] supplies an antece
 
 وَقَدْ خَلَقْتُكَ مِنْ قَبْلُ وَلَمْ تَكُ شَيْئاً [ مريم : 9 ] ، مع أنه كان ممكنا ، وهنا
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** The answer is that the realization of mental existence does not prevent doubt about it. Hence people have disagreed about it, and whoever establishes it does so by demonstration. Moreover, an external quiddity is devoid of mental existence until it is conceived, so the two differ. Its difference from external existence has already been established; it therefore differs from existence without qualification. There are lengthy investigations here, most of which were treated in the introduction. What remains is not appropriate to the books of the Sufis; consult works of theology and philosophy for it.
 
@@ -6355,11 +7037,13 @@ In the terminology of the people of God, who make this reality an established, e
 
 Scan compared. The print’s واحترز بذلك أيضا عن علم الحق conflicts with the immediately following contrast with علم الخلق; [creaturely] is an explicit contextual rendering, not an Arabic emendation. The designation of the fixed entity is garbled in print as أمرا ثابتا أزليا علنيّا لتعينها...; English follows the evident entity/fixed explanation and the lemma on p. 199, while retaining the unamended Arabic. The continuation boundary at وهنا is preserved.
 
-## Printed p. 202 · The one effect and al-Ṭūsī’s argument for the principle of unity
+## MSH-P202 · Printed p. 202 · The one effect and al-Ṭūsī’s argument for the principle of unity
 
-**MSH-P202** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
 
-### Arabic
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 أبحاث طويلة لا تتعلق بما نحن فيه . 
 
@@ -6376,7 +7060,7 @@ Scan compared. The print’s واحترز بذلك أيضا عن علم الحق
 وإن فرضنا التقدير الثالث يكون حيثية استلزم ذلك اللازم هي بعينها حيثية ذلك المقوم ، ويلزم أن يكون مبدأ حيثية الاستلزام غير خارج عن ذاته ، وإلا فعاد الكلام . 
 وعلى التقديرات يلزم تركب إما في هيئة ذلك الشيء ، كالجسم المنقسم إلى مادة
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —lengthy investigations that do not concern our present subject.
 
@@ -6396,11 +7080,15 @@ He then adds, for greater clarity:
 
 Full page retranslation restores al-Tusi’s quoted argument omitted from the old paraphrase and removes a discussion of the First Intellect not present on this page. Scan compared. The printed transition ولم يقف فهما من مقوماته is difficult and is marked. The unusual final ثابتا in the Qunawi lemma is retained conservatively rather than silently replaced by an unattested reading.
 
-## Printed p. 203 · Objections to al-Ṭūsī and the causal respect of a simple principle
+Related passage IDs: QNW-WIT261
 
-**MSH-P203** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P203 · Printed p. 203 · Objections to al-Ṭūsī and the causal respect of a simple principle
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 وصورة ؛ أو لأنه موجود بعد كونه شيء ما ، كما في العقل الأول بحسب التكثر الذي يلزمه عند وجوده بسبب مغايرة ماهيته ووجوده أو بعد وجوده بتفريق له ، كما في الشيء المنقسم إلى أجزائه أو جزئياته وبالجملة فهو منقسم الحقيقة ، انتهى كلامه رفع مقامه .
 
@@ -6415,7 +7103,7 @@ Full page retranslation restores al-Tusi’s quoted argument omitted from the ol
 
 وعارض الإمام فخر الدين الرازي : بأن الواحد قد يسلب عنه أشياء كثيرة ، كقولنا هذا الشيء ليس بحجر ولا بشجر ، وقد يوصف بأشياء كثيرة ، كقولنا : هذا الرجل قائم وقاعد ، وقد يقبل أشياء كثيرة كالجوهر للسواد والحركة ، ولا شك أن مفهومات سلب
 
-### English
+### English · passage 1
 
 **Al-Ṭūsī, quoted by al-Mahāʾimī (continuing):** “—and form; or because it exists after being a certain thing, as with the First Intellect, through the multiplicity that necessarily accompanies its existence owing to the difference between its quiddity and its existence; or after its existence through division, as with a thing divided into its parts or its particulars. In every case its reality is divisible.” Here his words end—may his station be exalted.
 
@@ -6437,11 +7125,13 @@ Imam Fakhr al-Dīn al-Rāzī objected that many things may be denied of the one:
 
 Scan compared. The printed reply after قلت: الحيثية الواحدة ذاته contains a repeated clause and a logically unstable formulation; English makes the difficulty explicit instead of presenting a conjecturally tidied argument as a direct translation. The subsequent printed فإنه يفتقر إلى علة appears to require a missing negation in context; the rendering preserves and marks it. The al-Razi objection begins on this page, not p. 204.
 
-## Printed p. 204 · Al-Ṭūsī’s reply: negation, reception, and two senses of proceeding
+## MSH-P204 · Printed p. 204 · Al-Ṭūsī’s reply: negation, reception, and two senses of proceeding
 
-**MSH-P204** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
 
-### Arabic
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 تلك الأشياء عنه ، واتصافه بتلك الأشياء ، وقبوله لتلك الأشياء مختلفة ويعود التقسيم المذكور ، حتى يلزم الواحد من حيث هو واحد ، لا يسلب عنه إلا واحد ، ولا يوصف إلا بواحد ، ولا يقبل إلا واحدا . 
 
@@ -6455,7 +7145,7 @@ Scan compared. The printed reply after قلت: الحيثية الواحدة ذ�
 أما إذا كان المعلول فوق واحد ، فلا محالة يكون ذلك الأمر مختلفا ، فيلزم منه التكثر في ذات العلة كما مر ، انتهى . 
 وقد عورض بأن الإيجاد لا يمكن بدون صدور الاثنين : الماهية والوجود ، بأن النقطة المركزية محاذية للنقاط دون مفهوم كونها محاذية لنقطة غير مفهوم كونها محاذية
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī, reporting al-Rāzī (continuing):** —those things of it, its qualification by them, and its reception of them differ. The division just given returns, until it follows that only one thing can be denied of the one insofar as it is one, that it can be qualified by only one thing, and that it can receive only one thing.
 
@@ -6471,11 +7161,13 @@ Scan compared. The printed reply after قلت: الحيثية الواحدة ذ�
 
 Full page retranslation compared with scan and restores the central-point objection at the end. The print reads لا ينفع خروجه عنها in the motion example; [prevent] is a contextual interpretation of a probable textual error, not an attested Arabic correction. The boundary remains open for p. 205.
 
-## Printed p. 205 · The central point, substance, and branching chains of causes
+## MSH-P205 · Printed p. 205 · The central point, substance, and branching chains of causes
 
-**MSH-P205** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
 
-### Arabic
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 لأخرى ، فإن كان أحدهما أو كلاهما داخلا في النقطة المركزية لزم تركيبها ، وإلا لا تكون النقطة مصدرا لهما ، وللزم إما التركيب أو التسلسل ، وأيضا الجوهرية علة للتحيز والقبول للأعراض الوجودية ، فهما أثران لبسيط . 
 لا يقال : أحدهما باعتبار الحال ، والآخر باعتبار الحيز ؛ لأنّا نقول الكلام في قابليته لهما ، وهو من عوارض ذاته . 
@@ -6491,7 +7183,7 @@ Full page retranslation compared with scan and restores the central-point object
 قلنا : لا نسلم أن الأول مؤثر في الثالث ، بل المؤثر هو المجموع والتركيب فيه . 
 على أنّا نقول ، إنما يلزم أن يكون أحد الشيئين علة للآخر ، إن كان المعلول الأول
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —another. If one or both of these [relations] were intrinsic to the central point, composition in it would follow. Otherwise the point would be their source, and either composition or an infinite regress would follow. Again, substantiality causes spatial occupancy and the reception of existent accidents: two effects of something simple. Do not say that one is in respect of a state and the other in respect of a place, for our discussion concerns its receptivity to both, which is among the accidents of its essence.
 
@@ -6509,11 +7201,13 @@ Moreover, we say that it would follow that one of two things caused the other on
 
 Full page retranslation compared with scan. The printed objection أن لا يوجد الواحد واحدا آخر and the formulation إن الواحد الذي لا أعتبر معه شيئا آخر are internally unstable; bracketed expressions convey the causal-chain argument indicated by the explicit examples, without claiming an Arabic emendation. The edition’s point and substance counterexamples are retained in full.
 
-## Printed p. 206 · General existence and the rejection of compulsory intermediaries
+## MSH-P206 · Printed p. 206 · General existence and the rejection of compulsory intermediaries
 
-**MSH-P206** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
 
-### Arabic
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 موجودا واحدا من جميع الوجوه ، فإن المعلول لا بدّ من وجود صدر عن الواجب ، وماهية يقبله من إمكان ، فيجوز أن يصدر من المعلول الأول لكل جزء وشيء آخر . 
 وإذا عرفت هذا ، 
@@ -6529,7 +7223,7 @@ Full page retranslation compared with scan. The printed objection أن لا يو
 وعقلا بكونه مجردا ، ولبيان سائر الموجودات حتى الحوادث اليومية حتى يستند الجميع إلى اللّه تعالى بلا واسطة وليس معلوله عزّ وجلّ منحصرا فيه ، كما يقوله أهل النظر من الفلاسفة  “ 3  “ . 
 قيد أهل النظر لهم ؛ لأن سائر المتكلمين غير المعتزلة ينفون الفرع مع الأصل ؛
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —were one existent in every respect. But the effect must have an existence proceeding from the Necessary, and a quiddity receiving it through possibility. Something else may therefore proceed from the first effect in respect of each constituent.
 
@@ -6547,11 +7241,13 @@ He qualifies them as the speculative philosophers because the other theologians,
 
 Scan compared. This page has several substantial corruptions in the 2008 print, not just the electronic transcription. English marks the irrecoverable middle span rather than silently supplying a reconstructed paragraph. Contextual completions in the surrounding argument are bracketed. Reports concerning creation of the Pen and Intellect are rendered as citations in the text, without endorsing their authentication. No modern editorial footnote is incorporated into the translation.
 
-## Printed p. 207 · Why the fixed realities are not made in eternal knowledge
+## MSH-P207 · Printed p. 207 · Why the fixed realities are not made in eternal knowledge
 
-**MSH-P207** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
 
-### Arabic
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 لاستلزامهما الواسطة بينه وبين سائر الموجودات وجوبا عندهم . 
 ثم إن الشيخ رضي اللّه عنه منع هذه الواسطة بأنها بين الشيء ونفسه ، إذ ليس في الواقع إلا الحق ، إذ العالم ليس بشيء زائد على حقائق معلومة للّه تعالى ، 
@@ -6564,7 +7260,7 @@ Scan compared. This page has several substantial corruptions in the 2008 print, 
 
 وأما من حيثية أنها صورة معلومة لغيره تعالى ، وله عزّ وجلّ باعتبار ظهور علمه في المظاهر ، فهي وإن كانت مجعولة لكنه أمر عارض ، فهي من حيث هي حقائق ، غير مجعولة وإنما استحال كونها مجعولة من تلك الجهة ؛ لأن ذلك العلم لا يغاير الذات بوجه ، فهو في حكمها في امتناع قيام الحوادث به ، على أن القائم به ، وهو صفة الحق قائم بالحق ، فلو
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —because in their view both necessarily entail an intermediary between Him and all other existents. The shaykh then rejects this intermediary because it would be between a thing and itself: in reality there is only the Real. The world is nothing additional to realities known to God. Initially they have nothing in existence apart from their establishment in His knowledge; then they are qualified by external existence. An intermediary would therefore be either between Him and His existence, which is His very self; between Him and other realities; or between Him and the aggregate of the world's existence and its realities.
 
@@ -6582,11 +7278,15 @@ In respect of their being forms known to someone other than God, or known to Him
 
 Full page retranslation compared with scan. The whole Qunawi lemma is retained. The concluding transition from the lemma to the gloss is followed as the print presents it; labels are editorial and do not assert independent manuscript division of the passage.
 
-## Printed p. 208 · Consequences of treating the eternal realities as made
+Related passage IDs: QNW-WIT262
 
-**MSH-P208** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P208 · Printed p. 208 · Consequences of treating the eternal realities as made
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: English working rendition (Qūnawī / al-Mahāʾimī voices indicated). Arabic transcription pending import.
+
+### Arabic · passage 1
 
 كانت مجعولة لكانت حادثة ، فيمتنع قيامها بذات الحق وصفته اللازمة القديمة أيضا . 
 فإن لم تكن تلك الحقائق قائمة بالحق ، ولا يعلم وهي ثابتة هناك ، فهي إما حالة أو محال له ، والكل محال ، على أن في جعلها مجعولة ، مفاسد أخرى لا تخفى على المستبصر ، وتلك المفاسد لا توصف بالجعل عند المحققين من أهل الكشف ، ومن أهل النظر من الحكماء أيضا . 
@@ -6601,7 +7301,7 @@ Full page retranslation compared with scan. The whole Qunawi lemma is retained. 
 
 مثل ما يقال : الماهيات حينئذ إنما تتحقق بالوجود حال عدمه ، مثل ما يقال ، لو كانت مجعولة ، لكانت الإنسانية عند عدم جعلها الإنسانية ، فيلزم سلبه عن نفسه ، وهو
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —they were made, they would be originated, and could not subsist in the Essence of the Real or in His inseparable, eternal attribute. If those realities did not subsist in the Real or in knowledge while being established there, they would either inhere [in Him] or be substrates for Him, and all of this is impossible. To make them made also entails other corrupt consequences evident to those with insight. For these reasons realized people of unveiling, and realized speculative philosophers, do not describe them as made.
 
@@ -6619,11 +7319,13 @@ For example: the quiddities would then be realized by existence while it was abs
 
 Full translation compared with scan. The printed text contains local defects (ولا يعلم, وتلك المفاسد لا توصف بالجعل, فلا يكون إلا بالترتيب معه, and the missing negative in the humanity example). English renders the evident argument with explicit brackets at consequential repairs; Arabic is not silently emended. The final sentence continues on p. 209.
 
-## Printed p. 209 · One existence, its relations, and the absence of an intermediary
+## MSH-P209 · Printed p. 209 · One existence, its relations, and the absence of an intermediary
 
-**MSH-P209** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
 
-### Arabic
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 محال . 
 
@@ -6639,7 +7341,7 @@ Full translation compared with scan. The printed text contains local defects (و
 
 سلمنا أنه ليس بواجب ، فهو واحد ، فحصوله في ممكن غير حصوله في الآخر إلا باعتبار الإضافة ، وأما الثاني ؛ فلأن تلك النسب والاعتبارات إنما حصلت له بواسطة المظاهر ، وهي معدومة ، فلا يكون واسطة ، فإن اعتبر وجودها فلا يكون العقل الأول واسطة بما دونه ، بل كل مظهر واسطة نفسه ، وذلك أن الاعتبارات الأصلية ثابتة الظهور
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —impossible.
 
@@ -6659,11 +7361,15 @@ As for the second: those relations and considerations accrue to it through the l
 
 Scan compared. The print’s باطلا ظاهرا in the gloss is contradictory in context; [manifest] supplies only the readable intended opposition to الباطن in the lemma. The final ثابتة الظهور is read contextually as the introduction of the three considerations continued on p. 210; [three] is a marked interpretation, not a manuscript-supported correction. The strong claim واجب بالذات is translated without softening.
 
-## Printed p. 210 · The Cloud as the wellspring of manifestation
+Related passage IDs: QNW-WIT262
 
-**MSH-P210** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P210 · Printed p. 210 · The Cloud as the wellspring of manifestation
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 في المظاهر والتعين بها والتعدد بعددها ، والأولان يحصلان باقترانه بها ، والثالث لقبول حكم الاشتراك الذي هو فرع الاقتران ، وكذا سائر الصفات إنما تلحقه بواسطة التعلق بالمظاهر ، وكل مظهر واسطة نفسه في تلك الاعتبارات والصفات لا في نفس الوجود ، فلا واسطة بين الحق والخلق ، 
 وما يظن أنه واسطة ، فلحصول تلك الاعتبارات عندها لا بها ، وإذا لم يفتقر العالم إلى الواسطة باعتبار الماهية والوجود والنسبة وصفاته ، لم يفتقر باعتبار المجموع ، إذ لم يحدث بما يوجب الافتقار إليها . 
@@ -6675,7 +7381,7 @@ Scan compared. The print’s باطلا ظاهرا in the gloss is contradictory
 أي : وأصل مظاهر الوجود الذي به ، صارت حقائق الممكنات مرائي الوجود الحق - لا باعتبار ذاته الغنية عن العالمين - بل باعتبار اقترانه بهذه الحقائق . 
 وليس ذلك الاقتران اقتران الأجسام بعضها ببعض ، ولا اقتران الحال بالمحال أو اقتران المحل بالحال ، بل باعتبار تجليه في حقائق بحيث يظهر في الأعيان الثابتة قربها بعد ظهوره في ذاته لذاته . فلذلك كان منزل تعينه أنزل عن التعين الأول إلى سائر التعينات ، وليس هذا التنزيل من مكان عال إلى سافل بل بمعنى التدلي إلى المظاهر ، والمتدلّي هو العماء الذي ذكره النبي صلى اللّه عليه وسلم :  “ إذا سئل أين كان ربنا قبل أن يخلق الخلق ؟ قال : كان في عماء ما فوقه هواء ، وما تحته هواء  “ ، فالعماء هو حضرة الواحدية بمنزلة الحجاب الرقيق بين الخلق
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —in the loci of manifestation, determination through them, and multiplicity according to their number. The first two arise through its association with them; the third through its acceptance of the ruling of commonality, which follows from association. Likewise the other attributes accrue to it through connection with the loci of manifestation. Each locus is its own intermediary in these considerations and attributes, not in existence itself. There is therefore no intermediary between the Real and creation. What is thought to be an intermediary is so only because those considerations arise at its occurrence, not through it. If the world does not need an intermediary in respect of quiddity, existence, relation, or its attributes, it does not need one in respect of their aggregate, since nothing has arisen there that would require it.
 
@@ -6689,11 +7395,15 @@ He then states that an intermediary is needed between the Real and His associati
 
 Compared with scan. Corrected digital العلماء to printed العماء (twice) and restored the missing last authorial line «فالعماء هو حضرة الواحدية بمنزلة الحجاب الرقيق بين الخلق». It continues on p. 211 with «والتعين الأول». The printed hadith’s ما is linguistically ambiguous; English gives the non-negative reading while preserving Arabic. The modern editor’s long footnote begins below the rule and is excluded.
 
-## Printed p. 211 · The first marriage and the opening of the divine names
+Related passage IDs: QNW-WIT262
 
-**MSH-P211** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P211 · Printed p. 211 · The first marriage and the opening of the divine names
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 والتعين الأول . 
 
@@ -6702,7 +7412,7 @@ Compared with scan. Corrected digital العلماء to printed العماء (tw
 
 وإنما انفتحت هذه الأسماء بالتوجهات الذاتية الأزلية إلى شؤونها ، لتكميل أمر
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —and the first determination.
 
@@ -6716,11 +7426,13 @@ These names open through the essential, eternal orientations toward His affairs,
 
 Compared with scan. Removed the material beginning «الأولى شؤونا مجملة...» from authorial Arabic: it is the continuation of the modern editor’s footnote from p. 210, visibly below the rule on p. 211. The actual body ends «لتكميل أمر» and continues at p. 212 «الوجود». The Hidden Treasure saying is translated as a citation made by the commentator, not as independently authenticated prophetic speech.
 
-## Printed p. 212 · Existence considered in itself and the absence of distinction
+## MSH-P212 · Printed p. 212 · Existence considered in itself and the absence of distinction
 
-**MSH-P212** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
 
-### Arabic
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 الوجود باعتبار إظهار ما فيه من الصفات الممكنات بالقوة في المظهر بالفعل . 
 
@@ -6736,7 +7448,7 @@ Compared with scan. Removed the material beginning «الأولى شؤونا م�
 
 ثم استشعر سؤالا آخر ، بأنه كيف لا نعت ، ولا صفة يتميز عنه مع أنه موصوف بالكمال ، وبالعلم والحياة والقدرة ومفهوماتها متغايرة ، فكيف لا يتميز هناك ، فأجاب عنه
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —existence, by manifesting actually in the locus of manifestation the possible attributes that are potentially within it.
 
@@ -6756,11 +7468,15 @@ He then anticipates another question: how can there be no characterization or at
 
 Full retranslation compared with scan. The opening mixes a short repeated quotation with the commentator’s explanation; English distinguishes these speakers editorially rather than reproducing the edition’s unreliable bracket span. The denial before يقال عليه الوجود appears faulty in print and is rendered as the objection required by the reply; no Arabic correction is asserted. Name, attribute, and Essence remain explicitly identified as in the source.
 
-## Printed p. 213 · Essential perfection and the identity of knowledge with the Essence
+Related passage IDs: QNW-WIT263
 
-**MSH-P213** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P213 · Printed p. 213 · Essential perfection and the identity of knowledge with the Essence
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 بما قال رضي اللّه عنه : [ وكما له نفس وجوده الذاتي الثابت له من نفسه لا من سواه ، وحياته وقدرته عين علمه ، وعلمه بالأشياء أزلا عين علمه بنفسه : بمعنى أنه علم نفسه بنفسه ، وعلم كل شيء بنفس علمه بنفسه ] . 
 
@@ -6776,7 +7492,7 @@ Full retranslation compared with scan. The opening mixes a short repeated quotat
 
 يعني : أن المختلفات من حيث الماهيات تتحد من حيث الوجود ؛ لاشتراكه فيها وتنبعث منه المتكثرات ، فأصل كثرتها وحدته ، فالكثرة في المرتبة الأولى كانت وحدة ، ثم صارت كثرة تنسب إلى ماهياتها ، لكن كثرة نسبته إلى تلك الماهيات ليس بطريق المحلية
 
-### English
+### English · passage 1
 
 **Qūnawī:** “His perfection is His very essential existence, established for Him from Himself, not from another. His life and power are His knowledge itself. His knowledge of things from eternity is His knowledge of Himself itself: He knows Himself through Himself, and knows every thing through His very knowledge of Himself.”
 
@@ -6794,11 +7510,15 @@ He then anticipates a question: how can He be identical with these differing, mu
 
 Full page retranslation compared with scan. The incomplete وما لا يشعر is marked instead of silently supplying a sentence. The printed آخر، وأول مرة in the lemma is unstable; English identifies the First/Last contrast supported by the following gloss while marking the transition. A detached modern doctrinal explanation is not added.
 
-## Printed p. 214 · Unity as the source of multiplicity and simplicity as the source of composition
+Related passage IDs: QNW-WIT263
 
-**MSH-P214** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P214 · Printed p. 214 · Unity as the source of multiplicity and simplicity as the source of composition
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 لها ، ولا الحالة فيها حتى يكون محلا للحوادث أو صفة لها أو متمكنا فيها ، تعالى عن ذلك ، بل مظهرة له وظاهرة به . 
 وليس ذلك بمعنى أنها تبديه عن بطون متقدم على هذا الظهور ؛ لأنه لم يزل ظاهرا لنفسه ، بل ظهوره فيها بعد بطونه بالنسبة إليها ، وكذا ظهورها عنه ليس بمعنى أنه يخرجها من نفسه فيبديها إذ الأعيان لا تزال على ما هي عليه إلى الأبد لا تشم رائحة الوجود ، وإن ظهر الوجود بها وبصورها ، إذ لو اتصفت بالوجود ، لكان الوجود من عوارضها فيتأخر عنها ، وهو مقدم عليها ، فلهذا جعلت المسألة غامضة . 
@@ -6810,7 +7530,7 @@ Full page retranslation compared with scan. The incomplete وما لا يشعر 
 ثم استدل على ذلك بأنه يقال فيه تعالى :  “ أول وآخر  “ معا ؛ لأن صفاته قديمة أبدية وأوليته باعتبار وحدته وبساطته وآخريته باعتبار كثرته وتركيبه ، فهما يجتمعان فيه . 
 ثم استشعر سؤالا آخر ، بأن في الكثرة والتركيب نقصا ينافي القدم والوجوب الذاتي . فأجاب بأن : كل ما يتناقض في حق غيره ، وهو ثابت له على الوجوه فهما إنما يثبتان فيه من حيث ما فيها من الوحدة والبساطة والوجوب ، لا من جهات النقص ، إذ هي عدمية ، وقد مر أن كل مقيد له وجه إلى الإطلاق ، ولكل مطلق وجه إلى التقييد ، وإن كل كائن في محل لا يكون إلا بحسب المحل ، ثم رد على العوام المخالفين بهذا .  “ 1  “
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —for them, or by His inhering in them, so that He would be a substrate for originated things, their attribute, or situated within them. He is exalted beyond that. Rather, they manifest Him and are manifest through Him.
 
@@ -6826,11 +7546,13 @@ He anticipates another question: multiplicity and composition involve deficiency
 
 Full page translation compared with scan. The long footnote below the rule, continuing onto p. 215, is modern editorial material and is not translated as al-Mahaimi’s body. The commentator’s direct statements about divine multiplicity/composition are preserved with his own qualifications, rather than replaced by a modern harmonizing paraphrase.
 
-## Printed p. 215 · Speaking about the Real and seeing opposites through Him
+## MSH-P215 · Printed p. 215 · Speaking about the Real and seeing opposites through Him
 
-**MSH-P215** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
 
-### Arabic
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 وقال رضي اللّه عنه : [ وكل من نطق عنه لا به ونفى عنه كل أمر مشتبه وحصره في مدركه ، فهو أبكم ساكت ، وجاهل مباهت ، حتى يرى به كل ضدّ في نفس ضده ، بل عينه مع تميزه بين حقيقته وبينه ] 
 أي : كل ما نطق عنه من العلماء بزعمه لا به ، لدعوى التمييز الكلي لثبات نفسه ، ونفى عنه كل أمر مشتبه على عقله حقيقة ، فلم يعلم أن وجوده عين الحق والغير ، إنما هو حقيقة التي لا وجود لها . 
@@ -6838,7 +7560,7 @@ Full page translation compared with scan. The long footnote below the rule, cont
 
 ثم فصّل ذلك فقال رضي اللّه عنه : [ وحدته عين كثرته ، وبساطته عين تركيبه ، وظهوره نفس بطونه ، وآخريته عين أوليته ، لا ينحصر في المفهوم من الوحدة أو الوجود ، ولا ينضبط
 
-### English
+### English · passage 1
 
 **Qūnawī:** “Everyone who speaks about Him but not through Him, denies of Him every ambiguous matter, and confines Him within his own apprehension is mute and silent, ignorant and confounded, until he sees through Him every opposite within its very opposite—indeed, as identical with it—while distinguishing its reality from Him.”
 
@@ -6852,11 +7574,15 @@ He then explains this in detail:
 
 Scan comparison establishes that the authorial body ends «ولا ينضبط». All subsequent Arabic in the digital body map, beginning «وحدة وجوده لم يصدر عنه إلا واحد» and ending «مستفاد من الحق سبحانه وتعالى», is a modern editorial footnote continued from p. 214 below the printed rule. It is removed from authorial Arabic and not translated as medieval text. The lemma continues directly on p. 216 «لشاهد ولا في مشهود».
 
-## Printed p. 216 · Manifestation and hiddenness beyond conceptual confinement
+Related passage IDs: QNW-WIT263
 
-**MSH-P216** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P216 · Printed p. 216 · Manifestation and hiddenness beyond conceptual confinement
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 لشاهد ولا في مشهود له ، أن يكون كما قال ، وظهر كما يريد دون الحصر في الإطلاق ، والتقييد له المعنى المحيط بكل حرف ، والكمال المستوعب بكل وصف ، كل ما خفي عن المحجوبين حسنه ، مما يتوهم فيه شين ونقص ، فإنه متى كشف عن ساقه بحيث يدرك صحة انضيافه إليه ألقى فيه صورة الكمال ، ورأى أنه منصة لتجلي الجلال أو الجمال ، سائر الأسماء والصفات عنده متكثرة في عين وحدته هي عينه لا يتنزه عما هو ثابت له ، ولا يحتجب عما أبداه ليكمله ] . 
 أي : وحدته الحقيقية عين ضدها الذي هو الكثرة ؛ لأن الكثرة ليست في نفس الوجود ، بل في صورة عينه من حيث لا وجود لها بدونه ، فهي من حيث الوجود الذي يقتضي الوحدة ويساوقها واحدة . 
@@ -6868,7 +7594,7 @@ Scan comparison establishes that the authorial body ends «ولا ينضبط». 
 
 ثم قال : له أن يكون كما قال من أنهم :وَلا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِما شاءَ[ البقرة : 255 ] هذا في الأحدية وظهر كما يريد هذا في الواحدية بحسب الاستعدادات التي في الأعيان الثابتة من قبولها الظهور بصور معينة في أزمنة معينة وأمكنة مخصوصة ، ومع ذلك لا ينحصر في الأحدية والواحدية ، وكيف ينحصر وله المعنى المحيط
 
-### English
+### English · passage 1
 
 **Qūnawī (continuing):** “—by a witness or within something witnessed. It is His to be as He has said, and to appear as He wills, without confinement to absoluteness or restriction. His is the meaning encompassing every letter, and the perfection embracing every attribute. Everything whose beauty is hidden from the veiled, in which blemish and deficiency are imagined—whenever its inner reality is uncovered so that its attribution to Him is understood to be sound, the form of perfection is found within it, and it is seen as a platform for the self-disclosure of majesty or beauty. All the names and attributes are multiple with Him within His very unity; they are His very self. He does not transcend what is established for Him, and is not veiled from what He has displayed in order to perfect it.”
 
@@ -6884,11 +7610,15 @@ He says that it is His to be as He has said: ‘They encompass nothing of His kn
 
 Full page retranslation compared with scan, continuing the actual p. 215 lemma without the intervening modern editorial footnote. Terms ahadiyya and wahidiyya are distinguished as oneness and oneness-with-multiplicity. The source’s referential logical argument is retained without substituting a modern analogy.
 
-## Printed p. 217 · Perfection in restricted manifestations and the plurality of attributes
+Related passage IDs: QNW-WIT263
 
-**MSH-P217** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P217 · Printed p. 217 · Perfection in restricted manifestations and the plurality of attributes
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 بكل حرف من الموجودات الواجبة والممكنة ، والكمال المستوعب كل وصف من الإطلاق والتقييد . 
 
@@ -6900,7 +7630,7 @@ Full page retranslation compared with scan, continuing the actual p. 215 lemma w
 
 فأجاب : أنه يبدأ لهم بتجلي الصفات أيضا ، حتى إذا كملوا ، تجلى لهم بالذات ، فيكمل لهم تجلي الصفات أيضا ؛ لأن الكامل لا يحجبه شيء عن شيء ، حتى أنه لا يحجبه الخلق عن الحق ، فكيف يحجبه صفات الحق عنه ، ولما وقع الكلام في الحجاب والتقديس استطرد على أنه لما قيل أن جميع ما وصف به عين أضدادها ، فالحجاب في حقه عين الكشف ، والعزة عين الذل والغني عين الافتقار ، والتقديس عين النقص ، مع ثبوت هذه
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —every letter among necessary and possible existents, and the perfection embracing every attribute of absoluteness and restriction?
 
@@ -6920,11 +7650,13 @@ Having mentioned veiling and sanctity, he digresses. Since it was said that ever
 
 Full translation compared with scan. The assertions concerning Sunni theology and the equivalence of opposites are the commentator’s claims, rendered with their stated qualifications. The prior English’s broad paraphrase is replaced by the full sequence of objections and replies.
 
-## Printed p. 218 · Veil, might, independence, and sanctity under distinct considerations
+## MSH-P218 · Printed p. 218 · Veil, might, independence, and sanctity under distinct considerations
 
-**MSH-P218** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
 
-### Arabic
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 الأمور بالإجماع ، وانتفاء أضدادها به احتاج إلى بيان ذلك ، 
 
@@ -6943,7 +7675,7 @@ Full translation compared with scan. The assertions concerning Sunni theology an
  
 فهو ما قال رضي اللّه عنه : [ لا تدركه سبحانه من حيث الحيثية العقول والأفكار ، ولا تحويه الجهات والأقطار ، ولا تحيط بمشاهدته ومعرفته البصائر والأبصار ، ومنزه عن القيود الصورية والمعنوية ، مقدس عن قبول كل تقدير متعلق بكمية أو كيفية متعال عن الإحاطات الحدسية والفهمية والظنية والعلمية ، متحجب بكمال عزته عن جميع بريته الكامل منه
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —matters are affirmed by consensus, and their opposites denied by it. An explanation is therefore needed. It is what he says:
 
@@ -6965,11 +7697,15 @@ He says, “Take heed”: attend to this subtle point when applying the expressi
 
 Full translation compared with scan. The print’s صبوته وجوده is rendered contextually as establishment of existence, supported by the immediately following gloss ثبوت وجوده; no Arabic emendation is asserted. Other difficult printed phrases (ولا ضدية إلا بحسب الوجود; التعلق بالدون ذاته) are marked where they affect the reasoning. The lemma continues on p. 219.
 
-## Printed p. 219 · Negative judgments of transcendence and eternal knowledge of the world
+Related passage IDs: QNW-WIT263, QNW-WIT264
 
-**MSH-P219** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P219 · Printed p. 219 · Negative judgments of transcendence and eternal knowledge of the world
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 والناقص. ]
 أي : لا يدركه سبحانه وتعالى من حيث كونه وجودا فحسب ، العقول البديهية والأفكار النظرية ، ولا تحويه الجهات والأقطار ، فلا تدركه الحواس الظاهرة ، ولا يحيط بمشاهدته الغيبية ، ومعرفته اليقينية البصائر الباطنة ، ولا جميع الأبصار ، 
@@ -6983,7 +7719,7 @@ Full translation compared with scan. The print’s صبوته وجوده is rend
 أي : لما كان وجودا فحسب ، لم يغاير الموجودات من هذا الوجه ، فلما تعلق علمه بنفسه ، تعلق بالعالم متميزا عن الحق ، 
 قال : ( وظهور هذا التعلق ) أي : تعلق علمه بالعالم ، سبب ظهور نسب علمه ، فإن تلك النسب لما كانت هي المعلومات وقد ظهرت ، ظهر التعلق بها كما ظهر تعلق الوجود بها عند ظهور نسبه التي هي حقائق الموجودات ، ولما كان
 
-### English
+### English · passage 1
 
 **Qūnawī (continuing):** “—and the deficient.”
 
@@ -6999,11 +7735,15 @@ He explains the inability of inner sights and eyes to encompass Him by His being
 
 Full translation compared with scan. The gloss’s references to المقبل إليه في زعمه do not appear in the printed lemma spanning pp. 218–219; the wording is retained in the gloss and the lemma is not silently expanded. The unstable ولازمة أن سبق علمه بذلك تعينه is rendered with an explicit notice, not treated as secure Arabic. The final explanatory sentence is kept open at the page boundary.
 
-## Printed p. 220 · How one eternal knowledge encompasses multiplicity and temporal occurrence
+Related passage IDs: QNW-WIT264
 
-**MSH-P220** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P220 · Printed p. 220 · How one eternal knowledge encompasses multiplicity and temporal occurrence
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 مقتضاه أن يكون علمه واحدا ، فلا يعلم المتعدد به ، مع أنه عالم بما لا يتناهى من المتعددات . 
 
@@ -7017,7 +7757,7 @@ Full translation compared with scan. The gloss’s references to المقبل إ
 
 ولما توهم أنه إذا علم الشيء بشرطه أو بسببه أو لازمه ، فهو على متجدد ، على أنه يعلم وجود زيد في الأزل مستقبلا ، فإذا وجد علم وجوده ، فإذا فني علمه ماضيا ، فكيف لا يتجدد له علم بذلك ، فإنه علم في الأزل وجود زيد في الزمان الفلاني ، وحاليته لذلك الزمان ، واستقباله بالنسبة إلى الأزل ، ومضيه بالنسبة إلى ما بعده فيعلم بذلك ما علم ،
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —this implies that His knowledge is one, it might seem that He could not know the many through it, although He knows endlessly many things.
 
@@ -7031,11 +7771,13 @@ It might be imagined that when He knows a thing through its condition, cause, or
 
 Full page retranslation compared with scan. The compressed conditional-knowledge discussion is translated as a sequence of the author’s distinctions, without importing a modern theory of time. The final temporal example continues on p. 221.
 
-## Printed p. 221 · Knowledge without renewal and existence actual and necessary
+## MSH-P221 · Printed p. 221 · Knowledge without renewal and existence actual and necessary
 
-**MSH-P221** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
 
-### Arabic
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 وكذا توقفه على السبب والشرط لا يستلزم حدوثه ، بل يعلم في الأزل ترتبه عليه واستلزم علمه به ، علمه إياه من غير سبق ، علم بالسبب ، على العلم المسبب سببا زمانيّا . 
 
@@ -7051,7 +7793,7 @@ Full page retranslation compared with scan. The compressed conditional-knowledge
 
 هذا بالنسبة إلى وجوده في ذاته ، لا بالنسبة إلى الصفات الفعلية التي هي نسب محضة ، والمظاهر وكذا وجوده لذاته بالوجوب لا بالإمكان ، وإن كان ظهوره في المظاهر
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —and likewise its dependence upon cause and condition does not entail its origination. He knows from eternity its ordering upon them. His knowledge of them entails His knowledge of it without knowledge of the cause temporally preceding knowledge of the effect.
 
@@ -7071,11 +7813,15 @@ This concerns His existence in His Essence, not the attributes of acts, which ar
 
 Full retranslation compared with scan. Corrected the English Qurʾan reference to 47:31 and expressly recorded the edition’s 47:32. The modern editor’s footnote defining essential perfection is not included as the author’s prose. The page’s final distinction continues on p. 222.
 
-## Printed p. 222 · Unchanging essence and changing relations to manifestation
+Related passage IDs: QNW-WIT264
 
-**MSH-P222** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P222 · Printed p. 222 · Unchanging essence and changing relations to manifestation
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 بالإمكان ؛ لأن الكمال للواجب دون الممكن ، فإنه ناقص ، فإن كان كاملا فليس بنفسه . 
 ولما كان واجبا بالذات كان منزها عن التغيير المعلوم لاستلزامه زوال حاله بذاته ، وإنما يتغير نسبه إلى المظاهر . 
@@ -7090,7 +7836,7 @@ Full retranslation compared with scan. Corrected the English Qurʾan reference t
 وأما امتيازها فمن حيث تعددها بحقائقها ، بخلاف جهة الوجود ، فإن الفيض واحد تعدد بحسب تعدد الحقائق ، ولما ارتبطت من جهة الوجود ، توقف وجودها لأنفسها عليه من غير عكس ، فهو مستغن بحقيقته التي هي حقيقة الوجود عن كل شيء ، 
 وإن لم يستغن باعتبار ظهوره في المظاهر عنها ، مفتقر إليه في وجوده كل شيء ، إذ كل شيء ، ليس له وجود من ذاته ، وإلا لكان كل واجبا بالذات ، فيتعدد القدماء بالذّات .
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —is through possibility, because perfection belongs to the Necessary, not the possible. The possible is deficient; if it is perfect, that perfection is not through itself. Since He is intrinsically necessary, He transcends known change, which would require the loss of a state within Himself. Only His relations to the loci of manifestation change.
 
@@ -7106,11 +7852,13 @@ Their distinction concerns their multiplicity through their realities, unlike th
 
 Scan compared. The print’s bracketed paragraph beginning ارتباط الأشياء به من حيث غيريتها lacks the negative required by بل; English supplies [not]. The printed ووجودها غير وجود مع قيد تعينه بها is likewise defective; [His] follows the explicit one-existence argument around it and is an interpretive repair, not an attested Arabic variant. The bracketed paragraph is treated as an explanatory gloss rather than automatically attributed to Qunawi.
 
-## Printed p. 223 · Providence, existential light, and the second consideration of existence
+## MSH-P223 · Printed p. 223 · Providence, existential light, and the second consideration of existence
 
-**MSH-P223** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
 
-### Arabic
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 ولما ذكر أن ارتباط الأشياء به من حيث وجودها ، ثم ذكر ما هو سبب تعلق الوجود بها ، 
 فهو كما قال رضي اللّه عنه : [ ليس بينه وبين الأشياء نسبة إلى العناية كما قيل ، ولا حجاب إلا الجهل والتلبيس والتخيّل لغاية قربه ودنوه وفرط عزه وعلوه ، وعنايته في الحقيقة إفاضة نوره الوجودي على من انطبع في مرآة عينه التي هي نسب معلوميته ، واستعد لقبول حكم إيجاده ومظهريته سبحانه ، ليس كمثله شيء من الوجه الأول ، وهو السميع البصير من الوجه الثاني ] . 
@@ -7123,7 +7871,7 @@ Scan compared. The print’s bracketed paragraph beginning ارتباط الأش
 ثم ذكر المفاض عليه بأنه من انطبع وانتقش في مرآة عينه الثابتة ، ولم يجعل نفس العين الثابتة لاستمرار عدمها والمنطبع صورته والوجود المفاض لا حق بتلك الصورة ، وتلك الحقيقة نسبة معلوميته تعالى ؛ لكن شرط المنطبع أن يكون مستعدا لقبول حكم إيجاده تعالى إياه وظهوره فيه ، وإلا لا يوجد وإن كان في ذاته ممكنا . 
 ثم ذكر أن التنزيه العقلي  “ 1  “ يختص بالوجه الأول إذ المثل ما يقوم مقام آخر من نوعه
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī:** Having stated that things are connected with Him through their existence, he explains what causes existence to be connected with them:
 
@@ -7145,11 +7893,15 @@ He then states that rational transcendence concerns the first aspect: a likeness
 
 Full retranslation compared with scan. The lemma’s printed نسبة إلى العناية is contextually rendered “no relation except providence,” following the author’s explicit gloss إلا العناية; this is an interpretive correction, not silently altered Arabic. The two Quranic expressions are from 42:11. The long modern editorial footnote beginning below the rule is excluded.
 
-## Printed p. 224 · The veil of might and why determinate manifestation is called creation
+Related passage IDs: QNW-WIT264
 
-**MSH-P224** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P224 · Printed p. 224 · The veil of might and why determinate manifestation is called creation
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 ولا تعدد للوجود فلا مثل ، وأما السميع والبصير فهو من الوجه الثاني ؛ لكن فيه تنزيه كشفي إذا أورده بطريق الحصر ، وإليه أشار رضي اللّه عنه لقوله :  “ أولا سبحانه  “ ، ثم ذكر أن ذلك التنزيه دائم مستمر ، وإن ظهر في المظاهر
 
@@ -7164,7 +7916,7 @@ Full retranslation compared with scan. The lemma’s printed نسبة إلى ا�
 
 أي : والحق المنزه يسمى خلقا وسوى من الوجه الثاني إذا لو محيي تعين وجوده مقيدا بالصفات اللازمة لكل متعين من الأعيان الممكنة بالقيد الأول ، خرج من حيث التعين الأول وبالقيد الثاني خرج من حيث تعينه بصفات الإلهية والربوبية ، وبقيد الأعيان الممكنة خرجت الممتنعات ، فإنها لا تسمّى خلقا كما لا تسمّى حقّا .
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —but existence has no plurality, so it has no likeness. ‘The Hearing, the Seeing’ concerns the second aspect. Yet this includes a transcendence disclosed by unveiling when expressed exclusively. He indicates this by first saying, ‘He is exalted.’ He then states that this transcendence continues always, even when He appears in loci of manifestation:
 
@@ -7184,11 +7936,15 @@ He then explains why what exists and appears in them is called creation, althoug
 
 Compared with scan. Removed the final digital line «نقائص مفروضة في الأذهان غير واقعة في الأعيان» from authorial Arabic: it is a modern editorial footnote continued from p. 223, below the rule on p. 224. English preserves the actual final body sentence excluding impossibilities. The dense list in Qunawi’s lemma is translated without treating editorial headings as source prose.
 
-## Printed p. 225 · Properties, accidents, time, and the complete description of createdness
+Related passage IDs: QNW-WIT264, QNW-WIT265
 
-**MSH-P225** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P225 · Printed p. 225 · Properties, accidents, time, and the complete description of createdness
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 ثم ذكر أن تلك الأعيان في الحقيقة نسب علمه إشعارا بأن أصلها عدم ليس لها صفة لاعتبار تعين الوجود بها ؛ فلذلك قلنا : أن الوجود تقيد بتلك الصفات . 
 
@@ -7202,7 +7958,7 @@ Compared with scan. Removed the final digital line «نقائص مفروضة ف�
 
 ثم ذكر أحكام الوجود بهذا الوجه بما قال رضي اللّه عنه : [ وينضاف إليه إذ ذاك  “ 2  “ كل وصف
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī:** He then states that those entities are, in reality, relations of His knowledge, indicating that their basis is nonexistence. They have no attribute apart from considering existence's determination through them. Hence we said that existence is restricted by those attributes.
 
@@ -7222,11 +7978,13 @@ He then mentions the rulings of existence from this aspect:
 
 Full translation compared with scan, restoring the detailed enumeration of attributes and temporal effects. The final lemma continues on p. 226. The modern editor’s explanation of إذ ذاك below the rule is excluded; its final continuation on p. 226 is also removed from the page map there.
 
-## Printed p. 226 · Permeation without division or indwelling
+## MSH-P226 · Printed p. 226 · Permeation without division or indwelling
 
-**MSH-P226** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
 
-### Arabic
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 ويسمى بكل اسم ، ويظهر بكل رسم ، ويقبل كل حكم ، ويتقيد في كل مكان بكل رسم ، ويدرك لكل مشعر من بصر وسمع وعقل وفهم ، وغير ذلك من القوى والمدارك ، فاذكر ] . 
 أي : وينسب إلى الوجود عند التقييد لما ذكر كل وصف حادث ، ويسمى بكل اسم من أسماء المحدثات ، ويظهر بكل رسم من رسومها ، ويقبل كل حكم من التغييرات ، ويتقيد في كل مكان بكل رسم يليق بذلك المكان ، سواء كان المكان معنويّا أو حسيّا ، ويدرك عنه ذلك بكل مشعر ظاهر من سمع وبصر وباطن من عقل وفهم وغير ذلك من القوى ، كالحس المشترك والخيال والوهم والحافظة والمفكرة والمدارك من النفس والقلب والروح ، فاذكر هذه المسألة ؛ لئلا يحجبك الحق عن الخلق ، والخلق عن الحق . 
@@ -7239,7 +7997,7 @@ Full translation compared with scan, restoring the detailed enumeration of attri
 فذلك ما قال رضي اللّه عنه : [ وهو في كل وقت وحال القابل لهذين الحكمين الكليين المذكورين المتضادين بذاته لا بأمر زائد ، والجامع بين كل أمرين مختلفين من غائب وحاضر وصادر ووارد . إذا شاء ظهر في كل صورة ، وإن لم يشأ ، لم ينضاف إليه صورة ] ، 
 أي : وهو القابل بذاته في وقت من الأوقات الزمانية ، وحال من الأحوال المتغيرة ، قيد بذلك ؛ لأنه من حيث الأزل لا يقبل الجميع ،
 
-### English
+### English · passage 1
 
 **Qūnawī (continuing):** “—He is named by every name, appears through every trace, receives every ruling, is restricted in every place by every trace, and is apprehended by every faculty: sight, hearing, intellect, understanding, and the other powers and organs of perception. Remember.”
 
@@ -7261,11 +8019,15 @@ He then states that during permeation He is not confined by what He permeates:
 
 Full translation compared with scan. Removed «الساري في كل شيء» from authorial Arabic: it is the last line of the modern editor’s footnote begun on p. 225, visibly below the rule. The printed placement of «ولكن كل ذلك متى أحب وكيف شاء» outside the main brackets is followed conservatively in the commentary layer; speaker labels remain editorial.
 
-## Printed p. 227 · Opposing rulings and forms that do not alter essential perfection
+Related passage IDs: QNW-WIT265
 
-**MSH-P227** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P227 · Printed p. 227 · Opposing rulings and forms that do not alter essential perfection
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 وإلا لكانت الحوادث أزلية ، ويمكن أن يقال قابل بذاته ، إلا أن الأزل يمنع من القبول ، فهذا قابل لهذين الحكمين التجرد والتقيد الكليين ؛ لأنه اعتبر التجرد عن الكل في الأول ، والتقيد بالكل في الثاني ، وهما متضادان ، بينهما غاية الخلاف إلا أن الضدية إنما تعتبر بالنظر إلى الموضوعات الخاصة والتعينات الشخصية ، وقبوله له بذاته لا بأمر زائد ينضاف إليه إذ ليس وراء الوجود المطلق شيء حتى يعتبر انضيافه إليه ، وإن كان أثر قابليته للتقيد ببعض الأمور باعتبار الأمر الزائد ، لكن ذلك الأمر اعتباري بالنظر إلى نفس الوجود . نعم جمعيته المتقابلين ، بل لكل مختلفين سواء كان بينهما تقابل أم لا ، باعتبار صورته لا باعتبار ذاته فقط . 
 
@@ -7276,7 +8038,7 @@ Full translation compared with scan. Removed «الساري في كل شيء» f
 
 أي : لا يقدح تعينه بالصور النوعية والشخصية ، واتصافه بصفاته الحادثة في كمال وجوده الأحدية والواحدية ؛ لأن هذه التعيّنات والتشخّصات باعتبار المظاهر لا بالذات ، فلا ينافي كمال الذات ولا عزته عن التعلق بها ، ولا قدسه عن الحوادث لذلك ، فإن ما يلحق الصورة في المرآة عند تحريكها أو كسرها ، لا يلحق شيء ذا الصورة ، ولذلك لا ينافي ظهوره في الأشياء ، وإظهاره للأشياء ولا تعينه بمراتبها الدنيّة ، ولا تقيده بحقائقها الممكنة وبصفاتها الحادثة من هذه الحيثية ، علوه من حيثية أخرى هي الأحدية ، ولا إطلاقه الذاتي
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —otherwise originated things would be eternal. It may also be said that He is receptive through Himself, but eternity prevents the reception. He thus receives the two universal rulings, detachment and restriction: detachment from everything in the first, and restriction by everything in the second. They are opposites with the utmost difference between them. Opposition, however, is considered only with respect to particular subjects and individual determinations. His receptivity is through Himself, not an additional matter ascribed to Him, since there is nothing beyond absolute existence whose attribution to Him could be considered. Although the effect of His receptivity to restriction by some matters concerns an additional matter, that matter is conceptual in relation to existence itself. His gathering of opposites—indeed, of every two differing things, whether opposed or not—is in respect of His form, not His Essence alone.
 
@@ -7290,11 +8052,15 @@ Forms differ with the different matters appearing in them, and those matters dif
 
 Full translation compared with scan. The distinction between nonexistence of will and absence of its connection is retained. The mirror illustration and the exact ending of the argument are preserved rather than condensed into a general explanation.
 
-## Printed p. 228 · Expansion and contraction, origination and restoration through love
+Related passage IDs: QNW-WIT265
 
-**MSH-P228** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P228 · Printed p. 228 · Expansion and contraction, origination and restoration through love
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 ولا غناه بذاته عن الجميع ، بل هو تعالى مع تنزهه عن الجميع ، يجمع بين الحقائق المتماثلة والمتخالفة أي المتقاربة ، فيؤلّف بينهما ، فيجعلها واحدة أو أحدية بسبب المناسبة التي بين تلك الحقائق ، حتى يناسب وحدته على حسب ذلك . 
 
@@ -7310,7 +8076,7 @@ Full translation compared with scan. The distinction between nonexistence of wil
 
 أي : إن نظر سبحانه وتعالى علوه واستغنائه ، احتجب عن الأشياء بعزه فيكون غفورا ، أي : ساترا لها ، وإن أحب أن يعرف من جهة تكميل العالم والوجود بالظهور في المظاهر ، وإخراج ما لهما في الإمكان بالقوة إلى الفعل وما من الحقائق ، وظهر فيما شاء بالمشيئة الأزلية المفيضة عليها الاستعداد كيف شاء هناك ، فكان ودودا لظهوره فيها وإظهارها ، فبالمحبة من جهة كونه محبّا فقط ، إذ لا محبوب من الخلق قبل الإيجاد ، يبديء
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —nor His essential independence of all. Rather, while transcending all, He gathers realities that resemble one another and those that differ—that is, are proximate—and combines them. He makes them one, or gives them oneness, through the affinity between those realities, so that they accord with His unity accordingly.
 
@@ -7330,11 +8096,15 @@ He then explains why these names connect with origination and annihilation:
 
 Full translation compared with scan. The print’s عند الاتحاد is rendered [origination] from the creation/annihilation context and marked as interpretation; Arabic remains unchanged. The gloss actually adds الباسط alongside القابض and المعيد; this is preserved, not conformed to the shorter lemma. The defective printed وما من الحقائق is rendered [He draws near to] the realities from the lemma’s دنا, explicitly marked.
 
-## Printed p. 229 · The Glorious Throne, the First Intellect, and divine action upon causes
+Related passage IDs: QNW-WIT265
 
-**MSH-P229** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P229 · Printed p. 229 · The Glorious Throne, the First Intellect, and divine action upon causes
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 الحقائق بإعطاء الوجود لها ، وتبديه بالظهور فيها بعد ظهوره بذاته في ذاته ، وبالمحبة من جهة كونه محبّا في الصور الخلقية ، ومحبوبا من جهة الحقيقة يعيد إليه ، ومنه قوله صلى اللّه عليه وسلم :  “ حب الوطن من الإيمان  “  “ 1  “ . 
 
@@ -7350,7 +8120,7 @@ Full translation compared with scan. The print’s عند الاتحاد is rend
 
 بما قال رضي اللّه عنه :
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** —the realities by giving them existence, while love makes Him manifest by appearing in them after His manifestation through Himself within Himself. Through love, insofar as He is lover in created forms and beloved in respect of reality, He restores [them] to Himself. This includes the saying cited here as the Prophet's: ‘Love of homeland is part of faith.’
 
@@ -7370,11 +8140,15 @@ Through this, the Real does what He does on the occasion of its orientation—no
 
 Full translation compared with scan. Restores the final occasionalist explanation formerly shifted onto p. 230 and preserves the quotation’s opening on p. 230. The printed ضعف الفعل is interpreted with [what receives] in light of the explicitly quoted ضعف المنفعل on p. 228. The homeland saying and the attribution of al-Aqliyya are source claims, not independent authentication.
 
-## Printed p. 230 · Qurʾānic proof, divine freedom, and the opening of Text Twenty-Two
+Related passage IDs: QNW-WIT266
 
-**MSH-P230** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P230 · Printed p. 230 · Qurʾānic proof, divine freedom, and the opening of Text Twenty-Two
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 [ ولهذا قال سبحانه وتعالى مبدئ سر هذا الأمر : لِمَنْ كانَ لَهُ قَلْبٌ أَوْ أَلْقَى السَّمْعَ وَهُوَ شَهِيدٌ [ ق : 37 ] ، إِنَّ بَطْشَ رَبِّكَ لَشَدِيدٌ ( 12 ) إِنَّهُ هُوَ يُبْدِئُ وَيُعِيدُ ( 13 ) وَهُوَ الْغَفُورُ الْوَدُودُ ( 14 ) ذُو الْعَرْشِ الْمَجِيدُ ( 15 ) فَعَّالٌ لِما يُرِيدُ ( 16 ) [ البروج : 12 - 16 ] في مرتبتي الإطلاق والتقييد ، وقوله : فَعَّالٌ لِما يُرِيدُ [ البروج : 16 ] ، جواب سؤال مقدر ، علم أنه يبدو من معترض محجوب]
  .
@@ -7388,7 +8162,7 @@ Full translation compared with scan. Restores the final occasionalist explanatio
 
 قال الشيخ رضي اللّه عنه : [ اعلم أن أعظم الشبه والحجب أن التعدّدات الواقعة في الوجود الواحد توجب آثار الأعيان الثابتة فيه ، فتوهم  “ 1  “ أن الأعيان ظهرت في الوجود وبالوجود ،
 
-### English
+### English · passage 1
 
 **Qūnawī (continuing):** “For this reason He—exalted is He—said, disclosing the secret of this matter: ‘For one who has a heart, or gives ear while present’ [Q 50:37]; ‘Your Lord's grasp is indeed mighty. It is He who originates and restores. He is the Forgiving, the Loving, Lord of the Glorious Throne, Doer of whatever He wills’ [Q 85:12–16], in the two ranks of absoluteness and delimitation. His saying, ‘Doer of whatever He wills,’ answers an implicit question that He knew would arise from a veiled objector.”
 
@@ -7406,11 +8180,15 @@ His saying, “Doer of whatever He wills,” indicates that He has no need of ca
 
 The opening of Text Twenty-Two belongs to printed p. 230, not p. 231. The printed lemma reads توجب; the separate appendix p. 267 reads يوجب. This translation preserves the commentary reading rather than silently replacing it with بموجب. Digital تجابيها is corrected to printed تجليها. This page was compared with PDF page 229 (zero-based leaf 228).
 
-## Printed p. 231 · The effects of the fixed entities and the language of relative stations
+Related passage IDs: QNW-WIT266
 
-**MSH-P231** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P231 · Printed p. 231 · The effects of the fixed entities and the language of relative stations
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 وإنما ظهرت آثارها في الوجود ولم تظهر هي ، ولا تظهر أبدا ؛ لأنها ذاتها لا تقتضي الظهور ] . 
 
@@ -7424,7 +8202,7 @@ The opening of Text Twenty-Two belongs to printed p. 230, not p. 231. The printe
 أي : ومتى أخبر محقق عن كشفه بغير ما ذكرنا من أن الظهور للوجود ، بأن قال : 
 الظهور لها والوجود محقق فيها ، أو نسب إليها الوجود والظهور جميعا ، وقال لها : الوجود الإضافي هو ظل الوجود الحق ، وهي الظاهرة بذلك الوجود ، فإنما ذلك الإخبار بلسان بعض مراتب الكشف وبلسان بعض الأذواق النسبية لا بمعنى أن المخبر المكاشف بجميع المقامات يخبر بذلك عن بعضها ، بل بمعنى أن هذا الكلام ، إنما يصح من المخبر بها إذا بلغ مقاما معينا ، أو مقامات مخصوصة وتقيد بها ، ولم يصل إلى مقام الكمال ، فإن الواصل إليه لا يعتد بظهورها ولا وجودها ، بل الظاهر هو الوجود الواحد فيها .
 
-### English
+### English · passage 1
 
 **Qūnawī (continuing):** “—whereas only their effects have appeared in existence. They themselves have not appeared and never will appear, because their very selves do not entail manifestation.”
 
@@ -7442,11 +8220,15 @@ Hence Shaykh Muḥyī al-Dīn said in *Inshāʾ al-dawāʾir*: “Existence is n
 
 This page begins with the continuation of the lemma opened on p. 230. The printed opening includes هي، ولا تظهر, omitted from the linked digital transcription. The phrase الوجود ليس بزائد على الوجود is retained as printed; no unrecorded emendation to الموجود is supplied. Compared with PDF page 230 (zero-based leaf 229).
 
-## Printed p. 232 · The final rule of manifestation and the printed interruption
+Related passage IDs: QNW-WIT267
 
-**MSH-P232** · [Arabic source](https://archive.org/download/machra3-khosous/machra3-khosous.pdf)
+## MSH-P232 · Printed p. 232 · The final rule of manifestation and the printed interruption
 
-### Arabic
+Source: https://archive.org/download/machra3-khosous/machra3-khosous.pdf
+
+Speaker: Qūnawī primary lemmata and al-Mahāʾimī commentary — working English translation
+
+### Arabic · passage 1
 
 هذا هو النص الذي لا ينسخ بما هو أعلى منه ، بخلاف تلك المقامات فإنها تنسخ بما هي أعلى منها ، ثم ذكر أن جميع نصوصه إنما هي على مقام الكمال وصحتها على الإطلاق ، بخلاف المذكور في غيره من كتبه وكتب غيره ، فإنه قيد يكون كذلك وقد لا يكون ، مع أنه لا بدّ وأن يكون صحيحا ، والإضافة إلى مقام ما سبقت الإشارة في التفريع الثالث من تفاريع النصوص الثلاثة : الأول من أن جميع الكشوف لا بدّ من صحتها بوجه . 
 فإن قيل : قد مر مرارا أن الأعيان ظاهرة ، قلنا : المراد ظهورها بظهور الحق فيها ، لا بذاتها ، كما أن وجودها كذلك ، وذلك الظهور والوجود عين الحق لا هي ، فهي معدومة أبدا . 
@@ -7460,7 +8242,7 @@ This page begins with the continuation of the lemma opened on p. 230. The printe
 
 * * *
 
-### English
+### English · passage 1
 
 **Al-Mahāʾimī (continuing):** This is the definitive text that nothing higher abrogates, unlike those stations, which are abrogated by what is higher than they are. He then states that all his definitive texts proceed from the station of perfection and are correct without qualification. This differs from what is mentioned in his other books and in the books of others: that may or may not be so, although it must be correct in relation and attribution to some station. The earlier indication, in the third subdivision of the first three texts, was that all unveilings must be correct in some respect.
 
@@ -7480,13 +8262,17 @@ If it is asked, “Then this would not be one of the definitive texts,” we ans
 
 The physical print witness (printed p. 232 = PDF page 231, zero-based leaf 230) itself stops after فإذا ظهرت آثار الوجود بشرط, followed by the end formula. The interruption is not merely a defect of the online transcription. Its prior cause is unestablished; no manuscript or independent commentary edition was collated. The lemma reads الظهور في الوجود (manifestation is in existence), while the later gloss and the appendix p. 267 read الظهور للوجود (manifestation belongs to existence). These readings are kept distinct. The difficult printed phrases أن الظهور إما بذاتها and وما ظهر لك are rendered syntactically with minimal brackets, without claiming an Arabic emendation. The final formula is recorded without assigning it conclusively to the author or an earlier copyist/editor.
 
-# Qūnawī’s separate original text
+Related passage IDs: QNW-WIT267
 
-## Printed p. 235 · Qūnawī’s preface and the first text
+# Qūnawī’s separate original
 
-**QNW-WIT235** · [Arabic source](https://archive.org/details/machra3-khosous/page/n233/mode/1up)
+## QNW-WIT235 · Printed p. 235 · Qūnawī’s preface and the first text
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n233/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 بسم اللّه الرحمن الرحيم
 الحمد للّه الذي أبان بمستقرات الهمم مراتب علم اليقين وعينه وحقه ودرجاته ، وأوضح بسكون قلق الطالبين حال الوصول إلى منتهى شاء نفوسهم بتفاوت درجاتهم في منازل معرفته سبحانه في تقريباته . وميّز خاصته من بين الخلق بأن لم يجعل لهم غاية سوى ذاته من جميع عوالمه ، وحضرات أسمائه وصفاته ، بل جعل منتهى مدى هممهم أشرف متعلقات علمه الذاتي وأعلى مراداته ، حتى صار نهاية مرادهم وغاية مرماهم ما يريده بذاته لذاته . ومن جهة أعلى حيثيات شؤونها الأصلية الأول ، وأرفع تعيناته ، فهو سبحانه عين علمهم اليقيني ، وعينه وحقه في سائر مراتب علمه الذاتي المتعلق به أولا . 
@@ -7501,7 +8287,7 @@ The physical print witness (printed p. 232 = PDF page 231, zero-based leaf 230) 
 
 نصّ شريف هو أول النصوص الواجب تقديمه : اعلم أن الحق من حيث إطلاقه الذاتي لا يصح أن يحكم عليه بحكم ، أو يعرّف بوصف ، أو يضاف إليه نسبة ما من وحدة ، أو وجوب وجود ، أو مبدئية ، أو اقتضاء إيجاد ، أو صدور أثر ، أو تعلق علم منه
 
-### English
+### English · passage 1
 
 In the name of God, the All-Merciful, the Ever-Merciful.
 
@@ -7515,11 +8301,15 @@ They realize the results of their distinctive shares, which distinguish them fro
 
 **A noble text: the first of the texts, which must be placed first.** Know that, in respect of the Real's essential absoluteness, no judgment may rightly be pronounced concerning Him, no attribute used to define Him, and no relation ascribed to Him—whether unity, necessary existence, principiality, an exigency to bring into existence, the proceeding of an effect, or a relation of knowledge from Him ...
 
-## Printed p. 236 · Essential knowledge and the first determinations
+Related passage IDs: MSH-047, MSH-049, MSH-051, MSH-054, MSH-056, MSH-058, MSH-060
 
-**QNW-WIT236** · [Arabic source](https://archive.org/details/machra3-khosous/page/n234/mode/1up)
+## QNW-WIT236 · Printed p. 236 · Essential knowledge and the first determinations
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n234/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 بنفسه أو غيره ؛ لأن كل ذلك يقضي بالتعين والتقيد ، ولا ريب في أن تعقل كل تعين يقضي بسبق اللاتعين ، فكل ما ذكرناه ينافي الإطلاق ، بل تصور إطلاق الحق يشترط فيه أن يتعقل بمعنى أنه وصف سلبيّ ، لا بمعنى أنه إطلاق ضد التقييد ، بل هو إطلاق عن الوحدة والكثرة المعلومتين ، وعن الحصر أيضا في الإطلاق والتقييد ، وفي الجمع بين كل ذلك والتنزه عنه ، فيصح في حقه كل ذلك حال تنزّهه عن الجميع ، فنسبة كل ذلك إليه وغيره وسلبه عنه على السواء ، ليس أحد الأمرين بأولى من الآخر ، وإذا وضح هذا علم أن نسبة الوحدة إلى الحق والمبدئية والتأثير والفعل الإيجادي ونحو ذلك إنما يصح وينضاف إلى الحق باعتبار التعين . 
 
@@ -7531,7 +8321,7 @@ They realize the results of their distinctive shares, which distinguish them fro
 
 والنحو الآخر : تعقّل أحكام الوحدة جملة بعد جملة ، فيتعقل كل جملة بما تشتمل عليه من الماهيات التي هي صورة تلك التعقّلات المتكثرة المعددة للوجود الواحد ، وهكذا عكس الاستهلاك الأول المشار إليه ؛ فإن ذلك عبارة عن استهلاك الكثرة في الوحدة ،
 
-### English
+### English · passage 1
 
 ...to Himself or to another. All of these entail determination and restriction. There is no doubt that conceiving any determination entails the priority of nondetermination; everything mentioned therefore conflicts with absoluteness. Indeed, conceiving the Real's absoluteness requires understanding it as a negative description, not as an absoluteness opposed to restriction. It is freedom from the familiar unity and multiplicity, and from confinement to absoluteness and restriction, their conjunction, or transcendence of them all. All these may truly be predicated of Him while He transcends them all. Their attribution to Him and their denial of Him are on equal terms; neither alternative is more appropriate.
 
@@ -7547,11 +8337,15 @@ The other mode is the conception of the rulings of unity, collection after colle
 
 The repeated phrase في نفسه is retained and marked in English; it has not been silently deleted.
 
-## Printed p. 237 · Ranks of necessitation and relative judgments
+Related passage IDs: MSH-062, MSH-063, MSH-065, MSH-066, MSH-067
 
-**QNW-WIT237** · [Arabic source](https://archive.org/details/machra3-khosous/page/n235/mode/1up)
+## QNW-WIT237 · Printed p. 237 · Ranks of necessitation and relative judgments
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n235/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 وهذا هو استهلاك الوحدة في الكثرة فليعلم ذلك . 
 
@@ -7569,7 +8363,7 @@ The repeated phrase في نفسه is retained and marked in English; it has not 
 
 ومن تفاريع ما ذكرنا من النصوص أيضا أن الحكم من كل حاكم على كل محكوم عليه تابع لحال الحاكم حين الحكم ، وتابع لحال المحكوم عليه حال حكم الحاكم عليه ، فإن
 
-### English
+### English · passage 1
 
 ...whereas this is the absorption of unity in multiplicity. Let this be understood.
 
@@ -7585,11 +8379,15 @@ Among the divine texts is this: unitive, intrinsic knowledge is qualified by mul
 
 Another consequence of the texts we have mentioned is that the judgment of every judge concerning any subject follows both the judge's condition at the time of judgment and the subject's condition at that time. If ...
 
-## Printed p. 238 · Knowledge, existence and perfect realization
+Related passage IDs: MSH-068, MSH-069, MSH-070, MSH-071, MSH-072
 
-**QNW-WIT238** · [Arabic source](https://archive.org/details/machra3-khosous/page/n236/mode/1up)
+## QNW-WIT238 · Printed p. 238 · Knowledge, existence and perfect realization
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n236/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 كان المحكوم عليه ما من شأنه التنقل في الأحوال تنوعت أحكام الحاكم عليه في كل حال ، واختلفت بحسب تلبّسه بتلك الأحوال ، وإن كان المحكوم عليه من شأنه الثبات على وتيرة واحدة ثبت حكم الحاكم عليه بحسب التعلق المعين بحكم الحاكم عليه ومقتضاه ، وبقي الأمر بحسب حال الحاكم حين الحكم ، فإن كان الحاكم من مقتضى ذاته التقلّب في الأحوال بحسبها ، أو مقتضى ذاته أنه ثابت والأحوال تنقلب فيكون تبعية حكم الحاكم بحسب أحد الأمرين الحاصرين لمراتب حكم كل حاكم وكل محكوم عليه ؛ إذ لا يخرج عما ذكرته حكم حاكم ولا محكوم عليه . 
 
@@ -7603,7 +8401,7 @@ Another consequence of the texts we have mentioned is that the judgment of every
 فنقول بعد تمهيد هذه المقدمة الكلية في بيان هذا النص الذي قصدنا إيضاحه : 
 إن كل معلوم أدركه الإنسان بنظره أو كشفه أو حسه أو خياله جمعا وفرادى ، ولم ينته نظره أو كشفه لذلك الأمر ، أو إدراكه إيّاه حسّا وخيالا إلى إدراك ما وراءه بعد معرفة
 
-### English
+### English · passage 1
 
 ...the subject is of a kind that passes from one state to another, the judge's judgments vary in each state and differ according to the states assumed by the subject. If the subject is of a kind that remains fixed on one footing, the judgment remains fixed according to the determinate relation and requirement of the judgment concerning it. The matter then follows the judge's condition when judging: either his essence requires him to pass through states according to their character, or his essence requires that he remain fixed while states change. His judgment follows one of these two alternatives, which encompass the ranks of every judge and every subject judged; no judgment or subject lies outside what I have described.
 
@@ -7613,11 +8411,15 @@ Among the further consequences of these verified texts is a matter to which I ha
 
 Having laid down this general introduction, we say, in explaining the text we intend to clarify: whatever a person apprehends through reflection, unveiling, sense or imagination, jointly or separately—if his reflection, unveiling, sensory apprehension or imagination does not reach the apprehension of what lies beyond it after knowing ...
 
-## Printed p. 239 · The limits of knowledge and the unrestricted Real
+Related passage IDs: MSH-073, MSH-074, MSH-075, MSH-P089, MSH-P090
 
-**QNW-WIT239** · [Arabic source](https://archive.org/details/machra3-khosous/page/n237/mode/1up)
+## QNW-WIT239 · Printed p. 239 · The limits of knowledge and the unrestricted Real
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n237/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 ذاتياته ولوازمه الكلية ، فإنه لم يدرك ذلك الأمر حق الإدراك تماما ، ولم يعرفه حق المعرفة . 
 
@@ -7631,7 +8433,7 @@ Having laid down this general introduction, we say, in explaining the text we in
 
 وقد أشار صلى اللّه عليه وسلم إلى ما ذكرناه في بعض مناجاته فقال صلى اللّه عليه وسلم :  “ أعوذ برضاك من سخطك وبمعافاتك من عقوبتك وأعوذ بك منك ، لا أحصي ثناء عليك أنت كما أثنيت على نفسك  “ 1  “  “ : أي لا أبلغ كل ما فيك . فجمع فيه بين التنبيه على تعذر الإحاطة وبين التعريف
 
-### English
+### English · passage 1
 
 ...its intrinsic features and universal concomitants, he has not apprehended that thing with complete and rightful apprehension, nor known it as it should be known.
 
@@ -7643,11 +8445,15 @@ This is indicated in His address to His most perfect servant: “And to your Lor
 
 The Prophet also indicated this in one of his intimate prayers: “I seek refuge in Your good pleasure from Your displeasure, in Your pardon from Your punishment, and in You from You. I cannot enumerate praise of You; You are as You have praised Yourself”—that is, I cannot reach everything that is in You. He thus joined an indication that encompassing Him is impossible with a disclosure ...
 
-## Printed p. 240 · The most comprehensive determination and principiality
+Related passage IDs: MSH-P090, MSH-P091, MSH-P093, MSH-P095
 
-**QNW-WIT240** · [Arabic source](https://archive.org/details/machra3-khosous/page/n238/mode/1up)
+## QNW-WIT240 · Printed p. 240 · The most comprehensive determination and principiality
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n238/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 بانتهائه في معرفة الحق إلى غاية الغايات ، وهذا كالتفسير للآية المذكورة ، وهي قوله :وَأَنَّ إِلى رَبِّكَ الْمُنْتَهى. 
 
@@ -7665,7 +8471,7 @@ The Prophet also indicated this in one of his intimate prayers: “I seek refuge
 والنسب والإضافات هي عبارة عن تعقل الحق نفسه ، وإدراكه لها من حيث تعيّنه ، وهذا التعقل والإدراك التعيّني وإن كان يلي الإطلاق المشار إليه فإنه بالنسبة إلى تعين الحق في تعقل كل متعقل في كل تجلّ تعين مطلق ، وإن أوسع التعينات ، وهو شهود الكمّل ، وهو التجلّي الذاتي ، وله مقام التوحيد الأعلى . 
 ومبدئية الحق تلي هذا التعين ، والمبدئية هي محتد الاعتبارات ، ومنبع النسب
 
-### English
+### English · passage 1
 
 ...that his knowledge of the Real had reached the goal of goals. This is like an explanation of the verse just mentioned: “And to your Lord is the final end.”
 
@@ -7683,11 +8489,15 @@ Relations and attributions express the Real's intellection of Himself and His ap
 
 The Real's principiality follows this determination. Principiality is the origin of considerations and the wellspring of relations ...
 
-## Printed p. 241 · Causality and the mirror of reality
+Related passage IDs: MSH-P095, MSH-P096, MSH-P097, MSH-P098, MSH-P099, MSH-P100, MSH-P101
 
-**QNW-WIT241** · [Arabic source](https://archive.org/details/machra3-khosous/page/n239/mode/1up)
+## QNW-WIT241 · Printed p. 241 · Causality and the mirror of reality
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n239/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 والإضافات الظاهرة في الوجود ، والباطنة في عرصة التعقلات والأذهان . 
 والمقول فيه أنه وجود مطلق واحد واجب ، فهو عبارة عن تعين الوجود في النسبة العلمية الذاتية الإلهية ، والحق من حيث هذه النسبة يسمّى عند المحقق بالمبدأ ، لا من حيث نسبة غيرها ، فافهم هذا وتدبّر ، فقد أدرجت لك هذا النص أصل أصول المعارف الإلهية ، واللّه المرشد . 
@@ -7701,7 +8511,7 @@ The Real's principiality follows this determination. Principiality is the origin
 
 ومرادي من قولي ببعض ظهوراته التنبيه على أن التجليات الذاتية الاختصاصية لا تكون في مظهر ولا في مرآة ، ولا بحسب مرتبة ما ، فإن من أدرك الحق من حيث هذه التجليات فقد شهد الحقيقة خارج المرآة من حيث هي لا بحسب مظهر ولا مرتبة كما قلنا ، ولا اسم ولا صفة ولا حال معين ولا غير ذلك ، وهو يعلم ذوقا أن المرآة لا أثر لها في الحقيقة .
 
-### English
+### English · passage 1
 
 ...and attributions, outwardly apparent in existence and inwardly present in the domain of intellections and minds.
 
@@ -7719,11 +8529,15 @@ By “some of its appearances” I intend to indicate that the distinctive essen
 
 The compressed causality lemma omits في after يؤثر, making the isolated syntax ambiguous. The commentary at printed p.104 explicitly supplies في and identifies the object as المؤثر فيه, supporting the English “unless it affects the reality of that thing as such.” The later condition returns to the reality described as exercising the effect. This interpretive aid is recorded without silently emending the appendix Arabic.
 
-## Printed p. 242 · Essential self-disclosures and inward assistance
+Related passage IDs: MSH-P102, MSH-P103, MSH-P104, MSH-P105, MSH-P106, MSH-P107, MSH-P172
 
-**QNW-WIT242** · [Arabic source](https://archive.org/details/machra3-khosous/page/n240/mode/1up)
+## QNW-WIT242 · Printed p. 242 · Essential self-disclosures and inward assistance
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n240/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 وكان شيخنا الإمام قدّس اللّه روحه يسمّي هذه التجليات :  “ التجليات الذاتية البرقية  “ ، وما كنت أعرف يومئذ سبب هذه التسمية ، ولا مراد الشيخ منها . 
 
@@ -7737,7 +8551,7 @@ The compressed causality lemma omits في after يؤثر, making the isolated sy
 لا أن ثمة حقيقة تؤثر في حقيقة غيرها وهكذا ، فلتعرف الأمر في المدد ، 
 فليس ثمة شيء يمد شيئا غيره ، بل المدد يصل من باطن الشيء إلى الظاهر ، والتجلّي النوري الوجودي يظهر ذلك ، فليس الإظهار بتأثير في حقيقة ما أظهره ، فالنسب هي المؤثرة بعضها في البعض ، بمعنى
 
-### English
+### English · passage 1
 
 Our master, the Imam—may God sanctify his spirit—used to call these disclosures “the lightning-like essential self-disclosures.” At that time I did not know the reason for this name or what the master intended by it.
 
@@ -7749,11 +8563,15 @@ Nor has he known the secret of the saying, “God was, and nothing was with Him�
 
 Understand assistance or replenishment in the same way. Nothing supplies something other than itself: the supply reaches the outward aspect of a thing from its inward aspect, and the luminous, existential self-disclosure makes this apparent. Making something appear does not constitute an effect upon the reality of what is made apparent. Relations affect one another in the sense ...
 
-## Printed p. 243 · Conditional agency and the source of things
+Related passage IDs: MSH-P108, MSH-P109, MSH-P110, MSH-P111, MSH-P112, MSH-P114
 
-**QNW-WIT243** · [Arabic source](https://archive.org/details/machra3-khosous/page/n241/mode/1up)
+## QNW-WIT243 · Printed p. 243 · Conditional agency and the source of things
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n241/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 أن بعضها سبب لانتشاء البعض ، وظهور حكمه في الحقيقة التي هي محتدها . 
 ومن جملة ما يعرفه ذائق هذا التجلّي أن لا أثر للأعيان الثابتة من كونها مرائي في التجلّي الوجودي الإلهي ، إلا من حيث ظهور التعدد الكامن في غيب ذلك التجلّي ، فهو أثر في نسبة الظهور الذي هو شرط في الإظهار ، والحق يتعالى عن أن يكون متأثرا من غيره ، وتتعالى حقائق الكائنات أن تكون من حيث هي حقائقها متأثرة ، فإنها من هذا الوجه في ذوق الكمال عين شؤون الحق ، فلا جائز أن يؤثر فيها غيرها ، فلا أثر لمرآة ما من حيث هي مرآة في حقيقته المنطبع فيها لما مرّ بيانه . 
@@ -7768,7 +8586,7 @@ Understand assistance or replenishment in the same way. Nothing supplies somethi
 
 ومتى توهم وقوع خلاف ما ذكرنا فليس ذلك إلا بشرط خارج عن ذات الشيء ،
 
-### English
+### English · passage 1
 
 ...that some are the cause of the arising of others and of the appearance of their ruling in the reality which is their origin.
 
@@ -7784,11 +8602,15 @@ Another is this: nothing gives rise to, or nurtures, what is contrary to it or a
 
 Whenever something contrary to what we have said seems to occur, it does so only through a condition external to the thing's essence ...
 
-## Printed p. 244 · Names of the Essence and the absence of repetition
+Related passage IDs: MSH-P114, MSH-P116, MSH-P117, MSH-P118
 
-**QNW-WIT244** · [Arabic source](https://archive.org/details/machra3-khosous/page/n242/mode/1up)
+## QNW-WIT244 · Printed p. 244 · Names of the Essence and the absence of repetition
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n242/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 أو شروط وبحسبها وبحسب الهيئة المتعقلة الحاصلة من تلك الجمعية ، أعني جمعية الحقيقة الموصوفة بالمصدرية مع الشروط والاعتبارات الخارجية ، وأحكام المرتبة التي يتعيّن فيها ذلك الاجتماع . قال تعالى : كُلٌّ يَعْمَلُ عَلى شاكِلَتِهِ [ الإسراء : 84 ] .
 ولا يثمر شيء ، ولا يظهر عنه أيضا عينه ولا ما يشابهه مشابهة تامة ، فإنه يلزم من ذلك أن يكون الوجود قد حصل مرتين ، وظهر في حقيقة واحدة ومرتبة واحدة على وجه ونسق واحد ، 
@@ -7801,7 +8623,7 @@ Whenever something contrary to what we have said seems to occur, it does so only
 
 ثم إن لذوي العقول السليمة وإن عدموا الكشف الصحيح أن يعتبروا الصفات والأسماء التالية ، فإن تعذّر عليهم تعقل أسماء وصفات وراء ما تصورت وانتهت إليه ادراكاتهم العقلية ، فتلك أسماء الذات بالنسبة إليهم ، ويستدل بحقائقها في طور العقل
 
-### English
+### English · passage 1
 
 ...or through several conditions, and according to those conditions and the intelligible configuration produced by their conjunction: that is, the conjunction of the reality described as a source with the external conditions and considerations and with the rulings of the rank in which that conjunction is determined. God says, “Each acts according to his own disposition” (Q 17:84).
 
@@ -7813,11 +8635,15 @@ Hence the realized knowers say that the Real never discloses Himself twice to on
 
 Those of sound intellect, even if they lack authentic unveiling, may consider the attributes and Names that follow this determination. If they cannot conceive Names and attributes beyond what they have conceived and reached through rational apprehension, these are the Names of the Essence relative to them. In the domain of discursive reason ...
 
-## Printed p. 245 · Essential correspondence and divine gifts
+Related passage IDs: MSH-P119, MSH-P120, MSH-P121, MSH-P122
 
-**QNW-WIT245** · [Arabic source](https://archive.org/details/machra3-khosous/page/n243/mode/1up)
+## QNW-WIT245 · Printed p. 245 · Essential correspondence and divine gifts
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n243/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 النظري حال الحجاب ؛ لشمول حكمها ، وتبعية غيرها من الصفات والأسماء لها ، وتوقف تعين ما بعدها عليها ، فالعطايا الإلهية الذاتية والأسمائية تعرف من هذه القاعدة ، بمعنى أن كل عطاء وخير يصل من الحق إلى الخلق ، إما أن يكون عطاء ذاتيّا أو أسمائيّا ، أو أن يكون مجموعا من الذات والأسماء . 
 
@@ -7834,7 +8660,7 @@ Those of sound intellect, even if they lack authentic unveiling, may consider th
 
 هؤلاء أصحاب العطايا الأسمائية ، غير أن نسبتهم إلى حضرة الذات أقوى من نسبتهم إلى حضرة الأسماء والصفات ، ولهذا اتبعوا أصحاب المناسبة الذاتية ، وشاركوهم في أحوالهم ، فاعلم ذلك .
 
-### English
+### English · passage 1
 
 ...while still veiled, their realities serve as indications because their rulings are comprehensive, because other attributes and Names follow them, and because the determination of what follows depends upon them. From this principle the divine gifts of the Essence and of the Names can be known. Every gift and good reaching creation from the Real is either a gift of the Essence, a gift of the Names, or a combination of the Essence and the Names.
 
@@ -7846,11 +8672,15 @@ Whoever does not know this principle has not known the reality of His words, “
 
 They also occur in prophetic reports, such as the statement that seventy thousand of his community will enter Paradise without reckoning, and with every thousand another seventy thousand. These latter are recipients of gifts of the Names, but their relation to the Presence of the Essence is stronger than their relation to the Presence of the Names and attributes. They therefore follow the people of intrinsic affinity and share in their states. Know this.
 
-## Printed p. 246 · Prayer, knowledge and the conception of God
+Related passage IDs: MSH-P123, MSH-P124, MSH-P125, MSH-P126
 
-**QNW-WIT246** · [Arabic source](https://archive.org/details/machra3-khosous/page/n244/mode/1up)
+## QNW-WIT246 · Printed p. 246 · Prayer, knowledge and the conception of God
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n244/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 وإذ قد ذكرنا أقسام العطايا وأحكامها فلنذكر أقسام القابلين لها ، فإنهم في أخذهم على طبقات يتعدد بحسب سؤالاتهم الاستعدادية ، أو الحالية ، أو المرتبية ، أو الروحانية ، أو الطبيعية المزاجية ، أو الطبيعية العرضية التي يترجم عنها لسان الطالب القابل . 
 وعلى الجملة فأعلى مراتب القابلين في قبولهم لما يرد عليهم من فيض الحق وعطاياه رؤية وجه الحق في الشروط والأسباب المسمّاه بالوسائط وسلسلة الترتيب ، 
@@ -7866,7 +8696,7 @@ They also occur in prophetic reports, such as the statement that seventy thousan
 
 فالعديم المعرفة الصحيحة الشهودية النسبي التصور ، ليس بداع للحق الذي ضمن له الإجابة بقوله له :ادْعُونِي أَسْتَجِبْ لَكُمْ، وإنما هو متوجه في دعائه إلى الصورة الشخصية في ذهنه ، الناتجة من نظره وخياله ، أو خيال غيره ونظره ، أو
 
-### English
+### English · passage 1
 
 Having described the divisions of gifts and their rulings, let us describe their recipients. Their reception occurs in different classes, differentiated according to their requests: requests of preparedness, state, rank, spirit, natural constitution and temperament, or incidental natural condition, which the tongue of the requesting recipient expresses.
 
@@ -7878,11 +8708,15 @@ The sounder a person's knowledge and conception of the Real, the swifter the res
 
 One who lacks sound, witnessed knowledge and has only a relative conception is not calling upon the Real who guaranteed the response in those words. In his prayer he turns instead towards an individualized image in his mind, produced by his reflection and imagination, or someone else's imagination and reflection, or ...
 
-## Printed p. 247 · Response to prayer and divine initiative
+Related passage IDs: MSH-P127, MSH-P128, MSH-P130, MSH-P131, MSH-P132, MSH-P133
 
-**QNW-WIT247** · [Arabic source](https://archive.org/details/machra3-khosous/page/n245/mode/1up)
+## QNW-WIT247 · Printed p. 247 · Response to prayer and divine initiative
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n245/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 المتحصلة من المجموع المشار إليه ، فلهذا يحرم من هذا شأنه الإجابة في عين ما سأل فيه ، أو يتأخر عنه ، أعني الإجابة . 
 
@@ -7898,7 +8732,7 @@ One who lacks sound, witnessed knowledge and has only a relative conception is n
 
 وهذا المقام فوق مقام إجابة الأدعية ، وأنه من خصائص كمال المطاوعة ، ومقامه فوق مقام المطاوعة ، فإن مقام المطاوعة يختص بما سبقت الإشارة إليه من المبادرة إلى امتثال
 
-### English
+### English · passage 1
 
 ...by a combination of these. A person in this condition is therefore denied an answer concerning the precise thing requested, or the answer is delayed.
 
@@ -7914,11 +8748,15 @@ I added “or will it” because there are people upon whose willing things depe
 
 This station is above that of answered prayers. It is among the distinctive properties of complete compliance, and its station is above the station of compliance. The latter is specifically concerned with what was mentioned earlier: hastening to fulfil ...
 
-## Printed p. 248 · Perfect compliance and the complete human
+Related passage IDs: MSH-P133, MSH-P134, MSH-P135, MSH-P136, MSH-P137, MSH-P138, MSH-P139
 
-**QNW-WIT248** · [Arabic source](https://archive.org/details/machra3-khosous/page/n246/mode/1up)
+## QNW-WIT248 · Printed p. 248 · Perfect compliance and the complete human
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n246/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 الأوامر ، وتتبع مراضي الحق ، والقيام بحقوقه بقدر الاستطاعة ، كما أشار إليه صلى اللّه عليه وسلم في جواب عمه أبي طالب حين قال له : ما أسرع ربك إلى هواك يا محمد ، لما رأى من سرعة إجابة الحق له فيما يدعوه فيه . 
 
@@ -7934,7 +8772,7 @@ This station is above that of answered prayers. It is among the distinctive prop
 
 وليس وراء هذا المقام مرمى لرام ، ولا مرقى لراق إلى مرتبة ولا مقام ، ودونه المتوجه إلى الحق بمعرفة تامة وتصور صحيح ، المقصود بخطاب قوله :
 
-### English
+### English · passage 1
 
 ...the commands, seeking out what pleases the Real, and discharging His rights to the extent of one's ability. This is indicated in the Prophet's reported answer to his uncle Abū Ṭālib when, seeing how swiftly the Real answered his prayers, he said, “How swiftly your Lord responds to your desire, Muḥammad!” Another version has, “How compliant your Lord is towards you!” The Prophet replied, “And you, uncle: if you obey Him, He will comply with you.”
 
@@ -7948,11 +8786,15 @@ If one who realizes this prays, he prays in the languages of the worlds and thei
 
 Beyond this station there is no further goal for one who aims, and no ascent to a higher rank or station for one who ascends. Below it is the person who turns towards the Real with complete knowledge and a sound conception, addressed by His words ...
 
-## Printed p. 249 · Unity, multiplicity and complete manifestation
+Related passage IDs: MSH-P139, MSH-P141, MSH-P142, MSH-P143
 
-**QNW-WIT249** · [Arabic source](https://archive.org/details/machra3-khosous/page/n247/mode/1up)
+## QNW-WIT249 · Printed p. 249 · Unity, multiplicity and complete manifestation
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n247/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 ادْعُونِي أَسْتَجِبْ لَكُمْ[ غافر : 60 ] ، وخبر الحق صدق ، وقد تيسّر ذلك لهذا العبد المشار إليه ، فلزمت النتيجة التي هي الإجابة ، ولا بدّ بخلاف غيره من المتوجهين المذكور شأنهم . 
 
@@ -7967,7 +8809,7 @@ Beyond this station there is no further goal for one who aims, and no ascent to 
 
 وبامتياز كثرة الأشياء المتعقلة ثانيا ، الكامنة من قبل في ضمن الوحدة ، والجمع بينهما وبين الوحدة بالفعل ، ظهر الكمال المستجن في الوحدة أولا ، فانفتح بذلك باب كمال الجلاء والاستجلاء الذي هو المطلوب الحقيقي ، وظهرت أحكام الوحدة في الكثرة ،
 
-### English
+### English · passage 1
 
 ...“Call upon Me; I shall answer you” (Q 40:60). The Real's report is true. This has become possible for the servant just described, and its result—the answer—necessarily follows, unlike the other people who turn towards Him in the conditions already mentioned.
 
@@ -7981,11 +8823,15 @@ We therefore say: the Real knows Himself through Himself, and knows things withi
 
 When the multiplicity of things—conceived subsequently, having previously been latent within unity—is distinguished and actually joined with unity, the perfection originally hidden within unity becomes manifest. Thus the door of the perfection of disclosure and self-contemplation, the true intended object, is opened; and the rulings of unity appear in multiplicity ...
 
-## Printed p. 250 · Degrees of knowledge and the criteria of complete knowledge
+Related passage IDs: MSH-P143, MSH-P145, MSH-P146, MSH-P147, MSH-P148
 
-**QNW-WIT250** · [Arabic source](https://archive.org/details/machra3-khosous/page/n248/mode/1up)
+## QNW-WIT250 · Printed p. 250 · Degrees of knowledge and the criteria of complete knowledge
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n248/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 والكثرة في الوحدة ، فوحّدت الوحدة الكثرة ؛ لكونها صارت قدرا مشتركا بين المتكثرات المتميزة بالذات بعضها عن بعض ، فوصلت فصولها ؛ لأنها جمعت بذاتها كما ذكرنا ، وعددت المتكثرات الواحد من حيث التعينات التي هي سبب تنوعات ظهور الواحد بالصبغ والإصباغ ، والكيفيات المختلفة التي اقتضتها اختلافات استعدادات المتكثرات القابلة للتجلّي الواحد فيها ، فتجدّدت معرفة أنواع الظهورات والأحكام اللازمة لها التي هي عبارة عن تأثير بعضها في البعض بالإبرام والنقض ، ظاهرا وباطنا ، علوّا وسفلا ، مؤقتا وغير مؤقت ، مناسبا وغير مناسب ، 
 كل ذلك بالاتصال الحاصل بينها بالتجلّي الوجودي الوحداني الجامع شملها كما ذكرنا . 
@@ -7998,7 +8844,7 @@ When the multiplicity of things—conceived subsequently, having previously been
 أحدهما : استغناؤك بما حصل لك من العلم به عن معاودة النظر فيه وتكراره طلبا لمزيد معرفة به ، فإن تجدّد العلم بالشيء بطريق الازدياد ، بعد دعوى معرفة سابقة به إنما موجبه نقصان العلم به أولا ، فلو كمل العلم به أولا لاستغنى عن الازدياد كما هو شأن الحق ، وذلك موقوف على كمال الإحاطة العلمية بالمعلوم . 
 والآية الأخرى التي يستدل بها على حصول هذا العلم وصحّته ، هو أن ينسحب حكم علمه على الشيء حتى
 
-### English
+### English · passage 1
 
 ...and those of multiplicity in unity. Unity makes multiplicity one, since it becomes a common element among the many things intrinsically distinct from one another. It joins their differentiating features, because it gathers them through itself, as we have said. The many things in turn multiply the One through the determinations which occasion the different appearances of the One: colouring, being coloured, and the differing qualities required by the varied preparednesses of the many recipients of the one self-disclosure. Knowledge of the kinds of appearances and of their necessary rulings is thus renewed. These rulings consist in the effects of some upon others, through establishing and undoing, outwardly and inwardly, above and below, within time and outside time, in affinity and without affinity. All this occurs through the connection established among them by the one existential self-disclosure which gathers their dispersed elements together, as we have said.
 
@@ -8012,11 +8858,15 @@ The first is that the knowledge you have attained makes you independent of retur
 
 The other sign establishing the attainment and soundness of this knowledge is that its ruling extends over the thing until ...
 
-## Printed p. 251 · Names, states and essential perfection
+Related passage IDs: MSH-P149, MSH-P150, MSH-P152, MSH-P153
 
-**QNW-WIT251** · [Arabic source](https://archive.org/details/machra3-khosous/page/n249/mode/1up)
+## QNW-WIT251 · Printed p. 251 · Names, states and essential perfection
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n249/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 يتجاوز تقيده ، فينتهي إلى أن يرى آخره متّصلا بإطلاق الحق . والعلم بالحق ليس كذلك ، فإنه إنما يتعلق به من حيث تعينه سبحانه في مرتبة أو مظهر أو حال أو حيثية أو اعتبار ، وكلما انضبط للعالم به بتعينه من إحدى الوجوه المذكورة ، يظهر علمه ويتعين له من مطلق الذات بحسب حال المتجلي له ؛ إذ ذاك ما لم يسبق تعينه قبل ذلك . 
 
@@ -8030,7 +8880,7 @@ The other sign establishing the attainment and soundness of this knowledge is th
 
 وإذا تقرّر هذا فنقول : ما كان له هذا الكمال من ذاته ، فإنه لا ينقص بالعوارض
 
-### English
+### English · passage 1
 
 ...it passes beyond the thing's restriction and reaches the point at which its end is seen to be connected with the Real's absoluteness. Knowledge of the Real is otherwise. It relates to Him only insofar as He is determined in a rank, locus of manifestation, state, aspect or consideration. Whenever He becomes apprehensible to the knower through determination in one of these ways, knowledge of Him appears and something not previously determined becomes determined for that knower from the unrestricted Essence, according to the condition of the recipient of the disclosure at that moment.
 
@@ -8044,11 +8894,15 @@ Every determination conceived of the Real is undoubtedly a Name of His: for the 
 
 Once this is established, we say that whatever possesses this perfection from its own essence is not diminished by accidents ...
 
-## Printed p. 252 · The reality of the Real and modes of transcendence
+Related passage IDs: MSH-P155, MSH-P156, MSH-P157, MSH-P158
 
-**QNW-WIT252** · [Arabic source](https://archive.org/details/machra3-khosous/page/n250/mode/1up)
+## QNW-WIT252 · Printed p. 252 · The reality of the Real and modes of transcendence
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n250/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 واللوازم الخارجية في بعض المراتب ، بمعنى أنها تقدح في كماله ، ولا جائز أن يتوهم في كماله نقص أيضا بحيث يكمل بها ، بل قد يظهر بالعوارض واللوازم في بعض المراتب وصف أكمليّته ، ومن جملتها معرفة أن هذا شأنه . 
 
@@ -8062,7 +8916,7 @@ Once this is established, we say that whatever possesses this perfection from it
 
 وأما تنزيه أهل الكشف فهو بإثبات الجمعية للحق مع عدم الحصر ، وتمييز أحكام الأسماء بعضها عن بعض ، فإنه ليس كل حكم يصح إضافته إلى كل اسم ، بل من الأسماء
 
-### English
+### English · passage 1
 
 ...and external concomitants in certain ranks, in the sense that they would impair its perfection. Nor may a deficiency in its perfection be imagined such that those things would complete it. Rather, accidents and concomitants may reveal, in certain ranks, the character of its greater perfection. Among these is the knowledge that this is its condition.
 
@@ -8080,11 +8934,15 @@ The people of unveiling declare transcendence by affirming comprehensiveness of 
 
 The Qurʾānic reference accompanying “the best of forgivers” is corrected in English to 7:155; the electronic/printed reference reads 7:156. The Arabic quotation is unchanged.
 
-## Printed p. 253 · Knowledge as a mirror of known realities
+Related passage IDs: MSH-P160, MSH-P161, MSH-P162, MSH-P163, MSH-P164
 
-**QNW-WIT253** · [Arabic source](https://archive.org/details/machra3-khosous/page/n251/mode/1up)
+## QNW-WIT253 · Printed p. 253 · Knowledge as a mirror of known realities
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n251/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 ما يستحيل إضافة بعض الأحكام إليها ، وإن كانت ثابتة لأسماء أخر ، وهذا الأمر في الصفات ، ومن ثمرات التنزيه الكشفي نفي السوى مع بقاء الحكم العددي ، دون فرض نقص يسلب أو تعقل كمال يضاف إلى الحق بإثبات مثبت والسلام . 
 
@@ -8100,7 +8958,7 @@ The Qurʾānic reference accompanying “the best of forgivers” is corrected i
 والوحدانية ثابتة للحق من حيث العلم ، فإن فيه وبه يتعيّن مرتبة الإلهية وغيرها من المراتب والمعلومات ؛ لارتسام الجميع فيه ، وهو مرآة الذات من حيث اشتمالها على الأسماء الذاتية التي لا يغايرها الذات بوجه ما ، كما مرّ ، 
 وهو أعني العلم محتد الكثرة المعنوية ومشرعها ، وإنما قلت أن العلم كالمرآة للمعلومات وللذات أيضا مع أسمائها الذاتية من
 
-### English
+### English · passage 1
 
 ...are those to which certain rulings cannot possibly be ascribed, although those rulings are established for other Names. The same applies to the attributes. Among the fruits of the transcendence known through unveiling is the denial of an “other” while the numerical ruling remains, without positing a deficiency to be denied or conceiving a perfection to be added to the Real by someone's affirmation. Peace.
 
@@ -8112,11 +8970,15 @@ The Names, however, differ from and oppose one another, while also being united 
 
 The Essence has only one concomitant, differing from it only relatively: knowledge. Unitive oneness is established for the Real in respect of knowledge. Within and through knowledge the rank of divinity and the other ranks and objects of knowledge are determined, for all are inscribed in it. Knowledge is the mirror of the Essence insofar as the Essence comprises the essential Names from which, as explained, it differs in no respect. Knowledge is the origin and wellspring of intelligible multiplicity. I called knowledge a mirror for the known things, and also for the Essence with its essential Names, because ...
 
-## Printed p. 254 · The divine Names and the keys of the unseen
+Related passage IDs: MSH-P165, MSH-P166, MSH-P167, MSH-P168, MSH-P169, MSH-P170
 
-**QNW-WIT254** · [Arabic source](https://archive.org/details/machra3-khosous/page/n252/mode/1up)
+## QNW-WIT254 · Printed p. 254 · The divine Names and the keys of the unseen
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n252/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 أجل أنه باعتبار امتياز العلم عن الذات الامتياز الاعتباري ، تعقل تعين الحق في تعقله نفسه في نفسه ، فعلمه الذاتي كالمرآة له . 
 
@@ -8130,7 +8992,7 @@ The Essence has only one concomitant, differing from it only relatively: knowled
 
 ثم اعلم أن المراتب متعقلة الانتشاء بعضها من بعض ، وكذلك الأسماء ، فالألوهية بأسمائها الكلية التي هي ( الحي ، العالم ، المريد ، القادر ) ظلّ للذات من حيث اشتمالها بذاتها على مفاتيح الغيب ، لكن بين الألوهية والذات في ذلك فرق دقيق في ذوق الكمّل ، وهو أن
 
-### English
+### English · passage 1
 
 ...under the conceptual distinction of knowledge from the Essence, the Real's determination in His understanding of Himself within Himself is conceived. His essential knowledge is therefore like a mirror for Him.
 
@@ -8144,11 +9006,15 @@ They are like relative ends in relation to the movement of the essential effusio
 
 Know also that the ranks are conceived as arising from one another, as are the Names. Divinity, with its universal Names—the Living, the Knowing, the Willing and the Powerful—is a shadow of the Essence insofar as it intrinsically comprises the Keys to the Unseen. Yet, in the tasting of the perfect ones, there is a subtle difference between divinity and the Essence in this respect: ...
 
-## Printed p. 255 · Essential correspondence with God and among human beings
+Related passage IDs: MSH-P170, MSH-P171, MSH-P172, MSH-P173, MSH-P174, MSH-P175
 
-**QNW-WIT255** · [Arabic source](https://archive.org/details/machra3-khosous/page/n253/mode/1up)
+## QNW-WIT255 · Printed p. 255 · Essential correspondence with God and among human beings
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n253/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 الألوهية تتعقّل ممتازة عن أمهات أسمائها المذكورة ، والذات لا يعقل تميزها عن أسمائها الذاتية إلا المحجوبون عن التجلّي الذاتي ، وأما أهل التجلّي الذاتي فلا يعقلون هذا النوع من التميز ، ولا يشهدونه إلا باعتبار علمهم بعلم المحجوبين ، وأما التميز عندهم في ذلك فهو بما أشرت إليه من أن الذات غير مغايرة لأسمائها الذاتية بوجه ما ، وهي تغاير بعضها بعضا مع أنه لا انفكاك ، ومع أن درجات المفاتيح متفاوتة ، فإن بعضها تابع للبعض ، كما نبّهت عليه في أسماء الألوهية من تبعية اسم : الخالق ، والبارئ ، والمصور ، أمثالها فتذكّر . 
 
@@ -8162,7 +9028,7 @@ Know also that the ranks are conceived as arising from one another, as are the N
 
 وأما المناسبة الذاتية بين الناس فتثبت من وجهين أيضا ، وهما مثالان للوجهين الإلهيين المذكورين : أحدهما من جهة اشتراك المتناسبين في المزاج ، بمعنى وقوع مزاجيهما
 
-### English
+### English · passage 1
 
 ...divinity is conceived as distinct from the mother Names just mentioned. The Essence is conceived as distinct from its essential Names only by those veiled from essential self-disclosure. Those who possess that disclosure neither conceive nor witness this kind of distinction, except insofar as they know the knowledge of the veiled. For them, the distinction is what I indicated: the Essence does not differ from its essential Names in any respect, while those Names differ from one another, although they cannot be separated. The Keys also possess differing degrees, some following others, as I pointed out concerning the divine Names in the subordination of the Creator, the Originator, the Giver of Form and the like. Remember this.
 
@@ -8176,11 +9042,15 @@ One who encompasses the attributes and rulings belonging to necessity and possib
 
 Intrinsic affinity between human beings is also established in two ways, corresponding to the two divine aspects mentioned. The first concerns a sharing of temperament: their temperaments fall ...
 
-## Printed p. 256 · Spiritual origins and degrees of equilibrium
+Related passage IDs: MSH-P175, MSH-P176, MSH-P177, MSH-P178, MSH-P179
 
-**QNW-WIT256** · [Arabic source](https://archive.org/details/machra3-khosous/page/n254/mode/1up)
+## QNW-WIT256 · Printed p. 256 · Spiritual origins and degrees of equilibrium
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n254/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 في درجة واحدة من درجات الاعتدالات التي يشتمل عليها مطلق عرض الأمزجة الإنسانية ، أو يكون درجة مزاج أحدهما مجاورة لدرجة مزاج الآخر ، وهذا أصل عظيم في مشرب التحقيق ، قلّ من يعرفه ذوقا ؛ لأن تعيّنات أرواح الأناس من العوالم الروحانية وتفاوت درجاتها في الشرف ، وعلو المنزلة من حيث قلة الوسائط وكثرتها ، وتضاعف وجوه الإمكان وقوتها بسبب كثرة الوسائط وقلتها وضعفها ، إنما موجبه بعد قضاء اللّه تعالى وقدره ، المزاج المستلزم لتعيّن الروح بحسبه . 
 
@@ -8195,7 +9065,7 @@ Intrinsic affinity between human beings is also established in two ways, corresp
 وأما المناسبة المرتبية فإنها ليست من وجه واحد ، بل من وجوه متعددة : أحدها من جهة معادنها الأصلية ، التي هي مبدأ تعيّنات الأرواح المشار إليها آنفا ، فإن مبدأ تعين أعلاها درجة أعني أرواح الكمّل ، أمّ الكتاب ، ومبدأ تعين بعضها علما ووجودا متوحدا ذات القلم الأعلى المسمّى بالعقل الأول والروح الكلّي ، 
 ومبدأ تعين بعضها اللوح المحفوظ ، وبعضها عرشية إسرافيلية ، وبعضها مكائيلية من مقام الكرسي ورحانيته ،
 
-### English
+### English · passage 1
 
 ...within one degree among the degrees of equilibrium encompassed by the entire range of human temperaments, or one person's degree of temperament is adjacent to the other's. This is a great principle in the way of realization, tasted by few. After God's decree and determination, what occasions the determination of human spirits from the spiritual worlds, and their differing degrees of nobility and elevation through few or many intermediaries and the consequent strengthening, multiplication, weakening or reduction of the aspects of possibility, is the temperament which requires the spirit to be determined according to it.
 
@@ -8207,11 +9077,15 @@ The order descends until it reaches the lowest heaven, assigned to Ismāʿīl, t
 
 Affinity of rank has several aspects, not only one. One concerns the original sources from which the spirits just mentioned are determined. The source of determination of the highest—the spirits of the perfect ones—is the Mother of the Book. Some are determined in knowledge and existence, united together, from the essence of the Supreme Pen, called the First Intellect and the Universal Spirit. Others begin from the Preserved Tablet; others are Throne-related and Isrāfīlian; others are Mīkāʾīlian, from the Footstool's station and spirituality ...
 
-## Printed p. 257 · Paradisal forms, angelic gifts and divine vision
+Related passage IDs: MSH-P179, MSH-P180, MSH-P181, MSH-P182, MSH-P183
 
-**QNW-WIT257** · [Arabic source](https://archive.org/details/machra3-khosous/page/n255/mode/1up)
+## QNW-WIT257 · Printed p. 257 · Paradisal forms, angelic gifts and divine vision
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n255/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 وبعضها جبرئيلية من مقام سدرة المنتهى . 
 
@@ -8229,7 +9103,7 @@ Affinity of rank has several aspects, not only one. One concerns the original so
 
 وأما الخلع والتحف التي تأتي بها الملائكة من عند الحق إلى جمهور أهل الجنة حال حملهم إيّاهم إلى كثيب الرؤية ؛ لزيارة الحق ومجالسته هي مظاهر أحكام الأسماء
 
-### English
+### English · passage 1
 
 ...and others are Jibrāʾīlian, from the station of the Lote Tree of the Uttermost Boundary. This continues through the kinds of these spiritual sources down to that assigned to Ismāʿīl, the angel of the lowest heaven, whom the Peripatetic philosophers call the Active Intellect, as was mentioned.
 
@@ -8243,11 +9117,15 @@ The market of Paradise contains beautiful human forms in which its people may ch
 
 The robes of honour and precious gifts which the angels bring from the Real to the generality of Paradise's inhabitants when carrying them to the Dune of Vision to visit and sit with the Real are manifestations of the rulings of the Names ...
 
-## Printed p. 258 · Divine companionship and the freedom of the perfect
+Related passage IDs: MSH-P183, MSH-P184, MSH-P185, MSH-P186, MSH-P187
 
-**QNW-WIT258** · [Arabic source](https://archive.org/details/machra3-khosous/page/n256/mode/1up)
+## QNW-WIT258 · Printed p. 258 · Divine companionship and the freedom of the perfect
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n256/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 والصفات ، التي يستند إليها الزائرون في نفس الأمر ، وإن لم يعلموا ذلك ، وبتلك التحف تقوى منسابتهم مع الحق ، وتحيا رقائق ارتباطاتهم به من حيث تلك الأسماء والصفات التي لها درجة الربوبية على أولئك الزائرين . 
 
@@ -8261,7 +9139,7 @@ The robes of honour and precious gifts which the angels bring from the Real to t
 
 وذلك أنهم غير محصورين في الجنة وغيرها من العوالم والحضرات ، كما قد أشرت إليه في غير هذا الموضع ، من أن الجنة لا تسع إنسانا كاملا ولا غير الجنة ، فهم وإن ظهروا فيما شاءوا من المظاهر فإنهم منزّهون عن الحصر والقيود ، والأمكنة والأزمنة ، كسيدهم ،
 
-### English
+### English · passage 1
 
 ...and attributes upon which the visitors in reality depend, even if they do not know it. Through these gifts their affinity with the Real is strengthened, and the subtle bonds connecting them to Him are enlivened from the aspect of those Names and attributes which hold the rank of lordship over them.
 
@@ -8273,11 +9151,15 @@ The condition of the perfect ones—may God benefit us through them—in these a
 
 They are confined neither to Paradise nor to any other world or Presence. As I have indicated elsewhere, Paradise cannot encompass a perfect human being, nor can anything other than Paradise. Although they appear in whatever loci they will, they are, like their Master, free from confinement, restrictions, places and times ...
 
-## Printed p. 259 · Prophetic ascents and intermediate realms
+Related passage IDs: MSH-P187, MSH-P188, MSH-P189, MSH-P190
 
-**QNW-WIT259** · [Arabic source](https://archive.org/details/machra3-khosous/page/n257/mode/1up)
+## QNW-WIT259 · Printed p. 259 · Prophetic ascents and intermediate realms
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n257/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 بل هم معه أينما كان ، وحيث لا أين ولا حيث ولا جرم ولا بعد ولا حجاب ولا انتقال لزيارة ولا انتهاء بحكم وقت من الأوقات ، والأسماء والصفات . 
 
@@ -8293,7 +9175,7 @@ They are confined neither to Paradise nor to any other world or Presence. As I h
 وهكذا شأن مشاركي هؤلاء الأنبياء ، والوارثين لهم تماما متفاوت المراتب في هذه السماوات ، فإن هذه الأخبار من الرسول صلى اللّه عليه وسلم هو باعتبار ما شاهده في إحدى إسرائه ، فإنه ثبت أن النبي صلى اللّه عليه وسلم حصل له أربع وثلاثون معراجا ، رواها وجمعها وأثبت رواياتها أبو نعيم الحافظ الأصبهاني رحمة اللّه عليه . 
 وكيف ينحصر هذا الحال مع هؤلاء الأنبياء السبعة دون غيرهم ، ومن البين أن الرسل والأنبياء كثيرون ، وفيهم الكمّل بتعريف اللّه ، كداود عليه السّلام المنصوص على خلافته ، وغيره من أكابر الأنبياء والمرسلين ، فأين تتعين مراتبهم البرزخية بعد الموت ، وما ثمّ إلا
 
-### English
+### English · passage 1
 
 ...rather, they are with Him wherever He is, where there is no “where,” no location, body, distance or veil, no journey for a visit, and no ending imposed by a particular time, Name or attribute.
 
@@ -8313,11 +9195,15 @@ How could this condition be restricted to these seven prophets alone? The messen
 
 Several place names in the account of death outside the inhabited region are uncertain in the consulted printing. They are transliterated with an explicit uncertainty marker rather than replaced with guessed modern locations.
 
-## Printed p. 260 · Conclusion of the preceding text; appended discourse
+Related passage IDs: MSH-P190, MSH-P191, MSH-P192, MSH-P193
 
-**QNW-WIT260** · [Arabic source](https://archive.org/details/machra3-khosous/page/n258/mode/1up)
+## QNW-WIT260 · Printed p. 260 · Conclusion of the preceding text; appended discourse
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n258/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 العالم الأعلى والأسفل . 
 
@@ -8334,7 +9220,7 @@ Several place names in the account of death outside the inhabited region are unc
 
 وكل ما يدرك في الأعيان ، ويشهد من الأكوان بأي وجه كان أدركه الإنسان ، وفي أي حضرة حصل الشهود ، ما عدا الإدراك المتعلق بالمعاني المجردة والحقائق في حضرة غيبها بطريق الكشف ، ولذلك قلت في الأعيان : أي ما أدرك في مظهر ما كان ، فإنما ذلك
 
-### English
+### English · passage 1
 
 ...the higher and lower worlds?
 
@@ -8352,11 +9238,15 @@ Whatever is apprehended among concrete entities and witnessed among beings, howe
 
 The 2008 editor records that the following discourse was an appended text in the exemplar he copied. Its position in this appendix is therefore a transmitted arrangement, not an independently established authorial sequence. The modern editor’s note is not included in Qūnawī’s running text.
 
-## Printed p. 261 · Shared existence and the realities known by God
+Related passage IDs: MSH-P193, MSH-P194, MSH-P195, MSH-P196
 
-**QNW-WIT261** · [Arabic source](https://archive.org/details/machra3-khosous/page/n259/mode/1up)
+## QNW-WIT261 · Printed p. 261 · Shared existence and the realities known by God
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n259/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 المدرك ألوان وأضواء ، وسطوح مختلفة الكيفية متفاوتة الكمية ، تظهر أمثلتها في عالم المثال المتصل بنشأة الإنسان ، أو المنفصل عنه من وجه على نحو ما هو في الخارج ، أو ما مفرداته في الخارج وكثرة الجميع محسوسة ، والأحدية فيها معقولة أو محدوسة ، وكل ذلك أحكام الوجود ، أو قل صور نسب علمه ، أو صفات لازمة له من حيث اقترانه بكل عين موجودة بسر ظهوره ، فيظهر فيها وبها ولها بحسبها كيف شئت ، وأطلقت ليس هو الوجود . 
 
@@ -8372,7 +9262,7 @@ The 2008 editor records that the following discourse was an appended text in the
 
 والحق سبحانه من حيث وحدة وجوده لم يصدر عنه إلا واحد ؛ لاستحالة إظهار الواحد وإيجاده من حيث كونه واحدا ، ما هو أكثر من واحد ، لكن ذلك الواحد عندنا هو الوجود العام المفاض على أعيان المكونات ، ما وجد منها وما لم يوجد مما سبق العلم بوجوده ، وهذا الوجود مشترك بين القلم الأعلى الذي هو أول موجود ، المسمّى أيضا بالعقل الأول ، وبين سائر الموجودات ليس كما ذكره أهل النظر من الفلاسفة ، فإنه ما ثمّ عند المحققين إلا الحق والعالم ، والعالم ليس بشيء زائد على حقائق معلومة للّه تعالى كما
 
-### English
+### English · passage 1
 
 ...colours, lights and surfaces differing in quality and quantity. Their likenesses appear in the imaginal world connected with the human constitution, or in that which is separate from it in one respect, either as they are externally or with elements which exist externally. The multiplicity of all these is sensible; their unity is intelligible or intuited. All of them are rulings of existence—or call them forms of the relations of His knowledge, or attributes necessarily attached to existence insofar as it is joined to each existent entity through the secret of its manifestation. It appears in, through and to those entities according to their character. However you express it, none of this is existence itself.
 
@@ -8386,11 +9276,15 @@ Returning to complete our discussion: in the case of the Real, existence is His 
 
 From the Real in respect of the unity of His existence only one proceeds, since the one as one cannot manifest or bring into existence more than one. But for us this one is the general existence poured forth upon the entities of generated beings: those already existent and those not yet existent whose existence has been known beforehand. This existence is shared by the Supreme Pen, the first existent, also called the First Intellect, and all other existents. This differs from the account of the discursive philosophers. For the realized knowers there are only the Real and the world; and the world is nothing additional to realities known to God, as ...
 
-## Printed p. 262 · The cloud and two considerations of existence
+Related passage IDs: MSH-P196, MSH-P197, MSH-P198, MSH-P199, MSH-P202
 
-**QNW-WIT262** · [Arabic source](https://archive.org/details/machra3-khosous/page/n260/mode/1up)
+## QNW-WIT262 · Printed p. 262 · The cloud and two considerations of existence
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n260/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 أشرنا إليه من قبل متصفة بالوجود ثابتا . 
 
@@ -8407,7 +9301,7 @@ From the Real in respect of the unity of His existence only one proceeds, since 
 فللوجود إن فهمت اعتباران : 
 أحدهما : من كونه وجودا فحسب
 
-### English
+### English · passage 1
 
 ...we indicated earlier, subsequently qualified by existence.
 
@@ -8425,11 +9319,15 @@ The wellspring of the loci of existence considered in conjunction, the Presence 
 
 Existence therefore admits two considerations. The first considers it simply as existence ...
 
-## Printed p. 263 · Unrestricted existence and apparently opposed attributes
+Related passage IDs: MSH-P207, MSH-P209, MSH-P210
 
-**QNW-WIT263** · [Arabic source](https://archive.org/details/machra3-khosous/page/n261/mode/1up)
+## QNW-WIT263 · Printed p. 263 · Unrestricted existence and apparently opposed attributes
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n261/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 وهو الحق ، وإنه من هذا الوجه كما سبقت الإشارة إليه لا كثرة فيه ، ولا تركيب ، ولا صفة ، ولا نعت ، ولا اسم ، ولا رسم ، ولا نسبة ، ولا حكم ، بل هو وجود بحت . 
 وقولنا : ( وجود ) هو للتفهيم ، لا أن ذلك الاسم حقيقي له ، بل اسمه عين صفته ، وصفته عين ذاته . وكماله نفس وجوده الذاتي الثابت له من نفسه لا من سواه ، وحياته وقدرته عين علمه ، وعلمه بالأشياء أزلا عين علمه بنفسه ، بمعنى أنه علم نفسه بنفسه ، وعلم كل شيء بنفس علمه بنفسه . 
@@ -8444,7 +9342,7 @@ Existence therefore admits two considerations. The first considers it simply as 
 
 لا تدركه سبحانه من هذه الحيثية العقول والأفكار ، ولا تحويه الجهات والأقطار ،
 
-### English
+### English · passage 1
 
 ...which is the Real. In this respect, as already indicated, it contains no multiplicity, composition, attribute, description, name, designation, relation or judgment: it is sheer existence.
 
@@ -8464,11 +9362,15 @@ From this standpoint, intellects and thoughts do not apprehend Him, and directio
 
 The wording concerning the first/last composition is difficult in the consulted text; the English marks that difficulty rather than silently rewriting the Arabic.
 
-## Printed p. 264 · Hiddenness, disclosure and divine knowledge
+Related passage IDs: MSH-P212, MSH-P213, MSH-P215, MSH-P216, MSH-P218
 
-**QNW-WIT264** · [Arabic source](https://archive.org/details/machra3-khosous/page/n262/mode/1up)
+## QNW-WIT264 · Printed p. 264 · Hiddenness, disclosure and divine knowledge
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n262/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 ولا تحيط بمشاهدته ومعرفته البصائر والأبصار ، ومنزّه عن القيود الصورية والمعنوية ، مقدّس عن قبول كل تقدير متعلق بكمية أو كيفية ، متعال عن الإحاطات الحدسية والفهمية والظنية والعلمية ، محتجب بكمال عزته عن جميع بريته ، الكامل منهم والناقص ، والمقبل إليه في زعمه والناكس . 
 
@@ -8480,7 +9382,7 @@ The wording concerning the first/last composition is difficult in the consulted 
 
 ومتى أدرك أو شوهد أو خاطب أو خوطب فمن وراء حجاب عزته في مرتبة نفسه المذكورة ، بنسبة ظاهريته وحكم تجليه في منزل تدليه من حيث اقتران وجوده العام
 
-### English
+### English · passage 1
 
 ...nor do inward perceptions and outward eyes encompass His witnessing and knowledge. He transcends formal and intelligible restrictions and is holy beyond accepting any measurement of quantity or quality. He is exalted above the encompassments of intuition, understanding, supposition and knowledge, and concealed by His perfect might from all His creatures: perfect or deficient, those who imagine they turn towards Him and those who turn away.
 
@@ -8492,11 +9394,15 @@ As has been said, there is no relation between Him and things except providentia
 
 Whenever He is apprehended or witnessed, speaks or is addressed, it is from behind the veil of His might, in the rank of His self already mentioned, through the relation of His manifestation and the ruling of His self-disclosure at the dwelling of His descent, insofar as His general existence is joined ...
 
-## Printed p. 265 · The divine Names in manifestation and concealment
+Related passage IDs: MSH-P218, MSH-P219, MSH-P221, MSH-P223, MSH-P224
 
-**QNW-WIT265** · [Arabic source](https://archive.org/details/machra3-khosous/page/n263/mode/1up)
+## QNW-WIT265 · Printed p. 265 · The divine Names in manifestation and concealment
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n263/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 بالممكنات ، وشروق نوره على أعيان الموجودات ليس غير ذلك . 
 
@@ -8515,7 +9421,7 @@ Whenever He is apprehended or witnessed, speaks or is addressed, it is from behi
 
 إنه تعالى كان محتجبا بعزه ، كان غفورا ، وإن أحب أن يعرف دنا وظهر فيما شاء كيف شاء ، فكان ودودا ، فبالمحبة يبدي من كونه محبّا وهي تبديه ، وبها من كونه محبّا ومحبوبا يعيد كل شيء في قبضته ، ومقهور تحت قوة بطشه لقوة فعله وضعف المنفعل .
 
-### English
+### English · passage 1
 
 ...to possible things and His light shines upon the entities of existents, and in no other way.
 
@@ -8533,11 +9439,15 @@ Through His existential self-disclosure hidden things appear and blessings desce
 
 When He is concealed by His might, He is Forgiving; when He loves to be known, He draws near and appears in whatever He wills, however He wills, and is Loving. Through love He originates as lover, and love makes Him appear; through it, as lover and beloved, He restores everything into His grasp, subdued beneath the force of His might because of the strength of His action and the weakness of what receives it.
 
-## Printed p. 266 · Conclusion of the appended discourse
+Related passage IDs: MSH-P224, MSH-P226, MSH-P227, MSH-P228
 
-**QNW-WIT266** · [Arabic source](https://archive.org/details/machra3-khosous/page/n264/mode/1up)
+## QNW-WIT266 · Printed p. 266 · Conclusion of the appended discourse
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n264/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 ومظهر قدرته وآلة حكمته في فعله بسنته ، ومحل ظهور سر القبض والبسط والإبداء والإخفاء والغيب والشهادة والكشف والحجاب الصوري السببي ، الذي به يفعل ما ذكره لا مطلقا هو عرشه المجيد . 
 
@@ -8546,7 +9456,7 @@ When He is concealed by His might, He is Forgiving; when He loves to be known, H
 في مرتبتي الإطلاق والتقييد ، وقوله تعالى :فَعَّالٌ لِما يُرِيدُ جواب سؤال مقدار ، علم أنه يبدو من معترض محجوب . 
 * * *
 
-### English
+### English · passage 1
 
 The manifestation of His power, the instrument of His wisdom in acting according to His customary way, and the locus where the secret appears of contraction and expansion, origination and concealment, unseen and witnessed, unveiling and the formal, causal veil—through which He performs what has been mentioned, though not without qualification—is His Glorious Throne.
 
@@ -8554,11 +9464,15 @@ For this reason He said, disclosing the secret of this matter, “For one who ha
 
 His words “Doer of whatever He wills” answer an anticipated question which He knew would arise from a veiled objector.
 
-## Printed p. 267 · Final appended passage and colophon
+Related passage IDs: MSH-P229, MSH-P230
 
-**QNW-WIT267** · [Arabic source](https://archive.org/details/machra3-khosous/page/n265/mode/1up)
+## QNW-WIT267 · Printed p. 267 · Final appended passage and colophon
 
-### Arabic
+Source: https://archive.org/details/machra3-khosous/page/n265/mode/1up
+
+Speaker: Ṣadr al-Dīn al-Qūnawī · al-Nuṣūṣ (2008 appendix)
+
+### Arabic · passage 1
 
 نصّ شريف هو آخر النصوص : 
 اعلم أن أعظم الشبه والحجب أن التعددات الواقعة في الوجود الواحد يوجب آثار الأعيان الثابتة فيه ، فتوهم أن الأعيان ظهرت في الوجود وبالوجود ، وإنما ظهرت آثارها في الوجود ولم تظهر هي ، ولا تظهر أبدا ؛ لأنها لذاتها لا تقتضي الظهور . 
@@ -8570,7 +9484,7 @@ His words “Doer of whatever He wills” answer an anticipated question which H
 
 تمّ الكتاب والحمد لله وحده وصلّى الله على سيّدنا محمد وآله وصحبه وسلم * * *
 
-### English
+### English · passage 1
 
 **A noble text, the last of the texts.**
 
@@ -8587,3 +9501,5 @@ The book is complete. Praise belongs to God alone, and may God bless our master 
 ### Editorial note
 
 The opening construction is textually difficult. This appendix reads للوجود (“belongs to existence”), whereas the lemma quoted at commentary p.232 reads في الوجود (“in existence”); the commentary’s gloss then uses للوجود. These internal differences within one printed volume are not independent manuscript variants. The appendix’s colophon does not supply the commentary’s missing final clause.
+
+Related passage IDs: MSH-P231, MSH-P232

@@ -11,6 +11,8 @@ import hashlib
 import html
 import json
 import logging
+import re
+from datetime import date
 from pathlib import Path
 
 import markdown
@@ -100,13 +102,14 @@ def document(corpus, ledger, mode):
             '<p>With Ṣadr al-Dīn al-Qūnawī’s <em>al-Nuṣūṣ</em></p><div class="rule"></div>',
             f'<p class="edition-label">{labels[mode]}<br>Complete source-based working edition</p>',
             '<p class="small">Commentary: printed pp.11–232<br>Qūnawī’s separate original: printed pp.235–267</p>',
-            '<p class="date">10 November 2026</p></section>',
+            f'<p class="date">{date.fromisoformat(ledger["date"]).strftime("%d %B %Y").lstrip("0")} · Stage {ledger["stage"]}</p></section>',
             '<section class="front" id="edition"><h2>About this edition</h2>',
             '<p>This volume contains the complete available Arabic text and a working English translation of al-Mahāʾimī’s commentary in the 2008 Beirut printing, together with the separate text of Qūnawī’s <em>al-Nuṣūṣ</em> appended to that printing. Coverage comprises 222 commentary pages and 33 appendix pages.</p>',
             '<p>The source is the edition prepared by Aḥmad Farīd al-Mazīdī (Dār al-Kutub al-ʿIlmiyya, 2008), consulted through a print scan and an electronic transcription. Arabic source availability, translation review and manuscript collation are separate matters. This is a source-based working edition; it does not claim independent establishment of the medieval text from manuscripts.</p>',
             '<p><strong>Printed pages 113–114 are missing from the acquired scan.</strong> Their electronic text is included, with that limitation recorded. The final commentary sentence on p.232 breaks off in the printing itself. Its missing continuation is not invented. Qūnawī’s separate ending on p.267 is retained as a separate text.</p>',
             '<p>Modern editorial footnotes are excluded from the medieval running text. Editorial headings, English speaker labels and square-bracketed explanations belong to this reading edition. Quotations and reports are translated as the authors present them; their inclusion does not certify a report’s authenticity. Difficult readings and necessary interpretation are marked where identified.</p>',
             '<p>Source page numbers accompany every section. They are distinct from this PDF’s pagination. Sentences may continue over a source page boundary. English choices vary with context; a single Arabic philosophical term need not have one mechanically fixed English equivalent.</p>',
+            f'<p>At this checkpoint, {ledger["counts"]["commentary_pages_reviewed_against_arabic"]} of 222 commentary pages have been reviewed against the available Arabic; {ledger["counts"]["commentary_pages_with_documented_scan_comparison"]} have documented print-image comparison. Review does not resolve every defective reading. In particular, the first passage on printed p.43 retains an explicitly marked synopsis of an unstable argument. Such passages are not certified as complete literal reconstructions.</p>',
             f'<p class="source">Print scan: <a href="https://archive.org/details/machra3-khosous">archive.org/details/machra3-khosous</a><br>Reader, exact review ledger and source notes: <a href="{SITE}">{SITE}</a></p>',
             '<p class="small">The original medieval works are public-domain texts. The modern source’s page layout and full editorial apparatus are not reproduced here.</p></section>',
             '<section class="front"><h2>Contents</h2><ul class="toc"><li><a href="#commentary">Al-Mahāʾimī’s commentary · printed pp.11–232</a></li><li><a href="#original">Qūnawī’s separate original · printed pp.235–267</a></li><li><a href="#notes">Textual notes and source information</a></li></ul>',
@@ -160,7 +163,8 @@ def main():
     args=parser.parse_args()
     logging.getLogger('weasyprint').setLevel(logging.ERROR)
     corpus=json.loads((BASE/'data/parallel.json').read_text())
-    ledger=json.loads((BASE/'data/coverage-stage12.json').read_text())
+    ledger_path=max((BASE/'data').glob('coverage-stage*.json'),key=lambda p:int(re.search(r'stage(\d+)',p.name).group(1)))
+    ledger=json.loads(ledger_path.read_text())
     args.output_dir.mkdir(parents=True,exist_ok=True)
     modes=['english','bilingual','arabic'] if args.format=='all' else [args.format]
     report=[]
