@@ -53,7 +53,7 @@ for name in mods:
   if note not in u['notes']:u['notes'].append(note)
   u['qawtaw8']={'status':status,'note':why,'originalArabicPreserved':True,'comparatorArabicPreserved':True,'manuscriptsCollated':0}
   edited[id]=u
-  rows.append({'unit':id,'status':status,'decision':why,'AArabic':u['arabic'],'workingArabic':u.get('readingArabic',u['arabic']),'workingEnglish':u['english'],'H2014':{'sourceLocations':wx[id]['sourceLocations'],'sourceUrl':wx[id]['sourceUrl'],'proposedReading':wx[id]['proposedReading']},'archetypalPrioritySettled':False,'originalArabicSHA256':hashlib.sha256(u['arabic'].encode()).hexdigest()})
+  rows.append({'unit':id,'status':status,'decision':why,'AArabic':u['arabic'],'workingArabic':u.get('readingArabic',u['arabic']),'workingEnglish':u['english'],'H2014':{'sourceLocations':wx[id].get('sourceLocations',wx[id].get('hLocators',[])),'sourceUrl':wx[id]['sourceUrl'],'proposedReading':wx[id]['proposedReading']},'archetypalPrioritySettled':False,'originalArabicSHA256':hashlib.sha256(u['arabic'].encode()).hexdigest()})
  p.write_text(s[:i]+json.dumps(ob,ensure_ascii=False,indent=2)+s[i+n:],encoding='utf8')
 assert len(edited)==14
 for p in sorted((R/'data').glob('main-commentary-*.en.json')):
