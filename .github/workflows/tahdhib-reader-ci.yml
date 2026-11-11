@@ -455,6 +455,12 @@ jobs:
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage110b.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage110c.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage110d.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage111a.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage111b.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-signification-notes-stage111a.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage111a.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage111b.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-signification-notes-stage111a.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/progress-data.js
           node --check tools/tahdhib/handoff_reader_qa.mjs
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-daruri-reader.js

@@ -1,8 +1,8 @@
-/* Tahdhīb Stage110: 11 independent evidence-graded goals and two locally numbered H sections. */
+/* Tahdhīb Stage111, 13 independent research metrics, three historical local note sequences. */
 window.GNAMMA_TAHDHIB_PROGRESS={
   "schema": "gnamma-tahdhib-cumulative-progress-v1",
   "updated": "2026-11-09",
-  "stage": "110",
+  "stage": "111",
   "baseline": {
     "logicMatnDivisions": 19,
     "kalamClauses": 1044,
@@ -73,19 +73,35 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     },
     {
       "id": "intro-notes",
-      "label": "H-INTRO (Q165–178) · numbered gloss first-pass English",
-      "current": 41,
-      "total": 49,
+      "label": "H-INTRO Q165–187 · first-pass English numbered glosses",
+      "current": 66,
+      "total": 82,
       "unit": "locally numbered notes",
-      "note": "Fresh local note series 1–49 after Qum p165 reset. Incomplete notes: 2,7,10,19,20,23,30,42. This is NOT a proportion of all the later H volume."
+      "note": "Historically local notes 1–82 complete as an INDEX (66 first-pass English complete, 16 partial); p188 changes title and numbering again. Not entire H corpus."
     },
     {
       "id": "intro-arabic",
-      "label": "H-INTRO (Q165–178) · complete searchable-Arabic note transcriptions",
+      "label": "H-INTRO Q165–187 · full digitally searchable Arabic transcription",
       "current": 0,
-      "total": 49,
+      "total": 82,
       "unit": "locally numbered notes",
-      "note": "All 49 records currently have SHORT locator lemmata only; no full Arabic note has been transcribed or independently photo/manuscript certified."
+      "note": "All 82 introduction glosses retain short Arabic locator phrases only; 0 full Arabic note transcriptions or photographed variants."
+    },
+    {
+      "id": "dalala-notes",
+      "label": "H-DALALA Q188–191 · first-pass English numbered glosses",
+      "current": 14,
+      "total": 20,
+      "unit": "locally numbered notes",
+      "note": "New signification local note series restarted at p188: 14 complete first-pass English, six partial (1,12,13,14,15,18). Section continues beyond p191."
+    },
+    {
+      "id": "dalala-arabic",
+      "label": "H-DALALA Q188–191 · full digitally searchable Arabic transcription",
+      "current": 0,
+      "total": 20,
+      "unit": "locally numbered notes",
+      "note": "These 20 signification glosses have Arabic locator excerpts only. Full Arabic/photographic certification remains zero."
     },
     {
       "id": "historical-classes",
@@ -319,18 +335,17 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     ],
     "prefaceSectionClosedAtPrintedPage": 164,
     "nextSection": {
-      "id": "H-INTRO",
-      "titleArabic": "حواشي مقدمة علم المنطق",
-      "printedStartPage": 165,
+      "id": "H-DALALA",
+      "titleArabic": "حواشي التصورات « بحث الدلالات »",
+      "printedStartPage": 188,
       "localFirstNote": 1,
-      "stableFirstId": "HWN-INTRO-001",
-      "notesTranslated": 41,
+      "stableFirstId": "HWN-DALALA-001",
+      "notesIndexed": 20,
+      "notesTranslated": 14,
+      "notesPartial": 6,
       "notesArabicTranscribed": 0,
-      "fullPageCertified": 0,
-      "notesIndexed": 49,
-      "notesPartial": 8,
-      "lastProcessedQumPage": 178,
-      "nextLocalNote": 50
+      "lastProcessedQumPage": 191,
+      "nextLocalNote": 21
     }
   },
   "currentRelease": {
@@ -341,8 +356,9 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     "latestHandoff": "HANDOFF_LATEST.md",
     "cumulativeMarkdown": "batches/hawashi-preface-numbered-cumulative-hwn001-140.md",
     "introductionReader": "hawashi-numbered-notes.html",
-    "introductionCumulativeMarkdown": "batches/hawashi-introduction-numbered-cumulative-intro001-049.md",
-    "allSectionsCumulativeMarkdown": "batches/hawashi-all-sections-cumulative-stage110.md"
+    "introductionCumulativeMarkdown": "batches/hawashi-introduction-numbered-cumulative-intro001-082.md",
+    "allSectionsCumulativeMarkdown": "batches/hawashi-all-sections-cumulative-stage111.md",
+    "significationCumulativeMarkdown": "batches/hawashi-signification-numbered-cumulative-dal001-020.md"
   },
   "stages": [
     {
@@ -524,15 +540,40 @@ window.GNAMMA_TAHDHIB_PROGRESS={
         "HANDOFF_LATEST.md",
         "stages/STAGE110_INTRODUCTION_NUMBERING_AND_NOTES.md"
       ]
+    },
+    {
+      "id": "111",
+      "date": "2026-11-09",
+      "title": "Close 82-note H-INTRO section; begin separate 20-note H-DALALA signification section",
+      "sourcePages": "178–191",
+      "noteRange": "H-INTRO 50–82; H-DALALA 1–20",
+      "fullNoteCount": 39,
+      "partialNoteCount": 14,
+      "arabicNoteCount": 0,
+      "certifiedPages": 0,
+      "report": "stages/STAGE111_INTRODUCTION_AND_SIGNIFICATION.md",
+      "files": [
+        "hawashi-introduction-notes-stage111a.js",
+        "hawashi-introduction-notes-stage111b.js",
+        "hawashi-signification-notes-stage111a.js",
+        "batches/hawashi-introduction-numbered-cumulative-intro001-082.md",
+        "batches/hawashi-signification-numbered-cumulative-dal001-020.md",
+        "batches/hawashi-all-sections-cumulative-stage111.md",
+        "hawashi-numbered-notes.html",
+        "progress-data.js",
+        "progress.html",
+        "HANDOFF_LATEST.md",
+        "stages/STAGE111_INTRODUCTION_AND_SIGNIFICATION.md"
+      ]
     }
   ],
   "introLedger": {
     "sectionId": "H-INTRO",
     "titleArabic": "حواشي مقدمة علم المنطق",
     "firstQumPrintedPage": 165,
-    "lastProcessedQumPrintedPage": 178,
+    "lastProcessedQumPrintedPage": 187,
     "noteIdPrefix": "HWN-INTRO-",
-    "indexedNotes": 49,
+    "indexedNotes": 82,
     "completedEnglish": [
       1,
       3,
@@ -574,7 +615,32 @@ window.GNAMMA_TAHDHIB_PROGRESS={
       46,
       47,
       48,
-      49
+      49,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      59,
+      60,
+      61,
+      62,
+      63,
+      65,
+      66,
+      67,
+      69,
+      70,
+      72,
+      74,
+      76,
+      78,
+      79,
+      80,
+      81,
+      82
     ],
     "partiallyTranslated": [
       2,
@@ -584,17 +650,83 @@ window.GNAMMA_TAHDHIB_PROGRESS={
       20,
       23,
       30,
-      42
+      42,
+      50,
+      58,
+      64,
+      68,
+      71,
+      73,
+      75,
+      77
     ],
     "fullDigitizedArabicNotes": [],
     "unnumberedFollowingRendered": [
       18,
-      29
+      29,
+      73
     ],
     "sourcePhotographed": false,
     "fullPrintedPagesCertified": 0,
-    "nextLocalNote": 50,
-    "nextSourcePage": 178,
-    "needNextPage": 179
+    "nextLocalNote": null,
+    "nextSourcePage": null,
+    "needNextPage": null,
+    "sectionClosedAtPrintedPage": 187
+  },
+  "dalalaLedger": {
+    "sectionId": "H-DALALA",
+    "titleArabic": "حواشي التصورات « بحث الدلالات »",
+    "printedStartPage": 188,
+    "lastProcessedQumPrintedPage": 191,
+    "noteIdPrefix": "HWN-DALALA-",
+    "indexedNotes": 20,
+    "completedEnglish": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      16,
+      17,
+      19,
+      20
+    ],
+    "partiallyTranslated": [
+      1,
+      12,
+      13,
+      14,
+      15,
+      18
+    ],
+    "fullDigitizedArabicNotes": [],
+    "unnumberedFollowingRendered": [],
+    "sourcePhotographed": false,
+    "fullPrintedPagesCertified": 0,
+    "nextLocalNote": 21,
+    "nextSourcePages": [
+      191,
+      192
+    ]
+  },
+  "overallLaterGlossNoteLedger": {
+    "indexedNotes": 242,
+    "completeEnglish": 216,
+    "partialEnglish": 26,
+    "fullDigitalArabic": 54,
+    "arabicLocatorsOnly": 188,
+    "unnumberedFollowing": 9,
+    "distinctSections": [
+      "H-PREFACE",
+      "H-INTRO",
+      "H-DALALA"
+    ],
+    "noGlobalHistoricalNoteNumbering": true,
+    "fullHPrintedPagesCertified": 0
   }
 };
