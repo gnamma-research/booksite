@@ -114,7 +114,9 @@
     const s=sections[page-18];if(!s)return;
     history.replaceState(null,"","#b2007-p"+page);
     const n=target||s.node;
-    n.scrollIntoView({behavior:motion,block:target?"center":"start"});
+    // Direct page/search jumps should not temporarily report intervening pages.
+    // CSS may request smooth anchor scrolling, so use the explicit instant behavior here.
+    n.scrollIntoView({behavior:"instant",block:target?"center":"start"});
     for(const x of pages)x.classList.remove("fr-target");
     s.node.classList.add("fr-target");
     markCurrent(page);
