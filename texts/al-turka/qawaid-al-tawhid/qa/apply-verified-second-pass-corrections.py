@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Conservative, idempotent editorial correction on the fixed Arabic source:
-SH-058 السهو means inattention, not wakefulness. Never alter the Arabic.
-Updates the original English draft and the published source module together.
-Derived bilingual exports, JSON, HTML and PDFs must be regenerated afterwards.
+"""Legacy A-transcription comparison, retained only for historical repeatability.
+Qawtaw7 now prefers printed H2014 السهر / الانتقالية while preserving A السهو.
+Never roll a source-supported reading back to the obsolete literal-A English.
+This script must be idempotent and must not alter the underlying Arabic.
 """
 from __future__ import annotations
 import json
@@ -27,6 +27,10 @@ NEW_NOTE=('The electronic Arabic reads النوم والسهو (sleep and inadve
           'justify reinterpreting السهو. No independent manuscript reading has been established.')
 def update(u):
     assert u['id']=='SH-058'
+    # H2014 printed reading now governs the reading text; its A/N base remains preserved.
+    # Both compiled module and English-only draft legitimately use the new rendering.
+    if 'sleep and wakefulness' in u['english'] and OLD not in u['english']:
+        return
     if OLD in u['english']:
         assert u['english'].count(OLD)==1
         u['english']=u['english'].replace(OLD,NEW)
@@ -56,4 +60,4 @@ match=[u for u in arr if u['id']=='SH-058']
 assert len(match)==1
 update(match[0])
 compiled.write_text(s[:start]+json.dumps(arr,ensure_ascii=False,indent=2)+');\n',encoding='utf-8')
-print('SH-058 corrected in source draft and commentary module; Arabic untouched; regenerate exports and PDFs.')
+print('SH-058: H2014 reading preserved or legacy A-only rendering updated; Arabic unchanged.')

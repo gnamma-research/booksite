@@ -23,14 +23,14 @@ TEXT_CHECK=r"""()=>{
  const get=(selector,lang)=>Array.from(document.querySelectorAll(selector+' .'+lang+' > p'),p=>p.textContent).join('\n\n');
  const bad=[];
  for(const u of window.GNAMMA_QAWAID_MATN.units){
-  for(const lang of ['ar','en'])if(norm(get('#'+u.id+' > .matn-layer:not(.bridge-layer)',lang))!==norm(u[lang==='ar'?'arabic':'english']))bad.push(u.id+lang);
+  for(const lang of ['ar','en'])if(norm(get('#'+u.id+' > .matn-layer:not(.bridge-layer)',lang))!==norm(lang==='ar'?(u.readingArabic||u.arabic):u.english))bad.push(u.id+lang);
  }
  const seen=new Set();
  for(const u of [...window.GNAMMA_TAMHID_SHARH.units,...window.GNAMMA_TAMHID_MAIN,...window.GNAMMA_TAMHID_CONCLUSION]){
   if(seen.has(u.id))continue;seen.add(u.id);
   for(const lang of ['ar','en']){
    const field=lang==='ar'?'arabic':'english';
-   if(norm(get('#'+u.id+' > .sharh-content > .text-pair',lang))!==norm(u[field]))bad.push(u.id+lang);
+   if(norm(get('#'+u.id+' > .sharh-content > .text-pair',lang))!==norm(lang==='ar'?(u.readingArabic||u.arabic):u.english))bad.push(u.id+lang);
    if(u.precedingMatn&&norm(get('#bridge-'+u.id,lang))!==norm(u.precedingMatn[field]))bad.push('bridge-'+u.id+lang);
   }
  }

@@ -104,7 +104,7 @@ function setup(){
  const theme=$('#theme-button');if(theme)theme.addEventListener('click',e=>{e.preventDefault();e.stopImmediatePropagation();openPanel('appearance')},true);
  const settings=$('#settings-button');if(settings)settings.addEventListener('click',e=>{e.preventDefault();e.stopImmediatePropagation();openPanel('settings')},true);
  const menu=$('#menu-button');if(menu)menu.addEventListener('click',e=>{e.preventDefault();e.stopImmediatePropagation();openPanel('menu')},true);
- const search=$('#search-button');if(search)search.addEventListener('click',e=>{e.preventDefault();e.stopImmediatePropagation();openPanel('search')},true);
+ // Full-text search remains owned by layered-reader.js, which searches the actual matn and sharḥ. The study desk still offers dictionary and source reference search independently.
  const shelf=$('#sheet');if(shelf){shelf.addEventListener('close',()=>{if(panelOpen())panelClose()},true)}
  const pstyle=document.createElement('style');pstyle.textContent='body[data-apparatus="off"] .source-notes,body[data-apparatus="off"] .gn-term-ribbon,body[data-apparatus="off"] .gn-citation-ribbon{display:none!important}body[data-apparatus="off"] .gn-term-inline{color:inherit!important;border:0!important;text-decoration:none!important;background:transparent!important}body[data-apparatus="minimal"] .source-notes{display:none!important}';document.head.append(pstyle);
  applyFontPrefs();
