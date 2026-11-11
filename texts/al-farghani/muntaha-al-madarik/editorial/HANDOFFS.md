@@ -1,3 +1,5 @@
+**Source candidate exclusion (11 Nov):** a third-party download alleged to contain the 2007 Beirut Farghānī print appears from its associated Internet Archive OCR to contain Dāwūd al-Qayṣarī's distinct commentary. Do not use it as a Farghānī print witness. [Full source-check log](SOURCE_CANDIDATE_AUDIT_017.md). No new source corrections or physical pages counted.
+
 ## Latest Stage XVII — 11 November 2026: cleaned reader and full source recovery
 
 - **No new translated or manuscript-collated source content**; Stage XVI critical photographic evidence remains current and its original reports remain immutable.
