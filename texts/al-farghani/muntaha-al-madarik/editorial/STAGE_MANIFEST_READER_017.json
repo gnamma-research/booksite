@@ -1,0 +1,89 @@
+{
+  "schema": "gnamma-farghani-reader-stage-v1",
+  "stage": "XVII",
+  "date_utc": "2026-11-11",
+  "scope": "continuous reader UI cleanup; no source translation or new witness collation",
+  "repository": "gnamma-research/booksite",
+  "branch": "master",
+  "previous_critical_stage": "XVI",
+  "working_english_source_pages": 128,
+  "selected_bilingual_loci": 559,
+  "direct_modern_digitized_selected": 283,
+  "derivative_modern_selected": 276,
+  "historical_print_bounded_comparisons": 15,
+  "historical_print_differences": 7,
+  "historical_print_agreements": 8,
+  "verified_manuscript_variants": 0,
+  "fully_line_collated_pages": 0,
+  "source_hyperlinks_relocated": 128,
+  "editorial_paragraphs_relocated": 67,
+  "additional_p34_uncertainty_relocated": 1,
+  "total_optional_apparatus_notes": 68,
+  "article_page_anchors": 128,
+  "cumulative_archive": "editorial/FULL_CUMULATIVE_READER_017.md",
+  "critical_dataset_archive": "editorial/ALL_CRITICAL_DATASETS_017.md",
+  "handoff": "editorial/STAGE_HANDOFF_READER_017.md",
+  "assets": [
+    {
+      "path": "editorial/FULL_CUMULATIVE_READER_017.md",
+      "sha": "68863d6174ed78e9df360c559467074a6cd82b01",
+      "bytes": 0
+    },
+    {
+      "path": "editorial/ALL_CRITICAL_DATASETS_017.md",
+      "sha": "f58ccc256e1af619bf369f881819c4ec676d8480",
+      "bytes": 632505
+    },
+    {
+      "path": "editorial/WORKING_TRANSLATION_18_145.md",
+      "sha": "b7d4acfda1681ad5e2d45f9db0e20730e0e27501",
+      "bytes": 414212
+    },
+    {
+      "path": "editorial/CUMULATIVE_SELECTED_BILINGUAL_016.md",
+      "sha": "9edc9f4dbd054d0ceaf1b2ff7796caa1e46a12e5",
+      "bytes": 601401
+    },
+    {
+      "path": "editorial/I1876_COLLATION_CUMULATIVE_006.json",
+      "sha": "b6bf3af187222867d3a8eddb55ab25a1c65f30a8",
+      "bytes": 28517
+    },
+    {
+      "path": "editorial/SOURCE_PROVENANCE_CRITICAL_016.json",
+      "sha": "f21c4ec3d38bc76c870f65f8cbfb0e75677b6d36",
+      "bytes": 2633
+    },
+    {
+      "path": "continuous-translation.html",
+      "sha": "991288fced87acce8be1a81b2d6ed92de8538f23",
+      "bytes": 466170
+    },
+    {
+      "path": "index.html",
+      "sha": "1aacab76da4c22221e329b5dcd2c9ecd0efeaf36",
+      "bytes": 11841
+    },
+    {
+      "path": "critical-edition.html",
+      "sha": "a8b2ae628f25ca5ec6ab12af775332e37a962c5f",
+      "bytes": 16504
+    },
+    {
+      "path": "critical-reader.js",
+      "sha": "3366bfb1422b599265510a1268c08779e1abf65a",
+      "bytes": 5879
+    },
+    {
+      "path": "reader.js",
+      "sha": "d1baa589a72fdb02f09bab288d06f0ba2ea6a6c0",
+      "bytes": 13842
+    }
+  ],
+  "remaining_offline_assets": [
+    "facsimile-I1876-hires/images",
+    "reader.css",
+    "GitHub Pages deployment verification"
+  ],
+  "next_locus": "actual photographed paper B2007 p52; then p38/p48/pp61–65; medieval independent MSS"
+}
