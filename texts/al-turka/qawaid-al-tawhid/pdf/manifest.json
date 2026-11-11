@@ -10,7 +10,7 @@
       "language": "both",
       "pages": 298,
       "size_bytes": 919973,
-      "sha256": "713cfccbd7ba77cf8795b942928bd5d0e4955c5c8682b50c6670ddd0e8f77176",
+      "sha256": "08d70bbcbfe9385ad80aa667eaf9823ad0067dd9d3ebadd3dcaec0805a983515",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -24,8 +24,8 @@
       "group": "reading",
       "language": "english",
       "pages": 138,
-      "size_bytes": 433583,
-      "sha256": "7423495eb7e9c72fe7be6ccc54652fd20332dc2724f20981bc58b896b4db0997",
+      "size_bytes": 433585,
+      "sha256": "4384d6072057336132931cd806d3b085a08e1a3af8a0fb7b8ad99f5dd3d692eb",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -39,8 +39,8 @@
       "group": "reading",
       "language": "arabic",
       "pages": 173,
-      "size_bytes": 522171,
-      "sha256": "819fb04a137f79a1155fd4e710c05d4e03b0dac94df2ae7ed9bccfc38bd30a95",
+      "size_bytes": 522172,
+      "sha256": "7bbbba7c34606c260e4921183088789c98d75f0a421acbb56d622d37cd7ed8e9",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -55,7 +55,7 @@
       "language": "both",
       "pages": 322,
       "size_bytes": 1022269,
-      "sha256": "c32c26bc2918c7740f89e53f3f0491f973d3bf24f3cab4e2cf57786f3751e7c6",
+      "sha256": "c2de9c8efe9d1b9ad72bbdf7e9de0abb698aa6f5232f27498395a536804e28af",
       "description": "With selected notes and subject guide",
       "content": {
         "matn": 61,
@@ -69,8 +69,8 @@
       "group": "reference",
       "language": "both",
       "pages": 367,
-      "size_bytes": 1210140,
-      "sha256": "6fa8e7fa9f257ee318cc70c485c3d5c858c4d2208bf0fcc451d20f41155be43d",
+      "size_bytes": 1210138,
+      "sha256": "f994d574485fce5a93d12317e4b1bfad7618f25bb1d1581465754913d66a0ddf",
       "description": "Complete source notes, glossary, index and references",
       "content": {
         "matn": 61,
