@@ -9,8 +9,8 @@
       "group": "reading",
       "language": "both",
       "pages": 298,
-      "size_bytes": 920134,
-      "sha256": "7b72b514ba48941a89073a02802da0a16a4bad830f30bedeac2b747b1f6b74cd",
+      "size_bytes": 920140,
+      "sha256": "41836aa53e62d1d39f82f6172434c3786e319f5f03acda7027cdf4245170110d",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -25,7 +25,7 @@
       "language": "english",
       "pages": 138,
       "size_bytes": 434247,
-      "sha256": "e77eee231696c2104b8a20c9b56201c8dc5bdfebe27114be5694f0a2221a79d9",
+      "sha256": "6592e76c155e4248506eb3a615a14b6be023d6c1f9dfe5d5d29e98b278a050bd",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -40,7 +40,7 @@
       "language": "arabic",
       "pages": 172,
       "size_bytes": 521469,
-      "sha256": "441823f2962effd1292e62e6526bb8df86bbae63f2abd72b5b19aeb54f84c826",
+      "sha256": "403d54de463dc92b1975830ac2381caef5670d6267a85fe7667b65fed76a12e7",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -55,7 +55,7 @@
       "language": "both",
       "pages": 322,
       "size_bytes": 1022782,
-      "sha256": "499aaf3871699e5796ce1c0550038642dafadd55741e9cc59d6bcaffc57c6639",
+      "sha256": "8297cd861be556c58790a6c45e968a3ae38351a43ffba5ee1b415827418edcfd",
       "description": "With selected notes and subject guide",
       "content": {
         "matn": 61,
@@ -69,8 +69,8 @@
       "group": "reference",
       "language": "both",
       "pages": 367,
-      "size_bytes": 1212179,
-      "sha256": "171e09b7b9b1b28370e74121cee2e720a308ab3cf30e7865b1b4dc97b4adefc3",
+      "size_bytes": 1212181,
+      "sha256": "bd764d3ea1348452cc298fa164c4477cd845adabd0dbe93c8652a7d5a9b1ea29",
       "description": "Complete source notes, glossary, index and references",
       "content": {
         "matn": 61,
