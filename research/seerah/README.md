@@ -26,3 +26,7 @@ Use `editorial/STYLE_RULES.md`: speak directly about agents, practices and cause
 ## Next scholarly work
 
 Primary-text manuscript collation of the Medinan agreements and al-Ḥudaybiyyah, source-aligned recensions of *al-Muwaṭṭaʾ*, and close reconstruction of later spiritual/ontological claims, followed by external specialist review. See `editorial/STATUS.md`.
+
+## Research extension · 11 November 2026
+
+Chapter 01 has a source-led expanded matn and sharḥ, synchronized in the static reader, canonical JSON and complete manuscript. See [the full research dossier](tafsir-research.html) and [the 46-chapter review map](revision-map.html). Chapters 02–46 remain unchanged pending verification.

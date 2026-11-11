@@ -15,3 +15,7 @@ Revised source files are in `data/`, with the complete original 1.4 manuscript p
 ## Editorial prose policy (1.4.1)
 
 The current reader states historical events and causal explanations directly, rather than referring to what a chapter or reader is doing. The policy and examples are in [STYLE_RULES.md](STYLE_RULES.md). The original 1.4 manuscript is preserved in `source-edition-1.4.md`, and the complete 1.4.1 manuscript is in `current-edition-1.4.1.md`.
+
+## 11 November 2026 · tafsīr expansion of chapter 01
+
+Canonical chapter 01 is revised and synchronized in data/chapters.json, read.html and editorial/current-edition-1.4.1.md. Matn: 652 words; sharḥ: 4236 words. Interpretive variants and source notes remain separately accessible in TAFSIR_DOSSIER_STAGE2_2026-11-11.md. Chapters 02–46 retain the existing 1.4.1 research wording; REVISION_AUDIT_46_2026-11-11.md documents required changes across all seven books without representing them as completed. No exhaustive tafsīr collation or manuscript-critical edition is claimed.
