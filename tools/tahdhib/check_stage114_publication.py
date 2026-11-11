@@ -74,7 +74,7 @@ def main():
     assert source["sections"]==obj["sections"]
     assert "1,090 numbered source positions" in html
     assert "Stage 114 is published here" in html
-    assert "progress-stage114.html" in html
+    assert "progress.html" in html and (ED/"progress-stage114.html").is_file()
     assert "hawashi-numbered-notes-stage113-archive.html" in html
 
     markdown=(ED/"batches/hawashi-all-sections-cumulative-stage114.md").read_text(encoding="utf-8")
