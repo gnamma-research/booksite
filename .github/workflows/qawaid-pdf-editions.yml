@@ -43,15 +43,37 @@ jobs:
             assert PdfReader(str(f)).pages[1].extract_text() is not None
           print('Five PDF profiles and checksums verified')
           PY
-      - name: Commit generated editions
+      - name: Publish only source-matched PDFs with guarded retries
         run: |
-          git config user.name 'gnamma-research'
-          git config user.email '13307564+gnamma-research@users.noreply.github.com'
-          git add texts/al-turka/qawaid-al-tawhid/pdf/*.pdf texts/al-turka/qawaid-al-tawhid/pdf/manifest.json
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'Publish five searchable A4 Qawaid editions with actual source-matched profile manifest'
-          git pull --rebase origin master
-          git push origin HEAD:master
+          git config user.name 'Gnamma verified PDF release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3 4 5 6 7 8; do
+            echo "PDF publication attempt $attempt"
+            git fetch origin master
+            git reset --hard origin/master
+            # Rebuild on the *new* master each time rather than pushing stale binaries.
+            python texts/al-turka/qawaid-al-tawhid/pdf/build_editions.py
+            python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          import json, hashlib
+          p=Path('texts/al-turka/qawaid-al-tawhid/pdf')
+          m=json.loads((p/'manifest.json').read_text())['files']
+          assert len(m)==5
+          for row in m:
+              f=p/row['filename']
+              assert f.exists() and f.read_bytes().startswith(b'%PDF-')
+              assert len(PdfReader(str(f)).pages)==row['pages']
+              assert hashlib.sha256(f.read_bytes()).hexdigest()==row['sha256']
+          PY
+            git add texts/al-turka/qawaid-al-tawhid/pdf/*.pdf texts/al-turka/qawaid-al-tawhid/pdf/manifest.json
+            if git diff --cached --quiet; then echo 'Five PDF editions already match current master'; exit 0; fi
+            git commit -m 'Publish five source-matched searchable Qawaid PDF editions'
+            if git push origin HEAD:master; then exit 0; fi
+            sleep 2
+          done
+          echo 'Concurrent updates prevented publication of matching PDFs' >&2
+          exit 1
       - uses: actions/upload-artifact@v4
         if: always()
         with:
