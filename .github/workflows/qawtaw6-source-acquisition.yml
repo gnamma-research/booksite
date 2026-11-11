@@ -1,0 +1,63 @@
+name: Qawtaw6 source witness acquisition
+on:
+  push:
+    branches: [qawtaw6-source-resolution-20261111]
+    paths: ['.github/workflows/qawtaw6-source-acquisition.yml']
+permissions:
+  contents: read
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Retrieve source landing pages and public source PDFs
+        run: |
+          python -m pip install -q requests beautifulsoup4
+          python - <<'PY'
+          import requests,pathlib,json,re,concurrent.futures,urllib.parse,hashlib
+          from bs4 import BeautifulSoup
+          p=pathlib.Path('witnesses');p.mkdir()
+          urls={
+          'nekounam':'https://mktba.net/library.php?id=9533',
+          'ramadani':'https://shiabooks.net/library.php?id=7969',
+          'nekounam_mirror':'https://mktba.alfeker.net/library.php?id=9533',
+          'list':'https://shiabooks.net/library.php?catid=22',
+          'ms1':'https://arabicpdfs.com/صفحة-تحميل-الكتب/?id=700575',
+          'ms2':'https://arabicpdfs.com/صفحة-تحميل-الكتب/?id=655657',
+          'A':'https://ablibrary.net/book_content/b/17638/1?lang=ar',
+          'haydari':'https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf',
+          'ia':'https://archive.org/advancedsearch.php?q=title%3A%28%22تمهيد%22%20AND%20%22التوحيد%22%29&output=json&rows=50',
+          'ia2':'https://archive.org/advancedsearch.php?q=%22-Wku6DfHLa8C%22&output=json&rows=50'}
+          def fetch(pair):
+            name,url=pair
+            try:
+              r=requests.get(url,timeout=45);r.raise_for_status()
+              pdf=r.content.startswith(b'%PDF');suffix='.pdf' if pdf else '.html'
+              (p/(name+suffix)).write_bytes(r.content)
+              links=[]
+              if not pdf:
+                soup=BeautifulSoup(r.text,'html.parser')
+                for a in soup.find_all(['a','iframe'],href=True):
+                  h=urllib.parse.urljoin(r.url,a.get('href',''));t=a.get_text(' ',strip=True)
+                  if re.search(r'pdf|download|uploads|\.zip|drive\.google|تمهيد|التمهيد|التمهید',h+' '+t,re.I):links.append({'label':t,'url':h})
+                for a in soup.find_all('iframe',src=True):links.append({'label':'iframe','url':urllib.parse.urljoin(r.url,a['src'])})
+                if name in ['ia','ia2']:
+                  print(name,r.text[:12000],flush=True)
+              out={'name':name,'url':r.url,'sha256':hashlib.sha256(r.content).hexdigest(),'bytes':len(r.content),'pdf':pdf,'links':links}
+              print(json.dumps(out,ensure_ascii=False),flush=True);return out
+            except Exception as e:
+              out={'name':name,'url':url,'error':str(e)};print(out,flush=True);return out
+          with concurrent.futures.ThreadPoolExecutor(max_workers=5) as ex: rows=list(ex.map(fetch,urls.items()))
+          # Only follow explicit PDF/download links surfaced by the source itself.
+          more=[]
+          for row in rows:
+            for i,x in enumerate(row.get('links',[])):
+              if re.search(r'\.pdf(?:\?|$)|/download\.php|/download/',x['url'],re.I):more.append((row['name']+'-pdf-'+str(i),x['url']))
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex: rows+=list(ex.map(fetch,more[:12]))
+          (p/'manifest.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: qawtaw6-source-witnesses
+          path: witnesses/
+          retention-days: 30
