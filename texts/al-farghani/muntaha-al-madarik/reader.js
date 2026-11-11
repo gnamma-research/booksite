@@ -1,5 +1,5 @@
 /* GNAMMA Farghānī — deliberately small, source-based reader.
- * No automatic text is manufactured. Only the verified FARGHANI_UNITS are displayed.
+ * No automatic text is manufactured. Only the 32 curated Arabic–English source extracts are displayed.
  */
 (() => {
   "use strict";
@@ -113,7 +113,7 @@
     }
     const u=units[current];
     $("current-heading").textContent=preferences.continuous ? "Continuous extracts · Foundation I" : u.title;
-    $("source-status").textContent=preferences.continuous ? units.length+" separate excerpts, not continuous page coverage" : "Source page "+u.page+" · independently translated selection";
+    $("source-status").textContent=preferences.continuous ? units.length+" separate excerpts, not continuous page coverage" : "Source page "+u.page+" · selected Arabic–English passage";
     $("location-title").textContent=preferences.continuous ? "All "+units.length+" extracts" : u.id+" · "+u.title;
     $("location-source").textContent=preferences.continuous ? "Arabic and English" : "Page "+u.page+" · "+u.topic;
     $("prev").disabled=preferences.continuous||current<=0;
@@ -161,7 +161,7 @@
           button.addEventListener("click",()=>choose(u));
           row.append(button);results.append(row);shown++;
         });
-        if(!shown)results.append(el("p",null,"No matching extract. The un-translated rest of the book is not searchable here."));
+        if(!shown)results.append(el("p",null,"No matching selected extract. For the complete English introduction, use Full translation."));
       };
       input.addEventListener("input",fill);
       fill();
@@ -186,7 +186,7 @@
       range.addEventListener("input",()=>{preferences.scale=Number(range.value);apply();persist();});
       scale.append(range);form.append(scale);
       const status=el("div","setting-row");
-      status.append(el("strong",null,"Editorial status"),el("p",null,"32 selected translation extracts across p. 18–32, with gaps; introduction not completed; no manuscript collation."));
+      status.append(el("strong",null,"Source coverage"),el("p",null,"32 curated bilingual excerpts from the opening foundation, not the entire introduction. The English working draft covers all 128 introductory source-page labels; source and manuscript checking remains incomplete."));
       status.append(link("Detailed translation register","editorial/STATUS.md"));
       form.append(status);
       place.append(form);
