@@ -96721,7 +96721,7 @@
       "sourceLocator": "A, printed pp. 271–272",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/467?lang=ar",
       "arabicSha256": "0ac3751da45b8dde4b7a505627cfe07a5e5f9a456d0ca3a27cb5f8979bc5525d",
-      "englishSha256": "4c7e868c9019fd294b957b9c437fe70127911675686fcdd5880ee9f823db896e",
+      "englishSha256": "c6204c83358f0472ecea6c0155491ccc49c3e0915d7443d41ee452520cad06c7",
       "arabicClauses": [
         {
           "n": 1,
@@ -96860,7 +96860,7 @@
             "englishSentenceEnd": 7,
             "note": "H2014 II:596 omits A's part-to-part wording here. The present English follows H as a working reading; A remains preserved. No independent original manuscript collation."
           },
-          "englishCorrespondence": "Testing that attainment against the measure would have disclosed its deficiency . He would not have rested in complete assurance but would have sought something higher and more perfect.",
+          "englishCorrespondence": "Testing that attainment against the measure would have disclosed its deficiency. He would not have rested in complete assurance but would have sought something higher and more perfect.",
           "riskMarkers": []
         },
         {
@@ -96874,7 +96874,7 @@
             "englishSentenceEnd": 7,
             "note": "H2014 II:596 omits A's part-to-part wording here. The present English follows H as a working reading; A remains preserved. No independent original manuscript collation."
           },
-          "englishCorrespondence": "Testing that attainment against the measure would have disclosed its deficiency . He would not have rested in complete assurance but would have sought something higher and more perfect.",
+          "englishCorrespondence": "Testing that attainment against the measure would have disclosed its deficiency. He would not have rested in complete assurance but would have sought something higher and more perfect.",
           "riskMarkers": []
         },
         {
@@ -96888,7 +96888,7 @@
             "englishSentenceEnd": 7,
             "note": "H2014 II:596 omits A's part-to-part wording here. The present English follows H as a working reading; A remains preserved. No independent original manuscript collation."
           },
-          "englishCorrespondence": "Testing that attainment against the measure would have disclosed its deficiency . He would not have rested in complete assurance but would have sought something higher and more perfect.",
+          "englishCorrespondence": "Testing that attainment against the measure would have disclosed its deficiency. He would not have rested in complete assurance but would have sought something higher and more perfect.",
           "riskMarkers": []
         }
       ],
@@ -96926,13 +96926,13 @@
         {
           "n": 6,
           "startChar": 843,
-          "endChar": 924,
-          "text": "Testing that attainment against the measure would have disclosed its deficiency ."
+          "endChar": 923,
+          "text": "Testing that attainment against the measure would have disclosed its deficiency."
         },
         {
           "n": 7,
-          "startChar": 925,
-          "endChar": 1028,
+          "startChar": 924,
+          "endChar": 1027,
           "text": "He would not have rested in complete assurance but would have sought something higher and more perfect."
         }
       ],

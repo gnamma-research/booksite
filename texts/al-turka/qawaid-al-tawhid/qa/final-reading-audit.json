@@ -7,7 +7,7 @@
   "introductoryUnits": 40,
   "mainUnits": 64,
   "concludingUnits": 6,
-  "englishWords": 48893,
+  "englishWords": 48892,
   "allArabicEnglishExportSectionsPresent": true,
   "recordedMainSourceHashesReproduced": 64,
   "sourceHashChecks": [
@@ -284,5 +284,5 @@
   "readabilityCorrection": "SH-061-A: closures -> locks for أقفاله; Arabic unchanged; variant note preserved",
   "stalePilotQueueRemoved": true,
   "singleFileReaderGenerated": true,
-  "singleFileSha256": "cd1afe649b6050242c466d7e6036242df3725ccdc890441099d5af13e801d5f7"
+  "singleFileSha256": "bcd8204a3c7018d521a82fae44ed7e8b1fe65df5ad4a9f9c7f8e0e216329c747"
 }
