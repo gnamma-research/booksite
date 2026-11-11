@@ -1,45 +1,19 @@
-# Nihāyat–Muẓaffar: start here
+# Nihāyat–Muẓaffar: canonical continuation
 
-**Current recovery: 10 November 2026.** Continue from the recovered Stage IX files. The last published edition is Stage VIII. These are different checkpoints.
+The working branch is **[`nihayat-active`](https://github.com/gnamma-research/booksite/tree/nihayat-active)**. Start there even when this file was opened on `master` or from an older conversation. Publication and saved research are separate; the default website branch may contain an older published edition.
 
-## Read first
+## Small restart
 
-1. Read [current state](https://github.com/gnamma-research/booksite/blob/nihayat4-recovery-20261110/texts/al-tabatabai/audits/nihayat4-current-state.json).
-2. Open the saved branch **`nihayat4-recovery-20261110`** in **`gnamma-research/booksite`**. Verify its current commit and the content checkpoint named in that state file. Preserve newer work; never reset a branch to an old handoff.
-3. Run `python3 texts/al-tabatabai/tools/verify-recovery-checkpoint.py` and `node texts/al-tabatabai/tools/audit-hikma.mjs` in that checkout. Read the detailed [recovery handoff](https://github.com/gnamma-research/booksite/blob/nihayat4-recovery-20261110/texts/al-tabatabai/audits/nihayat4-recovery-2026-11-10.md) only as needed.
+1. Read the [current state](https://github.com/gnamma-research/booksite/blob/nihayat-active/texts/al-tabatabai/audits/nihayat4-current-state.json) and [external comparison register](https://github.com/gnamma-research/booksite/blob/nihayat-active/texts/al-tabatabai/audits/nihaya-external-comparison-register.json) from the same branch revision.
+2. In a checkout of that branch, run `python3 texts/al-tabatabai/tools/resume-current.py`. Its default reads only those two JSON files, verifies their accounting and next pending ID, and prints a compact result. For tool-only access, inspect those same two files; do not fetch the entire corpus just to determine the next task.
+3. Open the one unfinished unit and source pages required for the chosen task. Save each completed unit or coherent batch, update the state and register together, and continue.
 
-Do not recursively reload the failed chats or every older handoff. Inspect only the report, unit and source pages needed for the current task. Old handoffs remain historical evidence.
+Counts and the next unit belong in the state and register, not in copied handoff prose. The preserved Stage X source checkpoint is [`1a967009`](https://github.com/gnamma-research/booksite/commit/1a967009e52f36923362b3a96e67574491314942). The restart repair retains its 387 bilingual units and 93 incorporated comparisons. These figures identify that preserved checkpoint; later progress must be read from the current files.
 
-## Exact recovered state
+## Deeper checks and remaining release work
 
-| Measure | Recovered | Qualification |
-| --- | ---: | --- |
-| Muẓaffar bilingual working units | **140** | Includes **40 Book V units, M-V-01–40**. The 39 new units cover all 798 registered source blocks on displayed pp.200–270. |
-| Bidāya / Nihāya working units | **111 / 136** | Combined corpus **387** units. |
-| Nihāya local Arabic–English review | **136/136** | Completed against the stored base. |
-| Nihāya external-comparison records | **84/136** | Prior IX.9 plus **83 recovered reports**; **52** comparisons remain. |
-| External findings incorporated into Nihāya | **1/136** | The 83 recovered reports still require reconciliation and integration. |
-| Conceptual links / dictionary terms | **34 / 147** | Recovered reader work; final browser verification and release remain pending. |
-| Latest published PDFs | **9, Stage VIII** | Published Muẓaffar has 101 units. These PDFs do not include the recovered 140-unit draft. |
+Use `resume-current.py --check-text` when actual book files are present and text hashes need checking. The existing `verify-current-checkpoint.py` performs full checkpoint verification after its listed files have been materialized. Neither check certifies scholarly correctness or publication. The canonical continuation is tracked in [PR 290](https://github.com/gnamma-research/booksite/pull/290); inspect the actual current checks rather than assuming a requested run exists.
 
-**Never restart Muẓaffar at M-V-02:** that work survives. Review the saved Book V draft, then begin Book VI at Rafed displayed p.276 (title p.274); earlier omissions also remain.
+The saved Muẓaffar Book V draft and integrated Nihāya reports are retained. Muẓaffar review and Book VI, the remaining Nihāya comparisons, and the nine-PDF release are distinct queues in the state. Do not restart completed translation or replay integrated reports. Older dated branches, reports and archives remain historical evidence. Load them only for a specific evidence question; do not reload failed conversations, unpack the large archive, rebuild PDFs or launch browser suites as routine startup.
 
-## Next work
-
-1. Reconcile the **83 saved Nihāya comparison reports** with the adopted-decision ledger; incorporate warranted Arabic, English and apparatus changes without erasing earlier readings. Reports are in `audits/recovery-stage9-2026-11-10/`. Their original hashes match the unchanged Nihāya source.
-2. Complete the **52 genuinely remaining comparisons**: V.5–7, VI.7–21, VII.1–9, VIII.1–11, XII.11–24. The first remaining ID is **N-V-05**.
-3. Review the new Muẓaffar English and nine print-supported decisions. Preserve the four unresolved Book V problems and earlier formula/chart gaps. Then continue Book VI.
-4. Validate the recovered shared menus, contents/headings, continuous reading, dictionary, conceptual links, notes, printing and downloads. The raw-Markdown quotation-test failure was already fixed locally and is included in this recovery. The latest 51-check regression and 30-check study-tools suites still need an exact-revision run.
-5. Rebuild all nine PDFs, compare manifests and live files, and publish the integrated release. Do not infer publication from a saved branch or generated file.
-
-The requested reading experience follows Darūrī: consistent menus and options, authorial/editorial headings, language choices, continuous reading, all editions available together, and selective philosophical connections with explicit reasons. Automatic word occurrences must remain distinct from reviewed conceptual links.
-
-## Evidence and checkpoint rule
-
-[Recovered research archive](https://chatgpt.com/library?file_id=libfile_673bcb72029c8191b429614aadc64ff1&account_id=personal): **770 files**, including sources, scans, reports and scripts. Open it only when source evidence is needed. The state file records its size and SHA-256. Historical paths beginning `/workspace/scratch/5f05ed215428/` map to the archive's relative folder tree.
-
-Save after each completed unit or coherent batch; keep working across batches. Record separately: drafted, reviewed, incorporated, committed remotely, and published. Update counts from actual IDs and evidence. A failed turn can still have saved work: inspect before retrying. Never claim manuscript collation, independent human certification or a whole-work percentage without its evidence and denominator.
-
-## Paste into a fresh chat
-
-Continue the Nihāyat–Muẓaffar project from `texts/al-tabatabai/NIHAYAT_START_HERE.md` in `gnamma-research/booksite`. Read its current-state file first and use the saved recovery branch. Preserve the recovered 140 Muẓaffar units, 83 additional Nihāya comparison reports and 34 conceptual links. Start by reconciling the recovered reports; 52 comparisons remain. Do not retranslate M-V-02–40 or reload the failed conversations. Save a cumulative checkpoint before reporting progress, and keep drafting, review, integration and publication separate.
+If the small check detects a mismatch, reconcile the named records. Do not reset to an older branch or silently discard later work. This repair addresses demonstrated continuation defects; it does not establish or repair the cause of a ChatGPT conversation error.
