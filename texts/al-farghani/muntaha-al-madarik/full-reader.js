@@ -211,6 +211,39 @@
     choose.addEventListener("click",openContents);
     body.append(choose);
   }
+  function openSettings() {
+    const body=panel("Appearance & reading tools","settings");
+    const root=safeText("div","fr-settings");
+    const row=(heading,description,items)=>{
+      const wrap=safeText("section","fr-setting-row");
+      wrap.append(safeText("h3",null,heading),safeText("p",null,description));
+      const actions=safeText("div","fr-setting-actions");
+      for(const [label,action] of items){
+        const btn=safeText("button",null,label);btn.type="button";
+        btn.addEventListener("click",action);actions.append(btn);
+      }
+      wrap.append(actions);root.append(wrap);
+    };
+    row("Reading size","Current text size: "+Math.round(preferences.scale*100)+"%. Changes are saved in this browser.",[
+      ["A− Smaller",()=>{$("fr-font-down").click();openSettings();}],
+      ["A+ Larger",()=>{$("fr-font-up").click();openSettings();}]
+    ]);
+    row("Appearance","Change the page colors without altering any of the text.",[
+      ["Paper",()=>{preferences.theme="parchment";applyPreferences();openSettings();}],
+      ["Mist",()=>{preferences.theme="horizon";applyPreferences();openSettings();}],
+      ["Night",()=>{preferences.theme="night";applyPreferences();openSettings();}]
+    ]);
+    row("Page layout","Printed-page labels remain optional; every page is still individually addressable.",[
+      [preferences.wide?"Standard width":"Wide text",()=>{$("fr-wide").click();openSettings();}],
+      [preferences.markers?"Hide page labels":"Show page labels",()=>{$("fr-markers").click();openSettings();}]
+    ]);
+    row("Reading and citations","Enter uninterrupted focus mode, copy the current source citation, or print.",[
+      ["Focus reading",()=>focus(true)],
+      ["Copy p. "+current+" citation",()=>copyCitation()],
+      ["Print",()=>window.print()]
+    ]);
+    body.append(root);
+  }
   async function copyCitation() {
     const title="Saʿīd al-Dīn al-Farghānī, Muntahā al-madārik, introduction, Beirut 2007 printed p. "+current+" (GNAMMA working English translation)";
     const url=new URL("continuous-translation.html#b2007-p"+current,location.href).href;
@@ -237,6 +270,7 @@
   $("fr-search-open").addEventListener("click",openSearch);
   $("fr-bookmarks-open").addEventListener("click",openBookmarks);
   $("fr-source-open").addEventListener("click",openSources);
+  $("fr-more-open").addEventListener("click",openSettings);
   $("fr-close").addEventListener("click",closePanel);
   $("fr-panel").addEventListener("close",()=>{activeDialog="";});
   $("fr-font-down").addEventListener("click",()=>{preferences.scale=Math.max(.85,Math.round((preferences.scale-.05)*100)/100);applyPreferences();requestProgress();});
