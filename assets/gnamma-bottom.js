@@ -18,8 +18,20 @@ texts:[
  {name:"al-Mustaṣfā min ʿIlm al-Uṣūl",href:"texts/al-ghazali/al-mustasfa/"},
  {name:"al-Ḍarūrī fī Uṣūl al-Fiqh",href:"daruri/"}
  ]},
- {heading:"Tafsīr",items:[{name:"al-Baḥr al-Madīd",href:"texts/ibn-ajiba/al-bahr-al-madid/"}]},
- {heading:"ʿIrfān and metaphysics",items:[{name:"Qawāʿid al-Tawḥīd · Matn & commentary",href:"texts/al-turka/qawaid-al-tawhid/"},{name:"Muntahā al-madārik · Farghānī · 32 bilingual extracts",href:"texts/al-farghani/muntaha-al-madarik/"},{name:"Mashraʿ al-khuṣūṣ · al-Mahāʾimī",href:"texts/al-mahaimi/mashra-al-khusus/"}]},
+ {heading:"Tafsīr",items:[{name:"al-Kashshāf · al-Zamakhsharī",href:"texts/al-zamakhshari/al-kashshaf/"},{name:"al-Baḥr al-Madīd",href:"texts/ibn-ajiba/al-bahr-al-madid/"}]},
+ {heading:"ʿIrfān and metaphysics",items:[
+ {name:"al-Nuṣūṣ · Qūnawī",href:"texts/sadr-al-din-al-qunawi/al-nusus/"},
+ {name:"Subḥānaka mā ʿarafnāka · al-Iznīqī",href:"texts/sadr-al-din-al-qunawi/al-nusus/izniqi/"},
+ {name:"Qawāʿid al-Tawḥīd · Matn & commentary",href:"texts/al-turka/qawaid-al-tawhid/"},
+ {name:"Muntahā al-madārik · Farghānī",href:"texts/al-farghani/muntaha-al-madarik/"},
+ {name:"Mashraʿ al-khuṣūṣ · al-Mahāʾimī",href:"texts/al-mahaimi/mashra-al-khusus/"}
+ ]},
+ {heading:"Logic and Wisdom",items:[
+ {name:"al-Manṭiq · Bidāyat al-Ḥikma · Nihāyat al-Ḥikma",href:"texts/al-tabatabai/"},
+ {name:"I. al-Manṭiq · al-Muẓaffar",href:"texts/al-tabatabai/muzaffar-al-mantiq/"},
+ {name:"II. Bidāyat al-Ḥikma · al-Ṭabāṭabāʾī",href:"texts/al-tabatabai/bidayat-al-hikma/"},
+ {name:"III. Nihāyat al-Ḥikma · al-Ṭabāṭabāʾī",href:"texts/al-tabatabai/nihayat-al-hikma/"}
+ ]},
  {heading:"Logic",items:[{name:"Tahdhīb al-Manṭiq",href:"texts/al-taftazani/tahdhib-al-mantiq/edition/"}]},
  {heading:"Kalām",items:[{name:"Sharḥ al-Mawāqif",href:"texts/al-jurjani/sharh-al-mawaqif/"},{name:"Tahdhīb al-Kalām",href:"texts/al-taftazani/tahdhib-al-kalam/edition/"},{name:"Taqrīb al-Marām · Commentary",href:"texts/al-sanandaji/taqrib-al-maram/"}]}
 ],
