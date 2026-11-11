@@ -29,7 +29,8 @@ window.GNAMMA_TAMHID_SHARH = {
         "This is the descendant's commentary continuing after QT-061, not the grandfather's matn. Arabic sourced to printed p.274 in the online transcription.",
         "H2014 II:598 prints أفعاله وأحواله (actions and states), adopted provisionally for reading; A reads أقفاله وأحواله (locks and states), and إقباله is also reported. All remain recorded as printed alternatives. No original manuscript has been independently collated.",
         "The guide's discernment (تفرّس) is presented as enabling guidance appropriate to each station, time, and capacity; it does not eliminate the matn's concern with tests of knowledge. The active participle «مكمّل» signifies a guide who brings others toward perfection; it is not the passive «مكمَّل».",
-        "Qawtaw7 / H2014 H2014/2:598: partial resolution. Preferred: «مقاليد أفعاله وأحواله». H2014 prints أفعاله, one of the alternatives already reported in A, not أقفاله. This corroborates a real reading alternative and supports an actions/states rendering for H2014; it does not establish that A’s locks reading is wrong or settle archetypal priority. The A/N electronic wording remains preserved in the witness apparatus."
+        "Qawtaw7 / H2014 H2014/2:598: partial resolution. Preferred: «مقاليد أفعاله وأحواله». H2014 prints أفعاله, one of the alternatives already reported in A, not أقفاله. This corroborates a real reading alternative and supports an actions/states rendering for H2014; it does not establish that A’s locks reading is wrong or settle archetypal priority. The A/N electronic wording remains preserved in the witness apparatus.",
+        "Qawtaw8 adjudication: Use H2014 أفعاله وأحواله, keys to his actions and states; preserve A أقفاله and reported إقباله as alternatives without deciding stemmatic priority."
       ],
       "variants": [
         {
@@ -59,7 +60,14 @@ window.GNAMMA_TAMHID_SHARH = {
           "manuscriptCollation": false
         }
       ],
-      "readingArabic": "هذا كلّه إذا لم يكن له شيخ مسلك يرشده، وإمام مكمّل يقتدى به، وبيده مقاليد أفعاله وأحواله. وأمّا إذا كان له ذلك، فلكل منزل ومقام بحسب كلّ وقت واستعداد، علوم وميزان يخصّه، ينبّه السالك بحسب تفرّسه مراقي استعداده على تلك العلوم بموازينها."
+      "readingArabic": "هذا كلّه إذا لم يكن له شيخ مسلك يرشده، وإمام مكمّل يقتدى به، وبيده مقاليد أفعاله وأحواله. وأمّا إذا كان له ذلك، فلكل منزل ومقام بحسب كلّ وقت واستعداد، علوم وميزان يخصّه، ينبّه السالك بحسب تفرّسه مراقي استعداده على تلك العلوم بموازينها.",
+      "qawtaw8": {
+        "status": "reading-settled",
+        "note": "Use H2014 أفعاله وأحواله, keys to his actions and states; preserve A أقفاله and reported إقباله as alternatives without deciding stemmatic priority.",
+        "originalArabicPreserved": true,
+        "comparatorArabicPreserved": true,
+        "manuscriptsCollated": 0
+      }
     },
     {
       "id": "SH-061-B",
