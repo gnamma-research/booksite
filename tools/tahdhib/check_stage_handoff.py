@@ -4,6 +4,7 @@ Four separately numbered H series; selected English is not complete original Ara
 a numbered gloss is not a whole printed page and a searchable text is not a manuscript scan.
 """
 import json
+import re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]/"texts/al-taftazani/tahdhib-al-mantiq/edition"
 
@@ -125,10 +126,11 @@ def audit():
        assert (ROOT/path).is_file(),path
     complete=(ROOT/"batches/hawashi-all-sections-cumulative-stage112.md").read_text(encoding="utf-8")
     assert len(complete)>510000
-    assert complete.count("## Note ")==140
-    assert complete.count("## Introduction note ")==82
-    assert complete.count("## Signification note ")==91
-    assert complete.count("## Concepts note ")==11
+    # Count only source-numbered headings, never a heading such as '## Note index'.
+    # Validate the entire sequence as well as its length, detecting repeats and gaps.
+    for label, count in (("Note",140),("Introduction note",82),("Signification note",91),("Concepts note",11)):
+        headings=[int(n) for n in re.findall(r"^## "+re.escape(label)+r" ([0-9]+) —", complete, re.M)]
+        assert headings==list(range(1,count+1)),(label,headings)
     assert "HWN-MAFAHIM-001" in complete and "HWN-DALALA-091" in complete
     assert "## Signification note 92" not in complete
     handoff=(ROOT/"HANDOFF_LATEST.md").read_text(encoding="utf-8")
