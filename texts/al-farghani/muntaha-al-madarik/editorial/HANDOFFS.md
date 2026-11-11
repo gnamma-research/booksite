@@ -1,3 +1,14 @@
+## Latest Stage XVIII — full introduction reader, source-integrity and visual QA (11 November 2026)
+
+The full 128-page working English introductory draft is now the primary reading view, searchable across all pages; it has mobile-first text navigation, exact source links, saved places, progress, focus, typography, themes, and print styling. Optional scholarly apparatus contains 128 source links and 70 notes, separate from continuous reading. The 559-record selected critical reader is paginated and source-grade-filterable. Formatting errors on pages 21,31,34,83,113 were repaired, and p34 canonical working Markdown was aligned to the earlier verified historical PRINT reading (digital alternative retained). No new Arabic source or manuscript folio was inspected.
+
+- [Full Stage XVIII cumulative English, Arabic excerpts and reader source bundle](FULL_CUMULATIVE_READER_018.md) · [SHA manifest](STAGE_MANIFEST_READER_018.json).
+- [Exact Stage XVIII handoff](STAGE_HANDOFF_READER_018.md) · [Detailed QA/error review](READER_REVIEW_018.md) · [live full English reader](../continuous-translation.html) · [critical excerpt view](../critical-edition.html).
+- Source grades **unchanged**: English 128 working printed-page labels, 559 selected bilingual checks (283 digitized + 276 derivative), 15 older photographic PRINT phrase checks (7 differences/8 agreements), 0 entirely collated pages and 0 independent manuscript variants.
+- Scope is the introductory four foundations and concluding preface **only**. No main commentary translation is proposed.
+
+---
+
 **Source candidate exclusion (11 Nov):** a third-party download alleged to contain the 2007 Beirut Farghānī print appears from its associated Internet Archive OCR to contain Dāwūd al-Qayṣarī's distinct commentary. Do not use it as a Farghānī print witness. [Full source-check log](SOURCE_CANDIDATE_AUDIT_017.md). No new source corrections or physical pages counted.
 
 ## Latest Stage XVII — 11 November 2026: cleaned reader and full source recovery
