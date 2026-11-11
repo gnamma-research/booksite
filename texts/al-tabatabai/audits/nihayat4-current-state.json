@@ -5,15 +5,18 @@
   "project": "Nihayat–Muzaffar–Bidayat Hikma reader",
   "repository": "gnamma-research/booksite",
   "preservation": {
-    "status": "checkpoint-manifest-in-containing-commit; exact remote commit recorded after upload",
-    "branch": "nihayat4-stage10-20261111",
-    "contentCommit": null,
+    "status": "verified-stage10-source-preserved; stable-continuation-branch-established",
+    "branch": "nihayat-active",
+    "contentCommit": "1a967009e52f36923362b3a96e67574491314942",
     "previousRemoteStage9Commit": "44fa9a086a17dfe446295f01d076b0dd6ef31959",
     "originalDraftPullRequest": 288,
     "originalDraftPullRequestStatus": "open-draft-not-merged",
     "remotePublicationOfRecoveredWork": false,
-    "activeDraftPullRequest": 289,
-    "priorContentCommit": "4a92fdbc54da37b9859a00fb567dc4a5a6a87bc4"
+    "activeDraftPullRequest": 290,
+    "priorContentCommit": "4a92fdbc54da37b9859a00fb567dc4a5a6a87bc4",
+    "supersededStage10PullRequest": 289,
+    "reconciliationCommit": "ff64b89d059ae43036014bafba00a31f5b085302",
+    "supersededStage10PullRequestStatus": "replaced-by-PR-290; historical branch preserved"
   },
   "published": {
     "stage": 8,
@@ -100,7 +103,7 @@
     "replayProtection": "passed: repeated applied plan refused before mutation; canonical hashes unchanged"
   },
   "nextWork": {
-    "firstTask": "Continue fresh comparisons from N-VI-10. All 83 recovered reports and the nine fresh Stage X comparisons are incorporated. Verify the current checkpoint before opening source pages.",
+    "firstTask": "Run the bounded resume-current.py check, then continue fresh comparisons from N-VI-10. All 83 recovered reports and the nine fresh Stage X comparisons are incorporated.",
     "firstNewExternalComparison": "N-VI-10",
     "remainingExternalGroups": [
       {
@@ -216,8 +219,8 @@
     "newIntegrationPlan": "audits/nihaya-stage10-v-integration.json",
     "readerFixes": 5,
     "readerQaRecord": "audits/nihayat-stage10-reader-qa.json",
-    "remoteReaderRun": 42921111094,
-    "remoteReaderStatus": "first-run-failed-at-subsection-retention; repair awaiting integrated-revision run",
+    "remoteReaderRun": 42930385674,
+    "remoteReaderStatus": "completed-failure: 51 legacy checks and 7 study checks passed; Next navigation stayed at M-C-44 instead of M-C-45",
     "newPdfCount": 0,
     "externalComparisonRegister": "audits/nihaya-external-comparison-register.json",
     "integrationReceipt": "audits/nihaya-stage10-integration-receipt.json",
@@ -237,6 +240,22 @@
       "audits/nihaya-stage10-v-integration.json",
       "audits/nihaya-stage10-vi7-9-integration.json",
       "audits/nihaya-stage10-xii11-13-integration.json"
-    ]
+    ],
+    "remoteReaderCommit": "ff64b89d059ae43036014bafba00a31f5b085302"
+  },
+  "continuation": {
+    "canonicalBranch": "nihayat-active",
+    "entryPoint": "NIHAYAT_START_HERE.md",
+    "command": "python3 texts/al-tabatabai/tools/resume-current.py",
+    "startupFiles": [
+      "audits/nihayat4-current-state.json",
+      "audits/nihaya-external-comparison-register.json"
+    ],
+    "fullVerificationCommand": "python3 texts/al-tabatabai/tools/verify-current-checkpoint.py",
+    "fullVerificationScope": "Explicit deeper integrity check after materializing its 233 files; not mandatory for a metadata-only cold start.",
+    "sourceCheckpoint": "1a967009e52f36923362b3a96e67574491314942",
+    "repairDate": "2026-11-11",
+    "timeZone": "Asia/Riyadh",
+    "conversationErrorCause": "Not established; repository state cannot diagnose ChatGPT infrastructure."
   }
 }
