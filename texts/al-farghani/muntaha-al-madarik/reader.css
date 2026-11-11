@@ -83,3 +83,10 @@ body[data-continuous="true"] .reading-block .text-pair p{margin:3px 0 5px;line-h
 body[data-continuous="true"] .research-note,body[data-continuous="true"] .comparison-note{margin:6px 0 3px;padding:7px 10px}
 body[data-continuous="true"] .extract-disclaimer{margin:5px 0 0}
 @media(max-width:760px){body[data-continuous="true"] .reading-block{padding:4px 0 7px!important}body[data-continuous="true"] .reading-block+.reading-block{padding-top:6px!important}body[data-continuous="true"] .reading-block h3{font-size:18px}}
+
+/* Stage XVIII: scholarly bibliography is available on demand, never interleaved with reading. */
+.editorial-links{padding-top:14px;border-top:1px solid var(--line)}
+.editorial-links details{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:13px 17px}
+.editorial-links summary{cursor:pointer;color:var(--accent);font:600 13px/1.55 ui-sans-serif,system-ui,sans-serif}
+.editorial-links h2{font-size:20px;margin:15px 0 8px}
+@media(max-width:760px){.editorial-links{padding-top:13px}}
