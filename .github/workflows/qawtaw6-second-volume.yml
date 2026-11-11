@@ -1,0 +1,36 @@
+name: Qawtaw6 second source volume
+on:
+  push:
+    branches: [qawtaw6-source-resolution-20261111]
+    paths: ['.github/workflows/qawtaw6-second-volume.yml']
+permissions:
+  contents: read
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Fetch public primary comparator and catalogue metadata
+        run: |
+          python - <<'PY'
+          import urllib.request,urllib.parse,pathlib,json,hashlib,concurrent.futures
+          p=pathlib.Path('witnesses2');p.mkdir()
+          pdf='https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf'
+          query='(title:تمهید OR title:تمهيد OR title:tamhid) AND (ترکه OR تركة OR Turkah OR Turka)'
+          urls={'haydari2.pdf':pdf,'archive-catalogue.json':'https://archive.org/advancedsearch.php?'+urllib.parse.urlencode({'q':query,'output':'json','rows':100})}
+          def f(pair):
+            name,url=pair;url=urllib.parse.quote(url,safe=':/?=&%')
+            try:
+              with urllib.request.urlopen(url,timeout=80) as r:data=r.read()
+              (p/name).write_bytes(data);out={'name':name,'url':url,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()}
+              if name.endswith('.json'):print(data.decode()[:20000])
+            except Exception as e:out={'name':name,'url':url,'error':str(e)}
+            print(out);return out
+          with concurrent.futures.ThreadPoolExecutor(max_workers=2) as ex:out=list(ex.map(f,urls.items()))
+          (p/'manifest.json').write_text(json.dumps(out,ensure_ascii=False,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: qawtaw6-second-volume
+          path: witnesses2/
+          retention-days: 30
