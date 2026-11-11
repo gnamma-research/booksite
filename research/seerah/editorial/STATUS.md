@@ -19,3 +19,8 @@ The current reader states historical events and causal explanations directly, ra
 ## 11 November 2026 · tafsīr expansion of chapter 01
 
 Canonical chapter 01 is revised and synchronized in data/chapters.json, read.html and editorial/current-edition-1.4.1.md. Matn: 652 words; sharḥ: 4236 words. Interpretive variants and source notes remain separately accessible in TAFSIR_DOSSIER_STAGE2_2026-11-11.md. Chapters 02–46 retain the existing 1.4.1 research wording; REVISION_AUDIT_46_2026-11-11.md documents required changes across all seven books without representing them as completed. No exhaustive tafsīr collation or manuscript-critical edition is claimed.
+
+
+## 11 November 2026 · Chapter 02 and explanatory framework
+
+The earlier chapter-01 status entry remains a historical record. **Chapter 02 has subsequently been expanded** to a 653-word matn and a 3,847-word sharḥ. Canonical JSON, static reader and complete manuscript were synchronized; Chapters 03–46 retain their previous wording pending source-led revision. Two separate methodological files now govern the remaining work: [Prophetic integrality and differentiated inheritance](PROPHETIC_INTEGRALITY_AND_INHERITANCE_METHOD.md) and the consolidated [Muhammadan Axis of ʿUmrān](MUHAMMADAN_AXIS_OF_UMRAN_METHOD.md). These are methodological research notes, not source-completion certificates.
