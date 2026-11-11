@@ -27,6 +27,7 @@ jobs:
         run: |
           git rev-parse HEAD > /tmp/qawtaw5-input-commit
           python "$P/qa/qawtaw5_release.py"
+          python "$P/qa/qawtaw5_finish.py"
           python "$P/qa/finalize-reading-edition.py"
           node "$P/qa/generate-clause-ledger.mjs"
           python "$P/qa/qawtaw5_release.py" --verify
