@@ -1821,12 +1821,13 @@ window.GNAMMA_QAWAID_MATN = {
         237
       ],
       "arabic": "ولا يمتنع أن يتوقّف الحقّ في الاتّصاف ببعض الصفات والتعيّنات على صفات وتعيّنات أخر لاحقة به من ذاته. فلئن قيل: إنّها من حيث هي موجودات خاصّة أمور ممكنة، ولا يجوز أن يتوقّف الحقّ في الاتّصاف بصفة كماليّة على أمر ممكن — ببعض الصفات الممكنة. قلنا: لا يستحيل أن يتوقّف الحقّ في الاتّصاف ببعض الصفات الممكنة على صفات أخر ممكنة، كالكمالات الأسمائيّة مثلاً على صفات أخر ممكنة، والصفة الكماليّة هي ظهوره في المظهر التامّ الكامل الكلّيّ المطلق الذي هو من الصفات اللازمة والتعيّنات الواجبة به، لا من غيره.",
-      "english": "There is nothing impossible in the Real's being described by certain attributes and determinations depending upon other attributes and determinations that accrue to Him from His own reality. If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes. The perfectional attribute in question is His manifestation in the complete, perfected, universal, and unrestricted locus of manifestation. This manifestation belongs among His necessary concomitant attributes and determinations through Himself, not through another.",
+      "english": "There is nothing impossible in the Real's being described by certain attributes and determinations depending upon other attributes and determinations that accrue to Him from His own reality. If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible—even upon certain possible attributes—in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes. The perfectional attribute in question is His manifestation in the complete, perfected, universal, and unrestricted locus of manifestation. This manifestation belongs among His necessary concomitant attributes and determinations through Himself, not through another.",
       "notes": [
         "Self-contained ancestor's قال at p.237 ends before (1) أقول, which launches the grandson's longer reply to the objection of divine need. The independent source includes a displaced or doubled string after الاتّصاف; the Arabic above marks the interruption without inventing a manuscript correction.",
         "The crucial distinction is between possible relative qualifications and the necessity of the Real in Himself. This is an internal modal distinction in the matn, not permission to make the divine essence dependent upon an externally independent cause.",
         "The word 'necessary' qualifies the manifestation as a concomitant through the Real (الواجبة به لا من غيره); it does not convert the possible qualifications themselves into separately necessary entities.",
-        "Qawtaw7 / H2014 H2014/2:487: partial resolution. Preferred: «على أمر ممكن ببعض الصفات الممكنة». H2014 removes the redundant second على صفات أخر ممكنة in the reply by clear parenthetical punctuation, but still prints ببعض الصفات الممكنة after the objection. The original row cannot be closed entirely. The A/N electronic wording remains preserved in the witness apparatus."
+        "Qawtaw7 / H2014 H2014/2:487: partial resolution. Preferred: «على أمر ممكن ببعض الصفات الممكنة». H2014 removes the redundant second على صفات أخر ممكنة in the reply by clear parenthetical punctuation, but still prints ببعض الصفات الممكنة after the objection. The original row cannot be closed entirely. The A/N electronic wording remains preserved in the witness apparatus.",
+        "Qawtaw8 adjudication: The final possible-attributes phrase is treated as explanatory apposition to possible thing; no unwitnessed Arabic deletion."
       ],
       "variants": [
         {
@@ -1863,7 +1864,14 @@ window.GNAMMA_QAWAID_MATN = {
           "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
           "manuscriptCollation": false
         }
-      ]
+      ],
+      "qawtaw8": {
+        "status": "reading-settled",
+        "note": "The final possible-attributes phrase is treated as explanatory apposition to possible thing; no unwitnessed Arabic deletion.",
+        "originalArabicPreserved": true,
+        "comparatorArabicPreserved": true,
+        "manuscriptsCollated": 0
+      }
     },
     {
       "id": "QT-053",
@@ -2001,7 +2009,8 @@ window.GNAMMA_QAWAID_MATN = {
         "Begins on p.249 and ends on p.250 before the descendant's (1) أقول. The text is one sentence whose subordination is grammatically unstable in the digital print; English clarifies agency but does not claim exact final syntax.",
         "This replies to the fixed-disposition objection of QT-046 by positing stronger contrary causes, not the mere conceiving of abstraction. No implicit endorsement of extreme deprivation should be inferred.",
         "Printed alternative بوجوب / بوجود مطاوعتها and تقيّد / يفيد انجذابها materially affect the construction; inspection of images is required.",
-        "Qawtaw7 / H2014 H2014/2:521: partial resolution. Preferred: «أو بوجوه مطاوعتها للهوى ... ويقيد انجذابها». H2014 prints بوجوه, a third reading rather than either بوجوب or بوجود, and ويقيد rather than bare تقيّد. These improve syntax and are attested in this print, but settling the underlying witness choice remains open. The A/N electronic wording remains preserved in the witness apparatus."
+        "Qawtaw7 / H2014 H2014/2:521: partial resolution. Preferred: «أو بوجوه مطاوعتها للهوى ... ويقيد انجذابها». H2014 prints بوجوه, a third reading rather than either بوجوب or بوجود, and ويقيد rather than bare تقيّد. These improve syntax and are attested in this print, but settling the underlying witness choice remains open. The A/N electronic wording remains preserved in the witness apparatus.",
+        "Qawtaw8 adjudication: Use printed H2014 بوجوه and ويقيّد in the preferred reading; retain بوجوب and بوجود as A variants."
       ],
       "variants": [
         {
@@ -2047,7 +2056,14 @@ window.GNAMMA_QAWAID_MATN = {
           "manuscriptCollation": false
         }
       ],
-      "readingArabic": "وبيّن أنّ دوام المراقبة والمواظبة على ما ذكرنا من الملاحظة مع ملازمة الآداب والشروط المعتبرة عند أرباب هذه الصناعة، وترك استعمال شيء من القوى الجسمانيّة في جذب الملاذّ الدنيويّة ودفع المكاره البدنيّة، ثمّ قهرها على المطاوعة والمتابعة وممانعة اقتضاء ما تقتضيه القيود المذكورة، إمّا بحسب ذاتها أو بوجوه مطاوعتها للهوى، والقوّة الوهميّة أو المتخيّلة البدنيّة إنّما يقهرها على المتابعة والمدافعة عن توجّهها بالكلّيّة نحو البدن ويقيّد انجذابها نحو المادّة والكدورات الماديّة. فإنّ الأسباب الفاعلة لا يبعد أن تصير معزولة عن بعض ضروب الفاعليّة، مقهورة على ضرب آخر يقابل الضرب الأوّل بأسباب أخر قويّة."
+      "readingArabic": "وبيّن أنّ دوام المراقبة والمواظبة على ما ذكرنا من الملاحظة مع ملازمة الآداب والشروط المعتبرة عند أرباب هذه الصناعة، وترك استعمال شيء من القوى الجسمانيّة في جذب الملاذّ الدنيويّة ودفع المكاره البدنيّة، ثمّ قهرها على المطاوعة والمتابعة وممانعة اقتضاء ما تقتضيه القيود المذكورة، إمّا بحسب ذاتها أو بوجوه مطاوعتها للهوى، والقوّة الوهميّة أو المتخيّلة البدنيّة إنّما يقهرها على المتابعة والمدافعة عن توجّهها بالكلّيّة نحو البدن ويقيّد انجذابها نحو المادّة والكدورات الماديّة. فإنّ الأسباب الفاعلة لا يبعد أن تصير معزولة عن بعض ضروب الفاعليّة، مقهورة على ضرب آخر يقابل الضرب الأوّل بأسباب أخر قويّة.",
+      "qawtaw8": {
+        "status": "reading-settled",
+        "note": "Use printed H2014 بوجوه and ويقيّد in the preferred reading; retain بوجوب and بوجود as A variants.",
+        "originalArabicPreserved": true,
+        "comparatorArabicPreserved": true,
+        "manuscriptsCollated": 0
+      }
     },
     {
       "id": "QT-056",
@@ -2206,7 +2222,8 @@ window.GNAMMA_QAWAID_MATN = {
         "Starts قال on p.262 and runs across p.263, closing with 'وأما الثاني ...' on p.264 before (1) أقول. The grandson's lengthy later 'وأما بيان الثاني' at p.266 explains the missing argument but is NOT independently proven to be the grandfather's exact original and has been excluded.",
         "Material corruption near p.263: the 1st conditional's reading 'وحينئذ لم تعلّق به' is syntactically difficult; a stronger inference may be intended. It is not silently repaired.",
         "Technically: the senses are causes of iʿdād (preparation), NOT sources that efficiently bestow intelligible forms (ifāḍa). Both routes receive knowledge from the effusive Principle; this does not erase differences in their immediate psychological operations.",
-        "Qawtaw7 / H2014 H2014/2:571, H2014/2:572: deferred lacuna. Preferred: «وأما الثاني ... فلما بيناه في كتبنا المعمولة في صناعة الحكمة». The printed matn has the same transition and does not recover the reported missing ancestral passage. A smooth continuation in this modern edition is not proof that the separate ancestral text is complete. The A/N electronic wording remains preserved in the witness apparatus."
+        "Qawtaw7 / H2014 H2014/2:571, H2014/2:572: deferred lacuna. Preferred: «وأما الثاني ... فلما بيناه في كتبنا المعمولة في صناعة الحكمة». The printed matn has the same transition and does not recover the reported missing ancestral passage. A smooth continuation in this modern edition is not proof that the separate ancestral text is complete. The A/N electronic wording remains preserved in the witness apparatus.",
+        "Qawtaw8 adjudication: The lost ancestral words cannot be established: retain the surviving text, distinguish the later SH-059 explanation and do not invent a restoration. Obtain Hādīzādeh IV:37–72 or a photographed early manuscript for a genuinely new comparison."
       ],
       "variants": [
         {
@@ -2248,7 +2265,14 @@ window.GNAMMA_QAWAID_MATN = {
           "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
           "manuscriptCollation": false
         }
-      ]
+      ],
+      "qawtaw8": {
+        "status": "unrecovered-lacuna",
+        "note": "The lost ancestral words cannot be established: retain the surviving text, distinguish the later SH-059 explanation and do not invent a restoration. Obtain Hādīzādeh IV:37–72 or a photographed early manuscript for a genuinely new comparison.",
+        "originalArabicPreserved": true,
+        "comparatorArabicPreserved": true,
+        "manuscriptsCollated": 0
+      }
     },
     {
       "id": "QT-060",
@@ -2266,7 +2290,8 @@ window.GNAMMA_QAWAID_MATN = {
         "Printed variants p.267 فوقع/فأوقع, the doubtful word المفرفة/muġriqa, and p.267's imperative فيتقن ... (possibly فليتقِ) have not been settled by manuscripts. English renders the intended admonition while retaining the printed dilemma in notes.",
         "Clause audit (9 Nov 2026), A printed p.267: the distinct phrase «فلحق به من الحقّ الغضب» is now rendered explicitly; it was previously omitted. The digital A base closes «فيتقن ... من لطفه واستعد به من مكره وغضبه», whereas the provisional reader adopts conjectural «فليتقِ ... وليستعذ». The final English is an interpretative rendition, not an attested manuscript restoration. Keep both digital-base and proposed readings visible in the apparatus.",
         "Qawtaw7 / H2014 H2014/2:581: partial resolution. Preferred: «المغرقة; فوقع نفسه retained». H2014 confirms المغرقة over the damaged digital المفرفة, but does not independently support the conjectural causative فأوقع. The A/N electronic wording remains preserved in the witness apparatus.",
-        "Qawtaw7 / H2014 H2014/2:582: supported reading. Preferred: «فتيقّن خبث هذه العقيدة ووجه ضررها من لطفه، واستعذ به من مكره وغضبه». The print has second-person imperatives فتيقّن and استعذ. This is not the reader’s conjectural third-person فليتقِ ... وليستعذ, nor the defective electronic فيتقن ... واستعد. Vocalization/punctuation here are editorial normalization. The A/N electronic wording remains preserved in the witness apparatus."
+        "Qawtaw7 / H2014 H2014/2:582: supported reading. Preferred: «فتيقّن خبث هذه العقيدة ووجه ضررها من لطفه، واستعذ به من مكره وغضبه». The print has second-person imperatives فتيقّن and استعذ. This is not the reader’s conjectural third-person فليتقِ ... وليستعذ, nor the defective electronic فيتقن ... واستعد. Vocalization/punctuation here are editorial normalization. The A/N electronic wording remains preserved in the witness apparatus.",
+        "Qawtaw8 adjudication: Retain transmitted فوقع نفسه and translate its context as falling into false imaginings; do not claim the unattested correction فأوقع."
       ],
       "variants": [
         {
@@ -2335,7 +2360,14 @@ window.GNAMMA_QAWAID_MATN = {
           "manuscriptCollation": false
         }
       ],
-      "readingArabic": "على أنّا نقول: إنّ العلوم كلّها موجودة فينا، لما ستعرفه لو تأمّلت في المباحث السالفة، لكنّها مخفيّة بالحجب المانعة عن الظهور. ولا يخفى عليك أنّ ظهورها تارة يكون بالحركات اللطيفة الفكريّة الروحانيّة بعد تسليط القوّة القدسيّة على قوّتي الوهميّة والمتخيّلة وسائر القوى الجسمانيّة وتهذيب الأخلاق وتزيين النفس بالأخلاق الحسنة، وتارة أخرى بتسكين المتخيّلة والمتوهّمة وإلجامهما ومنعهما عن الحركات المضطربة المشوّشة بعد تسخير القوى الجسمانيّة بالتزكية والتصفية. وكلا الطريقين حقّ عند أكثر المحقّقين من أهل النظر وأصحاب المجاهدة. [شعر] خذ أبطن هرشى أو قفاها فإنّه * كلا جانبي هرشى لهنّ طريق. ومن اعتقد أنّه لا اعتبار بالتزكية والتصفية في طريق التعليم والنظر، ركب متن الهوى والهوس حسب هذه العقيدة الفاسدة، وغلبت على نفسه الشهوة والغضب، واستولت عليه الرذائل الطبيعيّة المهلكة، وحُرمت عليها الفضائل الملكيّة المحبّيّة، واشتغل بقراءة كتب مقلّدي الفلاسفة وزبر المتكلّمين من أصحاب الجدل والمشاغبة، وضيّع عمره في ضبط الآراء المتناقضة وحفظ الأحوال والأقوال المتقابلة، فوقع نفسه في لجج الخيالات الفاسدة والأوهام الباطلة، عند تلاطم أمواج الشكوك والشبهات المغرقة. فاضمحلّ نور قلبه وعميت بصيرته بتراكم الكدورات المظلمة والعقائد الفاسدة، وازداد فيه الجهل والتردّد وحصل له البهت والتحيّر، ولا يدري أين يذهب، فلحق به من الحقّ الغضب، وظنّ أنّ الكمال ما حصل له ووصل إليه، وليس وراءه حالة مرغوبة كماليّة ولا سعادة باقية، فتيقّن خبث هذه العقيدة ووجه ضررها من لطفه، واستعذ به من مكره وغضبه."
+      "readingArabic": "على أنّا نقول: إنّ العلوم كلّها موجودة فينا، لما ستعرفه لو تأمّلت في المباحث السالفة، لكنّها مخفيّة بالحجب المانعة عن الظهور. ولا يخفى عليك أنّ ظهورها تارة يكون بالحركات اللطيفة الفكريّة الروحانيّة بعد تسليط القوّة القدسيّة على قوّتي الوهميّة والمتخيّلة وسائر القوى الجسمانيّة وتهذيب الأخلاق وتزيين النفس بالأخلاق الحسنة، وتارة أخرى بتسكين المتخيّلة والمتوهّمة وإلجامهما ومنعهما عن الحركات المضطربة المشوّشة بعد تسخير القوى الجسمانيّة بالتزكية والتصفية. وكلا الطريقين حقّ عند أكثر المحقّقين من أهل النظر وأصحاب المجاهدة. [شعر] خذ أبطن هرشى أو قفاها فإنّه * كلا جانبي هرشى لهنّ طريق. ومن اعتقد أنّه لا اعتبار بالتزكية والتصفية في طريق التعليم والنظر، ركب متن الهوى والهوس حسب هذه العقيدة الفاسدة، وغلبت على نفسه الشهوة والغضب، واستولت عليه الرذائل الطبيعيّة المهلكة، وحُرمت عليها الفضائل الملكيّة المحبّيّة، واشتغل بقراءة كتب مقلّدي الفلاسفة وزبر المتكلّمين من أصحاب الجدل والمشاغبة، وضيّع عمره في ضبط الآراء المتناقضة وحفظ الأحوال والأقوال المتقابلة، فوقع نفسه في لجج الخيالات الفاسدة والأوهام الباطلة، عند تلاطم أمواج الشكوك والشبهات المغرقة. فاضمحلّ نور قلبه وعميت بصيرته بتراكم الكدورات المظلمة والعقائد الفاسدة، وازداد فيه الجهل والتردّد وحصل له البهت والتحيّر، ولا يدري أين يذهب، فلحق به من الحقّ الغضب، وظنّ أنّ الكمال ما حصل له ووصل إليه، وليس وراءه حالة مرغوبة كماليّة ولا سعادة باقية، فتيقّن خبث هذه العقيدة ووجه ضررها من لطفه، واستعذ به من مكره وغضبه.",
+      "qawtaw8": {
+        "status": "reading-settled",
+        "note": "Retain transmitted فوقع نفسه and translate its context as falling into false imaginings; do not claim the unattested correction فأوقع.",
+        "originalArabicPreserved": true,
+        "comparatorArabicPreserved": true,
+        "manuscriptsCollated": 0
+      }
     },
     {
       "id": "QT-061",
@@ -2354,7 +2386,8 @@ window.GNAMMA_QAWAID_MATN = {
         "This establishes the END of the transmitted quoted treatise in this edition, not independent completeness of a manuscript critical text (cf. the loss reported in QT-059).",
         "Fahares/FANKHĀ work-level catalogue explicit includes «وهذا آخر ما اردنا ان نورده فی هذه الرساله و الحمدلله رب العالمین» and adjacent terms, confirming the bibliographical work's ending matches the quoted ending on printed p.270. This is NOT evidence that the intervening original is complete nor individually independently read manuscript explicits. See editorial/MANUSCRIPT_COLLATION_DOSSIER.md.",
         "Lexical review (9 Nov 2026), A p.270: «شيخ مكمّل» is an active participle, a master who helps perfect another, not merely «مكمَّل», a master already perfected. The translated adjective now reflects that agency.",
-        "Qawtaw7 / H2014 H2014/2:591, H2014/2:592, H2014/2:593: unresolved. Preferred: «غير المتسقة المنتظمة». H2014 repeats the difficult wording in the lemma. Its modern explanation simplifies it to غير المنتظمة. That clarifies the interpretation but does not establish حذف المنتظمة or insert a conjunction in the medieval text. The A/N electronic wording remains preserved in the witness apparatus."
+        "Qawtaw7 / H2014 H2014/2:591, H2014/2:592, H2014/2:593: unresolved. Preferred: «غير المتسقة المنتظمة». H2014 repeats the difficult wording in the lemma. Its modern explanation simplifies it to غير المنتظمة. That clarifies the interpretation but does not establish حذف المنتظمة or insert a conjunction in the medieval text. The A/N electronic wording remains preserved in the witness apparatus.",
+        "Qawtaw8 adjudication: Both witnesses retain غير المتسقة المنتظمة. Translate the function of logic as ordering noncoherent inquiries, but do not delete or add Arabic words without another witness. Cross-reference SH-061-F."
       ],
       "variants": [
         {
@@ -2407,7 +2440,14 @@ window.GNAMMA_QAWAID_MATN = {
           "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
           "manuscriptCollation": false
         }
-      ]
+      ],
+      "qawtaw8": {
+        "status": "witness-crux-open",
+        "note": "Both witnesses retain غير المتسقة المنتظمة. Translate the function of logic as ordering noncoherent inquiries, but do not delete or add Arabic words without another witness. Cross-reference SH-061-F.",
+        "originalArabicPreserved": true,
+        "comparatorArabicPreserved": true,
+        "manuscriptsCollated": 0
+      }
     }
   ],
   "criticalEdition": {

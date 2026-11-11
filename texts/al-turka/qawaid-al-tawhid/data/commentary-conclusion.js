@@ -64,7 +64,8 @@ window.GNAMMA_TAMHID_CONCLUSION = [
       "Clause review (9 Nov 2026): ما يميّز به بعض ما فيه من البعض includes a part-to-part discrimination that the former English obscured. The transmitted words remain difficult and the printed alternative النقص must not be silently substituted.",
       "The wording بعض ما فيه من البعض is unstable; the printed apparatus offers النقص for the final البعض and يتميّز for يميّز. The Arabic preserves the displayed base and the English avoids pretending that the exact defective phrase has been definitively restored.",
       "The argument grants, for discussion, an explanation by unequal capacities and then argues that a criterion remains useful. It does not simply dismiss the possibility of graded experiential understanding.",
-      "Qawtaw7 / H2014 H2014/2:595, H2014/2:596: partial resolution. Preferred: «ما فيه من النقص، فما اطمأن به كل الاطمئنان». H2014 omits the problematic additional clause ما يميز به بعض ما فيه من البعض altogether. This provides a coherent separately printed form but does not settle whether the longer wording in A is corrupted, interpolated, or editorially omitted here. Retain both forms in apparatus; do not silently treat omission as manuscript proof. The A/N electronic wording remains preserved in the witness apparatus."
+      "Qawtaw7 / H2014 H2014/2:595, H2014/2:596: partial resolution. Preferred: «ما فيه من النقص، فما اطمأن به كل الاطمئنان». H2014 omits the problematic additional clause ما يميز به بعض ما فيه من البعض altogether. This provides a coherent separately printed form but does not settle whether the longer wording in A is corrupted, interpolated, or editorially omitted here. Retain both forms in apparatus; do not silently treat omission as manuscript proof. The A/N electronic wording remains preserved in the witness apparatus.",
+      "Qawtaw8 adjudication: Use the shorter H2014 line for continuous reading; preserve the additional A phrase ما يميز به بعض ما فيه من البعض as a printed alternative, not as deleted authorial text."
     ],
     "witnessComparisons": [
       {
@@ -85,7 +86,14 @@ window.GNAMMA_TAMHID_CONCLUSION = [
         "manuscriptCollation": false
       }
     ],
-    "readingArabic": "فلئن قيل: المخالفة بين السالكين في معارفهم ومواجدهم إنّما نشأت من قوّة الاستعداد وضعفه، فإنّ الضعيف منهم إنّما يدرك معنى ويتصوّر أنّه النهاية في ذلك فيتوقّف عنده وما يتعدّاه ويعتقده عقداً لا يتطرّق إليه الانحلال، وأمّا القويّ لإحاطة إدراكه بما هو الغاية عند الضعيف وتجاوزه عن ذلك وبلوغه إلى ما هو أعلى وأتمّ منه، لا يرضى بتوقّفه لديه وينكر عقده عنده وعدم تجاوزه عنه، لا أنّه ينكر المعتقد، بل قصره عليه وحصره به. قلنا: على تقدير التسليم، لو كان عند الضعيف آلة مميّزة، لما وقع له ذلك وما توقّف هنالك، بل لاح له عند الاعتبار بميزانه المميّزة ما فيه من النقص، فما اطمأنّ به كلّ الاطمئنان وطلب ما هو أعلى وأتمّ."
+    "readingArabic": "فلئن قيل: المخالفة بين السالكين في معارفهم ومواجدهم إنّما نشأت من قوّة الاستعداد وضعفه، فإنّ الضعيف منهم إنّما يدرك معنى ويتصوّر أنّه النهاية في ذلك فيتوقّف عنده وما يتعدّاه ويعتقده عقداً لا يتطرّق إليه الانحلال، وأمّا القويّ لإحاطة إدراكه بما هو الغاية عند الضعيف وتجاوزه عن ذلك وبلوغه إلى ما هو أعلى وأتمّ منه، لا يرضى بتوقّفه لديه وينكر عقده عنده وعدم تجاوزه عنه، لا أنّه ينكر المعتقد، بل قصره عليه وحصره به. قلنا: على تقدير التسليم، لو كان عند الضعيف آلة مميّزة، لما وقع له ذلك وما توقّف هنالك، بل لاح له عند الاعتبار بميزانه المميّزة ما فيه من النقص، فما اطمأنّ به كلّ الاطمئنان وطلب ما هو أعلى وأتمّ.",
+    "qawtaw8": {
+      "status": "reading-settled",
+      "note": "Use the shorter H2014 line for continuous reading; preserve the additional A phrase ما يميز به بعض ما فيه من البعض as a printed alternative, not as deleted authorial text.",
+      "originalArabicPreserved": true,
+      "comparatorArabicPreserved": true,
+      "manuscriptsCollated": 0
+    }
   },
   {
     "id": "SH-061-F",
@@ -110,7 +118,8 @@ window.GNAMMA_TAMHID_CONCLUSION = [
       "Malaka is a stable acquired capacity, illustrated by trained musical and metrical discrimination. The analogy is the commentator's own, not a modern embellishment.",
       "The printed alternative حقيّته / حقيقته is recorded. The text continues directly into SH-061-A on p.274, which qualifies the requirement by the presence of a perfected guide.",
       "Qawtaw7 / H2014 H2014/2:597: partial resolution. Preferred: «حتى تصير هذه العلوم النظرية ... الغير المتسقة المنتظمة». تصير resolves the digital يصيرى. H2014 still retains the awkward negative/participle sequence; the entire group is therefore not fully resolved. The A/N electronic wording remains preserved in the witness apparatus.",
-      "Qawtaw7 / H2014 H2014/2:597: supported reading. Preferred: «في أثناء الطلب والسلوك». Printed السلوك confirms the contextual correction of digital الملوك; no change of doctrinal interpretation is needed. The A/N electronic wording remains preserved in the witness apparatus."
+      "Qawtaw7 / H2014 H2014/2:597: supported reading. Preferred: «في أثناء الطلب والسلوك». Printed السلوك confirms the contextual correction of digital الملوك; no change of doctrinal interpretation is needed. The A/N electronic wording remains preserved in the witness apparatus.",
+      "Qawtaw8 adjudication: تصير is supported over electronic يصيرى, but the same paradoxical noncoherence/order phrase as QT-061 persists in both prints. Cross-reference QT-061."
     ],
     "witnessComparisons": [
       {
@@ -146,6 +155,13 @@ window.GNAMMA_TAMHID_CONCLUSION = [
         "manuscriptCollation": false
       }
     ],
-    "readingArabic": "ومتى عرفت هذا فنقول: لا بدّ للسالكين من أصحاب المجاهدات السائرين في طريق الحقيقة بمساعي الجدّ والاجتهاد، أن يحصّلوا العلوم الفكريّة والمعارف اليقينيّة النظريّة بعد تصفية القلب عن شوائب النسب الخارجيّة بقطع العلائق المكدّرة وتحليته بمكارم الأخلاق ومحامدها، حتى تصير هذه العلوم النظريّة التي من جملتها الصناعة الآليّة المميّزة بالنسبة إلى المعارف الذوقيّة كالعلم الآليّ المنطقيّ بالنسبة إلى العلوم النظريّة الغير المنسّقة المنتظمة. وذلك لأنّ الملكة الحاصلة عقيب هذه النظريّات اليقينيّة لا بدّ وأن يكون مميّزة لليقينيّات عن غيرها، كالملكات الحاصلة عقيب استحضار الأبحر الشعريّة والنغم الموسيقيّة، فإنّ بها يتمكّن صاحبها من التميّز بين الموزون وغير الموزون ممّا يتحيّر فيه أصحاب النظر. فإذا استحصل السالك المجتهد تلك الملكة فلو تحيّر في أثناء الطلب والسلوك وتوقّف في بعض المطالب التي لا يحصل له بالفكر، يتمكّن من استخراجه بتلك الملكة الفاضلة ومن توجيه حقّيّته للمسترشد الناقد. ولا يخفى أنّ هذا أتمّ في الكمال والتكميل وأكمل ممّا لم يكن له ذلك."
+    "readingArabic": "ومتى عرفت هذا فنقول: لا بدّ للسالكين من أصحاب المجاهدات السائرين في طريق الحقيقة بمساعي الجدّ والاجتهاد، أن يحصّلوا العلوم الفكريّة والمعارف اليقينيّة النظريّة بعد تصفية القلب عن شوائب النسب الخارجيّة بقطع العلائق المكدّرة وتحليته بمكارم الأخلاق ومحامدها، حتى تصير هذه العلوم النظريّة التي من جملتها الصناعة الآليّة المميّزة بالنسبة إلى المعارف الذوقيّة كالعلم الآليّ المنطقيّ بالنسبة إلى العلوم النظريّة الغير المنسّقة المنتظمة. وذلك لأنّ الملكة الحاصلة عقيب هذه النظريّات اليقينيّة لا بدّ وأن يكون مميّزة لليقينيّات عن غيرها، كالملكات الحاصلة عقيب استحضار الأبحر الشعريّة والنغم الموسيقيّة، فإنّ بها يتمكّن صاحبها من التميّز بين الموزون وغير الموزون ممّا يتحيّر فيه أصحاب النظر. فإذا استحصل السالك المجتهد تلك الملكة فلو تحيّر في أثناء الطلب والسلوك وتوقّف في بعض المطالب التي لا يحصل له بالفكر، يتمكّن من استخراجه بتلك الملكة الفاضلة ومن توجيه حقّيّته للمسترشد الناقد. ولا يخفى أنّ هذا أتمّ في الكمال والتكميل وأكمل ممّا لم يكن له ذلك.",
+    "qawtaw8": {
+      "status": "witness-crux-open",
+      "note": "تصير is supported over electronic يصيرى, but the same paradoxical noncoherence/order phrase as QT-061 persists in both prints. Cross-reference QT-061.",
+      "originalArabicPreserved": true,
+      "comparatorArabicPreserved": true,
+      "manuscriptsCollated": 0
+    }
   }
 ];
