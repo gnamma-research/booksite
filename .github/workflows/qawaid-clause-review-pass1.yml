@@ -39,15 +39,15 @@ jobs:
           expected={
            'SH-014':'whether accidentally or essentially',
            'SH-INTRO-021':'tawqīfī character',
-           'SH-061-E':'distinguish some of its contents from others',
-           'SH-058':'sleep and lapses of attention'}
+           'SH-061-E':'disclosed its deficiency',
+           'SH-058':'sleep and wakefulness'}
           for uid,needle in expected.items():
              assert needle in units[uid]['english'],(uid,needle)
           h=(p/'downloads/Tamhid_Complete_Commentary_Reading_Edition.html').read_text()
           assert all(s in h for s in expected.values())
           assert h.count('<style>')==h.count('</style>')
           assert len(j['units'])==110
-          print('All four corrected passages propagated to compiled corpus and single-file reader')
+          print('All four currently adopted readings propagated to compiled corpus and single-file reader')
           PY
       - name: Preserve generated result before concurrent-master reconciliation
         run: |
