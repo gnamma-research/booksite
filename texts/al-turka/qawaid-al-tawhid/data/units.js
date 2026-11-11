@@ -255,7 +255,8 @@ window.GNAMMA_QAWAID_MATN = {
       "english": "If it is objected: 'The necessary reality is the nature that is among the necessary correlates of that existence, already mentioned, which is common to all particular existences.'",
       "notes": [
         "This clause is introduced as a dialectical objection. The commentary (p. 67) explicitly attributes the position under examination to later Peripatetic philosophers, and signals that the ancestor will first present their position in a defensible form before criticizing it.",
-        "Malzūm is what implies a lāzim, its necessary concomitant. The reciprocal wording here—one among the malzūmāt of what was mentioned—is unusual and should be checked against the independent matn manuscripts."
+        "Malzūm is what implies a lāzim, its necessary concomitant. The reciprocal wording here—one among the malzūmāt of what was mentioned—is unusual and should be checked against the independent matn manuscripts.",
+        "Qawtaw7 / H2014 H2014/1:291, H2014/1:292, H2014/1:293: resolved interpretation. Preferred: «من ملزومات ... الوجود». The printed lemma retains ملزومات and the commentary explicitly explains the logical direction. Resolution concerns terminology, not acceptance of the objection as authorial doctrine. The A/N electronic wording remains preserved in the witness apparatus."
       ],
       "variants": [],
       "url": "https://ablibrary.net/book_content/b/17638/263?lang=ar",
@@ -266,7 +267,27 @@ window.GNAMMA_QAWAID_MATN = {
         "authorialBoundaryIndependentCheck": false,
         "apparatusStatus": "provisional",
         "knownLacuna": false
-      }
+      },
+      "witnessComparisons": [
+        {
+          "stage": "Qawtaw7",
+          "number": 1,
+          "status": "resolved-interpretation",
+          "printedComparator": "H2014",
+          "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+          "sourceLocations": [
+            "H2014/1:291",
+            "H2014/1:292",
+            "H2014/1:293"
+          ],
+          "sourceExcerpt": "فلئن قيل: إن الحقيقة الواجبة هي الطبيعة التي هي من ملزومات ما ذُكر من الوجود الذي يشترك فيه جميع الوجودات الخاصّة.",
+          "preferredReading": "من ملزومات ... الوجود",
+          "interpretation": "One of the underlying bearers of the common predicate of existence. The common meaning is the lāzim; its distinct substrates/instances are its malzūmāt. No Arabic emendation is required.",
+          "editorialDecision": "The printed lemma retains ملزومات and the commentary explicitly explains the logical direction. Resolution concerns terminology, not acceptance of the objection as authorial doctrine.",
+          "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+          "manuscriptCollation": false
+        }
+      ]
     },
     {
       "id": "QT-009",
@@ -576,11 +597,12 @@ window.GNAMMA_QAWAID_MATN = {
         95
       ],
       "arabic": "فلئن قيل: لو صحّ ما ذكرتموه في بيان أن الواجب لذاته لا يجوز أن يكون تلك الطبيعة الملزومة للوجود المطلق، لصحّ أن يقال: إنه لا يجوز أن يكون نفس الوجود المطلق بمثل ما ذكرتموه؛ فإن حقيقته لو كانت ذات أفراد عقلية فلا بدّ وأن يوجد منه فرد، فامتنعت الأفراد الباقية، لاستحالة أن يوجد كلّها وأن لا يوجد شيء منها، وحينئذ كان وجوب بعضها وامتناع ما عداه بالغير لا بالذات. وإن لم تكن ذات أفراد عقلية لشيء مما ذكر من الوجوه، فإن كانت حقيقته مغايرة لحقيقة الوجودات العينية الخاصّة الممكنة، كان إطلاق لفظ الوجود عليه وعلى الوجودات الممكنة بالاشتراك اللفظي دون المعنوي، وإن لم تكن مغايرة لها، لزم اتصاف الوجودات الممكنة بالوجوب الذاتي. قلنا: إن تلك الطبيعة لا بدّ وأن يكون مغايرة للوجود العيني وملزومه، لما ذكرنا، دون الوجود الواجب لذاته القائم بنفسه الممتاز عمّا عداه به عين حقيقة.",
-      "english": "If it is objected: ‘If your arguments are sound in showing that what is necessary through itself cannot be the nature to which absolute existence is a necessary concomitant, the same arguments could be used to show that it cannot be absolute existence itself. For if the reality of absolute existence admitted intellectual instances, one instance would have to exist, while the remaining instances would be impossible: neither could all of them exist nor could none exist. Then the necessity of some and the impossibility of the others would be due to another rather than to themselves. If it admits no intellectual instances for any of the reasons given, then either its reality differs from the realities of the particular possible existences in external reality—in which case the term “existence” would apply to them only equivocally—or it does not differ from them, in which case the possible existences themselves would possess intrinsic necessity.’ We reply: the supposed underlying necessary nature must, for the reasons already given, differ from external existence and what underlies it. That does not apply to existence necessary through itself, subsisting through itself, and distinguished from everything else by its very reality.",
+      "english": "If it is objected: ‘If your arguments are sound in showing that what is necessary through itself cannot be the nature to which absolute existence is a necessary concomitant, the same arguments could be used to show that it cannot be absolute existence itself. For if the reality of absolute existence admitted intellectual instances, one instance would have to exist, while the remaining instances would be impossible: neither could all of them exist nor could none exist. Then the necessity of some and the impossibility of the others would be due to another rather than to themselves. If it admits no intellectual instances for any of the reasons given, then either its reality differs from the realities of the particular possible existences in external reality—in which case the term “existence” would apply to them only equivocally—or it does not differ from them, in which case the possible existences themselves would possess intrinsic necessity.’ We reply: the supposed underlying necessary nature must, for the reasons already given, differ from external existence and be its underlying bearer. That does not apply to existence necessary through itself, subsisting through itself, and distinguished from everything else by its very reality.",
       "notes": [
         "The opponent deliberately turns the ancestor's earlier fourfold reasoning back against unrestricted existence. The passage must be presented as objection then response, not as a single affirmative doctrine.",
         "The final sentence remains grammatically and textually strained in the digital base (لا بد وأن يكون مغايرة ... به عين حقيقة; with لعَين as an alternative). Its English interpretation follows the accompanying commentary on pp. 96–97, but the Arabic has NOT been conjecturally emended. Resolve through photographic and manuscript collation.",
-        "The sharḥ at pp. 96–97 explains the supposed necessary nature as a determinate particular alongside others, whereas the unrestricted necessary reality is not opposed to determinate existence in that way."
+        "The sharḥ at pp. 96–97 explains the supposed necessary nature as a determinate particular alongside others, whereas the unrestricted necessary reality is not opposed to determinate existence in that way.",
+        "Qawtaw7 / H2014 H2014/1:429, H2014/1:430: supported reading. Preferred: «مغايرة للوجود العيني وملزومة له؛ ... الممتاز عما عداه بعين حقيقته». ملزومة له describes the nature as the bearer entailing existence, not a second object from which the nature differs. Correct English coordination as well as the corrupted closing بعين حقيقته. The A/N electronic wording remains preserved in the witness apparatus."
       ],
       "variants": [
         {
@@ -599,7 +621,27 @@ window.GNAMMA_QAWAID_MATN = {
         "authorialBoundaryIndependentCheck": false,
         "apparatusStatus": "provisional",
         "knownLacuna": false
-      }
+      },
+      "witnessComparisons": [
+        {
+          "stage": "Qawtaw7",
+          "number": 2,
+          "status": "supported-reading",
+          "printedComparator": "H2014",
+          "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+          "sourceLocations": [
+            "H2014/1:429",
+            "H2014/1:430"
+          ],
+          "sourceExcerpt": "قلنا: إن تلك الطبيعة لا بدّ وأن يكون مغايرة للوجود العيني وملزومه، لما ذكرنا، دون الوجود الواجب لذاته القائم بنفسه الممتاز عمّا عداه به عين حقيقة.",
+          "preferredReading": "مغايرة للوجود العيني وملزومة له؛ ... الممتاز عما عداه بعين حقيقته",
+          "interpretation": "That nature must differ from external existence and be its underlying bearer; this does not apply to existence necessary through itself, distinct from others through its very reality.",
+          "editorialDecision": "ملزومة له describes the nature as the bearer entailing existence, not a second object from which the nature differs. Correct English coordination as well as the corrupted closing بعين حقيقته.",
+          "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+          "manuscriptCollation": false
+        }
+      ],
+      "readingArabic": "فلئن قيل: لو صحّ ما ذكرتموه في بيان أن الواجب لذاته لا يجوز أن يكون تلك الطبيعة الملزومة للوجود المطلق، لصحّ أن يقال: إنه لا يجوز أن يكون نفس الوجود المطلق بمثل ما ذكرتموه؛ فإن حقيقته لو كانت ذات أفراد عقلية فلا بدّ وأن يوجد منه فرد، فامتنعت الأفراد الباقية، لاستحالة أن يوجد كلّها وأن لا يوجد شيء منها، وحينئذ كان وجوب بعضها وامتناع ما عداه بالغير لا بالذات. وإن لم تكن ذات أفراد عقلية لشيء مما ذكر من الوجوه، فإن كانت حقيقته مغايرة لحقيقة الوجودات العينية الخاصّة الممكنة، كان إطلاق لفظ الوجود عليه وعلى الوجودات الممكنة بالاشتراك اللفظي دون المعنوي، وإن لم تكن مغايرة لها، لزم اتصاف الوجودات الممكنة بالوجوب الذاتي. قلنا: إن تلك الطبيعة لا بدّ وأن يكون مغايرة للوجود العيني وملزومة له، لما ذكرنا، دون الوجود الواجب لذاته القائم بنفسه الممتاز عمّا عداه بعين حقيقته."
     },
     {
       "id": "QT-021",
@@ -684,11 +726,12 @@ window.GNAMMA_QAWAID_MATN = {
         109
       ],
       "arabic": "فلئن قيل: إن الوجود الذهني الذي يمتنع أن يوجد في الأعيان فرد من أفراد الوجود المطلق الذي يكون من جملة أفراده الفرد العيني الواجب بحسب الذات. قلنا: الكون الذهني هو الكون العيني بالذات وإن كان مغايراً له بالاعتبار، فإن عروض المعاني العقلية إنما هو للوجود العيني في بعض مراتبه، أو بشرط اتصافه بصفات أُخر عارضة له. ولا اعتبار هاهنا بالموجودية بالفرض التي تعرض المعاني العقلية، مثل عروضها لسائر الماهيات وجميع النسب والصفات والأحوال؛ إذ الكلام هاهنا إنما هو في الوجود الموجود بنفسه الواجب بالذات.",
-      "english": "If it is objected: ‘Mental existence, which cannot exist externally, is an instance of absolute existence, just as the instance externally necessary through itself is one of its instances.’ We reply: mental being is external being in its essence, although it differs from it under a conceptual consideration. Intellectual meanings are attributed to external existence at certain of its levels, or when it is considered as qualified by other accidental attributes. We are not concerned here with the being-existent imputed by supposition to intellectual meanings, as it may be imputed to other quiddities and to relations, attributes, and states; the discussion here concerns existence that exists through itself and is necessary through itself.",
+      "english": "If it is objected: ‘Mental existence, which cannot exist externally, is an instance of absolute existence, just as the instance externally necessary through itself is one of its instances.’ We reply: mental being is external being in its essence, although it differs from it under a conceptual consideration. Intellectual meanings are attributed to external existence at certain of its levels, or when it is considered as qualified by other accidental attributes. We are not concerned here with the existentness predicated incidentally to intellectual meanings, as it may be imputed to other quiddities and to relations, attributes, and states; the discussion here concerns existence that exists through itself and is necessary through itself.",
       "notes": [
         "The objection exploits the fact that mental being, considered *as mental*, cannot be an extramental individual; the reply separates an intrinsic existential reality from its relational and conceptual qualifications.",
         "The printed variant بالفرض / بالعرض (‘by supposition’ / ‘incidentally’) has a significant ontological effect. The provisional base keeps بالفرض, but the stronger familiar technical reading might be بالعرض. Neither should be emended without a verified witness.",
-        "The sharḥ on p. 110 develops Akbarian levels and aʿyān thābita. Those additional explanations remain outside the ancestor's matn."
+        "The sharḥ on p. 110 develops Akbarian levels and aʿyān thābita. Those additional explanations remain outside the ancestor's matn.",
+        "Qawtaw7 / H2014 H2014/1:485: supported reading. Preferred: «الموجودية بالعرض». بالعرض occurs explicitly in both relevant positions of the printed quoted matn; stronger evidence than contextual preference alone. The A/N electronic wording remains preserved in the witness apparatus."
       ],
       "variants": [
         {
@@ -707,7 +750,26 @@ window.GNAMMA_QAWAID_MATN = {
         "authorialBoundaryIndependentCheck": false,
         "apparatusStatus": "provisional",
         "knownLacuna": false
-      }
+      },
+      "witnessComparisons": [
+        {
+          "stage": "Qawtaw7",
+          "number": 3,
+          "status": "supported-reading",
+          "printedComparator": "H2014",
+          "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+          "sourceLocations": [
+            "H2014/1:485"
+          ],
+          "sourceExcerpt": "أو بشرط اتصافه بصفات أُخر عارضة له. ولا اعتبار هاهنا بالموجودية بالفرض التي تعرض المعاني العقلية، مثل عروضها لسائر الماهيات وجميع النسب والصفات والأحوال؛ إذ الكلام هاهنا إنما هو في الوجود الموجود بنفسه الواجب بالذات.",
+          "preferredReading": "الموجودية بالعرض",
+          "interpretation": "Incidental or derivative existentness, predicated of intellectual meanings, rather than existentness merely by supposition.",
+          "editorialDecision": "بالعرض occurs explicitly in both relevant positions of the printed quoted matn; stronger evidence than contextual preference alone.",
+          "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+          "manuscriptCollation": false
+        }
+      ],
+      "readingArabic": "فلئن قيل: إن الوجود الذهني الذي يمتنع أن يوجد في الأعيان فرد من أفراد الوجود المطلق الذي يكون من جملة أفراده الفرد العيني الواجب بحسب الذات. قلنا: الكون الذهني هو الكون العيني بالذات وإن كان مغايراً له بالاعتبار، فإن عروض المعاني العقلية إنما هو للوجود العيني في بعض مراتبه، أو بشرط اتصافه بصفات أُخر عارضة له. ولا اعتبار هاهنا بالموجودية بالعرض التي تعرض المعاني العقلية، مثل عروضها لسائر الماهيات وجميع النسب والصفات والأحوال؛ إذ الكلام هاهنا إنما هو في الوجود الموجود بنفسه الواجب بالذات."
     },
     {
       "id": "QT-025",
@@ -722,7 +784,8 @@ window.GNAMMA_QAWAID_MATN = {
         "The ancestor introduces this lemma as تنبيه. It begins at p. 111 and ends before the descendant's أقول on p. 112. The modern bracketed heading [في إثبات وحدة الوجود] is editorial and excluded.",
         "Technical target: an iinniyya khāṣṣa nawʿiyya (a specifically kinded 'that-it-is') assigned to the First Principle, while also construing it as a cause unrelated in kind to its effects yet subsumed under shared being and general predicates.",
         "The clause ‘تكون طبيعته عن تلك الأكوان’ is syntactically suspicious. The grandson paraphrases it at p. 114 as ‘تكون تلك الأكوان ... نفس حقيقة ذلك الكون وعين طبيعتها’. English provisionally reads **عن** as a damaged **عين**-like identity claim on that internal evidence, WITHOUT emending the printed Arabic; manuscript proofing remains essential.",
-        "Claims concerning ontological affinity or lack of affinity between cause and effects must not be conflated with the Peripatetics' conventional treatment of common intelligible predicates."
+        "Claims concerning ontological affinity or lack of affinity between cause and effects must not be conflated with the Peripatetics' conventional treatment of common intelligible predicates.",
+        "Qawtaw7 / H2014 H2014/1:503: supported reading. Preferred: «تكون طبيعته عين تلك الأكوان». The printed quotation has عين, not عن. The A/N electronic wording remains preserved in the witness apparatus."
       ],
       "variants": [
         {
@@ -742,7 +805,26 @@ window.GNAMMA_QAWAID_MATN = {
         "authorialBoundaryIndependentCheck": false,
         "apparatusStatus": "provisional",
         "knownLacuna": false
-      }
+      },
+      "witnessComparisons": [
+        {
+          "stage": "Qawtaw7",
+          "number": 4,
+          "status": "supported-reading",
+          "printedComparator": "H2014",
+          "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+          "sourceLocations": [
+            "H2014/1:503"
+          ],
+          "sourceExcerpt": "على أنّا نقول: إنّا نعلم بالضرورة أنّ الكون الذي يشترك فيه الأكوان العينيّة، كون عينيّ تكون طبيعته عن تلك الأكوان في الأعيان والأذهان، وأمّا اختلافها وتعدّدها فهو بالإضافة والنسب والاعتبارات المخصّصة الحقيقيّة لا غير.",
+          "preferredReading": "تكون طبيعته عين تلك الأكوان",
+          "interpretation": "Its nature is identical with those beings, externally and mentally.",
+          "editorialDecision": "The printed quotation has عين, not عن.",
+          "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+          "manuscriptCollation": false
+        }
+      ],
+      "readingArabic": "تنبيه: اعلم أن اعتقاد كون المبدأ الأول الواجب بذاته أنيّة خاصّة نوعيّة، يلزم من فرضها على ما يقولون به رفع ما يعتقدون فيه، مع اعتقاد كونها علّة لسائر الأشياء والأنواع العينيّة الباقية بالمباينة وعدم المناسبة، ومندرجة تحت الوجود العيني المطلق الذي يشمل سائر الأشياء العينيّة المستندة إليها عندهم، اعتبارياً كما ذهب إليه البعض، أو حقيقيّاً موجوداً بنفسه في الأعيان كما ذهب إليه الباقون، مثل اندراجها تحت جميع الكلّيات والأمور العامّة وكثير من الكلّيات الباقية ممّا عداها، فهو بعيد عن الحدس المبين والعقل السليم والفكر الصحيح. فتأمّل في المباحث السالفة والآتية عسى أن يلوح لك الحقّ ويتبيّن اليقين لو كنت من أصحاب الذكاء والفطنة والملكات المرضيّة الفاضلة. على أنّا نقول: إنّا نعلم بالضرورة أنّ الكون الذي يشترك فيه الأكوان العينيّة، كون عينيّ تكون طبيعته عين تلك الأكوان في الأعيان والأذهان، وأمّا اختلافها وتعدّدها فهو بالإضافة والنسب والاعتبارات المخصّصة الحقيقيّة لا غير."
     },
     {
       "id": "QT-026",
@@ -867,13 +949,14 @@ window.GNAMMA_QAWAID_MATN = {
         133
       ],
       "arabic": "ويوجبه أيضاً على النسق المنتظم في الوجود الخارجي علماً إجمالياً جمعياً لا تفصيلياً، لا لما قيل: إن العلم بالعلّة يوجب العلم بالمعلول المباين لها بحسب الوجود، على ما ذهب إليه المشّاؤون. فإن الماهيّات والأعيان الثابتة غير مجعولة ولا معلولة بالذات، واعتبار كونها معقولة إنما هو باعتبار كونها غير مغايرة للذات العاقلة في الخارج، فإنها من حيث هي أنها مغايرة لها لا تكون موجودة بالفعل هاهنا، ولا معقولة بالمعنى الذي ذهب إليه محقّق المشّائين، وهو كون الشيء حاصلاً للعلّة القابلة، أو حاصلاً للعلّة الفاعليّة الموجبة المباينة له، فلا يصحّ أن يقال إنها مفتقرة إليها بحسب أحد الوجودين غير الفرضيّين.",
-      "english": "It also entails knowledge of them in the order that obtains in external existence: a comprehensive and gathered knowledge, not a knowledge partitioned into distinct details. This is not because, as the Peripatetics maintain, knowing a cause entails knowing an effect that is existentially separate from it. Quiddities and the fixed entities are neither made nor caused in themselves. To consider them intelligible is to consider them as not distinct, in external reality, from the essence that knows. Insofar as they are regarded as distinct from it, they are not actually existent here, nor are they intelligible in the sense accepted by the investigators among the Peripatetics—namely, as a thing's being present to a receptive cause or to a productive, necessitating cause distinct from it. It is thus incorrect to say that they depend on that essence in either of the two non-merely-hypothetical modes of existence.",
+      "english": "It also entails knowledge of them in the order that obtains in external existence: a comprehensive and gathered knowledge, not a knowledge partitioned into distinct details. This is not because, as the Peripatetics maintain, knowing a cause entails knowing an effect that is existentially separate from it. Quiddities and the fixed entities are neither made nor caused in themselves. To consider them intelligible is to consider them as not distinct, in external reality, from the essence that knows. Insofar as they are regarded as distinct from it, they are not actually existent here, nor are they intelligible in the sense accepted by the investigators among the Peripatetics—namely, as a thing's being present to a receptive cause or to a productive, necessitating cause distinct from it. It is thus incorrect to say that they depend on that essence in either of the two non-incidental modes of existence.",
       "notes": [
         "This is a continuous grandfather's quotation at p. 133, ending before أقول. The heading ‘Differences between essential and nominal perfection’ is a modern/editorial heading, not part of his matn.",
         "THE AVICENNIAN–AKBARIAN DIVIDE: the grandfather rejects the inference ‘knowledge of cause entails knowledge of an externally distinct effect’ in this divine context; he instead grounds intelligibility in non-difference from the knowing essence. This does not negate all ordinary causality or empirical genesis.",
         "الأعيان الثابتة (fixed entities) are said to be neither made nor caused *in themselves*; the later commentator distinguishes their nonexistence qua distinct from their reality under divine self-knowledge.",
         "Printed text presents ‘من حيث هي أنها [كونها - ظ] مغايرة’ and ‘الغير الفرضيين [العرضيين - ظ]’; [كونها] is a plausible editor's supplementation, and the meaning of the second expression (‘non-suppositional’ vs ‘non-accidental’) is unsettled. The English adopts the first printed form and remains provisional.",
-        "Don't conflate the grandson's lengthy critique of the Avicennian theory of ʿināya on p. 134 with Abū Ḥāmid's quoted formulation."
+        "Don't conflate the grandson's lengthy critique of the Avicennian theory of ʿināya on p. 134 with Abū Ḥāmid's quoted formulation.",
+        "Qawtaw7 / H2014 H2014/1:595: supported reading. Preferred: «بحسب أحد الوجودين الغير العرضيين». The comparator reads العرضيين, not الفرضيين; the modern bracket identifies the two modes as cognitive and external but is not authorial text. The A/N electronic wording remains preserved in the witness apparatus."
       ],
       "variants": [
         {
@@ -899,7 +982,26 @@ window.GNAMMA_QAWAID_MATN = {
         "authorialBoundaryIndependentCheck": false,
         "apparatusStatus": "provisional",
         "knownLacuna": false
-      }
+      },
+      "witnessComparisons": [
+        {
+          "stage": "Qawtaw7",
+          "number": 5,
+          "status": "supported-reading",
+          "printedComparator": "H2014",
+          "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+          "sourceLocations": [
+            "H2014/1:595"
+          ],
+          "sourceExcerpt": "أو حاصلاً للعلّة الفاعليّة الموجبة المباينة له، فلا يصحّ أن يقال إنها مفتقرة إليها بحسب أحد الوجودين غير الفرضيّين.",
+          "preferredReading": "بحسب أحد الوجودين الغير العرضيين",
+          "interpretation": "In either of the two non-incidental modes of existence.",
+          "editorialDecision": "The comparator reads العرضيين, not الفرضيين; the modern bracket identifies the two modes as cognitive and external but is not authorial text.",
+          "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+          "manuscriptCollation": false
+        }
+      ],
+      "readingArabic": "ويوجبه أيضاً على النسق المنتظم في الوجود الخارجي علماً إجمالياً جمعياً لا تفصيلياً، لا لما قيل: إن العلم بالعلّة يوجب العلم بالمعلول المباين لها بحسب الوجود، على ما ذهب إليه المشّاؤون. فإن الماهيّات والأعيان الثابتة غير مجعولة ولا معلولة بالذات، واعتبار كونها معقولة إنما هو باعتبار كونها غير مغايرة للذات العاقلة في الخارج، فإنها من حيث هي أنها مغايرة لها لا تكون موجودة بالفعل هاهنا، ولا معقولة بالمعنى الذي ذهب إليه محقّق المشّائين، وهو كون الشيء حاصلاً للعلّة القابلة، أو حاصلاً للعلّة الفاعليّة الموجبة المباينة له، فلا يصحّ أن يقال إنها مفتقرة إليها بحسب أحد الوجودين غير العرضيّين."
     },
     {
       "id": "QT-031",
@@ -1723,7 +1825,8 @@ window.GNAMMA_QAWAID_MATN = {
       "notes": [
         "Self-contained ancestor's قال at p.237 ends before (1) أقول, which launches the grandson's longer reply to the objection of divine need. The independent source includes a displaced or doubled string after الاتّصاف; the Arabic above marks the interruption without inventing a manuscript correction.",
         "The crucial distinction is between possible relative qualifications and the necessity of the Real in Himself. This is an internal modal distinction in the matn, not permission to make the divine essence dependent upon an externally independent cause.",
-        "The word 'necessary' qualifies the manifestation as a concomitant through the Real (الواجبة به لا من غيره); it does not convert the possible qualifications themselves into separately necessary entities."
+        "The word 'necessary' qualifies the manifestation as a concomitant through the Real (الواجبة به لا من غيره); it does not convert the possible qualifications themselves into separately necessary entities.",
+        "Qawtaw7 / H2014 H2014/2:487: partial resolution. Preferred: «على أمر ممكن ببعض الصفات الممكنة». H2014 removes the redundant second على صفات أخر ممكنة in the reply by clear parenthetical punctuation, but still prints ببعض الصفات الممكنة after the objection. The original row cannot be closed entirely. The A/N electronic wording remains preserved in the witness apparatus."
       ],
       "variants": [
         {
@@ -1742,7 +1845,25 @@ window.GNAMMA_QAWAID_MATN = {
         "authorialBoundaryIndependentCheck": false,
         "apparatusStatus": "provisional",
         "knownLacuna": false
-      }
+      },
+      "witnessComparisons": [
+        {
+          "stage": "Qawtaw7",
+          "number": 6,
+          "status": "partial-resolution",
+          "printedComparator": "H2014",
+          "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+          "sourceLocations": [
+            "H2014/2:487"
+          ],
+          "sourceExcerpt": "فلئن قيل: إنّها من حيث هي موجودات خاصّة أمور ممكنة، ولا يجوز أن يتوقّف الحقّ في الاتّصاف بصفة كماليّة على أمر ممكن — ببعض الصفات الممكنة.",
+          "preferredReading": "على أمر ممكن ببعض الصفات الممكنة",
+          "interpretation": "The reply should read: certain possible attributes—for example perfections of the names—depend upon other possible attributes. The displaced phrase in the objection remains suspect.",
+          "editorialDecision": "H2014 removes the redundant second على صفات أخر ممكنة in the reply by clear parenthetical punctuation, but still prints ببعض الصفات الممكنة after the objection. The original row cannot be closed entirely.",
+          "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+          "manuscriptCollation": false
+        }
+      ]
     },
     {
       "id": "QT-053",
@@ -1757,7 +1878,8 @@ window.GNAMMA_QAWAID_MATN = {
         "The original starts with قال p.243 and closes on p.244 immediately before the descendant's (1) أقول. The preceding p.243 sentence defining unrestrictedness is the grandson's, not the quoted matn.",
         "The argument replies directly to QT-045. The perfected human retains ordered lower faculties; comprehensive unity is hierarchical integration, not their annihilation.",
         "The printed word هربت is difficult; a recorded alternative is هذّبت. This edition preserves the base and marks the variant. The printed 'لا اعتبر' is rendered conditionally as لاعتُبر; exact particles require page-image verification.",
-        "The author's description of the spheres and the body is historically situated cosmology/physiology and should not be treated as scientific evidence."
+        "The author's description of the spheres and the body is historically situated cosmology/physiology and should not be treated as scientific evidence.",
+        "Qawtaw7 / H2014 H2014/2:495, H2014/2:496: supported reading. Preferred: «سخرت وهذبت». H2014 prints هذبت directly in the lemma. Use it rather than digital هربت, keeping the latter in the apparatus. The A/N electronic wording remains preserved in the witness apparatus."
       ],
       "variants": [
         {
@@ -1784,7 +1906,27 @@ window.GNAMMA_QAWAID_MATN = {
         "authorialBoundaryIndependentCheck": false,
         "apparatusStatus": "provisional",
         "knownLacuna": false
-      }
+      },
+      "witnessComparisons": [
+        {
+          "stage": "Qawtaw7",
+          "number": 7,
+          "status": "supported-reading",
+          "printedComparator": "H2014",
+          "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+          "sourceLocations": [
+            "H2014/2:495",
+            "H2014/2:496"
+          ],
+          "sourceExcerpt": "وأمّا نظائر العفاريت والمردة فلا نسلّم أنّها غير موجودة فيه. نعم، القوى التي هي نظائرها لمّا تسخّرت وهربت [هُذّبت: قراءة بديلة] بالمجاهدات المعتبرة عند أصحاب الاستكمال في الأشخاص الكاملة، فقد صارت الأفعال المحمودة الصادرة عنها ملكيّة،",
+          "preferredReading": "سخرت وهذبت",
+          "interpretation": "The lower faculties have been subjected and refined through the acknowledged spiritual exercises.",
+          "editorialDecision": "H2014 prints هذبت directly in the lemma. Use it rather than digital هربت, keeping the latter in the apparatus.",
+          "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+          "manuscriptCollation": false
+        }
+      ],
+      "readingArabic": "فلا يلزم أن تكون الإدراكات الحسّيّة والوهميّة والفكريّة غير معتبرة لو كان الكمال الحقيقي والإدراك اليقيني لا يحصل إلّا عند الوصول إلى مرتبة الإطلاق، فإنّ القوّة القدسيّة لو أخذت العلوم والمعارف عن مآخذها ومعادنها عند تجرّدها واستولت على هذه القوى المدركة بحيث لا تستقلّ بنفسها في شيء من حركاتها وأفعالها بدون استخدامها إيّاها وقهرها لتلك القوى على وجوب متابعتها ومبايعتها بالضرورة، لاعتُبر بالضرورة سائر إدراكاتها وتصرّفاتها، واستحال أن يكون شيء منها مانعاً لحصول ما هو الكمال الحقيقي عندهم، بل لا بدّ أن يكون معيّناً لحصول ما هو الكمال الحقيقي ورسوخه وسهولة الترقّي إلى أقصى مراتبه، فاعلم ذلك. وأمّا نظائر العفاريت والمردة فلا نسلّم أنّها غير موجودة فيه. نعم، القوى التي هي نظائرها لمّا سُخّرت وهُذّبت بالمجاهدات المعتبرة عند أصحاب الاستكمال في الأشخاص الكاملة، فقد صارت الأفعال المحمودة الصادرة عنها ملكيّة، فصارت ممنوعة عمّا يصحّ أن يصدر عنها حسب اقتضاء طبائعها أو مطاوعتها لبعض القوى الجسمانيّة كالقوّة الوهميّة وشبهها، من غير استخدام القوّة القدسيّة إيّاها. وهكذا الكلام بعينه في الأنواع المماثلة للوحوش والسباع والبهائم والحشرات المؤذية. وأمّا الطبائع التي هي نظائر الأفلاك والكواكب، فلا يجب اتّصافها بجميع الصفات التي تتّصف بها الأفلاك والكواكب، فإنّ ما يكون مثالاً للشيء المعيّن لا يجب اتّصافه بجميع ما يتّصف به ذلك الشيء بعينه. ولا نسلّم أنّه ليس هناك ما يتحرّك على سبيل الدوام والاستمرار، فإنّ الشرايين وشبهها كالرئة متحرّكة دائماً من غير ضعف ولا فتور."
     },
     {
       "id": "QT-054",
@@ -1793,12 +1935,13 @@ window.GNAMMA_QAWAID_MATN = {
         248
       ],
       "arabic": "ولا نسلّم أنّ العقل لا يدرك كلّ ما يدرك في الطور الذي هو فوق العقل. نعم، إنّ من الأشياء الخفيّة ما لا يصل إليه العقل، ولا يدرك إلّا بقوّة أخرى هي أشرف منه، وأمّا الأشياء الباقية فكلّ ما يدرك بتلك القوّة يدرك أيضاً بالعقل. على أنّا نقول: إنّ كلّ ما يدرك معنى كلّيّاً أو حقيقة كلّيّة يصدق عليه حدّ العقل واسمه. نعم، إنّ العقل الذي يقولون به ويعبّرون عن العلوم المنسوبة إليه بالعلوم الرسميّة إنّما يريدون به القوّة الفكريّة التي تأخذ العلوم من مبادئها بتوسّط استخراج الأوساط وتأليفها مع حدّي المطلوب، على أنّ الحافظة بتوسّط استخراج الأوساط وتأليفها مع حدّي المطلوب، على أنّ الحافظة والمتوهّمة والمتخيّلة قد لا تطيع العقل الفكري وتنقاد لتلك القوّة، بل تصير من جملة خدمها وآلاتها. فلا يمتنع أن يعبّر عمّا أدركته تلك القوّة بشيء من العبارات عنه.",
-      "english": "We do not concede that the intellect is incapable of apprehending everything apprehended in the mode said to lie above intellect. Certainly, some hidden matters cannot be reached by the intellect on its own, but are apprehended only through another faculty nobler than it. Yet other things apprehended by that higher faculty can also be apprehended by intellect. Indeed, whatever apprehends a universal meaning or universal reality falls under the definition and name of intellect. By 'intellect', however, when they speak of the sciences associated with it as formal sciences, they have in mind the discursive faculty that draws knowledge from its principles by finding middle terms and combining them with the two terms of the conclusion. [At this point the transmitted Arabic appears to repeat part of its previous clause.] Memory, estimation, and imagination need not obey the discursive intellect, yet they can submit to the nobler faculty and become its servants and instruments. Accordingly nothing prevents what that faculty apprehends from being expressed, in some measure, in words.",
+      "english": "We do not concede that the intellect is incapable of apprehending everything apprehended in the mode said to lie above intellect. Certainly, some hidden matters cannot be reached by the intellect on its own, but are apprehended only through another faculty nobler than it. Yet other things apprehended by that higher faculty can also be apprehended by intellect. Indeed, whatever apprehends a universal meaning or universal reality falls under the definition and name of intellect. By 'intellect', however, when they speak of the sciences associated with it as formal sciences, they have in mind the discursive faculty that draws knowledge from its principles by finding middle terms and combining them with the two terms of the conclusion. Memory, estimation, and imagination need not obey the discursive intellect, yet they can submit to the nobler faculty and become its servants and instruments. Accordingly nothing prevents what that faculty apprehends from being expressed, in some measure, in words.",
       "notes": [
         "Single self-contained ancestor's قال at p.248, ending before (1) أقول. The grandson's succeeding expansion on p.248–249 is excluded.",
         "The philosophically significant distinction is intellect in the broad sense versus discursive thought (fikr) in the narrow sense. 'Beyond discursive reason' need not mean utterly unintelligible or verbally incommunicable.",
         "The base electronic transcription duplicates 'بتوسط استخراج الأوساط وتأليفها مع حدي المطلوب، على أن الحافظة' within the quote. The Arabic reading text retains this visible duplication; the English signals the defect rather than inventing a repaired continuous original.",
-        "Printed العقلي is grammatically awkward where العقل is expected; a correction cannot be represented as a manuscript reading."
+        "Printed العقلي is grammatically awkward where العقل is expected; a correction cannot be represented as a manuscript reading.",
+        "Qawtaw7 / H2014 H2014/2:509: supported reading. Preferred: «... وتأليفها مع حدي المطلوب. على أن الحافظة والمتوهمة والمتخيلة ...». The entire printed matn contains the middle-term sentence only once and then proceeds to the faculties. It supports removal of the digital duplication in a corrected reading text. The A/N electronic wording remains preserved in the witness apparatus."
       ],
       "variants": [
         {
@@ -1824,7 +1967,26 @@ window.GNAMMA_QAWAID_MATN = {
         "authorialBoundaryIndependentCheck": false,
         "apparatusStatus": "provisional",
         "knownLacuna": false
-      }
+      },
+      "witnessComparisons": [
+        {
+          "stage": "Qawtaw7",
+          "number": 8,
+          "status": "supported-reading",
+          "printedComparator": "H2014",
+          "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+          "sourceLocations": [
+            "H2014/2:509"
+          ],
+          "sourceExcerpt": "على أنّ الحافظة بتوسّط استخراج الأوساط وتأليفها مع حدّي المطلوب، على أنّ الحافظة والمتوهّمة والمتخيّلة قد لا تطيع العقل الفكري وتنقاد لتلك القوّة، بل تصير من جملة خدمها وآلاتها.",
+          "preferredReading": "... وتأليفها مع حدي المطلوب. على أن الحافظة والمتوهمة والمتخيلة ...",
+          "interpretation": "The discursive faculty draws knowledge through middle terms and the two terms of the conclusion. Memory, estimation and imagination may obey the higher faculty.",
+          "editorialDecision": "The entire printed matn contains the middle-term sentence only once and then proceeds to the faculties. It supports removal of the digital duplication in a corrected reading text.",
+          "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+          "manuscriptCollation": false
+        }
+      ],
+      "readingArabic": "ولا نسلّم أنّ العقل لا يدرك كلّ ما يدرك في الطور الذي هو فوق العقل. نعم، إنّ من الأشياء الخفيّة ما لا يصل إليه العقل، ولا يدرك إلّا بقوّة أخرى هي أشرف منه، وأمّا الأشياء الباقية فكلّ ما يدرك بتلك القوّة يدرك أيضاً بالعقل. على أنّا نقول: إنّ كلّ ما يدرك معنى كلّيّاً أو حقيقة كلّيّة يصدق عليه حدّ العقل واسمه. نعم، إنّ العقل الذي يقولون به ويعبّرون عن العلوم المنسوبة إليه بالعلوم الرسميّة إنّما يريدون به القوّة الفكريّة التي تأخذ العلوم من مبادئها بتوسّط استخراج الأوساط وتأليفها مع حدّي المطلوب، على أنّ الحافظة والمتوهّمة والمتخيّلة قد لا تطيع العقل الفكري وتنقاد لتلك القوّة، بل تصير من جملة خدمها وآلاتها. فلا يمتنع أن يعبّر عمّا أدركته تلك القوّة بشيء من العبارات عنه."
     },
     {
       "id": "QT-055",
@@ -1838,7 +2000,8 @@ window.GNAMMA_QAWAID_MATN = {
       "notes": [
         "Begins on p.249 and ends on p.250 before the descendant's (1) أقول. The text is one sentence whose subordination is grammatically unstable in the digital print; English clarifies agency but does not claim exact final syntax.",
         "This replies to the fixed-disposition objection of QT-046 by positing stronger contrary causes, not the mere conceiving of abstraction. No implicit endorsement of extreme deprivation should be inferred.",
-        "Printed alternative بوجوب / بوجود مطاوعتها and تقيّد / يفيد انجذابها materially affect the construction; inspection of images is required."
+        "Printed alternative بوجوب / بوجود مطاوعتها and تقيّد / يفيد انجذابها materially affect the construction; inspection of images is required.",
+        "Qawtaw7 / H2014 H2014/2:521: partial resolution. Preferred: «أو بوجوه مطاوعتها للهوى ... ويقيد انجذابها». H2014 prints بوجوه, a third reading rather than either بوجوب or بوجود, and ويقيد rather than bare تقيّد. These improve syntax and are attested in this print, but settling the underlying witness choice remains open. The A/N electronic wording remains preserved in the witness apparatus."
       ],
       "variants": [
         {
@@ -1865,7 +2028,26 @@ window.GNAMMA_QAWAID_MATN = {
         "authorialBoundaryIndependentCheck": false,
         "apparatusStatus": "provisional",
         "knownLacuna": false
-      }
+      },
+      "witnessComparisons": [
+        {
+          "stage": "Qawtaw7",
+          "number": 9,
+          "status": "partial-resolution",
+          "printedComparator": "H2014",
+          "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+          "sourceLocations": [
+            "H2014/2:521"
+          ],
+          "sourceExcerpt": "إمّا بحسب ذاتها أو بوجوب مطاوعتها للهوى، والقوّة الوهميّة أو المتخيّلة البدنيّة إنّما يقهرها على المتابعة والمدافعة عن توجّهها بالكلّيّة نحو البدن وتقيّد انجذابها نحو المادّة والكدورات الماديّة.",
+          "preferredReading": "أو بوجوه مطاوعتها للهوى ... ويقيد انجذابها",
+          "interpretation": "Whether through their own nature or the ways in which they obey appetite; sustained discipline restricts their attraction toward matter.",
+          "editorialDecision": "H2014 prints بوجوه, a third reading rather than either بوجوب or بوجود, and ويقيد rather than bare تقيّد. These improve syntax and are attested in this print, but settling the underlying witness choice remains open.",
+          "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+          "manuscriptCollation": false
+        }
+      ],
+      "readingArabic": "وبيّن أنّ دوام المراقبة والمواظبة على ما ذكرنا من الملاحظة مع ملازمة الآداب والشروط المعتبرة عند أرباب هذه الصناعة، وترك استعمال شيء من القوى الجسمانيّة في جذب الملاذّ الدنيويّة ودفع المكاره البدنيّة، ثمّ قهرها على المطاوعة والمتابعة وممانعة اقتضاء ما تقتضيه القيود المذكورة، إمّا بحسب ذاتها أو بوجوه مطاوعتها للهوى، والقوّة الوهميّة أو المتخيّلة البدنيّة إنّما يقهرها على المتابعة والمدافعة عن توجّهها بالكلّيّة نحو البدن ويقيّد انجذابها نحو المادّة والكدورات الماديّة. فإنّ الأسباب الفاعلة لا يبعد أن تصير معزولة عن بعض ضروب الفاعليّة، مقهورة على ضرب آخر يقابل الضرب الأوّل بأسباب أخر قويّة."
     },
     {
       "id": "QT-056",
@@ -1877,7 +2059,7 @@ window.GNAMMA_QAWAID_MATN = {
         255
       ],
       "arabic": "ومن جعل المعارف العقليّة والعلوم اليقينيّة المستندة إلى البراهين القطعيّة، الحاصلة للإنسان المعتدل المزاج الذي لم تستول عليه الرذائل الطبيعيّة البدنيّة، من الخيالات الفاسدة والحجب المانعة للكمالات الحقيقيّة، لا نفسها ولا من الأسباب المعدّة بالنسبة إلى ما هو من الكمالات الحقيقيّة عنده، فمن الأولى، الأحقّ، الأخلق، أن تعدّه من زمرة المجانين وأصحاب الماليخولياء ومنكري العلوم الضروريّة. وأمّا تكرار بعض الألفاظ المعيّنة حال المراقبة فإنّما يكون سبباً لاستمرار ما ذكرنا من الملاحظة، وأمّا قوّة الصوت ومجاهرته فغير معتبرة عند أرباب الصناعة. وأمّا التخلّي عن الخلق وملازمة المواضع الخالية فإنّه أمر ضروريّ، لا يتصوّر بدونه تفريغ القلب عن الوساوس والشواغل المانعة، والتبرّي من العلائق المظلمة، والإقبال بكنه الهمّة على الله بالكلّيّة، كما لا يتصوّر بدونه استنباط العلوم الفكريّة اليقينيّة والمطالب البرهانيّة مجرّدة عن الشكوك والشبهات الوهميّة والخياليّة. ومن شرط في هذا الأمر وطريقه تناول الأغذية الرديّة فهو جاهل أو ممرور. نعم، إنّ من السالكين من يناسبه غذاء معيّن دون غذاء آخر، ومنهم من يكون على عكس ذلك، فإنّ الأمزجة مختلفة والصفات الذميمة الطبيعيّة الحاجبة بحسب ذلك أيضاً مختلفة. ولا شكّ أنّ التدبير بحسب الأغذية والأدوية وغيرهما في مداواة الأمراض النفسانيّة إنّما يختلف حسب اختلاف تلك العلل والأمراض، كما في العلل والأمراض البدنيّة. وأمّا الجوع الشديد والسهر المفرط فهو مذموم كلّ الذمّ في طريق التصوّف والمجاهدة، كما هو مذموم في طريق التعلّم والنظر. نعم، القدر المعتبر عندهم من الغذاء ما لا تسقط بقلّته القوّة ولا تستولي به على المزاج المرّة، ولا تعرض أذيّتها من الاضطراب والغفلة، ولا يوجب تكثّر الكسل ولا ثور الشهوة، ولا يوجب انصراف همّه عن جانب القدس وإقباله على الهضم والتغذية ودفع الفضول وتوليد البراز وما يشبه ذلك. وهكذا الكلام بعينه في النوم والسهر. وبالجملة فكلّ ما هو شرط في أحد الطريقين فهو شرط بعينه في الطريق الآخر. وأمّا ارتكاب الآلام والمشقّات وترك الراحات بالاختيار فلا يجوز إلّا بالنسبة إلى المستكمل الذي اعتاد الترفّه والتنعّم والراحة البدنيّة واستولت على مزاجه الشهوات، وغلب عليه أخلاق المخانيث والشهوات والنسوان. وهكذا الكلام بعينه في تحصيل الملكات المفيدة لهيئة الحزن والهمّ والبكاء وما يشبهها. وأمّا كسب الملكات المفيدة للذلّة وقلّة الحميّة والمسكنة وما يشبهها، فلا يجوز بالنسبة إلى المرتاضين الذين غلب على مزاجهم الغضب الشديد والعجب والتكبّر والقهر والسطوة وحبّ الجاه وما يشبهها. ولا شكّ أنّ معالجة الأمراض النفسانيّة والتخلّص عن الأخلاق الرديّة المهلكة وتجريد النفس عن العادات الخبيثة المظلمة لا يمكن بدون اتّصافها بملكات مرضيّة وعادات حسنة تقابل تلك الأخلاق الذميمة والصفات الخبيثة بمقابلاتها؛ فإنّ دفع أحد الضدّين لا يمكن إلّا بالضدّ الآخر، كما في معالجة الأمراض الجسمانيّة. ومن البيّن أنّ سورة أحد الضدّين متى انكسرت بسورة الضدّ الآخر حصلت هناك حالة متوسّطة قريبة من الاعتدال. والمزاج الذي استولت عليه الشهوة الخبيثة البهيميّة متى انكسرت الكيفيّة الموجبة لتلك الحالة بسورة الكيفيّة التي تقابلها مال إلى الحالة الاعتداليّة. وهكذا الكلام في المزاج الذي غلبت عليه شدّة القهر وحدّة الغضب، فإنّه متى انكسرت الكيفيّة المفيدة لتينك الحالتين بسورة الكيفيّة التي تقابلها مال إلى الحالة المتوسّطة، وإن لم يتّفق الوصول إلى حدّ الاعتدال الحقيقي. ولا يخفى عليك أنّ إخراج المزاج الواقع في الحدود المقابلة لحدّ الاعتدال إلى حدّ الاعتدال باستعمال القوانين المعتبرة في صناعتي الطبّ والحكمة لا يكون إسقاماً وتمريضاً للبدن، بل يكون بالحقيقة إبراءً وتقويةً للنفس والبدن وإفادةً لصحّتهما. ولا تتوهّم أنّ ما يكون علاجاً لمرض معيّن في محلّ جزئيّ بحسب وقت وحال معيّنين يكون علاجاً لسائر الأمراض الباقية، فإنّ الأمراض النفسانيّة إنّما يختصّ بعضها بالحدود الواقعة في جانب الإفراط، والبعض الآخر بالحدود الواقعة في جانب التفريط، على أنّ مداواة مرض معيّن إنّما تختلف بحسب اختلاف الأوقات والأحوال والموضوعات والعادات وما يشبهها. فتأمّل ذلك. واعلم أنّ مخالفة النفس بالمعنى الذي ذهب إليه العارفون كما يجب اعتبارها في طريق التصوّف، يجب أيضاً اعتبارها في طريق التعليم والنظر. وقد أشرنا إلى ذلك في كثير من المواضع فلا حاجة هاهنا إلى تكرار الكلام وتوضيح البيان، فاعرف ذلك.",
-      "english": "Whoever classes intellectual cognitions and certain sciences founded on conclusive demonstrations, attained by a person of balanced constitution who is not overwhelmed by bodily vices, among corrupt imaginings and veils to genuine perfection—neither themselves being such veils nor incapable of serving as preparatory conditions for the perfection at issue—deserves rather to be numbered among the mad, the melancholic, and those who deny necessary knowledge. Repetition of certain words during vigilant contemplation serves to sustain the attention described above; forceful or loud utterance is not an essential condition recognised by practitioners of the discipline. Withdrawal from people and remaining in solitude is needed to clear the heart of distracting thoughts, relinquish obscuring attachments, and devote one's whole concern to God. But the same freedom from distraction is required for deriving certain discursive knowledge and demonstrative conclusions without the intrusion of imaginative and estimative doubts. Whoever makes the consumption of unsuitable foods a condition of this path is ignorant or disturbed. Foods suitable to one traveller may harm another: constitutions differ, and so do the dispositions that obstruct them. Management of food and remedies for psychological disorders must therefore vary with the condition, just as treatment of bodily illnesses does. Severe hunger and excessive sleeplessness are thoroughly condemned in the path of Sufi discipline no less than in the path of teaching and investigation. The requisite food is that which sustains strength without upsetting the humours, producing heedlessness, lethargy or turbulent desire, or so occupying a person with digestion and bodily elimination that attention to higher things is lost. Sleep and wakefulness must be regulated by the same principle. In short, whatever condition is genuinely required for one of the two paths is required for the other. Voluntary suffering, hardships, and relinquishment of comforts are not permissible except for someone seeking perfection who is habituated to luxury and bodily ease, whose temperament is dominated by sensual appetites and the traits of effeminate men and women. The same qualified principle applies to cultivating dispositions of sorrow, concern, and tears. As for acquiring dispositions that produce abasement, diminished zeal, meekness, and the like, this is not permissible for practitioners whose temperaments are dominated by intense anger, conceit, pride, coercion, forcefulness, love of rank, and similar traits. Yet the explicit principle that follows is that destructive habits can only be cured through praiseworthy habits opposed to them. As the force of one contrary is broken by the force of its opposite, a condition nearer the mean arises. Where appetite predominates, an opposing disposition draws the temperament toward equilibrium; where violence and anger predominate, the appropriate contrary does likewise, even if complete balance is not attained. Restoring a disordered constitution toward equilibrium under the principles of medicine and practical wisdom is not making the soul and body ill, but healing and strengthening them. One must not imagine that a remedy suited to one disorder in one patient at one moment cures every disorder. Some psychological disorders arise through excess, others through deficiency; remedies vary according to persons, times, circumstances and habits. Reflect on this. Finally, 'opposing the lower soul', understood in the sense of the gnostics, is as necessary in teaching and rational inquiry as in Sufi practice. We have explained this elsewhere, so need not prolong the account here. Understand this.",
+      "english": "Whoever classes intellectual cognitions and certain sciences founded on conclusive demonstrations, attained by a person of balanced constitution who is not overwhelmed by bodily vices, among corrupt imaginings and veils to genuine perfection—neither themselves being such veils nor incapable of serving as preparatory conditions for the perfection at issue—deserves rather to be numbered among the mad, the melancholic, and those who deny necessary knowledge. Repetition of certain words during vigilant contemplation serves to sustain the attention described above; forceful or loud utterance is not an essential condition recognised by practitioners of the discipline. Withdrawal from people and remaining in solitude is needed to clear the heart of distracting thoughts, relinquish obscuring attachments, and devote one's whole concern to God. But the same freedom from distraction is required for deriving certain discursive knowledge and demonstrative conclusions without the intrusion of imaginative and estimative doubts. Whoever makes the consumption of unsuitable foods a condition of this path is ignorant or disturbed. Foods suitable to one traveller may harm another: constitutions differ, and so do the dispositions that obstruct them. Management of food and remedies for psychological disorders must therefore vary with the condition, just as treatment of bodily illnesses does. Severe hunger and excessive sleeplessness are thoroughly condemned in the path of Sufi discipline no less than in the path of teaching and investigation. The requisite food is that which sustains strength without upsetting the humours, producing heedlessness, lethargy or turbulent desire, or so occupying a person with digestion and bodily elimination that attention to higher things is lost. Sleep and wakefulness must be regulated by the same principle. In short, whatever condition is genuinely required for one of the two paths is required for the other. Voluntary suffering, hardships, and relinquishment of comforts are not permissible except for someone seeking perfection who is habituated to luxury and bodily ease, whose temperament is dominated by sensual appetites and the traits of effeminate men and women. The same qualified principle applies to cultivating dispositions of sorrow, concern, and tears. As for acquiring dispositions that produce abasement, diminished zeal, meekness, and the like, this is not permissible except for practitioners whose temperaments are dominated by intense anger, conceit, pride, coercion, forcefulness, love of rank, and similar traits. Yet the explicit principle that follows is that destructive habits can only be cured through praiseworthy habits opposed to them. As the force of one contrary is broken by the force of its opposite, a condition nearer the mean arises. Where appetite predominates, an opposing disposition draws the temperament toward equilibrium; where violence and anger predominate, the appropriate contrary does likewise, even if complete balance is not attained. Restoring a disordered constitution toward equilibrium under the principles of medicine and practical wisdom is not making the soul and body ill, but healing and strengthening them. One must not imagine that a remedy suited to one disorder in one patient at one moment cures every disorder. Some psychological disorders arise through excess, others through deficiency; remedies vary according to persons, times, circumstances and habits. Reflect on this. Finally, 'opposing the lower soul', understood in the sense of the gnostics, is as necessary in teaching and rational inquiry as in Sufi practice. We have explained this elsewhere, so need not prolong the account here. Understand this.",
       "notes": [
         "One lengthy ancestor's قال starts on p.252 and ends on p.255 before (1) أقول. The publisher's Persian note interrupting the quotation at p.254–255 is excluded, as is the long grandson's commentary after the closing marker.",
         "This is the author's express reversal of QT-047: spiritual practice is not intrinsically pathological, excess hunger and wakefulness are condemned, and the moral equilibrium required for sound knowledge is also required for philosophy.",
@@ -1887,7 +2069,8 @@ window.GNAMMA_QAWAID_MATN = {
         "The sections on humours, temperament, food, sleeplessness, and treatment of mental conditions describe premodern theories; this is not advice to pursue restrictive diets or intense ascetic practices.",
         "The reference to «أخلاق المخانيث والشهوات والنسوان» is historically gendered, disparaging authorial language; the translation preserves the author's reference rather than silently omitting it, without endorsing the classification.",
         "Clause audit (9 Nov 2026): restored translations of explicit authorial imperatives «فتأمّل ذلك» and «فاعرف ذلك». The reported «فلا يجوز» before the anger/pride case remains a source-level crux; no conjectural negation has been inserted.",
-        "Literal-negation audit (9 Nov 2026): the A-derived Arabic explicitly reads «فلا يجوز بالنسبة إلى المرتاضين» in the anger/pride example; the English now renders 'this is not permissible', however anomalous in the surrounding therapy-of-opposites argument. It is a textual crux, not an editorial endorsement or a conjecturally corrected «إلا». The translation keeps the author's historically gendered terminology in prose, with editorial qualification only in a note."
+        "Literal-negation audit (9 Nov 2026): the A-derived Arabic explicitly reads «فلا يجوز بالنسبة إلى المرتاضين» in the anger/pride example; the English now renders 'this is not permissible', however anomalous in the surrounding therapy-of-opposites argument. It is a textual crux, not an editorial endorsement or a conjecturally corrected «إلا». The translation keeps the author's historically gendered terminology in prose, with editorial qualification only in a note.",
+        "Qawtaw7 / H2014 H2014/2:539, H2014/2:540: supported reading. Preferred: «فلا يجوز إلا بالنسبة إلى المرتاضين». The complete printed lemma explicitly includes إلا. This supplies positive textual evidence for the formerly conjectural exception and restores the therapy-of-opposites argument. It is not a universal endorsement of abasement and not current clinical advice. The A/N electronic wording remains preserved in the witness apparatus."
       ],
       "variants": [
         {
@@ -1921,7 +2104,27 @@ window.GNAMMA_QAWAID_MATN = {
         "authorialBoundaryIndependentCheck": false,
         "apparatusStatus": "provisional",
         "knownLacuna": false
-      }
+      },
+      "witnessComparisons": [
+        {
+          "stage": "Qawtaw7",
+          "number": 10,
+          "status": "supported-reading",
+          "printedComparator": "H2014",
+          "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+          "sourceLocations": [
+            "H2014/2:539",
+            "H2014/2:540"
+          ],
+          "sourceExcerpt": "وأمّا كسب الملكات المفيدة للذلّة وقلّة الحميّة والمسكنة وما يشبهها، فلا يجوز بالنسبة إلى المرتاضين الذين غلب على مزاجهم الغضب الشديد والعجب والتكبّر والقهر والسطوة وحبّ الجاه وما يشبهها.",
+          "preferredReading": "فلا يجوز إلا بالنسبة إلى المرتاضين",
+          "interpretation": "Cultivating the countervailing dispositions is not permissible except for practitioners dominated by intense anger, conceit, pride, coercion, forcefulness and love of rank.",
+          "editorialDecision": "The complete printed lemma explicitly includes إلا. This supplies positive textual evidence for the formerly conjectural exception and restores the therapy-of-opposites argument. It is not a universal endorsement of abasement and not current clinical advice.",
+          "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+          "manuscriptCollation": false
+        }
+      ],
+      "readingArabic": "ومن جعل المعارف العقليّة والعلوم اليقينيّة المستندة إلى البراهين القطعيّة، الحاصلة للإنسان المعتدل المزاج الذي لم تستول عليه الرذائل الطبيعيّة البدنيّة، من الخيالات الفاسدة والحجب المانعة للكمالات الحقيقيّة، لا نفسها ولا من الأسباب المعدّة بالنسبة إلى ما هو من الكمالات الحقيقيّة عنده، فمن الأولى، الأحقّ، الأخلق، أن تعدّه من زمرة المجانين وأصحاب الماليخولياء ومنكري العلوم الضروريّة. وأمّا تكرار بعض الألفاظ المعيّنة حال المراقبة فإنّما يكون سبباً لاستمرار ما ذكرنا من الملاحظة، وأمّا قوّة الصوت ومجاهرته فغير معتبرة عند أرباب الصناعة. وأمّا التخلّي عن الخلق وملازمة المواضع الخالية فإنّه أمر ضروريّ، لا يتصوّر بدونه تفريغ القلب عن الوساوس والشواغل المانعة، والتبرّي من العلائق المظلمة، والإقبال بكنه الهمّة على الله بالكلّيّة، كما لا يتصوّر بدونه استنباط العلوم الفكريّة اليقينيّة والمطالب البرهانيّة مجرّدة عن الشكوك والشبهات الوهميّة والخياليّة. ومن شرط في هذا الأمر وطريقه تناول الأغذية الرديّة فهو جاهل أو ممرور. نعم، إنّ من السالكين من يناسبه غذاء معيّن دون غذاء آخر، ومنهم من يكون على عكس ذلك، فإنّ الأمزجة مختلفة والصفات الذميمة الطبيعيّة الحاجبة بحسب ذلك أيضاً مختلفة. ولا شكّ أنّ التدبير بحسب الأغذية والأدوية وغيرهما في مداواة الأمراض النفسانيّة إنّما يختلف حسب اختلاف تلك العلل والأمراض، كما في العلل والأمراض البدنيّة. وأمّا الجوع الشديد والسهر المفرط فهو مذموم كلّ الذمّ في طريق التصوّف والمجاهدة، كما هو مذموم في طريق التعلّم والنظر. نعم، القدر المعتبر عندهم من الغذاء ما لا تسقط بقلّته القوّة ولا تستولي به على المزاج المرّة، ولا تعرض أذيّتها من الاضطراب والغفلة، ولا يوجب تكثّر الكسل ولا ثور الشهوة، ولا يوجب انصراف همّه عن جانب القدس وإقباله على الهضم والتغذية ودفع الفضول وتوليد البراز وما يشبه ذلك. وهكذا الكلام بعينه في النوم والسهر. وبالجملة فكلّ ما هو شرط في أحد الطريقين فهو شرط بعينه في الطريق الآخر. وأمّا ارتكاب الآلام والمشقّات وترك الراحات بالاختيار فلا يجوز إلّا بالنسبة إلى المستكمل الذي اعتاد الترفّه والتنعّم والراحة البدنيّة واستولت على مزاجه الشهوات، وغلب عليه أخلاق المخانيث والشهوات والنسوان. وهكذا الكلام بعينه في تحصيل الملكات المفيدة لهيئة الحزن والهمّ والبكاء وما يشبهها. وأمّا كسب الملكات المفيدة للذلّة وقلّة الحميّة والمسكنة وما يشبهها، فلا يجوز إلّا بالنسبة إلى المرتاضين الذين غلب على مزاجهم الغضب الشديد والعجب والتكبّر والقهر والسطوة وحبّ الجاه وما يشبهها. ولا شكّ أنّ معالجة الأمراض النفسانيّة والتخلّص عن الأخلاق الرديّة المهلكة وتجريد النفس عن العادات الخبيثة المظلمة لا يمكن بدون اتّصافها بملكات مرضيّة وعادات حسنة تقابل تلك الأخلاق الذميمة والصفات الخبيثة بمقابلاتها؛ فإنّ دفع أحد الضدّين لا يمكن إلّا بالضدّ الآخر، كما في معالجة الأمراض الجسمانيّة. ومن البيّن أنّ سورة أحد الضدّين متى انكسرت بسورة الضدّ الآخر حصلت هناك حالة متوسّطة قريبة من الاعتدال. والمزاج الذي استولت عليه الشهوة الخبيثة البهيميّة متى انكسرت الكيفيّة الموجبة لتلك الحالة بسورة الكيفيّة التي تقابلها مال إلى الحالة الاعتداليّة. وهكذا الكلام في المزاج الذي غلبت عليه شدّة القهر وحدّة الغضب، فإنّه متى انكسرت الكيفيّة المفيدة لتينك الحالتين بسورة الكيفيّة التي تقابلها مال إلى الحالة المتوسّطة، وإن لم يتّفق الوصول إلى حدّ الاعتدال الحقيقي. ولا يخفى عليك أنّ إخراج المزاج الواقع في الحدود المقابلة لحدّ الاعتدال إلى حدّ الاعتدال باستعمال القوانين المعتبرة في صناعتي الطبّ والحكمة لا يكون إسقاماً وتمريضاً للبدن، بل يكون بالحقيقة إبراءً وتقويةً للنفس والبدن وإفادةً لصحّتهما. ولا تتوهّم أنّ ما يكون علاجاً لمرض معيّن في محلّ جزئيّ بحسب وقت وحال معيّنين يكون علاجاً لسائر الأمراض الباقية، فإنّ الأمراض النفسانيّة إنّما يختصّ بعضها بالحدود الواقعة في جانب الإفراط، والبعض الآخر بالحدود الواقعة في جانب التفريط، على أنّ مداواة مرض معيّن إنّما تختلف بحسب اختلاف الأوقات والأحوال والموضوعات والعادات وما يشبهها. فتأمّل ذلك. واعلم أنّ مخالفة النفس بالمعنى الذي ذهب إليه العارفون كما يجب اعتبارها في طريق التصوّف، يجب أيضاً اعتبارها في طريق التعليم والنظر. وقد أشرنا إلى ذلك في كثير من المواضع فلا حاجة هاهنا إلى تكرار الكلام وتوضيح البيان، فاعرف ذلك."
     },
     {
       "id": "QT-057",
@@ -2002,7 +2205,8 @@ window.GNAMMA_QAWAID_MATN = {
         "SOURCE NOTE — DEFERRED, NOT RECONSTRUCTED: The extant digital transcription of Āshtiyānī printed pp.262–264 supplies the surviving words translated here. Its earlier editorial apparatus reportedly notes omitted original material (possibly exceeding a printed page). No additional Arabic is recoverable from the transcription currently in the working file. Preserve this passage without inserting speculative words, and leave recovery for independent textual witnesses. A fresh attempted site access on 3 Nov 2026 was unsuccessful; no new missing text was directly verified.",
         "Starts قال on p.262 and runs across p.263, closing with 'وأما الثاني ...' on p.264 before (1) أقول. The grandson's lengthy later 'وأما بيان الثاني' at p.266 explains the missing argument but is NOT independently proven to be the grandfather's exact original and has been excluded.",
         "Material corruption near p.263: the 1st conditional's reading 'وحينئذ لم تعلّق به' is syntactically difficult; a stronger inference may be intended. It is not silently repaired.",
-        "Technically: the senses are causes of iʿdād (preparation), NOT sources that efficiently bestow intelligible forms (ifāḍa). Both routes receive knowledge from the effusive Principle; this does not erase differences in their immediate psychological operations."
+        "Technically: the senses are causes of iʿdād (preparation), NOT sources that efficiently bestow intelligible forms (ifāḍa). Both routes receive knowledge from the effusive Principle; this does not erase differences in their immediate psychological operations.",
+        "Qawtaw7 / H2014 H2014/2:571, H2014/2:572: deferred lacuna. Preferred: «وأما الثاني ... فلما بيناه في كتبنا المعمولة في صناعة الحكمة». The printed matn has the same transition and does not recover the reported missing ancestral passage. A smooth continuation in this modern edition is not proof that the separate ancestral text is complete. The A/N electronic wording remains preserved in the witness apparatus."
       ],
       "variants": [
         {
@@ -2025,7 +2229,26 @@ window.GNAMMA_QAWAID_MATN = {
         "notes": "Source-reported omission noted; extant quotation retained; reconstruction explicitly deferred. No new source material checked on 2026-11-03.",
         "lacunaDisposition": "noted-and-deferred-no-invented-reconstruction",
         "workingTranslationCompleteForAvailableLemma": true
-      }
+      },
+      "witnessComparisons": [
+        {
+          "stage": "Qawtaw7",
+          "number": 11,
+          "status": "deferred-lacuna",
+          "printedComparator": "H2014",
+          "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+          "sourceLocations": [
+            "H2014/2:571",
+            "H2014/2:572"
+          ],
+          "sourceExcerpt": "وأمّا الثاني فلما بيّنّاه في كتبنا المعمولة في صناعة الحكمة.",
+          "preferredReading": "وأما الثاني ... فلما بيناه في كتبنا المعمولة في صناعة الحكمة",
+          "interpretation": "The second proposition is referred to the author’s philosophical writings; no replacement ancestral text is supplied.",
+          "editorialDecision": "The printed matn has the same transition and does not recover the reported missing ancestral passage. A smooth continuation in this modern edition is not proof that the separate ancestral text is complete.",
+          "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+          "manuscriptCollation": false
+        }
+      ]
     },
     {
       "id": "QT-060",
@@ -2035,13 +2258,15 @@ window.GNAMMA_QAWAID_MATN = {
         267
       ],
       "arabic": "على أنّا نقول: إنّ العلوم كلّها موجودة فينا، لما ستعرفه لو تأمّلت في المباحث السالفة، لكنّها مخفيّة بالحجب المانعة عن الظهور. ولا يخفى عليك أنّ ظهورها تارة يكون بالحركات اللطيفة الفكريّة الروحانيّة بعد تسليط القوّة القدسيّة على قوّتي الوهميّة والمتخيّلة وسائر القوى الجسمانيّة وتهذيب الأخلاق وتزيين النفس بالأخلاق الحسنة، وتارة أخرى بتسكين المتخيّلة والمتوهّمة وإلجامهما ومنعهما عن الحركات المضطربة المشوّشة بعد تسخير القوى الجسمانيّة بالتزكية والتصفية. وكلا الطريقين حقّ عند أكثر المحقّقين من أهل النظر وأصحاب المجاهدة. [شعر] خذ أبطن هرشى أو قفاها فإنّه * كلا جانبي هرشى لهنّ طريق. ومن اعتقد أنّه لا اعتبار بالتزكية والتصفية في طريق التعليم والنظر، ركب متن الهوى والهوس حسب هذه العقيدة الفاسدة، وغلبت على نفسه الشهوة والغضب، واستولت عليه الرذائل الطبيعيّة المهلكة، وحُرمت عليها الفضائل الملكيّة المحبّيّة، واشتغل بقراءة كتب مقلّدي الفلاسفة وزبر المتكلّمين من أصحاب الجدل والمشاغبة، وضيّع عمره في ضبط الآراء المتناقضة وحفظ الأحوال والأقوال المتقابلة، فوقع نفسه في لجج الخيالات الفاسدة والأوهام الباطلة، عند تلاطم أمواج الشكوك والشبهات المغرقة. فاضمحلّ نور قلبه وعميت بصيرته بتراكم الكدورات المظلمة والعقائد الفاسدة، وازداد فيه الجهل والتردّد وحصل له البهت والتحيّر، ولا يدري أين يذهب، فلحق به من الحقّ الغضب، وظنّ أنّ الكمال ما حصل له ووصل إليه، وليس وراءه حالة مرغوبة كماليّة ولا سعادة باقية، فليتقِ خبث هذه العقيدة ووجه ضررها من لطفه وليستعذ به من مكره وغضبه.",
-      "english": "We further say that all the sciences are already present within us, as reflection upon the earlier discussions will show, but they remain hidden behind veils preventing their manifestation. They can become manifest in one way through subtle, spiritual movements of discursive thought, after the holy faculty has been given mastery over estimation, imagination, and the other bodily faculties and after the character has been refined and the soul adorned with good qualities. They can become manifest in another way through stilling estimation and imagination, bridling them and restraining their confused movements once the bodily faculties have been disciplined through purification and clarification. Most accomplished investigators, whether rational scholars or practitioners of spiritual exertion, accept both paths as legitimate. As the quoted verse puts it: 'Take the inner slope of Harshā or its far side: either side affords a path.' Someone who believes that purification and refinement of character have no place in teaching and rational inquiry follows caprice and whim. Appetite and anger dominate the soul, destructive natural vices take possession of it, and angelic, loving virtues are denied to it. Such a person devotes himself to the books of imitators of philosophers and to contentious theologians, wasting his life memorising contradictory opinions and rival statements. Tossed into a sea of corrupt imaginings and false suppositions amid overwhelming waves of doubts, the light of his heart fades and his insight is blinded by the accumulation of obscuring conditions and false beliefs. Ignorance and hesitation intensify; perplexity takes hold; he no longer knows which way to turn, and the wrath of the Real overtakes him. Yet he supposes that the learning he has acquired is the whole of perfection and that there is no more desirable state or abiding felicity beyond it. Let him recognise, through God's grace, the corruption and harm of this belief, and seek refuge in Him from His devising and wrath.",
+      "english": "We further say that all the sciences are already present within us, as reflection upon the earlier discussions will show, but they remain hidden behind veils preventing their manifestation. They can become manifest in one way through subtle, spiritual movements of discursive thought, after the holy faculty has been given mastery over estimation, imagination, and the other bodily faculties and after the character has been refined and the soul adorned with good qualities. They can become manifest in another way through stilling estimation and imagination, bridling them and restraining their confused movements once the bodily faculties have been disciplined through purification and clarification. Most accomplished investigators, whether rational scholars or practitioners of spiritual exertion, accept both paths as legitimate. As the quoted verse puts it: 'Take the inner slope of Harshā or its far side: either side affords a path.' Someone who believes that purification and refinement of character have no place in teaching and rational inquiry follows caprice and whim. Appetite and anger dominate the soul, destructive natural vices take possession of it, and angelic, loving virtues are denied to it. Such a person devotes himself to the books of imitators of philosophers and to contentious theologians, wasting his life memorising contradictory opinions and rival statements. Tossed into a sea of corrupt imaginings and false suppositions amid overwhelming waves of doubts, the light of his heart fades and his insight is blinded by the accumulation of obscuring conditions and false beliefs. Ignorance and hesitation intensify; perplexity takes hold; he no longer knows which way to turn, and the wrath of the Real overtakes him. Yet he supposes that the learning he has acquired is the whole of perfection and that there is no more desirable state or abiding felicity beyond it. Let him recognize, through God's grace, the corruption and harm of this belief, and seek refuge in Him from His devising and wrath.",
       "notes": [
         "Original قال starts near bottom of p.266 and concludes on p.267 before (1) أقول. The grandson's explanatory 'two ways' model on pp.267–269 is kept separate.",
         "The ancestor explicitly asserts 'وكلا الطريقين حق', offering contemplative stillness and active disciplined intellectual motion as complementary ways; both require moral purification. The internal poetic verse is part of the quotation, not the grandson's note.",
         "The verse's Harshā is a toponym/metaphor for two approaches, not a mathematical claim that the paths are identical in every respect. The broader polemic attacks bookish disputation unaccompanied by moral reform, not learning or logic as such.",
         "Printed variants p.267 فوقع/فأوقع, the doubtful word المفرفة/muġriqa, and p.267's imperative فيتقن ... (possibly فليتقِ) have not been settled by manuscripts. English renders the intended admonition while retaining the printed dilemma in notes.",
-        "Clause audit (9 Nov 2026), A printed p.267: the distinct phrase «فلحق به من الحقّ الغضب» is now rendered explicitly; it was previously omitted. The digital A base closes «فيتقن ... من لطفه واستعد به من مكره وغضبه», whereas the provisional reader adopts conjectural «فليتقِ ... وليستعذ». The final English is an interpretative rendition, not an attested manuscript restoration. Keep both digital-base and proposed readings visible in the apparatus."
+        "Clause audit (9 Nov 2026), A printed p.267: the distinct phrase «فلحق به من الحقّ الغضب» is now rendered explicitly; it was previously omitted. The digital A base closes «فيتقن ... من لطفه واستعد به من مكره وغضبه», whereas the provisional reader adopts conjectural «فليتقِ ... وليستعذ». The final English is an interpretative rendition, not an attested manuscript restoration. Keep both digital-base and proposed readings visible in the apparatus.",
+        "Qawtaw7 / H2014 H2014/2:581: partial resolution. Preferred: «المغرقة; فوقع نفسه retained». H2014 confirms المغرقة over the damaged digital المفرفة, but does not independently support the conjectural causative فأوقع. The A/N electronic wording remains preserved in the witness apparatus.",
+        "Qawtaw7 / H2014 H2014/2:582: supported reading. Preferred: «فتيقّن خبث هذه العقيدة ووجه ضررها من لطفه، واستعذ به من مكره وغضبه». The print has second-person imperatives فتيقّن and استعذ. This is not the reader’s conjectural third-person فليتقِ ... وليستعذ, nor the defective electronic فيتقن ... واستعد. Vocalization/punctuation here are editorial normalization. The A/N electronic wording remains preserved in the witness apparatus."
       ],
       "variants": [
         {
@@ -2075,7 +2300,42 @@ window.GNAMMA_QAWAID_MATN = {
         "authorialBoundaryIndependentCheck": false,
         "apparatusStatus": "provisional",
         "knownLacuna": false
-      }
+      },
+      "witnessComparisons": [
+        {
+          "stage": "Qawtaw7",
+          "number": 12,
+          "status": "partial-resolution",
+          "printedComparator": "H2014",
+          "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+          "sourceLocations": [
+            "H2014/2:581"
+          ],
+          "sourceExcerpt": "فوقع نفسه في لجج الخيالات الفاسدة والأوهام الباطلة، عند تلاطم أمواج الشكوك والشبهات المغرقة. فاضمحلّ نور قلبه وعميت بصيرته بتراكم الكدورات المظلمة والعقائد الفاسدة،",
+          "preferredReading": "المغرقة; فوقع نفسه retained",
+          "interpretation": "Drowning/overwhelming waves of doubts. The construction فوقع نفسه is also printed and remains grammatically questionable.",
+          "editorialDecision": "H2014 confirms المغرقة over the damaged digital المفرفة, but does not independently support the conjectural causative فأوقع.",
+          "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+          "manuscriptCollation": false
+        },
+        {
+          "stage": "Qawtaw7",
+          "number": 13,
+          "status": "supported-reading",
+          "printedComparator": "H2014",
+          "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+          "sourceLocations": [
+            "H2014/2:582"
+          ],
+          "sourceExcerpt": "فليتقِ خبث هذه العقيدة ووجه ضررها من لطفه وليستعذ به من مكره وغضبه.",
+          "preferredReading": "فتيقّن خبث هذه العقيدة ووجه ضررها من لطفه، واستعذ به من مكره وغضبه",
+          "interpretation": "Recognize, through His gracious aid, the corruption of this belief and the way it harms, and seek refuge in Him from His devising and wrath.",
+          "editorialDecision": "The print has second-person imperatives فتيقّن and استعذ. This is not the reader’s conjectural third-person فليتقِ ... وليستعذ, nor the defective electronic فيتقن ... واستعد. Vocalization/punctuation here are editorial normalization.",
+          "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+          "manuscriptCollation": false
+        }
+      ],
+      "readingArabic": "على أنّا نقول: إنّ العلوم كلّها موجودة فينا، لما ستعرفه لو تأمّلت في المباحث السالفة، لكنّها مخفيّة بالحجب المانعة عن الظهور. ولا يخفى عليك أنّ ظهورها تارة يكون بالحركات اللطيفة الفكريّة الروحانيّة بعد تسليط القوّة القدسيّة على قوّتي الوهميّة والمتخيّلة وسائر القوى الجسمانيّة وتهذيب الأخلاق وتزيين النفس بالأخلاق الحسنة، وتارة أخرى بتسكين المتخيّلة والمتوهّمة وإلجامهما ومنعهما عن الحركات المضطربة المشوّشة بعد تسخير القوى الجسمانيّة بالتزكية والتصفية. وكلا الطريقين حقّ عند أكثر المحقّقين من أهل النظر وأصحاب المجاهدة. [شعر] خذ أبطن هرشى أو قفاها فإنّه * كلا جانبي هرشى لهنّ طريق. ومن اعتقد أنّه لا اعتبار بالتزكية والتصفية في طريق التعليم والنظر، ركب متن الهوى والهوس حسب هذه العقيدة الفاسدة، وغلبت على نفسه الشهوة والغضب، واستولت عليه الرذائل الطبيعيّة المهلكة، وحُرمت عليها الفضائل الملكيّة المحبّيّة، واشتغل بقراءة كتب مقلّدي الفلاسفة وزبر المتكلّمين من أصحاب الجدل والمشاغبة، وضيّع عمره في ضبط الآراء المتناقضة وحفظ الأحوال والأقوال المتقابلة، فوقع نفسه في لجج الخيالات الفاسدة والأوهام الباطلة، عند تلاطم أمواج الشكوك والشبهات المغرقة. فاضمحلّ نور قلبه وعميت بصيرته بتراكم الكدورات المظلمة والعقائد الفاسدة، وازداد فيه الجهل والتردّد وحصل له البهت والتحيّر، ولا يدري أين يذهب، فلحق به من الحقّ الغضب، وظنّ أنّ الكمال ما حصل له ووصل إليه، وليس وراءه حالة مرغوبة كماليّة ولا سعادة باقية، فتيقّن خبث هذه العقيدة ووجه ضررها من لطفه، واستعذ به من مكره وغضبه."
     },
     {
       "id": "QT-061",
@@ -2093,7 +2353,8 @@ window.GNAMMA_QAWAID_MATN = {
         "Printed p.270 has تهذيب الأخلاق وترتيبها / وتزيينها; the ethical exercise is an integral prerequisite, not a decorative addition. The teacher exception is explicit; it cannot simply be erased to make the author a purely rationalist.",
         "This establishes the END of the transmitted quoted treatise in this edition, not independent completeness of a manuscript critical text (cf. the loss reported in QT-059).",
         "Fahares/FANKHĀ work-level catalogue explicit includes «وهذا آخر ما اردنا ان نورده فی هذه الرساله و الحمدلله رب العالمین» and adjacent terms, confirming the bibliographical work's ending matches the quoted ending on printed p.270. This is NOT evidence that the intervening original is complete nor individually independently read manuscript explicits. See editorial/MANUSCRIPT_COLLATION_DOSSIER.md.",
-        "Lexical review (9 Nov 2026), A p.270: «شيخ مكمّل» is an active participle, a master who helps perfect another, not merely «مكمَّل», a master already perfected. The translated adjective now reflects that agency."
+        "Lexical review (9 Nov 2026), A p.270: «شيخ مكمّل» is an active participle, a master who helps perfect another, not merely «مكمَّل», a master already perfected. The translated adjective now reflects that agency.",
+        "Qawtaw7 / H2014 H2014/2:591, H2014/2:592, H2014/2:593: unresolved. Preferred: «غير المتسقة المنتظمة». H2014 repeats the difficult wording in the lemma. Its modern explanation simplifies it to غير المنتظمة. That clarifies the interpretation but does not establish حذف المنتظمة or insert a conjunction in the medieval text. The A/N electronic wording remains preserved in the witness apparatus."
       ],
       "variants": [
         {
@@ -2126,7 +2387,27 @@ window.GNAMMA_QAWAID_MATN = {
           "countedAsManuscriptCollation": false,
           "url": "https://www.fahares.net/w/51946"
         }
-      }
+      },
+      "witnessComparisons": [
+        {
+          "stage": "Qawtaw7",
+          "number": 14,
+          "status": "unresolved",
+          "printedComparator": "H2014",
+          "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+          "sourceLocations": [
+            "H2014/2:591",
+            "H2014/2:592",
+            "H2014/2:593"
+          ],
+          "sourceExcerpt": "ومتى عرفت هذا فنقول: لا بدّ للسالكين من أصحاب المجاهدة أن يحصّلوا العلوم الحقيقيّة الفكريّة النظريّة أوّلاً، بعد تصفية القلب بقطع العلائق المكدّرة المظلمة وتهذيب الأخلاق وترتيبها، حتّى تصير هذه العلوم النظريّة التي تكون من جملتها الصناعة الآليّة المميّزة بالنسبة إلى المعارف الذوقيّة كالعلم الآلي المنطقي بالنسبة إلى العلوم النظريّة غير المتّسقة المنتظمة.",
+          "preferredReading": "غير المتسقة المنتظمة",
+          "interpretation": "The analogy concerns logic’s ordering of theoretical knowledge, but the juxtaposition of the negative with the two participles is still textually awkward.",
+          "editorialDecision": "H2014 repeats the difficult wording in the lemma. Its modern explanation simplifies it to غير المنتظمة. That clarifies the interpretation but does not establish حذف المنتظمة or insert a conjunction in the medieval text.",
+          "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+          "manuscriptCollation": false
+        }
+      ]
     }
   ],
   "criticalEdition": {

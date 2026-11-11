@@ -2263,7 +2263,7 @@
 | 1–2 | 1–2 | checked | The weaker traveller's conviction and halt are attributed to a difference in preparedness. |
 | 3–6 | 3–4 | checked | The stronger traveller criticizes confinement to an attained object, not the object as such. |
 | 7–9 | 5–5 | checked | Concessive فرض التسليم and counterfactual instrument of discrimination are retained. |
-| 10–12 | 6–7 | corrected-with-source-crux | English now retains distinguishing some contents from others. Final Arabic البعض/النقص apparatus remains unresolved. |
+| 10–12 | 6–7 | corrected-with-source-crux | H2014 II:596 omits A's part-to-part wording here. The present English follows H as a working reading; A remains preserved. No independent original manuscript collation. |
 
 ### SH-061-F — A, printed pp. 272–273
 

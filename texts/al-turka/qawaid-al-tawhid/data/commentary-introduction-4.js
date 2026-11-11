@@ -71,7 +71,9 @@ window.GNAMMA_TAMHID_INTRO = (window.GNAMMA_TAMHID_INTRO || []).concat([
       "The long syntax around المفهمة المقومة is construed provisionally. No claim is made to a diplomatically established text.",
       "The retained N text’s «بحسب الأمر بعينه المفهمة المقومة» and «ومن تصور تعيناته» are syntactically strained. The English construes intrinsic judgements and forms of determinations contextually; no independent source-image correction is claimed.",
       "Electronic-text comparison (2026-11-11): Strained sequence بحسب الأمر بعينه المفهمة المقومة is construed as intrinsic intelligible judgements; exact syntax not certified.",
-      "Electronic-text comparison (2026-11-11): Retained تصور تعيناته rendered forms of determinations as though صور; source uncertainty remains."
+      "Electronic-text comparison (2026-11-11): Retained تصور تعيناته rendered forms of determinations as though صور; source uncertainty remains.",
+      "Qawtaw7 / H2014 H2014/1:170: supported reading. Preferred: «بحسب الأمر بعينه أو المقومة لها والمميزة إياها في ذاتها». The comparator provides a coherent alternative to the electronic string المفهمة المقومة. Retain its disjunctive أو; do not claim an independently recovered manuscript text. The A/N electronic wording remains preserved in the witness apparatus.",
+      "Qawtaw7 / H2014 H2014/1:170: supported reading. Preferred: «ومن صور تعيناته في هذه النشأة». صور is explicit in the printed quotation. The A/N electronic wording remains preserved in the witness apparatus."
     ],
     "comparativeReview": {
       "date": "2026-11-11",
@@ -80,7 +82,42 @@ window.GNAMMA_TAMHID_INTRO = (window.GNAMMA_TAMHID_INTRO || []).concat([
       "manuscriptCollation": false,
       "independentHumanCertification": false,
       "hasUnresolvedReadings": true
-    }
+    },
+    "witnessComparisons": [
+      {
+        "stage": "Qawtaw7",
+        "number": 17,
+        "status": "supported-reading",
+        "printedComparator": "H2014",
+        "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+        "sourceLocations": [
+          "H2014/1:170"
+        ],
+        "sourceExcerpt": "حتى يتمكن من تميز الأحكام الحقة التي لها بحسب الأمر بعينه المفهمة المقومة لها والمميزة إياها في ذاتها عن غيرها من اللواحق العارضة لها باعتبار المجالي والمراتب؛",
+        "preferredReading": "بحسب الأمر بعينه أو المقومة لها والمميزة إياها في ذاتها",
+        "interpretation": "Distinguish the true judgements belonging to things as they are, or constituting and distinguishing them in themselves, from accidental features of their loci and degrees.",
+        "editorialDecision": "The comparator provides a coherent alternative to the electronic string المفهمة المقومة. Retain its disjunctive أو; do not claim an independently recovered manuscript text.",
+        "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+        "manuscriptCollation": false
+      },
+      {
+        "stage": "Qawtaw7",
+        "number": 18,
+        "status": "supported-reading",
+        "printedComparator": "H2014",
+        "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+        "sourceLocations": [
+          "H2014/1:170"
+        ],
+        "sourceExcerpt": "وهذه القوة من آثار ما أشير إليه آنفا بأنه أول فعل الحق العقل الأول ومن تصور تعيناته في هذه النشأة،",
+        "preferredReading": "ومن صور تعيناته في هذه النشأة",
+        "interpretation": "And among the forms of its determinations in this realm.",
+        "editorialDecision": "صور is explicit in the printed quotation.",
+        "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+        "manuscriptCollation": false
+      }
+    ],
+    "readingArabic": "أما إذا اعتبر معه الهوية اللاحقة له باعتبار حصوله في العقل، تتحقق حينئذ باعتبار هذه الهوية العرضية التي إنما تلحقه بالنظر إلى الخارج عن تعينه المنافاة بينه وبين الذات، ولا شك أن العوارض اللاحقة للأشياء باعتبار الأمور الخارجة عن أنفسها، لا دخل لها في الأحكام الذاتية، وما يعرض تلك الأشياء لذواتها، وإلا يلزم أن لا يكون شيء من المفهومات باقيا على كليتها عند تصورها؛ إذ كل ما حصل في العقل باعتبار حصوله فيه جزئي، وهذا من مقتضى الحكمة البالغة أنه قد جعل الله للعقل قوة خاصة وغريزة بها يتصور المفهومات الحاصلة فيه كما هي هي معراة عن اللواحق الطارئة لها باعتبار حصولها العرضي وتقيداتها التابعة للمحال الجزئية؛ حتى يتمكن من تميز الأحكام الحقة التي لها بحسب الأمر بعينه أو المقومة لها والمميزة إياها في ذاتها عن غيرها من اللواحق العارضة لها باعتبار المجالي والمراتب؛ ليقدر بذلك على تصور الأشياء على ما هي عليه في الوجود، والتجلي بالحقائق كما هي هي، وهذه القوة من آثار ما أشير إليه آنفا بأنه أول فعل الحق العقل الأول ومن صور تعيناته في هذه النشأة، فتنبه."
   },
   {
     "id": "SH-INTRO-036",

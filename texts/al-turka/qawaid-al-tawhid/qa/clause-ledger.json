@@ -1102,7 +1102,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 2
+      "sourceWarnings": 3
     },
     {
       "id": "QT-009",
@@ -2579,7 +2579,7 @@
       "sourceLocator": "A pp. 95",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/291?lang=ar",
       "arabicSha256": "64b9ff4b316161e8c4c3d6595bec470f4061715b2d2fd83db4a534e63defa702",
-      "englishSha256": "ddec432f36c9e3796c3f34e1de8bad6fcc9fb36ea4627cfcc9f3c49566ccc570",
+      "englishSha256": "d124e029ba011211aa3329da5a0ec3a6645ab2b2b68e9d41b06a1022301ccfab",
       "arabicClauses": [
         {
           "n": 1,
@@ -2746,7 +2746,7 @@
             "englishSentenceEnd": 5,
             "note": "Printed conclusion به عين حقيقة and ملزومه retain textual/grammatical strain; the English follows commentary as provisional rather than establishing a manuscript reading."
           },
-          "englishCorrespondence": "If it admits no intellectual instances for any of the reasons given, then either its reality differs from the realities of the particular possible existences in external reality—in which case the term “existence” would apply to them only equivocally—or it does not differ from them, in which case the possible existences themselves would possess intrinsic necessity.’ We reply: the supposed underlying necessary nature must, for the reasons already given, differ from external existence and what underlies it. That does not apply to existence necessary through itself, subsisting through itself, and distinguished from everything else by its very reality.",
+          "englishCorrespondence": "If it admits no intellectual instances for any of the reasons given, then either its reality differs from the realities of the particular possible existences in external reality—in which case the term “existence” would apply to them only equivocally—or it does not differ from them, in which case the possible existences themselves would possess intrinsic necessity.’ We reply: the supposed underlying necessary nature must, for the reasons already given, differ from external existence and be its underlying bearer. That does not apply to existence necessary through itself, subsisting through itself, and distinguished from everything else by its very reality.",
           "riskMarkers": []
         },
         {
@@ -2760,7 +2760,7 @@
             "englishSentenceEnd": 5,
             "note": "Printed conclusion به عين حقيقة and ملزومه retain textual/grammatical strain; the English follows commentary as provisional rather than establishing a manuscript reading."
           },
-          "englishCorrespondence": "If it admits no intellectual instances for any of the reasons given, then either its reality differs from the realities of the particular possible existences in external reality—in which case the term “existence” would apply to them only equivocally—or it does not differ from them, in which case the possible existences themselves would possess intrinsic necessity.’ We reply: the supposed underlying necessary nature must, for the reasons already given, differ from external existence and what underlies it. That does not apply to existence necessary through itself, subsisting through itself, and distinguished from everything else by its very reality.",
+          "englishCorrespondence": "If it admits no intellectual instances for any of the reasons given, then either its reality differs from the realities of the particular possible existences in external reality—in which case the term “existence” would apply to them only equivocally—or it does not differ from them, in which case the possible existences themselves would possess intrinsic necessity.’ We reply: the supposed underlying necessary nature must, for the reasons already given, differ from external existence and be its underlying bearer. That does not apply to existence necessary through itself, subsisting through itself, and distinguished from everything else by its very reality.",
           "riskMarkers": []
         },
         {
@@ -2774,7 +2774,7 @@
             "englishSentenceEnd": 5,
             "note": "Printed conclusion به عين حقيقة and ملزومه retain textual/grammatical strain; the English follows commentary as provisional rather than establishing a manuscript reading."
           },
-          "englishCorrespondence": "If it admits no intellectual instances for any of the reasons given, then either its reality differs from the realities of the particular possible existences in external reality—in which case the term “existence” would apply to them only equivocally—or it does not differ from them, in which case the possible existences themselves would possess intrinsic necessity.’ We reply: the supposed underlying necessary nature must, for the reasons already given, differ from external existence and what underlies it. That does not apply to existence necessary through itself, subsisting through itself, and distinguished from everything else by its very reality.",
+          "englishCorrespondence": "If it admits no intellectual instances for any of the reasons given, then either its reality differs from the realities of the particular possible existences in external reality—in which case the term “existence” would apply to them only equivocally—or it does not differ from them, in which case the possible existences themselves would possess intrinsic necessity.’ We reply: the supposed underlying necessary nature must, for the reasons already given, differ from external existence and be its underlying bearer. That does not apply to existence necessary through itself, subsisting through itself, and distinguished from everything else by its very reality.",
           "riskMarkers": []
         }
       ],
@@ -2800,19 +2800,19 @@
         {
           "n": 4,
           "startChar": 587,
-          "endChar": 1096,
-          "text": "If it admits no intellectual instances for any of the reasons given, then either its reality differs from the realities of the particular possible existences in external reality—in which case the term “existence” would apply to them only equivocally—or it does not differ from them, in which case the possible existences themselves would possess intrinsic necessity.’ We reply: the supposed underlying necessary nature must, for the reasons already given, differ from external existence and what underlies it."
+          "endChar": 1103,
+          "text": "If it admits no intellectual instances for any of the reasons given, then either its reality differs from the realities of the particular possible existences in external reality—in which case the term “existence” would apply to them only equivocally—or it does not differ from them, in which case the possible existences themselves would possess intrinsic necessity.’ We reply: the supposed underlying necessary nature must, for the reasons already given, differ from external existence and be its underlying bearer."
         },
         {
           "n": 5,
-          "startChar": 1097,
-          "endChar": 1242,
+          "startChar": 1104,
+          "endChar": 1249,
           "text": "That does not apply to existence necessary through itself, subsisting through itself, and distinguished from everything else by its very reality."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 3
+      "sourceWarnings": 4
     },
     {
       "id": "QT-021",
@@ -3563,7 +3563,7 @@
       "sourceLocator": "A pp. 109",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/305?lang=ar",
       "arabicSha256": "38282938cd13162d7a93572e26b6ed6d865c207edc59a6d8cc3cde565b7b766b",
-      "englishSha256": "46f81cdc78ffc1cf6e1908d3d1f78b3f18936ec29194bb18745328c6d11d88c7",
+      "englishSha256": "be022b68f234ee664c62f9ee857ac22ae75907337d6e4961bd5b4c925da8342d",
       "arabicClauses": [
         {
           "n": 1,
@@ -3618,7 +3618,7 @@
             "englishSentenceEnd": 4,
             "note": "بالفرض / بالعرض would change suppositional to incidental predication, and the translation explicitly follows the displayed electronic base."
           },
-          "englishCorrespondence": "We are not concerned here with the being-existent imputed by supposition to intellectual meanings, as it may be imputed to other quiddities and to relations, attributes, and states; the discussion here concerns existence that exists through itself and is necessary through itself.",
+          "englishCorrespondence": "We are not concerned here with the existentness predicated incidentally to intellectual meanings, as it may be imputed to other quiddities and to relations, attributes, and states; the discussion here concerns existence that exists through itself and is necessary through itself.",
           "riskMarkers": []
         },
         {
@@ -3632,7 +3632,7 @@
             "englishSentenceEnd": 4,
             "note": "بالفرض / بالعرض would change suppositional to incidental predication, and the translation explicitly follows the displayed electronic base."
           },
-          "englishCorrespondence": "We are not concerned here with the being-existent imputed by supposition to intellectual meanings, as it may be imputed to other quiddities and to relations, attributes, and states; the discussion here concerns existence that exists through itself and is necessary through itself.",
+          "englishCorrespondence": "We are not concerned here with the existentness predicated incidentally to intellectual meanings, as it may be imputed to other quiddities and to relations, attributes, and states; the discussion here concerns existence that exists through itself and is necessary through itself.",
           "riskMarkers": []
         },
         {
@@ -3646,7 +3646,7 @@
             "englishSentenceEnd": 4,
             "note": "بالفرض / بالعرض would change suppositional to incidental predication, and the translation explicitly follows the displayed electronic base."
           },
-          "englishCorrespondence": "We are not concerned here with the being-existent imputed by supposition to intellectual meanings, as it may be imputed to other quiddities and to relations, attributes, and states; the discussion here concerns existence that exists through itself and is necessary through itself.",
+          "englishCorrespondence": "We are not concerned here with the existentness predicated incidentally to intellectual meanings, as it may be imputed to other quiddities and to relations, attributes, and states; the discussion here concerns existence that exists through itself and is necessary through itself.",
           "riskMarkers": []
         },
         {
@@ -3660,7 +3660,7 @@
             "englishSentenceEnd": 4,
             "note": "بالفرض / بالعرض would change suppositional to incidental predication, and the translation explicitly follows the displayed electronic base."
           },
-          "englishCorrespondence": "We are not concerned here with the being-existent imputed by supposition to intellectual meanings, as it may be imputed to other quiddities and to relations, attributes, and states; the discussion here concerns existence that exists through itself and is necessary through itself.",
+          "englishCorrespondence": "We are not concerned here with the existentness predicated incidentally to intellectual meanings, as it may be imputed to other quiddities and to relations, attributes, and states; the discussion here concerns existence that exists through itself and is necessary through itself.",
           "riskMarkers": []
         }
       ],
@@ -3680,19 +3680,19 @@
         {
           "n": 3,
           "startChar": 464,
-          "endChar": 645,
-          "text": "We are not concerned here with the being-existent imputed by supposition to intellectual meanings, as it may be imputed to other quiddities and to relations, attributes, and states;"
+          "endChar": 644,
+          "text": "We are not concerned here with the existentness predicated incidentally to intellectual meanings, as it may be imputed to other quiddities and to relations, attributes, and states;"
         },
         {
           "n": 4,
-          "startChar": 646,
-          "endChar": 744,
+          "startChar": 645,
+          "endChar": 743,
           "text": "the discussion here concerns existence that exists through itself and is necessary through itself."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 3
+      "sourceWarnings": 4
     },
     {
       "id": "QT-025",
@@ -3925,7 +3925,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 4
+      "sourceWarnings": 5
     },
     {
       "id": "QT-026",
@@ -4287,7 +4287,7 @@
       "sourceLocator": "A pp. 133",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/329?lang=ar",
       "arabicSha256": "0f778f2937a9808641b55a46c0f579e98ad07a66bd10e3932309171e59f9c865",
-      "englishSha256": "567e3a5f571156da303c38cfe12afc59be37a73e2008a1e15ec2a209bdab1077",
+      "englishSha256": "9d9dfa40d57c3396cbf5fcb4d4d04fbfcfea1aa94b23e49014a231a00be47b2d",
       "arabicClauses": [
         {
           "n": 1,
@@ -4412,7 +4412,7 @@
             "englishSentenceEnd": 6,
             "note": "الوجودين غير الفرضيين is retained as non-suppositional modes with a distinct printed العرضي alternative in the commentary; no categorical emendation."
           },
-          "englishCorrespondence": "It is thus incorrect to say that they depend on that essence in either of the two non-merely-hypothetical modes of existence.",
+          "englishCorrespondence": "It is thus incorrect to say that they depend on that essence in either of the two non-incidental modes of existence.",
           "riskMarkers": []
         },
         {
@@ -4426,7 +4426,7 @@
             "englishSentenceEnd": 6,
             "note": "الوجودين غير الفرضيين is retained as non-suppositional modes with a distinct printed العرضي alternative in the commentary; no categorical emendation."
           },
-          "englishCorrespondence": "It is thus incorrect to say that they depend on that essence in either of the two non-merely-hypothetical modes of existence.",
+          "englishCorrespondence": "It is thus incorrect to say that they depend on that essence in either of the two non-incidental modes of existence.",
           "riskMarkers": []
         }
       ],
@@ -4464,13 +4464,13 @@
         {
           "n": 6,
           "startChar": 794,
-          "endChar": 919,
-          "text": "It is thus incorrect to say that they depend on that essence in either of the two non-merely-hypothetical modes of existence."
+          "endChar": 910,
+          "text": "It is thus incorrect to say that they depend on that essence in either of the two non-incidental modes of existence."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 5
+      "sourceWarnings": 6
     },
     {
       "id": "QT-031",
@@ -9840,7 +9840,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 3
+      "sourceWarnings": 4
     },
     {
       "id": "QT-053",
@@ -10175,7 +10175,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 4
+      "sourceWarnings": 5
     },
     {
       "id": "QT-054",
@@ -10185,7 +10185,7 @@
       "sourceLocator": "A pp. 248",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/444?lang=ar",
       "arabicSha256": "7c04d4c769e412db47d0ffdfa55a6fd8edf7a973f6c2b240fa1f6bc03c3c858c",
-      "englishSha256": "4e8f6d2bece1dfa252828c5ffe3249583266e619a248062ff326ae393dc15bd6",
+      "englishSha256": "240c9e823e8b85954c14d85b0bb360c81b8ac0ae49c6a94de00a2cd80992724c",
       "arabicClauses": [
         {
           "n": 1,
@@ -10310,7 +10310,7 @@
             "englishSentenceEnd": 6,
             "note": "Duplicated middle-term phrase remains flagged, not silently deleted."
           },
-          "englishCorrespondence": "[At this point the transmitted Arabic appears to repeat part of its previous clause.] Memory, estimation, and imagination need not obey the discursive intellect, yet they can submit to the nobler faculty and become its servants and instruments.",
+          "englishCorrespondence": "Memory, estimation, and imagination need not obey the discursive intellect, yet they can submit to the nobler faculty and become its servants and instruments.",
           "riskMarkers": []
         },
         {
@@ -10324,7 +10324,7 @@
             "englishSentenceEnd": 6,
             "note": "Duplicated middle-term phrase remains flagged, not silently deleted."
           },
-          "englishCorrespondence": "[At this point the transmitted Arabic appears to repeat part of its previous clause.] Memory, estimation, and imagination need not obey the discursive intellect, yet they can submit to the nobler faculty and become its servants and instruments.",
+          "englishCorrespondence": "Memory, estimation, and imagination need not obey the discursive intellect, yet they can submit to the nobler faculty and become its servants and instruments.",
           "riskMarkers": []
         },
         {
@@ -10338,7 +10338,7 @@
             "englishSentenceEnd": 6,
             "note": "Duplicated middle-term phrase remains flagged, not silently deleted."
           },
-          "englishCorrespondence": "[At this point the transmitted Arabic appears to repeat part of its previous clause.] Memory, estimation, and imagination need not obey the discursive intellect, yet they can submit to the nobler faculty and become its servants and instruments.",
+          "englishCorrespondence": "Memory, estimation, and imagination need not obey the discursive intellect, yet they can submit to the nobler faculty and become its servants and instruments.",
           "riskMarkers": []
         },
         {
@@ -10390,19 +10390,19 @@
         {
           "n": 6,
           "startChar": 741,
-          "endChar": 985,
-          "text": "[At this point the transmitted Arabic appears to repeat part of its previous clause.] Memory, estimation, and imagination need not obey the discursive intellect, yet they can submit to the nobler faculty and become its servants and instruments."
+          "endChar": 899,
+          "text": "Memory, estimation, and imagination need not obey the discursive intellect, yet they can submit to the nobler faculty and become its servants and instruments."
         },
         {
           "n": 7,
-          "startChar": 986,
-          "endChar": 1092,
+          "startChar": 900,
+          "endChar": 1006,
           "text": "Accordingly nothing prevents what that faculty apprehends from being expressed, in some measure, in words."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 4
+      "sourceWarnings": 5
     },
     {
       "id": "QT-055",
@@ -10541,7 +10541,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 3
+      "sourceWarnings": 4
     },
     {
       "id": "QT-056",
@@ -10551,7 +10551,7 @@
       "sourceLocator": "A pp. 252–253–254–255",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/448?lang=ar",
       "arabicSha256": "7e287482cfe77ed43ec4bcf3aab6e63fab7142666bd8bf974eea4a208e8f6d1e",
-      "englishSha256": "7251c17a9bae9d8d4fac276175936b674fe07f1dd2589399e60777c998692e67",
+      "englishSha256": "8378c91e6b66ac9dcbfbb080e520cebd00565dc402335c89e97183fc2a930d6d",
       "arabicClauses": [
         {
           "n": 1,
@@ -11040,7 +11040,7 @@
             "englishSentenceEnd": 15,
             "note": "The transmitted «فلا يجوز» before anger/pride apparently conflicts with therapy by contraries; no conjectural emendation."
           },
-          "englishCorrespondence": "As for acquiring dispositions that produce abasement, diminished zeal, meekness, and the like, this is not permissible for practitioners whose temperaments are dominated by intense anger, conceit, pride, coercion, forcefulness, love of rank, and similar traits.",
+          "englishCorrespondence": "As for acquiring dispositions that produce abasement, diminished zeal, meekness, and the like, this is not permissible except for practitioners whose temperaments are dominated by intense anger, conceit, pride, coercion, forcefulness, love of rank, and similar traits.",
           "riskMarkers": []
         },
         {
@@ -11054,7 +11054,7 @@
             "englishSentenceEnd": 15,
             "note": "The transmitted «فلا يجوز» before anger/pride apparently conflicts with therapy by contraries; no conjectural emendation."
           },
-          "englishCorrespondence": "As for acquiring dispositions that produce abasement, diminished zeal, meekness, and the like, this is not permissible for practitioners whose temperaments are dominated by intense anger, conceit, pride, coercion, forcefulness, love of rank, and similar traits.",
+          "englishCorrespondence": "As for acquiring dispositions that produce abasement, diminished zeal, meekness, and the like, this is not permissible except for practitioners whose temperaments are dominated by intense anger, conceit, pride, coercion, forcefulness, love of rank, and similar traits.",
           "riskMarkers": []
         },
         {
@@ -11412,85 +11412,85 @@
         {
           "n": 15,
           "startChar": 2311,
-          "endChar": 2572,
-          "text": "As for acquiring dispositions that produce abasement, diminished zeal, meekness, and the like, this is not permissible for practitioners whose temperaments are dominated by intense anger, conceit, pride, coercion, forcefulness, love of rank, and similar traits."
+          "endChar": 2579,
+          "text": "As for acquiring dispositions that produce abasement, diminished zeal, meekness, and the like, this is not permissible except for practitioners whose temperaments are dominated by intense anger, conceit, pride, coercion, forcefulness, love of rank, and similar traits."
         },
         {
           "n": 16,
-          "startChar": 2573,
-          "endChar": 2702,
+          "startChar": 2580,
+          "endChar": 2709,
           "text": "Yet the explicit principle that follows is that destructive habits can only be cured through praiseworthy habits opposed to them."
         },
         {
           "n": 17,
-          "startChar": 2703,
-          "endChar": 2807,
+          "startChar": 2710,
+          "endChar": 2814,
           "text": "As the force of one contrary is broken by the force of its opposite, a condition nearer the mean arises."
         },
         {
           "n": 18,
-          "startChar": 2808,
-          "endChar": 2902,
+          "startChar": 2815,
+          "endChar": 2909,
           "text": "Where appetite predominates, an opposing disposition draws the temperament toward equilibrium;"
         },
         {
           "n": 19,
-          "startChar": 2903,
-          "endChar": 3022,
+          "startChar": 2910,
+          "endChar": 3029,
           "text": "where violence and anger predominate, the appropriate contrary does likewise, even if complete balance is not attained."
         },
         {
           "n": 20,
-          "startChar": 3023,
-          "endChar": 3204,
+          "startChar": 3030,
+          "endChar": 3211,
           "text": "Restoring a disordered constitution toward equilibrium under the principles of medicine and practical wisdom is not making the soul and body ill, but healing and strengthening them."
         },
         {
           "n": 21,
-          "startChar": 3205,
-          "endChar": 3313,
+          "startChar": 3212,
+          "endChar": 3320,
           "text": "One must not imagine that a remedy suited to one disorder in one patient at one moment cures every disorder."
         },
         {
           "n": 22,
-          "startChar": 3314,
-          "endChar": 3391,
+          "startChar": 3321,
+          "endChar": 3398,
           "text": "Some psychological disorders arise through excess, others through deficiency;"
         },
         {
           "n": 23,
-          "startChar": 3392,
-          "endChar": 3460,
+          "startChar": 3399,
+          "endChar": 3467,
           "text": "remedies vary according to persons, times, circumstances and habits."
         },
         {
           "n": 24,
-          "startChar": 3461,
-          "endChar": 3477,
+          "startChar": 3468,
+          "endChar": 3484,
           "text": "Reflect on this."
         },
         {
           "n": 25,
-          "startChar": 3478,
-          "endChar": 3624,
+          "startChar": 3485,
+          "endChar": 3631,
           "text": "Finally, 'opposing the lower soul', understood in the sense of the gnostics, is as necessary in teaching and rational inquiry as in Sufi practice."
         },
         {
           "n": 26,
-          "startChar": 3625,
-          "endChar": 3696,
+          "startChar": 3632,
+          "endChar": 3703,
           "text": "We have explained this elsewhere, so need not prolong the account here."
         },
         {
           "n": 27,
-          "startChar": 3697,
-          "endChar": 3713,
+          "startChar": 3704,
+          "endChar": 3720,
           "text": "Understand this."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 9
+      "sourceWarnings": 10
     },
     {
       "id": "QT-057",
@@ -12159,7 +12159,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 4
+      "sourceWarnings": 5
     },
     {
       "id": "QT-060",
@@ -12169,7 +12169,7 @@
       "sourceLocator": "A pp. 266–267",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/462?lang=ar",
       "arabicSha256": "5d7d65bf0cc8de5c10927808532af1d4380b193c271a19b80fbc02878240d391",
-      "englishSha256": "985b831ece9704771da58cec31486c026a2a0a2e22942762c576a8f4c0475240",
+      "englishSha256": "77abc96ef238636cbd57630c3d115c5726cfc8e02b840d08c9759a83ad4c2a9f",
       "arabicClauses": [
         {
           "n": 1,
@@ -12490,7 +12490,7 @@
             "englishSentenceEnd": 13,
             "note": "A p267 prints فيتقن ... واستعد while adopted Arabic has فليتق ... وليستعذ; the English remains interpretative."
           },
-          "englishCorrespondence": "Let him recognise, through God's grace, the corruption and harm of this belief, and seek refuge in Him from His devising and wrath.",
+          "englishCorrespondence": "Let him recognize, through God's grace, the corruption and harm of this belief, and seek refuge in Him from His devising and wrath.",
           "riskMarkers": []
         }
       ],
@@ -12571,12 +12571,12 @@
           "n": 13,
           "startChar": 1897,
           "endChar": 2028,
-          "text": "Let him recognise, through God's grace, the corruption and harm of this belief, and seek refuge in Him from His devising and wrath."
+          "text": "Let him recognize, through God's grace, the corruption and harm of this belief, and seek refuge in Him from His devising and wrath."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 5
+      "sourceWarnings": 7
     },
     {
       "id": "QT-061",
@@ -12939,7 +12939,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 7
+      "sourceWarnings": 8
     },
     {
       "id": "SH-INTRO-001",
@@ -16424,7 +16424,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 5
+      "sourceWarnings": 6
     },
     {
       "id": "SH-INTRO-012",
@@ -19850,7 +19850,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 5
+      "sourceWarnings": 6
     },
     {
       "id": "SH-INTRO-026",
@@ -23448,7 +23448,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 6
+      "sourceWarnings": 8
     },
     {
       "id": "SH-INTRO-036",
@@ -25106,7 +25106,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 6
+      "sourceWarnings": 7
     },
     {
       "id": "SH-002",
@@ -26343,7 +26343,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 8
+      "sourceWarnings": 9
     },
     {
       "id": "SH-003",
@@ -33437,7 +33437,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 5
+      "sourceWarnings": 6
     },
     {
       "id": "SH-009",
@@ -35068,7 +35068,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 9
+      "sourceWarnings": 10
     },
     {
       "id": "SH-010",
@@ -36666,7 +36666,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 7
+      "sourceWarnings": 9
     },
     {
       "id": "SH-012",
@@ -43787,7 +43787,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 5
+      "sourceWarnings": 6
     },
     {
       "id": "SH-019",
@@ -45345,7 +45345,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 5
+      "sourceWarnings": 6
     },
     {
       "id": "SH-021",
@@ -50487,7 +50487,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 5
+      "sourceWarnings": 6
     },
     {
       "id": "SH-025",
@@ -52015,7 +52015,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 5
+      "sourceWarnings": 6
     },
     {
       "id": "SH-027",
@@ -55743,7 +55743,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 11
+      "sourceWarnings": 12
     },
     {
       "id": "SH-029",
@@ -58307,7 +58307,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 7
+      "sourceWarnings": 8
     },
     {
       "id": "SH-031",
@@ -59610,7 +59610,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 5
+      "sourceWarnings": 6
     },
     {
       "id": "SH-032",
@@ -62782,7 +62782,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 10
+      "sourceWarnings": 11
     },
     {
       "id": "SH-034",
@@ -66816,7 +66816,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 8
+      "sourceWarnings": 10
     },
     {
       "id": "SH-035-B",
@@ -69114,7 +69114,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 7
+      "sourceWarnings": 8
     },
     {
       "id": "SH-036-B",
@@ -72265,7 +72265,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 8
+      "sourceWarnings": 9
     },
     {
       "id": "SH-039",
@@ -74670,7 +74670,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 8
+      "sourceWarnings": 9
     },
     {
       "id": "SH-039-B",
@@ -75431,7 +75431,7 @@
       "sourceLocator": "A, printed pp. 180–184",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/376?lang=ar",
       "arabicSha256": "9888bdfe6b91a922eb1b17d2022064e4e2514de0e26c98bc3f631970872424d3",
-      "englishSha256": "a99d519f8b90018344c886733adad7ebddadc51c25ab26032eec3b910a8a0540",
+      "englishSha256": "58c56b5df13e990edf9370d07fef6a456736cf69c414c82050521723617b2c12",
       "arabicClauses": [
         {
           "n": 1,
@@ -75654,7 +75654,7 @@
             "englishSentenceEnd": 10,
             "note": "Command and existential movement are clear; the contrasting printed النسى is explicitly uncertain in English."
           },
-          "englishCorrespondence": "In their terminology, command means making the governing property of unity manifest within multiplicity. This is expressed at one time as the existential movement and at another as the all-pervading conjunction. The contrasting expression in the source—printed as al-nasī, with its wording uncertain—means making multiplicity's governing property manifest and returning it to unity.",
+          "englishCorrespondence": "In their terminology, command means making the governing property of unity manifest within multiplicity. This is expressed at one time as the existential movement and at another as the all-pervading conjunction. The contrasting expression, prohibition (al-nahy), means making multiplicity's governing property manifest and returning it to unity.",
           "riskMarkers": []
         },
         {
@@ -75668,7 +75668,7 @@
             "englishSentenceEnd": 10,
             "note": "Command and existential movement are clear; the contrasting printed النسى is explicitly uncertain in English."
           },
-          "englishCorrespondence": "In their terminology, command means making the governing property of unity manifest within multiplicity. This is expressed at one time as the existential movement and at another as the all-pervading conjunction. The contrasting expression in the source—printed as al-nasī, with its wording uncertain—means making multiplicity's governing property manifest and returning it to unity.",
+          "englishCorrespondence": "In their terminology, command means making the governing property of unity manifest within multiplicity. This is expressed at one time as the existential movement and at another as the all-pervading conjunction. The contrasting expression, prohibition (al-nahy), means making multiplicity's governing property manifest and returning it to unity.",
           "riskMarkers": []
         },
         {
@@ -75682,7 +75682,7 @@
             "englishSentenceEnd": 10,
             "note": "Command and existential movement are clear; the contrasting printed النسى is explicitly uncertain in English."
           },
-          "englishCorrespondence": "In their terminology, command means making the governing property of unity manifest within multiplicity. This is expressed at one time as the existential movement and at another as the all-pervading conjunction. The contrasting expression in the source—printed as al-nasī, with its wording uncertain—means making multiplicity's governing property manifest and returning it to unity.",
+          "englishCorrespondence": "In their terminology, command means making the governing property of unity manifest within multiplicity. This is expressed at one time as the existential movement and at another as the all-pervading conjunction. The contrasting expression, prohibition (al-nahy), means making multiplicity's governing property manifest and returning it to unity.",
           "riskMarkers": []
         },
         {
@@ -76430,139 +76430,139 @@
         {
           "n": 10,
           "startChar": 1173,
-          "endChar": 1343,
-          "text": "The contrasting expression in the source—printed as al-nasī, with its wording uncertain—means making multiplicity's governing property manifest and returning it to unity."
+          "endChar": 1306,
+          "text": "The contrasting expression, prohibition (al-nahy), means making multiplicity's governing property manifest and returning it to unity."
         },
         {
           "n": 11,
-          "startChar": 1345,
-          "endChar": 1546,
+          "startChar": 1308,
+          "endChar": 1509,
           "text": "Know, then, that the divine relation, in accordance with essential unity, requires the movement bringing things into existence to be circular and returning, as will be explained, God Most High willing."
         },
         {
           "n": 12,
-          "startChar": 1547,
-          "endChar": 1711,
+          "startChar": 1510,
+          "endChar": 1674,
           "text": "The divine replenishment determined from unrestricted essential effusion through the isthmic reality just mentioned reaches the First Intellect, designated the Pen;"
         },
         {
           "n": 13,
-          "startChar": 1712,
-          "endChar": 1789,
+          "startChar": 1675,
+          "endChar": 1752,
           "text": "then the Tablet, Throne, Footstool, and remaining spheres, one after another."
         },
         {
           "n": 14,
-          "startChar": 1790,
-          "endChar": 1958,
+          "startChar": 1753,
+          "endChar": 1921,
           "text": "It then pervades the elements and generated beings, finally reaching the human being, coloured by the distinctive properties of every level through which it has passed."
         },
         {
           "n": 15,
-          "startChar": 1960,
-          "endChar": 2262,
+          "startChar": 1923,
+          "endChar": 2225,
           "text": "Suppose that the human recipient of this replenishment ascends by spiritual wayfaring, unites with the levels of souls and intellects, and passes beyond them through the essential affinity necessarily accompanying his balanced form, until he unites with the isthmic reality which is his original level."
         },
         {
           "n": 16,
-          "startChar": 2263,
-          "endChar": 2336,
+          "startChar": 2226,
+          "endChar": 2299,
           "text": "The replenishment has reached the furthest degree of multiplicity in him."
         },
         {
           "n": 17,
-          "startChar": 2337,
-          "endChar": 2429,
+          "startChar": 2300,
+          "endChar": 2392,
           "text": "That multiplicity must possess an encompassing form from which nothing escapes: its oneness."
         },
         {
           "n": 18,
-          "startChar": 2430,
-          "endChar": 2557,
+          "startChar": 2393,
+          "endChar": 2520,
           "text": "Through this oneness he reaches the isthmic reality, among whose qualifications is the unitive character next to genuine unity."
         },
         {
           "n": 19,
-          "startChar": 2558,
-          "endChar": 2682,
+          "startChar": 2521,
+          "endChar": 2645,
           "text": "The circle is then completed by reaching the station from which the effusion arriving at the Intellect was first determined."
         },
         {
           "n": 20,
-          "startChar": 2684,
-          "endChar": 2714,
+          "startChar": 2647,
+          "endChar": 2677,
           "text": "Reflect on this great mystery."
         },
         {
           "n": 21,
-          "startChar": 2715,
-          "endChar": 2901,
+          "startChar": 2678,
+          "endChar": 2864,
           "text": "Through it you will understand the orientation from its principle and the movement toward it: inwardly the universal locus, outwardly the comprehensive being embracing the divine affair."
         },
         {
           "n": 22,
-          "startChar": 2902,
-          "endChar": 2928,
+          "startChar": 2865,
+          "endChar": 2891,
           "text": "This is the Perfect Human."
         },
         {
           "n": 23,
-          "startChar": 2929,
-          "endChar": 3190,
+          "startChar": 2892,
+          "endChar": 3153,
           "text": "He joins manifestation of the unrestricted essence to manifestation of the names, attributes, and acts, through the comprehensiveness and balance of his universal constitution and the breadth and perfection of his receptivity, the comprehensive isthmic reality."
         },
         {
           "n": 24,
-          "startChar": 3192,
-          "endChar": 3306,
+          "startChar": 3155,
+          "endChar": 3269,
           "text": "He also joins necessary and possible realities, the relations of the divine names and the attributes of creatures."
         },
         {
           "n": 25,
-          "startChar": 3307,
-          "endChar": 3517,
+          "startChar": 3270,
+          "endChar": 3480,
           "text": "The reality expressed as the distance of the two bows of necessity and possibility is the source of all relations, attributes, and realities, whether necessary or possible, belonging to the Real or to creation."
         },
         {
           "n": 26,
-          "startChar": 3518,
-          "endChar": 3621,
+          "startChar": 3481,
+          "endChar": 3584,
           "text": "He therefore joins gathering and differentiation and encompasses every level in the chain of existence."
         },
         {
           "n": 27,
-          "startChar": 3622,
-          "endChar": 3822,
+          "startChar": 3585,
+          "endChar": 3785,
           "text": "The words ‘so that He may manifest in him according to him’ depend on ‘He was impelled’: this impulsion toward the universal locus is for manifestation according to that locus's comprehensive oneness."
         },
         {
           "n": 28,
-          "startChar": 3824,
-          "endChar": 3968,
+          "startChar": 3787,
+          "endChar": 3931,
           "text": "In sum, He wills to manifest Himself to Himself in a universal affair encompassing all the particulars of His affairs, according to that affair."
         },
         {
           "n": 29,
-          "startChar": 3969,
-          "endChar": 4134,
+          "startChar": 3932,
+          "endChar": 4097,
           "text": "His comprehensiveness and perfected comprehensive oneness can appear only in such an encompassing, noble affair, whose like is not possible: nothing else is like it."
         },
         {
           "n": 30,
-          "startChar": 4135,
-          "endChar": 4292,
+          "startChar": 4098,
+          "endChar": 4255,
           "text": "In it He apprehends His essence under that comprehensive consideration beyond which no further possibility remains, through its perfect, encompassing aspect."
         },
         {
           "n": 31,
-          "startChar": 4293,
-          "endChar": 4391,
+          "startChar": 4256,
+          "endChar": 4354,
           "text": "This is the goal of the existential movement and the loving pervasion expressed here as impulsion."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 6
+      "sourceWarnings": 7
     },
     {
       "id": "SH-040-B",
@@ -78684,7 +78684,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 9
+      "sourceWarnings": 11
     },
     {
       "id": "SH-042",
@@ -81386,7 +81386,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 7
+      "sourceWarnings": 8
     },
     {
       "id": "SH-046",
@@ -83058,7 +83058,7 @@
       "sourceLocator": "A, printed pp. 218–224",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/414?lang=ar",
       "arabicSha256": "1bcecd93e88a34d76c74c1ff4c00179b3e7f01c15fe8a866ac8326c406614551",
-      "englishSha256": "5fe515db47294baebf4fb2e570f658d5e1990ba7b4cba0bfefcc57c883bfc4b6",
+      "englishSha256": "e3adf4fdd16affa18828aecbef208a1a3f8d72b00839828234b52fd782c5faa1",
       "arabicClauses": [
         {
           "n": 1,
@@ -83785,7 +83785,7 @@
             "englishSentenceEnd": 27,
             "note": "Reprised objection reads تعقلا عينيا تفصيليا rather than the earlier unseen cognition wording; English marks the displayed reprise rather than silently harmonizing it."
           },
-          "englishCorrespondence": "The questioner's claim that some forms and names would then be apprehended only through an intellectual, objective, differentiated cognition [the wording displayed in this commentary reprise], so that the human being could not mirror the whole, is rejected.",
+          "englishCorrespondence": "The questioner's claim that some forms and names would then be apprehended as an unseen intellection, so that the human being could not mirror the whole, is rejected.",
           "riskMarkers": []
         },
         {
@@ -83799,7 +83799,7 @@
             "englishSentenceEnd": 27,
             "note": "Reprised objection reads تعقلا عينيا تفصيليا rather than the earlier unseen cognition wording; English marks the displayed reprise rather than silently harmonizing it."
           },
-          "englishCorrespondence": "The questioner's claim that some forms and names would then be apprehended only through an intellectual, objective, differentiated cognition [the wording displayed in this commentary reprise], so that the human being could not mirror the whole, is rejected.",
+          "englishCorrespondence": "The questioner's claim that some forms and names would then be apprehended as an unseen intellection, so that the human being could not mirror the whole, is rejected.",
           "riskMarkers": []
         },
         {
@@ -83813,7 +83813,7 @@
             "englishSentenceEnd": 27,
             "note": "Reprised objection reads تعقلا عينيا تفصيليا rather than the earlier unseen cognition wording; English marks the displayed reprise rather than silently harmonizing it."
           },
-          "englishCorrespondence": "The questioner's claim that some forms and names would then be apprehended only through an intellectual, objective, differentiated cognition [the wording displayed in this commentary reprise], so that the human being could not mirror the whole, is rejected.",
+          "englishCorrespondence": "The questioner's claim that some forms and names would then be apprehended as an unseen intellection, so that the human being could not mirror the whole, is rejected.",
           "riskMarkers": []
         },
         {
@@ -83827,7 +83827,7 @@
             "englishSentenceEnd": 27,
             "note": "Reprised objection reads تعقلا عينيا تفصيليا rather than the earlier unseen cognition wording; English marks the displayed reprise rather than silently harmonizing it."
           },
-          "englishCorrespondence": "The questioner's claim that some forms and names would then be apprehended only through an intellectual, objective, differentiated cognition [the wording displayed in this commentary reprise], so that the human being could not mirror the whole, is rejected.",
+          "englishCorrespondence": "The questioner's claim that some forms and names would then be apprehended as an unseen intellection, so that the human being could not mirror the whole, is rejected.",
           "riskMarkers": []
         },
         {
@@ -84635,157 +84635,157 @@
         {
           "n": 27,
           "startChar": 3320,
-          "endChar": 3577,
-          "text": "The questioner's claim that some forms and names would then be apprehended only through an intellectual, objective, differentiated cognition [the wording displayed in this commentary reprise], so that the human being could not mirror the whole, is rejected."
+          "endChar": 3486,
+          "text": "The questioner's claim that some forms and names would then be apprehended as an unseen intellection, so that the human being could not mirror the whole, is rejected."
         },
         {
           "n": 28,
-          "startChar": 3578,
-          "endChar": 3703,
+          "startChar": 3487,
+          "endChar": 3612,
           "text": "The reality pervading all things and appearing through them has two kinds of apprehension in this comprehensive constitution."
         },
         {
           "n": 29,
-          "startChar": 3704,
-          "endChar": 3908,
+          "startChar": 3613,
+          "endChar": 3817,
           "text": "One is apprehension from the side of the manifest reality: it apprehends its essence through itself, together with what necessarily accompanies it—the necessary divine names and possible cosmic realities."
         },
         {
           "n": 30,
-          "startChar": 3909,
-          "endChar": 4026,
+          "startChar": 3818,
+          "endChar": 3935,
           "text": "It apprehends every affair within a comprehensive affair from the side of its essence, in undifferentiated cognition."
         },
         {
           "n": 31,
-          "startChar": 4027,
-          "endChar": 4170,
+          "startChar": 3936,
+          "endChar": 4079,
           "text": "This comprehensive affair is the human being, encompassing all levels through its perfected reality and through its circle embracing both bows."
         },
         {
           "n": 32,
-          "startChar": 4172,
-          "endChar": 4281,
+          "startChar": 4081,
+          "endChar": 4190,
           "text": "The other kind is again apprehension of itself, but not from the side of the manifest reality through itself."
         },
         {
           "n": 33,
-          "startChar": 4282,
-          "endChar": 4377,
+          "startChar": 4191,
+          "endChar": 4286,
           "text": "It apprehends through the loci and their determinations in differentiated, objective cognition."
         },
         {
           "n": 34,
-          "startChar": 4378,
-          "endChar": 4440,
+          "startChar": 4287,
+          "endChar": 4349,
           "text": "This kind has instances of differing realities at every level."
         },
         {
           "n": 35,
-          "startChar": 4441,
-          "endChar": 4546,
+          "startChar": 4350,
+          "endChar": 4455,
           "text": "At each level the reality apprehends itself from the side of that level through a mode appropriate to it."
         },
         {
           "n": 36,
-          "startChar": 4547,
-          "endChar": 4659,
+          "startChar": 4456,
+          "endChar": 4568,
           "text": "Such apprehension must take place through that level, so its principle must arise from the corresponding aspect."
         },
         {
           "n": 37,
-          "startChar": 4661,
-          "endChar": 4830,
+          "startChar": 4570,
+          "endChar": 4739,
           "text": "Thus, through certain possible determinations and divine names, the reality apprehends universals intellectually and in detail, according to its universal receptivities."
         },
         {
           "n": 38,
-          "startChar": 4831,
-          "endChar": 4918,
+          "startChar": 4740,
+          "endChar": 4827,
           "text": "Through other determinations and names it apprehends from the two sides just mentioned."
         },
         {
           "n": 39,
-          "startChar": 4919,
-          "endChar": 5189,
+          "startChar": 4828,
+          "endChar": 5098,
           "text": "When accompanied by particular concomitants and individuating attributes belonging to meanings and imaginal forms, it apprehends through determinations of faculties and loci of awareness in estimative and imaginative cognition, according to its particular receptivities."
         },
         {
           "n": 40,
-          "startChar": 5190,
-          "endChar": 5409,
+          "startChar": 5099,
+          "endChar": 5318,
           "text": "Through still other determinations and names, when accompanied by particular formal concomitants and external individuating attributes, it apprehends through sensory faculties and outward awareness in sensory cognition."
         },
         {
           "n": 41,
-          "startChar": 5410,
-          "endChar": 5507,
+          "startChar": 5319,
+          "endChar": 5416,
           "text": "All these follow the receptivities within it to which the determinations of the faculties relate."
         },
         {
           "n": 42,
-          "startChar": 5509,
-          "endChar": 5706,
+          "startChar": 5418,
+          "endChar": 5615,
           "text": "The author mentions the two aspects in the first two cases but not the last, because the outward senses, proper to the final case, relate intrinsically only to cosmic forms and possible attributes."
         },
         {
           "n": 43,
-          "startChar": 5707,
-          "endChar": 5849,
+          "startChar": 5616,
+          "endChar": 5758,
           "text": "If they relate to the realities of the names and necessary substances, they do so incidentally and through an intermediary, not intrinsically."
         },
         {
           "n": 44,
-          "startChar": 5850,
-          "endChar": 5953,
+          "startChar": 5759,
+          "endChar": 5862,
           "text": "Their objects therefore concern only one of the reality's two aspects and one of the circle's two bows."
         },
         {
           "n": 45,
-          "startChar": 5955,
-          "endChar": 6162,
+          "startChar": 5864,
+          "endChar": 6071,
           "text": "Once these premises are understood, it becomes clear that, through the elemental human constitution—a collection of copies of every level—the true reality surveys each level by examining its particular copy."
         },
         {
           "n": 46,
-          "startChar": 6163,
-          "endChar": 6289,
+          "startChar": 6072,
+          "endChar": 6198,
           "text": "It apprehends the whole through the whole, according to the whole contained within it, in complete and perfected apprehension."
         },
         {
           "n": 47,
-          "startChar": 6290,
-          "endChar": 6396,
+          "startChar": 6199,
+          "endChar": 6305,
           "text": "Through the comprehensive oneness of this collection it apprehends the comprehensive oneness of the whole."
         },
         {
           "n": 48,
-          "startChar": 6397,
-          "endChar": 6484,
+          "startChar": 6306,
+          "endChar": 6393,
           "text": "Its cognition therefore joins gathering and differentiation, and none is more complete."
         },
         {
           "n": 49,
-          "startChar": 6485,
-          "endChar": 6538,
+          "startChar": 6394,
+          "endChar": 6447,
           "text": "The words ‘Reflect upon this’ point to this subtlety."
         },
         {
           "n": 50,
-          "startChar": 6540,
-          "endChar": 6592,
+          "startChar": 6449,
+          "endChar": 6501,
           "text": "‘All of my whole is occupied with all of Your whole;"
         },
         {
           "n": 51,
-          "startChar": 6593,
-          "endChar": 6635,
+          "startChar": 6502,
+          "endChar": 6544,
           "text": "so all of my whole flees from You to You.’"
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 7
+      "sourceWarnings": 8
     },
     {
       "id": "SH-049",
@@ -85910,7 +85910,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 5
+      "sourceWarnings": 6
     },
     {
       "id": "SH-050",
@@ -87099,7 +87099,7 @@
       "sourceLocator": "A, printed pp. 234–237",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/430?lang=ar",
       "arabicSha256": "6658a93748058095bdfdb5427b9bd86aeb0b747ba2cc04cb615a4a0efde39ca9",
-      "englishSha256": "e92e6220466df0ca7c2651d94dcf84ab2a0b40531b9d2df048f9dc4c494137d7",
+      "englishSha256": "92893a5f2e13a8020a2544b480663136c64e34b489e9106f38f92a768473b23f",
       "arabicClauses": [
         {
           "n": 1,
@@ -87154,7 +87154,7 @@
             "englishSentenceEnd": 3,
             "note": "Nourishment/growth rendering uses an indicated correction of displayed الكمية; not a newly collated reading."
           },
-          "englishCorrespondence": "Acts in the created world are of two sorts. Some are noble, perfective, and intended in themselves, contributing to the attainment of the genuine goal which is the end of ends, such as nourishment and growth [the indicated correction].",
+          "englishCorrespondence": "Acts in the created world are of two sorts. Some are noble, perfective, and intended in themselves, contributing to the attainment of the genuine goal which is the end of ends, such as nourishment and growth.",
           "riskMarkers": []
         },
         {
@@ -87168,7 +87168,7 @@
             "englishSentenceEnd": 3,
             "note": "Nourishment/growth rendering uses an indicated correction of displayed الكمية; not a newly collated reading."
           },
-          "englishCorrespondence": "Acts in the created world are of two sorts. Some are noble, perfective, and intended in themselves, contributing to the attainment of the genuine goal which is the end of ends, such as nourishment and growth [the indicated correction].",
+          "englishCorrespondence": "Acts in the created world are of two sorts. Some are noble, perfective, and intended in themselves, contributing to the attainment of the genuine goal which is the end of ends, such as nourishment and growth.",
           "riskMarkers": []
         },
         {
@@ -87182,7 +87182,7 @@
             "englishSentenceEnd": 3,
             "note": "Nourishment/growth rendering uses an indicated correction of displayed الكمية; not a newly collated reading."
           },
-          "englishCorrespondence": "Acts in the created world are of two sorts. Some are noble, perfective, and intended in themselves, contributing to the attainment of the genuine goal which is the end of ends, such as nourishment and growth [the indicated correction].",
+          "englishCorrespondence": "Acts in the created world are of two sorts. Some are noble, perfective, and intended in themselves, contributing to the attainment of the genuine goal which is the end of ends, such as nourishment and growth.",
           "riskMarkers": []
         },
         {
@@ -87196,7 +87196,7 @@
             "englishSentenceEnd": 3,
             "note": "Nourishment/growth rendering uses an indicated correction of displayed الكمية; not a newly collated reading."
           },
-          "englishCorrespondence": "Acts in the created world are of two sorts. Some are noble, perfective, and intended in themselves, contributing to the attainment of the genuine goal which is the end of ends, such as nourishment and growth [the indicated correction].",
+          "englishCorrespondence": "Acts in the created world are of two sorts. Some are noble, perfective, and intended in themselves, contributing to the attainment of the genuine goal which is the end of ends, such as nourishment and growth.",
           "riskMarkers": []
         },
         {
@@ -87930,181 +87930,181 @@
         {
           "n": 3,
           "startChar": 253,
-          "endChar": 444,
-          "text": "Some are noble, perfective, and intended in themselves, contributing to the attainment of the genuine goal which is the end of ends, such as nourishment and growth [the indicated correction]."
+          "endChar": 417,
+          "text": "Some are noble, perfective, and intended in themselves, contributing to the attainment of the genuine goal which is the end of ends, such as nourishment and growth."
         },
         {
           "n": 4,
-          "startChar": 445,
-          "endChar": 601,
+          "startChar": 418,
+          "endChar": 574,
           "text": "Others are deficient and base, existing incidentally and as accompaniments, without contributing to that goal, such as a scorpion's sting or a snake's bite."
         },
         {
           "n": 5,
-          "startChar": 603,
-          "endChar": 677,
+          "startChar": 576,
+          "endChar": 650,
           "text": "Kinds are correspondingly divided according to the actions they originate."
         },
         {
           "n": 6,
-          "startChar": 678,
-          "endChar": 834,
+          "startChar": 651,
+          "endChar": 807,
           "text": "Noble kinds belong within the ordered series extending between creation and command and ending in the genuine intermediary which is the goal just described."
         },
         {
           "n": 7,
-          "startChar": 835,
-          "endChar": 966,
+          "startChar": 808,
+          "endChar": 939,
           "text": "Inferior deficient kinds fall outside that series, their existence following upon and branching from the spirits ordered within it."
         },
         {
           "n": 8,
-          "startChar": 968,
-          "endChar": 1079,
+          "startChar": 941,
+          "endChar": 1052,
           "text": "The noble kinds capable of producing perfective acts are finite, since the series ends upon reaching that goal."
         },
         {
           "n": 9,
-          "startChar": 1080,
-          "endChar": 1143,
+          "startChar": 1053,
+          "endChar": 1116,
           "text": "Their inclusion within one reality is therefore not impossible."
         },
         {
           "n": 10,
-          "startChar": 1144,
-          "endChar": 1345,
+          "startChar": 1117,
+          "endChar": 1318,
           "text": "Inferior kinds need not be considered here, since every perfective action proceeding from an inferior kind also proceeds from a superior kind, whereas the superior performs actions the inferior cannot."
         },
         {
           "n": 11,
-          "startChar": 1346,
-          "endChar": 1461,
+          "startChar": 1319,
+          "endChar": 1434,
           "text": "Moreover, a noble kind possessing genuine unity can include the inferior kinds too, in the sense already indicated."
         },
         {
           "n": 12,
-          "startChar": 1462,
-          "endChar": 1582,
+          "startChar": 1435,
+          "endChar": 1555,
           "text": "Genuine unity appears through temperamental balance joining essential necessary unity to possible multiplicity of names."
         },
         {
           "n": 13,
-          "startChar": 1584,
-          "endChar": 1775,
+          "startChar": 1557,
+          "endChar": 1748,
           "text": "Once that genuine unity, which comprehends all unities and multiplicities, appears, no reality can lie beyond its essential comprehensiveness, even if its individuals are unlimited in number."
         },
         {
           "n": 14,
-          "startChar": 1776,
-          "endChar": 1850,
+          "startChar": 1749,
+          "endChar": 1823,
           "text": "Unlimited individuals do not contradict comprehensive unity in this sense."
         },
         {
           "n": 15,
-          "startChar": 1851,
-          "endChar": 1983,
+          "startChar": 1824,
+          "endChar": 1956,
           "text": "Given the comprehensiveness of the specific reality, particular perfections varying with particular preparednesses are not decisive."
         },
         {
           "n": 16,
-          "startChar": 1984,
-          "endChar": 2052,
+          "startChar": 1957,
+          "endChar": 2025,
           "text": "The objection drawn from the two seals therefore does not refute it."
         },
         {
           "n": 17,
-          "startChar": 2054,
-          "endChar": 2349,
+          "startChar": 2027,
+          "endChar": 2322,
           "text": "More precisely, just as generic unities of differing kinds require a comprehensive specific unity in which to terminate, that specific unity must possess varying degrees of perfection and intelligible comprehensiveness, until they terminate in a personal unity embracing all in form and meaning."
         },
         {
           "n": 18,
-          "startChar": 2350,
-          "endChar": 2534,
+          "startChar": 2323,
+          "endChar": 2507,
           "text": "This is the true external determination through which the other realities are realized and come to be, as an intelligent reader acquainted with the preceding principles will recognize."
         },
         {
           "n": 19,
-          "startChar": 2536,
-          "endChar": 2640,
+          "startChar": 2509,
+          "endChar": 2613,
           "text": "Those principles imply that noble human existential perfections continually ascend as times are renewed."
         },
         {
           "n": 20,
-          "startChar": 2641,
-          "endChar": 2893,
+          "startChar": 2614,
+          "endChar": 2866,
           "text": "Each succeeding perfected person must encompass the predecessor’s perfections together with the particular perfections proper to himself, until that kind of perfection is completed in the seal—upon him be the finest blessings and the fullest greetings."
         },
         {
           "n": 21,
-          "startChar": 2894,
-          "endChar": 2977,
+          "startChar": 2867,
+          "endChar": 2950,
           "text": "For the acquisition of these perfections is from the niche of supreme completeness."
         },
         {
           "n": 22,
-          "startChar": 2978,
-          "endChar": 3069,
+          "startChar": 2951,
+          "endChar": 3042,
           "text": "Whoever is more closely related to it and possesses greater affinity receives more from it."
         },
         {
           "n": 23,
-          "startChar": 3070,
-          "endChar": 3167,
+          "startChar": 3043,
+          "endChar": 3140,
           "text": "Temporal affinity is among the most complete affinities, because many other affinities follow it;"
         },
         {
           "n": 24,
-          "startChar": 3168,
-          "endChar": 3232,
+          "startChar": 3141,
+          "endChar": 3205,
           "text": "whoever is temporally closer therefore receives a greater share."
         },
         {
           "n": 25,
-          "startChar": 3234,
-          "endChar": 3410,
+          "startChar": 3207,
+          "endChar": 3383,
           "text": "This is supported by what is reported of the ancient Persian sages devoted to divine wisdom: they agreed that, as the ranks of intellects descend, their illuminations multiply."
         },
         {
           "n": 26,
-          "startChar": 3411,
-          "endChar": 3584,
+          "startChar": 3384,
+          "endChar": 3557,
           "text": "The later a rank, the greater its share of the illumination of the Light of Lights, the rays of His countenance, and the illuminations of the intermediate dominating lights."
         },
         {
           "n": 27,
-          "startChar": 3585,
-          "endChar": 3610,
+          "startChar": 3558,
+          "endChar": 3583,
           "text": "The same applies in time."
         },
         {
           "n": 28,
-          "startChar": 3611,
-          "endChar": 3951,
+          "startChar": 3584,
+          "endChar": 3924,
           "text": "This meaning is among those contained in the following saying of the Prophet—may God bless him and his family and grant him peace: ‘Time has come round to the condition it had on the day God created the heavens and the earth,’ although the report has many elevated meanings according to the heights of the paths from which it is understood."
         },
         {
           "n": 29,
-          "startChar": 3953,
-          "endChar": 4055,
+          "startChar": 3926,
+          "endChar": 4028,
           "text": "That individual is therefore the one who realizes the specific reality in its entirety and perfection."
         },
         {
           "n": 30,
-          "startChar": 4056,
-          "endChar": 4197,
+          "startChar": 4029,
+          "endChar": 4170,
           "text": "Lesser individuals do not realize it with the same completeness, because impediments arise on their provisional and settled paths and stages."
         },
         {
           "n": 31,
-          "startChar": 4198,
-          "endChar": 4280,
+          "startChar": 4171,
+          "endChar": 4253,
           "text": "Detailed investigation would require many premises unsuitable for this brief work."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 6
+      "sourceWarnings": 7
     },
     {
       "id": "SH-052",
@@ -88625,7 +88625,7 @@
       "sourceLocator": "A, printed pp. 244–247",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/440?lang=ar",
       "arabicSha256": "718cb50cef181b378e58266de2463132b8d910be0c1116813cd82828b07c67a1",
-      "englishSha256": "c6fb6ee6f5d731834e5c72cc26cd49f69f075c324da0da492902e98c11f42302",
+      "englishSha256": "3661681b6e0dad6a10f5ef3d623883e88de8a44f91ec6e1b297bed6ab3d703e9",
       "arabicClauses": [
         {
           "n": 1,
@@ -89954,7 +89954,7 @@
             "englishSentenceEnd": 60,
             "note": "Place example uses a reported neck/shoulder alternative rather than displayed eye wording; attribution and textual uncertainty remain explicit."
           },
-          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head above my neck and my neck above my shoulders [the reported alternative]; correlation, exemplified by this being my father and my being his son;",
+          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head upon my neck and my neck upon my shoulder; correlation, exemplified by this being my father and my being his son;",
           "riskMarkers": []
         },
         {
@@ -89968,7 +89968,7 @@
             "englishSentenceEnd": 60,
             "note": "Place example uses a reported neck/shoulder alternative rather than displayed eye wording; attribution and textual uncertainty remain explicit."
           },
-          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head above my neck and my neck above my shoulders [the reported alternative]; correlation, exemplified by this being my father and my being his son;",
+          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head upon my neck and my neck upon my shoulder; correlation, exemplified by this being my father and my being his son;",
           "riskMarkers": []
         },
         {
@@ -89982,7 +89982,7 @@
             "englishSentenceEnd": 60,
             "note": "Place example uses a reported neck/shoulder alternative rather than displayed eye wording; attribution and textual uncertainty remain explicit."
           },
-          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head above my neck and my neck above my shoulders [the reported alternative]; correlation, exemplified by this being my father and my being his son;",
+          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head upon my neck and my neck upon my shoulder; correlation, exemplified by this being my father and my being his son;",
           "riskMarkers": []
         },
         {
@@ -89996,7 +89996,7 @@
             "englishSentenceEnd": 60,
             "note": "Place example uses a reported neck/shoulder alternative rather than displayed eye wording; attribution and textual uncertainty remain explicit."
           },
-          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head above my neck and my neck above my shoulders [the reported alternative]; correlation, exemplified by this being my father and my being his son;",
+          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head upon my neck and my neck upon my shoulder; correlation, exemplified by this being my father and my being his son;",
           "riskMarkers": []
         },
         {
@@ -90010,7 +90010,7 @@
             "englishSentenceEnd": 60,
             "note": "Place example uses a reported neck/shoulder alternative rather than displayed eye wording; attribution and textual uncertainty remain explicit."
           },
-          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head above my neck and my neck above my shoulders [the reported alternative]; correlation, exemplified by this being my father and my being his son;",
+          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head upon my neck and my neck upon my shoulder; correlation, exemplified by this being my father and my being his son;",
           "riskMarkers": []
         },
         {
@@ -90024,7 +90024,7 @@
             "englishSentenceEnd": 60,
             "note": "Place example uses a reported neck/shoulder alternative rather than displayed eye wording; attribution and textual uncertainty remain explicit."
           },
-          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head above my neck and my neck above my shoulders [the reported alternative]; correlation, exemplified by this being my father and my being his son;",
+          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head upon my neck and my neck upon my shoulder; correlation, exemplified by this being my father and my being his son;",
           "riskMarkers": []
         },
         {
@@ -90038,7 +90038,7 @@
             "englishSentenceEnd": 60,
             "note": "Place example uses a reported neck/shoulder alternative rather than displayed eye wording; attribution and textual uncertainty remain explicit."
           },
-          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head above my neck and my neck above my shoulders [the reported alternative]; correlation, exemplified by this being my father and my being his son;",
+          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head upon my neck and my neck upon my shoulder; correlation, exemplified by this being my father and my being his son;",
           "riskMarkers": []
         },
         {
@@ -90052,7 +90052,7 @@
             "englishSentenceEnd": 60,
             "note": "Place example uses a reported neck/shoulder alternative rather than displayed eye wording; attribution and textual uncertainty remain explicit."
           },
-          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head above my neck and my neck above my shoulders [the reported alternative]; correlation, exemplified by this being my father and my being his son;",
+          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head upon my neck and my neck upon my shoulder; correlation, exemplified by this being my father and my being his son;",
           "riskMarkers": []
         },
         {
@@ -90066,7 +90066,7 @@
             "englishSentenceEnd": 60,
             "note": "Place example uses a reported neck/shoulder alternative rather than displayed eye wording; attribution and textual uncertainty remain explicit."
           },
-          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head above my neck and my neck above my shoulders [the reported alternative]; correlation, exemplified by this being my father and my being his son;",
+          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head upon my neck and my neck upon my shoulder; correlation, exemplified by this being my father and my being his son;",
           "riskMarkers": []
         },
         {
@@ -90080,7 +90080,7 @@
             "englishSentenceEnd": 60,
             "note": "Place example uses a reported neck/shoulder alternative rather than displayed eye wording; attribution and textual uncertainty remain explicit."
           },
-          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head above my neck and my neck above my shoulders [the reported alternative]; correlation, exemplified by this being my father and my being his son;",
+          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head upon my neck and my neck upon my shoulder; correlation, exemplified by this being my father and my being his son;",
           "riskMarkers": []
         },
         {
@@ -90094,7 +90094,7 @@
             "englishSentenceEnd": 60,
             "note": "Place example uses a reported neck/shoulder alternative rather than displayed eye wording; attribution and textual uncertainty remain explicit."
           },
-          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head above my neck and my neck above my shoulders [the reported alternative]; correlation, exemplified by this being my father and my being his son;",
+          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head upon my neck and my neck upon my shoulder; correlation, exemplified by this being my father and my being his son;",
           "riskMarkers": []
         },
         {
@@ -90108,7 +90108,7 @@
             "englishSentenceEnd": 60,
             "note": "Place example uses a reported neck/shoulder alternative rather than displayed eye wording; attribution and textual uncertainty remain explicit."
           },
-          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head above my neck and my neck above my shoulders [the reported alternative]; correlation, exemplified by this being my father and my being his son;",
+          "englishCorrespondence": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head upon my neck and my neck upon my shoulder; correlation, exemplified by this being my father and my being his son;",
           "riskMarkers": []
         },
         {
@@ -90828,73 +90828,73 @@
         {
           "n": 59,
           "startChar": 5506,
-          "endChar": 5608,
-          "text": "place, exemplified by my head above my neck and my neck above my shoulders [the reported alternative];"
+          "endChar": 5578,
+          "text": "place, exemplified by my head upon my neck and my neck upon my shoulder;"
         },
         {
           "n": 60,
-          "startChar": 5609,
-          "endChar": 5679,
+          "startChar": 5579,
+          "endChar": 5649,
           "text": "correlation, exemplified by this being my father and my being his son;"
         },
         {
           "n": 61,
-          "startChar": 5680,
-          "endChar": 5746,
+          "startChar": 5650,
+          "endChar": 5716,
           "text": "position, exemplified here by my right [the wording is uncertain];"
         },
         {
           "n": 62,
-          "startChar": 5747,
-          "endChar": 5777,
+          "startChar": 5717,
+          "endChar": 5747,
           "text": "acting, exemplified by eating;"
         },
         {
           "n": 63,
-          "startChar": 5778,
-          "endChar": 5825,
+          "startChar": 5748,
+          "endChar": 5795,
           "text": "and being acted upon, exemplified by satiation."
         },
         {
           "n": 64,
-          "startChar": 5826,
-          "endChar": 5921,
+          "startChar": 5796,
+          "endChar": 5891,
           "text": "There are also different forms in bodily coverings, such as elephant, donkey, lion, and ṣarṣar."
         },
         {
           "n": 65,
-          "startChar": 5922,
-          "endChar": 6049,
+          "startChar": 5892,
+          "endChar": 6019,
           "text": "These correspond to human faculties receiving praiseworthy and blameworthy forms: this one is discerning, so he is an elephant;"
         },
         {
           "n": 66,
-          "startChar": 6050,
-          "endChar": 6077,
+          "startChar": 6020,
+          "endChar": 6047,
           "text": "this one dull, so a donkey;"
         },
         {
           "n": 67,
-          "startChar": 6078,
-          "endChar": 6104,
+          "startChar": 6048,
+          "endChar": 6074,
           "text": "this one brave, so a lion;"
         },
         {
           "n": 68,
-          "startChar": 6105,
-          "endChar": 6160,
+          "startChar": 6075,
+          "endChar": 6130,
           "text": "this one cowardly [the suggested reading], so a ṣarṣar."
         },
         {
           "n": 69,
-          "startChar": 6161,
-          "endChar": 6217,
+          "startChar": 6131,
+          "endChar": 6187,
           "text": "Understand: God speaks the truth and guides to the way.’"
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 11
+      "sourceWarnings": 15
     },
     {
       "id": "SH-054",
@@ -90904,7 +90904,7 @@
       "sourceLocator": "A, printed pp. 248–249",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/444?lang=ar",
       "arabicSha256": "74d6b60b2423248d2a568f946c44998cc48461395d3080fa4a439f0352670040",
-      "englishSha256": "e90462e0e4ae60339c05ce1e736540e3b087b50fae1564b94c17df78b2675ec0",
+      "englishSha256": "5562ef6efe49c8f9453dbdc4a2bcd90eb2b677d5e4af45c4d82c955e1820ff89",
       "arabicClauses": [
         {
           "n": 1,
@@ -91085,7 +91085,7 @@
             "englishSentenceEnd": 6,
             "note": "Received sentence about remaining objects is incomplete; the fluent English is a contextual construction, not a demonstrated restoration."
           },
-          "englishCorrespondence": "The remaining things apprehended through that higher faculty can also be reached intellectually.",
+          "englishCorrespondence": "As for the remaining things, just as they are apprehended and reached through the higher faculty, they are also apprehended and reached through intellect.",
           "riskMarkers": []
         },
         {
@@ -91099,7 +91099,7 @@
             "englishSentenceEnd": 6,
             "note": "Received sentence about remaining objects is incomplete; the fluent English is a contextual construction, not a demonstrated restoration."
           },
-          "englishCorrespondence": "The remaining things apprehended through that higher faculty can also be reached intellectually.",
+          "englishCorrespondence": "As for the remaining things, just as they are apprehended and reached through the higher faculty, they are also apprehended and reached through intellect.",
           "riskMarkers": []
         },
         {
@@ -91417,55 +91417,55 @@
         {
           "n": 6,
           "startChar": 750,
-          "endChar": 846,
-          "text": "The remaining things apprehended through that higher faculty can also be reached intellectually."
+          "endChar": 904,
+          "text": "As for the remaining things, just as they are apprehended and reached through the higher faculty, they are also apprehended and reached through intellect."
         },
         {
           "n": 7,
-          "startChar": 848,
-          "endChar": 1059,
+          "startChar": 906,
+          "endChar": 1117,
           "text": "Indeed, whatever apprehends a universal meaning or reality, whether through investigation and demonstration or through unveiling and immediate experience, falls under the definition and description of intellect."
         },
         {
           "n": 8,
-          "startChar": 1060,
-          "endChar": 1352,
+          "startChar": 1118,
+          "endChar": 1410,
           "text": "The distinction arises because intellect in ordinary usage, especially among this group, means the discursive faculty associated with formally constituted sciences: the faculty that derives knowledge from principles by finding middle terms and combining them with the terms of the conclusion."
         },
         {
           "n": 9,
-          "startChar": 1353,
-          "endChar": 1403,
+          "startChar": 1411,
+          "endChar": 1461,
           "text": "This is only one of intellect's powers and levels."
         },
         {
           "n": 10,
-          "startChar": 1405,
-          "endChar": 1643,
+          "startChar": 1463,
+          "endChar": 1701,
           "text": "Their statement that unveiling and genuine perfection occur above intellect in this customary sense therefore does not entail that such a mode is unapprehensible by intellect without qualification, inexpressible, and hence sheer nonbeing."
         },
         {
           "n": 11,
-          "startChar": 1644,
-          "endChar": 2007,
+          "startChar": 1702,
+          "endChar": 2065,
           "text": "Memory, estimation, and imagination—the instruments through which apprehended meanings are expressed in particular words—may fail to obey the discursive intellect because it is weak and lacks mastery over them, while submitting to the higher power: unrestricted intellect illuminated by essential unrestrictedness and strengthened by original comprehensive power."
         },
         {
           "n": 12,
-          "startChar": 2008,
-          "endChar": 2052,
+          "startChar": 2066,
+          "endChar": 2110,
           "text": "It can then employ them for what it intends."
         },
         {
           "n": 13,
-          "startChar": 2053,
-          "endChar": 2264,
+          "startChar": 2111,
+          "endChar": 2322,
           "text": "Hence the expressions of those endowed with this power sometimes attain an inimitable degree of eloquence, beyond what people who spend their lives investigating rhetoric and articulating its rules can approach."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 5
+      "sourceWarnings": 6
     },
     {
       "id": "SH-055",
@@ -91475,7 +91475,7 @@
       "sourceLocator": "A, printed pp. 250–252",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/446?lang=ar",
       "arabicSha256": "52db8e5f26df1130be32b7f86018f72367ecdee274021b03f4e4b14de323b3e3",
-      "englishSha256": "2cc586663ed98c3c4588cf375c4004d12f24fa4b8033476415b96fad643adefc",
+      "englishSha256": "11b13b6afd01f9ed8f8e4288643aa5a2b3c61950c8a553a3b7ea20197da0394d",
       "arabicClauses": [
         {
           "n": 1,
@@ -91670,7 +91670,7 @@
             "englishSentenceEnd": 10,
             "note": "English concealed follows a reported alternative to displayed محققا; this affects the polarity and is not independently settled."
           },
-          "englishCorrespondence": "Whatever attributes predominate in them, necessary or possible, colour its manifestation through those relational considerations, while its own real properties—first among them knowledge—are concealed [following the reported alternative].",
+          "englishCorrespondence": "Whatever attributes predominate in them, necessary or possible, colour its manifestation through those relational considerations, while its own real properties—first among them knowledge—are concealed.",
           "riskMarkers": []
         },
         {
@@ -91684,7 +91684,7 @@
             "englishSentenceEnd": 10,
             "note": "English concealed follows a reported alternative to displayed محققا; this affects the polarity and is not independently settled."
           },
-          "englishCorrespondence": "Whatever attributes predominate in them, necessary or possible, colour its manifestation through those relational considerations, while its own real properties—first among them knowledge—are concealed [following the reported alternative].",
+          "englishCorrespondence": "Whatever attributes predominate in them, necessary or possible, colour its manifestation through those relational considerations, while its own real properties—first among them knowledge—are concealed.",
           "riskMarkers": []
         },
         {
@@ -91698,7 +91698,7 @@
             "englishSentenceEnd": 10,
             "note": "English concealed follows a reported alternative to displayed محققا; this affects the polarity and is not independently settled."
           },
-          "englishCorrespondence": "Whatever attributes predominate in them, necessary or possible, colour its manifestation through those relational considerations, while its own real properties—first among them knowledge—are concealed [following the reported alternative].",
+          "englishCorrespondence": "Whatever attributes predominate in them, necessary or possible, colour its manifestation through those relational considerations, while its own real properties—first among them knowledge—are concealed.",
           "riskMarkers": []
         },
         {
@@ -91712,7 +91712,7 @@
             "englishSentenceEnd": 10,
             "note": "English concealed follows a reported alternative to displayed محققا; this affects the polarity and is not independently settled."
           },
-          "englishCorrespondence": "Whatever attributes predominate in them, necessary or possible, colour its manifestation through those relational considerations, while its own real properties—first among them knowledge—are concealed [following the reported alternative].",
+          "englishCorrespondence": "Whatever attributes predominate in them, necessary or possible, colour its manifestation through those relational considerations, while its own real properties—first among them knowledge—are concealed.",
           "riskMarkers": []
         },
         {
@@ -92082,67 +92082,67 @@
         {
           "n": 10,
           "startChar": 1048,
-          "endChar": 1286,
-          "text": "Whatever attributes predominate in them, necessary or possible, colour its manifestation through those relational considerations, while its own real properties—first among them knowledge—are concealed [following the reported alternative]."
+          "endChar": 1249,
+          "text": "Whatever attributes predominate in them, necessary or possible, colour its manifestation through those relational considerations, while its own real properties—first among them knowledge—are concealed."
         },
         {
           "n": 11,
-          "startChar": 1288,
-          "endChar": 1464,
+          "startChar": 1251,
+          "endChar": 1427,
           "text": "The human heart, because of the breadth of its receptivity and its comprehensiveness joining the two seas of divine names and cosmic realities, is suitable as mirror and locus."
         },
         {
           "n": 12,
-          "startChar": 1465,
-          "endChar": 1641,
+          "startChar": 1428,
+          "endChar": 1604,
           "text": "It therefore receives particular and universal governing properties, continually changing according to what passes within it, whether particular or universal, divine or cosmic."
         },
         {
           "n": 13,
-          "startChar": 1642,
-          "endChar": 1951,
+          "startChar": 1605,
+          "endChar": 1914,
           "text": "If no particular object enters it, no determinate attribute dominates it, and it is purified of attachments—even an orientation to the Real through a particular belief or resort to Him through a particular name—the disclosure then appears according to essential comprehensive oneness with its real properties."
         },
         {
           "n": 14,
-          "startChar": 1952,
-          "endChar": 2015,
+          "startChar": 1915,
+          "endChar": 1978,
           "text": "First in rank and closest in relation among these is knowledge."
         },
         {
           "n": 15,
-          "startChar": 2017,
-          "endChar": 2495,
+          "startChar": 1980,
+          "endChar": 2458,
           "text": "These premises show why continual watchfulness is a most fitting means and nearest route to knowledge, especially when joined to the manners and conditions recognized by the practitioners of this discipline: weaning the soul from habitual objects, disregarding conventions and habits, abandoning the demands of bodily animal powers—appetite and predatory anger—used to procure worldly pleasures and repel bodily discomforts, and bringing them into obedience to the holy faculty."
         },
         {
           "n": 16,
-          "startChar": 2496,
-          "endChar": 2664,
+          "startChar": 2459,
+          "endChar": 2627,
           "text": "It also involves resisting what the restrictions require, whether through their own natures or through their submission to appetite, estimation, and bodily imagination."
         },
         {
           "n": 17,
-          "startChar": 2666,
-          "endChar": 2832,
+          "startChar": 2629,
+          "endChar": 2795,
           "text": "Indulging those faculties and restrictions conversely subjects the holy faculty to their direction and draws it toward the body, matter, and its obscuring conditions."
         },
         {
           "n": 18,
-          "startChar": 2833,
-          "endChar": 3160,
+          "startChar": 2796,
+          "endChar": 3123,
           "text": "The source's exact sentence here is disordered, but its subsequent causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands."
         },
         {
           "n": 19,
-          "startChar": 3161,
-          "endChar": 3246,
+          "startChar": 3124,
+          "endChar": 3209,
           "text": "For, as the established maxim states, disorders are treated through their contraries."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 7
+      "sourceWarnings": 9
     },
     {
       "id": "SH-056",
@@ -93896,7 +93896,7 @@
       "sourceLocator": "A, printed pp. 260–262",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/456?lang=ar",
       "arabicSha256": "bb98611de75666be2da458ebfa55196fd95ec6eddbee93d70fc73d8f64f11ebe",
-      "englishSha256": "09b074c1cd0be1606d5f3e86d1d9bed603d2dcdbe203c6ba00d11841a16ae74e",
+      "englishSha256": "e12a489b262fb9b951f15530fc1b6b19bcc4541567d08958740efb1d26544a65",
       "arabicClauses": [
         {
           "n": 1,
@@ -94119,7 +94119,7 @@
             "englishSentenceEnd": 10,
             "note": "Earlier correction following السهو as lapses of attention is preserved; السهر parallel and الانفعالية/الانتقالية remain distinct source questions."
           },
-          "englishCorrespondence": "The same applies to sleep and lapses of attention, and to the hunger and satiety that can give rise to them. Excess in any of these dulls and weakens the discursive faculty, preventing the movement between considerations by which acquired conclusions are reached.",
+          "englishCorrespondence": "The same applies to sleep and wakefulness, and to the hunger and satiety that can give rise to them. Excess in any of these dulls and weakens the discursive faculty, preventing the transitional movement through which acquired conclusions are reached.",
           "riskMarkers": []
         },
         {
@@ -94133,7 +94133,7 @@
             "englishSentenceEnd": 10,
             "note": "Earlier correction following السهو as lapses of attention is preserved; السهر parallel and الانفعالية/الانتقالية remain distinct source questions."
           },
-          "englishCorrespondence": "The same applies to sleep and lapses of attention, and to the hunger and satiety that can give rise to them. Excess in any of these dulls and weakens the discursive faculty, preventing the movement between considerations by which acquired conclusions are reached.",
+          "englishCorrespondence": "The same applies to sleep and wakefulness, and to the hunger and satiety that can give rise to them. Excess in any of these dulls and weakens the discursive faculty, preventing the transitional movement through which acquired conclusions are reached.",
           "riskMarkers": []
         },
         {
@@ -94679,127 +94679,127 @@
         {
           "n": 9,
           "startChar": 769,
-          "endChar": 877,
-          "text": "The same applies to sleep and lapses of attention, and to the hunger and satiety that can give rise to them."
+          "endChar": 869,
+          "text": "The same applies to sleep and wakefulness, and to the hunger and satiety that can give rise to them."
         },
         {
           "n": 10,
-          "startChar": 878,
-          "endChar": 1032,
-          "text": "Excess in any of these dulls and weakens the discursive faculty, preventing the movement between considerations by which acquired conclusions are reached."
+          "startChar": 870,
+          "endChar": 1019,
+          "text": "Excess in any of these dulls and weakens the discursive faculty, preventing the transitional movement through which acquired conclusions are reached."
         },
         {
           "n": 11,
-          "startChar": 1033,
-          "endChar": 1186,
+          "startChar": 1020,
+          "endChar": 1173,
           "text": "Everything maintaining a balanced constitution is necessary in both inference and purification, just as everything disturbing it must be avoided in both."
         },
         {
           "n": 12,
-          "startChar": 1188,
-          "endChar": 1376,
+          "startChar": 1175,
+          "endChar": 1363,
           "text": "The claim of some investigators—that purification depends on prior reflective inquiry to attain truths, while inquiry is independently sufficient—is therefore the reverse of the situation."
         },
         {
           "n": 13,
-          "startChar": 1377,
-          "endChar": 1531,
+          "startChar": 1364,
+          "endChar": 1518,
           "text": "Reflective inquiry is the conditioned path, while purification is what it needs to attain its object and is the path that may be independently sufficient."
         },
         {
           "n": 14,
-          "startChar": 1532,
-          "endChar": 1669,
+          "startChar": 1519,
+          "endChar": 1656,
           "text": "For those supported by sound innate disposition and directed along straight methods, bringing together its conditions is not implausible."
         },
         {
           "n": 15,
-          "startChar": 1670,
-          "endChar": 1890,
+          "startChar": 1657,
+          "endChar": 1877,
           "text": "No one has claimed this for people indiscriminately: ‘The presence of the Real is too exalted to be a watering-place for every arrival.’\n\nDistracting thoughts impede both paths, so the difficulty bears equally upon both."
         },
         {
           "n": 16,
-          "startChar": 1891,
-          "endChar": 1979,
+          "startChar": 1878,
+          "endChar": 1966,
           "text": "The heart's nature, under the order of encompassing wisdom, is disposed to rapid change."
         },
         {
           "n": 17,
-          "startChar": 1980,
-          "endChar": 2112,
+          "startChar": 1967,
+          "endChar": 2099,
           "text": "But practitioners do not regard it as impossible to quiet imagination's confused movements and restrain its distracting transitions."
         },
         {
           "n": 18,
-          "startChar": 2113,
-          "endChar": 2193,
+          "startChar": 2100,
+          "endChar": 2180,
           "text": "Some occupy it with firm recitations, forceful utterance, and sound foundations."
         },
         {
           "n": 19,
-          "startChar": 2194,
-          "endChar": 2322,
+          "startChar": 2181,
+          "endChar": 2309,
           "text": "others with pleasurable, longing-inducing melodies, delicate love poetry, and chaste love, as people of spiritual taste observe."
         },
         {
           "n": 20,
-          "startChar": 2324,
-          "endChar": 2527,
+          "startChar": 2311,
+          "endChar": 2514,
           "text": "These measures work through cutting external ties with the swords of detachment and singleness, and uprooting their inward sources through the storms of realization—not through the scissors of imitation."
         },
         {
           "n": 21,
-          "startChar": 2529,
-          "endChar": 2699,
+          "startChar": 2516,
+          "endChar": 2686,
           "text": "You may object that the path's first stage is emptying the heart of what distracts it from itself, then preparing to receive existential disclosures and generous breaths."
         },
         {
           "n": 22,
-          "startChar": 2700,
-          "endChar": 2779,
+          "startChar": 2687,
+          "endChar": 2766,
           "text": "Such emptying seems incompatible with the busy movements of discursive thought."
         },
         {
           "n": 23,
-          "startChar": 2780,
-          "endChar": 2937,
+          "startChar": 2767,
+          "endChar": 2924,
           "text": "I reply that first acquiring stable psychic capacities for apprehension does not conflict with subsequently emptying the receptacle of particular cognitions."
         },
         {
           "n": 24,
-          "startChar": 2938,
-          "endChar": 3064,
+          "startChar": 2925,
+          "endChar": 3051,
           "text": "The difficulty would affect someone who holds that reflective inquiry is independently sufficient or absolutely indispensable."
         },
         {
           "n": 25,
-          "startChar": 3065,
-          "endChar": 3104,
+          "startChar": 3052,
+          "endChar": 3091,
           "text": "That is not the author's position here."
         },
         {
           "n": 26,
-          "startChar": 3105,
-          "endChar": 3253,
+          "startChar": 3092,
+          "endChar": 3240,
           "text": "He holds that purification is independently sufficient, while reflective inquiry at most does not obstruct it and may provide a kind of preparation."
         },
         {
           "n": 27,
-          "startChar": 3255,
-          "endChar": 3467,
+          "startChar": 3242,
+          "endChar": 3454,
           "text": "This is clear from his correspondence with a leading master of unveiling and witnessing, to whom he writes: ‘Preparing the holy receptacle through movements of discursive thought and longing is not an impediment."
         },
         {
           "n": 28,
-          "startChar": 3468,
-          "endChar": 3684,
+          "startChar": 3455,
+          "endChar": 3671,
           "text": "It is beneficial and fruitful for bringing into manifestation the cognitions and wisdom latent within it, when the holy faculty masters the bodily powers and maintains its ascendancy over estimation and imagination.’"
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 8
+      "sourceWarnings": 9
     },
     {
       "id": "SH-059",
@@ -95670,7 +95670,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 6
+      "sourceWarnings": 7
     },
     {
       "id": "SH-060",
@@ -96721,7 +96721,7 @@
       "sourceLocator": "A, printed pp. 271–272",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/467?lang=ar",
       "arabicSha256": "0ac3751da45b8dde4b7a505627cfe07a5e5f9a456d0ca3a27cb5f8979bc5525d",
-      "englishSha256": "b61f359add0fc34ed2b958834ef0c199a1af4c93316377c8704d812eddfeaec1",
+      "englishSha256": "4c7e868c9019fd294b957b9c437fe70127911675686fcdd5880ee9f823db896e",
       "arabicClauses": [
         {
           "n": 1,
@@ -96858,9 +96858,9 @@
             "status": "corrected-with-source-crux",
             "englishSentenceStart": 6,
             "englishSentenceEnd": 7,
-            "note": "English now retains distinguishing some contents from others. Final Arabic البعض/النقص apparatus remains unresolved."
+            "note": "H2014 II:596 omits A's part-to-part wording here. The present English follows H as a working reading; A remains preserved. No independent original manuscript collation."
           },
-          "englishCorrespondence": "Testing that attainment against the measure would have disclosed its deficiency and enabled him to distinguish some of its contents from others. He would not have rested in complete assurance but would have sought something higher and more perfect.",
+          "englishCorrespondence": "Testing that attainment against the measure would have disclosed its deficiency . He would not have rested in complete assurance but would have sought something higher and more perfect.",
           "riskMarkers": []
         },
         {
@@ -96872,9 +96872,9 @@
             "status": "corrected-with-source-crux",
             "englishSentenceStart": 6,
             "englishSentenceEnd": 7,
-            "note": "English now retains distinguishing some contents from others. Final Arabic البعض/النقص apparatus remains unresolved."
+            "note": "H2014 II:596 omits A's part-to-part wording here. The present English follows H as a working reading; A remains preserved. No independent original manuscript collation."
           },
-          "englishCorrespondence": "Testing that attainment against the measure would have disclosed its deficiency and enabled him to distinguish some of its contents from others. He would not have rested in complete assurance but would have sought something higher and more perfect.",
+          "englishCorrespondence": "Testing that attainment against the measure would have disclosed its deficiency . He would not have rested in complete assurance but would have sought something higher and more perfect.",
           "riskMarkers": []
         },
         {
@@ -96886,9 +96886,9 @@
             "status": "corrected-with-source-crux",
             "englishSentenceStart": 6,
             "englishSentenceEnd": 7,
-            "note": "English now retains distinguishing some contents from others. Final Arabic البعض/النقص apparatus remains unresolved."
+            "note": "H2014 II:596 omits A's part-to-part wording here. The present English follows H as a working reading; A remains preserved. No independent original manuscript collation."
           },
-          "englishCorrespondence": "Testing that attainment against the measure would have disclosed its deficiency and enabled him to distinguish some of its contents from others. He would not have rested in complete assurance but would have sought something higher and more perfect.",
+          "englishCorrespondence": "Testing that attainment against the measure would have disclosed its deficiency . He would not have rested in complete assurance but would have sought something higher and more perfect.",
           "riskMarkers": []
         }
       ],
@@ -96926,19 +96926,19 @@
         {
           "n": 6,
           "startChar": 843,
-          "endChar": 987,
-          "text": "Testing that attainment against the measure would have disclosed its deficiency and enabled him to distinguish some of its contents from others."
+          "endChar": 924,
+          "text": "Testing that attainment against the measure would have disclosed its deficiency ."
         },
         {
           "n": 7,
-          "startChar": 988,
-          "endChar": 1091,
+          "startChar": 925,
+          "endChar": 1028,
           "text": "He would not have rested in complete assurance but would have sought something higher and more perfect."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 3
+      "sourceWarnings": 4
     },
     {
       "id": "SH-061-F",
@@ -97117,7 +97117,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 4
+      "sourceWarnings": 6
     },
     {
       "id": "SH-061-A",
@@ -97127,7 +97127,7 @@
       "sourceLocator": "A, printed p. 274",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/470?lang=ar",
       "arabicSha256": "ac5bb55b771aad046eb7cf08a14965b4a4fecda564cb810bf7a4f2102309e79d",
-      "englishSha256": "58408eb305df1e7d0a463792c6c4d7e93a8b18420b3f823da431f66635a50b8a",
+      "englishSha256": "a0309c2b3bfa55c8936b4a65931bf90cdfaaa2470f6f564b767584565292981b",
       "arabicClauses": [
         {
           "n": 1,
@@ -97140,7 +97140,7 @@
             "englishSentenceEnd": 1,
             "note": "أقفاله/إقباله/أفعاله variants materially affect metaphor; the principal displayed reading is followed."
           },
-          "englishCorrespondence": "All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his locks and states.",
+          "englishCorrespondence": "All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his actions and states.",
           "riskMarkers": []
         },
         {
@@ -97154,7 +97154,7 @@
             "englishSentenceEnd": 1,
             "note": "أقفاله/إقباله/أفعاله variants materially affect metaphor; the principal displayed reading is followed."
           },
-          "englishCorrespondence": "All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his locks and states.",
+          "englishCorrespondence": "All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his actions and states.",
           "riskMarkers": []
         },
         {
@@ -97168,7 +97168,7 @@
             "englishSentenceEnd": 1,
             "note": "أقفاله/إقباله/أفعاله variants materially affect metaphor; the principal displayed reading is followed."
           },
-          "englishCorrespondence": "All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his locks and states.",
+          "englishCorrespondence": "All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his actions and states.",
           "riskMarkers": []
         },
         {
@@ -97232,25 +97232,25 @@
         {
           "n": 1,
           "startChar": 0,
-          "endChar": 159,
-          "text": "All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his locks and states."
+          "endChar": 161,
+          "text": "All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his actions and states."
         },
         {
           "n": 2,
-          "startChar": 160,
-          "endChar": 318,
+          "startChar": 162,
+          "endChar": 320,
           "text": "If, however, he does have such a guide, then every stage and station has sciences and a measure proper to it, according to the time and the seeker's capacity."
         },
         {
           "n": 3,
-          "startChar": 319,
-          "endChar": 463,
+          "startChar": 321,
+          "endChar": 465,
           "text": "The guide, discerning the successive degrees of that capacity, draws the traveller's attention to those sciences and their appropriate measures."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 3
+      "sourceWarnings": 4
     },
     {
       "id": "SH-061-B",

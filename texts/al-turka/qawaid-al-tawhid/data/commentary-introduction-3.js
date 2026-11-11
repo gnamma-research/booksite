@@ -68,7 +68,8 @@ window.GNAMMA_TAMHID_INTRO = (window.GNAMMA_TAMHID_INTRO || []).concat([
       "The passage's account of real mental objects is philosophically compressed and potentially disputable. It is not rewritten into a more familiar modern theory of abstract objects.",
       "The later editor's identification of all second-level objects as logical second intelligibles is omitted because it is an inserted gloss rather than Ibn Turka's own wording.",
       "At the disjunction «أو يكن», the English “or does not” supplies a negative demanded by the following «فإن لم يكن». This remains a contextual construction of the electronic N text, not a verified manuscript correction.",
-      "Electronic-text comparison (2026-11-11): N has أو يكن without negative; English supplies or does not contextually."
+      "Electronic-text comparison (2026-11-11): N has أو يكن without negative; English supplies or does not contextually.",
+      "Qawtaw7 / H2014 H2014/1:129: supported reading. Preferred: «أو لم يكن». The negative is now supported by a separately printed quotation, not solely supplied from context. The A/N electronic wording remains preserved in the witness apparatus."
     ],
     "comparativeReview": {
       "date": "2026-11-11",
@@ -77,7 +78,26 @@ window.GNAMMA_TAMHID_INTRO = (window.GNAMMA_TAMHID_INTRO || []).concat([
       "manuscriptCollation": false,
       "independentHumanCertification": false,
       "hasUnresolvedReadings": true
-    }
+    },
+    "witnessComparisons": [
+      {
+        "stage": "Qawtaw7",
+        "number": 16,
+        "status": "supported-reading",
+        "printedComparator": "H2014",
+        "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+        "sourceLocations": [
+          "H2014/1:129"
+        ],
+        "sourceExcerpt": "إذ محصل هذا التقسيم أن ما يتصوره العقل لا يخلو من أن يكون قابلا للحوق الوجود في نفسه، أو يكن،",
+        "preferredReading": "أو لم يكن",
+        "interpretation": "Whatever intellect conceives either admits existence in itself or does not.",
+        "editorialDecision": "The negative is now supported by a separately printed quotation, not solely supplied from context.",
+        "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+        "manuscriptCollation": false
+      }
+    ],
+    "readingArabic": "ومن هذا القسم ما يكون بالقياس إلى الخارج أيضا موجودا، وهو المسمى بالوجود الخارجي؛ أي الخارج عن المشاعر، ومنه ما يكون تحققه في المشاعر كالنسب والإضافات الحقيقية وسائر ما يقع في الدرجة الثانية من التعقل. لا يقال: فحينئذ يكون هذا من أقسام الوجود الفرضي، ضرورة أن حصوله إنما هو في القوى المدركة؛ لأنا نقول: حصوله وإن كان في القوى المدركة ولكن ليس مختصا بها، بل له في الخارج عنها وجود، فهو من أقسام الموجودات الحقيقية؛ إذ محصل هذا التقسيم أن ما يتصوره العقل لا يخلو من أن يكون قابلا للحوق الوجود في نفسه، أو لم يكن، فإن لم يكن فهو الموجودات الفرضية وإن كان قابلا له، فهو الموجود الحقيقي، وذلك لا يخلو من أن يختص بلحوقه له خارجا عن المشاعر أو لا، فالأول هو الموجود الخارجي، والثاني هو الموجود الذهني."
   },
   {
     "id": "SH-INTRO-026",

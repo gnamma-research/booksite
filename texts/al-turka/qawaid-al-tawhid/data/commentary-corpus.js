@@ -16,7 +16,7 @@
     seen.add(u.id);
   }
   window.GNAMMA_TAMHID_CORPUS={
-    schema:'gnamma-tamhid-corpus-v2',updated:'2026-11-11',author:'Ṣāʾin al-Dīn ʿAlī Ibn Turka',title:'Tamhīd al-Qawāʿid',
+    schema:'gnamma-tamhid-corpus-v2',updated:'2026-11-11-Qawtaw7',author:'Ṣāʾin al-Dīn ʿAlī Ibn Turka',title:'Tamhīd al-Qawāʿid',
     status:'complete-source-based-working-translation; independent manuscript collation and specialist review outstanding',
     coverage:{introductionUnits:intro.length,mainUnits:main.length,mainLastMatn:"QT-060",additionalMainBridgeUnits:4,conclusionUnits:conclusion.length,totalTranslatedUnits:units.length,authorialIntroductionCompleteInConsultedOnlineSource:intro.length===40,closingCommentaryCompleteInConsultedOnlineSource:conclusion.length===6,wholeCommentaryComplete:true,sourceScopedTranslationComplete:true,manuscriptCriticalEditionComplete:false,fullWorkPercentage:null},
     sources:{N:{label:'Nekounam edition, Tehran, Ṣubḥ-i Fardā, 1393 SH',url:N,extent:'Online authorial opening, printed markers 19–42 and final continuation without a following visible page marker'},A:{label:'Āshtiyānī edition, digital Arabic transcription',url:'https://ablibrary.net/book_content/b/17638/466?lang=ar',extent:'Continuous main commentary pp.48–269 and closing commentary pp.270–274; four additional ancestral bridges retained'},L:{label:'Lumbard, Establishing the Principles, Anthology of Philosophy in Persia IV, pp.464–479',url:L,role:'Interpretative and terminological comparator; not an Arabic witness or English copy-text'}},

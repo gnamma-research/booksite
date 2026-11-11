@@ -21,7 +21,8 @@ window.GNAMMA_TAMHID_MAIN = [
       "The identification of the two groups of critics is expressly tentative in the first case: يمكن أن يكون. The translation preserves that qualification.",
       "Lumbard pp.468–469 was consulted for comparison; the English here is independently translated from A.",
       "The electronic A text at SH-001 has «الخنم» where the English reads “sealing” as though «الختم». This contextual reading remains unverified against a source photograph.",
-      "Electronic-text comparison (2026-11-11): Electronic الخنم rendered sealing as though الختم; invocation retained, no witnessed correction claimed."
+      "Electronic-text comparison (2026-11-11): Electronic الخنم rendered sealing as though الختم; invocation retained, no witnessed correction claimed.",
+      "Qawtaw7 / H2014 H2014/1:205: supported reading. Preferred: «بمزية الختم والتمام». The printed medieval lemma has الختم, not the digital الخنم. Adopt الختم for a corrected reading text while preserving the old transcription in the apparatus. The A/N electronic wording remains preserved in the witness apparatus."
     ],
     "kind": "sharh",
     "part": "main",
@@ -56,7 +57,26 @@ window.GNAMMA_TAMHID_MAIN = [
       "manuscriptCollation": false,
       "independentHumanCertification": false,
       "hasUnresolvedReadings": true
-    }
+    },
+    "witnessComparisons": [
+      {
+        "stage": "Qawtaw7",
+        "number": 19,
+        "status": "supported-reading",
+        "printedComparator": "H2014",
+        "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+        "sourceLocations": [
+          "H2014/1:205"
+        ],
+        "sourceExcerpt": "الذين منهم من اختصَّ في تلك المظهريَّة و المرآتيَّة بمزيَّة الخنم و التمام ، عليه و على آله الصلاة و السلام .",
+        "preferredReading": "بمزية الختم والتمام",
+        "interpretation": "With the distinction of sealing and completion.",
+        "editorialDecision": "The printed medieval lemma has الختم, not the digital الخنم. Adopt الختم for a corrected reading text while preserving the old transcription in the apparatus.",
+        "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+        "manuscriptCollation": false
+      }
+    ],
+    "readingArabic": "أقول : اعلم ان هذه القرينة المُصَدَّر بها هاهنا مع اشتمالها على ما هو الواجب تقديمه . في نظر التأليف و التصنيف ، متضمنة ايضاً لما يدل عليه مقاصد هذه الرسالة اجمالًا على ما هو مقتضى صناعة التعليم و التفهيم ، و ذلك لأن الكلام فيها يرجع إلى مطلبين :\nالأول ، إثبات وحدة مطلق الوجود و وجوبه ، و حصر ما يستوجب الحمد ، من الصفات الكماليَّة فيه ، فيكون قوله : الحمد لوليّه ، إشارة إليه .\nو الثاني ، إثبات ان الحقيقة المطلقة المذكورة ، و ان كانت الموجودات كلّها مظاهرها ، لكنها بجملة مراتبها واحديَّة جمعيتها انما ظهرت في افراد الحقيقة النوعيَّة الانسانيّة المتحققين بالمراتب المذكورة ذوقا و شهوداً ، الذين منهم من اختصَّ في تلك المظهريَّة و المرآتيَّة بمزيَّة الختم و التمام ، عليه و على آله الصلاة و السلام .\n\nفقوله : و الصلاة على نبيِّه ، إشارة إليه ، ثمَّ قوله : ذهب إليه العارفون ، إشارة إلى المتأخِّرين من الأولياء المحمديين ، صلوات اللَّه و سلامه عليهم ، و رضى عنهم ، الذين صرَّحوا بافشائها و باحوا ، بانشادها و انشائها نظماً و نثراً ، و استدلوا على إثباتها للمستبصرين ، نقلًا و عقلًا .\nو قوله : و أشار إليه المحققون ، إشارة إلى المتقدمين كالأنبياء ، سلام اللَّه عليهم ، و تلامذتهم الأولياء من الهرامسة و الحكماء القدماء الذين لا يقصدونها في غالب عباراتهم الا بنوع من الرّمز و الإيماء جرياً في كل زمان على مقتضى مدارك اهله و تنزلًا إلى مدارج أفهامهم ، و لا يدلّون عليها الا بتلويح يكون فيه ضرب من الستر و الخفاء تعميماً لما افاده على الخاص و العام جميعاً من جوامع كلامهم .\nقوله : الناظرين من المجادلين ، يمكن ان يكون المراد به المتكلمين ، كما ان القصد بقوله ، الفضلاء الباحثين ، طائفة من الحكماء المشّاءين ."
   },
   {
     "id": "SH-002",
@@ -84,7 +104,8 @@ window.GNAMMA_TAMHID_MAIN = [
       "Raqīqa and munāsaba are rendered as subtle connection and correspondence; this retains the causal analogy rather than introducing a mechanical connector not present in the text.",
       "Inline reported readings retained separately from the reading text: ( موارد - خ ); ( لذلك - خ ); ( موجب - خ )",
       "The retained A Arabic reads «القطع ببطلان مسألة التوحيد», literally “certainty that the doctrine of unity is invalid”. This conflicts with the preceding account of the opponent’s inference from certainty in its truth. The English now preserves the received negative with [sic]; the earlier bracketed “[in this doctrine of unity]” was a contextual reversal, not a witnessed reading. Independent print/manuscript comparison is still required.",
-      "The electronic string «العزيزية إلى هي الوجدانيات» is read contextually as the instinctive/immediately experienced class, following the surrounding matn’s classification; it is not certified as a diplomatic reading."
+      "The electronic string «العزيزية إلى هي الوجدانيات» is read contextually as the instinctive/immediately experienced class, following the surrounding matn’s classification; it is not certified as a diplomatic reading.",
+      "Qawtaw7 / H2014 H2014/1:221, H2014/1:222, H2014/1:223, H2014/1:224: partial resolution. Preferred: «والغريزية التي هي الوجدانيات; main ببطلان retained». H2014 p224 prints ببطلان مسألة التوحيد too, although its explanation on pp221–223 presupposes certainty in unity. This is evidence that the polarity problem is not merely the current digital transcription. Do not silently delete the negative; الغريزية/التي are directly supported lexical corrections. The A/N electronic wording remains preserved in the witness apparatus."
     ],
     "kind": "sharh",
     "part": "main",
@@ -126,7 +147,29 @@ window.GNAMMA_TAMHID_MAIN = [
       "manuscriptCollation": false,
       "independentHumanCertification": false,
       "hasUnresolvedReadings": false
-    }
+    },
+    "witnessComparisons": [
+      {
+        "stage": "Qawtaw7",
+        "number": 20,
+        "status": "partial-resolution",
+        "printedComparator": "H2014",
+        "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+        "sourceLocations": [
+          "H2014/1:221",
+          "H2014/1:222",
+          "H2014/1:223",
+          "H2014/1:224"
+        ],
+        "sourceExcerpt": "و بيان ذلك ان القطع ببطلان مسألة التوحيد قطع ببطلان جميع اقسام اليقينيّات . من العقليّة المبرهنة و التي قياساتها معها و الحسّية التي هي من المشاهدات و الفطريَّة التي هي الأوليّات و العزيزية إلى هي الوجدانيات ،",
+        "preferredReading": "والغريزية التي هي الوجدانيات; main ببطلان retained",
+        "interpretation": "Instinctive cognitions, namely immediately experienced cognitions. The additional negative in certainty of the invalidity of unity remains problematic.",
+        "editorialDecision": "H2014 p224 prints ببطلان مسألة التوحيد too, although its explanation on pp221–223 presupposes certainty in unity. This is evidence that the polarity problem is not merely the current digital transcription. Do not silently delete the negative; الغريزية/التي are directly supported lexical corrections.",
+        "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+        "manuscriptCollation": false
+      }
+    ],
+    "readingArabic": "أقول : اعلم ان من عادة المصنّف ، كما علم من تَصَفُّح كلامه في ساير كتبه ، ان يقرِّر اولًا عند إثبات المطالب النظريَّة كلام الخصم بما استدلّ به عليه بأوثق بيان ، و يجتهد في تأسيس قواعده و تشييد معاقده\n\nحسب الإمكان ، ثمَّ يشرع ثانياً في تبيين موارد شكوكه و مشتبهاته و قطع مواد شبهاته . فأراد ان يسلك في هذه الرسالة مسلكه المعتاد ، و لهذا صدّرها بما يمكن ان يستدل به الخصم على فساد طريقهم الموصل إلى مطالبهم الكشفيَّة و معارفهم الذوقيَّة ، المسمى بطريق التصفية و التخلية ، و ذلك لأنَّه هنا بمنزلة افادة النظر في طريق الاستدلال ، فيجب تقديمه على ساير الأبحاث و الأقوال .\nو بيانه ، ان القطع بحقيَّة هذه المسألة يدل على ان امزجة موضوعات القوى النفسانيَّة ، التي هي مناط الإدراكات ، قد انحرفت عن أصلها ، بل ، قد استحكم فيها سوء المزاج و استمرّ بها ما يستوجب العلاج ، و الا لما قطع بها كل القطع ، فيكون السبب المعدّ و الطريق الموصل بذلك القطع ، هو اختلال القوى الادراكيَّة و لا شك ان كل طريق يكون عبارة عن اختلال قوى الادراكيَّة ، انّما يكون طريقاً للجهل و النقصان ، فضلًا عن ان يكون موصلًا إلى العلوم اليقينيَّة و الكمالات الحقيقيَّة .\nفان قلت : كيف يمكن الاستدلال بالقطع العلمي الذي هو من قبيل الكيفيات النفسانيَّة على انحراف امزجة موضوعات القوى ، التي هي من الكيفيّات الجسمانيَّة ؟\nقلنا : انّه من قبيل الاستدلال بثبوت المعلول على تحقق العلَّة المسمى\n\nببرهان الان ، عند اهل النظر ، و بيان العليَّة ظاهر . فان اختلال موضوعات القوى النفسانية ، اعنى ، الأعضاء للآلات الفكرية الدماغية ، التي هي للبصيرة المميِّزة الحاكمة على الأشياء بما هي عليه ، بمنزلة أجزاء العين و طبقاتها لقوة الأبصار ، سبب اختلال مدركات تلك الموضوعات ، كما ان اختلال شيء من أجزاء العين موجب للاختلال في مدركاتها ، و ذلك لأن كل ادراك ، يكون بتوسط آلة من الآلات الجسمانيَّة ، لا بدَّ و ان يكون به حكم رقيقة حقيقةٍ ، و وساطة مناسبة جامعة ، بين طبيعة تلك الالة و نوع ذلك الإدراك ، و الا لما اختصَّ بها دون غيرها من الآلات . و حينئذ يلزم ان يكون انحراف مزاج تلك الآلة عن حقيقتها الاعتداليَّة ، يوجب بطلان حكم الرقيقة ، ضرورة بطلان حكم الشيء عند انتفائه ، فبحسب بعدها عن المناسبة يقع الاختلال و الفساد في الإدراك ، فكلّما انحرف المزاج ، انحرف المدركات عن أصلها القويم و نهجها المستقيم ، ضرورة ، سيّما إذا استحكم ذلك الانحراف و استمر .\nلا يقال : انّما يتمُّ هذا لو كان المسألة من قبيل الصور و المعاني الجزئية التي يدركها النفس بواسطة القوى الجسمانيَّة و الآلات الهيولانيَّة ، اما إذا كانت من قبيل الكليّات التي تعقُّلها النفس بدون توسط شيء من الآلات ، فكيف يتمّ هذا الاستدلال ؟\nلانّا نقول : على تقدير تسليم ، ان هذه المسألة من قبيل الكليّات ، لا نسلّم ان جميع الكليات انّما تعقُّلها النفس بدون توسُّط الآلات ، فان من الكليّات ما تعقلها بها بعد انتزاعها من الجزئيّات بحذف المشخصات ، و يسمى كلّيا بعد الكثرة و لئن سلّمنا ذلك ، لكن لا نسلّم ان هذا الاستدلال انَّما هو بإدراك نفس هذه المسألة ، بل انما هو باعتبار ما يستلزمه من رفع المشاهدات و الأوليّات ، و لهذا استدل على ذلك بقوله ، إذ القطع ببطلان جميع الأحكام العقلية . . . و بيان ذلك ان القطع ببطلان مسألة التوحيد قطع ببطلان جميع اقسام اليقينيّات . من العقليّة المبرهنة و التي قياساتها معها و الحسّية\n\nالتي هي من المشاهدات و الفطريَّة التي هي الأوليّات و الغريزية التي هي الوجدانيات ، و ذلك لما في زعمهم من ان الحكم بتمايز الماهيات ، و تخالف المتعيّنات على ما هو مقتضى تلك المقدمات ، ينافي الحكم بهذه المسألة الرافعة لأحكام التفرقة و التميز .\nثمَّ ان بُدوّ علامات الأمراض إذا كان مسبوقاً بارتكاب أسبابها ممّا يقضى به الحدس القويم و الذهن المستقيم على طريان ذلك المرض الخبيث ، و لهذا استعقب ذلك الاستدلال بقوله ، عقيب ارتكاب المجاهدات و الرياضات الجزافيَّة ، التي هي عبارة عن السهر و الجوع المفرطين الموجبين لاستيلاء المرّة السّوداء على الأعضاء الدماغيَّة الشريفة الأصليَّة التي هي مناط ساير الإدراكات العقليَّة التي هي المبدأ الأصلي للصورة المقوِّمة للحقيقة النوعية الانسانيَّة ."
   },
   {
     "id": "SH-003",
@@ -452,7 +495,8 @@ window.GNAMMA_TAMHID_MAIN = [
       "A repeats almost verbatim the sentence contrasting possible quiddities with the necessary nature. The Arabic source preserves that repetition; the English renders the repeated content once, with the duplication explicitly registered here.",
       "Malzūm means what entails a concomitant. It is not automatically translated as an efficient cause; causal claims are rendered only where the text makes them.",
       "The retained A transcription repeats the clause beginning «إلا أن الوجودات الممكنات لها ماهيات» twice, with a small pronoun difference. The working English renders its content once; this is an acknowledged reading-text treatment of suspected duplication, not a verified deletion from an independent witness.",
-      "Electronic-text comparison (2026-11-11): Arabic repeats possible-existence/quiddity clause; English translates once, with duplication explicitly retained in Arabic and apparatus."
+      "Electronic-text comparison (2026-11-11): Arabic repeats possible-existence/quiddity clause; English translates once, with duplication explicitly retained in Arabic and apparatus.",
+      "Qawtaw7 / H2014 H2014/1:293: supported reading. Preferred: «إلا أن وجودات الممكنات لها ماهيات معروضة لها ... دون الطبيعة الخاصة الواجبة». The complete printed medieval paragraph contains the clause once; modern brackets explain its pronouns. No medieval manuscript deletion is claimed. The A/N electronic wording remains preserved in the witness apparatus."
     ],
     "kind": "sharh",
     "part": "main",
@@ -477,7 +521,26 @@ window.GNAMMA_TAMHID_MAIN = [
       "manuscriptCollation": false,
       "independentHumanCertification": false,
       "hasUnresolvedReadings": true
-    }
+    },
+    "witnessComparisons": [
+      {
+        "stage": "Qawtaw7",
+        "number": 21,
+        "status": "supported-reading",
+        "printedComparator": "H2014",
+        "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+        "sourceLocations": [
+          "H2014/1:293"
+        ],
+        "sourceExcerpt": "الا ان الوجودات الممكنات لها ماهيّات معروضة لها دون الطبيعة الخاصَّة الواجبة ، الا ان الوجودات الممكنات لها ماهيّات معروضة له دون الطبيعة الخاصَّة الواجبة ، فان الوجود نفس ماهيَّتها ،",
+        "preferredReading": "إلا أن وجودات الممكنات لها ماهيات معروضة لها ... دون الطبيعة الخاصة الواجبة",
+        "interpretation": "Possible existences have quiddities serving as their subjects, unlike the particular necessary nature. Translate once; remove the duplicated digital sentence only from an explicitly corrected reading text.",
+        "editorialDecision": "The complete printed medieval paragraph contains the clause once; modern brackets explain its pronouns. No medieval manuscript deletion is claimed.",
+        "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+        "manuscriptCollation": false
+      }
+    ],
+    "readingArabic": "أقول : بعد إثبات ما هو الحق ، أراد ان ينبِّه على إبطال ما ذهب إليه المتأخّرون من المشاءين ، مما نسبوه إلى الحكماء المحققين ، تحقيقاً لما مهّده بالبرهان ، و تشييداً لما اسَّسه من البنيان . فإنهم ذهبوا إلى ان الحقيقة الواجبة هي الطبيعة الخاصَّة التي هي فرد من افراد الوجود المطلق ، و مقابل للوجودات الخاصة الممكنة ، الا ان الوجودات الممكنات لها ماهيّات معروضة لها دون الطبيعة الخاصَّة الواجبة  ، فان الوجود نفس ماهيَّتها ، إذ ليس للواجب ماهية غير طبيعة الوجود ، كما قضت به البراهين القاطعة - ، فيكون هذه الطبيعة مما انتقض به الدليل المذكور ، ضرورة - فلهذا أورد مذهبهم في صورة النقض الإجمالي عليه .\nو تقرير ذلك ان الدليل بجميع مقدماته كما يستلزم الطبيعة المطلقة بالإطلاق الحقيقي ، كذلك يستلزم الطبيعة المطلقة من حيث انّها مطلقة ، التي هي من الطبايع الملزومة لها ، فانّها ايضاً وجود بحت لا اعتبار معها غير اعتبار عدم القيود ، و ذلك و ان كان من القيود الخارجة ، الا انَّه من الاعتبارات العدميَّة التي لا دخل لها في طبيعة الوجود ، و ما زاد باعتبارها على نفس الطبيعة شيء فتكون الطبيعة حينئذ بحتاً مجرَّداً .\nثم ان قول الوجود المطلق عندهم على الوجودات لمّا كان بالتشكيك ، يلزم ان يكون قوله عليها ، قول اللازم على ملزوماته ، و ان كان نفس ماهيَّة بعض الأفراد ، كما ستعرف آنفاً ، فلهذا قال : فلئن قيل : الطبيعة التي هي\n\nمن ملزومات ما ذكر . . ."
   },
   {
     "id": "SH-009",
@@ -501,7 +564,8 @@ window.GNAMMA_TAMHID_MAIN = [
       "Inline reported readings retained separately from the reading text: ( يبيَّن - خ ); [ الوجود - ظ ]",
       "In «لا يغاير الوجوب المطلق بالذات», the retained electronic A text reads “unrestricted necessity”; the English’s “unrestricted existence” follows the surrounding argument as though «الوجود». This is an explicitly interpretative reading, not an independently established correction.",
       "In the question «نفس معروضه السابق عليه ومقوما له», «مقوما» is coordinated with the predicate of «يكون». The question concerns the apparent paradox that what attaches later could itself constitute its prior subject; the previous English reversed that direction.",
-      "Electronic-text comparison (2026-11-11): A string reads الوجوب المطلق while English has unrestricted existence; contextual الوجود reading requires explicit note."
+      "Electronic-text comparison (2026-11-11): A string reads الوجوب المطلق while English has unrestricted existence; contextual الوجود reading requires explicit note.",
+      "Qawtaw7 / H2014 H2014/1:299: supported reading. Preferred: «لا يغاير الوجود المطلق بالذات». The comparator prints الوجود, not the electronic الوجوب; English already conveys the supported reading. The A/N electronic wording remains preserved in the witness apparatus."
     ],
     "kind": "sharh",
     "part": "main",
@@ -531,7 +595,26 @@ window.GNAMMA_TAMHID_MAIN = [
       "manuscriptCollation": false,
       "independentHumanCertification": false,
       "hasUnresolvedReadings": true
-    }
+    },
+    "witnessComparisons": [
+      {
+        "stage": "Qawtaw7",
+        "number": 22,
+        "status": "supported-reading",
+        "printedComparator": "H2014",
+        "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+        "sourceLocations": [
+          "H2014/1:299"
+        ],
+        "sourceExcerpt": "فالحقيقة الخاصَّة الواجبة ، حينئذ - لا يغاير الوجوب المطلق بالذات .",
+        "preferredReading": "لا يغاير الوجود المطلق بالذات",
+        "interpretation": "The particular necessary reality does not differ intrinsically from unrestricted existence.",
+        "editorialDecision": "The comparator prints الوجود, not the electronic الوجوب; English already conveys the supported reading.",
+        "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+        "manuscriptCollation": false
+      }
+    ],
+    "readingArabic": "أقول : هذا شروع في دفع ما يمكن إيراده على ما ذهب إليه المتأخّرون حتى يتحقَّق به - يحقَّق - مذهبهم ، و سيبيَّن بعد ذلك إبطاله ، جرياً على مقتضى عادته ، كما سبق التنبيه عليه .\nمن جملة ذلك انَّه يلزم حينئذ ان تكون تلك الحقيقة ، أي الطبيعة الواجبة من الماهيّات المغايرة للوجود ، ضرورة وجوب تحقُّق المغايرة بين الملزوم و لازمه ، و حينئذ - يلزم ان تكون تلك الطبيعة مؤثِّرة في الوجود ، لا به شرط الوجود ، أي بدون اعتبار انضمامها بالوجود ، و ذلك لما تقرَّر ، ان الحقيقة الواجبة هي العلَّة التامة المؤثِّرة الموجبة بالذات ، بدون الاحتياج إلى امر خارج ، و اعتبار انضمامه معها .\nفأجاب بأنَّه ، انما يلزم ذلك ، لو لم تكن الحقيقة نفس الوجود البحت ، بدون انضمام امر آخر معه . اما إذا كانت نفسه كما هو مذهبهم ، فلا يرد شيء مما ذكر ، إذ الخصوصيَّة الواجبة عندهم هي تأكُّد معنى الوجود في نفسه ، و تنزُّهه عمّا يشوب صرافته الذاتيَّة ، فالحقيقة الخاصَّة الواجبة ،\n\nحينئذ - لا يغاير الوجود المطلق بالذات .\nفان قلت : - كيف - يمكن ان يكون العارض الذي يلحق الشيء بعد ثبوته و تحقُّقه ، نفس معروضه السابق عليه و مقوِّماً له .\nقلنا : العروض انّما يتصور هاهنا في العقل ، كما سيجيء بيانه ، و اما في الخارج ، فهو نفسه . و لا ينتقض هذا بالماهيات الممكنة ، إذ نسبتها إلى حصصها الوجودي كذلك ، فإنه ليس لتلك الحصص على رأيهم وجود في الأعيان ، بل انّما هي اعتبارات عقليَّة ليس لها في الخارج محاذ . و لأن الطبيعة المطلقة معروضة للتشكيك ، لا يلزم ان تكون ساير حصصها اعتبارات عقليَّة ، إذ منها ما هو الموجود الحقيقي الذي يوجد بنفسه ، و يوجد به غيره ، و لا ان تكون عارضة ايضاً ، إذ معروض التشكيك انّما هو المطلق الشامل ، و من البيّن ان عروض التشكيك للأمر الاعمِّ و لحوقه له ، لا يوجب عروضه لشيء من ملزوماته و معروضاته ، فان ذلك الأمر المقوِّم جاز ان لا يقبله ، إذ لا يلزم من كون اللازم مشكِّكاً ، كون ملزومه كذلك . قوله :\nو يكون قول الوجود . . . اشعار بهذا الكلام .\nثمَّ ان هاهنا نكتة لا يخلو التنبيه عليها عن فوائد ، و هي ان الطبيعة الكليَّة المطلقة العارضة للحقائق المتخالفة و الماهيات المتنوِّعة ، إذا انتسبت إلى حصصها الخاصَّة ، فاما ان تكون تلك الحصص غير متبدّلة ، بل حقايق الكلّ انما هي تلك الطبيعة المطلقة الواحدة ، فيكون قولها على تلك الحصص . قولًا متواطياً ذاتيًّا ، و ان كان قولها على ملحوقات الحصص قولًا عرضيّا .\nو اما ان تكون تلك الحصص متبدِّلة الحقائق ، بمعنى أنها مشترك كلُّها\n\nفي حصولها لتلك الطبيعة الثابتة النازلة منزلة المحل لما يكون كالعوارض الغير القارة لها آخذة عن مبدأ معيَّن . اما في الاولويَّة بالنسبة إلى تلك الطبيعة أو الأتقنيَّة أو الأشدِّية أو نحوها إلى حيث ينتهى إلى حصَّة لا يكون اولى منها من تلك الحصص بالنسبة إليها ، يعنى ليس لها من الحصص ما يظهر فيها بجميع أحكامها ظهورها في تلك الحصَّة ، بان تكون تلك الحصَّة ملحوقة لجميع لواحقها الخاصَّة بها ، بدون ممانعة خصوصيّتها ايّاها ، و ذلك انما يكون بخلوِّ تلك الطبيعة الثابتة في تلك الحصَّة عن الخصوصيات الخارجة عنها التي هي بمنزلة الأعراض الغير القارة المتبدِّلة عليها ، فيكون قول الطبيعة المطلقة حينئذ على تلك الحصص عندهم قولًا مشكِّكاً عرضياً .\nلا يقال : ان خلوِّ تلك الطبيعة عن الخصوصيات ، تنافي ما تقدَّم ، من ان تلك الحقيقة عندهم لها خصوصيَّة امتيازيَّة مقابلة لسائر الخصوصيات ، و الا ، لا تكون حصَّة لها .\nلأنّا نقول : ان الخلوَّ عن الخصوصيات ايضاً خصوصية امتيازيَّة مقابلة لسائر الخصوصيات ، الا ، انّ ساير الخصوصيات لكونها اموراً خارجة عن نفس تلك الحقيقة ، لا يمكن ان يظهر احكام تلك الحقيقة من حيث هي هي بها ، و ذلك ، لأن الأوليَّة و الأشديَّة و نحوهما في الحصص ، انّما يتصور بأن تكون خصوصيّتها المتبدِّلة مندرجة في ممانعتها ، للحوق ما يلحق الطبيعة لذاتها ، و لزومها للحصَّة المخصوصة إلى ان ينتهى إلى حصَّة لا يمكن لها تلك الخصوصيَّة المانعة ، بل خصوصيتها الامتيازيَّة انما هي تنزُّهها عن الخصوصيات المانعة ، كما نبَّهت عليه آنفاً .\nإذا عرفت هذا ، فنقول : ان العروض انما طرأ للطبيعة المطلقة باعتبار مقايستها للُامور المتبدِّلة و الحصص المتخالفة ، بمقارنة القيود الزائدة\n\nو الاعتبارات الخارجة ، التي هي مبدأ عروض الإمكان ، و اما بالقياس إلى الحصَّة التي هي اولى الحصص التي خصوصيتها انّما هي خلوُّها عن تلك الأمور الخارجة ، فلا يتصور العروض اصلا باعتبار خلوِّها عن القيود الخارجة ، و ان كان ذلك ايضاً عارضاً باعتبار ، ان هذا الاعتبار قيد خارج مقابل لسائر خصوصيات الحصص . و للمتفطِّن اللَّبيب المهتدى إلى طريق التحقيق ، باقتفاء قائد التوفيق ، ان يوفِّق بين هذا الكلام ، و بين ما نبَّه عليه في المقدمة - بعض التوفيق .\nشعر :\nعباراتنا شتّى ، و حسنك واحد * و كلٌّ إلى ذاك الجمال ، يشير"
   },
   {
     "id": "SH-010",
@@ -592,7 +675,9 @@ window.GNAMMA_TAMHID_MAIN = [
       "Inline reported readings retained separately from the reading text: ( اما ان يصحَّ - خ ل )",
       "The electronic A wording has «فمعلوم» where the objection’s following clauses suggest “it is not established”. The existing English’s bracketed negative remains a contextual reconstruction, not an attested variant. The earlier «امتناع وجود بها» is also read contextually as concerning intrinsic necessity.",
       "Electronic-text comparison (2026-11-11): Individual intrinsic possibility argument retained; digital وجود بها apparently stands for وجوبها, not independently corrected.",
-      "Electronic-text comparison (2026-11-11): English [not established] supplies negative absent from printed فمعلوم; context strongly suggests it but source remains unresolved."
+      "Electronic-text comparison (2026-11-11): English [not established] supplies negative absent from printed فمعلوم; context strongly suggests it but source remains unresolved.",
+      "Qawtaw7 / H2014 H2014/1:322: supported reading. Preferred: «ضرورة امتناع وجوبها». The joined word وجوبها is visible in the printed lemma and resolves the digital split وجود بها. The A/N electronic wording remains preserved in the witness apparatus.",
+      "Qawtaw7 / H2014 H2014/1:324: unresolved. Preferred: «فمعلوم». H2014 does not supply the missing negative. The modern explanatory paragraph articulates the objection coherently but does not establish an alternative authorial reading. The A/N electronic wording remains preserved in the witness apparatus."
     ],
     "kind": "sharh",
     "part": "main",
@@ -619,7 +704,42 @@ window.GNAMMA_TAMHID_MAIN = [
       "manuscriptCollation": false,
       "independentHumanCertification": false,
       "hasUnresolvedReadings": true
-    }
+    },
+    "witnessComparisons": [
+      {
+        "stage": "Qawtaw7",
+        "number": 23,
+        "status": "supported-reading",
+        "printedComparator": "H2014",
+        "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+        "sourceLocations": [
+          "H2014/1:322"
+        ],
+        "sourceExcerpt": "و على التقدير الأول يلزم ان يكون افراد الطبيعة الواجبة ممكنة بالذات ، امتنعت الافراد الباقية منها ، أو أمكنت ، ضرورة امتناع وجود بها بالذات و امتناعها بها ، و الا يلزم خلاف الفرض .",
+        "preferredReading": "ضرورة امتناع وجوبها",
+        "interpretation": "Because their being necessary through themselves is impossible.",
+        "editorialDecision": "The joined word وجوبها is visible in the printed lemma and resolves the digital split وجود بها.",
+        "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+        "manuscriptCollation": false
+      },
+      {
+        "stage": "Qawtaw7",
+        "number": 24,
+        "status": "unresolved",
+        "printedComparator": "H2014",
+        "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+        "sourceLocations": [
+          "H2014/1:324"
+        ],
+        "sourceExcerpt": "و ان أريد به الإمكان الخاص ، فمعلوم ان الطبيعة الواجبة لو صحَّ ان يكون ذات افراد ، لزم ان تكون تلك الأفراد ممكنة بالإمكان الخاص ، كيف و بين مفهوميهما تناف في الصدق ! ؟",
+        "preferredReading": "فمعلوم",
+        "interpretation": "Printed wording is corroborated but the objection appears to require denying that strict possibility follows. Retain the problem in the apparatus; a conjectural فغير معلوم or فممنوع has not been witnessed.",
+        "editorialDecision": "H2014 does not supply the missing negative. The modern explanatory paragraph articulates the objection coherently but does not establish an alternative authorial reading.",
+        "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+        "manuscriptCollation": false
+      }
+    ],
+    "readingArabic": "أقول : هذا جواب لما أورده نقضاً على الدليل المذكور ممّا ذهب إليه المشّاءون يبطل به مذهبهم ، و هو ان يقال : الطبيعة الملزومة لمطلق الوجود التي هي الواجبة عندكم ، ان صحَّ ان تكون ذات افراد و يكون الطبيعة بالنسبة إليها حقيقة كلية ، سواء كانت ذات افراد حقيقيَّة عقليَّة ، كسائر الكليات الحقيقيَّة ، أو كانت ذات افراد اعتباريَّة ذهنيَّة ، كالكليّات الفرضيَّة ، مثل اللاشيء و اللاإمكان ، أو لا يصح ؟ فان صحَّ ، فلا يخلو من ان يكون الموجود منه واحداً ، أو اكثر ، و الثاني ظاهر البطلان ، و على التقدير الأول يلزم ان يكون افراد الطبيعة الواجبة ممكنة بالذات ، امتنعت الافراد الباقية منها ، أو أمكنت ، ضرورة امتناع وجوبها بالذات و امتناعها بها ، و الا يلزم خلاف الفرض .\nلا يقال : انما يلزم الفرض المذكور ، ان يكون ممكنة الاتصاف ، لا ممكنة الوجود ، فان الطبيعية الملزومة الواجبة عندهم لما كانت نفس الوجود ، تكون ممكنة الاتصاف بعينه هو ممكنة الوجود .\nو إذا كانت الأفراد كلُّها ممكنة بحسب ذاتها ، فلو امتنع البعض ، لامتنع بالغير ، و لو وجب البعض ايضاً لوجب بالغير ، و تكون الأفراد كلُّها باقية على إمكانها الذاتي ، لان ما بالذات لا يزول بالغير ، فلا يكون فرد من افراده واجباً لذاته .\nفان قيل : ان أريد بالإمكان ، الإمكان العام ، فلا يلزم حينئذ ان تكون افراد الطبيعة لو وجبت لوجبت بالغير ، لجواز ان يكون بعضها واجباً لذاته على هذا التقدير . و ان أريد به الإمكان الخاص ، فمعلوم ان الطبيعة الواجبة لو صحَّ ان يكون ذات افراد ، لزم ان تكون تلك الأفراد ممكنة بالإمكان الخاص ، كيف و بين مفهوميهما تناف في الصدق ! ؟\nنعم اللازم على هذا التقدير ان تكون الأفراد ليست ممتنعة لذاتها ،\n\nو هذا مفهوم الإمكان العام ، لا الخاص .\nقلنا : الكلام على تقدير ان تكون تلك الطبيعة الواجبة البسيطة ذات افراد ، - و ان يكون - الموجود منها واحدا أو لباقى ممتنعاً . و حينئذ ظهر لزوم كون الأفراد كلّها ممكنة بالإمكان الخاصَّ ، فانَّه لو لم يكن كذلك ، فامّا ان يكون افرادها مختلفة متنوعة في الوجوب و الامتناع و الإمكان أو متّفقة ؟ و الأول تدفعه البساطة الواجبة ، فحينئذ لو لم يكن كلّها ممكنة بالإمكان الخاص ، فاما كلُّها واجبة ، أو كلّها ممتنعة ، و الأول يستلزم وجوب الممتنع ، و الثاني امتناع الواجب ، و من هذا تعرف اقتضاء طبيعة الوجوب الوحدة الذاتية ، فتنبه ."
   },
   {
     "id": "SH-012",
@@ -920,7 +1040,8 @@ window.GNAMMA_TAMHID_MAIN = [
       "The distinctions between self-intellection, knowledge by other intellects, aspectual knowledge, and comprehensive knowledge are all retained.",
       "This passage revisits the third proposed explanation in SH-012. It confirms why that earlier proposal should not be cited alone as the commentator's final position.",
       "The electronic A wording «لكن مسلّم» conflicts with the ensuing reply. English “[do not] grant” supplies a contextual negation, explicitly bracketed, not established by independent collation.",
-      "Electronic-text comparison (2026-11-11): Digital لكن مسلّم lacks the negative supplied by English [do not]; surrounding reply suggests conjecture, not established reading."
+      "Electronic-text comparison (2026-11-11): Digital لكن مسلّم lacks the negative supplied by English [do not]; surrounding reply suggests conjecture, not established reading.",
+      "Qawtaw7 / H2014 H2014/1:417: supported reading. Preferred: «لكن ممنوع أنها ليست معقولة بحسب الاعتبارات والإضافات». The independent printed presentation supplies ممنوع rather than digital مسلّم. It supports the negative English sense without adding an unattested لا to the old wording. The A/N electronic wording remains preserved in the witness apparatus."
     ],
     "kind": "sharh",
     "part": "main",
@@ -945,7 +1066,26 @@ window.GNAMMA_TAMHID_MAIN = [
       "manuscriptCollation": false,
       "independentHumanCertification": false,
       "hasUnresolvedReadings": true
-    }
+    },
+    "witnessComparisons": [
+      {
+        "stage": "Qawtaw7",
+        "number": 25,
+        "status": "supported-reading",
+        "printedComparator": "H2014",
+        "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+        "sourceLocations": [
+          "H2014/1:417"
+        ],
+        "sourceExcerpt": "و لأن سلَّمنا انها غير معقولة لذاتها بالنسبة إلى العقول المفارقة ، لكن مسلّم ، انها ليست معقولة بحسب الاعتبارات و الإضافات ،",
+        "preferredReading": "لكن ممنوع أنها ليست معقولة بحسب الاعتبارات والإضافات",
+        "interpretation": "But it is denied that it is not apprehensible through relational considerations and additions.",
+        "editorialDecision": "The independent printed presentation supplies ممنوع rather than digital مسلّم. It supports the negative English sense without adding an unattested لا to the old wording.",
+        "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+        "manuscriptCollation": false
+      }
+    ],
+    "readingArabic": "أقول : هذا إشارة إلى بيان انتفاء الصورة الثالثة من الصُّور الأربع عن\n\nالطبيعة الملزومة ، و بيانه ، ان المقدَّمة القائلة بأنّها غير معقولة لشيء من العقول ، على إطلاقها ممنوعة ، كيف ، و قد برهن في الحكمة ، ان تلك الطبيعة ، لا بُدَّ و ان تكون عاقلة و معقولة و عقلًا لذاتها ، فلا يمكن ان يقال : انّها ليست معقولة لذاتها أصلًا ، و لأن سلَّمنا انها غير معقولة لذاتها بالنسبة إلى العقول المفارقة ، لكن ممنوع ، انها ليست معقولة بحسب الاعتبارات و الإضافات ، فانّها بحسب نسبتها الزائدة عليها و إضافاتها اللاحقة لها بالقياس إلى ساير المدارك ، يجب ان يكون معقولة لكل العقول ، و ان لم تكن معقولة لأكثر العقول بكُنه حقيقتها ، و حاصل هذا الكلام ، ان من الصُّور التي يمتنع بها ان تكون الطبيعة ذات افراد ذهنيَّة أو عقليَّة ، هو ان تكون الطبيعة غير معقولة أصلًا ، لا بالكنه و لا بالوجه ، حتى ينتفي معها نسبة الاشتراك و التطابق اللازمين لكون الافراد افراداً ، و اما إذا كانت معقولة بالوجه لكل العقول و بالكنه للبعض ، فلا يلزم ذلك ."
   },
   {
     "id": "SH-019",

@@ -1,0 +1,170 @@
+name: Qawtaw7 printed-witness reading release
+on:
+  push:
+    branches: [qawtaw7-20261111-witness-resolutions]
+    paths:
+      - '.github/workflows/qawtaw7-release.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: qawtaw7-printed-witness-release
+  cancel-in-progress: false
+jobs:
+  build-validate-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 26
+    env:
+      P: texts/al-turka/qawaid-al-tawhid
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: qawtaw7-20261111-witness-resolutions
+          sparse-checkout: |
+            texts/al-turka/qawaid-al-tawhid
+            assets
+          fetch-depth: 1
+      - name: Apply attested H2014 readings, preserve A/N and regenerate text
+        run: |
+          git rev-parse HEAD > /tmp/qawtaw7-input
+          python -m pip install --quiet beautifulsoup4
+          python "$P/qa/qawtaw7_apply.py"
+          python "$P/qa/qawtaw7_presentation.py"
+          node "$P/qa/check-commentary.mjs"
+          python "$P/qa/finalize-reading-edition.py"
+          node "$P/qa/generate-clause-ledger.mjs"
+      - name: Check all 57 source flags, critical distinctions and original-wording preservation
+        run: |
+          python - <<'PY'
+          import pathlib,json,re,hashlib
+          p=pathlib.Path('texts/al-turka/qawaid-al-tawhid')
+          s=(p/'data/units.js').read_text()
+          matn=json.loads(s[s.index('{'):s.rindex('}')+1])['units']
+          corpus=json.loads((p/'data/commentary-corpus.json').read_text())['units']
+          U={u['id']:u for u in matn+corpus}
+          assert len(U)==171 and len(matn)==61 and len(corpus)==110
+          v=json.loads((p/'qa/qawtaw7-witness-register.json').read_text())
+          report=json.loads((p/'qa/qawtaw7-edit-report.json').read_text())
+          assert len(v['records'])==57 and report['arabicReadingEdits']==53 and report['englishEdits']==16
+          assert report['affectedUnits']==42
+          assert report['unresolved']==3 and report['unrecoveredLacuna']==1 and report['partiallyResolved']==10
+          assert U['QT-056']['arabic'].count('فلا يجوز بالنسبة')==1
+          assert 'فلا يجوز إلّا بالنسبة' in U['QT-056']['readingArabic']
+          assert 'لا اعتبار' not in U['SH-053'].get('readingArabic','') or U['SH-053']['readingArabic'].count('لا اعتبار') < U['SH-053']['arabic'].count('لا اعتبار')
+          assert 'النوم و السهو' in U['SH-058']['arabic']
+          assert 'النوم و السهر' in U['SH-058']['readingArabic']
+          assert 'الحركة الانتقاليَّة' in U['SH-058']['readingArabic']
+          assert 'sleep and wakefulness' in U['SH-058']['english']
+          assert 'تعقُّلًا غيبياً' in U['SH-048']['readingArabic']
+          assert 'النهي' in U['SH-040']['readingArabic']
+          assert 'keys to his actions and states' in U['SH-061-A']['english']
+          assert 'مقاليد أفعاله' in U['SH-061-A']['readingArabic']
+          assert 'ببطلان مسألة التوحيد' in U['SH-002']['arabic']
+          assert 'invalid [sic]' in U['SH-002']['english']
+          assert U['QT-059']['arabic']==next(x for x in matn if x['id']=='QT-059')['arabic']
+          assert any(x['number']==11 and x['status']=='deferred-lacuna' for x in v['records'])
+          original={x['id']:x for x in json.loads(__import__('subprocess').check_output(['git','show','HEAD:'+str(p/'data/commentary-corpus.json')]))['units']}
+          for u in corpus:
+            assert u['arabic']==original[u['id']]['arabic'],u['id']+' original Arabic changed'
+            for field in ['arabicSourceTranscription','sourceTextSha256','precedingMatn']:
+              assert u.get(field)==original[u['id']].get(field),u['id']+' raw source record changed'
+          assert sum(bool(u.get('precedingMatn')) for u in corpus)==4
+          oldmatn=__import__('subprocess').check_output(['git','show','HEAD:'+str(p/'data/units.js')]).decode()
+          oldmatn=json.loads(oldmatn[oldmatn.index('{'):oldmatn.rindex('}')+1])['units']
+          assert {u['id']:u['arabic'] for u in matn}=={u['id']:u['arabic'] for u in oldmatn}
+          ledger=json.loads((p/'qa/clause-ledger.json').read_text())['summary']
+          assert ledger['totalArabicPunctuationClauses']==5520 and ledger['NOTIndividuallyComparedArabicClauses']==0
+          report['validatedOriginalArabicUnchanged']=True
+          (p/'qa/qawtaw7-edit-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+          print('PASS: 57 flags, 53 Arabic reading edits, 16 English edits; all original Arabic intact')
+          PY
+      - name: Install browser and PDF renderer dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core libpango-1.0-0 libpangocairo-1.0-0 poppler-utils
+          python -m pip install --quiet playwright weasyprint pypdf
+          python -m playwright install --with-deps chromium
+      - name: Real mobile Chromium tests and independent standalone reader
+        run: |
+          python "$P/qa/test-commentary-browser.py"
+          python "$P/qa/check-standalone-browser.py" --browsers chromium --screenshots /tmp/qawtaw7-browser
+      - name: Verify printed readings actually appear in the rendered bilingual reader
+        run: |
+          python -m http.server 8766 >/tmp/qawtaw7-http.log 2>&1 &
+          SERVER=$!
+          trap 'kill "$SERVER"' EXIT
+          python - <<'PY'
+          from pathlib import Path
+          from playwright.sync_api import sync_playwright
+          root='/texts/al-turka/qawaid-al-tawhid/'
+          with sync_playwright() as pw:
+            browser=pw.chromium.launch(headless=True)
+            page=browser.new_page(viewport={'width':390,'height':844})
+            errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
+            page.goto('http://127.0.0.1:8766'+root+'commentary.html',wait_until='networkidle')
+            page.wait_for_function("document.querySelector('#reading-status')?.textContent?.includes('110')")
+            page.goto('http://127.0.0.1:8766'+root+'commentary.html#SH-058',wait_until='networkidle')
+            assert 'النوم و السهر' in page.locator('#SH-058').inner_text()
+            assert 'sleep and wakefulness' in page.locator('#SH-058').inner_text()
+            page.goto('http://127.0.0.1:8766'+root+'commentary.html#SH-048',wait_until='networkidle')
+            assert 'تعقُّلًا غيبياً' in page.locator('#SH-048').inner_text()
+            page.goto('http://127.0.0.1:8766'+root+'commentary.html#SH-061-A',wait_until='networkidle')
+            assert 'أفعاله' in page.locator('#SH-061-A').inner_text()
+            assert not errors,errors
+            browser.close()
+          print('PASS actual 390x844 Chromium H2014 reading choices')
+          PY
+      - name: Build the five searchable PDF editions from the preferred reading
+        run: python "$P/pdf/build_editions.py"
+      - name: Verify actual PDF bytes, page counts and corrected source-language content
+        run: |
+          mkdir -p /tmp/qawtaw7-pdf
+          python - <<'PY'
+          from pypdf import PdfReader
+          from pathlib import Path
+          import hashlib,json,subprocess
+          p=Path('texts/al-turka/qawaid-al-tawhid')
+          m=json.loads((p/'pdf/manifest.json').read_text())
+          assert len(m['files'])==5
+          for x in m['files']:
+            f=p/'pdf'/x['filename']
+            assert f.read_bytes().startswith(b'%PDF-')
+            assert len(PdfReader(str(f)).pages)==x['pages']
+            assert hashlib.sha256(f.read_bytes()).hexdigest()==x['sha256']
+            assert x['pages']>90
+          en=p/'pdf/qawaid-english-reading.pdf'
+          out=subprocess.run(['pdftotext',str(en),'-'],capture_output=True,check=True,text=True).stdout
+          assert 'sleep and wakefulness' in out
+          assert 'this is not permissible except for practitioners' in out
+          assert 'unseen intellection' in out
+          for fname,page,n in [('qawaid-bilingual-reading.pdf',3,'reading'),('qawaid-bilingual-reference.pdf',4,'reference')]:
+            subprocess.run(['pdftoppm','-f',str(page),'-l',str(page),'-scale-to','1100','-png','-singlefile',str(p/'pdf'/fname),'/tmp/qawtaw7-pdf/'+n],check=True)
+          print('PASS five complete source-corrected PDFs')
+          PY
+      - name: Commit verified text/readers/PDFs to this branch only
+        run: |
+          git config user.name 'Gnamma source-critical release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin qawtaw7-20261111-witness-resolutions
+          test "$(git rev-parse origin/qawtaw7-20261111-witness-resolutions)" = "$(cat /tmp/qawtaw7-input)"
+          git add "$P"
+          git reset -- "$P/qa/__pycache__" || true
+          if ! git diff --cached --quiet; then
+            git commit -m 'Integrate H2014 readings in dual-witness Qawaid/Tamhid readers and five PDFs'
+            git push origin HEAD:qawtaw7-20261111-witness-resolutions
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawtaw7-verified-editions
+          path: |
+            texts/al-turka/qawaid-al-tawhid/
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawtaw7-visual-qa
+          path: |
+            /tmp/qawtaw7-browser/
+            /tmp/qawtaw7-pdf/
+          retention-days: 30
