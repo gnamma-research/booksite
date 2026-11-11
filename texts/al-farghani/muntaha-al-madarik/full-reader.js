@@ -68,9 +68,9 @@
     $("fr-font-up").title="Larger text, current scale "+Math.round(preferences.scale*100)+"%";
     persist();
   }
-  function markCurrent(page) {
+  function markCurrent(page, remember=true) {
     current=Math.min(last,Math.max(18,page));
-    preferences.lastPage=current;
+    if(remember)preferences.lastPage=current;
     $("fr-current").textContent="p. "+current+" / "+last;
     $("fr-current").setAttribute("aria-label","Beirut 2007 printed page "+current+" of "+last);
     $("fr-prev").disabled=current<=18;
@@ -267,5 +267,5 @@
   // Initial direct page anchor is respected. Returning visitors are offered Resume, never auto-scrolled.
   const hashMatch=location.hash.match(/^#b2007-p(\d+)$/);
   if(hashMatch)markCurrent(Number(hashMatch[1]));
-  else markCurrent(18);
+  else markCurrent(18,false);
 })();
