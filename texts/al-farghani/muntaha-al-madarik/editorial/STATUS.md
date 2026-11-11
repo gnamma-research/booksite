@@ -1,3 +1,13 @@
+## Latest milestone — Stage XVII clean reader and complete recovery (11 November 2026)
+
+**New interface and preservation work, not new manuscript or translation coverage.** All 128 Arabic-source hyperlinks and 68 intrusive boundary, textual-uncertainty and editorial notes have been moved out of the continuous 128-page English working article into a collapsed page-linked scholarly apparatus. The reader defaults to uninterrupted prose; printed-page headings and scholarly notes remain opt-in. The source-grade bilingual excerpts and critical reader also default to notes hidden. The malformed inline p34 textual reading has been repaired and the uncertainty remains separately recorded.
+
+**Cumulative recovery:** [all working English, selected bilingual records, apparatus and reader source code, exact SHA pins](FULL_CUMULATIVE_READER_017.md) · [all 11 critical JS datasets](ALL_CRITICAL_DATASETS_017.md) · [precise handoff](STAGE_HANDOFF_READER_017.md) · [machine-readable manifest](STAGE_MANIFEST_READER_017.json) · [clean continuous reader](../continuous-translation.html) · [milestone history](../handoffs.html).
+
+**Unchanged source status:** English working page scope B2007 pp18–145 (128 pages); 559 selected bilingual checks (283 digitized edition, 276 derivative transcription); 15 historical-photograph 1876 PRINT bounded comparison loci (7 differences, 8 agreements); 0 fully line-collated whole pages; 0 genuine manuscript-variant claims. The physical B2007 p52 source and actual independent manuscript folios remain next steps. Repository publication is not proof of successful Pages deployment.
+
+---
+
 ## Latest milestone — Stage XVI, verified full-resolution 1876 p32 photograph (9 November 2026)
 
 **Successfully retrieved and archived eleven original-resolution IIIF photographs of the historical 1876 PRINTING**, each approximately 2200 pixels wide, with source URLs and SHA-256 in [IIIF manifest](../facsimile-I1876-hires/IIIF_SELECTED_HIRES_MANIFEST.json). GitHub Actions source-ingest run **42661161348 completed successfully**; artifact ID **13693469212** with SHA-256 `45b25038fe984f4e1d1636dc9a365e751d230c4b12be9490f35dcb069abb2a75`. The photographs were committed to the repository as well as retained temporarily as a run artifact.
