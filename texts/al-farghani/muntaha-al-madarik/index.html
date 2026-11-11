@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="../../al-turka/qawaid-al-tawhid/reader.css">
 <link rel="stylesheet" href="reader.css">
 </head>
-<body data-language="both" data-compare="false" data-show-notes="true" data-focus="0" data-continuous="false">
+<body data-language="both" data-compare="false" data-show-notes="false" data-focus="0" data-continuous="false">
 <a href="#reading" class="skip-link">Skip to reading</a>
 <header id="topbar" aria-label="Book toolbar">
   <div class="left">
@@ -30,12 +30,12 @@
     <button id="lang-en" type="button" aria-pressed="true" title="Toggle English">EN</button>
   </div>
   <div class="seg" role="group" aria-label="Research layers">
-    <button id="notes-button" type="button" aria-pressed="true" title="Textual notes">Notes</button>
+    <button id="notes-button" type="button" aria-pressed="false" title="Textual notes">Notes</button>
     <button id="compare-button" type="button" aria-pressed="false" title="Optional comparison with Guénon and Schuon">Compare</button>
   </div>
   <button class="text-btn" id="continuous-button" type="button" aria-pressed="false">Continuous</button>
   <button class="text-btn" id="focus-button" type="button">Focus: normal</button>
-  <span class="reader-status" id="reading-status">32 selected extracts · incomplete</span>
+  <span class="reader-status" id="reading-status">32 curated extracts · separate from full translation</span>
 </div>
 <button class="icon-btn" id="focus-recover" type="button" aria-label="Restore reading controls">▣</button>
 <main id="main">
@@ -43,16 +43,16 @@
     <span class="eyebrow">GNAMMA RESEARCH · ʿIRFĀN AND METAPHYSICS · WORKING SOURCE EDITION</span>
     <h1>Muntahā al-madārik</h1>
     <div class="ar-title" lang="ar" dir="rtl">منتهى المدارك في شرح تائية ابن الفارض</div>
-    <p class="lede">Saʿīd al-Dīn al-Farghānī's systematic introduction to his commentary on Ibn al-Fāriḍ's <em>Tāʾiyya</em>. The <strong>working English translation now covers the complete four foundations (B2007 pp.18–143) and concluding preface (pp.144–145)</strong>. The source-critical layer now includes <strong>559 selected Arabic–English clause records</strong> spanning printed page labels 18–145: 283 earlier checks against the B2007 digitized edited text on pp.18–60 plus 276 comparisons with a <em>secondary derivative retranscription</em> on pp.61–145. The second set is not independent printed or manuscript witness evidence, and no page has been certified exhaustively line-proofread. The older 32 bilingual extracts, critical study, and optional Guénon–Schuon comparison remain separate.</p>
+    <p class="lede">Saʿīd al-Dīn al-Farghānī’s systematic introduction to the <em>Tāʾiyya</em> commentary. The four foundations and concluding preface have a complete <strong>English working draft (Beirut pp.18–145)</strong>. Begin with the uninterrupted text; consult bilingual checks and source-critical notes separately.</p>
     <div class="edition-meta"><span><b>128</b> Beirut pages · complete English working draft</span><span><b>559</b> selected Arabic–English clause records of mixed provenance</span><span><b>128</b> page labels with reviewed spans (18–145)</span><span><b>7</b> photographic-print vs digital differences · <b>0</b> manuscript variants</span></div>
-    <p class="help-copy"><strong>Edition status:</strong> English translation of the introduction is complete in page coverage, but <em>not definitive</em>. The bilingual selected-excerpt register contains 283 B2007-digitized checks (pp.18–60) and 276 derivative-forum checks (pp.61–145); *direct 1876 photographic comparison* documents seven differences against modern digitized readings (including p48 بسبحات vs بسبحاب and p52 اسم الحكم vs سم الحكيم) and eight bounded agreements. Fifteen selected loci occur across fourteen distinct 1876 printed pages (no full page proof); manuscript folios and comprehensive line-by-line proofing remain open. The 32 existing bilingual source extracts remain selected excerpts, not full parallel Arabic. Compact continuous reading mode is retained.</p>
+    <details class="edition-scope"><summary>Editorial status · source grades and limits</summary><p class="help-copy"><strong>Edition status:</strong> English translation of the introduction is complete in page coverage, but <em>not definitive</em>. The bilingual selected-excerpt register contains 283 B2007-digitized checks (pp.18–60) and 276 derivative-forum checks (pp.61–145); *direct 1876 photographic comparison* documents seven differences against modern digitized readings (including p48 بسبحات vs بسبحاب and p52 اسم الحكم vs سم الحكيم) and eight bounded agreements. Fifteen selected loci occur across fourteen distinct 1876 printed pages (no full page proof); manuscript folios and comprehensive line-by-line proofing remain open. The 32 existing bilingual source extracts remain selected excerpts, not full parallel Arabic. Compact continuous reading mode is retained.</p></details>
     <div class="book-actions">
       <a class="action-btn primary" href="continuous-translation.html">Read the complete 128-page English draft</a>
       <a class="action-btn" href="critical-edition.html">Critical clause review · 559 graded loci</a>
-      <a class="action-btn" href="editorial/CUMULATIVE_SELECTED_BILINGUAL_016.md">All 559 bilingual records, updated Stage XVI</a>
+      <a class="action-btn" href="editorial/CUMULATIVE_SELECTED_BILINGUAL_016.md">All 559 bilingual records, Stage XVI</a>
       <a class="action-btn" href="editorial/I1876_COLLATION_STAGE_016.md">Stage XVI original-resolution print correction</a>
       <a class="action-btn" href="critical-introduction.html">Critical scholarly introduction</a>
-      <a class="action-btn" href="handoffs.html">Latest cumulative critical handoff</a>
+      <a class="action-btn" href="editorial/STAGE_HANDOFF_READER_017.md">Stage XVII reading handoff</a><a class="action-btn" href="handoffs.html">Complete cumulative handoff history</a>
       
       <button class="action-btn primary" id="start-button" type="button">Read the extracts</button>
       <button class="action-btn" id="read-all-button" type="button">Continuous reading</button>
@@ -69,17 +69,17 @@
 <p>Use the critical clause reader for verified modern digital source comparisons, and the full English reader for all remaining working drafts. Neither constitutes a manuscript-critical edition yet.</p></details></section>
   <section id="reading" class="reader-stage" aria-label="Parallel Arabic and English texts">
     <div class="stage-header">
-      <div><span class="stage-kicker">Foundation I · 32 selected extracts</span><h2 id="current-heading">Source-based Arabic–English reader</h2><span class="stage-source" id="source-status">Arabic source pages and editorial notes below</span></div>
+      <div><span class="stage-kicker">Foundation I · 32 selected extracts</span><h2 id="current-heading">Source-based Arabic–English reader</h2><span class="stage-source" id="source-status">Selected Arabic–English passages; notes are optional</span></div>
       <div class="stage-tools"><button class="text-btn" id="bookmark-button" type="button" title="Bookmark current passage">☆ Save</button></div>
     </div>
     <div id="reading-list"><p class="untranslated">Loading the source-linked text…</p></div>
   </section>
   <section class="editorial-links">
     <h2>Evidence and related reading</h2>
-    <p><a href="handoffs.html"><strong>Latest full cumulative handoff · 1876 print collation</strong></a> · <a href="editorial/FULL_CUMULATIVE_CRITICAL_005.md">Latest cumulative Markdown archive</a> · <a href="editorial/FULL_CUMULATIVE_P145.md">Preserved P145 archive</a> · <a href="editorial/STAGE_MANIFEST_P145.json">Stage source manifest</a></p>
+    <p><a href="handoffs.html"><strong>Full cumulative handoffs · Stage XVII clean reader</strong></a> · <a href="editorial/FULL_CUMULATIVE_READER_017.md">Stage XVII complete cumulative Markdown archive</a> · <a href="editorial/FULL_CUMULATIVE_P145.md">Preserved P145 archive</a> · <a href="editorial/STAGE_MANIFEST_P145.json">Stage source manifest</a></p>
     <p><a href="critical-introduction.html">Read the critical scholarly introduction</a> · <a href="continuous-translation.html">Read the complete 128-page English working introduction (pp. 18–145)</a> · <a href="editorial/WITNESS_REGISTER.json">Witness register and first correction</a></p>
     <p><a href="editorial/STATUS.md">Translation register and sources</a> · <a href="facsimile-I1876/images/scan_0010.jpg">1876 photographed p.6</a> · <a href="editorial/I1876_COLLATION_STAGE_006.md">1876 photographic collation (4 differences)</a> · <a href="editorial/WITNESS_CENSUS_CRITICAL_004.md">Eleven-codex manuscript census</a> · <a href="editorial/I1876_COLLATION_STAGE_007.md">IIIF original-resolution source checks</a> · <a href="facsimile-I1876/images/scan_0017.jpg">1876 p.13 corrected lemma</a> · <a href="editorial/COMPARISON.md">Guénon–Schuon comparative dossier</a> · <a href="editorial/GLOSSARY.md">Terminological glossary</a> · <a href="data/units.js">Current bilingual source data</a></p>
-    <p>Arabic witness: <a href="https://ablibrary.net/book_content/b/9606/18?lang=ar" target="_blank" rel="noopener noreferrer">digitized Beirut printing, pp. 18 onward</a>. Earlier printing: <a href="https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&amp;lang=en" target="_blank" rel="noopener noreferrer">1876 Istanbul edition (scan)</a>. Ten bounded printing-to-printing comparisons are documented; no manuscript folio has been collated.</p>
+    <p>Arabic witness: <a href="https://ablibrary.net/book_content/b/9606/18?lang=ar" target="_blank" rel="noopener noreferrer">digitized Beirut printing, pp. 18 onward</a>. Earlier printing: <a href="https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&amp;lang=en" target="_blank" rel="noopener noreferrer">1876 Istanbul edition (scan)</a>. Fifteen bounded historical-print versus modern-digital phrase comparisons are documented; no entire page or manuscript folio has been independently collated.</p>
     <p><a href="../../al-turka/qawaid-al-tawhid/">Qawāʿid al-Tawḥīd</a> · <a href="../../">All texts</a></p>
   </section>
 </main>
