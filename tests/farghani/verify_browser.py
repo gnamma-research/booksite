@@ -41,7 +41,9 @@ def run_browser(p,engine,browser_name):
         page.locator(".fr-dialog-body .fr-result").filter(has_text="p. 70").first.click()
         page.wait_for_timeout(600)
         assert page.evaluate("location.hash")=="#b2007-p70",f"{label}: contents direct link"
-        assert "70" in page.locator("#fr-current").inner_text(),f"{label}: progress page not correct"
+        indicator=page.locator("#fr-current").inner_text()
+        geometry=page.evaluate("({y:scrollY,viewport:innerHeight,p70:document.querySelector('#b2007-p70').getBoundingClientRect().top,p69:document.querySelector('#b2007-p69').getBoundingClientRect().top,p71:document.querySelector('#b2007-p71').getBoundingClientRect().top,hash:location.hash})")
+        assert "70" in indicator,f"{label}: progress page not correct {indicator!r}; geometry {geometry}"
         page.locator("#fr-save").click()
         assert page.locator("#fr-save").get_attribute("aria-pressed")=="true"
         page.locator("#fr-source-open").click()
