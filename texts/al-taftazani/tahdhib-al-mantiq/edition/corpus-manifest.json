@@ -1,0 +1,131 @@
+{
+  "stage": "113",
+  "updated": "2026-11-11",
+  "baseStage": "112",
+  "baseSources": [
+    "hawashi-numbered-notes-stage104.js",
+    "hawashi-numbered-notes-stage105.js",
+    "hawashi-numbered-notes-stage106a.js",
+    "hawashi-numbered-notes-stage106b.js",
+    "hawashi-numbered-notes-stage106c.js",
+    "hawashi-numbered-notes-stage106d.js",
+    "hawashi-numbered-notes-stage107a.js",
+    "hawashi-numbered-notes-stage107b.js",
+    "hawashi-numbered-notes-stage107c.js",
+    "hawashi-numbered-notes-stage107d.js",
+    "hawashi-numbered-notes-stage107e.js",
+    "hawashi-numbered-notes-stage107f.js",
+    "hawashi-numbered-notes-stage108a.js",
+    "hawashi-numbered-notes-stage108b.js",
+    "hawashi-numbered-notes-stage109a.js",
+    "hawashi-introduction-notes-stage110a.js",
+    "hawashi-introduction-notes-stage110b.js",
+    "hawashi-introduction-notes-stage110c.js",
+    "hawashi-introduction-notes-stage110d.js",
+    "hawashi-introduction-notes-stage111a.js",
+    "hawashi-introduction-notes-stage111b.js",
+    "hawashi-signification-notes-stage111a.js",
+    "hawashi-signification-notes-stage112a.js",
+    "hawashi-signification-notes-stage112b.js",
+    "hawashi-signification-notes-stage112c.js",
+    "hawashi-signification-notes-stage112d.js",
+    "hawashi-concepts-notes-stage112a.js"
+  ],
+  "amendments": [
+    "hawashi-concepts-stage113-source.json"
+  ],
+  "immutableSha256": {
+    "hawashi-numbered-notes-stage104.js": "d440342b4fcb4ee387a40fdb94c77cf460326e619711a4edbf1988829701b2dc",
+    "hawashi-numbered-notes-stage105.js": "7c5eca98b39a1fff9cc90a1fc5bfa2c71ea9d79ccae3537fb516452c19bc1f3c",
+    "hawashi-numbered-notes-stage106a.js": "5ec5b2314941efede70f48b36a3cfe2d79f0b66b90410acde134dcfd4ef7ebda",
+    "hawashi-numbered-notes-stage106b.js": "a53cc79079ac1493ceb1adb5c7ab4a28f74503c8b73543a630940c26f3a7a7ac",
+    "hawashi-numbered-notes-stage106c.js": "cd5325e1e8444d906c2365f161335edb6c8329340e57d7ec476ae73ddf66bcd4",
+    "hawashi-numbered-notes-stage106d.js": "ba4574c56efbda28f8474bf2422a34ae02b3b6b033a92885e974713eb9eaf239",
+    "hawashi-numbered-notes-stage107a.js": "338fbb295dbd4dc6ffb6c3e4da9b40dfb3b20caa2a37ebd8de07fae01a9157ee",
+    "hawashi-numbered-notes-stage107b.js": "543c7d755d4921ee3fa1b67b6ee9fc28cb3240a16ad1a19875165eaf28ba61a7",
+    "hawashi-numbered-notes-stage107c.js": "98f65bd0741b48f2e482301b8c35510710838349d50749bfab7094144b247ef8",
+    "hawashi-numbered-notes-stage107d.js": "f6bf67fbe896a75e671c15752bbce7102623bf3bb3c3d126fe5cadf40876c90b",
+    "hawashi-numbered-notes-stage107e.js": "72132b8c9cad72e11e8c015a56090ebb95816640503239a39f35f4b57fc0fc8f",
+    "hawashi-numbered-notes-stage107f.js": "e34087aa4449517f8f784309a655889077a8f63a382b6be9d017516a670d6bf0",
+    "hawashi-numbered-notes-stage108a.js": "fb6143d363d2a5009ae6b86c8039e2551328e1c4a9dd285a598778dc3e1f7a40",
+    "hawashi-numbered-notes-stage108b.js": "560e70f0925e9830769da472b1334bc0169883f46d1d69c118bceff93c6cfe18",
+    "hawashi-numbered-notes-stage109a.js": "e8b35923e2f1a8fcbf1697f0b57bb83b0d86b06b663dc2b1d180aeb3dcde0109",
+    "hawashi-introduction-notes-stage110a.js": "7f47705bbbcdbb4ede5728f97c1f0f055fa0969026cee3de020c156e991e8d99",
+    "hawashi-introduction-notes-stage110b.js": "06ccaa5f8f4e343b77808306e97d6cd55ce3e357f0b25173d554d04da75bcbf4",
+    "hawashi-introduction-notes-stage110c.js": "a42665d39c96ee9ab0dfc3f8bea0741591bab6217455740afcab09dd786972da",
+    "hawashi-introduction-notes-stage110d.js": "c5774df57409048dde1a156aa9da2a7fc6886f66c41e7cdef1e5911c0489c5ff",
+    "hawashi-introduction-notes-stage111a.js": "69490f4cd29cd67078a6c6ef2dfd79da7834b6fe6fea59c0ec049448e763b402",
+    "hawashi-introduction-notes-stage111b.js": "7d68020f2babf271a643b51e711949122ea6d105bf68dfe974f27650b8c1a692",
+    "hawashi-signification-notes-stage111a.js": "5157b70e72d7fed917bdd994534aff9dfeabae817ea4869d03c0a86621f8e845",
+    "hawashi-signification-notes-stage112a.js": "5eec8f40a248f76829e42b0baa06495594333732a4e20c46720ab0b6eb2a57f9",
+    "hawashi-signification-notes-stage112b.js": "ba5ddacc239a3ccba255aad6223d033784e203ed8462bc44063f170d13403ecb",
+    "hawashi-signification-notes-stage112c.js": "24f002e8710fc60ca2b4240797adf6fd4254ffa8c1be267414c99d776ec321d7",
+    "hawashi-signification-notes-stage112d.js": "09350804816fff006f71c3e4f5e1c1ec6860da89c7e410fcb8cee737e4914d1d",
+    "hawashi-concepts-notes-stage112a.js": "904d3a1e7176376a7382701aa355c7787093df62eb414aaeb39c9f2395165d16",
+    "hawashi-concepts-stage113-source.json": "91a97419e027340e1a547b67a5611a12b280e8adf38aae149aea62bb18a791cb"
+  },
+  "totals": {
+    "indexedNotes": 348,
+    "completeEnglish": 291,
+    "partialEnglish": 57,
+    "fullDigitalArabic": 79,
+    "arabicLocatorsOnly": 269,
+    "unnumberedFollowing": 11
+  },
+  "sections": [
+    {
+      "id": "H-PREFACE",
+      "name": "Preface",
+      "prefix": "HWN-",
+      "indexedNotes": 140,
+      "completeEnglish": 136,
+      "partialEnglish": 4,
+      "fullDigitalArabic": 54,
+      "arabicLocatorsOnly": 86,
+      "unnumberedFollowing": 6
+    },
+    {
+      "id": "H-INTRO",
+      "name": "Introduction to Logic",
+      "prefix": "HWN-INTRO-",
+      "indexedNotes": 82,
+      "completeEnglish": 66,
+      "partialEnglish": 16,
+      "fullDigitalArabic": 0,
+      "arabicLocatorsOnly": 82,
+      "unnumberedFollowing": 3
+    },
+    {
+      "id": "H-DALALA",
+      "name": "Signification",
+      "prefix": "HWN-DALALA-",
+      "indexedNotes": 91,
+      "completeEnglish": 59,
+      "partialEnglish": 32,
+      "fullDigitalArabic": 0,
+      "arabicLocatorsOnly": 91,
+      "unnumberedFollowing": 1
+    },
+    {
+      "id": "H-MAFAHIM",
+      "name": "Concepts and Universals",
+      "prefix": "HWN-MAFAHIM-",
+      "indexedNotes": 35,
+      "completeEnglish": 30,
+      "partialEnglish": 5,
+      "fullDigitalArabic": 25,
+      "arabicLocatorsOnly": 10,
+      "unnumberedFollowing": 1
+    }
+  ],
+  "next": {
+    "id": "HWN-MAFAHIM-036",
+    "printedPages": [
+      225,
+      226
+    ]
+  },
+  "fullHPrintedPagesCertified": 0,
+  "independentYManuscriptPositionsCertified": 0,
+  "recordFile": "hawashi-effective-stage113.json"
+}
