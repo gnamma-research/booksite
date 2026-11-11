@@ -88,13 +88,20 @@ async function main(type){const browser=await type.launch({headless:true});try{
    await close(page,'#study-copy-dialog');
  });
  await check(type.name()+' focus and continuous retain the selected location',async()=>{
+   await page.waitForFunction(()=>window.HikmaReader.currentUnit()?.id==='M-C-44');
    await page.locator('#reading-view').selectOption('quiet');assert.equal(await page.locator('.chapter-section').count(),1);assert.ok(!(await page.locator('#contents-panel').isVisible()));
-   await page.locator('#study-next').click();assert.match(await page.locator('#study-dock-location').textContent(),/neither particular/);
+   assert.match(page.url(),/passage-M-C-44$/,'Entering Focus must preserve the paragraph action’s reading section');
+   await page.locator('#study-next').click();
+   await page.locator('#study-dock-location').filter({hasText:/neither particular/}).waitFor({state:'visible'});
+   assert.match(page.url(),/passage-M-C-45$/,'Next must advance exactly one reading section');
+   assert.match(await page.locator('#study-dock-location').textContent(),/neither particular/);
    await page.keyboard.press('/');await page.locator('#book-search').waitFor({state:'visible'});
    assert.equal(await page.locator('#book-search').evaluate(n=>n===document.activeElement),true);
    await page.keyboard.press('Escape');assert.ok(!(await page.locator('#contents-panel').isVisible()));
    assert.equal(await page.locator('#reading-view').inputValue(),'quiet');
    await page.locator('#reading-view').selectOption('continuous');assert.ok(await page.locator('.chapter-section').count()>50);
+   await page.waitForFunction(()=>window.HikmaReader.currentUnit()?.id==='M-C-45');
+   assert.match(page.url(),/passage-M-C-45$/,'Continuous view must preserve the selected reading section');
    assert.equal(await page.locator('#contents-panel').evaluate(n=>n.inert),false);
  });
  await check(type.name()+' index exposes conceptual routes, not raw first matches',async()=>{

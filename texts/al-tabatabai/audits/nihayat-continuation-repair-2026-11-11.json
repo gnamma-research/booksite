@@ -29,7 +29,13 @@
     "firstNewComparison": "N-VI-10",
     "restartRegressionTests": 15,
     "actualTextHashCheck": "passed",
-    "structuralSourceAudit": "passed"
+    "structuralSourceAudit": "passed",
+    "activeCheckpointFiles": 236,
+    "remoteContinuationCheck": {
+      "run": 42931137632,
+      "commit": "5e89d21bae44598186404d8de43eba05d04cdc2b",
+      "result": "passed"
+    }
   },
   "readerValidation": {
     "run": 42930385674,
@@ -54,5 +60,16 @@
       "path": ".github/workflows/nihayat-continuation-qa.yml",
       "sha256": "9e1b7437b77d0e3f24a1bdef3a1074dd6e1fb3d696160662fb4c23004cc9bfdc"
     }
-  ]
+  ],
+  "readerRepair": {
+    "status": "saved-awaiting-browser-validation",
+    "description": "Use one header/toolbar scroll offset so Focus and Next retain the exact subsection.",
+    "requiredTransition": "M-C-44 continuous > M-C-44 focus > M-C-45 Next > M-C-45 continuous",
+    "lastFailureRun": 42930385674,
+    "paths": [
+      "texts/al-tabatabai/assets/hikma-reader.css",
+      "texts/al-tabatabai/assets/hikma-study-tools.css",
+      "texts/al-tabatabai/tools/qa-study-tools.cjs"
+    ]
+  }
 }
