@@ -997,6 +997,7 @@ Some say that this word is a verbal noun used in the sense of an active particip
 ## HWN-057 — local note 57
 
 **Inherited first pass** · [Qum 144](https://ablibrary.net/book_content/b/12170/144?lang=ar)
+
 On “and in that event”: namely, when we make the verbal noun “guidance” an object expressing purpose with respect to “He sent him.” In that analysis it appears necessary that the guidance be God's guidance, so that the action denoted by the purposive verbal noun has the same agent as the action whose purpose it states. The meaning would be that God's reason for sending the Prophet was God's will to guide people through him. Yet one may also understand “guidance” as the Prophet's own act of guiding: God sent the Prophet so that the Prophet would guide people to God.
 
 
@@ -1997,6 +1998,7 @@ The words “or his giving understanding to another” mean his teaching that pe
 
 A less expansive reading follows what is normally apparent: the work functions as an aid to one of these, and most naturally to the learner. This may explain why the principal commentator begins from the learner's perspective. The difference is between an exclusive alternative and an inclusive pair of possibilities, not two entirely different meanings of “insight.”
 
+
 **Reading / scope note:** Tracks disjunction as māniʿ al-khulūw, allowing both branches; voice requires printed signature control.
 
 
@@ -2996,6 +2998,7 @@ The main assertion is thus conveyed by implication (*iltizām*) and by indirect 
 **Inherited first pass** · [Qum 176](https://ablibrary.net/book_content/b/12170/176?lang=ar)
 
 Two explanations of *kināya* were already contrasted in the book's preface: al-Sakkākī and his followers define it as mentioning what necessarily accompanies something while intending the thing accompanied, with the literal meaning still potentially intended; another group reverses that relation. The present construction can support either explanation, because the two relevant divisions entail one another when the terms are understood correctly.
+
 The glossator criticizes an interpretation which reduces the matter to simply reversing the order of a sentence, as in the proverbial “I presented the she-camel to the pool” instead of “I presented the pool to the she-camel.” Reversal is not in principle incompatible with indirect expression; one can use a reversal *and* speak by kināya. The critic might have intended indirect expression effected by a reversal, but that is not the same as defining kināya as reversal itself.
 
 
@@ -3994,6 +3997,7 @@ An intellectually necessary connection must be such that the accompanying meanin
 
 
 **Reading / scope note:** Short historical example; Qurʾānic language and precise account of blindness remain distinct from empirical optics.
+
 
 ---
 
@@ -4994,6 +4998,7 @@ In the contrast between the transferred and the figurative, the second usage has
 
 ---
 
+
 <a id="HWN-DALALA-088"></a>
 ## HWN-DALALA-088 — local note 88
 
@@ -5993,6 +5998,7 @@ That is, its elucidation. Some marginalia say that tafsīr is a metathesis of [t
 
 A later annotation from al-Taqrīb, p.28, occupies this position. It is retained as a source reference rather than reproduced in the historical-gloss translation.
 
+
 **Reading / scope note:** Working first-pass English rendering of the cited digital note. Technical arguments are sometimes rendered economically; this is not a certified unabridged critical translation.
 
 
@@ -6991,6 +6997,7 @@ Moreover, the higher is a part of the lower, and it was just established that no
 **First-pass rendering** · [Qum 246](https://ablibrary.net/book_content/b/12170/246?lang=ar)
 
 Property and common accident each have three kinds. Either they embrace all instances of their subject or they do not; what embraces all is either necessary, inseparable from the subject, or separable. Some logicians reserve the unqualified name ‘property’ for an all-embracing necessary property. They must then put the other two kinds under common accident, or the fivefold division would fail. The glossator rejects that usage, expressly dividing property here into all-embracing and otherwise, and later into necessary and separable.
+
 Avicenna is reported to have criticised that restriction in the Shifāʾ as confused: a universal is a property because it is predicated of only one reality, whether of all or some of its instances and whether permanently or not. Common accident contrasts with property and is common when predicated of that reality and another. Breadth within the subject and duration therefore do not determine this distinction.
 
 Property also divides into absolute and relative. Absolute property belongs to its subject alone in relation to everything else, as writing to human; this is one of the five predicables. Relative property belongs to the subject alone in relation to some other things, as walking belongs to human in comparison with what is not animal. Later writers do not count this as property but as common accident.
@@ -7990,6 +7997,7 @@ Modern editorial reference: al-Taqrīb, p.41, on conceived and uttered propositi
 On ‘knowledge of this meaning does not depend on knowledge of report or proposition, so there is no circle’: the objection is that truth is a report's agreement with reality and falsehood its disagreement. Taking them into the definition of proposition would be circular, since report and proposition are synonymous. The glossator replies by taking truth and falsehood in verbal-noun senses whose understanding does not depend on understanding report or proposition. That involves an evident strain.
 
 Other answers have been offered. Truth and falsehood may be immediately known. Or truth may be defined as agreement of a mental item with reality, and falsehood as its disagreement when it is of a kind to agree. Or truth and falsehood may be primary intrinsic attributes of report, whose understanding depends on understanding report whether or not they need definition, while report itself is intellectually clear without prior knowledge of those attributes. The scholars' definitions then merely identify what the word ‘report’ is intended to denote and distinguish it from what might be confused with it.
+
 In short, the nature of report has two considerations: itself, and its being denoted by the word. Defining it through truth and falsehood concerns the second. Knowing it in that respect depends on understanding truth and falsehood; knowing those depends on report in the first respect. No circle follows. Further answers exist but bringing them in is unhelpful.
 
 
@@ -8989,7 +8997,8 @@ The author's ‘necessity of the relation’ covers both occurrence and nonoccur
 ---
 
 
-<a id="HWN-PROPOSITIONS-068"></a>## HWN-PROPOSITIONS-068 — local note 68
+<a id="HWN-PROPOSITIONS-068"></a>
+## HWN-PROPOSITIONS-068 — local note 68
 
 **First-pass rendering** · [Qum 285](https://ablibrary.net/book_content/b/12170/285?lang=ar)
 
@@ -9988,6 +9997,7 @@ The dual pronoun may refer to the general absolute and the possible proposition.
 
 
 ---
+
 
 # Conditional propositions
 
@@ -10989,6 +10999,7 @@ The qualification ‘without specifying which’ is essential. A compound can be
 
 **Reading / scope note:** Working first-pass English rendering of the cited digital note. Technical arguments are sometimes rendered economically; this is not a certified unabridged critical translation.
 
+
 ---
 
 
@@ -11988,6 +11999,7 @@ The subject of ‘was’ is a pronoun referring to D and its predicate C; likewi
 
 **Reading / scope note:** Working first-pass English rendering of the cited digital note. Technical arguments are sometimes rendered economically; this is not a certified unabridged critical translation.
 
+
 ---
 
 
@@ -12984,6 +12996,7 @@ Namely, in explaining the first figure’s conditions.
 
 
 ---
+
 
 <a id="HWN-SYLLOGISM-059"></a>
 ## HWN-SYLLOGISM-059 — local note 59
@@ -13986,6 +13999,7 @@ The first alternative occurs in absolute necessity, the general conditioned and 
 
 This explains the rule previously promised for the possible proposition.
 
+
 **Reading / scope note:** Working first-pass English rendering of the cited digital note. Technical arguments are sometimes rendered economically; this is not a certified unabridged critical translation.
 
 
@@ -14982,6 +14996,7 @@ This enumeration is inductive, not a logically exhaustive dichotomous proof. Wha
 
 
 ---
+
 
 <a id="HWN-ARTS-003"></a>
 ## HWN-ARTS-003 — local note 3
@@ -15982,6 +15997,7 @@ This continues a commentator’s justification for interpreting ‘to their esse
 
 
 ---
+
 
 <a id="HWN-SCIENCES-035"></a>
 ## HWN-SCIENCES-035 — local note 35
