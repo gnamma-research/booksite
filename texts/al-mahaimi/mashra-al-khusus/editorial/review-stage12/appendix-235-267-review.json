@@ -1,0 +1,305 @@
+{
+  "date": "2026-11-10",
+  "reviewed_pages": [
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267
+  ],
+  "records": [
+    {
+      "printed_page": 235,
+      "pdf_page": 234,
+      "archive_leaf": 233,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 236,
+      "pdf_page": 235,
+      "archive_leaf": 234,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 237,
+      "pdf_page": 236,
+      "archive_leaf": 235,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 238,
+      "pdf_page": 237,
+      "archive_leaf": 236,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 239,
+      "pdf_page": 238,
+      "archive_leaf": 237,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 240,
+      "pdf_page": 239,
+      "archive_leaf": 238,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 241,
+      "pdf_page": 240,
+      "archive_leaf": 239,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 242,
+      "pdf_page": 241,
+      "archive_leaf": 240,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 243,
+      "pdf_page": 242,
+      "archive_leaf": 241,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 244,
+      "pdf_page": 243,
+      "archive_leaf": 242,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 245,
+      "pdf_page": 244,
+      "archive_leaf": 243,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 246,
+      "pdf_page": 245,
+      "archive_leaf": 244,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 247,
+      "pdf_page": 246,
+      "archive_leaf": 245,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 248,
+      "pdf_page": 247,
+      "archive_leaf": 246,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 249,
+      "pdf_page": 248,
+      "archive_leaf": 247,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 250,
+      "pdf_page": 249,
+      "archive_leaf": 248,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 251,
+      "pdf_page": 250,
+      "archive_leaf": 249,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 252,
+      "pdf_page": 251,
+      "archive_leaf": 250,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 253,
+      "pdf_page": 252,
+      "archive_leaf": 251,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 254,
+      "pdf_page": 253,
+      "archive_leaf": 252,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 255,
+      "pdf_page": 254,
+      "archive_leaf": 253,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 256,
+      "pdf_page": 255,
+      "archive_leaf": 254,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 257,
+      "pdf_page": 256,
+      "archive_leaf": 255,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 258,
+      "pdf_page": 257,
+      "archive_leaf": 256,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 259,
+      "pdf_page": 258,
+      "archive_leaf": 257,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 260,
+      "pdf_page": 259,
+      "archive_leaf": 258,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 261,
+      "pdf_page": 260,
+      "archive_leaf": 259,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 262,
+      "pdf_page": 261,
+      "archive_leaf": 260,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 263,
+      "pdf_page": 262,
+      "archive_leaf": 261,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 264,
+      "pdf_page": 263,
+      "archive_leaf": 262,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 265,
+      "pdf_page": 264,
+      "archive_leaf": 263,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 266,
+      "pdf_page": 265,
+      "archive_leaf": 264,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 267,
+      "pdf_page": 266,
+      "archive_leaf": 265,
+      "scan_inspected": true,
+      "scope": "Running text, page boundaries and difficult readings compared with the printed image; English freshly translated against page-indexed Arabic.",
+      "manuscript_collation": false
+    }
+  ],
+  "note": "Printed-page review within the same 2008 edition, not an independent witness collation."
+}

@@ -1,6 +1,6 @@
-> **Latest cumulative scope:** pp.11–138 first-pass. Earlier internal stage headings below are historical milestones, not the current coverage limit.
+> **Current edition:** full commentary pp.11–232 and Qūnawī appendix pp.235–267. This context-indexed glossary retains its earlier page-specific research entries; the historical section headings are not coverage limits. New terms and corrections from the complete edition appear at the end.
 
-# GNAMMA | Akbarī technical glossary — al-Mahāʾimī, stage 3
+# Akbarī technical glossary — al-Mahāʾimī and Qūnawī
 **Status:** context-sensitive working lexicon. “Attested” means that a term or its explicit construction occurs in the **consulted working text**, *Mashraʿ*, ed. al-Mazīdī, pp.11–72, unless a different source is named. It does not imply an exhaustive count. **Prospective** entries are not retroactively ascribed to pp.11–72. Exact lexical usage and authorial ownership (cited earlier authority vs al-Mahāʾimī) matter.
 
 ## A. Metaphysical and logical operations: never translate as one undifferentiated “aspect”

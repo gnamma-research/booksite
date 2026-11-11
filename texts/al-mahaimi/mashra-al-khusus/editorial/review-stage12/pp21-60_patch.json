@@ -1,0 +1,499 @@
+{
+  "schema_version": 1,
+  "review": "Stage 12 commentary pp21–60 source and translation review",
+  "reviewed_utc": "2026-11-10",
+  "printed_pages": [
+    21,
+    40
+  ],
+  "patches": [
+    {
+      "id": "MSH-009",
+      "pair_index": 0,
+      "field": "en",
+      "old": "the Benefactor, Giver and First Cause",
+      "new": "the Benefactor, Giver and Causer",
+      "reason": "المسبب is the Causer; no ordinal “first” modifies it.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-009",
+      "pair_index": 0,
+      "field": "en",
+      "old": "intermediaries and secondary causes",
+      "new": "intermediaries and causes",
+      "reason": "The clause says واسطة وسبب. Removes an unnecessary unmarked qualification.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-009",
+      "pair_index": 0,
+      "field": "en",
+      "old": "There is, in this world, a [further] effacement proper to the elect:",
+      "new": "There is, in this world, a [glimpse] of this proper to the elect [the printed wording is uncertain]:",
+      "reason": "The printed محورا is corrupt. Parallel transmission of this passage in Nashr al-maḥāsin al-ghāliya has لمح, “a glimpse,” not a further fanāʾ. The restoration is bracketed, Arabic unchanged.",
+      "confidence": "contextual restoration supported by a parallel primary transmission"
+    },
+    {
+      "id": "MSH-013",
+      "pair_index": 0,
+      "field": "en",
+      "old": "not an atom has independent otherness",
+      "new": "not an atom has otherness",
+      "reason": "Removes “independent,” which is absent from لا غيرية ذرة.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-013",
+      "pair_index": 0,
+      "field": "en",
+      "old": "anything other than Him as independently existent",
+      "new": "anything other than Him as existent",
+      "reason": "The source has ملاحظة موجود سواه, without a word corresponding to “independently.”",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-013",
+      "pair_index": 0,
+      "field": "en",
+      "old": "even an atom of independent actuality",
+      "new": "even an atom of actuality",
+      "reason": "The source has ذرة من الإثبات, without a word corresponding to “independent.”",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-013",
+      "pair_index": 0,
+      "field": "en",
+      "old": "any independent inhabitant of the dwelling",
+      "new": "any inhabitant of the dwelling",
+      "reason": "The source has في الدار ديار, without the qualification “independent.”",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-014",
+      "pair_index": 0,
+      "field": "ar",
+      "old": "[ الأنعام : 28 ]",
+      "new": "[ الأنعام : 82 ]",
+      "reason": "Visual inspection of the 2008 print shows 82, not 28; this corrects the electronic transcription to its printed source.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-014",
+      "pair_index": 0,
+      "field": "en",
+      "old": "(Q 6:82; the online source incorrectly prints 6:28)",
+      "new": "(Q 6:82)",
+      "reason": "The Arabic reference has now been corrected against the scan; the provenance of the correction is retained in the editorial note.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-014",
+      "pair_index": 0,
+      "field": "en",
+      "old": "“To put a thing in its proper place is [justice] in realization; most difficult is to imagine that temporal occurrence could be something which was not and then came to be,",
+      "new": "“[Wrongdoing is], in reality, putting a thing in [other than] its place; its most grievous form is to suppose of temporal things that they were not and then came to be,",
+      "reason": "The quotation comments on ẓulm. The cited Laṭāʾif text reads والظلم ... في غير موضعه; the 2008 quotation omits الظلم and غير. The earlier insertion “[justice]” reversed the subject and obscured the next superlative. The supplied words are bracketed and Arabic remains diplomatic.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-015",
+      "pair_index": 0,
+      "field": "en",
+      "old": "For they did not exist through themselves: they came to exist through God and for God.",
+      "new": "For they had not been [the construction here is uncertain]; they came to be through God and for God.",
+      "reason": "The print reads إذ لم يكونوا باللّه, not “through themselves.” Removes a silent doctrinal repair while retaining the clear following clause.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-015",
+      "pair_index": 3,
+      "field": "en",
+      "old": "(Q 3:152; incorrectly 3:102 in the transcription)",
+      "new": "(Q 3:152; the 2008 print and its transcription incorrectly give 3:102)",
+      "reason": "Visual inspection shows that 102 is already in the printed edition, unlike the p26 number reversal introduced electronically.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-018",
+      "pair_index": 0,
+      "field": "en",
+      "old": "those two successive expressions [‘I’ and ‘your Lord’]",
+      "new": "those two successive expressions",
+      "reason": "The Arabic does not identify the two expressions. Removes an unsupported explanatory identification; it may concern the repeated first-person formulation innī anā.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-020",
+      "pair_index": 0,
+      "field": "en",
+      "old": "for today remains as it always was",
+      "new": "for He is today as He was",
+      "reason": "The divine subject continues from كان ولم تكن; “today” is adverbial, not the thing said to remain.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-020",
+      "pair_index": 1,
+      "field": "en",
+      "old": "then He rises beyond that [secondary attribution] and makes Himself manifest",
+      "new": "then He sets that [mediating attribution] aside and makes Himself manifest",
+      "reason": "رفعَه is transitive, not “He rises.” The context contrasts attribution to the angel and attribution to God.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-020",
+      "pair_index": 1,
+      "field": "en",
+      "old": "In one formulation He says,",
+      "new": "In the ambiguous [verses] (*mutashābih*) He says,",
+      "reason": "Restores the explicitly named category المتشابه in the cited author’s classification.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-020",
+      "pair_index": 1,
+      "field": "en",
+      "old": "in another, ‘It is nothing but Your trial;",
+      "new": "in the decisive [verses] (*muḥkam*), ‘It is nothing but Your trial;",
+      "reason": "Restores the explicitly named category المحكم in the cited author’s classification.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-020",
+      "pair_index": 3,
+      "field": "en",
+      "old": "because You were his being",
+      "new": "because You were he",
+      "reason": "كنته is a direct pronominal expression; “his being” was an unmarked expansion. The poem’s interpretive implications belong in commentary.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-021",
+      "pair_index": 0,
+      "field": "en",
+      "old": "You have remained inward, while I have disclosed no veiled one;",
+      "new": "You have remained hidden and have not disclosed [Yourself], being veiled [wording uncertain];",
+      "reason": "Removes the unsupported switch to an English first-person speaker in the suspect verse لقد بطنت فما أظهرت محتجبا. The print is still uncertain.",
+      "confidence": "provisional literal rendering"
+    },
+    {
+      "id": "MSH-021",
+      "pair_index": 3,
+      "field": "en",
+      "old": "until one has ceased repenting merely of what is below the Real,",
+      "new": "until one arrives at repentance from whatever is below the Real [reading supported by the cited Manāzil],",
+      "reason": "The cited Manāzil reads بالانتهاء إلى التوبة, reaching repentance, rather than ceasing to repent. Mashraʿ prints من here; the source-supported interpretation is explicitly marked.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-022",
+      "pair_index": 1,
+      "field": "en",
+      "old": "once what was not independently existent is dismissed",
+      "new": "once what was not existent is dismissed",
+      "reason": "The source has ما لم يكن موجودا, without “independently”; the preceding bracketed interpretive gloss remains visibly editorial.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-023",
+      "pair_index": 0,
+      "field": "en",
+      "old": "He then transmits through al-Thawrī, Ibn ʿAṭāʾ and al-Junayd from Muḥammad ibn Wāsiʿ:",
+      "new": "He then quotes al-Thawrī, Ibn ʿAṭāʾ and al-Junayd, and relates from Muḥammad ibn Wāsiʿ:",
+      "reason": "These are successive cited authorities, not a transmission chain through three narrators; the cited Taʿarruf confirms the separate statements.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-023",
+      "pair_index": 3,
+      "field": "en",
+      "old": "“The portion of the servant granted from the Real is the being of the Real; [the next words, *wa-huwa fīhi mā sūr*, are obscure], for He has neither one preceding Him nor one following Him.”",
+      "new": "“The servant’s share from the Real is the finding of the Real (*wujūd al-Ḥaqq*); he is held captive within it [reading *maʾsūr*], with neither advance nor retreat.”",
+      "reason": "The cited Taʿarruf reads مأسور, “captive,” and the subject remains the servant. The previous translation wrongly changed the subject to God and converted the servant’s condition into divine temporal priority. The printed Arabic word division is retained and the reading is marked.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-025",
+      "pair_index": 0,
+      "field": "en",
+      "old": "is to protect his inwardness",
+      "new": "is to [guard] his inwardness",
+      "reason": "The supplied Arabic reads يعرف, not a verb literally meaning protect. Marks the contextual restoration instead of presenting it as securely transmitted.",
+      "confidence": "high"
+    }
+  ],
+  "entry_notes": [
+    {
+      "id": "MSH-009",
+      "field": "editorial_note",
+      "old": "The passage distinguishes: (i) cosmic dependence without independent subsistence; (ii) effacement of awareness, expressed through the metaphor of a folded-up cosmos; and (iii) the whole person’s participation in witnessing, including bodily existence. The cited passage also suggests that there can be a further grade beyond ordinary fanāʾ. The text of the reported account of Ibn ʿUmar must be separately assessed as a transmission, not presumed sound.",
+      "new": "The passage distinguishes: (i) cosmic dependence without independent subsistence; (ii) effacement of awareness, expressed through the metaphor of a folded-up cosmos; and (iii) the whole person’s participation in witnessing, including bodily existence. The cited passage also suggests that there can be a further grade beyond ordinary fanāʾ. The text of the reported account of Ibn ʿUmar must be separately assessed as a transmission, not presumed sound. Printed p. 21 confirms the suspect construction فيهوى دون هوية إطباق السماوات and the word محورا. The latter should not be used to infer an additional grade of effacement: a parallel transmission in al-Yāfiʿī’s Nashr al-maḥāsin al-ghāliya (digital p. 27) reads لمح, a glimpse, of the higher certainty in this life. The English marks that comparative restoration in brackets; the Arabic has not been altered."
+    },
+    {
+      "id": "MSH-010",
+      "field": "editorial_note",
+      "old": "Printed p. 22 contains **long numbered explanatory footnotes** after the authorial sentence. In particular a footnote says that the Real's *wujūd* in ecstatic realization differs according to the divine Names and cosmic receptivities in every breath. This is **not part of al-Mahāʾimī’s authorial text** on the evidence of the page’s explicit `هامش` (“footnote”) division. It must never be silently included among his own statements. A note about this useful *editorial witness* appears in `Textual_Apparatus.md`, not in the bilingual translation. The quotation “knowledge of tawḥīd ...” requires collation with al-Qushayrī’s *Risāla*.",
+      "new": "Printed p. 22 contains **long numbered explanatory footnotes** after the authorial sentence. In particular a footnote says that the Real's *wujūd* in ecstatic realization differs according to the divine Names and cosmic receptivities in every breath. This is **not part of al-Mahāʾimī’s authorial text** on the evidence of the page’s explicit `هامش` (“footnote”) division. It must never be silently included among his own statements. A note about this useful *editorial witness* appears in `Textual_Apparatus.md`, not in the bilingual translation. The quotation “knowledge of tawḥīd ...” requires collation with al-Qushayrī’s *Risāla*. The note’s historical reference to Textual_Apparatus.md is superseded by editorial/APPARATUS.md and the Stage 12 review. Modern footnote material remains outside the authorial text."
+    },
+    {
+      "id": "MSH-011",
+      "field": "editorial_note",
+      "old": "The critical triplet on p. 23 is a *substantial empirical counterexample* to the blanket claim that the highest spiritual state always discards every distinction. **Second differentiation** is not simply the lowest *farq* regained, because its acts are performed “through God.” This passage is cited from al-Qushayrī and requires confirmation against a reliable edition of the *Risāla*. The textual boundaries on p. 23 are unusually compromised by footnote material and quotation marks; only the main text above is represented as authorial.",
+      "new": "The critical triplet on p. 23 is a *substantial empirical counterexample* to the blanket claim that the highest spiritual state always discards every distinction. **Second differentiation** is not simply the lowest *farq* regained, because its acts are performed “through God.” This passage is cited from al-Qushayrī and requires confirmation against a reliable edition of the *Risāla*. The textual boundaries on p. 23 are unusually compromised by footnote material and quotation marks; only the main text above is represented as authorial. Printed p. 23 was visually checked: the material beginning أوصاف البشرية and ending التعريفات (ص 324) is below the footnote rule and correctly excluded. The print has صاحب الود and فيه يصل; the digital Risāla consulted instead has صاحب الوجود and فيه يصول. These differences are recorded as comparisons with the cited source, without silently substituting its Arabic. The fragment علامة حقيقة التوحد القائم به واحدا is abbreviated or defective: the Risāla’s fuller wording attributes to Ibn ʿAṭāʾ a statement about forgetting tawḥīd so that its upholder is one."
+    },
+    {
+      "id": "MSH-013",
+      "field": "editorial_note",
+      "old": "In the 4:36 passage the qualifier “independently” is interpretative, introduced to reflect the explicit dependence of temporal events in the next sentence. The Arabic **does not** itself insert the word *mustaqill* at this point. A definitive translation must test against al-Qushayrī's own exegesis whether the intended sense is strict exclusion of every other existent from conscious attention, denial of independent existence, or both according to perspective. This is precisely why the registers are necessary. The end of p. 25 closes at a complete reported question; the author's larger chain of Qurʾānic testimonies continues on p. 26.",
+      "new": "The earlier English inserted “independent/independently” four times in the quotations, although the Arabic has no corresponding qualifier. Those insertions have been removed. Dependence may be part of an interpretation, especially in light of the following statement that temporal things subsist through God, but it must not be silently placed in the quoted wording. This remains al-Qushayrī’s language as transmitted by al-Mahāʾimī. The phrase فاستجابته الحق بالتحقيق لوجوده remains compressed and its English interpretation is provisional."
+    },
+    {
+      "id": "MSH-014",
+      "field": "editorial_note",
+      "old": "The verse reference 6:28 is inconsistent with the Qurʾānic wording, which is Q 6:82. Source footnote 1 quotes Rūzbihān Baqlī and is modern editorial matter, deliberately not inserted into the medieval continuous text. The readings «لتأسى», «وَسمحت», and «ثم طالع الأغيار محو» need collation.",
+      "new": "The scan of printed p. 26 correctly gives Q 6:82; the electronic 28 has been corrected to match it. The scan nevertheless lacks غير in the definition of wrongdoing. Al-Qushayrī’s Laṭāʾif on Q 6:82 reads والظلم ... وضع الشيء في غير موضعه; the English supplies the missing sense in brackets rather than turning the clause into a definition of justice. Source footnote 1 is modern editorial matter and remains excluded. The printed readings لتأسى, وسمحت, and ثم طالع الأغيار محو still require an independent witness."
+    },
+    {
+      "id": "MSH-015",
+      "field": "editorial_note",
+      "old": "Q 3:152 and Q 6:82 are verifiable corrections to modern transcription verse numbers, not manuscript emendations. Read the language of “the garment of lordship” as a reported spiritual figure, not a proposition that the servant becomes the Lord.",
+      "new": "Q 3:152 corrects a wrong number already visible in the 2008 print; the Arabic retains that printed number. The opening clause إذ لم يكونوا باللّه is also present in the scan and is textually uncertain. The earlier “through themselves” has been removed because it has no Arabic equivalent. The spiritual imagery remains a report attributed to the earlier speakers, not independent authentication of their sayings."
+    },
+    {
+      "id": "MSH-021",
+      "field": "editorial_note",
+      "old": "The words after «وأقول» are al-Mahāʾimī’s direct editorial intervention; his account of Wahb ibn Munabbih is a cited report and has not been established as authentic ḥadīth. The insistence on no literal *ḥulūl* (God as substrate and creatures as divine substrate) is explicit in the cited *Qūt* formulation.",
+      "new": "The words after «وأقول» are al-Mahāʾimī’s direct editorial intervention; his account of Wahb ibn Munabbih is a cited report and has not been established as authentic ḥadīth. The insistence on no literal *ḥulūl* (God as substrate and creatures as divine substrate) is explicit in the cited *Qūt* formulation. The scan confirms the problematic printed من in بالانتهاء من التوبة. The cited Manāzil wording is بالانتهاء إلى التوبة مما دون الحق: reaching repentance from what is other than the Real. The English now follows that marked source-supported reading rather than saying that repentance ceases. The Arabic has not been silently emended. The poem’s uncertain wording is also confirmed in print."
+    },
+    {
+      "id": "MSH-023",
+      "field": "editorial_note",
+      "old": "This is one of the strongest explicit witnesses to non-univocal state language: Kalābādhī reports different names for a state and explains what each highlights. The Arabic printed «الشكر» beside «الصحو», but “intoxication and sobriety” would normally be «السكر والصحو»; no emendation has been made to the copied Arabic. «ما سور» and the final *shāhid/shawāhid* passage require collation. The expression about acts of hearing/speaking is not directly an accurately verified text of a divine ḥadīth here.",
+      "new": "The 2008 scan confirms الشكر, والثاني, and ما سور. The cited Taʿarruf has السكر, والمفارق, and مأسور in the corresponding passages. “Captive” and the servant as subject are now made explicit in English, with the comparative reading marked; the Arabic is unchanged. The Taʿarruf identifies the final speaker more fully as al-Ḥasan ibn ʿAlī ibn Yazdānyār, whereas the Mashraʿ abbreviates the name and adds a blessing. That discrepancy prevents confidently identifying the speaker as the Prophet’s grandson. These are digital cited-source comparisons, not manuscript variants."
+    },
+    {
+      "id": "MSH-025",
+      "field": "editorial_note",
+      "old": "The al-Bayḍāwī passage states both «باطلا في ذاته» and «حقّا بإيجاده واختراعه», expressly indicating one judgement under the thing’s own aspect and another under divine production. Both clauses are crucial. The Ṭībī passage expressly rejects a corporealist reading of divine closeness. The precise identification of *Kashf al-Kashshāf* and its authorship should be checked.",
+      "new": "The al-Bayḍāwī passage states both «باطلا في ذاته» and «حقّا بإيجاده واختراعه», expressly indicating one judgement under the thing’s own aspect and another under divine production. Both clauses are crucial. The Ṭībī passage expressly rejects a corporealist reading of divine closeness. The precise identification of *Kashf al-Kashshāf* and its authorship should be checked. “Guard” in the first sentence is a contextual restoration under the divine name al-Ḥafīẓ; the supplied Arabic يعرف is preserved. It should not be treated as a verified alternative reading."
+    }
+  ],
+  "entry_replacements": [],
+  "page_review": [
+    {
+      "printed_page": 21,
+      "entry_id": "MSH-009",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": true,
+      "pdf_zero_based_index_if_inspected": 21,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 22,
+      "entry_id": "MSH-010",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 23,
+      "entry_id": "MSH-011",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": true,
+      "pdf_zero_based_index_if_inspected": 23,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 24,
+      "entry_id": "MSH-012",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 25,
+      "entry_id": "MSH-013",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 26,
+      "entry_id": "MSH-014",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": true,
+      "pdf_zero_based_index_if_inspected": 26,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 27,
+      "entry_id": "MSH-015",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": true,
+      "pdf_zero_based_index_if_inspected": 27,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 28,
+      "entry_id": "MSH-016",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 29,
+      "entry_id": "MSH-017",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 30,
+      "entry_id": "MSH-018",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 31,
+      "entry_id": "MSH-019",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 32,
+      "entry_id": "MSH-020",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 33,
+      "entry_id": "MSH-021",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": true,
+      "pdf_zero_based_index_if_inspected": 33,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 34,
+      "entry_id": "MSH-022",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 35,
+      "entry_id": "MSH-023",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": true,
+      "pdf_zero_based_index_if_inspected": 35,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 36,
+      "entry_id": "MSH-024",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 37,
+      "entry_id": "MSH-025",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 38,
+      "entry_id": "MSH-026",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 39,
+      "entry_id": "MSH-027",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 40,
+      "entry_id": "MSH-028",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": true,
+      "pdf_zero_based_index_if_inspected": 40,
+      "manuscript_collation": false
+    }
+  ],
+  "cited_primary_texts": [
+    {
+      "purpose": "p21 glimpse rather than effacement",
+      "title": "al-Yāfiʿī, Nashr al-maḥāsin al-ghāliya, digital p27",
+      "url": "https://ablibrary.net/book_content/b/9622/47?lang=ar"
+    },
+    {
+      "purpose": "p23 fuller wording and source differences",
+      "title": "al-Qushayrī, Risāla, terminology and tawḥīd chapters",
+      "url": "https://muhammad.com/sheikh-azhar-book/risalaquchayri/risalaquchayri.html"
+    },
+    {
+      "purpose": "p26 missing negative in definition of wrongdoing",
+      "title": "al-Qushayrī, Laṭāʾif al-ishārāt, Q6:82",
+      "url": "https://www.greattafsirs.com/Tafsir_Library.aspx?AyahNo=82&LanguageID=1&MadhabNo=3&QuranAyat_Home=1&SoraNo=6&TafsirNo=31"
+    },
+    {
+      "purpose": "p33 direction of repentance",
+      "title": "al-Harawī, Manāzil al-sāʾirīn, repentance chapter, Arabic lemma reproduced in a commentary",
+      "url": "https://ablibrary.net/book_content/b/92/40?lang=fa"
+    },
+    {
+      "purpose": "p35 source boundaries, captive servant and named speaker",
+      "title": "al-Kalābādhī, al-Taʿarruf, chapters on knowledge, fanāʾ/baqāʾ, tawḥīd and the knower",
+      "url": "https://www.islamicbook.ws/ageda/altarf-lmdhb-altswf.html"
+    }
+  ],
+  "limitations": [
+    "All listed pages were read against the Arabic and compared with the acquired electronic page map. Only pages explicitly marked were visually inspected in the 2008 scan.",
+    "The electronic text and the 2008 scan are not independent manuscript witnesses.",
+    "Comparisons with cited earlier works use digital primary texts and are local checks, not full critical collation.",
+    "Source-supported restorations remain bracketed or noted; unresolved printed readings are not certified."
+  ]
+}
