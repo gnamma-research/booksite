@@ -71,6 +71,11 @@ footer details{background:var(--panel);border:1px solid var(--line);border-radiu
 footer summary{font:600 12px/1.6 ui-sans-serif,system-ui,sans-serif;cursor:pointer;color:var(--accent)}
 footer p{line-height:1.9}
 @media(max-width:760px){.audit-tools{top:55px}.page-head{margin-bottom:11px}.audit-witness p.ar{font-size:21px}}
+
+.audit-status{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:start;gap:12px;margin:12px 0;color:var(--muted)}
+.audit-status span{min-width:0;font:11px/1.55 ui-sans-serif,system-ui,sans-serif}
+.audit-status strong{display:block;font:500 22px/1.1 Georgia,serif;margin-bottom:2px;color:var(--ink)}
+@media(max-width:760px){.audit-status{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 15px;margin:11px 0 15px}.audit-status strong{font-size:21px}.page-head p{font-size:13px;line-height:1.5}}
 </style>
 </head>
 <body data-language="both" data-show-notes="false">
@@ -79,13 +84,13 @@ footer p{line-height:1.9}
 <section class="page-head">
 <span class="eyebrow">GNAMMA · FARḠĀNĪ · SELECTIVE SOURCE-CRITICAL AUDIT</span>
 <h1>Arabic–English clause review</h1>
-<p>Farghānī’s introduction: 559 selected Arabic–English clause records on all 128 consecutive Beirut printed-page labels, pp.18–145: 283 selected phrases reviewed against digitized modern edited Arabic (pp.18–60), plus 276 from a derivative online Arabic retranscription (pp.61–145). These are bounded excerpts only, not entire-page proofs. A <strong>photographed historical-print layer</strong> records seven bounded printed-versus-digital differences and eight bounded agreements. The photographed source comprises fifteen bounded loci across fourteen distinct I1876 printed page labels, not complete manuscript collation.</p>
+<p>559 selected Arabic–English clauses across 128 introductory page labels. Use the page filter or search to read the text; source grades and historical-print evidence remain accessible at each locus.</p>
 <details class="editorial-alert"><summary>Source grades and critical limitations</summary><p><strong>Critical status:</strong> 283 selected checks against the B2007 digitized edited Arabic, 276 checks against a later <strong>derivative online retranscription</strong> of that edition, plus fifteen photographed 1876 print-to-modern-digital bounded phrase checks, including corrections to p48 بسبحات and p52 اسم الحكم. The derivative source is <strong>not</strong> an independent witness. <strong>Zero</strong> manuscript collations. Every displayed page has selected checked spans only, not complete line-by-line proofreading. The 128-page English working draft remains available.</p></details>
 <div class="audit-status">
-<span><strong id="count">—</strong> clause records</span>
-<span><strong id="pages">128</strong> B2007 page labels with selected checks (18–145; last 85 derivative-grade)</span>
-<span><strong id="cruces">—</strong> unresolved textual issues</span>
-<span><strong>7</strong> I1876 vs B2007 digital differences · <strong>8</strong> agreements · <strong>0</strong> manuscript variants</span>
+<span><strong id="count">—</strong> selected bilingual clauses</span>
+<span><strong id="pages">128</strong> Beirut page labels</span>
+<span><strong id="cruces">—</strong> unresolved readings</span>
+<span><strong>15</strong> photographed-print checks · 7 differences · 8 agreements · 0 manuscript variants</span>
 </div>
 </section>
 <nav class="audit-tools" aria-label="Audit controls">
