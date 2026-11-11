@@ -1,0 +1,25 @@
+{
+  "schema": "mahaimi-pdf-build-v1",
+  "files": [
+    {
+      "file": "mahaimi-english.pdf",
+      "pages": 312,
+      "bytes": 1027870,
+      "sha256": "625663059ad5eb15c62496103b5e9ce3bf2db26ee13672f866dc5424a9dbdebb"
+    },
+    {
+      "file": "mahaimi-bilingual.pdf",
+      "pages": 564,
+      "bytes": 1887477,
+      "sha256": "8f72cbfa40b88386fb6bb8cb9e73e79405df1aab1c47ce9cd7800fdcfe82c221"
+    },
+    {
+      "file": "mahaimi-arabic.pdf",
+      "pages": 294,
+      "bytes": 821735,
+      "sha256": "b4c433aa65701525236268932f3692eae3a712bdcb48b8734115a99c2cb7fde3"
+    }
+  ],
+  "date": "2026-11-11",
+  "canonical_corpus_sha256": "b6767ba2831ba88946385da3f7119af9f8294a82751bb306271893f7f0e5861f"
+}

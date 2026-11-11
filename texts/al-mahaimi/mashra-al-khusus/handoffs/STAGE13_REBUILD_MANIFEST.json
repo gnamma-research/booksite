@@ -1,0 +1,614 @@
+{
+  "schema": "gnamma-mahaimi-full-cumulative-v1",
+  "release_id": "stage13-rebuild-from-stage11-20261111",
+  "stage": 13,
+  "date": "2026-11-11",
+  "production_base_commit": "2378a11a6c2e93e71b74518d9352d23fc3a9577b",
+  "recovered_source_commit": "9ae479aebe9e4fbd6eac81506dd4a9929c2eed70",
+  "canonical_corpus_sha256": "b6767ba2831ba88946385da3f7119af9f8294a82751bb306271893f7f0e5861f",
+  "canonical_text_unchanged_from_recovered_stage13": true,
+  "new_translation_pages_in_this_rebuild": 0,
+  "new_scan_comparisons_in_this_rebuild": 0,
+  "counts": {
+    "entries": 254,
+    "commentary_entries": 221,
+    "commentary_printed_pages": 222,
+    "commentary_arabic_pages": 222,
+    "commentary_english_pages": 222,
+    "appendix_entries": 33,
+    "appendix_arabic_pages": 33,
+    "appendix_english_pages": 33,
+    "commentary_pages_reviewed_against_arabic": 222,
+    "commentary_pages_with_documented_scan_comparison": 98,
+    "shared_wording_links": 158,
+    "manuscripts_collated": 0,
+    "bilingual_pairs": 444
+  },
+  "source_sigla": {
+    "B2008": "al-Mazīdī 2008 electronic transcription and acquired print scan",
+    "A1421": "Āshtiyānī Qom edition, identified but not independently collated",
+    "L5675": "Leiden Or.5675, identified but not independently collated"
+  },
+  "grade": "Source-based working edition; an independent manuscript-critical edition has not been established.",
+  "remaining_commentary_scan_pages": [
+    22,
+    24,
+    25,
+    28,
+    29,
+    30,
+    31,
+    32,
+    34,
+    36,
+    37,
+    38,
+    39,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    63,
+    65,
+    66,
+    69,
+    71,
+    72,
+    74,
+    75,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    88,
+    89,
+    90,
+    91,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    113,
+    114,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    172,
+    173,
+    174,
+    175,
+    178,
+    179,
+    180,
+    181,
+    184,
+    185
+  ],
+  "scan_missing_pages": [
+    113,
+    114
+  ],
+  "continuation": {
+    "printed_page": 22,
+    "task": "Compare existing text with print image",
+    "preceding_source_ending": "ن المواضع .\n\nومنها ما قال الأستاذ أبو القاسم بن عبد الكريم بن هوازن القشيري ، في رسالة في فضل بيان اعتقاد هذه الطائفة ، عن النصرآبادي أنه يقول : « أنت متردد بين صفات الفعل وصفات الذات ، وكلاهما صفة على الحقيقة ، فإذا هيّمك في مقام التفرقة قرّبك بصفات",
+    "restart_words": "فعله ، وإذا بلّغك إلى مقام الجمع قرّبك لصفات ذاته » . ثم قال : « ورأيت بخط الأستاذ أبي على الدقاق أنه قيل لصوفي : أين اللّه ؟ فقال : أسخطك اللّه ، أتطلب مع العين أين ؟ » . وفي باب تفسير الألفاظ ، في بيان لفظ التواجد « 1 » والوجد « 2 » والوجود « 3 » . عن الجنيد أنه قال : « علم التوحيد مبائن لوجوده ، "
+  },
+  "previous_stage_links": [
+    "editorial/HANDOFF_STAGE11.md",
+    "editorial/HANDOFF_STAGE13_RECOVERY.md",
+    "editorial/STAGE13_RECOVERY_AND_QA.md"
+  ],
+  "scope": "All available Mahaimi project files and the full cumulative bilingual text; external print/manuscript witnesses are referenced, not republished.",
+  "external_dependencies": [
+    "Cross-reader Qunawi QA additionally uses the separate sadr-al-din-al-qunawi/al-nusus project in the repository.",
+    "Arabic display uses system fallbacks if the optional shared Arabic font stylesheet is unavailable."
+  ],
+  "publication": "Source package snapshot; public deployment is verified separately from this archive.",
+  "files": [
+    {
+      "path": ".github/workflows/mahaimi-stage10-integrity.yml",
+      "bytes": 1284,
+      "sha256": "0e1d3e2d699005a4bafaee0a2c6957dbb55b1b6abaa43a92c5d13cc4c159b943",
+      "git_blob_sha1": "cc02973da4dac86f2382349860fc69ee60f3b497"
+    },
+    {
+      "path": "docs/TRANSLATION_CONTINUITY_PROTOCOL.md",
+      "bytes": 6220,
+      "sha256": "e8858222fb231463a1fb9574074c4cb525e4e1916567a1465d3c96dcd1390677",
+      "git_blob_sha1": "58c7caec17115fcc4abb2d1282bcea4acd7cd7ee"
+    },
+    {
+      "path": "tests/qunawi_reader_qa.js",
+      "bytes": 5504,
+      "sha256": "ef39c757c0a8529286f4aaf994fff50594ca2cfd6523424eafd0f5a66a35d3db",
+      "git_blob_sha1": "6c44712d510988dbbe1def179fa9c1a70663a3e2"
+    },
+    {
+      "path": "tests/test_mahaimi_stage10.py",
+      "bytes": 5880,
+      "sha256": "5578e4b426cbaaea9d56949eb98abd435cb1adadcc7e3749b0387eda70e75404",
+      "git_blob_sha1": "8cd4ea260c332d2abaa9312e9b68fc724006e991"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/data/appendix-lemma-concordance-stage11.json",
+      "bytes": 6535,
+      "sha256": "03d00fb640236d10154534b55facbac51b9a6b50524ffcc8f9d6cd012203d973",
+      "git_blob_sha1": "590fcc85d7f991d7e8f4d91cbe2ff10c948f558e"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/data/concordance-stage12.json",
+      "bytes": 110627,
+      "sha256": "31ba99fa9fe04023d81b489f8e5a5460f360be7f80d3c9702c4da67430563dcb",
+      "git_blob_sha1": "b22d33ee342ec9fbd83ea42f105ddd354b5f5695"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/data/coverage-stage10.json",
+      "bytes": 3208,
+      "sha256": "8b04523dad60d965d5541f75f665d1af9187b1c95d0c5e0d130e32c8738ce105",
+      "git_blob_sha1": "80c7c3c77641d30125b153a6f7c74ca74b9272f9"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/data/coverage-stage11.json",
+      "bytes": 4686,
+      "sha256": "562c075ca92d7e1824936e5431d9464b31398aa004248f85ee29bbab0dba270a",
+      "git_blob_sha1": "3d7f73fff5618781f65aae14dbe94ebca13b761c"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/data/coverage-stage12.json",
+      "bytes": 6436,
+      "sha256": "6a7700442f74008a74738c26357854194c7d1b8a645f17727b550c68402cba67",
+      "git_blob_sha1": "914c3ab54d8bc7ce8f0d567bcaac28ec9453435e"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/data/coverage-stage13.json",
+      "bytes": 8423,
+      "sha256": "a62406cf2e7b87e1a96626c2ff5c8eba3fafad555f6dddc16f6e262b98181ef1",
+      "git_blob_sha1": "89fd111e1d7290b7df8df96649afd743efc99480"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/data/legacy-stage11-qunawi.json",
+      "bytes": 307947,
+      "sha256": "c38eadfd5c685a5ca7b02f31a17ac1fc3e253f8d63a48fe57b51d1b2c8759569",
+      "git_blob_sha1": "09c6e55a634356dd280a77d1a59068b4e6c4ae76"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/data/parallel.json",
+      "bytes": 2008282,
+      "sha256": "b6767ba2831ba88946385da3f7119af9f8294a82751bb306271893f7f0e5861f",
+      "git_blob_sha1": "7d1427842bfa0074253e31cfae8426f5e99fdb4b"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/data/parallel.md",
+      "bytes": 1682020,
+      "sha256": "789f3d095e8cce2e6f4c763ed800a30f1545a5495cbdd291b50f3af29751b188",
+      "git_blob_sha1": "26d02ceb6b8848deceadf999846622ce80c1cdc6"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/data/print-page-map-stage12.json",
+      "bytes": 48975,
+      "sha256": "781f85c30c6b72cf6143cb619a4cbd649358c95a8931d4121b1c7bc0cda32183",
+      "git_blob_sha1": "d051f4e93266bb6688d8d57e6c42725d3966ac4d"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/data/stage-139-149.md",
+      "bytes": 74538,
+      "sha256": "427ea2d525d91ce682958a36a9e0a60526dcb1fa94adfa1a82d6b325cdc7a52f",
+      "git_blob_sha1": "71d478ccc7f4e842db90f97782a66a55d40cd5aa"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/data/stage-39-88.md",
+      "bytes": 352303,
+      "sha256": "5231c00fa0a43fb2acbefa81f8f35138430c952b39630756ae05fbb494b50752",
+      "git_blob_sha1": "057e42b9636acd04bc2ea3b1b5c7a8230f42b6b8"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/data/stage-89-138.md",
+      "bytes": 325453,
+      "sha256": "5a74ce68c179a296fa89a9aee26386fc36f18ea108326823ae2e1d809796007b",
+      "git_blob_sha1": "93c3079614f92ebcaeafba8d408d022d54a43732"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/data/stage04-page-coverage.json",
+      "bytes": 8576,
+      "sha256": "9d34f0b2e6933e1c183dd1c79a3c45c2fd04b6614a4fc0cc85d23f5af6e9a0f6",
+      "git_blob_sha1": "19593f7db3732207b63968d37a1a2a7bc00a5ffd"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/data/stage10-qunawi-pp237-238.md",
+      "bytes": 12080,
+      "sha256": "110d6243551cb4208cf84ef99e2ef14bac6165884339d9576661041beb6b571f",
+      "git_blob_sha1": "8404a961f531da084632924d6e81ca9b7a3579bd"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/downloads/mahaimi-arabic.pdf",
+      "bytes": 821735,
+      "sha256": "b4c433aa65701525236268932f3692eae3a712bdcb48b8734115a99c2cb7fde3",
+      "git_blob_sha1": "efefc5557b2a803f79eab0fed2ae640ecea2637d"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/downloads/mahaimi-bilingual.md",
+      "bytes": 1682020,
+      "sha256": "789f3d095e8cce2e6f4c763ed800a30f1545a5495cbdd291b50f3af29751b188",
+      "git_blob_sha1": "26d02ceb6b8848deceadf999846622ce80c1cdc6"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/downloads/mahaimi-bilingual.pdf",
+      "bytes": 1887477,
+      "sha256": "8f72cbfa40b88386fb6bb8cb9e73e79405df1aab1c47ce9cd7800fdcfe82c221",
+      "git_blob_sha1": "e6c78f82adc10cda1d53f2b604166c894e9ee62f"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/downloads/mahaimi-corpus.json",
+      "bytes": 2008282,
+      "sha256": "b6767ba2831ba88946385da3f7119af9f8294a82751bb306271893f7f0e5861f",
+      "git_blob_sha1": "7d1427842bfa0074253e31cfae8426f5e99fdb4b"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/downloads/mahaimi-english.pdf",
+      "bytes": 1027870,
+      "sha256": "625663059ad5eb15c62496103b5e9ce3bf2db26ee13672f866dc5424a9dbdebb",
+      "git_blob_sha1": "ec21c786b7cc6cf21ce3d92dc7eabadede38781b"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/downloads/pdf-build-manifest.json",
+      "bytes": 708,
+      "sha256": "eeff1cb25425759273736f665dc87a5ed0ecc3815900d17bd1f7d9911e27da24",
+      "git_blob_sha1": "fd9b00d808ae2a292231049706c8d30578fa5a8f"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/APPARATUS.md",
+      "bytes": 36570,
+      "sha256": "6ecc807aeb5e1403e11f68a8ed4fac9b6909e1aab5002940e38daa169ced2cb6",
+      "git_blob_sha1": "5af4a3ed49cf19be3dcf91ee4074ee6bc13001a2"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/APPARATUS_STAGE09.md",
+      "bytes": 23780,
+      "sha256": "2275f21c5acce2cdaf43adff3deb34c1b90394ef5227a25a934d63d4227f65ac",
+      "git_blob_sha1": "a42d7bfdf5edde9d8ac0fa64d222c0ffefcc30e4"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/COMPARATIVE_FINDINGS_STAGE04.md",
+      "bytes": 8780,
+      "sha256": "42931184e9c8d1b2fcfdb15b9b64b2176b8c9f89927e6bd39bbe8c0feea96cd4",
+      "git_blob_sha1": "38ef2d2ebcc6894187b8b3fc29734d18c0a4df6a"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/CONCORDANCE_STAGE10.md",
+      "bytes": 4066,
+      "sha256": "78bab0abdb5a6526355a4212ef8a94a6bfc20751612d0959acd28a4338ada6e9",
+      "git_blob_sha1": "59c5ca1000aefc411868c7c61454b9c9bba5f4a9"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/EDITION_STATUS.md",
+      "bytes": 4033,
+      "sha256": "5fa4b53ad860147eaa31f37c556cc60bd8f51a8088701c171bc8e1958759fd38",
+      "git_blob_sha1": "92132e732c759c78035b1e47dbb50bf012d73c3d"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/ENDING_PRINT_WITNESS_STAGE12.md",
+      "bytes": 3919,
+      "sha256": "0802a7d8bac78f640e8423e0e54ad2b46cbd9a1602e882c9e903c88f19b93fd6",
+      "git_blob_sha1": "e672d359369efbba1a358fa823afaad10ef4cea1"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/GLOSSARY.md",
+      "bytes": 32216,
+      "sha256": "d8ecd07955c52e27411ed79e5c20429a75e6440d15c95761a66b9ff91fab26e9",
+      "git_blob_sha1": "18886bace373971bf88e1c57deed658b10229c6b"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/HANDOFF.md",
+      "bytes": 5227,
+      "sha256": "171f35de20315c1e0dba6363b40932492dadfa8de642cb999320ec019119c2fb",
+      "git_blob_sha1": "99b9ca9529338d4a2a1c8207b9353e55f5332ae2"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/HANDOFF_STAGE09.md",
+      "bytes": 3274,
+      "sha256": "7c14cb95be34e07cd11a988c7aa79604ac10f3b259cfddeb284d1732c991123b",
+      "git_blob_sha1": "074eabfaf504605dd0911b9d585d3f8013a2c00f"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/HANDOFF_STAGE10.md",
+      "bytes": 5705,
+      "sha256": "45b069b449fa0a1167c6465990c5423a1e76e9afbea525dbb59cbe47ce4427bd",
+      "git_blob_sha1": "61e0f100e14aac40e8c14b9ff32d3b37654159ae"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/HANDOFF_STAGE11.md",
+      "bytes": 6648,
+      "sha256": "7ea96a33cbefc56e96da806c1d2d81ee5e08bf6944e859882fd129f54f6f6e68",
+      "git_blob_sha1": "15aadcd590e1723e9fede23a3f443a15ed1e46d8"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/HANDOFF_STAGE13_RECOVERY.md",
+      "bytes": 3926,
+      "sha256": "023d37c53d3176c5c5058b77cfc82d77ec71e130a525e492b8c2f44c4212025a",
+      "git_blob_sha1": "2678d1e0791efa0e5335bad0d923948e699e594a"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/INVENTORY_AND_CONCORDANCE.md",
+      "bytes": 18036,
+      "sha256": "c33d529935daf1ab2fcf69339997bb342cb738772fb20d1727c8e7b3328d56cc",
+      "git_blob_sha1": "3afc55e16949d8c9ee8591de52ffb9361ecd1883"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/REGISTER.md",
+      "bytes": 116662,
+      "sha256": "acdfef3a3177392c5ed2196225493f2e1dc7192c9885ec2bb3be77d49762bfb8",
+      "git_blob_sha1": "62bd6070af5f1f0e623bba37bbd9c03fd3f389e8"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/REGISTER_STAGE05.md",
+      "bytes": 2835,
+      "sha256": "47951c39b6d8d441a8413347ceca1de5fe010ae8b7dee7508983afa2f6b7f335",
+      "git_blob_sha1": "c618a43ec9d40fae4c44a7dbb1d08224b97021ef"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/SOURCES_STAGE12.md",
+      "bytes": 3811,
+      "sha256": "e68795a151405f73d19a0d3ab60bacbb46ce57ad9509a33b30b6d82296bbac5c",
+      "git_blob_sha1": "ed02990c6db25bdd9de2e814d926ac42440010f7"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/STAGE04_AUDIT.md",
+      "bytes": 3280,
+      "sha256": "1e9656fdc259fa3e9b9892cbd6668b8cba16b10d7e003625934ac8f2bdccfaf7",
+      "git_blob_sha1": "6152bef9bbea29e089c6228485337279ea350364"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/STAGE04_NEW_REGISTER.json",
+      "bytes": 36394,
+      "sha256": "2be12e6dc901f8547d1778eea8ac94e398d05aaa51625586d1408194a466c303",
+      "git_blob_sha1": "eebe8f335b38721269fd3fb9d8e29d6d4e59c7b0"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/STAGE13_REBUILD_RELEASE.md",
+      "bytes": 4369,
+      "sha256": "b11276471b4bb6613e82be43dfb4f2f395d10d447ac304f9578c2687f002c5ed",
+      "git_blob_sha1": "f99cf7ad0e712b4e0a077b1064469de19f5b672d"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/STAGE13_RECOVERY_AND_QA.md",
+      "bytes": 5720,
+      "sha256": "9c5aba07a63cfcfb10b7a471dff0b2386a6876be5a0079e5bb30f835f8ce5a9e",
+      "git_blob_sha1": "8304913fb14416a6954cc94b19c79bde4e168cb3"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/TEXTUAL_NOTES.md",
+      "bytes": 9867,
+      "sha256": "0433e304eff0e47114cff5e1db87b0f2e1a97cf507afa7383ed9333b6e468eb2",
+      "git_blob_sha1": "85cd37d6925f8bd9f12808320c886a232ab1c5fa"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/WITNESS_REGISTER_STAGE11.md",
+      "bytes": 8940,
+      "sha256": "3802b5aa65703f65721502e5b8036d74baec000f27ba33757f6ca4f4c23310e1",
+      "git_blob_sha1": "5c1577168a0a770a9980b0b822ed70d123556031"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/review-stage12/appendix-235-267-review.json",
+      "bytes": 10898,
+      "sha256": "72aba5704c2b302a1505f6ed9c414245dc2de261e7d1e245d4e1cbd38cf35b7b",
+      "git_blob_sha1": "0b1200e422e18f9a684e2175b3a3a21c664e4c78"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/review-stage12/commentary_106_149_audit_patches.json",
+      "bytes": 129153,
+      "sha256": "79fd80e0ebe08f04e6337bd5bcb4b8d6df2b3c4aad090ce9d29d9cfc92a44876",
+      "git_blob_sha1": "14573442475a39fca847e733dfe2c3d917580de7"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/review-stage12/commentary_106_149_review_ledger.json",
+      "bytes": 2876,
+      "sha256": "95c29c67beb9c3c31e73879436625266893647178f42cdc53c8507eb99d2789f",
+      "git_blob_sha1": "88fcda5df5c06fc173c06b08444c1f5c99c8502f"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/review-stage12/commentary_190_232_review_ledger.json",
+      "bytes": 8733,
+      "sha256": "6d569ccd887288de026b549e3abdc1169d908fcc6a01097c13677dd606a3d8f9",
+      "git_blob_sha1": "f6b5342a9d81f1135aedb2066542dbdb503dbe0d"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/review-stage12/commentary_190_232_translation_patches.json",
+      "bytes": 300236,
+      "sha256": "5a6b6dc4431466f169ac1d084db7a9ba545eaa71bb362ce80c009512e145d9ae",
+      "git_blob_sha1": "06b2676cbdc2db024cef9f97720f908da3228766"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/review-stage12/early_pp11-20_patch.json",
+      "bytes": 20429,
+      "sha256": "f22fdaae03c825d5a6a4b00ca08f9d816c9d84e3934536f9d762ba81e2d8f8f2",
+      "git_blob_sha1": "6cfe54ee8971fc2f995201940686612f23c229bd"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/review-stage12/english_audit_pp150-189.json",
+      "bytes": 305096,
+      "sha256": "5263831fc74a46d6ef3862460091b96d00a94eb08a2e1f05b3b91bb4b07e5e0b",
+      "git_blob_sha1": "13cc26945e0927c72852dc7171f17b0ab94ed754"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/review-stage12/english_audit_pp61-105.json",
+      "bytes": 157474,
+      "sha256": "66becfe98fccd73408689439e29481982ba52365476ac4d275b2076c94749a83",
+      "git_blob_sha1": "942086ef2145324e2d56b49e02f88dd9e930cce7"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/review-stage12/pp21-60_patch.json",
+      "bytes": 29952,
+      "sha256": "166d939594dbd47f302ac8ea1a28d50c76a4a340285863ba471dd4776cc6eed5",
+      "git_blob_sha1": "67962ec4e23804226160aff0576cfd803fcd00c8"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/review-stage12/review-index.json",
+      "bytes": 85555,
+      "sha256": "3589dece0188339800ed258ea1c3b88b36689e308406ff50a7b029fc7ad25ba5",
+      "git_blob_sha1": "25b2f45e7fe9ca70bb876c038ec6c21fce321bc7"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/review-stage13/review-index.json",
+      "bytes": 110754,
+      "sha256": "c417065211ae0d9dd2de7bd42b2ceb6b81bb776c55fd2221bcc8e11db69790f2",
+      "git_blob_sha1": "3256b5ec88692ef0b0921c1bfdcad63815d5d648"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/review-stage13/review_131_149.json",
+      "bytes": 112775,
+      "sha256": "1590b5765266932bdf8f1f04ad396b182cfef95af087f9397195436c167d98d2",
+      "git_blob_sha1": "a9ec327695b091f6579ab3278332297e54f96a44"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/review-stage13/review_41_60.json",
+      "bytes": 92621,
+      "sha256": "8d04d70305db359565b7d1415e5ecd4bc2954a925d73f997a9470495f752c5ab",
+      "git_blob_sha1": "b16d125904d273e0abb103a1336d57c7bcf32546"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/editorial/review-stage13/review_94_105_125_130.json",
+      "bytes": 66583,
+      "sha256": "fddfec01248b3cd332168e70c295436c91d86ddf3e3284b1165ee7ffa266e56d",
+      "git_blob_sha1": "3a4f50c0a98dae064c9c1535afb25047633b4401"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/handoffs.html",
+      "bytes": 6771,
+      "sha256": "cd19fc2b79d14b4d8f4d6632bff8ee4bc169d727c997dad1f656bf5364d8eda3",
+      "git_blob_sha1": "cbb7ddb93034a1786603e21c171ae74d80f3b610"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/handoffs/FULL_CUMULATIVE_STAGE13_REBUILD.md",
+      "bytes": 4738870,
+      "sha256": "f4c31785139d2869816ec5bd74d6c44ce97a69973eaff74f7f700837e9ccb13e",
+      "git_blob_sha1": "a0b09ee7ed914471ef2afdc563d40248ce29aeb3"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/index.html",
+      "bytes": 1983038,
+      "sha256": "c6d04656c39c00e764e07a1c2e84b1ceaa001594e36f4ad2f1b3a8483e74402b",
+      "git_blob_sha1": "8e31ce5b4748c6a90d164ca06d9b5fe34377f114"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/reader-shell.html",
+      "bytes": 14534,
+      "sha256": "6707ede097aaf89212244a32927de01256517577f79af01cce9e43b5c39043c3",
+      "git_blob_sha1": "d8a6b068ae7247d014f6553fe0576965663b0ad4"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/reader.css",
+      "bytes": 20974,
+      "sha256": "4766241c99e352a47a4246ff1b45b409c20b61a8d0eead6fe19c7b3fc9f55f08",
+      "git_blob_sha1": "98c2383afc0b3a5908556f72248caa8508c8c6bc"
+    },
+    {
+      "path": "texts/al-mahaimi/mashra-al-khusus/reader.js",
+      "bytes": 28135,
+      "sha256": "b2afe2b278593604e406801d973863cd1365bbfee8f2ccb59b724c0a67514f72",
+      "git_blob_sha1": "0d68d3358f98f9c93f04f22c99d6a20e3193fe3d"
+    },
+    {
+      "path": "texts/manifest.json",
+      "bytes": 29918,
+      "sha256": "c83cbd2f16c355a00b4b3264005940f8bf2ac3059444d9c952571add4d7f974a",
+      "git_blob_sha1": "817e21eb7ee8bc4f398aa746f38dea2c9104b043"
+    },
+    {
+      "path": "tools/build_mahaimi_downloads.py",
+      "bytes": 14370,
+      "sha256": "342a2f20957ccaf681843715f131f5e6b03ef2b1b44a12a19a59c3bd4ded93fd",
+      "git_blob_sha1": "835e013560583c96c5078c74cbf68f7715fa6a60"
+    },
+    {
+      "path": "tools/build_mahaimi_exports.py",
+      "bytes": 2998,
+      "sha256": "8643c905e0a492f2f0d20cf071e3750579a40b18dacda6c4c223b3dd98aacec0",
+      "git_blob_sha1": "dc18d4fd6165e0fae514432a85f27c183ec1a9dd"
+    },
+    {
+      "path": "tools/build_mahaimi_handoff.py",
+      "bytes": 8559,
+      "sha256": "1554f8171a97783d2896e297ae43edaead8a623326117af5280d82237073708b",
+      "git_blob_sha1": "3c02d89b5ac3238ad86ff003cba805f56a60ea05"
+    },
+    {
+      "path": "tools/build_mahaimi_reader.py",
+      "bytes": 3915,
+      "sha256": "296b56d696fb3a353c785152f75000fdb1af6af46899aab02bb1f2a89b137604",
+      "git_blob_sha1": "de96ee08783091cc502adffbbdbe7bb653ae8f3c"
+    }
+  ]
+}

@@ -13,7 +13,9 @@ const script=read(path.join(base,'reader.js'));
 const css=read(path.join(base,'reader.css'));
 const catalog=read(path.join(root,'texts/index.html'));
 const mhtml=read(path.join(root,'texts/al-mahaimi/mashra-al-khusus/index.html'));
-const ids=new Set,mahIds=new Set(mah.sections.map(x=>x.id));
+const mahSections=Array.isArray(mah)?mah:mah.sections;
+assert(Array.isArray(mahSections),'Mahāʾimī corpus must contain a section array');
+const ids=new Set,mahIds=new Set(mahSections.map(x=>x.id));
 let linkCount=0,linkedEntries=0,ar=0,en=0;
 assert(book.entries.length>0,'Corpus cannot be empty');
 assert(catalog.includes('sadr-al-din-al-qunawi/al-nusus/'),'Reader must appear in texts catalogue');
@@ -21,7 +23,7 @@ assert(html.includes('data/parallel.json'),'Reader must load canonical data');
 assert(html.includes('reader.js')&&html.includes('reader.css'),'Assets referenced');
 assert(script.includes('commentaryLinks(e)'),'Source-aware commentary navigation required');
 assert(css.includes('.commentary-parallels'),'Commentary styles required');
-assert(mhtml.includes('gotoFragment()'),'Mahāʾimī deep links required');
+assert(mhtml.includes('gotoFragment()')||(mhtml.includes("addEventListener('hashchange',onHash)")&&mhtml.includes('navigate(id,{history:false,instant:true})')),'Mahāʾimī deep links required');
 assert(mhtml.includes('sadr-al-din-al-qunawi/al-nusus/'),'Mahāʾimī must link to base text');
 for(const e of book.entries){
   assert(e.id&&!ids.has(e.id),'Unique stable passage ID: '+e.id);
@@ -36,7 +38,7 @@ for(const e of book.entries){
     assert(l.work==='MAH-MAS','Unknown commentary work: '+e.id);
     assert(mahIds.has(l.section_id),'Target anchor missing: '+e.id+' -> '+l.section_id);
     assert(l.link_url.endsWith('#'+l.section_id),'URL must match target');
-    assert(l.printed_page===mah.sections.find(s=>s.id===l.section_id).printed_pages[0],'Printed page mismatch');
+    assert(l.printed_page===mahSections.find(s=>s.id===l.section_id).printed_pages[0],'Printed page mismatch');
     linkCount++;
   }}
 }
