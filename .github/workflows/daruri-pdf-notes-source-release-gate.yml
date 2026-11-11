@@ -1,0 +1,55 @@
+name: Daruri strict PDF notes and source-search release contract
+on:
+  push:
+    branches: [qa/daruri-pdf-notes-release-contract-20261022]
+    paths:
+      - daruri/qa/verify_source_notes_release_contract.py
+      - .github/workflows/daruri-pdf-notes-source-release-gate.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  notes-and-footnote-policy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - name: Verify Arabic, French and English note-language fidelity
+        run: python daruri/qa/verify-note-language.py
+      - name: Verify 17 fixed base PDF source-note policies and actual footer placement
+        run: |
+          python daruri/qa/verify_source_notes_release_contract.py \
+            --strict --output-dir /tmp/daruri-note-contract
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: notes-and-footnote-policy-source-check
+          path: /tmp/daruri-note-contract/
+          retention-days: 30
+          if-no-files-found: warn
+  authorial-arabic-source-search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - name: HARD release gate for original Arabic+English source pages
+        run: |
+          python daruri/qa/audit_native_source_and_notes.py \
+            --scope base --strict --note-policy section \
+            --min-source-coverage 1.0 \
+            --output-dir /tmp/daruri-native-original-source-gate
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: arabic-native-source-search-hard-release-gate
+          path: /tmp/daruri-native-original-source-gate/
+          retention-days: 30
+          if-no-files-found: warn
