@@ -29,4 +29,8 @@ Primary-text manuscript collation of the Medinan agreements and al-Ḥudaybiyyah
 
 ## Research extension · 11 November 2026
 
-Chapter 01 has a source-led expanded matn and sharḥ, synchronized in the static reader, canonical JSON and complete manuscript. See [the full research dossier](tafsir-research.html) and [the 46-chapter review map](revision-map.html). Chapters 02–46 remain unchanged pending verification.
+Chapter 01 has a source-led expanded matn and sharḥ, synchronized in the static reader, canonical JSON and complete manuscript. See [the full research dossier](tafsir-research.html) and [the 46-chapter review map](revision-map.html). Chapter 02 has since been expanded and synchronized in the canonical JSON, static reader and complete manuscript; Chapters 03–46 remain at their previous research edition pending individual revisions.
+
+## Muhammadan axial framework · 11 November 2026
+
+The [Muhammadan Axis of ʿUmrān](editorial/MUHAMMADAN_AXIS_OF_UMRAN_METHOD.md) is the consolidated research methodology. It integrates prophetic comprehensiveness, the partial disciplinary traces, direct and mediated spiritual formation, individual encounters, family and household life, learned professions, institutions and the historical processes of ʿumrān. Read it alongside the earlier [prophetic integrality method](editorial/PROPHETIC_INTEGRALITY_AND_INHERITANCE_METHOD.md). These files govern subsequent revisions; their appearance does not certify uncompleted collation.
