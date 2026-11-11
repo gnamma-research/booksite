@@ -22,7 +22,8 @@ for(const [engine,browserType] of [['chromium',chromium],['webkit',webkit]]){
       check(audit.statuses[status]===count,'Wrong source grade '+status+': '+audit.statuses[status]);
     }
     check(await page.locator('#entries article.note').count()===40,'First pagination page must contain 40 records');
-    check(await page.locator('a[href="progress-stage114.html"]').count()>=1,'Stage114 progress not linked');
+    check(await page.locator('a[href="progress.html"]').count()>=1,'Research progress not linked');
+    await page.request.get(new URL(root+'progress-stage114.html',base).href).then(res=>check(res.ok(),'Stage114 status page not accessible'));
     check(await page.locator('a[href="hawashi-numbered-notes-stage113-archive.html"]').count()>=1,'Stage113 reader archive not linked');
     await page.locator('#section').selectOption('H-SCIENCES');
     check(await page.evaluate(()=>window.TahdhibAudit.getMatches())===86,'Final Sciences section must contain 86 records');
