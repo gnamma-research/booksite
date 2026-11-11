@@ -1,3 +1,7 @@
+> **Historical checkpoint — superseded for continuation.** Use the [canonical restart entry](https://github.com/gnamma-research/booksite/blob/master/NIHAYAT_START_HERE.md) and the `nihayat-active` branch. The older counts, commands and branch references below are retained as historical evidence and must not be used to restart current work. The verified Stage X source at `1a967009e52f36923362b3a96e67574491314942` survives in the canonical branch.
+
+---
+
 # Nihāyat–Muẓaffar: start here
 
 **Current continuation: Stage X, 11 November 2026 (Asia/Riyadh).** All 83 recovered Nihāya comparison reports and nine fresh comparisons are incorporated. The working corpus contains 387 bilingual units. The current release is being validated in [PR 289](https://github.com/gnamma-research/booksite/pull/289); the last verified public PDFs remain Stage VIII until the state file records a newer publication receipt.
