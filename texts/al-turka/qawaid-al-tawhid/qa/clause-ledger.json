@@ -9711,7 +9711,7 @@
       "sourceLocator": "A pp. 237",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/433?lang=ar",
       "arabicSha256": "bdfed2c9f90f2e09383cab2e6a76f7d41025359e7feaa005e2ef2ea6d2ead983",
-      "englishSha256": "75abe019957eae1b8191988ebf0d235489dc208601e96462d4bf107f5b1686ae",
+      "englishSha256": "622bb1d9be554bcb465bee9b393e4f4fbe6cb6759c6950a2438fc694e047a33d",
       "arabicClauses": [
         {
           "n": 1,
@@ -9738,7 +9738,7 @@
             "englishSentenceEnd": 2,
             "note": "Objection concerns possible existents; awkward displaced «ببعض الصفات الممكنة» remains."
           },
-          "englishCorrespondence": "If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes.",
+          "englishCorrespondence": "If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible—even upon certain possible attributes—in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes.",
           "riskMarkers": []
         },
         {
@@ -9752,7 +9752,7 @@
             "englishSentenceEnd": 2,
             "note": "Objection concerns possible existents; awkward displaced «ببعض الصفات الممكنة» remains."
           },
-          "englishCorrespondence": "If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes.",
+          "englishCorrespondence": "If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible—even upon certain possible attributes—in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes.",
           "riskMarkers": []
         },
         {
@@ -9766,7 +9766,7 @@
             "englishSentenceEnd": 2,
             "note": "One reply to the objection; relative possible qualifications do not render the essence externally dependent."
           },
-          "englishCorrespondence": "If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes.",
+          "englishCorrespondence": "If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible—even upon certain possible attributes—in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes.",
           "riskMarkers": []
         },
         {
@@ -9780,7 +9780,7 @@
             "englishSentenceEnd": 2,
             "note": "One reply to the objection; relative possible qualifications do not render the essence externally dependent."
           },
-          "englishCorrespondence": "If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes.",
+          "englishCorrespondence": "If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible—even upon certain possible attributes—in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes.",
           "riskMarkers": []
         },
         {
@@ -9822,25 +9822,25 @@
         {
           "n": 2,
           "startChar": 191,
-          "endChar": 617,
-          "text": "If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes."
+          "endChar": 655,
+          "text": "If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible—even upon certain possible attributes—in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes."
         },
         {
           "n": 3,
-          "startChar": 618,
-          "endChar": 757,
+          "startChar": 656,
+          "endChar": 795,
           "text": "The perfectional attribute in question is His manifestation in the complete, perfected, universal, and unrestricted locus of manifestation."
         },
         {
           "n": 4,
-          "startChar": 758,
-          "endChar": 884,
+          "startChar": 796,
+          "endChar": 922,
           "text": "This manifestation belongs among His necessary concomitant attributes and determinations through Himself, not through another."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 4
+      "sourceWarnings": 5
     },
     {
       "id": "QT-053",
@@ -10541,7 +10541,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 4
+      "sourceWarnings": 5
     },
     {
       "id": "QT-056",
@@ -12159,7 +12159,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 5
+      "sourceWarnings": 6
     },
     {
       "id": "QT-060",
@@ -12576,7 +12576,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 7
+      "sourceWarnings": 8
     },
     {
       "id": "QT-061",
@@ -12939,7 +12939,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 8
+      "sourceWarnings": 9
     },
     {
       "id": "SH-INTRO-001",
@@ -26343,7 +26343,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 9
+      "sourceWarnings": 10
     },
     {
       "id": "SH-003",
@@ -35715,7 +35715,7 @@
       "sourceLocator": "A, printed pp. 73–74",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/269?lang=ar",
       "arabicSha256": "1f25bc07c2dc4933aa9027aacf62b309d806182e5b877b186978011107623633",
-      "englishSha256": "8dfdcd78c0aabcaa2092d7de95cf2323635a53b83c5fe92c12ce032fa63c0e81",
+      "englishSha256": "bfa813f89faef10d83e06c7b89ac8e0c1cebf012b2b9ace81b7fd2f908d351d5",
       "arabicClauses": [
         {
           "n": 1,
@@ -36204,7 +36204,7 @@
             "englishSentenceEnd": 18,
             "note": "English [not established] supplies negative absent from printed فمعلوم; context strongly suggests it but source remains unresolved."
           },
-          "englishCorrespondence": "But if possibility means possibility in the strict sense, it is [not established] that a necessary nature's admitting individuals entails their strict possibility. How could that follow, when the two concepts are incompatible in predication?",
+          "englishCorrespondence": "But if possibility is understood in the strict sense, it is treated as evident that, were a necessary nature to admit individuals, they would be strictly possible. How, though, could that follow, when the two descriptions cannot both be predicated?",
           "riskMarkers": []
         },
         {
@@ -36218,7 +36218,7 @@
             "englishSentenceEnd": 18,
             "note": "English [not established] supplies negative absent from printed فمعلوم; context strongly suggests it but source remains unresolved."
           },
-          "englishCorrespondence": "But if possibility means possibility in the strict sense, it is [not established] that a necessary nature's admitting individuals entails their strict possibility. How could that follow, when the two concepts are incompatible in predication?",
+          "englishCorrespondence": "But if possibility is understood in the strict sense, it is treated as evident that, were a necessary nature to admit individuals, they would be strictly possible. How, though, could that follow, when the two descriptions cannot both be predicated?",
           "riskMarkers": []
         },
         {
@@ -36232,7 +36232,7 @@
             "englishSentenceEnd": 18,
             "note": "English [not established] supplies negative absent from printed فمعلوم; context strongly suggests it but source remains unresolved."
           },
-          "englishCorrespondence": "But if possibility means possibility in the strict sense, it is [not established] that a necessary nature's admitting individuals entails their strict possibility. How could that follow, when the two concepts are incompatible in predication?",
+          "englishCorrespondence": "But if possibility is understood in the strict sense, it is treated as evident that, were a necessary nature to admit individuals, they would be strictly possible. How, though, could that follow, when the two descriptions cannot both be predicated?",
           "riskMarkers": []
         },
         {
@@ -36246,7 +36246,7 @@
             "englishSentenceEnd": 18,
             "note": "English [not established] supplies negative absent from printed فمعلوم; context strongly suggests it but source remains unresolved."
           },
-          "englishCorrespondence": "But if possibility means possibility in the strict sense, it is [not established] that a necessary nature's admitting individuals entails their strict possibility. How could that follow, when the two concepts are incompatible in predication?",
+          "englishCorrespondence": "But if possibility is understood in the strict sense, it is treated as evident that, were a necessary nature to admit individuals, they would be strictly possible. How, though, could that follow, when the two descriptions cannot both be predicated?",
           "riskMarkers": []
         },
         {
@@ -36260,7 +36260,7 @@
             "englishSentenceEnd": 18,
             "note": "English [not established] supplies negative absent from printed فمعلوم; context strongly suggests it but source remains unresolved."
           },
-          "englishCorrespondence": "But if possibility means possibility in the strict sense, it is [not established] that a necessary nature's admitting individuals entails their strict possibility. How could that follow, when the two concepts are incompatible in predication?",
+          "englishCorrespondence": "But if possibility is understood in the strict sense, it is treated as evident that, were a necessary nature to admit individuals, they would be strictly possible. How, though, could that follow, when the two descriptions cannot both be predicated?",
           "riskMarkers": []
         },
         {
@@ -36589,84 +36589,84 @@
           "n": 17,
           "startChar": 1757,
           "endChar": 1920,
-          "text": "But if possibility means possibility in the strict sense, it is [not established] that a necessary nature's admitting individuals entails their strict possibility."
+          "text": "But if possibility is understood in the strict sense, it is treated as evident that, were a necessary nature to admit individuals, they would be strictly possible."
         },
         {
           "n": 18,
           "startChar": 1921,
-          "endChar": 1998,
-          "text": "How could that follow, when the two concepts are incompatible in predication?"
+          "endChar": 2005,
+          "text": "How, though, could that follow, when the two descriptions cannot both be predicated?"
         },
         {
           "n": 19,
-          "startChar": 1999,
-          "endChar": 2095,
+          "startChar": 2006,
+          "endChar": 2102,
           "text": "What follows from the supposition is only that the individuals are not intrinsically impossible."
         },
         {
           "n": 20,
-          "startChar": 2096,
-          "endChar": 2148,
+          "startChar": 2103,
+          "endChar": 2155,
           "text": "That is general possibility, not strict possibility."
         },
         {
           "n": 21,
-          "startChar": 2150,
-          "endChar": 2287,
+          "startChar": 2157,
+          "endChar": 2294,
           "text": "We reply that the supposition concerns a simple necessary nature having individuals, one of which exists while the others are impossible."
         },
         {
           "n": 22,
-          "startChar": 2288,
-          "endChar": 2366,
+          "startChar": 2295,
+          "endChar": 2373,
           "text": "On that supposition, all the individuals must be possible in the strict sense."
         },
         {
           "n": 23,
-          "startChar": 2367,
-          "endChar": 2474,
+          "startChar": 2374,
+          "endChar": 2481,
           "text": "Otherwise their modal statuses would either differ—some necessary, some impossible, some possible—or agree."
         },
         {
           "n": 24,
-          "startChar": 2475,
-          "endChar": 2533,
+          "startChar": 2482,
+          "endChar": 2540,
           "text": "The Necessary's simplicity excludes the first alternative."
         },
         {
           "n": 25,
-          "startChar": 2534,
-          "endChar": 2643,
+          "startChar": 2541,
+          "endChar": 2650,
           "text": "If their statuses agree and they are not all strictly possible, they must all be necessary or all impossible."
         },
         {
           "n": 26,
-          "startChar": 2644,
-          "endChar": 2706,
+          "startChar": 2651,
+          "endChar": 2713,
           "text": "The first makes the supposed impossible individuals necessary;"
         },
         {
           "n": 27,
-          "startChar": 2707,
-          "endChar": 2769,
+          "startChar": 2714,
+          "endChar": 2776,
           "text": "the second makes the supposed necessary individual impossible."
         },
         {
           "n": 28,
-          "startChar": 2770,
-          "endChar": 2839,
+          "startChar": 2777,
+          "endChar": 2846,
           "text": "This also shows why the nature of necessity requires intrinsic unity."
         },
         {
           "n": 29,
-          "startChar": 2840,
-          "endChar": 2850,
+          "startChar": 2847,
+          "endChar": 2857,
           "text": "Take heed."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 9
+      "sourceWarnings": 10
     },
     {
       "id": "SH-012",
@@ -58317,7 +58317,7 @@
       "sourceLocator": "A, printed pp. 138–141",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/334?lang=ar",
       "arabicSha256": "16be073e445f43fdf9a7e738bf090880281e90beaa2af0e51b47b3bf9883c71a",
-      "englishSha256": "a8e997450f7dd2528de5bce436907e3cf25aec2892c440223613492491cc3f7a",
+      "englishSha256": "88fdf75e634ba0adc41999790942c1b6d6ebf21d164e3c28f56a9c27f554a840",
       "arabicClauses": [
         {
           "n": 1,
@@ -59044,7 +59044,7 @@
             "englishSentenceEnd": 28,
             "note": "The electronic Arabic للزجاج بدا شعاعة is syntactically disturbed; English 'radiance appears through the glass' is contextual, not a manuscript-established emendation."
           },
-          "englishCorrespondence": "its radiance appears through the glass, and colours are seen in it.",
+          "englishCorrespondence": "its radiance becomes apparent in the glass, and colours are seen in it.",
           "riskMarkers": []
         },
         {
@@ -59058,7 +59058,7 @@
             "englishSentenceEnd": 28,
             "note": "The electronic Arabic للزجاج بدا شعاعة is syntactically disturbed; English 'radiance appears through the glass' is contextual, not a manuscript-established emendation."
           },
-          "englishCorrespondence": "its radiance appears through the glass, and colours are seen in it.",
+          "englishCorrespondence": "its radiance becomes apparent in the glass, and colours are seen in it.",
           "riskMarkers": []
         },
         {
@@ -59072,7 +59072,7 @@
             "englishSentenceEnd": 28,
             "note": "The electronic Arabic للزجاج بدا شعاعة is syntactically disturbed; English 'radiance appears through the glass' is contextual, not a manuscript-established emendation."
           },
-          "englishCorrespondence": "its radiance appears through the glass, and colours are seen in it.",
+          "englishCorrespondence": "its radiance becomes apparent in the glass, and colours are seen in it.",
           "riskMarkers": []
         },
         {
@@ -59550,67 +59550,67 @@
         {
           "n": 28,
           "startChar": 3048,
-          "endChar": 3115,
-          "text": "its radiance appears through the glass, and colours are seen in it."
+          "endChar": 3119,
+          "text": "its radiance becomes apparent in the glass, and colours are seen in it."
         },
         {
           "n": 29,
-          "startChar": 3116,
-          "endChar": 3191,
+          "startChar": 3120,
+          "endChar": 3195,
           "text": "Thus those quiddities occur through conceptually considered determinations."
         },
         {
           "n": 30,
-          "startChar": 3193,
-          "endChar": 3277,
+          "startChar": 3197,
+          "endChar": 3281,
           "text": "It follows that there is no actual extramental distinction among them at this level."
         },
         {
           "n": 31,
-          "startChar": 3278,
-          "endChar": 3417,
+          "startChar": 3282,
+          "endChar": 3421,
           "text": "Such a distinction would require their subjects to be externally distinct and multiple, whereas their subject is one through genuine unity."
         },
         {
           "n": 32,
-          "startChar": 3418,
-          "endChar": 3582,
+          "startChar": 3422,
+          "endChar": 3586,
           "text": "None of the quiddities, insofar as it differs from that identity, can therefore be said to exist in either mode of existence in this subject—that is, at this level."
         },
         {
           "n": 33,
-          "startChar": 3583,
-          "endChar": 3698,
+          "startChar": 3587,
+          "endChar": 3702,
           "text": "Yet insofar as they are externally identical with that identity, they are present to it as it is present to itself."
         },
         {
           "n": 34,
-          "startChar": 3699,
-          "endChar": 3792,
+          "startChar": 3703,
+          "endChar": 3796,
           "text": "They are existent under the consideration of this relative presence and their relation to it;"
         },
         {
           "n": 35,
-          "startChar": 3793,
-          "endChar": 3841,
+          "startChar": 3797,
+          "endChar": 3845,
           "text": "the relation is a matter of consideration alone."
         },
         {
           "n": 36,
-          "startChar": 3842,
-          "endChar": 3924,
+          "startChar": 3846,
+          "endChar": 3928,
           "text": "Reflect on what you have heard, for it is the fullest clarification at this point."
         },
         {
           "n": 37,
-          "startChar": 3925,
-          "endChar": 3964,
+          "startChar": 3929,
+          "endChar": 3968,
           "text": "Perhaps God will bring you to the goal."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 6
+      "sourceWarnings": 7
     },
     {
       "id": "SH-032",
@@ -85910,7 +85910,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 6
+      "sourceWarnings": 7
     },
     {
       "id": "SH-050",
@@ -88625,7 +88625,7 @@
       "sourceLocator": "A, printed pp. 244–247",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/440?lang=ar",
       "arabicSha256": "718cb50cef181b378e58266de2463132b8d910be0c1116813cd82828b07c67a1",
-      "englishSha256": "3661681b6e0dad6a10f5ef3d623883e88de8a44f91ec6e1b297bed6ab3d703e9",
+      "englishSha256": "414d0f690d29ed087162b7097f9ac66cf428e52c0943b2e2857e97647a0850bc",
       "arabicClauses": [
         {
           "n": 1,
@@ -90122,7 +90122,7 @@
             "englishSentenceEnd": 63,
             "note": "Position example يميني/نفسي remains uncertain; acting/eating and receiving/satiation are clear."
           },
-          "englishCorrespondence": "position, exemplified here by my right [the wording is uncertain]; acting, exemplified by eating; and being acted upon, exemplified by satiation.",
+          "englishCorrespondence": "position, exemplified by ‘my right [side]’ (يميني); acting, exemplified by eating; and being acted upon, exemplified by satiation.",
           "riskMarkers": []
         },
         {
@@ -90136,7 +90136,7 @@
             "englishSentenceEnd": 63,
             "note": "Position example يميني/نفسي remains uncertain; acting/eating and receiving/satiation are clear."
           },
-          "englishCorrespondence": "position, exemplified here by my right [the wording is uncertain]; acting, exemplified by eating; and being acted upon, exemplified by satiation.",
+          "englishCorrespondence": "position, exemplified by ‘my right [side]’ (يميني); acting, exemplified by eating; and being acted upon, exemplified by satiation.",
           "riskMarkers": []
         },
         {
@@ -90150,7 +90150,7 @@
             "englishSentenceEnd": 63,
             "note": "Position example يميني/نفسي remains uncertain; acting/eating and receiving/satiation are clear."
           },
-          "englishCorrespondence": "position, exemplified here by my right [the wording is uncertain]; acting, exemplified by eating; and being acted upon, exemplified by satiation.",
+          "englishCorrespondence": "position, exemplified by ‘my right [side]’ (يميني); acting, exemplified by eating; and being acted upon, exemplified by satiation.",
           "riskMarkers": []
         },
         {
@@ -90164,7 +90164,7 @@
             "englishSentenceEnd": 63,
             "note": "Position example يميني/نفسي remains uncertain; acting/eating and receiving/satiation are clear."
           },
-          "englishCorrespondence": "position, exemplified here by my right [the wording is uncertain]; acting, exemplified by eating; and being acted upon, exemplified by satiation.",
+          "englishCorrespondence": "position, exemplified by ‘my right [side]’ (يميني); acting, exemplified by eating; and being acted upon, exemplified by satiation.",
           "riskMarkers": []
         },
         {
@@ -90178,7 +90178,7 @@
             "englishSentenceEnd": 63,
             "note": "Position example يميني/نفسي remains uncertain; acting/eating and receiving/satiation are clear."
           },
-          "englishCorrespondence": "position, exemplified here by my right [the wording is uncertain]; acting, exemplified by eating; and being acted upon, exemplified by satiation.",
+          "englishCorrespondence": "position, exemplified by ‘my right [side]’ (يميني); acting, exemplified by eating; and being acted upon, exemplified by satiation.",
           "riskMarkers": []
         },
         {
@@ -90192,7 +90192,7 @@
             "englishSentenceEnd": 63,
             "note": "Position example يميني/نفسي remains uncertain; acting/eating and receiving/satiation are clear."
           },
-          "englishCorrespondence": "position, exemplified here by my right [the wording is uncertain]; acting, exemplified by eating; and being acted upon, exemplified by satiation.",
+          "englishCorrespondence": "position, exemplified by ‘my right [side]’ (يميني); acting, exemplified by eating; and being acted upon, exemplified by satiation.",
           "riskMarkers": []
         },
         {
@@ -90206,7 +90206,7 @@
             "englishSentenceEnd": 63,
             "note": "Position example يميني/نفسي remains uncertain; acting/eating and receiving/satiation are clear."
           },
-          "englishCorrespondence": "position, exemplified here by my right [the wording is uncertain]; acting, exemplified by eating; and being acted upon, exemplified by satiation.",
+          "englishCorrespondence": "position, exemplified by ‘my right [side]’ (يميني); acting, exemplified by eating; and being acted upon, exemplified by satiation.",
           "riskMarkers": []
         },
         {
@@ -90220,7 +90220,7 @@
             "englishSentenceEnd": 63,
             "note": "Position example يميني/نفسي remains uncertain; acting/eating and receiving/satiation are clear."
           },
-          "englishCorrespondence": "position, exemplified here by my right [the wording is uncertain]; acting, exemplified by eating; and being acted upon, exemplified by satiation.",
+          "englishCorrespondence": "position, exemplified by ‘my right [side]’ (يميني); acting, exemplified by eating; and being acted upon, exemplified by satiation.",
           "riskMarkers": []
         },
         {
@@ -90234,7 +90234,7 @@
             "englishSentenceEnd": 63,
             "note": "Position example يميني/نفسي remains uncertain; acting/eating and receiving/satiation are clear."
           },
-          "englishCorrespondence": "position, exemplified here by my right [the wording is uncertain]; acting, exemplified by eating; and being acted upon, exemplified by satiation.",
+          "englishCorrespondence": "position, exemplified by ‘my right [side]’ (يميني); acting, exemplified by eating; and being acted upon, exemplified by satiation.",
           "riskMarkers": []
         },
         {
@@ -90248,7 +90248,7 @@
             "englishSentenceEnd": 63,
             "note": "Position example يميني/نفسي remains uncertain; acting/eating and receiving/satiation are clear."
           },
-          "englishCorrespondence": "position, exemplified here by my right [the wording is uncertain]; acting, exemplified by eating; and being acted upon, exemplified by satiation.",
+          "englishCorrespondence": "position, exemplified by ‘my right [side]’ (يميني); acting, exemplified by eating; and being acted upon, exemplified by satiation.",
           "riskMarkers": []
         },
         {
@@ -90262,7 +90262,7 @@
             "englishSentenceEnd": 63,
             "note": "Position example يميني/نفسي remains uncertain; acting/eating and receiving/satiation are clear."
           },
-          "englishCorrespondence": "position, exemplified here by my right [the wording is uncertain]; acting, exemplified by eating; and being acted upon, exemplified by satiation.",
+          "englishCorrespondence": "position, exemplified by ‘my right [side]’ (يميني); acting, exemplified by eating; and being acted upon, exemplified by satiation.",
           "riskMarkers": []
         },
         {
@@ -90276,7 +90276,7 @@
             "englishSentenceEnd": 63,
             "note": "Position example يميني/نفسي remains uncertain; acting/eating and receiving/satiation are clear."
           },
-          "englishCorrespondence": "position, exemplified here by my right [the wording is uncertain]; acting, exemplified by eating; and being acted upon, exemplified by satiation.",
+          "englishCorrespondence": "position, exemplified by ‘my right [side]’ (يميني); acting, exemplified by eating; and being acted upon, exemplified by satiation.",
           "riskMarkers": []
         },
         {
@@ -90840,61 +90840,61 @@
         {
           "n": 61,
           "startChar": 5650,
-          "endChar": 5716,
-          "text": "position, exemplified here by my right [the wording is uncertain];"
+          "endChar": 5701,
+          "text": "position, exemplified by ‘my right [side]’ (يميني);"
         },
         {
           "n": 62,
-          "startChar": 5717,
-          "endChar": 5747,
+          "startChar": 5702,
+          "endChar": 5732,
           "text": "acting, exemplified by eating;"
         },
         {
           "n": 63,
-          "startChar": 5748,
-          "endChar": 5795,
+          "startChar": 5733,
+          "endChar": 5780,
           "text": "and being acted upon, exemplified by satiation."
         },
         {
           "n": 64,
-          "startChar": 5796,
-          "endChar": 5891,
+          "startChar": 5781,
+          "endChar": 5876,
           "text": "There are also different forms in bodily coverings, such as elephant, donkey, lion, and ṣarṣar."
         },
         {
           "n": 65,
-          "startChar": 5892,
-          "endChar": 6019,
+          "startChar": 5877,
+          "endChar": 6004,
           "text": "These correspond to human faculties receiving praiseworthy and blameworthy forms: this one is discerning, so he is an elephant;"
         },
         {
           "n": 66,
-          "startChar": 6020,
-          "endChar": 6047,
+          "startChar": 6005,
+          "endChar": 6032,
           "text": "this one dull, so a donkey;"
         },
         {
           "n": 67,
-          "startChar": 6048,
-          "endChar": 6074,
+          "startChar": 6033,
+          "endChar": 6059,
           "text": "this one brave, so a lion;"
         },
         {
           "n": 68,
-          "startChar": 6075,
-          "endChar": 6130,
+          "startChar": 6060,
+          "endChar": 6115,
           "text": "this one cowardly [the suggested reading], so a ṣarṣar."
         },
         {
           "n": 69,
-          "startChar": 6131,
-          "endChar": 6187,
+          "startChar": 6116,
+          "endChar": 6172,
           "text": "Understand: God speaks the truth and guides to the way.’"
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 15
+      "sourceWarnings": 16
     },
     {
       "id": "SH-054",
@@ -91475,7 +91475,7 @@
       "sourceLocator": "A, printed pp. 250–252",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/446?lang=ar",
       "arabicSha256": "52db8e5f26df1130be32b7f86018f72367ecdee274021b03f4e4b14de323b3e3",
-      "englishSha256": "11b13b6afd01f9ed8f8e4288643aa5a2b3c61950c8a553a3b7ea20197da0394d",
+      "englishSha256": "aeef387f532c1c026ceff09ac141849b255c646038326b4312d13c8652069b68",
       "arabicClauses": [
         {
           "n": 1,
@@ -91950,7 +91950,7 @@
             "englishSentenceEnd": 18,
             "note": "Disordered source sentence about indulging faculties is interpreted contextually; the English explicitly discloses the defect."
           },
-          "englishCorrespondence": "Indulging those faculties and restrictions conversely subjects the holy faculty to their direction and draws it toward the body, matter, and its obscuring conditions. The source's exact sentence here is disordered, but its subsequent causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands.",
+          "englishCorrespondence": "Indulging those faculties and restrictions conversely subjects the holy faculty to their direction and draws it toward the body, matter, and its obscuring conditions. The printed construction concerning the sacred faculty’s bodily orientation is compressed, but the ensuing causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands.",
           "riskMarkers": []
         },
         {
@@ -91964,7 +91964,7 @@
             "englishSentenceEnd": 19,
             "note": "Stronger contrary causes redirect operations; treatment-by-contraries maxim is retained as the author’s explanatory framework."
           },
-          "englishCorrespondence": "The source's exact sentence here is disordered, but its subsequent causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands. For, as the established maxim states, disorders are treated through their contraries.",
+          "englishCorrespondence": "The printed construction concerning the sacred faculty’s bodily orientation is compressed, but the ensuing causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands. For, as the established maxim states, disorders are treated through their contraries.",
           "riskMarkers": []
         },
         {
@@ -91978,7 +91978,7 @@
             "englishSentenceEnd": 19,
             "note": "Stronger contrary causes redirect operations; treatment-by-contraries maxim is retained as the author’s explanatory framework."
           },
-          "englishCorrespondence": "The source's exact sentence here is disordered, but its subsequent causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands. For, as the established maxim states, disorders are treated through their contraries.",
+          "englishCorrespondence": "The printed construction concerning the sacred faculty’s bodily orientation is compressed, but the ensuing causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands. For, as the established maxim states, disorders are treated through their contraries.",
           "riskMarkers": []
         },
         {
@@ -91992,7 +91992,7 @@
             "englishSentenceEnd": 19,
             "note": "Stronger contrary causes redirect operations; treatment-by-contraries maxim is retained as the author’s explanatory framework."
           },
-          "englishCorrespondence": "The source's exact sentence here is disordered, but its subsequent causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands. For, as the established maxim states, disorders are treated through their contraries.",
+          "englishCorrespondence": "The printed construction concerning the sacred faculty’s bodily orientation is compressed, but the ensuing causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands. For, as the established maxim states, disorders are treated through their contraries.",
           "riskMarkers": []
         },
         {
@@ -92006,7 +92006,7 @@
             "englishSentenceEnd": 19,
             "note": "Stronger contrary causes redirect operations; treatment-by-contraries maxim is retained as the author’s explanatory framework."
           },
-          "englishCorrespondence": "The source's exact sentence here is disordered, but its subsequent causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands. For, as the established maxim states, disorders are treated through their contraries.",
+          "englishCorrespondence": "The printed construction concerning the sacred faculty’s bodily orientation is compressed, but the ensuing causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands. For, as the established maxim states, disorders are treated through their contraries.",
           "riskMarkers": []
         },
         {
@@ -92020,7 +92020,7 @@
             "englishSentenceEnd": 19,
             "note": "Stronger contrary causes redirect operations; treatment-by-contraries maxim is retained as the author’s explanatory framework."
           },
-          "englishCorrespondence": "The source's exact sentence here is disordered, but its subsequent causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands. For, as the established maxim states, disorders are treated through their contraries.",
+          "englishCorrespondence": "The printed construction concerning the sacred faculty’s bodily orientation is compressed, but the ensuing causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands. For, as the established maxim states, disorders are treated through their contraries.",
           "riskMarkers": []
         }
       ],
@@ -92130,19 +92130,19 @@
         {
           "n": 18,
           "startChar": 2796,
-          "endChar": 3123,
-          "text": "The source's exact sentence here is disordered, but its subsequent causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands."
+          "endChar": 3163,
+          "text": "The printed construction concerning the sacred faculty’s bodily orientation is compressed, but the ensuing causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands."
         },
         {
           "n": 19,
-          "startChar": 3124,
-          "endChar": 3209,
+          "startChar": 3164,
+          "endChar": 3249,
           "text": "For, as the established maxim states, disorders are treated through their contraries."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 9
+      "sourceWarnings": 10
     },
     {
       "id": "SH-056",
@@ -96938,7 +96938,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 4
+      "sourceWarnings": 5
     },
     {
       "id": "SH-061-F",
@@ -97117,7 +97117,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 6
+      "sourceWarnings": 7
     },
     {
       "id": "SH-061-A",
@@ -97250,7 +97250,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 4
+      "sourceWarnings": 5
     },
     {
       "id": "SH-061-B",

@@ -178,7 +178,7 @@ def build(edition,filename,title,group,lang,notesMode,appendix):
             bridge=c.get('precedingMatn')
             if bridge:
                 pieces.append('<div class="matn"><p class="label">Additional original quotation</p>'+pair(bridge.get('arabic',''),bridge.get('english',''),lang)+'</div>')
-            pieces.append('<div class="commentary" id="'+K(c['id'])+'"><h3>'+K(c['id']+' — '+c.get('section',''))+'</h3><p class="label">Sharḥ · Ṣāʾin al-Dīn Ibn Turka</p>'+pair(c['arabic'],c['english'],lang)+notes(c,notesMode)+'</div>')
+            pieces.append('<div class="commentary" id="'+K(c['id'])+'"><h3>'+K(c['id']+' — '+c.get('section',''))+'</h3><p class="label">Sharḥ · Ṣāʾin al-Dīn Ibn Turka</p>'+pair(c.get('readingArabic',c['arabic']),c['english'],lang)+notes(c,notesMode)+'</div>')
         pieces.append('</article>')
     pieces.append('</section>')
     if appendix:
