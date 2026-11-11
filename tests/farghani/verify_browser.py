@@ -27,6 +27,7 @@ def run_browser(p,engine,browser_name):
         page.on("pageerror",lambda e:errors.append(str(e)))
         page.goto(BASE+"continuous-translation.html",wait_until="domcontentloaded",timeout=60000)
         page.wait_for_selector("html.fr-ready")
+        page.screenshot(path=str(ART/(label+"-opening.png")),full_page=False)
         assert page.locator("#document section.b2007-page").count()==128,f"{label}: source pages"
         assert page.locator('#scholarly-apparatus li[id^="apparatus-p"]').count()==128,f"{label}: apparatus pages"
         assert page.locator("#document section[data-part-start]").count()==5,f"{label}: foundation starts"
@@ -59,14 +60,28 @@ def run_browser(p,engine,browser_name):
         page.locator("#fr-panel-body .fr-result").first.click()
         assert page.evaluate("location.hash").startswith("#b2007-p"),f"{label}: search jump"
         page.wait_for_timeout(500)
-        page.locator("#fr-font-up").click()
+        if is_mobile:
+            assert page.locator("#fr-more-open").is_visible(),f"{label}: phone tools entry missing"
+            page.locator("#fr-more-open").click()
+            assert page.locator("#fr-panel-title").inner_text()=="Appearance & reading tools"
+            page.get_by_role("button",name="A+ Larger").click()
+            page.get_by_role("button",name="Mist",exact=True).click()
+            assert page.evaluate("document.documentElement.dataset.theme")=="horizon"
+            page.get_by_role("button",name="Night",exact=True).click()
+            page.locator("#fr-close").click()
+        else:
+            page.locator("#fr-font-up").click()
+            page.locator("#fr-theme").click()
+            assert page.evaluate("document.documentElement.dataset.theme")=="horizon",f"{label}: theme control"
+            page.locator("#fr-theme").click()
         scale=page.evaluate("getComputedStyle(document.documentElement).getPropertyValue('--fr-scale').trim()")
         assert float(scale)>1,f"{label}: type scaling"
-        page.locator("#fr-theme").click()
-        assert page.evaluate("document.documentElement.dataset.theme")=="horizon",f"{label}: theme control"
-        page.locator("#fr-theme").click()
         assert page.evaluate("document.documentElement.dataset.theme")=="night",f"{label}: dark theme"
-        page.locator("#fr-focus").click()
+        if is_mobile:
+            page.locator("#fr-more-open").click()
+            page.get_by_role("button",name="Focus reading").click()
+        else:
+            page.locator("#fr-focus").click()
         assert page.locator("body").evaluate("(n)=>n.classList.contains('fr-focus')")
         assert page.locator("#fr-exit-focus").is_visible()
         page.locator("#fr-exit-focus").click()
