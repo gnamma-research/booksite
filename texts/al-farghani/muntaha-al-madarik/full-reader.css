@@ -1,7 +1,7 @@
 /* GNAMMA · Farghānī introduction · reading desk XVIII
    Presentation only: never hide untranslated source content or alter Arabic lemmas. */
 :root{--fr-scale:1;--fr-text-width:75ch;--fr-text-font:Georgia,"Iowan Old Style",Cambria,serif}
-html{scroll-padding-top:148px}
+html{scroll-padding-top:0}
 body.fr-wide{--fr-text-width:92ch}
 body.fr-ready{padding-bottom:calc(70px + env(safe-area-inset-bottom,0px))}
 #topbar .book-title{font-size:clamp(14px,1.7vw,18px)}
@@ -90,7 +90,7 @@ body.fr-focus{padding-bottom:0}
   .fr-current-label{font-size:10px}
 }
 @media(max-width:630px){
-  html{scroll-padding-top:145px}
+  html{scroll-padding-top:0}
   #topbar{grid-template-columns:auto 1fr;gap:7px}
   #topbar .toplinks{max-width:65vw;overflow:auto;white-space:nowrap;scrollbar-width:none}
   #topbar .toplinks a{font-size:11px}
