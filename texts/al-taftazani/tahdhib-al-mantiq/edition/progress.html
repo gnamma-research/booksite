@@ -37,11 +37,12 @@ footer{font-size:12px;color:var(--muted);border-top:1px solid var(--rule);paddin
 <p class="subtitle">Every bar uses its own stated denominator and source grade. A translation from a searchable print is not a manuscript-certified reading. A selected lemma is not a translated page.</p>
 <p class="warn"><strong>Publication rule:</strong> no page, numbered note, manuscript witness, or historical modal theorem is counted as complete simply because it was inspected, indexed, sampled, or modelled. Later glosses remain a separate textual family from al-Yazdī's main commentary.</p>
 <div id="metrics"><p>Loading published progress ledger…</p></div>
-<h2>Three historically numbered gloss sections</h2><p id="note-state"></p><p id="intro-state"></p><p id="dalala-state"></p>
-<div class="links"><a href="hawashi-numbered-notes.html">Read all three locally numbered gloss series (242 records)</a>
-<a href="batches/hawashi-all-sections-cumulative-stage111.md">Combined cumulative corpus · THREE sections</a>
+<h2>Four historically numbered gloss sections</h2><p id="note-state"></p><p id="intro-state"></p><p id="dalala-state"></p><p id="mafahim-state"></p>
+<div class="links"><a href="hawashi-numbered-notes.html">Read all FOUR locally numbered gloss series (324 indexed records)</a>
+<a href="batches/hawashi-all-sections-cumulative-stage112.md">Combined cumulative corpus · FOUR sections</a>
 <a href="batches/hawashi-introduction-numbered-cumulative-intro001-082.md">Introduction-to-Logic glosses · local 1–82</a>
-<a href="batches/hawashi-signification-numbered-cumulative-dal001-020.md">Signification glosses · local 1–20</a>
+<a href="batches/hawashi-signification-numbered-cumulative-dal001-091.md">Signification glosses · local 1–91</a>
+<a href="batches/hawashi-concepts-numbered-cumulative-maf001-011.md">Concepts / Universals · local 1–11</a>
 <a href="batches/hawashi-preface-numbered-cumulative-hwn001-140.md">Cumulative Arabic–English Markdown · H PREFACE notes 1–140</a>
 <a href="hawashi-q125-178.html">View 52 shorter source selections</a>
 <a href="YAZDI_TWO_BATCH_RELEASE_2026-11-07.md">Main al-Yazdī cumulative translation</a></div>
@@ -49,7 +50,7 @@ footer{font-size:12px;color:var(--muted);border-top:1px solid var(--rule);paddin
 <h2>Resume after chat failure</h2>
 <p>Start from <a href="HANDOFF_LATEST.md"><strong>HANDOFF_LATEST.md</strong></a>, then inspect <a href="progress-data.js">progress-data.js</a> and the individual stage note files. The latest handoff contains exact commits, historical source boundaries, unfinished notes, tests and next operations. Every stage keeps an immutable report; the latest handoff is replaced with the current cumulative state.</p>
 <footer id="updated"></footer></main>
-<script src="progress-data.js?v=20261109-111"></script>
+<script src="progress-data.js?v=20261109-112"></script>
 <script>
 (function(){'use strict';
 const d=window.GNAMMA_TAHDHIB_PROGRESS;
@@ -65,7 +66,9 @@ document.getElementById('note-state').textContent='H-PREFACE Qum 127–164: '+d.
 const i=d.introLedger;
 document.getElementById('intro-state').textContent=i?'H-INTRO Qum 165–187: '+i.completedEnglish.length+'/'+i.indexedNotes+' locally numbered notes with first-pass English. Partial notes: '+i.partiallyTranslated.join(', ')+'. Full digitally searchable Arabic: '+i.fullDigitizedArabicNotes.length+'/'+i.indexedNotes+'. Historical numbering starts at 1.':'No introduction-gloss data yet.';
 const v=d.dalalaLedger;
-document.getElementById('dalala-state').textContent=v?'H-DALALA Qum 188–191: '+v.completedEnglish.length+'/'+v.indexedNotes+' new locally numbered notes with first-pass English. Partial notes: '+v.partiallyTranslated.join(', ')+'. Full digitally searchable Arabic: '+v.fullDigitizedArabicNotes.length+'/'+v.indexedNotes+'. Its historical numbering starts at a THIRD local 1.':'No signification-gloss data yet.';
+document.getElementById('dalala-state').textContent=v?'H-DALALA Qum 188–215: '+v.completedEnglish.length+'/'+v.indexedNotes+' locally numbered notes with first-pass English. Partial notes: '+v.partiallyTranslated.join(', ')+'. Full digitally searchable Arabic: '+v.fullDigitizedArabicNotes.length+'/'+v.indexedNotes+'. Historic section closes at printed p215.':'No signification-gloss data yet.';
+const m=d.mafahimLedger;
+document.getElementById('mafahim-state').textContent=m?'H-MAFAHIM Qum 216–221: '+m.completedEnglish.length+'/'+m.indexedNotes+' NEW locally numbered Concepts notes with first-pass English. Partial notes: '+m.partiallyTranslated.join(', ')+'. Full digitally searchable Arabic: '+m.fullDigitizedArabicNotes.length+'/'+m.indexedNotes+'. Historical numbering restarts for a FOURTH time at p216.':'No Concepts-gloss data yet.';
 const sg=document.getElementById('stages');for(const s of d.stages){const item=make('div','stage');item.append(make('h3',null,'Stage '+s.id+' · '+s.title),make('p',null,s.date+' · Qum '+s.sourcePages+' · '+s.fullNoteCount+' full first-pass notes, '+s.partialNoteCount+' partial · '+s.certifiedPages+' certified printed pages'));sg.append(item)}
 document.getElementById('updated').textContent='Ledger updated '+d.updated+' · Stage '+d.stage+' · Counts are evidence-graded and intentionally conservative.';
 })();

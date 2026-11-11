@@ -1,8 +1,8 @@
-/* Tahdhīb Stage111, 13 independent research metrics, three historical local note sequences. */
+/* Tahdhīb Stage112: fifteen evidence-graded metrics and FOUR historical H-local numbering series. */
 window.GNAMMA_TAHDHIB_PROGRESS={
   "schema": "gnamma-tahdhib-cumulative-progress-v1",
   "updated": "2026-11-09",
-  "stage": "111",
+  "stage": "112",
   "baseline": {
     "logicMatnDivisions": 19,
     "kalamClauses": 1044,
@@ -89,19 +89,35 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     },
     {
       "id": "dalala-notes",
-      "label": "H-DALALA Q188–191 · first-pass English numbered glosses",
-      "current": 14,
-      "total": 20,
+      "label": "H-DALALA Q188–215 · locally numbered glosses with first-pass English",
+      "current": 59,
+      "total": 91,
       "unit": "locally numbered notes",
-      "note": "New signification local note series restarted at p188: 14 complete first-pass English, six partial (1,12,13,14,15,18). Section continues beyond p191."
+      "note": "Historic Signification section closes after local note91 on Qum p215. 59 working English complete,32 partial. Q216 begins new Concepts section with local note1."
     },
     {
       "id": "dalala-arabic",
-      "label": "H-DALALA Q188–191 · full digitally searchable Arabic transcription",
+      "label": "H-DALALA Q188–215 · complete searchable-Arabic note transcription",
       "current": 0,
-      "total": 20,
+      "total": 91,
       "unit": "locally numbered notes",
-      "note": "These 20 signification glosses have Arabic locator excerpts only. Full Arabic/photographic certification remains zero."
+      "note": "All 91 historical Signification records contain SHORT Arabic locator lemmata; no full Arabic transcriptions or manuscript photographs verified."
+    },
+    {
+      "id": "mafahim-notes",
+      "label": "H-MAFAHIM Q216–221 · locally numbered concepts glosses with English",
+      "current": 5,
+      "total": 11,
+      "unit": "locally numbered notes",
+      "note": "Fourth authentic source section begins with new local note1 on Qum p216: 5 complete first-pass English,6 partial, unfinished beyond p221."
+    },
+    {
+      "id": "mafahim-arabic",
+      "label": "H-MAFAHIM Q216–221 · full digitally searchable Arabic transcription",
+      "current": 0,
+      "total": 11,
+      "unit": "locally numbered notes",
+      "note": "All 11 currently show short Arabic locator lemmata ONLY. No photographed source page or independent manuscript variant certified."
     },
     {
       "id": "historical-classes",
@@ -335,17 +351,17 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     ],
     "prefaceSectionClosedAtPrintedPage": 164,
     "nextSection": {
-      "id": "H-DALALA",
-      "titleArabic": "حواشي التصورات « بحث الدلالات »",
-      "printedStartPage": 188,
+      "id": "H-MAFAHIM",
+      "titleArabic": "حواشي المفاهيم",
+      "printedStartPage": 216,
       "localFirstNote": 1,
-      "stableFirstId": "HWN-DALALA-001",
-      "notesIndexed": 20,
-      "notesTranslated": 14,
+      "stableFirstId": "HWN-MAFAHIM-001",
+      "notesIndexed": 11,
+      "notesTranslated": 5,
       "notesPartial": 6,
       "notesArabicTranscribed": 0,
-      "lastProcessedQumPage": 191,
-      "nextLocalNote": 21
+      "lastProcessedQumPage": 221,
+      "nextLocalNote": 12
     }
   },
   "currentRelease": {
@@ -357,8 +373,9 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     "cumulativeMarkdown": "batches/hawashi-preface-numbered-cumulative-hwn001-140.md",
     "introductionReader": "hawashi-numbered-notes.html",
     "introductionCumulativeMarkdown": "batches/hawashi-introduction-numbered-cumulative-intro001-082.md",
-    "allSectionsCumulativeMarkdown": "batches/hawashi-all-sections-cumulative-stage111.md",
-    "significationCumulativeMarkdown": "batches/hawashi-signification-numbered-cumulative-dal001-020.md"
+    "allSectionsCumulativeMarkdown": "batches/hawashi-all-sections-cumulative-stage112.md",
+    "significationCumulativeMarkdown": "batches/hawashi-signification-numbered-cumulative-dal001-091.md",
+    "conceptsCumulativeMarkdown": "batches/hawashi-concepts-numbered-cumulative-maf001-011.md"
   },
   "stages": [
     {
@@ -565,6 +582,33 @@ window.GNAMMA_TAHDHIB_PROGRESS={
         "HANDOFF_LATEST.md",
         "stages/STAGE111_INTRODUCTION_AND_SIGNIFICATION.md"
       ]
+    },
+    {
+      "id": "112",
+      "date": "2026-11-09",
+      "title": "Conclude 91-note Signification section, begin 11-note Concepts/Universals section",
+      "sourcePages": "191–221",
+      "noteRange": "H-DALALA 21–91; H-MAFAHIM 1–11",
+      "fullNoteCount": 50,
+      "partialNoteCount": 32,
+      "arabicNoteCount": 0,
+      "certifiedPages": 0,
+      "report": "stages/STAGE112_SIGNIFICATION_AND_CONCEPTS.md",
+      "files": [
+        "hawashi-signification-notes-stage112a.js",
+        "hawashi-signification-notes-stage112b.js",
+        "hawashi-signification-notes-stage112c.js",
+        "hawashi-signification-notes-stage112d.js",
+        "hawashi-concepts-notes-stage112a.js",
+        "batches/hawashi-signification-numbered-cumulative-dal001-091.md",
+        "batches/hawashi-concepts-numbered-cumulative-maf001-011.md",
+        "batches/hawashi-all-sections-cumulative-stage112.md",
+        "hawashi-numbered-notes.html",
+        "progress-data.js",
+        "progress.html",
+        "HANDOFF_LATEST.md",
+        "stages/STAGE112_SIGNIFICATION_AND_CONCEPTS.md"
+      ]
     }
   ],
   "introLedger": {
@@ -677,9 +721,9 @@ window.GNAMMA_TAHDHIB_PROGRESS={
     "sectionId": "H-DALALA",
     "titleArabic": "حواشي التصورات « بحث الدلالات »",
     "printedStartPage": 188,
-    "lastProcessedQumPrintedPage": 191,
+    "lastProcessedQumPrintedPage": 215,
     "noteIdPrefix": "HWN-DALALA-",
-    "indexedNotes": 20,
+    "indexedNotes": 91,
     "completedEnglish": [
       2,
       3,
@@ -694,7 +738,52 @@ window.GNAMMA_TAHDHIB_PROGRESS={
       16,
       17,
       19,
-      20
+      20,
+      23,
+      24,
+      26,
+      29,
+      30,
+      31,
+      34,
+      35,
+      36,
+      39,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      51,
+      52,
+      53,
+      55,
+      56,
+      58,
+      59,
+      61,
+      62,
+      65,
+      66,
+      67,
+      70,
+      71,
+      75,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      84,
+      85,
+      87,
+      90,
+      91
     ],
     "partiallyTranslated": [
       1,
@@ -702,31 +791,87 @@ window.GNAMMA_TAHDHIB_PROGRESS={
       13,
       14,
       15,
-      18
+      18,
+      21,
+      22,
+      25,
+      27,
+      28,
+      32,
+      33,
+      37,
+      38,
+      40,
+      50,
+      54,
+      57,
+      60,
+      63,
+      64,
+      68,
+      69,
+      72,
+      73,
+      74,
+      76,
+      83,
+      86,
+      88,
+      89
+    ],
+    "fullDigitizedArabicNotes": [],
+    "unnumberedFollowingRendered": [
+      74
+    ],
+    "sourcePhotographed": false,
+    "fullPrintedPagesCertified": 0,
+    "nextLocalNote": null,
+    "nextSourcePages": null,
+    "sectionClosedAtPrintedPage": 215
+  },
+  "overallLaterGlossNoteLedger": {
+    "indexedNotes": 324,
+    "completeEnglish": 266,
+    "partialEnglish": 58,
+    "fullDigitalArabic": 54,
+    "arabicLocatorsOnly": 270,
+    "unnumberedFollowing": 10,
+    "distinctSections": [
+      "H-PREFACE",
+      "H-INTRO",
+      "H-DALALA",
+      "H-MAFAHIM"
+    ],
+    "noGlobalHistoricalNoteNumbering": true,
+    "fullHPrintedPagesCertified": 0
+  },
+  "mafahimLedger": {
+    "sectionId": "H-MAFAHIM",
+    "titleArabic": "حواشي المفاهيم (النسب الأربع، الكليات الخمس، مفهوم كلي)",
+    "printedStartPage": 216,
+    "lastProcessedQumPrintedPage": 221,
+    "noteIdPrefix": "HWN-MAFAHIM-",
+    "indexedNotes": 11,
+    "completedEnglish": [
+      1,
+      3,
+      7,
+      8,
+      11
+    ],
+    "partiallyTranslated": [
+      2,
+      4,
+      5,
+      6,
+      9,
+      10
     ],
     "fullDigitizedArabicNotes": [],
     "unnumberedFollowingRendered": [],
     "sourcePhotographed": false,
     "fullPrintedPagesCertified": 0,
-    "nextLocalNote": 21,
-    "nextSourcePages": [
-      191,
-      192
-    ]
-  },
-  "overallLaterGlossNoteLedger": {
-    "indexedNotes": 242,
-    "completeEnglish": 216,
-    "partialEnglish": 26,
-    "fullDigitalArabic": 54,
-    "arabicLocatorsOnly": 188,
-    "unnumberedFollowing": 9,
-    "distinctSections": [
-      "H-PREFACE",
-      "H-INTRO",
-      "H-DALALA"
-    ],
-    "noGlobalHistoricalNoteNumbering": true,
-    "fullHPrintedPagesCertified": 0
+    "nextLocalNote": 12,
+    "nextSourcePage": 221
   }
 };
