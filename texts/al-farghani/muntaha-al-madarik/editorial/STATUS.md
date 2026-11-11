@@ -1,3 +1,7 @@
+## Source-link verification supplement — 11 November 2026
+
+An apparently mislabeled 2007 scanned-edition download points to an Internet Archive item whose accessible OCR instead names Dāwūd al-Qayṣarī's commentary. Because the actual PDF could not be inspected, the item is excluded from Farghānī collation. A separate 2007 PDF candidate was inaccessible (HTTP 403). [See source candidate audit](SOURCE_CANDIDATE_AUDIT_017.md). **No actual physical B2007 printed page has yet been checked from these candidates.**
+
 ## Latest milestone — Stage XVII clean reader and complete recovery (11 November 2026)
 
 **New interface and preservation work, not new manuscript or translation coverage.** All 128 Arabic-source hyperlinks and 68 intrusive boundary, textual-uncertainty and editorial notes have been moved out of the continuous 128-page English working article into a collapsed page-linked scholarly apparatus. The reader defaults to uninterrupted prose; printed-page headings and scholarly notes remain opt-in. The source-grade bilingual excerpts and critical reader also default to notes hidden. The malformed inline p34 textual reading has been repaired and the uncertainty remains separately recorded.
