@@ -34,3 +34,7 @@ Chapter 01 has a source-led expanded matn and sharḥ, synchronized in the stati
 ## Muhammadan axial framework · 11 November 2026
 
 The [Muhammadan Axis of ʿUmrān](editorial/MUHAMMADAN_AXIS_OF_UMRAN_METHOD.md) is the consolidated research methodology. It integrates prophetic comprehensiveness, the partial disciplinary traces, direct and mediated spiritual formation, individual encounters, family and household life, learned professions, institutions and the historical processes of ʿumrān. Read it alongside the earlier [prophetic integrality method](editorial/PROPHETIC_INTEGRALITY_AND_INHERITANCE_METHOD.md). These files govern subsequent revisions; their appearance does not certify uncompleted collation.
+
+## Muhammadan Reality and Miʿrāj research · 11 November 2026
+
+The [source-led dossier on the Muhammadan Reality, ascension, Logos and the relation of higher spiritual and earthly ʿumrān](editorial/MUHAMMADAN_REALITY_MIRAJ_HIGHER_AND_EARTHLY_UMRAN_RESEARCH_20261111.md) compares Ibn ʿArabī, al-Qūnawī, Farghānī, al-Mahāʾimī, Ibn Turka, al-Sulamī/Colby, Lings, Guénon, Schuon and the Burda. It records which passages were directly inspected and which remain uncollated. The continuous reader text remains unchanged by this methodological publication.
