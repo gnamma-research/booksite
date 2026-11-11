@@ -36,6 +36,9 @@
 - Continuous page: [../continuous-translation.html](../continuous-translation.html)
 - Critical bilingual view: [../critical-edition.html](../critical-edition.html)
 
+## New external source-candidate audit (11 November 2026)
+A third-party website's link to an archive PDF purportedly of Farghānī B2007 was checked against its associated Internet Archive OCR: the OCR text repeatedly identifies Dāwūd al-Qayṣarī's separate Tāʾiyya commentary. The actual PDF cover could not be inspected, so the URL is **provisionally disqualified as the wrong work**, not accepted as a Beirut 2007 printed witness. Another proposed archive copy `lis02029/01.pdf` returned HTTP 403 and remains unverified. [Source candidate evidence and exact URLs](SOURCE_CANDIDATE_AUDIT_017.md). This audit changes **zero** printed or manuscript collation totals.
+
 ## Remaining tasks in strict order
 1. **Acquire and visually inspect the actual physical Beirut 2007 page 52** and test `اسم الحكم` vs `سم الحكيم`. Online Beirut digital transcription is **not** the same as physical paper proof. Also inspect paper p38 and p48 and pp61–65 for derivative-source replacement.
 2. A candidate of a 2007 scanned PDF is linked at `https://archive.org/download/lis_q115/lisanarb.com_q1508.pdf`; during this stage, downloading/opening failed. Do **not** count it as seen, collated, or authoritative until visually inspected.
