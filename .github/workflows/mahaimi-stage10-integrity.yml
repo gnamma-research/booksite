@@ -1,16 +1,22 @@
-name: Mahaimi Stage10 critical-edition coverage and concordance
+name: Mahaimi source-based edition integrity
 on:
   push:
     paths:
       - 'texts/al-mahaimi/mashra-al-khusus/**'
       - 'texts/manifest.json'
       - 'tests/test_mahaimi_stage10.py'
+      - 'tools/build_mahaimi_reader.py'
+      - 'tools/build_mahaimi_exports.py'
+      - 'tools/build_mahaimi_downloads.py'
       - '.github/workflows/mahaimi-stage10-integrity.yml'
   pull_request:
     paths:
       - 'texts/al-mahaimi/mashra-al-khusus/**'
       - 'texts/manifest.json'
       - 'tests/test_mahaimi_stage10.py'
+      - 'tools/build_mahaimi_reader.py'
+      - 'tools/build_mahaimi_exports.py'
+      - 'tools/build_mahaimi_downloads.py'
       - '.github/workflows/mahaimi-stage10-integrity.yml'
   workflow_dispatch:
 jobs:
@@ -24,5 +30,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Check reader JavaScript syntax
+        run: node --check texts/al-mahaimi/mashra-al-khusus/reader.js
       - name: Verify the cumulative matn/sharh corpus, links, and source-status register
         run: python tests/test_mahaimi_stage10.py

@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "review": "Stage 12 early-page print and translation review",
+  "reviewed_utc": "2026-11-10",
+  "printed_pages": [
+    11,
+    20
+  ],
+  "witness": {
+    "path": "mahaimi_sources/ending_witness/machra3-khosous.pdf",
+    "sha256": "2e4b896446d82bbd877a8c0657e69976a25c366a2d97559194b7ed96c1749b0e",
+    "mapping": "For these ten inspected pages only: zero-based PDF index equals the printed page; one-based PDF page = printed page + 1. Do not generalize this mapping to the whole scan."
+  },
+  "patches": [
+    {
+      "id": "MSH-001",
+      "pair_index": 0,
+      "field": "en",
+      "old": "the glass of the intellect [described as *malakī*, “angelic” or “possessed”]",
+      "new": "the glass of the dispositional intellect (*al-ʿaql al-malakī*)",
+      "reason": "The scan reads العقل الملكي. In the surrounding technical sequence, and in the parallel Avicennan interpretation of Q24:35 cited by al-Ṭūsī, the glass corresponds to intellect in habitu (العقل بالملكة), not to an angelic or possessed intellect. This is an explicitly documented contextual interpretation; the Arabic is unchanged.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-004",
+      "pair_index": 0,
+      "field": "en",
+      "old": "There are other reports of this kind.",
+      "new": "There are other sound reports of this kind.",
+      "reason": "Restores الصحيحة, the author’s own description. The editorial note separately denies that the project has independently authenticated the reports.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-004",
+      "pair_index": 1,
+      "field": "en",
+      "old": "The second perspective [**the transition and punctuation require collation**]: There is in existence only one existent and a bringer-into-being.",
+      "new": "The second perspective [the quotation is abridged here]: There is in existence only one existent and that which is brought into being (*mūjad*).",
+      "reason": "The 2008 print confirms the second-perspective boundary. The cited Iḥyāʾ passage distinguishes existent (mawjūd) and produced (mūjad); the latter is not an additional producer (mūjid). The subsequent active form printed by Mashraʿ is preserved and documented in the note.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-007",
+      "pair_index": 1,
+      "field": "ar",
+      "old": " - وأطال في ذلك . [ مختصر الفتوحات المكية ] .",
+      "new": "",
+      "reason": "The scan shows this entire clause below the footnote rule on p19, as the continuation of the modern editor’s p18 footnote. It must not enter the authorial running text.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-007",
+      "pair_index": 1,
+      "field": "en",
+      "old": "which is a relation lacking independent existence",
+      "new": "which is a relation that has no existence",
+      "reason": "نسبة غير موجودة does not contain “independent”; removes an unmarked interpretive qualification.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-007",
+      "pair_index": 1,
+      "field": "en",
+      "old": " He elaborates at length. [The online source then prints the bracketed words *Mukhtaṣar al-Futūḥāt al-Makkiyya*; **the attribution and boundaries of this tag require verification**.]",
+      "new": "",
+      "reason": "The scan resolves the tag as modern editorial footnote continuation, not part of this authorial paragraph.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-008",
+      "pair_index": 0,
+      "field": "ar",
+      "old": "وعز لهم بالكلية وراءهم بعين الفناء والزوال",
+      "new": "وعزلهم بالكلية ورآهم بعين الفناء والزوال",
+      "reason": "Normalizes word division and the orthography of “and he saw them” against the running text and its syntax; no lexical addition. The old spacing had produced an incorrect English reading.",
+      "confidence": "high for word division; contextual for hamza normalization"
+    },
+    {
+      "id": "MSH-008",
+      "pair_index": 0,
+      "field": "en",
+      "old": "creatures become altogether absent from him, beyond them, through the vision of passing-away and disappearance",
+      "new": "he sets creatures aside altogether and sees them with the eye of passing-away and disappearance",
+      "reason": "Restores the active subject and the two verbs وعزلهم ... ورآهم; “beyond them” was caused by the defective electronic word division.",
+      "confidence": "high"
+    },
+    {
+      "id": "MSH-008",
+      "pair_index": 1,
+      "field": "en",
+      "old": "after first seeing the First Cause",
+      "new": "after first seeing their Cause",
+      "reason": "المسبب أولا means first seeing the Causer; “First Cause” unnecessarily added a technical ordinal absent from the noun.",
+      "confidence": "high"
+    }
+  ],
+  "entry_notes": [
+    {
+      "id": "MSH-000",
+      "field": "editorial_note",
+      "old": "This opening is an elaborate *allusive rewriting* of Qurʾān 24:35, not an autonomous proof of the ontology of lights. Several phrases in the transmitted Arabic are grammatically problematic; see apparatus MSH-T01–T03. Here and below “entity” translates *ʿayn*, but does not by itself decide whether the referent is a fixed entity, an extramental individual, or a particular determination. **Arabic — p. 11 — al-Mahāʾimī (preface begins)** > وبعد . . > > فيقول أقل عبيد العلي الصمد علي بن أحمد بن علي بن أحمد - جعله اللّه ممن أسعد بسعادة الأبد : لما كان باتفاق أهل البصيرة والعيان ، وإطباق ذوي العقل والبيان ، وأن الإنسان خلاصة الأكوان ، مراد بالذات لرب البريات من بين جميع الموجودات ، خلق على صورته لمعرفته ولمحبته ، وهو كونه مظهرا مجملا مفصلا لأفعاله وصفاته وذاته ، فما في سائر الحضرات مقدمات ومتمهات لما فيه من الكمالات ، فلا بدّ له إلا ، ولا بدّ من همة تعليه إلى ماله في عليين من معاني الدرجات ، ولا تهمله لتنزعه همته إلى أدنى من درجة البهائم والجمادات ، وذلك باستنارة سماء باطنه وأرض ظاهره بمصباح العقل الفعلي ، من **English — p. 11 — translation (sentence crosses page break)** > To proceed: The least of the servants of the Most High, the Self-Sufficient, ʿAlī ibn Aḥmad ibn ʿAlī ibn Aḥmad—may God make him one of those blessed with eternal felicity—says: Since, by the agreement of people of insight and direct vision, and the consensus of those possessed of reason and eloquence, the human being is the quintessence of the worlds, intended for his own sake by the Lord of creatures among all existents, created in His image so as to know and love Him—that is, so as to be a locus of manifestation, at once comprehensively and distinctly, of His acts, attributes and Essence—everything in the other Presences is a preparation and preliminary to the perfections within the human being. He therefore must have [**defective wording in the source**], and must possess an aspiration that raises him towards the degrees that belong to him in the highest reaches; it must not abandon him, lest his aspiration pull him down below the rank of animals and inanimate things. This comes about when the heaven of his inwardness and the earth of his outwardness are illumined by the lamp of the intellect in actuality, from ...",
+      "new": "This opening is an elaborate allusive rewriting of Qurʾān 24:35. The problematic phrases صلّ عليّ من, الزيتونة بالسماوات على ثمرات الأعيان, and فلا بد له إلا are also visible in the 2008 printed scan (printed p. 11; PDF page 12); they cannot simply be dismissed as errors introduced by the electronic transcription. They remain unresolved pending an independent witness. The wording ومتمهات is also uncertain; no conjectural Arabic restoration has been adopted. Here and below “entity” translates ʿayn without itself deciding whether the referent is a fixed entity, an extramental individual, or a particular determination. The former note accidentally duplicated the following Arabic and English paragraph; that duplicated material has been removed."
+    },
+    {
+      "id": "MSH-001",
+      "field": "editorial_note",
+      "old": "This paragraph establishes the relationship between rational inquiry, acquired intellectual habits, and unveiling. The author neither treats *naẓar* as self-sufficient nor denies it every auxiliary role; the two parts must be read together. The printed source does not demonstrate that no earlier commentary existed—only that al-Mahāʾimī reports not having seen one.",
+      "new": "This paragraph establishes the relationship between rational inquiry, acquired intellectual habits, and unveiling. The author neither treats *naẓar* as self-sufficient nor denies it every auxiliary role; the two parts must be read together. The printed source does not demonstrate that no earlier commentary existed—only that al-Mahāʾimī reports not having seen one. The 2008 print reads العقل الملكي. “Dispositional intellect” interprets this term in the technical sequence of material, dispositional, actual, and acquired intellects; it is not an Arabic emendation. The parallel interpretation of the glass in Q24:35 as العقل بالملكة is explicit in al-Ṭūsī’s commentary on Ibn Sīnā, as quoted in the Sharḥ al-Manẓūma. The earlier rendering “angelic” or “possessed” was misleading in this context."
+    },
+    {
+      "id": "MSH-003",
+      "field": "editorial_note",
+      "old": "Qurʾānic verses and reported sayings are sources cited **by** al-Mahāʾimī, not independent propositions whose precise metaphysical interpretation is already established. The editorial heading in brackets reflects the printed source; the bracket status of its subdivisions is not independently verified. The 2008 editor's numbered hadith footnotes are excluded from the translated authorial text.",
+      "new": "Qurʾānic verses and reported sayings are sources cited **by** al-Mahāʾimī, not independent propositions whose precise metaphysical interpretation is already established. The editorial heading in brackets reflects the printed source; the bracket status of its subdivisions is not independently verified. The 2008 editor's numbered hadith footnotes are excluded from the translated authorial text. Printed p. 14 was visually checked: الحدث is present in the 2008 print, so the proposed sense “intuition” remains an interpretation of a suspect reading, not a verified correction to الحدس."
+    },
+    {
+      "id": "MSH-004",
+      "field": "editorial_note",
+      "old": "The unvowelled spellings *al-mūjid* (the producer of existence) and *al-mūjad* (the product) can appear as **الموجد** in the transcription. The printed online punctuation and the term *al-mawjūd* (“the existent”) have not yet been checked against al-Ghazālī’s original. The distinction is explicitly marked as a *translation hypothesis*, not a secure emendation. The report from al-Tirmidhī must not be labelled authenticated simply because al-Mahāʾimī groups it with “sound reports”; its transmission history requires separate hadith criticism.",
+      "new": "The 2008 printed page was visually checked. The first موجد after “one existent” is understood as the passive mūjad, “that which is brought into being,” in accordance with the argument and the cited Iḥyāʾ passage. In the following clause the Mashraʿ print has الموجد حق, rendered here as “the bringer-into-being is real”; the Iḥyāʾ transcription consulted reads الموجود حق, “the existent is real.” This source difference is recorded rather than silently changing the Arabic quotation. The Iḥyāʾ also supplies intervening clauses omitted in this condensed quotation, explaining the abrupt transition to the second perspective. This is a comparison with a digital text of the cited work, not manuscript collation. “Sound reports” reproduces al-Mahāʾimī’s classification; this project has not independently authenticated the report from al-Tirmidhī."
+    },
+    {
+      "id": "MSH-007",
+      "field": "editorial_note",
+      "old": "Printed p. 19 is a decisive example of **the commentator's own analysis being distinguished from a cited authority's argument**. Al-Mahāʾimī rejects the attempted inference from *ījād* (a relational operation) to proximity to the divine Essence. This makes a particularly strong negative control for loose identifications of *nisba*, dependence, self-disclosure, and identity. The ambiguous transitions of the quotation at the end are flagged in the apparatus; the passage must not be mechanically attributed to Ibn ʿArabī or to al-Rāzī without comparing the cited original.",
+      "new": "Printed pp. 18–19 were visually checked. Al-Mahāʾimī’s own intervention begins at وأقول: he argues that the preceding demonstrations establish proximity to ījād, described as a relation that has no existence, rather than to the divine Essence. The running text of p. 19 ends with فالعقل يعرف ولكن النطق لا يصل إليه. The words وأطال في ذلك [مختصر الفتوحات المكية] occur below the footnote rule and continue the modern editor’s note from p. 18; they have been removed from the authorial Arabic and English. They do not attribute the preceding al-Rāzī paragraph to Ibn ʿArabī."
+    },
+    {
+      "id": "MSH-008",
+      "field": "editorial_note",
+      "old": "The second quoted Suhrawardī passage is of central importance: heightened spiritual realization **reinstates the awareness of mediating causes** rather than merely intensifying their phenomenological elimination. This is Suhrawardī as quoted by al-Mahāʾimī; direct collation of the *ʿAwārif* remains necessary. “Shihāb al-Dīn al-Suhrawardī” here is the author of the *ʿAwārif*, **not** the philosopher of illumination.",
+      "new": "The second quoted Suhrawardī passage is of central importance: heightened spiritual realization **reinstates the awareness of mediating causes** rather than merely intensifying their phenomenological elimination. This is Suhrawardī as quoted by al-Mahāʾimī; direct collation of the *ʿAwārif* remains necessary. “Shihāb al-Dīn al-Suhrawardī” here is the author of the *ʿAwārif*, **not** the philosopher of illumination. The printed page confirms that the Sufi actively sets creatures aside and sees them under the aspect of passing-away. Word division and hamza were normalized in وعزلهم ... ورآهم. The scan also prints محور آثار الوجود; the English “effacement” understands the expected محو and remains a contextual interpretation of that suspect printed reading."
+    }
+  ],
+  "cited_primary_texts": [
+    {
+      "purpose": "Parallel technical identification of glass with intellect in habitu",
+      "title": "Sharḥ al-Manẓūma, vol. 5, p.172, quoting al-Ṭūsī, Sharḥ al-Ishārāt, vol.2 p.356",
+      "url": "https://najafdesertlibrary.com/book/%D8%B4%D8%B1%D8%AD-%D8%A7%D9%84%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9/v/5/p/172",
+      "retrieved": "2026-11-10",
+      "scope": "Digital text of a primary philosophical work; not an image collation of the cited al-Ṭūsī edition."
+    },
+    {
+      "purpose": "Mawjūd/mūjad distinction and abridged second-perspective transition",
+      "title": "Iḥyāʾ ʿulūm al-dīn, Book of Patience and Gratitude, digital pp.292–293",
+      "url": "https://scribetools.com/ar/library/hadith/%D8%A7%D9%95%D8%AD%D9%8A%D8%A7%D8%A1-%D8%B9%D9%84%D9%88%D9%85-%D8%A7%D9%84%D8%AF%D9%8A%D9%86/i7ya-07-aa957063/text/0015",
+      "retrieved": "2026-11-10",
+      "scope": "Digital reproduction; other OCR defects visible. Confirms the local semantic distinction, not a fully established critical text."
+    }
+  ],
+  "page_review": [
+    {
+      "printed_page": 11,
+      "pdf_zero_based_index": 11,
+      "pdf_one_based_page": 12,
+      "entry_id": "MSH-000",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 12,
+      "pdf_zero_based_index": 12,
+      "pdf_one_based_page": 13,
+      "entry_id": "MSH-001",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 13,
+      "pdf_zero_based_index": 13,
+      "pdf_one_based_page": 14,
+      "entry_id": "MSH-002",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 14,
+      "pdf_zero_based_index": 14,
+      "pdf_one_based_page": 15,
+      "entry_id": "MSH-003",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 15,
+      "pdf_zero_based_index": 15,
+      "pdf_one_based_page": 16,
+      "entry_id": "MSH-004",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 16,
+      "pdf_zero_based_index": 16,
+      "pdf_one_based_page": 17,
+      "entry_id": "MSH-005",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 17,
+      "pdf_zero_based_index": 17,
+      "pdf_one_based_page": 18,
+      "entry_id": "MSH-006",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 18,
+      "pdf_zero_based_index": 18,
+      "pdf_one_based_page": 19,
+      "entry_id": "MSH-007",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 19,
+      "pdf_zero_based_index": 19,
+      "pdf_one_based_page": 20,
+      "entry_id": "MSH-007",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 20,
+      "pdf_zero_based_index": 20,
+      "pdf_one_based_page": 21,
+      "entry_id": "MSH-008",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    }
+  ],
+  "limitations": [
+    "This checks ten printed pages in one 2008 edition, not independent manuscript witnesses.",
+    "Modern editorial footnotes were identified for layer separation; they were not translated wholesale.",
+    "Uncertain print readings on pp11,14,15,20 remain documented, not silently repaired."
+  ]
+}

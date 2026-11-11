@@ -1,59 +1,51 @@
-# START HERE — al-Mahāʾimī / Qūnawī recovery
+# START HERE — Mahāʾimī / Qūnawī, Stage 13
 
-Recovery checked: 10 November 2026.
+**Checkpoint: 11 November 2026.** Fresh continuation branch: recovery/mahaimi-stage13-20261111, created from current master while preserving other projects. The Mahāʾimī source was recovered from mahaimi-complete-edition at bc97d46b4052855884fe48c95780cfb2d80ed46b. Older Stage09 packages and review/mahaimi-stage12-complete-draft are superseded.
 
-## Latest verified saved work
+## Read these small files first
 
-**Continue from branch `mahaimi-complete-edition`, verified at commit `bc97d46b4052855884fe48c95780cfb2d80ed46b`.**
+1. [Current ledger](../data/coverage-stage13.json).
+2. [Edition status](EDITION_STATUS.md).
+3. [Stage13 audit](STAGE13_RECOVERY_AND_QA.md).
+4. [Review index](review-stage13/review-index.json), only when page-specific evidence is needed.
 
-Repository: `gnamma-research/booksite`.
-Project directory: `texts/al-mahaimi/mashra-al-khusus/`.
+Process large files on disk and inspect bounded page ranges. Do not print the full corpus, embedded reader, repository tree or prior conversation into a continuation. Read the current remote branch and master before deciding what remains; verify publication separately from file existence. These recovery practices do not diagnose or guarantee a fix for ChatGPT app crashes.
 
-The earlier restart correction, `210361465d86f25f59e51e7584b8bf0eaf8dbcd8`, pointed to Stage 11 on `master`. Subsequent Stage 12 work was saved on the separate branch above. At this recovery check, that branch contained one commit beyond the earlier restart correction; its edition changes had not been merged to `master`. This file is a recovery pointer, not a merge or a declaration of publication.
+## Exact cumulative position
 
-Read these pinned files first:
-
-1. [Stage 12 coverage ledger](https://github.com/gnamma-research/booksite/blob/bc97d46b4052855884fe48c95780cfb2d80ed46b/texts/al-mahaimi/mashra-al-khusus/data/coverage-stage12.json).
-2. [Stage 12 page review index](https://github.com/gnamma-research/booksite/blob/bc97d46b4052855884fe48c95780cfb2d80ed46b/texts/al-mahaimi/mashra-al-khusus/editorial/review-stage12/review-index.json).
-3. [Stage 12 source record](https://github.com/gnamma-research/booksite/blob/bc97d46b4052855884fe48c95780cfb2d80ed46b/texts/al-mahaimi/mashra-al-khusus/editorial/SOURCES_STAGE12.md).
-4. [Stage 12 edition status](https://github.com/gnamma-research/booksite/blob/bc97d46b4052855884fe48c95780cfb2d80ed46b/texts/al-mahaimi/mashra-al-khusus/editorial/EDITION_STATUS.md).
-
-The [branch handoff](https://github.com/gnamma-research/booksite/blob/bc97d46b4052855884fe48c95780cfb2d80ed46b/texts/al-mahaimi/mashra-al-khusus/editorial/HANDOFF.md) is useful but its figure of **151 reviewed commentary pages is stale**. The saved ledger and review index both record **165**. Do not substitute a later conversational claim of completion for committed evidence.
-
-## Recovery verification
-
-The canonical JSON at the pinned commit was fetched and parsed during recovery. These checks confirm text presence and recorded review status, not the accuracy of every translation.
-
-| Measure | Verified saved state |
+| Workstream | State |
 |---|---|
-| Canonical reading units | 254 unique entries; 444 Arabic–English pairs, with both fields nonempty in every pair |
-| Commentary | All printed pp.11–232: 222 pages in 221 entries; pp.18–19 share one unit |
-| Separate Qūnawī appendix | All printed pp.235–267: 33 pages in 33 entries |
-| Commentary review recorded | 165/222 pages; ledger and review index agree |
-| Commentary review pending | 57 pages: **41–60, 94–105, 125–149** |
-| Commentary scan comparison recorded | 91 pages |
-| Independent manuscript collation | 0; no critical-edition certification |
-| Merge, PDFs, browser checks, live publication | Not established by this recovery; inspect actual files and outcomes before claiming completion |
+| Commentary Arabic and English working coverage | 222/222 printed pages, pp.11–232 |
+| Qūnawī appendix Arabic and English working coverage | 33/33, pp.235–267 |
+| Canonical structure | 254 units; 444 nonempty Arabic–English pairs |
+| Commentary English-versus-Arabic review | 222/222 pages; 57 newly reviewed in Stage13 |
+| Stage13 corrections | 85 English pair corrections, 30 editorial notes, 3 heading corrections |
+| Documented commentary scan comparison | 98/222, including seven recovered prior records; zero new scan comparisons in Stage13 |
+| Appendix scan inspection | 33/33 recorded in Stage12 |
+| Shared-wording concordance | 158 links, represented reciprocally |
+| Independent manuscript collation | 0 |
 
-Stage 11's missing-Arabic counts describe the older main-branch snapshot. Do not apply them to the Stage 12 branch or restart the English translation at p.150.
+All available text has working bilingual coverage. Several source readings remain unresolved. P.43 passage 1 retains a marked synopsis of a damaged argument rather than a secure clause-by-clause reconstruction. The p.232 ending breaks off in the acquired printing. Do not invent a continuation or replace it with Qūnawī’s separate ending. Printed pp.113–114 are absent from the acquired scan but present in the electronic transcription.
 
-## Next bounded work
+## Authoritative files and rebuilding
 
-1. Inspect the current remote head of `mahaimi-complete-edition` for a later saved commit before editing; preserve newer work if present.
-2. Use the Stage 12 corpus, ledger and review index together. Recover any later saved review patches before repeating review.
-3. Begin with one small pending span, such as printed pp.41–45; verify the source and existing review records, apply justified corrections, update the review ledger and index, and save a checkpoint before expanding the scope.
-4. Complete the remaining review, then verify the cumulative downloads and reader. Merge and publication need their own verified outcomes.
+Canonical corpus: data/parallel.json. Reader template: reader-shell.html; assets: reader.js and reader.css. Generated index.html embeds the corpus, ledger, CSS and JavaScript. The bibliography, glossary, prior apparatus and historical drafts remain in the project.
 
-Process the full corpus as data and print only bounded excerpts or summaries. During this recovery, the ordinary file read returned a blob SHA but empty content for `data/parallel.json`; fetching that exact Git blob succeeded. An empty transport payload is not evidence that the corpus file is empty.
+From repository root:
 
-## Conversation-error boundary
+    python tools/build_mahaimi_exports.py
+    python tools/build_mahaimi_reader.py
+    python tools/build_mahaimi_downloads.py --format all
+    python tests/test_mahaimi_stage10.py
+    node tests/qunawi_reader_qa.js
 
-The user reports another ChatGPT conversation error after using the earlier corrected guide. **The underlying application/backend cause remains unconfirmed.** A stale branch pointer explains incorrect recovery state; it does not establish why ChatGPT failed.
+The PDF builder requires weasyprint, markdown, Pango and an Arabic font such as Noto Naskh Arabic. The retained Stage10 test filename checks the newest ledger, current exports and PDF digests. Update the single Mahāʾimī entry in texts/manifest.json and its catalogue description without overwriting other projects.
 
-The recovery operations in this session successfully read the commits, checkpoint files and full corpus. Preserve the exact error screenshot, affected conversation URL, selected model, and failure time with timezone if the error recurs. Do not repeatedly retry a full restart or represent a handoff edit as a platform-error repair.
+## Remaining scholarly work
 
-## Historical checkpoint
+1. Compare the remaining 124 commentary pages against images; obtain replacement images for missing pp.113–114. Keep electronic review distinct from photographed print comparison.
+2. Resolve the flagged defective clauses and p.43 synopsis using print and independent witnesses; rerun alignment after source-text corrections.
+3. Acquire and collate the Āshtiyānī edition and relevant manuscript images, including Leiden Or.5675. Neither is counted as collated.
+4. Establish witness relationships before adopting emendations or calling the result a manuscript-critical edition.
 
-[Stage 11 restart guide at 2103614](https://github.com/gnamma-research/booksite/blob/210361465d86f25f59e51e7584b8bf0eaf8dbcd8/texts/al-mahaimi/mashra-al-khusus/editorial/HANDOFF.md).
-
-The older `review/mahaimi-stage12-complete-draft` branch was behind `master` at this check; its name does not identify the latest saved work.
+For publication state, inspect current master and its GitHub Pages deployment. A saved branch or successful corpus test alone does not establish a public-reader update.
