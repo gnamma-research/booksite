@@ -95,6 +95,11 @@ if ptext:
     check(len(full)>=300_000,"Working English body shortened unexpectedly")
     check(not re.search(r"<p>\[(?:Continuing|Continuation)",full),"Editorial continuation labels remain in reading flow")
     check("**prophethood" not in full and "istiwāʾ***" not in full,"Literal Markdown artifacts remain in reading text")
+    check(not re.search(r"\*<em>|</em>\*|\*\*[^*]{0,240}\*\*|aḥadiyya\*\)",full), "Malformed Markdown/HTML emphasis or literal asterisks remain in the authorial prose")
+    check("the rank of Divinity</em> (<em>martabat al-ulūhiyya</em>)" in full,"p34 Divinity styling regression")
+    check("<em>wāḥidiyya</em>" in full and "<em>aḥadiyya</em>" in full,"p21 oneness/unicity emphasis regression")
+    check("the Cloud-like Presence</em>" in full,"p34 photographed-print correction missing")
+
     check("Source remains provisional; historical-print" not in full,"Editorial/progress note leaked into reading text")
     check("Modern source notes, including a corrupt word" not in full,"Editorial/source note leaked into reading text")
     check(not re.search(r"<p>\s*<a[^>]+>\s*(Read Arabic|Arabic source)",full),"Standalone source links leaked back into reading text")
