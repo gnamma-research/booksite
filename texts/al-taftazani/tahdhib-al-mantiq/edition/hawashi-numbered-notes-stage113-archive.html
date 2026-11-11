@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Numbered Ḥawāshī · Tahdhīb al-Manṭiq · GNAMMA</title>
+<meta name="description" content="Source-linked cumulative numbered-note translations; distinguish complete first-pass note coverage from abbreviated or uncollated text.">
+<style>
+:root{--paper:#fffefa;--bg:#f5f4ee;--ink:#253631;--muted:#65736d;--rule:#d9e0da;--accent:#3c6c59;color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--paper:#252e2a;--bg:#19211e;--ink:#e8f0eb;--muted:#adbbb2;--rule:#43544c;--accent:#a0ccb3;color-scheme:dark}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.66 system-ui,-apple-system,sans-serif}
+a{color:var(--accent);text-underline-offset:3px}a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent)}
+nav{position:sticky;top:0;z-index:4;height:58px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--rule);background:var(--paper);padding:0 max(12px,calc((100vw - 1010px)/2))}
+nav .brand{font:500 16px Georgia,serif;white-space:nowrap;text-decoration:none;color:var(--ink)}
+nav a:not(.brand){font-size:12px;white-space:nowrap}nav .spacer{flex:1}
+nav input{border:1px solid var(--rule);background:transparent;border-radius:6px;min-width:0;width:170px;max-width:28vw;padding:8px;color:var(--ink);font:13px system-ui}
+nav select{border:1px solid var(--rule);border-radius:6px;background:transparent;color:var(--ink);font:12px system-ui;padding:7px;max-width:26vw}
+main{max-width:1010px;min-height:90vh;margin:0 auto;padding:28px clamp(16px,4vw,46px) 80px;background:var(--paper);overflow-wrap:anywhere}
+h1{font:500 clamp(28px,4vw,43px)/1.23 Georgia,serif;margin:9px 0}.overline{font:700 11px system-ui;letter-spacing:.07em;color:var(--muted);text-transform:uppercase}
+.lead{max-width:800px;font:16px/1.72 Georgia,serif}
+.notice{border-left:3px solid var(--accent);padding:11px 16px;background:var(--bg);font:13px/1.7 system-ui;margin:20px 0}
+.stats{display:flex;gap:10px 15px;flex-wrap:wrap;margin:15px 0}.stats span{font-size:12px;color:var(--muted)}
+.note{border-top:1px solid var(--rule);padding:23px 0 26px;scroll-margin-top:90px}
+.heading{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}.heading h2{font:500 24px Georgia,serif;margin:0;flex:1}
+.page-ref{font-size:12px;font-weight:600;color:var(--muted)}
+.note-label{font:700 10px system-ui;text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.7fr);gap:22px;margin:12px 0}
+.ar{white-space:pre-wrap;overflow-wrap:anywhere;font:23px/1.9 "Amiri","Noto Naskh Arabic","Geeza Pro",serif;direction:rtl;text-align:right;margin:8px 0}
+.en{font:16px/1.82 Georgia,serif;white-space:pre-line;margin:8px 0}
+.meta{color:var(--muted);font-size:12px}.meta a{margin-right:12px}.source-notice{background:var(--bg);border-radius:5px;padding:9px 12px;font-size:12px;color:var(--muted)}
+.section-title{font:500 clamp(22px,3vw,29px)/1.35 Georgia,serif;margin:25px 0 16px;padding-top:10px;border-top:2px solid var(--rule);scroll-margin-top:80px}small{color:var(--muted)}footer{border-top:1px solid var(--rule);font-size:12px;color:var(--muted);padding:20px 0}
+@media(max-width:700px){nav{flex-wrap:wrap;height:auto;min-height:58px;padding:7px 10px}.grid{grid-template-columns:1fr;gap:3px}.ar{font-size:20px}.en{font-size:15px}.note{padding:17px 0}.heading h2{font-size:21px}}
+</style></head><body>
+<nav aria-label="Reading controls"><a class="brand" href="./">‹ Tahdhīb</a>
+<a href="progress.html">Progress & handoff</a><span class="spacer"></span>
+<input id="search" type="search" placeholder="Search notes" aria-label="Search note translations">
+<select id="section-select" aria-label="Choose source section"><option value="all">All four sections</option><option value="H-PREFACE">Preface glosses</option><option value="H-INTRO">Introduction to Logic</option><option value="H-DALALA">Conception · Signification</option><option value="H-MAFAHIM">Concepts and Universals</option></select>
+<select id="filter" aria-label="Translation status">
+<option value="all">All numbered notes</option><option value="complete_searchable_note">Translated first-pass</option><option value="partial_translation">Partial translation</option>
+</select></nav>
+<main>
+<div class="overline">GNAMMA · Cumulative edition · Stage 113</div>
+<h1>Ḥawāshī — numbered glosses</h1>
+<p class="lead">The complete note, not the page of the printed volume, is the unit of translation. The English translations below are distinct from the much shorter preliminary Q125–178 selections.</p>
+<div class="notice">Four historical H sections with distinct local numbering. <strong>348 numbered records: 291 first-pass English complete, 57 partial.</strong> There are <strong>79 full digital Arabic notes</strong> (54 Preface and25 Concepts) and269 Arabic locators. Stage113 adds full Arabic and English for Concepts12–35 and completes a replacement for Concepts2. Eleven unnumbered passages are separately attributed. <strong>No whole H printed page or independent Y manuscript reading is certified.</strong></div>
+<div class="stats"><span id="count">Loading…</span><span>0 fully translated printed pages certified</span><span>H-PREFACE 136/140 · H-INTRO 66/82 · H-DALALA 59/91 · H-MAFAHIM 30/35 English</span></div>
+<div id="notes"></div>
+<footer><a href="batches/hawashi-all-sections-cumulative-stage113.md">All FOUR sections · full cumulative Markdown</a> · <a href="batches/hawashi-preface-numbered-cumulative-hwn001-140.md">Preface notes 1–140</a> · <a href="batches/hawashi-introduction-numbered-cumulative-intro001-082.md">Introduction notes 1–82</a> · <a href="batches/hawashi-signification-numbered-cumulative-dal001-091.md">Signification notes 1–91</a> · <a href="batches/hawashi-concepts-numbered-cumulative-maf001-035.md">Concepts notes 1–35</a> · <a href="progress.html">Cumulative status, full handoff and stage logs</a> · <a href="hawashi-q125-178.html">52 earlier page selections</a>. Attribution remains provisional until individual signatures are checked against print photographs.</footer>
+</main>
+<script src="hawashi-numbered-notes-stage104.js?v=20261109-104"></script>
+<script src="hawashi-numbered-notes-stage105.js?v=20261109-105"></script>
+<script src="hawashi-numbered-notes-stage106a.js?v=20261109-106"></script>
+<script src="hawashi-numbered-notes-stage106b.js?v=20261109-106"></script>
+<script src="hawashi-numbered-notes-stage106c.js?v=20261109-106"></script>
+<script src="hawashi-numbered-notes-stage106d.js?v=20261109-106"></script>
+<script src="hawashi-numbered-notes-stage107a.js?v=20261109-107"></script>
+<script src="hawashi-numbered-notes-stage107b.js?v=20261109-107"></script>
+<script src="hawashi-numbered-notes-stage107c.js?v=20261109-107"></script>
+<script src="hawashi-numbered-notes-stage107d.js?v=20261109-107"></script>
+<script src="hawashi-numbered-notes-stage107e.js?v=20261109-107"></script>
+<script src="hawashi-numbered-notes-stage107f.js?v=20261109-107"></script>
+<script src="hawashi-numbered-notes-stage108a.js?v=20261109-108"></script>
+<script src="hawashi-numbered-notes-stage108b.js?v=20261109-108"></script>
+<script src="hawashi-numbered-notes-stage109a.js?v=20261109-109"></script>
+<script src="hawashi-introduction-notes-stage110a.js?v=20261109-110"></script>
+<script src="hawashi-introduction-notes-stage110b.js?v=20261109-110"></script>
+<script src="hawashi-introduction-notes-stage110c.js?v=20261109-110"></script>
+<script src="hawashi-introduction-notes-stage110d.js?v=20261109-110"></script>
+<script src="hawashi-introduction-notes-stage111a.js?v=20261109-111"></script>
+<script src="hawashi-introduction-notes-stage111b.js?v=20261109-111"></script>
+<script src="hawashi-signification-notes-stage111a.js?v=20261109-111"></script>
+<script src="hawashi-signification-notes-stage112a.js?v=20261109-112"></script>
+<script src="hawashi-signification-notes-stage112b.js?v=20261109-112"></script>
+<script src="hawashi-signification-notes-stage112c.js?v=20261109-112"></script>
+<script src="hawashi-signification-notes-stage112d.js?v=20261109-112"></script>
+<script src="hawashi-concepts-notes-stage112a.js?v=20261109-112"></script>
+<script src="hawashi-concepts-stage113-patch.js?v=20261111-113"></script>
+<script>
+(function(){'use strict';
+const base=window.GNAMMA_TAHDHIB_HAWASHI_NOTES;
+if(!base){document.getElementById('notes').textContent='Note data unavailable; inspect the stage handoff.';return}
+const patch=window.GNAMMA_TAHDHIB_HAWASHI_NOTES_STAGE105;
+if(!patch){document.getElementById('notes').textContent='Stage105 data missing; see HANDOFF_LATEST.md.';return}
+const byId=new Map((base.entries||[]).map(e=>[e.id,e]));
+for(const n of patch.overrides||[]){if(!byId.has(n.id))throw Error('Unknown earlier note '+n.id);byId.set(n.id,n)}
+for(const n of patch.appends||[]){if(byId.has(n.id))throw Error('Duplicate appended note '+n.id);byId.set(n.id,n)}
+const stage106=[
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE106A,
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE106B,
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE106C,
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE106D
+];
+if(stage106.some(x=>!x||!Array.isArray(x.notes))){document.getElementById('notes').textContent='Stage106 source files unavailable';return}
+for(const batch of stage106){for(const n of batch.notes){
+ if(byId.has(n.id))throw Error('Stage106 duplicate note '+n.id);
+ byId.set(n.id,n);
+}}
+const stage107=[
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE107A,
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE107B,
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE107C,
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE107D,
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE107E,
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE107F
+];
+if(stage107.some(x=>!x||!Array.isArray(x.notes))){document.getElementById('notes').textContent='Stage107 source files unavailable';return}
+for(const batch of stage107){for(const n of batch.notes){
+ if(byId.has(n.id))throw Error('Stage107 duplicate note '+n.id);
+ byId.set(n.id,n);
+}}
+const stage108=[
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE108A,
+ window.GNAMMA_TAHDHIB_HAWASHI_STAGE108B
+];
+if(stage108.some(x=>!x||!Array.isArray(x.notes))){document.getElementById('notes').textContent='Stage108 source files unavailable';return}
+for(const batch of stage108){for(const n of batch.notes){
+ if(byId.has(n.id))throw Error('Stage108 duplicate note '+n.id);
+ byId.set(n.id,n);
+}}
+const stage109=window.GNAMMA_TAHDHIB_HAWASHI_STAGE109A;
+if(!stage109||!Array.isArray(stage109.notes)){document.getElementById('notes').textContent='Stage109 source data unavailable';return}
+for(const n of stage109.notes){
+ if(byId.has(n.id))throw Error('Stage109 duplicate note '+n.id);
+ if(n.sectionId!=='H-PREFACE')throw Error('Expected H-PREFACE section for '+n.id);
+ byId.set(n.id,n);
+}
+const stage110=[
+ window.GNAMMA_HAWASHI_INTRO_STAGE110A,
+ window.GNAMMA_HAWASHI_INTRO_STAGE110B,
+ window.GNAMMA_HAWASHI_INTRO_STAGE110C,
+ window.GNAMMA_HAWASHI_INTRO_STAGE110D
+];
+if(stage110.some(b=>!b||b.sectionId!=='H-INTRO'||!Array.isArray(b.records))){document.getElementById('notes').textContent='Stage110 introduction files unavailable';return}
+for(const batch of stage110){for(const n of batch.records){
+ if(n.sectionId!=='H-INTRO'||!n.id.startsWith('HWN-INTRO-'))throw Error('Invalid intro section id '+n.id);
+ if(byId.has(n.id))throw Error('Duplicate cross-section note '+n.id);
+ byId.set(n.id,n);
+}}
+const stage111=[
+ window.GNAMMA_HAWASHI_INTRO_STAGE111A,
+ window.GNAMMA_HAWASHI_INTRO_STAGE111B,
+ window.GNAMMA_HAWASHI_DALALA_STAGE111A
+];
+const validSection=['H-INTRO','H-INTRO','H-DALALA'];
+for(const [i,batch] of stage111.entries()){
+ if(!batch||batch.sectionId!==validSection[i]||!Array.isArray(batch.records)){
+  document.getElementById('notes').textContent='Stage111 source files unavailable or misattributed';return;
+ }
+ for(const n of batch.records){
+  if(n.sectionId!==batch.sectionId||byId.has(n.id))throw Error('Stage111 duplicate/incorrect section '+n.id);
+  byId.set(n.id,n);
+ }
+}
+const stage112=[window.GNAMMA_HAWASHI_DALALA_STAGE112A,window.GNAMMA_HAWASHI_DALALA_STAGE112B,
+window.GNAMMA_HAWASHI_DALALA_STAGE112C,window.GNAMMA_HAWASHI_DALALA_STAGE112D,
+window.GNAMMA_HAWASHI_MAFAHIM_STAGE112A];
+for(const [i,batch] of stage112.entries()){
+ const expected=i<4?'H-DALALA':'H-MAFAHIM';
+ if(!batch||batch.sectionId!==expected||!Array.isArray(batch.records)){
+  document.getElementById('notes').textContent='Stage112 new section data missing';return;
+ }
+ for(const n of batch.records){if(n.sectionId!==expected||byId.has(n.id))throw Error('Invalid or duplicate Stage112 note '+n.id);byId.set(n.id,n);}
+}
+const amendment113=window.GNAMMA_HAWASHI_STAGE113_PATCH;
+if(!amendment113){document.getElementById('notes').textContent='Stage113 data unavailable';return;}
+for(const n of amendment113.overrides){if(!byId.has(n.id))throw Error('Unknown revised note '+n.id);byId.set(n.id,n);}
+for(const n of amendment113.appends){if(byId.has(n.id))throw Error('Duplicate new note '+n.id);byId.set(n.id,n);}
+const entries=[...byId.values()].sort((a,b)=>{
+ const group=x=>({ 'H-PREFACE':0,'H-INTRO':1,'H-DALALA':2,'H-MAFAHIM':3 })[x.sectionId||'H-PREFACE'] ?? 9;
+ return group(a)-group(b)||(a.noteNumber??a.localNoteNumber)-(b.noteNumber??b.localNoteNumber);
+}),$=id=>document.getElementById(id);
+const mk=(tag,cls,txt)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(txt!==undefined)x.textContent=txt;return x};
+function render(){
+ const q=$('search').value.trim().toLocaleLowerCase(),filter=$('filter').value,chosen=$('section-select').value,holder=$('notes');holder.replaceChildren();
+ const shown=entries.filter(e=>(chosen==='all'||(e.sectionId||'H-PREFACE')===chosen) &&
+ (filter==='all'||e.status===filter) && (!q||[e.id,e.speaker,e.english,e.arabicLemma,e.arabicFullText,e.editorial,e.unnumberedFollowing?.english,String(e.noteNumber??e.localNoteNumber)].some(x=>String(x).toLocaleLowerCase().includes(q))));
+let lastSection=null;
+ for(const e of shown){
+  const sectionId=e.sectionId||'H-PREFACE';
+  if(sectionId!==lastSection){
+   lastSection=sectionId;
+   const head=mk('h2','section-title',sectionId==='H-PREFACE'?'Preface glosses · Qum 127–164':sectionId==='H-INTRO'?'Introduction to Logic · Qum 165–187':sectionId==='H-DALALA'?'Conception: Signification · Qum 188–215':'Concepts / Universals · Qum 216 onward (NEW local numbering at 1)');
+   head.id=sectionId;holder.append(head);
+  }
+  const section=mk('section','note');section.id=e.id;
+  const head=mk('div','heading'),h=mk('h2',null,(sectionId==='H-INTRO'?'Introduction note ':sectionId==='H-DALALA'?'Signification note ':sectionId==='H-MAFAHIM'?'Concepts note ':'Preface note ')+(e.noteNumber??e.localNoteNumber)),status=mk('span','note-label',e.status==='complete_searchable_note'?'First-pass translated':'Partial / unfinished');
+  const pag=mk('span','page-ref','Qum pp. '+e.pages.join('–'));head.append(h,status,pag);section.append(head);
+  section.append(mk('div','meta','Attributed page voice: '+e.speaker+'. Printed-page signature pending photographic verification.'));
+  const grid=mk('div','grid'),left=mk('div'),right=mk('div');
+  left.append(mk('div','note-label',e.arabicFullText?'Arabic working transcription · NOT photographically collated':'Arabic locator lemma · full source not yet transcribed'));
+  const ar=mk('p','ar',e.arabicFullText||e.arabicLemma);ar.lang='ar';ar.dir='rtl';left.append(ar);
+  right.append(mk('div','note-label','Working English '+(e.status==='partial_translation'?'partial rendering':'translation')));
+  right.append(mk('p','en',e.english));grid.append(left,right);section.append(grid);
+  section.append(mk('p','source-notice',e.editorial));
+  if(e.unnumberedFollowing){
+   const u=e.unnumberedFollowing,sup=mk('aside','source-notice');
+   sup.append(mk('div','note-label','UNNUMBERED adjacent gloss · NOT an additional numbered note'));
+   sup.append(mk('div','meta','Voice: '+u.speaker));
+   const ua=mk('p','ar',u.ar);ua.lang='ar';ua.dir='rtl';sup.append(ua);
+   sup.append(mk('p','en',u.en));section.append(sup);
+  }
+  const links=mk('div','meta');for(const [i,url] of e.sourceUrls.entries()){
+   const a=mk('a',null,'Original Qum p.'+e.pages[i]);a.href=url;a.rel='noopener noreferrer';a.target='_blank';links.append(a);
+  }
+  section.append(links);holder.append(section);
+ }
+ $('count').textContent=shown.length+' of '+entries.length+' numbered notes displayed';
+}
+$('search').addEventListener('input',render);$('filter').addEventListener('change',render);$('section-select').addEventListener('change',render);
+render();
+const hash=location.hash.slice(1);if(hash && (hash.startsWith('HWN-')||hash==='H-PREFACE'||hash==='H-INTRO'||hash==='H-DALALA'||hash==='H-MAFAHIM')){
+ requestAnimationFrame(()=>document.getElementById(hash)?.scrollIntoView({block:'start'}));
+}
+})();
+</script></body></html>

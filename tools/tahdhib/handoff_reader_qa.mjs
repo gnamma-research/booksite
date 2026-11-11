@@ -24,7 +24,7 @@ for(const [name,type] of [['chromium',chromium],['webkit',webkit]]){
       assert(texts[i].includes(part),'Missing section completion '+part+': '+texts[i]);
     assert(texts[3].includes('25/35')&&texts[2].includes('0/91'),'Arabic source status not visible');
     assert(await page.locator('a[href*="hawashi-all-sections-cumulative-stage113.md"]').count()>=1,'Full four-section working corpus absent from progress');
-    await page.goto(new URL(root+'hawashi-numbered-notes.html',base).href,{waitUntil:'networkidle',timeout:60000});
+    await page.goto(new URL(root+'hawashi-numbered-notes-stage113-archive.html',base).href,{waitUntil:'networkidle',timeout:60000});
     assert(await page.locator('#notes .note').count()===348,'Not 324 unique history-numbered H note cards');
     assert(await page.locator('#notes .section-title').count()===4,'Four historical source section headings required');
     const heads=[['HWN-001','127'],['HWN-INTRO-001','165'],['HWN-DALALA-001','188'],['HWN-MAFAHIM-001','216']];
