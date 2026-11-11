@@ -1,0 +1,37 @@
+name: Daruri full-source Arabic glyph coverage audit (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-full-source-glyph-audit-20261023]
+    paths:
+      - 'daruri/browser-html-pdf/audit_full_source_glyph_coverage.py'
+      - '.github/workflows/daruri-full-source-glyph-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  complete-authorial-corpus:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build real 258/414 source fixture (no source PDFs)
+        run: python daruri/browser-html-pdf/build_fixture.py --out /tmp/gnamma-glyph/fixture.json
+      - name: Install pinned read-only OpenType cmap inspector
+        run: python -m pip install -q 'fonttools==4.60.1'
+      - name: Verify syntax and audit actual original codepoints against 3 bundled font cmap tables
+        run: |
+          python -m py_compile daruri/browser-html-pdf/audit_full_source_glyph_coverage.py
+          python daruri/browser-html-pdf/audit_full_source_glyph_coverage.py \
+            --fixture /tmp/gnamma-glyph/fixture.json \
+            --font-root daruri/build/fonts \
+            --out /tmp/gnamma-glyph/full-source-glyph-coverage-NONRELEASE.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-full-source-glyph-coverage-NONRELEASE
+          path: /tmp/gnamma-glyph/full-source-glyph-coverage-NONRELEASE.json
+          if-no-files-found: warn
+          retention-days: 14
