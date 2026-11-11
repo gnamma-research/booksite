@@ -1,0 +1,35 @@
+name: Qawtaw6 official source PDF
+on:
+  push:
+    branches: [qawtaw6-source-resolution-20261111]
+    paths: ['.github/workflows/qawtaw6-public-pdf.yml']
+permissions:
+  contents: read
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: |
+          python -m pip install -q requests
+          python - <<'PY'
+          import requests,pathlib,json,hashlib,concurrent.futures
+          p=pathlib.Path('sources');p.mkdir()
+          urls={'haydari2.pdf':'https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf','nekounam.html':'https://mktba.net/library.php?id=9533','ramadani.html':'https://shiabooks.net/library.php?id=7969'}
+          headers={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0.0.0 Safari/537.36','Accept':'application/pdf,text/html;q=0.9,*/*;q=0.8'}
+          def f(pair):
+            name,url=pair
+            try:
+              r=requests.get(url,headers=headers,timeout=70);r.raise_for_status();(p/name).write_bytes(r.content)
+              return {'name':name,'url':r.url,'bytes':len(r.content),'sha256':hashlib.sha256(r.content).hexdigest()}
+            except Exception as e:return {'name':name,'error':str(e)}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:out=list(ex.map(f,urls.items()))
+          print(json.dumps(out,ensure_ascii=False));(p/'manifest.json').write_text(json.dumps(out,ensure_ascii=False,indent=2))
+          q='(title:تمهید OR title:تمهيد OR title:tamhid) AND (ترکه OR تركة OR Turkah OR Turka)'
+          r=requests.get('https://archive.org/advancedsearch.php',params={'q':q,'output':'json','rows':100},timeout=40);(p/'archive.json').write_bytes(r.content);print(r.text[:15000])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: qawtaw6-official-source-pdf
+          path: sources/
+          retention-days: 30
