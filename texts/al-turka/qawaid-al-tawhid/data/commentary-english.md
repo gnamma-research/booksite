@@ -297,6 +297,7 @@ You may say that this does not agree with what a survey of their writings reveal
 3. Mawjūdiyya, ‘existentness’, is kept distinct from wujūd, ‘existence’, where the author himself changes terms.
 4. In the retained N transcription, «إذ تلك إنما هي تصور تعيناتها» is strained. “Determination-forms” construes it as though «صور تعيناتها»; this is an interpretative reading, not a photographed or independently collated emendation.
 5. Electronic-text comparison (2026-11-11): Electronic تصور تعيناتها is rendered as determination-forms (as though صور); source reading remains uncertain rather than attested correction.
+6. Qawtaw7 / H2014 H2014/1:80: supported reading. Preferred: «صور تعيناتها». The printed quotation reads صور, not تصور; bracketed modern explanatory additions excluded. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -514,6 +515,7 @@ Within this latter division, some things also exist externally; their existence 
 3. The later editor's identification of all second-level objects as logical second intelligibles is omitted because it is an inserted gloss rather than Ibn Turka's own wording.
 4. At the disjunction «أو يكن», the English “or does not” supplies a negative demanded by the following «فإن لم يكن». This remains a contextual construction of the electronic N text, not a verified manuscript correction.
 5. Electronic-text comparison (2026-11-11): N has أو يكن without negative; English supplies or does not contextually.
+6. Qawtaw7 / H2014 H2014/1:129: supported reading. Preferred: «أو لم يكن». The negative is now supported by a separately printed quotation, not solely supplied from context. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -674,6 +676,8 @@ If, however, the description is considered together with the identity it acquire
 4. The retained N text’s «بحسب الأمر بعينه المفهمة المقومة» and «ومن تصور تعيناته» are syntactically strained. The English construes intrinsic judgements and forms of determinations contextually; no independent source-image correction is claimed.
 5. Electronic-text comparison (2026-11-11): Strained sequence بحسب الأمر بعينه المفهمة المقومة is construed as intrinsic intelligible judgements; exact syntax not certified.
 6. Electronic-text comparison (2026-11-11): Retained تصور تعيناته rendered forms of determinations as though صور; source uncertainty remains.
+7. Qawtaw7 / H2014 H2014/1:170: supported reading. Preferred: «بحسب الأمر بعينه أو المقومة لها والمميزة إياها في ذاتها». The comparator provides a coherent alternative to the electronic string المفهمة المقومة. Retain its disjunctive أو; do not claim an independently recovered manuscript text. The A/N electronic wording remains preserved in the witness apparatus.
+8. Qawtaw7 / H2014 H2014/1:170: supported reading. Preferred: «ومن صور تعيناته في هذه النشأة». صور is explicit in the printed quotation. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -782,6 +786,7 @@ By ‘reflective investigators among the disputants’, he may mean the theologi
 4. Lumbard pp.468–469 was consulted for comparison; the English here is independently translated from A.
 5. The electronic A text at SH-001 has «الخنم» where the English reads “sealing” as though «الختم». This contextual reading remains unverified against a source photograph.
 6. Electronic-text comparison (2026-11-11): Electronic الخنم rendered sealing as though الختم; invocation retained, no witnessed correction claimed.
+7. Qawtaw7 / H2014 H2014/1:205: supported reading. Preferred: «بمزية الختم والتمام». The printed medieval lemma has الختم, not the digital الخنم. Adopt الختم for a corrected reading text while preserving the old transcription in the apparatus. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -815,6 +820,7 @@ Furthermore, when the signs of an illness appear after its causes have been unde
 6. Inline reported readings retained separately from the reading text: ( موارد - خ ); ( لذلك - خ ); ( موجب - خ )
 7. The retained A Arabic reads «القطع ببطلان مسألة التوحيد», literally “certainty that the doctrine of unity is invalid”. This conflicts with the preceding account of the opponent’s inference from certainty in its truth. The English now preserves the received negative with [sic]; the earlier bracketed “[in this doctrine of unity]” was a contextual reversal, not a witnessed reading. Independent print/manuscript comparison is still required.
 8. The electronic string «العزيزية إلى هي الوجدانيات» is read contextually as the instinctive/immediately experienced class, following the surrounding matn’s classification; it is not certified as a diplomatic reading.
+9. Qawtaw7 / H2014 H2014/1:221, H2014/1:222, H2014/1:223, H2014/1:224: partial resolution. Preferred: «والغريزية التي هي الوجدانيات; main ببطلان retained». H2014 p224 prints ببطلان مسألة التوحيد too, although its explanation on pp221–223 presupposes certainty in unity. This is evidence that the polarity problem is not merely the current digital transcription. Do not silently delete the negative; الغريزية/التي are directly supported lexical corrections. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -991,6 +997,7 @@ Furthermore, since they predicate unrestricted existence of particular existence
 3. Malzūm means what entails a concomitant. It is not automatically translated as an efficient cause; causal claims are rendered only where the text makes them.
 4. The retained A transcription repeats the clause beginning «إلا أن الوجودات الممكنات لها ماهيات» twice, with a small pronoun difference. The working English renders its content once; this is an acknowledged reading-text treatment of suspected duplication, not a verified deletion from an independent witness.
 5. Electronic-text comparison (2026-11-11): Arabic repeats possible-existence/quiddity clause; English translates once, with duplication explicitly retained in Arabic and apparatus.
+6. Qawtaw7 / H2014 H2014/1:293: supported reading. Preferred: «إلا أن وجودات الممكنات لها ماهيات معروضة لها ... دون الطبيعة الخاصة الواجبة». The complete printed medieval paragraph contains the clause once; modern brackets explain its pronouns. No medieval manuscript deletion is claimed. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -1029,6 +1036,7 @@ Verse: ‘Our expressions differ, while Your beauty is one; each points towards 
 7. In «لا يغاير الوجوب المطلق بالذات», the retained electronic A text reads “unrestricted necessity”; the English’s “unrestricted existence” follows the surrounding argument as though «الوجود». This is an explicitly interpretative reading, not an independently established correction.
 8. In the question «نفس معروضه السابق عليه ومقوما له», «مقوما» is coordinated with the predicate of «يكون». The question concerns the apparent paradox that what attaches later could itself constitute its prior subject; the previous English reversed that direction.
 9. Electronic-text comparison (2026-11-11): A string reads الوجوب المطلق while English has unrestricted existence; contextual الوجود reading requires explicit note.
+10. Qawtaw7 / H2014 H2014/1:299: supported reading. Preferred: «لا يغاير الوجود المطلق بالذات». The comparator prints الوجود, not the electronic الوجوب; English already conveys the supported reading. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -1077,6 +1085,8 @@ We reply that the supposition concerns a simple necessary nature having individu
 5. The electronic A wording has «فمعلوم» where the objection’s following clauses suggest “it is not established”. The existing English’s bracketed negative remains a contextual reconstruction, not an attested variant. The earlier «امتناع وجود بها» is also read contextually as concerning intrinsic necessity.
 6. Electronic-text comparison (2026-11-11): Individual intrinsic possibility argument retained; digital وجود بها apparently stands for وجوبها, not independently corrected.
 7. Electronic-text comparison (2026-11-11): English [not established] supplies negative absent from printed فمعلوم; context strongly suggests it but source remains unresolved.
+8. Qawtaw7 / H2014 H2014/1:322: supported reading. Preferred: «ضرورة امتناع وجوبها». The joined word وجوبها is visible in the printed lemma and resolves the digital split وجود بها. The A/N electronic wording remains preserved in the witness apparatus.
+9. Qawtaw7 / H2014 H2014/1:324: unresolved. Preferred: «فمعلوم». H2014 does not supply the missing negative. The modern explanatory paragraph articulates the objection coherently but does not establish an alternative authorial reading. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -1281,6 +1291,7 @@ The point is this. One condition that would prevent a nature from having mental 
 3. This passage revisits the third proposed explanation in SH-012. It confirms why that earlier proposal should not be cited alone as the commentator's final position.
 4. The electronic A wording «لكن مسلّم» conflicts with the ensuing reply. English “[do not] grant” supplies a contextual negation, explicitly bracketed, not established by independent collation.
 5. Electronic-text comparison (2026-11-11): Digital لكن مسلّم lacks the negative supplied by English [do not]; surrounding reply suggests conjecture, not established reading.
+6. Qawtaw7 / H2014 H2014/1:417: supported reading. Preferred: «لكن ممنوع أنها ليست معقولة بحسب الاعتبارات والإضافات». The independent printed presentation supplies ممنوع rather than digital مسلّم. It supports the negative English sense without adding an unattested لا to the old wording. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -1332,6 +1343,7 @@ Know that, for discerning people of spiritual taste, discussions of this kind be
 3. The phrase distinguishing the Necessary by its own reality is syntactically unstable in the source (به عين حقيقته). Its contextual sense is translated; no silently repaired Arabic text is asserted.
 4. The concluding Quranic phrase is translated independently from the quoted Arabic (Q24:40). The explanation of possibility is Ibn Turka’s account, not an independently certified philosophical conclusion.
 5. Reported electronic apparatus strings, not independent manuscript readings: ( فلو اقتضى - خ ل ); ( للزم - خ ); ( عليه - خ ); ( فضلاء المقلِّدين - خ ); ( ينفعهم - خ ل )
+6. Qawtaw7 / H2014 H2014/1:431: supported reading. Preferred: «فلو اقتضى بعض أفرادها الوجوب والبعض الآخر الامتناع». The printed quotation has affirmative فلو اقتضى, not the reversed electronic فلو لم يقتض. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -1465,6 +1477,7 @@ The objection is answered by observing that the intellectually considered meanin
 3. The lemma بالفرض has the reported alternative بالعرض. The English follows the displayed ‘by supposition’; ‘incidentally’ would alter the force of this final answer and remains a documented alternative.
 4. Imaginal translates mithāl; it is not interchangeable here with a private imagined fiction. The argument is Ibn Turka’s proposed resolution, not a definition imposed on all theories of mental existence.
 5. Reported electronic apparatus strings, not independent manuscript readings: [ نقض - ظ ]; ( تكون - خ ); ( التي تحتها - خ ); ( بالجملة - خ ); ( بالعرض - خ )
+6. Qawtaw7 / H2014 H2014/1:487, H2014/1:488: supported reading. Preferred: «وأما ما تكوّن فيها ... عند ملاحظته لها ملاحظة تكوّنها فيه». The print has تكون rather than تكونت and لها rather than لما. Preserve the distinction between form and its considered occurrence; bracketed glosses are modern. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -1525,6 +1538,7 @@ I alone [am] for all within Your sanctuary.’
 3. The author first rejects the opponent’s metaphysical account and then grants the relative validity of a limited perspective. Both movements are retained; neither an unqualified condemnation nor an unqualified endorsement of every doctrine is substituted.
 4. The displayed التغيير and the ophthalmic imagery near عروق سبل لجهل المركب are textually strained. ‘Reproach’ and ‘obscuration of compound ignorance’ render the context; the raw forms remain available in the source transcription.
 5. Reported electronic apparatus strings, not independent manuscript readings: ( تفريع - خ ); ( و التنزيه - خ ل ); ( المتعيِّنات - خ ); ( المتعيِّنات - خ ل ); ( المتعيِّنات - خ ); ( تكوَّنت - خ )
+6. Qawtaw7 / H2014 H2014/1:529: supported reading. Preferred: «أنا وحدي بكل من في حماكا». The print has بكل, not لكل. The predicate of the second hemistich is supplied from the first (love), not a literal copula “am”; the explanatory note explicitly confirms this interpretation. Its attribution to Ibn al-Farid is reported by this edition, not independently established here. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -1620,6 +1634,7 @@ Thus, far from implying the alleged conflict and inconsistency, the terms presen
 9. Agathodaimon is called Seth in this passage, whereas the previously translated preface reports a different prophetic identification. The discrepancy is preserved rather than harmonized. Both are the author’s historical reports, not authenticated identifications.
 10. Modern editorial remarks, including the long notes interrupting printed pages, are excluded from the medieval prose.
 11. Reported electronic apparatus strings, not independent manuscript readings: ( هو الشروع - خ ); ( ثمَّ انّ الكلام في هذه الرسالة كما سبق غير مرَّة لمّا كان - خ ل ); ( الا ان التنبيه - خ ); ( هذا - خ ); ( فلا ظهور عن . . . و لا بطون عن ظهوره - خ ); ( اندمجت - خ ل ); ( فمظهرة - خ ); ( الغيريَّة - خ ل ); ( اما من - خ ل ); ( تعبير - خ ); ( الايجادية - خ ); ( الايجاديَّة - خ ل ); ( الامامان - خ ل )
+12. Qawtaw7 / H2014 H2014/1:582, H2014/1:583: supported reading. Preferred: «حتى ينتهي إلى المقارنة العرضية». The quoted commentary clearly prints العرضية; the bracketed accident–substrate explanation is modern, excluded from the medieval quotation. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -1692,6 +1707,7 @@ In sum, if quiddities and entities are taken with the consideration of otherness
 7. Reported electronic apparatus strings, not independent manuscript readings: ( منبِّها - خ ); ( الذي هو - خ ل ); ( تأخُّر
 
 - خ ل ); ( المنسقة - خ ل - المنسبقة - خ ل ); ( بذاتها - خ ); [ حقيقة واحدة - ظ ]; [ المعلوليَّة - ظ ]; ( لغيره - خ ل ); ( لا نسبة - خ ); ( و لا تعداد - خ ل ); ( فحاوي - خ ); [ أو - ظ ]; ( العرضيِّين - خ ل ); [ العرضي - ظ ]; ( بالضرورة - خ ل )
+8. Qawtaw7 / H2014 H2014/1:613, H2014/1:614: supported reading. Preferred: «غير العرضيين؛ بالوجود العرضي». Both occurrences use عرض, not فرض. Maintain distinction between existence itself and derivative attribution; do not turn this into denial of every relation of dependence. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -1722,6 +1738,7 @@ It follows that there is no actual extramental distinction among them at this le
 3. The half-line about everything apart from God is included. Modern footnote explanations surrounding the sunlight analogy are excluded.
 4. The optical example is translated as the medieval author’s analogy, not offered as contemporary physical optics. The damaged phrase near للزجاج بدا شعاعة is rendered contextually; its exact transcription is preserved.
 5. Reported electronic apparatus strings, not independent manuscript readings: ( شتّى - خ ل ); ( فباعتبار - خ )
+6. Qawtaw7 / H2014 H2014/1:625, H2014/1:626: partial resolution. Preferred: «لكن للزجاج بدا شعاعه، فتراءى فيه ألوان». The print corroborates the glass/ray construction and reads فتراءى, but does not independently justify replacing للزجاج with a different preposition. Do not certify the older English through as a literal counterpart. No independent poetic attribution is established. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -1813,6 +1830,7 @@ Each of these worlds has detailed subdivisions according to its particular level
 8. Reported electronic apparatus strings, not independent manuscript readings: ( فيه - خ ل ); ( بوجوده الخاص - خ ); ( المستقل - خ ); ( المفعول - خ ); ( مفاتيح - خ ); ( مرتبة - خ ); ( كونه - خ ); ( تعيُّنها - خ ); ( الوجوبيَّة - خ ل ); [ و ماهيّاتا - ظ ]; ( انَّما - خ ); ( رشده - خ ); ( الشفتان - خ ); ( و خارجيَّة - خ ل ); ( و جزئيَّة - خ )
 9. Electronic-source comparison (11 Nov 2026): the detached repeated clause following the jalāʾ/istijlāʾ contrast is preserved in Arabic but not repeated in the English reading text. Its status requires source-image or independent-witness inspection.
 10. Electronic-text comparison (2026-11-11): The electronic text repeats part of the preceding contrast in a detached string; English does not duplicate it. Retain as a source-level repetition, not a certified omission.
+11. Qawtaw7 / H2014 H2014/2:145: supported reading. Preferred: «[One continuous contrast between essential jalāʾ and name-related istijlāʾ; no detached repeated tail.]». The complete opening quoted commentary is visible. Bracketed modern clarifications are excluded from the proposed medieval reading. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -1895,6 +1913,8 @@ Perhaps later thinkers who made unrestricted existence itself an intellectual co
 - خ ل ); ( يضاف - خ ); ( فيه - خ ); ( هي - خ ل ); ( المدركة - خ ل )
 7. Electronic-text comparison (2026-11-11): The Arabic sentence beginning الإمكان عبارة عن الوجود is disordered; English explains the received wording and its difficulty rather than purporting to restore continuous authorial syntax.
 8. Electronic-text comparison (2026-11-11): English follows a reported interpretive alternative concerning intrinsically required nonbeing, not a demonstrated manuscript correction of عدم الاستحقاقية مطلقا.
+9. Qawtaw7 / H2014 H2014/2:191, H2014/2:192: supported reading. Preferred: «الإمكان عبارة عن ظاهر العلم باعتبار تمايزه عن الوجود بنسبة إلى المعلومات». The printed quotation supplies ظاهر العلم, absent/disordered in the electronic string. This is a technical relational account, not the bare definition “possibility is existence”. The A/N electronic wording remains preserved in the witness apparatus.
+10. Qawtaw7 / H2014 H2014/2:194, H2014/2:195: supported reading. Preferred: «فلو كان استحقاقية العدم مطلقا مقتضى طبائعها». The print distinguishes عدم الاستحقاقية (absence of entitlement) from استحقاقية العدم (entitlement to nonbeing). The latter, not the former, belongs in this counterfactual. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -1959,6 +1979,7 @@ Although this explanation carries the inquiry as far as it can go here, it indic
 5. Reported electronic apparatus strings, not independent manuscript readings: ( المقربة - خ ); ( وقفوا عنده - خ ل ); ( و إذا - خ ); ( من المقدمات - خ ); ( للوجود - خ ل ); ( بتلك - خ ل ); ( انواعاً - خ ); ( معيّنة - عينيَّة - خ ل ); ( و يحصل باعتبار - خ ل ); ( انواع متعيّنة ، معيَّنة - خ ); ( الطور - خ ); ( الطور - خ ); ( و ممّا - خ ); ( المتبعة - خ ل ، المتقنة - خ ل )
 6. Electronic-source comparison (11 Nov 2026): the repeated incomplete-nature phrase is retained in Arabic and represented once in the English. The final displayed work-title is الحكمة المنيعة; its identification and textual form have not been independently established.
 7. Electronic-text comparison (2026-11-11): Received Arabic repeats the incomplete-nature formulation in adjacent forms; English renders the sense once. No authorial deletion is established.
+8. Qawtaw7 / H2014 H2014/2:220: supported reading. Preferred: «[The dependent-nature clause occurs once.]». The complete quoted passage contains one dependent-nature statement; the adjacent electronic repeat is absent. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -2058,6 +2079,7 @@ A full account requires explaining the intermediate world and what perfected spi
 6. Page 169 is restored from a prose paragraph missed by the earlier span-only extraction. The long later Arabic/Persian marginal discussions on these pages are excluded.
 7. Reported electronic apparatus strings, not independent manuscript readings: ( كمالًا - خ ); ( تقوية قواهم - خ ل ); ( طريق النقل - خ ل - العقل - خ ); ( يتعدَّد - خ ); ( و حقيقة قيّوميَّته - خ ل ); ( لكن لا عن مرتبة الاسم الظاهر - خ ل ); ( في الحجب و الملابس - خ ); ( الظاهرة - خ ل ); ( و تحصل بالصور و تصوير المثال - خ ); ( المناسبة لها - خ ); ( إلى تحقيق عالم - خ ); ( هذه المجالى - خ ل )
 8. Electronic-text comparison (2026-11-11): Source says from the level of Manifest and immediately not from that level. English flags the contradiction rather than silently resolving the negation.
+9. Qawtaw7 / H2014 H2014/2:258, H2014/2:259: supported reading. Preferred: «لكن من مرتبة الاسم الظاهر». The print has no following لا عن مرتبة الاسم الظاهر. Removing the redundant contradictory tail restores the stated Hidden/Manifest contrast. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -2107,6 +2129,7 @@ These are his own words. Reflect upon them after cleansing your inward being of 
 6. Reported electronic apparatus strings, not independent manuscript readings: ( أو اكثر - خ ); ( الواحد - خ ); ( الكثير - خ ل ); ( تحت بطون القهر الأحدى - خ ل ); ( الفعلى - خ ); ( الظلمانيَّة - خ ); ( جمعيَّته - خ ); ( خليفته - خ ); ( التقويم - خ ); ( بين العالم و الحق و جامع الحق و الخلق - خ ); ( و جعله مركز الطالبين - خ )
 7. Quotation-boundary review (11 Nov 2026): the passage from Inshāʾ al-Dawāʾir remains a quotation embedded in Ibn Turka’s commentary, not an independent collation of that work. The overlapping phrases about unrestricted perfection remain a source-level duplication question.
 8. Electronic-text comparison (2026-11-11): Source gives two overlapping formulations of unrestricted perfection in origination and eternity. English renders the complete sense once; possible duplication remains uncollated.
+9. Qawtaw7 / H2014 H2014/2:285, H2014/2:286: supported reading. Preferred: «فهذه حقيقته، فله الكمال المطلق في الحدوث والقدم». The quotation runs across the page boundary once; the shorter duplicate فله المطلق في الحدوث والقدم is absent. This is Ibn Arabi quoted within Ibn Turka, not a separately collated edition of Insha al-Dawair. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -2148,7 +2171,7 @@ https://ablibrary.net/book_content/b/17638/376?lang=ar
 
 I say: the author has explained that neither the first disclosure, the presence of gathering, nor the second, the domain of differentiation, is suitable for the manifestation in question. There must therefore be an impulsion toward a locus joining gathering and differentiation. This impulsion is volitional, because its principle is a specifying act of knowledge prior in rank. The movement toward what is specified is consequently volitional, not an involuntary necessitation of the kind ascribed here to the Peripatetics.
 
-Considered inwardly, what is sought is the universal locus of manifestation: the human reality, the isthmus joining necessity and possibility and encompassing the realities belonging to both. Considered outwardly, it is comprehensive being: the elemental human constitution, the last descent of existence. It therefore comprehends the divine affair, since every lower level encompasses the higher, and so it encompasses all existents. In their terminology, command means making the governing property of unity manifest within multiplicity. This is expressed at one time as the existential movement and at another as the all-pervading conjunction. The contrasting expression in the source—printed as al-nasī, with its wording uncertain—means making multiplicity's governing property manifest and returning it to unity.
+Considered inwardly, what is sought is the universal locus of manifestation: the human reality, the isthmus joining necessity and possibility and encompassing the realities belonging to both. Considered outwardly, it is comprehensive being: the elemental human constitution, the last descent of existence. It therefore comprehends the divine affair, since every lower level encompasses the higher, and so it encompasses all existents. In their terminology, command means making the governing property of unity manifest within multiplicity. This is expressed at one time as the existential movement and at another as the all-pervading conjunction. The contrasting expression, prohibition (al-nahy), means making multiplicity's governing property manifest and returning it to unity.
 
 Know, then, that the divine relation, in accordance with essential unity, requires the movement bringing things into existence to be circular and returning, as will be explained, God Most High willing. The divine replenishment determined from unrestricted essential effusion through the isthmic reality just mentioned reaches the First Intellect, designated the Pen; then the Tablet, Throne, Footstool, and remaining spheres, one after another. It then pervades the elements and generated beings, finally reaching the human being, coloured by the distinctive properties of every level through which it has passed.
 
@@ -2168,6 +2191,7 @@ In sum, He wills to manifest Himself to Himself in a universal affair encompassi
 4. The final ‘nothing else is like it’ refers locally to the comprehensive affair/locus under discussion. The translation does not turn it into an unqualified identity claim about any empirical human individual.
 5. Reported electronic apparatus strings, not independent manuscript readings: ( لا ايجاباً - خ ); ( بالتالى - خ ); ( السنَّة - خ ); ( بالبرزخيَّة - خ ); ( إليه - خ ); ( الوحدانيَّة - خ ); ( نشأته - خ ); [ بين - ظ ]; ( قوسى - خ )
 6. Electronic-text comparison (2026-11-11): Command and existential movement are clear; the contrasting printed النسى is explicitly uncertain in English.
+7. Qawtaw7 / H2014 H2014/2:305: supported reading. Preferred: «كما أن النهي عبارة عن إظهار حكم الكثرة ورجوعها إلى الوحدة». النهي is explicit in the printed quoted commentary; the previous النسى is not retained as an unexplained technical word. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -2232,6 +2256,8 @@ Know that the author's earlier argument occurs here in the course of raising dif
 7. Electronic-source review (11 Nov 2026): the bodily-accident clause repeats in Arabic and the final حتى يتوهم lacks the negation implied by the English lest. Both remain textual problems, not independently witnessed repairs. The recipient’s influence in the opening mirror argument is now translated in the correct causal direction.
 8. Electronic-text comparison (2026-11-11): Bodily-accident clause is repeated in the electronic source; English renders the optical argument once and no textual deletion is certified.
 9. Electronic-text comparison (2026-11-11): Source حتى يتوهم is rendered as lest it be mistaken, supplying a contextually expected negation. Keep this interpretation marked pending independent witness.
+10. Qawtaw7 / H2014 H2014/2:330: supported reading. Preferred: «وكل مرئي بالذات برؤية الباصرة لا بد وأن يكون عرضاً جسمانياً؛ وذلك لأن الرؤية إما لخروج الأشعة أو بالانطباع». The physical account is the historical argument being reported. H2014 prints the clause once, without the electronic repetition of لا بد وأن يكون عرضاً جسمانياً وذلك لأن الرؤية. The A/N electronic wording remains preserved in the witness apparatus.
+11. Qawtaw7 / H2014 H2014/2:340: supported reading. Preferred: «حتى لا يتوهّم أنه إنما ذكر للتحقيق». The negative لا is explicitly printed in the quoted medieval passage. The source-supported correction restores the dialectical voice, not merely smoother English. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -2333,6 +2359,7 @@ They also agree that perfection can be acquired only by subduing natural faculti
 5. Reported electronic apparatus strings, not independent manuscript readings: ( هاهنا - خ ); ( تصوره - خ ); ( لا - خ ); ( حسياً - خ )
 6. Electronic-source review (11 Nov 2026): the list of faculties prints الكفرية where discursive requires الفكرية. The English follows the contextual faculty-list reading; Arabic is not silently emended.
 7. Electronic-text comparison (2026-11-11): Displayed الكفرية is rendered discursive as though الفكرية in the enumerated faculties. This is contextual interpretation, not witnessed Arabic correction.
+8. Qawtaw7 / H2014 H2014/2:376: supported reading. Preferred: «من الحسية والخيالية والوهمية والفكرية». The printed faculty list reads الفكرية, not the digital الكفرية. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -2409,7 +2436,7 @@ The first level, the first cognitive determination, cannot provide this complete
 
 The third level here is the macrocosm. Although the meanings possess differentiated external existence in it and are apprehended through several kinds of apprehension, it lacks the oneness of the gathering of gathering. The fourth, the elemental human constitution, possesses everything in the preceding levels, since it comprehends them all with their manifestations. It also possesses perfected comprehensive oneness, beyond which no greater completeness or perfection is conceivable. Through it the divine presences and cosmic worlds have one unified form encompassing every manifestation, leaving nothing in existence outside it. Thus the most complete perfected form appearing through the oneness of all these manifestations can appear as such only in the complete human locus.
 
-The questioner's claim that some forms and names would then be apprehended only through an intellectual, objective, differentiated cognition [the wording displayed in this commentary reprise], so that the human being could not mirror the whole, is rejected. The reality pervading all things and appearing through them has two kinds of apprehension in this comprehensive constitution. One is apprehension from the side of the manifest reality: it apprehends its essence through itself, together with what necessarily accompanies it—the necessary divine names and possible cosmic realities. It apprehends every affair within a comprehensive affair from the side of its essence, in undifferentiated cognition. This comprehensive affair is the human being, encompassing all levels through its perfected reality and through its circle embracing both bows.
+The questioner's claim that some forms and names would then be apprehended as an unseen intellection, so that the human being could not mirror the whole, is rejected. The reality pervading all things and appearing through them has two kinds of apprehension in this comprehensive constitution. One is apprehension from the side of the manifest reality: it apprehends its essence through itself, together with what necessarily accompanies it—the necessary divine names and possible cosmic realities. It apprehends every affair within a comprehensive affair from the side of its essence, in undifferentiated cognition. This comprehensive affair is the human being, encompassing all levels through its perfected reality and through its circle embracing both bows.
 
 The other kind is again apprehension of itself, but not from the side of the manifest reality through itself. It apprehends through the loci and their determinations in differentiated, objective cognition. This kind has instances of differing realities at every level. At each level the reality apprehends itself from the side of that level through a mode appropriate to it. Such apprehension must take place through that level, so its principle must arise from the corresponding aspect.
 
@@ -2431,6 +2458,7 @@ so all of my whole flees from You to You.’
 5. The restriction of direct sensory apprehension to one aspect is explicit. The translation therefore does not claim that the eyes directly perceive all divine realities in the same way as bodily colours.
 6. Reported electronic apparatus strings, not independent manuscript readings: ( النسخة - خ ل ); ( توجد - خ ); ( عقليّا - خ ل ); ( الحقيقة - خ ); ( الحيثيَّة - خ ); ( اختفَّت ، حفَّت - خ ); ( تخييلًا - خ ); ( فمتعلَّقها - خ ); ( الصور - خ ); ( حقيقتى - خ ); ( به - خ ل )
 7. Electronic-text comparison (2026-11-11): Reprised objection reads تعقلا عينيا تفصيليا rather than the earlier unseen cognition wording; English marks the displayed reprise rather than silently harmonizing it.
+8. Qawtaw7 / H2014 H2014/2:425: supported reading. Preferred: «من أنه يلزم أن يكون إدراك بعض الصور والأسماء تعقّلاً غيبيّاً، فلا يصلح أن يكون مرآة جامعة للجميع». H2014 reads غيبياً and does not include تفصيلياً at this reprise. Do not replace it with the عينياً تفصيلياً used later in the same paragraph for the contrasting kind of apprehension. This resolves the immediate opposition in the working reading, not the history of all witnesses. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -2463,6 +2491,7 @@ Nor does this contradict the claimed comprehensiveness. Unrestrictedness and com
 3. The distinction between the presence of gathering and the presence of differentiation is necessary to the answer. The claims about identity and difference must not be detached from their specified respects.
 4. Reported electronic apparatus strings, not independent manuscript readings: ( المتقابلة - خ ); ( فنقول - خ ); ( و ابتنى عليها الشبه - خ ل ); ( أبطله - خ ); ( الكلية - خ ); ( ان اعتبر - خ ); ( فلا بد - خ ); ( الملحوق - خ ); ( و الامتزاج الحقيقي - خ ل ); ( النادرة - خ ل ); ( الحقائق الخلقيَّة - خ )
 5. Electronic-text comparison (2026-11-11): Long received sentence repeats the real-combination/intermixture phrase; English represents the combined sense once. No witnessed deletion is established.
+6. Qawtaw7 / H2014 H2014/2:446: partial resolution. Preferred: «بجملتها وأحدية جمعيتها على سبيل الجمع والتركيب والامتزاج الحقيقي ... بجملتها وأحدية جمعيتها ... على سبيل الجمع والتركيب الحقيقي الامتزاجي». Unlike other duplications, this repetition also occurs in the separately printed quotation. Its bracketed modern gloss associates the second phrase with حقيقة الحق. It is unsafe to delete it as an electronic dittography; the two referents provide a plausible interpretation, not an archetypal-text proof. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -2502,7 +2531,7 @@ Most premises employed here to explain these two points are persuasive rather th
 
 https://ablibrary.net/book_content/b/17638/430?lang=ar
 
-I say: this answers the objection to the comprehensiveness of the human specific reality: it supposedly fails to include every kind, containing nothing like inferior kinds such as worms, snakes, and the like. Acts in the created world are of two sorts. Some are noble, perfective, and intended in themselves, contributing to the attainment of the genuine goal which is the end of ends, such as nourishment and growth [the indicated correction]. Others are deficient and base, existing incidentally and as accompaniments, without contributing to that goal, such as a scorpion's sting or a snake's bite.
+I say: this answers the objection to the comprehensiveness of the human specific reality: it supposedly fails to include every kind, containing nothing like inferior kinds such as worms, snakes, and the like. Acts in the created world are of two sorts. Some are noble, perfective, and intended in themselves, contributing to the attainment of the genuine goal which is the end of ends, such as nourishment and growth. Others are deficient and base, existing incidentally and as accompaniments, without contributing to that goal, such as a scorpion's sting or a snake's bite.
 
 Kinds are correspondingly divided according to the actions they originate. Noble kinds belong within the ordered series extending between creation and command and ending in the genuine intermediary which is the goal just described. Inferior deficient kinds fall outside that series, their existence following upon and branching from the spirits ordered within it.
 
@@ -2526,6 +2555,7 @@ That individual is therefore the one who realizes the specific reality in its en
 4. The argument is teleological and belongs to the source’s classification of perfective actions. It is not a current biological taxonomy or a blanket ranking of empirical human beings.
 5. Reported electronic apparatus strings, not independent manuscript readings: [ تحصيل الغاية - ظ ]; [ و التنمية - ظ ]; ( فالانواع - خ ل ); ( جامعة - خ ); ( فكلّ - خ ); ( فليس التحقُّق بها هو التحقق الكمالي - خ ل )
 6. Electronic-text comparison (2026-11-11): Nourishment/growth rendering uses an indicated correction of displayed الكمية; not a newly collated reading.
+7. Qawtaw7 / H2014 H2014/2:471: supported reading. Preferred: «كالتغذية والتنمية وغير ذلك». The quoted text supports التنمية; the electronic الكمية was not the correct word for the intended example. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -2578,7 +2608,7 @@ The Shaykh, may his secret be sanctified, has explained the correspondences adeq
 
 ‘In the world of inhabitation are spiritual beings, corresponding to human powers; the world of spirits, corresponding to what senses in the human being; plants, corresponding to what grows in him; and minerals, corresponding to what does not sense in him.
 
-‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head above my neck and my neck above my shoulders [the reported alternative]; correlation, exemplified by this being my father and my being his son; position, exemplified here by my right [the wording is uncertain]; acting, exemplified by eating; and being acted upon, exemplified by satiation. There are also different forms in bodily coverings, such as elephant, donkey, lion, and ṣarṣar. These correspond to human faculties receiving praiseworthy and blameworthy forms: this one is discerning, so he is an elephant; this one dull, so a donkey; this one brave, so a lion; this one cowardly [the suggested reading], so a ṣarṣar. Understand: God speaks the truth and guides to the way.’
+‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head upon my neck and my neck upon my shoulder; correlation, exemplified by this being my father and my being his son; position, exemplified here by my right [the wording is uncertain]; acting, exemplified by eating; and being acted upon, exemplified by satiation. There are also different forms in bodily coverings, such as elephant, donkey, lion, and ṣarṣar. These correspond to human faculties receiving praiseworthy and blameworthy forms: this one is discerning, so he is an elephant; this one dull, so a donkey; this one brave, so a lion; this one cowardly [the suggested reading], so a ṣarṣar. Understand: God speaks the truth and guides to the way.’
 
 ### Textual and translation notes
 
@@ -2593,6 +2623,10 @@ The Shaykh, may his secret be sanctified, has explained the correspondences adeq
 9. Electronic-text comparison (2026-11-11): Place example uses a reported neck/shoulder alternative rather than displayed eye wording; attribution and textual uncertainty remain explicit.
 10. Electronic-text comparison (2026-11-11): Position example يميني/نفسي remains uncertain; acting/eating and receiving/satiation are clear.
 11. Electronic-text comparison (2026-11-11): Animal images preserved; English cowardly follows a suggested reading rather than displayed جبار. Do not certify the suggested reconstruction as a manuscript reading.
+12. Qawtaw7 / H2014 H2014/2:501: supported reading. Preferred: «لاعتُبر في إطلاقها بالمعنى المذكور سائر أنواع إدراكاتها». The print joins the conditional apodosis لاعتبر. It is not the negative لا اعتبر. Editorial interlinear bracketed explanations in H2014 are excluded from the proposed medieval reading. The A/N electronic wording remains preserved in the witness apparatus.
+13. Qawtaw7 / H2014 H2014/2:507: supported reading. Preferred: «رأسي على عنقي وعنقي على كتفي». The quoted text supports عنقي in both places, not عيني. This remains a quotation inside Ibn Turka’s commentary, not an independent collation of Ibn ʿArabī’s original work. The A/N electronic wording remains preserved in the witness apparatus.
+14. Qawtaw7 / H2014 H2014/2:507: unresolved. Preferred: «ومنهم الوضع، نظيره: يميني». The new print corroborates يميني but does not repair the unusually abbreviated example. Retain it with a note; do not substitute a familiar textbook example or promote نفسي to a witnessed preferred reading. The A/N electronic wording remains preserved in the witness apparatus.
+15. Qawtaw7 / H2014 H2014/2:507: supported reading. Preferred: «هذا شجاع فهو أسد، هذا جبان فهو صرصر». H2014 prints جبان, not جبار, and supplies هذا in the final comparison. Its separate footnote identifies صرصر as a jumping, chirping insect; the medieval quoted noun is preserved. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -2602,7 +2636,7 @@ The Shaykh, may his secret be sanctified, has explained the correspondences adeq
 
 https://ablibrary.net/book_content/b/17638/444?lang=ar
 
-I say: this answers the objection that the unveiled cognitions called perfection are impossible because intellect cannot apprehend them. We do not concede that intellect altogether fails to apprehend what is disclosed in the higher mode said to lie above it. Some hidden matters cannot be reached by intellect through itself, but can be reached with the help of a nobler power and illumination from a more complete light, kindled from the niche of the human glass containing the lamp. Once reached, however, intellect apprehends them as it does its other objects. It likewise needs another faculty to acquire particular objects—although that faculty is lower and less noble—and once they are acquired it apprehends them as it does its other objects. The remaining things apprehended through that higher faculty can also be reached intellectually.
+I say: this answers the objection that the unveiled cognitions called perfection are impossible because intellect cannot apprehend them. We do not concede that intellect altogether fails to apprehend what is disclosed in the higher mode said to lie above it. Some hidden matters cannot be reached by intellect through itself, but can be reached with the help of a nobler power and illumination from a more complete light, kindled from the niche of the human glass containing the lamp. Once reached, however, intellect apprehends them as it does its other objects. It likewise needs another faculty to acquire particular objects—although that faculty is lower and less noble—and once they are acquired it apprehends them as it does its other objects. As for the remaining things, just as they are apprehended and reached through the higher faculty, they are also apprehended and reached through intellect.
 
 Indeed, whatever apprehends a universal meaning or reality, whether through investigation and demonstration or through unveiling and immediate experience, falls under the definition and description of intellect. The distinction arises because intellect in ordinary usage, especially among this group, means the discursive faculty associated with formally constituted sciences: the faculty that derives knowledge from principles by finding middle terms and combining them with the terms of the conclusion. This is only one of intellect's powers and levels.
 
@@ -2615,6 +2649,7 @@ Their statement that unveiling and genuine perfection occur above intellect in t
 3. The luminous niche, glass, and lamp imagery is preserved rather than translated away into a modern psychological model.
 4. Reported electronic apparatus strings, not independent manuscript readings: ( حدي المطلوب - خ )
 5. Electronic-text comparison (2026-11-11): Received sentence about remaining objects is incomplete; the fluent English is a contextual construction, not a demonstrated restoration.
+6. Qawtaw7 / H2014 H2014/2:511: supported reading. Preferred: «وأما الأشياء الباقية، فكما تدرك ويوصل إليها بتلك القوة، تدرك أيضاً بالعقل ويوصل به إليها». The printed quotation supplies the missing comparison and the clause تدرك أيضاً بالعقل. This is more than a conjectural smoothing of the defective electronic string. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -2626,7 +2661,7 @@ https://ablibrary.net/book_content/b/17638/446?lang=ar
 
 I say: this answers the alleged improbability of escaping bonds and restrictions so as to attain genuine unveiling. How, it was asked, could entrenched dispositions and natural acts fail to follow their subjects merely through representations, intellectual considerations called watchfulness, and opposing actions?
 
-Continual watchfulness consists in observing unrestricted reality through the varieties of its determinations, without losing sight of the one that appears through the many loci. It draws the perfections in question and brings knowledge and cognition. To explain this, a preliminary point is needed. The Real’s replenishments and self-disclosures—glorified and exalted is He—reach the world continuously at every breath. Strictly speaking, there is only one disclosure, which acquires determinations according to the recipients' levels and preparednesses. These determinations ground the apparent multiplicities. The effusion from the Real is one in its essence, but appears according to the governing properties of the recipients. Whatever attributes predominate in them, necessary or possible, colour its manifestation through those relational considerations, while its own real properties—first among them knowledge—are concealed [following the reported alternative].
+Continual watchfulness consists in observing unrestricted reality through the varieties of its determinations, without losing sight of the one that appears through the many loci. It draws the perfections in question and brings knowledge and cognition. To explain this, a preliminary point is needed. The Real’s replenishments and self-disclosures—glorified and exalted is He—reach the world continuously at every breath. Strictly speaking, there is only one disclosure, which acquires determinations according to the recipients' levels and preparednesses. These determinations ground the apparent multiplicities. The effusion from the Real is one in its essence, but appears according to the governing properties of the recipients. Whatever attributes predominate in them, necessary or possible, colour its manifestation through those relational considerations, while its own real properties—first among them knowledge—are concealed.
 
 The human heart, because of the breadth of its receptivity and its comprehensiveness joining the two seas of divine names and cosmic realities, is suitable as mirror and locus. It therefore receives particular and universal governing properties, continually changing according to what passes within it, whether particular or universal, divine or cosmic. If no particular object enters it, no determinate attribute dominates it, and it is purified of attachments—even an orientation to the Real through a particular belief or resort to Him through a particular name—the disclosure then appears according to essential comprehensive oneness with its real properties. First in rank and closest in relation among these is knowledge.
 
@@ -2643,6 +2678,8 @@ Indulging those faculties and restrictions conversely subjects the holy faculty 
 5. Reported electronic apparatus strings, not independent manuscript readings: ( مختفياً - خ ); ( ما ، مما يوجب ظاهرة - خ ل ); ( أقربها - خ ); ( الأدب - خ ); ( انبعاث المقتضيات - خ ل ); ( تفيد انجذابها - خ ل ); ( ان معالجة الأضداد ، انَّما هي بأضدادها - خ )
 6. Electronic-text comparison (2026-11-11): English concealed follows a reported alternative to displayed محققا; this affects the polarity and is not independently settled.
 7. Electronic-text comparison (2026-11-11): Disordered source sentence about indulging faculties is interpreted contextually; the English explicitly discloses the defect.
+8. Qawtaw7 / H2014 H2014/2:524: supported reading. Preferred: «مختفياً بأحكامه وأوصافه الحقيقية التي أولها العلم». H2014 explicitly prints مختفياً. The digital محققاً changes the polarity; the English concealed now has direct printed support. The A/N electronic wording remains preserved in the witness apparatus.
+9. Qawtaw7 / H2014 H2014/2:528, H2014/2:529: partial resolution. Preferred: «إذ إسعاف مقتضيات القوى والقيود المذكورة إنما يقهر القوة القدسية على المتابعة والمدافعة عن توجهها بالكلية نحو البدن، ويقيّد انجذابها نحو المادة والكدورات المظلمة اللازمة لها». The quotation corrects the broken opening into إسعاف مقتضيات and reads ويقيّد. The modern explanation confirms the causal contrast but is not authorial replacement text. Do not claim that a complete original syntactic reconstruction has been established. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -2705,7 +2742,7 @@ https://ablibrary.net/book_content/b/17638/456?lang=ar
 
 I say: after setting out the opinion of reflective investigators, both accomplished and ostentatiously clever, about the validity of their path, the author states his own judgment with ‘As for us…’. Every condition recognized in the Sufi path must also be observed in reflective inquiry. Removing distracting attachments, among the first stages of the former, is necessary in the latter too. Without it inquiry cannot attain its object. Even apprehending first principles, the clearest objects for these thinkers, requires attention. Attention occurs only through turning away from other things and directing oneself fully to the object. This is precisely what removing attachments means. Acquiring theoretical sciences and hidden cognitions all the more requires it.
 
-The same applies to sleep and lapses of attention, and to the hunger and satiety that can give rise to them. Excess in any of these dulls and weakens the discursive faculty, preventing the movement between considerations by which acquired conclusions are reached. Everything maintaining a balanced constitution is necessary in both inference and purification, just as everything disturbing it must be avoided in both.
+The same applies to sleep and wakefulness, and to the hunger and satiety that can give rise to them. Excess in any of these dulls and weakens the discursive faculty, preventing the transitional movement through which acquired conclusions are reached. Everything maintaining a balanced constitution is necessary in both inference and purification, just as everything disturbing it must be avoided in both.
 
 The claim of some investigators—that purification depends on prior reflective inquiry to attain truths, while inquiry is independently sufficient—is therefore the reverse of the situation. Reflective inquiry is the conditioned path, while purification is what it needs to attain its object and is the path that may be independently sufficient. For those supported by sound innate disposition and directed along straight methods, bringing together its conditions is not implausible. No one has claimed this for people indiscriminately: ‘The presence of the Real is too exalted to be a watering-place for every arrival.’
 
@@ -2729,6 +2766,7 @@ This is clear from his correspondence with a leading master of unveiling and wit
 6. At A p.260–262 the retained Arabic transcription reads النوم والسهو, not النوم والسهر. The previous English “sleep and wakefulness” was an unjustified rendering of السهو. This correction follows the extant digital Arabic (sleep and lapses of attention), with hunger and satiety described as possible causes. The printed image and manuscripts have not been independently collated for a possible السهر variant.
 7. Electronic-source review (11 Nov 2026): sound foundations translates the displayed الأصول القويمة in the list of practices. Its precise technical sense in that context remains unresolved. The prior السهو correction and the distinction from the ancestral السهر are preserved.
 8. Electronic-text comparison (2026-11-11): Earlier correction following السهو as lapses of attention is preserved; السهر parallel and الانفعالية/الانتقالية remain distinct source questions.
+9. Qawtaw7 / H2014 H2014/2:560: supported reading. Preferred: «وهكذا الكلام في النوم والسهر وما يوجبهما من الجوع والشبع ... عن الحركة الانتقالية المفضية إلى المطالب الكسبية». Both disputed words are now directly supported: السهر rather than السهو, and الانتقالية rather than الانفعالية. The earlier edition’s inattention translation accurately followed its electronic base but should not remain the preferred reading once this printed evidence is adopted. Keep the electronic variant in the apparatus. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -2760,6 +2798,7 @@ It should not be objected that the Principle would not then bestow through itsel
 4. Reported electronic apparatus strings, not independent manuscript readings: ( حقيقة - خ ); ( في طريق - خ ); ( للاستفاضة - خ )
 5. Layer-boundary review (11 Nov 2026): SH-059 is the surviving descendant’s commentary. Its discussion cannot be substituted for the reported missing ancestral wording at QT-059. The displayed تخيلة/expected تخلية remains a minor electronic-source difficulty.
 6. Electronic-text comparison (2026-11-11): Emptying renders the contextual sense of displayed تخيلة as if تخلية; no independent correction of Arabic is claimed.
+7. Qawtaw7 / H2014 H2014/2:577: supported reading. Preferred: «كتخلية المحل». The printed medieval text has تخلية, directly supporting the current English and correcting digital تخيلة. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -2831,13 +2870,14 @@ It may be objected that the knowledge of those who practise spiritual exertion b
 
 https://ablibrary.net/book_content/b/17638/467?lang=ar
 
-An objection may be made that the differences between travellers in their knowledge and experiences arise only from differences in strength of preparedness. A less capable practitioner apprehends a meaning, supposes it to be the final attainment, stops there without going beyond it, and binds himself to it in an unshakeable conviction. A stronger practitioner encompasses in his apprehension what the weaker regards as the goal, goes beyond it, and reaches what is higher and more complete. He therefore objects to the other's stopping and fixing his conviction there—not to the content of the conviction itself, but to its restriction and confinement to that content. We reply that, even granting this account, the weaker practitioner would not have fallen into that error or stopped there had he possessed an instrument of discrimination. Testing that attainment against the measure would have disclosed its deficiency and enabled him to distinguish some of its contents from others. He would not have rested in complete assurance but would have sought something higher and more perfect.
+An objection may be made that the differences between travellers in their knowledge and experiences arise only from differences in strength of preparedness. A less capable practitioner apprehends a meaning, supposes it to be the final attainment, stops there without going beyond it, and binds himself to it in an unshakeable conviction. A stronger practitioner encompasses in his apprehension what the weaker regards as the goal, goes beyond it, and reaches what is higher and more complete. He therefore objects to the other's stopping and fixing his conviction there—not to the content of the conviction itself, but to its restriction and confinement to that content. We reply that, even granting this account, the weaker practitioner would not have fallen into that error or stopped there had he possessed an instrument of discrimination. Testing that attainment against the measure would have disclosed its deficiency . He would not have rested in complete assurance but would have sought something higher and more perfect.
 
 ### Textual and translation notes
 
 1. Clause review (9 Nov 2026): ما يميّز به بعض ما فيه من البعض includes a part-to-part discrimination that the former English obscured. The transmitted words remain difficult and the printed alternative النقص must not be silently substituted.
 2. The wording بعض ما فيه من البعض is unstable; the printed apparatus offers النقص for the final البعض and يتميّز for يميّز. The Arabic preserves the displayed base and the English avoids pretending that the exact defective phrase has been definitively restored.
 3. The argument grants, for discussion, an explanation by unequal capacities and then argues that a criterion remains useful. It does not simply dismiss the possibility of graded experiential understanding.
+4. Qawtaw7 / H2014 H2014/2:595, H2014/2:596: partial resolution. Preferred: «ما فيه من النقص، فما اطمأن به كل الاطمئنان». H2014 omits the problematic additional clause ما يميز به بعض ما فيه من البعض altogether. This provides a coherent separately printed form but does not settle whether the longer wording in A is corrupted, interpolated, or editorially omitted here. Retain both forms in apparatus; do not silently treat omission as manuscript proof. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -2855,6 +2895,8 @@ Once this is understood, we say that practitioners of spiritual exertion who tra
 2. Nonsmooth displayed readings يصيرى, والملوك, and الغير المنسقة المنتظمة are retained in the Arabic. ‘Travelling’ renders the contextual sense of the likely السلوك, but is not presented as an independently attested correction. The English comparison with logic remains interpretative where the syntax is unstable.
 3. Malaka is a stable acquired capacity, illustrated by trained musical and metrical discrimination. The analogy is the commentator's own, not a modern embellishment.
 4. The printed alternative حقيّته / حقيقته is recorded. The text continues directly into SH-061-A on p.274, which qualifies the requirement by the presence of a perfected guide.
+5. Qawtaw7 / H2014 H2014/2:597: partial resolution. Preferred: «حتى تصير هذه العلوم النظرية ... الغير المتسقة المنتظمة». تصير resolves the digital يصيرى. H2014 still retains the awkward negative/participle sequence; the entire group is therefore not fully resolved. The A/N electronic wording remains preserved in the witness apparatus.
+6. Qawtaw7 / H2014 H2014/2:597: supported reading. Preferred: «في أثناء الطلب والسلوك». Printed السلوك confirms the contextual correction of digital الملوك; no change of doctrinal interpretation is needed. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 
@@ -2864,13 +2906,14 @@ Once this is understood, we say that practitioners of spiritual exertion who tra
 
 https://ablibrary.net/book_content/b/17638/470?lang=ar
 
-All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his locks and states. If, however, he does have such a guide, then every stage and station has sciences and a measure proper to it, according to the time and the seeker's capacity. The guide, discerning the successive degrees of that capacity, draws the traveller's attention to those sciences and their appropriate measures.
+All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his actions and states. If, however, he does have such a guide, then every stage and station has sciences and a measure proper to it, according to the time and the seeker's capacity. The guide, discerning the successive degrees of that capacity, draws the traveller's attention to those sciences and their appropriate measures.
 
 ### Textual and translation notes
 
 1. This is the descendant's commentary continuing after QT-061, not the grandfather's matn. Arabic sourced to printed p.274 in the online transcription.
-2. Printed alternatives: أقفاله وأحواله / إقباله وأحواله / أفعاله وأحواله. “Locks and states” preserves the displayed metaphor of keys and locks; it does not decide between the reported alternatives. No independent manuscript has been collated.
+2. H2014 II:598 prints أفعاله وأحواله (actions and states), adopted provisionally for reading; A reads أقفاله وأحواله (locks and states), and إقباله is also reported. All remain recorded as printed alternatives. No original manuscript has been independently collated.
 3. The guide's discernment (تفرّس) is presented as enabling guidance appropriate to each station, time, and capacity; it does not eliminate the matn's concern with tests of knowledge. The active participle «مكمّل» signifies a guide who brings others toward perfection; it is not the passive «مكمَّل».
+4. Qawtaw7 / H2014 H2014/2:598: partial resolution. Preferred: «مقاليد أفعاله وأحواله». H2014 prints أفعاله, one of the alternatives already reported in A, not أقفاله. This corroborates a real reading alternative and supports an actions/states rendering for H2014; it does not establish that A’s locks reading is wrong or settle archetypal priority. The A/N electronic wording remains preserved in the witness apparatus.
 
 ---
 

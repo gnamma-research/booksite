@@ -18,7 +18,8 @@ window.GNAMMA_TAMHID_INTRO = (window.GNAMMA_TAMHID_INTRO || []).concat([
       "N prints تصور تعيناتها. The syntax suggests a problem near the word for forms or conception; ‘determination-forms’ renders the contextual sense provisionally. The Arabic is not silently emended.",
       "Mawjūdiyya, ‘existentness’, is kept distinct from wujūd, ‘existence’, where the author himself changes terms.",
       "In the retained N transcription, «إذ تلك إنما هي تصور تعيناتها» is strained. “Determination-forms” construes it as though «صور تعيناتها»; this is an interpretative reading, not a photographed or independently collated emendation.",
-      "Electronic-text comparison (2026-11-11): Electronic تصور تعيناتها is rendered as determination-forms (as though صور); source reading remains uncertain rather than attested correction."
+      "Electronic-text comparison (2026-11-11): Electronic تصور تعيناتها is rendered as determination-forms (as though صور); source reading remains uncertain rather than attested correction.",
+      "Qawtaw7 / H2014 H2014/1:80: supported reading. Preferred: «صور تعيناتها». The printed quotation reads صور, not تصور; bracketed modern explanatory additions excluded. The A/N electronic wording remains preserved in the witness apparatus."
     ],
     "comparativeReview": {
       "date": "2026-11-11",
@@ -27,7 +28,26 @@ window.GNAMMA_TAMHID_INTRO = (window.GNAMMA_TAMHID_INTRO || []).concat([
       "manuscriptCollation": false,
       "independentHumanCertification": false,
       "hasUnresolvedReadings": true
-    }
+    },
+    "witnessComparisons": [
+      {
+        "stage": "Qawtaw7",
+        "number": 15,
+        "status": "supported-reading",
+        "printedComparator": "H2014",
+        "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+        "sourceLocations": [
+          "H2014/1:80"
+        ],
+        "sourceExcerpt": "فإنها بهذا المعنى نفس حقيقة الخصوصيات، وعين تلك الحيثيات؛ إذ تلك إنما هي تصور تعيناتها المتمائزة بمجرد النسب والإضافات وصنوف الاعتبارات، على ما ستطلع عليه، إن شاء الله تعالى.",
+        "preferredReading": "صور تعيناتها",
+        "interpretation": "They are the forms of its determinations, distinguished by relations and considerations.",
+        "editorialDecision": "The printed quotation reads صور, not تصور; bracketed modern explanatory additions excluded.",
+        "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+        "manuscriptCollation": false
+      }
+    ],
+    "readingArabic": "فإن قلت: هذا غير موافق لما علم من تصفح كلامهم، فإن شيخ المشائين؛ ابن سينا قدس سره قد صرح في الفصل الثاني من المقالة الأولى من إلهيات الشفاء، من أن الموجود بما هو موجود أمر مشترك بين المقولات وأنه يجب أن يجعل الموضوع لهذه الصناعة. قلنا: أن الموجودية المشتركة بالمعنى الذي جعل به موضوعا للصناعة وإن شملت جميع المقولات من حيث أنها عارضة إياها، لكن خصوصيات كل منها وحيثياتها ليست داخلة فيها ولا صادقة عليها بما هو هو عندهم، فيكون بالحقيقة هو المعنى المجرد، دون المعنى الذي جعل به موضوعا لهذا العلم، فإنها بهذا المعنى نفس حقيقة الخصوصيات، وعين تلك الحيثيات؛ إذ تلك إنما هي صور تعيناتها المتمائزة بمجرد النسب والإضافات وصنوف الاعتبارات، على ما ستطلع عليه، إن شاء الله تعالى. فإذا عرفت هذا، عرفت أن الفرق بين هذا العلم الإلهي، والعلم الإلهي المسمى ب«ما بعد الطبيعة»، كالفرق بين المطلق والمقيد من غير فرق."
   },
   {
     "id": "SH-INTRO-012",

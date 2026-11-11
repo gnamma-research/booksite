@@ -18,7 +18,8 @@
         "A repeats almost verbatim the sentence contrasting possible quiddities with the necessary nature. The Arabic source preserves that repetition; the English renders the repeated content once, with the duplication explicitly registered here.",
         "Malzūm means what entails a concomitant. It is not automatically translated as an efficient cause; causal claims are rendered only where the text makes them.",
         "The retained A transcription repeats the clause beginning «إلا أن الوجودات الممكنات لها ماهيات» twice, with a small pronoun difference. The working English renders its content once; this is an acknowledged reading-text treatment of suspected duplication, not a verified deletion from an independent witness.",
-        "Electronic-text comparison (2026-11-11): Arabic repeats possible-existence/quiddity clause; English translates once, with duplication explicitly retained in Arabic and apparatus."
+        "Electronic-text comparison (2026-11-11): Arabic repeats possible-existence/quiddity clause; English translates once, with duplication explicitly retained in Arabic and apparatus.",
+        "Qawtaw7 / H2014 H2014/1:293: supported reading. Preferred: «إلا أن وجودات الممكنات لها ماهيات معروضة لها ... دون الطبيعة الخاصة الواجبة». The complete printed medieval paragraph contains the clause once; modern brackets explain its pronouns. No medieval manuscript deletion is claimed. The A/N electronic wording remains preserved in the witness apparatus."
       ]
     },
     {
@@ -43,7 +44,8 @@
         "Inline reported readings retained separately from the reading text: ( يبيَّن - خ ); [ الوجود - ظ ]",
         "In «لا يغاير الوجوب المطلق بالذات», the retained electronic A text reads “unrestricted necessity”; the English’s “unrestricted existence” follows the surrounding argument as though «الوجود». This is an explicitly interpretative reading, not an independently established correction.",
         "In the question «نفس معروضه السابق عليه ومقوما له», «مقوما» is coordinated with the predicate of «يكون». The question concerns the apparent paradox that what attaches later could itself constitute its prior subject; the previous English reversed that direction.",
-        "Electronic-text comparison (2026-11-11): A string reads الوجوب المطلق while English has unrestricted existence; contextual الوجود reading requires explicit note."
+        "Electronic-text comparison (2026-11-11): A string reads الوجوب المطلق while English has unrestricted existence; contextual الوجود reading requires explicit note.",
+        "Qawtaw7 / H2014 H2014/1:299: supported reading. Preferred: «لا يغاير الوجود المطلق بالذات». The comparator prints الوجود, not the electronic الوجوب; English already conveys the supported reading. The A/N electronic wording remains preserved in the witness apparatus."
       ]
     },
     {
@@ -81,7 +83,9 @@
         "Inline reported readings retained separately from the reading text: ( اما ان يصحَّ - خ ل )",
         "The electronic A wording has «فمعلوم» where the objection’s following clauses suggest “it is not established”. The existing English’s bracketed negative remains a contextual reconstruction, not an attested variant. The earlier «امتناع وجود بها» is also read contextually as concerning intrinsic necessity.",
         "Electronic-text comparison (2026-11-11): Individual intrinsic possibility argument retained; digital وجود بها apparently stands for وجوبها, not independently corrected.",
-        "Electronic-text comparison (2026-11-11): English [not established] supplies negative absent from printed فمعلوم; context strongly suggests it but source remains unresolved."
+        "Electronic-text comparison (2026-11-11): English [not established] supplies negative absent from printed فمعلوم; context strongly suggests it but source remains unresolved.",
+        "Qawtaw7 / H2014 H2014/1:322: supported reading. Preferred: «ضرورة امتناع وجوبها». The joined word وجوبها is visible in the printed lemma and resolves the digital split وجود بها. The A/N electronic wording remains preserved in the witness apparatus.",
+        "Qawtaw7 / H2014 H2014/1:324: unresolved. Preferred: «فمعلوم». H2014 does not supply the missing negative. The modern explanatory paragraph articulates the objection coherently but does not establish an alternative authorial reading. The A/N electronic wording remains preserved in the witness apparatus."
       ]
     },
     {

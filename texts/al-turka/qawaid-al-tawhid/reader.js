@@ -87,7 +87,7 @@ function renderUnit(u,index,continuous){
  const commentaryLayer=state.layer!=="matn";
  const heading='<div class="section-meta"><span>'+esc(u.id)+'</span><span>'+(matnLayer?'ORIGINAL MATN':'LINKED COMMENTARY')+'</span><a href="'+safeUrl(u.url)+'" target="_blank" rel="noopener noreferrer">Āshtiyānī p. '+esc(u.pages[0])+'</a>'+(related.length?'<span class="small-pill">'+related.length+' sharḥ excerpt'+(related.length===1?"":"s")+'</span>':"")+'</div>';
  const notes=matnLayer?notesMarkup([...(u.notes||[]),...(u.variants||[]).map(v=>v.lemma+" / "+v.other+": "+v.remark)],"Matn notes and readings"):"";
- const matnHtml=matnLayer?'<div class="matn-body"><h3>'+esc(u.title)+'</h3>'+textPair(u.arabic,u.english)+'</div>':"";
+ const matnHtml=matnLayer?'<div class="matn-body"><h3>'+esc(u.title)+'</h3>'+textPair(u.readingArabic||u.arabic,u.english)+'</div>':"";
  const commHtml=commentaryLayer?(related.length?'<div class="commentary-list">'+related.map(renderCommentary).join("")+'</div>':
    (!continuous?'<div class="untranslated"><h3>Commentary data unavailable</h3><p>The linked commentary for '+esc(u.id)+' did not load. The complete available translation is in the commentary reader; this is a loading issue, not an untranslated passage.</p><button class="text-btn" type="button" data-go-verified="yes">Open the translated commentary reader</button></div>':"")):"";
  const actions=!continuous?'<div class="inline-actions">'+
@@ -200,7 +200,7 @@ function searchResults(){
  const found=[];
  for(let i=0;i<units.length;i++){
   const u=units[i],related=byMatn.get(u.id)||[];
-  const blob=[u.id,u.title,u.arabic,u.english,...(u.notes||[]),...related.flatMap(c=>[c.arabic,c.english,c.section,...(c.notes||[])])].join(" ").toLocaleLowerCase();
+  const blob=[u.id,u.title,u.readingArabic||u.arabic,u.arabic,u.english,...(u.notes||[]),...related.flatMap(c=>[c.arabic,c.english,c.section,...(c.notes||[])])].join(" ").toLocaleLowerCase();
   if(blob.includes(q))found.push({u,i,hasCommentary:related.some(c=>[c.arabic,c.english,c.section].join(" ").toLocaleLowerCase().includes(q))});
  }
  el.innerHTML=found.length?found.slice(0,61).map(({u,i,hasCommentary})=>'<button type="button" data-jump="'+i+'">'+esc(u.id)+' · '+esc(u.title)+(hasCommentary?" · Sharḥ":"")+'<small>Printed pp. '+esc(u.pages.join("–"))+'</small></button>').join(""):'<p class="help-copy">No passage matches this query.</p>';

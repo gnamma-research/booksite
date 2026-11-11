@@ -19,9 +19,9 @@ def main(root):
     data['queue']=[]
     data['policy']['sourceScope']='Closing excerpts from A p.274. See commentary-corpus.js for the complete source-scoped introduction, main commentary and conclusion.'
     u=data['units'][0]
-    if not any(s in u['english'] for s in ['keys to his closures and states','keys to his locks and states']):raise RuntimeError('Unexpected SH-061-A wording')
+    if not any(s in u['english'] for s in ['keys to his closures and states','keys to his locks and states','keys to his actions and states']):raise RuntimeError('Unexpected SH-061-A wording')
     u['english']=u['english'].replace('keys to his closures and states','keys to his locks and states')
-    u['notes'][1]='Printed alternatives: أقفاله وأحواله / إقباله وأحواله / أفعاله وأحواله. “Locks and states” preserves the displayed metaphor of keys and locks; it does not decide between the reported alternatives. No independent manuscript has been collated.'
+    u['notes'][1]='H2014 II:598 prints أفعاله وأحواله (actions and states), adopted provisionally for reading; A reads أقفاله وأحواله (locks and states), and إقباله is also reported. All remain recorded as printed alternatives. No original manuscript has been independently collated.'
     write('data/commentary.js','/* Gnamma: preserved final-page source module, SH-061-A/B.\n   The complete 110-unit translation is assembled in commentary-corpus.js. */\nwindow.GNAMMA_TAMHID_SHARH = '+json.dumps(data,ensure_ascii=False,indent=2)+';\n')
     reader=read('reader.js').replace('Commentary reserved','Commentary data unavailable')
     reader=reader.replace("The commentary for '+esc(u.id)+' has not yet been source-checked and translated. Its place is reserved here; no reconstructed Arabic is displayed.","The linked commentary for '+esc(u.id)+' did not load. The complete available translation is in the commentary reader; this is a loading issue, not an untranslated passage.")
@@ -39,7 +39,7 @@ def main(root):
     exports={f:read(f) for f in ['data/parallel-commentary.md','data/commentary-english.md']};checks=[]
     for u in units:
         for field,export in [('arabic','data/parallel-commentary.md'),('english','data/parallel-commentary.md'),('english','data/commentary-english.md')]:
-            if u[field] not in exports[export]:raise RuntimeError('Export lost '+u['id']+' '+field)
+            if (u.get('readingArabic',u['arabic']) if field=='arabic' else u[field]) not in exports[export]:raise RuntimeError('Export lost '+u['id']+' '+field)
         if u.get('sourceTextSha256'):
             h=digest(re.sub(r'\s+',' ',u['arabicSourceTranscription'].strip()).encode())
             if h!=u['sourceTextSha256']:raise RuntimeError('Source mismatch '+u['id'])

@@ -23,8 +23,8 @@ assert len(MATN)==61 and len(CORPUS)==110 and len(TERMS)==82
 # Prevent reintroducing the independently identified SH-058 mistranslation.
 SH058=[u for u in CORPUS if u['id']=='SH-058']
 assert len(SH058)==1, 'Missing SH-058 in the compiled commentary'
-assert 'sleep and lapses of attention' in SH058[0]['english'], 'SH-058 correction not propagated into PDF corpus'
-assert 'The same applies to sleep and wakefulness' not in SH058[0]['english'], 'Stale SH-058 translation in PDF corpus'
+assert 'sleep and wakefulness' in SH058[0]['english'], 'Qawtaw7 H2014 reading not propagated into PDF corpus'
+assert 'sleep and lapses of attention' not in SH058[0]['english'], 'Superseded SH-058 A reading remains in preferred English'
 INTRO=[x for x in CORPUS if x.get('part')=='introduction']
 OTHERS=[x for x in CORPUS if x.get('part')!='introduction']
 BY_QT=defaultdict(list)
@@ -170,10 +170,10 @@ def build(edition,filename,title,group,lang,notesMode,appendix):
     intro+='<p class="muted">Source-based working translation. Electronic Arabic–English comparison completed 11 November 2026; not an independently human-certified or manuscript-collated edition. The reported ancestral loss at QT-059 remains unreconstructed. Unresolved readings are recorded in the Study and Reference editions and the online comparison ledger.</p></section>'
     pieces=[cover,intro,'<section id="intro" class="section"><h1 class="section-title">Introduction to the commentary</h1><p class="muted">Ṣāʾin al-Dīn Ibn Turka</p>']
     for u in INTRO:
-        pieces.append('<div class="unit" id="'+K(u['id'])+'"><h2>'+K(u.get('section'))+'</h2>'+pair(u['arabic'],u['english'],lang)+notes(u,notesMode)+'</div>')
+        pieces.append('<div class="unit" id="'+K(u['id'])+'"><h2>'+K(u.get('section'))+'</h2>'+pair(u.get('readingArabic',u['arabic']),u['english'],lang)+notes(u,notesMode)+'</div>')
     pieces.append('</section><section id="text" class="section"><h1 class="section-title">Matn and commentary</h1>')
     for u in MATN:
-        pieces.append('<article class="unit" id="'+K(u['id'])+'"><h2>'+K(u['id']+' — '+u.get('title',''))+'</h2><div class="matn"><p class="label">Original matn · Abū Ḥāmid Turka</p>'+pair(u['arabic'],u['english'],lang)+notes(u,notesMode)+'</div>')
+        pieces.append('<article class="unit" id="'+K(u['id'])+'"><h2>'+K(u['id']+' — '+u.get('title',''))+'</h2><div class="matn"><p class="label">Original matn · Abū Ḥāmid Turka</p>'+pair(u.get('readingArabic',u['arabic']),u['english'],lang)+notes(u,notesMode)+'</div>')
         for c in BY_QT[u['id']]:
             bridge=c.get('precedingMatn')
             if bridge:

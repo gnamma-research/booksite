@@ -4,9 +4,9 @@
   "main": 64,
   "conclusion": 6,
   "additionalAncestralBridges": 4,
-  "englishWords": 48921,
+  "englishWords": 48893,
   "bridgeEnglishWords": 341,
-  "newlyIntegratedEnglishWords": 30587,
+  "newlyIntegratedEnglishWords": 30569,
   "completeAvailableSourceTranslation": true,
   "manuscriptCriticalEditionComplete": false
 }
