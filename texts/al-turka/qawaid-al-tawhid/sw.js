@@ -7,7 +7,7 @@ const FILES=[
  './','index.html','commentary.html',
  'reader.css','layered-reader.css','qawaid-study.css','qawaid-parity.css',
  'layered-reader.js','commentary-reader.js','commentary-main-bridge.js',
- 'qawaid-study.js','qawaid-parity-search.js','qawaid-parity-desk.js',
+ 'qawaid-study.js','qawaid-parity-search.js','qawaid-parity-desk.js','qawaid-parity-personal-pdf.js',
  'qawaid-historical-lexicon.js','qawaid-inline-references.js',
  'data/units.js','data/commentary.js','data/commentary-corpus.json','data/commentary-corpus.js',
  'data/commentary-conclusion.js','data/commentary-main-001-019.js','data/commentary-main-020-060.js',
@@ -18,7 +18,10 @@ const FILES=[
  'pdf/manifest.json','pdf/qawaid-bilingual-reading.pdf','pdf/qawaid-english-reading.pdf',
  'pdf/qawaid-arabic-reading.pdf','pdf/qawaid-bilingual-study.pdf','pdf/qawaid-bilingual-reference.pdf',
  '../../../daruri/bookmark-ui.js','../../../daruri/gnamma-scholarly.js',
- '../../../daruri/gnamma-proximity.js','../../../assets/gnamma-mark.svg'
+ '../../../daruri/gnamma-proximity.js',
+ '../../../daruri/vendor/pdf-lib-1.17.1.min.js','../../../daruri/vendor/fontkit-1.1.1.umd.min.js',
+ '../../../daruri/vendor/NotoSerif-Regular.ttf','../../../daruri/vendor/NotoNaskhArabic-Regular.ttf',
+ '../../../assets/gnamma-mark.svg'
 ];
 const URLS=FILES.map(s=>new URL(s,self.registration.scope).href);
 self.addEventListener('install',event=>{
