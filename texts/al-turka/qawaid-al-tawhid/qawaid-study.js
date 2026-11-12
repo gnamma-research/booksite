@@ -104,7 +104,9 @@ function setup(){
  const theme=$('#theme-button');if(theme)theme.addEventListener('click',e=>{e.preventDefault();e.stopImmediatePropagation();openPanel('appearance')},true);
  const settings=$('#settings-button');if(settings)settings.addEventListener('click',e=>{e.preventDefault();e.stopImmediatePropagation();openPanel('settings')},true);
  const menu=$('#menu-button');if(menu)menu.addEventListener('click',e=>{e.preventDefault();e.stopImmediatePropagation();openPanel('menu')},true);
- const search=$('#search-button');if(search)search.addEventListener('click',e=>{e.preventDefault();e.stopImmediatePropagation();openPanel('search')},true);
+ // The top-level Search button belongs to the integrated matn/sharh full-text reader.
+ // Its content-search dialog is not replaced by the scholarly dictionary/source panel.
+ // The latter remains accessible via 'Search terms & sources' in the Reading Desk menu.
  const shelf=$('#sheet');if(shelf){shelf.addEventListener('close',()=>{if(panelOpen())panelClose()},true)}
  const pstyle=document.createElement('style');pstyle.textContent='body[data-apparatus="off"] .source-notes,body[data-apparatus="off"] .gn-term-ribbon,body[data-apparatus="off"] .gn-citation-ribbon{display:none!important}body[data-apparatus="off"] .gn-term-inline{color:inherit!important;border:0!important;text-decoration:none!important;background:transparent!important}body[data-apparatus="minimal"] .source-notes{display:none!important}';document.head.append(pstyle);
  applyFontPrefs();
@@ -141,6 +143,7 @@ function openPanel(panel,param){
   groupButton('Dictionary','dictionary','dictionary','82 technical headwords with source passages'),
   groupButton('Subject index','subjects','index','Grouped themes and source locations'),
   groupButton('Primary sources','references','sources','Qurʾān, quoted philosophical works and cross-references'),
+  groupButton('Search terms & sources','search','search','Find technical terms and source-reference cards'),
   groupButton('PDF editions','pdf','pdf','Reading, Study and Reference'),
    groupButton('Editorial & textual notes','apparatus-notes','sources','Source variants and editorial notes, outside the reading text'),
   groupButton('My notes','notes','note','Private annotations'),

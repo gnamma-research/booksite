@@ -16,7 +16,7 @@
 | Arabic segments | English sentences | Result | Editorial finding |
 |---|---|---|---|
 | 1–4 | 1–1 | checked-with-note | Opponents' old humoral diagnosis of bodily substrates, burning of healthy materials and black bile is reported, not endorsed as modern science. |
-| 5–8 | 2–2 | checked | Certainty in invalidation of rational/sensory/innate/natural judgments follows arbitrary asceticism as an opponent's causal claim; subsequent बीमारी is the adversary's diagnosis. |
+| 5–8 | 2–2 | checked | Certainty in invalidation of rational/sensory/innate/natural judgments follows arbitrary asceticism as an opponent's causal claim; subsequent illness is the adversary's diagnosis. |
 
 ### QT-003 — A pp. 52
 
