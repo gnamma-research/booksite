@@ -200,7 +200,7 @@ function make(){
  dialog.setAttribute('aria-label','Reading Desk');
  dialog.innerHTML='<header class="qaw-parity-head"><strong>Reading Desk · Private collection</strong><button data-desk="close" type="button" aria-label="Close">×</button></header><div id="qaw-desk-main"></div>';
  document.body.append(dialog);
- dialog.addEventListener('click',e=>{
+ dialog.addEventListener('click',async e=>{
   if(e.target===dialog){close();return;}
   const t=e.target.closest('button');if(!t)return;
   if(t.dataset.deskTab){tab=t.dataset.deskTab;render();return;}
