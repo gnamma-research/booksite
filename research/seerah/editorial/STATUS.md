@@ -34,3 +34,15 @@ The earlier chapter-01 status entry remains a historical record. **Chapter 02 ha
 **Editorial qualification:** This completes an **integrated first-pass rewrite for the full 46-chapter architecture**, not new exhaustive primary-source collation of all 44 revised chapters, final review of every historical claim, proof of all Miʿrāj variants, or specialist verification of each Akbarian translation. The revised method is documented in [AKBARI_INTEGRAL_FRAMEWORK_20261112.md](AKBARI_INTEGRAL_FRAMEWORK_20261112.md) and in the prior [Muhammadan Reality dossier](MUHAMMADAN_REALITY_MIRAJ_HIGHER_AND_EARTHLY_UMRAN_RESEARCH_20261111.md). The nine previous source-critical dossiers have been preserved and have not been newly verified in this pass.
 
 **Next scholarly gates:** verify each revised claim against its cited source; eliminate duplicated transitions where new analytical sharḥ joins retained historical commentary; check all links and paragraphs in the rendered reader; obtain independent feedback on Akbarian/Traditionalist comparisons. A changed explanatory architecture does not itself constitute a manuscript-critical edition.
+
+## Current status · 12 November 2026 · Research Edition 1.6.0
+
+**This is the operative current status, superseding earlier dated snapshots.** The canonical JSON, static reader and complete manuscript now form synchronized edition [1.6.0](current-edition-1.6.0-scholarly.md), with 46 chapter pairs and nine preserved prior evidence dossiers. Edition 1.5.0 is intact in [the retained manuscript](current-edition-1.5.0-integrated.md) and archived chapter/reader snapshots.
+
+**Completed source-linked revision work:** controlled Akbarian ontological prolegomenon, Miʿrāj dossier, 50-index Prophetic encounter atlas with 17 detailed studies covering 18 entries, six fully re-composed benchmark chapters, seven re-composed Book V scholarly/initiatic inheritance chapters, 138 claim–witness inventory entries across all chapters, and 13 named regional/modern case studies. 26 chapter texts were changed from 1.5.0, with all 46 pairs retained.
+
+**Verified repository checks:** direct-prose scan, all chapter headings and text-content parity across JSON/static reader/full manuscript, previous edition preservation; nine dossiers and seven atlas figure IDs remain. The standalone Node verifier has been revised to edition 1.6.0. Continuous reading text deliberately does not contain the critical apparatus and editorial logs.
+
+**Not completed:** independent direct check of all Arabic manuscripts and 56 Sulamī/Colby sayings; complete collation of Miʿrāj and historically contested Sīrah variants; individual source verification for the full 138-item claim ledger; proof of all regional archival source claims against primary documents; independent specialist and rendered browser visual QA. Report these as outstanding, not as completed.
+
+See [progress](PROGRESS_1_6_20261112.json), [ontology](ONTOLOGICAL_PROLEGOMENON_1_6_20261112.md), [ascension dossier](MIRAJ_CRITICAL_DOSSIER_1_6_20261112.md), and the future final scholarly review handoff.
