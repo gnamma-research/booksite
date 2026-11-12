@@ -1,0 +1,224 @@
+{
+  "edition": "1.6.1",
+  "date": "2026-11-12",
+  "status": "Books VI–VII matn prose audit, exact source-aligned replacements",
+  "changes": [
+    {
+      "id": 34,
+      "matn_replacements": [
+        [
+          "Islamic life was no longer governed through one uncontested political centre.",
+          "Muslim communities lived under several competing rulers, while scholars, merchants and pilgrims continued to travel between their territories."
+        ],
+        [
+          "Military success depended on revenue, disciplined troops, local alliances and diplomacy; the city's religious significance supplied motives and meanings that cannot be reduced to those arrangements.",
+          "The recovery depended upon soldiers, revenues, alliances and diplomacy, while Jerusalem's religious significance was central to the commitments of those involved."
+        ],
+        [
+          "The unity of religious orientation did not require one administrative capital or erase doctrinal conflicts. These centres could sustain scholarship and worship while their rulers fought one another, revealing both the power and the limitations of institutions formed under the Muhammadan inheritance.",
+          "These cities sustained scholarship and worship despite political division, although their rulers and religious communities sometimes competed over the authority to define and support religious teaching."
+        ]
+      ]
+    },
+    {
+      "id": 35,
+      "matn_replacements": [
+        [
+          "An Umayyad survivor established rule at Córdoba in 756, and al-Andalus became a western centre of government, agriculture, craft and learned life in connection with North Africa.",
+          "ʿAbd al-Raḥmān I, an Umayyad prince who had escaped the Abbasid overthrow, established his rule in Córdoba in 756. Over subsequent centuries al-Andalus became an important centre of government, agriculture, craft and learning, closely connected with North Africa."
+        ],
+        [
+          "The destruction of one political order could scatter people and books while leaving some learned and devotional relationships alive elsewhere. Such continuity was neither automatic nor a compensation that made dispossession acceptable.",
+          "As Muslim political power contracted, scholars and families carried books and teaching traditions into North Africa, while others remained under increasing restrictions. These movements could preserve learning but did not undo the losses suffered by displaced communities."
+        ],
+        [
+          "The western Islamic inheritance persisted through real teachers, households, manuscripts and institutions in the Maghrib, whose cultural forms were not simply replicas of Córdoba.",
+          "Scholarship and devotional life continued in the Maghrib through its own teachers, households and institutions, building on an inheritance that had developed on both sides of the straits."
+        ]
+      ]
+    },
+    {
+      "id": 36,
+      "matn_replacements": [
+        [
+          "A written work required successive acts of translation, copying and instruction before it could become another community's living knowledge.",
+          "Books were translated, copied and explained by teachers before readers in other regions could make full use of them."
+        ],
+        [
+          "The choice of one word could help or distort a distinction in theology; a teacher's explanation could make difficult reasoning available to learners without changing the authority of its original source.",
+          "The translation of a technical term could clarify an argument or lead readers to misunderstand it. Teachers often supplied explanations for students learning through a language different from that of the original work."
+        ],
+        [
+          "These communities did not need an identical imperial language or political constitution to recognize a common revealed orientation.",
+          "Shared religious learning therefore crossed political and linguistic boundaries."
+        ],
+        [
+          "Civilizational transmission took shape through layered competence: sacred recitation, scholarly reasoning, storytelling, familial speech and the embodied habits acquired under local conditions. The diversity of forms made the question of sound interpretation more demanding, but it also created new ways of transmitting learning and ethical formation.",
+          "Students could recite the Qurʾān in Arabic, study scholarly explanations in Persian and discuss religious matters in the languages of their households. Such bilingual and multilingual teaching extended learning while creating further responsibilities for translators and teachers."
+        ]
+      ]
+    },
+    {
+      "id": 37,
+      "matn_replacements": [
+        [
+          "Religious continuity did not reside in an invulnerable political shell. It required surviving people who remembered, taught, recited, copied, judged and performed their obligations in materially changed circumstances.",
+          "Religious learning survived where teachers, students, books and the resources needed to support them survived. Communities rebuilt institutions and continued worship under rulers whose policies differed from those of earlier dynasties."
+        ],
+        [
+          "A new ruler's religious title could transform official patronage without demonstrating that all his subjects underwent the same inward change.",
+          "The ruler's conversion influenced patronage and public religious policy, but it did not mean that all the people under his authority had converted at once."
+        ],
+        [
+          "Earlier forms of scholarship were adopted, adapted and sometimes redirected by people whose military and cultural histories were very different from those of the communities they governed.",
+          "The new administrations drew upon scholars, scribes and institutions inherited from the communities they had conquered."
+        ]
+      ]
+    },
+    {
+      "id": 38,
+      "matn_replacements": [
+        [
+          "Mali's royal power and Mansa Mūsā's pilgrimage in 1324 connected West African political prestige with wider Islamic centres, but royal pilgrimage did not by itself determine the religious understanding of every village.",
+          "Mansa Mūsā's pilgrimage in 1324 brought Mali's wealth and connections to the attention of people in other parts of the Muslim world. Religious practice within the kingdom continued to vary among its towns and rural communities."
+        ],
+        [
+          "The resulting Islamic culture was neither simply imported from Cairo nor entirely independent of transregional texts.",
+          "Scholars in the Middle Niger studied works also taught in North Africa while developing their own learned networks and responses to local questions."
+        ],
+        [
+          "The moral life of the community therefore depended upon interactions among merchants, scholars, rulers and families, not on a claim that the mere possession of Arabic manuscripts made everyone realized.",
+          "Merchants, scholars, rulers and families each contributed to the religious life of the region through commerce, teaching, public patronage and household practice."
+        ]
+      ]
+    },
+    {
+      "id": 39,
+      "matn_replacements": [
+        [
+          "Islamic practice spread through persons, repeated relationships and public institutions rather than a single migrating administrative model.",
+          "Muslim communities grew in different ports through trade, settlement, marriage and the work of religious teachers."
+        ],
+        [
+          "A commercial promise could prepare a relationship of trust; a teacher could give that relationship religious direction; a household could transmit practice across generations.",
+          "Some trading relationships developed into enduring settlements where families supported mosques and the teaching of children."
+        ],
+        [
+          "Yet trade itself did not prove sanctity, and Muslim court identity did not establish that every inhabitant followed the same law. The common Prophetic inheritance took historically differentiated forms through sea, language and domestic life.",
+          "The adoption of Islam by a court did not mean every resident shared the same beliefs or practices. Local languages and institutions influenced how people studied and lived their religion."
+        ]
+      ]
+    },
+    {
+      "id": 40,
+      "matn_replacements": [
+        [
+          "A family attached to a newly cultivated place could receive instruction and form devotional habits through a remembered teacher or shrine without participating in one identifiable mass conversion.",
+          "Religious teachers and their households sometimes became associated with new settlements, where mosques, shrines and inherited practices developed over time."
+        ],
+        [
+          "The same place could possess a material, political and devotional significance without those meanings being interchangeable.",
+          "A mosque or shrine could support worship while its associated endowment also affected landholding, cultivation and the authority of local patrons."
+        ],
+        [
+          "The acts of particular households constituted much of that continuity, while rivers, harvests and land tenure shaped their possibilities. The religious development of Bengal therefore involved living relations among land, labour, spiritual teachers and political power. The spiritual value attached to a saintly founder cannot be deduced from a land grant, but neither does the economic explanation of a settlement exhaust what later worshippers understood themselves to be doing.",
+          "Households carried the practices learned from parents and teachers into succeeding generations, while changes in waterways, cultivation and landholding shaped their settlements. Later communities remembered some founders as saints; the history of their works and the religious meaning attached to them must be examined from the distinct evidence that survives."
+        ]
+      ]
+    },
+    {
+      "id": 41,
+      "matn_replacements": [
+        [
+          "The Ottoman order made some forms of religious life and governance durable at large scale, yet none of its offices recreated the complete prophetic commission.",
+          "The empire supported courts, mosques and schools across a vast territory, but these institutions did different kinds of work and held distinct forms of authority."
+        ],
+        [
+          "A judge could issue a ruling, a ruler command an army, a teacher transmit knowledge and a shaykh guide students; their claims needed limits and mutual correction.",
+          "Judges settled cases, officials collected revenues, teachers trained students and Sufi shaykhs guided their followers. Their responsibilities sometimes overlapped, leading to cooperation as well as disputes over authority."
+        ],
+        [
+          "The life of worship and character depended upon actual persons using institutions rightly. Different provinces developed different relations among imperial law, scholarly practice and local religious communities, making uniform political membership an insufficient measure of civilization.",
+          "Local worship and instruction continued through families and teachers as well as imperial offices. The relationship among courts, scholars and religious communities differed from province to province."
+        ]
+      ]
+    },
+    {
+      "id": 42,
+      "matn_replacements": [
+        [
+          "These empires did not express one interchangeable model of Islamic civilization.",
+          "The Safavid and Mughal empires developed different policies toward religious authority and the communities they governed."
+        ],
+        [
+          "A subject could share a recognized legal tradition without sharing the political aims of its patrons. The material work of ruling and the inward formation of persons were interdependent but not identical, and the transmission of religious knowledge remained answerable to its sources even when dynasties supported it.",
+          "Religious teachers could benefit from imperial patronage while disagreeing with the policies of their rulers. Courts and officials governed public affairs, while families, scholars and spiritual guides continued to transmit religion in varied local settings."
+        ]
+      ]
+    },
+    {
+      "id": 43,
+      "matn_replacements": [
+        [
+          "The human ends of worship, truthfulness, justice and spiritual formation were not displaced simply because new technologies appeared. Nor could their appropriate forms be deduced from historical precedents without understanding the changed circumstances.",
+          "These changes brought new questions for merchants, rulers and religious teachers. In more distant and complex transactions, people still needed trustworthy dealing, sound judgment and institutions able to protect their rights."
+        ],
+        [
+          "A wider and more integrated commercial world could make knowledge and goods accessible while concentrating coercive power. The emerging civilizational problem concerned the relation between material scale, human judgment and the traditions that formed responsible conduct.",
+          "Long-distance trade and improved communication widened access to goods and information, but the expanding power of states and companies also created new forms of dependence and vulnerability."
+        ]
+      ]
+    },
+    {
+      "id": 44,
+      "matn_replacements": [
+        [
+          "The language of inherited law could remain familiar even while the relationships among jurists, judges, litigants and rulers changed profoundly.",
+          "Many legal terms and books remained in use, but colonial courts changed who interpreted them and how decisions were made and enforced."
+        ],
+        [
+          "The law lords had not witnessed the original acts. They assessed arguments and records through the procedures of their court and their understanding of what qualified as a genuine Muslim charitable endowment.",
+          "The judges heard the appeal through advocates, earlier court records and documents. They considered whether the arrangement met the legal requirements for a charitable endowment as understood by their court."
+        ],
+        [
+          "A legal institution is not simply a set of preserved phrases. The person who supplies evidence, the scholar who interprets a rule, the court empowered to enforce it and the household whose property is at stake stand in actual relationships that constitute the law's worldly operation. To change those relations while preserving the vocabulary is to transform the institution in a manner that cannot be seen simply by comparing abstract rulings.",
+          "The case shows how the application of a familiar legal doctrine could change when disputes were heard before new authorities. The family's documents, the jurists' interpretations, the advocates' arguments and the powers of an imperial appellate court all affected the outcome."
+        ],
+        [
+          "The question of faithful inheritance became whether authoritative texts, trained judgment, lived justice and public institutions could remain appropriately related in a changing legal world.",
+          "Muslim teachers and jurists therefore faced the difficult task of preserving learned methods while working within courts and educational systems that had changed their authority."
+        ]
+      ]
+    },
+    {
+      "id": 45,
+      "matn_replacements": [
+        [
+          "Preservation of texts and transformation of teaching therefore occurred simultaneously.",
+          "Schools and readers acquired new ways of accessing religious texts, while teachers adapted their methods to these changing circumstances."
+        ],
+        [
+          "Their disagreements were substantive; none is adequately captured by a single division between tradition and progress.",
+          "These schools pursued different aims and often disagreed about how inherited learning should relate to new forms of education."
+        ],
+        [
+          "The decisive human issue was how an increasing population of readers could acquire sound understanding, reliable judgment and stable conduct. Institutions responded through curricula, examinations, circles of study and new forms of public religious debate; their actual quality depended upon what people were taught to know and do, not merely on the quantity of printed books.",
+          "Teachers and educational institutions faced new questions about how readers could understand texts without the immediate help of an experienced scholar. They responded with curricula, examinations, study circles and public debates, with differing results."
+        ]
+      ]
+    },
+    {
+      "id": 46,
+      "matn_replacements": [
+        [
+          "The final Muhammadan commission does not require a separate report describing every later family, workplace, technology or social difficulty. It joins a revealed orientation, authoritative exemplars, legitimate reasoning and the continuing possibility of human formation.",
+          "Muslims continued to turn to the Qurʾān and the Sunnah for guidance while learning to address circumstances unfamiliar to earlier generations. Scholars and teachers drew upon inherited principles, interpretation and experience in dealing with new questions."
+        ],
+        [
+          "New circumstances require knowledge of their actual causes and the capacity to relate differentiated duties properly. In the living relations of household, neighbour, teacher, craft worker, jurist and worshipper, the inherited orientation toward God can still become concrete without any institution or specialist claiming to reproduce the Prophet's ﷺ comprehensive reality.",
+          "Families, schools, workplaces and religious communities still needed people capable of trustworthy judgment and care for others. The means of communication had changed, but the work of teaching and forming human character continued through actual relationships."
+        ]
+      ]
+    }
+  ]
+}
