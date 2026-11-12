@@ -1,0 +1,82 @@
+name: Tahdhib Stage116 printed source scan audit
+on:
+  workflow_dispatch:
+  push:
+    branches: ['research/tahdhib-stage116-print-source-20261112']
+    paths:
+      - '.github/workflows/tahdhib-stage116-photo-audit.yml'
+      - 'tools/tahdhib/stage116_recover_print_scans.py'
+      - 'tools/tahdhib/build_stage116_cumulative.py'
+      - 'tools/tahdhib/check_stage116_release.py'
+permissions:
+  contents: write
+jobs:
+  research-scan-extraction:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF extraction dependency
+        run: python -m pip install PyMuPDF==1.26.6 Pillow==11.3.0
+      - name: Fetch Qum edition source PDF and render only bounded target pages
+        run: python tools/tahdhib/stage116_recover_print_scans.py
+      - name: Assemble byte-preserved full Stage116 text, source-grade apparatus and integrity manifest
+        run: python tools/tahdhib/build_stage116_cumulative.py
+      - name: Verify exact printed source row sequence, photo hashes and inherited 1090-note corpus
+        run: python tools/tahdhib/check_stage116_release.py
+      - name: Commit four bounded photographic source-table excerpts (not full PDFs)
+        env:
+          PUBLISH_BRANCH: research/tahdhib-stage116-print-source-20261112
+        run: |
+          test "$GITHUB_REF" = "refs/heads/$PUBLISH_BRANCH"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          TARGET=texts/al-taftazani/tahdhib-al-mantiq/edition
+          SCRATCH=$(mktemp -d)
+          cp -a "$TARGET/source-table-excerpts" "$SCRATCH/excerpts"
+          cp "$TARGET/batches/hawashi-all-sections-cumulative-stage116.md" "$SCRATCH/full.md"
+          cp "$TARGET/STAGE116_CUMULATIVE_FILE_INTEGRITY.json" "$SCRATCH/integrity.json"
+          # Rebase only these generated outputs onto the actual newest branch.
+          # Never force-push or overwrite newer human-edited text, reader or QA.
+          git fetch origin "$PUBLISH_BRANCH"
+          git reset --hard "origin/$PUBLISH_BRANCH"
+          cp -a "$SCRATCH/excerpts" "$TARGET/source-table-excerpts"
+          cp "$SCRATCH/full.md" "$TARGET/batches/hawashi-all-sections-cumulative-stage116.md"
+          cp "$SCRATCH/integrity.json" "$TARGET/STAGE116_CUMULATIVE_FILE_INTEGRITY.json"
+          git add "$TARGET/source-table-excerpts/" "$TARGET/batches/hawashi-all-sections-cumulative-stage116.md" "$TARGET/STAGE116_CUMULATIVE_FILE_INTEGRITY.json"
+          if ! git diff --cached --quiet; then
+            git commit -m 'Synchronize immutable full Stage116 corpus and bounded photographed table evidence'
+            git push origin "HEAD:refs/heads/$PUBLISH_BRANCH"
+          fi
+      - name: Upload complete cumulative text and byte integrity manifest
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tahdhib-stage116-cumulative-complete-release
+          path: |
+            texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage116.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage114.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-effective-stage114.json
+            texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes.html
+            texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE116_*
+            texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_STAGE114.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_STAGE115.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/Tahdhib_Stage115_*
+            texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts/*
+            tools/tahdhib/stage116_recover_print_scans.py
+            tools/tahdhib/build_stage116_cumulative.py
+            tools/tahdhib/check_stage116_release.py
+          if-no-files-found: warn
+          retention-days: 90
+      - name: Upload scan candidates and page-offset manifest
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tahdhib-stage116-printed-page-candidates
+          path: tahdhib116-photo-audit/
+          if-no-files-found: warn
+          retention-days: 30
