@@ -1,0 +1,41 @@
+name: Tahdhib Stage123 historical note audit and Q258 photo erratum
+on:
+  workflow_dispatch:
+  push:
+    branches: ['research/tahdhib-stage123-english-audit-photo-errata-20261113']
+    paths:
+      - '.github/workflows/tahdhib-stage123-history-audit.yml'
+      - 'tools/tahdhib/check_stage123_historical_priority.py'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE123_*'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE121_SOURCE_READER.html'
+permissions:
+  contents: read
+jobs:
+  verify-public-branch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 17
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify thirteen-note source audit, R02C01 photo correction and master SHA256
+        run: python tools/tahdhib/check_stage123_historical_priority.py
+      - name: Retest historical logical-core invariants
+        run: |
+          python -m pip install PyYAML==6.0.2
+          python tools/tahdhib/run_ci_contract.py logical-core
+      - name: Save public scholarly audit evidence for recovery
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tahdhib-stage123-public-audit-evidence
+          path: |
+            texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE123_*
+            texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_STAGE122.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE121_SOURCE_READER.html
+            tools/tahdhib/check_stage123_historical_priority.py
+          if-no-files-found: warn
+          retention-days: 90
