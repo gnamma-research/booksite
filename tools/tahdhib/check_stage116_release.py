@@ -14,6 +14,9 @@ assert q["connected_source_order"]==expected_connected,(q["connected_source_orde
 assert q["disjunctive_source_order"]==expected_disj
 assert set(q["sourceExampleOmissionsWithinConnected"])=={"C/C","K/K","D/D"}
 assert len(expected_connected)+len(expected_disj)==15
+assert q["arabicExampleSentencesFullyTranscribed"]==2
+assert q["arabicExampleSentencesPending"]==10
+assert (P/"STAGE116_Q309_TWO_EXAMPLES_PHOTO_TRANSLATED.md").is_file()
 m=a["tables"]["Q300"]
 s="".join(m["printed_status_codes"])
 assert len(s)==32
