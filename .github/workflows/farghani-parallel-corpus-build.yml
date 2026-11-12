@@ -1,0 +1,82 @@
+name: Farghani XIX recover full introductory Arabic and build parallel reader
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'tools/farghani/build_intro_parallel.py'
+      - '.github/workflows/farghani-parallel-corpus-build.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: farghani-intro-digital-source-copytext
+  cancel-in-progress: false
+jobs:
+  build-authorial-digital-copy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --quiet requests beautifulsoup4
+      - name: Fetch and authenticate B2007 digitized Arabic pp18-145
+        run: |
+          python -m py_compile tools/farghani/build_intro_parallel.py
+          python tools/farghani/build_intro_parallel.py
+      - name: Validate Arabic page count, source record grades and bilingual HTML
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          from bs4 import BeautifulSoup
+          root=pathlib.Path('texts/al-farghani/muntaha-al-madarik')
+          src=json.loads((root/'data/intro-arabic-b2007-digital.json').read_text())
+          report=json.loads((root/'editorial/INTRO_SOURCE_AUDIT_019.json').read_text())
+          soup=BeautifulSoup((root/'parallel-introduction.html').read_text(), 'html.parser')
+          pages=src['pages']
+          assert len(pages)==128 and [p['page'] for p in pages]==list(range(18,146))
+          assert len(soup.select('main#pr-reading > section.pr-page'))==128
+          assert len(soup.select('section.pr-page .pr-ar'))==128
+          assert len(soup.select('section.pr-page .pr-en'))==128
+          assert all(p['reading_chars']>=300 and p['url'].endswith(f"/{p['page']}?lang=ar") for p in pages)
+          assert report['selected_critical_records']==559
+          assert all(soup.select_one(f'#p{n}') for n in range(18,146))
+          print('OK: 128 digitized Arabic source pages + 128 English pages and 559 graded selected records')
+          print('Digital source excerpt matches:',report['exact_normalized_source_excerpt_matches'])
+          print('Possible editorial-note risks:',report['pages_with_possible_unseparated_notes'])
+          PY
+          python tests/farghani/verify_reader.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: farghani-introduction-source-capture-xix
+          path: |
+            texts/al-farghani/muntaha-al-madarik/data/intro-arabic-b2007-digital.json
+            texts/al-farghani/muntaha-al-madarik/editorial/INTRO_SOURCE_AUDIT_019.json
+            texts/al-farghani/muntaha-al-madarik/parallel-introduction.html
+          if-no-files-found: ignore
+          retention-days: 14
+      - name: Publish source-labelled working corpus and reader to master
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add texts/al-farghani/muntaha-al-madarik/data/intro-arabic-b2007-digital.json \
+                  texts/al-farghani/muntaha-al-madarik/editorial/INTRO_SOURCE_AUDIT_019.json \
+                  texts/al-farghani/muntaha-al-madarik/editorial/INTRO_ARABIC_DIGITAL_18_145_019.md \
+                  texts/al-farghani/muntaha-al-madarik/parallel-introduction.html
+          if git diff --cached --quiet; then
+            echo "Source corpus unchanged"
+            exit 0
+          fi
+          git commit -m "Farghani XIX: restore 128-page digital Arabic working text and page-aligned English reader"
+          for attempt in 1 2 3 4 5; do
+            git fetch --no-tags origin master
+            git rebase origin/master
+            if git push origin HEAD:master; then exit 0; fi
+            sleep 3
+          done
+          echo "Could not publish: source artifact retained for recovery"
+          exit 1
