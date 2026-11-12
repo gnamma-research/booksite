@@ -98,3 +98,17 @@ body[data-language] .pr-ar,body[data-language] .pr-en{display:block}
 .pr-part{font-size:8.5pt;margin:0 0 10pt}
 .pr-apparatus{display:none!important}
 }
+
+/* The complete bilingual text remains the primary visual surface.
+   Modern apparatus is only available in Study & sources, never inline. */
+.pr-apparatus{display:none!important}
+.pr-tools #pr-notes-toggle{display:none!important}
+.pr-header nav a[href="critical-edition.html"],.pr-header nav a[href="handoffs.html"]{display:none}
+#pr-study-open{border:1px solid var(--line);background:var(--panel)}
+.pr-study-controls select{width:100%;max-width:360px;background:var(--panel);color:var(--ink);border:1px solid var(--line);padding:9px 12px;border-radius:8px;margin:10px 0}
+.pr-study-help,.pr-study-links{color:var(--muted);font:13px/1.7 system-ui,sans-serif}
+.pr-study-evidence{line-height:1.7;overflow-wrap:anywhere}
+.pr-study-evidence h3{font:600 15px/1.5 system-ui,sans-serif}
+.pr-study-evidence a,.pr-study-links a{color:var(--accent)}
+.pr-study-evidence .pr-apparatus-body{font:13px/1.8 system-ui,sans-serif;border-inline-start:2px solid var(--line);padding:10px 13px;background:var(--wash)}
+@media print{#pr-study-open{display:none!important}}
