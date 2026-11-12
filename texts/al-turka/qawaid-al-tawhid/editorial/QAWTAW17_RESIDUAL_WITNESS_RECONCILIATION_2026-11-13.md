@@ -1,6 +1,6 @@
 # Qawtaw17 — 57 historical flags reconciled with the printed comparator
 
-**Date:** 13 November 2026. **Scope:** editorial triage of previously registered readings, not a new manuscript collation, newly recovered folio, independent specialist certification or change to the 171-unit Arabic–English corpus.
+**Date:** 13 November 2026. **Scope:** historical Qawtaw7-stage snapshot only. **Correction, same date:** Qawtaw8–10 adjudicated the exact same fourteen cases and settled twelve more working readings, leaving only SH-002 and QT-059 as current source-critical exceptions. See the [authoritative Qawtaw18 status](QAWTAW18_CURRENT_CRITICAL_DISPOSITION_2026-11-13.md). No new medieval witness has been acquired.
 
 ## Finding
 
@@ -13,11 +13,11 @@ The [Qawtaw5 historical review register](../qa/qawtaw5-unresolved-register.json)
 | Partially resolved | 10 | Some printed variants or readings supported, but question remains incompletely established |
 | Unresolved after comparison | 3 | No sufficient independent source decision |
 | Deferred reported ancestral lacuna | 1 | No missing medieval words supplied |
-| **Total** | **57** | **14 not completely closed by the Qawtaw7 source grade** |
+| **Total at Qawtaw7 stage** | **57** | **14 then still partly open; twelve of those were subsequently settled by Qawtaw8–10** |
 
-**Reconciliation with Qawtaw16:** The fourteen *specially adjudicated cases* in [Qawtaw10](../qa/qawtaw10-final-status.json) are **not the same set** as the fourteen *remaining partial/unresolved review groups* here; the numerical coincidence must not be misrepresented. SH-002 and QT-059 are the two primary edition-critical exceptions highlighted in Qawtaw16, but smaller unsettled readings remain in the apparatus. Qawtaw16 machine-checkable publication acceptance remains a **source-scoped working reading edition**, not manuscript-collated certification. Its [current five-PDF acceptance](../qa/qawtaw16-final-acceptance.json) was republished with matching PDF hashes on 13 November.
+**Reconciliation with Qawtaw16:** **CORRECTION:** The fourteen *specially adjudicated cases* in [Qawtaw10](../qa/qawtaw10-final-status.json) are **exactly the same set** as the fourteen *partial/unresolved groups* in Qawtaw7. An earlier text on this page wrongly asserted otherwise. Qawtaw10 settled twelve as working readings, leaving **SH-002 and QT-059** source-critical. See the [55/57 current register](../qa/qawtaw18-current-dispositions.json). SH-002 and QT-059 are the two primary edition-critical exceptions highlighted in Qawtaw16, but smaller unsettled readings remain in the apparatus. Qawtaw16 machine-checkable publication acceptance remains a **source-scoped working reading edition**, not manuscript-collated certification. Its [current five-PDF acceptance](../qa/qawtaw16-final-acceptance.json) was republished with matching PDF hashes on 13 November.
 
-## Fourteen residual groups in the historical witness comparison
+## Fourteen groups formerly residual at the Qawtaw7 comparison stage
 
 | Locus | Status | Priority / issue | H2014 printed locations | Evidence-based disposition |
 |---|---|---|---|---|
@@ -39,11 +39,11 @@ The [Qawtaw5 historical review register](../qa/qawtaw5-unresolved-register.json)
 ## Editing instructions for the next source pass
 
 1. **Do not change the preferred Arabic or English solely to smooth syntax.** SH-002 must preserve the witnessed `ببطلان`; an attractive `بحقيّة` does not become a variant until an actual independent page or apparatus records it. QT-059 must continue to distinguish the grandfather's original matn and the grandson's explanation.
-2. **Prioritize the evidence-bearing loci:** SH-002 (polarity); QT-059 (reported original loss); SH-011 (logical negation); QT-061 and SH-061-F (double participle / syntactic logic). The remaining items are lower priority, not automatically trivial.
+2. **Prioritize the evidence-bearing loci:** SH-002 (polarity); QT-059 (reported original loss); SH-011 (logical negation); QT-061 and SH-061-F (double participle / syntactic logic). The remaining items were subsequently adjudicated as working readings by Qawtaw8–10, not newly rediscovered witnesses. The present table is retained as a historical comparison snapshot.
 3. **Use exact source layers.** Compare H2014's *medieval quotation* before its modern explanation. Record volume/printed-page/actual photographed leaf, source attribution, at least forty Arabic words of context and photo hash, then classify as original-author quotation, commentator's wording, or modern editor's apparatus.
 4. **Keep a clean reader.** Retain unencumbered, readable Arabic/English continuous modes; move witness arguments and speculative alternatives to the scholarly reference PDF, comparison view, or optional source notes. Do not embed this dossier in the running matn.
 5. **Do not count modern edited witnesses as independent medieval manuscripts.** H2014's positive support can justify a *preferred working reading*; it does not supply a stemma, missing original text, or independent human sentence-by-sentence translation certification.
-6. **Independent targets remain:** Hādīzādeh, *Nuṣūṣ wa-Rasāʾil…*, vol. IV, pp. 37–72 (original matn); the early 1315/1316 AH printed *Tamhīd* objects (compare actual title/colophon); and the Bijapur 128/2 manuscript folios (grandson's commentary). Nekounam printed pp. 47–55 and 257–272 may provide further *modern editorial* comparison only when actually inspected.
+6. **Independent targets remain:** Hādīzādeh, *Nuṣūṣ wa-Rasāʾil…*, vol. IV, pp. 37–73 (original matn); the early 1315/1316 AH printed *Tamhīd* objects (compare actual title/colophon); and the Bijapur 128/2 manuscript folios (grandson's commentary). Nekounam printed pp. 47–55 and 257–272 may provide further *modern editorial* comparison only when actually inspected.
 
 ## Current acquisition limitations
 
