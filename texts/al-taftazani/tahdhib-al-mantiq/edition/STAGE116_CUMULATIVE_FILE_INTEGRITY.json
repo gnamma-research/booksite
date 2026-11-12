@@ -13,7 +13,7 @@
   "appendixByteCount": 35925,
   "outputPath": "texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage116.md",
   "outputByteCount": 1167765,
-  "outputSHA256": "d2ae9682d6d0b35fb0fe1297bc711bdbe5f83b2e15577c0bf7baffecde060cd7",
+  "outputSHA256": "ceb450f1c0bd47c7145a76938e93f678390c3ae7717d58f8090ad1ea951dff7e",
   "prefixPreservedByteForByte": true,
   "appended": [
     {
@@ -26,7 +26,7 @@
       "label": "Stage116 photographed originals and limits",
       "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE116_PRINTED_TABLE_PHOTOGRAPHIC_AUDIT.md",
       "originalBytes": 10438,
-      "originalSHA256": "760a849ff0ed3f5c760c490f629770c6a4d1e640dc7c89f3eb2a36cc3748cde5"
+      "originalSHA256": "b590793a8a2b8e81bb8efdb92f27b195d0f865385e5442f0a852588172d88658"
     },
     {
       "label": "Stage116 five-locus Arabic to English checks",
