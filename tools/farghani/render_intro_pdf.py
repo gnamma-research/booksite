@@ -25,6 +25,35 @@ with sync_playwright() as pw:
            display_header_footer=False)
   browser.close()
 assert OUT.stat().st_size>150000
+# Embed a functional PDF navigation outline, using actual rendered page positions.
+toc_terms=[
+  ("Editorial introduction and source grade","GNAMMA RESEARCH"),
+  ("Foundation I · Essence and divine names","First foundation"),
+  ("Foundation II · Spirits","Second foundation"),
+  ("Foundation III · Cosmos and Adam","Third foundation"),
+  ("Foundation IV · Human reality and return","Fourth foundation"),
+  ("Concluding preface","Concluding preface"),
+  ("Appendix A · 1876 printed comparisons","Appendix A"),
+  ("Appendix B · Contextual glossary","Appendix B"),
+  ("Appendix C · Editorial limits","Appendix C")
+]
+pdf=fitz.open(OUT)
+nav=[]
+for label,marker in toc_terms:
+ matches=[n+1 for n,page in enumerate(pdf) if marker.lower() in page.get_text().lower()]
+ if not matches: raise AssertionError(f"Cannot locate PDF navigation entry {label}")
+ target=matches[-1] if label=="Concluding preface" else matches[0]
+ nav.append([1,label,target])
+pdf.set_toc(nav)
+metadata=pdf.metadata
+metadata.update(title="Farghani - Muntaha al-madarik - Provisional Introductory Scholarly Edition",
+                author="Sa'id al-Din al-Farghani (source); GNAMMA (working translation)",
+                subject="Introduction only; Arabic digital and English working copy with print-comparison apparatus and contextual glossary")
+pdf.set_metadata(metadata)
+tmp=OUT.with_name("tmp-farghani-019.pdf")
+pdf.save(tmp,garbage=3,deflate=True)
+pdf.close()
+tmp.replace(OUT)
 doc=fitz.open(OUT)
 count=len(doc)
 if not (128<=count<=550):
@@ -37,7 +66,7 @@ for n in sorted(set(sample)):
   pix.save(SHOTS/f"pdf-page-{n+1:03d}.png")
 result={"type":"gnamma-farghani-provisional-introduction-scholar-pdf-qa",
  "pdf_path":str(OUT.relative_to(ROOT)),"size_bytes":OUT.stat().st_size,
- "total_pdf_pages":count,"intro_b2007_page_labels":128,
+ "total_pdf_pages":count,"navigation_bookmarks":len(doc.get_toc()),"intro_b2007_page_labels":128,
  "print_1876_bounded_loci_appendix":15,
  "glossary_entries":66,
  "first_page_text_sample":first[:650],
