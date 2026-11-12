@@ -2,7 +2,7 @@
   "date": "2026-11-12",
   "edition_source": "1.5.0-integrated-first-pass",
   "working_edition": "1.6.0-scholarship-pass",
-  "overall_percent": 33,
+  "overall_percent": 45,
   "rule": "Percentages are weighted accomplishment of explicit deliverables, not measures of scholarly truth. Each evidence status must be shown; partial sources never get complete status.",
   "stages": [
     {
@@ -55,11 +55,16 @@
       "name": "Benchmark narrative chapters",
       "target": "Recompose Chapters 08,11,13,16,19 and 44 from first principles with sources, coherent one-piece sharḥ",
       "weight": 16,
-      "percent": 0,
-      "status": "not-started",
-      "outputs": [],
+      "percent": 75,
+      "status": "six-unified-benchmark-chapters-staged; canonical-merge-and-deep-fact-check-pending",
+      "outputs": [
+        "editorial/rewrite-20261112/benchmark-1_6-08-11.json",
+        "editorial/rewrite-20261112/benchmark-1_6-13-16.json",
+        "editorial/rewrite-20261112/benchmark-1_6-19-44.json"
+      ],
       "remaining": [
-        "Recompose Chapters 08,11,13,16,19 and 44 from first principles with sources, coherent one-piece sharḥ"
+        "Integrate and compare all six against original cited source notes",
+        "Review any displaced historical claims during consolidation"
       ]
     },
     {
@@ -115,5 +120,5 @@
     "Edition 1.5 remains canonical until 1.6 text passes checks.",
     "No work runs asynchronously. This ledger records only current committed work."
   ],
-  "latest": "C — 50 encounters indexed (30 sources checked, 20 provisional); 17 deep analyses covering 18 index entries"
+  "latest": "D — six benchmark matns and coherent shurūḥ drafted in three work files"
 }
