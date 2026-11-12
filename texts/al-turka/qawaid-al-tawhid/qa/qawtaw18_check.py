@@ -16,7 +16,7 @@ def load(path):
 
 def assigned(path):
     s = (ROOT / path).read_text(encoding="utf8")
-    m = re.search(r"window\\.GNAMMA_[A-Z0-9_]+\\s*=\\s*", s)
+    m = re.search(r"window\.GNAMMA_[A-Z0-9_]+\s*=\s*", s)
     assert m, path
     val, _ = json.JSONDecoder().raw_decode(s[m.end():].lstrip())
     return val
