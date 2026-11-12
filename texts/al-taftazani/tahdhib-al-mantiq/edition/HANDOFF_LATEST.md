@@ -16,6 +16,12 @@
 - This makes a **full offline bilingual Arabic–English research sidecar** possible. The original public H corpus had full digital Arabic inside only 79 note records. The new complete Arabic belongs to the **rights-sensitive private offline archive** and is NOT re-published wholesale in this public repository; modern al-Karmī and other edited quotations require an explicit separate permissions/attribution review. User download: `Tahdhib_Stage122_Full_Cumulative_Recovery.zip` delivered within this conversation; public GitHub stores the source integrity and correction data, not the full private source cache.
 - **24** source-to-English length-ratio diagnostic candidates (Arabic words >=40 and English/Arabic ratio below 0.5) identified **after excluding the 57 modern reference-only units**. Ratios are triage, not proof of mistranslation. Direct source comparisons confirm substantial abridgement in e.g. `HWN-048` and `HWN-DALALA-084`; the user recovery ZIP includes expanded working two-speaker English draft repairs and a separately attributed modern paraphrase of `HWN-DALALA-078`. No historic English field is silently replaced.
 
+## Six additional fuller historical-note translations and source hash gap register
+
+[Six expanded working historical gloss translations](STAGE122_SIX_EXPANDED_HISTORICAL_NOTES.md) cover the entire recovered historical note argument at `HWN-DALALA-067`, `HWN-CONVERSION-008`, `HWN-CONVERSION-021`, `HWN-CONTRAPOSITION-019`, `HWN-MAFAHIM-011` and `HWN-INTRO-081`, with original speaker attribution retained. Their six note digests match the old census; [per-note provenance](STAGE122_SIX_NOTES_PROVENANCE.json) confirms the original IDs and old English lengths. None was independently photo/manuscript-certified and none replaces the canonical historical English.
+
+The [eleven-source-hash discrepancy ledger](STAGE122_ELEVEN_SOURCE_HASH_GAP_LEDGER.json) preserves expected/recovered digests and source locators. Five units cross printed page boundaries; six do not. The Stage114 embedded Arabic snippet for `HWN-037` omits two speaker labels that are present in the newly recovered source; this observation is a reason to audit attribution, not proof of the cause of its census SHA mismatch.
+
 ## Q258 actual printed errors: apply correction overlay, preserve earlier snapshots
 
 [Stage122 source-photo correction register](STAGE122_Q258_SOURCE_PHOTO_ERRATA.json) fixes:
