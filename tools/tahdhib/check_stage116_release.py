@@ -9,7 +9,7 @@ def sha(b):return sha256(b).hexdigest()
 a=j("STAGE116_EVIDENCE_AND_GAP_LEDGER.json")
 q=a["tables"]["Q309"]
 expected_connected=["C/C","C/D","C/K","K/C","D/C","K/K","K/D","D/K","D/D"]
-expected_disj=["C/C","C/D","C/K","K/K","D/K","D/D"]
+expected_disj=["C/C","C/K","C/D","K/K","D/K","D/D"]
 assert q["connected_source_order"]==expected_connected,(q["connected_source_order"],expected_connected)
 assert q["disjunctive_source_order"]==expected_disj
 assert set(q["sourceExampleOmissionsWithinConnected"])=={"C/C","K/K","D/D"}
