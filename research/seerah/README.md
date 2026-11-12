@@ -1,8 +1,8 @@
 # Sīrah and the Making of Islamic Civilization · Gnamma Research
 
-Public URL: `/research/seerah/` · source edition 1.4; retained edition 1.4.1; retained integrated edition 1.5.0; current scholarly research edition 1.6.0 · 46 matns + 46 shurūḥ.
+Public URL: `/research/seerah/` · source edition 1.4; retained edition 1.4.1; retained integrated edition 1.5.0; current scholarly research edition 1.6.2 · 46 matns + 46 shurūḥ.
 
-The Research landing, reader, visual atlas and dossiers are four separate presentations of one work. **The canonical content is `data/chapters.json` and `data/dossiers.json`**, based on the preserved `editorial/source-edition-1.4.md`; the current fully synchronized manuscript is `editorial/current-edition-1.6.1-prose-reviewed.md`. This is a working *research edition*, not a completed critical collation of original Sīrah manuscripts.
+The Research landing, reader, visual atlas and dossiers are four separate presentations of one work. **The canonical content is `data/chapters.json` and `data/dossiers.json`**, based on the preserved `editorial/source-edition-1.4.md`; the current fully synchronized manuscript is `editorial/current-edition-1.6.2-targeted-fidelity.md`. This is a working *research edition*, not a completed critical collation of original Sīrah manuscripts.
 
 ## Reader contract
 
@@ -61,3 +61,7 @@ The current 46-chapter reader, canonical JSON and [versioned full manuscript](ed
 Edition 1.6.1 supersedes the earlier 1.6.0 research prose. A targeted review rewrote all 46 narrative matns and revised 41 accompanying shurūḥ to put actors, source sequence, religious purpose and historical events before compressed metaphysical lessons. The previous edition is preserved as `editorial/current-edition-1.6.0-scholarly.md`, with matching archived chapter/reader snapshots. In the subsequent source audit the construction of Nūḥ's Ark was explicitly restored **before** the flood (Qurʾān 11:37–42), and the Ādam narrative again includes Iblīs's refusal. Chapter 44 now cites and analyzes the [1894 Privy Council judgment and 1913/1930 statute sequence](editorial/WAQF_PRIVY_COUNCIL_SOURCE_AUDIT_20261112.md) using readable primary legal texts.
 
 [Full current manuscript](editorial/current-edition-1.6.1-prose-reviewed.md) · [prose and principial fidelity audit](editorial/PROSE_AND_PRINCIPLE_AUDIT_20261112.md) · [updated 138-item claim–witness ledger](editorial/CLAIM_WITNESS_LEDGER_1_6_1_20261112.json). Neither literary coherence nor these specific source checks constitutes a full critical edition. Additional Arabic and historical-primary witness collation is open.
+
+## Current targeted revision · 1.6.2 · 13 November 2026
+
+Twelve narrative matns and five scholarly commentaries were corrected or recomposed for fidelity and clarity. The Negus's original protection of emigrants is distinguished from Muslim reports of his eventual faith; Deoband's 1866/67 founding date is treated as unsettled; Books VI–VII identify specific historical actors and evidence. Repeated prose was reduced while 46 chapter pairs were retained. The earlier 1.6.1 JSON, reader and manuscript remain preserved. [Current manuscript](editorial/current-edition-1.6.2-targeted-fidelity.md) · [Targeted audit](editorial/TARGETED_FIDELITY_AUDIT_1_6_2_20261113.md). This does not certify full primary-source collation or rendered-browser QA.
