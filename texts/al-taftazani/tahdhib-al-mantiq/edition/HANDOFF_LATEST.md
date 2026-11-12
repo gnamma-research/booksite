@@ -1,53 +1,26 @@
-# Tahdhīb Stage114 — LIVE PUBLICATION HANDOFF
+# Tahdhīb Stage115 — cumulative table-recovery research handoff
 
-**Source of truth:** `hawashi-effective-stage114.json` and `hawashi-numbered-notes.html` in `texts/al-taftazani/tahdhib-al-mantiq/edition/`. The full 14-section reader is published by GitHub only after merging the Stage114 publication pull request. The former Stage113 reader is preserved at `hawashi-numbered-notes-stage113-archive.html`.
+**12 November 2026 · Source-based editorial apparatus, not a new translation of numbered source units.**
 
-**Totals:** 1,090 numbered positions across 14 historical local numbering series. 1,029 first-pass English renderings, four prose renderings missing source tables, and 57 reference-only modern additions. 79 inherited full digitally searchable Arabic notes and 1,011 without complete source Arabic in this export. No independently photo/manuscript-collated H printed pages or Y source positions. No full classical modal proof certificates added.
+## State inheritance and certified counts
+The complete Stage114 corpus remains **untouched** and is **the canonical historical H translation master**, not superseded by new retranslation: 1,090 stable numbered positions, 14 historical locally numbered sections, 1,029 first-pass English renderings, 4 prose-rendered entries with original tables absent, 57 later editorial reference-only entries. Terminal substantive gloss: **Sciences86/Q395**. Canonical Stage114 Corpus SHA256: `63d1f2b467b351ddd207752908aa7e25f44b4798fda7bd517f563df654122ab5` (original delivery). Existing digital full Arabic count: 79 notes; the rest have locators or partial Arabic, **not** photographic full transcription.
 
-**Navigation:** [Full 14-section reader](hawashi-numbered-notes.html) · [Cumulative working Markdown](batches/hawashi-all-sections-cumulative-stage114.md) · [Stage114 publication status](progress-stage114.html) · [Previous Stage113 reader](hawashi-numbered-notes-stage113-archive.html).
+The **Stage114 publication PR [#298](https://github.com/gnamma-research/booksite/pull/298)** was merged on 11 November 2026 at commit `5ffaac720aa00495aeecd0889c54c491014209fb`. That supersedes the then-current candidate/prepublication language inside the [immutable Stage114 handoff](HANDOFF_STAGE114.md). Public Pages deployment is a separate verification gate. No historical H whole printed page, Y manuscript position or item in the separate 46-case modal proof programme was newly certified by Stage115.
 
----
+## What Stage115 actually adds
+1. [Dedicated editorial reader](Tahdhib_Stage115_Apparatus_Reader.html) — a **prose-derived** 8×4 classification: 9 invalid, 7 valid recognised, 16 valid but unrecognised; printed Q300 45-cell graphic itself **not** retrieved.
+2. [Source-based scholarly audit](Tahdhib_Stage115_Source_Based_Table_Audit.md) — detailed 32-case matrix and edition-conscious caveats, 9+6=15 conditional type signatures for Q308–310, and explicit open source-image gaps.
+3. [Machine-readable audit](Tahdhib_Stage115_Editorial_Table_Reconstructions.json) — four modal restrictions, eight simple forms, all thirty-two status codes, provenance, all fifteen conditional type codes and unresolved printed cells.
 
-# Tahdhīb Stage114 — full cumulative handoff
+**New source-quality achievement:** the *outcomes* of all 32 Q300 intersections can be inferred from surrounding prose; the fifteen Q309 conditional *types* can also be reconstructed. **Neither is a transcription of missing printed table cells,** nor does it replace the still necessary photographic comparison. Q258's 7×7=49 structural shell is identified, its individual status cells still unknown. Q294's intermodal relation table remains unfilled; Q387's apparent illustration remains unverified.
 
-Date:11 November2026. **Priority implemented: end-to-end English first pass; no UI redesign or manuscript-critical expansion.**
+**Q259 textual crux:** the available Arabic states 450 five-element base forms times 120 orderings and also states a total of 5,400. Since 450×120=54,000, record a mathematical inconsistency; **do not silently amend** the historical source. The other counts presuppose historical enumeration practices and must be evaluated separately from C(7,k) distinct-subset calculations.
 
-## Delivered state
+## Recovery and publication paths
+- [Canonical 1,090-record H reader](hawashi-numbered-notes.html) · [Whole Stage114 working translation Markdown](batches/hawashi-all-sections-cumulative-stage114.md) · [Effective structured corpus](hawashi-effective-stage114.json)
+- [Preserved Stage113 reader](hawashi-numbered-notes-stage113-archive.html) · [Immutable Stage113 handoff](HANDOFF_STAGE113.md) · [Immutable Stage114 handoff](HANDOFF_STAGE114.md)
+- [H first-pass progress ledger](progress-stage114.html) · [Stage115 editorial apparatus](Tahdhib_Stage115_Apparatus_Reader.html)
+- A **complete self-contained downloadable Stage115 recovery ZIP** has also been assembled in the current conversation, containing the original Stage114 release ZIP unchanged plus the Stage115 research apparatus; it is not automatically present in GitHub's text-only files.
 
-Read Complete_First_Pass.md, Offline_Reader.html, Progress_and_Manifest.json and Corpus.json. All1090 numbered source positions in14 historical sections are represented. There are1029 English first-pass renderings,4 visible-prose renderings with missing tables, and57 separately identified modern editorial references.742 positions were newly processed after Stage113;57 prior partial positions were revisited. The numbered English fields total105,924 words; new/replacement fields total72,330. These are calculated whitespace counts, not page counts.
-
-This is a complete *end-to-end draft assembly*, not a certified unabridged translation of every item in the modern printed volume. Some arguments are compressed first-pass renderings; full literal alignment and proofreading remain necessary. The57 reference-only modern insertions are not claimed translated. The four table omissions remain real gaps. Replacing a prior partial with a reference does not count as translating it.
-
-## Actual substantive end and numbering
-
-H prose beginsQ127 and ends with Sciences note86/Q395. Q396 is blank/dot;Q397 contents heading;Q398–400 contents. The earlier assumption that new gloss prose continued throughQ400 was incorrect. Preserve14 independent local numbering systems; stable IDs are in Corpus.json. The full section census and allsource-hashes are in the manifest. Do not invent a single historical sequence1–1090.
-
-## Source preservation
-
-The complete public digital source cache was retrieved successfully in GitHub Actions run42959128971 (artifact13827754982) and mounted in this conversation as Tahdhib_Arabic_Source_Cache_127-400.zip. Arabic_Source_Cache_Manifest.json records all274 URLs, successful status and SHA256. The full raw cache is NOT redistributed in this delivery because it includes later editorial material; original URLs remain attached to every note. It is digital searchable text, not a photograph or independent manuscript.
-
-## Files and reproducibility
-
-Corpus.json contains the effective1090records, stableIDs, page links, English status, inherited metadata and source-unit hashes. Draft_Batches/translations contains allnewEnglish batch files;Draft_Batches/repairs contains all57revisions. Source_Census.json contains the section/localnote/page mapping and digitalArabic hashes without redistributing the full modern text. Immutable_Stage113_Records.json preserves all348baseline records for revision comparisons. The current draft can be regenerated from these records by assemble_from_records.py. SHA256SUMS.json authenticates delivered bytes, not translation correctness.
-
-## Publication status
-
-Stage113 is published in gnamma-research/booksite, PR292/commit8ce5c280addff3bb77afffb1dbacc6b52f460e4e. Stage114 has a complete GitHub publication candidate in branch `tahdhib-publish-stage114-20261111`, with the entire 1,090-note corpus embedded in `hawashi-numbered-notes.html` and reproduced in `batches/hawashi-all-sections-cumulative-stage114.md` plus `hawashi-effective-stage114.json`. This handoff records the publication candidate and should be updated with the actual merge commit only after CI passes. The reader is on the public GNAMMA website only after that merge and the site's deployment.
-
-## Source/author distinctions
-
-T=Taftāzānī original matn;Y=al-Yazdī principal commentary;H=the later mixed-author glosses translated here. Earlier mainY110positions/113blocks are already first-pass translated. No new Y manuscript collation has occurred. Modern al-Taqrīb, al-Karmī, Muṭahharī and similar insertions must not be silently presented as early glossator prose. Older signed commentary appearing after a modern entry is retained separately when identified. Existing unnumbered metadata is preserved but is not claimed an exhaustive census of every unnumbered insertion.
-
-## Exact remaining work, not another forward translation start
-
-There is **no unprocessed forward numbered historical section afterQ395** in this source census. Do not restart atConcepts36: it has now been processed through the end. Next work is:
-
-1. Retrieve the four missing tables for Definition19/Q258, Propositions97/Q294, Propositions121/its cited pages, Conditional40/Q309. The HTML provides no readable cells; do not invent them. Sciences29's diagram wording is also flagged if present in its note.
-2. Review the57modern reference-only entries in Reference_Only_and_Table_Gaps.json under an appropriate separate translation/permissions scope. They are not hidden historical gaps.
-3. Proofread source readings and expand compressed arguments into an unabridged clause-aligned translation where required. Retain all disputes and source corrections as apparatus, not silent normalisations.
-4. Import this full cumulative draft into the repo/reader and update whole-corpus first-pass progress separately from manuscript certification. Reuse the14sourceIDs and local sequences; do not duplicate the348baseline entries.
-5. Only then resume fullArabic alignment, photographic/manuscript collation and the separate46modalproof programme. Certification remains0wholeHpages and0independentYpositions; no modalproof count is increased.
-
-## Restart prompt
-
-Continue from the Tahdhīb Stage114 full first-pass delivery archive, not Stage113's obsolete next-note pointer. LoadCorpus.json/Progress_and_Manifest.json and thishandoff. All1090source-numbered positions,14sections,Q127–395are represented:1029Englishfirstpass,4missing-tableprosenotes,57moderneditorialreferences;742newpositions and57oldpartialsrevisited. TheforwarddraftreachesSciences86/Q395. ThewebsitecurrentlyremainsStage113untilthisartifactisactuallyimported. Preserve source-unit hashes, previous348records and allnewbatches; reviewexactexceptions, importthecumulativeEnglishdraft, anddonotclaimmanuscriptcertification.
+## Exact next restart point
+Do **not** restart Concepts36 or continue forward after H-SCIENCES-086/Q395 (no such historical numbered continuation in the source census). The next primary-source task is to obtain actual photographed **Q258, Q294, Q300, Q309 and Q387**, map print-PDF scan offsets, record page-image SHA256, compare each historical cell and then change affected grades if warranted. Subsequently perform unabridged clause-by-clause Arabic/English alignment and the separately tracked 46-case modal proof programme. Keep T (Taftāzānī), Y (al-Yazdī), H (mixed glossators) and modern editorial attributions distinct. **Source photographs and manuscript evidence remain a zero-certified class here.**
