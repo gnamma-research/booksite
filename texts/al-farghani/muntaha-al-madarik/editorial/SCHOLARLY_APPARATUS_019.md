@@ -32,7 +32,7 @@ Preserve the online digital text as diplomatic source evidence even where the 18
 ## What has and has not been checked
 
 All 128 online page numbers and Arabic/English parallel page labels are present; mechanically comparing 559 selected excerpts yielded 510 exact normalized matches and 49 flagged passages for deeper review. A normalized string match does not prove sentence-level translation quality or completeness.
-Modern editor’s footnotes are separated where unambiguous; uncertainty remains explicitly flagged on 15 pages in the source audit.
+Modern editor’s footnotes are separated from authorial running text on 39 pages. The 16 reviewed footer-note repairs and the cleared verse-number false positive are recorded in the audit. Automatic residual flags: 0. This does not certify a fully collated edition.
 
 ## Print and manuscript source locations
 
