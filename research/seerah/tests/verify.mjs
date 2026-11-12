@@ -15,6 +15,7 @@ const priorHTML=read('editorial/archive-1.6.0-pre-prose-audit-reader.html');
 const oldMan=read('editorial/current-edition-1.4.1.md');
 const oldArchive=read('editorial/archive-20261112-preintegrated-complete-manuscript-1.4.1.md');
 const html=read('read.html'),landing=read('index.html');
+const tables=read('tables-vi-vii.html');
 const atlas=read('atlas.html'),notes=read('dossiers.html');
 const dossiers=JSON.parse(read('data/dossiers.json'));
 const encounters=JSON.parse(read('editorial/encounters-1_6/index.json'));
@@ -62,6 +63,10 @@ assert.equal(claimLedger.entries.reduce((n,e)=>n+e.claims.length,0),138);
 
 assert.ok(html.includes('Research edition 1.6.2'));
 assert.ok(landing.includes('Research edition 1.6.2'));
+assert.ok(landing.includes('tables-vi-vii.html')&&html.includes('tables-vi-vii.html'));
+assert.equal((tables.match(/<tr><th scope="row">/g)||[]).length,13);
+assert.ok(tables.includes('id="vi"')&&tables.includes('id="vii"'));
+
 assert.ok(html.includes('editorial/current-edition-1.6.1-prose-reviewed.md'));
 assert.equal((html.match(/<article class="chapter"/g)||[]).length,46);
 assert.equal((html.match(/class="matn"/g)||[]).length,46);
