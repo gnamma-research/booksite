@@ -1,0 +1,52 @@
+{
+  "stage": 116,
+  "date": "2026-11-12",
+  "status": "full historical H English first-pass + appendices, not fully Arabic collated",
+  "numberedPositions": 1090,
+  "englishFirstPass": 1029,
+  "sourceTableGapsStillInCorpus": 4,
+  "modernReferenceOnly": 57,
+  "source": "Stage114 full original historical H markdown",
+  "canonicalSourcePath": "texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage114.md",
+  "canonicalSourceByteCount": 1131840,
+  "canonicalSourceSHA256": "98351ab39d78f8f796c528c516d04adfa032b0925172d1e40490909c6be288da",
+  "appendixByteCount": 35925,
+  "outputPath": "texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage116.md",
+  "outputByteCount": 1167765,
+  "outputSHA256": "d2ae9682d6d0b35fb0fe1297bc711bdbe5f83b2e15577c0bf7baffecde060cd7",
+  "prefixPreservedByteForByte": true,
+  "appended": [
+    {
+      "label": "Stage115 source-table reconstruction",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/Tahdhib_Stage115_Source_Based_Table_Audit.md",
+      "originalBytes": 7195,
+      "originalSHA256": "d1d5e19efdb2d7b657952b41c6c52a5188abdf580402be030080006880d39c1d"
+    },
+    {
+      "label": "Stage116 photographed originals and limits",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE116_PRINTED_TABLE_PHOTOGRAPHIC_AUDIT.md",
+      "originalBytes": 10438,
+      "originalSHA256": "760a849ff0ed3f5c760c490f629770c6a4d1e640dc7c89f3eb2a36cc3748cde5"
+    },
+    {
+      "label": "Stage116 five-locus Arabic to English checks",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE116_CLAUSE_ALIGNMENT.md",
+      "originalBytes": 4067,
+      "originalSHA256": "c7bd8104b78aceb4d033a05d0c4f3aacbf6c22aa88b10f3070f43223688be766"
+    },
+    {
+      "label": "Stage116 fourth-figure modal proof ledger",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE116_MODAL_PROOF_OBLIGATIONS.md",
+      "originalBytes": 6182,
+      "originalSHA256": "39c0b677dd65ce8e7920260078623285230cc0cb47c8c631a2f5bc2db77f196f"
+    },
+    {
+      "label": "Stage116 complete recovery handoff",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md",
+      "originalBytes": 7729,
+      "originalSHA256": "e116b85c392546f1388120649e55d0e7f92d295cd4991544458716216986a460"
+    }
+  ],
+  "independentManuscriptReadingCertified": false,
+  "newFullModal46ProofsCertified": 0
+}
