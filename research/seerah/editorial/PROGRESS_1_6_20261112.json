@@ -2,7 +2,7 @@
   "date": "2026-11-12",
   "edition_source": "1.5.0-integrated-first-pass",
   "working_edition": "1.6.0-scholarship-pass",
-  "overall_percent": 62,
+  "overall_percent": 71,
   "rule": "Percentages are weighted accomplishment of explicit deliverables, not measures of scholarly truth. Each evidence status must be shown; partial sources never get complete status.",
   "stages": [
     {
@@ -103,11 +103,14 @@
       "name": "Regional and modern explanatory cases",
       "target": "Verified named micro–macro cases for Books VI–VII, integrate into relevant shurūḥ",
       "weight": 10,
-      "percent": 0,
-      "status": "not-started",
-      "outputs": [],
+      "percent": 84,
+      "status": "one-sourced-named-case-per-chapter-34-to-46-staged; original-manuscripts-and-case-records-open",
+      "outputs": [
+        "editorial/REGIONAL_MICROHISTORIES_1_6_20261112.json"
+      ],
       "remaining": [
-        "Verified named micro–macro cases for Books VI–VII, integrate into relevant shurūḥ"
+        "Integrate cases into revised reader without duplication",
+        "Inspect named underlying court/land/manuscript records beyond published scholarly accounts"
       ]
     },
     {
@@ -127,5 +130,5 @@
     "Edition 1.5 remains canonical until 1.6 text passes checks.",
     "No work runs asynchronously. This ledger records only current committed work."
   ],
-  "latest": "F — 138-item claim provenance inventory committed; several difficult reports cross-checked"
+  "latest": "G — 13 named regional/modern cases with source and status, one per chapter 34–46"
 }
