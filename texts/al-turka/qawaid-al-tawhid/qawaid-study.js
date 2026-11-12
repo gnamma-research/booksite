@@ -56,6 +56,10 @@ function buildOccurrences(){
  }
 }
 function studyIcon(type){
+ const shared=window.GnammaBookmarkUI;
+ if(type==='bookmark'&&shared?.icon)return shared.icon();
+ if(type==='note'&&shared?.noteIcon)return shared.noteIcon();
+ if(type==='highlight'&&shared?.highlightIcon)return shared.highlightIcon();
  const icons={
  dictionary:'<path d="M5 4h14v16H6a3 3 0 0 1-1-5V4zM5 16h14M9 8h6M9 12h5"/>',
  index:'<path d="M8 5h12M8 12h12M8 19h12M3 5h1M3 12h1M3 19h1"/>',
@@ -89,11 +93,12 @@ function setup(){
   const bar=document.createElement('div');bar.className='gn-dock-personal';
   bar.innerHTML='<button id="dock-note-shortcut" type="button" class="gn-quick-icon" aria-label="Add personal note" title="My note">'+studyIcon('note')+'</button><button id="dock-bookmark-shortcut" type="button" class="gn-quick-icon" aria-label="Bookmark passage" title="Bookmark">'+studyIcon('bookmark')+'</button><button id="dock-subject-shortcut" type="button" class="gn-quick-icon" aria-label="Subjects and dictionary" title="Index">'+studyIcon('index')+'</button>';
   dock.append(bar);
-  $('#dock-note-shortcut').addEventListener('click',()=>{const id=currentQT(),b=document.createElement('button');b.dataset.note=id;document.body.append(b);b.click();b.remove()});
+  $('#dock-note-shortcut').addEventListener('click',()=>window.GnammaQawaidDesk?.open?.('notes'));
   $('#dock-bookmark-shortcut').addEventListener('click',()=>$('#save-button')?.click());
   $('#dock-subject-shortcut').addEventListener('click',()=>openPanel('subjects'));
  }
  const save=$('#save-button');if(save){save.innerHTML=studyIcon('bookmark');save.title='Bookmark this passage';}
+ const searchButton=$('#search-button');if(searchButton)searchButton.addEventListener('click',e=>{e.preventDefault();e.stopImmediatePropagation();panelClose();window.GnammaQawaidSearch?.open?.();},true);
  const originalIntro=$('.book-intro .help-copy');
  if(originalIntro)originalIntro.textContent='Read the Arabic and English together, or choose either language. Show or hide the commentary at any passage, and explore its linked terminology, source passages, and subject index.';
  const lede=$('.book-intro .lede');
@@ -140,18 +145,24 @@ function groupButton(title,id,icon,small=''){return '<button class="gn-menu-row"
 function openPanel(panel,param){
  if(panel==='menu'||panel==='study')return show('Reading desk',[
   groupButton('Contents','contents','contents','61 matn units, linked sharḥ'),
+  groupButton('Research Search','advanced','search','Exact words, patterns, proximity and bilingual concordance'),
+  groupButton('Reading modes','modes','reading','Reading, Focus, Minimal and Continuous'),
+  groupButton('Reading Desk','desk','bookmark','Bookmarks, exact quotations, highlights and notes'),
   groupButton('Dictionary','dictionary','dictionary','82 technical headwords with source passages'),
   groupButton('Subject index','subjects','index','Grouped themes and source locations'),
   groupButton('Primary sources','references','sources','Qurʾān, quoted philosophical works and cross-references'),
-  groupButton('Search terms & sources','search','search','Find technical terms and source-reference cards'),
+  groupButton('Search terms & sources','source-search','search','Find technical terms and primary-source cards'),
   groupButton('PDF editions','pdf','pdf','Reading, Study and Reference'),
    groupButton('Editorial & textual notes','apparatus-notes','sources','Source variants and editorial notes, outside the reading text'),
-  groupButton('My notes','notes','note','Private annotations'),
-  groupButton('Bookmarks','bookmarks','bookmark','Saved passages'),
+
   groupButton('Appearance','appearance','appearance','Themes and type sizes'),
   groupButton('Reading options','settings','reading','Languages, layers and apparatus'),
   groupButton('About this work','about','about','The authors, date and scope')
  ].join(''));
+ if(panel==='advanced'){panelClose();window.GnammaQawaidSearch?.open?.();return;}
+ if(panel==='desk'||panel==='notes'||panel==='bookmarks'){panelClose();window.GnammaQawaidDesk?.open?.(panel==='bookmarks'?'bookmarks':panel==='notes'?'notes':'all');return;}
+ if(panel==='modes')return modePanel();
+ if(panel==='source-search')return show('Search terms & sources','<input class="gn-study-search" id="gn-source-query" placeholder="Find a term, title or source…" type="search"><div id="gn-search-results"></div>');
  if(panel==='dictionary')return dictionaryPanel(param);
  if(panel==='subjects')return subjectsPanel(param);
  if(panel==='references')return referencePanel(param);
@@ -161,12 +172,16 @@ function openPanel(panel,param){
  if(panel==='settings')return settingsPanel();
  if(panel==='term')return termPanel(param);
  if(panel==='source')return sourcePanel(param);
- if(panel==='notes'||panel==='bookmarks'||panel==='contents'){
+ if(panel==='contents'){
   panelClose();const b=$('#location-button');if(panel==='contents')b?.click();else{
    const fake=document.createElement('button');fake.dataset.panel=panel;document.body.append(fake);fake.click();fake.remove();
   }return;
  }
- if(panel==='search'){return show('Search', '<input class="gn-study-search" id="gn-source-query" placeholder="Find a term, title or source…" type="search"><div id="gn-search-results"></div>')}
+ if(panel==='search'){panelClose();window.GnammaQawaidSearch?.open?.();return;}
+}
+function modePanel(){
+ const current=Number(document.body.dataset.focus||0),names=[['0','Reading','Original and commentary with full navigation'],['1','Focus','Simpler single-passage display'],['2','Minimal','Hide header and editorial apparatus'],['3','Continuous','All passages in one uninterrupted scroll']];
+ show('Reading modes','<p class="gn-help">The same four reading states as the established Gnamma focus control. Matn and Sharḥ remain independent.</p>'+names.map(([id,label,desc])=>'<button type="button" class="gn-menu-row" data-qaw-focus="'+id+'" aria-pressed="'+(current===Number(id))+'"><span><b>'+label+'</b><small>'+desc+'</small></span>'+studyIcon('back')+'</button>').join('')+'<p class="gn-help">Source notes remain outside the running text in all modes.</p>');
 }
 function editorialNotesPanel(){
  const id=currentQT(),u=byId.get(id)||matn[0],related=sharh.filter(c=>c.matnId===u.id);
@@ -209,6 +224,7 @@ function termPanel(id, expanded=false){
  const loc=occurrences.get(id)||[],shown=expanded?loc:loc.slice(0,18);
  const sourceKind=x=>x.id.startsWith('SH-INTRO')?'Tamhīd introduction':x.id.startsWith('SH-')?'Tamhīd sharḥ':'Qawāʿid matn';
  show(t.en,'<div class="gn-prose"><div class="gn-headword" lang="ar" dir="rtl">'+esc(t.ar)+'</div><small>'+esc(t.category)+'</small><p>'+esc(t.definition)+'</p>'+(t.aliases.length?'<p><strong>Also:</strong> '+esc(t.aliases.join(' · '))+'</p>':'')+'</div><h3 class="gn-subheading">Textual locations <small>('+loc.length+')</small></h3><div class="gn-locations">'+(loc.length?shown.map(x=>'<a href="'+unitURL(x.id)+'" data-study-goto="'+esc(x.id)+'"><b>'+esc(x.id)+'</b> · '+esc(x.title)+' <small>'+esc(sourceKind(x))+'</small></a>').join(''):'<p>No direct lexical match in the current reader. Browse the subject index for related topics.</p>')+'</div>'+(loc.length>18&&!expanded?'<button class="gn-more-locations" data-expand-term="'+esc(id)+'">Show all '+loc.length+' matched passages</button>':'')+'<div class="gn-menu-footer"><button data-open-study="dictionary">Dictionary</button><button data-open-study="subjects">Subject index</button></div>');
+ $('#gn-study-content')?.insertAdjacentHTML('beforeend','<button class="gn-menu-row" data-qaw-save-term="'+esc(id)+'">'+studyIcon('bookmark')+'<span><b>Save this dictionary entry</b></span></button>');
  window.GnammaQawaidHistorical?.attach?.(id);
 }
 function referencePanel(q=''){
@@ -219,6 +235,7 @@ function sourcePanel(id){
  const quote=r.quoteFrom?originalCitation(r):{arabic:r.arabic,english:r.english};
  const units=r.units||[],type=r.status?.replaceAll('-',' ');
  show(r.title,'<div class="gn-prose"><small>'+esc(r.source)+' · '+esc(type)+'</small>'+(quote.arabic?'<blockquote class="gn-source-ar" lang="ar" dir="rtl">'+esc(quote.arabic)+'</blockquote>':'')+(quote.english?(r.englishRole==='editorial-summary'?'<p class="gn-help"><strong>Editorial synopsis, not a complete translation:</strong> '+esc(quote.english)+'</p>':'<blockquote>'+esc(quote.english)+'</blockquote>'):'')+(r.note?'<p>'+esc(r.note)+'</p>':'')+(quote.warning?'<p>'+esc(quote.warning)+'</p>':'')+'<p><a href="'+esc(r.sourceUrl)+'" target="_blank" rel="noopener noreferrer">View cited source</a></p></div><h3 class="gn-subheading">Passages in this book</h3><div class="gn-locations">'+units.map(id=>'<a data-study-goto="'+esc(id)+'" href="'+unitURL(id)+'">'+esc(id)+' · '+esc(byId.get(id)?.section||byId.get(id)?.title||'Open passage')+'</a>').join('')+'</div><div class="gn-menu-footer"><button data-open-study="references">All sources</button><button data-open-study="pdf">PDF editions</button></div>');
+ $('#gn-study-content')?.insertAdjacentHTML('beforeend','<button class="gn-menu-row" data-qaw-save-source="'+esc(id)+'">'+studyIcon('bookmark')+'<span><b>Save this source reference</b></span></button>');
 }
 async function pdfPanel(){
  show('PDF editions','<p class="gn-help">Reading, Study, and Reference have separate contents and notes. Opening a PDF on iPhone may use the browser preview.</p><p>Looking up the published editions…</p>');
@@ -231,8 +248,11 @@ async function pdfPanel(){
  }catch{const x=$('#gn-study-content');if(x)x.innerHTML='<p class="gn-help">PDF editions are not yet available from the published site. You can read the complete Arabic and English in this browser.</p>';}
 }
 function clickDelegated(e){
- const el=e.target.closest('[data-study-close],[data-open-study],[data-open-term],[data-expand-term],[data-open-source],[data-study-goto]');if(!el)return;
+ const el=e.target.closest('[data-study-close],[data-open-study],[data-open-term],[data-expand-term],[data-open-source],[data-study-goto],[data-qaw-focus],[data-qaw-save-term],[data-qaw-save-source]');if(!el)return;
  if(el.hasAttribute('data-study-close')){panelClose();return}
+ if(el.dataset.qawFocus!==undefined){panelClose();window.GnammaQawaidReader?.setFocus?.(Number(el.dataset.qawFocus));return;}
+ if(el.dataset.qawSaveTerm){const t=termMap.get(el.dataset.qawSaveTerm);window.GnammaQawaidDesk?.add?.('term',currentQT(),t?.ar||'', 'ar',null,'',t?.en||'Dictionary entry');return;}
+ if(el.dataset.qawSaveSource){const r=citationMap.get(el.dataset.qawSaveSource);window.GnammaQawaidDesk?.add?.('source',currentQT(),r?.arabic||'', 'ar',null,'',r?.title||'Source');return;}
  if(el.dataset.openStudy){openPanel(el.dataset.openStudy);return}
  if(el.dataset.expandTerm){termPanel(el.dataset.expandTerm,true);return}
  if(el.dataset.openTerm){openPanel('term',el.dataset.openTerm);return}
@@ -292,5 +312,6 @@ function annotateParagraph(paragraph,matched){
  }
  if(links){segment.push(document.createTextNode(txt.slice(cursor)));node.replaceWith(...segment);}
 }
+window.GnammaQawaidStudy=Object.freeze({openPanel,openTerm:id=>termPanel(id),openSource:id=>sourcePanel(id),openPDF:pdfPanel});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setup);else setup();
 })();
