@@ -36,17 +36,25 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           TARGET=texts/al-taftazani/tahdhib-al-mantiq/edition
           SCRATCH=$(mktemp -d)
-          cp -a "$TARGET/source-table-excerpts" "$SCRATCH/excerpts"
+          mkdir -p "$SCRATCH/excerpts"
+          cp "$TARGET/source-table-excerpts/PRINT_IMAGE_MANIFEST_STAGE116.json" "$SCRATCH/excerpts/"
+          cp "$TARGET/source-table-excerpts"/print1405_Q*_table_excerpt.png "$SCRATCH/excerpts/"
           cp "$TARGET/batches/hawashi-all-sections-cumulative-stage116.md" "$SCRATCH/full.md"
           cp "$TARGET/STAGE116_CUMULATIVE_FILE_INTEGRITY.json" "$SCRATCH/integrity.json"
-          # Rebase only these generated outputs onto the actual newest branch.
-          # Never force-push or overwrite newer human-edited text, reader or QA.
+          # Rebase only generated outputs onto newest branch; never change
+          # human-edited reader/QA or overwrite source materials.
           git fetch origin "$PUBLISH_BRANCH"
           git reset --hard "origin/$PUBLISH_BRANCH"
-          cp -a "$SCRATCH/excerpts" "$TARGET/source-table-excerpts"
+          mkdir -p "$TARGET/source-table-excerpts"
+          # Earlier runs nested excerpts/excerpts/... recursively. Remove
+          # those duplicate folders; preserve only four original page crops
+          # plus one manifest at the intended root.
+          rm -rf "$TARGET/source-table-excerpts/excerpts"
+          cp "$SCRATCH/excerpts/"* "$TARGET/source-table-excerpts/"
           cp "$SCRATCH/full.md" "$TARGET/batches/hawashi-all-sections-cumulative-stage116.md"
           cp "$SCRATCH/integrity.json" "$TARGET/STAGE116_CUMULATIVE_FILE_INTEGRITY.json"
-          git add "$TARGET/source-table-excerpts/" "$TARGET/batches/hawashi-all-sections-cumulative-stage116.md" "$TARGET/STAGE116_CUMULATIVE_FILE_INTEGRITY.json"
+          git add -A "$TARGET/source-table-excerpts/"
+          git add "$TARGET/batches/hawashi-all-sections-cumulative-stage116.md" "$TARGET/STAGE116_CUMULATIVE_FILE_INTEGRITY.json"
           if ! git diff --cached --quiet; then
             git commit -m 'Synchronize immutable full Stage116 corpus and bounded photographed table evidence'
             git push origin "HEAD:refs/heads/$PUBLISH_BRANCH"
