@@ -149,7 +149,7 @@
       "positions": 15,
       "positionsLocatedInPhotos": 15,
       "structuralLabelsTranscribed": 15,
-      "arabicExampleSentencesFullyTranscribed": 0,
+      "arabicExampleSentencesFullyTranscribed": 2,
       "arabicExampleSentencesPresent": 12,
       "verifiedPhotos": [
         "H-1405",
@@ -157,14 +157,40 @@
       ],
       "file": "source-table-excerpts/print1405_Q309_table_excerpt.png",
       "printedRowsDirectlyChecked": true,
-      "sourceRowOrderCollatedWithExamples": true
+      "sourceRowOrderCollatedWithExamples": true,
+      "transcribedExamples": [
+        {
+          "form": "connected",
+          "row": 5,
+          "mode": "D/C",
+          "arabic": "نحو: كلما كان هذا إما زوجاً أو فرداً كان عدداً.",
+          "english": "For example: whenever this is either even or odd, it is a number.",
+          "sourcePhoto": [
+            "H-1405",
+            "H-1433"
+          ],
+          "confidence": "both printings clearly legible"
+        },
+        {
+          "form": "disjunctive",
+          "row": 1,
+          "mode": "C/C",
+          "arabic": "نحو: العدد إما زوج وإما فرد.",
+          "english": "For example: a number is either even or odd.",
+          "sourcePhoto": [
+            "H-1405",
+            "H-1433"
+          ],
+          "confidence": "both printings clearly legible"
+        }
+      ]
     }
   },
   "verifiedQ300StatusSymbols": 32,
   "unverifiedDetailedVerbatimTableCells": {
     "Q258": 49,
     "Q294": 105,
-    "Q309ExplicitExampleCells": 12
+    "Q309ExplicitExampleCells": 10
   },
   "newDigitalArabicToEnglishSpotCheckedHistoricalNotes": 5,
   "newWholePrintedPagesCertified": 0,
