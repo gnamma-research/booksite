@@ -61,7 +61,7 @@ assert "وما قيل" in next(x for x in matn if x["id"] == "QT-059")["arabic"]
 assert current["integrity"]["totalBilingualUnits"] == len(matn) + len(sharh) == 171
 audit = (ROOT / "editorial/QAWTAW18_CURRENT_CRITICAL_DISPOSITION_2026-11-13.md").read_text(encoding="utf8")
 assert "55" in audit and "37–73" in audit
-assert "**exactly the same**" in audit
+assert "**the identical 14 cases**" in audit
 for html in ("index.html","commentary.html"):
     page = (ROOT / html).read_text(encoding="utf8")
     assert 'href="editorial/QAWTAW18_CURRENT_CRITICAL_DISPOSITION_2026-11-13.md"' in page
