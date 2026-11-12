@@ -37,7 +37,8 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_01_08.md"
     },
     {
       "id": "PE-003",
@@ -158,7 +159,8 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_01_08.md"
     },
     {
       "id": "PE-010",
@@ -227,7 +229,8 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_01_08.md"
     },
     {
       "id": "PE-014",
@@ -261,7 +264,8 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_01_08.md"
     },
     {
       "id": "PE-016",
@@ -278,7 +282,8 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_01_08.md"
     },
     {
       "id": "PE-017",
@@ -296,7 +301,8 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_01_08.md"
     },
     {
       "id": "PE-018",
@@ -331,7 +337,8 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_01_08.md"
     },
     {
       "id": "PE-020",
@@ -349,7 +356,8 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_01_08.md"
     },
     {
       "id": "PE-021",
@@ -434,7 +442,8 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_09_17.md"
     },
     {
       "id": "PE-026",
@@ -452,7 +461,8 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_09_17.md"
     },
     {
       "id": "PE-027",
@@ -470,7 +480,8 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_09_17.md"
     },
     {
       "id": "PE-028",
@@ -558,7 +569,8 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_09_17.md"
     },
     {
       "id": "PE-033",
@@ -576,7 +588,8 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_09_17.md"
     },
     {
       "id": "PE-034",
@@ -594,7 +607,8 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_09_17.md"
     },
     {
       "id": "PE-035",
@@ -611,7 +625,8 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_09_17.md"
     },
     {
       "id": "PE-036",
@@ -699,7 +714,8 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_09_17.md"
     },
     {
       "id": "PE-041",
@@ -734,7 +750,8 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_09_17.md"
     },
     {
       "id": "PE-043",
@@ -872,7 +889,30 @@
         }
       ],
       "status": "checked",
-      "deep_analysis": false
+      "deep_analysis": true,
+      "study_file": "DEEP_STUDIES_09_17.md"
     }
-  ]
+  ],
+  "deep_episodes": 18,
+  "deep_episode_ids": [
+    "PE-002",
+    "PE-009",
+    "PE-013",
+    "PE-015",
+    "PE-016",
+    "PE-017",
+    "PE-019",
+    "PE-020",
+    "PE-025",
+    "PE-026",
+    "PE-027",
+    "PE-032",
+    "PE-033",
+    "PE-034",
+    "PE-035",
+    "PE-040",
+    "PE-042",
+    "PE-050"
+  ],
+  "outstanding_source_checks": 20
 }
