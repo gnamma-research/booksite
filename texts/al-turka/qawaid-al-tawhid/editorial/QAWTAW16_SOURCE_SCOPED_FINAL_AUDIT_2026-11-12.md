@@ -42,6 +42,8 @@ Sources sought by full title, Arabic / Persian and romanized names, specific dis
 
 **QT-059 — ancestral original.** The full surviving quoted argument says that the senses provide **preparatory conditions** for both inferential and contemplative knowledge, while true knowledge is bestowed by the effusive Principle. Its ending refers to other philosophical writings for the second claim. A prior editor reports additional ancestral material omitted from a transmission; exact missing words, extent and locus cannot be established from present evidence. Do not add the grandson's surrounding SH-059 explanation as though it were the missing original.
 
+**SH-058 — an example of a later source-graded resolution:** The A-source transcription reads `النوم والسهو` (sleep and lapses of attention); the modern **H2014 II:560** printed comparison supports `النوم والسهر` (sleep and wakefulness) and `الحركة الانتقالية`. The published preferred English therefore uses *sleep and wakefulness*, while the A-source `السهو` and the source divergence remain explicitly preserved in the apparatus. The earlier automatic SH-058 rewriter, which would reinsert the old inattention choice, has been **retired**; it must not overwrite this printed comparison.
+
 **Additional transparency example:** The opening `الحمد لله رب العالمين` in QT-001 is a **disclosed editorial adoption from a catalogue incipit**, while the A commentary prints `الحمد لوليّه`. This is a documented editorial choice with apparatus, **not a manuscript-established unanimous original**. Other variant treatments must be read with their respective notes.
 
 ## 4. Final validation procedure
