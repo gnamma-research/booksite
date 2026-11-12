@@ -25,6 +25,11 @@ def run_browser(p,engine,browser_name):
         page=ctx.new_page()
         errors=[]
         page.on("pageerror",lambda e:errors.append(str(e)))
+        page.goto(BASE,wait_until="domcontentloaded",timeout=60000)
+        assert "Complete English working translation of the introduction" in page.locator(".fg-completion").inner_text(),f"{label}: homepage completion unclear"
+        assert page.locator('.fg-actions a[href="continuous-translation.html"]').is_visible()
+        assert page.locator('.fg-actions a[href="parallel-introduction.html"]').is_visible()
+        assert page.locator("#reading-list").count()==0,f"{label}: selected critical extracts must not be the primary reader"
         page.goto(BASE+"continuous-translation.html",wait_until="domcontentloaded",timeout=60000)
         page.wait_for_selector("html.fr-ready")
         page.screenshot(path=str(ART/(label+"-opening.png")),full_page=False)
@@ -47,7 +52,8 @@ def run_browser(p,engine,browser_name):
         assert "70" in indicator,f"{label}: progress page not correct {indicator!r}; geometry {geometry}"
         page.locator("#fr-save").click()
         assert page.locator("#fr-save").get_attribute("aria-pressed")=="true"
-        page.locator("#fr-source-open").click()
+        page.locator("#fr-more-open").click()
+        page.get_by_role("button",name="Editorial notes · current page").click()
         assert page.locator("#fr-panel-body").get_by_text("Beirut p.70").count()>=1
         assert page.locator('#fr-panel-body a[href*="critical-edition.html?page=70"]').count()==1
         page.locator("#fr-close").click()
@@ -70,10 +76,12 @@ def run_browser(p,engine,browser_name):
             page.get_by_role("button",name="Night",exact=True).click()
             page.locator("#fr-close").click()
         else:
-            page.locator("#fr-font-up").click()
-            page.locator("#fr-theme").click()
+            page.locator("#fr-more-open").click()
+            page.get_by_role("button",name="A+ Larger").click()
+            page.get_by_role("button",name="Mist",exact=True).click()
             assert page.evaluate("document.documentElement.dataset.theme")=="horizon",f"{label}: theme control"
-            page.locator("#fr-theme").click()
+            page.get_by_role("button",name="Night",exact=True).click()
+            page.locator("#fr-close").click()
         scale=page.evaluate("getComputedStyle(document.documentElement).getPropertyValue('--fr-scale').trim()")
         assert float(scale)>1,f"{label}: type scaling"
         assert page.evaluate("document.documentElement.dataset.theme")=="night",f"{label}: dark theme"
@@ -81,7 +89,8 @@ def run_browser(p,engine,browser_name):
             page.locator("#fr-more-open").click()
             page.get_by_role("button",name="Focus reading").click()
         else:
-            page.locator("#fr-focus").click()
+            page.locator("#fr-more-open").click()
+            page.get_by_role("button",name="Focus reading").click()
         assert page.locator("body").evaluate("(n)=>n.classList.contains('fr-focus')")
         assert page.locator("#fr-exit-focus").is_visible()
         page.locator("#fr-exit-focus").click()
@@ -102,9 +111,20 @@ def run_browser(p,engine,browser_name):
         assert not errors,f"{label}: JavaScript page errors {errors[:5]}"
         page.screenshot(path=str(ART/(label+".png")),full_page=False)
         # Extract reader must acknowledge partial Arabic coverage without conflating it with full English.
-        page.goto(BASE,wait_until="domcontentloaded")
-        assert page.locator("#reading-list .reading-block").count()>=1,f"{label}: source extract reader missing"
+        page.goto(BASE+"extracts.html",wait_until="domcontentloaded")
+        assert page.locator("#reading-list .reading-block").count()>=1,f"{label}: archived source extract reader missing"
         assert not errors,f"{label}: reader errors {errors[:5]}"
+        # The parallel full introduction remains readable, but its source notes are hidden by default.
+        page.goto(BASE+"parallel-introduction.html",wait_until="domcontentloaded",timeout=60000)
+        assert page.locator(".pr-page").count()==128,f"{label}: missing complete bilingual page span"
+        assert not page.locator("body").evaluate("(n)=>n.classList.contains('pr-show-notes')"),f"{label}: apparatus visible by default"
+        assert page.locator("#pr-study-open").is_visible(),f"{label}: bilingual study access absent"
+        assert not page.locator(".pr-apparatus").first.is_visible(),f"{label}: source notes intrude into authorial text"
+        page.locator("#pr-study-open").click()
+        assert page.locator("#pr-dialog").evaluate("(n)=>n.open"),f"{label}: source evidence dialog not open"
+        assert "Source, notes and variants" in page.locator("#pr-dialog-content").inner_text(),f"{label}: page evidence missing"
+        assert page.locator('#pr-dialog-content a[href*="critical-edition.html?page=18"]').count()==1,f"{label}: per-page source route missing"
+        page.locator("#pr-close").click()
         # 559 selected records must stay usable in page-filtered critical viewer.
         page.goto(BASE+"critical-edition.html?page=52",wait_until="domcontentloaded",timeout=60000)
         page.wait_for_selector(".audit-clause")
