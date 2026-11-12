@@ -22,6 +22,8 @@
 
 The [eleven-source-hash discrepancy ledger](STAGE122_ELEVEN_SOURCE_HASH_GAP_LEDGER.json) preserves expected/recovered digests and source locators. Five units cross printed page boundaries; six do not. The Stage114 embedded Arabic snippet for `HWN-037` omits two speaker labels that are present in the newly recovered source; this observation is a reason to audit attribution, not proof of the cause of its census SHA mismatch.
 
+**Editorial distinction for the four original printed tables:** Q258, Q294, Q300 and Q309 all have photographed source tables, but their completion, transcription and translation grades are tracked separately. Recovery of the original tables does not certify their English translations.
+
 ## Q258 actual printed errors: apply correction overlay, preserve earlier snapshots
 
 [Stage122 source-photo correction register](STAGE122_Q258_SOURCE_PHOTO_ERRATA.json) fixes:
