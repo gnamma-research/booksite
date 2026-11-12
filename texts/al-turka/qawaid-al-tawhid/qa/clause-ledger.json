@@ -12159,7 +12159,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 6
+      "sourceWarnings": 7
     },
     {
       "id": "QT-060",
@@ -26343,7 +26343,7 @@
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 11
+      "sourceWarnings": 12
     },
     {
       "id": "SH-003",
