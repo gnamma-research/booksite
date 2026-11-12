@@ -2,7 +2,7 @@
   "date": "2026-11-12",
   "edition_source": "1.5.0-integrated-first-pass",
   "working_edition": "1.6.0-scholarship-pass",
-  "overall_percent": 55,
+  "overall_percent": 62,
   "rule": "Percentages are weighted accomplishment of explicit deliverables, not measures of scholarly truth. Each evidence status must be shown; partial sources never get complete status.",
   "stages": [
     {
@@ -88,11 +88,14 @@
       "name": "Evidence ledger and technical fact checks",
       "target": "46-chapter claim–witness inventory, conflicts and status; historical and doctrinal audit",
       "weight": 14,
-      "percent": 0,
-      "status": "not-started",
-      "outputs": [],
+      "percent": 52,
+      "status": "all-46-chapters-triaged-with-138-claim-ledger; selected-loci-checked-but-full-witness-audit-open",
+      "outputs": [
+        "editorial/CLAIM_WITNESS_LEDGER_1_6_20261112.json"
+      ],
       "remaining": [
-        "46-chapter claim–witness inventory, conflicts and status; historical and doctrinal audit"
+        "19 high-risk chapters need direct claim-by-claim collation, 46 full chapters require source/witness review",
+        "Verify uncollated reports and replace disputed statements"
       ]
     },
     {
@@ -124,5 +127,5 @@
     "Edition 1.5 remains canonical until 1.6 text passes checks.",
     "No work runs asynchronously. This ledger records only current committed work."
   ],
-  "latest": "E — all seven Book V inheritance chapters recomposed as source-linked standalone drafts"
+  "latest": "F — 138-item claim provenance inventory committed; several difficult reports cross-checked"
 }
