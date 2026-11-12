@@ -25,6 +25,19 @@ RAW=BOOK/"editorial/INTRO_ARABIC_DIGITAL_18_145_019.md"
 START,END=18,145
 session=requests.Session()
 session.headers.update({"User-Agent":"Mozilla/5.0 (GNAMMA academic source study; noncommercial)", "Accept-Language":"ar,en;q=0.8"})
+# Manually reviewed source-portal footnote boundaries. These are the first
+# modern editor footnotes flattened after an authorial page fragment. Never
+# strip in-text Quranic verse numbers or the author's own citation markers.
+REVIEWED_FOOTNOTE_LEADS={
+    21:"أورده الحكيم الترمذي", 23:"هذا الأثر لم أجده",
+    29:"أورد العجلوني", 47:"أورده المناوي",
+    48:"عزاه السيوطي", 67:"الكيزان : جمع",
+    83:"الإلّية : ربانية", 87:"كذا بالأصل وهي غير",
+    112:"كذا بالأصل", 115:"هذا الخبر لم أجد",
+    118:"فذلك حسابه", 128:"الشّمس والشّموس",
+    130:"أورده العجلوني", 136:"أورده الإمام الجرجاني",
+}
+QURANIC_VERSE_ONLY={26}  # (7) immediately identifies Q 30:7, not an editorial footnote.
 NOTE_START=re.compile(r"\(\s*([1-9])\s*\)\s*(?=(?:هذا الحديث|انظر|رواه|أخرجه|يشير إلى|سبق|حديث رقم|ذكره|قال المحقق|في النسخة|قال الحافظ|قال السيوطي|قال البيهقي|فقد أخرجه|هكذا|وهذا الحديث))")
 ARABIC=re.compile(r"[\u0621-\u064a]")
 VOWELS=re.compile(r"[\u064b-\u065f\u0670\u0640]")
@@ -51,20 +64,25 @@ def fetch(page):
             raw=re.sub(r"\s+"," ",raw).strip()
             if len(raw)<300 or len(ARABIC.findall(raw))<200:
                 raise ValueError(f"Empty/suspiciously non-Arabic page {page}: length {len(raw)}")
-            # Modern editor's footnote is often flattened onto the LAST line.
-            # Split only if its own bibliographical wording is unambiguous.
-            candidates=[m for m in NOTE_START.finditer(raw) if m.start()>len(raw)*.45]
-            split=min((m.start() for m in candidates),default=None)
-            if split is not None:
-                main=raw[:split].strip()
-                notes=raw[split:].strip()
-                footnote_grade="heuristically-separated-modern-notes"
+            # The online source sometimes flattens a distinct footer headed
+            # هامش into the last authorial paragraph. Reviewed page-specific
+            # anchors are deliberately stricter than generic footnote regexes.
+            reviewed_lead=REVIEWED_FOOTNOTE_LEADS.get(page)
+            if reviewed_lead:
+                pattern=re.compile(r"\(\s*1\s*\)\s*"+re.escape(reviewed_lead))
+                candidates=[m for m in pattern.finditer(raw) if m.start()>len(raw)*.45]
+                if len(candidates)!=1:
+                    raise ValueError(f"p{page}: reviewed footer boundary changed in digitized source; do not silently rejoin editor notes")
+                split=candidates[0].start()
+                footnote_grade="reviewed-digital-footer-note-separation"
             else:
-                main=raw
-                notes=""
-                footnote_grade="no-unambiguous-note-separator"
-            # The source itself may contain inline editor call numbers « 1 ».
-            possible_notes=bool(re.search(r"\(\s*[1-9]\s*\)",main[-250:]))
+                candidates=[m for m in NOTE_START.finditer(raw) if m.start()>len(raw)*.45]
+                split=min((m.start() for m in candidates),default=None)
+                footnote_grade="heuristically-separated-modern-notes" if split is not None else "no-unambiguous-note-separator"
+            main=raw[:split].strip() if split is not None else raw
+            notes=raw[split:].strip() if split is not None else ""
+            # Quranic verse number (7) on p26 is part of Farghānī's quotation.
+            possible_notes=False if page in QURANIC_VERSE_ONLY or reviewed_lead else bool(re.search(r"\(\s*[1-9]\s*\)",main[-250:]))
             return {
               "page":page,"source_siglum":"B2007-digitized","source_grade":"modern-edited-digital-transcription-unverified-against-paper",
               "url":url,"retrieved_at_utc":datetime.now(timezone.utc).isoformat(),
