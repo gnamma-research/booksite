@@ -2,7 +2,7 @@
   "date": "2026-11-12",
   "edition_source": "1.5.0-integrated-first-pass",
   "working_edition": "1.6.0-scholarship-pass",
-  "overall_percent": 0,
+  "overall_percent": 12,
   "rule": "Percentages are weighted accomplishment of explicit deliverables, not measures of scholarly truth. Each evidence status must be shown; partial sources never get complete status.",
   "stages": [
     {
@@ -10,11 +10,13 @@
       "name": "Akbarian ontology and epistemology",
       "target": "Verified, attributed prolegomenon linking Muhammadan Reality, first determination, human barzakh and station of no station",
       "weight": 14,
-      "percent": 0,
-      "status": "not-started",
-      "outputs": [],
+      "percent": 85,
+      "status": "research-dossier-complete; witness-collation-pending",
+      "outputs": [
+        "editorial/ONTOLOGICAL_PROLEGOMENON_1_6_20261112.md"
+      ],
       "remaining": [
-        "Verified, attributed prolegomenon linking Muhammadan Reality, first determination, human barzakh and station of no station"
+        "Cross-check selected Arabic first-determination loci and textual witnesses before final scholarly certification"
       ]
     },
     {
@@ -105,5 +107,6 @@
   "notes": [
     "Edition 1.5 remains canonical until 1.6 text passes checks.",
     "No work runs asynchronously. This ledger records only current committed work."
-  ]
+  ],
+  "latest": "A — ontological prolegomenon written; source qualification preserved"
 }
