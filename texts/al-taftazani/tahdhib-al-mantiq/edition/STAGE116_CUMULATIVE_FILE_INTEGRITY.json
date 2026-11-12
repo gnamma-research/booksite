@@ -13,7 +13,7 @@
   "appendixByteCount": 39400,
   "outputPath": "texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage116.md",
   "outputByteCount": 1171240,
-  "outputSHA256": "4bcd58af5a2d96b8e660a112ba44bfdd33d5c92f6e15f29606f125cf0d585b20",
+  "outputSHA256": "e97ccc8021b9b803237d27821d60f6b336090dfe9e8653386e98cbf76687d80e",
   "prefixPreservedByteForByte": true,
   "appended": [
     {
@@ -26,7 +26,7 @@
       "label": "Stage116 photographed originals and limits",
       "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE116_PRINTED_TABLE_PHOTOGRAPHIC_AUDIT.md",
       "originalBytes": 10522,
-      "originalSHA256": "af957e60ee51469bf3bf61163309ff1edbb47ea3420d3ea1c083f7ecdb969bdc"
+      "originalSHA256": "3cf31026a633948aafab160279c456573473fc89e4f44b9696da5bec2080ad07"
     },
     {
       "label": "Stage116 five-locus Arabic to English checks",
@@ -38,7 +38,7 @@
       "label": "Stage116 two photographed Q309 examples with literal translation",
       "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE116_Q309_TWO_EXAMPLES_PHOTO_TRANSLATED.md",
       "originalBytes": 3067,
-      "originalSHA256": "7d09172b822775f28989c6dde22752d6256132138f559d853de8cf3ca44b42eb"
+      "originalSHA256": "db838358697ff0f19f2e112412e126df05bb13bce85e5f8a9ad1d8a9cfbbe9e0"
     },
     {
       "label": "Stage116 fourth-figure modal proof ledger",
