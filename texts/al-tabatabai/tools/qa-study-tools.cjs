@@ -15,7 +15,8 @@ async function main(type){const browser=await type.launch({headless:true});try{
  await page.goto(base+'#passage-M-P-04',{waitUntil:'domcontentloaded'});await ready(page);
  await check(type.name()+' exact semantic link and return',async()=>{
    const connection=index.links.find(l=>l.from.unit==='M-P-04'&&l.to.unit==='B-XI-01');assert.ok(connection);
-   await page.locator('#passage-M-P-04 .cross-text-links summary').click();
+   await page.locator('#study-menu-open').click();
+    await page.locator('#study-menu').getByRole('button',{name:'Related discussions'}).click();
    await page.locator('[data-link="'+connection.id+'"] a').click();
    await page.locator('#'+connection.to.paragraph).waitFor({state:'visible'});
    assert.equal(new URL(page.url()).hash,'#'+connection.to.paragraph);
@@ -139,7 +140,8 @@ async function main(type){const browser=await type.launch({headless:true});try{
  await check(type.name()+' good and evil discussion route reaches its reviewed argument',async()=>{
    const link=index.links.find(l=>l.from.unit==='B-XII-03'&&l.to.unit==='N-XII-18');assert.ok(link);
    await page.goto(base+'#'+link.from.paragraph);await ready(page);
-   await page.locator('#passage-B-XII-03 .cross-text-links summary').click();
+   await page.locator('#study-menu-open').click();
+    await page.locator('#study-menu').getByRole('button',{name:'Related discussions'}).click();
    await page.locator('[data-link="'+link.id+'"] a').click();
    await page.locator('#'+link.to.paragraph).waitFor({state:'visible'});
    assert.equal(new URL(page.url()).hash,'#'+link.to.paragraph);
