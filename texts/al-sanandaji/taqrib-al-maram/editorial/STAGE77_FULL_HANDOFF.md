@@ -10,7 +10,7 @@
 - The four Wasīm records in the new file are **NOT new translations** of his preface. The full preface has already been translated in the repository module `stage51-wasim-preface.js` on the booksite; it is linked and its identification recorded in `Stage77_I002-I005_Prefatory_Streams_Audit.md`. Do **not** duplicate those English words as a new achievement.
 - **All 15 numbered body positions I:2–16 are re-inspected from the primary source scan.** I:6–16 now have strengthened, layer-separated source-facing English (selected Arabic anchors; no complete diplomatic transcript). Pages I:2–5 have explicit dual-author prefatory audit, preserving earlier primary author and Wasīm translations. **No newly independently certified complete body page**.
 - The source PDF section I:2–17 was extracted as a **16-page exact copy** of the embedded original page images: 16/16 embedded source-image SHA256 hashes equal the original combined scan (including context I:17).
-- The reader's HTML was tested using `page.set_content()` in Chromium at desktop 1400×860 and mobile 390×844; JavaScript executed without page errors, filtered I:13 returned 3 lower cards, and there was no viewport horizontal overflow. **Full relative-image browser navigation was blocked by host policy**, so image loading in browser was not tested; relative images are present and source-hash checked. Do not say an end-to-end deployed site visual test passed.
+- The reader embeds its 15 original source images as data URLs and was tested with `page.set_content()` in Chromium at desktop 1400×860 and mobile 390×844; JavaScript executed without page errors, filtered I:13 returned 3 lower cards, **the scan image loaded** and there was no horizontal viewport overflow. This is a local reader test, not an end-to-end deployed site test.
 
 ## Strict status summary
 
@@ -30,13 +30,14 @@ Printed Volume I p = combined original PDF physical page p+13 (one-based), or ze
 - `Sanandaji_VolI_Cumulative_Stage77.md` — cumulative source-order master, 280 original numbered entries; new I:2–16 material foregrounded and old prose nested under expandable ‘historical’ details.
 - `Stage77_All_Units_I002-I280.json` — 1,400 source-linked bilingual working-unit records.
 - `Stage77_New_Units_I002-I016.json` — 62 new records, with `is_new_translation` distinguishing 54 new explanations from eight preface reconciliations.
+- Review branch also carries `stage77-I002-I016-source-facing-units.json` (62 fields-verified machine-readable units) alongside four Markdown source dossiers.
 - `Stage77_I002-I005_Prefatory_Streams_Audit.md` — both distinct prefaces and provenance link to prior translated Wasīm module.
 - `Stage77_I006-I008_Source_Aligned_Bilingual.md`, `Stage77_I009-I012_Source_Aligned_Bilingual.md`, `Stage77_I013-I016_Source_Aligned_Bilingual.md` — new connected translation/explanation drafts with explicit cautions.
 - `Stage77_Page_Status_280.csv` — 280-row inherited audit plus Stage77 fields, all closure flags false.
 - `Stage77_Original_Arabic_I002-I017.pdf` — 16 original source leaves (including transition page) with 16/16 exact image checks.
 - `Stage77_Source_Integrity.json`, `Stage77_Integrity_And_Metrics.json` — reproducibility evidence.
-- `Stage77_Offline_Opening_Bilingual_Reader_I002-I016.html` + `source_images/I002.png`–`I016.png` — offline comparison reader with page selection, Arabic/English, source-layer filters, search and dark mode. Requires its relative images to stay alongside the HTML.
-- `Stage77_Reader_desktop_QA.png`, `Stage77_Reader_mobile_QA.png` — limited DOM/viewport QA evidence (browser image fetch not independently tested).
+- `Stage77_Offline_Opening_Bilingual_Reader_I002-I016.html` + `source_images/I002.png`–`I016.png` — offline self-contained comparison reader with embedded original images, page selection, Arabic/English, source-layer filters, search and dark mode. Separate original image files are included for preservation.
+- `Stage77_Reader_desktop_QA.png`, `Stage77_Reader_mobile_QA.png` — local DOM/viewport QA evidence, including successful inline original-image rendering (not a deployed website test).
 - `Stage76_Research_Recovery.zip` — intact inherited full prior checkpoint retained as nested archive for history.
 
 ## Exact remaining path to completion
