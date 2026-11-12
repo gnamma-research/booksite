@@ -4,7 +4,7 @@
 **Reason for revision.** The sentence “Nūḥ rejects the chiefs' contempt for poor believers, builds under revelation and learns that paternal affection cannot enlarge the divine promise” compresses three different Qurʾānic scenes into a list of loosely related moral conclusions. It disproportionately promotes a secondary detail of the chiefs' rhetoric into the centre of Nūḥ's mission and makes fatherly love appear a rival attempt to extend a promise. The Qurʾān's account is more concrete and subtle: Nūḥ called people to worship God and sought their forgiveness (71:1–10); warned against resistance and explained the mission to his detractors (11:25–31); constructed the Ark at God's command (11:37–40); called his son to board and heard him refuse in reliance upon a mountain (11:42–43); then asked about the relation of his son to the promised family and was corrected about the scope of the promise and about asking beyond his knowledge (11:45–47).
 
 **Preferred replacement of the compressed Nūḥ sentence:**
-> Nūḥ called his people to worship God and remained steadfast despite their rejection. When the flood came, he followed God's command to build the Ark and called his son to join him. His son refused and was drowned. Nūḥ's subsequent appeal to God brought a clarification: belonging to a prophet's family does not, by itself, guarantee salvation. Fidelity to God takes precedence over family ties, however strong those ties may be.
+> Nūḥ called his people to worship God and remained steadfast despite their rejection. At God's command he built the Ark. When the flood came, he called his son to join him. His son refused and was drowned. Nūḥ's subsequent appeal to God brought a clarification: belonging to a prophet's family does not, by itself, guarantee salvation. Fidelity to God takes precedence over family ties, however strong those ties may be.
 
 Keep the details of the chiefs' objection to poorer believers in the sharḥ where 11:27–31 and 26:111–115 can be read directly. Do not claim Nūḥ himself “enlarged the promise”; the later exegetical dispute about his son's hidden faith and the referent of the reading *innahu ʿamalun ghayru ṣāliḥ* remains separate.
 
@@ -40,3 +40,8 @@ Keep the details of the chiefs' objection to poorer believers in the sharḥ whe
 - **Shuʿayb:** State his call to worship God and cease fraud in weights and measures, with his pledge not to do what he forbids.
 - **Yūnus:** Narrate departure, prayer, acceptance and his people's repentance rather than depicting his prophetically distinctive lesson as an abstract caution about haste.
 - **Books IV–VII:** An argument about political or cultural plurality is not a substitute for the named people, offices, concrete decisions, texts, markets or courts through which it happened.
+
+
+## Additional source-fidelity correction · 12 November 2026
+
+The prose-reviewed 1.6.1 draft inadvertently placed the Ark's construction after the flood had already arrived. Qurʾān 11:37–40 gives the construction before the flood; 11:42–47 gives the son's refusal and Nūḥ's subsequent appeal. The chronological wording in Chapter 01 has been corrected accordingly. Ādam's chapter opening again states Iblīs's refusal to bow (7:11–12; 38:76), an essential part of the earlier metaphysical explanation. The reader and full manuscript were synchronized.
