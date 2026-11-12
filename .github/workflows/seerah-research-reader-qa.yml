@@ -1,4 +1,4 @@
-name: Sīrah research edition 1.6 content and browser acceptance
+name: Sīrah research edition content and browser acceptance
 on:
   push:
     branches: [master]
@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   parity:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
@@ -24,7 +24,7 @@ jobs:
         run: node research/seerah/tests/verify.mjs
   browser:
     needs: parity
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 25
     strategy:
       fail-fast: false
