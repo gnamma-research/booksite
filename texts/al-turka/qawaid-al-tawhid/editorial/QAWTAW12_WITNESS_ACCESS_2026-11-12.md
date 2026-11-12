@@ -1,5 +1,7 @@
 # Qawtaw 12 — historical-source access and focused collation register
 
+> **Post-publication correction, Qawtaw13 (12 November 2026):** The Kyoto CiNii citation BB28267336 used in the earlier research chain **catalogues 1316 AH [1899]**, not 1315 AH [1898]. A separate Persian print bibliography describes **both** 1315 and 1316 lithographs with inconsistent extents and appended works. The Istanbul 1315 library holding remains a separate catalogue report; none of the relevant folios has been collated. See the [full print-identity analysis](QAWTAW13_EARLY_PRINT_IDENTITY_2026-11-12.md). This note preserves the original dated acquisition report without silently rewriting its history.
+
 **Updated 12 November 2026.** This supplement follows the complete source-based Qawtaw 11 edition. The 171 bilingual units, 5,520 reviewed Arabic punctuation-derived segments and five PDFs remain valid. **No fresh source pages have been acquired, and no Arabic/English text has been changed.** A title catalogue is evidence of existence, not evidence for the actual words in SH-002 or QT-059.
 
 ## New catalogue-level acquisition route: Istanbul

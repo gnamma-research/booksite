@@ -1,0 +1,101 @@
+{
+  "schema": "gnamma-qawtaw13-print-identity-v1",
+  "date": "2026-11-12",
+  "releaseType": "bibliographic-source-correction-no-translation-change",
+  "edition": {
+    "originalUnits": 61,
+    "commentaryUnits": 110,
+    "totalBilingualUnits": 171,
+    "reviewedArabicSegments": 5520,
+    "pdfEditions": 5,
+    "cruxesUnresolved": [
+      "SH-002",
+      "QT-059"
+    ],
+    "newHistoricalPassageImagesRead": 0,
+    "recoveredAncestorWords": 0,
+    "arabicEnglishTextChanged": false,
+    "pdfsRegenerated": false
+  },
+  "bibliographicConflict": {
+    "type": "1315-vs-1316-printed-date-and-composite-extent",
+    "interpretation": "Catalogues conflict; no title or colophon has yet been compared. Do not count the listings as independent collated textual witnesses.",
+    "records": [
+      {
+        "id": "KY-CiNii-BB28267336",
+        "location": "Kyoto University, Graduate School of Asian and African Area Studies",
+        "accession": "200037381740",
+        "catalogDateAH": 1316,
+        "catalogDateCE": 1899,
+        "extentPages": 234,
+        "tamhidExtent": "pp.2–181",
+        "boundWith": [
+          "Miftah al-fusus / al-Nusus (pp.182–216)",
+          "Risala fi wahdat al-wujud (pp.218–221)",
+          "al-Ithna ashariya (pp.222–228)"
+        ],
+        "source": "https://ci.nii.ac.jp/ncid/BB28267336",
+        "originalImprintInspected": false
+      },
+      {
+        "id": "MUSHAR-1315",
+        "bibliography": "Khan Baba Mushar, Fihrist-i kitabha-yi chapi-yi Arabi-yi Iran, p.217",
+        "catalogDateAH": 1315,
+        "extentPages": 234,
+        "features": "Akbar Talaqani calligraphy; supervision Shaykh Ahmad Shirazi; composite with Miftah mafatih al-fusus, unity of being treatise, Ithna ashariya, technical terms",
+        "source": "https://ablibrary.net/book_content/b/13878/348?lang=ar",
+        "originalImprintInspected": false
+      },
+      {
+        "id": "MUSHAR-1316",
+        "bibliography": "Khan Baba Mushar, Fihrist-i kitabha-yi chapi-yi Arabi-yi Iran, p.217",
+        "catalogDateAH": 1316,
+        "extentPages": 231,
+        "features": "Composite with al-Nusus fi tahqiq tawr al-makhsus and Ayni al-wujud",
+        "source": "https://ablibrary.net/book_content/b/13878/348?lang=ar",
+        "originalImprintInspected": false
+      },
+      {
+        "id": "MILLET-01405-1",
+        "location": "Millet Kutuphanesi",
+        "collection": "Ali Emiri Arabi",
+        "shelfmark": "01405/1",
+        "catalogRecord": "148198",
+        "catalogDateAH": 1315,
+        "extent": "Tamhid pp.1–181",
+        "source": "https://portal.yek.gov.tr/works/search/full/15130?lang_id=en",
+        "originalImprintInspected": false
+      },
+      {
+        "id": "GOOGLE-1898",
+        "kind": "ebook listing",
+        "catalogDateCE": 1898,
+        "extentPages": 234,
+        "source": "https://play.google.com/store/books/details?id=-Wku6DfHLa8C",
+        "actualPageImagesInspected": false
+      }
+    ]
+  },
+  "independentAncestor": {
+    "editor": "Majid Hadizadeh",
+    "title": "Qawaid al-Tawhid",
+    "series": "Nusus wa-Rasail min Turath Isfahan al-Ilmi al-Khalid",
+    "volume": 4,
+    "pages": "37–72",
+    "bibliographicImage": "https://bibliography.mk.iq/files/0080f66f58b21603.pdf#page=125",
+    "originalVolumePagesInspected": false
+  },
+  "modernEdition": {
+    "editor": "Muhammad Rida Nekounam",
+    "published": "Tehran, 1393 HS (2014), 280 pp.",
+    "tocSH002": "p.49 onwards",
+    "tocQT059": "p.257 onwards (approximate thematic neighborhood only)",
+    "publicIntroduction": "https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/",
+    "disputedArabicRead": false
+  },
+  "sourcePolicies": {
+    "SH002": "Retain attested negative; haqiyya is an unattested conjecture.",
+    "QT059": "Retain transmitted paragraph; do not reconstitute absent ancestor text from SH059.",
+    "noCollationFromCatalogue": true
+  }
+}
