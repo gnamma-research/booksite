@@ -432,6 +432,22 @@
       "pdf_edition_status": "Published working editions from canonical corpus; not independent manuscript certified",
       "edition_audit_url": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE78_CAIRO_LOGIC_COLLATION.md",
       "printed_witness_comparisons": 7,
+      "later_gloss_stage116_source_photography": {
+        "status": "four historical printed tables photographed, not independently manuscript-collated",
+        "table_source_pages": [258, 294, 300, 309],
+        "printed_editions_inspected": 2,
+        "q300_status_codes_photo_checked": 32,
+        "q258_definition_verdicts_still_to_translate": 49,
+        "q294_modal_relation_codes_still_to_translate": 105,
+        "q309_explicit_conditional_examples_still_to_translate": 12,
+        "q387_missing_figure_report_closed_false_positive": true,
+        "historical_later_gloss_positions": 1090,
+        "english_first_pass_positions": 1029,
+        "modern_reference_only_positions": 57,
+        "new_full_historical_modal_proofs": 0,
+        "reader_url": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE116_PHOTOGRAPHIC_TABLE_READER.html",
+        "photographic_source_audit_url": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE116_PRINTED_TABLE_PHOTOGRAPHIC_AUDIT.md"
+      },
       "cairo_original_logic_page_span": "3–14"
     },
     {
