@@ -83,11 +83,7 @@ function applyFontPrefs(){
  document.documentElement.style.setProperty('--font-en',en==='sans'?"'Source Sans 3',system-ui,sans-serif":"Georgia,'Iowan Old Style',serif");
 }
 function setup(){
- const header=document.querySelector('#topbar .right');
- if(header && !$('#new-about-button')){
-  const about=document.createElement('button');about.id='new-about-button';about.type='button';about.className='icon-btn';about.setAttribute('aria-label','About the texts');about.innerHTML=studyIcon('about');header.insertBefore(about,header.firstChild);
-  about.addEventListener('click',()=>openPanel('about'));
- }
+ // About is accessible from the reading menu; Daruri's three-icon header is preserved.
  const dock=$('#reading-dock .dock-middle');
  if(dock&&!$('#dock-note-shortcut')){
   const bar=document.createElement('div');bar.className='gn-dock-personal';
