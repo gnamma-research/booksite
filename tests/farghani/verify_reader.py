@@ -14,10 +14,10 @@ import sys
 ROOT = Path(__file__).resolve().parents[2]
 BOOK = ROOT / "texts/al-farghani/muntaha-al-madarik"
 FILES = [
-    "continuous-translation.html",
+    "continuous-translation.html", "critical-introduction.html",
     "full-reader.css", "full-reader.js",
     "critical-edition.html", "critical-reader.js",
-    "reader.css", "reader.js", "index.html",
+    "reader.css", "reader.js", "index.html", "extracts.html",
     "handoffs.html", "data/units.js",
 ]
 VOID = {"area","base","br","col","embed","hr","img","input","link","meta","param","source","track","wbr"}
@@ -81,6 +81,17 @@ for filename in FILES:
             if (not u.path or resolved==path.resolve()) and u.fragment:
                 check(u.fragment in validator.ids,f"{filename}: broken same-page fragment #{u.fragment}")
 
+home,_=htmls.get("index.html",("",None))
+check("Complete English working translation of the introduction" in home,"Book homepage must clearly state complete working translation")
+check('href="continuous-translation.html"' in home and 'href="parallel-introduction.html"' in home,
+      "Book homepage must offer full English and full page-aligned Arabic-English readers")
+check('href="extracts.html"' in home,"Partial research extracts need a separate destination")
+check("four foundations" in home.lower() and "pp. 144–145" in home,
+      "Book homepage must distinguish authorial scope and concluding preface")
+essay,_=htmls.get("critical-introduction.html",("",None))
+if essay:
+    check("has not been fully transcribed or translated" not in essay,
+          "Stale incomplete-translation statement still appears in editorial study")
 main,v=htmls.get("continuous-translation.html",("",None))
 pages=re.findall(r'<section class="b2007-page"[^>]+id="b2007-p(\d+)"',main)
 check([int(p) for p in pages]==list(range(18,146)),"Full English page headings are missing, reordered or duplicated")
