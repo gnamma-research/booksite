@@ -5,43 +5,43 @@ const root=join(import.meta.dirname,'..');
 const read=p=>readFileSync(join(root,p),'utf8');
 
 const data=JSON.parse(read('data/chapters.json'));
-const prior=JSON.parse(read('editorial/archive-1.5.0-pre1.6-chapters.json'));
-const current=read('editorial/current-edition-1.6.0-scholarly.md');
-const priorMan=read('editorial/current-edition-1.5.0-integrated.md');
-const priorHTML=read('editorial/archive-1.5.0-pre1.6-reader.html');
+const prior=JSON.parse(read('editorial/archive-1.6.0-pre-prose-audit-chapters.json'));
+const current=read('editorial/current-edition-1.6.1-prose-reviewed.md');
+const priorMan=read('editorial/current-edition-1.6.0-scholarly.md');
+const priorHTML=read('editorial/archive-1.6.0-pre-prose-audit-reader.html');
 const oldMan=read('editorial/current-edition-1.4.1.md');
 const oldArchive=read('editorial/archive-20261112-preintegrated-complete-manuscript-1.4.1.md');
 const html=read('read.html'),landing=read('index.html');
 const atlas=read('atlas.html'),notes=read('dossiers.html');
 const dossiers=JSON.parse(read('data/dossiers.json'));
 const encounters=JSON.parse(read('editorial/encounters-1_6/index.json'));
-const claimLedger=JSON.parse(read('editorial/CLAIM_WITNESS_LEDGER_1_6_20261112.json'));
+const claimLedger=JSON.parse(read('editorial/CLAIM_WITNESS_LEDGER_1_6_1_20261112.json'));
 const regional=JSON.parse(read('editorial/REGIONAL_MICROHISTORIES_1_6_20261112.json'));
 
-assert.equal(data.edition,'1.6.0-scholarly-revision');
+assert.equal(data.edition,'1.6.1-prose-and-source-fidelity-review');
 assert.equal(data.chapters.length,46);
-assert.equal(prior.edition,'1.5.0-integrated-first-pass');
+assert.equal(prior.edition,'1.6.0-scholarly-revision');
 assert.equal(oldMan,oldArchive,'The previous 1.4.1 edition must remain exactly preserved');
-assert.ok(priorHTML.includes('Research edition 1.5.0'),'Older static reader must be preserved');
-assert.ok(priorMan.includes('Research edition 1.5.0'),'The 1.5.0 manuscript must be preserved');
-assert.deepEqual(data.chapters[1],prior.chapters[1],'Chapter 02 must remain unchanged');
+assert.ok(priorHTML.includes('Research edition 1.6.0'),'Older static reader must be preserved');
+assert.ok(priorMan.includes('Research edition 1.6.0'),'The 1.6.0 manuscript must be preserved');
+assert.notEqual(data.chapters[1].matn,prior.chapters[1].matn,'Chapter 02 prose review must be present');
 assert.notEqual(data.chapters[0].matn,prior.chapters[0].matn,'Opening ontological correction must be present');
 
-const recompose=new Set([8,11,13,16,19,27,28,29,30,31,32,33,44]);
-const regionalEdited=new Set([34,35,36,37,38,39,40,41,42,43,45,46]);
-let edited=0;
+let editedMatns=0,editedSharhs=0;
 for(let i=0;i<46;i++){
  const a=data.chapters[i],b=prior.chapters[i],id=i+1;
- const changed=a.matn!==b.matn||a.sharh!==b.sharh;
- if(changed)edited++;
  assert.equal(a.id,id);
- assert.equal(a.title,b.title,'A previously established chapter title was lost');
- if(recompose.has(id)){assert.notEqual(a.matn,b.matn,'Expected full matn replacement in '+id);assert.notEqual(a.sharh,b.sharh);}
- if(regionalEdited.has(id)){assert.equal(a.matn,b.matn,'Regional case should not silently change matn '+id);assert.ok(a.sharh.startsWith(b.sharh),'Historical sharḥ should be retained as start of regional case '+id);}
- if(!recompose.has(id)&&!regionalEdited.has(id)&&id!==1)assert.deepEqual(a,b,'Unexpectedly changed chapter '+id);
+ assert.equal(a.title,b.title,'A chapter title was lost');
+ if(a.matn!==b.matn)editedMatns++;
+ if(a.sharh!==b.sharh)editedSharhs++;
 }
-assert.equal(edited,26);
-
+assert.equal(editedMatns,46,'All 46 matns should reflect prose audit');
+assert.ok(editedSharhs>=41,'Majority of sharh prose should be audited');
+const noah=data.chapters[0].matn;
+assert.ok(noah.includes('Iblīs refused'), 'Adamic refusal omitted');
+assert.ok(noah.indexOf('he built the Ark')>=0 && noah.indexOf('he built the Ark')<noah.indexOf('When the flood came'), 'Nūḥ Ark chronology incorrect');
+assert.ok(data.chapters[43].sharh.includes('21 December 1868'), 'Direct waqf judgment facts omitted');
+assert.ok(data.chapters[43].sharh.includes('1930 Validating Act'), 'Legislative sequence omitted');
 assert.equal(dossiers.dossiers.length,9);
 assert.equal(encounters.entries.length,50);
 assert.equal(encounters.entries.filter(e=>e.deep_analysis).length,18);
@@ -49,9 +49,9 @@ assert.equal(regional.cases.length,13);
 assert.equal(claimLedger.entries.length,46);
 assert.equal(claimLedger.entries.reduce((n,e)=>n+e.claims.length,0),138);
 
-assert.ok(html.includes('Research edition 1.6.0'));
-assert.ok(landing.includes('Research edition 1.6.0'));
-assert.ok(html.includes('editorial/current-edition-1.6.0-scholarly.md'));
+assert.ok(html.includes('Research edition 1.6.1'));
+assert.ok(landing.includes('Research edition 1.6.1'));
+assert.ok(html.includes('editorial/current-edition-1.6.1-prose-reviewed.md'));
 assert.equal((html.match(/<article class="chapter"/g)||[]).length,46);
 assert.equal((html.match(/class="matn"/g)||[]).length,46);
 assert.equal((html.match(/class="sharh"/g)||[]).length,46);
@@ -94,4 +94,4 @@ for(let i=1;i<=46;i++){
   for(const f of forbidden)assert.ok(!f.test(ch[layer]),'Editor-directed language '+id+' '+layer+': '+f);
  }
 }
-console.log('PASS Sīrah edition 1.6.0: 46 aligned chapter pairs, 26 audited changes, previous versions preserved, 50 encounters, 138 claim inventory, 13 regional cases, 9 dossiers, 7 atlas figures, source/static/manuscript parity, direct-prose check');
+console.log('PASS Sīrah 1.6.1: 46 aligned chapter pairs, all matns and 41+ shuruh prose reviewed, Nūḥ chronology verified, legal source update, 50 encounters, 138 claims, source/static/manuscript parity');
