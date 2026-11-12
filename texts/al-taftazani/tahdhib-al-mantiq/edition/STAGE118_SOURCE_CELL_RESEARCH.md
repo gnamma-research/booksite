@@ -30,13 +30,13 @@ Every cell has a stable coordinate `Q294-Rxx-Cxx` and a source-shape family, usi
 
 **Crucial gap:** The source says the signs `فم` and `حم` identify which proposition is more general, and `ط` and `ف` preserve description-period qualifications. Consequently the **61 inclusion-family cells must not be presented as 61 proved entailments**, nor has this stage certified their exact qualifiers. The additional symbols remain literal source-colllation obligations.
 
-## Q258: 49 individually indexed source cells; 16 selected phrases explained
+## Q258: 49 individually indexed source cells; 24 selected phrases explained
 
 [Structured 49-cell register](STAGE118_Q258_49_DEFINITION_SOURCE_PHRASES.json) · [Q258 original photographed table](source-table-excerpts/print1405_Q258_table_excerpt.png).
 
 Seven header terms — species, proximate and remote genus, proximate and remote differentia, common accident and proprium — yield **49 ordered entries**. The table is genuinely *ordered*: proximate genus then proximate differentia is recognised as a sound and accepted complete real definition, whereas its reversal is considered sound in content but **not accepted** because the more specific term precedes the more general.
 
-Sixteen individual cells have a selected source phrase plus bounded English explanation. **No complete 49-cell diplomatic Arabic transcription has been certified**, and the remaining longer reasoning is not silently replaced by binary valid/invalid labels.
+Twenty-four individual cells have a selected source phrase plus bounded English explanation. **No complete 49-cell diplomatic Arabic transcription has been certified**, and the remaining longer reasoning is not silently replaced by binary valid/invalid labels.
 
 ## Q309: two new source readings and three remaining hard cells
 
