@@ -8,6 +8,8 @@ The original Taftāzānī logic text is `T`, principal al-Yazdī commentary `Y`,
 
 Canonical Stage114 source and every later cumulative archive are preserved. The [Stage120 full Markdown](batches/hawashi-all-sections-cumulative-stage120.md) must be byte-identical to the **prefix** of the [Stage121 cumulative complete source](batches/hawashi-all-sections-cumulative-stage121.md), with no earlier translation rewrite. An exact [Stage120 historical handoff](HANDOFF_STAGE120.md) is preserved alongside previous stages.
 
+**Historical source tables:** the four original Q258, Q294, Q300 and Q309 tables are photographically accessible, but source recovery and unabridged translation have different certification levels. The original H source text remains intact.
+
 ## Source-table progress achieved here
 
 **Q258:** All **49 of 49** original ordered pair positions now have at least a selected photographed source reading. Stage120 had 39; Stage121 recovered the last **10**. Of those ten, **7** are the single cross-reference instruction **انظر** and **3** are partial negative verdicts **غير صحيح** with the handwritten grounds still unresolved. With four earlier cross-reference cells, **11** original table cells are genuinely complete *short instruction* readings; the other **38 substantive cells still need their full historical Arabic and literal English**. This is not a declaration of 49/49 unabridged verified table translations. [Ten new source entries](STAGE121_Q258_TEN_LAST_LOCATOR_READINGS.json); [full Stage121 photo audit](STAGE121_PHOTOGRAPHIC_CELL_AUDIT.md).
