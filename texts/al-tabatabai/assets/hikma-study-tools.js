@@ -275,7 +275,7 @@
     for(const node of document.querySelectorAll('.passage')){
       const id=node.dataset.unit;const unit=api.state.byUnit.get(id);if(!unit)continue;
       const head=node.closest('.chapter-section')?.querySelector('.chapter-heading');
-      if(head&&!head.querySelector('.heading-provenance')){const label=make('span','heading-provenance',id[0]==='M'?'Editorial reading section':'Recorded chapter · editorial reading title');head.querySelector('.chapter-heading-text')?.prepend(label);if(id[0]!=='M'){const sourceTitle=make('h3','recorded-heading-en',cleanTitle(unit.title));head.querySelector('.chapter-heading-text')?.append(sourceTitle);}}
+      if(head&&id[0]!=='M'&&!head.querySelector('.recorded-heading-en')){const sourceTitle=make('h3','recorded-heading-en',/^\d+$/.test(String(unit.chapter||''))?'Chapter '+unit.chapter:'Introduction');head.querySelector('.chapter-heading-text')?.append(sourceTitle);}
       for(const p of node.querySelectorAll('[data-paragraph]'))if(!p.querySelector('.paragraph-action')){
         const action=button('¶',e=>showCopy({unit:id,paragraph:p.id},e.currentTarget),'paragraph-action');action.setAttribute('aria-label','Copy or link to this '+(p.closest('[lang="ar"]')?'Arabic':'English')+' paragraph');p.append(action);
       }
