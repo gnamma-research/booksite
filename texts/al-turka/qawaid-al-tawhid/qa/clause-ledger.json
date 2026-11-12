@@ -12586,7 +12586,7 @@
       "sourceLocator": "A pp. 269–270",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/465?lang=ar",
       "arabicSha256": "e836a0616d501da780358ad62139ce1b69a640aa4fa59cbd0037aa438da0079e",
-      "englishSha256": "02fa69d55c9e679d1c77126e53ad8714dcaf802b1a44d9ed075261a2bbd1c675",
+      "englishSha256": "ec690888bbb284e26faf6fe45587db02e6646a1da1c2987f6c9a38cc874d6978",
       "arabicClauses": [
         {
           "n": 1,
@@ -12725,7 +12725,7 @@
             "englishSentenceEnd": 6,
             "note": "Purification, prior studies and logic analogy retained; غير المتسقة المنتظمة printed syntax unresolved."
           },
-          "englishCorrespondence": "Once this is understood, we say that those who follow the path of spiritual exertion must first acquire the genuine discursive and theoretical sciences, after purifying their hearts by severing darkening attachments and refining and ordering their dispositions, so that those sciences—including the instrumental discipline that discriminates correct from incorrect thinking—will stand in relation to experiential cognitions much as the instrumental science of logic stands in relation to theoretical sciences whose arguments require ordering.",
+          "englishCorrespondence": "Once this is understood, we say that those who follow the path of spiritual exertion must first acquire the genuine discursive and theoretical sciences, after purifying their hearts by severing darkening attachments and refining and ordering their dispositions, so that those sciences—including the instrumental discipline that discriminates correct from incorrect thinking—will stand in relation to experiential cognitions much as logic stands in relation to theoretical sciences not already coherent and systematically ordered.",
           "riskMarkers": []
         },
         {
@@ -12739,7 +12739,7 @@
             "englishSentenceEnd": 6,
             "note": "Purification, prior studies and logic analogy retained; غير المتسقة المنتظمة printed syntax unresolved."
           },
-          "englishCorrespondence": "Once this is understood, we say that those who follow the path of spiritual exertion must first acquire the genuine discursive and theoretical sciences, after purifying their hearts by severing darkening attachments and refining and ordering their dispositions, so that those sciences—including the instrumental discipline that discriminates correct from incorrect thinking—will stand in relation to experiential cognitions much as the instrumental science of logic stands in relation to theoretical sciences whose arguments require ordering.",
+          "englishCorrespondence": "Once this is understood, we say that those who follow the path of spiritual exertion must first acquire the genuine discursive and theoretical sciences, after purifying their hearts by severing darkening attachments and refining and ordering their dispositions, so that those sciences—including the instrumental discipline that discriminates correct from incorrect thinking—will stand in relation to experiential cognitions much as logic stands in relation to theoretical sciences not already coherent and systematically ordered.",
           "riskMarkers": []
         },
         {
@@ -12753,7 +12753,7 @@
             "englishSentenceEnd": 6,
             "note": "Purification, prior studies and logic analogy retained; غير المتسقة المنتظمة printed syntax unresolved."
           },
-          "englishCorrespondence": "Once this is understood, we say that those who follow the path of spiritual exertion must first acquire the genuine discursive and theoretical sciences, after purifying their hearts by severing darkening attachments and refining and ordering their dispositions, so that those sciences—including the instrumental discipline that discriminates correct from incorrect thinking—will stand in relation to experiential cognitions much as the instrumental science of logic stands in relation to theoretical sciences whose arguments require ordering.",
+          "englishCorrespondence": "Once this is understood, we say that those who follow the path of spiritual exertion must first acquire the genuine discursive and theoretical sciences, after purifying their hearts by severing darkening attachments and refining and ordering their dispositions, so that those sciences—including the instrumental discipline that discriminates correct from incorrect thinking—will stand in relation to experiential cognitions much as logic stands in relation to theoretical sciences not already coherent and systematically ordered.",
           "riskMarkers": []
         },
         {
@@ -12903,43 +12903,43 @@
         {
           "n": 6,
           "startChar": 866,
-          "endChar": 1408,
-          "text": "Once this is understood, we say that those who follow the path of spiritual exertion must first acquire the genuine discursive and theoretical sciences, after purifying their hearts by severing darkening attachments and refining and ordering their dispositions, so that those sciences—including the instrumental discipline that discriminates correct from incorrect thinking—will stand in relation to experiential cognitions much as the instrumental science of logic stands in relation to theoretical sciences whose arguments require ordering."
+          "endChar": 1395,
+          "text": "Once this is understood, we say that those who follow the path of spiritual exertion must first acquire the genuine discursive and theoretical sciences, after purifying their hearts by severing darkening attachments and refining and ordering their dispositions, so that those sciences—including the instrumental discipline that discriminates correct from incorrect thinking—will stand in relation to experiential cognitions much as logic stands in relation to theoretical sciences not already coherent and systematically ordered."
         },
         {
           "n": 7,
-          "startChar": 1409,
-          "endChar": 1668,
+          "startChar": 1396,
+          "endChar": 1655,
           "text": "Then, if the seeker becomes perplexed and reaches an impasse on a question not resolved by discursive reasoning, he may attain it by the other path and discern its true aspect through the stable intellectual dispositions acquired from his theoretical studies."
         },
         {
           "n": 8,
-          "startChar": 1669,
-          "endChar": 1766,
+          "startChar": 1656,
+          "endChar": 1753,
           "text": "This applies where he has no perfecting spiritual master to guide him at every station and stage."
         },
         {
           "n": 9,
-          "startChar": 1767,
-          "endChar": 1863,
+          "startChar": 1754,
+          "endChar": 1850,
           "text": "A full treatment of this question would require a lengthy discussion beyond this brief treatise."
         },
         {
           "n": 10,
-          "startChar": 1864,
-          "endChar": 1927,
+          "startChar": 1851,
+          "endChar": 1914,
           "text": "This is the end of what we intended to present in this epistle."
         },
         {
           "n": 11,
-          "startChar": 1928,
-          "endChar": 2052,
+          "startChar": 1915,
+          "endChar": 2039,
           "text": "Praise belongs to God, Lord of the worlds, and blessings and peace upon His Prophet Muḥammad the Chosen and his pure family."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 9
+      "sourceWarnings": 10
     },
     {
       "id": "SH-INTRO-001",
@@ -25116,7 +25116,7 @@
       "sourceLocator": "A, printed pp. 49–52",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/245?lang=ar",
       "arabicSha256": "5d64575198c2659ac2b5d20b4ae7ceedc66caf70e982e1e0a41027f43c81cf66",
-      "englishSha256": "8f1ea2ae36ae12477268f14ac3f5f8aa7e8c41513deb55d621b15620348fa3ac",
+      "englishSha256": "5e951cd30bc4c770406e93602d826b50f1c4fc613451fe816f77bd5462664d91",
       "arabicClauses": [
         {
           "n": 1,
@@ -25983,7 +25983,7 @@
             "englishSentenceEnd": 35,
             "note": "Restores literal ببطلان مسألة التوحيد. Previous bracketed English inverted the received negative to match context; source contradiction now explicit. العزيزية/إلى also corrupt in digital text."
           },
-          "englishCorrespondence": "The explanation given is that certainty that the doctrine of unity is invalid [sic] amounts to certainty in the invalidity of all classes of certain cognition: rational judgments established by demonstration and those carrying their syllogisms with them; sensory judgments belonging to observation; primordial judgments belonging to first principles; and instinctive judgments belonging to immediate awareness.",
+          "englishCorrespondence": "The explanation given is that certainty that the doctrine of unity is invalid amounts to certainty in the invalidity of all classes of certain cognition: rational judgments established by demonstration and those carrying their syllogisms with them; sensory judgments belonging to observation; primordial judgments belonging to first principles; and instinctive judgments belonging to immediate awareness.",
           "riskMarkers": []
         },
         {
@@ -25997,7 +25997,7 @@
             "englishSentenceEnd": 35,
             "note": "Restores literal ببطلان مسألة التوحيد. Previous bracketed English inverted the received negative to match context; source contradiction now explicit. العزيزية/إلى also corrupt in digital text."
           },
-          "englishCorrespondence": "The explanation given is that certainty that the doctrine of unity is invalid [sic] amounts to certainty in the invalidity of all classes of certain cognition: rational judgments established by demonstration and those carrying their syllogisms with them; sensory judgments belonging to observation; primordial judgments belonging to first principles; and instinctive judgments belonging to immediate awareness.",
+          "englishCorrespondence": "The explanation given is that certainty that the doctrine of unity is invalid amounts to certainty in the invalidity of all classes of certain cognition: rational judgments established by demonstration and those carrying their syllogisms with them; sensory judgments belonging to observation; primordial judgments belonging to first principles; and instinctive judgments belonging to immediate awareness.",
           "riskMarkers": []
         },
         {
@@ -26289,61 +26289,61 @@
         {
           "n": 32,
           "startChar": 4136,
-          "endChar": 4390,
-          "text": "The explanation given is that certainty that the doctrine of unity is invalid [sic] amounts to certainty in the invalidity of all classes of certain cognition: rational judgments established by demonstration and those carrying their syllogisms with them;"
+          "endChar": 4384,
+          "text": "The explanation given is that certainty that the doctrine of unity is invalid amounts to certainty in the invalidity of all classes of certain cognition: rational judgments established by demonstration and those carrying their syllogisms with them;"
         },
         {
           "n": 33,
-          "startChar": 4391,
-          "endChar": 4434,
+          "startChar": 4385,
+          "endChar": 4428,
           "text": "sensory judgments belonging to observation;"
         },
         {
           "n": 34,
-          "startChar": 4435,
-          "endChar": 4486,
+          "startChar": 4429,
+          "endChar": 4480,
           "text": "primordial judgments belonging to first principles;"
         },
         {
           "n": 35,
-          "startChar": 4487,
-          "endChar": 4546,
+          "startChar": 4481,
+          "endChar": 4540,
           "text": "and instinctive judgments belonging to immediate awareness."
         },
         {
           "n": 36,
-          "startChar": 4547,
-          "endChar": 4779,
+          "startChar": 4541,
+          "endChar": 4773,
           "text": "For, on the opponents' assumption, judging quiddities to be distinct and determinate things to differ—as those premises require—is incompatible with accepting a doctrine that removes the judgments of differentiation and distinction."
         },
         {
           "n": 37,
-          "startChar": 4781,
-          "endChar": 4960,
+          "startChar": 4775,
+          "endChar": 4954,
           "text": "Furthermore, when the signs of an illness appear after its causes have been undertaken, sound intellectual intuition and a well-directed mind conclude that the illness has arisen."
         },
         {
           "n": 38,
-          "startChar": 4961,
-          "endChar": 5079,
+          "startChar": 4955,
+          "endChar": 5073,
           "text": "The author therefore follows the argument with ‘after engaging in spiritual exertions and indiscriminate disciplines’."
         },
         {
           "n": 39,
-          "startChar": 5080,
-          "endChar": 5207,
+          "startChar": 5074,
+          "endChar": 5201,
           "text": "These mean excessive sleeplessness and hunger, which are said to give black bile ascendancy over the principal cerebral organs."
         },
         {
           "n": 40,
-          "startChar": 5208,
-          "endChar": 5338,
+          "startChar": 5202,
+          "endChar": 5332,
           "text": "Those organs sustain the other intellectual cognitions, the primary source of the form constitutive of the human specific reality."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 10
+      "sourceWarnings": 11
     },
     {
       "id": "SH-003",
@@ -96948,7 +96948,7 @@
       "sourceLocator": "A, printed pp. 272–273",
       "sourceUrl": "https://ablibrary.net/book_content/b/17638/468?lang=ar",
       "arabicSha256": "207a6bc0b534fdfc5dc18fc600d2441131edefa90a73711bdbaeecf383fc586e",
-      "englishSha256": "568f6dd2e28420b460c42f54f1b0f4a5d80e179e416dab360113d3d97c6c64e5",
+      "englishSha256": "7c79eb1d9299d9ce56cc02e49c891f6b96f21fd587fc64a2ea2d580cb176349f",
       "arabicClauses": [
         {
           "n": 1,
@@ -96989,7 +96989,7 @@
             "englishSentenceEnd": 2,
             "note": "يصيرى and الغير المنسقة المنتظمة remain transcription cruxes. English is an expressly provisional construction."
           },
-          "englishCorrespondence": "These theoretical sciences, including the instrumental discipline of discrimination, will then stand in relation to experiential cognitions as the instrumental science of logic stands in relation to theoretical sciences requiring orderly arrangement.",
+          "englishCorrespondence": "These theoretical sciences, including the instrumental discipline of discrimination, will then stand in relation to experiential cognitions as logic stands in relation to theoretical sciences not already coherent and systematically ordered.",
           "riskMarkers": []
         },
         {
@@ -97087,37 +97087,37 @@
         {
           "n": 2,
           "startChar": 356,
-          "endChar": 606,
-          "text": "These theoretical sciences, including the instrumental discipline of discrimination, will then stand in relation to experiential cognitions as the instrumental science of logic stands in relation to theoretical sciences requiring orderly arrangement."
+          "endChar": 596,
+          "text": "These theoretical sciences, including the instrumental discipline of discrimination, will then stand in relation to experiential cognitions as logic stands in relation to theoretical sciences not already coherent and systematically ordered."
         },
         {
           "n": 3,
-          "startChar": 607,
-          "endChar": 729,
+          "startChar": 597,
+          "endChar": 719,
           "text": "The stable capacity acquired through these certain theoretical studies must distinguish certainties from other cognitions."
         },
         {
           "n": 4,
-          "startChar": 730,
-          "endChar": 969,
+          "startChar": 720,
+          "endChar": 959,
           "text": "It is like the trained capacities acquired through mastery of poetic metres or musical modes: they enable a person to distinguish what is correctly measured from what is not, even where a person merely reasoning about it remains perplexed."
         },
         {
           "n": 5,
-          "startChar": 970,
-          "endChar": 1270,
+          "startChar": 960,
+          "endChar": 1260,
           "text": "If the diligent traveller acquires that capacity and then encounters perplexity in his seeking and travelling, reaching an impasse on a question not attained through discursive thought, this excellent capacity enables him to bring it to light and explain its truth to a discerning seeker of guidance."
         },
         {
           "n": 6,
-          "startChar": 1271,
-          "endChar": 1395,
+          "startChar": 1261,
+          "endChar": 1385,
           "text": "Such a condition is plainly more complete in both attaining perfection and perfecting others than one lacking this capacity."
         }
       ],
       "manualComparativeReview": true,
       "reviewMethod": "model-assisted-editorial; legacy field manualComparativeReview denotes recorded comparison only",
-      "sourceWarnings": 7
+      "sourceWarnings": 8
     },
     {
       "id": "SH-061-A",
