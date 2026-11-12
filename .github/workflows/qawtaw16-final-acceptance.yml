@@ -1,3 +1,4 @@
+# Rerun after restoring integrated Arabic-English full-text search in qawaid-study.js.
 name: Qawtaw16 final source-scoped edition acceptance
 on:
   push:
