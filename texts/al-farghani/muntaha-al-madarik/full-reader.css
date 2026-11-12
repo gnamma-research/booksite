@@ -137,3 +137,18 @@ body.fr-focus{padding-bottom:0}
   #document .b2007-page[data-part-start]::before{color:#333;break-after:avoid}
   #document .b2007-page{break-inside:auto}
 }
+
+/* Reading-first policy: all critical apparatus and advanced controls are opt-in
+   through a single Tools dialog. Keep DOM source notes for links/tests/PDFs. */
+#topbar .toplinks a:not(:first-child){display:none!important}
+.reading-toolbar #fr-source-open,.reading-toolbar .fr-group.fr-advanced{display:none!important}
+.reading-toolbar #fr-more-open{display:inline-flex!important;align-items:center;justify-content:center;border:1px solid var(--line)}
+.scholarly-apparatus{display:none!important}
+.reading-toolbar{justify-content:center;gap:8px}
+.reading-toolbar .fr-group{justify-content:center;gap:6px}
+.heading .book-facts{margin-bottom:12px}
+@media(max-width:630px){
+  .reading-toolbar .fr-group.fr-advanced{display:none!important}
+  #topbar .toplinks a:not(:first-child){display:none!important}
+  .reading-toolbar #fr-more-open{display:inline-flex!important}
+}
