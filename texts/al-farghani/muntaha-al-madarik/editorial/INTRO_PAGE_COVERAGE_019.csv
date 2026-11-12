@@ -1,12 +1,12 @@
 b2007_page,online_arabic_words,online_arabic_chars,english_working_words,english_to_arabic_word_ratio,editorial_note_auto_separated,possible_remaining_editorial_note,selected_critical_loci,selected_critical_exact_normalized_matches,photographed_1876_PRINT_bounded_loci,print_variant_ids
 18,228,1309,365,1.6,True,False,11,11,1,I1876-L01
 19,300,1779,472,1.57,True,False,17,17,2,I1876-L02;I1876-L03
-20,210,1205,250,1.19,True,False,9,7,0,
+20,142,835,250,1.76,True,False,9,7,0,
 21,289,1758,428,1.48,True,False,13,12,1,I1876-L04
 22,345,2099,472,1.37,False,False,15,14,0,
 23,284,1679,420,1.48,True,False,15,13,2,I1876-L07;I1876-L09
 24,183,1135,317,1.73,True,False,9,9,0,
-25,360,2133,515,1.43,False,False,12,12,1,I1876-L08
+25,299,1791,515,1.72,True,False,12,12,1,I1876-L08
 26,323,1833,475,1.47,False,False,9,9,0,
 27,258,1504,378,1.47,True,False,10,10,0,
 28,308,1802,485,1.57,False,False,11,11,0,
