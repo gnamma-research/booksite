@@ -9,12 +9,23 @@ const html=read('read.html');
 const atlas=read('atlas.html');
 const landing=read('index.html');
 const notes=read('dossiers.html');
-const current=read('editorial/current-edition-1.4.1.md');
+const current=read('editorial/current-edition-1.5.0-integrated.md');
+const preserved=read('editorial/current-edition-1.4.1.md');
+const snapshot=read('editorial/archive-20261112-preintegrated-complete-manuscript-1.4.1.md');
+const priorData=JSON.parse(read('editorial/archive-20261112-preintegrated-chapters-1.4.1.json'));
 const archived=read('editorial/source-edition-1.4.md');
 assert.equal(data.chapters.length,46);
 assert.equal(dossiers.dossiers.length,9);
-assert.equal(data.edition,'1.4.1');
-assert.ok(html.includes('Research edition 1.4.1 · under review'));
+assert.equal(data.edition,'1.5.0-integrated-first-pass');
+assert.deepEqual(data.chapters.slice(0,2),priorData.chapters.slice(0,2),'Research-expanded chapters 01–02 must stay unchanged');
+assert.equal(preserved,snapshot,'The previous edition must remain exactly preserved');
+for(let i=2;i<46;i++){
+ assert.notEqual(data.chapters[i].matn,priorData.chapters[i].matn,'Chapter '+(i+1)+' not rewritten');
+ assert.ok(data.chapters[i].sharh.endsWith(priorData.chapters[i].sharh),'Earlier source discussion not preserved for chapter '+(i+1));
+}
+assert.ok(html.includes('Research edition 1.5.0 · integrated explanatory first pass · under review.'));
+assert.ok(landing.includes('Research edition 1.5.0'));
+assert.ok(html.includes('editorial/current-edition-1.5.0-integrated.md'));
 assert.ok(current.includes('## 46.') && archived.includes('Dossier 9'));
 assert.equal((html.match(/<article class="chapter"/g)||[]).length,46);
 assert.equal((html.match(/class="matn"/g)||[]).length,46);
@@ -72,4 +83,4 @@ for(const chapter of data.chapters){
   for(const pattern of editorialCommands)assert.ok(!pattern.test(chapter[layer]),'Editorial instruction in '+chapter.id+' '+layer+': '+pattern);
  }
 }
-console.log('PASS: 46 aligned matns/shurūḥ, 9 dossiers, 7 figures, source parity and direct-prose rules');
+console.log('PASS: Sīrah 1.5.0; 46 aligned matns/shurūḥ; 44 new rewrites with preserved source discussions; 01–02 unchanged; 1.4.1 archived; 9 dossiers; 7 figures; parity and direct-prose rules');
