@@ -1,0 +1,28 @@
+name: Farghani introduction Arabic source probe
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'tools/farghani/source_probe.py'
+      - '.github/workflows/farghani-source-probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --quiet requests beautifulsoup4
+      - name: Inspect online source page selectors and source access
+        run: python tools/farghani/source_probe.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: farghani-source-probe-xix
+          path: qa-artifacts/farghani-source-probe/
+          retention-days: 7
