@@ -7,8 +7,8 @@
   "priorFullBytes": 1181516,
   "priorFullSHA256": "36a8fb25ba0fc1d7f1f29c8c612efb09bef9993531763582ef8f1327713d517a",
   "outputPath": "texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage119.md",
-  "outputBytes": 1282776,
-  "outputSHA256": "ea2a3e7e52f23631647604de13704b48157c57142640d1ff20eef9f57afb1347",
+  "outputBytes": 1297023,
+  "outputSHA256": "47aef7b5e9e355dac5fd6c5703c020689c786202c84ca0da65c8770b18b15c28",
   "previousFullSourceBytePrefixPreserved": true,
   "historicalHNotesUnchanged": 1090,
   "englishFirstPassFieldsUnchanged": 1029,
@@ -46,6 +46,18 @@
       "sha256": "7525683068452c35ef560949bb91f94eac6ccba5a0b82cf2c797fbb7b755d003"
     },
     {
+      "title": "Stage119 nineteen exact Q294 photographed source marks",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE119_Q294_NINETEEN_DIRECT_GLYPHS.md",
+      "bytes": 2911,
+      "sha256": "cb6ed46681fd52adf2d6faf6c18a5b2a31d6b6596177d7025670aaee812a1f16"
+    },
+    {
+      "title": "Stage119 nineteen exact Q294 source records",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE119_Q294_NINETEEN_DIRECT_GLYPHS.json",
+      "bytes": 10432,
+      "sha256": "38d9fb1655bef596dcb4c44bf58a210a7e1dfc5785d95b822c0e314ae9770309"
+    },
+    {
       "title": "Stage118 Q259 counting note",
       "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE118_Q259_ARITHMETIC_AND_SCOPE.md",
       "bytes": 3451,
@@ -66,8 +78,8 @@
     {
       "title": "Stage119 full cumulative handoff",
       "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md",
-      "bytes": 5856,
-      "sha256": "e2326ca9499a67a507eff5919906a918114f8e7f8f7660f67f7b4bda4b1840bd"
+      "bytes": 6627,
+      "sha256": "4cfb316a989defc64bacc5d9fa5ea5c0405d19a776786219fd068daa95da2e62"
     }
   ]
 }
