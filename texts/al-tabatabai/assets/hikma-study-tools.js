@@ -79,7 +79,7 @@
     const grid=make('nav','study-menu-grid');grid.setAttribute('aria-label','Reader tools');
     grid.append(button('Read / resume',()=>{closeDialogs();api.navigateId('passage-'+current());}),button('Contents',e=>showContents(e.currentTarget)),button('Reading Desk',e=>showDesk(e.currentTarget)),button('Subject index',e=>showIndex(e.currentTarget)),button('Dictionary · معجم',e=>showDictionary('',e.currentTarget)),button('Display',e=>open($('study-display'),e.currentTarget)));
     const editions=make('a','study-button','Editions & downloads');editions.href=api.sharedBase+'editions/';editions.addEventListener('click',rememberEditionReturn);grid.append(editions,button('Print / PDF',()=>{closeDialogs();$('pdf-print').click();}));
-    grid.append(button('Edition details & sources',()=>{closeDialogs();$('sources-open').click();}),button('Help & guide',e=>open($('study-help'),e.currentTarget)));
+    grid.append(button('Related discussions',e=>showRelated(e.currentTarget)),button('Editorial notes · apparatus',e=>showEditorial(e.currentTarget)),button('Edition details & sources',()=>{closeDialogs();$('sources-open').click();}),button('Help & guide',e=>open($('study-help'),e.currentTarget)));
     menu.append(grid);
     const help=dialog('study-help','Reader guide');
     for(const [h,t] of [
@@ -111,6 +111,76 @@
     const view=$('reading-view');view.querySelector('option[value="focus"]').textContent='Section';const quiet=make('option','','Focus');quiet.value='quiet';view.append(quiet);view.value=p.view;
     document.addEventListener('hikma:preferences',()=>{for(const [id,k] of [['study-theme','theme'],['study-order','order'],['study-headings','headings'],['study-text-size','size']])if($(id))$(id).value=api.state.preferences[k];});
   }
+
+  // The authorial reader never interpolates modern editorial apparatus.
+  // All source-critical and explanatory metadata remain searchable here.
+  function buildEditorial(){
+    const d=dialog('study-editorial','Editorial notes and source evidence',
+      'Translator notes, lecture summaries, critical readings and source locators are separated from the text. Original authorial prefaces remain in the book.');
+    const scope=select('study-editorial-scope',[['current','Current passage'],['book','Current book'],['all','All books']],'current',renderEditorial);
+    const q=make('input');q.id='study-editorial-search';q.type='search';q.placeholder='Find a note or passage';q.setAttribute('aria-label','Search editorial apparatus');q.addEventListener('input',renderEditorial);
+    d.append(field('Scope',scope),q);
+    const list=make('div','study-editorial-list');list.id='study-editorial-list';d.append(list);
+  }
+  function showEditorial(opener){
+    $('study-editorial-scope').value='current';$('study-editorial-search').value='';
+    renderEditorial();open($('study-editorial'),opener);
+  }
+  function renderEditorial(){
+    const list=$('study-editorial-list');list.replaceChildren();
+    const id=current(),mode=$('study-editorial-scope').value,q=api.normalise($('study-editorial-search').value.trim());
+    const selected=api.state.units.filter(u=>mode==='all'||(mode==='book'&&u.id[0]===id?.[0])||u.id===id);
+    let count=0;
+    for(const u of selected){
+      const notes=(u.notes||[]).map(n=>typeof n==='string'?{text:n,type:'Editorial note'}:n).filter(n=>n?.text);
+      const source=u.source&&typeof u.source==='object'?u.source:null;
+      const sourceText=source?Object.values(source).filter(v=>typeof v==='string'||typeof v==='number').join(' '):'';
+      if(!notes.length&&!source)continue;
+      const haystack=api.normalise([u.id,u.title,u.arabicTitle,sourceText,...notes.map(n=>[n.type,n.text,n.arabic].join(' '))].join(' '));
+      if(q&&!haystack.includes(q))continue;
+      if(++count>80)break;
+      const section=make('section','study-editorial-entry');
+      section.append(passageLink({unit:u.id},u.id+' · '+cleanTitle(u.title)));
+      if(source){
+        const src=make('p','dialog-intro','Source: '+[source.edition,source.page!=null?'p. '+source.page:null].filter(Boolean).join(' · '));
+        if(/^https?:\/\//.test(source.url||'')){const a=make('a','','Open source');a.href=source.url;a.target='_blank';a.rel='noopener noreferrer';src.append(' · ',a);}
+        section.append(src);
+      }
+      for(const n of notes){
+        const box=make('div','study-editorial-note');
+        if(n.type)box.append(make('strong','',n.type));
+        if(n.arabic){const ar=make('p','footnote-arabic',n.arabic);ar.lang='ar';ar.dir='rtl';box.append(ar);}
+        box.append(make('p','',n.text));
+        if(/^https?:\/\//.test(n.url||'')){const link=make('a','','Evidence');link.href=n.url;link.target='_blank';link.rel='noopener noreferrer';box.append(link);}
+        section.append(box);
+      }
+      list.append(section);
+    }
+    if(!count)list.append(make('p','dialog-intro','No editorial notes for this selection.'));
+    else if(count>80)list.append(make('p','dialog-intro','Showing the first 80 passages. Narrow the scope or search to locate other notes.'));
+  }
+  function buildRelated(){
+    const d=dialog('study-related','Related discussions',
+      'Curated conceptual routes and terminology. These links express editorial comparisons, not claims of historical citation.');
+    const list=make('div','study-related-list');list.id='study-related-list';d.append(list);
+  }
+  function showRelated(opener){
+    const list=$('study-related-list');list.replaceChildren();
+    const id=current();const connections=(index?.links||[]).filter(l=>l.from.unit===id);
+    const terms=(index?.terms||[]).filter(t=>(t.discussions||[]).some(d=>d.unit===id));
+    list.append(make('h3','',label(id)));
+    if(connections.length){for(const l of connections){
+      const item=make('article','cross-text-link');item.append(make('strong','',relationNames[l.type]||'Related discussion'),passageLink(l.to),make('p','',l.rationale));
+      if(l.caution)item.append(make('p','sense-caution',l.caution));list.append(item);
+    }}else list.append(make('p','dialog-intro','No curated cross-book routes recorded for this passage.'));
+    if(terms.length){
+      const group=make('section');group.append(make('h3','','Related concepts'));
+      for(const t of terms)group.append(button(t.label,e=>showDictionary(t.label,e.currentTarget),'concept-button'));
+      list.append(group);
+    }
+    open($('study-related'),opener);
+  }
+
   function buildContents(){
     const d=dialog('study-contents','Contents','Choose the recorded book structure or the detailed editorial reading titles.');
     const controls=make('div','study-filter-row');controls.append(field('Contents view',select('study-contents-mode',[['original','Book structure'],['editorial','Editorial section titles']],'original',renderContents)),field('Book',select('study-contents-book',[['all','All three books'],['M',bookNames.M],['B',bookNames.B],['N',bookNames.N]],'all',renderContents)));
@@ -211,13 +281,9 @@
       }
       if(node.querySelector('.study-context'))continue;
       const connections=(index.links||[]).filter(l=>l.from.unit===id);const terms=index.terms.filter(t=>(t.discussions||[]).some(d=>d.unit===id));
-      if(!connections.length&&!terms.length)continue;
-      const context=make('aside','study-context');context.setAttribute('aria-label','Editorial study connections');
-      if(connections.length){const details=make('details','cross-text-links');details.append(make('summary','', 'Across the books · '+connections.length));details.append(make('p','dialog-intro','Editorial connections: each link gives a reason to read the other passage.'));
-        for(const link of connections){const row=make('article','cross-text-link');row.dataset.link=link.id;row.append(make('span','relation-label',relationNames[link.type]||'Related discussion'),passageLink(link.to),make('p','',link.rationale));if(link.caution)row.append(make('p','sense-caution',link.caution));details.append(row);}context.append(details);
-      }
-      if(terms.length){const keywords=make('div','passage-concepts');keywords.append(make('span','','Concepts: '));for(const term of terms)keywords.append(button(term.label,e=>showDictionary(term.label,e.currentTarget),'concept-button'));context.append(keywords);}
-      node.append(context);
+      // Context is reachable through Tools → Related discussions rather than
+      // appearing after each authorial passage (including continuous/focus).
+
     }
     for(const scroll of document.querySelectorAll('.hikma-table-scroll'))if(!scroll.previousElementSibling?.classList.contains('table-scroll-hint')){
       const caption=scroll.querySelector('caption');const hint=make('p','table-scroll-hint',(caption?.textContent||'Table')+' · Scroll horizontally if needed');scroll.before(hint);if(caption)caption.classList.add('sr-only');
@@ -282,7 +348,7 @@
   async function importDesk(){const file=$('study-desk-import').files[0];if(!file)return;try{if(file.size>5000000)throw Error('The backup is too large.');const data=JSON.parse(await file.text());if(data.schema!=='gnamma-hikma-desk-1'||!Array.isArray(data.bookmarks)||!data.notes||typeof data.notes!=='object')throw Error('This is not a Reading Desk backup.');const earlier=api.readStorage('gnamma-hikma:desk:migration-conflicts',[]);for(const id of data.bookmarks)if(typeof id==='string'&&index.units[id])api.state.bookmarks.add(id);for(const [id,value] of Object.entries(data.notes)){if(!index.units[id]||typeof value!=='string'||value.length>200000)continue;if(api.state.notes[id]&&api.state.notes[id]!==value)earlier.push({id,text:value,source:'Imported backup'});else api.state.notes[id]=value;}api.writeStorage('gnamma-hikma:desk:migration-conflicts',earlier);api.saveDesk();renderDesk();api.notify('Backup imported. Differing note versions are preserved below.');}catch(e){api.notify(e.message||'The backup could not be read.');}finally{$('study-desk-import').value='';}}
   function init(){if(initialized||!window.HikmaReader?.state.book)return;initialized=true;api=window.HikmaReader;index=api.state.studyIndex;
     if(index){index.paragraphLookup={};for(const [unit,languages] of Object.entries(index.paragraphs||{}))for(const [language,rows] of Object.entries(languages))for(const row of rows)index.paragraphLookup[row.id]={unit,language};}
-    buildMenus();buildDisplay();buildContents();buildDictionary();buildIndex();buildDock();buildCopy();buildDesk();attachPassages();updateReturn();
+    buildMenus();buildDisplay();buildContents();buildDictionary();buildIndex();buildEditorial();buildRelated();buildDock();buildCopy();buildDesk();attachPassages();updateReturn();
     document.addEventListener('hikma:render',attachPassages);document.addEventListener('hikma:location',updateDock);document.addEventListener('hikma:desk',()=>{updateDock();if($('study-desk').open)renderDesk();});document.addEventListener('hikma:preferences',updateHeadingMode);
     document.addEventListener('keydown',e=>{if(e.key==='d'&&e.altKey&&!e.ctrlKey&&!e.metaKey){e.preventDefault();showDictionary(window.getSelection()?.toString()||'',document.activeElement);}});
     const params=new URLSearchParams(location.search);if(params.get('term'))showDictionary(params.get('term'));
