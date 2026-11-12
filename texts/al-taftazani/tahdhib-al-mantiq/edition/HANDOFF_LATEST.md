@@ -22,7 +22,7 @@ Four photographic **historical table graphics** are recovered from **two printin
 | Q258 / H-DEFINITION-019 | 49 | Exact original drawn grid and seven headings now locatable | 49 individual verdict descriptions await full Arabic–English transcription |
 | Q294 / H-PROPOSITIONS-097 | 105 | All fifteen classes and the original triangular source graphic located | 105 directional relation symbols await individual collation |
 | Q300 / H-PROPOSITIONS-121 | 32 | **Every printed classification symbol checked**: R7/U16/X9, matches Stage115 model | Interpretive/historical proof remains separate |
-| Q309 / H-CONDITIONAL-040 | 15 | All nine connected, six disjunctive types; three printed "ذكر ما لا يخفى" intentional no-example cells identified | 12 full Arabic examples await exact bilingual transcription |
+| Q309 / H-CONDITIONAL-040 | 15 | All nine connected, six disjunctive types; three printed "ذكر ما لا يخفى" intentional no-example cells identified | Two full Arabic worked examples have now been translated from both scans; **10** remain |
 | Q387 / H-SCIENCES-029 | — | Two photographed printed pages show no diagram despite `هكذا` | Mark as **false positive image-gap**, no invented figure |
 
 **201** substantive graphic positions across four tables, **32** directly verified status codes and **15** structural conditional labels; this is **not** 201 translated English table cells. The 49 + 105 detailed judgements and 12 Arabic examples remain on the actual pending-work register. The four Stage114 “missing table” flags remain unchanged until the respective tables are wholly translated.
@@ -38,7 +38,7 @@ Both are modern source-print witnesses. They are **not independent medieval auth
 
 - [Dedicated Stage116 photo table reader](STAGE116_PHOTOGRAPHIC_TABLE_READER.html), with the four real printed images and the Q300 32-cells.
 - [Detailed photographic source / attribution audit](STAGE116_PRINTED_TABLE_PHOTOGRAPHIC_AUDIT.md), citing both printings, exact Q pages and the true open gaps.
-- [Five-locus Arabic-to-English micro-alignment](STAGE116_CLAUSE_ALIGNMENT.md); spot checks, **not** a full-unit certification.
+- [Two original Q309 worked examples, fully Arabic–English read](STAGE116_Q309_TWO_EXAMPLES_PHOTO_TRANSLATED.md) — 2 of 12 explicit historical examples, with three additional printed source instructions.\n- [Five-locus Arabic-to-English micro-alignment](STAGE116_CLAUSE_ALIGNMENT.md); spot checks, **not** a full-unit certification.
 - [46-case modal proof-obligation audit](STAGE116_MODAL_PROOF_OBLIGATIONS.md); includes a rigorous necessary **temporal-to-modal bridge insufficiency lemma**, but **no claim** to new historical modal theorems.
 - [Stage116 machine-readable evidence/gap ledger](STAGE116_EVIDENCE_AND_GAP_LEDGER.json).
 - [Source image SHA/byte manifest](source-table-excerpts/PRINT_IMAGE_MANIFEST_STAGE116.json).
@@ -54,7 +54,7 @@ Current source branch `research/tahdhib-stage116-print-source-20261112`; final P
 
 ## Unambiguous next point for another chat
 
-1. Finish verbatim **49 Q258** original table cells, **105 Q294** shorthand cells (with direction), and **12 Q309** example sentences, comparing both printed impressions and attaching English **without overwriting** Stage114.
+1. Finish verbatim **49 Q258** original table cells, **105 Q294** shorthand cells (with direction), and **10 remaining Q309** example sentences, comparing both printed impressions and attaching English **without overwriting** Stage114.
 2. Run systematic full Arabic–English clause alignment over H and Y, recording *unit and original-page* hashes, attribution and textual differences; source excerpts do not certify whole pages.
 3. Independently collate genuine Taftāzānī manuscripts for original T, and the principal Y source as its own workstream.
 4. Resolve **all forty-six** exceptional syllogistic mixes with actual historically warranted modal semantics or explicit satisfying countermodels; keep Stage100 four mood VIII model-vacuities and Stage101 arbitrary-domain temporal proofs distinct.
