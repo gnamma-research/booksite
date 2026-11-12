@@ -203,6 +203,6 @@ for q in jobs:
     print('BUILD',q[1],flush=True)
     result.append(build(*q))
     print('DONE',q[1],result[-1]['pages'],flush=True)
-manifest=dict(revision='2026-11-11-qawtaw5',source='Gnamma translated Arabic/English matn and Tamhīd commentary, original edition N and Āshtiyānī edition A',format='A4, searchable Unicode text, source-based content',files=result,arabicVowelled=False,notOffered='A fully vowelled Arabic edition is not made from an unvowelled transcription.')
+manifest=dict(revision='2026-11-12-qawtaw16-source-scoped-reading',source='Gnamma translated Arabic/English matn and Tamhīd commentary, original edition N and Āshtiyānī edition A',format='A4, searchable Unicode text, source-based content',files=result,arabicVowelled=False,notOffered='A fully vowelled Arabic edition is not made from an unvowelled transcription.')
 (PDF/'manifest.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n',encoding='utf8')
 print('MANIFEST',len(result),'editions')
