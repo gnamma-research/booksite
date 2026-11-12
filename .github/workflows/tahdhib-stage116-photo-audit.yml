@@ -25,6 +25,8 @@ jobs:
         run: python tools/tahdhib/stage116_recover_print_scans.py
       - name: Assemble byte-preserved full Stage116 text, source-grade apparatus and integrity manifest
         run: python tools/tahdhib/build_stage116_cumulative.py
+      - name: Remove nested duplicate excerpt folders left by older builds
+        run: rm -rf texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts/excerpts
       - name: Verify exact printed source row sequence, photo hashes and inherited 1090-note corpus
         run: python tools/tahdhib/check_stage116_release.py
       - name: Commit four bounded photographic source-table excerpts (not full PDFs)
