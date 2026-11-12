@@ -188,8 +188,17 @@ async function run(browserType){
         assert.ok(content.length>700,'new Book II unit unexpectedly short: '+id);
         assert.ok(await passage.locator('[lang="ar"]').count()>0,'new Book II Arabic missing: '+id);
       }
-      assert.match(await page.locator('#passage-M-K-08').textContent(),/conjectur|not logically consistent/i);
-      assert.match(await page.locator('#passage-M-K-14').textContent(),/normalized explanatory transcription/i);
+      // Modern conjecture and transcription caveats must be preserved,
+      // but only under Tools → Editorial apparatus, not inside the author's body.
+      assert.doesNotMatch(await page.locator('#passage-M-K-08').textContent(),/not logically consistent/i);
+      await page.locator('#study-menu-open').click();
+      await page.locator('#study-menu').getByRole('button',{name:'Editorial notes · apparatus'}).click();
+      await page.locator('#study-editorial-scope').selectOption('book');
+      await page.locator('#study-editorial-search').fill('conjectur');
+      assert.match(await page.locator('#study-editorial-list').textContent(),/conjectur|not logically consistent/i);
+      await page.locator('#study-editorial-search').fill('normalized explanatory transcription');
+      assert.match(await page.locator('#study-editorial-list').textContent(),/normalized explanatory transcription/i);
+      await page.locator('#study-editorial .dialog-heading button').click();
     });
     await check(browserType.name()+' Muẓaffar added Book I original sequence',async()=>{
       await page.locator('[data-part-jump="passage-M-P-01"]').click();
