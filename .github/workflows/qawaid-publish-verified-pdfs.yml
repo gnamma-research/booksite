@@ -1,44 +1,37 @@
-name: Publish verified Qawaid PDFs
+name: Verify published Qawaid PDFs (legacy publisher retired)
 on:
   push:
     branches: [master]
     paths: ['.github/workflows/qawaid-publish-verified-pdfs.yml']
   workflow_dispatch:
 permissions:
-  contents: write
-  actions: read
+  contents: read
 jobs:
-  publish:
+  verify-current:
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
-        with: {fetch-depth: 1}
-      - name: Download already verified five-edition artifact
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Explain retired fixed Qawtaw5 PDF artifact
         run: |
-          gh api repos/gnamma-research/booksite/actions/artifacts/13295306715/zip > /tmp/qawaid-pdfs.zip
-          unzip -q -o /tmp/qawaid-pdfs.zip -d texts/al-turka/qawaid-al-tawhid/pdf/
-      - name: Verify the actual published PDF manifest
+          echo 'The obsolete fixed artifact ID 13295306715 must never overwrite the later Qawtaw16 scholarly release.'
+          echo 'This workflow is read-only; PDF release v2 is the maintained production builder.'
+      - name: Install PDF inspection
+        run: python -m pip install --quiet pypdf
+      - name: Verify current committed five PDFs without changing them
         run: |
           python - <<'PY'
           import hashlib,json,pathlib
+          from pypdf import PdfReader
           p=pathlib.Path('texts/al-turka/qawaid-al-tawhid/pdf')
           x=json.loads((p/'manifest.json').read_text())
+          assert x['revision']=='2026-11-12-qawtaw16-source-scoped-reading', x['revision']
           assert len(x['files'])==5
-          for f in x['files']:
-              v=p/f['filename']
-              assert v.exists() and v.stat().st_size>30000
-              assert hashlib.sha256(v.read_bytes()).hexdigest()==f['sha256']
-              print(f['title'],f['pages'],'pages')
+          for row in x['files']:
+              f=p/row['filename']; b=f.read_bytes()
+              assert b.startswith(b'%PDF-')
+              assert len(b)==row['size_bytes']
+              assert hashlib.sha256(b).hexdigest()==row['sha256']
+              assert len(PdfReader(f).pages)==row['pages']
+              print(row['title'], row['pages'], 'verified pages')
           PY
-      - name: Push only verified edition files
-        run: |
-          git config user.name 'gnamma-research'
-          git config user.email '13307564+gnamma-research@users.noreply.github.com'
-          git add texts/al-turka/qawaid-al-tawhid/pdf/*.pdf texts/al-turka/qawaid-al-tawhid/pdf/manifest.json
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'Publish five verified bilingual Arabic and English Qawaid PDFs'
-          git pull --rebase origin master
-          git push origin HEAD:master
