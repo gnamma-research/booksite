@@ -22,6 +22,8 @@ def read(label,url):
       obj.update(http=f.status,bytes=len(raw),contentType=f.headers.get("Content-Type"),finalUrl=f.geturl())
       decoded=raw.decode("utf-8","replace")
       obj["sample"]=decoded[:1900]
+      obj["historicalLinks"]=list(dict.fromkeys([m for m in re.findall(r'https?://[^"\\s<>]+',decoded.replace("&amp;","&")) if any(x in m.lower() for x in ("hathi","washington","books.google","digital.lib","iiif","download","gbooks","googleusercontent","babel"))]))[:50]
+      obj["viewOrDownloadHints"]=[decoded[max(0,m.start()-110):m.start()+180].replace("\\n"," ") for m in list(re.finditer(r'(?i)(download|full view|full_view|ocr|hathitrust|digital|\\.pdf)',decoded))[:30]]
       if label=="google_books_metadata":
         try:
           j=json.loads(decoded);obj["metadata"]={"title":j.get("volumeInfo",{}).get("title"),
@@ -39,5 +41,7 @@ for label,url in urls:
   obj=read(label,url);r.append(obj);print(label, obj.get("http"),obj.get("bytes"),(obj.get("error") or "")[:160],flush=True)
   if obj.get("metadata"):print("BOOK_META",json.dumps(obj["metadata"],ensure_ascii=False)[:3000],flush=True)
   if obj.get("identifiers"):print("ARCHIVE_IDS",json.dumps(obj["identifiers"]),flush=True)
+  if obj.get("historicalLinks"):print("PUBLIC_LINKS",json.dumps(obj["historicalLinks"][:18],ensure_ascii=False)[:2800],flush=True)
+  if obj.get("viewOrDownloadHints") and label in ("washington_1898_catalog","google_books_html"):print("VIEW_HINTS",json.dumps(obj["viewOrDownloadHints"][:16],ensure_ascii=False)[:2400],flush=True)
   if obj.get("linkMatches"):print("HATHI_LINKS",json.dumps(obj["linkMatches"][:16],ensure_ascii=False)[:2600],flush=True)
 OUT.write_text(json.dumps({"date":"2026-11-13","purpose":"Locate openly available 1898 scanned images of the historical Tamhid printing for SH-002 and QT-059. Catalog-only metadata does not count as collation.","probes":r},ensure_ascii=False,indent=2)+"\n")
