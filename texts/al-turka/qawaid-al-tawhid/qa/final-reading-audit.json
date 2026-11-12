@@ -7,7 +7,7 @@
   "introductoryUnits": 40,
   "mainUnits": 64,
   "concludingUnits": 6,
-  "englishWords": 48899,
+  "englishWords": 48897,
   "allArabicEnglishExportSectionsPresent": true,
   "recordedMainSourceHashesReproduced": 64,
   "sourceHashChecks": [
@@ -270,9 +270,9 @@
   ],
   "fourAncestralBridgesSeparatelyAttributed": true,
   "protectedTextsUnchanged": {
-    "data/units.js": "223b1ba08ff4b61018de308a11f328377cd9ed654592cdbb4cc618d8a943dd39",
-    "data/parallel-matn.md": "295a13e18027ea10ff11fd94c47c8c012648a25e4ad843ae7d76e5427cb2e659",
-    "data/commentary-main-001-019.js": "0251417ffe6322257a43fb23aab31d6dff2e1e1e17c71a2d46d206b087e63cce",
+    "data/units.js": "ada59de6d7a130c9c02f8fe167087ebb327c747632c6a2148bc38c2af6d8736c",
+    "data/parallel-matn.md": "daa38dd6c1ec8c0ed318c8d841f018fec037dcd0ac51726f51279ea7ffffd860",
+    "data/commentary-main-001-019.js": "addf95c50377089dba3cea2c52dfb35221f0840ce1e21f437bbfde3752a4a156",
     "data/commentary-main-020-060.js": "bc5e63527e2a18a1f3ebfa8c585f3023ac7476d50e475b5effbbee8ee11d90ec"
   },
   "qt059OriginalLacuna": "noted and deferred, no reconstruction",
@@ -284,5 +284,5 @@
   "readabilityCorrection": "SH-061-A: closures -> locks for أقفاله; Arabic unchanged; variant note preserved",
   "stalePilotQueueRemoved": true,
   "singleFileReaderGenerated": true,
-  "singleFileSha256": "f9c1e4797c380e1ddd3b5e2f3193abd939fe7dce145a4641d6f74df3908463aa"
+  "singleFileSha256": "9e765e8d36c0cb853186dde35eaadd769cf4cfd45f5350c4e14ca2a358c586de"
 }
