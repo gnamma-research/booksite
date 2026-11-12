@@ -1,3 +1,4 @@
+# Rerun browser parity using nine documented preferred-Arabic variants while preserving base witness hashes.
 # Rerun after restoring integrated Arabic-English full-text search in qawaid-study.js.
 name: Qawtaw16 final source-scoped edition acceptance
 on:
