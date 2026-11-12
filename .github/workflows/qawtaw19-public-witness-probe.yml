@@ -1,0 +1,24 @@
+name: Qawtaw19 open historical witness access probe
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/qawtaw19-public-witness-probe.yml'
+      - 'tools/qawtaw19_public_witness_probe.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-archive-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check public historical print catalog and preview endpoints
+        run: python tools/qawtaw19_public_witness_probe.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawtaw19-access-evidence
+          path: qawtaw19-probe.json
+          retention-days: 21
