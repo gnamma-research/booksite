@@ -1,0 +1,26 @@
+name: Qawtaw19 official 1898 Google Books PDF acquisition
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/qawtaw19-1898-public-print.yml'
+      - 'tools/qawtaw19_1898_google_public_print.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-print:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retrieve Google Books official freely offered 1898 PDF, if accessible
+        run: python tools/qawtaw19_1898_google_public_print.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawtaw19-public-1898-witness
+          path: |
+            qawtaw19-1898-download-report.json
+            qawtaw19-1898-google-public-print.pdf
+          retention-days: 14
