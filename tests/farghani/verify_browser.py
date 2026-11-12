@@ -125,6 +125,17 @@ def run_browser(p,engine,browser_name):
         assert "Source, notes and variants" in page.locator("#pr-dialog-content").inner_text(),f"{label}: page evidence missing"
         assert page.locator('#pr-dialog-content a[href*="critical-edition.html?page=18"]').count()==1,f"{label}: per-page source route missing"
         page.locator("#pr-close").click()
+        # Previously flattened modern notes must be absent from Farghānī's Arabic,
+        # but present in the separate current-page scholarly apparatus.
+        assert "رواه مسلم في صحيحه" not in page.locator("#p20 .pr-ar").inner_text(),f"{label}: p20 modern note leaked into Arabic"
+        assert "هذا الأثر لم أجده" not in page.locator("#p25 .pr-ar").inner_text(),f"{label}: p25 modern note leaked into Arabic"
+        assert "الآية 7" in page.locator("#p26 .pr-ar").inner_text(),f"{label}: genuine Quranic verse locator was stripped"
+        page.locator("#pr-study-open").click()
+        page.locator('#pr-dialog-content select[aria-label="Source evidence for Beirut printed page"]').select_option("20")
+        assert "رواه مسلم في صحيحه" in page.locator(".pr-study-evidence").inner_text(),f"{label}: p20 note lost from separate Study apparatus"
+        page.locator('#pr-dialog-content select[aria-label="Source evidence for Beirut printed page"]').select_option("25")
+        assert "هذا الأثر لم أجده" in page.locator(".pr-study-evidence").inner_text(),f"{label}: p25 note lost from separate Study apparatus"
+        page.locator("#pr-close").click()
         # 559 selected records must stay usable in page-filtered critical viewer.
         page.goto(BASE+"critical-edition.html?page=52",wait_until="domcontentloaded",timeout=60000)
         page.wait_for_selector(".audit-clause")
