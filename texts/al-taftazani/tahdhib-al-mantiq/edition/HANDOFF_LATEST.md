@@ -1,34 +1,44 @@
-# Tahdhīb Stage118 — complete cumulative handoff and source-cell continuation
+# Tahdhīb Stage119 — Q309 complete working example coverage with two source disagreements
 
-**12 November 2026 · Unabridged source-cell indexing, partially translated; NOT a full critical translation of all scanned table cells.**
+**12 November 2026 · Working scholarly edition. This handoff documents new source-facing translation and corrections, not a complete critical edition.**
 
-## Must inherit the complete prior edition
+**Source register clarification:** Four recovered source tables (Q258, Q294, Q300 and Q309) remain distinct from the historical continuous reading text. Stage119 addresses Q309 worked examples and selected Q294 relation marks, without claiming the other tables are fully transcribed.
 
-The historical H numbered first-pass *translation* is unchanged at **1,090 records in 14 locally numbered sections**, **1,029 first-pass renderings**, **four table-affected records**, and **57 modern-reference-only records**. Last substantive numbered H note is `Sciences 86, printed Q395`. The complete earlier Stage117 archive is preserved **byte-for-byte inside the user-downloadable Stage118 ZIP**. Its published full English cumulative Markdown remains [here](batches/hawashi-all-sections-cumulative-stage117.md). All preceding handoffs remain available: [Stage114](HANDOFF_STAGE114.md), [Stage115](HANDOFF_STAGE115.md), [Stage116](HANDOFF_STAGE116.md), [Stage117](HANDOFF_STAGE117.md).
+## Inherited cumulative corpus and no-retranslation rule
 
-Authorial voices: Taftāzānī original `T`; main al-Yazdī commentary `Y`; mixed-author later glosses `H`; later editorial references. Neither a later print nor a modern paraphrase is an independent authorial manuscript.
+- T = al-Taftāzānī's original `Tahdhīb al-Manṭiq` matn, Y = al-Yazdī principal commentary, H = later mixed-author ḥawāshī, and modern text references = a separate voice. Preserve these.
+- **Stage114 historical H corpus unchanged:** 1,090 source-numbered positions across 14 separate local note sequences, 1,029 first-pass English renderings, 4 table-affected notes and 57 modern reference-only entries. Historical prose ends at H-SCIENCES-086, Q395. There is **no new forward section** to translate after Q395.
+- The full prior [Stage117 cumulative Markdown](batches/hawashi-all-sections-cumulative-stage117.md) and [Stage118 source-cell register](STAGE118_SOURCE_CELL_RESEARCH.md) remain unchanged. [Immutable Stage118 handoff](HANDOFF_STAGE118.md) retains the earlier stage's exact limits. All Stage114–Stage117 handoffs survive as historical snapshots.
+- Existing Stage118 Q258: 49 original definitional positions, **24 selected photographed phrase glosses**, **zero fully certified cell-by-cell English translations**. Existing Stage118 Q294: 105 positions, **61 provisional inclusion, 33 overlap, 11 disjointness broad families**, while exact direction and modal qualifiers are still an **open textual task**. Stage119 has **not** promoted any of those statuses.
 
-**Source-continuity clarification:** The four historical source tables (Q258, Q294, Q300 and Q309) remain separate from the unmodified Stage114 first-pass English corpus. Locating tables is not the same as fully translating or verifying their cells.
+## Additional Stage119 Q294 original-code verification
 
-## Stage118 actually completed
+[Nineteen exact photographed relation glyph readings](STAGE119_Q294_NINETEEN_DIRECT_GLYPHS.md) now identify **14** source marks `من` (overlap) and **5** source marks `ين` (disjointness) with exact historical row/column coordinates, beyond the inherited broad family census. [Machine-readable exact-symbol index](STAGE119_Q294_NINETEEN_DIRECT_GLYPHS.json) preserves photographic provenance and individual grades. **86** Q294 source symbols remain without individual exact transcription (including all 61 inclusion-family symbols with possible `فم/حم` directions and `ط/ف` qualifiers). No modal entailment is thereby proved.
 
-1. **All 105 Q294 comparison cells independently indexed as historical original-image positions** and given *provisional visual family labels*: 61 inclusion, 33 overlap, 11 disjointness. Source code `فم/حم` directions and `ط/ف` restrictions remain **unverified for every inclusion-family cell**. [Machine-readable 105-cell register](STAGE118_Q294_105_SOURCE_SYMBOL_FAMILIES.json) · [Source-graded interactive matrix](STAGE118_SOURCE_CELL_READER.html).
-2. **All 49 Q258 definitional judgment cells indexed** with the historical ordered row/column terms. Sixteen particular printed phrases have bounded English explanations; not the entire 49 cells. Crucial difference: proximate genus + proximate differentia is sound and accepted; reversing it can be sound in content but unacceptable in arrangement due to `تقدم الأخص على الأعم`. [49-cell index](STAGE118_Q258_49_DEFINITION_SOURCE_PHRASES.json).
-3. **Q309 final D/D historical example** source-photographically read, plus a **provisional** reading of K/K with unresolved syntax. Three other difficult cells remain exact-text gaps; do not claim Q309 as fully sentence-checked. [Q309 source dossier](STAGE118_Q309_SOURCE_REVIEW.md).
-4. [Stage118 entire research status and limitations](STAGE118_SOURCE_CELL_RESEARCH.md) preserves source URLs, historical code distinctions and grade boundaries. The standalone downloadable offline cell viewer also contains actual individually cropped images and SHA256, not merely a restatement of the 49/105 denominators.
+## New substantive Stage119 Q309 output
 
-The Stage118 offline cumulative ZIP contains: the unmodified entire Stage117 recovery ZIP, 154 original source-cell PNGs embedded in a standalone HTML research desk, an 85KB cell-hash and quality manifest, 24 English phrase readings, two Q309 working/review entries, and SHA256SUMS. The ZIP was tested against its manifest. The offline package is user-provided as a file in the chat and **is not to be represented as already present in the GitHub repository**.
+[Complete fifteen-position bilingual comparative record](STAGE119_Q309_COMPARATIVE_WORKING_READINGS.md) · [machine-readable per-cell readings and source grades](STAGE119_Q309_COMPARATIVE_WORKING_READINGS.json) · [separate user-facing reader](STAGE119_Q309_PARALLEL_READER.html).
 
-## Unresolved genuine scholarship — do not relabel partial as complete
+The photographed Q309 table comprises 15 classified types: **9 connected** and **6 disjunctive**. Three source rows themselves give the instruction `ذكر ما لا يخفى`; the other **12/12 now have working Arabic plus English renderings** in the comparative register. This means *draft coverage of the original worked-example positions*, **not** twelve independently certified diplomatic translations. **Four** readings (K08, D02, D04, D05) still carry significant phrase-boundary or lexical uncertainties; **two** (K02, D06) have witness-level wording disagreements. These were not quietly invented or flattened to one reading.
 
-- Q258: complete **49** full multi-line diplomatic Arabic verdicts, including full English, argumentation and both impressions.
-- Q294: all **105** exact historical source code expressions with their upper/lower direction and conditional qualifications; broad shape-family labels have not satisfied this.
-- Q309: **three** difficult historical exemplar quotations need exact reconstruction; one of the two new readings is explicitly provisional.
-- Whole H and Y Arabic–English clause-by-clause audit across all respective source units and original printed pages, and independently catalogued manuscript readings. Current numbers of whole H photo-and-text certified pages and independent Y manuscript positions remain unchanged at **zero**.
-- The 46 exceptional fourth-figure modal syllogisms already have source-typed result labels but **no newly verified historical all-world necessity theorem proofs**. Existing Stages97–101 remain the controlling modal research.
+Two material source disagreements:
+1. At K02 (connected C/D), H printed `متصفًا بالنطق` versus derivative Shamela `مستلزمًا للنطق`. Keep both strings and verify the exact original letterforms before normalising.
+2. At D06 (disjunctive D/D), H1405/H1433 photographed printings appear to have `زوجًا أو كسرًا` in the second alternative; the Shamela digitisation has `لا زوجًا ولا فردًا`. The previous Stage118 rendering *'neither even nor odd'* must not be attributed unqualified to the two photographed prints. The variant is recorded openly, not treated as an authorial emendation.
 
-## Resume instruction
+Additional earlier example omissions corrected at the working level include the historical `دائمًا` quantifier in D03 and K07. Preserving source form matters because the table illustrates **nested types of propositions**, not formal validity of each example's entailment.
 
-First review the photographic family annotations (particularly 61 inclusion cells' source `فم/حم` qualifiers); then translate Q258's 49 entire verdicts with ordered positions, then 3 hard Q309 sentences; check all in the H1405 and H1433 original printed scans. Preserve entire previous text/quality levels. Do not restart Concepts36 or posit additional historical H content beyond Q395. The separate modal-proof and independent-manuscript programme must not be treated as discharged by this photographic source classification.
+## Source and authenticity limits
 
-**Publication:** This handoff and research reader are on the Stage118 research branch pending review/merge; confirm GitHub Pages separately before claiming a live deployment.
+- Primary print H1405 Q309: <https://archive.org/download/lis_fa12/lis_fa1208.pdf>, zero-based PDF index 310; SHA256 `696c7b2e2884414f34d90203326f7b07f72e207849080e5069aadd0f12bb5759`.
+- Comparison print H1433 Q309: <https://archive.org/download/lis_fa12/lis_fa1209.pdf>, zero-based index 309; SHA256 `c119de2073dee4610e99a35cd01bd075841cc0e4dfaef7a9473b950dd250c70d`.
+- Derivative digital comparator: <https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf>, table in the §5.3.5 neighbourhood (extracted lines 4250–4283). **Not** a new manuscript witness, and cannot silently supersede H1405/H1433.
+- [Bounded original photographic source excerpt](source-table-excerpts/print1405_Q309_table_excerpt.png) and [SHA256 provenance](source-table-excerpts/PRINT_IMAGE_MANIFEST_STAGE116.json) remain unchanged.
+- **New whole H pages Arabic–English source-certified: zero; new authorial manuscript variants: zero; new independent historical full-modality proofs for the separate 46 figure-IV syllogisms: zero.** A Q309 source-table comparison is not such a proof.
+
+## Full publication and exact future work
+
+Stage119 creates [full cumulative Stage119 historical H text and apparatus](batches/hawashi-all-sections-cumulative-stage119.md) from Stage117 full original bytes plus the preserved Stage118 and new Stage119 source dossiers; [checksum manifest](STAGE119_CUMULATIVE_FILE_INTEGRITY.json) is generated by the release builder. This does **not** overwrite source wording or relabel existing 1,090 records. If the generator or package isn't yet present/verified, describe this path as pending rather than claiming complete release.
+
+**Next tasks:** final check K02 and D06 witness readings letter-by-letter; complete the four provisional Q309 cases; transcribe *all* 49 Q258 multi-line Arabic definitions with full literal English; complete the **86** Q294 source symbols not individually transcribed (and verify the existing 19 against a second print), including `فم/حم` directional and `ط/ف` conditions; conduct complete H/Y Arabic clause alignment; collate independent genuine manuscripts; solve the separate 46 historical-strength modal consequence problems with proofs or countermodels.
+
+The photograph and digital text have been checked for finite locators, but neither a citation nor a checksum establishes the accuracy of a full critical edition. **Never restart an old translation gap pointer such as Concepts36.**
