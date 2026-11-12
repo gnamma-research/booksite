@@ -70,6 +70,8 @@ function studyIcon(type){
  appearance:'<path d="M20.5 14.2A8.6 8.6 0 0 1 9.8 3.5 8.8 8.8 0 1 0 20.5 14.2Z"/>',
  reading:'<path d="M4 5h16M4 11h16M4 17h10"/><circle cx="17" cy="17" r="3"/>',
  about:'<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7v.5"/>',
+ offline:'<path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/>',
+ book:'<path d="M12 6c-3-2-6-2-10-1v14c4-1 7-1 10 1 3-2 6-2 10-1V5c-4-1-7-1-10 1zM12 6v14"/>',
  contents:'<path d="M7 5h13M7 12h13M7 19h13"/><circle cx="3" cy="5" r="1"/><circle cx="3" cy="12" r="1"/><circle cx="3" cy="19" r="1"/>',
  search:'<circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/>',
  close:'<path d="M5 5l14 14M19 5 5 19"/>',
@@ -149,6 +151,8 @@ function openPanel(panel,param){
   groupButton('Primary sources','references','sources','Qurʾān, quoted philosophical works and cross-references'),
   groupButton('Search terms & sources','source-search','search','Find technical terms and primary-source cards'),
   groupButton('PDF editions','pdf','pdf','Reading, Study and Reference'),
+  groupButton('Offline reader','offline','offline','Save a local source-scoped reader copy'),
+  groupButton('Research files','files','book','Full bilingual text, source checks and critical audit'),
    groupButton('Editorial & textual notes','apparatus-notes','sources','Source variants and editorial notes, outside the reading text'),
 
   groupButton('Appearance','appearance','appearance','Themes and type sizes'),
@@ -158,6 +162,8 @@ function openPanel(panel,param){
  if(panel==='advanced'){panelClose();window.GnammaQawaidSearch?.open?.();return;}
  if(panel==='desk'||panel==='notes'||panel==='bookmarks'){panelClose();window.GnammaQawaidDesk?.open?.(panel==='bookmarks'?'bookmarks':panel==='notes'?'notes':'all');return;}
  if(panel==='modes')return modePanel();
+ if(panel==='offline')return offlinePanel();
+ if(panel==='files')return filesPanel();
  if(panel==='source-search')return show('Search terms & sources','<input class="gn-study-search" id="gn-source-query" placeholder="Find a term, title or source…" type="search"><div id="gn-search-results"></div>');
  if(panel==='dictionary')return dictionaryPanel(param);
  if(panel==='subjects')return subjectsPanel(param);
@@ -178,6 +184,32 @@ function openPanel(panel,param){
 function modePanel(){
  const current=Number(document.body.dataset.focus||0),names=[['0','Reading','Original and commentary with full navigation'],['1','Focus','Simpler single-passage display'],['2','Minimal','Hide header and editorial apparatus'],['3','Continuous','All passages in one uninterrupted scroll']];
  show('Reading modes','<p class="gn-help">The same four reading states as the established Gnamma focus control. Matn and Sharḥ remain independent.</p>'+names.map(([id,label,desc])=>'<button type="button" class="gn-menu-row" data-qaw-focus="'+id+'" aria-pressed="'+(current===Number(id))+'"><span><b>'+label+'</b><small>'+desc+'</small></span>'+studyIcon('back')+'</button>').join('')+'<p class="gn-help">Source notes remain outside the running text in all modes.</p>');
+}
+function filesPanel(){
+ show('Research files','<p class="gn-help">Full recoverable scholarly records. A digital transcription is not an independent historical manuscript.</p>'+
+ '<div class="gn-locations">'+[
+  ['Original bilingual matn','data/parallel-matn.md'],['Complete bilingual commentary','data/parallel-commentary.md'],
+  ['Critical decisions','textual-decisions.html'],['Full 5,520-segment comparison ledger','qa/clause-ledger.json'],
+  ['Final source-scoped audit','editorial/QAWTAW16_SOURCE_SCOPED_FINAL_AUDIT_2026-11-12.md'],
+  ['Five PDF edition manifest','pdf/manifest.json']].map(([name,href])=>
+  '<a href="'+href+'" target="_blank" rel="noopener"><b>'+name+'</b></a>').join('')+'</div>');
+}
+function offlinePanel(){
+ const enabled=Boolean('serviceWorker' in navigator);
+ show('Offline reader','<p class="gn-help">Download the existing reader, two authorial layers, matching engines, dictionary data and five verified PDF files for offline access on this device. Private notes remain browser-local and are not stored in the service worker.</p>'+
+ '<button type="button" class="gn-menu-row" data-qaw-offline="install"'+(!enabled?' disabled':'')+'>'+studyIcon('offline')+
+ '<span><b>Save reader for offline use</b><small>Copies the released files to this browser; no translation or manuscript text is modified.</small></span></button>'+
+ '<p id="qaw-offline-status" role="status">'+(enabled?'Not yet checked.':'Offline storage is not supported by this browser.')+'</p>');
+}
+async function installOffline(){
+ const node=$('#qaw-offline-status');if(node)node.textContent='Checking and saving published reader files…';
+ try{
+  if(!('serviceWorker' in navigator)||!window.isSecureContext)throw Error('A secure browser with Service Worker support is required.');
+  const reg=await navigator.serviceWorker.register('sw.js',{scope:'./'});
+  await navigator.serviceWorker.ready;
+  if(node)node.textContent='Offline reader successfully installed for this browser. Open the saved reader URL while offline to use it.';
+  return reg;
+ }catch(e){if(node)node.textContent='Could not save offline reader: '+e.message;return null;}
 }
 function editorialNotesPanel(){
  const id=currentQT(),u=byId.get(id)||matn[0],related=sharh.filter(c=>c.matnId===u.id);
@@ -256,9 +288,10 @@ async function pdfPanel(){
  }catch{const pane=$('#gn-study-content');if(pane)pane.innerHTML='<p role="alert">The published PDF manifest could not be loaded. No unverified PDF options will be offered.</p>';}
 }
 function clickDelegated(e){
- const el=e.target.closest('[data-study-close],[data-open-study],[data-open-term],[data-expand-term],[data-open-source],[data-study-goto],[data-qaw-focus],[data-qaw-save-term],[data-qaw-save-source],[data-qaw-pdf-tier]');if(!el)return;
+ const el=e.target.closest('[data-study-close],[data-open-study],[data-open-term],[data-expand-term],[data-open-source],[data-study-goto],[data-qaw-focus],[data-qaw-save-term],[data-qaw-save-source],[data-qaw-pdf-tier],[data-qaw-offline]');if(!el)return;
  if(el.hasAttribute('data-study-close')){panelClose();return}
  if(el.dataset.qawPdfTier){pdfTier=el.dataset.qawPdfTier;renderPDFTier();return;}
+ if(el.dataset.qawOffline==='install'){installOffline();return;}
  if(el.dataset.qawFocus!==undefined){panelClose();window.GnammaQawaidReader?.setFocus?.(Number(el.dataset.qawFocus));return;}
  if(el.dataset.qawSaveTerm){const t=termMap.get(el.dataset.qawSaveTerm);window.GnammaQawaidDesk?.add?.('term',currentQT(),t?.ar||'', 'ar',null,'',t?.en||'Dictionary entry');return;}
  if(el.dataset.qawSaveSource){const r=citationMap.get(el.dataset.qawSaveSource);window.GnammaQawaidDesk?.add?.('source',currentQT(),r?.arabic||'', 'ar',null,'',r?.title||'Source');return;}
@@ -322,6 +355,6 @@ function annotateParagraph(paragraph,matched){
  }
  if(links){segment.push(document.createTextNode(txt.slice(cursor)));node.replaceWith(...segment);}
 }
-window.GnammaQawaidStudy=Object.freeze({openPanel,openTerm:id=>termPanel(id),openSource:id=>sourcePanel(id),openPDF:pdfPanel});
+window.GnammaQawaidStudy=Object.freeze({openPanel,openTerm:id=>termPanel(id),openSource:id=>sourcePanel(id),openPDF:pdfPanel,installOffline});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setup);else setup();
 })();
