@@ -1,8 +1,8 @@
 # Sīrah and the Making of Islamic Civilization · Gnamma Research
 
-Public URL: `/research/seerah/` · source edition 1.4, prose revision 1.4.1 · 46 matns + 46 shurūḥ.
+Public URL: `/research/seerah/` · source edition 1.4; retained edition 1.4.1; current integrated research edition 1.5.0 · 46 matns + 46 shurūḥ.
 
-The Research landing, reader, visual atlas and dossiers are four separate presentations of one work. **The canonical content is `data/chapters.json` and `data/dossiers.json`**, based on the preserved `editorial/source-edition-1.4.md`; the current fully synchronized manuscript is `editorial/current-edition-1.4.1.md`. This is a working *research edition*, not a completed critical collation of original Sīrah manuscripts.
+The Research landing, reader, visual atlas and dossiers are four separate presentations of one work. **The canonical content is `data/chapters.json` and `data/dossiers.json`**, based on the preserved `editorial/source-edition-1.4.md`; the current fully synchronized manuscript is `editorial/current-edition-1.5.0-integrated.md`. This is a working *research edition*, not a completed critical collation of original Sīrah manuscripts.
 
 ## Reader contract
 
@@ -29,7 +29,7 @@ Primary-text manuscript collation of the Medinan agreements and al-Ḥudaybiyyah
 
 ## Research extension · 11 November 2026
 
-Chapter 01 has a source-led expanded matn and sharḥ, synchronized in the static reader, canonical JSON and complete manuscript. See [the full research dossier](tafsir-research.html) and [the 46-chapter review map](revision-map.html). Chapter 02 has since been expanded and synchronized in the canonical JSON, static reader and complete manuscript; Chapters 03–46 remain at their previous research edition pending individual revisions.
+Chapter 01 has a source-led expanded matn and sharḥ, synchronized in the static reader, canonical JSON and complete manuscript. See [the full research dossier](tafsir-research.html) and [the 46-chapter review map](revision-map.html). Chapter 02 has since been expanded and synchronized in the canonical JSON, static reader and complete manuscript; On 12 November, Chapters 03–46 received newly written matns and substantive interpretive sharḥ additions, while their prior historical-source discussions were retained.
 
 ## Muhammadan axial framework · 11 November 2026
 
@@ -38,3 +38,9 @@ The [Muhammadan Axis of ʿUmrān](editorial/MUHAMMADAN_AXIS_OF_UMRAN_METHOD.md) 
 ## Muhammadan Reality and Miʿrāj research · 11 November 2026
 
 The [source-led dossier on the Muhammadan Reality, ascension, Logos and the relation of higher spiritual and earthly ʿumrān](editorial/MUHAMMADAN_REALITY_MIRAJ_HIGHER_AND_EARTHLY_UMRAN_RESEARCH_20261111.md) compares Ibn ʿArabī, al-Qūnawī, Farghānī, al-Mahāʾimī, Ibn Turka, al-Sulamī/Colby, Lings, Guénon, Schuon and the Burda. It records which passages were directly inspected and which remain uncollated. The continuous reader text remains unchanged by this methodological publication.
+
+## Edition 1.5.0 · All seven books · 12 November 2026
+
+All 46 chapter pairs are synchronized in the canonical JSON, static reader and [complete versioned manuscript](editorial/current-edition-1.5.0-integrated.md). Chapters 01–02 retain their prior deep research; Chapters 03–46 have fully rewritten narrative matns and new integrated sharḥ analysis while retaining the previous historical-source commentary. This is **an integrated explanatory first pass**, not exhaustive new collation of each primary source or the nine older critical dossiers. Draft contributions for the ten book-level work packages remain under [editorial/rewrite-20261112](editorial/rewrite-20261112), and the pre-12-November manuscript and chapter JSON are archived in the editorial directory.
+
+The [revised Akbarian integral framework](editorial/AKBARI_INTEGRAL_FRAMEWORK_20261112.md) governs interpretation and separates norm, historical evidence, spiritual standpoint and institutional process. Chapter-level source audits, stylistic deduplication and external scholarly review remain necessary. Older dated status paragraphs below describe their historical stage, not the current publication state.
