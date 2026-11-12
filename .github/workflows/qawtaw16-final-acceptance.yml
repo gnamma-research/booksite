@@ -1,0 +1,68 @@
+name: Qawtaw16 final source-scoped edition acceptance
+on:
+  push:
+    branches: [qawtaw16-final-source-scoped-20261112]
+    paths:
+      - '.github/workflows/qawtaw16-final-acceptance.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: qawtaw16-source-scoped-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      P: texts/al-turka/qawaid-al-tawhid
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: qawtaw16-final-source-scoped-20261112
+          fetch-depth: 1
+      - name: Preserve exact checkout SHA
+        run: git rev-parse HEAD > /tmp/qawtaw16-expected-head
+      - name: Regenerate model-assisted source ledger from reviewed decisions
+        run: |
+          python "$P/qa/qawtaw5_release.py" --ledger
+          node "$P/qa/check-commentary.mjs"
+      - name: Install Arabic PDF and browser acceptance dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core poppler-utils libpango-1.0-0 libpangocairo-1.0-0
+          python -m pip install --quiet weasyprint pypdf playwright
+          python -m playwright install --with-deps chromium
+      - name: Rebuild five source-scoped PDF editions and updated manifest
+        run: python "$P/pdf/build_editions.py"
+      - name: Enforce canonical 171-unit, 5520-clause, five-PDF source-graded acceptance
+        run: python "$P/qa/qawtaw16_final_acceptance.py"
+      - name: Run actual browser UI tests for both reading layers, references and mobile widths
+        run: |
+          python "$P/qa/test-commentary-browser.py"
+          python "$P/qa/check-layered-reader.py"
+          python "$P/qa/check-study-ui.py"
+      - name: Commit reproducibly regenerated derivative files to this review branch
+        run: |
+          git config user.name 'GNAMMA Qawtaw16 QA'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin qawtaw16-final-source-scoped-20261112
+          test "$(git rev-parse origin/qawtaw16-final-source-scoped-20261112)" = "$(cat /tmp/qawtaw16-expected-head)"
+          git add "$P/pdf/"*.pdf "$P/pdf/manifest.json"
+          git add "$P/qa/clause-ledger.json" "$P/qa/qawtaw5-unresolved-register.json" "$P/qa/qawtaw5-summary.json"
+          git add "$P/qa/qawtaw16-final-acceptance.json"
+          git add "$P/editorial/CLAUSE_REVIEW_COMPLETE_2026-11-11.md" "$P/editorial/CLAUSE_REVIEW_PASS1_2026-11-09.md"
+          if ! git diff --cached --quiet; then
+            git commit -m 'Qawtaw16 verified PDFs and complete reproducible critical-flag ledger'
+            git push origin HEAD:qawtaw16-final-source-scoped-20261112
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawtaw16-final-source-scoped-qa
+          path: |
+            texts/al-turka/qawaid-al-tawhid/qa/qawtaw16-final-acceptance.json
+            texts/al-turka/qawaid-al-tawhid/pdf/manifest.json
+            texts/al-turka/qawaid-al-tawhid/qa/layered-browser-results/
+            texts/al-turka/qawaid-al-tawhid/qa/study-ui-report.json
+          retention-days: 30
