@@ -32,6 +32,11 @@ assert len(re.findall(r"(?m)^## HWN-[A-Z0-9-]+",full.decode()))==1090
 assert manifest["Q309WorkedDrafts"]==12 and manifest["Q309WitnessDiscrepancies"]==2
 assert manifest["Q258SelectedPhrasesUnchanged"]==24
 assert manifest["Q294ProvisionalFamiliesUnchanged"]==105
+q294=load("STAGE119_Q294_NINETEEN_DIRECT_GLYPHS.json")
+assert q294["counts"]["selectedDirectSymbolWorkingReadings"]==19
+assert len(q294["entries"])==19
+assert sorted(x["arabic_source_glyph"] for x in q294["entries"]).count("من")==14
+assert sorted(x["arabic_source_glyph"] for x in q294["entries"]).count("ين")==5
 assert manifest["newlyCertifiedWholeHPrintedPages"]==0 and manifest["newHistoricallyValidModal46Proofs"]==0
 for item in manifest["appendices"]:
  b=Path(item["path"]).read_bytes()
