@@ -8,7 +8,7 @@
   "note": "The historical two-element pairs are order-sensitive; validity and scholarly acceptability must be separate.",
   "counts": {
     "original_cells": 49,
-    "selected_phrase_english_glosses": 16,
+    "selected_phrase_english_glosses": 24,
     "fully_certified_cells": 0
   },
   "source_headers_order": [
@@ -136,10 +136,10 @@
       "row_term_ar": "الجنس القريب",
       "column_term_ar": "الجنس البعيد",
       "printed_page": 258,
-      "reviewed_selected_arabic_phrase": null,
-      "english_of_selected_phrase": null,
+      "reviewed_selected_arabic_phrase": "غير صحيح لتقدم الأخص على الأعم",
+      "english_of_selected_phrase": "Invalid because the more specific term precedes the more general",
       "complete_cell_arabic_english_certified": false,
-      "grade": "source cell located, not independently transcribed"
+      "grade": "short phrase visually reviewed, not whole cell"
     },
     {
       "id": "Q258-R2-C4",
@@ -208,10 +208,10 @@
       "row_term_ar": "الجنس البعيد",
       "column_term_ar": "الجنس القريب",
       "printed_page": 258,
-      "reviewed_selected_arabic_phrase": null,
-      "english_of_selected_phrase": null,
+      "reviewed_selected_arabic_phrase": "غير صحيح للعموم",
+      "english_of_selected_phrase": "Invalid because too general",
       "complete_cell_arabic_english_certified": false,
-      "grade": "source cell located, not independently transcribed"
+      "grade": "short phrase visually reviewed, not whole cell"
     },
     {
       "id": "Q258-R3-C3",
@@ -400,10 +400,10 @@
       "row_term_ar": "الفصل البعيد",
       "column_term_ar": "الفصل القريب",
       "printed_page": 258,
-      "reviewed_selected_arabic_phrase": null,
-      "english_of_selected_phrase": null,
+      "reviewed_selected_arabic_phrase": "حد ناقص غير معتبر",
+      "english_of_selected_phrase": "Incomplete real definition not accepted",
       "complete_cell_arabic_english_certified": false,
-      "grade": "source cell located, not independently transcribed"
+      "grade": "short phrase visually reviewed, not whole cell"
     },
     {
       "id": "Q258-R5-C5",
@@ -424,10 +424,10 @@
       "row_term_ar": "الفصل البعيد",
       "column_term_ar": "العرض العام",
       "printed_page": 258,
-      "reviewed_selected_arabic_phrase": null,
-      "english_of_selected_phrase": null,
+      "reviewed_selected_arabic_phrase": "غير صحيح للعموم",
+      "english_of_selected_phrase": "Invalid because too general",
       "complete_cell_arabic_english_certified": false,
-      "grade": "source cell located, not independently transcribed"
+      "grade": "short phrase visually reviewed, not whole cell"
     },
     {
       "id": "Q258-R5-C7",
@@ -436,10 +436,10 @@
       "row_term_ar": "الفصل البعيد",
       "column_term_ar": "الخاصة",
       "printed_page": 258,
-      "reviewed_selected_arabic_phrase": null,
-      "english_of_selected_phrase": null,
+      "reviewed_selected_arabic_phrase": "رسم ناقص غير معتبر",
+      "english_of_selected_phrase": "Incomplete descriptive definition not accepted",
       "complete_cell_arabic_english_certified": false,
-      "grade": "source cell located, not independently transcribed"
+      "grade": "short phrase visually reviewed, not whole cell"
     },
     {
       "id": "Q258-R6-C1",
@@ -484,10 +484,10 @@
       "row_term_ar": "العرض العام",
       "column_term_ar": "الفصل القريب",
       "printed_page": 258,
-      "reviewed_selected_arabic_phrase": null,
-      "english_of_selected_phrase": null,
+      "reviewed_selected_arabic_phrase": "حد ناقص غير معتبر",
+      "english_of_selected_phrase": "Incomplete real definition not accepted",
       "complete_cell_arabic_english_certified": false,
-      "grade": "source cell located, not independently transcribed"
+      "grade": "short phrase visually reviewed, not whole cell"
     },
     {
       "id": "Q258-R6-C5",
@@ -508,10 +508,10 @@
       "row_term_ar": "العرض العام",
       "column_term_ar": "العرض العام",
       "printed_page": 258,
-      "reviewed_selected_arabic_phrase": null,
-      "english_of_selected_phrase": null,
+      "reviewed_selected_arabic_phrase": "من البسائط غير الصحيحة للعموم",
+      "english_of_selected_phrase": "Among the simple invalid forms because too general",
       "complete_cell_arabic_english_certified": false,
-      "grade": "source cell located, not independently transcribed"
+      "grade": "short phrase visually reviewed, not whole cell"
     },
     {
       "id": "Q258-R6-C7",
@@ -520,10 +520,10 @@
       "row_term_ar": "العرض العام",
       "column_term_ar": "الخاصة",
       "printed_page": 258,
-      "reviewed_selected_arabic_phrase": null,
-      "english_of_selected_phrase": null,
+      "reviewed_selected_arabic_phrase": "رسم ناقص غير معتبر",
+      "english_of_selected_phrase": "Incomplete descriptive definition not accepted",
       "complete_cell_arabic_english_certified": false,
-      "grade": "source cell located, not independently transcribed"
+      "grade": "short phrase visually reviewed, not whole cell"
     },
     {
       "id": "Q258-R7-C1",
