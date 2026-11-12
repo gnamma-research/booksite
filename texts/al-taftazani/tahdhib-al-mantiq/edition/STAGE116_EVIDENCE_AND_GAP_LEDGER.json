@@ -1,0 +1,191 @@
+{
+  "schema": "gnamma.tahdhib.stage116.photo-audit.v1",
+  "date": "2026-11-12",
+  "sourceLayer": "H — later mixed-author glosses, not the T matn or Y principal commentary",
+  "sourcePrints": {
+    "H-1405": {
+      "url": "https://archive.org/download/lis_fa12/lis_fa1208.pdf",
+      "sha256": "696c7b2e2884414f34d90203326f7b07f72e207849080e5069aadd0f12bb5759",
+      "page_count": 402,
+      "pdfIndex0EqualsPrintedPlus": 1
+    },
+    "H-1433": {
+      "url": "https://archive.org/download/lis_fa12/lis_fa1209.pdf",
+      "sha256": "c119de2073dee4610e99a35cd01bd075841cc0e4dfaef7a9473b950dd250c70d",
+      "page_count": 401,
+      "pdfIndex0EqualsPrintedPlus": 0
+    }
+  },
+  "sourcePublicationManifest": "source-table-excerpts/PRINT_IMAGE_MANIFEST_STAGE116.json",
+  "tables": {
+    "Q258": {
+      "note": "HWN-DEFINITION-019",
+      "source_page": 258,
+      "kind": "7x7 original definitional-element verdicts",
+      "row_and_column_labels": [
+        "النوع",
+        "الجنس القريب",
+        "الجنس البعيد",
+        "الفصل القريب",
+        "الفصل البعيد",
+        "العرض العام",
+        "الخاصة"
+      ],
+      "positions": 49,
+      "positionsLocatedInPhotos": 49,
+      "verbatimCellTranscriptionCompleted": 0,
+      "verifiedPhotos": [
+        "H-1405",
+        "H-1433"
+      ],
+      "file": "source-table-excerpts/print1405_Q258_table_excerpt.png",
+      "sourcePrintClausalStatus": "prose matched selected clause; table untranslated"
+    },
+    "Q294": {
+      "note": "HWN-PROPOSITIONS-097",
+      "source_page": 294,
+      "kind": "15-class triangular pairwise modal relation symbols",
+      "row_labels": [
+        "الضرورية المطلقة",
+        "المشروطة العامة",
+        "الوقتية المطلقة",
+        "المنتشرة المطلقة",
+        "الدائمة المطلقة",
+        "العرفية العامة",
+        "المطلقة العامة",
+        "الممكنة العامة",
+        "المشروطة الخاصة",
+        "الوقتية",
+        "المنتشرة",
+        "العرفية الخاصة",
+        "الوجودية اللاضرورية",
+        "الوجودية اللادائمة",
+        "الممكنة الخاصة"
+      ],
+      "positions": 105,
+      "positionsLocatedInPhotos": 105,
+      "verbatimCellTranscriptionCompleted": 0,
+      "verifiedPhotos": [
+        "H-1405",
+        "H-1433"
+      ],
+      "file": "source-table-excerpts/print1405_Q294_table_excerpt.png",
+      "sourcePrintClausalStatus": "Q293 prose terminology checked; 105 symbols not separately transcribed"
+    },
+    "Q300": {
+      "note": "HWN-PROPOSITIONS-121",
+      "source_page": 300,
+      "kind": "8x4 compound modal qualification outcomes",
+      "row_labels": [
+        "الضرورية المطلقة",
+        "المشروطة العامة",
+        "الوقتية المطلقة",
+        "المنتشرة المطلقة",
+        "الدائمة المطلقة",
+        "العرفية العامة",
+        "المطلقة العامة",
+        "الممكنة العامة"
+      ],
+      "column_labels": [
+        "اللاضرورة الذاتية",
+        "اللاضرورة الوصفية",
+        "اللادوام الذاتي",
+        "اللادوام الوصفي"
+      ],
+      "printed_status_codes": [
+        "XXXX",
+        "UXRX",
+        "UURU",
+        "UURU",
+        "UUXX",
+        "UURX",
+        "RURU",
+        "RUUU"
+      ],
+      "statusCounts": {
+        "R": 7,
+        "U": 16,
+        "X": 9
+      },
+      "positions": 32,
+      "positionsLocatedInPhotos": 32,
+      "verbatimCellTranscriptionCompleted": 32,
+      "verifiedPhotos": [
+        "H-1405",
+        "H-1433"
+      ],
+      "file": "source-table-excerpts/print1405_Q300_table_excerpt.png",
+      "sourcePrintClausalStatus": "individual status symbols checked, underlying historical modal validity not independently proved"
+    },
+    "Q309": {
+      "note": "HWN-CONDITIONAL-040",
+      "source_page": 309,
+      "kind": "15 examples of conditional component structures",
+      "connected_source_order": [
+        "C/C",
+        "C/K",
+        "C/D",
+        "K/C",
+        "D/C",
+        "K/K",
+        "K/D",
+        "D/K",
+        "D/D"
+      ],
+      "disjunctive_source_order": [
+        "C/C",
+        "C/K",
+        "C/D",
+        "K/K",
+        "K/D",
+        "D/D"
+      ],
+      "sourceExampleOmissionsWithinConnected": [
+        "C/C",
+        "K/K",
+        "D/D"
+      ],
+      "sourceWordsAtOmission": "ذكر ما لا يخفى",
+      "positions": 15,
+      "positionsLocatedInPhotos": 15,
+      "structuralLabelsTranscribed": 15,
+      "arabicExampleSentencesFullyTranscribed": 0,
+      "arabicExampleSentencesPresent": 12,
+      "verifiedPhotos": [
+        "H-1405",
+        "H-1433"
+      ],
+      "file": "source-table-excerpts/print1405_Q309_table_excerpt.png"
+    }
+  },
+  "verifiedQ300StatusSymbols": 32,
+  "unverifiedDetailedVerbatimTableCells": {
+    "Q258": 49,
+    "Q294": 105,
+    "Q309ExplicitExampleCells": 12
+  },
+  "newDigitalArabicToEnglishSpotCheckedHistoricalNotes": 5,
+  "newWholePrintedPagesCertified": 0,
+  "newManuscriptCriticalVariants": 0,
+  "modernReferenceOnlyRetained": 57,
+  "completeEnglishFirstPassRetained": 1029,
+  "sourceTableAffectedCanonicalStatusRetained": 4,
+  "corpusRecordCountRetained": 1090,
+  "sourcePrintedQ387DiagramPresentInEitherInspectedPrint": false,
+  "stage115ModalOutcomesVerifiedAgainstPhotos": true,
+  "modal46": {
+    "historicalTypedCases": 46,
+    "newFullHistoricalModalProofsCertified": 0,
+    "earlierThreeArbitraryDomainTemporalConsequences": true,
+    "stage100FourModelSpecificVacuitiesRetained": true
+  },
+  "warnings": [
+    "Two editions of similar print are not independent medieval manuscript witnesses.",
+    "Q300 classification verification is not a proof of its modality claims.",
+    "Rows on Q309 intentionally omit three examples; twelve printed examples await literal translation.",
+    "Q387 hākadhā is a deictic reading, not positive proof that a missing figure existed."
+  ],
+  "cumulativeMaster": "hawashi-effective-stage114.json",
+  "releaseReader": "STAGE116_PHOTOGRAPHIC_TABLE_READER.html",
+  "handoff": "HANDOFF_LATEST.md"
+}
