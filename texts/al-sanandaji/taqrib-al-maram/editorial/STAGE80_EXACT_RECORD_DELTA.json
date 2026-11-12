@@ -1,0 +1,50 @@
+{
+  "source_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "stage": 80,
+  "changes": [
+    {
+      "id": "I073.lower.01",
+      "type": "source_transcription",
+      "from": "اعتبر ذلك الذي خارجا عنه غير داخل فيه",
+      "to": "اعتبر ذلك الذي قارنها خارجا عنه غير داخل فيه",
+      "witness": "Bulaq I:73"
+    },
+    {
+      "id": "I073.lower.02",
+      "type": "source_transcription",
+      "from": "لو قارنها شيء لا يشترط دخوله",
+      "to": "لو قارنها شيء لم يشترط دخوله",
+      "witness": "Bulaq I:73"
+    },
+    {
+      "id": "I073.lower.02",
+      "type": "bracketed_editorial_reading",
+      "from": "⟦للمقولية؟⟧",
+      "to": "⟦للمقولية⟧",
+      "source_parallel": "Sharh al Maqasid I:100",
+      "uncertain": true
+    },
+    {
+      "id": "I073.lower.04",
+      "type": "unchanged_uncertainty_annotated",
+      "reading": "⟦للمقولية؟⟧"
+    },
+    {
+      "id": "I222.lower.03",
+      "type": "printed_lacuna_app_note",
+      "printed": "وتارة انتهى",
+      "proposed_supply": "[حصولها]",
+      "source_parallel": "Sharh al Maqasid I:227",
+      "base_print_preserved": true
+    },
+    {
+      "id": "I088.lower.01",
+      "type": "no_change_confirmation",
+      "reading": "لأن عدمه ضروري"
+    }
+  ],
+  "record_count": 1400,
+  "record_ids_changed": 5,
+  "new_independently_certified_pages": 0,
+  "independent_manuscript_collation": 0
+}
