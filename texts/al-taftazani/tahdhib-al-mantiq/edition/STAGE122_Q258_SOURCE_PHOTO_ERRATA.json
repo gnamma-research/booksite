@@ -1,0 +1,50 @@
+{
+  "stage": 122,
+  "date": "2026-11-12",
+  "sourceLayer": "H later glosses; not T authorial matn",
+  "previousStage": "121",
+  "sourcePrintedImage": "source-table-excerpts/print1405_Q258_table_excerpt.png",
+  "originalPrints": [
+    {
+      "siglum": "H1405",
+      "url": "https://archive.org/download/lis_fa12/lis_fa1208.pdf",
+      "printedPage": 258,
+      "pdfPageIndexZeroBased": 259
+    },
+    {
+      "siglum": "H1433",
+      "url": "https://archive.org/download/lis_fa12/lis_fa1209.pdf",
+      "printedPage": 258,
+      "pdfPageIndexZeroBased": 258
+    }
+  ],
+  "corrections": [
+    {
+      "cell": "Q258-R01-C01",
+      "priorArabic": "غير صحيح",
+      "priorEnglish": "Incorrect",
+      "correctedArabic": "من البسائط الصحيحة المعتبرة",
+      "correctedEnglish": "One of the sound and accepted simple definitions.",
+      "status": "printed-photo correction; old negative classification materially wrong",
+      "grade": "photographic high confidence; second print consistent at page level",
+      "fullTableNowCertified": false
+    },
+    {
+      "cell": "Q258-R01-C07",
+      "priorArabic": "غير صحيح",
+      "priorEnglish": "Incorrect",
+      "correctedArabic": "غير صحيح للخصوص",
+      "correctedEnglish": "Incorrect because too specific.",
+      "status": "photographic expansion; original reason omitted in old translation",
+      "grade": "photographic high confidence",
+      "fullTableNowCertified": false
+    }
+  ],
+  "sourceStatus": {
+    "historical49CellsWithSelectedSnippet": 49,
+    "previousCrossReferenceOnlyElevenUnchanged": true,
+    "other47FullyCriticallyCollated": false,
+    "priorStageHistoricalRecordsModified": 0
+  },
+  "warning": "Overlay corrections only. Do not silently erase immutable prior Stage121 evidence."
+}
