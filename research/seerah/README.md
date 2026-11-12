@@ -1,8 +1,8 @@
 # Sīrah and the Making of Islamic Civilization · Gnamma Research
 
-Public URL: `/research/seerah/` · source edition 1.4; retained edition 1.4.1; retained integrated edition 1.5.0; current scholarly research edition 1.6.2 · 46 matns + 46 shurūḥ.
+Public URL: `/research/seerah/` · source edition 1.4; retained edition 1.4.1; retained integrated edition 1.5.0; current scholarly research edition 1.7.0 · 46 matns + 46 shurūḥ.
 
-The Research landing, reader, visual atlas and dossiers are four separate presentations of one work. **The canonical content is `data/chapters.json` and `data/dossiers.json`**, based on the preserved `editorial/source-edition-1.4.md`; the current fully synchronized manuscript is `editorial/current-edition-1.6.2-targeted-fidelity.md`. This is a working *research edition*, not a completed critical collation of original Sīrah manuscripts.
+The Research landing, reader, visual atlas and dossiers are four separate presentations of one work. **The canonical content is `data/chapters.json` and `data/dossiers.json`**, based on the preserved `editorial/source-edition-1.4.md`; the current fully synchronized manuscript is `editorial/current-edition-1.7.0-generative.md`. This is a working *research edition*, not a completed critical collation of original Sīrah manuscripts.
 
 ## Reader contract
 
@@ -69,3 +69,7 @@ Twelve narrative matns and five scholarly commentaries were corrected or recompo
 ## Book VI–VII comparison tables · 13 November 2026
 
 A [source-controlled historical synthesis](tables-vi-vii.html) compares the nine international chapters (34–42) and four modern chapters (43–46) through named encounters, institutional transmission and evidence limitations. Its [Markdown research source](editorial/TABLES_VI_VII_CIVILIZATIONAL_SYNTHESIS_20261113.md) retains sources for review. This supplement does not change the 1.6.2 matns or shurūḥ or replace prior critical dossiers.
+
+## Sīrah 1.7.0 · Generative Muhammadan explanation · 13 November 2026
+
+The [governing explanatory framework](framework.html) links the comprehensive Muhammadan reality, the valid but limited disciplinary traces, living prophetic encounters and the independent material causes of historical ʿumrān. Every one of the 46 shurūḥ contains a different substantial interpretive revision, documented in the [46-chapter ledger](editorial/CHAPTER_NEXUS_PLAN_1_7_20261113.json). All 46 matns remain identical to 1.6.2. The former chapter JSON, static reader and [complete 1.6.2 manuscript](editorial/current-edition-1.6.2-targeted-fidelity.md) are preserved. [Read the complete 1.7.0 manuscript](editorial/current-edition-1.7.0-generative.md). Source-critical verification remains incomplete.
