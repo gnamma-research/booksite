@@ -54,7 +54,7 @@ function entries(u){
    tokens:(original,norm)=>window.GnammaScholarly.tokenize(u[kind],norm,original)}));
 }
 function simple(u,words){
- const fields=lang==='ar'?[u.ar,u.title,u.body]:lang==='en'?[u.en,u.title,u.body]:[u.ar,u.en,u.title,u.body];
+ const fields=lang==='ar'?[u.id,u.ar,u.title,u.body]:lang==='en'?[u.id,u.en,u.title,u.body]:[u.id,u.ar,u.en,u.title,u.body];
  return words.some(w=>fields.some(v=>fold(v).includes(fold(w))));
 }
 function search(){
