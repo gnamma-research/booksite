@@ -43,7 +43,9 @@ async function run(width,height,label){
  await search.fill('Khadījah');
  assert.ok((await page.locator('[data-chapter-link]:visible').count())>=1);
  await search.fill('');
- await page.locator('#nav-close').click();
+ const closeControl=page.locator('#nav-close');
+ if(await closeControl.isVisible()) await closeControl.click();
+ else await page.keyboard.press('Escape'); // The close button is intentionally hidden beside the persistent desktop sidebar.
  assert.equal(await page.locator('#nav-toggle').getAttribute('aria-expanded'),'false');
  await page.goto(url+'#ch-44',{waitUntil:'load'});
  const anchor=page.locator('#ch-44');
@@ -75,4 +77,4 @@ finally{
  await browser.close();
 }
 if(report.status!=='PASS'){console.error(report);process.exit(1);}
-console.log('PASS Sīrah 1.6 '+which+' mobile/desktop reading modes, navigation, search, bookmarks, figures, source links, deep link and atlas/dossiers');
+console.log('PASS Sīrah 1.7 '+which+' mobile/desktop reading modes, navigation, search, bookmarks, figures, source links, deep link and atlas/dossiers');
