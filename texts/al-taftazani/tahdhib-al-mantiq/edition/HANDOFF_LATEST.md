@@ -20,6 +20,8 @@ The last **thirteen** length-flagged notes have been reviewed against the recove
 
 [Stage123 public thirteen-note English audit, with two historical omissions explained](STAGE123_THIRTEEN_NOTE_ENGLISH_AUDIT.md). Twelve of thirteen source note hashes match the old digital census; HWN-INTRO-018 remains one of the eleven source hash discrepancies. **All thirteen are reviewed at working argument/translation level, not independently printed-page certified.**
 
+**Historical printed tables:** Q258 (definitions), Q294 (modal proposition relations), Q300 (modal qualifications), and Q309 (conditional examples) remain separately photographed source tables. Their individual translation grades are not raised by this Stage123 priority-note review.
+
 ## New Q258 photographic erratum
 
 [Q258 R02C01 source correction](STAGE123_Q258_R02C01_PHOTO_ERRATUM.json): Stage121's **غير صحيح** (“incorrect”) is contradicted by both photographed H1405 and H1433 printings, which read **انظر** (“see the corresponding case”). The existing Stage121 reader now applies this as a *dated correction overlay*, without erasing old Stage121 evidence. The previous published total of **eleven** cross-reference-only cells is not authoritative; at least **twelve** have now been identified and the entire 49-cell matrix must be independently recounted.
