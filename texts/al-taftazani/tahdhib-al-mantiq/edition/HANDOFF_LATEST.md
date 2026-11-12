@@ -17,7 +17,7 @@ Authorial voices: Taftāzānī original `T`; main al-Yazdī commentary `Y`; mixe
 3. **Q309 final D/D historical example** source-photographically read, plus a **provisional** reading of K/K with unresolved syntax. Three other difficult cells remain exact-text gaps; do not claim Q309 as fully sentence-checked. [Q309 source dossier](STAGE118_Q309_SOURCE_REVIEW.md).
 4. [Stage118 entire research status and limitations](STAGE118_SOURCE_CELL_RESEARCH.md) preserves source URLs, historical code distinctions and grade boundaries. The standalone downloadable offline cell viewer also contains actual individually cropped images and SHA256, not merely a restatement of the 49/105 denominators.
 
-The Stage118 offline cumulative ZIP contains: the unmodified entire Stage117 recovery ZIP, 154 original source-cell PNGs embedded in a standalone HTML research desk, an 85KB cell-hash and quality manifest, 16 English phrase readings, two Q309 working/review entries, and SHA256SUMS. The ZIP was tested against its manifest. The offline package is user-provided as a file in the chat and **is not to be represented as already present in the GitHub repository**.
+The Stage118 offline cumulative ZIP contains: the unmodified entire Stage117 recovery ZIP, 154 original source-cell PNGs embedded in a standalone HTML research desk, an 85KB cell-hash and quality manifest, 24 English phrase readings, two Q309 working/review entries, and SHA256SUMS. The ZIP was tested against its manifest. The offline package is user-provided as a file in the chat and **is not to be represented as already present in the GitHub repository**.
 
 ## Unresolved genuine scholarship — do not relabel partial as complete
 
