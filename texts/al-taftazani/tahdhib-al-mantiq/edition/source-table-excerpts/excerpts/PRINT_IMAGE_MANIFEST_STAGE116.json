@@ -1,0 +1,83 @@
+{
+  "stage": "116",
+  "original_print_pdf_sources": {
+    "lis_fa1208_1405": {
+      "url": "https://archive.org/download/lis_fa12/lis_fa1208.pdf",
+      "pdf_sha256": "696c7b2e2884414f34d90203326f7b07f72e207849080e5069aadd0f12bb5759",
+      "page_count": 402
+    },
+    "lis_fa1209_1433": {
+      "url": "https://archive.org/download/lis_fa12/lis_fa1209.pdf",
+      "pdf_sha256": "c119de2073dee4610e99a35cd01bd075841cc0e4dfaef7a9473b950dd250c70d",
+      "page_count": 401
+    }
+  },
+  "excerpt_source": "lis_fa1208_1405",
+  "images": [
+    {
+      "printedPage": 258,
+      "originalPdfIndex0": 259,
+      "pixelCrop_xyxy": [
+        82,
+        675,
+        1319,
+        2008
+      ],
+      "sourcePrintedPdfSHA256": "696c7b2e2884414f34d90203326f7b07f72e207849080e5069aadd0f12bb5759",
+      "publicationPath": "texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts/print1405_Q258_table_excerpt.png",
+      "sha256": "76c3a118334354b736f129c1b71959e575a095505a9ce9904bee066643c0cc63",
+      "bytes": 484208,
+      "grade": "photo excerpt only, text cell audit separate"
+    },
+    {
+      "printedPage": 294,
+      "originalPdfIndex0": 295,
+      "pixelCrop_xyxy": [
+        70,
+        185,
+        1319,
+        2008
+      ],
+      "sourcePrintedPdfSHA256": "696c7b2e2884414f34d90203326f7b07f72e207849080e5069aadd0f12bb5759",
+      "publicationPath": "texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts/print1405_Q294_table_excerpt.png",
+      "sha256": "54b0e511e6f00748105819e7d1ca5f7b5ac77d6b2ceb2f711c7c57707ea8dd78",
+      "bytes": 369665,
+      "grade": "photo excerpt only, text cell audit separate"
+    },
+    {
+      "printedPage": 300,
+      "originalPdfIndex0": 301,
+      "pixelCrop_xyxy": [
+        103,
+        1028,
+        902,
+        1986
+      ],
+      "sourcePrintedPdfSHA256": "696c7b2e2884414f34d90203326f7b07f72e207849080e5069aadd0f12bb5759",
+      "publicationPath": "texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts/print1405_Q300_table_excerpt.png",
+      "sha256": "07eccaad47a30bb57add8a3037032923d5d19d10fe5317e77593e4a5f5921d7b",
+      "bytes": 188227,
+      "grade": "photo excerpt only, text cell audit separate"
+    },
+    {
+      "printedPage": 309,
+      "originalPdfIndex0": 310,
+      "pixelCrop_xyxy": [
+        60,
+        143,
+        1440,
+        1997
+      ],
+      "sourcePrintedPdfSHA256": "696c7b2e2884414f34d90203326f7b07f72e207849080e5069aadd0f12bb5759",
+      "publicationPath": "texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts/print1405_Q309_table_excerpt.png",
+      "sha256": "bbb7568cb7c58f2992046dd5386af84f1f1a02b095bc63ea337400e2bc02b730",
+      "bytes": 574104,
+      "grade": "photo excerpt only, text cell audit separate"
+    }
+  ],
+  "source_independence_warning": "Two scan editions/print impressions; NOT independent manuscript witnesses",
+  "pages_noted_not_reproduced": [
+    387
+  ],
+  "sha256_provenance": "sha256 of downloaded originals and extracted bounded PNG excerpt bytes"
+}
