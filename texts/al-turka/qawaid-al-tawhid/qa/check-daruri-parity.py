@@ -77,7 +77,7 @@ with sync_playwright() as pw:
   page.locator('#menu-button').click()
   page.locator('[data-open-study="dictionary"]').click()
   ck('82 technical dictionary entries',page.locator('.gn-term-grid button').count()==82)
-  page.locator('[data-open-term="existence"]').click()
+  page.locator('#gn-study-dialog [data-open-term="existence"]').click()
   ck('dictionary opens Arabic and occurrences',page.locator('.gn-headword').count()==1 and page.locator('.gn-locations a').count()>0)
   ck('dictionary item supports Reading Desk saving',page.locator('[data-qaw-save-term]').count()==1)
   page.locator('[data-qaw-save-term="existence"]').click()
