@@ -23,7 +23,7 @@ TEXT_CHECK=r"""()=>{
  const get=(selector,lang)=>Array.from(document.querySelectorAll(selector+' .'+lang+' > p'),p=>p.textContent).join('\n\n');
  const bad=[];
  for(const u of window.GNAMMA_QAWAID_MATN.units){
-  for(const lang of ['ar','en'])if(norm(get('#'+u.id+' > .matn-layer:not(.bridge-layer)',lang))!==norm(u[lang==='ar'?'arabic':'english']))bad.push(u.id+lang);
+  for(const lang of ['ar','en'])if(norm(get('#'+u.id+' > .matn-layer:not(.bridge-layer)',lang))!==norm(lang==='ar'?(u.readingArabic||u.arabic):u.english))bad.push(u.id+lang);
  }
  const seen=new Set();
  for(const u of [...window.GNAMMA_TAMHID_SHARH.units,...window.GNAMMA_TAMHID_MAIN,...window.GNAMMA_TAMHID_CONCLUSION]){
@@ -72,7 +72,7 @@ with sync_playwright() as p:
         check('immersive switches accessible',page.locator('#dock-layer-sharh').is_visible())
         check('conclusion source order',page.locator('#QT-061 .sharh-layer').evaluate_all('(els)=>els.map(x=>x.id)')==['SH-061-C','SH-061-D','SH-061-E','SH-061-F','SH-061-A','SH-061-B'])
         mismatch=page.evaluate(TEXT_CHECK)
-        check('all rendered Arabic/English and bridges match source: '+str(mismatch),not mismatch)
+        check('all rendered preferred Arabic/English and bridges match their selected readings: '+str(mismatch),not mismatch)
         page.locator('#QT-040>.unit-heading').evaluate('(el)=>el.scrollIntoView({block:"start"})');page.wait_for_timeout(180)
         check('continuous location follows passage','QT-040' in page.locator('#location-title').inner_text())
         page.locator('#dock-layer-sharh').click();page.wait_for_timeout(180)
