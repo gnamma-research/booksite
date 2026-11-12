@@ -7,7 +7,7 @@ on:
       - '.github/workflows/tahdhib-stage116-photo-audit.yml'
       - 'tools/tahdhib/stage116_recover_print_scans.py'
 permissions:
-  contents: read
+  contents: write
 jobs:
   research-scan-extraction:
     runs-on: ubuntu-24.04
@@ -18,9 +18,21 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install PDF extraction dependency
-        run: python -m pip install PyMuPDF==1.26.6
+        run: python -m pip install PyMuPDF==1.26.6 Pillow==11.3.0
       - name: Fetch Qum edition source PDF and render only bounded target pages
         run: python tools/tahdhib/stage116_recover_print_scans.py
+      - name: Commit four bounded photographic source-table excerpts (not full PDFs)
+        env:
+          PUBLISH_BRANCH: research/tahdhib-stage116-print-source-20261112
+        run: |
+          test "$GITHUB_REF" = "refs/heads/$PUBLISH_BRANCH"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Add bounded hashed Q258 Q294 Q300 Q309 original print table excerpts'
+            git push origin "HEAD:refs/heads/$PUBLISH_BRANCH"
+          fi
       - name: Upload scan candidates and page-offset manifest
         uses: actions/upload-artifact@v4
         if: always()
