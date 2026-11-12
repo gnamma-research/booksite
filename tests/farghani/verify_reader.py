@@ -128,6 +128,23 @@ check(set(source_audit["editorial_footer_reconciliation"]["editorNotePagesCorrec
       "Editorial reconciliation register differs from the reviewed page set")
 check(source_audit["pages_with_explicit_editorial_notes"]==sum(bool(p["editorial_notes"]) for p in arabic_pages),
       "Reported modern-note count differs from the source")
+# Future live-source regeneration must reproduce the reviewed p20 split, even
+# though the modern editorial notes occupy most of its flattened raw page.
+builder_path=ROOT/"tools/farghani/build_intro_parallel.py"
+builder=builder_path.read_text(encoding="utf-8")
+try:
+    compile(builder,str(builder_path),"exec")
+except SyntaxError as exc:
+    FAILED.append(f"Source regeneration script is not Python syntax: {exc}")
+check("if m.start()>len(raw)*.30" in builder,
+      "Reviewed digital footer splitter still rejects the long p20 modern note")
+check("if m.start()>len(raw)*.45" in builder,
+      "Unreviewed footer heuristic lost its conservative 45% guard")
+for n in reviewed:
+    p=assert_page[n]
+    check(len(p["reading_ar"]) > len(p["raw_ar"])*.30,
+          f"p{n}: reviewed footer falls outside the authenticated 30%-guard")
+
 
 main,v=htmls.get("continuous-translation.html",("",None))
 pages=re.findall(r'<section class="b2007-page"[^>]+id="b2007-p(\d+)"',main)
