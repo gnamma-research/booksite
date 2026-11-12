@@ -1,0 +1,24 @@
+{
+  "type": "gnamma-farghani-provisional-introduction-scholar-pdf-qa",
+  "pdf_path": "texts/al-farghani/muntaha-al-madarik/downloads/FARGHANI_Introduction_Provisional_Scholarly_019.pdf",
+  "size_bytes": 1674360,
+  "total_pdf_pages": 230,
+  "navigation_bookmarks": 9,
+  "intro_b2007_page_labels": 128,
+  "print_1876_bounded_loci_appendix": 15,
+  "glossary_entries": 66,
+  "first_page_text_sample": "GNAMMA RESEARCH · PROVISIONAL INTRODUCTORY EDITION\nSaʿīd al-Dīn al-Farghānī\nMuntahā al-madārik\nThe Four Foundations and Concluding Preface\nمنتهى المدارك في شرح تائية ابن الفارض\nPage-aligned Arabic online transcription and English working translation, with contextual glossary and\nbounded print-comparison apparatus.\nScholarly status. This is an annotated working reader, not a definitive constituted Arabic critical\nedition. Arabic is digitized from the modern Beirut edition, English is a working translation, fifteen\nhistorical-print comparisons are bounded, and no manuscript folios have been independently collated.\nBeirut 2007 printed page refer",
+  "pdf_extracted_chars": 612330,
+  "page_screenshots": [
+    "pdf-page-126.png",
+    "pdf-page-229.png",
+    "pdf-page-003.png",
+    "pdf-page-230.png",
+    "pdf-page-002.png",
+    "pdf-page-228.png",
+    "pdf-page-001.png",
+    "pdf-page-061.png"
+  ],
+  "javascript_errors": [],
+  "status": "typesetting-and-page-count-verified-NOT-linguistic-critical-edition"
+}
