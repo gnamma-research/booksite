@@ -10,7 +10,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const fold=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f\u064b-\u065f\u0670]/g,'');
 const stamp=()=>new Date().toISOString();
 const uuid=()=>globalThis.crypto?.randomUUID?.()||'q-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);
-let records=[],locked=false,conflict=false,unreadable='',unknown={},dialog=null,tab='all',sort='created-desc',filter='',origin=null,selection=null,selected=null,feedback='';
+let records=[],locked=false,conflict=false,unreadable='',unknown={},dialog=null,tab='all',sort='created-desc',filter='',origin=null,selection=null,selected=null,feedback='',pdfProfiles=[],pdfBase='qawaid-bilingual-reading.pdf',pdfBusy=false;
 function parse(s){if(!s)return null;return JSON.parse(s);}
 function load(){
  try{const raw=localStorage.getItem(KEY);if(!raw)return;const j=parse(raw);
@@ -95,7 +95,12 @@ function render(){
  '<label>Sort<select id="qaw-desk-sort">'+[['created-desc','Newest'],['created-asc','Oldest'],['source','Source order'],['alpha','Title A–Z']].map(([k,t])=>'<option value="'+k+'"'+(sort===k?' selected':'')+'>'+t+'</option>').join('')+'</select></label></div>'+
  '<div class="qaw-flex"><button data-desk="new" type="button">Add personal note</button><button data-desk="bookmark" type="button">Bookmark current passage</button>'+
  '<button data-desk="export" type="button">Export JSON backup</button><button data-desk="import" type="button">Import JSON</button>'+
- '<button data-desk="print" type="button">Print saved work / Save as PDF</button></div>'+
+ '<button data-desk="print" type="button">Print saved work</button></div>'+
+ '<div class="qaw-flex qaw-desk-pdf"><label>Personal PDF base edition<select id="qaw-desk-pdf-base"'+(!pdfProfiles.length?' disabled':'')+'>'+
+ pdfProfiles.map(p=>'<option value="'+esc(p.filename)+'"'+(p.filename===pdfBase?' selected':'')+'>'+esc(p.title)+' · '+p.pages+' pages</option>').join('')+
+ '</select></label><button type="button" data-desk="pdf"'+(!pdfProfiles.length||pdfBusy?' disabled':'')+'>Create my PDF (append private notes)</button></div>'+
+ '<p class="qaw-help" id="qaw-desk-pdf-status" role="status">'+
+ (pdfProfiles.length?'Uses the exact SHA-verified published PDF. Adds personal pages locally, separate from publisher apparatus.':'Checking available published PDF profiles…')+'</p>'+
  '<input id="qaw-desk-file" type="file" accept="application/json,.json" hidden>'+
  (feedback?'<p class="qaw-help" role="status">'+esc(feedback)+'</p>':'')+
  '<div class="qaw-desk-items">'+(list().map(x=>'<article class="qaw-desk-card"><div class="qaw-desk-title">'+icon(x.kind)+
@@ -108,8 +113,13 @@ function render(){
  '<button data-desk-trash="'+esc(x.id)+'">Move to bin</button>'):'')+'</div></article>').join('')||'<p>No saved items in this view.</p>')+'</div>';
 }
 function close(){if(dialog?.open)dialog.close();}
+async function loadPDFProfiles(){if(pdfProfiles.length)return;
+ try{const r=await fetch('pdf/manifest.json',{cache:'no-store'});if(!r.ok)throw Error();const m=await r.json();
+ if(!Array.isArray(m.files)||m.files.length!==5||m.files.some(x=>!x.sha256))throw Error();
+ pdfProfiles=m.files;render();}catch{feedback='Published PDF manifest unavailable; personal PDF generation is disabled.';render();}
+}
 function show(mode){if(mode&&['all','bookmarks','highlights','notes','references','bin'].includes(mode))tab=mode;
- if(!dialog)make();if(!dialog.open)dialog.showModal();render();}
+ if(!dialog)make();if(!dialog.open)dialog.showModal();render();loadPDFProfiles();}
 function openItem(id){
  const r=merged().find(x=>x.id===id);if(!r)return;
  close();
@@ -206,6 +216,14 @@ function make(){
   if(k==='raw')download(unreadable,'qawaid-unreadable-original.txt','text/plain;charset=utf-8');
   if(k==='reload'){conflict=false;locked=false;records=[];load();render();}
   if(k==='import')$('#qaw-desk-file')?.click();
+  if(k==='pdf'){
+   if(pdfBusy||!pdfProfiles.some(x=>x.filename===pdfBase))return;
+   pdfBusy=true;const node=$('#qaw-desk-pdf-status');if(node)node.textContent='Verifying and building personal PDF locally…';
+   try{const x=await window.GnammaQawaidPersonalPDF.create(merged(),pdfBase);
+    feedback='Created '+x.originalPages+' original PDF pages plus '+x.appendixPages+' personal pages. No notes were uploaded.';
+   }catch(err){feedback='Personal PDF not created: '+err.message;}
+   finally{pdfBusy=false;render();}return;
+  }
   if(k==='print'){
    const rows=list();const html='<html><meta charset="utf-8"><title>Qawāʿid · My Reading Desk</title>'+
    '<style>body{font:13pt/1.6 Georgia,serif;margin:20mm}h1{font-size:22pt}article{break-inside:avoid;margin:14px 0;border-bottom:1px solid #bbb;padding:8px}blockquote{font:17pt/1.7 serif}</style>'+
@@ -223,6 +241,7 @@ function make(){
  });
  dialog.addEventListener('change',async e=>{
   const t=e.target;if(t.id==='qaw-desk-sort'){sort=t.value;render();return;}
+  if(t.id==='qaw-desk-pdf-base'){pdfBase=t.value;return;}
   if(t.id!=='qaw-desk-file'||!t.files?.length)return;
   try{
    const contents=await t.files[0].text(),obj=JSON.parse(contents);
