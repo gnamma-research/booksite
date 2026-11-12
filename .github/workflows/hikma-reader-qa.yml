@@ -28,7 +28,9 @@ jobs:
         with:
           node-version: '22'
       - name: Verify source data, dictionary anchors, and assets
-        run: node texts/al-tabatabai/tools/audit-hikma.mjs
+        run: |
+          node texts/al-tabatabai/tools/audit-hikma.mjs
+          node texts/al-tabatabai/tools/qa-primary-text.cjs
       - name: Verify JavaScript syntax
         run: |
           node --check texts/al-tabatabai/assets/hikma-rich-text.js
