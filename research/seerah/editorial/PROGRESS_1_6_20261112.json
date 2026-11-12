@@ -2,7 +2,7 @@
   "date": "2026-11-12",
   "edition_source": "1.5.0-integrated-first-pass",
   "working_edition": "1.6.0-scholarship-pass",
-  "overall_percent": 12,
+  "overall_percent": 22,
   "rule": "Percentages are weighted accomplishment of explicit deliverables, not measures of scholarly truth. Each evidence status must be shown; partial sources never get complete status.",
   "stages": [
     {
@@ -24,11 +24,13 @@
       "name": "Miʿrāj source dossier",
       "target": "Narrative/variant matrix, seven prophetic encounters, Akbarian return, spiritual epistemology and primary-source qualification",
       "weight": 13,
-      "percent": 0,
-      "status": "not-started",
-      "outputs": [],
+      "percent": 80,
+      "status": "research-dossier-written; full-al-Sulami-and-variant-collation-outstanding",
+      "outputs": [
+        "editorial/MIRAJ_CRITICAL_DOSSIER_1_6_20261112.md"
+      ],
       "remaining": [
-        "Narrative/variant matrix, seven prophetic encounters, Akbarian return, spiritual epistemology and primary-source qualification"
+        "Obtain and directly collate all 56 al-Sulamī sayings; expand independent Qurʾānic tafsīr and hadith variant comparison"
       ]
     },
     {
@@ -108,5 +110,5 @@
     "Edition 1.5 remains canonical until 1.6 text passes checks.",
     "No work runs asynchronously. This ledger records only current committed work."
   ],
-  "latest": "A — ontological prolegomenon written; source qualification preserved"
+  "latest": "B — Miʿrāj dossier with primary narrative, seven meetings, Ibn ʿAbbās/ʿĀʾishah vision difference and Akbarian return"
 }
