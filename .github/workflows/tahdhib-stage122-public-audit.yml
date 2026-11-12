@@ -1,0 +1,42 @@
+name: Tahdhib Stage122 public source-integrity and rights-safe corrections
+on:
+  workflow_dispatch:
+  push:
+    branches: ['research/tahdhib-stage122-digital-arabic-integrity-20261112']
+    paths:
+      - '.github/workflows/tahdhib-stage122-public-audit.yml'
+      - 'tools/tahdhib/check_stage122_public_source_integrity.py'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE122_*'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE121_SOURCE_READER.html'
+permissions:
+  contents: read
+jobs:
+  historical-source-audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify 1090 historical records and source publication boundaries
+        run: python tools/tahdhib/check_stage122_public_source_integrity.py
+      - name: Verify unchanged logical/source infrastructure
+        run: |
+          python -m pip install PyYAML==6.0.2
+          python tools/tahdhib/run_ci_contract.py logical-core
+      - name: Upload source-grade public publication bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tahdhib-stage122-public-source-evidence
+          path: |
+            texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE122_*
+            texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_STAGE121.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE121_SOURCE_READER.html
+            texts/al-taftazani/tahdhib-al-mantiq/edition/index.html
+            tools/tahdhib/check_stage122_public_source_integrity.py
+          if-no-files-found: error
+          retention-days: 90
