@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "originalArabicEnglishAndPreferredReadingUnchanged": true,
+  "totalBilingualUnits": 171,
+  "comparedArabicSegments": 5520,
+  "noteOnlyEdits": 2,
+  "newHistoricalPassageImagesInspected": 0,
+  "newQT059WordsRecovered": 0,
+  "PDFs": [
+    {
+      "filename": "qawaid-bilingual-reading.pdf",
+      "title": "Bilingual Reading",
+      "group": "reading",
+      "language": "both",
+      "pages": 298,
+      "size_bytes": 921766,
+      "sha256": "4c63a2719e3da634c552e1b2a640f42c9ef03bdfa88fd9e929f394301ed5e157",
+      "description": "Original and commentary, without explanatory notes",
+      "content": {
+        "matn": 61,
+        "commentary": 110
+      },
+      "default": false
+    },
+    {
+      "filename": "qawaid-english-reading.pdf",
+      "title": "English Reading",
+      "group": "reading",
+      "language": "english",
+      "pages": 138,
+      "size_bytes": 435875,
+      "sha256": "e54b19559f33be37fc94f30e34d8a0122a378d985c3f3ce4a0aabf5ace07d047",
+      "description": "Original and commentary, without explanatory notes",
+      "content": {
+        "matn": 61,
+        "commentary": 110
+      },
+      "default": false
+    },
+    {
+      "filename": "qawaid-arabic-reading.pdf",
+      "title": "Arabic Reading",
+      "group": "reading",
+      "language": "arabic",
+      "pages": 172,
+      "size_bytes": 521482,
+      "sha256": "ccd6011c5ffedf47a7d45e180ac8a4968ef7c825d978da871a6c8626c817b152",
+      "description": "Original and commentary, without explanatory notes",
+      "content": {
+        "matn": 61,
+        "commentary": 110
+      },
+      "default": false
+    },
+    {
+      "filename": "qawaid-bilingual-study.pdf",
+      "title": "Bilingual Study",
+      "group": "study",
+      "language": "both",
+      "pages": 322,
+      "size_bytes": 1024983,
+      "sha256": "8e1154734602e5b2c38c3b4568db44c745f87efb8eabbebd87276bed93047cd2",
+      "description": "With selected notes and subject guide",
+      "content": {
+        "matn": 61,
+        "commentary": 110
+      },
+      "default": false
+    },
+    {
+      "filename": "qawaid-bilingual-reference.pdf",
+      "title": "Bilingual Reference",
+      "group": "reference",
+      "language": "both",
+      "pages": 368,
+      "size_bytes": 1216556,
+      "sha256": "f7699a0d769e080efe0d30e4eb488a0e26639300314e5e7ccfa42d491042d611",
+      "description": "Complete source notes, glossary, index and references",
+      "content": {
+        "matn": 61,
+        "commentary": 110
+      },
+      "default": true
+    }
+  ]
+}

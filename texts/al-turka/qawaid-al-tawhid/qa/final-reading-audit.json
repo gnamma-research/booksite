@@ -270,9 +270,9 @@
   ],
   "fourAncestralBridgesSeparatelyAttributed": true,
   "protectedTextsUnchanged": {
-    "data/units.js": "ada59de6d7a130c9c02f8fe167087ebb327c747632c6a2148bc38c2af6d8736c",
+    "data/units.js": "5d46743849fecf8cb4a8c92bcc8ebd8ea7af5285c074d3e11e1ee958101cd3ba",
     "data/parallel-matn.md": "daa38dd6c1ec8c0ed318c8d841f018fec037dcd0ac51726f51279ea7ffffd860",
-    "data/commentary-main-001-019.js": "addf95c50377089dba3cea2c52dfb35221f0840ce1e21f437bbfde3752a4a156",
+    "data/commentary-main-001-019.js": "62e469b6ada1393473ca09583f3072a083837e84bb72bea09cdb956f8f6a935d",
     "data/commentary-main-020-060.js": "bc5e63527e2a18a1f3ebfa8c585f3023ac7476d50e475b5effbbee8ee11d90ec"
   },
   "qt059OriginalLacuna": "noted and deferred, no reconstruction",
@@ -284,5 +284,5 @@
   "readabilityCorrection": "SH-061-A: closures -> locks for أقفاله; Arabic unchanged; variant note preserved",
   "stalePilotQueueRemoved": true,
   "singleFileReaderGenerated": true,
-  "singleFileSha256": "9e765e8d36c0cb853186dde35eaadd769cf4cfd45f5350c4e14ca2a358c586de"
+  "singleFileSha256": "56f906b33cd4917354bd4fae7a805844f8df281ceccf5a4606e9000d014c71bd"
 }
