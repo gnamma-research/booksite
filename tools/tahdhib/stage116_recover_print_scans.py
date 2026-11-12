@@ -7,6 +7,7 @@ from __future__ import annotations
 from pathlib import Path
 import hashlib, json, os, urllib.request, time, sys
 import fitz
+from PIL import Image
 
 ROOT=Path("tahdhib116-photo-audit")
 ROOT.mkdir(exist_ok=True)
@@ -67,6 +68,18 @@ for tag,url in URLS.items():
       # automated textual OCR. Determined from first-pass visual page-numeral
       # matching: 1405 scan pdf index=printed+1; 1433 pdf index=printed.
       obj["highres"]=[]
+      # Four small visual quotations of the source tables, not full-page or
+      # full-edition redistribution; register exact excerpt-byte hashes.
+      publication_excerpts={
+        258:(82,675,1319,2008),
+        294:(70,185,1319,2008),
+        300:(103,1028,902,1986),
+        309:(60,143,1440,1997),
+      }
+      publish_dir=Path("texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts")
+      publish_dir.mkdir(parents=True,exist_ok=True)
+      obj["publicationExcerpts"]=[]
+
       printed_to_pdf_offset = 1 if tag == "lis_fa1208_1405" else 0
       for printed in TARGETS:
         idx = printed + printed_to_pdf_offset
@@ -75,6 +88,23 @@ for tag,url in URLS.items():
         png = pix.tobytes("png")
         fname = f"{tag}-VERIFIED-PRINTED-p{printed}-pdfindex-{idx:03}-hires.png"
         (ROOT/fname).write_bytes(png)
+        if tag=="lis_fa1208_1405" and printed in publication_excerpts:
+          bbox=publication_excerpts[printed]
+          from io import BytesIO
+          cropped=Image.open(BytesIO(png)).crop(bbox)
+          excerpt_name=f"print1405_Q{printed}_table_excerpt.png"
+          excerpt_bytes=None
+          mem=BytesIO()
+          cropped.save(mem,format="PNG",optimize=True)
+          excerpt_bytes=mem.getvalue()
+          (publish_dir/excerpt_name).write_bytes(excerpt_bytes)
+          obj["publicationExcerpts"].append({
+            "printedPage":printed,"originalPdfIndex0":idx,
+            "pixelCrop_xyxy":bbox,"sourcePrintedPdfSHA256":obj["pdf_sha256"],
+            "publicationPath":str(publish_dir/excerpt_name),
+            "sha256":sha(excerpt_bytes),"bytes":len(excerpt_bytes),
+            "grade":"photo excerpt only, text cell audit separate"
+          })
         obj["highres"].append({
           "printedPage":printed,"pdfIndex0":idx,"name":fname,
           "bytes":len(png),"sha256":sha(png),
@@ -91,5 +121,16 @@ for tag,url in URLS.items():
       print("ERROR",tag,repr(ex),file=sys.stderr,flush=True)
 manifest["rendered_count"]=sum(len(x.get("rendered",[])) for x in manifest["works"].values())
 (ROOT/"manifest.json").write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n")
+pubpath=Path("texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts/PRINT_IMAGE_MANIFEST_STAGE116.json")
+pubpath.write_text(json.dumps({
+  "stage":"116",
+  "original_print_pdf_sources":{k:{y:v for y,v in x.items() if y in ("url","pdf_sha256","page_count")} for k,x in manifest["works"].items()},
+  "excerpt_source":"lis_fa1208_1405",
+  "images":manifest["works"]["lis_fa1208_1405"].get("publicationExcerpts",[]),
+  "source_independence_warning":"Two scan editions/print impressions; NOT independent manuscript witnesses",
+  "pages_noted_not_reproduced":[387],
+  "sha256_provenance":"sha256 of downloaded originals and extracted bounded PNG excerpt bytes",
+},ensure_ascii=False,indent=2)+"\n")
+
 print(json.dumps({k:{y:v for y,v in val.items() if y!="rendered"} for k,val in manifest["works"].items()},ensure_ascii=False,indent=2),flush=True)
 if manifest["rendered_count"]==0:sys.exit(2)
