@@ -97,7 +97,10 @@ need("القطع ببطلان مسألة التوحيد" in sh["arabic"],"SH-002
 need("invalid" in sh["english"].lower(), "SH-002 English lost literal disputed negative")
 need("وما قيل" in qt["arabic"] and "وأمّا الثاني" in qt["arabic"], "QT-059 extant boundary lost")
 need(any("lacuna" in str(x).lower() for x in qt.get("notes",[])),"QT-059 reported omission not documented")
-need("sleep and wakefulness" in next(x for x in corpus if x["id"]=="SH-058")["english"], "Historical SH-058 correction lost")
+sh58=next(x for x in corpus if x["id"]=="SH-058")
+need("sleep and wakefulness" in sh58["english"], "H2014 preferred SH-058 wakefulness reading lost")
+need("السهو" in sh58["arabic"], "SH-058 A-source sahw overwritten")
+need(any("H2014" in str(x) and "السهر" in str(x) for x in sh58.get("notes",[])), "SH-058 modern printed sahr variant not attributed")
 
 need(len(manifest["files"])==5,"Wrong PDF count")
 need(manifest["revision"]=="2026-11-12-qawtaw16-source-scoped-reading","PDF manifest revision not updated")
