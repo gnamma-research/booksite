@@ -15,7 +15,7 @@ const termMap=new Map(terms.map(t=>[t.id,t]));
 const citationMap=new Map(references.map(r=>[r.id,r]));
 let apparatus=localStorageGet('gnamma:qawaid:apparatus-v1','off');
 if(!['off','minimal','full'].includes(apparatus))apparatus='off';
-let corpus=null,occurrences=new Map(),card=null,inlineQueued=false;
+let corpus=null,occurrences=new Map(),card=null,inlineQueued=false,pdfTier='reading',pdfRecords=[];
 function localStorageGet(key,fallback){try{return localStorage.getItem(key)||fallback}catch{return fallback}}
 function localStoragePut(key,value){try{localStorage.setItem(key,value)}catch{}}
 function originalCitation(r){
@@ -202,7 +202,8 @@ function apparatusMenu(){
 function setApparatus(val){apparatus=val;document.body.dataset.apparatus=val;localStoragePut('gnamma:qawaid:apparatus-v1',val);window.GnammaQawaidReader?.setEditorialNotes?.(val==='full');
  document.body.dataset.showNotes=String(val==='full');}
 function settingsPanel(){
- show('Reading options','<p class="gn-help">Control the two independently attributed texts with the Matn and Sharḥ switches in the toolbar. Their settings are retained while you navigate.</p>'+apparatusMenu()+'<div class="gn-menu-footer"><button data-open-study="appearance">Appearance and typography</button><button data-open-study="pdf">PDF editions</button></div>');
+ const heading=window.GnammaQawaidReader?.headingMode?.()||'guide';
+ show('Reading options','<p class="gn-help">Keep the medieval matn and commentary distinct. Editorial guide titles are not printed source headings; you may hide them without changing any Arabic or English text.</p>'+apparatusMenu()+'<fieldset class="gn-apparatus-options"><legend>Section headings</legend>'+[['guide','Editorial guide titles'],['source','Source text only (hide editorial titles)']].map(([id,label])=>'<label class="gn-setting-option"><input name="gn-heading-mode" type="radio" value="'+id+'" '+(heading===id?'checked':'')+'><span><b>'+label+'</b></span></label>').join('')+'</fieldset><div class="gn-menu-footer"><button data-open-study="modes">Reading modes</button><button data-open-study="appearance">Appearance</button><button data-open-study="pdf">PDF editions</button></div>');
 }
 function appearancePanel(){
  show('Appearance','<fieldset class="gn-apparatus-options"><legend>Theme</legend>'+[['parchment','Paper'],['horizon','Horizon'],['night','Night']].map(([v,l])=>'<label class="gn-setting-option"><input type="radio" name="gn-theme" value="'+v+'" '+(document.documentElement.dataset.theme===v?'checked':'')+'><span><b>'+l+'</b></span></label>').join('')+'</fieldset><p class="gn-help">Text appearance applies to both layers and preserves your reading place.</p><div class="gn-size-row"><label>Text size <input id="gn-font-size" type="range" min=".82" max="1.45" step=".03" value="'+(parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--scale'))||1)+'"></label></div><div class="gn-size-row"><label>Line spacing <input id="gn-line-spacing" type="range" min="1.55" max="2.15" step=".05" value="'+(parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--leading'))||1.8)+'"></label></div><div class="gn-size-row"><label>Reading width <input id="gn-reading-width" type="range" min="560" max="1300" step="40" value="'+(parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--reading-width'))||960)+'"></label></div><fieldset class="gn-apparatus-options"><legend>Typefaces</legend><label class="gn-setting-option">Arabic <select id="gn-arabic-font"><option value="naskh">Naskh</option><option value="amiri">Amiri</option><option value="traditional">Traditional Arabic</option></select></label><label class="gn-setting-option">English <select id="gn-english-font"><option value="serif">Classic serif</option><option value="sans">Modern sans</option></select></label></fieldset><div class="gn-menu-footer"><button data-open-study="settings">Reading options</button></div>');
@@ -237,19 +238,31 @@ function sourcePanel(id){
  show(r.title,'<div class="gn-prose"><small>'+esc(r.source)+' · '+esc(type)+'</small>'+(quote.arabic?'<blockquote class="gn-source-ar" lang="ar" dir="rtl">'+esc(quote.arabic)+'</blockquote>':'')+(quote.english?(r.englishRole==='editorial-summary'?'<p class="gn-help"><strong>Editorial synopsis, not a complete translation:</strong> '+esc(quote.english)+'</p>':'<blockquote>'+esc(quote.english)+'</blockquote>'):'')+(r.note?'<p>'+esc(r.note)+'</p>':'')+(quote.warning?'<p>'+esc(quote.warning)+'</p>':'')+'<p><a href="'+esc(r.sourceUrl)+'" target="_blank" rel="noopener noreferrer">View cited source</a></p></div><h3 class="gn-subheading">Passages in this book</h3><div class="gn-locations">'+units.map(id=>'<a data-study-goto="'+esc(id)+'" href="'+unitURL(id)+'">'+esc(id)+' · '+esc(byId.get(id)?.section||byId.get(id)?.title||'Open passage')+'</a>').join('')+'</div><div class="gn-menu-footer"><button data-open-study="references">All sources</button><button data-open-study="pdf">PDF editions</button></div>');
  $('#gn-study-content')?.insertAdjacentHTML('beforeend','<button class="gn-menu-row" data-qaw-save-source="'+esc(id)+'">'+studyIcon('bookmark')+'<span><b>Save this source reference</b></span></button>');
 }
+function renderPDFTier(){
+ const pane=$('#gn-study-content');if(!pane)return;
+ const cats=[['reading','Reading','Clean original and commentary, without editorial notes'],['study','Study','Selected source notes and subject guide'],['reference','Reference','Complete apparatus, glossary and index']];
+ const tabs='<div class="qaw-pdf-tabs" role="tablist" aria-label="PDF edition">'+cats.map(([id,title])=>'<button data-qaw-pdf-tier="'+id+'" role="tab" aria-selected="'+(pdfTier===id)+'">'+title+'</button>').join('')+'</div>';
+ const info=cats.find(x=>x[0]===pdfTier);
+ const options=pdfRecords.filter(x=>x.group===pdfTier);
+ pane.innerHTML=tabs+'<p class="gn-help">'+info[2]+'. PDFs are prebuilt and source-hash verified; no unavailable combinations are offered.</p>'+
+ '<div class="gn-pdf-list">'+options.map(x=>'<a class="gn-pdf-row" href="pdf/'+esc(x.filename)+'" target="_blank" rel="noopener" aria-label="Open '+esc(x.title)+' PDF"><b>'+
+ esc(x.title)+'</b><small>'+esc(x.description||'')+' · '+x.pages+' pages · '+x.language+'</small><span>'+studyIcon('pdf')+' Open PDF</span></a>').join('')+'</div>'+
+ '<div class="gn-menu-footer"><button data-open-study="desk">My Reading Desk (print personal notes)</button></div>'+
+ '<p class="gn-help">No fully vowelled Arabic text is certified for this work. Personal quotations and notes can be printed separately by the browser, but are not silently merged into the five publisher PDFs.</p>';
+}
 async function pdfPanel(){
- show('PDF editions','<p class="gn-help">Reading, Study, and Reference have separate contents and notes. Opening a PDF on iPhone may use the browser preview.</p><p>Looking up the published editions…</p>');
+ show('PDF editions','<p class="gn-help">Verifying the published Reading, Study and Reference profiles…</p>');
  try{
-  const r=await fetch('pdf/manifest.json',{cache:'no-store'});if(!r.ok)throw Error();
+  const r=await fetch('pdf/manifest.json',{cache:'no-store'});if(!r.ok)throw Error('manifest');
   const data=await r.json(),items=data.files||[];
-  const names={reading:'Reading',study:'Study',reference:'Reference'};
-  const arr=Array.isArray(items)?items:Object.entries(items).map(([filename,x])=>({filename,...x}));
-  $('#gn-study-content').innerHTML='<div class="gn-pdf-list">'+['reading','study','reference'].map(gr=>'<section><h3>'+names[gr]+'</h3>'+arr.filter(x=>x.group===gr).map(x=>'<a class="gn-pdf-row" href="pdf/'+esc(x.filename)+'" target="_blank" rel="noopener"><b>'+esc(x.title)+'</b><small>'+esc(x.description||'')+' · '+(x.pages||'?')+' pages</small><span>'+studyIcon('pdf')+' Open PDF</span></a>').join('')+'</section>').join('')+'</div><p class="gn-help">The source Arabic is not fully vowelled; no unverified fully vowelled version is offered. Your private browser notes are not silently included in published PDFs.</p>';
- }catch{const x=$('#gn-study-content');if(x)x.innerHTML='<p class="gn-help">PDF editions are not yet available from the published site. You can read the complete Arabic and English in this browser.</p>';}
+  if(!Array.isArray(items)||items.length!==5)throw Error('manifest count');
+  pdfRecords=items;renderPDFTier();
+ }catch{const pane=$('#gn-study-content');if(pane)pane.innerHTML='<p role="alert">The published PDF manifest could not be loaded. No unverified PDF options will be offered.</p>';}
 }
 function clickDelegated(e){
- const el=e.target.closest('[data-study-close],[data-open-study],[data-open-term],[data-expand-term],[data-open-source],[data-study-goto],[data-qaw-focus],[data-qaw-save-term],[data-qaw-save-source]');if(!el)return;
+ const el=e.target.closest('[data-study-close],[data-open-study],[data-open-term],[data-expand-term],[data-open-source],[data-study-goto],[data-qaw-focus],[data-qaw-save-term],[data-qaw-save-source],[data-qaw-pdf-tier]');if(!el)return;
  if(el.hasAttribute('data-study-close')){panelClose();return}
+ if(el.dataset.qawPdfTier){pdfTier=el.dataset.qawPdfTier;renderPDFTier();return;}
  if(el.dataset.qawFocus!==undefined){panelClose();window.GnammaQawaidReader?.setFocus?.(Number(el.dataset.qawFocus));return;}
  if(el.dataset.qawSaveTerm){const t=termMap.get(el.dataset.qawSaveTerm);window.GnammaQawaidDesk?.add?.('term',currentQT(),t?.ar||'', 'ar',null,'',t?.en||'Dictionary entry');return;}
  if(el.dataset.qawSaveSource){const r=citationMap.get(el.dataset.qawSaveSource);window.GnammaQawaidDesk?.add?.('source',currentQT(),r?.arabic||'', 'ar',null,'',r?.title||'Source');return;}
@@ -277,6 +290,7 @@ function inputDelegated(e){
 }
 function changeDelegated(e){
  if(e.target.name==='gn-apparatus')setApparatus(e.target.value);
+ if(e.target.name==='gn-heading-mode')window.GnammaQawaidReader?.setHeadingMode?.(e.target.value);
  if(e.target.name==='gn-theme'){window.GnammaQawaidReader?.setTheme?.(e.target.value);document.documentElement.dataset.theme=e.target.value;}
  if(e.target.id==='gn-arabic-font'||e.target.id==='gn-english-font'){
   localStoragePut('gnamma:qawaid:'+e.target.id,e.target.value);applyFontPrefs();
