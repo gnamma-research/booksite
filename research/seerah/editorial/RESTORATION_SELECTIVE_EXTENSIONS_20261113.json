@@ -1,0 +1,97 @@
+{
+  "edition_target": "1.8.0-metaphysical-restoration",
+  "origin": "1.4.1",
+  "date": "2026-11-13",
+  "description": "Seven source-controlled supplements/repairs preserving the 1.4.1 metaphysical original and reintroducing selected historical improvements, without claiming completion of the later 46-chapter expansion.",
+  "patches": [
+    {
+      "id": 2,
+      "matn_replacements": [
+        [
+          "Neither landscape produced one inevitable political order.",
+          "Each landscape supported several possible arrangements of cooperation, temple and palace administration, royal power and local independence."
+        ],
+        [
+          "Yet a record establishes what has been entered, not whether every demand recorded is just.",
+          "The truth of the written account and the justice of the obligation it records require distinct judgments."
+        ],
+        [
+          "Town and countryside, cultivator and pastoralist, merchant and producer were not successive stages of a single development but differently organized participants in wider systems of livelihood.",
+          "Town and countryside, cultivator and pastoralist, merchant and producer participated through different forms of livelihood and in interdependent economic networks."
+        ],
+        [
+          "The prophets addressed human beings within such relationships, not outside them.",
+          "The prophets addressed people who worked, cultivated, traded, formed households and exercised authority."
+        ],
+        [
+          "The obligation to worship God therefore bears upon the use of property, the conduct of exchange, the treatment of dependants and the exercise of judgment.",
+          "The obligation to worship God orders the use of property, the conduct of exchange, the treatment of dependants and the exercise of judgment."
+        ]
+      ],
+      "sharh_replacements": [
+        [
+          "The human body lives through conditions that it does not originate.",
+          "The human body lives through a world received from God and through relationships with other living beings."
+        ],
+        [
+          "Food is neither simply a product of human mastery nor a miraculous gift that dispenses with intermediaries.",
+          "Food becomes available through rain, fertile soil, cultivation, harvest, transport, preparation and the human capacity to employ these created means."
+        ],
+        [
+          "The command to inhabit and work the earth does not confer independent dominion over it.",
+          "The command to inhabit and cultivate the earth places human work within received responsibilities toward land, its inhabitants and its Lord."
+        ],
+        [
+          "This is also why spiritual detachment cannot be measured by the reduction of practical work.",
+          "Spiritual detachment can mature through the faithful performance of practical work."
+        ]
+      ]
+    },
+    {
+      "id": 10,
+      "matn_replacements": [
+        [
+          "Opposition in Makkah could not be met by one response, because the believers did not possess equal means of protection.",
+          "The believers responded to persecution according to the very different forms of protection available to them."
+        ],
+        [
+          "The migrants had left their familiar homes but had not yet established a new Muslim polity.",
+          "The migrants left their homes and received security through a sovereign whose court belonged to the Christian kingdom of Aksum."
+        ]
+      ],
+      "sharh_add": "The Negus's later standing within the Islamic tradition belongs to the fuller account. In [al-Bukhārī 3877](https://sunnah.com/bukhari:3877), the Prophet ﷺ announces Aṣḥamah's death, calls him a righteous brother and instructs the Companions to perform the funeral prayer. [Al-Bukhārī 1333](https://sunnah.com/bukhari:1333) also preserves the funeral prayer. His original protection of the migrants took place in a Christian royal setting; the later Muslim reports give a further dimension to his biography. The two moments allow a history of actual asylum and a history of faith to be understood on their own evidence."
+    },
+    {
+      "id": 11,
+      "matn_append": "The Qurʾān recounts the Prophet's Night Journey from the Sacred Mosque to the Farthest Mosque. In the transmitted accounts of the Miʿrāj, he ascends through the heavens, encounters earlier prophets and returns with the obligation of the five daily prayers after the counsel of Mūsā. This extraordinary journey brings divine nearness into recurring bodily worship. Muslim spiritual commentators, especially Ibn ʿArabī and his interpreters, later explored the significance of the return from ascent to ordinary duties. The dating and sequence of individual reports remain subjects of investigation; the prophetic mission continued among households and pilgrims in Makkah as the people of Yathrib offered protection.",
+      "sharh_add": "The Night Journey and Ascension provide the chapter's vertical depth. Qurʾān 17:1 states the journey of God's servant; accounts such as [Muslim 162a](https://sunnah.com/muslim:162a) relate the heavenly encounters, Mūsā's counsel and the five daily prayers. The Qurʾānic passages concerning vision (53:1–18) and the reports transmitted by ʿĀʾishah and Ibn ʿAbbās require differentiated interpretation. The primary accounts establish revealed worship and narrate the ascent; their literary variations call for comparison.\n\nIn Ibn ʿArabī's analysis of spiritual ascent, interpreted by James Morris through *Futūḥāt* chapter 367, the return to created life is a completion of realization. The prophetic servant resumes teaching, prayer and the right ordering of human relationships after an extraordinary experience of nearness. The five prayers bring each day under an orientation whose source exceeds the temporal order in which they are performed. Their bodily actions, congregation, repetition and reception by later generations give the spiritual event an enduring historical form.\n\nAl-Qūnawī's analysis of prophetic correspondences and Farghānī's understanding of Muhammadan comprehensiveness offer further reflection on the many heavenly stations gathered in the Prophet's experience. A living person receives a distinctive divine commission and acts among particular people. The relations from the Miʿrāj to the pledges at al-ʿAqabah are explanatory: the highest knowledge returns to responsible action, while the actual pledges arise through people, agreements, instruction and protection in Yathrib. The spiritual and historical orders meet in the Prophet's life without supplying one another's missing historical evidence."
+    },
+    {
+      "id": 13,
+      "matn_append": "The Prophet ﷺ shortened a congregational prayer when he heard a child crying and knew the distress of its mother. He carried his granddaughter Umāmah during prayer, setting her down when prostrating and lifting her when standing. He spoke tenderly to a child about his little bird and joined domestic service to prayer. In the market he uncovered concealed wet grain and demanded truthful dealing. When persons came to confess grave wrongdoing, he dealt with their claims through actual questions, judgments, repentance and obligations toward others. The accounts of Māʿiz and the woman of Ghāmid include severe judicial punishment; the latter also attends to pregnancy and the needs of her child. These encounters bring worship, law, inward formation and living relationships together within the complete prophetic example.",
+      "sharh_add": "The mother and crying child offer a precise example of an integrated prophetic act. In [al-Bukhārī 709](https://sunnah.com/bukhari:709), the Prophet ﷺ intends a longer prayer and shortens it when he hears the child and knows the mother's distress. The rite remains worship, while its permissible duration is governed by attention to an actual participant. A jurist studies the validity and conditions of the shortened prayer; a teacher studies the attentive exercise of authority; a spiritual interpreter considers how the heart apprehends the rightful claims of God and other persons in one action. Each is a genuine understanding of the event within its own field.\n\n[Al-Bukhārī 516](https://sunnah.com/bukhari:516) reports the carrying of Umāmah during prayer; [al-Bukhārī 6129](https://sunnah.com/bukhari:6129) recounts the conversation with Abū ʿUmayr; [al-Bukhārī 676](https://sunnah.com/bukhari:676) records service within the household. Their significance comes from the very particular relationships involved. A dependent child, a grandmother or parent, a congregation and household members make different claims upon a person. Such claims become known in actual encounters and can be answered through a mature character without the formal boundaries of worship becoming arbitrary.\n\nIn [Muslim 1695](https://sunnah.com/muslim:1695), the narrations of Māʿiz and the woman of Ghāmid concern confessions of adultery. The Prophet's questioning, the woman's pregnancy, care for her child, severe punishment, repentance and the community's treatment of those punished occupy distinct parts of the transmitted reports. The jurist requires the conditions of proof and public jurisdiction. The moral and spiritual interpreter considers responsibility, repentance, dependence and how others respond. The original action unites these features in a real historical situation; its later legal classification preserves a necessary part of the guidance, while the living completeness of the prophetic presence is apprehended through the wider report and spiritual reflection.\n\nThis range of encounters supplies a generative relation to the later sciences. Hadith criticism preserves reliable accounts of what was seen and heard; fiqh derives and applies rulings; *adab* attends to conduct within relationship; *tazkiya* cultivates attention, intention and virtue. As the community expands, these capacities become teachable through families, schools, judges and companions. Their formal differentiation has its proper usefulness, and their integration requires people who relate what they know to the concrete persons they serve."
+    },
+    {
+      "id": 28,
+      "sharh_add": "The legal sciences inherited the Prophet's actual judgments within a comprehensive life. His response to the woman of Ghāmid in [Muslim 1695](https://sunnah.com/muslim:1695) includes a legal decision and also an encounter shaped by confession, pregnancy, care for a child and repentance. A jurist must identify the kind of evidence that can establish an offense, the qualifications governing a sanction and the authority that may apply it. Those determinations protect claimants and defendants from the arbitrariness of an official's private feeling. The discipline is a genuine preservation of the revealed and transmitted normative order.\n\nThe same original can be read through ethical and spiritual questions concerning repentance and the disposition of those who witness another person's wrongdoing. Ibn Rushd's method in the *Bidāyat al-mujtahid* and the argumentation of later uṣūl works make the legal determination explicit through reasons, differences of evidence and the conditions of cases. The general norm becomes effective through *taḥqīq al-manāṭ*, the recognition of what is present in a particular instance. Understanding and correctly applying a ruling is a perfected legal activity; the Prophet's complete realization is the spiritual and moral horizon to which that activity ultimately answers."
+    },
+    {
+      "id": 33,
+      "sharh_add": "The Akbarian account brings the history of spiritual formation back to the comprehensive prophetic original. Ibn ʿArabī distinguishes inheritance through works, states and knowledge, as summarized by [William Chittick](https://www.persee.fr/doc/horma_0984-2616_1996_num_30_1_1371). The dimensions belong together in a perfected servant: correct activity expresses knowledge, and inward realization deepens the manner of serving actual persons. A spiritual teacher may help a disciple acquire disciplined practice and self-knowledge through companionship, while divine opening remains a gift.\n\nAl-Qūnawī's discussions of the *maqām lā maqām* concern realization that encompasses the valid modes of differentiated spiritual stations. Farghānī describes the Prophet's speech, character and bodily actions as the enacted comprehensive Qurʾān. The later saint or scholar participates according to his bestowed capacity. His true station is revealed through the responsible use of the knowledge, rights and relationships entrusted to him. The historical formation of Sufi teaching networks requires its own dates, people, endowments, texts and transmission routes; these form the material conditions through which companionship and instruction remain available."
+    },
+    {
+      "id": 44,
+      "sharh_add": "The family *waqf* dispute in *Abul Fata Mahomed Ishak v. Russomoy Dhur Chowdhry* makes the transformation of legal authority concrete. In 1868, two brothers in Sylhet established property arrangements supporting descendants and eventually the poor. The [published Privy Council decision of 15 December 1894](https://courtkutchehry.com/judgments/abul-fata-mahomed-ishak-and-others-appellant-hash-russomoy-dhur-chowdhry-and-others-respondent) rejected the deed as a valid charitable endowment because the benefit to charity was judged too remote. The [Mussalman Wakf Validating Act 1913](https://indiankanoon.org/doc/1852964/) and a [1930 Act](https://indiankanoon.org/doc/192467222/) subsequently altered the applicable legal treatment, the latter with qualified retrospective application.\n\nThe episode connects a household's decision, juristic categories, advocates, provincial judges, an imperial appellate court and later legislation. Each institution acts through a different competence and form of power. A family may seek to discharge obligations through an endowment; a jurist may interpret the law of charitable purpose; a court controls what evidence and authority govern its judgment. The Prophet's integrated guidance supplies an ultimate standard of truthfulness and justice, while the actual legal right depends on the applicable sources, contracts, jurisdiction and proof. The historical change lies in the redistribution of the competence to decide, explain and enforce inherited legal obligations."
+    },
+    {
+      "id": 45,
+      "matn_replacements": [
+        [
+          "Deoband developed a madrasa founded in 1866 to preserve and renew learned disciplines under colonial conditions;",
+          "Deoband developed a madrasa during the 1860s to preserve and renew learned disciplines under colonial conditions;"
+        ]
+      ],
+      "sharh_add": "The founding chronology of Deoband is reported as 1866 in institutional histories and 1867 in several scholarly reference works. The exact Hijrī/Gregorian conversion and the distinction between foundation and formal opening need direct comparison. Aligarh's initial school opened in 1875 and the Muhammadan Anglo-Oriental College followed in 1877. These were actual institutional experiments supported through different donors, teachers, languages, curricula and aspirations. Their success is best assessed through the competencies students acquired, the work they subsequently performed and the forms of religious life each helped sustain."
+    }
+  ]
+}
