@@ -44,6 +44,10 @@ Sixteen individual cells have a selected source phrase plus bounded English expl
 
 **Evidence policy:** A legible photograph is not automatically an exact transcribed and translated cell. An inherited *first pass* is not a certified clause-aligned edition. The present photo-based research does **not** change the four `missing-table` status flags in the canonical Stage114 data, which remain open pending full translations.
 
+## Q259 — source counting and certain arithmetic mismatch
+
+[Separate source-counting and arithmetic analysis](STAGE118_Q259_ARITHMETIC_AND_SCOPE.md) distinguishes the printed internal equation \`450×120=5,400\` (which mathematically yields 54,000) from the *different* interpretive question of what its historical ordered construction-counting procedure actually counts. The text is retained rather than silently emended.
+
 ## Existing modal-proof and manuscript boundaries remain unchanged
 
 The historical 46 exceptional figure-IV mixes are a different register from the 32 Q300 compound proposition types and the 105 Q294 relations. [Stage116 proof ledger](STAGE116_MODAL_PROOF_OBLIGATIONS.md) records the previously established categorical/temporal consequences and the precise deficiency in historical modal-necessity-strength proofs. This stage adds **no** all-world modal proof certificate, authorial manuscript variant, or fully checked H printed page.
