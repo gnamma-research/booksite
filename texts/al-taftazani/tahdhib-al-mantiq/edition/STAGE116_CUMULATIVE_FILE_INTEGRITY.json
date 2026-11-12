@@ -10,10 +10,10 @@
   "canonicalSourcePath": "texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage114.md",
   "canonicalSourceByteCount": 1131840,
   "canonicalSourceSHA256": "98351ab39d78f8f796c528c516d04adfa032b0925172d1e40490909c6be288da",
-  "appendixByteCount": 35925,
+  "appendixByteCount": 39370,
   "outputPath": "texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage116.md",
-  "outputByteCount": 1167765,
-  "outputSHA256": "ceb450f1c0bd47c7145a76938e93f678390c3ae7717d58f8090ad1ea951dff7e",
+  "outputByteCount": 1171210,
+  "outputSHA256": "019c97bfa0b524a4549ab3e999d72139fb26a429ebf9f34c1ecc692f00e7ae98",
   "prefixPreservedByteForByte": true,
   "appended": [
     {
@@ -25,14 +25,20 @@
     {
       "label": "Stage116 photographed originals and limits",
       "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE116_PRINTED_TABLE_PHOTOGRAPHIC_AUDIT.md",
-      "originalBytes": 10438,
-      "originalSHA256": "b590793a8a2b8e81bb8efdb92f27b195d0f865385e5442f0a852588172d88658"
+      "originalBytes": 10522,
+      "originalSHA256": "af957e60ee51469bf3bf61163309ff1edbb47ea3420d3ea1c083f7ecdb969bdc"
     },
     {
       "label": "Stage116 five-locus Arabic to English checks",
       "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE116_CLAUSE_ALIGNMENT.md",
       "originalBytes": 4067,
       "originalSHA256": "c7bd8104b78aceb4d033a05d0c4f3aacbf6c22aa88b10f3070f43223688be766"
+    },
+    {
+      "label": "Stage116 two photographed Q309 examples with literal translation",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE116_Q309_TWO_EXAMPLES_PHOTO_TRANSLATED.md",
+      "originalBytes": 3037,
+      "originalSHA256": "df932c089d41e85915aa51180ac148159cb82485b01264beca395daae4543a27"
     },
     {
       "label": "Stage116 fourth-figure modal proof ledger",
@@ -43,8 +49,8 @@
     {
       "label": "Stage116 complete recovery handoff",
       "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md",
-      "originalBytes": 7729,
-      "originalSHA256": "e116b85c392546f1388120649e55d0e7f92d295cd4991544458716216986a460"
+      "originalBytes": 7976,
+      "originalSHA256": "af06f95bd35d125c49f085e4618eab2db1d441f263dde65bcc884fd1a9838947"
     }
   ],
   "independentManuscriptReadingCertified": false,

@@ -16881,10 +16881,10 @@ All **32** printed intersections were compared to the Stage115 prose-derived res
 The source *order* of the nine connected types is:
 `C/C, C/D, C/K, K/C, D/C, K/K, K/D, D/K, D/D`;
 the six disjunctive types are:
-`C/C, C/D, C/K, K/K, D/K, D/D`.
+`C/C, C/K, C/D, K/K, D/K, D/D`.
 Here `C` = حملية, `K` = متصلة, `D` = منفصلة; connected slash notation is ordered **antecedent/consequent**, disjunctive slash notation is an **unordered pairing**. Note the source's connected list puts `D/C` before `K/K`, unlike the abstract algorithmic ordering in the Stage115 JSON; both have the same nine members.
 
-**Important correction:** the cells for the connected `C/C`, `K/K`, and `D/D` are not lost: they themselves read **ذكر ما لا يخفى** (“to supply what is obvious”) rather than giving a long example. The other twelve visible Arabic examples require separate diplomatic transcription and line-by-line English translation; do not count a printed type as a full translated example.
+**Important correction:** the cells for the connected `C/C`, `K/K`, and `D/D` are not lost: they themselves read **ذكر ما لا يخفى** (“to supply what is obvious”) rather than giving a long example. Two of the twelve printed Arabic examples now have source-read Arabic–English renderings in [the Q309 micro-edition](STAGE116_Q309_TWO_EXAMPLES_PHOTO_TRANSLATED.md). The remaining ten still require diplomatic transcription and line-by-line English translation.
 
 ## Q387 — no diagram on either inspected page
 
@@ -16934,6 +16934,42 @@ The inherited English faithfully reports the *source's* numerical totals, includ
 - Historical/authorial layers kept separate. A photo of a printed modern *Ḥāshiya* is not an independent medieval manuscript of Taftāzānī's matn.
 
 **Restart exactly from the 49 Q258 individual judgement cells, followed by the 105 modal-pair shorthand cells at Q294 and the 12 explicit conditional examples at Q309.** Evidence reader: [STAGE116_PHOTOGRAPHIC_TABLE_READER.html](STAGE116_PHOTOGRAPHIC_TABLE_READER.html). 
+
+
+---
+
+## Stage116 two photographed Q309 examples with literal translation
+
+# Stage116 Q309 — first independent Arabic–English example-cell readings
+
+**Evidence type: direct photographic transcription from printed page Q309, compared between H-1405 and H-1433.** The Ahlulbayt Library digital HTML omits the table entirely. These are small, bounded *worked examples* from one historical gloss table, not a new translation of the main matn.
+
+## Fully legible examples newly transcribed
+
+| Historical row | Conditional form | Arabic as printed (orthographically normalised, no claim to reproduce vocalisation) | Literal English | State |
+|---|---|---|---|---|
+| Connected 5/9 | D → C (منفصلة وحملية) | **نحو: كلما كان هذا إما زوجاً أو فرداً كان عدداً.** | “For example: whenever this is either even or odd, it is a number.” | Substantive sentence independently readable in both prints |
+| Disjunctive 1/6 | C / C (حمليتان) | **نحو: العدد إما زوج وإما فرد.** | “For example: a number is either even or odd.” | Substantive sentence independently readable in both prints |
+
+**Caveat:** both clauses are illustrative historical formal constructions, not independently established mathematical definitions of every number system; the second concerns the intended class of integers. The transcription normalises punctuation, hamza and tanwīn. Source physical images and SHA256 are maintained in the [Stage116 print evidence record](source-table-excerpts/PRINT_IMAGE_MANIFEST_STAGE116.json).
+
+## Three entries intentionally lack worked examples in the source
+
+Connected rows **1/9 (C→C), 6/9 (K→K), and 9/9 (D→D)** each contain the identical printed direction **ذكر ما لا يخفى** (“Supply what is obvious”). This is **authorial/editorial shorthand in the printed table**, not an error in the photographic recovery or a missing Arabic sentence. The 12 actual worked example cells include these two examples and **10 further cells needing source-faithful diplomatic transcription**, not a dozen absent images.
+
+## Caution about the order of source rows
+
+Printed source order for connected types: **C/C, C/D, C/K, K/C, D/C, K/K, K/D, D/K, D/D**. For disjunctive types: **C/C, C/D, C/K, K/K, D/K, D/D**. The C/D and C/K pair was reversed in the earliest Stage115 abstract enumeration, but the set of forms was never missing. Follow the actual printed Q309 labels here and in the new reader.
+
+## Exact current verification counts
+
+- 15 printed form headings: **15/15** identified from printed imagery.
+- 3 printed instructions `ذكر ما لا يخفى`: **3/3** independently recognised.
+- Worked example sentences: **2/12** source-read and newly translated here; **10/12** still pending.
+- This does **not** certify the whole Q309 page or change the inherited four `missing-table` flags in the original Stage114 corpus.
+
+Next: prioritise transcription of connected rows 2–4 and 7–8, and disjunctive rows 2–6, with ambiguous words checked against both scans at crop level and footnoted rather than guessed. 
+
 
 
 ---
@@ -17008,7 +17044,7 @@ Four photographic **historical table graphics** are recovered from **two printin
 | Q258 / H-DEFINITION-019 | 49 | Exact original drawn grid and seven headings now locatable | 49 individual verdict descriptions await full Arabic–English transcription |
 | Q294 / H-PROPOSITIONS-097 | 105 | All fifteen classes and the original triangular source graphic located | 105 directional relation symbols await individual collation |
 | Q300 / H-PROPOSITIONS-121 | 32 | **Every printed classification symbol checked**: R7/U16/X9, matches Stage115 model | Interpretive/historical proof remains separate |
-| Q309 / H-CONDITIONAL-040 | 15 | All nine connected, six disjunctive types; three printed "ذكر ما لا يخفى" intentional no-example cells identified | 12 full Arabic examples await exact bilingual transcription |
+| Q309 / H-CONDITIONAL-040 | 15 | All nine connected, six disjunctive types; three printed "ذكر ما لا يخفى" intentional no-example cells identified | Two full Arabic worked examples have now been translated from both scans; **10** remain |
 | Q387 / H-SCIENCES-029 | — | Two photographed printed pages show no diagram despite `هكذا` | Mark as **false positive image-gap**, no invented figure |
 
 **201** substantive graphic positions across four tables, **32** directly verified status codes and **15** structural conditional labels; this is **not** 201 translated English table cells. The 49 + 105 detailed judgements and 12 Arabic examples remain on the actual pending-work register. The four Stage114 “missing table” flags remain unchanged until the respective tables are wholly translated.
@@ -17024,7 +17060,7 @@ Both are modern source-print witnesses. They are **not independent medieval auth
 
 - [Dedicated Stage116 photo table reader](STAGE116_PHOTOGRAPHIC_TABLE_READER.html), with the four real printed images and the Q300 32-cells.
 - [Detailed photographic source / attribution audit](STAGE116_PRINTED_TABLE_PHOTOGRAPHIC_AUDIT.md), citing both printings, exact Q pages and the true open gaps.
-- [Five-locus Arabic-to-English micro-alignment](STAGE116_CLAUSE_ALIGNMENT.md); spot checks, **not** a full-unit certification.
+- [Two original Q309 worked examples, fully Arabic–English read](STAGE116_Q309_TWO_EXAMPLES_PHOTO_TRANSLATED.md) — 2 of 12 explicit historical examples, with three additional printed source instructions.\n- [Five-locus Arabic-to-English micro-alignment](STAGE116_CLAUSE_ALIGNMENT.md); spot checks, **not** a full-unit certification.
 - [46-case modal proof-obligation audit](STAGE116_MODAL_PROOF_OBLIGATIONS.md); includes a rigorous necessary **temporal-to-modal bridge insufficiency lemma**, but **no claim** to new historical modal theorems.
 - [Stage116 machine-readable evidence/gap ledger](STAGE116_EVIDENCE_AND_GAP_LEDGER.json).
 - [Source image SHA/byte manifest](source-table-excerpts/PRINT_IMAGE_MANIFEST_STAGE116.json).
@@ -17040,7 +17076,7 @@ Current source branch `research/tahdhib-stage116-print-source-20261112`; final P
 
 ## Unambiguous next point for another chat
 
-1. Finish verbatim **49 Q258** original table cells, **105 Q294** shorthand cells (with direction), and **12 Q309** example sentences, comparing both printed impressions and attaching English **without overwriting** Stage114.
+1. Finish verbatim **49 Q258** original table cells, **105 Q294** shorthand cells (with direction), and **10 remaining Q309** example sentences, comparing both printed impressions and attaching English **without overwriting** Stage114.
 2. Run systematic full Arabic–English clause alignment over H and Y, recording *unit and original-page* hashes, attribution and textual differences; source excerpts do not certify whole pages.
 3. Independently collate genuine Taftāzānī manuscripts for original T, and the principal Y source as its own workstream.
 4. Resolve **all forty-six** exceptional syllogistic mixes with actual historically warranted modal semantics or explicit satisfying countermodels; keep Stage100 four mood VIII model-vacuities and Stage101 arbitrary-domain temporal proofs distinct.
