@@ -46,3 +46,12 @@ The earlier chapter-01 status entry remains a historical record. **Chapter 02 ha
 **Not completed:** independent direct check of all Arabic manuscripts and 56 Sulamī/Colby sayings; complete collation of Miʿrāj and historically contested Sīrah variants; individual source verification for the full 138-item claim ledger; proof of all regional archival source claims against primary documents; independent specialist and rendered browser visual QA. Report these as outstanding, not as completed.
 
 See [progress](PROGRESS_1_6_20261112.json), [ontology](ONTOLOGICAL_PROLEGOMENON_1_6_20261112.md), [ascension dossier](MIRAJ_CRITICAL_DOSSIER_1_6_20261112.md), and the future final scholarly review handoff.
+
+
+## Operative status · 12 November 2026 · Sīrah Edition 1.6.1
+
+**This is the current status and supersedes earlier dated release snapshots.** The [complete 1.6.1 prose-reviewed manuscript](current-edition-1.6.1-prose-reviewed.md), `../data/chapters.json` and `../read.html` are the current three synced narrative sources. In the 1.6.1 prose audit all 46 matns were rewritten in more direct English and 41 shurūḥ edited for source and style fidelity. An additional source-level correction restores Iblīs's refusal and fixes the Ark's construction to precede Nūḥ's flood. The original 1.6.0 manuscript and exact pre-1.6.1 JSON/reader snapshots remain archived.
+
+**Fresh legal source audit:** the primary text of the 1894 Privy Council family-waqf decision has been read; Chapter 44 now distinguishes the original 1868 deed, 1894 ruling, prospective 1913 Act and 1930 qualified retroactivity. See [source dossier](WAQF_PRIVY_COUNCIL_SOURCE_AUDIT_20261112.md).
+
+**Evidence record:** [CLAIM_WITNESS_LEDGER_1_6_1_20261112.json](CLAIM_WITNESS_LEDGER_1_6_1_20261112.json) refreshes 138 source-tracking excerpts against the actual 1.6.1 narrative. Most mappings are expressly provisional and remain unverified individually; direct-check statuses are not misrepresented as full Arabic collation. Full Colby/Sulamī, unresolved Akbarian source witnesses, historical and legal primary records, and independent scholar review remain outstanding.
