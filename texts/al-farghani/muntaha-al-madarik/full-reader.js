@@ -237,6 +237,11 @@
       [preferences.wide?"Standard width":"Wide text",()=>{$("fr-wide").click();openSettings();}],
       [preferences.markers?"Hide page labels":"Show page labels",()=>{$("fr-markers").click();openSettings();}]
     ]);
+    row("Textual evidence (optional)","Open the original Arabic evidence only when you wish to consult the edition rather than read continuously.",[
+      ["Editorial notes · current page",()=>openSources()],
+      ["Arabic + English reader",()=>{location.href="parallel-introduction.html#p"+current;}],
+      ["Selected critical passages",()=>{location.href="critical-edition.html?page="+current;}]
+    ]);
     row("Reading and citations","Enter uninterrupted focus mode, copy the current source citation, or print.",[
       ["Focus reading",()=>focus(true)],
       ["Copy p. "+current+" citation",()=>copyCitation()],
