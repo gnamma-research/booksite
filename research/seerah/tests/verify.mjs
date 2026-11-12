@@ -83,7 +83,7 @@ assert.ok(landing.includes('framework.html')&&html.includes('framework.html'));
 assert.equal((tables.match(/<tr><th scope="row">/g)||[]).length,13);
 assert.ok(tables.includes('id="vi"')&&tables.includes('id="vii"'));
 
-assert.ok(html.includes('editorial/current-edition-1.6.1-prose-reviewed.md'));
+assert.ok(html.includes('editorial/current-edition-1.7.0-generative.md'));
 assert.equal((html.match(/<article class="chapter"/g)||[]).length,46);
 assert.equal((html.match(/class="matn"/g)||[]).length,46);
 assert.equal((html.match(/class="sharh"/g)||[]).length,46);
