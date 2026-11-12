@@ -88,6 +88,11 @@ def fetch(page):
             notes=raw[split:].strip() if split is not None else ""
             # Quranic verse number (7) on p26 is part of Farghānī's quotation.
             possible_notes=False if page in QURANIC_VERSE_ONLY or reviewed_lead else bool(re.search(r"\(\s*[1-9]\s*\)",main[-250:]))
+            review=(dict(status="reviewed-digital-footer",boundary_lead=reviewed_lead,
+                         source_pagination=page,raw_transcription_preserved=True)
+                    if reviewed_lead else
+                    dict(status="false-positive-verse-number",reference="Quran 30:7",
+                         raw_transcription_preserved=True) if page in QURANIC_VERSE_ONLY else None)
             return {
               "page":page,"source_siglum":"B2007-digitized","source_grade":"modern-edited-digital-transcription-unverified-against-paper",
               "url":url,"retrieved_at_utc":datetime.now(timezone.utc).isoformat(),
@@ -95,7 +100,8 @@ def fetch(page):
               "raw_ar":raw,"reading_ar":main,"editorial_notes":notes,
               "editorial_split_method":footnote_grade,"possible_unseparated_note":possible_notes,
               "raw_chars":len(raw),"reading_chars":len(main),"arabic_words":len(norm_ar(main).split()),
-              "title_verified":title
+              "title_verified":title,
+              **({"footnote_review":review} if review is not None else {})
             }
         except Exception as exc:
             errors.append(str(exc))
@@ -245,12 +251,22 @@ def main():
        "exact_normalized_source_excerpt_matches":sum(x["exact_normalized_digital_match"] for x in checked),
        "selected_excerpt_match_audit":checked,
        "page_level_warning_queue":warnings,
+       "editorial_footer_reconciliation":{
+          "schema":"farghani-reviewed-trailing-modern-note-separation-v1",
+          "date":datetime.now(timezone.utc).date().isoformat(),
+          "targetedPages":len(REVIEWED_FOOTNOTE_LEADS)+len(QURANIC_VERSE_ONLY),
+          "editorNotePagesCorrected":sorted(REVIEWED_FOOTNOTE_LEADS),
+          "falsePositiveVerseNumberPages":sorted(QURANIC_VERSE_ONLY),
+          "originalDigitalRawUnchanged":True,
+          "noteTextPreservedInEditorialApparatus":True,
+          "basis":"Manually reviewed digital footnote cues; online structural confirmation of pp.20,21,23,25,29; no independent printed-leaf collation",
+          "limits":"No remaining automatic note flags does not prove manuscript verification or full-text proofreading."},
        "source_collation_grade":"modern digital source extraction and quantitative comparison, NOT a full line-by-line historic-print collation",
        "independent_manuscript_variants_verified":0,
        "full_print_pages_independently_line_collated":0},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     contents=["# Farghānī · digitized source copy, B2007 pp18–145",
       "Source: https://ablibrary.net/book_content/b/9606/18?lang=ar",
-      "Public-domain medieval authorial text as retranscribed online from the modern Beirut edition; no physical Beirut print or manuscript folios collated. Some modern notes are only heuristically isolated. This is a *reading copy*, NOT a definitive critical Arabic text.",
+      "Public-domain medieval authorial text as retranscribed online from the modern Beirut edition; no physical Beirut print or manuscript folios collated. Distinct modern editor footnotes have been separated where identifiable, including 16 reviewed digital footer boundaries in November 2026. This is a *working reading copy*, NOT a definitive critical Arabic text.",
       ""]
     for x in pages:
         contents.extend([f"## B2007 printed p{x['page']}", "", x["reading_ar"], ""])
