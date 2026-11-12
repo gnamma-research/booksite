@@ -63,7 +63,24 @@ for tag,url in URLS.items():
             "embeddedPdfTextChars":len(page.get_text("text")),
             "pdfPageSize":[round(page.rect.width,1),round(page.rect.height,1)]
           })
-      obj["status"]="downloaded_and_thumbnails_rendered"
+      # Second pass: exactly five printed source pages, true high-resolution, no
+      # automated textual OCR. Determined from first-pass visual page-numeral
+      # matching: 1405 scan pdf index=printed+1; 1433 pdf index=printed.
+      obj["highres"]=[]
+      printed_to_pdf_offset = 1 if tag == "lis_fa1208_1405" else 0
+      for printed in TARGETS:
+        idx = printed + printed_to_pdf_offset
+        page = pdf[idx]
+        pix = page.get_pixmap(matrix=fitz.Matrix(3.3,3.3),alpha=False)
+        png = pix.tobytes("png")
+        fname = f"{tag}-VERIFIED-PRINTED-p{printed}-pdfindex-{idx:03}-hires.png"
+        (ROOT/fname).write_bytes(png)
+        obj["highres"].append({
+          "printedPage":printed,"pdfIndex0":idx,"name":fname,
+          "bytes":len(png),"sha256":sha(png),
+          "indexOffsetDeterminedBy":"visual printed folio in 25-candidate gallery"
+        })
+      obj["status"]="downloaded_and_thumbnails_and_five_verified_highres_pages_rendered"
       pdf.close()
       print("retrieved",tag,"pages",obj["page_count"],"PDF bytes",obj["pdf_bytes"],"sha",obj["pdf_sha256"],flush=True)
       # Avoid uploading full PDF editions; provide original public URL and verified SHA.
