@@ -57,7 +57,7 @@ with sync_playwright() as p:
         page.locator('#SH-001>summary').click();page.locator('#lang-ar').click()
         check('languages affect both layers',page.locator('.matn-layer .ar').is_hidden() and page.locator('#SH-001 .ar').is_hidden() and page.locator('#SH-001 .en').is_visible())
         page.locator('#lang-en').click();check('one language remains',page.locator('#lang-en').get_attribute('aria-pressed')=='true')
-        page.locator('#lang-ar').click();page.locator('#layer-sharh').click();page.locator('#search-button').click();page.locator('#search-field').fill('SH-028');page.locator('[data-result-id="SH-028"]').click();page.wait_for_selector('#SH-028')
+        page.locator('#lang-ar').click();page.locator('#layer-sharh').click();page.locator('#search-button').click();page.locator('#qaw-term').fill('SH-028');page.locator('#qaw-research-form button[type="submit"]').click();page.locator('.qaw-result-list [data-qaw-result]').first.click();page.wait_for_selector('#SH-028')
         check('search reveals hidden commentary in place',page.url.endswith('#SH-028') and page.locator('#SH-028 .sharh-content').is_visible())
         page.evaluate("s=JSON.parse(localStorage.getItem('gnamma:qawaid:reading:v2'));s.bookmarks=['QT-007'];s.personal={'QT-007':'Retained note'};s.legacyField='retain';localStorage.setItem('gnamma:qawaid:reading:v2',JSON.stringify(s))")
         page.reload(wait_until='networkidle');page.locator('#layer-sharh').click();page.locator('#layer-sharh').click()
