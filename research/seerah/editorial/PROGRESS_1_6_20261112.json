@@ -2,7 +2,7 @@
   "date": "2026-11-12",
   "edition_source": "1.5.0-integrated-first-pass",
   "working_edition": "1.6.0-scholarship-pass",
-  "overall_percent": 45,
+  "overall_percent": 55,
   "rule": "Percentages are weighted accomplishment of explicit deliverables, not measures of scholarly truth. Each evidence status must be shown; partial sources never get complete status.",
   "stages": [
     {
@@ -72,11 +72,15 @@
       "name": "Book V living inheritance",
       "target": "Recompose Chapters 27–33 around work/state/knowledge, ṣuḥba, disciplines and real pedagogy",
       "weight": 12,
-      "percent": 0,
-      "status": "not-started",
-      "outputs": [],
+      "percent": 83,
+      "status": "seven-coherent-book-V-chapters-staged; primary-Arabic-and-transmission-review-pending",
+      "outputs": [
+        "editorial/rewrite-20261112/book-V-1_6-27-29.json",
+        "editorial/rewrite-20261112/book-V-1_6-30-33.json"
+      ],
       "remaining": [
-        "Recompose Chapters 27–33 around work/state/knowledge, ṣuḥba, disciplines and real pedagogy"
+        "Detailed direct primary collation of Ghazālī, al-Qushayrī, Rāzī and Madhhab recensions",
+        "Integrate into canonical manuscript and ensure coherence with other books"
       ]
     },
     {
@@ -120,5 +124,5 @@
     "Edition 1.5 remains canonical until 1.6 text passes checks.",
     "No work runs asynchronously. This ledger records only current committed work."
   ],
-  "latest": "D — six benchmark matns and coherent shurūḥ drafted in three work files"
+  "latest": "E — all seven Book V inheritance chapters recomposed as source-linked standalone drafts"
 }
