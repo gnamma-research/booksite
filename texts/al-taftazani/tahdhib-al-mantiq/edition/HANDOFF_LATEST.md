@@ -24,6 +24,8 @@ The [eleven-source-hash discrepancy ledger](STAGE122_ELEVEN_SOURCE_HASH_GAP_LEDG
 
 **Editorial distinction for the four original printed tables:** Q258, Q294, Q300 and Q309 all have photographed source tables, but their completion, transcription and translation grades are tracked separately. Recovery of the original tables does not certify their English translations.
 
+**Two further complete historical-note working translations:** [HWN-DALALA-039 and HWN-DALALA-081](STAGE122_TWO_FURTHER_SIGNIFICATION_GLOSSES.md) develop the definition of compound expressions (including intended part-signification and *taḍammun/muṭābaqa*) and the three conditions of lexical homonymy (multiple meanings, multiple assignments and original *waḍʿ*), with the competing analyses of *murtajal*. Both source-unit hashes match Stage114; neither English is a manuscript-certified reading. Together with [the preceding six historical expansions](STAGE122_SIX_EXPANDED_HISTORICAL_NOTES.md), Stage122 now adds **eight** fuller historical note translations without overwriting the old English.
+
 ## Q258 actual printed errors: apply correction overlay, preserve earlier snapshots
 
 [Stage122 source-photo correction register](STAGE122_Q258_SOURCE_PHOTO_ERRATA.json) fixes:
