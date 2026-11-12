@@ -9,6 +9,7 @@ mkdirSync(reportDir,{recursive:true});
 const browser=await browserType.launch({headless:true});
 const report={date:new Date().toISOString(),browser:which,checks:[],screenshots:[],errors:[]};
 const url=process.env.GNAMMA_URL||'http://127.0.0.1:8765/research/seerah/read.html';
+const directory=url.slice(0,url.lastIndexOf('/')+1);
 
 async function run(width,height,label){
  const context=await browser.newContext({viewport:{width,height},deviceScaleFactor:1});
@@ -65,9 +66,9 @@ try{
  await run(1280,800,'desktop');
  assert.equal(report.errors.length,0,'Uncaught browser page errors: '+report.errors.join(' | '));
  const atlas=await browser.newPage();
- await atlas.goto(url.replace('read.html','atlas.html'),{waitUntil:'load'});
+ await atlas.goto(directory+'atlas.html',{waitUntil:'load'});
  for(const id of ['timeline','arabia','community','authority','law','spiritual','monsoon'])assert.equal(await atlas.locator('#figure-'+id).count(),1);
- await atlas.goto(url.replace('read.html','dossiers.html'),{waitUntil:'load'});
+ await atlas.goto(directory+'dossiers.html',{waitUntil:'load'});
  for(let i=1;i<=9;i++)assert.equal(await atlas.locator('#dossier-'+i).count(),1);
  await atlas.close();
  report.status='PASS';
