@@ -1,0 +1,73 @@
+name: Tahdhib Stage121 photo-cell translation and historic-source integrity
+on:
+  workflow_dispatch:
+  push:
+    branches: ['research/tahdhib-stage121-q258-complete-cell-index-q294-directions-20261112']
+    paths:
+      - '.github/workflows/tahdhib-stage121-source-audit.yml'
+      - 'tools/tahdhib/build_stage121_cumulative.py'
+      - 'tools/tahdhib/check_stage121_release.py'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE121_*.json'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE121_PHOTOGRAPHIC_CELL_AUDIT.md'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md'
+permissions:
+  contents: write
+jobs:
+  build-and-audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build Stage121 full historic H corpus with unchanged Stage120 master as prefix
+        run: python tools/tahdhib/build_stage121_cumulative.py
+      - name: Check photographed 49 definition locations and 47 modal source glyph cores
+        run: python tools/tahdhib/check_stage121_release.py
+      - name: Run unchanged logical-core and older publication invariants
+        run: |
+          python -m pip install PyYAML==6.0.2
+          python tools/tahdhib/run_ci_contract.py logical-core
+      - name: Commit only generated full corpus and integrity manifest, without changing historical text
+        env:
+          BRANCH: research/tahdhib-stage121-q258-complete-cell-index-q294-directions-20261112
+        run: |
+          test "$GITHUB_REF" = "refs/heads/$BRANCH"
+          E=texts/al-taftazani/tahdhib-al-mantiq/edition
+          D=$(mktemp -d)
+          cp "$E/batches/hawashi-all-sections-cumulative-stage121.md" "$D/full.md"
+          cp "$E/STAGE121_CUMULATIVE_FILE_INTEGRITY.json" "$D/manifest.json"
+          SOURCE=$(sha256sum "$E/STAGE121_Q258_TEN_LAST_LOCATOR_READINGS.json" "$E/STAGE121_Q294_TWENTY_SOURCE_DIRECTIONS.json" "$E/HANDOFF_LATEST.md" | sha256sum | cut -d' ' -f1)
+          git fetch origin "$BRANCH"
+          git reset --hard "origin/$BRANCH"
+          CURRENT=$(sha256sum "$E/STAGE121_Q258_TEN_LAST_LOCATOR_READINGS.json" "$E/STAGE121_Q294_TWENTY_SOURCE_DIRECTIONS.json" "$E/HANDOFF_LATEST.md" | sha256sum | cut -d' ' -f1)
+          test "$SOURCE" = "$CURRENT" || { echo "Source moved during build; do not commit stale material"; exit 3; }
+          cp "$D/full.md" "$E/batches/hawashi-all-sections-cumulative-stage121.md"
+          cp "$D/manifest.json" "$E/STAGE121_CUMULATIVE_FILE_INTEGRITY.json"
+          python tools/tahdhib/check_stage121_release.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$E/batches/hawashi-all-sections-cumulative-stage121.md" "$E/STAGE121_CUMULATIVE_FILE_INTEGRITY.json"
+          if ! git diff --cached --quiet; then
+            git commit -m 'Tahdhīb Stage121: publish full immutable 1090-note H corpus plus 30 source-cell readings'
+            git push origin "HEAD:refs/heads/$BRANCH"
+          fi
+      - name: Export complete cumulative source and source photographs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tahdhib-stage121-full-cumulative-source
+          path: |
+            texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage121.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage120.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE121_*
+            texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_STAGE120.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts/print1405_Q258_table_excerpt.png
+            texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts/print1405_Q294_table_excerpt.png
+            texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts/PRINT_IMAGE_MANIFEST_STAGE116.json
+            tools/tahdhib/build_stage121_cumulative.py
+            tools/tahdhib/check_stage121_release.py
+          if-no-files-found: warn
+          retention-days: 90

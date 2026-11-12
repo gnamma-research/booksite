@@ -1,0 +1,141 @@
+{
+  "schema": "gnamma.tahdhib.stage121.q258.complete-locator-audit.v1",
+  "date": "2026-11-12",
+  "source_print": "H1405 later H gloss p258; PDF image zero-based259",
+  "source_pdf_url": "https://archive.org/download/lis_fa12/lis_fa1208.pdf",
+  "source_sha256": "696c7b2e2884414f34d90203326f7b07f72e207849080e5069aadd0f12bb5759",
+  "comparison_print": "H1433 Q258; no authorial manuscript claim",
+  "source_image": "source-table-excerpts/print1405_Q258_table_excerpt.png",
+  "prior_selected_positions": 39,
+  "new_photographically_read_positions": 10,
+  "all_positions_with_some_reading": 49,
+  "new_complete_short_cross_reference_cells": 7,
+  "cumulative_complete_short_cross_reference_cells": 11,
+  "cumulative_full_substantive_verdict_cells_certified": 0,
+  "new_partial_negative_judgment_positions": 3,
+  "remaining_source_positions_without_any_reading": 0,
+  "remaining_full_substantive_cells_for_diplomatic_translation": 38,
+  "previous_cross_reference_cells": [
+    "Q258-R01C04",
+    "Q258-R01C06",
+    "Q258-R06C01",
+    "Q258-R07C06"
+  ],
+  "notes": [
+    "The full-cell translations of the short 'انظر' instructions are genuine but contain no new definitional argument.",
+    "The three longer negative judgments are only partially deciphered; the grounds of invalidity are not supplied editorially.",
+    "Completing an index of 49 short source snippets does NOT certify the full 49-cell Arabic-English table."
+  ],
+  "entries": [
+    {
+      "id": "Q258-R01-C01",
+      "row": 1,
+      "column": 1,
+      "arabic_visible": "غير صحيح",
+      "english": "Incorrect [the remainder of the handwritten explanation is not yet reliably read].",
+      "grade": "partial-photographed-negative-judgment",
+      "is_substantive_definitional_verdict": true,
+      "full_cell_text_read": false,
+      "unresolved": "Qualifier may involve excessive generality, excessive specificity, or an ordering issue; do not supply one without photographic certainty."
+    },
+    {
+      "id": "Q258-R01-C03",
+      "row": 1,
+      "column": 3,
+      "arabic_visible": "انظر",
+      "english": "See the corresponding case.",
+      "grade": "complete-photographed-short-cross-reference",
+      "is_substantive_definitional_verdict": false,
+      "full_cell_text_read": true,
+      "source_note": "Source cell contains only the brief cross-reference; do not invent a fresh verdict."
+    },
+    {
+      "id": "Q258-R01-C05",
+      "row": 1,
+      "column": 5,
+      "arabic_visible": "انظر",
+      "english": "See the corresponding case.",
+      "grade": "complete-photographed-short-cross-reference",
+      "is_substantive_definitional_verdict": false,
+      "full_cell_text_read": true,
+      "source_note": "Source cell contains only the brief cross-reference; do not invent a fresh verdict."
+    },
+    {
+      "id": "Q258-R01-C07",
+      "row": 1,
+      "column": 7,
+      "arabic_visible": "غير صحيح",
+      "english": "Incorrect [the remainder of the handwritten explanation is not yet reliably read].",
+      "grade": "partial-photographed-negative-judgment",
+      "is_substantive_definitional_verdict": true,
+      "full_cell_text_read": false,
+      "unresolved": "Qualifier may involve excessive generality, excessive specificity, or an ordering issue; do not supply one without photographic certainty."
+    },
+    {
+      "id": "Q258-R02-C01",
+      "row": 2,
+      "column": 1,
+      "arabic_visible": "غير صحيح",
+      "english": "Incorrect [the remainder of the handwritten explanation is not yet reliably read].",
+      "grade": "partial-photographed-negative-judgment",
+      "is_substantive_definitional_verdict": true,
+      "full_cell_text_read": false,
+      "unresolved": "Qualifier may involve excessive generality, excessive specificity, or an ordering issue; do not supply one without photographic certainty."
+    },
+    {
+      "id": "Q258-R03-C01",
+      "row": 3,
+      "column": 1,
+      "arabic_visible": "انظر",
+      "english": "See the corresponding case.",
+      "grade": "complete-photographed-short-cross-reference",
+      "is_substantive_definitional_verdict": false,
+      "full_cell_text_read": true,
+      "source_note": "Source cell contains only the brief cross-reference; do not invent a fresh verdict."
+    },
+    {
+      "id": "Q258-R04-C01",
+      "row": 4,
+      "column": 1,
+      "arabic_visible": "انظر",
+      "english": "See the corresponding case.",
+      "grade": "complete-photographed-short-cross-reference",
+      "is_substantive_definitional_verdict": false,
+      "full_cell_text_read": true,
+      "source_note": "Source cell contains only the brief cross-reference; do not invent a fresh verdict."
+    },
+    {
+      "id": "Q258-R05-C01",
+      "row": 5,
+      "column": 1,
+      "arabic_visible": "انظر",
+      "english": "See the corresponding case.",
+      "grade": "complete-photographed-short-cross-reference",
+      "is_substantive_definitional_verdict": false,
+      "full_cell_text_read": true,
+      "source_note": "Source cell contains only the brief cross-reference; do not invent a fresh verdict."
+    },
+    {
+      "id": "Q258-R07-C01",
+      "row": 7,
+      "column": 1,
+      "arabic_visible": "انظر",
+      "english": "See the corresponding case.",
+      "grade": "complete-photographed-short-cross-reference",
+      "is_substantive_definitional_verdict": false,
+      "full_cell_text_read": true,
+      "source_note": "Source cell contains only the brief cross-reference; do not invent a fresh verdict."
+    },
+    {
+      "id": "Q258-R07-C03",
+      "row": 7,
+      "column": 3,
+      "arabic_visible": "انظر",
+      "english": "See the corresponding case.",
+      "grade": "complete-photographed-short-cross-reference",
+      "is_substantive_definitional_verdict": false,
+      "full_cell_text_read": true,
+      "source_note": "Source cell contains only the brief cross-reference; do not invent a fresh verdict."
+    }
+  ]
+}

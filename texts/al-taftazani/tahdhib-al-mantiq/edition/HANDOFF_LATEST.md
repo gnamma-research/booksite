@@ -1,38 +1,36 @@
-# Tahdhīb Stage120 — full cumulative handoff for ordered definitions and modal directions
+# Tahdhīb Stage121 — source-photo completion of Q258 locator readings and further Q294 directional marks
 
-**12 November 2026 · Working H later-gloss photo audit. Stage120 is additive: original translated corpus unmodified.**
+**12 November 2026 · Working Arabic–English historical H source edition.** This source continuation preserves original text bytes. It is **not** a claim of whole-book critical certification, independent manuscripts or all historical modal-inference proofs.
 
-## Exact inherited source and publication state
+## Exact inherited corpus and voice separation
 
-- Historical Taftāzānī original logic `T` and principal Yazdī commentary `Y` remain distinct from later mixed-author glosses `H` and separately identified modern editorial quotation.
-- The immutable original H first-pass corpus has **1,090 numbered historical positions** in **14 locally numbered historical sections**; **1,029 English first-pass renderings**, **4 prose-rendered notes with incomplete source tables**, and **57 modern reference-only entries**. It ends at H-SCIENCES-086/Q395; Q396–400 are not new historical forward glosses.
-- The canonical historical H master is [hawashi-effective-stage114.json](hawashi-effective-stage114.json) and [whole Stage114 English Markdown](batches/hawashi-all-sections-cumulative-stage114.md), unchanged. The prior complete [Stage119 cumulative Markdown](batches/hawashi-all-sections-cumulative-stage119.md) is preserved as the byte-identical prefix of the new [Stage120 cumulative text](batches/hawashi-all-sections-cumulative-stage120.md).
-- Prior exact full [Stage119 handoff](HANDOFF_STAGE119.md) is preserved, as are stages 114–118. A research branch or committed source is not proof of a finished deployment, and all new results remain source-graded.
+The original Taftāzānī logic text is `T`, principal al-Yazdī commentary `Y`, later mixed-author glosses `H`, and later modern editorial references a fourth distinct stratum. **Never merge their voices.** The complete historic H first-pass corpus contains **1,090 numbered positions in 14 independent local sequences**, of which **1,029** have English first-pass renderings, **4** have prose translated but table cells incompletely translated, and **57** are later modern editorial reference-only. No new substantive historical text extends past H-SCIENCES-086/Q395. Main Y earlier translated 113 blocks corresponding to 110 printed source positions, unchanged.
 
-## What Stage120 added
+Canonical Stage114 source and every later cumulative archive are preserved. The [Stage120 full Markdown](batches/hawashi-all-sections-cumulative-stage120.md) must be byte-identical to the **prefix** of the [Stage121 cumulative complete source](batches/hawashi-all-sections-cumulative-stage121.md), with no earlier translation rewrite. An exact [Stage120 historical handoff](HANDOFF_STAGE120.md) is preserved alongside previous stages.
 
-**Q258: 15 new photographs-to-Arabic/English short transcriptions** in [machine-readable source register](STAGE120_Q258_FIFTEEN_SOURCE_FRAGMENTS.json), alongside 24 inherited selected phrases = **39 of 49 historical ordered two-predicable cells with at least a short source reading**. Four new positions contain the source cross-reference `انظر`: this is not a new standalone definitional verdict. Many fragments intentionally cover only the reason for a judgment, such as `لتقدم الأخص`. **Fully diplomatically transcribed and completely translated 49-cell table certified in Stage120: zero.** No previous status marker upgraded.
+**Historical source tables:** the four original Q258, Q294, Q300 and Q309 tables are photographically accessible, but source recovery and unabridged translation have different certification levels. The original H source text remains intact.
 
-**Q294: eight newly transcribed original inclusion/direction symbols** `مط حم` (absolute inclusion, *the lower of the compared propositions is broader*) at coordinates 3.1,4.1,4.3,5.1,6.1,6.2,7.1,8.1. Alongside Stage119's 19 verified short `من` and `ين` glyphs, there are now **27 individually photographed working shorthand readings out of 105**. Remaining 78 historical symbols await individual exact reading/second-print checking; even the 27 are *not 27 proved modal entailments*. The technical legend is in source page Q293, which compares **truth conditions of propositions**, not the predicability of one term of another. [Eight-source JSON](STAGE120_Q294_EIGHT_DIRECTIONAL_SYMBOLS.json), [source audit and English](STAGE120_SOURCE_PHOTO_AUDIT.md).
+## Source-table progress achieved here
 
-**Q309:** Stage119 already documented 15 printed forms (3 instructions plus 12 working Arabic-English example renderings), **4 provisional** and **2 print/digital witness disagreements**. Stage120 does not change this.
+**Q258:** All **49 of 49** original ordered pair positions now have at least a selected photographed source reading. Stage120 had 39; Stage121 recovered the last **10**. Of those ten, **7** are the single cross-reference instruction **انظر** and **3** are partial negative verdicts **غير صحيح** with the handwritten grounds still unresolved. With four earlier cross-reference cells, **11** original table cells are genuinely complete *short instruction* readings; the other **38 substantive cells still need their full historical Arabic and literal English**. This is not a declaration of 49/49 unabridged verified table translations. [Ten new source entries](STAGE121_Q258_TEN_LAST_LOCATOR_READINGS.json); [full Stage121 photo audit](STAGE121_PHOTOGRAPHIC_CELL_AUDIT.md).
 
-**Source prints:** H1405 <https://archive.org/download/lis_fa12/lis_fa1208.pdf>, printed Q258/Q294 (zero-based PDF indices 259/295), original PDF SHA256 `696c7b2e2884414f34d90203326f7b07f72e207849080e5069aadd0f12bb5759`. H1433 <https://archive.org/download/lis_fa12/lis_fa1209.pdf> is a second *printed* witness; individual per-cell comparison remains open. Modern derivative transcriptions are not medieval independent manuscripts.
+**Q294:** Historical fifteen-form triangular table has **105 individual pair positions**. Previous stages obtained exact shorthand core signs at **27**; Stage121 reads **20** additional printed `مط حم` or `مط فم` directional cores, ten lower-more-general and ten upper-more-general. Now **47/105 individual source core glyphs have working readings; 58 await source-cell transcription**. Breakdown of the 58: **33** inclusion-family positions still lacking exact source direction, plus **25** overlap/disjointness positions still without individually transcribed glyphs. Even the 47 need comparison of tiny time/description strokes with the second printing before fully qualified table-cells can be certified. [Twenty new directional source records](STAGE121_Q294_TWENTY_SOURCE_DIRECTIONS.json).
 
-## Full Stage120 integrity files and reading paths
+The source Q293 legend by ʿAbd al-Raḥīm explicitly contrasts simple predicability with **truth/obtaining in reality of complete propositions**; `فم` marks upper proposition broader, `حم` lower broader. Neither notation **proves a full historical necessary entailment** without the actual modal semantics.
 
-- [New Stage120 source-photographic audit](STAGE120_SOURCE_PHOTO_AUDIT.md), with precisely bounded Arabic and English and exact positions.
-- [Q258 fifteen selected fragments](STAGE120_Q258_FIFTEEN_SOURCE_FRAGMENTS.json), [Q294 eight directional marks](STAGE120_Q294_EIGHT_DIRECTIONAL_SYMBOLS.json).
-- [Photo source-cell reading desk](STAGE120_SOURCE_PHOTO_READER.html) linked discreetly in the original logic reader; table images belong in the scholarly apparatus, not in the continuous original text.
-- [Full cumulative Stage120 preserved source](batches/hawashi-all-sections-cumulative-stage120.md) and [manifest with input/output SHA256 and appended source hashes](STAGE120_CUMULATIVE_FILE_INTEGRITY.json) when generated and verified by repository CI. Do **not** claim files built or deployed merely because listed in this handoff.
-- [Complete old Stage119 handoff](HANDOFF_STAGE119.md) and [historic original H reader](hawashi-numbered-notes.html). The whole corpus and statuses remain unchanged.
+## Publication, provenance, and cumulative handoff
 
-## Independent certification and true next work
+- [Stage121 optional scholarly reader](STAGE121_SOURCE_READER.html) shows source phrases with exact table coordinates, uncertainty flags and original bounded photographs. Continuous Arabic–English matn remains clean of editorial material.
+- [Stage121 detailed source-audit Markdown](STAGE121_PHOTOGRAPHIC_CELL_AUDIT.md).
+- Original photographed printed copies: [H1405](https://archive.org/download/lis_fa12/lis_fa1208.pdf) (printed Q258/Q294 PDF zero-based 259/295) original PDF SHA256 `696c7b2e2884414f34d90203326f7b07f72e207849080e5069aadd0f12bb5759`; comparison [H1433](https://archive.org/download/lis_fa12/lis_fa1209.pdf) at indices 258/294, original SHA256 `c119de2073dee4610e99a35cd01bd075841cc0e4dfaef7a9473b950dd250c70d`. These are H *printed* witnesses, **not independent T or Y manuscripts**.
+- The [Stage121 complete cumulative Markdown](batches/hawashi-all-sections-cumulative-stage121.md) and [SHA256/coverage manifest](STAGE121_CUMULATIVE_FILE_INTEGRITY.json) are **pending actual builder verification until both links exist and their hashes check**. Do not claim the website is live simply because a branch or manifest name exists.
 
-**New complete whole H printed pages certified 0; independently collated authorial T/Y manuscript variants 0; complete classical all-world necessity-strength proofs for the separately source-classified 46 exceptional fourth-figure modal mixtures 0.** Prior arbitrary-domain *temporal shadow* theorems do not prove these full historical modes.
+## Strict next textual and modal-proof obligations
 
-Next:
-1. Read and translate **all 49 Q258 complete original verdict cells** (selected phrase readings are only interim source evidence).
-2. Individually transcribe and verify **78 remaining Q294 shorthand positions**, retaining `مط/من/ين`, `فم/حم` and `ط/ف` without guessing; then second-print compare all 105.
-3. Finish source-critical Q309 variant analysis and all H/Y Arabic-to-English clause alignment; collate original authorial manuscript witnesses and progress the historically accurate 46 modal proof/countermodel programme.
-4. Preserve every cumulative release and link it from the scholarly homepage; do not replace previous translations with editorial summaries and do not restart Concepts36 or any post-Q395 fake continuation.
+1. Translate the **38 remaining substantive Q258 original verdict cells** fully, including all correctness versus acceptability qualifications and the three partially read negative judgments; the eleven `انظر` cells need no invented substantive contents.
+2. Individually read **58 remaining Q294 source core signs**, then compare **all 105** fully qualified, source-directional codes with H1433 including `ط/ف`, `فم/حم` and any overline/tick.
+3. Complete the original Q309 twelve working example texts' four uncertain readings and two print/digital variants. Stage119 draft coverage of 12/12 is **not** exhaustive critical verification.
+4. Systematically align all H/Y Arabic clauses against genuine printed witnesses; collate separately authenticated original authorial manuscripts.
+5. The separately source-classified **46 exceptional figure-IV modal syllogistic mixes** still lack independently demonstrated historical necessity-strength proofs or countermodels. Earlier finite temporal probes and arbitrary-domain *temporal shadows* must not be relabelled those proofs.
+
+**New whole printed H pages independently certified: 0. New T/Y original manuscript variant readings: 0. New full historical necessity-strength proofs of the 46 cases: 0.** Source records and invariants are preserved for the next continuation; never restart an obsolete forward pointer such as Concepts36 or invent text beyond Q395.
