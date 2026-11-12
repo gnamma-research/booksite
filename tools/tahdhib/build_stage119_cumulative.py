@@ -51,7 +51,7 @@ data={
  "Q309Positions":15,"Q309WorkedDrafts":12,"Q309PrintedInstructions":3,
  "Q309Provisional":4,"Q309WitnessDiscrepancies":2,
  "Q258SelectedPhrasesUnchanged":24,"Q258FullyCertifiedCells":0,
- "Q294ProvisionalFamiliesUnchanged":105,"Q294DirectionCertifiedCells":0,
+ "Q294ProvisionalFamiliesUnchanged":105,"Q294DirectWorkingSourceGlyphs":19,"Q294RemainingExactTranscriptions":86,"Q294DirectionCertifiedCells":0,
  "newlyCertifiedWholeHPrintedPages":0,"newAuthorialManuscriptVariants":0,
  "newHistoricallyValidModal46Proofs":0,"appendices":records
 }
