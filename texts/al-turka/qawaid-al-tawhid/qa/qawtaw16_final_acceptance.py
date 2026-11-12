@@ -135,7 +135,7 @@ report={
     "status":"Original Qawtaw5 flag inventory preserved for consultation; it must not be conflated with the fourteen separately adjudicated cases. Some legacy flags were subsequently interpreted through later printed comparisons."},
   "selectedFourteenCases":{"workingReadingSettled":12,"unresolvedHistoricalNegative":1,"reportedLostAncestralText":1},
   "outstandingHistoricalQuestions":{
-    "SH-002":"Retain transmitted ببطالن. Conjectural بحقيّة is not attested at the disputed location by an inspected independent early witness.",
+    "SH-002":"Retain transmitted ببطلان. Conjectural بحقيّة is not attested at the disputed location by an inspected independent early witness.",
     "QT-059":"Existing source paragraph translated. Additional original authorial words reported missing cannot be supplied from grandson commentary.",
     "imprint1315versus1316":"Bibliographic identities of historic prints have conflicting catalogue reports; no title pages or colophons of those objects inspected in Qawtaw16."},
   "releaseTests":{
