@@ -43,6 +43,8 @@ A fuller two-speaker working English draft for HWN-048 and HWN-DALALA-084 and a 
 
 [Six clause-structured translations from the recovered Arabic](STAGE122_SIX_EXPANDED_HISTORICAL_NOTES.md), with [per-note digital SHA and speaker provenance](STAGE122_SIX_NOTES_PROVENANCE.json), extend `HWN-DALALA-067`, `HWN-CONVERSION-008`, `HWN-CONVERSION-021`, `HWN-CONTRAPOSITION-019`, `HWN-MAFAHIM-011` and `HWN-INTRO-081`. All six original note hashes **match** the Stage114 digital census; their old English fields had only 39–60 words each. The new English renders the entire recovered historical source argument at **working** grade, not independent printed/manuscript certification. It is a separately maintained translation supplement and does not replace any original English field.
 
+**Further semantic-logic translations:** [two complete working historical notes on semantic composition and homonymy](STAGE122_TWO_FURTHER_SIGNIFICATION_GLOSSES.md) extend the six just linked to **eight** expanded historical notes. The two additional source digests match the old digital census, and both note translations separate the historical speakers. They do not certify any printed page or manuscript.
+
 ## 2. Two concrete photographic corrections at Q258
 
 [Photo-sourced correction overlay](STAGE122_Q258_SOURCE_PHOTO_ERRATA.json) records:
