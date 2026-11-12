@@ -40,6 +40,8 @@ jobs:
           node --check texts/al-turka/qawaid-al-tawhid/layered-reader.js
           node --check texts/al-turka/qawaid-al-tawhid/qawaid-parity-search.js
           node --check texts/al-turka/qawaid-al-tawhid/qawaid-parity-desk.js
+          node --check texts/al-turka/qawaid-al-tawhid/qawaid-parity-personal-pdf.js
+          node --check texts/al-turka/qawaid-al-tawhid/sw.js
           node --check daruri/gnamma-scholarly.js
           node --check daruri/gnamma-proximity.js
           node --check daruri/bookmark-ui.js
@@ -48,7 +50,7 @@ jobs:
         run: node texts/al-turka/qawaid-al-tawhid/qa/check-commentary.mjs
       - name: Install real Chromium test dependencies
         run: |
-          python -m pip install --quiet playwright
+          python -m pip install --quiet playwright pypdf
           python -m playwright install --with-deps chromium
       - name: Daruri parity browser test on fully served actual source
         run: python texts/al-turka/qawaid-al-tawhid/qa/check-daruri-parity.py
