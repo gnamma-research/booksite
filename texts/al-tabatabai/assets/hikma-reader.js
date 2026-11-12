@@ -335,7 +335,7 @@
       const n = typeof raw === 'string' ? { text: raw } : raw;
       if (!n || !text(n.text).trim()) continue;
       const type = text(n.type);
-      if (!n.arabic && !/^Authorial (?:footnote|note)(?:\\b|\\s|[—–-])/i.test(type)) continue;
+      if (!n.arabic && !/^Authorial (?:footnote|note)(?:\b|\s|[—–-])/i.test(type)) continue;
       // A paraphrase attributed to the author is not automatically authorial wording.
       if (/paraphrase|editorial|status|source-critical/i.test(type)) continue;
       entries.push({text:text(n.text), arabic:text(n.arabic), type, anchor:n.anchor, url:n.url || ''});
