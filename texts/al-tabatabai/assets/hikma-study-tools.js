@@ -170,7 +170,7 @@
     const terms=(index?.terms||[]).filter(t=>(t.discussions||[]).some(d=>d.unit===id));
     list.append(make('h3','',label(id)));
     if(connections.length){for(const l of connections){
-      const item=make('article','cross-text-link');item.append(make('strong','',relationNames[l.type]||'Related discussion'),passageLink(l.to),make('p','',l.rationale));
+      const item=make('article','cross-text-link');item.dataset.link=l.id;item.append(make('strong','',relationNames[l.type]||'Related discussion'),passageLink(l.to),make('p','',l.rationale));
       if(l.caution)item.append(make('p','sense-caution',l.caution));list.append(item);
     }}else list.append(make('p','dialog-intro','No curated cross-book routes recorded for this passage.'));
     if(terms.length){
