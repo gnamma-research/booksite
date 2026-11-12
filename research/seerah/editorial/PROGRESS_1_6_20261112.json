@@ -2,7 +2,7 @@
   "date": "2026-11-12",
   "edition_source": "1.5.0-integrated-first-pass",
   "working_edition": "1.6.0-scholarship-pass",
-  "overall_percent": 71,
+  "overall_percent": 80,
   "rule": "Percentages are weighted accomplishment of explicit deliverables, not measures of scholarly truth. Each evidence status must be shown; partial sources never get complete status.",
   "stages": [
     {
@@ -55,16 +55,16 @@
       "name": "Benchmark narrative chapters",
       "target": "Recompose Chapters 08,11,13,16,19 and 44 from first principles with sources, coherent one-piece sharḥ",
       "weight": 16,
-      "percent": 75,
-      "status": "six-unified-benchmark-chapters-staged; canonical-merge-and-deep-fact-check-pending",
+      "percent": 86,
+      "status": "six benchmark chapters merged into canonical 1.6; deep primary-text collation pending",
       "outputs": [
         "editorial/rewrite-20261112/benchmark-1_6-08-11.json",
         "editorial/rewrite-20261112/benchmark-1_6-13-16.json",
         "editorial/rewrite-20261112/benchmark-1_6-19-44.json"
       ],
       "remaining": [
-        "Integrate and compare all six against original cited source notes",
-        "Review any displaced historical claims during consolidation"
+        "Some variant witness and legal-commentary checks outstanding",
+        "Independent specialist assessment of chapter argument"
       ]
     },
     {
@@ -72,15 +72,15 @@
       "name": "Book V living inheritance",
       "target": "Recompose Chapters 27–33 around work/state/knowledge, ṣuḥba, disciplines and real pedagogy",
       "weight": 12,
-      "percent": 83,
-      "status": "seven-coherent-book-V-chapters-staged; primary-Arabic-and-transmission-review-pending",
+      "percent": 86,
+      "status": "seven Book V chapters merged into canonical 1.6; specialist/source review pending",
       "outputs": [
         "editorial/rewrite-20261112/book-V-1_6-27-29.json",
         "editorial/rewrite-20261112/book-V-1_6-30-33.json"
       ],
       "remaining": [
-        "Detailed direct primary collation of Ghazālī, al-Qushayrī, Rāzī and Madhhab recensions",
-        "Integrate into canonical manuscript and ensure coherence with other books"
+        "Arabic primary-text and teaching-chain collation outstanding",
+        "Independent specialist review"
       ]
     },
     {
@@ -103,14 +103,14 @@
       "name": "Regional and modern explanatory cases",
       "target": "Verified named micro–macro cases for Books VI–VII, integrate into relevant shurūḥ",
       "weight": 10,
-      "percent": 84,
-      "status": "one-sourced-named-case-per-chapter-34-to-46-staged; original-manuscripts-and-case-records-open",
+      "percent": 88,
+      "status": "named regional cases merged into canonical 1.6; primary archival case witnesses pending",
       "outputs": [
         "editorial/REGIONAL_MICROHISTORIES_1_6_20261112.json"
       ],
       "remaining": [
-        "Integrate cases into revised reader without duplication",
-        "Inspect named underlying court/land/manuscript records beyond published scholarly accounts"
+        "Uncollated deeds, court files and manuscript records remain",
+        "Independent regional historian review"
       ]
     },
     {
@@ -118,11 +118,18 @@
       "name": "Recomposition, test and handoff",
       "target": "Versioned 1.6 text, canonical/render parity, regression, changed chapters archive, coverage and handoff",
       "weight": 7,
-      "percent": 0,
-      "status": "not-started",
-      "outputs": [],
+      "percent": 90,
+      "status": "canonical-merge, edition labels, archive and content validation passed; browser QA not completed",
+      "outputs": [
+        "research/seerah/data/chapters.json",
+        "research/seerah/read.html",
+        "research/seerah/editorial/current-edition-1.6.0-scholarly.md",
+        "research/seerah/tests/verify.mjs",
+        "research/seerah/editorial/archive-1.5.0-pre1.6-chapters.json"
+      ],
       "remaining": [
-        "Versioned 1.6 text, canonical/render parity, regression, changed chapters archive, coverage and handoff"
+        "Node test exists but was not run in a separate Node runtime",
+        "Rendered mobile/desktop visual regression and live deployment check still outstanding"
       ]
     }
   ],
@@ -130,5 +137,24 @@
     "Edition 1.5 remains canonical until 1.6 text passes checks.",
     "No work runs asynchronously. This ledger records only current committed work."
   ],
-  "latest": "G — 13 named regional/modern cases with source and status, one per chapter 34–46"
+  "latest": "1.6.0 canonical edition committed; 46/46 chapter pairs, 26 changed, 50 encounters, 138 claim ledger entries; source/content parity verified, primary witness and rendered UI checks outstanding",
+  "validation": {
+    "date": "2026-11-12",
+    "result": "PASS",
+    "kind": "repository-source parity through connected GitHub files",
+    "checks": [
+      "46 chapter entries, 46 articles, 46 matn and sharh sections",
+      "all chapter token parity: canonical JSON / static reader",
+      "all chapter verbatim inclusion in full manuscript",
+      "versioned 1.5 preservation",
+      "50 encounter entries with 18 deep-linked items",
+      "138 triaged claims, none automatically reclassified as proven"
+    ],
+    "outstanding": [
+      "direct primary manuscripts and variants",
+      "browser visual QA",
+      "independent specialist review",
+      "full 138 claim source audit"
+    ]
+  }
 }
