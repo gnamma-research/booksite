@@ -114,7 +114,7 @@ with sync_playwright() as pw:
   ck('highlight collection displays saved quotation',page.locator('.qaw-desk-card blockquote').count()>0)
   ck('JSON backup and import actions present',page.locator('[data-desk="export"]').count()==1 and page.locator('[data-desk="import"]').count()==1)
   ck('print saved work available without altering publisher PDFs',page.locator('[data-desk="print"]').count()==1)
-  page.wait_for_selector('#qaw-desk-pdf-base option')
+  page.wait_for_selector('#qaw-desk-pdf-base option',state='attached')
   ck('checksum-verified personal PDF option from published manifest',page.locator('#qaw-desk-pdf-base option').count()==5)
   page.locator('#qaw-desk-pdf-base').select_option('qawaid-english-reading.pdf')
   with page.expect_download(timeout=90000) as event:
