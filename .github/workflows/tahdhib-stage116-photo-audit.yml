@@ -48,7 +48,18 @@ jobs:
           name: tahdhib-stage116-cumulative-complete-release
           path: |
             texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage116.md
-            texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE116_CUMULATIVE_FILE_INTEGRITY.json
+            texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage114.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-effective-stage114.json
+            texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes.html
+            texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE116_*
+            texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_STAGE114.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_STAGE115.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/Tahdhib_Stage115_*
+            texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts/*
+            tools/tahdhib/stage116_recover_print_scans.py
+            tools/tahdhib/build_stage116_cumulative.py
+            tools/tahdhib/check_stage116_release.py
           if-no-files-found: warn
           retention-days: 90
       - name: Upload scan candidates and page-offset manifest
