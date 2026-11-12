@@ -29,7 +29,8 @@ session.headers.update({"User-Agent":"Mozilla/5.0 (GNAMMA academic source study;
 # modern editor footnotes flattened after an authorial page fragment. Never
 # strip in-text Quranic verse numbers or the author's own citation markers.
 REVIEWED_FOOTNOTE_LEADS={
-    21:"أورده الحكيم الترمذي", 23:"هذا الأثر لم أجده",
+    20:"رواه مسلم في صحيحه", 21:"أورده الحكيم الترمذي",
+    23:"هذا الأثر لم أجده", 25:"هذا الأثر لم أجده بلفظه",
     29:"أورد العجلوني", 47:"أورده المناوي",
     48:"عزاه السيوطي", 67:"الكيزان : جمع",
     83:"الإلّية : ربانية", 87:"كذا بالأصل وهي غير",
