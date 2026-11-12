@@ -6,7 +6,10 @@ const read=p=>readFileSync(join(root,p),'utf8');
 
 const data=JSON.parse(read('data/chapters.json'));
 const prior=JSON.parse(read('editorial/archive-1.6.0-pre-prose-audit-chapters.json'));
-const current=read('editorial/current-edition-1.6.1-prose-reviewed.md');
+const current=read('editorial/current-edition-1.6.2-targeted-fidelity.md');
+const prior161=JSON.parse(read('editorial/archive-1.6.1-pre1.6.2-chapters.json'));
+const prior161HTML=read('editorial/archive-1.6.1-pre1.6.2-reader.html');
+const prior161Man=read('editorial/current-edition-1.6.1-prose-reviewed.md');
 const priorMan=read('editorial/current-edition-1.6.0-scholarly.md');
 const priorHTML=read('editorial/archive-1.6.0-pre-prose-audit-reader.html');
 const oldMan=read('editorial/current-edition-1.4.1.md');
@@ -18,8 +21,16 @@ const encounters=JSON.parse(read('editorial/encounters-1_6/index.json'));
 const claimLedger=JSON.parse(read('editorial/CLAIM_WITNESS_LEDGER_1_6_1_20261112.json'));
 const regional=JSON.parse(read('editorial/REGIONAL_MICROHISTORIES_1_6_20261112.json'));
 
-assert.equal(data.edition,'1.6.1-prose-and-source-fidelity-review');
+assert.equal(data.edition,'1.6.2-targeted-source-and-prose-fidelity');
 assert.equal(data.chapters.length,46);
+assert.equal(prior161.edition,'1.6.1-prose-and-source-fidelity-review');
+assert.ok(prior161HTML.includes('Research edition 1.6.1'));
+assert.ok(prior161Man.includes('Research edition 1.6.1'));
+assert.equal(data.chapters.filter((c,i)=>c.matn!==prior161.chapters[i].matn).length,12);
+assert.equal(data.chapters.filter((c,i)=>c.sharh!==prior161.chapters[i].sharh).length,5);
+assert.ok(data.chapters[9].sharh.includes('bukhari:3877'));
+assert.ok(data.chapters[44].sharh.includes('1867'));
+
 assert.equal(prior.edition,'1.6.0-scholarly-revision');
 assert.equal(oldMan,oldArchive,'The previous 1.4.1 edition must remain exactly preserved');
 assert.ok(priorHTML.includes('Research edition 1.6.0'),'Older static reader must be preserved');
@@ -49,8 +60,8 @@ assert.equal(regional.cases.length,13);
 assert.equal(claimLedger.entries.length,46);
 assert.equal(claimLedger.entries.reduce((n,e)=>n+e.claims.length,0),138);
 
-assert.ok(html.includes('Research edition 1.6.1'));
-assert.ok(landing.includes('Research edition 1.6.1'));
+assert.ok(html.includes('Research edition 1.6.2'));
+assert.ok(landing.includes('Research edition 1.6.2'));
 assert.ok(html.includes('editorial/current-edition-1.6.1-prose-reviewed.md'));
 assert.equal((html.match(/<article class="chapter"/g)||[]).length,46);
 assert.equal((html.match(/class="matn"/g)||[]).length,46);
@@ -94,4 +105,4 @@ for(let i=1;i<=46;i++){
   for(const f of forbidden)assert.ok(!f.test(ch[layer]),'Editor-directed language '+id+' '+layer+': '+f);
  }
 }
-console.log('PASS Sīrah 1.6.1: 46 aligned chapter pairs, all matns and 41+ shuruh prose reviewed, Nūḥ chronology verified, legal source update, 50 encounters, 138 claims, source/static/manuscript parity');
+console.log('PASS Sīrah 1.6.2: 46 aligned chapter pairs, all matns and 41+ shuruh prose reviewed, Nūḥ chronology verified, legal source update, 50 encounters, 138 claims, source/static/manuscript parity');
