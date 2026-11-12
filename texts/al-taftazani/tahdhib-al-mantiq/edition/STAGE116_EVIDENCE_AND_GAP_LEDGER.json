@@ -134,8 +134,8 @@
       ],
       "disjunctive_source_order": [
         "C/C",
-        "C/D",
         "C/K",
+        "C/D",
         "K/K",
         "D/K",
         "D/D"
@@ -156,7 +156,8 @@
         "H-1433"
       ],
       "file": "source-table-excerpts/print1405_Q309_table_excerpt.png",
-      "printedRowsDirectlyChecked": true
+      "printedRowsDirectlyChecked": true,
+      "sourceRowOrderCollatedWithExamples": true
     }
   },
   "verifiedQ300StatusSymbols": 32,
