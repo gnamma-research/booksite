@@ -22,7 +22,7 @@ with sync_playwright() as pw:
   assert page.locator(".print-appendix").count()==3
   page.emulate_media(media="print")
   page.pdf(path=str(OUT),format="A4",print_background=True,prefer_css_page_size=True,
-           display_header_footer=False,timeout=120000)
+           display_header_footer=False)
   browser.close()
 assert OUT.stat().st_size>150000
 doc=fitz.open(OUT)
