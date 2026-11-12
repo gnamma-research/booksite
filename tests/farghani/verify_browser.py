@@ -118,6 +118,13 @@ def run_browser(p,engine,browser_name):
         page.goto(BASE+"parallel-introduction.html",wait_until="domcontentloaded",timeout=60000)
         assert page.locator(".pr-page").count()==128,f"{label}: missing complete bilingual page span"
         assert not page.locator("body").evaluate("(n)=>n.classList.contains('pr-show-notes')"),f"{label}: apparatus visible by default"
+        assert page.locator("#pr-study-open").is_visible(),f"{label}: bilingual study access absent"
+        assert not page.locator(".pr-apparatus").first.is_visible(),f"{label}: source notes intrude into authorial text"
+        page.locator("#pr-study-open").click()
+        assert page.locator("#pr-dialog").evaluate("(n)=>n.open"),f"{label}: source evidence dialog not open"
+        assert "Source, notes and variants" in page.locator("#pr-dialog-content").inner_text(),f"{label}: page evidence missing"
+        assert page.locator('#pr-dialog-content a[href*="critical-edition.html?page=18"]').count()==1,f"{label}: per-page source route missing"
+        page.locator("#pr-close").click()
         # 559 selected records must stay usable in page-filtered critical viewer.
         page.goto(BASE+"critical-edition.html?page=52",wait_until="domcontentloaded",timeout=60000)
         page.wait_for_selector(".audit-clause")
