@@ -114,6 +114,16 @@ with sync_playwright() as pw:
   ck('highlight collection displays saved quotation',page.locator('.qaw-desk-card blockquote').count()>0)
   ck('JSON backup and import actions present',page.locator('[data-desk="export"]').count()==1 and page.locator('[data-desk="import"]').count()==1)
   ck('print saved work available without altering publisher PDFs',page.locator('[data-desk="print"]').count()==1)
+  page.wait_for_selector('#qaw-desk-pdf-base option')
+  ck('checksum-verified personal PDF option from published manifest',page.locator('#qaw-desk-pdf-base option').count()==5)
+  page.locator('#qaw-desk-pdf-base').select_option('qawaid-english-reading.pdf')
+  with page.expect_download(timeout=90000) as event:
+   page.locator('[data-desk="pdf"]').click()
+  output=event.value
+  ck('personal PDF downloaded with exact chosen base edition',output.suggested_filename=='qawaid-personal-qawaid-english-reading.pdf')
+  from pypdf import PdfReader
+  reader=PdfReader(output.path())
+  ck('personal appendix added to unchanged English 138-page base',len(reader.pages)>138 and 'GNAMMA' in (reader.pages[-1].extract_text() or ''))
   page.locator('[data-desk="close"]').click()
   for width in (320,390,768,1280):
    page.set_viewport_size({'width':width,'height':900 if width>720 else 844})
