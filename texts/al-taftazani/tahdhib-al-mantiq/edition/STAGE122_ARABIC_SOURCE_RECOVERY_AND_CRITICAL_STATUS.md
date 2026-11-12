@@ -10,6 +10,8 @@ Stage122 recovers the **digital Arabic body of every one of those 1,090 numbered
 
 **This is not 1,090 Arabic source readings independently checked against photographic printed pages.** The cache is a digital transcription of a modern print; byte-equality proves reproducibility against the earlier digital census, not fidelity to the underlying original or to Taftāzānī's authorial words.
 
+**Reproducible SHA ledger:** [all eleven expected and recovered digests](STAGE122_ELEVEN_SOURCE_HASH_GAP_LEDGER.json), together with the original page-cache ZIP digest. Five mismatching notes cross page boundaries; six are confined to one page. In `HWN-037`, the older embedded Arabic snippet omits the two separately signed speaker labels that are present in the recovered digital text. This is an attribution difference in an earlier embedded text, **not proof of why the independent census SHA differs**.
+
 ### Eleven still-unresolved unit SHA256 disagreements
 
 | Note ID | Qum printed pages |
