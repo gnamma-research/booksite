@@ -17,7 +17,7 @@ Connected rows **1/9 (C→C), 6/9 (K→K), and 9/9 (D→D)** each contain the id
 
 ## Caution about the order of source rows
 
-Printed source order for connected types: **C/C, C/D, C/K, K/C, D/C, K/K, K/D, D/K, D/D**. For disjunctive types: **C/C, C/K, C/D, K/K, D/K, D/D**. The C/D and C/K pair in the **connected** printed sequence differs from the earliest Stage115 abstract enumeration; the nine-member set was unchanged. Follow the actual printed Q309 labels here and in the new reader.
+Printed source order for connected types: **C/C, C/D, C/K, K/C, D/C, K/K, K/D, D/K, D/D**. For disjunctive types: **C/C, C/D, C/K, K/K, D/K, D/D**. The C/D and C/K pair in the **connected** printed sequence differs from the earliest Stage115 abstract enumeration; the nine-member set was unchanged. Follow the actual printed Q309 labels here and in the new reader.
 
 ## Exact current verification counts
 

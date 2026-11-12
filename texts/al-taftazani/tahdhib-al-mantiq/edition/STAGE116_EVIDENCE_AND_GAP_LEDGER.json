@@ -134,8 +134,8 @@
       ],
       "disjunctive_source_order": [
         "C/C",
-        "C/K",
         "C/D",
+        "C/K",
         "K/K",
         "D/K",
         "D/D"
