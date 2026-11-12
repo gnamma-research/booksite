@@ -31,7 +31,7 @@ for label,name in docs:
  records.append({"title":label,"path":str(P/name),"bytes":len(b),"sha256":digest(b)})
  text+="\n---\n\n## "+label+"\n\n"
  if name.endswith(".json"):
-  text+="\`\`\`json\n"+b.decode("utf-8")+"\n\`\`\`\n"
+  text+="```json\n"+b.decode("utf-8")+"\n```\n"
  else:text+=b.decode("utf-8")+"\n"
 combined=base+text.encode("utf-8")
 assert combined.startswith(base)
