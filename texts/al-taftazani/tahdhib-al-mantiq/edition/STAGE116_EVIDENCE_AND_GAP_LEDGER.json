@@ -123,8 +123,8 @@
       "kind": "15 examples of conditional component structures",
       "connected_source_order": [
         "C/C",
-        "C/K",
         "C/D",
+        "C/K",
         "K/C",
         "D/C",
         "K/K",
@@ -134,10 +134,10 @@
       ],
       "disjunctive_source_order": [
         "C/C",
-        "C/K",
         "C/D",
+        "C/K",
         "K/K",
-        "K/D",
+        "D/K",
         "D/D"
       ],
       "sourceExampleOmissionsWithinConnected": [
@@ -155,7 +155,8 @@
         "H-1405",
         "H-1433"
       ],
-      "file": "source-table-excerpts/print1405_Q309_table_excerpt.png"
+      "file": "source-table-excerpts/print1405_Q309_table_excerpt.png",
+      "printedRowsDirectlyChecked": true
     }
   },
   "verifiedQ300StatusSymbols": 32,
