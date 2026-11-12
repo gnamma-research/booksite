@@ -1,0 +1,69 @@
+name: Qawtaw17 Daruri feature parity and browser acceptance
+on:
+  push:
+    branches: [qawtaw17-daruri-parity-20261113]
+    paths:
+      - 'texts/al-turka/qawaid-al-tawhid/**'
+      - '.github/workflows/qawtaw17-daruri-parity.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: qawtaw17-parity-acceptance
+  cancel-in-progress: true
+jobs:
+  parity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - name: Protect canonical medieval source, translation and Qawtaw16 PDF artifacts
+        run: |
+          python - <<'PY'
+          import pathlib,subprocess
+          P=pathlib.Path('texts/al-turka/qawaid-al-tawhid')
+          expected={
+           'data/units.js':'526ed6a8d4a3a4fe8ea765a9f56f48310b02fddd',
+           'data/commentary-corpus.json':'f1c8e60dc4e4bd900cd1cd97f7642c13fa5be97b',
+           'pdf/manifest.json':'0b29e8e70fa1f630b19f28a63ff3360e3b77e67c',
+           'qa/clause-ledger.json':'7e99c69ec5a4b0386638da5cd0d28d61dbbf09d4',
+           'data/commentary-main-001-019.js':'ba926958302c9f663dcda894be488c24491da445',
+           'data/commentary-main-020-060.js':'9a592813d8e15f41bb8519bc472fffe631a9a57a'}
+          for f,sha in expected.items():
+           v=subprocess.check_output(['git','hash-object',str(P/f)],text=True).strip()
+           assert v==sha,(f,v,sha)
+          print('All six protected canonical source hashes unchanged')
+          PY
+      - name: Static syntax verification of shared Daruri and new parity components
+        run: |
+          node --check texts/al-turka/qawaid-al-tawhid/qawaid-study.js
+          node --check texts/al-turka/qawaid-al-tawhid/layered-reader.js
+          node --check texts/al-turka/qawaid-al-tawhid/qawaid-parity-search.js
+          node --check texts/al-turka/qawaid-al-tawhid/qawaid-parity-desk.js
+          node --check daruri/gnamma-scholarly.js
+          node --check daruri/gnamma-proximity.js
+          node --check daruri/bookmark-ui.js
+          python -m py_compile texts/al-turka/qawaid-al-tawhid/qa/check-daruri-parity.py
+      - name: Core original and linked commentary structural acceptance
+        run: node texts/al-turka/qawaid-al-tawhid/qa/check-commentary.mjs
+      - name: Install real Chromium test dependencies
+        run: |
+          python -m pip install --quiet playwright
+          python -m playwright install --with-deps chromium
+      - name: Daruri parity browser test on fully served actual source
+        run: python texts/al-turka/qawaid-al-tawhid/qa/check-daruri-parity.py
+      - name: Existing two-layer and scholarly reader regression tests
+        run: |
+          python texts/al-turka/qawaid-al-tawhid/qa/check-layered-reader.py
+          python texts/al-turka/qawaid-al-tawhid/qa/check-study-ui.py
+      - name: Preserve diagnostic reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qawtaw17-parity-tests
+          path: |
+            texts/al-turka/qawaid-al-tawhid/qa/qawtaw17-parity-browser.json
+            texts/al-turka/qawaid-al-tawhid/qa/qawtaw17-failure.png
+            texts/al-turka/qawaid-al-tawhid/qa/layered-browser-results/report.json
+            texts/al-turka/qawaid-al-tawhid/qa/study-ui-report.json
+          retention-days: 30
