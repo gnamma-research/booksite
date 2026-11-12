@@ -1,0 +1,31 @@
+name: Tahdhib Stage116 printed source scan audit
+on:
+  workflow_dispatch:
+  push:
+    branches: ['research/tahdhib-stage116-print-source-20261112']
+    paths:
+      - '.github/workflows/tahdhib-stage116-photo-audit.yml'
+      - 'tools/tahdhib/stage116_recover_print_scans.py'
+permissions:
+  contents: read
+jobs:
+  research-scan-extraction:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF extraction dependency
+        run: python -m pip install PyMuPDF==1.26.6
+      - name: Fetch Qum edition source PDF and render only bounded target pages
+        run: python tools/tahdhib/stage116_recover_print_scans.py
+      - name: Upload scan candidates and page-offset manifest
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tahdhib-stage116-printed-page-candidates
+          path: tahdhib116-photo-audit/
+          if-no-files-found: warn
+          retention-days: 30
