@@ -65,3 +65,7 @@ Edition 1.6.1 supersedes the earlier 1.6.0 research prose. A targeted review rew
 ## Current targeted revision · 1.6.2 · 13 November 2026
 
 Twelve narrative matns and five scholarly commentaries were corrected or recomposed for fidelity and clarity. The Negus's original protection of emigrants is distinguished from Muslim reports of his eventual faith; Deoband's 1866/67 founding date is treated as unsettled; Books VI–VII identify specific historical actors and evidence. Repeated prose was reduced while 46 chapter pairs were retained. The earlier 1.6.1 JSON, reader and manuscript remain preserved. [Current manuscript](editorial/current-edition-1.6.2-targeted-fidelity.md) · [Targeted audit](editorial/TARGETED_FIDELITY_AUDIT_1_6_2_20261113.md). This does not certify full primary-source collation or rendered-browser QA.
+
+## Book VI–VII comparison tables · 13 November 2026
+
+A [source-controlled historical synthesis](tables-vi-vii.html) compares the nine international chapters (34–42) and four modern chapters (43–46) through named encounters, institutional transmission and evidence limitations. Its [Markdown research source](editorial/TABLES_VI_VII_CIVILIZATIONAL_SYNTHESIS_20261113.md) retains sources for review. This supplement does not change the 1.6.2 matns or shurūḥ or replace prior critical dossiers.
