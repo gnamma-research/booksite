@@ -22,6 +22,7 @@ append_files=[
  ("Stage115 source-table reconstruction", ROOT/"Tahdhib_Stage115_Source_Based_Table_Audit.md"),
  ("Stage116 photographed originals and limits", ROOT/"STAGE116_PRINTED_TABLE_PHOTOGRAPHIC_AUDIT.md"),
  ("Stage116 five-locus Arabic to English checks", ROOT/"STAGE116_CLAUSE_ALIGNMENT.md"),
+ ("Stage116 two photographed Q309 examples with literal translation", ROOT/"STAGE116_Q309_TWO_EXAMPLES_PHOTO_TRANSLATED.md"),
  ("Stage116 fourth-figure modal proof ledger", ROOT/"STAGE116_MODAL_PROOF_OBLIGATIONS.md"),
  ("Stage116 complete recovery handoff", ROOT/"HANDOFF_LATEST.md"),
 ]
