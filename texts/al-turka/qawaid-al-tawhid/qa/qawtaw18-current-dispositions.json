@@ -1,0 +1,806 @@
+{
+  "schema": "gnamma-qawtaw18-current-working-dispositions-v1",
+  "date": "2026-11-13",
+  "basis": [
+    "Qawtaw5 historical review register: 57 flagged groups in 47 units, 218 punctuation segments",
+    "Qawtaw7 modern printed H2014 comparison: 43 then settled or supported; 14 then partial/unresolved",
+    "Qawtaw8 and Qawtaw10 adjudicated the exact same 14: 12 additional working readings settled, 2 source-critical questions remain"
+  ],
+  "integrity": {
+    "historicalGroups": 57,
+    "groupsWithWorkingInterpretationOrPreferredReading": 55,
+    "stillSourceCritical": 2,
+    "sourceCriticalUnits": [
+      "SH-002",
+      "QT-059"
+    ],
+    "independentMedievalWitnessesCollated": 0,
+    "originalMatnUnitCount": 61,
+    "commentaryUnits": 110,
+    "totalBilingualUnits": 171,
+    "canClaimDefinitiveCriticalText": false,
+    "doesNotRewriteOriginalFlagHistory": true
+  },
+  "scopeNote": "These 55 groups are settled for the explicitly consulted printed/electronic sources only; this neither establishes a manuscript archetype nor independently human-certifies all 5,520 clauses. Unflagged parts of the text are not manuscript-certified merely because this register is closed.",
+  "unrecoveredTextPolicy": "Keep transmitted QT-059 intact without filling unknown extra ancestral words from SH-059.",
+  "unwitnessedEmendationPolicy": "Keep transmitted SH-002 ببطلان; conjectural بحقية belongs to notes unless independently witnessed.",
+  "historicalCitationCorrection": {
+    "source": "al-Khizāna 2018 bibliography item 301, printed p. 521, facsimile PDF p. 125 (zero-index 124)",
+    "observedArabic": "نصوص ورسائل من تراث أصفهان العلمي الخالد، ج٤، ص٣٧-٧٣",
+    "revisedRange": "vol. IV pp. 37–73, not pp. 37–72",
+    "citationUrl": "https://bibliography.mk.iq/files/0080f66f58b21603.pdf#page=125",
+    "note": "Bibliographic reference only: the edited Hādīzādeh pages themselves have not been collated."
+  },
+  "statusHistogram": {
+    "resolved-interpretation": 1,
+    "supported-working-reading": 42,
+    "reading-settled": 10,
+    "unrecovered-lacuna": 1,
+    "semantic-reading-settled": 2,
+    "unresolved-negative": 1
+  },
+  "records": [
+    {
+      "group": 1,
+      "unit": "QT-008",
+      "originalReviewStatus": "resolved-interpretation",
+      "currentWorkingStatus": "resolved-interpretation",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:291",
+        "H2014/1:292",
+        "H2014/1:293"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "The printed lemma retains ملزومات and the commentary explicitly explains the logical direction. Resolution concerns terminology, not acceptance of the objection as authorial doctrine.",
+      "followUp": null
+    },
+    {
+      "group": 2,
+      "unit": "QT-020",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:429",
+        "H2014/1:430"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "ملزومة له describes the nature as the bearer entailing existence, not a second object from which the nature differs. Correct English coordination as well as the corrupted closing بعين حقيقته.",
+      "followUp": null
+    },
+    {
+      "group": 3,
+      "unit": "QT-024",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:485"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "بالعرض occurs explicitly in both relevant positions of the printed quoted matn; stronger evidence than contextual preference alone.",
+      "followUp": null
+    },
+    {
+      "group": 4,
+      "unit": "QT-025",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:503"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "The printed quotation has عين, not عن.",
+      "followUp": null
+    },
+    {
+      "group": 5,
+      "unit": "QT-030",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:595"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "The comparator reads العرضيين, not الفرضيين; the modern bracket identifies the two modes as cognitive and external but is not authorial text.",
+      "followUp": null
+    },
+    {
+      "group": 6,
+      "unit": "QT-052",
+      "originalReviewStatus": "partial-resolution",
+      "currentWorkingStatus": "reading-settled",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:487"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "H2014 removes the redundant second على صفات أخر ممكنة in the reply by clear parenthetical punctuation, but still prints ببعض الصفات الممكنة after the objection. The original row cannot be closed entirely.",
+      "followUp": "The final possible-attributes phrase is treated as explanatory apposition to possible thing; no unwitnessed Arabic deletion."
+    },
+    {
+      "group": 7,
+      "unit": "QT-053",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:495",
+        "H2014/2:496"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "H2014 prints هذبت directly in the lemma. Use it rather than digital هربت, keeping the latter in the apparatus.",
+      "followUp": null
+    },
+    {
+      "group": 8,
+      "unit": "QT-054",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:509"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The entire printed matn contains the middle-term sentence only once and then proceeds to the faculties. It supports removal of the digital duplication in a corrected reading text.",
+      "followUp": null
+    },
+    {
+      "group": 9,
+      "unit": "QT-055",
+      "originalReviewStatus": "partial-resolution",
+      "currentWorkingStatus": "reading-settled",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:521"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "H2014 prints بوجوه, a third reading rather than either بوجوب or بوجود, and ويقيد rather than bare تقيّد. These improve syntax and are attested in this print, but settling the underlying witness choice remains open.",
+      "followUp": "Use printed H2014 بوجوه and ويقيّد in the preferred reading; retain بوجوب and بوجود as A variants."
+    },
+    {
+      "group": 10,
+      "unit": "QT-056",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:539",
+        "H2014/2:540"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The complete printed lemma explicitly includes إلا. This supplies positive textual evidence for the formerly conjectural exception and restores the therapy-of-opposites argument. It is not a universal endorsement of abasement and not current clinical advice.",
+      "followUp": null
+    },
+    {
+      "group": 11,
+      "unit": "QT-059",
+      "originalReviewStatus": "deferred-lacuna",
+      "currentWorkingStatus": "unrecovered-lacuna",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:571",
+        "H2014/2:572"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The printed matn has the same transition and does not recover the reported missing ancestral passage. A smooth continuation in this modern edition is not proof that the separate ancestral text is complete.",
+      "followUp": "The lost ancestral words cannot be established: retain the surviving text, distinguish the later SH-059 explanation and do not invent a restoration. Obtain Hādīzādeh IV:37–72 or a photographed early manuscript for a genuinely new comparison."
+    },
+    {
+      "group": 12,
+      "unit": "QT-060",
+      "originalReviewStatus": "partial-resolution",
+      "currentWorkingStatus": "reading-settled",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:581"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "H2014 confirms المغرقة over the damaged digital المفرفة, but does not independently support the conjectural causative فأوقع.",
+      "followUp": "Retain transmitted فوقع نفسه and translate its context as falling into false imaginings; do not claim the unattested correction فأوقع."
+    },
+    {
+      "group": 13,
+      "unit": "QT-060",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:582"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The print has second-person imperatives فتيقّن and استعذ. This is not the reader’s conjectural third-person فليتقِ ... وليستعذ, nor the defective electronic فيتقن ... واستعد. Vocalization/punctuation here are editorial normalization.",
+      "followUp": "Retain transmitted فوقع نفسه and translate its context as falling into false imaginings; do not claim the unattested correction فأوقع."
+    },
+    {
+      "group": 14,
+      "unit": "QT-061",
+      "originalReviewStatus": "unresolved",
+      "currentWorkingStatus": "semantic-reading-settled",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:591",
+        "H2014/2:592",
+        "H2014/2:593"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "H2014 repeats the difficult wording in the lemma. Its modern explanation simplifies it to غير المنتظمة. That clarifies the interpretation but does not establish حذف المنتظمة or insert a conjunction in the medieval text.",
+      "followUp": "Negative of a recognized technical pair; not manuscript-collated"
+    },
+    {
+      "group": 15,
+      "unit": "SH-INTRO-011",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:80"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "The printed quotation reads صور, not تصور; bracketed modern explanatory additions excluded.",
+      "followUp": null
+    },
+    {
+      "group": 16,
+      "unit": "SH-INTRO-025",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:129"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "The negative is now supported by a separately printed quotation, not solely supplied from context.",
+      "followUp": null
+    },
+    {
+      "group": 17,
+      "unit": "SH-INTRO-035",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:170"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "The comparator provides a coherent alternative to the electronic string المفهمة المقومة. Retain its disjunctive أو; do not claim an independently recovered manuscript text.",
+      "followUp": null
+    },
+    {
+      "group": 18,
+      "unit": "SH-INTRO-035",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:170"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "صور is explicit in the printed quotation.",
+      "followUp": null
+    },
+    {
+      "group": 19,
+      "unit": "SH-001",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:205"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "The printed medieval lemma has الختم, not the digital الخنم. Adopt الختم for a corrected reading text while preserving the old transcription in the apparatus.",
+      "followUp": null
+    },
+    {
+      "group": 20,
+      "unit": "SH-002",
+      "originalReviewStatus": "partial-resolution",
+      "currentWorkingStatus": "unresolved-negative",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:221",
+        "H2014/1:222",
+        "H2014/1:223",
+        "H2014/1:224"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "H2014 p224 prints ببطلان مسألة التوحيد too, although its explanation on pp221–223 presupposes certainty in unity. This is evidence that the polarity problem is not merely the current digital transcription. Do not silently delete the negative; الغريزية/التي are directly supported lexical corrections.",
+      "followUp": "The problematic ببطلان occurs in both A and H2014. Preserve invalid [sic] and the contextual contradiction, not the unverified opposite polarity."
+    },
+    {
+      "group": 21,
+      "unit": "SH-008",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:293"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "The complete printed medieval paragraph contains the clause once; modern brackets explain its pronouns. No medieval manuscript deletion is claimed.",
+      "followUp": null
+    },
+    {
+      "group": 22,
+      "unit": "SH-009",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:299"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "The comparator prints الوجود, not the electronic الوجوب; English already conveys the supported reading.",
+      "followUp": null
+    },
+    {
+      "group": 23,
+      "unit": "SH-011",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:322"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "The joined word وجوبها is visible in the printed lemma and resolves the digital split وجود بها.",
+      "followUp": "Read فمعلوم as a stated inference immediately challenged by كيف. Preserve the affirmative Arabic and indicate the dialectical/rhetorical turn without inserting [not]."
+    },
+    {
+      "group": 24,
+      "unit": "SH-011",
+      "originalReviewStatus": "unresolved",
+      "currentWorkingStatus": "reading-settled",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:324"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "H2014 does not supply the missing negative. The modern explanatory paragraph articulates the objection coherently but does not establish an alternative authorial reading.",
+      "followUp": "Read فمعلوم as a stated inference immediately challenged by كيف. Preserve the affirmative Arabic and indicate the dialectical/rhetorical turn without inserting [not]."
+    },
+    {
+      "group": 25,
+      "unit": "SH-018",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:417"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "The independent printed presentation supplies ممنوع rather than digital مسلّم. It supports the negative English sense without adding an unattested لا to the old wording.",
+      "followUp": null
+    },
+    {
+      "group": 26,
+      "unit": "SH-020",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:431"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "The printed quotation has affirmative فلو اقتضى, not the reversed electronic فلو لم يقتض.",
+      "followUp": null
+    },
+    {
+      "group": 27,
+      "unit": "SH-024",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:487",
+        "H2014/1:488"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "The print has تكون rather than تكونت and لها rather than لما. Preserve the distinction between form and its considered occurrence; bracketed glosses are modern.",
+      "followUp": null
+    },
+    {
+      "group": 28,
+      "unit": "SH-026",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:529"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "The print has بكل, not لكل. The predicate of the second hemistich is supplied from the first (love), not a literal copula “am”; the explanatory note explicitly confirms this interpretation. Its attribution to Ibn al-Farid is reported by this edition, not independently established here.",
+      "followUp": null
+    },
+    {
+      "group": 29,
+      "unit": "SH-028",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:582",
+        "H2014/1:583"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "The quoted commentary clearly prints العرضية; the bracketed accident–substrate explanation is modern, excluded from the medieval quotation.",
+      "followUp": null
+    },
+    {
+      "group": 30,
+      "unit": "SH-030",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:613",
+        "H2014/1:614"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "Both occurrences use عرض, not فرض. Maintain distinction between existence itself and derivative attribution; do not turn this into denial of every relation of dependence.",
+      "followUp": null
+    },
+    {
+      "group": 31,
+      "unit": "SH-031",
+      "originalReviewStatus": "partial-resolution",
+      "currentWorkingStatus": "reading-settled",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/1:625",
+        "H2014/1:626"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "decision": "The print corroborates the glass/ray construction and reads فتراءى, but does not independently justify replacing للزجاج with a different preposition. Do not certify the older English through as a literal counterpart. No independent poetic attribution is established.",
+      "followUp": "The glass/ray phrase is intelligible with the printed للزجاج; render radiance appearing in the glass, not as an asserted literal through."
+    },
+    {
+      "group": 32,
+      "unit": "SH-033",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:145"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The complete opening quoted commentary is visible. Bracketed modern clarifications are excluded from the proposed medieval reading.",
+      "followUp": null
+    },
+    {
+      "group": 33,
+      "unit": "SH-035",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:191",
+        "H2014/2:192"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The printed quotation supplies ظاهر العلم, absent/disordered in the electronic string. This is a technical relational account, not the bare definition “possibility is existence”.",
+      "followUp": null
+    },
+    {
+      "group": 34,
+      "unit": "SH-035",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:194",
+        "H2014/2:195"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The print distinguishes عدم الاستحقاقية (absence of entitlement) from استحقاقية العدم (entitlement to nonbeing). The latter, not the former, belongs in this counterfactual.",
+      "followUp": null
+    },
+    {
+      "group": 35,
+      "unit": "SH-036",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:220"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The complete quoted passage contains one dependent-nature statement; the adjacent electronic repeat is absent.",
+      "followUp": null
+    },
+    {
+      "group": 36,
+      "unit": "SH-038",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:258",
+        "H2014/2:259"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The print has no following لا عن مرتبة الاسم الظاهر. Removing the redundant contradictory tail restores the stated Hidden/Manifest contrast.",
+      "followUp": null
+    },
+    {
+      "group": 37,
+      "unit": "SH-039",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:285",
+        "H2014/2:286"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The quotation runs across the page boundary once; the shorter duplicate فله المطلق في الحدوث والقدم is absent. This is Ibn Arabi quoted within Ibn Turka, not a separately collated edition of Insha al-Dawair.",
+      "followUp": null
+    },
+    {
+      "group": 38,
+      "unit": "SH-040",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:305"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "النهي is explicit in the printed quoted commentary; the previous النسى is not retained as an unexplained technical word.",
+      "followUp": null
+    },
+    {
+      "group": 39,
+      "unit": "SH-041",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:330"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The physical account is the historical argument being reported. H2014 prints the clause once, without the electronic repetition of لا بد وأن يكون عرضاً جسمانياً وذلك لأن الرؤية.",
+      "followUp": null
+    },
+    {
+      "group": 40,
+      "unit": "SH-041",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:340"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The negative لا is explicitly printed in the quoted medieval passage. The source-supported correction restores the dialectical voice, not merely smoother English.",
+      "followUp": null
+    },
+    {
+      "group": 41,
+      "unit": "SH-045",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:376"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The printed faculty list reads الفكرية, not the digital الكفرية.",
+      "followUp": null
+    },
+    {
+      "group": 42,
+      "unit": "SH-048",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:425"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "H2014 reads غيبياً and does not include تفصيلياً at this reprise. Do not replace it with the عينياً تفصيلياً used later in the same paragraph for the contrasting kind of apprehension. This resolves the immediate opposition in the working reading, not the history of all witnesses.",
+      "followUp": null
+    },
+    {
+      "group": 43,
+      "unit": "SH-049",
+      "originalReviewStatus": "partial-resolution",
+      "currentWorkingStatus": "reading-settled",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:446"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "Unlike other duplications, this repetition also occurs in the separately printed quotation. Its bracketed modern gloss associates the second phrase with حقيقة الحق. It is unsafe to delete it as an electronic dittography; the two referents provide a plausible interpretation, not an archetypal-text proof.",
+      "followUp": "The repeated comprehensive determination occurs in both prints and can qualify the receptacle and manifesting form separately. Retain both; no unwitnessed deletion."
+    },
+    {
+      "group": 44,
+      "unit": "SH-051",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:471"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The quoted text supports التنمية; the electronic الكمية was not the correct word for the intended example.",
+      "followUp": null
+    },
+    {
+      "group": 45,
+      "unit": "SH-053",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:501"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The print joins the conditional apodosis لاعتبر. It is not the negative لا اعتبر. Editorial interlinear bracketed explanations in H2014 are excluded from the proposed medieval reading.",
+      "followUp": "يميني is an elliptical example of position: my right [side]. It is printed in H2014, not evidence that words are missing."
+    },
+    {
+      "group": 46,
+      "unit": "SH-053",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:507"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The quoted text supports عنقي in both places, not عيني. This remains a quotation inside Ibn Turka’s commentary, not an independent collation of Ibn ʿArabī’s original work.",
+      "followUp": "يميني is an elliptical example of position: my right [side]. It is printed in H2014, not evidence that words are missing."
+    },
+    {
+      "group": 47,
+      "unit": "SH-053",
+      "originalReviewStatus": "unresolved",
+      "currentWorkingStatus": "reading-settled",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:507"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The new print corroborates يميني but does not repair the unusually abbreviated example. Retain it with a note; do not substitute a familiar textbook example or promote نفسي to a witnessed preferred reading.",
+      "followUp": "يميني is an elliptical example of position: my right [side]. It is printed in H2014, not evidence that words are missing."
+    },
+    {
+      "group": 48,
+      "unit": "SH-053",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:507"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "H2014 prints جبان, not جبار, and supplies هذا in the final comparison. Its separate footnote identifies صرصر as a jumping, chirping insect; the medieval quoted noun is preserved.",
+      "followUp": "يميني is an elliptical example of position: my right [side]. It is printed in H2014, not evidence that words are missing."
+    },
+    {
+      "group": 49,
+      "unit": "SH-054",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:511"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The printed quotation supplies the missing comparison and the clause تدرك أيضاً بالعقل. This is more than a conjectural smoothing of the defective electronic string.",
+      "followUp": null
+    },
+    {
+      "group": 50,
+      "unit": "SH-055",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:524"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "H2014 explicitly prints مختفياً. The digital محققاً changes the polarity; the English concealed now has direct printed support.",
+      "followUp": "Prefer H2014 إسعاف مقتضيات القوى and ويقيّد; render the domination of the holy faculty by lower dispositions. Do not purport to resolve every ambiguous pronoun."
+    },
+    {
+      "group": 51,
+      "unit": "SH-055",
+      "originalReviewStatus": "partial-resolution",
+      "currentWorkingStatus": "reading-settled",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:528",
+        "H2014/2:529"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The quotation corrects the broken opening into إسعاف مقتضيات and reads ويقيّد. The modern explanation confirms the causal contrast but is not authorial replacement text. Do not claim that a complete original syntactic reconstruction has been established.",
+      "followUp": "Prefer H2014 إسعاف مقتضيات القوى and ويقيّد; render the domination of the holy faculty by lower dispositions. Do not purport to resolve every ambiguous pronoun."
+    },
+    {
+      "group": 52,
+      "unit": "SH-058",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:560"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "Both disputed words are now directly supported: السهر rather than السهو, and الانتقالية rather than الانفعالية. The earlier edition’s inattention translation accurately followed its electronic base but should not remain the preferred reading once this printed evidence is adopted. Keep the electronic variant in the apparatus.",
+      "followUp": null
+    },
+    {
+      "group": 53,
+      "unit": "SH-059",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:577"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "The printed medieval text has تخلية, directly supporting the current English and correcting digital تخيلة.",
+      "followUp": null
+    },
+    {
+      "group": 54,
+      "unit": "SH-061-E",
+      "originalReviewStatus": "partial-resolution",
+      "currentWorkingStatus": "reading-settled",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:595",
+        "H2014/2:596"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "H2014 omits the problematic additional clause ما يميز به بعض ما فيه من البعض altogether. This provides a coherent separately printed form but does not settle whether the longer wording in A is corrupted, interpolated, or editorially omitted here. Retain both forms in apparatus; do not silently treat omission as manuscript proof.",
+      "followUp": "Use the shorter H2014 line for continuous reading; preserve the additional A phrase ما يميز به بعض ما فيه من البعض as a printed alternative, not as deleted authorial text."
+    },
+    {
+      "group": 55,
+      "unit": "SH-061-F",
+      "originalReviewStatus": "partial-resolution",
+      "currentWorkingStatus": "semantic-reading-settled",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:597"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "تصير resolves the digital يصيرى. H2014 still retains the awkward negative/participle sequence; the entire group is therefore not fully resolved.",
+      "followUp": "Negative of a recognized technical pair; not manuscript-collated"
+    },
+    {
+      "group": 56,
+      "unit": "SH-061-F",
+      "originalReviewStatus": "supported-reading",
+      "currentWorkingStatus": "supported-working-reading",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:597"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "Printed السلوك confirms the contextual correction of digital الملوك; no change of doctrinal interpretation is needed.",
+      "followUp": "Negative of a recognized technical pair; not manuscript-collated"
+    },
+    {
+      "group": 57,
+      "unit": "SH-061-A",
+      "originalReviewStatus": "partial-resolution",
+      "currentWorkingStatus": "reading-settled",
+      "hasIndependentMedievalWitness": false,
+      "modernPrintedLocations": [
+        "H2014/2:598"
+      ],
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "decision": "H2014 prints أفعاله, one of the alternatives already reported in A, not أقفاله. This corroborates a real reading alternative and supports an actions/states rendering for H2014; it does not establish that A’s locks reading is wrong or settle archetypal priority.",
+      "followUp": "Use H2014 أفعاله وأحواله, keys to his actions and states; preserve A أقفاله and reported إقباله as alternatives without deciding stemmatic priority."
+    }
+  ]
+}
