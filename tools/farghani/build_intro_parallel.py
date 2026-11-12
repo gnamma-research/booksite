@@ -71,7 +71,11 @@ def fetch(page):
             reviewed_lead=REVIEWED_FOOTNOTE_LEADS.get(page)
             if reviewed_lead:
                 pattern=re.compile(r"\(\s*1\s*\)\s*"+re.escape(reviewed_lead))
-                candidates=[m for m in pattern.finditer(raw) if m.start()>len(raw)*.45]
+                # A confirmed footer may start early when the editor's numbered notes
+                # occupy most of the printed page (p20: ~65% of raw string).
+                # Safety comes from the unique exact page-specific cue, not
+                # a brittle 45%-from-end rule used for heuristic footnotes.
+                candidates=[m for m in pattern.finditer(raw) if m.start()>len(raw)*.30]
                 if len(candidates)!=1:
                     raise ValueError(f"p{page}: reviewed footer boundary changed in digitized source; do not silently rejoin editor notes")
                 split=candidates[0].start()
