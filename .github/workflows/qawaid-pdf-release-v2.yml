@@ -4,6 +4,7 @@ on:
     branches: [master]
     paths:
       - '.github/workflows/qawaid-pdf-release-v2.yml'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/qawtaw16_final_acceptance.py'
       - 'texts/al-turka/qawaid-al-tawhid/pdf/build_editions.py'
       - 'texts/al-turka/qawaid-al-tawhid/data/primary-reference-register.js'
       - 'texts/al-turka/qawaid-al-tawhid/data/linked-lexicon.js'
@@ -33,6 +34,8 @@ jobs:
           python -m pip install --quiet weasyprint pypdf
       - name: Build the five editions with passage-linked indexes
         run: python texts/al-turka/qawaid-al-tawhid/pdf/build_editions.py
+      - name: Recompute source-scoped acceptance report for exactly these five PDF bytes
+        run: python texts/al-turka/qawaid-al-tawhid/qa/qawtaw16_final_acceptance.py
       - name: Verify pages, source layers and intra-PDF links
         run: |
           python - <<'PY'
@@ -69,6 +72,7 @@ jobs:
           mkdir -p /tmp/qawaid-pdf-verified
           cp texts/al-turka/qawaid-al-tawhid/pdf/*.pdf /tmp/qawaid-pdf-verified/
           cp texts/al-turka/qawaid-al-tawhid/pdf/manifest.json /tmp/qawaid-pdf-verified/
+          cp texts/al-turka/qawaid-al-tawhid/qa/qawtaw16-final-acceptance.json /tmp/qawaid-pdf-verified/
       - name: Publish on current master with retries (avoid binary rebase conflicts)
         run: |
           git config user.name 'gnamma-research'
@@ -80,9 +84,12 @@ jobs:
             mkdir -p texts/al-turka/qawaid-al-tawhid/pdf
             cp /tmp/qawaid-pdf-verified/*.pdf texts/al-turka/qawaid-al-tawhid/pdf/
             cp /tmp/qawaid-pdf-verified/manifest.json texts/al-turka/qawaid-al-tawhid/pdf/
-            git add texts/al-turka/qawaid-al-tawhid/pdf/*.pdf texts/al-turka/qawaid-al-tawhid/pdf/manifest.json
+            cp /tmp/qawaid-pdf-verified/qawtaw16-final-acceptance.json texts/al-turka/qawaid-al-tawhid/qa/
+            python texts/al-turka/qawaid-al-tawhid/qa/qawtaw16_final_acceptance.py
+            cmp /tmp/qawaid-pdf-verified/qawtaw16-final-acceptance.json texts/al-turka/qawaid-al-tawhid/qa/qawtaw16-final-acceptance.json
+            git add texts/al-turka/qawaid-al-tawhid/pdf/*.pdf texts/al-turka/qawaid-al-tawhid/pdf/manifest.json texts/al-turka/qawaid-al-tawhid/qa/qawtaw16-final-acceptance.json
             if git diff --cached --quiet; then echo "PDFs already current";exit 0;fi
-            git commit -m 'Publish verified Qawaid Reading Study Reference PDFs with linked indexes'
+            git commit -m 'Publish five Qawaid PDFs with exact source-scoped QA report parity'
             if git push origin HEAD:master;then exit 0;fi
             sleep 2
           done
