@@ -10,10 +10,10 @@
   "canonicalSourcePath": "texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage114.md",
   "canonicalSourceByteCount": 1131840,
   "canonicalSourceSHA256": "98351ab39d78f8f796c528c516d04adfa032b0925172d1e40490909c6be288da",
-  "appendixByteCount": 39370,
+  "appendixByteCount": 39400,
   "outputPath": "texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage116.md",
-  "outputByteCount": 1171210,
-  "outputSHA256": "019c97bfa0b524a4549ab3e999d72139fb26a429ebf9f34c1ecc692f00e7ae98",
+  "outputByteCount": 1171240,
+  "outputSHA256": "4bcd58af5a2d96b8e660a112ba44bfdd33d5c92f6e15f29606f125cf0d585b20",
   "prefixPreservedByteForByte": true,
   "appended": [
     {
@@ -37,8 +37,8 @@
     {
       "label": "Stage116 two photographed Q309 examples with literal translation",
       "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE116_Q309_TWO_EXAMPLES_PHOTO_TRANSLATED.md",
-      "originalBytes": 3037,
-      "originalSHA256": "df932c089d41e85915aa51180ac148159cb82485b01264beca395daae4543a27"
+      "originalBytes": 3067,
+      "originalSHA256": "7d09172b822775f28989c6dde22752d6256132138f559d853de8cf3ca44b42eb"
     },
     {
       "label": "Stage116 fourth-figure modal proof ledger",
