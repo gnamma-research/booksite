@@ -29,7 +29,7 @@ function apply(){
 }
 for(const b of buttons)b.addEventListener("click",()=>{lang=b.dataset.lang;apply()});
 $("pr-notes-toggle").addEventListener("click",()=>{
-  showNotes=!showNotes;document.querySelectorAll(".pr-apparatus").forEach(n=>n.open=showNotes);apply();
+  showNotes=!showNotes;document.querySelectorAll(".pr-apparatus").forEach(n=>n.open=false);apply();
 });
 $("pr-size-minus").addEventListener("click",()=>{size=Math.max(.8,Math.round((size-.05)*100)/100);apply()});
 $("pr-size-plus").addEventListener("click",()=>{size=Math.min(1.5,Math.round((size+.05)*100)/100);apply()});
@@ -118,5 +118,5 @@ document.addEventListener("keydown",ev=>{
  if(ev.key==="/"||((ev.ctrlKey||ev.metaKey)&&ev.key.toLowerCase()==="k")){ev.preventDefault();searchView()}
 });
 apply();
-if(showNotes)document.querySelectorAll(".pr-apparatus").forEach(n=>n.open=true);
+/* Source notes stay collapsed until opened individually. */
 })();
