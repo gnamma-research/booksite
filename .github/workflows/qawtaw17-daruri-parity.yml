@@ -42,6 +42,7 @@ jobs:
           node --check texts/al-turka/qawaid-al-tawhid/qawaid-parity-desk.js
           node --check texts/al-turka/qawaid-al-tawhid/qawaid-parity-personal-pdf.js
           node --check texts/al-turka/qawaid-al-tawhid/sw.js
+          node texts/al-turka/qawaid-al-tawhid/qa/check-offline-assets.mjs
           node --check daruri/gnamma-scholarly.js
           node --check daruri/gnamma-proximity.js
           node --check daruri/bookmark-ui.js
