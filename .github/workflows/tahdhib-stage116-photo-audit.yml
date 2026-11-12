@@ -7,6 +7,7 @@ on:
       - '.github/workflows/tahdhib-stage116-photo-audit.yml'
       - 'tools/tahdhib/stage116_recover_print_scans.py'
       - 'tools/tahdhib/build_stage116_cumulative.py'
+      - 'tools/tahdhib/check_stage116_release.py'
 permissions:
   contents: write
 jobs:
@@ -24,6 +25,8 @@ jobs:
         run: python tools/tahdhib/stage116_recover_print_scans.py
       - name: Assemble byte-preserved full Stage116 text, source-grade apparatus and integrity manifest
         run: python tools/tahdhib/build_stage116_cumulative.py
+      - name: Verify exact printed source row sequence, photo hashes and inherited 1090-note corpus
+        run: python tools/tahdhib/check_stage116_release.py
       - name: Commit four bounded photographic source-table excerpts (not full PDFs)
         env:
           PUBLISH_BRANCH: research/tahdhib-stage116-print-source-20261112
