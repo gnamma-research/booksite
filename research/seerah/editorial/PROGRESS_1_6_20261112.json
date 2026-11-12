@@ -2,7 +2,7 @@
   "date": "2026-11-12",
   "edition_source": "1.5.0-integrated-first-pass",
   "working_edition": "1.6.0-scholarship-pass",
-  "overall_percent": 22,
+  "overall_percent": 33,
   "rule": "Percentages are weighted accomplishment of explicit deliverables, not measures of scholarly truth. Each evidence status must be shown; partial sources never get complete status.",
   "stages": [
     {
@@ -38,11 +38,16 @@
       "name": "Prophetic encounters atlas",
       "target": "40–60 indexed encounters, 12–15 deep analyses, direct report-level links and limits",
       "weight": 14,
-      "percent": 0,
-      "status": "not-started",
-      "outputs": [],
+      "percent": 78,
+      "status": "indexed-50-encounters-and-17-deep-studies-drafted; 20 source checks remain",
+      "outputs": [
+        "editorial/encounters-1_6/index.json",
+        "editorial/encounters-1_6/DEEP_STUDIES_01_08.md",
+        "editorial/encounters-1_6/DEEP_STUDIES_09_17.md"
+      ],
       "remaining": [
-        "40–60 indexed encounters, 12–15 deep analyses, direct report-level links and limits"
+        "20 provisional catalog items require source-level collation",
+        "Deep cases require juristic sharḥ and later reception tracking in one full transmission example"
       ]
     },
     {
@@ -110,5 +115,5 @@
     "Edition 1.5 remains canonical until 1.6 text passes checks.",
     "No work runs asynchronously. This ledger records only current committed work."
   ],
-  "latest": "B — Miʿrāj dossier with primary narrative, seven meetings, Ibn ʿAbbās/ʿĀʾishah vision difference and Akbarian return"
+  "latest": "C — 50 encounters indexed (30 sources checked, 20 provisional); 17 deep analyses covering 18 index entries"
 }
