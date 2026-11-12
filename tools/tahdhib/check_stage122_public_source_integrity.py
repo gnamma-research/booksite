@@ -35,6 +35,20 @@ six=(P/"STAGE122_SIX_EXPANDED_HISTORICAL_NOTES.md").read_text()
 for note in ("HWN-DALALA-067","HWN-CONVERSION-008","HWN-CONVERSION-021","HWN-CONTRAPOSITION-019","HWN-MAFAHIM-011","HWN-INTRO-081"):
     assert note in six
 assert "source-grade" in six.lower() or "source" in six.lower()
+two=(P/"STAGE122_TWO_FURTHER_SIGNIFICATION_GLOSSES.md").read_text()
+for note in ("HWN-DALALA-039","HWN-DALALA-081"):
+    assert note in two
+assert "247b2e6e8d5fb67c3dd48df5cd3fcf12df7aecae7c76aa874fe0e4547e9f29d2" in two
+assert "d430197f8cd11509e163512de8a30938cfa8f4bf73e74b49b6d4d98bb2d589ca" in two
+sixSource=load("STAGE122_SIX_NOTES_PROVENANCE.json")
+assert len(sixSource["notes"])==6 and sixSource["counts"]["matchedOldSourceSHA256"]==6
+assert len({x["id"] for x in sixSource["notes"]})==6
+gaps=load("STAGE122_ELEVEN_SOURCE_HASH_GAP_LEDGER.json")
+assert gaps["notesTotal"]==1090 and gaps["matchedHistoricalSHA256"]==1079
+assert gaps["differingUnitHashes"]==11 and len(gaps["unitSHA256Comparisons"])==11
+assert gaps["onePageUnits"]==6 and gaps["multiPageUnits"]==5
+assert all(x["wordCountMatches"] for x in gaps["unitSHA256Comparisons"])
+assert "STAGE122_TWO_FURTHER_SIGNIFICATION_GLOSSES.md" in main
 
 # inherited full H master SHA is verified against prior published manifest
 manifest=load("STAGE121_CUMULATIVE_FILE_INTEGRITY.json")
