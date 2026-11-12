@@ -48,7 +48,7 @@ body[data-language="ar"] .pr-text,body[data-language="en"] .pr-text{grid-templat
 body[data-language="ar"] .pr-en,body[data-language="en"] .pr-ar{display:none}
 body[data-language="ar"] .pr-ar{font-size:calc(26px * var(--pr-size))}
 body[data-language="en"] .pr-en{font-size:calc(18px * var(--pr-size))}
-body:not(.pr-show-notes) .pr-apparatus:not([open]){display:block}
+body:not(.pr-show-notes) .pr-apparatus{display:none}
 body.pr-show-notes .pr-apparatus{border-top:1px solid var(--line);padding-top:7px}
 body.pr-show-notes .pr-apparatus[open]{margin-bottom:13px}
 .pr-footer{max-width:var(--pr-width);margin:0 auto;padding:27px 22px 100px;border-top:1px solid var(--line);font:13px/1.7 ui-sans-serif,system-ui,sans-serif;color:var(--muted)}
