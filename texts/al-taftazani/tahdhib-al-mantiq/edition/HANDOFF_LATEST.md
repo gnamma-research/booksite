@@ -2,6 +2,8 @@
 
 **12 November 2026 · Working scholarly edition. This handoff documents new source-facing translation and corrections, not a complete critical edition.**
 
+**Source register clarification:** Four recovered source tables (Q258, Q294, Q300 and Q309) remain distinct from the historical continuous reading text. Stage119 addresses Q309 worked examples and selected Q294 relation marks, without claiming the other tables are fully transcribed.
+
 ## Inherited cumulative corpus and no-retranslation rule
 
 - T = al-Taftāzānī's original `Tahdhīb al-Manṭiq` matn, Y = al-Yazdī principal commentary, H = later mixed-author ḥawāshī, and modern text references = a separate voice. Preserve these.
