@@ -183,7 +183,9 @@
           ],
           "confidence": "both printings clearly legible"
         }
-      ]
+      ],
+      "sourceExampleTranslationDocument": "STAGE116_Q309_TWO_EXAMPLES_PHOTO_TRANSLATED.md",
+      "arabicExampleSentencesPending": 10
     }
   },
   "verifiedQ300StatusSymbols": 32,
@@ -210,7 +212,7 @@
   "warnings": [
     "Two editions of similar print are not independent medieval manuscript witnesses.",
     "Q300 classification verification is not a proof of its modality claims.",
-    "Rows on Q309 intentionally omit three examples; twelve printed examples await literal translation.",
+    "Q309 includes three source-declared no-example rows; of twelve printed worked examples, two are now source-read and ten remain for literal translation.",
     "Q387 hākadhā is a deictic reading, not positive proof that a missing figure existed."
   ],
   "cumulativeMaster": "hawashi-effective-stage114.json",
