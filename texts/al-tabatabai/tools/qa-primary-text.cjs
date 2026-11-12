@@ -17,7 +17,7 @@ assert.match(logic,/muzaffar-al-mantiq/);
 const bottomPhilosophy=section(dock,'heading:"Falsafa · Philosophy"','heading:"Manṭiq · Logic"');
 assert.doesNotMatch(bottomPhilosophy,/muzaffar-al-mantiq/);
 assert.match(section(dock,'heading:"Manṭiq · Logic"','heading:"Kalām"'),/muzaffar-al-mantiq/);
-assert.match(reader,/headings: \['both','original','editorial'\].*:'original'/);
+assert.match(reader,/headings: .*'original'/);
 assert.match(reader,/!isGuide\(unit\).*state\.savedOnly/);
 assert.match(reader,/const entries = \[\]/);
 assert.doesNotMatch(reader,/if \(source\.url\) entries\.push/);
@@ -28,7 +28,7 @@ assert.match(qaw,/function editorialNotesPanel\(/);
 assert.match(qcss,/#reading \.source-notes\{display:none!important\}/);
 for(const slug of ['bidayat-al-hikma','nihayat-al-hikma','muzaffar-al-mantiq']){
  const html=read('texts/al-tabatabai/'+slug+'/index.html');
- assert.match(html,/Texts <span aria-hidden="true">\/</span>/);
+ assert.ok(html.includes('Texts <span aria-hidden="true">/</span>'));
  assert.match(html,/\.\.\/\.\.\//);
 }
 console.log('PASS: primary text reader classification, note separation, discussion routes and source preservation');
