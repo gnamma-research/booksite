@@ -6,7 +6,13 @@ const read=p=>readFileSync(join(root,p),'utf8');
 
 const data=JSON.parse(read('data/chapters.json'));
 const prior=JSON.parse(read('editorial/archive-1.6.0-pre-prose-audit-chapters.json'));
-const current=read('editorial/current-edition-1.6.2-targeted-fidelity.md');
+const current=read('editorial/current-edition-1.7.0-generative.md');
+const old162=JSON.parse(read('editorial/archive-1.6.2-pre1.7-chapters.json'));
+const old162Reader=read('editorial/archive-1.6.2-pre1.7-reader.html');
+const old162Man=read('editorial/current-edition-1.6.2-targeted-fidelity.md');
+const method=read('editorial/GENERATIVE_EXPLANATORY_NARRATIVE_1_7_20261113.md');
+const frame=read('framework.html');
+const nexus=JSON.parse(read('editorial/CHAPTER_NEXUS_PLAN_1_7_20261113.json'));
 const prior161=JSON.parse(read('editorial/archive-1.6.1-pre1.6.2-chapters.json'));
 const prior161HTML=read('editorial/archive-1.6.1-pre1.6.2-reader.html');
 const prior161Man=read('editorial/current-edition-1.6.1-prose-reviewed.md');
@@ -22,7 +28,16 @@ const encounters=JSON.parse(read('editorial/encounters-1_6/index.json'));
 const claimLedger=JSON.parse(read('editorial/CLAIM_WITNESS_LEDGER_1_6_1_20261112.json'));
 const regional=JSON.parse(read('editorial/REGIONAL_MICROHISTORIES_1_6_20261112.json'));
 
-assert.equal(data.edition,'1.6.2-targeted-source-and-prose-fidelity');
+assert.equal(data.edition,'1.7.0-generative-muhammadan-framework');
+assert.equal(old162.edition,'1.6.2-targeted-source-and-prose-fidelity');
+assert.ok(old162Reader.includes('Research edition 1.6.2'));
+assert.ok(old162Man.includes('Research edition 1.6.2'));
+assert.equal(nexus.changes.length,46);
+assert.ok(method.includes('The encounter is the central unit of explanation'));
+assert.ok(frame.includes('maqām lā maqām'));
+assert.equal(data.chapters.filter((c,i)=>c.matn!==old162.chapters[i].matn).length,0);
+assert.equal(data.chapters.filter((c,i)=>c.sharh!==old162.chapters[i].sharh).length,46);
+for(const entry of nexus.changes)assert.ok(data.chapters[entry.chapter-1].sharh.includes(entry.replacement),'Missing nexus passage '+entry.chapter);
 assert.equal(data.chapters.length,46);
 assert.equal(prior161.edition,'1.6.1-prose-and-source-fidelity-review');
 assert.ok(prior161HTML.includes('Research edition 1.6.1'));
@@ -61,9 +76,10 @@ assert.equal(regional.cases.length,13);
 assert.equal(claimLedger.entries.length,46);
 assert.equal(claimLedger.entries.reduce((n,e)=>n+e.claims.length,0),138);
 
-assert.ok(html.includes('Research edition 1.6.2'));
-assert.ok(landing.includes('Research edition 1.6.2'));
+assert.ok(html.includes('Research edition 1.7.0'));
+assert.ok(landing.includes('Research edition 1.7.0'));
 assert.ok(landing.includes('tables-vi-vii.html')&&html.includes('tables-vi-vii.html'));
+assert.ok(landing.includes('framework.html')&&html.includes('framework.html'));
 assert.equal((tables.match(/<tr><th scope="row">/g)||[]).length,13);
 assert.ok(tables.includes('id="vi"')&&tables.includes('id="vii"'));
 
@@ -110,4 +126,4 @@ for(let i=1;i<=46;i++){
   for(const f of forbidden)assert.ok(!f.test(ch[layer]),'Editor-directed language '+id+' '+layer+': '+f);
  }
 }
-console.log('PASS Sīrah 1.6.2: 46 aligned chapter pairs, all matns and 41+ shuruh prose reviewed, Nūḥ chronology verified, legal source update, 50 encounters, 138 claims, source/static/manuscript parity');
+console.log('PASS Sīrah 1.7.0: 46 aligned chapter pairs, all matns and 41+ shuruh prose reviewed, Nūḥ chronology verified, legal source update, 50 encounters, 138 claims, source/static/manuscript parity');
