@@ -62,6 +62,14 @@ assert current["integrity"]["totalBilingualUnits"] == len(matn) + len(sharh) == 
 audit = (ROOT / "editorial/QAWTAW18_CURRENT_CRITICAL_DISPOSITION_2026-11-13.md").read_text(encoding="utf8")
 assert "55" in audit and "37–73" in audit
 assert "**the identical 14 cases**" in audit
+final_dossier = (ROOT / "editorial/QAWTAW19_FINAL_TWO_CRUXES_2026-11-13.md").read_text(encoding="utf8")
+assert "SH-002" in final_dossier and "QT-059" in final_dossier
+assert "HTTP 403" in final_dossier and "nyp.33433098696259" in final_dossier
+assert "unattested" in final_dossier.lower() and "not a certified emendation" in final_dossier.lower()
+assert "cannot" in final_dossier.lower() or "not" in final_dossier.lower()
+for html in ("index.html","commentary.html"):
+    page = (ROOT / html).read_text(encoding="utf8")
+    assert 'href="editorial/QAWTAW19_FINAL_TWO_CRUXES_2026-11-13.md"' in page
 for html in ("index.html","commentary.html"):
     page = (ROOT / html).read_text(encoding="utf8")
     assert 'href="editorial/QAWTAW18_CURRENT_CRITICAL_DISPOSITION_2026-11-13.md"' in page
@@ -75,4 +83,4 @@ for a, b in zip(manifest["files"], release["PDFs"]):
     assert len(raw) == b["bytes"] == a["size_bytes"]
     assert hashlib.sha256(raw).hexdigest() == a["sha256"] == b["sha256"]
     assert a["pages"] == b["pages"]
-print("Qawtaw18 PASS: 55 settled working groups, 2 source-critical, 171 bilingual units, five PDFs byte-matched.")
+print("Qawtaw19 PASS: 55 settled working groups; 2 source-critical notes documented (not emended); 171 bilingual units; five PDFs byte-matched.")
