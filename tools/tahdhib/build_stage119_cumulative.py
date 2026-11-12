@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tahdhib Stage119: lossless cumulative H translation plus all subsequent apparatus.
+"""Tahdhib Stage119: lossless cumulative H translation plus all subsequent apparatus.\nDocumentation gate: preserve four historical printed tables as separate evidence.
 
 NEVER mutate historic 1,090-note first-pass translation or silently certify
 full print/manuscript collation merely because photographed cells are available.
