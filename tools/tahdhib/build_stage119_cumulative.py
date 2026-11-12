@@ -19,6 +19,8 @@ docs=[
  ("Stage118 full source-cell research status","STAGE118_SOURCE_CELL_RESEARCH.md"),
  ("Stage118 Q258 49-cell source phrase register","STAGE118_Q258_49_DEFINITION_SOURCE_PHRASES.json"),
  ("Stage118 Q294 105-cell relation family register","STAGE118_Q294_105_SOURCE_SYMBOL_FAMILIES.json"),
+ ("Stage119 nineteen exact Q294 photographed source marks","STAGE119_Q294_NINETEEN_DIRECT_GLYPHS.md"),
+ ("Stage119 nineteen exact Q294 source records","STAGE119_Q294_NINETEEN_DIRECT_GLYPHS.json"),
  ("Stage118 Q259 counting note","STAGE118_Q259_ARITHMETIC_AND_SCOPE.md"),
  ("Stage119 15-cell Q309 comparative source edition","STAGE119_Q309_COMPARATIVE_WORKING_READINGS.md"),
  ("Stage119 machine-readable historical Q309 comparisons","STAGE119_Q309_COMPARATIVE_WORKING_READINGS.json"),
