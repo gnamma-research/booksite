@@ -191,6 +191,7 @@ function filesPanel(){
   ['Original bilingual matn','data/parallel-matn.md'],['Complete bilingual commentary','data/parallel-commentary.md'],
   ['Critical decisions','textual-decisions.html'],['Full 5,520-segment comparison ledger','qa/clause-ledger.json'],
   ['Final source-scoped audit','editorial/QAWTAW16_SOURCE_SCOPED_FINAL_AUDIT_2026-11-12.md'],
+  ['Darūrī reader feature-parity audit','editorial/QAWTAW17_DARURI_PARITY_2026-11-13.md'],
   ['Five PDF edition manifest','pdf/manifest.json']].map(([name,href])=>
   '<a href="'+href+'" target="_blank" rel="noopener"><b>'+name+'</b></a>').join('')+'</div>');
 }
