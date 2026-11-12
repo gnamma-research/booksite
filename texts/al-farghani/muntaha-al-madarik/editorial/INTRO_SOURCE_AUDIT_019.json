@@ -1,12 +1,12 @@
 {
   "schema": "gnamma-farghani-xix-english-arabic-source-audit-v1",
-  "date_utc": "2026-11-12T00:31:30.706563+00:00",
+  "date_utc": "2026-11-12T14:49:00+03:00",
   "arabic_digital_page_count": 128,
   "english_working_page_count": 128,
-  "arabic_digitized_word_total": 38920,
+  "arabic_digitized_word_total": 38645,
   "english_working_word_total": 56942,
-  "pages_with_explicit_editorial_notes": 25,
-  "pages_with_possible_unseparated_notes": 15,
+  "pages_with_explicit_editorial_notes": 38,
+  "pages_with_possible_unseparated_notes": 0,
   "selected_critical_records": 559,
   "exact_normalized_source_excerpt_matches": 510,
   "selected_excerpt_match_audit": [
@@ -15,7 +15,7 @@
       "page": 18,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -24,7 +24,7 @@
       "page": 18,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -33,7 +33,7 @@
       "page": 18,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -42,7 +42,7 @@
       "page": 18,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -51,7 +51,7 @@
       "page": 18,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -60,7 +60,7 @@
       "page": 18,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -69,7 +69,7 @@
       "page": 18,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -78,7 +78,7 @@
       "page": 18,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -87,7 +87,7 @@
       "page": 18,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -96,7 +96,7 @@
       "page": 18,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": true
     },
@@ -105,7 +105,7 @@
       "page": 18,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -114,7 +114,7 @@
       "page": 19,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -123,7 +123,7 @@
       "page": 19,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -132,7 +132,7 @@
       "page": 19,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": true
     },
@@ -141,7 +141,7 @@
       "page": 19,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -150,7 +150,7 @@
       "page": 19,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -159,7 +159,7 @@
       "page": 19,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -168,7 +168,7 @@
       "page": 19,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -177,7 +177,7 @@
       "page": 19,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -186,7 +186,7 @@
       "page": 19,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -195,7 +195,7 @@
       "page": 19,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -204,7 +204,7 @@
       "page": 19,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -213,7 +213,7 @@
       "page": 19,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -222,7 +222,7 @@
       "page": 19,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": true
     },
@@ -231,7 +231,7 @@
       "page": 19,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -240,7 +240,7 @@
       "page": 19,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -249,7 +249,7 @@
       "page": 19,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -258,7 +258,7 @@
       "page": 19,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -267,7 +267,7 @@
       "page": 20,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -276,7 +276,7 @@
       "page": 20,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -285,7 +285,7 @@
       "page": 20,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -294,7 +294,7 @@
       "page": 20,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -303,7 +303,7 @@
       "page": 20,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -312,7 +312,7 @@
       "page": 20,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -321,7 +321,7 @@
       "page": 20,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -330,7 +330,7 @@
       "page": 20,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -339,7 +339,7 @@
       "page": 20,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -348,7 +348,7 @@
       "page": 21,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -357,7 +357,7 @@
       "page": 21,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -366,7 +366,7 @@
       "page": 21,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -375,7 +375,7 @@
       "page": 21,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -384,7 +384,7 @@
       "page": 21,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": true
     },
@@ -393,7 +393,7 @@
       "page": 21,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -402,7 +402,7 @@
       "page": 21,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -411,7 +411,7 @@
       "page": 21,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -420,7 +420,7 @@
       "page": 21,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -429,7 +429,7 @@
       "page": 21,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -438,7 +438,7 @@
       "page": 21,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -447,7 +447,7 @@
       "page": 21,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -456,7 +456,7 @@
       "page": 21,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -465,7 +465,7 @@
       "page": 22,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -474,7 +474,7 @@
       "page": 22,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -483,7 +483,7 @@
       "page": 22,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -492,7 +492,7 @@
       "page": 22,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -501,7 +501,7 @@
       "page": 22,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -510,7 +510,7 @@
       "page": 22,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -519,7 +519,7 @@
       "page": 22,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -528,7 +528,7 @@
       "page": 22,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -537,7 +537,7 @@
       "page": 22,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -555,7 +555,7 @@
       "page": 22,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -564,7 +564,7 @@
       "page": 22,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -573,7 +573,7 @@
       "page": 22,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -582,7 +582,7 @@
       "page": 22,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -591,7 +591,7 @@
       "page": 22,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -600,7 +600,7 @@
       "page": 23,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -609,7 +609,7 @@
       "page": 23,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -618,7 +618,7 @@
       "page": 23,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": true
     },
@@ -627,7 +627,7 @@
       "page": 23,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": true
     },
@@ -636,7 +636,7 @@
       "page": 23,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -645,7 +645,7 @@
       "page": 23,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -654,7 +654,7 @@
       "page": 23,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -663,7 +663,7 @@
       "page": 23,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -672,7 +672,7 @@
       "page": 23,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -681,7 +681,7 @@
       "page": 23,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -690,7 +690,7 @@
       "page": 23,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -699,7 +699,7 @@
       "page": 23,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -708,7 +708,7 @@
       "page": 23,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -717,7 +717,7 @@
       "page": 23,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -726,7 +726,7 @@
       "page": 23,
       "grade": "printed-digital-Arabic-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -735,7 +735,7 @@
       "page": 24,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -744,7 +744,7 @@
       "page": 24,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -753,7 +753,7 @@
       "page": 24,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -762,7 +762,7 @@
       "page": 24,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -771,7 +771,7 @@
       "page": 24,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -780,7 +780,7 @@
       "page": 24,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -789,7 +789,7 @@
       "page": 24,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -798,7 +798,7 @@
       "page": 24,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -807,7 +807,7 @@
       "page": 24,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -816,7 +816,7 @@
       "page": 25,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -825,7 +825,7 @@
       "page": 25,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -834,7 +834,7 @@
       "page": 25,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -843,7 +843,7 @@
       "page": 25,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -852,7 +852,7 @@
       "page": 25,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -861,7 +861,7 @@
       "page": 25,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -870,7 +870,7 @@
       "page": 25,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -879,7 +879,7 @@
       "page": 25,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -888,7 +888,7 @@
       "page": 25,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": true
     },
@@ -897,7 +897,7 @@
       "page": 25,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -906,7 +906,7 @@
       "page": 25,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -915,7 +915,7 @@
       "page": 25,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -924,7 +924,7 @@
       "page": 26,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -933,7 +933,7 @@
       "page": 26,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -942,7 +942,7 @@
       "page": 26,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -951,7 +951,7 @@
       "page": 26,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -960,7 +960,7 @@
       "page": 26,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -969,7 +969,7 @@
       "page": 26,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -978,7 +978,7 @@
       "page": 26,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -987,7 +987,7 @@
       "page": 26,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -996,7 +996,7 @@
       "page": 26,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1005,7 +1005,7 @@
       "page": 27,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1014,7 +1014,7 @@
       "page": 27,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1023,7 +1023,7 @@
       "page": 27,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1032,7 +1032,7 @@
       "page": 27,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1041,7 +1041,7 @@
       "page": 27,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1050,7 +1050,7 @@
       "page": 27,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1059,7 +1059,7 @@
       "page": 27,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1068,7 +1068,7 @@
       "page": 27,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1077,7 +1077,7 @@
       "page": 27,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1086,7 +1086,7 @@
       "page": 27,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1095,7 +1095,7 @@
       "page": 28,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1104,7 +1104,7 @@
       "page": 28,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1113,7 +1113,7 @@
       "page": 28,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1122,7 +1122,7 @@
       "page": 28,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1131,7 +1131,7 @@
       "page": 28,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1140,7 +1140,7 @@
       "page": 28,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1149,7 +1149,7 @@
       "page": 28,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1158,7 +1158,7 @@
       "page": 28,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1167,7 +1167,7 @@
       "page": 28,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1176,7 +1176,7 @@
       "page": 28,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1185,7 +1185,7 @@
       "page": 28,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1194,7 +1194,7 @@
       "page": 29,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1203,7 +1203,7 @@
       "page": 29,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1212,7 +1212,7 @@
       "page": 29,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1221,7 +1221,7 @@
       "page": 29,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1230,7 +1230,7 @@
       "page": 29,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1239,7 +1239,7 @@
       "page": 29,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1248,7 +1248,7 @@
       "page": 29,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1257,7 +1257,7 @@
       "page": 29,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": true
     },
@@ -1266,7 +1266,7 @@
       "page": 29,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1275,7 +1275,7 @@
       "page": 29,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1284,7 +1284,7 @@
       "page": 29,
       "grade": "modern-printed-digital-selected-span-checked-v1",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1293,7 +1293,7 @@
       "page": 30,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1302,7 +1302,7 @@
       "page": 30,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1311,7 +1311,7 @@
       "page": 30,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1320,7 +1320,7 @@
       "page": 30,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1329,7 +1329,7 @@
       "page": 30,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1338,7 +1338,7 @@
       "page": 30,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1347,7 +1347,7 @@
       "page": 30,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1356,7 +1356,7 @@
       "page": 30,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1365,7 +1365,7 @@
       "page": 30,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1374,7 +1374,7 @@
       "page": 31,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1392,7 +1392,7 @@
       "page": 31,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1401,7 +1401,7 @@
       "page": 31,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1410,7 +1410,7 @@
       "page": 31,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1419,7 +1419,7 @@
       "page": 31,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1428,7 +1428,7 @@
       "page": 31,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1437,7 +1437,7 @@
       "page": 31,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1446,7 +1446,7 @@
       "page": 32,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1455,7 +1455,7 @@
       "page": 32,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1464,7 +1464,7 @@
       "page": 32,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1473,7 +1473,7 @@
       "page": 32,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1482,7 +1482,7 @@
       "page": 32,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1491,7 +1491,7 @@
       "page": 32,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1500,7 +1500,7 @@
       "page": 32,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1509,7 +1509,7 @@
       "page": 32,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1527,7 +1527,7 @@
       "page": 33,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1536,7 +1536,7 @@
       "page": 33,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1545,7 +1545,7 @@
       "page": 33,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": true
     },
@@ -1554,7 +1554,7 @@
       "page": 33,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1563,7 +1563,7 @@
       "page": 33,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1572,7 +1572,7 @@
       "page": 33,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1581,7 +1581,7 @@
       "page": 33,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1590,7 +1590,7 @@
       "page": 34,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1599,7 +1599,7 @@
       "page": 34,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1608,7 +1608,7 @@
       "page": 34,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1617,7 +1617,7 @@
       "page": 34,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1626,7 +1626,7 @@
       "page": 34,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1635,7 +1635,7 @@
       "page": 34,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1644,7 +1644,7 @@
       "page": 34,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": true
     },
@@ -1653,7 +1653,7 @@
       "page": 34,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1662,7 +1662,7 @@
       "page": 34,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1671,7 +1671,7 @@
       "page": 35,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1680,7 +1680,7 @@
       "page": 35,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1689,7 +1689,7 @@
       "page": 35,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1698,7 +1698,7 @@
       "page": 35,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -1707,7 +1707,7 @@
       "page": 35,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1716,7 +1716,7 @@
       "page": 35,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1725,7 +1725,7 @@
       "page": 35,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1734,7 +1734,7 @@
       "page": 36,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1743,7 +1743,7 @@
       "page": 36,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1752,7 +1752,7 @@
       "page": 36,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1761,7 +1761,7 @@
       "page": 36,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1770,7 +1770,7 @@
       "page": 36,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1779,7 +1779,7 @@
       "page": 36,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1797,7 +1797,7 @@
       "page": 37,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1806,7 +1806,7 @@
       "page": 37,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1815,7 +1815,7 @@
       "page": 37,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -1824,7 +1824,7 @@
       "page": 37,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1833,7 +1833,7 @@
       "page": 38,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": true
     },
@@ -1842,7 +1842,7 @@
       "page": 38,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1851,7 +1851,7 @@
       "page": 38,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1860,7 +1860,7 @@
       "page": 38,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1869,7 +1869,7 @@
       "page": 39,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1887,7 +1887,7 @@
       "page": 39,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1896,7 +1896,7 @@
       "page": 39,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1905,7 +1905,7 @@
       "page": 40,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1914,7 +1914,7 @@
       "page": 40,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1923,7 +1923,7 @@
       "page": 40,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1932,7 +1932,7 @@
       "page": 40,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1941,7 +1941,7 @@
       "page": 41,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1950,7 +1950,7 @@
       "page": 41,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1959,7 +1959,7 @@
       "page": 41,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1968,7 +1968,7 @@
       "page": 42,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1977,7 +1977,7 @@
       "page": 42,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1986,7 +1986,7 @@
       "page": 42,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -1995,7 +1995,7 @@
       "page": 42,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2004,7 +2004,7 @@
       "page": 43,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2013,7 +2013,7 @@
       "page": 43,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2022,7 +2022,7 @@
       "page": 43,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2031,7 +2031,7 @@
       "page": 44,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2040,7 +2040,7 @@
       "page": 44,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2049,7 +2049,7 @@
       "page": 44,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2058,7 +2058,7 @@
       "page": 45,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2067,7 +2067,7 @@
       "page": 45,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2076,7 +2076,7 @@
       "page": 45,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2085,7 +2085,7 @@
       "page": 46,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2094,7 +2094,7 @@
       "page": 46,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2103,7 +2103,7 @@
       "page": 46,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2112,7 +2112,7 @@
       "page": 46,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2121,7 +2121,7 @@
       "page": 47,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2130,7 +2130,7 @@
       "page": 47,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2139,7 +2139,7 @@
       "page": 47,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2148,7 +2148,7 @@
       "page": 47,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2157,7 +2157,7 @@
       "page": 50,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2166,7 +2166,7 @@
       "page": 50,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2175,7 +2175,7 @@
       "page": 50,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2184,7 +2184,7 @@
       "page": 50,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2193,7 +2193,7 @@
       "page": 50,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2202,7 +2202,7 @@
       "page": 48,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2211,7 +2211,7 @@
       "page": 48,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": true
     },
@@ -2220,7 +2220,7 @@
       "page": 48,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2229,7 +2229,7 @@
       "page": 48,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2238,7 +2238,7 @@
       "page": 49,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2247,7 +2247,7 @@
       "page": 49,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2256,7 +2256,7 @@
       "page": 49,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2265,7 +2265,7 @@
       "page": 49,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2274,7 +2274,7 @@
       "page": 51,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2283,7 +2283,7 @@
       "page": 51,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2292,7 +2292,7 @@
       "page": 51,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2301,7 +2301,7 @@
       "page": 52,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2310,7 +2310,7 @@
       "page": 52,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2319,7 +2319,7 @@
       "page": 52,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2328,7 +2328,7 @@
       "page": 52,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": true
     },
@@ -2337,7 +2337,7 @@
       "page": 53,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2346,7 +2346,7 @@
       "page": 53,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2355,7 +2355,7 @@
       "page": 53,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2364,7 +2364,7 @@
       "page": 54,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2373,7 +2373,7 @@
       "page": 54,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2382,7 +2382,7 @@
       "page": 54,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2391,7 +2391,7 @@
       "page": 55,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2400,7 +2400,7 @@
       "page": 55,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2409,7 +2409,7 @@
       "page": 55,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2418,7 +2418,7 @@
       "page": 56,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2427,7 +2427,7 @@
       "page": 56,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2436,7 +2436,7 @@
       "page": 56,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2445,7 +2445,7 @@
       "page": 56,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2463,7 +2463,7 @@
       "page": 57,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2472,7 +2472,7 @@
       "page": 57,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2481,7 +2481,7 @@
       "page": 58,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2490,7 +2490,7 @@
       "page": 58,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2499,7 +2499,7 @@
       "page": 58,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2508,7 +2508,7 @@
       "page": 59,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2517,7 +2517,7 @@
       "page": 59,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2526,7 +2526,7 @@
       "page": 59,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2535,7 +2535,7 @@
       "page": 60,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2544,7 +2544,7 @@
       "page": 60,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2553,7 +2553,7 @@
       "page": 60,
       "grade": "modern-printed-digital-selected-locus-checked",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2571,7 +2571,7 @@
       "page": 61,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2580,7 +2580,7 @@
       "page": 61,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2589,7 +2589,7 @@
       "page": 61,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2598,7 +2598,7 @@
       "page": 61,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2607,7 +2607,7 @@
       "page": 61,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2616,7 +2616,7 @@
       "page": 61,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2625,7 +2625,7 @@
       "page": 61,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2634,7 +2634,7 @@
       "page": 62,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2643,7 +2643,7 @@
       "page": 62,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": true
     },
@@ -2652,7 +2652,7 @@
       "page": 62,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2661,7 +2661,7 @@
       "page": 62,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2670,7 +2670,7 @@
       "page": 62,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2679,7 +2679,7 @@
       "page": 62,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2688,7 +2688,7 @@
       "page": 62,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2697,7 +2697,7 @@
       "page": 63,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2706,7 +2706,7 @@
       "page": 63,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2715,7 +2715,7 @@
       "page": 63,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2724,7 +2724,7 @@
       "page": 63,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2733,7 +2733,7 @@
       "page": 63,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2742,7 +2742,7 @@
       "page": 63,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2751,7 +2751,7 @@
       "page": 63,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2760,7 +2760,7 @@
       "page": 63,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2769,7 +2769,7 @@
       "page": 64,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2778,7 +2778,7 @@
       "page": 64,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2787,7 +2787,7 @@
       "page": 64,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2796,7 +2796,7 @@
       "page": 64,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2805,7 +2805,7 @@
       "page": 64,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2814,7 +2814,7 @@
       "page": 64,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2823,7 +2823,7 @@
       "page": 64,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2832,7 +2832,7 @@
       "page": 65,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2841,7 +2841,7 @@
       "page": 65,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2850,7 +2850,7 @@
       "page": 65,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2859,7 +2859,7 @@
       "page": 65,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2868,7 +2868,7 @@
       "page": 65,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2877,7 +2877,7 @@
       "page": 66,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2886,7 +2886,7 @@
       "page": 66,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2895,7 +2895,7 @@
       "page": 66,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2904,7 +2904,7 @@
       "page": 66,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2913,7 +2913,7 @@
       "page": 66,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2922,7 +2922,7 @@
       "page": 67,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2931,7 +2931,7 @@
       "page": 67,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2940,7 +2940,7 @@
       "page": 67,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2949,7 +2949,7 @@
       "page": 67,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2958,7 +2958,7 @@
       "page": 67,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2976,7 +2976,7 @@
       "page": 68,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2985,7 +2985,7 @@
       "page": 68,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -2994,7 +2994,7 @@
       "page": 68,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3003,7 +3003,7 @@
       "page": 68,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3012,7 +3012,7 @@
       "page": 68,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3021,7 +3021,7 @@
       "page": 68,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3030,7 +3030,7 @@
       "page": 69,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3039,7 +3039,7 @@
       "page": 69,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3048,7 +3048,7 @@
       "page": 69,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3057,7 +3057,7 @@
       "page": 69,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3066,7 +3066,7 @@
       "page": 69,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3075,7 +3075,7 @@
       "page": 70,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3084,7 +3084,7 @@
       "page": 70,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3093,7 +3093,7 @@
       "page": 70,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3102,7 +3102,7 @@
       "page": 70,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3111,7 +3111,7 @@
       "page": 70,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3129,7 +3129,7 @@
       "page": 71,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3138,7 +3138,7 @@
       "page": 71,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3147,7 +3147,7 @@
       "page": 71,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3156,7 +3156,7 @@
       "page": 71,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3165,7 +3165,7 @@
       "page": 71,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3174,7 +3174,7 @@
       "page": 72,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3183,7 +3183,7 @@
       "page": 72,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3192,7 +3192,7 @@
       "page": 72,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3201,7 +3201,7 @@
       "page": 72,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3210,7 +3210,7 @@
       "page": 72,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3219,7 +3219,7 @@
       "page": 72,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3228,7 +3228,7 @@
       "page": 72,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3237,7 +3237,7 @@
       "page": 73,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3246,7 +3246,7 @@
       "page": 73,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3255,7 +3255,7 @@
       "page": 73,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3264,7 +3264,7 @@
       "page": 73,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3273,7 +3273,7 @@
       "page": 73,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3282,7 +3282,7 @@
       "page": 73,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3291,7 +3291,7 @@
       "page": 73,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3300,7 +3300,7 @@
       "page": 74,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3309,7 +3309,7 @@
       "page": 74,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3318,7 +3318,7 @@
       "page": 74,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3327,7 +3327,7 @@
       "page": 74,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3336,7 +3336,7 @@
       "page": 74,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3345,7 +3345,7 @@
       "page": 74,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3363,7 +3363,7 @@
       "page": 75,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3372,7 +3372,7 @@
       "page": 75,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3381,7 +3381,7 @@
       "page": 75,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3399,7 +3399,7 @@
       "page": 76,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3408,7 +3408,7 @@
       "page": 76,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -3417,7 +3417,7 @@
       "page": 76,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3426,7 +3426,7 @@
       "page": 76,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3435,7 +3435,7 @@
       "page": 76,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3444,7 +3444,7 @@
       "page": 76,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3453,7 +3453,7 @@
       "page": 77,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3462,7 +3462,7 @@
       "page": 77,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3471,7 +3471,7 @@
       "page": 77,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3480,7 +3480,7 @@
       "page": 77,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3489,7 +3489,7 @@
       "page": 77,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3498,7 +3498,7 @@
       "page": 78,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3507,7 +3507,7 @@
       "page": 78,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3516,7 +3516,7 @@
       "page": 78,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3525,7 +3525,7 @@
       "page": 78,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3534,7 +3534,7 @@
       "page": 78,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3543,7 +3543,7 @@
       "page": 78,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3552,7 +3552,7 @@
       "page": 78,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3561,7 +3561,7 @@
       "page": 79,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3570,7 +3570,7 @@
       "page": 79,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3579,7 +3579,7 @@
       "page": 79,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3588,7 +3588,7 @@
       "page": 80,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3597,7 +3597,7 @@
       "page": 80,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3606,7 +3606,7 @@
       "page": 80,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3615,7 +3615,7 @@
       "page": 80,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -3624,7 +3624,7 @@
       "page": 81,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -3633,7 +3633,7 @@
       "page": 81,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3642,7 +3642,7 @@
       "page": 81,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3651,7 +3651,7 @@
       "page": 82,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3669,7 +3669,7 @@
       "page": 82,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3678,7 +3678,7 @@
       "page": 82,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3687,7 +3687,7 @@
       "page": 82,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3723,7 +3723,7 @@
       "page": 84,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -3741,7 +3741,7 @@
       "page": 84,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3750,7 +3750,7 @@
       "page": 84,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3759,7 +3759,7 @@
       "page": 85,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3777,7 +3777,7 @@
       "page": 85,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3786,7 +3786,7 @@
       "page": 86,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3795,7 +3795,7 @@
       "page": 86,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -3804,7 +3804,7 @@
       "page": 86,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3813,7 +3813,7 @@
       "page": 87,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3822,7 +3822,7 @@
       "page": 87,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3831,7 +3831,7 @@
       "page": 87,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -3840,7 +3840,7 @@
       "page": 88,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3849,7 +3849,7 @@
       "page": 88,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3858,7 +3858,7 @@
       "page": 88,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3867,7 +3867,7 @@
       "page": 89,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -3876,7 +3876,7 @@
       "page": 89,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3885,7 +3885,7 @@
       "page": 89,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3894,7 +3894,7 @@
       "page": 90,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3903,7 +3903,7 @@
       "page": 90,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3921,7 +3921,7 @@
       "page": 90,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3930,7 +3930,7 @@
       "page": 91,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3948,7 +3948,7 @@
       "page": 91,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3957,7 +3957,7 @@
       "page": 92,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 0.0,
+      "word_membership_fraction": 0,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -3975,7 +3975,7 @@
       "page": 92,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -3984,7 +3984,7 @@
       "page": 93,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -3993,7 +3993,7 @@
       "page": 93,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4002,7 +4002,7 @@
       "page": 93,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4011,7 +4011,7 @@
       "page": 94,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -4020,7 +4020,7 @@
       "page": 94,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4029,7 +4029,7 @@
       "page": 94,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4047,7 +4047,7 @@
       "page": 95,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4056,7 +4056,7 @@
       "page": 95,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4074,7 +4074,7 @@
       "page": 96,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4083,7 +4083,7 @@
       "page": 96,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4092,7 +4092,7 @@
       "page": 97,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4101,7 +4101,7 @@
       "page": 97,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4110,7 +4110,7 @@
       "page": 97,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4119,7 +4119,7 @@
       "page": 98,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4128,7 +4128,7 @@
       "page": 98,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4137,7 +4137,7 @@
       "page": 98,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4155,7 +4155,7 @@
       "page": 99,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4164,7 +4164,7 @@
       "page": 99,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4173,7 +4173,7 @@
       "page": 100,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4182,7 +4182,7 @@
       "page": 100,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4209,7 +4209,7 @@
       "page": 101,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4218,7 +4218,7 @@
       "page": 101,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4227,7 +4227,7 @@
       "page": 102,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4236,7 +4236,7 @@
       "page": 102,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4245,7 +4245,7 @@
       "page": 103,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4254,7 +4254,7 @@
       "page": 103,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4263,7 +4263,7 @@
       "page": 104,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4272,7 +4272,7 @@
       "page": 104,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4290,7 +4290,7 @@
       "page": 105,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4299,7 +4299,7 @@
       "page": 106,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4308,7 +4308,7 @@
       "page": 106,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4317,7 +4317,7 @@
       "page": 107,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4326,7 +4326,7 @@
       "page": 107,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4335,7 +4335,7 @@
       "page": 108,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4344,7 +4344,7 @@
       "page": 108,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -4353,7 +4353,7 @@
       "page": 109,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4371,7 +4371,7 @@
       "page": 110,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4380,7 +4380,7 @@
       "page": 110,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4389,7 +4389,7 @@
       "page": 111,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4398,7 +4398,7 @@
       "page": 111,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4407,7 +4407,7 @@
       "page": 112,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4416,7 +4416,7 @@
       "page": 112,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4425,7 +4425,7 @@
       "page": 113,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -4434,7 +4434,7 @@
       "page": 113,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4443,7 +4443,7 @@
       "page": 114,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4452,7 +4452,7 @@
       "page": 114,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4461,7 +4461,7 @@
       "page": 115,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4470,7 +4470,7 @@
       "page": 115,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4479,7 +4479,7 @@
       "page": 116,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4488,7 +4488,7 @@
       "page": 116,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4506,7 +4506,7 @@
       "page": 117,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4515,7 +4515,7 @@
       "page": 118,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4533,7 +4533,7 @@
       "page": 119,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4542,7 +4542,7 @@
       "page": 119,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4560,7 +4560,7 @@
       "page": 120,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4569,7 +4569,7 @@
       "page": 121,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4587,7 +4587,7 @@
       "page": 122,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": false,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": true,
       "is_historical_print_checked": false
     },
@@ -4596,7 +4596,7 @@
       "page": 122,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4605,7 +4605,7 @@
       "page": 123,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4614,7 +4614,7 @@
       "page": 123,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4632,7 +4632,7 @@
       "page": 124,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4641,7 +4641,7 @@
       "page": 125,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4650,7 +4650,7 @@
       "page": 125,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4668,7 +4668,7 @@
       "page": 126,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4677,7 +4677,7 @@
       "page": 127,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4686,7 +4686,7 @@
       "page": 127,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4695,7 +4695,7 @@
       "page": 128,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4704,7 +4704,7 @@
       "page": 128,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4713,7 +4713,7 @@
       "page": 129,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4722,7 +4722,7 @@
       "page": 129,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4731,7 +4731,7 @@
       "page": 130,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4740,7 +4740,7 @@
       "page": 130,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4749,7 +4749,7 @@
       "page": 131,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4758,7 +4758,7 @@
       "page": 131,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4767,7 +4767,7 @@
       "page": 132,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4776,7 +4776,7 @@
       "page": 132,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4785,7 +4785,7 @@
       "page": 133,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4794,7 +4794,7 @@
       "page": 133,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4803,7 +4803,7 @@
       "page": 134,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4821,7 +4821,7 @@
       "page": 135,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4830,7 +4830,7 @@
       "page": 135,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4839,7 +4839,7 @@
       "page": 136,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4848,7 +4848,7 @@
       "page": 136,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4857,7 +4857,7 @@
       "page": 137,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4866,7 +4866,7 @@
       "page": 137,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4893,7 +4893,7 @@
       "page": 139,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4902,7 +4902,7 @@
       "page": 139,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4911,7 +4911,7 @@
       "page": 140,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4920,7 +4920,7 @@
       "page": 140,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4929,7 +4929,7 @@
       "page": 141,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4938,7 +4938,7 @@
       "page": 141,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4947,7 +4947,7 @@
       "page": 142,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4956,7 +4956,7 @@
       "page": 142,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4965,7 +4965,7 @@
       "page": 143,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4974,7 +4974,7 @@
       "page": 143,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4983,7 +4983,7 @@
       "page": 144,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -4992,7 +4992,7 @@
       "page": 144,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -5001,7 +5001,7 @@
       "page": 144,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -5010,7 +5010,7 @@
       "page": 145,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -5019,7 +5019,7 @@
       "page": 145,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -5028,7 +5028,7 @@
       "page": 145,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     },
@@ -5037,74 +5037,41 @@
       "page": 145,
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "exact_normalized_digital_match": true,
-      "word_membership_fraction": 1.0,
+      "word_membership_fraction": 1,
       "requires_manual_review": false,
       "is_historical_print_checked": false
     }
   ],
-  "page_level_warning_queue": [
-    {
-      "page": 21,
-      "kind": "possible-editorial-note-mixed-in-digital-transcription"
-    },
-    {
-      "page": 23,
-      "kind": "possible-editorial-note-mixed-in-digital-transcription"
-    },
-    {
-      "page": 26,
-      "kind": "possible-editorial-note-mixed-in-digital-transcription"
-    },
-    {
-      "page": 29,
-      "kind": "possible-editorial-note-mixed-in-digital-transcription"
-    },
-    {
-      "page": 47,
-      "kind": "possible-editorial-note-mixed-in-digital-transcription"
-    },
-    {
-      "page": 48,
-      "kind": "possible-editorial-note-mixed-in-digital-transcription"
-    },
-    {
-      "page": 67,
-      "kind": "possible-editorial-note-mixed-in-digital-transcription"
-    },
-    {
-      "page": 83,
-      "kind": "possible-editorial-note-mixed-in-digital-transcription"
-    },
-    {
-      "page": 87,
-      "kind": "possible-editorial-note-mixed-in-digital-transcription"
-    },
-    {
-      "page": 112,
-      "kind": "possible-editorial-note-mixed-in-digital-transcription"
-    },
-    {
-      "page": 115,
-      "kind": "possible-editorial-note-mixed-in-digital-transcription"
-    },
-    {
-      "page": 118,
-      "kind": "possible-editorial-note-mixed-in-digital-transcription"
-    },
-    {
-      "page": 128,
-      "kind": "possible-editorial-note-mixed-in-digital-transcription"
-    },
-    {
-      "page": 130,
-      "kind": "possible-editorial-note-mixed-in-digital-transcription"
-    },
-    {
-      "page": 136,
-      "kind": "possible-editorial-note-mixed-in-digital-transcription"
-    }
-  ],
+  "page_level_warning_queue": [],
   "source_collation_grade": "modern digital source extraction and quantitative comparison, NOT a full line-by-line historic-print collation",
   "independent_manuscript_variants_verified": 0,
-  "full_print_pages_independently_line_collated": 0
+  "full_print_pages_independently_line_collated": 0,
+  "editorial_footer_reconciliation": {
+    "schema": "farghani-reviewed-trailing-modern-note-separation-v1",
+    "date": "2026-11-12",
+    "targetedPages": 15,
+    "editorNotePagesCorrected": [
+      21,
+      23,
+      29,
+      47,
+      48,
+      67,
+      83,
+      87,
+      112,
+      115,
+      118,
+      128,
+      130,
+      136
+    ],
+    "falsePositiveVerseNumberPages": [
+      26
+    ],
+    "originalDigitalRawUnchanged": true,
+    "noteTextPreservedInEditorialApparatus": true,
+    "basis": "Digitized witness and manually judged note-start patterns; online source pages 21, 23 and 29 additionally checked directly; NOT independent print-page collation",
+    "limits": "Clearing these 15 flags does not certify every word of the 128-page Arabic edition or resolve future source changes"
+  }
 }
