@@ -8,6 +8,8 @@ The historical H numbered first-pass *translation* is unchanged at **1,090 recor
 
 Authorial voices: Taftāzānī original `T`; main al-Yazdī commentary `Y`; mixed-author later glosses `H`; later editorial references. Neither a later print nor a modern paraphrase is an independent authorial manuscript.
 
+**Source-continuity clarification:** The four historical source tables (Q258, Q294, Q300 and Q309) remain separate from the unmodified Stage114 first-pass English corpus. Locating tables is not the same as fully translating or verifying their cells.
+
 ## Stage118 actually completed
 
 1. **All 105 Q294 comparison cells independently indexed as historical original-image positions** and given *provisional visual family labels*: 61 inclusion, 33 overlap, 11 disjointness. Source code `فم/حم` directions and `ط/ف` restrictions remain **unverified for every inclusion-family cell**. [Machine-readable 105-cell register](STAGE118_Q294_105_SOURCE_SYMBOL_FAMILIES.json) · [Source-graded interactive matrix](STAGE118_SOURCE_CELL_READER.html).
