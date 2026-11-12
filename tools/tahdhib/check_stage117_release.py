@@ -24,7 +24,7 @@ assert not (P/"source-table-excerpts/excerpts").exists()
 memo=rd("STAGE117_Q309_FIVE_MORE_EXAMPLES.md").decode()
 assert memo.count("| Connected ")==4
 assert memo.count("| Disjunctive ")==1
-assert "Connected 8/9" in memo and "Disjunctive 6/6" in memo
+assert "Connected 8/9" in memo and "Disjunctive 2/6" in memo and "6/6 — D / D" in memo
 assert "STAGE117_Q309_FIVE_MORE_EXAMPLES.md" in rd("HANDOFF_LATEST.md").decode()
 for item in j["appendices"]:
    b=Path(item["file"]).read_bytes()
