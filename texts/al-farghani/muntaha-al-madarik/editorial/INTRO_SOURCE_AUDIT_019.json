@@ -3,9 +3,9 @@
   "date_utc": "2026-11-12T14:49:00+03:00",
   "arabic_digital_page_count": 128,
   "english_working_page_count": 128,
-  "arabic_digitized_word_total": 38645,
+  "arabic_digitized_word_total": 38516,
   "english_working_word_total": 56942,
-  "pages_with_explicit_editorial_notes": 38,
+  "pages_with_explicit_editorial_notes": 39,
   "pages_with_possible_unseparated_notes": 0,
   "selected_critical_records": 559,
   "exact_normalized_source_excerpt_matches": 510,
@@ -5049,10 +5049,12 @@
   "editorial_footer_reconciliation": {
     "schema": "farghani-reviewed-trailing-modern-note-separation-v1",
     "date": "2026-11-12",
-    "targetedPages": 15,
+    "targetedPages": 17,
     "editorNotePagesCorrected": [
+      20,
       21,
       23,
+      25,
       29,
       47,
       48,
@@ -5071,7 +5073,7 @@
     ],
     "originalDigitalRawUnchanged": true,
     "noteTextPreservedInEditorialApparatus": true,
-    "basis": "Digitized witness and manually judged note-start patterns; online source pages 21, 23 and 29 additionally checked directly; NOT independent print-page collation",
-    "limits": "Clearing these 15 flags does not certify every word of the 128-page Arabic edition or resolve future source changes"
+    "basis": "16 digital editorial footer-note boundaries manually reviewed by wording and source structure; p26 excluded as Quranic verse number; online p21, p23 and p29 text structure additionally verified by source website. Not independent printed-leaf or manuscript collation",
+    "limits": "Revised 17 audited loci: 16 footer-note separations and one false-positive verse marker. A zero residual pattern count is not a certification of the entire Arabic copy-text."
   }
 }
