@@ -188,8 +188,17 @@ async function run(browserType){
         assert.ok(content.length>700,'new Book II unit unexpectedly short: '+id);
         assert.ok(await passage.locator('[lang="ar"]').count()>0,'new Book II Arabic missing: '+id);
       }
-      assert.match(await page.locator('#passage-M-K-08').textContent(),/conjectur|not logically consistent/i);
-      assert.match(await page.locator('#passage-M-K-14').textContent(),/normalized explanatory transcription/i);
+      // Modern conjecture and transcription caveats must be preserved,
+      // but only under Tools → Editorial apparatus, not inside the author's body.
+      assert.doesNotMatch(await page.locator('#passage-M-K-08').textContent(),/not logically consistent/i);
+      await page.locator('#study-menu-open').click();
+      await page.locator('#study-menu').getByRole('button',{name:'Editorial notes · apparatus'}).click();
+      await page.locator('#study-editorial-scope').selectOption('book');
+      await page.locator('#study-editorial-search').fill('conjectur');
+      assert.match(await page.locator('#study-editorial-list').textContent(),/conjectur|not logically consistent/i);
+      await page.locator('#study-editorial-search').fill('normalized explanatory transcription');
+      assert.match(await page.locator('#study-editorial-list').textContent(),/normalized explanatory transcription/i);
+      await page.locator('#study-editorial .dialog-heading button').click();
     });
     await check(browserType.name()+' Muẓaffar added Book I original sequence',async()=>{
       await page.locator('[data-part-jump="passage-M-P-01"]').click();
@@ -234,7 +243,13 @@ async function run(browserType){
       assert.match(await intellect.textContent(),/“intellect” \(al-ʿaql\)/);
       const position=page.locator('#passage-N-VI-19');
       assert.match(await position.textContent(),/imaginal form abstracted from quantity/i);
-      assert.match(await position.textContent(),/divested of quantity/i,'The interpretive note must disclose the superseded stronger gloss.');
+      assert.doesNotMatch(await position.textContent(),/divested of quantity/i,'Editorial gloss must not intrude in the primary text.');
+       await page.locator('#study-menu-open').click();
+       await page.locator('#study-menu').getByRole('button',{name:'Editorial notes · apparatus'}).click();
+       await page.locator('#study-editorial-scope').selectOption('book');
+       await page.locator('#study-editorial-search').fill('divested of quantity');
+       assert.match(await page.locator('#study-editorial-list').textContent(),/divested of quantity/i,'The critical gloss must remain available in the separate apparatus.');
+       await page.locator('#study-editorial .dialog-heading button').click();
       const agent=page.locator('#passage-N-VIII-10');
       const rendered=await agent.locator('.arabic-panel .text-body').textContent();
       assert.ok(rendered.includes('المشهور'),'Missing corrected Arabic');

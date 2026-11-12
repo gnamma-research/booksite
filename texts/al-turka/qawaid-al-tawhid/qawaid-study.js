@@ -142,6 +142,7 @@ function openPanel(panel,param){
   groupButton('Subject index','subjects','index','Grouped themes and source locations'),
   groupButton('Primary sources','references','sources','Qurʾān, quoted philosophical works and cross-references'),
   groupButton('PDF editions','pdf','pdf','Reading, Study and Reference'),
+   groupButton('Editorial & textual notes','apparatus-notes','sources','Source variants and editorial notes, outside the reading text'),
   groupButton('My notes','notes','note','Private annotations'),
   groupButton('Bookmarks','bookmarks','bookmark','Saved passages'),
   groupButton('Appearance','appearance','appearance','Themes and type sizes'),
@@ -164,8 +165,20 @@ function openPanel(panel,param){
  }
  if(panel==='search'){return show('Search', '<input class="gn-study-search" id="gn-source-query" placeholder="Find a term, title or source…" type="search"><div id="gn-search-results"></div>')}
 }
+function editorialNotesPanel(){
+ const id=currentQT(),u=byId.get(id)||matn[0],related=sharh.filter(c=>c.matnId===u.id);
+ const renderNote=n=>'<li>'+esc(typeof n==='string'?n:[n.type,n.text,n.remark].filter(Boolean).join(' · '))+'</li>';
+ const all=[u,...related];
+ const rows=all.map(x=>{
+  const notes=[...(x.notes||[]),...(x.variants||[]).map(v=>[v.lemma,v.base,v.other,(v.alternatives||[]).join(' / '),v.remark].filter(Boolean).join(' · '))].filter(Boolean);
+  if(!notes.length)return '';
+  return '<section class="gn-editorial-unit"><h3>'+esc(x.id)+' · '+esc(x.section||x.title||'Source readings')+'</h3><ul>'+notes.map(renderNote).join('')+'</ul></section>';
+ }).filter(Boolean);
+ show('Editorial & textual notes','<p class="gn-help">Modern translation decisions, source notes and variant reports are consulted here, outside the authorial matn and commentary. The authorial introduction and the original commentary remain in the reading text.</p><p class="gn-help">Current passage: '+esc(u.id)+' · '+esc(u.title)+'</p>'+(rows.join('')||'<p>No notes recorded for this passage.</p>')+'<p class="gn-help"><a href="editorial/EDITORIAL_STATUS.md" target="_blank" rel="noopener noreferrer">Editorial status and source audit</a></p>');
+}
+
 function apparatusMenu(){
- const options=[['off','Off','Hide study links, notes and reference markers'],['minimal','Compact','Show linked terms and quotations, hide longer notes'],['full','Expanded','Allow all source and explanation notes']];
+ const options=[['off','Off','Hide study links, notes and reference markers'],['minimal','Compact','Show linked terms and quotations, hide longer notes'],['full','Expanded','Show expanded study links; textual notes remain in their separate panel']];
  return '<fieldset class="gn-apparatus-options"><legend>Apparatus</legend>'+options.map(([id,label,desc])=>'<label class="gn-setting-option"><input type="radio" name="gn-apparatus" value="'+id+'" '+(apparatus===id?'checked':'')+'><span><b>'+label+'</b><small>'+desc+'</small></span></label>').join('')+'</fieldset>';
 }
 function setApparatus(val){apparatus=val;document.body.dataset.apparatus=val;localStoragePut('gnamma:qawaid:apparatus-v1',val);window.GnammaQawaidReader?.setEditorialNotes?.(val==='full');

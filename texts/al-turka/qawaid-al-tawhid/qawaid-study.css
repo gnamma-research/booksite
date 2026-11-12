@@ -64,3 +64,9 @@ body[data-focus="2"] .gn-dock-personal{display:flex}
 .gn-source-inline:hover,.gn-source-inline:focus-visible{background:var(--accent-soft);outline-offset:2px}
 body[data-apparatus="off"] .gn-source-inline{border:0!important;background:transparent!important;color:inherit!important;text-decoration:none!important}
 @media print{.gn-source-inline{border:0!important;color:inherit!important}}
+
+/* All editorial/source notes are kept out of the primary reader.
+   They are available via Reading desk > Editorial & textual notes. */
+#reading .source-notes{display:none!important}
+.gn-editorial-unit{padding:8px 0 14px;border-bottom:1px solid var(--line,#ccc)}
+.gn-editorial-unit ul{padding-inline-start:1.5em;overflow-wrap:anywhere;line-height:1.7}

@@ -66,7 +66,7 @@
     theme: ['system', 'dark', 'light'].includes(p.theme) ? p.theme : 'system',
     vowels: p.vowels !== false,
     palette: ['plaster','cordoba','nasrid','zellij','landscape','open-landscape'].includes(p.palette) ? p.palette : 'plaster',
-    headings: ['both','original','editorial'].includes(p.headings) ? p.headings : 'both',
+    headings: ['both','original','editorial'].includes(p.headings) ? p.headings : 'original',
     pageStyle: ['quiet','book','structured'].includes(p.pageStyle) ? p.pageStyle : 'quiet',
     arabicFont: ['amiri','scheherazade','naskh'].includes(p.arabicFont) ? p.arabicFont : 'amiri',
     englishFont: ['original','source-sans','lexend'].includes(p.englishFont) ? p.englishFont : 'original'
@@ -235,7 +235,8 @@
   }
   function matchingUnits() {
     const terms = normalise(state.query).trim().split(/\s+/).filter(Boolean);
-    return state.units.filter(unit => (!state.savedOnly || state.bookmarks.has(unit.id)) && terms.every(term => unit.searchText.includes(term)));
+    // A status-labelled editorial guide is preserved in the edition archive, not interpolated into the author's book.
+    return state.units.filter(unit => !isGuide(unit) && (!state.savedOnly || state.bookmarks.has(unit.id)) && terms.every(term => unit.searchText.includes(term)));
   }
   function currentGroups(units) { const ids = new Set(units.map(unit => unit.group.key)); return state.groups.filter(group => ids.has(group.key)); }
   function stageTitle(id) {
@@ -326,19 +327,18 @@
     const permalink = make('a'); permalink.href = '#' + unit.domId; permalink.setAttribute('aria-label', 'Link to this passage'); permalink.title = 'Link to this passage'; permalink.append(icon('link')); permalink.addEventListener('click', event => { event.preventDefault(); navigate({ group: unit.group, unit }, true); });
     controls.append(bookmark, personal, permalink); top.append(controls); article.append(top);
 
+    // The primary reader displays only demonstrably authorial notes.
+    // Editorial, translator, lecture, source and critical notes remain in
+    // the separate Editorial apparatus dialog (and scholarly editions).
     const entries = [];
     for (const raw of unit.notes) {
       const n = typeof raw === 'string' ? { text: raw } : raw;
       if (!n || !text(n.text).trim()) continue;
-      const t = text(n.type).toLowerCase(), v = text(n.text);
-      if (/lecture note · source|source note|editorial guide|translation status|source locator|coverage|to be translated/.test(t)) continue;
-      if (/^Lecture-note locator:|Source locator supplied;|translation not yet available|full translation remains/i.test(v)) continue;
-      entries.push({ text:v, arabic:text(n.arabic), type:text(n.type), anchor:n.anchor, url:n.url || '' });
-    }
-    if (unit.source && typeof unit.source === 'object') {
-      const source = unit.source;
-      const label = [text(source.edition || 'Arabic source'), source.page != null && source.page !== '' ? 'p. ' + text(source.page) : ''].filter(Boolean).join(' · ');
-      if (label || source.url) entries.push({text:label || 'Arabic source',url:source.url || ''});
+      const type = text(n.type);
+      if (!n.arabic && !/^Authorial (?:footnote|note)(?:\b|\s|[—–-])/i.test(type)) continue;
+      // A paraphrase attributed to the author is not automatically authorial wording.
+      if (/paraphrase|editorial|status|source-critical/i.test(type)) continue;
+      entries.push({text:text(n.text), arabic:text(n.arabic), type, anchor:n.anchor, url:n.url || ''});
     }
 
     const columns = make('div', 'parallel-text');

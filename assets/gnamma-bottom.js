@@ -26,13 +26,15 @@ texts:[
  {name:"Muntahā al-madārik · Farghānī",href:"texts/al-farghani/muntaha-al-madarik/"},
  {name:"Mashraʿ al-khuṣūṣ · al-Mahāʾimī",href:"texts/al-mahaimi/mashra-al-khusus/"}
  ]},
- {heading:"Logic and Wisdom",items:[
- {name:"al-Manṭiq · Bidāyat al-Ḥikma · Nihāyat al-Ḥikma",href:"texts/al-tabatabai/"},
- {name:"I. al-Manṭiq · al-Muẓaffar",href:"texts/al-tabatabai/muzaffar-al-mantiq/"},
- {name:"II. Bidāyat al-Ḥikma · al-Ṭabāṭabāʾī",href:"texts/al-tabatabai/bidayat-al-hikma/"},
- {name:"III. Nihāyat al-Ḥikma · al-Ṭabāṭabāʾī",href:"texts/al-tabatabai/nihayat-al-hikma/"}
+ {heading:"Falsafa · Philosophy",items:[
+ {name:"Bidāyat al-Ḥikma · al-Ṭabāṭabāʾī",href:"texts/al-tabatabai/bidayat-al-hikma/"},
+ {name:"Nihāyat al-Ḥikma · al-Ṭabāṭabāʾī",href:"texts/al-tabatabai/nihayat-al-hikma/"},
+ {name:"Comparative reading room · Philosophy and logic",href:"texts/al-tabatabai/"}
  ]},
- {heading:"Logic",items:[{name:"Tahdhīb al-Manṭiq",href:"texts/al-taftazani/tahdhib-al-mantiq/edition/"}]},
+ {heading:"Manṭiq · Logic",items:[
+ {name:"al-Manṭiq · al-Muẓaffar",href:"texts/al-tabatabai/muzaffar-al-mantiq/"},
+ {name:"Tahdhīb al-Manṭiq",href:"texts/al-taftazani/tahdhib-al-mantiq/edition/"}
+ ]},
  {heading:"Kalām",items:[{name:"Sharḥ al-Mawāqif",href:"texts/al-jurjani/sharh-al-mawaqif/"},{name:"Tahdhīb al-Kalām",href:"texts/al-taftazani/tahdhib-al-kalam/edition/"},{name:"Taqrīb al-Marām · Commentary",href:"texts/al-sanandaji/taqrib-al-maram/"}]}
 ],
 essays:[{items:[
