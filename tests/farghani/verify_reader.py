@@ -9,6 +9,7 @@ from pathlib import Path
 from urllib.parse import urlsplit, unquote
 import json
 import re
+from html import unescape
 import sys
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -17,7 +18,7 @@ FILES = [
     "continuous-translation.html", "critical-introduction.html",
     "full-reader.css", "full-reader.js",
     "critical-edition.html", "critical-reader.js",
-    "reader.css", "reader.js", "index.html", "extracts.html",
+    "reader.css", "reader.js", "index.html", "extracts.html", "parallel-introduction.html",
     "handoffs.html", "data/units.js",
 ]
 VOID = {"area","base","br","col","embed","hr","img","input","link","meta","param","source","track","wbr"}
@@ -92,6 +93,42 @@ essay,_=htmls.get("critical-introduction.html",("",None))
 if essay:
     check("has not been fully transcribed or translated" not in essay,
           "Stale incomplete-translation statement still appears in editorial study")
+
+# Reviewed digital footnote boundaries are not authorial Arabic.
+arabic_source = json.loads((BOOK/"data/intro-arabic-b2007-digital.json").read_text(encoding="utf-8"))
+arabic_pages = arabic_source.get("pages", [])
+check(len(arabic_pages)==128, "Arabic digital source lost printed page coverage")
+reviewed = [20,21,23,25,29,47,48,67,83,87,112,115,118,128,130,136]
+assert_page = {p["page"]:p for p in arabic_pages}
+parallel, _ = htmls.get("parallel-introduction.html", ("",None))
+for n in reviewed:
+    p=assert_page[n]
+    check(p.get("editorial_split_method")=="reviewed-digital-footer-note-separation",
+          f"p{n}: modern editorial footer not classified")
+    check(p["raw_ar"]==p["reading_ar"]+" "+p["editorial_notes"],
+          f"p{n}: source text not reversibly preserved")
+    check(not p.get("possible_unseparated_note", True), f"p{n}: stale unseparated note warning")
+    match=re.search(rf'<section id="p{n}" class="pr-page"[\s\S]*?<div class="pr-ar" lang="ar" dir="rtl"><p>([\s\S]*?)</p></div>', parallel)
+    check(bool(match) and unescape(match.group(1))==p["reading_ar"],f"p{n}: bilingual reading is not the purified Arabic")
+    section=re.search(rf'<section id="p{n}" class="pr-page"([\s\S]*?)</section>',parallel)
+    check(bool(section) and "pr-editorial-notes" in section.group(1) and
+          unescape(p["editorial_notes"])[:25] in unescape(section.group(1)),
+          f"p{n}: source note lost from separate apparatus")
+p26=assert_page[26]
+check(p26["reading_ar"]==p26["raw_ar"] and not p26["editorial_notes"] and
+      p26["footnote_review"]["status"]=="false-positive-verse-number",
+      "p26 Quranic verse number was inappropriately moved to editorial apparatus")
+check(not re.search(r"\(\s*1\s*\)\s*(?:رواه مسلم|أورده الحكيم|هذا الأثر لم أجده|أورده المناوي|عزاه السيوطي|كذا بالأصل|فذلك حسابه)",
+                    " ".join(p["reading_ar"] for p in arabic_pages)),
+      "Arabic reading still contains bibliographic text that belongs to editor footnotes")
+source_audit=json.loads((BOOK/"editorial/INTRO_SOURCE_AUDIT_019.json").read_text(encoding="utf-8"))
+check(source_audit["pages_with_possible_unseparated_notes"]==0,
+      "Old flagged digital source notes remain without adjudication")
+check(set(source_audit["editorial_footer_reconciliation"]["editorNotePagesCorrected"])==set(reviewed),
+      "Editorial reconciliation register differs from the reviewed page set")
+check(source_audit["pages_with_explicit_editorial_notes"]==sum(bool(p["editorial_notes"]) for p in arabic_pages),
+      "Reported modern-note count differs from the source")
+
 main,v=htmls.get("continuous-translation.html",("",None))
 pages=re.findall(r'<section class="b2007-page"[^>]+id="b2007-p(\d+)"',main)
 check([int(p) for p in pages]==list(range(18,146)),"Full English page headings are missing, reordered or duplicated")
