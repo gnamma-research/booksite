@@ -23,7 +23,7 @@ const state={...saved,index:Math.round(clamp(saved.index,0,units.length-1,0)),la
  ar:saved.ar!==false,en:saved.en!==false,focus:[0,1,2,3].includes(saved.focus)?saved.focus:0,
  theme:['parchment','horizon','night'].includes(saved.theme)?saved.theme:'parchment',
  font:clamp(saved.font,.82,1.45,1),leading:clamp(saved.leading,1.55,2.15,1.8),width:clamp(saved.width,560,1300,960),
- notes:saved.notes===true,landscape:saved.landscape===true,bookmarks:Array.isArray(saved.bookmarks)?saved.bookmarks:[],
+ notes:saved.notes===true,landscape:saved.landscape===true,headings:['guide','source'].includes(saved.headings)?saved.headings:'guide',bookmarks:Array.isArray(saved.bookmarks)?saved.bookmarks:[],
  personal:saved.personal&&typeof saved.personal==='object'&&!Array.isArray(saved.personal)?saved.personal:{},
  folded:Array.isArray(saved.folded)?saved.folded.filter(id=>seen.has(id)):[]};
 if(!state.ar&&!state.en)state.en=true;
@@ -37,7 +37,7 @@ function locationFromHash(){let id;try{id=decodeURIComponent(location.hash.slice
 const initial=locationFromHash();if(initial){state.index=initial.index;if(initial.comment){state.layer=state.layer==='matn'?'paired':state.layer;state.folded=state.folded.filter(x=>x!==initial.id);}}
 function sync(){
  root.dataset.theme=state.theme;body.dataset.mode=state.layer;body.dataset.focus=String(state.focus);
- body.dataset.language=state.ar&&state.en?'both':state.ar?'ar':'en';body.dataset.showNotes=String(state.notes);body.dataset.background=state.landscape?'landscape':'native';
+ body.dataset.language=state.ar&&state.en?'both':state.ar?'ar':'en';body.dataset.showNotes=String(state.notes);body.dataset.background=state.landscape?'landscape':'native';body.dataset.headings=state.headings;
  root.style.setProperty('--scale',state.font);root.style.setProperty('--leading',state.leading);root.style.setProperty('--reading-width',state.width+'px');
  for(const b of document.querySelectorAll('[data-layer-switch]')){const on=isOn(b.dataset.layerSwitch);b.setAttribute('aria-checked',String(on));b.querySelector('.switch-word').textContent=on?'On':'Off';}
  for(const el of document.querySelectorAll('[data-text-layer]'))el.hidden=!isOn(el.dataset.textLayer);
@@ -66,7 +66,7 @@ function renderBridge(c){if(!c.precedingMatn)return '';const b=c.precedingMatn;
 function renderUnit(u,i){
  const related=byMatn.get(u.id)||[];
  return '<article class="reading-block layered-unit" id="'+esc(u.id)+'" data-unit-index="'+i+'">'+
- '<header class="unit-heading" data-position-anchor><div class="section-meta">'+esc(u.id)+' · <a href="'+safe(u.url)+'" target="_blank" rel="noopener noreferrer">A pp. '+esc(u.pages.join('–'))+'</a></div><h2>'+esc(u.title)+'</h2></header>'+
+ '<header class="unit-heading" data-position-anchor><div class="section-meta">'+esc(u.id)+' · <a href="'+safe(u.url)+'" target="_blank" rel="noopener noreferrer">A pp. '+esc(u.pages.join('–'))+'</a></div><h2 class="qaw-editorial-heading" title="Modern editorial guide title, not a recorded medieval heading">'+esc(u.title)+'</h2></header>'+
  '<section class="matn-layer" data-text-layer="matn"><div class="layer-author" data-position-anchor><b>Matn <span lang="ar">متن</span></b><span>Abū Ḥāmid Muḥammad Turka</span></div>'+pair(u.readingArabic||u.arabic,u.english)+sourceNotes([...(u.notes||[]),...(u.variants||[]).map(v=>v.lemma+' / '+v.other+': '+v.remark)],'Matn notes')+'</section>'+
  related.map(c=>renderBridge(c)+renderComment(c)).join('')+
  (!related.length?'<p data-text-layer="sharh" class="layer-note">The linked commentary did not load. <a href="commentary.html">Open the commentary reader</a>.</p>':'')+
@@ -141,6 +141,10 @@ window.GnammaQawaidReader=Object.freeze({
  setLeading(value){state.leading=clamp(value,1.55,2.15,state.leading);sync();persist();},
  setWidth(value){state.width=clamp(value,560,1300,state.width);sync();persist();},
  setEditorialNotes(visible){state.notes=Boolean(visible);sync();persist();},
+ setHeadingMode(value){if(!['guide','source'].includes(value))return;state.headings=value;sync();persist();},
+ headingMode(){return state.headings;},
+ setFocus(value){if(![0,1,2,3].includes(value))return;state.focus=value;go(state.index);},
+ focusMode(){return state.focus;},
  activePassage(){return units[state.index].id;},
  activeLayer(){return state.layer;}
 });
