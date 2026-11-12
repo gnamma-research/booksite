@@ -86,6 +86,8 @@ def fetch(page):
                 footnote_grade="heuristically-separated-modern-notes" if split is not None else "no-unambiguous-note-separator"
             main=raw[:split].strip() if split is not None else raw
             notes=raw[split:].strip() if split is not None else ""
+            if page in QURANIC_VERSE_ONLY and split is None:
+                footnote_grade="verified-quranic-verse-number-not-editorial-note"
             # Quranic verse number (7) on p26 is part of Farghānī's quotation.
             possible_notes=False if page in QURANIC_VERSE_ONLY or reviewed_lead else bool(re.search(r"\(\s*[1-9]\s*\)",main[-250:]))
             review=(dict(status="reviewed-digital-footer",boundary_lead=reviewed_lead,
