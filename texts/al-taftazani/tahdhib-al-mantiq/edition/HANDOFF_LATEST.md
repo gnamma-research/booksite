@@ -1,63 +1,41 @@
-# Tahdhīb Stage116 — complete source-photographic table-recovery handoff
+# Tahdhīb Stage117 — complete cumulative preservation and Q309 source translation handoff
 
-**12 November 2026. Working research edition.** Current source of truth: **unchanged Stage114 historical H corpus** (`hawashi-effective-stage114.json` + `batches/hawashi-all-sections-cumulative-stage114.md`) and the **Stage116 printed-photo apparatus** linked below. Distinguish authorial Taftāzānī `T`, principal Yazdī commentary `Y`, later mixed-author glosses `H` and modern editorial material. Never retranslate merely to recover a chat.
+**12 November 2026. Scope: five additional fully visible historical Q309 examples given working Arabic–English renderings.** This is an additive source-photographic working edition, not an authorial manuscript-certified translation.
 
-## Stage114 inheritance — no deletion or false progress
+## Canonical source and inherited work, byte-for-byte preserved
 
-- **14 historically local numbered H sections**, **1,090** numbered positions, terminal substantive locus `H-SCIENCES-086 / Q395`. Q396 is not an additional historical gloss; Q397–400 contain closing contents.
-- **1,029** first-pass English renderings; **four** prose-rendered entries without their source table's English; **57** modern editorial reference-only entries. No change to source-unit IDs, English fields, statuses, or their original digital source hashes in the canonical Stage114 master. Stage114 original archived in [HANDOFF_STAGE114.md](HANDOFF_STAGE114.md).
-- Earlier Y main principal commentary: 110 distinct printed source positions / 113 translated blocks. This stage does not expand Y or certify new Y manuscript readings.
-- H whole printed pages certified unabridged Arabic–English: **zero**. Newly certified independent Taftāzānī manuscript folio+line variants: **zero**. All-world necessity proof certificates for the separate 46 exceptional fourth-figure cases: **zero new**.
+T = Taftāzānī original logic; Y = principal al-Yazdī commentary; H = later mixed-author glosses; modern editorial quotations are separately labelled.
 
-## Stage115 preserved
+- **1,090 historically numbered H records, fourteen separate local numbering sequences**, final substantive historical H note **Sciences86/Q395**. No forward work after Q395. **1,029** first-pass historical English fields, **four** prose-rendered notes with incompletely translated original source tables, **57** modern reference-only quotations. All flags and historical IDs remain unchanged.
+- [Stage114 canonical full H corpus JSON](hawashi-effective-stage114.json), [Stage114 complete original Markdown](batches/hawashi-all-sections-cumulative-stage114.md), and [full Stage114 numbered-note reader](hawashi-numbered-notes.html) are unchanged. The [Stage116 complete cumulative scholarly source](batches/hawashi-all-sections-cumulative-stage116.md) remains unchanged and must be the **byte-preserved initial part** of the new [Stage117 cumulative source](batches/hawashi-all-sections-cumulative-stage117.md). Both must be available; do not regenerate from isolated excerpts.
+- Main al-Yazdī Y: prior 110 source positions / 113 translated blocks unchanged. No new H whole page or Y manuscript source certified; no independently witnessed authorial T manuscript variant newly certified.
+- Preserved handoffs [Stage114](HANDOFF_STAGE114.md), [Stage115](HANDOFF_STAGE115.md), [Stage116](HANDOFF_STAGE116.md). The comprehensive primary-source inventory is in the Stage116 archive and manifests.
 
-[Immutable previous Stage115 handoff](HANDOFF_STAGE115.md) and [Stage115 reconstructed modal table](Tahdhib_Stage115_Apparatus_Reader.html) remain accessible. Stage115 inferred 32 combinations from digital text. Stage116 supplied actual photographed page evidence; do not replace the original historical snapshot.
+## Stage116 original printed source recovery (unchanged)
 
-## Stage116 actual new scholarly results
+Source-photographed H-1405 and H-1433 printings at printed Q258, Q294, Q300, Q309, Q387: [full provenance register](source-table-excerpts/PRINT_IMAGE_MANIFEST_STAGE116.json) with original scan SHA256 and page offsets. There are **four existing printed tables**, 49 Q258 definitional verdict positions, 105 Q294 modal relation positions, 32 Q300 compound-modal statuses (**all 32 symbols source checked**; 7 R, 16 U, 9 X), and 15 Q309 conditional forms. Q387's suspected illustration was **not present** in either inspected source printing.
 
-Four photographic **historical table graphics** are recovered from **two printings** and cross-referenced to the digital notes:
+Historical modal **46 exceptional syllogistic mixtures** remain distinct from Q300's 32 compound proposition statuses. All 46 source-typed mood forms are classified; full historically warranted necessity semantics and 46 individual proof/countermodel certifications still **not complete**. Source-grade technical ledger: [Stage116 modal proof boundaries](STAGE116_MODAL_PROOF_OBLIGATIONS.md), earlier Stage97,100,101.
 
-| Printed table / note | Physical positions | Stage116 new assurance | Remains |
-|---|---:|---|---|
-| Q258 / H-DEFINITION-019 | 49 | Exact original drawn grid and seven headings now locatable | 49 individual verdict descriptions await full Arabic–English transcription |
-| Q294 / H-PROPOSITIONS-097 | 105 | All fifteen classes and the original triangular source graphic located | 105 directional relation symbols await individual collation |
-| Q300 / H-PROPOSITIONS-121 | 32 | **Every printed classification symbol checked**: R7/U16/X9, matches Stage115 model | Interpretive/historical proof remains separate |
-| Q309 / H-CONDITIONAL-040 | 15 | All nine connected, six disjunctive types; three printed "ذكر ما لا يخفى" intentional no-example cells identified | Two full Arabic worked examples have now been translated from both scans; **10** remain |
-| Q387 / H-SCIENCES-029 | — | Two photographed printed pages show no diagram despite `هكذا` | Mark as **false positive image-gap**, no invented figure |
+## Exact new Stage117 work
 
-**201** substantive graphic positions across four tables, **32** directly verified status codes and **15** structural conditional labels; this is **not** 201 translated English table cells. The 49 + 105 detailed judgements and 12 Arabic examples remain on the actual pending-work register. The four Stage114 “missing table” flags remain unchanged until the respective tables are wholly translated.
+[Five additional Q309 examples with Arabic and literal English](STAGE117_Q309_FIVE_MORE_EXAMPLES.md): connected 2/9 (C→D), 3/9 (C→K), 4/9 (K→C), 7/9 (K→D) and disjunctive 3/6 (C/D). Stage116 had two previous working example translations (connected 5/9 D→C and disjunctive 1/6 C/C). **Seven of twelve printed worked examples now have working Arabic–English readings; five remain.** The three printed instructions `ذكر ما لا يخفى` have no invented examples.
 
-### Original print archive identities (SHA256)
+Source order: connected `C/C,C/D,C/K,K/C,D/C,K/K,K/D,D/D`, disjunctive `C/C,C/D,C/K,K/K,D/K,D/D`. Do not revert to the Stage115 abstract list order.
 
-- `H-1405`, source <https://archive.org/download/lis_fa12/lis_fa1208.pdf>, original PDF SHA256 `696c7b2e2884414f34d90203326f7b07f72e207849080e5069aadd0f12bb5759`; zero-based PDF index = printed page **+1**.
-- `H-1433`, source <https://archive.org/download/lis_fa12/lis_fa1209.pdf>, original PDF SHA256 `c119de2073dee4610e99a35cd01bd075841cc0e4dfaef7a9473b950dd250c70d`; zero-based PDF index = printed page exactly.
+**Five explicitly still needing photo decoding/English:**
+1. connected row 8/9 = D→K;
+2. disjunctive 2/6 = C/K, 4/6 = K/K, 5/6 = D/K, and 6/6 = D/D.
 
-Both are modern source-print witnesses. They are **not independent medieval authorial manuscripts**. Source photo excerpts were bounded to four table areas and SHA256 recorded in [source-table-excerpts/PRINT_IMAGE_MANIFEST_STAGE116.json](source-table-excerpts/PRINT_IMAGE_MANIFEST_STAGE116.json); do not distribute the entire two modern editions by default.
+**Additionally** Q258's **49 individual** original Arabic definitional verdict texts and Q294's **105** directional symbol cells still require individual source-to-English collation. Their original print images **exist** in [Stage116 photo reader](STAGE116_PHOTOGRAPHIC_TABLE_READER.html); these are translation/collation gaps, not lost source pictures.
 
-## Documents, exact versions and how to recover them
+## Evidence status and publication
 
-- [Dedicated Stage116 photo table reader](STAGE116_PHOTOGRAPHIC_TABLE_READER.html), with the four real printed images and the Q300 32-cells.
-- [Detailed photographic source / attribution audit](STAGE116_PRINTED_TABLE_PHOTOGRAPHIC_AUDIT.md), citing both printings, exact Q pages and the true open gaps.
-- [Two original Q309 worked examples, fully Arabic–English read](STAGE116_Q309_TWO_EXAMPLES_PHOTO_TRANSLATED.md) — 2 of 12 explicit historical examples, with three additional printed source instructions.\n- [Five-locus Arabic-to-English micro-alignment](STAGE116_CLAUSE_ALIGNMENT.md); spot checks, **not** a full-unit certification.
-- [46-case modal proof-obligation audit](STAGE116_MODAL_PROOF_OBLIGATIONS.md); includes a rigorous necessary **temporal-to-modal bridge insufficiency lemma**, but **no claim** to new historical modal theorems.
-- [Stage116 machine-readable evidence/gap ledger](STAGE116_EVIDENCE_AND_GAP_LEDGER.json).
-- [Source image SHA/byte manifest](source-table-excerpts/PRINT_IMAGE_MANIFEST_STAGE116.json).
-- [Full cumulative Stage116 Markdown](batches/hawashi-all-sections-cumulative-stage116.md): inherited **entire** Stage114 working English numbered text plus Stage115 and Stage116 apparatus attached; no replacement of the baseline text.
-- [Canonical full H reader](hawashi-numbered-notes.html), [canonical Stage114 effective JSON](hawashi-effective-stage114.json), [prior Stage113 reader](hawashi-numbered-notes-stage113-archive.html). These are all preserved.
-- User recovery ZIP: `Tahdhib_Stage116_Cumulative_Recovery.zip` contains **unchanged full Stage115 recovery ZIP** nested, bounded source images, Stage116 machine-readable audit, Stage116 reader, cumulative Markdown and SHA256 manifest. This ZIP is provided as a download in the conversation; it is **not** automatically published as a GitHub artifact.
+- Stage117 adds **five working** text-and-English transcriptions with transparent source-print links; it does not promote the four original missing-table statuses of the Stage114 database because no entire affected table was unabridged translated.
+- Previous Stage116's full Markdown, 1,090-note master and source photographs must keep identical byte hashes. Cumulative [Stage117 integrity manifest](STAGE117_CUMULATIVE_FILE_INTEGRITY.json) records previous prefix SHA, appended source SHA, whole output bytes and SHA.
+- [Full Stage117 corpus + apparatus](batches/hawashi-all-sections-cumulative-stage117.md) is generated from Stage116 full text with the five-example supplement appended, without rewriting or removing any earlier material.
+- Source-critical proof status remains zero newly independently certified T/Y manuscript loci and **zero** full 46-case necessity-strength independent proofs. Every selected source reading must be distinguished from an entire certified H note.
 
-## Final publication and certification
+## Restart prompt
 
-New source-photo audit is separately linked by the original reader, not injected into continuous reading mode. This handoff does **not** certify a complete Arabic critical H edition; digital Arabic text/full page evidence remains mostly absent for H, and Stage116's four source-photo page exposures only establish the table image at that exact locus.
-
-Current source branch `research/tahdhib-stage116-print-source-20261112`; final PR/merge and Pages status must be checked independently, never inferred from this text. Stages 97–101 modal proof dossier remains source of truth for the 46 distinct fourth-figure mixed moods.
-
-## Unambiguous next point for another chat
-
-1. Finish verbatim **49 Q258** original table cells, **105 Q294** shorthand cells (with direction), and **10 remaining Q309** example sentences, comparing both printed impressions and attaching English **without overwriting** Stage114.
-2. Run systematic full Arabic–English clause alignment over H and Y, recording *unit and original-page* hashes, attribution and textual differences; source excerpts do not certify whole pages.
-3. Independently collate genuine Taftāzānī manuscripts for original T, and the principal Y source as its own workstream.
-4. Resolve **all forty-six** exceptional syllogistic mixes with actual historically warranted modal semantics or explicit satisfying countermodels; keep Stage100 four mood VIII model-vacuities and Stage101 arbitrary-domain temporal proofs distinct.
-5. Verify site deployment and cumulative downloadable package reproducibility after any merge. Restart **at Q258 cell1** and not H Concepts36 or after Q395.
-
-**No future work is represented as complete here.**
+Continue from Stage117 full cumulative file and source SHA manifest; DO NOT restart an older first-pass translation from Concepts36 or Q395. Complete five outstanding Q309 examples, then the 49 Q258 verdicts and 105 Q294 directional relations, checking the original 1405 and 1433 print scans; conduct clause-by-clause Arabic alignment for H and Y separately; afterwards pursue the historically scoped necessity semantics and proofs of 46 fourth-figure mixed moods and genuine manuscript collation. No proposed or future work is represented as finished.
