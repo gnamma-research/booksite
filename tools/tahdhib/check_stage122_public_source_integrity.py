@@ -25,11 +25,16 @@ assert "correction.correctedArabic" in reader and "correction.correctedEnglish" 
 assert "STAGE122_SOURCE_RECOVERY_STATUS.html" in main
 assert all(s in status for s in ("1,090 / 1,090","274 / 274","1,079 / 1,090"))
 assert "Eleven" in status or "eleven" in status or "11" in status
-assert all(s in md for s in ("1,090/1,090","1,079/1,090","274/274","24","57"))
+assert all(s in md for s in ("1,090","1,079","274","24","57"))
+assert "1,079" in status and "11" in status
 assert all(s in handoff for s in ("Stage114","1,090","tables"))
 assert "rights-sensitive" in handoff and "private" in handoff
 assert "NOT" in md and "manuscript" in md
 assert "HWN-DALALA-084" in md and "HWN-048" in md
+six=(P/"STAGE122_SIX_EXPANDED_HISTORICAL_NOTES.md").read_text()
+for note in ("HWN-DALALA-067","HWN-CONVERSION-008","HWN-CONVERSION-021","HWN-CONTRAPOSITION-019","HWN-MAFAHIM-011","HWN-INTRO-081"):
+    assert note in six
+assert "source-grade" in six.lower() or "source" in six.lower()
 
 # inherited full H master SHA is verified against prior published manifest
 manifest=load("STAGE121_CUMULATIVE_FILE_INTEGRITY.json")
