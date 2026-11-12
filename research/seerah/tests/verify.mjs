@@ -42,8 +42,8 @@ assert.equal(data.chapters.length,46);
 assert.equal(prior161.edition,'1.6.1-prose-and-source-fidelity-review');
 assert.ok(prior161HTML.includes('Research edition 1.6.1'));
 assert.ok(prior161Man.includes('Research edition 1.6.1'));
-assert.equal(data.chapters.filter((c,i)=>c.matn!==prior161.chapters[i].matn).length,12);
-assert.equal(data.chapters.filter((c,i)=>c.sharh!==prior161.chapters[i].sharh).length,5);
+assert.equal(old162.chapters.filter((c,i)=>c.matn!==prior161.chapters[i].matn).length,12,'Retained edition 1.6.2 must preserve its twelve matn changes');
+assert.equal(old162.chapters.filter((c,i)=>c.sharh!==prior161.chapters[i].sharh).length,5,'Retained edition 1.6.2 must preserve its five sharḥ changes');
 assert.ok(data.chapters[9].sharh.includes('bukhari:3877'));
 assert.ok(data.chapters[44].sharh.includes('1867'));
 
