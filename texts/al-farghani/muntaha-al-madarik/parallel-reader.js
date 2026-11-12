@@ -13,7 +13,7 @@ const saved=read();
 let lang=["both","ar","en"].includes(saved.lang)?saved.lang:"both";
 let theme=["parchment","horizon","night"].includes(saved.theme)?saved.theme:"parchment";
 let size=Number.isFinite(saved.size)?Math.min(1.5,Math.max(.8,saved.size)):1;
-let showNotes=saved.showNotes===true;
+let showNotes=false; // Previous inline apparatus preference is deprecated: evidence opens in Study & sources.
 const persist=()=>{try{localStorage.setItem(K,JSON.stringify({lang,theme,size,showNotes}))}catch(_){}};
 function apply(){
   document.body.dataset.language=lang;
@@ -109,6 +109,45 @@ function contentsView(){
  };
  input.addEventListener("input",run);run();input.focus();
 }
+function studyView(){
+ open("Source evidence · outside the reading text");
+ const info=node("p","pr-study-help","The text is complete by Beirut page labels, but English is a working translation and Arabic an online digital transcription. The two columns align by printed page, not phrase. No manuscript-critical edition is claimed.");
+ body.append(info);
+ let p=Number((location.hash||"").match(/^#p(\d+)$/)?.[1]);
+ if(!p||p<18||p>145){
+   const near=pages.find(x=>x.getBoundingClientRect().bottom>115);
+   p=Number(near?.dataset.page||18);
+ }
+ const row=node("div","pr-study-controls");
+ const picker=node("select");picker.setAttribute("aria-label","Source evidence for Beirut printed page");
+ for(let n=18;n<=145;n++){const option=node("option",null,"Beirut p. "+n);option.value=String(n);picker.append(option);}
+ picker.value=String(p);
+ const show=()=>{
+   const old=body.querySelector(".pr-study-evidence");if(old)old.remove();
+   const section=document.getElementById("p"+picker.value),original=section?.querySelector(".pr-apparatus-body");
+   const evidence=node("section","pr-study-evidence");
+   evidence.append(node("h3",null,"Source, notes and variants · p. "+picker.value));
+   if(original)evidence.append(original.cloneNode(true));
+   else evidence.append(node("p",null,"No source notes recorded for this page."));
+   const link=node("a",null,"View selected critical passages on this page");
+   link.href="critical-edition.html?page="+picker.value;
+   evidence.append(link);
+   body.append(evidence);
+ };
+ picker.addEventListener("change",show);
+ row.append(picker);body.append(row);
+ const more=node("p","pr-study-links");
+ const editorial=node("a",null,"Scholarly introduction");editorial.href="critical-introduction.html";
+ const status=node("a",null,"Edition status");status.href="editorial/STATUS.md";
+ more.append(editorial," · ",status);
+ body.append(more);show();
+}
+const studyButton=node("button",null,"Study & sources");
+studyButton.type="button";studyButton.id="pr-study-open";
+studyButton.setAttribute("aria-haspopup","dialog");
+document.querySelector(".pr-tools")?.append(studyButton);
+studyButton.addEventListener("click",studyView);
+
 $("pr-search-open").addEventListener("click",searchView);
 $("pr-contents").addEventListener("click",contentsView);
 document.addEventListener("keydown",ev=>{
