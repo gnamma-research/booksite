@@ -63,3 +63,15 @@
  body[data-pdf-language=arabic] .authorial-bilingual-note .footnote-english{display:none!important}
  .footnote-arabic{font-size:12pt}
 }
+
+/* Source commentary is consulted in Tools, outside the author's continuous text. */
+.study-editorial-list,.study-related-list{max-height:min(58dvh,650px);overflow-y:auto;overscroll-behavior:contain;padding:4px 6px 16px}
+.study-editorial-entry{padding:14px 0;border-bottom:1px solid var(--line)}
+.study-editorial-entry>.study-passage-link{font-weight:650;display:inline-block;margin-bottom:8px}
+.study-editorial-note{border-inline-start:2px solid var(--line);padding:3px 12px;margin:12px 0;line-height:1.65}
+.study-editorial-note>strong{color:var(--accent);font:600 12px/1.6 system-ui,sans-serif}
+.study-editorial-note p{margin:5px 0;white-space:pre-wrap;overflow-wrap:anywhere}
+.study-related-list>.cross-text-link{margin:12px 0;padding:11px;border:1px solid var(--line);border-radius:6px}
+:root[data-view="focus"] .editorial-heading,:root[data-view="quiet"] .editorial-heading,
+:root[data-view="focus"] .unit-subheading,:root[data-view="quiet"] .unit-subheading{display:none!important}
+@media print{.study-editorial-entry,.study-editorial-list,.study-related-list{display:none!important}}
