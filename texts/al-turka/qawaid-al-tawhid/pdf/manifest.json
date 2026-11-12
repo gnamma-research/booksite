@@ -1,5 +1,5 @@
 {
-  "revision": "2026-11-11-qawtaw5",
+  "revision": "2026-11-12-qawtaw16-source-scoped-reading",
   "source": "Gnamma translated Arabic/English matn and Tamhīd commentary, original edition N and Āshtiyānī edition A",
   "format": "A4, searchable Unicode text, source-based content",
   "files": [
@@ -9,8 +9,8 @@
       "group": "reading",
       "language": "both",
       "pages": 298,
-      "size_bytes": 920136,
-      "sha256": "8c64af8bc714b5bddc72a7dfef4b4b16fae97147186911e0b2513884b2b3f551",
+      "size_bytes": 921768,
+      "sha256": "a18a12a3028ef4a1438969a6ae0e1f66fd286aa1ebd72858b9b314935f15ce75",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -24,8 +24,8 @@
       "group": "reading",
       "language": "english",
       "pages": 138,
-      "size_bytes": 434268,
-      "sha256": "05d88dbcf05ea22d9c41cfe18d1baf2289f1111746de12c37bc533805935ff42",
+      "size_bytes": 435871,
+      "sha256": "0a6e50d7b1d20175c87ad90e50c56a3881507580fb200f6a37448a58c1e674db",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -39,8 +39,8 @@
       "group": "reading",
       "language": "arabic",
       "pages": 172,
-      "size_bytes": 521469,
-      "sha256": "40a61ae90937207cbc0dc1e0f5e5b00b7c27fdfdfd3c6f361bbffa4d10d0b4c6",
+      "size_bytes": 521466,
+      "sha256": "e389d5df85617aace3f6bdd6e99a5d963a056f8c4a6507e9913ada3791e2fbab",
       "description": "Original and commentary, without explanatory notes",
       "content": {
         "matn": 61,
@@ -54,8 +54,8 @@
       "group": "study",
       "language": "both",
       "pages": 322,
-      "size_bytes": 1022784,
-      "sha256": "8e0406f3994717bff9267e08e6bd06abc9d15ba6fafde3c31233591415b24b54",
+      "size_bytes": 1024983,
+      "sha256": "ec2f3245fef7b3bb86507d84615114095f1ab70cc380970cc570bd98e80fcbca",
       "description": "With selected notes and subject guide",
       "content": {
         "matn": 61,
@@ -69,8 +69,8 @@
       "group": "reference",
       "language": "both",
       "pages": 368,
-      "size_bytes": 1214371,
-      "sha256": "c463a194487e463f029be411ef8c9b609fb7deb13510a8707ccf2889a4d17b63",
+      "size_bytes": 1216559,
+      "sha256": "cfcb8dc13ed2b26a18b552f24d6683e190fcddb4e0ba8be5376f30416071bb10",
       "description": "Complete source notes, glossary, index and references",
       "content": {
         "matn": 61,
