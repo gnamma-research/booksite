@@ -1,0 +1,84 @@
+name: Farghani XIX scholarly introduction apparatus glossary PDF
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'tools/farghani/assemble_intro_scholarship.py'
+      - 'tools/farghani/render_intro_pdf.py'
+      - 'texts/al-farghani/muntaha-al-madarik/editorial/GLOSSARY_WORKING_019.json'
+      - '.github/workflows/farghani-intro-scholar-pdf.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: farghani-intro-scholar-edition-xix
+  cancel-in-progress: false
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright/python:v1.58.0-noble
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install scholarly typesetting dependencies and Arabic fonts
+        run: |
+          apt-get update -qq
+          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends fonts-noto-core fontconfig >/dev/null
+          python -m pip install --quiet beautifulsoup4 playwright==1.58.0 pymupdf
+          fc-match 'Noto Naskh Arabic'
+      - name: Check all 128 digitized Arabic source pages before setting type
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          root=pathlib.Path('texts/al-farghani/muntaha-al-madarik')
+          src=json.loads((root/'data/intro-arabic-b2007-digital.json').read_text())
+          assert len(src['pages'])==128
+          assert all(p['reading_chars']>300 for p in src['pages'])
+          print('Source pages:',len(src['pages']), 'Arabic words:',sum(x['arabic_words'] for x in src['pages']))
+          PY
+      - name: Reconcile historical PRINT comparison registers and locate glossary terms
+        run: python tools/farghani/assemble_intro_scholarship.py
+      - name: Create PDF and verify 128-label bilingual text, appendices and render samples
+        run: python tools/farghani/render_intro_pdf.py
+      - name: Verify original complete English and selected bilingual source status
+        run: python tests/farghani/verify_reader.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: farghani-intro-provisional-scholarly-019
+          retention-days: 30
+          if-no-files-found: warn
+          path: |
+            texts/al-farghani/muntaha-al-madarik/downloads/FARGHANI_Introduction_Provisional_Scholarly_019.pdf
+            texts/al-farghani/muntaha-al-madarik/editorial/GLOSSARY_ATTESTED_019.json
+            texts/al-farghani/muntaha-al-madarik/editorial/GLOSSARY_ATTESTED_019.md
+            texts/al-farghani/muntaha-al-madarik/editorial/I1876_RECHECK_019.json
+            texts/al-farghani/muntaha-al-madarik/editorial/SCHOLARLY_APPARATUS_019.md
+            texts/al-farghani/muntaha-al-madarik/editorial/INTRO_PAGE_COVERAGE_019.csv
+            texts/al-farghani/muntaha-al-madarik/editorial/PRINT_PDF_QA_019.json
+            qa-artifacts/farghani-scholar-pdf/
+      - name: Publish checked scholarly PDF and source-graded apparatus to GNAMMA
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add texts/al-farghani/muntaha-al-madarik/downloads/FARGHANI_Introduction_Provisional_Scholarly_019.pdf \
+                  texts/al-farghani/muntaha-al-madarik/editorial/GLOSSARY_ATTESTED_019.json \
+                  texts/al-farghani/muntaha-al-madarik/editorial/GLOSSARY_ATTESTED_019.md \
+                  texts/al-farghani/muntaha-al-madarik/editorial/I1876_RECHECK_019.json \
+                  texts/al-farghani/muntaha-al-madarik/editorial/SCHOLARLY_APPARATUS_019.md \
+                  texts/al-farghani/muntaha-al-madarik/editorial/INTRO_PAGE_COVERAGE_019.csv \
+                  texts/al-farghani/muntaha-al-madarik/editorial/PRINT_PDF_QA_019.json \
+                  texts/al-farghani/muntaha-al-madarik/editorial/PRINT_SCHOLARLY_INTRO_019.html
+          if git diff --cached --quiet; then echo 'No changes';exit 0;fi
+          git commit -m "Farghani XIX: publish provisional bilingual scholarly PDF, 15-print-locus apparatus, 66-term glossary"
+          for attempt in 1 2 3 4 5; do
+            git fetch --no-tags origin master
+            git rebase origin/master
+            if git push origin HEAD:master; then exit 0; fi
+            sleep 3
+          done
+          echo 'Publishing failed; artifact retains all generated sources'
+          exit 1
