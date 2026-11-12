@@ -215,7 +215,12 @@ function make(){
    else feedback='Allow pop-ups to print your saved notes as a separate PDF.';render();
   }
  });
- dialog.addEventListener('input',e=>{if(e.target.id==='qaw-desk-filter'){filter=e.target.value;render();$('#qaw-desk-filter')?.focus();}});
+ let filterTimer=0;
+ dialog.addEventListener('input',e=>{if(e.target.id!=='qaw-desk-filter')return;
+  filter=e.target.value;if(e.isComposing)return;clearTimeout(filterTimer);
+  const at=e.target.selectionStart;
+  filterTimer=setTimeout(()=>{render();const input=$('#qaw-desk-filter');input?.focus({preventScroll:true});if(at!=null)input?.setSelectionRange?.(Math.min(at,filter.length),Math.min(at,filter.length));},160);
+ });
  dialog.addEventListener('change',async e=>{
   const t=e.target;if(t.id==='qaw-desk-sort'){sort=t.value;render();return;}
   if(t.id!=='qaw-desk-file'||!t.files?.length)return;
