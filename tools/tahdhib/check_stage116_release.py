@@ -33,6 +33,7 @@ assert len(q["transcribedExamples"])==2
 print("Source matrix classifications + Q309 true source order: PASS")
 phot=j("source-table-excerpts/PRINT_IMAGE_MANIFEST_STAGE116.json")
 assert len(phot["images"])==4
+assert not (P/"source-table-excerpts/excerpts").exists(), "recursive photo excerpt duplication is forbidden"
 assert {x["printedPage"] for x in phot["images"]}=={258,294,300,309}
 for x in phot["images"]:
     p=Path(x["publicationPath"]); assert p.is_file(),p
