@@ -59,7 +59,7 @@ All **32** printed intersections were compared to the Stage115 prose-derived res
 The source *order* of the nine connected types is:
 `C/C, C/D, C/K, K/C, D/C, K/K, K/D, D/K, D/D`;
 the six disjunctive types are:
-`C/C, C/K, C/D, K/K, K/D, D/D`.
+`C/C, C/D, C/K, K/K, D/K, D/D`.
 Here `C` = حملية, `K` = متصلة, `D` = منفصلة; connected slash notation is ordered **antecedent/consequent**, disjunctive slash notation is an **unordered pairing**. Note the source's connected list puts `D/C` before `K/K`, unlike the abstract algorithmic ordering in the Stage115 JSON; both have the same nine members.
 
 **Important correction:** the cells for the connected `C/C`, `K/K`, and `D/D` are not lost: they themselves read **ذكر ما لا يخفى** (“to supply what is obvious”) rather than giving a long example. The other twelve visible Arabic examples require separate diplomatic transcription and line-by-line English translation; do not count a printed type as a full translated example.
