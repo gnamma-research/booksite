@@ -37,6 +37,8 @@
 | SH-061-F | Interpretation settled; source remains as transmitted | H2014/2:597 | Negative of a recognized technical pair; not manuscript-collated |
 | SH-061-A | Working reading settled | H2014/2:598 | Use H2014 أفعاله وأحواله, keys to his actions and states; preserve A أقفاله and reported إقباله as alternatives without deciding stemmatic priority. |
 
+**Qawtaw19 final editorial addendum (13 November 2026):** Both remaining source-critical questions have now received a documented editorial disposition, including the precise SH-002 internal conjecture and the boundary of the surviving QT-059 text. Neither has been promoted to an independently witnessed medieval restoration. [Read the final two-crux dossier](QAWTAW19_FINAL_TWO_CRUXES_2026-11-13.md). The historical scan advertised through Google Books returned HTTP 403, while HathiTrust's indexed early print remained inaccessible; no new target page was inspected. The 55/57 accounting is unchanged.
+
 ## SH-002 — the problematic polar negative
 
 **Source wording transmitted in both A and the printed H2014 quotation:** `القطع ببطلان مسألة التوحيد`. Earlier within the same discussion the case is stated as `القطع بحقيّة هذه المسألة`; immediately before the disputed wording stands `إذ القطع ببطلان جميع الأحكام العقلية`. The surrounding explanation says that a unity proposition, on the opponent's account, eliminates ordinary judgments of differentiation and distinction. Thus the inferential direction **supports the commentator discussing certainty in the doctrine's truth**, not certainty that it is false. That is a **reasoned contextual diagnosis**, not a third printed witness.
