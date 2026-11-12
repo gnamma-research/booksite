@@ -17,6 +17,7 @@ def ck(name,value):
 def route(handler):
  path=unquote(urlsplit(handler.request.url).path)
  target=REPO / path.lstrip('/')
+ if target.is_dir():target=target/'index.html'
  if target.is_file():
   return handler.fulfill(status=200,body=target.read_bytes(),
     content_type=mimetypes.guess_type(str(target))[0] or 'application/octet-stream')
