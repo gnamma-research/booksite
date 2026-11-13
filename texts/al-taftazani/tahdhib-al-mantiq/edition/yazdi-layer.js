@@ -12,6 +12,8 @@ const groups=new Map();
 for(const part of data.entries){if(!groups.has(part.unit))groups.set(part.unit,[]);groups.get(part.unit).push(part)}
 const idFor=id=>'u-'+id.replace(/[^a-zA-Z0-9-]/g,'-');
 function n(tag,cls,value){const e=document.createElement(tag);if(cls)e.className=cls;if(value!==undefined)e.textContent=value;return e}
+const preferredEnglish=part=>window.GNAMMA_YAZDI_STAGE127_PREFERRED_ENGLISH?.[part.id]?.english||part.en;
+function previousEnglishNote(part){if(!window.GNAMMA_YAZDI_STAGE127_PREFERRED_ENGLISH?.[part.id]?.english)return null;const details=n('details','gn-yazdi-source-notes gn-yazdi-prior-en');details.append(n('summary',null,'Earlier English translation'));details.append(n('p',null,part.en));return details;}
 function make(unit,scope){
  const entries=groups.get(unit)||[];
  const contiguous=unit==='L.03'?window.GNAMMA_YAZDI_CONTIGUOUS_L03:null;
@@ -49,7 +51,7 @@ function make(unit,scope){
    item.id='gn-yazdi-'+scope+'-'+part.id;
    item.append(n('div','gn-yazdi-locator','al-Yazdī · Qum p. '+part.page+' · '+part.title));
    const content=n('div','gn-yazdi-pair');
-   const en=n('p','gn-yazdi-en',part.en);en.lang='en';
+   const en=n('p','gn-yazdi-en',preferredEnglish(part));en.lang='en';
    const ar=n('p','gn-yazdi-ar',part.ar);ar.lang='ar';ar.dir='rtl';
    content.append(en,ar);item.append(content);
    const source=n('a','gn-yazdi-source','Source Q · p. '+part.page);
@@ -108,9 +110,9 @@ function make(unit,scope){
    const withinPage=part.part&&part.part!=='all'?' · '+part.part:'';
    item.append(n('div','gn-yazdi-locator','al-Yazdī · Qum p. '+part.page+withinPage+' · '+part.title));
    const pair=n('div','gn-yazdi-pair');
-   const en=n('p','gn-yazdi-en',part.en);en.lang='en';
+   const en=n('p','gn-yazdi-en',preferredEnglish(part));en.lang='en';
    const ar=n('p','gn-yazdi-ar',part.ar);ar.lang='ar';ar.dir='rtl';
-   pair.append(en,ar);item.append(pair);
+   pair.append(en,ar);item.append(pair);const earlierTranslation=previousEnglishNote(part);if(earlierTranslation)item.append(earlierTranslation);
    const link=n('a','gn-yazdi-source','Source Q · p. '+part.page);
    link.href=part.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';item.append(link);
    if(unit==='L.02'){
