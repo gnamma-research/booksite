@@ -1,0 +1,48 @@
+name: Qawtaw21 verified extended sources and exact crossreader links
+on:
+  push:
+    branches: [feature/qawtaw21-expanded-source-index-20261113]
+    paths:
+      - '.github/workflows/qawtaw21-extended-links-qa.yml'
+      - 'texts/al-turka/qawaid-al-tawhid/data/primary-reference-register.js'
+      - 'texts/al-turka/qawaid-al-tawhid/data/qawtaw21-source-extensions.js'
+      - 'texts/al-turka/qawaid-al-tawhid/data/reviewed-crossreader-links.js'
+      - 'texts/al-turka/qawaid-al-tawhid/index.html'
+      - 'texts/al-turka/qawaid-al-tawhid/commentary.html'
+      - 'texts/al-turka/qawaid-al-tawhid/qawaid-study.js'
+      - 'texts/al-turka/qawaid-al-tawhid/qawaid-inline-references.js'
+      - 'texts/sadr-al-din-al-qunawi/al-nusus/reader.js'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/test-qawtaw21-expanded-links.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 17
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check augmented source module and baseline PDF acceptance
+        run: |
+          node --check texts/al-turka/qawaid-al-tawhid/data/qawtaw21-source-extensions.js
+          node --check texts/al-turka/qawaid-al-tawhid/data/reviewed-crossreader-links.js
+          node --check texts/al-turka/qawaid-al-tawhid/qawaid-citation-policy.js
+          node --check texts/al-turka/qawaid-al-tawhid/qawaid-study.js
+          node --check texts/al-turka/qawaid-al-tawhid/qawaid-inline-references.js
+          node --check texts/sadr-al-din-al-qunawi/al-nusus/reader.js
+          python texts/al-turka/qawaid-al-tawhid/qa/qawtaw16_final_acceptance.py
+      - name: Install browser
+        run: |
+          python -m pip install --quiet playwright
+          python -m playwright install --with-deps chromium
+      - name: Exercise expanded citations and exact Qūnawī deep links
+        run: python texts/al-turka/qawaid-al-tawhid/qa/test-qawtaw21-expanded-links.py
+      - name: Preserve evidence
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawtaw21-extended-browser-evidence
+          path: |
+            texts/al-turka/qawaid-al-tawhid/qa/qawtaw21-expanded-links-browser-report.json
+            texts/al-turka/qawaid-al-tawhid/qa/qawtaw21-expanded-links-error.png
+          retention-days: 14
