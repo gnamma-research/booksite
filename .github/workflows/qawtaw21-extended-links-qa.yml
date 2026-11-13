@@ -30,6 +30,7 @@ jobs:
           node --check texts/al-turka/qawaid-al-tawhid/qawaid-study.js
           node --check texts/al-turka/qawaid-al-tawhid/qawaid-inline-references.js
           node --check texts/sadr-al-din-al-qunawi/al-nusus/reader.js
+          python -m pip install --quiet pypdf
           python texts/al-turka/qawaid-al-tawhid/qa/qawtaw16_final_acceptance.py
       - name: Install browser
         run: |
