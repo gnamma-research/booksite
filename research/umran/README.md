@@ -15,7 +15,7 @@
 - `pathways.html`: modes of contribution, opportunity publishing standard, no invented job listings
 - `malaysia.html`: nine annotated Malaysian and Malaysia-associated juristic, educational and institutional research sources
 - `malaysia.json`: source provenance and qualifications
-- `projects.html`: nine source-linked LaunchGood campaign observations as community-needs leads, not verified shortages
+- `projects.html`: ten source-linked LaunchGood campaign observations as community-needs leads, not verified shortages
 - `projects.json`: structured campaign leads with source dates, claimed interventions and verification questions
 - `evidence.html`: four worked source-linked sufficiency audits, distinguishing measured condition, provider output, official targets and campaign claims
 - `assessments.json`: sources, quantitative observations, uncertainties, comparison principles and further evidence requirements for the four audits
