@@ -1,0 +1,3190 @@
+{
+  "version": "1.0-curated-20261113",
+  "about": "Contextual person and community register. Short descriptions are editorial summaries of the cited sources and the Sīrah chapters; they are neither full biographies nor proofs of every attribution. Sources remain subject to textual verification.",
+  "groups": [
+    {
+      "id": "antecedents",
+      "name": "Earlier prophets and primordial figures",
+      "intro": "The formative prophetic histories that establish the original vocation"
+    },
+    {
+      "id": "household",
+      "name": "The prophetic household and kin",
+      "intro": "Those through whom domestic life, protection and family relationships become intelligible"
+    },
+    {
+      "id": "emigrants",
+      "name": "First believers and emigrants",
+      "intro": "Those whose actions carry early instruction, migration, confession and community formation"
+    },
+    {
+      "id": "communities",
+      "name": "Madinan groups, allies and opponents",
+      "intro": "The social world of Yathrib and Makkah, including major clans, opponents and negotiations"
+    },
+    {
+      "id": "wider",
+      "name": "Wider world and later inheritors",
+      "intro": "Rulers, scholars, patrons and historical actors through whom forms of guidance entered diverse societies"
+    }
+  ],
+  "entries": [
+    {
+      "id": "adam",
+      "name": "Ādam",
+      "aliases": [
+        "Ādam",
+        "Adam"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "First human and recipient of the Names",
+      "bio": "Receives the divine teaching of the names and the earthly vocation of khilāfa. The Garden, the lapse and repentance frame the human need for revealed guidance.",
+      "relations": [
+        "hawwa",
+        "iblis",
+        "muhammad"
+      ],
+      "source": "Qurʾān 2:30–38; 7:19–23",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s01-m01"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s01-m01"
+      }
+    },
+    {
+      "id": "hawwa",
+      "name": "Ādam’s spouse (Ḥawwāʾ)",
+      "aliases": [
+        "Ādam’s spouse (Ḥawwāʾ)",
+        "Adam’s spouse",
+        "Ḥawwāʾ",
+        "Eve"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "First human couple",
+      "bio": "Shares the Garden's prohibition, temptation and acknowledgement of wrongdoing with Ādam. The Qurʾān identifies her as his spouse; the name Ḥawwāʾ comes from later tradition.",
+      "relations": [
+        "adam",
+        "iblis"
+      ],
+      "source": "Qurʾān 2:35–37; 7:19–23",
+      "appearances": [],
+      "first": null
+    },
+    {
+      "id": "iblis",
+      "name": "Iblīs",
+      "aliases": [
+        "Iblīs",
+        "Iblis",
+        "Satan"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Tempter and adversarial figure",
+      "bio": "Refuses the command to bow to Ādam, appealing to fire and clay. His self-justification and temptation provide a recurring case of restricted vision and misdirected will.",
+      "relations": [
+        "adam",
+        "hawwa"
+      ],
+      "source": "Qurʾān 7:11–18; 20:120; 38:71–85",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s01-m02"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 2,
+        "anchor": "s01-m02"
+      }
+    },
+    {
+      "id": "nuh",
+      "name": "Nūḥ",
+      "aliases": [
+        "Noah",
+        "Nūḥ"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Prophet of the Ark",
+      "bio": "Calls his people to worship God, builds the Ark under revelation and seeks guidance concerning his son when the flood comes.",
+      "relations": [
+        "adam"
+      ],
+      "source": "Qurʾān 11:25–47; 71:1–28",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 7,
+          "anchor": "s01-m07"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 7,
+        "anchor": "s01-m07"
+      }
+    },
+    {
+      "id": "hud",
+      "name": "Hūd",
+      "aliases": [
+        "Hūd",
+        "Hud"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Prophet sent to ʿĀd",
+      "bio": "Challenges the arrogance of a people who possess strength, architecture and power, calling them to worship God and repent.",
+      "relations": [],
+      "source": "Qurʾān 26:123–140",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 7,
+          "anchor": "s01-m07"
+        },
+        {
+          "chapter": 2,
+          "layer": "sharh",
+          "paragraph": 46,
+          "anchor": "s02-s46"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 7,
+        "anchor": "s01-m07"
+      }
+    },
+    {
+      "id": "salih",
+      "name": "Ṣāliḥ",
+      "aliases": [
+        "Ṣāliḥ",
+        "Salih"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Prophet to Thamūd",
+      "bio": "Presents the she-camel as a sign demanding respect for the creature's appointed share of water and the divine command.",
+      "relations": [],
+      "source": "Qurʾān 26:141–159",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 7,
+          "anchor": "s01-m07"
+        },
+        {
+          "chapter": 2,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s02-s03"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 7,
+        "anchor": "s01-m07"
+      }
+    },
+    {
+      "id": "lut",
+      "name": "Lūṭ",
+      "aliases": [
+        "Lūṭ",
+        "Lot"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Prophet and protector of guests",
+      "bio": "Strives to protect guests from an approaching crowd and receives divine deliverance amid the corruption of his people.",
+      "relations": [],
+      "source": "Qurʾān 11:77–83",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 7,
+          "anchor": "s01-m07"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 7,
+        "anchor": "s01-m07"
+      }
+    },
+    {
+      "id": "shuayb",
+      "name": "Shuʿayb",
+      "aliases": [
+        "Shuʿayb",
+        "Shuayb"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Prophet of fair exchange",
+      "bio": "Calls people to worship God and to keep proper measures and honest commercial dealings.",
+      "relations": [],
+      "source": "Qurʾān 11:84–95",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 7,
+          "anchor": "s01-m07"
+        },
+        {
+          "chapter": 2,
+          "layer": "sharh",
+          "paragraph": 46,
+          "anchor": "s02-s46"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 7,
+        "anchor": "s01-m07"
+      }
+    },
+    {
+      "id": "ibrahim",
+      "name": "Ibrāhīm",
+      "aliases": [
+        "Ibrāhīm",
+        "Abraham"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Prophetic patriarch and builder of the House",
+      "bio": "His covenant, family and sanctuary connect worship to settlement, prayer, security and provision. He and Ismāʿīl raise the House's foundations.",
+      "relations": [
+        "ismail",
+        "ishaq",
+        "muhammad"
+      ],
+      "source": "Qurʾān 2:124–129; 14:35–41",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 8,
+          "anchor": "s01-m08"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 8,
+        "anchor": "s01-m08"
+      }
+    },
+    {
+      "id": "ismail",
+      "name": "Ismāʿīl",
+      "aliases": [
+        "Ismāʿīl",
+        "Ishmael"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Prophet associated with the sanctuary",
+      "bio": "Assists Ibrāhīm at the House and is singled out for truthfulness to his promise and instruction of his household in prayer and giving.",
+      "relations": [
+        "ibrahim",
+        "muhammad"
+      ],
+      "source": "Qurʾān 2:127; 19:54–55",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 8,
+          "anchor": "s01-m08"
+        },
+        {
+          "chapter": 42,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s42-s01"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 8,
+        "anchor": "s01-m08"
+      }
+    },
+    {
+      "id": "ishaq",
+      "name": "Isḥāq",
+      "aliases": [
+        "Isḥāq",
+        "Isaac"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Son of Ibrāhīm and a prophet",
+      "bio": "Remembered in the Qurʾānic family of prophetic guidance, alongside his son Yaʿqūb.",
+      "relations": [
+        "ibrahim",
+        "yaqub"
+      ],
+      "source": "Qurʾān 11:71; 21:72",
+      "appearances": [
+        {
+          "chapter": 10,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s10-s01"
+        },
+        {
+          "chapter": 14,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s14-s01"
+        },
+        {
+          "chapter": 15,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s15-s01"
+        },
+        {
+          "chapter": 26,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s26-s01"
+        }
+      ],
+      "first": {
+        "chapter": 10,
+        "layer": "sharh",
+        "paragraph": 1,
+        "anchor": "s10-s01"
+      }
+    },
+    {
+      "id": "yaqub",
+      "name": "Yaʿqūb",
+      "aliases": [
+        "Yaʿqūb",
+        "Jacob"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Prophet and father of Yūsuf",
+      "bio": "His household's separation, trial and reunion provide the familial setting for Yūsuf's story.",
+      "relations": [
+        "ishaq",
+        "yusuf"
+      ],
+      "source": "Qurʾān 12:4–101",
+      "appearances": [],
+      "first": null
+    },
+    {
+      "id": "yusuf",
+      "name": "Yūsuf",
+      "aliases": [
+        "Joseph",
+        "Yūsuf"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Prophet of interpretation and provision",
+      "bio": "Interprets dreams, withstands trial and eventually oversees provision during years of scarcity in Egypt.",
+      "relations": [
+        "yaqub"
+      ],
+      "source": "Qurʾān 12",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 8,
+          "anchor": "s01-m08"
+        },
+        {
+          "chapter": 2,
+          "layer": "sharh",
+          "paragraph": 8,
+          "anchor": "s02-s08"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 8,
+        "anchor": "s01-m08"
+      }
+    },
+    {
+      "id": "musa",
+      "name": "Mūsā",
+      "aliases": [
+        "Moses",
+        "Mūsā"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Prophet, liberator and lawgiver",
+      "bio": "Confronts Pharaoh, guides the Israelites and receives revelation governing worship and community. In the Miʿrāj reports he counsels Muḥammad concerning the community's capacity for prayer.",
+      "relations": [
+        "muhammad"
+      ],
+      "source": "Qurʾān 20; Muslim 162a",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 8,
+          "anchor": "s01-m08"
+        },
+        {
+          "chapter": 2,
+          "layer": "sharh",
+          "paragraph": 46,
+          "anchor": "s02-s46"
+        },
+        {
+          "chapter": 3,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s03-s04"
+        },
+        {
+          "chapter": 11,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s11-m01"
+        },
+        {
+          "chapter": 38,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s38-m01"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 8,
+        "anchor": "s01-m08"
+      }
+    },
+    {
+      "id": "khidr",
+      "name": "al-Khiḍr",
+      "aliases": [
+        "al-Khiḍr",
+        "Khiḍr",
+        "Khidr"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Guide in the journey of Mūsā",
+      "bio": "The figure accompanying Mūsā in Qurʾān 18:60–82. The narrative explores the relation of visible events, concealed grounds and extraordinary disclosure.",
+      "relations": [
+        "musa"
+      ],
+      "source": "Qurʾān 18:60–82; name from later tradition",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 59,
+          "anchor": "s01-s59"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "sharh",
+        "paragraph": 59,
+        "anchor": "s01-s59"
+      }
+    },
+    {
+      "id": "dawud",
+      "name": "Dāwūd",
+      "aliases": [
+        "Dāwūd",
+        "David"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Prophet and king",
+      "bio": "Combines praise, skilled workmanship and judgment within prophetic kingship.",
+      "relations": [
+        "sulayman"
+      ],
+      "source": "Qurʾān 34:10–11; 38:17–26",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 8,
+          "anchor": "s01-m08"
+        },
+        {
+          "chapter": 3,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s03-m01"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 8,
+        "anchor": "s01-m08"
+      }
+    },
+    {
+      "id": "sulayman",
+      "name": "Sulaymān",
+      "aliases": [
+        "Sulaymān",
+        "Solomon"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Prophet and king",
+      "bio": "Receives wide dominion and knowledge while exercising political judgment, including the encounter with the ruler of Sheba.",
+      "relations": [
+        "dawud"
+      ],
+      "source": "Qurʾān 27:15–44",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 8,
+          "anchor": "s01-m08"
+        },
+        {
+          "chapter": 3,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s03-m01"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 8,
+        "anchor": "s01-m08"
+      }
+    },
+    {
+      "id": "ayyub",
+      "name": "Ayyūb",
+      "aliases": [
+        "Ayyūb",
+        "Job"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Prophet tested by affliction",
+      "bio": "Responds to suffering through supplication and receives divine guidance concerning a bodily means of relief.",
+      "relations": [],
+      "source": "Qurʾān 21:83–84; 38:41–44",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 60,
+          "anchor": "s01-s60"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "sharh",
+        "paragraph": 60,
+        "anchor": "s01-s60"
+      }
+    },
+    {
+      "id": "yunus",
+      "name": "Yūnus",
+      "aliases": [
+        "Yūnus",
+        "Jonah"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Prophet of repentance",
+      "bio": "His departure, supplication in darkness and the repentance of his people illustrate the return to divine mercy.",
+      "relations": [],
+      "source": "Qurʾān 21:87–88; 10:98",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 65,
+          "anchor": "s01-s65"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "sharh",
+        "paragraph": 65,
+        "anchor": "s01-s65"
+      }
+    },
+    {
+      "id": "zakariyya",
+      "name": "Zakariyyā",
+      "aliases": [
+        "Zakariyyā",
+        "Zechariah"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Prophet and father of Yaḥyā",
+      "bio": "Prays for a worthy successor while recognizing the child's arrival as a gift from God.",
+      "relations": [
+        "yahya"
+      ],
+      "source": "Qurʾān 19:2–11",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 76,
+          "anchor": "s01-s76"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "sharh",
+        "paragraph": 76,
+        "anchor": "s01-s76"
+      }
+    },
+    {
+      "id": "yahya",
+      "name": "Yaḥyā",
+      "aliases": [
+        "John the Baptist",
+        "Yaḥyā"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Prophet of wisdom and tenderness",
+      "bio": "Receives wisdom and is remembered for piety and tender regard for his parents.",
+      "relations": [
+        "zakariyya",
+        "isa"
+      ],
+      "source": "Qurʾān 19:12–15",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 76,
+          "anchor": "s01-s76"
+        },
+        {
+          "chapter": 5,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s05-m01"
+        },
+        {
+          "chapter": 27,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s27-s04"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "sharh",
+        "paragraph": 76,
+        "anchor": "s01-s76"
+      }
+    },
+    {
+      "id": "maryam",
+      "name": "Maryam",
+      "aliases": [
+        "Maryam",
+        "Mary"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Mother of ʿĪsā",
+      "bio": "Her trust and dependence upon God encompass extraordinary provision and ordinary embodied effort.",
+      "relations": [
+        "isa"
+      ],
+      "source": "Qurʾān 19:16–34",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 8,
+          "anchor": "s01-m08"
+        },
+        {
+          "chapter": 5,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s05-m01"
+        },
+        {
+          "chapter": 10,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s10-s01"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 8,
+        "anchor": "s01-m08"
+      }
+    },
+    {
+      "id": "isa",
+      "name": "ʿĪsā",
+      "aliases": [
+        "Jesus",
+        "ʿĪsā"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Prophet and son of Maryam",
+      "bio": "His extraordinary signs of healing and life are described as occurring by God's permission and call people to worship God.",
+      "relations": [
+        "maryam",
+        "yahya"
+      ],
+      "source": "Qurʾān 3:45–51; 5:110",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 8,
+          "anchor": "s01-m08"
+        },
+        {
+          "chapter": 4,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s04-m01"
+        },
+        {
+          "chapter": 5,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s05-m01"
+        },
+        {
+          "chapter": 10,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s10-s04"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 8,
+        "anchor": "s01-m08"
+      }
+    },
+    {
+      "id": "queen-sheba",
+      "name": "Queen of Sheba",
+      "aliases": [
+        "Queen of Sheba",
+        "Queen of Sabaʾ",
+        "Bilqīs",
+        "Bilqis"
+      ],
+      "group": "antecedents",
+      "kind": "person",
+      "role": "Ruler encountered by Sulaymān",
+      "bio": "Her exchange with Sulaymān involves diplomacy, examination of signs and a decisive response to his summons. Her personal name occurs in later tradition.",
+      "relations": [
+        "sulayman"
+      ],
+      "source": "Qurʾān 27:22–44",
+      "appearances": [],
+      "first": null
+    },
+    {
+      "id": "muhammad",
+      "name": "Muḥammad ﷺ",
+      "aliases": [
+        "Prophet Muḥammad",
+        "Muḥammad ﷺ",
+        "Muḥammad",
+        "Muhammad"
+      ],
+      "group": "household",
+      "kind": "person",
+      "role": "Final Messenger and central figure of the Sīrah",
+      "bio": "Receives the Qurʾān, teaches worship, forms companions and addresses the rights and circumstances of persons through his words, actions and judgments.",
+      "relations": [
+        "khadija",
+        "aisha",
+        "ali",
+        "abu-bakr"
+      ],
+      "source": "Qurʾān 33:21; 62:2; 68:4",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 9,
+          "anchor": "s01-m09"
+        },
+        {
+          "chapter": 5,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s05-m01"
+        },
+        {
+          "chapter": 6,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s06-m01"
+        },
+        {
+          "chapter": 7,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s07-m01"
+        },
+        {
+          "chapter": 8,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s08-m01"
+        },
+        {
+          "chapter": 18,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s18-s01"
+        },
+        {
+          "chapter": 28,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s28-s01"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 9,
+        "anchor": "s01-m09"
+      }
+    },
+    {
+      "id": "khadija",
+      "name": "Khadījah",
+      "aliases": [
+        "Khadījah",
+        "Khadija"
+      ],
+      "group": "household",
+      "kind": "person",
+      "role": "Wife and first intimate supporter",
+      "bio": "Receives the Prophet after the first revelation, remembers the pattern of his character and sustains the earliest household of believers.",
+      "relations": [
+        "muhammad"
+      ],
+      "source": "al-Bukhārī 3",
+      "appearances": [
+        {
+          "chapter": 8,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s08-m01"
+        },
+        {
+          "chapter": 11,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s11-m01"
+        }
+      ],
+      "first": {
+        "chapter": 8,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s08-m01"
+      }
+    },
+    {
+      "id": "aisha",
+      "name": "ʿĀʾishah",
+      "aliases": [
+        "ʿĀʾishah",
+        "ʿĀʾisha",
+        "ʿĀisha",
+        "Aisha"
+      ],
+      "group": "household",
+      "kind": "person",
+      "role": "Wife, transmitter and teacher",
+      "bio": "Transmits reports about worship and household life, corrects misunderstandings and instructs later students.",
+      "relations": [
+        "muhammad",
+        "abu-bakr"
+      ],
+      "source": "al-Bukhārī 676; Muslim 746a",
+      "appearances": [
+        {
+          "chapter": 8,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s08-s01"
+        },
+        {
+          "chapter": 10,
+          "layer": "sharh",
+          "paragraph": 6,
+          "anchor": "s10-s06"
+        },
+        {
+          "chapter": 11,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s11-s02"
+        },
+        {
+          "chapter": 19,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s19-s04"
+        },
+        {
+          "chapter": 27,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s27-s02"
+        }
+      ],
+      "first": {
+        "chapter": 8,
+        "layer": "sharh",
+        "paragraph": 1,
+        "anchor": "s08-s01"
+      }
+    },
+    {
+      "id": "fatima",
+      "name": "Fāṭimah",
+      "aliases": [
+        "Fāṭimah",
+        "Fatimah",
+        "Fāṭima"
+      ],
+      "group": "household",
+      "kind": "person",
+      "role": "Daughter of Muḥammad",
+      "bio": "Member of the Prophet's household, wife of ʿAlī and mother of al-Ḥasan and al-Ḥusayn. Her descendants and standing became important in later debates over authority.",
+      "relations": [
+        "muhammad",
+        "ali",
+        "hasan",
+        "husayn"
+      ],
+      "source": "Sīrah chapter 20; family reports",
+      "appearances": [
+        {
+          "chapter": 20,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s20-s01"
+        }
+      ],
+      "first": {
+        "chapter": 20,
+        "layer": "sharh",
+        "paragraph": 1,
+        "anchor": "s20-s01"
+      }
+    },
+    {
+      "id": "ali",
+      "name": "ʿAlī",
+      "aliases": [
+        "ʿAlī ibn Abī Ṭālib",
+        "ʿAlī",
+        "Ali"
+      ],
+      "group": "household",
+      "kind": "person",
+      "role": "Cousin, son-in-law and fourth caliph in Sunni sequence",
+      "bio": "Close member of the Prophet's household, husband of Fāṭimah and father of al-Ḥasan and al-Ḥusayn. His caliphate confronted conflict over succession and retaliation.",
+      "relations": [
+        "muhammad",
+        "fatima",
+        "hasan",
+        "husayn"
+      ],
+      "source": "Sīrah chapters 20–24",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 7,
+          "anchor": "s01-s07"
+        },
+        {
+          "chapter": 8,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s08-m01"
+        },
+        {
+          "chapter": 20,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s20-s01"
+        },
+        {
+          "chapter": 23,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s23-m01"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "sharh",
+        "paragraph": 7,
+        "anchor": "s01-s07"
+      }
+    },
+    {
+      "id": "hasan",
+      "name": "al-Ḥasan",
+      "aliases": [
+        "al-Ḥasan",
+        "Ḥasan",
+        "Hasan"
+      ],
+      "group": "household",
+      "kind": "person",
+      "role": "Grandson of the Prophet",
+      "bio": "Son of ʿAlī and Fāṭimah; his political settlement with Muʿāwiyah is important to the history of leadership after the first civil war.",
+      "relations": [
+        "ali",
+        "fatima",
+        "husayn",
+        "muawiya"
+      ],
+      "source": "Sīrah chapter 24",
+      "appearances": [
+        {
+          "chapter": 23,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s23-m01"
+        },
+        {
+          "chapter": 24,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s24-m01"
+        },
+        {
+          "chapter": 27,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s27-s01"
+        },
+        {
+          "chapter": 33,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s33-m01"
+        }
+      ],
+      "first": {
+        "chapter": 23,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s23-m01"
+      }
+    },
+    {
+      "id": "husayn",
+      "name": "al-Ḥusayn",
+      "aliases": [
+        "al-Ḥusayn",
+        "Ḥusayn",
+        "Husayn"
+      ],
+      "group": "household",
+      "kind": "person",
+      "role": "Grandson of the Prophet and figure of Karbalāʾ",
+      "bio": "Son of ʿAlī and Fāṭimah. He and companions were killed at Karbalāʾ in 680, an event central to subsequent Muslim historical memory.",
+      "relations": [
+        "ali",
+        "fatima",
+        "hasan",
+        "yazid"
+      ],
+      "source": "Sīrah chapter 24",
+      "appearances": [
+        {
+          "chapter": 24,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s24-m01"
+        }
+      ],
+      "first": {
+        "chapter": 24,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s24-m01"
+      }
+    },
+    {
+      "id": "abu-talib",
+      "name": "Abū Ṭālib",
+      "aliases": [
+        "Abū Ṭālib",
+        "Abu Talib"
+      ],
+      "group": "household",
+      "kind": "person",
+      "role": "Paternal uncle and protector",
+      "bio": "Provided kin-based protection to the Prophet in Makkah. His death affected the Prophet's security during the Meccan mission.",
+      "relations": [
+        "muhammad",
+        "hamza"
+      ],
+      "source": "Sīrah chapters 7, 11",
+      "appearances": [
+        {
+          "chapter": 6,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s06-s03"
+        },
+        {
+          "chapter": 7,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s07-m01"
+        },
+        {
+          "chapter": 8,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s08-m01"
+        },
+        {
+          "chapter": 11,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s11-m01"
+        }
+      ],
+      "first": {
+        "chapter": 6,
+        "layer": "sharh",
+        "paragraph": 3,
+        "anchor": "s06-s03"
+      }
+    },
+    {
+      "id": "hamza",
+      "name": "Ḥamzah",
+      "aliases": [
+        "Ḥamzah",
+        "Hamzah"
+      ],
+      "group": "household",
+      "kind": "person",
+      "role": "Uncle of the Prophet and companion",
+      "bio": "A prominent supporter of the early Muslim community, killed at the Battle of Uḥud.",
+      "relations": [
+        "muhammad",
+        "abu-talib"
+      ],
+      "source": "Sīrah chapter 15",
+      "appearances": [
+        {
+          "chapter": 15,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s15-m01"
+        }
+      ],
+      "first": {
+        "chapter": 15,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s15-m01"
+      }
+    },
+    {
+      "id": "umm-salamah",
+      "name": "Umm Salamah",
+      "aliases": [
+        "Umm Salamah",
+        "Umm Salama"
+      ],
+      "group": "household",
+      "kind": "person",
+      "role": "Wife and practical counsellor",
+      "bio": "At al-Ḥudaybiyyah she advised the Prophet to perform the rites visibly when the companions were distressed and slow to respond.",
+      "relations": [
+        "muhammad",
+        "abu-jandal"
+      ],
+      "source": "al-Bukhārī 2731–2732",
+      "appearances": [
+        {
+          "chapter": 16,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s16-m01"
+        },
+        {
+          "chapter": 19,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s19-s04"
+        }
+      ],
+      "first": {
+        "chapter": 16,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s16-m01"
+      }
+    },
+    {
+      "id": "banuhashim",
+      "name": "Banū Hāshim",
+      "aliases": [
+        "Banū Hāshim",
+        "Banu Hashim"
+      ],
+      "group": "household",
+      "kind": "community",
+      "role": "Kin group of the Prophet",
+      "bio": "The clan within Quraysh to which Muḥammad belonged. Its kin ties affected protection, economic pressure and the politics of early allegiance.",
+      "relations": [
+        "muhammad",
+        "abu-talib"
+      ],
+      "source": "Sīrah chapters 7–11",
+      "appearances": [
+        {
+          "chapter": 7,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s07-m01"
+        },
+        {
+          "chapter": 8,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s08-m01"
+        },
+        {
+          "chapter": 10,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s10-m01"
+        }
+      ],
+      "first": {
+        "chapter": 7,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s07-m01"
+      }
+    },
+    {
+      "id": "abu-bakr",
+      "name": "Abū Bakr",
+      "aliases": [
+        "Abū Bakr",
+        "Abu Bakr"
+      ],
+      "group": "emigrants",
+      "kind": "person",
+      "role": "Early companion and first caliph in Sunni sequence",
+      "bio": "Companion in the Hijrah and later a central participant in the succession debates and the consolidation of public obligations after 632.",
+      "relations": [
+        "muhammad",
+        "aisha",
+        "umar"
+      ],
+      "source": "Sīrah chapters 11, 20",
+      "appearances": [
+        {
+          "chapter": 8,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s08-m01"
+        },
+        {
+          "chapter": 10,
+          "layer": "sharh",
+          "paragraph": 6,
+          "anchor": "s10-s06"
+        },
+        {
+          "chapter": 11,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s11-m02"
+        },
+        {
+          "chapter": 20,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s20-m01"
+        },
+        {
+          "chapter": 21,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s21-m01"
+        }
+      ],
+      "first": {
+        "chapter": 8,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s08-m01"
+      }
+    },
+    {
+      "id": "umar",
+      "name": "ʿUmar",
+      "aliases": [
+        "ʿUmar ibn al-Khaṭṭāb",
+        "Umar ibn al-Khattab",
+        "ʿUmar",
+        "Umar"
+      ],
+      "group": "emigrants",
+      "kind": "person",
+      "role": "Companion and second caliph",
+      "bio": "Asked the Prophet about dedicating valuable property at Khaybar, a formative endowment precedent. Later ruled amid major conquests and administrative changes.",
+      "relations": [
+        "abu-bakr",
+        "muhammad",
+        "uthman"
+      ],
+      "source": "al-Bukhārī 2737; Sīrah chapters 20–22",
+      "appearances": [
+        {
+          "chapter": 16,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s16-s01"
+        },
+        {
+          "chapter": 17,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s17-s03"
+        },
+        {
+          "chapter": 20,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s20-s01"
+        },
+        {
+          "chapter": 21,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s21-m01"
+        },
+        {
+          "chapter": 22,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s22-m01"
+        },
+        {
+          "chapter": 28,
+          "layer": "sharh",
+          "paragraph": 6,
+          "anchor": "s28-s06"
+        }
+      ],
+      "first": {
+        "chapter": 16,
+        "layer": "sharh",
+        "paragraph": 1,
+        "anchor": "s16-s01"
+      }
+    },
+    {
+      "id": "uthman",
+      "name": "ʿUthmān",
+      "aliases": [
+        "ʿUthmān ibn ʿAffān",
+        "ʿUthmān",
+        "Uthman"
+      ],
+      "group": "emigrants",
+      "kind": "person",
+      "role": "Early companion and third caliph",
+      "bio": "Led the expanding community after ʿUmar. Disputes concerning his administration preceded his killing in 656.",
+      "relations": [
+        "umar",
+        "ali"
+      ],
+      "source": "Sīrah chapter 23",
+      "appearances": [
+        {
+          "chapter": 23,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s23-m01"
+        }
+      ],
+      "first": {
+        "chapter": 23,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s23-m01"
+      }
+    },
+    {
+      "id": "musab",
+      "name": "Muṣʿab ibn ʿUmayr",
+      "aliases": [
+        "Muṣʿab ibn ʿUmayr",
+        "Muṣʿab",
+        "Musab"
+      ],
+      "group": "emigrants",
+      "kind": "person",
+      "role": "Early instructor sent to Yathrib",
+      "bio": "Taught Qurʾānic recitation and prayer in Yathrib before the Hijrah, helping form local believers prepared to welcome the Prophet.",
+      "relations": [
+        "muhammad",
+        "aws",
+        "khazraj"
+      ],
+      "source": "Sīrah chapter 11",
+      "appearances": [
+        {
+          "chapter": 11,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s11-m02"
+        },
+        {
+          "chapter": 27,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s27-s04"
+        }
+      ],
+      "first": {
+        "chapter": 11,
+        "layer": "matn",
+        "paragraph": 2,
+        "anchor": "s11-m02"
+      }
+    },
+    {
+      "id": "jafar",
+      "name": "Jaʿfar ibn Abī Ṭālib",
+      "aliases": [
+        "Jaʿfar ibn Abī Ṭālib",
+        "Jaʿfar",
+        "Jafar"
+      ],
+      "group": "emigrants",
+      "kind": "person",
+      "role": "Emigrant and spokesman in Aksum",
+      "bio": "A relative of the Prophet who is remembered as explaining the Muslim faith at the Negus's court during the early migration.",
+      "relations": [
+        "muhammad",
+        "negus"
+      ],
+      "source": "Sīrah chapter 10",
+      "appearances": [
+        {
+          "chapter": 10,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s10-s01"
+        }
+      ],
+      "first": {
+        "chapter": 10,
+        "layer": "sharh",
+        "paragraph": 1,
+        "anchor": "s10-s01"
+      }
+    },
+    {
+      "id": "bilal",
+      "name": "Bilāl",
+      "aliases": [
+        "Bilāl ibn Rabāḥ",
+        "Bilāl",
+        "Bilal"
+      ],
+      "group": "emigrants",
+      "kind": "person",
+      "role": "Early believer and muezzin",
+      "bio": "Formerly enslaved companion remembered for his devotion and association with the public call to prayer.",
+      "relations": [
+        "muhammad"
+      ],
+      "source": "Early Sīrah and prayer traditions",
+      "appearances": [
+        {
+          "chapter": 9,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s09-m01"
+        }
+      ],
+      "first": {
+        "chapter": 9,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s09-m01"
+      }
+    },
+    {
+      "id": "abu-jandal",
+      "name": "Abū Jandal",
+      "aliases": [
+        "Abū Jandal ibn Suhayl",
+        "Abū Jandal",
+        "Abu Jandal"
+      ],
+      "group": "emigrants",
+      "kind": "person",
+      "role": "Vulnerable believer at the Hudaybiyyah negotiations",
+      "bio": "A son of the Meccan negotiator Suhayl ibn ʿAmr, whose arrival seeking protection made the treaty's controversial return clause immediate and painful.",
+      "relations": [
+        "suhayl",
+        "muhammad",
+        "umm-salamah"
+      ],
+      "source": "al-Bukhārī 2731–2732; Sīrah chapter 16",
+      "appearances": [
+        {
+          "chapter": 16,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s16-m01"
+        }
+      ],
+      "first": {
+        "chapter": 16,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s16-m01"
+      }
+    },
+    {
+      "id": "maiz",
+      "name": "Māʿiz",
+      "aliases": [
+        "Māʿiz ibn Mālik",
+        "Māʿiz",
+        "Maʿiz"
+      ],
+      "group": "emigrants",
+      "kind": "person",
+      "role": "Penitent in a transmitted judicial encounter",
+      "bio": "Presented a confession of adultery to the Prophet. The report includes repeated questioning, public judgment and later discussion of repentance.",
+      "relations": [
+        "muhammad",
+        "ghamidi"
+      ],
+      "source": "Muslim 1695a–b",
+      "appearances": [
+        {
+          "chapter": 13,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s13-m02"
+        }
+      ],
+      "first": {
+        "chapter": 13,
+        "layer": "matn",
+        "paragraph": 2,
+        "anchor": "s13-m02"
+      }
+    },
+    {
+      "id": "ghamidi",
+      "name": "Woman of Ghāmid",
+      "aliases": [
+        "woman from Ghāmid",
+        "Woman of Ghāmid",
+        "woman of Ghāmid",
+        "Ghāmidī woman",
+        "Ghāmidiyya"
+      ],
+      "group": "emigrants",
+      "kind": "person",
+      "role": "Penitent mother in a judicial encounter",
+      "bio": "Sought judgment concerning adultery; pregnancy and care of her child shaped the course of the case. The transmitted narrative also concerns repentance and public speech.",
+      "relations": [
+        "maiz",
+        "muhammad"
+      ],
+      "source": "Muslim 1695a–b; Sīrah chapter 13",
+      "appearances": [
+        {
+          "chapter": 13,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s13-m02"
+        },
+        {
+          "chapter": 28,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s28-s02"
+        }
+      ],
+      "first": {
+        "chapter": 13,
+        "layer": "matn",
+        "paragraph": 2,
+        "anchor": "s13-m02"
+      }
+    },
+    {
+      "id": "muhajirun",
+      "name": "Muhājirūn",
+      "aliases": [
+        "Muhājirūn",
+        "Muhajirun",
+        "emigrants"
+      ],
+      "group": "emigrants",
+      "kind": "community",
+      "role": "Meccan emigrants",
+      "bio": "Those who left Makkah for refuge or the new Medinan community. Their loss of property and protection created obligations of hospitality and mutual aid.",
+      "relations": [
+        "ansar",
+        "muhammad"
+      ],
+      "source": "Qurʾān 59:8–9; Sīrah chapter 12",
+      "appearances": [
+        {
+          "chapter": 7,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s07-m01"
+        },
+        {
+          "chapter": 10,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s10-m01"
+        },
+        {
+          "chapter": 11,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s11-m02"
+        },
+        {
+          "chapter": 12,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s12-m01"
+        },
+        {
+          "chapter": 14,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s14-m01"
+        },
+        {
+          "chapter": 17,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s17-m01"
+        },
+        {
+          "chapter": 20,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s20-m01"
+        }
+      ],
+      "first": {
+        "chapter": 7,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s07-m01"
+      }
+    },
+    {
+      "id": "ansar",
+      "name": "Anṣār",
+      "aliases": [
+        "Anṣār",
+        "Ansar"
+      ],
+      "group": "communities",
+      "kind": "community",
+      "role": "Medinan supporters",
+      "bio": "The believers of Yathrib who welcomed the Prophet and emigrants, undertaking hospitality, teaching and common defence.",
+      "relations": [
+        "muhajirun",
+        "aws",
+        "khazraj"
+      ],
+      "source": "Qurʾān 59:9; Sīrah chapters 11–12",
+      "appearances": [
+        {
+          "chapter": 20,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s20-m01"
+        }
+      ],
+      "first": {
+        "chapter": 20,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s20-m01"
+      }
+    },
+    {
+      "id": "aws",
+      "name": "Aws",
+      "aliases": [
+        "Banū Aws",
+        "al-Aws",
+        "Aws"
+      ],
+      "group": "communities",
+      "kind": "community",
+      "role": "One of the major groups of Yathrib",
+      "bio": "A major tribal grouping in Yathrib alongside Khazraj, with its own alliances and earlier conflicts. Members later participated in the Medinan community.",
+      "relations": [
+        "khazraj",
+        "ansar"
+      ],
+      "source": "Sīrah chapters 11–12",
+      "appearances": [
+        {
+          "chapter": 7,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s07-m01"
+        },
+        {
+          "chapter": 11,
+          "layer": "sharh",
+          "paragraph": 6,
+          "anchor": "s11-s06"
+        },
+        {
+          "chapter": 12,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s12-m01"
+        }
+      ],
+      "first": {
+        "chapter": 7,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s07-m01"
+      }
+    },
+    {
+      "id": "khazraj",
+      "name": "Khazraj",
+      "aliases": [
+        "Banū Khazraj",
+        "al-Khazraj",
+        "Khazraj"
+      ],
+      "group": "communities",
+      "kind": "community",
+      "role": "One of the major groups of Yathrib",
+      "bio": "A principal Medinan grouping alongside Aws, whose members were among those engaged in the earliest pledges and formation of the Anṣār.",
+      "relations": [
+        "aws",
+        "ansar"
+      ],
+      "source": "Sīrah chapters 11–12",
+      "appearances": [
+        {
+          "chapter": 7,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s07-m01"
+        },
+        {
+          "chapter": 11,
+          "layer": "sharh",
+          "paragraph": 6,
+          "anchor": "s11-s06"
+        },
+        {
+          "chapter": 12,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s12-m01"
+        }
+      ],
+      "first": {
+        "chapter": 7,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s07-m01"
+      }
+    },
+    {
+      "id": "abu-ayyub",
+      "name": "Abū Ayyūb al-Anṣārī",
+      "aliases": [
+        "Abū Ayyūb al-Anṣārī",
+        "Abū Ayyūb",
+        "Abu Ayyub"
+      ],
+      "group": "communities",
+      "kind": "person",
+      "role": "Medinan host and companion",
+      "bio": "Among the Anṣār remembered for hosting the Prophet after his arrival in Madinah.",
+      "relations": [
+        "muhammad",
+        "ansar"
+      ],
+      "source": "Sīrah reports of the Hijrah",
+      "appearances": [],
+      "first": null
+    },
+    {
+      "id": "anas",
+      "name": "Anas ibn Mālik",
+      "aliases": [
+        "Anas ibn Mālik",
+        "Anas"
+      ],
+      "group": "communities",
+      "kind": "person",
+      "role": "Medinan companion and transmitter",
+      "bio": "Served the Prophet for years and later transmitted memories of his daily conduct, including patient attention toward those serving him.",
+      "relations": [
+        "muhammad",
+        "ansar"
+      ],
+      "source": "Muslim 2309a",
+      "appearances": [],
+      "first": null
+    },
+    {
+      "id": "sad-muadh",
+      "name": "Saʿd ibn Muʿādh",
+      "aliases": [
+        "Saʿd ibn Muʿādh",
+        "Sad ibn Muadh"
+      ],
+      "group": "communities",
+      "kind": "person",
+      "role": "Leader among the Aws",
+      "bio": "An important Medinan figure whose leadership and relations to Banū Qurayẓa appear in reports of the Trench's aftermath.",
+      "relations": [
+        "aws",
+        "banu-qurayza"
+      ],
+      "source": "Sīrah chapter 15; Maghāzī reports",
+      "appearances": [
+        {
+          "chapter": 15,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s15-m01"
+        }
+      ],
+      "first": {
+        "chapter": 15,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s15-m01"
+      }
+    },
+    {
+      "id": "ibn-ubayy",
+      "name": "ʿAbd Allāh ibn Ubayy",
+      "aliases": [
+        "ʿAbd Allāh ibn Ubayy",
+        "Abd Allah ibn Ubayy",
+        "Ibn Ubayy"
+      ],
+      "group": "communities",
+      "kind": "person",
+      "role": "Medinan political figure",
+      "bio": "A local leader whose relationship to the Prophet's community features in accounts of divided loyalties at Madinah.",
+      "relations": [
+        "khazraj",
+        "ansar"
+      ],
+      "source": "Sīrah chapter 15 and reports of Medina",
+      "appearances": [],
+      "first": null
+    },
+    {
+      "id": "quraysh",
+      "name": "Quraysh",
+      "aliases": [
+        "Quraysh's",
+        "Quraysh"
+      ],
+      "group": "communities",
+      "kind": "community",
+      "role": "Meccan tribal confederation",
+      "bio": "The principal Meccan community around the Kaʿbah, including those who protected the Prophet and those who opposed his mission. Its leaders negotiated the Hudaybiyyah truce.",
+      "relations": [
+        "banuhashim",
+        "suhayl",
+        "abu-sufyan"
+      ],
+      "source": "Sīrah chapters 7–18",
+      "appearances": [
+        {
+          "chapter": 2,
+          "layer": "sharh",
+          "paragraph": 40,
+          "anchor": "s02-s40"
+        },
+        {
+          "chapter": 6,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s06-m01"
+        },
+        {
+          "chapter": 7,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s07-m01"
+        },
+        {
+          "chapter": 8,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s08-m01"
+        },
+        {
+          "chapter": 9,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s09-m01"
+        },
+        {
+          "chapter": 10,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s10-s01"
+        },
+        {
+          "chapter": 11,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s11-m01"
+        },
+        {
+          "chapter": 13,
+          "layer": "sharh",
+          "paragraph": 8,
+          "anchor": "s13-s08"
+        },
+        {
+          "chapter": 14,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s14-m01"
+        },
+        {
+          "chapter": 15,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s15-m01"
+        },
+        {
+          "chapter": 16,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s16-m01"
+        },
+        {
+          "chapter": 17,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s17-m01"
+        }
+      ],
+      "first": {
+        "chapter": 2,
+        "layer": "sharh",
+        "paragraph": 40,
+        "anchor": "s02-s40"
+      }
+    },
+    {
+      "id": "banu-qaynuqa",
+      "name": "Banū Qaynuqāʿ",
+      "aliases": [
+        "Banū Qaynuqāʿ",
+        "Banu Qaynuqa"
+      ],
+      "group": "communities",
+      "kind": "community",
+      "role": "Jewish-associated Medinan group",
+      "bio": "One of the groups named in traditional accounts of the Jewish communities of Medina; particular treaties and conflicts require comparison across recensions.",
+      "relations": [
+        "banu-nadir",
+        "banu-qurayza"
+      ],
+      "source": "Medinan Sīrah recensions",
+      "appearances": [
+        {
+          "chapter": 15,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s15-m01"
+        }
+      ],
+      "first": {
+        "chapter": 15,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s15-m01"
+      }
+    },
+    {
+      "id": "banu-nadir",
+      "name": "Banū Naḍīr",
+      "aliases": [
+        "Banū Naḍīr",
+        "Banu Nadir"
+      ],
+      "group": "communities",
+      "kind": "community",
+      "role": "Medinan Jewish-associated group",
+      "bio": "A named Jewish community in the transmitted Medinan narratives. Its relations with the new public order and later conflict require source-critical analysis.",
+      "relations": [
+        "banu-qaynuqa",
+        "banu-qurayza"
+      ],
+      "source": "Medinan Sīrah recensions",
+      "appearances": [],
+      "first": null
+    },
+    {
+      "id": "banu-qurayza",
+      "name": "Banū Qurayẓa",
+      "aliases": [
+        "Banū Qurayẓa",
+        "Banu Qurayza"
+      ],
+      "group": "communities",
+      "kind": "community",
+      "role": "Medinan Jewish-associated group",
+      "bio": "Appears in the accounts of alliances and the siege of Madinah; the reported aftermath and judicial details have an extensive and debated historiography.",
+      "relations": [
+        "banu-nadir",
+        "sad-muadh"
+      ],
+      "source": "Medinan Sīrah and maghāzī sources",
+      "appearances": [],
+      "first": null
+    },
+    {
+      "id": "abu-jahl",
+      "name": "Abū Jahl",
+      "aliases": [
+        "Abū Jahl",
+        "Abu Jahl"
+      ],
+      "group": "communities",
+      "kind": "person",
+      "role": "Prominent opponent in Makkah",
+      "bio": "Meccan leader remembered for opposition to the early Muslims; killed at the Battle of Badr.",
+      "relations": [
+        "quraysh",
+        "abu-sufyan"
+      ],
+      "source": "Sīrah chapters 9, 14",
+      "appearances": [],
+      "first": null
+    },
+    {
+      "id": "abu-sufyan",
+      "name": "Abū Sufyān",
+      "aliases": [
+        "Abū Sufyān",
+        "Abu Sufyan"
+      ],
+      "group": "communities",
+      "kind": "person",
+      "role": "Meccan leader and later member of Muslim community",
+      "bio": "An influential figure in Quraysh's conflicts with the early Muslims and the political changes around the conquest of Makkah.",
+      "relations": [
+        "quraysh",
+        "muawiya"
+      ],
+      "source": "Sīrah chapters 14–18",
+      "appearances": [],
+      "first": null
+    },
+    {
+      "id": "suhayl",
+      "name": "Suhayl ibn ʿAmr",
+      "aliases": [
+        "Suhayl ibn ʿAmr",
+        "Suhayl ibn Amr",
+        "Suhayl"
+      ],
+      "group": "communities",
+      "kind": "person",
+      "role": "Meccan negotiator at al-Ḥudaybiyyah",
+      "bio": "Represented Quraysh in the treaty negotiations. His son Abū Jandal arrived during the agreement, making a clause concerning fugitives immediately contentious.",
+      "relations": [
+        "abu-jandal",
+        "quraysh"
+      ],
+      "source": "al-Bukhārī 2731–2732",
+      "appearances": [
+        {
+          "chapter": 16,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s16-s01"
+        }
+      ],
+      "first": {
+        "chapter": 16,
+        "layer": "sharh",
+        "paragraph": 1,
+        "anchor": "s16-s01"
+      }
+    },
+    {
+      "id": "hind",
+      "name": "Hind bint ʿUtbah",
+      "aliases": [
+        "Hind bint ʿUtbah",
+        "Hind bint Utbah"
+      ],
+      "group": "communities",
+      "kind": "person",
+      "role": "Meccan figure connected to Quraysh leadership",
+      "bio": "A prominent Meccan woman in accounts of the conflicts with the early Muslim community and later changes at Makkah.",
+      "relations": [
+        "abu-sufyan",
+        "quraysh"
+      ],
+      "source": "Early Sīrah traditions",
+      "appearances": [],
+      "first": null
+    },
+    {
+      "id": "negus",
+      "name": "Aṣḥamah (the Negus)",
+      "aliases": [
+        "Aṣḥamah (the Negus)",
+        "al-Najāshī",
+        "Aṣḥamah",
+        "Najashi",
+        "Negus"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Ruler of Aksum and protector of emigrants",
+      "bio": "The ruler who provided refuge to early Muslim emigrants. The Prophet later announced his death and prayed for him, according to hadith reports.",
+      "relations": [
+        "jafar",
+        "muhammad"
+      ],
+      "source": "al-Bukhārī 3877; Sīrah chapter 10",
+      "appearances": [
+        {
+          "chapter": 10,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s10-s02"
+        }
+      ],
+      "first": {
+        "chapter": 10,
+        "layer": "sharh",
+        "paragraph": 2,
+        "anchor": "s10-s02"
+      }
+    },
+    {
+      "id": "heraclius",
+      "name": "Heraclius",
+      "aliases": [
+        "Heraclius",
+        "Hiraql"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "East Roman emperor",
+      "bio": "Ruled the Eastern Roman Empire during the emergence of the Prophet's mission; the wider imperial conflicts formed part of Arabia's political setting.",
+      "relations": [],
+      "source": "Sīrah chapter 6",
+      "appearances": [],
+      "first": null
+    },
+    {
+      "id": "khusraw",
+      "name": "Khusraw II",
+      "aliases": [
+        "Khusraw II",
+        "Khusraw",
+        "Kisrā"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Sasanian shah",
+      "bio": "Sasanian ruler of Iran during its long conflict with the Eastern Roman Empire in the decades surrounding the mission.",
+      "relations": [],
+      "source": "Sīrah chapter 6",
+      "appearances": [],
+      "first": null
+    },
+    {
+      "id": "muawiya",
+      "name": "Muʿāwiyah",
+      "aliases": [
+        "Muʿāwiyah ibn Abī Sufyān",
+        "Muʿāwiyah",
+        "Muawiya"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Syrian leader and Umayyad caliph",
+      "bio": "Opposed ʿAlī during the first civil war and subsequently ruled from Damascus. The transition to dynastic succession became a major political question.",
+      "relations": [
+        "ali",
+        "yazid",
+        "abu-sufyan"
+      ],
+      "source": "Sīrah chapters 23–24",
+      "appearances": [
+        {
+          "chapter": 23,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s23-m01"
+        },
+        {
+          "chapter": 24,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s24-m01"
+        }
+      ],
+      "first": {
+        "chapter": 23,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s23-m01"
+      }
+    },
+    {
+      "id": "yazid",
+      "name": "Yazīd",
+      "aliases": [
+        "Yazīd ibn Muʿāwiyah",
+        "Yazīd",
+        "Yazid"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Umayyad ruler",
+      "bio": "Succeeded his father Muʿāwiyah; the killing of al-Ḥusayn at Karbalāʾ occurred during his rule.",
+      "relations": [
+        "muawiya",
+        "husayn"
+      ],
+      "source": "Sīrah chapter 24",
+      "appearances": [
+        {
+          "chapter": 24,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s24-m01"
+        }
+      ],
+      "first": {
+        "chapter": 24,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s24-m01"
+      }
+    },
+    {
+      "id": "abu-muslim",
+      "name": "Abū Muslim",
+      "aliases": [
+        "Abū Muslim al-Khurāsānī",
+        "Abū Muslim",
+        "Abu Muslim"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Revolutionary commander",
+      "bio": "Led forces central to the Abbasid revolution in Khurāsān and the defeat of Umayyad power in 750.",
+      "relations": [],
+      "source": "Sīrah chapter 25",
+      "appearances": [
+        {
+          "chapter": 25,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s25-m01"
+        }
+      ],
+      "first": {
+        "chapter": 25,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s25-m01"
+      }
+    },
+    {
+      "id": "mansur",
+      "name": "al-Manṣūr",
+      "aliases": [
+        "al-Manṣūr",
+        "al-Mansur"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Abbasid caliph",
+      "bio": "Founded Baghdad as a new imperial capital in 762, a city that later supported major communities of learning.",
+      "relations": [],
+      "source": "Sīrah chapter 25",
+      "appearances": [
+        {
+          "chapter": 25,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s25-m01"
+        }
+      ],
+      "first": {
+        "chapter": 25,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s25-m01"
+      }
+    },
+    {
+      "id": "mamun",
+      "name": "al-Maʾmūn",
+      "aliases": [
+        "al-Maʾmūn",
+        "al-Ma'mun",
+        "al-Mamun"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Abbasid caliph",
+      "bio": "Associated with scholarly patronage and with the *miḥnah*, the state-backed testing of a disputed theological proposition.",
+      "relations": [],
+      "source": "Sīrah chapters 26, 30",
+      "appearances": [
+        {
+          "chapter": 26,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s26-s01"
+        }
+      ],
+      "first": {
+        "chapter": 26,
+        "layer": "sharh",
+        "paragraph": 1,
+        "anchor": "s26-s01"
+      }
+    },
+    {
+      "id": "harun",
+      "name": "Hārūn al-Rashīd",
+      "aliases": [
+        "Hārūn al-Rashīd",
+        "Harun al-Rashid"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Abbasid caliph",
+      "bio": "His court and its networks of patronage belong to the scholarly and administrative history of Baghdad.",
+      "relations": [],
+      "source": "Sīrah chapter 26",
+      "appearances": [
+        {
+          "chapter": 26,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s26-s01"
+        }
+      ],
+      "first": {
+        "chapter": 26,
+        "layer": "sharh",
+        "paragraph": 1,
+        "anchor": "s26-s01"
+      }
+    },
+    {
+      "id": "hunayn",
+      "name": "Ḥunayn ibn Isḥāq",
+      "aliases": [
+        "Ḥunayn ibn Isḥāq",
+        "Hunayn ibn Ishaq"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Translator and physician",
+      "bio": "Known for comparing copies of Greek medical texts and preparing Syriac and Arabic translations for patrons and practitioners.",
+      "relations": [],
+      "source": "Sīrah chapter 26",
+      "appearances": [
+        {
+          "chapter": 26,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s26-s01"
+        }
+      ],
+      "first": {
+        "chapter": 26,
+        "layer": "sharh",
+        "paragraph": 1,
+        "anchor": "s26-s01"
+      }
+    },
+    {
+      "id": "abu-hanifa",
+      "name": "Abū Ḥanīfah",
+      "aliases": [
+        "Abū Ḥanīfah",
+        "Abu Hanifa"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Early Iraqi jurist",
+      "bio": "A major figure associated with the formation of the Ḥanafī legal tradition through the work of his students.",
+      "relations": [],
+      "source": "Sīrah chapter 28",
+      "appearances": [
+        {
+          "chapter": 28,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s28-m01"
+        }
+      ],
+      "first": {
+        "chapter": 28,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s28-m01"
+      }
+    },
+    {
+      "id": "malik",
+      "name": "Mālik ibn Anas",
+      "aliases": [
+        "Mālik ibn Anas",
+        "Mālik"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Jurist of Madinah",
+      "bio": "Associated with the *Muwaṭṭaʾ* and the scholarly life of Madinah; his students transmitted varying recensions and later interpretations.",
+      "relations": [],
+      "source": "Sīrah chapter 28",
+      "appearances": [
+        {
+          "chapter": 28,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s28-m01"
+        }
+      ],
+      "first": {
+        "chapter": 28,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s28-m01"
+      }
+    },
+    {
+      "id": "shafii",
+      "name": "al-Shāfiʿī",
+      "aliases": [
+        "al-Shāfiʿī",
+        "al-Shafii",
+        "Shafi'i"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Jurist and legal theorist",
+      "bio": "A leading contributor to the articulation of juristic evidence and legal method, especially in the tradition of *al-Risāla*.",
+      "relations": [],
+      "source": "Sīrah chapters 27–28",
+      "appearances": [
+        {
+          "chapter": 27,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s27-s04"
+        },
+        {
+          "chapter": 28,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s28-m01"
+        }
+      ],
+      "first": {
+        "chapter": 27,
+        "layer": "sharh",
+        "paragraph": 4,
+        "anchor": "s27-s04"
+      }
+    },
+    {
+      "id": "ahmad-hanbal",
+      "name": "Aḥmad ibn Ḥanbal",
+      "aliases": [
+        "Aḥmad ibn Ḥanbal",
+        "Ahmad ibn Hanbal",
+        "Ibn Ḥanbal"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Traditionist and jurist",
+      "bio": "Important to the collection and evaluation of prophetic reports and the later formation of Ḥanbalī legal thought.",
+      "relations": [],
+      "source": "Sīrah chapter 28",
+      "appearances": [
+        {
+          "chapter": 26,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s26-s02"
+        },
+        {
+          "chapter": 28,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s28-m01"
+        }
+      ],
+      "first": {
+        "chapter": 26,
+        "layer": "sharh",
+        "paragraph": 2,
+        "anchor": "s26-s02"
+      }
+    },
+    {
+      "id": "ghazali",
+      "name": "al-Ghazālī",
+      "aliases": [
+        "Abū Ḥāmid al-Ghazālī",
+        "al-Ghazālī",
+        "Ghazali"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Theologian, jurist and spiritual writer",
+      "bio": "Explored the validity of outward acts, intellectual argument, character formation and the inward meanings of worship.",
+      "relations": [],
+      "source": "Sīrah chapters 31–32",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 14,
+          "anchor": "s01-s14"
+        },
+        {
+          "chapter": 9,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s09-s04"
+        },
+        {
+          "chapter": 13,
+          "layer": "sharh",
+          "paragraph": 8,
+          "anchor": "s13-s08"
+        },
+        {
+          "chapter": 19,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s19-s03"
+        },
+        {
+          "chapter": 30,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s30-s01"
+        },
+        {
+          "chapter": 31,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s31-m01"
+        },
+        {
+          "chapter": 32,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s32-m01"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "sharh",
+        "paragraph": 14,
+        "anchor": "s01-s14"
+      }
+    },
+    {
+      "id": "ibn-rushd",
+      "name": "Ibn Rushd",
+      "aliases": [
+        "Ibn Rushd",
+        "Averroes"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Jurist and philosopher",
+      "bio": "Produced influential analyses of juristic disagreement and philosophical demonstration in al-Andalus.",
+      "relations": [],
+      "source": "Sīrah chapters 31, 35",
+      "appearances": [
+        {
+          "chapter": 28,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s28-s03"
+        },
+        {
+          "chapter": 31,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s31-m01"
+        },
+        {
+          "chapter": 35,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s35-s02"
+        }
+      ],
+      "first": {
+        "chapter": 28,
+        "layer": "sharh",
+        "paragraph": 3,
+        "anchor": "s28-s03"
+      }
+    },
+    {
+      "id": "ibn-arabi",
+      "name": "Ibn ʿArabī",
+      "aliases": [
+        "Ibn ʿArabī",
+        "Ibn Arabi"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Mystical author and metaphysician",
+      "bio": "Developed major accounts of prophetic wisdom, divine manifestation and spiritual realization, subsequently elaborated by students and commentators.",
+      "relations": [],
+      "source": "Sīrah chapters 33, 35",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 5,
+          "anchor": "s01-m05"
+        },
+        {
+          "chapter": 11,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s11-m01"
+        },
+        {
+          "chapter": 19,
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s19-s05"
+        },
+        {
+          "chapter": 33,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s33-m01"
+        },
+        {
+          "chapter": 35,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s35-s02"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 5,
+        "anchor": "s01-m05"
+      }
+    },
+    {
+      "id": "qunawi",
+      "name": "al-Qūnawī",
+      "aliases": [
+        "al-Qūnawī",
+        "Qūnawī"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Metaphysician and interpreter",
+      "bio": "A major successor in the intellectual tradition of Ibn ʿArabī, associated with technical accounts of spiritual knowledge and the comprehensive station.",
+      "relations": [
+        "ibn-arabi"
+      ],
+      "source": "Sīrah chapter 33",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 21,
+          "anchor": "s01-s21"
+        },
+        {
+          "chapter": 11,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s11-s04"
+        },
+        {
+          "chapter": 19,
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s19-s05"
+        },
+        {
+          "chapter": 33,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s33-m01"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "sharh",
+        "paragraph": 21,
+        "anchor": "s01-s21"
+      }
+    },
+    {
+      "id": "farghani",
+      "name": "al-Farghānī",
+      "aliases": [
+        "al-Farghānī",
+        "Farghānī"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Sufi metaphysical writer",
+      "bio": "Explained the correspondence of divine disclosure, the Qurʾān and embodied prophetic perfection through a developed metaphysical vocabulary.",
+      "relations": [
+        "qunawi"
+      ],
+      "source": "Sīrah chapter 33",
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 21,
+          "anchor": "s01-s21"
+        },
+        {
+          "chapter": 11,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s11-s04"
+        },
+        {
+          "chapter": 19,
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s19-s05"
+        },
+        {
+          "chapter": 33,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s33-m01"
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "sharh",
+        "paragraph": 21,
+        "anchor": "s01-s21"
+      }
+    },
+    {
+      "id": "saladin",
+      "name": "Ṣalāḥ al-Dīn",
+      "aliases": [
+        "Ṣalāḥ al-Dīn",
+        "Salah al-Din",
+        "Saladin"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Ruler of Egypt and Syria",
+      "bio": "United political and military resources for campaigns in Syria and Palestine and the recovery of Jerusalem in 1187.",
+      "relations": [],
+      "source": "Sīrah chapter 34",
+      "appearances": [
+        {
+          "chapter": 34,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s34-m01"
+        }
+      ],
+      "first": {
+        "chapter": 34,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s34-m01"
+      }
+    },
+    {
+      "id": "nur-din",
+      "name": "Nūr al-Dīn",
+      "aliases": [
+        "Nūr al-Dīn",
+        "Nur al-Din"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Syrian ruler and patron",
+      "bio": "Associated with the earlier political consolidation and public patronage that preceded Ṣalāḥ al-Dīn's campaigns.",
+      "relations": [
+        "saladin"
+      ],
+      "source": "Sīrah chapter 34",
+      "appearances": [
+        {
+          "chapter": 34,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s34-m01"
+        }
+      ],
+      "first": {
+        "chapter": 34,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s34-m01"
+      }
+    },
+    {
+      "id": "ghazan",
+      "name": "Ghāzān",
+      "aliases": [
+        "Ghāzān",
+        "Ghazan"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Ilkhanid ruler",
+      "bio": "His public conversion to Islam in 1295 became important to Ilkhanid religious policy; local religious practices changed unevenly.",
+      "relations": [],
+      "source": "Sīrah chapter 37",
+      "appearances": [
+        {
+          "chapter": 37,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s37-m01"
+        }
+      ],
+      "first": {
+        "chapter": 37,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s37-m01"
+      }
+    },
+    {
+      "id": "teguder",
+      "name": "Aḥmad Tegüder",
+      "aliases": [
+        "Aḥmad Tegüder",
+        "Ahmad Teguder",
+        "Tegüder"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Earlier Muslim Ilkhan",
+      "bio": "An Ilkhanid ruler who professed Islam before Ghāzān; his case corrects simple dynastic conversion chronologies.",
+      "relations": [
+        "ghazan"
+      ],
+      "source": "Sīrah chapter 37",
+      "appearances": [
+        {
+          "chapter": 37,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s37-s01"
+        }
+      ],
+      "first": {
+        "chapter": 37,
+        "layer": "sharh",
+        "paragraph": 1,
+        "anchor": "s37-s01"
+      }
+    },
+    {
+      "id": "mansa-musa",
+      "name": "Mansa Mūsā",
+      "aliases": [
+        "Mansa Mūsā",
+        "Mansa Musa"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Ruler of Mali",
+      "bio": "His pilgrimage in 1324 publicized Mali's wealth and its connections with wider Muslim regions.",
+      "relations": [],
+      "source": "Sīrah chapter 38",
+      "appearances": [
+        {
+          "chapter": 38,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s38-m01"
+        }
+      ],
+      "first": {
+        "chapter": 38,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s38-m01"
+      }
+    },
+    {
+      "id": "ahmad-baba",
+      "name": "Aḥmad Bābā",
+      "aliases": [
+        "Aḥmad Bābā",
+        "Ahmad Baba"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Scholar of Timbuktu",
+      "bio": "Known for learned works and for displacement following Moroccan intervention in the Songhay world.",
+      "relations": [],
+      "source": "Sīrah chapter 38",
+      "appearances": [
+        {
+          "chapter": 38,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s38-s03"
+        }
+      ],
+      "first": {
+        "chapter": 38,
+        "layer": "sharh",
+        "paragraph": 3,
+        "anchor": "s38-s03"
+      }
+    },
+    {
+      "id": "khan-jahan",
+      "name": "Khān Jahān",
+      "aliases": [
+        "Khān Jahān",
+        "Khan Jahan"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Regional patron in Bengal",
+      "bio": "Remembered in accounts of settlement and infrastructure around Bagerhat. His dated tomb inscription provides an important historical anchor.",
+      "relations": [],
+      "source": "Sīrah chapter 40",
+      "appearances": [],
+      "first": null
+    },
+    {
+      "id": "akbar",
+      "name": "Akbar",
+      "aliases": [
+        "Akbar the Great",
+        "Akbar"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Mughal emperor",
+      "bio": "His court pursued debates and policies of imperial inclusion amid religious plurality in India.",
+      "relations": [],
+      "source": "Sīrah chapter 42",
+      "appearances": [
+        {
+          "chapter": 42,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s42-m01"
+        }
+      ],
+      "first": {
+        "chapter": 42,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s42-m01"
+      }
+    },
+    {
+      "id": "aurangzeb",
+      "name": "Aurangzeb",
+      "aliases": [
+        "Aurangzeb",
+        "ʿĀlamgīr",
+        "Alamgir"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Mughal emperor",
+      "bio": "Patronized a substantial Ḥanafī legal compilation through a group of jurists while governing an empire with varied local institutions.",
+      "relations": [],
+      "source": "Sīrah chapter 42",
+      "appearances": [
+        {
+          "chapter": 42,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s42-m01"
+        }
+      ],
+      "first": {
+        "chapter": 42,
+        "layer": "matn",
+        "paragraph": 1,
+        "anchor": "s42-m01"
+      }
+    },
+    {
+      "id": "dara",
+      "name": "Dārā Shukoh",
+      "aliases": [
+        "Dārā Shukoh",
+        "Dara Shukoh"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "Mughal prince and comparative religious author",
+      "bio": "Sponsored a Persian rendering of Sanskrit Upaniṣadic texts and interpreted them through his own contested universalizing framework.",
+      "relations": [
+        "akbar",
+        "aurangzeb"
+      ],
+      "source": "Sīrah chapter 36",
+      "appearances": [],
+      "first": null
+    },
+    {
+      "id": "wali-allah",
+      "name": "Shāh Walī Allāh",
+      "aliases": [
+        "Shāh Walī Allāh",
+        "Shah Wali Allah"
+      ],
+      "group": "wider",
+      "kind": "person",
+      "role": "South Asian scholar",
+      "bio": "Developed work on hadith, juristic reasoning and spiritual thought within the conditions of late Mughal India.",
+      "relations": [],
+      "source": "Sīrah chapter 42",
+      "appearances": [
+        {
+          "chapter": 42,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s42-s02"
+        }
+      ],
+      "first": {
+        "chapter": 42,
+        "layer": "sharh",
+        "paragraph": 2,
+        "anchor": "s42-s02"
+      }
+    }
+  ]
+}
