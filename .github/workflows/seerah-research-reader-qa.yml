@@ -45,10 +45,9 @@ jobs:
           npm install --no-save --no-package-lock --prefix research/seerah/qa playwright@1.56.1
           cd research/seerah/qa
           npx playwright install --with-deps ${{ matrix.browser }}
-      - name: Run real mobile and desktop restored reader acceptance
+      - name: Run real mobile and desktop default restored reader acceptance
         env:
           GNAMMA_BROWSER: ${{ matrix.browser }}
-          GNAMMA_URL: http://127.0.0.1:8765/research/seerah/read-restored-1.8.0.html
           GNAMMA_REPORT_DIR: /tmp/seerah-reader-${{ matrix.browser }}
         run: |
           python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/seerah-http.log 2>&1 &
