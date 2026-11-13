@@ -138,6 +138,6 @@ allTab.onclick=()=>{app.showReferences=false;app.index=0;render()};
 refTab.onclick=()=>{app.showReferences=true;app.index=0;render()};
 prev.onclick=()=>{app.index=Math.max(0,app.index-1);render();scroller.scrollTop=0};
 next.onclick=()=>{app.index++;render();scroller.scrollTop=0};
-function expose(){return {open,close:shut,goTo(id){if(!app.records){open();return}const i=app.records.findIndex(x=>x.id===id);if(i<0)return;app.section='all';section.value='all';app.query='';search.value='';app.showReferences=true;const idx=notes().findIndex(x=>x.id===id);app.index=Math.floor(idx/12);render();open();},counts:()=>({loaded:app.records?.length||0,visible:app.filtered.length})}}
+function expose(){return {open,close:shut,goTo(id){if(!app.records){open();return}const i=app.records.findIndex(x=>x.id===id);if(i<0)return;app.section='all';section.value='all';app.query='';search.value='';app.showReferences=true;const idx=notes().findIndex(x=>x.id===id);app.index=Math.floor(idx/12);render();open();},counts:()=>({loaded:app.records?.length||0,visible:app.filtered.length,stage130EnglishRevisions:app.stage130EnglishRevisions||0})}}
 window.GnammaTahdhibFourLayers=Object.freeze(expose());
 })();
