@@ -26,5 +26,12 @@ jobs:
           for file in texts/al-sanandaji/taqrib-al-maram/stage51-*.js texts/al-sanandaji/taqrib-al-maram/stage51-corpus-ci.cjs texts/al-sanandaji/taqrib-al-maram/cumulative-stage51.js; do
             node --check "$file"
           done
+      - name: Validate current Volume I update syntax
+        run: |
+          node --check texts/al-sanandaji/taqrib-al-maram/stage85-source-delta.js
+          node --check texts/al-sanandaji/taqrib-al-maram/stage86-source-delta.js
+          node --check texts/al-sanandaji/taqrib-al-maram/stage86-corpus-ci.cjs
       - name: Validate source-page joins, coverage and reader order
         run: node texts/al-sanandaji/taqrib-al-maram/stage51-corpus-ci.cjs
+      - name: Validate Volume I source positions, stable IDs and absence of false completion claims
+        run: node texts/al-sanandaji/taqrib-al-maram/stage86-corpus-ci.cjs
