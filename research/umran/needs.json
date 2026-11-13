@@ -37,7 +37,8 @@
       "publication": "research_draft",
       "example_project_ids": [
         "education-fund",
-        "southgate"
+        "southgate",
+        "bangi-education-support"
       ],
       "evidence_case_ids": [
         "bangi-education-campaign"
@@ -73,7 +74,8 @@
       "reviewed": "2026-11-13",
       "publication": "research_draft",
       "example_project_ids": [
-        "education-fund"
+        "education-fund",
+        "bangi-education-support"
       ],
       "evidence_case_ids": [
         "malaysia-learning",
@@ -312,7 +314,8 @@
       "example_project_ids": [
         "tanzania-skills",
         "tanzania-care",
-        "orphan-education"
+        "orphan-education",
+        "bangi-education-support"
       ],
       "actual_scope_confirmed": false,
       "sufficiency_status": "unknown",
