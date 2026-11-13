@@ -1,0 +1,103 @@
+/* GNAMMA Qawāʿid/Tamhīd · user-approved minimal scholarly citation marks.
+   The continuous text is clean; explicit source notes are summoned, never in-flow. */
+#reading .gn-inline-source-marker{
+ display:inline-block;line-height:0;font-size:.7em;vertical-align:super;
+ margin-inline:1px 2px;white-space:nowrap;unicode-bidi:isolate
+}
+#reading .gn-source-inline{
+ display:inline-flex!important;align-items:center;justify-content:center;
+ vertical-align:middle;min-width:21px;min-height:22px;width:21px;height:22px;
+ border:0!important;border-radius:5px;background:transparent!important;
+ color:var(--qt-gold,#a17d48)!important;box-shadow:none!important;
+ padding:0!important;font:700 13px/1 ui-sans-serif,system-ui!important;
+ text-decoration:none!important;cursor:pointer;white-space:nowrap
+}
+#reading .gn-source-inline:hover,#reading .gn-source-inline:focus-visible{
+ background:var(--accent-soft)!important;outline-offset:1px
+}
+#reading .gn-source-inline:focus-visible{outline:2px solid var(--qt-gold,#a17d48)}
+/* The citation icon is a note, not a change to the underlying quotation. */
+body:not([data-focus="0"]) #reading .gn-inline-source-marker,
+body:not([data-focus="0"]) #reading .gn-source-inline{display:none!important}
+body[data-focus="0"] #reading .gn-inline-source-marker{display:inline-block!important}
+/* Disable legacy automatic banners: references belong in cards and menus. */
+#reading .gn-citation-ribbon,#reading .gn-term-ribbon{display:none!important}
+body[data-apparatus="off"] #reading .gn-term-inline,
+body:not([data-focus="0"]) #reading .gn-term-inline{
+ pointer-events:none!important;color:inherit!important;border:0!important;
+ background:transparent!important;text-decoration:none!important;cursor:text!important
+}
+body:not([data-focus="0"]) #reading .gn-term-inline{display:inline!important}
+/* Scope-only source status: no full-width editor notes in running text. */
+#reading .source-notes{display:none!important}
+#gn-study-content .gn-reference-group{margin:2px 0 18px}
+#gn-study-content .gn-reference-group h3{font:500 17px/1.4 var(--font-en);color:var(--ink);margin:17px 0 7px}
+#gn-study-content .gn-evidence-label{
+ display:inline-block;font:700 10px/1.6 ui-sans-serif,system-ui;color:var(--accent);
+ letter-spacing:.05em;margin:4px 0 7px
+}
+#gn-study-content .gn-evidence-disclosure{
+ font:12px/1.7 ui-sans-serif,system-ui;color:var(--muted);border-inline-start:2px solid var(--qt-gold,#b08c57);
+ padding:3px 12px;margin:5px 0 15px
+}
+#gn-study-content .gn-source-row small{display:block;color:var(--muted);font:11px/1.5 ui-sans-serif,system-ui}
+#gn-study-content .gn-source-return{
+ display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:9px 13px;
+ border:1px solid var(--line);border-radius:10px;background:var(--accent-soft);
+ color:var(--accent);font:600 12px ui-sans-serif,system-ui;margin:10px 0 7px
+}
+.gn-citation-dialog{
+ position:fixed;inset:auto 0 0;width:min(670px,100vw);max-height:min(89dvh,900px);
+ margin:auto auto 0;background:var(--panel);color:var(--ink);
+ border:1px solid var(--line);border-radius:16px 16px 0 0;
+ box-shadow:0 -12px 45px rgba(6,23,33,.28);padding:0;overflow:auto;
+ font:14px/1.72 ui-sans-serif,system-ui
+}
+.gn-citation-dialog::backdrop{background:rgba(6,20,28,.6);backdrop-filter:blur(3px)}
+.gn-citation-dialog>header{
+ display:grid;grid-template-columns:39px minmax(0,1fr) 39px;align-items:center;
+ gap:7px;position:sticky;top:0;z-index:1;background:var(--panel);
+ border-bottom:1px solid var(--line);padding:12px 14px
+}
+.gn-citation-dialog header h2{
+ text-align:center;font:500 clamp(18px,3vw,24px)/1.35 var(--font-en);
+ margin:0;overflow-wrap:anywhere
+}
+.gn-citation-dialog header button{border:0;border-radius:9px;color:var(--ink);
+ background:transparent;font:26px ui-sans-serif,system-ui;min-width:39px;min-height:39px}
+.gn-citation-dialog header button:hover{background:var(--accent-soft)}
+.gn-citation-dialog [data-citation-back][hidden]{visibility:hidden;display:inline-flex}
+#gn-citation-body{padding:18px clamp(15px,4vw,29px) 18px;overflow-wrap:anywhere}
+.gn-citation-dialog footer{position:sticky;bottom:0;background:var(--panel);
+ border-top:1px solid var(--line);padding:10px 16px max(10px,env(safe-area-inset-bottom));text-align:center}
+.gn-citation-dialog footer button{
+ border:1px solid var(--line);border-radius:9px;background:var(--accent-soft);color:var(--accent);
+ padding:10px 25px;font:600 12px ui-sans-serif,system-ui;min-height:44px
+}
+.gn-citation-grade{color:var(--qt-gold,#b49057);font:700 11px/1.6 ui-sans-serif,system-ui;letter-spacing:.06em;margin:0 0 9px}
+.gn-citation-caution{font:12px/1.8 ui-sans-serif,system-ui;color:var(--muted);margin:8px 0 15px}
+.gn-citation-ar{
+ font:24px/2 var(--font-ar);direction:rtl;text-align:right;color:var(--ink);
+ margin:15px 0;padding:10px 0;border:0
+}
+.gn-citation-en{font:17px/1.8 var(--font-en);border-inline-start:2px solid var(--line);padding-inline-start:14px;margin:10px 0}
+.gn-citation-locations{border-top:1px solid var(--line);padding-top:12px;font:12px/1.8 ui-sans-serif,system-ui;color:var(--muted)}
+.gn-citation-locations a{white-space:nowrap}
+.gn-source-index-group{margin-top:16px}
+.gn-source-index-group h3{margin:0 0 9px;font:500 20px var(--font-en)}
+.gn-source-index-group button{
+ border:0;border-bottom:1px solid var(--line);background:transparent;
+ text-align:left;color:var(--ink);width:100%;padding:12px 4px;display:block
+}
+.gn-source-index-group button:hover{background:var(--accent-soft)}
+.gn-source-index-group strong{display:block;font:600 13px/1.6 ui-sans-serif,system-ui}
+.gn-source-index-group small{display:block;font:11px/1.5 ui-sans-serif,system-ui;color:var(--muted);margin-top:3px}
+@media(max-width:720px){
+ #reading .gn-inline-source-marker{margin-inline:0}
+ #reading .gn-source-inline{min-width:27px;width:27px;min-height:29px;height:29px;font-size:15px!important}
+ .gn-citation-dialog{max-height:92dvh}
+ .gn-citation-ar{font-size:23px}
+}
+@media print{
+ #reading .gn-inline-source-marker,#reading .gn-source-inline,.gn-citation-dialog{display:none!important}
+}
