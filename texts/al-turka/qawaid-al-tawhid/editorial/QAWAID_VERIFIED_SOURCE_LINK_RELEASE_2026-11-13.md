@@ -14,6 +14,12 @@ The existing eighteen source cards have a separate, explicit evidence register i
 | Independent comparisons (3) | Ibn Sīnā’s *Shifāʾ*, al-Ṭūsī’s *Ishārāt* commentary, al-Ḥillī’s explanation of *Tajrīd* | Existing verified comparative excerpts stay in **Parallels & reports**—not in the running text as if quoted verbatim by Ibn Turka. |
 | Other reported references (3) | *al-Iʿtimād al-Kabīr*, *Theology of Aristotle*, “Hidden Treasure” | Separate source-grade labels, with the last explicitly **unverified** as a hadith attribution. No misleading inline verification mark. |
 
+### Exact-span coverage acceptance
+
+A complete source-unit browser pass registered **12/12 eligible cards** with at least one genuine inline match, and **13/14** individual assigned unit relationships with an inserted marker. The remaining assigned relationship, Qurʾān 24:40 at **SH-060**, did not contain the precise registered Arabic words. It remains a correctly classified source reference without an invented marker; the same Qurʾānic card **does** have an exact mark in SH-022.
+
+The one formerly missed Qurʾānic marker (112:3–4 in SH-017) was resolved by an explicit **matching override** for the transmitted separated conjunction `لَمْ يَلِدْ وَ لَمْ يُولَدْ`, not by emending a source word, assuming an additional quotation, or modifying the original or English translation.
+
 ## Reading behaviour
 
 **Normal (Focus 0):** one small, discreet gold `✧` marker, inserted immediately **after** the exact Arabic expression. The marker is a CSS-generated pictogram on an empty, accessible button: the source words remain plain text and are not replaced, split into hyperlink text, or altered in the canonical data. Tapping opens an accessible source card with its evidence grade, Arabic first, existing English/synopsis properly labelled, source/witness link and return to reading.
