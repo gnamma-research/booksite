@@ -88,7 +88,8 @@ function insertAfter(node,phrase,r){
  btn.setAttribute('aria-haspopup','dialog');
  btn.setAttribute('aria-label','Read reference: '+r.title);
  btn.setAttribute('title',r.title+' · '+gradeFor(r).label);
- btn.textContent='✧';
+ // The decorative glyph is CSS-only: authorial paragraph textContent remains byte-identical.
+ btn.textContent='';
  sup.append(btn);frag.append(sup);
  frag.append(document.createTextNode(original.slice(b)));
  node.replaceWith(frag);
