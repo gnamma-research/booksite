@@ -111,5 +111,24 @@ body[data-mode="sharh"][data-focus="3"] #reading .reading-block .text-pair{borde
  #reading-dock .gn-dock-personal{gap:1px}
  .book-intro .book-actions{grid-template-columns:1fr 1fr}
 }
+/* Mobile toolbar: one intentional row; bookmarking is already in the dock. */
+@media(max-width:720px){
+ #controlbar{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;justify-content:stretch;column-gap:5px;row-gap:0;padding:6px 9px}
+ #controlbar .seg.lang{grid-column:1;grid-row:1;margin:0;min-width:0}
+ #controlbar .seg.lang button{min-width:33px;padding:4px 6px;height:32px}
+ #controlbar .layer-switches{grid-column:2;grid-row:1;width:auto!important;order:initial!important;display:flex;justify-content:center;gap:4px;min-width:0}
+ #controlbar .layer-switch{min-height:34px;padding:5px 6px;gap:4px;font-size:11px}
+ #controlbar .switch-track{width:21px;height:13px}
+ #controlbar .switch-word{display:none}
+ #controlbar #focus-button{grid-column:3;grid-row:1;padding:5px 8px;display:inline-flex;align-items:center;gap:3px;white-space:nowrap;margin:0}
+ #controlbar #focus-button svg{width:18px;height:18px}
+ #controlbar #focus-label{font-size:11px}
+ #controlbar #save-button{display:none}
+ #controlbar .reader-status{display:none}
+}
+@media(max-width:440px){
+ #controlbar #focus-label{display:none}
+ #controlbar #focus-button{height:35px;width:35px;justify-content:center}
+}
 @media(prefers-reduced-motion:reduce){.qawaid-frontispiece,.matn-layer,.sharh-layer{transition:none!important}}
 @media print{.qawaid-frontispiece{max-height:130px}.source-notes{display:none!important}#reading .matn-layer{box-shadow:none;background:white}#reading .sharh-layer{border-inline-start:1px solid #bbb}}
