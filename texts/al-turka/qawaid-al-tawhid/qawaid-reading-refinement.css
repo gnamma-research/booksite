@@ -1,0 +1,134 @@
+/* Qawāʿid · spiritual geometry and manuscript-first reading · 2026-11-13.
+   Pure presentation. No authorial text, source citations or saved-state semantics are changed. */
+:root{--qt-gold:#9c7745;--qt-gold-soft:#e8dac1;--qt-ink-blue:#244954;--qt-rule:rgba(153,119,69,.36)}
+html[data-theme="horizon"]{--qt-gold:#896e44;--qt-gold-soft:#dee4d5;--qt-ink-blue:#1c5660}
+html[data-theme="night"]{--qt-gold:#d6b984;--qt-gold-soft:#33423e;--qt-ink-blue:#9bcfc8;--qt-rule:rgba(214,185,132,.26)}
+#topbar .brand-link img{width:33px;height:33px;border-radius:9px;filter:drop-shadow(0 1px 2px rgba(0,0,0,.09))}
+#topbar .brand-link strong{letter-spacing:.12em}
+#topbar .book-title{letter-spacing:-.015em}
+.book-intro{max-width:1010px;padding-top:clamp(20px,4vw,36px)}
+.qawaid-frontispiece{width:100%;aspect-ratio:1120/420;overflow:hidden;border-radius:15px;margin:15px 0 29px;position:relative;background:#193845;box-shadow:0 16px 42px rgba(16,39,46,.12)}
+.qawaid-frontispiece img{width:100%;height:100%;display:block;object-fit:cover}
+.qawaid-frontispiece::after{content:"";position:absolute;inset:0;border:1px solid rgba(227,192,134,.39);border-radius:15px;pointer-events:none}
+.book-intro h1{letter-spacing:-.032em;font-weight:500}
+.book-intro .ar-title{color:var(--qt-gold);margin-bottom:10px}
+.book-intro .lede{max-width:76ch;line-height:1.78}
+.book-intro .edition-meta{padding:11px 0;border-block:1px solid var(--line);gap:10px 23px;margin:21px 0 13px}
+.book-intro .edition-meta span{white-space:nowrap}
+.book-intro .edition-meta b{color:var(--qt-gold)}
+.book-intro .book-actions{margin-top:23px}
+.book-intro .action-btn{min-height:45px}
+#reading .layered-unit{padding-top:22px;padding-bottom:44px}
+#reading .unit-heading{max-width:82ch;margin:0 auto 18px;padding:0}
+#reading .unit-heading .section-meta{font:700 10px/1.8 ui-sans-serif,system-ui;letter-spacing:.08em}
+#reading .unit-heading h2{font-size:clamp(22px,2.6vw,29px);line-height:1.4;font-weight:500;letter-spacing:-.012em}
+#reading .matn-layer{position:relative;background:color-mix(in srgb,var(--panel) 92%,var(--qt-gold-soft));border:1px solid var(--qt-rule);border-inline-start:4px solid var(--qt-gold);border-radius:4px 13px 13px 4px;padding:24px clamp(14px,3.5vw,31px) 25px;margin:15px 0 30px;box-shadow:0 7px 27px rgba(18,43,51,.035)}
+#reading .matn-layer .layer-author{border-bottom:1px solid var(--qt-rule);padding-bottom:12px;margin-bottom:20px}
+#reading .matn-layer .layer-author b{color:var(--qt-gold);letter-spacing:.06em}
+#reading .matn-layer .text-pair .ar{font-weight:550}
+#reading .matn-layer .text-pair .en{font-weight:450}
+#reading .sharh-layer{position:relative;border:0;margin:0 0 27px;padding:0 0 18px;border-inline-start:2px solid var(--line)}
+#reading .sharh-layer>summary{padding:17px 34px 13px clamp(14px,2.1vw,24px);border-radius:0 12px 12px 0;background:color-mix(in srgb,var(--accent-soft) 39%,transparent);border-block:1px solid var(--line)}
+#reading .sharh-layer>summary:hover{background:color-mix(in srgb,var(--accent-soft) 75%,transparent)}
+#reading .sharh-layer>summary::after{top:20px;inset-inline-end:11px}
+#reading .sharh-layer .layer-author b{color:var(--qt-ink-blue);letter-spacing:.055em}
+#reading .sharh-layer .sharh-heading{font-size:clamp(18px,2.4vw,23px)}
+#reading .sharh-layer .fold-hint{font-size:10px;opacity:.9}
+#reading .sharh-layer .sharh-content{padding:21px clamp(12px,2vw,25px) 0}
+#reading .sharh-layer .section-meta{margin-bottom:18px}
+#reading .sharh-layer .ar{font-weight:400}
+#reading .bridge-layer{margin-top:21px}
+#reading .source-notes{display:none!important}
+#reading .inline-actions{opacity:.83}
+#reading .inline-actions:hover,#reading .inline-actions:focus-within{opacity:1}
+#reading-dock{box-shadow:0 -5px 30px rgba(13,35,42,.065)}
+#reading-dock .dock-center{overflow:hidden}
+#reading-dock .dock-center strong{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#reading-dock .dock-btn{font-variant-numeric:tabular-nums}
+body[data-focus="1"] .matn-layer,body[data-focus="2"] .matn-layer{box-shadow:none}
+body[data-focus="2"] #reading .matn-layer{background:transparent;border-inline-start:3px solid var(--qt-gold);border-block:0;border-inline-end:0}
+body[data-focus="2"] #reading .sharh-layer>summary{background:transparent}
+body[data-focus="3"] #reading .layered-unit{padding:14px 0 26px;border-top:1px solid var(--line)}
+body[data-focus="3"] #reading .layered-unit:first-child{border-top:0}
+body[data-focus="3"] #reading .matn-layer{margin:7px 0 15px;padding:5px 0 5px clamp(10px,1.8vw,18px);background:transparent;border:0;border-inline-start:2px solid var(--qt-gold);box-shadow:none;border-radius:0}
+body[data-focus="3"] #reading .matn-layer .layer-author{border:0;padding:0;margin-bottom:9px}
+body[data-focus="3"] #reading .sharh-layer{margin:0 0 8px;border-inline-start:2px solid var(--line)}
+body[data-focus="3"] #reading .sharh-layer>summary{background:transparent;border:0;padding:9px 28px 10px 15px}
+body[data-focus="3"] #reading .sharh-layer .sharh-content{padding:3px 0 0 15px}
+body[data-focus="3"] #reading .unit-heading h2{font-size:clamp(18px,2.6vw,24px)}
+body[data-focus="3"] #reading .layer-author{font-size:10px}
+body[data-focus="3"] .site-footer{display:none}
+body[data-focus="3"] .book-intro{display:none}
+body:not([data-focus="0"]) .book-intro .qawaid-frontispiece{display:none}
+body[data-mode="matn"] #reading .matn-layer{margin-bottom:12px}
+body[data-mode="sharh"] #reading .sharh-layer{border-inline-start-color:var(--qt-ink-blue)}
+body[data-mode="sharh"] #reading .sharh-layer>summary .fold-hint{display:none}
+/* Standalone commentary: calm, spacious, strongly authored, and no editorial process notes. */
+body[data-mode="sharh"] #reading .reading-block:not(.layered-unit){max-width:100%;margin:0 auto;padding:29px 0 35px;border-bottom:1px solid var(--line)}
+body[data-mode="sharh"] #reading .reading-block>.part-name{display:inline-block;font:700 10px/1.7 ui-sans-serif,system-ui;color:var(--qt-gold);letter-spacing:.11em;text-transform:uppercase}
+body[data-mode="sharh"] #reading .reading-block>h2{font:500 clamp(22px,3vw,29px)/1.4 var(--font-en);margin:8px 0 25px}
+body[data-mode="sharh"] #reading .reading-block>.text-pair{padding-inline-start:clamp(8px,2vw,22px);border-inline-start:2px solid var(--qt-ink-blue)}
+body[data-mode="sharh"] #reading .reading-block .source-notes{display:none!important}
+body[data-mode="sharh"][data-focus="3"] #reading .reading-block{border-bottom:0;padding-block:17px 25px}
+body[data-mode="sharh"][data-focus="3"] #reading .reading-block .text-pair{border-inline-start:0;padding-inline-start:0}
+@media(max-width:720px){
+ #topbar{grid-template-columns:44px minmax(0,1fr) auto;gap:6px;padding:7px 9px}
+ #topbar .left{min-width:0;gap:0}
+ #topbar .brand-link{gap:0}
+ #topbar .brand-link strong{display:none}
+ #topbar .book-title{display:block!important;max-width:none;min-width:0;font-size:14px;text-align:center;white-space:nowrap;text-overflow:ellipsis}
+ #topbar .book-title small{font-size:8px;letter-spacing:.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ #topbar .right{gap:0}
+ #topbar .right .icon-btn{width:36px;min-width:36px;height:40px}
+ #new-about-button{display:none!important}
+ .book-intro{padding:16px 16px 20px}
+ .qawaid-frontispiece{margin:8px 0 23px;aspect-ratio:1.8;border-radius:12px}
+ .book-intro h1{font-size:clamp(31px,8vw,44px)}
+ .book-intro .ar-title{font-size:30px}
+ .book-intro .edition-meta{font-size:11px;gap:7px 12px}
+ .book-intro .book-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+ .book-intro .book-actions>*{min-width:0;text-align:center;display:flex;align-items:center;justify-content:center}
+ #reading .layered-unit{padding-top:8px;padding-bottom:26px}
+ #reading .unit-heading{margin-bottom:12px}
+ #reading .unit-heading h2{font-size:23px}
+ #reading .matn-layer{border-radius:3px 11px 11px 3px;padding:16px 14px 18px;margin-bottom:21px}
+ #reading .matn-layer .layer-author{padding-bottom:8px;margin-bottom:15px}
+ #reading .sharh-layer>summary{padding:12px 28px 11px 12px}
+ #reading .sharh-layer .sharh-content{padding:15px 8px 0 12px}
+ #reading .sharh-layer .sharh-heading{font-size:19px}
+ #reading .text-pair{gap:12px}
+ #reading .text-pair .ar{line-height:1.93}
+ #reading-dock{padding-bottom:max(8px,env(safe-area-inset-bottom))}
+ #reading-dock .dock-btn{min-height:44px}
+ #reading-dock .gn-dock-personal{gap:8px;padding:1px 0}
+ #reading-dock .dock-center strong{font-size:12px}
+ body[data-focus="3"] #reading .matn-layer{padding-inline-start:10px}
+}
+@media(max-width:380px){
+ #topbar{grid-template-columns:39px minmax(0,1fr) auto}
+ #topbar .book-title{font-size:12px}
+ #topbar .right .icon-btn{width:33px;min-width:33px}
+ #reading-dock .gn-dock-personal{gap:1px}
+ .book-intro .book-actions{grid-template-columns:1fr 1fr}
+}
+/* Mobile toolbar: one intentional row; bookmarking is already in the dock. */
+@media(max-width:720px){
+ #controlbar{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;justify-content:stretch;column-gap:5px;row-gap:0;padding:6px 9px}
+ #controlbar .seg.lang{grid-column:1;grid-row:1;margin:0;min-width:0}
+ #controlbar .seg.lang button{min-width:33px;padding:4px 6px;height:32px}
+ #controlbar .layer-switches{grid-column:2;grid-row:1;width:auto!important;order:initial!important;display:flex;justify-content:center;gap:4px;min-width:0}
+ #controlbar .layer-switch{min-height:34px;padding:5px 6px;gap:4px;font-size:11px}
+ #controlbar .switch-track{width:21px;height:13px}
+ #controlbar .switch-word{display:none}
+ #controlbar #focus-button{grid-column:3;grid-row:1;padding:5px 8px;display:inline-flex;align-items:center;gap:3px;white-space:nowrap;margin:0}
+ #controlbar #focus-button svg{width:18px;height:18px}
+ #controlbar #focus-label{font-size:11px}
+ #controlbar #save-button{display:none}
+ #controlbar .reader-status{display:none}
+}
+@media(max-width:440px){
+ #controlbar #focus-label{display:none}
+ #controlbar #focus-button{height:35px;width:35px;justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){.qawaid-frontispiece,.matn-layer,.sharh-layer{transition:none!important}}
+@media print{.qawaid-frontispiece{max-height:130px}.source-notes{display:none!important}#reading .matn-layer{box-shadow:none;background:white}#reading .sharh-layer{border-inline-start:1px solid #bbb}}
