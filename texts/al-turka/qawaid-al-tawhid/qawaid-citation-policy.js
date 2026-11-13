@@ -6,7 +6,7 @@ window.GNAMMA_QAWAID_CITATION_POLICY = Object.freeze({
   schema: "gnamma-qawaid-verified-citation-policy-v1",
   updated: "2026-11-13",
   defaultInlineMode: "normal-only",
-  referenceSources: "Existing 18-card source register; independently reviewed direct Arabic spans only.",
+  referenceSources: "Expanded 29-card source register; each direct Arabic marker must independently match the consulted source unit; contextual comparisons remain menu-only.",
   exactExternalReaderDestinations: [],
   /* Exact spacing in the received SH-017 quoted Qur'anic wording: the conjunction وَ is separated. */
   phraseOverrides: {"q-112-3-4":{"SH-017":["لَمْ يَلِدْ وَ لَمْ يُولَدْ"]}},
@@ -36,6 +36,31 @@ window.GNAMMA_QAWAID_CITATION_POLICY = Object.freeze({
       label: "Named work or reported summary",
       explanation: "Bibliographic, attributed, or reported material, not a verified verbatim quoted source span."
     },
+    "source-checked-quotation": {
+      group: "direct",
+      label: "Named quotation · independent original passage located",
+      explanation: "The passage is named and quoted in Tamhīd or its matn and has an independently accessible text of the cited work. Wording variants do not amount to an independent manuscript collation."
+    },
+    "quoted-hadith-with-variant": {
+      group: "direct",
+      label: "Identified hadith · transmitted wording differs",
+      explanation: "The Arabic cited by Ibn Turka matches a known Prophetic report with small additions or variants; the source card identifies the canonical wording and named collection."
+    },
+    "reported-hadith-paraphrase": {
+      group: "comparison",
+      label: "Identified Prophetic report · paraphrase, not exact quotation",
+      explanation: "The author summarises an identifiable hadith but does not transmit its exact Arabic wording, so no verified word-for-word marker is inserted."
+    },
+    "attributed-imam-report": {
+      group: "comparison",
+      label: "Imam attribution · independent transmission not certified",
+      explanation: "A later source associates these words with an Imam, but this edition has not established a historical chain or uniform wording."
+    },
+    "attributed-maxim": {
+      group: "comparison",
+      label: "Attributed maxim · independent isnād unverified",
+      explanation: "The saying is in the Tamhīd and repeated by later authors. A later repetition is not independent proof of the original attribution."
+    },
     "unverified-attribution": {
       group: "comparison",
       label: "Unverified attribution",
@@ -60,6 +85,17 @@ window.GNAMMA_QAWAID_CITATION_POLICY = Object.freeze({
     "tusid-tajrid": "independent-comparator",
     "ibn-turka-itimad": "reported-work",
     "aristotle-theology": "reported-work",
-    "hidden-treasure": "unverified-attribution"
+    "hidden-treasure": "unverified-attribution",
+    "q-18-17": "quran-verse",
+    "q-42-11": "quran-verse",
+    "hadith-time-3197": "quoted-hadith-with-variant",
+    "ibn-arabi-dawair-human-sh039": "source-checked-quotation",
+    "ibn-arabi-fusus-mirror-qt041": "source-checked-quotation",
+    "ibn-arabi-fusus-eye-sh041": "source-checked-quotation",
+    "ibn-arabi-futuhat-proportion-sh041": "source-checked-quotation",
+    "ibn-arabi-futuhat-worlds-sh053": "source-checked-quotation",
+    "hadith-qarin-muslim2814": "reported-hadith-paraphrase",
+    "ali-vision-attribution-sh041": "attributed-imam-report",
+    "jaafar-gathering-distinction-sh026": "attributed-maxim"
   }
 });
