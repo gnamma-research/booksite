@@ -35,5 +35,11 @@ const rep={schema:'qawtaw21-crosswork-source-inspection',date:'2026-11-13',
   imported:{q:catalog(q),taj:{keys:Object.keys(taj),total:tajRecords.length,first:tajRecords[0]?{id:tajRecords[0].id,title:tajRecords[0].title,arabic:sample(tajRecords[0].arabic,230)}:null}},
   source,qunawiCandidates:qunawi,tajridCandidates:tajHits};
 fs.writeFileSync(path.join(ROOT,'qa/qawtaw21-crosswork-candidates.json'),JSON.stringify(rep,null,2)+'\n');
+console.log('TAJRID_EXCERPTS',JSON.stringify({
+ extracts:taj.extracts.filter(x=>['T1','ALH01','SHI01'].includes(x.id)||/الوجود ليس طبيعة نوعية|بالوجوب|بالتشكيك|الوجود عين الماهية/.test(x.arabic||''))
+  .slice(0,25).map(x=>({id:x.id,title:x.title,author:x.author,arabic:sample(x.arabic,1700),source:x.source_line,english:sample(x.english,430)})),
+ matn:taj.matn.filter(x=>/الوجود|الواجب|التشكيك/.test(x.arabic||'')).slice(0,24)
+  .map(x=>({id:x.id,division:x.division,arabic:sample(x.arabic,370)}))
+}).slice(0,22000));
 console.log('CROSSWORK_COUNTS',JSON.stringify({qEntries:q.entries?.length,qNu:qunawi.length,tajRecords:tajRecords.length,tajMatches:tajHits.length,qSample:qunawi.slice(0,5)}));
 for(const x of source)console.log('SOURCE_UNIT',JSON.stringify(x));
