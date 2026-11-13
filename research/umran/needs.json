@@ -1,6 +1,6 @@
 {
   "project": "Work, Vocation & Umran",
-  "version": "2026-11-13-draft-2",
+  "version": "2026-11-13-draft-3",
   "notice": "Candidate need/function catalogue, not a finding of actual local shortage, assignment of personal religious obligation, or spiritual ranking. Project data are organiser claims, not independent verification.",
   "classification_basis": "Provisional juristic research; consult sources and scholars",
   "sufficiency_status": "unknown for every profile",
@@ -37,7 +37,11 @@
       "publication": "research_draft",
       "example_project_ids": [
         "education-fund",
-        "southgate"
+        "southgate",
+        "bangi-education-support"
+      ],
+      "evidence_case_ids": [
+        "bangi-education-campaign"
       ]
     },
     {
@@ -70,7 +74,12 @@
       "reviewed": "2026-11-13",
       "publication": "research_draft",
       "example_project_ids": [
-        "education-fund"
+        "education-fund",
+        "bangi-education-support"
+      ],
+      "evidence_case_ids": [
+        "malaysia-learning",
+        "bangi-education-campaign"
       ]
     },
     {
@@ -106,6 +115,9 @@
         "sudan-basic",
         "sudan-water",
         "mental-health"
+      ],
+      "evidence_case_ids": [
+        "malaysia-mental-health"
       ]
     },
     {
@@ -140,7 +152,8 @@
       "example_project_ids": [
         "sudan-water",
         "refugee-support"
-      ]
+      ],
+      "evidence_case_ids": []
     },
     {
       "id": "food-access",
@@ -174,7 +187,8 @@
       "example_project_ids": [
         "sudan-basic",
         "tanzania-care"
-      ]
+      ],
+      "evidence_case_ids": []
     },
     {
       "id": "ai-safety",
@@ -205,7 +219,8 @@
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
       "publication": "research_draft",
-      "example_project_ids": []
+      "example_project_ids": [],
+      "evidence_case_ids": []
     },
     {
       "id": "dependent-care",
@@ -239,7 +254,8 @@
       "example_project_ids": [
         "tanzania-care",
         "orphan-education"
-      ]
+      ],
+      "evidence_case_ids": []
     },
     {
       "id": "funerals",
@@ -268,7 +284,8 @@
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
       "publication": "research_draft",
-      "example_project_ids": []
+      "example_project_ids": [],
+      "evidence_case_ids": []
     },
     {
       "id": "household-sufficiency",
@@ -297,13 +314,17 @@
       "example_project_ids": [
         "tanzania-skills",
         "tanzania-care",
-        "orphan-education"
+        "orphan-education",
+        "bangi-education-support"
       ],
       "actual_scope_confirmed": false,
       "sufficiency_status": "unknown",
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
-      "publication": "research_draft"
+      "publication": "research_draft",
+      "evidence_case_ids": [
+        "penang-household"
+      ]
     },
     {
       "id": "livelihood-training",
@@ -336,7 +357,10 @@
       "sufficiency_status": "unknown",
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
-      "publication": "research_draft"
+      "publication": "research_draft",
+      "evidence_case_ids": [
+        "penang-household"
+      ]
     },
     {
       "id": "community-institutions",
@@ -369,7 +393,8 @@
       "sufficiency_status": "unknown",
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
-      "publication": "research_draft"
+      "publication": "research_draft",
+      "evidence_case_ids": []
     },
     {
       "id": "mental-health",
@@ -402,7 +427,10 @@
       "sufficiency_status": "unknown",
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
-      "publication": "research_draft"
+      "publication": "research_draft",
+      "evidence_case_ids": [
+        "malaysia-mental-health"
+      ]
     },
     {
       "id": "emergency-response",
@@ -436,7 +464,8 @@
       "sufficiency_status": "unknown",
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
-      "publication": "research_draft"
+      "publication": "research_draft",
+      "evidence_case_ids": []
     },
     {
       "id": "displaced-shelter",
@@ -469,11 +498,14 @@
       "sufficiency_status": "unknown",
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
-      "publication": "research_draft"
+      "publication": "research_draft",
+      "evidence_case_ids": []
     }
   ],
   "research_sources": [
     "malaysia.json",
     "projects.html"
-  ]
+  ],
+  "evidence_record_source": "assessments.json",
+  "evidence_policy": "A research example may document an outcome, a provider activity or a source-defined capacity gap. None automatically certifies complete sufficiency, a legal obligation or individual duty."
 }

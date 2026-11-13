@@ -1,0 +1,430 @@
+{
+  "schema_version": "1.0",
+  "revision": "2026-11-13-evidence-desk",
+  "editorial_policy": "Observed conditions, provider activity, official targets, programme claims and juristic classifications must never be conflated. These records are research hypotheses, not verdicts or endorsements.",
+  "sufficiency_taxonomy": {
+    "documented_target_gap": "Official provider capacity is below a source-defined numerical target; does not settle service adequacy or legal duty.",
+    "baseline_and_activity": "Independent baseline and separate provider output present; not linkable to service adequacy.",
+    "outcome_only": "Evidence of outcome concern, but supply, access, and effective alternatives remain unclear.",
+    "campaign_only": "Campaign narrative only; independent validation missing."
+  },
+  "source_references": [
+    {
+      "id": "dosm-hies-2024",
+      "name": "OpenDOSM: Household Income and Expenditure — States",
+      "kind": "official-statistics",
+      "year": "2024 data",
+      "publication": "dataset updated 2025",
+      "url": "https://open.dosm.gov.my/data-catalogue/hies_state",
+      "scope": "Malaysia / Penang state",
+      "notes": "2024 Penang state median gross household income RM7,386; poverty rate 1.9%. Nominal income; household survey."
+    },
+    {
+      "id": "dosm-poverty-2024",
+      "name": "Department of Statistics Malaysia: Poverty in Malaysia 2024",
+      "kind": "official-statistics",
+      "year": "2024 data",
+      "publication": "8 October 2025",
+      "url": "https://www.dosm.gov.my/portal-main/release-content/poverty-in-malaysia-2024",
+      "scope": "Malaysia; poverty definitions",
+      "notes": "Absolute PLI and relative poverty have distinct definitions. Not identical to ḥadd al-kifāyah."
+    },
+    {
+      "id": "jawhar-zakat-2025",
+      "name": "JAWHAR/Baitulmal: Penang zakat distribution statistics",
+      "kind": "administrative-report",
+      "year": "2025",
+      "publication": "public dashboard consulted 2026-11-13",
+      "url": "https://baitulmal.jawhar.gov.my/statistik-agihan-zakat-mengikut-negeri/statistik-agihan-zakat-negeri-pulau-pinang/",
+      "scope": "Pulau Pinang",
+      "notes": "Top-level 2025 table reports RM192,727,710.02 and 45,831 recipients; returns reflect amounts and reported persons, not unique households or measured adequacy. Marked for public reference, some entries may be unaudited."
+    },
+    {
+      "id": "masa-penang-study",
+      "name": "MASA@Sungai Nibong: holistic intervention case study",
+      "kind": "qualitative-research",
+      "year": "2025",
+      "publication": "2025",
+      "url": "https://doi.org/10.37231/jimk.2025.26.2.937",
+      "scope": "Selected waqf apartment households, Penang",
+      "notes": "Qualitative report of a local programme; lacks a general causal effect estimate and a state-wide adequacy conclusion."
+    },
+    {
+      "id": "oecd-pisa-2025",
+      "name": "OECD: PISA 2025 Results (Volume I) — Malaysia country note",
+      "kind": "international-assessment",
+      "year": "2025 test",
+      "publication": "8 September 2026",
+      "url": "https://www.oecd.org/en/publications/pisa-2025-results-volume-i-country-notes_2d4ff9ea-en/malaysia_d5dbce0d-en.html",
+      "scope": "Representative 15-year-old students in Malaysia",
+      "notes": "2025 percentages reaching PISA Level 2: mathematics 35%, reading 44%, science 54%; not indicators of the number of teachers required."
+    },
+    {
+      "id": "nhms-2023",
+      "name": "National Health and Morbidity Survey 2023 — official fact sheet",
+      "kind": "official-health-survey",
+      "year": "2023 survey",
+      "publication": "2024",
+      "url": "https://iku.nih.gov.my/images/nhms2023/fact-sheet-nhms-2023.pdf",
+      "scope": "Malaysia, adults",
+      "notes": "Survey prevalence of depressive symptoms 4.6% among adults; not directly comparable to specialist workforce, treatment coverage or service queues."
+    },
+    {
+      "id": "moh-mentari-2026",
+      "name": "Ministry of Health: Psychiatric Services in Malaysia",
+      "kind": "official-capacity-report",
+      "year": "1 April 2026",
+      "publication": "as-of-date 1 April 2026",
+      "url": "https://mentari.moh.gov.my/about-us/psychiatric-services-in-malaysia/",
+      "scope": "MOH psychiatric services nationally",
+      "notes": "MOH psychiatrists 445; 40 MENTARI centres; 1:69,860 psychiatrist-to-population ratio against MOH target 1:40,000; does not measure all providers or actual patient access."
+    },
+    {
+      "id": "iifa-putrajaya-2007",
+      "name": "International Islamic Fiqh Academy: Human Resource Development Resolution 164",
+      "kind": "juristic-resolution",
+      "year": "2007",
+      "publication": "2007 Putrajaya",
+      "url": "https://iifa-aifi.org/2257.html",
+      "scope": "Normative human development and useful science",
+      "notes": "A resolution adopted in Malaysia by an international academy; no local empirical shortage finding."
+    },
+    {
+      "id": "nugraha-ikim-2017",
+      "name": "Mukhlas Nugraha: Farḍ ʿayn and farḍ kifāya knowledge in curricula",
+      "kind": "conceptual-study",
+      "year": "2017",
+      "publication": "TAFHIM (IKIM)",
+      "url": "https://tafhim.ikim.gov.my/index.php/tafhim/article/view/115",
+      "scope": "Education theory",
+      "notes": "Conceptual analysis published in Malaysia; not a PISA intervention evaluation."
+    },
+    {
+      "id": "launchgood-bangi-education",
+      "name": "LaunchGood: Education Support for Asnaf and Poor in Malaysia",
+      "kind": "campaign-claim",
+      "year": "Campaign closed; checked November 2026",
+      "publication": "archived page",
+      "url": "https://www.launchgood.com/v4/campaign/education_support_for_asnaf_and_poor_in_malaysia",
+      "scope": "Bangi, Selangor impact area",
+      "notes": "Organiser Pertubuhan Kecemerlangan Pendidikan Ummah reports 53 Qurʾān classes, 12 science/maths classes, support for 587 children; organiser claims only, current status closed."
+    }
+  ],
+  "assessments": [
+    {
+      "id": "penang-household",
+      "title": "Penang: household security and welfare provision",
+      "region": "Pulau Pinang (Penang), Malaysia",
+      "population": "Households in Penang",
+      "scale": "state",
+      "function_ids": [
+        "household-sufficiency",
+        "livelihood-training"
+      ],
+      "evidence_state": "baseline_and_activity",
+      "review_status": "Partial: documented condition and distribution, no coverage conclusion",
+      "normative_question": "What duties of provision, zakat administration and protection of those in need bear upon different actors? Farḍ kifāya cannot be inferred from a poverty percentage alone.",
+      "observations": [
+        {
+          "value": "1.9%",
+          "label": "Households below the official absolute poverty line",
+          "period": "2024",
+          "geography": "Penang state",
+          "type": "population_condition",
+          "source": "dosm-hies-2024"
+        },
+        {
+          "value": "RM7,386",
+          "label": "Median monthly gross household income",
+          "period": "2024",
+          "geography": "Penang state",
+          "type": "context",
+          "source": "dosm-hies-2024"
+        },
+        {
+          "value": "RM192.73m",
+          "label": "Reported total zakat distribution",
+          "period": "2025",
+          "geography": "Penang state",
+          "type": "provision_activity",
+          "source": "jawhar-zakat-2025"
+        },
+        {
+          "value": "45,831",
+          "label": "Reported zakat recipients (persons)",
+          "period": "2025",
+          "geography": "Penang state",
+          "type": "provision_activity",
+          "source": "jawhar-zakat-2025"
+        }
+      ],
+      "what_is_known": "A measured poverty incidence and an aggregate administrative account of zakat distribution are both available. The MASA@Sungai Nibong study describes a targeted household-centred intervention through waqf-linked accommodation, training and continued support.",
+      "what_is_not_known": "The two sources do not identify the same individual households, and their dates and concepts differ. There is no verified comparison of eligible household needs, benefit adequacy, exclusions, access, service quality or outcomes across the state. Recipient persons are not interchangeable with households. Zakat distribution is not the entire welfare system.",
+      "adequacy_standard": "A defensible locally defined household sufficiency standard, distinguishing official poverty-line income from juristic and administrative ḥadd al-kifāyah criteria, plus evidence of accessible and reliable provision.",
+      "evidence_to_collect": [
+        "The actual Penang zakat ḥadd al-kifāyah criteria and eligibility rules by household composition",
+        "Unduplicated numbers of eligible households, recipients, applicants and unsuccessful applicants",
+        "Value, duration, timing and material adequacy of assistance",
+        "Disaggregated local conditions, access barriers and non-zakat welfare provision",
+        "Independent household follow-up, financial durability and programme evaluations"
+      ],
+      "provider_types": [
+        "Zakat authority",
+        "Waqf managers",
+        "Social workers",
+        "Household-assessment specialists",
+        "Livelihood programme evaluators"
+      ],
+      "proposed_contributions": [
+        "Evaluate household adequacy rather than just funding volume",
+        "Improve case management and eligibility access",
+        "Mentor and train livelihood programme staff",
+        "Support careful, consent-based follow-up"
+      ],
+      "cautions": [
+        "Different population units and years must not be used as a coverage numerator and denominator",
+        "State statistics cannot certify the need of each locality or individual family",
+        "A qualitative case study does not demonstrate a causal state-wide impact"
+      ],
+      "linked_case": "masa-2025",
+      "sources": [
+        "dosm-hies-2024",
+        "dosm-poverty-2024",
+        "jawhar-zakat-2025",
+        "masa-penang-study"
+      ],
+      "last_reviewed": "2026-11-13"
+    },
+    {
+      "id": "malaysia-learning",
+      "title": "Malaysia: foundational learning and competent teaching",
+      "region": "Malaysia",
+      "population": "15-year-olds represented in PISA",
+      "scale": "national",
+      "function_ids": [
+        "contemporary-curricula",
+        "religious-teaching"
+      ],
+      "evidence_state": "outcome_only",
+      "review_status": "Outcome concern documented; provider sufficiency unknown",
+      "normative_question": "Which forms of knowledge and educational provision are obligatory or otherwise needed, for which populations? PISA does not itself establish a particular Islamic legal classification.",
+      "observations": [
+        {
+          "value": "35%",
+          "label": "Reached at least PISA Level 2 in mathematics",
+          "period": "2025",
+          "geography": "Malaysia",
+          "type": "learning_outcome",
+          "source": "oecd-pisa-2025"
+        },
+        {
+          "value": "44%",
+          "label": "Reached at least PISA Level 2 in reading",
+          "period": "2025",
+          "geography": "Malaysia",
+          "type": "learning_outcome",
+          "source": "oecd-pisa-2025"
+        },
+        {
+          "value": "54%",
+          "label": "Reached at least PISA Level 2 in science",
+          "period": "2025",
+          "geography": "Malaysia",
+          "type": "learning_outcome",
+          "source": "oecd-pisa-2025"
+        }
+      ],
+      "what_is_known": "The OECD's 2025 PISA country note reports comparatively low shares of tested 15-year-olds attaining minimum proficiency in mathematics, reading and science. It includes comparisons to OECD averages and trend measures.",
+      "what_is_not_known": "We do not know from this comparison which forms of provision are inadequate: teacher supply, instructional quality, curriculum alignment, household support, language factors, school access or other conditions. Nor can these results be transferred to a particular mosque school or specialised religious curriculum.",
+      "adequacy_standard": "For the specified learner population, a defensible standard of learning, access and continuity, supplemented with relevant curricular and educational quality indicators; then assess what supply conditions would meet it.",
+      "evidence_to_collect": [
+        "Subject-specific and locality-specific attainment with uncertainty estimates",
+        "Existing teaching capacity, qualifications, contact time, attendance and access",
+        "Curriculum quality, assessments, school support and effective interventions",
+        "Comparative evidence on teacher preparation and remediation",
+        "Longitudinal evaluation of proposed curricula and learner development"
+      ],
+      "provider_types": [
+        "Teachers",
+        "Teacher educators",
+        "Curriculum researchers",
+        "Assessment specialists",
+        "School and community administrators"
+      ],
+      "proposed_contributions": [
+        "Pilot and evaluate targeted teaching materials",
+        "Train practitioners in diagnosis and remediation",
+        "Support qualified curriculum development and teacher mentorship",
+        "Avoid launching a new institution until its comparative advantage is demonstrated"
+      ],
+      "cautions": [
+        "PISA proficiency is a specific assessment construct, not the whole of education",
+        "A low learning outcome is not necessarily a teacher headcount shortage",
+        "National sample data do not measure access or outcomes in a particular subcommunity"
+      ],
+      "linked_case": "nugraha-2017",
+      "sources": [
+        "oecd-pisa-2025",
+        "iifa-putrajaya-2007",
+        "nugraha-ikim-2017"
+      ],
+      "last_reviewed": "2026-11-13"
+    },
+    {
+      "id": "malaysia-mental-health",
+      "title": "Malaysia: mental-health care and specialist capacity",
+      "region": "Malaysia",
+      "population": "Adults and the public psychiatric system",
+      "scale": "national",
+      "function_ids": [
+        "mental-health",
+        "medical-care"
+      ],
+      "evidence_state": "documented_target_gap",
+      "review_status": "Documented ministry psychiatrist ratio below stated target; broader access unresolved",
+      "normative_question": "Which necessary forms of clinical provision and prevention of grave harm require collective or public arrangements, and through which qualified institutions?",
+      "observations": [
+        {
+          "value": "4.6%",
+          "label": "Depressive symptoms reported among adults",
+          "period": "2023",
+          "geography": "Malaysia",
+          "type": "population_condition",
+          "source": "nhms-2023"
+        },
+        {
+          "value": "1:69,860",
+          "label": "MOH psychiatrist-to-population ratio",
+          "period": "1 April 2026",
+          "geography": "Malaysia",
+          "type": "workforce_capacity",
+          "source": "moh-mentari-2026"
+        },
+        {
+          "value": "1:40,000",
+          "label": "MOH stated psychiatrist ratio target",
+          "period": "1 April 2026",
+          "geography": "Malaysia",
+          "type": "provider_target",
+          "source": "moh-mentari-2026"
+        },
+        {
+          "value": "40",
+          "label": "MENTARI community mental-health centres",
+          "period": "1 April 2026",
+          "geography": "Malaysia",
+          "type": "service_activity",
+          "source": "moh-mentari-2026"
+        }
+      ],
+      "what_is_known": "NHMS 2023 provides a population-health indicator. The Ministry of Health reported 445 ministry psychiatrists and a psychiatrist-to-population ratio of 1:69,860, below its target of 1:40,000, alongside 40 MENTARI centres as of 1 April 2026.",
+      "what_is_not_known": "The figures do not quantify national unmet episodes of treatment, staffing of non-MOH providers, patient waiting times, distribution across regions, quality of multidisciplinary care or treatment outcomes.",
+      "adequacy_standard": "Clearly defined access, clinical quality, safe referral and appropriate specialist capacity, including the ministry workforce benchmark as one partial indicator rather than a complete sufficiency criterion.",
+      "evidence_to_collect": [
+        "Public and private specialist services by district and population",
+        "Service volumes, wait times, referrals and discontinuation rates",
+        "Case-mix, supervision, staffing distribution and multidisciplinary capacity",
+        "Patient outcomes and appropriate safeguarding",
+        "Professional training and retention data with local underserved subpopulations"
+      ],
+      "provider_types": [
+        "Psychiatrists",
+        "Clinical psychologists",
+        "Mental-health nurses",
+        "Clinical supervisors",
+        "Primary care and social care partners",
+        "Service administrators"
+      ],
+      "proposed_contributions": [
+        "Increase appropriate specialist training and supervision",
+        "Improve equitable access, referrals and service continuity",
+        "Support independent quality and workforce evaluation",
+        "Establish services only after feasibility and workforce planning"
+      ],
+      "cautions": [
+        "The government target does not, on its own, constitute a juridically binding threshold",
+        "Ministry staff numbers do not measure every provider or service",
+        "A prevalence survey and workforce target are complementary, not directly interchangeable denominators"
+      ],
+      "linked_case": "mental-health",
+      "sources": [
+        "nhms-2023",
+        "moh-mentari-2026"
+      ],
+      "last_reviewed": "2026-11-13"
+    },
+    {
+      "id": "bangi-education-campaign",
+      "title": "Bangi: educational crowdfunding as a field-research lead",
+      "region": "Bangi, Selangor, Malaysia",
+      "population": "Children described by a closed campaign",
+      "scale": "local",
+      "function_ids": [
+        "religious-teaching",
+        "contemporary-curricula",
+        "household-sufficiency"
+      ],
+      "evidence_state": "campaign_only",
+      "review_status": "Organiser claims only; no independent local need or effect established",
+      "normative_question": "Does the necessary educational provision for identified learners require additional capacity, and are the proposed classes an effective and permissible response?",
+      "observations": [
+        {
+          "value": "53",
+          "label": "Qurʾān classes stated by campaign organiser",
+          "period": "Campaign archive, status: closed",
+          "geography": "Malaysia, claimed programme footprint",
+          "type": "organizer_claim",
+          "source": "launchgood-bangi-education"
+        },
+        {
+          "value": "12",
+          "label": "Science and mathematics classes stated by organiser",
+          "period": "Campaign archive, status: closed",
+          "geography": "Malaysia, claimed programme footprint",
+          "type": "organizer_claim",
+          "source": "launchgood-bangi-education"
+        },
+        {
+          "value": "587+",
+          "label": "Children reportedly provided with support",
+          "period": "Campaign archive, status: closed",
+          "geography": "Malaysia, claimed programme footprint",
+          "type": "organizer_claim",
+          "source": "launchgood-bangi-education"
+        }
+      ],
+      "what_is_known": "A closed LaunchGood appeal by Pertubuhan Kecemerlangan Pendidikan Ummah describes free education and support for children described as asnaf and poor, and advertises Qurʾān, science and mathematics provision.",
+      "what_is_not_known": "The campaign claims have not been independently audited here. We lack dated enrolment registers, verified learning outcomes, coverage, cost per learner, learner retention, programme capacity, and evidence of alternative services. This is not a current opportunity or donation recommendation.",
+      "adequacy_standard": "Age-appropriate, competent, accessible learning with meaningful progress, protection and continuity for a clearly defined beneficiary population.",
+      "evidence_to_collect": [
+        "Independent verification of participants, locations and teaching credentials",
+        "Educational baselines, comparable alternatives and accessibility barriers",
+        "Outcomes, retention, family needs and costs",
+        "Evidence of sustained institutional capacity and safeguarding",
+        "Applicable zakat/charity eligibility and legal compliance"
+      ],
+      "provider_types": [
+        "Teachers",
+        "Curriculum developers",
+        "Social workers",
+        "Programme accountants",
+        "Educational evaluators"
+      ],
+      "proposed_contributions": [
+        "Observe or audit provision before recommending expansion",
+        "Improve learning evaluation and teacher formation",
+        "Assess family needs alongside instructional support"
+      ],
+      "cautions": [
+        "Organiser-reported campaign quantities are not validated indicators of demand or impact",
+        "Campaign is marked closed; no current donation opportunity is claimed",
+        "Location of campaign impact does not prove every reported class is in the same district"
+      ],
+      "linked_case": "bangi-education-support",
+      "sources": [
+        "launchgood-bangi-education"
+      ],
+      "last_reviewed": "2026-11-13"
+    }
+  ]
+}
