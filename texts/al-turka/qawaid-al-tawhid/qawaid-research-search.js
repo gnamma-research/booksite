@@ -201,7 +201,7 @@ function searchAll(){
  return {items:results,total:results.length,help:results.length?'':(mode==='near'&&!b?'Enter a second word to search within a passage.':'No matching passage in the selected source scope.')};
 }
 function itemUrl(r){
- if(r.kind==='mine')return r.id.startsWith('SH-')?'commentary.html#'+encodeURIComponent(r.id):'./#'+encodeURIComponent(r.id);
+ if(r.kind==='mine')return r.id.startsWith('SH-')?(work==='combined'&&!r.id.startsWith('SH-INTRO-')?'./#':'commentary.html#')+encodeURIComponent(r.id):'./#'+encodeURIComponent(r.id);
  if(r.kind==='source'){
   const id=r.unit||'QT-001';return id.startsWith('SH-')?'commentary.html#'+encodeURIComponent(id):'./#'+encodeURIComponent(id);
  }
@@ -230,11 +230,12 @@ function results(){
  const r=searchAll();last=r.items;remember();
  $('#qt-help').textContent=explainMode();
  $('#qt-count').textContent=r.total+' matching '+(settings.facet==='text'?'passages':'entries');
- const shown=r.items.slice(0,settings.limit);
+ const shown=r.items.slice(0,settings.advanced?settings.limit:6);
  target.innerHTML=shown.length?shown.map(x=>
   '<a class="qt-result" href="'+esc(itemUrl(x))+'" data-qt-result="'+esc(x.id)+'"><span class="qt-result-overline">'+esc(x.kind==='matn'?'MATN · Original':x.kind==='sharh'?'SHARḤ · Commentary':x.kind==='term'?'DICTIONARY':x.kind==='mine'?'MY NOTES':'SOURCE REGISTER')+' · '+esc(x.id)+' · '+esc(x.field)+'</span><strong>'+esc(x.title)+'</strong><span class="qt-kwic">'+x.context+'</span></a>').join(''):
   '<p class="qt-empty">'+esc(r.help)+'</p>';
- $('#qt-more').hidden=r.items.length<=settings.limit;
+ $('#qt-more').hidden=r.items.length<=shown.length;
+ $('#qt-more').textContent=settings.advanced?'More results':'Open all results in Research';
  $('#qt-export').disabled=!r.items.length;
 }
 let dialog=null,timer=null;
@@ -272,7 +273,7 @@ function mount(){
  dialog.addEventListener('click',e=>{if(e.target===dialog)close()});
  $('#qt-close').addEventListener('click',close);
  $('#qt-go').addEventListener('click',()=>{settings.limit=30;results()});
- $('#qt-more').addEventListener('click',()=>{settings.limit+=30;results()});
+ $('#qt-more').addEventListener('click',()=>{if(!settings.advanced){$('#qt-advanced').open=true;settings.advanced=true;settings.limit=30}else settings.limit+=30;results()});
  $('#qt-export').addEventListener('click',exportCSV);
  $('#qt-advanced').addEventListener('toggle',()=>{settings.advanced=$('#qt-advanced').open;remember()});
  function gather(){
