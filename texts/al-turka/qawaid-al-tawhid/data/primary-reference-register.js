@@ -346,9 +346,9 @@ window.GNAMMA_QAWAID_REFERENCES = {
       ],
       "status": "identified-prophetic-report-with-textual-variant",
       "inlineAnchors": [
-        "ان الزمان قد استدار كهيئة يوم خلق الله تعالى السماوات والأرض"
+        "ان الزمان قد استدار كهيئة يوم خلق"
       ],
-      "note": "Ibn Turka’s transmitted quotation adds إن and تعالى and has كهيئة; the cited Bukhārī report prints كهيئته. This is a directly identifiable hadith with variant wording, not a diplomatic reproduction of the canonical matn or a claim that Ibn Turka’s metaphysical interpretation is the hadith’s sole interpretation."
+      "note": "Ibn Turka’s transmitted quotation adds إن and تعالى and has كهيئة; the cited Bukhārī report prints كهيئته. This is a directly identifiable hadith with variant wording, not a diplomatic reproduction of the canonical matn or a claim that Ibn Turka’s metaphysical interpretation is the hadith’s sole interpretation. The inline marker is anchored to the first seven exactly received words because the remaining text has orthographic and morphological variants."
     },
     {
       "id": "ibn-arabi-dawair-human-sh039",
