@@ -34,3 +34,9 @@
 
 .gn-h-head-actions{display:flex;align-items:center;gap:8px}.gn-h-dictionary{border:1px solid #bdcbc0;border-radius:7px;padding:7px 10px;background:transparent;color:inherit;cursor:pointer;font:12px system-ui}
 .gn-terms-overlay:not([hidden]){z-index:1200}
+
+/* Stage130 previous-English readings stay in an opt-in scholarly disclosure. */
+.gn-h-older-english{margin:14px 0 0;border-top:1px solid #d9ded5;padding:8px 0 0;color:inherit}
+.gn-h-older-english summary{cursor:pointer;font:12px/1.5 system-ui,-apple-system,sans-serif;color:#64776b}
+.gn-h-older-english p{font:14px/1.7 Georgia,serif;white-space:pre-line;margin:10px 0}
+@media(prefers-color-scheme:dark){.gn-h-older-english{border-color:#496050}.gn-h-older-english summary{color:#afc8b2}}
