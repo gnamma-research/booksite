@@ -59,3 +59,21 @@
 .chron-item p{font-size:14px;line-height:1.65;margin:0 0 7px}
 .chron-item a{font:600 12px system-ui,sans-serif}
 @media(max-width:650px){.context-controls{grid-template-columns:1fr}.context-shell{padding-top:18px}.cast-diagram{max-height:310px}.context-shell h1{font-size:31px}.profile-grid{grid-template-columns:1fr}.geo-toolbar button{flex:1}.geographic-map{height:420px}}
+
+/* Names remain typographically subordinate to the story. The full identity card opens on demand. */
+.reader-name-link,.person-ref{color:inherit;text-decoration:underline;text-decoration-style:dotted;text-decoration-color:var(--clay,#947158);text-underline-offset:3px;cursor:pointer}
+.reader-name-link:hover,.person-ref:hover{text-decoration-style:solid}
+.person-context-dialog{border:1px solid var(--line,#d3c3b5);border-radius:12px;padding:20px 23px;max-width:min(93vw,530px);max-height:min(80vh,700px);overflow:auto;color:var(--ink,#302e29);background:var(--panel,#fffdf7);box-shadow:0 25px 55px #1115}
+.person-context-dialog::backdrop{background:#181d1db0}
+.person-context-head{display:flex;align-items:start;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line,#ddd);padding:0 0 12px}
+.person-context-head h2{font:500 25px Georgia,serif;margin:0}
+.person-context-head button{border:1px solid var(--line,#d5c5b3);background:transparent;color:inherit;border-radius:7px;font-size:21px;line-height:1;padding:4px 11px;cursor:pointer}
+.person-context-dialog p{font:15px/1.68 Georgia,serif}
+.person-context-dialog .person-context-role{font:600 13px/1.5 system-ui,sans-serif;color:var(--clay,#906e50)}
+.person-context-dialog .person-context-source,.person-context-dialog .person-context-muted{font:12px/1.6 system-ui,sans-serif;color:var(--muted,#6c655d)}
+.person-context-links{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.person-context-links a{border:1px solid var(--line,#d2c6b8);border-radius:6px;padding:5px 8px;font:12px/1.4 system-ui,sans-serif;text-decoration:none;color:inherit}
+.person-context-links a:hover{text-decoration:underline}
+.reading-column p[id^="s"]{scroll-margin-top:104px}
+.reading-column p[id^="s"]:target{background:linear-gradient(90deg,rgba(180,147,96,.12),transparent);border-radius:3px}
+@media print{.person-context-dialog{display:none!important}.person-ref{text-decoration:none}}
