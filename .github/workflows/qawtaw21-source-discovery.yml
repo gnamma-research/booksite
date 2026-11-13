@@ -1,0 +1,24 @@
+name: Qawtaw21 source reference discovery
+on:
+  push:
+    branches: [feature/qawtaw21-expanded-source-index-20261113]
+    paths:
+      - '.github/workflows/qawtaw21-source-discovery.yml'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/qawtaw21_discover_references.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  discovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan all 171 source units for reference candidates
+        run: node texts/al-turka/qawaid-al-tawhid/qa/qawtaw21_discover_references.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawtaw21-source-candidates
+          path: texts/al-turka/qawaid-al-tawhid/qa/qawtaw21-source-candidates.json
+          retention-days: 21
