@@ -39,6 +39,7 @@ with sync_playwright() as p:
   page.wait_for_selector(marker,timeout=16000)
   ck('exact Quran words acquire a small marker',page.locator(marker).count()==1)
   ck('Arabic source words remain separate text node',page.locator(marker).evaluate('(e)=>e.parentNode.previousSibling?.nodeType===Node.TEXT_NODE && e.parentNode.previousSibling.textContent.trim().length>8'))
+  ck('source glyph is CSS-only and not added to canonical Arabic textContent',page.locator(marker).evaluate('(e)=>e.textContent.length===0'))
   ck('minimal note marker is visible only in Normal view',page.locator(marker).is_visible())
   ck('old sources/terms banners hidden from running text',page.locator('#reading .gn-citation-ribbon:visible').count()==0 and page.locator('#reading .gn-term-ribbon:visible').count()==0)
   page.locator(marker).click()
