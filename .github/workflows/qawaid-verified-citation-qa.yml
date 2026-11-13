@@ -1,0 +1,67 @@
+name: Qawāʿid graded source citations and deep-link acceptance
+on:
+  push:
+    branches: [feature/qawaid-verified-citation-links-20261113]
+    paths:
+      - '.github/workflows/qawaid-verified-citation-qa.yml'
+      - 'texts/al-turka/qawaid-al-tawhid/qawaid-inline-references.js'
+      - 'texts/al-turka/qawaid-al-tawhid/qawaid-citation-policy.js'
+      - 'texts/al-turka/qawaid-al-tawhid/qawaid-linked-sources.css'
+      - 'texts/al-turka/qawaid-al-tawhid/qawaid-study.js'
+      - 'texts/al-turka/qawaid-al-tawhid/qawaid-research-search.js'
+      - 'texts/al-turka/qawaid-al-tawhid/index.html'
+      - 'texts/al-turka/qawaid-al-tawhid/commentary.html'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/test-linked-source-cards.py'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/check-study-ui.py'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/check-layered-reader.py'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/test-commentary-browser.py'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/audit-linked-citation-coverage.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 17
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check syntax and complete source policy
+        run: |
+          node --check texts/al-turka/qawaid-al-tawhid/qawaid-inline-references.js
+          node --check texts/al-turka/qawaid-al-tawhid/qawaid-citation-policy.js
+          node --check texts/al-turka/qawaid-al-tawhid/qawaid-study.js
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('texts/al-turka/qawaid-al-tawhid')
+          assert (p/'data/primary-reference-register.js').stat().st_size>10000
+          for x in ('index.html','commentary.html'):
+              t=(p/x).read_text()
+              assert 'qawaid-citation-policy.js' in t and 'qawaid-inline-references.js' in t
+          PY
+      - name: Install Chromium Playwright
+        run: |
+          python -m pip install --quiet playwright
+          python -m playwright install --with-deps chromium
+      - name: Verify citation markers, comparative notes and mobile return navigation
+        run: python texts/al-turka/qawaid-al-tawhid/qa/test-linked-source-cards.py
+      - name: Audit every registered direct quotation anchor in both readers
+        run: python texts/al-turka/qawaid-al-tawhid/qa/audit-linked-citation-coverage.py
+      - name: Recheck original source-parity and Darūrī-family study reader
+        run: |
+          python texts/al-turka/qawaid-al-tawhid/qa/check-study-ui.py
+          python texts/al-turka/qawaid-al-tawhid/qa/check-layered-reader.py
+          python texts/al-turka/qawaid-al-tawhid/qa/test-commentary-browser.py
+      - name: Save citation QA report and screenshot
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawaid-verified-citations-evidence
+          path: |
+            texts/al-turka/qawaid-al-tawhid/qa/linked-source-cards-browser-acceptance.json
+            texts/al-turka/qawaid-al-tawhid/qa/linked-citation-coverage.json
+            texts/al-turka/qawaid-al-tawhid/qa/qawaid-citation-mobile.png
+            texts/al-turka/qawaid-al-tawhid/qa/qawaid-citation-error.png
+            texts/al-turka/qawaid-al-tawhid/qa/study-ui-report.json
+            texts/al-turka/qawaid-al-tawhid/qa/layered-browser-results/
+            texts/al-turka/qawaid-al-tawhid/qa/commentary-browser-acceptance.json
+          retention-days: 21

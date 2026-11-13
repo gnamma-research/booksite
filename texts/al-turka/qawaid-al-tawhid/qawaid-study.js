@@ -4,6 +4,8 @@
 (function(){
 'use strict';
 const terms=window.GNAMMA_QAWAID_TERMS?.terms||[],references=window.GNAMMA_QAWAID_REFERENCES?.items||[];
+const citationPolicy=window.GNAMMA_QAWAID_CITATION_POLICY||{grades:{},records:{}};
+const referenceGrade=r=>citationPolicy.grades?.[citationPolicy.records?.[r.id]]||{group:'comparison',label:'Contextual source',explanation:'The relationship has not been independently established as a direct quotation.'};
 const matn=window.GNAMMA_QAWAID_MATN?.units||[];
 const sharh=[...new Map([...(window.GNAMMA_TAMHID_SHARH?.units||[]),...(window.GNAMMA_TAMHID_MAIN||[]),...(window.GNAMMA_TAMHID_CONCLUSION||[])].map(u=>[u.id,u])).values()];
 const byId=new Map([...matn,...sharh].map(u=>[u.id,u]));
@@ -142,7 +144,8 @@ function openPanel(panel,param){
   groupButton('Contents','contents','contents','61 matn units, linked sharḥ'),
   groupButton('Dictionary','dictionary','dictionary','82 technical headwords with source passages'),
   groupButton('Subject index','subjects','index','Grouped themes and source locations'),
-  groupButton('Primary sources','references','sources','Qurʾān, quoted philosophical works and cross-references'),
+  groupButton('Citations & sources','references','sources','Attested wording, primary texts and exact passage references'),
+  groupButton('Parallels & reports','parallels','sources','Editorial comparisons, named works and unverified reports'),
   groupButton('Search terms & sources','search','search','Find technical terms and source-reference cards'),
   groupButton('PDF editions','pdf','pdf','Reading, Study and Reference'),
    groupButton('Editorial & textual notes','apparatus-notes','sources','Source variants and editorial notes, outside the reading text'),
@@ -155,6 +158,7 @@ function openPanel(panel,param){
  if(panel==='dictionary')return dictionaryPanel(param);
  if(panel==='subjects')return subjectsPanel(param);
  if(panel==='references')return referencePanel(param);
+ if(panel==='parallels')return referencePanel(param,'comparison');
  if(panel==='pdf')return pdfPanel();
  if(panel==='about')return aboutPanel();
  if(panel==='appearance')return appearancePanel();
@@ -211,14 +215,47 @@ function termPanel(id, expanded=false){
  show(t.en,'<div class="gn-prose"><div class="gn-headword" lang="ar" dir="rtl">'+esc(t.ar)+'</div><small>'+esc(t.category)+'</small><p>'+esc(t.definition)+'</p>'+(t.aliases.length?'<p><strong>Also:</strong> '+esc(t.aliases.join(' · '))+'</p>':'')+'</div><h3 class="gn-subheading">Textual locations <small>('+loc.length+')</small></h3><div class="gn-locations">'+(loc.length?shown.map(x=>'<a href="'+unitURL(x.id)+'" data-study-goto="'+esc(x.id)+'"><b>'+esc(x.id)+'</b> · '+esc(x.title)+' <small>'+esc(sourceKind(x))+'</small></a>').join(''):'<p>No direct lexical match in the current reader. Browse the subject index for related topics.</p>')+'</div>'+(loc.length>18&&!expanded?'<button class="gn-more-locations" data-expand-term="'+esc(id)+'">Show all '+loc.length+' matched passages</button>':'')+'<div class="gn-menu-footer"><button data-open-study="dictionary">Dictionary</button><button data-open-study="subjects">Subject index</button></div>');
  window.GnammaQawaidHistorical?.attach?.(id);
 }
-function referencePanel(q=''){
- show('Sources & quotations','<p class="gn-help">A directly quoted excerpt is shown in full as transmitted in the commentary. References that are paraphrases or thematic parallels are labeled accordingly.</p><div class="gn-source-list">'+references.filter(r=>!q||norm(r.title+' '+r.source).includes(norm(q))).map(r=>'<button class="gn-source-row" data-open-source="'+esc(r.id)+'"><b>'+esc(r.title)+'</b><small>'+esc(r.source)+' · '+esc(r.status.replaceAll('-',' '))+'</small></button>').join('')+'</div>');
+function referencePanel(q='',filter=null){
+ const sets=[
+  {id:'direct',title:'Attested citations and quotations',description:'Displayed source phrases are linked only where they match the Arabic wording in a named passage. A quotation preserved in Tamhīd is not automatically a manuscript-collated original of another work.'},
+  {id:'comparison',title:'Parallels, named works and reported attributions',description:'Separate independently located excerpts, interpretive comparisons, attributed material and unverified reports. These are never presented as new exact authorial quotations.'}
+ ];
+ const query=norm(q||'');
+ const markup=sets.filter(g=>!filter||filter===g.id).map(group=>{
+  const items=references.filter(r=>referenceGrade(r).group===group.id&&(!query||norm(r.title+' '+r.source+' '+(r.note||'')).includes(query)));
+  if(!items.length)return '';
+  return '<section class="gn-reference-group"><h3>'+group.title+'</h3><p class="gn-help">'+group.description+'</p>'+
+   '<div class="gn-source-list">'+items.map(r=>'<button class="gn-source-row" data-open-source="'+esc(r.id)+'"><b>'+esc(r.title)+'</b><small>'+esc(referenceGrade(r).label)+' · '+esc(r.source||r.type||'')+'</small></button>').join('')+'</div></section>';
+ }).join('');
+ show(filter==='comparison'?'Parallels & reported sources':'Sources & quotations',
+  '<p class="gn-help">Eighteen existing evidence-graded source cards. Inline marks are attached only to attested Arabic spans; all other comparisons remain here, outside the running text.</p>'+
+  (markup||'<p class="gn-help">No matches in the selected source category.</p>')+
+  '<div class="gn-menu-footer">'+(filter?'<button data-open-study="references">All sources</button>':'<button data-open-study="parallels">Parallels & reports</button>')+
+  '<button data-open-study="dictionary">Dictionary</button></div>');
 }
 function sourcePanel(id){
  const r=citationMap.get(id);if(!r)return;
+ const grade=referenceGrade(r);
  const quote=r.quoteFrom?originalCitation(r):{arabic:r.arabic,english:r.english};
- const units=r.units||[],type=r.status?.replaceAll('-',' ');
- show(r.title,'<div class="gn-prose"><small>'+esc(r.source)+' · '+esc(type)+'</small>'+(quote.arabic?'<blockquote class="gn-source-ar" lang="ar" dir="rtl">'+esc(quote.arabic)+'</blockquote>':'')+(quote.english?(r.englishRole==='editorial-summary'?'<p class="gn-help"><strong>Editorial synopsis, not a complete translation:</strong> '+esc(quote.english)+'</p>':'<blockquote>'+esc(quote.english)+'</blockquote>'):'')+(r.note?'<p>'+esc(r.note)+'</p>':'')+(quote.warning?'<p>'+esc(quote.warning)+'</p>':'')+'<p><a href="'+esc(r.sourceUrl)+'" target="_blank" rel="noopener noreferrer">View cited source</a></p></div><h3 class="gn-subheading">Passages in this book</h3><div class="gn-locations">'+units.map(id=>'<a data-study-goto="'+esc(id)+'" href="'+unitURL(id)+'">'+esc(id)+' · '+esc(byId.get(id)?.section||byId.get(id)?.title||'Open passage')+'</a>').join('')+'</div><div class="gn-menu-footer"><button data-open-study="references">All sources</button><button data-open-study="pdf">PDF editions</button></div>');
+ const units=r.units||[];
+ const localUrl=typeof r.sourceUrl==='string'&&/^https:\/\/[^\s"'<>]+$/i.test(r.sourceUrl)?r.sourceUrl:'';
+ const linkText=r.type==='quran'?'Open exact Qurʾānic verse':r.type==='hadith'?'Open hadith source':
+  r.quoteFrom?'Open the Tamhīd quotation witness':'Open cited external edition or comparison';
+ const evidence='<div class="gn-evidence-label">'+esc(grade.label)+'</div><p class="gn-evidence-disclosure">'+esc(grade.explanation)+'</p>';
+ const sourceText=quote.arabic?'<blockquote class="gn-source-ar" lang="ar" dir="rtl">'+esc(quote.arabic)+'</blockquote>':'';
+ const english=quote.english?(r.englishRole==='editorial-summary'
+  ?'<p class="gn-help"><strong>Editorial synopsis, not a complete translation:</strong> '+esc(quote.english)+'</p>'
+  :'<blockquote>'+esc(quote.english)+'</blockquote>'):'';
+ const caution=citationPolicy.records?.[id]==='unverified-attribution'
+  ?'<p class="gn-help"><strong>Evidence status: unverified attribution.</strong> Do not treat this as an authenticated Prophetic report.</p>':'';
+ const external=localUrl?'<p><a href="'+esc(localUrl)+'" target="_blank" rel="noopener noreferrer">'+linkText+'</a></p>':'';
+ const warnings=(r.note?'<p>'+esc(r.note)+'</p>':'')+(quote.warning?'<p>'+esc(quote.warning)+'</p>':'');
+ const locs=units.map(id=>'<a data-study-goto="'+esc(id)+'" href="'+unitURL(id)+'">'+esc(id)+' · '+esc(byId.get(id)?.section||byId.get(id)?.title||'Open passage')+'</a>').join('');
+ show(r.title,'<div class="gn-prose">'+evidence+sourceText+english+caution+warnings+external+'</div>'+
+  '<h3 class="gn-subheading">Passages in this book</h3><div class="gn-locations">'+(locs||'<p>No passage anchor supplied.</p>')+'</div>'+
+  '<button class="gn-source-return" data-study-close type="button">Return to reading</button>'+
+  '<div class="gn-menu-footer"><button data-open-study="references">All sources</button>'+
+  '<button data-open-study="parallels">Parallels & reports</button><button data-open-study="pdf">PDF editions</button></div>');
 }
 async function pdfPanel(){
  show('PDF editions','<p class="gn-help">Reading, Study, and Reference have separate contents and notes. Opening a PDF on iPhone may use the browser preview.</p><p>Looking up the published editions…</p>');

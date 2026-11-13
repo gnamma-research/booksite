@@ -200,20 +200,24 @@ function searchAll(){
  }
  return {items:results,total:results.length,help:results.length?'':(mode==='near'&&!b?'Enter a second word to search within a passage.':'No matching passage in the selected source scope.')};
 }
+function passageURL(id){
+ const key=String(id||'');
+ if(key.startsWith('SH-INTRO-'))return 'commentary.html#'+encodeURIComponent(key);
+ if(key.startsWith('SH-'))return (work==='combined'?'./#':'commentary.html#')+encodeURIComponent(key);
+ return './#'+encodeURIComponent(key);
+}
 function itemUrl(r){
- if(r.kind==='mine')return r.id.startsWith('SH-')?(work==='combined'&&!r.id.startsWith('SH-INTRO-')?'./#':'commentary.html#')+encodeURIComponent(r.id):'./#'+encodeURIComponent(r.id);
- if(r.kind==='source'){
-  const id=r.unit||'QT-001';return id.startsWith('SH-')?'commentary.html#'+encodeURIComponent(id):'./#'+encodeURIComponent(id);
- }
+ if(r.kind==='mine')return passageURL(r.id);
+ if(r.kind==='source')return passageURL(r.unit||'QT-001');
  if(r.kind==='term'){
   const t=TERMS.find(t=>t.id===r.id);
   if(t){
    const m=units.find(u=>norm(u.arabic||'').includes(norm(t.ar))||norm(u.english||'').includes(norm(t.en.split('/')[0])));
-   if(m)return m.id.startsWith('SH-')?'commentary.html#'+encodeURIComponent(m.id):'./#'+encodeURIComponent(m.id);
+   if(m)return passageURL(m.id);
   }
   return './';
  }
- return r.id.startsWith('SH-')?'commentary.html#'+encodeURIComponent(r.id):'./#'+encodeURIComponent(r.id);
+ return passageURL(r.id);
 }
 function csvValue(s){return '"'+String(s??'').replace(/"/g,'""')+'"';}
 let last=[];

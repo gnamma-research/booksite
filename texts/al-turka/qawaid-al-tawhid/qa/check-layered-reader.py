@@ -57,7 +57,25 @@ with sync_playwright() as p:
         page.locator('#SH-001>summary').click();page.locator('#lang-ar').click()
         check('languages affect both layers',page.locator('.matn-layer .ar').is_hidden() and page.locator('#SH-001 .ar').is_hidden() and page.locator('#SH-001 .en').is_visible())
         page.locator('#lang-en').click();check('one language remains',page.locator('#lang-en').get_attribute('aria-pressed')=='true')
-        page.locator('#lang-ar').click();page.locator('#layer-sharh').click();page.locator('#search-button').click();page.locator('#search-field').fill('SH-028');page.locator('[data-result-id="SH-028"]').click();page.wait_for_selector('#SH-028')
+        page.locator('#lang-ar').click();page.locator('#layer-sharh').click();page.locator('#search-button').click()
+        if page.locator('#qt-research-dialog').is_visible():
+            # The current Daruri-family research overlay supersedes the
+            # retired #search-field dialog; retain direct-ID search intent.
+            page.locator('#qt-query').fill('SH-028')
+            page.wait_for_timeout(450)
+            page.locator('#qt-results .qt-result[href*="#SH-028"]').first.click()
+        else:
+            page.locator('#search-field').fill('SH-028')
+            page.locator('[data-result-id="SH-028"]').click()
+        page.wait_for_selector('#SH-028')
+        page.wait_for_timeout(350)
+        state_after_search=page.evaluate("""() => ({
+          url:location.href,mode:document.body.dataset.mode,
+          sharhOpen:document.querySelector('#SH-028')?.open,
+          detailVisible:!!document.querySelector('#SH-028 .sharh-content')?.getClientRects().length,
+          sourceLayer:document.querySelector('#layer-sharh')?.getAttribute('aria-checked')
+        })""")
+        print('SEARCH_LAYER_DIAGNOSTIC',state_after_search,flush=True)
         check('search reveals hidden commentary in place',page.url.endswith('#SH-028') and page.locator('#SH-028 .sharh-content').is_visible())
         page.evaluate("s=JSON.parse(localStorage.getItem('gnamma:qawaid:reading:v2'));s.bookmarks=['QT-007'];s.personal={'QT-007':'Retained note'};s.legacyField='retain';localStorage.setItem('gnamma:qawaid:reading:v2',JSON.stringify(s))")
         page.reload(wait_until='networkidle');page.locator('#layer-sharh').click();page.locator('#layer-sharh').click()
