@@ -31,3 +31,6 @@
 #passages .gn-yazdi-main-caveat{display:none!important}
 #flow-passages details.gn-yazdi-source-notes:not([open]){margin:0;padding:0}
 .gn-h-panel .gn-h-english{user-select:text}
+
+.gn-h-head-actions{display:flex;align-items:center;gap:8px}.gn-h-dictionary{border:1px solid #bdcbc0;border-radius:7px;padding:7px 10px;background:transparent;color:inherit;cursor:pointer;font:12px system-ui}
+.gn-terms-overlay:not([hidden]){z-index:1200}
