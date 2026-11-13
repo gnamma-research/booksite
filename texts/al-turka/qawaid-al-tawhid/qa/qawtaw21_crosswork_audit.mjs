@@ -7,7 +7,7 @@ const files=['units.js','commentary.js','commentary-introduction-1.js','commenta
 const ctx=vm.createContext({window:{}});for(const n of files)vm.runInContext(fs.readFileSync(path.join(DATA,n),'utf8'),ctx,{filename:n});
 const sharh=ctx.window.GNAMMA_TAMHID_CORPUS.units,matn=ctx.window.GNAMMA_QAWAID_MATN.units;
 const parent=ROOT.split(path.sep).slice(0,-4).join(path.sep)||'/';
-const other=path.resolve(ROOT,'../../../..');
+const other=path.resolve(ROOT,'../../..');
 function read(p){return JSON.parse(fs.readFileSync(path.join(other,p),'utf8'));}
 function sample(s,max=250){return String(s||'').replace(/\s+/g,' ').slice(0,max);}
 const targets=['SH-026','SH-029','SH-039','SH-041','SH-051','SH-053','SH-060','SH-INTRO-030','SH-INTRO-011','QT-041'];
