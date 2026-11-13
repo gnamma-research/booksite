@@ -1,0 +1,61 @@
+/* Scholarly context reference pages. Uses Gnamma's site palette and deliberately avoids decorative callouts. */
+.context-shell{max-width:1110px;margin:auto;padding:27px clamp(15px,4vw,48px) 100px}
+.context-shell h1{font-size:clamp(30px,5vw,49px);font-weight:500;line-height:1.15;margin:7px 0 15px}
+.context-lead{max-width:760px;font-size:1.05rem;line-height:1.75;color:var(--ink,#352f28)}
+.context-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px 17px;margin:16px 0 30px;font:600 13px/1.6 system-ui,sans-serif}
+.context-actions a,.context-actions button{border:1px solid var(--line,#d9d1c5);border-radius:7px;background:var(--panel,#f5f1ea);padding:8px 12px;color:var(--ink,#352f28);text-decoration:none;cursor:pointer}
+.context-actions a:hover,.context-actions button:hover{border-color:var(--clay,#92684f)}
+.context-kicker{font:700 11px system-ui,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--clay,#886348)}
+.context-controls{display:grid;grid-template-columns:minmax(190px,1fr) minmax(140px,260px);gap:12px;margin:22px 0}
+.context-controls input,.context-controls select{width:100%;border:1px solid var(--line,#d4cabb);border-radius:8px;background:var(--panel,#fff);color:inherit;padding:12px 13px;font:15px system-ui,sans-serif}
+.context-group{margin:30px 0 34px;scroll-margin-top:100px}
+.context-group h2{font-size:21px;margin:0 0 5px;font-weight:550}
+.context-group .context-help{max-width:780px;color:var(--muted,#746b60);font:13px/1.65 system-ui,sans-serif;margin:0 0 13px}
+.profile-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,325px),1fr));gap:11px}
+.profile-card{border:1px solid var(--line,#d4cabb);border-radius:10px;background:var(--panel,#fffcf7);scroll-margin-top:110px}
+.profile-card summary{list-style:none;position:relative;padding:13px 34px 13px 14px;cursor:pointer;line-height:1.4}
+.profile-card summary::-webkit-details-marker{display:none}
+.profile-card summary::after{content:"+";position:absolute;right:15px;top:14px;font:18px system-ui;color:var(--clay,#81583f)}
+.profile-card[open] summary::after{content:"−"}
+.profile-card .profile-name{font:600 16px/1.4 Georgia,serif;display:block;margin:0 0 3px}
+.profile-card .profile-role{font:12px/1.55 system-ui,sans-serif;color:var(--muted,#766c5c)}
+.profile-card .profile-body{border-top:1px solid var(--line,#e2d9cb);padding:6px 15px 16px}
+.profile-card .profile-body p{line-height:1.62;font-size:14px}
+.profile-meta{font:12px/1.65 system-ui,sans-serif;color:var(--muted,#6f675e)}
+.profile-links{display:flex;flex-wrap:wrap;gap:7px 9px;margin-top:10px}
+.profile-links a{font:12px/1.35 system-ui,sans-serif;border:1px solid var(--line,#dcd1c5);border-radius:5px;padding:6px 8px;color:var(--ink,#4d3a29);background:transparent;text-decoration:none}
+.profile-links a:hover{background:var(--panel,#f4e9db);text-decoration:underline}
+.context-footer{border-top:1px solid var(--line,#d5cbbd);padding-top:20px;margin-top:36px;line-height:1.65;font-size:13px;color:var(--muted,#766c5c)}
+.cast-overview{border:1px solid var(--line,#d5ccbd);border-radius:14px;padding:16px;background:var(--panel,#faf6ef);margin:21px 0 27px}
+.cast-overview h2{font-size:21px;margin:0 0 12px;font-weight:500}
+.cast-diagram{width:100%;height:auto;display:block;max-height:490px}
+.cast-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:8px;margin:10px 0}
+.cast-groups a{display:block;border:1px solid var(--line,#ded3c3);border-radius:7px;padding:11px;text-decoration:none;color:var(--ink,#392f25);font:600 13px system-ui,sans-serif}
+.cast-groups span{display:block;font-weight:400;font-size:12px;color:var(--muted,#6f675e);margin-top:4px}
+.cast-groups a:hover{border-color:var(--clay,#8b6f5b)}
+.context-subject-card{display:grid;grid-template-columns:1fr;gap:8px}
+.subject-entry{padding:12px 15px;border:1px solid var(--line,#d4cabb);border-radius:9px;background:var(--panel,#fffcf7);scroll-margin-top:100px}
+.subject-entry h3{font:600 17px Georgia,serif;margin:0 0 6px}
+.subject-entry p{font-size:14px;line-height:1.65;margin:0 0 7px}
+.subject-links{font:12px/1.65 system-ui,sans-serif;display:flex;gap:8px;flex-wrap:wrap}
+.subject-links a{padding:2px 8px;border-radius:6px;border:1px solid var(--line,#dacbbc);text-decoration:none;color:var(--ink,#4d3825)}
+.geo-toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0}
+.geo-toolbar button{border:1px solid var(--line,#d3c7b8);background:var(--panel,#fffaf3);padding:10px 14px;border-radius:7px;cursor:pointer;font:600 13px system-ui,sans-serif}
+.geo-toolbar button[aria-pressed=true]{background:var(--ink,#3c403b);color:var(--bg,#fff);border-color:var(--ink,#3c403b)}
+.geographic-map{height:clamp(380px,61vh,640px);border:1px solid var(--line,#d5ccbe);border-radius:12px;background:#e9e8e3;overflow:hidden}
+.geo-legend{font:12px/1.65 system-ui,sans-serif;color:var(--muted,#61584e);margin:10px 0 22px}
+.geo-places{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:9px}
+.geo-place{border:1px solid var(--line,#dbd0c1);border-radius:9px;padding:11px 13px;background:var(--panel,#fffaf4)}
+.geo-place h3{margin:0 0 4px;font:600 16px Georgia,serif}
+.geo-place p{font:13px/1.6 system-ui,sans-serif;margin:0 0 4px}
+.geo-place a{font:600 12px system-ui,sans-serif;color:var(--ink,#4e3b2c)}
+.chron-group{margin:22px 0 34px}
+.chron-group h2{font-size:22px;margin-bottom:14px}
+.chron-list{border-left:2px solid var(--line,#c9baa8);padding-left:20px;margin-left:10px;display:grid;gap:14px}
+.chron-item{position:relative}
+.chron-item::before{content:"";position:absolute;left:-27px;top:10px;border:3px solid #f8f5ee;background:var(--clay,#916b54);width:10px;height:10px;border-radius:100%}
+.chron-date{font:700 12px/1.35 system-ui,sans-serif;color:var(--clay,#886349);margin:0 0 4px}
+.chron-item h3{font-size:16px;margin:0 0 4px}
+.chron-item p{font-size:14px;line-height:1.65;margin:0 0 7px}
+.chron-item a{font:600 12px system-ui,sans-serif}
+@media(max-width:650px){.context-controls{grid-template-columns:1fr}.context-shell{padding-top:18px}.cast-diagram{max-height:310px}.context-shell h1{font-size:31px}.profile-grid{grid-template-columns:1fr}.geo-toolbar button{flex:1}.geographic-map{height:420px}}
