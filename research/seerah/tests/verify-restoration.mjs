@@ -31,7 +31,7 @@ for(const name of ['Nūḥ','Shuʿayb','Iblīs','Ḥirāʾ','al-Ḥudaybiyyah','
 for(const k of ['al-wahm al-kullī','Futūḥāt','Muhammadan Reality','Ḥallāj','the Garden'])assert.ok(source.chapters[0].sharh.includes(k),k);
 assert.equal(source.chapters[0].matn,restoration.matn);
 assert.equal(source.chapters[0].sharh,restoration.sharh);
-assert.ok(source.chapters[0].matn.indexOf('builds the Ark') < source.chapters[0].matn.indexOf('At the flood'));
+assert.ok(source.chapters[0].matn.indexOf('builds the Ark') < source.chapters[0].matn.indexOf('at the flood'));
 assert.ok(source.chapters[12].sharh.includes('bukhari:709'));
 assert.ok(source.chapters[43].sharh.includes('21 December 1868')===false || source.chapters[43].sharh.includes('Privy Council'));
 const modified=new Set([1,2,10,11,13,28,33,44,45]);
