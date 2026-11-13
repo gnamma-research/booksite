@@ -1,3 +1,19 @@
+# Stage 84 — public Volume I text-first working reader (13 November 2026)
+
+**Public repository update:** `stage84-reader.html` and eleven `stage84-data/records-NN.js` modules are now committed to the Gnamma booksite GitHub repository. The new text reader indexes all **280** Volume I printed page positions and all **1,401** provisional records. Stage 83's offline-only status below is now historical. The **facsimile image files and original combined PDF are not yet hosted on the public site**; they remain in the separate Stage 84 offline research package. Browser Pages deployment and actual mobile Safari must be verified separately.
+
+**Increment this stage:** 12 selected, source-image-reread Arabic/English records on printed pages **I:8–12**, with text and translation linked by ID. Those passages cover the definition of kalām; distinctions between doctrinal and practical knowledge; certain proofs; the Companions' early discipline labels; and the knowable as theological subject. Previous interpretive English overviews remain in hidden reading apparatus. See [Stage 84 source rereads](STAGE84_I008_I012_SOURCE_REREADS.md).
+
+**Metrics, from source corpus:** 279/279 body positions have some provisional English. **214/279** body pages now contain some typed Arabic; **65/279** still have only locating quotations. **1,083/1,401** indexed records contain some typed Arabic, and **318** are anchors-only. **0/279** complete pages independently proofed or accepted. Manuscript collation **0** (not required for a single-witness Būlāq-based critical reading edition).
+
+**Priority:** complete and literally translate I:13–72 and I:74–78 where no typed Arabic has yet been entered; simultaneously check all printed lower ḥawāshī and the upper commentary rather than mistaking a page-indexed summary for a complete translation. Independently proof text against source images before labeling any entire page final. The public reader is a helpful working edition, not the finished definitive volume.
+
+**Public reader path:** [Volume I · Stage 84](../stage84-reader.html). Original source-image reader remains the packaged offline edition until facsimiles can be hosted without breaking links.
+
+---
+
+## Archived historical checkpoints
+
 # Stage 83 — Volume I working-edition checkpoint (13 November 2026)
 
 **Supersedes the Stage 82 numerical checkpoint below; the older notices remain archival.**
