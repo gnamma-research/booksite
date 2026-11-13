@@ -56,6 +56,8 @@ function quotationOpening(r,unit){
 }
 function phrasesFor(r,id){
  if(!(r.units||[]).includes(id))return [];
+ const received=policy.phraseOverrides?.[r.id]?.[id];
+ if(Array.isArray(received)&&received.length)return received.filter(x=>arRe.test(x));
  if(r.inlineAnchors?.length && (r.type==='quran'||r.type==='hadith'))
   return r.inlineAnchors.filter(x=>arRe.test(x));
  if(r.quoteFrom===id){
