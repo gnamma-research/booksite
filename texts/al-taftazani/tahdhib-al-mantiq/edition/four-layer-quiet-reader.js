@@ -30,8 +30,8 @@ if(quiet){
   const editorial=[...quiet.querySelectorAll('section.source-note')];
   if(editorial.length){
     const details=el('details','gn-quiet-about');const sum=el('summary',null,'About the edition, sources and editorial apparatus');
-    details.append(sum);const content=el('div','gn-quiet-about-body');editorial.forEach(n=>content.append(n));details.append(content);
-    editorial[0].parentNode?.insertBefore(details,quiet.querySelector('.subtitle')?.nextSibling||quiet.firstChild);
+    details.append(sum);const content=el('div','gn-quiet-about-body');const parent=editorial[0].parentNode;
+    parent.insertBefore(details,editorial[0]);editorial.forEach(n=>content.append(n));details.append(content);
   }
   const foot=$('.foot',quiet);if(foot){const d=el('details','gn-quiet-footer');d.append(el('summary',null,'Editorial notes'));d.append(foot.cloneNode(true));foot.replaceWith(d);}
 }
