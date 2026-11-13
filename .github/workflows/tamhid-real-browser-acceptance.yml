@@ -10,6 +10,8 @@ on:
       - 'texts/al-turka/qawaid-al-tawhid/qa/clause-map-*.jsonl'
       - 'texts/al-turka/qawaid-al-tawhid/commentary-reader.js'
       - 'texts/al-turka/qawaid-al-tawhid/reader.css'
+      - 'texts/al-turka/qawaid-al-tawhid/qawaid-reading-refinement.css'
+      - 'texts/al-turka/qawaid-al-tawhid/qawaid-research-search.js'
       - 'texts/al-turka/qawaid-al-tawhid/downloads/Tamhid_Complete_Commentary_Reading_Edition.html'
   workflow_dispatch:
 permissions:
