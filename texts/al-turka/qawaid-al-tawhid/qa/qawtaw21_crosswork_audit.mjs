@@ -20,6 +20,16 @@ let tajRecords=[];
 if(Array.isArray(taj.records))tajRecords=taj.records;
 else if(taj.records&&typeof taj.records==='object')tajRecords=Object.entries(taj.records).map(([id,v])=>({id,...v}));
 else if(Array.isArray(taj.entries))tajRecords=taj.entries;
+console.log('TAJRID_STRUCTURE',JSON.stringify({
+  matnType:Array.isArray(taj.matn)?'array':typeof taj.matn,
+  matnKeys:Array.isArray(taj.matn)?[]:Object.keys(taj.matn||{}).slice(0,20),
+  matnFirst:Array.isArray(taj.matn)?taj.matn[0]:Object.entries(taj.matn||{}).slice(0,1),
+  extractsType:Array.isArray(taj.extracts)?'array':typeof taj.extracts,
+  extractsKeys:Array.isArray(taj.extracts)?[]:Object.keys(taj.extracts||{}).slice(0,20),
+  extractsFirst:Array.isArray(taj.extracts)?taj.extracts[0]:Object.entries(taj.extracts||{}).slice(0,1),
+  questionsType:Array.isArray(taj.questions)?'array':typeof taj.questions,
+  questionsFirst:Array.isArray(taj.questions)?taj.questions[0]:Object.entries(taj.questions||{}).slice(0,1)
+}).slice(0,11000));
 const tajHits=tajRecords.filter(e=>/وجود|الوجود|تشكيك|توحيد|التعيّن/.test([e.arabic,e.title,e.chapter,e.summary,e.topic].join(' '))).slice(0,90).map(e=>({id:e.id,title:e.title,arabic:sample(e.arabic,360),english:sample(e.english,240),work:e.work_id||e.work,part:e.part}));
 const rep={schema:'qawtaw21-crosswork-source-inspection',date:'2026-11-13',
   imported:{q:catalog(q),taj:{keys:Object.keys(taj),total:tajRecords.length,first:tajRecords[0]?{id:tajRecords[0].id,title:tajRecords[0].title,arabic:sample(tajRecords[0].arabic,230)}:null}},
