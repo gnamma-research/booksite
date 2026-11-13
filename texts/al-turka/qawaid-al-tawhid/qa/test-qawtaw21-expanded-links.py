@@ -40,8 +40,8 @@ with sync_playwright() as playwright:
      cross:window.GNAMMA_QAWAID_CROSSREADER_LINKS.items.length,
      units:window.GNAMMA_QAWAID_MATN.units.length+window.GNAMMA_TAMHID_CORPUS.units.length
    }}""")
-  check("reviewed runtime source registry 18+11, graded 20+9",info=={"n":29,"ids":29,"oldSourceCount":18,"added":11,"direct":20,"comparison":9,"cross":5,"units":171})
-  check("original matn plus sharh still render",page.locator("#QT-041 .matn-layer").count()==1 and page.locator("#SH-041 .sharh-layer").count()==0 if False else page.locator("#QT-041 .matn-layer").count()==1)
+  check("reviewed runtime source registry 18+11, graded 20+9",info=={"n":29,"ids":29,"oldSourceCount":18,"added":11,"direct":20,"comparison":9,"cross":7,"units":171})
+  check("original matn plus sharh still render",page.locator("#QT-041 .matn-layer").count()==1)
   check("Fuṣūṣ mirror passage exact citation is marked",page.locator('#QT-041 .gn-source-inline[data-open-source="ibn-arabi-fusus-mirror-qt041"]').count()==1)
   check("marks are glyph-only, preserving source text",page.locator('#QT-041 .gn-source-inline[data-open-source="ibn-arabi-fusus-mirror-qt041"]').evaluate("(e)=>e.textContent.length===0"))
   page.locator('#QT-041 .gn-source-inline[data-open-source="ibn-arabi-fusus-mirror-qt041"]').click()
@@ -50,9 +50,9 @@ with sync_playwright() as playwright:
   page.locator('#gn-study-dialog [data-study-close]').first.click()
   page.locator('#menu-button').click()
   page.locator('[data-open-study="crossreader"]').click()
-  check("reviewed internal parallel menu visible",page.locator('.gn-crossreader-item').count()==5)
+  check("reviewed internal parallel menu visible",page.locator('.gn-crossreader-item').count()==7)
   all_links=page.locator(".gn-crossreader-item a").evaluate_all("(els)=>els.map(a=>a.href)")
-  check("exact target IDs in every Qūnawī link",len(all_links)==5 and all("passage=QUN-NU-" in x for x in all_links))
+  check("exact target IDs in every Qūnawī link",len(all_links)==7 and sum('passage=QUN-NU-' in x for x in all_links)==5 and sum('#matn/' in x for x in all_links)==2)
   check("parallel labelled non-quotation",all('not a direct quotation' in x.lower() for x in page.locator('.gn-crossreader-item small').all_inner_texts()))
   page.locator('#gn-study-dialog [data-study-close]').first.click()
   page.locator('#focus-button').click()
@@ -78,7 +78,7 @@ with sync_playwright() as playwright:
   check("standalone has expanded 29 source references",page.evaluate("window.GNAMMA_QAWAID_REFERENCES.items.length")==29)
   check("standalone SH-039 direct Inshāʾ quotation marked",page.locator('#SH-039 .gn-source-inline[data-open-source="ibn-arabi-dawair-human-sh039"]').count()==1)
   page.locator("#gn-open-citation-index").click()
-  check("standalone cross-reader parallels visible, not mixed with direct references",page.locator(".gn-source-index-group>a").count()==5)
+  check("standalone cross-reader parallels visible, not mixed with direct references",page.locator(".gn-source-index-group>a").count()==7)
   page.locator('[data-citation-return]').click()
   for width in (320,390,768,1280):
    page.set_viewport_size({"width":width,"height":844})
@@ -91,6 +91,10 @@ with sync_playwright() as playwright:
   check("GNAMMA Qūnawī opens exact target paragraph",page.locator("#"+target).count()==1)
   check("Qūnawī deep-link address is not erased by initialization", "passage="+target in page.url)
   check("Qūnawī target preserves Arabic source words", "الإطلاق" in page.locator("#"+target+" .ar").inner_text())
+  page.goto("https://gnamma.test/research/tajrid/#matn/38",wait_until="networkidle")
+  page.wait_for_selector("#p-38",timeout=20000)
+  check("Tajrīd exact matn/38 route opens source lemma",page.locator("#p-38").count()==1)
+  check("Tajrīd Arabic explicitly mentions tashkīk", "التشكيك" in page.locator("#p-38").inner_text())
   check("No browser JS errors in crossreader suite",not errors)
   report={"passed":True,"checks":checks,"runtime":info,"errors":errors}
  except Exception as exc:
