@@ -32,6 +32,10 @@
         technology:{name:'technology, information security and accountable AI',href:'needs.html#ai-safety'},
         infrastructure:{name:'water, sanitation and indispensable services',href:'needs.html#water-sanitation'},
         livelihood:{name:'food access, logistics and livelihoods',href:'needs.html#food-access'},
+        household:{name:'welfare provision, household sufficiency and fair administration',href:'needs.html#household-sufficiency'},
+        mental:{name:'mental-health care and professional capacity',href:'needs.html#mental-health'},
+        institutions:{name:'the institutional support of community learning and care',href:'needs.html#community-institutions'},
+        relief:{name:'emergency response, displacement and protection',href:'needs.html#emergency-response'},
         open:{name:'the complete catalogue of communal functions',href:'needs.html'}
       };
       const selection=options[field]||options.open;
