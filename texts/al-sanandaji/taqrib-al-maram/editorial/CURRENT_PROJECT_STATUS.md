@@ -1,3 +1,20 @@
+# Stage 83 — Volume I working-edition checkpoint (13 November 2026)
+
+**Supersedes the Stage 82 numerical checkpoint below; the older notices remain archival.**
+
+- Source witness: Būlāq 1318 AH print, original 632-page combined PDF SHA-256 `4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134`. All 280 Volume I source-image SHA-256 values rechecked against the Stage 81 image register; none changed.
+- Source inventory: **280/280** printed numbered leaves including title leaf I:1; **279/279** body pages have *some provisional English*, not complete English translation.
+- Typed Arabic: **209/279 body pages contain at least one typed Arabic passage** (Stage 82 was 204); **70/279** still have only Arabic locating anchors, specifically **I:8–72 and I:74–78**. In the same 1,401-record corpus, **1,071** records have some typed Arabic and **330** have locating anchors only.
+- **Eight bounded source-facing Arabic/English rereads** on I:3–7: `I003.upper.01`, `I003.wasim.01`, `I004.upper.01`, `I004.wasim.01`, `I005.upper.01`, `I005.wasim.01`, `I006.upper.01`, `I007.upper.01`. Earlier interpretive overviews are retained in hidden reader apparatus; do not count these selected printed spans as complete pages. See [Stage 83 source rereads](STAGE83_BOUNDED_SOURCE_READINGS_I003_I007.md).
+- Certified complete **0/279**. Manuscript collation **0** (not required for the planned Būlāq-based first scholarly reading edition). Long printed ḥawāshī and numerous upper clauses remain untranscribed or rendered interpretively. Second proof of the entire volume is still open.
+- Stage 83 full-volume offline reader adds stable passage citations/deep links, a per-page outline, and corrected Flow-mode refresh on language/layer/page navigation. QA passed on Chromium at 390×844, 768×1024, and 1400×900, including source image loading and last printed page I:280. **Real-device iOS Safari not certified.**
+- **Website state:** this public GitHub checkout still offers the older Volume I reader through **I:198**. The full-volume Stage 83 working HTML, source images and dataset are held in the separate recovery package supplied to the editor; **they are not deployed on the public website**. Do not advertise this as a definitive Volume I, and do not fabricate a URL to the offline package.
+- Next source task: printed **I:8–16**, with full registration of upper matn/sharḥ, ruled and lower commentary, and literal alignment, then I:17–72 and I:74–78. Do not conflate source-position presence, any typed Arabic, or source-image checks with final bilingual page acceptance.
+
+---
+
+## Archived Stage 82 and historical checkpoints
+
 # Stage 82 — updated volume I research/release status (13 November 2026)
 
 **This notice supersedes the historical 7 November 2026 first-pass counters below.** Those older counters describe what was actually mounted on the public website at that time, and are retained only as provenance.
