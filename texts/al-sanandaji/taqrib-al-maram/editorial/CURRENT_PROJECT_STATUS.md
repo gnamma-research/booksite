@@ -1,3 +1,21 @@
+# Stage 82 — updated volume I research/release status (13 November 2026)
+
+**This notice supersedes the historical 7 November 2026 first-pass counters below.** Those older counters describe what was actually mounted on the public website at that time, and are retained only as provenance.
+
+**What exists outside the public site:** a 280-page **source-facsimile-linked offline reader** using the Stage 81 corpus, with a new Stage 82 mobile-first reading shell and explicit scholarly caveats. It includes 280 numbered images (I:1 bibliographic title leaf), **279/279 body positions with some provisional English**, **1,401 source-linked working records**, **1,063 records with typed Arabic**, and **338 records with Arabic locating anchors only**. The strict page ledger reports **204/279 body pages with any typed Arabic and 75/279 without any typed continuous Arabic** (I:3–72 and I:74–78). This is *coverage of some entered material*, not whole-page or full-register completion. **0/279 pages independently proven complete; 0 manuscript pages collated**.
+
+**What is publicly hosted in this GitHub checkout:** the earlier **Volume I reader still stops at I:198**; the newer full-volume offline reader and source images have **not** been deployed. The public Volume II reader retains its separately documented working status. The offline Stage 82 package was delivered through the research conversation, not through this repository; therefore no broken or invented public download URL is supplied here.
+
+**Editor priority:** (1) transcribe every printed register, especially the 75 anchor-only pages; (2) fully translate unrendered marginal glosses, resolve continuity and source ambiguities; (3) perform an independent facsimile-to-Arabic/English proof page by page, documenting conjectures and verified attributions; (4) integrate the verified dataset with the Darūrī-style reader conventions, and test on real mobile Safari; (5) then publish a **Būlāq-based critically annotated bilingual reading edition**. Extensive manuscript collation is **not a prerequisite** to this edition; manuscript catalogue leads are not inspected witnesses.
+
+**Known critical loci:** I:2 contains three different printed voices (Sanandajī upper, signed Faraj Allāh Zakī ruled notice, Wasīm's separate lower preface); I:73 requires qualified readings of `قارنها`, `لم`, `⟦للمقولية⟧`; I:222's conjectural `[حصولها]` derives from a *Sharḥ al-Maqāṣid* parallel and is **not a manuscript variant**; I:88, I:112 and I:253 have same-editor image rereads, not independent page certification. Do not silently attribute every ḥāshiyah to Wasīm.
+
+**Reading modes available in the offline Stage 82 package:** Read, Flow, Study, Source, Focus; Arabic/English/both; independent authorial layers; full source PDF location, 280-page contents, text-only search with normalized Arabic and an explicitly heuristic approximate stem option; basic technical term glossary; saved reader notes/bookmarks where supported. Browser checks on 390px/1400px viewports found no script errors or horizontal overflow. A full dictionary/root analyzer and real-device iOS Safari acceptance remain open.
+
+---
+
+## Archival status: 7 November 2026 (retained unchanged)
+
 # Taqrīb al-Marām — authoritative project status and continuation handoff
 
 **Updated 7 November 2026 — first-pass checkpoint I:198.** This is the current status for website editors, GitHub contributors and new ChatGPT sessions. It supersedes older stage labels that counted pages merely touched.
