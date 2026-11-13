@@ -38,5 +38,6 @@ jobs:
             texts/al-turka/qawaid-al-tawhid/qa/qawaid-immersive-search-browser-report.json
             texts/al-turka/qawaid-al-tawhid/qa/qawaid-immersive-mobile.png
             texts/al-turka/qawaid-al-tawhid/qa/qawaid-commentary-mobile.png
+            texts/al-turka/qawaid-al-tawhid/qa/qawaid-research-mobile.png
             texts/al-turka/qawaid-al-tawhid/qa/qawaid-immersive-error.png
           retention-days: 14
