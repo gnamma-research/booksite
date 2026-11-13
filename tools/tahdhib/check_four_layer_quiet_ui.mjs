@@ -21,6 +21,16 @@ for(const [engine,type] of [['chromium',chromium],['webkit',webkit]]){
     await page.locator('.gn-h-trigger').click();
     await page.waitForFunction(()=>window.GnammaTahdhibFourLayers.counts().loaded===1090,{timeout:60000});
     check(await overlay.isVisible(),'Historical H companion did not open');
+    check(await page.evaluate(()=>window.GnammaTahdhibFourLayers.counts().stage130EnglishRevisions)===21,
+      'Expected all 21 preferred Stage130 H English overlays; baseline Arabic and previous draft must remain intact');
+    await page.locator('#gn-h-panel .gn-h-select').selectOption('H-PREFACE');
+    await page.locator('#gn-h-panel .gn-h-search').fill('HWN-047');
+    check(await page.locator('#gn-h-HWN-047 .gn-h-english').innerText().then(t=>t.includes('ʿiṣma')&&t.includes('Luṭf')),
+      'Stage130 full English must restore separate divine-grace concepts in HWN-047');
+    check(await page.locator('#gn-h-HWN-047 .gn-h-older-english').count()===1,
+      'Prior first-pass English must remain available as collapsed apparatus');
+    await page.locator('#gn-h-panel .gn-h-search').fill('');
+    await page.locator('#gn-h-panel .gn-h-select').selectOption('all');
     check(await page.locator('#gn-h-panel .gn-h-entry').count()===12,'Expected 12 visible paginated entries');
     check((await page.locator('#gn-h-panel .gn-h-entry').first().locator('a').count())>=1,'No original printed source locator link');
     await page.locator('#gn-h-panel .gn-h-select').selectOption('H-SCIENCES');
