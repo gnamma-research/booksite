@@ -8,6 +8,7 @@
 'use strict';
 const references=window.GNAMMA_QAWAID_REFERENCES?.items||[];
 const policy=window.GNAMMA_QAWAID_CITATION_POLICY||{};
+const reviewedCrosslinks=window.GNAMMA_QAWAID_CROSSREADER_LINKS?.items||[];
 const grades=policy.grades||{}, classified=policy.records||{};
 const reading=document.getElementById('reading-list');
 if(!reading||!references.length)return;
@@ -202,7 +203,11 @@ function renderIndex(){
  references.filter(r=>gradeFor(r).group===kind).map(r=>
   '<button data-citation-open="'+esc(r.id)+'"><strong>'+esc(r.title)+'</strong><small>'+esc(gradeFor(r).label)+'</small></button>'
  ).join('')+'</section>').join('');
- d.querySelector('#gn-citation-body').innerHTML='<p class="gn-citation-caution">Only individually attested Arabic passages have inline markers. Interpretive comparisons and unverified reports are never disguised as quotations.</p>'+groups;
+ const cross=reviewedCrosslinks.length?'<section class="gn-source-index-group"><h3>Across GNAMMA · reviewed comparisons</h3>'+
+  '<p class="gn-citation-caution">These are conceptual parallels, not identified literal quotations from Qūnawī.</p>'+
+  reviewedCrosslinks.map(x=>'<a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer"><strong>'+esc(x.from)+' ↔ '+esc(x.toTitle)+'</strong><small>'+esc(x.relationship)+'</small></a>').join('')+
+  '</section>':'';
+ d.querySelector('#gn-citation-body').innerHTML='<p class="gn-citation-caution">Only individually attested Arabic passages have inline markers. Interpretive comparisons and unverified reports are never disguised as quotations.</p>'+groups+cross;
  d.querySelector('[data-citation-back]').hidden=true;
  currentlyOpen=null;showDialog();
 }
