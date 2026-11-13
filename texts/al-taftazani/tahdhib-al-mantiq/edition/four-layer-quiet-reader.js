@@ -38,7 +38,7 @@ if(quiet){
 const panel=el('aside','gn-h-panel');panel.id='gn-h-panel';panel.hidden=true;panel.setAttribute('aria-label','Later glosses alongside the main text');
 const header=el('header','gn-h-head');
 const hbox=el('div');hbox.append(el('strong',null,'حواشي الحاشية'));hbox.append(el('small',null,'Later glosses · same-page companion reading'));header.append(hbox);
-const close=el('button','gn-h-close','×');close.type='button';close.setAttribute('aria-label','Close later glosses');header.append(close);panel.append(header);
+const toolsRow=el('div','gn-h-head-actions');const dictionary=el('button','gn-h-dictionary','Dictionary');dictionary.type='button';dictionary.addEventListener('click',()=>window.GnammaTahdhibTerms?.open?.(dictionary));toolsRow.append(dictionary);const close=el('button','gn-h-close','×');close.type='button';close.setAttribute('aria-label','Close later glosses');toolsRow.append(close);header.append(toolsRow);panel.append(header);
 const controls=el('div','gn-h-controls');
 const tabs=el('div','gn-h-tabs');
 const allTab=el('button','gn-h-tab','All historical sections'), refTab=el('button','gn-h-tab','Including modern references');
