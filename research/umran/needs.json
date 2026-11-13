@@ -1,7 +1,7 @@
 {
   "project": "Work, Vocation & Umran",
-  "version": "2026-11-13-draft-1",
-  "notice": "Not personal legal guidance, an actual shortage assessment, or an assertion of spiritual rank",
+  "version": "2026-11-13-draft-2",
+  "notice": "Candidate need/function catalogue, not a finding of actual local shortage, assignment of personal religious obligation, or spiritual ranking. Project data are organiser claims, not independent verification.",
   "classification_basis": "Provisional juristic research; consult sources and scholars",
   "sufficiency_status": "unknown for every profile",
   "needs": [
@@ -34,7 +34,11 @@
       "sufficiency_status": "unknown",
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
-      "publication": "research_draft"
+      "publication": "research_draft",
+      "example_project_ids": [
+        "education-fund",
+        "southgate"
+      ]
     },
     {
       "id": "contemporary-curricula",
@@ -64,7 +68,10 @@
       "sufficiency_status": "unknown",
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
-      "publication": "research_draft"
+      "publication": "research_draft",
+      "example_project_ids": [
+        "education-fund"
+      ]
     },
     {
       "id": "medical-care",
@@ -94,7 +101,12 @@
       "sufficiency_status": "unknown",
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
-      "publication": "research_draft"
+      "publication": "research_draft",
+      "example_project_ids": [
+        "sudan-basic",
+        "sudan-water",
+        "mental-health"
+      ]
     },
     {
       "id": "water-sanitation",
@@ -124,7 +136,11 @@
       "sufficiency_status": "unknown",
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
-      "publication": "research_draft"
+      "publication": "research_draft",
+      "example_project_ids": [
+        "sudan-water",
+        "refugee-support"
+      ]
     },
     {
       "id": "food-access",
@@ -154,7 +170,11 @@
       "sufficiency_status": "unknown",
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
-      "publication": "research_draft"
+      "publication": "research_draft",
+      "example_project_ids": [
+        "sudan-basic",
+        "tanzania-care"
+      ]
     },
     {
       "id": "ai-safety",
@@ -184,7 +204,8 @@
       "sufficiency_status": "unknown",
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
-      "publication": "research_draft"
+      "publication": "research_draft",
+      "example_project_ids": []
     },
     {
       "id": "dependent-care",
@@ -214,7 +235,11 @@
       "sufficiency_status": "unknown",
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
-      "publication": "research_draft"
+      "publication": "research_draft",
+      "example_project_ids": [
+        "tanzania-care",
+        "orphan-education"
+      ]
     },
     {
       "id": "funerals",
@@ -242,7 +267,213 @@
       "sufficiency_status": "unknown",
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
+      "publication": "research_draft",
+      "example_project_ids": []
+    },
+    {
+      "id": "household-sufficiency",
+      "title": "Adequate provision for vulnerable households",
+      "category": "welfare",
+      "scope": "Household · city · state",
+      "status": "Overlapping duties and administrative standards",
+      "level": "context_dependent",
+      "purpose": "Investigate whether households can access necessary material, educational, health and social provisions, including properly administered assistance where warranted.",
+      "tests": [
+        "Define household costs and access locally",
+        "Distinguish zakat eligibility thresholds from collective legal duties",
+        "Assess continuity, dignity, accessibility and longer-term support"
+      ],
+      "roles": [
+        "Social worker",
+        "Zakat administrator",
+        "Household assessor",
+        "Waqf manager",
+        "Community researcher"
+      ],
+      "sources": [
+        "Abdul Muzil Abd Rahim, UKM (2025), ḥadd al-kifāyah",
+        "MASA@Sungai Nibong study (2025)"
+      ],
+      "example_project_ids": [
+        "tanzania-skills",
+        "tanzania-care",
+        "orphan-education"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft"
+    },
+    {
+      "id": "livelihood-training",
+      "title": "Vocational capability and pathways into livelihood",
+      "category": "livelihood",
+      "scope": "Local · regional",
+      "status": "Potential means; not automatically a separate farḍ kifāya",
+      "level": "beneficial_means",
+      "purpose": "Prepare people for competent, lawful and sustainable livelihood when training and access to work are genuinely necessary to remedy dependence or exclusion.",
+      "tests": [
+        "Identify viable work and market demand",
+        "Evaluate training quality and earnings after completion",
+        "Check household needs, safety and alternatives"
+      ],
+      "roles": [
+        "Vocational teacher",
+        "Apprenticeship mentor",
+        "Small business adviser",
+        "Programme evaluator",
+        "Employer"
+      ],
+      "sources": [
+        "MASA@Sungai Nibong (2025)",
+        "Malaysian research on social entrepreneurship and human capital"
+      ],
+      "example_project_ids": [
+        "tanzania-skills"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft"
+    },
+    {
+      "id": "community-institutions",
+      "title": "Sustainable community and mosque institutions",
+      "category": "institutions",
+      "scope": "Neighbourhood · city · regional networks",
+      "status": "Potential enabling means; function-specific duty",
+      "level": "beneficial_means",
+      "purpose": "Examine the spaces, governance, qualified personnel, finances and services needed for community learning, care, worship and social cooperation.",
+      "tests": [
+        "Separate building, maintenance and service functions",
+        "Analyse real usage and accessible alternatives",
+        "Evaluate governance, financial sustainability and benefit"
+      ],
+      "roles": [
+        "Community trustee",
+        "Facilities manager",
+        "Imam and teacher",
+        "Financial controller",
+        "Institutional organiser"
+      ],
+      "sources": [
+        "Abd Wakil et al., Journal of Fatwa Management and Research (2024)",
+        "International Islamic Fiqh Academy Resolution 164 (2007)"
+      ],
+      "example_project_ids": [
+        "southgate"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft"
+    },
+    {
+      "id": "mental-health",
+      "title": "Accessible mental-health and psychosocial care",
+      "category": "care",
+      "scope": "Local · regional · transnational",
+      "status": "Potentially necessary clinical provision; status context-dependent",
+      "level": "context_dependent",
+      "purpose": "Provide safe, competent care and professional formation where serious mental-health needs lack effective support, while distinguishing clinical needs from general wellness activities.",
+      "tests": [
+        "Document access to qualified clinicians and appropriate care",
+        "Assess service quality, supervision and safety",
+        "Study actual unmet need rather than promotional demand"
+      ],
+      "roles": [
+        "Licensed clinician",
+        "Mental-health researcher",
+        "Clinical supervisor",
+        "Community liaison",
+        "Service evaluator"
+      ],
+      "sources": [
+        "Classical duty to prevent serious harm (requires contemporary legal derivation)",
+        "LaunchGood professional formation campaign (organiser statement)"
+      ],
+      "example_project_ids": [
+        "mental-health"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft"
+    },
+    {
+      "id": "emergency-response",
+      "title": "Emergency relief and displacement support",
+      "category": "emergency",
+      "scope": "Local · regional · transnational",
+      "status": "Contextual responsibilities to avert grave harm",
+      "level": "context_dependent",
+      "purpose": "Secure food, safe water, health and other essential support during acute displacement or disaster, including coordination and continuity of supply.",
+      "tests": [
+        "Verify the acute humanitarian situation independently",
+        "Map relief provision, gaps and competing authorities",
+        "Examine logistics, safety, local participation and sustainability"
+      ],
+      "roles": [
+        "Humanitarian coordinator",
+        "Relief logistics worker",
+        "Health and WASH practitioner",
+        "Interpreter",
+        "Field administrator"
+      ],
+      "sources": [
+        "Juristic duties concerning rescue and prevention of grave harm (further verification)",
+        "Organiser reports and independent humanitarian data needed"
+      ],
+      "example_project_ids": [
+        "sudan-basic",
+        "refugee-support"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft"
+    },
+    {
+      "id": "displaced-shelter",
+      "title": "Safe temporary shelter and stabilisation",
+      "category": "emergency",
+      "scope": "City · region · transnational",
+      "status": "Context-dependent collective and institutional provision",
+      "level": "context_dependent",
+      "purpose": "Investigate provision of safe shelter, protection and basic services for displaced persons, with attention to lawful responsibility and the conditions for lasting stabilisation.",
+      "tests": [
+        "Document the affected population and emergency housing supply",
+        "Assess safety, family integrity, health and access",
+        "Verify agencies' responsibilities and alternatives"
+      ],
+      "roles": [
+        "Shelter coordinator",
+        "Civil engineer",
+        "Social worker",
+        "Local housing administrator",
+        "Protection specialist"
+      ],
+      "sources": [
+        "General duties concerning protection and grave harm (juristic assessment required)",
+        "Independent displacement and housing data required"
+      ],
+      "example_project_ids": [
+        "refugee-support"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
       "publication": "research_draft"
     }
+  ],
+  "research_sources": [
+    "malaysia.json",
+    "projects.html"
   ]
 }
