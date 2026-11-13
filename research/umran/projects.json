@@ -1,6 +1,6 @@
 {
   "title": "LaunchGood community-project evidence leads",
-  "version": "2026-11-13",
+  "version": "2026-11-13-evidence-v3",
   "reviewed": "2026-11-13",
   "policy": "Illustrative organiser narratives. Not independent verification of needs, project efficacy, ongoing status, tax or zakat eligibility, personal duty or religious merit. Inclusion is not an endorsement.",
   "sample_note": "Purposive non-representative selection. Do not rank community needs by fundraising volume.",
@@ -205,6 +205,29 @@
       "legal_status": "requires separate juristic assessment",
       "endorsement": false,
       "currently_open_status": "not maintained"
+    },
+    {
+      "id": "bangi-education-support",
+      "category": "education",
+      "title": "Education support for asnaf and poor children in Malaysia",
+      "region_and_type": "Education · Bangi, Selangor, Malaysia",
+      "organizer_and_source": "PERTUBUHAN KECEMERLANGAN PENDIDIKAN UMMAH · LaunchGood · Closed campaign statement reviewed 13 November 2026",
+      "organizer_stated_intervention": "The organiser reports maintaining 53 Qurʾān study classes and 12 science/mathematics classes, and having supported more than 587 children with free education or living support. These counts have not been independently audited by this project.",
+      "research_interpretation": "A combined religious and general educational programme may have several functions: teaching access, safeguarding, household support, teacher preparation and curriculum quality. The fundraiser itself does not establish the scale of unmet need or the best intervention.",
+      "suggested_capacities": "Qualified teachers · curriculum researchers · programme auditors · family-welfare coordinators · school administrators",
+      "independent_verification_needed": "Dated enrolment and attendance, qualified teaching capacity, independent learning outcomes, household circumstances, costs, continuity, safeguarding and comparable local provision.",
+      "need_ids": [
+        "religious-teaching",
+        "contemporary-curricula",
+        "household-sufficiency"
+      ],
+      "original_campaign_url": "https://www.launchgood.com/v4/campaign/education_support_for_asnaf_and_poor_in_malaysia",
+      "source_type": "campaign organiser statement",
+      "source_reviewed": "2026-11-13",
+      "independent_shortage_verification": "not established",
+      "legal_status": "requires separate juristic assessment",
+      "endorsement": false,
+      "currently_open_status": "closed"
     }
   ]
 }
