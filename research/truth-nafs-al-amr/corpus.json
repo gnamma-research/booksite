@@ -1,0 +1,1029 @@
+{
+  "meta": {
+    "title": "Truth, Mental Existence & Nafs al-Amr",
+    "route": "/research/truth-nafs-al-amr/",
+    "status": "Working, source-graded research corpus; see bibliography and per-work evidence",
+    "date": "2026-11-13",
+    "note": "Bibliographic identification is not a primary-text translation or verification of all claims. Existing translations live in the canonical readers; seven direct Ithbāt commentaries remain awaiting full collation."
+  },
+  "problems": {
+    "P01": "What is the bearer of truth: proposition, judgment, relation, or content?",
+    "P02": "What makes a proposition true?",
+    "P03": "Why is external existence insufficient?",
+    "P04": "Why is mental existence insufficient?",
+    "P05": "What does nafs al-amr mean?",
+    "P06": "Is nafs al-amr the Active/Separate Intellect?",
+    "P07": "Can false judgments be preserved in the truth-ground?",
+    "P08": "How can nonexistent or impossible subjects occur in true propositions?",
+    "P09": "Do negative propositions require their subjects/predicates to exist?",
+    "P10": "How do wāqiʿ, khārij, dhihn, thubūt, ḥaqīqa and nafs al-amr differ?",
+    "P11": "How can mathematical objects/models be non-external yet objectively valid?",
+    "P12": "Is the ultimate ground divine knowledge, divine essence, a presence, or a rank of reality?",
+    "P13": "How does objective truth relate to demonstration and certainty?",
+    "P14": "Can objective truth be mind-independent without a self-subsistent third realm?"
+  },
+  "lineages": {
+    "foundation": "Avicenna → Rāzī → Ṭūsī → al-Ḥillī",
+    "ithbat_direct": "Direct commentary family on Ṭūsī’s Risāla fī ithbāt al-ʿaql al-mujarrad",
+    "tajrid": "Tajrīd commentary / gloss network",
+    "realist": "Thing-as-it-is / mind-independent-reality current",
+    "sunni_kalam": "Post-Rāzian kalām reformulation",
+    "semantics": "Empty, impossible, negative proposition semantics",
+    "ottoman": "Ottoman reception and independent treatises",
+    "late_synthesis": "Late technical/systematic synthesis",
+    "science": "Mathematics, astronomy, models, certainty",
+    "akbarian": "Akbarian divine-knowledge / presence recoding",
+    "safavid": "Safavid philosophical recoding",
+    "safavid_reception": "Later Iranian philosophical synthesis",
+    "metaphysical": "Divine/metaphysical expansion",
+    "applications": "Causality and other applied problem settings",
+    "logic": "Logical gloss tradition",
+    "textual_history": "Attribution and manuscript history"
+  },
+  "works": [
+    {
+      "id": "ibnsina_isharat",
+      "author": "Ibn Sīnā",
+      "title": "al-Ishārāt wa-l-tanbīhāt",
+      "lineages": [
+        "foundation"
+      ],
+      "problems": [
+        "P01",
+        "P02",
+        "P03",
+        "P13"
+      ],
+      "type": "matn",
+      "status": "canonical",
+      "translation": "selected_present"
+    },
+    {
+      "id": "razi_sharh_isharat",
+      "author": "Fakhr al-Dīn al-Rāzī",
+      "title": "Sharḥ al-Ishārāt",
+      "lineages": [
+        "foundation"
+      ],
+      "problems": [
+        "P01",
+        "P02",
+        "P03",
+        "P04"
+      ],
+      "type": "commentary",
+      "status": "canonical",
+      "translation": "selected_present"
+    },
+    {
+      "id": "tusi_sharh_isharat",
+      "author": "Naṣīr al-Dīn al-Ṭūsī",
+      "title": "Sharḥ al-Ishārāt / Ḥall mushkilāt al-Ishārāt",
+      "lineages": [
+        "foundation"
+      ],
+      "problems": [
+        "P01",
+        "P02",
+        "P04",
+        "P05",
+        "P13"
+      ],
+      "type": "commentary",
+      "status": "canonical",
+      "translation": "selected_present"
+    },
+    {
+      "id": "tusi_tajrid",
+      "author": "Naṣīr al-Dīn al-Ṭūsī",
+      "title": "Tajrīd al-iʿtiqād",
+      "lineages": [
+        "foundation",
+        "tajrid"
+      ],
+      "problems": [
+        "P03",
+        "P04",
+        "P05",
+        "P08"
+      ],
+      "type": "matn",
+      "status": "canonical",
+      "translation": "selected_present"
+    },
+    {
+      "id": "hilli_kashf",
+      "author": "al-ʿAllāma al-Ḥillī",
+      "title": "Kashf al-murād fī sharḥ Tajrīd al-iʿtiqād",
+      "lineages": [
+        "foundation",
+        "tajrid"
+      ],
+      "problems": [
+        "P05",
+        "P06",
+        "P07"
+      ],
+      "type": "commentary",
+      "status": "canonical",
+      "translation": "selected_present"
+    },
+    {
+      "id": "hilli_nihaya",
+      "author": "al-ʿAllāma al-Ḥillī",
+      "title": "Nihāyat al-marām fī ʿilm al-kalām",
+      "lineages": [
+        "foundation"
+      ],
+      "problems": [
+        "P05",
+        "P06",
+        "P07"
+      ],
+      "type": "parallel_treatment",
+      "status": "canonical",
+      "translation": "pending"
+    },
+    {
+      "id": "tusi_ithbat",
+      "author": "Naṣīr al-Dīn al-Ṭūsī",
+      "title": "Risāla fī ithbāt al-ʿaql al-mujarrad / Ithbāt al-ʿaql al-mufāriq",
+      "lineages": [
+        "foundation",
+        "ithbat_direct"
+      ],
+      "problems": [
+        "P02",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P14"
+      ],
+      "type": "matn",
+      "status": "canonical",
+      "translation": "complete_present"
+    },
+    {
+      "id": "kishi_rawda",
+      "author": "Shams al-Dīn al-Kīshī",
+      "title": "Rawḍat al-nāẓir fī sharḥ nafs al-amr",
+      "lineages": [
+        "ithbat_direct",
+        "realist"
+      ],
+      "problems": [
+        "P05",
+        "P06",
+        "P14"
+      ],
+      "type": "commentary",
+      "status": "canonical",
+      "translation": "priority_A"
+    },
+    {
+      "id": "dawwani_ithbat",
+      "author": "Jalāl al-Dīn al-Dawwānī",
+      "title": "Sharḥ Risālat ithbāt al-ʿaql al-mujarrad",
+      "lineages": [
+        "ithbat_direct"
+      ],
+      "problems": [
+        "P06",
+        "P07"
+      ],
+      "type": "commentary",
+      "status": "canonical",
+      "translation": "priority_A"
+    },
+    {
+      "id": "jilani_hashiya",
+      "author": "Mullā Shamsā al-Jīlānī",
+      "title": "Ḥāshiya ʿalā Risālat ithbāt al-ʿaql al-mujarrad wa-sharḥ al-Dawwānī",
+      "lineages": [
+        "ithbat_direct"
+      ],
+      "problems": [
+        "P05",
+        "P06"
+      ],
+      "type": "supergloss",
+      "status": "canonical",
+      "translation": "priority_A"
+    },
+    {
+      "id": "ardabili_hashiya",
+      "author": "Mullā Ḥusayn al-Ilāhī al-Ardabīlī",
+      "title": "Ḥāshiya ʿalā Risālat ithbāt al-ʿaql al-mujarrad wa-sharḥ al-Dawwānī",
+      "lineages": [
+        "ithbat_direct"
+      ],
+      "problems": [
+        "P02",
+        "P05",
+        "P06"
+      ],
+      "type": "supergloss",
+      "status": "canonical",
+      "translation": "priority_A"
+    },
+    {
+      "id": "harawi_ithbat",
+      "author": "Mullā Muḥammad Ḥanafī al-Harawī/al-Tabrīzī",
+      "title": "Sharḥ Risālat ithbāt al-ʿaql al-mujarrad",
+      "lineages": [
+        "ithbat_direct"
+      ],
+      "problems": [
+        "P05",
+        "P06"
+      ],
+      "type": "commentary",
+      "status": "canonical",
+      "translation": "priority_A"
+    },
+    {
+      "id": "jandi_ithbat",
+      "author": "Mullā Aḥmad al-Jandī",
+      "title": "Sharḥ Risālat ithbāt al-ʿaql al-mujarrad",
+      "lineages": [
+        "ithbat_direct"
+      ],
+      "problems": [
+        "P05",
+        "P06"
+      ],
+      "type": "commentary",
+      "status": "canonical",
+      "translation": "priority_A"
+    },
+    {
+      "id": "kashmiri_lawh",
+      "author": "Mullā Muḥammad al-Kashmīrī",
+      "title": "al-Lawḥ al-maḥfūẓ ʿan al-hazl al-manbūdh fī sharḥ Risālat ithbāt al-ʿaql al-mujarrad",
+      "lineages": [
+        "ithbat_direct"
+      ],
+      "problems": [
+        "P05",
+        "P06",
+        "P12"
+      ],
+      "type": "commentary",
+      "status": "canonical",
+      "translation": "priority_A"
+    },
+    {
+      "id": "samarqandi_maarif",
+      "author": "Shams al-Dīn al-Samarqandī",
+      "title": "al-Maʿārif fī sharḥ al-Ṣaḥāʾif",
+      "lineages": [
+        "realist",
+        "sunni_kalam"
+      ],
+      "problems": [
+        "P03",
+        "P04",
+        "P05",
+        "P08",
+        "P14"
+      ],
+      "type": "self_commentary",
+      "status": "canonical",
+      "translation": "priority_B"
+    },
+    {
+      "id": "pseudo_jurjani_epistle",
+      "author": "historically attributed to al-Jurjānī; actually al-Samarqandī excerpt",
+      "title": "Risāla fī taḥqīq nafs al-amr wa-l-farq baynahu wa-bayna al-khārij wa-l-dhihn",
+      "lineages": [
+        "textual_history"
+      ],
+      "problems": [
+        "P05"
+      ],
+      "type": "excerpt",
+      "status": "MISATTRIBUTED",
+      "translation": "pending",
+      "source_work": "samarqandi_maarif"
+    },
+    {
+      "id": "taftazani_maqasid",
+      "author": "Saʿd al-Dīn al-Taftāzānī",
+      "title": "Sharḥ al-Maqāṣid",
+      "lineages": [
+        "realist",
+        "sunni_kalam"
+      ],
+      "problems": [
+        "P05",
+        "P06",
+        "P08",
+        "P14"
+      ],
+      "type": "summa_commentary",
+      "status": "canonical",
+      "translation": "priority_B"
+    },
+    {
+      "id": "isfahani_tasdid",
+      "author": "Shams al-Dīn al-Iṣfahānī",
+      "title": "Tasdīd al-qawāʿid fī sharḥ Tajrīd al-ʿaqāʾid",
+      "lineages": [
+        "tajrid"
+      ],
+      "problems": [
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "type": "commentary",
+      "status": "canonical",
+      "translation": "partial_or_pending"
+    },
+    {
+      "id": "jurjani_hashiya_tajrid",
+      "author": "al-Sayyid al-Sharīf al-Jurjānī",
+      "title": "Ḥāshiyat al-Tajrīd",
+      "lineages": [
+        "tajrid",
+        "realist",
+        "sunni_kalam"
+      ],
+      "problems": [
+        "P05",
+        "P06",
+        "P08",
+        "P10",
+        "P14"
+      ],
+      "type": "gloss",
+      "status": "canonical",
+      "translation": "priority_B"
+    },
+    {
+      "id": "jurjani_sharh_mawaqif",
+      "author": "al-Sayyid al-Sharīf al-Jurjānī",
+      "title": "Sharḥ al-Mawāqif",
+      "lineages": [
+        "sunni_kalam",
+        "science"
+      ],
+      "problems": [
+        "P05",
+        "P10",
+        "P11",
+        "P13"
+      ],
+      "type": "commentary",
+      "status": "canonical",
+      "translation": "priority_B_application"
+    },
+    {
+      "id": "jurjani_hashiya_kubra",
+      "author": "al-Sayyid al-Sharīf al-Jurjānī",
+      "title": "al-Ḥāshiya al-kubrā (logical gloss tradition)",
+      "lineages": [
+        "realist",
+        "logic"
+      ],
+      "problems": [
+        "P05",
+        "P08",
+        "P10"
+      ],
+      "type": "gloss",
+      "status": "base_text_metadata_to_normalize",
+      "translation": "pending"
+    },
+    {
+      "id": "qushji_sharh_tajrid",
+      "author": "ʿAlī al-Qūshjī",
+      "title": "Sharḥ Tajrīd al-ʿaqāʾid (al-sharḥ al-jadīd)",
+      "lineages": [
+        "tajrid",
+        "realist",
+        "sunni_kalam"
+      ],
+      "problems": [
+        "P03",
+        "P04",
+        "P05",
+        "P08",
+        "P14"
+      ],
+      "type": "commentary",
+      "status": "canonical",
+      "translation": "priority_B"
+    },
+    {
+      "id": "dawwani_tajrid_glosses",
+      "author": "Jalāl al-Dīn al-Dawwānī",
+      "title": "Gloss strata on Qūshjī’s Sharḥ al-Tajrīd",
+      "lineages": [
+        "tajrid"
+      ],
+      "problems": [
+        "P05",
+        "P06",
+        "P07",
+        "P12"
+      ],
+      "type": "supergloss_corpus",
+      "status": "strata_require_separate_cataloguing",
+      "translation": "pending"
+    },
+    {
+      "id": "dashtaki_sadr_glosses",
+      "author": "Ṣadr al-Dīn al-Dashtakī",
+      "title": "Glosses/replies in the Qūshjī–Dawwānī Tajrīd network",
+      "lineages": [
+        "tajrid"
+      ],
+      "problems": [
+        "P05",
+        "P08",
+        "P12"
+      ],
+      "type": "supergloss_corpus",
+      "status": "exact_strata_to_collate",
+      "translation": "pending"
+    },
+    {
+      "id": "dashtaki_ghiyath_adjudication",
+      "author": "Ghiyāth al-Dīn Manṣūr al-Dashtakī",
+      "title": "Adjudicative writings in the Dawwānī–Dashtakī Tajrīd debate",
+      "lineages": [
+        "tajrid"
+      ],
+      "problems": [
+        "P05",
+        "P12"
+      ],
+      "type": "adjudication_corpus",
+      "status": "exact_work_loci_to_collate",
+      "translation": "pending"
+    },
+    {
+      "id": "lahiji_shawariq",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "title": "Shawāriq al-ilhām",
+      "lineages": [
+        "tajrid",
+        "safavid"
+      ],
+      "problems": [
+        "P02",
+        "P05",
+        "P06",
+        "P07",
+        "P10",
+        "P14"
+      ],
+      "type": "commentary",
+      "status": "canonical",
+      "translation": "selected_present"
+    },
+    {
+      "id": "ali_tusi_dhakhira",
+      "author": "ʿAlāʾ al-Dīn ʿAlī al-Ṭūsī",
+      "title": "Kitāb al-Dhakhīra / Tahāfut al-falāsifa",
+      "lineages": [
+        "ottoman",
+        "applications"
+      ],
+      "problems": [
+        "P05",
+        "P10",
+        "P13"
+      ],
+      "type": "independent_tahafut",
+      "status": "canonical_different_Tusi",
+      "translation": "priority_C_or_E"
+    },
+    {
+      "id": "hatibzade_hawashi",
+      "author": "Hatibzāde Mehmed",
+      "title": "Ḥawāshī ʿalā Ḥāshiyat al-Tajrīd",
+      "lineages": [
+        "ottoman",
+        "semantics"
+      ],
+      "problems": [
+        "P02",
+        "P05",
+        "P08",
+        "P09"
+      ],
+      "type": "gloss",
+      "status": "manuscript_primary",
+      "translation": "priority_C"
+    },
+    {
+      "id": "taskoprizade_kasim_wujud",
+      "author": "Taşköprizāde Kâsım",
+      "title": "Risāla fī l-wujūd al-dhihnī",
+      "lineages": [
+        "ottoman",
+        "semantics"
+      ],
+      "problems": [
+        "P05",
+        "P08",
+        "P09",
+        "P10"
+      ],
+      "type": "independent_treatise",
+      "status": "manuscript_primary",
+      "translation": "priority_C"
+    },
+    {
+      "id": "ibn_kamal_wujud",
+      "author": "Ibn Kamāl / Kemalpaşazāde",
+      "title": "Risāla fī l-wujūd al-dhihnī",
+      "lineages": [
+        "ottoman"
+      ],
+      "problems": [
+        "P04",
+        "P05",
+        "P06"
+      ],
+      "type": "independent_treatise",
+      "status": "loci_to_recollate",
+      "translation": "priority_C"
+    },
+    {
+      "id": "taskoprizade_ahmad_shuhud",
+      "author": "Taşköprizāde Aḥmad",
+      "title": "al-Shuhūd al-ʿaynī fī mabāḥith al-wujūd al-dhihnī",
+      "lineages": [
+        "ottoman",
+        "semantics"
+      ],
+      "problems": [
+        "P04",
+        "P05",
+        "P08",
+        "P09",
+        "P10"
+      ],
+      "type": "independent_treatise",
+      "status": "edited",
+      "translation": "priority_C"
+    },
+    {
+      "id": "gelenbevi_nafs",
+      "author": "Ismāʿīl Gelenbevī",
+      "title": "Risāla fī nafs al-amr / Risāla fī taḥqīq nafs al-amr",
+      "lineages": [
+        "ottoman",
+        "late_synthesis"
+      ],
+      "problems": [
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P11",
+        "P14"
+      ],
+      "type": "independent_treatise",
+      "status": "manuscripts_and_modern_editions",
+      "translation": "priority_C"
+    },
+    {
+      "id": "gelenbevi_wujud",
+      "author": "Ismāʿīl Gelenbevī",
+      "title": "Risāla fī l-wujūd al-dhihnī",
+      "lineages": [
+        "ottoman",
+        "late_synthesis"
+      ],
+      "problems": [
+        "P03",
+        "P04",
+        "P05",
+        "P10"
+      ],
+      "type": "independent_treatise",
+      "status": "bilingual_modern_translation_exists",
+      "translation": "priority_C"
+    },
+    {
+      "id": "gelenbevi_siyalkuti",
+      "author": "Ismāʿīl Gelenbevī",
+      "title": "al-Taʿlīqāt ʿalā al-Siyālkūtī",
+      "lineages": [
+        "ottoman",
+        "late_synthesis"
+      ],
+      "problems": [
+        "P04",
+        "P05",
+        "P10",
+        "P12"
+      ],
+      "type": "gloss",
+      "status": "primary_loci_to_extract",
+      "translation": "pending"
+    },
+    {
+      "id": "tahanawi_kashshaf",
+      "author": "Muḥammad Aʿlā al-Tahānawī",
+      "title": "Kashshāf iṣṭilāḥāt al-funūn wa-l-ʿulūm",
+      "lineages": [
+        "late_synthesis"
+      ],
+      "problems": [
+        "P05",
+        "P10"
+      ],
+      "type": "lexicon",
+      "status": "canonical",
+      "translation": "pending"
+    },
+    {
+      "id": "mustafa_abdrahman",
+      "author": "Mustafa b. ʿAbd al-Raḥmān",
+      "title": "Risāla fī taḥqīq nafs al-amr wa-l-khārij",
+      "lineages": [
+        "ottoman",
+        "late_synthesis"
+      ],
+      "problems": [
+        "P02",
+        "P05",
+        "P10"
+      ],
+      "type": "independent_treatise",
+      "status": "manuscript_only_identified",
+      "translation": "backlog"
+    },
+    {
+      "id": "mustafa_shawkat",
+      "author": "Mustafa Şevket al-Istanbūlī",
+      "title": "Risāla fī taḥqīq al-farq bayna l-dhihn wa-l-khārij wa-nafs al-amr",
+      "lineages": [
+        "ottoman",
+        "late_synthesis"
+      ],
+      "problems": [
+        "P05",
+        "P10"
+      ],
+      "type": "independent_treatise",
+      "status": "printed_late_ottoman",
+      "translation": "backlog"
+    },
+    {
+      "id": "iji_mawaqif",
+      "author": "ʿAḍud al-Dīn al-Ījī",
+      "title": "al-Mawāqif",
+      "lineages": [
+        "science",
+        "sunni_kalam"
+      ],
+      "problems": [
+        "P11",
+        "P13"
+      ],
+      "type": "summa",
+      "status": "canonical",
+      "translation": "application_context"
+    },
+    {
+      "id": "kafiyaji_nisab",
+      "author": "Muḥammad al-Kāfiyajī",
+      "title": "Kitāb al-nisab",
+      "lineages": [
+        "science",
+        "ottoman"
+      ],
+      "problems": [
+        "P10",
+        "P11",
+        "P13"
+      ],
+      "type": "independent_scientific_treatise",
+      "status": "manuscript_and_quoted_primary",
+      "translation": "priority_E"
+    },
+    {
+      "id": "qaysari_fusus",
+      "author": "Dāwūd al-Qayṣarī",
+      "title": "Maṭlaʿ khuṣūṣ al-kalim fī maʿānī Fuṣūṣ al-ḥikam / Sharḥ Fuṣūṣ al-ḥikam",
+      "lineages": [
+        "akbarian",
+        "metaphysical"
+      ],
+      "problems": [
+        "P05",
+        "P12"
+      ],
+      "type": "commentary",
+      "status": "canonical",
+      "translation": "priority_D"
+    },
+    {
+      "id": "ibn_turka_tamhid",
+      "author": "Ṣāʾin al-Dīn Ibn al-Turkah",
+      "title": "Tamhīd al-qawāʿid",
+      "lineages": [
+        "akbarian",
+        "metaphysical"
+      ],
+      "problems": [
+        "P05",
+        "P12"
+      ],
+      "type": "commentary_treatise",
+      "status": "canonical",
+      "translation": "priority_D"
+    },
+    {
+      "id": "baha_dinzada_haqaiq",
+      "author": "Bahāʾ al-Dīnzāda",
+      "title": "Risāla mutaʿalliqa bi-ḥaqāʾiq al-ashyāʾ",
+      "lineages": [
+        "akbarian",
+        "metaphysical"
+      ],
+      "problems": [
+        "P05",
+        "P12",
+        "P14"
+      ],
+      "type": "independent_treatise",
+      "status": "manuscript_primary",
+      "translation": "priority_D"
+    },
+    {
+      "id": "mir_damad_qabasat",
+      "author": "Mīr Dāmād",
+      "title": "Kitāb al-Qabasāt",
+      "lineages": [
+        "safavid",
+        "metaphysical"
+      ],
+      "problems": [
+        "P05",
+        "P06",
+        "P10",
+        "P12",
+        "P14"
+      ],
+      "type": "summa",
+      "status": "canonical",
+      "translation": "priority_D"
+    },
+    {
+      "id": "mir_damad_imazat",
+      "author": "Mīr Dāmād",
+      "title": "al-Īmāzāt",
+      "lineages": [
+        "safavid",
+        "metaphysical"
+      ],
+      "problems": [
+        "P05",
+        "P12"
+      ],
+      "type": "treatise",
+      "status": "canonical",
+      "translation": "priority_D"
+    },
+    {
+      "id": "mir_damad_taqdisat",
+      "author": "Mīr Dāmād",
+      "title": "al-Taqdīsāt",
+      "lineages": [
+        "safavid",
+        "metaphysical"
+      ],
+      "problems": [
+        "P05",
+        "P12"
+      ],
+      "type": "treatise",
+      "status": "canonical",
+      "translation": "priority_D"
+    },
+    {
+      "id": "sadra_asfar",
+      "author": "Mullā Ṣadrā",
+      "title": "al-Asfār al-arbaʿa",
+      "lineages": [
+        "safavid",
+        "metaphysical"
+      ],
+      "problems": [
+        "P05",
+        "P06",
+        "P07",
+        "P12",
+        "P14"
+      ],
+      "type": "summa",
+      "status": "canonical",
+      "translation": "priority_D"
+    },
+    {
+      "id": "sadra_tafsir",
+      "author": "Mullā Ṣadrā",
+      "title": "Tafsīr al-Qurʾān al-karīm",
+      "lineages": [
+        "safavid",
+        "metaphysical"
+      ],
+      "problems": [
+        "P06",
+        "P12"
+      ],
+      "type": "tafsir",
+      "status": "canonical",
+      "translation": "priority_D"
+    },
+    {
+      "id": "nabulusi_itlaq",
+      "author": "ʿAbd al-Ghanī al-Nābulusī",
+      "title": "Iṭlāq al-quyūd fī sharḥ Mirʾāt al-wujūd",
+      "lineages": [
+        "akbarian",
+        "metaphysical",
+        "ottoman"
+      ],
+      "problems": [
+        "P05",
+        "P12"
+      ],
+      "type": "commentary",
+      "status": "manuscript_primary",
+      "translation": "priority_D"
+    },
+    {
+      "id": "sabzawari_manzuma",
+      "author": "Mullā Hādī al-Sabzawārī",
+      "title": "Sharḥ al-Manẓūma",
+      "lineages": [
+        "safavid_reception",
+        "metaphysical"
+      ],
+      "problems": [
+        "P05",
+        "P10",
+        "P12"
+      ],
+      "type": "commentary",
+      "status": "canonical",
+      "translation": "priority_D"
+    },
+    {
+      "id": "sabzawari_asma",
+      "author": "Mullā Hādī al-Sabzawārī",
+      "title": "Sharḥ al-asmāʾ",
+      "lineages": [
+        "safavid_reception",
+        "metaphysical"
+      ],
+      "problems": [
+        "P05",
+        "P12"
+      ],
+      "type": "commentary",
+      "status": "canonical",
+      "translation": "priority_D"
+    }
+  ],
+  "views": [
+    "problems",
+    "lineages",
+    "timeline",
+    "corpus",
+    "applications",
+    "bibliography"
+  ],
+  "integration": {
+    "research_index_order": 6,
+    "tajrid": "canonical passage deep links",
+    "avicennism": "problem-route crosslinks",
+    "intellectual_atlas": "filtered canonical chronology; do not duplicate dataset"
+  },
+  "source_register": [
+    {
+      "id": "ED2014",
+      "title": "Ṭūsī, Risālat ithbāt al-ʿaql al-mujarrad wa-shurūḥ-i ān",
+      "kind": "Critical edition; the direct commentary family",
+      "url": "https://ci.nii.ac.jp/ncid/BB22674643"
+    },
+    {
+      "id": "KISHI-TOC",
+      "title": "Edition table of contents, with precise discussion headings",
+      "kind": "Editorial contents locator only",
+      "url": "https://alfeker.net/b/5019/"
+    },
+    {
+      "id": "AKTAS22",
+      "title": "Maşuk Aktaş (2022), Samarqandī and the pseudo-Jurjānī epistle",
+      "kind": "Manuscript attribution study",
+      "url": "https://nazariyat.org/en/issues/cilt-8-sayi-2/muhammet-masuk-aktas-semerkandi"
+    },
+    {
+      "id": "LAHIJI123",
+      "title": "Lāhījī, Shawāriq al-ilhām, I:123",
+      "kind": "Primary text; truth, preservation and assent",
+      "url": "https://ablibrary.net/book_content/b/9309/123?lang=ar"
+    },
+    {
+      "id": "LAHIJI147",
+      "title": "Lāhījī, Shawāriq al-ilhām, I:147",
+      "kind": "Primary text; abstraction vs objective reality",
+      "url": "https://ablibrary.net/book_content/b/9309/147?lang=ar"
+    },
+    {
+      "id": "LAHIJI48",
+      "title": "Lāhījī, Shawāriq al-ilhām, I:48",
+      "kind": "Primary text; mental existence",
+      "url": "https://ablibrary.net/book_content/b/9309/48?lang=ar"
+    }
+  ],
+  "anchors": [
+    {
+      "id": "a-hilli",
+      "author": "al-ʿAllāma al-Ḥillī",
+      "work": "Kashf al-murād",
+      "loc": "Discussion of nafs al-amr, cited in the existing Ṭūsī epistemology dossier",
+      "problems": [
+        "P05",
+        "P06",
+        "P07"
+      ],
+      "status": "Existing passage translation; return to canonical edition for exact witness",
+      "arabic": "المراد بنفس الأمر هو العقل الفعّال",
+      "english": "What is meant by nafs al-amr is the Active Intellect.",
+      "note": "Al-Ḥillī reports Ṭūsī's reply, then objects that false judgments may also be retained."
+    },
+    {
+      "id": "a-lahiji1",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "work": "Shawāriq al-ilhām",
+      "loc": "I:123",
+      "problems": [
+        "P01",
+        "P02",
+        "P14"
+      ],
+      "status": "Primary-text excerpt, translated",
+      "arabic": "ومناطها كون الأربعة في حدّ ذاتها بحيث لو اعتبرها معتبر لحكم بزوجيّتها بخلاف زوجيّة الخمسة",
+      "english": "Its ground is that four is, in itself, such that anyone considering it would judge it even; five is not so.",
+      "note": "Distinguishes a present act of judging from what makes a judgment objectively apt to be true.",
+      "url": "https://ablibrary.net/book_content/b/9309/123?lang=ar"
+    },
+    {
+      "id": "a-lahiji2",
+      "author": "ʿAbd al-Razzāq al-Lāhījī reporting Dawwānī",
+      "work": "Shawāriq al-ilhām",
+      "loc": "I:123",
+      "problems": [
+        "P06",
+        "P07"
+      ],
+      "status": "Reported view, not independently checked against Dawwānī",
+      "arabic": "فإن الحافظ لا يلزم أن يكون مذعناً بما يحفظ",
+      "english": "One who preserves something is not thereby required to assent to what is preserved.",
+      "note": "The storage/assent distinction is relayed by Lāhījī; its direct Dawwānī locus remains to be collated.",
+      "url": "https://ablibrary.net/book_content/b/9309/123?lang=ar"
+    },
+    {
+      "id": "a-lahiji3",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "work": "Shawāriq al-ilhām",
+      "loc": "I:147",
+      "problems": [
+        "P04",
+        "P10"
+      ],
+      "status": "Primary-text excerpt, translated",
+      "arabic": "ولا يجب كون الفرض مطابقاً للواقع",
+      "english": "What intellect supposes need not correspond to reality.",
+      "note": "The intellectual abstraction of a quiddity does not prove that it is really abstract in nafs al-amr.",
+      "url": "https://ablibrary.net/book_content/b/9309/147?lang=ar"
+    },
+    {
+      "id": "a-lahiji4",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "work": "Shawāriq al-ilhām",
+      "loc": "I:48",
+      "problems": [
+        "P03",
+        "P04",
+        "P08"
+      ],
+      "status": "Primary-text excerpt, translated",
+      "arabic": "الموجود في الذهن إنما هو الصورة المخالفة في كثير من اللوازم",
+      "english": "What is present in the mind is only a form, differing [from the external thing] in many of its concomitants.",
+      "note": "Cognitive possession of the form of heat does not heat the mind.",
+      "url": "https://ablibrary.net/book_content/b/9309/48?lang=ar"
+    }
+  ]
+}
