@@ -8,6 +8,7 @@ on:
       - 'texts/al-turka/qawaid-al-tawhid/qawaid-citation-policy.js'
       - 'texts/al-turka/qawaid-al-tawhid/qawaid-linked-sources.css'
       - 'texts/al-turka/qawaid-al-tawhid/qawaid-study.js'
+      - 'texts/al-turka/qawaid-al-tawhid/qawaid-research-search.js'
       - 'texts/al-turka/qawaid-al-tawhid/index.html'
       - 'texts/al-turka/qawaid-al-tawhid/commentary.html'
       - 'texts/al-turka/qawaid-al-tawhid/qa/test-linked-source-cards.py'
