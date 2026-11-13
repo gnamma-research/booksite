@@ -39,6 +39,8 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Verify citation markers, comparative notes and mobile return navigation
         run: python texts/al-turka/qawaid-al-tawhid/qa/test-linked-source-cards.py
+      - name: Audit every registered direct quotation anchor in both readers
+        run: python texts/al-turka/qawaid-al-tawhid/qa/audit-linked-citation-coverage.py
       - name: Recheck original source-parity and Darūrī-family study reader
         run: |
           python texts/al-turka/qawaid-al-tawhid/qa/check-study-ui.py
@@ -51,6 +53,7 @@ jobs:
           name: qawaid-verified-citations-evidence
           path: |
             texts/al-turka/qawaid-al-tawhid/qa/linked-source-cards-browser-acceptance.json
+            texts/al-turka/qawaid-al-tawhid/qa/linked-citation-coverage.json
             texts/al-turka/qawaid-al-tawhid/qa/qawaid-citation-mobile.png
             texts/al-turka/qawaid-al-tawhid/qa/qawaid-citation-error.png
             texts/al-turka/qawaid-al-tawhid/qa/study-ui-report.json
