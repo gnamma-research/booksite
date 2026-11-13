@@ -1,0 +1,742 @@
+{
+  "schema": "umran-vision-v1",
+  "version": "2026-11-13",
+  "status": "Research architecture, not an automatic legal decision engine",
+  "separation": [
+    "Ultimate human end",
+    "Sources and purposes of law",
+    "Broader formative and civilizational aims",
+    "Juristic obligations and recommendations",
+    "Empirical communal sufficiency",
+    "Institutional and curricular programmes",
+    "Individual vocation and concrete opportunities"
+  ],
+  "levels": {
+    "daruriyyat": "Essentials: without which religious and worldly order may be gravely impaired",
+    "hajiyyat": "Needs: mitigate hardship and allow stable functioning",
+    "tahsiniyyat": "Refinements: proper conduct, quality, excellence and cultivated manners"
+  },
+  "cross_axis": {
+    "establish": "Positive formation and construction of a required good",
+    "protect": "Safeguard against actual or anticipated loss or corruption"
+  },
+  "warning": "The five classical necessities are not the entirety of religious life. Broader aims and strategic programmes are explicitly labelled and not all legally equivalent. A programme linked to a maqṣad is not thereby farḍ kifāya.",
+  "aims": [
+    {
+      "id": "din",
+      "arabic": "حفظ الدين",
+      "name": "Religion and revealed guidance",
+      "type": "classical_necessity",
+      "scope": "A core field of the five necessities",
+      "formation": "Cultivate sound belief, worship, knowledgeable practice, sincerity and the capacity to transmit religious knowledge.",
+      "safeguarding": "Address ignorance, misrepresentation, loss of qualified teachers, coercion and practices undermining religious responsibility.",
+      "caution": "The full reality of knowing God and spiritual excellence is not exhausted by a juridical safeguarding category.",
+      "needs": [
+        "religious-teaching",
+        "funerals",
+        "contemporary-curricula"
+      ]
+    },
+    {
+      "id": "nafs",
+      "arabic": "حفظ النفس",
+      "name": "Life and bodily security",
+      "type": "classical_necessity",
+      "scope": "A core field of the five necessities",
+      "formation": "Develop competent medicine, appropriate care, reliable infrastructure and conditions of human safety.",
+      "safeguarding": "Prevent avoidable death, serious illness, violence, unsafe service and acute deprivation.",
+      "caution": "Distinguish health outcomes from professional headcounts and official targets.",
+      "needs": [
+        "medical-care",
+        "water-sanitation",
+        "dependent-care",
+        "mental-health",
+        "emergency-response"
+      ]
+    },
+    {
+      "id": "aql",
+      "arabic": "حفظ العقل",
+      "name": "Intellect, knowledge and sound judgment",
+      "type": "classical_necessity",
+      "scope": "A core field of the five necessities",
+      "formation": "Educate, cultivate reasoning and deliberation, transmit expertise, and support intellectual institutions.",
+      "safeguarding": "Resist falsehood, avoidable ignorance, impairments and systems that degrade independent judgment.",
+      "caution": "A philosophical programme of intellectual renewal is a proposed positive application, not a direct claim that every project is legally necessary.",
+      "needs": [
+        "contemporary-curricula",
+        "religious-teaching",
+        "ai-safety",
+        "livelihood-training"
+      ]
+    },
+    {
+      "id": "nasl",
+      "arabic": "حفظ النسل",
+      "name": "Family, continuity and responsible care",
+      "type": "classical_necessity",
+      "scope": "A core field of the five necessities",
+      "formation": "Sustain family responsibilities, upbringing, education, intergenerational support and secure households.",
+      "safeguarding": "Prevent neglect, insecurity, exploitation and conditions obstructing the care of dependants.",
+      "caution": "Do not identify flourishing with demographic or economic maximisation.",
+      "needs": [
+        "dependent-care",
+        "household-sufficiency",
+        "displaced-shelter"
+      ]
+    },
+    {
+      "id": "mal",
+      "arabic": "حفظ المال",
+      "name": "Property, trustworthy exchange and stewardship",
+      "type": "classical_necessity",
+      "scope": "A core field of the five necessities",
+      "formation": "Make lawful livelihoods possible, protect the reliability of transactions, support honest crafts and durable institutions.",
+      "safeguarding": "Prevent fraud, unjust taking, corrupt procurement and destruction of essential resources.",
+      "caution": "Growth of wealth is not the final human end; lawful means, distribution and formation matter.",
+      "needs": [
+        "food-access",
+        "livelihood-training",
+        "household-sufficiency",
+        "community-institutions"
+      ]
+    },
+    {
+      "id": "tazkiya",
+      "arabic": "التزكية والإحسان",
+      "name": "Spiritual and moral formation",
+      "type": "broader_human_end",
+      "scope": "Islamic life and ethics beyond a five-item legal checklist",
+      "formation": "Cultivate worship, remembrance, humility, sound habits, discernment and virtues practiced in family and public life.",
+      "safeguarding": "Guard against using professional success or institutional power as substitutes for sincerity and responsibility.",
+      "caution": "No metric, job ranking or outcome indicator can establish a person's nearness to God.",
+      "needs": [
+        "religious-teaching",
+        "dependent-care"
+      ]
+    },
+    {
+      "id": "adl",
+      "arabic": "العدل والأمانة",
+      "name": "Justice, trust and right governance",
+      "type": "cross_cutting_purpose",
+      "scope": "General public aims discussed in later maqāṣid and social-order literature",
+      "formation": "Build reliable adjudication, trustworthy administration, equitable access and accountable institutions.",
+      "safeguarding": "Resist domination, corruption, concealment of harms and arbitrary exclusion.",
+      "caution": "A proposed governance model must be justified through evidence and juristic reasoning; not every reform is obligatory.",
+      "needs": [
+        "community-institutions",
+        "household-sufficiency",
+        "ai-safety"
+      ]
+    },
+    {
+      "id": "umran",
+      "arabic": "صلاح العمران",
+      "name": "Civilizational and institutional flourishing",
+      "type": "cross_cutting_purpose",
+      "scope": "General social-order and reform aims, particularly developed by Ibn ʿĀshūr",
+      "formation": "Enable households, professions, schools, crafts, governments and associations to cooperate in legitimate goods.",
+      "safeguarding": "Protect institutional continuity, just public order and access to essential provision.",
+      "caution": "Growth, scale and control are not equivalent to the good of the people who inhabit institutions.",
+      "needs": [
+        "community-institutions",
+        "medical-care",
+        "water-sanitation",
+        "food-access",
+        "emergency-response"
+      ]
+    },
+    {
+      "id": "tajdid",
+      "arabic": "التجديد والإحياء",
+      "name": "Intellectual and religious renewal",
+      "type": "strategic_programme",
+      "scope": "Proposed civilizational programme informed by tajdīd/iḥyāʾ literature",
+      "formation": "Renew understanding through sound scholarship, critical reconstruction, curriculum, living teaching and serious engagement with contemporary questions.",
+      "safeguarding": "Prevent loss of competent transmission, shallow imitation, fragmentation and ideology replacing scholarship.",
+      "caution": "A general mandate to renewal does not establish that any particular translation, school or curriculum is binding.",
+      "needs": [
+        "religious-teaching",
+        "contemporary-curricula",
+        "community-institutions"
+      ]
+    },
+    {
+      "id": "khalq",
+      "arabic": "عمارة الأرض",
+      "name": "Ecological and material stewardship",
+      "type": "strategic_extension",
+      "scope": "A proposed application under the classical necessities, public benefit and responsible use of the earth",
+      "formation": "Support water, land, food systems, healthy settlements and intergenerational care of common resources.",
+      "safeguarding": "Prevent pollution, depletion, unsafe infrastructure and damage that undermines necessary human provision.",
+      "caution": "Not presented as a historically unanimous sixth canonical necessity.",
+      "needs": [
+        "water-sanitation",
+        "food-access",
+        "emergency-response"
+      ]
+    }
+  ],
+  "programmes": [
+    {
+      "id": "scholarly-succession",
+      "name": "Form the next generation of qualified scholars",
+      "domain": "knowledge",
+      "scale": "Local to transnational",
+      "goals": [
+        "din",
+        "aql",
+        "tajdid",
+        "tazkiya"
+      ],
+      "needs": [
+        "religious-teaching",
+        "contemporary-curricula"
+      ],
+      "why": "Textual archives alone do not reproduce judgment, character or teaching competence. Formative relationships and supervised progression matter.",
+      "firstSteps": [
+        "Map the disciplines and stages of qualification required",
+        "Identify competent teachers and gaps in succession",
+        "Pilot supervised study routes, then evaluate outcomes"
+      ],
+      "competences": [
+        "Qualified scholarship",
+        "Pedagogy",
+        "Arabic and other source languages",
+        "Institutional governance"
+      ],
+      "outputs": [
+        "Competency map",
+        "Mentor and apprentice programme",
+        "Evaluated reading sequence"
+      ],
+      "tests": [
+        "Independently assess actual competence",
+        "Track sustained teaching and supervision",
+        "Document the limits of accreditation and self-reported achievements"
+      ],
+      "status": "Research programme proposal; no national shortage demonstrated"
+    },
+    {
+      "id": "critical-texts",
+      "name": "Primary texts, editions, translations and access",
+      "domain": "knowledge",
+      "scale": "Transnational",
+      "goals": [
+        "aql",
+        "din",
+        "tajdid"
+      ],
+      "needs": [
+        "religious-teaching",
+        "contemporary-curricula"
+      ],
+      "why": "Scholarly traditions need reliable access to their sources and methods, not only isolated quotations or unverified digital transcriptions.",
+      "firstSteps": [
+        "Identify genuine gaps in text access and edition quality",
+        "Develop verified bilingual reading materials",
+        "Create responsible pathways back to Arabic and manuscript evidence"
+      ],
+      "competences": [
+        "Arabic philology",
+        "Codicology",
+        "Textual criticism",
+        "Translation",
+        "Digital publishing"
+      ],
+      "outputs": [
+        "Source ledger and editions",
+        "Annotation and translation protocol",
+        "Reader linked to teaching materials"
+      ],
+      "tests": [
+        "Document provenance and variant readings",
+        "Distinguish critical collation from working edition",
+        "Test whether readers genuinely improve understanding"
+      ],
+      "status": "Research programme proposal; priority depends on demonstrated textual and educational need"
+    },
+    {
+      "id": "curriculum-pathways",
+      "name": "Integrated curricula in the intellectual sciences",
+      "domain": "knowledge",
+      "scale": "University and transnational",
+      "goals": [
+        "aql",
+        "din",
+        "tajdid",
+        "tazkiya"
+      ],
+      "needs": [
+        "contemporary-curricula",
+        "religious-teaching"
+      ],
+      "why": "A course list is not enough: learning should progress from foundational reasoning to mature inquiry and responsible action.",
+      "firstSteps": [
+        "Define the human and disciplinary ends before outcomes",
+        "Map prerequisites across logic, language, philosophy, fiqh and contemporary disciplines",
+        "Pilot teaching, assessment and longitudinal formation"
+      ],
+      "competences": [
+        "Curriculum design",
+        "Subject scholarship",
+        "Measurement and evaluation",
+        "Ethical education"
+      ],
+      "outputs": [
+        "Progression map",
+        "Sample curricula and lesson units",
+        "Review of learning and formation"
+      ],
+      "tests": [
+        "Separate genuine understanding from credentials and volume of content",
+        "Assess whether programmes remain faithful to their subject",
+        "Monitor unintended professional or sectarian effects"
+      ],
+      "status": "Research programme proposal; Malaysian IIUM studies give models and critical cautions"
+    },
+    {
+      "id": "contemporary-intellectual-dialogue",
+      "name": "Disciplined engagement with contemporary discourses",
+      "domain": "knowledge",
+      "scale": "Global with local education",
+      "goals": [
+        "aql",
+        "tajdid",
+        "adl"
+      ],
+      "needs": [
+        "contemporary-curricula",
+        "ai-safety"
+      ],
+      "why": "Neither polemical rejection nor uncritical import of modern theories secures understanding. Traditions require competent engagement with the strongest arguments and evidence.",
+      "firstSteps": [
+        "Select questions from science, law, technology, economics and politics",
+        "Recover classical principles and their interpretive methods",
+        "Develop rigorous exchanges, critiques and teachable syntheses"
+      ],
+      "competences": [
+        "Philosophy",
+        "Subject-matter science",
+        "History of ideas",
+        "Juristic method",
+        "Translation"
+      ],
+      "outputs": [
+        "Research dossiers",
+        "Scholarly symposia",
+        "Teaching and policy notes"
+      ],
+      "tests": [
+        "Represent opponents fairly",
+        "Check claims with field specialists",
+        "Record unresolved issues and competing interpretations"
+      ],
+      "status": "Proposed cross-disciplinary intellectual-renewal programme"
+    },
+    {
+      "id": "legal-discernment",
+      "name": "Renew living legal discernment and institutional jurisprudence",
+      "domain": "governance",
+      "scale": "Local to transnational",
+      "goals": [
+        "din",
+        "adl",
+        "tajdid",
+        "umran"
+      ],
+      "needs": [
+        "community-institutions",
+        "household-sufficiency",
+        "ai-safety"
+      ],
+      "why": "Law must distinguish stable norms from variable institutional means. Modern questions require qualified method, not merely a blueprint transferred from one era.",
+      "firstSteps": [
+        "Collate madhhab positions and primary legal reasoning",
+        "Study contemporary institutions and actual consequences",
+        "Produce responsibly reviewed issue dossiers"
+      ],
+      "competences": [
+        "Uṣūl al-fiqh",
+        "Comparative fiqh",
+        "Historical institutions",
+        "Empirical policy",
+        "Legal ethics"
+      ],
+      "outputs": [
+        "Issue maps",
+        "Applied juristic research briefs",
+        "Training of qualified reviewers"
+      ],
+      "tests": [
+        "Identify disagreement and legal authority",
+        "Distinguish fatwā from research hypothesis",
+        "Assess whether solutions are socially and legally viable"
+      ],
+      "status": "Research agenda requiring qualified juristic review"
+    },
+    {
+      "id": "spiritual-ethical-formation",
+      "name": "Ethical formation in everyday work and institutions",
+      "domain": "formation",
+      "scale": "Person, household and institution",
+      "goals": [
+        "tazkiya",
+        "din",
+        "nasl",
+        "adl"
+      ],
+      "needs": [
+        "religious-teaching",
+        "dependent-care",
+        "community-institutions"
+      ],
+      "why": "The value of an occupation cannot be inferred from its output; habits, intention, care, justice and responsibilities shape the person's actual life.",
+      "firstSteps": [
+        "Develop realistic studies of ordinary work and care",
+        "Pair traditional ethical readings with supervised reflection",
+        "Study institutional conditions that encourage or damage good practice"
+      ],
+      "competences": [
+        "Ethical and spiritual instruction",
+        "Care practice",
+        "Workplace research",
+        "Mentorship"
+      ],
+      "outputs": [
+        "Practice guide",
+        "Case studies of ordinary work",
+        "Mentor training materials"
+      ],
+      "tests": [
+        "Do not score inner sincerity",
+        "Avoid coercive spirituality or intrusive personal data",
+        "Attend to burdens on carers and workers"
+      ],
+      "status": "Formative programme, not a measure of spiritual rank"
+    },
+    {
+      "id": "family-household",
+      "name": "Household sufficiency, care and intergenerational formation",
+      "domain": "formation",
+      "scale": "Household, city and region",
+      "goals": [
+        "nasl",
+        "nafs",
+        "mal",
+        "tazkiya"
+      ],
+      "needs": [
+        "household-sufficiency",
+        "dependent-care",
+        "displaced-shelter"
+      ],
+      "why": "Livelihood security, family duties, education and care form one ecology rather than isolated services.",
+      "firstSteps": [
+        "Identify household obligations and actual welfare standards",
+        "Map available services without assuming all needs require a new NGO",
+        "Evaluate support to existing caregivers and dependants"
+      ],
+      "competences": [
+        "Care work",
+        "Family law",
+        "Household economics",
+        "Welfare administration",
+        "Programme evaluation"
+      ],
+      "outputs": [
+        "Local needs dossier",
+        "Caregiver support route",
+        "Transparent assistance model"
+      ],
+      "tests": [
+        "Preserve household dignity and privacy",
+        "Avoid confusing income data with benefit adequacy",
+        "Identify unintended dependency or exclusion"
+      ],
+      "status": "Institutional programme; specific location evidence required"
+    },
+    {
+      "id": "trustworthy-institutions",
+      "name": "Justice, public trust and institutional capacity",
+      "domain": "governance",
+      "scale": "City, regional and national",
+      "goals": [
+        "adl",
+        "umran",
+        "mal"
+      ],
+      "needs": [
+        "community-institutions",
+        "household-sufficiency",
+        "medical-care"
+      ],
+      "why": "Hospitals, schools, religious institutions and public services depend on governance, financial integrity, staffing and public trust.",
+      "firstSteps": [
+        "Document which functions institutions actually fulfil",
+        "Assess accountability, access and alternatives",
+        "Train practitioners in governance and stewardship"
+      ],
+      "competences": [
+        "Administration",
+        "Law",
+        "Accounting",
+        "Public policy",
+        "Auditing"
+      ],
+      "outputs": [
+        "Institutional-function map",
+        "Governance protocols",
+        "Capacity-building routes"
+      ],
+      "tests": [
+        "No presumption that more institutions are always better",
+        "Compare organisational arrangements",
+        "Record tradeoffs and contested mandates"
+      ],
+      "status": "Applied capacity-building programme"
+    },
+    {
+      "id": "knowledge-technology",
+      "name": "Technology, human agency and the conditions of knowledge",
+      "domain": "technology",
+      "scale": "National and transnational",
+      "goals": [
+        "aql",
+        "nafs",
+        "adl",
+        "tajdid"
+      ],
+      "needs": [
+        "ai-safety",
+        "contemporary-curricula"
+      ],
+      "why": "Digital systems alter knowing, teaching, judgment, privacy and institutional authority, beyond their immediate technical benefits.",
+      "firstSteps": [
+        "Develop conceptual and empirical studies of technological mediation",
+        "Review independent AI safety and governance research",
+        "Test systems for effects on learning, work, privacy and reasoning"
+      ],
+      "competences": [
+        "Computing",
+        "Security",
+        "Philosophy of technology",
+        "Education research",
+        "Governance"
+      ],
+      "outputs": [
+        "Conceptual atlas",
+        "Applied evaluation criteria",
+        "Curricular and policy cases"
+      ],
+      "tests": [
+        "Separate claims of catastrophic harm from verified mechanisms",
+        "Avoid equating adoption with progress",
+        "Assess epistemic independence and effects on attention"
+      ],
+      "status": "Research programme, with contested normative and empirical questions"
+    },
+    {
+      "id": "crafts-livelihood",
+      "name": "Revive craftsmanship and trustworthy livelihoods",
+      "domain": "livelihood",
+      "scale": "Local to regional",
+      "goals": [
+        "mal",
+        "aql",
+        "tazkiya",
+        "umran"
+      ],
+      "needs": [
+        "livelihood-training",
+        "food-access",
+        "household-sufficiency"
+      ],
+      "why": "Work can form competence and character while producing necessary goods. Vocational excellence is broader than salary or predicted impact.",
+      "firstSteps": [
+        "Map essential and qualitative crafts in a locality",
+        "Study apprenticeships and demand before proposing new programmes",
+        "Develop dignified training and responsible enterprise"
+      ],
+      "competences": [
+        "Master practitioners",
+        "Workplace mentorship",
+        "Local economics",
+        "Quality assurance"
+      ],
+      "outputs": [
+        "Craft and occupation studies",
+        "Apprenticeship design",
+        "Assessment of actual access to work"
+      ],
+      "tests": [
+        "Avoid romanticising hereditary caste or inequitable labour",
+        "Test livelihood viability",
+        "Do not require every profession to carry a grand civilizational slogan"
+      ],
+      "status": "Research and programme proposal"
+    },
+    {
+      "id": "stewardship-resilience",
+      "name": "Stewardship of essential resources and settlements",
+      "domain": "livelihood",
+      "scale": "Local to global",
+      "goals": [
+        "nafs",
+        "mal",
+        "khalq",
+        "umran"
+      ],
+      "needs": [
+        "water-sanitation",
+        "food-access",
+        "emergency-response",
+        "displaced-shelter"
+      ],
+      "why": "Social life requires stable access to food, water, shelter and functioning infrastructures, including across disruptions.",
+      "firstSteps": [
+        "Assess actual infrastructure and supply chains",
+        "Study failure modes and alternatives",
+        "Prioritise maintenance and local competence as well as new construction"
+      ],
+      "competences": [
+        "Engineering",
+        "Agriculture",
+        "Logistics",
+        "Public health",
+        "Environmental management"
+      ],
+      "outputs": [
+        "Resilience dossier",
+        "Maintenance plan",
+        "Institutional and occupational capacity map"
+      ],
+      "tests": [
+        "Verify physical risks and local data",
+        "Include external and long-term harms",
+        "Separate relief appeals from independently verified deficits"
+      ],
+      "status": "Context-sensitive provision programme"
+    },
+    {
+      "id": "civilizational-learning",
+      "name": "Historical and comparative civilizational learning",
+      "domain": "knowledge",
+      "scale": "Transnational",
+      "goals": [
+        "aql",
+        "tajdid",
+        "umran",
+        "adl"
+      ],
+      "needs": [
+        "contemporary-curricula",
+        "religious-teaching"
+      ],
+      "why": "A tradition capable of understanding itself and others needs history, languages, comparative sources and careful interpretation of institutional change.",
+      "firstSteps": [
+        "Develop comparative studies of historical social arrangements",
+        "Investigate non-Muslim traditions without presuming doctrinal identity",
+        "Present the findings as accessible scholarly and curricular materials"
+      ],
+      "competences": [
+        "History",
+        "Languages",
+        "Comparative religion",
+        "Social science",
+        "Philosophy"
+      ],
+      "outputs": [
+        "Comparative atlas",
+        "Source-based essays",
+        "Graduate teaching and public guides"
+      ],
+      "tests": [
+        "Do not flatten differences among traditions",
+        "Distinguish historical evidence from metaphysical interpretation",
+        "Seek independent critique of major claims"
+      ],
+      "status": "Research programme proposal"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ghazali-sep",
+      "title": "Al-Ghazālī and the five necessary aims",
+      "kind": "scholarly secondary reference",
+      "url": "https://plato.stanford.edu/archives/spr2026/entries/al-ghazali/",
+      "note": "SEP revised January 2026; discusses five essentials, ethics and the Revival."
+    },
+    {
+      "id": "shatibi-raysuni",
+      "title": "Aḥmad al-Raysūnī, Imam al-Shāṭibī's Theory of the Higher Objectives and Intents of Islamic Law",
+      "kind": "scholarly monograph",
+      "url": "https://iiit.org/wp-content/uploads/Imam-Al-Shatibis-Book.pdf",
+      "note": "Explanation of purposes and levels; verify Arabic passages for precise attributions."
+    },
+    {
+      "id": "ibnashur-treatise",
+      "title": "Ibn ʿĀshūr, Treatise on Maqāṣid al-Sharīʿah",
+      "kind": "translated primary work",
+      "url": "https://iiit.org/wp-content/uploads/2024/12/Ibn-Ashur-Treatise-on-Maqasid-Al-Shariah.pdf",
+      "note": "Source for general aim of sound social order and reform; distinguish Shariah's legislative aims from all ends of religion."
+    },
+    {
+      "id": "renewal-hadith",
+      "title": "Sunan Abī Dāwūd 4291, tradition on tajdīd",
+      "kind": "hadith",
+      "url": "https://sunnah.com/abudawud:4291",
+      "note": "Foundational text for the idea of renewal; does not assign any particular modern research programme obligatory status."
+    },
+    {
+      "id": "renewal-2025",
+      "title": "Yıldırım and Gülengül (2025), Grounding the Idea of Renewal and Collective Iḥyāʾ",
+      "kind": "scholarly article",
+      "url": "https://www.nature.com/articles/s41599-025-05198-9",
+      "note": "Explores intellectual rationale, scope and the danger of narrow ideological institutionalisation."
+    },
+    {
+      "id": "kamali-tajdid",
+      "title": "Mohammad Hashim Kamali, Tajdīd, Iṣlāḥ and Civilisational Renewal in Islam",
+      "kind": "scholarly monograph",
+      "url": "https://doi.org/10.2307/j.ctvkc66vh",
+      "note": "IAIS Malaysia/IIIT; overview of renewal's interpretive, intellectual and civilizational significance."
+    },
+    {
+      "id": "iium-curriculum",
+      "title": "Khairil Husaini Bin Jamil (2020), Maqāṣid in IIUM Qurʾān and Sunnah Curricula",
+      "kind": "Malaysian case study",
+      "url": "https://journals.iium.edu.my/al-burhan/index.php/al-burhan/article/view/196",
+      "note": "Discusses curricular aims and tension between higher purposes and external outcome-based educational regulation."
+    },
+    {
+      "id": "iium-hanafi",
+      "title": "Sari Hanafi (2021), From Streamlining to Mainstreaming Islamization of Knowledge",
+      "kind": "critical university study",
+      "url": "https://ajis.org/index.php/ajiss/article/view/1086",
+      "note": "Studies shifts and tensions in IIUM, including professional training, Islamic orientation and pluralism."
+    },
+    {
+      "id": "ibn-khaldun",
+      "title": "Ibn Khaldūn, Muqaddimah, treatment of acquired dispositions and teaching",
+      "kind": "primary work in translation",
+      "url": "https://www.emaanlibrary.com/wp-content/uploads/2017/11/AlMuqadimmah-Abd-Ar-Rahman-bin-Muhammed-ibn-Khaldun.pdf",
+      "note": "Acquired malakāt require repeated practice and teachers; source should be checked against Arabic."
+    },
+    {
+      "id": "tajdid-2026",
+      "title": "Ermin Sinanović (2026), Renewal (Tajdīd) and Reform (Iṣlāḥ)",
+      "kind": "scholarly chapter",
+      "url": "https://academic.oup.com/edited-volume/62861/chapter-abstract/563277786",
+      "note": "Recent historical and conceptual distinctions among traditions of renewal."
+    },
+    {
+      "id": "islamic-law-2025",
+      "title": "Islamic Normative Legal Theory: Framework and Applications",
+      "kind": "scholarly jurisprudence overview",
+      "url": "https://www.cambridge.org/core/journals/journal-of-law-and-religion/article/islamic-normative-legal-theory-framework-and-applications/2FD4C0E512D8AABA4FD73EB15B8B4192",
+      "note": "Explains classical levels and wider social objectives in legal theory."
+    }
+  ]
+}
