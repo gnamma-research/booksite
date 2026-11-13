@@ -1,3 +1,19 @@
+# Stage 86 — Volume I source-position coverage (13 November 2026)
+
+**This checkpoint supersedes Stage 85's numerical summary below.** The public study reader remains deliberately unchanged in appearance, with no stage history in the continuous reading screen.
+
+**Additional verified work:** 45 bounded Arabic–English passages on the 29 previously anchor-only printed pages **I:49–72 and I:74–78**. Each is anchored to the Būlāq 1318 AH scan; where source phrases are noncontiguous, the omission is marked. Earlier analytical English drafts are preserved in record metadata, not passed off as finished literal translation. See [Stage 86 bilingual source dossier](STAGE86_BOUND_SOURCE_READINGS_I049_I078.md).
+
+**Coverage metrics, not completion metrics:** 280/280 printed Volume I positions are indexed (I:1 title leaf). 279/279 body-page positions have some working English and **279/279 now have some typed Arabic**, but many words and entire lower notes remain missing. **1,171/1,401** source-linked working records contain some Arabic, leaving 230 without it. **0/279** pages have a complete all-register diplomatic transcription, literal English translation and independent second proof. No manuscript collation is claimed or required for the chosen single-print working edition. See [strict page ledger](STAGE86_STRICT_PAGE_ACCEPTANCE.csv) and [machine metrics](STAGE86_METRICS.json).
+
+**Verification:** no existing record IDs lost or duplicated. Local Chromium tests at 390px, 768px and 1400px passed for all 1,401 records, Arabic search, page navigation, focus mode, and no script errors or horizontal overflow. The full original 632-page PDF retains SHA-256 `4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134`; all 280 facsimile PNG checksums match the preserved witness inventory. The source scan and images are in the research package, not public-site assets.
+
+**Next real blocker:** establish every omitted upper, ruled and lower word, translate every printed marginal ḥāshiyah, check each author attribution and source continuity, and independently proof all 279 body pages. An uninterrupted corpus of page headings or isolated Arabic quotations does **not** satisfy this gate. Keep the separate *Tahdhīb al-Kalām* reader until both volumes of *Taqrīb* are genuinely final.
+
+---
+
+## Previous checkpoints (archival only)
+
 # Stage 85 — Volume I text corrections and source-integrity checkpoint (13 November 2026)
 
 **The public study reader remains visually unchanged.** Forty-three first-pass, source-positioned Arabic–English readings were added on **36 printed pages I:13–48**, replacing selected interpretive overviews with bounded literal excerpts. Earlier summaries are preserved as source-record metadata but are not inserted into continuous reading. See [source readings, I:13–48](STAGE85_SOURCE_READINGS_I013_I048.md).
